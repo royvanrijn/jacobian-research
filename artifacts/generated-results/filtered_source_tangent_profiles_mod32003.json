@@ -1,0 +1,819 @@
+{
+  "interpretation": "The quotient is source-only and degree-filtered. The unrestricted first-order quotient is zero at the final cutoff; no stable-moduli claim is made.",
+  "status": "modular filtered first-order computation",
+  "summaries": [
+    {
+      "N": 4,
+      "coefficient_degree": 12,
+      "prime": 32003,
+      "profile_breakpoints": [
+        {
+          "filtered_tangent_dimension": 3,
+          "remaining_quotient_dimension": 55,
+          "source_degree_cutoff": 0
+        },
+        {
+          "filtered_tangent_dimension": 11,
+          "remaining_quotient_dimension": 47,
+          "source_degree_cutoff": 1
+        },
+        {
+          "filtered_tangent_dimension": 14,
+          "remaining_quotient_dimension": 44,
+          "source_degree_cutoff": 2
+        },
+        {
+          "filtered_tangent_dimension": 15,
+          "remaining_quotient_dimension": 43,
+          "source_degree_cutoff": 3
+        },
+        {
+          "filtered_tangent_dimension": 16,
+          "remaining_quotient_dimension": 42,
+          "source_degree_cutoff": 4
+        },
+        {
+          "filtered_tangent_dimension": 17,
+          "remaining_quotient_dimension": 41,
+          "source_degree_cutoff": 5
+        },
+        {
+          "filtered_tangent_dimension": 18,
+          "remaining_quotient_dimension": 40,
+          "source_degree_cutoff": 6
+        },
+        {
+          "filtered_tangent_dimension": 19,
+          "remaining_quotient_dimension": 39,
+          "source_degree_cutoff": 7
+        },
+        {
+          "filtered_tangent_dimension": 20,
+          "remaining_quotient_dimension": 38,
+          "source_degree_cutoff": 8
+        },
+        {
+          "filtered_tangent_dimension": 21,
+          "remaining_quotient_dimension": 37,
+          "source_degree_cutoff": 9
+        },
+        {
+          "filtered_tangent_dimension": 22,
+          "remaining_quotient_dimension": 36,
+          "source_degree_cutoff": 10
+        },
+        {
+          "filtered_tangent_dimension": 24,
+          "remaining_quotient_dimension": 34,
+          "source_degree_cutoff": 11
+        },
+        {
+          "filtered_tangent_dimension": 26,
+          "remaining_quotient_dimension": 32,
+          "source_degree_cutoff": 12
+        },
+        {
+          "filtered_tangent_dimension": 28,
+          "remaining_quotient_dimension": 30,
+          "source_degree_cutoff": 13
+        },
+        {
+          "filtered_tangent_dimension": 29,
+          "remaining_quotient_dimension": 29,
+          "source_degree_cutoff": 14
+        },
+        {
+          "filtered_tangent_dimension": 30,
+          "remaining_quotient_dimension": 28,
+          "source_degree_cutoff": 15
+        },
+        {
+          "filtered_tangent_dimension": 31,
+          "remaining_quotient_dimension": 27,
+          "source_degree_cutoff": 16
+        },
+        {
+          "filtered_tangent_dimension": 33,
+          "remaining_quotient_dimension": 25,
+          "source_degree_cutoff": 17
+        },
+        {
+          "filtered_tangent_dimension": 35,
+          "remaining_quotient_dimension": 23,
+          "source_degree_cutoff": 18
+        },
+        {
+          "filtered_tangent_dimension": 36,
+          "remaining_quotient_dimension": 22,
+          "source_degree_cutoff": 19
+        },
+        {
+          "filtered_tangent_dimension": 37,
+          "remaining_quotient_dimension": 21,
+          "source_degree_cutoff": 20
+        },
+        {
+          "filtered_tangent_dimension": 39,
+          "remaining_quotient_dimension": 19,
+          "source_degree_cutoff": 21
+        },
+        {
+          "filtered_tangent_dimension": 41,
+          "remaining_quotient_dimension": 17,
+          "source_degree_cutoff": 22
+        },
+        {
+          "filtered_tangent_dimension": 43,
+          "remaining_quotient_dimension": 15,
+          "source_degree_cutoff": 23
+        },
+        {
+          "filtered_tangent_dimension": 45,
+          "remaining_quotient_dimension": 13,
+          "source_degree_cutoff": 24
+        },
+        {
+          "filtered_tangent_dimension": 47,
+          "remaining_quotient_dimension": 11,
+          "source_degree_cutoff": 25
+        },
+        {
+          "filtered_tangent_dimension": 49,
+          "remaining_quotient_dimension": 9,
+          "source_degree_cutoff": 26
+        },
+        {
+          "filtered_tangent_dimension": 50,
+          "remaining_quotient_dimension": 8,
+          "source_degree_cutoff": 27
+        },
+        {
+          "filtered_tangent_dimension": 51,
+          "remaining_quotient_dimension": 7,
+          "source_degree_cutoff": 28
+        },
+        {
+          "filtered_tangent_dimension": 53,
+          "remaining_quotient_dimension": 5,
+          "source_degree_cutoff": 29
+        },
+        {
+          "filtered_tangent_dimension": 54,
+          "remaining_quotient_dimension": 4,
+          "source_degree_cutoff": 30
+        },
+        {
+          "filtered_tangent_dimension": 55,
+          "remaining_quotient_dimension": 3,
+          "source_degree_cutoff": 31
+        },
+        {
+          "filtered_tangent_dimension": 56,
+          "remaining_quotient_dimension": 2,
+          "source_degree_cutoff": 32
+        },
+        {
+          "filtered_tangent_dimension": 58,
+          "remaining_quotient_dimension": 0,
+          "source_degree_cutoff": 33
+        }
+      ],
+      "source_trivializer_maximum_degree": 33,
+      "tangent_dimension": 58,
+      "visible_seed_profile_breakpoints": [
+        {
+          "filtered_tangent_dimension": 0,
+          "remaining_quotient_dimension": 1,
+          "source_degree_cutoff": 0
+        },
+        {
+          "filtered_tangent_dimension": 1,
+          "remaining_quotient_dimension": 0,
+          "source_degree_cutoff": 25
+        }
+      ]
+    },
+    {
+      "N": 5,
+      "coefficient_degree": 17,
+      "prime": 32003,
+      "profile_breakpoints": [
+        {
+          "filtered_tangent_dimension": 3,
+          "remaining_quotient_dimension": 85,
+          "source_degree_cutoff": 0
+        },
+        {
+          "filtered_tangent_dimension": 11,
+          "remaining_quotient_dimension": 77,
+          "source_degree_cutoff": 1
+        },
+        {
+          "filtered_tangent_dimension": 14,
+          "remaining_quotient_dimension": 74,
+          "source_degree_cutoff": 2
+        },
+        {
+          "filtered_tangent_dimension": 15,
+          "remaining_quotient_dimension": 73,
+          "source_degree_cutoff": 3
+        },
+        {
+          "filtered_tangent_dimension": 16,
+          "remaining_quotient_dimension": 72,
+          "source_degree_cutoff": 4
+        },
+        {
+          "filtered_tangent_dimension": 17,
+          "remaining_quotient_dimension": 71,
+          "source_degree_cutoff": 5
+        },
+        {
+          "filtered_tangent_dimension": 18,
+          "remaining_quotient_dimension": 70,
+          "source_degree_cutoff": 6
+        },
+        {
+          "filtered_tangent_dimension": 19,
+          "remaining_quotient_dimension": 69,
+          "source_degree_cutoff": 7
+        },
+        {
+          "filtered_tangent_dimension": 20,
+          "remaining_quotient_dimension": 68,
+          "source_degree_cutoff": 8
+        },
+        {
+          "filtered_tangent_dimension": 21,
+          "remaining_quotient_dimension": 67,
+          "source_degree_cutoff": 9
+        },
+        {
+          "filtered_tangent_dimension": 22,
+          "remaining_quotient_dimension": 66,
+          "source_degree_cutoff": 10
+        },
+        {
+          "filtered_tangent_dimension": 24,
+          "remaining_quotient_dimension": 64,
+          "source_degree_cutoff": 11
+        },
+        {
+          "filtered_tangent_dimension": 26,
+          "remaining_quotient_dimension": 62,
+          "source_degree_cutoff": 12
+        },
+        {
+          "filtered_tangent_dimension": 28,
+          "remaining_quotient_dimension": 60,
+          "source_degree_cutoff": 13
+        },
+        {
+          "filtered_tangent_dimension": 29,
+          "remaining_quotient_dimension": 59,
+          "source_degree_cutoff": 14
+        },
+        {
+          "filtered_tangent_dimension": 31,
+          "remaining_quotient_dimension": 57,
+          "source_degree_cutoff": 15
+        },
+        {
+          "filtered_tangent_dimension": 33,
+          "remaining_quotient_dimension": 55,
+          "source_degree_cutoff": 16
+        },
+        {
+          "filtered_tangent_dimension": 35,
+          "remaining_quotient_dimension": 53,
+          "source_degree_cutoff": 17
+        },
+        {
+          "filtered_tangent_dimension": 37,
+          "remaining_quotient_dimension": 51,
+          "source_degree_cutoff": 18
+        },
+        {
+          "filtered_tangent_dimension": 38,
+          "remaining_quotient_dimension": 50,
+          "source_degree_cutoff": 19
+        },
+        {
+          "filtered_tangent_dimension": 39,
+          "remaining_quotient_dimension": 49,
+          "source_degree_cutoff": 20
+        },
+        {
+          "filtered_tangent_dimension": 40,
+          "remaining_quotient_dimension": 48,
+          "source_degree_cutoff": 21
+        },
+        {
+          "filtered_tangent_dimension": 42,
+          "remaining_quotient_dimension": 46,
+          "source_degree_cutoff": 22
+        },
+        {
+          "filtered_tangent_dimension": 44,
+          "remaining_quotient_dimension": 44,
+          "source_degree_cutoff": 23
+        },
+        {
+          "filtered_tangent_dimension": 46,
+          "remaining_quotient_dimension": 42,
+          "source_degree_cutoff": 24
+        },
+        {
+          "filtered_tangent_dimension": 47,
+          "remaining_quotient_dimension": 41,
+          "source_degree_cutoff": 25
+        },
+        {
+          "filtered_tangent_dimension": 49,
+          "remaining_quotient_dimension": 39,
+          "source_degree_cutoff": 26
+        },
+        {
+          "filtered_tangent_dimension": 51,
+          "remaining_quotient_dimension": 37,
+          "source_degree_cutoff": 27
+        },
+        {
+          "filtered_tangent_dimension": 53,
+          "remaining_quotient_dimension": 35,
+          "source_degree_cutoff": 28
+        },
+        {
+          "filtered_tangent_dimension": 55,
+          "remaining_quotient_dimension": 33,
+          "source_degree_cutoff": 29
+        },
+        {
+          "filtered_tangent_dimension": 57,
+          "remaining_quotient_dimension": 31,
+          "source_degree_cutoff": 30
+        },
+        {
+          "filtered_tangent_dimension": 59,
+          "remaining_quotient_dimension": 29,
+          "source_degree_cutoff": 31
+        },
+        {
+          "filtered_tangent_dimension": 61,
+          "remaining_quotient_dimension": 27,
+          "source_degree_cutoff": 32
+        },
+        {
+          "filtered_tangent_dimension": 63,
+          "remaining_quotient_dimension": 25,
+          "source_degree_cutoff": 33
+        },
+        {
+          "filtered_tangent_dimension": 66,
+          "remaining_quotient_dimension": 22,
+          "source_degree_cutoff": 34
+        },
+        {
+          "filtered_tangent_dimension": 68,
+          "remaining_quotient_dimension": 20,
+          "source_degree_cutoff": 35
+        },
+        {
+          "filtered_tangent_dimension": 69,
+          "remaining_quotient_dimension": 19,
+          "source_degree_cutoff": 36
+        },
+        {
+          "filtered_tangent_dimension": 70,
+          "remaining_quotient_dimension": 18,
+          "source_degree_cutoff": 37
+        },
+        {
+          "filtered_tangent_dimension": 71,
+          "remaining_quotient_dimension": 17,
+          "source_degree_cutoff": 38
+        },
+        {
+          "filtered_tangent_dimension": 73,
+          "remaining_quotient_dimension": 15,
+          "source_degree_cutoff": 39
+        },
+        {
+          "filtered_tangent_dimension": 75,
+          "remaining_quotient_dimension": 13,
+          "source_degree_cutoff": 40
+        },
+        {
+          "filtered_tangent_dimension": 76,
+          "remaining_quotient_dimension": 12,
+          "source_degree_cutoff": 41
+        },
+        {
+          "filtered_tangent_dimension": 77,
+          "remaining_quotient_dimension": 11,
+          "source_degree_cutoff": 42
+        },
+        {
+          "filtered_tangent_dimension": 79,
+          "remaining_quotient_dimension": 9,
+          "source_degree_cutoff": 43
+        },
+        {
+          "filtered_tangent_dimension": 81,
+          "remaining_quotient_dimension": 7,
+          "source_degree_cutoff": 44
+        },
+        {
+          "filtered_tangent_dimension": 83,
+          "remaining_quotient_dimension": 5,
+          "source_degree_cutoff": 45
+        },
+        {
+          "filtered_tangent_dimension": 84,
+          "remaining_quotient_dimension": 4,
+          "source_degree_cutoff": 46
+        },
+        {
+          "filtered_tangent_dimension": 86,
+          "remaining_quotient_dimension": 2,
+          "source_degree_cutoff": 47
+        },
+        {
+          "filtered_tangent_dimension": 88,
+          "remaining_quotient_dimension": 0,
+          "source_degree_cutoff": 48
+        }
+      ],
+      "source_trivializer_maximum_degree": 48,
+      "tangent_dimension": 88,
+      "visible_seed_profile_breakpoints": [
+        {
+          "filtered_tangent_dimension": 0,
+          "remaining_quotient_dimension": 2,
+          "source_degree_cutoff": 0
+        },
+        {
+          "filtered_tangent_dimension": 1,
+          "remaining_quotient_dimension": 1,
+          "source_degree_cutoff": 30
+        },
+        {
+          "filtered_tangent_dimension": 2,
+          "remaining_quotient_dimension": 0,
+          "source_degree_cutoff": 35
+        }
+      ]
+    },
+    {
+      "N": 6,
+      "coefficient_degree": 22,
+      "prime": 32003,
+      "profile_breakpoints": [
+        {
+          "filtered_tangent_dimension": 3,
+          "remaining_quotient_dimension": 120,
+          "source_degree_cutoff": 0
+        },
+        {
+          "filtered_tangent_dimension": 11,
+          "remaining_quotient_dimension": 112,
+          "source_degree_cutoff": 1
+        },
+        {
+          "filtered_tangent_dimension": 14,
+          "remaining_quotient_dimension": 109,
+          "source_degree_cutoff": 2
+        },
+        {
+          "filtered_tangent_dimension": 15,
+          "remaining_quotient_dimension": 108,
+          "source_degree_cutoff": 3
+        },
+        {
+          "filtered_tangent_dimension": 16,
+          "remaining_quotient_dimension": 107,
+          "source_degree_cutoff": 4
+        },
+        {
+          "filtered_tangent_dimension": 17,
+          "remaining_quotient_dimension": 106,
+          "source_degree_cutoff": 5
+        },
+        {
+          "filtered_tangent_dimension": 18,
+          "remaining_quotient_dimension": 105,
+          "source_degree_cutoff": 6
+        },
+        {
+          "filtered_tangent_dimension": 19,
+          "remaining_quotient_dimension": 104,
+          "source_degree_cutoff": 7
+        },
+        {
+          "filtered_tangent_dimension": 20,
+          "remaining_quotient_dimension": 103,
+          "source_degree_cutoff": 8
+        },
+        {
+          "filtered_tangent_dimension": 21,
+          "remaining_quotient_dimension": 102,
+          "source_degree_cutoff": 9
+        },
+        {
+          "filtered_tangent_dimension": 22,
+          "remaining_quotient_dimension": 101,
+          "source_degree_cutoff": 10
+        },
+        {
+          "filtered_tangent_dimension": 24,
+          "remaining_quotient_dimension": 99,
+          "source_degree_cutoff": 11
+        },
+        {
+          "filtered_tangent_dimension": 26,
+          "remaining_quotient_dimension": 97,
+          "source_degree_cutoff": 12
+        },
+        {
+          "filtered_tangent_dimension": 28,
+          "remaining_quotient_dimension": 95,
+          "source_degree_cutoff": 13
+        },
+        {
+          "filtered_tangent_dimension": 29,
+          "remaining_quotient_dimension": 94,
+          "source_degree_cutoff": 14
+        },
+        {
+          "filtered_tangent_dimension": 31,
+          "remaining_quotient_dimension": 92,
+          "source_degree_cutoff": 15
+        },
+        {
+          "filtered_tangent_dimension": 33,
+          "remaining_quotient_dimension": 90,
+          "source_degree_cutoff": 16
+        },
+        {
+          "filtered_tangent_dimension": 35,
+          "remaining_quotient_dimension": 88,
+          "source_degree_cutoff": 17
+        },
+        {
+          "filtered_tangent_dimension": 37,
+          "remaining_quotient_dimension": 86,
+          "source_degree_cutoff": 18
+        },
+        {
+          "filtered_tangent_dimension": 39,
+          "remaining_quotient_dimension": 84,
+          "source_degree_cutoff": 19
+        },
+        {
+          "filtered_tangent_dimension": 41,
+          "remaining_quotient_dimension": 82,
+          "source_degree_cutoff": 20
+        },
+        {
+          "filtered_tangent_dimension": 43,
+          "remaining_quotient_dimension": 80,
+          "source_degree_cutoff": 21
+        },
+        {
+          "filtered_tangent_dimension": 45,
+          "remaining_quotient_dimension": 78,
+          "source_degree_cutoff": 22
+        },
+        {
+          "filtered_tangent_dimension": 48,
+          "remaining_quotient_dimension": 75,
+          "source_degree_cutoff": 23
+        },
+        {
+          "filtered_tangent_dimension": 50,
+          "remaining_quotient_dimension": 73,
+          "source_degree_cutoff": 24
+        },
+        {
+          "filtered_tangent_dimension": 51,
+          "remaining_quotient_dimension": 72,
+          "source_degree_cutoff": 25
+        },
+        {
+          "filtered_tangent_dimension": 52,
+          "remaining_quotient_dimension": 71,
+          "source_degree_cutoff": 26
+        },
+        {
+          "filtered_tangent_dimension": 54,
+          "remaining_quotient_dimension": 69,
+          "source_degree_cutoff": 27
+        },
+        {
+          "filtered_tangent_dimension": 56,
+          "remaining_quotient_dimension": 67,
+          "source_degree_cutoff": 28
+        },
+        {
+          "filtered_tangent_dimension": 58,
+          "remaining_quotient_dimension": 65,
+          "source_degree_cutoff": 29
+        },
+        {
+          "filtered_tangent_dimension": 59,
+          "remaining_quotient_dimension": 64,
+          "source_degree_cutoff": 30
+        },
+        {
+          "filtered_tangent_dimension": 61,
+          "remaining_quotient_dimension": 62,
+          "source_degree_cutoff": 31
+        },
+        {
+          "filtered_tangent_dimension": 63,
+          "remaining_quotient_dimension": 60,
+          "source_degree_cutoff": 32
+        },
+        {
+          "filtered_tangent_dimension": 65,
+          "remaining_quotient_dimension": 58,
+          "source_degree_cutoff": 33
+        },
+        {
+          "filtered_tangent_dimension": 67,
+          "remaining_quotient_dimension": 56,
+          "source_degree_cutoff": 34
+        },
+        {
+          "filtered_tangent_dimension": 69,
+          "remaining_quotient_dimension": 54,
+          "source_degree_cutoff": 35
+        },
+        {
+          "filtered_tangent_dimension": 71,
+          "remaining_quotient_dimension": 52,
+          "source_degree_cutoff": 36
+        },
+        {
+          "filtered_tangent_dimension": 73,
+          "remaining_quotient_dimension": 50,
+          "source_degree_cutoff": 37
+        },
+        {
+          "filtered_tangent_dimension": 75,
+          "remaining_quotient_dimension": 48,
+          "source_degree_cutoff": 38
+        },
+        {
+          "filtered_tangent_dimension": 78,
+          "remaining_quotient_dimension": 45,
+          "source_degree_cutoff": 39
+        },
+        {
+          "filtered_tangent_dimension": 81,
+          "remaining_quotient_dimension": 42,
+          "source_degree_cutoff": 40
+        },
+        {
+          "filtered_tangent_dimension": 83,
+          "remaining_quotient_dimension": 40,
+          "source_degree_cutoff": 41
+        },
+        {
+          "filtered_tangent_dimension": 85,
+          "remaining_quotient_dimension": 38,
+          "source_degree_cutoff": 42
+        },
+        {
+          "filtered_tangent_dimension": 88,
+          "remaining_quotient_dimension": 35,
+          "source_degree_cutoff": 43
+        },
+        {
+          "filtered_tangent_dimension": 91,
+          "remaining_quotient_dimension": 32,
+          "source_degree_cutoff": 44
+        },
+        {
+          "filtered_tangent_dimension": 94,
+          "remaining_quotient_dimension": 29,
+          "source_degree_cutoff": 45
+        },
+        {
+          "filtered_tangent_dimension": 95,
+          "remaining_quotient_dimension": 28,
+          "source_degree_cutoff": 46
+        },
+        {
+          "filtered_tangent_dimension": 96,
+          "remaining_quotient_dimension": 27,
+          "source_degree_cutoff": 47
+        },
+        {
+          "filtered_tangent_dimension": 97,
+          "remaining_quotient_dimension": 26,
+          "source_degree_cutoff": 48
+        },
+        {
+          "filtered_tangent_dimension": 99,
+          "remaining_quotient_dimension": 24,
+          "source_degree_cutoff": 49
+        },
+        {
+          "filtered_tangent_dimension": 101,
+          "remaining_quotient_dimension": 22,
+          "source_degree_cutoff": 50
+        },
+        {
+          "filtered_tangent_dimension": 102,
+          "remaining_quotient_dimension": 21,
+          "source_degree_cutoff": 51
+        },
+        {
+          "filtered_tangent_dimension": 103,
+          "remaining_quotient_dimension": 20,
+          "source_degree_cutoff": 52
+        },
+        {
+          "filtered_tangent_dimension": 105,
+          "remaining_quotient_dimension": 18,
+          "source_degree_cutoff": 53
+        },
+        {
+          "filtered_tangent_dimension": 107,
+          "remaining_quotient_dimension": 16,
+          "source_degree_cutoff": 54
+        },
+        {
+          "filtered_tangent_dimension": 109,
+          "remaining_quotient_dimension": 14,
+          "source_degree_cutoff": 55
+        },
+        {
+          "filtered_tangent_dimension": 110,
+          "remaining_quotient_dimension": 13,
+          "source_degree_cutoff": 56
+        },
+        {
+          "filtered_tangent_dimension": 112,
+          "remaining_quotient_dimension": 11,
+          "source_degree_cutoff": 57
+        },
+        {
+          "filtered_tangent_dimension": 114,
+          "remaining_quotient_dimension": 9,
+          "source_degree_cutoff": 58
+        },
+        {
+          "filtered_tangent_dimension": 116,
+          "remaining_quotient_dimension": 7,
+          "source_degree_cutoff": 59
+        },
+        {
+          "filtered_tangent_dimension": 118,
+          "remaining_quotient_dimension": 5,
+          "source_degree_cutoff": 60
+        },
+        {
+          "filtered_tangent_dimension": 120,
+          "remaining_quotient_dimension": 3,
+          "source_degree_cutoff": 61
+        },
+        {
+          "filtered_tangent_dimension": 121,
+          "remaining_quotient_dimension": 2,
+          "source_degree_cutoff": 62
+        },
+        {
+          "filtered_tangent_dimension": 123,
+          "remaining_quotient_dimension": 0,
+          "source_degree_cutoff": 63
+        }
+      ],
+      "source_trivializer_maximum_degree": 63,
+      "tangent_dimension": 123,
+      "visible_seed_profile_breakpoints": [
+        {
+          "filtered_tangent_dimension": 0,
+          "remaining_quotient_dimension": 3,
+          "source_degree_cutoff": 0
+        },
+        {
+          "filtered_tangent_dimension": 1,
+          "remaining_quotient_dimension": 2,
+          "source_degree_cutoff": 35
+        },
+        {
+          "filtered_tangent_dimension": 2,
+          "remaining_quotient_dimension": 1,
+          "source_degree_cutoff": 40
+        },
+        {
+          "filtered_tangent_dimension": 3,
+          "remaining_quotient_dimension": 0,
+          "source_degree_cutoff": 45
+        }
+      ]
+    }
+  ]
+}

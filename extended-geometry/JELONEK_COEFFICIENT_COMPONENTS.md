@@ -1,4 +1,8 @@
-# Jelonek's coefficient-space corollary and the deformation project
+# Local coefficient components versus decorated stable moduli
+
+This note records Jelonek's coefficient-space corollary and organizes the
+coefficient, filtered-contact, and boundary-decoration calculations into the
+single programme `OP-CCDM`.
 
 Work over `C`.  For integers `n,d>=1`, let
 
@@ -411,15 +415,116 @@ The exact characteristic-zero checker is
 The modular slice compiler and bounded-jet research screen is
 [`research_quartic_coefficient_kuranishi.py`](../scripts/research_quartic_coefficient_kuranishi.py).
 
-Most importantly, there is **no first nonzero Kuranishi obstruction after
-the unrestricted source--target jet quotient**.  The formal
-source-triviality theorem applies at every Artin order and makes that quotient
-the one-point functor; allowing target jets cannot restore an obstruction.
-Consequently the proposed order-by-order quotient and the request for a
-later nonzero unfiltered Kuranishi class are incompatible.  The `N-3` stable
-parameters first appear only at the reduced algebraization/global-boundary
-level, or in a specified bounded-degree/Rees filtration.  They do not appear
-at any finite unfiltered Kuranishi order.
+### 6.2 Reduced families and their generic tangent excess
+
+The four shears in (20) are the first case of a uniform reduced family.
+Put
+
+\[
+ d_N=5N-8,\qquad k_N=\left\lfloor\frac{d_N}{4}\right\rfloor .
+\]
+
+Starting from the normalized seed family, add `C^k` independently to the
+first and second outputs for every `2<=k<=k_N`, and then take the affine
+left--right orbit.  Its tangent rank is
+
+\[
+ r_N=22+2(k_N-1)+(N-3).                                \tag{21}
+\]
+
+The three summands are respectively the 22-dimensional affine orbit, the
+target shears, and the visible boundary parameters.  At selected rational
+points of these families, exact characteristic-zero elimination gives:
+
+| `N` | `d_N` | `k_N` | reduced-family rank `r_N` | full generic tangent dimension | transverse tangent excess |
+|---:|---:|---:|---:|---:|---:|
+| 4 | 12 | 3 | 27 | 49 | 22 |
+| 5 | 17 | 4 | 30 | 80 | 50 |
+| 6 | 22 | 5 | 33 | 109 | 76 |
+
+Thus the special integer-root points have tangent dimensions `58,88,123`,
+while these explicit rational points of the reduced families have the smaller
+dimensions `49,80,109`.  Neither row proves that the displayed reduced family
+is a component: the transverse tangent excess may contain nilpotent
+thickening, additional reduced branches, or both.  The exact checker is
+[`verify_generic_coefficient_family_tangents.py`](../scripts/verify_generic_coefficient_family_tangents.py).
+
+For the quartic generic point, quotienting the 27 displayed reduced
+directions leaves a 22-dimensional normal tangent space.  The normal
+quadratic Kuranishi image has rank `22` modulo each of `32003`, `32009`, and
+`32027`; at `32003`, its 22 independent quadrics use 76 cokernel monomials.
+Five coordinate axes survive quadratically.  Three fail the complete cubic
+axis test, while two lift through order three.  A noncanonical greedy choice
+of corrections makes the latter two fail at order four, but that is not an
+order-four obstruction certificate because other lower-order kernel choices
+can change the result.  The reproducible modular compiler is
+[`research_quartic_generic_component.py`](../scripts/research_quartic_generic_component.py).
+With the optional full cubic compiler, `2021` of the `2024` normal cubic
+monomial classes are nonzero and their cokernel coefficients span `305`
+independent cubic equations modulo `32003`.  The five pure-cube coefficients
+agree term-for-term with the separate coordinate-axis implementation.
+The resulting 327-generator quadratic-plus-cubic homogeneous-layer input is
+[`quartic_generic_component_order3_mod32003.sing`](../artifacts/generated-results/quartic_generic_component_order3_mod32003.sing).
+It is not the completed local ideal: lower-order tangent choices couple
+successive arc equations.  Both the quadratic-only primary decomposition and
+this stronger homogeneous-layer standard-basis run exhausted practical memory
+before producing a basis (the latter at a 12 GB cap).  Hence no radical,
+minimal-prime, or embedded prime is claimed.
+
+### 6.3 Filtered source quotients
+
+The source-only trivializer `V=adj(DF_N)G` is unique.  This makes its degree
+an unambiguous first-order filtration, even though it is not the optimal
+two-sided left--right filtration.  Modulo `32003`, the full tangent spaces are
+exhausted at source cutoffs
+
+\[
+ b_{\rm all}(4)=33,\qquad b_{\rm all}(5)=48,\qquad
+ b_{\rm all}(6)=63.                                    \tag{22}
+\]
+
+The visible seed subspaces disappear one direction at a time at:
+
+| `N` | seed quotient dimension at `b=0` | source cutoffs at which its directions become trivial |
+|---:|---:|---:|
+| 4 | 1 | `25` |
+| 5 | 2 | `30,35` |
+| 6 | 3 | `35,40,45` |
+
+The full breakpoint profiles are recorded in
+[`filtered_source_tangent_profiles_mod32003.json`](../artifacts/generated-results/filtered_source_tangent_profiles_mod32003.json)
+and generated by
+[`research_filtered_source_tangent_profile.py`](../scripts/research_filtered_source_tangent_profile.py).
+These are good-prime filtered computations, not characteristic-zero rank
+certificates.  They show concretely that every visible direction eventually
+vanishes in a finite first-order source quotient.  A stable parameter
+therefore cannot be defined as a direction that survives every fixed
+first-order degree cutoff.
+
+### 6.4 All-degree location of the stable parameters
+
+Combining formal source triviality with the decorated-normalization theorem
+gives the requested all-degree statement, but its conclusion is a separation
+of levels rather than a late finite-order obstruction:
+
+> **Formal-versus-algebraic location theorem.** For every `N>=4`, the
+> fixed-Jacobian deformation functor of `F_N` modulo unrestricted polynomial
+> source jets is the one-point functor on local Artin algebras.  Hence every
+> finite unfiltered Kuranishi obstruction group and every finite-order
+> unfiltered contact invariant vanishes.  On a nonempty reduced
+> boundary-clean seed open, however, decorated normalization has image
+> dimension `N-3` and is invariant under stable polynomial left--right
+> equivalence.  Thus the `N-3` stable parameters first appear at the exact
+> reduced/global-boundary level, not at any infinitesimal or finite Artin
+> order.
+
+The first assertion is
+[formal source triviality](FORMAL_ORBIT_TRIVIALITY.md#2-formal-source-triviality-theorem);
+the second is the
+[degreewise decorated-normalization theorem](DECORATED_NORMALIZATION_INVARIANT.md).
+What remains open is a sharper **filtered algebraization theorem**: determine
+the optimal two-sided complexity growth needed to approximate an entire seed
+family and prove a uniform no-algebraization statement from that growth.
 
 The raw bounded scheme (15) has the quadratic classes (18) precisely because
 the correcting source automorphisms may leave its degree box.  The full
@@ -435,24 +540,53 @@ Run the exact audit with
 .venv/bin/python scripts/verify_all_degree_coefficient_tangents.py
 ```
 
-## 7. Revised exact computational deliverables
+## 7. Unified programme: local component versus decorated moduli (`OP-CCDM`)
 
-For each selected `F_N`, beginning with the foundational map and the minimal
-bound `d=deg(F_N)`:
+There is not yet a distinguished object called *the* nonproper component.
+Let
 
-1. retain a certified sparse basis of `T_{F_N}X(3,d)`, beyond the exact ranks
-   now known for `N=4,5,6` (complete for `N=4`);
-2. compute the full raw bounded-box quadratic Kuranishi map for `N=5,6`,
-   extending the quartic calculation (19);
-3. compute minimal primes and embedded associated primes of the completed
-   local coefficient ideal where feasible;
-4. for the separate complexity question, compute the filtered spaces
-   (14) and higher-order contact growth, then test whether the formal
-   trivializers algebraize uniformly along the seed family.
+\[
+ \widehat{\mathcal O}_{N,d}
+ =\widehat{\mathcal O}_{X(3,d),F_N}
+\]
 
-Sparse ranks should first be audited modulo several good primes and then
-certified over `Q`.  The output should distinguish ambient degree `d`,
-geometric degree `N`, raw tangent dimension, local component dimensions,
-filtered orbit dimensions, and higher-order obstruction ranks.  The
-unrestricted first-order LR-normal dimension is always zero and should not
-be reported as a candidate stable-moduli dimension.
+and let `p_{N,d,i}` run through its minimal primes.  Jelonek's theorem says
+that every corresponding reduced branch is generically nonproper, but it
+does not select one branch or identify their scheme structures.  Thus
+“the tangent space to the nonproper component” must mean the tangent spaces
+and tangent cones of **each** `p_{N,d,i}`, together with their intersections
+and embedded structure.
+
+The five calculations now form one comparison:
+
+| layer | present status | unified deliverable |
+|---|---|---|
+| Keller coefficient tangent | Formula (5) holds in all degrees; the exact ranks at `F_4,F_5,F_6` are `58,88,123`. | Retain certified tangent bases and compute the tangent space and cone of every completed reduced branch, not only the raw scheme tangent. |
+| Generically nonproper local branches | Jelonek makes every reduced branch through `F_N` generically nonproper; the quartic raw quadratic map has rank `53`, but no minimal prime is known. | Determine the minimal and embedded primes, branch dimensions, intersections, and bounded-box obstruction maps; extend the full quadratic calculation to `N=5,6`. |
+| Formal source trivialization | For every Artin deformation the source trivializer exists uniquely; on tangent vectors it is `adj(DF_N)G`. | Measure its two-sided degree, parameter-height, pole-order, and stabilization growth along reduced families rather than forming the zero unrestricted tangent quotient. |
+| First non-algebraizable filtered class | The source-degree profiles (22) are known modulo one good prime. On the `F_2` ordinary-degree face, linear Rees strictness fails and the `p=2` quadratic symbol contributes a new length-one class. | Find the first intrinsic two-sided filtered class that survives all lower gauges and prove that it cannot algebraize uniformly along the marked-root family. |
+| Coefficient-to-decoration comparison | Decorated normalization is defined on the reduced boundary-clean seed locus and its image there has dimension `N-3`. | Construct the family-level decoration map on every boundary-clean reduced coefficient branch, compute its rank/kernel on reduced arcs or tangent cones, and compare it with the first surviving filtered class. |
+
+The last row is deliberately a **reduced family-level** comparison.  The
+current decorated-normalization theorem is not asserted as a natural
+transformation on arbitrary nonreduced Artin coefficient schemes.  Treating
+it as one and differentiating would conflict with formal source triviality.
+The required construction must record the normalization, Fitting divisor,
+conductor, node pairing, and intrinsic boundary marks in families before any
+tangent or associated-graded map is claimed.
+
+The foundational nilpotent gluing formerly tracked as `OP-FC` is the `N=3`
+calibration of the second row.  The linear and quadratic faces formerly
+tracked as `OP-LR-REES` and `OP-LR-II` are calibrations of the fourth row.
+They are no longer separate programme endpoints.  The adjacent
+`OP-LR-NE` remains the valuative problem of extending an LR equivalence
+through a marked-cover compactification; it can supply a no-escape theorem,
+but it does not replace the local coefficient calculation.
+
+For each selected `F_N`, use the minimal coefficient bound first.  Sparse
+ranks should be audited modulo several good primes and then certified over
+`Q`.  Every output must distinguish ambient degree `d`, geometric degree
+`N`, raw scheme tangent dimension, reduced-branch tangent and component
+dimensions, filtered orbit dimensions, decoration rank, and higher
+obstruction ranks.  The unrestricted LR-normal dimension is always zero and
+must not be reported as a candidate stable-moduli dimension.

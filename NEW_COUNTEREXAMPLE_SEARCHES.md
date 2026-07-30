@@ -82,6 +82,16 @@ The exact checker
 exhausts small finite-field cases and verifies both characteristic-two
 models.
 
+This theorem is now part of the `OP-RITT` architecture rather than an
+isolated counterexample search.  The
+[Hessian--Ritt deformation complex](extended-geometry/HESSIAN_RITT_DEFORMATION_COMPLEX.md#31-the-frobenius-cell-module)
+uses \(V_q(H,R)\) as a separately labelled Frobenius cell module.  Its
+characteristic-\(p\) edge labels distinguish the full \(H'=0\) kernel, the
+separable but Hessian-invisible \(H'=a\) row, and the ordinary zero-defect
+row.  The same note records the additional denominator, pivot, tame-degree,
+and no-Frobenius conditions needed before a characteristic-zero
+synchronization certificate may be claimed to survive reduction.
+
 ## B. Degree-forty-two support saturation
 
 The residual problem is the eleven-variable ring with five normal variables

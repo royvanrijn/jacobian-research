@@ -45,6 +45,27 @@ their displayed coefficient ranks are minimal.
 Ranks two through four remain unclassified in degree four.  No
 finite-prefix calculation below changes that all-order statement.
 
+For SIC discovery, the split-symbol theorem changes the opening
+completely.  Rank one is not an experimental frontier: the entire Segre
+cone is already safe in every degree, without a root-partition or finite
+moment hypothesis.  The bidegree-\((4,4)\) programme therefore starts at
+rank two:
+
+1. parameterize an exact-rank-\(r\) determinantal chart, beginning with
+   \(r=2\);
+2. impose enough pure moments to reach the expected quotient dimension
+   and extract exact closed points or positive-dimensional components;
+3. specialize the factor-period representation on those exact
+   points/components and use holonomic creative telescoping to derive a
+   checkable all-order recurrence; and
+4. test one fixed mixed multiplier on every all-order pure survivor.
+
+The known sixteen-term witness has rank five, while exact ranks two,
+three, and four remain open.  A rank-two counterexample would therefore
+replace the present witness by two separated channels.  Broad support
+searches and generic binary-symbol orbit closure are not the primary
+search variables for this question.
+
 ## 2. Why this is the common SIC/GVC/GMC filtration
 
 A rank-one point has the separated form
@@ -76,29 +97,35 @@ Put
 \[
  X_{d,r}=\{F\in V_d:\rho(F)\le r\}.
 \]
+The exact-rank stratum is
+\[
+ X_{d,r}^{\circ}=X_{d,r}\setminus X_{d,r-1}. \tag{3.1}
+\]
 The factor chart
 \[
  C=UW,\qquad
  U\in\operatorname {Mat}_{d+1,r},\quad
- W\in\operatorname {Mat}_{r,d+1} \tag{3.1}
+ W\in\operatorname {Mat}_{r,d+1} \tag{3.2}
 \]
-has the generic \(\operatorname {GL}_r\)-gauge.  Hence
+parametrizes \(X_{d,r}^{\circ}\) when both factors have rank \(r\); this
+is enforced on affine charts by inverting one \(r\)-by-\(r\) minor of
+each factor.  It has the generic \(\operatorname {GL}_r\)-gauge.  Hence
 \[
- \dim X_{d,r}=r(2(d+1)-r). \tag{3.2}
+ \dim X_{d,r}=r(2(d+1)-r). \tag{3.3}
 \]
 For \(d\ge2\), the generic diagonal \(\operatorname {SL}_2\)-stabilizer is
 finite on the cases used below, so the quotient dimension is
 \[
- q_{d,r}=r(2(d+1)-r)-3. \tag{3.3}
+ q_{d,r}=r(2(d+1)-r)-3. \tag{3.4}
 \]
 
 The \(m\)-th moment is
 \[
  \mu_m(C)=
  \sum_{I=0}^{dm}(dm-I)!\,I!\,
- [x^Iy^I]\left(\sum_{i,j=0}^dc_{ij}x^iy^j\right)^m. \tag{3.4}
+ [x^Iy^I]\left(\sum_{i,j=0}^dc_{ij}x^iy^j\right)^m. \tag{3.5}
 \]
-After (3.1), it is a gauge-invariant polynomial of degree \(2m\) in the
+After (3.2), it is a gauge-invariant polynomial of degree \(2m\) in the
 factor variables and degree \(m\) on \(X_{d,r}\).
 
 ## 4. Exact Hilbert test
@@ -195,20 +222,37 @@ replacement that passes the tested conditions.
 
 ## 7. Research gates
 
-The rank filtration suggests the following order.
+The split-symbol theorem removes rank one from the all-order SIC search.
+Finite rank-one moment--nullcone calculations remain useful for the
+stronger problem of classifying truncated fibers, but they are not a
+prerequisite for beginning the rank-two recurrence programme.
 
-1. **Degree three, rank two.** Extract a closed point or component from
-   the nine-moment semistable fiber.  Evaluate \(\mu_{10}\) and
-   \(\mu_{11}\), then the corrected order \(\mu_{12}\).  If an all-order
-   component survives, produce one fixed mixed defect.
-2. **Degree four, rank two.** Complete the existing squarefree rank-one
-   boundary membership, extract the existential thirteen-moment point,
-   and specialize the parked period recurrence.
-3. **Ranks three and four.** Consecutive moments pass the Hilbert test
-   through degree \(85\), so a blind consecutive-moment search has no
-   current dimension-theoretic guarantee.  Search corrected degree sets
-   and boundary incidences before numerical solving.
-4. **All degree.** Compute \(H_{d,r}\), generic moment transcendence
+The efficient order is:
+
+1. **Degree four, exact rank two.** Work on full-rank factor charts in
+   (3.2), impose a dimension-sized moment system, and compute exact
+   determinantal components or closed points.  The existential
+   thirteen-moment point on \(X_{4,2}\) is motivation, not a substitute
+   for this extraction: it has no coordinates and has not been proved to
+   lie in \(X_{4,2}^{\circ}\).
+2. **Rank-two recurrence extraction.** For each exact point or component,
+   specialize the constant-term/beta period, derive a scalar recurrence
+   by creative telescoping, include endpoint certificates and
+   singular-step checks, and evaluate enough exact initial and bridge
+   moments to decide the all-order tail.
+3. **Mixed SIC test.** On every all-order pure survivor, test a fixed
+   low-bidegree multiplier and prove an infinite nonzero mixed tail.  A
+   pure recurrence alone proves only moment-zero status.
+4. **Degree three companion laboratory.** Extract a point or component
+   from the existential exact-rank-two nine-moment fiber, evaluate
+   \(\mu_{10},\mu_{11},\mu_{12}\), and connect it to the existing
+   rank-two holonomic probes.
+5. **Ranks three and four.** Move upward only after a global rank-two
+   exclusion or after the rank-two components have been classified.
+   Consecutive moments pass the Hilbert test through degree \(85\) here,
+   so corrected degree sets and exact component geometry should precede
+   numerical solving.
+6. **All degree.** Compute \(H_{d,r}\), generic moment transcendence
    degree, and the first Hilbert-compatible degree set for fixed
    \(r=2,3,4\) as functions of \(d\).  The structural target is a uniform
    low-rank theorem, not a growing list of bounded searches.

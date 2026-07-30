@@ -218,15 +218,22 @@ Consequently:
 > \(\mu_1,\ldots,\mu_{13}\) on \(X_2\) contains a semistable point.
 
 By itself this proposition does not determine whether the point has rank
-one or two.  The finite rank-one analysis below closes every collided-root
-stratum and all but one squarefree chart, so it does not yet close that
-ambiguity.  A zero of thirteen moments still does not satisfy the all-order
-SIC premise.
+one or two.  That ambiguity belongs to the finite-prefix Hilbert
+statement, not to the all-order SIC frontier.  The split-symbol theorem
+already proves that every rank-one point satisfying all pure moments is
+SIC-safe.  Therefore direct counterexample search starts on the
+exact-rank-two open, obtained from \(C=UW\) by requiring both factors to
+have rank two.  A zero of thirteen moments still does not satisfy the
+all-order SIC premise.
 
-The boundary problem is itself tightly calibrated. On the rank-one Segre
-cone, \(\mu_1,\ldots,\mu_6\) have exact Jacobian rank six, the dimension
-of its generic invariant quotient. Through degree \(100\), their required
-Hilbert numerator is
+The remaining rank-one calculations below address the stronger question
+of whether this particular truncated fiber meets the semistable rank-one
+stratum.  They are retained as exact moment--nullcone geometry, but are
+not a prerequisite for constructing exact rank-two components or deriving
+recurrences on them.  On the rank-one Segre cone,
+\(\mu_1,\ldots,\mu_6\) have exact Jacobian rank six, the dimension of its
+generic invariant quotient. Through degree \(100\), their required Hilbert
+numerator is
 \[
 \begin{aligned}
 1+t^2+t^3+4t^4+2t^5+7t^6+5t^7+8t^8+5t^9
@@ -411,7 +418,9 @@ If the remaining membership is certified, then every squarefree six-moment zero
 is one of the four annihilator sections. Combined with the exact
 collided-root cutoffs, this would imply that the semistable point of
 Proposition 6.1 can be chosen with exact coefficient-matrix rank two.
-At present Proposition 6.1 only guarantees rank at most two.
+At present Proposition 6.1 only guarantees rank at most two.  This
+conditional sharpening is independent of a direct search on the
+exact-rank-two open.
 
 The least degree repair is
 \[
@@ -432,19 +441,25 @@ candidate.  This remains a necessary-test result, not a proof that
 
 The efficient order is now:
 
-1. reconstruct and verify over \(\mathbb Q\) the target-only lift
-   \(qM^5\in(f_3,f_4,f_5,f_6)\) from (6.13a)--(6.13c);
-2. after that boundary closure, extract an explicit closed semistable
-   point or component from the thirteen-moment fiber, including its exact
-   residue field or function field;
-3. prove that the extracted point or generic component has coefficient
-   rank exactly two;
-4. only then specialize the parked period formula, derive a checkable
-   recurrence, and evaluate \(\mu_{14}\);
-5. apply (4.3) with fixed low-bidegree multipliers on every all-order
+1. cover the exact-rank-two locus by factor charts \(C=UW\) with chosen
+   nonzero \(2\)-by-\(2\) minors in both factors;
+2. impose a dimension-sized moment system and extract an explicit closed
+   point or positive-dimensional determinantal component, including its
+   exact residue field or function field;
+3. specialize the parked period formula on each exact point/component,
+   derive a checkable creative-telescoping recurrence with endpoint and
+   singular-step certificates, and evaluate \(\mu_{14}\) and any required
+   bridge moments;
+4. apply (4.3) with fixed low-bidegree multipliers on every all-order
    survivor; and
-6. only after a global rank-two exclusion, repeat for ranks three and
+5. only after a global rank-two exclusion, repeat for ranks three and
    four.
+
+Separately, reconstructing the rational target-only lift
+\(qM^5\in(f_3,f_4,f_5,f_6)\) from (6.13a)--(6.13c) would complete the
+finite-prefix rank-one classification and force the existential point in
+Proposition 6.1 to have exact rank two.  It is no longer the opening gate
+for the all-order SIC search.
 
 The corrected degree set
 \(\mu_1,\ldots,\mu_{12},\mu_{14}\) remains useful for organizing a

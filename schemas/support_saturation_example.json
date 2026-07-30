@@ -1,0 +1,32 @@
+{
+  "schema": "support-saturation-input.v1",
+  "ring": {
+    "variables": ["x", "y", "t"],
+    "characteristic": 0,
+    "ordering": "dp"
+  },
+  "module_presentation": {
+    "rank": 1,
+    "generators": [["x^2"], ["x*y"]],
+    "label": "rank-one-support-calibration",
+    "singular_setup": null
+  },
+  "support_ideal": ["x"],
+  "completion_ideal": ["t"],
+  "parameter_base_variables": ["y"],
+  "normal_variables": ["t"],
+  "jet_orders": [1, 2, 3],
+  "distinguished_class": ["x"],
+  "jet_strategy": "full_saturation",
+  "transition_annihilator": null,
+  "assurance": {
+    "claim": "exact",
+    "target_characteristic": 0,
+    "note": "Exact characteristic-zero calibration."
+  },
+  "compiler_options": {
+    "associated_primes": "decompose",
+    "saturation_strategy": "compute",
+    "torsion_exponent_bound": 8
+  }
+}

@@ -12,11 +12,13 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from jcsearch.support_saturation import (
+    CertificateAssurance,
     CompilerOptions,
     ModulePresentation,
     NormalFiltration,
     PolynomialRing,
     SupportSaturationCompiler,
+    SupportSaturationProblem,
 )
 
 
@@ -46,6 +48,12 @@ def torsion_calibration() -> None:
     assert not result["saturation"]["equal_to_presentation"]
     assert result["local_cohomology"]["generator_count"] == 1
     assert result["local_cohomology"]["annihilator"] == ["z", "y", "x"]
+    assert result["local_cohomology"]["annihilator_radical"] == [
+        "z",
+        "y",
+        "x",
+    ]
+    assert result["local_cohomology"]["least_annihilating_exponent"] == 1
     assert result["associated_primes"]["primes"] == [
         ["x"],
         ["z", "y", "x"],
@@ -56,11 +64,15 @@ def torsion_calibration() -> None:
         "boundary_annihilation_exponent": 1,
         "remainder": ["gen(2)"],
         "annihilator": ["z", "y", "x"],
+        "annihilator_radical": ["z", "y", "x"],
     }
     assert all(
         transition["surjective"]
         for transition in result["finite_jets"]["transitions"]
     )
+    uniform = result["finite_jets"]["uniform_exponent_test"]
+    assert uniform["status"] == "certified_on_requested_finite_tower"
+    assert not uniform["all_order_uniform_bound_certified"]
 
 
 def regularity_calibration() -> None:
@@ -139,6 +151,70 @@ def distinguished_witness_calibration() -> None:
     assert result["regular_elements"][
         "certifies_no_regular_element_in_boundary"
     ]
+    assert result["distinguished_class"]["annihilator_radical"] == [
+        "y",
+        "x",
+    ]
+
+
+def shared_input_schema_calibration() -> None:
+    payload = json.loads(
+        (ROOT / "schemas" / "support_saturation_example.json").read_text()
+    )
+    problem = SupportSaturationProblem.from_mapping(payload)
+    assert problem.to_mapping()["schema"] == SupportSaturationProblem.schema
+    compiler = SupportSaturationCompiler(
+        CompilerOptions(**payload["compiler_options"])
+    )
+    result = compiler.compile_problem(problem)
+    assert result["problem"] == problem.to_mapping()
+    assert result["ideals"] == {
+        "support_ideal": ["x"],
+        "completion_ideal": ["t"],
+    }
+    assert result["certificate_state"] == {
+        "backend_arithmetic": "exact",
+        "backend_characteristic": 0,
+        "claim_assurance": "exact",
+        "target_characteristic": 0,
+        "characteristic_zero_lift": "not_needed",
+        "note": "Exact characteristic-zero calibration.",
+    }
+    assert result["local_cohomology"]["annihilator_radical"] == ["x"]
+    assert result["associated_prime_candidates"]["primes"] == [
+        ["x"],
+        ["y", "x"],
+    ]
+    assert result["problem"]["parameter_base_variables"] == ["y"]
+    assert result["problem"]["normal_variables"] == ["t"]
+    assert len(result["problem_sha256"]) == 64
+
+    modular = SupportSaturationProblem(
+        presentation=ModulePresentation(
+            ring=PolynomialRing(("x", "y"), characteristic=32003),
+            rank=1,
+            generators=(("x",),),
+        ),
+        support_ideal=("y",),
+        parameter_base_variables=("y",),
+        normal_variables=("x",),
+        assurance=CertificateAssurance(
+            claim="modular",
+            target_characteristic=0,
+            note="No characteristic-zero lift is claimed.",
+        ),
+    )
+    modular_result = SupportSaturationCompiler(
+        CompilerOptions(
+            associated_primes="regularity",
+            saturation_strategy="regularity",
+        )
+    ).compile_problem(modular)
+    state = modular_result["certificate_state"]
+    assert state["backend_arithmetic"] == "exact"
+    assert state["backend_characteristic"] == 32003
+    assert state["claim_assurance"] == "modular"
+    assert state["characteristic_zero_lift"] == "not_claimed"
 
 
 def generated_artifact_regression() -> None:
@@ -166,6 +242,43 @@ def generated_artifact_regression() -> None:
         and item["local_cohomology"]["zero"]
         for item in cubic["certificates"].values()
     )
+
+    frontier_path = (
+        GENERATED / "support_saturation_cubic_annihilator_frontier.json"
+    )
+    if frontier_path.exists():
+        frontier = json.loads(frontier_path.read_text())
+        assert frontier["case"] == (
+            "cubic-formal-gauge-annihilator-frontier"
+        )
+        strata = frontier["stratification"]
+        assert strata["smooth"][
+            "universal_24_parameter_cotangent_saturation"
+        ] == "proved"
+        assert strata["smooth"]["quartic_nongauge_dimension"] == 0
+        singular_queue = strata["singular_squarefree"]["queue"]
+        assert [row["annihilator_type"] for row in singular_queue] == [
+            "(x)",
+            "(x^2)",
+            "(yz)",
+            "(y^3)",
+            "(xyz)",
+            "(x^3)",
+        ]
+        assert [
+            row["quartic_nongauge_dimension"] for row in singular_queue
+        ] == [2, 4, 4, 6, 6, 8]
+        degenerate_queue = strata["double_triple_line_and_zero"]["queue"]
+        assert [row["symbol"] for row in degenerate_queue] == [
+            "double-line",
+            "triple-line",
+            "zero",
+        ]
+        assert all(
+            row["gate_before_saturation"]
+            == "generically etale and Keller compatibility"
+            for row in degenerate_queue
+        )
 
     degree42_path = (
         GENERATED / "support_saturation_degree42_ritt_fiber_mod32003.json"
@@ -223,6 +336,7 @@ def main() -> None:
     regularity_calibration()
     multi_generator_saturation_calibration()
     distinguished_witness_calibration()
+    shared_input_schema_calibration()
     generated_artifact_regression()
     print("PASS: support-saturation compiler exact calibrations")
     print("PASS: local cohomology, associated primes, classes, and jets agree")

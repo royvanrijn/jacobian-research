@@ -31,6 +31,7 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 	verify-gq2-local-fibers \
 	verify-coincident-root-loci verify-papers verify-ritt-boundary \
 	verify-ritt-2-complex verify-ll-ritt-reduction verify-ritt-deformation-complex \
+	verify-positive-characteristic-ritt-infinitesimals \
 	verify-unified-deformation-complex \
 	verify-boundary-obstruction-theory \
 	verify-universal-cubic-cotangent-saturation \
@@ -88,11 +89,16 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: verify-rank-four-nonprojective-keller-lift
 .PHONY: verify-rank-four-degree-eighteen-target-obstruction
 .PHONY: verify-binary-degree-five-gvc search-binary-degree-five-gvc
+.PHONY: verify-projective-gradient-segre
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
 	$(PYTHON) scripts/check_markdown_links.py
 	$(PYTHON) scripts/audit_status.py
+
+verify-projective-gradient-segre:
+	$(PYTHON) scripts/verify_projective_gradient_segre_machinery.py
+	M2 --script scripts/verify_projective_gradient_segre_families.m2
 
 verify-rank-three-collision-descent:
 	$(PYTHON) scripts/verify_rank_three_collision_descent.py
@@ -275,6 +281,10 @@ verify-ll-ritt-reduction:
 
 verify-ritt-deformation-complex:
 	$(PYTHON) scripts/verify_hessian_ritt_deformation_complex.py
+	$(PYTHON) scripts/verify_positive_characteristic_ritt_infinitesimals.py
+
+verify-positive-characteristic-ritt-infinitesimals:
+	$(PYTHON) scripts/verify_positive_characteristic_ritt_infinitesimals.py
 
 verify-unified-deformation-complex:
 	$(PYTHON) scripts/verify_unified_deformation_complex.py
@@ -464,6 +474,7 @@ verify-theorems:
 	$(PYTHON) scripts/verify_universal_cubic_gauge_multiplicity.py
 	$(PYTHON) scripts/verify_universal_power_shifted_gauge_multiplicity.py
 	$(PYTHON) scripts/verify_whole_plane_stable_multiplicity.py
+	$(PYTHON) scripts/verify_two_marked_fiber_gauge_reconstruction.py
 	$(PYTHON) scripts/verify_universal_quintic_fiber_multiplicity.py
 	$(PYTHON) scripts/verify_universal_higher_degree_fiber_multiplicity.py
 	$(PYTHON) scripts/verify_universal_multiplicity_witness_cards.py
@@ -662,6 +673,7 @@ verify-regressions: verify-external-consequences verify-factorial-moments verify
 	$(PYTHON) scripts/verify_degree30_ritt_2_complex.py
 	$(PYTHON) scripts/verify_ll_ritt_reduction.py
 	$(PYTHON) scripts/verify_hessian_ritt_deformation_complex.py
+	$(PYTHON) scripts/verify_positive_characteristic_ritt_infinitesimals.py
 	$(PYTHON) scripts/verify_unified_deformation_complex.py
 	$(PYTHON) scripts/verify_stable_generator_rigidity.py
 	$(PYTHON) scripts/verify_multicluster_ll_comparison.py

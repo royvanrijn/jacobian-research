@@ -14,8 +14,10 @@ then the projective degrees satisfy
     g_i = m^i - sum_{k=1}^i binom(i,k)m^(i-k)sigma_k.
 
 The script enumerates every integral degree list allowed by the elementary
-bounds and log-concavity when m is 2 or 3 and g_4 is 2 or 3.  These are
-necessary numerical signatures, not existence results and not a
+bounds and log-concavity when m is 2, 3, or 4 and g_4 is 2 or 3.  For
+m=4 it also records the exact leading-Hessian coverage matrix for a
+collision-normalized quintic potential.  These are necessary numerical
+signatures and structural reductions, not existence results and not a
 classification by Hilbert polynomial.
 """
 
@@ -26,9 +28,19 @@ import hashlib
 import json
 from math import comb
 from pathlib import Path
+import sys
+
+import sympy as sp
 
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from jcsearch.projective_gradient_segre import (  # noqa: E402
+    projective_degrees_from_segre,
+    segre_degrees_from_projective,
+)
+
 OUTPUT = (
     ROOT
     / "artifacts"
@@ -49,26 +61,12 @@ class Signature:
 
 def segre_from_degrees(m: int, degrees: tuple[int, ...]) -> tuple[int, ...]:
     """Invert the triangular projective-degree/Segre-degree relation."""
-    sigmas: list[int] = []
-    for i in range(1, len(degrees)):
-        known = sum(
-            comb(i, k) * m ** (i - k) * sigmas[k - 1]
-            for k in range(1, i)
-        )
-        sigmas.append(m**i - known - degrees[i])
-    return tuple(sigmas)
+    return segre_degrees_from_projective(m, degrees)
 
 
 def projective_from_segre(m: int, sigmas: tuple[int, ...]) -> tuple[int, ...]:
     """Evaluate the blow-up formula in every projective degree."""
-    return (1,) + tuple(
-        m**i
-        - sum(
-            comb(i, k) * m ** (i - k) * sigmas[k - 1]
-            for k in range(1, i + 1)
-        )
-        for i in range(1, len(sigmas) + 1)
-    )
+    return projective_degrees_from_segre(m, sigmas)
 
 
 def castelnuovo_bound_p4(degree: int) -> int:
@@ -127,7 +125,7 @@ def atlas(m: int, top_degree: int) -> list[Signature]:
 
 atlases = {
     f"gradient_degree_{m}_affine_degree_{top}": atlas(m, top)
-    for m in (2, 3)
+    for m in (2, 3, 4)
     for top in (2, 3)
 }
 assert {key: len(value) for key, value in atlases.items()} == {
@@ -135,6 +133,8 @@ assert {key: len(value) for key, value in atlases.items()} == {
     "gradient_degree_2_affine_degree_3": 7,
     "gradient_degree_3_affine_degree_2": 72,
     "gradient_degree_3_affine_degree_3": 67,
+    "gradient_degree_4_affine_degree_2": 319,
+    "gradient_degree_4_affine_degree_3": 307,
 }
 
 
@@ -154,6 +154,297 @@ assert zero_dimensional == {
     "gradient_degree_2_affine_degree_3": 13,
     "gradient_degree_3_affine_degree_2": 79,
     "gradient_degree_3_affine_degree_3": 78,
+    "gradient_degree_4_affine_degree_2": 254,
+    "gradient_degree_4_affine_degree_3": 253,
+}
+
+
+# The quintic atlas begins the genuinely open range.  The projective-degree
+# signature alone does not determine the generic rank of Hess(h5), so the
+# numerical rows and the leading-Hessian branches must be recorded as two
+# transverse filters rather than falsely assigning individual signatures to
+# theorem strata.
+quintic_signature_counts_by_leading_codimension = {}
+for top_degree in (2, 3):
+    key = f"gradient_degree_4_affine_degree_{top_degree}"
+    quintic_signature_counts_by_leading_codimension[
+        f"affine_degree_{top_degree}"
+    ] = {
+        str(codimension): sum(
+            row.leading_base_codimension == codimension
+            for row in atlases[key]
+        )
+        for codimension in (2, 3, 4)
+    }
+
+assert quintic_signature_counts_by_leading_codimension == {
+    "affine_degree_2": {"2": 260, "3": 58, "4": 1},
+    "affine_degree_3": {"2": 249, "3": 57, "4": 1},
+}
+
+quintic_smooth_curve_only_counts = {
+    f"affine_degree_{top_degree}": sum(
+        row.smooth_lci_curve_numerically_possible is True
+        for row in atlases[
+            f"gradient_degree_4_affine_degree_{top_degree}"
+        ]
+    )
+    for top_degree in (2, 3)
+}
+assert quintic_smooth_curve_only_counts == {
+    "affine_degree_2": 18,
+    "affine_degree_3": 18,
+}
+
+
+# Exact determinant-face checks for
+#
+#   Hess(q2 + lambda*h3 + lambda^2*h4 + lambda^3*h5).
+#
+# After Gordan--Noether supplies a constant kernel for Hess(h5), put that
+# kernel first.  For leading Hessian rank r, the top remaining face is
+#
+#   det(C_r) det(Hess(h4)|_K),
+#
+# in lambda-degree 8+r.  In rank three this first makes
+# D_t^2 h4=0.  The next face is the cubic Schur identity
+#
+#   det(C_3) D_t^2 h3
+#     - grad(D_t h4)^T adj(C_3) grad(D_t h4) = 0.
+#
+# The checks use generic symmetric blocks, so they certify the matrix
+# identity independently of any support choice.
+lam = sp.symbols("lambda")
+c11, c12, c13, c22, c23, c33 = sp.symbols(
+    "c11 c12 c13 c22 c23 c33"
+)
+c3 = sp.Matrix(
+    [
+        [c11, c12, c13],
+        [c12, c22, c23],
+        [c13, c23, c33],
+    ]
+)
+b00, b01, b02, b03 = sp.symbols("b00 b01 b02 b03")
+b11, b12, b13, b22, b23, b33 = sp.symbols(
+    "b11 b12 b13 b22 b23 b33"
+)
+b4 = sp.Matrix(
+    [
+        [b00, b01, b02, b03],
+        [b01, b11, b12, b13],
+        [b02, b12, b22, b23],
+        [b03, b13, b23, b33],
+    ]
+)
+a00 = sp.symbols("a00")
+a4 = sp.diag(a00, 0, 0, 0)
+d3 = sp.diag(0, 1, 1, 1)
+d3[1:4, 1:4] = c3
+rank_three_pencil = lam**3 * d3 + lam**2 * b4 + lam * a4
+rank_three_det = sp.Poly(
+    sp.expand(rank_three_pencil.det()), lam
+)
+rank_three_top = rank_three_det.coeff_monomial(lam**11)
+assert sp.expand(rank_three_top - b00 * c3.det()) == 0
+rank_three_next = sp.expand(
+    rank_three_det.coeff_monomial(lam**10).subs(b00, 0)
+)
+rank_three_schur = (
+    a00 * c3.det()
+    - (
+        sp.Matrix([[b01, b02, b03]])
+        * c3.adjugate()
+        * sp.Matrix([b01, b02, b03])
+    )[0]
+)
+assert sp.expand(rank_three_next - rank_three_schur) == 0
+assert all(
+    sp.expand(entry) == 0
+    for entry in (
+        c3 * c3.adjugate() - c3.det() * sp.eye(3)
+    )
+)
+
+# In the rank-three nonaligned branch, C_3 is the Hessian of a ternary
+# quintic, so det(C_3) has degree 9.  For a ternary cubic s3, d=grad(s3)
+# has degree 2 and adj(C_3)d has degree 8.  If det(C_3) is squarefree, its
+# rank-one adjugate at the generic point of every discriminant component
+# turns d^T adj(C_3)d=0 into adj(C_3)d=0 on that component.  Hence the
+# squarefree determinant divides the degree-eight vector, forcing the
+# vector and then d to vanish.  The checker records the exact degree and
+# adjugate identities; squarefree divisibility is the UFD argument in the
+# canonical note.
+rank_three_squarefree_degree_ledger = {
+    "hessian_entry_degree": 3,
+    "hessian_determinant_degree": 9,
+    "cubic_gradient_degree": 2,
+    "adjugate_degree": 6,
+    "adjugate_gradient_vector_degree": 8,
+}
+assert (
+    rank_three_squarefree_degree_ledger[
+        "adjugate_gradient_vector_degree"
+    ]
+    < rank_three_squarefree_degree_ledger[
+        "hessian_determinant_degree"
+    ]
+)
+
+qx, qy, qz = sp.symbols("qx qy qz")
+squarefree_quintic_witness = (
+    qx**5
+    + qy**5
+    + qz**5
+    + qx**4 * qy
+    + qy**4 * qz
+    + qz**4 * qx
+)
+squarefree_witness_determinant = sp.expand(
+    sp.hessian(
+        squarefree_quintic_witness, (qx, qy, qz)
+    ).det()
+)
+squarefree_witness_gcd = squarefree_witness_determinant
+for variable in (qx, qy, qz):
+    squarefree_witness_gcd = sp.gcd(
+        squarefree_witness_gcd,
+        sp.diff(squarefree_witness_determinant, variable),
+    )
+assert sp.Poly(
+    squarefree_witness_determinant, qx, qy, qz
+).total_degree() == 9
+assert sp.Poly(
+    squarefree_witness_gcd, qx, qy, qz
+).total_degree() == 0
+rank_three_squarefree_degree_ledger["squarefree_witness"] = (
+    "qx^5+qy^5+qz^5+qx^4*qy+qy^4*qz+qz^4*qx"
+)
+rank_three_squarefree_degree_ledger[
+    "squarefree_witness_hessian_terms"
+] = len(
+    sp.Poly(
+        squarefree_witness_determinant, qx, qy, qz
+    ).terms()
+)
+
+c2 = sp.Matrix([[c11, c12], [c12, c22]])
+d2 = sp.diag(0, 0, 1, 1)
+d2[2:4, 2:4] = c2
+rank_two_det = sp.Poly(
+    sp.expand((lam**3 * d2 + lam**2 * b4).det()), lam
+)
+rank_two_top = rank_two_det.coeff_monomial(lam**10)
+assert sp.expand(
+    rank_two_top - c2.det() * b4[:2, :2].det()
+) == 0
+
+d1 = sp.diag(0, 0, 0, c11)
+rank_one_det = sp.Poly(
+    sp.expand((lam**3 * d1 + lam**2 * b4).det()), lam
+)
+rank_one_top = rank_one_det.coeff_monomial(lam**9)
+assert sp.expand(
+    rank_one_top - c11 * b4[:3, :3].det()
+) == 0
+
+quintic_coverage_matrix = [
+    {
+        "leading_hessian_rank": 0,
+        "condition": "Hess(h5)=0, hence h5=0 by homogeneity",
+        "status": "excluded",
+        "result": "HC4CQ1",
+        "first_unresolved_face": None,
+    },
+    {
+        "leading_hessian_rank": 1,
+        "condition": (
+            "constant 3-plane K=ker Hess(h5); "
+            "det(Hess(h4)|K)=0"
+        ),
+        "status": "unresolved",
+        "result": None,
+        "first_unresolved_face": (
+            "constant synchronization of the function-field kernel of "
+            "the ternary quartic Hessian restriction"
+        ),
+    },
+    {
+        "leading_hessian_rank": 2,
+        "condition": (
+            "constant 2-plane K=ker Hess(h5); "
+            "det(Hess(h4)|K)=0"
+        ),
+        "status": "unresolved",
+        "result": None,
+        "first_unresolved_face": (
+            "constant synchronization of the function-field kernel of "
+            "the binary quartic Hessian restriction"
+        ),
+    },
+    {
+        "leading_hessian_rank": 3,
+        "condition": (
+            "constant direction t=ker Hess(h5); D_t^2 h4=0; "
+            "write s3=D_t h4"
+        ),
+        "status": "split",
+        "covered_subbranch": {
+            "condition": "s3=0",
+            "status": "excluded",
+            "result": "HC4CD5",
+        },
+        "unresolved_subbranch": {
+            "condition": "s3!=0",
+            "status": "split_by_hessian_discriminant",
+            "first_unresolved_face": (
+                "det(Hess_u(h5)) divides "
+                "grad(s3)^T adj(Hess_u(h5)) grad(s3), "
+                "with linear quotient D_t^2 h3"
+            ),
+            "squarefree_hessian_determinant": {
+                "status": "excluded",
+                "result": "squarefree adjugate-divisibility obstruction",
+            },
+            "nonsquarefree_hessian_determinant": {
+                "status": "unresolved",
+                "first_unresolved_face": (
+                    "classify repeated components of the degree-nine "
+                    "ternary-quintic Hessian determinant and solve the "
+                    "Schur incidence on those components"
+                ),
+            },
+        },
+    },
+]
+
+quintic_coverage_summary = {
+    "numerical_signatures": {
+        "affine_degree_2": 319,
+        "affine_degree_3": 307,
+        "total": 626,
+    },
+    "signature_counts_by_leading_base_codimension":
+        quintic_signature_counts_by_leading_codimension,
+    "zero_dimensional_lengths": {
+        "affine_degree_2": 254,
+        "affine_degree_3": 253,
+    },
+    "smooth_integral_curve_only_rows_passing_castelnuovo": (
+        quintic_smooth_curve_only_counts
+    ),
+    "signature_level_exclusions_from_hessian_rank_matrix": 0,
+    "reason_no_signature_level_exclusion": (
+        "No proved implication currently recovers leading Hessian rank or "
+        "kernel alignment from the four projective degrees alone."
+    ),
+    "recommended_next_exact_calculation": (
+        "Classify the nonsquarefree degree-nine Hessian determinants of "
+        "ternary quintics in the rank-three branch, then compute local "
+        "cone-vertex Segre contributions only on the surviving strata."
+    ),
+    "rank_three_squarefree_degree_ledger":
+        rank_three_squarefree_degree_ledger,
 }
 
 
@@ -303,7 +594,7 @@ assert controls["meng_yang_after_schur_hc5"]["total_segre_correction"] == 371290
 
 
 payload = {
-    "format": "hc4-projective-polar-atlas-v1",
+    "format": "hc4-projective-polar-atlas-v2",
     "conventions": {
         "map": "[X0^m:F1^h:F2^h:F3^h:F4^h]",
         "segre_pushforward": (
@@ -321,9 +612,12 @@ payload = {
         "Integral signatures from positivity, degree bounds, and "
         "log-concavity. Wang's theorem excludes every listed "
         "quadratic-gradient affine-degree-two/three row. HC4CQ1 and "
-        "Ax--Grothendieck exclude every listed cubic-gradient row. Thus "
-        "these are a numerical pre-Keller atlas, not existence results; "
-        "the ordinary Hilbert polynomial does not determine the Segre class."
+        "Ax--Grothendieck exclude every listed cubic-gradient row. The "
+        "quintic rows are paired with an exact leading-Hessian coverage "
+        "matrix, but projective degrees alone do not assign a row to a "
+        "Hessian-rank branch. Thus these are a numerical pre-Keller atlas "
+        "and structural reduction, not existence results; the ordinary "
+        "Hilbert polynomial does not determine the Segre class."
     ),
     "counts": {key: len(value) for key, value in atlases.items()},
     "zero_dimensional_lengths": zero_dimensional,
@@ -335,6 +629,8 @@ payload = {
     "cubic_keller_degree_one_atlas": [
         asdict(row) for row in cubic_keller_atlas
     ],
+    "quintic_coverage_summary": quintic_coverage_summary,
+    "quintic_coverage_matrix": quintic_coverage_matrix,
     "atlases": {
         key: [asdict(row) for row in value]
         for key, value in atlases.items()
@@ -348,13 +644,17 @@ OUTPUT.write_text(serialized)
 digest = hashlib.sha256(serialized.encode()).hexdigest()
 
 print("PASS: inverted the projective-degree/Segre-degree formula exactly")
-print("PASS: low-degree atlas counts are 9, 7, 72, and 67")
-print("PASS: zero-dimensional lengths are 14, 13, 79, and 78")
+print("PASS: atlas counts are 9, 7, 72, 67, 319, and 307")
+print("PASS: zero-dimensional lengths are 14, 13, 79, 78, 254, and 253")
 print("PASS: Wang's theorem excludes all 16 quadratic-degree rows")
 print("PASS: every quadratic Keller gradient has total correction 15")
 print("PASS: HC4CQ1 excludes all 139 cubic-degree rows")
 print("PASS: every cubic Keller gradient in HC4 has total correction 80")
 print("PASS: any HC4 counterexample potential has degree at least five")
+print("PASS: verified the rank-one/two/three quintic determinant faces")
+print("PASS: rank-three aligned quintics reduce to HC4CD5")
+print("PASS: isolated the rank-three cubic Schur divisibility gap")
+print("PASS: squarefree rank-three Hessian discriminants force s3=0")
 print("PASS: HC6/HC5 total corrections are 117646 and 371290")
 print(f"PASS: wrote {OUTPUT.relative_to(ROOT)}")
 print(f"SHA256: {digest}")

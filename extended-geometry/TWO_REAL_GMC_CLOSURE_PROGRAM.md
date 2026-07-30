@@ -1,5 +1,11 @@
 # Closure program for GMC in two real variables
 
+> **Superseded proof route / retained finite-degree refinement.**  `G2T`
+> proves GMC(2) in every degree and for arbitrary rotational support.  This
+> note is retained for exact cubic null-cone certificates, finite-chart
+> regressions, and reusable elimination techniques; it is not an active
+> frontier or search queue.
+
 > **Resolved cubic frontier (July 23, 2026).**  The program below records the
 > route that led to the computation.  The remaining five-weight charts, every
 > six-weight chart, and the full seven-weight support now have exact
@@ -274,7 +280,7 @@ There are three plausible routes.
 The cubic computation is the calibration case: it identifies which route
 produces certificates small enough to generalize.
 
-## 6. Order of execution
+## 6. Historical order of execution
 
 1. Compute the cubic invariant null-cone ideal and seek the finite
    containment (4.1), closing all remaining cubic supports at once.
@@ -288,7 +294,7 @@ positive-dimensional component or a specific null-cone generator not yet
 controlled.  The program should never return to undirected coefficient
 optimization.
 
-## 7. Remaining dense-cubic census
+## 7. Completed dense-cubic census
 
 The five-weight compiler now has all of the previously missing resumability
 features: normalized systems are serialized before Gröbner computation,
@@ -296,7 +302,7 @@ each chart has its own result record, modular calculations are labeled as
 discovery, and support exclusions are counted only after rational
 promotion.
 
-The next finite tasks are:
+At that stage, the next finite tasks were:
 
 1. certify good reduction of the three order-six quotients of lengths
    \(164,164,100\), then use order-seven/eight multiplication matrices to
@@ -305,3 +311,7 @@ The next finite tasks are:
    and eight seven-weight charts;
 3. promote only exact rational unit ideals or rational-basis/good-prime
    multiplication certificates.
+
+All three tasks were subsequently completed by `G2N`, and `G2T` then
+subsumed the entire finite-support route.  The list is retained to document
+certificate provenance and replay order, not as an active work queue.

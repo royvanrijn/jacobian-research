@@ -651,6 +651,33 @@ polynomials record the omitted composite cut.  Comparing them under the
 actual restriction maps between factor charts is still the separate braid
 coherence problem.
 
+### 6.1. The embedded-support restriction test
+
+The characteristic-zero sixth-jet class \(c_6\) from
+[the support-saturation compiler](SUPPORT_SATURATION_COMPILER.md) is a new
+input to this cellular programme.  It is nonzero on the specialized
+cut-\(6\) jet and is killed by the full boundary ideal.  Thus generic
+vanishing away from the boundary does not justify a global saturation
+claim, even when every previously inspected generic stratum vanishes.
+
+At present there is no proved comparison map identifying this
+local-cohomology class with the cut-\(6\) cotangent non-splitting class of
+HRCELL2--HRCELL4.  Constructing that map is the first task.  If an image is
+defined, the completed splittings (6.18)--(6.20) make the rotated
+cut-\(14\) and cut-\(21\) restrictions the next finite calculations.  One
+must then transport all three representatives through the labelled edge
+maps and evaluate the closed braid cochain.
+
+There are two mathematically distinct outcomes: the rotated restrictions
+and braid homotopy may kill the class, or they may exhibit a coherent
+embedded class that persists beyond the cut-\(6\) chart.  Local splitting
+on the rotated sectors does not decide between them.  Likewise, the
+surjective order-seven-to-order-six saturation transition presently known
+modulo \(32003\) is evidence for finite-jet lifting, not a
+characteristic-zero persistence theorem.  This restriction/coherence test,
+rather than another global colon, is the immediate `HRCELL` interface with
+support saturation.
+
 ## 7. Result and remaining proof obligation
 
 The comparison problem now has the following exact status.
@@ -674,12 +701,14 @@ The comparison problem now has the following exact status.
    power move, Dickson move, commuting square, and labelled braid, followed
    by composition base change.
 
-The next concrete calculation is to transport (6.18)--(6.19) through the
-factor-chart transition maps and verify the braid and commuting-cell
-restrictions.  Completed local splitting is no longer the obstruction;
-labelled restriction coherence is.  Closing it would promote the local
-\(H_1\) comparisons to the full degree-forty-two cellular coefficient
-diagram.
+The next concrete calculation is first to construct the comparison map for
+\(c_6\) described in Section 6.1.  Its rotated restrictions then use the
+same factor-chart transition maps needed to transport (6.18)--(6.19) and
+verify the braid and commuting-cell restrictions.  Completed local
+splitting is no longer the obstruction; identification of the embedded
+class and labelled restriction coherence are.  Closing them would promote
+the local \(H_1\) comparisons to the full degree-forty-two cellular
+coefficient diagram.
 
 ## Reproduction
 

@@ -293,6 +293,15 @@ uncomputed generic denominator divisor.
 
 ## 5. Hessian discriminants and automorphisms
 
+Here “Hessian discriminant” means the divisor of the determinant of the
+leading ternary Hessian in the Schur problem.  It is not the base scheme of
+the full polar map, the infinity base scheme of the affine-gradient
+compactification, or a Segre class.  It restricts the support on which a
+later normal-cone calculation must be made; converting it into forbidden
+projective multidegrees requires that additional calculation.  See
+[`PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`](PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md)
+for the repository-wide distinction.
+
 At the Fermat point,
 
 \[

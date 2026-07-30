@@ -266,7 +266,7 @@ and `30`, while the degrees of their radicals are `1` and `3`.  Thus (9) and
 (10) exhaust the reduced constant-`C` boundary, and every point there is an
 automorphism.
 
-## 6. Scope boundary (`OP-FC`, parked)
+## 6. Scope boundary (`OP-FC`, absorbed into `OP-CCDM`)
 
 The dual-number result is a classification only inside (1) and after the
 diagonal normalization (3).  The boundary decomposition is for the full
@@ -274,9 +274,9 @@ unnormalized ansatz (1).  Neither statement classifies all Keller maps of
 degree profile `(7,6,4)`.
 In particular, this finite-support scheme is not the full bounded-degree
 scheme `X(3,d)`.  Jelonek's theorem, its immediate component corollary for
-the explicit maps, and the proposed full tangent/LR-normal calculation are
-recorded separately in
-[the coefficient-component note](JELONEK_COEFFICIENT_COMPONENTS.md).
+the explicit maps, the completed first full-box tangent calculations, and
+the remaining component/decorated-moduli comparison are recorded separately
+in [the coefficient-component note](JELONEK_COEFFICIENT_COMPONENTS.md).
 
 On the normalized chart (3), the further coordinates `s=-3u-v`, `t=-u` and
 the products `P=C^2A`, `Q=CB` turn the complete equation into three
@@ -332,8 +332,9 @@ decomposition
  \cup V(\mathfrak p_2).}                           \tag{16}
 \]
 
-The parked problem `OP-FC` in [STATUS.md](../STATUS.md) is purely
-scheme-theoretic: determine the nilpotent gluing of
+The legacy problem `OP-FC` is now a calibration case inside the unified
+[`OP-CCDM` programme](JELONEK_COEFFICIENT_COMPONENTS.md#7-unified-programme-local-component-versus-decorated-moduli-op-ccdm).
+Its remaining content is purely scheme-theoretic: determine the nilpotent gluing of
 the generically doubled toric component to the two nonreduced boundary
 components along (14).  A bounded Singular attempt at the full global
 standard basis still did not terminate; the radical and every reduced

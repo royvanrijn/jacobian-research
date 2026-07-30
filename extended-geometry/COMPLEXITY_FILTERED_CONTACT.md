@@ -524,7 +524,7 @@ filtered distance from `widehat alpha_t^(-1)` to the lifted target subgroup
 `Lambda_F(widehat Aut_Y)`.  Notice that `Lambda_F(B_t)` is only coefficientwise
 polynomial a priori; its degrees can grow without bound even when `B_t` has
 small coordinate degree.  This is precisely the phenomenon measured by the
-algebraic branches `OP-LR-REES` and `OP-LR-II`.
+linear and quadratic filtered work packages now housed in `OP-CCDM`.
 
 The first two coefficients make the nonlinear forcing explicit.  Write
 
@@ -1048,11 +1048,13 @@ strictness, an apparent cancellation by lower gauges is measured by Rees
 torsion of the coset action and cannot be decided from the linear cokernel
 alone.
 
-### Three independent LR continuation theorems
+### Filtered-contact work packages in `OP-CCDM`
 
-The former single `OP-LR` combined three logically separate assertions.  They
-are now tracked independently; failure of one does not block useful progress
-on either of the others.
+The linear and quadratic calculations below remain logically distinct, but
+they are no longer separate continuation queues.  They are filtered
+calibration faces for the unified
+[local coefficient component versus decorated stable moduli programme](JELONEK_COEFFICIENT_COMPONENTS.md#7-unified-programme-local-component-versus-decorated-moduli-op-ccdm).
+The marked-cover valuative problem `OP-LR-NE` remains independent.
 
 #### OP-LR-REES -- linear target-lift Rees strictness
 
@@ -1216,20 +1218,22 @@ The filtration repairs the defect of ordinary contact order:
 - the determinant-normalized degree-five family satisfies the exact law
   `b_m=34m+1`, giving a source-algebraization obstruction.
 
-What is not yet proved is linear Rees strictness (`OP-LR-REES`), the
-vanishing-or-obstruction theorem for its quadratic symbol (`OP-LR-II`), or the
-marked-cover no-escape theorem (`OP-LR-NE`).  Parameter numerator/denominator
-degree and pole order remain part of the full resource spectrum, but a linear
-intrinsic coordinate-degree obstruction would already force escape from every
-fixed box.
+What is not yet proved is the universal associated-graded consequence across
+the coefficient branches in `OP-CCDM`, or the marked-cover no-escape theorem
+`OP-LR-NE`.  The old `OP-LR-REES` and `OP-LR-II` labels now denote completed
+or partially completed calibration faces inside `OP-CCDM`, not independent
+programme endpoints.  Parameter numerator/denominator degree and pole order
+remain part of the full resource spectrum, but a linear intrinsic
+coordinate-degree obstruction would already force escape from every fixed
+box.
 
 More precisely, the constructible generic boundedness bridge is now complete,
 as is a Noetherian theorem saying that contact in one fixed full resource box
 at every order produces one exact rational equivalence.  The remaining
 family-theoretic issue is no escape at the base point, and the remaining
 degree-five computation is the universal associated-graded nonvanishing in
-every fixed stabilization dimension.  Stable moduli do not depend on these
-continuations: the marked Hessian divisor together with the affine sheet
-already supplies them.  `OP-LR-REES`, `OP-LR-II`, and `OP-LR-NE`, tracked in
-[STATUS.md](../STATUS.md), are therefore independent theorems about filtered
-polynomial LR orbits and their marked valuative closure.
+every fixed stabilization dimension.  Stable moduli do not depend on an
+ordinary tangent quotient: the marked Hessian divisor together with the
+affine sheet already supplies them.  The role of the filtered calculation is
+now to compare algebraization complexity with the reduced coefficient
+branches and their decorations in `OP-CCDM`.

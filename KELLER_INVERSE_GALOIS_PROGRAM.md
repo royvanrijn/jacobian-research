@@ -246,7 +246,7 @@ The systematic queue is:
 
 | stage | groups or actions | first model to audit | current repository state |
 |---:|---|---|---|
-| 1 | cyclic and dihedral | Kummer and Dickson/Chebyshev incidence | cyclic absolute no-go and complete uniform dihedral chart ledger |
+| 1 | cyclic and dihedral | Kummer and Dickson/Chebyshev incidence | cyclic absolute no-go; uniform dihedral ledger; canonical one-normal completion excluded in every degree |
 | 2 | \(A_4,S_4,A_5\) | oriented discriminants and low-dimensional generic polynomials | \(A_4\) has the advanced frontier below; \(S_4,A_5\) absolute ledgers are queued |
 | 3 | Frobenius groups | semidirect-product generic polynomials | \(F_{20}\) has a universal smooth-affine chart; absolute descent is open |
 | 4 | \(\operatorname{PSL}_2(\mathbb F_q)\) | point/line and low-index subgroup torsors | queued |
@@ -269,7 +269,12 @@ The current concrete checkpoints are:
    boundary-unit ledger, and a derivative-unit determinant-one chart.  The
    odd orientation cover has an \(A_{n-1}\) class-group obstruction, while
    direct one-coordinate polynomial pole clearing is excluded in every
-   degree.  Coupled affine modifications remain open.
+   degree.  The
+   [all-degree affine-completion audit](extended-geometry/DIHEDRAL_ALL_DEGREE_AFFINE_COMPLETION_OBSTRUCTIONS.md)
+   further excludes the canonical two-mask construction with any single
+   normal coordinate, including every nonlinear resonant degree.  The
+   remaining canonical search requires two coupled normal directions;
+   alternative determinant-\(\Delta_n\) blowdowns remain separate.
 2. [**\(A_N\) in its natural
    action.**](extended-geometry/A4_KELLER_INVERSE_COVER.md) The
    square-discriminant condition is conceptually minimal, and the oriented

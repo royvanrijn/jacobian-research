@@ -1,8 +1,13 @@
 # The Hessian--Ritt deformation complex
 
-Work over a field \(k\) of characteristic zero.  This note replaces the
-degree-by-degree Gröbner-growth formulation of `OP-RITT` by a deformation
-problem attached to the coefficient-decorated Ritt 2-complex.
+Let the ground field \(k\) carry the characteristic label
+\(\chi(k)\in\{0,p\}\).  The all-degree theorem target in this note remains a
+characteristic-zero statement, but the deformation complex itself is
+defined fiberwise with this label.  In characteristic \(p\), its ordinary
+composition part must be augmented by the Frobenius cell module introduced
+below.  This note replaces the degree-by-degree Gröbner-growth formulation
+of `OP-RITT` by a deformation problem attached to the
+coefficient-decorated Ritt 2-complex.
 
 The replacement has three layers.
 
@@ -82,6 +87,41 @@ For Hessian composition, replace the last term by
 \(T_{\pi_N(f)}\mathcal K_N\) and the last arrow by
 \(d\pi_N\circ d\mu_{\mathbf d}\), where \(\pi_N\) forgets the linear
 coefficient.
+
+### 1.1 Characteristic labels on composition edges
+
+Every oriented composition edge \(H\circ R\), with \(R\) monic original of
+degree \(r>1\), now carries the label
+
+\[
+ \bigl(\chi(k),\,\deg H',\,\tau_p(H)\bigr),\qquad
+ \tau_p(H)\in\{\mathrm{Frob},\mathrm{aff\mbox{-}Frob},
+                         \mathrm{ordinary}\}.               \tag{1.4}
+\]
+
+In characteristic zero the last two entries are just
+\((\deg H',\mathrm{ordinary})\).  In characteristic \(p\), put
+
+\[
+\begin{array}{c|c|c}
+\tau_p(H)&\text{outer polynomial}&H'\\ \hline
+\mathrm{Frob}&H=G(x^p)&0\\
+\mathrm{aff\mbox{-}Frob}&H=ax+G(x^p),\ a\ne0&a\\
+\mathrm{ordinary}&\text{all remaining cases}&\deg H'\ge1.
+\end{array}                                                  \tag{1.5}
+\]
+
+Thus a separable outer polynomial can still lie in the second row.  It is
+not a purely inseparable degeneration, but Hessian projection cannot see
+one normalized inner tangent there.
+
+For an integral outer polynomial \(H=\sum h_jx^j\), reduction at \(p\) is
+flagged by computing \(\overline{H}'=\sum\overline{j h_j}x^{j-1}\).
+The Frobenius flag is raised exactly when every \(j h_j\) vanishes modulo
+\(p\); the affine--Frobenius flag is raised exactly when all terms with
+\(j\ge2\) vanish and \(\overline{h_1}\ne0\).  For monic \(H\) of degree
+\(m>1\), the first flag can occur only when \(p\mid m\), but
+\(p\mid m\) is not a pointwise classification.
 
 ## 2. Several cuts as a derived intersection
 
@@ -183,6 +223,62 @@ move, and 2-cell, and its maps are the substitution operators (1.2).
 Its polynomial modules still remember the factor degrees; no claim of a
 degree-independent finite-dimensional bound is needed.
 
+### 3.1 The Frobenius cell module
+
+Let \(\pi_{>q}\) retain the coefficients of degrees greater than \(q\).  The
+one-sided invisible module on an oriented edge \(H\circ R\) is
+
+\[
+ \mathfrak F^{(q)}_p(H,R)
+ =
+ \ker\left(
+ xk[x]_{<r}\xrightarrow{\ U\mapsto\pi_{>q}(H'(R)U)\ }
+ k[x]_{>q}\right).                                         \tag{3.3}
+\]
+
+The complete positive-characteristic classification proved in
+[the counterexample-search note](../NEW_COUNTEREXAMPLE_SEARCHES.md#theorem-a1-complete-one-sided-tangent-classification)
+gives, for the Hessian cutoff \(q=1\),
+
+\[
+\mathfrak F^{(1)}_p(H,R)=
+\begin{cases}
+xk[x]_{<r},&\tau_p(H)=\mathrm{Frob},\\
+kx,&\tau_p(H)=\mathrm{aff\mbox{-}Frob},\\
+0,&\tau_p(H)=\mathrm{ordinary}.
+\end{cases}                                                  \tag{3.4}
+\]
+
+More generally, if \(H'\ne0\) and \(d=\deg H'\), it is spanned by
+\(x,\ldots,x^s\), where
+\[
+ s=\max(0,\min(r-1,q-rd)).
+\]
+This is an exact theorem, not a bounded-search heuristic.
+
+For each factor, move, and labelled 2-cell in \(K_D\), take the direct sum
+of (3.3) over its oriented composition edges and use the same signed
+restriction maps as in (3.1).  The result is the **Frobenius cell module**
+\(\mathfrak F^{\bullet,(q)}_{K_D/B,p}\).  Naturality of the composition
+differential makes it a cellular subcomplex and gives
+
+\[
+ 0\longrightarrow
+ \mathfrak F^{\bullet,(q)}_{K_D/B,p}
+ \longrightarrow
+ \mathfrak g^{\mathrm{lin},(q)}_{K_D/B,p}
+ \longrightarrow
+ \mathfrak g^{\mathrm{vis},(q)}_{K_D/B,p}
+ \longrightarrow0.                                        \tag{3.5}
+\]
+
+The quotient is the visible complex.  A vector-space splitting
+of (3.5) may be chosen cellwise, but it is not canonical and does not erase
+the attaching maps.  In particular, Frobenius tangents are not to be folded
+into an unexplained increase of \(H^0\) or \(H^1\): they are a separate
+labelled cell module whose restrictions around commuting and braid cells
+must be checked.
+
 The 2-cell labels cannot be discarded.  In the degree-thirty braid, sectors
 omitting cuts \(10,15,6\) have different filtered local algebras although
 they lie on the same unlabelled hexagon.  Accordingly (3.1) is a complex of
@@ -269,6 +365,29 @@ This formulation permits nontrivial nilpotent path schemes: coherence means
 a specified derived comparison around a 2-cell, not literal equality of its
 two underived half-braids.
 
+### 5.1 Positive-characteristic extension target
+
+The corresponding characteristic-\(p\) programme is deliberately separate
+from the theorem target above:
+
+1. stratify every factor, move, and relation-graph cell by the labels
+   (1.4)--(1.5);
+2. use the ordinary cellular complex on the ordinary stratum and attach
+   \(\mathfrak F_{K_D/B,p}^{\bullet,(1)}\) on the Frobenius and
+   affine--Frobenius strata;
+3. prove synchronization only after computing the cohomology of the
+   augmented complex, rather than by reducing a characteristic-zero tangent
+   rank;
+4. reprove the relation-graph input on the required tame locus.  When
+   \(p\) divides a participating factor degree, the characteristic-zero
+   Ritt--Engström component classification is not being asserted.
+
+Thus (3.5) modifies synchronization, Hessian projection, and the
+relation-graph deformation complex at the same place.  The theorem (3.4)
+classifies the new one-sided tangent summand; it does **not** by itself prove
+a positive-characteristic all-degree Ritt theorem or classify wild
+relation-graph components.
+
 ## 6. Proof architecture
 
 An all-degree proof can now be divided into structural lemmas.
@@ -293,6 +412,10 @@ An all-degree proof can now be divided into structural lemmas.
 6. **Boundary gluing.**  Compute the completed power--Dickson overlap once,
    including the \(z\)-adic filtration, and descend the sector modules along
    adjacent cells.
+7. **Characteristic audit.**  For each integral model, record the
+   characteristic label of every outer edge, attach (3.3), and separate
+   good-reduction certificates from calculations made only over
+   \(\mathbb Q\).
 
 The reusable local calculations are concentrated in steps 2, 4, and 5.
 They are universal factor-degree calculations, not a census over total
@@ -316,10 +439,18 @@ Before claiming the theorem, the following tests are decisive.
   and its apparent two-dimensional kernel modulo the base square is
   base-change Tor.  Compute the individual higher cotangent homology
   modules.
+* Insert the exact sixth-jet embedded-support class \(c_6\) into the
+  extension-retaining cellular model.  First determine whether it maps to
+  the cut-\(6\) non-splitting class.  Then compute its restrictions through
+  the completed cut-\(14\) and cut-\(21\) splittings and evaluate braid
+  coherence.  The known modular order-seven lift is evidence only; the
+  characteristic-zero theorem currently ends at order six.
 * Verify a commuting square with both power and Dickson labels; a bare
   topological square has no scheme-theoretic content.
 * Show that the lift cocycle is null-homotopic, rather than merely zero on
   tangent spaces, on the existing degree-thirty and degree-forty-two charts.
+* Reduce integral test charts at primes meeting all three rows of (1.5) and
+  verify that the extra kernel is exactly the Frobenius cell module (3.4).
 
 Passing these tests would justify replacing Gröbner growth by a finite list
 of universal cotangent-complex calculations.  Until then the deformation
@@ -392,12 +523,34 @@ restriction maps.  Genuine \(H^2\) also requires the next Coxeter cells; the
 permutohedron three-cell kills the topological \(H^2\) of the four-factor
 two-skeleton exactly.
 
+## Good-reduction ledger for existing synchronization certificates
+
+A characteristic-zero synchronization result survives reduction only when
+both its algebraic certificate and its tangent model survive.  The current
+ledger is:
+
+| Input | Reduction statement |
+|---|---|
+| Composition differential (1.2) and literal integral polynomial identities | Survive in every characteristic after coefficient reduction. |
+| Common-right-factor top-jet theorem `HRCF` | Survives over every reduction in which the outer degree \(m\) is a unit, hence over fields with \(p\nmid m\).  It makes no claim when \(p\mid m\). |
+| A denominator-cleared membership \(c\Delta=\sum A_jg_j\) over \(\mathbb Z\) | Survives at primes with \(p\nmid c\), provided every localized chart denominator, unit pivot, and exact-degree leading coefficient remains invertible. |
+| Published `HRSYNC` and transported degree-\(30\)/\(42\) Gröbner certificates over \(\mathbb Q\) | No blanket positive-characteristic claim is currently registered: their complete denominator/pivot exceptional sets have not been published.  A matching basis size modulo one prime is a regression, not a good-reduction theorem. |
+| Characteristic-zero tangent exactness or null-homotopy | Transfers only on fibers where the cleared certificate is valid **and** every relevant edge has \(\mathfrak F^{(1)}_p(H,R)=0\).  The affine--Frobenius row must be excluded even though \(H\) is separable. |
+| Tame power/Dickson relation-graph classification | May be reused only after its prime-to-degree and separability hypotheses are checked on the chosen fiber; it is not an automatic reduction of the characteristic-zero component theorem. |
+
+Accordingly, “proved over \(\mathbb Q\)” never means “proved for all but
+unspecified primes” in this programme.  A good-reduction claim must list the
+integer certificate multiplier, localized denominators and pivots, relevant
+outer-edge labels, and the resulting explicit exceptional-prime set.
+
 ## Relation to the existing notes
 
 The [general Hessian--Ritt note](GENERAL_HESSIAN_RITT_INTERSECTIONS.md)
 supplies the reduced relation-graph theorem and the canonical lift cocycle.
 The [restricted synchronization theorem](RESTRICTED_HESSIAN_SYNCHRONIZATION_THEOREM.md)
 proves radical synchronization and records the primary frontier.  The
+[positive-characteristic tangent theorem](../NEW_COUNTEREXAMPLE_SEARCHES.md#theorem-a1-complete-one-sided-tangent-classification)
+supplies the Frobenius cell module (3.3)--(3.4).  The
 [Ritt move 2-complex calculation](RITT_MOVE_2_COMPLEX.md) supplies the
 degree-thirty cotangent/Tor data and the degree-forty-two warning that the
 correct comparison is relative to the full cell boundary.

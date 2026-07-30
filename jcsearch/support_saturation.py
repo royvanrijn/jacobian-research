@@ -36,7 +36,7 @@ import shutil
 import signal
 import subprocess
 from dataclasses import asdict, dataclass
-from typing import Any, Literal, Sequence
+from typing import Any, Literal, Mapping, Sequence
 
 
 _NAME = re.compile(r"^[A-Za-z][A-Za-z0-9_]*$")
@@ -144,6 +144,201 @@ class CompilerOptions:
             raise ValueError("torsion_exponent_bound must be positive")
 
 
+@dataclass(frozen=True)
+class CertificateAssurance:
+    """Interpretation of an exact backend computation.
+
+    Singular performs exact arithmetic in both characteristic zero and a
+    declared prime characteristic.  ``claim`` records whether that result is
+    intended as an exact certificate for the target coefficient field or as
+    modular evidence for a characteristic-zero question.
+    """
+
+    claim: Literal["auto", "exact", "modular"] = "auto"
+    target_characteristic: int | None = None
+    note: str | None = None
+
+    def __post_init__(self) -> None:
+        if self.claim not in {"auto", "exact", "modular"}:
+            raise ValueError(f"unsupported assurance claim {self.claim!r}")
+        if (
+            self.target_characteristic is not None
+            and self.target_characteristic < 0
+        ):
+            raise ValueError("target_characteristic must be nonnegative")
+
+
+@dataclass(frozen=True)
+class SupportSaturationProblem:
+    """Shared input schema for support-local-cohomology calculations.
+
+    ``support_ideal`` is the ideal ``I`` in ``H^0_I(M)``.
+    ``completion_ideal`` is the ideal used for the finite tower
+    ``M/completion_ideal^n M``.  Variable roles are metadata, but are
+    validated against the declared ring so adapters cannot silently exchange
+    parameter and normal directions.
+    """
+
+    presentation: ModulePresentation
+    support_ideal: tuple[str, ...]
+    completion_ideal: tuple[str, ...] = ()
+    parameter_base_variables: tuple[str, ...] = ()
+    normal_variables: tuple[str, ...] = ()
+    jet_orders: tuple[int, ...] = ()
+    distinguished_class: tuple[str, ...] | None = None
+    jet_strategy: Literal[
+        "full_saturation",
+        "distinguished_class_restriction",
+        "distinguished_class_colon",
+    ] = "full_saturation"
+    transition_annihilator: str | None = None
+    assurance: CertificateAssurance = CertificateAssurance()
+
+    schema = "support-saturation-input.v1"
+
+    def __post_init__(self) -> None:
+        if not self.support_ideal:
+            raise ValueError("support_ideal needs at least one generator")
+        variables = set(self.presentation.ring.variables)
+        parameters = set(self.parameter_base_variables)
+        normals = set(self.normal_variables)
+        unknown = (parameters | normals) - variables
+        if unknown:
+            raise ValueError(
+                "variable roles contain names outside the ring: "
+                + ", ".join(sorted(unknown))
+            )
+        overlap = parameters & normals
+        if overlap:
+            raise ValueError(
+                "parameter/base and normal variables must be disjoint: "
+                + ", ".join(sorted(overlap))
+            )
+        if self.jet_orders and not self.completion_ideal:
+            raise ValueError(
+                "jet_orders require a nonempty completion_ideal"
+            )
+        if self.completion_ideal and not self.jet_orders:
+            raise ValueError(
+                "completion_ideal requires at least one requested jet order"
+            )
+        if tuple(sorted(set(self.jet_orders))) != self.jet_orders:
+            raise ValueError("jet_orders must be strictly increasing")
+        if any(order < 1 for order in self.jet_orders):
+            raise ValueError("jet_orders must be positive")
+        if (
+            self.distinguished_class is not None
+            and len(self.distinguished_class) != self.presentation.rank
+        ):
+            raise ValueError(
+                "the distinguished class must have ambient free rank"
+            )
+
+    @classmethod
+    def from_mapping(
+        cls, data: Mapping[str, Any]
+    ) -> "SupportSaturationProblem":
+        """Parse the public JSON-compatible input schema."""
+
+        schema = data.get("schema", cls.schema)
+        if schema != cls.schema:
+            raise ValueError(
+                f"unsupported support-saturation input schema {schema!r}"
+            )
+        try:
+            ring_data = data["ring"]
+            module_data = data["module_presentation"]
+            support_ideal = data["support_ideal"]
+            completion_ideal = data["completion_ideal"]
+            parameter_variables = data["parameter_base_variables"]
+            normal_variables = data["normal_variables"]
+        except KeyError as error:
+            raise ValueError(
+                f"missing support-saturation input field {error.args[0]!r}"
+            ) from error
+        ring = PolynomialRing(
+            variables=tuple(ring_data["variables"]),
+            characteristic=int(ring_data.get("characteristic", 0)),
+            ordering=str(ring_data.get("ordering", "dp")),
+        )
+        presentation = ModulePresentation(
+            ring=ring,
+            rank=int(module_data["rank"]),
+            generators=tuple(
+                tuple(str(entry) for entry in generator)
+                for generator in module_data.get("generators", ())
+            ),
+            label=str(module_data.get("label", "module")),
+            singular_setup=module_data.get("singular_setup"),
+        )
+        assurance_data = data.get("assurance", {})
+        assurance = CertificateAssurance(
+            claim=assurance_data.get("claim", "auto"),
+            target_characteristic=assurance_data.get(
+                "target_characteristic"
+            ),
+            note=assurance_data.get("note"),
+        )
+        distinguished = data.get("distinguished_class")
+        return cls(
+            presentation=presentation,
+            support_ideal=tuple(str(item) for item in support_ideal),
+            completion_ideal=tuple(
+                str(item) for item in completion_ideal
+            ),
+            parameter_base_variables=tuple(
+                str(item) for item in parameter_variables
+            ),
+            normal_variables=tuple(str(item) for item in normal_variables),
+            jet_orders=tuple(int(item) for item in data.get("jet_orders", ())),
+            distinguished_class=(
+                tuple(str(item) for item in distinguished)
+                if distinguished is not None
+                else None
+            ),
+            jet_strategy=data.get("jet_strategy", "full_saturation"),
+            transition_annihilator=data.get("transition_annihilator"),
+            assurance=assurance,
+        )
+
+    def to_mapping(self) -> dict[str, Any]:
+        """Return the stable JSON-compatible problem description."""
+
+        presentation = {
+            "rank": self.presentation.rank,
+            "generators": [
+                list(generator)
+                for generator in self.presentation.generators
+            ],
+            "label": self.presentation.label,
+            "singular_setup": self.presentation.singular_setup,
+        }
+        return {
+            "schema": self.schema,
+            "ring": {
+                "variables": list(self.presentation.ring.variables),
+                "characteristic": self.presentation.ring.characteristic,
+                "ordering": self.presentation.ring.ordering,
+            },
+            "module_presentation": presentation,
+            "support_ideal": list(self.support_ideal),
+            "completion_ideal": list(self.completion_ideal),
+            "parameter_base_variables": list(
+                self.parameter_base_variables
+            ),
+            "normal_variables": list(self.normal_variables),
+            "jet_orders": list(self.jet_orders),
+            "distinguished_class": (
+                list(self.distinguished_class)
+                if self.distinguished_class is not None
+                else None
+            ),
+            "jet_strategy": self.jet_strategy,
+            "transition_annihilator": self.transition_annihilator,
+            "assurance": asdict(self.assurance),
+        }
+
+
 class SupportSaturationError(RuntimeError):
     """Raised when the exact backend rejects or cannot finish a certificate."""
 
@@ -199,6 +394,47 @@ def _candidate_expressions(
     return tuple(dict.fromkeys(candidates))
 
 
+def _certificate_state(
+    ring: PolynomialRing,
+    assurance: CertificateAssurance | None = None,
+) -> dict[str, Any]:
+    """Separate exact arithmetic from the scope assigned to its result."""
+
+    policy = assurance or CertificateAssurance()
+    claim = policy.claim
+    if claim == "auto":
+        claim = "exact" if ring.characteristic == 0 else "modular"
+    target_characteristic = policy.target_characteristic
+    if target_characteristic is None:
+        target_characteristic = (
+            ring.characteristic if claim == "exact" else 0
+        )
+    if claim == "modular" and ring.characteristic == 0:
+        raise ValueError(
+            "a modular certificate needs a positive backend characteristic"
+        )
+    if claim == "exact" and target_characteristic != ring.characteristic:
+        raise ValueError(
+            "an exact claim must target the backend characteristic"
+        )
+    return {
+        "backend_arithmetic": "exact",
+        "backend_characteristic": ring.characteristic,
+        "claim_assurance": claim,
+        "target_characteristic": target_characteristic,
+        "characteristic_zero_lift": (
+            "not_needed"
+            if claim == "exact" and ring.characteristic == 0
+            else (
+                "not_claimed"
+                if claim == "modular" and target_characteristic == 0
+                else "outside_scope"
+            )
+        ),
+        "note": policy.note,
+    }
+
+
 def _parse_output(stdout: str) -> dict[str, Any]:
     scalars: dict[str, str] = {}
     sections: dict[str, list[str]] = {}
@@ -230,10 +466,45 @@ def _parse_output(stdout: str) -> dict[str, Any]:
 class SupportSaturationCompiler:
     """Compile exact support and finite-jet certificates with Singular."""
 
-    schema = "support-saturation-certificate.v2"
+    schema = "support-saturation-certificate.v3"
 
     def __init__(self, options: CompilerOptions | None = None) -> None:
         self.options = options or CompilerOptions()
+
+    def compile_problem(
+        self, problem: SupportSaturationProblem
+    ) -> dict[str, Any]:
+        """Compile the shared, role-aware support-saturation input schema."""
+
+        filtration = (
+            NormalFiltration(
+                ideal=problem.completion_ideal,
+                orders=problem.jet_orders,
+                strategy=problem.jet_strategy,
+                transition_annihilator=problem.transition_annihilator,
+            )
+            if problem.completion_ideal
+            else None
+        )
+        result = self.compile(
+            problem.presentation,
+            problem.support_ideal,
+            distinguished_class=problem.distinguished_class,
+            filtration=filtration,
+            assurance=problem.assurance,
+        )
+        problem_data = problem.to_mapping()
+        canonical_problem = json.dumps(
+            problem_data, sort_keys=True, separators=(",", ":")
+        )
+        result["problem_sha256"] = hashlib.sha256(
+            canonical_problem.encode()
+        ).hexdigest()
+        result["problem"] = problem_data
+        result["certificate_state"] = _certificate_state(
+            problem.presentation.ring, problem.assurance
+        )
+        return result
 
     def compile(
         self,
@@ -241,6 +512,7 @@ class SupportSaturationCompiler:
         boundary_ideal: Sequence[str],
         distinguished_class: Sequence[str] | None = None,
         filtration: NormalFiltration | None = None,
+        assurance: CertificateAssurance | None = None,
     ) -> dict[str, Any]:
         """Compile and return one JSON-serializable exact certificate."""
 
@@ -276,6 +548,9 @@ class SupportSaturationCompiler:
             ),
             "filtration": asdict(filtration) if filtration else None,
             "options": asdict(self.options),
+            "assurance": asdict(
+                assurance or CertificateAssurance()
+            ),
         }
         canonical_input = json.dumps(
             input_data, sort_keys=True, separators=(",", ":")
@@ -307,6 +582,9 @@ class SupportSaturationCompiler:
             singular_version,
             filtration,
         )
+        result["certificate_state"] = _certificate_state(
+            presentation.ring, assurance
+        )
         return result
 
     def compile_distinguished_jets(
@@ -315,6 +593,7 @@ class SupportSaturationCompiler:
         boundary_ideal: Sequence[str],
         distinguished_class: Sequence[str],
         filtration: NormalFiltration,
+        assurance: CertificateAssurance | None = None,
     ) -> dict[str, Any]:
         """Compile distinguished-class jets without claiming base saturation.
 
@@ -347,6 +626,9 @@ class SupportSaturationCompiler:
             "filtration": asdict(filtration),
             "options": asdict(self.options),
             "base_saturation": "not_computed",
+            "assurance": asdict(
+                assurance or CertificateAssurance()
+            ),
         }
         canonical_input = json.dumps(
             input_data, sort_keys=True, separators=(",", ":")
@@ -407,6 +689,11 @@ class SupportSaturationCompiler:
                     "boundary_annihilation_exponent": integer(
                         f"JET_{order}_BOUNDARY_EXPONENT"
                     ),
+                    "least_annihilating_exponent": (
+                        integer(f"JET_{order}_BOUNDARY_EXPONENT")
+                        if integer(f"JET_{order}_BOUNDARY_EXPONENT") >= 0
+                        else None
+                    ),
                     "distinguished_class_zero": boolean(
                         f"JET_{order}_CLASS_ZERO"
                     ),
@@ -435,6 +722,27 @@ class SupportSaturationCompiler:
                 )
             ]
             scope = "full finite-jet local cohomology"
+            exponents = [
+                jet["boundary_annihilation_exponent"] for jet in jets
+            ]
+            uniform_test = {
+                "status": (
+                    "certified_on_requested_finite_tower"
+                    if all(exponent >= 0 for exponent in exponents)
+                    else "search_bound_exhausted_on_at_least_one_jet"
+                ),
+                "requested_orders": list(filtration.orders),
+                "least_common_exponent": (
+                    max(exponents)
+                    if all(exponent >= 0 for exponent in exponents)
+                    else None
+                ),
+                "all_order_uniform_bound_certified": False,
+                "warning": (
+                    "a finite jet prefix is not an all-order "
+                    "uniform-exponent certificate"
+                ),
+            }
         else:
             jets = [
                 {
@@ -478,10 +786,19 @@ class SupportSaturationCompiler:
                 )
             ]
             scope = "distinguished class only"
+            uniform_test = {
+                "status": "distinguished_class_only",
+                "requested_orders": list(filtration.orders),
+                "least_common_exponent": None,
+                "all_order_uniform_bound_certified": False,
+            }
         return {
             "schema": "support-saturation-finite-jet-certificate.v1",
             "input_sha256": input_hash,
             "input": input_data,
+            "certificate_state": _certificate_state(
+                presentation.ring, assurance
+            ),
             "backend": {
                 "name": "Singular",
                 "version": singular_version,
@@ -494,11 +811,13 @@ class SupportSaturationCompiler:
             "finite_jets": {
                 "strategy": filtration.strategy,
                 "normal_ideal": list(filtration.ideal),
+                "completion_ideal": list(filtration.ideal),
                 "convention": "N_n=N+m^n F",
                 "scope": scope,
                 "torsion_exponent_search_bound": (
                     self.options.torsion_exponent_bound
                 ),
+                "uniform_exponent_test": uniform_test,
                 "jets": jets,
                 "transitions": transitions,
             },
@@ -509,6 +828,7 @@ class SupportSaturationCompiler:
         presentation: ModulePresentation,
         boundary_ideal: Sequence[str],
         distinguished_class: Sequence[str],
+        assurance: CertificateAssurance | None = None,
     ) -> dict[str, Any]:
         """Certify a nonzero base support class without full saturation.
 
@@ -546,11 +866,32 @@ class SupportSaturationCompiler:
         else:
             setup = presentation.singular_setup
         lines = [
+            'LIB "primdec.lib";',
             setup,
             "module N=InputPresentation;",
             f"ideal Boundary=std({_ideal(boundary)});",
             f"vector Distinguished={_module((distinguished,))}[1];",
             'print("@@CLASS_ZERO="+string(reduce(Distinguished,N)==0));',
+            (
+                "module DistinguishedKernel=std("
+                "modulo(module(Distinguished),N));"
+            ),
+            (
+                "ideal DistinguishedAnnihilator=std("
+                "ideal(DistinguishedKernel));"
+            ),
+            (
+                "ideal DistinguishedAnnihilatorRadical=std("
+                "radical(DistinguishedAnnihilator));"
+            ),
+            _section_printer(
+                "DISTINGUISHED_ANNIHILATOR",
+                "DistinguishedAnnihilator",
+            ),
+            _section_printer(
+                "DISTINGUISHED_ANNIHILATOR_RADICAL",
+                "DistinguishedAnnihilatorRadical",
+            ),
             "int ClassBoundaryExponent=-1;",
         ]
         for exponent in range(1, self.options.torsion_exponent_bound + 1):
@@ -589,6 +930,9 @@ class SupportSaturationCompiler:
             "distinguished_class": list(distinguished),
             "options": asdict(self.options),
             "scope": "distinguished support witness",
+            "assurance": asdict(
+                assurance or CertificateAssurance()
+            ),
         }
         canonical_input = json.dumps(
             input_data, sort_keys=True, separators=(",", ":")
@@ -637,6 +981,9 @@ class SupportSaturationCompiler:
             "schema": "support-saturation-distinguished-witness.v1",
             "input_sha256": input_hash,
             "input": input_data,
+            "certificate_state": _certificate_state(
+                presentation.ring, assurance
+            ),
             "backend": {
                 "name": "Singular",
                 "version": singular_version,
@@ -651,6 +998,13 @@ class SupportSaturationCompiler:
                 "zero_in_F_mod_N": class_zero,
                 "belongs_to_local_cohomology": True,
                 "boundary_annihilation_exponent": exponent,
+                "least_annihilating_exponent": exponent,
+                "annihilator": parsed["sections"][
+                    "DISTINGUISHED_ANNIHILATOR"
+                ],
+                "annihilator_radical": parsed["sections"][
+                    "DISTINGUISHED_ANNIHILATOR_RADICAL"
+                ],
                 "boundary_power_tests": tests,
             },
             "associated_primes": {
@@ -659,6 +1013,16 @@ class SupportSaturationCompiler:
                     "primes_not_enumerated"
                 ),
                 "primes": None,
+            },
+            "associated_prime_candidates": {
+                "status": (
+                    "annihilator_radical_computed_but_prime_components_"
+                    "not_enumerated"
+                ),
+                "primes": None,
+                "support_radical": parsed["sections"][
+                    "DISTINGUISHED_ANNIHILATOR_RADICAL"
+                ],
             },
             "regular_elements": {
                 "candidate": None,
@@ -1134,8 +1498,14 @@ print("@@H0_BOUNDARY_EXPONENT="+string(H0BoundaryExponent));
                 "if (size(H0Generators)>0) "
                 "{ module H0Relations=std(modulo(H0Generators,N)); "
                 'ideal H0Annihilator=std(annil(H0Relations)); '
+                "ideal H0AnnihilatorRadical="
+                "std(radical(H0Annihilator)); "
                 + _section_printer("H0_RELATIONS", "H0Relations")
                 + _section_printer("H0_ANNIHILATOR", "H0Annihilator")
+                + _section_printer(
+                    "H0_ANNIHILATOR_RADICAL",
+                    "H0AnnihilatorRadical",
+                )
                 + "}"
             ),
             ]
@@ -1213,6 +1583,10 @@ print("@@H0_ASSOCIATED_COUNT="+string(H0AssociatedCount));
                         "ideal DistinguishedAnnihilator=std("
                         "ideal(DistinguishedKernel));"
                     ),
+                    (
+                        "ideal DistinguishedAnnihilatorRadical=std("
+                        "radical(DistinguishedAnnihilator));"
+                    ),
                     _section_printer(
                         "DISTINGUISHED_REMAINDER",
                         "module(DistinguishedRemainder)",
@@ -1220,6 +1594,10 @@ print("@@H0_ASSOCIATED_COUNT="+string(H0AssociatedCount));
                     _section_printer(
                         "DISTINGUISHED_ANNIHILATOR",
                         "DistinguishedAnnihilator",
+                    ),
+                    _section_printer(
+                        "DISTINGUISHED_ANNIHILATOR_RADICAL",
+                        "DistinguishedAnnihilatorRadical",
                     ),
                     "int DistinguishedExponent=-1;",
                     "ideal BoundaryPower=Boundary;",
@@ -1568,6 +1946,12 @@ print("@@JET_{order}_CLASS_IN_H0="
             "schema": self.schema,
             "input_sha256": input_hash,
             "input": input_data,
+            "ideals": {
+                "support_ideal": input_data["boundary_ideal"],
+                "completion_ideal": (
+                    list(filtration.ideal) if filtration is not None else []
+                ),
+            },
             "backend": {
                 "name": "Singular",
                 "version": singular_version,
@@ -1599,12 +1983,42 @@ print("@@JET_{order}_CLASS_IN_H0="
                 "generators_in_F": sections["H0_GENERATORS"],
                 "relations": sections.get("H0_RELATIONS", []),
                 "annihilator": sections.get("H0_ANNIHILATOR", []),
+                "annihilator_radical": sections.get(
+                    "H0_ANNIHILATOR_RADICAL", []
+                ),
+                "least_annihilating_exponent": (
+                    integer("H0_BOUNDARY_EXPONENT")
+                    if integer("H0_BOUNDARY_EXPONENT") >= 0
+                    else None
+                ),
                 "associated_primes": h0_associated,
             },
             "associated_primes": {
                 "status": associated_status,
                 "primes": associated,
                 "boundary_containing_primes": boundary_containing,
+            },
+            "associated_prime_candidates": {
+                "status": (
+                    "exact_boundary_containing_associated_primes"
+                    if h0_associated is not None
+                    else (
+                        "empty_for_zero_local_cohomology"
+                        if saturation_equal
+                        else (
+                            "annihilator_radical_computed_but_prime_"
+                            "components_not_enumerated"
+                        )
+                    )
+                ),
+                "primes": (
+                    h0_associated
+                    if h0_associated is not None
+                    else ([] if saturation_equal else None)
+                ),
+                "support_radical": sections.get(
+                    "H0_ANNIHILATOR_RADICAL", []
+                ),
             },
             "regular_elements": {
                 "candidate": regular,
@@ -1624,6 +2038,9 @@ print("@@JET_{order}_CLASS_IN_H0="
                 ),
                 "remainder": sections["DISTINGUISHED_REMAINDER"],
                 "annihilator": sections["DISTINGUISHED_ANNIHILATOR"],
+                "annihilator_radical": sections[
+                    "DISTINGUISHED_ANNIHILATOR_RADICAL"
+                ],
             }
         if filtration is not None:
             jets = []
@@ -1646,6 +2063,14 @@ print("@@JET_{order}_CLASS_IN_H0="
                         ),
                         "boundary_annihilation_exponent": integer(
                             f"JET_{order}_BOUNDARY_EXPONENT"
+                        ),
+                        "least_annihilating_exponent": (
+                            integer(f"JET_{order}_BOUNDARY_EXPONENT")
+                            if integer(
+                                f"JET_{order}_BOUNDARY_EXPONENT"
+                            )
+                            >= 0
+                            else None
                         ),
                         "local_cohomology_generators": sections[
                             f"JET_{order}_H0"
@@ -1690,6 +2115,28 @@ print("@@JET_{order}_CLASS_IN_H0="
                         if all(exponent >= 0 for exponent in exponents)
                         else None
                     ),
+                    "uniform_exponent_test": {
+                        "status": (
+                            "certified_on_requested_finite_tower"
+                            if all(
+                                exponent >= 0 for exponent in exponents
+                            )
+                            else "search_bound_exhausted_on_at_least_one_jet"
+                        ),
+                        "requested_orders": list(filtration.orders),
+                        "least_common_exponent": (
+                            max(exponents)
+                            if all(
+                                exponent >= 0 for exponent in exponents
+                            )
+                            else None
+                        ),
+                        "all_order_uniform_bound_certified": False,
+                        "warning": (
+                            "a finite jet prefix is not an all-order "
+                            "uniform-exponent certificate"
+                        ),
+                    },
                 }
             else:
                 for order in filtration.orders:
@@ -1734,6 +2181,7 @@ print("@@JET_{order}_CLASS_IN_H0="
             result["finite_jets"] = {
                 "strategy": filtration.strategy,
                 "normal_ideal": list(filtration.ideal),
+                "completion_ideal": list(filtration.ideal),
                 "convention": "N_n=N+m^n F",
                 "torsion_exponent_search_bound": (
                     self.options.torsion_exponent_bound

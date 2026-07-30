@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 from pathlib import Path
 import re
 import shutil
@@ -1525,8 +1526,9 @@ def t0_open_fitting_export(
 ) -> dict[str, object]:
     """Export a common-root Fitting system from the generic rank-six algebra."""
 
-    assert prime > 7
-    assert orders[-1] in (7, 8)
+    assert prime == 0 or prime > 7
+    multiplication_orders = tuple(order for order in orders if order >= 6)
+    assert multiplication_orders and multiplication_orders[0] == 6
     reduced = t0_open_reduced_export(
         singular,
         orders,
@@ -1547,15 +1549,15 @@ def t0_open_fitting_export(
     )
     matrix_declarations = "\n".join(
         f"matrix M{order}[6][6];"
-        for order in range(6, orders[-1] + 1)
+        for order in multiplication_orders
     )
     normal_form_declarations = "\n".join(
         f"poly r{order}=reduce(p{order},G);"
-        for order in range(6, orders[-1] + 1)
+        for order in multiplication_orders
     )
-    matrix_fills = "\n".join(
+    multiplication_matrix_fills = "\n".join(
         f"""
-z=reduce(r{order}*basisMonomial,G);
+z=r{order};
 while(z!=0)
 {{
   basisRow=coordinateIndex(leadmonom(z));
@@ -1564,29 +1566,27 @@ while(z!=0)
     print("COORDINATE_ERROR {order} "+string(leadmonom(z)));
     exit;
   }}
-  M{order}[basisRow,basisColumn]=leadcoef(z);
+  if(basisRow==1) {{ M{order}=M{order}+leadcoef(z)*B1; }}
+  if(basisRow==2) {{ M{order}=M{order}+leadcoef(z)*B2; }}
+  if(basisRow==3) {{ M{order}=M{order}+leadcoef(z)*B3; }}
+  if(basisRow==4) {{ M{order}=M{order}+leadcoef(z)*B4; }}
+  if(basisRow==5) {{ M{order}=M{order}+leadcoef(z)*B5; }}
+  if(basisRow==6) {{ M{order}=M{order}+leadcoef(z)*B6; }}
   z=z-lead(z);
 }}
 """
-        for order in range(6, orders[-1] + 1)
+        for order in multiplication_orders
     )
-    determinant_program: list[str] = []
-    for first_value in range(7):
-        second_values = range(7) if orders[-1] == 8 else (0,)
-        for second_value in second_values:
-            matrix_expression = f"M6+{first_value}*M7"
-            if orders[-1] == 8:
-                matrix_expression += f"+{second_value}*M8"
-            determinant_program.append(
-                f"""
-combination={matrix_expression};
-determinantValue=leadcoef(det(combination));
-print(
-  "FITTING {first_value} {second_value} "
-  +string(numerator(determinantValue))
-);
-"""
-            )
+    parameter_orders = multiplication_orders[1:]
+    parameter_variables = [f"z{order}" for order in parameter_orders]
+    fitting_ring_variables = ",".join(parameter_variables) or "zaux"
+    mapped_matrices = "\n".join(
+        f"matrix N{order}=imap(fiber,M{order});"
+        for order in multiplication_orders
+    )
+    matrix_expression = "N6" + "".join(
+        f"+z{order}*N{order}" for order in parameter_orders
+    )
     completed = subprocess.run(
         [singular, "-q"],
         input=f"""
@@ -1611,20 +1611,68 @@ poly basisMonomial;
 poly z;
 int basisColumn;
 int basisRow;
+matrix B1[6][6];
+matrix B2[6][6];
+matrix B3[6][6];
+matrix B4[6][6];
+matrix B5[6][6];
+matrix B6[6][6];
 for(basisColumn=1;basisColumn<=6;basisColumn++)
 {{
+  B1[basisColumn,basisColumn]=1;
   if(basisColumn==1) {{ basisMonomial=1; }}
   if(basisColumn==2) {{ basisMonomial=s6; }}
   if(basisColumn==3) {{ basisMonomial=s5; }}
   if(basisColumn==4) {{ basisMonomial=s6*s5; }}
   if(basisColumn==5) {{ basisMonomial=s5^2; }}
   if(basisColumn==6) {{ basisMonomial=s5^3; }}
-  {matrix_fills}
+  z=reduce(s6*basisMonomial,G);
+  while(z!=0)
+  {{
+    basisRow=coordinateIndex(leadmonom(z));
+    if(basisRow==0)
+    {{
+      print("COORDINATE_ERROR s6 "+string(leadmonom(z)));
+      exit;
+    }}
+    B2[basisRow,basisColumn]=leadcoef(z);
+    z=z-lead(z);
+  }}
+  z=reduce(s5*basisMonomial,G);
+  while(z!=0)
+  {{
+    basisRow=coordinateIndex(leadmonom(z));
+    if(basisRow==0)
+    {{
+      print("COORDINATE_ERROR s5 "+string(leadmonom(z)));
+      exit;
+    }}
+    B3[basisRow,basisColumn]=leadcoef(z);
+    z=z-lead(z);
+  }}
 }}
+B4=B2*B3;
+B5=B3*B3;
+B6=B5*B3;
+{multiplication_matrix_fills}
+ring fitting=({prime},s1,s2,s3,t1,t2,u),(
+  {fitting_ring_variables}
+),dp;
+{mapped_matrices}
+poly baseEquation=imap(fiber,p3);
 matrix combination[6][6];
-number determinantValue;
-{''.join(determinant_program)}
-print("BASE "+string(numerator(leadcoef(p3))));
+combination={matrix_expression};
+poly determinantPolynomial=det(combination);
+poly determinantCursor=determinantPolynomial;
+while(determinantCursor!=0)
+{{
+  print(
+    "FITTING "+string(leadexp(determinantCursor))+" "
+    +string(numerator(leadcoef(determinantCursor)))
+  );
+  determinantCursor=determinantCursor-lead(determinantCursor);
+}}
+print("BASE "+string(numerator(leadcoef(baseEquation))));
 """,
         text=True,
         capture_output=True,
@@ -1642,20 +1690,17 @@ print("BASE "+string(numerator(leadcoef(p3))));
     )
     fitting_values = [
         {
-            "lambda": int(first),
-            "nu": int(second),
+            "parameter_exponents": [
+                int(exponent) for exponent in exponents.split(",")
+            ],
             "polynomial": polynomial,
         }
-        for first, second, polynomial in re.findall(
-            r"(?m)^FITTING (\d+) (\d+) (.*)$",
+        for exponents, polynomial in re.findall(
+            r"(?m)^FITTING ([0-9,]+) (.*)$",
             completed.stdout,
         )
     ]
-    expected_count = 49 if orders[-1] == 8 else 7
-    assert len(fitting_values) == expected_count, (
-        len(fitting_values),
-        completed.stdout[-4000:],
-    )
+    assert fitting_values, completed.stdout[-4000:]
     base_marker = re.search(r"(?m)^BASE (.*)$", completed.stdout)
     assert base_marker is not None
     inverse_variable = "finv"
@@ -1667,12 +1712,8 @@ print("BASE "+string(numerator(leadcoef(p3))));
         "*((99*(s1^2*u-s2)-274*u)"
         "*(351*(s1^2*u-s2)-901*u)+121680*(s1*u-t1)^2)"
     )
-    nonzero_fitting_values = [
-        datum for datum in fitting_values if datum["polynomial"] != "0"
-    ]
-    assert nonzero_fitting_values, fitting_values
     polynomials = [base_marker.group(1)] + [
-        datum["polynomial"] for datum in nonzero_fitting_values
+        datum["polynomial"] for datum in fitting_values
     ] + [f"{inverse_variable}*({open_factor})-1"]
     return {
         "branch": "generic t0-open rank-six common-root Fitting locus",
@@ -1689,12 +1730,15 @@ print("BASE "+string(numerator(leadcoef(p3))));
         "polynomials": polynomials,
         "orders": list(orders),
         "quotient_length": 6,
-        "fitting_grid": {
-            "lambda_values": list(range(7)),
-            "nu_values": list(range(7)) if orders[-1] == 8 else [0],
+        "fitting_determinant": {
+            "parameter_orders": list(parameter_orders),
+            "parameter_variables": parameter_variables,
             "determinant_degree": 6,
-            "evaluation_count": expected_count,
-            "nonzero_evaluation_count": len(nonzero_fitting_values),
+            "nonzero_coefficient_count": len(fitting_values),
+            "maximum_possible_coefficient_count": math.comb(
+                len(parameter_variables) + 6,
+                6,
+            ),
         },
         "open_factor": open_factor,
         "scope": (

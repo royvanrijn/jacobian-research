@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-"""Compile the three repository support-saturation case studies.
+"""Compile the repository support-saturation case studies and search queues.
 
 The cases have intentionally different theorem scopes:
 
 * ``cubic`` runs the homogeneous cubic-symbol orbit atlas.  This is an exact
-  leading-model certificate, not the still-open arbitrary higher-order
-  universal cubic theorem.
+  leading-model certificate, not a singular-squarefree nonhomogeneous
+  higher-lift theorem.
+* ``cubic-frontier`` imports the proved formal-gauge cokernel atlas and
+  compiles the remaining cubic work by annihilator type.  It is a routing
+  certificate, not a new saturation computation.
 * ``degree42`` uses the full unit-pivot-reduced core on the base fiber
   ``(e1,e2,t)=(1,2,3)``.  It certifies an untruncated characteristic-zero
   support class and computes the complete order-six/order-seven support
@@ -39,6 +42,7 @@ from jcsearch.support_saturation import (  # noqa: E402
     NormalFiltration,
     PolynomialRing,
     SupportSaturationCompiler,
+    SupportSaturationProblem,
     certificate_json,
 )
 from verify_cubic_symbol_double_saturation import (  # noqa: E402
@@ -54,6 +58,26 @@ from verify_degree42_transported_27_normal_jets import (  # noqa: E402
 
 
 GENERATED = ROOT / "artifacts" / "generated-results"
+FORMAL_GAUGE_ATLAS = GENERATED / "cubic_formal_gauge_cokernel_atlas.json"
+
+SINGULAR_SQUAREFREE_SYMBOLS = (
+    "nodal",
+    "cuspidal",
+    "line-transverse-conic",
+    "line-tangent-conic",
+    "triangle",
+    "concurrent-lines",
+)
+DEGENERATE_SYMBOLS = ("double-line", "triple-line", "zero")
+
+EXPECTED_SINGULAR_ANNIHILATORS = {
+    "nodal": "(x)",
+    "cuspidal": "(x^2)",
+    "line-transverse-conic": "(yz)",
+    "line-tangent-conic": "(y^3)",
+    "triangle": "(xyz)",
+    "concurrent-lines": "(x^3)",
+}
 
 
 def cubic_case() -> dict[str, Any]:
@@ -79,9 +103,13 @@ def cubic_case() -> dict[str, Any]:
             generators=generators,
             label=f"homogeneous-cubic-cotangent-{name}",
         )
-        certificates[name] = compiler.compile(
-            presentation,
-            ("x", "y", "z"),
+        certificates[name] = compiler.compile_problem(
+            SupportSaturationProblem(
+                presentation=presentation,
+                support_ideal=("x", "y", "z"),
+                parameter_base_variables=(),
+                normal_variables=("x", "y", "z"),
+            )
         )
     assert all(
         item["saturation"]["equal_to_presentation"]
@@ -96,6 +124,98 @@ def cubic_case() -> dict[str, Any]:
             "prove saturation for arbitrary nonhomogeneous higher lifts."
         ),
         "certificates": certificates,
+    }
+
+
+def cubic_frontier_case() -> dict[str, Any]:
+    """Route cubic normalization work using the formal-gauge theorem."""
+
+    atlas = json.loads(FORMAL_GAUGE_ATLAS.read_text())
+    rows = atlas["rows"]
+    assert rows["smooth"]["formal_rigidity_above_degree_three"]
+    assert rows["smooth"]["quartic_nongauge_dimension"] == 0
+    assert {
+        name: rows[name]["annihilator"]
+        for name in SINGULAR_SQUAREFREE_SYMBOLS
+    } == EXPECTED_SINGULAR_ANNIHILATORS
+    assert all(
+        not rows[name]["formal_rigidity_above_degree_three"]
+        and rows[name]["support_dimension"] == 2
+        and rows[name]["quartic_nongauge_dimension"] > 0
+        for name in SINGULAR_SQUAREFREE_SYMBOLS
+    )
+    assert all(
+        rows[name]["annihilator"] == "(0)"
+        and rows[name]["support_dimension"] == 3
+        for name in DEGENERATE_SYMBOLS
+    )
+
+    singular_queue = [
+        {
+            "annihilator_type": rows[name]["annihilator"],
+            "symbol": name,
+            "quartic_nongauge_dimension": rows[name][
+                "quartic_nongauge_dimension"
+            ],
+            "support_dimension": rows[name]["support_dimension"],
+            "support_multiplicity": rows[name]["support_multiplicity"],
+            "next_adapter_input": (
+                "deformation-dependent cotangent presentation restricted "
+                "to a representative of this nongauge quotient"
+            ),
+        }
+        for name in SINGULAR_SQUAREFREE_SYMBOLS
+    ]
+    degenerate_queue = [
+        {
+            "symbol": name,
+            "annihilator_type": rows[name]["annihilator"],
+            "quartic_nongauge_dimension": rows[name][
+                "quartic_nongauge_dimension"
+            ],
+            "generic_rank_over_Q[x,y,z]": rows[name][
+                "generic_rank_over_Q[x,y,z]"
+            ],
+            "gate_before_saturation": (
+                "generically etale and Keller compatibility"
+            ),
+        }
+        for name in DEGENERATE_SYMBOLS
+    ]
+    return {
+        "schema": "support-saturation-search-frontier.v1",
+        "case": "cubic-formal-gauge-annihilator-frontier",
+        "source_artifact": str(FORMAL_GAUGE_ATLAS.relative_to(ROOT)),
+        "source_exact_matrix_sha256": atlas["exact_matrix_sha256"],
+        "mathematical_scope": (
+            "Workflow compiled from the proved formal-gauge cokernel atlas. "
+            "It closes further quartic saturation searches for the smooth "
+            "symbol, queues the six singular squarefree cases by exact "
+            "annihilator type on their finite-dimensional quartic nongauge "
+            "quotients, and places the generically-etale/Keller gate before "
+            "saturation for double-line, triple-line, and zero symbols. "
+            "This artifact does not prove singular-symbol saturation or "
+            "Keller compatibility."
+        ),
+        "stratification": {
+            "smooth": {
+                "symbol": "smooth",
+                "quartic_nongauge_dimension": 0,
+                "universal_24_parameter_cotangent_saturation": "proved",
+                "next_tasks": [
+                    "global algebraization of the formal gauge",
+                    "boundary and Keller-open compatibility",
+                ],
+            },
+            "singular_squarefree": {
+                "search_key": "annihilator_type",
+                "queue": singular_queue,
+            },
+            "double_triple_line_and_zero": {
+                "search_key": "compatibility_before_saturation",
+                "queue": degenerate_queue,
+            },
+        },
     }
 
 
@@ -328,10 +448,14 @@ module InputPresentation=module(D3Annihilator);
             regular_search_bound=0,
         )
     )
-    certificate = compiler.compile(
-        presentation,
-        PLANE_D3_SUPPORT,
-        distinguished_class=("1",),
+    certificate = compiler.compile_problem(
+        SupportSaturationProblem(
+            presentation=presentation,
+            support_ideal=PLANE_D3_SUPPORT,
+            parameter_base_variables=PLANE_VARIABLES,
+            normal_variables=(),
+            distinguished_class=("1",),
+        )
     )
     assert not certificate["local_cohomology"]["zero"]
     assert certificate["distinguished_class"][
@@ -353,6 +477,10 @@ CASES = {
     "cubic": (
         cubic_case,
         "support_saturation_universal_cubic_symbols.json",
+    ),
+    "cubic-frontier": (
+        cubic_frontier_case,
+        "support_saturation_cubic_annihilator_frontier.json",
     ),
     "degree42": (
         degree42_case,
@@ -401,9 +529,13 @@ def main() -> None:
             filename = f"support_saturation_degree42_ritt_fiber_{suffix}.json"
         output = args.output_dir / filename
         output.write_text(certificate_json(result))
+        try:
+            displayed_output = output.relative_to(ROOT)
+        except ValueError:
+            displayed_output = output
         compact = {
             "case": result["case"],
-            "output": str(output.relative_to(ROOT)),
+            "output": str(displayed_output),
         }
         print(json.dumps(compact, sort_keys=True))
         print(f"PASS: compiled support-saturation case {name}")

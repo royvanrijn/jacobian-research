@@ -110,6 +110,13 @@ This directory contains the stable proof chain:
   two-dimensional target plane.  Residue-class subfamilies agree over
   `P^d=1`; the fixed quintic specialization shares one dense quantitative
   family of degree-optimal Hasse failures.
+- [Two marked fibers recover the power-shift gauge](TWO_MARKED_FIBER_GAUGE_RECONSTRUCTION.md):
+  for the degree-at-least-four power-shift family, `P=1` recovers the
+  normalized seed and a second marked fiber at any non-torsion `P=c`
+  recovers the exponent.  The universal choice `c=2` works in
+  characteristic zero; torsion planes give the exact congruence
+  counterexamples, while one transverse marked line reads the exponent as
+  a pole order at `P=0`.
 - [Universal cubic gauge multiplicity](UNIVERSAL_CUBIC_GAUGE_MULTIPLICITY.md):
   fiber-invisible cubic lifts keep the selected inverse quotient fixed while
   their canonical boundary-component count grows with the lift exponent.

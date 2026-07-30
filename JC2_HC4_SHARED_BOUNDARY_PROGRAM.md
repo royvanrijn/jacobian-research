@@ -37,6 +37,15 @@ dualizing-residue sign forces a value for that ratio.
 The exact symbolic identities are checked by
 [`scripts/verify_jc2_hc4_isotropic_boundary_bridge.py`](scripts/verify_jc2_hc4_isotropic_boundary_bridge.py).
 
+The finite-normalization packet controls the affine sheet count transferred
+to the cotangent gradient, but not its full infinity base scheme.  For a
+leading plane map \(F^{(m)}\), the cotangent infinity support lies on
+\(F^{(m)}(x)=0\) and
+\((DF^{(m)}(x))^{\mathsf T}y=0\); lower layers determine the
+\(X_0\)-adic thickening.  The resulting all-dimensional Segre convention
+and two exact plane-cotangent multidegree calibrations are recorded in
+[`PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`](PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md).
+
 ## 1. The exact two-step isotropic chart
 
 Work over a characteristic-zero field.  Let

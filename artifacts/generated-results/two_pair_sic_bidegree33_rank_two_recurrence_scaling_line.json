@@ -1,0 +1,1626 @@
+{
+  "format": "two-pair-sic-bidegree33-rank-two-recurrence-line-v1",
+  "status": "modular rational-interpolation experiment",
+  "prime": 1000003,
+  "parameter_pencil": "((1+s)*U0,W0)",
+  "samples": 42,
+  "recurrence_order": 27,
+  "recurrence_m_degree": 11,
+  "maximum_moment": 390,
+  "sample_values": {
+    "shift_0_m_degree_0": [
+      {
+        "parameter": 0,
+        "value": 596224
+      },
+      {
+        "parameter": 1,
+        "value": 588302
+      },
+      {
+        "parameter": 2,
+        "value": 103377
+      },
+      {
+        "parameter": 3,
+        "value": 936896
+      },
+      {
+        "parameter": 4,
+        "value": 815441
+      },
+      {
+        "parameter": 5,
+        "value": 442504
+      },
+      {
+        "parameter": 6,
+        "value": 892633
+      },
+      {
+        "parameter": 7,
+        "value": 249263
+      },
+      {
+        "parameter": 8,
+        "value": 422265
+      },
+      {
+        "parameter": 9,
+        "value": 999121
+      },
+      {
+        "parameter": 10,
+        "value": 592049
+      },
+      {
+        "parameter": 11,
+        "value": 335803
+      },
+      {
+        "parameter": 12,
+        "value": 465261
+      },
+      {
+        "parameter": 13,
+        "value": 777385
+      },
+      {
+        "parameter": 14,
+        "value": 731859
+      },
+      {
+        "parameter": 15,
+        "value": 168225
+      },
+      {
+        "parameter": 16,
+        "value": 327422
+      },
+      {
+        "parameter": 17,
+        "value": 888086
+      },
+      {
+        "parameter": 18,
+        "value": 221038
+      },
+      {
+        "parameter": 19,
+        "value": 319044
+      },
+      {
+        "parameter": 20,
+        "value": 782880
+      },
+      {
+        "parameter": 21,
+        "value": 254973
+      },
+      {
+        "parameter": 22,
+        "value": 310188
+      },
+      {
+        "parameter": 23,
+        "value": 503844
+      },
+      {
+        "parameter": 24,
+        "value": 582714
+      },
+      {
+        "parameter": 25,
+        "value": 8747
+      },
+      {
+        "parameter": 26,
+        "value": 249681
+      },
+      {
+        "parameter": 27,
+        "value": 465675
+      },
+      {
+        "parameter": 28,
+        "value": 37873
+      },
+      {
+        "parameter": 29,
+        "value": 511881
+      },
+      {
+        "parameter": 30,
+        "value": 996707
+      },
+      {
+        "parameter": 31,
+        "value": 556673
+      },
+      {
+        "parameter": 32,
+        "value": 604622
+      },
+      {
+        "parameter": 33,
+        "value": 100101
+      },
+      {
+        "parameter": 34,
+        "value": 403897
+      },
+      {
+        "parameter": 35,
+        "value": 599027
+      },
+      {
+        "parameter": 36,
+        "value": 564601
+      },
+      {
+        "parameter": 37,
+        "value": 160277
+      },
+      {
+        "parameter": 38,
+        "value": 133162
+      },
+      {
+        "parameter": 39,
+        "value": 348336
+      },
+      {
+        "parameter": 40,
+        "value": 789613
+      },
+      {
+        "parameter": 41,
+        "value": 668463
+      }
+    ],
+    "shift_0_m_degree_11": [
+      {
+        "parameter": 0,
+        "value": 923155
+      },
+      {
+        "parameter": 1,
+        "value": 981658
+      },
+      {
+        "parameter": 2,
+        "value": 191512
+      },
+      {
+        "parameter": 3,
+        "value": 166491
+      },
+      {
+        "parameter": 4,
+        "value": 956756
+      },
+      {
+        "parameter": 5,
+        "value": 412052
+      },
+      {
+        "parameter": 6,
+        "value": 172867
+      },
+      {
+        "parameter": 7,
+        "value": 714520
+      },
+      {
+        "parameter": 8,
+        "value": 697213
+      },
+      {
+        "parameter": 9,
+        "value": 330675
+      },
+      {
+        "parameter": 10,
+        "value": 974815
+      },
+      {
+        "parameter": 11,
+        "value": 344305
+      },
+      {
+        "parameter": 12,
+        "value": 475376
+      },
+      {
+        "parameter": 13,
+        "value": 380938
+      },
+      {
+        "parameter": 14,
+        "value": 442463
+      },
+      {
+        "parameter": 15,
+        "value": 307671
+      },
+      {
+        "parameter": 16,
+        "value": 850405
+      },
+      {
+        "parameter": 17,
+        "value": 57872
+      },
+      {
+        "parameter": 18,
+        "value": 728436
+      },
+      {
+        "parameter": 19,
+        "value": 59458
+      },
+      {
+        "parameter": 20,
+        "value": 630311
+      },
+      {
+        "parameter": 21,
+        "value": 9134
+      },
+      {
+        "parameter": 22,
+        "value": 930718
+      },
+      {
+        "parameter": 23,
+        "value": 203952
+      },
+      {
+        "parameter": 24,
+        "value": 940622
+      },
+      {
+        "parameter": 25,
+        "value": 254643
+      },
+      {
+        "parameter": 26,
+        "value": 993181
+      },
+      {
+        "parameter": 27,
+        "value": 483427
+      },
+      {
+        "parameter": 28,
+        "value": 695448
+      },
+      {
+        "parameter": 29,
+        "value": 425464
+      },
+      {
+        "parameter": 30,
+        "value": 18029
+      },
+      {
+        "parameter": 31,
+        "value": 707154
+      },
+      {
+        "parameter": 32,
+        "value": 67143
+      },
+      {
+        "parameter": 33,
+        "value": 562588
+      },
+      {
+        "parameter": 34,
+        "value": 59819
+      },
+      {
+        "parameter": 35,
+        "value": 52541
+      },
+      {
+        "parameter": 36,
+        "value": 54563
+      },
+      {
+        "parameter": 37,
+        "value": 607215
+      },
+      {
+        "parameter": 38,
+        "value": 715181
+      },
+      {
+        "parameter": 39,
+        "value": 730545
+      },
+      {
+        "parameter": 40,
+        "value": 633227
+      },
+      {
+        "parameter": 41,
+        "value": 557440
+      }
+    ],
+    "shift_1_m_degree_11": [
+      {
+        "parameter": 0,
+        "value": 966395
+      },
+      {
+        "parameter": 1,
+        "value": 64852
+      },
+      {
+        "parameter": 2,
+        "value": 830405
+      },
+      {
+        "parameter": 3,
+        "value": 991738
+      },
+      {
+        "parameter": 4,
+        "value": 673900
+      },
+      {
+        "parameter": 5,
+        "value": 27813
+      },
+      {
+        "parameter": 6,
+        "value": 563834
+      },
+      {
+        "parameter": 7,
+        "value": 903002
+      },
+      {
+        "parameter": 8,
+        "value": 260671
+      },
+      {
+        "parameter": 9,
+        "value": 776019
+      },
+      {
+        "parameter": 10,
+        "value": 22166
+      },
+      {
+        "parameter": 11,
+        "value": 234953
+      },
+      {
+        "parameter": 12,
+        "value": 164057
+      },
+      {
+        "parameter": 13,
+        "value": 710141
+      },
+      {
+        "parameter": 14,
+        "value": 184592
+      },
+      {
+        "parameter": 15,
+        "value": 611960
+      },
+      {
+        "parameter": 16,
+        "value": 235341
+      },
+      {
+        "parameter": 17,
+        "value": 207898
+      },
+      {
+        "parameter": 18,
+        "value": 541013
+      },
+      {
+        "parameter": 19,
+        "value": 299625
+      },
+      {
+        "parameter": 20,
+        "value": 819713
+      },
+      {
+        "parameter": 21,
+        "value": 616834
+      },
+      {
+        "parameter": 22,
+        "value": 211743
+      },
+      {
+        "parameter": 23,
+        "value": 621249
+      },
+      {
+        "parameter": 24,
+        "value": 669490
+      },
+      {
+        "parameter": 25,
+        "value": 872313
+      },
+      {
+        "parameter": 26,
+        "value": 190049
+      },
+      {
+        "parameter": 27,
+        "value": 819988
+      },
+      {
+        "parameter": 28,
+        "value": 689548
+      },
+      {
+        "parameter": 29,
+        "value": 260322
+      },
+      {
+        "parameter": 30,
+        "value": 990549
+      },
+      {
+        "parameter": 31,
+        "value": 209989
+      },
+      {
+        "parameter": 32,
+        "value": 253848
+      },
+      {
+        "parameter": 33,
+        "value": 782367
+      },
+      {
+        "parameter": 34,
+        "value": 340200
+      },
+      {
+        "parameter": 35,
+        "value": 752604
+      },
+      {
+        "parameter": 36,
+        "value": 85865
+      },
+      {
+        "parameter": 37,
+        "value": 919258
+      },
+      {
+        "parameter": 38,
+        "value": 277246
+      },
+      {
+        "parameter": 39,
+        "value": 53701
+      },
+      {
+        "parameter": 40,
+        "value": 753320
+      },
+      {
+        "parameter": 41,
+        "value": 206503
+      }
+    ],
+    "shift_7_m_degree_11": [
+      {
+        "parameter": 0,
+        "value": 565176
+      },
+      {
+        "parameter": 1,
+        "value": 211492
+      },
+      {
+        "parameter": 2,
+        "value": 696732
+      },
+      {
+        "parameter": 3,
+        "value": 770100
+      },
+      {
+        "parameter": 4,
+        "value": 333232
+      },
+      {
+        "parameter": 5,
+        "value": 261910
+      },
+      {
+        "parameter": 6,
+        "value": 67162
+      },
+      {
+        "parameter": 7,
+        "value": 955085
+      },
+      {
+        "parameter": 8,
+        "value": 236589
+      },
+      {
+        "parameter": 9,
+        "value": 29378
+      },
+      {
+        "parameter": 10,
+        "value": 833856
+      },
+      {
+        "parameter": 11,
+        "value": 716267
+      },
+      {
+        "parameter": 12,
+        "value": 407439
+      },
+      {
+        "parameter": 13,
+        "value": 250040
+      },
+      {
+        "parameter": 14,
+        "value": 800073
+      },
+      {
+        "parameter": 15,
+        "value": 204532
+      },
+      {
+        "parameter": 16,
+        "value": 241145
+      },
+      {
+        "parameter": 17,
+        "value": 803024
+      },
+      {
+        "parameter": 18,
+        "value": 624275
+      },
+      {
+        "parameter": 19,
+        "value": 973316
+      },
+      {
+        "parameter": 20,
+        "value": 403829
+      },
+      {
+        "parameter": 21,
+        "value": 765982
+      },
+      {
+        "parameter": 22,
+        "value": 174559
+      },
+      {
+        "parameter": 23,
+        "value": 132618
+      },
+      {
+        "parameter": 24,
+        "value": 823058
+      },
+      {
+        "parameter": 25,
+        "value": 475177
+      },
+      {
+        "parameter": 26,
+        "value": 851112
+      },
+      {
+        "parameter": 27,
+        "value": 156485
+      },
+      {
+        "parameter": 28,
+        "value": 3468
+      },
+      {
+        "parameter": 29,
+        "value": 829246
+      },
+      {
+        "parameter": 30,
+        "value": 429058
+      },
+      {
+        "parameter": 31,
+        "value": 703034
+      },
+      {
+        "parameter": 32,
+        "value": 78143
+      },
+      {
+        "parameter": 33,
+        "value": 100946
+      },
+      {
+        "parameter": 34,
+        "value": 970144
+      },
+      {
+        "parameter": 35,
+        "value": 167737
+      },
+      {
+        "parameter": 36,
+        "value": 754950
+      },
+      {
+        "parameter": 37,
+        "value": 818609
+      },
+      {
+        "parameter": 38,
+        "value": 615978
+      },
+      {
+        "parameter": 39,
+        "value": 736240
+      },
+      {
+        "parameter": 40,
+        "value": 326643
+      },
+      {
+        "parameter": 41,
+        "value": 127172
+      }
+    ],
+    "shift_13_m_degree_11": [
+      {
+        "parameter": 0,
+        "value": 34964
+      },
+      {
+        "parameter": 1,
+        "value": 848460
+      },
+      {
+        "parameter": 2,
+        "value": 226423
+      },
+      {
+        "parameter": 3,
+        "value": 126937
+      },
+      {
+        "parameter": 4,
+        "value": 104460
+      },
+      {
+        "parameter": 5,
+        "value": 703305
+      },
+      {
+        "parameter": 6,
+        "value": 131299
+      },
+      {
+        "parameter": 7,
+        "value": 729571
+      },
+      {
+        "parameter": 8,
+        "value": 940977
+      },
+      {
+        "parameter": 9,
+        "value": 467507
+      },
+      {
+        "parameter": 10,
+        "value": 391912
+      },
+      {
+        "parameter": 11,
+        "value": 914554
+      },
+      {
+        "parameter": 12,
+        "value": 85961
+      },
+      {
+        "parameter": 13,
+        "value": 196363
+      },
+      {
+        "parameter": 14,
+        "value": 442859
+      },
+      {
+        "parameter": 15,
+        "value": 255405
+      },
+      {
+        "parameter": 16,
+        "value": 914874
+      },
+      {
+        "parameter": 17,
+        "value": 920920
+      },
+      {
+        "parameter": 18,
+        "value": 741938
+      },
+      {
+        "parameter": 19,
+        "value": 611711
+      },
+      {
+        "parameter": 20,
+        "value": 162740
+      },
+      {
+        "parameter": 21,
+        "value": 66945
+      },
+      {
+        "parameter": 22,
+        "value": 222663
+      },
+      {
+        "parameter": 23,
+        "value": 7784
+      },
+      {
+        "parameter": 24,
+        "value": 473513
+      },
+      {
+        "parameter": 25,
+        "value": 380800
+      },
+      {
+        "parameter": 26,
+        "value": 318763
+      },
+      {
+        "parameter": 27,
+        "value": 201741
+      },
+      {
+        "parameter": 28,
+        "value": 715392
+      },
+      {
+        "parameter": 29,
+        "value": 780091
+      },
+      {
+        "parameter": 30,
+        "value": 121227
+      },
+      {
+        "parameter": 31,
+        "value": 542968
+      },
+      {
+        "parameter": 32,
+        "value": 323237
+      },
+      {
+        "parameter": 33,
+        "value": 250649
+      },
+      {
+        "parameter": 34,
+        "value": 897596
+      },
+      {
+        "parameter": 35,
+        "value": 308016
+      },
+      {
+        "parameter": 36,
+        "value": 681474
+      },
+      {
+        "parameter": 37,
+        "value": 875727
+      },
+      {
+        "parameter": 38,
+        "value": 564768
+      },
+      {
+        "parameter": 39,
+        "value": 242958
+      },
+      {
+        "parameter": 40,
+        "value": 605506
+      },
+      {
+        "parameter": 41,
+        "value": 324162
+      }
+    ],
+    "shift_20_m_degree_11": [
+      {
+        "parameter": 0,
+        "value": 375035
+      },
+      {
+        "parameter": 1,
+        "value": 4336
+      },
+      {
+        "parameter": 2,
+        "value": 199085
+      },
+      {
+        "parameter": 3,
+        "value": 555008
+      },
+      {
+        "parameter": 4,
+        "value": 521478
+      },
+      {
+        "parameter": 5,
+        "value": 482805
+      },
+      {
+        "parameter": 6,
+        "value": 522437
+      },
+      {
+        "parameter": 7,
+        "value": 40811
+      },
+      {
+        "parameter": 8,
+        "value": 397590
+      },
+      {
+        "parameter": 9,
+        "value": 748986
+      },
+      {
+        "parameter": 10,
+        "value": 250938
+      },
+      {
+        "parameter": 11,
+        "value": 798857
+      },
+      {
+        "parameter": 12,
+        "value": 474638
+      },
+      {
+        "parameter": 13,
+        "value": 871738
+      },
+      {
+        "parameter": 14,
+        "value": 468966
+      },
+      {
+        "parameter": 15,
+        "value": 223793
+      },
+      {
+        "parameter": 16,
+        "value": 555849
+      },
+      {
+        "parameter": 17,
+        "value": 891370
+      },
+      {
+        "parameter": 18,
+        "value": 939322
+      },
+      {
+        "parameter": 19,
+        "value": 869923
+      },
+      {
+        "parameter": 20,
+        "value": 566293
+      },
+      {
+        "parameter": 21,
+        "value": 119968
+      },
+      {
+        "parameter": 22,
+        "value": 741005
+      },
+      {
+        "parameter": 23,
+        "value": 253390
+      },
+      {
+        "parameter": 24,
+        "value": 346530
+      },
+      {
+        "parameter": 25,
+        "value": 753484
+      },
+      {
+        "parameter": 26,
+        "value": 526723
+      },
+      {
+        "parameter": 27,
+        "value": 582131
+      },
+      {
+        "parameter": 28,
+        "value": 681956
+      },
+      {
+        "parameter": 29,
+        "value": 27468
+      },
+      {
+        "parameter": 30,
+        "value": 632051
+      },
+      {
+        "parameter": 31,
+        "value": 645420
+      },
+      {
+        "parameter": 32,
+        "value": 799762
+      },
+      {
+        "parameter": 33,
+        "value": 148459
+      },
+      {
+        "parameter": 34,
+        "value": 268180
+      },
+      {
+        "parameter": 35,
+        "value": 95018
+      },
+      {
+        "parameter": 36,
+        "value": 565459
+      },
+      {
+        "parameter": 37,
+        "value": 232856
+      },
+      {
+        "parameter": 38,
+        "value": 30192
+      },
+      {
+        "parameter": 39,
+        "value": 349811
+      },
+      {
+        "parameter": 40,
+        "value": 610877
+      },
+      {
+        "parameter": 41,
+        "value": 485288
+      }
+    ],
+    "shift_26_m_degree_0": [
+      {
+        "parameter": 0,
+        "value": 938360
+      },
+      {
+        "parameter": 1,
+        "value": 876717
+      },
+      {
+        "parameter": 2,
+        "value": 815074
+      },
+      {
+        "parameter": 3,
+        "value": 753431
+      },
+      {
+        "parameter": 4,
+        "value": 691788
+      },
+      {
+        "parameter": 5,
+        "value": 630145
+      },
+      {
+        "parameter": 6,
+        "value": 568502
+      },
+      {
+        "parameter": 7,
+        "value": 506859
+      },
+      {
+        "parameter": 8,
+        "value": 445216
+      },
+      {
+        "parameter": 9,
+        "value": 383573
+      },
+      {
+        "parameter": 10,
+        "value": 321930
+      },
+      {
+        "parameter": 11,
+        "value": 260287
+      },
+      {
+        "parameter": 12,
+        "value": 198644
+      },
+      {
+        "parameter": 13,
+        "value": 137001
+      },
+      {
+        "parameter": 14,
+        "value": 75358
+      },
+      {
+        "parameter": 15,
+        "value": 13715
+      },
+      {
+        "parameter": 16,
+        "value": 952075
+      },
+      {
+        "parameter": 17,
+        "value": 890432
+      },
+      {
+        "parameter": 18,
+        "value": 828789
+      },
+      {
+        "parameter": 19,
+        "value": 767146
+      },
+      {
+        "parameter": 20,
+        "value": 705503
+      },
+      {
+        "parameter": 21,
+        "value": 643860
+      },
+      {
+        "parameter": 22,
+        "value": 582217
+      },
+      {
+        "parameter": 23,
+        "value": 520574
+      },
+      {
+        "parameter": 24,
+        "value": 458931
+      },
+      {
+        "parameter": 25,
+        "value": 397288
+      },
+      {
+        "parameter": 26,
+        "value": 335645
+      },
+      {
+        "parameter": 27,
+        "value": 274002
+      },
+      {
+        "parameter": 28,
+        "value": 212359
+      },
+      {
+        "parameter": 29,
+        "value": 150716
+      },
+      {
+        "parameter": 30,
+        "value": 89073
+      },
+      {
+        "parameter": 31,
+        "value": 27430
+      },
+      {
+        "parameter": 32,
+        "value": 965790
+      },
+      {
+        "parameter": 33,
+        "value": 904147
+      },
+      {
+        "parameter": 34,
+        "value": 842504
+      },
+      {
+        "parameter": 35,
+        "value": 780861
+      },
+      {
+        "parameter": 36,
+        "value": 719218
+      },
+      {
+        "parameter": 37,
+        "value": 657575
+      },
+      {
+        "parameter": 38,
+        "value": 595932
+      },
+      {
+        "parameter": 39,
+        "value": 534289
+      },
+      {
+        "parameter": 40,
+        "value": 472646
+      },
+      {
+        "parameter": 41,
+        "value": 411003
+      }
+    ],
+    "shift_26_m_degree_9": [
+      {
+        "parameter": 0,
+        "value": 67239
+      },
+      {
+        "parameter": 1,
+        "value": 134478
+      },
+      {
+        "parameter": 2,
+        "value": 201717
+      },
+      {
+        "parameter": 3,
+        "value": 268956
+      },
+      {
+        "parameter": 4,
+        "value": 336195
+      },
+      {
+        "parameter": 5,
+        "value": 403434
+      },
+      {
+        "parameter": 6,
+        "value": 470673
+      },
+      {
+        "parameter": 7,
+        "value": 537912
+      },
+      {
+        "parameter": 8,
+        "value": 605151
+      },
+      {
+        "parameter": 9,
+        "value": 672390
+      },
+      {
+        "parameter": 10,
+        "value": 739629
+      },
+      {
+        "parameter": 11,
+        "value": 806868
+      },
+      {
+        "parameter": 12,
+        "value": 874107
+      },
+      {
+        "parameter": 13,
+        "value": 941346
+      },
+      {
+        "parameter": 14,
+        "value": 8582
+      },
+      {
+        "parameter": 15,
+        "value": 75821
+      },
+      {
+        "parameter": 16,
+        "value": 143060
+      },
+      {
+        "parameter": 17,
+        "value": 210299
+      },
+      {
+        "parameter": 18,
+        "value": 277538
+      },
+      {
+        "parameter": 19,
+        "value": 344777
+      },
+      {
+        "parameter": 20,
+        "value": 412016
+      },
+      {
+        "parameter": 21,
+        "value": 479255
+      },
+      {
+        "parameter": 22,
+        "value": 546494
+      },
+      {
+        "parameter": 23,
+        "value": 613733
+      },
+      {
+        "parameter": 24,
+        "value": 680972
+      },
+      {
+        "parameter": 25,
+        "value": 748211
+      },
+      {
+        "parameter": 26,
+        "value": 815450
+      },
+      {
+        "parameter": 27,
+        "value": 882689
+      },
+      {
+        "parameter": 28,
+        "value": 949928
+      },
+      {
+        "parameter": 29,
+        "value": 17164
+      },
+      {
+        "parameter": 30,
+        "value": 84403
+      },
+      {
+        "parameter": 31,
+        "value": 151642
+      },
+      {
+        "parameter": 32,
+        "value": 218881
+      },
+      {
+        "parameter": 33,
+        "value": 286120
+      },
+      {
+        "parameter": 34,
+        "value": 353359
+      },
+      {
+        "parameter": 35,
+        "value": 420598
+      },
+      {
+        "parameter": 36,
+        "value": 487837
+      },
+      {
+        "parameter": 37,
+        "value": 555076
+      },
+      {
+        "parameter": 38,
+        "value": 622315
+      },
+      {
+        "parameter": 39,
+        "value": 689554
+      },
+      {
+        "parameter": 40,
+        "value": 756793
+      },
+      {
+        "parameter": 41,
+        "value": 824032
+      }
+    ]
+  },
+  "selected_coefficients": {
+    "shift_0_m_degree_0": {
+      "numerator_degree": 27,
+      "denominator_degree": 0,
+      "numerator_coefficients_low_to_high": [
+        596224,
+        98000,
+        273997,
+        949971,
+        699811,
+        19121,
+        736779,
+        210331,
+        25826,
+        165633,
+        498140,
+        588034,
+        450711,
+        981591,
+        981591,
+        450711,
+        588034,
+        498140,
+        165633,
+        25826,
+        210331,
+        736779,
+        19121,
+        699811,
+        949971,
+        273997,
+        98000,
+        596224
+      ],
+      "denominator_coefficients_low_to_high": [
+        1
+      ],
+      "denominator_factorization_mod_prime": {
+        "unit": 1,
+        "factors": []
+      },
+      "samples_used_for_fit": 34,
+      "holdout_samples": 8
+    },
+    "shift_0_m_degree_11": {
+      "numerator_degree": 27,
+      "denominator_degree": 0,
+      "numerator_coefficients_low_to_high": [
+        923155,
+        925113,
+        26433,
+        220275,
+        321647,
+        79572,
+        291764,
+        875292,
+        188224,
+        952919,
+        315250,
+        850842,
+        134453,
+        385908,
+        385908,
+        134453,
+        850842,
+        315250,
+        952919,
+        188224,
+        875292,
+        291764,
+        79572,
+        321647,
+        220275,
+        26433,
+        925113,
+        923155
+      ],
+      "denominator_coefficients_low_to_high": [
+        1
+      ],
+      "denominator_factorization_mod_prime": {
+        "unit": 1,
+        "factors": []
+      },
+      "samples_used_for_fit": 34,
+      "holdout_samples": 8
+    },
+    "shift_1_m_degree_11": {
+      "numerator_degree": 26,
+      "denominator_degree": 0,
+      "numerator_coefficients_low_to_high": [
+        966395,
+        126195,
+        77433,
+        619464,
+        561909,
+        272393,
+        453374,
+        723924,
+        219315,
+        438630,
+        745671,
+        993703,
+        992128,
+        683829,
+        992128,
+        993703,
+        745671,
+        438630,
+        219315,
+        723924,
+        453374,
+        272393,
+        561909,
+        619464,
+        77433,
+        126195,
+        966395
+      ],
+      "denominator_coefficients_low_to_high": [
+        1
+      ],
+      "denominator_factorization_mod_prime": {
+        "unit": 1,
+        "factors": []
+      },
+      "samples_used_for_fit": 34,
+      "holdout_samples": 8
+    },
+    "shift_7_m_degree_11": {
+      "numerator_degree": 20,
+      "denominator_degree": 0,
+      "numerator_coefficients_low_to_high": [
+        565176,
+        303487,
+        383119,
+        298708,
+        269506,
+        462418,
+        156042,
+        312084,
+        7135,
+        676182,
+        343799,
+        676182,
+        7135,
+        312084,
+        156042,
+        462418,
+        269506,
+        298708,
+        383119,
+        303487,
+        565176
+      ],
+      "denominator_coefficients_low_to_high": [
+        1
+      ],
+      "denominator_factorization_mod_prime": {
+        "unit": 1,
+        "factors": []
+      },
+      "samples_used_for_fit": 34,
+      "holdout_samples": 8
+    },
+    "shift_13_m_degree_11": {
+      "numerator_degree": 14,
+      "denominator_degree": 0,
+      "numerator_coefficients_low_to_high": [
+        34964,
+        489496,
+        181715,
+        726860,
+        998862,
+        997721,
+        996580,
+        996091,
+        996580,
+        997721,
+        998862,
+        726860,
+        181715,
+        489496,
+        34964
+      ],
+      "denominator_coefficients_low_to_high": [
+        1
+      ],
+      "denominator_factorization_mod_prime": {
+        "unit": 1,
+        "factors": []
+      },
+      "samples_used_for_fit": 34,
+      "holdout_samples": 8
+    },
+    "shift_20_m_degree_11": {
+      "numerator_degree": 7,
+      "denominator_degree": 0,
+      "numerator_coefficients_low_to_high": [
+        375035,
+        625239,
+        875714,
+        126186,
+        126186,
+        875714,
+        625239,
+        375035
+      ],
+      "denominator_coefficients_low_to_high": [
+        1
+      ],
+      "denominator_factorization_mod_prime": {
+        "unit": 1,
+        "factors": []
+      },
+      "samples_used_for_fit": 34,
+      "holdout_samples": 8
+    },
+    "shift_26_m_degree_0": {
+      "numerator_degree": 1,
+      "denominator_degree": 0,
+      "numerator_coefficients_low_to_high": [
+        938360,
+        938360
+      ],
+      "denominator_coefficients_low_to_high": [
+        1
+      ],
+      "denominator_factorization_mod_prime": {
+        "unit": 1,
+        "factors": []
+      },
+      "samples_used_for_fit": 34,
+      "holdout_samples": 8
+    },
+    "shift_26_m_degree_9": {
+      "numerator_degree": 1,
+      "denominator_degree": 0,
+      "numerator_coefficients_low_to_high": [
+        67239,
+        67239
+      ],
+      "denominator_coefficients_low_to_high": [
+        1
+      ],
+      "denominator_factorization_mod_prime": {
+        "unit": 1,
+        "factors": []
+      },
+      "samples_used_for_fit": 34,
+      "holdout_samples": 8
+    }
+  },
+  "warning": "Rational interpolation of guessed scalar recurrences is not a creative-telescoping certificate."
+}

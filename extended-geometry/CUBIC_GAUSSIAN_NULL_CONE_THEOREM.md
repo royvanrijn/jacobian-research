@@ -1,5 +1,10 @@
 # The cubic Gaussian null-cone theorem
 
+> **Retained finite-degree strengthening.**  The all-degree theorem `G2T`
+> subsumes this result for the GMC(2) conclusion.  The radical containment
+> and moment-ten cutoff remain useful as an exact cubic null-cone certificate
+> and regression, not as an active frontier.
+
 ## 1. Correct statement
 
 Let

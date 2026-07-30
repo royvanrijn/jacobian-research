@@ -381,7 +381,10 @@ that cross terms can cancel \(J_n\).  It must pass four independent tests:
 4. unchanged geometric and arithmetic \(D_n\)-closure.
 
 No such absolute map is constructed here.  For \(D_3=S_3\), \(D_4\), and
-\(D_5\), these equations are the next bounded affine-modification search.
+\(D_5\), the canonical one-normal specialization of these equations is now
+closed in every polynomial degree.  A bounded search is justified only
+after introducing two genuinely coupled normal directions or changing the
+determinant-\(\Delta_n\) blowdown.
 
 For \(D_5\), the
 [dedicated modification frontier](ABSOLUTE_DIHEDRAL_D5_MODIFICATION_FRONTIER.md)
@@ -409,6 +412,16 @@ exclude all constant-linear assemblies.  A generic genus-two-fibre argument
 upgrades the base-mixing obstruction to polynomial automorphic recharts of
 every degree, and the first nonautomorphic normalized-cusp chart fails by a
 contraction-divisor mismatch.
+The
+[all-degree continuation](DIHEDRAL_ALL_DEGREE_AFFINE_COMPLETION_OBSTRUCTIONS.md)
+separates the odd and even branch ledgers and proves these canonical
+two-mask, automorphic-mixing, normalized-cusp, and one-normal-direction
+obstructions for every \(n\ge3\).  Arbitrary one-normal-coordinate
+dependence must satisfy the resonance
+\(2\deg_Tq=n\deg_Tp\).  The resonant factorization closes the entire
+even-degree one-normal stratum, and a valuation-at-infinity argument closes
+the odd pairs \((2d,nd)\).  Only two coupled nonlinear directions and
+alternative blowdowns remain open in the canonical all-degree programme.
 
 ## 10. Low-degree cards
 
@@ -426,9 +439,11 @@ cosine-field model or a different rational generic polynomial.
 
 ## 11. Next computations
 
-1. For \(D_5\), search only nonlinear two-mask ansatzes which modify \(u\);
-   product/separated Cox fills and affine-linear masks are closed.
-2. Run the coupled quadratic two-mask search first for \(D_3\) and \(D_4\).
+1. Search the all-\(n\) canonical two-mask problem only with two genuinely
+   coupled normal directions.  Every one-normal chart—nonresonant,
+   even-resonant, or odd-resonant—is closed.
+2. Test alternative determinant-\(\Delta_n\) blowdowns, keeping the two
+   even branch orders independent.
 3. Audit a one-parameter odd-dihedral generic polynomial and compare its
    boundary lattice with the two-parameter Dickson chart.
 4. Compute the arithmetic normalizer of the rational Dickson family for

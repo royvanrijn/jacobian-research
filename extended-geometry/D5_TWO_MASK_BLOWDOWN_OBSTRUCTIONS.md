@@ -417,21 +417,24 @@ necessary feature: the two transverse corrections cannot both be
 divisible by the old branch equation.  Their reductions modulo \(D\) must
 instead move tangentially together along the normalized cusp.
 
-## 8. The minimal tangential chart fails
+## 8. Every affine-normal tangential chart fails
 
 The next repair is to move along the normalized cusp modulo \(D\).  Up to
-rescaling the first mask, the smallest constant-normal chart is
+rescaling the first mask, the general chart affine in the normal coordinate
+is
 
 \[
 \begin{aligned}
 h&=V+S,\\
-p&=h^2+aDT,\\
-q&=2h^5+bDT,\\
+p&=h^2+A(U,V,S)DT,\\
+q&=2h^5+B(U,V,S)DT,\\
 \rho&=(p,q,U,S),
 \end{aligned}                                      \tag{8.1}
 \]
 
-with constants \(a,b\).  Its Jacobian is
+where the normal coefficients do not depend on \(T\).  Its Jacobian has
+degree at most one in \(T\).  For constant coefficients \(A=a,B=b\), it
+specializes to
 
 \[
 \det D\rho
@@ -445,34 +448,35 @@ q^2-4p^5=\lambda D\det D\rho,
 \qquad \lambda\ne0.                                \tag{8.3}
 \]
 
-The right side of (8.3) is independent of \(T\).  On the left, the
-\(T^5\) coefficient is
+For general \(A,B\), the right side of (8.3) has \(T\)-degree at most one.
+On the left, the \(T^5\) coefficient is
 
 \[
--4a^5D^5,
+-4A^5D^5,
 \]
 
-so \(a=0\).  Then the \(T^2\) coefficient is
+so \(A=0\).  The right side is then independent of \(T\), while the
+\(T^2\) coefficient on the left is
 
 \[
-b^2D^2,
+B^2D^2,
 \]
 
-so \(b=0\).  The remaining map has
+so \(B=0\).  The remaining map has
 \(\det D\rho=0\) and is not a rechart.
 
 Hence:
 
 \[
 \boxed{
-\text{the minimal constant-normal tangential cusp chart has no
+\text{no tangential cusp chart affine in one normal coordinate has a
 nondegenerate log-crepant solution.}
 }                                                   \tag{8.4}
 \]
 
 This is an exact coefficient solution, not a bounded numerical search.
 
-## 9. Next nonlinear ansatz
+## 9. Updated nonlinear search frontier
 
 The fixed-base and all automorphic base-moving routes are now closed.  The
 first symmetric nonautomorphic cusp chart is also closed.  The next
@@ -503,12 +507,20 @@ p\equiv h^2,\qquad q\equiv\pm2h^5\pmod D,           \tag{8.1}
 
 with \(h\) genuinely mask-dependent.  This supplies tangential rank along
 the cusp while avoiding the common-\(D\) conormal factor in (7.4).
-Section 8 shows that constant coefficients in the single normal direction
-are insufficient.  The first unresolved choices are:
+Section 8 closes arbitrary \(T\)-independent coefficients in the single
+affine normal direction.  The
+[all-degree continuation](DIHEDRAL_ALL_DEGREE_AFFINE_COMPLETION_OBSTRUCTIONS.md)
+also closes every nonlinear \(T\)-dependence: a one-normal candidate is
+either nonresonant and fails the degree bound, or resonant and degenerates
+by factorization or the infinity valuation.  Do not launch further
+one-normal coefficient searches.
 
-1. nonconstant normal coefficients \(a(U,V,S)\), \(b(U,V,S)\);
-2. two independent nonlinear tangential/normal directions; or
-3. a different birational blowdown whose exceptional determinant is
+The first unresolved choices are therefore:
+
+1. two independent nonlinear tangential/normal directions, with neither
+   auxiliary direction reduced to a retained-coordinate differential
+   field \(K[T]\); or
+2. a different birational blowdown whose exceptional determinant is
    \(\Delta\) but whose adjugate rows are not the matrix (1.2).
 
 ## 10. Reproduction
@@ -524,5 +536,9 @@ Dickson-base chain-rule factor, the coefficient proof of constant-linear
 base rigidity, the mask-row dependence, the smooth genus-two generic fibre
 used by Theorem 5.1, all \(72\) exact coordinate assignments, and the
 all-degree contraction-divisor failure of the first nonautomorphic cusp
-chart.  It also solves the minimal constant-normal tangential
-log-crepant equations exactly.
+chart.  It also excludes the full tangential class affine in one normal
+coordinate.
+
+The odd/even valuation ledgers and the uniform extension of these
+obstructions to every \(n\ge3\) are in
+[All-degree dihedral affine-completion obstructions](DIHEDRAL_ALL_DEGREE_AFFINE_COMPLETION_OBSTRUCTIONS.md).

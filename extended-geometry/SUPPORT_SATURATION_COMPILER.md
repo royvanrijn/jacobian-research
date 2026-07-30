@@ -20,24 +20,64 @@ This is an algebra compiler, not a new theorem asserting that every input is
 saturated.  A nonzero output is retained as a local-cohomology module rather
 than treated as a failure of the program.
 
+## Shared input schema
+
+New calculations should use `SupportSaturationProblem`, whose stable
+JSON form is
+[`support_saturation_input.schema.json`](../schemas/support_saturation_input.schema.json).
+It declares, in one place:
+
+- the coefficient ring and monomial ordering;
+- the submodule presentation \(N\subset R^r\);
+- the support ideal \(I\);
+- the completion ideal \(\mathfrak m\);
+- parameter/base variables and normal variables;
+- requested jet orders and an optional distinguished class; and
+- whether the exact backend result is being used as an exact certificate or
+  as modular evidence for a different characteristic.
+
+The variable roles are checked for unknown names and overlap.  The completion
+ideal is deliberately separate from the normal-variable list: a filtration
+may use polynomial combinations of the normal directions.  Empty role lists
+are allowed for presentations in which one of the two roles is absent.
+
+A small exact example is
+[`support_saturation_example.json`](../schemas/support_saturation_example.json).
+Compile any conforming input with:
+
+```bash
+.venv/bin/python scripts/compile_support_saturation.py \
+  schemas/support_saturation_example.json \
+  --output /tmp/support_saturation_certificate.json
+```
+
+Existing Python callers of `SupportSaturationCompiler.compile` remain
+supported.  Repository adapters should prefer `compile_problem` when the
+untruncated module is available; the narrower witness and finite-jet-only
+entry points remain necessary when it is not.
+
 ## Exact output
 
 `SupportSaturationCompiler.compile` records:
 
 - a standard basis for \(N:I^\infty\);
-- generators, relations, annihilator, and associated primes of
+- generators, relations, annihilator, annihilator radical, and associated
+  primes or explicitly partial associated-prime candidates of
   \((N:I^\infty)/N\);
 - associated primes of \(F/N\), when module primary decomposition is
   requested;
 - exact colon tests \(N:f=N\) for candidate \(f\in I\);
-- the annihilator and least detected boundary exponent of a distinguished
-  class; and
+- the annihilator, its radical, and the least detected support exponent of a
+  distinguished class;
 - finite normal jets
   \[
   N_n=N+\mathfrak m^nF
   \]
   with the images and surjectivity of the transitions from order \(n+1\) to
-  order \(n\).
+  order \(n\); and
+- the least common annihilating exponent on the requested finite tower,
+  accompanied by an explicit statement that a finite prefix is not an
+  all-order uniform bound.
 
 For large jets, `distinguished_class_restriction` is the narrower exact
 mode.  It checks the boundary exponent of the declared class at every
@@ -48,7 +88,11 @@ reports the full finite-jet local-cohomology module.
 
 All polynomial and module operations are exact Singular computations.
 Certificates contain a SHA-256 hash of the canonical input, the full input
-presentation, the Singular version, and the precise strategy used.
+presentation, the Singular version, and the precise strategy used.  The
+`certificate_state` block separates this backend fact from theorem scope:
+a calculation over \(\mathbf F_p\) is exact over that field, while its
+default assurance for a characteristic-zero target is `modular` and records
+that no characteristic-zero lift is claimed.
 The backend consumes the complete module returned by `sat(N,I)`.  The fast
 regression includes a two-generator saturation specifically to prevent
 accidental indexing of that returned module as though it were a
@@ -85,9 +129,14 @@ Run all current adapters with:
 .venv/bin/python scripts/compile_support_saturation_cases.py
 ```
 
-or select `--case cubic`, `--case degree42`, or `--case plane`.
+or select `--case cubic`, `--case cubic-frontier`, `--case degree42`, or
+`--case plane`.
 
 The adapters deliberately preserve three different mathematical scopes.
+They share the compiler contract used by the cubic-normalization,
+degree-42, plane-boundary, and filtered-quantization programmes; adding a
+new programme should require an adapter that constructs the presentation,
+not another saturation implementation.
 
 ### Homogeneous cubic cotangent atlas
 
@@ -99,6 +148,36 @@ For every row it computes the saturation, associated primes, and a regular
 boundary element.  This is the complete homogeneous-symbol atlas.  It does
 not prove the open statement for arbitrary nonhomogeneous higher lifts of a
 universal cubic normalization.
+
+### Cubic formal-gauge annihilator frontier
+
+The `cubic-frontier` adapter imports the exact gauge-cokernel atlas from
+[`cubic_formal_gauge_cokernel_atlas.json`](../artifacts/generated-results/cubic_formal_gauge_cokernel_atlas.json).
+It treats the proved smooth-symbol theorem as a routing decision: the full
+24-parameter quartic cotangent-saturation problem is closed, so the next
+smooth work is global algebraization and boundary/Keller-open
+compatibility.
+
+For the singular squarefree symbols it emits the finite queue
+
+\[
+\begin{array}{c|c|c}
+\text{symbol}&\operatorname{Ann}(Q_h)&\dim (Q_h)_4\\ \hline
+\text{nodal}&(x)&2\\
+\text{cuspidal}&(x^2)&4\\
+\text{line + transverse conic}&(yz)&4\\
+\text{line + tangent conic}&(y^3)&6\\
+\text{triangle}&(xyz)&6\\
+\text{concurrent lines}&(x^3)&8.
+\end{array}
+\]
+
+These annihilator types, rather than coordinate planes or sparse support in
+the original 24-element basis, are the search keys for the next
+deformation-dependent cotangent adapters.  For double-line, triple-line,
+and zero symbols the adapter records the prior generically-étale/Keller
+compatibility gate.  This routing artifact is not itself a singular-symbol
+saturation theorem.
 
 ### Degree-42 Ritt synchronization
 
@@ -191,6 +270,35 @@ full characteristic-zero saturation, lift the order-seven module, vary the
 base specialization, or imply generic or completed all-order
 synchronization.  Passing `--degree42-characteristic 0` to the older adapter
 still requests the much longer full rational finite-jet calculation.
+
+### Cellular consequence
+
+The class \(c_6\) changes the next step in the Hessian--Ritt programme.
+Vanishing on generic local strata cannot be promoted to support saturation:
+the sixth jet already has a boundary-supported class concentrated at the
+deepest monomial degeneration.  Its location makes a cellular explanation
+more plausible than another undirected global colon calculation.
+
+The next comparison with the
+[cellular cotangent model](HESSIAN_RITT_COTANGENT_DESCENT_COMPARISON.md)
+is therefore:
+
+1. construct the image, if any, of \([c_6]\) in the cut-\(6\) filtered
+   cellular/Postnikov coefficient module;
+2. determine whether that image is the cut-\(6\) non-splitting class
+   detected by `HRCELL2`--`HRCELL4`;
+3. restrict it to the rotated cut-\(14\) and cut-\(21\) sectors using their
+   completed splittings; and
+4. compute the resulting braid restriction class and decide whether
+   coherence kills it or makes it persist.
+
+None of these four identifications is currently proved.  In particular,
+the completed splitting of the rotated first-conormal extensions does not
+by itself kill a class coming from a different finite-jet local-cohomology
+module.  The modular order-seven saturation transition supplies evidence
+that a lift can exist, but the characteristic-zero certificate above stops
+at order six.  This is the precise new interface between support saturation
+and cellular cotangent non-splitting.
 
 ### Plane-JC boundary layer
 

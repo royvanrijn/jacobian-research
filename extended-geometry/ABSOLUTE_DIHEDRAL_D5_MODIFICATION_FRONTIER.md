@@ -447,9 +447,11 @@ The vertex calculation shows where its linear part must differ from the
 naive Cox relations: the conormal rows at the common tangent point must be
 made independent without deleting or merging either ramification color.
 
-This is the first coefficient search worth running.  A search that fixes
-\(U=u\), uses only affine-linear masks, or starts from a freely stabilized
-product fill is already closed by the results above.
+This identifies the first broad nonlinear class, but the subsequent
+all-degree audit now closes its canonical one-normal specialization.  A
+search that fixes \(U=u\), uses only affine-linear masks, starts from a
+freely stabilized product fill, or retains two coordinates and places all
+nonlinearity in one remaining normal coordinate is already closed.
 
 The
 [nonlinear obstruction classification](D5_NONLINEAR_MODIFICATION_OBSTRUCTION_CLASSIFICATION.md)
@@ -472,6 +474,14 @@ primitive coordinate assignments, and uses the generic genus-two fibre to
 exclude polynomial automorphic base mixing in every degree.  Its first
 nonautomorphic normalized-cusp chart also has an all-degree contraction
 divisor mismatch.
+Finally, the
+[all-degree affine-completion obstruction](DIHEDRAL_ALL_DEGREE_AFFINE_COMPLETION_OBSTRUCTIONS.md)
+proves that every canonical one-normal-coordinate continuation is
+degenerate: nonresonant degrees fail at the leading term, even resonant
+degrees factor through the cusp, and odd resonant degrees fail by the
+valuation at infinity.  The first coefficient search still worth running
+must therefore couple both normal directions, or replace the canonical
+determinant-\(\Delta\) blowdown.
 
 ## 7. Reproduction
 

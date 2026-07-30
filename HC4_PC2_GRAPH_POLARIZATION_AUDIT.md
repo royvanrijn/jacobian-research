@@ -43,6 +43,14 @@ chart `1000`; the final 43-parameter affine-normal edge is an exact rational
 unit ideal on \(Y=0\).  Quartic potentials in the other unresolved charts
 and general higher-degree nonlinear polynomial polarizations remain open.
 
+Any surviving gradient-map coefficient chart now has a second, independent
+stratification: form the actual compactification
+\([X_0^m:F_1^h:\cdots:F_4^h]\), impose the leading curl equations, and
+record its projective/Segre vector.  This is not the full polar map of a
+homogenized generating function.  The executable all-dimensional transform
+and coefficient-scheme import rule are in
+[`PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`](PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md).
+
 A direct imitation of the Meng--Yang one-variable Schur operation has also
 been carried out.  Among all coordinate graph charts, omitted coordinates,
 and linear auxiliary functions of the polynomial graph parameters, only two

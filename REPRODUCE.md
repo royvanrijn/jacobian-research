@@ -235,6 +235,21 @@ power-shift separation, and cubic boundary-count separation.  The geometric
 normalization/Fitting and boundary-exhaustion inputs remain explicit
 interfaces.
 
+The first reconstruction step beyond the common `P=1` plane is checked by:
+
+```bash
+.venv/bin/python scripts/verify_two_marked_fiber_gauge_reconstruction.py
+```
+
+For a root-marked fiber over `P=p`, the checker extracts the linear
+coefficient `g_1/(g_N*p^(N+m))` of the monic root annihilator.  It verifies
+that the planes `P=1,2` recover the normalized seed, the gauge exponent, and
+therefore the stable Fitting area.  It also checks the sharp periodic
+counterexamples on finite collections of torsion planes and recovers `m`
+from the pole order `N+m` on a transverse affine line.  The result retains
+the inverse-root generator and the base character `P`; it is not an
+unmarked-cover Torelli theorem.
+
 To intentionally refresh the pinned count artifact after changing its
 generator, run:
 
@@ -3172,6 +3187,59 @@ exceptional-locus stratification, and corrected-system bridge moments
 remain open.  See
 [`TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_HOLONOMIC_PROBE.md`](extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_HOLONOMIC_PROBE.md).
 
+The relative-cohomology refinement is replayed by
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_rank_two_relative_jacobian.py
+```
+
+It computes the exact logarithmic Jacobian length
+\(18=2_{t=0}+2_{t=1}+14_{\rm interior}\), including the saturation
+exponent six and an explicit eighteen-monomial basis.  At the same two
+points and three primes it finds an order-\(18\), \(m\)-degree-\(18\)
+recurrence with 83 unused equations; degree 17 fails at both points
+modulo \(1000003\).  Its forward coefficient has eight common linear
+factors and a point-dependent decic.  The leading \(m^{18}\) coefficient
+has nonzero remainder in all eighteen relative-Jacobian coordinates, so
+a naive degree-17 polynomial divergence certificate cannot prove the
+recurrence.  The result remains exact quotient data plus modular
+recurrence evidence, not a universal telescoping certificate.
+
+The exact border-basis calculation on the generic factor pencil is
+replayed by
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_rank_two_pencil_border.py
+```
+
+Over each of three finite rational-function fields it verifies
+saturation exponent six, quotient length eighteen, and six reduced
+nineteen-term border relations.  The three distinct monic coefficient
+denominators have degrees \(74,88,94\), common gcd degree \(74\), and
+coprime quotient degrees \(14,20\); their lcm is squarefree of degree
+\(108\).  The artifact is
+`artifacts/generated-results/two_pair_sic_bidegree33_rank_two_pencil_border.json`.
+This is an exact modular one-pencil chart calculation, not a universal
+parameter-space determinant or a classification of the exceptional
+fibers.
+
+The generic-pencil interpolation stress test is
+
+```bash
+.venv/bin/python \
+  scripts/explore_two_pair_sic_bidegree33_rank_two_recurrence_line.py \
+  --samples 256 --holdout 12 --jobs 4 --maximum-moment 390
+```
+
+The scaling-family control reconstructs the predicted homogeneous
+degrees.  On the generic quadratic factor pencil, eight representative
+coefficients have no rational interpolant in the sampled degree window
+(combined degree at most 243).  This redirects the universal computation
+to an eighteen-dimensional relative connection and determinant
+representation instead of an expanded parameter interpolation.
+
 The second checker works on the sixteen-dimensional rank-at-most-two
 determinantal variety. At one exact rank-two factor chart it proves modulo
 the good prime \(1000003\) that both
@@ -3639,9 +3707,9 @@ checks the six weighted second-moment ratios and the four nonzero
 third-moment residuals; the other two ratios are one-sided.  This closes
 the full \(r=2,\deg P\le5\) cell.  The checker finally derives the next
 \(r=3,\deg P=5\) leading reduction: four triple-root, three double-root,
-and one squarefree top-form normal forms.  This is a leading-face
-classification only; their nonhomogeneous correction systems remain
-open.
+and one squarefree top-form normal forms.  This checker supplies the
+leading-face classification only; the separate degree-five frontier
+checker below closes all eight nonhomogeneous correction systems.
 The accompanying written no-go for formal umbral straightening is
 proof-theoretic: conjugation by an algebra automorphism preserves the
 Leibniz rule, while a locally finite formal constant-coefficient operator
@@ -4416,6 +4484,21 @@ recovers the known foundational weighted mechanism rather than a new stable
 class.  The result is
 `artifacts/generated-results/conductor_first_foundational_cusp_keller.json`.
 
+The characteristic-labelled Hessian--Ritt linear complex and its
+positive-characteristic Frobenius summand are replayed together by
+
+```bash
+make verify-ritt-deformation-complex
+```
+
+The first checker verifies the characteristic-zero tree differential and
+cellular baseline.  The second exhausts normalized one-sided composition
+tangents over small fields and verifies the exact Hessian-cutoff trichotomy:
+the full \(r-1\)-dimensional kernel for \(H'=0\), the one-dimensional
+\(kx\) kernel for \(H'=a\ne0\), and no invisible tangent when
+\(\deg H'\ge1\).  The exhaustion is a regression for the written
+all-degree degree-additivity proof; it is not itself the proof.
+
 The chart-independent missing-linear-coefficient test is:
 
 ```bash
@@ -4787,7 +4870,9 @@ The first construction attempt verifies the determinant-\(\Delta\)
 two-mask matrix and its adjugate inverse, proves the constant-linear
 coefficient locks, checks the generic genus-two fibre used in the all-degree
 automorphic rigidity theorem, and exhausts \(72\) coordinate assignments
-from the unchanged and two ramification-incidence source charts:
+from the unchanged and two ramification-incidence source charts.  It also
+checks the first nonautomorphic contraction mismatch and solves the minimal
+affine-normal tangential class:
 
 ```bash
 .venv/bin/python scripts/verify_d5_two_mask_blowdown_obstructions.py
@@ -4796,6 +4881,26 @@ from the unchanged and two ramification-incidence source charts:
 The chain-rule obstruction, all-degree genus-two proof, and precise
 nonautomorphic continuation are in
 [`extended-geometry/D5_TWO_MASK_BLOWDOWN_OBSTRUCTIONS.md`](extended-geometry/D5_TWO_MASK_BLOWDOWN_OBSTRUCTIONS.md).
+
+## All-degree dihedral affine-completion obstructions
+
+The uniform replay checks the Dickson branch identity, both components of
+the even-degree branch, the determinant-\(\Delta_n\) two-mask blowdown, the
+positive-genus automorphic-rigidity gate, the first nonautomorphic cusp
+remainder, the affine-normal coefficient locks, and the nonlinear
+normal-degree resonance, even factorization, and odd valuation-at-infinity
+one-normal no-go gates for \(3\le n\le12\).  It also replays two
+resonant-looking false positives and verifies that the bounded
+one-normal search compiler has no open route:
+
+```bash
+.venv/bin/python scripts/verify_dihedral_all_degree_affine_completion_obstructions.py
+```
+
+The odd/even valuation ledgers and uniform proofs are in
+[`extended-geometry/DIHEDRAL_ALL_DEGREE_AFFINE_COMPLETION_OBSTRUCTIONS.md`](extended-geometry/DIHEDRAL_ALL_DEGREE_AFFINE_COMPLETION_OBSTRUCTIONS.md).
+The bounded replay is a regression certificate, not the proof of the
+all-degree statements.
 
 ## \(A_4\) Keller inverse-Galois frontier
 
@@ -6339,8 +6444,19 @@ The format and exact claim boundary are documented in
 
 The reusable module compiler computes
 \((N:I^\infty)/N=H_I^0(F/N)\), module associated primes, exact regular
-elements, distinguished-class annihilators, and finite normal-jet
-transitions.  Its fast exact calibration is:
+elements, distinguished-class annihilators and radicals, finite normal-jet
+transitions, and finite-tower uniform-exponent tests.  The shared JSON schema
+also records the completion ideal, parameter/base variables, normal
+variables, and exact-versus-modular assurance.  Compile the checked example
+with:
+
+```bash
+.venv/bin/python scripts/compile_support_saturation.py \
+  schemas/support_saturation_example.json \
+  --output /tmp/support_saturation_certificate.json
+```
+
+Its fast exact calibration is:
 
 ```bash
 make verify-support-saturation-compiler
@@ -6373,6 +6489,21 @@ plane-JC cyclic `d3` boundary layer is:
 make refresh-support-saturation-cases
 ```
 
+Regenerate only the cubic search stratification imported from the proved
+formal-gauge cokernel atlas with:
+
+```bash
+.venv/bin/python scripts/compile_support_saturation_cases.py --case cubic-frontier
+```
+
+This writes
+`artifacts/generated-results/support_saturation_cubic_annihilator_frontier.json`.
+It closes further smooth-symbol quartic saturation searches, queues the six
+singular squarefree cases by annihilator type, and places the
+generically-étale/Keller gate before saturation for the double-line,
+triple-line, and zero symbols.  It is a routing certificate, not a new
+singular saturation computation.
+
 The older degree-42 and plane cases require Singular; the plane primary
 decomposition is the longer run.  Their exact scopes, especially the
 remaining full characteristic-zero saturation and order-seven gaps, the
@@ -6402,9 +6533,90 @@ The Python command writes
 formula, the graph-versus-polar distinction, the cotangent and
 Meng--Yang controls, Wang's exclusion of all sixteen quadratic-gradient
 affine-degree-two/three rows, the `HC4CQ1` exclusion of all 139
-cubic-gradient rows, the resulting potential-degree lower bound five, and
-the exact nonexistence scope are documented in
+cubic-gradient rows, the 319 and 307 quartic-gradient numerical rows, the
+rank-one/two/three leading-quintic determinant faces, the exact
+rank-three cubic Schur gap, its squarefree Hessian-discriminant
+obstruction and exact witness, the resulting potential-degree lower bound
+five, and the exact nonexistence scope are documented in
 [`HC4_PROJECTIVE_POLAR_GEOMETRY.md`](HC4_PROJECTIVE_POLAR_GEOMETRY.md).
+
+## All-dimensional projective-gradient Segre machinery
+
+Verify the canonical
+\((g_0,\ldots,g_n)\leftrightarrow(\sigma_1,\ldots,\sigma_n)\) transform,
+the actual affine-gradient and full-polar constructors, the leading
+integrability/Euler reconstruction, and regenerate the typed family registry
+with:
+
+```bash
+.venv/bin/python scripts/verify_projective_gradient_segre_machinery.py
+```
+
+Independently compute the exact plane-cotangent and
+quadratic-stabilization multidegrees with:
+
+```bash
+M2 --script scripts/verify_projective_gradient_segre_families.m2
+```
+
+The first command writes
+`artifacts/generated-results/projective_gradient_segre_registry.json`.
+Complete multidegree/Segre vectors, top-degree-only transport controls, and
+explicit families with uncomputed vectors are distinct record types.  The
+canonical scope and the resulting restrictions on cotangent, Schur, HN,
+coefficient-scheme, and boundary-normalization consumers are documented in
+[`PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`](PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md).
+
+## Coefficient-space and Kuranishi calculations
+
+Certify the exact full-box tangent ranks for `F_4,F_5,F_6`, their visible
+seed ranks and source gauges, and one nonzero quadratic obstruction in each
+degree with:
+
+```bash
+.venv/bin/python scripts/verify_all_degree_coefficient_tangents.py
+```
+
+Certify the complete characteristic-zero quartic quadratic Kuranishi rank and
+the explicit reduced-family tangent ranks with:
+
+```bash
+.venv/bin/python scripts/verify_quartic_full_box_kuranishi.py
+.venv/bin/python scripts/verify_generic_coefficient_family_tangents.py
+```
+
+Regenerate the modular first-order source filtration with:
+
+```bash
+.venv/bin/python scripts/research_filtered_source_tangent_profile.py \
+  --prime 32003 \
+  --json-output artifacts/generated-results/filtered_source_tangent_profiles_mod32003.json
+```
+
+Regenerate the modular quartic slices and the Singular/Macaulay2 input files
+with:
+
+```bash
+.venv/bin/python scripts/research_quartic_coefficient_kuranishi.py \
+  --prime 32003 --jet-order 8 \
+  --json-output artifacts/generated-results/quartic_coefficient_kuranishi_mod32003.json \
+  --singular-output artifacts/generated-results/quartic_coefficient_kuranishi_mod32003.sing \
+  --macaulay2-output artifacts/generated-results/quartic_coefficient_kuranishi_mod32003.m2
+
+.venv/bin/python scripts/research_quartic_generic_component.py \
+  --prime 32003 --greedy-jet-order 6 \
+  --json-output artifacts/generated-results/quartic_generic_component_mod32003.json \
+  --singular-output artifacts/generated-results/quartic_generic_component_mod32003.sing \
+  --singular-order3-output artifacts/generated-results/quartic_generic_component_order3_mod32003.sing \
+  --macaulay2-output artifacts/generated-results/quartic_generic_component_mod32003.m2
+```
+
+The optional cubic-layer compilation takes several minutes.  The CAS files
+are research inputs.  Their full primary decompositions have not completed
+within the available memory and are not certificate artifacts.
+The theorem/computation boundary and the all-degree formal-versus-algebraic
+statement are documented in
+[`extended-geometry/JELONEK_COEFFICIENT_COMPONENTS.md`](extended-geometry/JELONEK_COEFFICIENT_COMPONENTS.md).
 
 ## Free-discriminant and Saito-matrix experiment
 

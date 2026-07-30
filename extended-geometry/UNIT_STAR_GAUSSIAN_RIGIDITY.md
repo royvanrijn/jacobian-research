@@ -1,5 +1,9 @@
 # Prime rigidity for unit-star Gaussian supports
 
+> **Retained reusable technique.**  `G2T` subsumes the unit-star family in its
+> all-support proof of GMC(2).  This note remains a clean semigroup/prime
+> isolation lemma and regression, not an active Gaussian frontier.
+
 ## 1. The unit-star family
 
 Let \(S\subset\mathbb Z_{>0}\) be finite and consider

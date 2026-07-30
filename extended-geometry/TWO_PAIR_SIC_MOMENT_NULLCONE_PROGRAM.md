@@ -117,6 +117,17 @@ valid at their stated scopes.  They now serve a degree-by-degree
 classification program: \(\mathrm{MN}_2\) is true, \(\mathrm{MN}_3\)
 remains open, and \(\mathrm{MN}_d\) is false for every \(d\geq4\).
 
+There is a sharper operational split.  The
+[split-symbol theorem](SPLIT_SYMBOL_GVC_THEOREM.md) proves the complete
+rank-one Segre cone SIC-safe in every degree.  Consequently rank-one
+root partitions, generic binary-symbol orbit closure, and finite
+moment--nullcone certificates below are no longer gates for SIC
+counterexample discovery.  They remain relevant to the strictly stronger
+scheme-theoretic question \(\mathrm{MN}_d\).  The active SIC search is the
+[rank-stratified programme](RANK_STRATIFIED_MOMENT_PROGRAM.md): begin at
+exact coefficient rank two, compute exact determinantal components, and
+extract all-order recurrences on rank-two factorizations.
+
 For \(d\geq 1\), let \(V_d\) be the space of two-pair forms of bidegree
 \((d,d)\), and put
 
@@ -934,8 +945,12 @@ need not be semisimple, so no characteristic-free version is asserted.
 
 ## 7. The next attack
 
-The next calculations should discover small invariant or covariant
-identities, rather than eliminate the full coefficient space.
+This section concerns the residual degree-three moment--nullcone
+classification, not the opening of the SIC counterexample search.  For
+SIC in bidegree \((4,4)\), the next attack is exact rank two as described
+in the rank-stratified programme.  The calculations below should discover
+small invariant or covariant identities, rather than eliminate the full
+coefficient space.
 
 1. **Construct uniform Clebsch--Gordan coordinates.** Express the
    projections \(f\mapsto F_{2r}\) and the contractions \(\mu_m\) by

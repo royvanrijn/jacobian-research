@@ -420,6 +420,32 @@ log-crepant quotient is congruent to
 tangentially along the normalized cusp modulo \(\Delta\), rather than give
 both transverse corrections a common branch factor.
 
+The affine-normal tangential repair
+
+\[
+h=V+S,\qquad
+p=h^2+A(U,V,S)\Delta T,\qquad
+q=2h^5+B(U,V,S)\Delta T
+\]
+
+also has no nondegenerate log-crepant solution.  The rechart Jacobian has
+\(T\)-degree at most one; the \(T^5\) coefficient forces \(A=0\), then the
+\(T^2\) coefficient forces \(B=0\).  Viewed only at this affine-normal
+stage, the apparent next branches are nonlinear dependence on the same
+normal coordinate or two independent nonlinear tangent/normal directions.
+
+The later
+[all-degree obstruction](DIHEDRAL_ALL_DEGREE_AFFINE_COMPLETION_OBSTRUCTIONS.md)
+closes the first alternative completely, not merely in the affine-normal
+class.  For \(D_5\), nonresonant one-normal degrees contradict the
+Jacobian degree bound, while the only resonant pairs
+\((\deg_Tp,\deg_Tq)=(2d,5d)\) have incompatible infinity valuations unless
+\(q^2=4p^5\), when the base bracket vanishes.  Consequently the `D5-N6`
+search should now reject every candidate retaining two coordinates and
+using only one active normal variable before attempting adjugate division
+or fibre elimination.  Only two coupled normal directions or a different
+blowdown proceed to `D5-N7`.
+
 ## 10. `D5-N7`: complete-regular-fibre obstruction
 
 Polynomiality and constant Jacobian still do not prove that the prescribed

@@ -19,4 +19,7 @@ readme = (ROOT / "README.md").read_text()
 assert "MATH_STATUS.json" in readme, "README.md must link the status authority"
 assert "THEOREMS.yml" not in readme, "README.md links the retired theorem index"
 
-print("PASS mathematical status: one typed authority, valid graph, current rendering")
+print(
+    "PASS mathematical status: one typed authority, valid dependency/update graph, "
+    "current rendering"
+)

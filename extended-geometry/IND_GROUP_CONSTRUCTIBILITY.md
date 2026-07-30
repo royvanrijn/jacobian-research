@@ -496,13 +496,13 @@ The filtered LR theorem can now be developed in the following order.
    calculation.**
    The law `34m+1` survives every fixed identity stabilization in the chosen
    target gauge, but the torus (5.5) shows that this gauge is not minimal.
-5. **Linear Rees strictness -- open as `OP-LR-REES`.**  Present the graded
-   target-field, lifted, and normal modules weight by weight and prove linear
+5. **Linear Rees face -- a work package of `OP-CCDM`.**  Present the graded
+   target-field, lifted, and normal modules weight by weight and test linear
    strictness by finite SAGBI/module membership.
-6. **Quadratic target-lift symbol -- open as `OP-LR-II`.**  Compute the
-   generator matrices of `II_(F,p,-p)` after proving a finite-weight cutoff.
-   Vanishing gives quadratic strict descent; nonvanishing gives a canonical
-   quadratic LR invariant.
+6. **Quadratic target-lift face -- a work package of `OP-CCDM`.**  Compute
+   the generator matrices of `II_(F,p,-p)` after proving a finite-weight
+   cutoff.  Nonvanishing gives a candidate filtered class to compare with
+   reduced coefficient branches and their decorations.
 7. **Universal associated-graded coercivity -- conditional consequence.**
    Under strict descent, prove that the order-`m` Rees-cokernel class survives
    arbitrary lower source and target choices.  Any positive linear
@@ -512,17 +512,14 @@ The filtered LR theorem can now be developed in the following order.
    prove their compatible `Isom` closure finite and proper, and reconstruct
    the equivalence only after extension of the marked object.
 
-This ladder is independent of the stable-moduli theorem.  Decorated
-normalization plus the affine sheet already gives stable moduli.  The former
-`OP-LR` is now split into linear Rees strictness (`OP-LR-REES`), the quadratic
-second-fundamental-form symbol (`OP-LR-II`), and marked-cover valuative no
-escape (`OP-LR-NE`).
-
-Items 1--4 already define a rigorous asymptotic complexity framework.  Items
-5--7 form the algebraic strict-descent branch, while item 8 is the independent
-valuative branch.  Once item 7 holds for every fixed stabilization dimension,
-the escape spectrum (4.4) is a stable LR invariant genuinely different in
-construction from boundary normalization.
+Decorated normalization plus the affine sheet already gives stable moduli,
+while the unrestricted Artin quotient is trivial.  Items 5--7 are therefore
+now work packages in `OP-CCDM`, whose endpoint is a comparison between local
+coefficient branches, filtered algebraization, and decorated moduli.  Item 8
+remains the independent valuative problem `OP-LR-NE`.  Once item 7 holds for
+every fixed stabilization dimension, the escape spectrum (4.4) can be
+compared directly with boundary normalization rather than maintained as a
+separate queue.
 
 ## 9. References for the ind-group input
 

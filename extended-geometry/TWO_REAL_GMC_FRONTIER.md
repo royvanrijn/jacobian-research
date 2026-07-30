@@ -24,9 +24,10 @@ Then
 
 [Long's explicit counterexample](https://arxiv.org/abs/2607.18186) proves
 that GMC fails in every real Gaussian dimension at least three.  GMC in
-dimension one is known, so dimension two is the unique unresolved dimension.
-This note does not settle it.  It gives
-six positive theorems that force a possible witness beyond the natural
+dimension one was known, so dimension two was the unique unresolved dimension
+when this frontier was written.  This note did not settle it; `G2T` later did.
+The six positive theorems below are retained finite-degree strengthenings and
+regressions that, at that stage, forced a possible witness beyond the natural
 low-complexity collapses:
 
 1. GMC holds for every polynomial of total degree at most two, in every
@@ -52,8 +53,8 @@ low-complexity collapses:
    three supports and 20 charts.  Thus a cubic counterexample needs at least
    five rotational weights.
 
-Consequently a counterexample to \(\operatorname{GMC}(2)\), if one exists,
-must have all of the following:
+Consequently, before `G2T`, any hypothetical counterexample to
+\(\operatorname{GMC}(2)\) had to satisfy all of the following:
 
 \[
 \boxed{
@@ -105,7 +106,10 @@ Theorem 7.3 eliminates all three sets in (1.5).  Consequently
 |\operatorname{wt}(P)|\geq5}                     \tag{1.6}
 \]
 
-for every possible GMC(2) counterexample.
+for every possible GMC(2) counterexample within this historical conditional
+analysis.  Since `G2T` proves that no such counterexample exists, (1.2)--(1.6)
+are retained as finite-degree regression constraints rather than search
+instructions.
 
 The exact regression and bounded support search are in
 [`verify_two_real_gmc_frontier.py`](../scripts/verify_two_real_gmc_frontier.py).

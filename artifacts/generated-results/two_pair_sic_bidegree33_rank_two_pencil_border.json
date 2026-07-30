@@ -1,0 +1,1078 @@
+{
+  "format": "two-pair-sic-bidegree33-rank-two-pencil-border-v1",
+  "status": "exact computations over three finite rational-function fields on one rank-two pencil; not a characteristic-zero universal parameter-space certificate",
+  "pencil": "U(s)=U0+sU1, W(s)=W0+sW1",
+  "records": [
+    {
+      "prime": 1000003,
+      "saturation_exponent": 6,
+      "relative_length": 18,
+      "relations": [
+        {
+          "border_monomial": "u3t2",
+          "terms": 19,
+          "denominator_degree": 74
+        },
+        {
+          "border_monomial": "u4t",
+          "terms": 19,
+          "denominator_degree": 74
+        },
+        {
+          "border_monomial": "u5",
+          "terms": 19,
+          "denominator_degree": 88
+        },
+        {
+          "border_monomial": "t6",
+          "terms": 19,
+          "denominator_degree": 94
+        },
+        {
+          "border_monomial": "ut5",
+          "terms": 19,
+          "denominator_degree": 74
+        },
+        {
+          "border_monomial": "u2t4",
+          "terms": 19,
+          "denominator_degree": 74
+        }
+      ],
+      "unique_denominator_degrees": [
+        74,
+        88,
+        94
+      ],
+      "pairwise_denominator_gcd_degrees": [
+        74,
+        74,
+        74
+      ],
+      "common_core_degree": 74,
+      "extra_factor_degrees": [
+        14,
+        20
+      ],
+      "extra_factor_gcd_degree": 0,
+      "exceptional_polynomial_degree": 108,
+      "exceptional_polynomial_squarefree": true,
+      "denominator_factor_degree_multiplicities": [
+        [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            10,
+            1
+          ],
+          [
+            18,
+            1
+          ],
+          [
+            18,
+            1
+          ],
+          [
+            19,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            10,
+            1
+          ],
+          [
+            18,
+            1
+          ],
+          [
+            18,
+            1
+          ],
+          [
+            19,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            10,
+            1
+          ],
+          [
+            13,
+            1
+          ],
+          [
+            18,
+            1
+          ],
+          [
+            18,
+            1
+          ],
+          [
+            19,
+            1
+          ]
+        ]
+      ],
+      "exceptional_factor_degree_multiplicities": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "distinct_exceptional_roots_in_base_field": 4,
+      "exceptional_polynomial_coefficients_low_to_high": [
+        802945,
+        64072,
+        608582,
+        99706,
+        203869,
+        915947,
+        352806,
+        336092,
+        422315,
+        631810,
+        96604,
+        269808,
+        359488,
+        193154,
+        314452,
+        587113,
+        76289,
+        249671,
+        783175,
+        539923,
+        885278,
+        181494,
+        76992,
+        802027,
+        887365,
+        563096,
+        1791,
+        691871,
+        935242,
+        521335,
+        745911,
+        65330,
+        897958,
+        250564,
+        320067,
+        625351,
+        333834,
+        883521,
+        983492,
+        917950,
+        925583,
+        994658,
+        825103,
+        560965,
+        78534,
+        427738,
+        272617,
+        621850,
+        844154,
+        909960,
+        779725,
+        296606,
+        180644,
+        336955,
+        257267,
+        671570,
+        942506,
+        605368,
+        264331,
+        793030,
+        349618,
+        631667,
+        554004,
+        154706,
+        808758,
+        250308,
+        162027,
+        472273,
+        482784,
+        428803,
+        817017,
+        423459,
+        147690,
+        121314,
+        32460,
+        397297,
+        796208,
+        267472,
+        136787,
+        373081,
+        857415,
+        697896,
+        175744,
+        632753,
+        495764,
+        760322,
+        903019,
+        75830,
+        872353,
+        861002,
+        57278,
+        156086,
+        448414,
+        440463,
+        948636,
+        695674,
+        200257,
+        764481,
+        866871,
+        588516,
+        145882,
+        158504,
+        346160,
+        28430,
+        82860,
+        357343,
+        328128,
+        705584,
+        1
+      ]
+    },
+    {
+      "prime": 1000033,
+      "saturation_exponent": 6,
+      "relative_length": 18,
+      "relations": [
+        {
+          "border_monomial": "u3t2",
+          "terms": 19,
+          "denominator_degree": 74
+        },
+        {
+          "border_monomial": "u4t",
+          "terms": 19,
+          "denominator_degree": 74
+        },
+        {
+          "border_monomial": "u5",
+          "terms": 19,
+          "denominator_degree": 88
+        },
+        {
+          "border_monomial": "t6",
+          "terms": 19,
+          "denominator_degree": 94
+        },
+        {
+          "border_monomial": "ut5",
+          "terms": 19,
+          "denominator_degree": 74
+        },
+        {
+          "border_monomial": "u2t4",
+          "terms": 19,
+          "denominator_degree": 74
+        }
+      ],
+      "unique_denominator_degrees": [
+        74,
+        88,
+        94
+      ],
+      "pairwise_denominator_gcd_degrees": [
+        74,
+        74,
+        74
+      ],
+      "common_core_degree": 74,
+      "extra_factor_degrees": [
+        14,
+        20
+      ],
+      "extra_factor_gcd_degree": 0,
+      "exceptional_polynomial_degree": 108,
+      "exceptional_polynomial_squarefree": true,
+      "denominator_factor_degree_multiplicities": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            56,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            10,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            56,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            56,
+            1
+          ]
+        ]
+      ],
+      "exceptional_factor_degree_multiplicities": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          56,
+          1
+        ]
+      ],
+      "distinct_exceptional_roots_in_base_field": 6,
+      "exceptional_polynomial_coefficients_low_to_high": [
+        239961,
+        756699,
+        239359,
+        298217,
+        700607,
+        838839,
+        962990,
+        397608,
+        37786,
+        407427,
+        562870,
+        568467,
+        1000031,
+        835599,
+        256063,
+        670752,
+        761812,
+        552798,
+        489115,
+        39498,
+        193426,
+        618821,
+        144000,
+        587149,
+        231714,
+        821666,
+        109969,
+        877756,
+        911684,
+        304645,
+        970699,
+        117894,
+        839864,
+        144292,
+        549408,
+        436093,
+        502914,
+        94854,
+        970161,
+        306393,
+        913906,
+        876486,
+        815611,
+        892981,
+        650119,
+        91687,
+        752339,
+        596552,
+        406672,
+        922003,
+        521199,
+        75640,
+        70151,
+        952033,
+        472630,
+        85817,
+        232809,
+        971458,
+        436030,
+        333276,
+        585964,
+        657507,
+        61881,
+        699099,
+        119157,
+        229354,
+        789116,
+        712300,
+        613802,
+        46492,
+        720092,
+        699389,
+        427689,
+        200420,
+        408314,
+        622262,
+        167356,
+        225261,
+        562528,
+        659289,
+        322592,
+        662,
+        653133,
+        788871,
+        980969,
+        121170,
+        351203,
+        237771,
+        927306,
+        836397,
+        416711,
+        137296,
+        377724,
+        425896,
+        568417,
+        659787,
+        561636,
+        178347,
+        618285,
+        386184,
+        161227,
+        868482,
+        643935,
+        855118,
+        483954,
+        918611,
+        842141,
+        783930,
+        1
+      ]
+    },
+    {
+      "prime": 1000037,
+      "saturation_exponent": 6,
+      "relative_length": 18,
+      "relations": [
+        {
+          "border_monomial": "u3t2",
+          "terms": 19,
+          "denominator_degree": 74
+        },
+        {
+          "border_monomial": "u4t",
+          "terms": 19,
+          "denominator_degree": 74
+        },
+        {
+          "border_monomial": "u5",
+          "terms": 19,
+          "denominator_degree": 88
+        },
+        {
+          "border_monomial": "t6",
+          "terms": 19,
+          "denominator_degree": 94
+        },
+        {
+          "border_monomial": "ut5",
+          "terms": 19,
+          "denominator_degree": 74
+        },
+        {
+          "border_monomial": "u2t4",
+          "terms": 19,
+          "denominator_degree": 74
+        }
+      ],
+      "unique_denominator_degrees": [
+        74,
+        88,
+        94
+      ],
+      "pairwise_denominator_gcd_degrees": [
+        74,
+        74,
+        74
+      ],
+      "common_core_degree": 74,
+      "extra_factor_degrees": [
+        14,
+        20
+      ],
+      "extra_factor_gcd_degree": 0,
+      "exceptional_polynomial_degree": 108,
+      "exceptional_polynomial_squarefree": true,
+      "denominator_factor_degree_multiplicities": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            64,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            64,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            64,
+            1
+          ]
+        ]
+      ],
+      "exceptional_factor_degree_multiplicities": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          64,
+          1
+        ]
+      ],
+      "distinct_exceptional_roots_in_base_field": 5,
+      "exceptional_polynomial_coefficients_low_to_high": [
+        893082,
+        596255,
+        94558,
+        678967,
+        387519,
+        222189,
+        14480,
+        712335,
+        662459,
+        587107,
+        221341,
+        783016,
+        30652,
+        908845,
+        229047,
+        914975,
+        362629,
+        605964,
+        305326,
+        182562,
+        934178,
+        967594,
+        232907,
+        72066,
+        429955,
+        471469,
+        575912,
+        446016,
+        343636,
+        761030,
+        514013,
+        54743,
+        132071,
+        852809,
+        337748,
+        742051,
+        173851,
+        616829,
+        715188,
+        224535,
+        238956,
+        933244,
+        179562,
+        68648,
+        354573,
+        991975,
+        220783,
+        150734,
+        567895,
+        976588,
+        768757,
+        471361,
+        489903,
+        784971,
+        857896,
+        949876,
+        30293,
+        676997,
+        805458,
+        411213,
+        565561,
+        264639,
+        863553,
+        919563,
+        20053,
+        864542,
+        450204,
+        832964,
+        788057,
+        82124,
+        400546,
+        78488,
+        669398,
+        335052,
+        718418,
+        471047,
+        352546,
+        794015,
+        424982,
+        588650,
+        455676,
+        753080,
+        459160,
+        424335,
+        639073,
+        255086,
+        209371,
+        48441,
+        805891,
+        59868,
+        341620,
+        206482,
+        474672,
+        305004,
+        696778,
+        701075,
+        592542,
+        376532,
+        523942,
+        196111,
+        734191,
+        675329,
+        540191,
+        379502,
+        131235,
+        857663,
+        868143,
+        519901,
+        1
+      ]
+    }
+  ],
+  "interpretation": {
+    "generic_pencil_chart": "the six monic logarithmic-Jacobian border relations are regular away from a degree-108 polynomial",
+    "exceptional_locus": "roots of the chart denominator require separate specialization and may include coordinate-chart artifacts"
+  }
+}

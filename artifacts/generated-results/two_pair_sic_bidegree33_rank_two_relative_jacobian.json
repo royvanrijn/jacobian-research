@@ -1,0 +1,111 @@
+{
+  "format": "two-pair-sic-bidegree33-relative-jacobian-v1",
+  "status": "exact relative-Jacobian calculation plus modular recurrence evidence; not a universal telescoping certificate",
+  "relative_jacobian": {
+    "raw_length": 30,
+    "u_saturation_exponent": 6,
+    "relative_length": 18,
+    "endpoint_t0_length": 2,
+    "endpoint_t1_length": 2,
+    "interior_length": 14,
+    "standard_monomial_basis": [
+      "1",
+      "u",
+      "u2",
+      "u3",
+      "u4",
+      "t",
+      "ut",
+      "u2t",
+      "u3t",
+      "t2",
+      "ut2",
+      "u2t2",
+      "t3",
+      "ut3",
+      "u2t3",
+      "t4",
+      "ut4",
+      "t5"
+    ]
+  },
+  "modular_order_18_probe": {
+    "records": [
+      {
+        "point": 0,
+        "prime": 1000003,
+        "order": 18,
+        "m_degree": 18,
+        "moments_computed": 461,
+        "fit_equations": 360,
+        "unused_verification_equations": 83,
+        "forward_fixed_factor_degree": 8,
+        "forward_parameter_factor_degree": 10
+      },
+      {
+        "point": 0,
+        "prime": 1000033,
+        "order": 18,
+        "m_degree": 18,
+        "moments_computed": 461,
+        "fit_equations": 360,
+        "unused_verification_equations": 83,
+        "forward_fixed_factor_degree": 8,
+        "forward_parameter_factor_degree": 10
+      },
+      {
+        "point": 0,
+        "prime": 1000037,
+        "order": 18,
+        "m_degree": 18,
+        "moments_computed": 461,
+        "fit_equations": 360,
+        "unused_verification_equations": 83,
+        "forward_fixed_factor_degree": 8,
+        "forward_parameter_factor_degree": 10
+      },
+      {
+        "point": 1,
+        "prime": 1000003,
+        "order": 18,
+        "m_degree": 18,
+        "moments_computed": 461,
+        "fit_equations": 360,
+        "unused_verification_equations": 83,
+        "forward_fixed_factor_degree": 8,
+        "forward_parameter_factor_degree": 10
+      },
+      {
+        "point": 1,
+        "prime": 1000033,
+        "order": 18,
+        "m_degree": 18,
+        "moments_computed": 461,
+        "fit_equations": 360,
+        "unused_verification_equations": 83,
+        "forward_fixed_factor_degree": 8,
+        "forward_parameter_factor_degree": 10
+      },
+      {
+        "point": 1,
+        "prime": 1000037,
+        "order": 18,
+        "m_degree": 18,
+        "moments_computed": 461,
+        "fit_equations": 360,
+        "unused_verification_equations": 83,
+        "forward_fixed_factor_degree": 8,
+        "forward_parameter_factor_degree": 10
+      }
+    ],
+    "degree_17_status": "no order-18 degree-17 fit at either point modulo 1000003",
+    "common_forward_factor": "product_(k in {44,46,47,49,50,52,53,55})(3m+k)",
+    "remaining_forward_factor": "a point-dependent monic decic after normalization",
+    "leading_m_coefficient_remainder_support": 18
+  },
+  "interpretation": {
+    "natural_relative_rank": 18,
+    "order_27_role": "higher-order low-m-degree desingularized tradeoff",
+    "certificate_gate": "a degree-17 polynomial certificate is impossible at the sample because its leading coefficient has nonzero image in every relative-Jacobian basis coordinate"
+  }
+}

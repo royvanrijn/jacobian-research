@@ -103,9 +103,13 @@ reduces to six ratios, four killed at moment three and two already
 one-sided.  Hence the first quadratic-leading target has degree at least
 six, and a degree-five counterexample must have \(r=3\) or \(4\).
 For \(r=3\), the first two leading equations leave eight top-form normal
-forms: four triple-root, three double-root, and one squarefree.  This is
-the next finite correction calculation.  The \(r=4\) row has a
-continuous squarefree-quartic cross-ratio and is the less discrete branch.
+forms: four triple-root, three double-root, and one squarefree.  The
+[binary degree-five frontier theorem](BINARY_DEGREE_FIVE_GVC_FRONTIER.md)
+closes all eight correction systems.  It also closes the \(r=4\)
+squarefree-quartic row uniformly in its cross-ratio.  Thus the exact
+remaining degree-five frontier consists of the genuinely nonhomogeneous
+\(r=4\) strata with non-squarefree leading quartic symbol and arbitrary
+higher jets.
 Although a squarefree tangent cone formally factors into smooth branches,
 this does not transport powers: a multiplicative conjugate of a
 derivation is a derivation, so a constant-coefficient umbral conjugate

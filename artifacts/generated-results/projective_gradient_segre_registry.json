@@ -1,0 +1,303 @@
+{
+  "all_dimension_checks": {
+    "dimensions": [
+      1,
+      12
+    ],
+    "integrability_reconstruction": "exact Euler reconstruction",
+    "map_degrees": [
+      1,
+      7
+    ],
+    "transform_pairs_checked": 84
+  },
+  "complete_calibrations": {
+    "triangular_r2": {
+      "actual_affine_compactification": {
+        "ambient_dimension": 4,
+        "map_degree": 2,
+        "projective_degrees": [
+          1,
+          2,
+          2,
+          2,
+          1
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          -6,
+          15
+        ]
+      },
+      "certificate": "scripts/verify_projective_polar_calibrations.m2",
+      "full_polar_comparison": {
+        "ambient_dimension": 4,
+        "map_degree": 2,
+        "projective_degrees": [
+          1,
+          2,
+          4,
+          4,
+          2
+        ],
+        "segre_degrees": [
+          0,
+          0,
+          4,
+          -18
+        ]
+      },
+      "source": "HC4_PROJECTIVE_POLAR_GEOMETRY.md#1-two-projective-maps"
+    },
+    "triangular_r3": {
+      "actual_affine_compactification": {
+        "ambient_dimension": 4,
+        "map_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          3,
+          3,
+          1
+        ],
+        "segre_degrees": [
+          0,
+          6,
+          -30,
+          116
+        ]
+      },
+      "certificate": "scripts/verify_projective_polar_calibrations.m2",
+      "full_polar_comparison": {
+        "ambient_dimension": 4,
+        "map_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          6,
+          6,
+          3
+        ],
+        "segre_degrees": [
+          0,
+          3,
+          -6,
+          -12
+        ]
+      },
+      "source": "HC4_PROJECTIVE_POLAR_GEOMETRY.md#1-two-projective-maps"
+    }
+  },
+  "conventions": {
+    "actual_affine_compactification": "[X0^m:F1^h:...:Fn^h]",
+    "formula": "g_i=m^i-sum_{k=1}^i binom(i,k)m^(i-k)sigma_k",
+    "full_polar_map_is_separate": true,
+    "top_degree": "g_n equals the affine generic degree when the affine map is dominant"
+  },
+  "cotangent_calibrations": {
+    "plane_triangular_r2": {
+      "certificate": "scripts/verify_projective_gradient_segre_families.m2",
+      "cotangent_gradient_lift": {
+        "ambient_dimension": 4,
+        "map_degree": 2,
+        "projective_degrees": [
+          1,
+          2,
+          3,
+          2,
+          1
+        ],
+        "segre_degrees": [
+          0,
+          1,
+          0,
+          -9
+        ]
+      },
+      "plane_map": {
+        "ambient_dimension": 2,
+        "map_degree": 2,
+        "projective_degrees": [
+          1,
+          2,
+          1
+        ],
+        "segre_degrees": [
+          0,
+          3
+        ]
+      },
+      "potential": "t*(x+y^2)+u*y"
+    },
+    "plane_triangular_r3": {
+      "certificate": "scripts/verify_projective_gradient_segre_families.m2",
+      "cotangent_gradient_lift": {
+        "ambient_dimension": 4,
+        "map_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          5,
+          3,
+          1
+        ],
+        "segre_degrees": [
+          0,
+          4,
+          -12,
+          8
+        ]
+      },
+      "plane_map": {
+        "ambient_dimension": 2,
+        "map_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          1
+        ],
+        "segre_degrees": [
+          0,
+          8
+        ]
+      },
+      "potential": "t*(x+y^3)+u*y"
+    }
+  },
+  "format": "projective-gradient-segre-registry-v1",
+  "quadratic_stabilization_calibrations": {
+    "triangular_r2": {
+      "after_one_quadratic_variable": {
+        "ambient_dimension": 5,
+        "map_degree": 2,
+        "projective_degrees": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          -6,
+          14,
+          -29
+        ]
+      },
+      "certificate": "scripts/verify_projective_gradient_segre_families.m2",
+      "original": {
+        "ambient_dimension": 4,
+        "map_degree": 2,
+        "projective_degrees": [
+          1,
+          2,
+          2,
+          2,
+          1
+        ],
+        "segre_degrees": [
+          0,
+          2,
+          -6,
+          15
+        ]
+      }
+    },
+    "triangular_r3": {
+      "after_one_quadratic_variable": {
+        "ambient_dimension": 5,
+        "map_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          3,
+          3,
+          3,
+          1
+        ],
+        "segre_degrees": [
+          0,
+          6,
+          -30,
+          114,
+          -388
+        ]
+      },
+      "certificate": "scripts/verify_projective_gradient_segre_families.m2",
+      "original": {
+        "ambient_dimension": 4,
+        "map_degree": 3,
+        "projective_degrees": [
+          1,
+          3,
+          3,
+          3,
+          1
+        ],
+        "segre_degrees": [
+          0,
+          6,
+          -30,
+          116
+        ]
+      }
+    }
+  },
+  "scope": "The transform and compactification constructors are exact in all dimensions. Complete projective/Segre lists are recorded only where independently computed. A top generic degree determines only the weighted aggregate correction, not the individual Segre degrees. Boundary normalization data and Hessian rank data are therefore not silently promoted to Segre classes.",
+  "top_degree_controls_and_open_records": {
+    "homogeneous_cotangent_hn_38": {
+      "affine_degree": null,
+      "ambient_dimension": 38,
+      "map_degree": 3,
+      "source": "verified/TWELVE_VARIABLE_DEGREE_THREE_KELLER_COUNTEREXAMPLE.md",
+      "status": "explicit gradient Keller collision; top generic degree and individual projective degrees not yet computed"
+    },
+    "meng_yang_doubled_hc6": {
+      "affine_degree": 3,
+      "ambient_dimension": 6,
+      "map_degree": 7,
+      "source": "HC4_PROJECTIVE_POLAR_GEOMETRY.md#7-meng--yang-control-before-and-after-schur-descent",
+      "status": "proved top degree; individual Segre degrees uncomputed",
+      "weighted_correction": 117646
+    },
+    "meng_yang_schur_hc5": {
+      "affine_degree": 3,
+      "ambient_dimension": 5,
+      "map_degree": 13,
+      "source": "HC4_PROJECTIVE_POLAR_GEOMETRY.md#7-meng--yang-control-before-and-after-schur-descent",
+      "status": "proved top degree; individual Segre degrees uncomputed",
+      "weighted_correction": 371290
+    },
+    "nonhomogeneous_cotangent_hn_40": {
+      "affine_degree": null,
+      "ambient_dimension": 40,
+      "map_degree": 3,
+      "source": "extended-geometry/RESTRICTED_MINIMA_FRONTIER.md#4-quartic-hn-consequences",
+      "status": "explicit gradient Keller collision; top generic degree and individual projective degrees not yet computed"
+    },
+    "plane_quartic_packet_cotangent_target": {
+      "affine_degree": 4,
+      "ambient_dimension": 4,
+      "map_degree_options": [
+        2,
+        3
+      ],
+      "source": "HC4_PROJECTIVE_POLAR_GEOMETRY.md#5-cotangent-lifts-of-quartic-plane-packets",
+      "status": "conditional top-degree target; no explicit packet",
+      "weighted_corrections": {
+        "2": 12,
+        "3": 77
+      }
+    },
+    "rank_reduced_cotangent_hn_44": {
+      "affine_degree": null,
+      "ambient_dimension": 44,
+      "map_degree": 3,
+      "source": "extended-geometry/RESTRICTED_MINIMA_FRONTIER.md#4-quartic-hn-consequences",
+      "status": "explicit gradient Keller collision; top generic degree and individual projective degrees not yet computed"
+    }
+  }
+}

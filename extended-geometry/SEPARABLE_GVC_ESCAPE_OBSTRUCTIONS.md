@@ -1343,8 +1343,10 @@ face therefore gives the eventual mixed cutoff and proves the theorem.
 Together with Proposition 3.13 and Theorems 3.14--3.15, this closes every
 \(r=2,\deg P=5\) pair and proves Corollary 1.5.
 
-The cubic-leading degree-five row is still open, but its top forms are
-finite.
+The following proposition gives the finite leading classification for the
+cubic-leading degree-five row.  Its eight nonhomogeneous correction systems
+were subsequently closed by the
+[binary degree-five frontier theorem](BINARY_DEGREE_FIVE_GVC_FRONTIER.md).
 
 > **Proposition 3.17 — cubic-leading quintic top forms.**  Suppose
 > \(r=3\), \(\deg P=5\), and the first two pure equations hold.  After
@@ -1399,9 +1401,10 @@ The coefficients of the second leading moment have Gröbner basis
 \tag{3.97}
 \]
 Its projective zero set is \(x^5,y^5,(x-y)^5\).  Root permutation makes
-these one orbit, giving the last row of (3.93).  Proposition 3.17 is only
-a top-form reduction; the eight nonhomogeneous correction systems remain
-open.
+these one orbit, giving the last row of (3.93).  Proposition 3.17 itself
+is only a top-form reduction; the later
+[degree-five frontier theorem](BINARY_DEGREE_FIVE_GVC_FRONTIER.md) closes
+all eight nonhomogeneous correction systems.
 
 ## 4. The rank obstruction for natural conversions
 
@@ -1607,9 +1610,13 @@ The results leave four sharply separated directions.
    Theorems 3.14--3.16 close all three forms.  Thus the first
    quadratic-leading target has degree at least six, while a degree-five
    counterexample must have \(r=3\) or \(4\).  Proposition 3.17 reduces
-   the \(r=3\) row to eight top forms.  This is the next finite
-   correction problem; the \(r=4\) row already contains the continuous
-   squarefree-quartic cross-ratio.
+   the \(r=3\) row to eight top forms, and the
+   [degree-five frontier theorem](BINARY_DEGREE_FIVE_GVC_FRONTIER.md)
+   closes all eight correction systems.  It also closes the \(r=4\)
+   squarefree-quartic row uniformly in its cross-ratio.  The exact
+   remaining degree-five frontier is therefore the genuinely
+   nonhomogeneous \(r=4\) strata with non-squarefree leading quartic
+   symbol; their arbitrary higher jets have not been eliminated.
    Theorem 3.1 has already removed every fixed leading face.
 3. **Coupled coefficient polarization.**  A one-coefficient translation
    is exactly the split-symbol class, while coefficient extraction of the

@@ -515,9 +515,10 @@ transport, not as an optimization queue.
    three-real-variable witness remains dimensionally smaller; the family and
    its finite fingerprints, not witness discovery or dimension minimization,
    are the point here.
-3. **Sole active Gaussian frontier.**  Work on
-   [GMC(2)](GMC2_RESEARCH_PROGRAM.md) in degree at least four, without treating
-   it as equivalent to JC(2).  No new broad `n>=3` Gaussian search is in scope.
+3. **Resolved two-real Gaussian frontier.**  `G2T` proves
+   [GMC(2)](GMC2_RESEARCH_PROGRAM.md) in every degree and for arbitrary
+   support.  Earlier finite-degree and support-graph attacks are retained as
+   regressions or reusable techniques; no Gaussian-dimension search is active.
 4. **Symplectic dimension descent and families.**  The foundational map now
    has an intrinsic four-dimensional rank-two completion.  Determine which
    weighted seeds admit analogous pole-free flux corrections, whether their

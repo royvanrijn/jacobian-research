@@ -1,8 +1,9 @@
 # The finite LR Rees/SAGBI module computation
 
-This note implements the finite module problem in `OP-LR-REES` and
-`OP-LR-II` for the degree-five base map \(F_2\).  It does not extend the
-arbitrary jet expansion.  The calculation is exact over \(\mathbf Q\), uses
+This note implements the legacy `OP-LR-REES` and `OP-LR-II` calibration
+faces, now part of `OP-CCDM`, for the degree-five base map \(F_2\).  It does
+not extend the arbitrary jet expansion.  The calculation is exact over
+\(\mathbf Q\), uses
 the ordinary-source-degree face compatible with
 
 \[

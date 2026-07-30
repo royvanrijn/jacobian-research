@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "support-saturation-input.v1",
+  "title": "Support-saturation compiler input",
+  "type": "object",
+  "required": [
+    "schema",
+    "ring",
+    "module_presentation",
+    "support_ideal",
+    "completion_ideal",
+    "parameter_base_variables",
+    "normal_variables"
+  ],
+  "properties": {
+    "schema": {
+      "const": "support-saturation-input.v1"
+    },
+    "ring": {
+      "type": "object",
+      "required": ["variables"],
+      "properties": {
+        "variables": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+          }
+        },
+        "characteristic": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 0
+        },
+        "ordering": {
+          "type": "string",
+          "default": "dp"
+        }
+      },
+      "additionalProperties": false
+    },
+    "module_presentation": {
+      "type": "object",
+      "required": ["rank", "generators"],
+      "properties": {
+        "rank": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "generators": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "label": {
+          "type": "string",
+          "default": "module"
+        },
+        "singular_setup": {
+          "type": ["string", "null"],
+          "default": null
+        }
+      },
+      "additionalProperties": false
+    },
+    "support_ideal": {
+      "$ref": "#/$defs/nonemptyPolynomialList"
+    },
+    "completion_ideal": {
+      "$ref": "#/$defs/polynomialList"
+    },
+    "parameter_base_variables": {
+      "$ref": "#/$defs/variableList"
+    },
+    "normal_variables": {
+      "$ref": "#/$defs/variableList"
+    },
+    "jet_orders": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "default": []
+    },
+    "distinguished_class": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "string"
+      },
+      "default": null
+    },
+    "jet_strategy": {
+      "enum": [
+        "full_saturation",
+        "distinguished_class_restriction",
+        "distinguished_class_colon"
+      ],
+      "default": "full_saturation"
+    },
+    "transition_annihilator": {
+      "type": ["string", "null"],
+      "default": null
+    },
+    "assurance": {
+      "type": "object",
+      "properties": {
+        "claim": {
+          "enum": ["auto", "exact", "modular"],
+          "default": "auto"
+        },
+        "target_characteristic": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "default": null
+        },
+        "note": {
+          "type": ["string", "null"],
+          "default": null
+        }
+      },
+      "additionalProperties": false
+    },
+    "compiler_options": {
+      "type": "object",
+      "description": "Keyword arguments accepted by CompilerOptions."
+    }
+  },
+  "$defs": {
+    "polynomialList": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "nonemptyPolynomialList": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "variableList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+      }
+    }
+  },
+  "additionalProperties": false
+}

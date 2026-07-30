@@ -1,0 +1,97 @@
+{
+  "case": "cubic-formal-gauge-annihilator-frontier",
+  "mathematical_scope": "Workflow compiled from the proved formal-gauge cokernel atlas. It closes further quartic saturation searches for the smooth symbol, queues the six singular squarefree cases by exact annihilator type on their finite-dimensional quartic nongauge quotients, and places the generically-etale/Keller gate before saturation for double-line, triple-line, and zero symbols. This artifact does not prove singular-symbol saturation or Keller compatibility.",
+  "schema": "support-saturation-search-frontier.v1",
+  "source_artifact": "artifacts/generated-results/cubic_formal_gauge_cokernel_atlas.json",
+  "source_exact_matrix_sha256": "8c74782d4d25273f79fa941d57e808c855f7256ada8d1dbf0680ef9eb1af4152",
+  "stratification": {
+    "double_triple_line_and_zero": {
+      "queue": [
+        {
+          "annihilator_type": "(0)",
+          "gate_before_saturation": "generically etale and Keller compatibility",
+          "generic_rank_over_Q[x,y,z]": 1,
+          "quartic_nongauge_dimension": 11,
+          "symbol": "double-line"
+        },
+        {
+          "annihilator_type": "(0)",
+          "gate_before_saturation": "generically etale and Keller compatibility",
+          "generic_rank_over_Q[x,y,z]": 2,
+          "quartic_nongauge_dimension": 16,
+          "symbol": "triple-line"
+        },
+        {
+          "annihilator_type": "(0)",
+          "gate_before_saturation": "generically etale and Keller compatibility",
+          "generic_rank_over_Q[x,y,z]": 4,
+          "quartic_nongauge_dimension": 24,
+          "symbol": "zero"
+        }
+      ],
+      "search_key": "compatibility_before_saturation"
+    },
+    "singular_squarefree": {
+      "queue": [
+        {
+          "annihilator_type": "(x)",
+          "next_adapter_input": "deformation-dependent cotangent presentation restricted to a representative of this nongauge quotient",
+          "quartic_nongauge_dimension": 2,
+          "support_dimension": 2,
+          "support_multiplicity": 1,
+          "symbol": "nodal"
+        },
+        {
+          "annihilator_type": "(x^2)",
+          "next_adapter_input": "deformation-dependent cotangent presentation restricted to a representative of this nongauge quotient",
+          "quartic_nongauge_dimension": 4,
+          "support_dimension": 2,
+          "support_multiplicity": 2,
+          "symbol": "cuspidal"
+        },
+        {
+          "annihilator_type": "(yz)",
+          "next_adapter_input": "deformation-dependent cotangent presentation restricted to a representative of this nongauge quotient",
+          "quartic_nongauge_dimension": 4,
+          "support_dimension": 2,
+          "support_multiplicity": 2,
+          "symbol": "line-transverse-conic"
+        },
+        {
+          "annihilator_type": "(y^3)",
+          "next_adapter_input": "deformation-dependent cotangent presentation restricted to a representative of this nongauge quotient",
+          "quartic_nongauge_dimension": 6,
+          "support_dimension": 2,
+          "support_multiplicity": 3,
+          "symbol": "line-tangent-conic"
+        },
+        {
+          "annihilator_type": "(xyz)",
+          "next_adapter_input": "deformation-dependent cotangent presentation restricted to a representative of this nongauge quotient",
+          "quartic_nongauge_dimension": 6,
+          "support_dimension": 2,
+          "support_multiplicity": 3,
+          "symbol": "triangle"
+        },
+        {
+          "annihilator_type": "(x^3)",
+          "next_adapter_input": "deformation-dependent cotangent presentation restricted to a representative of this nongauge quotient",
+          "quartic_nongauge_dimension": 8,
+          "support_dimension": 2,
+          "support_multiplicity": 4,
+          "symbol": "concurrent-lines"
+        }
+      ],
+      "search_key": "annihilator_type"
+    },
+    "smooth": {
+      "next_tasks": [
+        "global algebraization of the formal gauge",
+        "boundary and Keller-open compatibility"
+      ],
+      "quartic_nongauge_dimension": 0,
+      "symbol": "smooth",
+      "universal_24_parameter_cotangent_saturation": "proved"
+    }
+  }
+}

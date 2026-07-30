@@ -294,6 +294,17 @@ calculation.
 
 ## 5. Import rule and limits
 
+The projective invariant transported by this bridge is presently the top
+degree of the actual affine-gradient compactification, not the full
+multidegree list and not the polar degree of the homogenized potential.
+The doubled and descended potentials have the same generic degree three,
+but their ambient dimensions and gradient degrees are respectively
+\((6,7)\) and \((5,13)\).  Their aggregate Segre corrections are therefore
+\(7^6-3\) and \(13^5-3\); no componentwise Segre transform under Schur
+descent is claimed.  See
+[`PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`](PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md)
+for the canonical all-dimensional convention and registry.
+
 When a proposed one-variable descent has the form \(\Phi=tA+B\), the first
 test should be the two structural hypotheses
 

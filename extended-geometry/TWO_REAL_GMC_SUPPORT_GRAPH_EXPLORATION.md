@@ -1,5 +1,10 @@
 # Support graphs for the two-real Gaussian moment problem
 
+> **Superseded proof route / retained technique.**  The lower-face theorem
+> `G2T` handles arbitrary support and resolves GMC(2).  The graph, toric-cycle,
+> and valuation calculations below are retained for reuse and regression, not
+> as a programme to close further GMC(2) charts.
+
 ## 1. Updated starting point
 
 For

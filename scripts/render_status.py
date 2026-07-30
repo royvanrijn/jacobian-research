@@ -17,9 +17,14 @@ REQUIRED_FIELDS = {
     "id", "kind", "state", "title", "scope", "canonical_source",
     "dependencies", "checker", "proof_type", "independent_replay",
     "formal_verification", "external_review", "artifact_hash",
-    "software_lock", "supersedes", "replaced_by", "priority",
+    "software_lock", "supersedes", "closes_problems", "narrows_problems",
+    "consumers", "invalidates_assumptions", "replaced_by", "priority",
 }
-OPTIONAL_FIELDS = {"external_formal_certificates"}
+OPTIONAL_FIELDS = {
+    "external_formal_certificates",
+    "forbidden_attack_classes",
+    "supersedes_notes",
+}
 KINDS = {"theorem", "corollary", "example", "reproduction", "open_problem"}
 STATES = {"proved", "partial", "open", "parked", "archived", "falsified"}
 PROOF_TYPES = {
@@ -40,13 +45,23 @@ CORE_ORDER = [
 ]
 ACTIVE_OPEN = {
     "OP-CR",
+    "OP-CCDM",
     "OP-GVC2-RP",
-    "OP-LR-REES",
-    "OP-LR-II",
+    "OP-HC4-D5",
     "OP-LR-NE",
     "OP-RITT",
     "OP-SIC2-B33",
     "OP-SUSP",
+}
+GMC2_RETAINED_IDS = {
+    "G2F",
+    "G2C",
+    "G2D",
+    "G2E",
+    "G2N",
+    "G2Q",
+    "G2S",
+    "G2R",
 }
 
 
@@ -54,8 +69,32 @@ def load_index() -> dict:
     return json.loads(INDEX_PATH.read_text())
 
 
+def consumer_marker(item: dict) -> str:
+    payload = "\0".join((item["state"], item["title"], item["scope"]))
+    digest = hashlib.sha256(payload.encode()).hexdigest()[:16]
+    return f"<!-- status-consumer: {item['id']} {digest} -->"
+
+
+def _assert_acyclic(edges: dict[str, list[str]], label: str) -> None:
+    visiting: set[str] = set()
+    visited: set[str] = set()
+
+    def visit(node: str) -> None:
+        assert node not in visiting, f"{label} contains a cycle through {node}"
+        if node in visited:
+            return
+        visiting.add(node)
+        for target in edges[node]:
+            visit(target)
+        visiting.remove(node)
+        visited.add(node)
+
+    for node in edges:
+        visit(node)
+
+
 def validate_index(index: dict) -> None:
-    assert index.get("schema_version") == 5, "unsupported status schema"
+    assert index.get("schema_version") == 6, "unsupported status schema"
     assert index.get("authority") == "MATH_STATUS.json"
     entries = index.get("entries")
     assert isinstance(entries, list) and entries, "the status registry is empty"
@@ -63,6 +102,14 @@ def validate_index(index: dict) -> None:
     ids = [item.get("id") for item in entries]
     assert len(ids) == len(set(ids)), "status IDs must be unique"
     known = set(ids)
+    by_id = {item["id"]: item for item in entries}
+    update_fields = (
+        "supersedes",
+        "closes_problems",
+        "narrows_problems",
+        "consumers",
+        "invalidates_assumptions",
+    )
     for item in entries:
         item_id = item.get("id", "?")
         assert REQUIRED_FIELDS <= set(item) <= REQUIRED_FIELDS | OPTIONAL_FIELDS, (
@@ -103,8 +150,42 @@ def validate_index(index: dict) -> None:
         assert item["priority"] in PRIORITIES, f"{item_id}: invalid priority"
         assert isinstance(item["dependencies"], list)
         assert isinstance(item["software_lock"], list)
-        assert isinstance(item["supersedes"], list)
         assert isinstance(item["replaced_by"], list)
+        for field in update_fields:
+            assert isinstance(item[field], list), f"{item_id}: {field} must be a list"
+            assert len(item[field]) == len(set(item[field])), (
+                f"{item_id}: duplicate {field} edge"
+            )
+            assert all(
+                isinstance(target, str) and target for target in item[field]
+            ), f"{item_id}: invalid {field} edge"
+        supersedes_notes = item.get("supersedes_notes", [])
+        assert isinstance(supersedes_notes, list)
+        assert all(
+            isinstance(note, str) and note for note in supersedes_notes
+        ), f"{item_id}: invalid supersedes note"
+        forbidden_attacks = item.get("forbidden_attack_classes", [])
+        assert isinstance(forbidden_attacks, list)
+        if forbidden_attacks:
+            assert item["kind"] == "open_problem", (
+                f"{item_id}: forbidden attack classes belong only to open problems"
+            )
+        for attack in forbidden_attacks:
+            assert set(attack) == {"attack", "reason", "witnesses"}, (
+                f"{item_id}: invalid forbidden attack class"
+            )
+            assert isinstance(attack["attack"], str) and attack["attack"]
+            assert isinstance(attack["reason"], str) and attack["reason"]
+            assert isinstance(attack["witnesses"], list) and attack["witnesses"]
+            assert len(attack["witnesses"]) == len(set(attack["witnesses"]))
+            for witness in attack["witnesses"]:
+                assert witness in known, (
+                    f"{item_id}: unresolved forbidden-attack witness {witness}"
+                )
+                assert witness in item["dependencies"], (
+                    f"{item_id}: forbidden-attack witness {witness} "
+                    "must also be a dependency"
+                )
         if item["kind"] == "open_problem":
             assert item["state"] in {"open", "parked"}
             assert item["proof_type"] == "not-applicable"
@@ -122,6 +203,15 @@ def validate_index(index: dict) -> None:
             )
         for replacement in item["replaced_by"]:
             assert replacement in known, f"{item_id}: unresolved replacement {replacement}"
+        for field in (
+            "supersedes",
+            "closes_problems",
+            "narrows_problems",
+            "invalidates_assumptions",
+        ):
+            for target in item[field]:
+                assert target in known, f"{item_id}: unresolved {field} target {target}"
+                assert target != item_id, f"{item_id}: self-referential {field} edge"
         assert (ROOT / item["canonical_source"]).is_file(), (
             f"{item_id}: missing canonical source {item['canonical_source']}"
         )
@@ -154,6 +244,100 @@ def validate_index(index: dict) -> None:
             assert isinstance(lock, str) and (ROOT / lock).is_file(), (
                 f"{item_id}: missing software lock {lock}"
             )
+
+    for item in entries:
+        item_id = item["id"]
+        for target_id in item["supersedes"]:
+            target = by_id[target_id]
+            assert item_id in target["replaced_by"], (
+                f"{item_id}: supersedes {target_id}, but the target does not name it "
+                "in replaced_by"
+            )
+        for target_id in item["closes_problems"]:
+            assert item["state"] == "proved", (
+                f"{item_id}: only a proved entry may close a problem"
+            )
+            target = by_id[target_id]
+            assert target["kind"] == "open_problem", (
+                f"{item_id}: closes non-problem {target_id}"
+            )
+            assert target["state"] != "open", (
+                f"{item_id}: closed problem {target_id} remains active"
+            )
+            assert item_id in target["dependencies"], (
+                f"{item_id}: closed problem {target_id} does not consume the result"
+            )
+            assert item_id in target["replaced_by"], (
+                f"{item_id}: closed problem {target_id} does not name its replacement"
+            )
+        for target_id in item["narrows_problems"]:
+            assert item["state"] == "proved", (
+                f"{item_id}: only a proved entry may narrow a problem"
+            )
+            target = by_id[target_id]
+            assert target["kind"] == "open_problem" and target["state"] == "open", (
+                f"{item_id}: narrowed target {target_id} is not an active problem"
+            )
+            assert item_id in target["dependencies"], (
+                f"{item_id}: narrowed problem {target_id} does not consume the result"
+            )
+            assert item_id in target["scope"], (
+                f"{item_id}: narrowed problem {target_id} does not mention the result "
+                "in its scope"
+            )
+        for target_id in item["invalidates_assumptions"]:
+            assert item["state"] == "proved", (
+                f"{item_id}: only a proved entry may invalidate an assumption"
+            )
+            target = by_id[target_id]
+            assert target["state"] == "falsified", (
+                f"{item_id}: invalidated assumption {target_id} is not falsified"
+            )
+            assert item_id in target["replaced_by"], (
+                f"{item_id}: invalidated assumption {target_id} does not name its "
+                "replacement"
+            )
+        for consumer in item["consumers"]:
+            if consumer in known:
+                target = by_id[consumer]
+                assert item_id in target["dependencies"], (
+                    f"{item_id}: declared consumer {consumer} does not depend on it"
+                )
+                assert item_id in target["scope"], (
+                    f"{item_id}: declared consumer {consumer} does not acknowledge it "
+                    "in its scope"
+                )
+                continue
+            consumer_path = (ROOT / consumer).resolve()
+            assert ROOT.resolve() in consumer_path.parents, (
+                f"{item_id}: consumer escapes the repository: {consumer}"
+            )
+            assert consumer_path.is_file(), (
+                f"{item_id}: missing document consumer {consumer}"
+            )
+            marker = consumer_marker(item)
+            assert marker in consumer_path.read_text(), (
+                f"{item_id}: stale document consumer {consumer}; review it and update "
+                f"the marker to {marker}"
+            )
+
+    for item in entries:
+        for replacement_id in item["replaced_by"]:
+            replacement = by_id[replacement_id]
+            reciprocal = (
+                item["id"] in replacement["supersedes"]
+                or item["id"] in replacement["closes_problems"]
+                or item["id"] in replacement["invalidates_assumptions"]
+            )
+            assert reciprocal, (
+                f"{item['id']}: replaced_by {replacement_id} lacks a reciprocal "
+                "machine-readable update edge"
+            )
+
+    _assert_acyclic(
+        {item["id"]: item["supersedes"] for item in entries},
+        "supersedes graph",
+    )
 
     core = {x["id"] for x in entries if x["priority"] == "core"}
     assert core == set(CORE_ORDER), "the canonical theorem backbone changed"
@@ -190,6 +374,18 @@ def _evidence(item: dict) -> str:
         parts.append(f"`{item['artifact_hash'][:19]}…`")
     if item["software_lock"]:
         parts.append("locks: " + ", ".join(f"`{x}`" for x in item["software_lock"]))
+    updates = []
+    for field in (
+        "supersedes",
+        "closes_problems",
+        "narrows_problems",
+        "consumers",
+        "invalidates_assumptions",
+    ):
+        if item[field]:
+            updates.append(f"{field.replace('_', ' ')} {_items(item[field])}")
+    if updates:
+        parts.append("updates: " + "; ".join(updates))
     return "; ".join(parts)
 
 
@@ -210,9 +406,31 @@ def _table(lines: list[str], entries: list[dict], *, replacements: bool = False)
     lines.append("")
 
 
+def _forbidden_attack_sections(lines: list[str], entries: list[dict]) -> None:
+    for item in entries:
+        attacks = item.get("forbidden_attack_classes", [])
+        if not attacks:
+            continue
+        lines.extend([
+            f"### {item['id']}: Forbidden attack classes",
+            "",
+            "The following routes are obsolete for this programme. The cited results "
+            "either remove the proposed defect or provide explicit countermodels:",
+            "",
+        ])
+        for attack in attacks:
+            witnesses = _items(attack["witnesses"])
+            lines.append(
+                f"- **{attack['attack']}.** {attack['reason']} "
+                f"Witnesses: {witnesses}."
+            )
+        lines.append("")
+
+
 def render(index: dict) -> str:
     by_id = {x["id"]: x for x in index["entries"]}
     entries = index["entries"]
+    gmc2_retained = [x for x in entries if x["id"] in GMC2_RETAINED_IDS]
     lines = [
         "# Mathematical status",
         "",
@@ -234,7 +452,8 @@ def render(index: dict) -> str:
         ("Falsified claims", [x for x in entries if x["state"] == "falsified"], True),
         ("Audited high-risk claims", [x for x in entries if x["kind"] == "theorem" and x["state"] == "partial" and x["priority"] == "reference"], False),
         ("Completed reference theorems", [x for x in entries if x["kind"] == "theorem" and x["state"] == "proved" and x["priority"] == "reference"], False),
-        ("Derived corollaries", [x for x in entries if x["kind"] == "corollary" and x["state"] in {"proved", "partial"}], False),
+        ("Superseded proof route / retained refinements", gmc2_retained, False),
+        ("Derived corollaries", [x for x in entries if x["kind"] == "corollary" and x["state"] in {"proved", "partial"} and x["id"] not in GMC2_RETAINED_IDS], False),
         ("Examples and regressions", [x for x in entries if x["kind"] == "example" and x["state"] in {"proved", "partial"}], True),
         ("External reproductions", [x for x in entries if x["kind"] == "reproduction" and x["state"] in {"proved", "partial"}], False),
         ("Active open problems", [x for x in entries if x["kind"] == "open_problem" and x["state"] == "open"], False),
@@ -243,14 +462,27 @@ def render(index: dict) -> str:
     for heading, members, replacements in sections:
         lines.extend([f"## {heading}", ""])
         _table(lines, members, replacements=replacements)
+        _forbidden_attack_sections(lines, members)
     return "\n".join(lines)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true", help="fail if STATUS.md is stale")
+    parser.add_argument(
+        "--consumer-marker",
+        metavar="ID",
+        help="print the current document-consumer marker for one status entry",
+    )
     args = parser.parse_args()
     index = load_index()
+    if args.consumer_marker:
+        by_id = {item["id"]: item for item in index["entries"]}
+        assert args.consumer_marker in by_id, (
+            f"unknown status entry {args.consumer_marker}"
+        )
+        print(consumer_marker(by_id[args.consumer_marker]))
+        return
     validate_index(index)
     rendered = render(index)
     if args.check:

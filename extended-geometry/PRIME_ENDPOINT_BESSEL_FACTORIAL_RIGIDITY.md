@@ -1,5 +1,10 @@
 # Prime-endpoint rigidity for the Bessel--factorial transform
 
+> **Retained reusable technique.**  The lower-face theorem `G2T` supersedes
+> this three-level family as a route to resolving GMC(2).  The prime-endpoint
+> argument and its finite-degree cutoffs remain useful independently; no
+> unfinished chart here is an active GMC(2) problem.
+
 ## 1. Statement
 
 Let \(R\) be a characteristic-zero domain and define the factorial

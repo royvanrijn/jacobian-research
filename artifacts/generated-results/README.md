@@ -763,6 +763,13 @@ path below are treated as reference artifacts.
   saturations, associated primes, and regular boundary elements for all ten
   homogeneous ternary-cubic symbol strata.  It does not claim arbitrary
   nonhomogeneous universal cotangent saturation.
+- `support_saturation_cubic_annihilator_frontier.json` imports the proved
+  formal-gauge cokernel atlas into the support-saturation workflow.  It
+  closes the smooth-symbol quartic saturation search, queues the six
+  singular squarefree quotients by annihilator type
+  `(x),(x^2),(yz),(y^3),(xyz),(x^3)`, and records the
+  generically-étale/Keller gate for double-line, triple-line, and zero
+  symbols.  It is a routing certificate, not a new saturation theorem.
 - `support_saturation_degree42_ritt_fiber_mod32003.json` records an exact
   characteristic-zero nonzero support class on the full reduced degree-42
   core at `(e1,e2,t)=(1,2,3)`, together with the full order-six and
@@ -791,21 +798,68 @@ path below are treated as reference artifacts.
   `scripts/verify_support_saturation_compiler.py`; the degree-42 Macaulay
   artifact has the separate generator and independent checker named above.
 - `hc4_projective_polar_atlas.json` records all positive, degree-bounded,
-  log-concave projective-degree lists for degree-two and degree-three maps
-  `P4 --> P4` with top degree two or three, together with the corresponding
-  Segre-degree signatures.  It also records the zero-dimensional lengths,
-  smooth-lci-curve numerical filter, graph/full-polar calibrations,
-  aggregate cotangent and Meng--Yang controls, and the exact consequence
-  of Wang's theorem excluding all sixteen quadratic-gradient
-  affine-degree-two/three rows.  It also records the consequence of
-  `HC4CQ1` and Ax--Grothendieck excluding all 139 cubic-gradient rows and
-  forcing potential degree at least five for an HC4 counterexample.  The
+  log-concave projective-degree lists for degree-two through degree-four
+  maps `P4 --> P4` with top degree two or three, together with the
+  corresponding Segre-degree signatures.  It also records the
+  zero-dimensional lengths, smooth-lci-curve numerical filter,
+  graph/full-polar calibrations, aggregate cotangent and Meng--Yang
+  controls, and the exact consequences of Wang's theorem and `HC4CQ1`.
+  For the 626 quartic-gradient rows it records the leading-quintic Hessian
+  rank coverage matrix: rank zero and the aligned rank-three branch are
+  closed, while ranks one and two require kernel synchronization and the
+  nonaligned rank-three branch is an explicit ternary quintic--cubic Schur
+  divisibility problem.  The degree-nine-versus-degree-eight adjugate
+  argument closes that branch whenever the ternary-quintic Hessian
+  determinant is squarefree; an exact squarefree witness proves this is
+  the generic case.  Only its nonsquarefree discriminant locus remains.
+  No individual quartic-gradient signature is excluded by that matrix
+  because projective degrees do not currently determine the Hessian-rank
+  branch.  Of the codimension-three rows, 18 for each affine degree pass
+  the additional smooth-integral-curve genus and Castelnuovo test.  The
   rows are a numerical pre-Keller atlas, not existence results or a
-  classification by Hilbert polynomial.  Regenerate it with
+  classification by Hilbert polynomial.
+  Regenerate it with
   `.venv/bin/python scripts/verify_hc4_projective_polar_atlas.py`; run the
   independent calibration with
   `M2 --script scripts/verify_projective_polar_calibrations.m2`.  The
   canonical source is `HC4_PROJECTIVE_POLAR_GEOMETRY.md`.
+- `projective_gradient_segre_registry.json` records the dimension-free
+  projective-degree/Segre transform convention and attaches it to the
+  repository's explicit triangular, cotangent, stabilization, Meng--Yang,
+  Schur-descended, and restricted-minima HN families.  Full vectors,
+  top-degree-only controls, and open computations are separate fields.
+  Regenerate it with
+  `.venv/bin/python scripts/verify_projective_gradient_segre_machinery.py`
+  and independently certify the cotangent and stabilization multidegrees
+  with
+  `M2 --script scripts/verify_projective_gradient_segre_families.m2`.
+  The canonical source is `PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`.
+- `quartic_coefficient_kuranishi_mod32003.json` records the modular
+  36-variable affine-normal quadratic slice and coordinate-axis jet screen at
+  the integer-root quartic map.  The adjacent `.sing` and `.m2` files are
+  reproducible primary-decomposition inputs, not completed decomposition
+  certificates.  Generate them with
+  `scripts/research_quartic_coefficient_kuranishi.py`; certify the full
+  characteristic-zero quadratic rank independently with
+  `scripts/verify_quartic_full_box_kuranishi.py`.
+- `quartic_generic_component_mod32003.json` records the 22-variable normal
+  quadratic slice at a rational generic point of the explicit
+  27-dimensional quartic reduced family.  Its coordinate-axis cubic and
+  greedy higher-jet screens are modular discovery data; the greedy
+  order-four failures are not obstruction certificates.  The adjacent
+  `.sing` and `.m2` files are decomposition inputs, and no completed radical
+  or associated-prime calculation is claimed.  Generate them with
+  `scripts/research_quartic_generic_component.py`.
+- `quartic_generic_component_order3_mod32003.sing` contains the optional full
+  canonical cubic homogeneous Kuranishi layer: 305 independent cubics
+  together with the 22 quadrics.  It is a reproducible Singular input, not
+  the completed local ideal or a standard-basis certificate.  Its capped
+  12 GB standard-basis run ended without a basis.
+- `filtered_source_tangent_profiles_mod32003.json` records the source-only
+  first-order degree-filtration breakpoints for `F_4,F_5,F_6`, including the
+  visible seed subspaces.  It is a good-prime filtered computation, not an
+  optimal two-sided or characteristic-zero contact theorem.  Generate it with
+  `scripts/research_filtered_source_tangent_profile.py`.
 
 Run `make verify-normal-forms` for the original normal-form artifacts and
 `make verify-external-consequences` for all BCW route artifacts.

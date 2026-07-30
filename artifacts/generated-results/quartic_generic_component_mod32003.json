@@ -1,5 +1,45 @@
 {
   "cokernel_monomial_count": 76,
+  "coordinate_axis_cubic_screen": [
+    {
+      "axis": "n0",
+      "cubic_gauge_rank": 4,
+      "cubic_remainder_term_count": 5,
+      "lifts_through_order_three": true,
+      "quadratic_lift_coefficient_count": 19
+    },
+    {
+      "axis": "n9",
+      "cubic_gauge_rank": 4,
+      "cubic_remainder_term_count": 0,
+      "lifts_through_order_three": true,
+      "quadratic_lift_coefficient_count": 22
+    },
+    {
+      "axis": "n15",
+      "cubic_gauge_rank": 4,
+      "cubic_remainder_term_count": 3,
+      "lifts_through_order_three": false,
+      "quadratic_lift_coefficient_count": 26
+    },
+    {
+      "axis": "n16",
+      "cubic_gauge_rank": 4,
+      "cubic_remainder_term_count": 7,
+      "lifts_through_order_three": false,
+      "quadratic_lift_coefficient_count": 25
+    },
+    {
+      "axis": "n18",
+      "cubic_gauge_rank": 4,
+      "cubic_remainder_term_count": 3,
+      "lifts_through_order_three": false,
+      "quadratic_lift_coefficient_count": 49
+    }
+  ],
+  "cubic_cokernel_monomial_count": 499,
+  "cubic_equation_rank": 305,
+  "cubic_monomial_count": 2024,
   "family_pivot_tangent_indices": [
     0,
     1,
@@ -30,6 +70,65 @@
     31
   ],
   "full_tangent_dimension": 49,
+  "greedy_coordinate_axis_jet_screen": [
+    {
+      "axis": "n0",
+      "correction_coefficient_counts": [
+        19,
+        15
+      ],
+      "failure_remainder_terms": 9,
+      "first_failed_order": 4,
+      "lifts_through_order": 3,
+      "tangent_adjustment_counts": [
+        1
+      ]
+    },
+    {
+      "axis": "n9",
+      "correction_coefficient_counts": [
+        22,
+        14
+      ],
+      "failure_remainder_terms": 5,
+      "first_failed_order": 4,
+      "lifts_through_order": 3,
+      "tangent_adjustment_counts": [
+        0
+      ]
+    },
+    {
+      "axis": "n15",
+      "correction_coefficient_counts": [
+        26
+      ],
+      "failure_remainder_terms": 3,
+      "first_failed_order": 3,
+      "lifts_through_order": 2,
+      "tangent_adjustment_counts": []
+    },
+    {
+      "axis": "n16",
+      "correction_coefficient_counts": [
+        25
+      ],
+      "failure_remainder_terms": 7,
+      "first_failed_order": 3,
+      "lifts_through_order": 2,
+      "tangent_adjustment_counts": []
+    },
+    {
+      "axis": "n18",
+      "correction_coefficient_counts": [
+        49
+      ],
+      "failure_remainder_terms": 3,
+      "first_failed_order": 3,
+      "lifts_through_order": 2,
+      "tangent_adjustment_counts": []
+    }
+  ],
+  "greedy_coordinate_axis_maximum_order": 6,
   "independent_family_parameter_indices": [
     0,
     1,
@@ -59,6 +158,7 @@
     25,
     27
   ],
+  "nonzero_cubic_monomial_count": 2021,
   "nonzero_quadratic_pair_count": 219,
   "normal_tangent_dimension": 22,
   "normal_tangent_indices": [
@@ -89,6 +189,13 @@
   "quadratic_generator_count": 22,
   "quadratic_kuranishi_rank": 22,
   "quadratic_pair_count": 253,
+  "quadratically_unobstructed_coordinate_axes": [
+    "n0",
+    "n9",
+    "n15",
+    "n16",
+    "n18"
+  ],
   "reduced_family_tangent_dimension": 27,
   "selected_seed_parameter": 1,
   "selected_target_shear_parameters": [

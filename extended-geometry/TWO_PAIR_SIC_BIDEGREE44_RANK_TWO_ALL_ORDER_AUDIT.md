@@ -7,15 +7,20 @@ rank-two survivor.  The current exact input is weaker:
 
 1. the first thirteen moments have a semistable common zero on the
    rank-at-most-two determinantal variety;
-2. one squarefree rank-one Rabinowitsch chart remains open, so exact
-   coefficient rank two has not been forced; and
-3. the Hilbert-series proof is existential and records neither coordinates
+2. the Hilbert-series proof is existential and records neither coordinates
    nor a residue field for its semistable point.
 
 Consequently there is no exact coefficient point at which to derive and
 solve a scalar recurrence.  Recurrence derivation and evaluation of
 \(\mu_{14}\) are therefore parked.  Neither an all-order rank-two witness
 nor an exact tail obstruction is proved here.
+
+The split-symbol theorem has removed the former rank-one prerequisite
+from the SIC search: the complete rank-one Segre cone is safe in every
+degree.  The remaining squarefree rank-one Rabinowitsch membership is
+relevant only to the stronger finite-prefix claim that the existential
+thirteen-moment point itself must have exact rank two.  It is not a gate
+for searching directly on exact-rank-two factor charts.
 
 This corrects a possible misreading of equation (6.1) in the
 [rank frontier](TWO_PAIR_SIC_BIDEGREE44_RANK_FRONTIER.md).  That displayed
@@ -105,23 +110,13 @@ not propagate merely from holonomicity or from (3.1).
 
 The required order is:
 
-1. certify the remaining squarefree rank-one target-only membership
-   \[
-   \lambda^4(\lambda-1)^4
-   \bigl(p(8c-3d^2)\bigr)^5
-   \in(f_3,f_4,f_5,f_6);
-   \]
-   the exponent \(5\) is the common least exponent modulo
-   \(101,103,107\), but the rational lift remains open.  A \(240\)-bit
-   large-prime CRT attempt recovers only three of \(14508\) arbitrary-lift
-   coefficients at a holdout prime; tracked-basis transforms are
-   support-unstable, while canonical syzygy reduction exceeds a
-   \(600\)-second modular bound;
-2. compute an explicit closed point, or an explicit positive-dimensional
-   component and its function field, in the semistable
-   \(\mu_1=\cdots=\mu_{13}=0\) fiber;
-3. verify exact coefficient rank two at that point;
-4. only then specialize (2.5), produce a checkable
+1. parameterize the exact-rank-two open by requiring both factors in
+   (2.1) to have rank two, equivalently by inverting suitable
+   \(2\)-by-\(2\) minors;
+2. impose a dimension-sized pure-moment system and compute an explicit
+   closed point, or an explicit positive-dimensional component and its
+   function field, inside that exact-rank-two open;
+3. specialize (2.5), produce a checkable
    creative-telescoping recurrence, and evaluate \(\mu_{14}\) and any
    later bridge values it requires.
 
@@ -130,6 +125,18 @@ tested before the point becomes an SIC witness.  If a tail moment is
 nonzero, that exact value is the desired obstruction for that closed
 point; excluding rank two globally would require treating every
 semistable component.
+
+Independently, certifying the remaining squarefree rank-one target-only
+membership
+\[
+\lambda^4(\lambda-1)^4
+\bigl(p(8c-3d^2)\bigr)^5
+\in(f_3,f_4,f_5,f_6)
+\]
+would sharpen the finite-prefix Hilbert result by forcing its existential
+semistable point off rank one.  The exponent \(5\) is the common least
+exponent modulo \(101,103,107\), but the rational lift remains open.  This
+classification problem no longer precedes steps 1--3.
 
 ## 5. Reproduction
 

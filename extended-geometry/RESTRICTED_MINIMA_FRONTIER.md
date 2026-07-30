@@ -485,6 +485,15 @@ The resulting 40-variable nonhomogeneous HN witness has no constant Hessian
 kernel.  This closes linear identity-output compression for that potential,
 but is not a lower bound against nonlinear or different constructions.
 
+For projective-gradient bookkeeping, all three explicit cotangent/HN
+families in this section have gradient degree three.  Their actual
+compactifications are now registered in
+[`PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`](../PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md),
+but their generic affine degrees and intermediate projective degrees have
+not been computed in the canonical certificates.  Hessian rank, nilpotence,
+and the existence of a collision do not determine the individual infinity
+Segre degrees, so the registry deliberately records these entries as open.
+
 ## 5. Parked exact questions
 
 The surviving questions can now be stated without reference to one

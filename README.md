@@ -43,13 +43,17 @@ Jelonek's bounded-degree closedness theorem gives a complementary
 for every explicit `F_N`, every irreducible component of the full
 determinant-one coefficient scheme containing `F_N` is generically
 noninvertible and has dimension at least eight.  This is Jelonek's theorem
-applied to the family, not a new component theorem here.  The genuinely new
-next calculation is to linearize the full coefficient scheme at `F_N` and
-analyze its local components and obstructions.  The unrestricted
-infinitesimal left--right quotient is identically zero: every tangent is
-source-trivial over the dual numbers.  Connecting this local calculation to
-the `N-3` stable parameters therefore requires the filtered
-formal-to-algebraic contact problem, not an ordinary tangent quotient.
+applied to the family, not a new component theorem here.  Exact full-box
+linearization now gives tangent dimensions `58,88,123` at `F_4,F_5,F_6`,
+and explicit raw quadratic classes show that all three bounded coefficient
+schemes fail formal smoothness there.  Nevertheless the unrestricted
+infinitesimal left--right quotient is identically zero in every degree:
+every tangent is source-trivial over the dual numbers.  The coefficient
+component, filtered-contact, and decorated-normalization questions are
+therefore organized as one programme, `OP-CCDM`: **local coefficient
+components versus decorated stable moduli**.  Ordinary tangent quotients
+cannot see the `N-3` stable parameters; the first meaningful comparison must
+be filtered, boundary-decorated, or formal-to-algebraic.
 
 For Gaussian moments, Long's explicit five-term polynomial settles GMC
 negatively in three real variables and, by adjoining unused coordinates, in
@@ -284,12 +288,21 @@ also shows that the displayed exact rank-two chart point is only a
 Jacobian transversality point: already \(\mu_1=7414\). The semistable
 thirteen-moment point remains existential, with no coordinates or residue
 field from which a scalar recurrence can be specialized. Recurrence
-derivation and evaluation of \(\mu_{14}\) are parked until the rank-one
-boundary is closed and an explicit exact-rank-two point or component is
-extracted.
+derivation and evaluation of \(\mu_{14}\) are parked until an explicit
+exact-rank-two point or component is extracted.  The split-symbol theorem
+has already removed rank one from the all-order SIC search; the remaining
+squarefree rank-one membership would only sharpen the finite-prefix
+Hilbert statement.
 The new
 [rank-stratified moment programme](extended-geometry/RANK_STRATIFIED_MOMENT_PROGRAM.md)
 organizes the balanced problem by the determinantal loci \(X_{d,r}\).
+For bidegree \((4,4)\), its experimental opening is now exact rank two:
+parameterize full-rank factorizations \(C=UW\), impose enough moments to
+reach expected quotient dimension, extract exact determinantal
+points/components, and apply holonomic creative telescoping there.  The
+known witness has rank five, while ranks two, three, and four remain open;
+a rank-two counterexample would compress the sixteen-term witness to two
+separated channels.
 Its exact census through \(d=4\) proves that the first nine moments on the
 degree-three rank-at-most-two locus have a semistable common zero of exact
 coefficient rank two: the invariant Hilbert numerator first becomes
@@ -313,9 +326,9 @@ the harmonic orbit. Exact expected-branch resultants expose one further
 quartic \(S_3\)-orbit, which is also closed over its coefficient field.
 The chart \(8c-3d^2=0\) with the expected cubic nonzero is now excluded
 by an exact three-variable unit certificate. The remaining
-uniform-specialization gate is one explicit Rabinowitsch membership on
+uniform-specialization problem is one explicit Rabinowitsch membership on
 the complementary chart; modular standard bases support it, but an exact
-rational lift certificate has not completed.  This gate is now reduced to
+rational lift certificate has not completed.  This problem is reduced to
 the target-only identity
 \(\lambda^4(\lambda-1)^4(p(8c-3d^2))^5\in(f_3,f_4,f_5,f_6)\):
 the least exponent is \(5\) modulo \(101,103,107\), with a common
@@ -324,9 +337,9 @@ checker proves that the first four
 moments cut out the one-sided nullcone for symbols with at most two roots;
 the three-root orbit was already closed by five moments. Consequently the
 semistable thirteen-moment fiber is known to lie on rank at most two, but
-proving that some such point has exact rank two still depends on the
-squarefree specialization gate. None of this is an all-order
-counterexample.
+using this Hilbert argument alone to force exact rank two still depends on
+the squarefree specialization problem.  Direct exact-rank-two search does
+not. None of this is an all-order counterexample.
 The
 [rank-two cubic holonomic probe](extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_HOLONOMIC_PROBE.md)
 puts the bidegree-\((3,3)\) factor chart into its exact relative-period
@@ -334,9 +347,17 @@ form and finds the same order-\(27\), \(m\)-degree-\(11\) modular
 recurrence shape at two exact-rank-two points over three primes.  All six
 fits have 139 unused verification equations and the same reconstructed
 forward \(m\)-factor, which has no nonnegative integer root.  This fixes a
-concrete universal-telescoping target, but remains modular evidence: the
-parameter denominator, its exceptional strata, and the missing bridge
-moments for \(\mu_1,\ldots,\mu_{12},\mu_{14}\) are not yet certified.
+concrete universal-telescoping target.  The exact logarithmic Jacobian
+quotient has length \(18=2+2+14\), and six further modular probes find the
+natural order-\(18\), \(m\)-degree-\(18\) relation; the order-27 relation
+is its low-degree desingularized tradeoff.  On the generic factor pencil,
+exact border-basis calculations over three finite rational-function
+fields give the same six nineteen-term relations and a squarefree
+degree-\(108\) chart denominator with factor-degree profile
+\(74+14+20\).  This remains modular evidence: the universal relative
+connection, parameter determinant, exceptional fibers, and five missing
+bridge moments for
+\(\mu_1,\ldots,\mu_{12},\mu_{14}\) are not yet certified.
 
 The earlier
 [dual-linear theorem](extended-geometry/DUAL_LINEAR_SIC2.md)
@@ -554,6 +575,7 @@ already reduces to
 \((\partial_x^2,y^5)\).  Full second- and third-moment calculations,
 together with weighted one-sided cutoffs, close all three correction
 systems.  Thus every quadratic-leading pair is safe through degree five.
+<!-- status-consumer: GVC2D5F 89a10c04ff511f4d -->
 A degree-five counterexample must have lowest positive operator order
 \(3\) or \(4\).  The \(r=3\) leading equations reduce further to eight
 top-form normal forms: four over the triple-root cubic symbol, three over
@@ -590,8 +612,13 @@ The [lower-face prime theorem](extended-geometry/TWO_REAL_GMC_LOWER_FACE_THEOREM
 proves GMC in two real variables, completing the classification:
 `GMC(n)` holds exactly for `n<=2`.  The former
 [GMC(2) research program](extended-geometry/GMC2_RESEARCH_PROGRAM.md) now
-records the proof route; high-dimensional implication chains and weighted
-families remain as examples of logical transport.
+records the proof route.  In the generated status page, every pre-`G2T`
+frontier result is grouped under **Superseded proof route / retained
+refinements**: the finite charts are regressions and finite-degree
+strengthenings, while the prime-endpoint, support-graph, and unit-star
+arguments are reusable techniques.  None is an active GMC(2) search.
+High-dimensional implication chains and weighted families remain as examples
+of logical transport.
 
 ## The foundational map in two forms
 
@@ -1010,15 +1037,17 @@ equality is not itself geometric.  For the smooth symbol, all 276 full
 coordinate two-planes have relative Ext presentation pulled back from the
 origin, closing every quartic direction supported on at most two basis
 tensors.  All 2,024 smooth coordinate three-spaces also retain the same
-pruned rank-three presentation, so any remaining smooth quartic escape
-requires at least four basis directions.  The other six squarefree symbols
+pruned rank-three presentation.  These are now regressions for the
+formal-gauge theorem, not evidence for a remaining smooth sparse-support
+search.  The other six squarefree symbols
 have now been checked on all 1,656 coordinate planes as well: 1,652 retain
 the central pruned presentation, while four presentation-jump rows are
 nevertheless locally free of rank six by
 `Fitt_6=(1), Fitt_5=(0)` over the parameter plane.  Thus all 1,932
-squarefree-symbol coordinate planes retain the length-six defect, and any
-remaining singular-symbol quartic escape requires at least three basis
-directions.  A separate sum/alternating-sum parameter plane now removes
+squarefree-symbol coordinate planes retain the length-six defect.  The
+remaining singular work is not organized by the number of basis directions:
+the formal-gauge quotient and its annihilator support are the intrinsic
+search space.  A separate sum/alternating-sum parameter plane now removes
 basis sparsity as a necessary escape mechanism: for all seven squarefree
 symbols its generic tensor has nonzero coordinates in all 24 kernel
 directions, while the complete polynomial plane still has saturated
@@ -1102,6 +1131,15 @@ classes are
 origin for this quartic splitting.  Degree-six independence from the
 earlier five-dimensional quartic lift, continuation of the embedded
 socle, and the cotangent depth test remain open.
+Accordingly the cubic normalization search has three active strata.
+Smooth symbols leave the saturation frontend and move to global
+algebraization and marked-boundary/Keller-open compatibility.  Singular
+squarefree symbols retain only the finite quartic nongauge quotients, queued
+by annihilator type
+`(x),(x^2),(yz),(y^3),(xyz),(x^3)` in the
+[support-saturation compiler](extended-geometry/SUPPORT_SATURATION_COMPILER.md).
+Double-line, triple-line, and zero symbols must first pass generically
+étale and Keller compatibility before more saturation work.
 Translating the
 sum/alternating-sum plane by the deterministic
 generic quartic lift extends the constant length-six result to all ten
@@ -1132,7 +1170,11 @@ c_6\notin J_6,\qquad (w_0,w_2)c_6=0\quad\text{in }R/J_6.
 \]
 The
 [support-saturation compiler note](extended-geometry/SUPPORT_SATURATION_COMPILER.md)
-records the \(646\)-by-\(2400\) sparse Macaulay system, eight-prime modular
+defines the shared role-aware input schema for cubic normalization,
+degree-42 support, plane boundary modules, and filtered quantization, with
+annihilator radicals, transition maps, uniform-exponent state, and explicit
+exact/modular assurance.  It also records the \(646\)-by-\(2400\) sparse
+Macaulay system, eight-prime modular
 block-Wiedemann reconstruction, rational annihilation syzygies, and the
 nine-term Macaulay dual nonmembership witness.  This proves a genuine
 embedded-support obstruction on the sixth normal jet.  It does not identify
@@ -1338,7 +1380,13 @@ in every geometric degree `N>=3`.  Exponents in one residue class modulo
 `d` give the cyclotomic strengthening over `P^d=1`.  In degree five the same
 inequivalent maps carry the identical Zariski-dense multiplicative family of
 degree-optimal Hasse failures, with the same
-`B/sqrt(log B)` target asymptotic.  The quartic
+`B/sqrt(log B)` target asymptotic.  The
+[two-marked-fiber reconstruction theorem](verified/TWO_MARKED_FIBER_GAUGE_RECONSTRUCTION.md)
+shows exactly where the exponent reappears in every rank at least four:
+the marked fiber at `P=1` recovers the normalized seed, and a second one at
+the universally valid non-torsion plane `P=2` recovers `m`.  A torsion
+second plane sees only `m` modulo its order, while one transverse marked
+line sees `m` as a pole order at `P=0`.  The quartic
 [first case](verified/UNIVERSAL_QUARTIC_GAUGE_MULTIPLICITY.md)
 has lattice index `2m+5`.  The earlier
 [weighted trace-chord normalization](verified/UNIVERSAL_QUARTIC_FIBER_MULTIPLICITY.md)
@@ -1415,7 +1463,28 @@ realizes \(\Delta\) as a \(2\times2\) determinant, but all 72 primitive
 coordinate assignments fail its adjugate divisions.  Its generic
 genus-two fibre also excludes polynomial automorphic base mixing in every
 degree.  The first nonautomorphic normalized-cusp chart then fails by an
-all-degree contraction-divisor mismatch.
+all-degree contraction-divisor mismatch, and the minimal constant-normal
+tangential repair has only the degenerate coefficient solution.  The same
+degree argument closes arbitrary base-dependent coefficients as long as the
+chart is affine in its single normal coordinate.
+These mechanisms are now uniform in the
+[all-degree dihedral obstruction package](extended-geometry/DIHEDRAL_ALL_DEGREE_AFFINE_COMPLETION_OBSTRUCTIONS.md).
+For odd \(n\), target order \(\ell\) forces source orders
+\((\ell,2\ell-1,\ldots,2\ell-1)\).  For even \(n=2m\), the branch splits
+and its two independent target orders force
+\((\ell_-,2\ell_--1,2\ell_+-1)\) in the composite
+\((C,A_m,B_m)\) boundary basis.  The canonical determinant-\(\Delta_n\)
+blowdown, fixed polynomial Dickson bases, all automorphic mask mixing, the
+first normalized-cusp correction, and every tangential chart affine in one
+normal coordinate are excluded for all \(n\ge3\).  Nonlinear normal
+dependence must satisfy
+\(2\deg_Tq=n\deg_Tp\): its smallest unresolved degree pair is \((2,n)\)
+for odd \(n\) and \((1,n/2)\) for even \(n\).  Factorization then excludes
+every even-degree one-normal resonant chart as degenerate, while a
+valuation-at-infinity argument excludes all odd resonant pairs
+\((2d,nd)\).  Thus the canonical one-normal programme is closed for every
+\(n\ge3\).  Two coupled nonlinear directions and different blowdowns
+remain open; this is not a complete affine-completion obstruction.
 The program's
 [first proper-monodromy checkpoint](extended-geometry/A4_KELLER_INVERSE_COVER.md)
 is an oriented degree-four root cover with exact generic `A_4`, a
@@ -1780,11 +1849,21 @@ development:
    `not SIC(2)`.  Together with the known one-pair theorem, this fixes the
    exact minimum failing pair dimension at two.  Its nonseparability keeps
    it outside the two-variable GVC Segre slice.
+10. `PGS1` extracts the actual affine-map compactification from the `HC4`
+    projective-polar work and supplies the all-dimensional
+    \((g_0,\ldots,g_n)\leftrightarrow(\sigma_1,\ldots,\sigma_n)\) transform,
+    executable gradient-integrability sieve, and a typed family registry.
+    Exact cotangent and quadratic-stabilization calibrations show that these
+    lifts preserve the top affine degree but not the interior multidegrees.
+    See
+    [`PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`](PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md).
 
 Only the arrows in this list are dependencies or implications.  The certified
 upper endpoints are now SIC 2, unrestricted GVC 5, ordinary-Laplacian GVC 40,
-homogeneous quartic HN-VC 42, and homogeneous HN Hessian rank 37.  The
-separate nonhomogeneous degree-at-most-four HN witness has rank 34 in
+and homogeneous HN Hessian rank 37.  For homogeneous quartic HN-VC, the best
+externally sourced and independently replayed ambient bound is 38; the
+internally generated dependency-independent route has ambient endpoint 42.
+The separate nonhomogeneous degree-at-most-four HN witness has rank 34 in
 dimension 40.  These
 are not additional
 logical steps, proofs of minimality, or literature-wide records; named
@@ -1797,6 +1876,13 @@ review are separate booleans. `artifact_hash` pins the registered checker
 content, while `software_lock` names the repository lock manifests used for
 its replay; neither field upgrades a claim's review status. False historical
 claims are first-class `falsified` entries rather than prose-only corrections.
+The typed update edges `supersedes`, `closes_problems`, `narrows_problems`,
+`consumers`, and `invalidates_assumptions` identify downstream status entries
+and prose that must be reviewed when a result advances. Document consumers
+carry a `status-consumer` fingerprint; `make check` rejects the document until
+that marker is refreshed after its claims have been reconciled with the result.
+Print the current marker with `python3 scripts/render_status.py
+--consumer-marker ID`.
 
 ## Papers
 
@@ -1932,8 +2018,9 @@ resonance node.  Together these results prove `H1-COARSE`, `H1-STACK`, H2,
 and coarse H3.  The original comparison with the unmodified root-stable
 quotient remains false.
 
-The active continuation queue consists of three LR problems together with
-the cancellation, Hessian--Ritt, restricted-minima, and minimal-boundary
+The active continuation queue is centred on one coefficient/decorated-moduli
+programme, together with the valuative LR no-escape problem and the
+cancellation, Hessian--Ritt, restricted-minima, and minimal-boundary
 frontiers:
 
 - `OP-CR`: cancellation contact resultants in the residual staircase
@@ -1948,16 +2035,15 @@ frontiers:
   closed by 56,320 rigorous Arb branch tubes on `0<=1/m<=1/1001` and 1,000
   degree-preserving modular gcds.  The branch method still does not provide
   a continuation uniform in `r`.
-- `OP-LR-REES`: the finite module/SAGBI computation is complete on the
-  ordinary-source-degree face of `F_2` and gives a negative answer there:
-  a weight-one linear combination subducts from degree `39` through `34` to
-  a genuinely new degree-`29` initial-module generator.  Other filtrations
-  and the universal associated-graded consequence remain open.
-- `OP-LR-II`: the saturated-face classification is complete.  Only
-  `p=1,2` survive, every `|p|>=3` matrix vanishes structurally, and
-  `II_(F,2,-2)(partial_A,A^2 partial_A)` gives a new independent class with
-  remainder `-987/395 e_C` modulo the full `p=1` image.  The extra quotient
-  is exactly the reduced length-one module `R/(gamma,6u-1)`.
+- `OP-CCDM`: compute the completed reduced and embedded local coefficient
+  branches through `F_N`, their tangent and obstruction spaces, the
+  boundary-decoration map on each boundary-clean reduced branch, and the
+  first two-sided filtered class that does not algebraize uniformly along
+  the seed family.  The former `OP-FC`, `OP-LR-REES`, and `OP-LR-II` are
+  calibration work packages inside this programme.  The `F_2`
+  ordinary-source-degree face already has a non-strict degree-`29` initial
+  generator and a new `p=2` quadratic class; the foundational nilpotent
+  gluing and the all-degree component comparison remain open.
 - `OP-LR-NE`: valuative no escape through the finite proper closure of the
   marked normalized-cover `Isom` relation, using `F2`, `H2`, `H3`, and generic
   deck rigidity before reconstructing automorphisms.
@@ -1994,13 +2080,29 @@ frontiers:
   reduced components come from relation-graph Ritt theory, while the
   completed cellular cotangent complex is the proposed all-degree controller
   for synchronization, nilpotent thickening, and braid obstructions.  The
+  complex now carries an explicit characteristic label.  In characteristic
+  \(p\), the
+  [one-sided tangent classification](NEW_COUNTEREXAMPLE_SEARCHES.md#theorem-a1-complete-one-sided-tangent-classification)
+  supplies a separate Frobenius cell module: it is the full normalized inner
+  tangent space when \(H'=0\), the one-dimensional \(kx\) defect when
+  \(H'=a\ne0\), and zero otherwise.  This includes the separable but
+  Hessian-invisible row \(H=ax+G(x^p)\).  No existing rational Gröbner
+  certificate is now treated as a good-reduction theorem without an explicit
+  denominator/pivot audit and exclusion of these Frobenius edge strata.  The
   rotated cut-`14` and cut-`21` first-conormal extensions now have compatible
   sections at base orders five through seven and explicit polynomial
   splittings over `Q[[tau,zeta]]`.  Their inverse-limit obstruction classes
   vanish.  The earlier one-dimensional fourth-jet asymmetry is a
   presentation-versus-image Tor effect; the distinct completed correction
-  polynomials retain labelled cut data.  Transporting those sections through
-  the actual braid restriction maps remains open.
+  polynomials retain labelled cut data.  `HR42S` adds an exact
+  characteristic-zero warning: the specialized sixth normal jet has a
+  nonzero class `c_6` killed by the full boundary ideal.  It is concentrated
+  at the deepest monomial degeneration, so generic-stratum vanishing cannot
+  establish global support saturation.  The immediate cellular task is to
+  identify `c_6`, if possible, with the cut-`6` non-splitting class, restrict
+  it through the completed cut-`14` and cut-`21` splittings, and test the
+  resulting braid coherence.  Neither that identification nor
+  characteristic-zero higher-jet persistence is yet proved.
 - `OP-RMIN`: the exact current intervals are
   `5<=n_cub<=19`, `3<=r_cub<=17`, `3<=nu_cub<=18`, and
   `6<=rho_cot<=37`.  Companion classes have
