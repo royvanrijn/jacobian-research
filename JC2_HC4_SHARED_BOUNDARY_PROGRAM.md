@@ -1,9 +1,10 @@
 # A shared boundary programme for \(\mathrm{JC}_2\) and \(\mathrm{HC}_4\)
 
-## Status and first outcome
+## Status and outcome
 
 This is a research programme, not a proof of either conjecture.  It isolates
-one exact common normal form and one candidate boundary obstruction.
+one exact common normal form and computes the first candidate boundary
+obstruction.
 
 The exact part is:
 
@@ -13,13 +14,19 @@ The exact part is:
 > Hessian term is the reduced conormal residue.  In the completed quartic
 > cusp and connector charts already computed in the plane programme, half
 > of that residue is exactly the odd-square multiplier \(\ell\) whose zero
-> scheme carries the conductor endpoints.
+> scheme carries the conductor endpoints.  However, the proposed paired
+> initial-conormal class in the associated-graded conductor cokernel is
+> identically zero: at a cusp and in positive degree at a node, the
+> conductor map to the normalization is an isomorphism.  At the node only
+> degree-zero values are paired, and both residue values vanish.
 
 The open part is to attach such a polynomial isotropic flag canonically to
 an arbitrary hypothetical \(\mathrm{HC}_4\) counterexample, or to construct
-the corresponding residue-decorated flag on a compactification, and then
-prove that its conductor-paired initial-residue class is nonzero.  None of
-those recognition or nonvanishing statements is claimed here.
+the corresponding residue-decorated flag on a compactification.  Any
+nonzero endpoint obstruction must add global jet transport supplied by the
+two-generated degree-zero algebra, a dualizing-residue structure, or an
+equivalent datum.  The conductor pairing and sheet monodromy alone do not
+provide that transport.
 
 The exact symbolic identities are checked by
 [`scripts/verify_jc2_hc4_isotropic_boundary_bridge.py`](scripts/verify_jc2_hc4_isotropic_boundary_bridge.py).
@@ -233,9 +240,30 @@ cotangent Hessian is
  \rho_E^2.                                          \tag{4.3}
 \]
 
-This is the desired common carrier: the Hessian side naturally sees its
-square, while the finite-normalization side sees the unsquared different
-residue and its endpoint behavior.
+More precisely, take \(F=(g,q)\) in the adapted coordinates.  If \(e=2\),
+then (4.2) says
+
+\[
+ J(g,q)=r\rho_E\pmod {r^2}.
+\]
+
+Consequently
+
+\[
+ \operatorname{in}_{(r)}
+ \bigl(\det\operatorname{Hess}(tg+mq+H)\bigr)
+ =
+ [r]^2\rho_E^2.                                    \tag{4.4}
+\]
+
+The cotangent volume frames select the oriented square root
+\([r]\rho_E\); division by the normal generator \([r]\) gives precisely
+\(\rho_E\).  Thus the filtered cotangent Hessian and the reduced conormal
+residue occupy the same associated-graded line, with the former seeing the
+square of the latter.  This is the exact Schur-to-boundary comparison on
+the cotangent branch selected by \(\Phi_{mm}=0\) in (2.4).  It does not
+assert that the general coefficient \(-\Phi_{mm}R(P)\) is itself a boundary
+residue before that branch has been selected.
 
 ## 5. The quartic conductor chart identifies the carrier
 
@@ -319,105 +347,231 @@ The normalized generator \(z_i=u_{ij}^{-1}z_j\) is its primitive
 half-character, while the scalar Hessian leading term carries the
 inverse-fourth character.
 
-## 6. Candidate obstruction: the paired initial-conormal class
+## 6. The paired initial-conormal class
 
-Ordinary values of \(\rho_E\) vanish at the cusp and connector endpoints,
-so the unfiltered conductor quotient forgets the required information.
-Retain instead the first nonzero normal/conductor initial form
-
-\[
- \operatorname{in}_p(\rho_E)
-\]
-
-at every endpoint \(p\).  If the conductor identifies endpoint branches
-\(p\sim p'\), use its induced identification of the conormal/different
-lines and form the mismatch
-
-\[
- \delta_{p,p'}(\rho_E)=
- \operatorname{in}_p(\rho_E)
- -\tau_{p,p'}\operatorname{in}_{p'}(\rho_E).         \tag{6.1}
-\]
-
-Collecting these mismatches gives a class
+Let \(R_p\subset\widetilde R_p\) be the completed boundary-curve ring and
+its normalization at a packet endpoint, and let \(\mathfrak c_p\) be their
+conductor.  After trivializing the inverse-square different line
+\(\mathcal L\), the proposed class is
 
 \[
  \operatorname{Obs}_{\mathrm{pair}}(\Psi,L)
+ =
+ [\operatorname{in}(\rho_E)]
  \in
  \operatorname{coker}\!\left(
- \operatorname{gr}_{\mathfrak c}\mathcal L
+ \operatorname{gr}_{\mathfrak c_p}(R_p)\otimes\mathcal L
  \longrightarrow
- \nu_*\operatorname{gr}_{\widetilde{\mathfrak c}}
-             \nu^*\mathcal L\right),                \tag{6.2}
+ \operatorname{gr}_{\mathfrak c_p\widetilde R_p}
+       (\widetilde R_p)\otimes\mathcal L\right).     \tag{6.1}
 \]
 
-where \(\mathcal L\) is the conormal/different line carrying \(\rho_E\).
-Formula (6.2) is schematic until the global packet fixes the filtration and
-the transition character of \(\mathcal L\).
+This makes the schematic formula precise, but the completed calculation
+shows that its hoped-for positive-degree mismatch does not exist.
 
-The intended vanishing mechanism is the same on both sides:
+### 6.1 The \(3+1\) cusp
 
-- a plane Keller counterexample supplies a global finite-normalization
-  different section, so its initial residues must descend through the
-  actual conductor pairing;
-- an \(\mathrm{HC}_4\) counterexample in the recognized isotropic chart
-  supplies the same section as the square root of the boundary-leading
-  Hessian term, and polynomial Hessian gluing forces the same descent.
-
-Thus either counterexample would force
+For an ordinary cusp,
 
 \[
- \operatorname{Obs}_{\mathrm{pair}}(\Psi,L)=0.       \tag{6.3}
+ R_{\rm cusp}=k[[\tau^2,\tau^3]]
+ \subset
+ \widetilde R_{\rm cusp}=k[[\tau]],
+ \qquad
+ \mathfrak c=(\tau^2,\tau^3)=\tau^2\widetilde R_{\rm cusp}.
+\tag{6.2}
 \]
 
-What is not proved is that every \(\mathrm{HC}_4\) counterexample reaches
-this chart, that the square root has a canonical sign/character globally,
-or that every surviving quartic packet makes (6.2) nonzero.  These are the
-three genuine research gates.
+For every \(n\ge1\),
 
-## 7. Why coarser candidates cannot work
+\[
+ \mathfrak c^n/\mathfrak c^{n+1}
+ \longrightarrow
+ (\tau^{2n})/(\tau^{2n+2})
+\tag{6.3}
+\]
 
-The existing calculations already exclude several tempting shortcuts.
+is an isomorphism, with common basis
+\(\tau^{2n},\tau^{2n+1}\).  The only cokernel occurs in degree zero and
+detects the missing linear term \(\tau\).  Since
+\(\rho_E=-18\tau^2+\cdots\) in the standard cubic frame, its first nonzero
+initial lies in conductor degree one and has class zero in (6.1).
 
-1. The generic residue \(\rho_E\) is nonzero by tame ramification, so the
-   desired statement cannot be generic vanishing along \(E\).
-2. The completed cusp and connector rings have the same normal
-   determinantal overring, conductor \((r,s)\), and canonical module.
-   The conductor ideal alone does not distinguish them.
-3. The primitive boundary/different character glues compatibly across the
-   packet.  Its divisor class alone gives no contradiction.
-4. The scalar Hessian determinant records \(\rho_E^2\), losing the sign,
-   transition character, and conductor pairing of the initial residue.
+### 6.2 Both branches of the \(2+2\) connector
 
-The first viable obstruction is therefore filtered, square-root-sensitive,
-and pairing-sensitive, as in (6.2).
+For a node with normalized branch parameters \(\tau_+,\tau_-\),
 
-## 8. Immediate calculations
+\[
+\begin{aligned}
+ R_{\rm node}
+ &=
+ \{(f_+,f_-)\in k[[\tau_+]]\oplus k[[\tau_-]]:
+       f_+(0)=f_-(0)\},\\
+ \widetilde R_{\rm node}
+ &=k[[\tau_+]]\oplus k[[\tau_-]],\\
+ \mathfrak c
+ &=(\tau_+)\oplus(\tau_-).
+\end{aligned}                                      \tag{6.4}
+\]
 
-The programme now has four narrow next steps.
+In every positive conductor degree the map to the normalization is the
+identity on the two branch coefficients.  In degree zero its cokernel is
+the value-difference map
 
-1. **Completed comparison.**  Compute (6.2) in the standard \(3+1\) cusp
-   chart and in both branches of a \(2+2\) connector, using
-   \(\rho_E=2\ell\) and the transition laws
-   \(r_i=u_{ij}r_j\), \(\ell_i=u_{ij}^{-2}\ell_j\).
-2. **Sign/character descent.**  The cotangent flag selects the
-   inverse-square different residue \(\rho_i\), while the scalar Hessian
-   remembers only its inverse-fourth-character square.  Decide whether an
-   arbitrary Hessian boundary package canonically selects that root, and
-   whether the primitive inverse character carried by \(z_i\) is also
-   needed to compare paired endpoints.
-3. **Schur-to-boundary comparison.**  Express the first nonzero filtered
-   isotropic Schur remainder in the same associated-graded conormal line
-   as \(\rho_E\).  This is the missing map from (2.3) to (6.2).
-4. **Packet nonvanishing.**  Test the actual cusp/connector endpoint
-   pairing, not an arbitrary matching, for a forced residue mismatch.  A
-   nonzero class would simultaneously exclude the plane packet and its
-   four-dimensional cotangent Hessian lift.
+\[
+ (a_+,a_-)\longmapsto a_+-a_- .                    \tag{6.5}
+\]
 
-The first and third steps are local symbolic calculations.  The fourth is
-global and must use the degree-four monodromy and the two-generator
-degree-zero algebra; the existing no-finiteness examples show that an
-unbounded abstract conductor matching is insufficient.
+The residue vanishes at both connector endpoints, so (6.5) is zero.  Its
+two first nonzero initials are independent elements of
+
+\[
+ (\tau_+)/(\tau_+^2)\ \oplus\
+ (\tau_-)/(\tau_-^2),                              \tag{6.6}
+\]
+
+and every such pair already descends from
+\(\mathfrak c/\mathfrak c^2\).  Therefore
+
+\[
+ \boxed{\operatorname{Obs}_{\mathrm{pair}}(\Psi,L)=0}
+ \tag{6.7}
+\]
+
+for the cusp and for the actual paired connector, before any choice of
+sheet labels.
+
+### 6.3 Exact quartic coefficients
+
+The quartic spectator model makes all three initials explicit.  Put
+
+\[
+ f(X)=X^4-X^3+uX-v,\qquad
+ v=T^4-T^3+uT,
+\]
+
+and let \(\Delta(u,v)=\operatorname{disc}_X(f)\).  With
+
+\[
+ r=4T^3-3T^2+u
+\]
+
+one has
+
+\[
+ \Delta(T,u)=r^2\ell(T,u),
+\qquad
+ \ell|_{r=0}
+ =
+ -9T^2(2T-1)^2(8T^2-4T-1).                        \tag{6.8}
+\]
+
+Thus \(\rho=2\ell\).  The full quartic discriminant frame gives
+
+\[
+ \operatorname{in}_{T=0}(\rho)=18T^2.              \tag{6.9}
+\]
+
+This differs from the standard cubic-frame coefficient \(-18\) by the
+unit relating the two target branch equations.  At
+
+\[
+ T_\pm=\frac{1\pm\sqrt3}{4}
+\]
+
+the two connector branches give
+
+\[
+\begin{aligned}
+ \operatorname{in}_{T_+}(\rho)
+   &=-\frac{9\sqrt3}{2}(T-T_+),\\
+ \operatorname{in}_{T_-}(\rho)
+   &= \frac{9\sqrt3}{2}(T-T_-).
+\end{aligned}                                      \tag{6.10}
+\]
+
+The opposite displayed scalars do not define a mismatch.  Replacing the
+two branch parameters independently by
+\(\tau_+=\alpha\tau'_+\) and
+\(\tau_-=\beta\tau'_-\) rescales them independently.  The conductor
+identifies endpoint values, not tangent parameters.  Hence an expression
+such as \(c_+-c_-\) is not intrinsic without an additional jet-transport
+isomorphism.
+
+### 6.4 Sign, character, and monodromy
+
+The boundary transition
+
+\[
+ r_i=u_{ij}r_j
+\]
+
+gives
+
+\[
+ \rho_i=u_{ij}^{-2}\rho_j,\qquad
+ \rho_i^2=u_{ij}^{-4}\rho_j^2.                     \tag{6.11}
+\]
+
+Thus the cotangent volume frames select the inverse-square root seen only
+up to sign by the scalar Hessian determinant.  This character descent is
+compatible; it does not identify the two independent tangent lines in
+(6.6).  The primitive inverse character of \(z_i\) likewise concerns
+boundary-chart overlap, not node-branch jet transport.
+
+There are 24 ordered nondegenerate cusp braid pairs and three perfect
+matchings at the connector.  All 72 labelled packets generate \(S_4\).
+Changing these sheet labels does not change (6.4), and therefore every
+monodromy-compatible packet has the same zero class (6.7).  Monodromy
+selects which sheets collide; it supplies no missing identification of
+\((\tau_+)/(\tau_+^2)\) with
+\((\tau_-)/(\tau_-^2)\).
+
+## 7. Consequence
+
+The four requested local steps now have exact answers.
+
+1. The completed cusp and connector comparison makes the candidate
+   cokernel precise.
+2. The inverse-square residue character descends, while the Hessian square
+   alone retains a sign ambiguity.
+3. On the cotangent branch, the oriented initial Hessian square root divided
+   by the normal generator is exactly \(\rho_E\).
+4. For the actual connector pairing and every compatible \(S_4\) labelling,
+   the conductor class is zero.
+
+This is a negative theorem about the proposed obstruction, not a quartic
+exclusion.  A forced nonzero mismatch cannot come from the ordinary
+associated-graded conductor.  A viable refinement must add a canonical
+transport between endpoint jets.  The two live sources already isolated by
+the plane programme are:
+
+- the two-generated degree-zero algebra \(k[x,y]\), which may select a
+  global parameter or a constrained jet frame; and
+- a dualizing/residue pairing whose sign rule is proved to agree with the
+  cotangent square root and the global meridian relation.
+
+Neither structure is contained in (6.1).  Merely expanding the quartic
+coefficient search cannot repair this missing datum.
+
+## 8. Remaining flagship gate
+
+The next sharply posed statement is a **global jet-transport theorem**:
+construct, from the factorial degree-zero algebra and the marked
+degree-four cover, an intrinsic map
+
+\[
+ (\tau_+)/(\tau_+^2)\otimes\mathcal L_{p_+}
+ \longrightarrow
+ (\tau_-)/(\tau_-^2)\otimes\mathcal L_{p_-},        \tag{8.1}
+\]
+
+and prove its compatibility with both the \(S_4\) meridian packet and the
+oriented cotangent Hessian root.  Only after (8.1) exists does a scalar
+initial mismatch become well-defined.  The exact coefficients (6.9)--(6.10)
+then provide the first regression case: depending on the proven transport,
+they either force nonvanishing or select the anti-diagonal structured
+packet.
 
 ## 9. Reproduction
 
@@ -427,9 +581,12 @@ Run
 .venv/bin/python scripts/verify_jc2_hc4_isotropic_boundary_bridge.py
 ```
 
-The checker verifies (1.3), (2.3), (5.2), and the cusp specialization
-(5.3).  The finite-normalization, completed conductor, and odd-square
-statements used in Sections 3 and 5 remain canonically sourced in
+The checker verifies (1.3), (2.3), (4.4), (5.2), the cusp specialization
+(5.3), the quartic discriminant factorization (6.8), both connector
+initials (6.10), the cusp and node associated-graded conductor maps, and
+all 72 monodromy-compatible labellings.  The finite-normalization,
+threefold conductor, and odd-square statements used in Sections 3 and 5
+remain canonically sourced in
 [`plane-jc/FINITE_NORMALIZATION_PROGRAM.md`](plane-jc/FINITE_NORMALIZATION_PROGRAM.md)
 and
 [`plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md`](plane-jc/JC2_GLOBAL_COX_PACKET_ATTACK.md);

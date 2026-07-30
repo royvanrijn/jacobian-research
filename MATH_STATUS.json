@@ -9845,6 +9845,34 @@
       "priority": "reference"
     },
     {
+      "id": "PIC4",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Paired initial-conormal conductor class vanishes",
+      "scope": "On the two-step isotropic cotangent branch Psi=tP+mQ+H, the oriented square root of the first boundary term of det Hess(Psi)=Jac(P,Q)^2, divided by the index-two normal generator, is exactly the reduced conormal residue rho=2*ell; thus the filtered Hessian root and rho occupy the same associated-graded line. For an ordinary 3+1 cusp, k[[tau^2,tau^3]] inside k[[tau]] has conductor tau^2*k[[tau]], and its conductor associated-graded map is an isomorphism in every positive degree. For a 2+2 node, the positive conductor graded map is likewise the identity on the two normalized branches, while degree zero detects only the difference of endpoint values. Since rho vanishes at both endpoints, Obs_pair is zero. In the exact quartic spectator model the cusp initial is 18*T^2 and the two connector initials are -9*sqrt(3)/2 and 9*sqrt(3)/2 in the displayed local parameters; their scalar difference is not intrinsic under independent parameter rescaling. All 72 cusp-braid/perfect-matching labellings generate S4 and retain the same zero class. Hence the ordinary associated-graded conductor cannot exclude the quartic packet or its cotangent HC4 lift; a viable refinement needs additional global endpoint-jet transport. This does not prove isotropic-flag recognition for arbitrary HC4 potentials or either conjecture.",
+      "canonical_source": "JC2_HC4_SHARED_BOUNDARY_PROGRAM.md",
+      "dependencies": [
+        "QPK4",
+        "QLD4",
+        "QGM4"
+      ],
+      "checker": "scripts/verify_jc2_hc4_isotropic_boundary_bridge.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ef8f1a2666e593876a7cbd7301e2f2106080d42c5b534a4b65c4bb514100285e",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the paired initial-conormal associated-graded cokernel as a candidate forced quartic mismatch"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "DZE4",
       "kind": "corollary",
       "state": "proved",
@@ -12925,6 +12953,34 @@
       ],
       "supersedes": [
         "the proposed nonregular cyclic pilot in KIG1"
+      ],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "D5AM1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Split D5 Cox-fill and affine-linear modification obstruction",
+      "scope": "Over a characteristic-zero field containing sqrt(5), J_5/5 factors as R_+ R_- and the reduced target branch pulls back with source boundary vector (1,2,2), while J_5 has vector (0,1,1). The two smooth ramification colors meet with multiplicity two. The product fill xy=R_+R_- is a normal singular threefold with class group Z and only constant units. Each one-color fill is A3, but leaves the other Jacobian color. The separated simultaneous fill is a factorial four-dimensional nondegenerate quadric cone with class group zero, constant units, and a unique singular vertex, so neither standard fill is affine space; free stabilization preserves the defects. More generally, for every r>=1, a map F(a,z)=h(a)+M(a)z over K[a] with r auxiliary variables and nonzero constant Jacobian has generic degree one. Applied over K=k(u), every polynomial D5 modification that retains u and is affine-linear in any number of auxiliary coordinates loses the degree-five function-field extension. Thus a surviving construction must modify u and use nonlinear auxiliary dependence. This result does not construct an absolute Keller map.",
+      "canonical_source": "extended-geometry/ABSOLUTE_DIHEDRAL_D5_MODIFICATION_FRONTIER.md",
+      "dependencies": [
+        "CDIG1",
+        "external: Nagata class-group localization theorem",
+        "external: Picard group and class-group sequence for a smooth projective quadric cone"
+      ],
+      "checker": "scripts/verify_absolute_dihedral_d5_modification_frontier.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f4f94f411d4a2bf33af48b36681d633f3d1982282ff33221c98a4716388534be",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [
+        "the unrestricted D5 affine-linear coupled-mask search in CDIG1"
       ],
       "replaced_by": [],
       "priority": "derived"

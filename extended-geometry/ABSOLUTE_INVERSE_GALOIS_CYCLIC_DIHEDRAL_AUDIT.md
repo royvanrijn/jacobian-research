@@ -24,8 +24,10 @@ There are two conclusions.
    derivative-unit suspension gives a determinant-minus-one morphism of
    smooth affine threefold charts.  The remaining absolute problem is exactly
    the polynomial removal of its factored boundary denominator.  A
-   one-coordinate triangular removal is impossible; coupled affine
-   modifications remain open.
+   one-coordinate triangular removal is impossible.  In degree five, the
+   first product and separated Cox fills and every affine-linear auxiliary
+   coupling which retains \(u\) are also excluded; nonlinear coupled affine
+   modifications which feed back into \(u\) remain open.
 
 All invariant and factorization statements below are geometric, or hold over
 a characteristic-zero field containing the required \(n\)-th cosines.  Over a
@@ -381,6 +383,16 @@ that cross terms can cancel \(J_n\).  It must pass four independent tests:
 No such absolute map is constructed here.  For \(D_3=S_3\), \(D_4\), and
 \(D_5\), these equations are the next bounded affine-modification search.
 
+For \(D_5\), the
+[dedicated modification frontier](ABSOLUTE_DIHEDRAL_D5_MODIFICATION_FRONTIER.md)
+now performs the first such precomputation.  It factors
+\(J_5/5=R_+R_-\), proves that the product Cox fill is singular with class
+group \(\mathbb Z\), and proves that the separated two-color fill is a
+factorial but singular quadric cone.  More generally, retaining \(u\) and
+making all remaining outputs affine-linear in any number of auxiliary
+coordinates forces generic degree one.  Thus the first surviving \(D_5\)
+ansatz must modify \(u\) and depend nonlinearly on the new coordinates.
+
 ## 10. Low-degree cards
 
 | group/action | incidence polynomial | discriminant | source unit rank | orientation class group | absolute status |
@@ -397,13 +409,15 @@ cosine-field model or a different rational generic polynomial.
 
 ## 11. Next computations
 
-1. Run the coupled quadratic two-mask search first for \(D_3\) and \(D_4\).
-2. Audit a one-parameter odd-dihedral generic polynomial and compare its
+1. For \(D_5\), search only nonlinear two-mask ansatzes which modify \(u\);
+   product/separated Cox fills and affine-linear masks are closed.
+2. Run the coupled quadratic two-mask search first for \(D_3\) and \(D_4\).
+3. Audit a one-parameter odd-dihedral generic polynomial and compare its
    boundary lattice with the two-parameter Dickson chart.
-3. Compute the arithmetic normalizer of the rational Dickson family for
+4. Compute the arithmetic normalizer of the rational Dickson family for
    each \(n\), rather than reporting only geometric \(D_n\).
-4. For the odd \(A_{n-1}\) orientation surface, compute the Cox pullback of
+5. For the odd \(A_{n-1}\) orientation surface, compute the Cox pullback of
    every ramification color and test whether the class
    \([J_n]\) becomes a primitive character.
-5. Treat \(V_4\) next as an imprimitive degree-four action, not as a regular
+6. Treat \(V_4\) next as an imprimitive degree-four action, not as a regular
    cyclic-style cover; the action choice is decisive.

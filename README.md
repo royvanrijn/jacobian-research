@@ -1361,8 +1361,12 @@ degree-`n` dihedral action it computes the uniform Dickson invariant rings,
 discriminant and orientation covers, boundary unit lattices, class groups,
 derivative unit, and essential dimension.  The resulting smooth-affine
 threefold chart has determinant minus one; a triangular one-coordinate
-polynomial completion is excluded, while coupled affine modifications remain
-open.  The program's
+polynomial completion is excluded.  The
+[degree-five modification frontier](extended-geometry/ABSOLUTE_DIHEDRAL_D5_MODIFICATION_FRONTIER.md)
+further excludes the natural product and separated Cox fills and every
+affine-linear auxiliary coupling that retains the \(u\)-coordinate; any
+surviving \(D_5\) construction must modify \(u\) and use genuinely nonlinear
+auxiliary dependence.  The program's
 [first proper-monodromy checkpoint](extended-geometry/A4_KELLER_INVERSE_COVER.md)
 is an oriented degree-four root cover with exact generic `A_4`, a
 determinant-one suspension on smooth affine boundary complements, and a full

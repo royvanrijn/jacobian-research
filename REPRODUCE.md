@@ -4687,6 +4687,21 @@ monodromy are in
 The bounded replay is a regression certificate, not an exhaustive proof over
 all degrees.
 
+## Absolute \(D_5\) affine-modification frontier
+
+The degree-five precomputation checks the split derivative and branch
+ledgers, the tangency of the two ramification colors, the singular product
+and separated Cox fills, and the maximal-minor determinant identity for
+affine-linear couplings with two and three new coordinates:
+
+```bash
+.venv/bin/python scripts/verify_absolute_dihedral_d5_modification_frontier.py
+```
+
+The all-degree affine-linear mask theorem, class-group calculations, and
+the exact surviving nonlinear search conditions are in
+[`extended-geometry/ABSOLUTE_DIHEDRAL_D5_MODIFICATION_FRONTIER.md`](extended-geometry/ABSOLUTE_DIHEDRAL_D5_MODIFICATION_FRONTIER.md).
+
 ## \(A_4\) Keller inverse-Galois frontier
 
 The pure-target ledger, two-mask factorization, normalized-boundary
@@ -5088,15 +5103,20 @@ The combined programme is
 Its exact first calculation identifies the cotangent determinant
 \(\det\operatorname{Hess}(tP+mQ+H)=J(P,Q)^2\), the first isotropic Schur
 remainder \(-\Phi_{mm}R(P)\), and the quartic packet's reduced conormal
-residue \(2\ell\).  Run:
+residue \(2\ell\).  The completed continuation computes the \(3+1\) cusp
+and both \(2+2\) connector initials, proves that the relevant positive
+associated-graded conductor maps are isomorphisms, and finds
+\(\operatorname{Obs}_{\rm pair}=0\) for all 72 monodromy-compatible
+labellings.  Run:
 
 ```bash
 .venv/bin/python scripts/verify_jc2_hc4_isotropic_boundary_bridge.py
 ```
 
 This does not verify isotropic-flag recognition for an arbitrary
-four-variable potential or nonvanishing of the proposed paired
-initial-conormal class.
+four-variable potential.  It proves instead that the proposed local
+paired initial-conormal cokernel cannot be nonzero without an additional
+global transport between the two connector jet lines.
 
 ## Direct Schur-descent audit for `HC_4`
 
