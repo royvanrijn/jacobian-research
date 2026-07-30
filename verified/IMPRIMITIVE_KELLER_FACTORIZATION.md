@@ -342,10 +342,12 @@ The next exact questions are now sharply separated.
    normalization fails the polynomial-sandwich criterion.  Such examples
    would prove concretely that imprimitive monodromy is not sufficient for
    polynomial decomposition in the Keller setting.
-3. Classify all polynomial-ring sandwiches between `k[C_{a,b}]` and
-   `k[x,y,z]`.  This is the multivariable analogue of Ritt factorization and
-   asks whether the displayed block system is the unique compositional
-   structure.
+3. Determine which candidate intermediate fields between `k[C_{a,b}]` and
+   `k[x,y,z]` admit a polynomial-ring sandwich.  The
+   [affine-open rigidity lemma](KELLER_RITT_PRODUCT_THEOREM.md#5-affine-open-rigidity)
+   proves that a field admitting one such Keller sandwich admits no second
+   inequivalent affine model; the remaining problem is existence across the
+   other block-system fields.
 4. Compare the two orders `C_{a,b}` and `C_{b,a}`.  Their block sizes differ,
    so their monodromy systems can distinguish them unless a common refinement
    or Ritt-type move exists.

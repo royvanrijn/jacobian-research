@@ -1593,11 +1593,24 @@ is claimed.
 The results leave four sharply separated directions.
 
 1. **Growing-depth defect cone.**  Theorem 3.1 kills every fixed
-   filtration depth.  Record operator-order excess and polynomial-degree
-   loss as a two-dimensional semigroup and study its normalized limit
-   cone.  A separator positive on every nonzero limiting slope would
-   promote fixed-layer vanishing to full GVC; a zero-slope face would
-   identify the only possible asymptotic counterexample architecture.
+   filtration depth.  The later
+   [uniform face-termination theorem](BINARY_GVC_UNIFORM_FACE_TERMINATION.md)
+   classifies the leading Hall locus for every \(r<\deg P\) by one root
+   multiplicity and proves that every unequal-weight common-threshold
+   face is automatically terminal.  Its density refinement also kills
+   every path with only \(o(m)\) excursions from one unequal-weight or
+   ordinary-homogeneous face.  Thus a remaining path must have depth
+   proportional to \(m\), avoid every single common threshold, and use at
+   least two distinct faces with positive limiting density in the
+   coefficient at \(\lfloor\rho m\rfloor\).  The missing theorem must turn
+   that convolution into a one-radial exposed lower face or reduce its
+   Hall/jet support.  Generic translation makes the associated balanced
+   radial polytope exactly the intersection of the operator Newton polygon
+   with the downward derivative polygon of \(P\).  Multiradial prime
+   isolation closes an empty intersection or one with a componentwise
+   least point, so the unresolved convolution must join incomparable
+   Pareto-minimal endpoints.  A further degree row alone does not settle
+   this asymptotic alternative.
 2. **Lowest-order-two anchor.**  Theorem 3.4 removes the entire
    lowest-order-one class.  The first unresolved symbols therefore have
    lowest positive order \(r\ge2\), are genuinely nonhomogeneous, have
@@ -1626,7 +1639,11 @@ The results leave four sharply separated directions.
    closes the entire \((r,\deg P)=(5,6)\) row, including every quintic
    root partition and arbitrary higher jets.  The later quartic- and
    cubic-leading sextic theorems close \(r=4\) and \(r=3\), respectively.
-   Only \(r=2\) remains open in degree six.
+   The
+   [complete quadratic-leading sextic theorem](BINARY_QUADRATIC_ALL_ROOT_PARTITIONS_GVC.md)
+   closes \(r=2\), including both nested axes of the pure-sixth-power
+   endpoint.  Hence every binary operator satisfies GVC through polynomial
+   degree six, and the next nonhomogeneous degree frontier begins at seven.
    Theorem 3.1 has already removed every fixed leading face.
 3. **Coupled coefficient polarization.**  A one-coefficient translation
    is exactly the split-symbol class, while coefficient extraction of the

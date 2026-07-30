@@ -87,9 +87,12 @@ be a homogeneous binary form.  If
 then \(f=0\).  The cutoff is sharp: for every \(d=1,2,3,4\),
 there is a nonzero form for which the first \(d\) moments vanish.
 
-Theorem 1.3 is an exact fixed-dimension, fixed-degree result.  Theorems
-1.1--1.2 are finite support theorems.  None proves the Factorial Conjecture
-or the Strong Factorial Conjecture outside the displayed ranges.
+Theorem 1.3 is an exact **finite-cutoff** result: it determines how many
+initial moments suffice through degree four.  Theorems 1.1--1.2 are finite
+support theorems.  These computations do not prove the Factorial
+Conjecture or the Strong Factorial Conjecture outside the displayed
+ranges.  The different all-moments statement for homogeneous binary forms
+is known in every degree by Liu--Sun, as recalled below.
 
 The canonical checker is
 [`verify_sparse_factorial_moment_frontier.py`](../scripts/verify_sparse_factorial_moment_frontier.py).
@@ -107,6 +110,12 @@ and sums of prime powers, gave a construction principle, and obtained
 partial two-monomial results in
 [*On the Incompatibility of Diophantine Equations Arising from the Strong
 Factorial Conjecture*](https://doi.org/10.1016/j.jalgebra.2017.01.039).
+Liu--Sun proved the all-moments Factorial Conjecture for every homogeneous
+binary polynomial in
+[*The Factorial Conjecture and Images of Locally Nilpotent
+Derivations*](https://doi.org/10.1017/S0004972719000546).  Their theorem
+does not provide a finite cutoff depending on the degree, so Theorem 1.3
+and the sharp-cutoff question remain separate.
 
 Theorem 1.1 is therefore aimed at the next sparse coefficient count rather
 than repeating the established linear-form calculations.  It is only a
@@ -207,7 +216,9 @@ of degree \(d\), then
 \]
 
 Consequently Theorem 1.3 is equivalently a finite complex polynomial-moment
-theorem on the unit interval for degrees at most four.
+theorem on the unit interval for degrees at most four.  With vanishing
+assumed for every \(m\), the one-variable polynomial-moment theorem gives
+the Liu--Sun all-degree conclusion \(f=0\).
 
 For each \(d\), the checker forms the moment polynomials
 
@@ -301,9 +312,11 @@ The computations point to a more focused program.
 1. **Arbitrary four-term binary supports.**  The paired family is closed, but
    a general four-term polynomial is the next possible sparse Strong
    Factorial counterexample.
-2. **Degree-five binary homogeneous forms.**  The exact pattern suggests the
+2. **Degree-five binary homogeneous finite cutoff.**  The exact pattern suggests the
    bounded conjecture that the first \(d+1\) moments suffice for every
-   homogeneous binary degree \(d\), and that \(d+1\) is sharp.  Degree five
+   homogeneous binary degree \(d\), and that \(d+1\) is sharp.  Liu--Sun
+   already settle the all-moments implication; the unresolved issue here
+   is the sharp finite cutoff.  Degree five
    needs modular Gröbner discovery or a recurrence/residue proof rather than
    the direct rational calculation used here.
 3. **Interval-moment structure.**  Formula (5.1) replaces multivariate
@@ -312,7 +325,7 @@ The computations point to a more focused program.
    \int_0^1\frac{dt}{1-zf(t,1-t)}.
    \]
    Picard--Fuchs recurrences or inverse-branch residues are the natural
-   route to an all-degree theorem.
+   route to an all-degree finite-cutoff theorem.
 
 Cyclotomic tensor factors should not be the next priority: they lengthen a
 finite zero prefix only by increasing the monomial count at the same rate.

@@ -43,12 +43,20 @@ Selberg--Delange.
 
 ## Companion draft
 
+- `tschirnhaus-keller-non-descent` — *Arithmetic Descent and Geometric
+  Non-Descent for Universal Keller Fibres* (prospectus)
+
 - `quadratic-gauge-nonproperness` — *The Exact Nonproperness Locus of the
   Quadratic-Gauge Keller Maps*
 
 This geometric companion is not part of the current two-paper publication
 sequence and is excluded from `make verify-papers`. It remains in
 `make clean-papers` and can be compiled directly.
+
+`tschirnhaus-keller-non-descent` currently contains a theorem-and-scope
+prospectus rather than a TeX manuscript.  It assembles the generic
+non-descent theorem, the rank-five transition calculation, and the clean
+decorated receiver while keeping the full marked stabilizer problem open.
 
 ## Parked
 

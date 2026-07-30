@@ -425,6 +425,15 @@ upper-triangular flag, then cut the four-variable central core out
 radically.  The zero-\(V_{1,4}\) boundary reduces exactly to the existing
 balanced \((3,3)\) problem, so this entire mixed stratum is safe if and
 only if \(V_{3,3}\) is safe.
+On the hardest normalized non-null-quadratic chart, the exact
+\(Q\)-border continuation now closes one full characteristic-zero
+one-parameter slice.  The degree-\(100\) factor of the \(\mu_6\) norm is
+removed by \(\mu_7\); the only remaining cubic factor degenerates the
+Kummer modulus to \(u^4\) and is empty after the required
+\(u=s_0^{-1}\) localization.  This removes the apparent exact cubic
+survivor, but the unspecialized \(Q\) component and the other
+\(t_0\)-open border strata remain open, so \(V_{3,3}\) is not yet
+classified.
 The resulting diagonal-core formula extends uniformly in degree.  At the
 first degree-eight threshold, exact calculations over
 \(\mathbb F_{101}\) and \(\mathbb F_{1009}\) give the same
@@ -625,6 +634,10 @@ close \((3+1)\), \((2+2)\), and \((2+1+1)\) by exact defect equations
 through moment four and one-sided final faces.  Consequently every binary
 constant-coefficient operator satisfies GVC for polynomials of degree at
 most five.
+<!-- status-consumer: GVC2D5Q4 a365c557f17d6b51 -->
+<!-- status-consumer: GVC2D5Q31 a73a8633d9ee8cb6 -->
+<!-- status-consumer: GVC2D5Q2 578f81f3ba535e35 -->
+<!-- status-consumer: GVC2D5U fd1243fa98f53a95 -->
 
 The entire quintic-leading degree-six row is also closed.  The
 [all-root-partitions theorem](extended-geometry/BINARY_QUINTIC_ALL_ROOT_PARTITIONS_GVC.md)
@@ -634,24 +647,57 @@ all seven quintic root partitions, with arbitrary lower polynomial pieces
 and arbitrary higher operator jets.  The
 [quintuple-root theorem](extended-geometry/BINARY_QUINTIC_QUINTUPLE_ROOT_GVC.md)
 retains the longest equality chain: it reaches operator order ten before
-moments five and six force its last parameters to vanish.  This is not a
-universal degree-six theorem; at this point the rows with lowest orders
-\(2,3,4\) were the remaining cases.
+moments five and six force its last parameters to vanish.  The later
+quartic-, cubic-, and quadratic-leading theorems close the other three
+lowest-order rows.
+<!-- status-consumer: GVC2D6Q5 60eae12228c71e37 -->
+<!-- status-consumer: GVC2D6R3 1ce686e5cc7873ce -->
+<!-- status-consumer: GVC2D6R4 69f64fe6116adf69 -->
+<!-- status-consumer: GVC2D6R5 cc9c830fbf36ae3f -->
 
 The full SIC nullcone equality is now false, but the new witness has full
 coefficient-matrix rank and therefore lies outside the separable GVC
-Segre cone.  The remaining nonhomogeneous frontier begins at polynomial
-degree six, requires degree greater than the lowest positive operator
-order, and must avoid the factor-unit architecture.  Its complete
-\((r,\deg P)=(5,6)\) and \((4,6)\) rows are now removed, leaving only
-\(r=2,3\) in polynomial degree six.  The
+Segre cone.  The
 [complete cubic-leading sextic theorem](extended-geometry/BINARY_CUBIC_ALL_ROOT_PARTITIONS_GVC.md)
-now removes \(r=3\): a Hall classification reduces the three cubic root
+removes \(r=3\): a Hall classification reduces the three cubic root
 partitions to multiplicities one, two, and three, exact Newton-face
 calculations close every projective chart, and the simple-root defect
-bound has slope four against the degree gap three.  Thus only \(r=2\)
-remains in degree six.  If the lowest order is exactly two, its polynomial
-degree must be at least six.  The
+bound has slope four against the degree gap three.
+<!-- status-consumer: GVC2D6R2 c19c8e10197918a3 -->
+The
+[complete quadratic-leading sextic theorem](extended-geometry/BINARY_QUADRATIC_ALL_ROOT_PARTITIONS_GVC.md)
+closes the final row \(r=2\).  Its distinct-root chart reduces to the
+transverse-linear/high-order class; its double-line pure-sixth-power
+endpoint branches through the exact radical \((r,q,A,Bz)\), and both
+secondary axes terminate on common-threshold coordinate-deficit faces.
+<!-- status-consumer: GVC2D6U 82fdb9aa485a9197 -->
+Consequently every binary constant-coefficient operator satisfies GVC for
+polynomials of degree at most six.  The remaining genuinely nonhomogeneous
+frontier begins at polynomial degree seven, still requires degree greater
+than the lowest positive operator order, and must avoid the factor-unit
+architecture.
+<!-- status-consumer: GVC2UFT 73343babf30ed5d7 -->
+The
+[uniform binary face-termination theorem](extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md)
+now classifies the leading Hall locus for all operator and polynomial
+degrees by one root multiplicity, and proves that every unequal-weight
+common-threshold face is automatically terminal by a prime-dilated Newton
+endpoint.  The same argument excludes one unequal-weight exposed endpoint
+on every fixed rational normalized output ray.  Homogeneous binary
+factorial rigidity now also removes every one-channel slope-\(-1\) Pareto
+tie in all degrees.  The remaining all-degree obstruction is not another
+root partition or terminal radical: it is a linearly migrating
+beta--torus coefficient whose convolution uses at least two distinct faces
+with positive limiting density and never reaches one common threshold.
+More intrinsically, the operator Newton polygon must meet the
+downward derivative polygon of \(P\) in at least two incomparable
+Pareto-minimal points; an empty intersection or one componentwise least
+point is now proved safe by multiradial prime isolation.  Toric resolution
+of the remaining edge is not enough because it changes the factorial
+weights.  Degree seven is therefore a regression target for this
+factorial-compatible Hall alternative, not an endpoint by itself.  No
+unrestricted binary GVC theorem is claimed.
+The
 [low-dimensional GVC program](extended-geometry/TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md)
 also records the separate ordinary-Laplacian route: quadraticize the
 factored third-order Dvorsky symbol by a nonlinear polarization, minimizing
@@ -661,7 +707,7 @@ dimension doubling.  The
 now excludes every polynomial or formal harmonic lift that recovers the
 Dvorsky polynomial on the new coordinate hyperplane: its second moment
 restricts to \(12t^2-8\rho t\), so the \(t^2\)-coefficient cannot vanish.
-No new GVC endpoint is claimed.
+No improved ordinary-Laplacian endpoint is claimed.
 The [lower-face prime theorem](extended-geometry/TWO_REAL_GMC_LOWER_FACE_THEOREM.md)
 proves GMC in two real variables, completing the classification:
 `GMC(n)` holds exactly for `n<=2`.  The former
@@ -914,6 +960,28 @@ columns `1,r,u,r*u` have rank at most three.  Its `4`-by-`4` minors define a
 smooth codimension-`N-3` locus, become explicit polynomial equations in the
 universal Keller chart, and show that collision framing removes the finite
 `S_N` ambiguity but not the `N-3` moduli of the root-line embedding.  The
+[generic Tschirnhaus non-descent theorem](verified/GENERIC_TSCHIRNHAUS_NON_DESCENT.md)
+combines that codimension-`N-3` projective locus with the
+codimension-`N-4` equality relation for the intrinsic quadratic-gauge
+Fitting fingerprint.  A generic primitive Tschirnhaus change therefore
+preserves the abstract root algebra but changes the stable ambient map; the
+split witness `r_i=i`, `u_i=i+i^2` is separated for every `N>=6` by
+\[
+ J_N(P_u)-J_N(P_r)
+ =-\frac{(N-1)(7N+11)}{30N(N+1)(N+2)}.
+\]
+Equality of all boundary coordinates is not a projectivity test: its locus
+has one less codimension and generically contains nonprojective pairs.  The
+[clean decorated receiver](verified/QUADRATIC_GAUGE_DECORATED_RECEIVER.md)
+is the honest span from marked incidence to `BS_N` and to unmarked stable-map
+moduli.  Its geometric marked fibre has dimension `N-1`, its target fibres
+have dimension three, and its image in unmarked stable-map moduli has
+dimension `N-4`.  The
+[rank-five transition theorem](verified/RANK_FIVE_TSCHIRNHAUS_TRANSITION_LOCUS.md)
+shows that canonical marked transport is only root scaling and reduces
+arbitrary marked transport to an unclassified fixed-map stabilizer orbit.
+None of these dimensions is a global lower bound for `ktdim` or `kdeg`, and
+no total global moduli-fibre dimension is claimed.  The
 [rank-four nonprojective continuation](verified/RANK_FOUR_NONPROJECTIVE_KELLER_LIFT.md)
 then treats the first transverse direction.  It identifies the exact
 ground-field `K*/(K*)^5` twist, replaces the original witness by a

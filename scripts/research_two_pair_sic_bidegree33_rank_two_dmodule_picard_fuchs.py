@@ -39,9 +39,17 @@ OUTPUT = (
     / "generated-results"
     / "two_pair_sic_bidegree33_rank_two_dmodule_picard_fuchs_research.json"
 )
+LOG = OUTPUT.with_suffix(".log")
+V_CHECKPOINT = OUTPUT.with_name(
+    "two_pair_sic_bidegree33_rank_two_dmodule_picard_fuchs_v_checkpoint.m2"
+)
 
 
-def macaulay2_code(include_pushforward: bool) -> str:
+def macaulay2_code(
+    include_pushforward: bool,
+    v_checkpoint: Path,
+    strategy: str,
+) -> str:
     q = q_expression(0).replace("t", "v")
     common = f"""
 needsPackage "BernsteinSato";
@@ -58,7 +66,9 @@ u = W_1;
 M = W^1/A1;
 print "CYCLIC_ANNIHILATOR_START";
 K = ker map(M,W^1,matrix{{{{u^2}}}});
-Irat = ideal flatten entries generators K;
+IratRaw = ideal flatten entries generators K;
+print("CYCLIC_RAW_GENERATORS " | toString numgens IratRaw);
+Irat = trim IratRaw;
 print("CYCLIC_ANNIHILATOR_GENERATORS " | toString numgens Irat);
 print("CYCLIC_HOLONOMIC " | toString isHolonomic Irat);
 print("CYCLIC_RANK " | toString holonomicRank Irat);
@@ -68,12 +78,23 @@ print("CYCLIC_RANK " | toString holonomicRank Irat);
 print "ANNIHILATOR_ONLY_END";
 exit 0;
 """
-    return common + """
+    m2_strategy = {
+        "schreyer": "Schreyer",
+        "vhomogenize": "Vhomogenize",
+    }[strategy]
+    return common + f"""
 print "PUSHFORWARD_V_START";
-Jv = DintegrationIdeal(Irat,{0,0,1});
+Jv = DintegrationIdeal(
+    Irat,{{0,0,1}},Strategy=>{m2_strategy}
+    );
 print("PUSHFORWARD_V_GENERATORS " | toString numgens Jv);
+checkpoint = openOut "{v_checkpoint.as_posix()}";
+checkpoint << "Wv = " << toExternalString ring Jv << ";" << endl;
+checkpoint << "Jv = " << toExternalString Jv << ";" << endl;
+checkpoint << close;
+print "PUSHFORWARD_V_CHECKPOINT_WRITTEN";
 print "PUSHFORWARD_U_START";
-J = DintegrationIdeal(Jv,{0,1});
+J = DintegrationIdeal(Jv,{{0,1}},Strategy=>{m2_strategy});
 print "TELESCOPER_BEGIN";
 print J;
 print "TELESCOPER_END";
@@ -103,8 +124,20 @@ def has_exact_marker(output: str, marker: str) -> bool:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--timeout", type=int, default=1800)
+    parser.add_argument(
+        "--timeout",
+        type=int,
+        default=1800,
+        help="wall-clock limit in seconds; 0 disables the limit",
+    )
     parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument("--log", type=Path, default=LOG)
+    parser.add_argument("--v-checkpoint", type=Path, default=V_CHECKPOINT)
+    parser.add_argument(
+        "--strategy",
+        choices=("schreyer", "vhomogenize"),
+        default="schreyer",
+    )
     parser.add_argument("--annihilator-only", action="store_true")
     arguments = parser.parse_args()
 
@@ -117,17 +150,30 @@ def main() -> None:
             "Normaliz is required by Macaulay2's BernsteinSato package"
         )
 
-    completed = subprocess.run(
-        [macaulay2, "--silent", "--stop"],
-        input=macaulay2_code(
-            include_pushforward=not arguments.annihilator_only
-        ),
-        text=True,
-        capture_output=True,
-        timeout=arguments.timeout,
-        check=True,
-    )
-    output = completed.stdout
+    arguments.log.parent.mkdir(parents=True, exist_ok=True)
+    arguments.v_checkpoint.parent.mkdir(parents=True, exist_ok=True)
+    timeout = None if arguments.timeout == 0 else arguments.timeout
+    try:
+        with arguments.log.open("w") as log:
+            completed = subprocess.run(
+                [macaulay2, "--silent", "--stop"],
+                input=macaulay2_code(
+                    include_pushforward=not arguments.annihilator_only,
+                    v_checkpoint=arguments.v_checkpoint.resolve(),
+                    strategy=arguments.strategy,
+                ),
+                text=True,
+                stdout=log,
+                stderr=subprocess.STDOUT,
+                timeout=timeout,
+                check=True,
+            )
+    except subprocess.TimeoutExpired as error:
+        raise RuntimeError(
+            f"Macaulay2 timed out after {arguments.timeout} seconds; "
+            f"partial output is retained in {arguments.log}"
+        ) from error
+    output = arguments.log.read_text()
     required_markers = [
         "FIRST_ORDER_ANNIHILATOR_START",
         "FIRST_ORDER_HOLONOMIC true",
@@ -142,6 +188,7 @@ def main() -> None:
         required_markers.extend(
             [
                 "PUSHFORWARD_V_START",
+                "PUSHFORWARD_V_CHECKPOINT_WRITTEN",
                 "PUSHFORWARD_U_START",
                 "TELESCOPER_BEGIN",
                 "TELESCOPER_END",
@@ -198,10 +245,15 @@ def main() -> None:
         },
         "specific_rational_function_annihilator": {
             "numerator": "u^2",
+            "raw_generators": marker_integer(
+                output,
+                "CYCLIC_RAW_GENERATORS",
+            ),
             "generators": marker_integer(
                 output,
                 "CYCLIC_ANNIHILATOR_GENERATORS",
             ),
+            "presentation_optimization": "exact ideal trim",
             "holonomic": True,
             "holonomic_rank": 1,
         },
@@ -217,6 +269,7 @@ def main() -> None:
     else:
         payload["integration"] = {
             "method": "sequential",
+            "resolution_strategy": arguments.strategy,
             "first_variable": "v=t",
             "first_weight": [0, 0, 1],
             "intermediate_generators": marker_integer(
@@ -235,7 +288,11 @@ def main() -> None:
     print("PASS exact rational-function annihilator")
     if not arguments.annihilator_only:
         print("PASS exact ambient D-module pushforward")
-    print(f"PASS wrote {arguments.output.relative_to(ROOT)}")
+    try:
+        display_output = arguments.output.relative_to(ROOT)
+    except ValueError:
+        display_output = arguments.output
+    print(f"PASS wrote {display_output}")
 
 
 if __name__ == "__main__":

@@ -609,14 +609,48 @@ moving-linear theorem.  Hence every
 \]
 is safe.
 
-Generic nonmonomial slopes close prime by prime.  For coprime
+Nonmonomial slopes close prime by prime.  For coprime
 \(q=ax+b\), every prime factor of \(a\) forces growing content, and the
 \(u\)-face does the same unless
 \[
  v(b\bmod u)=(a\bmod u)w.
 \]
-Off this locus, \(D((q))\) is Mathieu--Zhao.  On it, \(q\in uA\) despite
-\(\gcd(a,b)=1\) in \(B[x]\): this is a genuine conductor cancellation.
+On this locus, \(q\in uA\), so \(D(qA)\subseteq uA\) and eventual pure
+membership directly forces the missing \(u\)-content.  Hence
+\(D((q))\) is Mathieu--Zhao for every coprime \(a,b\in B\), including
+the aligned conductor face.
 
-The next principal target is therefore the aligned conductor-descent
-locus, plus removal of nontrivial common invariant content.
+Common invariant content also closes abstractly.  If \(M\) is
+Mathieu--Zhao and \(cM\subseteq M\), then \(cM\) is Mathieu--Zhao:
+choose one large \(N\) with \(f^N/c\in M\) and apply the Mathieu property
+of \(M\) with the fixed multiplier \(g f^N/c\).  Since
+\(D(q_0A)\) is a \(B\)-module,
+\[
+ D(cq_0A)=cD(q_0A)
+\]
+inherits the property.  Thus every invariant-linear carrier
+\(q=ax+b\), \(a,b\in B\), \(a\ne0\), is safe.
+
+The descent and multiplicity layer also closes.  Generic orbit degree one
+is intrinsically \(D^2h=0\), and after removing invariant content there is
+one noninvariant irreducible factor.  At every prime of \(Dh\), a
+prime-local inverse chart has the form
+\[
+ x=\frac{\text{unit}\,(h-\beta)}{Dh}
+ \quad\text{or}\quad
+ y=\frac{\text{unit}\,(h-\beta)}{Dh}.
+\]
+The valuation face is therefore divisible by \(h-\beta\).  The endpoint
+\(\beta\) cannot vanish for a noninvariant irreducible \(h\), and the
+moment lemma forces growing content at every denominator prime.
+Divisibility bootstrapping closes all powers of \(h\), while Mathieu
+scaling restores invariant content.  Combining this with the two-root
+theorem proves \(D(qA)\) Mathieu--Zhao for every nonzero principal
+carrier \(q\in A\) in the model
+\(D=u\partial_x+v\partial_y\).
+
+The next live locus is therefore genuinely nonprincipal: ideals not
+containing a power of the plinth ideal \((u,v)\) and not covered by the
+finite-residual carrier theorems.  A counterexample search should target
+the interaction of two or more moving generators, where no single
+vanishing endpoint controls the primitive.

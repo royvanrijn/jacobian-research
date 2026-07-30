@@ -1,0 +1,63 @@
+
+i1 : 
+     needsPackage "BernsteinSato";
+
+i2 : R = QQ[z,u,v];
+
+i3 : Q = 216*1+-648*v^1+648*v^2+-216*v^3+91*u^1+-5*u^1*v^1+-263*u^1*v^2+177*u^1*v^3+23*u^2+44*u^2*v^1+145*u^2*v^2+-212*u^2*v^3+11*u^3+-4*u^3*v^1+102*u^3*v^2+245*u^3*v^3+13*u^4*v^1+5*u^4*v^2+131*u^4*v^3+17*u^5*v^2+20*u^5*v^3+19*u^6*v^3;
+
+i4 : H = u^3-z*Q;
+
+i5 : print "FIRST_ORDER_ANNIHILATOR_START";
+FIRST_ORDER_ANNIHILATOR_START
+
+i6 : A1 = kOrderAnnFa(1,H,-1);
+
+o6 : Ideal of QQ[z, u..v, dz, du, dv]
+
+i7 : print("FIRST_ORDER_ANNIHILATOR_GENERATORS " | toString numgens A1);
+FIRST_ORDER_ANNIHILATOR_GENERATORS 34
+
+i8 : print("FIRST_ORDER_HOLONOMIC " | toString isHolonomic A1);
+FIRST_ORDER_HOLONOMIC true
+
+i9 : print("FIRST_ORDER_RANK " | toString holonomicRank A1);
+FIRST_ORDER_RANK 1
+
+i10 : W = ring A1;
+
+i11 : u = W_1;
+
+i12 : M = W^1/A1;
+
+i13 : print "CYCLIC_ANNIHILATOR_START";
+CYCLIC_ANNIHILATOR_START
+
+i14 : K = ker map(M,W^1,matrix{{u^2}});
+
+i15 : IratRaw = ideal flatten entries generators K;
+
+o15 : Ideal of W
+
+i16 : print("CYCLIC_RAW_GENERATORS " | toString numgens IratRaw);
+CYCLIC_RAW_GENERATORS 76
+
+i17 : Irat = trim IratRaw;
+
+o17 : Ideal of W
+
+i18 : print("CYCLIC_ANNIHILATOR_GENERATORS " | toString numgens Irat);
+CYCLIC_ANNIHILATOR_GENERATORS 26
+
+i19 : print("CYCLIC_HOLONOMIC " | toString isHolonomic Irat);
+CYCLIC_HOLONOMIC true
+
+i20 : print("CYCLIC_RANK " | toString holonomicRank Irat);
+CYCLIC_RANK 1
+
+i21 : 
+      print "ANNIHILATOR_ONLY_END";
+ANNIHILATOR_ONLY_END
+
+i22 : exit 0;
+grationIdeal(Irat,{0,0,1});

@@ -21,8 +21,9 @@ order three, and let \(\deg P=6\).
 
 Arbitrary lower pieces of \(P\), arbitrary higher operator jets, and all
 three root partitions of the binary cubic are included.  Consequently the
-only remaining binary polynomial-degree-six row has lowest operator order
-two.
+only row that remained at this stage had lowest operator order two; it is
+now closed by the
+[complete quadratic-leading theorem](BINARY_QUADRATIC_ALL_ROOT_PARTITIONS_GVC.md).
 
 ## 2. Leading Hall locus and local supports
 

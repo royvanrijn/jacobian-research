@@ -1321,15 +1321,50 @@ pseudo-remainder coefficients \(A,B\) have term/degree profiles
 Reduction modulo \(43\) gives the corresponding \(Q\)-row data above
 up to nonzero scalars.
 
+There is now one exact characteristic-zero component exclusion after the
+dense pivot.  On the slice
+\[
+ s_1=0,\qquad \ell=s_1u-t_1=0,\qquad T=t_2/u^2,
+ \qquad u=s_0^{-1},                                    \tag{5.12ad}
+\]
+the residual degree-five equation gives a quartic Kummer extension and
+\((\mu _4,\mu _5)\) gives the length-four fiber basis
+\[
+ 1,\ s_5,\ s_6,\ s_5^2.
+\]
+The multiplication norm of \(\mu _6\) has two irreducible factors in
+\(\mathbb Q[T]\): one of degree \(100\), and
+\[
+ N_3(T)=909T^3+25521T^2+6189560T-22223500.             \tag{5.12ae}
+\]
+The degree-\(100\) factor is coprime to a coefficient of
+\(\det(M_{\mu _6}+zM_{\mu _7})\), so the \((\mu _6,\mu _7)\)-ideal is
+the unit ideal there.  Over \(\mathbb Q[T]/(N_3)\), the exact Kummer
+modulus becomes
+\[
+ u^4.                                                   \tag{5.12af}
+\]
+Thus the complete scheme-theoretic cubic fiber is supported at \(u=0\)
+and disappears after the localization \(u=s_0^{-1}\ne0\).  Consequently:
+
+> **Proposition 5.7.**  The defined slice (5.12ad) contains no common
+> zero of \(\mu _3,\ldots,\mu _7\).  In particular, the apparent cubic
+> norm survivor is a localization-boundary component, not a
+> characteristic-zero moment-zero point.
+
+This closes the whole one-parameter slice, not the unspecialized
+\(Q\)-residual component.
+
 The remaining rows of (5.12z)--(5.12ab) are exact finite-field
 calculations and sampled incidence checks, not characteristic-zero
 factorizations or component exclusions.  Even on the exact
 \(Q\)-component, general-purpose Gröbner recomputation exceeds the
 \(20\)-second guard after the linear pivot.  The next bounded
-implementation should therefore perform custom quotient arithmetic in
-the degree-five and degree-six extensions defined by the residual
-factors, reduce \(\mu_4,\ldots,\mu_8\) there, and recurse only on the
-exceptional subresultant loci.
+implementation should therefore perform unspecialized custom quotient
+arithmetic in the degree-five and degree-six extensions defined by the
+residual factors, reduce \(\mu_4,\ldots,\mu_8\) there, and recurse only
+on the exceptional subresultant loci.  Proposition 5.7 supplies one exact
+specialized calibration for that arithmetic.
 
 An attempted branchwise continuation through corrected \(\mu_8\) exposed
 an important content issue.  Singular's `cleardenom` removes polynomial

@@ -1,7 +1,9 @@
 # Keller/Tschirnhaus bridge card in ranks five through seven
 
-This is an exact witness and comparison card, not a second canonical proof.
-The all-rank mathematics lives in:
+This is an exact regression and comparison card, not a second canonical
+proof.  The all-rank statement is the
+[generic Tschirnhaus non-descent theorem](GENERIC_TSCHIRNHAUS_NON_DESCENT.md).
+Its inputs live in:
 
 - the
   [quadratic-gauge stable-moduli theorem](QUADRATIC_GAUGE_STABLE_MODULI.md#41-explicit-quotient-coordinates-on-the-compiler-slice),
@@ -15,8 +17,8 @@ The all-rank mathematics lives in:
   [universal relative Keller map](UNIVERSAL_RELATIVE_KELLER_MAP.md#41-quantitative-seed-descent-defect),
   which combines them into the quantitative Tschirnhaus-descent obstruction.
 
-The purpose here is to record the exact \(N=5,6,7\) specialization and to
-compare four arithmetic/geometric complexity measurements without
+The purpose here is only to record the exact \(N=5,6,7\) specialization and
+to compare four arithmetic/geometric complexity measurements without
 conflating their status.
 
 ## 1. Exact low-rank comparison
@@ -73,7 +75,7 @@ References:
 - [Farb--Wolfson, resolvent degree and Hilbert's thirteenth problem](https://arxiv.org/abs/1803.04063);
 - [Edens--Reichstein, current resolvent-degree status](https://arxiv.org/abs/2406.15954).
 
-## 2. The exact fibre-preserving witness
+## 2. The exact common-algebra witness
 
 Take the split algebra \(A_N=\mathbb Q^N\) with primitive coordinate
 
@@ -108,8 +110,9 @@ Hence
  \mathbb Q[U]/(P_u)\simeq\mathbb Q[T]/(P_r),           \tag{2.3}
 \]
 
-and the universal compiler realizes the two presentations as isomorphic
-complete Keller fibres.
+and the universal compiler realizes each presentation as a complete Keller
+fibre with the same abstract finite-etale algebra.  This does not assert a
+source--target equivalence carrying one marked fibre to the other.
 
 The coordinate change is nevertheless nonprojective.  After the first
 three root pairs determine the unique Möbius transformation, the residual
@@ -179,6 +182,21 @@ N&5&6&7\\ \hline
 This is an obstruction to descent of the quadratic-gauge atlas.  It proves
 no lower bound for a different Keller construction and no new
 resolvent-degree equality.
+
+For every `N>=6`, the same split witness is separated uniformly by the top
+stable coordinate:
+
+\[
+ J_N(P_u)-J_N(P_r)
+ =
+ -\frac{(N-1)(7N+11)}
+        {30N(N+1)(N+2)}\ne0.
+\]
+
+That symbolic all-rank calculation belongs to the canonical generic
+non-descent theorem.  The table above remains a low-rank regression because
+it checks every applicable fingerprint coordinate and the promoted
+coordinate degrees.
 
 ## 4. Exact regression
 

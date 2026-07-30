@@ -356,6 +356,23 @@ def verify_invariant_content_identities() -> None:
     ) == 0
 
 
+def verify_invariant_affine_coordinates() -> None:
+    """Check the two-generator inverse chart for ker(D^2) carriers."""
+    b0 = 1 + invariant
+    b1 = u + invariant
+    b2 = v + invariant**2
+    carrier = sp.expand(b0 + b1 * x + b2 * y)
+    speed = sp.expand(b1 * u + b2 * v)
+    assert npl.derivation(carrier) == speed
+    assert npl.derivation(speed) == 0
+    assert sp.expand(
+        u * (carrier - b0) - b2 * invariant - speed * x
+    ) == 0
+    assert sp.expand(
+        v * (carrier - b0) + b1 * invariant - speed * y
+    ) == 0
+
+
 def verify_rational_root_normalization() -> None:
     """Check the rational-root ladder in its quotient normalization."""
     for exponent in range(1, 5):
@@ -413,6 +430,7 @@ def main() -> None:
     square_gate_face = verify_square_gate_failure()
     verify_two_branch_identity()
     verify_invariant_content_identities()
+    verify_invariant_affine_coordinates()
     verify_rational_root_normalization()
     membership_rows = [
         tuple(
@@ -674,6 +692,10 @@ def main() -> None:
     print(
         "INVARIANT-CONTENT:",
         "verified D(u*x*a)=u*D(x*a) and D(u*y*a)=u*D(y*a)",
+    )
+    print(
+        "INVARIANT-AFFINE:",
+        "verified the inverse chart for h=b0+b1*x+b2*y",
     )
     print(
         "RATIONAL-ROOT:",

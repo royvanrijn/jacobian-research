@@ -893,11 +893,12 @@ require an isomorphism between the two pullbacks of `\kappa_N` to
 satisfying the cocycle condition.
 
 For `N>=5`, the quadratic-gauge family fails this test generically after
-passing even to stable polynomial left--right classes.  The universal
-quintic and higher-rank multiplicity theorems exhibit one finite-etale
-algebra with translated primitive presentations whose quadratic-gauge maps
-have different stable invariants.  Those points lie in (4.5), but their
-images in stable Keller incidence are nonisomorphic.  Hence:
+passing even to stable polynomial left--right classes.  The canonical
+[generic Tschirnhaus non-descent theorem](GENERIC_TSCHIRNHAUS_NON_DESCENT.md)
+works on the clean primitive-presentation groupoid.  The equal-boundary
+relation has codimension `N-4`, while the projective Tschirnhaus locus has
+codimension `N-3`; outside their union the two presentations define the same
+finite-etale algebra but different stable Keller maps.  Hence:
 
 \[
 \boxed{\text{the quadratic-gauge atlas map does not descend through full
@@ -1018,6 +1019,13 @@ direction is visible on the intrinsic boundary.  This is the quantitative
 form of the obstruction in (4.6).  It still concerns this atlas: it does not
 exclude another Keller lift whose presentation cocycle uses different
 boundary data.
+
+The two codimensions in (4.10) must not be conflated.  Equality of all
+coordinates of `Phi_N` is a codimension-`N-4` condition on a pair of
+presentations, whereas projectivity is codimension `N-3`.  Thus equality of
+the stable boundary fingerprint is not a projectivity criterion: the generic
+equal-fingerprint pair is still nonprojective.  The generic non-descent
+statement uses the complement of both loci.
 
 The exact ranks-five-through-seven regression takes the split root
 coordinate `r=(1,...,N)` and the primitive Tschirnhaus coordinate
@@ -1185,7 +1193,8 @@ Proved here:
    essential-dimension lower bound for versal parameter schemes;
 7. generic failure, for `N>=5`, of descent of the quadratic-gauge atlas
    through full presentation equivalence in stable Keller moduli, together
-   with the quantitative `N-4`-coordinate boundary fingerprint (4.9);
+   with the quantitative `N-4`-coordinate boundary fingerprint (4.9), as
+   packaged in the canonical generic non-descent theorem;
 8. the full `S_N` frame `Conf_(N-1)` and the intrinsic determinantal
    projective locus of smooth codimension `N-3`, including its polynomial
    equations in the universal Keller chart.
@@ -1193,7 +1202,8 @@ Proved here:
 Still open:
 
 1. whether a different enhancement of Keller incidence admits a
-   presentation-free section of (4.1);
+   presentation-free section of (4.1), or whether the intrinsic Fitting
+   decoration can be incorporated into a finite-type enhanced receiver;
 2. global polynomial extension of the target-localized rank-three
    projective transport, an all-rank lift on the determinantal projective
    locus, and a rank-four target symmetry of degree at least nineteen
@@ -1201,7 +1211,10 @@ Still open:
    prescribed collision-frame permutation;
 3. the kernel of the braid action after the two jet divisors are removed;
 4. whether an `ed_k(S_N)`-dimensional versal finite-etale family admits any
-   compatible relative polynomial Keller lift.
+   compatible relative polynomial Keller lift;
+5. global minimality of the proposed `ktdim` and `kdeg` complexity
+   invariants, for which the `N-4` vertical defect of this compiler gives no
+   lower bound.
 
 ## 8. Exact regression
 

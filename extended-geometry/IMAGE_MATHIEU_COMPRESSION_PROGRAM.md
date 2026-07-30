@@ -624,9 +624,21 @@ all \(r,s\ge1\).  The same proof permits an arbitrary invariant intercept:
 \(D((u^rv^sx+b))\) is Mathieu--Zhao for
 \(r\ge1,\ s\ge0,\ b\in\ker(D)\).  The true remaining carrier must have
 a genuinely nonmonomial invariant slope.  Prime-by-prime lowest faces
-close the coprime form \(q=ax+b\) away from
-\(v(b\bmod u)=(a\bmod u)w\).  The surviving locus is exactly where
-\(q\in uA\) by conductor cancellation, and is the next principal target.
+close every coprime form \(q=ax+b\).  On
+\(v(b\bmod u)=(a\bmod u)w\), the carrier lies in \(uA\), so pure
+membership directly supplies the missing \(u\)-content.  Only removal of
+a nontrivial common invariant factor of \(a,b\) remains.  The abstract
+Mathieu scaling lemma removes it: \(M\) Mathieu--Zhao and
+\(cM\subseteq M\) imply \(cM\) Mathieu--Zhao.  Therefore every
+\(q=ax+b\), \(a,b\in\ker(D)\), \(a\ne0\), is closed.  Intrinsic
+degree-one descent is \(D^2h=0\).  Prime-local inverse charts then put
+every denominator face at a nonzero endpoint \(h=\beta\), so the moment
+lemma forces growing content at every prime of \(Dh\).  Divisibility
+bootstrapping handles powers of the unique noninvariant irreducible
+factor and scaling restores invariant content.  Together with the
+two-root theorem, this closes every nonzero principal carrier \(q\in A\)
+for the model \(D=u\partial_x+v\partial_y\).  The remaining model frontier
+is genuinely nonprincipal and outside plinth-power saturation.
 
 ## 5. Promotion rules
 

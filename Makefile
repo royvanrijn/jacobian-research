@@ -96,6 +96,8 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: verify-rank-three-collision-descent
 .PHONY: verify-rank-four-collision-cross-ratio
 .PHONY: verify-all-rank-collision-projective-descent
+.PHONY: verify-generic-tschirnhaus-non-descent
+.PHONY: verify-rank-five-tschirnhaus-transition-locus
 .PHONY: verify-rank-four-nonprojective-keller-lift
 .PHONY: verify-rank-four-degree-eighteen-target-obstruction
 .PHONY: verify-keller-ritt-product
@@ -134,6 +136,12 @@ verify-rank-four-collision-cross-ratio:
 
 verify-all-rank-collision-projective-descent:
 	$(PYTHON) scripts/verify_all_rank_collision_projective_descent.py
+
+verify-generic-tschirnhaus-non-descent:
+	$(PYTHON) scripts/verify_generic_tschirnhaus_non_descent.py
+
+verify-rank-five-tschirnhaus-transition-locus:
+	$(PYTHON) scripts/verify_rank_five_tschirnhaus_transition_locus.py
 
 verify-rank-four-nonprojective-keller-lift:
 	$(PYTHON) scripts/verify_rank_four_nonprojective_keller_lift.py

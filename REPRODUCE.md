@@ -163,7 +163,10 @@ checker also verifies the normalization identities through the ladder
 `q=u*v*x+w`, its exact quotient cone is `a>=2*c, b>=c`.  Eight seeds
 survive powers `4,5,6`; all eight lie in `u*v*ker(D)[q]`, with no bounded
 mixed-tail obstruction.  The checker verifies the two-prime
-normalization identities for `1<=r,s<=3`.
+normalization identities for `1<=r,s<=3`.  Finally, for a sample
+invariant-affine coordinate `h=b_0+b_1*x+b_2*y`, it verifies
+`D(h)=b_1*u+b_2*v`, `D^2(h)=0`, and both inverse-chart identities
+expressing `x,y` in `ker(D)_(D(h))[h]`.
 
 The all-order proof in the canonical note uses the
 full eventual-power hypothesis and the one-variable polynomial moment
@@ -180,9 +183,23 @@ results is inferred from the bounded census.  The same lowest-face proof
 closes `u^r*v^s*x+b` for every invariant intercept `b in ker(D)`, with
 `r>=1` and `s>=0`; this arbitrary-intercept extension is a written
 theorem rather than a separate bounded search.  Prime-by-prime lowest
-faces also close every coprime `q=a*x+b`, `a,b in ker(D)`, away from the
-explicit aligned conductor condition `v*(b mod u)=(a mod u)*w`.  The
-aligned locus is the remaining theorem gap.
+faces close every coprime `q=a*x+b`, `a,b in ker(D)`.  On the aligned
+condition `v*(b mod u)=(a mod u)*w`, one has `q in u*A`, so pure
+membership itself forces the missing `u`-content.  A nontrivial common
+invariant factor is removed by the Mathieu scaling lemma: if `M` is
+Mathieu--Zhao and `c*M` is contained in `M`, then `c*M` is
+Mathieu--Zhao.  Consequently every `q=a*x+b` with nonzero
+`a in ker(D)` is closed, without a coprimality assumption.  The intrinsic
+condition for generic orbit degree one is `D^2(h)=0`, `D(h)!=0`.
+Prime-local inverse charts and the same moment-face argument close every
+irreducible such `h`; divisibility bootstrapping closes all powers, and
+the scaling lemma restores invariant content.  Factoring an arbitrary
+principal carrier over the generic orbit now gives either at least two
+distinct roots (zero eventual-power radical) or one invariant-affine
+irreducible factor with multiplicity.  Thus the canonical note proves
+`D(q*A)` Mathieu--Zhao for every nonzero `q in A` for this model
+derivation.  The checker only replays the coordinate identities and
+bounded searches; the all-order conclusion is deductive.
 
 ## Checked-in Lean projects
 
@@ -297,6 +314,8 @@ remain as a regression:
 .venv/bin/python scripts/verify_universal_higher_degree_fiber_multiplicity.py
 .venv/bin/python scripts/verify_universal_multiplicity_witness_cards.py
 .venv/bin/python scripts/verify_universal_relative_keller_map.py
+.venv/bin/python scripts/verify_generic_tschirnhaus_non_descent.py
+.venv/bin/python scripts/verify_rank_five_tschirnhaus_transition_locus.py
 .venv/bin/python scripts/verify_keller_tschirnhaus_descent_567.py
 .venv/bin/python scripts/verify_rank_three_collision_descent.py
 .venv/bin/python scripts/verify_rank_four_collision_cross_ratio.py
@@ -353,6 +372,40 @@ It also supplies exact projective and primitive-nonprojective witnesses in
 every tested rank.  The bounded replay supports the written all-rank
 linear-algebra proof; it does not claim that every Keller equivalence acts
 projectively on the root line.
+
+The generic stable non-descent continuation is:
+
+```bash
+.venv/bin/python scripts/verify_generic_tschirnhaus_non_descent.py
+```
+
+It verifies that the split change `r -> r+r^2` has a nonzero projective
+minor in every rank, checks the quintic `I_5` base case, and proves
+symbolically for every `N>=6` that
+
+```text
+J_N(P_(r+r^2))-J_N(P_r)
+=-(N-1)(7N+11)/(30N(N+1)(N+2)).
+```
+
+Direct root-polynomial calculations through rank twenty are regressions.
+Dominance of the presentation-to-boundary map and the resulting generic
+codimension statement are written geometric proofs, not bounded searches.
+
+The rank-five transition-locus continuation is:
+
+```bash
+.venv/bin/python scripts/verify_rank_five_tschirnhaus_transition_locus.py
+```
+
+It computes the ambient stable-equivalence hypersurface and the two
+labelled projective residuals, verifies local dimensions `4`, `3`, and `2`
+for the ambient, projective, and intersection loci, and checks the explicit
+coefficient-torus equivalence.  It also proves that this canonical
+equivalence carries the selected complete fibre exactly on the root-scaling
+locus.  Arbitrary marked transport is reduced in the canonical note to the
+target orbit of the fixed map's stable self-equivalence group; the checker
+does not claim that this stabilizer has been classified.
 
 The first nonprojective rank-four continuation is:
 
@@ -4303,7 +4356,42 @@ and simple-root Newton ladders, and the two coupled weighted-face chart
 covers.  It requires Singular and `msolve`; the latter is used over
 characteristic zero to prove explicit affine saturations empty.  See
 [`BINARY_CUBIC_ALL_ROOT_PARTITIONS_GVC.md`](extended-geometry/BINARY_CUBIC_ALL_ROOT_PARTITIONS_GVC.md).
-The sole remaining binary degree-six row has lowest positive order \(r=2\).
+The complete \((r,\deg P)=(2,6)\) row, and hence universal binary GVC
+through polynomial degree six, is closed by:
+
+```bash
+.venv/bin/python scripts/verify_binary_quadratic_all_root_partitions_gvc.py
+```
+
+This exact checker verifies the quadratic Hall locus, the full
+distinct-root first-equation reduction and second-moment ladder, all
+half-integral and integral double-line Newton faces, and every primary and
+secondary radical at the pure-sixth-power endpoint.  It requires Singular
+over characteristic zero.  The arbitrary-jet weight-defect argument is in
+[`BINARY_QUADRATIC_ALL_ROOT_PARTITIONS_GVC.md`](extended-geometry/BINARY_QUADRATIC_ALL_ROOT_PARTITIONS_GVC.md).
+The next genuinely nonhomogeneous binary frontier begins in polynomial
+degree seven.
+
+The all-degree Hall localization and unequal-weight terminal-face theorem
+have a dependency-free exact regression:
+
+```bash
+.venv/bin/python scripts/verify_binary_gvc_uniform_face_termination.py
+```
+
+It exhausts the Hall inequality through order twelve, checks the
+coefficient-independent prime-valuation inequalities on small weighted
+lattice segments, and verifies an exact weight-\((3,2)\) example whose
+first moment cancels but whose fifth moment has the uniquely predicted
+5-adic endpoint, together with the generic-translation multifactorial
+identity underlying the Newton-intersection criterion.  It also checks the
+homogeneous beta-integral identity, the failure of constant-term
+extraction to commute with powers in the first two-channel example, and
+the exponent-dependent factorial distortion under a toric blow-up.  The
+proof and the precise remaining beta--torus coupled-convolution
+obstruction are in
+[`BINARY_GVC_UNIFORM_FACE_TERMINATION.md`](extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md).
+The checker is a regression, not the proof.
 
 The first repeated-root continuation is the migrating defect-one ansatz
 \((\Lambda_4+\Lambda_5,P_5+P_4)\).  Run its faithful-characteristic samples,
@@ -4713,6 +4801,8 @@ the aggregate verifier are:
   artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_border_resultant_exact.json
 .venv/bin/python \
   scripts/verify_two_pair_sic_bidegree33_t0_strata_rank_continuation.py
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_Q_residual_slice.py
 ```
 
 The verifier pins 31 direct-stratum artifacts.  Across \(Q,J,K,H,KH\),
@@ -4746,6 +4836,19 @@ The exact linear pivot is coprime to \(R_{20}\), and reduction modulo
 arithmetic in this degree-five extension and the remaining modular
 degree-five/degree-six extensions; direct Gröbner recomputation is
 deliberately not part of this command sequence.
+
+The final verifier closes the exact \(s_1=\ell=0\) one-parameter slice
+of that \(Q\)-residual component.  The degree-\(100\) factor of the
+\(\mu_6\) norm is removed by the first
+\(\det(M_{\mu_6}+zM_{\mu_7})\) coefficient.  On the only remaining
+cubic factor, the Kummer modulus specializes to \(u^4\), so the whole
+scheme-theoretic fiber is supported at \(u=0\) and is empty after the
+chart localization \(u=s_0^{-1}\).  It writes
+`artifacts/generated-results/two_pair_sic_bidegree33_Q_cubic_exceptional_factor.json`;
+the whole-file SHA-256 is
+`69caf2d4b83fc2d70e1ce46b945471b6d0666b0ebbe12de6d20ec660a6e7114a`.
+This is an exact slice exclusion, not an exclusion of the full
+\(Q\)-residual component.
 
 The \(L=1\) trace/norm reconnaissance treats
 \((s_3,s_5,t_4)\) as a rank-twelve finite fiber after

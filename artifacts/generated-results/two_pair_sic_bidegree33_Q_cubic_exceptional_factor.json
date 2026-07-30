@@ -1,0 +1,33 @@
+{
+  "branch_checks": [
+    {
+      "branch_index": 0,
+      "branch_modulus": "u",
+      "chart_admissible": false,
+      "multiplicity": 4,
+      "reason": "supported_on_u=0_but_chart_localizes_at_u"
+    }
+  ],
+  "coefficient_field": {
+    "theta_degree": 3,
+    "theta_minpoly": "909*T**3 + 25521*T**2 + 6189560*T - 22223500",
+    "u_extension_factor_degrees": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "u_minpoly_over_Q_theta": "u**4"
+  },
+  "conclusion": {
+    "complete_one_parameter_slice_excluded": true,
+    "corrected_moment_zero_point": false,
+    "cubic_mu6_norm_factor_excluded": true,
+    "degree_100_mu6_norm_factor_excluded_by_mu7": true,
+    "excluded_entirely_by_u_localization": true,
+    "orders_used_on_admissible_branches": []
+  },
+  "format": "two-pair-sic-bidegree33-Q-cubic-exception-v1",
+  "reproduction_command": "scripts/verify_two_pair_sic_bidegree33_Q_residual_slice.py",
+  "status": "exact characteristic-zero exclusion: every branch above the cubic mu_6-norm factor is either removed by the u=s0^-1 localization or has unit (mu_6,mu_7,mu_8) ideal"
+}

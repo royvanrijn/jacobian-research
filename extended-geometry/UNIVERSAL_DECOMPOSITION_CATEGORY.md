@@ -246,27 +246,31 @@ Z_E\text{ contains a compatible open }U_E\simeq\mathbb A^d
 \tag{4.2}
 \]
 
-For a chain of block systems, the affine reconstruction opens must be nested
-compatibly.  Consequently:
+The
+[affine-open rigidity lemma](../verified/KELLER_RITT_PRODUCT_THEOREM.md#5-affine-open-rigidity)
+now proves that, once one polynomial Keller model of an embedded
+intermediate field exists, its compatible affine reconstruction open is
+unique up to a polynomial automorphism of the middle affine space.
+Consequently:
 
 - monodromy alone recognizes candidate block towers, not polynomial
   factorizations;
 - monodromy plus coarse ramification or boundary graphs still need not
-  recognize the affine reconstruction open;
+  prove that an affine reconstruction open exists;
 - monodromy plus the full intermediate normalizations, their source lifts,
   and compatible affine opens recognizes the factorization by (4.2).
 
 This suggests the executable problem.
 
 > **P4-B (decorated algebraization).**  Construct an intrinsic finite test
-> for the existence and uniqueness of the affine reconstruction open in
-> (4.2), using valuation signs, conductor/Fitting data, and the marked
-> affine sheet.
+> for the existence of the affine reconstruction open in (4.2), using
+> valuation signs, conductor/Fitting data, and the marked affine sheet.
 
-A positive answer would turn the group-theoretic block lattice into the
-actual category \(\operatorname{Sand}(F)\).  A counterexample should be an
-imprimitive Keller map for which an intermediate normalization is rational
-but has no compatible polynomial sandwich.
+A positive existence test would turn the group-theoretic block lattice into
+the actual category \(\operatorname{Sand}(F)\); uniqueness no longer needs
+a separate test.  A counterexample should be an imprimitive Keller map for
+which an intermediate normalization is rational but has no compatible
+polynomial sandwich.
 
 ### 4.1 Full-wreath order rigidity
 
@@ -304,9 +308,9 @@ proves
 
 Hence every nontrivial factorization of \(C_{3,4}\) has inner degree \(3\)
 and outer degree \(4\).  In particular, \(C_{3,4}\) has no reverse
-\(4\)-then-\(3\) factorization.  This proves ordered degree rigidity, not
-uniqueness of the polynomial subalgebra with the unique intermediate
-fraction field.
+\(4\)-then-\(3\) factorization.  Affine-open rigidity further proves that
+every factorization through its unique intermediate field differs from the
+displayed one only by a polynomial automorphism of the middle affine space.
 
 ### 4.2 A direct-product Ritt diamond
 
@@ -327,9 +331,9 @@ Its monodromy is \(S_3\times S_4\), and the point-stabilizer interval is an
 exact diamond.  Hence every maximal polynomial decomposition has length
 two, degree multiset \(\{3,4\}\), and factor-monodromy group multiset
 \(\{S_3,S_4\}\).  This is a literal Keller Ritt move and proves that the
-ordered degree word is not invariant.  Stable factor-class invariance for
-all polynomial models over the two middle fields remains the affine-open
-uniqueness gate.
+ordered degree word is not invariant.  Affine-open rigidity closes the
+former uniqueness gate: every maximal decomposition has stable factor-class
+multiset \(\{[F_3],[F_4]\}\).
 
 ## 5. Boundary-decorated uniqueness
 
@@ -501,15 +505,14 @@ compute:
 1. the full monodromy group, not only its embedding in
    \(S_a\wr S_b\);
 2. every subgroup between the point stabilizer and the monodromy group;
-3. every compatible polynomial sandwich;
-4. whether the displayed block system is unique; and
+3. which candidate intermediate fields admit a polynomial sandwich;
+4. whether the displayed block system is the only candidate field; and
 5. the decorated boundary maps of the two factors inside the composite.
 
 The case \(C_{3,4}\) already has full wreath monodromy, and Proposition 4.1
-settles its ordered factor degrees.  The remaining degree-twelve problem is
-uniqueness of the polynomial affine model over that intermediate field.
-The next cases should be \(C_{3,5}\), \(C_{4,3}\), and the competing
-degree-\(24\) pairs.
+settles its ordered factor degrees; affine-open rigidity settles uniqueness
+over its intermediate field.  The next cases should be \(C_{3,5}\),
+\(C_{4,3}\), and the competing degree-\(24\) pairs.
 
 ### 8.2 Stable LR versus factor order
 
@@ -590,15 +593,17 @@ These results motivate P4-E.  They do not imply semimodularity of
    suspensions?**  Every geometric Keller map has a finite atomic
    factorization, but completeness of marked-root suspension atoms and
    descent of the factors are open.
-2. **Is factorization unique after boundary decoration?**  Unknown.  The
-   first necessary problem is classification of decorated diamonds in the
-   polynomial-sandwich poset.  Full-wreath monodromy already makes the
-   ordered factor degrees of \(C_{3,4}\) rigid, but not its affine
-   polynomial model.
+2. **Is factorization unique after boundary decoration?**  For a fixed
+   embedded intermediate field that already has one Keller polynomial
+   model, yes: affine-open rigidity makes that model unique up to a middle
+   polynomial automorphism.  Global uniqueness across distinct intermediate
+   fields is unknown and still requires classification of decorated
+   diamonds in the polynomial-sandwich poset.
 3. **Does monodromy plus normalization recognize factorization?**  Monodromy
-   gives candidate fields.  Full intermediate normalization plus a
-   compatible affine reconstruction open recognizes polynomial factors.
-   Coarse normalization data alone is not known to suffice.
+   gives candidate fields.  Full intermediate normalization plus existence
+   of a compatible affine reconstruction open recognizes polynomial
+   factors, and that open is then unique.  Coarse normalization data alone
+   is not known to prove existence.
 4. **How are Ritt moves reflected in stable LR geometry?**  They should be
    invertible, correspondence-valued \(2\)-cells between adjacent factor
    words, preserving marked block flags and boundary decorations.  The

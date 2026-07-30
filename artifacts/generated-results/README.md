@@ -208,6 +208,17 @@ path below are treated as reference artifacts.
   `scripts/verify_two_pair_sic_bidegree33_t0_strata_rank_continuation.py`.
   Its whole-file SHA-256 is
   `c8c35d8ff3749ccb2c866dbc0f4319bf1b475f66e063509eb6f91a573422f0af`.
+- `two_pair_sic_bidegree33_Q_cubic_exceptional_factor.json` closes the
+  exact \(s_1=\ell=0\) one-parameter slice of the characteristic-zero
+  \(Q\)-border residual component.  It checks that the degree-\(100\)
+  factor of the \(\mu_6\) norm is excluded by \(\mu_7\), while the
+  remaining cubic factor specializes the Kummer modulus to \(u^4\) and
+  is therefore removed by the chart localization \(u=s_0^{-1}\).
+  Generate it with
+  `scripts/verify_two_pair_sic_bidegree33_Q_residual_slice.py`.
+  Its whole-file SHA-256 is
+  `69caf2d4b83fc2d70e1ce46b945471b6d0666b0ebbe12de6d20ec660a6e7114a`.
+  This is an exact slice theorem, not a full \(Q\)-component exclusion.
 - `two_pair_sic_bidegree33_boundary_generic_quotient.json` records the
   characteristic-zero generic and \(L,Q,J\) divisor quotient certificates,
   including the exact quadratic-extension \(\mu_6,\mu_7\) normal forms on

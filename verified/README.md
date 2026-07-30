@@ -55,12 +55,37 @@ This directory contains the stable proof chain:
   stably atomic.  The note also separates the canonical collision operation
   on `BS_N` from the obstructed Tschirnhaus descent of the Keller lift and
   from essential-dimension questions.
+- [Generic Tschirnhaus non-descent](GENERIC_TSCHIRNHAUS_NON_DESCENT.md):
+  puts the compiler on the clean primitive-presentation groupoid, proves
+  that equal stable boundary has codimension `N-4` while projective
+  transport has codimension `N-3`, and concludes that a generic
+  nonprojective Tschirnhaus change preserves the root algebra but changes
+  the intrinsic quadratic-gauge Fitting fingerprint.  The split witness
+  `r_i=i`, `u_i=i+i^2` is separated in every rank by one symbolic formula.
+  The image of the clean fixed-algebra marked locus in unmarked stable-map
+  moduli has geometric dimension `N-4`; this is not the dimension of a
+  literal marked receiver fibre, and no total global moduli-fibre dimension
+  is claimed.
+- [Rank-five ambient and marked Tschirnhaus transition loci](RANK_FIVE_TSCHIRNHAUS_TRANSITION_LOCUS.md):
+  computes the ambient and projective loci and their transverse
+  intersection, writes the unique canonical seed equivalence explicitly,
+  and proves that it carries the selected complete fibre only on the
+  root-scaling locus.  Every remaining marked nonprojective lift is reduced
+  to a target-orbit problem for the stable self-equivalence group of one
+  fixed quintic map.
+- [Clean quadratic-gauge decorated receiver](QUADRATIC_GAUGE_DECORATED_RECEIVER.md):
+  constructs the marked quotient mapping to `BS_N` and separates its
+  `N-1`-dimensional geometric fibre from the `N-4`-dimensional image in
+  unmarked stable-map moduli.  The receiver span makes precise that the
+  fibre algebra descends while the ambient Fitting decoration does not.
 - [Keller/Tschirnhaus bridge card in ranks five through seven](KELLER_TSCHIRNHAUS_DESCENT_567.md):
-  links the canonical all-rank projective and stable-boundary theorems,
+  is the exact low-rank regression for the generic theorem, links the
+  canonical all-rank projective and stable-boundary theorems,
   proposes Keller target dimension and Keller coordinate degree as research
-  invariants, and pins one exact nonprojective Tschirnhaus experiment on a
-  common split fiber.  The canonical proof is maintained in the stable-moduli
-  and universal-relative-map notes, not duplicated on the card.
+  invariants, and pins one exact nonprojective Tschirnhaus experiment whose
+  two compiled complete fibres have the same abstract split algebra.  It
+  does not assert an ambient equivalence carrying one marked fibre to the
+  other.
 - [Rank-three collision-framed descent](RANK_THREE_COLLISION_DESCENT.md):
   identifies the cubic off-diagonal collision cover with the full `S_3`
   frame torsor, gives the exact projective and quadratic-Tschirnhaus

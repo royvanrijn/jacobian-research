@@ -58,10 +58,11 @@ The present note does not claim a counterexample or a proof of (1.1) in
 full generality.  It records an exact slice reduction, closes every
 carrier-free finite residual scheme, every monic carrier with finite
 residual, and the normalized repeated nonmonic degree-drop chart.  It also
-proves the moving-linear principal ideals and their thickenings, together
-with every generic two-root principal carrier and the first linear
-invariant-content carriers, for the first four-variable two-slice model.
-These are internal results and have not been externally reviewed.
+proves \(D(qB)\) Mathieu--Zhao for every nonzero principal carrier \(q\)
+in the four-variable two-slice model
+\(D=u\partial_x+v\partial_y\), as well as every ideal containing a power
+of its plinth ideal \((u,v)\).  These are internal results and have not
+been externally reviewed.
 
 ## 2. Slice normalization gives an exact membership test
 
@@ -1691,13 +1692,305 @@ These growing powers clear \(ua\) and all fixed coefficient denominators
 in the primitive of \(gf^m\).  The primitive then belongs to
 \(qB[q]\subseteq qA\), proving the result. \(\square\)
 
-The live principal frontier is now a single generic root whose rational
-descent is not captured by any monomial invariant slope
-\(u^rv^s\), even with an arbitrary invariant intercept, nor by linear
-invariant content or a polynomial moving linear form.  Theorem 6.11 now
-closes every coprime nonmonomial slope, including the aligned conductor
-face (6.27).  The live gap is only the removal of a nontrivial common
-invariant factor \(\gcd(a,b)\).
+The common invariant factor is removed by an abstract scaling argument;
+no further conductor calculation is needed.
+
+### Lemma 6.12 (Mathieu scaling)
+
+Let \(R\) be a commutative domain, let \(M\subseteq R\) be a
+Mathieu--Zhao subspace, and let \(0\ne c\in R\) satisfy
+
+\[
+ cM\subseteq M.
+\]
+
+Then \(cM\) is Mathieu--Zhao.
+
+**Proof.**
+Suppose \(f^m\in cM\) for all sufficiently large \(m\).  Then
+\(f^m\in M\) eventually.  Choose one sufficiently large \(N\), and put
+
+\[
+ h=\frac{gf^N}{c}\in R
+\]
+
+for a fixed \(g\in R\); this is an element of \(R\) because
+\(f^N/c\in M\subseteq R\).  Since \(M\) is Mathieu--Zhao,
+
+\[
+ h f^{m-N}\in M\qquad(m\gg0).
+\]
+
+But
+
+\[
+ h f^{m-N}=\frac{gf^m}{c}.
+\]
+
+Therefore \(gf^m\in cM\) for all sufficiently large \(m\). \(\square\)
+
+### Corollary 6.13 (complete invariant-linear carrier theorem)
+
+Let \(0\ne a\in B=k[u,v,w]\) and \(b\in B\), and put
+
+\[
+ q=ax+b.
+\]
+
+Then \(D(qA)\) is Mathieu--Zhao, with no coprimality assumption on
+\(a,b\).
+
+**Proof.**
+Write
+
+\[
+ c=\gcd(a,b),\qquad a=ca_0,\qquad b=cb_0,
+\]
+
+where \(c=a\) and \(a_0=1,b_0=0\) when \(b=0\).  Put
+\(q_0=a_0x+b_0\).  If \(b\ne0\), Theorem 6.11 proves that
+
+\[
+ M=D(q_0A)
+\]
+
+is Mathieu--Zhao; if \(b=0\), this is Theorem 6.4 for \(q_0=x\).
+Because \(c\in B=\ker D\),
+
+\[
+ D(qA)=D(cq_0A)=cD(q_0A)=cM,
+\]
+
+and \(M\) is a \(B\)-module, so \(cM\subseteq M\).  Lemma 6.12 completes
+the proof. \(\square\)
+
+Degree one on the generic orbit has an intrinsic description that removes
+the remaining denominator descent.
+
+### Theorem 6.14 (irreducible invariant-affine carrier theorem)
+
+Let \(h\in A\) be irreducible and satisfy
+
+\[
+ D^2h=0,\qquad Dh\ne0.
+\]
+
+Then \(D(hA)\) is Mathieu--Zhao.
+
+**Proof.**
+Put \(s=Dh\in B\).  The plinth identity
+
+\[
+ \operatorname {im}D\cap B=(u,v)B
+\]
+
+gives \(s=b_1u+b_2v\) for some \(b_1,b_2\in B\).  Consequently
+
+\[
+ h=b_0+b_1x+b_2y,\qquad b_0\in B,                            \tag{6.28}
+\]
+
+because the difference has derivative zero.  Conversely, every
+expression (6.28) lies in \(\ker D^2\).  With \(w=uy-vx\), direct
+elimination gives
+
+\[
+ x=\frac{u(h-b_0)-b_2w}{s},\qquad
+ y=\frac{v(h-b_0)+b_1w}{s}.                                 \tag{6.29}
+\]
+
+Thus \(A\hookrightarrow B_s[h]\) and \(D=s\partial_h\).
+
+Let \(\pi\) be an irreducible factor of \(s\), and work in the DVR
+\(B_{(\pi)}\).  At least one of \(u,v\) is a unit there.  If \(u\) is a
+unit, (6.29) becomes
+
+\[
+ x=\frac{u(h-\widetilde\beta_\pi)}s,\qquad
+ \widetilde\beta_\pi=b_0+\frac{b_2w}{u},
+ \qquad y=\frac vu x+\frac wu.
+\]
+
+If \(u\) is not a unit, then \(\pi=u\), \(v\) is a unit, and the analogous
+formula is
+
+\[
+ y=\frac{v(h-\widetilde\beta_\pi)}s,\qquad
+ \widetilde\beta_\pi=b_0-\frac{b_1w}{v},
+ \qquad x=\frac uv y-\frac wv.
+\]
+
+Write \(\beta_\pi\) for the residue of
+\(\widetilde\beta_\pi\) in \(\operatorname {Frac}(B/(\pi))\).
+These formulas give the associated graded algebra directly: every
+negative lowest \(\pi\)-face of an element of \(A\) is divisible by a
+positive power of
+
+\[
+ h-\beta_\pi.                                                \tag{6.30}
+\]
+
+Suppose \(f^m\in D(hA)\) eventually.  The unique primitive vanishing at
+\(h=0\) is
+
+\[
+ P_m=\frac1s\int_0^h f(z)^m\,dz\in hA.                      \tag{6.31}
+\]
+
+If the lowest \(\pi\)-order of \(f\) were nonpositive and
+\(\beta_\pi\ne0\), (6.30)--(6.31) would give
+
+\[
+ \int_0^{\beta_\pi}F(z)^m\,dz=0\qquad(m\gg0),
+\]
+
+contradicting the one-variable polynomial moment lemma.
+
+If \(\beta_\pi=0\), the displayed unit-coordinate formula, together with
+\[
+ v(ub_0+b_2w)-u(vb_0-b_1w)=sw,
+\]
+shows that both constant terms in (6.29) vanish modulo \(\pi\).
+The identities
+
+\[
+ uh=sx+(ub_0+b_2w),\qquad
+ vh=sy+(vb_0-b_1w)
+\]
+
+then show \(h\in\pi A\): use the first identity when
+\(\pi\ne u\), and the second when \(\pi=u\).  This is impossible because
+\(h\) is irreducible and noninvariant whereas \(\pi\in B\).  Thus every
+\(\beta_\pi\) is nonzero, and the moment argument forces positive
+\(\pi\)-order of \(f\).
+
+Hence the order of \(f^m\) at every prime denominator in (6.29) grows
+linearly.  For fixed \(g\), these powers clear \(s\) and all fixed
+coefficient losses in
+
+\[
+ \frac1s\int_0^h g(z)f(z)^m\,dz.
+\]
+
+The resulting primitive has nonnegative order at every factor of \(s\),
+so it lies in \(B[h]\).  It vanishes at \(h=0\), hence belongs to
+\(hB[h]\subseteq hA\).  Therefore \(gf^m\in D(hA)\) for all sufficiently
+large \(m\).
+\(\square\)
+
+The degree-one result bootstraps through every multiplicity.
+
+### Corollary 6.15 (invariant-affine thickenings)
+
+If \(0\ne h\in\ker D^2\setminus\ker D\) and \(d\ge1\), then
+
+\[
+ D(h^dA)
+\]
+
+is Mathieu--Zhao.
+
+**Proof.**
+Factor \(h\) in the UFD \(A\).  The kernel of a locally nilpotent
+derivation is factorially closed, so every invariant irreducible factor
+belongs to \(B\).  Since \(h\) has degree one in the generic orbit
+coordinate, there is exactly one noninvariant irreducible factor, with
+multiplicity one.  Hence
+
+\[
+ h=cH,\qquad c\in B,\qquad H\ \text{noninvariant irreducible}.
+\]
+
+Also \(D^2H=0\), so Theorem 6.14 proves \(D(HA)\) Mathieu--Zhao.
+It is enough first to treat \(H^d\).  Since
+
+\[
+ D(H^dA)\subseteq H^{d-1}A,
+\]
+
+eventual pure membership forces \(H\mid f\).  The degree-one theorem
+gives, for fixed \(g\) and large \(m\), a primitive
+
+\[
+ D(P_m)=gf^m,\qquad P_m\in HA.
+\]
+
+Write \(P_m=H^ra\), with \(1\le r<d\).  Since \(gf^m\) is divisible by
+\(H^m\),
+
+\[
+ D(P_m)=rH^{r-1}D(H)a+H^rD(a)\in H^rA
+\]
+
+for \(m\ge d\).  Reduction modulo \(H^r\) gives
+\(H\mid D(H)a\).  The polynomials \(H,D(H)\) are coprime: otherwise
+irreducibility would give \(H\mid D(H)\), which for a locally nilpotent
+derivation forces \(H\in\ker D\).  Thus \(H\mid a\).  Iteration yields
+\(P_m\in H^dA\).
+
+Finally,
+
+\[
+ D(h^dA)=D(c^dH^dA)=c^dD(H^dA),
+\]
+
+and \(D(H^dA)\) is a \(B\)-module.  Thus Lemma 6.12 removes the
+invariant factor \(c^d\). \(\square\)
+
+These results close every principal carrier for the present rank-two
+linear locally nilpotent derivation.
+
+### Theorem 6.16 (complete principal-ideal theorem for the model LND)
+
+For every \(0\ne q\in A=k[u,v,x,y]\),
+
+\[
+ D(qA)
+\]
+
+is Mathieu--Zhao.
+
+**Proof.**
+If \(q\in B\), then \(D(qA)=qD(A)\).  Theorem 6.1 applied to \(I=A\)
+proves \(D(A)\) Mathieu--Zhao; it is a \(B\)-module, so Lemma 6.12
+applies.
+
+Assume \(q\notin B\), and view \(q\) in
+\(L[x]\), \(L=\operatorname {Frac}(B)\).  If it has at least two distinct
+roots over \(\overline L\), Theorem 6.6 gives zero eventual-power radical.
+Suppose it has exactly one root.
+
+Factor \(q\) in the UFD \(A\).  Every invariant irreducible factor lies
+in \(B\).  A noninvariant irreducible factor remains irreducible after
+localizing at \(u\), because it is not associated to \(u\).  Since
+
+\[
+ A_u=B_u[x],
+\]
+
+Gauss's lemma and the one-root hypothesis force every such factor to
+have degree one over \(L\).  Any two are associates in \(A_u\); the only
+units introduced by the localization are scalar multiples of powers of
+\(u\), and neither factor is divisible by \(u\), so they are already
+associates in \(A\).  Therefore
+
+\[
+ q=cH^d
+\]
+
+for some \(0\ne c\in B\), \(d\ge1\), and one noninvariant irreducible
+\(H\) of generic degree one.  Hence \(D^2H=0\), Corollary 6.15 proves
+\(D(H^dA)\) Mathieu--Zhao, and its \(B\)-module structure lets
+Lemma 6.12 remove \(c\). \(\square\)
+
+The principal-ideal frontier for \(D=u\partial_x+v\partial_y\) is
+therefore closed.  For the ideal-image/LNED strengthening, the remaining
+model problem consists of genuinely nonprincipal ideals not covered by
+plinth-power saturation or the finite-residual theorems.  For the usual
+LND Conjecture \(I=A\), this model was already covered by the
+rank-at-most-two linear theorem cited in Section 1; a full proof still
+requires control of locally nilpotent derivations whose slice/conductor
+geometry is not equivalent to this rank-two linear normal form.
 
 ## 7. Exact replay
 
@@ -1804,6 +2097,9 @@ bounded mixed-tail obstruction.  For \(q_{1,1}=uvx+(uy-vx)\), it checks
 the simultaneous cone \(a\ge2c,\ b\ge c\), retains eight
 eventual-window survivors, and verifies that all eight lie in
 \(uvB[q_{1,1}]\).  The normalization identities are also checked for
-\(1\le r,s\le3\).  Theorems 6.4, 6.6, 6.7, 6.8, 6.9, 6.10, and 6.11
-and Corollary 6.5 are the separate all-order arguments; they are not
-inferred from the bounded calculation.
+\(1\le r,s\le3\).  For one sample
+\(h=b_0+b_1x+b_2y\), it additionally verifies \(D^2h=0\) and both
+inverse identities (6.29).  Theorems 6.4, 6.6, 6.7, 6.8, 6.9, 6.10,
+6.11, 6.14, and 6.16, Lemma 6.12, and Corollaries 6.5, 6.13, and 6.15
+are the separate all-order arguments; they are not inferred from the
+bounded calculation or the coordinate-identity regression.

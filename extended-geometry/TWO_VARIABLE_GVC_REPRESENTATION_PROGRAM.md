@@ -36,10 +36,11 @@ nonlinear translation, or an irreducible nonhomogeneous symbol.
 
 The two continuing targets are:
 
-1. treat genuinely nonhomogeneous pairs with \(\deg P\) greater than the
-   lowest positive operator order and with no split homogeneous
-factor-unit decomposition, and sharpen the split-symbol theorem to
-   finite pure-moment/nullcone certificates; and
+1. prove uniform termination of the coupled defect convolution for
+   genuinely nonhomogeneous pairs with \(\deg P\) greater than the lowest
+   positive operator order and no split homogeneous factor-unit
+   decomposition; polynomial degree seven is now a regression target for
+   that theorem rather than an endpoint in its own right; and
 2. replace the third-order Dvorsky operator by a quadratic
    constant-coefficient operator using as few auxiliary variables as
    possible.
@@ -124,8 +125,66 @@ cell, reaches operator order ten and dies at pure moment six.  The
 quartic-leading row is closed by
 [GVC2D6R4](BINARY_QUARTIC_ALL_ROOT_PARTITIONS_GVC.md), and the
 [complete cubic-leading sextic theorem](BINARY_CUBIC_ALL_ROOT_PARTITIONS_GVC.md)
-closes \(r=3\) for all three cubic root partitions.  Thus only \(r=2\)
-remains in degree six.
+closes \(r=3\) for all three cubic root partitions.  Finally, the
+[complete quadratic-leading sextic theorem](BINARY_QUADRATIC_ALL_ROOT_PARTITIONS_GVC.md)
+closes both quadratic root partitions.  Its double-line pure-sixth-power
+endpoint branches through the exact slope-two radical
+\((r,q,A,Bz)\), and both axes terminate on common-threshold
+coordinate-deficit faces.  Thus every binary constant-coefficient operator
+satisfies GVC through polynomial degree six, and the next genuinely
+nonhomogeneous polynomial-degree frontier begins at seven.
+The
+[uniform face-termination theorem](BINARY_GVC_UNIFORM_FACE_TERMINATION.md)
+now removes two previously degree-specific parts of this analysis.  For
+arbitrary \(r<d\), every leading Hall component is localized at a single
+root of multiplicity \(\mu\) and has
+\[
+ (X^\mu Y^{r-\mu},\,y^{d-\mu+1}C_{\mu-1}).
+\]
+Moreover, every unequal-weight common-threshold face is automatically
+terminal: a prime-dilated least endpoint proves that its operator and
+polynomial Newton segments are disjoint, hence one coordinate has a
+linear derivative deficit.  The shifted version excludes one
+unequal-weight exposed endpoint on every fixed rational normalized output
+ray.  Exact terminal radicals are therefore no longer part of the
+all-degree problem.
+
+What remains is narrower but genuine.  At depth \(\lfloor\rho m\rfloor\),
+coefficient extraction can couple several selection distributions with
+positive limiting frequency.  The split-symbol separator also shows that
+\(o(m)\) excursions from one ordinary-homogeneous face cannot repair its
+linear gap.  Hence a surviving coefficient must use at least two distinct
+faces with positive limiting density.  It is not the power of one fixed
+rank-one face.  Liu--Sun homogeneous binary factorial rigidity removes
+every one-channel slope-\(-1\) Pareto tie in all degrees, but it does not
+apply after a genuine Hall selection constant term: already for
+\(G=S U_1+S^{-1}U_2\),
+\[
+ \operatorname{CT}_S G=0,\qquad
+ \operatorname{CT}_S G^2=2U_1U_2.
+\]
+After the beta integral, the exact residual is a beta--torus moment
+\[
+ \int_0^1\operatorname{CT}_S
+       G(S,t,1-t)^m\,dt,
+\]
+not the moment of \((\operatorname{CT}_S G)^m\).  A complete termination
+proof must show that this rank-one beta--torus convolution has an exposed
+one-radial lower face or descends to smaller Hall/jet support.
+Equivalently, generic translation identifies the balanced radial polytope
+with
+\[
+ \operatorname{Newt}(\lambda)\cap
+ \operatorname{conv}\{\beta:\partial^\beta P\ne0\}.
+\]
+The multiradial prime theorem closes an empty intersection and every
+intersection with a componentwise least point.  A remaining pair must
+therefore mix at least two incomparable Pareto-minimal endpoints.  The
+degree-at-most-six calculations verify that alternative only in their
+finite support ranges.  A toric blow-up does not close the gap by itself:
+although it makes incomparable exponents comparable, it changes \(a!b!\)
+by an exponent-dependent factorial ratio.  The required Hall reduction
+must therefore be factorial-compatible.
 Although a squarefree tangent cone formally factors into smooth branches,
 this does not transport powers: a multiplicative conjugate of a
 derivation is a derivation, so a constant-coefficient umbral conjugate

@@ -15,7 +15,9 @@
   },
   "specific_rational_function_annihilator": {
     "numerator": "u^2",
-    "generators": 76,
+    "raw_generators": 76,
+    "generators": 26,
+    "presentation_optimization": "exact ideal trim",
     "holonomic": true,
     "holonomic_rank": 1
   },
