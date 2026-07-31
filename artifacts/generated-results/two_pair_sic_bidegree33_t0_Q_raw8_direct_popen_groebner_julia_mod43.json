@@ -1,0 +1,282 @@
+{
+  "coefficient_ring": "GF(43)[s1,lam,v], lam=(s1*u-t1)/u, v=u^2",
+  "coordinate_map": {
+    "geometric_ell": "s1*u-t1",
+    "lam": "(s1*u-t1)/u",
+    "v": "u^2"
+  },
+  "extension": "GF(43)(s1,lam,v)[T]/(R20)",
+  "format": "two-pair-sic-bidegree33-t0-Q-unspecialized-flint-v1",
+  "input": {
+    "A": {
+      "degrees": {
+        "T": 3,
+        "lam": 11,
+        "s1": 6,
+        "v": 3
+      },
+      "sha256": "a3c0c6b3ad996795edadbf378df6b6441c2b7dc0ff64710401e7cfdc846652e4",
+      "terms": 163,
+      "total_degree": 14
+    },
+    "B": {
+      "degrees": {
+        "T": 5,
+        "lam": 12,
+        "s1": 10,
+        "v": 4
+      },
+      "sha256": "b7ca2a4da1768fb199c58f8566664b3095b0832d78fd801cad8e2cc63170b225",
+      "terms": 401,
+      "total_degree": 18
+    },
+    "R20": {
+      "degrees": {
+        "T": 5,
+        "lam": 8,
+        "s1": 10,
+        "v": 4
+      },
+      "sha256": "82b7e54f1d5dab7b96216134459e763ecf0ed1a35625ed7ab1c4a5760b40c935",
+      "terms": 200,
+      "total_degree": 14
+    },
+    "adapted_term_counts": {
+      "A": 166,
+      "B": 411,
+      "R20": 200
+    },
+    "contents": {
+      "A": "1199446664905256374721538775056384000000000",
+      "B": "199907777484209395786923129176064000000000",
+      "R20": "1"
+    },
+    "removed_u_powers": {
+      "A": 16,
+      "B": 16,
+      "R20": 2
+    }
+  },
+  "moments": {
+    "mu4": {
+      "expanded_length": 7374,
+      "expanded_terms": 260,
+      "fibre_monomials": 14,
+      "fibre_rescaling": "s6=u*x6 (x6 is subsequently printed as s6)",
+      "maximum_fibre_degree": 2,
+      "maximum_s3_degree": 4,
+      "removed_u_power": 3
+    },
+    "mu5": {
+      "expanded_length": 34261,
+      "expanded_terms": 995,
+      "fibre_monomials": 30,
+      "fibre_rescaling": "s6=u*x6 (x6 is subsequently printed as s6)",
+      "maximum_fibre_degree": 3,
+      "maximum_s3_degree": 6,
+      "removed_u_power": 3
+    },
+    "mu6": {
+      "expanded_length": 81506,
+      "expanded_terms": 2045,
+      "fibre_monomials": 36,
+      "fibre_rescaling": "s6=u*x6 (x6 is subsequently printed as s6)",
+      "maximum_fibre_degree": 3,
+      "maximum_s3_degree": 6,
+      "removed_u_power": 3
+    },
+    "mu7": {
+      "expanded_length": 167892,
+      "expanded_terms": 3986,
+      "fibre_monomials": 55,
+      "fibre_rescaling": "s6=u*x6 (x6 is subsequently printed as s6)",
+      "maximum_fibre_degree": 4,
+      "maximum_s3_degree": 8,
+      "removed_u_power": 4
+    },
+    "mu8": {
+      "expanded_length": 398986,
+      "expanded_terms": 8160,
+      "fibre_monomials": 65,
+      "fibre_rescaling": "s6=u*x6 (x6 is subsequently printed as s6)",
+      "maximum_fibre_degree": 4,
+      "maximum_s3_degree": 8,
+      "removed_u_power": 4
+    }
+  },
+  "pivot": {
+    "content_ratio_B_over_A": "1/6",
+    "denominator_exponents": [
+      0,
+      1
+    ],
+    "denominator_factors": [
+      {
+        "degrees": {
+          "T": 0,
+          "lam": 0,
+          "s1": 0,
+          "v": 4
+        },
+        "name": "lc_R20",
+        "sha256": "360fecb0ead2808e84c077b440e0769bb2d5059493851bb3cfd4e08d231d2d79",
+        "terms": 1,
+        "total_degree": 4
+      },
+      {
+        "degrees": {
+          "T": 0,
+          "lam": 53,
+          "s1": 12,
+          "v": 19
+        },
+        "name": "norm_A",
+        "sha256": "8645a24b291f5ea8b4aa957ce798f6d9f146e1a0da3dcf053f926c5efa9a3100",
+        "terms": 2419,
+        "total_degree": 72
+      }
+    ],
+    "numerator": {
+      "degrees": {
+        "T": 4,
+        "lam": 54,
+        "s1": 18,
+        "v": 20
+      },
+      "sha256": "2754cf6e3e6ea536ff39666f5ed1445979bf7baa9162f4846cd06dde568fae50",
+      "terms": 16983,
+      "total_degree": 76
+    },
+    "seconds": 1.233251,
+    "verified_A_times_s3_plus_B": true
+  },
+  "prime": 43,
+  "raw_mu8_groebner_julia": {
+    "julia_project": "/tmp/sic33-groebner-env",
+    "prime": 43,
+    "seconds": 360.894896,
+    "status": "timeout",
+    "stderr_tail": "",
+    "stdout_tail": ""
+  },
+  "raw_mu8_system": {
+    "equation_profiles": [
+      {
+        "index": 0,
+        "length": 3542,
+        "sha256": "82b7e54f1d5dab7b96216134459e763ecf0ed1a35625ed7ab1c4a5760b40c935"
+      },
+      {
+        "index": 1,
+        "length": 10576,
+        "sha256": "6c6d112fb8a2655384f1122caf42fe8037475f694d8d66593a4117d66e46bad8"
+      },
+      {
+        "index": 2,
+        "length": 3944,
+        "sha256": "8153f79a6f6d7567c1e70dce0cf6714f46bbac4e643a306787b54d80c182f0ce"
+      },
+      {
+        "index": 3,
+        "length": 25300,
+        "sha256": "e4dd1aa5faffdae4af15ca244697b8bd3f4ff0259df032eca8a9982dbcf5cc6d"
+      },
+      {
+        "index": 4,
+        "length": 50121,
+        "sha256": "ca46e7c6f2e70f2bce79fab5fbd5694a9f291a2be3d40da29719306a01f31dc1"
+      },
+      {
+        "index": 5,
+        "length": 104325,
+        "sha256": "334da97ab3b05ab0cf5fb1576d307296651a4636c0dfd9f50807ff6527add51d"
+      },
+      {
+        "index": 6,
+        "length": 195458,
+        "sha256": "fe008feef62ce977806c251230b792c3006fc38ea8f93df0363d7ec239efafef"
+      },
+      {
+        "index": 7,
+        "length": 8,
+        "sha256": "eb8f4d15bbb7bce0d0f6d61a4f7d87185c3a6fa5677a298535a543ecef8304f5"
+      },
+      {
+        "index": 8,
+        "length": 24,
+        "sha256": "106acc5b759e2ed8bac80c466a8a6ce424622315f0a24088f68f94dadf2f614d"
+      },
+      {
+        "index": 9,
+        "length": 4028,
+        "sha256": "613779e648cce537938b62449ef9d1cebaa2bb03e882aef76b3407bddacbc07f"
+      }
+    ],
+    "equations": {},
+    "ordinary_variables": [
+      "s6",
+      "s5",
+      "s3",
+      "T",
+      "s1",
+      "lam",
+      "v",
+      "vinv",
+      "jinv",
+      "pinv"
+    ],
+    "remainders": {
+      "mu4": {
+        "degrees": {
+          "s3": 4,
+          "s5": 2,
+          "s6": 2
+        },
+        "maximum_coefficient_terms": 111,
+        "terms": 14
+      },
+      "mu5": {
+        "degrees": {
+          "s3": 6,
+          "s5": 3,
+          "s6": 1
+        },
+        "maximum_coefficient_terms": 433,
+        "terms": 25
+      },
+      "mu6": {
+        "degrees": {
+          "s3": 6,
+          "s5": 3,
+          "s6": 1
+        },
+        "maximum_coefficient_terms": 714,
+        "terms": 29
+      },
+      "mu7": {
+        "degrees": {
+          "s3": 8,
+          "s5": 4,
+          "s6": 1
+        },
+        "maximum_coefficient_terms": 1130,
+        "terms": 41
+      },
+      "mu8": {
+        "degrees": {
+          "s3": 8,
+          "s5": 4,
+          "s6": 1
+        },
+        "maximum_coefficient_terms": 1697,
+        "terms": 48
+      }
+    },
+    "scope": "R20=0, dense pivot, mu4=0, and the compact mu5/mu6/mu7/mu8 pseudo-remainders at s6, with v!=0 and J_Q!=0. Every genuine common moment zero lies in this system; a vanishing mu4 leading coefficient can only add extraneous points. The branch is localized at P5!=0 without expanding the cross-resultants.",
+    "seconds": 0.200046
+  },
+  "reproduction_command": "scripts/research_two_pair_sic_bidegree33_t0_Q_flint.py --stage raw8_direct_popen_groebner_julia --prime 43 --moment-through 8 --threads 8 --solver-seconds 360 --julia-project /tmp/sic33-groebner-env --output artifacts/generated-results/two_pair_sic_bidegree33_t0_Q_raw8_direct_popen_groebner_julia_mod43.json",
+  "seconds": 365.388818,
+  "stage": "raw8_direct_popen_groebner_julia",
+  "status": "exact finite-field research calculation modulo 43 on the residual Q component; not a characteristic-zero certificate"
+}

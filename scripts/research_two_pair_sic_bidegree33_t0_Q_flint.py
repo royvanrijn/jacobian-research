@@ -118,6 +118,12 @@ def parse_arguments() -> argparse.Namespace:
             "raw8_direct_sympy_exceptional",
             "raw8_direct_sympy_open6",
             "raw8_direct_groebner_julia",
+            "raw8_direct_popen_groebner_julia",
+            "raw8_direct_popen_groebner_julia_change",
+            "raw8_popen_groebner_julia",
+            "raw8_popen_groebner_julia_change",
+            "raw8_exceptional_groebner_julia",
+            "raw8_exceptional_groebner_julia_change",
             "basis",
             "pencil",
         ),
@@ -2472,6 +2478,7 @@ def raw_mu8_direct_system(
     a_value: fmpq_mpoly,
     b_value: fmpq_mpoly,
     moments: dict[int, RawFibrePolynomial],
+    p5_open: bool = False,
 ) -> tuple[
     dict[str, object],
     dict[int, RawQuotientPolynomial],
@@ -2510,18 +2517,30 @@ def raw_mu8_direct_system(
         "v*vinv-1",
         "(6084*lam^2+4805)*jinv-1",
     ]
+    ordinary_variables = [
+        "s6",
+        "s5",
+        "s3",
+        "T",
+        "s1",
+        "lam",
+        "v",
+        "vinv",
+        "jinv",
+    ]
+    if p5_open:
+        p5 = clear_quotient_polynomial_denominators(
+            arithmetic,
+            raw_x_coefficient(reduced[5], 1),
+        )
+        polynomials.append(
+            "("
+            + serialize_yz_quotient_polynomial(arithmetic, p5)
+            + ")*pinv-1"
+        )
+        ordinary_variables.append("pinv")
     system = {
-        "ordinary_variables": [
-            "s6",
-            "s5",
-            "s3",
-            "T",
-            "s1",
-            "lam",
-            "v",
-            "vinv",
-            "jinv",
-        ],
+        "ordinary_variables": ordinary_variables,
         "polynomials": polynomials,
         "equation_profiles": [
             {
@@ -2537,6 +2556,12 @@ def raw_mu8_direct_system(
             "and J_Q!=0. Every genuine common moment zero lies in this "
             "system; a vanishing mu4 leading coefficient can only add "
             "extraneous points."
+            + (
+                " The branch is localized at P5!=0 without expanding "
+                "the cross-resultants."
+                if p5_open
+                else ""
+            )
         ),
     }
     return system, reduced, {}
@@ -3377,25 +3402,35 @@ def run_raw_sympy_split_gcd(
                     matrix[right_degree + shift][shift + index] = (
                         coefficient
                     )
-            branch_resultant = extension.zero
-            for permutation in permutations(range(size)):
-                selected = [
-                    matrix[row][column]
-                    for row, column in enumerate(permutation)
-                ]
-                if any(not coefficient for coefficient in selected):
-                    continue
-                term = extension.one
-                for coefficient in selected:
-                    term *= coefficient
-                inversions = sum(
-                    permutation[left_index] > permutation[right_index]
-                    for left_index in range(size)
-                    for right_index in range(left_index + 1, size)
-                )
-                branch_resultant += (
-                    -term if inversions % 2 else term
-                )
+            # Division-free Laplace dynamic programming evaluates a
+            # size-n determinant in O(n*2^n) extension operations.  It
+            # avoids both SymPy's broken exact quotient for this generic
+            # extension and the factorial cost of a Leibniz expansion.
+            minors = {0: extension.one}
+            for row in range(size):
+                next_minors = {}
+                required_size = row + 1
+                for mask in range(1 << size):
+                    if mask.bit_count() != required_size:
+                        continue
+                    value = extension.zero
+                    position = 0
+                    for column in range(size):
+                        bit = 1 << column
+                        if not mask & bit:
+                            continue
+                        coefficient = matrix[row][column]
+                        if coefficient:
+                            term = (
+                                minors[mask ^ bit] * coefficient
+                            )
+                            if (row + position) % 2:
+                                term = -term
+                            value += term
+                        position += 1
+                    next_minors[mask] = value
+                minors = next_minors
+            branch_resultant = minors[(1 << size) - 1]
         resultant_seconds = time.monotonic() - resultant_started
         norm_profile = None
         if branch_resultant is not None:
@@ -3469,8 +3504,15 @@ def run_raw_groebner_julia(
     solver_seconds: int,
     julia_project: Path,
     threads: int,
+    with_change_matrix: bool = False,
 ) -> dict[str, object]:
-    """Run Groebner.jl/F4 on the compact ordinary modular system."""
+    """Run Groebner.jl/F4 on a compact ordinary modular system.
+
+    The ordinary F4 result is only a fast modular scout.  In change-matrix
+    mode the exact identity ``matrix * inputs == basis`` is replayed in
+    AbstractAlgebra; if a nonzero constant occurs in that verified basis,
+    its row is a genuine modular ideal-membership certificate.
+    """
 
     julia = shutil.which("julia")
     if julia is None:
@@ -3480,6 +3522,27 @@ def run_raw_groebner_julia(
     declarations = ",\n".join(
         f"    ({polynomial})"
         for polynomial in system["polynomials"]
+    )
+    solve_expression = (
+        """basis, change = groebner_with_change_matrix(
+    polynomials;
+    ordering=DegRevLex(),
+    reduced=false,
+    certify=false,
+    linalg=:deterministic,
+    monoms=:packed
+)
+change_verified = change * polynomials == basis"""
+        if with_change_matrix
+        else """basis = groebner(
+    polynomials;
+    ordering=DegRevLex(),
+    reduced=false,
+    certify=false,
+    linalg=:deterministic,
+    monoms=:packed
+)
+change_verified = false"""
     )
     source = f"""\
 using Groebner
@@ -3494,20 +3557,21 @@ polynomials = [
 {declarations}
 ]
 started = time()
-basis = groebner(
-    polynomials;
-    ordering=DegRevLex(),
-    reduced=true,
-    certify=true
-)
+{solve_expression}
 elapsed = time() - started
-unit = length(basis) == 1 && isone(basis[1])
+unit_indices = findall(
+    polynomial -> !iszero(polynomial) && total_degree(polynomial) == 0,
+    basis
+)
+unit = !isempty(unit_indices)
 println("GROEBNER_VERSION=" * string(Base.pkgversion(Groebner)))
 println("ABSTRACTALGEBRA_VERSION=" * string(Base.pkgversion(AbstractAlgebra)))
 println("BASIS_LENGTH=" * string(length(basis)))
 println("BASIS_MAX_TERMS=" * string(maximum(length, basis)))
 println("BASIS_MAX_TOTAL_DEGREE=" * string(maximum(total_degree, basis)))
-println("CERTIFIED_UNIT=" * string(unit))
+println("UNIT_FOUND=" * string(unit))
+println("CHANGE_MATRIX_VERIFIED=" * string(change_verified))
+println("UNIT_INDEX=" * string(isempty(unit_indices) ? 0 : first(unit_indices)))
 println("SOLVER_SECONDS=" * string(elapsed))
 """
     started = time.monotonic()
@@ -3551,20 +3615,31 @@ println("SOLVER_SECONDS=" * string(elapsed))
             "BASIS_LENGTH",
             "BASIS_MAX_TERMS",
             "BASIS_MAX_TOTAL_DEGREE",
-            "CERTIFIED_UNIT",
+            "UNIT_FOUND",
+            "CHANGE_MATRIX_VERIFIED",
+            "UNIT_INDEX",
             "SOLVER_SECONDS",
         }:
             key, value = line.split("=", 1)
             markers[key.lower()] = value
-    certified_unit = markers.get("certified_unit") == "true"
+    unit_found = markers.get("unit_found") == "true"
+    change_verified = markers.get("change_matrix_verified") == "true"
+    verified_modular_unit = unit_found and change_verified
     return {
         "status": (
-            "certified-unit"
-            if completed.returncode == 0 and certified_unit
-            else "nonunit-or-failed"
+            "verified-modular-unit"
+            if completed.returncode == 0 and verified_modular_unit
+            else (
+                "probable-modular-unit"
+                if completed.returncode == 0 and unit_found
+                else "nonunit-or-failed"
+            )
         ),
         "returncode": completed.returncode,
-        "certified_unit_mod_p": certified_unit,
+        "probable_unit_mod_p": unit_found,
+        "change_matrix_verified": change_verified,
+        "verified_modular_unit": verified_modular_unit,
+        "with_change_matrix": with_change_matrix,
         "markers": markers,
         "seconds": round(time.monotonic() - started, 6),
         "stdout_tail": completed.stdout[-4000:],
@@ -3574,7 +3649,9 @@ println("SOLVER_SECONDS=" * string(elapsed))
         "scope": (
             "the compact ordinary Q-component system through mu8 over "
             "GF(p), including the v and J_Q localizers; a modular unit "
-            "basis is not by itself a characteristic-zero certificate"
+            "basis is not by itself a characteristic-zero certificate. "
+            "Without a verified change matrix the F4 result is a "
+            "probabilistic scout."
         ),
     }
 
@@ -4060,6 +4137,12 @@ def main() -> None:
                     "raw8_direct_sympy_exceptional",
                     "raw8_direct_sympy_open6",
                     "raw8_direct_groebner_julia",
+                    "raw8_direct_popen_groebner_julia",
+                    "raw8_direct_popen_groebner_julia_change",
+                    "raw8_popen_groebner_julia",
+                    "raw8_popen_groebner_julia_change",
+                    "raw8_exceptional_groebner_julia",
+                    "raw8_exceptional_groebner_julia_change",
                 ):
                     if not PRIME:
                         raise ValueError(
@@ -4078,6 +4161,9 @@ def main() -> None:
                                 a_value,
                                 b_value,
                                 moments,
+                                p5_open=arguments.stage.startswith(
+                                    "raw8_direct_popen"
+                                ),
                             )
                         )
                     elif arguments.stage.startswith("raw8_exceptional"):
@@ -4240,7 +4326,15 @@ def main() -> None:
                                 },
                             )
                         )
-                    elif arguments.stage == "raw8_direct_groebner_julia":
+                    elif arguments.stage in (
+                        "raw8_direct_groebner_julia",
+                        "raw8_direct_popen_groebner_julia",
+                        "raw8_direct_popen_groebner_julia_change",
+                        "raw8_popen_groebner_julia",
+                        "raw8_popen_groebner_julia_change",
+                        "raw8_exceptional_groebner_julia",
+                        "raw8_exceptional_groebner_julia_change",
+                    ):
                         payload["raw_mu8_groebner_julia"] = (
                             run_raw_groebner_julia(
                                 raw_system,
@@ -4248,6 +4342,9 @@ def main() -> None:
                                 arguments.solver_seconds,
                                 arguments.julia_project,
                                 arguments.threads,
+                                with_change_matrix=arguments.stage.endswith(
+                                    "_change"
+                                ),
                             )
                         )
                     payload["seconds"] = round(

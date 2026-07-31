@@ -1,0 +1,30 @@
+{
+  "format": "three-variable-gvc-confluent-tag-v1",
+  "field": "GF(101)",
+  "normalization": "coefficient of t^3 in C is 1",
+  "computed_chart": "epsilon=1 slice",
+  "coordinates": {
+    "C": "(t-y)(t^2+q*t*y+r*y^2)+epsilon*y^3",
+    "epsilon": "C(1,1)",
+    "epsilon_zero_locus": "factor-compatible cubic profiles",
+    "coordinate_change": "c1=q-1, c2=r-q, c3=epsilon-r"
+  },
+  "orders": {
+    "5": {
+      "basis_size": 398,
+      "dimension": 1,
+      "normal_form_of_1": "1"
+    },
+    "6": {
+      "basis_size": 193,
+      "dimension": 0,
+      "normal_form_of_1": "1"
+    },
+    "7": {
+      "basis_size": 1,
+      "dimension": -1,
+      "normal_form_of_1": "0"
+    }
+  },
+  "status": "exact modular calculation; the default epsilon=1 slice is a bounded transversal probe, while --full-chart requests the full normalized-cubic elimination; no characteristic-zero claim"
+}

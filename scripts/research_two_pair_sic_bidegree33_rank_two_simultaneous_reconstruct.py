@@ -43,7 +43,7 @@ RELATIVE_CACHE = (
 COMPACT_RELATIVE_CACHE = (
     ROOT
     / "artifacts"
-    / "generated-results"
+    / "local"
     / "two_pair_sic_bidegree33_rank_two_compact_relative_pf_images.json"
 )
 OUTPUT = (

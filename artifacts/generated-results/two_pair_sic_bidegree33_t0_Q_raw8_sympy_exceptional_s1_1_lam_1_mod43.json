@@ -1,0 +1,406 @@
+{
+  "coefficient_ring": "GF(43)[s1,lam,v], lam=(s1*u-t1)/u, v=u^2",
+  "coordinate_map": {
+    "geometric_ell": "s1*u-t1",
+    "lam": "(s1*u-t1)/u",
+    "v": "u^2"
+  },
+  "extension": "GF(43)(s1,lam,v)[T]/(R20)",
+  "format": "two-pair-sic-bidegree33-t0-Q-unspecialized-flint-v1",
+  "input": {
+    "A": {
+      "degrees": {
+        "T": 3,
+        "lam": 11,
+        "s1": 6,
+        "v": 3
+      },
+      "sha256": "a3c0c6b3ad996795edadbf378df6b6441c2b7dc0ff64710401e7cfdc846652e4",
+      "terms": 163,
+      "total_degree": 14
+    },
+    "B": {
+      "degrees": {
+        "T": 5,
+        "lam": 12,
+        "s1": 10,
+        "v": 4
+      },
+      "sha256": "b7ca2a4da1768fb199c58f8566664b3095b0832d78fd801cad8e2cc63170b225",
+      "terms": 401,
+      "total_degree": 18
+    },
+    "R20": {
+      "degrees": {
+        "T": 5,
+        "lam": 8,
+        "s1": 10,
+        "v": 4
+      },
+      "sha256": "82b7e54f1d5dab7b96216134459e763ecf0ed1a35625ed7ab1c4a5760b40c935",
+      "terms": 200,
+      "total_degree": 14
+    },
+    "adapted_term_counts": {
+      "A": 166,
+      "B": 411,
+      "R20": 200
+    },
+    "contents": {
+      "A": "1199446664905256374721538775056384000000000",
+      "B": "199907777484209395786923129176064000000000",
+      "R20": "1"
+    },
+    "removed_u_powers": {
+      "A": 16,
+      "B": 16,
+      "R20": 2
+    }
+  },
+  "moments": {
+    "mu4": {
+      "expanded_length": 7374,
+      "expanded_terms": 260,
+      "fibre_monomials": 14,
+      "fibre_rescaling": "s6=u*x6 (x6 is subsequently printed as s6)",
+      "maximum_fibre_degree": 2,
+      "maximum_s3_degree": 4,
+      "removed_u_power": 3
+    },
+    "mu5": {
+      "expanded_length": 34261,
+      "expanded_terms": 995,
+      "fibre_monomials": 30,
+      "fibre_rescaling": "s6=u*x6 (x6 is subsequently printed as s6)",
+      "maximum_fibre_degree": 3,
+      "maximum_s3_degree": 6,
+      "removed_u_power": 3
+    },
+    "mu6": {
+      "expanded_length": 81506,
+      "expanded_terms": 2045,
+      "fibre_monomials": 36,
+      "fibre_rescaling": "s6=u*x6 (x6 is subsequently printed as s6)",
+      "maximum_fibre_degree": 3,
+      "maximum_s3_degree": 6,
+      "removed_u_power": 3
+    },
+    "mu7": {
+      "expanded_length": 167892,
+      "expanded_terms": 3986,
+      "fibre_monomials": 55,
+      "fibre_rescaling": "s6=u*x6 (x6 is subsequently printed as s6)",
+      "maximum_fibre_degree": 4,
+      "maximum_s3_degree": 8,
+      "removed_u_power": 4
+    },
+    "mu8": {
+      "expanded_length": 398986,
+      "expanded_terms": 8160,
+      "fibre_monomials": 65,
+      "fibre_rescaling": "s6=u*x6 (x6 is subsequently printed as s6)",
+      "maximum_fibre_degree": 4,
+      "maximum_s3_degree": 8,
+      "removed_u_power": 4
+    }
+  },
+  "pivot": {
+    "content_ratio_B_over_A": "1/6",
+    "denominator_exponents": [
+      0,
+      1
+    ],
+    "denominator_factors": [
+      {
+        "degrees": {
+          "T": 0,
+          "lam": 0,
+          "s1": 0,
+          "v": 4
+        },
+        "name": "lc_R20",
+        "sha256": "360fecb0ead2808e84c077b440e0769bb2d5059493851bb3cfd4e08d231d2d79",
+        "terms": 1,
+        "total_degree": 4
+      },
+      {
+        "degrees": {
+          "T": 0,
+          "lam": 53,
+          "s1": 12,
+          "v": 19
+        },
+        "name": "norm_A",
+        "sha256": "8645a24b291f5ea8b4aa957ce798f6d9f146e1a0da3dcf053f926c5efa9a3100",
+        "terms": 2419,
+        "total_degree": 72
+      }
+    ],
+    "numerator": {
+      "degrees": {
+        "T": 4,
+        "lam": 54,
+        "s1": 18,
+        "v": 20
+      },
+      "sha256": "2754cf6e3e6ea536ff39666f5ed1445979bf7baa9162f4846cd06dde568fae50",
+      "terms": 16983,
+      "total_degree": 76
+    },
+    "seconds": 1.221868,
+    "verified_A_times_s3_plus_B": true
+  },
+  "prime": 43,
+  "raw_mu8_sympy_split": {
+    "base_specialization": {
+      "lam": 1,
+      "s1": 1
+    },
+    "coprime_on_generic_base": true,
+    "gcd_degree": 0,
+    "gcd_seconds": 0.0,
+    "gcd_string_length": 1,
+    "input_degrees": [
+      2,
+      3
+    ],
+    "mode": "exceptional",
+    "modulus_specialization": {
+      "degree": 5,
+      "factorization": "(31, [(x^5 + 6*x^4 + 6*x^3 + 22*x^2 + 7*x + 7, 1)])",
+      "irreducible": true,
+      "point": {
+        "lam": 1,
+        "s1": 1,
+        "v": 1
+      },
+      "polynomial": "31*x^5 + 14*x^4 + 14*x^3 + 37*x^2 + 2*x + 2"
+    },
+    "norm_profile": {
+      "denominator": "38",
+      "factorization": {
+        "factors": [
+          {
+            "degree": 1,
+            "factor": "v",
+            "multiplicity": 5
+          },
+          {
+            "degree": 1,
+            "factor": "v + 40",
+            "multiplicity": 30
+          },
+          {
+            "degree": 1,
+            "factor": "v + 12",
+            "multiplicity": 48
+          },
+          {
+            "degree": 2,
+            "factor": "v**2 + 12*v + 7",
+            "multiplicity": 1
+          },
+          {
+            "degree": 2,
+            "factor": "v**2 + 4*v + 35",
+            "multiplicity": 120
+          },
+          {
+            "degree": 3,
+            "factor": "v**3 + 28*v**2 + 17*v + 10",
+            "multiplicity": 30
+          },
+          {
+            "degree": 5,
+            "factor": "v**5 + 41*v**4 + 28*v**3 + 4*v**2 + 33*v + 2",
+            "multiplicity": 30
+          },
+          {
+            "degree": 10,
+            "factor": "v**10 + 28*v**9 + 24*v**8 + 31*v**7 + 3*v**6 + 37*v**5 + 37*v**4 + 36*v**3 + 29*v**2 + 13*v + 41",
+            "multiplicity": 1
+          },
+          {
+            "degree": 20,
+            "factor": "v**20 + 6*v**19 + 42*v**18 + 10*v**17 + 2*v**16 + 7*v**15 + 5*v**14 + 29*v**13 + 2*v**12 + 28*v**11 + 8*v**10 + 10*v**9 + 16*v**8 + 20*v**4 + 6*v**3 + 41*v**2 + 11*v + 38",
+            "multiplicity": 1
+          },
+          {
+            "degree": 40,
+            "factor": "v**40 + 10*v**39 + 28*v**38 + 3*v**37 + 4*v**36 + 41*v**35 + 36*v**34 + 7*v**33 + 9*v**31 + 23*v**30 + 11*v**29 + 10*v**28 + 23*v**27 + 2*v**26 + 40*v**24 + 8*v**23 + 27*v**22 + 36*v**21 + 34*v**20 + 37*v**19 + 39*v**18 + 19*v**17 + 14*v**16 + 8*v**15 + 19*v**14 + 28*v**13 + 22*v**12 + 2*v**11 + 17*v**10 + 9*v**9 + 29*v**8 + 10*v**7 + 12*v**6 + 8*v**5 + 32*v**4 + 14*v**3 + 11*v**2 + 11*v + 17",
+            "multiplicity": 1
+          }
+        ],
+        "unit": "6"
+      },
+      "numerator": "6*v**635 + 19*v**634 + 3*v**633 + 12*v**632 + 8*v**631 + 20*v**630 + 13*v**629 + 30*v**628 + 6*v**627 + 10*v**626 + 9*v**625 + 22*v**624 + 42*v**623 + 21*v**622 + 19*v**621 + 17*v**620 + 9*v**619 + 5*v**618 + 10*v**617 + 5*v**616 + 23*v**615 + 26*v**614 + v**613 + 42*v**612 + 3*v**611 + 39*v**610 + 42*v**609 + 17*v**608 + 11*v**607 + 32*v**606 + 8*v**605 + 7*v**604 + 34*v**603 + 3*v**602 + 5*v**601 + 27*v**600 + 39*v**599 + 14*v**598 + 42*v**597 + 28*v**596 + 2*v**595 + 23*v**594 + 25*v**593 + 7*v**592 + 4*v**591 + 19*v**590 + 8*v**589 + 38*v**588 + 29*v**587 + 42*v**586 + 42*v**585 + 26*v**584 + 35*v**583 + 10*v**582 + 3*v**581 + 19*v**580 + 8*v**579 + 32*v**578 + 2*v**577 + 32*v**576 + 15*v**575 + 8*v**574 + 29*v**573 + 24*v**572 + 23*v**571 + 12*v**570 + 38*v**569 + 25*v**568 + 36*v**567 + 36*v**566 + 12*v**565 + 7*v**564 + 28*v**563 + 17*v**562 + 10*v**561 + 14*v**560 + 25*v**559 + 29*v**558 + 20*v**557 + 25*v**556 + 15*v**555 + 37*v**554 + 4*v**553 + 4*v**552 + 34*v**551 + 18*v**549 + 31*v**548 + 26*v**547 + 19*v**546 + 26*v**545 + 14*v**544 + 32*v**543 + 13*v**542 + 10*v**541 + 11*v**540 + 23*v**539 + 33*v**538 + 14*v**537 + 4*v**536 + 10*v**534 + 28*v**533 + 22*v**532 + 40*v**531 + 17*v**530 + 19*v**529 + 20*v**528 + 15*v**527 + 3*v**526 + 29*v**525 + 42*v**524 + 15*v**523 + 14*v**522 + 22*v**521 + 11*v**520 + 19*v**519 + 39*v**518 + 13*v**517 + 34*v**516 + 15*v**515 + 4*v**514 + 21*v**513 + 41*v**512 + 13*v**510 + 12*v**509 + 41*v**508 + 12*v**507 + 2*v**506 + 13*v**505 + 12*v**504 + 20*v**503 + 24*v**502 + 23*v**501 + 3*v**500 + 36*v**499 + 9*v**498 + 34*v**497 + 38*v**496 + 6*v**495 + 28*v**494 + 13*v**493 + 29*v**492 + 35*v**491 + 29*v**490 + 15*v**489 + 32*v**488 + 14*v**487 + 11*v**486 + 15*v**485 + 28*v**484 + 35*v**483 + 24*v**482 + 35*v**481 + 33*v**480 + 9*v**479 + 21*v**478 + 14*v**477 + 27*v**476 + 3*v**475 + 20*v**474 + 41*v**473 + 14*v**472 + 19*v**471 + 38*v**470 + 42*v**469 + 20*v**468 + 13*v**467 + 23*v**466 + 32*v**465 + 23*v**464 + v**463 + 16*v**462 + 18*v**461 + 12*v**460 + 21*v**459 + 5*v**458 + 21*v**457 + 41*v**456 + 26*v**455 + 28*v**454 + 4*v**453 + 33*v**452 + 32*v**451 + 24*v**450 + 11*v**449 + 26*v**448 + 9*v**447 + 29*v**446 + 18*v**445 + 42*v**444 + 12*v**443 + v**442 + 13*v**441 + 22*v**440 + 16*v**439 + 18*v**438 + 16*v**437 + 18*v**436 + 32*v**435 + 23*v**434 + 19*v**433 + 24*v**432 + v**431 + 5*v**430 + 42*v**429 + 41*v**428 + 22*v**427 + 39*v**426 + 30*v**425 + 28*v**424 + 32*v**423 + 41*v**422 + 23*v**421 + 3*v**420 + 31*v**419 + 35*v**418 + 22*v**416 + v**415 + 21*v**414 + 27*v**413 + 35*v**412 + 17*v**411 + 15*v**410 + 15*v**409 + 37*v**408 + 26*v**407 + 12*v**406 + 15*v**405 + 2*v**404 + 36*v**403 + 20*v**402 + 20*v**401 + 37*v**400 + 10*v**399 + 41*v**398 + 5*v**397 + 6*v**396 + 24*v**395 + 35*v**394 + 33*v**393 + 37*v**392 + 37*v**390 + 13*v**389 + 16*v**388 + 9*v**387 + 32*v**386 + 25*v**385 + 3*v**384 + 7*v**383 + 5*v**382 + 21*v**381 + 25*v**380 + 20*v**379 + 21*v**378 + 26*v**377 + 12*v**376 + 29*v**375 + 20*v**374 + 26*v**373 + 9*v**372 + 25*v**371 + 22*v**370 + 35*v**369 + 15*v**368 + 21*v**367 + 32*v**366 + 5*v**365 + 2*v**364 + 3*v**363 + 32*v**362 + 23*v**361 + 35*v**360 + 12*v**359 + 35*v**358 + 31*v**357 + 14*v**356 + 28*v**355 + 23*v**354 + 10*v**353 + 24*v**352 + 29*v**351 + 39*v**350 + 23*v**349 + 38*v**348 + 13*v**347 + 40*v**346 + 27*v**345 + 24*v**344 + 39*v**343 + 37*v**342 + 37*v**341 + 41*v**340 + 27*v**339 + 23*v**338 + 18*v**337 + 37*v**336 + 21*v**335 + 16*v**334 + 42*v**333 + 34*v**332 + 2*v**330 + 25*v**329 + 11*v**328 + 16*v**327 + 16*v**326 + 31*v**325 + 15*v**324 + 22*v**323 + 9*v**322 + 2*v**321 + 42*v**320 + 32*v**319 + 5*v**318 + 36*v**317 + 11*v**316 + 21*v**315 + 6*v**314 + 41*v**313 + 37*v**312 + 8*v**311 + 5*v**310 + 8*v**309 + 8*v**308 + 13*v**307 + 25*v**306 + 4*v**305 + 6*v**304 + 6*v**303 + 36*v**302 + 17*v**301 + 5*v**300 + 26*v**299 + 30*v**298 + 7*v**297 + 4*v**296 + 5*v**295 + 30*v**294 + 8*v**293 + 35*v**292 + 38*v**291 + 30*v**290 + v**289 + 6*v**288 + 32*v**287 + 42*v**286 + 38*v**285 + 25*v**284 + 16*v**283 + 14*v**282 + 40*v**281 + 31*v**280 + 36*v**279 + 16*v**278 + 34*v**277 + 10*v**276 + 35*v**275 + 5*v**274 + 30*v**273 + 30*v**272 + 39*v**271 + 19*v**270 + 21*v**269 + 37*v**268 + 10*v**267 + 18*v**266 + 36*v**265 + 19*v**264 + 5*v**263 + 28*v**262 + 21*v**261 + 32*v**260 + 25*v**259 + 34*v**258 + 28*v**257 + 13*v**256 + 20*v**255 + 15*v**254 + 23*v**253 + 34*v**252 + 41*v**251 + 32*v**250 + 40*v**249 + 12*v**248 + 24*v**247 + 27*v**246 + 28*v**245 + 22*v**244 + 21*v**243 + v**242 + v**241 + 42*v**240 + 20*v**239 + 16*v**238 + 31*v**237 + 7*v**235 + 6*v**234 + 18*v**233 + 6*v**232 + 5*v**231 + 13*v**230 + 41*v**229 + 25*v**228 + 40*v**227 + 8*v**226 + 18*v**225 + 16*v**224 + 32*v**223 + 34*v**222 + 25*v**221 + 17*v**220 + 31*v**219 + 35*v**218 + 38*v**217 + 41*v**216 + 34*v**215 + 6*v**214 + 41*v**213 + 24*v**212 + 38*v**211 + 2*v**210 + 23*v**209 + 10*v**207 + 10*v**206 + 19*v**205 + 13*v**204 + 6*v**203 + 20*v**202 + 21*v**201 + 23*v**200 + 30*v**199 + 2*v**198 + 19*v**197 + 17*v**196 + 15*v**195 + 13*v**194 + 35*v**193 + 2*v**192 + 30*v**191 + 14*v**190 + 4*v**189 + 12*v**188 + 29*v**187 + 4*v**186 + 5*v**185 + 4*v**184 + 13*v**183 + 18*v**182 + 17*v**181 + 28*v**180 + 22*v**179 + 6*v**178 + 33*v**177 + 9*v**176 + 12*v**175 + 26*v**174 + 26*v**173 + 18*v**172 + 22*v**171 + 27*v**170 + 18*v**169 + 17*v**168 + 14*v**167 + 32*v**166 + 33*v**165 + 35*v**164 + 37*v**163 + 10*v**162 + 5*v**161 + 8*v**160 + 39*v**159 + 29*v**158 + 29*v**157 + 15*v**156 + 28*v**155 + 19*v**153 + 42*v**152 + 28*v**151 + 26*v**150 + 34*v**149 + 42*v**148 + 14*v**147 + 32*v**146 + 21*v**145 + 39*v**144 + 2*v**143 + 40*v**142 + 28*v**141 + 37*v**140 + 34*v**139 + 25*v**138 + 25*v**137 + 2*v**136 + 17*v**135 + 14*v**133 + v**132 + 7*v**131 + 35*v**129 + 33*v**128 + 39*v**127 + 10*v**126 + 4*v**125 + 27*v**124 + 29*v**123 + 42*v**122 + 20*v**121 + 8*v**120 + 24*v**119 + 16*v**118 + 11*v**117 + 20*v**116 + 42*v**115 + 18*v**114 + v**113 + 29*v**112 + 24*v**111 + 15*v**110 + 32*v**109 + 35*v**108 + 41*v**107 + 26*v**106 + 26*v**105 + 42*v**104 + 19*v**102 + 2*v**101 + 28*v**100 + 14*v**99 + 4*v**98 + 37*v**97 + 34*v**96 + 14*v**95 + 28*v**94 + 25*v**93 + 19*v**92 + 25*v**91 + 20*v**90 + 30*v**89 + 41*v**88 + 22*v**87 + 27*v**86 + 10*v**85 + 18*v**84 + 4*v**83 + 25*v**82 + 15*v**81 + 32*v**80 + 11*v**79 + 20*v**78 + 30*v**77 + 13*v**76 + 5*v**75 + 12*v**74 + v**73 + 3*v**72 + 28*v**71 + 32*v**70 + 9*v**69 + 3*v**68 + 36*v**67 + 14*v**66 + 26*v**65 + 24*v**64 + 2*v**63 + 9*v**62 + 20*v**61 + 36*v**60 + 36*v**59 + 19*v**58 + 34*v**57 + 7*v**56 + 5*v**55 + 26*v**54 + 24*v**53 + 14*v**52 + 15*v**51 + 10*v**50 + 39*v**49 + 30*v**48 + 11*v**47 + 8*v**45 + 23*v**44 + 32*v**43 + 23*v**42 + 33*v**41 + 35*v**40 + 23*v**39 + 32*v**38 + 22*v**37 + 32*v**36 + 5*v**35 + 19*v**34 + 36*v**33 + 24*v**32 + 23*v**31 + 32*v**30 + 40*v**29 + 15*v**28 + 5*v**27 + 36*v**26 + 11*v**25 + 28*v**24 + 25*v**23 + 23*v**22 + 18*v**21 + 14*v**20 + 26*v**19 + 38*v**18 + 20*v**17 + 41*v**16 + 36*v**15 + 25*v**14 + 13*v**13 + 14*v**12 + 34*v**11 + 22*v**10 + 7*v**9 + 12*v**8 + 6*v**7 + 21*v**6 + 27*v**5"
+    },
+    "pivoted": {
+      "mu5": {
+        "coefficient_numerator_terms": {
+          "0,0": 40916,
+          "0,1": 30992,
+          "0,2": 22272,
+          "0,3": 13111,
+          "1,0": 29018,
+          "1,1": 20553,
+          "1,2": 13111
+        },
+        "fibre_terms": 7,
+        "leading_coefficient": {
+          "denominator_exponents": [
+            0,
+            0
+          ],
+          "numerator": {
+            "degrees": {
+              "T": 4,
+              "lam": 44,
+              "s1": 20,
+              "v": 23
+            },
+            "sha256": "9f6bd3b3d37c8ad1be2f9b4e78e57c5f18742380b415188c541c18aa55cacfb8",
+            "terms": 13111,
+            "total_degree": 67
+          }
+        },
+        "leading_monomial": [
+          1,
+          2
+        ],
+        "maximum_coefficient_terms": 40916,
+        "removed_content": {
+          "degrees": {
+            "T": 0,
+            "lam": 24,
+            "s1": 0,
+            "v": 3
+          },
+          "sha256": "69dcd0794b014da6daa6d0c5cb6c86be04ea61b92b2424b5b89c8c531cb854a4",
+          "terms": 13,
+          "total_degree": 27
+        },
+        "seconds": 19.185857
+      }
+    },
+    "resultant_is_zero": false,
+    "resultant_seconds": 0.802984,
+    "scope": "generic field GF(p)(s1,lam,v)[T]/(R20), with every fraction-free pivot content and dense-pivot norm inverted",
+    "seconds": 21.684264,
+    "status": "coprime"
+  },
+  "raw_mu8_system": {
+    "equation_profiles": [
+      {
+        "index": 0,
+        "length": 3542,
+        "sha256": "82b7e54f1d5dab7b96216134459e763ecf0ed1a35625ed7ab1c4a5760b40c935"
+      },
+      {
+        "index": 1,
+        "length": 10576,
+        "sha256": "6c6d112fb8a2655384f1122caf42fe8037475f694d8d66593a4117d66e46bad8"
+      },
+      {
+        "index": 2,
+        "length": 3944,
+        "sha256": "8153f79a6f6d7567c1e70dce0cf6714f46bbac4e643a306787b54d80c182f0ce"
+      },
+      {
+        "index": 3,
+        "length": 25300,
+        "sha256": "e4dd1aa5faffdae4af15ca244697b8bd3f4ff0259df032eca8a9982dbcf5cc6d"
+      },
+      {
+        "index": 4,
+        "length": 50121,
+        "sha256": "ca46e7c6f2e70f2bce79fab5fbd5694a9f291a2be3d40da29719306a01f31dc1"
+      },
+      {
+        "index": 5,
+        "length": 104325,
+        "sha256": "334da97ab3b05ab0cf5fb1576d307296651a4636c0dfd9f50807ff6527add51d"
+      },
+      {
+        "index": 6,
+        "length": 195458,
+        "sha256": "fe008feef62ce977806c251230b792c3006fc38ea8f93df0363d7ec239efafef"
+      },
+      {
+        "index": 7,
+        "length": 8,
+        "sha256": "eb8f4d15bbb7bce0d0f6d61a4f7d87185c3a6fa5677a298535a543ecef8304f5"
+      },
+      {
+        "index": 8,
+        "length": 24,
+        "sha256": "106acc5b759e2ed8bac80c466a8a6ce424622315f0a24088f68f94dadf2f614d"
+      }
+    ],
+    "equations": {},
+    "ordinary_variables": [
+      "s6",
+      "s5",
+      "s3",
+      "T",
+      "s1",
+      "lam",
+      "v",
+      "vinv",
+      "jinv"
+    ],
+    "remainders": {
+      "mu4": {
+        "degrees": {
+          "s3": 4,
+          "s5": 2,
+          "s6": 2
+        },
+        "maximum_coefficient_terms": 111,
+        "terms": 14
+      },
+      "mu5": {
+        "degrees": {
+          "s3": 6,
+          "s5": 3,
+          "s6": 1
+        },
+        "maximum_coefficient_terms": 433,
+        "terms": 25
+      },
+      "mu6": {
+        "degrees": {
+          "s3": 6,
+          "s5": 3,
+          "s6": 1
+        },
+        "maximum_coefficient_terms": 714,
+        "terms": 29
+      },
+      "mu7": {
+        "degrees": {
+          "s3": 8,
+          "s5": 4,
+          "s6": 1
+        },
+        "maximum_coefficient_terms": 1130,
+        "terms": 41
+      },
+      "mu8": {
+        "degrees": {
+          "s3": 8,
+          "s5": 4,
+          "s6": 1
+        },
+        "maximum_coefficient_terms": 1697,
+        "terms": 48
+      }
+    },
+    "scope": "R20=0, dense pivot, mu4=0, and the compact mu5/mu6/mu7/mu8 pseudo-remainders at s6, with v!=0 and J_Q!=0. Every genuine common moment zero lies in this system; a vanishing mu4 leading coefficient can only add extraneous points.",
+    "seconds": 0.194902
+  },
+  "reproduction_command": "scripts/research_two_pair_sic_bidegree33_t0_Q_flint.py --stage raw8_direct_sympy_exceptional --prime 43 --moment-through 8 --s1-value 1 --lam-value 1 --output artifacts/generated-results/two_pair_sic_bidegree33_t0_Q_raw8_sympy_exceptional_s1_1_lam_1_mod43.json",
+  "seconds": 26.137904,
+  "stage": "raw8_direct_sympy_exceptional",
+  "status": "exact finite-field research calculation modulo 43 on the residual Q component; not a characteristic-zero certificate"
+}

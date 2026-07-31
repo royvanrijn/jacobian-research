@@ -1,0 +1,114 @@
+{
+  "format": "three-variable-gvc-tagged-lift-v1",
+  "coordinate_only_sic_multiplier": {
+    "identity": "E_2(z2*F^m)=((4m+2)!*m!/(2m+1)!!)*z1",
+    "bounded_replay_orders": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "all_order_proof": "E(xi1*H)=d_z1 E(H), while the xi2*z2 derivative vanishes by odd Hopf height"
+  },
+  "rank_five_auxiliary_ladder": {
+    "field": "GF(101)",
+    "operator_auxiliary_exponents": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "polynomial_auxiliary_exponents": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "normalization": "a0=b0=1",
+    "orders": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "output_term_counts": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "groebner_summary": {
+      "basis_size": 1,
+      "dimension": -1,
+      "normal_form_of_1": "0"
+    },
+    "status": "bounded exact modular full-support obstruction"
+  },
+  "tagged_channel_formula": "sum_k binom(m,k)^2 (m-k)! d_t^(m-k) B^k(L^(m-k) C^k)",
+  "exact_minimal_tag_obstruction": {
+    "field": "Q",
+    "orders": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "groebner_basis_sizes": [
+      1,
+      2,
+      4,
+      7,
+      1
+    ],
+    "terminal_order": 5,
+    "terminal_ideal": "(1)"
+  },
+  "factor_compatible_modular_obstruction": {
+    "field": "GF(101)",
+    "normalization": "coefficient of t^2 in Q is 1",
+    "through_moment_5": {
+      "basis_size": 158,
+      "dimension": 1,
+      "normal_form_of_1": "1"
+    },
+    "through_moment_6": {
+      "basis_size": 1,
+      "dimension": -1,
+      "normal_form_of_1": "0"
+    }
+  },
+  "general_cubic_profile_fibers": {
+    "field": "GF(101)",
+    "normalization": "coefficient of t^3 in C is 1",
+    "sample_count": 200,
+    "random_seed": 20260730,
+    "first_empty_moment_histogram": {
+      "5": 198,
+      "6": 2
+    },
+    "profiles_first_empty_at_6": [
+      [
+        96,
+        38,
+        76
+      ],
+      [
+        47,
+        49,
+        36
+      ]
+    ],
+    "survivors_through_6": [],
+    "status": "bounded exact fiber search, not a global theorem"
+  },
+  "conclusion": {
+    "gvc3_counterexample_found": false,
+    "closed_exactly": "the fixed Long-tag profile C=t^2(t-y), arbitrary binary cubic B, through pure moment five over Q",
+    "remaining": "general cubic profile in characteristic zero; higher order/degree tagged channels; non-factor-compatible lifts"
+  }
+}

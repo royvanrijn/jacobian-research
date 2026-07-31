@@ -30,7 +30,7 @@ import tempfile
 from typing import Any
 
 from flint import nmod_mat
-from sympy import Poly, expand, nextprime, symbols
+from sympy import Poly, cancel, expand, nextprime, symbols
 
 from verify_two_pair_sic_bidegree33_rank_two_ore_gcd import (
     ROOT,
@@ -55,7 +55,7 @@ EXPECTED_LEFT_QUOTIENT_ORDER = 50
 IMAGE_CACHE = (
     ROOT
     / "artifacts"
-    / "generated-results"
+    / "local"
     / "two_pair_sic_bidegree33_rank_two_compact_relative_pf_images.json"
 )
 OUTPUT = (
@@ -67,13 +67,13 @@ OUTPUT = (
 CLOSED_OPERATOR = (
     ROOT
     / "artifacts"
-    / "generated-results"
+    / "local"
     / "two_pair_sic_bidegree33_rank_two_compact_picard_fuchs.ore"
 )
 COMMON_IMAGE_CACHE = (
     ROOT
     / "artifacts"
-    / "generated-results"
+    / "local"
     / "two_pair_sic_bidegree33_rank_two_ore_reconstruct_images.json"
 )
 
@@ -449,7 +449,7 @@ def verify_birational_compression() -> dict[str, object]:
         + 149*x*y**3 + 127*x*y**2 + 113*x*y + 91*x
         + 354*y**3 + 302*y**2 + 268*y + 216
     )
-    substituted = expand(
+    substituted = cancel(
         (x + y) ** 3
         * q.subs({u: x, t: y / (x + y)})
         / x**3
