@@ -1,0 +1,104 @@
+{
+  "artifacts": {
+    "two_pair_sic_bidegree33_sparse_five_support_screen.json": "sha256:611bcf9f93ef7a639e756fa1cce95baee3a76ec54659e44ce7c9e5843a3392f2",
+    "two_pair_sic_bidegree33_sparse_four_support_screen.json": "sha256:03e007f4b907858de1f3826612ae0475d3f18acc8fb0ddc3903ae75a5f57a0f6",
+    "two_pair_sic_bidegree33_sparse_three_support_screen.json": "sha256:67ded5a252721e600de505f8f64928791e4da14e26a7bf493853ee86e7e8c30c"
+  },
+  "calculation": "two_pair_sic_bidegree33_sparse_supports_certificate",
+  "formula_checks": {
+    "size_five": {
+      "orders": [
+        1,
+        6
+      ],
+      "passed": true,
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ]
+      ]
+    },
+    "size_four": [
+      {
+        "orders": [
+          1,
+          6
+        ],
+        "passed": true,
+        "support": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      },
+      {
+        "orders": [
+          1,
+          6
+        ],
+        "passed": true,
+        "support": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      }
+    ]
+  },
+  "orders": [
+    1,
+    12
+  ],
+  "scope": "exact characteristic-zero exclusion through mu12 of every mixed-sign coefficient support of size at most five; nonmixed supports reduce to the exact diagonal theorem and a strict Hilbert--Mumford half-space",
+  "seconds": 115.193599,
+  "status": "proved",
+  "support_counts": {
+    "all_size_three": 560,
+    "mixed_size_five": 3864,
+    "mixed_size_four": 1401,
+    "mixed_size_three": 324
+  }
+}
