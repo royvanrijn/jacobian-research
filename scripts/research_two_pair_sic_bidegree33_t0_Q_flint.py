@@ -120,10 +120,18 @@ def parse_arguments() -> argparse.Namespace:
             "raw8_direct_groebner_julia",
             "raw8_direct_popen_groebner_julia",
             "raw8_direct_popen_groebner_julia_change",
+            "raw8_direct_aopen_groebner_julia",
+            "raw8_direct_aopen_groebner_julia_change",
+            "raw8_direct_popen_aopen_groebner_julia",
+            "raw8_direct_popen_aopen_groebner_julia_change",
             "raw8_popen_groebner_julia",
             "raw8_popen_groebner_julia_change",
             "raw8_exceptional_groebner_julia",
             "raw8_exceptional_groebner_julia_change",
+            "raw8_exceptional_aopen_groebner_julia",
+            "raw8_exceptional_aopen_groebner_julia_change",
+            "raw8_aexceptional_groebner_julia",
+            "raw8_aexceptional_groebner_julia_change",
             "basis",
             "pencil",
         ),
@@ -2393,6 +2401,7 @@ def raw_mu8_exceptional_system(
     a_value: fmpq_mpoly,
     b_value: fmpq_mpoly,
     moments: dict[int, RawFibrePolynomial],
+    a_open: bool = False,
 ) -> tuple[
     dict[str, object],
     dict[int, RawQuotientPolynomial],
@@ -2443,18 +2452,22 @@ def raw_mu8_exceptional_system(
         "v*vinv-1",
         "(6084*lam^2+4805)*jinv-1",
     ]
+    ordinary_variables = [
+        "s6",
+        "s5",
+        "s3",
+        "T",
+        "s1",
+        "lam",
+        "v",
+        "vinv",
+        "jinv",
+    ]
+    if a_open:
+        polynomials.append(f"({a_value})*ainv-1")
+        ordinary_variables.append("ainv")
     system = {
-        "ordinary_variables": [
-            "s6",
-            "s5",
-            "s3",
-            "T",
-            "s1",
-            "lam",
-            "v",
-            "vinv",
-            "jinv",
-        ],
+        "ordinary_variables": ordinary_variables,
         "polynomials": polynomials,
         "equation_profiles": [
             {
@@ -2468,6 +2481,7 @@ def raw_mu8_exceptional_system(
             "R20=0, dense pivot, P5=Q5=0, mu4=0, and the "
             "mu6/mu7/mu8 pseudo-remainders at the common s6 root, "
             "with v!=0 and J_Q!=0"
+            + (" and the dense-pivot open A!=0" if a_open else "")
         ),
     }
     return system, reduced, equations
@@ -2479,6 +2493,7 @@ def raw_mu8_direct_system(
     b_value: fmpq_mpoly,
     moments: dict[int, RawFibrePolynomial],
     p5_open: bool = False,
+    a_open: bool = False,
 ) -> tuple[
     dict[str, object],
     dict[int, RawQuotientPolynomial],
@@ -2539,6 +2554,9 @@ def raw_mu8_direct_system(
             + ")*pinv-1"
         )
         ordinary_variables.append("pinv")
+    if a_open:
+        polynomials.append(f"({a_value})*ainv-1")
+        ordinary_variables.append("ainv")
     system = {
         "ordinary_variables": ordinary_variables,
         "polynomials": polynomials,
@@ -2562,6 +2580,82 @@ def raw_mu8_direct_system(
                 if p5_open
                 else ""
             )
+            + (" The dense pivot is localized at A!=0." if a_open else "")
+        ),
+    }
+    return system, reduced, {}
+
+
+def raw_mu8_aexceptional_system(
+    arithmetic: QuotientArithmetic,
+    a_value: fmpq_mpoly,
+    b_value: fmpq_mpoly,
+    moments: dict[int, RawFibrePolynomial],
+) -> tuple[
+    dict[str, object],
+    dict[int, RawQuotientPolynomial],
+    dict[str, YZPolynomial],
+]:
+    """Retain the genuine dense-pivot exceptional locus ``A=B=0``."""
+
+    if not set(range(4, 9)) <= set(moments):
+        raise ValueError("raw mu8 system requires moments mu4 through mu8")
+    reduced = {
+        4: clear_quotient_polynomial_denominators(
+            arithmetic,
+            quotient_raw_polynomial(arithmetic, moments[4]),
+        )
+    }
+    reduced.update(
+        {
+            order: raw_quadratic_pseudo_remainder(
+                arithmetic,
+                moments[4],
+                moments[order],
+            )
+            for order in range(5, 9)
+        }
+    )
+    polynomials = [
+        str(arithmetic.modulus),
+        str(a_value),
+        str(b_value),
+        *[
+            serialize_raw_quotient_polynomial(
+                arithmetic,
+                reduced[order],
+            )
+            for order in range(4, 9)
+        ],
+        "v*vinv-1",
+        "(6084*lam^2+4805)*jinv-1",
+    ]
+    system = {
+        "ordinary_variables": [
+            "s6",
+            "s5",
+            "s3",
+            "T",
+            "s1",
+            "lam",
+            "v",
+            "vinv",
+            "jinv",
+        ],
+        "polynomials": polynomials,
+        "equation_profiles": [
+            {
+                "index": index,
+                "length": len(polynomial),
+                "sha256": hashlib.sha256(polynomial.encode()).hexdigest(),
+            }
+            for index, polynomial in enumerate(polynomials)
+        ],
+        "scope": (
+            "R20=A=B=0, mu4=0, and the compact "
+            "mu5/mu6/mu7/mu8 pseudo-remainders at s6, with v!=0 "
+            "and J_Q!=0. This is the genuine complement of the dense "
+            "pivot open inside the residual Q component."
         ),
     }
     return system, reduced, {}
@@ -3435,12 +3529,20 @@ def run_raw_sympy_split_gcd(
         norm_profile = None
         if branch_resultant is not None:
             branch_norm = modulus.rep.resultant(branch_resultant.rep)
+            if hasattr(branch_norm, "numer"):
+                norm_numerator = branch_norm.numer
+                norm_denominator = branch_norm.denom
+            else:
+                # With every base parameter specialized, python-flint
+                # returns a scalar nmod rather than a rational function.
+                norm_numerator = branch_norm
+                norm_denominator = 1
             norm_profile = {
-                "numerator": str(branch_norm.numer),
-                "denominator": str(branch_norm.denom),
+                "numerator": str(norm_numerator),
+                "denominator": str(norm_denominator),
             }
             if len(active_symbols) == 1:
-                unit, factors = branch_norm.numer.factor_list()
+                unit, factors = norm_numerator.factor_list()
                 norm_profile["factorization"] = {
                     "unit": str(unit),
                     "factors": [
@@ -4139,10 +4241,18 @@ def main() -> None:
                     "raw8_direct_groebner_julia",
                     "raw8_direct_popen_groebner_julia",
                     "raw8_direct_popen_groebner_julia_change",
+                    "raw8_direct_aopen_groebner_julia",
+                    "raw8_direct_aopen_groebner_julia_change",
+                    "raw8_direct_popen_aopen_groebner_julia",
+                    "raw8_direct_popen_aopen_groebner_julia_change",
                     "raw8_popen_groebner_julia",
                     "raw8_popen_groebner_julia_change",
                     "raw8_exceptional_groebner_julia",
                     "raw8_exceptional_groebner_julia_change",
+                    "raw8_exceptional_aopen_groebner_julia",
+                    "raw8_exceptional_aopen_groebner_julia_change",
+                    "raw8_aexceptional_groebner_julia",
+                    "raw8_aexceptional_groebner_julia_change",
                 ):
                     if not PRIME:
                         raise ValueError(
@@ -4154,7 +4264,16 @@ def main() -> None:
                             "raw mu8 stages require --moment-through 8"
                         )
                     raw_started = time.monotonic()
-                    if arguments.stage.startswith("raw8_direct"):
+                    if arguments.stage.startswith("raw8_aexceptional"):
+                        raw_system, raw_remainders, raw_equations = (
+                            raw_mu8_aexceptional_system(
+                                arithmetic,
+                                a_value,
+                                b_value,
+                                moments,
+                            )
+                        )
+                    elif arguments.stage.startswith("raw8_direct"):
                         raw_system, raw_remainders, raw_equations = (
                             raw_mu8_direct_system(
                                 arithmetic,
@@ -4164,6 +4283,7 @@ def main() -> None:
                                 p5_open=arguments.stage.startswith(
                                     "raw8_direct_popen"
                                 ),
+                                a_open="_aopen_" in arguments.stage,
                             )
                         )
                     elif arguments.stage.startswith("raw8_exceptional"):
@@ -4173,6 +4293,7 @@ def main() -> None:
                                 a_value,
                                 b_value,
                                 moments,
+                                a_open="_aopen_" in arguments.stage,
                             )
                         )
                     else:
@@ -4330,10 +4451,18 @@ def main() -> None:
                         "raw8_direct_groebner_julia",
                         "raw8_direct_popen_groebner_julia",
                         "raw8_direct_popen_groebner_julia_change",
+                        "raw8_direct_aopen_groebner_julia",
+                        "raw8_direct_aopen_groebner_julia_change",
+                        "raw8_direct_popen_aopen_groebner_julia",
+                        "raw8_direct_popen_aopen_groebner_julia_change",
                         "raw8_popen_groebner_julia",
                         "raw8_popen_groebner_julia_change",
                         "raw8_exceptional_groebner_julia",
                         "raw8_exceptional_groebner_julia_change",
+                        "raw8_exceptional_aopen_groebner_julia",
+                        "raw8_exceptional_aopen_groebner_julia_change",
+                        "raw8_aexceptional_groebner_julia",
+                        "raw8_aexceptional_groebner_julia_change",
                     ):
                         payload["raw_mu8_groebner_julia"] = (
                             run_raw_groebner_julia(

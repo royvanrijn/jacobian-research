@@ -633,6 +633,12 @@ def main() -> None:
     analysis["differential_operator"].update(
         {"fit_rank": fit_rank, "fit_nullity": fit_nullity}
     )
+    reference_shift, reference_delta = differential_to_shift(
+        reference_image,
+        reference_prime,
+    )
+    if reference_delta != TAIL_SHIFT:
+        raise AssertionError("unexpected reference shift offset")
 
     artifact = {
         "format": (
@@ -645,6 +651,14 @@ def main() -> None:
             "characteristic-zero certificate"
         ),
         "point": 0,
+        "operator": {
+            "order": EXPECTED_SHIFT_ORDER,
+            "m_degree": EXPECTED_SHIFT_M_DEGREE,
+        },
+        "modular_operator": {
+            "prime": reference_prime,
+            "coefficients": reference_shift,
+        },
         "birational_compression": verify_birational_compression(),
         "closed_cycle_operator": closed_operator_metadata(),
         "reference_modular_analysis": analysis,
@@ -667,7 +681,11 @@ def main() -> None:
     print("PASS interval residual has degree 55")
     print("PASS R_64,8 = Q_50 * G_14,58 with zero remainder")
     print("PASS greatest common right divisor has order 14")
-    print(f"PASS wrote {arguments.output.relative_to(ROOT)}")
+    try:
+        display_output = arguments.output.relative_to(ROOT)
+    except ValueError:
+        display_output = arguments.output
+    print(f"PASS wrote {display_output}")
 
 
 if __name__ == "__main__":

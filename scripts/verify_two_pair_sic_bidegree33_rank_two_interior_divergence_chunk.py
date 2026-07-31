@@ -170,10 +170,9 @@ def main() -> None:
         coefficients = modular["coefficients"]
     else:
         prime = 0
-        coefficients = operator.get(
-            "primitive_integer_coefficients",
-            operator["primitive_coefficients"],
-        )
+        coefficients = operator.get("primitive_integer_coefficients")
+        if coefficients is None:
+            coefficients = operator["primitive_coefficients"]
     operator_shape = operator.get("operator", {})
     order = int(operator_shape.get("order", EXPECTED_ORDER))
     m_degree = int(operator_shape.get("m_degree", EXPECTED_M_DEGREE))

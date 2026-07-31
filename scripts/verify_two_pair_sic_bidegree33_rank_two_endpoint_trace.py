@@ -276,7 +276,13 @@ def main() -> None:
     operator = json.loads(arguments.operator.read_text())
     prime = int(operator["modular_operator"]["prime"])
     degrees = certificate_degrees(arguments.certificate)
-    expected_degrees = list(range(EXPECTED_M_DEGREE))
+    m_degree = int(
+        operator.get("operator", {}).get(
+            "m_degree",
+            EXPECTED_M_DEGREE,
+        )
+    )
+    expected_degrees = list(range(m_degree))
     complete = sorted(degrees) == expected_degrees
     if not complete and not arguments.allow_partial:
         missing = sorted(set(expected_degrees) - set(degrees))
@@ -456,7 +462,8 @@ def main() -> None:
             )
             if complete
             else (
-                "run again with all 58 certificate degrees before drawing "
+                f"run again with all {m_degree} certificate degrees "
+                "before drawing "
                 "an endpoint conclusion"
             )
         ),

@@ -1,0 +1,256 @@
+{
+  "format": "two-pair-sic-bidegree33-rank-two-compact-relative-pf-characteristic-zero-verification-v1",
+  "status": "exact characteristic-zero compact relative PF/Ore bridge",
+  "point": 0,
+  "differential_operator": {
+    "order": 8,
+    "z_degree": 72,
+    "maximum_primitive_coefficient_bits": 1527,
+    "build_prime_count": 95,
+    "holdout_prime_count": 5,
+    "exact_residual_support": [
+      0,
+      55
+    ],
+    "exact_coefficient_rows_checked": 93
+  },
+  "shift_operator": {
+    "order": 64,
+    "m_degree": 8,
+    "maximum_primitive_coefficient_bits": 1542,
+    "exact_moment_rows_checked": 37,
+    "artifact": "artifacts/generated-results/two_pair_sic_bidegree33_rank_two_compact_relative_shift_operator.json"
+  },
+  "ore_factorization": {
+    "identity": "R_64,8 = Q_50 * G_14,58",
+    "exact_rational_division_performed": true,
+    "zero_remainder": true,
+    "left_quotient_order": 50,
+    "left_quotient_degree_pairs": [
+      [
+        0,
+        50
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        50,
+        100
+      ],
+      [
+        0,
+        50
+      ]
+    ],
+    "forward_coefficient": {
+      "numerator_degree": 0,
+      "denominator_degree": 50,
+      "denominator_all_51_coefficients_positive": true,
+      "nonzero_for_every_integer_m_at_least_zero": true
+    }
+  },
+  "initial_value_closure": {
+    "exact_G14_rows": [
+      0,
+      49
+    ],
+    "exact_initial_zero_count": 50,
+    "consequence": "if R annihilates all moments, the order-50 forward recurrence for G14(moment) and its 50 initial zeros force G14(moment)=0 for every m>=0"
+  },
+  "remaining_gate": "prove the exact relative divergence identity for R and its two endpoint traces; operator reconstruction, exact factorization, forward nonvanishing, and initial values close",
+  "files_sha256": {
+    "artifacts/generated-results/two_pair_sic_bidegree33_rank_two_compact_relative_pf_characteristic_zero_lift.json": "46cc98e1b230b69bd3f875f5653bfb070e036353e438473cb1ff48c2fd995c00",
+    "artifacts/generated-results/two_pair_sic_bidegree33_rank_two_compact_relative_shift_operator.json": "0c29dcac3873dce89156b768d8363207d6b19945440b457e7ccfa988b149d4ff",
+    "artifacts/local/two_pair_sic_bidegree33_rank_two_ore_characteristic_zero_lift.json": "1a3d95ce81fd0770f235a604520113d5682612aaf47b9e77d2531bc134f437b6"
+  }
+}

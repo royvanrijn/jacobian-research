@@ -1,0 +1,33 @@
+{
+  "format": "two-pair-sic-bidegree33-rank-two-compact-relative-modular-all-order-certificate-v1",
+  "status": "exact all-order modular compact relative telescoping certificate",
+  "prime": 1000003,
+  "point": 0,
+  "operator": {
+    "order": 64,
+    "m_degree": 8
+  },
+  "source_differential_operator": {
+    "order": 8,
+    "z_degree": 72
+  },
+  "coefficient_identities_verified": 8,
+  "terminal_residual_before_syzygy_terms": 138651,
+  "terminal_syzygy_R_terms": 132615,
+  "terminal_residual_after_syzygy_terms": 0,
+  "endpoint_trace": "exact modular zero endpoint trace",
+  "all_order_conclusion": "for every integer m>=0, the compact order-64, m-degree-8 shift operator annihilates the fixed-fiber normalized moment sequence over F_1000003",
+  "characteristic_zero_bridge": "the reconstructed characteristic-zero compact operator is an exact left multiple Q_50 of the lifted G_14; lifting this divergence and its endpoints to characteristic zero remains open",
+  "files_sha256": {
+    "artifacts/generated-results/two_pair_sic_bidegree33_rank_two_compact_relative_pf_research.json": "0a18206adee493e3f1743c10092d7e879ea338e17fb99205ef97b755490deb0f",
+    "artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_checkpoint_m7.json": "c8a57404b0b8ae697078a290df609015cb76c99279f5ff4c1e3456f6b1f87de4",
+    "artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_checkpoint_m7.poly": "e1b96a39fd0c1d8e3282cb0b3e05c876d4461f124a4ea78b36d9169caa02a62f",
+    "artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_checkpoint_m0.json": "37162264be613f74e5145524f60f0e10b36a0d265f184f868b8c1ab7f42f77f4",
+    "artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_checkpoint_m0.poly": "9e43f74c263f02e062a8826b8c2024b31ae3254203d0cb2feb42f0b2ec27c30b",
+    "artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_certificate_m8_m7.sing": "dfbe2977bdeabb163d4aeb9894b711c92bd88885d0a9754bf406d0461656768e",
+    "artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_certificate_m7_m0.sing": "93efe1c1fa57b60310487ef864935051e5c49419f9bc168e327c9c1220e28fb5",
+    "artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_terminal_syzygy_R.sing": "da16471fed6969c5abc3f33620b66d321563c6efe8d1221c49592e7bf2c63d8f",
+    "artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_terminal_syzygy_research.json": "10115121b729bd52e1f19a0e0adc3040c5634afeacc750ca77773ad6c14dfd86",
+    "artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_endpoint_trace.json": "4c8ab3541b093fe29f0a3a724ef643e560274384d9712078f3a627a5c92eb804"
+  }
+}

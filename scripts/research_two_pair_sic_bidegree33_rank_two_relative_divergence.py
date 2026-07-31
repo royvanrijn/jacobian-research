@@ -358,10 +358,9 @@ def main() -> None:
         coefficients = modular["coefficients"]
     else:
         prime = 0
-        coefficients = payload.get(
-            "primitive_integer_coefficients",
-            payload["primitive_coefficients"],
-        )
+        coefficients = payload.get("primitive_integer_coefficients")
+        if coefficients is None:
+            coefficients = payload["primitive_coefficients"]
     operator = payload.get("operator", {})
     order = int(operator.get("order", EXPECTED_ORDER))
     m_degree = int(operator.get("m_degree", EXPECTED_M_DEGREE))
