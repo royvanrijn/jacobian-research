@@ -155,6 +155,19 @@ intersection is dense because the presentation groupoid is irreducible.
 The last assertion is exactly the stable-normalization and Fitting
 functoriality direction of the quadratic-gauge stable-moduli theorem.
 
+There is no hidden fixed-map stabilizer loophole in this conclusion.  The
+[stable intruder descent criterion](STABLE_INTRUDER_DESCENT_CRITERION.md)
+separates the stable base, boundary-faithfulness, and deck-group gates.  The
+corresponding
+[all-rank stable marked-stabilizer
+theorem](QUADRATIC_GAUGE_STABLE_MODULI.md#42-all-rank-stable-marked-stabilizer-kernel)
+shows that the reduced discriminant has the universal exposed intruder
+`P^2B^NC`.  Kuroda's stable-invariant theorem then forces every stable
+self-equivalence of a fixed clean compiler map to preserve the physical
+target ring, and the coordinate-polynomial intruder theorem makes that
+restriction the identity.  This holds in every degree and after arbitrary
+identity stabilization.
+
 This proves failure of descent of the displayed compiler atlas.  It does not
 exclude a different Keller lift whose intrinsic boundary is
 Tschirnhaus-invariant.
@@ -257,9 +270,11 @@ Keller-fiber multiplicity theorem independently proves that
 This is the dimension of the image in unmarked stable-map moduli, not the
 dimension of a literal fibre of (5.2).  The
 [clean decorated receiver](QUADRATIC_GAUGE_DECORATED_RECEIVER.md) constructs
-the quotient span precisely: its marked fibre over a geometric algebra has
-dimension `N-1`, its target-forgetting fibres have dimension three, and its
-image in unmarked map moduli has dimension `N-4`.
+the quotient span precisely.  The weight-one coordinate `u_5/u_4` supplies
+a global slice, so the clean receiver is represented by an explicit scheme
+with no coefficient-scaling inertia.  Its marked fibre over a geometric
+algebra has dimension `N-1`, its target-forgetting fibres have dimension
+three, and its image in unmarked map moduli has dimension `N-4`.
 
 Equation (5.3) is exact only for this clean quadratic-gauge stratum.  No
 finite-type global moduli stack of all polynomial degrees and all stable

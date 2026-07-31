@@ -13,6 +13,11 @@ not `N-3`.
 
 The result is stronger than a dimension upper bound: on this locus it
 classifies stable polynomial left--right equivalence exactly.
+Section 4.2 additionally classifies the kernel relevant to marked targets:
+for every `N>=5`, arbitrary identity stabilization cannot move any physical
+source or target coordinate of a fixed clean map.  It is an application of
+the abstract
+[stable intruder descent criterion](STABLE_INTRUDER_DESCENT_CRITERION.md).
 
 Work over an algebraically closed characteristic-zero field `k`, and fix
 `N>=4`.  Divide the seed by `g_1` and use the target shear which removes
@@ -377,7 +382,7 @@ are, up to sign,
 Their gcd is one, so the relation lattice is saturated.  Consequently
 
 \[
- k[u_4^{\pm1},\ldots,u_N^{\pm1}]^{\mathbb G_m}
+k[u_4^{\pm1},\ldots,u_N^{\pm1}]^{\mathbb G_m}
  =
  k[I_5^{\pm1},J_6^{\pm1},\ldots,J_N^{\pm1}],           \tag{26}
 \]
@@ -391,6 +396,161 @@ Over a nonclosed ground field, choosing a normalization such as `u_4=1`
 requires a fifth root.  This is the same rank-four `mu_5` Kummer residue
 seen in (5a); equation (26) is the geometric coarse quotient and does not
 erase that arithmetic descent condition.
+
+### 4.2 All-rank stable marked-stabilizer kernel
+
+The coefficient-torus calculation leaves open, a priori, a kernel of stable
+polynomial automorphisms acting trivially on the normalized boundary.  That
+kernel cannot move the physical target.
+
+On the compiler slice, put
+
+\[
+ E_N(S)
+ =
+ \sum_{j=4}^Nu_jP^jS^j+PS^3-\frac B2S^2+S-\frac C2
+\]
+
+and write its ordinary discriminant as
+
+\[
+ \operatorname{Disc}_S(E_N)=P^{q_N}H_N(P,B,C),
+ \qquad q_N=N^2-3N-2.                                 \tag{27}
+\]
+
+The exact valuation and primeness of the reduced discriminant are proved in
+the
+[quadratic cancellation intersection
+note](QUADRATIC_CANCELLATION_STABLE_INTERSECTION.md).
+
+The polynomial `H_N` has a uniform intruder
+
+\[
+ \boxed{D_N=(2,N,1),}
+\]
+
+the exponent of `P^2B^NC`.  To prove both its occurrence and its exposed
+status, write a coefficient monomial in the universal degree-`N`
+discriminant as
+
+\[
+ \prod_{i=0}^N A_i^{e_i}.
+\]
+
+The two standard discriminant homogeneities are
+
+\[
+ \sum_i e_i=2N-2,\qquad
+ \sum_i i e_i=N(N-1).                                 \tag{28}
+\]
+
+After
+
+\[
+ A_0=-C/2,\quad A_1=1,\quad A_2=-B/2,\quad A_3=P,
+ \quad A_j=u_jP^j\ (j\ge4)
+\]
+
+and division by `P^{q_N}`, every surviving exponent `(p,b,c)` satisfies,
+for the corresponding exponents `e_1,e_3`,
+
+\[
+\begin{aligned}
+ p&=2N+2-2b-e_1-2e_3
+    \le 2N+2-2b-e_1,\\
+ Nc+(N-2)b+(N-1)e_1&\le N(N-1).                       \tag{29}
+\end{aligned}
+\]
+
+The universal trinomial-discriminant term
+
+\[
+ \pm4(N-2)^{N-2}A_N^{N-3}A_2^NA_0
+\]
+
+is nonzero in characteristic zero.  It becomes a nonzero multiple of
+`P^2B^NC` in `H_N`, so `D_N` is present for every clean seed.
+
+Now use the positive weight
+
+\[
+ w_N=(1,N+1,N).                                       \tag{30}
+\]
+
+For the larger relaxed polytope obtained from (29) by replacing the first
+line with its upper bound,
+
+\[
+ w_N\mathbin{\cdot}(p,b,c)
+ \le N^2+N+2+b-Ne_1.                                  \tag{31}
+\]
+
+If `e_1>0`, nonnegativity of the relaxed upper bound for `p` puts the right
+side strictly below
+
+\[
+ w_N\mathbin{\cdot}D_N=N^2+2N+2.
+\]
+
+If `e_1=0`, then `b<=N+1`.  For `b<=N`, equality in (31) forces
+`(p,b,c)=D_N`.  The sole remaining relaxed case `b=N+1` forces
+`(p,c)=(0,0)` and has weight one less.  Thus `w_N` exposes `D_N`
+uniquely.
+
+Apply the
+[stable intruder descent criterion](STABLE_INTRUDER_DESCENT_CRITERION.md)
+to a target component `T` of a stable self-equivalence of a fixed clean
+map.  Boundary primeness and intrinsic normalization give
+`T(H_N)=rho H_N`.  The exposed intruder `D_N` then forces
+
+\[
+ T\bigl(k[P,B,C]\bigr)=k[P,B,C]                       \tag{31a}
+\]
+
+after any number of identity stabilizations.  This is the stable base
+descent gate; it does not yet assert that the restriction is the identity.
+
+For `N>=5`, the clean coefficients `a_3,a_4,a_5` make the fixed
+coefficient-torus stabilizer trivial: the two relevant determinants are
+five and six.  Therefore the physical restriction induces the identity on
+the intrinsic normalized boundary and has the form
+
+\[
+ T_i=x_i+H_NV_i,\qquad x_i\in\{P,B,C\}.                \tag{32}
+\]
+
+The boundary-faithful part of the same criterion now applies to (32):
+the Derksen--Hadas--Makar-Limanov coordinate-polynomial theorem makes the
+physical target restriction the identity.
+
+Finally, the
+[universal symmetric-monodromy theorem](UNIVERSAL_SYMMETRIC_MONODROMY.md)
+gives monodromy `S_N` and target-fixed deck group
+
+\[
+ N_{S_N}(S_{N-1})/S_{N-1}=1.
+\]
+
+The physical source restriction is therefore also the identity.
+
+> **All-rank stable marked-stabilizer theorem.**
+>
+> For every `N>=5` and every clean quadratic-gauge seed, the standard
+> marked target orbit of a fixed compiled map is a point in every degree
+> and after every number of identity stabilizations.  Vertical
+> automorphisms of the identity factors may remain, but cannot move the
+> physical marked target.
+
+Equivalently, the stable marked automorphism group has trivial physical
+quotient:
+
+\[
+ \operatorname{Aut}_{\rm st}^{\rm marked}(F_a)/
+ \operatorname{Aut}_{\rm vert}(F_a)=1.                \tag{33}
+\]
+
+This is a pointwise inertia statement.  It does not construct the full
+stable-map groupoid or classify `Aut_vert`.
 
 ## 5. Consequence for the two-family picture
 

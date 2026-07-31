@@ -102,12 +102,60 @@ a marked Keller fibre modulo the explicit ambient equivalence, so both the
 finite-etale algebra and its ambient quadratic-gauge decoration remain
 available.
 
-Since the seed weights include five and six, the action is faithful for
-`N>=5`.  Hence
+The action is actually globally split and free, not merely faithful.  Put
 
 \[
- \dim{\mathscr D}_N^{\rm quad,\circ}=N-1.              \tag{2.5}
+ \lambda=\frac{u_5}{u_4}.                              \tag{2.5}
 \]
+
+Then `lambda -> alpha*lambda`.  Let
+
+\[
+ Q_N^\circ=I_N^\circ\cap\{\lambda=1\}
+           =I_N^\circ\cap\{u_5=u_4\}.                  \tag{2.6}
+\]
+
+The action map gives an equivariant isomorphism
+
+\[
+ \mathbb G_m\times Q_N^\circ\longrightarrow I_N^\circ,
+ \qquad(\alpha,q)\longmapsto\alpha\cdot q,             \tag{2.7}
+\]
+
+whose inverse sends `x` to
+`(lambda(x),lambda(x)^(-1)*x)`.  In coordinates, the invariant target
+variables on the slice are
+
+\[
+ \widehat\pi=\lambda^2\pi,\qquad
+ \widehat b=\lambda b,\qquad
+ \widehat c=c/\lambda,                                 \tag{2.8}
+\]
+
+while invariant seed characters can be taken to be
+
+\[
+ q_4=u_4/\lambda^5,\qquad
+ q_j=u_j/\lambda^{j+1}\quad(6\le j\le N).
+\]
+
+Thus the quotient stack is represented by the explicit
+discriminant-open scheme
+
+\[
+ \boxed{{\mathscr D}_N^{\rm quad,\circ}\simeq Q_N^\circ.} \tag{2.9}
+\]
+
+In particular, it has no residual stack inertia from coefficient scaling,
+the quotient map is a trivial `G_m`-torsor, and `rho_N` is a representable
+morphism to `BS_N`.  Also
+
+\[
+ \dim{\mathscr D}_N^{\rm quad,\circ}=N-1.              \tag{2.10}
+\]
+
+This slice is defined over the ground field; unlike the normalization
+`u_4=1`, it requires no root extraction.
 
 ## 3. The unmarked quotient is a different object
 
@@ -220,7 +268,30 @@ fibre only on the one-dimensional root-scaling locus.  Any larger marked
 identification must come from the target orbit of the stable
 self-equivalence group of one fixed Keller map.
 
-## 6. Consequences for the attack chain
+## 6. Physical inertia modulo vertical gauge
+
+The
+[stable intruder descent criterion](STABLE_INTRUDER_DESCENT_CRITERION.md)
+and its all-rank quadratic-gauge application show more than freeness of
+the explicit coefficient action.  For every geometric point of the clean
+receiver, every stable marked self-equivalence is the identity on the
+physical source and target coordinates.  If `Aut_vert` is the kernel of
+restriction to those coordinates, then
+
+\[
+ \operatorname{Aut}_{\rm st}^{\rm marked}/
+ \operatorname{Aut}_{\rm vert}=1.                     \tag{6.1}
+\]
+
+Thus the clean receiver is an explicit scheme with trivial physical
+inertia.  In any future stable-map groupoid containing this chart, the only
+pointwise inertia left on the chart is vertical stabilization gauge.
+
+This does not classify that vertical group, nor does it prove that a
+global quotient by vertical automorphisms is algebraic, separated, or of
+finite type.
+
+## 7. Consequences for the attack chain
 
 The receiver changes the next attacks as follows.
 
@@ -229,18 +300,23 @@ The receiver changes the next attacks as follows.
    fibre.
 2. Study sections, correspondences, or torsors for `rho_N`, while measuring
    their failure to have constant `p_N`-coordinate.
-3. In rank five, compute the stable target self-equivalence orbit of the
-   fixed base point.  This is the exact obstruction left after canonical
-   marked transport.
+3. Do not spend the next attack on higher-degree fixed-map stabilizer
+   calculations: the all-rank intruder theorem already makes the physical
+   orbit a point in arbitrary degree and stabilization dimension.
 4. For an alternative compiler, test whether its analogue of `p_N` is
    constant on Tschirnhaus arrows.  That is the actual descent criterion.
+5. For a global moduli construction, first define and quotient the vertical
+   stabilization gauge.  The clean chart contributes no further physical
+   inertia, but this pointwise result does not construct the global
+   groupoid.
 
-This constructs only the clean quadratic-gauge receiver.  It does not
-construct a finite-type global moduli stack of all stable polynomial maps.
+This constructs and represents the clean quadratic-gauge receiver.  It
+does not construct a finite-type global moduli stack of all stable
+polynomial maps.
 
 ## Exact identities
 
-The action (2.1), identity (2.2), faithfulness, and the stable quotient
+The action (2.1), identity (2.2), global slice (2.7), and stable quotient
 coordinates are checked by
 
 ```bash

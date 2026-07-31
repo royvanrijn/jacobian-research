@@ -44,13 +44,19 @@ where \(G_{14}\) is their greatest common right divisor and the subscripts
 denote shift order.  After clearing rational content, every coefficient of
 \(G_{14}\) has \(m\)-degree 58, and the resulting operator annihilates all
 487 available moment rows.  Its order 14 matches the interior length in
-the exact \(2+2+14\) logarithmic-Jacobian decomposition.  This is exact
-bounded modular evidence for an interior cyclic Picard--Fuchs factor.
+the exact \(2+2+14\) logarithmic-Jacobian decomposition.  At the first
+point modulo \(1000003\), Section 4.4.2 upgrades these 487 rows to an
+exact all-order divergence certificate with a separately verified zero
+endpoint trace.  The other five samples remain bounded modular evidence.
 At the first characteristic-zero point, multiplication by \(P\) is now
-proved cyclic on the degree-14 interior critical algebra.  However, the
-raw period is nonzero on both endpoint idempotent pairs, so it does not
-descend through that ordinary Jacobian algebra.  The \(m\)-dependent
-divergence connection remains necessary; no universal factor is identified.
+proved cyclic on the degree-14 interior critical algebra.  The sampled
+order-14 operator also has a stable exact characteristic-zero
+reconstruction and its leading descent identity closes over \(\mathbb Q\);
+see Section 4.4.3.  However, the raw period is nonzero on both endpoint
+idempotent pairs, so it does not descend through that ordinary Jacobian
+algebra.  The \(m\)-dependent
+divergence connection is essential and is now explicit at one modular
+fiber; no characteristic-zero or universal factor is identified.
 
 After making the coefficient of \(m^{11}\nu_{m+27}\) monic, all six fits
 have the same forward coefficient:
@@ -446,16 +452,217 @@ The equality
  =\dim(\text{interior logarithmic quotient})             \tag{4.14}
 \]
 
-is the strongest current link to a Picard--Fuchs description.  It
+is the structural source of the Picard--Fuchs description.  It
 agrees with the exact characteristic-zero cyclic algebra (4.7d), while
 the two endpoint pieces account for the four extra dimensions in the
 relative critical model.  The nonzero idempotent-period audit above rules
 out the shortcut of simply projecting the raw period to that algebra.
-The \(m\)-dependent divergence connection and the characteristic-zero
-operator remain unproved.  The exact Krylov construction implemented in
+Section 4.4.2 constructs and certifies the \(m\)-dependent divergence
+at the first point modulo \(1000003\).  Section 4.4.3 gives a stable
+exact characteristic-zero operator lift and verifies its leading
+divergence level, but not the remaining descent or endpoint identities;
+the generic-parameter operator also remains unproved.  The exact Krylov
+construction implemented in
 [`SUPERELLIPTIC_DERHAM_ENGINE.md`](../plane-jc/SUPERELLIPTIC_DERHAM_ENGINE.md)
-is the model for extracting \(G_{14}\) once the rank-two relative
-connection has been constructed.
+remains the model for lifting this fixed-fiber calculation.
+
+#### 4.4.1 Two fixed-fiber scalar shortcuts fail
+
+Two bounded calculations at the first point modulo \(1000003\) sharpen
+what the connection must retain.  First, the leading \(m^{58}\)
+coefficient of the sampled \(G_{14}\), interpreted as a Laurent
+integrand, has nonzero class in the length-eighteen relative critical
+algebra.  Hence a direct polynomial-in-\(m\), zero-boundary divergence
+certificate whose certificate degree is at most 57 cannot start.
+
+Allowing a degree-58 leading Koszul syzygy does not repair this
+obstruction.  Put
+\[
+ A=uQ_u-3Q,\qquad C=t(1-t)Q_t,\qquad T=t(1-t).
+\]
+On the relative critical quotient, the linear map
+\[
+ R\longmapsto
+ \left[
+ Q\bigl(D_u(CR)+\partial_t(-TAR)\bigr)
+ \right]
+\]
+has rank zero, while the leading obstruction is nonzero.  Thus the
+obvious leading correction \((X_{58},Y_{58})=R(C,-A)\) also cannot
+produce the sampled scalar relation.
+
+These are exact modular no-go calculations for the displayed ansätze,
+not a disproof of the sampled recurrence.  They confirm that the
+\(14+2+2\) endpoint-extended connection must be constructed before
+scalarization; prescribing \(G_{14}\) inside a zero-boundary scalar
+ansatz discards essential endpoint data.
+
+#### 4.4.2 An all-order modular fixed-fiber certificate
+
+The first point modulo \(p=1000003\) now has an exact certificate for
+the sampled \(G_{14}\).  Write
+
+\[
+ G_{14}=\sum_{j=0}^{14}g_j(m)S^j,\qquad
+ {\cal S}(m,P)=\sum_{j=0}^{14}g_j(m)P^j.
+\]
+
+In the Laurent presentation
+\(\mathbb F_p[u,U,t]/(uU-1)\), descending the 58 powers of \(m\)
+produces
+
+\[
+ X(m)=\sum_{r=0}^{57}X_r m^r,\qquad
+ Y(m)=\sum_{r=0}^{57}Y_r m^r
+\]
+
+with
+
+\[
+ Q{\cal S}(m,P)=
+ Q\bigl(D_uX+\partial_tY\bigr)+m(AX+Q_tY).              \tag{4.14a}
+\]
+
+Canonical reduction modulo \(uU-1\) is essential here: it turns the
+previous multi-hour expanded lift into three restartable chunks.  The
+uncorrected descent reaches \(m^0\) with a nonzero 307276-term residual
+\(T\).  This is not a failed recurrence.  The final Koszul freedom
+
+\[
+ (X_0,Y_0)\longmapsto(X_0+Q_tR,\;Y_0-AR)
+\]
+
+changes the divergence by
+
+\[
+ H(R)=Q_t(D_u+3)R-A\partial_tR.
+\]
+
+A descending \(t\)-block solve gives a 298606-term Laurent polynomial
+\(R\) satisfying
+
+\[
+ \boxed{T=QH(R)}.                                      \tag{4.14b}
+\]
+
+An independent Singular replay verifies all 58 coefficient identities,
+the three restart residuals, and (4.14b).  After applying this correction,
+(4.14a) is equivalent to the exact telescoping identity
+
+\[
+ {\cal S}(m,P)P^m
+ =D_u\!\left(X(m)P^m\right)
+  +\partial_t\!\left(Y(m)P^m\right).                   \tag{4.14c}
+\]
+
+The endpoints are not discarded.  At this fiber
+
+\[
+\begin{aligned}
+ P(u,0)&=11+23u^{-1}+91u^{-2}+216u^{-3},\\
+ P(u,1)&=354+149u+37u^2+19u^3.
+\end{aligned}
+\]
+
+Consequently each endpoint constant term is an
+exponential-polynomial, respectively \(11^mE_0(m)\) and
+\(354^mE_1(m)\).  Exact extraction from the corrected \(Y\) gives
+
+\[
+ E_0=E_1=0\quad\hbox{in }\mathbb F_{1000003}[m].        \tag{4.14d}
+\]
+
+Taking \(\operatorname{CT}_u\int_0^1\) in (4.14c) therefore proves
+
+\[
+ \boxed{
+   \sum_{j=0}^{14}g_j(m)\nu_{m+j}=0
+   \quad\text{for every }m\geq0
+   \text{ over }\mathbb F_{1000003}.
+ }                                                       \tag{4.14e}
+\]
+
+This replaces the 487-row observation by an all-order modular theorem
+at one fixed fiber.  By itself it does **not** reconstruct the operator
+or certificates over characteristic zero, prove a generic rank-two
+parameter identity, cover the other five point/prime samples, or
+classify the exceptional locus.  The finite characteristic-zero lift
+obtained subsequently is recorded next.
+
+#### 4.4.3 Characteristic-zero operator lift and leading descent
+
+The fixed-fiber operator itself can now be lifted exactly.  We computed
+its normalized image at 205 consecutive primes above \(10^6\).  A
+simultaneous projective reconstruction from the first 200 images uses one
+common denominator rather than 885 independent rational reconstructions.
+LLL first succeeds in dimension 24.  After primitive integer
+normalization the largest coefficient has 2397 bits; all 885 coefficients
+then agree at each of five fresh holdout primes.
+
+This is not merely a modular consistency check.  Exact rational replay
+at the original integral point gives all 27 available recurrence
+identities through moment \(40\).  The forward coefficient factors
+exactly as
+
+\[
+ \prod_{k\in\{32,34,35,37,38,40,41,43\}}(3m+k)
+ \cdot h_{50}(m),                                      \tag{4.14f}
+\]
+
+with \(h_{50}\in\mathbb Z[m]\) of degree 50.  Thus the stored primitive
+integer operator is a stable exact characteristic-zero lift of the
+sampled \(G_{14}\), within this finite reconstruction and replay scope.
+These checks alone still do not prove that it annihilates every moment.
+
+The first coefficient of the characteristic-zero telescoping descent is
+also exact.  Over
+\(\mathbb Q[u,U,t]/(uU-1)\), the coefficient of \(m^{58}\) admits the
+required lift with a 5722-term \(X_{57}\) and a 5769-term \(Y_{57}\).
+An independent ambient Singular calculation replays that identity and
+matches the 6354-term restart residual at \(m^{57}\).  Hence the top
+descent equation is closed over \(\mathbb Q\); this is stronger than
+reduction modulo many primes, but it leaves levels \(m^{57},\ldots,m^1\),
+the terminal \(m^0\) syzygy, and both endpoint identities open.
+
+A direct attempt to expand five rational descent levels exceeded 1800
+seconds and reached 4.3 GB without completing.  This is a performance
+failure, not a mathematical obstruction.  It identifies the remaining
+problem as representation growth in the certificates.
+
+The appropriate next representation is reduction-based creative
+telescoping.  Bostan--Lairez--Salvy's
+[Griffiths--Dwork algorithm](https://arxiv.org/abs/1301.4313) is
+specifically designed to derive a Picard--Fuchs operator without
+expanding certificates.  Lairez's
+[extended reduction](https://arxiv.org/abs/1404.5069) covers singular
+hypersurfaces, and the newer
+[mixed \(D\)-module reduction](https://arxiv.org/abs/2504.12724) has an
+experimental
+[Julia implementation](https://github.com/HBrochet/MultivariateCreativeTelescoping.jl).
+The generic projective interface of that implementation did not finish
+our homogenized seed within 900 seconds.  In this problem it also loses
+the already proved toric \(14+2+2\) decomposition, so it is not the final
+engine.
+
+The proof-producing route is therefore a specialized relative reduction
+map: reduce the successive \(z\)-derivatives of
+
+\[
+ \frac{u^2}{u^3-zQ(u,t)}
+\]
+
+directly in the known 14-dimensional interior quotient while carrying
+the two two-dimensional endpoint trace blocks.  An exact dependence in
+this \(14+2+2\) state space supplies the all-order operator without
+materializing every \(X_r,Y_r\); the retained endpoint blocks supply the
+boundary audit.  Only after this compact reduction is certified should
+one reconstruct a full expanded certificate, if one is still desired.
+
+The combined checker
+`scripts/verify_two_pair_sic_bidegree33_rank_two_characteristic_zero_lift.py`
+replays the 205 prime images, the 27 exact rational moment identities,
+and the independent \(m^{58}\) descent.  Its status is deliberately
+finite: no characteristic-zero all-order theorem is claimed here.
 
 ### 4.5 Why expanded universal interpolation is not the next step
 

@@ -22,6 +22,10 @@ htmlcov/
 # Reproducible verification logs are generated locally and uploaded by CI.
 artifacts/verification/
 
+# Resumable heavyweight certificate material is a local generation cache.
+# Pinned, compact reference artifacts remain in artifacts/generated-results/.
+/artifacts/local/
+
 # Paper-local LaTeX build products
 /papers/**/*.aux
 /papers/**/*.log

@@ -131,6 +131,11 @@ def parse_arguments() -> argparse.Namespace:
     parser.add_argument("--prime", type=int, default=43)
     parser.add_argument("--stratum", choices=STRATA, required=True)
     parser.add_argument("--timeout", type=int, default=20)
+    parser.add_argument(
+        "--include-basis",
+        action="store_true",
+        help="include the full lifted Groebner generators in the artifact",
+    )
     parser.add_argument("--output", type=Path, default=None)
     return parser.parse_args()
 
@@ -155,6 +160,16 @@ def main() -> None:
     )
     p4 = substitute(export["polynomials"][1], replacements)
     p5 = substitute(export["polynomials"][2], replacements)
+    full_generator_print = (
+        """
+  print(
+    "FULL_GENERATOR "+string(generatorIndex)+" "
+    +string(G[generatorIndex])
+  );
+"""
+        if arguments.include_basis
+        else ""
+    )
     completed = subprocess.run(
         [singular, "-q"],
         input=f"""
@@ -190,6 +205,7 @@ for(generatorIndex=1;generatorIndex<=size(G);generatorIndex++)
     "GENERATOR "+string(generatorIndex)+" "
     +string(leadmonom(cursor))
   );
+{full_generator_print}
   while(cursor!=0)
   {{
     coefficient=leadcoef(cursor);
@@ -380,6 +396,16 @@ else
         ],
         "reproduction_command": " ".join(sys.argv),
     }
+    if arguments.include_basis:
+        full_generators = [
+            generator
+            for _, generator in re.findall(
+                r"(?m)^FULL_GENERATOR (\d+) (.*)$",
+                completed.stdout,
+            )
+        ]
+        assert len(full_generators) == int(meta.group(1))
+        payload["basis_polynomials"] = full_generators
     if arguments.output is not None:
         output = arguments.output
         if not output.is_absolute():

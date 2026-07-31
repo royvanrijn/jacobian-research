@@ -65,6 +65,14 @@ def parse_arguments() -> argparse.Namespace:
     )
     parser.add_argument("--prepare-only", action="store_true")
     parser.add_argument(
+        "--projective-probe",
+        action="store_true",
+        help=(
+            "for a closed minpoly fibre, homogenize mu4 and mu5 and "
+            "record their projective and infinity gcds"
+        ),
+    )
+    parser.add_argument(
         "--specialize",
         action="append",
         default=[],
@@ -140,7 +148,7 @@ def adapted_polynomial(expression: str) -> tuple[str, int, int, sp.Rational]:
         sp.expand(
             parsed.subs(
                 {
-                    t1: u * (s1 - ell),
+                    t1: s1 * u - ell,
                     t2: T * u**2,
                 },
                 simultaneous=True,
@@ -279,7 +287,7 @@ def singular_simplify_polynomial(
     completed = subprocess.run(
         [singular, "-q"],
         input=f"""
-ring simplifyRing=0,(s6,s5,s3,a,u),dp;
+ring simplifyRing=0,(s6,s5,s3,a,T,u),dp;
 poly value={expression};
 print("VALUE "+string(value));
 """,
@@ -295,6 +303,26 @@ print("VALUE "+string(value));
     value = re.search(r"(?m)^VALUE (.*)$", completed.stdout)
     assert value is not None
     return value.group(1)
+
+
+def exact_expand_closed_polynomial(expression: str) -> str:
+    """Expand a closed-fibre expression over QQ before Singular parses it."""
+
+    s6, s5, s3, a = sp.symbols("s6 s5 s3 a")
+    parsed = sp.sympify(
+        expression.replace("^", "**"),
+        locals={"s6": s6, "s5": s5, "s3": s3, "a": a},
+    )
+    polynomial = sp.Poly(
+        sp.expand(parsed),
+        s6,
+        s5,
+        s3,
+        a,
+        domain=sp.QQ,
+    )
+    _, primitive = polynomial.primitive()
+    return sp.sstr(primitive.as_expr()).replace("**", "^")
 
 
 class ExtensionArithmetic:
@@ -1801,6 +1829,44 @@ def main() -> None:
     residual_content *= residual_special_content
     pivot_a_content *= pivot_a_special_content
     pivot_b_content *= pivot_b_special_content
+    closed_residual_irreducible: bool | None = None
+    closed_pivot_A_invertible: bool | None = None
+    if set(assignments) == {"s1", "ell", "u"}:
+        root = sp.symbols("T")
+        residual_polynomial = sp.Poly(
+            sp.sympify(
+                residual.replace("^", "**"),
+                locals={"T": root},
+            ),
+            root,
+            domain=sp.QQ,
+        )
+        residual_factorization = sp.factor_list(residual_polynomial)[1]
+        closed_residual_irreducible = (
+            len(residual_factorization) == 1
+            and residual_factorization[0][1] == 1
+            and residual_factorization[0][0].degree()
+            == residual_polynomial.degree()
+        )
+        pivot_A_polynomial = sp.Poly(
+            sp.sympify(
+                pivot_a.replace("^", "**"),
+                locals={"T": root},
+            ),
+            root,
+            domain=sp.QQ,
+        )
+        closed_pivot_A_invertible = (
+            sp.gcd(residual_polynomial, pivot_A_polynomial).degree() == 0
+        )
+        if (
+            not closed_residual_irreducible
+            or not closed_pivot_A_invertible
+        ):
+            raise AssertionError(
+                "the closed fibre must retain the irreducible residual "
+                "quintic and the dense pivot open"
+            )
     if arguments.prepare_only:
         print(
             json.dumps(
@@ -1846,7 +1912,7 @@ def main() -> None:
     border_polynomial = leading_payload["leading_coefficient_lcm"]
     q_replacement = (("s2", "(s1^2*u-(13/3)*u)"),)
     adapted_replacement = (
-        ("t1", "(u*(s1-ell))"),
+        ("t1", "(s1*u-ell)"),
         ("t2", "(a*u^2)"),
     )
     fixed_replacements = tuple(
@@ -1880,10 +1946,6 @@ def main() -> None:
             prepivot_specialized[8],
             arguments.timeout,
         )
-    specialized = {
-        order: substitute(polynomial, (("s3", "pivotS"),))
-        for order, polynomial in prepivot_specialized.items()
-    }
     prepivot_border = substitute(
         border_polynomial,
         adapted_replacement,
@@ -1893,6 +1955,18 @@ def main() -> None:
             prepivot_border,
             fixed_replacements,
         )
+    if set(assignments) == {"s1", "ell", "u"}:
+        prepivot_specialized = {
+            order: exact_expand_closed_polynomial(polynomial)
+            for order, polynomial in prepivot_specialized.items()
+        }
+        prepivot_border = exact_expand_closed_polynomial(
+            prepivot_border
+        )
+    specialized = {
+        order: substitute(polynomial, (("s3", "pivotS"),))
+        for order, polynomial in prepivot_specialized.items()
+    }
     specialized_border = substitute(
         prepivot_border,
         (("s3", "pivotS"),),
@@ -1935,6 +2009,13 @@ print("UNIT "+string(reduce(1,U)==0)+" "+string(size(U)));
     if engine == "minpoly" and remaining_parameters:
         raise ValueError(
             "Singular minpoly is valid here only after s1,ell,u are fixed"
+        )
+    if arguments.projective_probe and (
+        engine != "minpoly" or remaining_parameters
+    ):
+        raise ValueError(
+            "--projective-probe requires a closed minpoly fibre with "
+            "s1,ell,u fixed"
         )
     if engine == "extension" and not remaining_parameters:
         raise ValueError("use the minpoly engine for a closed number field")
@@ -2046,6 +2127,80 @@ print("UNIT "+string(reduce(1,U)==0)+" "+string(size(U)));
         return
 
     if engine == "minpoly":
+        projective_program = ""
+        if arguments.projective_probe:
+            projective_moment_declarations = "\n".join(
+                (
+                    f"poly q{order}=imap(residual,p{order}); "
+                    f"poly h{order}=homog(q{order},h);"
+                )
+                for order in range(4, arguments.through + 1)
+            )
+            base_scheme_reductions = "\n".join(
+                (
+                    f"poly baseR{order}=reduce(h{order},baseScheme); "
+                    f'print("BASE_SCHEME {order} "+string(size(baseR{order})));'
+                )
+                for order in range(4, arguments.through + 1)
+            )
+            quadratic_remainder_program = ""
+            if arguments.through >= 7:
+                quadratic_remainder_program = f"""
+ring remainders=(0,a),(s6,s5),lp;
+minpoly={minpoly};
+poly remainderP4=imap(residual,p4);
+poly remainderP5=imap(residual,p5);
+poly remainderP6=imap(residual,p6);
+poly remainderP7=imap(residual,p7);
+ideal quadraticBasis=std(ideal(remainderP4));
+poly remainder5=reduce(remainderP5,quadraticBasis);
+poly remainder6=reduce(remainderP6,quadraticBasis);
+poly remainder7=reduce(remainderP7,quadraticBasis);
+print(
+  "QUADRATIC_REMAINDERS "
+  +string(deg(remainder5,intvec(1,0)))+" "
+  +string(deg(remainder5,intvec(0,1)))+" "
+  +string(deg(remainder6,intvec(1,0)))+" "
+  +string(deg(remainder6,intvec(0,1)))+" "
+  +string(deg(remainder7,intvec(1,0)))+" "
+  +string(deg(remainder7,intvec(0,1)))
+);
+ideal commonRemainderIdeal=std(ideal(
+  remainderP4,remainder5,remainder6,remainder7
+));
+print(
+  "QUADRATIC_COMMON_UNIT "
+  +string(reduce(1,commonRemainderIdeal)==0)
+);
+setring residual;
+"""
+            projective_program = f"""
+{quadratic_remainder_program}
+ring projective=(0,a),(s6,s5,h),dp;
+minpoly={minpoly};
+{projective_moment_declarations}
+poly projectiveGcd=gcd(h4,h5);
+poly infinity4=subst(h4,h,0);
+poly infinity5=subst(h5,h,0);
+poly infinityGcd=gcd(infinity4,infinity5);
+number infinitySlope=6*({singular_fraction(assignments["s1"])})
+  *({singular_fraction(assignments["u"])});
+poly tangentH=subst(
+  subst(subst(diff(h4,h),s6,infinitySlope),s5,1),h,0
+);
+poly tangentY=subst(
+  subst(subst(diff(h4,s6),s6,infinitySlope),s5,1),h,0
+);
+poly tangent=tangentH*h+tangentY*(s6-infinitySlope*s5);
+ideal baseScheme=std(ideal(tangent,h^2));
+{base_scheme_reductions}
+print(
+  "PROJECTIVE "+string(deg(h4))+" "+string(deg(h5))+" "
+  +string(deg(projectiveGcd))+" "+string(deg(infinityGcd))
+);
+print("INFINITY_GCD "+string(infinityGcd));
+setring residual;
+"""
         singular_program = f"""
 ring residual=(0,a),(s6,s5),dp;
 minpoly={minpoly};
@@ -2067,6 +2222,7 @@ for(basisIndex=1;basisIndex<=size(G);basisIndex++)
   print("LEAD "+string(leadexp(G[basisIndex])));
 }}
 {unit_program}
+{projective_program}
 """
     else:
         pivot_inverse = singular_bezout_inverse(
@@ -2142,6 +2298,30 @@ for(basisIndex=1;basisIndex<=size(G);basisIndex++)
         r"(?m)^UNIT ([01]) (\d+)$",
         completed.stdout,
     )
+    projective = re.search(
+        r"(?m)^PROJECTIVE (-?\d+) (-?\d+) (-?\d+) (-?\d+)$",
+        completed.stdout,
+    )
+    infinity_gcd = re.search(
+        r"(?m)^INFINITY_GCD (.+)$",
+        completed.stdout,
+    )
+    base_scheme_reductions = {
+        f"mu{order}": int(term_count)
+        for order, term_count in re.findall(
+            r"(?m)^BASE_SCHEME (\d+) (\d+)$",
+            completed.stdout,
+        )
+    }
+    quadratic_remainders = re.search(
+        r"(?m)^QUADRATIC_REMAINDERS "
+        r"(\d+) (\d+) (\d+) (\d+) (\d+) (\d+)$",
+        completed.stdout,
+    )
+    quadratic_common_unit = re.search(
+        r"(?m)^QUADRATIC_COMMON_UNIT ([01])$",
+        completed.stdout,
+    )
     assert (
         meta is not None
         and base is not None
@@ -2157,6 +2337,24 @@ for(basisIndex=1;basisIndex<=size(G);basisIndex++)
     )
     if arguments.through >= 6:
         assert unit is not None, completed.stdout[-8000:]
+    if arguments.projective_probe:
+        assert engine == "minpoly", (
+            "--projective-probe is currently implemented only for a closed "
+            "minpoly fibre"
+        )
+        assert projective is not None and infinity_gcd is not None, (
+            completed.stdout[-8000:],
+            completed.stderr[-4000:],
+        )
+        assert len(base_scheme_reductions) == arguments.through - 3, (
+            completed.stdout[-8000:],
+            completed.stderr[-4000:],
+        )
+        if arguments.through >= 7:
+            assert (
+                quadratic_remainders is not None
+                and quadratic_common_unit is not None
+            ), completed.stdout[-8000:]
     normal_form_counts = {
         f"mu{order}": int(term_count)
         for order, term_count in re.findall(
@@ -2167,9 +2365,18 @@ for(basisIndex=1;basisIndex<=size(G);basisIndex++)
     payload = {
         "format": "two-pair-sic-bidegree33-t0-Q-residual-v1",
         "status": (
-            "exact generic-point arithmetic on the characteristic-zero "
-            "irreducible Q-border residual component; exceptional "
-            "coefficient denominators are not yet classified"
+            (
+                "exact characteristic-zero closed-fibre computation "
+                "on the Q-border residual component; this is a "
+                "calibration, not a global component exclusion"
+            )
+            if set(assignments) == {"s1", "ell", "u"}
+            else (
+                "exact generic-point arithmetic on the "
+                "characteristic-zero irreducible Q-border residual "
+                "component; exceptional coefficient denominators are "
+                "not yet classified"
+            )
         ),
         "engine": engine,
         "coefficient_field": (
@@ -2184,7 +2391,7 @@ for(basisIndex=1;basisIndex<=size(G);basisIndex++)
         ),
         "adapted_coordinates": {"ell": "s1*u-t1"},
         "weight_zero_coordinates": {
-            "ell": "(s1*u-t1)/u",
+            "ell_over_u": "(s1*u-t1)/u",
             "a": "t2/u^2",
         },
         "adapted_term_counts": {
@@ -2204,6 +2411,10 @@ for(basisIndex=1;basisIndex<=size(G);basisIndex++)
         "residual_factor_total_degree": 20,
         "residual_factor_t2_degree": 5,
         "dense_pivot": "s3=-B/A",
+        "closed_residual_polynomial_irreducible": (
+            closed_residual_irreducible
+        ),
+        "closed_pivot_A_invertible": closed_pivot_A_invertible,
         "mu3_zero_in_residual_field": base.group(1) == "0",
         "leading_border_zero_in_residual_field": base.group(2) == "0",
         "fiber_variables": ["s6", "s5"],
@@ -2227,6 +2438,62 @@ for(basisIndex=1;basisIndex<=size(G);basisIndex++)
         ),
         "adjoined_basis_size": (
             int(unit.group(2)) if unit is not None else None
+        ),
+        "projective_probe": (
+            {
+                "homogeneous_degrees": [
+                    int(projective.group(1)),
+                    int(projective.group(2)),
+                ],
+                "projective_gcd_degree": int(projective.group(3)),
+                "infinity_gcd_degree": int(projective.group(4)),
+                "infinity_gcd": infinity_gcd.group(1),
+                "infinity_base_scheme": "(tangent,h^2)",
+                "base_scheme_normal_form_term_counts": (
+                    base_scheme_reductions
+                ),
+                "all_moments_through_last_in_base_scheme": all(
+                    term_count == 0
+                    for term_count in base_scheme_reductions.values()
+                ),
+                "quadratic_mu4_reduction": (
+                    {
+                        "remainder_degrees_s6_s5": {
+                            "mu5": [
+                                int(quadratic_remainders.group(1)),
+                                int(quadratic_remainders.group(2)),
+                            ],
+                            "mu6": [
+                                int(quadratic_remainders.group(3)),
+                                int(quadratic_remainders.group(4)),
+                            ],
+                            "mu7": [
+                                int(quadratic_remainders.group(5)),
+                                int(quadratic_remainders.group(6)),
+                            ],
+                        },
+                        "common_ideal_unit": (
+                            quadratic_common_unit.group(1) == "1"
+                        ),
+                    }
+                    if (
+                        quadratic_remainders is not None
+                        and quadratic_common_unit is not None
+                    )
+                    else None
+                ),
+                "bezout_total_intersection_length": (
+                    int(projective.group(1))
+                    * int(projective.group(2))
+                ),
+                "inferred_infinity_intersection_length": (
+                    int(projective.group(1))
+                    * int(projective.group(2))
+                    - int(meta.group(3))
+                ),
+            }
+            if projective is not None and infinity_gcd is not None
+            else None
         ),
         "reproduction_command": " ".join(sys.argv),
     }

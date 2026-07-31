@@ -2,9 +2,14 @@
 
 ## 1. Status
 
-This remains a research program rather than a proof of unrestricted
-\(\operatorname{GVC}(2)\), but its balanced homogeneous target is now
-closed.  The
+The nonhomogeneous termination program has been reduced to one exact
+promotion problem.  The
+[finite-trace digit-separation theorem](BINARY_GVC_UNIFORM_FACE_TERMINATION.md)
+splits every scale-compatible finite-character trace, but the Hall--jet
+filtration has not yet been proved to promote each affine,
+prime-dependent carry shell to such a trace.  Consequently unrestricted
+\(\operatorname{GVC}(2)\) remains open.  The earlier balanced
+homogeneous target is proved independently.  The
 [balanced cubic theorem](TWO_VARIABLE_CUBIC_GVC_THEOREM.md) proves that
 the first four pure moments force every cubic Segre point into the
 one-sided nullcone, with the explicit mixed cutoff \(m>\deg Q\).
@@ -34,20 +39,30 @@ represents exactly a product of powers of linear symbols.  The first
 remaining operator architectures must therefore use coupled coefficients,
 nonlinear translation, or an irreducible nonhomogeneous symbol.
 
-The two continuing targets are:
+There are now two continuing targets: prove scale-compatible carry
+promotion—most sharply, prove translation-curvature rigidity for every
+rank-one Cartesian isoperiodic cluster—or find a genuine binary
+counterexample, and replace the third-order Dvorsky operator by a quadratic
+constant-coefficient operator using as few auxiliary variables as
+possible.  Polynomial degree seven is a regression for the first target.
 
-1. prove uniform termination of the coupled defect convolution for
-   genuinely nonhomogeneous pairs with \(\deg P\) greater than the lowest
-   positive operator order and no split homogeneous factor-unit
-   decomposition; polynomial degree seven is now a regression target for
-   that theorem rather than an endpoint in its own right; and
-2. replace the third-order Dvorsky operator by a quadratic
-   constant-coefficient operator using as few auxiliary variables as
-   possible.
-
-Neither target changes the certified dimension ledger.  In particular, the
-current upper bounds remain five variables for unrestricted
-constant-coefficient GVC and forty variables for ordinary-Laplacian GVC.
+The binary partial results do not change the known counterexample upper
+bounds: they remain five variables for unrestricted constant-coefficient
+GVC and forty variables for ordinary-Laplacian GVC.  They do not yet
+establish a counterexample-free range through two variables.
+The separate
+[three-variable tagged-lift analysis](THREE_VARIABLE_GVC_TAGGED_LIFT.md)
+tests whether the two-pair Image-Mathieu witness can lower the former
+bound.  It derives an exact power-compatible channel formula but excludes
+the minimal Long-tag architecture at pure moment five over
+\(\mathbb Q\).  Its three-channel continuation also closes every
+rank-three Dvorsky parallelogram on the first positive
+order/degree-\((2,3,4)\) grading and proves the smallest persistent
+endpoint repairs terminal.  Its complete odd-quartic chart has
+moment-six radical \((A,S,RU)\); both components have all-order mixed
+cutoffs, including elimination of the degree-two operator endpoint at
+every field-valued pure-zero point.  It neither proves nor disproves
+GVC(3).
 
 The first target has an additional associated-graded gate.  For arbitrary
 nonhomogeneous \(\Lambda\), every fixed number of leading homogeneous
@@ -66,8 +81,9 @@ factors every binary symbol with nonzero linear part as
 differential automorphism.  This closes the entire lowest-order-one
 frontier for arbitrary \(P\).  Exact cubic and quartic jet computations
 give independent finite regressions of the factorization argument.
-Hence a remaining GVC(2) counterexample must have lowest positive
-operator order at least two.  The first three pure equations also close
+Before the uniform termination theorem, this reduced any possible
+GVC(2) counterexample to lowest positive operator order at least two.
+The first three pure equations also close
 the entire \(r=2,\deg P\le3\) cell: the double-line quadratic orbit has
 one apparent second-moment cancellation, killed exactly at moment three,
 and every surviving branch in both quadratic orbits has a strict weighted
@@ -169,8 +185,175 @@ After the beta integral, the exact residual is a beta--torus moment
        G(S,t,1-t)^m\,dt,
 \]
 not the moment of \((\operatorname{CT}_S G)^m\).  A complete termination
-proof must show that this rank-one beta--torus convolution has an exposed
-one-radial lower face or descends to smaller Hall/jet support.
+proof cannot assert that the unrestricted beta--torus kernel is
+Mathieu--Zhao: Long's circuit
+\[
+ (1-S^{-1})((1-t)+tS)
+\]
+has every pure moment zero and a nonzero \(S^{-1}\)-mixed moment for every
+power.  In the GVC realization it is only the linear Hall annihilator
+\[
+ (b\partial_x+a\partial_y)(dx+cy)=bd+ac=0;
+\]
+the bad Laurent character is not a polynomial multiplier.  Thus the
+correct restricted theorem must show that the convolution has an exposed
+one-radial lower face, descends to smaller Hall/jet support, or acquires a
+split-symbol separator whose gap controls the polynomial-multiplier cone.
+The minimal two-by-two Bernstein circuit is proved to have exactly this
+last form in the uniform termination note.  That note now also closes the
+first genuine higher-jet circuit.  For primitive endpoints
+\((r,0),(0,s)\), every nondegenerate four-channel parallelogram has a
+third-moment obstruction
+\[
+ T_r-T_s+\frac92(C_s-C_r)(C_r+C_s-2)\ne0
+ \qquad(r\ne s).
+\]
+Together with the centered three-level theorem and a moment-two sparse
+return argument, this closes every two-operator-endpoint/four-polynomial-
+channel circuit.  A survivor therefore needs at least five polynomial
+channels or at least three operator endpoints.  Finite-prefix inheritance
+is false: an exact five-channel pair has its first three scalar moments
+zero while every four-channel minor fails, and only its fourth moment
+provides the Bernstein pivot.  Exact saturation through moment four now
+closes every support with at most five polynomial channels for
+\((r,s)=(1,2),(1,3),(1,4),(2,3)\); only 181 of 403,960 support ideals
+require the fourth pivot.  One mixed fourth-pivot graph is now uniform:
+the half-bridge support at every even \((1,n)\) has an explicit nonzero
+central-multinomial fourth moment.  Canonical balance rows compress all
+181 fourth-pivot supports to 14 return matrices, already visible at
+\((1,2)\), and primitive-return combinatorics proves that list exhaustive
+in the reduced early-entry regime.  The coefficient equations pair these
+into only eight factorial-ratio obstructions, with no exact zero through
+unequal endpoint orders 100.  The transverse return equation proves that
+all order-four rows are generated by the primitive quadratic and cubic
+rows, so there is no special primitive order-four branch.  Both
+double-quadratic determinants are uniformly nonzero, and an exact
+coefficient-positive successor certificate closes
+\(\mathcal H_{0,0}\) for every unequal endpoint pair.  Coupled endpoint-
+ratio cones also close \(\mathcal H_{0,3}\) and
+\(\mathcal D_{0,2}\) uniformly.  Monotone ordered-tail cones and fixed
+endpoint rays close \(\mathcal H_{0,1},\mathcal H_{0,2}\), and
+\(\mathcal H_{1,1}\) as well.  On the final wedge \(r>s\ge4\), the
+increasing factorial product \(L_nM_n/C_n^3\) gives a nonlinear cone
+that closes \(\mathcal H_{1,0}\) and \(\mathcal D_{0,1}\).  Thus the
+eight-obstruction arithmetic residue is complete.  Moreover, a channel
+entering after a core witness cannot change that witness; cofinite
+prime/Bessel witnesses give an explicit entry-order cutoff.  The missing
+descent must now pass from whole-convolution vanishing to this closed
+two-endpoint list.  The normalized return cone sharpens that target:
+every extreme return circuit uses at most four total operator/polynomial
+variables; two incomparable circuits over two operator endpoints use at
+most six polynomial channels, with equality only for two disjoint
+centered triples attached to opposite endpoints.  Prime dilation
+separates unequal radial-degree profiles.  The maximal opposite
+three-by-three packet is terminal once exposed: its normalized series
+factors, and the coefficients in degrees \(d\) and \(2d\) contradict
+all-order vanishing by strict central-binomial supermultiplicativity.
+The remaining theorem must expose a pure-zero proper packet inside the
+equal-profile convolution or produce support loss or a split-symbol
+separator, also when three or more operator endpoints are active.  The
+same-prime filtration now has the exact score “high-digit jet excess
+plus binary carry penalty”; the latter is nonnegative and vanishes only
+on Frobenius returns.  On an ordinary-homogeneous radial face the first
+correction has only centered triples and two-by-two
+beta/parallelograms as its inclusion-minimal low-digit support patterns.
+The centered ghost diagonal has universal factor \(X-1\), and the beta
+diagonal has universal factors \(X(X+1)\), recovering the known terminal
+relations.  Additional roots occur at individual primes, so fixed-prime
+triangularity is false.  The beta diagonal also has the persistent
+algebraic factor \(X^2+X+1\) at every prime at least five, so single-row
+cross-prime avoidance is false.  After adjoining the ordinary rows,
+however, the isolated atom blocks are terminal: \(1+X\) reduces the
+beta block to the Hall value \(X=-1\), while the centered Bessel rows
+\(U,U^2+2V\) have determinant \(2\) and force support loss.  The
+outstanding step is the global compatibility theorem showing that
+these pivots occur with the same normalized high-digit quotient, in
+triangular order, inside the full ghost shell and its next unit
+correction.  A circuit-only quotient reduction is false after coordinate
+projection: the first primitive is
+\(R_3B_1B_2=R_0B_3^2\), with support five.  Restoring \(R_2\) or the
+reversed level \(B_0\) gives a two-step circuit path; if neither is
+active, radial digit separation exposes the two-state block, so this
+first projected obstruction is terminal.  Rational-normal-scroll
+Gröbner bounds make the remaining quotient list finite for every fixed
+support.  Every whole exposed color-count/radial-profile fiber is also
+terminal by a one-Laurent-variable constant-term reduction and the
+Duistermaat--van der Kallen theorem.  In particular, the first completed
+scrolls not controlled by Graver-equals-universal-Gröbner visibility,
+\(S(6)\) and \(S(5,4)\), create no new terminality obstruction after
+their complete profiles are exposed.  The normalized prime-power rows
+of every exposed profile form an integral \(p\)-typical Witt ghost
+sequence in all heights: both the Laurent constant-term sequence and
+the signed radial factorial unit satisfy Gauss congruences.  Thus the
+next-prime-power correction does not cause migration.  Ghost injectivity
+alone does not split a vanishing sum of profile Witt vectors, but
+repeated equal base-\(p\) digits do: the rows
+\(m(1+p+\cdots+p^{k-1})\) recover the first \(q\) power sums of any
+\(q\) finite trace components, and Newton identities split them
+componentwise.
+After an entire oriented radial vector is
+exposed, summing over every operator and polynomial color count gives
+\[
+ [X^{N\rho}]\lambda(X)^{Nd}[Y^{N\rho}]P(Y)^{Nd}
+ =
+ \operatorname {CT}_{X,Y}
+ \bigl(X^{-\rho}Y^{-\rho}\lambda(X)^dP(Y)^d\bigr)^N.
+\]
+Hence Duistermaat--van der Kallen closes the complete radial union
+without any color-count idempotents.  Achievable color counts need not
+be saturated—the minimal parity family has persistent odd holes—so the
+inheritance problem is precisely exposure of the complete
+oriented union rather than a carry-selected proper subset, together with
+the coordinate-reversed tie.
+For the first reversal width, the tie is also terminal: exact saturation
+of the four endpoint charts for
+\(G(z)=\sum_{-2}^{2}c_kz^k\) closes the opposite coefficient sums by
+rows \(2,4,4,8\).  In general, reversal and a scale-compatible carry
+class \(\pi(p,q)=Nc\) both become identity-coefficient problems in
+\(\mathbb C[\mathbb Z^r\times F]\), where the finite abelian factor
+records reversal or carry characters.
+The exact reduction uses the regular representation of the finite
+character group:
+\[
+ \operatorname {CT}_{\mathbb Z^r\times F}(u^N)
+ =
+ |F|^{-1}\operatorname {CT}_{\mathbb Z^r}
+ \operatorname {Tr}(\operatorname {Reg}_F(u)^N).
+\]
+Equivalently, the full moment series is the constant logarithmic
+derivative of
+\(\det(I-t\operatorname {Reg}_F(u))\).  For primes congruent to one
+modulo \(\exp(F)\), Frobenius fixes every torsion character.  The
+finite-trace digit theorem is stronger than either proposed attack: it
+splits arbitrary Laurent character components, not only the rank-one
+Cartesian ones.  Componentwise Duistermaat--van der Kallen separation
+then closes every packet already promoted to a fixed scale-compatible
+trace.
+
+What remains is the promotion itself.  A fixed affine residue has
+Fourier weights outside the \(N\)-th power.  Mixed repeated digits show
+that such a weighted trace cancels exactly in isoperiodic character
+clusters; the dilation pair
+\(z+z^{-1}\), \(z^2+z^{-2}\) shows that this mechanism can retain a
+mixed row.  The radial factorial also blocks a direct shortcut:
+for \(C=y^2+4xy+2x^2\), the \(p=11\), \(N=12\) factorial moment has
+valuation three rather than the naive digit-factorized valuation two.
+Thus the remaining theorem must show that every proportional-depth
+Hall shell becomes scale-compatible, is Hall-terminal, or loses
+support.  Generic translation makes this more precise.  The Taylor
+channels satisfy
+\(\partial_{z_i}p_\beta=(\beta_i+1)p_{\beta+e_i}\).
+If the ratio of two character twists is constant along each Taylor
+direction, it is a scalar--torus character, so its moving rows differ by
+an \(N\)-th-power phase and are already scale-compatible.  Otherwise a
+minimal collinear triple or unit square has nontrivial multiplicative
+curvature.  The immediate target is to expose that curvature block by
+differentiating the all-order period identity while preserving the
+common high-digit quotient; the isolated augmented Bessel and beta
+blocks are already terminal.  Exact \(C_2\) searches find no
+non-symmetry collision through degree 12 in one Taylor direction or on
+the complete \((2,2)\) and \((3,2)\) binomial Taylor rectangles, but
+these are bounded experiments.
 Equivalently, generic translation identifies the balanced radial polytope
 with
 \[

@@ -60,4 +60,3 @@ i21 :
 ANNIHILATOR_ONLY_END
 
 i22 : exit 0;
-grationIdeal(Irat,{0,0,1});

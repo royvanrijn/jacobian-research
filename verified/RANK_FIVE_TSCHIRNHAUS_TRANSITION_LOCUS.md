@@ -273,15 +273,25 @@ Composing any proposed equivalence `F_R -> F_Q` with the inverse of
 }                                                       \tag{5.2}
 \]
 
-Equation (5.2) is the exact remaining gate.  On the canonical scaling locus,
-`z_Q=y_R`.  Away from it, every marked nonprojective lift requires a
-nontrivial stable target self-equivalence of the one fixed map `F_R`.
+Equation (5.2) was the exact remaining fixed-map gate.  The
+[fixed-quintic stabilizer theorem](RANK_FIVE_STABLE_TARGET_STABILIZER.md)
+now proves that this orbit is a point for arbitrary stabilization, so
+`z_Q=y_R`.  Consequently no marked nonprojective lift survives away from
+the canonical scaling locus.
 
 The quadratic-gauge stable-moduli theorem shows that the displayed
 coefficient-torus stabilizer is trivial in rank five: the seed weights are
 five and six.  It does not classify the kernel of all polynomial stable
 self-equivalences acting trivially on the intrinsic normalized boundary.
-That kernel, and its target orbit of `y_R`, are the next problem.
+The
+[fixed-quintic stabilizer continuation](RANK_FIVE_STABLE_TARGET_STABILIZER.md)
+proves that the standard marked orbit is a point in every degree and after
+every number of identity stabilizations.  The exposed Newton intruder gives
+unstabilized rigidity, and Kuroda's stable-invariant theorem forces descent
+under arbitrary stabilization.  Its exact logarithmic-module and
+Newton-wall calculations remain useful for the finer problem of classifying
+vertical stable automorphisms, but are no longer a gate for the marked
+orbit.
 
 ## 6. All-rank form of the reduction
 

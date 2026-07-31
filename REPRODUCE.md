@@ -316,6 +316,9 @@ remain as a regression:
 .venv/bin/python scripts/verify_universal_relative_keller_map.py
 .venv/bin/python scripts/verify_generic_tschirnhaus_non_descent.py
 .venv/bin/python scripts/verify_rank_five_tschirnhaus_transition_locus.py
+.venv/bin/python scripts/verify_rank_five_stable_target_stabilizer.py
+.venv/bin/python scripts/verify_rank_five_stable_target_stabilizer.py \
+  --module-resolution
 .venv/bin/python scripts/verify_keller_tschirnhaus_descent_567.py
 .venv/bin/python scripts/verify_rank_three_collision_descent.py
 .venv/bin/python scripts/verify_rank_four_collision_cross_ratio.py
@@ -396,6 +399,7 @@ The rank-five transition-locus continuation is:
 
 ```bash
 .venv/bin/python scripts/verify_rank_five_tschirnhaus_transition_locus.py
+.venv/bin/python scripts/verify_rank_five_stable_target_stabilizer.py
 ```
 
 It computes the ambient stable-equivalence hypersurface and the two
@@ -403,9 +407,102 @@ labelled projective residuals, verifies local dimensions `4`, `3`, and `2`
 for the ambient, projective, and intersection loci, and checks the explicit
 coefficient-torus equivalence.  It also proves that this canonical
 equivalence carries the selected complete fibre exactly on the root-scaling
-locus.  Arbitrary marked transport is reduced in the canonical note to the
-target orbit of the fixed map's stable self-equivalence group; the checker
-does not claim that this stabilizer has been classified.
+locus.  The canonical note then determines the fixed map's standard marked
+stable target orbit completely.  It does not classify vertical
+automorphisms of the added identity factors.
+
+The second command supplies the exact fixed-map calculations.  It
+factors the prime quintic ramified discriminant, computes the exact
+logarithmic-vector-field spaces through quotient degree twelve using FLINT
+integer nullspaces, and applies a three-point characteristic-zero Jacobian
+Groebner test.  An exact triple-root point forces the boundary multiplier to
+be one in every degree.  Exact recursive Newton-face pruning proves that the
+stable marked-target orbit is a point through total target degree twenty-eight;
+every unstabilized target self-equivalence in every degree is the identity.
+The all-degree unstabilized conclusion uses the coordinate-polynomial
+intruder theorem at `P^2*B^5*C`.  Kuroda's stable-invariant theorem, applied
+to conjugates of every stable translation by the target automorphism and its
+inverse, makes the standard marked orbit a point for arbitrary stabilization.
+All bounded stable
+branches expose one of `P^12*C^4` and `P^2*B^5*C`.
+The checker also proves in all degrees that these are the only positive
+upper Newton vertices.  They tie on
+`10*w_P-5*w_B+3*w_C=0`, and it verifies an explicit logarithmic field whose
+two leading contributions cancel there.  More sharply, its `P`-zero Koszul
+ladder first ties at target degree fifty, where the UFD cube condition
+fails, and first admits leading cancellation at degree fifty-five.  Thus
+unrestricted monomial avoidance is false; exact boundary preservation on
+that one binomial wall remains open.  This is a comparatively expensive
+exact regression.  The optional third command requires Macaulay2.  It
+proves that the homogenized logarithmic module has two generators in
+quotient degree seven, thirteen in degree eight, eighteen first relations
+in degree nine, and six second relations in degree ten.  Equivalently, its
+filtered Hilbert numerator is `2*t^7+13*t^8-18*t^9+6*t^10`.
+
+The optional Newton-topology certificate requires Singular:
+
+```bash
+.venv/bin/python scripts/verify_rank_five_stable_target_stabilizer.py \
+  --generic-fibre-newton
+```
+
+It checks all forty-six nontrivial Newton faces of `H-h` and its coordinate
+restrictions, obtains normalized-volume contributions
+`8,2,0;-38,-52,-2;328`, and certifies `chi(H=h)=246`.  Thus the
+vanishing-`H^2` stable-rigidity shortcut does not apply; this calculation is
+independent of the Kuroda descent proof.
+
+The optional all-degree wall research calculations are:
+
+```bash
+.venv/bin/python scripts/verify_rank_five_stable_target_stabilizer.py \
+  --research-koszul-homology
+make verify-rank-five-singular-support
+```
+
+The singular-support target is the short form of these three commands:
+
+```bash
+.venv/bin/python scripts/verify_rank_five_stable_target_stabilizer.py \
+  --research-triple-root-prime
+.venv/bin/python scripts/verify_rank_five_stable_target_stabilizer.py \
+  --research-two-double-root-prime
+.venv/bin/python scripts/verify_rank_five_stable_target_stabilizer.py \
+  --research-singular-boundary
+```
+
+These use exact characteristic zero and require Macaulay2.  Add
+`--research-characteristic=1000003` for the much faster good-prime
+discovery pass.  The homology command proves that the non-Koszul quotient
+has dimension two, degree 296, and the Betti table recorded in the canonical
+note.  The next two commands construct the prime triple-root and
+two-double-root curves by contraction; their projective degrees are
+seventeen and nineteen.  The final command proves that the affine
+`P=0` chart is empty and that the radical at infinity is `(Z,P*C)`.
+Together with the root-partition argument in the canonical note, these
+three targeted commands give the four minimal supports without asking
+Macaulay2 for a blind primary decomposition.  The older
+`--research-singular-primes` mode remains available as an expensive
+independent comparison, but is not part of the proof chain.
+
+The first exact continuation of the cancellable target-degree-55 Koszul
+wall is:
+
+```bash
+.venv/bin/python scripts/verify_rank_five_stable_target_stabilizer.py \
+  --research-koszul-hensel --research-depth=4
+.venv/bin/python scripts/verify_rank_five_stable_target_stabilizer.py \
+  --research-koszul-hensel --research-depth=9 \
+  --research-zero-l=l_3_0 --research-continue-constraints
+```
+
+The first command projects to `B`-degree zero and forces `l_3_0^4=0`.
+After imposing `l_3_0=0`, the second uniquely lifts all divisible residuals
+with lower homogeneous pieces of `G`, records the depth-eight plane
+constraint, and proves that it and the five depth-nine equations generate
+the unit ideal.  This excludes the normalized two-generator family
+`V_B=L*H_C`, `V_C=-L*H_B-eta*G*H`.  It does not include the independent
+`H`-multiple in `V_B` or any non-Koszul singular-support class.
 
 The first nonprojective rank-four continuation is:
 
@@ -1528,6 +1625,23 @@ checks directly:
 ```bash
 .venv/bin/python scripts/verify_quadratic_cancellation_intersection.py
 ```
+
+The all-rank clean quadratic-gauge stable-moduli and marked-stabilizer
+certificate is:
+
+```bash
+.venv/bin/python scripts/verify_quadratic_gauge_stable_moduli.py
+```
+
+Besides the two-torus quotient and its saturated compiler-slice invariants,
+it verifies the weight-one global receiver slice `lambda=u_5/u_4`, the
+exact finite-etale descent identity, the universal discriminant inequalities
+through rank 128, and exact discriminant supports in ranks four through
+eight.  These checks certify the all-rank written proof that
+`D_N=(2,N,1)`, corresponding to `P^2*B^N*C`, is uniquely exposed by
+`(1,N+1,N)`.  Kuroda's and
+Derksen--Hadas--Makar-Limanov's theorems are external mathematical inputs,
+not re-proved by the script.
 
 The minimal-boundary gateway and classification program has a separate fast
 cubic certificate:
@@ -3718,6 +3832,183 @@ the \(2+2+14\) relative-Jacobian decomposition.  The artifact is
 This is an exact bounded modular factor calculation, not a universal
 Picard--Fuchs certificate.
 
+Three bounded research probes test shortcuts from the sampled factor to
+a relative telescoping certificate:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_ore_reconstruct.py \
+  --primes 1000003 1000033
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_relative_divergence.py \
+  --steps 1
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_leading_syzygy.py
+```
+
+The first exposes all 885 modular coefficients of the fixed-fiber
+order-\(14\), degree-\(58\) factor and tests balanced reconstruction at a
+held-out prime.  The latter two work in the exact length-eighteen
+relative quotient modulo \(1000003\).  They prove that the leading
+\(m^{58}\) class is nonzero and that the divergence classes of all
+leading Koszul corrections \(R(C,-A)\) have rank zero.  Therefore the
+direct zero-boundary polynomial certificate cannot start; the full
+\(14+2+2\) endpoint-extended connection is required.  These artifacts
+record exact modular no-go calculations for those ansätze, not a
+characteristic-zero Picard--Fuchs certificate.
+
+The completed all-order certificate at the first point modulo \(1000003\)
+is produced in three restartable Laurent-reduction chunks:
+
+The chunks are intentionally local cache material (large checkpoints and raw
+Singular certificates), not Git artifacts.  Run the following target; override
+`LOCAL_CERTIFICATE_CACHE` to place the cache elsewhere:
+
+```bash
+make generate-rank-two-divergence-local
+```
+
+Its expanded commands are:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_relative_divergence.py \
+  --mode interior --mapped-quotient --steps 20 \
+  --checkpoint-output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_interior_divergence_checkpoint_m38.poly \
+  --certificate-output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_interior_divergence_certificate_m58_m38.sing \
+  --output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_interior_divergence_research.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_relative_divergence.py \
+  --mode interior --mapped-quotient \
+  --checkpoint-input \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_interior_divergence_checkpoint_m38.poly \
+  --steps 20 \
+  --checkpoint-output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_interior_divergence_checkpoint_m18.poly \
+  --certificate-output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_interior_divergence_certificate_m38_m18.sing \
+  --output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_interior_divergence_research_m38_m19.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_relative_divergence.py \
+  --mode interior --mapped-quotient \
+  --checkpoint-input \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_interior_divergence_checkpoint_m18.poly \
+  --steps 18 \
+  --checkpoint-output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_interior_divergence_checkpoint_m0.poly \
+  --certificate-output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_interior_divergence_certificate_m18_m0.sing \
+  --output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_interior_divergence_research_m18_m1.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_terminal_syzygy_block.py \
+  --output artifacts/local/two_pair_sic_bidegree33_rank_two_terminal_syzygy_block_research.json \
+  --R-output artifacts/local/two_pair_sic_bidegree33_rank_two_terminal_syzygy_R.sing
+```
+
+The uncorrected descent has a 307276-term terminal residual.  The final
+command constructs the 298606-term Koszul correction \(R\) and the exact
+identity \(T=QH(R)\).  The complete independent replay is
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_rank_two_all_order_certificate.py
+```
+
+It replays all 58 coefficient identities in Singular, checks every
+restart residual, independently verifies the terminal correction, and
+proves that both corrected endpoint exponential-polynomials vanish.
+The resulting theorem is the order-\(14\) recurrence for every
+\(m\geq0\) at this fixed fiber over \(\mathbb F_{1000003}\).  The summary
+artifact is
+`artifacts/generated-results/two_pair_sic_bidegree33_rank_two_all_order_certificate.json`.
+This does not reconstruct characteristic zero or a generic rank-two
+parameter identity.
+
+The finite characteristic-zero lift at the same fixed fiber is rebuilt in
+three stages.  The first command is resumable but expensive: from an empty
+cache, computing the 205 exact modular images takes roughly 45 minutes on
+the reference machine.
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_ore_reconstruct.py \
+  --point 0 --prime-count 205 --prime-start 1000000 \
+  --holdout-count 5 \
+  --image-cache \
+    artifacts/generated-results/two_pair_sic_bidegree33_rank_two_ore_reconstruct_images.json \
+  --output \
+    artifacts/generated-results/two_pair_sic_bidegree33_rank_two_ore_reconstruct_research.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_simultaneous_reconstruct.py \
+  --kind common --prime-count 205 --holdout-count 5 \
+  --cache \
+    artifacts/generated-results/two_pair_sic_bidegree33_rank_two_ore_reconstruct_images.json \
+  --output \
+    artifacts/generated-results/two_pair_sic_bidegree33_rank_two_ore_characteristic_zero_lift.json
+```
+
+The simultaneous LLL reconstruction uses the first 200 images and reserves
+five as fresh holdouts.  It returns a primitive integer order-\(14\),
+degree-\(58\) operator whose largest coefficient has 2397 bits.  Generate
+the first exact characteristic-zero divergence level with
+
+```bash
+make generate-rank-two-char0-leading-local
+```
+
+Equivalently:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_relative_divergence.py \
+  --operator \
+    artifacts/generated-results/two_pair_sic_bidegree33_rank_two_ore_characteristic_zero_lift.json \
+  --mode interior --mapped-quotient --steps 1 --timeout 900 \
+  --checkpoint-output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_char0_interior_divergence_checkpoint_m57.poly \
+  --certificate-output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_char0_interior_divergence_certificate_m58_m57.sing \
+  --output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_char0_interior_divergence_research_m58_m57.json
+```
+
+On the reference machine this producer takes about 255 seconds and peaks
+near 1.6 GB.  The combined independent verification is
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_rank_two_characteristic_zero_lift.py
+```
+
+It replays all 205 modular images, 27 exact rational moment identities, the
+known forward factor, and the \(m^{58}\) divergence identity over
+\(\mathbb Q\).  Its Singular replay takes about 93 seconds and peaks near
+1.2 GB.  The manifest is
+`artifacts/generated-results/two_pair_sic_bidegree33_rank_two_characteristic_zero_lift.json`.
+This is exact finite verification, not an all-order characteristic-zero
+certificate: levels \(m^{57}\) through \(m^1\), the terminal syzygy, and
+both endpoint identities remain open.
+
+An experimental reduction-based Picard--Fuchs route is retained in
+`scripts/research_two_pair_sic_bidegree33_rank_two_picard_fuchs.jl`.  With
+`MultivariateCreativeTelescoping.jl` 0.1.3 installed in an isolated Julia
+environment, the generic projective CRT run is
+
+```bash
+timeout 900 julia --project=/tmp/sic33-mct-env \
+  scripts/research_two_pair_sic_bidegree33_rank_two_picard_fuchs.jl crt 1
+```
+
+The reference run reached the 900-second cap without an operator.  This is
+a research benchmark, not a failed mathematical certificate.  The next
+engine should retain the known toric \(14+2+2\) quotient rather than
+homogenizing into the package's generic projective representation.
+
 The exact border-basis calculation on the generic factor pencil is
 replayed by
 
@@ -4387,11 +4678,312 @@ first moment cancels but whose fifth moment has the uniquely predicted
 identity underlying the Newton-intersection criterion.  It also checks the
 homogeneous beta-integral identity, the failure of constant-term
 extraction to commute with powers in the first two-channel example, and
-the exponent-dependent factorial distortion under a toric blow-up.  The
-proof and the precise remaining beta--torus coupled-convolution
-obstruction are in
+the exponent-dependent factorial distortion under a toric blow-up.  It
+also verifies the exact minimal Bernstein-circuit formula
+\(\Phi(F^m)=(ac+bd)^m/(m+1)\), which identifies Long's rank-one
+beta--torus circuit as a linear Hall annihilator rather than a GVC
+counterexample.  Finally it replays the all-degree primitive cusp
+parallelogram obstruction
+\[
+ E_{r,s}=T_r-T_s+\frac92(C_s-C_r)(C_r+C_s-2)
+\]
+and the moment-two closure of every sparse four-channel dilation.  The
+same checker verifies the five-channel warning
+\[
+ A=X^2-\frac13Y^3,\qquad
+ P=x^2+y^3+\frac{13}{30}+\frac{11}{2}x+xy^3:
+\]
+its first three scalar moments vanish, no four-channel restriction
+inherits those three vanishings, and its fourth moment is \(1\,205\,760\).
+This is a finite-prefix obstruction, not a pure-moment-zero pair.  The
+checker also replays the all-even unit-line half-bridge theorem.  After
+moments two and three determine \(u=de\) and \(v=ce^2\), it checks
+\[
+ M_4=\frac12\left(
+ 2Q_n-40C_nT_n+48T_n+81C_n^3-180C_n^2+132C_n-48
+ \right),
+\]
+the exceptional value \(H_2=-480\), and the increasing multinomial ratio
+\(Q_n/(C_nT_n)>20\) from \(n=4\) onward.  Finally it constructs the six
+quadratic--cubic and two double-quadratic obstruction formulas from the
+factorial weights \(W_{m,k}\), checks the double-quadratic determinants,
+and finds all eight obstructions nonzero for every unequal
+\(1\leq r,s\leq30\).  This last window is an exact regression, not the
+all-\((r,s)\) inequality proof for the five expressions left open below.
+
+The return classification and the first unbounded arithmetic certificate
+are replayed by
+
+```bash
+.venv/bin/python scripts/research_binary_gvc_eight_obstructions.py --prove-h00
+.venv/bin/python scripts/research_binary_gvc_eight_obstructions.py --prove-negative-corners
+.venv/bin/python scripts/research_binary_gvc_eight_obstructions.py --prove-three-more
+.venv/bin/python scripts/research_binary_gvc_eight_obstructions.py --verify-opposite-packet --limit 40
+.venv/bin/python scripts/research_binary_gvc_frobenius_carry.py
+.venv/bin/python scripts/research_binary_gvc_ghost_shell.py
+.venv/bin/python scripts/research_binary_gvc_quotient_graver.py
+.venv/bin/python scripts/research_binary_gvc_witt_rees.py
+.venv/bin/python scripts/research_binary_gvc_equal_radial_union.py
+.venv/bin/python scripts/research_binary_gvc_reversal_union.py --prove-width-two
+.venv/bin/python scripts/research_binary_gvc_torsion_torus_trace.py
+.venv/bin/python scripts/verify_binary_gvc_torsion_torus_digit_separation.py
+.venv/bin/python scripts/verify_binary_gvc_weighted_trace_obstruction.py
+.venv/bin/python scripts/research_binary_gvc_eight_obstructions.py --limit 100
+```
+
+The first command checks the two closed determinant formulas and the exact
+coefficient-positive proof that
+\(\mathcal H_{0,0}(r,s)>0\) for every unequal endpoint pair.  Its forward
+difference certificate has 932 nonnegative terms and its \(s=1,\ r\ge2\)
+base certificate has 19.  This is an all-order symbolic certificate.  The
+second command proves \(\mathcal H_{0,3}<0\) and
+\(\mathcal D_{0,2}<0\) for every unequal endpoint pair.  It verifies the
+three exact step-ratio bounds defining the coupled cone and four
+coefficient-positive numerator expansions, of sizes 266, 361, 2236, and
+2236.  The third command proves the uniform nonvanishing of
+\(\mathcal H_{0,1},\mathcal H_{0,2},\mathcal H_{1,1}\), using monotone
+ordered-tail cones, fixed-ray cones, and exact finite complements.  It
+then closes \(\mathcal H_{1,0},\mathcal D_{0,1}\) on the last wedge
+\(r>s\ge4\), using the increasing product \(L_nM_n/C_n^3\) and
+coefficient-positive expansions of 408 and 1692 terms.  The fourth
+command verifies the exact second-coefficient identity for the opposite
+three-by-three packet and checks its central-binomial ratio dichotomy
+through degree and endpoint order 40.  This is a bounded regression; the
+unbounded proof is the strict Vandermonde supermultiplicativity argument
+in Theorem 7.5 of the canonical note.  The fifth command checks the
+binary Frobenius carry gap and its normalized unit formulas on 28,858
+exact homogeneous return types, checks the nonhomogeneous jet--carry
+score on 477 mixed-degree types, and constructs 111,930 one-sided triples and
+5,787,067 two-sided pair-pairs through radial degree 40.  The unbounded
+proof in Lemma 7.4 ter and Corollary 7.4 sexies is the corresponding
+Legendre--Kummer and finite-field kernel calculation.  The sixth command
+constructs the centered-triple and two-by-two ghost diagonal blocks.  It
+verifies their universal factors \(X-1\) and \(X(X+1)\), respectively,
+and displays their prime-dependent residual factors through prime 43.
+It constructs the exact characteristic-zero beta diagonals and verifies
+their common gcd \(X(X+1)(X^2+X+1)\) across the tested primes.  Its rational
+cross-prime search of height 20 leaves only \(1\) in the centered block
+and \(0,-1\) in the beta block, but does not see the algebraic cube-root
+branch; that window is only a regression.  Proposition 7.4 quater proves
+the universal and persistent factors for all primes at least five.  The
+same command verifies
+the terminal augmented blocks: the beta ordinary row \(1+X\) leaves only
+the Hall value, and the centered Bessel endpoint rows \(U,U^2+2V\) have
+Jacobian determinant \(2\) and force support loss.  Corollary 7.4
+quinquies closes the isolated atom arithmetic; compatibility with the
+common high-digit quotient remains open.  The seventh command verifies
+the first obstruction to circuit-only quotient peeling,
+\[
+ R_3B_1B_2=R_0B_3^2.
+\]
+On the projected support \(R=\{0,3\}\), \(B=\{1,2,3\}\), these are the
+only two states of their color-count/level fiber, and their support-five
+difference has no circuit move.  The checker verifies primitivity and
+finds this as the first such two-color identity, up to reversal.  It also
+checks the two terminal completions through \(R_2B_2^2\) and
+\(R_3B_0B_3\).  Proposition 7.4 septies records the projected-scroll
+obstruction and the finite Gröbner bound; Corollary 7.4 octies closes
+this first block by the circuit-completion/radial-reversal dichotomy.
+The checker also replays the explicit \(S(6)\) and \(S(5,4)\)
+non-universal-Gröbner witnesses from
+Bogart--Hemmecke--Petrović.  The projected \(S(5,4)\) fiber has exactly
+four states, circuit-component sizes \(1+3\), and repeated-ray
+factorial signatures \((2,2),(2,1,1),(1,1,1,1)\) with Stirling bases
+\(16,4,1\).  Proposition 7.4 nonies proves that every whole exposed
+scroll profile is terminal by a one-variable constant-term reduction.
+The eighth command tests the first two normalized \(p\)-typical Witt
+coordinates at \(p=13\) on two unit coefficient specializations of the
+support-five, \(S(6)\), \(S(5,4)\), and first larger
+reversal-symmetric packets.  In every case the first residual has
+valuation exactly one, while both \(\mathcal G_2-\mathcal G_1\) and the
+second Witt residual have valuation exactly two.  Proposition 7.4
+decies proves the all-height result: the Laurent constant-term factor
+and the signed normalized radial factorial are Gauss sequences, so
+every exposed packet has an integral \(p\)-typical Witt recursion.
+Ghost injectivity does not split a vanishing sum of several profile
+Witt vectors; the remaining open step is a profile-separating Rees
+initial idempotent or a separator/support-loss consequence of
+least-profile cancellation.  The ninth command verifies the complete
+equal-radial union identity directly through scale four.  It also finds
+the smallest persistent failure of color-count saturation:
+\(R=\{0,2\}\), \(B=\{1\}\), whose achievable red counts at scale \(N\)
+are \(0,2,\ldots,2N\).  Despite those holes, the whole union is one
+Laurent constant-term sequence; its first two symbolic rows reduce to
+\(-14a^4\).  Proposition 7.4 undecies proves that color-count
+saturation is unnecessary once all states at one oriented radial
+vector are exposed.  It does not prove Hall/jet exposure of that
+complete union or separate a coordinate-reversed pair.  The tenth
+command saturates the four characteristic-zero endpoint charts for the
+first coordinate-reversed Laurent width.  For support in \([-2,2]\)
+and target slopes \(\pm1\), the charts
+\((-1,1),(-1,2),(-2,1),(-2,2)\) close at rows \(2,4,4,8\).
+It also exhausts the projective five-coefficient space modulo
+\(5,7,11\), with no survivor through row eight.  The rational
+saturations prove the width-two statement; the modular census is only
+a regression.  Arbitrary reversal width is closed by the finite-trace
+digit theorem below.  The eleventh
+command verifies the exact regular-representation identity
+\[
+ \operatorname{CT}_{\mathbb Z\times C_q}(u^N)
+ =q^{-1}\operatorname{CT}_{\mathbb Z}
+   \operatorname{Tr}(\operatorname{Reg}_{C_q}(u)^N),
+\]
+its log-determinant generating series, and the compatible Frobenius
+identity for \(p\equiv1\pmod q\), on exact \(C_2\) and \(C_3\)
+examples.  It also diagonalizes the width-two reversal packet into its
+two \(C_2\)-character components.  The twelfth command verifies signed
+base-\(p\) digit uniqueness directly in one and two free Laurent
+variables:
+\[
+ \operatorname {CT}(f^{n_0+n_1p+\cdots+n_sp^s})
+ \equiv
+ \prod_j\operatorname {CT}(f^{n_j})^{p^j}\pmod p.
+\]
+It also replays the Newton-identity endpoint for two, three, and five
+trace components.  The characteristic-zero proof uses arbitrarily large
+completely split primes: repeated equal digits recover every power sum
+of the component moments, forcing componentwise vanishing.  Together
+with character orthogonality and Duistermaat--van der Kallen, this closes
+the identity-coefficient torsion--torus trace lemma and every
+scale-compatible carry packet.  It does not prove that a Hall--jet shell
+has that form.  The thirteenth command verifies the weighted mixed-digit
+extension and two exact obstructions to that promotion.  The dilation
+pair \(z+z^{-1}\), \(z^2+z^{-2}\) has equal constant-term power
+sequences, so affine \(C_2\) character weights cancel at every pure row
+while a fixed multiplier detects every odd row.  It also checks
+\[
+ v_{11}\!\left(\mathcal L((y^2+4xy+2x^2)^{12})\right)=3,
+\]
+where naive Laurent repeated-digit factorization predicts a
+valuation-two nonzero residue.  The fourteenth command is
+retained as an exact sign regression through 100; all eight all-order
+obstruction conclusions are supplied independently by the first three
+proof modes.  The accompanying
+transverse-lattice proof shows that every order-four return in the 14
+reduced types is generated by the primitive order-two and order-three
+rows, so there is no separate primitive order-four branch to search.
+
+The bounded counterexample probes which led to the repeated-digit theorem
+can be replayed by
+
+```bash
+.venv/bin/python scripts/search_binary_gvc_torsion_torus_counterexample.py \
+  pair --width 3 --height 1 --depth 14
+.venv/bin/python scripts/search_binary_gvc_torsion_torus_counterexample.py \
+  shared --width 4 --height 1 --depth 16
+.venv/bin/python scripts/search_binary_gvc_translation_isoperiodic_twists.py \
+  --max-degree 12 --extra-depth 4
+.venv/bin/python scripts/search_binary_gvc_translation_isoperiodic_twists.py \
+  --max-degree 3 --extra-depth 4 --rectangles
+```
+
+They find no survivor.  Their longest zero prefixes are sparse binomial
+lattice-delay examples, first obstructed at rows 10 and 14 respectively.
+The third command tests character twists of one translated binomial row.
+After quotienting scalar sign, the torus action \(t\mapsto-t\), and
+coefficient reversal, it checks 8,188 twists and 81,924 exact
+twist--slope rows through depth \(2d+4\), for every \(d\leq12\).  Every
+collision is explained by one of those scale-compatible symmetries.
+The fourth command adds all \(C_2\) twists on the \((2,2)\) and \((3,2)\)
+binomial Taylor rectangles.  Its 2,304 twists and 4,352 exact moving rows
+have no collision outside scalar, two-torus, reversal, and
+coordinate-exchange symmetry through depths 12 and 14.  These searches
+are bounded regressions, not the translation-curvature rigidity proof.
+
+The fast final regression suite is
+
+```bash
+.venv/bin/python scripts/verify_binary_gvc_all.py
+```
+
+It runs the uniform Hall/weighted-face checker, the regular-trace checker,
+the repeated-digit/Newton checker, the weighted affine/factorial
+obstruction checker, and the default degree-ten translation-twist
+search.  It is a frontier regression, not a proof of unrestricted
+GVC(2).  The exact remaining hypothesis is (SC) in Conditional Theorem
+7.6 and Open Problem 7.8 of the canonical note.
+
+The accompanying exact finite-moment search is
+
+```bash
+.venv/bin/python scripts/search_binary_gvc_five_channel_descent.py
+.venv/bin/python scripts/search_binary_gvc_five_channel_descent.py --frontier-suite
+.venv/bin/python scripts/search_binary_gvc_five_channel_descent.py \
+  --frontier-suite \
+  --json-output artifacts/generated-results/binary_gvc_five_channel_pivot_clusters.json
+```
+
+The first command runs the quicker \((1,2)\) and \((1,3)\) cases.  The
+frontier suite adds \((1,4)\) and \((2,3)\).  It enumerates respectively
+13,288, 41,728, 95,368, and 253,576 supports with zero through three added
+channels in the order-four balance boxes.  Successive saturation finds
+the first unit at moments two, three, and four with distributions
+\[
+\begin{array}{c|rrr}
+(r,s)&M_2&M_3&M_4\\ \hline
+(1,2)&13082&173&33\\
+(1,3)&41299&394&35\\
+(1,4)&94636&679&53\\
+(2,3)&252442&1074&60
+\end{array}
+\]
+and no torus survivor.  Points outside those boxes cannot occur in a
+balanced return through order four, so the computations cover arbitrary
+nonnegative support with at most five channels for all four endpoint
+pairs.  They are exact rational finite-moment computations, not a proof
+for arbitrary endpoint orders, three operator endpoints, or unrestricted
+GVC(2).  The third command additionally records every fourth-pivot
+support and canonicalizes its balanced-selection rows under endpoint
+exchange and permutation of the three added channels.  The 181 supports
+collapse to 14 return-matrix types, all already realized at `(1,2)`.  The
+generated JSON has SHA-256
+`59436a3617671c4ca47cd354b45cb74abc7b9787352e725c97ebce1a304ffa16`.
+
+The
+proof and the precise remaining restricted beta--torus
+coupled-convolution obstruction are in
 [`BINARY_GVC_UNIFORM_FACE_TERMINATION.md`](extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md).
 The checker is a regression, not the proof.
+
+The exact three-variable tagged-lift reduction and its bounded extensions
+are replayed by
+
+```bash
+.venv/bin/python scripts/research_three_variable_gvc_tagged_lift.py
+```
+
+The target first replays the coordinate-only detector extracted from the
+two-pair witness through order six and uses the proved equal-channel
+degree-tag identity.  Over
+\(\mathbb Q\), it then computes the complete binary-cubic operator-jet
+moment ideals for the literal Long tag: moments one through four remain
+nonunit and moment five gives the unit ideal.  The same run performs three
+explicitly experimental calculations over \(\mathbf F_{101}\): the
+canonical rank-five auxiliary chart, the normalized factor-compatible
+cubic-profile chart, and 200 deterministic general cubic-profile fibers.
+Their output is written to
+[`three_variable_gvc_tagged_lift.json`](artifacts/generated-results/three_variable_gvc_tagged_lift.json).
+The exact formulas, scope distinctions, and remaining mixed-order target
+are documented in
+[`THREE_VARIABLE_GVC_TAGGED_LIFT.md`](extended-geometry/THREE_VARIABLE_GVC_TAGGED_LIFT.md).
+No GVC(3) counterexample or proof is claimed.
+
+The coupled order/degree-\((2,3,4)\) continuation is replayed by
+
+```bash
+.venv/bin/python scripts/research_three_channel_gvc_lift.py
+```
+
+It enumerates all \(56\) oriented rank-three parallelograms on the positive
+weighted-quartic plane, computes their exact rational moment ideals, and
+then checks the persistent five-term radical, the complete quartic repair
+on the polynomial side, the sparse activated operator endpoints, and the
+complete odd-quartic operator/polynomial jet.  The remaining radicals have
+written all-order mixed cutoffs.  The generated
+[`three_channel_gvc_lift.json`](artifacts/generated-results/three_channel_gvc_lift.json)
+records these characteristic-zero results.  The odd chart closes at
+moment six with radical \((A,S,RU)\); the simultaneous complete even-and-odd
+quartic total space remains open.
 
 The first repeated-root continuation is the migrating defect-one ansatz
 \((\Lambda_4+\Lambda_5,P_5+P_4)\).  Run its faithful-characteristic samples,
@@ -4849,6 +5441,168 @@ the whole-file SHA-256 is
 `69caf2d4b83fc2d70e1ce46b945471b6d0666b0ebbe12de6d20ec660a6e7114a`.
 This is an exact slice exclusion, not an exclusion of the full
 \(Q\)-residual component.
+
+Three corrected exact closed-fibre calibrations away from that slice use
+\(\ell=s_1u-t_1\):
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_Q_residual.py \
+  --through 7 --timeout 20 \
+  --specialize s1=5 --specialize ell=7 --specialize u=2 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_residual_fiber_s1_5_ell_7_u_2_exact.json
+```
+
+The analogous artifacts at \((s_1,\ell,u)=(7,4,3)\) and
+\((11,9,5)\) give the same exact degree-five extension, length-four
+fibre, and unit ideal through \(\mu_7\).  They prove that the exceptional
+Fitting locus is proper, not that it is empty.
+
+The projective source of that length-four fibre and the smaller
+quadratic-remainder elimination are checked with:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_Q_residual.py \
+  --through 7 --timeout 60 --projective-probe \
+  --specialize s1=5 --specialize ell=7 --specialize u=2 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_residual_projective_probe_s1_5_ell_7_u_2_exact.json
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_Q_residual_infinity.py \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_Q_residual_infinity_exact.json
+```
+
+The second command proves symbolically that the highest fibre-degree
+parts of \(\mu_4,\mu_5\) share
+\(6s_1us_5-s_6\), that any second infinity point is supported on the
+inherited factor \(J_Q=6084\ell^2+4805u^2\), and that the tangent
+determinant is a nonzero scalar times \(u^5D\), where \(D\) is the
+residual border factor.  The first command confirms full projective
+coprimality and infinity length two at the exact closed fibre.  It also
+reduces \(\mu_5,\mu_6,\mu_7\) modulo the quadratic \(\mu_4\): their
+\((s_6,s_5)\)-degrees become \((1,3),(1,3),(1,4)\), and the four
+polynomials generate the unit ideal at that fibre.  These facts justify
+the smaller univariate subresultant continuation; they do not yet exclude
+its exceptional parameter locus globally.
+
+The closed-point determinant-pencil oracle is reproduced by:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_Q_residual_border_basis.py \
+  --stage pencil --original-only --prime 43 --timeout 60 \
+  --specialize s1=5 --specialize ell=7 --specialize u=2 \
+  --write-moments-artifact \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_Q_corrected_moments_exact.json \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_residual_pencil_s1_5_ell_7_u_2_mod43.json \
+  --singular-output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_residual_pencil_s1_5_ell_7_u_2_mod43.singular.log
+```
+
+It verifies the pivot open, \(\mu_3\), and the leading border before
+constructing the length-twenty quotient and all coefficients of
+\(\det(M_{\mu_6}+zM_{\mu_7})\).  This is a modular interpolation oracle,
+not a characteristic-zero certificate.
+
+One batched line reconstruction and the two transverse degree scouts are
+reproduced by:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_Q_residual_border_basis.py \
+  --stage pencil --original-only --pivot-mode equation --prime 1009 \
+  --scan-variable s1 --scan-values 0:500 \
+  --specialize ell=7 --specialize u=2 \
+  --moments-artifact \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_Q_corrected_moments_exact.json \
+  --reconstruct-training-count 400 --timeout 60 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_residual_pencil_scan_s1_ell7_u2_500_mod1009.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_Q_residual_border_basis.py \
+  --stage pencil --original-only --pivot-mode equation --prime 1009 \
+  --scan-variable ell --scan-values 0:1009 \
+  --specialize s1=5 --specialize u=2 \
+  --moments-artifact \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_Q_corrected_moments_exact.json \
+  --reconstruct-training-count 800 --timeout 60 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_residual_pencil_scan_ell_s1_5_u2_full_mod1009.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_Q_residual_border_basis.py \
+  --stage pencil --original-only --pivot-mode equation --prime 1009 \
+  --scan-variable u --scan-values 1:1009 \
+  --specialize s1=5 --specialize ell=0 \
+  --moments-artifact \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_Q_corrected_moments_exact.json \
+  --reconstruct-training-count 800 --timeout 60 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_residual_pencil_scan_u_s1_5_ell0_full_mod1009.json
+```
+
+The first fit validates all 21 rational pencil coefficients on 99
+held-out points.  Representative numerator/denominator degrees are
+\(209/91\) in \(s_1\), \(420/212\) in \(\ell\), and \(270/100\) in
+\(v=u^2\) on the \(\ell=0\) chart.  These are exact finite-field line
+certificates and interpolation estimates, not characteristic-zero
+multivariate reconstruction.
+
+The corrected sparse unspecialized ratio chart
+\(\lambda=(s_1u-t_1)/u,\ v=u^2\) is profiled with:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_Q_flint.py \
+  --stage evaluated --prime 43 --timeout 60 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_unspecialized_flint_evaluated_mod43.json
+```
+
+The pivot and moment stages finish quickly and the displayed evaluation
+finishes in about thirty seconds.  The next unspecialized basis stage was
+stopped after four minutes under a \(3\)-GB cap, so it is not a
+reproduction command for a completed artifact.
+
+The bounded pre-pivot quadratic elimination is reproduced by:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_Q_flint.py \
+  --stage prepivot5 --prime 43 --timeout 60 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_unspecialized_flint_prepivot5_mod43.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_Q_flint.py \
+  --stage prepivot6 --prime 43 --timeout 60 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_unspecialized_flint_prepivot6_mod43.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_Q_flint.py \
+  --stage prepivot7 --prime 43 --timeout 60 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_unspecialized_flint_prepivot7_mod43.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_t0_Q_flint.py \
+  --stage raw_equations --prime 43 --timeout 60 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_t0_stratum_Q_unspecialized_flint_raw_equations_mod43.json
+```
+
+The first three commands pseudo-divide by the quadratic \(\mu_4\) before
+substituting the dense \(s_3\)-pivot.  Their modular linear remainders
+have respectively \(25,29,41\) raw monomials.  The last command forms
+the three \(s_6\)-elimination equations in about five seconds; their
+\((s_5,s_3)\)-degree pairs are \((5,12),(5,10),(6,12)\).
+These are exact computations over the displayed finite-field residual
+extension, not characteristic-zero component exclusions.  The guarded
+`prepivot_cross6` stage confirms that expanding even the smallest
+equation after the dense pivot exceeds 180 seconds; the intended next
+consumer is therefore a resultant/subresultant implementation that keeps
+the pivot linear.
 
 The \(L=1\) trace/norm reconnaissance treats
 \((s_3,s_5,t_4)\) as a rank-twelve finite fiber after

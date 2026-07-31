@@ -399,7 +399,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Rank-five ambient, projective, and canonical marked Tschirnhaus loci",
-      "scope": "For the split quintic presentation r=(1,2,3,4,5), the clean ambient stable-equivalence locus in the five-dimensional ordered-root chart is the hypersurface 968203125*e4^2-75076*e2*e1^6=0 and has local dimension four at r. The labelled projective locus is cut out by two explicit independent residuals and has local dimension three; the two loci are not nested, and their transverse intersection has local dimension two. On the ambient hypersurface the unique coefficient-torus equivalence has an explicit parameter alpha and carries the selected complete fiber exactly on the one-dimensional root-scaling locus u_i=alpha*i. This classifies canonical marked transport only. Arbitrary stable marked transport is reduced exactly to the target orbit Stab_st^t(F_R)*y_R of one fixed quintic map; that stable self-equivalence orbit is not classified.",
+      "scope": "For the split quintic presentation r=(1,2,3,4,5), the clean ambient stable-equivalence locus in the five-dimensional ordered-root chart is the hypersurface 968203125*e4^2-75076*e2*e1^6=0 and has local dimension four at r. The labelled projective locus is cut out by two explicit independent residuals and has local dimension three; the two loci are not nested, and their transverse intersection has local dimension two. On the ambient hypersurface the unique coefficient-torus equivalence has an explicit parameter alpha and carries the selected complete fiber exactly on the one-dimensional root-scaling locus u_i=alpha*i. This classifies canonical marked transport and reduces arbitrary stable marked transport exactly to the target orbit Stab_st^t(F_R)*y_R of one fixed quintic map. R5UI1 subsequently proves that orbit is a point for arbitrary stabilization, so the reduction now excludes marked nonprojective transport away from root scaling.",
       "canonical_source": "verified/RANK_FIVE_TSCHIRNHAUS_TRANSITION_LOCUS.md",
       "dependencies": [
         "GTND1",
@@ -431,30 +431,138 @@
       "priority": "reference"
     },
     {
-      "id": "QGDR1",
-      "kind": "corollary",
+      "id": "R5STS1",
+      "kind": "theorem",
       "state": "proved",
-      "title": "Clean quadratic-gauge decorated receiver",
-      "scope": "For every N>=5, let I_N^circ be the clean marked compiler incidence chart. The residual G_m action sends u_j to alpha^(j+1)*u_j and (pi,b,c) to (alpha^-2*pi,alpha^-1*b,alpha*c); the inverse polynomial satisfies E_(alpha*p)(S)=alpha*E_p(S/alpha), so the finite-etale fiber descends to the quotient stack D_N^(quad,circ)=[I_N^circ/G_m]. This gives the honest span BS_N <- D_N^(quad,circ) -> M_N^quad. The marked receiver has dimension N-1, target-forgetting fibers have dimension three, and the image over a geometric split algebra in unmarked stable-map moduli has dimension N-4. There is no morphism M_N^quad -> BS_N after the target is forgotten. This constructs only the clean compiler receiver; it does not construct a global finite-type moduli stack of all stable polynomial maps.",
-      "canonical_source": "verified/QUADRATIC_GAUGE_DECORATED_RECEIVER.md",
+      "title": "Fixed-quintic bounded stable target stabilizer and all-degree Newton reduction",
+      "scope": "For the compiled map F_R of R(T)=product_(i=1)^5(T-i), the fixed coefficient-torus stabilizer is trivial because alpha^5=alpha^6=1. In target coordinates (P,B,C), the ramified discriminant is P^8*H with H irreducible of degree sixteen, support size 59, and unique top monomial P^12*C^4. Every stable target self-equivalence acts identically on the intrinsic boundary normalization, so its first three target-coordinate differences are divisible by H. An exact triple-root singular point of H=0 forces kappa=0 in every solution of V(H)-QH-kappa=0. The equation has nullities 0,0,0,0,0,0,0,2,21,54,104,174,267 for deg(V)<=0,...,12, and the degree-seven selected-target evaluation has rank two. The homogenized all-degree logarithmic module has minimal resolution 0 -> R(-25)^6 -> R(-24)^18 -> R(-22)^2+R(-23)^13 -> M -> 0, hence filtered Hilbert numerator 2*t^7+13*t^8-18*t^9+6*t^10. If K is its six-generator Koszul submodule, the exact quotient M/K has Krull dimension two, degree 296, Betti shifts (2@22,13@23;18@24,3@30,3@31;6@25,4@42,3@43;5@44;1@45), and support contained in the singular scheme of H. That singular scheme has exactly four minimal components: the projective closures of the prime affine triple-root and two-double-root curves, of degrees 17 and 19, and the two lines (Z,P) and (Z,C) at infinity. This follows from exact prime contractions and boundary saturations together with the characteristic-zero root-partition exhaustion, and replaces the blind minimalPrimes attack. Exact preservation H(T)=H kills degree seven by the unique top monomial. For degrees eight through twelve, an exhaustive rational Newton-face recursion branches into every possible leading-component kernel and terminates with no unresolved face after respectively 10,20,33,56,81 subspaces. Hence the marked stable target orbit on the standard zero section is a point through total target degree twenty-eight. An independent degree-seven three-point Jacobian Groebner basis (lambda,mu), exact boundary rigidity in the later layers, and the trivial S_5/S_4 deck group make every unstabilized self-equivalence the identity through the same degree. In all degrees, every positive Newton weight exposes only A=P^12*C^4, only D=P^2*B^5*C, or their common edge; the tie wall is 10*w_P-5*w_B+3*w_C=0. On that wall the leading equation is b^5=-(h_A/h_D)*p^10*c^3. In the P-zero Koszul ladder with deg(L)=1+3*n and deg(G)=18+5*n, the first tie has target degree 50 and fails the UFD cube condition; the n=1 rung with L=P^2*C^2 and G=P^16*C^7 reaches target degree 55 and cancels its leading binomial after one cubic scalar extension. A separate H-multiple example cancels at weights (32,85,35). None is an exact symmetry. Thus the former unrestricted monomial-avoidance gate is false. This computational chain alone does not terminate every wall or classify vertical stable automorphisms; R5UI1 independently settles the standard marked orbit in all degrees and all stabilization dimensions.",
+      "canonical_source": "verified/RANK_FIVE_STABLE_TARGET_STABILIZER.md",
       "dependencies": [
-        "URKC1",
+        "R5TTL1",
         "RQG3",
-        "GTND1"
+        "URK1",
+        "external: Macaulay2 1.22 graded resolution, prime contractions, and boundary saturations"
       ],
-      "checker": "scripts/verify_universal_relative_keller_map.py",
+      "checker": "scripts/verify_rank_five_stable_target_stabilizer.py",
       "proof_type": "hybrid",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:54633214101dbce2efcf5b7cd9fbac3c8ee29fd51450aeb357efb21aec607835",
+      "artifact_hash": "sha256:e6f71ed4adaabc29876e1f674d6603fc2d655271edd81d591bf91aed84747c85",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the fixed-quintic stable target orbit as wholly unstructured",
+        "affine target symmetries as the first unresolved rank-five stabilizer layer"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-KDESC"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "R5UI1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "All-degree stable marked rigidity for the fixed quintic",
+      "scope": "For the fixed compiled quintic map F_R, the standard marked target orbit is a point in every degree and after every number s>=0 of identity stabilizations. Boundary normalization gives T(H)=rho*H. The exponent D=(2,5,1) of P^2*B^5*C is a uniquely exposed Newton vertex of H and has every coordinate positive. In the unstabilized ring, the coordinate-polynomial theorem of Derksen-Hadas-Makar-Limanov forces every target coordinate T_i=x_i+H*V_i to equal x_i. For arbitrary s, conjugate each standard translation in a stable variable by T. The conjugated G_a-action fixes H. Kuroda's stable-invariant intruder theorem therefore forces it to fix the entire base ring k[P,B,C], so T(P),T(B),T(C) are independent of all stable variables. Applying the same argument to T^(-1) shows that T and T^(-1) restrict to inverse automorphisms of the base ring; the unstabilized theorem makes this restriction the identity. Equivalently, clearing invariant denominators in a locally nilpotent derivation proves that the generic surface A_H=k(h)[P,B,C]/(H-h) is stably rigid in every cylinder dimension. The generic S_5 cover has deck group N_(S_5)(S_4)/S_4=1, forcing the source restriction to be the identity. Vertical automorphisms of the identity factors are not classified and may remain, but they do not move the standard marked target. As an independent negative topology certificate, all 46 nontrivial Newton faces of H-h and its coordinate restrictions are torus nondegenerate; their normalized-volume contributions give Euler characteristic 246, hence b_2=245+b_1>=245 for the smooth connected generic affine surface. Thus the H^2=0 cylinder theorem is unavailable but unnecessary.",
+      "canonical_source": "verified/RANK_FIVE_STABLE_TARGET_STABILIZER.md",
+      "dependencies": [
+        "R5STS1",
+        "SIDC1",
+        "external: Khovanskii Euler-characteristic formula for nondegenerate torus hypersurfaces"
+      ],
+      "checker": "scripts/verify_rank_five_stable_target_stabilizer.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e6f71ed4adaabc29876e1f674d6603fc2d655271edd81d591bf91aed84747c85",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the degree-twenty-eight restriction on unstabilized rigidity",
+        "the one-stabilization restriction on stable marked rigidity",
+        "stable rigidity of the generic H-fibre as the remaining fixed-quintic gate"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-KDESC"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "R5K55H1",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Depth-nine obstruction for the first cancellable rank-five Koszul wall",
+      "scope": "On the target-degree-55 P-zero Koszul wall from R5STS1, fix the normalized two-generator family V_B=L*H_C and V_C=-L*H_B-eta*G*H with eta^3=4^5*h_D*h_A^3, L=P^2*C^2+L_(<=3), and G=P^16*C^7+G_(<=22). Exact sparse homogeneous composition of H(x+H*V)-H from total degree 232 downward shows that each lower homogeneous G layer enters linearly through a nonzero scalar times P^156*C^53. The B-degree-zero projection is exhaustive for its projected equations. At depth four it forces l_(3,0)^4=0. After l_(3,0)=0, depth eight leaves one equation in l_(2,0),l_(2,1); reducing by it, the five projected depth-nine equations generate the unit ideal over QQ. Hence no field in this normalized two-generator family preserves H exactly, despite its leading binomial cancellation. This does not include the third P-zero Koszul coefficient that contributes an independent H-multiple to V_B, other Koszul wall types, or the singular-support quotient M/K.",
+      "canonical_source": "verified/RANK_FIVE_STABLE_TARGET_STABILIZER.md",
+      "dependencies": [
+        "R5STS1"
+      ],
+      "checker": "scripts/verify_rank_five_stable_target_stabilizer.py",
+      "proof_type": "reproduction",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e6f71ed4adaabc29876e1f674d6603fc2d655271edd81d591bf91aed84747c85",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-KDESC"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "QGDR1",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Clean quadratic-gauge decorated receiver",
+      "scope": "For every N>=5, let I_N^circ be the clean marked compiler incidence chart. The residual G_m action sends u_j to alpha^(j+1)*u_j and (pi,b,c) to (alpha^-2*pi,alpha^-1*b,alpha*c); the inverse polynomial satisfies E_(alpha*p)(S)=alpha*E_p(S/alpha), so the finite-etale fiber descends to D_N^(quad,circ)=[I_N^circ/G_m]. In fact lambda=u_5/u_4 has weight one, lambda=1 is a global algebraic slice, and I_N^circ is equivariantly G_m times Q_N^circ. Hence the quotient stack is represented by the explicit discriminant-open scheme Q_N^circ, the quotient is a trivial G_m-torsor, rho_N to BS_N is representable, and coefficient scaling contributes no inertia. This gives the honest span BS_N <- D_N^(quad,circ) -> M_N^quad. The marked receiver has dimension N-1, target-forgetting fibers have dimension three, and the image over a geometric split algebra in unmarked stable-map moduli has dimension N-4. RQG5 and SIDC1 additionally make its pointwise physical marked inertia trivial modulo vertical stabilization gauge. There is no morphism M_N^quad -> BS_N after the target is forgotten. This constructs and represents only the clean compiler receiver; it does not construct a global finite-type moduli stack of all stable polynomial maps or classify the vertical gauge.",
+      "canonical_source": "verified/QUADRATIC_GAUGE_DECORATED_RECEIVER.md",
+      "dependencies": [
+        "URKC1",
+        "RQG3",
+        "GTND1",
+        "RQG5",
+        "SIDC1"
+      ],
+      "checker": "scripts/verify_quadratic_gauge_stable_moduli.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c98079b3e90e8e0a1500819155f8b46228de0c92ca1f72b400911a80dce2b47d",
       "software_lock": [
         ".python-version",
         "requirements.txt"
       ],
       "supersedes_notes": [
         "a direct morphism from unmarked stable Keller classes to rank-N finite-etale algebras",
-        "N-4 as the dimension of the literal marked receiver fiber"
+        "N-4 as the dimension of the literal marked receiver fiber",
+        "the clean receiver quotient as an intrinsically stacky residual G_m quotient"
       ],
       "supersedes": [],
       "closes_problems": [],
@@ -505,12 +613,16 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Presentation-free stable Keller descent",
-      "scope": "Construct or obstruct a presentation-free lift from rank-N finite-etale moduli to a precisely defined stable Keller-incidence receiver. GTND1 proves that the existing quadratic-gauge map atlas does not descend through the full primitive-presentation groupoid for N>=5 because its intrinsic Fitting boundary varies generically. QGDR1 supplies the clean marked receiver span, but not a section from BS_N or a global moduli object. R5TTL1 proves that canonical marked transport in rank five is only root scaling and reduces every additional marked lift to the stable target self-equivalence orbit of one fixed quintic map; that orbit remains open. A successful continuation must classify this stabilizer, construct a different compiler with Tschirnhaus-invariant decoration, or replace a section by a correspondence or torsor-valued lift. The rank-three target-local projective transport, the rank-four degree-at-least-nineteen endpoint problem, and an all-rank lift on the projective determinantal locus remain separate polynomial-extension gates.",
+      "scope": "Construct or obstruct a presentation-free lift from rank-N finite-etale moduli to a precisely defined stable Keller-incidence receiver. GTND1 proves that the existing quadratic-gauge map atlas does not descend through the full primitive-presentation groupoid for N>=5 because its intrinsic Fitting boundary varies generically. QGDR1 supplies the clean marked receiver span, but not a section from BS_N or a global moduli object. RQG5 closes the hidden-stabilizer loophole uniformly: for every N>=5 the universal exposed intruder P^2*B^N*C and Kuroda's stable-invariant theorem force every stable self-equivalence of a fixed clean compiler map to preserve the physical target, and the coordinate-polynomial theorem makes that restriction the identity. Thus neither arbitrary degree nor arbitrary identity stabilization can repair the generic Tschirnhaus boundary mismatch. R5TTL1 and R5UI1 are the explicit rank-five transition and fixed-map specializations; R5STS1 retains finer vertical/full-group calculations. What remains is a genuinely different Tschirnhaus-invariant compiler, or a correspondence or torsor-valued replacement for a section. The rank-three target-local projective transport, the rank-four degree-at-least-nineteen endpoint problem, and an all-rank lift on the projective determinantal locus remain separate polynomial-extension gates.",
       "canonical_source": "verified/GENERIC_TSCHIRNHAUS_NON_DESCENT.md",
       "dependencies": [
         "GTND1",
         "QGDR1",
         "R5TTL1",
+        "R5STS1",
+        "R5UI1",
+        "RQG5",
+        "R5K55H1",
         "R3CD1",
         "R4NP2"
       ],
@@ -535,11 +647,13 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Global finite-type decorated Keller-incidence moduli",
-      "scope": "Extend the clean receiver QGDR1 to a finite-type bounded-degree stack or coarse receiver for stable polynomial left-right classes of Keller maps with a marked complete rank-N fiber. GTND1 proves generic non-descent of the unmarked quadratic-gauge decoration, while QGDR1 constructs the honest clean span BS_N <- D_N^(quad,circ) -> M_N^quad and separates the N-1-dimensional marked receiver fiber, the three-dimensional target fibers, and the N-4-dimensional image in unmarked stable-map moduli. What remains is to quotient by the full stable self-equivalence groupoid, determine stabilizers and separatedness, include boundary and degree strata, and decide whether a useful global finite-type receiver exists. No total moduli-fiber dimension is currently claimed.",
+      "scope": "Extend the represented clean receiver QGDR1 to a finite-type bounded-degree stack or coarse receiver for stable polynomial left-right classes of Keller maps with a marked complete rank-N fiber. GTND1 proves generic non-descent of the unmarked quadratic-gauge decoration. QGDR1 constructs the honest clean span BS_N <- D_N^(quad,circ) -> M_N^quad and, using the weight-one coordinate lambda=u_5/u_4, identifies D_N^(quad,circ) with an explicit scheme rather than a residual quotient stack. It separates the N-1-dimensional marked receiver fiber, the three-dimensional target fibers, and the N-4-dimensional image in unmarked stable-map moduli. SIDC1 and RQG5 determine the physical marked stabilizer on every clean fixed quadratic-gauge map for N>=5: it is trivial in arbitrary degree and stabilization dimension modulo vertical automorphisms of the added identity factors. What remains is to construct and quotient the full stable self-equivalence groupoid beyond this clean stratum, classify or control the vertical gauge and separatedness, include boundary and degree strata, and decide whether a useful global finite-type receiver exists. No total moduli-fiber dimension is currently claimed.",
       "canonical_source": "verified/QUADRATIC_GAUGE_DECORATED_RECEIVER.md",
       "dependencies": [
         "GTND1",
         "QGDR1",
+        "SIDC1",
+        "RQG5",
         "S1"
       ],
       "checker": null,
@@ -1224,7 +1338,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:3cb54347a83330c1a94f33cf729cdf1dc40a1159fc0d8412a3ea8a697cfddae7",
+      "artifact_hash": "sha256:c98079b3e90e8e0a1500819155f8b46228de0c92ca1f72b400911a80dce2b47d",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -1270,6 +1384,79 @@
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "SIDC1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Stable intruder descent and physical inertia criterion",
+      "scope": "Let R=k[x_1,...,x_n] over a characteristic-zero field and let H in R have a Newton vertex with every coordinate positive. If T is an automorphism of R[t_1,...,t_s] with T(H)=rho*H, conjugating each stable translation by T and T^(-1) and applying Kuroda's stable-invariant theorem proves T(R)=R. If the induced automorphism of R/(H) is the identity, then T(x_i)=x_i+H*V_i; Minkowski additivity and the Derksen--Hadas--Makar-Limanov coordinate-polynomial theorem force every V_i=0. If a marked generically finite map additionally has trivial generic deck group, its physical source restriction is also the identity. Therefore a stable marked automorphism group satisfying the boundary-preservation, boundary-faithfulness, and deck hypotheses has trivial physical quotient modulo the vertical stabilization kernel. This is a pointwise criterion; it neither classifies the vertical group nor constructs a global stable-map stack.",
+      "canonical_source": "verified/STABLE_INTRUDER_DESCENT_CRITERION.md",
+      "dependencies": [
+        "external: Derksen-Hadas-Makar-Limanov coordinate-polynomial theorem, JPAA 156 (2001), Corollary 3.3",
+        "external: Kuroda stable-invariant intruder theorem, Transformation Groups 19 (2014), Theorem 1.1"
+      ],
+      "checker": null,
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes_notes": [
+        "rank-specific repetition of the stable-intruder descent argument"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-KMOD"
+      ],
+      "consumers": [
+        "RQG5",
+        "R5UI1",
+        "QGDR1"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "RQG5",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "All-rank stable marked stabilizer of clean quadratic gauges",
+      "scope": "For every N>=5 and every clean quadratic-gauge seed a_3...a_N nonzero over an algebraically closed characteristic-zero field, the standard marked target orbit of a fixed compiled map is a point in every degree and after every number of identity stabilizations. Writing Disc_S(E_N)=P^(N^2-3N-2)*H_N, the reduced prime H_N contains the universal monomial P^2*B^N*C from the nonzero trinomial-discriminant term A_N^(N-3)*A_2^N*A_0. The two discriminant homogeneities imply that the positive weight (1,N+1,N) exposes its exponent D_N=(2,N,1) uniquely for every N. SIDC1 then gives stable descent to k[P,B,C]. The fixed coefficient-torus stabilizer is trivial because the weight determinants five and six are coprime, so boundary faithfulness and the coordinate-polynomial theorem make the physical target restriction the identity. Universal S_N monodromy gives trivial physical source deck group. Equivalently Aut_st^marked/Aut_vert is trivial pointwise. Vertical automorphisms of identity factors may remain but cannot move a physical marked target. The checker proves the integer Newton inequalities through rank 128 and reproduces the exact discriminants in ranks four through eight; the written argument is all-rank.",
+      "canonical_source": "verified/QUADRATIC_GAUGE_STABLE_MODULI.md",
+      "dependencies": [
+        "RQG3",
+        "RQG4",
+        "UM1",
+        "SIDC1"
+      ],
+      "checker": "scripts/verify_quadratic_gauge_stable_moduli.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c98079b3e90e8e0a1500819155f8b46228de0c92ca1f72b400911a80dce2b47d",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the fixed-quintic stable-invariant argument as rank-specific",
+        "arbitrary-stabilization marked kernels as an unclassified clean quadratic-gauge ambiguity"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-KDESC",
+        "OP-KMOD"
+      ],
       "consumers": [],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -8616,7 +8803,8 @@
       "narrows_problems": [],
       "consumers": [
         "SIC2C3OG14",
-        "SIC2C3DM1"
+        "SIC2C3DM1",
+        "SIC2C3PF14M"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -8639,7 +8827,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:e5ad4111d55119cdd19e0718cc757b612d01f5972c4536575567756b0255149b",
+      "artifact_hash": "sha256:080a3f3742988a85d031be88bbbbfca550346759d7cebc62cde857b8dc762bfe",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -8660,7 +8848,7 @@
       "kind": "reproduction",
       "state": "proved",
       "title": "Rank-two cubic sampled Ore gcd and order-14 interior-factor probe",
-      "scope": "At the two exact-rank-two bidegree-(3,3) factor points and over each of 1000003, 1000033, and 1000037, the order-18 m-degree-18 and order-27 m-degree-11 recurrence operators are recomputed from 501 exact normalized moments. Exact left Euclidean division in F_p(m)[S; S*f(m)=f(m+1)*S] shows that the order-27 operator is not a left multiple of the order-18 operator: the first remainder has order 17. In all six cases the successive remainder orders are 17,16,15,14,-1, so the monic greatest common right divisor G has order 14. Exact division gives R_18=Q_4*G and R_27=Q_13*G. After clearing rational denominators and polynomial content, all fifteen coefficients of G have m-degree 58; its forward coefficient contains product_(k in {32,34,35,37,38,40,41,43})(3m+k) and a residual degree-50 factor. The primitive G annihilates all 487 available moment rows at each sample. Its order agrees with the exact cyclic length-14 interior critical algebra in SIC2C3IC14, but the nonzero endpoint-idempotent period audit shows that ordinary Jacobian projection cannot identify G: an m-dependent divergence connection is required. No characteristic-zero operator, telescoping certificate, universal parameter denominator, residual integer-step audit, or exceptional-locus analysis is proved.",
+      "scope": "At the two exact-rank-two bidegree-(3,3) factor points and over each of 1000003, 1000033, and 1000037, the order-18 m-degree-18 and order-27 m-degree-11 recurrence operators are recomputed from 501 exact normalized moments. Exact left Euclidean division in F_p(m)[S; S*f(m)=f(m+1)*S] shows that the order-27 operator is not a left multiple of the order-18 operator: the first remainder has order 17. In all six cases the successive remainder orders are 17,16,15,14,-1, so the monic greatest common right divisor G has order 14. Exact division gives R_18=Q_4*G and R_27=Q_13*G. After clearing rational denominators and polynomial content, all fifteen coefficients of G have m-degree 58; its forward coefficient contains product_(k in {32,34,35,37,38,40,41,43})(3m+k) and a residual degree-50 factor. The primitive G annihilates all 487 available moment rows at each sample. Its order agrees with the exact cyclic length-14 interior critical algebra in SIC2C3IC14, but the nonzero endpoint-idempotent period audit shows that ordinary Jacobian projection cannot identify G: an m-dependent divergence connection is required. This calculation itself is bounded; SIC2C3PF14M subsequently supplies an all-order telescoping certificate at the first point modulo 1000003. No characteristic-zero operator, universal parameter denominator, residual integer-step audit, or exceptional-locus analysis is proved.",
       "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_HOLONOMIC_PROBE.md",
       "dependencies": [
         "SIC2C3H27",
@@ -8685,6 +8873,82 @@
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
+      "consumers": [
+        "SIC2C3PF14M",
+        "SIC2C3PF14Q0"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "SIC2C3PF14M",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Fixed-fiber all-order modular order-fourteen Picard--Fuchs certificate",
+      "scope": "At the first integral exact-rank-two bidegree-(3,3) factor point over F_1000003, the sampled primitive order-14, m-degree-58 Ore operator has an exact all-order telescoping certificate. In the Laurent ring with U=u^(-1), 58 descending coefficient lifts produce polynomial-in-m certificate pairs X,Y. Canonical reduction modulo u*U-1 leaves a 307276-term terminal residual before the final correction. A t-block solve constructs a 298606-term Koszul polynomial R with terminal identity T=Q*(Q_t*(D_u+3)R-(u*Q_u-3Q)*R_t), and an independent Singular replay verifies this identity together with all 58 coefficient identities and the three restart residuals. After replacing (X_0,Y_0) by (X_0+Q_t*R,Y_0-(u*Q_u-3Q)*R), the two endpoint constant terms are exponential-polynomials 11^m*E_0(m) and 354^m*E_1(m); exact extraction gives E_0=E_1=0. Hence the stored order-14 operator annihilates the normalized fixed-fiber moment sequence for every integer m>=0 over F_1000003. This is not a characteristic-zero reconstruction, a generic rank-two parameter theorem, a certificate at the other five samples, or an exceptional-locus classification.",
+      "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_HOLONOMIC_PROBE.md",
+      "dependencies": [
+        "SIC2C3IC14",
+        "SIC2C3OG14",
+        "external: Singular exact finite-field Groebner reduction"
+      ],
+      "checker": "scripts/verify_two_pair_sic_bidegree33_rank_two_all_order_certificate.py",
+      "proof_type": "exact_modular",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c89ecd0d67cbcc54259cf659e896d5b4d3d5354ac7465a7900572ab2dc302d93",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the interpretation of the first-point order-14 relation as only a 487-row modular observation"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-SIC2-B33"
+      ],
+      "consumers": [
+        "SIC2C3PF14Q0"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "SIC2C3PF14Q0",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Fixed-fiber characteristic-zero order-fourteen operator lift and leading descent",
+      "scope": "At the first integral exact-rank-two bidegree-(3,3) factor point, 205 exact normalized modular images of the sampled order-14, m-degree-58 Ore factor are computed at consecutive primes above 1000000. Simultaneous projective LLL reconstruction from 200 images recovers a primitive integer operator with maximum coefficient height 2397 bits; all 885 coefficients agree at five fresh holdout primes. Exact rational replay verifies 27 recurrence rows through moment 40, and the forward coefficient has the exact eight-factor product product_(k in {32,34,35,37,38,40,41,43})(3m+k) times a degree-50 residual. Over QQ[u,U,t]/(u*U-1), the leading m^58 divergence equation has a 5722-term X_57 and a 5769-term Y_57. An independent ambient Singular replay verifies that identity and matches the 6354-term m^57 restart residual. These are exact finite characteristic-zero computations. They do not prove the recurrence for every m: levels m^57 through m^1, the terminal m^0 syzygy, and the two endpoint identities over QQ remain open. A direct five-level expanded QQ run exceeded 1800 seconds and 4.3 GB without completing; this is only a performance observation.",
+      "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_HOLONOMIC_PROBE.md",
+      "dependencies": [
+        "SIC2C3OG14",
+        "SIC2C3PF14M",
+        "external: FLINT exact LLL",
+        "external: Singular exact rational Groebner reduction"
+      ],
+      "checker": "scripts/verify_two_pair_sic_bidegree33_rank_two_characteristic_zero_lift.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:70d7ec7ab3720730332be830255b59852b6690d4f00e804ebf32fc65a0569d1b",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the expectation that independent coefficientwise rational reconstruction is required for the fixed-fiber order-14 operator"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-SIC2-B33"
+      ],
       "consumers": [],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -10531,13 +10795,15 @@
       "id": "GVC2UFT",
       "kind": "theorem",
       "state": "proved",
-      "title": "Uniform binary Hall localization and unequal-weight terminal-face theorem",
-      "scope": "Let Lambda have lowest positive binary symbol of order r and let d=deg(P)>r. The translated split-symbol construction and Hall's theorem imply, uniformly in r and d, that every leading pure-zero component is localized at one root of multiplicity mu and has the form (X^mu Y^(r-mu), y^(d-mu+1) C_(mu-1)); after local division every normalized excess-h operator jet lies in the two wings a<mu or a>mu+h. Independently, let A and B be nonzero binary polynomials homogeneous for the same distinct positive weights and the same positive weighted degree. If A(partial)^m(B^m)=0 for every m, then their Newton segments are disjoint. The proof chooses the unique least-ordinary-degree endpoint of their intersection, uses a two-Laurent-variable constant-term argument to expose it in one common power, and then a good-prime dilation to make its multifactorial contraction term uniquely minimal in p-adic valuation. The same argument with factorial ratios proves a shifted-ray theorem: on every fixed rational normalized output ray, an unequal-weight exposed endpoint fiber is disjoint and hence termwise safe. The resulting coordinate gaps give explicit eventual mixed cutoffs. Hence every unequal-weight common-threshold face of an arbitrary binary GVC pair is automatically terminal, with all strict lower polynomial terms and higher operator jets absorbed by the common weight-defect estimate. A density refinement combines this with the split-symbol separator: if all but o(m) selections lie on one unequal-weight or ordinary-homogeneous face, its linear gap survives, so every hypothetical defect uses at least two distinct faces with positive limiting density. Generic translation gives a further exact criterion. If N(lambda) is the operator Newton polygon and D(P) is the convex hull of all beta with partial^beta(P) nonzero, then the balanced two-radial polytope of the translated rank-one contraction is exactly N(lambda) intersect D(P). If this intersection is empty or has a componentwise least point, multiradial prime isolation gives GVC. Thus a counterexample requires at least two incomparable Pareto-minimal intersection points as well as positive-density face mixing. This removes root-partition enumeration and terminal radical calculations from any future all-degree proof. It does not exclude the remaining convolution between incomparable Pareto endpoints at depth floor(rho*m), where coefficient extraction mixes several selection distributions and loses multiplicativity. That multi-face convolution is the remaining uniform termination obstruction, so unrestricted GVC(2) is not claimed.",
+      "title": "Uniform binary Hall localization and low-channel Bernstein pivots",
+      "scope": "Let Lambda have lowest positive binary symbol of order r and let d=deg(P)>r. The translated split-symbol construction and Hall's theorem imply, uniformly in r and d, that every leading pure-zero component is localized at one root of multiplicity mu and has the form (X^mu Y^(r-mu), y^(d-mu+1) C_(mu-1)); after local division every normalized excess-h operator jet lies in the two wings a<mu or a>mu+h. If A and B are nonzero binary polynomials homogeneous for the same distinct positive weights and the same positive weighted degree, all pure contractions vanish only when their Newton segments are disjoint. A prime-dilated endpoint proof also gives the shifted-ray version, so every unequal-weight common-threshold face is terminal and any defect must mix at least two faces with positive limiting density. For generic translation, the balanced radial polytope is exactly N(lambda) intersect D(P); an empty intersection or a componentwise least point proves GVC, so a counterexample needs at least two incomparable Pareto-minimal points. Homogeneous binary factorial rigidity closes every one-channel ordinary-homogeneous tie. The exact minimal Bernstein beta circuit has moments (ac+bd)^m/(m+1); its pure-zero locus is a linear Hall annihilator, while Long's bad Laurent multiplier lies outside the polynomial-multiplier cone. The first genuine higher-jet circuit also closes uniformly. For primitive operator endpoints (r,0),(0,s) and four nonzero polynomial channels on an affine parallelogram, moments one and two determine the coefficient ratio and cross-ratio; moment three is (r!)^3 E_(r,s), where E_(r,s)=T_r-T_s+(9/2)(C_s-C_r)(C_r+C_s-2), C_n=binom(2n,n), and T_n=(3n)!/(n!)^3. Exact monotonicity proves E_(r,s) nonzero for r!=s, while r=s is homogeneous split-symbol terminal. More generally every primitive two-endpoint/four-polynomial-channel circuit is terminal: at moment two every additional quadratic return is a one-channel midpoint, an already-closed centered three-level circuit, or the parallelogram; if there is no return, the remaining obstruction is (r!)^2(C_r+C_s-4), nonzero except in the homogeneous linear case. Thus a remaining convolution requires at least five active polynomial channels or at least three active operator endpoints after the one-channel, three-level, linear-Hall, and four-channel reductions. Finite-prefix minor inheritance already fails exactly: A=X^2-(1/3)Y^3 and P=x^2+y^3+13/30+(11/2)x+xy^3 have scalar moments M_1=M_2=M_3=0 and M_4=1205760, while every four-channel restriction fails among the first three moments. The mixed unit-line half-bridge nevertheless closes in all even cusp orders: for A=X-Y^n/n! and P=x+y^n+c+d*y^(n/2)+e*x*y^(n/2), moments two and three determine u=de and v=c*e^2, while moment four is H_n/2 with H_n=2Q_n-40C_nT_n+48T_n+81C_n^3-180C_n^2+132C_n-48. Here H_2=-480, and H_n>0 for even n>=4 because Q_n/(C_nT_n)=binom(4n,n)/binom(2n,n) is increasing from 26 at n=4. In the reduced early-entry regime, primitive return combinatorics is uniformly finite: after symmetries there are exactly two double-quadratic and twelve quadratic-cubic types, explaining the 14 matrices in the exact census and excluding a new early-entry type at a higher cusp. A transverse-lattice calculation proves that every order-four return in those types is generated by the primitive quadratic and cubic rows, so no special primitive order-four branch exists. Coefficient elimination pairs the twelve quadratic-cubic types into six formulas and leaves two double-quadratic formulas: eight explicit obstructions in the factorial weights W_(m,k). Both double-quadratic determinants are uniformly nonzero. A 932-term coefficient-positive successor certificate proves H_(0,0)(r,s)>0 for every r!=s. Coupled-ratio coefficient-positive certificates prove H_(0,3)(r,s)<0 and D_(0,2)(r,s)<0 for every r!=s. Monotone ordered-tail cones, fixed endpoint rays, and exact finite complements prove H_(0,1), H_(0,2), and H_(1,1) uniformly nonzero. On the final wedge r>s>=4, the increasing factorial product L_n*M_n/C_n^3 supplies a nonlinear cone whose 408- and 1692-term coefficient-positive expansions prove H_(1,0) and D_(0,1) nonzero. Thus all eight factorial obstructions are uniformly closed. A late-entry transfer lemma gives the complementary termination mechanism: below the first balanced-return order tau of a new channel, every scalar moment equals the core moment; if the core has a nonzero witness at p or 2p for every prime p>=p_0, Bertrand's postulate forces tau<=4(p_0+1). The exact return cone has three-dimensional signed columns, so every extreme balanced circuit uses at most four operator/polynomial variables. Two incomparable circuits over two operator endpoints use at most six polynomial channels; equality is only two disjoint centered triples attached to opposite endpoints. A good-prime dilation separates repeated circuits of unequal ordinary radial degree. At this stage the remaining theorem is factorial-compatible exposure of a proper equal-profile circuit packet. GVC2FTS splits any packet already promoted to a scale-compatible finite trace, while GVC2WTD shows that affine carry shells can retain isoperiodic cancellation. The promotion step remains GVC2ALL.",
       "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
       "dependencies": [
         "GVCSS",
+        "G2Q",
         "external: Duistermaat--van der Kallen constant-term theorem for Laurent polynomials",
         "external: Liu--Sun homogeneous binary Factorial Conjecture theorem",
+        "external: Long rank-one xz beta--torus counterexample",
         "external: Hall marriage theorem and integrality of the bipartite matching polytope",
         "external: finite-type specialization over integral domains"
       ],
@@ -10546,7 +10812,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:e1638672c3012dc8082299c7675da95e8ca3ceee3c8078b3a462dafba23cc5e0",
+      "artifact_hash": "sha256:257a838e6cd1228ccf2808533c22fb5fdd32be6721af18c289981684187a402b",
       "software_lock": [],
       "supersedes_notes": [
         "degree-specific Hall localization as the only available leading-locus classification",
@@ -10561,6 +10827,385 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "reference"
+    },
+    {
+      "id": "GVC2O33",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Opposite three-by-three binary return packet is terminal",
+      "scope": "Let the two active operator endpoints be (r,0) and (0,s), and suppose an exposed balanced-return packet is generated by two disjoint primitive circuits, each using one endpoint and three positive polynomial-channel multiplicities. After division of the order-m packet moment by (m!)^2, its generating series factors as F_A(t)F_B(t). If the two circuit orders differ, the first positive coefficient is nonzero. If both orders equal d, the degree-d equation fixes the circuit-coefficient ratio, while the degree-2d coefficient is a nonzero multiple of R_A+R_B-1, where R_A=C_(dr)/(C_d product_j C_(q_j)) and C_n=binom(2n,n). Strict central-binomial supermultiplicativity gives R_A<=1/8 for r=1 and R_A>1 for r>=2, so the sum is never one. Hence this maximal six-polynomial-channel packet cannot have every positive factorial-weighted partial moment zero unless one circuit coefficient vanishes. This theorem applies only after the packet has been factorial-compatibly exposed; it does not prove that pure vanishing of the whole convolution descends to such a packet, and therefore does not prove unrestricted GVC(2).",
+      "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
+      "dependencies": [
+        "GVC2UFT",
+        "external: Vandermonde identity for central binomial coefficients"
+      ],
+      "checker": "scripts/verify_binary_gvc_uniform_face_termination.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:257a838e6cd1228ccf2808533c22fb5fdd32be6721af18c289981684187a402b",
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "GVC2FCG",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Binary jet-carry score and primitive one-carry atoms",
+      "scope": "Fix a common lower ordinary degree s, write each channel degree as s plus a nonnegative jet excess, and let J be the common total jet excess of a balanced return. For base moment order d and a coefficient-unit prime ell larger than d times every active channel degree, a return of order ell*d has exact valuation s*d+floor(J/ell)+kappa, where kappa=e_u+e_v-c_rho is the two selection-carry count minus the binary radial carry. Legendre--Kummer proves kappa>=0, with equality exactly when both selections are ell-divisible. Thus Frobenius base returns of jet excess L mix at valuation level L with non-Frobenius bridges of smaller high-digit jet excess, giving an exact filtration law for defect migration. Explicit Wilson-unit formulas factor every gap-one weight into a high-digit quotient, a low-digit bridge, and a scalar. On an ordinary-homogeneous layer the lowest Frobenius sum merely repeats the pure premise, and the first correction has two one-carry patterns. Every inclusion-minimal one-sided low-digit bridge uses at most three channels, because every triple of distinct levels supports a positive mod-ell kernel vector of total ell. Every inclusion-minimal two-sided bridge uses exactly two channels per side, because any pair realizes every nonzero radial residue. Thus the primitive low-digit atoms are the centered three-level and two-by-two beta/parallelogram supports. The theorem does not prove packet exposure: compatibility of normalized atom peeling with its generally unbalanced high-digit quotient remains open.",
+      "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
+      "dependencies": [
+        "GVC2UFT",
+        "external: Legendre formula, Kummer carry formula, and Wilson theorem"
+      ],
+      "checker": "scripts/research_binary_gvc_frobenius_carry.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:dba503b8a5b01a53a19b5a9cdae7bd2db360bc4f05da2dee1932cfec5642d9ac",
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "GVC2GSD",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Centered and beta ghost diagonals and augmented atom blocks",
+      "scope": "For every prime ell>3, the centered three-level Cartier ghost diagonal for A=a+b*z+c*z^2 is a*c*b^(ell-2)*H_ell(a*c/b^2), where H_ell(X)=sum_(t=1)^((ell-1)/2) (ell-1)!/(t!^2*(ell-2t)!)*X^(t-1) over F_ell. The central-trinomial congruence [z^ell](1+z+z^2)^ell=1 mod ell^2 proves the universal terminal factor H_ell(1)=0. The two-by-two beta ghost-pair diagonal is the Mirimanoff polynomial K_ell(X)=sum_(n=1)^(ell-1) (-1)^n*X^n/n and has the universal support and Hall factors X*(X+1). The fixed-prime converse is false: H_11 has the extra root 4 and K_7 has the extra roots 2 and 4. Single-row cross-prime avoidance is also false: the exact characteristic-zero diagonals D_ell(X)=((1+X)^ell-1-X^ell)/ell have common factor X*(X+1)*(X^2+X+1) for every prime ell>=5, and D_5,D_7 have exactly this gcd. The primitive cube-root branch is not a surviving atom, because adjoining the ordinary beta endpoint row 1+X leaves only the Hall value X=-1. For the centered atom, the ordinary Bessel endpoint rows are U and U^2+2V in U=C^ell,V=D^ell; their Jacobian determinant is 2, so they force U=V=0 and hence support loss. Thus the isolated primitive ghost atom arithmetic is terminal. What remains is not residual-root avoidance, but the global compatibility theorem that must expose these ordinary endpoint rows with the same high-digit quotient, in triangular order, inside the full ghost shell and its next Frobenius-unit correction. Exact factorization through prime 43 and the rational height-20 search are regressions only.",
+      "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
+      "dependencies": [
+        "GVC2FCG",
+        "external: Lucas theorem, Wilson theorem, and the central-trinomial congruence"
+      ],
+      "checker": "scripts/research_binary_gvc_ghost_shell.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:623d3442027f2b225cd407a755b55e47ed814967ab17e7529d42caf56f033999",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "GVC2QG",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Projected-scroll quotient obstruction and exposed-fiber terminality",
+      "scope": "The inclusion-minimal low-digit carry atoms do not by themselves connect every projected high-digit quotient fiber. Up to level reversal, the first failure is the color-homogeneous identity R_3*B_1*B_2=R_0*B_3^2: it has degree three, support five, is Graver-primitive, and on red support {0,3} and blue support {1,2,3} its two monomials are the only states with color counts (1,2) and total level six, so no support-at-most-four circuit joins them. Restoring R_2 gives the circuit path through R_2*B_2^2; restoring the reversed level B_0 gives the path through R_3*B_0*B_3. If both are absent and the reduced fiber has no additional state of the same radial profile, the coordinate-reversed companion is absent, so the radial digit spectrum exposes the two-state block and its ordinary-plus-ghost beta block is terminal. More generally, every whole factorial-compatibly exposed color-count/radial-profile scroll fiber is terminal: after removing its common radial factorial, the ordinary endpoint row is CT_z(z^(-w)*product_j C_j(z)^(d_j))^N, so the Duistermaat--van der Kallen theorem gives either a nonzero row or a one-dimensional split-symbol separator (with cancellation of a whole color giving support loss). The dominance-minimal non-universal-Groebner S(6) witness is one-color. On the projected support of the genuinely bichromatic S(5,4) witness R_0*R_4*B_0*B_4=R_1*R_5*B_1^2, the fiber has exactly four states and circuit-component sizes 1+3; its repeated-ray factorial partitions (2,2), (2,1,1), and (1,1,1,1) have Stirling bases 16, 4, and 1. Thus the minimal exceptional profiles are terminal after whole-profile exposure, and circuit-only quotient peeling is false in general. Petrović's bounds make the projected Gröbner hierarchy finite for every fixed support, while the Bogart--Hemmecke--Petrović classification identifies S(6) and S(5,4) as the first two-color visibility thresholds. This theorem does not prove factorial-compatible inheritance. GVC2FTS supplies component separation only after scale-compatible trace promotion; GVC2ALL records that remaining promotion problem.",
+      "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
+      "dependencies": [
+        "GVC2FCG",
+        "GVC2GSD",
+        "external: Duistermaat--van der Kallen constant-term theorem for Laurent polynomials",
+        "external: Petrović's rational-normal-scroll Graver and projected Gröbner bounds",
+        "external: Bogart--Hemmecke--Petrović classification of Graver equals universal Gröbner bases"
+      ],
+      "checker": "scripts/research_binary_gvc_quotient_graver.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:232ba6093bd79bf7b8a196a9667947a4be7928fbcecc5c504b30dede9e2ae04c",
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "GVC2WR",
+        "GVC2ERU"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "GVC2WR",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "All-height Witt recursion for exposed binary scroll packets",
+      "scope": "Fix a factorial-compatibly exposed color-count/radial-profile packet with completed color polynomials C_j(z), multiplicities d_j, total span capacity T=sum_j d_j*s_j, and selected total level w. For every odd prime p larger than w, T-w, and all d_j, let phi fix the integers and send every universal coefficient variable to its p-th power. The factorial-normalized constant terms G_k=(-1)^(T*S_k)*(p^k*w)!*(p^k*(T-w))!*CT_z(z^(-w)*product_j C_j(z)^(d_j))^(p^k)/p^(T*S_k), where S_k=1+p+...+p^(k-1), satisfy G_k congruent to phi(G_(k-1)) modulo p^k. Hence they are the ghost coordinates of a unique integral p-typical Witt vector. After an integer specialization phi is the identity. The proof combines the primitive-necklace Gauss congruence for Laurent constant terms with the signed p-free factorial-unit congruence. In particular both the first and second Witt coordinates are integral. Exact p=13 regression checks the first two residual valuations on two unit assignments for each of the support-five quotient fiber, S(6), S(5,4), and a larger reversal-symmetric rank-five packet; the minimum valuations are respectively one and two in every family. This proves that no missing p-squared correction obstructs a single exposed profile. It does not split a vanishing sum of several profile Witt vectors: ghost injectivity gives only the sum of their Witt vectors, not profile idempotents. GVC2FTS supplies profile separation after the profiles form a fixed equal-weight finite trace; it does not promote an affine prime-dependent Hall shell to that trace.",
+      "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
+      "dependencies": [
+        "GVC2QG",
+        "external: primitive-necklace Gauss congruence for Laurent constant-term sequences",
+        "external: Dwork p-typical Witt ghost criterion over p-torsion-free rings with Frobenius lift"
+      ],
+      "checker": "scripts/research_binary_gvc_witt_rees.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:95e2c47d99620bf059c7fd7c3340671f1da8803b9591f38e7e29b870764b2469",
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "GVC2ERU",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete equal-radial union terminality",
+      "scope": "Fix an order d and an oriented radial vector rho in the binary balanced return semigroup. At scale N, sum every operator and polynomial selection state of order N*d having common radial vector N*rho, without fixing any color counts, and remove the common factorial (N*rho)!. The complete union factors as [X^(N*rho)]lambda(X)^(N*d)*[Y^(N*rho)]P(Y)^(N*d)=CT_(X,Y)(X^(-rho)Y^(-rho)lambda(X)^d P(Y)^d)^N. If the radial fiber is nonempty, rho lies in both scaled Newton polytopes, so the origin lies in the Newton polytope of the displayed Laurent polynomial. Duistermaat--van der Kallen therefore forbids every positive-power row from vanishing. Thus complete oriented radial unions are terminal after exposure, with no color-count idempotent or saturation hypothesis. Color-count face saturation is false even in the minimal family C(z)=a*(1+z^2)+b*z: at order 2N and level 2N its achievable first-color counts are 0,2,...,2N, so odd holes persist at every scale. Nevertheless its whole union is one constant-term sequence, and its first two rows reduce to -14*a^4. Exact selection-sum checks replay the general factorization through scale four and the parity family through scale eight. GVC2FTS closes arbitrary-width coordinate reversal and separates scale-compatible trace components, but exposure of an affine Hall/carry shell remains GVC2ALL.",
+      "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
+      "dependencies": [
+        "GVC2QG",
+        "external: Duistermaat--van der Kallen constant-term theorem for Laurent polynomials"
+      ],
+      "checker": "scripts/research_binary_gvc_equal_radial_union.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:0d684f3bafc2d18af3cd10106f5fbdac3b46b45a02dccf682df40ae51245b3d2",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "GVC2RUT"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "GVC2RUT",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Width-two coordinate-reversed radial-union terminality",
+      "scope": "Let G(z)=sum_(k=-2)^2 c_k*z^k over characteristic zero, suppose both target slopes -1 and 1 lie in Newt(G), and set S_N=[z^N]G(z)^N+[z^(-N)]G(z)^N. Then S_1,...,S_8 cannot all vanish. Fixing the least and greatest active exponents gives four endpoint charts (-1,1), (-1,2), (-2,1), and (-2,2). Exact rational Groebner saturation by the product of the two endpoint coefficients gives the unit after respectively 2,4,4,8 rows. Hence every common zero loses an endpoint and no longer contains both target slopes. The first chart also has the direct proof S_1=c_(-1)+c_1 and S_2=c_(-1)^2+c_1^2. Exhaustive projective searches over F_5, F_7, and F_11 have no survivor through row eight; that modular census is a regression only. This is the first finite-width instance of coordinate-reversed terminality. Arbitrary width is subsequently closed by GVC2FTS, so this bounded saturation is retained as an exact regression rather than the uniform theorem.",
+      "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
+      "dependencies": [
+        "GVC2ERU"
+      ],
+      "checker": "scripts/research_binary_gvc_reversal_union.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:618259067fb67608be69f5463f1b4a191d56a70a404557df47aa767b4f4ef0c2",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "GVC2TTD"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "GVC2TTD",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Torsion--torus regular trace and log-determinant reduction",
+      "scope": "Let F=C_q and u lie in QQ[Z times F]. For every N>=1, the identity coefficient CT_(Z times F)(u^N) equals q^(-1) CT_Z Tr(Reg_F(u)^N). Consequently its full positive-moment generating series is -q^(-1) CT_Z(t*d/dt log det(I-t*Reg_F(u))). If p is congruent to 1 modulo q and denominators remain invertible, reduction modulo p satisfies u^p=phi_p(u), where phi_p dilates the free exponent and fixes the torsion coordinate. For F=C_2, the coordinate-reversal pair z^(-r)G(z), z^rG(z) is exactly the decomposition into the two character idempotents. Exact C_2 and C_3 examples replay the trace, determinant, and Frobenius formulas. This packages reversal and scale-compatible finite carry-character cancellation into one scalar invariant; GVC2FTS splits that trace componentwise.",
+      "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
+      "dependencies": [
+        "GVC2RUT",
+        "external: Newton trace/log-determinant identity"
+      ],
+      "checker": "scripts/research_binary_gvc_torsion_torus_trace.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f2e19c2154c25fa6695702b03dccc0b2ec9b74f148e9f67121ed7bf7e25e7abf",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "GVC2FTS"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "GVC2FTS",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Finite-trace digit separation and torsion--torus Mathieu theorem",
+      "scope": "Let f_1,...,f_q be Laurent polynomials in any finite number of free variables over a characteristic-zero field. If sum_i CT(f_i^N)=0 for every N>=1, then CT(f_i^N)=0 for every i and N. After finite-type specialization to a number field, fix m and k<=q and use arbitrarily large completely split primes p. At N=m*(1+p+...+p^(k-1)), the freshman's dream and uniqueness of bounded signed base-p digits give CT(f_i^N)=CT(f_i^m)^k modulo p. Hence the first q power sums of the component m-th moments vanish exactly; Newton identities force every component moment to vanish. Consequently, for every finite abelian F, the coefficient-of-the-identity kernel in K[Z^r times F] is Mathieu--Zhao. Character orthogonality expresses every scale-compatible finite carry class and coordinate-reversal packet as such a finite trace. Duistermaat--van der Kallen then forces support loss or a free Laurent separator in every active origin-containing component. The proof is characteristic zero and uses Chebotarev only for infinitely many completely split good primes.",
+      "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
+      "dependencies": [
+        "GVC2TTD",
+        "external: Duistermaat--van der Kallen constant-term theorem for Laurent polynomials",
+        "external: Chebotarev density theorem",
+        "external: finite-type specialization over integral domains",
+        "external: Newton identities"
+      ],
+      "checker": "scripts/verify_binary_gvc_torsion_torus_digit_separation.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:01a79a6b512e4c70c231f22700cc1deaead50d59f937be451f734086ce5828aa",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-GVC2-RP"
+      ],
+      "consumers": [
+        "GVC2WTD"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "GVC2WTD",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Weighted finite-trace classification and affine carry obstruction",
+      "scope": "Let w_1,...,w_q lie in a characteristic-zero field and let f_1,...,f_q be Laurent polynomials in finitely many free variables. If sum_i w_i*CT(f_i^N)=0 for every N>=1, then sum_i w_i*product_j CT(f_i^(m_j))=0 for every finite positive tuple (m_j). This follows by using arbitrary unequal base-p digits at completely split primes and bounded signed-digit uniqueness. Partition the components by equality of their complete constant-term moment sequences. Multivariate interpolation on finitely many moment coordinates then shows that the weights in every nonzero moment-equivalence class sum to zero; conversely this condition is sufficient. Equal weights recover GVC2FTS, but affine character weights can cancel nonzero isoperiodic components. Explicitly, z+z^(-1) and z^2+z^(-2) have identical pure constant-term rows, while multiplication by z^(-1) distinguishes every odd row. Thus the coefficient kernel at a fixed nonidentity torsion class is not Mathieu--Zhao. A separate exact factorial warning uses C=y^2+4*x*y+2*x^2: L(C)=10, but at p=11 and N=12 one has v_11(L(C^12))=3 and L(C^12)/11^2=0 mod 11, whereas naive Laurent repeated-digit factorization predicts the nonzero residue L(C)^2=1. Hence finite Laurent trace separation cannot be applied to a Hall/carry shell until a common radial factorial and a scale-compatible class pi(p,q)=N*c have actually been exposed.",
+      "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
+      "dependencies": [
+        "GVC2FTS",
+        "external: finite-point multivariate interpolation"
+      ],
+      "checker": "scripts/verify_binary_gvc_weighted_trace_obstruction.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b3d4437a2ef41edf1887b81f46f73635dca166577d3117ee26f6c8901e462fab",
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "GVC2ALL",
+        "OP-GVC2-RP"
+      ],
+      "consumers": [
+        "GVC2ALL"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "GVC2ALL",
+      "kind": "open_problem",
+      "state": "open",
+      "title": "Scale-compatible Hall/carry promotion for unrestricted binary GVC",
+      "scope": "Unrestricted GVC(2) would follow from the following exact promotion statement. At every Hall--jet descent stage, a tied initial shell which does not already lose support or have a separator must expose, for every scale N, a nonempty packet with one common radial factorial whose normalized rows are a fixed finite union of complete radial rows and congruence fibers pi_nu(p,q)=N*c_nu; the finite groups, labels, classes, and packet must be independent of N and of the good prime used for exposure, and pure vanishing must make the normalized packet sum zero in characteristic zero at every scale. Under this hypothesis, character orthogonality gives a finite equal-weight trace, GVC2FTS splits it, and Duistermaat--van der Kallen supplies support loss or a Laurent separator; the already proved terminal packet results then finish the descent. The current Hall--jet score theorem controls one prime and one order ell*d but leaves affine low-digit insertions over generally unbalanced high-digit quotients. GVC2WTD proves that fixed affine residues can cancel precisely through nonzero isoperiodic character clusters, and gives both an all-order affine trace counterexample and a factorial repeated-digit obstruction. Generic translation supplies a sharper route: a relative character twist flat on every Taylor edge is a scalar--torus phase and hence scale-compatible, while a nonflat twist has a minimal collinear-triple or unit-square curvature witness. The missing translation-curvature lemma must expose that witness, after differentiating the all-order period identity, with the same high-digit quotient; the existing augmented Bessel/beta atom determinant would then terminate it. Exact C2 sign-twist enumeration through degree 12 and depth 2d+4 finds no unexplained collision after scalar, torus, and reversal reduction. Complete C2 searches on the (2,2) and (3,2) binomial Taylor rectangles likewise find none through depths 12 and 14 after two-torus, reversal, and coordinate-exchange reduction. These computations are only bounded evidence. The remaining task is therefore to prove scale-compatible promotion, prove translation-curvature rigidity or otherwise make every surviving rank-one Cartesian isoperiodic cluster Hall-terminal, or lift such a cluster to a genuine GVC(2) counterexample. No unrestricted GVC(2) theorem or counterexample is currently claimed.",
+      "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
+      "dependencies": [
+        "GVCSS",
+        "GVC2UFT",
+        "GVC2O33",
+        "GVC2FCG",
+        "GVC2GSD",
+        "GVC2QG",
+        "GVC2WR",
+        "GVC2ERU",
+        "GVC2FTS",
+        "GVC2WTD",
+        "GVC2F5S"
+      ],
+      "checker": null,
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "OP-GVC2-RP",
+        "OP-GVC3-LIFT"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "GVC2F5S",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact five-channel scalar closure and return-matrix census",
+      "scope": "Normalize the two-endpoint operator to A(X,Y)=X^r-(r!/s!)Y^s and the polynomial coefficients at (r,0),(0,s) to one. For each of (r,s)=(1,2),(1,3),(1,4),(2,3), exact rational Groebner saturation enumerates every support with at most three additional nonzero polynomial channels that can contribute through moment four. The order-four balance boxes contain respectively 13,288, 41,728, 95,368, and 253,576 supports when all added-channel counts from zero through three are included. The first saturated unit occurs at M_2 for respectively 13,082, 41,299, 94,636, and 252,442 supports; at M_3 for 173, 394, 679, and 1,074; and at M_4 for the remaining 33, 35, 53, and 60. Thus none of the 403,960 support ideals survives, and only 181 require a genuine fourth-moment pivot. Canonicalizing the complete order-two-through-four balanced-selection rows under endpoint exchange and all permutations of the three added channels collapses those 181 supports to exactly 14 return-matrix types, with realization counts 32,23,17,17,17,14,14,12,8,8,6,6,4,3; all 14 already occur for (1,2). Points outside the balance box cannot contribute through order four. Hence every normalized two-endpoint scalar pair for these four cusp orders and at most five polynomial channels has some nonzero scalar moment among M_1,...,M_4. The 14-type statement is a census on these four cusps, not yet a rational-realizability proof for arbitrary endpoint orders. The result is a finite-moment scalar-contraction computation, not a proof for three operator endpoints, the full polynomial pure-premise identities, or unrestricted GVC(2).",
+      "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
+      "dependencies": [
+        "GVC2UFT"
+      ],
+      "checker": "scripts/search_binary_gvc_five_channel_descent.py",
+      "proof_type": "reproduction",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:071d9ceb52a07f51e2477b569797766815b9d995d54d13470f66d9826b17b44b",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-GVC2-RP"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
     },
     {
       "id": "GVC2NHO",
@@ -11064,11 +11709,148 @@
       "priority": "derived"
     },
     {
+      "id": "GVC3TAG",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Coordinate-only SIC detector and minimal tagged GVC(3) lift obstruction",
+      "scope": "Let F be the bidegree-(4,4) two-pair counterexample SIC2C4. For every m>=1, E_2(z_2*F^m)=((4m+2)!*m!/(2m+1)!!)*z_1, so the witness already has a multiplier depending only on coordinate variables; its obstruction to GVC is separability, not the multiplier class. For a separated three-variable degree-tagged lift, put Lambda=partial_t partial_z+B(partial_t,partial_y) and P=z*L(t,y)+C(t,y), with L linear and B,C homogeneous binary cubics. The z-degree and binary total-degree inequalities force equal channel counts and give Lambda^m(P^m)=sum_(k=0)^m binom(m,k)^2*(m-k)!*partial_t^(m-k)*B^k(L^(m-k)C^k). On the literal Long tag L=t-y and C=t^2(t-y), let B=a0*partial_t^3+a1*partial_t^2 partial_y+a2*partial_t partial_y^2+a3*partial_y^3. Exact rational Groebner bases for pure moments one through four are nonunit, while adjoining moment five gives the unit ideal. Hence the complete binary cubic operator jet in this minimal tagged architecture cannot satisfy the GVC pure premise. The all-order coordinate-only identity and channel formula are written proofs; the terminal minimal-tag exclusion is an exact characteristic-zero computation.",
+      "canonical_source": "extended-geometry/THREE_VARIABLE_GVC_TAGGED_LIFT.md",
+      "dependencies": [
+        "SIC2C4",
+        "DVG3",
+        "external: exact rational Groebner bases via SymPy"
+      ],
+      "checker": "scripts/research_three_variable_gvc_tagged_lift.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e686b67ad58668c1c868af02421eb2dba92ec83da7e58a0954a1468e38f2ed8d",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-GVC3-LIFT"
+      ],
+      "consumers": [
+        "OP-GVC3-LIFT",
+        "README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "GVC3CH",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Weighted three-channel GVC(3) compression obstructions",
+      "scope": "On the positive weighted-quartic plane 2*nu_z+nu_t+nu_y=4, ordinary degrees two, three, and four form a power-compatible three-channel GVC(3) architecture. The four Dvorsky--Long polynomial exponents have linear span three, so their parallelogram lattice admits three-variable monomial compression. There are exactly 28 rank-three parallelograms on this plane and 56 oriented normalizations. Exact rational Groebner bases make 54 unit at pure moment three and the remaining orbit unit at moment four; on that orbit moment two forces d*e=-2 and moment four is then nonzero. Adding the middle monomial z*t*y gives the persistent pure radical (d*e,h^2+4), but each branch has an all-order mixed cutoff because a fixed multiplier bridges only bounded tag depth. In isotropic coordinates, the complete quartic polynomial repair for Lambda=partial_z partial_L partial_M has moment-eight radical (a2,a3,a4), again terminal by a linear M-degree deficit. Activating the sparse quadratic and quartic operator endpoints gives moment-ten radical (A,G,B*F), whose branches have the same all-order cutoff. The complete odd-quartic operator/polynomial jet has moment-six radical (A,S,R*U)=(A,S,R) intersect (A,S,U); both components have explicit all-order mixed cutoffs. In particular, its degree-two operator endpoint is nilpotent in the prefix scheme and vanishes at every field-valued pure-zero point. These results close every four-term weighted Dvorsky compression, the three displayed minimal repairs, and the complete odd-quartic jet, not the simultaneous complete even-and-odd quartic total space or GVC(3).",
+      "canonical_source": "extended-geometry/THREE_VARIABLE_GVC_TAGGED_LIFT.md",
+      "dependencies": [
+        "DVG1",
+        "GVC3TAG",
+        "external: exact rational Groebner bases via SymPy"
+      ],
+      "checker": "scripts/research_three_channel_gvc_lift.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9811f655258c8aac2a5b1c6ea88c758399ec83c329bd8eda575ce4c18424ce9c",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-GVC3-LIFT"
+      ],
+      "consumers": [
+        "OP-GVC3-LIFT",
+        "README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "GVC3TAGX",
+      "kind": "example",
+      "state": "partial",
+      "title": "Rank-five ancilla and complete-profile tagged GVC(3) searches",
+      "scope": "Three exact bounded searches test wider lifts of the two-pair and three-pair Image-Mathieu witnesses. First, decompose the rank-five SIC2C4 coefficient matrix by rows, give both operator and polynomial channels auxiliary exponents 4,3,2,1,0, leave all channel scalars free, and normalize a0=b0=1. Over GF(101), all coefficients of pure contractions through moment four have unit Groebner basis, so this canonical full-support ancilla chart is empty. Second, in the tagged formula of GVC3TAG take L=t-y and C=(t-y)(t^2+q1*t*y+q2*y^2), with the complete binary cubic B. Over GF(101), the normalized moment fiber has dimension one through moment five and is empty after moment six. Third, among 200 deterministic exact fibers C=t^3+c1*t^2*y+c2*t*y^2+c3*y^3 over GF(101), 198 first become empty at moment five and the remaining two at moment six; none survives through six. These are exact statements over the declared finite field and samples, not characteristic-zero eliminations, global profile classifications, or a GVC(3) counterexample.",
+      "canonical_source": "extended-geometry/THREE_VARIABLE_GVC_TAGGED_LIFT.md",
+      "dependencies": [
+        "GVC3TAG",
+        "SIC2C4",
+        "DVG3"
+      ],
+      "checker": "scripts/research_three_variable_gvc_tagged_lift.py",
+      "proof_type": "exact_modular",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e686b67ad58668c1c868af02421eb2dba92ec83da7e58a0954a1468e38f2ed8d",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "OP-GVC3-LIFT"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "OP-GVC3-LIFT",
+      "kind": "open_problem",
+      "state": "open",
+      "title": "Three-variable GVC counterexample and tagged-channel lift",
+      "scope": "Unrestricted constant-coefficient GVC is false in five variables by DVG1, while GVC2ALL remains open at scale-compatible Hall/carry promotion. A three-variable counterexample would lower the known failing dimension, but would be known dimension-minimal only after the binary problem is closed. SIC2C4 has a coordinate-only multiplier but tensor rank five. GVC3TAG derives an exact power-compatible two-channel formula and closes the literal Long tag at moment five. GVC3CH studies the first coupled order/degree-(2,3,4) continuation on the positive weighted-quartic plane: it closes all 56 oriented rank-three Dvorsky parallelogram compressions by moment four, proves the persistent five-term radical terminal, closes the complete polynomial-quartic repair at moment eight, closes a sparse activated-endpoint model at moment ten, and closes the complete odd-quartic jet at moment six with radical (A,S,R*U) and all-order mixed cutoffs. GVC3TAGX supplies separate bounded modular evidence. The remaining targets are the simultaneous complete even-and-odd quartic total space, a characteristic-zero elimination for the full cubic profile, z-dependent higher symbol pieces, and non-row purifications of the rank-five tensor. No GVC(3) counterexample or proof of GVC(3) is claimed.",
+      "canonical_source": "extended-geometry/THREE_VARIABLE_GVC_TAGGED_LIFT.md",
+      "dependencies": [
+        "DVG1",
+        "DVG3",
+        "SIC2C4",
+        "GVC3TAG",
+        "GVC3CH",
+        "GVC3TAGX",
+        "GVC2ALL"
+      ],
+      "checker": null,
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "OP-GVC2-RP",
       "kind": "open_problem",
       "state": "open",
-      "title": "Two-variable GVC representation and rank-efficient Laplacian polarization",
-      "scope": "For a homogeneous operator Lambda=A(partial), the separable form f=A(zeta)P(z) is rank one and its contractions are Lambda^m(P^m) and Lambda^m(QP^m). GVCSS proves that every homogeneous binary operator satisfies GVC for arbitrary P, including deg(P)>ord(Lambda), by retaining z in the translated Laurent polynomial and using one generic-support Newton separator. GVC2NHO treats general nonhomogeneous Lambda when deg(P) is at most its lowest positive order, arbitrary degree in the factor-unit class Lambda=Lambda_0 Gamma, every binary operator with nonzero linear part by formal drift straightening, every binary operator through polynomial degree four, and every quadratic-leading operator through polynomial degree five; it also excludes separated multiplicative conversions of SIC2C4. GVC2D5F closes all cubic-leading quintic forms and the squarefree quartic row. GVC2D5Q4, GVC2D5Q31, and GVC2D5Q2 close every repeated-root quartic row, so GVC2D5U proves binary GVC through polynomial degree five. GVC2D6R5 closes the complete quintic-leading sextic row, with GVC2D6Q5 retaining the stronger first-six-moment theorem on its quintuple-root component. GVC2D6R4 and GVC2D6R3 close the quartic- and cubic-leading sextic rows. GVC2D6R2 closes both quadratic root partitions: its pure-sixth-power endpoint branches through the radical (r,q,A,B*z) and terminates on common-threshold coordinate-deficit faces. Hence GVC2D6U proves binary GVC through polynomial degree six. GVC2UFT now removes degree-specific root-partition enumeration from the all-degree leading locus and proves that every unequal-weight common-threshold face is automatically terminal by a prime-dilated Newton-endpoint argument. The unresolved termination step is precisely the coupled-convolution case at depth floor(rho*m), where several selection distributions occur with positive limiting frequency and no single common threshold controls them. Thus the next genuinely nonhomogeneous polynomial-degree frontier begins at seven, but another row is useful only as a regression for this convolution alternative. GVC2C3, GVC2C4T, and GVC2C4S remain stronger finite-moment/nullcone certificates. A separate ordinary-Laplacian route seeks an all-order nonlinear polarization of the Dvorsky symbol into a nondegenerate quadratic operator. DVG4 excludes the canonical one-pair completion at the second pure moment. No unrestricted GVC(2), successful quadraticization, or improved Laplacian endpoint is currently proved.",
+      "title": "Binary GVC theorem and rank-efficient Laplacian polarization",
+      "scope": "For a homogeneous operator Lambda=A(partial), the separable form f=A(zeta)P(z) is rank one and its contractions are Lambda^m(P^m) and Lambda^m(QP^m). GVCSS proves the homogeneous binary case. The degree-five and degree-six programs, GVC2UFT, GVC2F5S, GVC2O33, GVC2FCG, GVC2GSD, GVC2QG, GVC2WR, and GVC2ERU successively reduce the genuinely nonhomogeneous case to factorial-compatible Hall/carry inheritance among finitely many equal-radial trace components. GVC2TTD gives the regular trace model. GVC2FTS uses repeated equal base-p digits at completely split primes to separate every scale-compatible finite trace, and GVC2WTD classifies affine weighted traces by isoperiodic moment classes. The unresolved binary step GVC2ALL is to promote every proportional-depth Hall shell to a fixed scale-compatible trace, prove translation-curvature rigidity for every surviving rank-one Cartesian isoperiodic cluster, or obtain a GVC(2) counterexample. Flat relative Taylor twists are already scalar--torus phases and hence scale-compatible; the missing nonflat case is common-quotient exposure of its minimal collinear-triple or unit-square curvature atom. Exact C2 sign-twist enumeration through degree 12 and depth 2d+4, together with complete (2,2) and (3,2) rectangular searches through depths 12 and 14, is bounded evidence only. The proved degree-bounded inputs are GVC2D5F, GVC2D5Q4, GVC2D5Q31, GVC2D5Q2, GVC2D5U, GVC2D6Q5, GVC2D6R2, GVC2D6R3, GVC2D6R4, GVC2D6R5, and GVC2D6U. Degree seven remains a regression target. A separate open route is ordinary-Laplacian compression: replace the third-order Dvorsky operator by a quadratic constant-coefficient operator with few auxiliaries. DVG4 excludes the canonical one-pair completion at the second pure moment. No successful quadraticization or improved ordinary-Laplacian counterexample endpoint is currently proved.",
       "canonical_source": "extended-geometry/TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md",
       "dependencies": [
         "DVG1",
@@ -11081,6 +11863,16 @@
         "GVC2C4S",
         "GVCSS",
         "GVC2UFT",
+        "GVC2O33",
+        "GVC2F5S",
+        "GVC2QG",
+        "GVC2WR",
+        "GVC2ERU",
+        "GVC2RUT",
+        "GVC2TTD",
+        "GVC2FTS",
+        "GVC2WTD",
+        "GVC2ALL",
         "GVC2NHO",
         "GVC2D5F",
         "GVC2D5Q4",

@@ -1355,6 +1355,172 @@ and disappears after the localization \(u=s_0^{-1}\ne0\).  Consequently:
 This closes the whole one-parameter slice, not the unspecialized
 \(Q\)-residual component.
 
+The residual continuation must use
+\[
+ \ell=s_1u-t_1,\qquad t_1=s_1u-\ell.                  \tag{5.12ag}
+\]
+An earlier exploratory driver instead substituted \(t_1=u(s_1-\ell)\);
+that formula is valid only when its displayed \(\ell\) is reinterpreted
+as the ratio \(\lambda=\ell/u\).  The corrected exact closed-fibre
+calculations at
+\[
+ (s_1,\ell,u)=(5,7,2),\ (7,4,3),\ (11,9,5)           \tag{5.12ah}
+\]
+all give an irreducible degree-five specialization of \(R_{20}\), verify
+that the dense pivot coefficient is a unit, annihilate both \(\mu _3\)
+and the leading border, and produce a length-four
+\((\mu _4,\mu _5)\)-algebra.  In all three cases adjoining
+\(\mu _6,\mu _7\) gives the unit ideal.  These exact computations show
+that the common-zero incidence does not dominate the residual base, so
+its possible image is contained in a proper Fitting-closed exceptional
+locus.  They do not show that this exceptional locus is empty.
+
+There is now a bounded black-box realization of the remaining Fitting
+problem.  At a closed base point it forms the full rank-twenty algebra
+over the ground field, constructs the multiplication matrices
+\(M_{\mu _6},M_{\mu _7}\), and recovers all twenty-one coefficients of
+\[
+ \det(M_{\mu _6}+zM_{\mu _7}).                        \tag{5.12ai}
+\]
+At \((5,7,2)\) modulo \(43\), the pivot, border, and \(\mu _3\) checks
+pass, the joint block matrix has rank \(20\), and every coefficient in
+(5.12ai) is nonzero; the standard-basis and matrix part takes less than
+one tenth of a second.  This is a modular oracle for interpolation, not
+a characteristic-zero component exclusion.
+
+There is also an exact projective explanation for the length drop from
+six to four.  Put \(h\) for the fibre homogenizing variable.  The
+highest fibre-degree parts factor as
+\[
+\begin{aligned}
+ \mu _4^{\rm top}
+   &=c_4u(6s_1us_5-s_6)
+     (1092\ell s_5+930s_1us_5-155s_6),\\
+ \mu _5^{\rm top}
+   &=c_5(6s_1us_5-s_6)
+     (180s_1^2u^2s_5^2-60s_1us_5s_6
+       +196u^2s_5^2+5s_6^2),
+\end{aligned}                                             \tag{5.12aj}
+\]
+with \(c_4,c_5\ne0\).  The resultant of the two remaining factors on
+the infinity line is
+\[
+ 980(6084\ell^2+4805u^2)=980J_Q.             \tag{5.12ak}
+\]
+Moreover, if \(D\) denotes the residual border factor, exact symbolic
+calculation gives
+\[
+ \operatorname{border}|_Q=c\,u^{10}J_Q^2D^2,\qquad
+ \det(\text{two tangent rows at }[6s_1u:1:0])
+   =c'u^5D.                                    \tag{5.12al}
+\]
+Consequently, on the actual residual open \(uJ_Q\ne0,D=0\), the
+projective \((\mu _4,\mu _5)\)-intersection has one forced double point
+at infinity,
+\[
+ [s_6:s_5:h]=[6s_1u:1:0],                     \tag{5.12am}
+\]
+and a residual affine scheme of length four.  The exact closed probe at
+\((5,7,2)\) verifies coprimality of the full homogenizations, total
+intersection number \(2\cdot3=6\), and infinity length two.  This is the
+complete-intersection geometry behind (5.12ai), not merely a pattern in
+the three closed fibres.
+
+This structure supplies two smaller elimination formulations.  First,
+the ordinary ternary resultant
+\[
+ \operatorname{Res}_{\mathbb P^2}
+ \bigl(\mu _4^h,\mu _5^h,h\mu _6^h+z\mu _7^h\bigr)          \tag{5.12an}
+\]
+has a forced \(z^2\) infinity factor on \(R_{20}\); its quotient is the
+degree-four pencil over the residual quintic whose norm is (5.12ai).
+This is the residual-resultant situation studied by
+[Busé--Elkadi--Mourrain](https://doi.org/10.1016/S0022-4049(00)00144-4),
+while the explicit-factor analysis of iterated eliminations in
+[Busé--Mourrain](https://arxiv.org/abs/cs/0612050) explains how to
+separate the infinity/projection factors.  Second, division by the
+quadratic \(\mu _4\) makes each of \(\mu _5,\mu _6,\mu _7\) linear in
+\(s_6\).  At the exact closed probe their bidegrees in
+\((s_6,s_5)\) are respectively
+\[
+ (1,3),\qquad(1,3),\qquad(1,4),               \tag{5.12ao}
+\]
+and these three remainders together with \(\mu _4\) generate the unit
+ideal.  Thus one may eliminate \(s_6\) explicitly and replace the
+rank-twenty pencil by univariate equations in \(s_5\) of degrees at most
+\(6,5,6\), with the separate exceptional case \(A_5=B_5=0\).  This is
+the next exact route; it has substantially smaller subresultant matrices
+than either generic Gröbner basis attempted below.
+
+The order of these two eliminations matters computationally.  If the dense
+pivot \(s_3=-B/(6A)\) is substituted first, even the modular
+\(\mu _5\)-remainder takes about \(212\) seconds and has coefficients with
+up to \(624\,000\) terms.  Pseudo-dividing by \(\mu _4\) first leaves,
+modulo \(43\), only \(25,29,41\) monomials in the raw linear remainders of
+\(\mu _5,\mu _6,\mu _7\), with largest coefficient supports
+\(433,714,1130\).  Forming
+\[
+\begin{aligned}
+ E_4&=aQ_5^2-f_1P_5Q_5+f_0P_5^2,\\
+ E_6&=P_5Q_6-P_6Q_5,\qquad
+ E_7=P_5Q_7-P_7Q_5
+\end{aligned}                                             \tag{5.12ap}
+\]
+before the pivot takes less than two seconds.  Their
+\((\deg_{s_5},\deg_{s_3},\text{terms})\) profiles are
+\[
+ E_4:(5,12,46),\qquad E_6:(5,10,40),\qquad
+ E_7:(6,12,48).                                           \tag{5.12aq}
+\]
+The coefficient content of each is a unit modulo \(43\).  These are exact
+finite-field identities over
+\(\mathbb F_{43}(s_1,\lambda,v)[T]/(R_{20})\), not a
+characteristic-zero exclusion.
+
+By contrast, explicitly substituting the pivot into \(E_6\) does not
+finish within the recorded \(180\)-second bound, although it stays below
+\(300\) MB.  The bounded formulation is therefore the four-equation
+system
+\[
+ 6A s_3+B=E_4=E_6=E_7=0                                  \tag{5.12ar}
+\]
+in \((s_5,s_3)\), together with the exceptional ideal
+\((P_5,Q_5)\), rather than the expanded univariate coefficients.  A
+residual resultant or Bezoutian/Macaulay matrix can consume (5.12ar)
+without expanding the linear pivot.  This is also compatible with the
+trace-matrix construction of
+[Janovitz-Freireich--Mourrain--Rónyai--Szántó](https://arxiv.org/abs/0901.2778),
+which gives Macaulay/Bezoutian formulations for finite projective roots
+and discusses components at infinity.
+
+The batched pencil oracle also quantifies why dense three-variable
+interpolation is not attractive.  Modulo \(1009\), 499 of the first 500
+points on the \(s_1\)-line \((\ell,u)=(7,2)\) are good, and rational
+reconstruction from 400 points validates on all 99 held-out points.  A
+representative coefficient has numerator/denominator degrees \(209/91\)
+in \(s_1\); transverse full-field scans give \(420/212\) in \(\ell\),
+and \(270/100\) in \(v=u^2\) on the natural \(\lambda=0\) chart.  These
+are modular degree scouts, not characteristic-zero bounds, but a dense
+box at those degrees would contain tens of millions of monomials.  The
+univariate-remainder construction (5.12ao), rather than dense
+interpolation of (5.12ai), is therefore the bounded continuation.
+
+The two remaining direct symbolic implementations have also been
+localized as resource dead ends.  Function-field standard-basis
+computations fail in coefficient normalization under the recorded
+memory caps.  In the corrected ratio chart
+\(\lambda=(s_1u-t_1)/u,\ v=u^2\), sparse FLINT arithmetic computes
+\(R_{20}\), the dense pivot, and all four input moments quickly, and
+substitutes the pivot into \(\mu _4,\mu _5\) modulo \(43\) in about
+thirty seconds.  The subsequent unspecialized triangular-basis step
+still exceeds four minutes under a \(3\)-GB cap and was stopped.
+Equations (5.12ap)--(5.12ar) remove that memory bottleneck: all three
+pre-pivot remainders and all three raw elimination equations are formed
+in about five seconds and below \(300\) MB.  The remaining viable routes
+are the projective resultant (5.12an) and a resultant/subresultant
+calculation on the compact system (5.12ar), followed by recursion only
+on their explicit exceptional factors.
+
 The remaining rows of (5.12z)--(5.12ab) are exact finite-field
 calculations and sampled incidence checks, not characteristic-zero
 factorizations or component exclusions.  Even on the exact

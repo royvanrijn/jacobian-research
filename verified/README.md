@@ -62,6 +62,10 @@ This directory contains the stable proof chain:
   nonprojective Tschirnhaus change preserves the root algebra but changes
   the intrinsic quadratic-gauge Fitting fingerprint.  The split witness
   `r_i=i`, `u_i=i+i^2` is separated in every rank by one symbolic formula.
+  The accompanying all-rank stabilizer theorem exposes the universal
+  discriminant intruder `P^2*B^N*C` and proves that arbitrary identity
+  stabilization cannot move a physical marked target of any fixed clean
+  map for `N>=5`.
   The image of the clean fixed-algebra marked locus in unmarked stable-map
   moduli has geometric dimension `N-4`; this is not the dimension of a
   literal marked receiver fibre, and no total global moduli-fibre dimension
@@ -73,11 +77,45 @@ This directory contains the stable proof chain:
   root-scaling locus.  Every remaining marked nonprojective lift is reduced
   to a target-orbit problem for the stable self-equivalence group of one
   fixed quintic map.
+- [Fixed-quintic stable target stabilizer](RANK_FIVE_STABLE_TARGET_STABILIZER.md):
+  proves that the standard marked target orbit is a point in every degree
+  and after every number of identity stabilizations.  The unstabilized step
+  uses the coordinate-polynomial intruder theorem at `P^2*B^5*C`; Kuroda's
+  stable-invariant theorem applied to conjugated stable translations forces
+  the arbitrary-stabilization descent.  Vertical automorphisms of the
+  identity factors are not classified.  Exact recursive Newton-face pruning
+  eliminates quotient degrees eight through twelve, while an all-degree
+  graded resolution puts every logarithmic generator in degree seven or
+  eight.  Modulo the Koszul submodule, the exact quotient has dimension two,
+  degree 296, and support contained in the singular locus.  That singular
+  locus has exactly four
+  minimal components: prime triple-root and two-double-root curves of
+  degrees 17 and 19 and two lines at infinity.  The positive upper Newton hull is
+  exactly the edge joining `P^12*C^4` and `P^2*B^5*C`.  The first tie in a
+  `P`-zero Koszul ladder fails at target degree fifty, but its degree-55 rung
+  cancels at leading order.  An exact depth-nine recursion excludes the
+  normalized two-generator continuation of that rung.  Those remaining wall
+  calculations concern the full vertical stable group, not the marked
+  orbit.  A separate Newton-stratified certificate gives
+  `chi(H=h)=246`, so the vanishing-`H^2` cylinder shortcut is unavailable
+  but unnecessary.  Directly, the remaining full-group route is the third
+  `P`-zero Koszul coefficient and the four classified
+  singular-support charts.
 - [Clean quadratic-gauge decorated receiver](QUADRATIC_GAUGE_DECORATED_RECEIVER.md):
   constructs the marked quotient mapping to `BS_N` and separates its
   `N-1`-dimensional geometric fibre from the `N-4`-dimensional image in
-  unmarked stable-map moduli.  The receiver span makes precise that the
-  fibre algebra descends while the ambient Fitting decoration does not.
+  unmarked stable-map moduli.  The weight-one coordinate `u_5/u_4` gives a
+  global slice, so the clean quotient receiver is represented by an
+  explicit scheme and has no residual coefficient-scaling inertia.  The
+  receiver span makes precise that the fibre algebra descends while the
+  ambient Fitting decoration does not.
+- [Stable intruder descent and physical inertia](STABLE_INTRUDER_DESCENT_CRITERION.md):
+  packages the arbitrary-stabilization argument into three exact gates:
+  an intruder forces descent to the physical polynomial ring, faithful
+  normalized boundary data forces physical target identity, and a trivial
+  generic deck group forces physical source identity.  It proves trivial
+  pointwise physical inertia modulo vertical stabilization gauge, not a
+  classification of that vertical group or a global stable-map stack.
 - [Keller/Tschirnhaus bridge card in ranks five through seven](KELLER_TSCHIRNHAUS_DESCENT_567.md):
   is the exact low-rank regression for the generic theorem, links the
   canonical all-rank projective and stable-boundary theorems,
@@ -263,7 +301,10 @@ This directory contains the stable proof chain:
 - [Quadratic-gauge stable moduli](QUADRATIC_GAUGE_STABLE_MODULI.md):
   exact stable-orbit classification on the coefficient-torus locus; an
   overlooked independent `P`-scaling makes the quotient dimension `N-4`,
-  rather than `N-3`;
+  rather than `N-3`.  The universal discriminant intruder `P^2*B^N*C`
+  additionally makes the physical marked stabilizer trivial for every
+  clean fixed map with `N>=5`, in arbitrary degree and stabilization
+  dimension;
 - [Quadratic-gauge/cancellation stable intersection](QUADRATIC_CANCELLATION_STABLE_INTERSECTION.md):
   the two families have exactly one common stable class, the foundational
   cubic; the all-degree separation is certified independently by the

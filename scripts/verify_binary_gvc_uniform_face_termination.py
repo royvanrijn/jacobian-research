@@ -286,13 +286,393 @@ def homogeneous_factorial_and_channel_regression() -> None:
     assert blowup_ratio(1, 1) == 2
 
 
+def minimal_bernstein_hall_circuit() -> None:
+    """Verify Theorem 5.2 and Long's forbidden-character warning."""
+
+    def pure_moment(a: int, b: int, c: int, d: int, exponent: int) -> Fraction:
+        # Angular balance forces the two binomial selection counts to agree.
+        return sum(
+            Fraction(
+                comb(exponent, k)
+                * (a * c) ** (exponent - k)
+                * (b * d) ** k,
+                exponent + 1,
+            )
+            for k in range(exponent + 1)
+        )
+
+    samples = [
+        (1, 1, 1, -1),
+        (2, -3, 5, 7),
+        (-4, 1, 3, 2),
+    ]
+    for a, b, c, d in samples:
+        for exponent in range(1, 10):
+            assert pure_moment(a, b, c, d, exponent) == Fraction(
+                (a * c + b * d) ** exponent,
+                exponent + 1,
+            )
+
+    # Long's normalized circuit has ac+bd=0.  Its multiplier Z^{-1}
+    # lies outside the polynomial-multiplier cone and leaves a boundary
+    # term (-1)^(m-1)/(m+1).
+    for exponent in range(1, 15):
+        assert pure_moment(1, 1, 1, -1, exponent) == 0
+        long_mixed = Fraction((-1) ** (exponent - 1), exponent + 1)
+        assert long_mixed
+
+
+def primitive_cusp_parallelogram() -> None:
+    """Verify the exact all-degree obstruction in Theorem 5.3."""
+
+    def central(n: int) -> int:
+        return comb(2 * n, n)
+
+    def trinomial(n: int) -> int:
+        return factorial(3 * n) // factorial(n) ** 3
+
+    def obstruction(r: int, s: int) -> int:
+        # Twice E_{r,s}, avoiding fractions.
+        cr, cs = central(r), central(s)
+        return (
+            2 * (trinomial(r) - trinomial(s))
+            + 9 * (cs - cr) * (cr + cs - 2)
+        )
+
+    assert obstruction(1, 2) == 48
+    assert obstruction(1, 3) == -108
+    assert obstruction(2, 3) == -156
+    for r in range(1, 25):
+        for s in range(1, 25):
+            assert (obstruction(r, s) == 0) == (r == s)
+
+    # Replay (5.22) directly after solving the first two moments.
+    # The coefficient [U^k V^k](1+U+V+tUV)^m is computed sparsely.
+    for r in range(1, 8):
+        for s in range(1, 8):
+            if r == s:
+                continue
+            cr, cs = central(r), central(s)
+            t = Fraction(4, cr + cs - 4)
+            q = Fraction(-factorial(r), factorial(s)) / t
+            polynomial = {
+                (0, 0): Fraction(1),
+                (1, 0): Fraction(1),
+                (0, 1): Fraction(1),
+                (1, 1): t,
+            }
+            moments: list[Fraction] = []
+            for exponent in range(1, 4):
+                diagonal = power(polynomial, exponent)
+                moment = sum(
+                    Fraction(comb(exponent, k))
+                    * q**k
+                    * factorial(r * (exponent - k))
+                    * factorial(s * k)
+                    * diagonal.get((k, k), 0)
+                    for k in range(exponent + 1)
+                )
+                moments.append(moment)
+            assert moments[0] == 0
+            assert moments[1] == 0
+            assert 2 * moments[2] == factorial(r) ** 3 * obstruction(r, s)
+
+    # Sparse affine dilations 1+U+V+t U^p V^q have no off-axis
+    # contribution through moment two unless (p,q)=(1,1).
+    for r in range(1, 12):
+        for s in range(1, 12):
+            for p in range(1, 6):
+                for q_power in range(1, 6):
+                    if (p, q_power) == (1, 1):
+                        continue
+                    t = Fraction(3, 7)
+                    q_operator = Fraction(-factorial(r), factorial(s)) / t
+                    polynomial = {
+                        (0, 0): Fraction(1),
+                        (1, 0): Fraction(1),
+                        (0, 1): Fraction(1),
+                        (p, q_power): t,
+                    }
+                    diagonal = power(polynomial, 2)
+                    second = sum(
+                        Fraction(comb(2, k))
+                        * q_operator**k
+                        * factorial(r * (2 - k))
+                        * factorial(s * k)
+                        * diagonal.get((p * k, q_power * k), 0)
+                        for k in range(3)
+                    )
+                    expected = factorial(r) ** 2 * (
+                        central(r) + central(s) - 4
+                    )
+                    assert second == expected
+                    assert (second == 0) == (r == s == 1)
+
+
+def five_channel_minor_inheritance_warning() -> None:
+    """Verify the exact finite-prefix obstruction in Example 5.5.
+
+    This is not a pure-moment-zero pair: its fourth scalar moment is
+    nonzero.  It shows that vanishing through the first three moments of a
+    five-channel convolution need not descend to any four-channel minor.
+    """
+
+    operator = {
+        (2, 0): Fraction(1),
+        (0, 3): Fraction(-1, 3),
+    }
+    polynomial = {
+        (2, 0): Fraction(1),
+        (0, 3): Fraction(1),
+        (0, 0): Fraction(13, 30),
+        (1, 0): Fraction(11, 2),
+        (1, 3): Fraction(1),
+    }
+    moments = [
+        scalar_moment(operator, polynomial, exponent)
+        for exponent in range(1, 5)
+    ]
+    assert moments == [0, 0, 0, 1_205_760]
+
+    support = tuple(polynomial)
+    for omitted in support:
+        minor = {
+            exponent: coefficient
+            for exponent, coefficient in polynomial.items()
+            if exponent != omitted
+        }
+        minor_moments = [
+            scalar_moment(operator, minor, exponent)
+            for exponent in range(1, 4)
+        ]
+        assert any(minor_moments)
+
+
+def unit_line_half_bridge_pivot() -> None:
+    """Verify Theorem 5.6 and its fourth-moment obstruction."""
+
+    def invariants(n: int) -> tuple[int, int, int]:
+        central = comb(2 * n, n)
+        trinomial = factorial(3 * n) // factorial(n) ** 3
+        quadrinomial = factorial(4 * n) // factorial(n) ** 4
+        return central, trinomial, quadrinomial
+
+    def obstruction(n: int) -> int:
+        central, trinomial, quadrinomial = invariants(n)
+        return (
+            2 * quadrinomial
+            - 40 * central * trinomial
+            + 48 * trinomial
+            + 81 * central**3
+            - 180 * central**2
+            + 132 * central
+            - 48
+        )
+
+    assert obstruction(2) == -480
+    previous_ratio: Fraction | None = None
+    for n in range(4, 31):
+        central, trinomial, quadrinomial = invariants(n)
+        ratio = Fraction(quadrinomial, central * trinomial)
+        assert ratio > 20
+        if previous_ratio is not None:
+            assert ratio > previous_ratio
+        previous_ratio = ratio
+        assert obstruction(n) > 0
+
+    # Replay the normalized half-bridge moments directly.
+    for n in range(2, 15, 2):
+        central, trinomial, _ = invariants(n)
+        u = Fraction(central - 2, 4)
+        v = u * (central - 2) - Fraction(
+            trinomial - 9 * central + 12,
+            18,
+        )
+        assert u and v
+        operator = {
+            (1, 0): Fraction(1),
+            (0, n): Fraction(-1, factorial(n)),
+        }
+        polynomial = {
+            (1, 0): Fraction(1),
+            (0, n): Fraction(1),
+            (0, 0): v,
+            (0, n // 2): u,
+            (1, n // 2): Fraction(1),
+        }
+        moments = [
+            scalar_moment(operator, polynomial, exponent)
+            for exponent in range(1, 5)
+        ]
+        assert moments[:3] == [0, 0, 0]
+        assert moments[3] == Fraction(obstruction(n), 2)
+        assert moments[3]
+
+
+def eight_five_channel_obstructions(limit: int = 30) -> None:
+    """Replay Corollary 5.10 on an exact endpoint-order window."""
+
+    def weights(
+        r: int, s: int
+    ) -> tuple[dict[tuple[int, int], Fraction], dict[int, Fraction]]:
+        operator_ratio = Fraction(-factorial(r), factorial(s))
+        w = {
+            (moment_order, k): Fraction(comb(moment_order, k))
+            * operator_ratio**k
+            * factorial(r * (moment_order - k))
+            * factorial(s * k)
+            for moment_order in range(2, 5)
+            for k in range(moment_order + 1)
+        }
+        endpoint = {
+            moment_order: sum(
+                Fraction(comb(moment_order, k)) * w[moment_order, k]
+                for k in range(moment_order + 1)
+            )
+            for moment_order in range(2, 5)
+        }
+        return w, endpoint
+
+    def quadratic_cubic(
+        w: dict[tuple[int, int], Fraction],
+        endpoint: dict[int, Fraction],
+        q_level: int,
+        cubic_level: int,
+    ) -> Fraction:
+        u = -endpoint[2] / (2 * w[2, q_level])
+        s_q = w[3, q_level] + w[3, q_level + 1]
+        v = -(endpoint[3] + 6 * s_q * u) / (3 * w[3, cubic_level])
+        a_q = (
+            w[4, q_level]
+            + 2 * w[4, q_level + 1]
+            + w[4, q_level + 2]
+        )
+        return (
+            endpoint[4]
+            + 12 * a_q * u
+            + 6 * w[4, 2 * q_level] * u**2
+            + 12 * (w[4, cubic_level] + w[4, cubic_level + 1]) * v
+        )
+
+    def double_quadratic(
+        w: dict[tuple[int, int], Fraction],
+        endpoint: dict[int, Fraction],
+        first_level: int,
+        second_level: int,
+    ) -> tuple[Fraction, Fraction]:
+        a = 2 * w[2, first_level]
+        b = 2 * w[2, second_level]
+        c = 6 * (w[3, first_level] + w[3, first_level + 1])
+        d = 6 * (w[3, second_level] + w[3, second_level + 1])
+        determinant = a * d - b * c
+        assert determinant
+        u = (-endpoint[2] * d + b * endpoint[3]) / determinant
+        v = (-a * endpoint[3] + c * endpoint[2]) / determinant
+        a_first = (
+            w[4, first_level]
+            + 2 * w[4, first_level + 1]
+            + w[4, first_level + 2]
+        )
+        a_second = (
+            w[4, second_level]
+            + 2 * w[4, second_level + 1]
+            + w[4, second_level + 2]
+        )
+        obstruction = (
+            endpoint[4]
+            + 12 * a_first * u
+            + 6 * w[4, 2 * first_level] * u**2
+            + 12 * a_second * v
+            + 6 * w[4, 2 * second_level] * v**2
+            + 12 * w[4, first_level + second_level] * u * v
+        )
+        return determinant, obstruction
+
+    quadratic_cubic_types = (
+        (0, 0),
+        (0, 1),
+        (0, 2),
+        (0, 3),
+        (1, 0),
+        (1, 1),
+    )
+    double_quadratic_types = ((0, 1), (0, 2))
+    for r in range(1, limit + 1):
+        for s in range(1, limit + 1):
+            if r == s:
+                continue
+            w, endpoint = weights(r, s)
+            for q_level, cubic_level in quadratic_cubic_types:
+                assert quadratic_cubic(
+                    w,
+                    endpoint,
+                    q_level,
+                    cubic_level,
+                )
+            for first_level, second_level in double_quadratic_types:
+                determinant, obstruction = double_quadratic(
+                    w,
+                    endpoint,
+                    first_level,
+                    second_level,
+                )
+                assert determinant
+                assert obstruction
+
+    w_12, endpoint_12 = weights(1, 2)
+    assert quadratic_cubic(w_12, endpoint_12, 1, 1) == -240
+
+
+def opposite_three_by_three_packet(limit: int = 20) -> None:
+    """Check the exact central-binomial dichotomy in Theorem 7.5."""
+
+    central = lambda n: comb(2 * n, n)
+    for degree in range(3, limit + 1):
+        for first in range(1, degree - 1):
+            for second in range(1, degree - first):
+                third = degree - first - second
+                profile_product = (
+                    central(first) * central(second) * central(third)
+                )
+                assert central(degree) > profile_product
+                for endpoint_order in range(1, limit + 1):
+                    ratio = Fraction(
+                        central(degree * endpoint_order),
+                        central(degree) * profile_product,
+                    )
+                    if endpoint_order == 1:
+                        assert ratio == Fraction(1, profile_product)
+                        assert ratio <= Fraction(1, 8)
+                    else:
+                        assert ratio > 1
+
+
+def radial_digit_spectrum(limit: int = 100) -> None:
+    """Check the unordered-pair rigidity in Lemma 7.4 bis."""
+
+    for total in range(limit + 1):
+        products: dict[int, tuple[int, int]] = {}
+        for first in range(total // 2 + 1):
+            second = total - first
+            product = factorial(first) * factorial(second)
+            assert product not in products
+            products[product] = (first, second)
+
+
 def main() -> None:
     hall_regression()
     valuation_regression()
     prime_endpoint_example()
     translated_multiradial_identity()
     homogeneous_factorial_and_channel_regression()
-    print("PASS: uniform Hall, weighted-face, and beta-channel regressions")
+    minimal_bernstein_hall_circuit()
+    primitive_cusp_parallelogram()
+    five_channel_minor_inheritance_warning()
+    unit_line_half_bridge_pivot()
+    eight_five_channel_obstructions()
+    radial_digit_spectrum()
+    opposite_three_by_three_packet()
+    print("PASS: uniform Hall, weighted-face, and beta-Hall circuit regressions")
 
 
 if __name__ == "__main__":

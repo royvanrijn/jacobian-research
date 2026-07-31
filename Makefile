@@ -98,6 +98,9 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: verify-all-rank-collision-projective-descent
 .PHONY: verify-generic-tschirnhaus-non-descent
 .PHONY: verify-rank-five-tschirnhaus-transition-locus
+.PHONY: verify-rank-five-stable-target-stabilizer
+.PHONY: verify-rank-five-logarithmic-module
+.PHONY: verify-rank-five-singular-support
 .PHONY: verify-rank-four-nonprojective-keller-lift
 .PHONY: verify-rank-four-degree-eighteen-target-obstruction
 .PHONY: verify-keller-ritt-product
@@ -142,6 +145,17 @@ verify-generic-tschirnhaus-non-descent:
 
 verify-rank-five-tschirnhaus-transition-locus:
 	$(PYTHON) scripts/verify_rank_five_tschirnhaus_transition_locus.py
+
+verify-rank-five-stable-target-stabilizer:
+	$(PYTHON) scripts/verify_rank_five_stable_target_stabilizer.py
+
+verify-rank-five-logarithmic-module:
+	$(PYTHON) scripts/verify_rank_five_stable_target_stabilizer.py --module-resolution
+
+verify-rank-five-singular-support:
+	$(PYTHON) scripts/verify_rank_five_stable_target_stabilizer.py --research-triple-root-prime
+	$(PYTHON) scripts/verify_rank_five_stable_target_stabilizer.py --research-two-double-root-prime
+	$(PYTHON) scripts/verify_rank_five_stable_target_stabilizer.py --research-singular-boundary
 
 verify-rank-four-nonprojective-keller-lift:
 	$(PYTHON) scripts/verify_rank_four_nonprojective_keller_lift.py
@@ -857,3 +871,19 @@ verify-logged:
 	mkdir -p artifacts/verification
 	$(PYTHON) scripts/record_environment.py | tee artifacts/verification/environment.txt
 	set -o pipefail; $(MAKE) verify 2>&1 | tee artifacts/verification/verify.log
+
+# Heavy, restartable certificate material is deliberately local-only.  The
+# compact manifests in artifacts/generated-results/ remain the pinned inputs
+# to independent verification.
+LOCAL_CERTIFICATE_CACHE ?= artifacts/local
+
+generate-rank-two-divergence-local:
+	mkdir -p $(LOCAL_CERTIFICATE_CACHE)
+	$(PYTHON) scripts/research_two_pair_sic_bidegree33_rank_two_relative_divergence.py --mode interior --mapped-quotient --steps 20 --checkpoint-output $(LOCAL_CERTIFICATE_CACHE)/two_pair_sic_bidegree33_rank_two_interior_divergence_checkpoint_m38.poly --certificate-output $(LOCAL_CERTIFICATE_CACHE)/two_pair_sic_bidegree33_rank_two_interior_divergence_certificate_m58_m38.sing --output $(LOCAL_CERTIFICATE_CACHE)/two_pair_sic_bidegree33_rank_two_interior_divergence_research.json
+	$(PYTHON) scripts/research_two_pair_sic_bidegree33_rank_two_relative_divergence.py --mode interior --mapped-quotient --checkpoint-input $(LOCAL_CERTIFICATE_CACHE)/two_pair_sic_bidegree33_rank_two_interior_divergence_checkpoint_m38.poly --steps 20 --checkpoint-output $(LOCAL_CERTIFICATE_CACHE)/two_pair_sic_bidegree33_rank_two_interior_divergence_checkpoint_m18.poly --certificate-output $(LOCAL_CERTIFICATE_CACHE)/two_pair_sic_bidegree33_rank_two_interior_divergence_certificate_m38_m18.sing --output $(LOCAL_CERTIFICATE_CACHE)/two_pair_sic_bidegree33_rank_two_interior_divergence_research_m38_m19.json
+	$(PYTHON) scripts/research_two_pair_sic_bidegree33_rank_two_relative_divergence.py --mode interior --mapped-quotient --checkpoint-input $(LOCAL_CERTIFICATE_CACHE)/two_pair_sic_bidegree33_rank_two_interior_divergence_checkpoint_m18.poly --steps 18 --checkpoint-output $(LOCAL_CERTIFICATE_CACHE)/two_pair_sic_bidegree33_rank_two_interior_divergence_checkpoint_m0.poly --certificate-output $(LOCAL_CERTIFICATE_CACHE)/two_pair_sic_bidegree33_rank_two_interior_divergence_certificate_m18_m0.sing --output $(LOCAL_CERTIFICATE_CACHE)/two_pair_sic_bidegree33_rank_two_interior_divergence_research_m18_m1.json
+	$(PYTHON) scripts/research_two_pair_sic_bidegree33_rank_two_terminal_syzygy_block.py --output $(LOCAL_CERTIFICATE_CACHE)/two_pair_sic_bidegree33_rank_two_terminal_syzygy_block_research.json --R-output $(LOCAL_CERTIFICATE_CACHE)/two_pair_sic_bidegree33_rank_two_terminal_syzygy_R.sing
+
+generate-rank-two-char0-leading-local:
+	mkdir -p $(LOCAL_CERTIFICATE_CACHE)
+	$(PYTHON) scripts/research_two_pair_sic_bidegree33_rank_two_relative_divergence.py --operator artifacts/generated-results/two_pair_sic_bidegree33_rank_two_ore_characteristic_zero_lift.json --mode interior --mapped-quotient --steps 1 --timeout 900 --checkpoint-output $(LOCAL_CERTIFICATE_CACHE)/two_pair_sic_bidegree33_rank_two_char0_interior_divergence_checkpoint_m57.poly --certificate-output $(LOCAL_CERTIFICATE_CACHE)/two_pair_sic_bidegree33_rank_two_char0_interior_divergence_certificate_m58_m57.sing --output $(LOCAL_CERTIFICATE_CACHE)/two_pair_sic_bidegree33_rank_two_char0_interior_divergence_research_m58_m57.json

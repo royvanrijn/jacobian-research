@@ -186,6 +186,229 @@ for degree in range(5, 17):
     assert gcd(*maximal_minors) == 1
 
 
+# The residual receiver action is globally split, not merely faithful.
+# On the seed torus lambda=u5/u4 has weight one.  The characters
+#
+#   lambda, q4=u4/lambda^5, qj=uj/lambda^(j+1) (j>=6)
+#
+# form a unimodular coordinate basis.  Hence lambda=1 is a global slice.
+for degree in range(5, 17):
+    seed_count = degree - 3
+    residual_weights = sp.Matrix(
+        [[index + 1 for index in range(4, degree + 1)]]
+    )
+    split_characters = sp.zeros(seed_count, seed_count)
+    # lambda=u5/u4
+    split_characters[0, 0] = -1
+    split_characters[0, 1] = 1
+    # q4=u4/lambda^5
+    split_characters[1, 0] = 6
+    split_characters[1, 1] = -5
+    # qj=uj/lambda^(j+1), j>=6
+    for index in range(6, degree + 1):
+        row = index - 4
+        split_characters[row, 0] = index + 1
+        split_characters[row, 1] = -(index + 1)
+        split_characters[row, index - 4] = 1
+
+    assert abs(int(split_characters.det())) == 1
+    transformed_weights = residual_weights * split_characters.T
+    assert transformed_weights == sp.Matrix(
+        [[1] + [0] * (seed_count - 1)]
+    )
+
+
+# Exact marked-fibre descent under the residual action, and the invariant
+# target coordinates on the global lambda=1 slice.
+receiver_S, receiver_pi, receiver_b, receiver_c = sp.symbols(
+    "receiver_S receiver_pi receiver_b receiver_c"
+)
+receiver_u4, receiver_u5, receiver_u6 = sp.symbols(
+    "receiver_u4 receiver_u5 receiver_u6",
+    nonzero=True,
+)
+receiver_polynomial = (
+    receiver_S
+    + receiver_b * receiver_S**2
+    + receiver_pi * receiver_S**3
+    + receiver_u4 * receiver_pi**4 * receiver_S**4
+    + receiver_u5 * receiver_pi**5 * receiver_S**5
+    + receiver_u6 * receiver_pi**6 * receiver_S**6
+    - receiver_c / 2
+)
+receiver_transformed = receiver_polynomial.subs(
+    {
+        receiver_u4: alpha**5 * receiver_u4,
+        receiver_u5: alpha**6 * receiver_u5,
+        receiver_u6: alpha**7 * receiver_u6,
+        receiver_pi: alpha**-2 * receiver_pi,
+        receiver_b: alpha**-1 * receiver_b,
+        receiver_c: alpha * receiver_c,
+    },
+    simultaneous=True,
+)
+assert sp.factor(
+    receiver_transformed
+    - alpha * receiver_polynomial.subs(receiver_S, receiver_S / alpha)
+) == 0
+
+receiver_lambda = receiver_u5 / receiver_u4
+assert sp.factor(
+    receiver_lambda.subs(
+        {
+            receiver_u4: alpha**5 * receiver_u4,
+            receiver_u5: alpha**6 * receiver_u5,
+        },
+        simultaneous=True,
+    )
+    - alpha * receiver_lambda
+) == 0
+receiver_action = {
+    receiver_u4: alpha**5 * receiver_u4,
+    receiver_u5: alpha**6 * receiver_u5,
+    receiver_pi: alpha**-2 * receiver_pi,
+    receiver_b: alpha**-1 * receiver_b,
+    receiver_c: alpha * receiver_c,
+}
+for receiver_invariant in (
+    receiver_lambda**2 * receiver_pi,
+    receiver_lambda * receiver_b,
+    receiver_c / receiver_lambda,
+    receiver_u4 / receiver_lambda**5,
+):
+    assert sp.factor(
+        receiver_invariant.subs(receiver_action, simultaneous=True)
+        - receiver_invariant
+    ) == 0
+
+
+# Universal discriminant intruder.  For a degree-N polynomial, every
+# discriminant coefficient monomial prod(a_i^e_i) satisfies
+#
+#   sum(e_i)=2N-2,  sum(i*e_i)=N(N-1).
+#
+# After a_0=-C/2, a_1=1, a_2=-B/2, a_3=P, and
+# a_j=u_j*P^j, division by the exact P-order N^2-3N-2 gives
+#
+#   p=2N+2-2b-e_1-2e_3 <= 2N+2-2b-e_1,
+#   N*c+(N-2)*b+(N-1)*e_1 <= N(N-1).
+#
+# The relaxed constraints on the right make D_N=(2,N,1) the unique
+# maximizer of the positive weight w_N=(1,N+1,N), so the exact support does
+# too.  The exceptional relaxed possibility b=N+1 has (p,c)=(0,0) and lies
+# one weight unit below D_N.
+for degree in range(4, 129):
+    reduced_p_order = degree**2 - 3 * degree - 2
+    assert reduced_p_order >= 2
+    intruder = (2, degree, 1)
+    intruder_weight = (1, degree + 1, degree)
+    intruder_degree = sum(
+        exponent * weight
+        for exponent, weight in zip(
+            intruder,
+            intruder_weight,
+            strict=True,
+        )
+    )
+    assert intruder_degree == degree**2 + 2 * degree + 2
+
+    equality_cases = []
+    for exponent_a1 in range(2 * degree + 3):
+        for exponent_b in range(degree + 2):
+            maximum_exponent_p = (
+                2 * degree + 2 - 2 * exponent_b - exponent_a1
+            )
+            if maximum_exponent_p < 0:
+                continue
+            remaining_weight = (
+                degree * (degree - 1)
+                - (degree - 2) * exponent_b
+                - (degree - 1) * exponent_a1
+            )
+            if remaining_weight < 0:
+                continue
+            maximum_c = remaining_weight // degree
+            for exponent_c in range(maximum_c + 1):
+                monomial_degree = (
+                    maximum_exponent_p
+                    + (degree + 1) * exponent_b
+                    + degree * exponent_c
+                )
+                assert monomial_degree <= intruder_degree
+                if monomial_degree == intruder_degree:
+                    equality_cases.append(
+                        (
+                            maximum_exponent_p,
+                            exponent_b,
+                            exponent_c,
+                            exponent_a1,
+                        )
+                    )
+    assert equality_cases == [(2, degree, 1, 0)]
+
+
+# Exact discriminant regressions verify that the universal term D_N is
+# present and that no specialization artefact enters the support in the
+# first five ranks.  Its coefficient is nonzero in every rank by the
+# standard trinomial discriminant term
+#   +-4*(N-2)^(N-2)*a_N^(N-3)*a_2^N*a_0.
+S, boundary_P, boundary_B, boundary_C = sp.symbols("S P B C")
+seed_values = (2, 3, 5, 7, 11)
+for degree in range(4, 9):
+    inverse_polynomial = (
+        S
+        - boundary_B * S**2 / 2
+        + boundary_P * S**3
+        - boundary_C / 2
+        + sum(
+            seed_values[index - 4]
+            * boundary_P**index
+            * S**index
+            for index in range(4, degree + 1)
+        )
+    )
+    discriminant_polynomial = sp.Poly(
+        sp.discriminant(inverse_polynomial, S),
+        boundary_P,
+        boundary_B,
+        boundary_C,
+        domain=sp.QQ,
+    )
+    minimum_p_order = min(
+        monomial[0]
+        for monomial, _coefficient in discriminant_polynomial.terms()
+    )
+    assert minimum_p_order == degree**2 - 3 * degree - 2
+    reduced_discriminant = sp.Poly(
+        discriminant_polynomial.as_expr()
+        / boundary_P**minimum_p_order,
+        boundary_P,
+        boundary_B,
+        boundary_C,
+        domain=sp.QQ,
+    )
+    intruder = (2, degree, 1)
+    weight = (1, degree + 1, degree)
+    assert reduced_discriminant.coeff_monomial(intruder) != 0
+    intruder_degree = sum(
+        exponent * weight
+        for exponent, weight in zip(intruder, weight, strict=True)
+    )
+    assert [
+        monomial
+        for monomial, _coefficient in reduced_discriminant.terms()
+        if sum(
+            exponent * local_weight
+            for exponent, local_weight in zip(
+                monomial,
+                weight,
+                strict=True,
+            )
+        )
+        == intruder_degree
+    ] == [intruder]
+
+
 print("PASS: the independent (alpha,beta) source-target scaling is exact")
 print("PASS: a2 is removed by the target shear B -> B-2*a2*P")
 print("PASS: the intrinsic Fitting polynomial recovers a3,...,aN")
@@ -193,3 +416,7 @@ print("PASS: Fitting support orders the two toric punctures")
 print("PASS: Fitting support removes P^m twists")
 print("PASS: the stable coefficient-torus quotient has dimension N-4")
 print("PASS: I5,J6,...,JN are saturated compiler-slice quotient coordinates")
+print("PASS: lambda=u5/u4 gives a global weight-one receiver slice")
+print("PASS: the finite-etale fibre descends under the residual action")
+print("PASS: D_N=(2,N,1) is the universal exposed discriminant intruder")
+print("PASS: ranks four through eight reproduce the all-rank Newton bound")
