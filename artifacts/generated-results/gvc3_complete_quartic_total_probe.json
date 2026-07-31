@@ -1,0 +1,246 @@
+{
+  "cases": [
+    {
+      "a_replacement_terms": 5,
+      "chart": "r2",
+      "coverage": "D(r2)/Gm",
+      "cutoff": 6,
+      "generation_seconds": 0.22719124700000037,
+      "input_sha256": "c5fb90fe9b82bc948b99feac6ed306c4a9945890d7c1ed8d5e667abd87f71247",
+      "invert": [],
+      "prime": 101,
+      "singular_seconds": 1500.541946829,
+      "status": "timeout",
+      "stderr": "",
+      "stdout_tail": "",
+      "term_counts": [
+        39,
+        194,
+        807,
+        2695,
+        7984
+      ],
+      "values": {
+        "r2": 1
+      },
+      "variables": [
+        "u0",
+        "u1",
+        "u2",
+        "u3",
+        "u4",
+        "r0",
+        "r1",
+        "r3",
+        "r4"
+      ]
+    },
+    {
+      "a_replacement_terms": 5,
+      "chart": "r2",
+      "coverage": "D(r2)/Gm",
+      "cutoff": 7,
+      "generation_seconds": 0.705940751000071,
+      "input_sha256": "c3a2d583de3e4e2498de8ba6c8f42d8c180a54d6157452583009bbeecbc4c0c2",
+      "invert": [],
+      "prime": 101,
+      "singular_seconds": 1500.539358004,
+      "status": "timeout",
+      "stderr": "",
+      "stdout_tail": "",
+      "term_counts": [
+        39,
+        194,
+        807,
+        2695,
+        7984,
+        20605
+      ],
+      "values": {
+        "r2": 1
+      },
+      "variables": [
+        "u0",
+        "u1",
+        "u2",
+        "u3",
+        "u4",
+        "r0",
+        "r1",
+        "r3",
+        "r4"
+      ]
+    },
+    {
+      "a_replacement_terms": 5,
+      "chart": "r2",
+      "coverage": "D(r2)/Gm",
+      "cutoff": 6,
+      "generation_seconds": 0.21799176800004716,
+      "input_sha256": "938c697c15e9856b75a6cd75ad5bb8db0a7c5b257d4d39e5f159e2b46ce29eb0",
+      "invert": [],
+      "prime": 103,
+      "singular_seconds": 1500.4649546279998,
+      "status": "timeout",
+      "stderr": "",
+      "stdout_tail": "",
+      "term_counts": [
+        39,
+        194,
+        810,
+        2699,
+        7956
+      ],
+      "values": {
+        "r2": 1
+      },
+      "variables": [
+        "u0",
+        "u1",
+        "u2",
+        "u3",
+        "u4",
+        "r0",
+        "r1",
+        "r3",
+        "r4"
+      ]
+    },
+    {
+      "a_replacement_terms": 5,
+      "chart": "r2",
+      "coverage": "D(r2)/Gm",
+      "cutoff": 7,
+      "generation_seconds": 0.7055709260002914,
+      "input_sha256": "404b0b705de85e2481cec3fead5ece9a2e4e39f34fa062de059017533d081e42",
+      "invert": [],
+      "prime": 103,
+      "singular_seconds": 1500.5095781229993,
+      "status": "timeout",
+      "stderr": "",
+      "stdout_tail": "",
+      "term_counts": [
+        39,
+        194,
+        810,
+        2699,
+        7956,
+        20636
+      ],
+      "values": {
+        "r2": 1
+      },
+      "variables": [
+        "u0",
+        "u1",
+        "u2",
+        "u3",
+        "u4",
+        "r0",
+        "r1",
+        "r3",
+        "r4"
+      ]
+    },
+    {
+      "a_replacement_terms": 5,
+      "chart": "r2",
+      "coverage": "D(r2)/Gm",
+      "cutoff": 6,
+      "generation_seconds": 0.22045260599952599,
+      "input_sha256": "42375bd0517113a7bf69f2be1031b61157cc72ee953140f3a6d0b0e503d56e48",
+      "invert": [],
+      "prime": 107,
+      "singular_seconds": 1500.487713732,
+      "status": "timeout",
+      "stderr": "",
+      "stdout_tail": "",
+      "term_counts": [
+        39,
+        194,
+        814,
+        2699,
+        7985
+      ],
+      "values": {
+        "r2": 1
+      },
+      "variables": [
+        "u0",
+        "u1",
+        "u2",
+        "u3",
+        "u4",
+        "r0",
+        "r1",
+        "r3",
+        "r4"
+      ]
+    },
+    {
+      "a_replacement_terms": 5,
+      "chart": "r2",
+      "coverage": "D(r2)/Gm",
+      "cutoff": 7,
+      "generation_seconds": 0.69704259899936,
+      "input_sha256": "579cd6517a1d8184ad8f134221661523655b531fd2ad06a0efa526525d068a81",
+      "invert": [],
+      "prime": 107,
+      "singular_seconds": 1500.5598502500006,
+      "status": "timeout",
+      "stderr": "",
+      "stdout_tail": "",
+      "term_counts": [
+        39,
+        194,
+        814,
+        2699,
+        7985,
+        20597
+      ],
+      "values": {
+        "r2": 1
+      },
+      "variables": [
+        "u0",
+        "u1",
+        "u2",
+        "u3",
+        "u4",
+        "r0",
+        "r1",
+        "r3",
+        "r4"
+      ]
+    }
+  ],
+  "cutoffs": [
+    6,
+    7
+  ],
+  "format": "gvc3-complete-quartic-total-probe-v1",
+  "model": {
+    "grading": "2z+L+M=4",
+    "operator": "dz*dL*dM+a*dz^2+sum u_i*dL^(4-i)*dM^i",
+    "polynomial": "z*L^2+z^2+sum r_i*L^(4-i)*M^i",
+    "support_target": "(a,r2,r3,r4,u0*r0,u0*r1,u1*r1)"
+  },
+  "primes": [
+    101,
+    103,
+    107
+  ],
+  "status": "exact modular research computation; not a characteristic-zero theorem",
+  "summary": {
+    "6": {
+      "nonunit": 0,
+      "timeout": 3,
+      "unit": 0
+    },
+    "7": {
+      "nonunit": 0,
+      "timeout": 3,
+      "unit": 0
+    }
+  }
+}
