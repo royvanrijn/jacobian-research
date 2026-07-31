@@ -273,6 +273,17 @@ measurement.  Generic finite-field elimination, native saturation, and
 the reduced branches below exceeded the recorded memory limits; those
 failures have no mathematical force.
 
+On the tertiary open inside \(P_1=0,\ P_2\ne0\), eliminating \(a_2\)
+and then \(a_3\) reveals exact powers \(P_2^2,P_2^3,P_2^3,P_2^4\) in
+the cleared moments \(\mu_4,\ldots,\mu_7\), respectively.  Cancelling
+them leaves \(4\,493,11\,332,17\,566,40\,418\) terms over
+\(\mathbb F_{1\,073\,741\,827}\).  Even this four-parameter square
+system produced no basis under either `msolve`'s exact-sparse or
+probabilistic-sparse kernel with a 5 GB address-space limit; the native
+saturation kernel also terminated without a basis.  These figures record
+the current computational ceiling only.  In particular, they are neither
+a finite-field exclusion nor evidence that the branch is nonempty.
+
 The surviving pieces of this one channel chart are now explicit:
 
 1. \(P_1\ne0\), where \(\mu_2\) eliminates \(a_3\);
