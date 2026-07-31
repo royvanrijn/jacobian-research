@@ -4001,13 +4001,149 @@ environment, the generic projective CRT run is
 
 ```bash
 timeout 900 julia --project=/tmp/sic33-mct-env \
-  scripts/research_two_pair_sic_bidegree33_rank_two_picard_fuchs.jl crt 1
+  scripts/research_two_pair_sic_bidegree33_rank_two_picard_fuchs.jl \
+  crt 1 original
 ```
 
-The reference run reached the 900-second cap without an operator.  This is
-a research benchmark, not a failed mathematical certificate.  The next
-engine should retain the known toric \(14+2+2\) quotient rather than
-homogenizing into the package's generic projective representation.
+The original-coordinate reference run reached the 900-second cap without an
+operator.  The exact beta compression \(x=u, y=ut/(1-t)\) instead gives the
+sixteen-term form
+
+\[
+ \frac{x+y}{(x+y)^3-z\Phi(x,y)}.
+\]
+
+The compact closed-cycle calculation finishes in roughly eight minutes and
+peaks near 2 GB:
+
+```bash
+timeout 900 julia --project=/tmp/sic33-mct-env \
+  scripts/research_two_pair_sic_bidegree33_rank_two_picard_fuchs.jl \
+  crt 1 compact \
+  artifacts/local/two_pair_sic_bidegree33_rank_two_compact_picard_fuchs.ore
+```
+
+It returns a differential order-eight closed-cycle operator.  The interval
+period has a different inhomogeneous order-eight relation.  Generate 100 exact
+modular images of that relation, the reference-prime structural comparison,
+and its resumable local cache with
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_compact_relative_picard_fuchs.py \
+  --prime-count 100 --prime-start 1000000 --jobs 4
+```
+
+From an empty cache this takes about six minutes on the reference machine.
+It proves at \(p=1000003\) that the differential residual has degree 55,
+converts its tail to an order-64, \(m\)-degree-eight shift operator \(R\), and
+checks the exact modular factorization \(R=Q_{50}G_{14}\).  Reconstruct the
+characteristic-zero differential operator from 95 images with five holdouts:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_simultaneous_reconstruct.py \
+  --kind compact --prime-count 100 --holdout-count 5 \
+  --dimensions 8 12 16 24 32 --offsets 8 \
+  --output \
+    artifacts/generated-results/two_pair_sic_bidegree33_rank_two_compact_relative_pf_characteristic_zero_lift.json
+```
+
+The exact bridge verifier replays all 100 images, exact rational forcing and
+moment rows, 50 exact initial \(G_{14}\)-identities, positivity of the quotient
+forward denominator, and the rational shift-Ore identity
+\(R=Q_{50}G_{14}\):
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_rank_two_compact_relative_pf_lift.py
+```
+
+The exact Ore division takes about eight minutes but stays below 150 MB.  Use
+`--skip-exact-ore-division` for the two-second reconstruction, moment, and
+forward-coefficient checks only.
+
+The compact modular all-order certificate is generated in two divergence
+chunks and one terminal solve:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_relative_divergence.py \
+  --operator \
+    artifacts/generated-results/two_pair_sic_bidegree33_rank_two_compact_relative_pf_research.json \
+  --mode interior --mapped-quotient --steps 1 --timeout 600 \
+  --checkpoint-output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_checkpoint_m7.json \
+  --certificate-output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_certificate_m8_m7.sing \
+  --output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_divergence_m8_m7.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_relative_divergence.py \
+  --operator \
+    artifacts/generated-results/two_pair_sic_bidegree33_rank_two_compact_relative_pf_research.json \
+  --mode interior --mapped-quotient \
+  --checkpoint-input \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_checkpoint_m7.json \
+  --steps 7 --timeout 900 \
+  --checkpoint-output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_checkpoint_m0.json \
+  --certificate-output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_certificate_m7_m0.sing \
+  --output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_divergence_m7_m1.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_terminal_syzygy_block.py \
+  --operator \
+    artifacts/generated-results/two_pair_sic_bidegree33_rank_two_compact_relative_pf_research.json \
+  --certificate \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_certificate_m7_m0.sing \
+  --terminal \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_checkpoint_m0.poly \
+  --output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_terminal_syzygy_research.json \
+  --R-output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_shift_mod1000003_terminal_syzygy_R.sing
+```
+
+The independent combined replay is
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_rank_two_compact_relative_modular_all_order.py
+```
+
+It verifies all eight coefficient identities, the 132615-term terminal
+Koszul correction, and the zero endpoint trace, proving \(R\nu=0\) for every
+\(m\geq0\) over \(\mathbb F_{1000003}\).  The compact characteristic-zero
+operator and its exact factorization are proved, but its divergence and
+endpoint identities remain open.  A first expanded rational descent level
+reached 900 seconds and 8.6 GB; ordinary top-pole Griffiths reduction leaves
+an 18-term remainder, so the next engine must use extended relative reduction
+or reconstruct the eight modular certificate levels.
+
+For the two-prime support scout, generate a second operator artifact with
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_compact_relative_picard_fuchs.py \
+  --prime-count 1 --prime-start 1000003 --jobs 1 \
+  --output \
+    artifacts/local/two_pair_sic_bidegree33_rank_two_compact_relative_pf_research_mod1000033.json
+```
+
+Repeat the two divergence commands and the terminal block solve above with
+that operator, replacing `mod1000003` by `mod1000033` in every local output.
+Then compare the exact Laurent supports with
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_compact_certificate_support.py
+```
+
+All \(Y_r\) supports, five of eight \(X_r\) supports, and the terminal support
+agree; the other three \(X_r\) supports differ by one monomial each.  This is
+an exact two-prime feasibility scout, not a rational reconstruction.
 
 The exact border-basis calculation on the generic factor pencil is
 replayed by

@@ -1,0 +1,217 @@
+{
+  "format": "two-pair-sic-bidegree33-rank-two-compact-relative-certificate-support-research-v1",
+  "status": "exact two-prime support comparison; a reconstruction feasibility scout, not a characteristic-zero certificate",
+  "point": 0,
+  "primes": [
+    1000003,
+    1000033
+  ],
+  "coefficient_polynomials": [
+    {
+      "certificate_degree": 7,
+      "polynomial": "X7",
+      "term_counts": [
+        97748,
+        97748
+      ],
+      "union_term_count": 97748,
+      "intersection_term_count": 97748,
+      "symmetric_difference_term_count": 0,
+      "supports_identical": true
+    },
+    {
+      "certificate_degree": 7,
+      "polynomial": "Y7",
+      "term_counts": [
+        97945,
+        97945
+      ],
+      "union_term_count": 97945,
+      "intersection_term_count": 97945,
+      "symmetric_difference_term_count": 0,
+      "supports_identical": true
+    },
+    {
+      "certificate_degree": 6,
+      "polynomial": "X6",
+      "term_counts": [
+        102608,
+        102608
+      ],
+      "union_term_count": 102608,
+      "intersection_term_count": 102608,
+      "symmetric_difference_term_count": 0,
+      "supports_identical": true
+    },
+    {
+      "certificate_degree": 6,
+      "polynomial": "Y6",
+      "term_counts": [
+        102810,
+        102810
+      ],
+      "union_term_count": 102810,
+      "intersection_term_count": 102810,
+      "symmetric_difference_term_count": 0,
+      "supports_identical": true
+    },
+    {
+      "certificate_degree": 5,
+      "polynomial": "X5",
+      "term_counts": [
+        107809,
+        107809
+      ],
+      "union_term_count": 107809,
+      "intersection_term_count": 107809,
+      "symmetric_difference_term_count": 0,
+      "supports_identical": true
+    },
+    {
+      "certificate_degree": 5,
+      "polynomial": "Y5",
+      "term_counts": [
+        108017,
+        108017
+      ],
+      "union_term_count": 108017,
+      "intersection_term_count": 108017,
+      "symmetric_difference_term_count": 0,
+      "supports_identical": true
+    },
+    {
+      "certificate_degree": 4,
+      "polynomial": "X4",
+      "term_counts": [
+        112944,
+        112943
+      ],
+      "union_term_count": 112944,
+      "intersection_term_count": 112943,
+      "symmetric_difference_term_count": 1,
+      "supports_identical": false
+    },
+    {
+      "certificate_degree": 4,
+      "polynomial": "Y4",
+      "term_counts": [
+        113157,
+        113157
+      ],
+      "union_term_count": 113157,
+      "intersection_term_count": 113157,
+      "symmetric_difference_term_count": 0,
+      "supports_identical": true
+    },
+    {
+      "certificate_degree": 3,
+      "polynomial": "X3",
+      "term_counts": [
+        118429,
+        118428
+      ],
+      "union_term_count": 118429,
+      "intersection_term_count": 118428,
+      "symmetric_difference_term_count": 1,
+      "supports_identical": false
+    },
+    {
+      "certificate_degree": 3,
+      "polynomial": "Y3",
+      "term_counts": [
+        118648,
+        118648
+      ],
+      "union_term_count": 118648,
+      "intersection_term_count": 118648,
+      "symmetric_difference_term_count": 0,
+      "supports_identical": true
+    },
+    {
+      "certificate_degree": 2,
+      "polynomial": "X2",
+      "term_counts": [
+        123839,
+        123839
+      ],
+      "union_term_count": 123839,
+      "intersection_term_count": 123839,
+      "symmetric_difference_term_count": 0,
+      "supports_identical": true
+    },
+    {
+      "certificate_degree": 2,
+      "polynomial": "Y2",
+      "term_counts": [
+        124063,
+        124063
+      ],
+      "union_term_count": 124063,
+      "intersection_term_count": 124063,
+      "symmetric_difference_term_count": 0,
+      "supports_identical": true
+    },
+    {
+      "certificate_degree": 1,
+      "polynomial": "X1",
+      "term_counts": [
+        129608,
+        129608
+      ],
+      "union_term_count": 129608,
+      "intersection_term_count": 129608,
+      "symmetric_difference_term_count": 0,
+      "supports_identical": true
+    },
+    {
+      "certificate_degree": 1,
+      "polynomial": "Y1",
+      "term_counts": [
+        129838,
+        129838
+      ],
+      "union_term_count": 129838,
+      "intersection_term_count": 129838,
+      "symmetric_difference_term_count": 0,
+      "supports_identical": true
+    },
+    {
+      "certificate_degree": 0,
+      "polynomial": "X0",
+      "term_counts": [
+        135293,
+        135292
+      ],
+      "union_term_count": 135293,
+      "intersection_term_count": 135292,
+      "symmetric_difference_term_count": 1,
+      "supports_identical": false
+    },
+    {
+      "certificate_degree": 0,
+      "polynomial": "Y0",
+      "term_counts": [
+        135528,
+        135528
+      ],
+      "union_term_count": 135528,
+      "intersection_term_count": 135528,
+      "symmetric_difference_term_count": 0,
+      "supports_identical": true
+    }
+  ],
+  "coefficient_supports_identical": false,
+  "coefficient_total_symmetric_difference": 3,
+  "terminal_syzygy": {
+    "polynomial": "R",
+    "term_counts": [
+      132615,
+      132615
+    ],
+    "union_term_count": 132615,
+    "intersection_term_count": 132615,
+    "symmetric_difference_term_count": 0,
+    "supports_identical": true
+  },
+  "interpretation": "All eight Y supports, five of eight X supports, and the terminal R support are identical. The remaining three X supports differ by one monomial each, consistent with an isolated coefficient vanishing modulo one prime. A union-support CRT reconstruction is therefore a concrete next experiment, but more primes are required."
+}

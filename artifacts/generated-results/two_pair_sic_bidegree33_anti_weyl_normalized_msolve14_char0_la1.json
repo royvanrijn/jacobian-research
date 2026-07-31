@@ -1,0 +1,254 @@
+{
+  "calculation": "two_pair_sic_bidegree33_anti_weyl",
+  "generation_seconds": 14.39824,
+  "msolve": {
+    "result_head": "",
+    "result_tail": "",
+    "returncode": -11,
+    "scope": "exact characteristic zero",
+    "seconds": 77.826225,
+    "status": "failed",
+    "stderr_tail": "\n--------------- INPUT DATA ---------------\n#variables                       6\n#equations                       7\n#invalid equations               0\nfield characteristic             0\nhomogeneous input?               0\nsignature-based computation      0\nmonomial order                 DRL\nbasis hash table resetting     OFF\nlinear algebra option            1\ninitial hash table size     131072 (2^17)\nmax pair selection             ALL\nreduce gb                        1\n#threads                         1\ninfo level                       1\ngenerate pbm files               0\n------------------------------------------\n",
+    "stdout_tail": ""
+  },
+  "odd_moments_identically_zero": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+  ],
+  "parameterization": "normalized",
+  "profiles": {
+    "mu1": {
+      "content": "0",
+      "maximum_coefficient_bits": 0,
+      "seconds": 6.8e-05,
+      "terms": 0,
+      "total_degree": -1,
+      "variable_degrees": {
+        "s0": -1,
+        "s1": -1,
+        "s2": -1,
+        "s3": -1,
+        "t0": -1,
+        "t1": -1
+      }
+    },
+    "mu10": {
+      "content": "143497531697135616000000",
+      "maximum_coefficient_bits": 41,
+      "seconds": 0.542786,
+      "terms": 1902,
+      "total_degree": 10,
+      "variable_degrees": {
+        "s0": 10,
+        "s1": 10,
+        "s2": 10,
+        "s3": 10,
+        "t0": 10,
+        "t1": 10
+      }
+    },
+    "mu11": {
+      "content": "0",
+      "maximum_coefficient_bits": 0,
+      "seconds": 0.897273,
+      "terms": 0,
+      "total_degree": -1,
+      "variable_degrees": {
+        "s0": -1,
+        "s1": -1,
+        "s2": -1,
+        "s3": -1,
+        "t0": -1,
+        "t1": -1
+      }
+    },
+    "mu12": {
+      "content": "4080491219418734068236288000000",
+      "maximum_coefficient_bits": 49,
+      "seconds": 1.836541,
+      "terms": 4467,
+      "total_degree": 12,
+      "variable_degrees": {
+        "s0": 12,
+        "s1": 12,
+        "s2": 12,
+        "s3": 12,
+        "t0": 12,
+        "t1": 12
+      }
+    },
+    "mu13": {
+      "content": "0",
+      "maximum_coefficient_bits": 0,
+      "seconds": 3.652124,
+      "terms": 0,
+      "total_degree": -1,
+      "variable_degrees": {
+        "s0": -1,
+        "s1": -1,
+        "s2": -1,
+        "s3": -1,
+        "t0": -1,
+        "t1": -1
+      }
+    },
+    "mu14": {
+      "content": "154084897913309807894935036231680000000",
+      "maximum_coefficient_bits": 58,
+      "seconds": 7.181787,
+      "terms": 9380,
+      "total_degree": 14,
+      "variable_degrees": {
+        "s0": 14,
+        "s1": 14,
+        "s2": 14,
+        "s3": 14,
+        "t0": 14,
+        "t1": 14
+      }
+    },
+    "mu2": {
+      "content": "24",
+      "maximum_coefficient_bits": 7,
+      "seconds": 0.000147,
+      "terms": 7,
+      "total_degree": 2,
+      "variable_degrees": {
+        "s0": 2,
+        "s1": 2,
+        "s2": 2,
+        "s3": 2,
+        "t0": 2,
+        "t1": 2
+      }
+    },
+    "mu3": {
+      "content": "0",
+      "maximum_coefficient_bits": 0,
+      "seconds": 0.000376,
+      "terms": 0,
+      "total_degree": -1,
+      "variable_degrees": {
+        "s0": -1,
+        "s1": -1,
+        "s2": -1,
+        "s3": -1,
+        "t0": -1,
+        "t1": -1
+      }
+    },
+    "mu4": {
+      "content": "207360",
+      "maximum_coefficient_bits": 15,
+      "seconds": 0.001317,
+      "terms": 50,
+      "total_degree": 4,
+      "variable_degrees": {
+        "s0": 4,
+        "s1": 4,
+        "s2": 4,
+        "s3": 4,
+        "t0": 4,
+        "t1": 4
+      }
+    },
+    "mu5": {
+      "content": "0",
+      "maximum_coefficient_bits": 0,
+      "seconds": 0.003792,
+      "terms": 0,
+      "total_degree": -1,
+      "variable_degrees": {
+        "s0": -1,
+        "s1": -1,
+        "s2": -1,
+        "s3": -1,
+        "t0": -1,
+        "t1": -1
+      }
+    },
+    "mu6": {
+      "content": "62705664000",
+      "maximum_coefficient_bits": 22,
+      "seconds": 0.010695,
+      "terms": 215,
+      "total_degree": 6,
+      "variable_degrees": {
+        "s0": 6,
+        "s1": 6,
+        "s2": 6,
+        "s3": 6,
+        "t0": 6,
+        "t1": 6
+      }
+    },
+    "mu7": {
+      "content": "0",
+      "maximum_coefficient_bits": 0,
+      "seconds": 0.028748,
+      "terms": 0,
+      "total_degree": -1,
+      "variable_degrees": {
+        "s0": -1,
+        "s1": -1,
+        "s2": -1,
+        "s3": -1,
+        "t0": -1,
+        "t1": -1
+      }
+    },
+    "mu8": {
+      "content": "162232093900800000",
+      "maximum_coefficient_bits": 30,
+      "seconds": 0.071104,
+      "terms": 707,
+      "total_degree": 8,
+      "variable_degrees": {
+        "s0": 8,
+        "s1": 8,
+        "s2": 8,
+        "s3": 8,
+        "t0": 8,
+        "t1": 8
+      }
+    },
+    "mu9": {
+      "content": "0",
+      "maximum_coefficient_bits": 0,
+      "seconds": 0.170892,
+      "terms": 0,
+      "total_degree": -1,
+      "variable_degrees": {
+        "s0": -1,
+        "s1": -1,
+        "s2": -1,
+        "s3": -1,
+        "t0": -1,
+        "t1": -1
+      }
+    }
+  },
+  "seconds": 92.243092,
+  "status": "research",
+  "substitution": {
+    "s4": "-s2",
+    "s5": "s1",
+    "s6": "-s0",
+    "t2": "0",
+    "t3": "t1",
+    "t4": "-t0"
+  },
+  "variables": [
+    "s0",
+    "s1",
+    "s2",
+    "s3",
+    "t0",
+    "t1"
+  ]
+}

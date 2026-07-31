@@ -101,6 +101,47 @@ path below are treated as reference artifacts.
   This closes the operator reconstruction and leading descent only; the
   remaining 57 descent levels, terminal syzygy, and endpoint identities
   are not an all-order characteristic-zero theorem.
+- `two_pair_sic_bidegree33_rank_two_compact_relative_pf_research.json` and
+  `two_pair_sic_bidegree33_rank_two_compact_relative_modular_all_order_certificate.json`
+  record the compact relative route at the same fixed fiber.  The exact beta
+  substitution \(x=u, y=ut/(1-t)\) reduces the generating denominator to a
+  sixteen-term polynomial of total degree six.  At \(p=1000003\), the unique
+  tested differential order-eight, degree-72 relation has forcing degree 55
+  and converts to an order-64, \(m\)-degree-eight shift operator.  The
+  independent replay checks all eight divergence identities, a 132615-term
+  terminal Koszul correction, and zero endpoint trace, proving the compact
+  recurrence for every \(m\geq0\) over that field.  The manifest SHA-256 is
+  `1de989bba40b76e03cecc4f1c283a14e8170fe9aa1e5c39e85aa6960efb588bd`.
+  Generate and replay the local certificate material with the commands in
+  `REPRODUCE.md`.  This is not a characteristic-zero theorem.
+- `two_pair_sic_bidegree33_rank_two_compact_relative_pf_characteristic_zero_lift.json`,
+  `two_pair_sic_bidegree33_rank_two_compact_relative_shift_operator.json`,
+  and
+  `two_pair_sic_bidegree33_rank_two_compact_relative_pf_characteristic_zero_verification.json`
+  record the exact finite characteristic-zero bridge.  Simultaneous LLL from
+  95 modular images and five holdouts reconstructs all 657 differential
+  coefficients with maximum height 1527 bits.  Exact rational shift-Ore
+  division proves \(R_{64,8}=Q_{50}G_{14,58}\) with zero remainder; the forward
+  denominator of \(Q_{50}\) has 51 positive coefficients, and 50 exact initial
+  \(G_{14}\)-rows close the uniqueness argument.  The verification-manifest
+  SHA-256 is
+  `21bd00fa640b32a0adacded2d2f352eca424757966497c2aa996a0db0570dba2`.
+  Its checker is
+  `scripts/verify_two_pair_sic_bidegree33_rank_two_compact_relative_pf_lift.py`.
+  The remaining gate is the all-order characteristic-zero divergence and
+  endpoint certificate for \(R\), not operator reconstruction or initial
+  values.
+- `two_pair_sic_bidegree33_rank_two_compact_relative_certificate_support_research.json`
+  compares the eight divergence levels and terminal correction at primes
+  1000003 and 1000033.  All \(Y_r\) supports, five \(X_r\) supports, and the
+  132615-term terminal support agree exactly; the other three \(X_r\) supports
+  differ by one monomial each.  Generate it with
+  `.venv/bin/python scripts/research_two_pair_sic_bidegree33_rank_two_compact_certificate_support.py`
+  after producing both local certificates as documented in `REPRODUCE.md`.
+  Its whole-file SHA-256 is
+  `48cbb5ca04e5f2a4fb811eb82aed4a01c23e600753524bec4d880917779a484d`.
+  This is a two-prime reconstruction scout, not a characteristic-zero
+  certificate.
 - `two_pair_sic_bidegree44_rank_two_swap_slice.json` records the exact
   exclusion on
   \(F_P=\xi_1^4P(z_1,z_2)-\xi_2^4P(z_2,z_1)\).  The first five even

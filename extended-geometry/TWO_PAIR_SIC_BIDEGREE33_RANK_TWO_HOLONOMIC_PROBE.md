@@ -664,6 +664,131 @@ replays the 205 prime images, the 27 exact rational moment identities,
 and the independent \(m^{58}\) descent.  Its status is deliberately
 finite: no characteristic-zero all-order theorem is claimed here.
 
+#### 4.4.4 Compact relative Picard--Fuchs bridge
+
+The beta chart admits a useful birational compression.  Put
+
+\[
+ x=u,\qquad y=\frac{ut}{1-t},\qquad t=\frac{y}{x+y}.
+\]
+
+An exact symbolic calculation gives
+
+\[
+ P(u,t)=\frac{\Phi(x,y)}{(x+y)^3},\qquad
+ \frac{du}{u}\,dt=\frac{dx\,dy}{(x+y)^2},              \tag{4.14g}
+\]
+
+where
+
+\[
+\begin{aligned}
+\Phi={}&19x^3y^3+17x^3y^2+13x^3y+11x^3\\
+ &+37x^2y^3+31x^2y^2+29x^2y+23x^2\\
+ &+149xy^3+127xy^2+113xy+91x\\
+ &+354y^3+302y^2+268y+216.
+\end{aligned}
+\]
+
+Thus the generating form becomes
+
+\[
+ \frac{(x+y)\,dx\,dy}{(x+y)^3-z\Phi(x,y)},             \tag{4.14h}
+\]
+
+with a sixteen-term denominator of total degree six.  The projective
+Griffiths--Dwork calculation of Brochet--Chyzak--Lairez now finishes: it
+returns a closed-cycle operator of differential order eight, with coefficient
+degrees \(82,81,\ldots,74\).  That operator does not annihilate the interval
+period, because its discarded exact forms retain boundary traces.
+
+The interval calculation has a smaller inhomogeneous relation
+
+\[
+ L_8F=B_{55},\qquad
+ L_8=\sum_{k=0}^8p_k(z)\partial_z^k,                   \tag{4.14i}
+\]
+
+where every \(p_k\) has degree at most 72 and \(B_{55}\) has degree exactly
+55.  At \(p=1000003\), the normalized relation is the unique vector in the
+tested order-eight, degree-72 box; the adjacent boxes \((8,71)\), \((7,72)\),
+and \((7,80)\) have zero nullity.  Its support satisfies
+\(z^k\mid p_k\) and \(\deg p_k=k+64\), except that \(p_3\) starts at \(z^4\).
+The coefficient conversion \(n=m+64\) gives
+
+\[
+ R_{64,8}=\sum_{j=0}^{64}r_j(m)S^j,\qquad
+ z^e\partial_z^k\longmapsto
+ S^{64-e+k}(m+64-e+k)_{\underline{k}}.                 \tag{4.14j}
+\]
+
+Every \(r_j\) has degree eight.  A complete independent modular replay
+verifies all eight descending divergence identities, removes the 138651-term
+terminal residual with a 132615-term Koszul correction, and proves that both
+corrected endpoint exponential-polynomials vanish.  Therefore
+
+\[
+ R_{64,8}\nu=0\quad\text{for every }m\geq0
+ \quad\text{over }\mathbb F_{1000003}.                 \tag{4.14k}
+\]
+
+This is a second all-order modular certificate, now with only eight descent
+levels.  Its purpose is the characteristic-zero lift, not a stronger modular
+statement than (4.14e).
+
+The compact relation itself has a stable exact lift.  Simultaneous projective
+reconstruction from 95 prime images, followed by five fresh holdouts,
+recovers all 657 coefficients; the maximum primitive coefficient height is
+1527 bits.  Exact rational moments confirm that the residual in (4.14i) is
+supported precisely in degrees zero through 55 on all 93 available rows.
+Converting the lifted \(L_8\) gives a primitive characteristic-zero
+\(R_{64,8}\).  Exact rational shift-Ore division, taking about eight minutes
+and 136 MB on the reference machine, proves
+
+\[
+ \boxed{R_{64,8}=Q_{50}G_{14,58}}                      \tag{4.14l}
+\]
+
+with zero remainder.  The first and last coefficients of \(Q_{50}\) have
+degree pair \((0,50)\); the other 49 have degree pair \((50,100)\).  All 51
+coefficients of the forward denominator are positive, hence that coefficient
+never vanishes at an integer \(m\geq0\).  A separate rank-two formula computes
+exact moments through the required range in under a second and proves
+
+\[
+ (G_{14,58}\nu)_0=\cdots=(G_{14,58}\nu)_{49}=0.        \tag{4.14m}
+\]
+
+Consequently an all-order characteristic-zero certificate for \(R_{64,8}\)
+would force \(G_{14,58}\nu=0\) for every \(m\geq0\): the quotient recurrence
+and its complete initial data now have no escape.
+
+The remaining gate is specifically the characteristic-zero relative
+certificate for \(R\).  Its first expanded original-coordinate descent level
+reached the 900-second guard at 8.6 GB; the same modular level takes 47 seconds
+below 1 GB, and all eight modular levels take under four minutes.  Ordinary
+top-pole Griffiths reduction is insufficient: the \(H^{-9}\) numerator has an
+18-term remainder in the Laurent Jacobian quotient.  The next proof-producing
+engine is therefore extended relative reduction in the compact chart, or
+termwise reconstruction of the eight-level modular certificate.  Operator
+reconstruction, exact factorization, forward nonvanishing, and the 50 initial
+values are no longer open.
+
+A second-prime scout at \(p=1000033\) makes the reconstruction alternative
+concrete.  All eight \(Y_r\) supports, five of the eight \(X_r\) supports, and
+the 132615-term terminal \(R\)-support are identical at the two primes.  Each
+of the other three \(X_r\) supports differs by exactly one monomial, consistent
+with an isolated coefficient vanishing at one prime.  Thus union-support CRT
+is the next bounded experiment.  This two-prime support agreement is not
+itself a characteristic-zero lift.
+
+The modular certificate is replayed by
+`scripts/verify_two_pair_sic_bidegree33_rank_two_compact_relative_modular_all_order.py`.
+The characteristic-zero reconstruction and exact factorization are replayed
+by `scripts/verify_two_pair_sic_bidegree33_rank_two_compact_relative_pf_lift.py`.
+The latter deliberately remains a finite bridge, not an all-order
+characteristic-zero theorem.
+
 ### 4.5 Why expanded universal interpolation is not the next step
 
 On the scaling family \(C(s)=(1+s)C_0\), the modular rational
