@@ -1,0 +1,1479 @@
+{
+  "calculation": "two_pair_sic_bidegree33_sparse_five_support_screen",
+  "complete_mixed_enumeration": false,
+  "counts": {
+    "excluded_on_coefficient_torus": 20
+  },
+  "mixed_support_count": 3864,
+  "records": [
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 1,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 0,
+          "order": 1,
+          "terms": 1
+        }
+      ],
+      "residual": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "seconds": 0.001047,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 2,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 1,
+          "order": 1,
+          "terms": 2
+        },
+        {
+          "degree": 2,
+          "order": 2,
+          "terms": 3
+        }
+      ],
+      "residual": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "seconds": 0.000989,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        2,
+        3,
+        0
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 1,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 0,
+          "order": 1,
+          "terms": 1
+        }
+      ],
+      "residual": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "seconds": 0.000164,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 2,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 1,
+          "order": 1,
+          "terms": 2
+        },
+        {
+          "degree": 2,
+          "order": 2,
+          "terms": 3
+        }
+      ],
+      "residual": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "seconds": 0.000514,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 4,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 1,
+          "order": 1,
+          "terms": 2
+        },
+        {
+          "degree": 2,
+          "order": 2,
+          "terms": 4
+        },
+        {
+          "degree": 3,
+          "order": 3,
+          "terms": 7
+        },
+        {
+          "degree": 4,
+          "order": 4,
+          "terms": 11
+        }
+      ],
+      "residual": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "seconds": 0.002882,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 4,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 1,
+          "order": 1,
+          "terms": 2
+        },
+        {
+          "degree": 2,
+          "order": 2,
+          "terms": 5
+        },
+        {
+          "degree": 3,
+          "order": 3,
+          "terms": 8
+        },
+        {
+          "degree": 4,
+          "order": 4,
+          "terms": 14
+        }
+      ],
+      "residual": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "seconds": 0.003595,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 3,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 1,
+          "order": 1,
+          "terms": 2
+        },
+        {
+          "degree": 2,
+          "order": 2,
+          "terms": 4
+        },
+        {
+          "degree": 3,
+          "order": 3,
+          "terms": 6
+        }
+      ],
+      "residual": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "seconds": 0.001102,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        1,
+        0,
+        3
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 4,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 1,
+          "order": 1,
+          "terms": 2
+        },
+        {
+          "degree": 2,
+          "order": 2,
+          "terms": 4
+        },
+        {
+          "degree": 3,
+          "order": 3,
+          "terms": 7
+        },
+        {
+          "degree": 4,
+          "order": 4,
+          "terms": 11
+        }
+      ],
+      "residual": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "seconds": 0.002119,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 3,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 1,
+          "order": 1,
+          "terms": 2
+        },
+        {
+          "degree": 2,
+          "order": 2,
+          "terms": 5
+        },
+        {
+          "degree": 3,
+          "order": 3,
+          "terms": 8
+        }
+      ],
+      "residual": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "seconds": 0.001297,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 4,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 1,
+          "order": 1,
+          "terms": 3
+        },
+        {
+          "degree": 2,
+          "order": 2,
+          "terms": 7
+        },
+        {
+          "degree": 3,
+          "order": 3,
+          "terms": 13
+        },
+        {
+          "degree": 4,
+          "order": 4,
+          "terms": 22
+        }
+      ],
+      "residual": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "seconds": 0.004681,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 1,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 0,
+          "order": 1,
+          "terms": 1
+        }
+      ],
+      "residual": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "seconds": 0.00019,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        1,
+        -1,
+        3
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 1,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 0,
+          "order": 1,
+          "terms": 1
+        }
+      ],
+      "residual": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "seconds": 0.000141,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        1,
+        -1,
+        2
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 1,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 0,
+          "order": 1,
+          "terms": 1
+        }
+      ],
+      "residual": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "seconds": 0.000122,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 4,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 1,
+          "order": 1,
+          "terms": 2
+        },
+        {
+          "degree": 2,
+          "order": 2,
+          "terms": 5
+        },
+        {
+          "degree": 3,
+          "order": 3,
+          "terms": 8
+        },
+        {
+          "degree": 4,
+          "order": 4,
+          "terms": 14
+        }
+      ],
+      "residual": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "seconds": 0.003092,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 1,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 0,
+          "order": 1,
+          "terms": 1
+        }
+      ],
+      "residual": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "seconds": 0.000218,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 1,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 0,
+          "order": 1,
+          "terms": 1
+        }
+      ],
+      "residual": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "seconds": 0.000143,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 3,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 1,
+          "order": 1,
+          "terms": 2
+        },
+        {
+          "degree": 2,
+          "order": 2,
+          "terms": 4
+        },
+        {
+          "degree": 3,
+          "order": 3,
+          "terms": 6
+        }
+      ],
+      "residual": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "seconds": 0.00116,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        1,
+        3,
+        0
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 1,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 0,
+          "order": 1,
+          "terms": 1
+        }
+      ],
+      "residual": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "seconds": 0.000133,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 4,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 1,
+          "order": 1,
+          "terms": 2
+        },
+        {
+          "degree": 2,
+          "order": 2,
+          "terms": 4
+        },
+        {
+          "degree": 3,
+          "order": 3,
+          "terms": 7
+        },
+        {
+          "degree": 4,
+          "order": 4,
+          "terms": 11
+        }
+      ],
+      "residual": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "seconds": 0.002052,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "decisive_order": 4,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 1,
+          "order": 1,
+          "terms": 2
+        },
+        {
+          "degree": 2,
+          "order": 2,
+          "terms": 5
+        },
+        {
+          "degree": 3,
+          "order": 3,
+          "terms": 8
+        },
+        {
+          "degree": 4,
+          "order": 4,
+          "terms": 14
+        }
+      ],
+      "residual": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "seconds": 0.002424,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "weights": [
+        -1,
+        0,
+        1,
+        1,
+        0
+      ]
+    }
+  ],
+  "scope": "exact characteristic-zero coefficient-torus Groebner screen; sharded enumeration with boundaries covered by the exact support-at-most-four calculation",
+  "start": 1800,
+  "stop": 1820,
+  "through": 14
+}

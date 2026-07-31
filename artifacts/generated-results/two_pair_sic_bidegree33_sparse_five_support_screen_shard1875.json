@@ -1,0 +1,105 @@
+{
+  "calculation": "two_pair_sic_bidegree33_sparse_five_support_screen",
+  "complete_mixed_enumeration": false,
+  "counts": {
+    "excluded_on_coefficient_torus": 1
+  },
+  "mixed_support_count": 3864,
+  "records": [
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "decisive_order": 6,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": -1,
+          "order": 1,
+          "terms": 1
+        },
+        {
+          "degree": -1,
+          "order": 2,
+          "terms": 1
+        },
+        {
+          "degree": 2,
+          "order": 3,
+          "terms": 6
+        },
+        {
+          "degree": 4,
+          "order": 4,
+          "terms": 10
+        },
+        {
+          "degree": -1,
+          "order": 5,
+          "terms": 1
+        },
+        {
+          "degree": 4,
+          "order": 6,
+          "terms": 15
+        }
+      ],
+      "residual": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "seconds": 0.01013,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "weights": [
+        -1,
+        -1,
+        2,
+        -1,
+        3
+      ]
+    }
+  ],
+  "scope": "exact characteristic-zero coefficient-torus Groebner screen; sharded enumeration with boundaries covered by the exact support-at-most-four calculation",
+  "start": 1875,
+  "stop": 1876,
+  "through": 14
+}

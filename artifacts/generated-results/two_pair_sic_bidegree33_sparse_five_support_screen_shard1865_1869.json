@@ -1,0 +1,399 @@
+{
+  "calculation": "two_pair_sic_bidegree33_sparse_five_support_screen",
+  "complete_mixed_enumeration": false,
+  "counts": {
+    "excluded_on_coefficient_torus": 5
+  },
+  "mixed_support_count": 3864,
+  "records": [
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "decisive_order": 4,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": -1,
+          "order": 1,
+          "terms": 1
+        },
+        {
+          "degree": 2,
+          "order": 2,
+          "terms": 3
+        },
+        {
+          "degree": 2,
+          "order": 3,
+          "terms": 6
+        },
+        {
+          "degree": 4,
+          "order": 4,
+          "terms": 6
+        }
+      ],
+      "residual": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "seconds": 0.004764,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "weights": [
+        -1,
+        -1,
+        2,
+        1,
+        -1
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "decisive_order": 3,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": -1,
+          "order": 1,
+          "terms": 1
+        },
+        {
+          "degree": 2,
+          "order": 2,
+          "terms": 2
+        },
+        {
+          "degree": 2,
+          "order": 3,
+          "terms": 3
+        }
+      ],
+      "residual": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "seconds": 0.000883,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "weights": [
+        -1,
+        -1,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "decisive_order": 4,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": -1,
+          "order": 1,
+          "terms": 1
+        },
+        {
+          "degree": 2,
+          "order": 2,
+          "terms": 2
+        },
+        {
+          "degree": 3,
+          "order": 3,
+          "terms": 6
+        },
+        {
+          "degree": 4,
+          "order": 4,
+          "terms": 3
+        }
+      ],
+      "residual": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "seconds": 0.002092,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "weights": [
+        -1,
+        -1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "decisive_order": 4,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": -1,
+          "order": 1,
+          "terms": 1
+        },
+        {
+          "degree": 2,
+          "order": 2,
+          "terms": 4
+        },
+        {
+          "degree": 2,
+          "order": 3,
+          "terms": 3
+        },
+        {
+          "degree": 4,
+          "order": 4,
+          "terms": 9
+        }
+      ],
+      "residual": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "seconds": 0.003028,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "weights": [
+        -1,
+        -1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "decisive_order": 1,
+      "last_basis_size": 1,
+      "profiles": [
+        {
+          "degree": 1,
+          "order": 1,
+          "terms": 1
+        }
+      ],
+      "residual": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "seconds": 0.000253,
+      "status": "excluded_on_coefficient_torus",
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "weights": [
+        -1,
+        -1,
+        2,
+        1,
+        0
+      ]
+    }
+  ],
+  "scope": "exact characteristic-zero coefficient-torus Groebner screen; sharded enumeration with boundaries covered by the exact support-at-most-four calculation",
+  "start": 1865,
+  "stop": 1870,
+  "through": 14
+}
