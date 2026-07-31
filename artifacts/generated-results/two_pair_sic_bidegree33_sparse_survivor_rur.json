@@ -1,0 +1,152 @@
+{
+  "calculation": "two_pair_sic_bidegree33_sparse_survivor_rur",
+  "conclusion": "the only algebraic coefficient-torus points left by the size-six census are the two displayed full-rank Weyl/torus copies of the Rodrigues orbit",
+  "field": "characteristic zero",
+  "points": [
+    {
+      "coefficient_determinant": 1,
+      "coefficient_matrix": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -2,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "coefficient_rank": 4,
+      "complex_solution_count": 1,
+      "mixed_support_index": 3568,
+      "normalized_residual_coordinates": [
+        -1,
+        -2,
+        -1,
+        -1
+      ],
+      "rur": "[0, [0, \n5, \n1, \n['h', 'z0', 'z1', 'z2', 'z3'],\n[0, 0, 0, 0, 1],\n[1,\n[[1, [1, 1]],\n[0, [1]],\n[\n[[0, [-1]],\n2],\n[[0, [1]],\n1],\n[[0, [2]],\n1],\n[[0, [1]],\n1]\n]]]],[1,\n[[[1 / 2, 1 / 2], [-1, -1], [-2, -2], [-1, -1], [-1, -1]]]\n]]:",
+      "rur_degree": 1,
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "coefficient_determinant": 1,
+      "coefficient_matrix": [
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "coefficient_rank": 4,
+      "complex_solution_count": 1,
+      "mixed_support_index": 4106,
+      "normalized_residual_coordinates": [
+        2,
+        1,
+        -1,
+        -1
+      ],
+      "rur": "[0, [0, \n5, \n1, \n['h', 'z0', 'z1', 'z2', 'z3'],\n[0, 0, 0, 0, 1],\n[1,\n[[1, [1, 1]],\n[0, [1]],\n[\n[[0, [-1]],\n2],\n[[0, [-2]],\n1],\n[[0, [-1]],\n1],\n[[0, [1]],\n1]\n]]]],[1,\n[[[1 / 2, 1 / 2], [2, 2], [1, 1], [-1, -1], [-1, -1]]]\n]]:",
+      "rur_degree": 1,
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    }
+  ],
+  "scope": "full complex rational-univariate certification of the two nonunit coefficient-torus systems in the complete size-six census; each RUR has degree one",
+  "size_seven_census": {
+    "excluded_supports": 11200,
+    "mixed_supports": 11200,
+    "sha256": "38c3284c0e519a325108d8213ec5cab496a42b6c00d741f0232206e695bfb9a5"
+  },
+  "size_six_census": {
+    "excluded_supports": 7586,
+    "mixed_supports": 7588,
+    "sha256": "a77f78eea074fd1acf3e93d43f9d807e607316d21fe1ce95af7052da77d34cfa",
+    "survivor_systems": 2
+  },
+  "status": "proved"
+}

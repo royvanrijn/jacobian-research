@@ -606,6 +606,20 @@ def main() -> None:
                 arguments.threads,
                 arguments.linear_algebra,
             )
+        solver_result = payload[arguments.backend]
+        if (
+            arguments.prime == 0
+            and isinstance(solver_result, dict)
+            and (
+                solver_result.get("status") == "unit"
+                or (
+                    solver_result.get("status") == "completed"
+                    and isinstance(solver_result.get("final"), dict)
+                    and solver_result["final"].get("unit")
+                )
+            )
+        ):
+            payload["status"] = "proved"
     payload["seconds"] = round(time.monotonic() - started, 6)
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(

@@ -2,6 +2,24 @@
 
 ## 1. Outcome and status
 
+**Scope warning.**  The fixed integral fibers in this note are generic
+exact-rank-two regression fibers, not moment-zero fibers.  At the first
+fiber the raw moments \(\mu_1,\ldots,\mu_4\) are
+
+\[
+2502,\quad120004752,\quad24426240171840,\quad
+13040211749112437760.
+\tag{1.0}
+\]
+
+Consequently the operators below prove the reduction and reconstruction
+method at that benchmark; they do not control a component of the corrected
+moment-zero locus.  Component extraction must precede a new specialization.
+The
+[isolated anti-Weyl nine-moment component](TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_FINITE_PREFIX.md)
+is explicit but fails already at \(\mu_{10}\), so it is not such a
+specialization.
+
 There is now a concrete recurrence target for the first rank-two
 bidegree-\((3,3)\) experiment.  Put
 

@@ -1,0 +1,70 @@
+{
+  "backend": "msolve",
+  "characteristic": 0,
+  "chart": {
+    "B": "1+a1*y+a2*y^2+a3*y^3",
+    "D3_elimination": "-1-a1/3-lambda*b2/3",
+    "channel_minor_open": "01",
+    "form": "(1+x)B(y)+x^2(lambda+x)D(y)",
+    "lambda_value": 0,
+    "mu2_pivot_boundary_reduced": null,
+    "quadratic_discriminant_open": true,
+    "scaled_form_used": "3F"
+  },
+  "exact_lift": {
+    "coefficient_bound": "(3m)!*52^m",
+    "prime": "6864797660130609714981900799081393217269435300143305409394463459185543183397656052122559640661454554977296311391480858037121987999716643812574028291115057151",
+    "prime_exceeds_twice_bound": true
+  },
+  "moment_profiles": {
+    "2": {
+      "sha256": "fbb7514704f0bd52bdfa8aab193f8c3bb1d8b8c3e11743f6cdae66fddb687725",
+      "terms": 22
+    },
+    "3": {
+      "sha256": "69b0d355967334d98a19384f2c314bfb703c7b80bceae4f9699edf1c5e619226",
+      "terms": 67
+    },
+    "4": {
+      "sha256": "1c3ef7c443b08863d174b5dd3c3e3121afa5ec8c7cf89c5e2dd7583b1dbccb73",
+      "terms": 252
+    },
+    "5": {
+      "sha256": "fe3c5d6c26b58a34004a9b8b6c8c5ab3d482f0aa518ba9b19b967e39ca69f5e1",
+      "terms": 630
+    },
+    "6": {
+      "sha256": "981db07924b2a826e5d6057794296890a3f647cb7111dcea3b9610278c17848c",
+      "terms": 1569
+    },
+    "7": {
+      "sha256": "e2ff4aa0034ece771f9305b5c7451f4a97bc09cc23a60d78122758fbbc8a5b9c",
+      "terms": 3242
+    },
+    "8": {
+      "sha256": "790948640a28e3336f6837ac6a782af7864e1ebc6eeed7dc0d01d62dfc06df33",
+      "terms": 6589
+    }
+  },
+  "msolve_input_sha256": "941b91124b0358a9c608a564252769d0a3df9dc16949bdf03b8d9debdcf40ec4",
+  "orders": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "reproduction_command": "scripts/research_two_pair_sic_bidegree33_rank_two_hurwitz.py --characteristic-zero --backend msolve --minor 01 --lambda-value 0 --orders 2,3,4,5,6,7,8 --timeout 60 --memory-gb 3 --output artifacts/generated-results/two_pair_sic_bidegree33_rank_two_hurwitz_lambda0_char0.json",
+  "solve": {
+    "elapsed_seconds": 5.737968841989641,
+    "memory_limit_gb": 3.0,
+    "returncode": 0,
+    "stderr": "\n--------------- INPUT DATA ---------------\n#variables                       8\n#equations                       9\n#invalid equations               0\nfield characteristic             0\nhomogeneous input?               0\nsignature-based computation      0\nmonomial order                 DRL\nbasis hash table resetting     OFF\nlinear algebra option            2\ninitial hash table size     131072 (2^17)\nmax pair selection             ALL\nreduce gb                        1\n#threads                         4\ninfo level                       1\ngenerate pbm files               0\n------------------------------------------\nTime for rational param:          5.73 (elapsed) sec / 20.58 sec (cpu)\n\n------------------------------------------------------------------------------------\nmsolve overall time           5.73 sec (elapsed) / 20.58 sec (cpu)\n------------------------------------------------------------------------------------\n",
+    "stdout": "\n---------------- TIMINGS ---------------\noverall(elapsed)        5.72 sec\noverall(cpu)           20.56 sec\nselect                  0.36 sec   6.3%\nsymbolic prep.          0.17 sec   3.0%\nupdate                  1.75 sec  30.5%\nconvert                 0.02 sec   0.4%\nlinear algebra          3.42 sec  59.7%\nreduce gb               0.00 sec   0.0%\n-----------------------------------------\n\n---------- COMPUTATIONAL DATA -----------\nsize of basis                     1\n#terms in basis                   1\n#pairs reduced                17294\n#GM criterion              11115289\n#redundant elements            4719\n#rows reduced                 34739\n#zero reductions              12658\nmax. matrix data              12045 x 15945 (2.991%)\nmax. symbolic hash table size  2^15\nmax. basis hash table size     2^18\n-----------------------------------------\n\nGrobner basis has a single element\nNo solution\n[-1]:\n",
+    "timed_out": false,
+    "unit_ideal": true
+  },
+  "status": "exact characteristic-zero fixed-fibre computation"
+}

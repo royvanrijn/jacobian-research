@@ -1,15 +1,15 @@
 {
   "calculation": "two_pair_sic_bidegree33_anti_weyl",
-  "generation_seconds": 13.947974,
+  "generation_seconds": 12.535523,
   "msolve": {
     "result_head": "[-1]:",
     "result_tail": "[-1]:",
     "returncode": 0,
     "scope": "exact characteristic zero",
-    "seconds": 31.365705,
+    "seconds": 20.791236,
     "status": "unit",
-    "stderr_tail": "\n--------------- INPUT DATA ---------------\n#variables                       6\n#equations                       7\n#invalid equations               0\nfield characteristic             0\nhomogeneous input?               0\nsignature-based computation      0\nmonomial order                 DRL\nbasis hash table resetting     OFF\nlinear algebra option            2\ninitial hash table size     131072 (2^17)\nmax pair selection             ALL\nreduce gb                        1\n#threads                         4\ninfo level                       1\ngenerate pbm files               0\n------------------------------------------\nTime for rational param:         31.34 (elapsed) sec / 107.93 sec (cpu)\n\n------------------------------------------------------------------------------------\nmsolve overall time          31.34 sec (elapsed) / 107.94 sec (cpu)\n------------------------------------------------------------------------------------\n",
-    "stdout_tail": "\n---------------- TIMINGS ---------------\noverall(elapsed)       31.27 sec\noverall(cpu)          107.84 sec\nselect                  1.07 sec   3.4%\nsymbolic prep.          1.84 sec   5.9%\nupdate                 16.74 sec  53.5%\nconvert                 0.14 sec   0.4%\nlinear algebra         11.45 sec  36.6%\nreduce gb               0.00 sec   0.0%\n-----------------------------------------\n\n---------- COMPUTATIONAL DATA -----------\nsize of basis                     1\n#terms in basis                   1\n#pairs reduced                26372\n#GM criterion              96108163\n#redundant elements           13867\n#rows reduced                 52885\n#zero reductions              12581\nmax. matrix data              28894 x 50898 (1.189%)\nmax. symbolic hash table size  2^16\nmax. basis hash table size     2^18\n-----------------------------------------\n\nGrobner basis has a single element\nNo solution\n"
+    "stderr_tail": "\n--------------- INPUT DATA ---------------\n#variables                       6\n#equations                       7\n#invalid equations               0\nfield characteristic             0\nhomogeneous input?               0\nsignature-based computation      0\nmonomial order                 DRL\nbasis hash table resetting     OFF\nlinear algebra option            2\ninitial hash table size     131072 (2^17)\nmax pair selection             ALL\nreduce gb                        1\n#threads                         4\ninfo level                       1\ngenerate pbm files               0\n------------------------------------------\nTime for rational param:         20.76 (elapsed) sec / 71.10 sec (cpu)\n\n------------------------------------------------------------------------------------\nmsolve overall time          20.77 sec (elapsed) / 71.10 sec (cpu)\n------------------------------------------------------------------------------------\n",
+    "stdout_tail": "\n---------------- TIMINGS ---------------\noverall(elapsed)       20.70 sec\noverall(cpu)           71.01 sec\nselect                  0.87 sec   4.2%\nsymbolic prep.          1.43 sec   6.9%\nupdate                 11.49 sec  55.5%\nconvert                 0.09 sec   0.4%\nlinear algebra          6.80 sec  32.9%\nreduce gb               0.00 sec   0.0%\n-----------------------------------------\n\n---------- COMPUTATIONAL DATA -----------\nsize of basis                     1\n#terms in basis                   1\n#pairs reduced                26372\n#GM criterion              96108163\n#redundant elements           13867\n#rows reduced                 52885\n#zero reductions              12581\nmax. matrix data              28894 x 50898 (1.189%)\nmax. symbolic hash table size  2^16\nmax. basis hash table size     2^18\n-----------------------------------------\n\nGrobner basis has a single element\nNo solution\n"
   },
   "odd_moments_identically_zero": [
     1,
@@ -25,7 +25,7 @@
     "mu1": {
       "content": "0",
       "maximum_coefficient_bits": 0,
-      "seconds": 6.9e-05,
+      "seconds": 8.8e-05,
       "terms": 0,
       "total_degree": -1,
       "variable_degrees": {
@@ -40,7 +40,7 @@
     "mu10": {
       "content": "143497531697135616000000",
       "maximum_coefficient_bits": 41,
-      "seconds": 0.377791,
+      "seconds": 0.37921,
       "terms": 1902,
       "total_degree": 10,
       "variable_degrees": {
@@ -55,7 +55,7 @@
     "mu11": {
       "content": "0",
       "maximum_coefficient_bits": 0,
-      "seconds": 0.897982,
+      "seconds": 0.821468,
       "terms": 0,
       "total_degree": -1,
       "variable_degrees": {
@@ -70,7 +70,7 @@
     "mu12": {
       "content": "4080491219418734068236288000000",
       "maximum_coefficient_bits": 49,
-      "seconds": 1.866301,
+      "seconds": 1.660384,
       "terms": 4467,
       "total_degree": 12,
       "variable_degrees": {
@@ -85,7 +85,7 @@
     "mu13": {
       "content": "0",
       "maximum_coefficient_bits": 0,
-      "seconds": 3.280904,
+      "seconds": 3.218197,
       "terms": 0,
       "total_degree": -1,
       "variable_degrees": {
@@ -100,7 +100,7 @@
     "mu14": {
       "content": "154084897913309807894935036231680000000",
       "maximum_coefficient_bits": 58,
-      "seconds": 7.237832,
+      "seconds": 6.166394,
       "terms": 9380,
       "total_degree": 14,
       "variable_degrees": {
@@ -115,7 +115,7 @@
     "mu2": {
       "content": "24",
       "maximum_coefficient_bits": 7,
-      "seconds": 0.000141,
+      "seconds": 0.000153,
       "terms": 7,
       "total_degree": 2,
       "variable_degrees": {
@@ -130,7 +130,7 @@
     "mu3": {
       "content": "0",
       "maximum_coefficient_bits": 0,
-      "seconds": 0.000342,
+      "seconds": 0.000363,
       "terms": 0,
       "total_degree": -1,
       "variable_degrees": {
@@ -145,7 +145,7 @@
     "mu4": {
       "content": "207360",
       "maximum_coefficient_bits": 15,
-      "seconds": 0.001336,
+      "seconds": 0.001324,
       "terms": 50,
       "total_degree": 4,
       "variable_degrees": {
@@ -160,7 +160,7 @@
     "mu5": {
       "content": "0",
       "maximum_coefficient_bits": 0,
-      "seconds": 0.003634,
+      "seconds": 0.003606,
       "terms": 0,
       "total_degree": -1,
       "variable_degrees": {
@@ -175,7 +175,7 @@
     "mu6": {
       "content": "62705664000",
       "maximum_coefficient_bits": 22,
-      "seconds": 0.011112,
+      "seconds": 0.010821,
       "terms": 215,
       "total_degree": 6,
       "variable_degrees": {
@@ -190,7 +190,7 @@
     "mu7": {
       "content": "0",
       "maximum_coefficient_bits": 0,
-      "seconds": 0.029399,
+      "seconds": 0.028249,
       "terms": 0,
       "total_degree": -1,
       "variable_degrees": {
@@ -205,7 +205,7 @@
     "mu8": {
       "content": "162232093900800000",
       "maximum_coefficient_bits": 30,
-      "seconds": 0.071251,
+      "seconds": 0.072193,
       "terms": 707,
       "total_degree": 8,
       "variable_degrees": {
@@ -220,7 +220,7 @@
     "mu9": {
       "content": "0",
       "maximum_coefficient_bits": 0,
-      "seconds": 0.169436,
+      "seconds": 0.172419,
       "terms": 0,
       "total_degree": -1,
       "variable_degrees": {
@@ -233,8 +233,8 @@
       }
     }
   },
-  "seconds": 45.328523,
-  "status": "research",
+  "seconds": 33.341636,
+  "status": "proved",
   "substitution": {
     "s4": "-s2",
     "s5": "s1",

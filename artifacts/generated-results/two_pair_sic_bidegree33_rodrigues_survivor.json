@@ -1,0 +1,99 @@
+{
+  "all_order_pure_identity": {
+    "even_order": "for m=2n the beta sum is proportional to sum_{r=0}^n (-1)^r/((n-r)!r!)=0",
+    "odd_order": "phase parity gives zero constant term"
+  },
+  "calculation": "two_pair_sic_bidegree33_rodrigues_survivor",
+  "coefficient_determinant": 1,
+  "coefficient_matrix": [
+    [
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -2,
+      0,
+      -1
+    ],
+    [
+      0,
+      0,
+      -1,
+      0
+    ]
+  ],
+  "coefficient_rank": 4,
+  "dehomogenized_form": "-x**3*y**2 - x**2*y**3 - 2*x**2*y - x + y**3 + y",
+  "factorization": "(-x*y - y**2 - 1)*(x**2*y + x - y)",
+  "field": "characteristic zero",
+  "hopf_beta_factorization": "p(t,u)=u^-3*(u^2+1-t)*((1-t)^2-t*u^2)",
+  "mathematical_consequence": {
+    "moment_nullcone": "MN_3 is false because all pure moments vanish while det(C)=1",
+    "sic": "this witness is not an SIC counterexample; it is SIC-safe with the explicit eventual bound above"
+  },
+  "pure_moments_checked": {
+    "orders": [
+      1,
+      30
+    ],
+    "values": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "rodrigues_identity": {
+    "formula": "CT_u[u^d p(t,u)^m] = (-1)^r*(1-t)^d/s!*D_t^s[t^m(1-t)^m], r=(m-d)/2, s=(m+d)/2",
+    "phase_range": [
+      -8,
+      8
+    ],
+    "symbolic_checks": 78
+  },
+  "sic_safety": {
+    "arbitrary_multiplier_bound": "m > 3 deg_coordinate(Q), componentwise after bihomogeneous decomposition",
+    "direct_beta_checks": 1423,
+    "proved": true,
+    "reason": "after multiplying by the balanced monomial M_ij of bidegree (e,e), integration by parts s times differentiates t^i(1-t)^(e-j); it is zero when s>e+i-j.  Hence every balanced multiplier vanishes for m>3e.  An unbalanced multiplier is either degree-forced to zero or each output coefficient is detected by a balanced completion.",
+    "uniform_balanced_bound": "m > 3e",
+    "uniform_cutoff_checks": 855
+  },
+  "status": "proved",
+  "support_size": 6
+}

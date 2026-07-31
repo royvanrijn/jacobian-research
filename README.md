@@ -134,6 +134,11 @@ More generally, \(F_d=R^{d-4}F\) has bidegree \((d,d)\) and
 \]
 Thus \(\mathrm{MN}_d\) fails for every \(d\geq4\), with no parity or
 congruence restriction.
+It also fails at \(d=3\): the
+[six-entry Rodrigues survivor](extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RODRIGUES_SURVIVOR.md)
+has determinant one and every pure moment zero.  That orbit is
+nevertheless SIC-safe for arbitrary fixed multipliers, so the smallest
+known actual SIC counterexample still has bidegree \((4,4)\).
 The separate
 [characteristic-\(p\) phase diagram](extended-geometry/TWO_PAIR_SIC_CHARACTERISTIC_P.md)
 shows that this failure is genuinely characteristic-zero.  For the
@@ -475,50 +480,55 @@ moments \(2,4,6,10\) cut out exactly the nullcone on the highest
 binary-sextic summand.  Moments \(2,3\) and \(2\) respectively close the
 pure binary-quartic and binary-quadratic summands.  The mixed
 \(\operatorname{Sym}^6\oplus\operatorname{Sym}^4\oplus
-\operatorname{Sym}^2\) locus remains open, but a non-null quadratic is
-already excluded on the \(\operatorname{Sym}^4\oplus\operatorname{Sym}^2\)
-branch by an exact \(c^6\) membership.  On the
-\(\operatorname{Sym}^6\oplus\operatorname{Sym}^2\) branch,
-\(c^{25}\) membership through moment \(14\) is currently finite-field
-evidence only.  On the full non-null quadratic branch, residual torus and
-Weyl symmetry
-reduce the non-diagonal locus to five affine chart orbits, and exact
-eleven-by-eleven Jacobian determinants prove that moments \(2,\ldots,12\)
-are dimension-sized on every chart.  Their common zero fibers remain open.
-The formerly
-[all-degree moment--nullcone program](extended-geometry/TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md)
-is falsified at \(d=4\) by the new witness.  Its surviving
-\(d=3\) classification uses
-in
-\(\operatorname{End}(\operatorname{Sym}^d)
-\cong\bigoplus_{r=0}^d\operatorname{Sym}^{2r}\), first destabilize the
-lowest nonzero binary-form component and then force all higher components
-to share its unique high-multiplicity root. The program still proves that
-the target nullcone has dimension \(1+d(d+1)/2\), that a global \(d=3\)
-proof needs at least thirteen moment equations, and that the analogous
-moment--nullcone equality is false for every pair dimension \(n\geq3\)
-already in bidegree \((2,2)\). Exact evaluation now proves that the first
-thirteen full \((3,3)\) moments are algebraically independent. An exact
-Hilbert-series coefficient nevertheless proves that degrees
-\(1,\ldots,13\) cannot form a homogeneous system of parameters: their
-zero fiber necessarily has an extra semistable component. Replacing
-\(\mu_{13}\) by \(\mu_{14}\) gives the least-total-degree viable candidate,
-and \(\mu_1,\ldots,\mu_{12},\mu_{14}\) again have exact Jacobian rank
-thirteen while passing the necessary Hilbert test through degree \(100\).
-Whether this corrected zero fiber is precisely the nullcone remains open.
-The global quadratic discriminant is explicit, and moments
-\(1,\ldots,4\) have only the origin on the complete maximal-torus fixed
-diagonal slice. On every residual-torus chart of the non-null quadratic
-branch, \(\mu_2\) now eliminates an opposite-weight variable with a
-constant nonzero pivot. On \(s_0=1\), the reduced \(\mu_3\) supplies two
-further principal-open pivots and an explicit common boundary, replacing
-the failed raw Gröbner attack by a branchwise triangular one. A natural
-two-parameter plane in that common boundary is now excluded exactly:
-\(\mu_3\) is a nonzero multiple of \(a^3\), while the normalized
-\(\mu_4\) is a unit modulo \(a^3\). Exact rational Jacobian certificates
-also give maximal restricted ranks \(11,10,9\) on the three pivot strata,
-so the remaining \(d=3\) obstruction is the special zero fiber rather than
-a generic rank defect.
+\operatorname{Sym}^2\) SIC locus remains open.
+
+The stronger moment--nullcone statement is now settled negatively already
+in degree three.  The
+[Rodrigues survivor](extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RODRIGUES_SURVIVOR.md)
+has six nonzero coefficients, determinant one, and
+\(\mathcal E_2(F^m)=0\) for every \(m\geq1\).  Its beta transform factors
+as
+\[
+ u^{-3}(u^2+1-t)\bigl((1-t)^2-tu^2\bigr),
+\]
+which gives both the all-order pure cancellation and a Rodrigues
+integration-by-parts identity.  The latter proves the logically stronger
+fact needed for this orbit:
+\(\mathcal E_2(QF^m)=0\) for every fixed \(Q\) once
+\(m>3\deg_{Z,Y}Q\).  Thus \(\mathrm{MN}_3\) is false, but this full-rank
+orbit is not an SIC counterexample.
+
+Exact coefficient-torus censuses sharpen the residual search.  Among all
+\(7{,}588\) mixed six-entry supports, the only two normalized survivors
+have degree-one rational-univariate representations over the full
+algebraic closure and are Weyl/torus copies of the Rodrigues form; every
+one of the \(11{,}200\) seven-entry tori is excluded over \(\mathbb Q\)
+by moments through order twelve.  The complete \(12{,}780\)-support
+size-eight census has fourteen nonunit systems and one initial timeout.
+The timeout is an exact characteristic-zero unit through order fourteen.
+Full complex RURs and explicit factorizations show that all twenty
+normalized points on the other fourteen systems are pair-linearly
+one-sided: twelve systems are rectangular cube factorizations, one is a
+three-point family indexed by \(q^3=1\), and one is a single two-factor
+point.  Hence any degree-three SIC counterexample has at least nine
+entries in the displayed monomial basis.  On the normalized
+null-quadratic chart the Rodrigues point is an isolated local component
+of length five through \(\mu_{11}\).  On the normalized anti-Weyl
+non-null branch, the even moments through order fourteen generate the
+unit ideal over \(\mathbb Q\).  On the generic rank-two
+[Hurwitz chart](extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_FINITE_PREFIX.md#4-two-exact-exclusions-on-the-generic-hurwitz-chart),
+exact characteristic-zero elimination through \(\mu_8\) also excludes
+the complete \(\lambda=0\) fibre and the locus where both successive
+\(\mu_2\) pivots vanish.  The two complementary pivot-open branches and
+the chart boundaries remain open.
+
+The remaining global work is therefore a true SIC classification, not
+moment--nullcone equality: classify the other semistable pure-zero orbits
+on the non-null quadratic, null-quadratic, and \(F_2=0\) charts, then
+either prove each orbit eventually mixed-zero or exhibit a persistent
+regular multiplier.  Existing quotient, border, and Fitting certificates
+exclude substantial opens and exact slices of the non-null chart, but do
+not yet cover all of those three strata.
 For homogeneous two-variable GVC, the same representation theory restricts
 to the rank-one Segre cone \(A\otimes P\): its moments are exactly
 \(\Lambda^m(P^m)\).  The

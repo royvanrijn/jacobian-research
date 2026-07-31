@@ -1,0 +1,213 @@
+{
+  "calculation": "two_pair_sic_bidegree33_null_quadratic_s6",
+  "five_variable_slice_certificate": {
+    "conclusion": "the slice contains exactly the two normalized Weyl/torus copies of the Rodrigues orbit; each has scheme length two",
+    "dimension": 0,
+    "moments": [
+      2,
+      10
+    ],
+    "quotient_length": 4,
+    "reduced_groebner_basis": [
+      "17*t0-70*t4,",
+      "s0,",
+      "t4^2,",
+      "7*t3*t4+17*s3,",
+      "s3*t4,",
+      "4*t3^2-1,",
+      "68*s3*t3+7*t4,",
+      "s3^2"
+    ],
+    "reduced_support": [
+      {
+        "s0": "0",
+        "s3": "0",
+        "t0": "0",
+        "t3": "1/2",
+        "t4": "0"
+      },
+      {
+        "s0": "0",
+        "s3": "0",
+        "t0": "0",
+        "t3": "-1/2",
+        "t4": "0"
+      }
+    ],
+    "retained_variables": [
+      "s0",
+      "s3",
+      "t0",
+      "t3",
+      "t4"
+    ],
+    "zeroed_variables": [
+      "s1",
+      "s2",
+      "s4",
+      "t1",
+      "t2"
+    ]
+  },
+  "known_survivor": {
+    "all_other_variables": "0",
+    "checked_on_every_exported_moment": true,
+    "t3": "1/2"
+  },
+  "local_survivor_certificate": {
+    "conclusion": "the point is an isolated length-five local component of (mu_2,...,mu_11) on this normalized chart",
+    "formal_coefficients_through_order_5": {
+      "1": {
+        "s3": "-7/34",
+        "t0": "70/17"
+      },
+      "2": {
+        "s0": "-1225/289",
+        "s4": "-6665/22542",
+        "t1": "3815/2312"
+      },
+      "3": {
+        "s1": "-21737125/14562132",
+        "t2": "109976365/320366904"
+      },
+      "4": {
+        "s2": "-3496078675/9745898448",
+        "t3": "-509369472257/9628947666624"
+      },
+      "5": {
+        "s3": "99679247161207/2782765875654336",
+        "t0": "-66550847014705/115948578152264"
+      }
+    },
+    "free_parameter": "epsilon=t4",
+    "implicit_equations": "mu_2,...,mu_10",
+    "jacobian_determinant": "3445505947738252325099075904000",
+    "local_intersection_multiplicity": 5,
+    "mu11_restriction_orders_0_through_5": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "558209902860000/44871740771"
+    ],
+    "pivot_variables": [
+      "s0",
+      "s1",
+      "s2",
+      "s3",
+      "s4",
+      "t0",
+      "t1",
+      "t2",
+      "t3"
+    ],
+    "point": {
+      "s0": "0",
+      "s1": "0",
+      "s2": "0",
+      "s3": "0",
+      "s4": "0",
+      "t0": "0",
+      "t1": "0",
+      "t2": "0",
+      "t3": "1/2",
+      "t4": "0"
+    }
+  },
+  "normalization": {
+    "r0": "-1",
+    "s5": "0",
+    "s6": "-1"
+  },
+  "orders": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "prime": 0,
+  "profiles": {
+    "2": {
+      "seconds": 0.0001,
+      "terms": 6,
+      "total_degree": 2
+    },
+    "3": {
+      "seconds": 0.000135,
+      "terms": 22,
+      "total_degree": 3
+    },
+    "4": {
+      "seconds": 0.00039,
+      "terms": 70,
+      "total_degree": 4
+    },
+    "5": {
+      "seconds": 0.001014,
+      "terms": 185,
+      "total_degree": 5
+    },
+    "6": {
+      "seconds": 0.002748,
+      "terms": 467,
+      "total_degree": 6
+    },
+    "7": {
+      "seconds": 0.005806,
+      "terms": 1069,
+      "total_degree": 7
+    },
+    "8": {
+      "seconds": 0.012767,
+      "terms": 2353,
+      "total_degree": 8
+    },
+    "9": {
+      "seconds": 0.025491,
+      "terms": 4729,
+      "total_degree": 9
+    },
+    "10": {
+      "seconds": 0.062769,
+      "terms": 9155,
+      "total_degree": 10
+    },
+    "11": {
+      "seconds": 0.112078,
+      "terms": 16919,
+      "total_degree": 11
+    }
+  },
+  "scope": "r0=-1, s6=-1, s5=0 normalized null-quadratic chart; finite moment prefix only",
+  "seconds": 4.011994,
+  "solver": {
+    "result_head": "",
+    "result_tail": "",
+    "returncode": null,
+    "seconds": 0.0,
+    "skipped": true,
+    "stderr_tail": "",
+    "stdout_tail": "",
+    "timed_out": false
+  },
+  "status": "proved_local_certificate",
+  "variables": [
+    "s0",
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "t0",
+    "t1",
+    "t2",
+    "t3",
+    "t4"
+  ]
+}

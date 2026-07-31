@@ -32,15 +32,24 @@ The certified all-order ledger is
 \begin{array}{c|c}
 d&\text{current knowledge}\\ \hline
 2&r_2=\infty,\\
-3&r_3=\infty\ \text{or}\ 2\le r_3\le4,\\
-4&2\le r_4\le5,\\
-d\ge5&2\le r_d\le d+1.
+3&2\le r_3\le4,\\
+4&1\le r_4\le5,\\
+d\ge5&1\le r_d\le d+1.
 \end{array} \tag{1.3}
 \]
-The lower bound is the split-symbol theorem: rank one is safe in every
-degree.  The degree-four upper bound is the known full-rank witness.  The
+The degree-three lower bound is the cubic Segre nullcone theorem: in this
+degree a rank-one pure-moment point is one-sided.  The degree-three upper
+bound is the full-rank
+[Rodrigues survivor](TWO_PAIR_SIC_BIDEGREE33_RODRIGUES_SURVIVOR.md);
+its determinant is one and all its pure moments vanish.  It is itself
+SIC-safe, so this bound concerns moment--nullcone failure rather than an
+SIC counterexample.  In degrees at least four the split-symbol theorem
+proves rank-one **SIC safety**, but does not prove rank-one
+moment--nullcone equality; hence the honest lower bound for \(r_d\) there
+is one.  The degree-four upper bound is the known full-rank witness.  The
 radially propagated witnesses give the final row, without asserting that
-their displayed coefficient ranks are minimal.
+their displayed coefficient ranks are minimal.  Separately, the minimum
+rank of an actual SIC counterexample is at least two in every degree.
 
 Ranks two through four remain unclassified in degree four.  No
 finite-prefix calculation below changes that all-order statement.

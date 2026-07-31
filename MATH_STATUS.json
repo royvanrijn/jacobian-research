@@ -8680,7 +8680,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Rank-stratified finite-prefix moment census through balanced degree four",
-      "scope": "For X_(d,r), the determinantal locus of (d+1)-by-(d+1) balanced coefficient matrices of rank at most r, the quotient dimension is q_(d,r)=r(2(d+1)-r)-3 in the cases d=2,3,4. Exact factor-chart Jacobians modulo 1000003 prove that the first q_(d,r) contraction moments are algebraically independent for every rank stratum through rank four in these degrees. The diagonal-SL_2 invariant Hilbert series is computed from the determinantal Cauchy decomposition using principal specializations of S_lambda(Sym^d). Consecutive moments fail the homogeneous-parameter test at (d,r)=(2,2),(3,2),(3,4),(4,2), with first negative coefficients respectively -1 in degree 5, -58 in degree 29, -2186 in degree 63, and -5266 in degree 69. In particular the first nine moments on X_(3,2) have a semistable common zero; the balanced cubic rank-one theorem forces every such semistable point to have exact coefficient rank two. This point is existential and finite-prefix only. The least full-Jacobian single replacements passing the tested necessary Hilbert conditions through degree 85 are orders 1,...,4,6; 1,...,8,12; 1,...,12,14; and 1,...,12,14 respectively; their observed numerators are palindromic through the Gorenstein-predicted top degree. For degree-four ranks three and four, consecutive moment numerators have no negative coefficient through degree 85; this is not a homogeneous-parameter theorem or an all-order classification. Rank one is safe in every degree by the split-symbol theorem, while the all-order values r_3 and ranks two through four at d=4 remain open.",
+      "scope": "For X_(d,r), the determinantal locus of (d+1)-by-(d+1) balanced coefficient matrices of rank at most r, the quotient dimension is q_(d,r)=r(2(d+1)-r)-3 in the cases d=2,3,4. Exact factor-chart Jacobians modulo 1000003 prove that the first q_(d,r) contraction moments are algebraically independent for every rank stratum through rank four in these degrees. The diagonal-SL_2 invariant Hilbert series is computed from the determinantal Cauchy decomposition using principal specializations of S_lambda(Sym^d). Consecutive moments fail the homogeneous-parameter test at (d,r)=(2,2),(3,2),(3,4),(4,2), with first negative coefficients respectively -1 in degree 5, -58 in degree 29, -2186 in degree 63, and -5266 in degree 69. In particular the first nine moments on X_(3,2) have a semistable common zero; the balanced cubic rank-one theorem forces every such semistable point to have exact coefficient rank two. The existence was originally Hilbert-theoretic; SIC2C3R2FP9 now supplies an exact isolating box and proves that one reduced real realization already fails at mu10. The least full-Jacobian single replacements passing the tested necessary Hilbert conditions through degree 85 are orders 1,...,4,6; 1,...,8,12; 1,...,12,14; and 1,...,12,14 respectively; their observed numerators are palindromic through the Gorenstein-predicted top degree. For degree-four ranks three and four, consecutive moment numerators have no negative coefficient through degree 85; this is not a homogeneous-parameter theorem or an all-order classification. Rank one is safe in every degree by the split-symbol theorem, while the all-order value r_3 and ranks two through four at d=4 remain open.",
       "canonical_source": "extended-geometry/RANK_STRATIFIED_MOMENT_PROGRAM.md",
       "dependencies": [
         "GVCSS",
@@ -8710,11 +8710,213 @@
       "priority": "derived"
     },
     {
+      "id": "SIC2B33RDS",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Full-rank cubic Rodrigues moment survivor is SIC-safe",
+      "scope": "For C=[[0,1,0,1],[-1,0,0,0],[0,-2,0,-1],[0,0,-1,0]], the coefficient matrix has determinant one, rank four, and C^4=-I. Its biform factors as -(xy+y^2+1)(x^2y+x-y), and its beta constant-term polynomial is u^(-3)(u^2+1-t)((1-t)^2-tu^2). Direct constant-term extraction and a Rodrigues identity prove mu_m=E_2(F^m)=0 for every m>=1. More strongly, for every fixed polynomial multiplier Q, integration by parts gives E_2(QF^m)=0 whenever m>3 deg_(Z,Y)(Q). Thus this semistable point disproves moment--nullcone equality in degree three but is not an SIC counterexample; its entire pair-linear orbit is SIC-safe.",
+      "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RODRIGUES_SURVIVOR.md",
+      "dependencies": [
+        "external: Rodrigues formula",
+        "external: polynomial integration by parts"
+      ],
+      "checker": "scripts/verify_two_pair_sic_bidegree33_rodrigues_survivor.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:549622fa256812d549cc284c71489ca4f4f28efc75922475b57fec5fea8f546f",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the claim that degree-three moment--nullcone equality remained undecided",
+        "the use of the full corrected moment zero fiber as a nullcone target"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-SIC2-B33"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "SIC2B33SP8",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete cubic coefficient-support classification through size eight",
+      "scope": "In the standard 4-by-4 monomial coefficient basis, every mixed support of size at most eight is classified over the complex numbers after coefficient-torus normalization. Sizes at most five were already one-sided or unit. Of 7588 six-entry supports, 7586 are unit ideals and the other two have degree-one rational univariate representations giving Rodrigues copies. All 11200 seven-entry supports are unit ideals. Of 12780 eight-entry supports, 12765 are unit ideals through mu12; the sole timed-out odd-parity support is an exact characteristic-zero unit through mu14; and the remaining fourteen supports have twenty normalized complex points exhausted by rational univariate representations. Explicit pair-preserving changes put all twenty points in one-sided form. Therefore every bidegree-(3,3) SIC counterexample has at least nine nonzero entries in this displayed basis. This lower bound is coordinate-dependent and is not a classification of the dense locus.",
+      "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md",
+      "dependencies": [
+        "SIC2B33RDS",
+        "external: msolve exact characteristic-zero rational univariate representations"
+      ],
+      "checker": "scripts/verify_two_pair_sic_bidegree33_sparse_support8.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4fb2cdedde455a4f6059309bcb153ee6932dc798bef0b941a86488c3aab9cef9",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the coefficient-support lower bound five",
+        "the unresolved size-six and size-eight sparse systems"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-SIC2-B33"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "SIC2B33AW14",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Cubic normalized anti-Weyl locus is excluded",
+      "scope": "On the normalized anti-Weyl locus s4=-s2, s5=s1, s6=-s0, t2=0, t3=t1, t4=-t0, every odd contraction moment vanishes by symmetry. Exact characteristic-zero msolve proves that the even moments mu2,mu4,mu6,mu8,mu10,mu12,mu14 generate the unit ideal in QQ[s0,s1,s2,s3,t0,t1]. Hence this entire normalized non-null quadratic subbranch contains no all-order pure-moment point and no SIC counterexample.",
+      "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md",
+      "dependencies": [
+        "external: msolve exact characteristic-zero Groebner bases"
+      ],
+      "checker": "scripts/research_two_pair_sic_bidegree33_anti_weyl.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:0ce6ae07286a5c99672b80ee31e01fc238c9cbe1483e48790f3a007bbdf9b81a",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-SIC2-B33"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "SIC2B33NQL",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Local null-quadratic isolation of the cubic Rodrigues orbit",
+      "scope": "On the normalized null-quadratic s6-chart through the Rodrigues point, exact local standard-basis arithmetic proves that moments through mu11 cut out a local component of scheme length five. On the natural five-variable tangent slice, exact elimination leaves only the two reduced points t3=1/2 and t3=-1/2, the corresponding Rodrigues orbit copies. This is a local and sliced classification, not a global exclusion of the null-quadratic stratum.",
+      "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RODRIGUES_SURVIVOR.md",
+      "dependencies": [
+        "SIC2B33RDS",
+        "external: Singular local standard bases"
+      ],
+      "checker": "scripts/research_two_pair_sic_bidegree33_null_quadratic_s6.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a092cb0ae0c97c6d3a08ba224295823cf8f85b56ebbd0561b8c6cd96695ee3a4",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-SIC2-B33"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "SIC2C3R2FP9",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Isolated exact-rank-two cubic nine-moment component and nonlifting obstruction",
+      "scope": "On the normalized anti-Weyl chart s4=-s2, s5=s1, s6=-s0, t2=0, t3=t1, t4=-t0, exact rational interval arithmetic gives a strict Krawczyk inclusion for (R,I,mu2,mu4,mu6,mu8) in the specified radius-10^-10 rational box, hence a unique real algebraic zero there. All odd moments vanish by symmetry. Every 3-by-3 coefficient minor reduces to zero modulo (R,I), while a 2-by-2 minor is interval-certified nonzero, so the point has exact coefficient rank two. On the smooth 12-dimensional determinantal chart an interval-certified 8-by-8 differential minor, together with the three independent SL2 orbit directions and radial scaling, proves tangent rank eight and shows that the projective quotient point is reduced and isolated. The normalized non-null Sym^2 discriminant proves semistability. Exact interval evaluation of primitive moments gives mu10>0, mu12<0, and mu14>0 throughout the box. Thus this coordinate-level realization of the Hilbert-series-forced rank-two nine-moment component does not lift to either corrected system. The same replay derives the five-variable square-invariant quotient with moment term profiles 39,119,294,1218 and exact characteristic-zero msolve proves that its two rank quartics together with mu4,mu6,mu8,mu12 generate the unit ideal. Therefore the corrected rank-two system has no anti-Weyl point at all. The isolated point remains a finite-prefix theorem, not an all-order moment-zero point.",
+      "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_FINITE_PREFIX.md",
+      "dependencies": [
+        "RSMCENSUS",
+        "external: Krawczyk inclusion theorem",
+        "external: msolve exact characteristic-zero Groebner bases"
+      ],
+      "checker": "scripts/verify_two_pair_sic_bidegree33_rank_two_finite_prefix.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:111e2c460624499df066ee28af1671022bc974298795c39fe79c87a050ad3eb7",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the lack of coordinates or residue-field data for the Hilbert-series-forced rank-two nine-moment component"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-SIC2-B33"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "SIC2C3R2HUR",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Exact exclusions on the generic rank-two cubic Hurwitz chart",
+      "scope": "Normalize the generic rank-two cubic pencil to F=(1+x)B(y)+x^2(lambda+x)D(y), with B(0)=1, eliminate d3 by mu1, and localize the nonzero quadratic discriminant Delta and channel minor M01=b1-a1*b0. Exact characteristic-zero msolve proves that mu2,...,mu8 generate the unit ideal on the complete lambda=0 fibre. The primitive a3 pivot of mu2 is P1=3(3*b0*lambda+3*b0+4*b1). On P1=0, substitution b1=-3*b0*(lambda+1)/4 leaves an a2 pivot P2=-3*(9*b0*lambda^2+2*b0*lambda+9*b0-16*b2-16)/4. Imposing P2=0 and substituting b2=(9*b0*lambda^2+2*b0*lambda+9*b0-16)/16, a second exact rational calculation proves the unit ideal through mu8. The moments of 3F are recovered exactly from symmetric residues modulo 2^521-1 using the coefficient bound (3m)!*52^m. These results exclude one full parameter fibre and the doubly exceptional pivot branch only; the two complementary pivot opens, localization boundaries, other channel charts, projective normalization boundary, and exceptional cubic pencils remain open.",
+      "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_FINITE_PREFIX.md",
+      "dependencies": [
+        "SIC2C3R2FP9",
+        "external: msolve exact characteristic-zero Groebner bases"
+      ],
+      "checker": "scripts/research_two_pair_sic_bidegree33_rank_two_hurwitz.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e013c261f74717d853ae2970c51d36303d24d59afcc4afcd0834a6088b707c81",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the claim that the generic rank-two Hurwitz chart had no characteristic-zero excluded fibre or pivot branch"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-SIC2-B33"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "SIC2C3H27",
       "kind": "reproduction",
       "state": "proved",
       "title": "Rank-two bidegree-(3,3) relative-period and modular recurrence probe",
-      "scope": "On the factor chart C=UW with U in Mat_(4,2) and W in Mat_(2,4), the exact identity nu_m=mu_m/(3m+1)!=CT_u integral_0^1 Phi_C(1,u,t,(1-t)/u)^m dt is verified through order four at two unrelated integral exact-rank-two points. The generic exponent polygon has normalized volume 27, but the forced u=-3 face is c_30*u^(-3)*(1-t)^3, so the constrained beta family lies on the unconstrained face discriminant and the volume is not asserted as a recurrence-order theorem. At both points and over each of 1000003, 1000033, and 1000037, 501 exact modular values admit the same order-27, m-degree-11 recurrence ansatz: 335 equations fit the null vector and 139 unused equations verify it. The monic forward coefficient is identical in all six probes and reconstructs as product_(k in {71,73,74,76,77,79,80,82})(3m+k)*(9m^3-1836m^2+210730m-17920380)/(9*3^8); it has no nonnegative integer root, while an order-27 degree-10 ansatz fails at both points modulo 1000003. These are exact bounded computations and modular evidence for a universal recurrence shape, not a creative-telescoping certificate. The universal parameter denominator, exceptional-locus stratification, and reduction of the missing bridge moments for mu_1,...,mu_12,mu_14 remain open.",
+      "scope": "On the factor chart C=UW with U in Mat_(4,2) and W in Mat_(2,4), the exact identity nu_m=mu_m/(3m+1)!=CT_u integral_0^1 Phi_C(1,u,t,(1-t)/u)^m dt is verified through order four at two unrelated integral exact-rank-two points. These are generic regression fibers, not moment-zero fibers: the first has raw moments mu1,...,mu4 equal to 2502, 120004752, 24426240171840, and 13040211749112437760. The generic exponent polygon has normalized volume 27, but the forced u=-3 face is c_30*u^(-3)*(1-t)^3, so the constrained beta family lies on the unconstrained face discriminant and the volume is not asserted as a recurrence-order theorem. At both points and over each of 1000003, 1000033, and 1000037, 501 exact modular values admit the same order-27, m-degree-11 recurrence ansatz: 335 equations fit the null vector and 139 unused equations verify it. The monic forward coefficient is identical in all six probes and reconstructs as product_(k in {71,73,74,76,77,79,80,82})(3m+k)*(9m^3-1836m^2+210730m-17920380)/(9*3^8); it has no nonnegative integer root, while an order-27 degree-10 ansatz fails at both points modulo 1000003. These are exact bounded computations and modular evidence for a universal recurrence shape, not a creative-telescoping certificate or evidence about the moment-zero locus. The universal parameter denominator, exceptional-locus stratification, and reduction of the missing bridge moments for mu_1,...,mu_12,mu_14 remain open.",
       "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_HOLONOMIC_PROBE.md",
       "dependencies": [
         "RSMCENSUS",
@@ -10636,11 +10838,12 @@
       "kind": "theorem",
       "state": "falsified",
       "title": "All-degree two-pair moment--nullcone conjecture",
-      "scope": "The proposed equality between the common zero set of all two-pair balanced moments and the one-sided SL_2-nullcone is false in every degree d>=4. SIC2C4 and the radial propagation F_d=R^(d-4)F supply an explicit semistable point in V_d=End(Sym^d): all moments of F_d vanish, while E_2(QF_d^m)=(dm+2)!m!/(2m+1)!! is nonzero for every m, which is impossible on the nullcone. The stronger family R^kF^r in degree d=4r+k has exact radial order k; choosing 0<=k<=3 gives bounded radial order in every degree and R-primitive failures for d divisible by four. Explicit endpoint profiles give R-primitive failures in every degree divisible by four that are not proper powers. The nullcone incidence description, its dimension 1+d(d+1)/2, the Krull lower bound (d+1)^2-3, and the Hilbert-series degree-selection tests remain valid structural results. The equality is proved at d=2 and remains undecided at d=3, where the existing triangular chart reductions and boundary exclusions retain their local scope.",
+      "scope": "The proposed equality between the common zero set of all two-pair balanced moments and the one-sided SL_2-nullcone is false in every degree d>=3. At d=3, SIC2B33RDS supplies an explicit determinant-one Rodrigues point with every pure moment zero; it is semistable and hence outside the nullcone, although an all-order integration-by-parts identity proves that this particular orbit is SIC-safe. At every d>=4, SIC2C4 and the radial propagation F_d=R^(d-4)F supply an explicit semistable point with all pure moments zero and a fixed multiplier whose mixed contraction is nonzero for every power. The stronger family R^kF^r in degree d=4r+k has exact radial order k; choosing 0<=k<=3 gives bounded radial order in every degree and R-primitive failures for d divisible by four. The equality is proved at d=2. The nullcone incidence description, its dimension 1+d(d+1)/2, the Krull lower bound (d+1)^2-3, and the Hilbert-series degree-selection tests remain valid structural results, but moment--nullcone equality is no longer the degree-three SIC target.",
       "canonical_source": "extended-geometry/TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md",
       "dependencies": [
         "SIC2C4",
         "SIC2B22",
+        "SIC2B33RDS",
         "SIC2B33S",
         "SIC2B33A",
         "SIC2B33B",
@@ -10673,12 +10876,18 @@
       "id": "OP-SIC2-B33",
       "kind": "open_problem",
       "state": "open",
-      "title": "Complete bidegree-(3,3) two-pair moment-zero classification",
-      "scope": "Determine whether the common zero set of all contraction moments on V_3=End(Sym^3) equals the one-sided nullcone. This no longer decides unrestricted SIC(2), which SIC2C4 falsifies at d=4, but it decides whether bidegree (3,3) is safe and whether the d=4 witness has minimum balanced bidegree. The corrected set mu_1,...,mu_12,mu_14 passes the Hilbert test and has exact rank thirteen, but its zero fiber is unknown. The recorded narrowing stages are SIC2B33U6, SIC2B33R7, SIC2B33I, SIC2B33P8, SIC2B33C9, and SIC2B33QRS. The fixed-fiber Picard--Fuchs stages SIC2C3PF14M, SIC2C3PF14Q0, SIC2C3PFCM, and SIC2C3PFCQ0 prove two all-order modular certificates and reconstruct the exact characteristic-zero compact operator bridge, but they do not classify the parameter space. Existing exact work closes every pure irreducible summand, the diagonal slice, the Sym^4+Sym^2 non-null branch, a four-parameter hardest-boundary family, and all five corrected t0=0 strata. On the t0-open, t0=1 reduces mu_3 to one base equation and (mu_4,mu_5) to an exact rank-six fiber; changed bases retain finite length on Q,J,K,H and their recorded intersections. One rational point and one rational mu_3-zero curve give exact characteristic-zero successive Fitting exclusions, including an irreducible degree-198 mu_6 norm numerator and a coprime next pencil coefficient. Directional modular interpolation gives the denominator models a2^41*Q^3*J^3 and a2^42*Q^4*J^4. Forty-four generic full-pencil shards test 39600 finite-field mu_3-roots; twenty reduced common points through mu_7 are all excluded by mu_8. The lower-stratum continuation at p=43 retains 27000 further roots across Q,J,K,H,KH,QJH,JH,JK,a2=0 and the repeated-root stratum; all seventeen sampled reduced common points through mu_7 are excluded by mu_8. A separate 6300-root rank-complement scout finds four points outside both selected pivots but every one has full rank in [M_mu6 M_mu7], and no joint-rank-at-most-four point. Exact modular liftstd calculations extract irreducible leading-coefficient borders on nine strata; they contain every retained quotient-length drop. On Q,J,JK the sampled border zeros are exactly the drops, while QJH,JH require alternate same-length charts at some border points. Factoring the quadratic-in-s3 border resultants leaves residual degree-20 and degree-24 components. Their first pseudo-remainder A*s3+B is coprime to every residual factor, giving a dense linear s3 pivot on each. The Q border and projection are promoted to characteristic zero: the irreducible degree-36 border has 588 terms, and its exact resultant is c*u^20*J_Q^4*R_20^2 with irreducible 200-term degree-20 residual factor and coprime dense pivot. On its exact s1=ell=0 one-parameter slice, the degree-100 mu_6-norm factor is excluded by mu_7 and the only remaining cubic factor specializes the Kummer extension to u^4, so it is removed by the u-open localization; the whole slice is therefore excluded exactly. The full Q component, the other border factorizations, and all rank scouts remain unproved globally. The next exact step is unspecialized quotient arithmetic in the Q degree-five extension and the remaining modular degree-five and degree-six extensions, followed by mu_6 through mu_8 Fitting tests and recursion on exceptional subresultant loci; repeated-mu_3 and later corrected orders remain separate.",
+      "title": "Complete bidegree-(3,3) two-pair SIC classification",
+      "scope": "Determine whether every bidegree-(3,3) all-order pure-moment point is SIC-safe, or exhibit a fixed multiplier with an infinite nonzero mixed tail. This decides whether the known bidegree-(4,4) counterexample has minimum balanced bidegree. Moment--nullcone equality is already false: SIC2B33RDS is a full-rank semistable all-order Rodrigues survivor, but its explicit integration-by-parts cutoff proves that orbit safe. Rank one and the one-sided nullcone are safe. SIC2B33SP8 proves that any counterexample has at least nine nonzero standard-basis coefficients. SIC2B33AW14 excludes the normalized anti-Weyl branch, SIC2C3R2FP9 proves that its isolated rank-two nine-moment point fails already at mu10 and that the corrected rank-two system has no anti-Weyl point, SIC2C3R2HUR excludes the complete lambda=0 fibre and the doubly exceptional mu2-pivot branch on one generic rank-two Hurwitz channel chart, and SIC2B33NQL locally isolates the Rodrigues orbit on one null-quadratic chart. Existing exact work also closes every pure irreducible summand, the diagonal slice, the Sym^4+Sym^2 non-null branch, a four-parameter hardest-boundary family, and all five corrected t0=0 strata. On the remaining normalized non-null branch, exact quotient arithmetic and specialized Fitting calculations exclude substantial divisors and fibers, but the unspecialized Q component, other border factors, and later corrected moments are not globally classified. On the generic rank-two Hurwitz chart, the two complementary mu2-pivot opens, localization boundaries, other channel charts, the projective normalization boundary, and exceptional cubic-pencil divisors remain open. The rest of the null-quadratic stratum, the F2=0 boundary, and dense ranks three and four also remain open. Finite-field units and bounded searches are evidence only unless lifted to characteristic zero and all omitted chart boundaries are covered.",
       "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md",
       "dependencies": [
         "SIC2C4",
         "SIC2B22",
+        "SIC2B33RDS",
+        "SIC2B33SP8",
+        "SIC2B33AW14",
+        "SIC2B33NQL",
+        "SIC2C3R2FP9",
+        "SIC2C3R2HUR",
         "SIC2B33S",
         "SIC2B33A",
         "SIC2B33B",

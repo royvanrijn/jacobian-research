@@ -2,12 +2,21 @@
 
 ## 1. Status
 
-This note starts the first genuinely new two-pair bidegree after the
+This note treats the first genuinely new two-pair bidegree after the
 complete bidegree-\((2,2)\) theorem.  Unequal bidegrees are already
 one-sided for the total dual-minus-coordinate grading, so the next balanced
 case is \((3,3)\).
 
-Ten exact characteristic-zero results are proved here:
+The moment--nullcone question in this degree is now settled negatively.
+The explicit six-entry form in the
+[Rodrigues-survivor theorem](TWO_PAIR_SIC_BIDEGREE33_RODRIGUES_SURVIVOR.md)
+has every pure contraction moment zero and has invertible coefficient
+matrix.  It is nevertheless SIC-safe: for every fixed multiplier \(Q\),
+\(\mathcal E_2(QF^m)=0\) once
+\(m>3\deg_{Z,Y}Q\).  Thus \(\mathrm{MN}_3\) is false, but this does not
+produce a bidegree-\((3,3)\) SIC counterexample.
+
+The ten earlier exact characteristic-zero results are:
 
 1. the full pair-linear one-sided nullcone in the sixteen-dimensional
    coefficient space has an exact seven-parameter elimination, dimension
@@ -42,11 +51,46 @@ Ten exact characteristic-zero results are proved here:
     strictly containing the earlier two-parameter plane, is excluded
     exactly by moments \(3,\ldots,7\).
 
+Seven further exact results sharpen the remaining SIC problem:
+
+11. on the normalized anti-Weyl locus, all odd moments vanish by symmetry
+    and the even moments through order fourteen generate the unit ideal
+    over \(\mathbb Q\);
+12. every mixed coefficient support of size at most five is classified
+    exactly, and all \(11{,}200\) seven-entry coefficient tori are excluded
+    over \(\mathbb Q\) by moments through order twelve;
+13. among the \(7{,}588\) six-entry coefficient tori, exactly two
+    normalized complex points survive, as proved by degree-one RURs; they
+    are Weyl/torus copies of the full-rank Rodrigues form;
+14. the all-order Rodrigues and integration-by-parts identities prove that
+    orbit SIC-safe with the explicit multiplier bound above; and
+15. on its normalized null-quadratic \(s_6\)-chart, it is an isolated
+    length-five local component through \(\mu_{11}\), while its natural
+    five-variable tangent slice has no other reduced point.
+16. the rank-two nine-moment fiber has an explicitly isolated semistable
+    real point on the anti-Weyl chart; its projective quotient point is
+    reduced, and it is excluded from both corrected systems already by
+    the certified sign \(\mu_{10}>0\).
+17. all \(12{,}780\) mixed eight-entry coefficient tori are classified:
+    \(12{,}765\) are unit ideals through order twelve, the unique timed-out
+    odd-parity system is a unit ideal through order fourteen, and every
+    complex point on the other fourteen systems is explicitly one-sided.
+18. on the generic rank-two Hurwitz chart with \(B(0)=1\),
+    \(\Delta M_{01}\ne0\), exact characteristic-zero elimination excludes
+    the complete \(\lambda=0\) fibre and the doubly exceptional
+    \(\mu_2\)-pivot branch \(P_1=P_2=0\), both already through
+    \(\mu_8\).
+
 The fourth result excludes every SIC(2) counterexample lying in a single
 irreducible summand.  The sixth gives dimension-sized moment coordinates,
-not the required zero-fiber theorem.  The full mixed
+not a zero-fiber theorem.  Results 11--18 remove the first semistable
+all-order survivor from the SIC search and force any counterexample to
+have at least nine nonzero entries in the displayed coefficient basis.
+They do not classify the remaining full mixed
 \(\operatorname{Sym}^6\oplus\operatorname{Sym}^4\oplus
-\operatorname{Sym}^2\) problem remains open.
+\operatorname{Sym}^2\) locus.  Consequently bidegree-\((3,3)\) SIC safety,
+and hence minimality of the known bidegree-\((4,4)\) counterexample,
+remains open.
 
 Use contraction pairs \((W,Z),(V,Y)\) and the basis
 
@@ -1555,8 +1599,69 @@ global norm divisor, its successive common-root/Fitting equations, the
 lower-dimensional
 coefficient strata and inherited \(Q_*,J_*\) branch radicals, and
 corrected orders \(7,8,9,10,11,12,14\) remain unresolved.  Neither a
-semistable moment-zero point nor a radical equality follows from the
-present certificates.
+semistable moment-zero point on this normalized non-null branch nor a
+radical equality follows from the present certificates.  The Rodrigues
+point found below lies instead on the null-quadratic branch.
+
+### 5.15 The anti-Weyl locus
+
+There is one exact involutive subbranch of the normalized non-null
+quadratic chart.  Put
+\[
+\omega_a(X,T)=(aT,-a^{-1}X),\qquad q=a^2.
+\]
+The condition \(\omega_a(F)=-F\) is
+\[
+\begin{gathered}
+s_4=-qs_2,\qquad s_5=q^2s_1,\qquad s_6=-q^3s_0,\\
+t_2=0,\qquad t_3=qt_1,\qquad t_4=-q^2t_0.              \tag{5.15a}
+\end{gathered}
+\]
+The residual torus conjugates \(a\) to one.  The retained coordinates are
+\[
+(s_0,s_1,s_2,s_3,t_0,t_1),
+\]
+and (5.15a) becomes
+\[
+s_4=-s_2,\quad s_5=s_1,\quad s_6=-s_0,\quad
+t_2=0,\quad t_3=t_1,\quad t_4=-t_0.                   \tag{5.15b}
+\]
+Haar invariance gives
+\[
+\mu_m(F)=\mu_m(\omega_1F)=(-1)^m\mu_m(F),
+\]
+so every odd moment vanishes identically.  Up to the common nonzero
+factor in the raw contraction, the quadratic equation is
+\[
+3s_0^2+18s_1^2+45s_2^2+30s_3^2
+-14t_0^2-56t_1^2+70.                                  \tag{5.15c}
+\]
+
+Exact characteristic-zero `msolve` computation gives
+\[
+(\mu_2,\mu_4,\mu_6,\mu_8,\mu_{10},\mu_{12},\mu_{14})
+=\mathbb Q[s_0,s_1,s_2,s_3,t_0,t_1].                  \tag{5.15d}
+\]
+
+> **Proposition 5.6 (anti-Weyl exclusion).** The anti-Weyl locus
+> (5.15a) in the normalized non-null quadratic branch contains no
+> all-order pure-moment point and hence no SIC counterexample.
+
+The exact unit output is stored in
+[`two_pair_sic_bidegree33_anti_weyl_normalized_msolve14_char0.json`](../artifacts/generated-results/two_pair_sic_bidegree33_anti_weyl_normalized_msolve14_char0.json).
+
+The full even-moment unit ideal does not say where a finite-prefix component
+first fails.  The
+[isolated rank-two finite-prefix theorem](TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_FINITE_PREFIX.md)
+supplies that missing local calculation.  It gives a rational isolating box
+for a unique exact-rank-two semistable zero of
+\(\mu_1,\ldots,\mu_9\), proves that the projective quotient point is reduced
+and isolated, and certifies \(\mu_{10}>0,\mu_{12}<0,\mu_{14}>0\).
+Thus this explicit realization of the Hilbert-series component does not
+survive either corrected system.  The same checker derives the five-variable
+square-invariant quotient and proves over \(\mathbb Q\) that its two rank
+quartics together with \(\mu_4,\mu_6,\mu_8,\mu_{12}\) generate the unit
+ideal.  Hence the corrected rank-two system has no anti-Weyl point at all.
 
 ### Trace/norm reconnaissance on the \(L\)-open
 
@@ -1927,32 +2032,89 @@ construct the finite special quotient of \(\mu_2,\ldots,\mu_{12}\) on
 each stratum and test \(\mu_{14}\) there, while decomposing the common
 boundary beyond (5.13).
 
-## 6. Degree-three continuation after the all-degree failure
+## 6. Degree-three continuation after the Rodrigues survivor
 
-Further full-coefficient Gröbner elimination is no longer the primary
-attack. The
+The former global quadratic-anchor target is false.  The
+[Rodrigues survivor](TWO_PAIR_SIC_BIDEGREE33_RODRIGUES_SURVIVOR.md)
+has null but nonzero quadratic component, invertible coefficient matrix,
+and every pure moment zero.  Its all-order beta--Rodrigues identity
+nevertheless proves eventual mixed vanishing for every fixed multiplier.
+Thus the degree-three task is no longer to prove moment--nullcone
+equality.  It is to classify the remaining semistable pure-moment orbits
+and prove each one SIC-safe, or to find one with a persistent regular
+multiplier.
+
+The
 [moment--nullcone program](TWO_PAIR_SIC_MOMENT_NULLCONE_PROGRAM.md)
-places (5.4)--(5.5) inside the decomposition
+still places (5.4)--(5.5) inside the decomposition
 
 \[
  \operatorname{End}(\operatorname{Sym}^d)
  \cong\bigoplus_{r=0}^d\operatorname{Sym}^{2r}
 \]
 
-for arbitrary \(d\).  The
-[bidegree-\((4,4)\) counterexample](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md)
-shows that the proposed moment--nullcone equality is false in general.
-For the still-open \(d=3\) classification, the first target remains a
-global invariant
-quadratic-anchor certificate: all moments should force the discriminant of
-the \(\operatorname{Sym}^2\) component to vanish. The next target is a
-common-root synchronization identity forcing the higher binary-form
-components into the same destabilizing flag.  These are now
-degree-three targets, not steps toward a uniform SIC(2) theorem.
+for arbitrary \(d\), but the relevant degree-three split now has three
+parts:
 
-Reconstructing \(c^{25}\) over \(\mathbb Q\) remains a legitimate
-specialized check, but by itself it does not supply either general
-identity.
+1. the normalized non-null quadratic branch of Section 5, including its
+   explicit residual \(Q\)- and \(J\)-divisors;
+2. the nonzero null-quadratic charts, where the Rodrigues orbit is locally
+   isolated to length five through \(\mu_{11}\); and
+3. the boundary \(F_2=0\).
+
+The complete sparse census proves that a new SIC counterexample, if one
+exists, has at least nine nonzero entries in the displayed coefficient
+basis.  For size six, full complex degree-one RURs show that the two
+nonunit systems contain only the Rodrigues copies.  At size eight the
+sole hard odd-parity support is an exact characteristic-zero unit through
+\(\mu_{14}\).  The remaining fourteen systems contain twenty normalized
+complex points in total.  Twelve are the rectangular families
+
+\[
+\begin{aligned}
+ &(W^{3-a}V^a-3^{b-a}W^{3-b}V^b)(Z+Y/3)^3,\\
+ &(W-rV)^3(Z^{3-c}Y^c+Z^{3-d}Y^d),
+ \qquad r^{d-c}=(-1)^{d-c+1},
+\end{aligned}
+\]
+
+and are visibly one-sided.  One exceptional system consists of the three
+points \(q^3=1\), each obtained from the finite-flag one-sided normal form
+with parameters
+
+\[
+(-3q^2,-3q,0,-1,3q,-3q^2)
+\]
+
+in the ordered positions \(i>j\).  The last point factors, after the
+pair-preserving change
+\(A=W-V,B=W+V,P=Z+Y,Q=Z-Y\), as
+
+\[
+ -AP(AQ-BP)(AQ+BP)/4
+\]
+
+and has only the two negative-weight positions \((0,1),(2,3)\) in the
+primed pair coordinates.  The RUR eliminant degrees are respectively
+\(1\), \(d-c\), \(3\), and \(1\), so these displayed points exhaust the
+complex zero sets, not merely their real loci.
+
+This support statement is not invariant under the diagonal
+\(\mathrm{SL}_2\)-action, but it removes every support of size at most
+eight from later coefficient-torus calculations.  The next global
+computation should saturate each normalized chart by the nullcone and the
+explicit Rodrigues orbit before eliminating later moments.  Reconstructing
+a specialized norm or a single finite-field quotient remains useful
+evidence, but cannot replace this residual component calculation.
+
+On the exact-rank-two locus, the
+[Hurwitz-chart calculation](TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_FINITE_PREFIX.md#4-two-exact-exclusions-on-the-generic-hurwitz-chart)
+now removes the full \(\lambda=0\) fibre and the branch on which both
+successive \(\mu_2\) pivots vanish.  The two principal-open branches
+\(P_1\ne0\) and \(P_1=0,\ P_2\ne0\), the localization boundaries, other
+channel charts, and exceptional cubic pencils remain.  The original
+seven-equation system has mixed volume \(74\,144\); this is a complexity
+measurement, not a root count or an exclusion theorem.
 
 ## Reproduction
 
@@ -1984,3 +2146,53 @@ the full chart ideals, which is evidence only, is run separately with
   --orders 2,3,4,5,6,7,8,9,10,11,12,14 \
   --timeout 180 --backend msolve --charts s0
 ```
+
+The exact Rodrigues, anti-Weyl, sparse, and null-chart certificates are
+replayed by
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_rodrigues_survivor.py
+
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_anti_weyl.py \
+  --prime 0 --through 14 --backend msolve \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_anti_weyl_normalized_msolve14_char0.json
+
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_null_quadratic_s6.py \
+  --orders 2,3,4,5,6,7,8,9,10,11 --skip-solver \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_null_quadratic_s6_local.json
+
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_sparse_survivor_rur.py
+
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_sparse_support8.py
+```
+
+The two characteristic-zero Hurwitz exclusions are replayed by
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_hurwitz.py \
+  --characteristic-zero --backend msolve --minor 01 \
+  --lambda-value 0 --orders 2,3,4,5,6,7,8 \
+  --timeout 60 --memory-gb 3 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_rank_two_hurwitz_lambda0_char0.json
+
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_hurwitz.py \
+  --characteristic-zero --backend msolve --minor 01 \
+  --orders 2,3,4,5,6,7,8 \
+  --mu2-pivot-boundary-reduced secondary \
+  --timeout 120 --memory-gb 3 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_rank_two_hurwitz_secondary_boundary_char0.json
+```
+
+The sharded size-six and size-seven census commands are recorded in
+[`REPRODUCE.md`](../REPRODUCE.md).

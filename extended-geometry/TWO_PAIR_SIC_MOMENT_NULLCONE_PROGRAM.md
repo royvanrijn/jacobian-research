@@ -114,8 +114,13 @@ reach order at least \(2d\).
 The representation theory, nullcone incidence geometry, Hilbert-series
 tests, and exact bidegree-\((2,2)\) and \((3,3)\) calculations below remain
 valid at their stated scopes.  They now serve a degree-by-degree
-classification program: \(\mathrm{MN}_2\) is true, \(\mathrm{MN}_3\)
-remains open, and \(\mathrm{MN}_d\) is false for every \(d\geq4\).
+classification program: \(\mathrm{MN}_2\) is true, while
+\(\mathrm{MN}_d\) is false for every \(d\geq3\).  In degree three the
+[full-rank Rodrigues survivor](TWO_PAIR_SIC_BIDEGREE33_RODRIGUES_SURVIVOR.md)
+has all pure moments zero and determinant one.  Unlike the degree-four
+witness, however, it is SIC-safe: every fixed multiplier \(Q\) vanishes
+against its powers once
+\(m>3\deg_{Z,Y}Q\).
 
 There is a sharper operational split.  The
 [split-symbol theorem](SPLIT_SYMBOL_GVC_THEOREM.md) proves the complete
@@ -138,15 +143,16 @@ For \(d\geq 1\), let \(V_d\) be the space of two-pair forms of bidegree
 
 The central target is:
 
-> **Falsified moment--nullcone conjecture \(\mathrm{MN}_d\).** The common zero set of
-> all \(\mu_m\) on \(V_d\) is the pair-linear one-sided nullcone.
+> **Falsified moment--nullcone conjecture \(\mathrm{MN}_d\).** The common
+> zero set of all \(\mu_m\) on \(V_d\) is the pair-linear one-sided
+> nullcone.
 
 The [complete bidegree-\((2,2)\) theorem](TWO_PAIR_SIC_BIDEGREE22_FRONTIER.md)
-proves \(\mathrm{MN}_2\). The
-[bidegree-\((3,3)\) frontier](TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md) proves it
-on every pure irreducible summand and on one mixed branch.  The structural
-route still organizes those exact results, but it cannot scale to a
-uniform theorem because it fails at \(d=4\).
+proves \(\mathrm{MN}_2\).  The Rodrigues survivor disproves
+\(\mathrm{MN}_3\), and the propagated degree-four witness disproves every
+\(\mathrm{MN}_d\) for \(d\geq4\).  The structural route still organizes
+the exact strata and is useful for the logically weaker SIC question, but
+moment--nullcone equality itself is no longer the degree-three target.
 
 ## 2. The balanced representation
 

@@ -8481,3 +8481,176 @@ and minimal-resolution length three for both Jacobian ideals; it is not a
 bounded search.  The formulas, the corrected Saito--incidence proposition,
 and the external-candidate gates are in
 [`cancellation/FREE_DISCRIMINANT_SAITO_EXPERIMENT.md`](cancellation/FREE_DISCRIMINANT_SAITO_EXPERIMENT.md).
+
+## Bidegree-\((3,3)\) Rodrigues survivor and sparse census
+
+Verify the full-rank all-order pure-moment survivor, its beta factorization,
+the Rodrigues identity, and the arbitrary-multiplier SIC cutoff with:
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_rodrigues_survivor.py
+```
+
+Reproduce its exact normalized null-quadratic local certificate and the
+five-variable Singular slice with:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_null_quadratic_s6.py \
+  --orders 2,3,4,5,6,7,8,9,10,11 --skip-solver \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_null_quadratic_s6_local.json
+```
+
+The optional unsaturated full ten-variable modular solve is an experiment,
+not part of the local theorem.  It can be run by omitting
+`--skip-solver` and adding `--prime 43 --timeout 600`.
+
+Reproduce the exact characteristic-zero anti-Weyl exclusion with:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_anti_weyl.py \
+  --prime 0 --through 14 --backend msolve \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_anti_weyl_normalized_msolve14_char0.json
+```
+
+Reproduce the exact isolated rank-two nine-moment component and its
+nonlifting signs with:
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_rank_two_finite_prefix.py
+```
+
+This exact calculation builds the primitive anti-Weyl
+moments, performs the rational Krawczyk inclusion in the radius-\(10^{-10}\)
+box, proves coefficient rank two, certifies tangent rank eight on the smooth
+rank-two chart, and bounds the primitive moments with signs
+\(\mu_{10}>0,\mu_{12}<0,\mu_{14}>0\).  It writes
+`artifacts/generated-results/two_pair_sic_bidegree33_rank_two_finite_prefix.json`.
+It also derives the five-variable anti-Weyl square-invariant quotient and,
+using characteristic-zero `msolve`, proves the unit ideal for the corrected
+rank-two system on this chart.
+
+Reproduce the two exact exclusions on the generic rank-two Hurwitz chart
+with:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_hurwitz.py \
+  --characteristic-zero --backend msolve --minor 01 \
+  --lambda-value 0 --orders 2,3,4,5,6,7,8 \
+  --timeout 60 --memory-gb 3 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_rank_two_hurwitz_lambda0_char0.json
+
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_hurwitz.py \
+  --characteristic-zero --backend msolve --minor 01 \
+  --orders 2,3,4,5,6,7,8 \
+  --mu2-pivot-boundary-reduced secondary \
+  --timeout 120 --memory-gb 3 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_rank_two_hurwitz_secondary_boundary_char0.json
+```
+
+The first command proves the unit ideal on the full \(\lambda=0\) fibre
+after localizing the quadratic discriminant and the \(01\) channel minor.
+The second imposes both successive \(\mu_2\)-pivot equations and proves
+that branch unit.  The \(521\)-bit modular construction is an exact
+integer recovery: the script checks the coefficient bound
+\((3m)!\,52^m\) before invoking `msolve` over \(\mathbb Q\).
+
+For a numerical-algebraic complexity estimate only, run:
+
+```bash
+julia --project=. \
+  scripts/research_two_pair_sic_bidegree33_rank_two_homotopy.jl
+```
+
+It reports mixed volume \(74\,144\) for the unreduced square system
+\(\mu_2,\ldots,\mu_8\).  This is not an exclusion, a solution count, or
+a characteristic-zero certificate.
+
+The complete six-entry coefficient-torus census is split into four
+independent exact characteristic-zero shards:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_sparse_six_counterexample.py \
+  --support-size 6 --through 12 --start 0 --limit 1897 \
+  --output /tmp/two_pair_sic_bidegree33_sparse_six_support_screen_shard0.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_sparse_six_counterexample.py \
+  --support-size 6 --through 12 --start 1897 --limit 1897 \
+  --output /tmp/two_pair_sic_bidegree33_sparse_six_support_screen_shard1.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_sparse_six_counterexample.py \
+  --support-size 6 --through 12 --start 3794 --limit 1897 \
+  --output /tmp/two_pair_sic_bidegree33_sparse_six_support_screen_shard2.json
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_sparse_six_counterexample.py \
+  --support-size 6 --through 12 --start 5691 --limit 1897 \
+  --output /tmp/two_pair_sic_bidegree33_sparse_six_support_screen_shard3.json
+
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_sparse_six_counterexample.py \
+  --support-size 6 \
+  --combine-input /tmp/two_pair_sic_bidegree33_sparse_six_support_screen_shard0.json \
+  --combine-input /tmp/two_pair_sic_bidegree33_sparse_six_support_screen_shard1.json \
+  --combine-input /tmp/two_pair_sic_bidegree33_sparse_six_support_screen_shard2.json \
+  --combine-input /tmp/two_pair_sic_bidegree33_sparse_six_support_screen_shard3.json \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_sparse_six_support_screen.json
+```
+
+For support size seven, replace the four starts by
+`0,2800,5600,8400`, use `--limit 2800 --support-size 7`, name the
+temporary files `two_pair_sic_bidegree33_sparse_support7_shard0.json`
+through `shard3.json`, and combine them into
+`artifacts/generated-results/two_pair_sic_bidegree33_sparse_support7_screen.json`.
+The size-six census has exactly two normalized survivors, both on the
+Rodrigues orbit; the size-seven census excludes all \(11{,}200\) mixed
+coefficient tori.  Boundaries are covered by the separately verified
+smaller-support results.
+
+Certify that the two size-six nonunit systems each have exactly one
+complex point, rather than merely one real box, with:
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_sparse_survivor_rur.py
+```
+
+For support size eight, use four contiguous shards of length 3,195 with
+starts `0,3195,6390,9585`, `--support-size 8 --through 12`, and combine
+them into
+`artifacts/generated-results/two_pair_sic_bidegree33_sparse_support8_screen.json`.
+The sole timeout in that census is reproduced exactly with:
+
+```bash
+.venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_sparse_six_counterexample.py \
+  --support-size 8 --through 14 --start 8384 --limit 1 \
+  --timeout 600 --threads 4 \
+  --output \
+  artifacts/generated-results/two_pair_sic_bidegree33_sparse_support8_parity_msolve14_char0.json
+```
+
+The recorded run takes about eight minutes.  Validate that unit
+certificate, rerun full complex RURs for the fourteen nonunit systems,
+and check their explicit one-sided normal forms with:
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_sparse_support8.py
+```
+
+Add `--rerun-parity` only when intentionally refreshing the pinned
+long-running parity artifact.  The resulting theorem is a complete
+coefficient-torus classification through support size eight: any actual
+bidegree-\((3,3)\) SIC counterexample has at least nine nonzero standard
+monomial coefficients.
