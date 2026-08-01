@@ -8,7 +8,9 @@ field implementation first, then apply the involution fixing h and negating
 
 Before using that quotient as a coefficient field, reduce its primitive
 quintic modulo 67.  Exact modular irreducibility then implies irreducibility
-over Q by Gauss's lemma, making the field assumption explicit in this replay.
+over Q by Gauss's lemma.  The archived image of q=u^7 is also checked against
+the intrinsic degree-five eliminant.  Since the field degree is the prime 5
+and that image is non-rational, this identifies the quotient field exactly.
 
 The new adjacent-minor proof, replayed by the following CI step, forces every
 hard-ideal solution onto h=N=0.  This checker therefore also replays the pinned
@@ -33,7 +35,7 @@ EXACT_REPLAY = REPO / (
 )
 sys.path.insert(0, str(EXACT_REPLAY))
 
-from degree5_core import decode_poly, sign_substitution  # noqa: E402
+from degree5_core import L, decode_l, decode_poly, sign_substitution  # noqa: E402
 
 BRANCH1 = EXACT_REPLAY / "hne0_polred.pkl"
 BRANCH2 = EXACT_REPLAY / "hne0_branch2_polred.pkl"
@@ -44,6 +46,23 @@ SERIALIZED_MARKERS = (
     "s=c H0_SERIALIZED_EXACT_PASS",
     "s=-c H0_SERIALIZED_EXACT_PASS",
     "ALL_SERIALIZED_EXACT_CERTIFICATES_PASS",
+)
+QUOTIENT_ELIMINANT = (
+    -1888043347611739526396142670327809715470336,
+    586529490054134032292876680565455306752,
+    591414847960503971284831143987840,
+    265472843532245531128968765,
+    62410476400737833472,
+    9374377445732,
+)
+PHI = decode_l(
+    {
+        0: (-9725570295901, 12623962),
+        1: (-1170753213563, 971074),
+        2: (-387111042229, 12623962),
+        3: (1578225240619, 12623962),
+        4: (-469713794365, 6311981),
+    }
 )
 
 w = sp.Symbol("w")
@@ -56,6 +75,13 @@ assert minpoly_mod_67.is_irreducible, (
     "the Case-1 quintic coefficient algebra is not certified as a field"
 )
 print("CASE1_QUINTIC_FIELD_IRREDUCIBLE_PASS")
+
+quotient_residual = L(0)
+for coefficient in reversed(QUOTIENT_ELIMINANT):
+    quotient_residual = quotient_residual * PHI + coefficient
+assert not quotient_residual, "the intrinsic quotient eliminant does not vanish at q=phi"
+assert PHI.p.degree() > 0, "the quotient generator unexpectedly lies in Q"
+print("CASE1_QUINTIC_DESCENT_PASS")
 
 branch1 = [decode_poly(item) for item in pickle.loads(BRANCH1.read_bytes())]
 branch2 = [decode_poly(item) for item in pickle.loads(BRANCH2.read_bytes())]
