@@ -20,11 +20,19 @@ jobs:
   verify:
     name: verify-${{ matrix.suite }}
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: ${{ matrix.timeout }}
     strategy:
       fail-fast: false
       matrix:
-        suite: [core, theorems, regressions, derived]
+        include:
+          - suite: core
+            timeout: 45
+          - suite: theorems
+            timeout: 120
+          - suite: regressions
+            timeout: 45
+          - suite: derived
+            timeout: 45
 
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
@@ -35,7 +43,7 @@ jobs:
           python-version-file: .python-version
           cache: pip
       - name: Install system CAS dependencies
-        if: ${{ matrix.suite == 'theorems' || matrix.suite == 'regressions' }}
+        if: ${{ matrix.suite == 'theorems' || matrix.suite == 'regressions' || matrix.suite == 'derived' }}
         run: |
           sudo apt-get update
           sudo apt-get install --yes --no-install-recommends singular
@@ -59,6 +67,73 @@ jobs:
         with:
           name: verification-${{ matrix.suite }}-${{ github.sha }}
           path: artifacts/verification/
+          if-no-files-found: error
+          retention-days: 14
+
+  jc72_108:
+    name: jc72-108-closure
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version-file: .python-version
+          cache: pip
+      - name: Install exact replay dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends singular
+          python -m pip install --requirement requirements.txt
+      - name: Replay the finite Proposition-4.3 and quotient-first audits
+        shell: bash
+        run: |
+          mkdir -p artifacts/verification
+          set -euo pipefail
+          python plane-jc/cas/verify_prop43_exhaustiveness.py | tee artifacts/verification/jc72-108-prop43.log
+          grep -q '^PROP43_EXHAUSTIVENESS_AUDIT_PASS$' artifacts/verification/jc72-108-prop43.log
+          python plane-jc/cas/verify_prime_defect_tail.py | tee artifacts/verification/jc72-108-prime-defect.log
+          grep -q '^PRIME_DEFECT_TAIL_PASS$' artifacts/verification/jc72-108-prime-defect.log
+          python plane-jc/cas/verify_mu7_quotient_firstblock.py | tee artifacts/verification/jc72-108-mu7.log
+          grep -q '^MU7_QUOTIENT_FIRSTBLOCK_PASS$' artifacts/verification/jc72-108-mu7.log
+          python plane-jc/cas/research_72_108_gap_attack.py | tee artifacts/verification/jc72-108-structure.log
+          grep -q '^STRUCTURAL_GAP_ATTACK_PASS$' artifacts/verification/jc72-108-structure.log
+          python plane-jc/cas/verify_firstblock_quotient_graph.py | tee artifacts/verification/jc72-108-quotient-graph.log
+          grep -q '^QUOTIENT_GRAPH_EXACT_PASS$' artifacts/verification/jc72-108-quotient-graph.log
+      - name: Verify exact transport between the two Case-1 sign branches
+        shell: bash
+        run: |
+          set -euo pipefail
+          python plane-jc/cas/verify_case1_branch_symmetry.py | tee artifacts/verification/jc72-108-branch-symmetry.log
+          grep -q '^CASE1_BRANCH_SYMMETRY_PASS$' artifacts/verification/jc72-108-branch-symmetry.log
+      - name: Replay the characteristic-zero Case-1 determinantal closure
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/research_jc72_108_case1_rankdrop.py /tmp/case1-exact.sing | tee artifacts/verification/jc72-108-case1-generate.log
+          grep -q '^CASE1_RECONSTRUCTION_PASS$' artifacts/verification/jc72-108-case1-generate.log
+          grep -q '^CASE1_SPECIAL_FIBRE_PYTHON_PASS$' artifacts/verification/jc72-108-case1-generate.log
+          Singular -q /tmp/case1-exact.sing | tee artifacts/verification/jc72-108-case1-exact.log
+          grep -q '^CASE1_SPECIAL_FIBRE_BEZOUT_PASS$' artifacts/verification/jc72-108-case1-exact.log
+          grep -q '^CASE1_N_MOD_H_PASS$' artifacts/verification/jc72-108-case1-exact.log
+          grep -q '^RANKDROP_EXACT_UNIT_PASS$' artifacts/verification/jc72-108-case1-exact.log
+      - name: Replay the explicit good-prime syzygy regression
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/research_jc72_108_case1_rankdrop.py /tmp/case1-p71.sing --prime 71 --lift | tee artifacts/verification/jc72-108-p71-generate.log
+          Singular -q /tmp/case1-p71.sing | tee artifacts/verification/jc72-108-p71.log
+          grep -q '^RANKDROP_UNIT_IDENTITY_PASS$' artifacts/verification/jc72-108-p71.log
+          grep -q '^CASE1_H_DETERMINANTAL_PASS$' artifacts/verification/jc72-108-p71.log
+      - name: Archive the JC72-108 replay logs
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: jc72-108-closure-${{ github.sha }}
+          path: artifacts/verification/jc72-108-*.log
           if-no-files-found: error
           retention-days: 14
 
@@ -249,7 +324,7 @@ jobs:
   verification-complete:
     name: verification-complete
     if: ${{ always() }}
-    needs: [verify, formal-lean, formal_local_lean, papers, macaulay2]
+    needs: [verify, jc72_108, formal-lean, formal_local_lean, papers, macaulay2]
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
@@ -257,12 +332,14 @@ jobs:
       - name: Require every verification layer
         env:
           PYTHON_RESULT: ${{ needs.verify.result }}
+          JC72_RESULT: ${{ needs.jc72_108.result }}
           LEAN_RESULT: ${{ needs.formal-lean.result }}
           LOCAL_LEAN_RESULT: ${{ needs.formal_local_lean.result }}
           PAPERS_RESULT: ${{ needs.papers.result }}
           MACAULAY2_RESULT: ${{ needs.macaulay2.result }}
         run: |
           test "$PYTHON_RESULT" = success
+          test "$JC72_RESULT" = success
           test "$LEAN_RESULT" = success
           test "$LOCAL_LEAN_RESULT" = success
           test "$PAPERS_RESULT" = success

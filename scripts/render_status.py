@@ -44,6 +44,7 @@ CORE_ORDER = [
     "R1", "R2", "AMS1", "IA1",
 ]
 ACTIVE_OPEN = {
+    "GVC2ALL",
     "OP-CR",
     "OP-CCDM",
     "OP-GVC2-RP",
