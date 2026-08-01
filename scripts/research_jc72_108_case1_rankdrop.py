@@ -1,18 +1,22 @@
 #!/usr/bin/env python3
 """Generate an exact or finite-field Singular replay for the Case-1 rank-drop argument.
 
-The input is the pinned exact replay archive. This script independently
+The input is the pinned exact replay archive.  This script independently
 reconstructs the quotient-first degree-five equations, writes the 2x4 matrix
-M=(a_i;b_i) with F_i=a_i*N+b_i*h, and asks Singular to certify
-    1 in I_2(M)+(F_1).
-Multiplying that identity by h and using
-    h(a_i b_j-a_j b_i)=a_i F_j-a_j F_i
-then yields a direct certificate h in (F_1,...,F_4).
+M=(a_i;b_i) with F_i=a_i*N+b_i*h.  The default exact replay
+certifies the minimal adjacent-minor identity
+    1 in (m_12,m_23,m_34,F_1),
+where m_ij=a_i*b_j-a_j*b_i.  Multiplication by h and
+    h*m_ij=a_i*F_j-a_j*F_i
+then gives a direct certificate h in (F_1,...,F_4).  A separate exact
+special-fibre Bezout identity gives N modulo h, so the hard residual ideal
+is exactly (h,N).
 """
 from __future__ import annotations
 
 import argparse
 import pickle
+import re
 from fractions import Fraction as Q
 from pathlib import Path
 
@@ -22,6 +26,8 @@ REPO = Path(__file__).resolve().parents[1]
 ROOT = REPO / "plane-jc/external/zenodo-21479814/bilLkarkariy-jc2-72-108-exact-certificates-d9ea4fd/release_bundle/exact_replay"
 MINPOLY = "w^5-w^4+3*w^3+3*w^2+26"
 VARIABLES = ("h", "u1", "u2")
+DEFAULT_PAIRS = ((1, 2), (2, 3), (3, 4))
+ALL_PAIRS = tuple((i, j) for i in range(1, 5) for j in range(i + 1, 5))
 
 
 def trim(a):
@@ -252,6 +258,25 @@ def reconstruct_matrix():
     return n_poly, a_values[:4], b_values[:4], f_values[:4]
 
 
+def special_fibre_bezout(a_values):
+    """Return constants c1,c2 with c1*a1+c2*a2 = 1 modulo h."""
+    allowed = {(0, 0, 0), (0, 0, 1)}
+    for index in (0, 1):
+        support = {m for m in a_values[index] if m[0] == 0}
+        assert support <= allowed and support == allowed
+    beta1 = a_values[0][(0, 0, 0)]
+    alpha1 = a_values[0][(0, 0, 1)]
+    beta2 = a_values[1][(0, 0, 0)]
+    alpha2 = a_values[1][(0, 0, 1)]
+    delta = alpha1 * beta2 - alpha2 * beta1
+    assert delta
+    c1 = -alpha2 / delta
+    c2 = alpha1 / delta
+    assert c1 * alpha1 + c2 * alpha2 == 0
+    assert c1 * beta1 + c2 * beta2 == 1
+    return c1, c2, delta
+
+
 def rational_string(value):
     return str(value.numerator) if value.denominator == 1 else f"({value.numerator}/{value.denominator})"
 
@@ -285,8 +310,26 @@ def polynomial_string(poly, prime=None):
     return "+".join(terms) or "0"
 
 
-def write_singular(path, prime=None, lift=False):
+def parse_pairs(text):
+    if text == "all":
+        return ALL_PAIRS
+    pairs = []
+    for token in text.split(","):
+        token = token.strip().lower().removeprefix("m")
+        if len(token) != 2 or not token.isdigit():
+            raise argparse.ArgumentTypeError(f"invalid minor {token!r}; use e.g. 12,23,34")
+        i, j = map(int, token)
+        if not (1 <= i < j <= 4):
+            raise argparse.ArgumentTypeError(f"invalid minor m{i}{j}")
+        pairs.append((i, j))
+    if not pairs:
+        raise argparse.ArgumentTypeError("at least one minor is required")
+    return tuple(pairs)
+
+
+def write_singular(path, prime=None, lift=False, pairs=DEFAULT_PAIRS, write_certificate=None):
     n_poly, a_values, b_values, _ = reconstruct_matrix()
+    sf_c1, sf_c2, _ = special_fibre_bezout(a_values)
     field = "(0,w)" if prime is None else f"({prime},w)"
     lines = [f"ring R={field},(h,u1,u2),dp;", f"minpoly={MINPOLY};", "option(redSB);"]
     lines.append(f"poly N={polynomial_string(n_poly, prime)};")
@@ -294,13 +337,18 @@ def write_singular(path, prime=None, lift=False):
         lines.append(f"poly a{i+1}={polynomial_string(a_values[i], prime)};")
         lines.append(f"poly b{i+1}={polynomial_string(b_values[i], prime)};")
         lines.append(f"poly f{i+1}=h*b{i+1}+a{i+1}*N;")
-    pairs = []
-    for i in range(1, 5):
-        for j in range(i + 1, 5):
-            name = f"m{i}{j}"
-            lines.append(f"poly {name}=a{i}*b{j}-a{j}*b{i};")
-            pairs.append((i, j, name))
-    lines.append("ideal K=" + ",".join(name for _, _, name in pairs) + ",f1;")
+    for i, j in ALL_PAIRS:
+        lines.append(f"poly m{i}{j}=a{i}*b{j}-a{j}*b{i};")
+    selected = [f"m{i}{j}" for i, j in pairs]
+    lines.append("ideal K=" + ",".join(selected) + ",f1;")
+    lines += [
+        f"number sf_c1={field_string(sf_c1, prime)};",
+        f"number sf_c2={field_string(sf_c2, prime)};",
+        "poly sfcheck=subst(sf_c1*a1+sf_c2*a2,h,0);",
+        'if(sfcheck==1){print("CASE1_SPECIAL_FIBRE_BEZOUT_PASS");}else{print("CASE1_SPECIAL_FIBRE_BEZOUT_FAIL");}',
+        "poly nmodh=subst(sf_c1*f1+sf_c2*f2-N,h,0);",
+        'if(nmodh==0){print("CASE1_N_MOD_H_PASS");}else{print("CASE1_N_MOD_H_FAIL");}',
+    ]
     if prime is None and not lift:
         lines += [
             'LIB "nfmodstd.lib";',
@@ -308,33 +356,48 @@ def write_singular(path, prime=None, lift=False):
             'if(size(G)==1 && G[1]==1){print("RANKDROP_EXACT_UNIT_PASS");}else{print("RANKDROP_EXACT_UNIT_FAIL"); G;}',
         ]
     else:
+        f1_index = len(pairs) + 1
         lines += [
             "matrix T; ideal G=liftstd(K,T);",
             "int jj=0; int k; for(k=1;k<=size(G);k++){if(G[k]==1||G[k]==-1){jj=k;}}",
             'if(jj==0){print("RANKDROP_LIFT_FAIL"); quit;}',
             "if(G[jj]==-1){for(k=1;k<=nrows(T);k++){T[k,jj]=-T[k,jj];}}",
-            "poly check1=0; for(k=1;k<=size(K);k++){check1=check1+K[k]*T[k,jj];}",
-            'if(check1==1){print("RANKDROP_UNIT_IDENTITY_PASS");}else{print("RANKDROP_UNIT_IDENTITY_FAIL");}',
-            "poly t1=h*T[7,jj]; poly t2=0; poly t3=0; poly t4=0;",
+            f"poly check1=0; for(k=1;k<={f1_index};k++){{check1=check1+K[k]*T[k,jj];}}",
+            'if(check1==1){print("RANKDROP_UNIT_IDENTITY_PASS");}else{print("RANKDROP_UNIT_IDDITAY_FAIL");}',
+            f"poly t1=h*T[{f1_index},jj]; poly t2=0; poly t3=0; poly t4=0;",
         ]
-        for index, (i, j, _) in enumerate(pairs, start=1):
+        for index, (i, j) in enumerate(pairs, start=1):
             lines.append(f"t{i}=t{i}-T[{index},jj]*a{j}; t{j}=t{j}+T[{index},jj]*a{i};")
         lines += [
             "poly checkh=t1*f1+t2*f2+t3*f3+t4*f4;",
             'if(checkh==h){print("CASE1_H_DETERMINANTAL_PASS");}else{print("CASE1_H_DETERMINANTAL_FAIL");}',
             'print("T1_TERMS="+string(size(t1))); print("T2_TERMS="+string(size(t2))); print("T3_TERMS="+string(size(t3))); print("T4_TERMS="+string(size(t4)));',
         ]
+        if write_certificate is not None:
+            destination = str(write_certificate).replace('\\', '/').replace('"', '\\"')
+            lines.append(
+                f'write("{destination}","t1="+string(t1)+";\\nt2="+string(t2)+";\\nt3="+string(t3)+";\\nt4="+string(t4)+";\\ne");'
+            )
     lines.append("quit;")
     path.write_text("\n".join(lines) + "\n")
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("output", type=Path)
-    parser.add_argument("--prime", type=int)
-    parser.add_argument("--lift", action="store_true")
+    parser.add_argument("output", type=Path, help="generated Singular replay")
+    parser.add_argument("--prime", type=int, help="reduce coefficients modulo this good prime")
+    parser.add_argument("--lift", action="store_true", help="lift an explicit unit and h identity")
+    parser.add_argument(
+        "--pairs",
+        type=parse_pairs,
+        default=DEFAULT_PAIRS,
+        help="comma-separated minors, default 12,23,34; use all for all six",
+    )
+    parser.add_argument("--write-certificate", type=Path, help="write the four final h multipliers")
     args = parser.parse_args()
-    write_singular(args.output, args.prime, args.lift)
+    write_singular(args.output, args.prime, args.lift, args.pairs, args.write_certificate)
+    print("CASE1_RECONSTRUCTION_PASS")
+    print("CASE1_SPECIAL_FIBRE_PYTHON_PASS")
     print(args.output, args.output.stat().st_size)
 
 
