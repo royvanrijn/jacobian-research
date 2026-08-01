@@ -35,7 +35,7 @@ jobs:
           python-version-file: .python-version
           cache: pip
       - name: Install system CAS dependencies
-        if: ${{ matrix.suite == 'theorems' || matrix.suite == 'regressions' }}
+        if: ${{ matrix.suite == 'theorems' || matrix.suite == 'regressions' || matrix.suite == 'derived' }}
         run: |
           sudo apt-get update
           sudo apt-get install --yes --no-install-recommends singular
