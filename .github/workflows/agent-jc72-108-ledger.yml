@@ -1,0 +1,34 @@
+name: Agent JC72-108 ledger
+
+on:
+  push:
+    branches:
+      - agent/close-jc72-108-case1
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  ledger:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Locate relevant ledger and programme entries
+        shell: bash
+        run: |
+          set -o pipefail
+          grep -RniE '72.?108|108.?72|Proposition 4\.3|degree pair.*125|lower bound.*125|21479814' \
+            MATH_STATUS.json plane-jc OPEN_PROBLEMS.md 2>/dev/null | head -1000 | tee jc72-108-ledger-hits.txt || true
+          cp MATH_STATUS.json jc72-108-MATH_STATUS.json
+          find plane-jc -maxdepth 3 -type f -printf '%p\n' | sort | grep -Ei '72|108|laurent|frontier|f2' | tee jc72-108-plane-files.txt || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jc72-108-ledger
+          path: |
+            jc72-108-MATH_STATUS.json
+            jc72-108-ledger-hits.txt
+            jc72-108-plane-files.txt
