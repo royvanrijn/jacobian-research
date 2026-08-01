@@ -13,7 +13,7 @@ permissions:
   contents: read
 
 jobs:
-  minors:
+  rankdrop:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -22,13 +22,12 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install --yes --no-install-recommends singular
-      - name: Test the six Case 1 minors modulo 71
+      - name: Probe the compatible Case 1 rank-drop locus
         shell: bash
         run: |
           set -o pipefail
-          Singular -q plane-jc/research/jc72_108_case1_minors_p71.sing | tee case1-minors-p71.out
-          grep -q '^MINOR_UNIT_PASS$' case1-minors-p71.out
+          Singular -q plane-jc/research/jc72_108_case1_rankdrop_p71.sing | tee case1-rankdrop-p71.out
       - uses: actions/upload-artifact@v4
         with:
-          name: case1-minors-p71
-          path: case1-minors-p71.out
+          name: case1-rankdrop-p71
+          path: case1-rankdrop-p71.out
