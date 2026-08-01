@@ -6,15 +6,16 @@ the visible sign change.  Decode through the pinned archive's exact quintic
 field implementation first, then apply the involution fixing h and negating
 (u1,u2), together with the recorded row units.
 
-Before using that quotient as a coefficient field, reduce its primitive
-quintic modulo 67.  Exact modular irreducibility then implies irreducibility
-over Q by Gauss's lemma.  The archived image of q=u^7 is also checked against
-the intrinsic degree-five eliminant.  Since the field degree is the prime 5
-and that image is non-rational, this identifies the quotient field exactly.
-The archived degree-35 eliminant is then checked to be h(u^7), making its
-coefficient algebra the monic rank-seven extension L[u]/(u^7-q).  This finite
-free extension is faithfully flat, so terminal unit identities replayed over
-the old presentation descend to the intrinsic quintic system.
+Before using that quotient as a coefficient field, compare the archive's actual
+modulus with the displayed quintic and reduce it modulo 67.  Exact modular
+irreducibility then implies irreducibility over Q by Gauss's lemma.  The pinned
+regression prime 71 is checked as well.  The archived image of q=u^7 is also
+checked against the intrinsic degree-five eliminant.  Since the field degree is
+the prime 5 and that image is non-rational, this identifies the quotient field
+exactly.  The archived degree-35 eliminant is then checked to be h(u^7), making
+its coefficient algebra the monic rank-seven extension L[u]/(u^7-q).  This
+finite free extension is faithfully flat, so terminal unit identities replayed
+over the old presentation descend to the intrinsic quintic system.
 
 The new adjacent-minor proof, replayed by the following CI step, forces every
 hard-ideal solution onto h=N=0.  This checker therefore also replays the pinned
@@ -39,7 +40,13 @@ EXACT_REPLAY = REPO / (
 )
 sys.path.insert(0, str(EXACT_REPLAY))
 
-from degree5_core import L, decode_l, decode_poly, sign_substitution  # noqa: E402
+from degree5_core import (  # noqa: E402
+    L,
+    MOD,
+    decode_l,
+    decode_poly,
+    sign_substitution,
+)
 
 BRANCH1 = EXACT_REPLAY / "hne0_polred.pkl"
 BRANCH2 = EXACT_REPLAY / "hne0_branch2_polred.pkl"
@@ -71,15 +78,29 @@ PHI = decode_l(
 )
 
 w = sp.Symbol("w")
-minpoly_mod_67 = sp.Poly(
+expected_minpoly = sp.Poly(
     w**5 - w**4 + 3 * w**3 + 3 * w**2 + 26,
     w,
-    modulus=67,
+    domain=sp.QQ,
 )
-assert minpoly_mod_67.is_irreducible, (
-    "the Case-1 quintic coefficient algebra is not certified as a field"
+archive_minpoly = sp.Poly(
+    sum(
+        sp.Rational(int(MOD[index].p), int(MOD[index].q)) * w**index
+        for index in range(len(MOD))
+    ),
+    w,
+    domain=sp.QQ,
 )
+assert archive_minpoly == expected_minpoly, (
+    "the archive's Case-1 quintic modulus differs from the audited polynomial"
+)
+for prime in (67, 71):
+    reduction = sp.Poly(archive_minpoly.as_expr(), w, modulus=prime)
+    assert reduction.is_irreducible, (
+        f"the Case-1 quintic is reducible at audited prime {prime}"
+    )
 print("CASE1_QUINTIC_FIELD_IRREDUCIBLE_PASS")
+print("CASE1_PINNED_PRIME_FIELD_PASS")
 
 quotient_residual = L(0)
 for coefficient in reversed(QUOTIENT_ELIMINANT):
