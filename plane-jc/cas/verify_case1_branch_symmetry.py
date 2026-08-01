@@ -11,6 +11,10 @@ quintic modulo 67.  Exact modular irreducibility then implies irreducibility
 over Q by Gauss's lemma.  The archived image of q=u^7 is also checked against
 the intrinsic degree-five eliminant.  Since the field degree is the prime 5
 and that image is non-rational, this identifies the quotient field exactly.
+The archived degree-35 eliminant is then checked to be h(u^7), making its
+coefficient algebra the monic rank-seven extension L[u]/(u^7-q).  This finite
+free extension is faithfully flat, so terminal unit identities replayed over
+the old presentation descend to the intrinsic quintic system.
 
 The new adjacent-minor proof, replayed by the following CI step, forces every
 hard-ideal solution onto h=N=0.  This checker therefore also replays the pinned
@@ -39,6 +43,7 @@ from degree5_core import L, decode_l, decode_poly, sign_substitution  # noqa: E4
 
 BRANCH1 = EXACT_REPLAY / "hne0_polred.pkl"
 BRANCH2 = EXACT_REPLAY / "hne0_branch2_polred.pkl"
+FIRSTBLOCK_OUTPUT = EXACT_REPLAY / "firstblock_Q_exact.out"
 ROW_SCALES = (1, 1, -1, -1, -1, -1)
 SERIALIZED_CHECKER = EXACT_REPLAY / "verify_serialized_certificates.py"
 SERIALIZED_MARKERS = (
@@ -83,6 +88,33 @@ assert not quotient_residual, "the intrinsic quotient eliminant does not vanish 
 assert PHI.p.degree() > 0, "the quotient generator unexpectedly lies in Q"
 print("CASE1_QUINTIC_DESCENT_PASS")
 
+a7 = sp.Symbol("a7")
+firstblock_line = next(
+    line
+    for line in FIRSTBLOCK_OUTPUT.read_text(encoding="utf-8").splitlines()
+    if line.startswith("L[1]=")
+)
+archive_degree35 = sp.Poly(
+    sp.sympify(
+        firstblock_line.split("=", 1)[1].replace("^", "**"),
+        locals={"a7": a7},
+    ),
+    a7,
+    domain=sp.ZZ,
+)
+expected_degree35 = sp.Poly(
+    sum(
+        coefficient * a7 ** (7 * exponent)
+        for exponent, coefficient in enumerate(QUOTIENT_ELIMINANT)
+    ),
+    a7,
+    domain=sp.ZZ,
+)
+assert archive_degree35 == expected_degree35, (
+    "the archived degree-35 eliminant is not the rank-seven pullback h(a7^7)"
+)
+print("CASE1_RANK_SEVEN_PULLBACK_PASS")
+
 branch1 = [decode_poly(item) for item in pickle.loads(BRANCH1.read_bytes())]
 branch2 = [decode_poly(item) for item in pickle.loads(BRANCH2.read_bytes())]
 assert len(branch1) == len(branch2) == len(ROW_SCALES)
@@ -115,4 +147,5 @@ missing = [marker for marker in SERIALIZED_MARKERS if marker not in lines]
 assert not missing, f"missing serialized certificate markers: {missing}"
 
 print("CASE1_SPECIAL_FIBRE_CERTIFICATES_PASS")
+print("CASE1_SPECIAL_FIBRE_FAITHFUL_DESCENT_PASS")
 print("CASE1_BRANCH_SYMMETRY_PASS")
