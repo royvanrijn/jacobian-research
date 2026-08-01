@@ -472,7 +472,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "All-degree stable marked rigidity for the fixed quintic",
-      "scope": "For the fixed compiled quintic map F_R, the standard marked target orbit is a point in every degree and after every number s>=0 of identity stabilizations. Boundary normalization gives T(H)=rho*H. The exponent D=(2,5,1) of P^2*B^5*C is a uniquely exposed Newton vertex of H and has every coordinate positive. In the unstabilized ring, the coordinate-polynomial theorem of Derksen-Hadas-Makar-Limanov forces every target coordinate T_i=x_i+H*V_i to equal x_i. For arbitrary s, conjugate each standard translation in a stable variable by T. The conjugated G_a-action fixes H. Kuroda's stable-invariant intruder theorem therefore forces it to fix the entire base ring k[P,B,C], so T(P),T(B),T(C) are independent of all stable variables. Applying the same argument to T^(-1) shows that T and T^(-1) restrict to inverse automorphisms of the base ring; the unstabilized theorem makes this restriction the identity. Equivalently, clearing invariant denominators in a locally nilpotent derivation proves that the generic surface A_H=k(h)[P,B,C]/(H-h) is stably rigid in every cylinder dimension. The generic S_5 cover has deck group N_(S_5)(S_4)/S_4=1, forcing the source restriction to be the identity. Vertical automorphisms of the identity factors are not classified and may remain, but they do not move the standard marked target. As an independent negative topology certificate, all 46 nontrivial Newton faces of H-h and its coordinate restrictions are torus nondegenerate; their normalized-volume contributions give Euler characteristic 246, hence b_2=245+b_1>=245 for the smooth connected generic affine surface. Thus the H^2=0 cylinder theorem is unavailable but unnecessary.",
+      "scope": "For the fixed compiled quintic map F_R, the standard marked target orbit is a point in every degree and after every number s>=0 of identity stabilizations. Boundary normalization gives T(H)=rho*H. The exponent D=(2,5,1) of P^2*B^5*C is a uniquely exposed Newton vertex of H and has every coordinate positive. In the unstabilized ring, the coordinate-polynomial theorem of Derksen-Hadas-Makar-Limanov forces every target coordinate T_i=x_i+H*V_i to equal x_i. For arbitrary s, conjugate each standard translation in a stable variable by T. The conjugated G_a-action fixes H. Kuroda's stable-invariant intruder theorem therefore forces it to fix the entire base ring k[P,B,C], so T(P),T(B),T(C) are independent of all stable variables. Applying the same argument to T^(-1) shows that T and T^(-1) restrict to inverse automorphisms of the base ring; the unstabilized theorem makes this restriction the identity. Equivalently, clearing invariant denominators in a locally nilpotent derivation proves that the generic surface A_H=k(h)[P,B,C]/(H-h) is stably rigid in every cylinder dimension. The generic S_5 cover has deck group N_(S_5)(S_4)/S_4=1, forcing the source restriction to be the identity. Vertical automorphisms of the identity factors are not classified and may remain, but they do not move the standard marked target. As an independent negative topology certificate, all 46 nontrivial Newton faces of H-h and its coordinate restrictions are torus nondegenerate; their normalized-volume contributions give Euler characteristic 246, hence b_2=245+b_1>=245 for the smooth connected generic affine surface. Thus the H^2=0 cylinder theorem is unavailable but unnecessary. Machine-readable status inputs used by this result: SIDC1.",
       "canonical_source": "verified/RANK_FIVE_STABLE_TARGET_STABILIZER.md",
       "dependencies": [
         "R5STS1",
@@ -613,7 +613,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Presentation-free stable Keller descent",
-      "scope": "Construct or obstruct a presentation-free lift from rank-N finite-etale moduli to a precisely defined stable Keller-incidence receiver. GTND1 proves that the existing quadratic-gauge map atlas does not descend through the full primitive-presentation groupoid for N>=5 because its intrinsic Fitting boundary varies generically. QGDR1 supplies the clean marked receiver span, but not a section from BS_N or a global moduli object. RQG5 closes the hidden-stabilizer loophole uniformly: for every N>=5 the universal exposed intruder P^2*B^N*C and Kuroda's stable-invariant theorem force every stable self-equivalence of a fixed clean compiler map to preserve the physical target, and the coordinate-polynomial theorem makes that restriction the identity. Thus neither arbitrary degree nor arbitrary identity stabilization can repair the generic Tschirnhaus boundary mismatch. R5TTL1 and R5UI1 are the explicit rank-five transition and fixed-map specializations; R5STS1 retains finer vertical/full-group calculations. What remains is a genuinely different Tschirnhaus-invariant compiler, or a correspondence or torsor-valued replacement for a section. The rank-three target-local projective transport, the rank-four degree-at-least-nineteen endpoint problem, and an all-rank lift on the projective determinantal locus remain separate polynomial-extension gates.",
+      "scope": "Construct or obstruct a presentation-free lift from rank-N finite-etale moduli to a precisely defined stable Keller-incidence receiver. GTND1 proves that the existing quadratic-gauge map atlas does not descend through the full primitive-presentation groupoid for N>=5 because its intrinsic Fitting boundary varies generically. QGDR1 supplies the clean marked receiver span, but not a section from BS_N or a global moduli object. RQG5 closes the hidden-stabilizer loophole uniformly: for every N>=5 the universal exposed intruder P^2*B^N*C and Kuroda's stable-invariant theorem force every stable self-equivalence of a fixed clean compiler map to preserve the physical target, and the coordinate-polynomial theorem makes that restriction the identity. Thus neither arbitrary degree nor arbitrary identity stabilization can repair the generic Tschirnhaus boundary mismatch. R5TTL1 and R5UI1 are the explicit rank-five transition and fixed-map specializations; R5STS1 retains finer vertical/full-group calculations. R5K55H1 excludes the first cancellable target-degree-55 rank-five Koszul wall in the normalized two-generator family, while leaving the third P-zero Koszul coefficient, other wall types, and the singular-support quotient open. What remains is a genuinely different Tschirnhaus-invariant compiler, or a correspondence or torsor-valued replacement for a section. The rank-three target-local projective transport, the rank-four degree-at-least-nineteen endpoint problem, and an all-rank lift on the projective determinantal locus remain separate polynomial-extension gates.",
       "canonical_source": "verified/GENERIC_TSCHIRNHAUS_NON_DESCENT.md",
       "dependencies": [
         "GTND1",
@@ -2236,7 +2236,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Generic affine-mark faithfulness and marked normalization",
-      "scope": "On the Hessian-clean open, the marked Hessian divisor plus one affine root sheet recovers the seed exactly; after shrinking, the seed open normalizes the marked image and forgetting the sheet is finite \u00e9tale of degree N-2.",
+      "scope": "On the Hessian-clean open, the marked Hessian divisor plus one affine root sheet recovers the seed exactly; after shrinking, the seed open normalizes the marked image and forgetting the sheet is finite étale of degree N-2.",
       "canonical_source": "extended-geometry/DECORATED_NORMALIZATION_INVARIANT.md",
       "dependencies": [
         "D1",
@@ -2967,7 +2967,7 @@
       "kind": "example",
       "state": "proved",
       "title": "Certified log-boundary compiler",
-      "scope": "Exhaustive positive local branch-scale certificates compile by regular star subdivisions to merged proximity clusters, complete boundary/intersection matrices, valuations, tame differents, conductors, and chart-aware localization invariants. For the published (72,108) proof, Laurent orders 2,3,4 compile to one common eight-blowup F4 graph whose affine-plane fill is unimodular and passes adjunction. The first weighted Wronskian forces the E3-E4 cluster with one pole-three exceptional and ten pole-two children, excluding the numerical smooth-E3 candidate. The final plane-return edge forces A=a*r^2,C=c*r^3 for a quartic r; all five edge-only root partitions pass the intrinsic divisor-class gates with remaining self-intersection 29. Split-factor symmetry selects the 23-component quadruple-root package in Case 1, matching Case 2 numerically. Since the transformed pair has [P,Q]=X^2, the actual ramification is K+3H+div(X^2), not the boundary-supported K+3H representative: the dicritical normal indices are 3 and 5, while total ramification intersection remains 35. The exact residue cover degree is a priori 1,2,4. In Case 2, general polynomial-right-component remainder ideals exclude degrees 2 and 4 without J0 or the J1 compatibility equations. The final degree-12 row is also empty: seven residual J1 compatibility cubics localized at G_12!=0 generate the unit ideal without J0. Its derivative-gcd and Pluecker rows are retained only as pre-compatibility geometry. The chain-to-boundary gap is closed; only the three Case-1 cover rows remain for the conceptual replacement program.",
+      "scope": "Exhaustive positive local branch-scale certificates compile by regular star subdivisions to merged proximity clusters, complete boundary/intersection matrices, valuations, tame differents, conductors, and chart-aware localization invariants. For the published (72,108) proof, Laurent orders 2,3,4 compile to one common eight-blowup F4 graph whose affine-plane fill is unimodular and passes adjunction. The first weighted Wronskian forces the E3-E4 cluster with one pole-three exceptional and ten pole-two children, excluding the numerical smooth-E3 candidate. The final plane-return edge forces A=a*r^2,C=c*r^3 for a quartic r; all five edge-only root partitions pass the intrinsic divisor-class gates with remaining self-intersection 29. Split-factor symmetry selects the 23-component quadruple-root package in Case 1, matching Case 2 numerically. Since the transformed pair has [P,Q]=X^2, the actual ramification is K+3H+div(X^2), not the boundary-supported K+3H representative: the dicritical normal indices are 3 and 5, while total ramification intersection remains 35. The exact residue cover degree is a priori 1,2,4. In Case 2, general polynomial-right-component remainder ideals exclude degrees 2 and 4 without J0 or the J1 compatibility equations. The final degree-12 row is also empty: seven residual J1 compatibility cubics localized at G_12!=0 generate the unit ideal without J0. Its derivative-gcd and Pluecker rows are retained only as pre-compatibility geometry. The chain-to-boundary gap is closed. PJ72108D1 subsequently eliminates the three Case-1 cover rows by a quotient-first determinantal argument, so they no longer remain as a frontier obstruction.",
       "canonical_source": "plane-jc/LOG_BOUNDARY_COMPILER.md",
       "dependencies": [
         "BF1"
@@ -3075,7 +3075,9 @@
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
-      "consumers": [],
+      "consumers": [
+        "PJ1"
+      ],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "reference"
@@ -9088,7 +9090,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Fixed-fiber all-order modular order-fourteen Picard--Fuchs certificate",
-      "scope": "At the first integral exact-rank-two bidegree-(3,3) factor point over F_1000003, the sampled primitive order-14, m-degree-58 Ore operator has an exact all-order telescoping certificate. In the Laurent ring with U=u^(-1), 58 descending coefficient lifts produce polynomial-in-m certificate pairs X,Y. Canonical reduction modulo u*U-1 leaves a 307276-term terminal residual before the final correction. A t-block solve constructs a 298606-term Koszul polynomial R with terminal identity T=Q*(Q_t*(D_u+3)R-(u*Q_u-3Q)*R_t), and an independent Singular replay verifies this identity together with all 58 coefficient identities and the three restart residuals. After replacing (X_0,Y_0) by (X_0+Q_t*R,Y_0-(u*Q_u-3Q)*R), the two endpoint constant terms are exponential-polynomials 11^m*E_0(m) and 354^m*E_1(m); exact extraction gives E_0=E_1=0. Hence the stored order-14 operator annihilates the normalized fixed-fiber moment sequence for every integer m>=0 over F_1000003. This is not a characteristic-zero reconstruction, a generic rank-two parameter theorem, a certificate at the other five samples, or an exceptional-locus classification.",
+      "scope": "At the first integral exact-rank-two bidegree-(3,3) factor point over F_1000003, the sampled primitive order-14, m-degree-58 Ore operator has an exact all-order telescoping certificate. In the Laurent ring with U=u^(-1), 58 descending coefficient lifts produce polynomial-in-m certificate pairs X,Y. Canonical reduction modulo u*U-1 leaves a 307276-term terminal residual before the final correction. A t-block solve constructs a 298606-term Koszul polynomial R with terminal identity T=Q*(Q_t*(D_u+3)R-(u*Q_u-3Q)*R_t), and an independent Singular replay verifies this identity together with all 58 coefficient identities and the three restart residuals. After replacing (X_0,Y_0) by (X_0+Q_t*R,Y_0-(u*Q_u-3Q)*R), the two endpoint constant terms are exponential-polynomials 11^m*E_0(m) and 354^m*E_1(m); exact extraction gives E_0=E_1=0. Hence the stored order-14 operator annihilates the normalized fixed-fiber moment sequence for every integer m>=0 over F_1000003. This is not a characteristic-zero reconstruction, a generic rank-two parameter theorem, a certificate at the other five samples, or an exceptional-locus classification. Machine-readable status inputs used by this result: SIC2C3IC14, SIC2C3OG14.",
       "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_HOLONOMIC_PROBE.md",
       "dependencies": [
         "SIC2C3IC14",
@@ -9125,7 +9127,7 @@
       "kind": "reproduction",
       "state": "proved",
       "title": "Fixed-fiber characteristic-zero order-fourteen operator lift and leading descent",
-      "scope": "At the first integral exact-rank-two bidegree-(3,3) factor point, 205 exact normalized modular images of the sampled order-14, m-degree-58 Ore factor are computed at consecutive primes above 1000000. Simultaneous projective LLL reconstruction from 200 images recovers a primitive integer operator with maximum coefficient height 2397 bits; all 885 coefficients agree at five fresh holdout primes. Exact rational replay verifies 27 recurrence rows through moment 40, and the forward coefficient has the exact eight-factor product product_(k in {32,34,35,37,38,40,41,43})(3m+k) times a degree-50 residual. Over QQ[u,U,t]/(u*U-1), the leading m^58 divergence equation has a 5722-term X_57 and a 5769-term Y_57. An independent ambient Singular replay verifies that identity and matches the 6354-term m^57 restart residual. These are exact finite characteristic-zero computations. They do not prove the recurrence for every m: levels m^57 through m^1, the terminal m^0 syzygy, and the two endpoint identities over QQ remain open. A direct five-level expanded QQ run exceeded 1800 seconds and 4.3 GB without completing; this is only a performance observation.",
+      "scope": "At the first integral exact-rank-two bidegree-(3,3) factor point, 205 exact normalized modular images of the sampled order-14, m-degree-58 Ore factor are computed at consecutive primes above 1000000. Simultaneous projective LLL reconstruction from 200 images recovers a primitive integer operator with maximum coefficient height 2397 bits; all 885 coefficients agree at five fresh holdout primes. Exact rational replay verifies 27 recurrence rows through moment 40, and the forward coefficient has the exact eight-factor product product_(k in {32,34,35,37,38,40,41,43})(3m+k) times a degree-50 residual. Over QQ[u,U,t]/(u*U-1), the leading m^58 divergence equation has a 5722-term X_57 and a 5769-term Y_57. An independent ambient Singular replay verifies that identity and matches the 6354-term m^57 restart residual. These are exact finite characteristic-zero computations. They do not prove the recurrence for every m: levels m^57 through m^1, the terminal m^0 syzygy, and the two endpoint identities over QQ remain open. A direct five-level expanded QQ run exceeded 1800 seconds and 4.3 GB without completing; this is only a performance observation. Machine-readable status inputs used by this result: SIC2C3OG14, SIC2C3PF14M.",
       "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_HOLONOMIC_PROBE.md",
       "dependencies": [
         "SIC2C3OG14",
@@ -9201,7 +9203,7 @@
       "kind": "reproduction",
       "state": "proved",
       "title": "Characteristic-zero compact relative Picard--Fuchs bridge",
-      "scope": "At the same fixed fiber, 100 exact normalized images of the order-eight, z-degree-72 compact interval differential relation are computed at consecutive primes above 1000000. Simultaneous projective LLL reconstruction from 95 images recovers all 657 coefficients with maximum primitive height 1527 bits, and every coefficient agrees at five fresh holdout primes. Exact rational moments prove that the differential residual is nonzero exactly in degrees zero through 55 on the 93 checked coefficient rows, and the induced primitive order-64, m-degree-8 shift operator R satisfies 37 exact rational moment rows. Exact division in QQ(m)[S;S*m=(m+1)S] proves R=Q_50*G_14 with zero remainder. The first and last coefficients of Q have numerator degree zero and denominator degree 50; all 51 coefficients of the forward denominator are positive, so it is nonzero for every integer m>=0. A rank-two exact moment formula verifies the 50 initial identities G_14*nu=0 required by the order-50 quotient recurrence. Consequently, an all-order characteristic-zero divergence certificate for R would force the lifted G_14 recurrence for every m. The modular R certificate is complete, but the characteristic-zero divergence and endpoints are not: the first expanded QQ descent level reached the 900-second limit with peak RSS 8.6 GB, while the modular level took 47 seconds below 1 GB. Ordinary top-pole Griffiths reduction leaves an 18-term remainder, so the remaining proof gate is an extended relative reduction or a reconstructed compact certificate, not operator identification or initial values.",
+      "scope": "At the same fixed fiber, 100 exact normalized images of the order-eight, z-degree-72 compact interval differential relation are computed at consecutive primes above 1000000. Simultaneous projective LLL reconstruction from 95 images recovers all 657 coefficients with maximum primitive height 1527 bits, and every coefficient agrees at five fresh holdout primes. Exact rational moments prove that the differential residual is nonzero exactly in degrees zero through 55 on the 93 checked coefficient rows, and the induced primitive order-64, m-degree-8 shift operator R satisfies 37 exact rational moment rows. Exact division in QQ(m)[S;S*m=(m+1)S] proves R=Q_50*G_14 with zero remainder. The first and last coefficients of Q have numerator degree zero and denominator degree 50; all 51 coefficients of the forward denominator are positive, so it is nonzero for every integer m>=0. A rank-two exact moment formula verifies the 50 initial identities G_14*nu=0 required by the order-50 quotient recurrence. Consequently, an all-order characteristic-zero divergence certificate for R would force the lifted G_14 recurrence for every m. The modular R certificate is complete, but the characteristic-zero divergence and endpoints are not: the first expanded QQ descent level reached the 900-second limit with peak RSS 8.6 GB, while the modular level took 47 seconds below 1 GB. Ordinary top-pole Griffiths reduction leaves an 18-term remainder, so the remaining proof gate is an extended relative reduction or a reconstructed compact certificate, not operator identification or initial values. Machine-readable status inputs used by this result: SIC2C3PF14Q0, SIC2C3PFCM.",
       "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_HOLONOMIC_PROBE.md",
       "dependencies": [
         "SIC2C3PF14Q0",
@@ -10877,7 +10879,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Complete bidegree-(3,3) two-pair SIC classification",
-      "scope": "Determine whether every bidegree-(3,3) all-order pure-moment point is SIC-safe, or exhibit a fixed multiplier with an infinite nonzero mixed tail. This decides whether the known bidegree-(4,4) counterexample has minimum balanced bidegree. Moment--nullcone equality is already false: SIC2B33RDS is a full-rank semistable all-order Rodrigues survivor, but its explicit integration-by-parts cutoff proves that orbit safe. Rank one and the one-sided nullcone are safe. SIC2B33SP8 proves that any counterexample has at least nine nonzero standard-basis coefficients. SIC2B33AW14 excludes the normalized anti-Weyl branch, SIC2C3R2FP9 proves that its isolated rank-two nine-moment point fails already at mu10 and that the corrected rank-two system has no anti-Weyl point, SIC2C3R2HUR excludes the complete lambda=0 fibre and the doubly exceptional mu2-pivot branch on one generic rank-two Hurwitz channel chart, and SIC2B33NQL locally isolates the Rodrigues orbit on one null-quadratic chart. Existing exact work also closes every pure irreducible summand, the diagonal slice, the Sym^4+Sym^2 non-null branch, a four-parameter hardest-boundary family, and all five corrected t0=0 strata. On the remaining normalized non-null branch, exact quotient arithmetic and specialized Fitting calculations exclude substantial divisors and fibers, but the unspecialized Q component, other border factors, and later corrected moments are not globally classified. On the generic rank-two Hurwitz chart, the two complementary mu2-pivot opens, localization boundaries, other channel charts, the projective normalization boundary, and exceptional cubic-pencil divisors remain open. The rest of the null-quadratic stratum, the F2=0 boundary, and dense ranks three and four also remain open. Finite-field units and bounded searches are evidence only unless lifted to characteristic zero and all omitted chart boundaries are covered.",
+      "scope": "Determine whether every bidegree-(3,3) all-order pure-moment point is SIC-safe, or exhibit a fixed multiplier with an infinite nonzero mixed tail. This decides whether the known bidegree-(4,4) counterexample has minimum balanced bidegree. Moment--nullcone equality is already false: SIC2B33RDS is a full-rank semistable all-order Rodrigues survivor, but its explicit integration-by-parts cutoff proves that orbit safe. Rank one and the one-sided nullcone are safe. SIC2B33SP8 proves that any counterexample has at least nine nonzero standard-basis coefficients. SIC2B33AW14 excludes the normalized anti-Weyl branch, SIC2C3R2FP9 proves that its isolated rank-two nine-moment point fails already at mu10 and that the corrected rank-two system has no anti-Weyl point, SIC2C3R2HUR excludes the complete lambda=0 fibre and the doubly exceptional mu2-pivot branch on one generic rank-two Hurwitz channel chart, and SIC2B33NQL locally isolates the Rodrigues orbit on one null-quadratic chart. Existing exact work also closes every pure irreducible summand, the diagonal slice, the Sym^4+Sym^2 non-null branch, a four-parameter hardest-boundary family, and all five corrected t0=0 strata. On the remaining normalized non-null branch, exact quotient arithmetic and specialized Fitting calculations exclude substantial divisors and fibers, but the unspecialized Q component, other border factors, and later corrected moments are not globally classified. On the generic rank-two Hurwitz chart, the two complementary mu2-pivot opens, localization boundaries, other channel charts, the projective normalization boundary, and exceptional cubic-pencil divisors remain open. The rest of the null-quadratic stratum, the F2=0 boundary, and dense ranks three and four also remain open. Finite-field units and bounded searches are evidence only unless lifted to characteristic zero and all omitted chart boundaries are covered. Machine-readable narrowing results incorporated into this programme: SIC2B33C9, SIC2B33I, SIC2B33P8, SIC2B33QRS, SIC2B33R7, SIC2B33U6, SIC2C3PF14M, SIC2C3PF14Q0, SIC2C3PFCM, SIC2C3PFCQ0.",
       "canonical_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE33_FRONTIER.md",
       "dependencies": [
         "SIC2C4",
@@ -10899,7 +10901,11 @@
         "SIC2B33P8",
         "SIC2B33C9",
         "SIC2B33QRS",
-        "GVC2C3"
+        "GVC2C3",
+        "SIC2C3PF14M",
+        "SIC2C3PF14Q0",
+        "SIC2C3PFCM",
+        "SIC2C3PFCQ0"
       ],
       "checker": null,
       "proof_type": "not-applicable",
@@ -11235,7 +11241,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "All-height Witt recursion for exposed binary scroll packets",
-      "scope": "Fix a factorial-compatibly exposed color-count/radial-profile packet with completed color polynomials C_j(z), multiplicities d_j, total span capacity T=sum_j d_j*s_j, and selected total level w. For every odd prime p larger than w, T-w, and all d_j, let phi fix the integers and send every universal coefficient variable to its p-th power. The factorial-normalized constant terms G_k=(-1)^(T*S_k)*(p^k*w)!*(p^k*(T-w))!*CT_z(z^(-w)*product_j C_j(z)^(d_j))^(p^k)/p^(T*S_k), where S_k=1+p+...+p^(k-1), satisfy G_k congruent to phi(G_(k-1)) modulo p^k. Hence they are the ghost coordinates of a unique integral p-typical Witt vector. After an integer specialization phi is the identity. The proof combines the primitive-necklace Gauss congruence for Laurent constant terms with the signed p-free factorial-unit congruence. In particular both the first and second Witt coordinates are integral. Exact p=13 regression checks the first two residual valuations on two unit assignments for each of the support-five quotient fiber, S(6), S(5,4), and a larger reversal-symmetric rank-five packet; the minimum valuations are respectively one and two in every family. This proves that no missing p-squared correction obstructs a single exposed profile. It does not split a vanishing sum of several profile Witt vectors: ghost injectivity gives only the sum of their Witt vectors, not profile idempotents. GVC2FTS supplies profile separation after the profiles form a fixed equal-weight finite trace; it does not promote an affine prime-dependent Hall shell to that trace.",
+      "scope": "Fix a factorial-compatibly exposed color-count/radial-profile packet with completed color polynomials C_j(z), multiplicities d_j, total span capacity T=sum_j d_j*s_j, and selected total level w. For every odd prime p larger than w, T-w, and all d_j, let phi fix the integers and send every universal coefficient variable to its p-th power. The factorial-normalized constant terms G_k=(-1)^(T*S_k)*(p^k*w)!*(p^k*(T-w))!*CT_z(z^(-w)*product_j C_j(z)^(d_j))^(p^k)/p^(T*S_k), where S_k=1+p+...+p^(k-1), satisfy G_k congruent to phi(G_(k-1)) modulo p^k. Hence they are the ghost coordinates of a unique integral p-typical Witt vector. After an integer specialization phi is the identity. The proof combines the primitive-necklace Gauss congruence for Laurent constant terms with the signed p-free factorial-unit congruence. In particular both the first and second Witt coordinates are integral. Exact p=13 regression checks the first two residual valuations on two unit assignments for each of the support-five quotient fiber, S(6), S(5,4), and a larger reversal-symmetric rank-five packet; the minimum valuations are respectively one and two in every family. This proves that no missing p-squared correction obstructs a single exposed profile. It does not split a vanishing sum of several profile Witt vectors: ghost injectivity gives only the sum of their Witt vectors, not profile idempotents. GVC2FTS supplies profile separation after the profiles form a fixed equal-weight finite trace; it does not promote an affine prime-dependent Hall shell to that trace. Machine-readable status inputs used by this result: GVC2QG.",
       "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
       "dependencies": [
         "GVC2QG",
@@ -11263,7 +11269,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Complete equal-radial union terminality",
-      "scope": "Fix an order d and an oriented radial vector rho in the binary balanced return semigroup. At scale N, sum every operator and polynomial selection state of order N*d having common radial vector N*rho, without fixing any color counts, and remove the common factorial (N*rho)!. The complete union factors as [X^(N*rho)]lambda(X)^(N*d)*[Y^(N*rho)]P(Y)^(N*d)=CT_(X,Y)(X^(-rho)Y^(-rho)lambda(X)^d P(Y)^d)^N. If the radial fiber is nonempty, rho lies in both scaled Newton polytopes, so the origin lies in the Newton polytope of the displayed Laurent polynomial. Duistermaat--van der Kallen therefore forbids every positive-power row from vanishing. Thus complete oriented radial unions are terminal after exposure, with no color-count idempotent or saturation hypothesis. Color-count face saturation is false even in the minimal family C(z)=a*(1+z^2)+b*z: at order 2N and level 2N its achievable first-color counts are 0,2,...,2N, so odd holes persist at every scale. Nevertheless its whole union is one constant-term sequence, and its first two rows reduce to -14*a^4. Exact selection-sum checks replay the general factorization through scale four and the parity family through scale eight. GVC2FTS closes arbitrary-width coordinate reversal and separates scale-compatible trace components, but exposure of an affine Hall/carry shell remains GVC2ALL.",
+      "scope": "Fix an order d and an oriented radial vector rho in the binary balanced return semigroup. At scale N, sum every operator and polynomial selection state of order N*d having common radial vector N*rho, without fixing any color counts, and remove the common factorial (N*rho)!. The complete union factors as [X^(N*rho)]lambda(X)^(N*d)*[Y^(N*rho)]P(Y)^(N*d)=CT_(X,Y)(X^(-rho)Y^(-rho)lambda(X)^d P(Y)^d)^N. If the radial fiber is nonempty, rho lies in both scaled Newton polytopes, so the origin lies in the Newton polytope of the displayed Laurent polynomial. Duistermaat--van der Kallen therefore forbids every positive-power row from vanishing. Thus complete oriented radial unions are terminal after exposure, with no color-count idempotent or saturation hypothesis. Color-count face saturation is false even in the minimal family C(z)=a*(1+z^2)+b*z: at order 2N and level 2N its achievable first-color counts are 0,2,...,2N, so odd holes persist at every scale. Nevertheless its whole union is one constant-term sequence, and its first two rows reduce to -14*a^4. Exact selection-sum checks replay the general factorization through scale four and the parity family through scale eight. GVC2FTS closes arbitrary-width coordinate reversal and separates scale-compatible trace components, but exposure of an affine Hall/carry shell remains GVC2ALL. Machine-readable status inputs used by this result: GVC2QG.",
       "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
       "dependencies": [
         "GVC2QG",
@@ -11295,7 +11301,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Width-two coordinate-reversed radial-union terminality",
-      "scope": "Let G(z)=sum_(k=-2)^2 c_k*z^k over characteristic zero, suppose both target slopes -1 and 1 lie in Newt(G), and set S_N=[z^N]G(z)^N+[z^(-N)]G(z)^N. Then S_1,...,S_8 cannot all vanish. Fixing the least and greatest active exponents gives four endpoint charts (-1,1), (-1,2), (-2,1), and (-2,2). Exact rational Groebner saturation by the product of the two endpoint coefficients gives the unit after respectively 2,4,4,8 rows. Hence every common zero loses an endpoint and no longer contains both target slopes. The first chart also has the direct proof S_1=c_(-1)+c_1 and S_2=c_(-1)^2+c_1^2. Exhaustive projective searches over F_5, F_7, and F_11 have no survivor through row eight; that modular census is a regression only. This is the first finite-width instance of coordinate-reversed terminality. Arbitrary width is subsequently closed by GVC2FTS, so this bounded saturation is retained as an exact regression rather than the uniform theorem.",
+      "scope": "Let G(z)=sum_(k=-2)^2 c_k*z^k over characteristic zero, suppose both target slopes -1 and 1 lie in Newt(G), and set S_N=[z^N]G(z)^N+[z^(-N)]G(z)^N. Then S_1,...,S_8 cannot all vanish. Fixing the least and greatest active exponents gives four endpoint charts (-1,1), (-1,2), (-2,1), and (-2,2). Exact rational Groebner saturation by the product of the two endpoint coefficients gives the unit after respectively 2,4,4,8 rows. Hence every common zero loses an endpoint and no longer contains both target slopes. The first chart also has the direct proof S_1=c_(-1)+c_1 and S_2=c_(-1)^2+c_1^2. Exhaustive projective searches over F_5, F_7, and F_11 have no survivor through row eight; that modular census is a regression only. This is the first finite-width instance of coordinate-reversed terminality. Arbitrary width is subsequently closed by GVC2FTS, so this bounded saturation is retained as an exact regression rather than the uniform theorem. Machine-readable status inputs used by this result: GVC2ERU.",
       "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
       "dependencies": [
         "GVC2ERU"
@@ -11326,7 +11332,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Torsion--torus regular trace and log-determinant reduction",
-      "scope": "Let F=C_q and u lie in QQ[Z times F]. For every N>=1, the identity coefficient CT_(Z times F)(u^N) equals q^(-1) CT_Z Tr(Reg_F(u)^N). Consequently its full positive-moment generating series is -q^(-1) CT_Z(t*d/dt log det(I-t*Reg_F(u))). If p is congruent to 1 modulo q and denominators remain invertible, reduction modulo p satisfies u^p=phi_p(u), where phi_p dilates the free exponent and fixes the torsion coordinate. For F=C_2, the coordinate-reversal pair z^(-r)G(z), z^rG(z) is exactly the decomposition into the two character idempotents. Exact C_2 and C_3 examples replay the trace, determinant, and Frobenius formulas. This packages reversal and scale-compatible finite carry-character cancellation into one scalar invariant; GVC2FTS splits that trace componentwise.",
+      "scope": "Let F=C_q and u lie in QQ[Z times F]. For every N>=1, the identity coefficient CT_(Z times F)(u^N) equals q^(-1) CT_Z Tr(Reg_F(u)^N). Consequently its full positive-moment generating series is -q^(-1) CT_Z(t*d/dt log det(I-t*Reg_F(u))). If p is congruent to 1 modulo q and denominators remain invertible, reduction modulo p satisfies u^p=phi_p(u), where phi_p dilates the free exponent and fixes the torsion coordinate. For F=C_2, the coordinate-reversal pair z^(-r)G(z), z^rG(z) is exactly the decomposition into the two character idempotents. Exact C_2 and C_3 examples replay the trace, determinant, and Frobenius formulas. This packages reversal and scale-compatible finite carry-character cancellation into one scalar invariant; GVC2FTS splits that trace componentwise. Machine-readable status inputs used by this result: GVC2RUT.",
       "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
       "dependencies": [
         "GVC2RUT",
@@ -11358,7 +11364,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Finite-trace digit separation and torsion--torus Mathieu theorem",
-      "scope": "Let f_1,...,f_q be Laurent polynomials in any finite number of free variables over a characteristic-zero field. If sum_i CT(f_i^N)=0 for every N>=1, then CT(f_i^N)=0 for every i and N. After finite-type specialization to a number field, fix m and k<=q and use arbitrarily large completely split primes p. At N=m*(1+p+...+p^(k-1)), the freshman's dream and uniqueness of bounded signed base-p digits give CT(f_i^N)=CT(f_i^m)^k modulo p. Hence the first q power sums of the component m-th moments vanish exactly; Newton identities force every component moment to vanish. Consequently, for every finite abelian F, the coefficient-of-the-identity kernel in K[Z^r times F] is Mathieu--Zhao. Character orthogonality expresses every scale-compatible finite carry class and coordinate-reversal packet as such a finite trace. Duistermaat--van der Kallen then forces support loss or a free Laurent separator in every active origin-containing component. The proof is characteristic zero and uses Chebotarev only for infinitely many completely split good primes.",
+      "scope": "Let f_1,...,f_q be Laurent polynomials in any finite number of free variables over a characteristic-zero field. If sum_i CT(f_i^N)=0 for every N>=1, then CT(f_i^N)=0 for every i and N. After finite-type specialization to a number field, fix m and k<=q and use arbitrarily large completely split primes p. At N=m*(1+p+...+p^(k-1)), the freshman's dream and uniqueness of bounded signed base-p digits give CT(f_i^N)=CT(f_i^m)^k modulo p. Hence the first q power sums of the component m-th moments vanish exactly; Newton identities force every component moment to vanish. Consequently, for every finite abelian F, the coefficient-of-the-identity kernel in K[Z^r times F] is Mathieu--Zhao. Character orthogonality expresses every scale-compatible finite carry class and coordinate-reversal packet as such a finite trace. Duistermaat--van der Kallen then forces support loss or a free Laurent separator in every active origin-containing component. The proof is characteristic zero and uses Chebotarev only for infinitely many completely split good primes. Machine-readable status inputs used by this result: GVC2TTD.",
       "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
       "dependencies": [
         "GVC2TTD",
@@ -14117,14 +14123,123 @@
       "priority": "reference"
     },
     {
+      "id": "PJ43A1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Exhaustive Proposition-4.3 Newton-tail audit",
+      "scope": "Exact finite lattice arithmetic reconstructs the terminal Newton-tail alternatives in the published GGV/GGHV framework. The prime-defect condition at the live (24,7) corner leaves exactly (17,5), (10,3), and (3,1), all on primitive direction (7,2); the parallelism determinants force the unique terminal endpoint assignment, while every proper proportional candidate is a collinear nonvertex. After the coordinate change t=x*y^2, z=y^(-1), the audit produces exactly the two corrected Proposition-4.3 Laurent polygons, verifies the Jacobian chain rule, and identifies the printed Case-1 point (0,1) as the typo (8,14). This certifies exhaustiveness only inside the cited published reduction.",
+      "canonical_source": "plane-jc/PROP43_EXHAUSTIVENESS_AUDIT.md",
+      "dependencies": [
+        "external: GGV/GGHV Proposition 4.1 and Proposition 4.3"
+      ],
+      "checker": "plane-jc/cas/verify_prop43_exhaustiveness.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f9c7d1d7f8b3e0b2beedf0a2f4d0534b1b88eecf002e598ac0f0e5595a435137",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "an unaudited assumption that Proposition 4.3 listed every terminal Newton branch"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "PJ72Q1",
+        "PJ1",
+        "OP-PLANE"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "PJ72Q1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Intrinsic mu-seven quotient of the first Wronskian block",
+      "scope": "For the two corrected Laurent systems isolated by PJ43A1, the residual mu_7 action shows that the archived degree-35 first-block presentation is a rank-seven pullback of an intrinsic degree-five quotient. Exact descent reproduces all eleven triangular solves, the six obstruction equations in degrees 13 through 18, their q-valuations, and the complete quotient graph coefficient by coefficient. The quotient eliminant has degree five, so the first block and the later Case-1 coefficient field can be reconstructed without treating the degree-35 presentation as intrinsic.",
+      "canonical_source": "plane-jc/JC2_72_108_DETERMINANTAL_CLOSURE.md",
+      "dependencies": [
+        "PJ43A1"
+      ],
+      "checker": "plane-jc/cas/verify_mu7_quotient_firstblock.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f1638af742ad6552a151e8991a48811208c43f0322cf427160ae6ee712779e2e",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the degree-35 first-block coefficient field as an intrinsic presentation"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "PJ72108D1",
+        "PJ1",
+        "OP-PLANE"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "PJ72108D1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Determinantal closure of the Case-1 (72,108) Laurent system",
+      "scope": "Building on the corrected quotient systems certified by PJ72Q1 and the Case-1 cover skeleton of LBC1, work over the exact quintic field L=QQ[w]/(w^5-w^4+3*w^3+3*w^2+26). On each sign branch the four hard residuals have F_i=h*b_i+a_i*N. With m_ij=a_i*b_j-a_j*b_i, exact characteristic-zero standard-basis arithmetic proves (m_12,m_23,m_34,F_1)=L[h,u_1,u_2]. The syzygies a_i*F_j-a_j*F_i=h*m_ij imply h is in (F_1,F_2,F_3,F_4), while an exact special-fibre Bezout identity for a_1,a_2 implies N is in that ideal. Hence (F_1,F_2,F_3,F_4)=(h,N), and the existing exact h=N=0 unit certificates exclude both sign branches. This replaces the opaque 89 MB h-membership certificate by a codimension-two determinantal argument. It is a theorem about the two audited Laurent systems, not a stand-alone proof of the general plane degree reduction.",
+      "canonical_source": "plane-jc/JC2_72_108_DETERMINANTAL_CLOSURE.md",
+      "dependencies": [
+        "PJ72Q1",
+        "LBC1"
+      ],
+      "checker": "scripts/research_jc72_108_case1_rankdrop.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:0ade2f15186aa6232a6da376bed17ef6fc56c12b04b56b421076527d7d78561d",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the opaque 89 MB Case-1 h-membership certificate as the only replay route"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "PJ1",
+        "OP-PLANE"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "PJ1",
       "kind": "reproduction",
       "state": "proved",
       "title": "Plane Jacobian degree frontier",
-      "scope": "locally reproduced conditional on the published minimal/standard normal-form reductions: any plane counterexample has larger coordinate degree at least 125; this does not prove JC(2) or attainability",
+      "scope": "PJ43A1 proves that the audited terminal Newton tail has exactly the two corrected Proposition-4.3 Laurent systems; PJ72Q1 reconstructs their intrinsic degree-five first block; RSE3 excludes every Case-2 cover row; and PJ72108D1 excludes both Case-1 sign branches by proving the hard ideal is (h,N). Conditional on the published minimal/standard normal-form reductions and degree classification, any plane counterexample therefore has larger coordinate degree at least 125. This does not prove JC(2) or attainability of degree 125.",
       "canonical_source": "plane-jc/DEGREE_FRONTIER_125.md",
       "dependencies": [
-        "external: published minimal-standard-pair reductions and exact (72,108) certificates"
+        "PJ43A1",
+        "PJ72Q1",
+        "RSE3",
+        "PJ72108D1",
+        "external: published minimal/standard normal-form reductions and degree classification"
       ],
       "checker": null,
       "proof_type": "reproduction",
@@ -16353,7 +16468,7 @@
       "kind": "open_problem",
       "state": "parked",
       "title": "Plane-Jacobian degree frontier",
-      "scope": "Advance the plane-Jacobian degree frontier beyond the reproduced certified ranges by deriving exhaustive Laurent branches and nested positive branch scales, globally gluing the audited local (72,108) scale skeleton, applying the log-boundary compiler, and quotienting any matching three-band Poisson-square block by its three-component reduced classification before coefficient elimination.",
+      "scope": "PJ43A1, PJ72Q1, RSE3, and PJ72108D1 close the audited (72,108)/(108,72) row and leave the conditional larger-coordinate frontier at 125. Advance the plane-Jacobian programme beyond 125 by deriving the next exhaustive Laurent branches and nested positive branch scales, applying the log-boundary compiler, and quotienting any matching three-band Poisson-square block by its reduced classification before coefficient elimination.",
       "canonical_source": "plane-jc/NEXT_DEGREE_FRONTIER.md",
       "dependencies": [
         "PJ1",
@@ -16363,7 +16478,10 @@
         "RSE2",
         "RSE3",
         "A2B1",
-        "PS1"
+        "PS1",
+        "PJ43A1",
+        "PJ72Q1",
+        "PJ72108D1"
       ],
       "checker": null,
       "proof_type": "not-applicable",
