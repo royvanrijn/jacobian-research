@@ -23,6 +23,30 @@ jobs:
           sudo apt-get update
           sudo apt-get install --yes --no-install-recommends singular
           python -m pip install sympy==1.14.0
+      - name: Search minor subsets modulo 71
+        shell: bash
+        run: |
+          python scripts/research_jc72_108_case1_rankdrop.py /tmp/case1-rankdrop-base.sing --prime 71 --lift
+          python - <<'PY'
+          from itertools import combinations
+          from pathlib import Path
+          path = Path('/tmp/case1-rankdrop-base.sing')
+          prefix = path.read_text().split('ideal K=', 1)[0]
+          names = ['m12', 'm13', 'm14', 'm23', 'm24', 'm34']
+          lines = [prefix]
+          index = 0
+          for size in range(1, len(names) + 1):
+              for subset in combinations(names, size):
+                  index += 1
+                  label = '_'.join(subset)
+                  lines.append(f'ideal K{index}={",".join(subset)},f1;')
+                  lines.append(f'ideal G{index}=std(K{index});')
+                  lines.append(f'if(size(G{index})==1 && G{index}[1]==1){{print("UNIT|{size}|{label}");}}')
+          lines.append('quit;')
+          Path('/tmp/case1-minor-subsets-p71.sing').write_text('\n'.join(lines) + '\n')
+          PY
+          Singular -q /tmp/case1-minor-subsets-p71.sing | tee case1-minor-subsets-p71.out
+          grep -q '^UNIT|' case1-minor-subsets-p71.out
       - name: Replay the finite-field determinantal identity
         shell: bash
         run: |
@@ -50,6 +74,7 @@ jobs:
         with:
           name: case1-rankdrop-replay
           path: |
+            case1-minor-subsets-p71.out
             case1-rankdrop-p71.out
             case1-rankdrop-exact.out
             case1-rankdrop-exact-lift.out
