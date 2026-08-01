@@ -222,7 +222,58 @@ a_iF_j-a_jF_i=h m_{ij}, \tag{5.1}
 b_iF_j-b_jF_i=-N m_{ij}. \tag{5.2}
 \]
 
-### 5.1 Adjacent-minor unit identity
+### 5.1 Determinantal two-generator lemma
+
+The reduction used here is a general ring-theoretic lemma. Let `R` be a
+commutative ring, let
+
+\[
+F_i=h b_i+a_iN,\qquad I=(F_1,\ldots,F_n),\qquad
+m_{ij}=a_i b_j-a_j b_i.
+\]
+
+Suppose that, for some index `k` and some set of pairs `E`,
+
+\[
+1=dF_k+\sum_{(i,j)\in E}c_{ij}m_{ij}. \tag{5.3a}
+\]
+
+Multiplication by `h`, followed by
+`h m_{ij}=a_iF_j-a_jF_i`, gives
+
+\[
+h=hdF_k+\sum_{(i,j)\in E}c_{ij}(a_iF_j-a_jF_i)\in I. \tag{5.3b}
+\]
+
+If, in addition, the special-fibre coefficients generate the unit ideal,
+equivalently
+
+\[
+1=sh+\sum_iq_i a_i, \tag{5.3c}
+\]
+
+then
+
+\[
+\begin{aligned}
+N
+ &=shN+\sum_iq_i a_iN\\
+ &=\sum_iq_iF_i+h\left(sN-\sum_iq_i b_i\right)\in I.
+\end{aligned} \tag{5.3d}
+\]
+
+Since every `F_i` already lies in `(h,N)`, these two hypotheses imply
+
+\[
+\boxed{I=(h,N).} \tag{5.3e}
+\]
+
+In particular, an exact unit-ideal computation for (5.3a) is enough: the
+standard-basis transformation coefficients need not be tracked or printed.
+This distinction is useful here because coefficient tracking is far more
+expensive than deciding the characteristic-zero unit ideal.
+
+### 5.2 Adjacent-minor unit identity
 
 An exact characteristic-zero standard-basis calculation proves
 
@@ -236,7 +287,7 @@ Thus there exist `c_12,c_23,c_34,d in S` with
 1=c_{12}m_{12}+c_{23}m_{23}+c_{34}m_{34}+dF_1.
 \]
 
-Multiplying by `h` and using (5.1) gives the explicit four-generator identity
+Multiplying by `h` and using (5.1) gives a four-generator identity
 
 \[
 \begin{aligned}
@@ -253,11 +304,15 @@ Therefore
 \boxed{h\in(F_1,F_2,F_3,F_4).} \tag{5.5}
 \]
 
+The exact characteristic-zero replay decides the unit ideal (5.3). By the
+lemma above this already proves (5.5); an explicit characteristic-zero dump of
+the multipliers is not a proof obligation.
+
 The six minors alone are **not** the unit ideal: at the pinned good prime `71`
 their rank-drop scheme has length `72`. The compatibility equation `F_1` is
 essential. This is why the naive unit-minor shortcut fails while (5.3) works.
 
-### 5.2 Special-fibre Bezout identity
+### 5.3 Special-fibre Bezout identity
 
 Modulo `h`, the first two coefficients are affine-linear in `u_2`:
 
@@ -301,7 +356,7 @@ The 89 MB membership certificate is thus replaced by a codimension-two
 complete-intersection statement and a small adjacent-minor standard-basis
 calculation.
 
-### 5.3 Exclusion of the two sign branches
+### 5.4 Exclusion of the two sign branches
 
 The first sign branch is reconstructed directly from
 `case1_branch1_after_w.pkl` and checked coefficient-by-coefficient against the
@@ -370,13 +425,14 @@ CASE1_N_MOD_H_PASS
 RANKDROP_EXACT_UNIT_PASS
 ```
 
-To reconstruct and verify an explicit identity (5.4):
+For a compact coefficient-tracking regression at the pinned good prime `71`,
+reconstruct and verify the specialization of (5.4):
 
 ```bash
 python scripts/research_jc72_108_case1_rankdrop.py \
-  /tmp/case1-rankdrop-lift.sing --lift \
-  --write-certificate /tmp/case1-h-certificate.txt
-Singular -q /tmp/case1-rankdrop-lift.sing
+  /tmp/case1-rankdrop-p71.sing --prime 71 --lift \
+  --write-certificate /tmp/case1-h-certificate-p71.txt
+Singular -q /tmp/case1-rankdrop-p71.sing
 ```
 
 The final markers are:
@@ -385,3 +441,9 @@ The final markers are:
 RANKDROP_UNIT_IDENTITY_PASS
 CASE1_H_DETERMINANTAL_PASS
 ```
+
+This finite-field identity is an explicit regression for the syzygy assembly,
+not the characteristic-zero proof. The exact proof is the unit-ideal marker
+`RANKDROP_EXACT_UNIT_PASS` together with the ring-theoretic lemma in Section
+5.1. An exact coefficient-tracking `liftstd` run is optional and substantially
+more expensive; no such coefficient dump is claimed or required here.
