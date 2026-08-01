@@ -79,9 +79,9 @@ jobs:
           python plane-jc/cas/verify_mu7_quotient_firstblock.py | tee /tmp/mu7.out
           grep -q '^MU7_QUOTIENT_FIRSTBLOCK_PASS$' /tmp/mu7.out
           python plane-jc/cas/research_72_108_gap_attack.py | tee /tmp/structure.out
-          grep -q '^ALL_72_108_GAP_ATTACK_CHECKS_PASS$' /tmp/structure.out
+          grep -q '^STRUCTURAL_GAP_ATTACK_PASS$' /tmp/structure.out
           python plane-jc/cas/verify_firstblock_quotient_graph.py | tee /tmp/quotient-graph.out
-          grep -q '^FIRSTBLOCK_QUOTIENT_GRAPH_PASS$' /tmp/quotient-graph.out
+          grep -q '^QUOTIENT_GRAPH_EXACT_PASS$' /tmp/quotient-graph.out
       - name: Replay the exact Case-1 determinant proof
         shell: bash
         run: |
