@@ -22,11 +22,46 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install --yes --no-install-recommends singular
-      - name: Probe the compatible Case 1 rank-drop locus
+      - name: Fix and run the compatible rank-drop probes
         shell: bash
         run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('plane-jc/research/jc72_108_case1_rankdrop_p71.sing')
+          s = p.read_text()
+          s = s.replace(
+          '''testunit("M",M);
+          testunit("M_H",M,h);
+          testunit("M_N",M,N);
+          testunit("M_HN",M,h,N);
+          testunit("M_F1",M,f1);
+          testunit("M_F12",M,f1,f2);
+          testunit("M_F123",M,f1,f2,f3);
+          testunit("M_FI",M,FI);
+          testunit("FI",FI);''',
+          '''ideal K_M=M; testunit("M",K_M);
+          ideal K_MH=M,h; testunit("M_H",K_MH);
+          ideal K_MN=M,N; testunit("M_N",K_MN);
+          ideal K_MHN=M,h,N; testunit("M_HN",K_MHN);
+          ideal K_MF1=M,f1; testunit("M_F1",K_MF1);
+          ideal K_MF12=M,f1,f2; testunit("M_F12",K_MF12);
+          ideal K_MF123=M,f1,f2,f3; testunit("M_F123",K_MF123);
+          ideal K_MFI=M,FI; testunit("M_FI",K_MFI);
+          ideal K_FI=FI; testunit("FI",K_FI);''')
+          s = s.replace(
+          '''testunits("MHINV",Ms,z*h-1);
+          testunits("MF1HINV",Ms,f1s,z*h-1);
+          testunits("MF12HINV",Ms,f1s,f2s,z*h-1);
+          testunits("MFIHINV",Ms,f1s,f2s,f3s,f4s,z*h-1);''',
+          '''ideal KS_MHINV=Ms,z*h-1; testunits("MHINV",KS_MHINV);
+          ideal KS_MF1HINV=Ms,f1s,z*h-1; testunits("MF1HINV",KS_MF1HINV);
+          ideal KS_MF12HINV=Ms,f1s,f2s,z*h-1; testunits("MF12HINV",KS_MF12HINV);
+          ideal KS_MFIHINV=Ms,f1s,f2s,f3s,f4s,z*h-1; testunits("MFIHINV",KS_MFIHINV);''')
+          p.write_text(s)
+          PY
           set -o pipefail
           Singular -q plane-jc/research/jc72_108_case1_rankdrop_p71.sing | tee case1-rankdrop-p71.out
+          ! grep -q 'too many arguments' case1-rankdrop-p71.out
       - uses: actions/upload-artifact@v4
         with:
           name: case1-rankdrop-p71
