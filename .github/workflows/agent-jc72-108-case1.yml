@@ -38,9 +38,18 @@ jobs:
           set -o pipefail
           timeout 1200 Singular -q /tmp/case1-rankdrop-exact.sing | tee case1-rankdrop-exact.out
           grep -q '^RANKDROP_EXACT_UNIT_PASS$' case1-rankdrop-exact.out
+      - name: Lift and verify the exact determinantal h identity
+        shell: bash
+        run: |
+          python scripts/research_jc72_108_case1_rankdrop.py /tmp/case1-rankdrop-exact-lift.sing --lift
+          set -o pipefail
+          timeout 1200 Singular -q /tmp/case1-rankdrop-exact-lift.sing | tee case1-rankdrop-exact-lift.out
+          grep -q '^RANKDROP_UNIT_IDENTITY_PASS$' case1-rankdrop-exact-lift.out
+          grep -q '^CASE1_H_DETERMINANTAL_PASS$' case1-rankdrop-exact-lift.out
       - uses: actions/upload-artifact@v4
         with:
           name: case1-rankdrop-replay
           path: |
             case1-rankdrop-p71.out
             case1-rankdrop-exact.out
+            case1-rankdrop-exact-lift.out
