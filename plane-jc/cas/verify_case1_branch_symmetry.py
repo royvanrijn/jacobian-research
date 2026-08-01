@@ -6,6 +6,10 @@ the visible sign change.  Decode through the pinned archive's exact quintic
 field implementation first, then apply the involution fixing h and negating
 (u1,u2), together with the recorded row units.
 
+Before using that quotient as a coefficient field, reduce its primitive
+quintic modulo 67.  Exact modular irreducibility then implies irreducibility
+over Q by Gauss's lemma, making the field assumption explicit in this replay.
+
 The new adjacent-minor proof, replayed by the following CI step, forces every
 hard-ideal solution onto h=N=0.  This checker therefore also replays the pinned
 serialized Nullstellensatz certificates excluding that special fibre in both
@@ -18,6 +22,8 @@ import pickle
 import subprocess
 import sys
 from pathlib import Path
+
+import sympy as sp
 
 REPO = Path(__file__).resolve().parents[2]
 EXACT_REPLAY = REPO / (
@@ -39,6 +45,17 @@ SERIALIZED_MARKERS = (
     "s=-c H0_SERIALIZED_EXACT_PASS",
     "ALL_SERIALIZED_EXACT_CERTIFICATES_PASS",
 )
+
+w = sp.Symbol("w")
+minpoly_mod_67 = sp.Poly(
+    w**5 - w**4 + 3 * w**3 + 3 * w**2 + 26,
+    w,
+    modulus=67,
+)
+assert minpoly_mod_67.is_irreducible, (
+    "the Case-1 quintic coefficient algebra is not certified as a field"
+)
+print("CASE1_QUINTIC_FIELD_IRREDUCIBLE_PASS")
 
 branch1 = [decode_poly(item) for item in pickle.loads(BRANCH1.read_bytes())]
 branch2 = [decode_poly(item) for item in pickle.loads(BRANCH2.read_bytes())]
