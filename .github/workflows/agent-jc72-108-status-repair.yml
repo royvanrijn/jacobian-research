@@ -31,11 +31,26 @@ jobs:
           from collections import defaultdict
           from pathlib import Path
 
-          # Reuse the already-reviewed closure patch from the immediately preceding commit.
-          previous = subprocess.check_output(
-              ["git", "show", "HEAD^:.github/workflows/agent-jc72-108-status.yml"],
-              text=True,
-          )
+          # Recover the already-reviewed closure patch from the commit that introduced it.
+          old_path = ".github/workflows/agent-jc72-108-status.yml"
+          previous = None
+          history = subprocess.check_output(
+              ["git", "rev-list", "--all", "--", old_path], text=True
+          ).splitlines()
+          for commit in history:
+              try:
+                  candidate = subprocess.check_output(
+                      ["git", "show", f"{commit}:{old_path}"],
+                      text=True,
+                      stderr=subprocess.DEVNULL,
+                  )
+              except subprocess.CalledProcessError:
+                  continue
+              if 'new_ids = {"PJ43A1", "PJ72Q1", "PJ72108D1"}' in candidate:
+                  previous = candidate
+                  break
+          assert previous is not None, "could not recover the closure status patch"
+
           lines = previous.splitlines()
           start = next(i for i, line in enumerate(lines) if line.strip() == "python - <<'PY'")
           end = next(i for i in range(start + 1, len(lines)) if lines[i].strip() == "PY")
@@ -87,6 +102,20 @@ jobs:
               )
 
           path.write_text(json.dumps(index, indent=2, ensure_ascii=False) + "\n")
+
+          renderer = Path("scripts/render_status.py")
+          text = renderer.read_text()
+          begin = text.index("ACTIVE_OPEN = {")
+          finish = text.index("}\nGMC2_RETAINED_IDS", begin)
+          block = text[begin:finish]
+          if '"GVC2ALL"' not in block:
+              block = block.replace(
+                  "ACTIVE_OPEN = {\n",
+                  'ACTIVE_OPEN = {\n    "GVC2ALL",\n',
+                  1,
+              )
+              text = text[:begin] + block + text[finish:]
+              renderer.write_text(text)
           PY
       - name: Render and validate the status registry
         shell: bash
@@ -100,7 +129,7 @@ jobs:
         run: |
           set -euxo pipefail
           git rm .github/workflows/agent-jc72-108-status-repair.yml
-          git add MATH_STATUS.json STATUS.md
+          git add MATH_STATUS.json STATUS.md scripts/render_status.py
           git config user.name 'openai-agent'
           git config user.email 'openai-agent@users.noreply.github.com'
           git commit -m 'Register the JC72-108 closure chain'
