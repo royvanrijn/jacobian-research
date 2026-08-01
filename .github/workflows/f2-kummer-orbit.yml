@@ -1,0 +1,44 @@
+name: F2 Kummer-orbit replay
+
+on:
+  push:
+    branches:
+      - agent/f2-kummer-orbit-transfer
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: f2-kummer-orbit-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version-file: .python-version
+          cache: pip
+      - name: Install pinned dependencies
+        run: python -m pip install --requirement requirements.txt
+      - name: Replay F2 Kummer-orbit transfer
+        shell: bash
+        run: |
+          set -euo pipefail
+          python plane-jc/cas/verify_f2_kummer_orbit_transfer.py | tee /tmp/f2-kummer-orbit.log
+          grep -q '^F2_KUMMER_ORBIT_REDUCTION_PASS$' /tmp/f2-kummer-orbit.log
+      - name: Replay F2 terminal residue cover
+        shell: bash
+        run: |
+          set -euo pipefail
+          python plane-jc/cas/verify_f2_terminal_residue_cover.py | tee /tmp/f2-terminal-residue.log
+          grep -q '^F2_TERMINAL_RESIDUE_COVER_PASS$' /tmp/f2-terminal-residue.log
