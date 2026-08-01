@@ -363,7 +363,7 @@ def write_singular(path, prime=None, lift=False, pairs=DEFAULT_PAIRS, write_cert
             'if(jj==0){print("RANKDROP_LIFT_FAIL"); quit;}',
             "if(G[jj]==-1){for(k=1;k<=nrows(T);k++){T[k,jj]=-T[k,jj];}}",
             f"poly check1=0; for(k=1;k<={f1_index};k++){{check1=check1+K[k]*T[k,jj];}}",
-            'if(check1==1){print("RANKDROP_UNIT_IDENTITY_PASS");}else{print("RANKDROP_UNIT_IDDITAY_FAIL");}',
+            'if(check1==1){print("RANKDROP_UNIT_IDENTITY_PASS");}else{print("RANKDROP_UNIT_IDENTITY_FAIL");}',
             f"poly t1=h*T[{f1_index},jj]; poly t2=0; poly t3=0; poly t4=0;",
         ]
         for index, (i, j) in enumerate(pairs, start=1):
@@ -376,7 +376,7 @@ def write_singular(path, prime=None, lift=False, pairs=DEFAULT_PAIRS, write_cert
         if write_certificate is not None:
             destination = str(write_certificate).replace('\\', '/').replace('"', '\\"')
             lines.append(
-                f'write("{destination}","t1="+string(t1)+";\\nt2="+string(t2)+";\\nt3="+string(t3)+";\\nt4="+string(t4)+";\\ne");'
+                f'write("{destination}","t1="+string(t1)+";\\nt2="+string(t2)+";\\nt3="+string(t3)+";\\nt4="+string(t4)+";\\n");'
             )
     lines.append("quit;")
     path.write_text("\n".join(lines) + "\n")
