@@ -1,0 +1,34 @@
+name: Agent JC72-108 Case 1
+
+on:
+  push:
+    branches:
+      - agent/close-jc72-108-case1
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect release bundle
+        shell: bash
+        run: |
+          set -euxo pipefail
+          ROOT=plane-jc/external/zenodo-21479814/bilLkarkariy-jc2-72-108-exact-certificates-d9ea4fd/release_bundle
+          find "$ROOT" -maxdepth 4 -type f -printf '%P\t%s bytes\n' | sort | tee case1-file-list.txt
+          python - <<'PY'
+          from pathlib import Path
+          root = Path('plane-jc/external/zenodo-21479814/bilLkarkariy-jc2-72-108-exact-certificates-d9ea4fd/release_bundle')
+          for path in sorted(root.rglob('*')):
+              if path.is_file() and any(token in path.name.lower() for token in ('case1', 'hcert', 'branch1', 'after_w', 'exact')):
+                  print(path.relative_to(root), path.stat().st_size)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: case1-inspection
+          path: case1-file-list.txt
