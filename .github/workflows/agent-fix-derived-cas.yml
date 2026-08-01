@@ -30,9 +30,21 @@ jobs:
 
           path = Path('.github/workflows/verify.yml')
           text = path.read_text()
-          old = "if: ${{ matrix.suite == 'theorems' || matrix.suite == 'regressions' }}"
-          new = "if: ${{ matrix.suite == 'theorems' || matrix.suite == 'regressions' || matrix.suite == 'derived' }}"
-          assert text.count(old) == 1
+          expression_open = "$" + "{{ "
+          expression_close = " }}"
+          old = (
+              "if: "
+              + expression_open
+              + "matrix.suite == 'theorems' || matrix.suite == 'regressions'"
+              + expression_close
+          )
+          new = (
+              "if: "
+              + expression_open
+              + "matrix.suite == 'theorems' || matrix.suite == 'regressions' || matrix.suite == 'derived'"
+              + expression_close
+          )
+          assert text.count(old) == 1, old
           path.write_text(text.replace(old, new))
           PY
           grep -F "matrix.suite == 'derived'" .github/workflows/verify.yml
