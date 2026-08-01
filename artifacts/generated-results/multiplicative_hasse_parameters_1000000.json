@@ -161,6 +161,6 @@
   "generator": "scripts/count_multiplicative_hasse_parameters.py",
   "height": "32*a",
   "primitive_coordinates": "[9:-9:32*a:24*a+3]",
-  "software": "Python 3.14.6 standard library",
+  "software": "Python standard library",
   "target": "(-1,32*a/9,(8*a+1)/3)"
 }
