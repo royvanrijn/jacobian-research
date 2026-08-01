@@ -13,26 +13,22 @@ permissions:
   contents: read
 
 jobs:
-  inspect:
+  minors:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
-      - name: Package exact Case 1 inputs
+      - name: Install Singular
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends singular
+      - name: Test the six Case 1 minors modulo 71
         shell: bash
         run: |
-          set -euxo pipefail
-          ROOT=plane-jc/external/zenodo-21479814/bilLkarkariy-jc2-72-108-exact-certificates-d9ea4fd/release_bundle
-          find "$ROOT" -maxdepth 4 -type f -printf '%P\t%s bytes\n' | sort | tee case1-file-list.txt
-          tar \
-            --exclude='exact_replay/hard/h_certificate_exact.txt' \
-            --exclude='exact_replay/hard/h_solution_exact.pkl' \
-            --exclude='jc2_72_108_exact_replay_v1.0.1.zip' \
-            -czf case1-source.tgz \
-            -C "$ROOT" exact_replay
+          set -o pipefail
+          Singular -q plane-jc/research/jc72_108_case1_minors_p71.sing | tee case1-minors-p71.out
+          grep -q '^MINOR_UNIT_PASS$' case1-minors-p71.out
       - uses: actions/upload-artifact@v4
         with:
-          name: case1-source
-          path: |
-            case1-file-list.txt
-            case1-source.tgz
+          name: case1-minors-p71
+          path: case1-minors-p71.out
