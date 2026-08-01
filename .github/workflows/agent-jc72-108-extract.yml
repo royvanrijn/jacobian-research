@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - agent/close-jc72-108-case1
+  workflow_dispatch:
 
 permissions:
   contents: write
