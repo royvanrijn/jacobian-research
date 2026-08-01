@@ -1,0 +1,107 @@
+name: Register JC72-108 closure chain
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: register-jc72-108-closure-repair
+  cancel-in-progress: true
+
+jobs:
+  register:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/close-jc72-108-case1
+          fetch-depth: 0
+      - name: Apply the closure patch and repair stale status acknowledgements
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import subprocess
+          from collections import defaultdict
+          from pathlib import Path
+
+          # Reuse the already-reviewed closure patch from the immediately preceding commit.
+          previous = subprocess.check_output(
+              ["git", "show", "HEAD^:.github/workflows/agent-jc72-108-status.yml"],
+              text=True,
+          )
+          lines = previous.splitlines()
+          start = next(i for i, line in enumerate(lines) if line.strip() == "python - <<'PY'")
+          end = next(i for i in range(start + 1, len(lines)) if lines[i].strip() == "PY")
+          code = "\n".join(
+              line[10:] if line.startswith("          ") else line
+              for line in lines[start + 1:end]
+          )
+          exec(compile(code, "<jc72-status-patch>", "exec"), {})
+
+          path = Path("MATH_STATUS.json")
+          index = json.loads(path.read_text())
+          entries = index["entries"]
+          by_id = {item["id"]: item for item in entries}
+          known = set(by_id)
+
+          consumer_scope = defaultdict(list)
+          narrowing_scope = defaultdict(list)
+
+          for source in entries:
+              source_id = source["id"]
+              for consumer_id in source["consumers"]:
+                  if consumer_id not in known:
+                      continue
+                  target = by_id[consumer_id]
+                  if source_id not in target["dependencies"]:
+                      target["dependencies"].append(source_id)
+                  if source_id not in target["scope"]:
+                      consumer_scope[consumer_id].append(source_id)
+
+              for problem_id in source["narrows_problems"]:
+                  target = by_id[problem_id]
+                  if source_id not in target["dependencies"]:
+                      target["dependencies"].append(source_id)
+                  if source_id not in target["scope"]:
+                      narrowing_scope[problem_id].append(source_id)
+
+          for target_id, source_ids in sorted(consumer_scope.items()):
+              by_id[target_id]["scope"] += (
+                  " Machine-readable status inputs used by this result: "
+                  + ", ".join(sorted(source_ids))
+                  + "."
+              )
+
+          for target_id, source_ids in sorted(narrowing_scope.items()):
+              by_id[target_id]["scope"] += (
+                  " Machine-readable narrowing results incorporated into this programme: "
+                  + ", ".join(sorted(source_ids))
+                  + "."
+              )
+
+          path.write_text(json.dumps(index, indent=2, ensure_ascii=False) + "\n")
+          PY
+      - name: Render and validate the status registry
+        shell: bash
+        run: |
+          set -euxo pipefail
+          python scripts/render_status.py
+          python scripts/audit_status.py
+          python scripts/check_markdown_links.py
+      - name: Commit the permanent registry update
+        shell: bash
+        run: |
+          set -euxo pipefail
+          git rm .github/workflows/agent-jc72-108-status-repair.yml
+          git add MATH_STATUS.json STATUS.md
+          git config user.name 'openai-agent'
+          git config user.email 'openai-agent@users.noreply.github.com'
+          git commit -m 'Register the JC72-108 closure chain'
+          git push origin HEAD:agent/close-jc72-108-case1
