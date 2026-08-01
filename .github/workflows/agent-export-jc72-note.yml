@@ -1,0 +1,22 @@
+name: Export JC72 closure note
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/close-jc72-108-case1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jc72-closure-note
+          path: plane-jc/JC2_72_108_DETERMINANTAL_CLOSURE.md
