@@ -13,7 +13,6 @@ import bisect
 import hashlib
 import json
 import math
-import platform
 from pathlib import Path
 
 
@@ -145,7 +144,9 @@ def enumerate_parameters(bound: int) -> dict[str, object]:
 
     return {
         "generator": "scripts/count_multiplicative_hasse_parameters.py",
-        "software": f"Python {platform.python_version()} standard library",
+        # Keep the pinned mathematical artifact independent of the interpreter
+        # patch release used to reproduce it.
+        "software": "Python standard library",
         "bound": bound,
         "clean_definition": (
             "a>1, every prime divisor is 1 mod 9, and a is not a cube"
