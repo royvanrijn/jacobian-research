@@ -7,7 +7,9 @@
 > then determines a genuine target extraction ray `(5,2)`, transverse index
 > `1`, residue degree `6`, branch passport
 > `(5,1)|(3,3)|(3,1,1,1)`, monodromy `A_6`, and an exact global meridian
-> relation.  What remains is to glue this row to the full source completion and
+> relation.  The `A_6` action is primitive, the transverse different is zero,
+> and the residue map is uniform across the admissible cofactor strata.  What
+> remains is to glue this row to the full source completion and
 > classify the simple spectator orbits; the degree pair is not excluded.
 
 The three exact replays are:
@@ -202,6 +204,11 @@ and the actual global meridian relation
 \]
 
 This completes the local braid factorization for the terminal target row.
+The natural degree-six `A_6` action is primitive, so this residue cover has no
+nontrivial degree-two/degree-three factorization.  Moreover `e=1` contributes
+zero to the transverse different; the degree-ten different above is entirely
+residue ramification.  Formula (9) contains no `R` parameter, so this local
+packet is identical on every admissible principal-chain stratum.
 
 ## 5. Why the old contact surrogate is retained
 
@@ -228,6 +235,12 @@ are:
 4. complete the source class-group/unit ledger and target canonical pullback;
 5. identify which descendants, if any, map to affine nonproperness curves;
 6. then run finite-normalization and global meridian filters.
+
+Thus the first global ledger has exactly one squarefree case with one
+principal packet, and two double-root attachment cases: two identical packets
+on one target component or on distinct target components.  The five local
+branch-cycle triples form one centralizer orbit and do not add further
+monodromy cases.
 
 The missing object is no longer the first normal order at fifteen centers and
 no thirty-layer descent is required for the selected chain.  The unresolved

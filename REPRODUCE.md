@@ -6858,7 +6858,12 @@ explicitly stated common-power ansatz; it does not prove that ansatz is
 forced.  The last two commands certify the nonzero Kummer-orbit transfer and
 the terminal target row with transverse index one, residue degree six,
 passport `(5,1)|(3,3)|(3,1,1,1)`, and monodromy `A_6`.  Global boundary
-gluing remains open, so these calculations do not exclude `(75,125)`.
+gluing remains open.  The checker also proves that the natural `A_6` action
+is primitive (so the residue cover has no `2`-by-`3` factorization), that
+`e=1` gives zero transverse different, and that the residue formula is
+parameter-free.  Thus the remaining ledger has one squarefree packet or two
+identical double-root packets attached to the same versus distinct target
+components.  These calculations do not exclude `(75,125)`.
 
 The small deterministic regression of the published candidate tables is:
 

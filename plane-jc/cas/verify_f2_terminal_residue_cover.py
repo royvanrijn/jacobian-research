@@ -15,7 +15,11 @@ This checker proves:
   degree-six Belyi map
       h(s)=125*s*(s+1)^5/(9*s^2+15*s+5)^3;
 * its branch passport is (5,1), (3,3), (3,1,1,1);
-* every compatible transitive branch-cycle triple generates A6.
+* every compatible transitive branch-cycle triple generates A6;
+* the natural degree-six monodromy action is primitive, so the residue
+  cover has no nontrivial intermediate rational cover;
+* the transverse different contribution is zero and the residue map is
+  independent of the cofactor parameters.
 """
 from __future__ import annotations
 
@@ -75,6 +79,26 @@ def generated_group(
                 group.add(candidate)
                 frontier.append(candidate)
     return group
+
+
+def nontrivial_blocks(
+    group: set[tuple[int, ...]],
+) -> list[frozenset[int]]:
+    """Return nontrivial blocks containing zero in the natural action."""
+    degree = len(next(iter(group)))
+    blocks: list[frozenset[int]] = []
+    # A block size divides the degree; for degree six only 2 and 3 occur.
+    for mask in range(1 << degree):
+        block = frozenset(index for index in range(degree) if mask & (1 << index))
+        if 0 not in block or len(block) not in (2, 3):
+            continue
+        if all(
+            not (image := frozenset(element[index] for index in block)) & block
+            or image == block
+            for element in group
+        ):
+            blocks.append(block)
+    return blocks
 
 
 def terminal_block() -> tuple[sp.Expr, sp.Expr, sp.Expr]:
@@ -140,6 +164,8 @@ def residue_map_audit() -> sp.Expr:
     # while b^5/a^2 is the residue coordinate.
     assert 3 * target_ray[1] - target_ray[0] == 1
     assert 5 * target_ray[1] - 2 * target_ray[0] == 0
+    transverse_index = 3 * target_ray[1] - target_ray[0]
+    assert transverse_index - 1 == 0
     assert sp.factor(
         (P / (-Q)) ** 5 / ((-Q) ** -1) ** 2
         - h.subs(s, s_xy)
@@ -150,7 +176,10 @@ def residue_map_audit() -> sp.Expr:
     print("F2_SOURCE_TERMINAL_RAY=(12,-17)")
     print("F2_TARGET_EXTRACTION_RAY=(5,2)")
     print("F2_TARGET_TRANSVERSE_INDEX=1")
+    print("F2_TERMINAL_TRANSVERSE_DIFFERENT=0")
     print("F2_TERMINAL_RESIDUE_DEGREE=6")
+    assert h.free_symbols == {s}
+    print("F2_TERMINAL_RESIDUE_PARAMETER_FREE_PASS")
     return h
 
 
@@ -227,9 +256,12 @@ def monodromy_audit() -> None:
         ) == tuple(range(6))
         assert len(group) == 360
         assert all(parity(element) == 0 for element in group)
+        assert nontrivial_blocks(group) == []
 
     print("F2_TERMINAL_BRANCH_CYCLE_TRIPLES=5")
     print("F2_TERMINAL_MONODROMY=A6")
+    print("F2_TERMINAL_MONODROMY_PRIMITIVE_PASS")
+    print("F2_TERMINAL_COVER_INDECOMPOSABLE_PASS")
     print("F2_TERMINAL_GLOBAL_MERIDIAN_PASS")
 
 

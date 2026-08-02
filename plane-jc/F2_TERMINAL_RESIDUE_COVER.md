@@ -18,13 +18,19 @@ This map has degree six, three branch values, branch passport
 \]
 
 and monodromy group `A_6`.  Its branch cycles satisfy the complete global
-meridian relation.
+meridian relation.  The natural degree-six `A_6` action is primitive, so the
+residue cover is geometrically indecomposable.
 
 This supplies genuine target-side data that were absent from the earlier
 contact-only handoff.  It does **not** yet exclude `(75,125)`: the extracted
 target component lies in the toroidal target boundary, and the remaining
 source boundary, spectator orbits, affine sheets, and target-transfer gluing
 are not yet classified.
+
+None of the derived consequences below proves that these global attachments
+exist or are impossible.  In particular they do not exclude `(75,125)`,
+improve the conditional degree frontier `125`, make the conditional 14- and
+22-equation modified systems exhaustive, or prove `JC(2)`.
 
 The exact checker is
 [`cas/verify_f2_terminal_residue_cover.py`](cas/verify_f2_terminal_residue_cover.py).
@@ -167,6 +173,10 @@ transverse index
 \boxed{e=1}. \tag{15}
 \]
 
+In characteristic zero the transverse contribution to the different is
+`e-1`, hence it is zero on this row.  All nontrivial ramification recorded
+here is residue ramification, not ramification in the normal direction.
+
 Moreover
 
 \[
@@ -221,6 +231,11 @@ all `360` even permutations:
 \boxed{G=A_6}. \tag{20}
 \]
 
+The natural action of this group on the six sheets has no nontrivial block
+of size two or three.  It is therefore primitive.  Equivalently, the
+degree-six residue cover has no nontrivial intermediate cover and cannot
+factor as covers of degrees two and three (in either order).
+
 For every triple
 
 \[
@@ -230,7 +245,7 @@ For every triple
 so (21) is the actual global meridian relation of the terminal residue cover,
 not an abstract endpoint matching.
 
-## 5. Consequences for the F2 programme
+## 5. Processed implications for the F2 programme
 
 Combined with
 [`F2_KUMMER_ORBIT_TRANSFER.md`](F2_KUMMER_ORBIT_TRANSFER.md), the terminal
@@ -242,7 +257,30 @@ chain now supplies:
 4. transverse index `e=1`;
 5. residue degree `f=6`;
 6. the complete residue ramification passport and `A_6` monodromy;
-7. an exact global meridian factorization.
+7. an exact global meridian factorization;
+8. a primitive, geometrically indecomposable residue packet;
+9. zero transverse different contribution, with residue different degree
+   `10`;
+10. a parameter-free residue map: equation (1) contains no coefficient of
+    the quadratic cofactor `R`, so the same packet occurs uniformly on every
+    admissible principal-chain stratum.
+
+Together with the Kummer-orbit theorem this leaves the following finite case
+split for the first global ledger:
+
+- if `R` is squarefree and nonzero at zero, there is one principal `A_6`
+  packet; its two simple-root Kummer orbits are spectators;
+- if `R` has a nonzero double root, there are two identical principal `A_6`
+  packets, and they either land on the same target boundary component or on
+  two distinct target components.
+
+The five compatible branch-cycle triples are one centralizer orbit and all
+generate `A_6`.  Thus the residue-side monodromy input is finite and already
+classified; there is no smaller `2`-by-`3` factorization to analyze.  Since
+`e=1`, a contradiction cannot come from a positive transverse different on
+this terminal row.  It must use the residue packet together with the global
+source/target incidence, class-group, unit, canonical, finite-normalization,
+or affine-sheet ledger.
 
 The next gap is global rather than local.  One must attach this row to the
 original `A^2` completion, classify the simple `R` spectator orbits, and in

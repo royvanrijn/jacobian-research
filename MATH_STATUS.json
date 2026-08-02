@@ -14573,7 +14573,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "F2 terminal degree-six residue cover and A6 monodromy",
-      "scope": "For the principal block selected by PF2KO1, put s=X^17*y^5, P=X^4*y*(1+s), and Q=-X*(1+3*s+(9/5)*s^2). Exact differentiation gives [P,Q]=X^4. The primitive source normal is (12,-17), with pole orders (3,5); the corresponding target extraction ray is (5,2). On its regular chart the source-to-target transverse index is e=1 and the residue map is h(s)=125*s*(s+1)^5/(9*s^2+15*s+5)^3 of degree f=6. Its branch values are 0, infinity, and 125/729, with passport (5,1)|(3,3)|(3,1,1,1), total different ten, monodromy A_6, and branch cycles satisfying the global meridian product. This certifies the complete local toroidal target row. It does not attach that row to the original A2 completion, classify simple spectator orbits, decide whether the two double-root packets share a target component, or exclude (75,125).",
+      "scope": "For the principal block selected by PF2KO1, put s=X^17*y^5, P=X^4*y*(1+s), and Q=-X*(1+3*s+(9/5)*s^2). Exact differentiation gives [P,Q]=X^4. The primitive source normal is (12,-17), with pole orders (3,5); the corresponding target extraction ray is (5,2). On its regular chart the source-to-target transverse index is e=1, hence its characteristic-zero transverse different contribution is zero. The normalized residue map h(s)=125*s*(s+1)^5/(9*s^2+15*s+5)^3 is parameter-free and has degree f=6. Its branch values are 0, infinity, and 125/729, with passport (5,1)|(3,3)|(3,1,1,1), residue different ten, and five compatible branch-cycle triples forming one centralizer orbit and satisfying the global meridian product. Every triple generates A_6 in its primitive natural degree-six action, so the residue cover is geometrically indecomposable and has no nontrivial degree-two/degree-three factorization. This certifies the complete local toroidal target row uniformly for each admissible principal-chain stratum. It does not attach that row to the original A2 completion, classify simple spectator orbits, decide whether the two identical double-root packets share a target component, or exclude (75,125).",
       "canonical_source": "plane-jc/F2_TERMINAL_RESIDUE_COVER.md",
       "dependencies": [
         "PF2KO1"
@@ -14583,7 +14583,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:10aca6bb78e9e7efb2c99f8bc562dfa58e4510d183525fcc609ee4fb290724ed",
+      "artifact_hash": "sha256:a2572d2eeb81a83bd3c78513970bf373147ae7d106dad4f469fb347c43737a4e",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -16722,7 +16722,7 @@
       "kind": "open_problem",
       "state": "parked",
       "title": "Plane-Jacobian degree frontier",
-      "scope": "PJ43A1, PJ72Q1, RSE3, and PJ72108D1 close the audited (72,108)/(108,72) row and leave the conditional larger-coordinate frontier at 125. On the first (75,125) F2 row, PF2KO1 reduces the cover-level contact census to one known principal chain, or two copies on the nonzero double-root stratum, and PF2TR1 computes the complete local target row with transverse index one, residue degree six, passport (5,1)|(3,3)|(3,1,1,1), and A_6 monodromy. The remaining F2 task is global: attach the source and target rays to the original completions, classify simple spectator orbits, determine whether the two packets share a target component, complete the class-group/unit/canonical ledger, and only then apply finite-normalization and meridian filters. Other degree-125 and later rows still require exhaustive Laurent branches and positive branch scales before log-boundary or Poisson-square compilation. None of these local calculations excludes (75,125) or proves JC(2).",
+      "scope": "PJ43A1, PJ72Q1, RSE3, and PJ72108D1 close the audited (72,108)/(108,72) row and leave the conditional larger-coordinate frontier at 125. On the first (75,125) F2 row, PF2KO1 reduces the cover-level contact census to one known principal chain, or two copies on the nonzero double-root stratum, and PF2TR1 computes the complete local target row with transverse index one, residue degree six, passport (5,1)|(3,3)|(3,1,1,1), and primitive A_6 monodromy. Its normalized residue map is parameter-free and indecomposable, and e=1 gives zero transverse different. The global ledger therefore splits into one squarefree case with one principal packet and two double-root attachment cases, with identical packets on the same versus distinct target components. The remaining F2 task is global: attach the source and target rays to the original completions, classify simple spectator orbits, complete those three class-group/unit/canonical ledgers, and only then apply finite-normalization and meridian filters. Other degree-125 and later rows still require exhaustive Laurent branches and positive branch scales before log-boundary or Poisson-square compilation. None of these local calculations excludes (75,125), makes the conditional modified systems exhaustive, improves the frontier 125, or proves JC(2).",
       "canonical_source": "plane-jc/NEXT_DEGREE_FRONTIER.md",
       "dependencies": [
         "PJ1",

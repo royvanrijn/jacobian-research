@@ -65,8 +65,10 @@ obstruction is in
 The modified-system generator then reproduces the published `r=2` systems
 and emits the two conditional `r=3` candidate systems; it does not prove the
 common-power ansatz.  The final two commands certify the Kummer-orbit
-reduction and the degree-six terminal residue cover.  Their output reopens
-F2 only at the global gluing stage and does not exclude `(75,125)`.
+reduction and the degree-six terminal residue cover, including primitive
+`A_6` monodromy, indecomposability, zero transverse different, and
+parameter-free residue data.  Their output reopens F2 only at the global
+gluing stage and does not exclude `(75,125)`.
 
 The log-boundary and Poisson-square prefilters are:
 

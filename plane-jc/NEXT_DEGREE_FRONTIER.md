@@ -123,8 +123,13 @@ Open work, in dependency order:
    nonzero double-root stratum.  The
    [`terminal residue theorem`](F2_TERMINAL_RESIDUE_COVER.md) computes source
    ray `(12,-17)`, target ray `(5,2)`, transverse index one, residue degree
-   six, passport `(5,1)|(3,3)|(3,1,1,1)`, and `A_6` monodromy.  The next task
-   is not a sequential descent through the remaining thirty layers: attach
+   six, passport `(5,1)|(3,3)|(3,1,1,1)`, and `A_6` monodromy.  The action is
+   primitive, the cover has no `2`-by-`3` factorization, the transverse
+   different is zero, and the same residue map occurs on every admissible
+   principal stratum.  The global case split is therefore one squarefree
+   packet, or two identical double-root packets on the same versus distinct
+   target components.  The next task is not a sequential descent through the
+   remaining thirty layers: attach
    these rays to the original completions, classify the simple spectator
    orbits, decide whether the two packets share a target component, and then
    run the class-group, unit, canonical, finite-normalization, and global
