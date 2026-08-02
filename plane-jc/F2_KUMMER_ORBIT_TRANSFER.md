@@ -37,14 +37,15 @@ normal-form rows:
   hence two copies of the same principal F2 chain.
 
 This is real target-input progress, but it does **not** exclude `(75,125)`.
-The remaining problem is to glue one or two known principal chains into the
-global log boundary and identify the resulting dicritical/finite-normalization
-rows. Simple cofactor roots can still occur as spectator branches; the result
-only proves that they are not additional F2 continuations of the published
-above-bisectrix chain.
+The subsequent terminal-residue theorem identifies the selected target row
+as `(e,f)=(1,6)` with geometric monodromy `A_6`; the remaining problem is to
+glue one or two copies into the global log boundary. Simple cofactor roots can
+still occur as spectator branches; the result only proves that they are not
+additional F2 continuations of the published above-bisectrix chain.
 
 The exact checker is
 [`cas/verify_f2_kummer_orbit_transfer.py`](cas/verify_f2_kummer_orbit_transfer.py).
+<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 
 ## 1. One Kummer character on every Laurent band
 
@@ -333,16 +334,27 @@ additional above-bisectrix F2 continuations. In the second row, the two
 squared factors give two copies of the same known principal chain.
 
 The next honest calculation is therefore no longer “recover the first normal
-order at fifteen centers.” It is:
+order at fifteen centers.”  The terminal calculation has also completed the
+local target row, so the live tasks are:
 
-1. compile the global log boundary for one known F2 principal chain;
-2. compile the two-chain overlap when `Delta=0`;
+1. attach the certified source ray `(12,-17)` and target ray `(5,2)` to the
+   global completions for one principal chain;
+2. decide whether the two packets for `Delta=0` lie over the same target
+   divisor, which would force geometric degree at least twelve, or over
+   distinct target divisors, which only forces degree at least six;
 3. prove how the simple spectator orbits meet—or avoid—the distinguished
    finite-normalization boundary;
-4. run the global dicritical, class-group, unit, and meridian filters.
+4. attach source-boundary branches at the three interior preimages of the
+   target toric nodes, carrying different contributions `(4,2,2)`, and place
+   the last contribution `2` at the source endpoint over the smooth branch
+   value;
+5. place the separate purity-forced affine ramification row;
+6. run the global dicritical, class-group, unit, and meridian filters.
 
-This is a substantial reduction of the boundary input, but the last three
-steps are not completed here.
+The current terminal row is centered at target infinity, so the affine-sheet
+increment over a nonproperness curve cannot be added to its degree-six
+contribution.  This is a substantial reduction of the boundary input, but the
+global steps are not completed here.
 
 ## Reproduction
 

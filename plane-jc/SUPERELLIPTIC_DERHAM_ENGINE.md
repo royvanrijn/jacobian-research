@@ -28,7 +28,9 @@ integrating periods.
 This is an engine for a leading coefficient block once its Newton bands and
 supports have been derived.  It does **not** derive Laurent polygons from an
 admissible corner chain.  That is the principal missing interface for the
-frontier pairs `(96,144)` and `(75,125)`.
+coefficient/de Rham routes at `(96,144)` and `(75,125)`.  For F2 this is no
+longer the global priority: the selected terminal row has been obtained by a
+separate Kummer/toroidal calculation.
 
 ## 1. The differential identity
 
@@ -380,11 +382,13 @@ and are not eliminated by this no-escape result.
 ### `(75,125)`
 
 The chain starts at `(5,20)` and ends at `(7/5,2)` with ratio `3:5`.  It is the
-best architecture test because neither the old tail nor the old ratio is
-available.  Derive its Laurent bands first, then feed the leading identity to
-the engine.  The expected diagnostic is not necessarily genus three or six
-conditions: it is the character dimension determined by the derived
+best independent architecture test for this engine because neither the old
+tail nor the old ratio is available.  If that optional route is resumed,
+derive its Laurent bands first, then feed the leading identity to the engine.
+The expected diagnostic is not necessarily genus three or six conditions: it
+is the character dimension determined by the derived
 `(a,b,deg A)` and formulae (10)--(11).
+<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 
 ## 9. Reproduction
 

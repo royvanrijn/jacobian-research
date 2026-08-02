@@ -138,7 +138,9 @@ multiplicities are already `2,3,1`.
 This is also an executable distinction.  The audited `(72,108)` certificate
 contains exactly two distinct cases and compiles both.  The `(75,125)` F2
 record contains no cases, is marked non-exhaustive, and raises an error if a
-caller attempts to compile it.
+caller attempts to compile it.  This is a route-specific refusal of a full
+coefficient/de Rham normal form, not a claim that the later certified terminal
+target row is unknown.
 
 ## 4. Consequence for `(75,125)`
 
@@ -163,10 +165,16 @@ normal-form part is not proved there because it is used only to revisit a
 known case.  Consequently it is neither a proof nor a template for the
 `(3,5)` member.
 
-The next genuine frontier task is therefore the lower-boundary part of a new
-F2 `j=1` normal-form proposition: prove the `gamma` branches exhaustive and
-produce the complete Laurent polygon pairs.  Until that theorem is derived,
-`(75,125)` has no honest complete band input for the de Rham engine.
+For a direct coefficient/de Rham exclusion, the remaining frontend task is
+the lower-boundary part of a new F2 `j=1` normal-form proposition: prove the
+`gamma` branches exhaustive and produce the complete Laurent polygon pairs.
+Until that theorem is derived, `(75,125)` has no honest complete band input
+for the de Rham engine.  This route is now optional rather than the global
+priority: Kummer transfer plus the terminal residue calculation bypassed it
+for the selected principal chain and produced `(e,f)=(1,6)`.  The live
+programme is to attach that row globally, with the coefficient frontend kept
+as an independent possible exclusion.
+<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 
 There is now an exact pre-polygon envelope.  In the F2 chart
 `t=X*y,z=y^-1`, one has `[t,z]_(X,y)=-z`, so the constant-`J` compiler above

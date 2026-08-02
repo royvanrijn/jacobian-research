@@ -279,14 +279,14 @@ layer 40, the \(X^4\) target is layer 4, and the 35 intervening zero layers
 are exactly 39 through 5.  The finite B0 degree/halfspace envelope and all
 five character sectors of those layers are now compiled exactly in
 [`F2_75_125_DERIVATION.md`](F2_75_125_DERIVATION.md).  It has 978 linear
-parameters, so the next decisive task is narrower: prove the
-\(\gamma\)-branches exhaustive and refine the over-envelope to its B1
+parameters.  If the coefficient/support route is resumed, it must first prove
+the \(\gamma\)-branches exhaustive and refine the over-envelope to its B1
 Laurent polygon masks before attempting Gröbner elimination.
 The first B1 descent is now also exact: layers 39 through 36 merely continue
 the common root, while layer 35 admits a genuine
 \(\lambda C_0^2z^{10}\) mode.  Consequently an upper-layer unit ideal does
-not occur; the final viability test is whether that mode creates a
-nonzero de Rham class when propagated into layer 34.
+not occur; the next test **within that optional route** is whether that mode
+creates a nonzero de Rham class when propagated into layer 34.
 
 The first boundary pivot is complete at the contact-only level justified by
 the common edge.  Its quadratic factor has four exhaustive contact
@@ -299,7 +299,14 @@ survives the finite-flat packet budget.  The retained audit is
 surrogate: it reduces the live row to one principal chain or two copies and
 computes its degree-six target residue cover.  The lower thirty layers still
 should not be continued sequentially; the remaining problem is global
-source/target gluing.
+source/target gluing.  Its first processed consequences are geometric degree
+at least six, or at least twelve for two distinct packets over one target
+divisor; no affine-sheet increment applies because the certified target
+valuation is centered at infinity.  Purity instead requires a separate
+ramified row over an affine nonproperness curve.  The target-node fibers also
+fix three interior source-boundary attachment points, so the global route now
+starts from an incidence skeleton rather than an undecorated `(1,6)` row.
+<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 
 ## 5. Reproduction and claim boundary
 

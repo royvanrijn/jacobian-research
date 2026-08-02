@@ -66,9 +66,16 @@ The modified-system generator then reproduces the published `r=2` systems
 and emits the two conditional `r=3` candidate systems; it does not prove the
 common-power ansatz.  The final two commands certify the Kummer-orbit
 reduction and the degree-six terminal residue cover, including primitive
-`A_6` monodromy, indecomposability, zero transverse different, and
-parameter-free residue data.  Their output reopens F2 only at the global
-gluing stage and does not exclude `(75,125)`.
+four-transitive geometric `A_6` monodromy, trivial deck group,
+indecomposability, zero transverse different, residue-different packet
+`(4,2,2,2)`, and parameter-free residue data.  The terminal checker also
+verifies discriminant `5^17*r^4*(729*r-125)^2`, arithmetic `S_6` over `Q(r)`,
+the `(5,3,3)` genus-25 regular `A_6` closure, the three interior preimages of
+the target toric nodes, the geometric-degree floor six, and the same-target
+double-packet floor twelve.  It explicitly records that the target center is
+at infinity, so no affine-sheet increment applies.  Their output reopens F2
+only at the global gluing stage and does not exclude `(75,125)`.
+<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 
 The log-boundary and Poisson-square prefilters are:
 
@@ -278,8 +285,9 @@ python3 plane-jc/cas/test_newton_derham_compiler.py
 ```
 
 This also verifies that the source-excluded repeated-tail `(96,144)` row and
-the incomplete `(75,125)` row are rejected rather than assigned invented
-Laurent bands.
+the incomplete `(75,125)` **coefficient record** are rejected rather than
+assigned invented Laurent bands.  The latter route-specific refusal is
+compatible with the separately certified F2 terminal target row.
 
 The exact forced F2 `j=1` skeleton and its machine-readable residual
 obligations are tested separately:

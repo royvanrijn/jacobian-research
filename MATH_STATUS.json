@@ -14447,7 +14447,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Affine-support bridge obstruction and Kummer-character gate",
-      "scope": "For every d>=4, a nonempty Zariski-open set of dense triangular Keller automorphisms F_p=(x+p(y),y) has affine-normalized nonlinear support at least d-2, while geometric degree, reduced nonproperness data, boundary-row counts, and the number of Newton vertices remain fixed. Thus those listed coarse invariants cannot upper-bound affine-normalized support. For a monomial-Jacobian block with [P,Q]_(x,y)=c*x^r whose components lie in k[u,y], u=x^(r+1)/(r+1), the chain rule gives [P,Q]_(u,y)=c; if the descended affine-normalized support is at most six, PJS1 makes it an automorphism. More generally, Kummer sectors satisfy character([P_a,Q_b])=a+b-1, splitting the bracket equation into independent character equations. The audited (75,125) F2 terminal block has bracket X^4 but Kummer characters P={1,4} and Q={0,1,3} modulo five, so it does not descend through u=X^5/5; its non-target character brackets cancel exactly in sectors one and three. The support-six theorem therefore cannot be applied to that five-term block. This does not exclude F2 or improve a degree frontier; it proves that the next bridge must compile the missing Laurent bands with their Kummer characters.",
+      "scope": "For every d>=4, a nonempty Zariski-open set of dense triangular Keller automorphisms F_p=(x+p(y),y) has affine-normalized nonlinear support at least d-2, while geometric degree, reduced nonproperness data, boundary-row counts, and the number of Newton vertices remain fixed. Thus those listed coarse invariants cannot upper-bound affine-normalized support. For a monomial-Jacobian block with [P,Q]_(x,y)=c*x^r whose components lie in k[u,y], u=x^(r+1)/(r+1), the chain rule gives [P,Q]_(u,y)=c; if the descended affine-normalized support is at most six, PJS1 makes it an automorphism. More generally, Kummer sectors satisfy character([P_a,Q_b])=a+b-1, splitting the bracket equation into independent character equations. The audited (75,125) F2 terminal block has bracket X^4 but Kummer characters P={1,4} and Q={0,1,3} modulo five, so it does not descend through u=X^5/5; its non-target character brackets cancel exactly in sectors one and three. The support-six theorem therefore cannot be applied to that five-term block. This does not exclude F2 or improve a degree frontier; it proves that any coefficient-route bridge through the support theorem must compile the missing Laurent bands with their Kummer characters, without asserting that this route is the current global priority.",
       "canonical_source": "plane-jc/AFFINE_SUPPORT_NEWTON_BRIDGE.md",
       "dependencies": [
         "PJS1"
@@ -14517,7 +14517,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:ba662363dbe651fde8d6e299db633911a4a016c681b7a93b4f01749b32cefd7a",
+      "artifact_hash": "sha256:952d0955dee25eb96933d36f2510783cfe5610d04ac012bb0836749373ad6684",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -14572,8 +14572,8 @@
       "id": "PF2TR1",
       "kind": "theorem",
       "state": "proved",
-      "title": "F2 terminal degree-six residue cover and A6 monodromy",
-      "scope": "For the principal block selected by PF2KO1, put s=X^17*y^5, P=X^4*y*(1+s), and Q=-X*(1+3*s+(9/5)*s^2). Exact differentiation gives [P,Q]=X^4. The primitive source normal is (12,-17), with pole orders (3,5); the corresponding target extraction ray is (5,2). On its regular chart the source-to-target transverse index is e=1, hence its characteristic-zero transverse different contribution is zero. The normalized residue map h(s)=125*s*(s+1)^5/(9*s^2+15*s+5)^3 is parameter-free and has degree f=6. Its branch values are 0, infinity, and 125/729, with passport (5,1)|(3,3)|(3,1,1,1), residue different ten, and five compatible branch-cycle triples forming one centralizer orbit and satisfying the global meridian product. Every triple generates A_6 in its primitive natural degree-six action, so the residue cover is geometrically indecomposable and has no nontrivial degree-two/degree-three factorization. This certifies the complete local toroidal target row uniformly for each admissible principal-chain stratum. It does not attach that row to the original A2 completion, classify simple spectator orbits, decide whether the two identical double-root packets share a target component, or exclude (75,125).",
+      "title": "F2 terminal degree-six residue cover and geometric A6 monodromy",
+      "scope": "For the principal block selected by PF2KO1, put s=X^17*y^5, P=X^4*y*(1+s), and Q=-X*(1+3*s+(9/5)*s^2). Exact differentiation gives [P,Q]=X^4. The primitive source normal is (12,-17), with pole orders (3,5); the corresponding target extraction ray is (5,2). On its regular chart the source-to-target transverse index is e=1, hence its characteristic-zero transverse different contribution is zero. The normalized residue map h(s)=125*s*(s+1)^5/(9*s^2+15*s+5)^3 is parameter-free and has degree f=6. Its branch values are 0, infinity, and 125/729, with passport (5,1)|(3,3)|(3,1,1,1), residue-different packet (4,2,2,2), and five compatible branch-cycle triples forming one centralizer orbit and satisfying the global meridian product. Every triple generates geometric A_6 in its four-transitive primitive natural degree-six action. The cover is geometrically indecomposable, has no nontrivial degree-two/degree-three factorization, and has trivial target-fixed deck group. Rescaling by 729/125 gives a Belyi map whose regular geometric A_6 closure has triangle signature (5,3,3) and genus 25. The source toric endpoints map to 0 and 125/729, while the target toric nodes have exactly three preimages in the source-divisor interior. For Phi_r(s)=125*s*(s+1)^5-r*(9*s^2+15*s+5)^3, disc_s(Phi_r)=5^17*r^4*(729*r-125)^2; hence arithmetic monodromy over Q(r) is S_6, geometric monodromy is A_6, and the quadratic constant field is Q(sqrt(5)). This certifies the complete local toroidal target row uniformly for each admissible principal-chain stratum. It does not attach that row to the original A2 completion, classify simple spectator orbits, decide whether the two identical double-root packets share a target component, or exclude (75,125).",
       "canonical_source": "plane-jc/F2_TERMINAL_RESIDUE_COVER.md",
       "dependencies": [
         "PF2KO1"
@@ -14583,7 +14583,42 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:a2572d2eeb81a83bd3c78513970bf373147ae7d106dad4f469fb347c43737a4e",
+      "artifact_hash": "sha256:49d43f3c2f7b872f73705fa30914b45b0e019c6989e4e0254c182eaca8c55459",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "PF2GC1",
+        "OP-PLANE",
+        "plane-jc/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "PF2GC1",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "F2 terminal-cover global ledger consequences",
+      "scope": "PF2TR1 and PFN2 imply the following exact global ledger for any realization of the certified F2 terminal row. The target-boundary fundamental equality contains one contribution e*f=6, so the geometric degree is at least six. On the nonzero double-root stratum, two distinct principal valuations over the same target divisor contribute twelve and force degree at least twelve; if they land on distinct target divisors, only the floor six follows. The target valuation has pole orders (3,5), so it is centered at infinity and PFN2's affine-companion contribution cannot be added: this result does not prove degree floors seven or thirteen. Since e=1, the row has zero transverse different and is not a purity branch component; any global noninvertible realization requires a separate missing-boundary row with e>1 over an affine nonproperness curve. The target toric nodes have three distinct preimages in the source-divisor interior, forcing three attachment points in any resolved boundary morphism. They carry residue-different contributions (4,2,2), while the remaining contribution 2 occurs at the source toric endpoint over the smooth third branch value. The local target-fixed deck group is trivial, so a same-target identification of the two identical packets, if it exists, is unique. The global geometric Galois group has A_6 as a decomposition-group quotient, hence has A_6 as a nonabelian simple composition factor, is nonsolvable, and has order divisible by 360; in geometric degree six it is A_6 or S_6. Locally, the regular A_6 Galois closure has signature (5,3,3) and genus 25, and arithmetic monodromy over Q(r) is S_6 with quadratic constant field Q(sqrt(5)), while geometric monodromy is A_6. These consequences do not exclude (75,125), improve the coordinate-degree frontier 125, or prove JC(2).",
+      "canonical_source": "plane-jc/F2_TERMINAL_RESIDUE_COVER.md",
+      "dependencies": [
+        "PF2TR1",
+        "PFN2",
+        "external: fundamental equality and decomposition theory for divisorial valuations"
+      ],
+      "checker": "plane-jc/cas/verify_f2_terminal_residue_cover.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:49d43f3c2f7b872f73705fa30914b45b0e019c6989e4e0254c182eaca8c55459",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -14594,7 +14629,20 @@
       "narrows_problems": [],
       "consumers": [
         "OP-PLANE",
-        "plane-jc/README.md"
+        "REPRODUCE.md",
+        "plane-jc/README.md",
+        "plane-jc/F2_BOUNDARY_HANDOFF.md",
+        "plane-jc/F2_KUMMER_ORBIT_TRANSFER.md",
+        "plane-jc/F2_75_125_DERIVATION.md",
+        "plane-jc/AFFINE_SUPPORT_NEWTON_BRIDGE.md",
+        "plane-jc/NEXT_DEGREE_FRONTIER.md",
+        "plane-jc/FRONTIER_CLOSING_ATTACKS.md",
+        "plane-jc/LOG_BOUNDARY_COMPILER.md",
+        "plane-jc/LAURENT_BAND_FRONTEND.md",
+        "plane-jc/NEWTON_DERHAM_COMPILER.md",
+        "plane-jc/SUPERELLIPTIC_DERHAM_ENGINE.md",
+        "plane-jc/SEARCH_POLICY.md",
+        "plane-jc/cas/README.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -14683,7 +14731,9 @@
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
-      "consumers": [],
+      "consumers": [
+        "PF2GC1"
+      ],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "reference"
@@ -16722,7 +16772,7 @@
       "kind": "open_problem",
       "state": "parked",
       "title": "Plane-Jacobian degree frontier",
-      "scope": "PJ43A1, PJ72Q1, RSE3, and PJ72108D1 close the audited (72,108)/(108,72) row and leave the conditional larger-coordinate frontier at 125. On the first (75,125) F2 row, PF2KO1 reduces the cover-level contact census to one known principal chain, or two copies on the nonzero double-root stratum, and PF2TR1 computes the complete local target row with transverse index one, residue degree six, passport (5,1)|(3,3)|(3,1,1,1), and primitive A_6 monodromy. Its normalized residue map is parameter-free and indecomposable, and e=1 gives zero transverse different. The global ledger therefore splits into one squarefree case with one principal packet and two double-root attachment cases, with identical packets on the same versus distinct target components. The remaining F2 task is global: attach the source and target rays to the original completions, classify simple spectator orbits, complete those three class-group/unit/canonical ledgers, and only then apply finite-normalization and meridian filters. Other degree-125 and later rows still require exhaustive Laurent branches and positive branch scales before log-boundary or Poisson-square compilation. None of these local calculations excludes (75,125), makes the conditional modified systems exhaustive, improves the frontier 125, or proves JC(2).",
+      "scope": "PJ43A1, PJ72Q1, RSE3, and PJ72108D1 close the audited (72,108)/(108,72) row and leave the conditional larger-coordinate frontier at 125. On the first (75,125) F2 row, PF2KO1 reduces the cover-level contact census to one known principal chain, or two copies on the nonzero double-root stratum, and PF2TR1 computes the complete local target row with transverse index one, residue degree six, passport (5,1)|(3,3)|(3,1,1,1), four-transitive geometric A_6 monodromy, and trivial local deck group. PF2GC1 processes the global consequences: any realization has geometric degree at least six; two distinct packets over one target divisor force degree at least twelve, whereas distinct target divisors do not; the row is centered at infinity, so no affine-sheet increment applies; purity requires a separate affine ramified row; three interior preimages of the target toric nodes force three boundary-attachment points carrying different contributions (4,2,2), with the last contribution 2 at the source endpoint over a smooth target point; and global geometric monodromy has A_6 as a composition factor. The local Belyi model has regular A_6 closure of genus 25 and arithmetic S_6 over Q(r). The global attachment ledger still splits into one squarefree case and the same-target versus distinct-target double-root cases. The remaining F2 task is global: attach the source and target rays to the original completions, classify simple spectator orbits, complete those three class-group/unit/canonical ledgers, place the forced attachment and endpoint data, and only then apply finite-normalization and meridian filters. Other degree-125 and later rows still require exhaustive Laurent branches and positive branch scales before log-boundary or Poisson-square compilation. None of these calculations excludes (75,125), makes the conditional modified systems exhaustive, improves the coordinate-degree frontier 125, or proves JC(2).",
       "canonical_source": "plane-jc/NEXT_DEGREE_FRONTIER.md",
       "dependencies": [
         "PJ1",
@@ -16737,7 +16787,8 @@
         "PJ72Q1",
         "PJ72108D1",
         "PF2KO1",
-        "PF2TR1"
+        "PF2TR1",
+        "PF2GC1"
       ],
       "checker": null,
       "proof_type": "not-applicable",

@@ -36,8 +36,9 @@ three-dimensional counterexample construction.
 | [F2_BOUNDARY_HANDOFF.md](F2_BOUNDARY_HANDOFF.md) | Retained four-stratum contact census, failed contact-to-ramification surrogate, and updated handoff to the exact Kummer/target rows |
 <!-- status-consumer: PF2KO1 c3a129906d2f75d2 -->
 | [F2_KUMMER_ORBIT_TRANSFER.md](F2_KUMMER_ORBIT_TRANSFER.md) | Exact transfer around nonzero fifth-root orbits, exclusion of zero-root strata, and reduction to one principal chain or two copies |
-<!-- status-consumer: PF2TR1 7a10d1b47e643a20 -->
-| [F2_TERMINAL_RESIDUE_COVER.md](F2_TERMINAL_RESIDUE_COVER.md) | Target ray `(5,2)`, zero transverse different, parameter-free indecomposable degree-six residue cover, primitive `A_6` monodromy, and global meridian product |
+<!-- status-consumer: PF2TR1 bb41ccb3d135dbf2 -->
+<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
+| [F2_TERMINAL_RESIDUE_COVER.md](F2_TERMINAL_RESIDUE_COVER.md) | Target ray `(5,2)`, degree floors `6`/same-target `12`, three forced node attachments, genus-25 `A_6` Galois closure, purity/different ledger, geometric `A_6` versus arithmetic `S_6`, and trivial target-fixed deck group |
 | [UNIBRANCH_SPECTATOR_COUNTERMODELS.md](UNIBRANCH_SPECTATOR_COUNTERMODELS.md) | Universal finite-free unibranch packets with an étale spectator; exact refutation of a purely local exclusion and isolation of the global \(\mathbb A^2\)-open obstruction |
 | [cas/README.md](cas/README.md) | Replay commands, hashes, and independent checker |
 | [AUDIT_COMPLETION.md](AUDIT_COMPLETION.md) | Objective-by-objective completion and residual limitations |
@@ -62,6 +63,16 @@ Current scoped conclusion:
 > six nonlinear monomial occurrences is certified invertible in arbitrary
 > degree.  Consequently any noninvertible plane Keller map has minimum
 > support at least seven across all tangent-to-identity affine normalizations.
+>
+> For the first conditional coordinate-degree row `(75,125)`, the selected F2
+> terminal valuation has `(e,f)=(1,6)`.  Any global realization therefore has
+> geometric degree at least six; two distinct double-root packets over the
+> same target divisor force at least twelve.  The valuation is centered at
+> target infinity, so no affine-sheet increment applies, and purity requires
+> a separate affine ramification row.  Three interior preimages of the target
+> toric nodes already force three boundary-attachment points.  Its geometric
+> residue monodromy is `A_6`, so global monodromy has `A_6` as a nonabelian
+> simple composition factor.
 
 This does not prove JC(2), require both degrees to be at least 125, or show
 that any candidate at or beyond 125 exists.  The finite-flatness theorem

@@ -279,6 +279,8 @@ verify-plane-support-bridge:
 	$(PYTHON) plane-jc/cas/classify_f2_75_125_layers.py
 	$(PYTHON) plane-jc/cas/audit_f2_75_125_boundary_handoff.py
 	$(PYTHON) plane-jc/cas/test_f2_75_125_frontend.py
+	$(PYTHON) plane-jc/cas/verify_f2_kummer_orbit_transfer.py
+	$(PYTHON) plane-jc/cas/verify_f2_terminal_residue_cover.py
 
 verify-plane-case2-residue-strata:
 	$(PYTHON) plane-jc/cas/audit_case2_residue_strata.py

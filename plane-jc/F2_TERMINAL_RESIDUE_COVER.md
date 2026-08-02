@@ -17,9 +17,16 @@ This map has degree six, three branch values, branch passport
 (5,1),\qquad(3,3),\qquad(3,1,1,1), \tag{2}
 \]
 
-and monodromy group `A_6`.  Its branch cycles satisfy the complete global
-meridian relation.  The natural degree-six `A_6` action is primitive, so the
-residue cover is geometrically indecomposable.
+and geometric monodromy group `A_6`.  Its branch cycles satisfy the complete
+global meridian relation.  The natural degree-six `A_6` action is
+four-transitive and primitive, so the residue cover is geometrically
+indecomposable; its target-fixed deck group is trivial.  Over
+`Q(r)` the arithmetic monodromy is instead `S_6`, with quadratic constant
+field `Q(sqrt(5))` in the Galois closure.  After rescaling it is a Belyi map
+whose regular geometric closure has signature `(5,3,3)` and genus `25`.
+The two target toric nodes have three preimages in the source-divisor
+interior, giving three forced attachment points in any global boundary
+realization.
 
 This supplies genuine target-side data that were absent from the earlier
 contact-only handoff.  It does **not** yet exclude `(75,125)`: the extracted
@@ -211,13 +218,48 @@ The three branch fibers are:
   `135s^3+405s^2+396s+125`.
 
 The quadratic discriminant is `45`; the cubic discriminant is `-98415`, so
-all displayed finite roots are distinct.  The total different is
+all displayed finite roots are distinct.  The four nonzero residue-different
+coefficients are
 
 \[
-4+2+2+2=10=2\cdot6-2, \tag{19}
+(4,2,2,2), \tag{19}
+\]
+
+and the total different is
+
+\[
+4+2+2+2=10=2\cdot6-2, \tag{20}
 \]
 
 which verifies Riemann--Hurwitz.
+
+After the target rescaling
+
+\[
+\beta(s)=\frac{729}{125}h(s),
+\]
+
+the branch values are `0`, `infinity`, and `1`.  Thus `beta` is a degree-six
+Belyi map over `Q` with the same passport.
+
+There is also a forced endpoint-incidence pattern.  The toric endpoints of
+the source divisor are `s=0,infinity`, while the target toric endpoints are
+`h=0,infinity`.  Directly,
+
+\[
+h(0)=0,
+\qquad
+h(\infty)=\frac{125}{729}. \tag{21}
+\]
+
+The other point over the first target endpoint is the interior point `s=-1`
+with index five.  The two points over the second target endpoint are the
+distinct roots of `9s^2+15s+5`, both interior and both of index three.
+Consequently the two target nodes have exactly three preimages in the
+interior of the terminal source divisor.  In any resolved morphism of
+boundary pairs, each is a forced attachment point for another source-boundary
+branch.  Conversely, the source endpoint `s=infinity` maps with tangential
+index three to the smooth target point `125/729`.
 
 ## 4. Monodromy and meridian relation
 
@@ -228,22 +270,73 @@ They form one centralizer orbit.  Every resulting transitive triple generates
 all `360` even permutations:
 
 \[
-\boxed{G=A_6}. \tag{20}
+\boxed{G_{\mathrm{geom}}=A_6}. \tag{22}
 \]
 
 The natural action of this group on the six sheets has no nontrivial block
-of size two or three.  It is therefore primitive.  Equivalently, the
-degree-six residue cover has no nontrivial intermediate cover and cannot
-factor as covers of degrees two and three (in either order).
+of size two or three and is transitive on ordered tuples of up to four
+distinct sheets.  It is therefore primitive and four-transitive.
+Equivalently, the degree-six residue cover has no nontrivial intermediate
+cover and cannot factor as covers of degrees two and three (in either order).
+The centralizer of this action in `S_6` is the identity, so
+
+\[
+\operatorname{Aut}_{\mathbf P^1_r}(\mathbf P^1_s)=1. \tag{23}
+\]
+
+Thus two copies of this residue cover, if global gluing places them over the
+same target component, have at most one target-fixed identification.
 
 For every triple
 
 \[
-\sigma_0\sigma_\infty\sigma_{125/729}=1, \tag{21}
+\sigma_0\sigma_\infty\sigma_{125/729}=1, \tag{24}
 \]
 
-so (21) is the actual global meridian relation of the terminal residue cover,
+so (24) is the actual global meridian relation of the terminal residue cover,
 not an abstract endpoint matching.
+
+There is a useful arithmetic/geometric distinction.  Over `Q(r)` the cover
+is defined by
+
+\[
+\Phi_r(s)=125s(s+1)^5-r(9s^2+15s+5)^3, \tag{25}
+\]
+
+and exact elimination gives
+
+\[
+\operatorname{disc}_s(\Phi_r)
+=5^{17}r^4(729r-125)^2. \tag{26}
+\]
+
+Its squareclass is `5`.  The geometric group in (22) is therefore enlarged
+by an odd permutation over `Q(r)`, and the only possible overgroup is
+
+\[
+G_{\mathrm{arith},\mathbf Q(r)}=S_6. \tag{27}
+\]
+
+The fixed quadratic field in the Galois closure is the constant extension
+`Q(sqrt(5))`; after adjoining `sqrt(5)`, the arithmetic and geometric groups
+both equal `A_6`.
+
+The geometric Galois closure is the regular `A_6` cover with inertia orders
+`(5,3,3)`.  Its Riemann--Hurwitz calculation is
+
+\[
+2g-2
+=360\left(-2+\left(1-\frac15\right)
+              +\left(1-\frac13\right)
+              +\left(1-\frac13\right)\right)
+=48,
+\]
+
+so its genus is
+
+\[
+\boxed{g=25}. \tag{28}
+\]
 
 ## 5. Processed implications for the F2 programme
 
@@ -256,12 +349,19 @@ chain now supplies:
 3. the target extraction ray `(5,2)`;
 4. transverse index `e=1`;
 5. residue degree `f=6`;
-6. the complete residue ramification passport and `A_6` monodromy;
+6. the complete residue ramification passport and geometric `A_6` monodromy;
 7. an exact global meridian factorization;
-8. a primitive, geometrically indecomposable residue packet;
-9. zero transverse different contribution, with residue different degree
-   `10`;
-10. a parameter-free residue map: equation (1) contains no coefficient of
+8. a four-transitive, primitive, geometrically indecomposable residue packet
+   with trivial target-fixed deck group;
+9. zero transverse different contribution, with residue-different packet
+   `(4,2,2,2)` and total degree `10`;
+10. a three-point Belyi normalization whose regular `A_6` closure has triangle
+    signature `(5,3,3)` and genus `25`;
+11. arithmetic `S_6` over `Q(r)`, geometric `A_6`, and quadratic constant
+    field `Q(sqrt(5))`;
+12. three forced interior attachment points over the target toric nodes, while
+    the source endpoint `s=infinity` maps to the smooth third branch value;
+13. a parameter-free residue map: equation (1) contains no coefficient of
     the quadratic cofactor `R`, so the same packet occurs uniformly on every
     admissible principal-chain stratum.
 
@@ -274,19 +374,104 @@ split for the first global ledger:
   packets, and they either land on the same target boundary component or on
   two distinct target components.
 
+### 5.1 Global degree ledger
+
+Let
+
+\[
+d=[k(x,y):k(P,Q)]
+\]
+
+for any global realization of this F2 row.  The fundamental equality over
+the target valuation extracted by `(5,2)` is
+
+\[
+d=\sum_{D\mid T}e(D/T)f(D/T). \tag{29}
+\]
+
+The certified row contributes `1*6`, so every such realization satisfies
+
+\[
+\boxed{d\ge6}. \tag{30}
+\]
+
+On the nonzero double-root stratum, the two principal chains give two
+distinct source valuations.  If both lie over this same target valuation,
+their contributions add and
+
+\[
+\boxed{d\ge12}. \tag{31}
+\]
+
+If they land on distinct target components, the two fundamental equalities
+are separate and only the floor `d>=6` follows.  This distinction is exactly
+why the same-target versus distinct-target split cannot be collapsed.
+
+There is no affine-sheet `+1` in (30) or (31).  Equations (10) show that both
+`P` and `Q` have poles on `T`; the valuation is centered on the target
+boundary at infinity.  The affine-companion theorem for a nonproperness
+curve applies to target curves inside `A^2`, not to this boundary valuation.
+In particular, this calculation does **not** prove the tempting bounds
+`d>=7` or `d>=13`.
+
+### 5.2 Forced attachment and different placement
+
+The endpoint calculation after (21) already fixes part of the global graph
+before any spectator classification.  The point `s=-1` over `h=0` and the two
+denominator roots over `h=infinity` lie in the interior of the source
+divisor.  Because both target values are boundary nodes, a resolved boundary
+morphism must carry another source-boundary branch through each of these
+three distinct points.  Their residue-different contributions are `4,2,2`,
+of total degree eight.
+
+The remaining contribution `2` occurs at the source toric endpoint
+`s=infinity`, which maps to the smooth target value `125/729` with index
+three.  The three simple interior points in that fiber contribute no
+different.  Thus the global gluing ledger must distinguish
+
+\[
+\underbrace{(4,2,2)}_{\text{target-node attachments}}
+\quad\text{from}\quad
+\underbrace{(2)}_{\text{source endpoint over a smooth target point}}.
+\]
+
+### 5.3 Purity and global monodromy
+
+Because `T` is centered at infinity and `e=1`, this row supplies no
+codimension-one branch component of the canonical finite normalization over
+`A^2`.  Purity and the absence of nontrivial connected finite etale covers of
+`A^2` therefore force any global
+noninvertible realization to contain some additional missing-boundary row
+with `e>1` over an affine nonproperness curve.  That separate row has its own
+positive affine companion, but its fundamental equality is over a different
+target valuation and cannot be added to (29).
+
+The surface different coefficient on the terminal row is zero.  The residue
+map nevertheless has the four-point different packet `(4,2,2,2)`.  Any
+global boundary graph must place those four marked ramification points, with
+total residue different ten, among its nodes and smooth marked points; it
+may not reuse ten as a transverse surface-different coefficient.
+
+Finally, in the geometric Galois closure of a global realization, the
+decomposition group at `T` has the residue `A_6` Galois group as a quotient.
+Consequently the global geometric monodromy is nonsolvable and its order is
+divisible by `360`; equivalently, `A_6` is a nonabelian simple composition
+factor.  If equality holds in (30), the global monodromy is a
+transitive subgroup of `S_6` of order divisible by `360`, hence is `A_6` or
+`S_6`.  This is a global group-theoretic restriction, not an exclusion.
+
 The five compatible branch-cycle triples are one centralizer orbit and all
 generate `A_6`.  Thus the residue-side monodromy input is finite and already
 classified; there is no smaller `2`-by-`3` factorization to analyze.  Since
-`e=1`, a contradiction cannot come from a positive transverse different on
-this terminal row.  It must use the residue packet together with the global
-source/target incidence, class-group, unit, canonical, finite-normalization,
-or affine-sheet ledger.
+the local deck group is trivial, a same-target identification of the two
+double-root packets, if it exists, is unique.
 
 The next gap is global rather than local.  One must attach this row to the
 original `A^2` completion, classify the simple `R` spectator orbits, and in
 the double-root row determine whether the two identical `A_6` packets land on
 the same or distinct target boundary components.  Only after that gluing can
 the class-group, unit, canonical, and finite-normalization ledgers be run.
+None of (30)--(31) changes the coordinate-degree frontier `125`.
 
 ## Reproduction
 

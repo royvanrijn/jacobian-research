@@ -6826,6 +6826,20 @@ The exact affine-support/Newton bridge audit is:
 .venv/bin/python plane-jc/cas/verify_f2_terminal_residue_cover.py
 ```
 
+The contact-only artifact was intentionally refreshed after its strategic
+recommendation became historical, without changing the four-stratum census:
+
+```bash
+.venv/bin/python plane-jc/cas/audit_f2_75_125_boundary_handoff.py --refresh
+```
+
+Its current SHA-256 is
+`77bffef9fed0ed9749f135a426de945dc27e226d43fce88bf6a45b79bb8a83e5`;
+the refreshed checker SHA-256 recorded in `MATH_STATUS.json` is
+`952d0955dee25eb96933d36f2510783cfe5610d04ac012bb0836749373ad6684`.
+The refresh changes only the verdict context: the old recommended pivot is
+now labelled historical and linked to `PF2KO1`, `PF2TR1`, and `PF2GC1`.
+
 The first replay proves that coarse Newton vertices, geometric degree, and
 nonproperness data cannot upper-bound affine-normalized support: a
 Zariski-open family of triangular automorphisms has fixed coarse geometry
@@ -6857,13 +6871,42 @@ independently.  The modified-system generator reconstructs the published
 explicitly stated common-power ansatz; it does not prove that ansatz is
 forced.  The last two commands certify the nonzero Kummer-orbit transfer and
 the terminal target row with transverse index one, residue degree six,
-passport `(5,1)|(3,3)|(3,1,1,1)`, and monodromy `A_6`.  Global boundary
-gluing remains open.  The checker also proves that the natural `A_6` action
-is primitive (so the residue cover has no `2`-by-`3` factorization), that
+passport `(5,1)|(3,3)|(3,1,1,1)`, and geometric monodromy `A_6`.  Global
+boundary gluing remains open.  The checker also proves that the natural
+`A_6` action is four-transitive and primitive (so the residue cover has no
+`2`-by-`3` factorization), that its target-fixed deck group is trivial, that
 `e=1` gives zero transverse different, and that the residue formula is
-parameter-free.  Thus the remaining ledger has one squarefree packet or two
-identical double-root packets attached to the same versus distinct target
-components.  These calculations do not exclude `(75,125)`.
+parameter-free.  It emits residue-different packet `(4,2,2,2)` and verifies
+
+```text
+disc_s(125*s*(s+1)^5-r*(9*s^2+15*s+5)^3)
+  = 5^17*r^4*(729*r-125)^2,
+```
+
+so the rational model has arithmetic `S_6` over `Q(r)`, geometric `A_6`, and
+quadratic constant field `Q(sqrt(5))`.  After rescaling the third branch value
+to one it is a Belyi map; its regular geometric `A_6` closure has signature
+`(5,3,3)` and genus `25`.  The two target toric nodes have exactly three
+preimages in the source-divisor interior, fixing three boundary-attachment
+points with different contributions `(4,2,2)`.  The last contribution `2`
+is at the source toric endpoint over the smooth third branch value.
+The target valuation equality gives
+geometric degree at least six, or at least twelve for two distinct packets
+over the same target divisor.  Packets over distinct target divisors do not
+add.  Since the certified target valuation is centered at infinity, the
+affine-companion theorem supplies no `+1`; purity instead requires a separate
+affine ramification row.  Global geometric monodromy has `A_6` as a
+nonabelian simple composition factor.  Thus the remaining ledger has one
+squarefree packet or two identical double-root packets attached to the same
+versus distinct target components.  These calculations do not exclude
+`(75,125)`.
+
+The expanded terminal checker is pinned in `MATH_STATUS.json` at SHA-256
+`49d43f3c2f7b872f73705fa30914b45b0e019c6989e4e0254c182eaca8c55459`.
+The software assumptions remain `.python-version` and `requirements.txt`;
+the command above both recomputes the assertions and emits the final pass
+marker.
+<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 
 The small deterministic regression of the published candidate tables is:
 

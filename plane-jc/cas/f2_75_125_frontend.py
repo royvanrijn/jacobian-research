@@ -5,7 +5,9 @@ This module records everything that follows mechanically from the published
 complete-chain theorem and the type-I endpoint theorem.  It deliberately does
 not promote those facts to an exhaustive Laurent normal form: the lower
 boundary after the Puiseux translation is not classified in the cited
-sources.
+sources.  This is the residual input ledger for the optional coefficient/de
+Rham route.  Later Kummer/toroidal results certify the selected terminal
+target row without making this frontend exhaustive.
 
 Run this file to emit the residual certificate as JSON.
 """
@@ -215,7 +217,9 @@ def residual_obligations() -> tuple[ResidualObligation, ...]:
             ),
             source_status=(
                 "The forced terminal type-I block has zero residual obstruction; the "
-                "first potentially new obstruction depends on the missing lower bands."
+                "first potentially new obstruction within the coefficient/de Rham route "
+                "depends on the missing lower bands. The selected target row is now "
+                "certified separately and continues through global gluing."
             ),
         ),
     )

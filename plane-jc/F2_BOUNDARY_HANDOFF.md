@@ -6,11 +6,15 @@
 > F2 chain, or two copies on the nonzero double-root row.  The terminal block
 > then determines a genuine target extraction ray `(5,2)`, transverse index
 > `1`, residue degree `6`, branch passport
-> `(5,1)|(3,3)|(3,1,1,1)`, monodromy `A_6`, and an exact global meridian
-> relation.  The `A_6` action is primitive, the transverse different is zero,
-> and the residue map is uniform across the admissible cofactor strata.  What
-> remains is to glue this row to the full source completion and
-> classify the simple spectator orbits; the degree pair is not excluded.
+> `(5,1)|(3,3)|(3,1,1,1)`, geometric monodromy `A_6`, and an exact global
+> meridian relation.  The `A_6` action is four-transitive and primitive, its
+> target-fixed deck group is trivial, the transverse different is zero, and
+> the residue map is uniform across the admissible cofactor strata.  Any
+> global realization has geometric degree at least six; two distinct packets
+> over the same target divisor force at least twelve.  The row is centered at
+> target infinity, so no affine-sheet `+1` applies, and purity forces a
+> separate affine ramification row.  What remains is global gluing and the
+> spectator ledger; the degree pair is not excluded.
 
 The three exact replays are:
 
@@ -24,6 +28,7 @@ The three exact replays are:
 The mathematical refinements are documented in
 [`F2_KUMMER_ORBIT_TRANSFER.md`](F2_KUMMER_ORBIT_TRANSFER.md) and
 [`F2_TERMINAL_RESIDUE_COVER.md`](F2_TERMINAL_RESIDUE_COVER.md).
+<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 
 ## 1. Common edge and cover-level contact census
 
@@ -204,11 +209,25 @@ and the actual global meridian relation
 \]
 
 This completes the local braid factorization for the terminal target row.
-The natural degree-six `A_6` action is primitive, so this residue cover has no
-nontrivial degree-two/degree-three factorization.  Moreover `e=1` contributes
-zero to the transverse different; the degree-ten different above is entirely
-residue ramification.  Formula (9) contains no `R` parameter, so this local
-packet is identical on every admissible principal-chain stratum.
+The natural degree-six `A_6` action is four-transitive and primitive, so this
+residue cover has no nontrivial degree-two/degree-three factorization.  Its
+centralizer in `S_6` is trivial, hence it has no target-fixed deck
+transformation.  Moreover `e=1` contributes zero to the transverse different;
+the residue-different coefficients are `(4,2,2,2)` and have total degree ten.
+Formula (9) contains no `R` parameter, so this local packet is identical on
+every admissible principal-chain stratum.
+
+For the rational model, the discriminant of
+
+\[
+125s(s+1)^5-r(9s^2+15s+5)^3
+\]
+
+with respect to `s` is `5^17*r^4*(729*r-125)^2`.  Thus its arithmetic
+monodromy over `Q(r)` is `S_6`, while its geometric monodromy is `A_6`; the
+quadratic constant field of the Galois closure is `Q(sqrt(5))`.
+After scaling by `729/125` the map is Belyi.  Its regular geometric `A_6`
+closure has inertia signature `(5,3,3)` and genus `25`.
 
 ## 5. Why the old contact surrogate is retained
 
@@ -241,6 +260,29 @@ principal packet, and two double-root attachment cases: two identical packets
 on one target component or on distinct target components.  The five local
 branch-cycle triples form one centralizer orbit and do not add further
 monodromy cases.
+
+Several consequences can already be entered before that gluing:
+
+- the valuation equality over the extracted target divisor gives geometric
+  degree `d>=6`;
+- two distinct double-root packets over that same divisor give `d>=12`, while
+  packets over distinct target divisors do not add;
+- the target pole orders `(3,5)` center this row at infinity, so the affine
+  companion theorem does not strengthen these to `7` or `13`;
+- the target toric nodes `h=0,infinity` have three distinct preimages in the
+  source-divisor interior (`s=-1` and the two denominator roots), forcing
+  three boundary-attachment points with different contributions `(4,2,2)`;
+  the remaining contribution `2` lies at the source endpoint `s=infinity`
+  over the smooth third branch value;
+- `e=1` makes this row unramified in the normal direction, so purity requires
+  a separate missing-boundary row with `e>1` over an affine nonproperness
+  curve;
+- the global geometric Galois group has a decomposition-group quotient
+  `A_6`, hence has `A_6` as a nonabelian simple composition factor, is
+  nonsolvable, and has order divisible by `360`; if `d=6`, it is `A_6` or
+  `S_6`;
+- a same-target isomorphism between the two identical local covers, if one
+  exists, is unique because their deck group is trivial.
 
 The missing object is no longer the first normal order at fifteen centers and
 no thirty-layer descent is required for the selected chain.  The unresolved

@@ -81,9 +81,17 @@ This policy applies only to searches for two-dimensional Keller maps.
 11. Rank future degree-frontier work by the tables in
    [FRONTIER_CLOSING_ATTACKS.md](FRONTIER_CLOSING_ATTACKS.md) and
    [NEXT_DEGREE_FRONTIER.md](NEXT_DEGREE_FRONTIER.md).
-   The pair \((75,125)\) is the first numerical maximum, but multiple chains at
-   \((84,126)\), \((90,135)\), and \((96,144)\) may offer more reusable
+   The pair \((75,125)\) is the first numerical maximum.  Its selected F2
+   chain now has a certified `(e,f)=(1,6)` terminal row, so its live priority
+   is the finite global attachment ledger: one packet, or two packets on the
+   same versus distinct target divisors, together with spectators, the
+   purity-forced affine ramification row, three forced target-node attachment
+   points, and the source-endpoint-over-smooth branch incidence.
+   Exhaustive lower Laurent masks are an optional independent coefficient
+   route, not a prerequisite for that gluing.  Multiple chains at
+   \((84,126)\), \((90,135)\), and \((96,144)\) may still offer reusable
    structural tests.
+   <!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 
 The frontier is a lower bound, not an attainability prediction.  Search
 documentation must keep JC(2) separate from the repository's JC(3)

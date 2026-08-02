@@ -123,17 +123,30 @@ Open work, in dependency order:
    nonzero double-root stratum.  The
    [`terminal residue theorem`](F2_TERMINAL_RESIDUE_COVER.md) computes source
    ray `(12,-17)`, target ray `(5,2)`, transverse index one, residue degree
-   six, passport `(5,1)|(3,3)|(3,1,1,1)`, and `A_6` monodromy.  The action is
-   primitive, the cover has no `2`-by-`3` factorization, the transverse
-   different is zero, and the same residue map occurs on every admissible
-   principal stratum.  The global case split is therefore one squarefree
-   packet, or two identical double-root packets on the same versus distinct
-   target components.  The next task is not a sequential descent through the
-   remaining thirty layers: attach
+   six, passport `(5,1)|(3,3)|(3,1,1,1)`, and geometric `A_6` monodromy.  The
+   action is four-transitive and primitive, its target-fixed deck group is
+   trivial, the
+   cover has no `2`-by-`3` factorization, the transverse different is zero,
+   and the same residue map occurs on every admissible principal stratum.
+   The residue-different packet is `(4,2,2,2)`.  Three of those contributions,
+   `(4,2,2)`, occur at three interior preimages of the target toric nodes and
+   force boundary-attachment points; the last `2` occurs at the source
+   endpoint over the smooth third branch value.  The rescaled cover is Belyi
+   and its regular `A_6` closure has genus `25`.  The target valuation equality
+   forces geometric degree at least six; two distinct double-root packets on
+   the same target divisor force at least twelve, while packets on distinct
+   target divisors do not add.  Since this divisor is centered at infinity,
+   no affine-sheet `+1` applies.  Purity instead forces a separate affine
+   ramification row, and the global geometric monodromy has `A_6` as a simple
+   composition factor.  The global case split is therefore one
+   squarefree packet, or two identical double-root packets on the same versus
+   distinct target components.  The next task is not a sequential descent
+   through the remaining thirty layers: attach
    these rays to the original completions, classify the simple spectator
    orbits, decide whether the two packets share a target component, and then
    run the class-group, unit, canonical, finite-normalization, and global
    meridian filters.  The degree pair `(75,125)` remains unexcluded.
+   <!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 3. **Retire the excluded `(96,144)` repeated-tail branch.**  The source
    statements are now reconciled in
    [`FRONTIER_CLOSING_ATTACKS.md`](FRONTIER_CLOSING_ATTACKS.md).  The 2017
@@ -169,7 +182,7 @@ silently treated as solved.
 
 | Pair | gcd / ratio | first corner and chain data | Remaining obstruction | Expected difficulty | Does the \((72,108)\) proof apply unchanged? |
 | --- | --- | --- | --- | --- | --- |
-| \((75,125)\) | 25; \(3:5\) | family F2, \(A_0=(5,20)\), final \((7/5,2)\) | derive its Laurent polygons and coefficient systems | high, but shortest next family case | no: different ratio, corner, bands, and approximate-root exponents |
+| \((75,125)\) | 25; \(3:5\) | family F2, \(A_0=(5,20)\), final \((7/5,2)\); certified terminal row `(e,f)=(1,6)` | globally attach one packet or the same-target/distinct-target double packet, classify spectators, and run purity/different/class-group/unit/canonical/meridian ledgers; exhaustive lower Laurent masks remain an optional coefficient route | high, but finite three-case attachment ledger | no: different ratio, corner, bands, and approximate-root exponents |
 | \((84,126)\) | 42; \(2:3\) | \(A_0=(7,35)\to(19/7,5)\), and a second realization \((12,30)\to(16/3,10)\to(11/6,3)\) | two chain realizations must both be excluded | high | no: the ratio agrees but neither chain is \((8,28)\to(11/4,7)\) |
 | \((96,128)\) | 32; \(3:4\) | F24, \((8,24)\to(14/4,6)\to(5/4,0)\to(19/8,3)\) | longest family-derived corner chain at this maximum | very high | no |
 | \((88,132)\) | 44; \(2:3\) | \((11,33)\to(19/4,8)\) | new \(2:3\) coefficient system | high | no |

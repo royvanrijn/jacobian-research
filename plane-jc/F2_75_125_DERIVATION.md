@@ -168,9 +168,9 @@ The pinned JSON stores every band, all terminal normalizations, every
 band-pair incidence row, the five character counts, and SHA-256 digests of
 the exact linear equations and compressed quadratic generators.  This is
 the promised B0 classification.  It also shows why an unfiltered Gröbner
-calculation is premature: the next theorem must cut the 978-parameter jet
-over-envelope (973 after normalization) to the exhaustive B1
-polygon/`gamma` masks.
+calculation is premature: any future coefficient-route exclusion must first
+cut the 978-parameter jet over-envelope (973 after normalization) to
+exhaustive B1 polygon/`gamma` masks.
 
 ### 4.1 Joint classification of the common-power top band
 
@@ -261,11 +261,11 @@ with the top `Q` term because
 
 Thus the first four zero layers do not obstruct F2, and layer 35 does not
 produce a unit ideal: it opens the expected lower-power \(C_0^2\) branch.
-Only layers 34 through 5 remain unclassified at this stronger level.  This
-is the decisive diagnostic for the present approach: closure is plausible
-only if propagation of this \(C_0^2\) mode creates an early nonzero de Rham
-class; otherwise the 30-layer continuation is too broad for a final direct
-elimination.
+Only layers 34 through 5 remain unclassified at this stronger level.  For the
+optional coefficient/de Rham route, closure is plausible only if propagation
+of this \(C_0^2\) mode creates an early nonzero class; otherwise the 30-layer
+continuation is too broad for a final direct elimination.  These layers are
+not the current prerequisite for the already certified terminal target row.
 
 The first boundary pivot tested the alternative.  The quadratic `R` produces
 four exact cover-level contact partitions, but a contact multiplicity alone
@@ -282,6 +282,7 @@ row to one principal chain or two copies.  The
 the exact degree-six target row.  Thus sequential descent through the lower
 thirty layers remains stopped, while the F2 programme is reopened at the
 global source/target gluing stage.
+<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 
 ## 5. Why the older `(50,75)` calculation does not fill the gap
 
@@ -292,21 +293,26 @@ systems use `P=C^2`, `Q=C^3+...`; replacing those exponents by `3,5` is not a
 consequence of the printed argument and would not establish exhaustive lower
 supports.
 
-## 6. Residual system and next obstruction
+## 6. Residual coefficient route and current obstruction
 
-The JSON certificate contains three proof obligations:
+If the direct coefficient route is resumed, the JSON certificate leaves
+these proof obligations:
 
-1. prove support control after `y -> y+lambda*x^(-1/5)`;
-2. determine, prove exhaustive, and normalize every `gamma` branch for
+1. refine the exact degree/halfspace B0 over-envelope to exhaustive support
+   masks after `y -> y+lambda*x^(-1/5)`;
+2. determine, prove exhaustive, and normalize every `gamma`/polygon branch for
    `(m,n)=(3,5)` (the old values `2,3` may not simply be assumed);
-3. refine the exact B0 band envelope to exhaustive B1 polygon masks and
-   impose the common-power coefficient relations before compiling the first
-   feasible Gröbner/de Rham block.
+3. propagate the genuine layer-35 `lambda*C0^2` mode through those masks and
+   compile the first feasible Gröbner/de Rham block.
 
-This is the next genuinely new obstruction.  The terminal edge is already
-solved and contributes no de Rham obstruction; the missing object is a
-theorem-level exhaustive lower-boundary classification, not a larger
-Gröbner-basis calculation.
+This remains a valid route to a coefficient-level F2 exclusion, but it is no
+longer the next programme-wide obstruction.  The Kummer and terminal-residue
+theorems bypassed it for the selected principal chain and produced the exact
+row `(e,f)=(1,6)`.  The current obstruction is global source/target gluing,
+including the same-target versus distinct-target double-packet split,
+spectator incidence, the three forced interior attachment points over the
+target toric nodes, the endpoint-over-smooth branch point, and the
+purity-forced affine ramification row.
 
 ## 7. Kummer-character bridge gate
 
@@ -321,8 +327,9 @@ P:\{1,4\},\qquad Q:\{0,1,3\}\pmod 5.
 
 Thus the five-term terminal block does not descend to the certified
 support-six Keller theorem.  The missing lower bands must be compiled with
-their characters before the support theorem or the log-boundary ledger can
-be used.  The exact gate and the obstruction to controlling affine support
+their characters before that **coefficient/support** route can be used; they
+are not a prerequisite for globally gluing the separately certified terminal
+target row.  The exact gate and the obstruction to controlling affine support
 from coarse Newton data are proved in
 [`AFFINE_SUPPORT_NEWTON_BRIDGE.md`](AFFINE_SUPPORT_NEWTON_BRIDGE.md).
 

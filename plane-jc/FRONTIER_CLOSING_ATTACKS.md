@@ -193,15 +193,15 @@ This attack meets its kill criterion at the complete-chain stage, before any
 approximate-root or bracket-band expansion.  It removes one of the six raw
 `(96,144)` chains.
 
-## Attack B — polyhedral support completion for F2 `(75,125)`
+## Attack B — F2 polyhedral coefficient route — B0 completed, route parked
 
-The current F2 record has three proof obligations, but they should not be
-attacked as one theorem.  A paper audit adds a prerequisite: the complete-
-chain theorem fixes the two displayed edges but does not bound the entire
-lower support after the Puiseux translation.  Therefore a binary-support
-enumeration is finite only after the following envelope lemma is proved.
+This was the original route to an F2 exclusion.  It remains mathematically
+valid, but it is no longer the programme-wide critical path: the Kummer-orbit
+and terminal-residue theorems bypassed the missing lower masks for the
+selected principal chain and produced the exact target row `(e,f)=(1,6)`.
+The coefficient route is retained here with its present status.
 
-**Milestone B0 (support envelope).**  Pull each original polynomial monomial
+**Milestone B0 (support envelope) — completed.**  Pull each original polynomial monomial
 through `x=X^5`, `y -> y+lambda/X`.  A descendant has
 
 \[
@@ -216,12 +216,14 @@ forced-edge provenance tag.  The older `(50,75)` values `gamma=2,3` cannot
 be used: their preliminary reduction is explicitly unproved and concerns
 the `(2,3)` member.
 
-**B0 success criterion.**  A machine-checkable finite support envelope whose
-complement is excluded by cited polygon inequalities.  Until this exists,
-B1 must not silently choose a bounding box.
+The exact degree/terminal-halfspace envelope is now emitted by
+[`cas/classify_f2_75_125_layers.py`](cas/classify_f2_75_125_layers.py).  It
+contains all 35 zero layers, 665 band-pair incidences, and 978 jet-reduced
+linear parameters.  This meets B0 as a certified over-envelope; it is not an
+exhaustive list of B1 polygon masks.
 
-After B0, introduce binary variables for its lattice points below the
-common-power band and impose, in order:
+If the direct coefficient route is resumed, introduce binary variables for
+its lattice points below the common-power band and impose, in order:
 
 1. convexity and the two forced edges;
 2. endpoint nonvanishing;
@@ -246,25 +248,39 @@ weighted-Wronskian block with a nonzero de Rham class.
 This reverses the expensive order “guess gamma, then expand 35 layers”:
 support incidence should eliminate most branches before any field extension.
 
-## Attack C — nested branch scale at the F2 resonance faces
+## Attack C — selected F2 branch scale and terminal row — completed locally
 
-The branch-scale fan work shows that equal radial values do not determine the
-stable target at a multiple leading collision.  Attack A removes the
-triple-root repeated-tail face.  The remaining live target is a repeated root
-of the F2 common-power polynomial \(H\).
+The Kummer-character transfer proves that a nonzero fifth-root fiber is one
+orbit, excludes the zero-root strata, and makes simple cofactor roots
+spectators.  The selected squared factor has source ray `(12,-17)` and target
+ray `(5,2)`.  Its residue map is the parameter-free degree-six cover
 
-For that target, compute the first translated residue polynomial and its
-cross-ratio or jet after fixing the radial scale. Feed that second scale into
-the existing recursive resonance atlas and then into the log-boundary
-compiler.
+\[
+h(s)=\frac{125s(s+1)^5}{(9s^2+15s+5)^3},
+\]
 
-**Kill criterion.** The nested scale forces a source basepoint or target
-component whose pole, ramification, or intrinsic \(A^2\) boundary data is
-incompatible.
+with `(e,f)=(1,6)`, passport `(5,1)|(3,3)|(3,1,1,1)`, residue-different
+packet `(4,2,2,2)`, and geometric monodromy `A_6`.  Its natural action is
+four-transitive and has trivial target-fixed deck group.  This completes the
+positive local-scale objective for the selected chain; it does not make the
+full B1 coefficient masks exhaustive.
 
-**Stop criterion.** If the nested parameter is genuinely free and all
-intrinsic gates pass, do not add more blowups: return to the coefficient or
-support attack with the free residue recorded as a parameter.
+The rescaled cover is Belyi and its regular `A_6` closure has triangle
+signature `(5,3,3)` and genus `25`.  More immediately for the boundary graph,
+the target toric nodes have three preimages in the source-divisor interior.
+They force three attachment points carrying different contributions
+`(4,2,2)`; the remaining contribution `2` is at the source endpoint over the
+smooth third branch value.
+
+The resulting global consequences are already fixed: geometric degree is at
+least six, or at least twelve for two distinct packets over the same target
+divisor; the infinity-centered row receives no affine-sheet increment;
+purity forces a separate affine ramification row; and global geometric
+monodromy has `A_6` as a nonabelian simple composition factor.  The live
+attack is now to glue the one-packet and two double-packet attachment cases,
+classify spectators, and run the class-group, unit, canonical, different, and
+meridian ledgers.
+<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 
 ## Attack D0 — non-birational Case-2 residue strata — completed
 
@@ -469,9 +485,14 @@ For the one-pair closure program:
 
 For movement of the numerical degree frontier:
 
-1. B0: prove and emit the finite translated support envelope.
-2. B1: support-only F2 enumeration inside that certified envelope.
-3. C only on resonance faces actually surviving B1.
+1. Globally attach the certified F2 `(1,6)` terminal row and the simple
+   spectator orbits to the original completions.
+2. Separate the double-root same-target row (`d>=12`) from the distinct-target
+   row (`d>=6`), place the purity-forced affine ramification and the residue
+   different across the three node attachments and the endpoint-over-smooth
+   incidence, and run the global ledgers.
+3. Resume B1 support masks and lower-layer coefficient/de Rham propagation
+   only as an optional independent exclusion route; B0 is already complete.
 
 Every stage has a finite artifact: a unit certificate, a target resolution,
 a list of harmonic graph covers, a Pluecker partition, or a support mask.

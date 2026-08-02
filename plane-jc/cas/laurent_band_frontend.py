@@ -308,13 +308,16 @@ def audited_72_108_normal_form() -> NewtonNormalFormCertificate:
 
 
 def frontier_75_125_normal_form() -> NewtonNormalFormCertificate:
-    """Typed refusal: the F2 j=1 row has no derived Laurent normal form."""
+    """Typed refusal for the optional F2 coefficient/de Rham route."""
 
     chain = frontier_75_125_record()
     return NewtonNormalFormCertificate(
         chain=chain,
         cases=(),
-        theorem_source="not yet available for the F2 j=1 member",
+        theorem_source=(
+            "exhaustive Laurent normal form not yet available for the F2 j=1 "
+            "coefficient route; the selected toroidal target row is certified separately"
+        ),
         transformations=(),
         exhaustive=False,
         missing_data=chain.missing_frontend_data,

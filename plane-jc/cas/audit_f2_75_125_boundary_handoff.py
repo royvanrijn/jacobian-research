@@ -349,14 +349,24 @@ def build_payload() -> dict[str, object]:
                 list(stratum.contact_partition) for stratum in strata
             ],
             "closure_assessment": (
-                "the quadratic-R data do not close F2 through current boundary "
-                "gates; lower normal terms are exactly the missing bridge"
+                "at the retained contact-only stage, the quadratic-R data do "
+                "not close F2; contact multiplicities alone do not supply the "
+                "missing target-side row"
             ),
             "recommended_pivot": (
-                "stop sequential F2 descent and seek a degree-independent "
-                "theorem converting a common-power edge packet into target-side "
-                "finite-normalization data"
+                "historical contact-stage pivot: stop sequential descent and "
+                "seek a theorem converting the common-power packet into "
+                "target-side data; PF2KO1 and PF2TR1 subsequently complete "
+                "that pivot for the selected principal chain"
             ),
+            "downstream_status": {
+                "PF2KO1": "one principal chain, or two copies on the double-root row",
+                "PF2TR1": "certified target row (e,f)=(1,6) with geometric A6",
+                "PF2GC1": (
+                    "global degree floor 6, same-target double-packet floor 12, "
+                    "and global attachment still open"
+                ),
+            },
         },
         "software": {
             "python": "standard library",

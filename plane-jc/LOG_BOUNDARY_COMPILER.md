@@ -503,8 +503,14 @@ source-selected package.  The transformed-Poisson correction now separates
 the two normal indices.  The Case-2 decomposition and endpoint certificates
 remove all three Case-2 cover rows.  Only the three Case-1 rows remain.  No
 chain-to-boundary geometry remains missing.
-For `(75,125)`, even the
-exhaustive Laurent branches and their local scales have not yet been derived.
+For `(75,125)`, exhaustive Laurent branches for a full coefficient
+classification have not been derived.  That compiler refusal remains correct
+for the coefficient/de Rham route.  It is no longer a statement that the
+selected principal chain lacks local target data: the Kummer-orbit and
+terminal-residue theorems give its source ray `(12,-17)`, target ray `(5,2)`,
+and complete row `(e,f)=(1,6)`.  The current task for that row is global
+attachment, not another local branch-scale derivation.
+<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 
 ## 6. From compiled experiments to a finite theorem
 

@@ -251,9 +251,15 @@ missing inputs and rejects this row too.  In particular, neither the covering
 exponent, character, genus, nor obstruction rank can yet be inferred
 faithfully from the family table.
 
-This makes `(75,125)` the clean next front-end derivation problem once the
-published normal-form machinery is formalized.  It is not yet a test vector
-for the de Rham middle end.
+This still makes `(75,125)` a clean **optional coefficient-route** frontend
+derivation problem once the published normal-form machinery is formalized; it
+is not yet a test vector for the de Rham middle end.  It is not the current
+global F2 bottleneck.  Subsequent Kummer-orbit and terminal-residue arguments
+certify the selected principal target row `(e,f)=(1,6)` without manufacturing
+the missing lower bands.  Their live continuation is global attachment,
+spectator incidence, purity/different placement, and the same-target versus
+distinct-target double-packet split.
+<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 
 ## 6. Reproduction
 
@@ -267,4 +273,5 @@ python3 plane-jc/cas/test_newton_derham_compiler.py
 The second command certifies the `(72,108)` tail basis and confirms that the
 local-system checker accepts exact coordinate rescalings, rejects a distinct
 curve with the same coarse fingerprint, and confirms that the incomplete
-`(96,144)` and `(75,125)` records cannot be compiled.
+`(96,144)` and `(75,125)` coefficient records cannot be compiled.  That last
+refusal does not invalidate the separately proved F2 terminal target row.

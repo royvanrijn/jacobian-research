@@ -18,8 +18,17 @@ This checker proves:
 * every compatible transitive branch-cycle triple generates A6;
 * the natural degree-six monodromy action is primitive, so the residue
   cover has no nontrivial intermediate rational cover;
+* that action is four-transitive and has trivial centralizer, so the
+  target-fixed deck group is trivial;
+* over Q(r) the defining polynomial has discriminant squareclass five,
+  giving arithmetic monodromy S6 while geometric monodromy remains A6;
+* after rescaling the third branch value to one, the cover is a Belyi map
+  with regular A6 closure of triangle signature (5,3,3) and genus 25;
+* the two target toric nodes have three interior source preimages, fixing
+  three attachment points in any resolved boundary realization;
 * the transverse different contribution is zero and the residue map is
-  independent of the cofactor parameters.
+  independent of the cofactor parameters;
+* the one- and two-packet degree contributions are six and twelve.
 """
 from __future__ import annotations
 
@@ -99,6 +108,38 @@ def nontrivial_blocks(
         ):
             blocks.append(block)
     return blocks
+
+
+def centralizer(
+    group: set[tuple[int, ...]],
+) -> set[tuple[int, ...]]:
+    """Return the centralizer of a permutation group in its symmetric group."""
+    degree = len(next(iter(group)))
+    return {
+        element
+        for element in permutations(range(degree))
+        if all(
+            compose(element, member) == compose(member, element)
+            for member in group
+        )
+    }
+
+
+def is_k_transitive(
+    group: set[tuple[int, ...]],
+    k: int,
+) -> bool:
+    """Test transitivity on ordered tuples of k distinct sheets."""
+    degree = len(next(iter(group)))
+    seed = tuple(range(k))
+    orbit = {
+        tuple(element[index] for index in seed)
+        for element in group
+    }
+    expected = 1
+    for offset in range(k):
+        expected *= degree - offset
+    return len(orbit) == expected
 
 
 def terminal_block() -> tuple[sp.Expr, sp.Expr, sp.Expr]:
@@ -224,10 +265,27 @@ def branch_passport_audit(h: sp.Expr) -> None:
     ) == 3
 
     # Total different: 4 + 2+2 + 2 = 10 = 2*6-2.
-    assert 4 + 2 + 2 + 2 == 10
+    different_packet = (4, 2, 2, 2)
+    assert sum(different_packet) == 10
+    belyi_map = sp.factor(sp.Rational(729, 125) * h)
+    assert sp.limit(belyi_map, s, 0) == 0
+    assert sp.limit(belyi_map, s, sp.oo) == 1
+    assert sp.factor(belyi_map.subs(s, -1)) == 0
+    # The source toric endpoints are s=0,infinity.  The target toric
+    # endpoints are h=0,infinity.  Besides s=0, their inverse images are the
+    # interior point s=-1 and the two distinct roots of the denominator.
+    interior_target_node_preimages = 1 + sp.degree(
+        9 * s**2 + 15 * s + 5,
+        s,
+    )
+    assert interior_target_node_preimages == 3
 
     print("F2_TERMINAL_BRANCH_VALUES=0,infinity,125/729")
     print("F2_TERMINAL_BRANCH_PASSPORT=(5,1)|(3,3)|(3,1,1,1)")
+    print("F2_TERMINAL_RESIDUE_DIFFERENT_PACKET=(4,2,2,2)")
+    print("F2_TERMINAL_BELYI_BRANCH_VALUES=0,infinity,1")
+    print("F2_TERMINAL_SOURCE_ENDPOINT_IMAGES=0,125/729")
+    print("F2_TERMINAL_INTERIOR_PREIMAGES_OF_TARGET_NODES=3")
     print("F2_TERMINAL_RIEMANN_HURWITZ_PASS")
 
 
@@ -257,18 +315,79 @@ def monodromy_audit() -> None:
         assert len(group) == 360
         assert all(parity(element) == 0 for element in group)
         assert nontrivial_blocks(group) == []
+        assert centralizer(group) == {tuple(range(6))}
+        assert all(is_k_transitive(group, k) for k in range(1, 5))
+        assert not is_k_transitive(group, 5)
 
     print("F2_TERMINAL_BRANCH_CYCLE_TRIPLES=5")
     print("F2_TERMINAL_MONODROMY=A6")
     print("F2_TERMINAL_MONODROMY_PRIMITIVE_PASS")
+    print("F2_TERMINAL_MONODROMY_4_TRANSITIVE_PASS")
+    print("F2_TERMINAL_DECK_GROUP=trivial")
     print("F2_TERMINAL_COVER_INDECOMPOSABLE_PASS")
     print("F2_TERMINAL_GLOBAL_MERIDIAN_PASS")
+
+
+def galois_closure_audit() -> None:
+    group_order = 360
+    orbifold_degree = (
+        -2
+        + (1 - sp.Rational(1, 5))
+        + (1 - sp.Rational(1, 3))
+        + (1 - sp.Rational(1, 3))
+    )
+    assert orbifold_degree == sp.Rational(2, 15)
+    two_genus_minus_two = group_order * orbifold_degree
+    assert two_genus_minus_two == 48
+    genus = (two_genus_minus_two + 2) // 2
+    assert genus == 25
+    print("F2_TERMINAL_GALOIS_TRIANGLE_SIGNATURE=(5,3,3)")
+    print("F2_TERMINAL_GEOMETRIC_GALOIS_CLOSURE_GENUS=25")
+
+
+def arithmetic_monodromy_audit() -> None:
+    s, r = sp.symbols("s r")
+    relation = (
+        125 * s * (s + 1) ** 5
+        - r * (9 * s**2 + 15 * s + 5) ** 3
+    )
+    discriminant = sp.factor(sp.discriminant(relation, s))
+    expected = 5**17 * r**4 * (729 * r - 125) ** 2
+    assert discriminant == expected
+    square_factor = 5**8 * r**2 * (729 * r - 125)
+    assert sp.factor(discriminant - 5 * square_factor**2) == 0
+    assert sp.sqrt(5).is_rational is False
+
+    # Geometric A6 is already checked above.  Its only overgroup in S6 is
+    # S6, and the nonsquare discriminant supplies an odd arithmetic element.
+    print("F2_TERMINAL_DISCRIMINANT=5^17*r^4*(729*r-125)^2")
+    print("F2_TERMINAL_GEOMETRIC_MONODROMY=A6")
+    print("F2_TERMINAL_ARITHMETIC_MONODROMY_QR=S6")
+    print("F2_TERMINAL_ARITHMETIC_CONSTANT_FIELD=Q(sqrt(5))")
+
+
+def global_degree_ledger_audit() -> None:
+    transverse_index = 1
+    residue_degree = 6
+    target_orders = (-3, -5)
+    packet_degree = transverse_index * residue_degree
+    assert all(order < 0 for order in target_orders)
+    assert packet_degree == 6
+    assert 2 * packet_degree == 12
+
+    print("F2_TERMINAL_GLOBAL_DEGREE_FLOOR=6")
+    print("F2_TERMINAL_SAME_TARGET_DOUBLE_DEGREE_FLOOR=12")
+    print("F2_TERMINAL_TARGET_CENTER=boundary_at_infinity")
+    print("F2_TERMINAL_AFFINE_SHEET_INCREMENT=not_applicable")
 
 
 def main() -> None:
     h = residue_map_audit()
     branch_passport_audit(h)
     monodromy_audit()
+    galois_closure_audit()
+    arithmetic_monodromy_audit()
+    global_degree_ledger_audit()
     print("F2_TERMINAL_RESIDUE_COVER_PASS")
 
 

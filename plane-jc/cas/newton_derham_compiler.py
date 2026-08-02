@@ -10,8 +10,10 @@ inventing equations from corner data.  A complete block is compiled to:
 
 The normalized (72,108) first block is the golden fixture.  The repeated-tail
 (96,144) row is represented as source-excluded after its complete-chain
-audit, while the (75,125) F2 row remains incomplete because the published
-table supplies corners, not Laurent coefficient bands.
+audit, while the (75,125) F2 row remains incomplete **for this coefficient
+compiler** because the published table supplies corners, not Laurent
+coefficient bands.  A separate Kummer/toroidal argument certifies the selected
+F2 terminal target row and does not make this de Rham input exhaustive.
 """
 
 from dataclasses import dataclass
@@ -403,10 +405,12 @@ def frontier_75_125_record() -> NewtonChainIR:
         enumeration_source="GGHV 2017 family F2 with j=1",
         status=(
             "forced chain, Puiseux chart, bracket monomial, and terminal edge "
-            "are derived; lower Laurent boundary remains unclassified"
+            "are derived; lower Laurent boundary remains unclassified for the "
+            "optional coefficient/de Rham route, while the selected toroidal "
+            "target row is separately certified"
         ),
         missing_frontend_data=(
-            "proof of support control after y -> y+lambda*x^(-1/5)",
+            "exhaustive B1 support control after y -> y+lambda*x^(-1/5)",
             "exhaustive gamma branches and their complete Laurent polygons",
             "all bands from the common-power layer to bracket layer 4",
         ),
@@ -415,7 +419,8 @@ def frontier_75_125_record() -> NewtonChainIR:
             "with ratio 2:3; its modified coefficient systems do not supply "
             "the missing 3:5 bands for the j=1 degree-(75,125) member. "
             "The exact facts that do follow from GGHV 2017 are encoded in "
-            "cas/f2_75_125_frontend.py"
+            "cas/f2_75_125_frontend.py. Later Kummer and terminal-residue "
+            "results bypass these missing bands only for the selected target row"
         ),
     )
 
