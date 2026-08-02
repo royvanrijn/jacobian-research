@@ -1,0 +1,42 @@
+name: GVC3 quartic total-space probe
+
+on:
+  push:
+    branches:
+      - agent/gvc3-quartic-total-space-probe
+    paths:
+      - scripts/research_gvc3_complete_quartic_total.py
+      - .github/workflows/gvc3-quartic-total-probe.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  r2-pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Singular
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y singular
+          Singular --version
+
+      - name: Probe the mixed r2 chart over three primes
+        run: |
+          python scripts/research_gvc3_complete_quartic_total.py \
+            --charts r2 \
+            --primes 101 103 107 \
+            --cutoffs 6 7 \
+            --timeout 1500
+
+      - name: Commit exact modular output to the scratch branch
+        run: |
+          git config user.name "gvc3-quartic-probe[bot]"
+          git config user.email "gvc3-quartic-probe@users.noreply.github.com"
+          git add artifacts/generated-results/gvc3_complete_quartic_total_probe.json
+          git diff --cached --quiet || git commit -m "Record GVC3 quartic total-space pilot [skip ci]"
+          git push
