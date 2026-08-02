@@ -126,9 +126,10 @@ def verify_quartic_parity_obstruction():
     even = x * y - 2 * t**2 - x**2 * t**2
     odd = y - 3 * x * t**2
     h = a * x + b * y + c * t
+
+    # Affine projective chart alpha=1: E+H*O.
     f = sp.expand(even + h * odd)
     moments = [sphere_moment(f, order, x, t) for order in range(1, 5)]
-
     assert sp.simplify(
         moments[0] - 2 * (5 * a - 3 * b) / 15
     ) == 0
@@ -149,11 +150,17 @@ def verify_quartic_parity_obstruction():
 
     e2, e3, e4 = [c2_to_z(value) for value in substituted]
     eq2 = 28 * a**2 - 52 * a + 27 * z - 63
-    assert sp.rem(sp.together(e2).as_numer_denom()[0], eq2, z) == 0
+    assert sp.rem(
+        sp.together(e2).as_numer_denom()[0], eq2, z
+    ) == 0
     z_value = sp.solve(eq2, z)[0]
 
-    g3 = sp.factor(sp.together(e3.subs(z, z_value)).as_numer_denom()[0])
-    g4 = sp.factor(sp.together(e4.subs(z, z_value)).as_numer_denom()[0])
+    g3 = sp.factor(
+        sp.together(e3.subs(z, z_value)).as_numer_denom()[0]
+    )
+    g4 = sp.factor(
+        sp.together(e4.subs(z, z_value)).as_numer_denom()[0]
+    )
     g3 = sp.primitive(g3, a)[1]
     g4 = sp.primitive(g4, a)[1]
     if sp.LC(sp.Poly(g3, a)) < 0:
@@ -161,7 +168,9 @@ def verify_quartic_parity_obstruction():
     if sp.LC(sp.Poly(g4, a)) < 0:
         g4 = -g4
 
-    expected_g3 = 7164 * a**3 - 36868 * a**2 - 81341 * a - 24453
+    expected_g3 = (
+        7164 * a**3 - 36868 * a**2 - 81341 * a - 24453
+    )
     expected_g4 = (
         77776 * a**4
         + 137224 * a**3
@@ -176,11 +185,50 @@ def verify_quartic_parity_obstruction():
     assert resultant == expected_resultant
     assert resultant != 0
 
+    # Projective boundary alpha=0: H*O.
+    boundary = sp.expand(h * odd)
+    boundary_moments = [
+        sphere_moment(boundary, order, x, t)
+        for order in range(1, 4)
+    ]
+    assert sp.simplify(
+        boundary_moments[0] - 2 * (5 * a - 3 * b) / 15
+    ) == 0
+    boundary_substituted = [
+        sp.factor(value.subs(b, sp.Rational(5, 3) * a))
+        for value in boundary_moments[1:]
+    ]
+    expected_boundary_2 = -sp.Rational(4, 315) * (
+        28 * a**2 + 27 * c**2
+    )
+    expected_boundary_3 = sp.Rational(16, 15015) * a * (
+        584 * a**2 + 819 * c**2
+    )
+    assert sp.simplify(
+        boundary_substituted[0] - expected_boundary_2
+    ) == 0
+    assert sp.simplify(
+        boundary_substituted[1] - expected_boundary_3
+    ) == 0
+    boundary_residual = sp.factor(
+        (584 * a**2 + 819 * c**2).subs(
+            c**2, -sp.Rational(28, 27) * a**2
+        )
+    )
+    assert boundary_residual == -sp.Rational(796, 3) * a**2
+
     return {
-        "moments": [str(value) for value in moments],
-        "g3": str(g3),
-        "g4": str(g4),
-        "resultant": str(resultant),
+        "affine_chart_moments": [str(value) for value in moments],
+        "affine_chart_g3": str(g3),
+        "affine_chart_g4": str(g4),
+        "affine_chart_resultant": str(resultant),
+        "projective_boundary_moments": [
+            str(value) for value in boundary_moments
+        ],
+        "projective_boundary_after_m1": [
+            str(value) for value in boundary_substituted
+        ],
+        "projective_boundary_residual": str(boundary_residual),
     }
 
 
@@ -196,7 +244,7 @@ def main() -> None:
             "all_shifted_powers_fail": True,
             "self_multiplier_rank_one_sic": True,
             "one_profile_minimum_laplacian_power": 6,
-            "linear_parity_completion_k2": (
+            "common_linear_parity_completion_k2": (
                 "empty through moment four over characteristic zero"
             ),
         },
@@ -205,7 +253,7 @@ def main() -> None:
     OUTPUT.write_text(json.dumps(artifact, indent=2) + "\n")
     print("PASS maximal shifted-power detector")
     print("PASS exact polyharmonic depth")
-    print("PASS complete linear parity quartic obstruction")
+    print("PASS complete common-linear parity quartic obstruction")
     print(f"PASS wrote {OUTPUT.relative_to(ROOT)}")
 
 
