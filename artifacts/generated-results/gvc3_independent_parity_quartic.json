@@ -1,0 +1,31 @@
+{
+  "format": "gvc3-independent-parity-quartic-v1",
+  "family_on_sphere": "alpha*E+y*H1-3*x*t^2*H3",
+  "first_moment": "2*(5*a1 - 3*b3)/15",
+  "elimination": "b3=5*a1/3",
+  "alpha_nonzero_chart": {
+    "unit": true,
+    "initial_basis_size": 5,
+    "basis_size_before_unit": 73,
+    "critical_pairs_processed": 119
+  },
+  "alpha_zero_a1_nonzero_chart": {
+    "unit": true,
+    "initial_basis_size": 4,
+    "basis_size_before_unit": 22,
+    "critical_pairs_processed": 26
+  },
+  "deep_boundary_moments_2_3_4": [
+    "-4*(4*a3*b1 + 3*c1*c3)/35",
+    "-8*(11*a3*c1**2 - 15*b1*c3**2)/385",
+    "48*(48*a3**2*b1**2 + 120*a3*b1*c1*c3 + 35*c1**2*c3**2)/5005"
+  ],
+  "m4_after_m2": "-28*c1**2*c3**2",
+  "radical": "(alpha,a1,b3,b1*a3,b1*c3,c1*a3,c1*c3)",
+  "components": [
+    "(alpha,a1,b3,b1,c1)",
+    "(alpha,a1,b3,a3,c3)"
+  ],
+  "all_order_status": "both components are one-sided in phase and have an explicit fixed-multiplier degree cutoff",
+  "conclusion": "the complete independent-linear parity homogenization of Long's quartic contains no GVC(3) counterexample"
+}
