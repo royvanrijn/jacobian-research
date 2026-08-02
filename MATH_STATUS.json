@@ -14504,8 +14504,8 @@
       "id": "PF2BH1",
       "kind": "reproduction",
       "state": "proved",
-      "title": "F2 common-edge contact classification and boundary-transfer obstruction",
-      "scope": "For the exact F2 top family C0(u)=(u-1)^5*(u^5-1)^2*R(u^5), with R(v)=a*v^2+b*v+(1/25-a-b), a!=0, the quadratic root locus has four disjoint exhaustive strata. Their contact partitions on the selected toric divisor are (7,2^4,1^10), (7,2^9), (7,5,2^4,1^5), and (10,7,2^4), with respectively 15, 10, 11, and 6 distinct centers. These are contact multiplicities, not certified toroidal scales or finite-normalization rows: the germs s^m+z^q for q=1,2,3 have the same edge restriction s^m and different primitive equality rays. Under the deliberately unsupported strongest surrogate (e_i,f_i,s_i)=(m_i,1,1), every packet has boundary degree 25, needs generic degree at least 26 because an affine sheet is positive, and survives the finite-flat packet-length budget even if all centers are placed in one target fiber. The typed target-ledger audit remains incomplete because target transfer and exhaustive generic pullback are absent. Thus no contact stratum is excluded, the log-boundary and residual-different compilers are not applicable, and the degree-specific F2 layer/boundary route is stopped rather than continued through thirty lower layers.",
+      "title": "F2 common-edge contact classification and failed contact surrogate",
+      "scope": "For the exact F2 top family C0(u)=(u-1)^5*(u^5-1)^2*R(u^5), with R(v)=a*v^2+b*v+(1/25-a-b), a!=0, the quadratic root locus has four disjoint exhaustive cover-level strata. Their contact partitions are (7,2^4,1^10), (7,2^9), (7,5,2^4,1^5), and (10,7,2^4), with respectively 15, 10, 11, and 6 distinct centers. Contact multiplicities alone do not determine toroidal scales or finite-normalization rows: germs s^m+z^q for q=1,2,3 have the same edge restriction and different primitive equality rays. Under the deliberately unsupported surrogate (e_i,f_i,s_i)=(m_i,1,1), every packet survives the finite-flat budget. This remains a valid warning against contact-to-ramification promotion, but it is not the current branch ledger: PF2KO1 subsequently groups the nonzero centers into Kummer orbits, excludes the zero-root strata from the F2 normal form, and identifies the admissible principal chains.",
       "canonical_source": "plane-jc/F2_BOUNDARY_HANDOFF.md",
       "dependencies": [
         "PF2L1",
@@ -14526,10 +14526,108 @@
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
-      "consumers": [],
+      "consumers": [
+        "PF2KO1",
+        "plane-jc/README.md"
+      ],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "reference"
+    },
+    {
+      "id": "PF2KO1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "F2 Kummer-orbit transfer and principal-chain reduction",
+      "scope": "Building on PF2BH1 and PF2L1, every Laurent coefficient on band ell coming from k[X^5,y] has one Kummer character t^ell*u^k*A(u^5), with k congruent to -ell modulo five. In the natural Puiseux chart at every nonzero fifth-root center, exact coefficient orders, Newton points, edges, and vertex nonvanishing transfer unchanged around the orbit. The printed F2 order vertex forces R(0)!=0, so the two zero-root contact strata are incompatible with the normal-form row. The Newton-step inequality 5/4<t_2<=4 forces the selected cofactor root to have multiplicity at least two, so simple roots of R are spectators rather than additional above-bisectrix continuations. Consequently the nonzero squarefree-R row has one admissible principal F2 chain, while the nonzero double-root row has two copies of the same chain. This is exact local target-input reduction, not global source/target gluing or an exclusion of (75,125).",
+      "canonical_source": "plane-jc/F2_KUMMER_ORBIT_TRANSFER.md",
+      "dependencies": [
+        "PF2BH1",
+        "PF2L1"
+      ],
+      "checker": "plane-jc/cas/verify_f2_kummer_orbit_transfer.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:00a59c55066ac9b26498d2c32b16e8d29275b994565c9985233b3dd21fe13645",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "PF2TR1",
+        "OP-PLANE",
+        "plane-jc/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "PF2TR1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "F2 terminal degree-six residue cover and A6 monodromy",
+      "scope": "For the principal block selected by PF2KO1, put s=X^17*y^5, P=X^4*y*(1+s), and Q=-X*(1+3*s+(9/5)*s^2). Exact differentiation gives [P,Q]=X^4. The primitive source normal is (12,-17), with pole orders (3,5); the corresponding target extraction ray is (5,2). On its regular chart the source-to-target transverse index is e=1 and the residue map is h(s)=125*s*(s+1)^5/(9*s^2+15*s+5)^3 of degree f=6. Its branch values are 0, infinity, and 125/729, with passport (5,1)|(3,3)|(3,1,1,1), total different ten, monodromy A_6, and branch cycles satisfying the global meridian product. This certifies the complete local toroidal target row. It does not attach that row to the original A2 completion, classify simple spectator orbits, decide whether the two double-root packets share a target component, or exclude (75,125).",
+      "canonical_source": "plane-jc/F2_TERMINAL_RESIDUE_COVER.md",
+      "dependencies": [
+        "PF2KO1"
+      ],
+      "checker": "plane-jc/cas/verify_f2_terminal_residue_cover.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:10aca6bb78e9e7efb2c99f8bc562dfa58e4510d183525fcc609ee4fb290724ed",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "OP-PLANE",
+        "plane-jc/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "PF2MS1",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Conditional reduced F2 modified-system generator",
+      "scope": "Assume the unproved common-power ansatz P=C^r and Q=C^(2r-1)+lambda*C^(-1)+F, with leading x-degree d for C and the declared three-term terminal F block. Under that hypothesis, exact formal-series arithmetic reconstructs the finite coefficient system, triangularly removes coefficients forced by polynomiality of P, and records canonical residual digests. The r=2, d=2 and d=3 cases reproduce the two published (50,75) modified systems. The r=3 cases produce 14- and 22-equation candidate systems for (75,125). This computation does not prove that the r=3 ansatz, gamma branches, lower supports, or F-tail ledger are forced, and it is not an F2 exclusion.",
+      "canonical_source": "plane-jc/F2_75_125_DERIVATION.md",
+      "dependencies": [
+        "PF2L1"
+      ],
+      "checker": "plane-jc/cas/generate_f2_modified_system.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:170c8fd6e001c5bb2b10265626ff1ab93b446145ae6f232a0a11b138236da22a",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
     },
     {
       "id": "PUSC1",
@@ -16624,7 +16722,7 @@
       "kind": "open_problem",
       "state": "parked",
       "title": "Plane-Jacobian degree frontier",
-      "scope": "PJ43A1, PJ72Q1, RSE3, and PJ72108D1 close the audited (72,108)/(108,72) row and leave the conditional larger-coordinate frontier at 125. Advance the plane-Jacobian programme beyond 125 by deriving the next exhaustive Laurent branches and nested positive branch scales, applying the log-boundary compiler, and quotienting any matching three-band Poisson-square block by its reduced classification before coefficient elimination.",
+      "scope": "PJ43A1, PJ72Q1, RSE3, and PJ72108D1 close the audited (72,108)/(108,72) row and leave the conditional larger-coordinate frontier at 125. On the first (75,125) F2 row, PF2KO1 reduces the cover-level contact census to one known principal chain, or two copies on the nonzero double-root stratum, and PF2TR1 computes the complete local target row with transverse index one, residue degree six, passport (5,1)|(3,3)|(3,1,1,1), and A_6 monodromy. The remaining F2 task is global: attach the source and target rays to the original completions, classify simple spectator orbits, determine whether the two packets share a target component, complete the class-group/unit/canonical ledger, and only then apply finite-normalization and meridian filters. Other degree-125 and later rows still require exhaustive Laurent branches and positive branch scales before log-boundary or Poisson-square compilation. None of these local calculations excludes (75,125) or proves JC(2).",
       "canonical_source": "plane-jc/NEXT_DEGREE_FRONTIER.md",
       "dependencies": [
         "PJ1",
@@ -16637,7 +16735,9 @@
         "PS1",
         "PJ43A1",
         "PJ72Q1",
-        "PJ72108D1"
+        "PJ72108D1",
+        "PF2KO1",
+        "PF2TR1"
       ],
       "checker": null,
       "proof_type": "not-applicable",

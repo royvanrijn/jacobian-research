@@ -63,9 +63,9 @@ Equation (3) gives
 
 \[
 r=h(s)
-=rac{s(1+s)^5}
+=\frac{s(1+s)^5}
        {(1+3s+\frac95s^2)^3}
-=rac{125s(s+1)^5}{(9s^2+15s+5)^3}. \tag{5}
+=\frac{125s(s+1)^5}{(9s^2+15s+5)^3}. \tag{5}
 \]
 
 Conversely, once a root `s` of `h(s)=r` is chosen,
@@ -253,7 +253,7 @@ the class-group, unit, canonical, and finite-normalization ledgers be run.
 ## Reproduction
 
 ```bash
-python plane-jc/cas/verify_f2_terminal_residue_cover.py
+.venv/bin/python plane-jc/cas/verify_f2_terminal_residue_cover.py
 ```
 
 Expected final marker:

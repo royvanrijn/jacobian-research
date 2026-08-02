@@ -32,7 +32,12 @@ three-dimensional counterexample construction.
 | [CERTIFIED_SPARSE_SUPPORT_EXCLUSIONS.md](CERTIFIED_SPARSE_SUPPORT_EXCLUSIONS.md) | Exact arbitrary-degree classification of every normalized support with at most six nonlinear monomial occurrences and the affine-normalized support lower bound seven |
 | [AFFINE_SUPPORT_NEWTON_BRIDGE.md](AFFINE_SUPPORT_NEWTON_BRIDGE.md) | Exact obstruction to a coarse Newton/support bridge and the Kummer-character gate for the live `(75,125)` terminal block |
 | [F2_75_125_DERIVATION.md](F2_75_125_DERIVATION.md) | Corrected \([t,z]=-z\) recurrence and exact B0/Kummer classification of the 35 missing F2 layers |
-| [F2_BOUNDARY_HANDOFF.md](F2_BOUNDARY_HANDOFF.md) | Four exhaustive common-edge contact packets, exact obstruction to promoting them to boundary rows, and stopping verdict for the degree-specific F2 route |
+<!-- status-consumer: PF2BH1 dcd3e54be59f32de -->
+| [F2_BOUNDARY_HANDOFF.md](F2_BOUNDARY_HANDOFF.md) | Retained four-stratum contact census, failed contact-to-ramification surrogate, and updated handoff to the exact Kummer/target rows |
+<!-- status-consumer: PF2KO1 c3a129906d2f75d2 -->
+| [F2_KUMMER_ORBIT_TRANSFER.md](F2_KUMMER_ORBIT_TRANSFER.md) | Exact transfer around nonzero fifth-root orbits, exclusion of zero-root strata, and reduction to one principal chain or two copies |
+<!-- status-consumer: PF2TR1 47271907fe8be88d -->
+| [F2_TERMINAL_RESIDUE_COVER.md](F2_TERMINAL_RESIDUE_COVER.md) | Target ray `(5,2)`, transverse index one, degree-six residue cover, branch passport, `A_6` monodromy, and global meridian product |
 | [UNIBRANCH_SPECTATOR_COUNTERMODELS.md](UNIBRANCH_SPECTATOR_COUNTERMODELS.md) | Universal finite-free unibranch packets with an étale spectator; exact refutation of a purely local exclusion and isolation of the global \(\mathbb A^2\)-open obstruction |
 | [cas/README.md](cas/README.md) | Replay commands, hashes, and independent checker |
 | [AUDIT_COMPLETION.md](AUDIT_COMPLETION.md) | Objective-by-objective completion and residual limitations |

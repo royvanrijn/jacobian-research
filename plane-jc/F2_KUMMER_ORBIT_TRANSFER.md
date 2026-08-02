@@ -347,7 +347,7 @@ steps are not completed here.
 ## Reproduction
 
 ```bash
-python plane-jc/cas/verify_f2_kummer_orbit_transfer.py
+.venv/bin/python plane-jc/cas/verify_f2_kummer_orbit_transfer.py
 ```
 
 Expected markers:

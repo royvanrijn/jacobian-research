@@ -267,13 +267,21 @@ only if propagation of this \(C_0^2\) mode creates an early nonzero de Rham
 class; otherwise the 30-layer continuation is too broad for a final direct
 elimination.
 
-The boundary pivot has now tested the alternative.  The quadratic `R`
-produces four exact contact partitions, but a contact multiplicity does not
-determine the first normal order, a toroidal branch scale, or a
+The first boundary pivot tested the alternative.  The quadratic `R` produces
+four exact cover-level contact partitions, but a contact multiplicity alone
+does not determine the first normal order, a toroidal branch scale, or a
 finite-normalization ramification row.  Even the strongest naive
 contact-to-row promotion survives the coarse finite-flat packet budget.
-See [`F2_BOUNDARY_HANDOFF.md`](F2_BOUNDARY_HANDOFF.md).  This closes the
-current F2 strategy as a research route, not the F2 family as a candidate.
+That negative result is retained in
+[`F2_BOUNDARY_HANDOFF.md`](F2_BOUNDARY_HANDOFF.md), but it is no longer the
+current stopping point.  The subsequent
+[`Kummer-orbit transfer`](F2_KUMMER_ORBIT_TRANSFER.md) groups the nonzero
+centers into rigid orbits, excludes the zero-root strata, and reduces the
+row to one principal chain or two copies.  The
+[`terminal residue calculation`](F2_TERMINAL_RESIDUE_COVER.md) then supplies
+the exact degree-six target row.  Thus sequential descent through the lower
+thirty layers remains stopped, while the F2 programme is reopened at the
+global source/target gluing stage.
 
 ## 5. Why the older `(50,75)` calculation does not fill the gap
 

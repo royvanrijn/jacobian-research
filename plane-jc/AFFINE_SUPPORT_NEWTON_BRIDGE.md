@@ -288,13 +288,18 @@ the common root, while layer 35 admits a genuine
 not occur; the final viability test is whether that mode creates a
 nonzero de Rham class when propagated into layer 34.
 
-The attempted boundary pivot is now complete at the level justified by the
-common edge.  Its quadratic factor has four exhaustive contact partitions,
-but those contacts do not determine normal scales or finite-normalization
-rows.  Even the strongest naive contact-to-row surrogate survives the
-finite-flat packet budget.  The exact stopping audit is
-[`F2_BOUNDARY_HANDOFF.md`](F2_BOUNDARY_HANDOFF.md); the degree-specific F2
-bridge should not be continued layer by layer.
+The first boundary pivot is complete at the contact-only level justified by
+the common edge.  Its quadratic factor has four exhaustive contact
+partitions, but those contacts alone do not determine normal scales or
+finite-normalization rows.  Even the strongest naive contact-to-row surrogate
+survives the finite-flat packet budget.  The retained audit is
+[`F2_BOUNDARY_HANDOFF.md`](F2_BOUNDARY_HANDOFF.md).  Subsequent exact work in
+[`F2_KUMMER_ORBIT_TRANSFER.md`](F2_KUMMER_ORBIT_TRANSFER.md) and
+[`F2_TERMINAL_RESIDUE_COVER.md`](F2_TERMINAL_RESIDUE_COVER.md) bypasses that
+surrogate: it reduces the live row to one principal chain or two copies and
+computes its degree-six target residue cover.  The lower thirty layers still
+should not be continued sequentially; the remaining problem is global
+source/target gluing.
 
 ## 5. Reproduction and claim boundary
 

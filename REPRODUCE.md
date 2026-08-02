@@ -6846,9 +6846,10 @@ give a unit ideal.  The boundary-handoff replay then gives four exhaustive
 contact partitions of 25.  It proves that their multiplicities do not
 determine branch scales or finite-normalization rows; even the unsupported
 strongest contact-to-row surrogate survives the degree-26 packet budget.
-This stops the degree-specific F2 route and replaces the failed coarse bridge
-by a finite character-resolved B0 system and a precise B1 polygon/`gamma`
-obligation; see
+This stops sequential lower-layer elimination and replaces the failed coarse
+bridge by a finite character-resolved B0 system.  Subsequent Kummer-orbit and
+terminal-residue calculations, described below, bypass the contact surrogate
+and reopen F2 at the global gluing stage; see
 [`plane-jc/AFFINE_SUPPORT_NEWTON_BRIDGE.md`](plane-jc/AFFINE_SUPPORT_NEWTON_BRIDGE.md).
 The frontend replay checks the forced chain and terminal normalization
 independently.  The modified-system generator reconstructs the published

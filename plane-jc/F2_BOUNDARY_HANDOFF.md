@@ -161,8 +161,8 @@ Writing `s=X^17y^5`, its residue map is
 
 \[
 \eta^{-1}
-=rac{P^5}{(-Q)^3}
-=rac{125s(s+1)^5}{(9s^2+15s+5)^3}. \tag{9}
+=\frac{P^5}{(-Q)^3}
+=\frac{125s(s+1)^5}{(9s^2+15s+5)^3}. \tag{9}
 \]
 
 It has degree

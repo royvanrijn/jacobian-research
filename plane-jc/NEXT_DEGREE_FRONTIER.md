@@ -110,25 +110,25 @@ Open work, in dependency order:
    `ord(B),ord(E),ord(G'),ord(F)=(1,2,3,3)`; its only other valuation pattern
    is excluded by `(J1)`.  After those coefficient checks comes an accounting
    of the remaining divisorial valuation degrees.
-2. **Stop the degree-specific F2 descent.**  The chain arithmetic, Puiseux
-   translation, transformed bracket, forced vertices, common-power band, and
-   terminal type-I normalization are now exact and machine-readable; see
-   [`F2_75_125_DERIVATION.md`](F2_75_125_DERIVATION.md).  The B0
-   replay classifies all 35 zero layers (`39` through `5`) into 665 band
-   pairs and five Kummer sectors, but retains 978 linear parameters; it is
-   not an exclusion.  Layers 39 through 36 merely continue the common root,
-   and layer 35 has a genuine `lambda*C0^2` mode.  The boundary pivot
-   classifies four exhaustive contact packets, but their multiplicities do
-   not determine toroidal scales or finite-normalization rows; even the
-   strongest naive promotion survives the finite-flat packet budget.  See
-   [`F2_BOUNDARY_HANDOFF.md`](F2_BOUNDARY_HANDOFF.md).  The compiler
-   deliberately rejects the partial record.
-   The five-term terminal block has bracket
-   `X^4` but Kummer characters `P={1,4}`, `Q={0,1,3}` modulo five, so it does
-   not descend through `u=X^5/5` to the constant-Jacobian support-six
-   theorem.  Do not continue the remaining thirty layers sequentially.
-   Reopen F2 only after a degree-independent common-edge-to-normalization
-   theorem supplies target-side data without reconstructing every band.
+2. **Glue the explicit F2 target row globally.**  The B0 replay in
+   [`F2_75_125_DERIVATION.md`](F2_75_125_DERIVATION.md) remains an
+   over-envelope rather than an exclusion: layers 39 through 36 continue the
+   common root and layer 35 has a genuine `lambda*C0^2` mode.  The retained
+   contact audit in
+   [`F2_BOUNDARY_HANDOFF.md`](F2_BOUNDARY_HANDOFF.md) proves that raw contact
+   multiplicities cannot be promoted to boundary rows.  The later
+   [`Kummer-orbit theorem`](F2_KUMMER_ORBIT_TRANSFER.md) supplies the missing
+   rigidity: zero-root strata are impossible, simple cofactor roots are
+   spectators, and the row has one principal chain or two copies on the
+   nonzero double-root stratum.  The
+   [`terminal residue theorem`](F2_TERMINAL_RESIDUE_COVER.md) computes source
+   ray `(12,-17)`, target ray `(5,2)`, transverse index one, residue degree
+   six, passport `(5,1)|(3,3)|(3,1,1,1)`, and `A_6` monodromy.  The next task
+   is not a sequential descent through the remaining thirty layers: attach
+   these rays to the original completions, classify the simple spectator
+   orbits, decide whether the two packets share a target component, and then
+   run the class-group, unit, canonical, finite-normalization, and global
+   meridian filters.  The degree pair `(75,125)` remains unexcluded.
 3. **Retire the excluded `(96,144)` repeated-tail branch.**  The source
    statements are now reconciled in
    [`FRONTIER_CLOSING_ATTACKS.md`](FRONTIER_CLOSING_ATTACKS.md).  The 2017

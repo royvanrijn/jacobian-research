@@ -35,6 +35,9 @@ The attempted Newton/boundary bridge is replayed by:
 .venv/bin/python plane-jc/cas/classify_f2_75_125_layers.py
 .venv/bin/python plane-jc/cas/audit_f2_75_125_boundary_handoff.py
 .venv/bin/python plane-jc/cas/test_f2_75_125_frontend.py
+.venv/bin/python plane-jc/cas/generate_f2_modified_system.py
+.venv/bin/python plane-jc/cas/verify_f2_kummer_orbit_transfer.py
+.venv/bin/python plane-jc/cas/verify_f2_terminal_residue_cover.py
 ```
 
 The first command certifies that fixed geometric degree, trivial
@@ -53,12 +56,17 @@ exhaustive contact partitions and audits the handoff to the
 finite-normalization/log-boundary programmes.  It proves that contact orders
 do not determine toroidal scales and that even the strongest naive
 contact-to-ramification surrogate survives the finite-flat packet budget.
-The canonical stopping note is
+The retained contact-only warning is
 [`../F2_BOUNDARY_HANDOFF.md`](../F2_BOUNDARY_HANDOFF.md).
-The final command checks the forced chain, terminal normalization, and live
+The fourth command checks the forced chain, terminal normalization, and live
 character profile `P={1,4}`, `Q={0,1,3}` modulo five.  The coarse-bridge
 obstruction is in
 [`../AFFINE_SUPPORT_NEWTON_BRIDGE.md`](../AFFINE_SUPPORT_NEWTON_BRIDGE.md).
+The modified-system generator then reproduces the published `r=2` systems
+and emits the two conditional `r=3` candidate systems; it does not prove the
+common-power ansatz.  The final two commands certify the Kummer-orbit
+reduction and the degree-six terminal residue cover.  Their output reopens
+F2 only at the global gluing stage and does not exclude `(75,125)`.
 
 The log-boundary and Poisson-square prefilters are:
 
