@@ -1,0 +1,56 @@
+name: GVC3 independent parity probe
+
+on:
+  push:
+    branches:
+      - agent/gvc3-homogeneous-counterexample
+    paths:
+      - .github/workflows/gvc3-independent-parity.yml
+      - artifacts/research-inputs/gvc3_independent_parity_alpha1.msolve
+      - artifacts/research-inputs/gvc3_independent_parity_a1.msolve
+
+permissions:
+  contents: read
+
+jobs:
+  eliminate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download msolve 0.10.1
+        shell: bash
+        run: |
+          set -euxo pipefail
+          curl -L --fail \
+            -o /tmp/msolve.zip \
+            https://msolve.proj.lip6.fr/downloads/v0.10.1/msolve-0.10.1_linux_intel_x86.zip
+          unzip -q /tmp/msolve.zip -d /tmp/msolve
+          find /tmp/msolve -maxdepth 4 -type f -print
+          MSOLVE="$(find /tmp/msolve -type f -name msolve | head -n1)"
+          test -n "$MSOLVE"
+          chmod +x "$MSOLVE"
+          echo "MSOLVE=$MSOLVE" >> "$GITHUB_ENV"
+
+      - name: Exact characteristic-zero eliminations
+        shell: bash
+        run: |
+          set -euxo pipefail
+          "$MSOLVE" \
+            -f artifacts/research-inputs/gvc3_independent_parity_alpha1.msolve \
+            -o alpha1.out -t 4
+          "$MSOLVE" \
+            -f artifacts/research-inputs/gvc3_independent_parity_a1.msolve \
+            -o a1.out -t 4
+          echo '=== alpha=1 ==='
+          cat alpha1.out
+          echo '=== alpha=0, a1=1 ==='
+          cat a1.out
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gvc3-independent-parity-msolve
+          path: |
+            alpha1.out
+            a1.out
