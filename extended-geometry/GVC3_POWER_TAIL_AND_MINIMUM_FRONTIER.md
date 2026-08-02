@@ -385,7 +385,7 @@ eight, and ten.
 Run
 
 ```bash
-python3 scripts/verify_gvc3_power_tail_and_minimum.py
+.venv/bin/python scripts/verify_gvc3_power_tail_and_minimum.py
 ```
 
 The checker verifies the exact shifted-power detector for several

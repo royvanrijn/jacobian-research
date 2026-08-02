@@ -439,8 +439,26 @@
       "2": -3,
       "4": 1
     },
-    "orders": [4, 5, 6, 7, 8, 9, 10, 11],
-    "binomial_sequence_values": [-6, -6, -3, 4, 16, 34, 59, 92]
+    "orders": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "binomial_sequence_values": [
+      -6,
+      -6,
+      -3,
+      4,
+      16,
+      34,
+      59,
+      92
+    ]
   },
   "consequences_checked": [
     "pure GVC identities for k=6..9 and m=1..3",

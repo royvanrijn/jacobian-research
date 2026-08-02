@@ -872,37 +872,65 @@ quotienting scalar, torus, and reversal symmetries; this is bounded
 evidence, not a proof.  The analogous complete \(C_2\) searches on the
 \((2,2)\) and \((3,2)\) binomial Taylor rectangles likewise find no
 unexplained collision through depths 12 and 14.
-<!-- status-consumer: GVC3TAG eca05b28b6dc69b2 -->
+<!-- status-consumer: GVC3HC cc70daa55acb27ba -->
 The
-[three-variable tagged-lift analysis](extended-geometry/THREE_VARIABLE_GVC_TAGGED_LIFT.md)
-opens a separate route toward lowering the known unrestricted GVC failure
-from five variables.  The two-pair Image-Mathieu witness already admits the
-coordinate-only detector
+[homogeneous three-variable construction](extended-geometry/THREE_VARIABLE_HOMOGENEOUS_GVC_COUNTEREXAMPLE.md)
+gives an explicit GVC(3) counterexample.  With
+\(\rho=t^2+xy\), \(A=\rho+x^2\),
+\(C=y\rho^2-2xt^2\rho-x^3t^2\), \(P=AC^2\), and
+\(\Delta=4\partial_x\partial_y+\partial_t^2\), it proves for every
+\(m\ge1\) that
 \[
- \mathcal E_2(z_2F^m)
- =\frac{(4m+2)!\,m!}{(2m+1)!!}\,z_1,
+ (\Delta^6)^m(P^m)=0,
+ \qquad
+ (\Delta^6)^m(x^2P^m)\ne0.
 \]
-so the missing ingredient is a power-compatible separable encoding, not a
-larger multiplier class.  A three-variable degree tag gives an exact
-two-channel contraction formula, but the complete cubic operator jet for
-the literal Long tag has unit pure-moment ideal after moment five over
-\(\mathbb Q\).  Wider rank-five and cubic-profile searches also die by
-moments four through six in their declared \(\mathbf F_{101}\) charts.
-These results close the minimal tagged architecture, not GVC(3); mixed
-order/degree tags and genuinely \(z\)-dependent symbol pieces remain open.
+The nonvanishing is governed by an explicit factorial formula.  The
+dependency-free checker supplies two exact finite replays through \(m=6\);
+the all-order result is the spherical constant-term and Gaussian/Fischer
+proof in the canonical note.  This is a counterexample for \(\Delta^6\),
+not for the ordinary Laplacian operator \(\Delta\).
+
+<!-- status-consumer: GVC3HS ae2415b137051523 -->
+The
+[homogeneous spillover theorem](extended-geometry/GVC3_HOMOGENEOUS_SPILLOVERS.md)
+extends the witness to every \(\Delta^k\), \(k\ge6\), and every ambient
+dimension at least three.  Combined with the binary split-symbol theorem,
+this gives the exact homogeneous dimension classification
+\(\operatorname{HGVC}(n)\) if and only if \(n\le2\).  For powers
+\(q(\partial)^k\) of a quadratic symbol with \(k\ge6\), rank three is the
+exact threshold for admitting a homogeneous GVC failure.
+
+<!-- status-consumer: GVC3PT deadefbed1656563 -->
+The
+[power-tail theorem](extended-geometry/GVC3_POWER_TAIL_AND_MINIMUM_FRONTIER.md)
+shows that every shifted-power conclusion fails for the same family:
+\((\Delta^k)^m(P_k^{m+d})\ne0\) for all \(k\ge6\) and \(m,d\ge1\).
+It also proves that \(\Delta^6\) is minimal inside the complete one-profile
+endpoint-contact architecture, not globally.
+
+<!-- status-consumer: GVC3IPQ 91c02c69a7e55a0d -->
+The
+[independent-parity quartic obstruction](extended-geometry/GVC3_INDEPENDENT_PARITY_QUARTIC_OBSTRUCTION.md)
+excludes the complete independent-linear repair of Long's quartic profile:
+its first six pure moments leave only two one-sided terminal components.
+The active GVC(3) frontier is therefore the global minimum degree/order of a
+homogeneous witness below degree twelve, beginning with harmonic-cubic and
+multi-profile repairs.  None of these results settles the
+ordinary-Laplacian/Hessian-nilpotent conjecture.
+
+<!-- status-consumer: GVC3TAG eca05b28b6dc69b2 -->
+The earlier
+[three-variable tagged-lift analysis](extended-geometry/THREE_VARIABLE_GVC_TAGGED_LIFT.md)
+records negative results for natural precursor architectures.  Its complete
+cubic operator jet for the literal Long tag has unit pure-moment ideal after
+moment five over \(\mathbb Q\), while wider declared finite-field charts die
+by moments four through six.
 <!-- status-consumer: GVC3CH ccb3325192b767db -->
-The order/degree-\((2,3,4)\) continuation uses the positive grading
-\(2\nu_z+\nu_t+\nu_y=4\).  The Dvorsky--Long support lattice has rank
-three and therefore compresses to this plane, but exact rational
-calculations close all \(56\) oriented parallelograms by moment four.
-Adding the middle channel produces a persistent pure radical, yet it
-forces one of the quadratic/quartic endpoints to vanish and hence has an
-all-order mixed cutoff.  Complete polynomial-quartic and sparse activated
-operator repairs terminate at moments eight and ten.  The remaining chart
-with all odd quartic coefficients on both sides closes at moment six with
-radical \((A,S,RU)\), and both components have explicit all-order mixed
-cutoffs.  The simultaneous complete even-and-odd quartic total space
-remains open; no GVC(3) counterexample is claimed.
+The order/degree-\((2,3,4)\) continuation likewise closes all \(56\)
+oriented Dvorsky--Long parallelograms by moment four, as well as the complete
+odd-quartic chart by moment six.  These are retained architecture
+exclusions, not the current existence frontier.
 The
 [low-dimensional GVC program](extended-geometry/TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md)
 also records the separate ordinary-Laplacian route: quadraticize the

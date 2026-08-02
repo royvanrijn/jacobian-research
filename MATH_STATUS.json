@@ -12024,9 +12024,7 @@
       "supersedes_notes": [],
       "supersedes": [],
       "closes_problems": [],
-      "narrows_problems": [
-        "OP-GVC3-LIFT"
-      ],
+      "narrows_problems": [],
       "consumers": [
         "OP-GVC3-LIFT",
         "README.md"
@@ -12060,9 +12058,7 @@
       "supersedes_notes": [],
       "supersedes": [],
       "closes_problems": [],
-      "narrows_problems": [
-        "OP-GVC3-LIFT"
-      ],
+      "narrows_problems": [],
       "consumers": [
         "OP-GVC3-LIFT",
         "README.md"
@@ -12105,11 +12101,140 @@
       "priority": "derived"
     },
     {
+      "id": "GVC3HC",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Explicit homogeneous three-variable GVC counterexample",
+      "scope": "Over a characteristic-zero field put rho=t^2+x*y, A=rho+x^2, C=y*rho^2-2*x*t^2*rho-x^3*t^2, P=A*C^2, Delta=4*partial_x*partial_y+partial_t^2, Lambda=Delta^6, and Q=x^2. The polynomial P is primitive and homogeneous of degree twelve, and Lambda is homogeneous of order twelve. For every m>=1, Lambda^m(P^m)=0, whereas Lambda^m(Q*P^m) is nonzero; more precisely Delta^(6m+1)(x^2*P^m)=2^(8m+1)*(6m+1)!*(2m)!*(12m+3)!!/(4m+1)!!. The proof reduces the contractions to exact spherical constant terms and then transfers them back by Gaussian/Fischer identities. Adjoining unused variables gives GVC counterexamples in every dimension at least three. This is a counterexample for the sixth power of a nondegenerate quadratic symbol, not for the ordinary Laplacian operator Delta itself. The dependency-free checker supplies two bounded exact replays through m=6; the all-order conclusion is the written proof, not an inference from that finite prefix.",
+      "canonical_source": "extended-geometry/THREE_VARIABLE_HOMOGENEOUS_GVC_COUNTEREXAMPLE.md",
+      "dependencies": [],
+      "checker": "scripts/verify_gvc3_homogeneous_counterexample.py",
+      "proof_type": "counterexample",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ed3fe5f1e34e0bf884475270ccfcc840869c9c38b9190843db846daeed416fad",
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [
+        "OP-GVC3-LIFT"
+      ],
+      "narrows_problems": [],
+      "consumers": [
+        "GVC3HS",
+        "GVC3PT",
+        "OP-GVC3-LIFT",
+        "README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "GVC3HS",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Homogeneous GVC dimension and quadratic-rank thresholds",
+      "scope": "For every k>=6, put P_k=rho^(k-6)*P and Lambda_k=Delta^k, using the GVC3HC witness. Then Lambda_k^m(P_k^m)=0 for every m, while an explicit positive-phase multiplier ladder remains nonzero. Together with the split-symbol theorem GVCSS, this proves that homogeneous GVC in n variables holds exactly for n<=2. More generally, for a quadratic form q and k>=6, q(partial)^k admits a homogeneous GVC counterexample exactly when rank(q)>=3: rank at most two splits after scalar extension, while a rank-three summand carries the displayed witness. The note also records separated SIC, Gaussian moment, and compact-group consequences. These statements concern arbitrary homogeneous constant-coefficient GVC and do not settle the ordinary-Laplacian or Hessian-nilpotent conjecture.",
+      "canonical_source": "extended-geometry/GVC3_HOMOGENEOUS_SPILLOVERS.md",
+      "dependencies": [
+        "GVC3HC",
+        "GVCSS"
+      ],
+      "checker": "scripts/verify_gvc3_homogeneous_spillovers.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3e419ca3f3e3b5884826523027e8b9e91d2d8bb03cc5dce96cccef9624e94fc9",
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "GVC3PT",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Maximal shifted-power failure and scoped GVC(3) minimum",
+      "scope": "For the homogeneous family P_k=rho^(k-6)*P and Lambda_k=Delta^k from GVC3HC, every shifted-power tail fails maximally: Lambda_k^m(P_k^(m+d)) is nonzero for all k>=6 and all m,d>=1, with an explicit nonzero derivative formula. Moreover P_k^n has exact polyharmonic index k*n: Delta^(kn)(P_k^n)=0 but Delta^(kn-1)(P_k^n) is nonzero. Within the complete phase-square, one-profile endpoint-contact architecture, Delta^6 is the minimum possible power and occurs uniquely at contact/winding pair (1,2), up to the declared torus and scaling. This is a scoped architectural minimum, not a global lower bound for all homogeneous GVC(3) counterexamples.",
+      "canonical_source": "extended-geometry/GVC3_POWER_TAIL_AND_MINIMUM_FRONTIER.md",
+      "dependencies": [
+        "GVC3HC"
+      ],
+      "checker": "scripts/verify_gvc3_power_tail_and_minimum.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:8bf9fae46d4e97da233f79fa5c1206a3afd23f6e4d2943cb7a6411238d786205",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-GVC3-MIN"
+      ],
+      "consumers": [
+        "OP-GVC3-MIN",
+        "README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "GVC3IPQ",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Independent-parity quartic obstruction below the GVC(3) witness",
+      "scope": "The complete independent-linear parity repair of the Long affine-sphere profile contains no homogeneous ternary-quartic GVC counterexample. Exact characteristic-zero elimination shows that its first six pure moments cut out precisely two one-sided terminal components, and each component has an all-order mixed cutoff. This strengthens the common-linear parity obstruction but does not classify repairs with a genuine harmonic-cubic multiplier or arbitrary ternary quartics. Consequently it excludes this declared degree-four architecture for Delta^2; it is not a universal degree-four nonexistence theorem.",
+      "canonical_source": "extended-geometry/GVC3_INDEPENDENT_PARITY_QUARTIC_OBSTRUCTION.md",
+      "dependencies": [
+        "GVC3HC",
+        "GVC3PT"
+      ],
+      "checker": "scripts/verify_gvc3_independent_parity_quartic.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:836e22f04a4e282601fc1b1de1828f2fb6585f9c6d85902ed7cc0a9bffb85f0d",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-GVC3-MIN"
+      ],
+      "consumers": [
+        "OP-GVC3-MIN",
+        "README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "OP-GVC3-LIFT",
       "kind": "open_problem",
-      "state": "open",
-      "title": "Three-variable GVC counterexample and tagged-channel lift",
-      "scope": "Unrestricted constant-coefficient GVC is false in five variables by DVG1, while GVC2ALL remains open at scale-compatible Hall/carry promotion. A three-variable counterexample would lower the known failing dimension, but would be known dimension-minimal only after the binary problem is closed. SIC2C4 has a coordinate-only multiplier but tensor rank five. GVC3TAG derives an exact power-compatible two-channel formula and closes the literal Long tag at moment five. GVC3CH studies the first coupled order/degree-(2,3,4) continuation on the positive weighted-quartic plane: it closes all 56 oriented rank-three Dvorsky parallelogram compressions by moment four, proves the persistent five-term radical terminal, closes the complete polynomial-quartic repair at moment eight, closes a sparse activated-endpoint model at moment ten, and closes the complete odd-quartic jet at moment six with radical (A,S,R*U) and all-order mixed cutoffs. GVC3TAGX supplies separate bounded modular evidence. The remaining targets are the simultaneous complete even-and-odd quartic total space, a characteristic-zero elimination for the full cubic profile, z-dependent higher symbol pieces, and non-row purifications of the rank-five tensor. No GVC(3) counterexample or proof of GVC(3) is claimed.",
+      "state": "parked",
+      "title": "Three-variable GVC counterexample and tagged-channel lift (closed)",
+      "scope": "This search asked whether GVC fails in three variables and studied tagged lifts of the earlier SIC and Dvorsky--Long witnesses. GVC3TAG closed the literal Long tag, GVC3CH closed the first weighted three-channel repairs, and GVC3TAGX supplied bounded modular evidence. GVC3HC now closes the problem by giving an explicit homogeneous three-variable counterexample with an all-order written proof. The earlier tagged calculations remain useful negative architecture results but are no longer evidence that GVC(3) itself is open. The binary promotion problem GVC2ALL remains open independently and is no longer needed to make the three-variable counterexample dimension-minimal within homogeneous GVC, because GVCSS already proves the homogeneous binary case.",
       "canonical_source": "extended-geometry/THREE_VARIABLE_GVC_TAGGED_LIFT.md",
       "dependencies": [
         "DVG1",
@@ -12118,7 +12243,38 @@
         "GVC3TAG",
         "GVC3CH",
         "GVC3TAGX",
-        "GVC2ALL"
+        "GVC2ALL",
+        "GVC3HC"
+      ],
+      "checker": null,
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [
+        "GVC3HC"
+      ],
+      "priority": "primary"
+    },
+    {
+      "id": "OP-GVC3-MIN",
+      "kind": "open_problem",
+      "state": "open",
+      "title": "Minimum homogeneous GVC(3) degree and Laplacian-power frontier",
+      "scope": "GVC3HC gives a homogeneous ternary counterexample for Lambda=Delta^6 with deg(P)=12, and GVC3PT proves that this is minimal inside the complete one-profile endpoint-contact architecture. The global minimum remains open: find a homogeneous witness of degree 2k<12 for Delta^k with 1<=k<=5, or prove a lower bound in a precisely declared larger architecture. GVC3IPQ excludes the complete independent-linear quartic parity repair for k=2, while GVC3PT excludes the common-linear repair and all smaller powers inside the one-profile endpoint family. The next explicit target is a degree-six repair with a genuinely harmonic cubic profile, followed by multi-profile searches in degrees six, eight, and ten. This frontier concerns powers of a nondegenerate quadratic symbol and does not settle the ordinary-Laplacian/Hessian-nilpotent conjecture.",
+      "canonical_source": "extended-geometry/GVC3_POWER_TAIL_AND_MINIMUM_FRONTIER.md",
+      "dependencies": [
+        "GVC3HC",
+        "GVC3PT",
+        "GVC3IPQ"
       ],
       "checker": null,
       "proof_type": "not-applicable",

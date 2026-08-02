@@ -276,7 +276,7 @@ profile is genuinely new.
 Run
 
 ```bash
-python3 scripts/verify_gvc3_independent_parity_quartic.py
+.venv/bin/python scripts/verify_gvc3_independent_parity_quartic.py
 ```
 
 The checker derives the moments from (1.2), performs both exact

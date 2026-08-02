@@ -5081,8 +5081,45 @@ coupled-convolution obstruction are in
 [`BINARY_GVC_UNIFORM_FACE_TERMINATION.md`](extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md).
 The checker is a regression, not the proof.
 
-The exact three-variable tagged-lift reduction and its bounded extensions
+The explicit homogeneous GVC(3) counterexample and its exact consequences
 are replayed by
+
+```bash
+python3 scripts/verify_gvc3_homogeneous_counterexample.py
+python3 scripts/verify_gvc3_homogeneous_spillovers.py
+.venv/bin/python scripts/verify_gvc3_power_tail_and_minimum.py
+.venv/bin/python scripts/verify_gvc3_independent_parity_quartic.py
+```
+
+The first checker verifies polynomiality, homogeneity, primitivity, the
+closed-form detector, and two exact finite replays through moment six.  The
+all-order counterexample is proved in
+[`THREE_VARIABLE_HOMOGENEOUS_GVC_COUNTEREXAMPLE.md`](extended-geometry/THREE_VARIABLE_HOMOGENEOUS_GVC_COUNTEREXAMPLE.md),
+not inferred from the bounded replay.  The second checker replays the
+homogeneous dimension and quadratic-rank spillovers.  The third checks the
+maximal shifted-power formulas and the scoped one-profile minimum.  The
+fourth verifies the exact characteristic-zero elimination for the
+independent-linear quartic repair.  The commands reproduce the four
+`gvc3_*.json` artifacts in `artifacts/generated-results/`.  These results
+disprove GVC in every dimension at least three but do not disprove the
+ordinary-Laplacian/Hessian-nilpotent conjecture.
+
+The integration replay on 2026-08-02 used system Python 3.12.3 for the first
+two dependency-free commands and the locked `.venv` Python 3.13.5 for the
+SymPy commands.  Regenerating the first two artifacts normalized JSON list
+formatting without changing their parsed content.  The counterexample
+artifact changed from
+`sha256:f05e5bee5c9b9aab5e245026f99af30a4f379bd88b9f3163fbdd7859f56aba06`
+to
+`sha256:ef44b4d7390ca261c432d23bcfc7b262062d3027b4f46ca9ccef1b9c556ec04d`;
+the spillover artifact changed from
+`sha256:ef27d18337a34a527140a799e15a3a242b008bc1b6c22e403ea775d86df31b50`
+to
+`sha256:6810131f43f822c39d4abed682e97570254faed6b1e19080cba1559821f2a666`.
+`jq` comparison of each old/new pair is exactly `true`.
+
+The earlier exact three-variable tagged-lift reduction and its bounded
+extensions are replayed by
 
 ```bash
 .venv/bin/python scripts/research_three_variable_gvc_tagged_lift.py
@@ -5102,7 +5139,8 @@ Their output is written to
 The exact formulas, scope distinctions, and remaining mixed-order target
 are documented in
 [`THREE_VARIABLE_GVC_TAGGED_LIFT.md`](extended-geometry/THREE_VARIABLE_GVC_TAGGED_LIFT.md).
-No GVC(3) counterexample or proof is claimed.
+These are retained architecture exclusions; the homogeneous counterexample
+above now settles GVC(3) negatively.
 
 The coupled order/degree-\((2,3,4)\) continuation is replayed by
 
@@ -6783,6 +6821,9 @@ The exact affine-support/Newton bridge audit is:
 .venv/bin/python plane-jc/cas/classify_f2_75_125_layers.py
 .venv/bin/python plane-jc/cas/audit_f2_75_125_boundary_handoff.py
 .venv/bin/python plane-jc/cas/test_f2_75_125_frontend.py
+.venv/bin/python plane-jc/cas/generate_f2_modified_system.py
+.venv/bin/python plane-jc/cas/verify_f2_kummer_orbit_transfer.py
+.venv/bin/python plane-jc/cas/verify_f2_terminal_residue_cover.py
 ```
 
 The first replay proves that coarse Newton vertices, geometric degree, and
@@ -6809,8 +6850,14 @@ This stops the degree-specific F2 route and replaces the failed coarse bridge
 by a finite character-resolved B0 system and a precise B1 polygon/`gamma`
 obligation; see
 [`plane-jc/AFFINE_SUPPORT_NEWTON_BRIDGE.md`](plane-jc/AFFINE_SUPPORT_NEWTON_BRIDGE.md).
-The final replay checks the forced chain and terminal normalization
-independently.
+The frontend replay checks the forced chain and terminal normalization
+independently.  The modified-system generator reconstructs the published
+`r=2` systems and the two candidate `r=3`, `(75,125)` systems under its
+explicitly stated common-power ansatz; it does not prove that ansatz is
+forced.  The last two commands certify the nonzero Kummer-orbit transfer and
+the terminal target row with transverse index one, residue degree six,
+passport `(5,1)|(3,3)|(3,1,1,1)`, and monodromy `A_6`.  Global boundary
+gluing remains open, so these calculations do not exclude `(75,125)`.
 
 The small deterministic regression of the published candidate tables is:
 
