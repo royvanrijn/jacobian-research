@@ -1,22 +1,31 @@
-# F2 `(75,125)` common-edge boundary handoff
+# F2 `(75,125)` boundary handoff
 
-> **Status: exact contact classification and exact transfer obstruction.**
-> The quadratic common-root family determines four contact packets on one
-> selected toric divisor. It does not determine toroidal branch scales,
-> dicritical components, or finite-normalization rows. Even the strongest
-> naive promotion of contacts to ramification rows survives the available
-> coarse boundary gates. This note therefore stops the F2 layer/boundary
-> route; it does not exclude `(75,125)`.
+> **Updated status: one exact target-boundary row, global gluing open.**
+> The raw contact census is cover-level rather than a list of independent
+> boundary branches.  The Kummer-orbit audit reduces it to one known principal
+> F2 chain, or two copies on the nonzero double-root row.  The terminal block
+> then determines a genuine target extraction ray `(5,2)`, transverse index
+> `1`, residue degree `6`, branch passport
+> `(5,1)|(3,3)|(3,1,1,1)`, monodromy `A_6`, and an exact global meridian
+> relation.  What remains is to glue this row to the full source completion and
+> classify the simple spectator orbits; the degree pair is not excluded.
 
-The exact replay is
-[`cas/audit_f2_75_125_boundary_handoff.py`](cas/audit_f2_75_125_boundary_handoff.py).
-Its pinned artifact is
-[`../artifacts/generated-results/jc2_f2_75_125_boundary_handoff.json`](../artifacts/generated-results/jc2_f2_75_125_boundary_handoff.json).
+The three exact replays are:
 
-## 1. Input from the Laurent classification
+- [`cas/audit_f2_75_125_boundary_handoff.py`](cas/audit_f2_75_125_boundary_handoff.py),
+  for the original cover-level factorization/contact census;
+- [`cas/verify_f2_kummer_orbit_transfer.py`](cas/verify_f2_kummer_orbit_transfer.py),
+  for orbit transfer and normal-form filtering;
+- [`cas/verify_f2_terminal_residue_cover.py`](cas/verify_f2_terminal_residue_cover.py),
+  for the target row and meridian factorization.
 
-The upper-band calculation in
-[`F2_75_125_DERIVATION.md`](F2_75_125_DERIVATION.md) proves
+The mathematical refinements are documented in
+[`F2_KUMMER_ORBIT_TRANSFER.md`](F2_KUMMER_ORBIT_TRANSFER.md) and
+[`F2_TERMINAL_RESIDUE_COVER.md`](F2_TERMINAL_RESIDUE_COVER.md).
+
+## 1. Common edge and cover-level contact census
+
+The upper-band calculation gives
 
 \[
 H(t)=(1+u+u^2+u^3+u^4)^2R(u^5),\qquad u=1+t,
@@ -28,137 +37,207 @@ where
 R(v)=av^2+bv+\left(\frac1{25}-a-b\right),\qquad a\ne0.
 \]
 
-The common edge polynomial is therefore
+Hence
 
 \[
-C_0(u)=t^7H(t)=(u-1)^5(u^5-1)^2R(u^5). \tag{1}
+C_0(u)=(u-1)^5(u^5-1)^2R(u^5). \tag{1}
 \]
-
-It has degree 25. Since \(R(1)=1/25\), no root of `R` collides with the
-fixed fifth-root-of-unity packet. Equation (1) always has:
-
-- contact multiplicity seven at \(u=1\);
-- contact multiplicity two at each of the other four fifth roots of unity.
-
-The two roots of `R` provide the remaining contact degree ten.
-
-## 2. Exhaustive root strata
 
 Put
 
 \[
-c=\frac1{25}-a-b,\qquad \Delta=b^2-4ac.
+c=\frac1{25}-a-b,
+\qquad
+\Delta=b^2-4ac.
 \]
 
-Because `R` is quadratic and \(R(1)\ne0\), the four rows below are disjoint
-and exhaustive over an algebraically closed characteristic-zero field.
+As a factorization of the selected `X^5=x` cover restriction, the four
+algebraic rows are:
 
-| `R` stratum | centers | contact partition of 25 |
-| --- | ---: | --- |
-| \(c\ne0,\ \Delta\ne0\) | 15 | \(7,2^4,1^{10}\) |
-| \(c\ne0,\ \Delta=0\) | 10 | \(7,2^9\) |
-| \(c=0,\ b\ne0\) | 11 | \(7,5,2^4,1^5\) |
-| \(c=b=0,\ a=1/25\) | 6 | \(10,7,2^4\) |
+| `R` stratum | cover centers | contact partition of 25 | F2 status |
+| --- | ---: | --- | --- |
+| \(c\ne0,\ \Delta\ne0\) | 15 | \(7,2^4,1^{10}\) | one principal chain |
+| \(c\ne0,\ \Delta=0\) | 10 | \(7,2^9\) | two copies of the same chain |
+| \(c=0,\ b\ne0\) | 11 | \(7,5,2^4,1^5\) | excluded |
+| \(c=b=0,\ a=1/25\) | 6 | \(10,7,2^4\) | excluded |
 
-For a nonzero root \(\rho\) of `R`, the equation \(u^5=\rho\) has five
-distinct solutions; its multiplicity is the multiplicity of \(\rho\).
-A root of order \(m\) at \(\rho=0\) instead gives contact order \(5m\) at
-\(u=0\). This proves every row without numerical root approximation.
+The last two rows are incompatible with the required order vertex
+`A'_0=(1,0)`: if `R(0)=0`, the approximate root has `y`-order at least five
+and its cube has `y`-order at least fifteen.
 
-## 3. Why contacts are not ramification rows
+## 2. Kummer-orbit transfer
 
-The Newton/boundary dictionary identifies an edge-root multiplicity with
-the contact multiplicity of the leading restriction on the selected toric
-divisor. It does **not** identify it with:
-
-- a toroidal branch scale;
-- a source boundary prime in the finite normalization;
-- a transverse ramification index \(e\);
-- a residue degree \(f\);
-- a puncture count;
-- or a group of points in one target fiber.
-
-This distinction is unavoidable. In smooth local coordinates `(s,z)`, all
-germs
+Every Laurent coefficient on band `ell` comes from `k[X^5,y]` and has the
+form
 
 \[
-g_q(s,z)=s^m+z^q,\qquad q=1,2,3,
+f_\ell(t)=t^\ell u^{k_\ell}A_\ell(u^5),
+\qquad
+k_\ell\equiv-\ell\pmod5. \tag{2}
 \]
 
-have the same edge restriction \(g_q(s,0)=s^m\), but their primitive
-equality rays are
+At a nonzero conjugate center `mu^5=rho`, put `s=u-mu` and
+`z_mu=X/s`.  Since `z=(s/t)z_mu`,
 
 \[
-\left(\frac m{\gcd(m,q)},\frac q{\gcd(m,q)}\right).
+t^\ell u^{k_\ell}A_\ell(u^5)z^\ell
+=
+s^\ell u^{k_\ell}A_\ell(u^5)z_\mu^\ell. \tag{3}
 \]
 
-Thus the first nonzero normal order—lower-band data—changes the entire
-toroidal fan while leaving the contact packet unchanged. Feeding the
-partition of 25 directly to the log-boundary compiler would invent its
-input.
+Thus exact coefficient orders, Newton points, edges, and vertex
+nonvanishing transfer to all five natural charts.  A nonzero fiber
+`u^5=rho` is one Kummer orbit, not five unrelated scale problems.
 
-## 4. Strongest naive finite-normalization test
-
-For diagnosis, the checker deliberately makes the unsupported assignments
+The Newton-step inequality is
 
 \[
-(e_i,f_i,s_i)=(m_i,1,1)
+\frac54<t_2\le4. \tag{4}
 \]
 
-for every contact multiplicity \(m_i\). Their boundary contribution is
-always 25. Since a target nonproperness curve must retain a positive affine
-sheet, the smallest compatible generic degree in this surrogate is
+Therefore a simple cofactor root is not an additional above-bisectrix F2
+continuation.  The selected squared factor gives the unique `t_2=2`
+principal row.  If `R` has a nonzero double root, either squared factor can be
+selected and both selections give the same terminal chain.
+
+## 3. The exact terminal target row
+
+In Laurent coordinates `t=Xy,z=y^-1`, the terminal block is
 
 \[
-d=25+1=26.
+P=t^4z^3+t^{21}z^{15},
 \]
 
-All four resulting coarse signatures are residue-immersion-compatible. If
-one additionally—and again without proof—places every center in a single
-closed target fiber, its minimum packet length is 25, while the finite-flat
-fiber length is 26. Hence every row receives the same exact verdict:
+\[
+-Q=tz+3t^{18}z^{13}+\frac95t^{35}z^{25}. \tag{5}
+\]
 
-> fiber length permits this packet; further data are required.
+The support direction is `(17,12)`, with primitive normal
 
-The typed target-ledger audit remains `incomplete`, because no source
-contact has been transferred to a normalization-boundary prime and neither
-the boundary nor affine generic pullback ledger is exhaustive.
+\[
+\nu=(12,-17).
+\]
 
-This surrogate is intentionally biased toward producing a contradiction.
-Its survival proves that contact arithmetic alone cannot close F2 through
-the current finite-normalization or conductor-packet inequalities.
+It gives pole orders
 
-## 5. Pivot verdict
+\[
+\nu(P)=-3,
+\qquad
+\nu(Q)=-5. \tag{6}
+\]
 
-The boundary route has not converted the F2 family into an exclusion:
+At the `Q`-dominant target-infinity corner put
 
-- all four contact strata survive;
-- the contact partitions do not determine local blowup scales;
-- the coordinate degree 125 does not determine geometric degree \(d\);
-- no target curve, target fiber, residue degree, or puncture profile is
-  certified;
-- consequently neither the log-boundary matrix nor the residual-different
-  identity can be constructed honestly.
+\[
+a=(-Q)^{-1},
+\qquad
+b=P/(-Q).
+\]
 
-The missing datum is again the first nonzero normal term at each root
-center. Recovering it requires the lower Laurent bands that the pivot was
-intended to avoid. Continuing the remaining thirty layers merely to obtain
-that datum would return to the rejected sequential strategy.
+Their source orders are `(5,2)`, so the target extraction ray is `(5,2)`.
+On the regular chart adjacent to `(3,1)`,
 
-The appropriate conclusion is therefore:
+\[
+\pi=b^3/a,
+\qquad
+\eta=a^2/b^5.
+\]
 
-> Stop the degree-specific F2 descent. A future bridge must be a
-> degree-independent theorem converting a common-power edge packet into
-> target-side finite-normalization data, or it must attack the canonical
-> finite normalization without first reconstructing a Newton boundary.
+The source orders are
 
-## 6. Reproduction
+\[
+\nu(\pi)=1,
+\qquad
+\nu(\eta)=0. \tag{7}
+\]
+
+Hence the extracted source-to-target row has transverse index
+
+\[
+\boxed{e=1}. \tag{8}
+\]
+
+Writing `s=X^17y^5`, its residue map is
+
+\[
+\eta^{-1}
+=rac{P^5}{(-Q)^3}
+=rac{125s(s+1)^5}{(9s^2+15s+5)^3}. \tag{9}
+\]
+
+It has degree
+
+\[
+\boxed{f=6}. \tag{10}
+\]
+
+This is actual target-side toroidal data, not a contact-to-ramification
+surrogate.
+
+## 4. Braid and meridian data
+
+The residue map in (9) has derivative
+
+\[
+h'(s)=\frac{625(s+1)^4}{(9s^2+15s+5)^4}.
+\]
+
+Its branch passport is
+
+\[
+(5,1),\qquad(3,3),\qquad(3,1,1,1), \tag{11}
+\]
+
+above branch values `0`, `infinity`, and `125/729`.  The total different is
+`10=2*6-2`.  Exhaustive branch-cycle enumeration gives monodromy
+
+\[
+\boxed{A_6}, \tag{12}
+\]
+
+and the actual global meridian relation
+
+\[
+\sigma_0\sigma_\infty\sigma_{125/729}=1. \tag{13}
+\]
+
+This completes the local braid factorization for the terminal target row.
+
+## 5. Why the old contact surrogate is retained
+
+The original checker deliberately promoted each cover contact multiplicity
+`m_i` to an unsupported row `(e_i,f_i,s_i)=(m_i,1,1)`.  Even that aggressive
+promotion survived a degree-26 finite-flat packet budget.  The test remains a
+valid warning that raw contact arithmetic alone cannot exclude F2.
+
+It is not the current branch ledger.  The zero-root rows are impossible,
+nonzero five-center packets are Kummer orbits, and the selected principal
+orbit now has the certified row `(e,f)=(1,6)` rather than five rows derived
+from contact multiplicities.
+
+## 6. Remaining gap
+
+The F2 route is reopened, but only at the global level.  The immediate tasks
+are:
+
+1. attach the source ray `(12,-17)` and target ray `(5,2)` to the original
+   `A^2` and target completions;
+2. determine how the one-chain row sits with the simple `R` spectator orbits;
+3. on `Delta=0`, decide whether the two identical `A_6` residue covers land
+   on the same target boundary component or on distinct components;
+4. complete the source class-group/unit ledger and target canonical pullback;
+5. identify which descendants, if any, map to affine nonproperness curves;
+6. then run finite-normalization and global meridian filters.
+
+The missing object is no longer the first normal order at fifteen centers and
+no thirty-layer descent is required for the selected chain.  The unresolved
+problem is the global source/target gluing of one or two explicit degree-six
+residue packets.
+
+## 7. Reproduction
 
 ```bash
 .venv/bin/python plane-jc/cas/audit_f2_75_125_boundary_handoff.py
+.venv/bin/python plane-jc/cas/verify_f2_kummer_orbit_transfer.py
+.venv/bin/python plane-jc/cas/verify_f2_terminal_residue_cover.py
 ```
-
-Intentional regeneration uses `--refresh`. The replay verifies all four
-root strata, the local scale ambiguity, the conditional degree-26
-signatures, the finite-flat packet budgets, and the typed refusal to infer
-missing target data.
