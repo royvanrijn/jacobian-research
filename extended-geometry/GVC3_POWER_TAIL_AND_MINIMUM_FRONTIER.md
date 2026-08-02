@@ -272,20 +272,31 @@ O=y-3xt^2
 \tag{7.2}
 \]
 
-are respectively antipodally even and odd. For an arbitrary linear form
-\(H=ax+by+ct\), the complete linear parity repair is the homogeneous quartic
+are respectively antipodally even and odd. The complete projective
+common-linear parity family is
 
 \[
-F_H=\rho(xy-2t^2+Hy)-x^2t^2-3Hxt^2.
+F_{\alpha,H}\big|_{\rho=1}=\alpha E+HO,
+\qquad H=ax+by+ct.
 \tag{7.3}
 \]
 
-Its restriction to the sphere is \(E+HO\). Exact normalized spherical
-moments give first
+Its homogeneous quartic lift is
+
+\[
+F_{\alpha,H}
+=\alpha\bigl(\rho(xy-2t^2)-x^2t^2\bigr)
++\rho Hy-3Hxt^2.
+\tag{7.4}
+\]
+
+### 7.1 The chart \(\alpha\ne0\)
+
+Normalize \(\alpha=1\). Exact normalized spherical moments first give
 
 \[
 5a-3b=0.
-\tag{7.4}
+\tag{7.5}
 \]
 
 Put \(b=5a/3\) and \(z=c^2\). Up to nonzero rational factors, moments two
@@ -293,31 +304,60 @@ and three give
 
 \[
 28a^2-52a+27z-63=0,
-\tag{7.5}
+\tag{7.6}
 \]
 
 \[
 7164a^3-36868a^2-81341a-24453=0.
-\tag{7.6}
-\]
-
-After using (7.5), moment four gives
-
-\[
-77776a^4+137224a^3-745076a^2-1119246a-198747=0.
 \tag{7.7}
 \]
 
-The resultant of (7.6) and (7.7) is
+After using (7.6), moment four gives
 
 \[
--6466167050191094761727778002592000\ne0.
+77776a^4+137224a^3-745076a^2-1119246a-198747=0.
 \tag{7.8}
 \]
 
-Hence no member of (7.3) has even its first four pure moments zero. This
-closes the entire linear parity-homogenization of Long's quartic, not all
-homogeneous quartics.
+The resultant of (7.7) and (7.8) is
+
+\[
+-6466167050191094761727778002592000\ne0.
+\tag{7.9}
+\]
+
+Hence this affine chart is empty through the first four moments.
+
+### 7.2 The projective boundary \(\alpha=0\)
+
+Here the sphere polynomial is \(HO\). The first moment again gives
+\(b=5a/3\). The next two moments reduce, up to nonzero rational factors, to
+
+\[
+28a^2+27c^2=0,
+\tag{7.10}
+\]
+
+\[
+a(584a^2+819c^2)=0.
+\tag{7.11}
+\]
+
+If \(a\ne0\), equation (7.10) gives
+\(c^2=-28a^2/27\), while the second factor in (7.11) becomes
+
+\[
+584a^2+819c^2=-\frac{796}{3}a^2\ne0,
+\]
+
+a contradiction. Thus \(a=c=0\), and then \(b=0\); this is only the zero
+quartic.
+
+Consequently no nonzero member of the complete projective family (7.3)
+has even its first four pure moments zero. This closes the common-linear
+parity-homogenization of Long's quartic, not the family with independent
+linear profiles on its two odd homogeneous pieces and not all homogeneous
+quartics.
 
 ## 8. Updated minimum frontier
 
@@ -335,10 +375,10 @@ The new result separates three notions cleanly.
    prove a lower bound in a declared architecture.
 
 The one-profile endpoint mechanism cannot lower \(k\), and the complete
-linear parity repair does not produce \(k=2\). The next calculation should
-therefore be a multi-profile homogeneous sphere search in degrees six,
-eight, and ten, with the antipodal parity quotient imposed before moment
-elimination.
+common-linear parity repair does not produce \(k=2\). The next calculation
+should therefore allow independent linear profiles on the two odd pieces,
+then move to multi-profile homogeneous sphere searches in degrees six,
+eight, and ten.
 
 ## 9. Reproduction
 
@@ -350,6 +390,6 @@ python3 scripts/verify_gvc3_power_tail_and_minimum.py
 
 The checker verifies the exact shifted-power detector for several
 \((k,m,d)\), exact polyharmonic depth, the coordinate-self-multiplier SIC
-identity, and the characteristic-zero resultant (7.8). The all-order claims
-are the Fischer-transfer calculations above, not extrapolations from the
-bounded replay.
+identity, and the complete projective common-linear quartic obstruction.
+The all-order claims are the Fischer-transfer calculations above, not
+extrapolations from the bounded replay.
