@@ -324,7 +324,8 @@ def verify(
     print(
         "STATUS: exact characteristic-zero proof is in "
         "BINARY_GVC_PRIME_POWER_TOMOGRAPHY.md; affine carry promotion "
-        "remains open"
+        "remains unproved in the parked route, while Hall-envelope "
+        "separation proves unrestricted GVC(2)"
     )
 
 

@@ -13,6 +13,8 @@ corrections that are deliberately carried into a new deposited version.
 
 ## Active
 
+- `generalized-vanishing-two-variables` — *The Generalized Vanishing
+  Conjecture: The Two-Variable Theorem and the First Failing Dimension*
 - `common-arithmetic-fibers` — *Over Characteristic Zero, Every Finite Étale
   Algebra of Rank at Least Three Is a Full Keller Fiber*
 - `fixed-map-hasse-failures` — *Quantitative Hasse-Principle Failures in the
@@ -40,6 +42,15 @@ geometric manuscript `quadratic-gauge-nonproperness`.
 Jacobian-one map of geometric degree five, proves a uniform family of full
 Hasse-failing fibers, and counts the constructed targets by height using
 Selberg--Delange.
+
+`generalized-vanishing-two-variables` is the concise paper version of the
+Hall-envelope proof.  It includes the Hall localization, shifted-ray
+prime-dilation argument, common-threshold cutoff, and global moving-envelope
+proof, followed by the homogeneous three-variable counterexample, its
+connection to Long's Gaussian construction, the complete
+winding--profile--radial family of failures, and the exact dimensional
+classification of GVC.  It is an active internal draft and has not been
+externally reviewed.
 
 ## Companion draft
 

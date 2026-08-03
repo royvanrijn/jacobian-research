@@ -31,7 +31,8 @@ multi-state fiber.
 
 These are exact integer computations at the displayed coefficient
 specializations.  Passing them is a bounded regression, not a proof of
-the universal Witt--Rees realization or of GVC(2).
+the universal Witt--Rees realization and not the Hall-envelope proof of
+GVC(2).
 """
 
 from __future__ import annotations
@@ -287,7 +288,7 @@ def main() -> None:
         print(
             "STATUS: the first p-squared Witt recursion passes on every "
             "tested exposed packet; universal Rees strictness remains "
-            "to be proved"
+            "open only inside the parked Hall/carry route"
         )
     else:
         failing = {

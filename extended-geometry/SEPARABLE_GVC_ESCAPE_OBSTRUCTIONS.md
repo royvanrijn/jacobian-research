@@ -2,6 +2,12 @@
 
 ## 1. Results and scope
 
+**Current status.**  The scoped theorems and degree reductions in this note
+remain valid, but their counterexample frontiers are historical.  The later
+[Hall-envelope theorem](BINARY_GVC_ENVELOPE_CLOSURE.md) proves unrestricted
+binary GVC.  This note remains an independent regression and a source of
+reusable escape obstructions.
+
 Work over a characteristic-zero field.  Write a nonzero
 constant-coefficient operator in two variables as
 \[
@@ -26,8 +32,8 @@ where every \(\Lambda_j\) is homogeneous of order \(j\) and
 > If \(\Lambda\) has a nonzero order-zero term, (1.2) already forces
 > \(P=0\), so the same conclusion is trivial.
 
-This closes a natural nonhomogeneous-operator escape class.  A remaining
-nonhomogeneous binary GVC counterexample must satisfy
+This closes a natural nonhomogeneous-operator escape class.  At this stage,
+any hypothetical nonhomogeneous binary GVC counterexample had to satisfy
 \[
  \deg P>\min\{j:\Lambda_j\ne0\}.
  \tag{1.4}
@@ -45,8 +51,8 @@ restriction when \(\Lambda\) is homogeneous.  It also gives:
 > has a nonzero order-zero term.  Then \(\Lambda\) satisfies GVC for
 > arbitrary \(P\).
 
-For binary operators, every homogeneous \(\Lambda_0\) splits.  Thus a
-remaining counterexample must also avoid a common homogeneous factor of
+For binary operators, every homogeneous \(\Lambda_0\) splits.  Thus such a
+hypothetical counterexample also had to avoid a common homogeneous factor of
 all operator pieces whose quotient has nonzero constant term.
 
 More strongly, Theorem 3.4 below closes every binary operator with
@@ -371,8 +377,9 @@ most \(q_x\) such factors can contribute to
  \tag{3.20}
 \]
 
-Consequently a remaining binary counterexample whose lowest order is one
-must contain an operator piece of order at least three.
+Consequently, within this intermediate reduction, a hypothetical binary
+counterexample of lowest order one had to contain an operator piece of order
+at least three.
 
 The separated higher-order drift class is also safe.
 
@@ -1585,12 +1592,13 @@ multilinear identity rather than a multiplicative coordinate change.
    operator-polynomial symbol remains a single product
    \(A(\zeta)P(z)\).
 
-No two-variable GVC counterexample or improved ordinary-Laplacian endpoint
-is claimed.
+This note produced no two-variable GVC counterexample or improved
+ordinary-Laplacian endpoint.  The former is now ruled out by the
+Hall-envelope theorem; the latter remains a separate problem.
 
-## 7. Remaining exact continuations
+## 7. Historical exact continuations
 
-The results leave four sharply separated directions.
+Before envelope closure, the results left four sharply separated directions.
 
 1. **Growing-depth defect cone.**  Theorem 3.1 kills every fixed
    filtration depth.  The later

@@ -353,13 +353,13 @@ def main() -> None:
             ),
             "binary_degree_four_corollary": (
                 "Every binary constant-coefficient operator satisfies "
-                "GVC for deg(P)<=4. Any counterexample has deg(P)>=5; "
-                "in degree five its lowest positive order is 2, 3, or 4."
+                "GVC for deg(P)<=4. At this intermediate stage, a "
+                "hypothetical counterexample had degree at least five."
             ),
             "quadratic_leading_quintic_top_forms": (
                 "For r=2 and deg(P)=5, the first two leading equations "
                 "reduce the top pair to (dx*dy,x^5), (dx^2,x*y^4), or "
-                "(dx^2,y^5). Lower terms and higher jets remain open."
+                "(dx^2,y^5). The following theorem closes all corrections."
             ),
             "quadratic_leading_quintic_theorem": (
                 "For r=2 and deg(P)<=5, GVC holds. The distinct-root x^5 "
@@ -370,8 +370,9 @@ def main() -> None:
                 "four and the other two are one-sided."
             ),
             "degree_five_lowest_order_reduction": (
-                "Any binary GVC counterexample of polynomial degree five "
-                "has lowest positive operator order three or four."
+                "This intermediate degree-five reduction leaves only "
+                "lowest positive operator orders three and four; the later "
+                "degree-five theorem closes both."
             ),
             "transverse_linear_high_order_class": (
                 "If P=f(x)+a*y and Lambda=dy*Gamma+H(dx), with Gamma(0)=0 "
@@ -383,8 +384,8 @@ def main() -> None:
                 "For r=3 and deg(P)=5, the first two leading equations "
                 "reduce the top pair to eight normal forms: four over the "
                 "triple-root cubic symbol, three over the double-root "
-                "symbol, and one over the squarefree symbol. Their "
-                "nonhomogeneous correction systems remain open."
+                "symbol, and one over the squarefree symbol. The later "
+                "degree-five theorem closes all eight correction systems."
             ),
             "proof": (
                 "extended-geometry/"

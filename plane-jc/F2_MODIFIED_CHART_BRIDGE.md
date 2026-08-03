@@ -429,8 +429,39 @@ The remaining exact problem is narrower and different:
 > Prove its complete support and show whether it can satisfy the lower-band
 > polynomiality and endpoint conditions.
 
-Until this correction is derived, (28) is a conditional projection
-exclusion, not an exclusion of `(75,125)` or of the infinite F2 family.
+The companion Laurent-layer classifier now supplies the complete necessary
+source-band envelope through bracket layer `-200`, so “complete support” here
+no longer means guessing missing source bands.  What remains unproved is the
+nonlinear pushforward of those exact bands into this modified `xi` chart and
+the resulting specialized Fitting elimination.  In particular, the earliest
+descent-eight defect survives its first local target jet; its fifth multiple
+already contains genuine lower-tail variables and cannot be tested by setting
+the primitive fractional-power numerator `E5` to zero.
+
+The companion classifier now makes the first two Fitting rows explicit in
+the original Laurent chart.  The full target has a rank-fourteen cokernel,
+and layer zero is the rank-fourteen quotient of the length-fifteen algebra
+`B[w]/(w^3*(w-1)^6*(w-w0)^6)` by constants.  Old B0 source-basis generators
+span both cokernels before their earlier Keller equations are imposed.  Thus
+the remaining bridge is specifically the simultaneous triangular
+specialization of those generators, not the construction of either
+cokernel.  The lowest-`u` edge escape has also been pushed one order farther:
+its uniform all-`r` four-term witness is the first jet of an exact formal
+shear, but the shear is necessarily infinite, and keeping P linear in the
+transverse coordinate forces a nonpolynomial Q coefficient at order two.
+The complete polynomial order-two repair is now classified and cannot
+terminate quadratically.  At `r=3`, cubic and quartic termination ideals are
+also `(1)`.  The exact tail correction at `v^5` is now derived in
+[`F2_75_125_DERIVATION.md`](F2_75_125_DERIVATION.md).  Its fifth-binomial
+wrap makes the first-return matrix surjective over both descent-eight
+branches, and the edge recursion remains surjective through `v^10`.
+Therefore (28) remains a conditional projection exclusion, not an exclusion
+of `(75,125)` or of the infinite F2 family.  The exact ten-variable fixed-
+`w=1` substitution and the endpoint-disjoint power rows through layer `29`
+have now been carried.  The missing information is localized to the coupled
+Schur/Fitting rows from layer `28` through layer `3` and the thirteen
+remaining `w=w0`/residue functionals.  The lower Laurent tail remains
+retained.
 The exact `r=4,5` samples suggest a stable family obstruction, but no
 induction from these samples to all `r` has been proved.
 

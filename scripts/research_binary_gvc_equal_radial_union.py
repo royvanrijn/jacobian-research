@@ -255,7 +255,8 @@ def verify() -> None:
     print(
         "STATUS: color-count face saturation is false, but a complete "
         "radial-vector union is one Laurent constant-term sequence; "
-        "Hall/jet exposure of that complete union remains open"
+        "Hall/jet exposure remains unproved in the parked route and is "
+        "not needed by Hall-envelope separation"
     )
 
 

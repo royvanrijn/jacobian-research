@@ -11,7 +11,7 @@ the corresponding full class is proved safe.
 |---|---|
 | smallest false Dixmier rank | at most \(3\); `DC_1` and `DC_2` remain open |
 | Image/SIC pair dimension | exactly \(2\) |
-| unrestricted constant-coefficient GVC dimension | \(2\le n_{\rm GVC}\le5\) |
+| unrestricted constant-coefficient GVC dimension | exactly \(3\) |
 | ordinary-Laplacian GVC dimension | \(2\le n_{\Delta{\rm GVC}}\le40\) |
 | minimum two-pair bidegree-\((4,4)\) coefficient rank | \(2\le r_{\rm SIC}\le5\) |
 | homogeneous quartic HN Hessian rank | \(3\le\rho_{\rm HN,4}\le37\) |
@@ -72,8 +72,16 @@ witness has coefficient rank five and is not a Segre point
 \(A(\zeta)P(z)\), so it does not give a two-variable constant-coefficient
 GVC witness.
 
-For unrestricted GVC, the most promising lower-dimensional attack is a
-Rees--holonomic one.  In two variables every fixed leading filtration layer
+Unrestricted constant-coefficient GVC now has the exact failure dimension
+three: the
+[Hall-envelope theorem](BINARY_GVC_ENVELOPE_CLOSURE.md) proves the binary
+case, and the
+[homogeneous ternary witness](THREE_VARIABLE_HOMOGENEOUS_GVC_COUNTEREXAMPLE.md)
+fails in dimension three.  The following Rees and apolar attacks are retained
+as historical route ideas, not as an active dimension frontier.
+
+Before closure, one proposed lower-dimensional attack was a Rees--holonomic
+one.  In two variables every fixed leading filtration layer
 of a hypothetical nonhomogeneous defect vanishes eventually.  Encode the
 entire family
 
@@ -94,8 +102,9 @@ This would turn “the defect moves to unbounded depth” into a contradiction
 for a fixed support, rather than continuing degree-by-degree correction
 elimination.  It is not yet a uniform theorem over all supports.
 
-For a smaller upper witness in dimensions three or four, do not identify a
-Dvorsky variable with a linear form.  Instead seek an **apolar quotient**:
+Likewise, the former search for a smaller upper witness in dimensions three
+or four proposed an **apolar quotient** rather than identifying a Dvorsky
+variable with a linear form:
 choose a one-dimensional source subspace and a dual symbol subspace whose
 Koszul contraction is acyclic, then take the induced quotient on both
 \(\Lambda\) and \(P\).  The required certificate is an all-power identity

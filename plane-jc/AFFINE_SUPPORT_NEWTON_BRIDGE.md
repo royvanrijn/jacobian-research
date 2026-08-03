@@ -278,10 +278,11 @@ For F2, the corrected chart has \([t,z]_{X,y}=-z\).  The common-power band is
 layer 40, the \(X^4\) target is layer 4, and the 35 intervening zero layers
 are exactly 39 through 5.  The finite B0 degree/halfspace envelope and all
 five character sectors of those layers are now compiled exactly in
-[`F2_75_125_DERIVATION.md`](F2_75_125_DERIVATION.md).  It has 978 linear
-parameters.  If the coefficient/support route is resumed, it must first prove
-the \(\gamma\)-branches exhaustive and refine the over-envelope to its B1
-Laurent polygon masks before attempting Gröbner elimination.
+[`F2_75_125_DERIVATION.md`](F2_75_125_DERIVATION.md).  The same replay now
+includes every lower B0 band through bracket layer `-200`: `2,418`
+jet-reduced parameters and `240` zero layers.  Inconsistency of this
+over-envelope would exclude the row directly; a surviving point would still
+need an exhaustive B1 polygon mask before it represented a plane candidate.
 The corrected top tangent is now exact and shows why this route does not
 triangularize so early.  The former substitution by (C_0^2) and (C_0^4)
 assumed unproved divisibility.  Every exact P-band direction instead has the
@@ -292,7 +293,35 @@ source-band mode.  The next optional coefficient test must retain all P-band
 variables and impose the nonlinear forcing by the exact cokernel/Fitting row.
 The first such calculation is now complete: a resultant `1701*a^8` recovers
 a source root through descent 7 and leaves the local descent-8 ratio
-`27*y^2-9*y+1=0`, which must be coupled to the target row.
+`27*y^2-9*y+1=0`.  The Q-band-one normalization excludes its four fixed
+Kummer supports.  At this earliest spacing only a nonzero double root of `R` remains; it passes the
+first local target jet, and its fifth multiple is a layer-zero lower-tail
+Fitting condition rather than the primitive equation `E5=0`.  The full
+target cokernel and the layer-zero Artinian quotient both have rank `14`.
+Old B0 generators span them before the earlier equations are imposed, and
+the forced lowest-`u` edge correction has an exact Bezout witness.  That
+witness extends to an all-`r` formal shear, but the shear is necessarily
+infinite: its literal polynomial truncation fails at transverse order two.
+The polynomial order-two repair is an explicit two-parameter family but
+never terminates quadratically; exact `r=3` calculations also exclude cubic
+and quartic termination.  The exact first Kummer-return packet at `v^5` has
+since been compiled in
+[`F2_75_125_DERIVATION.md`](F2_75_125_DERIVATION.md): its maximal-minor ideal
+is the unit ideal, both descent-eight branches survive, and the isolated
+edge recursion remains surjective through `v^10`.  The live obstruction is
+therefore in the global Hermite quotient, not in another transverse
+termination test.  This is now a support theorem rather than a coefficient-
+box observation: the all-`r` unit minors select `18*r-1` original-polynomial
+source combinations strictly below both certified edges (`53` at `r=3`).
+Quotienting their triangular `w=0` control by exact confluent CRT leaves a
+rank-`24` global Hermite module over the rank-two descent-eight algebra.  The
+fixed `w=1` summand is now one normalized identity plus a ten-variable block
+of determinant `75000`; eliminating it leaves thirteen cokernel coordinates.
+The substitution has now been carried, and the endpoint-disjoint power block
+is eliminated through layer `29`.  It leaves `927` active source coordinates,
+with the coupled Schur/Fitting system beginning at layer `28`.  Only that
+coupled image or a genuinely new lower Newton edge can close this branch.
+Later first-defect spacings remain in the full system.
 
 The first boundary pivot is complete at the contact-only level justified by
 the common edge.  Its quadratic factor has four exhaustive contact

@@ -2,6 +2,11 @@
 
 ## 1. Scope and outcome
 
+**Current status.**  This note belongs to the parked Hall/carry promotion
+route.  Its localization theorems remain valid, but the later
+[Hall-envelope theorem](BINARY_GVC_ENVELOPE_CLOSURE.md) proves unrestricted
+binary GVC without promoting a Hall shell.
+
 At orders `p+r`, the two-digit Hall transform has an empty or singleton
 high quotient on each selection side.  This note proves the exact
 state-level promotion theorem for those singleton fibres.
@@ -29,7 +34,7 @@ the precise justification for reducing **state relations** to Graver moves.
 
 It is not yet the full Hall-shell inheritance theorem.  A vanishing moment
 is a linear sum of specialized state monomials; it does not canonically pair
-its summands into binomial semigroup relations.  The remaining step is to
+its summands into binomial semigroup relations.  The step left in this route is to
 promote one of the primitive state relations below, or a complete fibre
 containing it, to a pure-zero characteristic-zero packet.  Section 6 records
 that distinction explicitly.
@@ -543,7 +548,7 @@ set in a spread-out Hall packet is harmless, classify a general non-torsion
 algebraic cross-ratio, or inherit the complete three-level ghost from the
 linear Hall shell.
 
-## 6. What this closes, and the remaining lemma
+## 6. What this closes, and the route-local lemma
 
 Theorems 3.1--4.1 close five pieces of the \(p+r\) Hall-shell problem.
 
@@ -589,15 +594,28 @@ Laurent multiplier gives a nonzero odd tail.  This is not a rank-one Cartesian
 Hall packet or a GVC counterexample; it proves that a module idempotent cannot
 follow from (3.4) and factorial weighting alone.
 
-The corrected remaining target must use the Cartesian Taylor down-set and its
+The corrected target left in this route must use the Cartesian Taylor down-set and its
 adjacent-channel derivative identities.  The same translation-tangent note
 proves that, for a translated monomial at primitive slope, the complete
 linearized diagonal-period kernel is exactly the flat torus direction, and it
 deduces exact flatness of every \(q^a\)-order character collision once the
-underlying prime \(q\) is sufficiently large.  What remains is to expose a
-nonflat exceptional-small-prime, mixed-prime, or two-dimensional curvature
-row over one common high quotient, or to construct a nonterminal rank-one
-Cartesian Hall packet where that fails.  Prime-power
+underlying prime \(q\) is sufficiently large.  Its universal blind module
+\(b_{jk}=(j-r)v_k+u_j(k-s)\), containing the nonflat bilinear member
+\((j-r)(k-s)\), also proves that the first two-dimensional tangent row cannot
+do this; the first potentially separating observation is quadratic or higher.
+Its quadratic positive-Hessian theorem separates every fixed nonflat integer
+label, including modulo all but finitely many primes.
+
+The subsequent
+[positive return-semigroup jet theorem](POSITIVE_RETURN_SEMIGROUP_JET_RIGIDITY.md)
+closes the entire identity-versus-twist positive branch after exposure: its
+full jet has only the flat coefficient-torus kernel, and every finite torsion
+order is flat even for varying labels and mixed-prime order.  It also gives
+an exact centered-square fourth-jet certificate, and its independently marked
+paired-point theorem separates arbitrary phased baselines modulo the
+coefficient torus.  What remains is to obtain a positive component or enough
+of those common marks over one high quotient, or construct a nonterminal
+rank-one Cartesian Hall packet where this fails.  Prime-power
 signatures and Graver bases solve the packet after this Hall-specific
 inheritance; they do not construct it from a specialized linear shell.
 
@@ -645,7 +663,7 @@ character weight.  It does **not** prove promotion of the pure shell: the
 premise \(\Lambda^m(P^m)=0\) must still yield a fixed pure-zero packet before
 (6.1) can be used.
 
-Accordingly, the narrowest remaining binary statement is:
+Accordingly, the narrowest statement left inside that route is:
 
 > Pure Hall-shell vanishing, together with the full Cartesian translation
 > tower, either gives a flat scale-compatible twist or exposes a nonflat
@@ -655,9 +673,12 @@ Accordingly, the narrowest remaining binary statement is:
 The second clause is covered by the existing finite-trace and Laurent
 separator machinery.  The primitive one-direction tangent and
 large-prime-power torsion cases of the first clause are now proved in the
-translation-tangent note.  Exceptional small primes, mixed-prime torsion,
-two-dimensional Taylor down-sets, and their factorial-compatible Hall
-exposure remain open.
+translation-tangent note.  The positive return-semigroup theorem closes every
+finite-order identity-versus-twist component after exposure and every paired
+baseline after independent marking.  Factorial-compatible common-high-quotient
+inheritance of a positive component or enough marks from the signed Hall
+shell remains unproved within the parked route.  It is not a remaining gap
+in binary GVC, which the Hall-envelope theorem proves independently.
 
 ## 7. Exact replay
 

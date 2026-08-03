@@ -1,0 +1,8471 @@
+{
+  "linear_syzygy_control": {
+    "character_phases": [
+      1,
+      -1,
+      -1
+    ],
+    "scale_1_translation_coefficients": [
+      0
+    ],
+    "scale_2_character_power_first_obstruction": [
+      0,
+      226
+    ],
+    "scale_2_character_power_translation_coefficients": [
+      226,
+      648,
+      684,
+      312,
+      52
+    ],
+    "scale_2_fixed_phase_first_obstruction": [
+      0,
+      -64
+    ],
+    "scale_2_fixed_phase_translation_coefficients": [
+      -64,
+      -216,
+      -252,
+      -120,
+      -20
+    ],
+    "span": 2,
+    "states": [
+      "R1^2*B1^2",
+      "R0*R2*B0*B2",
+      "R0^2*B2^2"
+    ]
+  },
+  "model": "Projected two-colour partition configuration; a proper orbit ideal is a promotion obstruction in this surrogate, not a rank-one Cartesian Hall packet or GVC(2) counterexample.",
+  "parameters": {
+    "maximum_support": null,
+    "minimum_support": 5,
+    "modes": [
+      "operator",
+      "polynomial"
+    ],
+    "normaliz": "Normaliz 3.10.2",
+    "radial_degree": 5,
+    "saturation": "all R_i and B_i coefficient channels",
+    "singular": "Singular for x86_64-Linux version 4.3.2 (4330, 64 bit) Apr  1 2024 04:44:00"
+  },
+  "relations": [
+    {
+      "digest": "004a818162b682e1425161d3e465d0a3934207825b4ca9307fceb1eac60c89fc",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 13,
+          "dimension": -1,
+          "largest_generator_terms": 8,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -6,
+      "relation": {
+        "colour_counts": [
+          2,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 13
+      }
+    },
+    {
+      "digest": "00c50096f4288bced61559c67ff519d902742ca342d3eb6e9bbe6f6c316b94a9",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "span": 4,
+        "support_size": 6,
+        "total_level": 7
+      }
+    },
+    {
+      "digest": "01bebd8fcd334098dcabb58fedc098e4970a484b6582a800124d15e08bc46937",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 2,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 15
+      }
+    },
+    {
+      "digest": "067d84f80188cebb48273f07ba2e6bcda97f31f801b4d97cb7b00869fffe367b",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -5,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 13
+      }
+    },
+    {
+      "digest": "0e05b40c22a740b26b4d2e762aa091180ed88a1c6ab7972f5a98a7f6617b3d02",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              4,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 13
+      }
+    },
+    {
+      "digest": "0e6482c12cbc6968100d2529d7f013cbffdd9aeca7a65921be19d0532399a5cc",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": false,
+      "modes": {
+        "operator": {
+          "derivative_generators": 12,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 12,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -11,
+      "relation": {
+        "colour_counts": [
+          3,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              3
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              5,
+              3
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 19
+      }
+    },
+    {
+      "digest": "0ec32fcc2ab3209e08184542d7874dab754ff0b7160b4d9bc2ebf5f6cd6c0f86",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -4,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 14
+      }
+    },
+    {
+      "digest": "0f5f17e69e422606c0158fe03e514b91b07469a75408dfad05bd95cd33b68f47",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 4,
+        "support_size": 6,
+        "total_level": 6
+      }
+    },
+    {
+      "digest": "1616c05390cc878519c7bc8350654a08ecb50f915ded04ea778edb052983da81",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": false,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 15
+      }
+    },
+    {
+      "digest": "1a7d78da24294e07e811eb3341ca62f1ae80d865e598e96aedc7854db451978d",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 11,
+          "dimension": -1,
+          "largest_generator_terms": 6,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -5,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 10
+      }
+    },
+    {
+      "digest": "1bbb16ceaf37ebb7f4303d5ab0e2d52f2feeddb0786ad620233c2634df974219",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -4,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 4,
+        "support_size": 6,
+        "total_level": 8
+      }
+    },
+    {
+      "digest": "2162e9dacb11c93c52aba73928467e269b1a3141755f0a601568af71ba1a9dc9",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 2,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "span": 4,
+        "support_size": 6,
+        "total_level": 8
+      }
+    },
+    {
+      "digest": "29b8420aff024d1ff315553d9a9b213f4c9522c295dfdc615060e16309b3f7ab",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 8
+      }
+    },
+    {
+      "digest": "2fa3599039c15b445e36582c41ef933953ed5e7fd9139aeb33d39e0f183ff2cc",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 12,
+          "dimension": -1,
+          "largest_generator_terms": 8,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 9
+      }
+    },
+    {
+      "digest": "3002fa2ee5aae746f91c311844a0529f6a647f89930531f44ec1e44a0a77ea52",
+      "endpoint_weight": 4,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 13,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 17,
+          "dimension": -1,
+          "largest_generator_terms": 10,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -12,
+      "relation": {
+        "colour_counts": [
+          3,
+          4
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              3
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              3
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              3
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              5,
+              3
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 19
+      }
+    },
+    {
+      "digest": "313b377b209079696fb0a51adeeda865806543fa8eda555ef7672abe97617270",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 9
+      }
+    },
+    {
+      "digest": "321c4fb17ae56d77997ea19c422ef67eefee7c8c79c45c0ffd7dc5eb6c9d0c52",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 9
+      }
+    },
+    {
+      "digest": "332ba040f8e1a7168e1a2df001ba373af98bd20a22ac8b4dd8ea39296b18e102",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 4,
+        "support_size": 6,
+        "total_level": 6
+      }
+    },
+    {
+      "digest": "336f3f2d5e0c1170fe2976fd0764902b97344df3336bd80e07c21db59e7fcfbe",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 9
+      }
+    },
+    {
+      "digest": "348d9b486236b75285a234e31775af96343d239d91420e41aa237f609332ce3b",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 13,
+          "dimension": -1,
+          "largest_generator_terms": 7,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -8,
+      "relation": {
+        "colour_counts": [
+          2,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 13
+      }
+    },
+    {
+      "digest": "3495b93bc1ddbb4897d307f23b3e317cc6cebee9ec70a2b66300540072629a8b",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 2,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 12,
+          "dimension": -1,
+          "largest_generator_terms": 8,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 9
+      }
+    },
+    {
+      "digest": "35b24fee875234983442b402ae4978cae7741385878153bab9ed44c14930aa3e",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 7
+      }
+    },
+    {
+      "digest": "37287fd9a8815955c0fdd2dc2f51092fb497df2ce18b63229966a9ced7e61ed0",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 12,
+          "dimension": -1,
+          "largest_generator_terms": 7,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -4,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 9
+      }
+    },
+    {
+      "digest": "38b74952781b01715a05619d0554917c7838af89f33fd720a162e858c1721bb3",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": false,
+      "modes": {
+        "operator": {
+          "derivative_generators": 12,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 15,
+          "dimension": -1,
+          "largest_generator_terms": 6,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -11,
+      "relation": {
+        "colour_counts": [
+          3,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              3
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              4,
+              3
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 16
+      }
+    },
+    {
+      "digest": "399a42742c259d40623e028c51af24ef14c3b0a6cd74b3f7f78f9fe9767b448d",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 7
+      }
+    },
+    {
+      "digest": "40b70c37901de8361f108ffa3543186c45b3dd14f09fb7f07c8435a2d2ad5cb8",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 12,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -8,
+      "relation": {
+        "colour_counts": [
+          2,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 14
+      }
+    },
+    {
+      "digest": "40d44fb7a8db6fbbd43c50e94af5fd32f8937e13b7ed6a43763cae3f820c5cf9",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              4,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 15
+      }
+    },
+    {
+      "digest": "41dab7e105c5d3d9374fdd97936214c0fb6cf675010ee12f69ce3340abc07642",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 10,
+          "dimension": -1,
+          "largest_generator_terms": 6,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -6,
+      "relation": {
+        "colour_counts": [
+          2,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 14
+      }
+    },
+    {
+      "digest": "43da45b9dddb30f5b1087994928c44591d0f70fe527b43135b9226650e075368",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": false,
+      "modes": {
+        "operator": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -7,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 13
+      }
+    },
+    {
+      "digest": "46eacc7678ab30a23fd5bb5b2ecf9817e293df6cc57acc83d5d4ddbf58f001f7",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": false,
+      "modes": {
+        "operator": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 11,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -7,
+      "relation": {
+        "colour_counts": [
+          3,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              3
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              4,
+              3
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 20
+      }
+    },
+    {
+      "digest": "4d98838f46deef07813c8d8be416357d82a32f0eaa9e9bab772131b94fbae4db",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -4,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 12
+      }
+    },
+    {
+      "digest": "4fa56bb197e8540688cafdea26ca9bc3c3f65ecee920755c4f03ee8ce7547a2a",
+      "endpoint_weight": 4,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 11,
+          "dimension": -1,
+          "largest_generator_terms": 6,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -5,
+      "relation": {
+        "colour_counts": [
+          1,
+          4
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              3
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 15
+      }
+    },
+    {
+      "digest": "51b15793a5b99a828ad22e79087f5d92b709634b6f0ed05eaa4ea6f8693930bc",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 4,
+        "support_size": 6,
+        "total_level": 10
+      }
+    },
+    {
+      "digest": "5520cafcc06eb3a676f8e6399bb63cad262127bdb511f2c6cdb8de716efe4312",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 13,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 13,
+          "dimension": -1,
+          "largest_generator_terms": 6,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -9,
+      "relation": {
+        "colour_counts": [
+          3,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              3
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              3
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 15
+      }
+    },
+    {
+      "digest": "586242c078ab0829fdcf769db8e769416f0a117774d2e1d05be23cf1c812d2dd",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 12
+      }
+    },
+    {
+      "digest": "5a817d11f393aefa5e0228a37518d9bc355071a6ce72616cc0ec93ada8741b65",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 8
+      }
+    },
+    {
+      "digest": "5ab7691285c7e171a896e8684a4f99d3279a93210957af39b869bcce5544b786",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 8
+      }
+    },
+    {
+      "digest": "5cc275877151144c35952d242f1a7946d6b59b1d80a0e80562669297016fc381",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 4,
+        "support_size": 6,
+        "total_level": 7
+      }
+    },
+    {
+      "digest": "5df61d28e9ca809a195d7280a8e0082d1df7f47011b78a5ee7e710656078f440",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": false,
+      "modes": {
+        "operator": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 10,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -7,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 11
+      }
+    },
+    {
+      "digest": "5f78f507f27398d157349579436bacf977b355bb910aeb0bf1d8f3961a95d3e7",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": false,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -5,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "span": 4,
+        "support_size": 6,
+        "total_level": 9
+      }
+    },
+    {
+      "digest": "6045887169f1a4d1dab9f8b26cc3f051d081004385511cd5a48a91166762132b",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 9
+      }
+    },
+    {
+      "digest": "604e4083d47f9f3efff9e2d2d17eaf67f7404e61b4add8ed5cabad9556f3930d",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 2,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 10
+      }
+    },
+    {
+      "digest": "61f9332587177b2ddadd98440748a07678c39e508a63e765c3a1b4e1ae5845e3",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 4,
+        "support_size": 6,
+        "total_level": 6
+      }
+    },
+    {
+      "digest": "6287b9e0f12a37c17a6648bdd486afb11437a14442565d702ee6b9f911657a3c",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -5,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 13
+      }
+    },
+    {
+      "digest": "6296d9803e69e73676e3ca54890d92689e90cded2d54d1e872f3c7f9be4a834c",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 13
+      }
+    },
+    {
+      "digest": "63fc9f3fdbf6bef3473781dd0b0cac8f3bb6e3796a6c6104a777a2f7761edf04",
+      "endpoint_weight": 4,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 13,
+          "dimension": -1,
+          "largest_generator_terms": 8,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -4,
+      "relation": {
+        "colour_counts": [
+          1,
+          4
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              3
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              3
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 13
+      }
+    },
+    {
+      "digest": "65c15ab7a3b0935b91ca617a2d7c400ce04131d0b253250f70a3f54374ee9b3a",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 8
+      }
+    },
+    {
+      "digest": "660bb9f13d7d638272db931d19d6238ee36f2fe639ee9d3089d480c2e22af46f",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -6,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 11
+      }
+    },
+    {
+      "digest": "66d22d0d12f9c29c5b01e339ee1195a35a7e54d831f2e16c65087b8d50e43cd8",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -6,
+      "relation": {
+        "colour_counts": [
+          3,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              3
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              3
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 17
+      }
+    },
+    {
+      "digest": "6883ff0a7a55a1f00a9e307d5009bb7b5c3d2cf0dcfc45593a0e44d2456f9327",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 11
+      }
+    },
+    {
+      "digest": "69ed88f351f85ab8d28d0cc0356cf2ba47458840819b1ae4c9ef2d096c08c372",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 10,
+          "dimension": -1,
+          "largest_generator_terms": 8,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 11
+      }
+    },
+    {
+      "digest": "6a0ef51225ea91ff658765109e0aa7e1e9e71cc0ec32916078f3b94b1e7aa1ff",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 13
+      }
+    },
+    {
+      "digest": "7598fce0b7a49e74f50304eab2de09db61ebc8d0e30829883c177e6280edc0f0",
+      "endpoint_weight": 6,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 13,
+          "dimension": -1,
+          "largest_generator_terms": 10,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -4,
+      "relation": {
+        "colour_counts": [
+          1,
+          4
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 13
+      }
+    },
+    {
+      "digest": "7828e0e70a3daca7f233241c8e5d303a4744be12d710c18b6465a1b9b8a6c8c4",
+      "endpoint_weight": 4,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 17,
+          "dimension": -1,
+          "largest_generator_terms": 15,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -4,
+      "relation": {
+        "colour_counts": [
+          1,
+          4
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              3
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              3
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 9
+      }
+    },
+    {
+      "digest": "785b6a3979f9e2a087d08f9327a619c59c6be786624a745537dc2c892549707f",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 2,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 8
+      }
+    },
+    {
+      "digest": "79af0bf4ae0893627a2abe5de40c049392ce455a0841127750f8a557d0d7ab1e",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 10,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -5,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 11
+      }
+    },
+    {
+      "digest": "7dc34b5316726bae1989596964505778826b22f8729009b4c293d9cdb9ff26f3",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 12,
+          "dimension": -1,
+          "largest_generator_terms": 8,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 7
+      }
+    },
+    {
+      "digest": "7e11e82be5f95920e208d281049d99ab4aa504ab68c5a7f98365598112557fd6",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": false,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": 1,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              3,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 11
+      }
+    },
+    {
+      "digest": "7fcb647edc6b352ec377946234744f5813116674cf0705c4065fc4b6702ebcc2",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": false,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -5,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 4,
+        "support_size": 6,
+        "total_level": 11
+      }
+    },
+    {
+      "digest": "8388e26d60c574d9a2efeb5b8e8c5466383a5fc758dfc02c14e6f4edee745e00",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 13,
+          "dimension": -1,
+          "largest_generator_terms": 9,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -4,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 8
+      }
+    },
+    {
+      "digest": "883916220f74495cc5e3ef03fb381ea95f7983cf86418cfae3bbe5820af95004",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 4,
+        "support_size": 6,
+        "total_level": 7
+      }
+    },
+    {
+      "digest": "899bad478814b2164d7f37fd391d38dae303be132e6ad6eb477b457b3d3c9425",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 8
+      }
+    },
+    {
+      "digest": "8a260df160ed88f524f7fdc7287bd364995f32df30e6cdf24378c978e261b8d1",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 14
+      }
+    },
+    {
+      "digest": "8cd0dc08bb6bb3c8a564ee19e949d6dd13c735d58d5f906e5b14a39c3e8667bf",
+      "endpoint_weight": 4,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 11,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 16,
+          "dimension": -1,
+          "largest_generator_terms": 8,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -10,
+      "relation": {
+        "colour_counts": [
+          2,
+          4
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              3
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 15
+      }
+    },
+    {
+      "digest": "8faf494c3f99c14aabd272c11f725edffd42ea9793b0f6b57788b10be8e06498",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 10,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -6,
+      "relation": {
+        "colour_counts": [
+          2,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 4,
+        "support_size": 6,
+        "total_level": 11
+      }
+    },
+    {
+      "digest": "930dd91339f1b8b8ee0104b9aed540127fb4eb75b8857e96c7efd35e80926f22",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 10,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -4,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 6
+      }
+    },
+    {
+      "digest": "9416f7ad87a5f732146455a5641c509166eae9d7962231ba416dd674f110b8b5",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -5,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 12
+      }
+    },
+    {
+      "digest": "9470c762e6f1568d59bd7f862149a73acb0b85fff69208e585f874554297a0c5",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": false,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 10,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -5,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 11
+      }
+    },
+    {
+      "digest": "95f34f34597d75d49b8f701f8aebc0d72cc2738bd1ecce4092bbb800b8e31bd9",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -6,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 13
+      }
+    },
+    {
+      "digest": "9602182579c72434b00511f092767d6d4527e5ce605f006ad37d5de7d552d82b",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -4,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 4,
+        "support_size": 6,
+        "total_level": 7
+      }
+    },
+    {
+      "digest": "96d88e81c43546b90e27fc4d2a1d18a99c805e19e8eb4a12c9466a1d211b44ba",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -5,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 8
+      }
+    },
+    {
+      "digest": "99eef7fc86f73aa4689696693ccbb4e8703475c0d8ccc7d6e582866d6d8ed714",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 12
+      }
+    },
+    {
+      "digest": "9cc708612b4897701de451337541dd30a3c8fe163a303b513ff15c730de56b09",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 10,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -6,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 11
+      }
+    },
+    {
+      "digest": "9d9c29ea5e5588e1cd929a59655471af0ab7ceac16ce22d97c8011908181b24d",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": false,
+      "modes": {
+        "operator": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -6,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 12
+      }
+    },
+    {
+      "digest": "9dc3f166944db412ea7de4b643c4b580739f5d7de8130929b9d190012be0ef29",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 11,
+          "dimension": -1,
+          "largest_generator_terms": 6,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -5,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 10
+      }
+    },
+    {
+      "digest": "9f843770e14c0a4e691b4bab30c9deca3f4e50763ce1c66a053dc57b3ddc45a8",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 6,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 10
+      }
+    },
+    {
+      "digest": "9fa2afc222c6f2fd4e826aa5a82430b62715156480f5a742fb0ed03b76ad211e",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 8
+      }
+    },
+    {
+      "digest": "a32444616a999e7c08f952b4fd49279cade7c75d3d8a3db971e1b040470ecf4c",
+      "endpoint_weight": 4,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 11,
+          "dimension": -1,
+          "largest_generator_terms": 7,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -5,
+      "relation": {
+        "colour_counts": [
+          1,
+          4
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              3
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 15
+      }
+    },
+    {
+      "digest": "a9de667a3d28e379b2e4a9f29cdac493d45dc31a1a1f143b7cfb6680a8f0ddc6",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 13,
+          "dimension": -1,
+          "largest_generator_terms": 8,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -6,
+      "relation": {
+        "colour_counts": [
+          2,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 13
+      }
+    },
+    {
+      "digest": "aa514a4ebf454a7a3da262716d5bab5bddf8ce824ce2b3b0bad3d5b72e9bd377",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": false,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              3,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 11
+      }
+    },
+    {
+      "digest": "ac414e6464af0e712d20ee9760af9ebfa123ffd9a00eff51b17ad4b923328af3",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "span": 4,
+        "support_size": 6,
+        "total_level": 6
+      }
+    },
+    {
+      "digest": "ae47d353b0efe4ef84f091376c0a36011aafca08c58a0149102590fe62f77bbc",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 11
+      }
+    },
+    {
+      "digest": "af1fedd0ad4d5416ee9cc8cb8e043a1a9da79f35d6ebfcbea0bc793587e66327",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 11,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 12,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -10,
+      "relation": {
+        "colour_counts": [
+          2,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 14
+      }
+    },
+    {
+      "digest": "b090bc1cfc725a961813e5c75ae8114cb0566d06d9ca9c704ed4e6acd7b63879",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 10,
+          "dimension": -1,
+          "largest_generator_terms": 6,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -6,
+      "relation": {
+        "colour_counts": [
+          2,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 16
+      }
+    },
+    {
+      "digest": "b1d212c28e6106fd2a893d2b65fb3758414f4e73b230ded9599522a00bdde0f6",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 10,
+          "dimension": -1,
+          "largest_generator_terms": 6,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 4,
+        "support_size": 6,
+        "total_level": 7
+      }
+    },
+    {
+      "digest": "b4948db501416fe34b7a308c3b906771bfac79c65aeaf7992649298f7a1d9f53",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": false,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 13
+      }
+    },
+    {
+      "digest": "b62c512e0ca1c4c462e4e496a97b2ce544d7436d1fa86887821e4d80dbd5172e",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 10,
+          "dimension": -1,
+          "largest_generator_terms": 7,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 11
+      }
+    },
+    {
+      "digest": "b695bf42c5a69ac16382e1fa008e3d71f8d5c48c42fc518b0fdbba645749bbcd",
+      "endpoint_weight": 4,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 8,
+        "total_level": 11
+      }
+    },
+    {
+      "digest": "b71e713ae346864540435ea3a0823be11eac39bf4b45c7c84255cb4df580d57c",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 12
+      }
+    },
+    {
+      "digest": "b8be01bb2d695c37adf315d8f80a15843c98513970dfcb275a31307124ba0b91",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -4,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 10
+      }
+    },
+    {
+      "digest": "bc39a588e89a1d2767542f1ea83db0111a2add90fff80de82a817b5b51964288",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": false,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 11
+      }
+    },
+    {
+      "digest": "bd2398316a662bc0b68f50a47fb39a1dd60eb6f7f58762ac9203d05463bef59e",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -4,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 9
+      }
+    },
+    {
+      "digest": "beb7f4be7350e03811c293b4a87c303b133255780badc6f6bd64fc64f9e50531",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 11,
+          "dimension": -1,
+          "largest_generator_terms": 7,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 10
+      }
+    },
+    {
+      "digest": "bfbe0d61b4ed669abd933aa43f0e1fbe9ab3245c325bdf00b3888965c83826e8",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 2,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 4,
+        "support_size": 6,
+        "total_level": 7
+      }
+    },
+    {
+      "digest": "c0cdc63f8abc3ef3c6004d25951f7430de9c83b312e1e2a7f0f6eda41981b4ca",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 8
+      }
+    },
+    {
+      "digest": "c284189da1dda2ae01d2f3ac048110805b63a3b4f1c44adeb450befa997aee1a",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 7
+      }
+    },
+    {
+      "digest": "c38961f65c1da97df9a6e02d0fec3440e655435ab22d5ce5f03cb56154526e4e",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 11,
+          "dimension": -1,
+          "largest_generator_terms": 7,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -5,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 10
+      }
+    },
+    {
+      "digest": "c60dbba53112d5e1536f89735c6c5683260ac347bd54e9b81848051730cbd3ec",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -5,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 9
+      }
+    },
+    {
+      "digest": "c7bc5b34e97286735407e16561d2b70bdfd6beb0461ef5d3fd35d9208c30511f",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -4,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 7
+      }
+    },
+    {
+      "digest": "ca19032654ef3a10b6003a924f07d162a22167e66d23d3aad1fa7595b7e8937c",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -4,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 13
+      }
+    },
+    {
+      "digest": "ca8e316be0fb38c4dcd1f24eab689bf6931a8a56d0cf7e4bbf519a55651edb51",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 13,
+          "dimension": -1,
+          "largest_generator_terms": 10,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 8
+      }
+    },
+    {
+      "digest": "cc9d8d41818065aa9f75420c64b54ce287f59b20be15307355e6603b19323865",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 2,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 6,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 12
+      }
+    },
+    {
+      "digest": "cdc44d77e0b128a911426cd1bfe09f18c697599bbd7439aa5c6e8296b2b74a11",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": false,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 13
+      }
+    },
+    {
+      "digest": "cec1eb89faf28f5a9b60e2ab8905c734e343334bad48f5d58bc6b66696f701f9",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 6,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 7
+      }
+    },
+    {
+      "digest": "d1924d9ff66222a9eee58c6ea9a884204f6ca7b836a368fd37a6f7f93b157094",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 11,
+          "dimension": -1,
+          "largest_generator_terms": 7,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 9
+      }
+    },
+    {
+      "digest": "da600d158ef0c3b1311549b63b34d81f53d820eebc9fc4246f7967af74579aa6",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 4,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 11,
+          "dimension": -1,
+          "largest_generator_terms": 6,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 10
+      }
+    },
+    {
+      "digest": "db4bd684212d9c6e0e03bbea6e704cd833e8c72a501ba60f4476982316802736",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 2,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 9
+      }
+    },
+    {
+      "digest": "dbbd6213d1c5f7367d03712c906540e877791e75f0bd27b9e5b39c7daf5824bb",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 10,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -6,
+      "relation": {
+        "colour_counts": [
+          3,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              3
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              3
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 14
+      }
+    },
+    {
+      "digest": "dbdfc14626b61d347bbc50282f6a5476e9c94feaf71b325f16e94f0abb02aadb",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 10,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 13,
+          "dimension": -1,
+          "largest_generator_terms": 6,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -9,
+      "relation": {
+        "colour_counts": [
+          3,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              3
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              3
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 18
+      }
+    },
+    {
+      "digest": "dcff87f8003a2c92977abf09399e75a0d0c11aad80521b499a7098bff856cd5f",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 6,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 11
+      }
+    },
+    {
+      "digest": "de9d1e791ef10eade5b1dcd07f94565d44d7ced33167857d8941b2097fb4680f",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": false,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 11
+      }
+    },
+    {
+      "digest": "e020dd6cf9725484d81eb04b6f28a04958a7eddae87811e7c051246e31e9db2a",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 13
+      }
+    },
+    {
+      "digest": "e2dd213e10db9ed26cbd7e7616d1b1f4ea418c0391ffbae9b6c8bb9d3a98464e",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 11
+      }
+    },
+    {
+      "digest": "e2f123ddfc3a101966b4ceaaaee6804f1ed9989def5e8fdf5934a94d4ca1a1b3",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 12,
+          "dimension": -1,
+          "largest_generator_terms": 8,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -4,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 9
+      }
+    },
+    {
+      "digest": "e43bbc1c6810baf769fb1031776efcef4f83f1b6cb3fe40410ec8f59c4b2bf71",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 10,
+          "dimension": -1,
+          "largest_generator_terms": 7,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -3,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 10
+      }
+    },
+    {
+      "digest": "e50a43726712337dbf3015a063972229ffb9b70e089f9813705b8d2a54c7de4d",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 10
+      }
+    },
+    {
+      "digest": "e5b43902d6df276dfc6c777de38218bb448dfb1dd6e0ed2aad2ddbbc7a469b18",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -4,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              2,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 8
+      }
+    },
+    {
+      "digest": "e6a194d36d8b23f89b2d1419c647e3902d98b02a99905ee909ca927b27f83e1d",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": false,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 8,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -5,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 13
+      }
+    },
+    {
+      "digest": "eb94852fda83feedacb5a566a6436f70daecc6e6c07d929685fb8e4edabb5977",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 6,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 11,
+          "dimension": -1,
+          "largest_generator_terms": 6,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -5,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 10
+      }
+    },
+    {
+      "digest": "ed7f7786a82b4c8beeec0e6739ab2646964c7b2a215610c1fadf6406a39f13b6",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 2,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 9
+      }
+    },
+    {
+      "digest": "ef1b75fb6631a5dcbc6c75e33137b1e7f429e80f3ba2bf6253117ff34c98e2df",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 4,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -4,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 12
+      }
+    },
+    {
+      "digest": "f3466c05ddfc18491877e15221538ce909b8d4e0473149095f1fe6b71d237f60",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": false,
+      "modes": {
+        "operator": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 7,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -6,
+      "relation": {
+        "colour_counts": [
+          2,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              2
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 14
+      }
+    },
+    {
+      "digest": "f9a256452be6947bf31f1079bdfcd8f28d9cc7f4d9ba42d66ca2bd9b8502bb45",
+      "endpoint_weight": 3,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 12,
+          "dimension": -1,
+          "largest_generator_terms": 8,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -1,
+      "relation": {
+        "colour_counts": [
+          1,
+          3
+        ],
+        "left": {
+          "operator": [
+            [
+              4,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 8
+      }
+    },
+    {
+      "digest": "fe46331c16791c864f9d366e6927e7dfab1ed62444497a5d40d22830ac1e8115",
+      "endpoint_weight": 4,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 9,
+          "dimension": -1,
+          "largest_generator_terms": 5,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -4,
+      "relation": {
+        "colour_counts": [
+          1,
+          4
+        ],
+        "left": {
+          "operator": [
+            [
+              5,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              3
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              5,
+              3
+            ]
+          ]
+        },
+        "span": 5,
+        "support_size": 6,
+        "total_level": 17
+      }
+    },
+    {
+      "digest": "ffddf7cb8bb8779a88d0bb778f15b2fb8682123b68b3a34ec8faba85b49b5d93",
+      "endpoint_weight": 2,
+      "exact_marked_partition_collision": true,
+      "modes": {
+        "operator": {
+          "derivative_generators": 3,
+          "dimension": -1,
+          "largest_generator_terms": 2,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        },
+        "polynomial": {
+          "derivative_generators": 5,
+          "dimension": -1,
+          "largest_generator_terms": 3,
+          "standard_basis_size": 1,
+          "torus_empty": true
+        }
+      },
+      "polynomial_level_transfer": -2,
+      "relation": {
+        "colour_counts": [
+          1,
+          2
+        ],
+        "left": {
+          "operator": [
+            [
+              3,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        "right": {
+          "operator": [
+            [
+              1,
+              1
+            ]
+          ],
+          "polynomial": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        "span": 3,
+        "support_size": 6,
+        "total_level": 5
+      }
+    }
+  ],
+  "summary": {
+    "absolute_colour_level_transfer_distribution": {
+      "1": 57,
+      "10": 14,
+      "11": 6,
+      "12": 8,
+      "15": 3,
+      "16": 2,
+      "2": 56,
+      "3": 53,
+      "4": 51,
+      "5": 55,
+      "6": 39,
+      "7": 23,
+      "8": 25,
+      "9": 12
+    },
+    "exact_marked_partition_survivors": 107,
+    "exact_scalar_factorial_survivors": 125,
+    "factorial_partition_obstructions": 279,
+    "normalized_unresolved_candidates": 404,
+    "raw_graver_basis": 2225,
+    "translation_modes": {
+      "operator": {
+        "survivor_digests": [],
+        "torus_empty": 125
+      },
+      "polynomial": {
+        "survivor_digests": [],
+        "torus_empty": 125
+      }
+    }
+  }
+}

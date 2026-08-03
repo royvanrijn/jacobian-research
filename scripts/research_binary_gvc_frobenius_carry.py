@@ -690,7 +690,8 @@ def verify_two_digit_window(
         print(f"first relative-score {score} example: {example}")
     print(
         "STATUS: exact bounded regression for the general p*d+r formulas; "
-        "factorial-compatible shell inheritance remains open"
+        "factorial-compatible shell inheritance remains unproved in the "
+        "parked route and is bypassed by Hall-envelope separation"
     )
 
 

@@ -36,10 +36,11 @@ levels.  Full Graver bases are computed for collision profiles with at most
 ``--max-graver-atoms`` atoms.  Larger collision lattices are retained with an
 exact integer kernel basis and are explicitly marked as not Graver-complete.
 
-This is an exact bounded theorem about the projected packet model, not a
+This is an exact bounded theorem about the projected packet model, not the
 proof of unrestricted GVC(2).  A surviving factorization relation is a
-candidate for the missing Hall-shell inheritance theorem, not a binary GVC
-counterexample.
+candidate for the parked Hall-shell inheritance problem, not a binary GVC
+counterexample.  The unrestricted proof is the separate Hall-envelope
+theorem.
 """
 
 from __future__ import annotations
@@ -1199,7 +1200,8 @@ def main() -> None:
     print(f"logical result sha256: {result['result_sha256']}")
     print(
         "STATUS: exact bounded projected-semigroup computation; "
-        "the affine Hall-shell promotion theorem remains open"
+        "affine Hall-shell promotion remains unproved in the parked route, "
+        "while Hall-envelope separation proves unrestricted GVC(2)"
     )
 
 

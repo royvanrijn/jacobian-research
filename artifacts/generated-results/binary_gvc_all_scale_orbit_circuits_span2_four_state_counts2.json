@@ -1,0 +1,4785 @@
+{
+  "model": "Bounded projected two-colour small-shell census.  A proper ideal is only a projected orbit survivor, not an affine Hall packet or GVC(2) counterexample.",
+  "parameters": {
+    "maximum_operator_count": 2,
+    "maximum_polynomial_count": 2,
+    "maximum_scale": 4,
+    "phase_laws": [
+      "fixed",
+      "character_power"
+    ],
+    "require_factorial_pairing": false,
+    "saturation": "all R_i and B_i coefficient channels",
+    "singular": "Singular for x86_64-Linux version 4.3.2 (4330, 64 bit) Apr  1 2024 04:44:00",
+    "span": 2,
+    "state_count": 4,
+    "translation_mode": "polynomial colour only"
+  },
+  "scale_1_survivors": [
+    {
+      "c2_character_feasible": true,
+      "c4_real_character_feasible": true,
+      "digest": "e1cb4d1ba0c2cdb755b4690679c32993b369a3d28572c20e36b3b6d258abf7b2",
+      "distinct_polynomial_levels": [
+        2
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 5,
+            "standard_basis_size": 3,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 5,
+            "standard_basis_size": 3,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        }
+      ],
+      "transfers_level": false
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": false,
+      "digest": "8c51faee4bdca9015ca453949d8b4f36dda241e7b46fe840a8ae9cda3221f59d",
+      "distinct_polynomial_levels": [
+        2
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 6,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 6,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        }
+      ],
+      "transfers_level": false
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": false,
+      "digest": "e7856fe3ab6c18fb03d9faa0cb1c44f118ee173bc4aa05649cbbaa3c6612f41f",
+      "distinct_polynomial_levels": [
+        2
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 6,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 6,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        -1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        }
+      ],
+      "transfers_level": false
+    },
+    {
+      "c2_character_feasible": true,
+      "c4_real_character_feasible": true,
+      "digest": "6e750668335ba389fe496f3ff28d0975e845d022b96165f7fed5266f64da32af",
+      "distinct_polynomial_levels": [
+        2
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 5,
+            "standard_basis_size": 3,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 5,
+            "standard_basis_size": 3,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        }
+      ],
+      "transfers_level": false
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": false,
+      "digest": "c92e60ffe3355cfceb141031fe18454e624f6a6db05c38fc3c1a30af7c884e57",
+      "distinct_polynomial_levels": [
+        2
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 6,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 6,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        }
+      ],
+      "transfers_level": false
+    },
+    {
+      "c2_character_feasible": true,
+      "c4_real_character_feasible": true,
+      "digest": "8cde4bd6e5dd9ba0e7c5c6895c58616914372c40e96f13b5e4b637486076012a",
+      "distinct_polynomial_levels": [
+        2
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 5,
+            "standard_basis_size": 3,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 5,
+            "standard_basis_size": 3,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        }
+      ],
+      "transfers_level": false
+    },
+    {
+      "c2_character_feasible": true,
+      "c4_real_character_feasible": true,
+      "digest": "34173ef5dc689f32cfe41f724bc0d6cc604d3a57f487e8a24eeccd2d8b2d0c8b",
+      "distinct_polynomial_levels": [
+        2
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 5,
+            "standard_basis_size": 3,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 5,
+            "standard_basis_size": 3,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        }
+      ],
+      "transfers_level": false
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": false,
+      "digest": "4d740845ee0b09b0e99dd62302bd276023bb0d154ea41a386608fff52a3cea3e",
+      "distinct_polynomial_levels": [
+        2
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 6,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 6,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        }
+      ],
+      "transfers_level": false
+    },
+    {
+      "c2_character_feasible": true,
+      "c4_real_character_feasible": true,
+      "digest": "b5b1eb495cc00e38cb6ebee9fa0d052f636682b3d5cec9f8f7313c3c54c0b89e",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": true,
+      "digest": "c1c4a0c3508af3a6311d13edd44057a7b81d1c19c95ec11f7f5989a0d4e63cda",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": true,
+      "c4_real_character_feasible": true,
+      "digest": "c17bee3694dbdccddffd32c9214aed9f069f51c85ab0d26a3dbf3d9c7524baac",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        -1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": true,
+      "digest": "f99b7a9d475c7e85b1b8f8261dac1e80b6554578112e2f64cdab54ddf3e641b4",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": true,
+      "c4_real_character_feasible": true,
+      "digest": "31e09c6f63666e75db635004c2f66740f207e4b26e2f75aa30a40ffb875904b6",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": true,
+      "digest": "3ea51c3ab8ab68fba243092ca9fc42bba92a92c2fb596011bfb1c9051756b56e",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": true,
+      "c4_real_character_feasible": true,
+      "digest": "0151f941e9193e6c63a62627505704c88c18744447c61748a490d7e295391b69",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": true,
+      "digest": "c44ea8363ed77806fe1db7da8346873b1e78d5195cc530270fba803e80103503",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": true,
+      "c4_real_character_feasible": true,
+      "digest": "6a911a29c899a1d80e1a1ed59a8a66a646363873742dfb169f5e519b0ac2e76b",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": true,
+      "digest": "cd7bffc0e5bd26317e030115274ca8b09f3d674767a690e8d21a5a059bf196cd",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": true,
+      "c4_real_character_feasible": true,
+      "digest": "998eac1d887658367b4b0085496011b8abcafa20e46515d7a854e076695156fd",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        -1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": true,
+      "digest": "453478beb5b137820ca15b90c1a6a6e228a5d802c3fabe4bbf3f235edc0a4992",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": true,
+      "c4_real_character_feasible": true,
+      "digest": "d7d47c6fce9ed17929a21ec33b6a888978705be381b26ecc7baef61d3a28c6ab",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": true,
+      "digest": "da2ea3d1cec0f13284a1ad2d15e3f9c8a483cafac27e4137480e081099b2532d",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": true,
+      "c4_real_character_feasible": true,
+      "digest": "eaa54b02cbe725954a014d0164ffa4efc3bfe811a5008a7304d34e1a68b29679",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": true,
+      "digest": "d76e9842c4ad23ed78d6e68bd1984dc303b6a248e2746bdd1f75bbd78b8c3722",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": true,
+      "c4_real_character_feasible": true,
+      "digest": "608fe77dfbec1257d6da1382dbd0e631cb964de60a042739c0f1f02e268c1d88",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": true,
+      "digest": "10ba553ef24274d11149a41f4300e8a043fe96a6c834864212e383bd35c8ffc7",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": true,
+      "c4_real_character_feasible": true,
+      "digest": "7478e6d4794d15deb324a26271f794c31203d5e94a06201f94eb209dea71af10",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        -1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": true,
+      "digest": "637d4a5f8417738b3dfb0747f895ccfeee552475d0b8488cf5413bde0365aa84",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": true,
+      "c4_real_character_feasible": true,
+      "digest": "791e1f0309560d199eb8c97887a4f3e5f01c111e0dd52960d8a542352cfe09e0",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": true,
+      "digest": "e5e77a85712e41fd25f1f34afe68c1fd55808741ca4483c76f31e64d56d264b0",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": true,
+      "c4_real_character_feasible": true,
+      "digest": "ad982cb9cf4ca7d9252050d115be1c3c9efb6d016b21db1796e791a2de64a4c7",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": true,
+      "digest": "f7f804f3bc30b4fe2206656ae535851fda2747cfb4accedf6e6cb0c526299046",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": true,
+      "c4_real_character_feasible": true,
+      "digest": "d9d84098dca1c06d11a66e34eb2dcd7e9691a202b24f2de4a4fe69b65e80b2ee",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": true,
+      "digest": "b5d51649a1066a3ef24d8ea23b4228e6dee381b5eaf75703dc97a356c8d171a8",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": true,
+      "digest": "e2f7addd9cee369d06f485d9224738a4b84562b4bfc362762495e0814ff888d7",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        -1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": true,
+      "digest": "d3e75ca976cdb89d447cfa9a982f3600024ab081bb7a6309b451d1b8a7e0d483",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": true,
+      "digest": "acd84dad92f1c0fd7b30b383b0fc195932fba8719f927b3c253787242bf3ecfe",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": true,
+      "digest": "2b0716280f79750495c6196c4e22d5ccf596270c677397bf9c454574321f2246",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": true,
+      "c4_real_character_feasible": true,
+      "digest": "b16df16ff39981118505e09234b8dd1e0d9c571b867100d63ea4bb5777889437",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    },
+    {
+      "c2_character_feasible": false,
+      "c4_real_character_feasible": true,
+      "digest": "3e47b0b5bada433de1c8312963b5d0e5b80c8752964ca1791ec737d4dc3c0c4f",
+      "distinct_polynomial_levels": [
+        2,
+        4
+      ],
+      "fibre": {
+        "operator_count": 2,
+        "polynomial_count": 2,
+        "total_level": 4
+      },
+      "first_torus_empty_scale": {
+        "character_power": 2,
+        "fixed": 2
+      },
+      "fixed_all_scale_factorial_pairings": [],
+      "scale_ideals": {
+        "character_power": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        },
+        "fixed": {
+          "1": {
+            "dimension": 4,
+            "standard_basis_size": 10,
+            "torus_empty": false
+          },
+          "2": {
+            "dimension": -1,
+            "standard_basis_size": 1,
+            "torus_empty": true
+          }
+        }
+      },
+      "signs": [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "states": [
+        {
+          "operator": [
+            0,
+            2,
+            0
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            0,
+            2,
+            0
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 2,
+          "scale_2_weight": 6
+        },
+        {
+          "operator": [
+            1,
+            0,
+            1
+          ],
+          "operator_level": 2,
+          "polynomial": [
+            1,
+            0,
+            1
+          ],
+          "polynomial_level": 2,
+          "scale_1_weight": 4,
+          "scale_2_weight": 36
+        },
+        {
+          "operator": [
+            2,
+            0,
+            0
+          ],
+          "operator_level": 0,
+          "polynomial": [
+            0,
+            0,
+            2
+          ],
+          "polynomial_level": 4,
+          "scale_1_weight": 1,
+          "scale_2_weight": 1
+        }
+      ],
+      "transfers_level": true
+    }
+  ],
+  "summary": {
+    "all_scale_prefixes": {
+      "character_power": {
+        "first_torus_empty_scale_distribution": {
+          "2": 40
+        },
+        "survivors_through_maximum_scale": 0
+      },
+      "fixed": {
+        "first_torus_empty_scale_distribution": {
+          "2": 40
+        },
+        "survivors_through_maximum_scale": 0
+      }
+    },
+    "c2_character_feasible_candidates": 612,
+    "c4_real_character_feasible_candidates": 792,
+    "candidate_symmetry_orbits": 308,
+    "fibres_with_enough_states": 11,
+    "fixed_exact_all_scale_pair_survivors": {
+      "independent": {
+        "count": 0,
+        "digests": []
+      },
+      "operator": {
+        "count": 0,
+        "digests": []
+      },
+      "polynomial": {
+        "count": 0,
+        "digests": []
+      }
+    },
+    "fixed_independent_survivors_on_quadratic_veronese_product": 0,
+    "scale_1_survivor_symmetry_orbits": 26,
+    "scale_1_torus_survivors": 40,
+    "scale_1_transferring_survivors": 32,
+    "scale_1_zero_transfer_survivors": 8,
+    "signed_candidates_modulo_common_sign": 928,
+    "state_count": 4,
+    "state_subsets": 116,
+    "survivor_digests_through_maximum_scale": {
+      "character_power": [],
+      "fixed": []
+    }
+  },
+  "theorem_certificate": {
+    "characteristic": 0,
+    "fixed_template_all_scale_pairing": "Factorial trace independence splits unequal scalar factorial rays.  In each same-ray class, partial fractions of sum_j epsilon_j*M_j*z/(1-M_j*z) pair every positive orbit monomial with an equal negative one.",
+    "four_state_specialization": "For four states the scale-two row is a conic in P^2.  Scale three adds a cubic; a nonconstant orbit requires a common curve component.",
+    "number_of_states": 4,
+    "projective_moment_reduction": "After the scale-one row eliminates one orbit function, the scale-N rows cut P^2.  A transferring orbit can survive only on a positive-dimensional common component; a zero-dimensional ratio variety makes every orbit-function ratio constant and forces equal Taylor degrees."
+  }
+}

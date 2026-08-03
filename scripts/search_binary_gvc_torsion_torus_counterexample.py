@@ -150,7 +150,7 @@ def search_pair(width: int, height: int, depth: int) -> None:
                 )
         vectors.setdefault(rows, coefficients)
 
-    print(f"NO unrestricted survivor through depth {depth}")
+    print(f"NO survivor in this torsion--torus search through depth {depth}")
     print(f"primitive origin-containing polynomials={count}")
     print(f"best_zero_prefix={best_depth}")
     if best_data is not None:

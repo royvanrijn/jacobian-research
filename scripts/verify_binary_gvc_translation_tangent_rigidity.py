@@ -5,8 +5,10 @@ The proof is in
 ``extended-geometry/BINARY_GVC_TRANSLATION_TANGENT_RIGIDITY.md``.
 This dependency-free checker verifies bounded instances of its row kernel,
 the nonprimitive rank jump, the cyclotomic linearized ranks away from the
-chosen integer minor, and the abstract factorially weighted module
-obstruction.  The bounded checks are not the proof of the unbounded theorem.
+chosen integer minor used at every prime-power digit, the universal blind
+rectangular tangent module and a nonflat member, the exact quadratic Hessian
+kernel on bounded rectangles, and the abstract factorially weighted module
+obstruction.  The bounded checks are not the proofs of the unbounded results.
 """
 
 from __future__ import annotations
@@ -198,6 +200,204 @@ def verify_tangent_kernel(max_degree: int, prime_bound: int) -> tuple[int, int]:
     return primitive_cases, nonprimitive_cases
 
 
+def verify_blind_rectangle_module(
+    max_degree: int,
+    depth: int,
+) -> tuple[int, int]:
+    cases = 0
+    blind_generators = 0
+    for x_degree in range(2, max_degree + 1):
+        for y_degree in range(2, max_degree + 1):
+            for x_slope in range(1, x_degree):
+                for y_slope in range(1, y_degree):
+                    cases += 1
+                    blind_generators += x_degree + y_degree + 2
+                    generators = []
+                    for y_basis in range(y_degree + 1):
+                        generators.append([
+                            (x_channel - x_slope)
+                            if y_channel == y_basis
+                            else 0
+                            for x_channel in range(x_degree + 1)
+                            for y_channel in range(y_degree + 1)
+                        ])
+                    for x_basis in range(x_degree + 1):
+                        generators.append([
+                            (y_channel - y_slope)
+                            if x_channel == x_basis
+                            else 0
+                            for x_channel in range(x_degree + 1)
+                            for y_channel in range(y_degree + 1)
+                        ])
+                    assert rational_rank(generators) == (
+                        x_degree + y_degree + 1
+                    )
+                    for moment in range(1, depth + 1):
+                        x_row = [
+                            comb(x_degree, x_channel)
+                            * choose(
+                                x_degree * (moment - 1),
+                                x_slope * moment - x_channel,
+                            )
+                            for x_channel in range(x_degree + 1)
+                        ]
+                        y_row = [
+                            comb(y_degree, y_channel)
+                            * choose(
+                                y_degree * (moment - 1),
+                                y_slope * moment - y_channel,
+                            )
+                            for y_channel in range(y_degree + 1)
+                        ]
+                        assert sum(
+                            (x_channel - x_slope) * x_row[x_channel]
+                            for x_channel in range(x_degree + 1)
+                        ) == 0
+                        assert sum(
+                            (y_channel - y_slope) * y_row[y_channel]
+                            for y_channel in range(y_degree + 1)
+                        ) == 0
+
+                        # These coordinate generators span
+                        # (j-r)*v_k + u_j*(k-s).
+                        for y_basis in range(y_degree + 1):
+                            assert sum(
+                                (x_channel - x_slope)
+                                * x_row[x_channel]
+                                * y_row[y_basis]
+                                for x_channel in range(x_degree + 1)
+                            ) == 0
+                        for x_basis in range(x_degree + 1):
+                            assert sum(
+                                x_row[x_basis]
+                                * (y_channel - y_slope)
+                                * y_row[y_channel]
+                                for y_channel in range(y_degree + 1)
+                            ) == 0
+
+                    # The mixed second difference of
+                    # (j-r)*(k-s) is one, while every flat affine tangent
+                    # has mixed second difference zero.
+                    assert (
+                        (1 - x_slope) * (1 - y_slope)
+                        - (1 - x_slope) * (0 - y_slope)
+                        - (0 - x_slope) * (1 - y_slope)
+                        + (0 - x_slope) * (0 - y_slope)
+                    ) == 1
+    return cases, blind_generators
+
+
+def rectangle_hessian(
+    x_degree: int,
+    y_degree: int,
+    x_slope: int,
+    y_slope: int,
+    moment: int,
+) -> list[list[int]]:
+    channels = [
+        (x_channel, y_channel)
+        for x_channel in range(x_degree + 1)
+        for y_channel in range(y_degree + 1)
+    ]
+    coefficients = [
+        comb(x_degree, x_channel) * comb(y_degree, y_channel)
+        for x_channel, y_channel in channels
+    ]
+    size = len(channels)
+    matrix = [[0] * size for _ in range(size)]
+    for left, (x_channel, y_channel) in enumerate(channels):
+        matrix[left][left] += (
+            moment
+            * coefficients[left]
+            * choose(
+                x_degree * (moment - 1),
+                x_slope * moment - x_channel,
+            )
+            * choose(
+                y_degree * (moment - 1),
+                y_slope * moment - y_channel,
+            )
+        )
+    if moment < 2:
+        return matrix
+    for left, (x_left, y_left) in enumerate(channels):
+        for right, (x_right, y_right) in enumerate(channels):
+            matrix[left][right] += (
+                moment
+                * (moment - 1)
+                * coefficients[left]
+                * coefficients[right]
+                * choose(
+                    x_degree * (moment - 2),
+                    x_slope * moment - x_left - x_right,
+                )
+                * choose(
+                    y_degree * (moment - 2),
+                    y_slope * moment - y_left - y_right,
+                )
+            )
+    return matrix
+
+
+def verify_quadratic_rectangle_rigidity(
+    max_degree: int,
+    depth: int,
+) -> int:
+    cases = 0
+    for x_degree in range(2, max_degree + 1):
+        for y_degree in range(2, max_degree + 1):
+            size = (x_degree + 1) * (y_degree + 1)
+            for x_slope in range(1, x_degree):
+                for y_slope in range(1, y_degree):
+                    cases += 1
+                    gram = [[0] * size for _ in range(size)]
+                    x_flat = []
+                    y_flat = []
+                    for x_channel in range(x_degree + 1):
+                        for y_channel in range(y_degree + 1):
+                            x_flat.append(x_channel - x_slope)
+                            y_flat.append(y_channel - y_slope)
+                    for moment in range(1, depth + 1):
+                        hessian = rectangle_hessian(
+                            x_degree,
+                            y_degree,
+                            x_slope,
+                            y_slope,
+                            moment,
+                        )
+                        assert all(
+                            sum(
+                                row[column] * x_flat[column]
+                                for column in range(size)
+                            ) == 0
+                            for row in hessian
+                        )
+                        assert all(
+                            sum(
+                                row[column] * y_flat[column]
+                                for column in range(size)
+                            ) == 0
+                            for row in hessian
+                        )
+                        gram = [
+                            [
+                                old + new
+                                for old, new in zip(
+                                    old_row,
+                                    new_row,
+                                    strict=True,
+                                )
+                            ]
+                            for old_row, new_row in zip(
+                                gram,
+                                hessian,
+                                strict=True,
+                            )
+                        ]
+                    assert rational_rank(gram) == size - 2
+    return cases
+
+
 def constant_term_dilated(moment: int, dilation: int) -> int:
     if moment % 2:
         return 0
@@ -241,6 +441,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max-degree", type=int, default=12)
     parser.add_argument("--prime-bound", type=int, default=97)
     parser.add_argument("--module-depth", type=int, default=12)
+    parser.add_argument("--rectangle-degree", type=int, default=6)
+    parser.add_argument("--rectangle-depth", type=int, default=8)
+    parser.add_argument("--quadratic-degree", type=int, default=5)
+    parser.add_argument("--quadratic-depth", type=int, default=8)
     return parser.parse_args()
 
 
@@ -248,9 +452,23 @@ def main() -> None:
     arguments = parse_args()
     if arguments.max_degree < 2:
         raise SystemExit("max-degree must be at least two")
+    if arguments.rectangle_degree < 2 or arguments.quadratic_degree < 2:
+        raise SystemExit("rectangle degrees must be at least two")
+    if arguments.quadratic_depth < arguments.quadratic_degree:
+        raise SystemExit(
+            "quadratic-depth must be at least quadratic-degree"
+        )
     primitive, nonprimitive = verify_tangent_kernel(
         arguments.max_degree,
         arguments.prime_bound,
+    )
+    rectangle_cases, blind_generators = verify_blind_rectangle_module(
+        arguments.rectangle_degree,
+        arguments.rectangle_depth,
+    )
+    quadratic_cases = verify_quadratic_rectangle_rigidity(
+        arguments.quadratic_degree,
+        arguments.quadratic_depth,
     )
     verify_module_obstruction(arguments.module_depth)
     print(
@@ -266,12 +484,27 @@ def main() -> None:
         f"minors through prime {arguments.prime_bound}"
     )
     print(
+        "PASS universal blind rectangular tangent module: "
+        f"{blind_generators} spanning generators on {rectangle_cases} "
+        "slope cases through bidegree "
+        f"({arguments.rectangle_degree},{arguments.rectangle_degree}), "
+        "including a nonflat bilinear member"
+    )
+    print(
+        "PASS quadratic rectangular rigidity: common Hessian kernel is "
+        f"the two flat torus directions in {quadratic_cases} slope cases "
+        f"through bidegree "
+        f"({arguments.quadratic_degree},{arguments.quadratic_degree})"
+    )
+    print(
         "PASS factorially weighted free-module inheritance obstruction "
         f"through order {arguments.module_depth}"
     )
     print(
-        "STATUS: exact regressions for the proved tangent/large-prime "
-        "theorems; affine-carry promotion remains open"
+        "STATUS: exact regressions for the proved tangent, quadratic, and "
+        "large-prime-power theorems; common-quotient inheritance remains "
+        "unproved in the parked route and is bypassed by Hall-envelope "
+        "separation"
     )
 
 

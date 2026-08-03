@@ -245,6 +245,14 @@ This family is larger than taking powers of the primitive example: an
 arbitrary factor \(S(t^2X^2)\) satisfying (4.2) may be inserted without
 destroying the adjacent jet.
 
+For the phase-square substitution \(x\rightsquigarrow x^2\), endpoint
+contact \(2r\), and the internal identity
+\(\rho^3-t^2(\rho+x^2)^2=xC\), the
+[cusp-profile suspension theorem](CUSP_PROFILE_SUSPENSION_THEOREM.md)
+homogenizes this entire parametric class in the same three variables.  Its
+converse proves that every normalized homogeneous phase-square lift of this
+one-profile class is obtained that way.
+
 ## 5. Degree-minimal uniqueness and Long's polynomial
 
 Now take primitive winding \(r=1\).  The theorem forces \(q=1\), while

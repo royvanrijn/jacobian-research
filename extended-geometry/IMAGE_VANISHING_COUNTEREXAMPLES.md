@@ -32,8 +32,11 @@ Three different assertions must not be conflated.
    produced by this collision-derived route.  The independent Dvorsky--Long
    formulas subsequently lowered the certified SIC pair dimension to five
    and gave unrestricted GVC failure in five variables.  The later
-   three-pair bihomogenization and full-rank bidegree-\((4,4)\) two-pair
-   witness lower the SIC ledger to the sharp value two; see
+   homogeneous ternary witness lowers unrestricted GVC to dimension three,
+   while Hall-envelope separation proves the binary case and makes that
+   dimension exact.  The three-pair bihomogenization and full-rank
+   bidegree-\((4,4)\) two-pair witness lower the SIC ledger to the sharp value
+   two; see
    [the two-pair proof](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md).
    None of these lowers this route's 40-variable ordinary-Laplacian
    witness.  The present construction improves the repository's earlier
@@ -539,9 +542,11 @@ no minimality is claimed for 20, 40, or 42.
 
 The separate three-pair SIC witness is proved in
 [`THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md`](THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md).
-The five-variable unrestricted GVC witness and its external provenance are
-recorded in
-[`DVORSKY_GVC5_COUNTEREXAMPLE.md`](DVORSKY_GVC5_COUNTEREXAMPLE.md).
+The historically earlier five-variable unrestricted GVC witness and its
+external provenance are recorded in
+[`DVORSKY_GVC5_COUNTEREXAMPLE.md`](DVORSKY_GVC5_COUNTEREXAMPLE.md).  The
+current exact dimension-three classification is recorded in
+[`GVC3_HOMOGENEOUS_SPILLOVERS.md`](GVC3_HOMOGENEOUS_SPILLOVERS.md).
 
 Primary credit for the Image and Vanishing frameworks and equivalences
 remains with Zhao and the cited reduction literature.  The

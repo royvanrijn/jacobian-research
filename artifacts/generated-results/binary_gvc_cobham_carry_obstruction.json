@@ -1,0 +1,444 @@
+{
+  "cross_prime_first_disagreements": [
+    {
+      "first_disagreement": 2,
+      "first_output": 1,
+      "first_prime": 3,
+      "second_output": 0,
+      "second_prime": 5
+    },
+    {
+      "first_disagreement": 2,
+      "first_output": 1,
+      "first_prime": 3,
+      "second_output": 0,
+      "second_prime": 7
+    },
+    {
+      "first_disagreement": 2,
+      "first_output": 1,
+      "first_prime": 3,
+      "second_output": 0,
+      "second_prime": 11
+    },
+    {
+      "first_disagreement": 2,
+      "first_output": 1,
+      "first_prime": 3,
+      "second_output": 0,
+      "second_prime": 13
+    },
+    {
+      "first_disagreement": 3,
+      "first_output": 1,
+      "first_prime": 5,
+      "second_output": 0,
+      "second_prime": 7
+    },
+    {
+      "first_disagreement": 3,
+      "first_output": 1,
+      "first_prime": 5,
+      "second_output": 0,
+      "second_prime": 11
+    },
+    {
+      "first_disagreement": 3,
+      "first_output": 1,
+      "first_prime": 5,
+      "second_output": 0,
+      "second_prime": 13
+    },
+    {
+      "first_disagreement": 4,
+      "first_output": 1,
+      "first_prime": 7,
+      "second_output": 0,
+      "second_prime": 11
+    },
+    {
+      "first_disagreement": 4,
+      "first_output": 1,
+      "first_prime": 7,
+      "second_output": 0,
+      "second_prime": 13
+    },
+    {
+      "first_disagreement": 6,
+      "first_output": 1,
+      "first_prime": 11,
+      "second_output": 0,
+      "second_prime": 13
+    }
+  ],
+  "parameters": {
+    "maximum_index": 10000,
+    "maximum_period": 512,
+    "maximum_ray_coefficient": 32,
+    "maximum_ray_exponent": 8,
+    "minimum_periodic_index": 10000,
+    "primes": [
+      3,
+      5,
+      7,
+      11,
+      13
+    ]
+  },
+  "prime_certificates": {
+    "11": {
+      "dfa": {
+        "accepting_output": 1,
+        "states": 2,
+        "transition": "seen_high_digit OR digit>(p-1)/2"
+      },
+      "index_census": {
+        "kummer_legendre_checks": 10001,
+        "maximum_carry_count": 4,
+        "maximum_index": 10000,
+        "output_histogram": {
+          "0": 1296,
+          "1": 8705
+        }
+      },
+      "nonperiodicity": {
+        "largest_second_index": 19711,
+        "minimum_index": 10000,
+        "periods_checked": 512,
+        "sample_witnesses": [
+          {
+            "first_index": 14641,
+            "first_output": 0,
+            "multiplier": 10,
+            "period": 1,
+            "power_exponent": 4,
+            "second_index": 14651,
+            "second_output": 1,
+            "valuation_of_period": 0
+          },
+          {
+            "first_index": 14641,
+            "first_output": 0,
+            "multiplier": 5,
+            "period": 2,
+            "power_exponent": 4,
+            "second_index": 14651,
+            "second_output": 1,
+            "valuation_of_period": 0
+          },
+          {
+            "first_index": 14641,
+            "first_output": 0,
+            "multiplier": 10,
+            "period": 11,
+            "power_exponent": 4,
+            "second_index": 14751,
+            "second_output": 1,
+            "valuation_of_period": 1
+          },
+          {
+            "first_index": 14641,
+            "first_output": 0,
+            "multiplier": 9,
+            "period": 512,
+            "power_exponent": 4,
+            "second_index": 19249,
+            "second_output": 1,
+            "valuation_of_period": 0
+          }
+        ],
+        "witness_digest": "b1967737606293dd05de5f464c2d1eb02c872e0df2fe487aec1a774711faa37b"
+      },
+      "prime_power_rays": {
+        "checks": 264,
+        "identity": "carry_p(q*p^e)=carry_p(q)",
+        "maximum_coefficient": 32,
+        "maximum_exponent": 8
+      }
+    },
+    "13": {
+      "dfa": {
+        "accepting_output": 1,
+        "states": 2,
+        "transition": "seen_high_digit OR digit>(p-1)/2"
+      },
+      "index_census": {
+        "kummer_legendre_checks": 10001,
+        "maximum_carry_count": 3,
+        "maximum_index": 10000,
+        "output_histogram": {
+          "0": 1715,
+          "1": 8286
+        }
+      },
+      "nonperiodicity": {
+        "largest_second_index": 34657,
+        "minimum_index": 10000,
+        "periods_checked": 512,
+        "sample_witnesses": [
+          {
+            "first_index": 28561,
+            "first_output": 0,
+            "multiplier": 12,
+            "period": 1,
+            "power_exponent": 4,
+            "second_index": 28573,
+            "second_output": 1,
+            "valuation_of_period": 0
+          },
+          {
+            "first_index": 28561,
+            "first_output": 0,
+            "multiplier": 6,
+            "period": 2,
+            "power_exponent": 4,
+            "second_index": 28573,
+            "second_output": 1,
+            "valuation_of_period": 0
+          },
+          {
+            "first_index": 28561,
+            "first_output": 0,
+            "multiplier": 12,
+            "period": 13,
+            "power_exponent": 4,
+            "second_index": 28717,
+            "second_output": 1,
+            "valuation_of_period": 1
+          },
+          {
+            "first_index": 28561,
+            "first_output": 0,
+            "multiplier": 5,
+            "period": 512,
+            "power_exponent": 4,
+            "second_index": 31121,
+            "second_output": 1,
+            "valuation_of_period": 0
+          }
+        ],
+        "witness_digest": "7053f2f75fcc70218b244f8c1800f0c61f6f36f51146d17226146d12e453d75e"
+      },
+      "prime_power_rays": {
+        "checks": 264,
+        "identity": "carry_p(q*p^e)=carry_p(q)",
+        "maximum_coefficient": 32,
+        "maximum_exponent": 8
+      }
+    },
+    "3": {
+      "dfa": {
+        "accepting_output": 1,
+        "states": 2,
+        "transition": "seen_high_digit OR digit>(p-1)/2"
+      },
+      "index_census": {
+        "kummer_legendre_checks": 10001,
+        "maximum_carry_count": 9,
+        "maximum_index": 10000,
+        "output_histogram": {
+          "0": 512,
+          "1": 9489
+        }
+      },
+      "nonperiodicity": {
+        "largest_second_index": 20705,
+        "minimum_index": 10000,
+        "periods_checked": 512,
+        "sample_witnesses": [
+          {
+            "first_index": 19683,
+            "first_output": 0,
+            "multiplier": 2,
+            "period": 1,
+            "power_exponent": 9,
+            "second_index": 19685,
+            "second_output": 1,
+            "valuation_of_period": 0
+          },
+          {
+            "first_index": 19683,
+            "first_output": 0,
+            "multiplier": 1,
+            "period": 2,
+            "power_exponent": 9,
+            "second_index": 19685,
+            "second_output": 1,
+            "valuation_of_period": 0
+          },
+          {
+            "first_index": 19683,
+            "first_output": 0,
+            "multiplier": 2,
+            "period": 3,
+            "power_exponent": 9,
+            "second_index": 19689,
+            "second_output": 1,
+            "valuation_of_period": 1
+          },
+          {
+            "first_index": 19683,
+            "first_output": 0,
+            "multiplier": 1,
+            "period": 512,
+            "power_exponent": 9,
+            "second_index": 20195,
+            "second_output": 1,
+            "valuation_of_period": 0
+          }
+        ],
+        "witness_digest": "02f78fa1467183d63f939d336e59747d2b3958b9fc53bd7455be7a72f71b7115"
+      },
+      "prime_power_rays": {
+        "checks": 264,
+        "identity": "carry_p(q*p^e)=carry_p(q)",
+        "maximum_coefficient": 32,
+        "maximum_exponent": 8
+      }
+    },
+    "5": {
+      "dfa": {
+        "accepting_output": 1,
+        "states": 2,
+        "transition": "seen_high_digit OR digit>(p-1)/2"
+      },
+      "index_census": {
+        "kummer_legendre_checks": 10001,
+        "maximum_carry_count": 6,
+        "maximum_index": 10000,
+        "output_histogram": {
+          "0": 729,
+          "1": 9272
+        }
+      },
+      "nonperiodicity": {
+        "largest_second_index": 17669,
+        "minimum_index": 10000,
+        "periods_checked": 512,
+        "sample_witnesses": [
+          {
+            "first_index": 15625,
+            "first_output": 0,
+            "multiplier": 4,
+            "period": 1,
+            "power_exponent": 6,
+            "second_index": 15629,
+            "second_output": 1,
+            "valuation_of_period": 0
+          },
+          {
+            "first_index": 15625,
+            "first_output": 0,
+            "multiplier": 2,
+            "period": 2,
+            "power_exponent": 6,
+            "second_index": 15629,
+            "second_output": 1,
+            "valuation_of_period": 0
+          },
+          {
+            "first_index": 15625,
+            "first_output": 0,
+            "multiplier": 4,
+            "period": 5,
+            "power_exponent": 6,
+            "second_index": 15645,
+            "second_output": 1,
+            "valuation_of_period": 1
+          },
+          {
+            "first_index": 15625,
+            "first_output": 0,
+            "multiplier": 2,
+            "period": 512,
+            "power_exponent": 6,
+            "second_index": 16649,
+            "second_output": 1,
+            "valuation_of_period": 0
+          }
+        ],
+        "witness_digest": "d917928e2db8b3391218654931f647e141c493a4bb00f1a35de8af367d0b4193"
+      },
+      "prime_power_rays": {
+        "checks": 264,
+        "identity": "carry_p(q*p^e)=carry_p(q)",
+        "maximum_coefficient": 32,
+        "maximum_exponent": 8
+      }
+    },
+    "7": {
+      "dfa": {
+        "accepting_output": 1,
+        "states": 2,
+        "transition": "seen_high_digit OR digit>(p-1)/2"
+      },
+      "index_census": {
+        "kummer_legendre_checks": 10001,
+        "maximum_carry_count": 5,
+        "maximum_index": 10000,
+        "output_histogram": {
+          "0": 1024,
+          "1": 8977
+        }
+      },
+      "nonperiodicity": {
+        "largest_second_index": 19879,
+        "minimum_index": 10000,
+        "periods_checked": 512,
+        "sample_witnesses": [
+          {
+            "first_index": 16807,
+            "first_output": 0,
+            "multiplier": 6,
+            "period": 1,
+            "power_exponent": 5,
+            "second_index": 16813,
+            "second_output": 1,
+            "valuation_of_period": 0
+          },
+          {
+            "first_index": 16807,
+            "first_output": 0,
+            "multiplier": 3,
+            "period": 2,
+            "power_exponent": 5,
+            "second_index": 16813,
+            "second_output": 1,
+            "valuation_of_period": 0
+          },
+          {
+            "first_index": 16807,
+            "first_output": 0,
+            "multiplier": 6,
+            "period": 7,
+            "power_exponent": 5,
+            "second_index": 16849,
+            "second_output": 1,
+            "valuation_of_period": 1
+          },
+          {
+            "first_index": 16807,
+            "first_output": 0,
+            "multiplier": 6,
+            "period": 512,
+            "power_exponent": 5,
+            "second_index": 19879,
+            "second_output": 1,
+            "valuation_of_period": 0
+          }
+        ],
+        "witness_digest": "b0fe3cdcc2bb1ed072351a0314aadabafd68cc744ebff799262bea2f356f6ce0"
+      },
+      "prime_power_rays": {
+        "checks": 264,
+        "identity": "carry_p(q*p^e)=carry_p(q)",
+        "maximum_coefficient": 32,
+        "maximum_exponent": 8
+      }
+    }
+  },
+  "proved_implication": "a finite sequence automatic in multiplicatively independent bases cannot refine either complete carry state, since a letter image would be this non-ultimately-periodic indicator",
+  "sparse_probe_obstruction": "every p-power ray is stationary after digit shift although the full-scale carry sequence is not ultimately periodic",
+  "status": "proved theorem and exact bounded regression; not a GVC(2) counterexample",
+  "theorem": "prime-specific central-binomial carry obstruction to Cobham promotion"
+}

@@ -53,6 +53,7 @@ def main() -> None:
         "two_real_gmc_remaining_four_weight.json"
     )
     dvorsky = load("dvorsky_gvc5_counterexample.json")
+    gvc_three = load("gvc3_homogeneous_counterexample.json")
     sic_three = load("three_pair_image_mathieu_counterexample.json")
     sic_two = load("two_pair_image_mathieu_counterexample.json")
     hessian_rank_35_slice = load(
@@ -84,6 +85,10 @@ def main() -> None:
         == "fails in 5 variables"
     )
     assert dvorsky["consequences"]["SIC"] == "fails in 5 contraction pairs"
+    assert len(gvc_three["variables"]) == 3
+    assert gvc_three["operator"] == "Lambda=(4*d_x*d_y+d_t^2)^6"
+    assert gvc_three["all_order_claim"]["pure"].endswith("for every m>=1")
+    assert gvc_three["all_order_claim"]["mixed"].endswith("for every m>=1")
     assert len(sic_three["contraction_pairs"]) == 3
     assert sic_three["expanded_f_term_count"] == 4
     assert sic_three["g"] == "y"
@@ -138,7 +143,7 @@ def main() -> None:
     assert frontiers["n_HN4"]["upper_bound"] == 40
 
     scoreboard = {
-        "format": "minimal-counterexample-scoreboard-v2",
+        "format": "minimal-counterexample-scoreboard-v3",
         "field": "complex coefficients / characteristic zero as appropriate",
         "ambient_dimension_frontiers": {
             "general_Keller_noninvertibility": interval(
@@ -173,12 +178,12 @@ def main() -> None:
                 ),
             ),
             "unrestricted_constant_coefficient_GVC_failure_dimension": interval(
-                2,
-                5,
-                "GVC(1) is proved",
+                3,
+                3,
+                "the Hall-envelope theorem proves unrestricted GVC(2)",
                 (
-                    "Dvorsky's third-order constant-coefficient operator gives "
-                    "an explicit GVC(5) counterexample"
+                    "the homogeneous cusp formula gives an explicit "
+                    "three-variable GVC counterexample"
                 ),
             ),
             "ordinary_Laplacian_GVC_failure_dimension": interval(
@@ -277,9 +282,13 @@ def main() -> None:
                 "artifact": "two_pair_image_mathieu_counterexample.json",
             },
             "unrestricted_constant_coefficient_GVC": {
-                "dimension": 5,
-                "operator_order": 3,
-                "artifact": "dvorsky_gvc5_counterexample.json",
+                "dimension": 3,
+                "operator_order": 12,
+                "operator_power": 6,
+                "artifact": "gvc3_homogeneous_counterexample.json",
+                "exact_dimension_reason": (
+                    "GVC(2) is proved by Hall-envelope separation"
+                ),
             },
             "ordinary_Laplacian_GVC": {
                 "dimension": 40,
@@ -320,9 +329,10 @@ def main() -> None:
     OUTPUT.write_text(json.dumps(scoreboard, indent=2) + "\n")
     print(
         "PASS scoreboard: ambient witness dimensions "
-        "19 / SIC 2 / GVC 5 / Laplacian 40 / HN 38"
+        "19 / SIC 2 / GVC 3 / Laplacian 40 / HN 38"
     )
     print("PASS scoreboard: exact minimum SIC pair dimension is 2")
+    print("PASS scoreboard: exact unrestricted GVC failure dimension is 3")
     print("PASS scoreboard: exact GMC failure dimension is 3")
     print("PASS scoreboard: exact minimum Gaussian counterexample degree is 3")
     print("PASS scoreboard: exact minimum genuinely ungraded geometric degree is 3")

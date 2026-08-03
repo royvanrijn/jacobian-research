@@ -210,17 +210,19 @@ through `x=X^5`, `y -> y+lambda/X`.  A descendant has
 
 so `a-b=5i-j` is invariant along the translation string.  Combine this with
 the exact standard-pair Newton polygon and the two forced translated edges
-to emit a finite set of candidate lattice points through bracket layer
-four.  Every point must carry either an original polygon inequality or a
+to emit a finite set of candidate lattice points through the entire bracket
+range.  Every point must carry either an original polygon inequality or a
 forced-edge provenance tag.  The older `(50,75)` values `gamma=2,3` cannot
 be used: their preliminary reduction is explicitly unproved and concerns
 the `(2,3)` member.
 
 The exact degree/terminal-halfspace envelope is now emitted by
-[`cas/classify_f2_75_125_layers.py`](cas/classify_f2_75_125_layers.py).  It
-contains all 35 zero layers, 665 band-pair incidences, and 978 jet-reduced
-linear parameters.  This meets B0 as a certified over-envelope; it is not an
-exhaustive list of B1 polygon masks.
+[`cas/classify_f2_75_125_layers.py`](cas/classify_f2_75_125_layers.py).  Its
+upper window contains all 35 zero layers, 665 band-pair incidences, and 978
+jet-reduced linear parameters.  The complete record extends through layer
+`-200` and has `240` zero layers, `13,741` band pairs, and `2,418`
+jet-reduced parameters.  This meets B0 as a certified over-envelope; it is
+not an exhaustive list of B1 polygon masks.
 
 If the direct coefficient route is resumed, introduce binary variables for
 its lattice points below the common-power band and impose, in order:
@@ -229,14 +231,15 @@ its lattice points below the common-power band and impose, in order:
 2. endpoint nonvanishing;
 3. Minkowski compatibility of the `(3,5)` leading powers;
 4. vanishing of bracket layers `39` down to `5`; and
-5. the unique monomial \(t^4z^4\) on layer `4`.
+5. the unique monomial \(t^4z^4\) on layer `4`; and
+6. vanishing of every lower layer `3` down to `-200`.
 
 At each layer, use support incidence before coefficient equations: a uniquely
 represented bracket monomial is forbidden, while a required right-hand-side
 monomial must have at least one representation.
 
 **Milestone B1.** A finite list of support masks, with a machine-checkable
-proof that every omitted lattice point is incompatible with one of the five
+proof that every omitted lattice point is incompatible with one of the six
 conditions.
 
 **Milestone B2.** Split only those masks by coefficient cancellation and

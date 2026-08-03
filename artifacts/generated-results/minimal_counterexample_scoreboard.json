@@ -1,5 +1,5 @@
 {
-  "format": "minimal-counterexample-scoreboard-v2",
+  "format": "minimal-counterexample-scoreboard-v3",
   "field": "complex coefficients / characteristic zero as appropriate",
   "ambient_dimension_frontiers": {
     "general_Keller_noninvertibility": {
@@ -43,12 +43,12 @@
       "upper_bound_reason": "the full-rank bidegree-(4,4) formula gives an explicit SIC(2) counterexample"
     },
     "unrestricted_constant_coefficient_GVC_failure_dimension": {
-      "lower_bound": 2,
-      "upper_bound": 5,
-      "exact_value": null,
-      "status": "open interval",
-      "lower_bound_reason": "GVC(1) is proved",
-      "upper_bound_reason": "Dvorsky's third-order constant-coefficient operator gives an explicit GVC(5) counterexample"
+      "lower_bound": 3,
+      "upper_bound": 3,
+      "exact_value": 3,
+      "status": "exact",
+      "lower_bound_reason": "the Hall-envelope theorem proves unrestricted GVC(2)",
+      "upper_bound_reason": "the homogeneous cusp formula gives an explicit three-variable GVC counterexample"
     },
     "ordinary_Laplacian_GVC_failure_dimension": {
       "lower_bound": 2,
@@ -149,9 +149,11 @@
       "artifact": "two_pair_image_mathieu_counterexample.json"
     },
     "unrestricted_constant_coefficient_GVC": {
-      "dimension": 5,
-      "operator_order": 3,
-      "artifact": "dvorsky_gvc5_counterexample.json"
+      "dimension": 3,
+      "operator_order": 12,
+      "operator_power": 6,
+      "artifact": "gvc3_homogeneous_counterexample.json",
+      "exact_dimension_reason": "GVC(2) is proved by Hall-envelope separation"
     },
     "ordinary_Laplacian_GVC": {
       "dimension": 40,

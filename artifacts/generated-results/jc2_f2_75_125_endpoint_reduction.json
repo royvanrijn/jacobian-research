@@ -1,0 +1,908 @@
+{
+  "branch": {
+    "candidate_algebra": "A8=QQ[w0,w0^-1,(w0-1)^-1,y]/(27*y^2-9*y+1)",
+    "top": "R(w)=(w-w0)^2/(25*(1-w0)^2)"
+  },
+  "complete_endpoint_substitution": {
+    "H_at_zero_definition": "sum_ell ell*w^((p_u+q_u)/5)*(w-1)^(p_nu+q_nu)*K_P,ell(w)*K_Q,-ell(w) evaluated at w=0",
+    "H_at_zero_source_degree": 2,
+    "dependency_pairs": {
+      "layer_zero": 25,
+      "target": 22
+    },
+    "determinant": "75000",
+    "followers": [
+      {
+        "endpoint_order": 1,
+        "layer": 3,
+        "lift": "5*delta**7 + 6*delta**6 + delta",
+        "side": "P",
+        "w_squared_quotient": "5*delta**5 - 4*delta**4 + 3*delta**3 - 2*delta**2 + delta"
+      },
+      {
+        "endpoint_order": 2,
+        "layer": 3,
+        "lift": "-4*delta**7 - 5*delta**6 + delta**2",
+        "side": "P",
+        "w_squared_quotient": "-4*delta**5 + 3*delta**4 - 2*delta**3 + delta**2"
+      },
+      {
+        "endpoint_order": 3,
+        "layer": 3,
+        "lift": "3*delta**7 + 4*delta**6 + delta**3",
+        "side": "P",
+        "w_squared_quotient": "3*delta**5 - 2*delta**4 + delta**3"
+      },
+      {
+        "endpoint_order": 4,
+        "layer": 3,
+        "lift": "-2*delta**7 - 3*delta**6 + delta**4",
+        "side": "P",
+        "w_squared_quotient": "-2*delta**5 + delta**4"
+      },
+      {
+        "endpoint_order": 0,
+        "layer": -1,
+        "lift": "-6*delta**7 - 7*delta**6 + 1",
+        "side": "P",
+        "w_squared_quotient": "-6*delta**5 + 5*delta**4 - 4*delta**3 + 3*delta**2 - 2*delta + 1"
+      },
+      {
+        "endpoint_order": 1,
+        "layer": -1,
+        "lift": "5*delta**7 + 6*delta**6 + delta",
+        "side": "P",
+        "w_squared_quotient": "5*delta**5 - 4*delta**4 + 3*delta**3 - 2*delta**2 + delta"
+      },
+      {
+        "endpoint_order": 2,
+        "layer": -1,
+        "lift": "-4*delta**7 - 5*delta**6 + delta**2",
+        "side": "P",
+        "w_squared_quotient": "-4*delta**5 + 3*delta**4 - 2*delta**3 + delta**2"
+      },
+      {
+        "endpoint_order": 3,
+        "layer": -1,
+        "lift": "3*delta**7 + 4*delta**6 + delta**3",
+        "side": "P",
+        "w_squared_quotient": "3*delta**5 - 2*delta**4 + delta**3"
+      },
+      {
+        "endpoint_order": 4,
+        "layer": -1,
+        "lift": "-2*delta**7 - 3*delta**6 + delta**4",
+        "side": "P",
+        "w_squared_quotient": "-2*delta**5 + delta**4"
+      },
+      {
+        "endpoint_order": 5,
+        "layer": -1,
+        "lift": "delta**7 + 2*delta**6 + delta**5",
+        "side": "P",
+        "w_squared_quotient": "delta**5"
+      }
+    ],
+    "forcing_digest_sha256": "6cb009b016a57ac6d724d63c4f905ac2a07dfce50e552cafa57030944f9dddc0",
+    "forcing_term_counts": [
+      3,
+      18,
+      43,
+      87,
+      1,
+      5,
+      18,
+      39,
+      70,
+      116
+    ],
+    "forcing_total_degrees": [
+      2,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "identity_check": "M*x_solution+forcing=0 in QQ[nonpivots,H_at_zero]^10",
+    "inverse_maximum_total_degree": 5,
+    "local_coordinates": {
+      "fixed": 3,
+      "free": 159,
+      "nonpivot_forcing_coordinates_including_H_at_zero": 150,
+      "total": 162
+    },
+    "matrix_digest_sha256": "e717afffdd5ae0ef6ae28ce3bcef637d4beaf344722c9dc096311c84b507e9c0",
+    "matrix_shape": [
+      10,
+      10
+    ],
+    "pivot_variables": [
+      "ep_p3_1",
+      "ep_p3_2",
+      "ep_p3_3",
+      "ep_p3_4",
+      "ep_pm1_0",
+      "ep_pm1_1",
+      "ep_pm1_2",
+      "ep_pm1_3",
+      "ep_pm1_4",
+      "ep_pm1_5"
+    ],
+    "solution_denominator_lcms": [
+      5,
+      15,
+      15,
+      9375,
+      1,
+      5,
+      5,
+      5,
+      5,
+      3125
+    ],
+    "solution_digest_sha256": "834b07ea013cce90f10fa9dd35b0ac20a6423abd0015497ed82f7a99f17ea5cf",
+    "solution_straight_line_term_count": 1489,
+    "solution_straight_line_term_counts": [
+      4,
+      29,
+      87,
+      299,
+      1,
+      7,
+      24,
+      85,
+      254,
+      699
+    ],
+    "solution_total_degrees_after_H_at_zero_quadratic_expansion": [
+      3,
+      4,
+      5,
+      6,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "solution_total_degrees_with_H_at_zero_as_one_node": [
+      2,
+      3,
+      4,
+      5,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "decision": {
+    "counterexample_obtained": false,
+    "next_exact_operation": "form the coupled Schur/Fitting circuits beginning at descent 12 (layer 28), where P_3/Q_13 first meets the endpoint substitution; carry them through descent 37 and the 13 functionals, then test that component ideal",
+    "unit_ideal_obtained": false,
+    "what_was_decided": "the endpoint elimination is now fully carried into an exact degree-eight straight-line/Fitting presentation",
+    "why_thirteen_is_not_a_small_polynomial_system": "thirteen is the residual cokernel rank, while 1061 active source coordinates and 1172 earlier Laurent coefficient generators remain"
+  },
+  "endpoint_disjoint_upper_triangular_elimination": {
+    "Laurent_layer_interval": [
+      39,
+      29
+    ],
+    "active_source_coordinates_after_upper_triangular_elimination": 927,
+    "common_operator_factor": "15*w^shift*(w-1)^(Q_nu+5)*(w-w0)^5 times a base unit",
+    "coupling_boundary": {
+      "bands": [
+        "P_3",
+        "Q_13"
+      ],
+      "consequence": "below this row the endpoint substitution and the new-Q power elimination must be combined as one Schur/Fitting calculation; subtracting all later operator ranks would be invalid",
+      "descent": 12,
+      "layer": 28
+    },
+    "displayed_generator_slots_after_upper_triangular_elimination": 1056,
+    "endpoint_disjoint_descent_interval": [
+      1,
+      11
+    ],
+    "new_Q_coordinates_before": 136,
+    "new_Q_coordinates_eliminated": 134,
+    "rows": [
+      {
+        "A_k": "w0*(5*k+1)",
+        "B_k": "(w0+1)*(48-5*k-1)-50*w0",
+        "C_k": "5*k+-45",
+        "Fitting_coordinate_slots_after_Q_elimination": 21,
+        "Laurent_coefficient_slots": 31,
+        "Q_fixed_vanishing": 10,
+        "descent": 1,
+        "layer": 39,
+        "new_P_band": 14,
+        "new_P_dimension": 6,
+        "new_Q_band": 24,
+        "new_Q_dimension": 10,
+        "normalized_operator": "N_delta(w^k)=A_k*w^k+B_k*w^(k+1)+C_k*w^(k+2)",
+        "operator_rank": 10,
+        "source_centralizer": null,
+        "unit_minor": "1213563326976*w0**10"
+      },
+      {
+        "A_k": "w0*(5*k+2)",
+        "B_k": "(w0+1)*(46-5*k-2)-50*w0",
+        "C_k": "5*k+-40",
+        "Fitting_coordinate_slots_after_Q_elimination": 22,
+        "Laurent_coefficient_slots": 32,
+        "Q_fixed_vanishing": 10,
+        "descent": 2,
+        "layer": 38,
+        "new_P_band": 13,
+        "new_P_dimension": 6,
+        "new_Q_band": 23,
+        "new_Q_dimension": 10,
+        "normalized_operator": "N_delta(w^k)=A_k*w^k+B_k*w^(k+1)+C_k*w^(k+2)",
+        "operator_rank": 10,
+        "source_centralizer": null,
+        "unit_minor": "3965002804224*w0**10"
+      },
+      {
+        "A_k": "w0*(5*k+3)",
+        "B_k": "(w0+1)*(44-5*k-3)-45*w0",
+        "C_k": "5*k+-40",
+        "Fitting_coordinate_slots_after_Q_elimination": 21,
+        "Laurent_coefficient_slots": 32,
+        "Q_fixed_vanishing": 9,
+        "descent": 3,
+        "layer": 37,
+        "new_P_band": 12,
+        "new_P_dimension": 7,
+        "new_Q_band": 22,
+        "new_Q_dimension": 11,
+        "normalized_operator": "N_delta(w^k)=A_k*w^k+B_k*w^(k+1)+C_k*w^(k+2)",
+        "operator_rank": 11,
+        "source_centralizer": null,
+        "unit_minor": "496130658895872*w0**11"
+      },
+      {
+        "A_k": "w0*(5*k+4)",
+        "B_k": "(w0+1)*(42-5*k-4)-45*w0",
+        "C_k": "5*k+-35",
+        "Fitting_coordinate_slots_after_Q_elimination": 21,
+        "Laurent_coefficient_slots": 32,
+        "Q_fixed_vanishing": 9,
+        "descent": 4,
+        "layer": 36,
+        "new_P_band": 11,
+        "new_P_dimension": 7,
+        "new_Q_band": 21,
+        "new_Q_dimension": 11,
+        "normalized_operator": "N_delta(w^k)=A_k*w^k+B_k*w^(k+1)+C_k*w^(k+2)",
+        "operator_rank": 11,
+        "source_centralizer": null,
+        "unit_minor": "1028914807624704*w0**11"
+      },
+      {
+        "A_k": "w0*(5*k+0)",
+        "B_k": "(w0+1)*(40-5*k-0)-40*w0",
+        "C_k": "5*k+-40",
+        "Fitting_coordinate_slots_after_Q_elimination": 20,
+        "Laurent_coefficient_slots": 32,
+        "Q_fixed_vanishing": 8,
+        "descent": 5,
+        "layer": 35,
+        "new_P_band": 10,
+        "new_P_dimension": 9,
+        "new_Q_band": 20,
+        "new_Q_dimension": 13,
+        "normalized_operator": "N_delta(w^k)=A_k*w^k+B_k*w^(k+1)+C_k*w^(k+2)",
+        "operator_rank": 12,
+        "source_centralizer": "C0^4",
+        "unit_minor": "116943750000000000*w0**12"
+      },
+      {
+        "A_k": "w0*(5*k+1)",
+        "B_k": "(w0+1)*(38-5*k-1)-40*w0",
+        "C_k": "5*k+-35",
+        "Fitting_coordinate_slots_after_Q_elimination": 20,
+        "Laurent_coefficient_slots": 33,
+        "Q_fixed_vanishing": 8,
+        "descent": 6,
+        "layer": 34,
+        "new_P_band": 9,
+        "new_P_dimension": 9,
+        "new_Q_band": 19,
+        "new_Q_dimension": 13,
+        "normalized_operator": "N_delta(w^k)=A_k*w^k+B_k*w^(k+1)+C_k*w^(k+2)",
+        "operator_rank": 13,
+        "source_centralizer": null,
+        "unit_minor": "211422148572450816*w0**13"
+      },
+      {
+        "A_k": "w0*(5*k+2)",
+        "B_k": "(w0+1)*(36-5*k-2)-40*w0",
+        "C_k": "5*k+-30",
+        "Fitting_coordinate_slots_after_Q_elimination": 20,
+        "Laurent_coefficient_slots": 32,
+        "Q_fixed_vanishing": 8,
+        "descent": 7,
+        "layer": 33,
+        "new_P_band": 8,
+        "new_P_dimension": 8,
+        "new_Q_band": 18,
+        "new_Q_dimension": 12,
+        "normalized_operator": "N_delta(w^k)=A_k*w^k+B_k*w^(k+1)+C_k*w^(k+2)",
+        "operator_rank": 12,
+        "source_centralizer": null,
+        "unit_minor": "11752268311719936*w0**12"
+      },
+      {
+        "A_k": "w0*(5*k+3)",
+        "B_k": "(w0+1)*(34-5*k-3)-35*w0",
+        "C_k": "5*k+-30",
+        "Fitting_coordinate_slots_after_Q_elimination": 19,
+        "Laurent_coefficient_slots": 32,
+        "Q_fixed_vanishing": 7,
+        "descent": 8,
+        "layer": 32,
+        "new_P_band": 7,
+        "new_P_dimension": 9,
+        "new_Q_band": 17,
+        "new_Q_dimension": 13,
+        "normalized_operator": "N_delta(w^k)=A_k*w^k+B_k*w^(k+1)+C_k*w^(k+2)",
+        "operator_rank": 13,
+        "source_centralizer": null,
+        "unit_minor": "1812861427605516288*w0**13"
+      },
+      {
+        "A_k": "w0*(5*k+4)",
+        "B_k": "(w0+1)*(32-5*k-4)-35*w0",
+        "C_k": "5*k+-25",
+        "Fitting_coordinate_slots_after_Q_elimination": 19,
+        "Laurent_coefficient_slots": 32,
+        "Q_fixed_vanishing": 7,
+        "descent": 9,
+        "layer": 31,
+        "new_P_band": 6,
+        "new_P_dimension": 9,
+        "new_Q_band": 16,
+        "new_Q_dimension": 13,
+        "normalized_operator": "N_delta(w^k)=A_k*w^k+B_k*w^(k+1)+C_k*w^(k+2)",
+        "operator_rank": 13,
+        "source_centralizer": null,
+        "unit_minor": "3885182313590882304*w0**13"
+      },
+      {
+        "A_k": "w0*(5*k+0)",
+        "B_k": "(w0+1)*(30-5*k-0)-30*w0",
+        "C_k": "5*k+-30",
+        "Fitting_coordinate_slots_after_Q_elimination": 18,
+        "Laurent_coefficient_slots": 32,
+        "Q_fixed_vanishing": 6,
+        "descent": 10,
+        "layer": 30,
+        "new_P_band": 5,
+        "new_P_dimension": 11,
+        "new_Q_band": 15,
+        "new_Q_dimension": 15,
+        "normalized_operator": "N_delta(w^k)=A_k*w^k+B_k*w^(k+1)+C_k*w^(k+2)",
+        "operator_rank": 14,
+        "source_centralizer": "C0^3",
+        "unit_minor": "532094062500000000000*w0**14"
+      },
+      {
+        "A_k": "w0*(5*k+1)",
+        "B_k": "(w0+1)*(28-5*k-1)-30*w0",
+        "C_k": "5*k+-25",
+        "Fitting_coordinate_slots_after_Q_elimination": 18,
+        "Laurent_coefficient_slots": 33,
+        "Q_fixed_vanishing": 6,
+        "descent": 11,
+        "layer": 29,
+        "new_P_band": 4,
+        "new_P_dimension": 11,
+        "new_Q_band": 14,
+        "new_Q_dimension": 15,
+        "normalized_operator": "N_delta(w^k)=A_k*w^k+B_k*w^(k+1)+C_k*w^(k+2)",
+        "operator_rank": 15,
+        "source_centralizer": null,
+        "unit_minor": "990724188210504523776*w0**15"
+      }
+    ],
+    "source_centralizers_retained": 2,
+    "unit_minor_theorem": {
+      "nonresonant": "w0^(d+1)*product_(k=0)^d(5*k+q_u)",
+      "resonant_delta_5_10": "w0^d*5^d*d!"
+    },
+    "upper_Fitting_coordinate_slots_after": 219,
+    "upper_Laurent_coefficient_slots_before": 353,
+    "why_the_block_commutes_with_endpoint_elimination": "its new Q bands are Q_24 through Q_14, while the endpoint dependency cone uses Q_-12 through Q_13; P_3 first enters at descent 12"
+  },
+  "exact_substitution_rule": {
+    "P3": "K_P3=K_P3,pivot-zero+sum_(j=1)^4 x_j*L_j, L_j=delta^j+(j-7)(-1)^j*delta^6+(j-6)(-1)^j*delta^7",
+    "P_minus1": "K_P-1=K_P-1,pivot-zero+sum_(j=0)^5 x_j*L_j",
+    "affected_zero_layers": [
+      [
+        28,
+        5
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "layer_zero": "apply the same substitution to H=sum ell*P_ell*Q_-ell",
+    "pivot_vector": "x=-M^-1*forcing",
+    "target": "apply the same substitution to G=J_4-1",
+    "unaffected_zero_layers": [
+      [
+        39,
+        29
+      ]
+    ]
+  },
+  "normalized_laurent_rows": {
+    "changed_slots_layers_3_through_28": 819,
+    "common_factor_removed": "t^L*u^chi(L), leaving one polynomial in w on Laurent layer L",
+    "coordinate": "w=(1+t)^5",
+    "rows": [
+      {
+        "band_pair_count": 1,
+        "changed_by_endpoint_substitution": false,
+        "coefficient_slot_count": 0,
+        "layer": 40,
+        "w_degree_interval": null
+      },
+      {
+        "band_pair_count": 2,
+        "changed_by_endpoint_substitution": false,
+        "coefficient_slot_count": 31,
+        "layer": 39,
+        "w_degree_interval": [
+          0,
+          30
+        ]
+      },
+      {
+        "band_pair_count": 3,
+        "changed_by_endpoint_substitution": false,
+        "coefficient_slot_count": 32,
+        "layer": 38,
+        "w_degree_interval": [
+          0,
+          31
+        ]
+      },
+      {
+        "band_pair_count": 4,
+        "changed_by_endpoint_substitution": false,
+        "coefficient_slot_count": 32,
+        "layer": 37,
+        "w_degree_interval": [
+          0,
+          31
+        ]
+      },
+      {
+        "band_pair_count": 5,
+        "changed_by_endpoint_substitution": false,
+        "coefficient_slot_count": 32,
+        "layer": 36,
+        "w_degree_interval": [
+          0,
+          31
+        ]
+      },
+      {
+        "band_pair_count": 6,
+        "changed_by_endpoint_substitution": false,
+        "coefficient_slot_count": 32,
+        "layer": 35,
+        "w_degree_interval": [
+          0,
+          31
+        ]
+      },
+      {
+        "band_pair_count": 7,
+        "changed_by_endpoint_substitution": false,
+        "coefficient_slot_count": 33,
+        "layer": 34,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 8,
+        "changed_by_endpoint_substitution": false,
+        "coefficient_slot_count": 32,
+        "layer": 33,
+        "w_degree_interval": [
+          0,
+          31
+        ]
+      },
+      {
+        "band_pair_count": 9,
+        "changed_by_endpoint_substitution": false,
+        "coefficient_slot_count": 32,
+        "layer": 32,
+        "w_degree_interval": [
+          0,
+          31
+        ]
+      },
+      {
+        "band_pair_count": 10,
+        "changed_by_endpoint_substitution": false,
+        "coefficient_slot_count": 32,
+        "layer": 31,
+        "w_degree_interval": [
+          0,
+          31
+        ]
+      },
+      {
+        "band_pair_count": 11,
+        "changed_by_endpoint_substitution": false,
+        "coefficient_slot_count": 32,
+        "layer": 30,
+        "w_degree_interval": [
+          0,
+          31
+        ]
+      },
+      {
+        "band_pair_count": 12,
+        "changed_by_endpoint_substitution": false,
+        "coefficient_slot_count": 33,
+        "layer": 29,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 13,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 28,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 14,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 32,
+        "layer": 27,
+        "w_degree_interval": [
+          0,
+          31
+        ]
+      },
+      {
+        "band_pair_count": 15,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 32,
+        "layer": 26,
+        "w_degree_interval": [
+          0,
+          31
+        ]
+      },
+      {
+        "band_pair_count": 16,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 32,
+        "layer": 25,
+        "w_degree_interval": [
+          0,
+          31
+        ]
+      },
+      {
+        "band_pair_count": 17,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 24,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 18,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 23,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 19,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 22,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 20,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 32,
+        "layer": 21,
+        "w_degree_interval": [
+          0,
+          31
+        ]
+      },
+      {
+        "band_pair_count": 21,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 32,
+        "layer": 20,
+        "w_degree_interval": [
+          0,
+          31
+        ]
+      },
+      {
+        "band_pair_count": 22,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 19,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 23,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 18,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 24,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 17,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 25,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 16,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 26,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 32,
+        "layer": 15,
+        "w_degree_interval": [
+          0,
+          31
+        ]
+      },
+      {
+        "band_pair_count": 27,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 14,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 28,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 13,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 29,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 12,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 30,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 11,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 31,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 10,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 32,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 9,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 33,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 8,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 34,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 7,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 35,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 6,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 36,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 5,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      },
+      {
+        "band_pair_count": 38,
+        "changed_by_endpoint_substitution": true,
+        "coefficient_slot_count": 33,
+        "layer": 3,
+        "w_degree_interval": [
+          0,
+          32
+        ]
+      }
+    ],
+    "support_nonvanishing_witness": "w0=2 in the localized double-R base",
+    "unchanged_slots_layers_29_through_39": 353,
+    "zero_layer_coefficient_slots": 1172
+  },
+  "reduced_ideal_presentation": {
+    "base": "A8=QQ[w0,w0^-1,(w0-1)^-1,y]/(27*y^2-9*y+1)",
+    "certified_total_degree_upper_bound_after_endpoint_substitution": 8,
+    "degree_reason": "the pivot circuits have source degree at most 7 after the quadratic H(0) node is expanded, and every remaining bracket is linear in a P pivot and linear in its Q partner",
+    "descent_eight_component_rows": [
+      "K_P7(w0)=0",
+      "K_P7'(w0)=0",
+      "K_P7''(w0)=0",
+      "K_Q1(w0)=0",
+      "K_P-1(w0)=25^3*w0*(w0-1)^6*y*a^2, a=[(w-w0)^3]K_P7"
+    ],
+    "descent_eight_incidence_row_count": 5,
+    "descent_eight_ratio_scale_check": {
+      "C0_leading_at_w0": "t0^5/25",
+      "P7_leading_at_w0": "t0^7*u0^3*(w0-1)^3*a",
+      "P_minus1_value_at_w0": "t0^-1*u0*K_P-1(w0)",
+      "identity_using_u0^5_equals_w0": "b_normalized/a_normalized^2=K_P-1(w0)/(25^3*w0*(w0-1)^6*a^2)"
+    },
+    "generator_ledger": {
+      "descent_eight_component_rows": 5,
+      "displayed_generator_count_not_claimed_minimal": 1190,
+      "global_target_and_layer_zero_residues": 13,
+      "zero_Laurent_coefficient_generators": 1172
+    },
+    "source_coordinate_ledger": {
+      "active_source_coordinates": 1061,
+      "closure_P_minus22_through_15_and_Q_minus12_through_25": 1036,
+      "endpoint_pivots_removed": 10,
+      "fixed_endpoint_values_removed": 3,
+      "old_layer_zero_extras_P_minus24_minus23_Q_minus14_minus13": 56,
+      "specialized_top_coordinates_removed": 18,
+      "target_new_image_coordinates_retained": 30,
+      "target_new_image_retention_reason": "P_-21 and Q_-11 are killed by the target cokernel map but re-enter the retained Laurent layer 3 against Q_24 and P_14"
+    }
+  },
+  "remaining_fitting_coordinates": {
+    "layer_zero": {
+      "artinian_length": 15,
+      "artinian_modulus": "K=w^3*(w-1)^6*(w-w0)^6",
+      "remaining_coordinates": [
+        "H_red(w0)-H_red(0)",
+        "H_red'(w0)",
+        "H_red''(w0)",
+        "H_red'''(w0)",
+        "H_red^(4)(w0)",
+        "H_red^(5)(w0)"
+      ],
+      "residual_integral": "H_red=sum_ell ell*P_red,ell*Q_-ell"
+    },
+    "remaining_coordinate_count": 13,
+    "target": {
+      "local_modulus": "D=w^2*(w-1)^5*(w-w0)^5",
+      "local_modulus_degree": 12,
+      "operator": "N(S)=5*w*E*S'+(11*E+22*w*E')*S, E=(w-1)*(w-w0)",
+      "operator_shape": [
+        22,
+        20
+      ],
+      "quotient": "f=quo_w(G_red,D), degree<=21",
+      "remaining_fitting_coordinates": [
+        "rho_20(f)",
+        "rho_21(f)"
+      ],
+      "remaining_local_coordinates": [
+        "Taylor_w0(G_red,0)",
+        "Taylor_w0(G_red,1)",
+        "Taylor_w0(G_red,2)",
+        "Taylor_w0(G_red,3)",
+        "Taylor_w0(G_red,4)"
+      ],
+      "residual_polynomial": "G_red(w)=J_4_red(w)-1, degree<=33",
+      "rho_20": "f_20+128*(1+w0)*s_19-145*s_18",
+      "rho_21": "f_21-150*s_19",
+      "triangular_solution": "s_d=(f_d+(5*d+28)*(1+w0)*s_(d-1)-5*(d+9)*s_(d-2))/((5*d+11)*w0), 0<=d<=19, with s_-1=s_-2=0",
+      "unit_minor": "8175954063303113750853416990539776*w0**20"
+    }
+  },
+  "schema": "plane-jc.f2-75-125-endpoint-reduction.v1",
+  "software": {
+    "sympy": "1.14.0"
+  },
+  "status": "exact-pre-lower-tail-presentation;unit-ideal-undecided"
+}

@@ -26,6 +26,17 @@ conditional filter: requiring the connector anchor to avoid both source
 endpoints leaves three classes of signature (5,3,1).  Thus even the marked
 conditional model survives.
 
+The shared order five admits a sharper conditional audit.  The terminal
+inertia normalizer is AGL(1,5), exactly the generic fifth-root group, and its
+quadratic sign character cuts out Q(sqrt(5)).  If one simple Kummer orbit is
+instead required to contribute five disjoint transpositions at one branch
+value and the connected source boundary is rational, the two orbits force a
+degree-eleven genus-zero S11 gluing.  Six
+unmarked classes remain, but identifying the matched core packet with the
+terminal five-cycle support leaves one unoriented class (four choices after
+orienting a Kummer generator).  This still depends on an unproved toroidal
+source-node bridge.
+
 The checker also constructs paired-star witnesses in every remaining degree.
 They show that an A6 packet plus 2*k simple cycles is compatible with a
 connected genus-zero degree-(6+k) cover.  This witness family is exact
@@ -38,6 +49,7 @@ from __future__ import annotations
 import argparse
 from itertools import combinations, permutations
 import json
+from math import factorial
 from pathlib import Path
 from typing import Iterable, Sequence
 
@@ -67,6 +79,22 @@ def inverse(permutation: Permutation) -> Permutation:
     for index, image in enumerate(permutation):
         result[image] = index
     return tuple(result)
+
+
+def permutation_power(permutation: Permutation, exponent: int) -> Permutation:
+    if exponent < 0:
+        return permutation_power(inverse(permutation), -exponent)
+    result = identity(len(permutation))
+    for _ in range(exponent):
+        result = compose(result, permutation)
+    return result
+
+
+def commutator(left: Permutation, right: Permutation) -> Permutation:
+    return compose(
+        compose(compose(left, right), inverse(left)),
+        inverse(right),
+    )
 
 
 def conjugate(element: Permutation, permutation: Permutation) -> Permutation:
@@ -109,6 +137,19 @@ def cycle_length_at(permutation: Permutation, point: int) -> int:
 
 def ramification_contribution(permutation: Permutation) -> int:
     return len(permutation) - len(cycle_type(permutation))
+
+
+def is_even(permutation: Permutation) -> bool:
+    return ramification_contribution(permutation) % 2 == 0
+
+
+def cycle_permutation(degree: int, entries: Sequence[int]) -> Permutation:
+    if len(entries) < 2 or len(set(entries)) != len(entries):
+        raise ValueError("a cycle needs distinct entries")
+    result = list(range(degree))
+    for index, entry in enumerate(entries):
+        result[entry] = entries[(index + 1) % len(entries)]
+    return tuple(result)
 
 
 def transposition(degree: int, first: int, second: int) -> Permutation:
@@ -450,6 +491,428 @@ def marked_incidence_filter(
     }
 
 
+def order_five_comparison(
+    triple: BranchTuple,
+    core_group: set[Permutation],
+) -> dict[str, object]:
+    """Compare terminal five-cycle inertia with generic Kummer monodromy."""
+
+    sigma_zero = triple[0]
+    all_six = tuple(permutations(range(6)))
+    cyclic_powers = {
+        permutation_power(sigma_zero, exponent): exponent
+        for exponent in range(5)
+    }
+    centralizer = {
+        element
+        for element in all_six
+        if compose(element, sigma_zero) == compose(sigma_zero, element)
+    }
+    if centralizer != set(cyclic_powers):
+        raise AssertionError("the five-cycle centralizer is no longer C5")
+
+    normalizer: set[Permutation] = set()
+    normalizer_exponents: dict[int, list[Permutation]] = {
+        exponent: [] for exponent in range(1, 5)
+    }
+    for element in all_six:
+        conjugated = conjugate(element, sigma_zero)
+        exponent = cyclic_powers.get(conjugated)
+        if exponent is None or exponent == 0:
+            continue
+        normalizer.add(element)
+        normalizer_exponents[exponent].append(element)
+
+    affine_normalizer = {
+        tuple([*((multiplier * point + shift) % 5 for point in range(5)), 5])
+        for multiplier in range(1, 5)
+        for shift in range(5)
+    }
+    if normalizer != affine_normalizer or len(normalizer) != 20:
+        raise AssertionError("the terminal inertia normalizer lost AGL(1,5)")
+    exponent_counts = {
+        str(exponent): len(elements)
+        for exponent, elements in normalizer_exponents.items()
+    }
+    if exponent_counts != {"1": 5, "2": 5, "3": 5, "4": 5}:
+        raise AssertionError("the inertia automorphism census changed")
+    parity_by_exponent = {
+        str(exponent): {
+            "even": sum(is_even(element) for element in elements),
+            "odd": sum(not is_even(element) for element in elements),
+        }
+        for exponent, elements in normalizer_exponents.items()
+    }
+    expected_parities = {
+        "1": {"even": 5, "odd": 0},
+        "2": {"even": 0, "odd": 5},
+        "3": {"even": 0, "odd": 5},
+        "4": {"even": 5, "odd": 0},
+    }
+    if parity_by_exponent != expected_parities:
+        raise AssertionError("the mod-five multiplier parity table changed")
+
+    full_triple_centralizer = {
+        element
+        for element in all_six
+        if all(
+            compose(element, branch_cycle)
+            == compose(branch_cycle, element)
+            for branch_cycle in triple[:2]
+        )
+    }
+    if full_triple_centralizer != {identity(6)}:
+        raise AssertionError("the target-fixed deck group is no longer trivial")
+
+    # One nontrivial commutator and all of its A6 conjugates normally
+    # generate A6.  Since their normal closure lies in the derived group,
+    # this is an exact finite proof that the terminal geometric group is
+    # perfect and hence has no nontrivial C5 quotient.
+    a6_commutator = commutator(triple[0], triple[1])
+    if a6_commutator == identity(6):
+        raise AssertionError("the selected A6 commutator became trivial")
+    a6_normal_closure = generated_group(
+        tuple(conjugate(element, a6_commutator) for element in core_group)
+    )
+    if a6_normal_closure != core_group:
+        raise AssertionError("the A6 commutator normal closure changed")
+
+    # Likewise one S6 commutator normally generates exactly the 360 even
+    # permutations.  Thus the arithmetic abelianization is C2, not C5.
+    s6_commutator = commutator(
+        transposition(6, 0, 1),
+        transposition(6, 1, 2),
+    )
+    s6_derived = generated_group(
+        tuple(conjugate(element, s6_commutator) for element in all_six)
+    )
+    even_six = {element for element in all_six if is_even(element)}
+    if s6_derived != even_six or even_six != core_group:
+        raise AssertionError("the exact S6 abelianization audit changed")
+
+    # In the generic Kummer splitting action on the five roots, translation
+    # is the geometric C5 and the four multipliers are the cyclotomic C4.
+    # Their permutation sign is the quadratic character modulo five.
+    multiplier_rows = []
+    for multiplier in range(1, 5):
+        action = tuple(multiplier * point % 5 for point in range(5))
+        multiplier_rows.append(
+            {
+                "multiplier_mod_5": multiplier,
+                "cycle_type": list(cycle_type(action)),
+                "permutation_parity": "even" if is_even(action) else "odd",
+                "quadratic_character_mod_5": (
+                    1 if multiplier in {1, 4} else -1
+                ),
+            }
+        )
+
+    return {
+        "terminal_inertia": {
+            "generator_cycle_type": list(cycle_type(sigma_zero)),
+            "centralizer_in_S6_order": len(centralizer),
+            "centralizer": "C5=<sigma_0>",
+            "normalizer_in_S6_order": len(normalizer),
+            "normalizer": "C5 semidirect C4 = AGL(1,5)",
+            "normalizer_automorphism_exponent_counts": exponent_counts,
+            "normalizer_parity_by_exponent": parity_by_exponent,
+            "normalizer_intersection_A6_order": sum(
+                is_even(element) for element in normalizer
+            ),
+            "normalizer_intersection_A6": "C5 semidirect C2 = D10",
+            "full_marked_triple_centralizer_order": len(
+                full_triple_centralizer
+            ),
+        },
+        "global_character_obstruction": {
+            "A6_commutator_normal_closure_order": len(a6_normal_closure),
+            "A6_is_perfect": True,
+            "A6_has_nontrivial_C5_quotient": False,
+            "S6_derived_subgroup_order": len(s6_derived),
+            "S6_abelianization": "C2 via permutation sign",
+            "S6_has_nontrivial_C5_quotient": False,
+        },
+        "kummer_arithmetic_comparison": {
+            "generic_fifth_root_group": "C5 semidirect C4 = AGL(1,5)",
+            "multiplier_rows": multiplier_rows,
+            "cyclotomic_identity": (
+                "for theta=zeta_5+zeta_5^-1, theta^2+theta-1=0 "
+                "and (2*theta+1)^2=5"
+            ),
+            "common_quadratic_constant_field": "Q(sqrt(5))",
+            "exact_relevance": (
+                "the Kummer multiplier-sign character and the arithmetic "
+                "S6 sign character have the same quadratic constant field"
+            ),
+        },
+        "claim_boundary": (
+            "the order-five normalizers and arithmetic quadratic characters "
+            "match exactly, but A6 has no global C5 character and the full "
+            "residue cover has no deck transformation; only a toroidal node "
+            "bridge could identify the two local inertia subgroups"
+        ),
+    }
+
+
+def fivefold_kummer_spectator_audit(
+    triples: Sequence[BranchTuple],
+    core_group: set[Permutation],
+) -> dict[str, object]:
+    """Audit the stronger model in which a Kummer orbit has five cycles."""
+
+    degree = 11
+    exterior = tuple(range(6, degree))
+    core_elements = tuple(range(6))
+    expected_matching_type = (2, 2, 2, 2, 2, 1)
+    representative_matchings: list[Permutation] = []
+
+    for omitted_core in core_elements:
+        matched_core = tuple(
+            point for point in core_elements if point != omitted_core
+        )
+        matching = identity(degree)
+        for core_point, exterior_point in zip(matched_core, exterior):
+            matching = compose(
+                transposition(degree, core_point, exterior_point),
+                matching,
+            )
+        if cycle_type(matching) != expected_matching_type:
+            raise AssertionError("a fivefold spectator cycle lost its profile")
+        branch_cycles = (
+            *(extend(cycle, degree) for cycle in triples[0]),
+            matching,
+            matching,
+        )
+        if permutation_product(branch_cycles) != identity(degree):
+            raise AssertionError("the fivefold meridian product changed")
+        if len(generated_orbit(branch_cycles, 0)) != degree:
+            raise AssertionError("a fivefold matching lost transitivity")
+        if riemann_hurwitz_source_genus(degree, branch_cycles) != 0:
+            raise AssertionError("a fivefold matching lost genus zero")
+        representative_matchings.append(matching)
+
+    # For one matching M, A6 acts on the six core letters and M*A6*M^-1
+    # acts on the unmatched core letter plus the five exterior letters.
+    # The supports meet in one point.  Conjugating their three-cycles gives
+    # every three-cycle on eleven letters, so they generate A11; the product
+    # of five transpositions M is odd, so the full group is S11.
+    matching = representative_matchings[-1]
+    embedded_core = {extend(element, degree) for element in core_group}
+    conjugated_core = {
+        conjugate(matching, element) for element in embedded_core
+    }
+    three_cycle_type = (3, *(1 for _ in range(degree - 3)))
+    core_three_cycles = {
+        element
+        for element in embedded_core
+        if cycle_type(element) == three_cycle_type
+    }
+    conjugated_three_cycles = {
+        element
+        for element in conjugated_core
+        if cycle_type(element) == three_cycle_type
+    }
+    certified_three_cycles = core_three_cycles | conjugated_three_cycles
+    certified_three_cycles.update(
+        conjugate(core_element, other_three_cycle)
+        for core_element in embedded_core
+        for other_three_cycle in conjugated_three_cycles
+    )
+    certified_three_cycles.update(
+        conjugate(other_element, core_three_cycle)
+        for other_element in conjugated_core
+        for core_three_cycle in core_three_cycles
+    )
+    conjugating_moves = embedded_core | conjugated_core
+    while True:
+        enlarged = certified_three_cycles | {
+            conjugate(move, three_cycle)
+            for move in conjugating_moves
+            for three_cycle in certified_three_cycles
+        }
+        if enlarged == certified_three_cycles:
+            break
+        certified_three_cycles = enlarged
+    all_three_cycles = {
+        orientation
+        for support in combinations(range(degree), 3)
+        for orientation in (
+            cycle_permutation(degree, support),
+            cycle_permutation(degree, (support[0], support[2], support[1])),
+        )
+    }
+    if certified_three_cycles != all_three_cycles:
+        raise AssertionError("the overlapping-A6 proof missed a three-cycle")
+    if is_even(matching):
+        raise AssertionError("the fivefold matching unexpectedly became even")
+
+    # With the core five-cycle fixed, its C5 centralizer acts transitively on
+    # the five terminal triples.  Orbits of (triple, omitted core sheet) give
+    # the six unmarked gluing classes; their signatures reproduce the earlier
+    # one-anchor census, now for the unique unmatched core sheet.
+    sigma_zero = triples[0][0]
+    centralizer = {
+        element
+        for element in permutations(range(6))
+        if compose(element, sigma_zero) == compose(sigma_zero, element)
+    }
+    triple_set = set(triples)
+    conjugated_triples = {
+        tuple(conjugate(element, cycle) for cycle in triples[0])
+        for element in centralizer
+    }
+    if conjugated_triples != triple_set:
+        raise AssertionError("the terminal triples lost their C5 orbit")
+    pair_orbits: dict[
+        tuple[BranchTuple, int], tuple[BranchTuple, int]
+    ] = {}
+    for triple in triples:
+        for omitted_core in core_elements:
+            key = min(
+                (
+                    tuple(conjugate(element, cycle) for cycle in triple),
+                    element[omitted_core],
+                )
+                for element in centralizer
+            )
+            pair_orbits[key] = (triple, omitted_core)
+    if len(pair_orbits) != 6:
+        raise AssertionError("the fivefold Nielsen class count changed")
+    unmatched_profile_counts: dict[str, int] = {}
+    for triple, omitted_core in pair_orbits.values():
+        profile = ",".join(
+            str(cycle_length_at(cycle, omitted_core)) for cycle in triple
+        )
+        unmatched_profile_counts[profile] = (
+            unmatched_profile_counts.get(profile, 0) + 1
+        )
+    if unmatched_profile_counts != {"1,3,3": 1, "5,3,1": 3, "5,3,3": 2}:
+        raise AssertionError("the fivefold unmatched-sheet census changed")
+
+    # If the five matched core sheets must be precisely the support of the
+    # terminal five-cycle, the omitted core sheet is its unique fixed point.
+    # Exactly one of the six classes has this property.
+    inertia_supported_classes = sum(
+        cycle_length_at(triple[0], omitted_core) == 1
+        for triple, omitted_core in pair_orbits.values()
+    )
+    if inertia_supported_classes != 1:
+        raise AssertionError("the inertia-supported fivefold class changed")
+
+    # A fixed Kummer generator on the five exterior sheets refines the 5!
+    # possible matchings.  Exactly the 20 affine bijections intertwine the
+    # two C5 subgroups up to an automorphism; five occur for each exponent.
+    external_kummer = list(range(degree))
+    for index, exterior_point in enumerate(exterior):
+        external_kummer[exterior_point] = exterior[(index + 1) % 5]
+    external_kummer_permutation = tuple(external_kummer)
+    orientation_counts = {exponent: 0 for exponent in range(1, 5)}
+    for bijection in permutations(range(5)):
+        differences = {
+            (bijection[(index + 1) % 5] - bijection[index]) % 5
+            for index in range(5)
+        }
+        if len(differences) != 1:
+            continue
+        exponent = next(iter(differences))
+        if exponent == 0:
+            raise AssertionError("a cyclic torsor bijection became constant")
+        torsor_matching = identity(degree)
+        for core_point, exterior_index in enumerate(bijection):
+            torsor_matching = compose(
+                transposition(
+                    degree,
+                    core_point,
+                    exterior[exterior_index],
+                ),
+                torsor_matching,
+            )
+        transported = conjugate(
+            torsor_matching,
+            extend(sigma_zero, degree),
+        )
+        if transported != permutation_power(
+            external_kummer_permutation, exponent
+        ):
+            raise AssertionError("a Kummer torsor orientation failed")
+        orientation_counts[exponent] += 1
+    if orientation_counts != {1: 5, 2: 5, 3: 5, 4: 5}:
+        raise AssertionError("the Kummer torsor matching census changed")
+
+    normalized_matching_count = (
+        len(triples) * len(core_elements) * factorial(5)
+    )
+    if normalized_matching_count != 3600:
+        raise AssertionError("the fivefold normalized count changed")
+
+    return {
+        "conditional_bridge_assumption": (
+            "each of the two simple squarefree-R Kummer orbits is one branch "
+            "value whose five members are simple ramification points, so its "
+            "branch cycle has profile (2,2,2,2,2), and the connected compact "
+            "source boundary curve is rational"
+        ),
+        "riemann_hurwitz": {
+            "terminal_ramification": 10,
+            "two_kummer_orbit_contributions": [5, 5],
+            "total_ramification": 20,
+            "genus_formula": "g=11-N",
+            "source_genus_assumption": 0,
+            "forced_genus_zero_degree": 11,
+            "remaining_degree": 5,
+        },
+        "product_and_transitivity": {
+            "two_extra_involutions_must_be_equal": True,
+            "cycle_profile": [2, 2, 2, 2, 2, 1],
+            "structure": (
+                "five disjoint core-to-spectator transpositions, leaving "
+                "one terminal core sheet unmatched"
+            ),
+            "normalized_factorizations_fixed_core_and_five_cycle": (
+                normalized_matching_count
+            ),
+            "simultaneous_conjugacy_classes_with_branch_labels_fixed": len(
+                pair_orbits
+            ),
+            "unmatched_core_signature_counts": unmatched_profile_counts,
+            "generated_group": "S11",
+            "generation_certificate": (
+                "the two conjugate A6 supports meet in one point and their "
+                "conjugates contain all 330 three-cycles, generating A11; "
+                "the five-transposition matching is odd"
+            ),
+        },
+        "order_five_inertia_refinement": {
+            "requirement": (
+                "the five matched core anchors are exactly the support of "
+                "the terminal inertia five-cycle over s=-1"
+            ),
+            "surviving_unoriented_gluing_classes": inertia_supported_classes,
+            "matching_bijections_before_C5_compatibility": factorial(5),
+            "C5_subgroup_compatible_bijections": sum(
+                orientation_counts.values()
+            ),
+            "orientation_counts": {
+                str(exponent): count
+                for exponent, count in orientation_counts.items()
+            },
+            "oriented_classes_modulo_external_deck_translations": 4,
+            "unoriented_classes_modulo_full_C5_normalizer": 1,
+        },
+        "verdict": (
+            "the fivefold interpretation is not a contradiction: it leaves "
+            "one exact degree-11 unoriented permutation gluing (four choices "
+            "after choosing a Kummer generator orientation)"
+        ),
+        "claim_boundary": (
+            "the permutation conclusion is exact under the displayed "
+            "fivefold branch-cycle and rational-source assumptions; proving "
+            "the branch-cycle assumption and the inertia-support "
+            "identification requires the missing toroidal source-node bridge"
+        ),
+    }
+
+
 def paired_star_witness(
     triple: BranchTuple,
     remaining_degree: int,
@@ -561,6 +1024,10 @@ def build_payload() -> dict[str, object]:
     marked_filter = marked_incidence_filter(class_records)
 
     core_group = generated_group(triples[0][:2])
+    order_five = order_five_comparison(triples[0], core_group)
+    fivefold_spectator = fivefold_kummer_spectator_audit(
+        triples, core_group
+    )
     remaining_degree_rows: list[dict[str, int | bool]] = []
     for remaining_degree in range(1, 20):
         witness = paired_star_witness(triples[0], remaining_degree)
@@ -583,7 +1050,7 @@ def build_payload() -> dict[str, object]:
     double_witness = double_packet_witness(triples[0])
     double_packet_full_symmetric_criterion(core_group)
     return {
-        "schema": "plane-jc.f2-a6-simple-spectator-gluing.v2",
+        "schema": "plane-jc.f2-a6-simple-spectator-gluing.v3",
         "status": "conditional-finite-enumeration-not-f2-spectator-classification",
         "certified_terminal_row_input_and_permutation_replay": {
             "geometry_source": "plane-jc/F2_TERMINAL_RESIDUE_COVER.md",
@@ -603,6 +1070,8 @@ def build_payload() -> dict[str, object]:
             "generated_group": "A6",
             "meridian_product": "one",
         },
+        "order_five_kummer_monodromy_comparison": order_five,
+        "conditional_fivefold_kummer_spectator_model": fivefold_spectator,
         "conditional_bridge_assumptions": [
             "the terminal A6 triple embeds on six global sheets and fixes all remaining sheets",
             "each of the two squarefree-R simple Kummer orbits supplies exactly one separate simple branch value with transposition monodromy",
@@ -674,7 +1143,9 @@ def build_payload() -> dict[str, object]:
         "claim_boundary": {
             "proved": (
                 "the finite conditional enumeration and the abstract "
-                "paired-connector permutation witnesses"
+                "paired-connector permutation witnesses; the exact C5 "
+                "normalizer/arithmetic comparison; and the conditional "
+                "fivefold degree-11 enumeration"
             ),
             "not_proved": [
                 "that a simple R Kummer orbit is a branch value or a transposition",
@@ -721,6 +1192,10 @@ def main() -> None:
     print("F2_A6_TWO_SIMPLE_DEGREE7_NORMALIZED=30")
     print("F2_A6_TWO_SIMPLE_DEGREE7_CONJUGACY_CLASSES=6")
     print("F2_A6_MARKED_INTERIOR_FILTER_CONJUGACY_CLASSES=3")
+    print("F2_A6_C5_NORMALIZER=AGL(1,5)_ORDER_20")
+    print("F2_A6_KUMMER_QUADRATIC_CHARACTER=Q(SQRT_5)")
+    print("F2_A6_FIVEFOLD_KUMMER_FORCED_DEGREE=11")
+    print("F2_A6_FIVEFOLD_INERTIA_SUPPORTED_CLASSES=1")
     print("F2_A6_TWO_SIMPLE_DEGREE7_MONODROMY=S7")
     print("F2_A6_TWO_SIMPLE_DEGREE7_RIEMANN_HURWITZ_GENUS=0")
     print("F2_A6_PAIRED_STAR_WITNESSES_REMAINING_DEGREE=1..19")

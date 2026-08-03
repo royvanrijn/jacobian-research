@@ -236,58 +236,50 @@ This is the same adjacent Taylor-coefficient mechanism as the Long/Hopf
 counterexample, but with contact order two and an internal homogeneous
 power lift.
 
-## 4. From spherical moments to differential identities
+## 4. From the Reynolds functional to differential identities
 
-Let \(G=(X,Y,T)\) be a standard real Gaussian vector in three variables.
-For every homogeneous polynomial \(F\) of degree \(2k\), Wick's formula is
+The general
+[Reynolds--apolar transfer lemma](CUSP_PROFILE_SUSPENSION_THEOREM.md#2-reynolds--apolar-transfer)
+says that, for every homogeneous polynomial \(F\) of degree \(2k\),
 
 \[
  \boxed{
- \Delta^kF=2^k k!\,\mathbb E(F(G)).
- }
+ \Delta^kF
+ =2^kk!(2k+1)!!
+   \mathcal R_\rho(F|_{\rho=1}).}
  \tag{4.1}
 \]
 
-The left side is a scalar.  Writing \(G=RU\), with \(U\) uniform on the
-unit sphere and independent of the radius, gives
+This is an algebraic orthogonal-invariance identity: both sides are
+invariant functionals on \(\operatorname{Sym}^{2k}\), and evaluation on
+\(\rho^k\) fixes the constant.  On the real compact form,
+\(\mathcal R_\rho\) is the normalized sphere average used in Section 3.
+Thus the proof does not require expanded differentiation or Gaussian
+integration.  The Gaussian/Wick calculation in the checker remains an
+independent finite replay.
+
+Since \(P^m\) has degree \(12m\), equation (3.12) and (4.1) give
 
 \[
- \mathbb E(R^{2k})=(2k+1)!!.
+ \Delta^{6m}(P^m)=0.
  \tag{4.2}
 \]
 
-Since \(P^m\) has degree \(12m\), equations (3.12) and (4.1) imply
-
-\[
- \Delta^{6m}(P^m)
- =2^{6m}(6m)!\,\mathbb E(P(G)^m)
- =0.
- \tag{4.3}
-\]
-
-This is exactly (1.4).  Likewise, \(x^2P^m\) has degree \(12m+2\), and
-
-\[
- \mathbb E(x^2P(G)^m)
- =(12m+3)!!\,C_m.
- \tag{4.4}
-\]
-
-Applying (4.1) with \(k=6m+1\), then substituting (3.13), yields
+This is exactly (1.4).  Likewise, \(x^2P^m\) has degree \(12m+2\), so
 
 \[
 \begin{aligned}
  \Delta^{6m+1}(x^2P^m)
  &=2^{6m+1}(6m+1)!(12m+3)!!\,C_m\\
  &=2^{8m+1}(6m+1)!(2m)!
-   \frac{(12m+3)!!}{(4m+1)!!},
+   \frac{(12m+3)!!}{(4m+1)!!}.
 \end{aligned}
-\tag{4.5}
+\tag{4.3}
 \]
 
-which proves (1.6).  All displayed differential identities have rational
-coefficients, so the conclusion descends from \(\mathbb C\) to every
-characteristic-zero field.
+This proves (1.6).  The Reynolds functional and all displayed differential
+identities are defined over the ground field, so the conclusion holds over
+every characteristic-zero field.
 
 ## 5. Infinite homogeneous family
 

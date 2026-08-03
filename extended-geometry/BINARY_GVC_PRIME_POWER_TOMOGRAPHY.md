@@ -6,7 +6,10 @@ This note records a finite experiment on the projected two-colour return
 semigroup that occurs in the binary Hall--carry quotient.  The calculation is
 exact in that model.  It does **not** prove unrestricted
 \(\operatorname{GVC}(2)\), and the collisions found below are not GVC
-counterexamples.
+counterexamples.  Unrestricted binary GVC is instead proved by the later
+[Hall-envelope theorem](BINARY_GVC_ENVELOPE_CLOSURE.md); this experiment is
+retained as an independent regression and as documentation of the parked
+Hall/carry route.
 
 The useful outcome is sharper.  A strengthened census through radial span
 seven uses the unrelated primes \(5,7,11,13\), three prime-power layers, and
@@ -16,8 +19,8 @@ adelic collision.  The only fully decorated \(C_2,C_3\)-blind relations are
 three symmetry orbits of one exact all-span family.  A \(C_4\) character
 separates every member of that family.  Consecutive-residue rigidity now
 closes arbitrary nonfree factorizations after fixed marked promotion.  The
-remaining question is whether an actual Hall--jet shell promotes to one such
-fixed marked packet at all.
+question left in that route is whether an actual Hall--jet shell promotes to
+one such fixed marked packet at all.
 
 ## 2. Finite packet model
 
@@ -587,7 +590,7 @@ factorization collision remains in 65 span-four, 400 span-five, or 1,469
 span-six profiles.  These bounded counts are evidence; the all-span
 conclusion is the incidence-forest proof above.
 
-## 9. What remains open
+## 9. What remains open inside the parked route
 
 Corollary 7.2 proves the fixed-character version of the proposed Hall-lift
 theorem.  It also shows that neither distinct-ray factorial independence nor
@@ -614,8 +617,9 @@ but proves that the primitive one-direction tangent kernel and every
 prime-power-character collision with sufficiently large underlying prime are
 flat.  Ruling out the remaining exceptional-small-prime, mixed-prime, and
 two-dimensional cross-packet cancellation over one common high quotient is
-precisely the corrected
-Cartesian affine-carry promotion problem `(SC)` in the uniform binary note.
+precisely the corrected Cartesian affine-carry promotion problem `(SC)` in
+the uniform binary note.  That problem is no longer needed for binary GVC,
+because the Hall-envelope theorem bypasses it.
 
 Thus a binary counterexample route through (6.1) would now require all of:
 

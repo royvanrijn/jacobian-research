@@ -117,7 +117,34 @@ Open work, in dependency order:
    layer-35 extra is a commuting `C0^4`, not `lambda*C0^(-1)`, whose formal
    resonance occurs only at layer 10 and is not a source kernel.  Nonlinear
    rows recover a source root through descent 7 and isolate the first local
-   defect as `27*y^2-9*y+1=0` at descent 8.  The retained
+   defect as `27*y^2-9*y+1=0` at descent 8.  Its fixed Kummer supports are
+   excluded by the Q-band-one endpoint; only the nonzero double-root stratum
+   of `R` remains, and it passes the first local target jet.  The complete B0
+   recurrence now includes all `240` zero layers through `-200`; the fifth
+   multiple is a layer-zero lower-tail Fitting row, not `E5=0`.  The complete
+   target and layer-zero cokernels are now explicit rank-`14` modules, but
+   old B0 generators span both before their earlier triangular equations are
+   imposed.  The sparse lowest-`u` edge witness completes only as an infinite
+   formal shear.  Its all-`r` polynomial second-order repair never terminates
+   quadratically, and exact `r=3` unit ideals exclude cubic and quartic
+   termination.  The exact `v^5` Kummer packet is nevertheless surjective
+   over both descent-eight branches, and its edge Bezout recursion remains
+   surjective through `v^10`.  Uniformly in `r`, its `18*r-1` minor pivots
+   have strict-interior polynomial source lifts (`53` at `r=3`), so the
+   current two-edge Newton data cannot remove them.  Exact CRT quotients the
+   controllable `w=0` block at `r=3`, leaving a
+   rank-`24` global Hermite module over the rank-two candidate algebra.  The
+   fixed `w=1` block is now exactly eliminated by one normalized identity and
+   a `10 x 10` determinant `75000`, leaving thirteen cokernel coordinates.
+   The substitution has been carried into the pre-lower-tail system: it has
+   `1,061` active source coordinates and degree at most eight, not thirteen
+   scalar variables.  Tridiagonal unit minors remove `134` endpoint-disjoint
+   new-Q coordinates on layers `39..29`, leaving `927`; the next live
+   calculation is the coupled Schur/Fitting block beginning at descent `12`
+   (layer `28`) and ending at descent `37`.  First-defect
+   <!-- status-consumer: PF2ER1 64378dad616fc3f2 -->
+   spacings `9..90` still require the same full
+   target/tail descent if it is eliminated.  The retained
    contact audit in
    [`F2_BOUNDARY_HANDOFF.md`](F2_BOUNDARY_HANDOFF.md) proves that raw contact
    multiplicities cannot be promoted to boundary rows.  The later
@@ -186,7 +213,7 @@ silently treated as solved.
 
 | Pair | gcd / ratio | first corner and chain data | Remaining obstruction | Expected difficulty | Does the \((72,108)\) proof apply unchanged? |
 | --- | --- | --- | --- | --- | --- |
-| \((75,125)\) | 25; \(3:5\) | family F2, \(A_0=(5,20)\), final \((7/5,2)\); certified terminal row `(e,f)=(1,6)` | globally attach one packet or the same-target/distinct-target double packet, classify spectators, and run purity/different/class-group/unit/canonical/meridian ledgers; exhaustive lower Laurent masks remain an optional coefficient route | high, but finite three-case attachment ledger | no: different ratio, corner, bands, and approximate-root exponents |
+| \((75,125)\) | 25; \(3:5\) | family F2, \(A_0=(5,20)\), final \((7/5,2)\); certified terminal row `(e,f)=(1,6)` | eliminate the earliest movable-double-`R` full-tail Fitting branch, then the later-spacing regimes; in parallel globally test its two-principal-packet gluing | high: one exact earliest coefficient stratum plus a finite spacing ledger | no: different ratio, corner, bands, and approximate-root exponents |
 | \((84,126)\) | 42; \(2:3\) | \(A_0=(7,35)\to(19/7,5)\), and a second realization \((12,30)\to(16/3,10)\to(11/6,3)\) | two chain realizations must both be excluded | high | no: the ratio agrees but neither chain is \((8,28)\to(11/4,7)\) |
 | \((96,128)\) | 32; \(3:4\) | F24, \((8,24)\to(14/4,6)\to(5/4,0)\to(19/8,3)\) | longest family-derived corner chain at this maximum | very high | no |
 | \((88,132)\) | 44; \(2:3\) | \((11,33)\to(19/4,8)\) | new \(2:3\) coefficient system | high | no |

@@ -1996,13 +1996,298 @@ Thus the second pair is not a missing finite Cartier-index computation: it
 is a nonnormal conductor obstruction, and every positive multiplicity is
 excluded.  The rational conic route is closed.
 
+### 6.15. Degree-twenty factor strata and a one-jet correction
+
+The next root-linear layer is already structured.  Use the integral basis
+
+\[
+ (Q_0,Q_1,Q_2,Q_3,Q_4,Q_5)
+ =(q_0,4q_1,4q_2,3q_3,q_4,q_5),
+ \qquad q_5=a^2T.                                  \tag{6.81}
+\]
+
+On the rational root chart put
+
+\[
+ \widehat R_i=
+ \frac{H^5}{K^3}
+ Q_i\!\left(\frac{N_1}{H},\frac{N_2}{H},T_*\right).
+                                                               \tag{6.82}
+\]
+
+Exact division gives
+
+\[
+ \deg(\widehat R_0,\ldots,\widehat R_5)
+ =(12,13,14,13,14,14),
+ \qquad \gcd(\widehat R_0,\ldots,\widehat R_5)=1,             \tag{6.83}
+\]
+
+and, with
+
+\[
+ A_*=U^3-V^3-9V^2-27V-54,
+\]
+
+\[
+ \widehat R_5=3A_*M^2K^2L.
+\]
+
+There is an exact affine-line theorem on the full six-dimensional space.
+For a graph line \(U=mV+n\), restrict
+\(\widehat R_0,\ldots,\widehat R_5\) and form the \(15\)-by-\(6\)
+coefficient matrix in \(1,V,\ldots,V^{14}\).  Let \(f_i\),
+\(0\leq i\leq3\), be the four consecutive maximal minors using rows
+\(i,\ldots,i+5\).  Exact resultants and univariate gcds give
+
+\[
+ \begin{aligned}
+ \gcd_{i=1}^3\operatorname {Res}_m(f_0,f_i)
+   &=n^{16}(4n^2+6n+9)^{81},\\
+ \gcd_{i=0}^3 f_i(m,0)&=m^4,\\
+ \gcd_{i=0}^3 f_i^{\rm vert}(n)&=(n^2+3n+9)^{15}.
+ \end{aligned}                                      \tag{6.84}
+\]
+
+Both quadratics are anisotropic over \(\mathbb Q\).  Thus the only
+rational affine line is \(U=0\).  The kernel there is two-dimensional; in
+the integral basis it is
+
+\[
+ \boxed{
+ \left\langle
+ (309,-12,0,8,0,0),\ (0,-3,-1,0,0,1)
+ \right\rangle.}                                    \tag{6.85}
+\]
+
+The first direction is \([103:-16:0:8:0:0]\) in the \(q\)-basis and has
+strict polynomial \(9UH G_9\), with \(G_9\) the known degree-nine
+genus-ten residual.  The new kernel direction is not a different isolated
+boundary:
+
+\[
+ q_5-4(3q_1+q_2)=T(a^2-4\rho).
+\]
+
+It is exactly the rational conic from Section 6.14 multiplied by \(T\); its
+strict pullback contains \(U\) together with the already visible fixed
+factors.  Consequently \(q_2,q_4,q_5\) produce no other rational affine
+line.  The affine-line search in the degree-twenty root-linear stratum is
+closed; nonlinear rational components remain open.
+
+The full six-dimensional space has two exact quadratic-factor strata.  Put
+\(\rho_V=V^2+3V+9\).  Divisibility of a strict selector is equivalent to
+
+\[
+\begin{aligned}
+ K\mid\sum s_i\widehat R_i
+ &\Longleftrightarrow
+ (s_i)\in
+ \left\langle
+ (0,3,1,0,0,0),
+ (0,0,0,2,1,0),
+ (0,0,0,0,0,1)
+ \right\rangle,\\
+ M\mid\sum s_i\widehat R_i
+ &\Longleftrightarrow
+ (s_i)\in
+ \left\langle
+ (1,0,0,0,0,0),
+ (0,0,0,2,1,0),
+ (0,0,0,0,0,1)
+ \right\rangle,\\
+ \rho_V\mid\sum s_i\widehat R_i
+ &\Longleftrightarrow
+ (s_i)\in\left\langle(0,3,1,0,0,0)\right\rangle.
+                                                               \tag{6.86}
+\end{aligned}
+\]
+
+These kernels explain the small reducible members.  In the coefficient
+root algebra one has the unexpectedly short identities
+
+\[
+ \boxed{
+ 3q_1+q_2=T\rho,
+ \qquad
+ 6q_3+q_4=aJ,
+ \qquad
+ J=(b+6)T-81\rho.
+ }                                                     \tag{6.87}
+\]
+
+The first is only the old \((T,\rho)\) boundary.  The second exposes a much
+sharper near-selector.  On six of the seven normalized branches, \(J\)
+already has the required truncation.  On the simple \(F\)-branch alone,
+
+\[
+ J=\frac{27}{4}ck^2u^5+O(u^6),                      \tag{6.88}
+\]
+
+whereas order six is required.  Equivalently, its four unsplit order
+vectors are
+
+\[
+ (2,1,1,1),\quad(3,2,2,2),\quad(3,3,3,3),
+ \quad(5,3,3,3).
+\]
+
+Thus the missing coupling has been localized to one residue coefficient,
+not merely to a divisor class.  The near-selector itself is not the answer:
+its degree-sixteen coefficient norm is absolutely irreducible of genus ten.
+
+The bad jet can be cancelled explicitly.  Set
+
+\[
+ R=9ab^2+27ab-162a-8b^3-36b^2-108b-108
+\]
+
+and
+
+\[
+ \boxed{S_{\rm jet}=36J+(2b+3)\rho R.}              \tag{6.89}
+\]
+
+This correction is coupled to the earlier selector \(\widehat H\), rather
+than being an unrelated direction.  With \(c=2b+3\), exact expansion gives
+
+\[
+ \begin{aligned}
+ (c+9)\widehat H-16cJ&=-12\rho R,\\
+ 12S_{\rm jet}&=64\rho J-c(c+9)\widehat H.
+ \end{aligned}                                      \tag{6.90}
+\]
+
+On the simple \(F\)-branch,
+\(\rho R=-243k^2u^5+O(u^6)\), so the two \(c k^2u^5\) coefficients in
+(6.89) cancel.  Exact normalized jets and Newton polygons prove that
+\(S_{\rm jet}\) has precisely the required four order vectors on every
+ray.  It is a new exact formula, but (6.90) shows that it lies in the coupled
+module generated by the near-selector and \(\widehat H\).  It still fails
+the rational-component gate.  Its norm is irreducible of degree twenty-four;
+after root-chart pullback and removal of the fixed \(K^3\), its strict
+degree-eighteen curve is absolutely irreducible of genus thirty-one.
+
+For orientation, two bounded rational-factor censuses were also run.  In
+the \(q_5=0\) slice, all \(175680\) primitive \(q\)-basis parameters of
+height at most six are reducible over \(\mathbb Q\) exactly on the two
+strata in (6.86).  In the full six-dimensional space, the same statement
+holds for all \(58095\) primitive parameters of height at most three.
+These are experiments, not an exhaustion of rational points or nonlinear
+rational components.
+
+There is now also an exhaustive finite-field conic sieve, distinct from
+those height-bounded experiments.  Use projective conic coordinates
+
+\[
+ [U^2:UV:V^2:U:V:1].
+\]
+
+Over \(\mathbb F _5\), exactly \(3875\) projective forms retain degree two.
+Reducing each of the six strict pullbacks modulo each form and computing the
+rank of the remainder matrix leaves exactly four conics:
+
+\[
+\begin{array}{c|c|c}
+\text{conic coordinates}&\text{matrix rank}&\text{selector kernel}\\ \hline
+(1,0,1,0,3,4)&5&\langle(1,4,1,0,0,0)\rangle\\
+(1,0,2,0,1,3)&3&
+ \langle(1,0,0,0,0,0),(0,0,0,2,1,0),(0,0,0,0,0,1)\rangle\\
+(1,1,4,4,2,1)&3&
+ \langle(0,3,1,0,0,0),(0,0,0,2,1,0),(0,0,0,0,0,1)\rangle\\
+(0,0,1,0,3,4)&5&\langle(0,3,1,0,0,0)\rangle .
+\end{array}
+\]
+
+The last three are precisely the reductions of \(M,K,\rho_V\).  The first
+is the sole nonstructural residue:
+
+\[
+ Q=U^2+V^2+3V+4,\qquad
+ s=(1,-1,1,0,0,0)\pmod5.
+\]
+
+It does not lift to characteristic zero.  In the affine incidence chart
+where the \(U^2\)- and \(s_0\)-coordinates are one, its exact lift tree has
+
+\[
+ 5,\qquad25,\qquad0
+\]
+
+solutions modulo \(25,125,625\), respectively.  In particular, no
+\(\mathbb Z _5\)-point and hence no rational conic-selector pair can reduce
+to this residue in that chart.
+
+This is a certified good-reduction sieve, not a global conic
+classification.  After primitive integral scaling, a new rational
+quadratic factor must either lose its quadratic part modulo \(5\), or
+specialize into one of the nonreduced \(K,M,\rho_V\) neighborhoods.  The
+generic conic chart and its only apparent modular escape are closed.
+
+The next nonlinear layer also admits an exhaustive good-reduction sieve.
+Instead of enumerating all projective cubic equations, factor every member
+of the projective selector space \(\mathbb P^5(\mathbb F _5)\).  There are
+exactly
+
+\[
+ \frac{5^6-1}{5-1}=3906
+\]
+
+members, and every irreducible cubic component must occur in one of their
+factorizations.  Exactly four irreducible cubics occur: the fixed factors
+\(A_*,L,H\), and
+
+\[
+ Q_c={}
+ U^3-12UV^2-16V^3-36UV-72V^2-108U-216V-216.       \tag{6.86a}
+\]
+
+The last factor has the one-dimensional integral selector kernel
+
+\[
+ \langle(0,-3,-1,0,0,1)\rangle .                   \tag{6.86b}
+\]
+
+Thus it is exactly the previously displayed cubic factor of
+\(T(a^2-4\rho)\), not a new selector.  In its monic-\(U^3\),
+\(s_5=1\) incidence chart the modular Jacobian has full rank fourteen.
+Its unique lift through eight successive \(5\)-adic levels reconstructs
+(6.86a) and (6.86b) exactly.
+
+There are \(38\) projective selector-incidence points over the three
+non-\(H\) factors \(A_*,L,Q_c\).  At every one, the complete tangent
+kernel has zero cubic-coordinate part; only the selector can move inside
+its fixed factor kernel.  All excess moving-factor tangents occur on the
+\(31\)-point \(H\)-kernel.  This is the artificial factor introduced by
+the common denominator clearing, and its special fiber is nontransverse.
+On the smallest transverse slice
+
+\[
+ \widehat R_3+x\widehat R_4+y\widehat R_5,
+\]
+
+the exact lift counts modulo successive powers \(5^2,\ldots,5^9\) are
+
+\[
+ 5,5,25,25,125,125,625,625.                         \tag{6.86c}
+\]
+
+The finite-field classification and the \(38\) tangent calculations are
+exact.  The finite list (6.86c) is bounded computational evidence for a
+nonreduced \(H\)-adic thickening; it neither proves nor supplies a moving
+characteristic-zero factor.  Consequently a new rational irreducible cubic
+must lose degree modulo five, become reducible there, or enter this
+nontransverse \(H\)-adic neighborhood.  That neighborhood, rather than the
+generic cubic layer, is the next cubic-factor search.
+
 ## 7. Structured next search
 
-Both corrected-selector factorizations are now closed, (6.48) gives a
-sharp first lower bound for their replacement, and Sections 6.11--6.12
-identify both the rational fixed-infinity strata and the source curve of
-the moving discriminant.  The next search should exploit this critical
-curve before doing any contraction:
+Both corrected-selector factorizations are closed, (6.48) gives a sharp
+first lower bound for their replacement, and Sections 6.11--6.15 identify
+the fixed-infinity strata, the moving critical curve, the first rational
+component, and the first degree-twenty factor kernels.  The remaining
+selector search is now finite in each chosen support and should proceed in
+this order:
 
 1. implicitize the degree-\((19,18,18)\) kernel map on
    \(\mathscr D_{23}\), or cover it by smaller resultant charts, and locate
@@ -2010,14 +2295,21 @@ curve before doing any contraction:
 2. compute the extra delta contribution at the rational points and
    self-intersections of that image, retaining only parameters for which
    every indispensable norm component is rational;
-3. discard the conic support by (6.80), and search for a different rational
-   horizontal prime whose normalization avoids a two-branch conductor
-   mismatch;
-4. test polynomial divisibility and construct affine coordinates only for
-   a candidate which passes those preceding gates;
-5. if the degree-sixteen plane has no rational member, move to the
-   degree-twenty root-linear stratum before the root-quadratic
-   degree-\(\geq24\) stratum.
+3. analyze the formal conic neighborhoods of the \(K,M,\rho_V\) kernels
+   and the degree-dropping mod-\(5\) boundary, together with the
+   nontransverse cubic \(H\)-neighborhood isolated by (6.86c); the generic
+   conic and irreducible-cubic charts have no other loci after the conic
+   exception dies modulo \(625\);
+4. compute the seven-branch truncated-jet map on the next root-linear
+   support, solve the affine space of corrections whose only prescribed
+   residue cancels (6.88), and impose rationality of every norm component
+   before testing a candidate; \(S_{\rm jet}\) is the first exact point of
+   this space and is rejected by its genus-thirty-one strict curve;
+5. search nonzero ideal-contraction classes and their coupled pairs in the
+   normalized-boundary audit, rather than requiring one principal selector
+   to carry the whole divisor row; run normalization, conductor, unit,
+   class-group, and affine-space recognition tests before attempting a
+   Keller assembly.
 
 Random ambient shears, the uncorrected exceptional quotients, and the
 coarse four-divisor contraction are no longer relevant to this branch.
@@ -2025,12 +2317,15 @@ Nor can extra selector primes repair (6.29): the terminal defect is already
 present in the class of its forced strict \(B_0\) pole.  The curvette split
 removes that defect but exposes independent genus-thirteen and
 genus-twenty obstructions.
-The conic branch is closed for every positive multiplicity by (6.80).
-The next exact frontier is therefore a different rational-horizontal
-selector found through the implicitized moving critical image, followed by
-the same normalization/conductor test before any affine contraction.  It is
-not a rational degeneration inside \((q_2,\ell)\), nor polynomial
-contraction of either existing split.
+The conic branch is closed for every positive multiplicity by (6.80), and
+the line theorem closes the full degree-twenty root-linear space.  The next
+exact frontier is therefore a nonlinear rational component, a rational
+member found through the implicitized moving critical image, or a genuinely
+coupled pair in the contraction module of the normalized-boundary audit.
+Each must pass the same
+normalization/conductor test before any affine contraction.  It is not a
+rational degeneration inside \((q_2,\ell)\), nor polynomial contraction of
+either existing split.
 
 ## 8. Reproduction
 
@@ -2047,6 +2342,12 @@ Singular -q scripts/verify_a4_corrected_boundary_genus.sing
 Singular -q scripts/verify_a4_genus_zero_selector_search.sing
 .venv/bin/python scripts/verify_a4_sharp_selector_plane.py
 .venv/bin/python scripts/verify_a4_conic_principal_obstruction.py
+.venv/bin/python scripts/verify_a4_degree_twenty_line_selectors.py
+.venv/bin/python scripts/verify_a4_degree_twenty_line_selectors.py --conic-sieve
+.venv/bin/python scripts/verify_a4_degree_twenty_line_selectors.py --cubic-sieve
+.venv/bin/python scripts/verify_a4_degree_twenty_line_selectors.py --census-bound 6
+.venv/bin/python scripts/verify_a4_degree_twenty_line_selectors.py --census-bound 3 --include-q5
+Singular -q scripts/verify_a4_degree_twenty_near_selector.sing
 ```
 
 The first checker verifies the compact inverse basis, the two-coordinate
@@ -2084,10 +2385,11 @@ the degree-fourteen component, and rules out the surviving complement as
 an affine plane.  The sixth Python checker computes the complete
 total-degree-three valuation spaces in root degrees one and two, verifies
 the exact order vectors of four new degree-three selectors, and proves the
-sharp horizontal norm-degree floor sixteen.  The final Singular checker
-verifies irreducibility and genera twelve and fourteen for two sharp-bound
-norms, and genus twelve for one displayed \(a^3\)-perturbation.  It does
-not classify the full degree-sixteen parameter plane.
+sharp horizontal norm-degree floor sixteen.  The first selector Singular
+checker verifies irreducibility and genera twelve and fourteen for two
+sharp-bound norms, genus twelve for one displayed \(a^3\)-perturbation,
+and genus ten for the near-selector \(J\).  It does not classify the full
+degree-sixteen parameter plane.
 The final Python checker constructs the degree-ten strict model of the
 sharp selector plane, proves generic absolute irreducibility, and verifies
 the complete rational fixed-infinity tangent-cone hierarchy and the exact
@@ -2102,4 +2404,28 @@ The final conic-principal checker purifies that rational component to
 \((q_2,\ell)\), replaces the genus-ten residual by an absolutely
 irreducible genus-two residual, and computes the four-point non-Cartier
 locus which obstructs coefficient-one principal isolation.  It does not
-exclude a support-only positive multiple or construct a Keller map.
+stop there: the conductor comparison excludes support-only principal
+isolation at every positive multiplicity.  It does not construct a Keller
+map.  The degree-twenty line checker constructs all six strict root-linear
+pullbacks and their complete \(K\)-, \(M\)-, and \(\rho_V\)-divisibility
+kernels.  Four maximal minors, three exact resultants, and univariate gcds
+prove that \(U=0\) is the only rational affine line in the full
+six-dimensional space.  Its kernel is generated by the known direction and
+\(T(a^2-4\rho)\), the old rational conic multiplied by \(T\).  The two
+bounded-census commands are factorization experiments:
+height six on \(q_5=0\), and height three in the full six-dimensional space.
+The conic-sieve command is instead exhaustive over all \(3875\) projective
+degree-two forms over \(\mathbb F _5\); it finds only \(K,M,\rho_V\) and
+one exceptional residue, then proves that the exceptional lift tree dies
+modulo \(625\).  This is a good-reduction sieve, not a characteristic-zero
+classification.  The cubic-sieve command factors all \(3906\) projective
+selector members over \(\mathbb F _5\).  It finds only \(A_*,L,H\), and the
+known cubic factor of \(T(a^2-4\rho)\); all \(38\) non-\(H\) incidence
+points have fixed-factor tangent spaces.  The only excess tangents lie in
+the artificial \(H\)-factor plane, where the displayed eight-level lift
+counts are explicitly bounded evidence, not a characteristic-zero
+classification.  Nonlinear rational components remain open.  The last
+Singular checker proves absolute irreducibility and
+genus ten for the near-selector norm, and absolute irreducibility and genus
+thirty-one for the strict curve of its exact one-jet correction.  None of
+these computations constructs an affine-space Keller map.

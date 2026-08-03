@@ -33,9 +33,10 @@ Normaliz computes the Graver basis exactly through a Lawrence lifting.  A
 single full-support computation contains the basis of every coordinate
 subconfiguration: filter for relations whose support lies in that
 subconfiguration.  The finite prime/exponent window and the projected
-two-colour model make the collision census a bounded experiment, not a
+two-colour model make the collision census a bounded experiment, not the
 proof of unrestricted GVC(2), and a surviving signature is not by itself a
-GVC counterexample.
+GVC counterexample.  The unrestricted proof is the separate Hall-envelope
+theorem.
 """
 
 from __future__ import annotations
@@ -1523,8 +1524,8 @@ def build_experiment(
         "status": {
             "kind": "bounded_experiment",
             "claim": (
-                "projected two-colour Graver census only; neither an "
-                "unrestricted GVC(2) proof nor a GVC counterexample"
+                "projected two-colour Graver census only; not the "
+                "Hall-envelope proof and not a GVC counterexample"
             ),
         },
         "parameters": {
@@ -1804,8 +1805,8 @@ def main() -> None:
     if arguments.summary_output is not None:
         print(f"wrote {arguments.summary_output}")
     print(
-        "STATUS: bounded projected-scroll experiment; no GVC(2) theorem "
-        "or counterexample claimed"
+        "STATUS: bounded projected-scroll experiment; not the Hall-envelope "
+        "GVC(2) theorem and not a counterexample"
     )
 
 

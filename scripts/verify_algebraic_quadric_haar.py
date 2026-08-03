@@ -84,6 +84,25 @@ def power(polynomial: Polynomial, exponent: int) -> Polynomial:
     return out
 
 
+def apolar_scalar(operator: Polynomial, polynomial: Polynomial) -> Fraction:
+    """Evaluate a top constant-coefficient contraction at the origin."""
+    return sum(
+        operator_coefficient
+        * polynomial.get(exponent, Fraction(0))
+        * factorial(exponent[0])
+        * factorial(exponent[1])
+        * factorial(exponent[2])
+        for exponent, operator_coefficient in operator.items()
+    )
+
+
+def double_factorial(value: int) -> int:
+    result = 1
+    for entry in range(value, 0, -2):
+        result *= entry
+    return result
+
+
 ONE: Polynomial = {(0, 0, 0): Fraction(1)}
 U: Polynomial = {(1, 0, 0): Fraction(1)}
 V: Polynomial = {(0, 1, 0): Fraction(1)}
@@ -259,6 +278,25 @@ def main() -> None:
                 n + 1, height_degree
             ) == 2 * (n + 1) * balanced_moment(n, height_degree + 2)
 
+    # Reynolds--apolar transfer on every ternary monomial through degree ten.
+    # The written proof gives the identity in arbitrary dimension and degree.
+    delta_symbol = add(scale(4, multiply(U, V)), T_SQUARED)
+    for order in range(6):
+        operator = power(delta_symbol, order)
+        transfer_constant = (
+            2**order
+            * factorial(order)
+            * double_factorial(2 * order + 1)
+        )
+        total_degree = 2 * order
+        for a in range(total_degree + 1):
+            for b in range(total_degree - a + 1):
+                c = total_degree - a - b
+                monomial = {(a, b, c): Fraction(1)}
+                assert apolar_scalar(operator, monomial) == (
+                    transfer_constant * haar(monomial)
+                )
+
     # Long's all-order identities are checked in a useful exact range.
     p, q = long_witness()
     p_power = ONE
@@ -300,6 +338,7 @@ def main() -> None:
     print("PASS quadric Haar: L(1)=1 and the quadric ideal is annihilated")
     print("PASS quadric Haar: D0,D+,D- invariance is exact and algebraic")
     print("PASS quadric Haar: Lie/quadric recurrences force the closed moments")
+    print("PASS quadric Haar: Reynolds-apolar transfer through degree 10")
     print("PASS quadric Haar: Long moments through order 20")
     print("PASS quadric Haar: agreement with the spherical checker")
 

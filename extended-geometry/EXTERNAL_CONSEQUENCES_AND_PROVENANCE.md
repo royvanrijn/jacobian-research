@@ -31,11 +31,14 @@ flowchart TD
     D5["Dvorsky homogenization of Long's SU(2) seed"]
     I5["Direct five-pair witness: not SIC(5)"]
     U5["Third-order constant-coefficient witness: not unrestricted GVC(5)"]
+    G3["Repository homogeneous ternary witness: not unrestricted GVC(3)"]
+    G2P["Hall-envelope theorem: unrestricted GVC(2) holds"]
+    GD["Exact unrestricted GVC dimension threshold: first failure at 3"]
     V40["40 variables: generalized Laplacian VC and nonhomogeneous HN-VC fail"]
     H42["42 variables: homogeneous quartic HN-VC fails"]
     C22["Separate circuit source: 22 variables"]
     HR37["44-variable quartic HN witness of Hessian rank 37"]
-    Q["Certified ledger: SIC 2 / unrestricted GVC 5 / Laplacian GVC 40 / homogeneous HN-VC 42 / HN rank 37"]
+    Q["Certified ledger: SIC 2 / unrestricted GVC 3 / Laplacian GVC 40 / homogeneous HN-VC 42 / HN rank 37"]
     E["Witness-specific data: named multiplier z_0, exact artifacts, inverse recurrence"]
     M["Motivation for Long's searches"]
     GP["Long's direct three-Gaussian polynomials"]
@@ -65,11 +68,14 @@ flowchart TD
     SP -->|"homogenized differential lift"| D5
     D5 -->|"direct contraction"| I5
     D5 -->|"all-order binomial identity"| U5
+    G3 -->|"direct all-order witness"| GD
+    G2P -->|"positive theorem"| GD
     BO -->|"cotangent/symmetric lift"| H42
     BO -.->|"explicit realization data"| E
     I20 -.->|"quantitative ledger"| Q
     I5 -.->|"quantitative ledger"| Q
     U5 -.->|"quantitative ledger"| Q
+    G3 -.->|"sharp unrestricted GVC ledger"| Q
     V40 -.->|"quantitative ledger"| Q
     H42 -.->|"quantitative ledger"| Q
     BO -->|"different circuit optimization"| C22
@@ -120,9 +126,12 @@ third-order Dvorsky operator does not lower the ordinary-Laplacian endpoint.
 The weighted-Gaussian branch has a separate one-pair bihomogenization
 giving \(\neg\mathrm{SIC}(3)\).  A later internal full-rank
 bidegree-\((4,4)\) witness gives \(\neg\mathrm{SIC}(2)\), fixing the exact
-pair minimum because the one-pair theorem is known.  The node listing
-\(2/5/40/42/37\) is only the current certified witness
-ledger: it is not a proof of minimality or a literature-wide record.
+pair minimum because the one-pair theorem is known.  The later homogeneous
+ternary witness lowers unrestricted GVC to dimension three, while the binary
+Hall-envelope theorem proves dimension two positive; together they make the
+GVC threshold exact.  The node listing \(2/3/40/42/37\) is the current
+certified ledger.  Only the SIC and unrestricted-GVC dimension entries are
+asserted sharp here; it is not a literature-wide record.
 Likewise, named multipliers, artifacts, and recurrences describe explicit
 realizations; they do not assert first discovery.  The 44-variable rank-37
 witness is a different quantitative realization of the already-failed HN
@@ -141,6 +150,7 @@ are not entries in a single minimum problem.
 | Repository | essential cubic, 21 variables | SIC/GVC/HN witnesses in 20/40/42 | internal |
 | Repository | \(H(z)=z\) weighted circular Gaussian bridge | explicit \(\neg\mathrm{SIC}(3)\) by one-pair bihomogenization | internal; [exact proof](THREE_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) |
 | Repository | full-rank bidegree-\((4,4)\) two-pair form | explicit \(\neg\mathrm{SIC}(2)\) with beta-integral moments | internal; [exact proof](TWO_PAIR_IMAGE_MATHIEU_COUNTEREXAMPLE.md) |
+| Repository | homogeneous ternary cusp witness plus binary Hall-envelope theorem | explicit \(\neg\mathrm{GVC}(3)\), positive \(\mathrm{GVC}(2)\), and exact first failure in dimension three | internal; [counterexample](THREE_VARIABLE_HOMOGENEOUS_GVC_COUNTEREXAMPLE.md), [binary proof](BINARY_GVC_ENVELOPE_CLOSURE.md) |
 | Long--Dvorsky | Long's \(SU(2)\) seed and Dvorsky's homogenization | explicit \(\neg\mathrm{GVC}(5)\) and \(\neg\mathrm{SIC}(5)\) | external; [exact local audit](DVORSKY_GVC5_COUNTEREXAMPLE.md) |
 
 In particular, Santibañez-Leal's
@@ -149,8 +159,10 @@ starts from a 24-variable cubic-homogeneous map and gives a 48-variable
 homogeneous Hessian-nilpotent quartic with an exact collision and
 Vanishing-Conjecture failure.  The repository's collision-derived
 \(20/40/42\) dimensions and rank \(37\) come from different optimized routes.
-The Dvorsky--Long formulas independently lower the unrestricted
-constant-coefficient GVC dimension to five.  The repository-derived
+The Dvorsky--Long formulas historically lowered the unrestricted
+constant-coefficient GVC dimension to five.  The repository's homogeneous
+ternary witness lowers it to three, and Hall-envelope separation proves that
+three is exact.  The repository-derived
 bihomogenization lowered the certified SIC pair dimension to three; the
 later full-rank witness makes the sharp value two, while leaving the
 ordinary-Laplacian and homogeneous HN entries at 40 and 42.  The table

@@ -44,9 +44,9 @@ CORE_ORDER = [
     "R1", "R2", "AMS1", "IA1",
 ]
 ACTIVE_OPEN = {
-    "GVC2ALL",
     "OP-CR",
     "OP-CCDM",
+    "OP-GLDC",
     "OP-GVC2-RP",
     "OP-GVC3-MIN",
     "OP-HC4-D5",
@@ -455,6 +455,7 @@ def render(index: dict) -> str:
     _table(lines, [by_id[i] for i in CORE_ORDER])
 
     sections = [
+        ("Primary theorems", [x for x in entries if x["kind"] == "theorem" and x["state"] == "proved" and x["priority"] == "primary"], False),
         ("Falsified claims", [x for x in entries if x["state"] == "falsified"], True),
         ("Audited high-risk claims", [x for x in entries if x["kind"] == "theorem" and x["state"] == "partial" and x["priority"] == "reference"], False),
         ("Completed reference theorems", [x for x in entries if x["kind"] == "theorem" and x["state"] == "proved" and x["priority"] == "reference"], False),

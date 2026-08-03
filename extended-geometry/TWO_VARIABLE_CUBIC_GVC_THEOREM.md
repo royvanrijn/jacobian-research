@@ -31,9 +31,11 @@ nullcone.  Consequently every fixed SIC multiplier, including multipliers
 depending on both dual and coordinate variables, also contracts to zero
 for all sufficiently large powers.
 
-This theorem does not prove unrestricted \(\operatorname{GVC}(2)\) or
-\(\operatorname{SIC}(2)\).  It treats homogeneous order and polynomial
-degree exactly three.
+This theorem treats homogeneous order and polynomial degree exactly three;
+it did not by itself prove unrestricted \(\operatorname{GVC}(2)\), which is
+now supplied by the independent
+[Hall-envelope theorem](BINARY_GVC_ENVELOPE_CLOSURE.md).  It does not prove
+\(\operatorname{SIC}(2)\).
 
 ## 2. Covariance and the three symbol orbits
 

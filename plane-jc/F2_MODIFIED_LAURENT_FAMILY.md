@@ -18,7 +18,43 @@
 > `6,6,7,7,10`, and the formal `lambda*C^(-1)` resonance is at layer `10`,
 > not layer `35`.  The nonlinear rows recover a source root through descent
 > `7` and leave the exact descent-`8` local quadratic
-> `27*y^2-9*y+1=0`.  Consequently this work does not yet
+> `27*y^2-9*y+1=0`.  The normalized `Q_1` band excludes all four fixed
+> `u^5=1` double-prime supports; for this earliest defect, only a nonzero double root of `R` remains,
+> and an exact `P_3/Q_1` interpolation shows that its first local target jet
+> survives.  The complete corner-derived tail now runs through layer `-200`.
+> At the candidate's fifth multiple, descent `40`, genuine new source bands
+> of dimensions `9` and `19` enter, so the old primitive `E5=0` condition is
+> not valid after the target.  The complete target and layer-zero cokernels
+> are now explicit rank-`14` modules.  The local target jet requires an
+> off-grid lowest-`u` correction, and that correction has an exact Bezout
+> edge witness.  Uniformly in `r`, this sparse witness is the first jet of
+> an exact formal symplectic shear, but the shear has an unavoidable infinite
+> tail; its literal polynomial truncation already fails at transverse order
+> two.  The polynomial second-order repair is now classified uniformly in
+> `r` and never terminates quadratically.  For `r=3`, exact unit calculations
+> also exclude cubic and quartic transverse terminations.  The exact `v^5`
+> Kummer packet has now been reconstructed from those coupled bands.  Its
+> `8 x 10` first-appearance matrix has the unit minor
+> `3^5*5^16*e^13`, so both roots of `27*y^2-9*y+1` survive; the same Bezout
+> mechanism absorbs the edge forcing through `v^10`.  The unit-minor formulas
+> extend to every `r>=2`; their `18*r-1` pivots have exact original-polynomial
+> lifts strictly inside both corner-derived supporting edges.  Exact CRT removes
+> the resulting controllable `w=0` coordinates and leaves a rank-`24`
+> target/layer-zero Hermite module over the rank-two candidate algebra.  At
+> `r=3`, the full fixed-endpoint dependency cone is now derived from the
+> corner bands: one endpoint coordinate is the terminal identity, and the
+> other ten have determinant `75000`.  Exact `w=0`-preserving source lifts
+> eliminate them, leaving `13` global Hermite coordinates.  Those
+> substitutions have now been carried exactly.  They give degree-at-most-
+> eight circuits with `1,061` active source coordinates; unit minors then
+> remove `134` endpoint-disjoint new-Q coordinates on layers `39..29`.
+> Thus deeper standalone transverse truncation is not the missing argument.
+> The live coupled Schur/Fitting system starts at descent `12`, layer `28`,
+> where P3/Q13 first meets the endpoint solution, and has `927` active source
+> coordinates before the remaining coupled elimination.
+<!-- status-consumer: PF2ER1 64378dad616fc3f2 -->
+> Before the earlier triangular rows are imposed, the old
+> bands span both cokernels.  Consequently this work does not yet
 > exclude `(75,125)` or the infinite F2 family.  The formal residue
 > calculation can now be pushed in the opposite direction: every all-`r`
 > compact Fitting residue has an explicit endpoint-binomial point, and both
@@ -270,6 +306,190 @@ supported at multiplicity-two primes of `C_0`, and reduces to
 This is the earliest exact tail-correction candidate over
 `QQ(sqrt(-3))`; the target descent `36` intervenes before its fifth residue,
 so (12d) is not yet a global source pair.
+
+The exact band-one filter sharpens this further.  At descent `24` the
+candidate forces the absolute Q-band-one coefficient
+
+\[
+q_1=t u^4S(u^5),\qquad \deg S\le20,
+\]
+
+to vanish at the supporting double prime.  Since the endpoint normalization
+is `S(1)=-1`, none of the four nontrivial roots above `u^5=1` can support it.
+For this spacing, only the nonzero double-root stratum
+
+\[
+R(w)=\alpha(w-w_0)^2,\qquad S(w_0)=0
+\]
+
+remains.  It is not killed by the first target jet: degree-one invariant
+polynomials in the exact `P_3` and `Q_1` bands can simultaneously satisfy
+their endpoint normalizations, vanish at `w_0` on Q, and give
+`3*p_3(t_0)*q_1'(t_0)=t_0^4`.
+
+After `R(1)=1/25`, its exact residual core is
+
+\[
+\mathbf Q[w_0,w_0^{-1},(w_0-1)^{-1},y]
+/(27y^2-9y+1),
+\]
+
+a finite étale rank-two algebra over the one-parameter `w_0` base.  This is
+the smallest exact candidate produced by the route, but only a local seed.
+
+Nor may one restore the old resultant by imposing its fifth numerator.
+The corner-derived full bands are `-75..15` on P and `-125..25` on Q, so
+the bracket continues through layer `-200`.  At descent `40` the new bands
+`P_-25` and `Q_-15` have dimensions `9` and `19`, and the target-tail pair
+`P_11/Q_-11` also contributes.  Thus `E5=0` is replaced by the exact
+layer-zero Fitting equation for
+
+\[
+T_{40}(q)=5C_0q'+15C_0'q.
+\]
+
+The Fitting equations are now explicit.  On the movable double-root base,
+the complete target operator has a rank-`14` cokernel: divisibility by
+`w^2(w-1)^5(w-w0)^5` gives twelve local jets, followed by two triangular
+residues.  The earlier `P_3/Q_1` identity checks only one of these
+coordinates and cannot satisfy the global target by itself: at `w=0` it and
+the new target bands vanish.  The missing constant is exactly the lowest-`u`
+edge equation
+
+\[
+A'D-BC'=1/5.
+\]
+
+This edge is not contradictory.  With `e=-R(0)`, the exact witness
+
+\[
+A=x+e^3x^3,quad B=e/5,quad
+C=-\frac95e^5x^5,quad D=\frac15-\frac35e^3x^2
+\]
+
+satisfies it.  It proves that off-grid bands are genuinely required.
+
+The witness itself has now been tested beyond first order.  For every
+`r>=2`, with (m=2r-1) and
+(eta_r=2r^2/((r-1)(2r-1))), set
+
+\[
+A=x+e^rx^r,quad B=\frac{r-1}{10}e,quad
+C=-\beta_r e^m x^m,quad D=\frac15(1-r e^r x^{r-1}).
+\]
+
+Then (A'D-BC'=1/5), but in the auxiliary coordinate (v=uz^{-1})
+the literal pair (A+Bv,C+Dv) has the nonzero next defect
+
+\[
+\frac{r(r-1)^2}{50}e^{r+1}x^{r-2}v.
+\]
+
+Keeping `P` linear in `v` would require the rational coefficient
+
+\[
+[v^2]Q=-\frac{r(r-1)^2e^{r+1}x^{r-2}}
+{100(1+r e^r x^{r-1})},
+\]
+
+which is never polynomial.  Equivalently, put
+(kappa=(5B)^{-1}) and let (H(A(x))=C(x)+kappa x).  The pair
+
+\[
+P=A+Bv,qquad Q=-\kappa x+H(P)
+\]
+
+has exact auxiliary Jacobian `1/5` and exactly the prescribed edge first
+jet, but (H) is an infinite series: a polynomial (H) would force
+(r\deg H=2r-1).  Hence the sparse edge escape is a formal, not polynomial,
+completion.  This excludes that literal branch for the entire F2 family;
+it does not exclude completions that add `P` terms from transverse order two
+onward.
+
+The order-two repair is no longer open.  The equation
+
+\[
+A'Q_2-C'P_2=BD'/2
+\]
+
+has one explicit all-`r` solution, and every solution within
+(deg P_2\le r,deg Q_2\le2r-1) differs from it by
+((A'T_2,C'T_2)), where (T_2) is linear.  Substitution into the next
+Jacobian row gives a three-coefficient cascade ending in
+
+\[
+-\frac{3r^2(r-1)^4}{1000}e^{2r+2}\ne0
+\]
+
+for `r>=3`; the `r=2` endpoint is `-3*e^6/250`.  Thus no member terminates
+quadratically.  In the `r=3` row, adjoining the complete cubic repair still
+leaves `108*e^12/125`, and adjoining the complete quartic repair reduces to
+the nonzero conflict `-4033*e^10/7`.  These are exact unit-ideal statements,
+not bounded numerical searches.
+
+Consequently the first source-coupled transverse order is `v^5`.  This
+boundary is intrinsic: `w=x*v^5` appears there for the first time, so the
+factored source bands `(w-1)^nu*K(w)` begin coupling the edge coefficients.
+That packet is now complete in
+[`F2_75_125_DERIVATION.md`](F2_75_125_DERIVATION.md).  Restoring its exact
+fifth-binomial correction changes the conclusion: the layer-40 coefficient
+cancels identically, and the eight rows on layers `0,5,...,35` form a
+surjective `8 x 10` matrix with unit minor `3^5*5^16*e^13`.  Its solutions
+have relative dimension two over the rank-two descent-eight algebra.  The
+conditional source-return ranks and a `9 x 12` Bezout minor `81*e^10` then
+show that the edge recursion continues through `v^10`.  It neither excludes
+the branch nor constructs a source pair.  The exact source-lift audit in
+[`F2_75_125_DERIVATION.md`](F2_75_125_DERIVATION.md) traces the `8+5*9=53`
+minor pivots to polynomial source combinations.  Their largest total degrees
+are `47<75` on P and `73<125` on Q, and their minimum terminal-edge slack is
+one.  More generally, the two all-`r` minors are units and their `18*r-1`
+pivots have source-degree gaps `12*r-8` and `24*r-20`, again with minimum
+terminal slack one.  Hence no argument using only the two certified corner
+edges can remove these freedoms anywhere in the family.  Three-point
+confluent CRT then quotients the controlled
+`w=0` block and leaves a rank-`24` global Hermite coordinate module over the
+rank-two descent-eight algebra.  The fixed (w=1) part is now completely
+eliminated: its leading target value is normalized, while the other ten rows
+are affine-linear in ten source Taylor coefficients with determinant
+`75000`.  Degree-seven followers divisible by (w^2) preserve the controlled
+(w=0) jets.  Hence the actual residual cokernel count is `13`: five target
+jets and six layer-zero coordinates at (w=w_0), plus two target residues.  It
+is not a thirteen-variable polynomial system.  The exact carried substitution
+has `1,489` straight-line terms and degree at most eight after brackets are
+formed.  The normalized zero rows have `1,172` coefficient slots, of which
+`819` on layers `28..5` and `3` are changed.  On the endpoint-disjoint layers
+`39..29`, explicit tridiagonal unit minors eliminate `134` new-Q coordinates
+and leave `219` Fitting slots.  The next necessary calculation is the coupled
+Schur/Fitting elimination from descent `12` through `37`, followed by the
+thirteen residual functionals.
+
+Layer zero has the first integral
+
+\[
+H_{40}=\sum_\ell \ell P_\ell Q_{-\ell},\qquad H_{40}'=0.
+\]
+
+For `K=w^3(w-1)^6(w-w0)^6`, its exact obstruction is the class of the old
+forcing in
+
+\[
+B[w]/(K)\big/B,
+\]
+
+a rank-`14` module obtained from an Artinian algebra of length `15`.  The
+pure eight-step `E5` is only its first movable-root Hermite coordinate.
+Before the earlier triangular equations are imposed, old source-basis pairs
+already span all fourteen coordinates.  The next elimination must therefore
+carry those earlier equations into this small quotient; neither the target
+row nor layer zero can be tested in isolation.
+
+The complete `r=3` B0 ledger has `2,418` jet-reduced parameters and `240`
+zero layers.  It is pinned by the layer classifier cited in Section 10.
+It also records why the earliest escape is not an exhaustive branch list:
+first-defect spacings `9..11` have only their second and third nonlinear
+multiples before the target, spacings `12..17` only their second, and
+spacings `18..90` none.  Those later target/tail regimes remain after the
+descent-eight branch is tested.
 
 ### 2.3 The corner-derived `d=3` candidate chart
 
@@ -1306,12 +1526,28 @@ proved is sharper than a failed search:
     kernels.  For `r=3`, `lambda*C^(-1)` first occurs at layer `10`; and
 12. the `r=3` nonlinear rows recover a source root through descent `7` and
     isolate the first exact local defect at descent `8` by the quadratic
-    `27*y^2-9*y+1`, over `QQ(sqrt(-3))`.
+    `27*y^2-9*y+1`, over `QQ(sqrt(-3))`; and
+13. its fixed Kummer-orbit supports are excluded.  The sole local survivor
+    at the earliest spacing is the nonzero double-root stratum of `R`; it passes the normalized
+    `P_3/Q_1` target jet, and its fifth multiple is a genuine lower-tail
+    Fitting row rather than the equation `E5=0`; and
+14. the all-`r` sparse edge witness completes to an exact formal shear, but
+    that shear is necessarily infinite.  Its literal polynomial completion
+    fails at transverse order two; the complete polynomial order-two repair
+    never terminates quadratically, and exact `r=3` eliminations also exclude
+    cubic and quartic termination.  Any surviving escape must reach the first
+    Kummer return `v^5`; and
+15. that exact return has zero cokernel: its `8 x 10` matrix has unit minor
+    `3^5*5^16*e^13` over the movable-double-root base, both rank-two branches
+    survive, and the edge Bezout recursion absorbs every first-appearance
+    forcing through `v^10`.
 
-An exclusion now requires a tail-correction theorem deriving the actual
-polynomial modified pair from the full positive and negative Laurent bands,
-or stronger global incidence data that rules out the surviving boundary
-gluings.  Equations (40) and (42) remain the smallest exact **conditional
+An exclusion now requires elimination of the non-edge specialized double-`R`
+Hermite/Fitting system across the full positive and negative Laurent bands,
+followed by the
+later first-defect spacings if that earliest system is empty, or stronger
+global incidence data that rules out its two-packet boundary gluing.
+Equations (40) and (42) remain the smallest exact **conditional
 formal-series residue equations**, but their smooth loci are neither source
 projections nor verified planar candidates.  There is no residual `r=3`
 candidate in the literal projection: its exact top-band ideal is already the
@@ -1326,6 +1562,7 @@ Run:
 ```text
 .venv/bin/python plane-jc/cas/generate_f2_modified_system.py --include-equations
 .venv/bin/python plane-jc/cas/generate_f2_modified_system.py --include-equations --output artifacts/generated-results/jc2_f2_modified_laurent_family.json
+.venv/bin/python plane-jc/cas/classify_f2_75_125_layers.py
 .venv/bin/python plane-jc/cas/verify_f2_modified_chart_bridge.py
 # Optional; requires Singular:
 .venv/bin/python plane-jc/cas/verify_f2_modified_chart_bridge.py --extended-r5

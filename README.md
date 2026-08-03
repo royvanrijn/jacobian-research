@@ -55,6 +55,17 @@ components versus decorated stable moduli**.  Ordinary tangent quotients
 cannot see the `N-3` stable parameters; the first meaningful comparison must
 be filtered, boundary-decorated, or formal-to-algebraic.
 
+The [global low-degree support census](extended-geometry/GLOBAL_LOW_DEGREE_SUPPORT_CENSUS.md)
+adds a non-template search layer in dimension three.  It enumerates all 74
+affine-invariant degree flags below `(7,6,4)`, compiles determinant buckets and
+all infinity weights modulo exposed-face equivalence, and closes every exact
+degree-at-most-seven collision support with at most six nonlinear monomial
+occurrences.  The resulting global sparse lower bound is seven; attainment
+at seven is not asserted.  A dense exact
+calculation eliminates the four profiles of maximum degree at most two.  The
+cardinality-unbounded support census remains open, so the existing weighted
+and other template-specific searches are not superseded.
+
 For Gaussian moments, Long's explicit five-term polynomial settles GMC
 negatively in three real variables and, by adjoining unused coordinates, in
 every dimension `n>=3`.  Broad high-dimensional searches are archived.
@@ -610,7 +621,8 @@ fourth powers annihilated by the three linear factors.  Root permutation
 reduces them to \(x^4\), whose full nonhomogeneous correction is the same
 weight-four face as in the double-root case; its third moment is
 \(129392640T^3\).  Thus every binary constant-coefficient operator
-satisfies GVC for \(\deg P\le4\).  Any binary counterexample must have
+satisfies GVC for \(\deg P\le4\).  At that stage, any hypothetical binary
+counterexample had to have
 \(\deg P\ge5\), and in degree five its lowest positive operator order can
 only be \(2,3,\) or \(4\).  In the first \(r=2\) row, the leading pair
 already reduces to
@@ -620,7 +632,7 @@ already reduces to
 together with weighted one-sided cutoffs, close all three correction
 systems.  Thus every quadratic-leading pair is safe through degree five.
 <!-- status-consumer: GVC2D5F 89a10c04ff511f4d -->
-A degree-five counterexample must have lowest positive operator order
+At that intermediate stage, a degree-five counterexample had to have lowest positive operator order
 \(3\) or \(4\).  The \(r=3\) leading equations reduce further to eight
 top-form normal forms: four over the triple-root cubic symbol, three over
 the double-root symbol, and one over the squarefree symbol.  Their
@@ -647,7 +659,7 @@ most five.
 <!-- status-consumer: GVC2D5Q4 a365c557f17d6b51 -->
 <!-- status-consumer: GVC2D5Q31 a73a8633d9ee8cb6 -->
 <!-- status-consumer: GVC2D5Q2 578f81f3ba535e35 -->
-<!-- status-consumer: GVC2D5U fd1243fa98f53a95 -->
+<!-- status-consumer: GVC2D5U c55fe421c15dbc34 -->
 
 The entire quintic-leading degree-six row is also closed.  The
 [all-root-partitions theorem](extended-geometry/BINARY_QUINTIC_ALL_ROOT_PARTITIONS_GVC.md)
@@ -680,12 +692,58 @@ closes the final row \(r=2\).  Its distinct-root chart reduces to the
 transverse-linear/high-order class; its double-line pure-sixth-power
 endpoint branches through the exact radical \((r,q,A,Bz)\), and both
 secondary axes terminate on common-threshold coordinate-deficit faces.
-<!-- status-consumer: GVC2D6U 82fdb9aa485a9197 -->
+<!-- status-consumer: GVC2D6U 781b367a748aef08 -->
 Consequently every binary constant-coefficient operator satisfies GVC for
 polynomials of degree at most six.  Before the all-degree closure, the
 first genuinely nonhomogeneous frontier began at polynomial degree seven,
 required degree greater than the lowest positive operator order, and had
 to avoid the factor-unit architecture.
+
+<!-- status-consumer: GVC2D7R2 fb93b45366e8c880 -->
+The first row on that frontier is now closed.  The
+[quadratic-leading septic theorem](extended-geometry/BINARY_QUADRATIC_SEPTIC_GVC.md)
+classifies both quadratic root partitions with arbitrary higher operator
+jets and arbitrary lower polynomial terms.  Its new branch is the
+pure-\(y^7\) slope-three intersection: the same two coordinate axes seen in
+degree six migrate once more, and both exact terminal radicals are trivial.
+Thus this row reduced the then-hypothetical degree-seven counterexample to
+lowest positive operator order \(3,4,5\), or \(6\).
+<!-- status-consumer: GVC2D7R3 9a9f94001ab90584 -->
+The next row is also closed by the
+[cubic-leading septic theorem](extended-geometry/BINARY_CUBIC_SEPTIC_GVC.md).
+Its exact two-wing scan reconstructs every crossing in the triple-, double-,
+and simple-root Hall charts.  Four squarefree monomial radicals supply the
+only branches; every child face thereafter has origin radical and reaches
+an unequal common threshold.  Consequently a degree-seven binary
+counterexample must now have lowest positive operator order \(4,5\), or
+\(6\).
+
+<!-- status-consumer: GVC2D7H 2a6647843fb7ec32 -->
+<!-- status-consumer: GVC2D7U 3153ff043f7fe63d -->
+The
+[high-order septic theorem](extended-geometry/BINARY_DEGREE_SEVEN_GVC.md)
+closes those last three rows.  Its 46 Hall charts have 287 initial Newton
+faces.  The only non-origin radicals are fifteen squarefree two-axis faces;
+all 98 later child faces have origin radical, and the marked \(x\)-gap
+strictly decreases along every branch.  Thus the independent exact
+degree-by-degree program proves binary GVC through polynomial degree seven.
+
+<!-- status-consumer: GVC2ENV a3ef23e17eb633f0 -->
+The all-degree gap is now closed by the
+[Hall-envelope theorem](extended-geometry/BINARY_GVC_ENVELOPE_CLOSURE.md).
+At every rational weight \(w_s=(s,1)\), the global minimum operator face and
+global maximum polynomial face inherit the pure-zero identity.  While their
+weight gap is positive, shifted-ray endpoint rigidity forbids their Newton
+\(x\)-intervals from overlapping.  Hall localization orders the intervals
+just above \(s=1\), so they cannot pass one another.  Finite support forces
+their weight gap to reach zero, and the first such unequal common threshold
+is terminal.  Consequently unrestricted GVC holds for every
+constant-coefficient operator in two variables.  This proof is internal and
+has not been externally reviewed.
+
+The material below records the longer Hall/carry route as theorem history.
+Its packet, character, carry, and factorial results remain valid, but its
+former promotion target is no longer needed for binary GVC.
 <!-- status-consumer: GVC2UFT 2d974f5d521c55e0 -->
 The
 [uniform binary face-termination theorem](extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md)
@@ -695,7 +753,7 @@ common-threshold face is automatically terminal by a prime-dilated Newton
 endpoint.  The same argument excludes one unequal-weight exposed endpoint
 on every fixed rational normalized output ray.  Homogeneous binary
 factorial rigidity now also removes every one-channel slope-\(-1\) Pareto
-tie in all degrees.  At this stage the all-degree obstruction was not
+tie in all degrees.  At that stage the all-degree obstruction appeared not
 another root partition or terminal radical: it was a linearly migrating
 beta--torus coefficient whose convolution uses at least two distinct faces
 with positive limiting density and never reaches one common threshold.
@@ -845,7 +903,8 @@ Frobenius.  Repeated-digit separation splits all character components
 once the Hall shell has the scale-compatible form
 \(\pi(p,q)=Nc\).
 
-The remaining binary gap is promotion to that form.  Lemma 7.4 ter
+Within this now-parked route, the remaining gap was promotion to that form.
+Lemma 7.4 ter
 produces affine, prime-dependent low-digit insertions before a power
 family; neither the finite group nor the carry class is yet proved
 independent of the exposing prime.  This distinction is necessary:
@@ -855,10 +914,11 @@ row zero while a fixed Laurent multiplier detects every odd row.
 Moreover, for
 \(C=y^2+4xy+2x^2\), the \(p=11\), \(N=12\) factorial row has valuation
 three where naive Laurent digit factorization predicts valuation two.
-Thus unrestricted \(\operatorname{GVC}(2)\) remains open at the exact
-scale-compatible carry-promotion/isoperiodic-cluster lemma.  Degree
-seven remains a useful regression for that frontier.
-<!-- status-consumer: GVC2FG fedf285d51aa50a8 -->
+Thus that route stopped at the exact scale-compatible
+carry-promotion/isoperiodic-cluster lemma.  The Hall-envelope theorem above
+later bypassed the lemma and proved unrestricted \(\operatorname{GVC}(2)\).
+Degree seven remains a useful independent regression.
+<!-- status-consumer: GVC2FG c69a942892a72393 -->
 The
 [first-ghost source-collapse theorem](extended-geometry/BINARY_GVC_FIRST_GHOST_SOURCE_COLLAPSE_AND_RAY_RIGIDITY.md)
 shows that the proposed generic-translation target was false: after one
@@ -871,7 +931,7 @@ multiplicity partition.  This is the pure-ray input to the factorial-trace
 upgrade below.  The earlier exact \(C_2\) sign-twist and rectangular searches
 remain bounded regressions, not proof of unrestricted GVC(2).
 
-<!-- status-consumer: FTI1 836c1443b2e29cd8 -->
+<!-- status-consumer: FTI1 ba09a827b4cff2e7 -->
 The
 [factorial-trace independence theorem](extended-geometry/FACTORIAL_TRACE_INDEPENDENCE.md)
 now classifies every positive-integer-slope gamma-affine ray by a finite signed
@@ -884,10 +944,35 @@ Thus every fixed finite scale-compatible packet splits by its gamma
 signature, and certified first-order recurrence factors can be grouped before
 connection tests.  In particular, the exact SIC2C4 radial moments have
 injective signatures in their pair `(d,r)`, so distinct radial families cannot
-cancel.  The remaining binary-GVC problem is to expose such a packet uniformly
-and separate its same-signature markings.  In
+cancel.  The remaining problem within the parked Hall/carry route was to
+expose such a packet uniformly and separate its same-signature markings.  In
 characteristic \(p\), raw valuations instead collapse along \(p\)-power slope
 towers, so factorial units and carries remain indispensable.
+
+<!-- status-consumer: FTI2 0e8460fd4de2e85c -->
+The sharper
+[integer-affine boundary-transfer theorem](extended-geometry/FACTORIAL_TRACE_INDEPENDENCE.md)
+classifies projective constancy before passing to translation orbits.  For
+\(H_e(N)=\prod_{a,b}((aN+b)!)^{e_{a,b}}\), its exact successor divisor is
+\[
+ \Delta(e)=\sum_{a,b}e_{a,b}\sum_{u=1}^{a}[(b+u)/a]\in\mathbb Z[\mathbb Q].
+\]
+The product can equal \(C\lambda^N\) at every large scale only when
+\(\Delta(e)=0\); then \(\lambda=1\), and the complete kernel is generated by
+the boundary transfer
+\[
+ (aN+k)!(cN+l-1)!
+ =\frac ac\,(aN+k-1)!(cN+l)!,
+ \qquad k/a=l/c.
+\]
+Thus every affine-factorial projective collision is an explicit boundary
+redistribution.  The marked version permits transfers only within the same
+retained side or channel.  More generally, multiplying the factorial rays by
+arbitrary values from finite nonzero carry or character alphabets introduces
+no new projective collision: all relative finite-state outputs must be
+constant.  The exact checker classifies 82,250 bounded profiles and
+decomposes all 9,867 collisions; the structural Normaliz audit finds the same
+explanation for all 106 primitive Graver moves in its 35-atom universe.
 
 The
 [adelic factorial tomography census](extended-geometry/BINARY_GVC_PRIME_POWER_TOMOGRAPHY.md)
@@ -902,7 +987,7 @@ two-state family in every allowed span.  A \(C_4\) character separates every
 primitive pair.  More strongly, its complete \(C_2,C_3\)-blind scaled fibre
 has Franel weights \(\binom{2N}{N}\binom Nt^3\); two rows prove that every
 fixed finite-character refinement is separated, terminal, or loses support.
-<!-- status-consumer: GVC2CRR 1f599fc8bf56ee9d -->
+<!-- status-consumer: GVC2CRR 6aed47556e75ec73 -->
 The
 [nonfree-factorization theorem](extended-geometry/BINARY_GVC_NONFREE_FACTORIZATION_TOMOGRAPHY.md)
 closes the next layer uniformly.  At span \(s\), with
@@ -913,7 +998,7 @@ same-signature factorization relation is safe in the fixed marked projected
 model, in every span.  The remaining gap is solely factorial-compatible
 exposure of one fixed marked packet from the prime-dependent affine Hall
 shell.
-<!-- status-consumer: GVC2ASL 544a54641ea0d03c -->
+<!-- status-consumer: GVC2ASL 6ba8f55c1e35c2a6 -->
 The
 [affine singleton-localization theorem](extended-geometry/BINARY_GVC_AFFINE_SINGLETON_LOCALIZATION.md)
 now removes the prime-dependent state-combinatorial part of that gap.  Every
@@ -950,7 +1035,7 @@ an unnecessary burden from the target: it suffices to prove the shifted
 power tails \(\Lambda^m(P^{m+d})=0\) for every fixed \(d\), rather than carry
 an arbitrary multiplier through the Hall shell.  No binary GVC
 counterexample is obtained.
-<!-- status-consumer: GVC2TTR 080f39d332b455d0 -->
+<!-- status-consumer: GVC2TTR 5f82bb7838879cdd -->
 The
 [translation-tangent rigidity theorem](extended-geometry/BINARY_GVC_TRANSLATION_TANGENT_RIGIDITY.md)
 shows first that the proposed coefficient-blind Hilbert-module inheritance
@@ -970,13 +1055,203 @@ is \(b_j=c(j-r)\), exactly the tangent to scalar--torus symmetry.  Iterating
 the expansion at \(1-\zeta_{q^a}\) then proves that, for every fixed
 primitive \((d,r)\), every \(q^a\)-character collision of the complete moving
 period sequence is flat once the underlying prime \(q\) is sufficiently
-large.  Exact \(C_3\) and \(C_4\)
-searches add 187,764 bounded rows with no unexplained collision.  The binary
-gap is consequently narrower but still open: exceptional small primes,
-mixed-prime torsion, and two-dimensional Taylor curvature must be exposed
-over one common high-digit quotient using the full Cartesian derivative
-tower.
-<!-- status-consumer: GVC3HC cc70daa55acb27ba -->
+large.  There is also a sharp two-direction no-go: the entire label module
+\(b_{jk}=(j-r)v_k+u_j(k-s)\) annihilates every rectangular first-tangent row.
+It contains the nonflat matrix \((j-r)(k-s)\), whose mixed second difference
+is one.  Thus another first ghost cannot close the Hall shell; the first
+potentially separating row is quadratic or higher.  At quadratic order an
+exact positive return-word Hessian does separate every fixed nonflat integer
+label: its common kernel is precisely the two flat torus directions, and a
+nonflat label is detected modulo all but finitely many primes.
+Exact \(C_3\) and \(C_4\) searches add 187,764 bounded rows with no unexplained
+collision.
+
+<!-- status-consumer: GVC2PRJ 14356b4bc0f20dd2 -->
+The
+[positive return-semigroup jet theorem](extended-geometry/POSITIVE_RETURN_SEMIGROUP_JET_RIGIDITY.md)
+extends much farther than rectangles.  For any
+integral return matrix with a strictly positive return vector, equality of the
+complete exponential jet with the untwisted positive point forces the label
+into the coefficient-torus row space.  A finite set of jets suffices for each
+fixed configuration.  More sharply, the triangle inequality and Smith normal
+form prove that every finite-order identity-versus-twist collision is
+coefficient-torus flat, with no exceptional prime; the twist label and its
+mixed-prime order may vary.  On the centered
+\((2,2)\) rectangle, moments \(N\leq3\) and jet orders \(k\leq4\) already
+give an exact zero-dimensional certificate; the linear, quadratic, cubic,
+and quartic gauge-slice dimensions are \(4,2,1,0\).
+With independent coefficient marks, finitely many return degrees also
+separate two arbitrary nonzero phased points modulo the coefficient torus.
+
+Within the parked Hall/carry route, the gap consequently narrowed to exposing
+such a positive component over one common high-digit quotient, or inheriting
+enough common marks to invoke that paired-point theorem.  That inheritance is
+still unproved in the route, but it is no longer a gap in binary GVC because
+the Hall-envelope theorem bypasses the shell.  There is no post-exposure
+factorial or toric rigidity problem.
+
+<!-- status-consumer: GVC2PTO dd55eb4121f145ff -->
+The
+[primitive translation-observability theorem](extended-geometry/BINARY_GVC_PRIMITIVE_TRANSLATION_OBSERVABILITY.md)
+closes the proposed pairwise Graver search at every projected span.  Every
+genuinely mixed primitive move transfers nonzero level between the two
+colours; otherwise it conformally decomposes into two same-colour moves.
+Translating either colour separately therefore gives the endpoint monomials
+different translation degrees, so their complete derivative-orbit ideal is
+empty on the coefficient torus for arbitrary nonzero factorial weights.
+The same graded proof applies to a rank-one Cartesian monomial Taylor face
+under generic line translation.
+Exact span-four and span-five regressions find no one-colour survivor among
+17 and 125 factorial-compatible primitive packets.  The only two survivors
+under weaker common-diagonal translation are safe quartic Veronese
+pure-power identities.
+
+This rules out a counterexample carried by one primitive mixed packet, but it
+also identifies the actual remaining combinatorics.  Graver decomposition is
+binomial, while a Hall shell is a signed linear cancellation; pairwise
+separation does not force one primitive summand to vanish.  An exact
+\(C_4\)-weighted span-two discriminant row already gives a three-state
+full-translation identity, although its scale-two factorial row is nonzero;
+it is an obstruction to the primitive-only inference, not a GVC
+counterexample.  Any surviving
+architecture must now be a minimal linear syzygy among several inequivalent
+primitive translation orbits, with the genuine affine carry coefficients and
+one common high-digit quotient.  Computing those translation-observability
+circuits, rather than more pairwise prime signatures, is the next finite
+frontier.
+
+<!-- status-consumer: GVC2TSE 76c7b2374c9b00d5 -->
+The same
+[canonical note](extended-geometry/BINARY_GVC_PRIMITIVE_TRANSLATION_OBSERVABILITY.md)
+now eliminates the first linear frontier at all spans.  If three scaled
+monomial orbit functions vanish at scales one and two with arbitrary nonzero
+scale-dependent coefficients, their two equations reduce every ratio to a
+root of one constant quadratic.  The orbit functions are therefore pairwise
+proportional, and Taylor degree forces all three marked-side levels to agree.
+Thus no transferring three-state shell can be an all-scale promotion
+obstruction; a vanishing coefficient is support loss, and only a
+zero-transfer product block remains.
+
+Exact saturated-ideal regressions audit the residual block.  Through span two
+and side counts three, all 416 scale-one survivors among 11,988 signed triples
+are killed by scale three (all but one by scale two); through span three and
+side counts two, all 240 survivors die at scale two.  The first 928 signed
+four-state cases likewise have no scale-two survivor.  The later GVC2AF4
+theorem replaces that bounded four-state evidence by an all-coefficient
+three-scale classification.
+
+<!-- status-consumer: GVC2FAP 078c9e319cff4b8d -->
+There is a sharper all-scale closure for fixed signed factorial rows.
+For any fixed signed template, factorial trace independence splits unequal
+factorial rays, and a rational power-sum generating function pairs every
+remaining positive orbit monomial with an equal negative one.  Consequently
+a fixed-sign four-state all-scale shell is only a sum of pairwise orbit
+identities.  Pure character-power coefficients admit no nonzero full-torus
+shell at all.
+
+The larger span-two audit makes the distinction concrete.  Of 52,416 signed
+quartets, 928 survive scale one; character-power scale two kills all of them.
+Fixed signs leave 60 exact all-scale identities, but all 60 split into two
+factorially identical opposite-sign pairs.  Only six survive both independent
+Taylor towers, and their saturated ideals are exactly
+
+\[
+ (R_1^2-4R_0R_2,\ B_1^2-4B_0B_2),
+\]
+
+the already-safe product of quadratic Veronese loci.  GVC2ARS below removes
+the restriction to exponential coefficient laws on every fixed finite affine
+template.
+
+<!-- status-consumer: GVC2ARS 44678a07e5ed4cc4 -->
+The broader
+[affine-ray Wronskian theorem](extended-geometry/BINARY_GVC_PRIMITIVE_TRANSLATION_OBSERVABILITY.md)
+splits the cross-base part of every fixed finite affine-ray universe.
+For arbitrary nonzero rational functions \(h_j,f_j\), group the terms
+\(h_j(t)f_j(t)^N\) by proportionality of \(f_j\).  The normalized Wronskian
+is a polynomial in \(N\) whose leading nonzero coefficient is the product of
+the within-class Wronskians and a confluent Vandermonde in
+\(f_j'/f_j\).  Hence, for every sufficiently large \(N\), the different
+base classes are in direct sum.
+
+The scalar coefficients may depend arbitrarily on \(N\), may be zero, and may
+contain factorial units, torsion traces, or nonexponential carry values.
+Finite residue and automaton states are handled class by class.  Even the
+active subset may change with scale inside the fixed universe.  Thus
+nonexponential affine-carry weights cannot couple distinct high affine rays.
+Several low corrections over one proportional base can still form a finite
+translation-observability circuit.
+
+<!-- status-consumer: GVC2AF4 6b9785b74b9c5b62 -->
+There is also an exact finite-prefix closure for four states.  With arbitrary
+unrelated nonzero coefficients in the scale-one, scale-two, and scale-three
+rows, eliminating the linear row gives a conic and a cubic in
+\(\mathbb P^2\).  A smooth conic cannot divide the cubic.  A singular conic
+is two lines through its radical; on a common line the four functions
+\((1+t_i s)^3\) form a Vandermonde family.  Nonzero weights force a \(2+2\)
+partition, and the hyperplane equations force the two proportional
+opposite-sign pair blocks.  Every such block has zero colour-level transfer.
+This three-scale theorem concerns rows \(M_i^N\); affine-offset rows
+\(h_i f_i^N\) over a common base belong to the residual correction circuit.
+
+<!-- status-consumer: GVC2CBI eefbdf6511fc1b3b -->
+The common-base all-scale ideal itself now collapses exactly.  If
+\[
+ F_N=f^N\sum_jc_j(N)h_j
+\]
+and \(f\) is invertible on the coefficient torus, the complete Cartesian
+derivative ideal equals the derivative ideal generated by a basis of the
+finite coefficient span \(C=\operatorname {span}\{c(N)\}\).  This follows
+from the triangular Leibniz rule after multiplication by \(f^{-N}\).  At
+most \(r\) scale rows are needed for \(r\) corrections.  On a full-rank
+matroid circuit the relation kernel is one-dimensional, so every surviving
+coefficient vector must be projectively constant; two nonproportional rows
+force a further orbit-rank drop.
+
+FTI2 removes the factorial part of this rank-one alternative: on a fixed
+integer-affine profile, projective constancy consists only of marked
+same-boundary transfers, and relative finite-alphabet carry/character outputs
+must be constant.
+
+<!-- status-consumer: GVC2PAE 75d6d00bf4ad38c0 -->
+Eventually periodic additive coefficients also admit exact finite
+elimination.  On each residue \(N=Lk+r\), normalize every integer-affine
+factorial summand to a rational function times its zero-offset signed slope
+ray.  Factorial-trace independence separates the slope rays, so projective
+constancy is equivalent to finitely many rational-function minors.  This
+includes fixed torsion laws and every carry output already known to be
+eventually residue-periodic.  By
+[Cobham's theorem](https://doi.org/10.1017/CBO9780511546563.012), the same
+closure applies if one intrinsic finite state sequence is automatic in two
+multiplicatively independent bases.  Applying this condition to Hall carries
+would require the prime-dependent automata to encode that same full-scale
+sequence; agreement only on their separate prime-power probes is
+insufficient, and the next theorem shows that complete carry data cannot
+satisfy the requirement.
+
+<!-- status-consumer: GVC2CCO d67c1f293a22d740 -->
+The proposed common-state step is now ruled out for complete Kummer carry
+data.  For every odd prime \(p\), the one-bit central-binomial carry sequence
+\(\mathbf 1_{p\mid\binom{2N}{N}}\) is two-state \(p\)-automatic but not
+ultimately periodic.  It is nevertheless constant on every ray \(q p^e\).
+Therefore no finite sequence automatic in two unrelated bases can refine the
+complete carry states: Cobham would make this nonperiodic letter image
+periodic.  Cobham still eliminates a prime-independent quotient proved by
+other means, but it cannot promote the prime-specific Hall carry automata to
+one such quotient.  This is a rigorous obstruction to that route, not a GVC
+counterexample.
+
+The parked promotion problem has two finite-to-uniform pieces.  First,
+classify the rank-drop loci and any genuinely nonperiodic automatic,
+infinite-output, or growing additive carry laws on each bounded primitive
+correction circuit.  Second, on a positive-density face whose number of
+affine profiles grows with the scale, extract such a fixed bounded quotient
+circuit or produce an unbounded sequence of minimal orbit syzygies.  Either
+kind of route survivor would still need a nonzero shifted-power tail and a
+lift to one actual binary pair.  These calculations produce neither a
+counterexample nor the unrestricted proof; the latter is the independent
+Hall-envelope theorem above.
+<!-- status-consumer: GVC3HC 665dce8482e52966 -->
 The
 [homogeneous three-variable construction](extended-geometry/THREE_VARIABLE_HOMOGENEOUS_GVC_COUNTEREXAMPLE.md)
 gives an explicit GVC(3) counterexample.  With
@@ -991,17 +1266,45 @@ gives an explicit GVC(3) counterexample.  With
 \]
 The nonvanishing is governed by an explicit factorial formula.  The
 dependency-free checker supplies two exact finite replays through \(m=6\);
-the all-order result is the spherical constant-term and Gaussian/Fischer
-proof in the canonical note.  This is a counterexample for \(\Delta^6\),
-not for the ordinary Laplacian operator \(\Delta\).
+the all-order result is the quadric coefficient extraction and
+Reynolds--apolar proof in the canonical note.  This is a counterexample for
+\(\Delta^6\), not for the ordinary Laplacian operator \(\Delta\).
 
-<!-- status-consumer: GVC3HS ae2415b137051523 -->
+<!-- status-consumer: GVC3CPS 10d538b9c5b3f10f -->
+The
+[cusp-profile suspension theorem](extended-geometry/CUSP_PROFILE_SUSPENSION_THEOREM.md)
+packages the witness into the homogeneous family
+\[
+ P_{r,S,h}=\rho^hA^rC^{2r}S^{\mathrm{hom}},
+ \qquad N=6r+3\deg S+h.
+\]
+Whenever its one-variable profile moments are nonzero, it proves the full
+positive-phase ladder, failure of every shifted-power tail, and exact
+polyharmonic depth.  Positive profiles on \([0,1]\) give full-dimensional
+real families.  The original witness, the endpoint-power family, and all
+radial paddings are specializations.  The identity
+\((tA)^2-\rho^3=-xC\) identifies \(C\) as the first transverse defect of
+the cusp normalization \(t\mapsto(t^2,t^3)\).  Conversely, every normalized
+homogeneous phase-square one-profile lift is one of these
+\(P_{r,S,h}\).  Hence \(N\ge6r\), closing the arbitrary-profile and radial
+loopholes in the scoped \(N=6\) minimum.  Transport to a rank-three summand
+gives the same profile strata for every quadratic symbol of rank at least
+three and every \(k\ge6\).  The same note packages the Reynolds--apolar
+transfer and the exact split-quadric quotient dimension \(\max(n-2,0)\);
+its synthetic-latitude interpretation for nonhomogeneous binary Hall packets
+is retained as an open target inside the parked promotion route, not as a gap
+in GVC(2).
+
+<!-- status-consumer: GVC3HS 1336ab97bb9ab297 -->
 The
 [homogeneous spillover theorem](extended-geometry/GVC3_HOMOGENEOUS_SPILLOVERS.md)
 extends the witness to every \(\Delta^k\), \(k\ge6\), and every ambient
 dimension at least three.  Combined with the binary split-symbol theorem,
 this gives the exact homogeneous dimension classification
-\(\operatorname{HGVC}(n)\) if and only if \(n\le2\).  For powers
+\(\operatorname{HGVC}(n)\) if and only if \(n\le2\).  Combined additionally
+with the Hall-envelope theorem, it gives the unrestricted classification
+\(\operatorname{GVC}(n)\) if and only if \(n\le2\): dimension three is the
+first failure.  For powers
 \(q(\partial)^k\) of a quadratic symbol with \(k\ge6\), rank three is the
 exact threshold for admitting a homogeneous GVC failure.
 
@@ -2082,7 +2385,19 @@ Homogeneous radial scaling supplies an explicit nonautomorphic solution of
 the corrected log-Jacobian equation, but its first inverse mask has a unit
 residue.  An all-degree order argument extends this failure to every radial
 base `(SP,SQ,SR)` with arbitrary polynomial mask outputs, so the surviving
-incidence must couple the three cubic coordinates nonradially.
+incidence must couple the three cubic coordinates nonradially.  The two
+inverse-mask equations are now organized by a \(2\)-by-\(2\) matrix whose
+determinant is exactly the cubic boundary.  Because one matrix entry is a
+unit, the unrestricted kernel is tautological; the real selector space is
+the ideal-contraction quotient
+\(\iota^{-1}(\iota(B_\pi)\Gamma)/(B_\pi)\).  A nonzero class is precisely a
+target polynomial that acquires the needed boundary factor only after the
+pure \(A_4\) lift, and it determines both coupled masks.  A
+block-triangular use of its adjugate still contributes the boundary to the
+Jacobian, so source-mask feedback into the three base coordinates is
+essential.  Exact tests also remove two natural shortcuts: the quadratic
+polar map misses the boundary at an explicit smooth point, and no product
+of the cubic with one hyperplane is a Saito-free quartic.
 The separate
 [root-incidence derivative split](extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md)
 returns to the generic quartic itself.  In its rank-four root algebra it
@@ -2157,10 +2472,79 @@ completion of `A2` has only rational boundary components, so either
 positive-genus divisor closes the `B`-free complement.  The corrected total mask is
 therefore exhausted: a further construction must replace `Hhat` by a
 selector with rational horizontal components or use a different root
-chart.
+chart.  The next root-linear layer has now been searched more sharply.  In
+the six-dimensional basis \(q_0,\ldots,q_5\), the complete fixed \(K\)- and
+\(M\)-factor kernels are explicit.  Four maximal minors and an exact
+resultant-gcd certificate prove that \(U=0\) is the only rational affine
+line in the full six-dimensional space.  Its kernel has the known direction
+and one nonzero-\(q_5\) direction, but the latter is
+\(T(a^2-4\rho)\), exactly the old rational conic multiplied by \(T\).
+An exhaustive sieve of all \(3875\) projective conics over \(\mathbb F _5\)
+finds only \(K,M,\rho_V\) and one exceptional residue; the latter has
+lift counts \(5,25,0\) modulo \(25,125,625\), so it has no
+characteristic-zero lift in the good-reduction chart.  A new rational conic
+must specialize nonreducedly to a fixed kernel or lose degree modulo five.
+The next cubic sieve factors all \(3906\) projective selector members over
+\(\mathbb F _5\).  Its only irreducible cubic factors are the fixed
+\(A_*,L,H\) factors and the known cubic component of
+\(T(a^2-4\rho)\); all \(38\) non-\(H\) incidence points have no
+moving-factor tangent.  The sole remaining good-reduction cubic locus is
+the artificial, nontransverse \(H\)-factor plane.  Its smallest transverse
+slice has bounded lift counts \(5,5,25,25,125,125,625,625\), evidence for
+a nonreduced thickening rather than a constructed characteristic-zero
+selector.  Nonlinear rational components remain open.  The identities
+\(3q_1+q_2=T\rho\) and
+\(6q_3+q_4=a((b+6)T-81\rho)\) expose a near-selector whose only failure is
+one simple-\(F\) order-five residue.  An explicit \(\rho\)-correction cancels
+that jet on all seven normalized branches, but its strict root-chart curve
+is absolutely irreducible of genus 31.  An exact syzygy ties this correction
+back to \(\widehat H\), confirming that the next search should solve a
+coupled jet module and impose rationality before attempting contraction.
 The surviving construction must be nonautomorphic and log-crepant:
 its new boundary pullback must equal the old boundary pullback times its
-Jacobian, while both inverse-mask numerators remain divisible.  The relative
+Jacobian, while both inverse-mask numerators remain divisible.  The
+ideal-contraction route is now narrower: an etale component of the pulled
+boundary forces the coupling module to vanish, so a nonzero class requires
+the entire reduced pullback to be supported on \(WKL\).  The normalized
+nonradial triple fails this test because its boundary restricts at \(W=0\)
+to \(-133z_2^3\).  The old boundary does supply a coupling:
+\(C_K=Q^2+3QR+9R^2\) pulls back to \(W^2\rho_VK^3\), and
+\(S^2C_K\) is the unique new degree-four class modulo \(\mathcal B\).
+In fact the full contraction is
+\((\mathcal B,S^2C_K,S^2P^3)\), closing every base-fixed use.  The
+associated minimal two-mask factorization is polynomial, but its Jacobian
+is \(W^3K^3L\rho_Vz_1/2\).  The full contraction formula also closes every
+nonradial incidence preserving \(\mathcal B\) up to scalar, so a survivor
+must use a genuinely different boundary whose pullback is still supported
+on \(WKL\).  An exhaustive support-identity sieve through degree six finds
+only \(\mathcal B\) and \(\mathcal B^2\); a different reduced boundary
+therefore starts in degree at least seven.  The nonreduced hit is not a
+quadratic escape: the projective totally-invariant-curve theorem closes the
+basepoint-free case, and the two-basepoint ramification calculation leaves
+the impossible residual class \(-E_2\).  Hence no degree-at-most-two triple,
+even with mask feedback, can satisfy
+\(\mathcal B(p,q,\rho)=v\mathcal B^2\); any \(\mathcal B^2\) realization
+must begin in degree at least three with cancellation above degree six.
+The nodal normalization does give a concrete different base rechart
+\((\mu,\lambda,t)\mapsto
+(\mu+\lambda f_1(t),\mu+\lambda f_2(t),\lambda f_3(t))\), with boundary
+\(27\mu\lambda^2t^3(t-1)^3\) and nonzero Jacobian.  It too has zero
+coupling module: the four boundary factors retain the etale source
+components \(M,H,N_2,WN_2-1\).  This locates the missing selector sharply:
+all sixty coordinate placements fail, so one of those node-chord factors
+must be replaced by a genuinely non-coordinate descended function whose
+complete pullback is supported only on \(W,K,L\).
+Replacing the normal factor by \(\mathcal B\) does produce the first
+different-boundary coupling: its boundary is
+\(27\mathcal B\lambda^2t^3(t-1)^3\), and multiplying \(S^2C_K\) by the
+remaining chord factor gives two polynomial inverse masks.  The resulting
+explicit polynomial map is not Keller.  More strongly, etale valuations
+force the full factor \(h=\lambda^2t^3(t-1)^3\) into every numerator, while
+the log-volume equation has only \(9\lambda t(t-1)\); this closes all twenty
+coordinate choices of \((\lambda,t)\), even with arbitrary mask feedback.
+The next chord search must therefore use a non-coordinate selector with a
+strict exceptional multiplicity deficit.
+The relative
 degree-seven `GL_3(F_2)`
 Sunada construction remains the exceptional nonsymmetric benchmark.
 The [intersective transfer theorem](verified/INTERSECTIVE_POLYNOMIAL_TRANSFER.md)
@@ -2487,14 +2871,16 @@ development:
     [quintic Schur-frontier note](HC4_MENG_YANG_QUINTIC_SCHUR_FRONTIER.md).
 
 Only the arrows in this list are dependencies or implications.  The certified
-upper endpoints are now SIC 2, unrestricted GVC 5, ordinary-Laplacian GVC 40,
+upper endpoints are now SIC 2, unrestricted GVC 3, ordinary-Laplacian GVC 40,
 and homogeneous HN Hessian rank 37.  For homogeneous quartic HN-VC, the best
 externally sourced and independently replayed ambient bound is 38; the
 internally generated dependency-independent route has ambient endpoint 42.
 The separate nonhomogeneous degree-at-most-four HN witness has rank 34 in
 dimension 40.  These
 are not additional
-logical steps, proofs of minimality, or literature-wide records; named
+logical steps or literature-wide records; the unrestricted GVC dimension is
+exactly three by the binary positive theorem and ternary counterexample, while
+the other numbers are not asserted minimal.  Named
 multipliers, exact artifacts, and inverse recurrences are witness-level data.
 
 The exact scopes, dependencies, checkers, proof types, and assurance states

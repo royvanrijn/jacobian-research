@@ -2,6 +2,11 @@
 
 ## 1. Scope and outcome
 
+**Current status.**  This note records a valid theorem and a valid no-go
+inside the Hall/carry route, but that route is now parked.  The later
+[Hall-envelope theorem](BINARY_GVC_ENVELOPE_CLOSURE.md) proves unrestricted
+binary GVC without the promotion statement below.
+
 The finite Hilbert-module normal form does not, by itself, imply the proposed
 linear-to-toric Hall inheritance statement.  Section 2 gives an all-order
 counterexample with a common factorial weight and two free module translates.
@@ -22,10 +27,19 @@ prove that, for every sufficiently large underlying prime \(q\) and every
 diagonal-period sequence are already scalar--torus equivalent on that slope.
 
 This closes the large-prime-power, one-direction, monomial Taylor branch of the
-translation-curvature target.  It does not prove affine-carry promotion,
-handle the finitely many exceptional underlying primes, classify mixed-prime
-composite character order, or triangularize a general two-dimensional Taylor
-down-set.
+translation-curvature target.  Taken alone, it does not prove affine-carry
+promotion, handle the finitely many exceptional underlying primes, classify
+mixed-prime composite character order, or triangularize a general
+two-dimensional Taylor down-set.  The later positive return-semigroup theorem
+closes every finite-order identity-versus-twist component after exposure, but
+does not make a signed Hall shell inherit the independent marks which its
+paired-point theorem needs.
+Proposition 3.2 also proves that the first cyclotomic tangent is
+intrinsically insufficient in two directions: an entire nonflat tangent
+module survives every such row, so separation must begin at quadratic or
+higher cyclotomic order.  Theorem 3.3 proves that the quadratic return Hessian
+then separates every fixed nonflat integer label, in characteristic zero and
+modulo all but finitely many primes.
 Consequently no unrestricted \(\operatorname {GVC}(2)\) theorem or binary
 counterexample is claimed.
 
@@ -78,7 +92,7 @@ Thus the pure cancellation does not survive a fixed multiplier.  \(\square\)
 The common factor \(R_N\) shows that merely adjoining a radial factorial does
 not repair the implication.  Proposition 2.1 does not satisfy the full
 rank-one Cartesian Hall/translation hypotheses.  Its role is logical: the
-remaining theorem cannot be deduced from Dickson--Gordan finiteness, Graver
+route-local promotion theorem cannot be deduced from Dickson--Gordan finiteness, Graver
 decomposition, and factorial weighting alone.  Any valid promotion lemma must
 use the Taylor down-set and its adjacent-channel derivative relations.
 
@@ -177,6 +191,161 @@ The generator \(j-r\) is exactly the infinitesimal form of
 \(t^{-r}(1+t)^d\) is a \(g\)-th power and additional residue-subsequence
 directions occur.  The primitive hypothesis is therefore structural, not a
 proof artifact.
+
+The analogous first-order statement is already false on a two-dimensional
+Taylor rectangle.  Fix \(e\geq2\) and \(1\leq s<e\).  For a matrix
+\(b=(b_{jk})\), put
+
+\[
+\begin{aligned}
+ T_N^\square(b)=\sum_{j=0}^d\sum_{k=0}^e
+ &b_{jk}\binom dj\binom ek\\
+ &\binom{d(N-1)}{rN-j}
+  \binom{e(N-1)}{sN-k}.
+\end{aligned}
+\tag{3.6}
+\]
+
+> **Proposition 3.2 (universal blind tangent module).**  For arbitrary
+> vectors \(u=(u_0,\ldots,u_d)\) and \(v=(v_0,\ldots,v_e)\), the matrix
+> \[
+>  b_{jk}=(j-r)v_k+u_j(k-s)
+> \tag{3.7}
+> \]
+> satisfies \(T_N^\square(b)=0\) for every \(N\geq1\).  This module contains
+> nonflat directions; in particular \(b_{jk}=(j-r)(k-s)\) is nonflat.
+
+Indeed, the first summand in (3.7) factors as the one-variable row for
+\(j-r\) times the row for \(v\), and the second factors as the row for \(u\)
+times the one-variable row for \(k-s\).  The two tangent factors vanish by
+the derivative calculation in the proof of Theorem 3.1.  The only redundancy
+in the parametrization is
+\[
+ u_j=c(j-r),\qquad v_k=-c(k-s),
+\]
+so the blind module has dimension \(d+e+1\).  On the other hand, every flat
+scalar--two-torus tangent has the form
+
+\[
+b_{jk}=A+Bj+Ck,\qquad A+Br+Cs=0,
+\tag{3.8}
+\]
+
+and spans only a two-dimensional subspace.  It also has zero mixed second
+difference.  The particular member
+\(b_{jk}=(j-r)(k-s)\) of (3.7) has
+
+\[
+ b_{j+1,k+1}-b_{j+1,k}-b_{j,k+1}+b_{jk}=1.
+\tag{3.9}
+\]
+
+Thus the first cyclotomic neighbourhood cannot prove two-dimensional
+flatness, even for a translated monomial rectangle and primitive slopes.
+The first coefficient that can see this ghost is the quadratic cyclotomic
+coefficient, which records products of the selected channel labels.  This is
+the exact infinitesimal counterpart of the beta/square curvature block in the
+Hall shell.
+
+The quadratic row in fact separates the entire nonflat part over the ordered
+characteristic-zero coefficient field.  For a real label matrix \(b\), set
+
+\[
+ H_b(\epsilon;t,w)=
+ \sum_{j=0}^d\sum_{k=0}^e
+ \binom dj\binom ek e^{\epsilon b_{jk}}t^jw^k,
+\qquad
+ M_{b,N}(\epsilon)=[t^{rN}w^{sN}]H_b(\epsilon;t,w)^N.
+\tag{3.10}
+\]
+
+> **Theorem 3.3 (quadratic rectangular rigidity).**  One has
+> \[
+>  M_{b,N}''(0)=0\quad(N\geq1)
+>  \quad\Longleftrightarrow\quad
+>  b_{jk}=B(j-r)+C(k-s)
+> \tag{3.11}
+> \]
+> for two real scalars \(B,C\).  Thus the common quadratic kernel is exactly
+> the flat scalar--two-torus tangent, even though the common linear kernel
+> contains the \(d+e+1\)-dimensional module in Proposition 3.2.
+
+### Proof
+
+Write \(S=\{0,\ldots,d\}\times\{0,\ldots,e\}\),
+\(a_{jk}=(j-r,k-s)\), and
+\(c_{jk}=\binom dj\binom ek>0\).  Differentiating the ordered-word expansion
+of (3.10) twice gives
+
+\[
+ M_{b,N}''(0)=
+ \sum_{\substack{n\in\mathbb N^S\\
+                  \sum n_{jk}=N,\ \sum n_{jk}a_{jk}=0}}
+ \frac{N!}{\prod n_{jk}!}
+ \prod c_{jk}^{\,n_{jk}}
+ \left(\sum n_{jk}b_{jk}\right)^2.
+\tag{3.12}
+\]
+
+Every summand is nonnegative.  Hence vanishing for every \(N\) says
+\(b\mathbin{\cdot}n=0\) for every nonnegative integral return vector \(n\).
+There is a strictly positive integral return vector:
+
+\[
+ n^0_{jk}=
+ \binom dj r^j(d-r)^{d-j}
+ \binom ek s^k(e-s)^{e-k}.
+\tag{3.13}
+\]
+
+Indeed, the two binomial means are \(r\) and \(s\).  Let \(A\) be the
+two-row integer matrix with columns \(a_{jk}\).  For any
+\(z\in\ker_{\mathbb Z}A\), choose \(L\) so large that \(Ln^0+z\geq0\).
+Both \(Ln^0\) and \(Ln^0+z\) are nonnegative integral returns, possibly at
+different orders, so \(b\mathbin{\cdot}z=0\).  The integer kernel spans the
+real kernel of \(A\); therefore \(b\) lies in the row space of \(A\), which is
+exactly (3.11).  Conversely, (3.11) makes the label sum zero on every return
+word, so every row in (3.12) vanishes.  \(\square\)
+
+The proof is not rectangle-specific.  For any finite integral support
+\(\{a_\nu\}\) with \(0\) in the relative interior of its convex hull and any
+positive coefficients \(c_\nu\), the common kernel of the return-period
+Hessians is the row space of the matrix with columns \(a_\nu\).  The rectangle
+is the Cartesian instance needed here, with (3.13) providing the strictly
+positive integral return explicitly.
+
+The later
+[positive return-semigroup jet theorem](POSITIVE_RETURN_SEMIGROUP_JET_RIGIDITY.md)
+upgrades this observation in two directions.  For an arbitrary positive
+return configuration, the complete exponential jet has exactly the same
+flat kernel over \(\mathbb C\), and finitely many jet equations suffice
+set-theoretically for every fixed configuration.  It also proves by the
+triangle inequality that any finite-order twist of the untwisted positive
+point with the same complete period sequence is coefficient-torus flat, with
+no exceptional torsion prime.  With independent coefficient marks, the same
+theorem separates two arbitrary nonzero phased points modulo the coefficient
+torus using only finitely many return degrees.
+
+> **Corollary 3.4 (fixed-label adelic separation).**  If \(b\) is an
+> integer label matrix which is not flat, then \(M_{b,N}''(0)\) is a positive
+> integer for some \(N\).  Consequently its quadratic reduction is nonzero
+> at all but finitely many rational primes.
+
+To identify this with the cyclotomic-adic row, write
+\(\epsilon=\log(1+\delta)\).  The linear and quadratic coefficients of
+\(M_{b,N}(\log(1+\delta))\) are
+\(M_{b,N}'(0)\) and
+\((M_{b,N}''(0)-M_{b,N}'(0))/2\).  On the blind first-order module the latter
+is \(M_{b,N}''(0)/2\), so Corollary 3.4 is exactly a quadratic all-prime
+tomography statement (with the prime \(2\) included among the possible
+exceptions).
+
+This corollary closes fixed, prime-independent rectangular label
+ambiguities.  The positive return-semigroup theorem cited above also closes
+prime-varying and mixed-prime labels once one side is the untwisted positive
+component.  Its independently marked version also controls two nontrivial
+baseline twists.  What is not supplied here is inheritance of those marks
+from signed cancellation between distinct Hall packets.
 
 ## 4. Large prime-power torsion twists are flat
 
@@ -277,16 +446,24 @@ valid statement must retain all of the following hypotheses:
 4. factorial normalization is performed over one common high-digit quotient.
 
 Under these hypotheses, Theorem 3.1 and Corollary 4.1 prove the primitive
-one-direction monomial tangent and large-prime-power torsion cases.  The
-unresolved promotion theorem is now narrower:
+one-direction monomial tangent and large-prime-power torsion cases, while
+Proposition 3.2 proves that no first-order two-direction analogue can suffice.
+Theorem 3.3 then separates every fixed nonflat integer label at quadratic
+order and at all but finitely many primes.  The general positive-return
+theorem closes every exposed finite-order identity-versus-twist component,
+closes arbitrary paired baselines after independent marking, and gives a
+four-jet certificate on the centered \((2,2)\) rectangle.  The unresolved
+promotion theorem is now narrower:
 
-> A nonflat small-prime or mixed-prime-torsion collision on a two-dimensional Taylor
-> down-set must be exposed by a higher cyclotomic-adic derivative row with the
-> same high-digit quotient, or else realize an actual nonterminal rank-one
-> Cartesian Hall packet.
+> A paired-baseline or signed cross-packet collision on a two-dimensional
+> Taylor down-set must expose one positive identity-versus-twist component,
+> or inherit enough common higher polarizations over one high-digit quotient
+> to recover the independently marked return rows, or else realize an actual
+> nonterminal rank-one Cartesian Hall packet.
 
-That statement, rather than a coefficient-blind Hilbert-module idempotent, is
-the remaining route to unrestricted binary GVC.
+That statement, rather than a coefficient-blind Hilbert-module idempotent,
+was the remaining target in this route.  It remains an independent packet
+question, not a gap in the Hall-envelope proof.
 
 ## 6. Exact replay
 
@@ -294,14 +471,21 @@ Run
 
 ```bash
 python3 scripts/verify_binary_gvc_translation_tangent_rigidity.py
+python3 scripts/verify_positive_return_semigroup_jet_rigidity.py
 ```
 
 The dependency-free checker verifies the coefficient identity, the rational
 row ranks through the declared bound, the nonprimitive rank jump, the
-factorially weighted two-translate obstruction, and finite-field reductions
-away from each displayed determinant.  These computations replay the
-formulas; Theorem 3.1 and Corollary 4.1 are proved above without a degree
-bound.
+universal blind rectangle module, the two-dimensional quadratic Hessian
+kernel, the factorially weighted two-translate obstruction, and finite-field
+reductions away from each displayed determinant.  These computations replay
+the formulas; Theorems 3.1 and 3.3, Proposition 3.2, and Corollaries 3.4 and
+4.1 are proved above without a degree bound.
+
+The second checker replays the general positive-return group-completion
+mechanism and, with Singular, reconstructs the exact centered-square jet
+ladder: the gauge-slice dimensions after linear, quadratic, cubic, and
+quartic jets are 4, 2, 1, and 0, with final quotient dimension 40.
 
 The adjacent exact torsion searches are
 
@@ -314,4 +498,5 @@ The adjacent exact torsion searches are
 
 They test 63,972 and 123,792 moving rows, respectively, and find no collision
 outside scalar, torus, and reversal symmetry.  These two finite searches are
-evidence for the remaining small-prime and mixed-prime cases, not proofs.
+evidence for the paired-twist and mixed-prime cases left in the parked route,
+not proofs.

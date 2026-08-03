@@ -332,5 +332,7 @@ This is an exhaustive negative result only in the declared lattice slice.
 It does not exclude rational points outside the coefficient boxes, symbols
 outside (6.2), nonlinear multipliers, or later behavior of the cutoff
 survivors.  In particular it does **not** establish GVC(4) or SIC(4), and
-the unrestricted GVC frontier remains the five-variable Long--Dvorsky
-witness.  The overall SIC frontier has independently dropped to three pairs.
+it does not improve either current endpoint.  The later homogeneous ternary
+witness and binary Hall-envelope theorem make the unrestricted-GVC failure
+dimension exactly three.  The full-rank two-pair witness makes the SIC
+failure dimension exactly two.

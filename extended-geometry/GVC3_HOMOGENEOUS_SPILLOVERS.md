@@ -25,6 +25,12 @@ The companion note proves
 \tag{1.2}
 \]
 
+The
+[cusp-profile suspension theorem](CUSP_PROFILE_SUSPENSION_THEOREM.md)
+now packages this witness, the radial padding below, arbitrary phase-square
+winding, and arbitrary homogeneous profiles into one family.  The formulas
+in Sections 1--2 are its specialization \(r=1,S=1\).
+
 The same endpoint computation gives a stronger multiplier statement. On
 \(\rho=1\), let \(u=x^2\), \(B=1+u\), and
 
@@ -130,7 +136,7 @@ power in this internal one-profile architecture is \(\Delta^{3s}\) with
 \(s=2\), namely \(\Delta^6\). This is not a global minimum-order theorem;
 it is an exact minimum for this endpoint-contact homogenization mechanism.
 
-## 3. Exact homogeneous dimension threshold
+## 3. Exact homogeneous and unrestricted dimension thresholds
 
 Call \(\operatorname{HGVC}(n)\) the GVC restricted to homogeneous
 constant-coefficient operators in \(n\) variables.
@@ -148,14 +154,22 @@ after scalar extension, so the translated split-symbol theorem proves GVC
 for arbitrary \(P\). Equations (1.1)--(1.2) disprove it in dimension three,
 and identity padding handles every larger dimension.
 
-For unrestricted GVC the current dimension ledger becomes
+The independent
+[Hall-envelope theorem](BINARY_GVC_ENVELOPE_CLOSURE.md) proves unrestricted
+GVC in two variables.  Combining it with the one-variable theorem and the
+counterexample (1.1)--(1.2) gives the unrestricted classification as well.
 
-\[
-2\le n_{\mathrm{GVC}}\le3,
-\tag{3.1}
-\]
+> **Corollary 3.2 — unrestricted GVC dimension classification.**
+> \[
+> \boxed{
+> \operatorname{GVC}(n)\text{ holds if and only if }n\le2.
+> }
+> \tag{3.1}
+> \]
+> In particular, the first failing dimension is exactly three.
 
-because GVC(1) is known and unrestricted GVC(2) remains open.
+The binary input is an internal written proof and has not been externally
+reviewed or formally verified; Corollary 3.2 has the same assurance level.
 
 ## 4. Quadratic-rank dichotomy for high powers
 
@@ -192,6 +206,13 @@ quadratic obstruction for every power at least six. The cases
 \(q(\partial)^k\) with \(1\le k\le5\) are not settled by this theorem.
 In particular, the ordinary second-order Laplacian vanishing conjecture is
 not touched.
+
+The
+[cusp-profile suspension theorem](CUSP_PROFILE_SUSPENSION_THEOREM.md#64-rank-and-power-transport)
+upgrades the rank-\(\ge3\) half from one padded witness to every admissible
+winding--profile--radial stratum
+\(6r+3e+h=k\), with the full multiplier ladder, maximal shifted-power
+failure, and exact polyharmonic depth.
 
 ## 5. Rank-one SIC fails first in three pairs
 
@@ -367,8 +388,9 @@ conjecture used in the Hessian-nilpotent/Jacobian programme. Here
 whereas the ordinary Laplacian conjecture assumes
 \(\Delta^m(P^m)=0\). The displayed \(P_k\) is not asserted to be Hessian
 nilpotent. Therefore this construction does not by itself improve the
-ordinary-Laplacian dimension bound, prove or disprove a Hessian-nilpotent
-statement, or settle GVC(2).
+ordinary-Laplacian dimension bound or prove or disprove a Hessian-nilpotent
+statement.  It is not the proof of GVC(2); that proof is the independent
+Hall-envelope theorem used in Corollary 3.2.
 
 It does, however, show that any route from arbitrary homogeneous
 constant-coefficient operators to the Jacobian/Hessian setting must retain

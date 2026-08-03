@@ -42,6 +42,15 @@ D_{k,n,\ell}
 \tag{1.4}
 \]
 
+The later
+[cusp-profile suspension theorem](CUSP_PROFILE_SUSPENSION_THEOREM.md)
+proves the same ladder, shifted-power failure, and exact depth for arbitrary
+winding \(r\), profile \(S\), and radial suspension \(h\).  The present note
+retains the original \(r=1,S=1\) formulas and the below-degree frontier.
+Its exhaustive homogeneous-lift converse also closes the former possibility
+that an arbitrary one-profile factor could lower the scoped power below
+\(\Delta^6\).
+
 ## 2. Fischer transfer
 
 Let

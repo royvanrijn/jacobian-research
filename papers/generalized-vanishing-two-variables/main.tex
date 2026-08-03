@@ -1,0 +1,926 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,microtype}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\N}{\mathbb N}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Newt}{\operatorname{Newt}}
+\newcommand{\Supp}{\operatorname{Supp}}
+\newcommand{\CT}{\operatorname{CT}}
+\newcommand{\wt}{\operatorname{wt}}
+
+\title{The Generalized Vanishing Conjecture:\\
+The Two-Variable Theorem and the First Failing Dimension}
+\author{Roy van Rijn\\{\small Independent researcher}}
+\date{4 August 2026}
+\hypersetup{
+  pdftitle={The Generalized Vanishing Conjecture: The Two-Variable Theorem and the First Failing Dimension},
+  pdfauthor={Roy van Rijn},
+  pdfsubject={The exact dimensional boundary of the Generalized Vanishing Conjecture},
+  pdfkeywords={Generalized Vanishing Conjecture, constant-coefficient differential operators,
+    Newton polygons, Hall's theorem, Gaussian moments, counterexample}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We determine the exact dimensional range of the Generalized Vanishing
+Conjecture for constant-coefficient differential operators over a field of
+characteristic zero.  In two variables we prove that
+\[
+ \Lambda^m(P^m)=0\quad(m\geq1)
+ \qquad\Longrightarrow\qquad
+ \Lambda^m(QP^m)=0\quad(m\gg0)
+\]
+for every fixed polynomial $Q$.  The proof follows two moving faces.  Hall's
+marriage theorem puts the lowest operator face strictly to the right of the
+highest polynomial face near ordinary degree.  A prime-dilation argument
+shows that, while the two faces have different weights, their horizontal
+Newton intervals cannot overlap.  Since the supports are finite, the two
+piecewise-linear weight envelopes must eventually meet.  Their first meeting
+is an unequal-weight common threshold, where a fixed multiplier cannot repair
+the resulting linear derivative deficit.  Apart from the constant-term
+theorem of Duistermaat and van der Kallen, the argument is elementary and
+does not use a degree bound or computer algebra.  We then give a homogeneous
+three-variable counterexample.  With
+$\rho=t^2+xy$, $A=\rho+x^2$,
+$C=y\rho^2-2xt^2\rho-x^3t^2$, and
+$\Delta=4\partial_x\partial_y+\partial_t^2$, the pair
+\[
+ \Lambda=\Delta^6,\qquad P=AC^2
+\]
+satisfies $\Lambda^m(P^m)=0$ while
+$\Lambda^m(x^2P^m)\ne0$ for every $m\geq1$.  The construction is a
+homogeneous endpoint-contact lift of Long's three-dimensional Gaussian
+counterexample.  It is the smallest member of an explicit cusp-profile
+family with arbitrary winding, profile, and radial suspension; in
+particular every $\Delta^k$, $k\geq6$, has such a failure.  Consequently
+unrestricted, and already homogeneous, GVC holds in dimension $n$ exactly
+when $n\leq2$.
+\end{abstract}
+
+\section{Introduction}
+
+For a polynomial $\lambda(X,Y)$, write
+\[
+ \Lambda=\lambda(\partial_x,\partial_y).
+\]
+The Generalized Vanishing Conjecture asks whether, for all polynomials
+$P,Q$ over a characteristic-zero field,
+\begin{equation}\label{eq:gvc}
+ \Lambda^m(P^m)=0\quad\text{for every }m\geq1
+ \quad\Longrightarrow\quad
+ \Lambda^m(QP^m)=0\quad\text{for all sufficiently large }m.
+\end{equation}
+It grew out of the Vanishing Conjecture and its relation to the Jacobian
+Conjecture; see Zhao~\cite{Zhao} and van den Essen, Willems, and
+Zhao~\cite{EWZ}.
+
+There were two particularly important precursors.  De Bondt proved GVC for
+every product of linear differential forms, and therefore for every
+homogeneous operator in two variables~\cite{deBondt}.  Much more recently,
+Long found a five-term quartic in three real Gaussian variables for which
+all pure Gaussian moments vanish while one fixed mixed moment equals $m!$
+at every power~\cite{LongGMC}.  Long's example disproves the Gaussian
+Moments Conjecture in every dimension at least three, but it is not itself a
+constant-coefficient GVC counterexample.
+
+This paper closes the gap on both sides.  First we prove \eqref{eq:gvc} for
+arbitrary, possibly nonhomogeneous, operators in two variables.  We then
+lift the endpoint-coefficient mechanism behind Long's example to a
+homogeneous polynomial and a homogeneous differential operator in three
+variables.  The two results meet at the exact boundary.
+
+\begin{theorem}[Binary Generalized Vanishing Conjecture]\label{thm:main}
+Let $k$ be a field of characteristic zero.  Every constant-coefficient
+differential operator $\Lambda$ on $k[x,y]$ satisfies
+\eqref{eq:gvc}.
+\end{theorem}
+
+The proof came from trying to understand a repeated pattern in finite-degree
+calculations.  At each Newton wall, the surviving coefficient ideals looked
+like staircase, or Ferrers, ideals: an operator term could move left, and a
+polynomial term could move right, but the two moves were never allowed to
+close the whole gap.  The calculations suggested a local statement stronger
+than any one radical computation: two unequal-weight faces satisfying all
+pure vanishing identities cannot overlap horizontally.
+
+Once that statement is written down, the global proof is short.  Give both
+the operator variables and the polynomial variables weight $(s,1)$.  Let
+$L(s)$ be the least operator weight and $U(s)$ the greatest polynomial
+weight.  Hall's theorem orders the corresponding faces just to the right of
+$s=1$.  Prime-dilated endpoint separation prevents the faces from passing
+one another while $U(s)-L(s)>0$.  Finite support then forces this difference
+to reach zero.  At the first zero all operator terms lie above one threshold
+and all polynomial terms lie below it, which gives eventual mixed
+vanishing.
+
+There are three points worth emphasizing.  First, the operator may be
+nonhomogeneous.  Second, the argument is not an induction on degree.  Third,
+the earlier carry, factorial, and bounded-radical calculations are not used
+in the proof.  They were useful in finding the horizontal-separation
+principle, but the final argument bypasses them.
+
+The proof is internal and, at the date on this manuscript, has not been
+externally reviewed.
+
+\section{Two standard reductions}
+
+We use the Newton polytope of a Laurent polynomial $F$,
+\[
+ \Newt(F)=\operatorname{conv}(\Supp(F)).
+\]
+The only substantial external input is the following theorem.
+
+\begin{theorem}[Duistermaat--van der Kallen~\cite{DK}]\label{thm:dk}
+Let $F$ be a Laurent polynomial over a characteristic-zero field.  If
+$\CT(F^m)=0$ for every $m\geq1$, then
+$0\notin\Newt(F)$.
+\end{theorem}
+
+We will also use the following immediate consequence.
+
+\begin{lemma}[Exposing a rational point]\label{lem:expose}
+Let $F$ be a nonzero Laurent polynomial and let
+$\rho\in\Newt(F)\cap\Q^n$.  Then there is an integer $a\geq1$ such that
+\[
+ [z^{a\rho}]F^a\ne0.
+\]
+For finitely many polynomials and rational points, the same $a$ may be
+chosen for all of them.
+\end{lemma}
+
+\begin{proof}
+Choose $N$ with $N\rho\in\Z^n$ and apply
+Theorem~\ref{thm:dk} contrapositively to
+$z^{-N\rho}F^N$.  To use one exponent for several polynomials, place them
+in disjoint sets of Laurent variables, multiply them, and apply the same
+argument to the product.
+\end{proof}
+
+We next dispose of the range in which the degree of $P$ is no larger than
+the first positive order of $\Lambda$.  This familiar split-symbol argument
+is included so that the main theorem has no hidden degree case.
+
+\begin{proposition}[Degree cutoff]\label{prop:cutoff}
+Suppose that $\Lambda$ has no constant term, and let $r$ be the least
+positive degree appearing in its symbol.  If $\deg P\leq r$, then
+\eqref{eq:gvc} holds.
+\end{proposition}
+
+\begin{proof}
+Put $d=\deg P$.  If $d<r$, then
+\[
+ \operatorname{ord}(\Lambda^m)\geq rm>\deg(QP^m)
+\]
+for all large $m$.
+
+Assume $d=r$.  Let $\lambda_r$ and $P_r$ be the lowest symbol and the top
+homogeneous part of $P$.  Over an algebraic closure,
+\[
+ \lambda_r=\prod_{i=1}^r D_{v_i}.
+\]
+With $Vt=\sum_i t_iv_i$, complete polarization gives
+\[
+ \lambda_r(\partial)^m(P_r^m)
+ =(m!)^r\CT_t\left(
+       \frac{P_r(Vt)}{t_1\cdots t_r}
+                  \right)^m.
+\]
+The highest-degree part of the pure premise is zero, so if $P_r(Vt)\ne0$,
+Theorem~\ref{thm:dk} supplies an integral linear functional $h$ which is
+strictly positive on the support of the displayed Laurent polynomial.  We
+first treat this case.
+
+Write $\Lambda=\sum_{j=r}^R\Lambda_j$ by homogeneous order and expand
+$\Lambda^m$.  If $n_j$ factors equal $\Lambda_j$, put
+\[
+ s=\sum_{j>r}n_j,
+ \qquad e=\sum_{j>r}(j-r)n_j.
+\]
+The corresponding term is $\Lambda_r^{m-s}B$, where the order of the fixed
+operator $B$ is $rs+e$.  Its total order is $rm+e$, so it can act
+nontrivially on $QP^m$ only when $e\leq\deg Q$.  Consequently $s$, $e$, and
+$B$ range over a finite set independent of $m$.
+
+Expand the bounded operator $B$ by Leibniz.  Each resulting term is
+$\Lambda_r^{m-s}$ applied to a product of one fixed derivative of $Q$ and
+$m$ copies of $P$, only a bounded number of which have been differentiated.
+Polarization asks for the coefficient of
+$t_1^{m-s}\cdots t_r^{m-s}$.  Its total $t$-degree is $r(m-s)$.  Since a
+non-top choice from an undifferentiated copy of $P$ loses at least one unit
+of total $t$-degree, while the translated $Q$ factor and all differentiated
+copies have bounded degree, at least $m-C$ copies must contribute a monomial
+of $P_r(Vt)$.
+
+Put $H_0=h(1,\ldots,1)$.  The separator says that every such top monomial
+$t^\gamma$ satisfies $h(\gamma)\geq H_0+1$.  All remaining factors have
+total $h$-weight bounded below by a constant.  Hence every possible product
+has $h$-weight at least
+\[
+ (m-C)(H_0+1)-C',
+\]
+whereas the requested diagonal exponent has weight $(m-s)H_0$.  The former
+is larger for all sufficiently large $m$, so the coefficient is zero.  This
+kills every term of $\Lambda^m(QP^m)$.
+
+It remains to treat $P_r(Vt)=0$.  Then $P(z+Vt)$ has total $t$-degree at
+most $r-1$.
+Derivatives do not increase this degree, so after the bounded insertion the
+whole translated product has $t$-degree at most $(r-1)m+C$.  The diagonal
+target for $\lambda_r^{m-s}$ has degree $r(m-s)$, which is larger for all
+large $m$.  The argument is unchanged by scalar extension, so it descends
+to $k$.
+\end{proof}
+
+If $\lambda$ has a nonzero constant term $c$, the top ordinary-degree part
+of $\Lambda^m(P^m)$ is $c^mP_d^m$.  Thus the pure premise forces $P=0$.
+The zero operator is also trivial.  From now on we may therefore assume
+that $r\geq1$ and $d=\deg P>r$.
+
+\section{The Hall starting point}
+
+Write $\lambda_r$ for the degree-$r$ part of the symbol and $P_d$ for the
+degree-$d$ part of $P$.  The highest ordinary-degree part of the pure
+identity is
+\begin{equation}\label{eq:top-pure}
+ \lambda_r(\partial)^m(P_d^m)=0\qquad(m\geq1).
+\end{equation}
+
+\begin{lemma}[Binary Hall localization]\label{lem:hall}
+After extending the field and making a linear change of coordinates, there
+is an integer $e$, $1\leq e\leq r$, such that
+\begin{equation}\label{eq:hall-normal}
+ \lambda_r=X^eC_{r-e}(X,Y),\qquad C_{r-e}(0,1)\ne0,
+\end{equation}
+and
+\begin{equation}\label{eq:hall-poly}
+ P_d=y^{d-e+1}D_{e-1}(x,y).
+\end{equation}
+In particular, the least $X$-exponent of $\lambda_r$ is $e$, while the
+greatest $x$-exponent of $P_d$ is at most $e-1$.
+\end{lemma}
+
+\begin{proof}
+Factor
+\[
+ \lambda_r=\prod_{i=1}^r D_{v_i},
+ \qquad P_d=\prod_{j=1}^d L_j
+\]
+over an algebraic closure.  Introduce $t_1,\ldots,t_r$ and a generic
+translation point $z$.  Polarization turns \eqref{eq:top-pure} into
+\[
+ \CT_t\left(
+   \frac{P_d(z+\sum_i t_iv_i)}{t_1\cdots t_r}
+          \right)^m=0
+ \qquad(m\geq1).
+\]
+By Theorem~\ref{thm:dk}, the vector $(1,\ldots,1)$ does not belong to the
+Newton polytope of $P_d(z+\sum_i t_iv_i)$.
+
+For each derivative copy $i$, join $i$ to the factor $L_j$ when
+$L_j(v_i)\ne0$.  If Hall's inequalities held, there would be a matching
+from all derivative copies to distinct polynomial factors.  Choosing the
+matched $t_i$ term in those factors and the constant term in the others
+would put $(1,\ldots,1)$ in the Minkowski sum of their Newton polytopes,
+which is the Newton polytope of the product.  Hall's theorem therefore gives
+a set $I$ of derivative copies with fewer than $|I|$ neighboring polynomial
+factors.
+
+The vectors belonging to $I$ must all be parallel.  Indeed, two
+nonparallel vectors cannot both be annihilated by a nonzero binary linear
+form, so such a pair would see all $d>r$ polynomial factors and could not
+be Hall-deficient.  Let $\mu=|I|$, and let $e\geq\mu$ be the full
+multiplicity of this direction in $\lambda_r$.  At least $d-\mu+1$, and
+hence at least $d-e+1$, factors of $P_d$ annihilate the direction.  Choosing
+it as the $y$-axis gives \eqref{eq:hall-normal} and
+\eqref{eq:hall-poly}.
+\end{proof}
+
+The last sentence of the lemma is the initial horizontal gap.  The rest of
+the proof shows that this gap cannot close while the two extremal faces have
+different weights.
+
+\section{Prime-dilated endpoint separation}
+
+Fix a positive weight $w=(u,v)$ with $u\ne v$.  We give $X,Y$ the same
+weights as $x,y$.  A polynomial supported on one affine line
+$u a+v b=W$ will be called $w$-homogeneous of weight $W$.
+
+\begin{proposition}[Shifted-ray separation]\label{prop:shifted}
+Let $A(X,Y)$ and $B(x,y)$ be nonzero $w$-homogeneous polynomials of
+weights $W_A$ and
+\[
+ W_B=W_A+w(\delta),
+ \qquad \delta\in\Q_{\geq0}^2.
+\]
+If
+\begin{equation}\label{eq:shifted-vanishing}
+ [x^{m\delta_x}y^{m\delta_y}]
+ A(\partial)^m(B^m)=0
+\end{equation}
+at every integral scale after the denominator of $\delta$ is cleared, then
+\begin{equation}\label{eq:shifted-disjoint}
+ \Newt(A)\cap(\Newt(B)-\delta)=\varnothing.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Suppose the intersection is nonempty.  It lies on one affine weight line.
+Because $u\ne v$, ordinary degree is strictly monotone on that line; hence
+the intersection has a unique point $\rho$ of least ordinary degree.
+Lemma~\ref{lem:expose}, applied in two independent sets of variables, gives
+an integer $k$ for which $k\rho$ and $k(\rho+\delta)$ are integral and
+\[
+ c=[X^{k\rho}]A^k\ne0,
+ \qquad b=[x^{k(\rho+\delta)}]B^k\ne0.
+\]
+Put $A_0=A^k$, $B_0=B^k$, $\alpha=k\rho$, and $\eta=k\delta$.
+
+All coefficients involved lie in a finitely generated
+characteristic-zero domain.  Specialize it to a number field while keeping
+$bc\ne0$, and choose a sufficiently large unramified rational prime $p$
+at which $b$ and $c$ are units.  The coefficient on the ray $p\eta$ is
+\begin{equation}\label{eq:coefficient-sum}
+ \sum_\gamma
+ \frac{(\gamma+p\eta)!}{(p\eta)!}
+ [X^\gamma]A_0^p\,
+ [x^{\gamma+p\eta}]B_0^p,
+\end{equation}
+where factorials are taken coordinatewise.  Every contributing $\gamma$
+belongs to
+\[
+ p\Newt(A_0)\cap\bigl(p\Newt(B_0)-p\eta\bigr).
+\]
+
+Let $s=\alpha_x+\alpha_y$.  Choose $p$ larger than every coordinate in
+the fixed Newton segments.  If $\gamma$ is not divisible by $p$
+coordinatewise, Frobenius makes each of the two coefficients in
+\eqref{eq:coefficient-sum} divisible by $p$.  The factorial quotient has
+$p$-adic valuation at least
+\[
+ \left\lfloor\frac{\gamma_x}{p}\right\rfloor+
+ \left\lfloor\frac{\gamma_y}{p}\right\rfloor
+ \geq s-1.
+\]
+Thus such a summand has valuation at least $s+1$.
+
+If $\gamma=p\beta$, the factorial quotient has valuation
+$\beta_x+\beta_y$.  The unique point with this value equal to $s$ is
+$\beta=\alpha$.  At that point the two coefficients reduce to $c^p$ and
+$b^p$, while the factorial quotient has valuation exactly $s$ and a
+nonzero unit part.  Every other summand has valuation at least $s+1$.
+Therefore \eqref{eq:coefficient-sum} has one term of uniquely least
+$p$-adic valuation and cannot vanish.  This contradicts
+\eqref{eq:shifted-vanishing} at scale $kp$.
+\end{proof}
+
+The specialization in this proof is only a device for proving a polynomial
+identity is nonzero.  It therefore proves the result over every
+characteristic-zero field.
+
+\begin{corollary}[Horizontal separation]\label{cor:horizontal}
+Let $A$ and $B$ be nonzero $w$-homogeneous polynomials with
+$W_A<W_B$.  If
+\[
+ A(\partial)^m(B^m)=0\qquad(m\geq1),
+\]
+then the projections of $\Newt(A)$ and $\Newt(B)$ to the $x$-axis are
+disjoint.
+\end{corollary}
+
+\begin{proof}
+If the projected intervals overlap, choose a rational number $c$ in their
+intersection.  There are unique points
+\[
+ \alpha=\left(c,\frac{W_A-uc}{v}\right)\in\Newt(A),
+ \qquad
+ \beta=\left(c,\frac{W_B-uc}{v}\right)\in\Newt(B).
+\]
+Their difference is
+$\delta=(0,(W_B-W_A)/v)\in\Q_{\geq0}^2$.  Every coefficient of
+$A(\partial)^m(B^m)$ vanishes, including the coefficient on the ray
+$m\delta$.  Proposition~\ref{prop:shifted} contradicts
+$\alpha\in\Newt(A)\cap(\Newt(B)-\delta)$.
+\end{proof}
+
+Taking $W_A=W_B$ and $\delta=0$ in
+Proposition~\ref{prop:shifted} gives the terminal version: equal-weight
+pure-zero faces have disjoint Newton segments.  Because they lie on the
+same line, one coordinate has a strict integral gap between all operator
+exponents and all polynomial exponents.
+
+\section{A common threshold is terminal}
+
+The preceding coordinate gap survives bounded excursions away from the
+two faces.
+
+\begin{proposition}[Common-threshold cutoff]\label{prop:threshold}
+Let $w=(u,v)$ be a positive unequal integral weight.  Suppose there is a
+number $W$ such that
+\begin{equation}\label{eq:threshold}
+ w(\alpha)\geq W\quad(\alpha\in\Supp\lambda),
+ \qquad
+ w(\beta)\leq W\quad(\beta\in\Supp P).
+\end{equation}
+If $\Lambda^m(P^m)=0$ for every $m\geq1$, then
+$\Lambda^m(QP^m)=0$ for every fixed $Q$ and all large $m$.
+\end{proposition}
+
+\begin{proof}
+Let $A$ be the weight-$W$ face of $\lambda$ and $B$ the weight-$W$ face
+of $P$.  The part of greatest possible output weight in the pure identity
+is
+\[
+ A(\partial)^m(B^m)=0.
+\]
+By Proposition~\ref{prop:shifted} with $\delta=0$, the two Newton segments
+are disjoint.  After possibly exchanging $x$ and $y$, there is an integer
+$\epsilon>0$ such that
+\begin{equation}\label{eq:coordinate-gap}
+ \alpha_x\geq\beta_x+\epsilon
+ \qquad
+ (\alpha\in\Supp A,\ \beta\in\Supp B).
+\end{equation}
+
+Consider one monomial selection in $\Lambda^m(QP^m)$.  For an operator
+selection $\alpha_i$ and a polynomial selection $\beta_j$, define their
+nonnegative integral weight defects
+\[
+ a_i=w(\alpha_i)-W,
+ \qquad b_j=W-w(\beta_j).
+\]
+If the selected monomial of $Q$ is $q$, a nonzero output monomial must have
+nonnegative weight.  Therefore
+\[
+ \sum_i a_i+\sum_j b_j\leq w(q)\leq
+ K:=\max_{q\in\Supp Q}w(q).
+\]
+At most $K$ operator selections and at most $K$ polynomial selections can
+lie off the equality faces.  The full supports are finite, so their total
+effect on the $x$-coordinate is bounded independently of $m$.  The remaining
+face selections contribute, by \eqref{eq:coordinate-gap}, an $x$-derivative
+excess at least $m\epsilon-C_Q$.  For large $m$ this exceeds the
+$x$-degree supplied by $Q$.  The selected derivative therefore cannot act
+nontrivially.  Every selection vanishes, proving the proposition.
+\end{proof}
+
+\section{The moving envelopes}
+
+We now prove Theorem~\ref{thm:main}.  For $s\geq1$, give $x,X$ weight $s$
+and $y,Y$ weight $1$.  Define
+\begin{equation}\label{eq:envelopes}
+ L(s)=\min_{\alpha\in\Supp\lambda}(s\alpha_x+\alpha_y),
+ \qquad
+ U(s)=\max_{\beta\in\Supp P}(s\beta_x+\beta_y),
+ \qquad
+ \Delta(s)=U(s)-L(s).
+\end{equation}
+These are finite, continuous, piecewise-linear functions.
+
+By Lemma~\ref{lem:hall}, the least $x$-exponent on the lowest ordinary
+operator face is $e$, while the greatest $x$-exponent on the top polynomial
+face is some $t\leq e-1$.  For every sufficiently small rational
+$\varepsilon>0$, the extremal faces at $s=1+\varepsilon$ are the
+corresponding endpoints.  Since $d>r$,
+\begin{equation}\label{eq:initial}
+ \Delta(1+\varepsilon)>0,
+ \qquad e>t.
+\end{equation}
+
+At a rational $s>1$, let $A_s$ be the complete $L(s)$-face of $\lambda$
+and let $B_s$ be the complete $U(s)$-face of $P$.  The part of largest
+$(s,1)$-weight in the pure identity is
+\begin{equation}\label{eq:face-pure}
+ A_s(\partial)^m(B_s^m)=0\qquad(m\geq1).
+\end{equation}
+Whenever $\Delta(s)>0$, Corollary~\ref{cor:horizontal} says that the two
+$x$-intervals are disjoint.
+
+Their order cannot reverse while $\Delta>0$.  They begin with the operator
+interval strictly to the right by \eqref{eq:initial}.  A change can occur
+only at one of the finitely many rational breakpoints of the envelopes.  At
+the first hypothetical reversal, the complete breakpoint faces contain
+both the old and new endpoints.  Their projected intervals must overlap,
+contrary to Corollary~\ref{cor:horizontal}.  Hence, for every rational
+$s>1$ with $\Delta(s)>0$,
+\begin{equation}\label{eq:ordered}
+ \min\{\alpha_x:\alpha\in\Supp A_s\}
+ >
+ \max\{\beta_x:\beta\in\Supp B_s\}.
+\end{equation}
+
+The function $\Delta$ cannot stay positive forever.  After its last
+breakpoint, $L$ is realized by an operator monomial with globally least
+$X$-exponent $a_{\min}$, while $U$ is realized by a polynomial monomial
+with globally greatest $x$-exponent $i_{\max}$.  Equation
+\eqref{eq:ordered} gives $a_{\min}>i_{\max}$.  Thus on this final interval
+\[
+ \Delta(s)=C+s(i_{\max}-a_{\min})
+\]
+has strictly negative slope, so it must cross zero.
+
+Let $s_*>1$ be the first zero.  All breakpoints and zeroes of these
+integer-exponent envelopes are rational.  After multiplying the weight
+$(s_*,1)$ by a common denominator, we obtain a positive unequal integral
+weight.  With $W=L(s_*)=U(s_*)$, the definitions give
+\[
+ w(\alpha)\geq W\quad(\alpha\in\Supp\lambda),
+ \qquad
+ w(\beta)\leq W\quad(\beta\in\Supp P).
+\]
+Proposition~\ref{prop:threshold} proves eventual mixed vanishing.  Together
+with Proposition~\ref{prop:cutoff} and the trivial constant-term cases,
+this completes the proof of Theorem~\ref{thm:main}.  \qed
+
+\section{From Long's Gaussian example to GVC}
+
+Long's three-variable Gaussian counterexample is most transparent in
+circular coordinates
+\[
+ Z=\frac{X+iY}{\sqrt2},\qquad
+ W=\frac{X-iY}{\sqrt2},
+\]
+with $T$ an independent standard real Gaussian.  He takes
+\begin{equation}\label{eq:long}
+ P_{\mathrm L}=(1+Z)\left(W-\frac{2+Z}{2}T^2\right),
+ \qquad Q_{\mathrm L}=Z,
+\end{equation}
+and proves the stronger coefficient identity
+\begin{equation}\label{eq:long-coefficient}
+ \mathbb E\bigl(A(Z)P_{\mathrm L}^m\bigr)
+ =m![z^m]A(z)(1+z)^{m-1}.
+\end{equation}
+Thus the pure moment, obtained from $A=1$, is zero, while $A=z$ gives
+$m!$~\cite{LongGMC}.
+
+The feature we need is the adjacent-coefficient failure in
+\eqref{eq:long-coefficient}: the pure functional asks one step beyond the
+degree of $(1+z)^{m-1}$, while multiplication by $Z$ shifts the request
+back to its leading coefficient.  A Gaussian expectation is not literally
+an iterate of one fixed differential operator on powers of one homogeneous
+polynomial, so an additional step is required for GVC.  We preserve the
+same adjacent-coefficient mechanism on a quadric, increase the endpoint
+contact from one to two, and thereby make the Laurent expression
+polynomial and homogeneous in three variables.
+
+\section{A homogeneous counterexample in three variables}
+
+Work first over $\mathbb C$.  In variables $x,y,t$, put
+\begin{equation}\label{eq:gvc3-data}
+ \rho=t^2+xy,
+ \qquad A=\rho+x^2,
+ \qquad C=y\rho^2-2xt^2\rho-x^3t^2,
+\end{equation}
+and define
+\begin{equation}\label{eq:gvc3-pair}
+ P=AC^2,
+ \qquad
+ \Delta=4\partial_x\partial_y+\partial_t^2,
+ \qquad
+ \Lambda=\Delta^6,
+ \qquad Q=x^2.
+\end{equation}
+The polynomial $P$ is homogeneous of degree twelve and $\Lambda$ is
+homogeneous of order twelve.
+
+\begin{theorem}[Three-variable counterexample]\label{thm:gvc3}
+For every $m\geq1$,
+\begin{equation}\label{eq:gvc3-pure-mixed}
+ \Lambda^m(P^m)=0,
+ \qquad
+ \Lambda^m(x^2P^m)\ne0.
+\end{equation}
+More precisely,
+\begin{equation}\label{eq:gvc3-exact}
+ \Delta^{6m+1}(x^2P^m)
+ =2^{8m+1}(6m+1)!(2m)!
+   \frac{(12m+3)!!}{(4m+1)!!}.
+\end{equation}
+The same identities hold over every characteristic-zero field.
+\end{theorem}
+
+\subsection{The polynomial lift}
+
+The reason for the definition of $C$ is the identity
+\begin{equation}\label{eq:cusp-identity}
+ xC=\rho^3-t^2(\rho+x^2)^2.
+\end{equation}
+Indeed, $xy=\rho-t^2$, so
+\[
+ xC=(\rho-t^2)\rho^2-2x^2t^2\rho-x^4t^2
+    =\rho^3-t^2(\rho+x^2)^2.
+\]
+On the affine quadric $\rho=1$, formula \eqref{eq:cusp-identity} gives
+\begin{equation}\label{eq:quadric-laurent}
+ P=x^{-2}(1+x^2)
+       \left(1-t^2(1+x^2)^2\right)^2.
+\end{equation}
+This Laurent expression is used only for coefficient extraction;
+\eqref{eq:gvc3-data}--\eqref{eq:gvc3-pair} show that $P$ itself is a
+polynomial.  The square is the extra endpoint contact which removes the
+pole after homogenization.
+
+\subsection{The two neighboring spherical coefficients}
+
+Write $x=X+iY$, $y=X-iY$, and keep $t=T$.  Then
+\[
+ \rho=X^2+Y^2+T^2,
+ \qquad
+ \Delta=\partial_X^2+\partial_Y^2+\partial_T^2.
+\]
+On the unit sphere, parameterize
+\[
+ x=\sqrt{1-t^2}\,e^{i\theta},
+ \qquad y=\sqrt{1-t^2}\,e^{-i\theta},
+\]
+with normalized measure $(dt/2)(d\theta/2\pi)$.  Phase integration in
+\eqref{eq:quadric-laurent} is constant-term extraction.  Setting $u=x^2$
+gives
+\begin{equation}\label{eq:sphere-coefficients}
+ \int_{S^2}P^m\,d\sigma=[u^m]K_m(u),
+ \qquad
+ \int_{S^2}x^2P^m\,d\sigma=[u^{m-1}]K_m(u),
+\end{equation}
+where
+\begin{equation}\label{eq:km}
+ K_m(u)=(1+u)^m\int_0^1
+       \left(1-v^2(1+u)^2\right)^{2m}\,dv.
+\end{equation}
+
+Put $B=1+u$ and
+\[
+ J_m(B)=\int_0^B(1-w^2)^{2m}\,dw.
+\]
+Changing variables in \eqref{eq:km} gives
+\[
+ K_m(u)=B^{m-1}J_m(B).
+\]
+Because $J_m'(B)=(1-B^2)^{2m}$ has a zero of order $2m$ at $B=1$,
+\[
+ J_m(1+u)=J_m(1)+O(u^{2m+1}).
+\]
+Consequently, through degree $m$,
+\[
+ K_m(u)=J_m(1)(1+u)^{m-1}+O(u^{m+1}).
+\]
+The coefficient of $u^m$ is zero and the coefficient of $u^{m-1}$ is
+\begin{equation}\label{eq:cm}
+ C_m=J_m(1)=\int_0^1(1-w^2)^{2m}\,dw
+ =\frac{2^{2m}(2m)!}{(4m+1)!!}\ne0.
+\end{equation}
+This is exactly the pure-versus-adjacent coefficient split seen in Long's
+identity \eqref{eq:long-coefficient}.
+
+\subsection{From sphere averages to derivatives}
+
+For every homogeneous polynomial $F$ of degree $2k$ in three variables,
+orthogonal invariance gives the apolar Reynolds identity
+\begin{equation}\label{eq:reynolds}
+ \Delta^kF
+ =2^kk!(2k+1)!!\int_{S^2}F\,d\sigma.
+\end{equation}
+Both sides are invariant linear functionals on homogeneous degree-$2k$
+polynomials; evaluation on $\rho^k$ fixes the displayed constant, so
+\eqref{eq:reynolds} is algebraic despite the convenient spherical notation.
+
+Since $P^m$ has degree $12m$, equations
+\eqref{eq:sphere-coefficients}, \eqref{eq:cm}, and
+\eqref{eq:reynolds} give
+\[
+ \Delta^{6m}(P^m)=0.
+\]
+Since $x^2P^m$ has degree $12m+2$, they also give
+\begin{align*}
+ \Delta^{6m+1}(x^2P^m)
+ &=2^{6m+1}(6m+1)!(12m+3)!!\,C_m\\
+ &=2^{8m+1}(6m+1)!(2m)!
+   \frac{(12m+3)!!}{(4m+1)!!},
+\end{align*}
+which is nonzero.  If $\Delta^{6m}(x^2P^m)$ were zero, applying one more
+$\Delta$ would give zero, so the mixed output in
+\eqref{eq:gvc3-pure-mixed} is nonzero.  All displayed differential
+identities have rational coefficients.  The result therefore descends from
+$\mathbb C$ to every characteristic-zero field, proving
+Theorem~\ref{thm:gvc3}.
+
+\section{How the witness was found and the full family}
+
+The construction can be read backwards from the coefficient calculation.
+Long's example suggested looking for a phase variable $u$ for which the
+pure moment asks for the first coefficient beyond
+$(1+u)^{m-1}$, while multiplication by $u$ moves the request back to the
+last nonzero coefficient.  On the quadric $\rho=1$, the choice
+\[
+ B=1+x^2,
+ \qquad E=1-t^2B^2
+\]
+has the required endpoint flatness at $B=1$.  The desired phase winding is
+$x^{-2}$.  A single $E$ has only one hidden factor of $x$, so it does not
+remove that pole.  The identity
+\[
+ E=xC
+\]
+on $\rho=1$ shows that $E^2x^{-2}=C^2$ is the first polynomial choice.
+Multiplying by $A=\rho+x^2$ supplies the binomial $B$.  This forces
+\[
+ P=AC^2
+\]
+and explains both the square and degree twelve: they are not guesses from
+an expanded 23-term polynomial, but the smallest contact-two homogeneous
+lift in this one-profile construction.
+
+The same design has independent winding, profile, and radial parameters.
+Let $r\geq1$, let $e,h\geq0$, and choose
+\[
+ S(z)=\sum_{j=0}^e s_jz^j\ne0.
+\]
+Define its homogeneous lift and the resulting polynomial by
+\begin{equation}\label{eq:profile-family}
+ \begin{aligned}
+ S^{\mathrm{hom}}
+   &=\sum_{j=0}^e
+      s_j(t^2A^2)^j\rho^{3(e-j)},\\
+ P_{r,S,h}
+   &=\rho^hA^rC^{2r}S^{\mathrm{hom}},\\
+ N&=6r+3e+h,
+ \qquad \Lambda_{r,S,h}=\Delta^N.
+ \end{aligned}
+\end{equation}
+Then $P_{r,S,h}$ is homogeneous of degree $2N$.  Put
+\begin{equation}\label{eq:profile-moment}
+ c_m(S)=\int_0^1
+   (1-v^2)^{2rm}S(v^2)^m\,dv.
+\end{equation}
+Algebraically, if the integrand is $\sum_j a_jv^{2j}$, this notation means
+$\sum_j a_j/(2j+1)$; it therefore makes sense over every
+characteristic-zero field.
+
+\begin{theorem}[Cusp-profile failure family]\label{thm:family}
+If $c_m(S)\ne0$ for every $m\geq1$, then
+\begin{equation}\label{eq:family-pure}
+ \Delta^{Nm}(P_{r,S,h}^m)=0
+ \qquad(m\geq1),
+\end{equation}
+while, for $1\leq\ell\leq rm$,
+\begin{equation}\label{eq:family-ladder}
+ \begin{aligned}
+ &\Delta^{Nm+\ell}
+   \left(x^{2\ell}P_{r,S,h}^m\right)\\
+ &\quad={}
+ 2^{Nm+\ell}(Nm+\ell)!(2Nm+2\ell+1)!!
+ \binom{rm-1}{\ell-1}c_m(S)\ne0.
+ \end{aligned}
+\end{equation}
+In particular, $Q=x^2$ disproves GVC for every member of the family at
+every positive power.
+\end{theorem}
+
+\begin{proof}
+On $\rho=1$, put $u=x^2$ and $B=1+u$.  Formula
+\eqref{eq:profile-family} becomes
+\[
+ \left.P_{r,S,h}\right|_{\rho=1}
+ =u^{-r}B^r(1-t^2B^2)^{2r}S(t^2B^2).
+\]
+After the $m$-th power, phase extraction asks for the coefficients
+$u^{rm}$ and $u^{rm-\ell}$ of
+\[
+ H_m(B)=B^{rm-1}J_m(B),
+ \qquad
+ J_m'(B)=\left((1-B^2)^{2r}S(B^2)\right)^m.
+\]
+The derivative has a zero of order at least $2rm$ at $B=1$, so
+\[
+ J_m(1+u)=c_m(S)+O(u^{2rm+1}).
+\]
+Through degree $rm$, the relevant polynomial is therefore
+$c_m(S)(1+u)^{rm-1}$.  Its $u^{rm}$ coefficient is zero and its
+$u^{rm-\ell}$ coefficient is
+$\binom{rm-1}{\ell-1}c_m(S)$.  Applying the Reynolds identity
+\eqref{eq:reynolds} proves \eqref{eq:family-pure} and
+\eqref{eq:family-ladder}.
+\end{proof}
+
+The condition in Theorem~\ref{thm:family} is easy to satisfy.  For example,
+$S(z)>0$ on $[0,1]$ gives $c_m(S)>0$ for every $m$, so each fixed
+$(r,e,h)$ contains an open real coefficient family rather than one isolated
+point.  Three useful specializations are:
+\begin{itemize}
+ \item $r=1$, $S=1$, $h=0$: the minimal witness $AC^2$;
+ \item for every $s\geq2$, take $S(z)=(1-z)^{s-2}$ and $h=0$:
+ \[
+   P_s=Ax^{s-2}C^s,
+   \qquad \Lambda_s=\Delta^{3s};
+ \]
+ \item for every $k\geq6$, take $r=1$, $S=1$, and $h=k-6$:
+ \begin{equation}\label{eq:radial-family}
+   P_k=\rho^{k-6}AC^2,
+   \qquad \Lambda_k=\Delta^k.
+ \end{equation}
+\end{itemize}
+Thus every power $\Delta^k$ with $k\geq6$ has a homogeneous
+three-variable GVC counterexample, and every such example carries the full
+positive-phase multiplier ladder in \eqref{eq:family-ladder}.
+
+\section{The exact dimensional boundary}
+
+Let $\operatorname{GVC}(n)$ denote \eqref{eq:gvc} for all
+constant-coefficient operators and all polynomials in $n$ variables, and
+let $\operatorname{HGVC}(n)$ denote the same assertion restricted to
+homogeneous operators.
+
+\begin{theorem}[Dimension classification]\label{thm:classification}
+For every $n\geq1$,
+\begin{equation}\label{eq:classification}
+ \operatorname{GVC}(n)\text{ holds}
+ \quad\Longleftrightarrow\quad
+ n\leq2.
+\end{equation}
+The same equivalence holds for $\operatorname{HGVC}(n)$.
+\end{theorem}
+
+\begin{proof}
+Theorem~\ref{thm:main} proves the unrestricted assertion for two variables,
+and the one-variable case follows by restriction or by the split-symbol
+theorem.  For the homogeneous assertion in at most two variables, every
+homogeneous symbol splits into linear forms after scalar extension, which
+is the case proved by de Bondt~\cite{deBondt}.
+
+Theorem~\ref{thm:gvc3} gives a homogeneous failure in three variables.
+For $n>3$, use the same $P,Q$, and $\Lambda$ in the first three variables
+and let them ignore the remaining variables.  This preserves both
+identities in \eqref{eq:gvc3-pure-mixed}.
+\end{proof}
+
+The classification is a closure of GVC by dimension, not a solution of the
+Jacobian Conjecture.  Nor does Theorem~\ref{thm:gvc3} settle Zhao's
+ordinary-Laplacian Vanishing Conjecture: its operator is the sixth power
+$\Delta^6$, not $\Delta$ itself.
+
+\section{Why the two-dimensional proof stops}
+
+The positive and negative parts of the paper meet at a structural fault
+line.  In two variables, every homogeneous symbol splits after scalar
+extension, Hall deficiency localizes at one repeated direction, and an
+unequal-weight Newton face is a segment.  Those facts force the moving
+operator and polynomial intervals to meet at a terminal threshold.
+
+The three-variable symbol
+\[
+ (4XY+T^2)^6
+\]
+contains a rank-three quadratic factor and does not split into linear forms.
+On the sphere, its invariant functional retains the radial variable while
+phase integration extracts one coefficient.  The construction arranges
+for the pure coefficient to lie just beyond the degree of
+$(1+u)^{m-1}$, but multiplication by $x^2$ shifts the extraction to the
+nonzero neighboring coefficient.  There is no single horizontal interval
+gap for the binary envelope argument to preserve.  This is the precise
+mechanism of failure, rather than merely a dimension count.
+
+\section{What the binary proof explains}
+
+The envelope argument explains the staircase ideals that appeared in the
+finite calculations.  Suppose a wall begins with a horizontal gap $g>0$.
+Index tied operator corrections by their leftward moves $i$ and polynomial
+corrections by their rightward moves $j$.  The two face intervals overlap
+exactly when
+\[
+ i+j\geq g.
+\]
+Horizontal separation forbids every such pair.  Set-theoretically, the
+allowed supports are therefore the independent sets of the Ferrers graph
+with edges $i+j\geq g$.  The corresponding squarefree ideal is
+\[
+ (a_i:i\geq g)+(b_j:j\geq g)
+ +(a_i b_j:i,j<g,\ i+j\geq g).
+\]
+This is why bounded moment calculations repeatedly returned coordinate
+components and staircase products.  They were seeing finite shadows of a
+support-separation theorem.
+
+The proof is specifically two-dimensional.  Hall deficiency localizes at
+one repeated binary direction, and an unequal-weight face is a segment
+whose projection is an interval.  In higher dimension, a deficient set can
+contain a more complicated arrangement of directions, and two disjoint
+faces can move around one another without passing through one common
+one-dimensional projection.  The binary separation theorem therefore does
+not extend formally to the rank-three symbol in
+Theorem~\ref{thm:gvc3}.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

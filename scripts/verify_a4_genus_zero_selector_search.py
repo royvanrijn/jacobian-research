@@ -435,14 +435,14 @@ print("NOTE: degree sixteen is sharp; its full two-parameter genus stratificatio
 
 
 # ---------------------------------------------------------------------------
-# 3. Two reducible directions and the one-jet affine-modification handoff
+# 3. Two reducible directions and the one-jet saturation handoff
 # ---------------------------------------------------------------------------
 
 # The two additional root-linear directions q2 and q4 reveal two exact
 # cancellations.  The first is only the old root and rho boundary.  The
-# second is more informative: after adjoining the quotient by a, it gives a
-# degree-two root-linear function which passes every normalized valuation
-# condition except one coefficient on the simple F branch.
+# second is more informative: its quotient by a is already polynomial and
+# gives a degree-two root-linear function which passes every normalized
+# valuation condition except one coefficient on the simple F branch.
 near_selector = sp.expand((b + 6) * T - 81 * rho)
 assert sp.expand(3 * q1 + q2 - T * rho) == 0
 assert sp.expand(6 * q3 + q4 - a * near_selector) == 0
@@ -476,7 +476,68 @@ assert len(near_factors) == 1
 assert near_factors[0][1] == 1
 assert sp.Poly(near_factors[0][0], a, b).total_degree() == 16
 
+# The unique bad residue direction can be cancelled without disturbing any
+# of the other six normalized branches.  This gives an exact selector, but
+# its horizontal norm jumps to degree twenty four.
+jet_correction_base = sp.expand(
+    9 * a * b**2
+    + 27 * a * b
+    - 162 * a
+    - 8 * b**3
+    - 36 * b**2
+    - 108 * b
+    - 108
+)
+
+# The correction direction is not independent of the earlier corrected
+# selector Hhat.  This exact syzygy identifies the one-jet problem as a
+# coupled selector-module calculation.
+c_polynomial = 2 * b + 3
+simple_selector = 2 * T - (27 - 3 * c_polynomial) * rho
+corrected_selector = sp.expand(
+    4 * c_polynomial * simple_selector
+    - 27 * (c_polynomial - 9) * a * rho
+)
+assert sp.expand(
+    (c_polynomial + 9) * corrected_selector
+    - 16 * c_polynomial * near_selector
+    + 12 * rho * jet_correction_base
+) == 0
+assert valuation_truncations(rho * jet_correction_base) == {
+    "S1": {},
+    "S2": {},
+    "Fs": {(5, (0, 2)): -243},
+    "Q": {},
+    "R2": {},
+    "Ft": {},
+    "R1": {},
+}
+jet_selector = sp.expand(
+    36 * near_selector
+    + c_polynomial * rho * jet_correction_base
+)
+assert sp.expand(
+    12 * jet_selector
+    - 64 * rho * near_selector
+    + c_polynomial * (c_polynomial + 9) * corrected_selector
+) == 0
+assert all(
+    truncation == {}
+    for truncation in valuation_truncations(jet_selector).values()
+)
+for name, weights in resolution_rays.items():
+    assert characteristic_orders(jet_selector, weights) == required_orders[name]
+jet_norm = sp.resultant(P, jet_selector, T)
+jet_unit, jet_factors = sp.factor_list(jet_norm, a, b)
+assert jet_unit != 0
+assert len(jet_factors) == 1
+assert jet_factors[0][1] == 1
+assert sp.Poly(jet_factors[0][0], a, b).total_degree() == 24
+
 print("PASS: 3*q1+q2 is exactly T*rho")
-print("PASS: (6*q3+q4)/a is polynomial after the a-modification")
+print("PASS: 6*q3+q4 factors polynomially as a times the near-selector")
 print("NEAR MISS: that quotient has only the simple-F order-five coefficient 27*c*k^2/4")
 print("PASS: its coefficient-plane norm is irreducible of degree 16")
+print("PASS: one explicit rho-correction cancels the remaining simple-F jet")
+print("PASS: the correction is an exact syzygy with the earlier Hhat selector")
+print("PASS: the corrected selector is exact and has irreducible norm degree 24")

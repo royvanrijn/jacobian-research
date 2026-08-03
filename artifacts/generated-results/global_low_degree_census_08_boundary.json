@@ -1,0 +1,34 @@
+{
+  "coefficient_boundary": {
+    "compactification_used": false,
+    "downward_support_boundary_complete": true,
+    "reason": "No coefficient was normalized to one. Each exact support was checked on its full coefficient torus using rho*product(c)-1. Setting a coefficient to zero is exactly a smaller support, and every smaller support through the sparse bound is a separate census row."
+  },
+  "parameters": {
+    "collision_axis": 1,
+    "dimension": 3,
+    "maximum_coordinate_degree": 7,
+    "maximum_nonlinear_support": 6,
+    "normalization": [
+      "F(0)=0",
+      "JF(0)=I",
+      "F(e1)=0"
+    ],
+    "target_invariant_degree_profile": [
+      7,
+      6,
+      4
+    ]
+  },
+  "projective_boundary_status": "not required: exact coefficient-torus ideals are empty",
+  "projective_charts_requiring_audit_after_exact_lifting": 0,
+  "schema": "global-low-degree-census.boundary.v1",
+  "scope_warning": "This closes only the support-at-most-6 stratum and the dense quadratic profiles. It is not a complete census of all supports below (7, 6, 4).",
+  "source_infinity": {
+    "audited_by": "global_low_degree_census_04_valuations.json",
+    "coordinate_strata": 7,
+    "status": "all exposed-face classes compiled before coefficient algebra"
+  },
+  "supports_requiring_component_boundary_audit": [],
+  "survives_projective_boundary_analysis": false
+}

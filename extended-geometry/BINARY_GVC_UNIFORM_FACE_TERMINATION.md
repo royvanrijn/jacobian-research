@@ -1,5 +1,12 @@
 # Uniform Hall localization and terminal-face rigidity for binary GVC
 
+> **Status update.**  The later Hall/carry promotion problem in this note is
+> no longer needed for binary GVC.  The
+> [Hall-envelope closure](BINARY_GVC_ENVELOPE_CLOSURE.md) combines Theorem
+> 2.1, the shifted-ray Theorem 3.2, and Corollary 4.1 to prove unrestricted
+> GVC in two variables.  The packet and carry sections below are retained as
+> valid results and as development history for the bypassed route.
+
 ## 1. Scope
 
 Let \(k\) be a characteristic-zero field,
@@ -36,9 +43,10 @@ such a fixed marked packet exists, every nonfree factorization ambiguity
 reduces to already-safe beta circuits in every radial span.  Thus there is no
 remaining post-promotion semigroup-classification hypothesis.
 
-This does **not** yet prove unrestricted \(\operatorname{GVC}(2)\).
+Taken alone, the route developed in this note did **not** prove unrestricted
+\(\operatorname{GVC}(2)\).
 The Hall--jet valuation produces affine, prime-dependent carry shells
-before it produces a trace family.  What remains is a promotion theorem
+before it produces a trace family.  What remained inside that route was a promotion theorem
 showing that every proportional-depth shell either becomes a fixed
 scale-compatible family, is Hall-terminal, or loses support.  Section 7
 gives an exact weighted-trace classification and a small factorial
@@ -448,7 +456,7 @@ case.  The general positive-density multi-level case is not a consequence
 of either theorem separately.  Theorem 7.4 quaterdecies supplies the
 finite-trace separation after a scale-compatible trace has been exposed;
 the promotion from the prime-dependent Hall shell to that trace remains
-open.
+unproved inside the parked route.  The envelope proof does not require it.
 
 The conclusion cannot be replaced by the assertion that the beta--torus
 kernel itself is Mathieu--Zhao.  Long's three-term circuit is the sharp
@@ -1913,8 +1921,8 @@ closed above.  The step not proved by this atom analysis alone is that the
 normalized
 score-\(rd+1\) sum is compatible with peeling such an atom from its
 high-digit quotient.  Theorem 7.4 quaterdecies closes the resulting
-finite trace after scale-compatible promotion; proving that promotion
-remains Open Problem 7.8.
+finite trace after scale-compatible promotion; proving that promotion is the
+parked route problem recorded as Problem 7.8.
 
 The quotient itself has a second, independent toric obstruction.
 
@@ -2804,9 +2812,12 @@ fixed multiplier \(Q\) cannot repair them for large \(m\).  Taking the
 maximum threshold over the finitely many coefficients of \(Q\) proves
 the conditional conclusion.
 
-> **Open Problem 7.8 (affine-carry promotion).**  Prove (SC), or produce
+> **Parked Problem 7.8 (affine-carry promotion).**  Prove (SC), or produce
 > a rank-one Cartesian Hall packet in which an affine carry class
 > survives as a nonterminal isoperiodic character cluster.
+
+This problem remains mathematically well posed, but the Hall-envelope theorem
+shows that it is not necessary for unrestricted binary GVC.
 
 There is a sharper attack on the isoperiodic alternative which uses the
 translation relations discarded by an abstract Laurent trace.  Write
@@ -2863,7 +2874,7 @@ closed in Corollary 7.4 quinquies when isolated.
 > exposes a nonflat three-level or square curvature block with the same
 > high-digit quotient.
 
-This target would close Open Problem 7.8.  In the flat case Lemma 7.9
+This target would close parked Problem 7.8.  In the flat case Lemma 7.9
 gives (SC).  In the nonflat case the demanded common-quotient exposure
 feeds the already proved augmented atom determinant.  Differentiating
 the period identity is the natural mechanism because (7.12) replaces
@@ -2889,9 +2900,54 @@ coefficient-blind Hilbert-module inheritance theorem can replace the
 Cartesian argument: two free module translates carrying a common factorial
 weight can cancel isoperiodically at every pure order while a fixed multiplier
 survives.  Thus the remaining triangularization must use higher
-cyclotomic-adic rows for exceptional small primes, mixed-prime torsion, and
-the genuinely two-dimensional Taylor down-set, always over one common high
-quotient.
+cyclotomic-adic rows on the genuinely two-dimensional Taylor down-set,
+always over one common high quotient.  In fact the same note proves the first
+two-dimensional row is
+necessarily blind on the whole module
+\(b_{jk}=(j-r)v_k+u_j(k-s)\).  This module contains
+\((j-r)(k-s)\), which has mixed second difference one.  Hence that branch
+begins at the quadratic, not linear, cyclotomic coefficient.  The quadratic
+return Hessian then separates every fixed nonflat integer label over
+characteristic zero and modulo all but finitely many primes.
+
+The subsequent
+[positive return-semigroup jet theorem](POSITIVE_RETURN_SEMIGROUP_JET_RIGIDITY.md)
+proves the full statement for every exposed identity-versus-twist positive
+component: the complete jet has only the flat kernel, and the triangle
+inequality plus the exact sequence of complex tori handles every finite
+torsion order, including varying labels and mixed-prime orders.  It also gives
+an exact fourth-jet certificate on the centered square, while its polarized
+paired-point theorem separates arbitrary phased baselines after independent
+return marking.  What remains is inheritance of a positive component or
+enough common marks from the signed shell over the common high quotient.
+
+The subsequent
+[primitive translation-observability theorem](BINARY_GVC_PRIMITIVE_TRANSLATION_OBSERVABILITY.md)
+also closes the proposed primitive-Graver counterexample search at every
+projected span.  A genuinely mixed Graver move must transfer a nonzero weighted
+level between the operator and polynomial colours; otherwise it conformally
+splits into two same-colour relations.  Translating either colour alone then
+gives the two endpoint monomials different degrees in the translation
+parameter.  Hence the complete one-colour derivative-orbit ideal, saturated
+away from coefficient-support loss, is the unit ideal for every mixed
+primitive move and every choice of nonzero factorial weights.  Exact
+Normaliz--Singular regressions find no one-colour torus survivor among the 17
+factorial-compatible span-four packets or the 125 span-five packets.  The two
+span-four survivors under *common diagonal* translation are quartic Veronese
+pure-power identities and disappear under either separate translation.
+
+This does not supply (SC).  Graver decomposition resolves binomial lattice
+relations, whereas the unresolved shell is a signed linear sum and need not
+inherit a vanishing primitive summand.  A counterexample must now be a minimal
+linear syzygy among several inequivalent primitive translation orbits, with
+the actual affine carry coefficients and one common high quotient.  The next
+finite object is therefore the translation-observability matroid of the whole
+affine shell, not a further pairwise primitive-signature census.
+The distinction is already exact at span two: a (C_4)-weighted three-state
+quadratic-discriminant row vanishes along its full translation orbit on the
+coefficient torus even though no mixed primitive binomial is invisible.  Its
+scale-two factorial row is nonzero, so it is a safe obstruction to the
+primitive-only inference rather than a Hall packet or GVC counterexample.
 
 An exact bounded search tests the smallest version of this target.  For
 one translated monomial and a \(C_2\) twist, set
@@ -2931,7 +2987,7 @@ F. Pakovich, C. Pech, and A. Zvonkin,
 study*](https://arxiv.org/abs/0910.2691), and period-preserving mutations
 give further isoperiodic families.
 
-This is now the exact binary gap.  Lemma 7.4 ter controls one prime and
+This was the exact gap in the Hall/carry route.  Lemma 7.4 ter controls one prime and
 one order \(\ell d\); its carry rows factor into a low-digit insertion
 and a generally unbalanced high-digit quotient.  It does not show that
 these rows, as \(N\) varies, have congruence \(\pi(p,q)=Nc\), nor that
@@ -2970,7 +3026,7 @@ row and the centered Bessel endpoint row to the ghost diagonals.  One
 must then incorporate the next unit correction of the Frobenius terms
 under the same Hall support split.  Corollary 7.4 quinquies proves the
 isolated atom blocks terminal.  Their compatibility with the common
-high-digit quotient remains the promotion problem.  Proposition
+high-digit quotient remains the route-local promotion problem.  Proposition
 7.4 septies rules out
 reducing that compatibility to circuit moves on arbitrary projected
 supports: the first missing block is the support-five identity (7.5m).
@@ -3035,10 +3091,16 @@ factorial-compatibly inheriting one fixed marked packet from the
 prime-dependent affine shell.  A module-only version is false; the corrected
 statement must use the complete Cartesian translation tower.  Its primitive
 one-direction tangent and every large-underlying-prime, prime-power-character
-case are now proved, leaving exceptional small primes, mixed-prime torsion,
-and two-dimensional curvature triangularization over a common high quotient.
-Neither the censuses nor the
-new tangent theorem supplies that final promotion or a GVC counterexample.
+case are now proved.  More generally, the
+[positive return-semigroup jet theorem](POSITIVE_RETURN_SEMIGROUP_JET_RIGIDITY.md)
+shows that every exposed identity-versus-twist positive component is flat for
+all finite torsion orders, even with varying labels and mixed-prime order;
+finitely many jets suffice, and the centered \((2,2)\) rectangle has an
+explicit fourth-jet certificate.  Independently marked return polynomials
+also separate arbitrary paired phases modulo the coefficient torus.  The
+surviving issue is inheritance of either separating structure from the signed
+shell over a common high quotient.  Neither the censuses nor these rigidity
+theorems supply that final promotion or a GVC counterexample.
 
 The toric input used here is S. Petrović,
 [*On the universal Gröbner bases of varieties of minimal
@@ -3052,7 +3114,8 @@ A new preprint of M. Wilson,
 [*A face-isolation proof of the two-variable Gaussian Moments
 Conjecture*](https://arxiv.org/abs/2607.23887), uses the same
 good-prime/Frobenius-to-Laurent strategy in one complex weight
-coordinate.  It does not prove the binary GVC statement here.  Under
+coordinate.  It is not the proof of the binary GVC statement here; that proof
+is the Hall-envelope theorem.  Under
 the Gaussian realization of a binary differential pairing there are
 two complex weight coordinates and the radial factor is
 \(\rho_1!\rho_2!\), not one factorial.  Wilson's own higher-pair

@@ -12,8 +12,10 @@ It proves two complementary facts:
 
 The first result disproves the attempted single-shell beta/Bessel exposure
 lemma. The second shows that this loss is repaired for pure rays by genuinely
-all-order data. Neither result proves unrestricted GVC(2). The residual target
-is a mixed, nonfree return-semigroup packet theorem.
+all-order data. Neither result was the unrestricted proof; the later
+[Hall-envelope theorem](BINARY_GVC_ENVELOPE_CLOSURE.md) proves binary GVC
+without this promotion route. The residual mixed, nonfree return-semigroup
+target is retained as a parked packet problem.
 
 ## 2. First-ghost source-total collapse
 
@@ -282,7 +284,8 @@ primitive pair.  Its subsequent Franel-fibre calculation proves more: after
 promotion to any fixed finite-character packet, two character-period rows
 force support loss unless the pair is already character-separated.  Thus this
 family no longer obstructs the displayed marked same-vector theorem after
-fixed promotion.  The remaining problem is inheritance of such a fixed packet
-from the prime-dependent affine Hall shell.
-This note narrows that problem and prevents reuse of a false local lemma; it
-does not claim unrestricted GVC(2).
+fixed promotion.  The problem left in this route is inheritance of such a
+fixed packet from the prime-dependent affine Hall shell.
+This note narrows that route-local problem and prevents reuse of a false local
+lemma; unrestricted binary GVC is proved independently by the Hall-envelope
+theorem.

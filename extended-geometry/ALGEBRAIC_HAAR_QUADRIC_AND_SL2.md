@@ -188,6 +188,30 @@ equivalent to invariance under the algebraic group action.  Thus this is
 exactly the normalized algebraic invariant, or Reynolds, functional on the
 quadric.
 
+### 1.4 Reynolds--apolar transfer
+
+The same invariant-theoretic uniqueness gives a dimension-independent
+transfer.  If \(q=z^{\mathsf T}Az\) is nondegenerate in \(n\) variables,
+\(D_q=\partial^{\mathsf T}A^{-1}\partial\), and \(\mathcal R_q\) is the
+normalized Reynolds functional on \(q=1\), then every homogeneous \(F\) of
+degree \(2k\) satisfies
+
+\[
+ \boxed{
+ D_q^kF
+ =4^kk!\left(\frac n2\right)_k
+ \mathcal R_q(F|_{q=1}).}
+ \tag{1.14}
+\]
+
+Both sides are invariant functionals on \(\operatorname{Sym}^{2k}\), and
+evaluation on \(q^k\) fixes the displayed constant.  The
+[cusp-profile suspension note](CUSP_PROFILE_SUSPENSION_THEOREM.md#2-reynolds--apolar-transfer)
+records the short recurrence proof and applies (1.14) to homogeneous
+GVC(3).  In the present normalization \(q=UV+T^2\), one has
+\(D_q=4\partial_U\partial_V+\partial_T^2\), and (1.14) identifies the
+functional in (1.1)--(1.3) directly with top apolar contraction.
+
 ## 2. The all-order Mathieu witness
 
 Set

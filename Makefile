@@ -8,6 +8,7 @@ FINALIZED_PAPERS := \
 	papers/gaussian-moments-two-variables \
 	papers/sparse-minimality-gaussian-moments-dimension-three
 ACTIVE_PAPERS := \
+	papers/generalized-vanishing-two-variables \
 	papers/common-arithmetic-fibers \
 	papers/fixed-map-hasse-failures
 PARKED_PAPERS := \
@@ -113,11 +114,15 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: verify-projective-gradient-segre verify-hc4-quintic-infinity-rees
 .PHONY: verify-hc4-meng-yang-graphs verify-hc4-meng-yang-quintic
 .PHONY: verify-s4-collision-frame-keller
+.PHONY: verify-global-low-degree-census
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
 	$(PYTHON) scripts/check_markdown_links.py
 	$(PYTHON) scripts/audit_status.py
+
+verify-global-low-degree-census:
+	$(PYTHON) scripts/verify_global_low_degree_census.py
 
 verify-s4-collision-frame-keller:
 	$(PYTHON) scripts/verify_s4_collision_frame_keller_frontier.py
@@ -890,6 +895,8 @@ verify-papers:
 		output/pdf/gaussian-moments-two-variables.pdf
 	cp papers/sparse-minimality-gaussian-moments-dimension-three/main.pdf \
 		output/pdf/sparse-minimality-gaussian-moments-dimension-three.pdf
+	cp papers/generalized-vanishing-two-variables/main.pdf \
+		output/pdf/generalized-vanishing-two-variables.pdf
 	cp papers/common-arithmetic-fibers/main.pdf \
 		output/pdf/common-arithmetic-fibers.pdf
 	cp papers/fixed-map-hasse-failures/main.pdf \

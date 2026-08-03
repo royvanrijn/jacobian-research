@@ -29,6 +29,8 @@ This closes the abstract nonfree-factorization ambiguity, but it is not a
 proof of unrestricted \(\operatorname{GVC}(2)\): it does not prove that a
 prime-dependent Hall--jet shell inherits one fixed profile with these
 markings.  Nor is a factorial-only collision below a GVC counterexample.
+The later [Hall-envelope theorem](BINARY_GVC_ENVELOPE_CLOSURE.md) proves
+unrestricted binary GVC by bypassing this now-parked promotion route.
 
 ## 2. The scaled-fiber semigroup
 
@@ -402,12 +404,13 @@ radial-carry interval is one bounded-order derivative row.  The subsequent
 [translation-tangent theorem](BINARY_GVC_TRANSLATION_TANGENT_RIGIDITY.md)
 shows that the coefficient-blind **linear-to-toric inheritance** formulation
 is false even for two free module translates with a common factorial weight.
-The corrected remaining problem is Hall-specific: the full Cartesian
+The corrected problem remaining inside that route is Hall-specific: the full Cartesian
 translation/derivative tower must expose a flat scale-compatible twist or a
 nonflat curvature block over one common high quotient.  Its primitive
 one-direction tangent and every prime-power-character case with sufficiently
 large underlying prime are now proved; exceptional small primes, mixed-prime
-torsion, and the genuinely two-dimensional case remain.
+torsion, and the genuinely two-dimensional case remain unproved there.  They
+are not gaps in the independent Hall-envelope proof.
 
 At span seven the small \(C_2,C_3,C_4\) histogram kernel has a second
 generator, but Theorem 5.1 with \(q=4\) says that \(C_4,C_5\) reconstruct

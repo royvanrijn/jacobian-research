@@ -1,0 +1,29 @@
+{
+  "claim_boundary": "Complete for invariant profile enumeration, the dense quadratic collision ideal, and exact supports of size at most 6 inside raw coordinate degree 7. The cardinality-unbounded support census remains open.",
+  "generator": "scripts/compile_global_low_degree_census.py",
+  "parameters": {
+    "max_degree": 7,
+    "max_nonlinear_support": 6,
+    "primes": [
+      11,
+      13,
+      17
+    ],
+    "target_profile": [
+      7,
+      6,
+      4
+    ]
+  },
+  "schema": "global-low-degree-census.manifest.v1",
+  "stage_sha256": {
+    "global_low_degree_census_01_profiles.json": "5a8afc828e92c77a952f18f0c5c87d83e05ef44b152ec330e237824978d29e61",
+    "global_low_degree_census_02_supports.json": "6c4b4f596ff2dbb1254feb769989603ebfc3d12d617e31a3f9e9c999dc9d9208",
+    "global_low_degree_census_03_buckets.json": "1f349d500ae8b0d12a6b410db2d1bc4a7492f4bfdc0b03f684d6a0a202b7e155",
+    "global_low_degree_census_04_valuations.json": "ef27e68a2d8758324cb2c071c2bc91080d71cf378d9e7129245c5d2d75fd8c00",
+    "global_low_degree_census_05_smt.json": "273c0c74c6520ed160f774b7eac6a61c353894d369d94601956a39fcf392cfd0",
+    "global_low_degree_census_06_modular.json": "a2e31cfaf051a55ca6bb88fb7276feeff9ddc809c7a74e22aac30b8c7fbf5472",
+    "global_low_degree_census_07_exact.json": "5aac88a6ea7fdb860774da0c978c9e14251dcbcb2a64494e2a360dbac6ec04fd",
+    "global_low_degree_census_08_boundary.json": "650056f40accc02622f8127f16a37d6bd1d2dd33eb4d623334fe26dccd3998e2"
+  }
+}

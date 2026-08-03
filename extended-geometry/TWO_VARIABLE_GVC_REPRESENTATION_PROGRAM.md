@@ -2,25 +2,30 @@
 
 ## 1. Status
 
-The nonhomogeneous termination program has been reduced to one exact
-promotion problem.  The
-[finite-trace digit-separation theorem](BINARY_GVC_UNIFORM_FACE_TERMINATION.md)
-splits every scale-compatible finite-character trace, but the Hall--jet
-filtration has not yet been proved to promote each affine,
-prime-dependent carry shell to such a trace.  Consequently unrestricted
-\(\operatorname{GVC}(2)\) remains open.  The earlier balanced
-homogeneous target is proved independently.  The
-[balanced cubic theorem](TWO_VARIABLE_CUBIC_GVC_THEOREM.md) proves that
-the first four pure moments force every cubic Segre point into the
-one-sided nullcone, with the explicit mixed cutoff \(m>\deg Q\).
-More generally, the
-[split-symbol theorem](SPLIT_SYMBOL_GVC_THEOREM.md) proves the GVC
-conclusion in every balanced homogeneous degree: every binary operator
-symbol splits into linear factors, and translated complete polarization
-converts its pure values to constant terms of powers of one Laurent
-polynomial.  Retaining the translation variable removes the earlier
-degree restriction: homogeneous binary operators satisfy GVC for
-arbitrary \(P\).
+Unrestricted \(\operatorname{GVC}(2)\) is now proved by the
+[Hall-envelope theorem](BINARY_GVC_ENVELOPE_CLOSURE.md).  Hall localization
+puts the global minimum operator endpoint strictly to the right of the
+global maximum polynomial endpoint just above ordinary weight.  At every
+later rational slope with positive weight gap, the complete extremal faces
+inherit the pure-zero identity.  The shifted-ray endpoint theorem forbids
+their Newton \(x\)-intervals from overlapping, so the intervals cannot
+exchange order.  Since both supports are finite, their weight gap must reach
+zero.  The first zero is an unequal common threshold and is terminal.
+
+Thus the former affine Hall/carry promotion problem is no longer needed for
+binary GVC.  Its finite-trace, character, carry, factorial, and Graver
+results remain valid and are retained below as development history.  The
+degree-five through degree-seven calculations likewise remain independent
+exact regressions.  The proof of the unrestricted theorem is internal and
+has not been externally reviewed.
+
+The remaining open target of this program is rank-efficient ordinary-
+Laplacian polarization: replace the third-order Dvorsky operator by a
+quadratic constant-coefficient operator using as few auxiliary variables as
+possible while retaining a nonseparable mixed obstruction.  The
+[balanced cubic theorem](TWO_VARIABLE_CUBIC_GVC_THEOREM.md) and the
+[split-symbol theorem](SPLIT_SYMBOL_GVC_THEOREM.md) remain the homogeneous
+controls for this question.
 
 The later
 [separable escape obstruction](SEPARABLE_GVC_ESCAPE_OBSTRUCTIONS.md)
@@ -39,11 +44,11 @@ represents exactly a product of powers of linear symbols.  The first
 remaining operator architectures must therefore use coupled coefficients,
 nonlinear translation, or an irreducible nonhomogeneous symbol.
 
-There are now two continuing targets: prove scale-compatible carry
-promotion to one fixed marked packet, or find a genuine binary
-counterexample; and replace the third-order Dvorsky operator by a quadratic
-constant-coefficient operator using as few auxiliary variables as
-possible.  The
+Before the envelope closure there were two continuing targets: prove
+scale-compatible carry promotion to one fixed marked packet, or find a
+genuine binary counterexample; and replace the third-order Dvorsky operator
+by a quadratic constant-coefficient operator using as few auxiliary
+variables as possible.  Only the second remains open.  The
 [first-ghost source-collapse theorem](BINARY_GVC_FIRST_GHOST_SOURCE_COLLAPSE_AND_RAY_RIGIDITY.md)
 disproves the former translation-curvature route through one translated
 first ghost, while proving all-scale rigidity for pure repeated rays.
@@ -60,15 +65,15 @@ The
 [nonfree-factorization theorem](BINARY_GVC_NONFREE_FACTORIZATION_TOMOGRAPHY.md)
 then closes the general same-vector ambiguity in every radial span: the
 consecutive \(C_q,C_{q+1}\) histograms are injective, or have one kernel
-which is a conformal sum of safe beta circuits.  The remaining binary test is
-therefore only promotion from the prime-dependent affine Hall shell to one
-fixed marked packet, not semigroup closure after that promotion.
-Polynomial degree seven is a regression for the first target.
+which is a conformal sum of safe beta circuits.  At that stage the remaining
+binary test was only promotion from the prime-dependent affine Hall shell to
+one fixed marked packet, not semigroup closure after that promotion.
+Polynomial degree seven is a regression for the first target; its complete
+quadratic-leading row is now closed below.
 
-The binary partial results do not change the known counterexample upper
-bounds: they remain five variables for unrestricted constant-coefficient
-GVC and forty variables for ordinary-Laplacian GVC.  They do not yet
-establish a counterexample-free range through two variables.
+The envelope theorem rules out a constant-coefficient GVC counterexample in
+two variables.  The known higher-dimensional counterexample and ordinary-
+Laplacian upper bounds are separate from that conclusion.
 The separate
 [three-variable tagged-lift analysis](THREE_VARIABLE_GVC_TAGGED_LIFT.md)
 tests whether the two-pair Image-Mathieu witness can lower the former
@@ -169,6 +174,24 @@ coordinate-deficit faces.  Thus every binary constant-coefficient operator
 satisfies GVC through polynomial degree six, and the next genuinely
 nonhomogeneous polynomial-degree frontier begins at seven.
 The
+[quadratic-leading septic theorem](BINARY_QUADRATIC_SEPTIC_GVC.md)
+now closes the first row on that frontier.  Its pure-seventh-power endpoint
+repeats the sextic slope-three two-axis radical, but both axes must migrate
+one additional weight before reaching a common threshold; the two new
+terminal radicals are trivial.  Consequently a degree-seven counterexample
+must have lowest positive operator order \(3,4,5\), or \(6\).  The
+[cubic-leading septic theorem](BINARY_CUBIC_SEPTIC_GVC.md) now closes the
+next row.  Its complete two-wing Newton scan finds only four squarefree
+monomial branch radicals at slopes \(3/2\) and \(2\); every component is a
+finite pivot corridor ending at an unequal common threshold.  Hence the
+degree-seven frontier was reduced further to lowest order \(4,5\), or \(6\).
+The
+[high-order septic theorem](BINARY_DEGREE_SEVEN_GVC.md) closes those three
+rows and proves the degree-seven corollary.  More decisively, the
+[Hall-envelope theorem](BINARY_GVC_ENVELOPE_CLOSURE.md) packages every such
+finite pivot corridor into one all-degree argument and proves unrestricted
+binary GVC.
+The
 [uniform face-termination theorem](BINARY_GVC_UNIFORM_FACE_TERMINATION.md)
 now removes two previously degree-specific parts of this analysis.  For
 arbitrary \(r<d\), every leading Hall component is localized at a single
@@ -184,7 +207,8 @@ unequal-weight exposed endpoint on every fixed rational normalized output
 ray.  Exact terminal radicals are therefore no longer part of the
 all-degree problem.
 
-What remains is narrower but genuine.  At depth \(\lfloor\rho m\rfloor\),
+The following paragraphs record the superseded promotion route.  At depth
+\(\lfloor\rho m\rfloor\),
 coefficient extraction can couple several selection distributions with
 positive limiting frequency.  The split-symbol separator also shows that
 \(o(m)\) excursions from one ordinary-homogeneous face cannot repair its

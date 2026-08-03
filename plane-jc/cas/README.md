@@ -47,8 +47,13 @@ nonproperness, and three Newton vertices do not upper-bound
 affine-normalized support, using dense triangular automorphisms.  It also
 checks the Kummer descent gate for monomial-Jacobian blocks.  The second
 command corrects the F2 chart to `[t,z]=-z`, proves the finite
-degree/edge-halfspace band envelope, and classifies all 35 zero layers
-(`39` through `5`) by exact band incidence and Kummer character.  Its pinned
+degree/edge-halfspace band envelope, and classifies both the 35 upper zero
+layers and the complete lower tail through layer `-200`.  The full record has
+`2,418` jet-reduced parameters, `240` zero layers, and `1,327,026` exact
+compressed generators.  On the earliest movable-double-root branch it also
+derives the exact fixed-endpoint dependency cone and eliminates all eleven
+`w=1` coordinates: one is normalized and the other ten have determinant
+`75000`, leaving thirteen global Hermite coordinates.  Its pinned
 artifact is
 [`../../artifacts/generated-results/jc2_f2_75_125_character_layers.json`](../../artifacts/generated-results/jc2_f2_75_125_character_layers.json).
 It is an exact B0 envelope, not an exhaustive polygon normal form or an F2
@@ -102,7 +107,13 @@ double-packet floor twelve.  It explicitly records that the target center is
 at infinity, so no affine-sheet increment applies.  Their output reopens F2
 only at the global gluing stage and does not exclude `(75,125)`.  The final
 command exhausts a stated two-transposition spectator model; all six gluing
-classes survive and generate `S_7`, so it supplies no contradiction.  The
+classes survive and generate `S_7`.  It also proves that the terminal
+five-cycle normalizer is the generic Kummer group `AGL(1,5)`, with common
+quadratic character `Q(sqrt(5))`, and audits the stronger fivefold model.
+With a rational connected source boundary, that model forces degree eleven
+and leaves one inertia-supported unoriented `S_11` class.  Both models remain
+conditional, so neither supplies an F2
+contradiction.  The
 consolidated theorem and claim boundary are in
 [`../F2_MODIFIED_LAURENT_FAMILY.md`](../F2_MODIFIED_LAURENT_FAMILY.md).
 <!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
@@ -328,13 +339,48 @@ python3 plane-jc/cas/test_f2_75_125_frontend.py
 python3 plane-jc/cas/f2_75_125_frontend.py
 ```
 
-The first command replays the exact 35-layer B0 envelope and the corrected
+The first command replays the exact full B0 envelope and the corrected
 top-tangent profile: the first-five kernels are `6,6,7,7,10`, while the
 formal `C0^(-1)` resonance is at layer 10 and is not a source-band kernel.
 The same replay uses the next nonlinear rows to force source-root continuation
-through descent 7 and isolate `27*y^2-9*y+1=0` at descent 8.
+through descent 7 and isolate `27*y^2-9*y+1=0` at descent 8.  The Q-band-one
+normalization excludes its fixed Kummer supports; at this earliest spacing
+only the nonzero double root of `R` remains, and it passes an exact local target-jet interpolation.
+The descent-40 fifth multiple is recorded as a lower-tail Fitting row, not as
+the invalid primitive equation `E5=0`.  The complete target cokernel is
+split into twelve local jets and two triangular residues, while layer zero
+becomes a rank-14 quotient of an exact length-15 Artinian algebra.  The
+lowest-`u` target edge has an exact Bezout witness.  Raw old-band generators
+span both cokernels.  The edge witness is also tested uniformly in `r`: it
+completes as an exact formal shear, but the shear has an unavoidable infinite
+tail.  The exact polynomial second-order repair never terminates
+quadratically, and the `r=3` cubic and quartic termination ideals are units.
+The first Kummer-return band `v^5` is now reconstructed from the exact source
+jets.  Its fifth-binomial correction cancels the former terminal conflict;
+the remaining `8 x 10` map has unit minor `3^5*5^16*e^13` after base change
+to the rank-two descent-eight algebra.  Both branches survive, and a second
+unit Bezout minor proves that the standalone edge recursion remains
+surjective through `v^10`.  The replay now gives the two all-`r` unit-minor
+formulas and traces their `18*r-1` pivots to exact original-polynomial source
+combinations strictly inside both certified supporting edges (`53` at
+`r=3`).  Its confluent-CRT determinants quotient the
+triangular `w=0` control block, leaving a rank-`24` global Hermite module over
+the rank-two candidate algebra.  The fixed `w=1` block is then one normalized
+identity plus a `10 x 10` affine-linear block of determinant `75000`.
+Exact `w=0`-preserving followers eliminate those ten variables, leaving
+thirteen cokernel coordinates.  The carried reduction is implemented by
+`reduce_f2_75_125_endpoint_system.py`: its ten solutions have `1,489`
+straight-line terms, the resulting bracket circuits have degree at most
+eight, and `1,061` active source coordinates remain.  The endpoint-disjoint
+new-Q operators on layers `39..29` are tridiagonal with unit minors; they
+eliminate `134` coordinates and leave `219` upper Fitting slots.  The exact
+coupling boundary is descent `12` (layer `28`), where P3/Q13 first enters the
+endpoint solution.  Later
+<!-- status-consumer: PF2ER1 64378dad616fc3f2 -->
+first-defect spacings `9..90` remain explicitly enumerated.
 The final command emits JSON.  Its `frontend_complete` field is intentionally
-false until the lower Laurent boundary has been classified exhaustively.
+false until the B0 over-envelope has been cut to the actual lower Newton row
+or eliminated directly.
 
 The source reconciliation for the repeated-tail `(96,144)` row is:
 

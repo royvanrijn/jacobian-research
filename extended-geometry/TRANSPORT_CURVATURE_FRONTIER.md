@@ -3,10 +3,12 @@
 ## Status
 
 This note tests the proposed common transport mechanism behind plane JC,
-nonhomogeneous binary GVC, and `HC(4)`.  It proves a scoped all-degree theorem
-for rank-one binary leading profiles.  It does **not** prove any of those
-conjectures, classify rank-two leading forms, or promote the remaining binary
-Hall shells to one algebraic transport object.
+the historical Hall-shell route to nonhomogeneous binary GVC, and `HC(4)`.
+It proves a scoped all-degree theorem for rank-one binary leading profiles.
+It does **not** prove plane JC or `HC(4)`, classify rank-two leading forms, or
+promote Hall shells to one algebraic transport object.  Binary GVC is now
+proved independently by the
+[Hall-envelope theorem](BINARY_GVC_ENVELOPE_CLOSURE.md).
 
 The determinant identities hold over every characteristic-zero field.  The
 normalization and affine-latitude conclusions use an algebraically closed
@@ -469,8 +471,9 @@ The common hierarchy is now
 \text{global holonomy}.
 \]
 
-- Binary GVC is still blocked at exposure: its prime-dependent Hall shells
-  have not yet been promoted to one fixed coefficient algebra.
+- The historical Hall-shell route to binary GVC is still blocked at exposure:
+  its prime-dependent shells have not been promoted to one fixed coefficient
+  algebra.  The Hall-envelope proof bypasses this route.
 - In the rank-one top sector, `HC(4)` now reaches an actual affine latitude;
   the next task is lower-layer synchronization after making that coordinate
   equal to `x`.

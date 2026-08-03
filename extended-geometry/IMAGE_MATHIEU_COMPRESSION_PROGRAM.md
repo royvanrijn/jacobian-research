@@ -340,8 +340,8 @@ quartic \((2,1,1)\) orbit by a first-five-moment radical certificate.
 The [split-symbol theorem](SPLIT_SYMBOL_GVC_THEOREM.md) goes further:
 translated complete polarization and the Laurent constant-term theorem
 prove the GVC conclusion for every homogeneous binary operator and every
-polynomial, with no degree restriction.  Thus the remaining GVC(2) route
-needs a genuinely nonhomogeneous operator; the
+polynomial, with no degree restriction.  At that stage the remaining GVC(2)
+route needed a genuinely nonhomogeneous operator; the
 [separable escape obstruction](SEPARABLE_GVC_ESCAPE_OBSTRUCTIONS.md)
 also excludes degree at most the lowest positive order and the
 arbitrary-degree factor-unit class.  Its low-order orbit analysis now
@@ -349,7 +349,9 @@ closes every binary operator through polynomial degree four, so a GVC
 counterexample must begin in degree five.  It further closes every
 quadratic-leading pair through degree five, so the first degree-five
 counterexample would have lowest positive operator order three or four.
-Finite-moment nullcone classification remains a separate SIC-strengthening.
+The later [Hall-envelope theorem](BINARY_GVC_ENVELOPE_CLOSURE.md) closes the
+unrestricted binary case.  Finite-moment nullcone classification remains a
+separate SIC-strengthening.
 The continuing representation program and the distinction between unequal
 bidegree and genuinely nonhomogeneous mixtures are recorded in
 [`TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md`](TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md).

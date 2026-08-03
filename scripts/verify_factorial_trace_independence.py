@@ -5,8 +5,9 @@ The all-scale theorem is proved in
 ``extended-geometry/FACTORIAL_TRACE_INDEPENDENCE.md``.  This dependency-free
 checker audits signed shift-orbit reconstruction, the complete rational-offset
 gamma signature, rational coboundary certificates, affine-shift
-canonicalization, Stirling-invariant examples, residue-class localization,
-and the exact Frobenius-dilation collapse of p-adic factorial valuations.
+canonicalization, exact integer-affine boundary transfers, Stirling-invariant
+examples, residue-class localization, and the exact Frobenius-dilation
+collapse of p-adic factorial valuations.
 """
 
 from __future__ import annotations
@@ -28,6 +29,8 @@ GammaFactor = tuple[int, Fraction, int]
 GammaRay = tuple[GammaFactor, ...]
 RationalGammaFactor = tuple[Fraction, Fraction, int]
 RationalGammaRay = tuple[RationalGammaFactor, ...]
+AffineFactor = tuple[int, int]
+AffineProfile = tuple[AffineFactor, ...]
 
 
 def orbit_key(numerator: int, denominator: int) -> Fraction:
@@ -460,6 +463,222 @@ def verify_integer_affine_shifts() -> int:
     return checked
 
 
+def affine_successor_divisor(
+    profile: dict[AffineFactor, int],
+) -> dict[Fraction, int]:
+    """Exact finite divisor of the consecutive factorial quotient.
+
+    The factor ``(a*n+b)!`` contributes the roots
+    ``-(b+1)/a,...,-(b+a)/a`` to its shift quotient.  Negating every root
+    is harmless and makes the boundary-transfer presentation more legible.
+    """
+
+    divisor: defaultdict[Fraction, int] = defaultdict(int)
+    for (slope, offset), multiplicity in profile.items():
+        assert slope > 0
+        if not multiplicity:
+            continue
+        for shift in range(1, slope + 1):
+            divisor[Fraction(offset + shift, slope)] += multiplicity
+    return {root: value for root, value in divisor.items() if value}
+
+
+def affine_slope_vector(
+    profile: dict[AffineFactor, int],
+) -> dict[int, int]:
+    vector: defaultdict[int, int] = defaultdict(int)
+    for (slope, _offset), multiplicity in profile.items():
+        vector[slope] += multiplicity
+    return {slope: value for slope, value in vector.items() if value}
+
+
+def affine_profile_difference(
+    left: AffineProfile,
+    right: AffineProfile,
+) -> dict[AffineFactor, int]:
+    difference: defaultdict[AffineFactor, int] = defaultdict(int)
+    for factor in left:
+        difference[factor] += 1
+    for factor in right:
+        difference[factor] -= 1
+    return {factor: value for factor, value in difference.items() if value}
+
+
+def boundary_transfer_decomposition(
+    profile: dict[AffineFactor, int],
+) -> tuple[tuple[int, AffineFactor, AffineFactor], ...]:
+    """Decompose a zero exact divisor into elementary boundary transfers.
+
+    A record ``(m,(a,k),(c,l))`` represents ``m`` times
+
+        E(a,k)-E(a,k-1)-E(c,l)+E(c,l-1),
+
+    where ``k/a=l/c``.  Its factorial product is the constant ``(a/c)^m``.
+    The proof in the canonical note shows that this succeeds for every
+    finitely supported integer profile with zero exact divisor.
+    """
+
+    if affine_successor_divisor(profile):
+        raise ValueError("the affine factorial divisor is nonzero")
+
+    baselines: defaultdict[int, int] = defaultdict(int)
+    increments: defaultdict[AffineFactor, int] = defaultdict(int)
+    for (slope, offset), multiplicity in profile.items():
+        baselines[slope] += multiplicity
+        if offset > 0:
+            for boundary in range(1, offset + 1):
+                increments[(slope, boundary)] += multiplicity
+        elif offset < 0:
+            for boundary in range(offset + 1, 1):
+                increments[(slope, boundary)] -= multiplicity
+
+    baselines = defaultdict(
+        int,
+        {slope: value for slope, value in baselines.items() if value},
+    )
+    if baselines:
+        raise AssertionError(
+            f"zero divisor retained nonzero slope baselines: {dict(baselines)}"
+        )
+
+    by_boundary: defaultdict[Fraction, list[tuple[AffineFactor, int]]] = (
+        defaultdict(list)
+    )
+    for factor, multiplicity in increments.items():
+        if multiplicity:
+            slope, boundary = factor
+            by_boundary[Fraction(boundary, slope)].append(
+                (factor, multiplicity)
+            )
+
+    transfers: list[tuple[int, AffineFactor, AffineFactor]] = []
+    for rational_boundary, terms in sorted(by_boundary.items()):
+        if sum(multiplicity for _factor, multiplicity in terms):
+            raise AssertionError(
+                "zero divisor retained an unmatched translation edge at "
+                f"{rational_boundary}"
+            )
+        terms.sort()
+        reference = terms[0][0]
+        for factor, multiplicity in terms[1:]:
+            if multiplicity:
+                transfers.append((multiplicity, factor, reference))
+
+    reconstructed: defaultdict[AffineFactor, int] = defaultdict(int)
+    for multiplicity, (slope, boundary), (
+        reference_slope,
+        reference_boundary,
+    ) in transfers:
+        assert Fraction(boundary, slope) == Fraction(
+            reference_boundary, reference_slope
+        )
+        reconstructed[(slope, boundary)] += multiplicity
+        reconstructed[(slope, boundary - 1)] -= multiplicity
+        reconstructed[(reference_slope, reference_boundary)] -= multiplicity
+        reconstructed[(reference_slope, reference_boundary - 1)] += multiplicity
+    cleaned = {
+        factor: value for factor, value in reconstructed.items() if value
+    }
+    if cleaned != profile:
+        raise AssertionError(
+            f"boundary transfers reconstruct {cleaned}, expected {profile}"
+        )
+    return tuple(transfers)
+
+
+def boundary_transfer_constant(
+    transfers: tuple[tuple[int, AffineFactor, AffineFactor], ...],
+) -> Fraction:
+    constant = Fraction(1)
+    for multiplicity, (slope, _boundary), (
+        reference_slope,
+        _reference_boundary,
+    ) in transfers:
+        constant *= Fraction(slope, reference_slope) ** multiplicity
+    return constant
+
+
+def affine_factorial_value(
+    profile: dict[AffineFactor, int],
+    scale: int,
+) -> Fraction:
+    value = Fraction(1)
+    for (slope, offset), multiplicity in profile.items():
+        argument = slope * scale + offset
+        if argument < 0:
+            raise ValueError("factorial profile is not defined at this scale")
+        value *= Fraction(factorial(argument)) ** multiplicity
+    return value
+
+
+def verify_exact_affine_boundary_census() -> tuple[int, int, int, int, int]:
+    """Classify a bounded universe by the exact, not orbit, divisor.
+
+    Every nontrivial collision is certified as a sum of the elementary
+    boundary transfers from Theorem 5.2.  This is a regression for the
+    unbounded telescoping proof, not a bounded extrapolation.
+    """
+
+    atoms: tuple[AffineFactor, ...] = tuple(
+        (slope, offset)
+        for slope in range(1, 6)
+        for offset in range(-3, 4)
+    )
+    representatives: dict[
+        tuple[tuple[Fraction, int], ...], AffineProfile
+    ] = {}
+    class_sizes: defaultdict[tuple[tuple[Fraction, int], ...], int] = (
+        defaultdict(int)
+    )
+    profiles = 0
+    collisions = 0
+    for length in range(1, 5):
+        for indices in combinations_with_replacement(range(len(atoms)), length):
+            profile = tuple(atoms[index] for index in indices)
+            signed_profile = affine_profile_difference(profile, ())
+            signature = tuple(
+                sorted(affine_successor_divisor(signed_profile).items())
+            )
+            class_sizes[signature] += 1
+            profiles += 1
+            representative = representatives.get(signature)
+            if representative is None:
+                representatives[signature] = profile
+                continue
+
+            difference = affine_profile_difference(profile, representative)
+            if affine_slope_vector(difference):
+                raise AssertionError(
+                    "an exact affine-divisor collision changed its slope vector"
+                )
+            transfers = boundary_transfer_decomposition(difference)
+            predicted = boundary_transfer_constant(transfers)
+            if (
+                affine_factorial_value(difference, 8) != predicted
+                or affine_factorial_value(difference, 9) != predicted
+            ):
+                raise AssertionError(
+                    "a boundary-transfer constant failed direct factorial replay"
+                )
+            collisions += 1
+
+    nontrivial_classes = sum(size > 1 for size in class_sizes.values())
+    largest_class = max(class_sizes.values())
+    assert len(atoms) == 35
+    assert profiles == 82_250
+    assert len(representatives) == 72_383
+    assert collisions == 9_867
+    assert nontrivial_classes == 8_253
+    assert largest_class == 6
+    return (
+        profiles,
+        len(representatives),
+        collisions,
+        nontrivial_classes,
+        largest_class,
+    )
+
+
 def factorial_product(parts: tuple[int, ...], scale: int) -> int:
     value = 1
     for part in parts:
@@ -887,6 +1106,13 @@ def main() -> None:
     ) = verify_gamma_signature_census()
     signed_gamma_cases = verify_signed_gamma_property_cases()
     shifts = verify_integer_affine_shifts()
+    (
+        affine_profiles,
+        affine_classes,
+        affine_collisions,
+        nontrivial_affine_classes,
+        largest_affine_class,
+    ) = verify_exact_affine_boundary_census()
     verify_one_scale_collision()
     verify_stirling_hierarchy()
     verify_mfold_periodic_symmetry()
@@ -918,6 +1144,13 @@ def main() -> None:
         f"{signed_gamma_cases} deterministic randomized transformations"
     )
     print(f"PASS integer-affine factorial canonicalization: {shifts} exact values")
+    print(
+        "PASS exact affine-factorial boundary-transfer census: "
+        f"{affine_profiles} profiles -> {affine_classes} classes, "
+        f"{affine_collisions} collisions in {nontrivial_affine_classes} "
+        f"nontrivial classes (largest {largest_affine_class}); every "
+        "collision decomposes into elementary boundary squares"
+    )
     print("PASS one-scale factorial collision separates on the second scale")
     print("PASS entropy collision separates at the first inverse-power moment")
     print(
@@ -933,8 +1166,9 @@ def main() -> None:
         f"{sic_families} distinct (d,r) families through d=48"
     )
     print(
-        "STATUS: complete rational-offset gamma signatures in characteristic "
-        "zero; p-adic valuations require primitive-slope and unit/carry data"
+        "STATUS: complete rational-offset gamma signatures and exact "
+        "integer-offset projective classes in characteristic zero; p-adic "
+        "valuations require primitive-slope and unit/carry data"
     )
 
 

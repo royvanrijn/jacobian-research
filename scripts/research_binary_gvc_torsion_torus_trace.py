@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact torsion--torus trace identities for the binary GVC frontier.
+"""Exact torsion--torus trace identities for the parked binary GVC route.
 
 Let ``F=C_q`` and let ``u`` lie in the group algebra
 
@@ -26,8 +26,9 @@ orders two and three.  It additionally checks that the ``C_2`` regular
 representation diagonalizes the coordinate-reversed pair
 ``z^-r G(z), z^r G(z)``.
 
-This is an exact reduction, not the torsion--torus trace lemma itself
-and not a proof of GVC(2).
+This is an exact reduction, not the torsion--torus trace lemma itself and not
+the proof of GVC(2).  The unrestricted proof is the separate Hall-envelope
+theorem.
 """
 
 from __future__ import annotations
