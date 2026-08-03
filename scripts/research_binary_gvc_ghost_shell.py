@@ -25,7 +25,8 @@ from __future__ import annotations
 
 import argparse
 from fractions import Fraction
-from math import comb, factorial
+from itertools import product
+from math import comb, factorial, gcd
 
 import sympy as sp
 
@@ -89,6 +90,330 @@ def polynomial_value_mod(
     assert denominator
     residue = numerator * pow(denominator, -1, prime) % prime
     return int(polynomial.eval(residue)) % prime
+
+
+def three_level_singleton_ghost_value(
+    left_count: int,
+    right_count: int,
+    value: Fraction,
+    prime: int,
+) -> int:
+    """Evaluate the primitive three-level singleton ghost modulo ``p``.
+
+    The primitive affine move is
+
+        (left_count, -(left_count+right_count), right_count).
+
+    At order ``p`` its complete one-dimensional fibre is parametrized by
+    ``t``.  After removing the pure singleton and dividing by ``p``, the
+    cross-ratio polynomial has the coefficients used below.
+    """
+
+    denominator = value.denominator % prime
+    assert denominator
+    residue = value.numerator % prime
+    residue = residue * pow(denominator, -1, prime) % prime
+    step = left_count + right_count
+    answer = 0
+    for multiplicity in range(1, prime // step + 1):
+        coefficient = (
+            factorial(prime - 1)
+            // (
+                factorial(left_count * multiplicity)
+                * factorial(right_count * multiplicity)
+                * factorial(prime - step * multiplicity)
+            )
+        )
+        answer += coefficient * pow(residue, multiplicity, prime)
+    return answer % prime
+
+
+def three_level_singleton_ghost_polynomial(
+    left_count: int,
+    right_count: int,
+    prime: int,
+) -> sp.Poly:
+    """Return the complete primitive three-level ghost over F_p."""
+
+    step = left_count + right_count
+    terms = []
+    for multiplicity in range(1, prime // step + 1):
+        denominator = (
+            factorial(left_count * multiplicity)
+            * factorial(right_count * multiplicity)
+            * factorial(prime - step * multiplicity)
+        )
+        coefficient = factorial(prime - 1) // denominator
+        logarithmic_coefficient = (
+            (-1) ** (step * multiplicity - 1)
+            * comb(step * multiplicity, left_count * multiplicity)
+            * pow(step * multiplicity, -1, prime)
+        ) % prime
+        assert coefficient % prime == logarithmic_coefficient
+        terms.append(coefficient * X**multiplicity)
+
+    return sp.Poly(sum(terms), X, modulus=prime)
+
+
+def verify_three_level_cyclotomic_ghosts(
+    prime_limit: int,
+    step_limit: int,
+    cyclotomic_limit: int,
+) -> None:
+    """Search for bounded root-of-unity factors surviving every prime.
+
+    If an algebraic root of unity of order n is a ghost zero at every
+    unramified prime ideal, its cyclotomic polynomial divides the reduced
+    ghost at every rational prime not dividing n.  This gives an exact
+    bounded algebraic test without choosing embeddings into finite fields.
+    """
+
+    survivor_table: dict[tuple[int, int], tuple[int, ...]] = {}
+    divisions = 0
+    types_tested = 0
+
+    for left_count in range(1, step_limit + 1):
+        for right_count in range(left_count, step_limit + 1):
+            if gcd(left_count, right_count) != 1:
+                continue
+            step = left_count + right_count
+            primes = tuple(
+                prime
+                for prime in primes_through(prime_limit)
+                if prime > step
+            )
+            assert primes
+            ghosts = {
+                prime: three_level_singleton_ghost_polynomial(
+                    left_count,
+                    right_count,
+                    prime,
+                )
+                for prime in primes
+            }
+            survivors = []
+            for order in range(1, cyclotomic_limit + 1):
+                cyclotomic = sp.cyclotomic_poly(order, X)
+                usable_primes = tuple(
+                    prime for prime in primes if order % prime
+                )
+                if not usable_primes:
+                    continue
+                survives = True
+                for prime in usable_primes:
+                    divisor = sp.Poly(cyclotomic, X, modulus=prime)
+                    divisions += 1
+                    if not ghosts[prime].rem(divisor).is_zero:
+                        survives = False
+                        break
+                if survives:
+                    survivors.append(order)
+
+            survivor_table[(left_count, right_count)] = tuple(survivors)
+            expected = (1,) if (left_count, right_count) == (1, 1) else ()
+            assert survivor_table[(left_count, right_count)] == expected
+            types_tested += 1
+
+    print(
+        "PASS primitive three-level cyclotomic ghosts: "
+        f"{types_tested} coprime types, root orders through "
+        f"{cyclotomic_limit}, {divisions} exact finite-field divisions"
+    )
+    print(
+        "three-level root-of-unity survivors: "
+        f"{{(1, 1): {survivor_table[(1, 1)]}}}"
+    )
+    print(
+        "STATUS: bounded cyclotomic-order evidence; this does not "
+        "classify arbitrary algebraic ghost roots"
+    )
+
+
+def bounded_irreducible_polynomials(
+    degree_limit: int,
+    height_limit: int,
+) -> tuple[sp.Poly, ...]:
+    """Enumerate primitive irreducibles in a finite projective box."""
+
+    polynomials = []
+    for degree in range(2, degree_limit + 1):
+        for leading in range(1, height_limit + 1):
+            for tail in product(
+                range(-height_limit, height_limit + 1),
+                repeat=degree,
+            ):
+                if tail[-1] == 0:
+                    continue
+                coefficients = (leading, *tail)
+                content = 0
+                for coefficient in coefficients:
+                    content = gcd(content, abs(coefficient))
+                if content != 1:
+                    continue
+                polynomial = sp.Poly(
+                    sum(
+                        coefficient * X ** (degree - index)
+                        for index, coefficient in enumerate(coefficients)
+                    ),
+                    X,
+                    domain=sp.ZZ,
+                )
+                if polynomial.is_irreducible:
+                    polynomials.append(polynomial)
+    return tuple(polynomials)
+
+
+def verify_three_level_bounded_algebraic_ghosts(
+    prime_limit: int,
+    step_limit: int,
+    degree_limit: int,
+    height_limit: int,
+) -> None:
+    """Exclude bounded minimal-polynomial factors across all good primes."""
+
+    candidates = bounded_irreducible_polynomials(
+        degree_limit,
+        height_limit,
+    )
+    divisions = 0
+    types_tested = 0
+
+    for left_count in range(1, step_limit + 1):
+        for right_count in range(left_count, step_limit + 1):
+            if gcd(left_count, right_count) != 1:
+                continue
+            step = left_count + right_count
+            primes = tuple(
+                prime
+                for prime in primes_through(prime_limit)
+                if prime > step
+            )
+            assert primes
+            ghosts = {
+                prime: three_level_singleton_ghost_polynomial(
+                    left_count,
+                    right_count,
+                    prime,
+                )
+                for prime in primes
+            }
+            survivors = []
+            for candidate in candidates:
+                leading = int(candidate.LC())
+                discriminant = int(sp.discriminant(candidate.as_expr(), X))
+                usable_primes = tuple(
+                    prime
+                    for prime in primes
+                    if leading % prime and discriminant % prime
+                )
+                assert usable_primes
+                survives = True
+                for prime in usable_primes:
+                    divisor = sp.Poly(
+                        candidate.as_expr(),
+                        X,
+                        modulus=prime,
+                    )
+                    divisions += 1
+                    if not ghosts[prime].rem(divisor).is_zero:
+                        survives = False
+                        break
+                if survives:
+                    survivors.append(candidate.as_expr())
+            assert not survivors
+            types_tested += 1
+
+    print(
+        "PASS primitive three-level bounded algebraic ghosts: "
+        f"{types_tested} coprime types, {len(candidates)} primitive "
+        f"irreducibles of degrees 2..{degree_limit} and coefficient "
+        f"height {height_limit}, {divisions} finite-field divisions"
+    )
+    print(
+        "STATUS: bounded minimal-polynomial evidence; no degree/height "
+        "box can replace an unrestricted algebraic-root theorem"
+    )
+
+
+def verify_three_level_singleton_ghosts(
+    prime_limit: int,
+    step_limit: int,
+    rational_limit: int,
+) -> None:
+    """Search all primitive three-level affine ghosts in a bounded box.
+
+    The centered ``(1,-2,1)`` move has the universal nonzero root ``X=1``.
+    The search asks whether another coprime pair of endpoint multiplicities
+    has a rational root surviving every configured good prime.
+    """
+
+    rational_values = {
+        Fraction(numerator, denominator)
+        for denominator in range(1, rational_limit + 1)
+        for numerator in range(-2 * rational_limit, 2 * rational_limit + 1)
+    }
+    survivor_table: dict[tuple[int, int], tuple[Fraction, ...]] = {}
+    types_tested = 0
+    evaluations = 0
+
+    for left_count in range(1, step_limit + 1):
+        for right_count in range(left_count, step_limit + 1):
+            if gcd(left_count, right_count) != 1:
+                continue
+            step = left_count + right_count
+            primes = tuple(
+                prime
+                for prime in primes_through(prime_limit)
+                if prime > step
+            )
+            assert primes
+            survivors = []
+            for value in sorted(rational_values):
+                usable_primes = tuple(
+                    prime
+                    for prime in primes
+                    if value.denominator % prime
+                )
+                if not usable_primes:
+                    continue
+                survives = True
+                for prime in usable_primes:
+                    evaluations += 1
+                    if three_level_singleton_ghost_value(
+                        left_count,
+                        right_count,
+                        value,
+                        prime,
+                    ):
+                        survives = False
+                        break
+                if survives:
+                    survivors.append(value)
+
+            survivor_table[(left_count, right_count)] = tuple(survivors)
+            expected = (
+                (Fraction(0), Fraction(1))
+                if (left_count, right_count) == (1, 1)
+                else (Fraction(0),)
+            )
+            assert survivor_table[(left_count, right_count)] == expected
+            types_tested += 1
+
+    print(
+        "PASS primitive three-level singleton ghosts: "
+        f"{types_tested} coprime types through endpoint count "
+        f"{step_limit}, primes through {prime_limit}, "
+        f"{evaluations} rational/prime evaluations"
+    )
+    print(
+        "three-level nonzero all-prime survivors: "
+        f"{{(1, 1): {survivor_table[(1, 1)][1:]}}}"
+    )
+    print(
+        "STATUS: bounded rational-window evidence; only the adjacent "
+        "centered triple has a non-support survivor, and this is not an "
+        "all-span proof"
+    )
 
 
 def verify_blocks(prime_limit: int, rational_limit: int) -> None:
@@ -237,8 +562,28 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--prime-limit", type=int, default=43)
     parser.add_argument("--rational-limit", type=int, default=20)
+    parser.add_argument("--three-level-limit", type=int, default=6)
+    parser.add_argument("--cyclotomic-limit", type=int, default=80)
+    parser.add_argument("--algebraic-degree", type=int, default=3)
+    parser.add_argument("--algebraic-height", type=int, default=4)
     arguments = parser.parse_args()
     verify_blocks(arguments.prime_limit, arguments.rational_limit)
+    verify_three_level_singleton_ghosts(
+        arguments.prime_limit,
+        arguments.three_level_limit,
+        arguments.rational_limit,
+    )
+    verify_three_level_cyclotomic_ghosts(
+        arguments.prime_limit,
+        arguments.three_level_limit,
+        arguments.cyclotomic_limit,
+    )
+    verify_three_level_bounded_algebraic_ghosts(
+        arguments.prime_limit,
+        arguments.three_level_limit,
+        arguments.algebraic_degree,
+        arguments.algebraic_height,
+    )
 
 
 if __name__ == "__main__":

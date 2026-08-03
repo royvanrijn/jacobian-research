@@ -2990,11 +2990,11 @@
     }
   },
   "classification_boundary": {
-    "next_elimination": "propagate the layer-35 C0^2 mode into layer 34 on the quadratic-R root strata; pivot if its forced de Rham class does not yield an early inconsistency",
+    "next_elimination": "retain every exact P-band variable and compile the known nonlinear forcing against coker(T_delta), beginning with the descent-8 double-prime ratio 27*y^2-9*y+1=0; the first actual lambda location is descent 30 (layer 10)",
     "not_proved": [
       "that the B0 envelope is the exhaustive lower Newton support",
       "the gamma-branch list for multiplicities (3,5)",
-      "the lower-band coefficient relations below layer 35",
+      "the nonlinear forced Fitting equations below the common top",
       "inconsistency of the resulting system or exclusion of F2"
     ],
     "proved": [
@@ -3003,7 +3003,9 @@
       "all 35 zero-layer incidence lists and their five Kummer character splittings",
       "a deterministic compressed representation of every resulting quadratic coefficient equation",
       "the joint common-power top-band parameterization by one normalized quadratic R",
-      "the exact upper descent through layer 35, including the first surviving C0^2 mode"
+      "the corrected exact source-band tangent profile through all 35 zero layers, including the unrestricted P-follow modes",
+      "the proof that the formal C0^-1 and C0^-2 resonances are not independent homogeneous source-band kernels",
+      "the nonlinear first-defect resultant, which forces source-root continuation through descent 7 and isolates the first exact local residual at descent 8"
     ]
   },
   "common_power_and_terminal_regression": {
@@ -3011,6 +3013,14 @@
     "H_normalization": "H(0)=1; leading coefficient nonzero",
     "P_top_band": "t^21*H(t)^3*z^15",
     "Q_top_band": "-9/5*t^35*H(t)^5*z^25",
+    "exact_polynomial_source_lift": {
+      "after_translation": "C_R=t^5*z^5*((1+t)^5-1)^2*R((1+t)^5)",
+      "before_translation": "C_R=x*(x*y^5-1)^2*R(x*y^5)",
+      "consequence": "the full negative Laurent tail is the monomial-chart image of an actual polynomial source band, not a disposable error",
+      "source_band": 5,
+      "source_terminal_height": 1,
+      "source_total_degree": 25
+    },
     "joint_top_band_classification": {
       "R": "a*v^2+b*v+(1/25-a-b)",
       "bezout_consequence": "A(u)^6/A(u)^5=A(u), so invariance of A^3 and A^5 forces A in k[u^5]",
@@ -11587,6 +11597,238 @@
       5
     ]
   },
+  "family_tangent_theorem": {
+    "arbitrary_follow_mode": {
+      "P_band": "5*r-delta",
+      "Q_band": "5*m-delta",
+      "formula": "q=-B_r*(m/r)*C0^(m-r)*p",
+      "source_closure": "m-r=r-1, so multiplication adds source degree 25*(r-1), height r-1, and band 5*(r-1)"
+    },
+    "formal_negative_resonances": "delta=5*(m+k), 1<=k<=r-1, with formal mode C0^(-k); none is a homogeneous Laurent-polynomial source kernel",
+    "lambda_location": {
+      "descent": "5*(m+1)=10*r",
+      "interpretation": "lambda can only arise through nonlinear forced cancellation with the F tail, not as an independent exact source-band mode",
+      "layer": "5*(r-1)",
+      "mode": "C0^-1"
+    },
+    "parameters": "r>=2, m=2*r-1",
+    "q_only_equation": "5*C0*q'-(5*m-delta)*C0'*q=0; equivalently q^5=constant*C0^(5*m-delta)",
+    "samples": [
+      {
+        "formal_negative_powers": [
+          -1
+        ],
+        "lambda_descent": 20,
+        "lambda_layer": 5,
+        "m": 3,
+        "r": 2,
+        "source_centralizer_powers": [
+          2,
+          1,
+          0
+        ],
+        "target_descent": 21,
+        "top_layer": 25,
+        "zero_descent_interval": [
+          1,
+          20
+        ]
+      },
+      {
+        "formal_negative_powers": [
+          -1,
+          -2
+        ],
+        "lambda_descent": 30,
+        "lambda_layer": 10,
+        "m": 5,
+        "r": 3,
+        "source_centralizer_powers": [
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "target_descent": 36,
+        "top_layer": 40,
+        "zero_descent_interval": [
+          1,
+          35
+        ]
+      },
+      {
+        "formal_negative_powers": [
+          -1,
+          -2,
+          -3
+        ],
+        "lambda_descent": 40,
+        "lambda_layer": 15,
+        "m": 7,
+        "r": 4,
+        "source_centralizer_powers": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "target_descent": 51,
+        "top_layer": 55,
+        "zero_descent_interval": [
+          1,
+          50
+        ]
+      },
+      {
+        "formal_negative_powers": [
+          -1,
+          -2,
+          -3,
+          -4
+        ],
+        "lambda_descent": 50,
+        "lambda_layer": 20,
+        "m": 9,
+        "r": 5,
+        "source_centralizer_powers": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "target_descent": 66,
+        "top_layer": 70,
+        "zero_descent_interval": [
+          1,
+          65
+        ]
+      },
+      {
+        "formal_negative_powers": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5
+        ],
+        "lambda_descent": 60,
+        "lambda_layer": 25,
+        "m": 11,
+        "r": 6,
+        "source_centralizer_powers": [
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "target_descent": 81,
+        "top_layer": 85,
+        "zero_descent_interval": [
+          1,
+          80
+        ]
+      },
+      {
+        "formal_negative_powers": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6
+        ],
+        "lambda_descent": 70,
+        "lambda_layer": 30,
+        "m": 13,
+        "r": 7,
+        "source_centralizer_powers": [
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "target_descent": 96,
+        "top_layer": 100,
+        "zero_descent_interval": [
+          1,
+          95
+        ]
+      },
+      {
+        "formal_negative_powers": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7
+        ],
+        "lambda_descent": 80,
+        "lambda_layer": 35,
+        "m": 15,
+        "r": 8,
+        "source_centralizer_powers": [
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "target_descent": 111,
+        "top_layer": 115,
+        "zero_descent_interval": [
+          1,
+          110
+        ]
+      }
+    ],
+    "source_centralizer_resonances": "delta=5*j, 1<=j<=m, with generator C0^(m-j)",
+    "target": {
+      "descent": "5*(3*r-1)-4=15*r-9",
+      "layer": 4
+    },
+    "top_layers": {
+      "P": "5*r",
+      "Q": "5*m",
+      "bracket": "5*(r+m)=5*(3*r-1)"
+    }
+  },
   "linear_constraints": {
     "P": {
       "digest_sha256": "131223e537261e96272578eec44e9447595db80d5768f7d3892f5e9546d001a3",
@@ -11606,12 +11848,48 @@
       "Q_25_t35": "-9/5"
     }
   },
-  "schema": "plane-jc.f2-75-125-character-layers.v1",
+  "nonlinear_first_defect_audit": {
+    "centralizer_separation": "a C0^(5-j) mode has exceptional-prime valuation gap j*(15/k-2) over the primitive P^(5/3) residue; this is positive for k<=7 and changes sign first at k=8",
+    "divisibility_rows": [
+      "C0 divides p1^2",
+      "C0^4 divides p1*(p1^2-18*C0^3*p2)"
+    ],
+    "double_prime_consequence": {
+      "consequence": "when rows four and five are both zero, the exceptional double-prime valuation is impossible",
+      "resultant_in_b": "1701*a**8",
+      "row_4_numerator": "a**4 - 9*a**2*b + 27*b**2",
+      "row_5_numerator_after_removing_nonzero_a": "7*a**4 - 60*a**2*b + 135*b**2",
+      "rows_2_and_3": "either v(p1)>=4 or the exceptional valuation is v(C0)=2, v(p1)=3, v(p2)=0"
+    },
+    "first_exact_residual_candidate": {
+      "P_band": 7,
+      "claim_boundary": "this is an exact local residual seed, not a reconstructed global source pair or plane counterexample",
+      "descent": 8,
+      "discriminant": -27,
+      "field": "QQ(sqrt(-3))",
+      "local_valuations": "v(C0)=2, v(p8)=3, v(p16)=0",
+      "normalized_ratio": "y=b/a^2",
+      "reason": "rows 16,24,32 precede the target, but target descent 36 intervenes before the fifth-multiple row 40",
+      "residual_equation": "27*y^2-9*y+1=0",
+      "support": "only multiplicity-two primes of C0"
+    },
+    "first_rows": {
+      "q1": "-3*C**2*p1",
+      "q2": "-(3*C**3*p2 + p1**2)/C",
+      "q3": "(-27*C**6*p3 - 18*C**3*p1*p2 + p1**3)/(9*C**4)",
+      "q4": "-(81*C**9*p4 + 54*C**6*p1*p3 + 27*C**6*p2**2 - 9*C**3*p1**2*p2 + p1**4)/(27*C**7)"
+    },
+    "forced_source_root_through_descent": 7,
+    "formal_particular_solution": "Q=(-9/5)*P^(5/3)",
+    "nonlinear_root_recovery": "if the first non-root P defect occurs at descent k<=7, all five required multiples precede the target descent 36, so it is forced back into the C0^2 root slice",
+    "simple_prime_consequence": "at every multiplicity-one prime of C0, rows 2 and 3 force v(p1)>=2"
+  },
+  "schema": "plane-jc.f2-75-125-character-layers.v2",
   "software": {
     "python": "standard library",
     "sympy": "1.14.0"
   },
-  "status": "exact-B0-envelope-and-recurrence-not-exhaustive-normal-form",
+  "status": "exact-B0-envelope-recurrence-and-corrected-top-tangent;not-exhaustive-normal-form",
   "support_envelope_theorem": {
     "band_translation": "x^i*y^j -> t^(5*i-j)*(t+lambda)^j*z^(5*i-j); lambda is scaled to one",
     "jet_rank_proof": "the first r coefficient rows binomial(j,k) form a falling-factorial Vandermonde matrix of rank r",
@@ -11627,66 +11905,552 @@
     "translated_descendants": "(X_power,y_power)=(5*i-k,j-k), 0<=k<=j"
   },
   "upper_descent_classification": {
-    "classified_layers": [
+    "correction": "the former common-root continuation used the unproved divisibilities p%C0^2=0 and q%C0^4=0; it is only a restricted slice, not the exact source-band kernel",
+    "exact_source_band_factorization": "V_ell=t^ell*u^j0*(u^5-1)^nu*QQ[u^5]_(<=N-nu)",
+    "first_five_exact_kernel_dimensions": [
+      6,
+      6,
+      7,
+      7,
+      10
+    ],
+    "fitting_handoff": "at nonlinear descent delta, let T_delta(q)=5*C0*q'-(25-delta)*C0'*q on the exact Q band; the new P columns lie in im(T_delta), so solvability of the known forcing is rank([T_delta|forcing])=rank(T_delta), equivalently the corresponding maximal-minor/Fitting condition",
+    "formal_but_not_source_kernel_modes": [
       {
-        "consequence": "W=0 because the required valuation is nonintegral",
-        "descent": 1,
-        "homogeneous_ode": "4*C0'*W-5*C0*W'=0",
-        "layer": 39,
-        "new_root_band": "D_1=t^4*u^1*(u^5-1)^2*S_1(u^5)",
-        "new_root_band_dimension": 2,
-        "valuation_at_t_zero": "ord(W)=7*4/5"
+        "descent": 30,
+        "layer": 10,
+        "mode": "C0^-1",
+        "role": "lambda"
       },
       {
-        "consequence": "W=0 because the required valuation is nonintegral",
-        "descent": 2,
-        "homogeneous_ode": "3*C0'*W-5*C0*W'=0",
-        "layer": 38,
-        "new_root_band": "D_2=t^3*u^2*(u^5-1)^2*S_2(u^5)",
-        "new_root_band_dimension": 2,
-        "valuation_at_t_zero": "ord(W)=7*3/5"
-      },
-      {
-        "consequence": "W=0 because the required valuation is nonintegral",
-        "descent": 3,
-        "homogeneous_ode": "2*C0'*W-5*C0*W'=0",
-        "layer": 37,
-        "new_root_band": "D_3=t^2*u^3*(u^5-1)^1*S_3(u^5)",
-        "new_root_band_dimension": 3,
-        "valuation_at_t_zero": "ord(W)=7*2/5"
-      },
-      {
-        "consequence": "W=0 because the required valuation is nonintegral",
-        "descent": 4,
-        "homogeneous_ode": "1*C0'*W-5*C0*W'=0",
-        "layer": 36,
-        "new_root_band": "D_4=t^1*u^4*(u^5-1)^1*S_4(u^5)",
-        "new_root_band_dimension": 3,
-        "valuation_at_t_zero": "ord(W)=7*1/5"
-      },
-      {
-        "consequence": "W is constant; besides a five-parameter root correction D_5 in k[u^5] of degree at most 20, one C0^2 mode survives",
-        "descent": 5,
-        "homogeneous_ode": "-5*C0*W'=0",
-        "layer": 35,
-        "new_root_band": "D_5=S_5(u^5), deg(S_5)<=4",
-        "new_root_band_dimension": 5,
-        "non_common_power_mode": "lambda*C0^2 in P band 10",
-        "non_common_power_mode_dimension": 1,
-        "valuation_at_t_zero": "ord(W)=0"
+        "descent": 35,
+        "layer": 5,
+        "mode": "C0^-2"
       }
     ],
-    "operator_reduction": {
-      "W": "5*U-3*V",
-      "descent_r_equation": "(5-r)*C0'*W-5*C0*W'=known lower-layer forcing",
-      "substitution": "p=C0^2*U, q=(-9/5)*C0^4*V",
-      "top_root_order": "ord_t(C0)=7"
+    "outcome": "layers 39 through 36 do not force source-root continuation; the first five tangent kernels have dimensions 6,6,7,7,10. The layer-35 extra mode is the commuting C0^4 term, while the formal lambda*C0^-1 resonance is at layer 10 and is not an independent source-band kernel",
+    "q_only_kernel_theorem": {
+      "equation": "5*C0*q'-(25-delta)*C0'*q=0",
+      "fifth_power_identity": "q^5=constant*C0^(25-delta)",
+      "fixed_factor_certificate": "C0 contains (u^5-1)^2, so fifth-power valuations force 5|delta; negative powers cannot be Laurent polynomials",
+      "source_kernel_condition": "delta=5*j with 1<=j<=5; generator C0^(5-j)"
     },
-    "outcome": "layers 39 through 36 force common-root continuation; layer 35 is the first genuine mode and contains lambda*C0^2",
-    "remaining_unclassified_zero_layer_count": 30,
+    "r3_rank_profile": [
+      {
+        "P_band": 14,
+        "P_band_dimension": 6,
+        "Q_band": 24,
+        "Q_band_dimension": 10,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 6,
+        "descent": 1,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 6,
+        "layer": 39,
+        "operator_rank": 10
+      },
+      {
+        "P_band": 13,
+        "P_band_dimension": 6,
+        "Q_band": 23,
+        "Q_band_dimension": 10,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 6,
+        "descent": 2,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 6,
+        "layer": 38,
+        "operator_rank": 10
+      },
+      {
+        "P_band": 12,
+        "P_band_dimension": 7,
+        "Q_band": 22,
+        "Q_band_dimension": 11,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 7,
+        "descent": 3,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 7,
+        "layer": 37,
+        "operator_rank": 11
+      },
+      {
+        "P_band": 11,
+        "P_band_dimension": 7,
+        "Q_band": 21,
+        "Q_band_dimension": 11,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 7,
+        "descent": 4,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 7,
+        "layer": 36,
+        "operator_rank": 11
+      },
+      {
+        "P_band": 10,
+        "P_band_dimension": 9,
+        "Q_band": 20,
+        "Q_band_dimension": 13,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 9,
+        "descent": 5,
+        "extra_source_centralizer": "C0^4",
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 10,
+        "layer": 35,
+        "operator_rank": 12
+      },
+      {
+        "P_band": 9,
+        "P_band_dimension": 9,
+        "Q_band": 19,
+        "Q_band_dimension": 13,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 9,
+        "descent": 6,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 9,
+        "layer": 34,
+        "operator_rank": 13
+      },
+      {
+        "P_band": 8,
+        "P_band_dimension": 8,
+        "Q_band": 18,
+        "Q_band_dimension": 12,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 8,
+        "descent": 7,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 8,
+        "layer": 33,
+        "operator_rank": 12
+      },
+      {
+        "P_band": 7,
+        "P_band_dimension": 9,
+        "Q_band": 17,
+        "Q_band_dimension": 13,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 9,
+        "descent": 8,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 9,
+        "layer": 32,
+        "operator_rank": 13
+      },
+      {
+        "P_band": 6,
+        "P_band_dimension": 9,
+        "Q_band": 16,
+        "Q_band_dimension": 13,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 9,
+        "descent": 9,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 9,
+        "layer": 31,
+        "operator_rank": 13
+      },
+      {
+        "P_band": 5,
+        "P_band_dimension": 11,
+        "Q_band": 15,
+        "Q_band_dimension": 15,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 11,
+        "descent": 10,
+        "extra_source_centralizer": "C0^3",
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 12,
+        "layer": 30,
+        "operator_rank": 14
+      },
+      {
+        "P_band": 4,
+        "P_band_dimension": 11,
+        "Q_band": 14,
+        "Q_band_dimension": 15,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 11,
+        "descent": 11,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 11,
+        "layer": 29,
+        "operator_rank": 15
+      },
+      {
+        "P_band": 3,
+        "P_band_dimension": 12,
+        "Q_band": 13,
+        "Q_band_dimension": 16,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 12,
+        "descent": 12,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 12,
+        "layer": 28,
+        "operator_rank": 16
+      },
+      {
+        "P_band": 2,
+        "P_band_dimension": 11,
+        "Q_band": 12,
+        "Q_band_dimension": 15,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 11,
+        "descent": 13,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 11,
+        "layer": 27,
+        "operator_rank": 15
+      },
+      {
+        "P_band": 1,
+        "P_band_dimension": 11,
+        "Q_band": 11,
+        "Q_band_dimension": 15,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 11,
+        "descent": 14,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 11,
+        "layer": 26,
+        "operator_rank": 15
+      },
+      {
+        "P_band": 0,
+        "P_band_dimension": 13,
+        "Q_band": 10,
+        "Q_band_dimension": 17,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 13,
+        "descent": 15,
+        "extra_source_centralizer": "C0^2",
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 14,
+        "layer": 25,
+        "operator_rank": 16
+      },
+      {
+        "P_band": -1,
+        "P_band_dimension": 13,
+        "Q_band": 9,
+        "Q_band_dimension": 17,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 13,
+        "descent": 16,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 13,
+        "layer": 24,
+        "operator_rank": 17
+      },
+      {
+        "P_band": -2,
+        "P_band_dimension": 13,
+        "Q_band": 8,
+        "Q_band_dimension": 18,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 13,
+        "descent": 17,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 13,
+        "layer": 23,
+        "operator_rank": 18
+      },
+      {
+        "P_band": -3,
+        "P_band_dimension": 13,
+        "Q_band": 7,
+        "Q_band_dimension": 18,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 13,
+        "descent": 18,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 13,
+        "layer": 22,
+        "operator_rank": 18
+      },
+      {
+        "P_band": -4,
+        "P_band_dimension": 12,
+        "Q_band": 6,
+        "Q_band_dimension": 17,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 12,
+        "descent": 19,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 12,
+        "layer": 21,
+        "operator_rank": 17
+      },
+      {
+        "P_band": -5,
+        "P_band_dimension": 12,
+        "Q_band": 5,
+        "Q_band_dimension": 19,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 12,
+        "descent": 20,
+        "extra_source_centralizer": "C0^1",
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 13,
+        "layer": 20,
+        "operator_rank": 18
+      },
+      {
+        "P_band": -6,
+        "P_band_dimension": 12,
+        "Q_band": 4,
+        "Q_band_dimension": 19,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 12,
+        "descent": 21,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 12,
+        "layer": 19,
+        "operator_rank": 19
+      },
+      {
+        "P_band": -7,
+        "P_band_dimension": 12,
+        "Q_band": 3,
+        "Q_band_dimension": 20,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 12,
+        "descent": 22,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 12,
+        "layer": 18,
+        "operator_rank": 20
+      },
+      {
+        "P_band": -8,
+        "P_band_dimension": 12,
+        "Q_band": 2,
+        "Q_band_dimension": 20,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 12,
+        "descent": 23,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 12,
+        "layer": 17,
+        "operator_rank": 20
+      },
+      {
+        "P_band": -9,
+        "P_band_dimension": 12,
+        "Q_band": 1,
+        "Q_band_dimension": 21,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 12,
+        "descent": 24,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 12,
+        "layer": 16,
+        "operator_rank": 21
+      },
+      {
+        "P_band": -10,
+        "P_band_dimension": 11,
+        "Q_band": 0,
+        "Q_band_dimension": 21,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 11,
+        "descent": 25,
+        "extra_source_centralizer": "C0^0",
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 12,
+        "layer": 15,
+        "operator_rank": 20
+      },
+      {
+        "P_band": -11,
+        "P_band_dimension": 11,
+        "Q_band": -1,
+        "Q_band_dimension": 21,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 11,
+        "descent": 26,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 11,
+        "layer": 14,
+        "operator_rank": 21
+      },
+      {
+        "P_band": -12,
+        "P_band_dimension": 11,
+        "Q_band": -2,
+        "Q_band_dimension": 21,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 11,
+        "descent": 27,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 11,
+        "layer": 13,
+        "operator_rank": 21
+      },
+      {
+        "P_band": -13,
+        "P_band_dimension": 11,
+        "Q_band": -3,
+        "Q_band_dimension": 21,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 11,
+        "descent": 28,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 11,
+        "layer": 12,
+        "operator_rank": 21
+      },
+      {
+        "P_band": -14,
+        "P_band_dimension": 11,
+        "Q_band": -4,
+        "Q_band_dimension": 21,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 11,
+        "descent": 29,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 11,
+        "layer": 11,
+        "operator_rank": 21
+      },
+      {
+        "P_band": -15,
+        "P_band_dimension": 11,
+        "Q_band": -5,
+        "Q_band_dimension": 21,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 11,
+        "descent": 30,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": "C0^-1",
+        "kernel_dimension": 11,
+        "layer": 10,
+        "operator_rank": 21
+      },
+      {
+        "P_band": -16,
+        "P_band_dimension": 10,
+        "Q_band": -6,
+        "Q_band_dimension": 20,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 10,
+        "descent": 31,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 10,
+        "layer": 9,
+        "operator_rank": 20
+      },
+      {
+        "P_band": -17,
+        "P_band_dimension": 10,
+        "Q_band": -7,
+        "Q_band_dimension": 20,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 10,
+        "descent": 32,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 10,
+        "layer": 8,
+        "operator_rank": 20
+      },
+      {
+        "P_band": -18,
+        "P_band_dimension": 10,
+        "Q_band": -8,
+        "Q_band_dimension": 20,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 10,
+        "descent": 33,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 10,
+        "layer": 7,
+        "operator_rank": 20
+      },
+      {
+        "P_band": -19,
+        "P_band_dimension": 10,
+        "Q_band": -9,
+        "Q_band_dimension": 20,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 10,
+        "descent": 34,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": null,
+        "kernel_dimension": 10,
+        "layer": 6,
+        "operator_rank": 20
+      },
+      {
+        "P_band": -20,
+        "P_band_dimension": 10,
+        "Q_band": -10,
+        "Q_band_dimension": 20,
+        "Q_follow": "q=(-3)*C0^2*p",
+        "arbitrary_P_follow_mode_dimension": 10,
+        "descent": 35,
+        "extra_source_centralizer": null,
+        "formal_negative_centralizer": "C0^-2",
+        "kernel_dimension": 10,
+        "layer": 5,
+        "operator_rank": 20
+      }
+    ],
+    "remaining_unclassified_zero_layer_count": 35,
     "remaining_unclassified_zero_layers": [
-      34,
+      39,
       5
-    ]
+    ],
+    "restricted_divisible_slice": {
+      "W": "5*U-3*V",
+      "assumption": "p=C0^2*U and q=(-9/5)*C0^4*V",
+      "equation": "(5-delta)*C0'*W-5*C0*W'=0",
+      "warning": "the exact source-band equations do not force this slice"
+    },
+    "source_centralizer_modes": [
+      "C0^4",
+      "C0^3",
+      "C0^2",
+      "C0",
+      "1"
+    ],
+    "unrestricted_tangent_identity": {
+      "P_top": "C0^3",
+      "Q_top": "(-9/5)*C0^5",
+      "arbitrary_P_band": "p",
+      "forced_Q_follow": "q=(-3)*C0^2*p",
+      "multiplication_closure": "C0^2 has source degree 50, height 2, and band 10; it maps every exact P band into the paired Q band"
+    }
   }
 }

@@ -1,0 +1,557 @@
+{
+  "ambient_terminal_tangent_space": {
+    "ambient_modes_lying_in_exact_source_linear_image": [
+      "a4_2",
+      "a7_3",
+      "(1/5)*a7_2+mu"
+    ],
+    "claim_boundary": "the six-dimensional calculation is the tangent space in the 80-position support-box over-approximation.  The terminal base point itself is outside the exact source image, so the three listed source-image directions are not tangent branches based at a source-compatible point",
+    "coordinates": "x=y*X, z=y^-3, P=y^9*p(X,z), Q=y^15*q(X,z)",
+    "deepest_common_top_directions": [
+      "a2_4",
+      "a3_6",
+      "a4_8",
+      "a5_10",
+      "a6_12",
+      "a7_14",
+      "a8_16",
+      "a9_18"
+    ],
+    "deepest_directions_in_tangent_space": false,
+    "equation": "3*(5*p_X*q-3*p*q_X-z*(p_X*q_z-p_z*q_X))=mu*z^6*(X-g2*z-g5*z^2)^2",
+    "matrix_rank": 77,
+    "matrix_sha256": "a69fb6a15d7eb6937c15eabec565941f8280a103f6413f3a507ec03a2fa3b5f1",
+    "matrix_shape": [
+      89,
+      83
+    ],
+    "nullspace_modes": [
+      [
+        [
+          "a4_2",
+          "1"
+        ]
+      ],
+      [
+        [
+          "a7_3",
+          "1"
+        ]
+      ],
+      [
+        [
+          "a2_1",
+          "6"
+        ],
+        [
+          "a9_3",
+          "1"
+        ]
+      ],
+      [
+        [
+          "a7_2",
+          "1/5"
+        ],
+        [
+          "mu",
+          "1"
+        ]
+      ],
+      [
+        [
+          "a8_3",
+          "-2"
+        ],
+        [
+          "g2",
+          "1"
+        ]
+      ],
+      [
+        [
+          "a8_4",
+          "1"
+        ],
+        [
+          "g5",
+          "1"
+        ]
+      ]
+    ],
+    "source_image_compatible_mode_dimension": 3,
+    "support_box_coefficient_positions": 80,
+    "support_box_coordinates_are_independent_source_variables": false,
+    "tangent_dimension": 6,
+    "target_parameters": [
+      "mu",
+      "g2",
+      "g5"
+    ]
+  },
+  "exact_source_projection": {
+    "P_top_diagonal": {
+      "positions": [
+        [
+          9,
+          0
+        ],
+        [
+          8,
+          -5
+        ],
+        [
+          7,
+          -10
+        ],
+        [
+          6,
+          -15
+        ],
+        [
+          5,
+          -20
+        ],
+        [
+          4,
+          -25
+        ],
+        [
+          3,
+          -30
+        ],
+        [
+          2,
+          -35
+        ],
+        [
+          1,
+          -40
+        ],
+        [
+          0,
+          -45
+        ]
+      ],
+      "primitive_relation": [
+        3470256,
+        -1118621,
+        299936,
+        -65511,
+        11250,
+        -1430,
+        120,
+        -5,
+        0,
+        0
+      ],
+      "source_image_rank": 7,
+      "source_image_shape": [
+        10,
+        7
+      ],
+      "terminal_resonance_evaluation": 3470256,
+      "terminal_resonance_in_source_image": false
+    },
+    "claim_boundary": "support positions are an envelope, not independent scalar coordinates; these ranks retain all exact binomial-jet links",
+    "r3_nonnegative_projection": {
+      "P_linear_relations": 9,
+      "P_source_image_rank": 74,
+      "P_support_positions": 83,
+      "Q_linear_relations": 19,
+      "Q_source_image_rank": 196,
+      "Q_support_positions": 215
+    }
+  },
+  "forced_chain_data": {
+    "A0": [
+      5,
+      20
+    ],
+    "A0_prime": [
+      1,
+      0
+    ],
+    "A1": [
+      "7/5",
+      2
+    ],
+    "consequence": "the d=2 historical branch is not an F2 branch; it belongs to a different generated corner/orientation",
+    "gamma": 2,
+    "generated_corner_formula": "A1=A0'+gamma*(1/5,1)",
+    "historical_d": 3
+  },
+  "full_laurent_residual_seed": {
+    "H": "Phi(s)^2*(1/25+rho1*v+rho2*v^2)",
+    "Phi": "((1+s)^5-1)/s",
+    "claim_boundary": "this is the exact full-Laurent top seed, not a finite plane-map candidate; all lower positive/negative bands remain to be glued",
+    "common_root": "C_top=xi^3*H(s), s=xi^-1*y^-5",
+    "corrected_top_tangent": "the exact source bands do not force the former divisible common-root slice; for r=3 the first-five kernel dimensions are 6,6,7,7,10, and the extra descent-5 mode is the commuting C0^4 term",
+    "endpoint_condition": "rho2!=0",
+    "endpoint_monomial": "rho2*xi^-15*y^-90",
+    "exact_polynomial_source_lift": "x*(x*y^5-1)^2*(1/25+rho1*(x*y^5-1)+rho2*(x*y^5-1)^2)",
+    "first_positive_projection_tail_correction": "[s^(3*r)]((2*r-1)*B'*D-r*B*D')=-(2*r-1)*(3*r+1)*[s^(3*r+1)]H^r",
+    "free_top_parameters": [
+      "rho1",
+      "rho2"
+    ],
+    "lambda_location": "C0^-1 is the descent-30/layer-10 formal resonance; it is not an independent homogeneous source-band kernel",
+    "r3_first_correction_is_nonzero_polynomial": true,
+    "source_invariance": "s^2*H(s)=v^2*(1/25+rho1*v+rho2*v^2) belongs to QQ[(1+s)^5]",
+    "v": "(1+s)^5-1"
+  },
+  "monomial_chart": {
+    "bracket": "X^4 -> -3*xi^2*y^2",
+    "common_root": "xi^3*H(xi^-1*y^-5)",
+    "coordinate_jacobian": "-3*xi^-2*y^-6",
+    "exponent_map": "(a,b)->(a-2*b,2*a-7*b)",
+    "shift": "xi=x-G, G=g_-2*y^-2+g_-5*y^-5",
+    "substitution": {
+      "X": "xi*y^2",
+      "Y": "xi^-2*y^-7"
+    },
+    "terminal_degrees": {
+      "P": "3*r",
+      "Q": "3*(2*r-1)"
+    },
+    "tschirnhaus_shift_support": [
+      "y^-2",
+      "y^-5"
+    ]
+  },
+  "obsolete_sharp_candidate": {
+    "forced_F2_chart_bracket_weight": "y^2*(x-G)^2",
+    "old_candidate_bracket": "(35/9)*y^6*x^2",
+    "verdict": "excluded from the forced gamma=2 chart by its leading y-weight"
+  },
+  "projected_top_diagonal_obstruction": {
+    "claim_boundary": "the obstruction is unconditional for the literal nonnegative-xi source projection; applying it to an F2 Keller map still requires a cutting theorem showing that this projection is a polynomial bracket-preserving modified pair",
+    "derivation": {
+      "Phi": "((1+t)^5-1)/t",
+      "common_power": "top bracket zero implies m*B'*D-r*B*D'=0; gcd(r,2*r-1)=1 gives B=H^r, D=H^(2*r-1), deg(H)<=3",
+      "gap_function": "L(v)=H((1+v)^(1/5)-1)*(((1+v)^(1/5)-1)/v)^2",
+      "gap_ideal": "I_r=([v^q]L^r, q=2*r+1..3*r; [v^q]L^(2*r-1), q=4*r-1..6*r-3)",
+      "top_band_membership": "B_n(t)=Phi(t)^(2*n)*R_n((1+t)^5) mod t^(3*n+1), deg(R_n)<=2*n"
+    },
+    "r2": {
+      "equation_count": 5,
+      "groebner_basis": [
+        "1"
+      ],
+      "verdict": "projected top diagonal empty"
+    },
+    "r3": {
+      "P_eliminant_degree": 27,
+      "P_gap_artinian_length": 27,
+      "P_gap_equation_count": 3,
+      "P_gap_leading_ideal": [
+        "c1",
+        "c2",
+        "c3^27"
+      ],
+      "combined_gap_ideal": "unit ideal",
+      "first_Q_gap": "[v^11]L(v)^5",
+      "first_Q_gap_residue_degree": 26,
+      "multiplication_determinant_nonzero": true,
+      "residue_gcd_degree": 0,
+      "resultant_denominator_digits": 700,
+      "resultant_numerator_digits": 505,
+      "resultant_sha256": "cd610d23ca92bc10c7788b72a603d3f71353d36f107bb87695669f4decb27314",
+      "resultant_sign": 1,
+      "source_relation_to_gap_change_determinant": "5^-42",
+      "verdict": "all literal polynomial-projection branches empty"
+    },
+    "r4": {
+      "P_gap_equation_count": 4,
+      "P_gap_groebner_basis": [
+        "1"
+      ],
+      "verdict": "P projection alone empty"
+    }
+  },
+  "remaining_bridge": "prove that the literal nonnegative-xi source projection is the polynomial bracket-preserving modified pair (or derive the precise negative-tail correction).  The r=3 projected residue itself is the unit ideal, so no lower projected branch remains",
+  "schema": "plane-jc.f2-modified-chart-bridge.v3",
+  "software": {
+    "arithmetic": "exact QQ",
+    "sympy": "1.14.0"
+  },
+  "status": "exact-source-projection-obstruction-conditional-on-cut",
+  "support_derivation": {
+    "binomial_jet_statement": "the killed initial jets are imposed before projecting the remaining binomial-span image; positions on one band are not treated as independent",
+    "bridge_exponents": "x=2*ell-k, y=7*ell-5*k",
+    "claim_boundary": "these are exact coefficient envelopes for the nonnegative xi projection; the corner chain alone does not prove that discarding the negative xi tail preserves the bracket",
+    "family_samples": [
+      {
+        "P_x_degree": 6,
+        "Q_x_degree": 9,
+        "leading_minus_one_support": [
+          -2,
+          -5
+        ],
+        "r": 2
+      },
+      {
+        "P_x_degree": 9,
+        "Q_x_degree": 15,
+        "leading_minus_one_support": [
+          -2,
+          -5
+        ],
+        "r": 3
+      },
+      {
+        "P_x_degree": 12,
+        "Q_x_degree": 21,
+        "leading_minus_one_support": [
+          -2,
+          -5
+        ],
+        "r": 4
+      },
+      {
+        "P_x_degree": 15,
+        "Q_x_degree": 27,
+        "leading_minus_one_support": [
+          -2,
+          -5
+        ],
+        "r": 5
+      },
+      {
+        "P_x_degree": 18,
+        "Q_x_degree": 33,
+        "leading_minus_one_support": [
+          -2,
+          -5
+        ],
+        "r": 6
+      },
+      {
+        "P_x_degree": 21,
+        "Q_x_degree": 39,
+        "leading_minus_one_support": [
+          -2,
+          -5
+        ],
+        "r": 7
+      },
+      {
+        "P_x_degree": 24,
+        "Q_x_degree": 45,
+        "leading_minus_one_support": [
+          -2,
+          -5
+        ],
+        "r": 8
+      }
+    ],
+    "r3_P_polynomial_masks": {
+      "p2": [
+        -1,
+        -4,
+        -7,
+        -10
+      ],
+      "p3": [
+        0,
+        -3,
+        -6,
+        -9,
+        -12,
+        -15
+      ],
+      "p4": [
+        -2,
+        -5,
+        -8,
+        -11,
+        -14,
+        -17,
+        -20
+      ],
+      "p5": [
+        -1,
+        -4,
+        -7,
+        -10,
+        -13,
+        -16,
+        -19,
+        -22,
+        -25
+      ],
+      "p6": [
+        0,
+        -3,
+        -6,
+        -9,
+        -12,
+        -15,
+        -18,
+        -21,
+        -24,
+        -27,
+        -30
+      ],
+      "p7": [
+        1,
+        -2,
+        -5,
+        -8,
+        -11,
+        -14,
+        -17,
+        -20,
+        -23,
+        -26,
+        -29,
+        -32,
+        -35
+      ],
+      "p8": [
+        -1,
+        -4,
+        -7,
+        -10,
+        -13,
+        -16,
+        -19,
+        -22,
+        -25,
+        -28,
+        -31,
+        -34,
+        -37,
+        -40
+      ],
+      "p9": [
+        0,
+        -3,
+        -6,
+        -9,
+        -12,
+        -15,
+        -18,
+        -21,
+        -24,
+        -27,
+        -30,
+        -33,
+        -36,
+        -39,
+        -42,
+        -45
+      ]
+    },
+    "r3_P_support_box_positions_after_shift": 80,
+    "r3_Q_mask_summary": {
+      "q10": {
+        "count": 18,
+        "maximum": 1,
+        "minimum": -50
+      },
+      "q11": {
+        "count": 19,
+        "maximum": -1,
+        "minimum": -55
+      },
+      "q12": {
+        "count": 21,
+        "maximum": 0,
+        "minimum": -60
+      },
+      "q13": {
+        "count": 23,
+        "maximum": 1,
+        "minimum": -65
+      },
+      "q14": {
+        "count": 25,
+        "maximum": 2,
+        "minimum": -70
+      },
+      "q15": {
+        "count": 26,
+        "maximum": 0,
+        "minimum": -75
+      },
+      "q2": {
+        "count": 4,
+        "maximum": -1,
+        "minimum": -10
+      },
+      "q3": {
+        "count": 6,
+        "maximum": 0,
+        "minimum": -15
+      },
+      "q4": {
+        "count": 7,
+        "maximum": -2,
+        "minimum": -20
+      },
+      "q5": {
+        "count": 9,
+        "maximum": -1,
+        "minimum": -25
+      },
+      "q6": {
+        "count": 11,
+        "maximum": 0,
+        "minimum": -30
+      },
+      "q7": {
+        "count": 13,
+        "maximum": 1,
+        "minimum": -35
+      },
+      "q8": {
+        "count": 14,
+        "maximum": -1,
+        "minimum": -40
+      },
+      "q9": {
+        "count": 16,
+        "maximum": 0,
+        "minimum": -45
+      }
+    },
+    "r3_Q_support_box_positions_after_shift": 212,
+    "r3_pre_shift_leading": {
+      "P_x8": [
+        -2,
+        -5
+      ],
+      "P_x9": [
+        0
+      ],
+      "Q_x14": [
+        -2,
+        -5
+      ],
+      "Q_x15": [
+        0
+      ]
+    },
+    "source_constraints": "ell=5*i-j, i>=0, j>=0, i+j<=D",
+    "terminal_t_bound": "k>=ceil(((7*r-4)*ell-height)/(5*r-3))"
+  },
+  "terminal_resonance": {
+    "bracket": "3*(r-1)*(2*r-1)*a^3/(2*r^2) * x^2*y^2",
+    "claim_boundary": "this is the exact formal terminal block in the ambient support box; it is outside the exact nonnegative-xi source image, omits the upper common-root endpoint, and is not a Keller counterexample",
+    "family_pair": {
+      "P": "x^(3*r)+a*x^2*y",
+      "Q": "x^(3*(2*r-1))+((2*r-1)/r)*a*x^(3*r-1)*y+((2*r-1)*(r-1)/(2*r^2))*a^2*x*y^2"
+    },
+    "first_omitted_x_exponent": "3-3*r",
+    "first_visible_F_coefficient": "-binom((2*r-1)/r,3)*a^3*y^3",
+    "polynomial_coordinate": "B(t)=1+a*y*t^(3*r-2); Q is the polynomial part of P^((2*r-1)/r)",
+    "r3_specialization": {
+      "B": "1+a*y*t^7",
+      "P": "x^9+a*x^2*y",
+      "Q": "x^15+(5*a/3)*x^8*y+(5*a^2/9)*x*y^2",
+      "bracket": "5*a^3*x^2*y^2/3",
+      "common_top_test": "the formal cube root is supported in t-degrees 7*k, so [t^18]B^(1/3)=0"
+    }
+  }
+}

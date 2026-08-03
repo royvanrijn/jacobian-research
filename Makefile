@@ -25,6 +25,7 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 	verify-lr-rooted-trees \
 	verify-lr-mixed-bch \
 	verify-plane-sparse-supports verify-plane-support-bridge \
+	verify-plane-f2-modified-chart-bridge \
 	verify-linear-torus-free verify-algebraic-torus-free \
 	verify-master \
 	verify-quartic verify-normal-forms verify-formal verify-lean-local \
@@ -105,12 +106,29 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: verify-rank-four-degree-eighteen-target-obstruction
 .PHONY: verify-keller-ritt-product
 .PHONY: verify-binary-degree-five-gvc search-binary-degree-five-gvc
+.PHONY: verify-binary-first-ghost-collapse
+.PHONY: verify-binary-translation-tangent
+.PHONY: verify-factorial-trace-independence
+.PHONY: verify-factorial-trace-independence-sympy
 .PHONY: verify-projective-gradient-segre verify-hc4-quintic-infinity-rees
+.PHONY: verify-hc4-meng-yang-graphs verify-hc4-meng-yang-quintic
+.PHONY: verify-s4-collision-frame-keller
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
 	$(PYTHON) scripts/check_markdown_links.py
 	$(PYTHON) scripts/audit_status.py
+
+verify-s4-collision-frame-keller:
+	$(PYTHON) scripts/verify_s4_collision_frame_keller_frontier.py
+
+verify-hc4-meng-yang-graphs:
+	$(PYTHON) scripts/verify_hc4_meng_yang_graph_obstructions.py
+
+verify-hc4-meng-yang-quintic: verify-hc4-meng-yang-graphs
+	$(PYTHON) scripts/verify_hc4_meng_yang_quintic_graph_normal_slice.py
+	$(PYTHON) scripts/verify_hc4_meng_yang_quintic_q_kernel_slice.py
+	$(PYTHON) scripts/verify_hc4_meng_yang_relative_linear_obstruction.py
 
 verify-projective-gradient-segre: verify-hc4-quintic-infinity-rees
 	$(PYTHON) scripts/verify_projective_gradient_normal_slices.py
@@ -279,8 +297,14 @@ verify-plane-support-bridge:
 	$(PYTHON) plane-jc/cas/classify_f2_75_125_layers.py
 	$(PYTHON) plane-jc/cas/audit_f2_75_125_boundary_handoff.py
 	$(PYTHON) plane-jc/cas/test_f2_75_125_frontend.py
+	$(PYTHON) plane-jc/cas/generate_f2_modified_system.py
+	$(PYTHON) plane-jc/cas/verify_f2_modified_chart_bridge.py
 	$(PYTHON) plane-jc/cas/verify_f2_kummer_orbit_transfer.py
 	$(PYTHON) plane-jc/cas/verify_f2_terminal_residue_cover.py
+	$(PYTHON) plane-jc/cas/verify_f2_a6_simple_spectator_gluing.py
+
+verify-plane-f2-modified-chart-bridge:
+	$(PYTHON) plane-jc/cas/verify_f2_modified_chart_bridge.py
 
 verify-plane-case2-residue-strata:
 	$(PYTHON) plane-jc/cas/audit_case2_residue_strata.py
@@ -489,6 +513,7 @@ verify-core: verify-minimal
 	$(PYTHON) scripts/verify_counterexample.py
 	$(PYTHON) scripts/audit_map_consistency.py
 	$(PYTHON) scripts/verify_normalized_factorization_slice.py
+	$(PYTHON) scripts/verify_ordinary_degree_six_boundary_audit.py
 	$(PYTHON) scripts/verify_quadratic_cubic_factorization_invariants.py
 	$(PYTHON) scripts/verify_quadratic_cubic_modification_topology.py
 	$(PYTHON) scripts/verify_quadratic_cubic_additive_actions.py
@@ -714,6 +739,18 @@ verify-counterexample-scoreboard: verify-two-real-gmc verify-sic2c4
 
 verify-binary-degree-five-gvc:
 	$(PYTHON) scripts/verify_binary_degree_five_gvc_frontier.py
+
+verify-binary-first-ghost-collapse:
+	$(PYTHON) scripts/verify_binary_gvc_first_ghost_source_collapse_and_ray_rigidity.py
+
+verify-binary-translation-tangent:
+	$(SYSTEM_PYTHON) scripts/verify_binary_gvc_translation_tangent_rigidity.py
+
+verify-factorial-trace-independence:
+	$(SYSTEM_PYTHON) scripts/verify_factorial_trace_independence.py
+
+verify-factorial-trace-independence-sympy:
+	$(PYTHON) scripts/verify_factorial_trace_independence.py --sympy-audit
 
 search-binary-degree-five-gvc:
 	$(PYTHON) scripts/search_binary_degree_five_gvc_faces_mod_p.py

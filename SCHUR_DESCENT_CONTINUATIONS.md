@@ -491,26 +491,51 @@ other special divisibility mechanism.
 
 ## 6. Prioritized continuation
 
+The affine and low-degree graph continuation is now exact in the
+[Meng--Yang graph-obstruction note](HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md):
+every affine four-plane restriction of the scaled five-variable family is
+degenerate or nonconstant, and every graph \(y_3=R(x_1,x_2,y_1,y_2)\) with
+\(\deg R\le3\) is nonconstant.  On the full two-slope quartic pencil, all
+ten \(x_1\)-free quartic jets containing \(y_2\) vanish and the remaining
+slice forces \(160\rho^2+1968\rho+6021=0\).  The next coefficient forces
+\(8\rho^2+99\rho+279=0\); the two quadratics are coprime.  Thus degree four
+is excluded over every characteristic-zero field.
+
+Degree five no longer begins with an unrestricted 56-parameter top.  The
+plane determinant is a unit-affine equation for the first normal jet, the
+leading trace is \(\kappa x_2^5\), and over \(\mathbb Q\) the full top lies
+on two constant-kernel cone charts.  The complete sparse trace
+\(\kappa x_2^5+d x_2^3y_1+\rho x_2^2y_2\) is excluded by immutable
+first-transverse coefficients.  In particular, an exact graph can contain
+the marked collision and flatten the determinant on the whole plane
+\(x_1=0\) while still failing immediately off that plane.
+
 The exact formulas suggest the following order.
 
-1. **Relax the singular-pencil gate.**  In every nonlinear coordinate or
+1. **Intersect the three degree-five gates.**  Solve the plane equation for
+   the unique \(x_1\)-normal quartic jet, impose one of the two
+   constant-kernel differential equations on that jet, and eliminate every
+   homogeneous component of the first transverse determinant above degree
+   three.  The remaining \(x_1^2U_3\) freedom cannot change those
+   components.  Add the collision equations only after this joint ideal has
+   a survivor.
+2. **Relax the singular-pencil gate.**  In every nonlinear coordinate or
    coisotropic chart with an affine pivot, test the composite
    \(D(\mu+\lambda A,w)\) from (1.2).  Requiring \(D(s,w)\equiv0\) is
    unnecessarily strong.
-2. **Move to mixed source--dual or coisotropic pivots.**  Theorem 5.1 rules
+3. **Move to mixed source--dual or coisotropic pivots.**  Theorem 5.1 rules
    out every pure-source codimension-one block, even after a nonlinear
    polynomial source rechart.  A viable two-pivot construction must use
    genuinely mixed canonical variables or a non-coordinate embedding.
-3. **Use the corank budget before coefficient expansion.**  For such a
-   proposed
-   simultaneous \(r\)-pivot chart, first test
+4. **Use the corank budget before coefficient expansion.**  For such a
+   proposed simultaneous \(r\)-pivot chart, first test
    \(\operatorname{rank}M\le m-r\).  Success makes the determinant automatic.
    Failure does not exclude descent; it sends the problem to the exact
    bordered-graph expression (3.2).
-4. **Separate determinant and collision work.**  For doubled Keller maps,
+5. **Separate determinant and collision work.**  For doubled Keller maps,
    (2.1) makes collision transfer linear algebra once the pivot coordinates
    are fixed.  The real search is the determinant/corank condition.
-5. **Classify the \((\lambda,\mu)\)-family.**  The parameters give genuine
+6. **Classify the \((\lambda,\mu)\)-family.**  The parameters give genuine
    counterexamples, but their polynomial-equivalence classes and the minimum
    degree obtainable after allowed gauges remain open.  This is secondary to
    `HC(4)` but may expose invariants useful in the descent search.
@@ -518,8 +543,12 @@ The exact formulas suggest the following order.
 The current obstructions remain substantial: constant linear two-pivot
 routes are excluded in the root-engineered gauge families, the known toric
 correction restores constant determinant only with an invertible descended
-gradient, and the coordinate four-variable homogeneous chart is closed
-through the displayed cubic--quartic--sextic range.  The live directions are
-therefore the relaxed remainder (1.2) in genuinely mixed
+gradient, all affine restrictions and graphs through degree four of the v2
+Meng--Yang family are excluded, the sparse quintic trace is excluded, and
+the coordinate four-variable
+homogeneous chart is closed through the displayed cubic--quartic--sextic
+range.  The live graph direction is the broader lower-trace locus on the
+two rational quintic cone charts (plus algebraic zero-trace branches);
+outside graphs, the live directions are the relaxed remainder (1.2) in genuinely mixed
 source--dual/coisotropic pivots, and higher homogeneous layers not covered by
 the existing coordinate chart.

@@ -701,6 +701,27 @@ path below are treated as reference artifacts.
   They use `u=x2+lambda*x3` for `lambda=-1,1,2`, put the top correction in
   three variables, and add lower complementary bridges.  Every ideal over
   `F_11` and `F_13` is a unit ideal.
+- `hc4_meng_yang_quintic_graph_normal_slice.json` records the complete
+  91-parameter graph 1-jet census on the Meng--Yang two-slope plane, the
+  rational zero-trace exclusion, the two nonzero-trace constant-kernel top
+  charts, and exact projected counts over the prime fields of orders `101`
+  and `103`.  Generate it with the command in `REPRODUCE.md`.
+  Its whole-file SHA-256 is
+  `cdf7fd3cb03dcaea616ce4e177ba87fddcffa423c5f29a0d5f6e4f5dc1e0fee5`.
+  The stored rational point is only a projected jet survivor, not a
+  constant-Hessian graph.
+- `hc4_meng_yang_quintic_q_kernel_slice.json` records the first exact
+  transverse calculation on a constant-kernel quintic graph chart.  It keeps
+  the complete degree-at-most-two lower trace.  Three repair-invariant
+  transverse equations generate the generic unit ideal over `Q[a,rho]`; a
+  quartic-normal square kills the `q^2` coefficient; and the exceptional
+  nonzero `y*q` branch ends in two polynomials with nonzero resultant.  An
+  exact resultant separately excludes the denominator chart.  Enumeration
+  finds no admissible point over `F_101` or `F_103`, so the artifact certifies
+  an empty slice rather than a reconstructed candidate.  The two-cubic `a=0`
+  diagnostic and all recorded bad-prime collapses are retained.  Generate it
+  with the command in `REPRODUCE.md`.  Its whole-file SHA-256 is
+  `dd28f7a44f6c813bdd422335133869ad7b4a513cc4426987930630c7cba859f9`.
 - `hc4_fitting_denominator_extraction.json` records the canonical
   degree-three cube-torsion presentation, its sign-character block sizes,
   complete parameter-plane scans for four coefficient-monomial orbits over
@@ -1392,6 +1413,73 @@ path below are treated as reference artifacts.
   `59436a3617671c4ca47cd354b45cb74abc7b9787352e725c97ebce1a304ffa16`.
   This is an exact finite-moment computation, not an arbitrary-cusp
   classification or a proof of GVC(2).
+- `binary_gvc_prime_power_tomography.json.gz` is the compressed complete
+  radial-span-six projected-scroll tomography census.  It records the 8,559
+  element universal two-colour Graver basis, the filtered basis of each of
+  868 nonfree projected supports, 1,490 primitive support-at-least-five
+  packets, and all prime-power valuation, carry, unit, low-digit, and
+  `C2,C3` character rows.  The compact
+  `binary_gvc_prime_power_tomography_summary.json` retains the census and the
+  complete records of the two configured collision orbits.  Generate both
+  with the adjacent command in `REPRODUCE.md`.  Their whole-file SHA-256
+  hashes are
+  `b1cf105d161b83a5e0c23dab0ed3b2cbc0a2726970e20db760ca5ae78eb5c09b`
+  and
+  `c9380d66bdad08cb30896c0c1b31d9c5211397d85e962b48d808d90baa832522`;
+  the uncompressed logical result hash is
+  `685f60b5843bca33d32034a16a8b599dcfbf46c35e80e62f747f6d9715e285eb`.
+  The two collisions are exact in the projected `C2,C3` model but are
+  separated by `C4`; they are not GVC counterexamples.
+- `binary_gvc_adelic_tomography_span7.json.gz` is the primitive-only
+  span-seven extension at primes `5,7,11,13`, exponents through three, small
+  quotients through three, and units modulo `p^3`.  It records 34,890 raw
+  Graver moves, 6,401 normalized unresolved candidates on 3,107 support
+  semigroups, every first-separator certificate, and full probe rows for the
+  three surviving `C2,C3` collision orbits.  The compact companion is
+  `binary_gvc_adelic_tomography_span7_summary.json`.  The complete adelic
+  scalar collision set equals the 1,651 exact factorial-partition collisions:
+  there are no accidental finite-window collisions.  The three fully
+  decorated survivors belong to the exact six-step family
+  `R_(s+6) B_a B_(a+1) = R_s B_(a+3) B_(a+4)` and are separated by `C4`.
+  The accompanying exact Franel-fibre theorem subsequently proves that every
+  fixed finite-character refinement of this family is terminal or loses
+  support; prime-dependent affine carry promotion remains open.
+  The whole-file hashes are
+  `dc64e57cac395b4f98cfcb8cc0ac1cdf03c598c5fba67253f67c18e379f7f035`
+  and
+  `b268bf8ed6cb7c564e154efdcd12b7e60659533fc8cd85e134b6c82870ccabd9`;
+  the logical result hash is
+  `a8128639805f9e6e0047dc39e70b20f8e939b6a76213930ab44bd0b26a35dde3`.
+  This remains a bounded projected-semigroup computation, not a binary GVC
+  theorem or counterexample.
+- `binary_gvc_nonfree_factorization_span4.json` is the complete
+  span-four scaled-fibre census for the projected two-colour packet model.
+  It contains all 65 Hilbert bases, side-refined signed factorial vectors,
+  exact collision-lattice bases, and the 308 completed
+  factorial-compatible Graver moves.  Thirteen profiles have a nonzero
+  factorial collision lattice, but packet partitions and `C2,C3`
+  signatures separate every atom.  The first factorial-only square is
+  recorded explicitly and is `C3`-separated.  Its whole-file
+  SHA-256 is
+  `888f1f465c67045a2a39a157d6d6cf4872f1cb1a76a79b248e31aa658fd21d2d`;
+  its logical result hash is
+  `97bcdb8049b34ef0fed2bd0c9f70102e7b06d828e57a27cb09d6036395402627`.
+- `binary_gvc_nonfree_factorization_span5_signature.json` and
+  `binary_gvc_nonfree_factorization_span6_signature.json` contain
+  every Hilbert atom and cumulative partition/`C2,C3,C4`
+  injectivity certificate for 400 and 1,469 profiles.  No profile remains
+  unresolved.  Their whole-file SHA-256 hashes are
+  `991f531db27e707a2155080f84751f2b3c12f9f88c957775cf6e62f26776a18d`
+  and
+  `052928f81694395d1369a4e2c1e9973ebd1fc4d28d10e9c2216f549d4c1b1e99`;
+  their logical result hashes are
+  `567712c213029dc01ca749888d21fc838b49bf21604e0a92b73997575d2dc8fd`
+  and
+  `b8f334669719ac829b70182c4c648b8a66a92f409dd65b8945c6309ea2a6ecde`.
+  These three files are bounded computations.  The all-span
+  consecutive-residue quotient theorem is the written incidence-forest
+  proof in the canonical note, not an extrapolation from these artifacts.
+  Reproduce them with the adjacent commands in `REPRODUCE.md`.
 - `rank_five_wall_koszul_homology_QQ.log` is the completed
   characteristic-zero Koszul-homology calculation for the all-degree
   rank-five wall.  It gives dimension two, degree 296, and Hilbert numerator
@@ -1433,6 +1521,60 @@ path below are treated as reference artifacts.
   the output of the older blind comparison run; it is not a certificate.
   The optional `--research-characteristic=1000003` pass is modular
   discovery evidence only.
+- `jc2_f2_modified_laurent_family.json` records the exact `r=2` regression,
+  the conditional `r=3,d=2` 14-function and `r=3,d=3` 22-function windows,
+  triangular power elimination, the `h=2` and `h=4` visible-tail splits,
+  the direct Artinian maximal-minor generators, and the separate Toeplitz
+  coefficient-map determinant data.  It also records the universal
+  endpoint-binomial section, the uniform congruence-support bracket gate,
+  the rational `r=3,d=2` residue fourfold, the smooth formal coefficient-torus
+  branch for `r=3,d=3`, its cubic invariant reduction, and the exact
+  exponent-seven formal residual point.  Generate it with the command in
+  `REPRODUCE.md`.  Its whole-file SHA-256 is
+  `bca206498c153e41a2f31344015df2ce63890f8b12228b6d0ba2c0970eb87c85`.
+  The systems remain conditional on an unproved modified common-power chart.
+- `jc2_f2_75_125_character_layers.json` records the exact 35-layer B0
+  binomial-jet envelope and compressed bracket recurrence.  Its corrected
+  `v2` tangent record removes the unproved common-root divisibility slice,
+  gives first-five kernel dimensions `6,6,7,7,10`, classifies the exact
+  nonnegative centralizer modes, and locates formal `C0^(-1)` at layer 10.
+  Its nonlinear residue resultant forces root continuation through descent 7
+  and isolates the descent-8 local seed `27*y^2-9*y+1=0`.
+  Generate or verify it with
+  `plane-jc/cas/classify_f2_75_125_layers.py`; intentional regeneration uses
+  `--refresh`.  Its whole-file SHA-256 is
+  `3b30a686a27c1adebc37e354cf5d0a2a60a07ef811c96bfbc02a426886889cf7`.
+- `jc2_f2_modified_chart_bridge.json` records the corner-derived `gamma=2`
+  monomial chart, possible support envelopes, and the exact binomial-jet
+  source images.  At `r=3` their ranks are `74/83` for P and `196/215` for
+  Q.  The artifact also records the primitive top-diagonal relation excluding
+  the formal terminal point, the exact two-parameter full-Laurent common-root
+  seed and its degree-25 polynomial source lift.  Its corrected top-tangent
+  record gives first-five kernel dimensions `6,6,7,7,10` and locates the
+  formal `C0^(-1)` resonance at layer 10, where it is not an independent
+  source-band kernel.  It also retains the ambient support-box tangent audit
+  and the projected top-gap
+  certificate: a P-only Artinian algebra of length 27 in
+  which the first Q gap has nonzero resultant, so the combined ideal is
+  `(1)`.  Generate or verify it with
+  `plane-jc/cas/verify_f2_modified_chart_bridge.py`; use `--refresh` only
+  after reviewing an intentional change.  Its whole-file SHA-256 is
+  `ac7dbc170cafbcf028079b9ccdb41afd78c333e3850abc0761f64cc056e7d7b8`.
+  This excludes the literal bracket-preserving polynomial projection, not
+  the full Laurent F2 row; the negative-tail correction remains unproved.
+  The optional `--extended-r5` replay requires Singular and proves the
+  `r=5` P-only projected top-gap ideal is `(1)`; it does not alter the pinned
+  default artifact.
+- `jc2_f2_a6_simple_spectator_gluing.json` records the exhaustive conditional
+  two-transposition gluing census: 30 normalized degree-seven tuples, six
+  simultaneous-conjugacy classes, and paired-star witnesses through remaining
+  degree 19.  The marked endpoint/interior filter leaves three classes under
+  the strongest naive interior-anchor condition.  Generate or verify it with
+  `plane-jc/cas/verify_f2_a6_simple_spectator_gluing.py`; use `--refresh` only
+  after reviewing an intentional change.  Its whole-file SHA-256 is
+  `34ed6f4711bef592c87f86e7e4e19f70984a35259fab68dec6c35c71cd9b80a2`.
+  The identification of Kummer spectators with transpositions remains
+  unproved.
 - `rank_five_koszul_hensel_l3_depth4_QQ.log` and
   `rank_five_koszul_hensel_bfree_depth9_QQ.log` record the exact
   characteristic-zero homogeneous recursion on the normalized

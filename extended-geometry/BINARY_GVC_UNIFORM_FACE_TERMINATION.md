@@ -31,6 +31,11 @@ split primes.  Those digit rows recover every power sum of the finitely
 many character-component moments, so Newton identities split a
 scale-compatible trace componentwise.
 
+The later consecutive-residue incidence theorem further proves that, once
+such a fixed marked packet exists, every nonfree factorization ambiguity
+reduces to already-safe beta circuits in every radial span.  Thus there is no
+remaining post-promotion semigroup-classification hypothesis.
+
 This does **not** yet prove unrestricted \(\operatorname{GVC}(2)\).
 The Hall--jet valuation produces affine, prime-dependent carry shells
 before it produces a trace family.  What remains is a promotion theorem
@@ -1591,6 +1596,101 @@ with the analogous formula for \(v\).  If
  (-1)^{H_x+H_y}H_x!H_y!t_x!t_y!
  \pmod\ell.                                      \tag{7.5c}
 \]
+
+The zero-low-digit restriction is unnecessary for the valuation and unit
+calculation.  Its affine extension is the useful input for the next
+promotion test.
+
+> **Lemma 7.4 ter bis (two-digit affine jet--carry transform).**  Keep the
+> hypotheses of Lemma 7.4 ter, strengthen the good-prime bound to
+> \(\ell>D(d+1)\), let \(0\leq r<\ell\), and consider order
+> \(\ell d+r\).  Write
+> \[
+>  u_i=\ell\bar u_i+u_i^{(0)},\qquad
+>  \sum_i u_i^{(0)}=r+\ell e_u,
+> \]
+> and similarly for \(v\).  If
+> \(\rho_i=\ell H_i+t_i\), put
+> \[
+>  c_{\rho,r}=
+>  \frac{t_x+t_y-((sr+J)\bmod\ell)}{\ell}\in\{0,1\}.
+> \]
+> Then
+> \[
+> \begin{aligned}
+>  v_\ell\binom{\ell d+r}{u}&=e_u,\\
+>  v_\ell\!\left(\binom{\ell d+r}{u}
+>                  \binom{\ell d+r}{v}\rho!\right)
+>  &=sd+\left\lfloor\frac{sr+J}{\ell}\right\rfloor
+>    +e_u+e_v-c_{\rho,r}.                       \tag{7.5c'}
+> \end{aligned}
+> \]
+> Moreover
+> \[
+>  \ell^{-e_u}\binom{\ell d+r}{u}
+>  \equiv
+>  (-1)^{e_u}
+>  \frac{d!r!}
+>       {\prod_i\bar u_i!\prod_i u_i^{(0)}!}
+>  \pmod\ell.                                   \tag{7.5c''}
+> \]
+
+The digit sum of the numerator is \(d+r\), while the sum of the digit
+sums in the denominator is
+
+\[
+ \sum_i\bar u_i+\sum_i u_i^{(0)}
+ =(d-e_u)+(r+\ell e_u)
+ =d+r+(\ell-1)e_u.
+\]
+
+Legendre--Kummer proves the first line.  Since
+
+\[
+ H_x+H_y
+ =sd+\left\lfloor\frac{sr+J}{\ell}\right\rfloor-c_{\rho,r},
+\]
+
+the radial factorial gives the second.  Removing multiples of \(\ell\)
+from numerator and denominator and applying Wilson proves (7.5c'').  Unlike
+the \(r=0\) penalty in Lemma 7.4 ter, the relative affine score
+\(e_u+e_v-c_{\rho,r}\) can equal \(-1\): two no-multinomial-carry low
+digits may themselves cross one radial digit boundary.  This disappears
+when \(\ell\) is chosen larger than the maximum radial size of the bounded
+low digit.  The formula, rather than nonnegativity at one prescribed prime,
+is the invariant needed for joint low-digit tomography.
+
+> **Corollary 7.4 ter ter (one-high-digit quotients are free).**  At orders
+> \(\ell+r\), every selection side in the two-digit transform has high-digit
+> count either zero or one.  Hence its high-digit quotient is empty or is one
+> marked channel; it cannot contain two inequivalent semigroup
+> decompositions.
+
+Indeed \(\sum_i\bar u_i=1-e_u\), and nonnegativity forces
+\(e_u\in\{0,1\}\), with the same argument on the other side.  Thus the
+nonfree quotient semigroup which obstructs circuit peeling at orders
+\(\ell d\) with \(d>1\) disappears completely in the one-high-digit probes.
+The remaining compatibility problem is narrower: low-digit bridges carrying
+different singleton marks can still cancel in the same translated Hall
+shell.  Proving that the translation-Hasse rows triangularize those
+singleton marks, or producing a nonflat kernel, is the next exposure lemma.
+
+The later
+[affine singleton-localization theorem](BINARY_GVC_AFFINE_SINGLETON_LOCALIZATION.md)
+removes the state-combinatorial part of this ambiguity.  In the homogenized
+radial/source configuration, every state sharing a singleton fibre differs
+from it by the fixed integer kernel and conformally decomposes into its fixed
+Graver basis.  Exposed singleton columns admit only finitely many
+prime-independent signed low corrections, with explicit carry and unit
+formulas; every unbounded branch repeats one fixed primitive move with
+positive density.  Its radial-carry Hasse formula further compresses every
+long binary carry interval with residue (R) to the single row
+(-F^{(R+1)}(-1)).  This does not by itself triangularize the **linear**
+specialized packet sum.  The later translation-tangent theorem shows that a
+coefficient-blind module-inheritance implication is false; the valid missing
+statement must use the complete Cartesian derivative tower to expose a flat
+twist or a conformal curvature block with common high quotient.
+
 For a one-carry multinomial, \(d!=d(d-1)!\); hence (7.5b)--(7.5c)
 factor the normalized weight into a high-digit quotient weight, a
 low-digit bridge weight, and an explicit scalar.  The high-digit
@@ -2772,6 +2872,27 @@ high-digit factor.  What is not yet proved is that the resulting
 inserted identities can be triangularized before different insertions
 cancel.
 
+The subsequent
+[translation-tangent theorem](BINARY_GVC_TRANSLATION_TANGENT_RIGIDITY.md)
+proves the primitive one-direction linearized case exactly.  For
+\(H(t)=(1+t)^d\) and \(\gcd(d,r)=1\), every polynomial
+\(B(t)=\sum_jb_j\binom dj t^j\) satisfying
+\[
+ [t^{rN}]B(t)H(t)^{N-1}=0\qquad(N\geq1)
+\]
+has \(b_j=c(j-r)\); this is precisely the tangent to the flat scalar--torus
+action.  An iterated cyclotomic-neighbourhood argument then proves that every
+\(q^a\)-order pair of Taylor twists with identical complete moving rows is
+flat once the underlying prime \(q\) is sufficiently large.  The same note
+also proves that no
+coefficient-blind Hilbert-module inheritance theorem can replace the
+Cartesian argument: two free module translates carrying a common factorial
+weight can cancel isoperiodically at every pure order while a fixed multiplier
+survives.  Thus the remaining triangularization must use higher
+cyclotomic-adic rows for exceptional small primes, mixed-prime torsion, and
+the genuinely two-dimensional Taylor down-set, always over one common high
+quotient.
+
 An exact bounded search tests the smallest version of this target.  For
 one translated monomial and a \(C_2\) twist, set
 \[
@@ -2860,6 +2981,64 @@ minimal non-universal-Gröbner \(S(6)\) and \(S(5,4)\) fibers.  The
 finite-trace theorem bypasses the block-by-block census only after the
 shell has become a fixed scale-compatible trace: it then separates the
 complete color-count/radial-profile components simultaneously.
+
+The subsequent
+[prime-power tomography census](BINARY_GVC_PRIME_POWER_TOMOGRAPHY.md)
+computes this projected hierarchy through radial span seven.  At
+\(p=5,7,11,13\), \(e\leq3\), its finite adelic scalar collisions are exactly
+the all-scale factorial-partition collisions; there are no accidental
+finite-window collisions.  Its only fully decorated \(C_2,C_3\)-blind moves
+are the span-seven orbits of the exact all-span family
+\[
+ R_{s+6}B_aB_{a+1}=R_sB_{a+3}B_{a+4}.
+\]
+Every such move is Graver primitive and has a two-state exact projected fibre.
+Its factorial weights, low digits, and Kummer data agree at every scale, and
+its \(C_2,C_3\) marked-character traces also agree.  A \(C_4\) character
+always separates its primitive endpoints.
+
+The same note now closes the family after every fixed finite-character
+promotion, even if the character groups the endpoints.  At scale \(N\), the
+complete \(C_2,C_3\)-blind fibre is
+\[
+ z_t=(N-t,t,N-t,N-t,t,t),\qquad0\leq t\leq N,
+\]
+and its normalized row is
+\[
+ \binom{2N}{N}\sum_t\binom Nt^3U^{N-t}V^t.
+\]
+If a further character has relative order \(h\), its endpoint class at
+scales \(h,2h\) gives respectively
+\(U^h+V^h\) and
+\(U^{2h}+\binom{2h}{h}^3U^hV^h+V^{2h}\).  Their common zero in
+characteristic zero is \(U=V=0\), hence support loss.  Thus the six-step
+packet is character-separated, terminal, or loses support after fixed
+promotion.
+
+The subsequent
+[nonfree-factorization theorem](BINARY_GVC_NONFREE_FACTORIZATION_TOMOGRAPHY.md)
+removes the remaining abstract mixed-semigroup ambiguity at every fixed
+radial span.  If \(q=\lceil s/2\rceil\), the two complete marked histograms
+for \(C_q,C_{q+1}\) are injective on levels \(0,\ldots,s\) when \(s\) is
+odd.  When \(s\) is even, their kernel is one cycle, and the corresponding
+two-colour return is a conformal sum of the already-safe beta swaps
+\[
+ R_iB_{i+q+1}=R_{i+q+1}B_i,\qquad0\leq i<q.
+\]
+It follows atomwise that every nonfree factorization collision with equal
+marked signatures is safe.  The exact Hilbert census through span six
+independently confirms the smaller \(C_2,C_3,C_4\) signatures and exhibits
+the first factorial-only square.
+
+What remains is therefore only the Hall-specific problem of
+factorial-compatibly inheriting one fixed marked packet from the
+prime-dependent affine shell.  A module-only version is false; the corrected
+statement must use the complete Cartesian translation tower.  Its primitive
+one-direction tangent and every large-underlying-prime, prime-power-character
+case are now proved, leaving exceptional small primes, mixed-prime torsion,
+and two-dimensional curvature triangularization over a common high quotient.
+Neither the censuses nor the
+new tangent theorem supplies that final promotion or a GVC counterexample.
 
 The toric input used here is S. Petrović,
 [*On the universal Gröbner bases of varieties of minimal

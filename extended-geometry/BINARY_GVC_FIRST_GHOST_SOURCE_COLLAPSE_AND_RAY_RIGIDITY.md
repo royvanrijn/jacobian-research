@@ -257,16 +257,32 @@ The following proposed route must be retired:
 \]
 
 The first ghost collapses source decompositions exactly. The all-scale
-factorial sequence recovers pure-ray multiplicity data, but it does not by
-itself classify nonfree mixed sums.
+factorial sequence recovers pure-ray multiplicity data. The subsequent
+[factorial-trace independence theorem](FACTORIAL_TRACE_INDEPENDENCE.md)
+separates every fixed finite mixed packet by its canonical signed slope vector,
+even with exponential-rational trace coefficients. It leaves only same-vector
+trace cancellations; it does not supply the scale-compatible Hall packet or
+restore markings forgotten by that vector.
 
 The remaining valid target is therefore:
 
-> **Mixed-semigroup packet theorem.** A Hall-reduced equal-profile affine
-> packet whose primitive rays are individually terminal cannot sustain
-> all-order cancellation through nonfree mixed sums, unless it is a complete
-> profile, has a split-symbol separator, or loses support.
+> **Marked same-vector packet theorem.** After a Hall-reduced equal-profile
+> affine packet is exposed uniformly at every scale, each remaining
+> same-vector trace class must have a marked separator, be a complete profile,
+> or lose support.
 
 The canonical conditional theorem still requires scale-compatible promotion.
+The subsequent
+[prime-power tomography census](BINARY_GVC_PRIME_POWER_TOMOGRAPHY.md)
+shows through radial span seven that unequal scalar factorial partitions have
+no accidental collision in the configured four-prime window.  Its only
+fully decorated \(C_2,C_3\)-blind moves belong to the all-span same-vector
+family \(R_{s+6}B_aB_{a+1}=R_sB_{a+3}B_{a+4}\); \(C_4\) separates every
+primitive pair.  Its subsequent Franel-fibre calculation proves more: after
+promotion to any fixed finite-character packet, two character-period rows
+force support loss unless the pair is already character-separated.  Thus this
+family no longer obstructs the displayed marked same-vector theorem after
+fixed promotion.  The remaining problem is inheritance of such a fixed packet
+from the prime-dependent affine Hall shell.
 This note narrows that problem and prevents reuse of a false local lemma; it
 does not claim unrestricted GVC(2).

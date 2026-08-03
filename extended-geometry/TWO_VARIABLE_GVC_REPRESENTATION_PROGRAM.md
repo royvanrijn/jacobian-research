@@ -40,11 +40,30 @@ remaining operator architectures must therefore use coupled coefficients,
 nonlinear translation, or an irreducible nonhomogeneous symbol.
 
 There are now two continuing targets: prove scale-compatible carry
-promotion—most sharply, prove translation-curvature rigidity for every
-rank-one Cartesian isoperiodic cluster—or find a genuine binary
-counterexample, and replace the third-order Dvorsky operator by a quadratic
+promotion to one fixed marked packet, or find a genuine binary
+counterexample; and replace the third-order Dvorsky operator by a quadratic
 constant-coefficient operator using as few auxiliary variables as
-possible.  Polynomial degree seven is a regression for the first target.
+possible.  The
+[first-ghost source-collapse theorem](BINARY_GVC_FIRST_GHOST_SOURCE_COLLAPSE_AND_RAY_RIGIDITY.md)
+disproves the former translation-curvature route through one translated
+first ghost, while proving all-scale rigidity for pure repeated rays.
+The subsequent
+[prime-power tomography census](BINARY_GVC_PRIME_POWER_TOMOGRAPHY.md)
+finds no accidental four-prime adelic collision through radial span seven.
+Its three fully decorated \(C_2,C_3\)-blind orbits are the visible part of the
+all-span primitive two-state family
+\(R_{s+6}B_aB_{a+1}=R_sB_{a+3}B_{a+4}\).  Their factorial signatures agree
+at every scale, while a \(C_4\) character separates the primitive pairs.  The
+complete blind fibre has an exact Franel row, and two character-periods prove
+that every fixed finite-character promotion is terminal or loses support.
+The
+[nonfree-factorization theorem](BINARY_GVC_NONFREE_FACTORIZATION_TOMOGRAPHY.md)
+then closes the general same-vector ambiguity in every radial span: the
+consecutive \(C_q,C_{q+1}\) histograms are injective, or have one kernel
+which is a conformal sum of safe beta circuits.  The remaining binary test is
+therefore only promotion from the prime-dependent affine Hall shell to one
+fixed marked packet, not semigroup closure after that promotion.
+Polynomial degree seven is a regression for the first target.
 
 The binary partial results do not change the known counterexample upper
 bounds: they remain five variables for unrestricted constant-coefficient

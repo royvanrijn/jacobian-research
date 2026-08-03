@@ -31,7 +31,10 @@ three-dimensional counterexample construction.
 | [SEARCH_POLICY.md](SEARCH_POLICY.md) | Consequences for future JC(2) computation |
 | [CERTIFIED_SPARSE_SUPPORT_EXCLUSIONS.md](CERTIFIED_SPARSE_SUPPORT_EXCLUSIONS.md) | Exact arbitrary-degree classification of every normalized support with at most six nonlinear monomial occurrences and the affine-normalized support lower bound seven |
 | [AFFINE_SUPPORT_NEWTON_BRIDGE.md](AFFINE_SUPPORT_NEWTON_BRIDGE.md) | Exact obstruction to a coarse Newton/support bridge and the Kummer-character gate for the live `(75,125)` terminal block |
-| [F2_75_125_DERIVATION.md](F2_75_125_DERIVATION.md) | Corrected \([t,z]=-z\) recurrence and exact B0/Kummer classification of the 35 missing F2 layers |
+| [F2_75_125_DERIVATION.md](F2_75_125_DERIVATION.md) | Corrected \([t,z]=-z\) recurrence, exact B0/Kummer classification, corrected source-band tangent/Fitting handoff, and the first descent-8 nonlinear residual |
+| [F2_MODIFIED_LAURENT_FAMILY.md](F2_MODIFIED_LAURENT_FAMILY.md) | Conditional all-`r` modified-series compiler, exact 14/22-function windows and Fitting residues, projected top-band unit obstruction, and the genuine terminal `A_(2r)` theorem |
+| [F2_MODIFIED_CHART_BRIDGE.md](F2_MODIFIED_CHART_BRIDGE.md) | Corner-derived `gamma=2` chart, exact binomial-jet source ranks, polynomial lift of the negative tail, corrected tangent resonances, and length-27/resultant proof that every `r=3` literal polynomial-projection branch is empty |
+<!-- status-consumer: PF2MCB1 6ff13314e0090f52 -->
 <!-- status-consumer: PF2BH1 dcd3e54be59f32de -->
 | [F2_BOUNDARY_HANDOFF.md](F2_BOUNDARY_HANDOFF.md) | Retained four-stratum contact census, failed contact-to-ramification surrogate, and updated handoff to the exact Kummer/target rows |
 <!-- status-consumer: PF2KO1 c3a129906d2f75d2 -->
@@ -39,6 +42,7 @@ three-dimensional counterexample construction.
 <!-- status-consumer: PF2TR1 bb41ccb3d135dbf2 -->
 <!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 | [F2_TERMINAL_RESIDUE_COVER.md](F2_TERMINAL_RESIDUE_COVER.md) | Target ray `(5,2)`, degree floors `6`/same-target `12`, three forced node attachments, genus-25 `A_6` Galois closure, purity/different ledger, geometric `A_6` versus arithmetic `S_6`, and trivial target-fixed deck group |
+| [F2_A6_SIMPLE_SPECTATOR_GLUING.md](F2_A6_SIMPLE_SPECTATOR_GLUING.md) | Conditional exhaustive gluing of two simple spectator cycles: six surviving genus-zero `S_7` classes and all-degree paired-star countermodels to coarse exclusion |
 | [UNIBRANCH_SPECTATOR_COUNTERMODELS.md](UNIBRANCH_SPECTATOR_COUNTERMODELS.md) | Universal finite-free unibranch packets with an étale spectator; exact refutation of a purely local exclusion and isolation of the global \(\mathbb A^2\)-open obstruction |
 | [cas/README.md](cas/README.md) | Replay commands, hashes, and independent checker |
 | [AUDIT_COMPLETION.md](AUDIT_COMPLETION.md) | Objective-by-objective completion and residual limitations |

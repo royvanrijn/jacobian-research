@@ -282,11 +282,17 @@ five character sectors of those layers are now compiled exactly in
 parameters.  If the coefficient/support route is resumed, it must first prove
 the \(\gamma\)-branches exhaustive and refine the over-envelope to its B1
 Laurent polygon masks before attempting Gröbner elimination.
-The first B1 descent is now also exact: layers 39 through 36 merely continue
-the common root, while layer 35 admits a genuine
-\(\lambda C_0^2z^{10}\) mode.  Consequently an upper-layer unit ideal does
-not occur; the next test **within that optional route** is whether that mode
-creates a nonzero de Rham class when propagated into layer 34.
+The corrected top tangent is now exact and shows why this route does not
+triangularize so early.  The former substitution by (C_0^2) and (C_0^4)
+assumed unproved divisibility.  Every exact P-band direction instead has the
+Q follower `q=-3*C0^2*p`; the first-five kernel dimensions are
+`6,6,7,7,10`.  The extra layer-35 term is the commuting (C_0^4), while the
+formal `lambda*C0^(-1)` resonance is at layer 10 and is not an independent
+source-band mode.  The next optional coefficient test must retain all P-band
+variables and impose the nonlinear forcing by the exact cokernel/Fitting row.
+The first such calculation is now complete: a resultant `1701*a^8` recovers
+a source root through descent 7 and leaves the local descent-8 ratio
+`27*y^2-9*y+1=0`, which must be coupled to the target row.
 
 The first boundary pivot is complete at the contact-only level justified by
 the common edge.  Its quadratic factor has four exhaustive contact
@@ -297,7 +303,7 @@ survives the finite-flat packet budget.  The retained audit is
 [`F2_KUMMER_ORBIT_TRANSFER.md`](F2_KUMMER_ORBIT_TRANSFER.md) and
 [`F2_TERMINAL_RESIDUE_COVER.md`](F2_TERMINAL_RESIDUE_COVER.md) bypasses that
 surrogate: it reduces the live row to one principal chain or two copies and
-computes its degree-six target residue cover.  The lower thirty layers still
+  computes its degree-six target residue cover.  The 35 nonlinear layers still
 should not be continued sequentially; the remaining problem is global
 source/target gluing.  Its first processed consequences are geometric degree
 at least six, or at least twelve for two distinct packets over one target

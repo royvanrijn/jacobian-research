@@ -304,6 +304,16 @@ The number `N-4` is not a lower bound for the proposed global invariants
 Global lower bounds require invariants applying to every Keller
 realization.
 
+The separate
+[ordinary-degree-six boundary audit](../extended-geometry/ORDINARY_DEGREE_SIX_BOUNDARY_AUDIT.md)
+narrows the `kdeg` side of the same programme in four retained low-boundary
+templates.  It excludes the normalized `(1,2)` slice through degree six,
+the standard balanced `2+2` routes, both monomial cubic-reconstruction
+profiles, and the elementary `D^3` lifts.  Those are template exclusions,
+not a global degree lower bound: nonmonomial Wronskian solutions,
+asymmetric multi-chart gluing, and distributed target ledgers remain
+outside their scope.
+
 ## Exact regression
 
 Run

@@ -418,6 +418,33 @@ def common_power_regression() -> dict[str, object]:
         if any(exponent % 5 for exponent in exponents):
             raise AssertionError("a common-power source band left k[u^5]")
     discriminant = sp.expand(b**2 - 4 * a * c)
+
+    # The negative-tail seed has an exact polynomial source lift.  Before the
+    # Puiseux translation it is x*(x*y^5-1)^2*R(x*y^5).  This observation is
+    # why deleting its negative powers in the later monomial chart is not a
+    # legitimate source operation.
+    X, y_new, x_source, y_source = sp.symbols(
+        "X y_new x_source y_source"
+    )
+    source_w = x_source * y_source**5
+    source_root = sp.expand(
+        x_source
+        * (source_w - 1) ** 2
+        * R.subs(v, source_w)
+    )
+    translated_source_root = sp.expand(
+        source_root.subs(
+            {x_source: X**5, y_source: y_new + X**-1}, simultaneous=True
+        )
+    )
+    translated_t = X * y_new
+    expected_translated_root = sp.expand(
+        X**5
+        * ((1 + translated_t) ** 5 - 1) ** 2
+        * R.subs(v, (1 + translated_t) ** 5)
+    )
+    if sp.expand(translated_source_root - expected_translated_root) != 0:
+        raise AssertionError("the polynomial source lift of C_top failed")
     return {
         "root_band": "C=t^7*H(t)*z^5",
         "H_degree": 18,
@@ -455,111 +482,466 @@ def common_power_regression() -> dict[str, object]:
                 ),
             },
         },
+        "exact_polynomial_source_lift": {
+            "before_translation": "C_R=x*(x*y^5-1)^2*R(x*y^5)",
+            "source_total_degree": 25,
+            "source_terminal_height": 1,
+            "source_band": 5,
+            "after_translation": (
+                "C_R=t^5*z^5*((1+t)^5-1)^2*R((1+t)^5)"
+            ),
+            "consequence": (
+                "the full negative Laurent tail is the monomial-chart image "
+                "of an actual polynomial source band, not a disposable error"
+            ),
+        },
     }
 
 
-def upper_descent_classification() -> dict[str, object]:
-    """Classify the first five zero layers after the common-power top."""
+def band_factor_data(band: Band) -> tuple[int, int, int]:
+    """Return ``(u_power, vanishing_power, free_w_degree)`` for a band.
 
-    A, A_prime, U, U_prime, V, V_prime = sp.symbols(
-        "A A_prime U U_prime V V_prime"
-    )
-    q_scale = -sp.Rational(9, 5)
+    With ``u=1+t`` and ``w=u^5``, the exact jet-reduced band is
+
+        t^ell*u^u_power*(w-1)^vanishing_power*k[w]_(<=free_w_degree).
+
+    This is just the binomial basis in factored form: all source exponents
+    are congruent modulo five, and ``w-1`` is a uniformizer at ``t=0``.
+    """
+
+    u_power = band.source_j[0]
+    w_degree = (band.source_j[-1] - u_power) // 5
+    free_w_degree = w_degree - band.jet_vanishing_order
+    if free_w_degree + 1 != band.dimension:
+        raise AssertionError("the factored source-band dimension changed")
+    return u_power, band.jet_vanishing_order, free_w_degree
+
+
+def upper_descent_classification(
+    p_bands: dict[int, Band], q_bands: dict[int, Band]
+) -> dict[str, object]:
+    """Classify the *linearized* source-band operator below the top.
+
+    An earlier version inserted ``p=C0^2*U`` and ``q=C0^4*V`` before proving
+    those divisibilities.  Exact source bands do not satisfy them.  The
+    unrestricted tangent kernel is larger: every P-band deformation is
+    followed by a Q-band deformation obtained by multiplication by ``C0^2``.
+    """
+
+    A, A_prime, p, p_prime = sp.symbols("A A_prime p p_prime")
     descent = sp.symbols("descent")
-    p = A**2 * U
-    p_prime = 2 * A * A_prime * U + A**2 * U_prime
-    q = q_scale * A**4 * V
-    q_prime = q_scale * (4 * A**3 * A_prime * V + A**4 * V_prime)
+    q_scale = -sp.Rational(9, 5)
     p_top = A**3
     p_top_prime = 3 * A**2 * A_prime
     q_top = q_scale * A**5
     q_top_prime = 5 * q_scale * A**4 * A_prime
-    bracket = sp.expand(
+
+    # For arbitrary p, not merely p divisible by A^2, this is the tangent to
+    # Q=(-9/5)*P^(5/3).  Its band is ten below the P band.
+    q_follow = -3 * A**2 * p
+    q_follow_prime = -3 * (2 * A * A_prime * p + A**2 * p_prime)
+    tangent_bracket = sp.expand(
         (15 - descent) * p * q_top_prime
         - 25 * p_prime * q_top
-        + 15 * p_top * q_prime
-        - (25 - descent) * p_top_prime * q
+        + 15 * p_top * q_follow_prime
+        - (25 - descent) * p_top_prime * q_follow
+    )
+    if tangent_bracket != 0:
+        raise AssertionError("the unrestricted top tangent identity failed")
+
+    # Retain the old ODE only as an explicitly restricted-slice regression.
+    U, U_prime, V, V_prime = sp.symbols("U U_prime V V_prime")
+    restricted_p = A**2 * U
+    restricted_p_prime = 2 * A * A_prime * U + A**2 * U_prime
+    restricted_q = q_scale * A**4 * V
+    restricted_q_prime = q_scale * (
+        4 * A**3 * A_prime * V + A**4 * V_prime
+    )
+    restricted_bracket = sp.expand(
+        (15 - descent) * restricted_p * q_top_prime
+        - 25 * restricted_p_prime * q_top
+        + 15 * p_top * restricted_q_prime
+        - (25 - descent) * p_top_prime * restricted_q
     )
     W = 5 * U - 3 * V
     W_prime = 5 * U_prime - 3 * V_prime
-    reduced = sp.expand(
+    restricted_reduction = sp.expand(
         q_scale
         * A**6
         * ((5 - descent) * A_prime * W - 5 * A * W_prime)
     )
-    if sp.expand(bracket - reduced) != 0:
-        raise AssertionError("the upper-descent operator reduction failed")
+    if sp.expand(restricted_bracket - restricted_reduction) != 0:
+        raise AssertionError("the restricted upper-descent ODE changed")
 
     rows: list[dict[str, object]] = []
-    for descent_value in range(1, 5):
-        root_parameters = 2 if descent_value <= 2 else 3
-        vanishing_power = 2 if descent_value <= 2 else 1
-        required_order = (6, 5, 3, 2)[descent_value - 1]
-        constructed_order = 5 - descent_value + vanishing_power
-        if constructed_order != required_order:
-            raise AssertionError("the upper root-band terminal order changed")
-        if root_parameters + vanishing_power - 1 != 3:
-            raise AssertionError("the upper root-band degree bound changed")
-        layer = 40 - descent_value
+    source_centralizer_powers: list[int] = []
+    formal_negative_powers: list[int] = []
+    for descent_value in range(1, 36):
+        p_band = p_bands[15 - descent_value]
+        q_band = q_bands[25 - descent_value]
+        p_u, p_vanishing, p_degree = band_factor_data(p_band)
+        q_u, q_vanishing, q_degree = band_factor_data(q_band)
+
+        # C0=t^5*(w-1)^2*R(w), deg R=2.  Therefore C0^2*p lies
+        # in the exact Q band.  The following quotient data prove the
+        # inclusion directly in the factored source bases.
+        if (p_u - q_u) % 5:
+            raise AssertionError("P/Q tangent bands lost their Kummer match")
+        quotient_w_power = (p_u - q_u) // 5
+        quotient_vanishing = p_vanishing + 4 - q_vanishing
+        image_degree = (
+            quotient_w_power + quotient_vanishing + 4 + p_degree
+        )
+        if min(quotient_w_power, quotient_vanishing) < 0:
+            raise AssertionError("C0^2 no longer maps the P band into Q")
+        if image_degree > q_degree:
+            raise AssertionError("C0^2 exceeded the Q source-degree bound")
+
+        # The q-only equation is
+        #   5*C0*q'-(25-delta)*C0'*q=0.
+        # Hence q^5 is a scalar multiple of C0^(25-delta).  The fixed
+        # (w-1)^2 factor of C0 proves that a source Laurent polynomial exists
+        # exactly for delta=5*j with 1<=j<=5, giving C0^(5-j).
+        centralizer_power: int | None = None
+        if descent_value % 5 == 0:
+            candidate_power = 5 - descent_value // 5
+            if candidate_power >= 0:
+                centralizer_power = candidate_power
+                source_centralizer_powers.append(candidate_power)
+            else:
+                formal_negative_powers.append(candidate_power)
+        centralizer_dimension = int(centralizer_power is not None)
+        kernel_dimension = p_band.dimension + centralizer_dimension
         rows.append(
             {
-                "layer": layer,
                 "descent": descent_value,
-                "homogeneous_ode": (
-                    f"{5-descent_value}*C0'*W-5*C0*W'=0"
+                "layer": 40 - descent_value,
+                "P_band": 15 - descent_value,
+                "Q_band": 25 - descent_value,
+                "P_band_dimension": p_band.dimension,
+                "Q_band_dimension": q_band.dimension,
+                "operator_rank": q_band.dimension - centralizer_dimension,
+                "kernel_dimension": kernel_dimension,
+                "arbitrary_P_follow_mode_dimension": p_band.dimension,
+                "Q_follow": "q=(-3)*C0^2*p",
+                "extra_source_centralizer": (
+                    None
+                    if centralizer_power is None
+                    else f"C0^{centralizer_power}"
                 ),
-                "valuation_at_t_zero": (
-                    f"ord(W)=7*{5-descent_value}/5"
+                "formal_negative_centralizer": (
+                    f"C0^{5-descent_value//5}"
+                    if descent_value in (30, 35)
+                    else None
                 ),
-                "consequence": "W=0 because the required valuation is nonintegral",
-                "new_root_band": (
-                    f"D_{descent_value}=t^{5-descent_value}*u^{descent_value}*"
-                    f"(u^5-1)^{vanishing_power}*S_{descent_value}(u^5)"
-                ),
-                "new_root_band_dimension": root_parameters,
             }
         )
 
-    # At descent five the homogeneous equation is W'=0.  Its constant mode
-    # is represented by C0^2 in P band 10 and commutes with Q_top=C0^5.
-    extra_mode = sp.expand(
-        10 * A**2 * q_top_prime
-        - 25 * (2 * A * A_prime) * q_top
-    )
-    if extra_mode != 0:
-        raise AssertionError("the layer-35 C0^2 mode is not closed")
-    rows.append(
-        {
-            "layer": 35,
-            "descent": 5,
-            "homogeneous_ode": "-5*C0*W'=0",
-            "valuation_at_t_zero": "ord(W)=0",
-            "consequence": (
-                "W is constant; besides a five-parameter root correction "
-                "D_5 in k[u^5] of degree at most 20, one C0^2 mode survives"
-            ),
-            "new_root_band": "D_5=S_5(u^5), deg(S_5)<=4",
-            "new_root_band_dimension": 5,
-            "non_common_power_mode": "lambda*C0^2 in P band 10",
-            "non_common_power_mode_dimension": 1,
-        }
-    )
+    if source_centralizer_powers != [4, 3, 2, 1, 0]:
+        raise AssertionError("the nonnegative centralizer list changed")
+    if formal_negative_powers != [-1, -2]:
+        raise AssertionError("the formal negative resonance list changed")
+    if [rows[index - 1]["kernel_dimension"] for index in range(1, 6)] != [
+        6,
+        6,
+        7,
+        7,
+        10,
+    ]:
+        raise AssertionError("the corrected first-five kernel profile changed")
+
     return {
-        "operator_reduction": {
-            "substitution": "p=C0^2*U, q=(-9/5)*C0^4*V",
-            "W": "5*U-3*V",
-            "descent_r_equation": (
-                "(5-r)*C0'*W-5*C0*W'=known lower-layer forcing"
-            ),
-            "top_root_order": "ord_t(C0)=7",
-        },
-        "classified_layers": rows,
-        "outcome": (
-            "layers 39 through 36 force common-root continuation; layer 35 "
-            "is the first genuine mode and contains lambda*C0^2"
+        "correction": (
+            "the former common-root continuation used the unproved "
+            "divisibilities p%C0^2=0 and q%C0^4=0; it is only a restricted "
+            "slice, not the exact source-band kernel"
         ),
-        "remaining_unclassified_zero_layers": [34, 5],
-        "remaining_unclassified_zero_layer_count": 30,
+        "exact_source_band_factorization": (
+            "V_ell=t^ell*u^j0*(u^5-1)^nu*QQ[u^5]_(<=N-nu)"
+        ),
+        "unrestricted_tangent_identity": {
+            "P_top": "C0^3",
+            "Q_top": "(-9/5)*C0^5",
+            "arbitrary_P_band": "p",
+            "forced_Q_follow": "q=(-3)*C0^2*p",
+            "multiplication_closure": (
+                "C0^2 has source degree 50, height 2, and band 10; "
+                "it maps every exact P band into the paired Q band"
+            ),
+        },
+        "q_only_kernel_theorem": {
+            "equation": "5*C0*q'-(25-delta)*C0'*q=0",
+            "fifth_power_identity": "q^5=constant*C0^(25-delta)",
+            "source_kernel_condition": (
+                "delta=5*j with 1<=j<=5; generator C0^(5-j)"
+            ),
+            "fixed_factor_certificate": (
+                "C0 contains (u^5-1)^2, so fifth-power valuations force "
+                "5|delta; negative powers cannot be Laurent polynomials"
+            ),
+        },
+        "source_centralizer_modes": ["C0^4", "C0^3", "C0^2", "C0", "1"],
+        "formal_but_not_source_kernel_modes": [
+            {"descent": 30, "layer": 10, "mode": "C0^-1", "role": "lambda"},
+            {"descent": 35, "layer": 5, "mode": "C0^-2"},
+        ],
+        "r3_rank_profile": rows,
+        "first_five_exact_kernel_dimensions": [6, 6, 7, 7, 10],
+        "restricted_divisible_slice": {
+            "assumption": "p=C0^2*U and q=(-9/5)*C0^4*V",
+            "W": "5*U-3*V",
+            "equation": "(5-delta)*C0'*W-5*C0*W'=0",
+            "warning": "the exact source-band equations do not force this slice",
+        },
+        "fitting_handoff": (
+            "at nonlinear descent delta, let T_delta(q)="
+            "5*C0*q'-(25-delta)*C0'*q on the exact Q band; the new P "
+            "columns lie in im(T_delta), so solvability of the known forcing "
+            "is rank([T_delta|forcing])=rank(T_delta), equivalently the "
+            "corresponding maximal-minor/Fitting condition"
+        ),
+        "outcome": (
+            "layers 39 through 36 do not force source-root continuation; "
+            "the first five tangent kernels have dimensions 6,6,7,7,10. "
+            "The layer-35 extra mode is the commuting C0^4 term, while the "
+            "formal lambda*C0^-1 resonance is at layer 10 and is not an "
+            "independent source-band kernel"
+        ),
+        "remaining_unclassified_zero_layers": [39, 5],
+        "remaining_unclassified_zero_layer_count": 35,
+    }
+
+
+def family_tangent_theorem() -> dict[str, object]:
+    """Record the corrected tangent and resonance formulas for every F2 r."""
+
+    r, delta = sp.symbols("r delta", integer=True, positive=True)
+    m = 2 * r - 1
+    p_layer = 5 * r - delta
+    q_layer = 5 * m - delta
+    if sp.expand(q_layer - p_layer - 5 * (m - r)) != 0:
+        raise AssertionError("the family follow-band identity changed")
+    if sp.expand(r + (m - r) - m) != 0:
+        raise AssertionError("the family source-degree identity changed")
+    if sp.expand(5 * (r + m) - 10 * r - 5 * (r - 1)) != 0:
+        raise AssertionError("the lambda-layer formula changed")
+
+    samples: list[dict[str, object]] = []
+    for r_value in range(2, 9):
+        m_value = 2 * r_value - 1
+        top_layer = 5 * (3 * r_value - 1)
+        maximum_zero_descent = 5 * (3 * r_value - 2)
+        source_powers = list(range(m_value - 1, -1, -1))
+        negative_powers = list(range(-1, -r_value, -1))
+        if len(source_powers) != m_value:
+            raise AssertionError("the source centralizer count changed")
+        if len(negative_powers) != r_value - 1:
+            raise AssertionError("the negative resonance count changed")
+        if top_layer - 10 * r_value != 5 * (r_value - 1):
+            raise AssertionError("a sampled lambda layer changed")
+        if top_layer - maximum_zero_descent != 5:
+            raise AssertionError("the sampled zero window changed")
+        samples.append(
+            {
+                "r": r_value,
+                "m": m_value,
+                "top_layer": top_layer,
+                "zero_descent_interval": [1, maximum_zero_descent],
+                "source_centralizer_powers": source_powers,
+                "formal_negative_powers": negative_powers,
+                "lambda_descent": 10 * r_value,
+                "lambda_layer": 5 * (r_value - 1),
+                "target_descent": top_layer - 4,
+            }
+        )
+
+    return {
+        "parameters": "r>=2, m=2*r-1",
+        "top_layers": {
+            "P": "5*r",
+            "Q": "5*m",
+            "bracket": "5*(r+m)=5*(3*r-1)",
+        },
+        "arbitrary_follow_mode": {
+            "P_band": "5*r-delta",
+            "Q_band": "5*m-delta",
+            "formula": "q=-B_r*(m/r)*C0^(m-r)*p",
+            "source_closure": (
+                "m-r=r-1, so multiplication adds source degree 25*(r-1), "
+                "height r-1, and band 5*(r-1)"
+            ),
+        },
+        "q_only_equation": (
+            "5*C0*q'-(5*m-delta)*C0'*q=0; equivalently "
+            "q^5=constant*C0^(5*m-delta)"
+        ),
+        "source_centralizer_resonances": (
+            "delta=5*j, 1<=j<=m, with generator C0^(m-j)"
+        ),
+        "formal_negative_resonances": (
+            "delta=5*(m+k), 1<=k<=r-1, with formal mode C0^(-k); "
+            "none is a homogeneous Laurent-polynomial source kernel"
+        ),
+        "lambda_location": {
+            "mode": "C0^-1",
+            "descent": "5*(m+1)=10*r",
+            "layer": "5*(r-1)",
+            "interpretation": (
+                "lambda can only arise through nonlinear forced cancellation "
+                "with the F tail, not as an independent exact source-band mode"
+            ),
+        },
+        "target": {
+            "layer": 4,
+            "descent": "5*(3*r-1)-4=15*r-9",
+        },
+        "samples": samples,
+    }
+
+
+def nonlinear_first_defect_audit() -> dict[str, object]:
+    """Use the next four rows to classify the first non-root r=3 defect."""
+
+    h, C = sp.symbols("h C", nonzero=True)
+    p1, p2, p3, p4, p5 = sp.symbols("p1 p2 p3 p4 p5")
+    normalized_tail = sum(
+        coefficient * h**index / C**3
+        for index, coefficient in enumerate((p1, p2, p3, p4, p5), 1)
+    )
+    formal_q = sp.series(
+        -sp.Rational(9, 5)
+        * C**5
+        * (1 + normalized_tail) ** sp.Rational(5, 3),
+        h,
+        0,
+        6,
+    ).removeO()
+    q_coefficients = [
+        sp.factor(sp.expand(formal_q).coeff(h, index))
+        for index in range(1, 6)
+    ]
+    expected_first_four = [
+        -3 * C**2 * p1,
+        -3 * C**2 * p2 - p1**2 / C,
+        -3 * C**2 * p3 - 2 * p1 * p2 / C + p1**3 / (9 * C**4),
+        -3 * C**2 * p4
+        - (2 * p1 * p3 + p2**2) / C
+        + p1**2 * p2 / (3 * C**4)
+        - p1**4 / (27 * C**7),
+    ]
+    if any(
+        sp.cancel(actual - expected) != 0
+        for actual, expected in zip(q_coefficients, expected_first_four)
+    ):
+        raise AssertionError("the first nonlinear fractional-power rows changed")
+
+    # At a multiplicity-two prime pi of C, the only valuation below C^2 that
+    # survives rows two and three is v_pi(p1)=3.  Scaling h=pi^3*s leaves the
+    # quadratic residue 1+a*s+b*s^2.  Rows four and five have the following
+    # primitive numerators.  They have no common solution with a nonzero.
+    s, a, b = sp.symbols("s a b")
+    local_series = sp.series(
+        (1 + a * s + b * s**2) ** sp.Rational(5, 3), s, 0, 6
+    ).removeO()
+    coefficient_four = sp.factor(sp.expand(local_series).coeff(s, 4))
+    coefficient_five = sp.factor(sp.expand(local_series).coeff(s, 5))
+    numerator_four = a**4 - 9 * a**2 * b + 27 * b**2
+    numerator_five = 7 * a**4 - 60 * a**2 * b + 135 * b**2
+    if sp.expand(coefficient_four - sp.Rational(5, 243) * numerator_four) != 0:
+        raise AssertionError("the double-prime fourth residue changed")
+    if sp.expand(
+        coefficient_five + sp.Rational(1, 729) * a * numerator_five
+    ) != 0:
+        raise AssertionError("the double-prime fifth residue changed")
+    resultant = sp.factor(sp.resultant(numerator_four, numerator_five, b))
+    if resultant != 1701 * a**8:
+        raise AssertionError("the double-prime residue resultant changed")
+
+    # The target descent is 36.  If the first non-root defect has spacing k,
+    # all rows 2k,...,5k occur before the target for k<=7, so the same local
+    # argument forces it back into C^2.  At k=8, row 4k=32 is still zero but
+    # the target intervenes before row 5k=40; only numerator_four is forced.
+    target_descent = 36
+    killed_first_defects = [
+        k for k in range(1, 8) if 5 * k < target_descent
+    ]
+    if killed_first_defects != list(range(1, 8)):
+        raise AssertionError("the pre-target first-defect range changed")
+    # A nonnegative centralizer C0^(5-j) starts at absolute descent 5*j.
+    # On the exceptional double-prime scaling its leading valuation exceeds
+    # the P^(5/3) residue by j*(15/k-2).  This is positive for k<=7, so none
+    # of the commuting modes can cancel the two primitive residues above.
+    if [15 - 2 * k > 0 for k in range(1, 8)] != [True] * 7:
+        raise AssertionError("a pre-target centralizer reached the leading residue")
+    if 15 - 2 * 8 >= 0:
+        raise AssertionError("the descent-eight threshold changed")
+    candidate_ratio = sp.Symbol("candidate_ratio")
+    candidate_equation = sp.expand(
+        numerator_four.subs({a: 1, b: candidate_ratio})
+    )
+    if candidate_equation != 27 * candidate_ratio**2 - 9 * candidate_ratio + 1:
+        raise AssertionError("the first residual ratio equation changed")
+    if sp.discriminant(candidate_equation, candidate_ratio) != -27:
+        raise AssertionError("the first residual discriminant changed")
+
+    return {
+        "formal_particular_solution": "Q=(-9/5)*P^(5/3)",
+        "first_rows": {
+            "q1": str(q_coefficients[0]),
+            "q2": str(q_coefficients[1]),
+            "q3": str(q_coefficients[2]),
+            "q4": str(q_coefficients[3]),
+        },
+        "divisibility_rows": [
+            "C0 divides p1^2",
+            "C0^4 divides p1*(p1^2-18*C0^3*p2)",
+        ],
+        "simple_prime_consequence": (
+            "at every multiplicity-one prime of C0, rows 2 and 3 force "
+            "v(p1)>=2"
+        ),
+        "double_prime_consequence": {
+            "rows_2_and_3": (
+                "either v(p1)>=4 or the exceptional valuation is "
+                "v(C0)=2, v(p1)=3, v(p2)=0"
+            ),
+            "row_4_numerator": str(numerator_four),
+            "row_5_numerator_after_removing_nonzero_a": str(numerator_five),
+            "resultant_in_b": str(resultant),
+            "consequence": (
+                "when rows four and five are both zero, the exceptional "
+                "double-prime valuation is impossible"
+            ),
+        },
+        "nonlinear_root_recovery": (
+            "if the first non-root P defect occurs at descent k<=7, all five "
+            "required multiples precede the target descent 36, so it is "
+            "forced back into the C0^2 root slice"
+        ),
+        "centralizer_separation": (
+            "a C0^(5-j) mode has exceptional-prime valuation gap "
+            "j*(15/k-2) over the primitive P^(5/3) residue; this is positive "
+            "for k<=7 and changes sign first at k=8"
+        ),
+        "forced_source_root_through_descent": 7,
+        "first_exact_residual_candidate": {
+            "descent": 8,
+            "P_band": 7,
+            "reason": (
+                "rows 16,24,32 precede the target, but target descent 36 "
+                "intervenes before the fifth-multiple row 40"
+            ),
+            "support": "only multiplicity-two primes of C0",
+            "local_valuations": "v(C0)=2, v(p8)=3, v(p16)=0",
+            "normalized_ratio": "y=b/a^2",
+            "residual_equation": "27*y^2-9*y+1=0",
+            "discriminant": -27,
+            "field": "QQ(sqrt(-3))",
+            "claim_boundary": (
+                "this is an exact local residual seed, not a reconstructed "
+                "global source pair or plane counterexample"
+            ),
+        },
     }
 
 
@@ -607,8 +989,11 @@ def build_payload() -> dict[str, object]:
         raise AssertionError("the B0 parameter count changed")
 
     return {
-        "schema": "plane-jc.f2-75-125-character-layers.v1",
-        "status": "exact-B0-envelope-and-recurrence-not-exhaustive-normal-form",
+        "schema": "plane-jc.f2-75-125-character-layers.v2",
+        "status": (
+            "exact-B0-envelope-recurrence-and-corrected-top-tangent;"
+            "not-exhaustive-normal-form"
+        ),
         "coordinate_and_recurrence": coordinate,
         "support_envelope_theorem": {
             "source_degree_bounds": {"P": 75, "Q": 125},
@@ -668,7 +1053,11 @@ def build_payload() -> dict[str, object]:
             },
         },
         "common_power_and_terminal_regression": common_power_regression(),
-        "upper_descent_classification": upper_descent_classification(),
+        "family_tangent_theorem": family_tangent_theorem(),
+        "upper_descent_classification": upper_descent_classification(
+            p_bands, q_bands
+        ),
+        "nonlinear_first_defect_audit": nonlinear_first_defect_audit(),
         "compressed_quadratic_system": {
             "generator_formula": (
                 "(ell*s-m*r)*alpha_(ell,i)*beta_(m,k)*"
@@ -707,19 +1096,25 @@ def build_payload() -> dict[str, object]:
                 "quadratic coefficient equation",
                 "the joint common-power top-band parameterization by one "
                 "normalized quadratic R",
-                "the exact upper descent through layer 35, including the "
-                "first surviving C0^2 mode",
+                "the corrected exact source-band tangent profile through all "
+                "35 zero layers, including the unrestricted P-follow modes",
+                "the proof that the formal C0^-1 and C0^-2 resonances are not "
+                "independent homogeneous source-band kernels",
+                "the nonlinear first-defect resultant, which forces source-root "
+                "continuation through descent 7 and isolates the first exact "
+                "local residual at descent 8",
             ],
             "not_proved": [
                 "that the B0 envelope is the exhaustive lower Newton support",
                 "the gamma-branch list for multiplicities (3,5)",
-                "the lower-band coefficient relations below layer 35",
+                "the nonlinear forced Fitting equations below the common top",
                 "inconsistency of the resulting system or exclusion of F2",
             ],
             "next_elimination": (
-                "propagate the layer-35 C0^2 mode into layer 34 on the "
-                "quadratic-R root strata; pivot if its forced de Rham class "
-                "does not yield an early inconsistency"
+                "retain every exact P-band variable and compile the known "
+                "nonlinear forcing against coker(T_delta), beginning with the "
+                "descent-8 double-prime ratio 27*y^2-9*y+1=0; the first "
+                "actual lambda location is descent 30 (layer 10)"
             ),
         },
         "software": {
@@ -762,7 +1157,15 @@ def main() -> None:
         "structurally active Keller rows",
     )
     print("PASS: the joint common-power top band is a two-parameter quadratic-R family")
-    print("PASS: layers 39..36 continue the common root; layer 35 has a C0^2 mode")
+    print(
+        "PASS: corrected first-five tangent kernels have dimensions "
+        "6,6,7,7,10 (the former 2,2,3,3,6 slice assumed divisibility)"
+    )
+    print("PASS: lambda*C0^-1 is at layer 10 and is not a source-band kernel")
+    print(
+        "PASS: nonlinear rows force root continuation through descent 7; "
+        "the first local residual is 27*y^2-9*y+1 at descent 8"
+    )
     print("PASS: the artifact remains explicitly short of an F2 exclusion")
 
 

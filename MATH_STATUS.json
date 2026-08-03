@@ -169,6 +169,43 @@
       "priority": "reference"
     },
     {
+      "id": "OD6BA",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Scoped ordinary-degree-six boundary-template exclusion",
+      "scope": "Over a characteristic-zero field, no polynomial Keller map of maximum ordinary coordinate degree at most six occurs in the following retained-coordinate templates: the normalized linear-quadratic factorization slice with b=1+ay and product outputs (ac,ae+bd,be); the balanced 2+2 quotient, elementary Cox multiplication cover, either standard resolution chart, or their plain two-chart gluing; the affine-linear two-reconstruction core with monomial kappa=S^2 coefficients in the minimal reciprocal chart; or the D^3 quartic plane core with the standard weighted source and a target Jacobian supported only on C=0, or with the standard reciprocal source and any z-linear clearing. In the first slice polynomiality gives c=1-3ay/2+a^2g, the product Jacobian is -g_z, Keller forces g=lambda*z+g0, and the last coordinate contains -2lambda*a^3*y^3*z, so the exact retained-gauge profile floor is (4,6,7); the floor persists through affine-linear left-right equivalence. The 2+2 quotient has class group Z/2; its Cox determinant is twice the resultant; both standard resolution charts retain the resultant divisor; and their gluing is A1 times the minimal cone resolution, contains closed exceptional P1 fibers, and is nonaffine. For monomial cubic reconstruction the Wronskian leaves only profiles (1,2) and (0,3): the first is impossible, and the second has exact pole obstructions for zero, constant nonzero, and nonconstant polynomial boundary jets, so no polynomial realization survives in the standard chart; before polynomiality its determinant already forces the degree-seven term P=mu*t^2*z+t*q0. For D^3, every pure-C standard weighted ledger would require the same divisor exponent to equal both 3 and 5, while every z-linear standard reciprocal lift forces q=q0+mu*t^4*z and the degree-eleven term mu*t^5*z. The nodal conductor square has one residual G_m gluing character, but no universal three-boundary relation-count theorem is claimed. This result does not classify all Keller maps of geometric degree three or four, all two-boundary signatures, arbitrary affine modifications, nonlinear left-right degree minimization, nonmonomial Wronskian profiles, or asymmetric and distributed target-ledger completions.",
+      "canonical_source": "extended-geometry/ORDINARY_DEGREE_SIX_BOUNDARY_AUDIT.md",
+      "dependencies": [
+        "F1",
+        "BCI1",
+        "TPR1",
+        "COND1",
+        "COND3"
+      ],
+      "checker": "scripts/verify_ordinary_degree_six_boundary_audit.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:5b69fc6a36f403fc596a525e5381dc9fe8c459dfe54a503180d6042756f9b012",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the unverified claim that the displayed boundary census exhausts every construction with at most two primitive boundary relations"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-KCOMP"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "TPA6",
       "kind": "theorem",
       "state": "proved",
@@ -677,11 +714,12 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Global Keller target-dimension and coordinate-degree minima",
-      "scope": "Determine whether the proposed programme definitions ktdim_k(S_N) and kdeg_(k,N)(m) are attained and compute any exact values or global lower bounds. URKC1 and the promoted universal maps give ed_k(S_N)<=ktdim_k(S_N)<=N and explicit coordinate-degree upper bounds. GTND1 gives an N-4-dimensional vertical boundary defect only for the clean quadratic-gauge compiler and therefore supplies no global lower bound for either invariant. A successful attack needs an obstruction functorial for every field-versal Keller realization, not merely a coefficient-torus invariant of one construction; resolvent degree remains a separate multistep complexity.",
+      "scope": "Determine whether the proposed programme definitions ktdim_k(S_N) and kdeg_(k,N)(m) are attained and compute any exact values or global lower bounds. URKC1 and the promoted universal maps give ed_k(S_N)<=ktdim_k(S_N)<=N and explicit coordinate-degree upper bounds. GTND1 gives an N-4-dimensional vertical boundary defect only for the clean quadratic-gauge compiler and therefore supplies no global lower bound for either invariant. OD6BA excludes ordinary coordinate degree at most six only in its named normalized factorization, balanced 2+2, monomial cubic-reconstruction, and elementary D^3 boundary templates; nonmonomial Wronskian profiles and asymmetric or distributed-ledger cases remain, so it too supplies no global degree lower bound. A successful attack needs an obstruction functorial for every field-versal Keller realization, not merely a coefficient-torus or retained-boundary invariant of one construction; resolvent degree remains a separate multistep complexity.",
       "canonical_source": "verified/GENERIC_TSCHIRNHAUS_NON_DESCENT.md",
       "dependencies": [
         "URKC1",
         "GTND1",
+        "OD6BA",
         "external: essential dimension of symmetric groups",
         "external: resolvent degree of symmetric groups"
       ],
@@ -5632,24 +5670,25 @@
       "id": "KIG6",
       "kind": "corollary",
       "state": "proved",
-      "title": "Normalized-boundary A4 assembly obstruction",
-      "scope": "The polynomial normalization of the A4 target cubic has an explicit determinant-one completion to an automorphism of A5. Nevertheless, composing the pure-target lift with this completion and the inverse two-mask blowdown is not polynomial: neither inverse-mask numerator is divisible by the new target cubic. Its rational Jacobian is the nonconstant quotient of the old and new cubic pullbacks. More generally, dominance and the chain rule show that any automorphic incidence rechart giving constant Jacobian must preserve the cubic divisor up to scalar, so it cannot move the generic old mask-zero section into that divisor. A surviving ordinary Keller construction must instead use a nonautomorphic incidence map alpha satisfying B(alpha_base)=u B(old) det(D alpha), both inverse-mask divisibilities, and reconstruction of the original A4 target field.",
+      "title": "Normalized-boundary and radial-incidence A4 obstructions",
+      "scope": "The polynomial normalization of the A4 target cubic has an explicit determinant-one completion to an automorphism of A5. Nevertheless, composing the pure-target lift with this completion and the inverse two-mask blowdown is not polynomial: neither inverse-mask numerator is divisible by the new target cubic. Its rational Jacobian is the nonconstant quotient of the old and new cubic pullbacks. More generally, dominance and the chain rule show that any automorphic incidence rechart giving constant Jacobian must preserve the cubic divisor up to scalar, so it cannot move the generic old mask-zero section into that divisor. Homogeneous scaling alpha_sc=(SP,SQ,SR,S,T) is a generically birational nonautomorphic solution of the corrected log-Jacobian equation B(alpha_base)=B(old) det(D alpha), but its first inverse mask has residue one after the visible S factor is removed. In fact, for arbitrary polynomial masks A,C, the exact determinant of (SP,SQ,SR,A,C) is S^2*((D A)C_T-A_T(D C)), with D=S*d_S-(P*d_P+Q*d_Q+R*d_R). The log identity forces the mask orders at m=(P,Q,R,S) to sum to at most one, while first-mask divisibility after the pure-target map forces ord_m(A)>=2; dominance of [N1:N2:H:(L/4)z] identifies m-adic order with W-order. Thus no radial-base incidence works in any polynomial degree. A surviving ordinary Keller construction must couple the three cubic base coordinates nonradially while satisfying the log identity, both inverse-mask divisibilities, and reconstruction of the original A4 target field.",
       "canonical_source": "extended-geometry/A4_NORMALIZED_BOUNDARY_ASSEMBLY_AUDIT.md",
       "dependencies": [
         "KIG5"
       ],
       "checker": "scripts/verify_a4_normalized_boundary_assembly.py",
-      "proof_type": "unclassified",
+      "proof_type": "hybrid",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:cd44da382d086c600dcb7393bcf03bbb2cf1fd318d86775a5f4749ad132e2ec8",
+      "artifact_hash": "sha256:0865ceb54a88c6e9d93238510d283b31f6c1ed1a03db7f434028456dc98b6f7d",
       "software_lock": [
         ".python-version",
         "requirements.txt"
       ],
       "supersedes_notes": [
-        "automorphic normalized-boundary incidence route proposed by KIG5"
+        "automorphic normalized-boundary incidence route proposed by KIG5",
+        "radial contraction of the cubic base as the first surviving nonautomorphic incidence class"
       ],
       "supersedes": [],
       "closes_problems": [],
@@ -6031,6 +6070,210 @@
       "artifact_hash": "sha256:fd0165a9c47c12088d78cca56e947774fdc8511efd8c6182aa5e383ca7791c85",
       "software_lock": [],
       "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "KIG20",
+      "kind": "example",
+      "state": "proved",
+      "title": "Decomposable absolute proper-nonabelian Keller checkpoint",
+      "scope": "Let F:A^3->A^3 be the foundational determinant-minus-two Keller map of geometric degree three and generic inverse monodromy S3. Then H=F composed with F is an explicit absolute polynomial Keller map with determinant four and geometric degree nine. The intermediate field k(F) gives three blocks of three sheets, so Mon(H) is contained in the proper wreath product S3 wr S3 in S9, while its action on the blocks has quotient S3. Hence the generic inverse monodromy of H is nonabelian and proper. The exact subgroup of the wreath product is not determined. This is a decomposable group-only checkpoint; it makes no atomicity, historical-priority, connected-rational-fiber, or prescribed-Frobenius claim.",
+      "canonical_source": "extended-geometry/S4_COLLISION_FRAME_KELLER_FRONTIER.md",
+      "dependencies": [
+        "F1"
+      ],
+      "checker": "scripts/verify_s4_collision_frame_keller_frontier.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:48789924f91cb840f82adc18552e5381452db6a4cd4027487bfe67a6cbc1ba75",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "KIG21",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Quartic collision-frame S4 edge cover and two-mask ledger",
+      "scope": "Factoring T^4+pT^2+qT+r into the displayed pair of monic quadratics gives Phi(p,a,m)=(p,am,((p+a^2)^2-m^2)/4), determinant -J/2, and resultant J=m^2+2a^2(p+a^2). The primitive a satisfies T^6+2pT^4+(p^2-4r)T^2-q^2, whose generic monodromy is S4 in its faithful degree-six action on unordered pairs, with stabilizer S2 times S2 and the complementary-edge block system. The quartic discriminant pulls back as (a^2+2p-2m)(a^2+2p+2m)J^2; the extra a in the primitive derivative 2aJ is a primitive-element conductor defect, not a ramification divisor. In target coordinates c=4r-p^2, the tiny map has determinant -x^3z and J=x^2z. Rank at the deepest collision excludes every one-normal zero-section-preserving Keller stabilization in all degrees. The inverse-transpose relative cotangent lift in two masks is rational with determinant one and retains the exact degree-six field. A polynomial target logarithmic matrix factors as T(Phi)=A0*H*A0^T, producing a polynomial two-mask log-Keller lift; because det(T)=-p*Delta/2, it is a relative Saito basis only after p is inverted. No ordinary polynomial Keller algebraization is asserted.",
+      "canonical_source": "extended-geometry/S4_COLLISION_FRAME_KELLER_FRONTIER.md",
+      "dependencies": [
+        "external: Dedekind cycle-type criterion and specialization of Galois groups",
+        "external: Saito determinant criterion for logarithmic derivations"
+      ],
+      "checker": "scripts/verify_s4_collision_frame_keller_frontier.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:48789924f91cb840f82adc18552e5381452db6a4cd4027487bfe67a6cbc1ba75",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the tiny normal form with its third target mislabeled as r rather than c=4r-p^2",
+        "the factor a in the sextic primitive derivative as a ramification divisor of Phi",
+        "the displayed target logarithmic matrix as a global Saito basis without inverting p"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "KIG22",
+      "kind": "corollary",
+      "state": "partial",
+      "title": "Collision-frame affine-source gates and mixed-incidence frontier",
+      "scope": "The symmetric relation mv-2au=1 is SL2: its source is smooth, factorial, has constant units, trivial Makar--Limanov invariant, full Derksen invariant, and is geometrically flexible, but its class L^3-L and its deformation retraction onto S^3 exclude affine three-space and every polynomial stabilization. For the general two-quadratic resultant rho=e^2-aeh+bh^2, the smooth level rho=1 has class L^3+L^2, while the asymmetric smooth level rho=h has class L^3 but class group Z/2. The repeated-root Bezout slice UA+VB=T^3 is the A2 surface xy=tau^3 times A^2, and the T^2 slice has a positive-dimensional singular locus. These are exact rejection tests, not a recognition theorem: UFD, units, ML, Derksen, flexibility, motivic, and topological invariants are necessary gates but do not by themselves prove a source is affine space. Together with BCI1, H14M1, COND3, and KIG6, the named separated, tensor, symmetric-Cox, and automorphic routes are closed. If all three coefficient outputs p,q,r are retained, the full determinant remains divisible by J, so at least one output must receive mask feedback; a need to modify two outputs is not proved. For each fixed degree and monomial support the remaining asymmetric mixed-incidence equations form a finite Groebner problem, but no universal degree bound or ordinary Keller factorization is known.",
+      "canonical_source": "extended-geometry/S4_COLLISION_FRAME_KELLER_FRONTIER.md",
+      "dependencies": [
+        "KIG21",
+        "BCI1",
+        "H14M1",
+        "COND3",
+        "KIG6",
+        "external: Nagata class-group localization theorem",
+        "external: flexibility of semisimple algebraic groups",
+        "external: Hodge--Deligne realization of the Grothendieck ring"
+      ],
+      "checker": "scripts/verify_s4_collision_frame_keller_frontier.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:48789924f91cb840f82adc18552e5381452db6a4cd4027487bfe67a6cbc1ba75",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "factoriality, trivial ML, or full Derksen invariant as sufficient affine-space recognition",
+        "the remaining mixed-incidence search as bounded without a fixed degree and support",
+        "two modified coefficient outputs as a proved consequence of the retained-block minor argument"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "KIG23",
+      "kind": "corollary",
+      "state": "partial",
+      "title": "Sharp A4 selector-plane strict model and rational infinity hierarchy",
+      "scope": "On the rational A4 selected-root chart, the sharp selector plane P<q0,q1,q3> has a common fixed K^3 component whose removal gives the degree-ten strict net 12*lambda*R0+3*mu*R1+4*nu*R3, with degrees (9,10,10) and gcd one. Root-chart field recovery makes an integral strict member birational to its horizontal norm curve. Absolute factorization over rational function fields proves geometric integrality of the generic plane member and of the generic nu=0 pencil member. The two fixed points at infinity have an exact rational-parameter tangent-cone hierarchy: the exceptional lines meet at [9:-4:0], an absolutely irreducible genus-ten curve, and the unique deepest rational point [65:-4:4] is an absolutely irreducible genus-nine curve. Thus the fixed-infinity degenerations found here do not yield a rational horizontal component. Separately, every one of the 864 primitive rational parameters of height at most six is absolutely irreducible, and the height-at-most-three genus census consists of 15 genus-twelve and 129 genus-fourteen curves. These height censuses are bounded experiments, not a classification: larger-height moving singularities or further affine-cluster degeneration remain open, and no affine-space complement or Keller map is constructed.",
+      "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+      "dependencies": [
+        "KIG18",
+        "KIG19",
+        "external: Singular absfact.lib and normal.lib"
+      ],
+      "checker": "scripts/verify_a4_sharp_selector_plane.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:45054677720ea557dd38268abb53f10e8403488446b20a31eba49f11fbf70e59",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the sharp A4 selector plane represented only by three isolated genus probes"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "KIG24",
+      "kind": "corollary",
+      "state": "partial",
+      "title": "A4 moving critical curve and first rational norm component",
+      "scope": "For the degree-ten strict A4 selector net of KIG23, the value-and-gradient determinant factors exactly as -54*M^2*D23, where D23 is irreducible over Q of degree 23 and has the displayed structured leading form. Its generic kernel map to the selector plane has primitive coordinate degrees (19,18,18). On M=0 the generic kernel is the nonexact selector q0; the only rank drops of the other columns are the universal fixed cluster and one conjugate quadratic pair whose conjugate kernel ratios have rational intersection q0, so M contributes no rational exact moving selector. The restriction D23(0,V)=8*(2V+3)^2*(4V+87)*(V^2+3V+9)^10 yields two exact rational selectors. The member [77:-16:-8] is absolutely irreducible of genus 12 and has new ordinary nodes at (0,-3/2) and [-2:1:0]. The member [103:-16:8] factors on the strict chart as 36*U*G9, where G9 is absolutely irreducible of genus 10. Its coefficient-plane norm factors as a rational conic a^2-4b^2-12b-36 and an absolutely irreducible genus-ten degree-14 component birational to G9. This is the first rational horizontal component found in the sharp selector plane, but the same selector retains the positive-genus residual and therefore fails the all-rational-component gate. KIG25 closes principal isolation of this conic for every positive multiplicity. The full parameter-plane image of D23 is not implicitized, and no affine-space complement or Keller map is constructed.",
+      "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+      "dependencies": [
+        "KIG23",
+        "external: Singular primdec.lib, absfact.lib, and normal.lib"
+      ],
+      "checker": "scripts/verify_a4_sharp_selector_plane.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:45054677720ea557dd38268abb53f10e8403488446b20a31eba49f11fbf70e59",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the moving singularities of the sharp A4 selector plane as wholly unlocated"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "KIG25"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "KIG25",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Purified A4 conic and all-multiplicity conductor obstruction",
+      "scope": "The rational conic component q2=a^2-4*b^2-12*b-36 of KIG24 has pure height-one root-incidence prime p=(q2,L), where L=2*T+3*a*b^2+6*b^3+9*a*b+27*a-162 and S103=16*(3*a-6*b+4)*L+12*(103*a-12*b^2-36*b-108)*q2. Exact elimination gives Res_T(P,L)=-3*q2*R10, with R10 absolutely irreducible of degree 10 and genus 2. On the rational root chart L=3*U*K^3*G5/H^3, where G5 is absolutely irreducible of degree 5 and genus 2. Writing 16*P=L*C-3*q2*R10, the simultaneous conormal coefficient-zero locus is two quadratic closed points, hence four geometric points, where p needs two generators. At the universal cluster, the conic meets the simple E2 component, which is the middle curve of the minimal A3 chain; its class is 2 in Z/4 and its local Cartier index is exactly 2. At the other quadratic pair, rho and B are units, sigma is a smooth conductor, and the selected root is exactly double with rank-two tangent cone. Two explicit root-chart preimages map to the same point with coefficient Jacobians -32/27 and -4, proving an ordinary two-branch conductor node. The pullbacks q2=U*K^2*J3/H^2 and L=3*U*K^3*G5/H^3 show that p is divisorial on the U=0 branch but only a transverse codimension-two incidence on the other; q2 meets the conductor transversely. Conductor matching plus the principal ideal theorem therefore forces every principal function vanishing on a positive multiple of p to acquire another height-one component. No positive principal divisor has support only p. This closes the rational conic route, but does not exclude a different rational-horizontal selector or construct a Keller map.",
+      "canonical_source": "extended-geometry/A4_ROOT_INCIDENCE_DERIVATIVE_SPLIT.md",
+      "dependencies": [
+        "KIG24",
+        "KIG15",
+        "external: Singular primdec.lib, absfact.lib, and normal.lib"
+      ],
+      "checker": "scripts/verify_a4_conic_principal_obstruction.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:49851b6d137373a889f25406c8f3fc9ce7aa96118b11855cbc7b2c01e98a1baa",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "coefficient-one principal isolation of the first rational A4 norm conic as untested",
+        "support-only positive multiples of the first rational A4 norm conic as open"
+      ],
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
@@ -11162,7 +11405,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:dba503b8a5b01a53a19b5a9cdae7bd2db360bc4f05da2dee1932cfec5642d9ac",
+      "artifact_hash": "sha256:b7604fad59db4864b5b9c7d8cdab4e593c25137583852e84459351dc2f708a2b",
       "software_lock": [],
       "supersedes_notes": [],
       "supersedes": [],
@@ -11189,7 +11432,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:623d3442027f2b225cd407a755b55e47ed814967ab17e7529d42caf56f033999",
+      "artifact_hash": "sha256:12342a40a73c52fe3965db3eb7fffd6df6e7f90d84a007f8f606f89d8b84d5cd",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -11422,7 +11665,8 @@
         "OP-GVC2-RP"
       ],
       "consumers": [
-        "GVC2ALL"
+        "GVC2ALL",
+        "GVC2S6T"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -11433,7 +11677,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Scale-compatible Hall/carry promotion for unrestricted binary GVC",
-      "scope": "Unrestricted GVC(2) would follow from the following exact promotion statement. At every Hall--jet descent stage, a tied initial shell which does not already lose support or have a separator must expose, for every scale N, a nonempty packet with one common radial factorial whose normalized rows are a fixed finite union of complete radial rows and congruence fibers pi_nu(p,q)=N*c_nu; the finite groups, labels, classes, and packet must be independent of N and of the good prime used for exposure, and pure vanishing must make the normalized packet sum zero in characteristic zero at every scale. Under this hypothesis, character orthogonality gives a finite equal-weight trace, GVC2FTS splits it, and Duistermaat--van der Kallen supplies support loss or a Laurent separator; the already proved terminal packet results then finish the descent. The current Hall--jet score theorem controls one prime and one order ell*d but leaves affine low-digit insertions over generally unbalanced high-digit quotients. GVC2WTD proves that fixed affine residues can cancel precisely through nonzero isoperiodic character clusters, and gives both an all-order affine trace counterexample and a factorial repeated-digit obstruction. Generic translation supplies a sharper route: a relative character twist flat on every Taylor edge is a scalar--torus phase and hence scale-compatible, while a nonflat twist has a minimal collinear-triple or unit-square curvature witness. The missing translation-curvature lemma must expose that witness, after differentiating the all-order period identity, with the same high-digit quotient; the existing augmented Bessel/beta atom determinant would then terminate it. Exact C2 sign-twist enumeration through degree 12 and depth 2d+4 finds no unexplained collision after scalar, torus, and reversal reduction. Complete C2 searches on the (2,2) and (3,2) binomial Taylor rectangles likewise find none through depths 12 and 14 after two-torus, reversal, and coordinate-exchange reduction. These computations are only bounded evidence. The remaining task is therefore to prove scale-compatible promotion, prove translation-curvature rigidity or otherwise make every surviving rank-one Cartesian isoperiodic cluster Hall-terminal, or lift such a cluster to a genuine GVC(2) counterexample. No unrestricted GVC(2) theorem or counterexample is currently claimed.",
+      "scope": "Unrestricted GVC(2) would follow from the following exact promotion statement. At every Hall--jet descent stage, a tied initial shell which does not already lose support or have a separator must expose, for every scale N, a nonempty packet with one common radial factorial whose normalized rows are a fixed finite union of complete radial rows and congruence fibers pi_nu(p,q)=N*c_nu; the finite groups, labels, classes, and packet must be independent of N and of the good prime used for exposure, and pure vanishing must make the normalized packet sum zero in characteristic zero at every scale. By de Bondt's commutator reduction it is enough after promotion to prove the shifted-power tails Lambda^m(P^(m+d))=0 for every fixed d; an arbitrary multiplier Q need not be carried through the final Hall calculation. Under the promotion hypothesis, character orthogonality gives a finite equal-weight trace, GVC2FTS splits it, and Duistermaat--van der Kallen supplies support loss or a Laurent separator; the already proved terminal packet results then finish the descent. The current Hall--jet score theorem controls one prime and one order ell*d but leaves affine low-digit insertions over generally unbalanced high-digit quotients. GVC2WTD proves that fixed affine residues can cancel precisely through nonzero isoperiodic character clusters, and gives both an all-order affine trace counterexample and a factorial repeated-digit obstruction. GVC2FG proves that common translation of the first Cartier ghost remembers only the total source exponent: a uniform centered-triple/Bessel pair is therefore invisible at every Hasse order. Consequently the former target of exposing a curvature atom through one translated first ghost is false. GVC2FG also proves that the all-scale factorial sequence recovers the positive multiplicity partition of a pure repeated ray. FTI1 upgrades this to every fixed finite packet: distinct canonical signed integer-affine factorial vectors are independent over exponential-rational coefficient sequences, so only same-vector trace classes can cancel once a scale-compatible packet is exposed. FTI1 does not provide that exposure or recover forgotten markings. GVC2PPT computes the projected two-colour Graver hierarchy through radial span seven. Its p=5,7,11,13 and e<=3 scalar tomography has no accidental finite-window collision: all 1,651 survivors are exact same-factorial-vector relations. Marked digits, carries, and C2,C3 traces leave precisely three span-seven orbits of the all-span primitive two-state family R_(s+6)*B_a*B_(a+1)=R_s*B_(a+3)*B_(a+4); a C4 character separates every member. GVC2S6T proves that, after promotion to any fixed finite-character packet, the complete C2,C3-blind fibre is a Franel line and two character-period rows force separation or strict support loss. Thus the six-step packet itself is no longer the obstruction. GVC2CRR proves uniformly that for span s, the consecutive C_q,C_(q+1) histograms with q=ceil(s/2) reconstruct every marked state modulo conformal sums of already-safe beta circuits. Hence marked same-vector separation and nonfree semigroup factorization are no longer separate gaps after fixed packet promotion; GVC2NFT independently verifies the smaller C2,C3,C4 signatures through span six. GVC2ASL now proves the state-level affine reduction: every p+r singleton-fibre difference conformally decomposes in one fixed Graver basis, exposed singleton marks have a finite prime-independent signed correction alphabet with explicit carry/unit formulas, and every unbounded branch repeats one fixed primitive move with positive density. Thus endlessly new prime-dependent primitive moves are not the obstruction. GVC2TTR proves that the proposed coefficient-blind finite-module inheritance lemma is false even with a common factorial weight: two free isoperiodic translates can cancel at every pure order, have no Graver move, and retain a mixed tail. Therefore the remaining implication must be Hall-specific and use the full Cartesian Taylor/derivative tower. GVC2TTR also closes its primitive one-direction tangent and eventual prime-character branches: the complete translated-binomial tangent kernel is exactly the flat torus direction, and every sufficiently large prime-order isoperiodic Taylor collision is flat. What remains is factorial-compatible common-high-quotient exposure for small or composite torsion and genuinely two-dimensional Taylor down-sets. Proving that corrected Cartesian promotion statement, or constructing a nonterminal rank-one Cartesian packet where it fails, is the only remaining route to unrestricted GVC(2) or a genuine binary counterexample. Exact C2,C3,C4 twist and rectangular searches remain bounded evidence outside the proved branch. No unrestricted GVC(2) theorem or counterexample is currently claimed.",
       "canonical_source": "extended-geometry/BINARY_GVC_UNIFORM_FACE_TERMINATION.md",
       "dependencies": [
         "GVCSS",
@@ -11446,6 +11690,14 @@
         "GVC2ERU",
         "GVC2FTS",
         "GVC2WTD",
+        "GVC2FG",
+        "FTI1",
+        "GVC2PPT",
+        "GVC2S6T",
+        "GVC2CRR",
+        "GVC2NFT",
+        "GVC2ASL",
+        "GVC2TTR",
         "GVC2F5S"
       ],
       "checker": null,
@@ -11466,6 +11718,342 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
+    },
+    {
+      "id": "GVC2FG",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "First-ghost source collapse and scaled-factorial ray rigidity",
+      "scope": "For A(z)=sum_e X_e(1+z)^(gamma_e) and every non-pure state n of total size p, the X^n coefficient of the first Cartier ghost (A^p-Phi_p(A))/p is ((p-1)!/product_e n_e!)(1+z)^(sum_e n_e gamma_e). Hence every normalized common-translation Hasse row depends only on the total source exponent and cannot distinguish decompositions with that total. The explicit states 2e_2+(p-2)e_3 and e_1+(p-1)e_3 have the same total 3p-2 for every prime p>=5 but differ by the centered-triple/Bessel lattice atom, disproving the proposed implication from one first ghost plus further common translations to an isolated curvature atom. Separately, equality of product_i(ka_i)! for every k>=1 determines the positive integer multiset {a_i}; thus pure repeated return rays are rigid at all scales. This theorem alone does not prove unrestricted GVC(2): it neither exposes a fixed marked packet nor distinguishes cross-side redistributions. GVC2CRR subsequently closes marked nonfree-semigroup separation after such promotion, leaving the promotion itself as GVC2ALL.",
+      "canonical_source": "extended-geometry/BINARY_GVC_FIRST_GHOST_SOURCE_COLLAPSE_AND_RAY_RIGIDITY.md",
+      "dependencies": [
+        "GVC2GSD",
+        "GVC2WTD"
+      ],
+      "checker": "scripts/verify_binary_gvc_first_ghost_source_collapse_and_ray_rigidity.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:0e19309297f5cef6f1e204f7121bce1c28fceded0555895094cba77b59845553",
+      "software_lock": [],
+      "supersedes_notes": [
+        "common translation of one first Cartier ghost can expose an isolated collinear-triple or unit-square curvature atom"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "GVC2ALL",
+        "OP-GVC2-RP"
+      ],
+      "consumers": [
+        "README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "FTI1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Gamma-affine trace independence and complete shift-orbit classification",
+      "scope": "For a positive-integer-slope gamma-affine ray G_A(N)=alpha_A^N*product_i Gamma(a_i*N+b_i)^(epsilon_i), define its finite signed gamma-orbit signature Sigma_A=sum_i epsilon_i*sum_(0<=u<a_i)[(b_i+u)/a_i] in Z[C/Z]. Two such rays differ by C*lambda^N*r(N), with C and lambda nonzero and r rational, if and only if their signatures agree. Therefore rays with distinct signatures are linearly independent over finite exponential-rational coefficient sequences. Gauss multiplication refines every factor to unit slope, so permutation, cancellation, Gauss refinement, integer translation of unit offsets, and exponential-rational rescaling generate every symmetry in this class. The integer-affine factorial theorem Phi_v(N)=product_a((aN)!)^(v_a) is the injective zero-offset special case. More generally, pushing the divisor of any rational hypergeometric shift quotient to C/Z gives the same complete constant-times-rational-coboundary classifier; for m-fold terms the orbit space is C/(mZ) and equal classes may differ by an explicit periodic exponential-polynomial factor. Positive rational slopes reduce to this m-fold case after taking a common denominator. The exact checker classifies 67,524 rational-offset gamma products into 66,140 classes, certifies 1,384 collisions, integrates 8,134 zero-sum orbit divisors, verifies 1,000 seeded signed transformations, and has an optional SymPy replay of all 1,706 configured equivalence identities. Legendre's formula also proves an exact characteristic-p obstruction: p-power slope towers collapse to primitive slopes plus linear drift and yield four-ray valuation kernels. The result applies to fixed scale-compatible Hall packets and certified first-order recurrence factors. For the SIC2C4 moments M_(d,r)=4^(rN)*Gamma(dN+3)*Gamma(rN+1)^2/Gamma(2rN+2), d>=4r, the signature is injective in (d,r), so distinct radial families cannot cancel. It does not expose such a Hall packet, distinguish markings inside one signature, classify p-free units or carries, decompose arbitrary holonomic multisums, or prove GVC(2).",
+      "canonical_source": "extended-geometry/FACTORIAL_TRACE_INDEPENDENCE.md",
+      "dependencies": [],
+      "checker": "scripts/verify_factorial_trace_independence.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4f0293da7ee704eea8becd99ddce814232dfb3389fe85a158037d76c4ad1b6bd",
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "GVC2ALL"
+      ],
+      "consumers": [
+        "GVC2ALL",
+        "README.md",
+        "extended-geometry/HOLONOMIC_HYPERGEOMETRIC_ALGORITHMS.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "GVC2PPT",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Span-seven projected adelic factorial tomography census",
+      "scope": "For the two-colour partition configuration R_i=(1,0,i), B_j=(0,1,j), 0<=i,j<=7, an exact Normaliz Lawrence-lifting computation gives 34,890 Graver relations, 6,601 after common level translation/dilation and side, colour, and reversal symmetries, and 6,401 mixed support-at-least-five primitive packet candidates on 3,107 projected support semigroups. At scales N=q*p^e for p in {5,7,11,13}, 1<=e<=3, 1<=q<=3, the scalar signature records total valuations and p-free units modulo p^3 independently from marked-side digits, carry positions, units, partitions, and C2,C3 group-ring character traces. Exactly 4,750 candidates are valuation-separated. The remaining 1,651 are precisely the exact all-scale scalar factorial-partition collisions, so there are no accidental finite-window adelic collisions and no candidate first separated only by a unit residue. Marked digit/carry data separate 221, and C2,C3 traces separate 1,427 more. The three surviving symmetry classes are exactly the span-seven orbits of the all-span family R_(s+6)*B_a*B_(a+1)=R_s*B_(a+3)*B_(a+4). Every member of this family is Graver primitive, has a two-state exact projected fibre, and has identical factorial, digit, carry, valuation, unit, and C2,C3 data at every scale; C4 always separates its operator marks. Among all 1,430 equal marked-partition relations, the first torsion separators are C2 for 1,244, C3 for 183, and C4 for 3. This is an exact bounded projected-scroll result. GVC2S6T subsequently closes its six-step survivor after promotion to any fixed finite-character packet; the census itself does not construct a pure-zero binary operator/polynomial pair, prove scale-compatible Hall promotion, prove unrestricted GVC(2), or give a GVC counterexample.",
+      "canonical_source": "extended-geometry/BINARY_GVC_PRIME_POWER_TOMOGRAPHY.md",
+      "dependencies": [
+        "GVC2QG",
+        "GVC2FG",
+        "FTI1",
+        "external: Normaliz 3.10.2 Hilbert-basis computation and the Lawrence-lifting characterization of Graver bases"
+      ],
+      "checker": "scripts/research_binary_gvc_prime_power_tomography.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a3fe6e029c79c4073875ad0b57964913b9026a518ffe7d458c2a1bbbcc1c7578",
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "GVC2ALL"
+      ],
+      "consumers": [
+        "GVC2ALL",
+        "GVC2S6T"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "GVC2S6T",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Fixed-character termination of the binary six-step packet",
+      "scope": "GVC2PPT identifies the universal projected relation R_(s+6)*B_a*B_(a+1)=R_s*B_(a+3)*B_(a+4), and GVC2WTD supplies the fixed-character exposure framework. Normalize its columns to R_6,R_0,B_0,B_1,B_3,B_4. At scale N, the complete color-count, radial-level, C2,C3-marked fibre containing its endpoint rays is exactly z_t=(N-t,t,N-t,N-t,t,t), 0<=t<=N. If U and V are the two endpoint channel products, its normalized factorial row is binom(2N,N)*sum_t binom(N,t)^3*U^(N-t)*V^t, equivalently a two-variable Laurent constant-term Franel row. For any fixed homomorphism to a finite abelian marking group, let h be the order of the relative endpoint class. The endpoint-containing marking fibres at scales h and 2h give U^h+V^h and U^(2h)+binom(2h,h)^3*U^h*V^h+V^(2h). In characteristic zero their common vanishing forces (2-binom(2h,h)^3)*U^(2h)=0 and hence U=V=0, which is strict channel-support loss. A nonzero relative class also separates the primitive endpoints at scale one. The canonical C4 operator marking has relative order two. Therefore every fixed finite-character promotion of the six-step family is character-separated, Hall-terminal in two character periods, or loses support. This does not prove that a prime-dependent affine Hall--carry shell factorial-compatibly exposes one fixed packet; that promotion remains GVC2ALL, and no unrestricted GVC(2) theorem or counterexample is claimed.",
+      "canonical_source": "extended-geometry/BINARY_GVC_PRIME_POWER_TOMOGRAPHY.md",
+      "dependencies": [
+        "GVC2PPT",
+        "GVC2WTD"
+      ],
+      "checker": "scripts/verify_binary_gvc_six_step_packet_termination.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:53e495f27ee0b4a10e22b39d3ecb026435f4840b1a7df214a446a6bdcbf6696e",
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "GVC2CRR",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "All-span consecutive-residue packet rigidity modulo beta circuits",
+      "scope": "For q>=2, let H_q record all residue-class sums of an integer vector on consecutive levels. On levels 0,...,2q-1, the joint map (H_q,H_(q+1)) is injective over Z. On levels 0,...,2q its kernel is generated by kappa_q=(1 repeated q times,0,-1 repeated q times). The proof identifies the histogram matrix with the vertex-edge incidence matrix of the path T_q-L_0-T_0-L_1-...-L_(q-1)-T_(q-1); the last edge creates exactly one cycle. Hence for any radial span s>=3, with q=ceil(s/2), two two-colour states having the same total level and the same C_q,C_(q+1) histograms on each colour are equal when s is odd. When s is even, their difference is a conformal sum of the q four-point beta returns R_i*B_(i+q+1)=R_(i+q+1)*B_i. Therefore every blind primitive return reduces to already-safe circuits, and the multiset of radial and consecutive-residue atom signatures is injective on every nonfree factorization semigroup modulo atomwise beta moves. This theorem is uniform in the span and multiplicities. It applies after one fixed marked packet has been inherited; it does not prove scale-compatible Hall/carry promotion, unrestricted GVC(2), or a counterexample.",
+      "canonical_source": "extended-geometry/BINARY_GVC_NONFREE_FACTORIZATION_TOMOGRAPHY.md",
+      "dependencies": [
+        "GVC2UFT"
+      ],
+      "checker": "scripts/research_binary_gvc_nonfree_factorization.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3de1e09a8928bbfaeeef1905162e4c59bc145fa38f3653b3175278b05670c6b4",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "marked same-vector separation as a separate unresolved all-span nonfree-semigroup problem after fixed packet promotion"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "GVC2ALL",
+        "OP-GVC2-RP"
+      ],
+      "consumers": [
+        "GVC2ALL",
+        "README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "GVC2NFT",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Nonfree-factorization tomography through radial span six",
+      "scope": "For every normalized mixed support-at-least-five projected return profile through radial span four, an exact Normaliz calculation computes the scaled-fibre Hilbert basis and the rank and integer kernel of the atom-plus-side-refined-factorial matrix. Among 65 profiles, 52 factorial maps are injective, one collision lattice is internal reversal, and 12 have nonreversal same-vector relations. The 11 collision profiles with at most 20 atoms have 308 factorial-compatible primitive Graver moves: packet partitions separate 15, C2 separates 207, and C3 separates 86. The first factorial-only square has R={0,4}, B={0,1,2,4}, counts (1,3), radial vector (8,8), and identical weight binom(3k,k)*(8k)!^2 on every atom; C3 separates it. Atom signatures separate all 65 profiles, including the two deferred large Graver lattices. Signature-only Hilbert censuses give 400 profiles at span five and 1,469 at span six, with no unresolved partition/C2/C3/C4 atom collision. These are exact bounded projected-semigroup computations and not evidence by extrapolation for unrestricted GVC(2); GVC2CRR supplies the independent all-span theorem, while affine Hall/carry promotion remains open.",
+      "canonical_source": "extended-geometry/BINARY_GVC_NONFREE_FACTORIZATION_TOMOGRAPHY.md",
+      "dependencies": [
+        "GVC2PPT",
+        "FTI1",
+        "GVC2CRR",
+        "external: Normaliz 3.10.2 Hilbert-basis computation and the Lawrence-lifting characterization of Graver bases"
+      ],
+      "checker": "scripts/research_binary_gvc_nonfree_factorization.py",
+      "proof_type": "reproduction",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3de1e09a8928bbfaeeef1905162e4c59bc145fa38f3653b3175278b05670c6b4",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "GVC2ALL"
+      ],
+      "consumers": [
+        "GVC2ALL"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "GVC2ASL",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Affine singleton-fibre Graver localization and exposed signed-digit stabilization",
+      "scope": "Let A be any fixed integer channel configuration with a homogenizing all-one row, fix a mark h and a bounded low state a, and set x_p=p*e_h+a. Every nonnegative state y in the same A-fibre has difference z=y-x_p in ker_Z(A), and z conformally decomposes into the fixed Graver basis of A with negative support contained in {h} union supp(a). Along any prime sequence, either the differences range over a finite set or one fixed primitive Graver move occurs with unbounded multiplicity on a subsequence. If the marked column is uniquely exposed, an exact exposing-form identity bounds all off-mark mass independently of p, so for all sufficiently large p the whole fibre is p*e_h+B for one finite prime-independent set of signed low corrections B. For b_h>=0 the multinomial has carry zero and unit r!/(b_h!*product_(i!=h)b_i!) mod p; for b_h=-t<0 it has carry one and p-free unit (-1)^(t-1)*r!*(t-1)!/product_(i!=h)b_i! mod p. If two binary low radial digits add to p+R, then t!*(p+R-t)!=(-1)^(t-R)*t^(falling R+1) mod p, so their entire long carry interval is exactly minus the (R+1)-st derivative of its coefficient polynomial at -1; individual radial carry positions are not independent prime-varying data. The vertex hypothesis is sharp: on levels 0,1,2 the states (0,p,0) and ((p-1)/2,1,(p-1)/2) share mass and level for every odd prime and differ by ((p-1)/2)*(1,-2,1), an unbounded repetition of the centered-triple Graver move; swapping them between the two sides preserves the complete scalar factorial weight. Hence prime-dependent state combinatorics reduces exactly to bounded signed corrections or positive-density repetition of fixed primitive moves. De Bondt's commutator reduction shows independently that the arbitrary GVC multiplier may be replaced by the shifted-power targets Lambda^m(P^(m+d)) for every fixed d; this removes unrelated affine multiplier weights but does not promote the pure shell. GVC2TTR subsequently disproves the coefficient-blind module-only inheritance formulation and replaces it by a Hall-specific Cartesian translation-curvature target, closing the primitive one-direction tangent and eventual prime-character branches but not small/composite torsion or the two-dimensional common-high-quotient case.",
+      "canonical_source": "extended-geometry/BINARY_GVC_AFFINE_SINGLETON_LOCALIZATION.md",
+      "dependencies": [
+        "GVC2UFT",
+        "external: de Bondt's shifted-power reduction for the Generalized Vanishing Conjecture, arXiv:1206.2836, Theorem 1 and Corollary 2"
+      ],
+      "checker": "scripts/research_binary_gvc_frobenius_carry.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b7604fad59db4864b5b9c7d8cdab4e593c25137583852e84459351dc2f708a2b",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "prime-dependent singleton-state combinatorics as an independent obstruction after fixing the additive Hall-shell configuration"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "GVC2ALL"
+      ],
+      "consumers": [
+        "GVC2ALL",
+        "README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "GVC2HMF",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Global Hilbert-module normal form for affine singleton fibres",
+      "scope": "For a fixed integer channel configuration A with an all-one homogenizing row, mark h, and bounded low state a, set B=(-A*e_h|A), M_a={(p,y) in N^(1+s):B(p,y)=A*a}, and H_h={(N,z) in N^(1+s):B(N,z)=0}. The slice of M_a at p is the singleton fibre of p*e_h+a. Dickson's lemma gives finitely many componentwise-minimal base solutions m_i and proves M_a=union_i(m_i+H_h). Gordan's lemma gives a finite Hilbert basis h_j of H_h, so every state is m_i+sum_j k_j*h_j. For any fixed additive packet projection pi, equal pi-data between two Hilbert factorizations in one translate lies in the toric ideal of the fixed matrix with columns pi(h_j) and conformally decomposes in its Graver basis. Fixed additive marks, fixed congruence classes, and fixed carry cases can be included using integer rows and nonnegative slack variables. This is a set-theoretic normal form only: factorial weights are not multiplicative in Hilbert factorizations, translates can overlap through module syzygies, and vanishing of a specialized linear shell need not descend to one translate. Thus the theorem makes the state and projected-factorization alphabet globally finite but does not prove linear-to-toric Hall inheritance or unrestricted GVC(2).",
+      "canonical_source": "extended-geometry/BINARY_GVC_AFFINE_SINGLETON_LOCALIZATION.md",
+      "dependencies": [
+        "GVC2ASL",
+        "external: Dickson's lemma and Gordan's lemma"
+      ],
+      "checker": "scripts/research_binary_gvc_frobenius_carry.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b7604fad59db4864b5b9c7d8cdab4e593c25137583852e84459351dc2f708a2b",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "a prime-by-prime Hilbert or Graver alphabet for a fixed affine singleton configuration"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "GVC2TTR",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Primitive Cartesian translation-tangent and eventual prime-character rigidity",
+      "scope": "For d>=2 and 1<=r<d with gcd(d,r)=1, define T_N(b)=sum_(j=0)^d b_j*binom(d,j)*binom(d*(N-1),r*N-j). If T_N(b)=0 for every N>=1, then b_j=c*(j-r) for one scalar c. After division by the central binomial row, the proof reduces to rational functions R_k(x)=(r*x)!*((d-r)*x)!/((r*x-k)!*((d-r)*x+k)!); their positive and negative pole sets meet only at -1, so descending residues leave a one-dimensional kernel, and t*(d/dt)(1+t)^d-r*(1+t)^d supplies its flat torus generator. Consequently, for each primitive (d,r), all but finitely many prime character orders q have exact torsion rigidity: if h_u(t)=sum_j zeta_q^(u_j)*binom(d,j)*t^j and [t^(r*N)]h_u(t)^N=[t^(r*N)]h_v(t)^N for every N, then v_j-u_j=c*(j-r) mod q and h_v(t)=zeta_q^(-c*r)*h_u(zeta_q^c*t). The cyclotomic proof expands at pi=1-zeta_q and reduces a fixed nonzero characteristic-zero row minor modulo q. Separately, the module-only Hall inheritance proposal is false: two free module translates weighted by (N!)^2 times the opposite constant-term rows of z+z^(-1) and z^2+z^(-2) cancel at every pure order, have no internal Graver move, and are distinguished by the fixed multiplier z^(-1) at every odd order. This is not a rank-one Cartesian Hall packet or a GVC counterexample. It proves that the remaining GVC2ALL promotion theorem must use the full Cartesian Taylor/derivative tower. Small or composite torsion, two-dimensional Taylor down-sets, and common-high-quotient Hall inheritance remain open.",
+      "canonical_source": "extended-geometry/BINARY_GVC_TRANSLATION_TANGENT_RIGIDITY.md",
+      "dependencies": [
+        "GVC2HMF",
+        "GVC2WTD",
+        "external: elementary cyclotomic ramification at 1-zeta_q"
+      ],
+      "checker": "scripts/verify_binary_gvc_translation_tangent_rigidity.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ce1a7fd15341fd2db1327394c4c1f5c95065516dde1ca4afaea6c39bd46ac8d7",
+      "software_lock": [],
+      "supersedes_notes": [
+        "a coefficient-blind finite Hilbert-module idempotent as the final binary Hall inheritance lemma"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "GVC2ALL"
+      ],
+      "consumers": [
+        "GVC2ALL",
+        "README.md"
+      ],
+      "invalidates_assumptions": [
+        "factorial weighting plus Hilbert-module and Graver finiteness alone forces a vanishing shell to inherit one module translate or internal Graver block"
+      ],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "GVC2TGI",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Primitive three-level affine ghost identity and all-width cyclotomic separation",
+      "scope": "Let u,v be coprime positive integers, s=u+v, and use the collinear levels 0,v,s with the middle level marked. At prime order p>s, the complete mass-p, level-pv fibre is n_t=(u*t,p-s*t,v*t), 0<=t<=floor(p/s). After deleting the pure singleton, dividing by p times the marked coefficient to the p-th power, and writing X=A^u*C^v/B^s, its ghost is G_(p;u,v)(X)=sum_(t=1)^floor(p/s) (p-1)!/((u*t)!*(v*t)!*(p-s*t)!)*X^t modulo p. Termwise this coefficient is (-1)^(s*t-1)*binom(s*t,u*t)/(s*t) modulo p. After normalizing f(z)=1+a*z^(-v)+c*z^u with X=a^u*c^v, the full series is CT_z log(f)=sum_(t>=1)(-1)^(s*t-1)*binom(s*t,u*t)*X^t/(s*t), and G_(p;u,v)=(CT_z(f^p)-1)/p modulo p. If a root of unity zeta_n survives at every prime of Q(zeta_n) over every rational p>max(s,3) with p not dividing n, then (u,v,zeta_n)=(1,1,1). Indeed, at the first admissible prime q_1 the ghost is linear, except that G_(5;1,1)=X*(X-1); if earlier admissible primes divide n, then phi(n)>=product_(i<j)(q_i-1)>floor(q_j/s)=deg G_(q_j;u,v), contradicting cyclotomic divisibility. Thus every everywhere-good Galois-stable torsion candidate is separated uniformly except for the already-safe centered root. The exact bounded census over 12 coprime types, primes through 43, the stated rational window, cyclotomic orders through 80, and 2,139 primitive irreducibles of degrees two and three and height four finds no further survivor. An arbitrary finite exceptional-prime set, the non-torsion algebraic classification, and linear Hall inheritance remain open; no unrestricted GVC(2) theorem or counterexample is claimed.",
+      "canonical_source": "extended-geometry/BINARY_GVC_AFFINE_SINGLETON_LOCALIZATION.md",
+      "dependencies": [
+        "GVC2ASL",
+        "GVC2GSD",
+        "external: Wilson theorem",
+        "external: Bertrand's postulate and elementary cyclotomic reduction"
+      ],
+      "checker": "scripts/research_binary_gvc_ghost_shell.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:12342a40a73c52fe3965db3eb7fffd6df6e7f90d84a007f8f606f89d8b84d5cd",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
     },
     {
       "id": "GVC2F5S",
@@ -12297,7 +12885,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Binary GVC theorem and rank-efficient Laplacian polarization",
-      "scope": "For a homogeneous operator Lambda=A(partial), the separable form f=A(zeta)P(z) is rank one and its contractions are Lambda^m(P^m) and Lambda^m(QP^m). GVCSS proves the homogeneous binary case. The degree-five and degree-six programs, GVC2UFT, GVC2F5S, GVC2O33, GVC2FCG, GVC2GSD, GVC2QG, GVC2WR, and GVC2ERU successively reduce the genuinely nonhomogeneous case to factorial-compatible Hall/carry inheritance among finitely many equal-radial trace components. GVC2TTD gives the regular trace model. GVC2FTS uses repeated equal base-p digits at completely split primes to separate every scale-compatible finite trace, and GVC2WTD classifies affine weighted traces by isoperiodic moment classes. The unresolved binary step GVC2ALL is to promote every proportional-depth Hall shell to a fixed scale-compatible trace, prove translation-curvature rigidity for every surviving rank-one Cartesian isoperiodic cluster, or obtain a GVC(2) counterexample. Flat relative Taylor twists are already scalar--torus phases and hence scale-compatible; the missing nonflat case is common-quotient exposure of its minimal collinear-triple or unit-square curvature atom. Exact C2 sign-twist enumeration through degree 12 and depth 2d+4, together with complete (2,2) and (3,2) rectangular searches through depths 12 and 14, is bounded evidence only. The proved degree-bounded inputs are GVC2D5F, GVC2D5Q4, GVC2D5Q31, GVC2D5Q2, GVC2D5U, GVC2D6Q5, GVC2D6R2, GVC2D6R3, GVC2D6R4, GVC2D6R5, and GVC2D6U. Degree seven remains a regression target. A separate open route is ordinary-Laplacian compression: replace the third-order Dvorsky operator by a quadratic constant-coefficient operator with few auxiliaries. DVG4 excludes the canonical one-pair completion at the second pure moment. No successful quadraticization or improved ordinary-Laplacian counterexample endpoint is currently proved.",
+      "scope": "For a homogeneous operator Lambda=A(partial), the separable form f=A(zeta)P(z) is rank one and its contractions are Lambda^m(P^m) and Lambda^m(QP^m). GVCSS proves the homogeneous binary case. The degree-five and degree-six programs, GVC2UFT, GVC2F5S, GVC2O33, GVC2FCG, GVC2GSD, GVC2QG, GVC2WR, and GVC2ERU successively reduce the genuinely nonhomogeneous case to factorial-compatible Hall/carry inheritance among finitely many equal-radial trace components. GVC2TTD gives the regular trace model. GVC2FTS uses repeated equal base-p digits at completely split primes to separate every scale-compatible finite trace, and GVC2WTD classifies affine weighted traces by isoperiodic moment classes. GVC2FG disproves the proposed common-quotient exposure of a minimal curvature atom through one translated first ghost: all normalized rows retain only the total source exponent. Its all-scale factorial theorem still makes pure repeated rays rigid. FTI1 separates unequal factorial vectors after fixed promotion; GVC2PPT and GVC2S6T isolate and terminate the first all-scale six-step packet; and GVC2CRR proves that consecutive marked residue groups separate every remaining nonfree factorization modulo safe beta circuits at arbitrary span. GVC2NFT independently verifies the smaller C2,C3,C4 signatures through span six. The unresolved binary step GVC2ALL is therefore solely to promote every proportional-depth Hall shell to one fixed scale-compatible marked packet, or obtain a GVC(2) counterexample. Exact C2 sign-twist enumeration through degree 12 and depth 2d+4, together with complete (2,2) and (3,2) rectangular searches through depths 12 and 14, is bounded evidence only. The proved degree-bounded inputs are GVC2D5F, GVC2D5Q4, GVC2D5Q31, GVC2D5Q2, GVC2D5U, GVC2D6Q5, GVC2D6R2, GVC2D6R3, GVC2D6R4, GVC2D6R5, and GVC2D6U. Degree seven remains a regression target. A separate open route is ordinary-Laplacian compression: replace the third-order Dvorsky operator by a quadratic constant-coefficient operator with few auxiliaries. DVG4 excludes the canonical one-pair completion at the second pure moment. No successful quadraticization or improved ordinary-Laplacian counterexample endpoint is currently proved.",
       "canonical_source": "extended-geometry/TWO_VARIABLE_GVC_REPRESENTATION_PROGRAM.md",
       "dependencies": [
         "DVG1",
@@ -12319,6 +12907,12 @@
         "GVC2TTD",
         "GVC2FTS",
         "GVC2WTD",
+        "GVC2FG",
+        "FTI1",
+        "GVC2PPT",
+        "GVC2S6T",
+        "GVC2CRR",
+        "GVC2NFT",
         "GVC2ALL",
         "GVC2NHO",
         "GVC2D5F",
@@ -14476,7 +15070,7 @@
       "kind": "reproduction",
       "state": "proved",
       "title": "F2 (75,125) character-resolved B0 Laurent-layer classification",
-      "scope": "In the F2 chart t=X*y, z=y^-1, the exact coordinate bracket is [t,z]_(X,y)=-z, so [p_i(t)z^i,q_j(t)z^j]=(i*p_i*q_j'-j*p_i'*q_j)z^(i+j). Consequently the common-power top is layer 40, the target X^4=t^4*z^4 is layer 4, and the 35 intervening zero layers are exactly 39 through 5. Total-degree bounds 75 and 125 together with the two known terminal halfspaces give finite translated band spaces via full-rank binomial jet matrices. In the 35-layer window the exact B0 over-envelope has 665 band-pair incidences and 978 linear parameters after the terminal jets, or 973 after the five endpoint normalizations. Every quadratic coefficient equation is reconstructed by the compressed identity (ell*s-m*r)*t^(ell+m)*(1+t)^(r+s-1); the replay records 165,980 active generators, 5,625 raw scalar coefficient rows, and 5,348 structurally active rows after the jets, split into five Kummer characters. Jointly imposing the P and Q common-power source bands proves H(t)=(1+u+u^2+u^3+u^4)^2*R(u^5), u=1+t, where R is quadratic, R(1)=1/25, and its leading coefficient is nonzero. This exact two-parameter top-band cut lowers the normalized window to 959 parameters. The triangular upper descent then forces layers 39 through 36 to continue the common root: after p=C0^2*U, q=(-9/5)*C0^4*V and W=5U-3V, descent r has homogeneous equation (5-r)*C0'*W-5*C0*W'=0, whose required t-valuation is nonintegral for r=1,...,4. At layer 35, W is constant and one genuine lambda*C0^2 mode survives in P band 10, so no unit ideal occurs in the first five zero layers. Layers 34 through 5 and the exhaustive gamma/polygon theorem remain open; F2 is not excluded.",
+      "scope": "In the F2 chart t=X*y, z=y^-1, the exact coordinate bracket is [t,z]_(X,y)=-z, so [p_i(t)z^i,q_j(t)z^j]=(i*p_i*q_j'-j*p_i'*q_j)z^(i+j). Consequently the common-power top is layer 40, the target X^4=t^4*z^4 is layer 4, and the 35 intervening zero layers are exactly 39 through 5. Total-degree bounds 75 and 125 together with the two known terminal halfspaces give finite translated band spaces via full-rank binomial jet matrices. In the 35-layer window the exact B0 over-envelope has 665 band-pair incidences and 978 linear parameters after the terminal jets, or 973 after the five endpoint normalizations. Every quadratic coefficient equation is reconstructed by the compressed identity (ell*s-m*r)*t^(ell+m)*(1+t)^(r+s-1); the replay records 165,980 active generators, 5,625 raw scalar coefficient rows, and 5,348 structurally active rows after the jets, split into five Kummer characters. Jointly imposing the P and Q common-power source bands proves H(t)=(1+u+u^2+u^3+u^4)^2*R(u^5), u=1+t, where R is quadratic, R(1)=1/25, and its leading coefficient is nonzero. Its root band is the translation of the exact degree-25 source polynomial x*(x*y^5-1)^2*R(x*y^5). The former upper-descent claim is corrected: p=C0^2*U and q=(-9/5)*C0^4*V were unproved divisibility restrictions. For arbitrary exact P-band p at descent delta, q=-3*C0^2*p is an exact Q-band follower, so every P-band direction survives. The q-only kernel obeys q^5=c*C0^(25-delta); its source centralizers are C0^4,C0^3,C0^2,C0,1 at descents 5,10,15,20,25. Hence the first-five kernel dimensions are 6,6,7,7,10, not 2,2,3,3,6. Formal C0^-1 and C0^-2 occur at layers 10 and 5 but are not independent homogeneous source kernels; lambda can only arise through nonlinear F-tail cancellation. The exact nonlinear handoff is rank([T_delta|forcing])=rank(T_delta), equivalently a maximal-minor/Fitting condition. The next four fractional-power rows have primitive double-prime residues E4=a^4-9*a^2*b+27*b^2 and E5=7*a^4-60*a^2*b+135*b^2 with resultant 1701*a^8. They force every first non-root P defect through descent 7 back into the source-root slice. The first exact local residual is at descent 8, supported at multiplicity-two primes, with normalized ratio y satisfying 27*y^2-9*y+1=0 and discriminant -27. Coupling this QQ(sqrt(-3)) seed to the target row, the remaining nonlinear descents, and the exhaustive gamma/polygon theorem remains open; F2 is not excluded.",
       "canonical_source": "plane-jc/F2_75_125_DERIVATION.md",
       "dependencies": [
         "PASB1"
@@ -14486,12 +15080,15 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:f8125826eb40604f2d4ee4ace1d4c1433e8de44d6aea0a2cc49f2fafb0c67725",
+      "artifact_hash": "sha256:bcf5012285c6442301dafafd05f1f4646c8049f5c48439d3c51db747e4ed20ba",
       "software_lock": [
         ".python-version",
         "requirements.txt"
       ],
-      "supersedes_notes": [],
+      "supersedes_notes": [
+        "the exact source bands force p to be divisible by C0^2 and q by C0^4 in the first upper descents",
+        "layers 39 through 36 force continuation of a polynomial source common root"
+      ],
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
@@ -14569,6 +15166,35 @@
       "priority": "reference"
     },
     {
+      "id": "PF2TF1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "F2 terminal residue family and geometric A_(2r) monodromy",
+      "scope": "For every F2 parameter r>=2, the forced final type-I edge has the unique normalized block s=X^(7r-4)*y^(2r-1), P=X^4*y*(1+s), Q=-X*(1+A_r*s+B_r*s^2), with A_r=2r/(r-1), B_r=2r^2/((r-1)(2r-1)), and [P,Q]=X^4. In t=X*y,z=y^-1 coordinates its primitive source normal is (5r-3,4-7r), with pole orders (r,2r-1); the target ray is (2r-1,r-1), and the transverse index is one. The residue map h_r=s*(1+s)^(2r-1)/(1+A_r*s+B_r*s^2)^r has degree 2r, logarithmic derivative 1/(s*(1+s)*(1+A_r*s+B_r*s^2)), and passport (2r-1,1)|(r,r)|(3,1^(2r-3)). An explicit product-one branch triple generates geometric A_(2r): for r>=3 this follows from primitivity, the literal 3-cycle, and Jordan's theorem, while r=2 is direct. The defining polynomial has discriminant ((-1)^(r+1)/(2r-1)^(2(r-1)^2-1))*u^(2r-2)*(1-B_r^r*u)^2 and squareclass (-1)^(r+1)*(2r-1), determining arithmetic A_(2r) versus S_(2r). This is a theorem about the terminal edge forced by the F2 corner-chain family; it does not prove the full modified-Laurent chart, attach the row globally, or exclude any F2 member.",
+      "canonical_source": "plane-jc/F2_MODIFIED_LAURENT_FAMILY.md",
+      "dependencies": [
+        "external: F2 regular-corner table and complete-chain terminal-edge theorem"
+      ],
+      "checker": "plane-jc/cas/verify_f2_terminal_residue_cover.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:baa8fe7abdcf1652bc0a8636437b9505ebc6838bf2eebaf2492c03684fd63cbf",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "PF2TR1",
       "kind": "theorem",
       "state": "proved",
@@ -14583,7 +15209,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:49d43f3c2f7b872f73705fa30914b45b0e019c6989e4e0254c182eaca8c55459",
+      "artifact_hash": "sha256:baa8fe7abdcf1652bc0a8636437b9505ebc6838bf2eebaf2492c03684fd63cbf",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -14618,7 +15244,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:49d43f3c2f7b872f73705fa30914b45b0e019c6989e4e0254c182eaca8c55459",
+      "artifact_hash": "sha256:baa8fe7abdcf1652bc0a8636437b9505ebc6838bf2eebaf2492c03684fd63cbf",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -14649,12 +15275,41 @@
       "priority": "reference"
     },
     {
+      "id": "PF2SG1",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Conditional A6 simple-spectator permutation gluing",
+      "scope": "Assume that each of the two simple squarefree-R Kummer orbits gives one transposition on the same compact target P1 as the terminal A6 packet, that the A6 triple fixes every outside sheet, and that there are no other branch cycles. The meridian product then makes the two transpositions equal; requiring a spectator, transitivity and Riemann-Hurwitz force degree seven and genus zero. Exact enumeration gives 30 normalized tuples, six simultaneous-conjugacy classes, and 30,240 fully labelled tuples, all with monodromy S7. The certified endpoint/interior markings refine these classes: five anchors can specialize to the interior five-cycle point over zero, all six to an interior denominator-root point over infinity, and the strongest naive condition that the anchor avoid both toric source endpoints leaves three classes of signature (5,3,1). Repeated star connectors give product-one transitive genus-zero S_(6+k) witnesses for every k>=1, and an abstract two-packet S12 witness also survives. Thus the coarse and marked permutation filters do not contradict the row. Sheet specialization is not a toroidal node-gluing theorem, and the Kummer orbits have not been proved to be transpositions or to share this target component, so this is a conditional finite enumeration, not an F2 exclusion.",
+      "canonical_source": "plane-jc/F2_A6_SIMPLE_SPECTATOR_GLUING.md",
+      "dependencies": [
+        "PF2KO1",
+        "PF2TR1"
+      ],
+      "checker": "plane-jc/cas/verify_f2_a6_simple_spectator_gluing.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:da51622439e8cf9c4fcaec685dfee584ecba6f8b927f01ea83c0c2d6e04984c6",
+      "software_lock": [
+        ".python-version"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "PF2MS1",
       "kind": "reproduction",
       "state": "partial",
       "title": "Conditional reduced F2 modified-system generator",
-      "scope": "Assume the unproved common-power ansatz P=C^r and Q=C^(2r-1)+lambda*C^(-1)+F, with leading x-degree d for C and the declared three-term terminal F block. Under that hypothesis, exact formal-series arithmetic reconstructs the finite coefficient system, triangularly removes coefficients forced by polynomiality of P, and records canonical residual digests. The r=2, d=2 and d=3 cases reproduce the two published (50,75) modified systems. The r=3 cases produce 14- and 22-equation candidate systems for (75,125). This computation does not prove that the r=3 ansatz, gamma branches, lower supports, or F-tail ledger are forced, and it is not an F2 exclusion.",
-      "canonical_source": "plane-jc/F2_75_125_DERIVATION.md",
+      "scope": "Assume the unproved common-power ansatz P=C^r and Q=C^(2r-1)+lambda*C^(-1)+F, with leading x-degree d for C and bracket x-degree h in the chosen modified chart. Exact formal-series arithmetic reconstructs the finite window through t^(d(3r-1)-1), triangularly removes d(2r-1)-1 coefficients forced by polynomiality of P, and changes to B=trunc(A^r) coordinates. The r=2,d=2 and d=3 cases reproduce the published (50,75) left-hand sides. The r=3 cases inspect 14 and 22 coefficient functions, not scalar variables. For h=2 their true residues are respectively one 16-by-16 determinant and a four-generator 21-minor/Fitt_3 ideal; for the certified X^4 chart h=4 they have zero and two generic residue equations. For every r,d, the endpoint section B=1+a*t^(dr), lambda=-(2r-1)(r-1)*a^2/(2r^2) kills the full compact Q block, proving every compact residue ideal proper; its first lower nonzero core coefficient occurs at row dr+d. On every congruence section B in K[y,y^(-1)][t^d], with 0<=h<=dr-2, the first bracket-visible coefficient vanishes whenever d does not divide h+1. Thus for the certified X^4 weight and dr>=6, only d=5 can escape this congruence gate; in particular the proposed r=3,d=2 and d=3 congruence sections are excluded. For r=3,d=2 the unrestricted h=2 residue has a rational fourfold with an explicit smooth coefficient-torus point, nonzero lambda, and nonzero first F coefficient. For r=3,d=3 a smooth fourfold meets the full coefficient torus over Q((epsilon)); on B in Q[t^3], the residue reduces to cubic invariants A=u^2-3v and D=2u^3-9uv+27w, with lambda=-5(3A^3+D^2)/6561, F_-6=5A^2D/6561, and reduced bracket (3X+u)lambda'+3F_-6'. If its leading h=2 bracket coefficient is a nonzero Laurent monomial mu*y^s, the integration constant in F_-6 is impossible and every survivor has s+1=7*ell, lambda=0, A=a*y^(2*ell), D=b*y^(3*ell), and 3*a^3+b^2=0. The first sharp member B=1+y^2*t^6+y^3*t^9/3, F_-6=5*y^7/81 solves all eight compiled fiber rows and has leading bracket coefficient 35*y^6/9. A separate Toeplitz determinant records fixed-(lambda,F) coefficient-map ramification and is not confused with the residue ideal. The calculation does not prove the common-power chart, d=2 or d=3 exhaustiveness, the lower Laurent-y ledger, or the F-tail reconstruction; it narrows but does not exclude (75,125) or the F2 family.",
+      "canonical_source": "plane-jc/F2_MODIFIED_LAURENT_FAMILY.md",
       "dependencies": [
         "PF2L1"
       ],
@@ -14663,7 +15318,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:170c8fd6e001c5bb2b10265626ff1ab93b446145ae6f232a0a11b138236da22a",
+      "artifact_hash": "sha256:5f0cdcadd5dc173e7741459a87300d2c7ad7952998efdb398ca0d46b64cbb3a6",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -14673,6 +15328,45 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "PF2MCB1",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "F2 modified-chart source projection and top-gap obstruction",
+      "scope": "The complete F2 generated-corner identity fixes gamma=2 and the historical d=3 chart. The monomial substitution X=xi*y^2, Y=xi^(-2)*y^(-7) sends the bracket X^4 to -3*xi^2*y^2, derives xi-degrees 3*r and 3*(2*r-1), and forces Tschirnhaus support {y^(-2),y^(-5)}. Exact translated binomial-jet matrices show that at r=3 the nonnegative-xi P image has rank 74 in 83 possible positions and the Q image rank 196 in 215 positions; an explicit primitive P top-diagonal relation evaluates to 3470256 at the formal terminal resonance, so that point is outside the source image. If the literal polynomial projection is additionally required to preserve the target bracket, its highest diagonal forces B=H^r and D=H^(2*r-1) for a cubic H. Source membership becomes the gap equations [v^q]L(v)^n=0 for 2*n<q<=3*n. At r=3 the three P gaps define an Artinian algebra of length 27 with leading ideal (c1,c2,c3^27), and the first Q gap is a unit in it: its degree-26 residue is coprime to the degree-27 eliminant and has nonzero resultant/multiplication determinant. Thus the combined projected top-gap ideal is (1). The r=2 combined ideal and the r=4 P-only ideal are also (1); an optional exact QQ Singular replay gives the same P-only conclusion at r=5. This exactly excludes every branch of the literal bracket-preserving polynomial projection and proves that naive negative-tail deletion cannot be the missing modified-Laurent theorem. The full two-parameter Laurent seed has the exact degree-25 polynomial source lift x*(x*y^5-1)^2*(1/25+rho1*(x*y^5-1)+rho2*(x*y^5-1)^2). The corrected source tangent has first-five kernel dimensions 6,6,7,7,10; its descent-five extra is the commuting C0^4 term, while formal lambda*C0^-1 is at layer 10 and is not an independent source kernel. It does not exclude the full Laurent F2 row; nonlinear F-tail cancellation is still required. The six-dimensional terminal tangent calculation is only an ambient 80-position support-box audit, not a source-compatible component.",
+      "canonical_source": "plane-jc/F2_MODIFIED_CHART_BRIDGE.md",
+      "dependencies": [
+        "PF2L1"
+      ],
+      "checker": "plane-jc/cas/verify_f2_modified_chart_bridge.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4933215016152cb1649b450edffe0f0abac132f681e8a04a6fc40e66bcc3d3e7",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the 80-position r=3 P support mask is an independent scalar coefficient space",
+        "the formal terminal resonance is a residual source-projection candidate",
+        "literal deletion of all negative xi powers preserves the F2 top bracket"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "plane-jc/README.md",
+        "plane-jc/cas/README.md",
+        "plane-jc/F2_75_125_DERIVATION.md",
+        "plane-jc/F2_MODIFIED_LAURENT_FAMILY.md"
+      ],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
@@ -16998,10 +17692,10 @@
     {
       "id": "OP-HC4-SCHUR",
       "kind": "open_problem",
-      "state": "parked",
+      "state": "open",
       "title": "Mixed or coisotropic Schur route to HC(4)",
-      "scope": "Find or exclude a genuinely mixed source--dual canonical chart or non-coordinate coisotropic embedding that descends a known collision to four Hessian variables. Use the weaker exact scalar gate det M(mu+lambda*A,w)=constant or first test the sufficient simultaneous corank condition rank(M)<=m-r before evaluating the full bordered graph. Constant target splittings are excluded for the root-engineered gauge families; SDX2 excludes every pure-source codimension-one affine block even after nonlinear polynomial recharting; pure univariate higher-degree repairs are impossible; HC4MCP1 excludes the first 312 exact one-step quadratic/cubic mixed Hamiltonian and nonlinear coisotropic-graph charts; HC4MCP2 excludes the 600 deduplicated noncommuting length-two mixed quadratic words; HC4MCP3 excludes the 324 normalized unit-time quadratic--cubic words in both orders; HC4MCP4 excludes the 216 two-coordinate-pivot words in the fixed-order signed quadratic--cubic box; HC4MCP5 excludes arbitrary nonzero coefficients in all 54 shared-dual support/sign patterns of that fixed degree order; HC4MCP6 classifies all reverse-order parent-preserving coefficient lines and proves generic reduced rank four on all 102 coordinate two-pivot pairs; HC4MCP7 excludes the 162 unit quadratic--cubic group commutators at the parent-Hessian gate; HC4MCP8 excludes the 96 smallest reciprocal mixed-line coisotropic graphs in the declared slope, time, and scalar-repair box directly at the weaker graph-specialized gate. Scaled commutators, different Hamiltonian supports, arbitrary rational coisotropic parameters, oblique affine directions outside the reciprocal family, general longer words, mixed coefficient-dependent pivots outside the classified families, and general non-coordinate coisotropic embeddings remain.",
-      "canonical_source": "SCHUR_DESCENT_CONTINUATIONS.md",
+      "scope": "Starting from the scaled five-variable Meng--Yang family, find or exclude a genuinely nonlinear mixed source--dual or coisotropic reduction that retains a gradient collision in four Hessian variables. HC4MYA1 closes every affine four-plane restriction, HC4MYG3 closes every graph through degree three, and HC4MYG4 closes every graph y3=R(x1,x2,y1,y2) of degree at most four over every characteristic-zero field. HC4MYGJ1 strengthens this to arbitrary-degree graphs whose complete 1-jet along x1=0 has degree at most four and makes the degree-five plane determinant a uniquely solvable normal-jet equation. For a degree-five graph, HC4MYG5J forces the x1-free quintic trace to kappa*x2^5, kills the y2-dependence of its quartic trace, and leaves an explicit conic in the next face. Over Q, HC4MYG5N further forces kappa nonzero and confines the full quintic top to two constant-kernel cone charts. HC4MYG5K closes the first partial_y2-kernel transverse slice when the displayed cubic and quartic trace terms are fixed and the complete degree-at-most-two lower trace T_le2(x2,y1,y2) is arbitrary. The generic y1*y2 branch gives a three-equation unit ideal, the y2^2 term is killed by a square in the forced quartic normal jet, and the exceptional x2*y2 branch ends in two coprime transverse polynomials. HC4MYG5S excludes, over every characteristic-zero field, the complete sparse trace kappa*x2^5+d*x2^3*y1+rho*x2^2*y2 with arbitrary allowed off-plane terms; an exact collision-containing graph can flatten the determinant on x1=0, but its first transverse coefficient is nonzero. The general degree-five graph problem therefore remains open in broader cubic and quartic trace terms on the first chart, the other rational top chart, and possible algebraic zero-kappa branches, with the joint degree-greater-than-three first-transverse ideal as the immediate target. HC4MYR89 separately excludes collisions for every relative-linear unit-pivot correction C(x1,x2) in SL2(Q[x1,x2]) of degree at most 89. Beyond these classes lie nonlinear generating families not globally represented by one graph, nonconstant mixed source--dual 2-by-2 Schur pivots, higher nonlinear canonical transformations, and reductions creating a different collision. SDX2 and HC4MCP1 through HC4MCP8 already close the declared affine-block and short-word boxes. This inherited-collision route is distinct from OP-HC4-D5: HC4TC1 closes the coordinate q2+h3+h4+h6 chart, while HC4CD5 identifies the parallel quintic--sextic Hessian-metric divisibility frontier.",
+      "canonical_source": "HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md",
       "dependencies": [
         "SDX1",
         "SDX2",
@@ -17014,7 +17708,18 @@
         "HC4MCP5",
         "HC4MCP6",
         "HC4MCP7",
-        "HC4MCP8"
+        "HC4MCP8",
+        "HC4MYA1",
+        "HC4MYG3",
+        "HC4MYG4",
+        "HC4MYGJ1",
+        "HC4MYG5J",
+        "HC4MYG5N",
+        "HC4MYG5K",
+        "HC4MYG5S",
+        "HC4MYR89",
+        "HC4TC1",
+        "HC4CD5"
       ],
       "checker": null,
       "proof_type": "not-applicable",
@@ -17024,13 +17729,71 @@
       "artifact_hash": null,
       "software_lock": [],
       "supersedes_notes": [],
+      "forbidden_attack_classes": [
+        {
+          "attack": "Affine Meng--Yang four-plane descent",
+          "reason": "Every affine normal chart is either Hessian-degenerate or has an unavoidable nonconstant determinant coefficient.",
+          "witnesses": [
+            "HC4MYA1"
+          ]
+        },
+        {
+          "attack": "Degree-at-most-three single-graph descent",
+          "reason": "Two exact line restrictions give a triangular coefficient contradiction before collision equations are imposed.",
+          "witnesses": [
+            "HC4MYG3"
+          ]
+        },
+        {
+          "attack": "Degree-at-most-four single-graph descent",
+          "reason": "The full two-slope jet ends in two coprime quadratic equations for the same cubic graph coefficient, so no characteristic-zero quartic graph survives.",
+          "witnesses": [
+            "HC4MYG4"
+          ]
+        },
+        {
+          "attack": "A quartic graph 1-jet plus an arbitrary x1-squared tail",
+          "reason": "The plane determinant depends only on the graph trace and first normal jet, so every x1-squared tail is invisible to the already contradictory quartic plane calculation.",
+          "witnesses": [
+            "HC4MYGJ1"
+          ]
+        },
+        {
+          "attack": "Rational quintic graph tops outside the two constant-kernel cone charts",
+          "reason": "The leading plane faces and the four-variable zero-Hessian cone theorem force a nonzero vertical quintic trace and one of two constant-kernel normal forms.",
+          "witnesses": [
+            "HC4MYG5N"
+          ]
+        },
+        {
+          "attack": "The partial_y2-kernel quintic trace with the complete degree-at-most-two lower trace",
+          "reason": "For arbitrary T_le2(x2,y1,y2), the generic branch gives a repair-invariant unit ideal, the y2^2 coefficient is killed by a quartic-normal square, and the exceptional x2*y2 branch has two transverse polynomials with nonzero resultant; the denominator chart is separately excluded.",
+          "witnesses": [
+            "HC4MYG5K"
+          ]
+        },
+        {
+          "attack": "The sparse v2 quintic trace kappa*x2^5+d*x2^3*y1+rho*x2^2*y2",
+          "reason": "Exact plane elimination and immutable first-transverse coefficients give a characteristic-zero contradiction even with arbitrary x1-linear and x1-squared allowed terms.",
+          "witnesses": [
+            "HC4MYG5S"
+          ]
+        },
+        {
+          "attack": "Relative-linear unit-pivot corrections of degree at most 89",
+          "reason": "Constant Hessian reduces to a plane Keller map of degree at most 100, hence the descended gradient is a polynomial automorphism and has no collision.",
+          "witnesses": [
+            "HC4MYR89"
+          ]
+        }
+      ],
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [],
       "invalidates_assumptions": [],
       "replaced_by": [],
-      "priority": "parked"
+      "priority": "primary"
     },
     {
       "id": "OP-HC4-D5",
@@ -17328,6 +18091,314 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
+    },
+    {
+      "id": "HC4MYA1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Affine four-plane obstruction for the scaled Meng--Yang family",
+      "scope": "Let Psi_(L,M,N)=L*A^2+M*A+N*B be the five-variable Meng--Yang family over a characteristic-zero field, with L*N nonzero. For every affine hyperplane, if the dual part of its normal vanishes then the restricted potential has three dual Hessian rows spanning at most two dimensions and its Hessian determinant is identically zero. Otherwise, the three disjoint projective charts of the dual normal have unavoidable restricted-determinant coefficients 793152*L^4, 2160*L^4, and 2160*L^4, independent of every normal, translation, M, and N parameter. Hence every affine four-plane restriction is Hessian-degenerate or has nonconstant Hessian determinant. The collision equations are not used.",
+      "canonical_source": "HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md",
+      "dependencies": [
+        "MYSD1"
+      ],
+      "checker": "scripts/verify_hc4_meng_yang_graph_obstructions.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ee9bad088418c81ddc5b50f87d885a40b5ad554f052796bf5897b2bec2a29054",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "general oblique affine directions as an untested Meng--Yang descent class"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-HC4-SCHUR"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4MYG3",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Degree-at-most-three Meng--Yang graph obstruction",
+      "scope": "Let y3=R(x1,x2,y1,y2) be an arbitrary polynomial graph of total degree at most three and pull back Psi_(L,M,N), with L*N nonzero. On the lines (0,t,0,0) and (0,t,t,0), constancy of the four-variable Hessian determinant forces rho=[x2^2*y2]R=-89/16 and sigma=[x2*y1*y2]R=-tau, where tau=[y1^2*y2]R. The next coefficient is universally (197/4)*L*N^3, a contradiction. No collision equation is used. For the v2 member, every graph containing the two marked points transfers their collision because the common omitted gradient component is zero. HC4MYG4 supplies the stronger quartic continuation.",
+      "canonical_source": "HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md",
+      "dependencies": [
+        "MYSD1",
+        "HC4MYA1"
+      ],
+      "checker": "scripts/verify_hc4_meng_yang_graph_obstructions.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ee9bad088418c81ddc5b50f87d885a40b5ad554f052796bf5897b2bec2a29054",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "degree-at-most-three mixed source--dual graphs as an untested Meng--Yang descent class",
+        "the quartic x2^3*y2 graph jet as a viable first cancellation parameter"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-HC4-SCHUR"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4MYG4",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Degree-at-most-four Meng--Yang graph obstruction",
+      "scope": "Let y3=R(x1,x2,y1,y2) be an arbitrary polynomial graph of total degree at most four over a characteristic-zero field, and pull back Psi_(L,M,N), with L*N nonzero. On the full pencil (0,t,c*t,d*t), the t^8 coefficient is 256*N^4*(partial_y2 R4(0,1,c,d))^2, so all ten x1-free quartic jets containing y2 vanish, including [x2^3*y2]R. The next square kills three x1-free cubic y2^2/y2^3 jets and expresses the remaining x1-free quartic slice triangularly. Four coefficients of t^5 force sigma=tau=[x2^4]R4=0 and Q(rho)=160*rho^2+1968*rho+6021=0 for rho=[x2^2*y2]R3. At t^4, the c^4 and d^2 coefficients force [y1^3]R3=[y2^2]R2=0, and the d coefficient then forces P(rho)=8*rho^2+99*rho+279=0. But Q-20*P=-3*(4*rho-147) and P(147/4)=58887/4, equivalently resultant(Q,P)=16959456, so the two equations have no common root in characteristic zero. Hence every degree-at-most-four graph has nonconstant Hessian determinant. The collision equations are not used.",
+      "canonical_source": "HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md",
+      "dependencies": [
+        "MYSD1",
+        "HC4MYG3"
+      ],
+      "checker": "scripts/verify_hc4_meng_yang_graph_obstructions.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ee9bad088418c81ddc5b50f87d885a40b5ad554f052796bf5897b2bec2a29054",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the quartic x2^3*y2 graph jet as a viable first cancellation parameter",
+        "quartic Meng--Yang graphs as an untested descent class"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-HC4-SCHUR"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4MYGJ1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Meng--Yang plane normal-jet theorem",
+      "scope": "For an arbitrary polynomial graph y3=R(x1,x2,y1,y2), put T=R(0,x2,y1,y2) and S=partial_x1 R(0,x2,y1,y2). On x1=0, the graph Hessian has a universal lower 3-by-3 minor -2*L*N^2 and determinant F(T,partial T)-8*L*N^3*S. Thus, for L*N nonzero, every trace and target constant determine at most one first normal jet, while every x1^2-divisible correction is invisible on the plane. Consequently no graph R=R_le4+x1^2*U, with R_le4 of degree at most four and U of arbitrary degree, has constant Hessian determinant. More precisely, adding x1^2*U changes the first transverse determinant coefficient by -24*L*N^3*U(0,x2,y1,y2); for a degree-at-most-five graph, all components of that coefficient above degree three are immutable.",
+      "canonical_source": "HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md",
+      "dependencies": [
+        "MYSD1",
+        "HC4MYG4"
+      ],
+      "checker": "scripts/verify_hc4_meng_yang_graph_obstructions.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ee9bad088418c81ddc5b50f87d885a40b5ad554f052796bf5897b2bec2a29054",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "x1-squared higher-degree tails as a possible repair of the quartic plane obstruction"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-HC4-SCHUR"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4MYG5J",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Degree-five Meng--Yang leading-jet rigidity",
+      "scope": "Let y3=R(x1,x2,y1,y2) have total degree at most five and suppose its pulled-back scaled Meng--Yang potential has constant Hessian determinant over a characteristic-zero field. If T_j is the degree-j homogeneous part of the trace R(0,x2,y1,y2), the t^10, t^8, and t^7 faces on the full two-slope pencil force T_5=kappa*x2^5 and partial_y2(T_4)=0. The next faces kill [y2^3]T_3, [y1*y2^2]T_3, [x2*y2^2]T_3, and [y1^4]T_4, express [x2*y1^3]T_4=8*[y1^2*y2]T_3/3, then force tau=U=sigma=0 and V^2+(4*L*kappa/N)*(20*rho+123)=0 in the notation of the canonical note. Thus only one of the 21 x1-free quintic coefficients survives the leading faces; the first possible plane repair is the 15-dimensional x1-linear quartic normal jet.",
+      "canonical_source": "HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md",
+      "dependencies": [
+        "HC4MYGJ1",
+        "HC4MYG4"
+      ],
+      "checker": "scripts/verify_hc4_meng_yang_graph_obstructions.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ee9bad088418c81ddc5b50f87d885a40b5ad554f052796bf5897b2bec2a29054",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the full 21-parameter x1-free quintic trace as an undifferentiated frontier"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-HC4-SCHUR"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4MYG5N",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Rational quintic Meng--Yang graph top-cone normal form",
+      "scope": "For a degree-at-most-five rational graph with constant pulled-back Hessian determinant, the complete two-slope jet forces R_5(0,x2,y1,y2)=zeta*x2^5 with zeta nonzero. The leading potential is L*(x1^3*R_5)^2; its zero top Hessian face and the low-dimensional Gordan--Noether theorem give a constant kernel direction in the (x2,y1,y2)-space, and the nonzero trace forces that direction into the (y1,y2)-plane. Hence the full quintic graph top lies on exactly two projective charts: R_5=zeta*x2^5+x1*T_4(x1,x2,y1-kappa*y2), or R_5=zeta*x2^5+x1*U_4(x1,x2,y2). This is a necessary top normal form, not a completed determinant identity. Over a larger characteristic-zero field the zero-zeta axis branch over Q(sqrt(34)) is not excluded by this theorem.",
+      "canonical_source": "HC4_MENG_YANG_QUINTIC_SCHUR_FRONTIER.md",
+      "dependencies": [
+        "HC4MYG5J",
+        "external: low-dimensional Gordan--Noether zero-Hessian cone theorem"
+      ],
+      "checker": "scripts/verify_hc4_meng_yang_quintic_graph_normal_slice.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e25156c19cda5f6d2d136f0842c1399decfd0187dcfe0b3409b7898675d25607",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the rational quintic graph top as an unrestricted 56-parameter form"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-HC4-SCHUR"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4MYG5K",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete degree-two lower-trace obstruction on the first quintic kernel chart",
+      "scope": "For the v2 Meng--Yang potential, consider a degree-at-most-five graph on the partial_y2 top-kernel chart whose x1=0 trace is kappa*x2^5+d*x2^3*y1+rho*x2^2*y2+h*x2^3+e*x2*y1^2+T_le2(x2,y1,y2), with every coefficient of the complete degree-at-most-two polynomial T_le2 arbitrary. The degree-six and degree-five plane faces and y2-independence of the forced quartic normal jet parameterize the generic branch by (rho,a), where a=[y1*y2]T. At a=0, [x1*x2^7] and [x1*x2^4*y2] reduce to coprime cubics of resultant -108117004020524928. For arbitrary a, three repair-invariant transverse coefficients of bidegrees (1,3),(3,7),(1,3) generate the unit ideal in Q[a,rho]. Their two projection resultants have monic gcd 32*rho^2+384*rho+1557, but the third equation removes it. The exceptional chart 2*a+3=0 forces P=8*rho^2+99*rho+279=0 and is excluded by resultant(P,25*rho+141)=-15552. The coefficient [y2]T cancels from all witnesses. Writing b=[x2*y2]T and c=[y2^2]T, the forced quartic normal jet contains 256*c^2*x2^2*y2^2, hence c=0. If b is nonzero, the raw degree-five face forces 4*V+5*kappa=0. The V=0 branch would require P=Q=0; the other branch has V=8*(20*rho+123)/5 and ends in coprime polynomials 160*rho^2+1968*rho+5841 and 3968000*rho^4+98457600*rho^3+896972480*rho^2+3553345920*rho+5132433339, whose resultant is 986335129354383654912000. Every remaining lower-trace and target-constant coefficient cancels, while any x1^2*U changes the first transverse determinant only through degree three. Exact enumeration gives no admissible point modulo 101 or 103 on either branch; bad-prime collapses are recorded separately. Hence the complete displayed slice is empty over every characteristic-zero field. Collision equations are not used. Broader cubic and quartic trace terms on this chart and the other kernel charts remain open.",
+      "canonical_source": "HC4_MENG_YANG_QUINTIC_SCHUR_FRONTIER.md",
+      "dependencies": [
+        "HC4MYGJ1",
+        "HC4MYG5J"
+      ],
+      "checker": "scripts/verify_hc4_meng_yang_quintic_q_kernel_slice.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1ac2fbc8cc651329810224c9bbe7f2ebcfe68f29a1ccdedc3de3d761cba66a29",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the minimal partial_y2-kernel lower-trace slice as an untested quintic transverse family"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-HC4-SCHUR"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4MYG5S",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Sparse degree-five Meng--Yang graph-trace obstruction",
+      "scope": "For the v2 Meng--Yang potential, no graph of total degree at most five whose complete x1=0 trace is kappa*x2^5+d*x2^3*y1+rho*x2^2*y2 has constant Hessian determinant over a characteristic-zero field. All x1-linear normal coefficients and every remaining x1^2-divisible term allowed by the degree bound are included. The plane equations reduce to an explicit curve G(rho,V)=0 and uniquely fix the normal jet. Two immutable first-transverse axis coefficients have resultants whose common factor is Q(rho)=160*rho^2+1968*rho+6021; the residual Groebner basis forces V=kappa=0 and Q=0, while the full coefficient [x1*x2^4*y2]=216*(5*rho+12) is then incompatible with Q. The collision equations are not used. Nevertheless, the rational trace (kappa,d,rho)=(51/100,-47/10,-123/20) and target constant 17165601/25 give an exact graph containing both marked collision points and flattening the determinant on x1=0; its coefficient [x1*x2^7]=22032/125 proves transverse failure.",
+      "canonical_source": "HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md",
+      "dependencies": [
+        "HC4MYGJ1",
+        "HC4MYG5J"
+      ],
+      "checker": "scripts/verify_hc4_meng_yang_graph_obstructions.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ee9bad088418c81ddc5b50f87d885a40b5ad554f052796bf5897b2bec2a29054",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the sparse vertical-quintic trace as an unresolved degree-five graph family",
+        "plane-flat collision containment as evidence for a constant full determinant"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-HC4-SCHUR"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "HC4MYR89",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Degree-89 relative-linear Meng--Yang collision obstruction",
+      "scope": "Complete the polynomial unit pivot t=A in the Meng--Yang potential and allow an arbitrary base-dependent residual-dual change C(x1,x2) in SL2(Q[x1,x2]) whose entries have total degree at most 89. The reduced potential has the form f(x1,x2)+2*G_1*r+2*G_2*s and Hessian determinant 16*Jac(G)^2, where G=gamma*C, gamma has degree profile (11,5), and Jac(G)(0)=-2. Constant nonzero Hessian therefore makes G a plane Keller map of degree at most 100; Moh's plane theorem makes G a polynomial automorphism. The last two gradient coordinates recover the base and the first two then recover the residual dual variables, so the descended gradient is a polynomial automorphism and has no collision. Corrections of degree at least 90 and changes nonlinear in the residual dual variables remain open.",
+      "canonical_source": "HC4_MENG_YANG_QUINTIC_SCHUR_FRONTIER.md",
+      "dependencies": [
+        "HC5T1",
+        "external: Moh plane Jacobian theorem through degree 100"
+      ],
+      "checker": "scripts/verify_hc4_meng_yang_relative_linear_obstruction.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:03868d75688de338423b38fe11e88c811f30ea815b2825430cd83ca3a740d78f",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "bounded relative-linear residual-dual corrections as an unclassified Meng--Yang collision route"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-HC4-SCHUR"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
     },
     {
       "id": "HC5T1",

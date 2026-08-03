@@ -1,0 +1,666 @@
+{
+  "all_remaining_degree_witness": {
+    "checked_remaining_degrees": [
+      {
+        "global_degree": 7,
+        "product_one": true,
+        "remaining_degree": 1,
+        "simple_cycle_count": 2,
+        "source_genus": 0,
+        "total_ramification": 12,
+        "transitive": true
+      },
+      {
+        "global_degree": 8,
+        "product_one": true,
+        "remaining_degree": 2,
+        "simple_cycle_count": 4,
+        "source_genus": 0,
+        "total_ramification": 14,
+        "transitive": true
+      },
+      {
+        "global_degree": 9,
+        "product_one": true,
+        "remaining_degree": 3,
+        "simple_cycle_count": 6,
+        "source_genus": 0,
+        "total_ramification": 16,
+        "transitive": true
+      },
+      {
+        "global_degree": 10,
+        "product_one": true,
+        "remaining_degree": 4,
+        "simple_cycle_count": 8,
+        "source_genus": 0,
+        "total_ramification": 18,
+        "transitive": true
+      },
+      {
+        "global_degree": 11,
+        "product_one": true,
+        "remaining_degree": 5,
+        "simple_cycle_count": 10,
+        "source_genus": 0,
+        "total_ramification": 20,
+        "transitive": true
+      },
+      {
+        "global_degree": 12,
+        "product_one": true,
+        "remaining_degree": 6,
+        "simple_cycle_count": 12,
+        "source_genus": 0,
+        "total_ramification": 22,
+        "transitive": true
+      },
+      {
+        "global_degree": 13,
+        "product_one": true,
+        "remaining_degree": 7,
+        "simple_cycle_count": 14,
+        "source_genus": 0,
+        "total_ramification": 24,
+        "transitive": true
+      },
+      {
+        "global_degree": 14,
+        "product_one": true,
+        "remaining_degree": 8,
+        "simple_cycle_count": 16,
+        "source_genus": 0,
+        "total_ramification": 26,
+        "transitive": true
+      },
+      {
+        "global_degree": 15,
+        "product_one": true,
+        "remaining_degree": 9,
+        "simple_cycle_count": 18,
+        "source_genus": 0,
+        "total_ramification": 28,
+        "transitive": true
+      },
+      {
+        "global_degree": 16,
+        "product_one": true,
+        "remaining_degree": 10,
+        "simple_cycle_count": 20,
+        "source_genus": 0,
+        "total_ramification": 30,
+        "transitive": true
+      },
+      {
+        "global_degree": 17,
+        "product_one": true,
+        "remaining_degree": 11,
+        "simple_cycle_count": 22,
+        "source_genus": 0,
+        "total_ramification": 32,
+        "transitive": true
+      },
+      {
+        "global_degree": 18,
+        "product_one": true,
+        "remaining_degree": 12,
+        "simple_cycle_count": 24,
+        "source_genus": 0,
+        "total_ramification": 34,
+        "transitive": true
+      },
+      {
+        "global_degree": 19,
+        "product_one": true,
+        "remaining_degree": 13,
+        "simple_cycle_count": 26,
+        "source_genus": 0,
+        "total_ramification": 36,
+        "transitive": true
+      },
+      {
+        "global_degree": 20,
+        "product_one": true,
+        "remaining_degree": 14,
+        "simple_cycle_count": 28,
+        "source_genus": 0,
+        "total_ramification": 38,
+        "transitive": true
+      },
+      {
+        "global_degree": 21,
+        "product_one": true,
+        "remaining_degree": 15,
+        "simple_cycle_count": 30,
+        "source_genus": 0,
+        "total_ramification": 40,
+        "transitive": true
+      },
+      {
+        "global_degree": 22,
+        "product_one": true,
+        "remaining_degree": 16,
+        "simple_cycle_count": 32,
+        "source_genus": 0,
+        "total_ramification": 42,
+        "transitive": true
+      },
+      {
+        "global_degree": 23,
+        "product_one": true,
+        "remaining_degree": 17,
+        "simple_cycle_count": 34,
+        "source_genus": 0,
+        "total_ramification": 44,
+        "transitive": true
+      },
+      {
+        "global_degree": 24,
+        "product_one": true,
+        "remaining_degree": 18,
+        "simple_cycle_count": 36,
+        "source_genus": 0,
+        "total_ramification": 46,
+        "transitive": true
+      },
+      {
+        "global_degree": 25,
+        "product_one": true,
+        "remaining_degree": 19,
+        "simple_cycle_count": 38,
+        "source_genus": 0,
+        "total_ramification": 48,
+        "transitive": true
+      }
+    ],
+    "degree_25_diagnostic": {
+      "deficit_from_one_cycle_per_two_R_orbits": 36,
+      "if_global_degree_were_25": 25,
+      "required_simple_cycles": 38,
+      "verdict": "additional cycles would be required, not a contradiction",
+      "warning": "25 is the common-edge polynomial degree, not a certified global geometric degree"
+    },
+    "formula": "append (1,j),(1,j) for each new sheet j; then N=6+k, branch_count=3+2k, ramification=10+2k=2N-2",
+    "generated_group": "S_(6+k)",
+    "proof_criterion": "A6 is transitive on its six letters; conjugating each star connector gives all core-to-new transpositions, whose connected edge graph generates the full symmetric group"
+  },
+  "certified_terminal_row_input_and_permutation_replay": {
+    "branch_values": [
+      "0",
+      "infinity",
+      "125/729"
+    ],
+    "compatible_triples_with_fixed_five_cycle": 5,
+    "generated_group": "A6",
+    "geometry_source": "plane-jc/F2_TERMINAL_RESIDUE_COVER.md",
+    "meridian_product": "one",
+    "passport": [
+      [
+        5,
+        1
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        1,
+        1,
+        1
+      ]
+    ],
+    "ramification_contributions": [
+      4,
+      4,
+      2
+    ],
+    "residue_degree": 6,
+    "residue_different_packet": [
+      4,
+      2,
+      2,
+      2
+    ],
+    "source_ray": [
+      12,
+      -17
+    ],
+    "target_center": "boundary_at_infinity",
+    "target_ray": [
+      5,
+      2
+    ],
+    "terminal_degree": 6,
+    "total_ramification": 10,
+    "transverse_different": 0,
+    "transverse_index": 1
+  },
+  "claim_boundary": {
+    "not_proved": [
+      "that a simple R Kummer orbit is a branch value or a transposition",
+      "that the spectator rows lie over the terminal target component",
+      "that the relevant global cover curve is this compact P1 cover",
+      "that no purity-forced affine or other boundary branch cycles occur",
+      "that common-edge degree 25 equals geometric field degree",
+      "exclusion of (75,125) or of the F2 family"
+    ],
+    "proved": "the finite conditional enumeration and the abstract paired-connector permutation witnesses"
+  },
+  "conditional_bridge_assumptions": [
+    "the terminal A6 triple embeds on six global sheets and fixes all remaining sheets",
+    "each of the two squarefree-R simple Kummer orbits supplies exactly one separate simple branch value with transposition monodromy",
+    "the A6 triple is followed by those two branch cycles in one compact target-P1 meridian system",
+    "there are no other branch cycles on that target curve",
+    "a spectator means at least one sheet outside the terminal six-sheet packet"
+  ],
+  "double_packet_diagnostic": {
+    "core_ramification": 20,
+    "degree": 12,
+    "generated_group": "S12 by the same conjugated-edge argument",
+    "product_one": true,
+    "scope": "an abstract witness if another global row supplies the two connectors; the double-root F2 stratum itself supplies no certified simple spectator cycles",
+    "simple_cross_connectors": 2,
+    "source_genus": 0,
+    "total_ramification": 22,
+    "transitive": true
+  },
+  "marked_terminal_incidence_filter": {
+    "certified_markings": {
+      "over_125_over_729": "the three-cycle is the source endpoint s=infinity; the fixed points are the three simple interior roots",
+      "over_infinity": "both three-cycles are the two interior denominator-root attachments",
+      "over_zero": "the fixed point is the source endpoint s=0; the five-cycle is the interior attachment s=-1"
+    },
+    "class_counts": {
+      "anchor_avoids_both_source_endpoints": 3,
+      "anchor_avoids_source_endpoint_over_third_value": 3,
+      "anchor_in_an_interior_attachment_over_infinity": 6,
+      "anchor_in_interior_attachment_over_zero": 5
+    },
+    "scope_warning": "a connector sheet specializing to a marked residue point is not a proof that the spectator boundary component glues there; that requires a toroidal source-node compatibility theorem",
+    "strongest_naive_marked_filter_survivors": {
+      "signature": [
+        5,
+        3,
+        1
+      ],
+      "simultaneous_conjugacy_classes": 3,
+      "verdict": "survives"
+    }
+  },
+  "reproduction_command": ".venv/bin/python plane-jc/cas/verify_f2_a6_simple_spectator_gluing.py",
+  "schema": "plane-jc.f2-a6-simple-spectator-gluing.v2",
+  "software": {
+    "python": "standard library"
+  },
+  "squarefree_conditional_result": {
+    "class_records": [
+      {
+        "anchor_cycle_lengths_at_terminal_values": [
+          1,
+          3,
+          3
+        ],
+        "anchor_specializations": {
+          "over_125_over_729": "source_endpoint_s=infinity",
+          "over_infinity": "one_of_two_interior_denominator_attachments",
+          "over_zero": "source_endpoint_s=0"
+        },
+        "branch_cycles_one_based": [
+          [
+            [
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          ],
+          [
+            [
+              2,
+              3,
+              7
+            ],
+            [
+              4,
+              6,
+              5
+            ]
+          ],
+          [
+            [
+              2,
+              7,
+              4
+            ]
+          ],
+          [
+            [
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              1,
+              2
+            ]
+          ]
+        ],
+        "core_anchor_one_based": 2,
+        "external_sheet_one_based": 1
+      },
+      {
+        "anchor_cycle_lengths_at_terminal_values": [
+          5,
+          3,
+          1
+        ],
+        "anchor_specializations": {
+          "over_125_over_729": "one_of_three_simple_interior_points",
+          "over_infinity": "one_of_two_interior_denominator_attachments",
+          "over_zero": "interior_attachment_s=-1"
+        },
+        "branch_cycles_one_based": [
+          [
+            [
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          ],
+          [
+            [
+              2,
+              3,
+              7
+            ],
+            [
+              4,
+              6,
+              5
+            ]
+          ],
+          [
+            [
+              2,
+              7,
+              4
+            ]
+          ],
+          [
+            [
+              1,
+              3
+            ]
+          ],
+          [
+            [
+              1,
+              3
+            ]
+          ]
+        ],
+        "core_anchor_one_based": 3,
+        "external_sheet_one_based": 1
+      },
+      {
+        "anchor_cycle_lengths_at_terminal_values": [
+          5,
+          3,
+          3
+        ],
+        "anchor_specializations": {
+          "over_125_over_729": "source_endpoint_s=infinity",
+          "over_infinity": "one_of_two_interior_denominator_attachments",
+          "over_zero": "interior_attachment_s=-1"
+        },
+        "branch_cycles_one_based": [
+          [
+            [
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          ],
+          [
+            [
+              2,
+              3,
+              7
+            ],
+            [
+              4,
+              6,
+              5
+            ]
+          ],
+          [
+            [
+              2,
+              7,
+              4
+            ]
+          ],
+          [
+            [
+              1,
+              4
+            ]
+          ],
+          [
+            [
+              1,
+              4
+            ]
+          ]
+        ],
+        "core_anchor_one_based": 4,
+        "external_sheet_one_based": 1
+      },
+      {
+        "anchor_cycle_lengths_at_terminal_values": [
+          5,
+          3,
+          1
+        ],
+        "anchor_specializations": {
+          "over_125_over_729": "one_of_three_simple_interior_points",
+          "over_infinity": "one_of_two_interior_denominator_attachments",
+          "over_zero": "interior_attachment_s=-1"
+        },
+        "branch_cycles_one_based": [
+          [
+            [
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          ],
+          [
+            [
+              2,
+              3,
+              7
+            ],
+            [
+              4,
+              6,
+              5
+            ]
+          ],
+          [
+            [
+              2,
+              7,
+              4
+            ]
+          ],
+          [
+            [
+              1,
+              5
+            ]
+          ],
+          [
+            [
+              1,
+              5
+            ]
+          ]
+        ],
+        "core_anchor_one_based": 5,
+        "external_sheet_one_based": 1
+      },
+      {
+        "anchor_cycle_lengths_at_terminal_values": [
+          5,
+          3,
+          1
+        ],
+        "anchor_specializations": {
+          "over_125_over_729": "one_of_three_simple_interior_points",
+          "over_infinity": "one_of_two_interior_denominator_attachments",
+          "over_zero": "interior_attachment_s=-1"
+        },
+        "branch_cycles_one_based": [
+          [
+            [
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          ],
+          [
+            [
+              2,
+              3,
+              7
+            ],
+            [
+              4,
+              6,
+              5
+            ]
+          ],
+          [
+            [
+              2,
+              7,
+              4
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ]
+          ]
+        ],
+        "core_anchor_one_based": 6,
+        "external_sheet_one_based": 1
+      },
+      {
+        "anchor_cycle_lengths_at_terminal_values": [
+          5,
+          3,
+          3
+        ],
+        "anchor_specializations": {
+          "over_125_over_729": "source_endpoint_s=infinity",
+          "over_infinity": "one_of_two_interior_denominator_attachments",
+          "over_zero": "interior_attachment_s=-1"
+        },
+        "branch_cycles_one_based": [
+          [
+            [
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          ],
+          [
+            [
+              2,
+              3,
+              7
+            ],
+            [
+              4,
+              6,
+              5
+            ]
+          ],
+          [
+            [
+              2,
+              7,
+              4
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ]
+          ],
+          [
+            [
+              1,
+              7
+            ]
+          ]
+        ],
+        "core_anchor_one_based": 7,
+        "external_sheet_one_based": 1
+      }
+    ],
+    "forced_global_degree": 7,
+    "fully_sheet_labeled_factorizations": 30240,
+    "generated_group": "S7",
+    "normalized_factorizations_fixed_core_and_five_cycle": 30,
+    "remaining_degree": 1,
+    "simultaneous_conjugacy_classes_with_branch_labels_fixed": 6,
+    "source_genus": 0,
+    "verdict": "survives_as_six_exact_permutation_gluings"
+  },
+  "status": "conditional-finite-enumeration-not-f2-spectator-classification",
+  "strictly_disjoint_spectator_verdict": "a transposition supported away from the A6 block cannot make the global action transitive",
+  "two_simple_cycle_degree_audit": [
+    {
+      "degree": 6,
+      "product_one_normalized_tuples": 75,
+      "riemann_hurwitz_genus": 1,
+      "transitive_normalized_tuples": 75
+    },
+    {
+      "degree": 7,
+      "product_one_normalized_tuples": 105,
+      "riemann_hurwitz_genus": 0,
+      "transitive_normalized_tuples": 30
+    },
+    {
+      "degree": 8,
+      "product_one_normalized_tuples": 140,
+      "riemann_hurwitz_genus": null,
+      "transitive_normalized_tuples": 0
+    }
+  ]
+}

@@ -363,6 +363,32 @@ must retain reconstruction markings and cannot classify by
 \((g,|P|,e,f)\) alone; see the
 [operational invariant pipeline](MINIMAL_BOUNDARY_INVARIANT_PIPELINE.md).
 
+### Ordinary-degree-six screen inside the first cells
+
+The
+[scoped ordinary-degree-six audit](../extended-geometry/ORDINARY_DEGREE_SIX_BOUNDARY_AUDIT.md)
+adds a coordinate-complexity screen without changing the definitions of the
+cells above.  Its exact consequences are:
+
+1. the normalized one-selected-root `(1,2)` product slice has retained-gauge
+   and affine-linear-left--right degree floor seven;
+2. the balanced two-selected-root `2+2` quotient has class group `Z/2`, its
+   Cox multiplication map retains the resultant Jacobian divisor, and the
+   plain two-chart resolution is nonaffine and retains that divisor on both
+   charts;
+3. for the first monomial cubic-reconstruction mark `kappa=S^2`, the
+   `(1,2)` Wronskian profile is impossible, while the `(0,3)` profile fails
+   for zero, constant nonzero, and nonconstant polynomial boundary jets;
+   hence both monomial profiles are excluded in the standard chart; and
+4. the `D^3` total-ramification plane core has no standard weighted lift
+   whose target Jacobian is supported only on the single `C` boundary, while
+   every `z`-linear standard reciprocal lift has degree floor eleven.
+
+This narrows the global coordinate-degree programme `OP-KCOMP`; it does not
+prove that the cells above exhaust all packages with one or two boundary
+relations.  It also does not advance the intrinsic witness-extraction step
+in `OP-SUSP` merely by recognizing a displayed formula.
+
 ### Three-puncture rational cells
 
 Here
@@ -574,6 +600,7 @@ targeted commands:
 .venv/bin/python scripts/verify_conductor_first_one_chart_obstruction.py
 .venv/bin/python scripts/verify_conductor_first_foundational_cusp_keller.py
 .venv/bin/python scripts/verify_conductor_three_boundary_cox_fill.py
+.venv/bin/python scripts/verify_ordinary_degree_six_boundary_audit.py
 python3 scripts/verify_boundary_package_compiler.py
 ```
 

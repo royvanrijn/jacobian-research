@@ -35,9 +35,11 @@ The attempted Newton/boundary bridge is replayed by:
 .venv/bin/python plane-jc/cas/classify_f2_75_125_layers.py
 .venv/bin/python plane-jc/cas/audit_f2_75_125_boundary_handoff.py
 .venv/bin/python plane-jc/cas/test_f2_75_125_frontend.py
-.venv/bin/python plane-jc/cas/generate_f2_modified_system.py
+.venv/bin/python plane-jc/cas/generate_f2_modified_system.py --include-equations --output artifacts/generated-results/jc2_f2_modified_laurent_family.json
+.venv/bin/python plane-jc/cas/verify_f2_modified_chart_bridge.py
 .venv/bin/python plane-jc/cas/verify_f2_kummer_orbit_transfer.py
 .venv/bin/python plane-jc/cas/verify_f2_terminal_residue_cover.py
+.venv/bin/python plane-jc/cas/verify_f2_a6_simple_spectator_gluing.py
 ```
 
 The first command certifies that fixed geometric degree, trivial
@@ -62,10 +64,34 @@ The fourth command checks the forced chain, terminal normalization, and live
 character profile `P={1,4}`, `Q={0,1,3}` modulo five.  The coarse-bridge
 obstruction is in
 [`../AFFINE_SUPPORT_NEWTON_BRIDGE.md`](../AFFINE_SUPPORT_NEWTON_BRIDGE.md).
-The modified-system generator then reproduces the published `r=2` systems
-and emits the two conditional `r=3` candidate systems; it does not prove the
-common-power ansatz.  The final two commands certify the Kummer-orbit
-reduction and the degree-six terminal residue cover, including primitive
+The modified-system generator reproduces the published `r=2` systems, emits
+the conditional 14- and 22-function `r=3` windows, eliminates the power rows
+in polynomial coordinates, and presents the residue by an Artinian Fitting
+ideal.  It also proves the universal endpoint-binomial section, parametrizes
+the `d=2` residue as a rational fourfold, and certifies a smooth formal
+coefficient-torus branch plus cubic-invariant reduction for `d=3`.  Its
+uniform congruence-support gate excludes every `d=2,3` congruence section
+under the certified `X^4` weight.  In the surviving `d=3,h=2` section it
+eliminates the antiderivative constant and isolates the exact finite
+candidate `B=1+y^2*t^6+y^3*t^9/3`, `lambda=0`, `F_-6=5*y^7/81`.  It does
+not prove the common-power ansatz, `d=2,3`, or the lower Laurent-`y` ledger.
+The modified-chart checker independently derives `gamma=2`, the monomial
+chart, and every possible nonnegative-`xi` support from the corner chain.  It
+then retains the binomial-jet relations: at `r=3` the P/Q source images have
+ranks `74/83` and `196/215`, the formal terminal point violates an explicit
+top-band relation, and the complete projected top-band ideal is `(1)`.  The
+P-only gap algebra has length `27`; the first Q gap has nonzero
+resultant/Fitting determinant in it.  This kills all branches of the literal
+polynomial projection and proves that naive negative-tail deletion cannot be
+the missing modified-Laurent theorem; it does not exclude the full Laurent
+F2 row.
+<!-- status-consumer: PF2MCB1 6ff13314e0090f52 -->
+The optional `--extended-r5` flag requires Singular and proves exactly over
+`QQ` that the `r=5` P-only projected top-gap ideal is also `(1)`.
+The terminal checker first proves the
+all-`r` degree-`2r` passport and geometric `A_(2r)` theorem.  The Kummer and
+terminal commands then certify the degree-six specialization, including
+primitive
 four-transitive geometric `A_6` monodromy, trivial deck group,
 indecomposability, zero transverse different, residue-different packet
 `(4,2,2,2)`, and parameter-free residue data.  The terminal checker also
@@ -74,7 +100,11 @@ the `(5,3,3)` genus-25 regular `A_6` closure, the three interior preimages of
 the target toric nodes, the geometric-degree floor six, and the same-target
 double-packet floor twelve.  It explicitly records that the target center is
 at infinity, so no affine-sheet increment applies.  Their output reopens F2
-only at the global gluing stage and does not exclude `(75,125)`.
+only at the global gluing stage and does not exclude `(75,125)`.  The final
+command exhausts a stated two-transposition spectator model; all six gluing
+classes survive and generate `S_7`, so it supplies no contradiction.  The
+consolidated theorem and claim boundary are in
+[`../F2_MODIFIED_LAURENT_FAMILY.md`](../F2_MODIFIED_LAURENT_FAMILY.md).
 <!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 
 The log-boundary and Poisson-square prefilters are:
@@ -298,8 +328,12 @@ python3 plane-jc/cas/test_f2_75_125_frontend.py
 python3 plane-jc/cas/f2_75_125_frontend.py
 ```
 
-The first command replays the exact 35-layer B0 envelope.  The final command
-emits JSON.  Its `frontend_complete` field is intentionally
+The first command replays the exact 35-layer B0 envelope and the corrected
+top-tangent profile: the first-five kernels are `6,6,7,7,10`, while the
+formal `C0^(-1)` resonance is at layer 10 and is not a source-band kernel.
+The same replay uses the next nonlinear rows to force source-root continuation
+through descent 7 and isolate `27*y^2-9*y+1=0` at descent 8.
+The final command emits JSON.  Its `frontend_complete` field is intentionally
 false until the lower Laurent boundary has been classified exhaustively.
 
 The source reconciliation for the repeated-tail `(96,144)` row is:

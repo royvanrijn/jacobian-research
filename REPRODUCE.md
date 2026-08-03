@@ -230,7 +230,25 @@ map.  `verify-core` adds the cubic marked-root and exact-image implementations.
 Its normalized-factorization certificate checks both polynomial compositions
 across `a=0`, residual-torus equivariance, determinant `-1` for normalized
 multiplication, and the two explicit linear changes recovering the announced
-map.
+map.  The same target runs the scoped ordinary-degree-six boundary audit;
+it can be replayed separately with:
+
+```bash
+.venv/bin/python scripts/verify_ordinary_degree_six_boundary_audit.py
+```
+
+This verifies the exact asymmetric `(1,2)` determinant and degree floor,
+both balanced `2+2` resolution charts and their transition in addition to
+the cone/Cox identities, the affine-linear Wronskian reduction, the
+impossibility of the `(1,2)` cubic profile, the removable-jet residue
+obstruction for `(0,3)`, the rational-map-degree obstruction for a
+nonconstant boundary jet, and the double-pole residue obstruction for a
+nonzero constant boundary jet.  It also checks the pure-`C` weighted `D^3`
+divisor ledger, the degree-eleven floor for every `z`-linear standard
+reciprocal clearing, and the nodal conductor character rank.  It does not
+enumerate arbitrary affine modifications, nonmonomial Wronskian profiles,
+or all maps with two boundary relations.
+
 It also checks the normalized `(2,3)` factorization slice: the unimodular
 boundary lattice, class `L^5-L^3`, direct counts `q^5-q^3` for four small
 prime fields, and generic degree ten.  A separate two-chart certificate
@@ -4856,6 +4874,8 @@ are replayed by
 .venv/bin/python scripts/research_binary_gvc_eight_obstructions.py --prove-three-more
 .venv/bin/python scripts/research_binary_gvc_eight_obstructions.py --verify-opposite-packet --limit 40
 .venv/bin/python scripts/research_binary_gvc_frobenius_carry.py
+.venv/bin/python scripts/research_binary_gvc_frobenius_carry.py \
+  --radial-limit 3 --order-limit 2 --bridge-limit 29 --residue-limit 2
 .venv/bin/python scripts/research_binary_gvc_ghost_shell.py
 .venv/bin/python scripts/research_binary_gvc_quotient_graver.py
 .venv/bin/python scripts/research_binary_gvc_witt_rees.py
@@ -4864,8 +4884,43 @@ are replayed by
 .venv/bin/python scripts/research_binary_gvc_torsion_torus_trace.py
 .venv/bin/python scripts/verify_binary_gvc_torsion_torus_digit_separation.py
 .venv/bin/python scripts/verify_binary_gvc_weighted_trace_obstruction.py
+.venv/bin/python scripts/verify_binary_gvc_first_ghost_source_collapse_and_ray_rigidity.py
 .venv/bin/python scripts/research_binary_gvc_eight_obstructions.py --limit 100
 ```
+
+The second Frobenius-carry command is the focused replay for the affine
+singleton-localization theorem.  Its final blocks verify endpoint-fibre
+signed-digit stabilization and factorial units at two successive primes,
+replay the sharp interior family
+\[
+ ((p-1)/2,1,(p-1)/2)-(0,p,0)=((p-1)/2)(1,-2,1)
+\]
+through every odd prime at most \(29\), and verify the radial-carry Hasse
+compression formula.  The finite checks are regressions for the written
+all-prime Graver, exposed-vertex, and Wilson-unit proofs.  The same note's
+global Hilbert-module theorem is a direct Dickson--Gordan argument: all
+\((p,y)\) fibres are a finite module over the Hilbert basis of
+\(B(p,y)=0\).  It justifies one fixed toric/Graver presentation per support;
+the computation is not the source of that finiteness statement.
+
+The ghost-shell command also constructs the complete primitive three-level
+affine ghost
+\[
+ G_{p;u,v}(X)=\sum_{t=1}^{\lfloor p/(u+v)\rfloor}
+ \frac{(p-1)!X^t}{(ut)!(vt)!(p-(u+v)t)!}.
+\]
+For the 12 coprime types \(1\leq u\leq v\leq6\), it tests the primes through
+43, the reduced rational window with numerator of absolute value at most 40
+and denominator at most 20, every cyclotomic order through 80, and all 2,139
+primitive irreducible polynomials of degrees two and three with coefficient
+height at most four.  The only non-support survivor is the centered value
+\((u,v,X)=(1,1,1)\).  The note proves this for everywhere-good,
+Galois-stable root-of-unity candidates at every width and torsion order by
+the first-admissible-prime and Euler-\(\varphi\)-degree argument.  It does not
+remove an arbitrary extra finite exceptional-prime set.  The finite search is still not an
+all-prime classification of arbitrary non-torsion algebraic roots; the
+constant-term, Wilson-coefficient, and cyclotomic-separation arguments printed
+in the note are the exact theorems.
 
 The first command checks the two closed determinant formulas and the exact
 coefficient-positive proof that
@@ -5011,6 +5066,11 @@ can be replayed by
   --max-degree 12 --extra-depth 4
 .venv/bin/python scripts/search_binary_gvc_translation_isoperiodic_twists.py \
   --max-degree 3 --extra-depth 4 --rectangles
+python3 scripts/verify_binary_gvc_translation_tangent_rigidity.py
+.venv/bin/python scripts/search_binary_gvc_translation_isoperiodic_twists.py \
+  --character-order 3 --max-degree 8 --extra-depth 4
+.venv/bin/python scripts/search_binary_gvc_translation_isoperiodic_twists.py \
+  --character-order 4 --max-degree 7 --extra-depth 4
 ```
 
 They find no survivor.  Their longest zero prefixes are sparse binomial
@@ -5023,8 +5083,27 @@ collision is explained by one of those scale-compatible symmetries.
 The fourth command adds all \(C_2\) twists on the \((2,2)\) and \((3,2)\)
 binomial Taylor rectangles.  Its 2,304 twists and 4,352 exact moving rows
 have no collision outside scalar, two-torus, reversal, and
-coordinate-exchange symmetry through depths 12 and 14.  These searches
-are bounded regressions, not the translation-curvature rigidity proof.
+coordinate-exchange symmetry through depths 12 and 14.
+
+The fifth command replays the proved primitive translation-tangent theorem.
+For every primitive \((d,r)\) through degree 12 it verifies that the matrix
+\[
+ \binom dj\binom{d(N-1)}{rN-j}
+\]
+has the one-dimensional kernel \(j-r\); it also checks the nonprimitive
+power/subsequence rank jump, finite-field ranks away from the chosen integer
+minors through prime 97, and the factorially weighted two-free-translate
+counterexample to module-only inheritance.  The theorem itself is unbounded
+and is proved in
+[`BINARY_GVC_TRANSLATION_TANGENT_RIGIDITY.md`](extended-geometry/BINARY_GVC_TRANSLATION_TANGENT_RIGIDITY.md).
+It implies flatness of every \(q^a\)-order character collision at primitive
+one-direction slope once the underlying prime \(q\) is sufficiently large.
+
+The final two commands extend the earlier sign search using exact arithmetic
+in \(\mathbb Z[\zeta_3]\) and \(\mathbb Z[i]\).  They test 63,972 and
+123,792 moving rows and find no unexplained collision.  These \(C_3,C_4\)
+searches, like the rectangular search, are bounded evidence for the remaining
+small-prime, mixed-prime-torsion, and two-dimensional cases.
 
 The fast final regression suite is
 
@@ -5036,8 +5115,232 @@ It runs the uniform Hall/weighted-face checker, the regular-trace checker,
 the repeated-digit/Newton checker, the weighted affine/factorial
 obstruction checker, and the default degree-ten translation-twist
 search.  It is a frontier regression, not a proof of unrestricted
-GVC(2).  The exact remaining hypothesis is (SC) in Conditional Theorem
-7.6 and Open Problem 7.8 of the canonical note.
+GVC(2).  The module-only version of the former final lemma is now disproved;
+the exact remaining hypothesis is the Cartesian form of (SC) in Conditional
+Theorem 7.6 and Open Problem 7.8 of the canonical note, with exceptional
+small-prime or mixed-prime torsion and two-dimensional curvature exposed over
+one common high quotient.
+
+## Factorial trace independence
+
+```bash
+make verify-factorial-trace-independence
+```
+
+To classify two rays directly, encode gamma factors as
+`slope:offset[:multiplicity]`:
+
+```bash
+python3 scripts/verify_factorial_trace_independence.py \
+  --compare '2:1' '1:1/2,1:1'
+python3 scripts/verify_factorial_trace_independence.py \
+  --compare '2:1' '1:1:2'
+```
+
+The first comparison certifies Gauss duplication and reports exponential
+base `4`; the second reports the separating signature `[1/2]-[0]`.
+
+The optional independent symbolic replay is
+
+```bash
+make verify-factorial-trace-independence-sympy
+```
+
+It uses the repository SymPy environment to simplify 322 Gauss/shift and
+1,384 census certificates directly as rational-function identities.  The
+default target remains dependency-free.
+
+The dependency-free checker reconstructs all 78,124 nonzero signed slope
+vectors on slopes `1,...,7` with coefficients in `[-2,2]`.  It integrates
+8,134 exact zero-sum translation-orbit divisors and classifies 67,524 products
+of at most three rational-offset gamma atoms into 66,140 canonical
+signatures, certifying all 1,384 collisions.  It also verifies 161 Gauss
+refinements before and after integer shifts, 1,000 seeded signed
+transformation cases, 24 integer-affine reductions, the one-scale and entropy
+collisions, `m`-fold periodic/rational-slope symmetries, and 2,187 signed
+Frobenius-dilation valuation profiles at `p=2,3,5`.  It also separates all
+276 SIC radial-moment families `(d,r)` with `d<=48`.  These are finite
+regressions for the formulas; the complete characteristic-zero gamma-affine
+classifier and exact characteristic-`p` valuation obstruction are proved in
+`extended-geometry/FACTORIAL_TRACE_INDEPENDENCE.md`.
+
+## Binary GVC prime-power tomography
+
+Requires Normaliz; the pinned run used Normaliz 3.10.2.
+
+```bash
+.venv/bin/python scripts/research_binary_gvc_prime_power_tomography.py \
+  --output artifacts/generated-results/binary_gvc_prime_power_tomography.json.gz \
+  --summary-output artifacts/generated-results/binary_gvc_prime_power_tomography_summary.json
+```
+
+The Lawrence lifting gives the exact two-colour Graver basis on levels
+`0,...,6`: 8,559 raw relations, 1,584 after translation/dilation and finite
+symmetries, and 1,490 mixed support-at-least-five packet candidates on 868
+projected supports.  The probes use primes `2,3,5,7,11`, exponents
+`m=q*p^e` with `1<=e<=2` and `1<=q<=3`, factorial units modulo `p^2`, and
+the `C2,C3` marked-character traces.  Exactly two symmetry classes survive
+the configured signature.  They represent
+
+```text
+R6*B2*B3 = R0*B5*B6
+R6*B1*B2 = R0*B4*B5
+```
+
+and together are the reversal orbits of
+`R6*B_a*B_(a+1)=R0*B_(a+3)*B_(a+4)`, `a=0,1,2`.  Each exact projected
+fibre has two states and no support-at-most-four path.  Equality of the
+partitions proves that all factorial, digit, and carry data agree at every
+scale, not just in the finite prime window; `C2,C3` are also identically
+blind.  A `C4` character separates both classes.  This is a projected
+collision census, not a GVC(2) counterexample; the fixed-character Franel
+theorem below subsequently closes the family after packet exposure.
+
+The logical JSON result SHA-256 is
+`685f60b5843bca33d32034a16a8b599dcfbf46c35e80e62f747f6d9715e285eb`.
+The whole-file SHA-256 hashes of the compressed full artifact and compact
+summary are, respectively,
+`b1cf105d161b83a5e0c23dab0ed3b2cbc0a2726970e20db760ca5ae78eb5c09b`
+and
+`c9380d66bdad08cb30896c0c1b31d9c5211397d85e962b48d808d90baa832522`.
+The precise model and caveats are in
+[`BINARY_GVC_PRIME_POWER_TOMOGRAPHY.md`](extended-geometry/BINARY_GVC_PRIME_POWER_TOMOGRAPHY.md).
+
+The strengthened primitive-relation census is:
+
+```bash
+.venv/bin/python scripts/research_binary_gvc_prime_power_tomography.py \
+  --radial-degree 7 --primitive-only \
+  --primes 5,7,11,13 --max-exponent 3 --max-quotient 3 \
+  --unit-power 3 --torsion-orders 2,3 \
+  --output artifacts/generated-results/binary_gvc_adelic_tomography_span7.json.gz \
+  --summary-output artifacts/generated-results/binary_gvc_adelic_tomography_span7_summary.json
+```
+
+It computes 34,890 raw Graver relations, 6,601 normalized relations, 6,401
+mixed primitive candidates, and the exact bases of 3,107 represented support
+semigroups.  Of the candidates, 4,750 are separated by a configured total
+valuation.  The remaining 1,651 are exactly the all-scale scalar factorial
+collisions, so there are no accidental finite-window collisions and no row
+first separated only by a unit residue.  Marked digit/carry data separate
+221, `C2,C3` separate another 1,427, and three normalized relations remain.
+The first valuation separators occur at `p=5` for 4,557 relations, at `p=7`
+for 148 which survive every configured `p=5` probe, and at `p=11` for 45
+which survive both earlier primes.  No first separator needs `p=13` or
+`e>1` in this span.
+They are precisely the span-seven orbits of
+
+```text
+R_(s+6)*B_a*B_(a+1) = R_s*B_(a+3)*B_(a+4).
+```
+
+Every member is an exact two-state primitive collision, and `C4` separates
+it.  Among all 1,430 equal marked-partition relations, the first character
+separator distribution is `C2:1244`, `C3:183`, `C4:3`.
+
+The span-seven logical result SHA-256 is
+`a8128639805f9e6e0047dc39e70b20f8e939b6a76213930ab44bd0b26a35dde3`.
+The whole-file SHA-256 hashes of its compressed full artifact and summary
+are
+`dc64e57cac395b4f98cfcb8cc0ac1cdf03c598c5fba67253f67c18e379f7f035`
+and
+`b268bf8ed6cb7c564e154efdcd12b7e60659533fc8cd85e134b6c82870ccabd9`.
+This is an exact bounded result in the projected two-colour model, not a Hall
+promotion theorem, unrestricted `GVC(2)`, or a counterexample.
+
+The surviving family has an exact fixed-character termination theorem.
+Replay its fibre and coefficient identities with:
+
+```bash
+python3 scripts/verify_binary_gvc_six_step_packet_termination.py
+```
+
+After row normalization the support is `R6,R0,B0,B1,B3,B4`.  At scale `N`,
+the complete `C2,C3`-blind fibre is
+`(N-t,t,N-t,N-t,t,t)`, `0<=t<=N`, and its normalized coefficient is
+
+```text
+binom(2N,N) * sum_t binom(N,t)^3 * U^(N-t) * V^t.
+```
+
+If a further fixed finite character has relative order `h`, the
+endpoint-containing rows at scales `h` and `2h` are
+`U^h+V^h` and
+`U^(2h)+binom(2h,h)^3*U^h*V^h+V^(2h)`.  Their only common zero in
+characteristic zero is `U=V=0`, because substitution from the first row
+leaves `(2-binom(2h,h)^3)*U^(2h)=0`.  Thus every fixed finite-character
+promotion of the six-step family is separated, terminal, or loses support.
+The proof is general; the dependency-free script enumerates blind fibres
+through scale 12 and checks character orders through 32 as regressions.
+Prime-dependent affine-carry promotion to one fixed packet remains open.
+
+## Binary GVC nonfree-factorization tomography
+
+The all-span consecutive-residue theorem has a quick exact regression:
+
+```bash
+.venv/bin/python scripts/research_binary_gvc_nonfree_factorization.py \
+  --verify-consecutive-residues
+```
+
+The written incidence-forest proof is uniform in the cyclic order.  The
+regression checks orders \(2,\ldots,16\): the \(C_q,C_{q+1}\) histograms are
+injective through span \(2q-1\), while at span \(2q\) their kernel is
+
+```text
+(1,...,1,0,-1,...,-1)
+```
+
+and decomposes into the \(q\) safe beta swaps
+\(R_iB_{i+q+1}=R_{i+q+1}B_i\).  This proves that the fixed marked nonfree
+factorization quotient is injective at every span; it does not prove that a
+prime-dependent Hall shell inherits the required fixed markings.
+
+Run the complete span-four Hilbert/factorial/Graver census with:
+
+```bash
+.venv/bin/python scripts/research_binary_gvc_nonfree_factorization.py
+```
+
+It computes 426 raw and 90 normalized projected Graver relations, giving 65
+nonfree profiles.  The exact factorial map is injective on 52; one collision
+lattice is reversal-only and 12 contain nonreversal same-vector relations.
+For the 11 collision profiles with at most 20 atoms, the complete
+factorial-compatible Graver basis has 308 primitive moves.  Packet partitions
+separate 15, \(C_2\) separates 207, and \(C_3\) separates 86.  Atom labels
+separate every profile, including the two larger deferred Graver lattices.
+The first factorial-only square has
+\(R=\{0,4\}\), \(B=\{0,1,2,4\}\), counts \((1,3)\), and radial vector
+\((8,8)\); \(C_3\) separates it.
+
+Run the larger atom-signature censuses with:
+
+```bash
+.venv/bin/python scripts/research_binary_gvc_nonfree_factorization.py \
+  --radial-degree 5 --signature-only --torsion-orders 2,3,4 \
+  --output artifacts/generated-results/binary_gvc_nonfree_factorization_span5_signature.json
+
+.venv/bin/python scripts/research_binary_gvc_nonfree_factorization.py \
+  --radial-degree 6 --signature-only --torsion-orders 2,3,4 \
+  --output artifacts/generated-results/binary_gvc_nonfree_factorization_span6_signature.json
+```
+
+The span-five run has 400 profiles and first-injective distribution
+\(169,80,143,8\) at partitions, \(C_2,C_3,C_4\); the span-six run has
+1,469 profiles and distribution \(382,358,599,130\).  Neither has an
+unresolved atom signature.  The logical result hashes for spans four, five,
+and six are, respectively,
+`97bcdb8049b34ef0fed2bd0c9f70102e7b06d828e57a27cb09d6036395402627`,
+`567712c213029dc01ca749888d21fc838b49bf21604e0a92b73997575d2dc8fd`,
+and
+`b8f334669719ac829b70182c4c648b8a66a92f409dd65b8945c6309ea2a6ecde`.
+Their whole-file hashes are
+`888f1f465c67045a2a39a157d6d6cf4872f1cb1a76a79b248e31aa658fd21d2d`,
+`991f531db27e707a2155080f84751f2b3c12f9f88c957775cf6e62f26776a18d`,
+and
+`052928f81694395d1369a4e2c1e9973ebd1fc4d28d10e9c2216f549d4c1b1e99`.
+These are exact bounded projected-semigroup computations; the all-span
+claim comes from the incidence proof, not extrapolation from the census.
 
 The accompanying exact finite-moment search is
 
@@ -6679,6 +6982,27 @@ The odd/even valuation ledgers and uniform proofs are in
 The bounded replay is a regression certificate, not the proof of the
 all-degree statements.
 
+## \(S_4\) collision-frame Keller frontier
+
+The collision-frame checker expands the decomposable absolute map
+\(F\circ F\), verifies its determinant and degree-nine tower, and checks the
+quartic factorization, six-edge action, discriminant, primitive conductor,
+tiny normal form, and one-/two-normal determinant ledgers.  It also verifies
+the rational determinant-one cotangent lift, the polynomial relative
+logarithmic factorization, the natural resultant and Bezout obstruction
+models, and finite-field point-count regressions for the displayed motivic
+classes:
+
+```bash
+.venv/bin/python scripts/verify_s4_collision_frame_keller_frontier.py
+```
+
+The class-group calculations, the all-degree rank argument, and the
+affine-space recognition requirements are written proofs in
+[`extended-geometry/S4_COLLISION_FRAME_KELLER_FRONTIER.md`](extended-geometry/S4_COLLISION_FRAME_KELLER_FRONTIER.md).
+The checker does not construct an ordinary polynomial Keller map for the
+six-sheet collision cover.
+
 ## \(A_4\) Keller inverse-Galois frontier
 
 The pure-target ledger, two-mask factorization, normalized-boundary
@@ -6697,10 +7021,16 @@ assembly, and root-incidence derivative-split checks are:
 Singular -q scripts/verify_a4_corrected_boundary_genus.sing
 .venv/bin/python scripts/verify_a4_genus_zero_selector_search.py
 Singular -q scripts/verify_a4_genus_zero_selector_search.sing
+.venv/bin/python scripts/verify_a4_sharp_selector_plane.py
+.venv/bin/python scripts/verify_a4_conic_principal_obstruction.py
 ```
 
 The normalized-boundary command verifies the determinant-one ambient
 completion and the exact obstruction to the resulting automorphic assembly.
+It also verifies the first birational nonautomorphic solution of the corrected
+log-Jacobian equation, namely homogeneous radial scaling, and the abstract
+Jacobian identity used to prove that no choice of two polynomial mask outputs
+can repair that radial base after the pure-target lift.
 The root-incidence command verifies a localized two-coordinate
 representation of `1/P'(T)`, generic root-field recovery, and the residual
 orientation pole obstructing target-only polynomial pullback.  It also
@@ -6753,7 +7083,38 @@ is sharp.  The accompanying Singular command verifies irreducible
 degree-sixteen norms of genera twelve and fourteen for two sharp
 representatives and genus twelve for one displayed `a^3` perturbation.
 Those samples do not classify the remaining degree-sixteen parameter plane,
-so no rational selector or affine reconstruction is claimed.
+so no rational selector or affine reconstruction is claimed.  The final
+Python command constructs its birational degree-ten strict model, proves
+generic absolute irreducibility, and verifies the complete fixed-infinity
+tangent hierarchy.  Its two terminal members are absolutely irreducible of
+genera ten and nine.  The same command factors the moving critical
+determinant as a fixed conic squared times one irreducible degree-23 curve,
+analyzes the exceptional conic rank drops, and verifies the first two
+rational selectors found on that curve.  The parameter `[77:-16:-8]` is
+absolutely irreducible of genus twelve with two additional nodes.  The
+parameter `[103:-16:8]` has a rational line component, and its coefficient
+norm has a rational conic factor, but the remaining component is absolutely
+irreducible of genus ten.  Finally, the command checks all 864 primitive
+parameters through height six for absolute irreducibility and computes a
+144-member height-three genus census.  Those two censuses are bounded
+experiments; the full parameter discriminant is not implicitized, and no
+affine-space Keller map is asserted.  The conic-principal command purifies
+the rational component to the prime ideal \((q_2,\ell)\).  It verifies
+\(\operatorname{Norm}(\ell)=-3q_2R_{10}\), with \(R_{10}\) absolutely
+irreducible of genus two, and the birational strict factorization
+\(3UK^3G_5/H^3\), with \(G_5\) absolutely irreducible of genus two.  Its
+conormal computation finds two quadratic closed points, hence four
+geometric points, where the conic prime needs two local generators.  This
+proves that no coefficient-one principal divisor isolates the reduced
+conic.  It then identifies the cluster curvette with class two in the
+local \`Z/4\` group, hence local index two, and resolves the other quadratic
+pair as an ordinary two-branch conductor node.  The two exact root-chart
+preimages have coefficient Jacobians \`-32/27\` and \`-4\`; the conic is
+divisorial on the first branch and only a transverse codimension-two
+incidence on the second.  Conductor matching and the principal ideal
+theorem therefore exclude a support-only principal divisor at every
+positive multiplicity.  The full moving-discriminant image, alternative
+rational selectors, and a Keller map remain open.
 
 ### Davenport alternating coefficient pencils
 
@@ -6821,9 +7182,18 @@ The exact affine-support/Newton bridge audit is:
 .venv/bin/python plane-jc/cas/classify_f2_75_125_layers.py
 .venv/bin/python plane-jc/cas/audit_f2_75_125_boundary_handoff.py
 .venv/bin/python plane-jc/cas/test_f2_75_125_frontend.py
-.venv/bin/python plane-jc/cas/generate_f2_modified_system.py
+.venv/bin/python plane-jc/cas/generate_f2_modified_system.py --include-equations --output artifacts/generated-results/jc2_f2_modified_laurent_family.json
+.venv/bin/python plane-jc/cas/verify_f2_modified_chart_bridge.py
 .venv/bin/python plane-jc/cas/verify_f2_kummer_orbit_transfer.py
 .venv/bin/python plane-jc/cas/verify_f2_terminal_residue_cover.py
+.venv/bin/python plane-jc/cas/verify_f2_a6_simple_spectator_gluing.py
+```
+
+An optional exact characteristic-zero family sample requires Singular and
+proves that the `r=5` P-only projected top-gap ideal is also `(1)`:
+
+```bash
+.venv/bin/python plane-jc/cas/verify_f2_modified_chart_bridge.py --extended-r5
 ```
 
 The contact-only artifact was intentionally refreshed after its strategic
@@ -6853,10 +7223,19 @@ pairs, 978 jet-reduced linear parameters (973 after normalization), and
 exclude F2.  The same replay proves that the common-power top root is not an
 arbitrary degree-18 polynomial: it has the exact two-parameter form
 `H(t)=(1+u+...+u^4)^2*R(u^5)`, `u=1+t`, with `R` quadratic and
-`R(1)=1/25`.  The triangular recurrence forces layers `39,...,36` to
-continue that common root.  Layer 35 is the first genuine branch: a
-one-dimensional `lambda*C0^2` mode survives, so the upper five layers do not
-give a unit ideal.  The boundary-handoff replay then gives four exhaustive
+`R(1)=1/25`.  It also corrects the former upper-descent claim: the substitution
+`p=C0^2*U`, `q=(-9/5)*C0^4*V` was an unproved divisibility restriction.  The
+true exact source-band kernels at the first five descents have dimensions
+`6,6,7,7,10`, because every P-band direction has the Q follower
+`q=-3*C0^2*p`; the extra layer-35 direction is the commuting `C0^4` term.
+The actual formal `lambda*C0^(-1)` resonance is at layer 10 and is not an
+independent source-band kernel.  The intentionally refreshed layer artifact
+also verifies the nonlinear resultant `1701*a^8`, forces root continuation
+through descent 7, and leaves the first exact local residual
+`27*y^2-9*y+1=0` at descent 8.  The artifact
+has SHA-256
+`3b30a686a27c1adebc37e354cf5d0a2a60a07ef811c96bfbc02a426886889cf7`.
+The boundary-handoff replay then gives four exhaustive
 contact partitions of 25.  It proves that their multiplicities do not
 determine branch scales or finite-normalization rows; even the unsupported
 strongest contact-to-row surrogate survives the degree-26 packet budget.
@@ -6867,10 +7246,50 @@ and reopen F2 at the global gluing stage; see
 [`plane-jc/AFFINE_SUPPORT_NEWTON_BRIDGE.md`](plane-jc/AFFINE_SUPPORT_NEWTON_BRIDGE.md).
 The frontend replay checks the forced chain and terminal normalization
 independently.  The modified-system generator reconstructs the published
-`r=2` systems and the two candidate `r=3`, `(75,125)` systems under its
-explicitly stated common-power ansatz; it does not prove that ansatz is
-forced.  The last two commands certify the nonzero Kummer-orbit transfer and
-the terminal target row with transverse index one, residue degree six,
+`r=2` systems and the 14- and 22-coefficient-function `r=3` windows under its
+explicitly stated common-power ansatz.  It triangularly eliminates the power
+rows, gives the remaining core in `B=A^r` coordinates, and presents the true
+residue as an Artinian Fitting ideal: a `16 x 16` determinant for `d=2,h=2`
+and the four-generator maximal-minor ideal for `d=3,h=2`.  It also checks the
+certified `h=4` alternative, which has zero and two generic residue equations.
+Every compact residue has an endpoint-binomial point.  More sharply, the
+`d=2` residue is rational on a dense open, while the `d=3` residue has a
+smooth fourfold meeting the coefficient torus and an exact cubic-invariant
+subfamily.  The uniform congruence-support gate excludes all `d=2,3`
+congruence sections under the certified `X^4` weight.  For the surviving
+`d=3,h=2` section, the Laurent antiderivative constant is impossible and the
+only monomial-bracket survivors lie on an exponent-seven, `lambda=0` ray;
+its first member is stored as an exact eight-row formal residual point.
+The calculation does not prove the ansatz, `d=2,3`, or the lower Laurent-`y`
+support ledger, so it does not exclude the unrestricted family.
+See
+[`plane-jc/F2_MODIFIED_LAURENT_FAMILY.md`](plane-jc/F2_MODIFIED_LAURENT_FAMILY.md).
+The generated JSON has SHA-256
+`bca206498c153e41a2f31344015df2ce63890f8b12228b6d0ba2c0970eb87c85`;
+its software assumptions are `.python-version`, `requirements.txt`, and exact
+characteristic-zero SymPy arithmetic.
+The modified-chart checker then derives `gamma=2`, the `d=3` monomial chart,
+and every possible nonnegative-`xi` support position from the F2 corner
+chain.  It preserves the translated binomial-jet relations instead of
+treating the support box as independent: at `r=3` the exact P/Q image ranks
+are `74/83` and `196/215`.  A primitive top-band relation excludes the formal
+terminal point.  For the full projected top diagonal, the three P gap
+equations define a length-27 Artinian algebra and the first Q gap has nonzero
+resultant/multiplication determinant in it, so the combined ideal is `(1)`.
+Thus every branch of the literal bracket-preserving polynomial projection is
+excluded.  This also proves that naive deletion of the negative Laurent tail
+cannot be the missing theorem.  The full seed has the explicit source lift
+`x*(x*y^5-1)^2*R(x*y^5)`, and the corrected top tangent shows that its
+first-five kernel dimensions are `6,6,7,7,10`; `lambda*C0^(-1)` is a
+layer-10 formal resonance, not an independent source mode.  Deriving its
+nonlinear `F`-tail cancellation remains open.  The
+pinned chart artifact has SHA-256
+`ac7dbc170cafbcf028079b9ccdb41afd78c333e3850abc0761f64cc056e7d7b8`.
+<!-- status-consumer: PF2MCB1 6ff13314e0090f52 -->
+The terminal checker first verifies the all-parameter degree-`2r` passport
+`(2r-1,1)|(r,r)|(3,1^(2r-3))`, geometric monodromy `A_(2r)`, and discriminant
+squareclass `(-1)^(r+1)*(2r-1)`.  It then specializes with the Kummer replay
+to the terminal target row with transverse index one, residue degree six,
 passport `(5,1)|(3,3)|(3,1,1,1)`, and geometric monodromy `A_6`.  Global
 boundary gluing remains open.  The checker also proves that the natural
 `A_6` action is four-transitive and primitive (so the residue cover has no
@@ -6898,11 +7317,19 @@ affine-companion theorem supplies no `+1`; purity instead requires a separate
 affine ramification row.  Global geometric monodromy has `A_6` as a
 nonabelian simple composition factor.  Thus the remaining ledger has one
 squarefree packet or two identical double-root packets attached to the same
-versus distinct target components.  These calculations do not exclude
+versus distinct target components.  The final command exhausts the stated
+two-transposition simple-spectator model: all six degree-seven genus-zero
+classes survive and generate `S_7`, while paired-star witnesses show that the
+coarse filters allow every larger remaining degree.  Adding the certified
+endpoint/interior markings leaves three classes of signature `(5,3,1)` under
+the strongest naive requirement that the connector anchor avoid both source
+endpoints.  This gluing model is conditional because sheet specialization is
+not a toroidal node-gluing theorem and the Kummer spectators have not been
+identified with branch transpositions.  These calculations do not exclude
 `(75,125)`.
 
 The expanded terminal checker is pinned in `MATH_STATUS.json` at SHA-256
-`49d43f3c2f7b872f73705fa30914b45b0e019c6989e4e0254c182eaca8c55459`.
+`baa8fe7abdcf1652bc0a8636437b9505ebc6838bf2eebaf2492c03684fd63cbf`.
 The software assumptions remain `.python-version` and `requirements.txt`;
 the command above both recomputes the assertions and emits the final pass
 marker.
@@ -7228,6 +7655,102 @@ codimension-one block-affine theorem `SDX2` proves that every three-variable
 Keller map with such a block is a polynomial automorphism, even after a
 nonlinear source rechart.  Only mixed source--dual or coisotropic pivots
 survive this route.
+
+The parameter-uniform affine and low-degree graph audit of the v2
+Meng--Yang family is:
+
+```bash
+.venv/bin/python scripts/verify_hc4_meng_yang_graph_obstructions.py
+```
+
+It verifies the three affine-normal chart coefficients
+\(793152L^4,2160L^4,2160L^4\), the zero-dual-normal rank obstruction, and
+the degree-at-most-three graph chain
+
+\[
+ \rho=-89/16,\qquad \sigma=-\tau,\qquad
+ [t^5]D_R(0,t,t,0)=197LN^3/4.
+\]
+
+For degree four it retains every graph coefficient and computes the full
+two-slope pencil \((0,t,ct,dt)\) only through degree eight.  The leading
+square kills all ten \(x_1\)-free quartic jets containing \(y_2\), including
+\([x_2^3y_2]R\).  The next coefficients reduce the remaining slice to
+
+\[
+ 160\rho^2+1968\rho+6021=0,
+ \qquad \operatorname{disc}=576\cdot34.
+\]
+
+At degree four the same truncated determinant then forces
+\([y_1^3]R_3=[y_2^2]R_2=0\) and
+\(8\rho^2+99\rho+279=0\).  The two quadratics have resultant
+\(16959456\), so no branch survives over any characteristic-zero field.
+These results are `HC4MYA1`, `HC4MYG3`, and `HC4MYG4`; degree five is the
+first not fully classified single-graph degree.  See
+[`HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md`](HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md).
+
+The same checker now continues into degree five.  On \(x_1=0\) it proves
+
+\[
+ D_R=\mathcal F(T,\partial T)-8LN^3S,
+ \qquad T=R|_{x_1=0},\quad S=\partial_{x_1}R|_{x_1=0}.
+\]
+
+It follows that an \(x_1^2\)-divisible tail cannot repair any quartic graph
+1-jet.  The leading quintic faces force
+\(T_5=\kappa x_2^5\) and \(\partial_{y_2}T_4=0\).  For the complete v2 trace
+
+\[
+ T=\kappa x_2^5+d x_2^3y_1+\rho x_2^2y_2,
+\]
+
+exact resultants and first-transverse coefficients give a
+characteristic-zero contradiction, even with every allowed off-plane term.
+The checker also replays a rational graph that contains the marked collision
+and has determinant \(17165601/25\) on all of \(x_1=0\), then detects its
+nonzero coefficient \([x_1x_2^7]=22032/125\).  These are HC4MYGJ1,
+HC4MYG5J, and HC4MYG5S; the general degree-five graph remains open.
+
+The complementary rational top-cone and relative-linear checks are:
+
+~~~bash
+.venv/bin/python \
+  scripts/verify_hc4_meng_yang_quintic_graph_normal_slice.py \
+  --output \
+  artifacts/generated-results/hc4_meng_yang_quintic_graph_normal_slice.json
+.venv/bin/python \
+  scripts/verify_hc4_meng_yang_quintic_q_kernel_slice.py \
+  --output \
+  artifacts/generated-results/hc4_meng_yang_quintic_q_kernel_slice.json
+.venv/bin/python \
+  scripts/verify_hc4_meng_yang_relative_linear_obstruction.py
+~~~
+
+The first forces the rational quintic top onto two constant-kernel charts;
+the second substitutes the forced plane jet into the first
+\(\partial_{y_2}\)-kernel slice with the complete degree-at-most-two lower
+trace.  Its generic three immutable transverse equations generate the unit
+ideal over \(\mathbb Q\); a square in the forced quartic normal jet kills the
+\(y_2^2\) coefficient; and the exceptional nonzero \(x_2y_2\) branch ends in
+two coprime transverse polynomials with resultant
+\(986335129354383654912000\).  A separate resultant excludes the kernel
+denominator chart.  Exact enumeration finds no admissible point modulo 101
+or 103, hence no rational point to reconstruct.  As a diagnostic subfamily,
+setting the \(y_1y_2\) coefficient to zero leaves two cubics with resultant
+\(-108117004020524928=-2^7 3^{17}\cdot11\cdot13\cdot53\cdot863\).
+The checker independently replays both transverse branches in the original
+five-variable potential.  The third uses the external plane-Jacobian
+degree-100 theorem to exclude collisions in every residual-linear correction
+of degree at most 89.  The immediate graph target is the joint ideal obtained
+from the forced plane normal jet, broader cubic and quartic traces, the
+remaining top-cone charts, and first-transverse components above degree
+three.  The generated JSON hashes for the projected normal slice and the
+transverse kernel slice are,
+respectively,
+`cdf7fd3cb03dcaea616ce4e177ba87fddcffa423c5f29a0d5f6e4f5dc1e0fee5`
+and
+`dd28f7a44f6c813bdd422335133869ad7b4a513cc4426987930630c7cba859f9`.
 
 The first bounded mixed canonical-pivot search is:
 

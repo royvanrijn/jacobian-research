@@ -432,3 +432,51 @@ print("PASS: every exact selector in the bounded ansatz has norm degree at least
 print("PASS: q1 and q3 attain degree sixteen with irreducible norms")
 print("THEOREM: below norm degree sixteen no total-degree-three root-quadratic selector can have the required valuations and genus zero")
 print("NOTE: degree sixteen is sharp; its full two-parameter genus stratification remains open")
+
+
+# ---------------------------------------------------------------------------
+# 3. Two reducible directions and the one-jet affine-modification handoff
+# ---------------------------------------------------------------------------
+
+# The two additional root-linear directions q2 and q4 reveal two exact
+# cancellations.  The first is only the old root and rho boundary.  The
+# second is more informative: after adjoining the quotient by a, it gives a
+# degree-two root-linear function which passes every normalized valuation
+# condition except one coefficient on the simple F branch.
+near_selector = sp.expand((b + 6) * T - 81 * rho)
+assert sp.expand(3 * q1 + q2 - T * rho) == 0
+assert sp.expand(6 * q3 + q4 - a * near_selector) == 0
+
+near_truncations = valuation_truncations(near_selector)
+assert near_truncations == {
+    "S1": {},
+    "S2": {},
+    "Fs": {(5, (1, 2)): sp.Rational(27, 4)},
+    "Q": {},
+    "R2": {},
+    "Ft": {},
+    "R1": {},
+}
+
+near_expected_orders = {
+    "E1": (Fraction(2), Fraction(1), Fraction(1), Fraction(1)),
+    "E2": (Fraction(3), Fraction(2), Fraction(2), Fraction(2)),
+    "E3": (Fraction(3),) * 4,
+    "F": (Fraction(5), Fraction(3), Fraction(3), Fraction(3)),
+}
+for name, weights in resolution_rays.items():
+    assert characteristic_orders(near_selector, weights) == (
+        near_expected_orders[name]
+    )
+
+near_norm = sp.resultant(P, near_selector, T)
+near_unit, near_factors = sp.factor_list(near_norm, a, b)
+assert near_unit != 0
+assert len(near_factors) == 1
+assert near_factors[0][1] == 1
+assert sp.Poly(near_factors[0][0], a, b).total_degree() == 16
+
+print("PASS: 3*q1+q2 is exactly T*rho")
+print("PASS: (6*q3+q4)/a is polynomial after the a-modification")
+print("NEAR MISS: that quotient has only the simple-F order-five coefficient 27*c*k^2/4")
+print("PASS: its coefficient-plane norm is irreducible of degree 16")

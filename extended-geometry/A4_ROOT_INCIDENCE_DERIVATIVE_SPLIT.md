@@ -1479,19 +1479,540 @@ affine reconstruction claim is made for them.  Those later tests should be
 run only after a rational point of the degree-sixteen parameter
 stratification is found.
 
+### 6.11. Degree-ten strict model and fixed-infinity stratification
+
+The sharp parameter plane admits a much smaller birational model than its
+degree-sixteen coefficient-plane norms.  Retain the notation of (5.1)--(5.2)
+and put \(M=U^2+2V^2+6V+18\).  Normalize the two basis elements in (6.47)
+by
+
+\[
+ Q_1=4q_1,\qquad Q_3=3q_3,
+\]
+
+and define their strict root-chart pullbacks by
+
+\[
+\begin{aligned}
+ R_0&=\frac{H^4}{K^3}
+ q_0\!\left(\frac{N_1}{H},\frac{N_2}{H},T_*\right),\\
+ R_1&=\frac{H^4}{K^3}
+ Q_1\!\left(\frac{N_1}{H},\frac{N_2}{H},T_*\right),\\
+ R_3&=\frac{H^4}{K^3}
+ Q_3\!\left(\frac{N_1}{H},\frac{N_2}{H},T_*\right).
+                                                        \tag{6.50}
+\end{aligned}
+\]
+
+Exact division gives
+
+\[
+ R_0=M^3H,\qquad
+ \deg(R_0,R_1,R_3)=(9,10,10),\qquad
+ \gcd(R_0,R_1,R_3)=1.                                \tag{6.51}
+\]
+
+Thus the selector \(\lambda q_0+\mu q_1+\nu q_3\) has strict plane model
+
+\[
+ \boxed{F_{\lambda,\mu,\nu}
+ =12\lambda R_0+3\mu R_1+4\nu R_3=0.}                \tag{6.52}
+\]
+
+The removed factor is the fixed component \(K^3\), independent of
+\([\lambda:\mu:\nu]\).  Whenever (6.52) is integral, the root-chart field
+recovery from Section 3 makes it birational to the corresponding
+horizontal norm curve.  Absolute factorization over
+\(\mathbb Q(\lambda,\mu)\) proves that the generic member of the plane is
+geometrically integral; the same calculation over \(\mathbb Q(\lambda)\)
+proves this for the generic member of the line \(\nu=0\).
+
+The projective closure of (6.52) has two fixed points at infinity,
+
+\[
+ P_\infty=[1:1:0],\qquad Q_\infty=[-1/2:1:0].
+\]
+
+At \(P_\infty\), with local coordinates \(U/V=1+x\) and \(Z/V=z\), the
+quadratic tangent cone is
+
+\[
+ 729(4\lambda+9\mu-56\nu)z(2x-3z).                  \tag{6.53}
+\]
+
+It is an ordinary node off the parameter line
+\(4\lambda+9\mu-56\nu=0\).  On that line the cubic initial form is
+
+\[
+ 8748(\mu+\nu)x(x-3z)^2.
+\]
+
+For \(\mu+\nu\ne0\), exact local normalization gives
+\((\delta,\tau,r)=(3,5,2)\).  The cubic vanishes at the unique rational
+parameter
+
+\[
+ [\lambda:\mu:\nu]=[65:-4:4],
+\]
+
+where the quartic initial form is
+
+\[
+ 2916z(2x-3z)(14x^2-90xz+135z^2).                   \tag{6.54}
+\]
+
+Its four geometric tangent lines are distinct, so this is an ordinary
+quadruple point with \((\delta,\tau,r)=(6,9,4)\).
+
+At \(Q_\infty\), with \(U/V=-1/2+x\), the quadratic tangent cone is
+
+\[
+ -\frac{19683}{64}\nu(4x^2+6xz+9z^2).               \tag{6.55}
+\]
+
+It is a node when \(\nu\ne0\).  On \(\nu=0\), the cubic initial form has
+discriminant equal to a nonzero rational constant times
+
+\[
+ (\lambda^2+3\lambda\mu+9\mu^2)^2.
+\]
+
+The binary quadratic is anisotropic over \(\mathbb Q\), so every rational
+exact selector on this line has an ordinary triple point, with local
+package \((3,4,3)\).  The two exceptional parameter lines meet at
+\([9:-4:0]\).
+
+Singular normalization gives the two terminal fixed-infinity members
+
+\[
+\begin{array}{c|c|c|c}
+[\lambda:\mu:\nu]&g&P_\infty&Q_\infty\\ \hline
+[9:-4:0]&10&(3,5,2)&(3,4,3)\\
+[65:-4:4]&9&(6,9,4)&(1,1,2).
+\end{array}                                          \tag{6.56}
+\]
+
+Both curves are absolutely irreducible.  At the affine cluster
+\((U,V^2+3V+9)\), each has local package \((20,32,6)\).  For comparison,
+exact normalization gives genus fourteen at \([1:1:1]\), genus twelve at
+\([0:1:0]\) on \(\nu=0\), and genus twelve at \([33:4:3]\) on
+\(4\lambda+9\mu-56\nu=0\).
+
+There is also bounded evidence, recorded separately from these exact
+stratification statements.  Among all 864 primitive rational projective
+parameters of height at most six, excluding the nonexact point
+\([1:0:0]\), every strict curve is absolutely irreducible.  At height at
+most three there are 144 parameters: the 15 with \(\nu=0\) have genus
+twelve, and the remaining 129 have genus fourteen.  This census is not a
+classification of the rational parameter plane.  In particular it does
+not exclude a larger-height member with extra moving singularities (or a
+further degeneration of the affine cluster).  The deepest degeneration
+forced by the fixed-infinity hierarchy still has genus nine, so this fixed
+stratification produces no all-rational horizontal selector, affine-space
+complement, or Keller map.
+
+### 6.12. Moving critical curve and the first rational norm component
+
+The moving-singularity incidence has a compact source-side equation.  Form
+the value-and-gradient matrix
+
+\[
+ \mathcal C(U,V)=
+ \begin{pmatrix}
+ R_0&R_1&R_3\\
+ \partial_UR_0&\partial_UR_1&\partial_UR_3\\
+ \partial_VR_0&\partial_VR_1&\partial_VR_3
+ \end{pmatrix}.
+\]
+
+Exact factorization gives
+
+\[
+ \boxed{\det\mathcal C=-54M^2\mathscr D_{23},}        \tag{6.57}
+\]
+
+where \(\mathscr D_{23}\in\mathbb Q[U,V]\) is irreducible of degree
+twenty three.  Its leading form is
+
+\[
+ 8(U-V)^8(U+2V)^3(2U+V)^6
+ (U^2+2V^2)(U^2+UV+V^2)^2.                           \tag{6.58}
+\]
+
+The generic kernel map from \(\mathscr D_{23}\) to the selector plane has
+primitive coordinate degrees \((19,18,18)\).  Thus (6.57) replaces the
+three-equation moving incidence by one irreducible critical curve and a
+concrete rational map.  Its full parameter-plane image has not yet been
+implicitized.
+
+The factor \(M^2\) needs separate treatment.  Since \(R_0=M^3H\), the
+first column of \(\mathcal C\) vanishes generically on \(M=0\), and its
+kernel gives only the nonexact selector \(q_0\).  Exact primary
+decomposition of the rank-drop locus of the other two columns gives
+
+\[
+ (U,V^2+3V+9)
+ \quad\text{and}\quad
+ (7U+8V+12,\ 3V^2+9V+19).                            \tag{6.59}
+\]
+
+The first is the known fixed affine cluster.  On the second, if
+\((s_0,s_1,s_3)\) are coefficients of \((R_0,R_1,R_3)\), then
+
+\[
+ \frac{s_1}{s_3}=\frac V7+\frac8{21}.
+\]
+
+The two conjugate values are distinct, so their kernel planes have no
+common rational exact selector; their rational intersection again gives
+only \(q_0\).  Consequently the \(M\)-component contributes no rational
+exact moving stratum beyond the already removed fixed cluster.
+
+The residual curve immediately produces two rational parameter points.
+Indeed,
+
+\[
+ \mathscr D_{23}(0,V)
+ =8(2V+3)^2(4V+87)(V^2+3V+9)^{10}.                  \tag{6.60}
+\]
+
+The points \((0,-3/2)\) and \((0,-87/4)\) have selector kernels
+
+\[
+ [\lambda:\mu:\nu]=[77:-16:-8],
+ \qquad [103:-16:8],                                 \tag{6.61}
+\]
+
+respectively.  The first strict curve is absolutely irreducible of genus
+twelve.  In addition to the universal affine cluster and the two ordinary
+fixed-infinity nodes, it has ordinary nodes at \((0,-3/2)\) and at the
+third rational infinity direction \([-2:1:0]\).  This is the first exact
+rational member found on the moving discriminant, but it remains far from
+genus zero.
+
+The second parameter gives the first rational horizontal component in the
+sharp selector plane.  Exact division gives
+
+\[
+ F_{103,-16,8}=36U G_9,                              \tag{6.62}
+\]
+
+where \(G_9\) is absolutely irreducible of genus ten.  For the integral
+linear-in-\(T\) selector
+
+\[
+ S_{103}=1236q_0-48(4q_1)+32(3q_3),
+\]
+
+the coefficient-plane norm factors as
+
+\[
+ \operatorname {Res}_T(P,S_{103})
+ =-2304\,q_2Q_{14},
+ \qquad
+ q_2=\alpha^2-4\beta^2-12\beta-36.                  \tag{6.63}
+\]
+
+The conic \(q_2=0\) is rational: it is
+\(\alpha^2-(2\beta+3)^2=27\) and contains \((6,0)\).  The line \(U=0\)
+maps birationally to this component.  Since \(S_{103}\) is linear in the
+selected root, \(G_9\) likewise maps birationally to \(Q_{14}\); hence
+\(Q_{14}\) is absolutely irreducible of genus ten.
+
+This is genuine progress at the rational-component gate, but not a pass:
+the same selector that supplies the rational conic necessarily retains the
+positive-genus \(Q_{14}\) component.  No affine-space complement or Keller
+map is claimed.
+
+### 6.13. Purification and the coefficient-one principal obstruction
+
+The rational component in (6.63) has a substantially smaller equation in
+the root algebra.  Put
+
+\[
+ \ell=2T+3\alpha\beta^2+6\beta^3+9\alpha\beta
+       +27\alpha-162.                               \tag{6.64}
+\]
+
+Then the sharp selector satisfies the exact ideal-membership identity
+
+\[
+\begin{aligned}
+ S_{103}={}&16(3\alpha-6\beta+4)\ell\\
+ &+12(103\alpha-12\beta^2-36\beta-108)q_2.         \tag{6.65}
+\end{aligned}
+\]
+
+The coefficient \(3\alpha-6\beta+4\) is not a unit on the conic.  In fact,
+
+\[
+ \operatorname {Res}_{\alpha}
+ (q_2,3\alpha-6\beta+4)=-4(39\beta+77).
+\]
+
+Consequently \((q_2,S_{103})\) has a zero-dimensional contamination where
+that coefficient vanishes.  Its pure height-one conic prime is instead
+
+\[
+ \boxed{\mathfrak p=(q_2,\ell).}                    \tag{6.66}
+\]
+
+This is visibly prime: eliminating \(T\) identifies its quotient with the
+domain
+
+\[
+ \mathbb Q[\alpha,\beta]/
+ (\alpha^2-4\beta^2-12\beta-36).
+\]
+
+The purified equation improves, but does not remove, the other horizontal
+component.  Exact elimination gives
+
+\[
+ \boxed{
+ \operatorname {Res}_T(P,\ell)=-3q_2R_{10},
+ }
+ \qquad \deg R_{10}=10,                             \tag{6.67}
+\]
+
+where \(R_{10}\) is absolutely irreducible and its projective normalization
+has genus two.  On the rational root chart,
+
+\[
+ \ell=\frac{3UK^3G_5}{H^3},                         \tag{6.68}
+\]
+
+with
+
+\[
+\begin{aligned}
+G_5={}&2U^5-2U^3V^2-6U^3V-18U^3
+ +22U^2V^3+18U^2V^2+54U^2V-432U^2\\
+&+33UV^4+198UV^3+891UV^2+1782UV+2673U\\
+&+26V^5+276V^4+1422V^3+4644V^2+8586V+9720.
+\end{aligned}                                      \tag{6.69}
+\]
+
+The quintic \(G_5\) is absolutely irreducible of genus two.  Since
+\(\ell\) is linear in \(T\), it maps birationally to \(R_{10}\).  Thus
+purification lowers the unwanted component from genus ten to genus two and
+the strict source equation from \(UG_9\) to \(UG_5\), but it still fails the
+all-rational-component gate.
+
+There is also an exact obstruction to cutting out the **reduced** conic
+with coefficient one by a principal root-algebra divisor.  Define the
+pseudoquotient \(C\) by
+
+\[
+ \boxed{16P=\ell C-3q_2R_{10}.}                     \tag{6.70}
+\]
+
+In the hypersurface root algebra, this is the conormal relation between
+the two generators of \(\mathfrak p\).  Its simultaneous coefficient-zero
+locus has radical
+
+\[
+\begin{aligned}
+ \sqrt{(q_2,\ell,C,R_{10})}
+ ={}&(\alpha,T,\beta^2+3\beta+9)\\
+ &\cap(11\alpha-32\beta-48,\ell,
+                 5\beta^2+15\beta-19).             \tag{6.71}
+\end{aligned}
+\]
+
+Both quadratics are irreducible over \(\mathbb Q\), with discriminants
+\(-27\) and \(605=5\cdot11^2\).  Hence (6.71) consists of two quadratic
+closed points, or four geometric points.  The unreduced coefficient-zero
+scheme has length fourteen; its radical has length four.
+
+Away from (6.71), either \(C\) or \(R_{10}\) is a unit, and (6.70) makes
+\(\mathfrak p\) locally generated by \(q_2\) or by \(\ell\).  At a point
+of (6.71), both conormal coefficients vanish.  The Koszul relation also
+vanishes after tensoring with the residue field, so the two classes of
+\(q_2,\ell\) remain independent in
+\(\mathfrak p/\mathfrak m\mathfrak p\).  Nakayama's lemma therefore gives
+
+\[
+ \boxed{
+ \mu(\mathfrak p_{\mathfrak m})=2
+ \quad\text{at all four geometric points of (6.71)}.
+ }                                                   \tag{6.72}
+\]
+
+Thus the conic prime is not Cartier and is not principal.  In particular,
+no regular root-algebra function cuts out the reduced conic with
+multiplicity one and no other divisorial component.
+
+### 6.14. Local index and the all-multiplicity conductor obstruction
+
+The two quadratic pairs in (6.71) have different local geometry.  At the
+universal cluster put
+
+\[
+ z=\beta^2+3\beta+9,
+ \qquad c=2\beta+3,
+ \qquad z=\alpha^2y,
+ \qquad T=\alpha^2t.
+\]
+
+On the second exceptional ray the conic has strict equation \(y=1/4\),
+while the exceptional quartic is
+
+\[
+ \bigl(2t-(27-3c)y\bigr)
+ \bigl(2t-(c-9)y\bigr)^3.                           \tag{6.73}
+\]
+
+The strict exceptional value of \(\ell/\alpha^2\) is
+
+\[
+ 2t+3(c-9)y.
+\]
+
+At \(y=1/4\) it selects
+
+\[
+ t=\frac{27-3c}{8},
+\]
+
+the simple \(E_2\)-root, and not the triple root.  The normalized
+seven-curve chain contracts to
+
+\[
+ E_{1,\mathrm s}-E_{2,\mathrm s}-E_3,
+\]
+
+the minimal \(A_3\) chain.  A curvette meeting its middle component has
+class \(2\in\mathbb Z/4\).  Consequently
+
+\[
+ \boxed{
+ \operatorname{ind}_{(\alpha,T,\,\beta^2+3\beta+9)}
+ (\mathfrak p)=2.
+ }                                                   \tag{6.74}
+\]
+
+The real quadratic pair is stronger: it admits no finite support-only
+Cartier multiple.  Work in
+
+\[
+ k=\mathbb Q[\beta]/(5\beta^2+15\beta-19)
+\]
+
+and put
+
+\[
+ \alpha_0=\frac{32\beta+48}{11},
+ \qquad
+ T_0=-\frac{\ell(\alpha_0,\beta,0)}2.
+\]
+
+At \((\alpha_0,\beta,T_0)\), the functions
+
+\[
+ \rho=\beta^2+3\beta+9,
+ \qquad B_0
+\]
+
+are units, while \(\sigma=0\) and \(d\sigma\ne0\).  The selected root is
+exactly double: \(P=P_T=0\) and \(P_{TT}\ne0\).  Its quadratic tangent cone
+has rank two.
+
+The rational root chart exhibits both normalization branches without a
+formal-factorization guess.  They are
+
+\[
+\begin{aligned}
+ (U_1,V_1)&=
+ \left(0,-\frac{\alpha_0+2\beta+6}{2}\right),\\
+ (U_2,V_2)&=
+ \left(\frac{\alpha_0}{2},-\beta-3\right).
+\end{aligned}                                      \tag{6.75}
+\]
+
+Both map to \((\alpha_0,\beta,T_0)\).  The two coefficient-plane
+Jacobians are respectively
+
+\[
+ -\frac{32}{27},\qquad -4,                          \tag{6.76}
+\]
+
+so both are etale root sections.  Together with the rank-two tangent cone,
+this proves that the root incidence is etale-locally an ordinary
+two-branch crossing along the smooth conductor \(\sigma=0\).
+
+The pullbacks distinguish the conic on the two branches.  With
+
+\[
+ J_3=U^3-12UV^2-36UV-108U
+     -16V^3-72V^2-216V-216,
+\]
+
+one has
+
+\[
+ q_2=\frac{UK^2J_3}{H^2},
+ \qquad
+ \ell=\frac{3UK^3G_5}{H^3}.                         \tag{6.77}
+\]
+
+At \((U_1,V_1)\), both \(J_3\) and \(G_5\) are units, so
+\(\mathfrak p\) pulls back to the conic divisor \(U=0\).  At
+\((U_2,V_2)\), both vanish and
+
+\[
+ \det\frac{\partial(J_3,G_5)}{\partial(U,V)}\ne0,   \tag{6.78}
+\]
+
+so the pullback of \(\mathfrak p\) is only a reduced codimension-two point
+on the other branch.  Finally,
+
+\[
+ \det\frac{\partial(q_2,\sigma)}
+          {\partial(\alpha,\beta)}
+ (\alpha_0,\beta)=\frac{27648}{5},                  \tag{6.79}
+\]
+
+so the conic meets the conductor transversely.
+
+Now suppose a regular root-algebra function had positive divisor
+\(m\mathfrak p\) and no other height-one support.  On the first
+normalization branch its restriction to the conductor vanishes to order
+\(m\) by (6.79).  Functions descending through an ordinary conductor node
+have equal restrictions from the two branches.  Hence the pullback to the
+second branch is a nonunit.  The principal ideal theorem gives a
+height-one zero there, whereas (6.78) says that \(\mathfrak p\) itself has
+no divisorial pullback on that branch.  This is a second support component,
+a contradiction.  Therefore
+
+\[
+ \boxed{
+ \text{no positive principal divisor has height-one support only }
+ \mathfrak p.
+ }                                                   \tag{6.80}
+\]
+
+Thus the second pair is not a missing finite Cartier-index computation: it
+is a nonnormal conductor obstruction, and every positive multiplicity is
+excluded.  The rational conic route is closed.
+
 ## 7. Structured next search
 
-Both corrected-selector factorizations are now closed, and (6.48) gives a
-sharp first lower bound for their replacement.  The next search should
-start on the degree-sixteen norm stratum before doing any contraction:
+Both corrected-selector factorizations are now closed, (6.48) gives a
+sharp first lower bound for their replacement, and Sections 6.11--6.12
+identify both the rational fixed-infinity strata and the source curve of
+the moving discriminant.  The next search should exploit this critical
+curve before doing any contraction:
 
-1. stratify the projective parameter plane
-   \(\mathbb P\langle q_0,q_1,q_3\rangle\) by norm factorization and
-   normalization genus;
-2. retain only parameters for which every indispensable norm component is
-   rational;
-3. only then compute the normalized discriminant-lattice span and
-   relative-ampleness cone;
+1. implicitize the degree-\((19,18,18)\) kernel map on
+   \(\mathscr D_{23}\), or cover it by smaller resultant charts, and locate
+   parameter values with multiple critical preimages;
+2. compute the extra delta contribution at the rational points and
+   self-intersections of that image, retaining only parameters for which
+   every indispensable norm component is rational;
+3. discard the conic support by (6.80), and search for a different rational
+   horizontal prime whose normalization avoids a two-branch conductor
+   mismatch;
 4. test polynomial divisibility and construct affine coordinates only for
    a candidate which passes those preceding gates;
 5. if the degree-sixteen plane has no rational member, move to the
@@ -1504,8 +2025,12 @@ Nor can extra selector primes repair (6.29): the terminal defect is already
 present in the class of its forced strict \(B_0\) pole.  The curvette split
 removes that defect but exposes independent genus-thirteen and
 genus-twenty obstructions.
-The next exact frontier is therefore a rational-horizontal selector search,
-not polynomial contraction of either existing split.
+The conic branch is closed for every positive multiplicity by (6.80).
+The next exact frontier is therefore a different rational-horizontal
+selector found through the implicitized moving critical image, followed by
+the same normalization/conductor test before any affine contraction.  It is
+not a rational degeneration inside \((q_2,\ell)\), nor polynomial
+contraction of either existing split.
 
 ## 8. Reproduction
 
@@ -1520,9 +2045,11 @@ Run
 Singular -q scripts/verify_a4_corrected_boundary_genus.sing
 .venv/bin/python scripts/verify_a4_genus_zero_selector_search.py
 Singular -q scripts/verify_a4_genus_zero_selector_search.sing
+.venv/bin/python scripts/verify_a4_sharp_selector_plane.py
+.venv/bin/python scripts/verify_a4_conic_principal_obstruction.py
 ```
 
-The checker verifies the compact inverse basis, the two-coordinate
+The first checker verifies the compact inverse basis, the two-coordinate
 Jacobian identity, generic root-field recovery, the square-discriminant
 specialization, the residual \(\sigma\)-pole, the selected rational root,
 and the complete comparison with the ordinary \((U,V)\)-chart ledger.  The
@@ -1561,3 +2088,18 @@ sharp horizontal norm-degree floor sixteen.  The final Singular checker
 verifies irreducibility and genera twelve and fourteen for two sharp-bound
 norms, and genus twelve for one displayed \(a^3\)-perturbation.  It does
 not classify the full degree-sixteen parameter plane.
+The final Python checker constructs the degree-ten strict model of the
+sharp selector plane, proves generic absolute irreducibility, and verifies
+the complete rational fixed-infinity tangent-cone hierarchy and the exact
+genera nine and ten of its two terminal members.  It factors the critical
+determinant, checks the exceptional conic rank drops, and verifies the
+moving-discriminant selectors \([77:-16:-8]\) and \([103:-16:8]\).  The
+latter supplies a rational conic norm factor but retains an absolutely
+irreducible genus-ten residual.  The checker also runs explicitly bounded
+height-six factorization and height-three genus censuses; the full
+parameter-plane discriminant remains open.
+The final conic-principal checker purifies that rational component to
+\((q_2,\ell)\), replaces the genus-ten residual by an absolutely
+irreducible genus-two residual, and computes the four-point non-Cartier
+locus which obstructs coefficient-one principal isolation.  It does not
+exclude a support-only positive multiple or construct a Keller map.

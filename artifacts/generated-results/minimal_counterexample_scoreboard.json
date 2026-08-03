@@ -27,11 +27,11 @@
       "upper_bound_reason": "the certified stable normal-form route gives a 451-variable Druzkowski collision"
     },
     "GMC_failure_real_Gaussian_dimension": {
-      "lower_bound": 2,
+      "lower_bound": 3,
       "upper_bound": 3,
-      "exact_value": null,
-      "status": "open interval",
-      "lower_bound_reason": "GMC(1) is proved",
+      "exact_value": 3,
+      "status": "exact",
+      "lower_bound_reason": "the lower-face prime theorem proves GMC(2)",
       "upper_bound_reason": "Long gives an explicit counterexample in 3 real Gaussian variables"
     },
     "SIC_failure_pair_dimension": {

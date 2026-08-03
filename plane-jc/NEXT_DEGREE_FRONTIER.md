@@ -112,8 +112,12 @@ Open work, in dependency order:
    of the remaining divisorial valuation degrees.
 2. **Glue the explicit F2 target row globally.**  The B0 replay in
    [`F2_75_125_DERIVATION.md`](F2_75_125_DERIVATION.md) remains an
-   over-envelope rather than an exclusion: layers 39 through 36 continue the
-   common root and layer 35 has a genuine `lambda*C0^2` mode.  The retained
+   over-envelope rather than an exclusion.  The corrected exact tangent keeps
+   every P-band direction (first-five kernel dimensions `6,6,7,7,10`); the
+   layer-35 extra is a commuting `C0^4`, not `lambda*C0^(-1)`, whose formal
+   resonance occurs only at layer 10 and is not a source kernel.  Nonlinear
+   rows recover a source root through descent 7 and isolate the first local
+   defect as `27*y^2-9*y+1=0` at descent 8.  The retained
    contact audit in
    [`F2_BOUNDARY_HANDOFF.md`](F2_BOUNDARY_HANDOFF.md) proves that raw contact
    multiplicities cannot be promoted to boundary rows.  The later

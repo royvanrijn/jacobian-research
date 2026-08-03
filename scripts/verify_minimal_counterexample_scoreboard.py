@@ -158,9 +158,9 @@ def main() -> None:
             ),
             "Druzkowski_Keller_noninvertibility": frontiers["n_Dru"],
             "GMC_failure_real_Gaussian_dimension": interval(
-                2,
                 3,
-                "GMC(1) is proved",
+                3,
+                "the lower-face prime theorem proves GMC(2)",
                 "Long gives an explicit counterexample in 3 real Gaussian variables",
             ),
             "SIC_failure_pair_dimension": interval(
@@ -323,7 +323,7 @@ def main() -> None:
         "19 / SIC 2 / GVC 5 / Laplacian 40 / HN 38"
     )
     print("PASS scoreboard: exact minimum SIC pair dimension is 2")
-    print("PASS scoreboard: GMC failure dimension is in [2,3]")
+    print("PASS scoreboard: exact GMC failure dimension is 3")
     print("PASS scoreboard: exact minimum Gaussian counterexample degree is 3")
     print("PASS scoreboard: exact minimum genuinely ungraded geometric degree is 3")
     print("PASS scoreboard: all 121 two-real cubic four-weight charts excluded")

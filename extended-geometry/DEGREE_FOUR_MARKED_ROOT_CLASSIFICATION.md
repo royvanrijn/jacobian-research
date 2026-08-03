@@ -291,18 +291,22 @@ known polynomial Keller lift.
 
 | defect from Section 1 | quartic candidate | invariant/test | present status |
 |---|---|---|---|
-| nonreduced one-place ramification | `D=q-h(w)` with core Jacobian `D^3` and `deg h=1`, since `3*1+1=4` | `e_Delta=4` | plane core exists; polynomial divisor-minimal Keller suspension unknown |
+| nonreduced one-place ramification | `D=q-h(w)` with core Jacobian `D^3` and `deg h=1`, since `3*1+1=4` | `e_Delta=4` | [every standard weighted pure-`C` ledger excluded and every `z`-linear standard reciprocal lift has floor 11](ORDINARY_DEGREE_SIX_BOUNDARY_AUDIT.md#4-the-total-ramification-d3-core); other lifts open |
 | missing primitive `G_m` valuation | `s=Y^{-m}`, `q=pY^{-m}+L(Y)` for a nonmonomial Laurent polynomial `L` | puncture valuations and Newton polygon | core embeddings exist; admissible quartic lift unknown |
 | unstraightened polynomial chart | the weighted core (2.1) with an exotic one-boundary completion of `A^3` | chart orientation, affine-modification center, boundary Stein data | this is the remaining weighted lift problem |
 | nontrivial target ledger | a core divisor canceled by a target-chart divisor | relative Jacobian `b`-divisor | outside the current dichotomy; no quartic example known |
 | nonrational or three-puncture critical normalization | any degree-four core not covered by the `A^1/G_m` lemma | genus and unit rank | not excluded by (4.1) alone |
 | incomplete boundary supply | a hidden prime or higher-codimension reconstruction failure | local sums `sum ef=4` and normalization saturation | excluded only when the two-vertex hypothesis is proved complete |
 
-The first row is the sharpest numerical third-skeleton candidate. Degree
-four does **not** remove it: an arbitrary-power coordinate-preserving core
-has inverse degree `r deg(h)+1`, and `(r,deg h)=(3,1)` is the second
-factorization of three besides the reduced weighted case `(1,3)`. What is
-missing is a constant-Jacobian threefold suspension, not a plane formula.
+The first row remains the sharpest numerical third-skeleton candidate, but
+its elementary lifts are now narrower.  Degree four does **not** remove the
+core itself: an arbitrary-power coordinate-preserving core has inverse
+degree `r deg(h)+1`, and `(r,deg h)=(3,1)` is the second factorization of
+three besides the reduced weighted case `(1,3)`.  The standard weighted
+source with any target Jacobian supported only on its single `C` boundary
+cannot be Keller, and every `z`-linear clearing in the standard reciprocal
+chart has ordinary-degree floor eleven.  What remains is a nonmultiplicative
+or distributed-target threefold suspension, not a plane formula.
 
 The smallest shared-reconstruction-variable two-divisor triangular ansatz
 does not add a row: its exact determinant acquires a third divisor unless
@@ -321,9 +325,11 @@ following checkpoints.
 2. **Bound the critical normalization.** Prove from degree four and the two
    complete boundary vertices that the core is rational with at most two
    punctures.
-3. **Exclude total ramification.** Show that the `D^3`, linear-section core
-   cannot satisfy a polynomial threefold determinant ledger, or construct
-   its lift.
+3. **Finish total ramification.** The elementary monomial weighted and
+   standard reciprocal ledgers are excluded by the
+   [degree-six boundary audit](ORDINARY_DEGREE_SIX_BOUNDARY_AUDIT.md#4-the-total-ramification-d3-core).
+   Exclude every remaining nonmultiplicative or target-ledger lift, or
+   construct one.
 4. **Make the primitive marking automatic.** Exclude nonmonomial Laurent
    functions in inverse degree four.
 5. **Straighten the vertical chart.** Prove the polynomial chart is weighted

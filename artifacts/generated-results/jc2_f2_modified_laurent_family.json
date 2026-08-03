@@ -1,0 +1,1191 @@
+{
+  "artinian_maximal_minor_generators": {
+    "r2_d2_h2": [],
+    "r2_d3_h2": [
+      "-3*(p2**5 - 8*p2**3*p4 - 12*p2**2*p3**2 + 16*p2**2*p6 + 32*p2*p3*p5 + 16*p2*p4**2 + 16*p3**2*p4 - 64*p4*p6 - 32*p5**2)/256",
+      "-3*(5*p2**4*p3 - 8*p2**3*p5 - 24*p2**2*p3*p4 - 8*p2*p3**3 + 32*p2*p3*p6 + 32*p2*p4*p5 + 16*p3**2*p5 + 16*p3*p4**2 - 64*p5*p6)/256"
+    ],
+    "r3_d2_h2": [
+      "-5*(7*p2**4*p3 - 12*p2**3*p5 - 36*p2**2*p3*p4 - 12*p2*p3**3 + 54*p2*p3*p6 + 54*p2*p4*p5 + 27*p3**2*p5 + 27*p3*p4**2 - 162*p5*p6)/729"
+    ],
+    "r3_d2_h4": [],
+    "r3_d3_h2": [
+      "5*(26*p2**8 - 273*p2**6*p4 - 819*p2**5*p3**2 + 378*p2**5*p6 + 1890*p2**4*p3*p5 + 945*p2**4*p4**2 - 567*p2**4*p8 + 3780*p2**3*p3**2*p4 - 2268*p2**3*p3*p7 - 2268*p2**3*p4*p6 - 1134*p2**3*p5**2 + 945*p2**2*p3**4 - 3402*p2**2*p3**2*p6 - 6804*p2**2*p3*p4*p5 + 2916*p2**2*p3*p9 - 1134*p2**2*p4**3 + 2916*p2**2*p4*p8 + 2916*p2**2*p5*p7 + 1458*p2**2*p6**2 - 2268*p2*p3**3*p5 - 3402*p2*p3**2*p4**2 + 2916*p2*p3**2*p8 + 5832*p2*p3*p4*p7 + 5832*p2*p3*p5*p6 + 2916*p2*p4**2*p6 + 2916*p2*p4*p5**2 - 4374*p2*p5*p9 - 4374*p2*p6*p8 - 2187*p2*p7**2 - 567*p3**4*p4 + 972*p3**3*p7 + 2916*p3**2*p4*p6 + 1458*p3**2*p5**2 + 2916*p3*p4**2*p5 - 4374*p3*p4*p9 - 4374*p3*p5*p8 - 4374*p3*p6*p7 + 243*p4**4 - 2187*p4**2*p8 - 4374*p4*p5*p7 - 2187*p4*p6**2 - 2187*p5**2*p6 + 13122*p7*p9 + 6561*p8**2)/59049",
+      "5*(208*p2**7*p3 - 273*p2**6*p5 - 1638*p2**5*p3*p4 + 378*p2**5*p7 - 1365*p2**4*p3**3 + 1890*p2**4*p3*p6 + 1890*p2**4*p4*p5 - 567*p2**4*p9 + 3780*p2**3*p3**2*p5 + 3780*p2**3*p3*p4**2 - 2268*p2**3*p3*p8 - 2268*p2**3*p4*p7 - 2268*p2**3*p5*p6 + 3780*p2**2*p3**3*p4 - 3402*p2**2*p3**2*p7 - 6804*p2**2*p3*p4*p6 - 3402*p2**2*p3*p5**2 - 3402*p2**2*p4**2*p5 + 2916*p2**2*p4*p9 + 2916*p2**2*p5*p8 + 2916*p2**2*p6*p7 + 378*p2*p3**5 - 2268*p2*p3**3*p6 - 6804*p2*p3**2*p4*p5 + 2916*p2*p3**2*p9 - 2268*p2*p3*p4**3 + 5832*p2*p3*p4*p8 + 5832*p2*p3*p5*p7 + 2916*p2*p3*p6**2 + 2916*p2*p4**2*p7 + 5832*p2*p4*p5*p6 + 972*p2*p5**3 - 4374*p2*p6*p9 - 4374*p2*p7*p8 - 567*p3**4*p5 - 1134*p3**3*p4**2 + 972*p3**3*p8 + 2916*p3**2*p4*p7 + 2916*p3**2*p5*p6 + 2916*p3*p4**2*p6 + 2916*p3*p4*p5**2 - 4374*p3*p5*p9 - 4374*p3*p6*p8 - 2187*p3*p7**2 + 972*p4**3*p5 - 2187*p4**2*p9 - 4374*p4*p5*p8 - 4374*p4*p6*p7 - 2187*p5**2*p7 - 2187*p5*p6**2 + 13122*p8*p9)/59049",
+      "-5*(260*p2**8*p3 - 351*p2**7*p5 - 2457*p2**6*p3*p4 + 441*p2**6*p7 - 2184*p2**5*p3**3 + 2646*p2**5*p3*p6 + 3024*p2**5*p4*p5 - 567*p2**5*p9 + 6615*p2**4*p3**2*p5 + 7560*p2**4*p3*p4**2 - 2835*p2**4*p3*p8 - 3402*p2**4*p4*p7 - 3402*p2**4*p5*p6 + 8820*p2**3*p3**3*p4 - 5670*p2**3*p3**2*p7 - 13608*p2**3*p3*p4*p6 - 6804*p2**3*p3*p5**2 - 7938*p2**3*p4**2*p5 + 3888*p2**3*p4*p9 + 3888*p2**3*p5*p8 + 3888*p2**3*p6*p7 + 1134*p2**2*p3**5 - 5670*p2**2*p3**3*p6 - 20412*p2**2*p3**2*p4*p5 + 4374*p2**2*p3**2*p9 - 7938*p2**2*p3*p4**3 + 11664*p2**2*p3*p4*p8 + 11664*p2**2*p3*p5*p7 + 5832*p2**2*p3*p6**2 + 7290*p2**2*p4**2*p7 + 14580*p2**2*p4*p5*p6 + 2430*p2**2*p5**3 - 4374*p2**2*p6*p9 - 4374*p2**2*p7*p8 - 2835*p2*p3**4*p5 - 6804*p2*p3**3*p4**2 + 2916*p2*p3**3*p8 + 11664*p2*p3**2*p4*p7 + 11664*p2*p3**2*p5*p6 + 14580*p2*p3*p4**2*p6 + 14580*p2*p3*p4*p5**2 - 8748*p2*p3*p5*p9 - 8748*p2*p3*p6*p8 - 4374*p2*p3*p7**2 + 5832*p2*p4**3*p5 - 6561*p2*p4**2*p9 - 13122*p2*p4*p5*p8 - 13122*p2*p4*p6*p7 - 6561*p2*p5**2*p7 - 6561*p2*p5*p6**2 - 567*p3**5*p4 + 729*p3**4*p7 + 3888*p3**3*p4*p6 + 1944*p3**3*p5**2 + 7290*p3**2*p4**2*p5 - 4374*p3**2*p4*p9 - 4374*p3**2*p5*p8 - 4374*p3**2*p6*p7 + 1458*p3*p4**4 - 6561*p3*p4**2*p8 - 13122*p3*p4*p5*p7 - 6561*p3*p4*p6**2 - 6561*p3*p5**2*p6 - 2916*p4**3*p7 - 8748*p4**2*p5*p6 - 2916*p4*p5**3 + 13122*p4*p6*p9 + 13122*p4*p7*p8 + 6561*p5**2*p9 + 13122*p5*p6*p8 + 6561*p5*p7**2 + 6561*p6**2*p7)/177147",
+      "(598*p2**10 - 7605*p2**8*p4 - 34515*p2**7*p3**2 + 10125*p2**7*p6 + 82215*p2**6*p3*p5 + 34965*p2**6*p4**2 - 11340*p2**6*p8 + 238140*p2**5*p3**2*p4 - 85050*p2**5*p3*p7 - 85050*p2**5*p4*p6 - 51030*p2**5*p5**2 + 108675*p2**4*p3**4 - 246645*p2**4*p3**2*p6 - 493290*p2**4*p3*p4*p5 + 83835*p2**4*p3*p9 - 68040*p2**4*p4**3 + 83835*p2**4*p4*p8 + 109350*p2**4*p5*p7 + 54675*p2**4*p6**2 - 362880*p2**3*p3**3*p5 - 459270*p2**3*p3**2*p4**2 + 211410*p2**3*p3**2*p8 + 422820*p2**3*p3*p4*p7 + 524880*p2**3*p3*p5*p6 + 211410*p2**3*p4**2*p6 + 262440*p2**3*p4*p5**2 - 109350*p2**3*p5*p9 - 109350*p2**3*p6*p8 - 54675*p2**3*p7**2 - 246645*p2**2*p3**4*p4 + 240570*p2**2*p3**3*p7 + 721710*p2**2*p3**2*p4*p6 + 437400*p2**2*p3**2*p5**2 + 721710*p2**2*p3*p4**2*p5 - 328050*p2**2*p3*p4*p9 - 459270*p2**2*p3*p5*p8 - 459270*p2**2*p3*p6*p7 + 47385*p2**2*p4**4 - 164025*p2**2*p4**2*p8 - 459270*p2**2*p4*p5*p7 - 229635*p2**2*p4*p6**2 - 295245*p2**2*p5**2*p6 - 17010*p2*p3**6 + 127575*p2*p3**4*p6 + 510300*p2*p3**3*p4*p5 - 131220*p2*p3**3*p9 + 204120*p2*p3**2*p4**3 - 393660*p2*p3**2*p4*p8 - 524880*p2*p3**2*p5*p7 - 262440*p2*p3**2*p6**2 - 393660*p2*p3*p4**2*p7 - 1049760*p2*p3*p4*p5*p6 - 218700*p2*p3*p5**3 + 393660*p2*p3*p6*p9 + 393660*p2*p3*p7*p8 - 131220*p2*p4**3*p6 - 262440*p2*p4**2*p5**2 + 393660*p2*p4*p5*p9 + 393660*p2*p4*p6*p8 + 196830*p2*p4*p7**2 + 295245*p2*p5**2*p8 + 590490*p2*p5*p6*p7 + 98415*p2*p6**3 + 25515*p3**5*p5 + 51030*p3**4*p4**2 - 32805*p3**4*p8 - 131220*p3**3*p4*p7 - 174960*p3**3*p5*p6 - 196830*p3**2*p4**2*p6 - 262440*p3**2*p4*p5**2 + 196830*p3**2*p5*p9 + 196830*p3**2*p6*p8 + 98415*p3**2*p7**2 - 131220*p3*p4**3*p5 + 98415*p3*p4**2*p9 + 393660*p3*p4*p5*p8 + 393660*p3*p4*p6*p7 + 295245*p3*p5**2*p7 + 295245*p3*p5*p6**2 - 4374*p4**5 + 32805*p4**3*p8 + 196830*p4**2*p5*p7 + 98415*p4**2*p6**2 + 295245*p4*p5**2*p6 + 32805*p5**4 - 590490*p5*p6*p9 - 590490*p5*p7*p8 - 295245*p6**2*p8 - 295245*p6*p7**2)/1594323"
+    ],
+    "r3_d3_h4": [
+      "5*(26*p2**8 - 273*p2**6*p4 - 819*p2**5*p3**2 + 378*p2**5*p6 + 1890*p2**4*p3*p5 + 945*p2**4*p4**2 - 567*p2**4*p8 + 3780*p2**3*p3**2*p4 - 2268*p2**3*p3*p7 - 2268*p2**3*p4*p6 - 1134*p2**3*p5**2 + 945*p2**2*p3**4 - 3402*p2**2*p3**2*p6 - 6804*p2**2*p3*p4*p5 + 2916*p2**2*p3*p9 - 1134*p2**2*p4**3 + 2916*p2**2*p4*p8 + 2916*p2**2*p5*p7 + 1458*p2**2*p6**2 - 2268*p2*p3**3*p5 - 3402*p2*p3**2*p4**2 + 2916*p2*p3**2*p8 + 5832*p2*p3*p4*p7 + 5832*p2*p3*p5*p6 + 2916*p2*p4**2*p6 + 2916*p2*p4*p5**2 - 4374*p2*p5*p9 - 4374*p2*p6*p8 - 2187*p2*p7**2 - 567*p3**4*p4 + 972*p3**3*p7 + 2916*p3**2*p4*p6 + 1458*p3**2*p5**2 + 2916*p3*p4**2*p5 - 4374*p3*p4*p9 - 4374*p3*p5*p8 - 4374*p3*p6*p7 + 243*p4**4 - 2187*p4**2*p8 - 4374*p4*p5*p7 - 2187*p4*p6**2 - 2187*p5**2*p6 + 13122*p7*p9 + 6561*p8**2)/59049",
+      "5*(208*p2**7*p3 - 273*p2**6*p5 - 1638*p2**5*p3*p4 + 378*p2**5*p7 - 1365*p2**4*p3**3 + 1890*p2**4*p3*p6 + 1890*p2**4*p4*p5 - 567*p2**4*p9 + 3780*p2**3*p3**2*p5 + 3780*p2**3*p3*p4**2 - 2268*p2**3*p3*p8 - 2268*p2**3*p4*p7 - 2268*p2**3*p5*p6 + 3780*p2**2*p3**3*p4 - 3402*p2**2*p3**2*p7 - 6804*p2**2*p3*p4*p6 - 3402*p2**2*p3*p5**2 - 3402*p2**2*p4**2*p5 + 2916*p2**2*p4*p9 + 2916*p2**2*p5*p8 + 2916*p2**2*p6*p7 + 378*p2*p3**5 - 2268*p2*p3**3*p6 - 6804*p2*p3**2*p4*p5 + 2916*p2*p3**2*p9 - 2268*p2*p3*p4**3 + 5832*p2*p3*p4*p8 + 5832*p2*p3*p5*p7 + 2916*p2*p3*p6**2 + 2916*p2*p4**2*p7 + 5832*p2*p4*p5*p6 + 972*p2*p5**3 - 4374*p2*p6*p9 - 4374*p2*p7*p8 - 567*p3**4*p5 - 1134*p3**3*p4**2 + 972*p3**3*p8 + 2916*p3**2*p4*p7 + 2916*p3**2*p5*p6 + 2916*p3*p4**2*p6 + 2916*p3*p4*p5**2 - 4374*p3*p5*p9 - 4374*p3*p6*p8 - 2187*p3*p7**2 + 972*p4**3*p5 - 2187*p4**2*p9 - 4374*p4*p5*p8 - 4374*p4*p6*p7 - 2187*p5**2*p7 - 2187*p5*p6**2 + 13122*p8*p9)/59049"
+    ]
+  },
+  "claim_boundary": "exact formal systems conditional on the modified common-power chart; the F2 table derives the degree family, but the corner chain does not derive d=2/3, the lower y-supports, or a three-visible-row r=3 F-tail",
+  "compact_residues": [
+    {
+      "artinian_augmented_columns": 11,
+      "artinian_base_columns": 10,
+      "artinian_cokernel_rank": 0,
+      "artinian_fitting_index": null,
+      "artinian_maximal_minor_size": 11,
+      "artinian_module_rank": 10,
+      "artinian_remainder_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "coefficient_map_square_fitting_index": 0,
+      "core_digest": "f9d9247df0ec0cd7c1335bf624c14d67a5b6789863b2171ac7f50eb74a6f0607",
+      "d": 2,
+      "essential_residue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "essential_residue_equations": 0,
+      "essential_residue_rows": [],
+      "f_tail_continues_below_window": true,
+      "jacobian_x_degree": 2,
+      "lambda_eliminated_digest": "c348ecc23f3b70fb6f6f23b17da0c5c1295bbee54067f9d03cb3f198fdb82b2c",
+      "lambda_eliminated_equations": 2,
+      "lambda_eliminated_rows": [
+        1,
+        3
+      ],
+      "lambda_eliminated_variables": 3,
+      "lambda_is_independent_zero_row_pivot": false,
+      "lambda_pivot_row": 2,
+      "polynomial_degree": 4,
+      "polynomial_variables": [
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "r": 2,
+      "toeplitz_matrix_digest": "a0d6ca9ab0f8e6fc0d6919cf40e91bba1980ac1b78009471e942d49b78e70919",
+      "toeplitz_nonzero_witness": {
+        "determinant": "-306261/8192",
+        "lambda": 1,
+        "p_values": [
+          1,
+          -3,
+          -3
+        ]
+      },
+      "toeplitz_shape": [
+        3,
+        3
+      ],
+      "truncation_degree": 9,
+      "visible_f_rows": [
+        1,
+        2,
+        3
+      ],
+      "visible_f_x_exponents": [
+        -1,
+        -2,
+        -3
+      ],
+      "zero_rows": []
+    },
+    {
+      "artinian_augmented_columns": 14,
+      "artinian_base_columns": 13,
+      "artinian_cokernel_rank": 2,
+      "artinian_fitting_index": 1,
+      "artinian_maximal_minor_size": 14,
+      "artinian_module_rank": 15,
+      "artinian_remainder_digest": "32f3343f4af9265666ced7ac50e4642b2763216a8cde3989c199f333b82548c4",
+      "coefficient_map_square_fitting_index": 0,
+      "core_digest": "272c5002d23d2a8e5409e6e8f78ac42ff5b9f2254c692ca2a3f7a0d782bcbc41",
+      "d": 3,
+      "essential_residue_digest": "32f3343f4af9265666ced7ac50e4642b2763216a8cde3989c199f333b82548c4",
+      "essential_residue_equations": 2,
+      "essential_residue_rows": [
+        1,
+        2
+      ],
+      "f_tail_continues_below_window": true,
+      "jacobian_x_degree": 2,
+      "lambda_eliminated_digest": "04a808c84327f63737383a5fe17e6b7939aedb9413524cbe9c517fe8213ea1c0",
+      "lambda_eliminated_equations": 4,
+      "lambda_eliminated_rows": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "lambda_eliminated_variables": 5,
+      "lambda_is_independent_zero_row_pivot": false,
+      "lambda_pivot_row": 3,
+      "polynomial_degree": 6,
+      "polynomial_variables": [
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "r": 2,
+      "toeplitz_matrix_digest": "bee51ad99c27a167a4a11fb6ed9478e9981cbf0a085568a7b051cf80226e69c3",
+      "toeplitz_nonzero_witness": {
+        "determinant": "-483406467723729/1099511627776",
+        "lambda": 1,
+        "p_values": [
+          1,
+          -3,
+          -3,
+          1,
+          -2
+        ]
+      },
+      "toeplitz_shape": [
+        5,
+        5
+      ],
+      "truncation_degree": 14,
+      "visible_f_rows": [
+        3,
+        4,
+        5
+      ],
+      "visible_f_x_exponents": [
+        -3,
+        -4,
+        -5
+      ],
+      "zero_rows": [
+        1,
+        2
+      ]
+    },
+    {
+      "artinian_augmented_columns": 16,
+      "artinian_base_columns": 15,
+      "artinian_cokernel_rank": 1,
+      "artinian_fitting_index": 0,
+      "artinian_maximal_minor_size": 16,
+      "artinian_module_rank": 16,
+      "artinian_remainder_digest": "9baf016bfda0f7049e276b7460a60ca0bff2112e59e6df9fcb9b47bc2d73fb29",
+      "coefficient_map_square_fitting_index": 0,
+      "core_digest": "7a76c4b866d61d25fa8d4dd90cf9f98ac225a741a003fea4ccae83b0df95f8bd",
+      "d": 2,
+      "essential_residue_digest": "9baf016bfda0f7049e276b7460a60ca0bff2112e59e6df9fcb9b47bc2d73fb29",
+      "essential_residue_equations": 1,
+      "essential_residue_rows": [
+        1
+      ],
+      "f_tail_continues_below_window": true,
+      "jacobian_x_degree": 2,
+      "lambda_eliminated_digest": "6161ed5a2c083adbadb6fe176c57831f8b10cd844e704b2392e3b521f569c06a",
+      "lambda_eliminated_equations": 4,
+      "lambda_eliminated_rows": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "lambda_eliminated_variables": 5,
+      "lambda_is_independent_zero_row_pivot": true,
+      "lambda_pivot_row": 2,
+      "polynomial_degree": 6,
+      "polynomial_variables": [
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "r": 3,
+      "toeplitz_matrix_digest": "33ccfd3156b4343f8885d026e809c46648c8f0c4e17d828425e383d672c97742",
+      "toeplitz_nonzero_witness": {
+        "determinant": "-38260869496155232750/5559060566555523",
+        "lambda": 1,
+        "p_values": [
+          1,
+          -3,
+          -3,
+          1,
+          -2
+        ]
+      },
+      "toeplitz_shape": [
+        5,
+        5
+      ],
+      "truncation_degree": 15,
+      "visible_f_rows": [
+        3,
+        4,
+        5
+      ],
+      "visible_f_x_exponents": [
+        -3,
+        -4,
+        -5
+      ],
+      "zero_rows": [
+        1,
+        2
+      ]
+    },
+    {
+      "artinian_augmented_columns": 21,
+      "artinian_base_columns": 20,
+      "artinian_cokernel_rank": 4,
+      "artinian_fitting_index": 3,
+      "artinian_maximal_minor_size": 21,
+      "artinian_module_rank": 24,
+      "artinian_remainder_digest": "46a369e8b4127cf18107f4f4050f2431dfc1c5d310bf3a5cb08bb0347b53459b",
+      "coefficient_map_square_fitting_index": 0,
+      "core_digest": "8eeb9fdbdf5b12a9fa0d6e0cb31d13b911f7f8e7ed554953407fa4e016710f4f",
+      "d": 3,
+      "essential_residue_digest": "00fae1edf284221b2dfba8604a0c973d34bf5cb52f59ccbb32a1d0b7222c5865",
+      "essential_residue_equations": 4,
+      "essential_residue_rows": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "f_tail_continues_below_window": true,
+      "jacobian_x_degree": 2,
+      "lambda_eliminated_digest": "26977c069dcbca353db5c43f5cb2dda1ab9332159c825e0346ca4d67d760b33e",
+      "lambda_eliminated_equations": 7,
+      "lambda_eliminated_rows": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "lambda_eliminated_variables": 8,
+      "lambda_is_independent_zero_row_pivot": true,
+      "lambda_pivot_row": 3,
+      "polynomial_degree": 9,
+      "polynomial_variables": [
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8",
+        "p9"
+      ],
+      "r": 3,
+      "toeplitz_matrix_digest": "118005def4e72395e42399a38202f9fa85a246ddb8277868a8187ba33664a9f1",
+      "toeplitz_nonzero_witness": {
+        "determinant": "1966304594617521968584601591666880041188297690000/107752636643058178097424660240453423951129",
+        "lambda": 1,
+        "p_values": [
+          1,
+          -3,
+          -3,
+          1,
+          -2,
+          -1,
+          4,
+          2
+        ]
+      },
+      "toeplitz_shape": [
+        8,
+        8
+      ],
+      "truncation_degree": 23,
+      "visible_f_rows": [
+        6,
+        7,
+        8
+      ],
+      "visible_f_x_exponents": [
+        -6,
+        -7,
+        -8
+      ],
+      "zero_rows": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "artinian_augmented_columns": 17,
+      "artinian_base_columns": 16,
+      "artinian_cokernel_rank": 0,
+      "artinian_fitting_index": null,
+      "artinian_maximal_minor_size": 17,
+      "artinian_module_rank": 16,
+      "artinian_remainder_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "coefficient_map_square_fitting_index": 0,
+      "core_digest": "7a76c4b866d61d25fa8d4dd90cf9f98ac225a741a003fea4ccae83b0df95f8bd",
+      "d": 2,
+      "essential_residue_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "essential_residue_equations": 0,
+      "essential_residue_rows": [],
+      "f_tail_continues_below_window": true,
+      "jacobian_x_degree": 4,
+      "lambda_eliminated_digest": "97e160234e5fcdfbd6358fa8668ca5d962aaa381b1aaa8138fc19724c123920f",
+      "lambda_eliminated_equations": 4,
+      "lambda_eliminated_rows": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "lambda_eliminated_variables": 5,
+      "lambda_is_independent_zero_row_pivot": false,
+      "lambda_pivot_row": 2,
+      "polynomial_degree": 6,
+      "polynomial_variables": [
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "r": 3,
+      "toeplitz_matrix_digest": "33ccfd3156b4343f8885d026e809c46648c8f0c4e17d828425e383d672c97742",
+      "toeplitz_nonzero_witness": {
+        "determinant": "-38260869496155232750/5559060566555523",
+        "lambda": 1,
+        "p_values": [
+          1,
+          -3,
+          -3,
+          1,
+          -2
+        ]
+      },
+      "toeplitz_shape": [
+        5,
+        5
+      ],
+      "truncation_degree": 15,
+      "visible_f_rows": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "visible_f_x_exponents": [
+        -1,
+        -2,
+        -3,
+        -4,
+        -5
+      ],
+      "zero_rows": []
+    },
+    {
+      "artinian_augmented_columns": 23,
+      "artinian_base_columns": 22,
+      "artinian_cokernel_rank": 2,
+      "artinian_fitting_index": 1,
+      "artinian_maximal_minor_size": 23,
+      "artinian_module_rank": 24,
+      "artinian_remainder_digest": "bcf6aa11956bda1261504c9abb74ff5136f9a8516e6ef13d5385a017795b6b53",
+      "coefficient_map_square_fitting_index": 0,
+      "core_digest": "8eeb9fdbdf5b12a9fa0d6e0cb31d13b911f7f8e7ed554953407fa4e016710f4f",
+      "d": 3,
+      "essential_residue_digest": "bcf6aa11956bda1261504c9abb74ff5136f9a8516e6ef13d5385a017795b6b53",
+      "essential_residue_equations": 2,
+      "essential_residue_rows": [
+        1,
+        2
+      ],
+      "f_tail_continues_below_window": true,
+      "jacobian_x_degree": 4,
+      "lambda_eliminated_digest": "cea160eef9cd7e47b297f9e8d9ca34037b7b4e382ebc0ae8c84d1ea838b70eb6",
+      "lambda_eliminated_equations": 7,
+      "lambda_eliminated_rows": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "lambda_eliminated_variables": 8,
+      "lambda_is_independent_zero_row_pivot": true,
+      "lambda_pivot_row": 3,
+      "polynomial_degree": 9,
+      "polynomial_variables": [
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8",
+        "p9"
+      ],
+      "r": 3,
+      "toeplitz_matrix_digest": "118005def4e72395e42399a38202f9fa85a246ddb8277868a8187ba33664a9f1",
+      "toeplitz_nonzero_witness": {
+        "determinant": "1966304594617521968584601591666880041188297690000/107752636643058178097424660240453423951129",
+        "lambda": 1,
+        "p_values": [
+          1,
+          -3,
+          -3,
+          1,
+          -2,
+          -1,
+          4,
+          2
+        ]
+      },
+      "toeplitz_shape": [
+        8,
+        8
+      ],
+      "truncation_degree": 23,
+      "visible_f_rows": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "visible_f_x_exponents": [
+        -4,
+        -5,
+        -6,
+        -7,
+        -8
+      ],
+      "zero_rows": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "congruence_support_bracket": {
+    "all_r_X4_consequence": "for any r and integer d>=2 with d*r>=6, an X^4 congruence section can escape this gate only at d=5",
+    "assumptions": "r>=2, d>=2, 0<=h<=d*r-2, B(t) belongs to K[y,y^(-1)][t^d], and the required bracket has nonzero x-degree-h leading coefficient",
+    "certified_r3_X4_test": "h=4 gives h+1=5; both d=2 and d=3 congruence sections are excluded because neither 2 nor 3 divides 5",
+    "checked_compiler_cases": [
+      {
+        "d": 2,
+        "d_divides_h_plus_1": false,
+        "first_visible_core_on_congruence_section": "0",
+        "first_visible_row_k0": 1,
+        "jacobian_x_degree_h": 2,
+        "lambda_series_index": -1,
+        "main_series_index": 7,
+        "nonzero_bracket_verdict": "excluded",
+        "r": 2
+      },
+      {
+        "d": 3,
+        "d_divides_h_plus_1": true,
+        "first_visible_core_on_congruence_section": "(3*c1**4 - 24*c1**2*c2 + 48*c2**2 + 128*lam)/128",
+        "first_visible_row_k0": 3,
+        "jacobian_x_degree_h": 2,
+        "lambda_series_index": 0,
+        "main_series_index": 12,
+        "nonzero_bracket_verdict": "not decided",
+        "r": 2
+      },
+      {
+        "d": 2,
+        "d_divides_h_plus_1": false,
+        "first_visible_core_on_congruence_section": "0",
+        "first_visible_row_k0": 3,
+        "jacobian_x_degree_h": 2,
+        "lambda_series_index": 1,
+        "main_series_index": 13,
+        "nonzero_bracket_verdict": "excluded",
+        "r": 3
+      },
+      {
+        "d": 3,
+        "d_divides_h_plus_1": true,
+        "first_visible_core_on_congruence_section": "-(65*c1**7 - 630*c1**5*c2 + 945*c1**4*c3 + 1890*c1**3*c2**2 - 4860*c1**2*c2*c3 - 1620*c1*c2**3 + 3645*c1*c3**2 + 6561*c1*lam + 3645*c2**2*c3)/19683",
+        "first_visible_row_k0": 6,
+        "jacobian_x_degree_h": 2,
+        "lambda_series_index": 3,
+        "main_series_index": 21,
+        "nonzero_bracket_verdict": "not decided",
+        "r": 3
+      },
+      {
+        "d": 2,
+        "d_divides_h_plus_1": false,
+        "first_visible_core_on_congruence_section": "0",
+        "first_visible_row_k0": 1,
+        "jacobian_x_degree_h": 4,
+        "lambda_series_index": -1,
+        "main_series_index": 11,
+        "nonzero_bracket_verdict": "excluded",
+        "r": 3
+      },
+      {
+        "d": 3,
+        "d_divides_h_plus_1": false,
+        "first_visible_core_on_congruence_section": "0",
+        "first_visible_row_k0": 4,
+        "jacobian_x_degree_h": 4,
+        "lambda_series_index": 1,
+        "main_series_index": 19,
+        "nonzero_bracket_verdict": "excluded",
+        "r": 3
+      }
+    ],
+    "first_visible_row": "k0=d*r-h-1",
+    "scope": "this eliminates the congruence sections inside the conditional common-power charts, not the full d=2 or d=3 residues",
+    "series_indices": {
+      "lambda": "d*(r-1)-(h+1)",
+      "main": "d*(3*r-1)-(h+1)"
+    },
+    "theorem": "if d does not divide h+1, the first visible F coefficient vanishes identically on the congruence section, so that section cannot realize a nonzero bracket of x-degree h"
+  },
+  "endpoint_binomial_branch": {
+    "assumptions": "r>=2, d>=2, a!=0, n=d*r",
+    "bracket_warning": "this endpoint section sets the first visible F coefficient to zero unless its row is the lambda pivot; a nonzero bracket can therefore exclude this special section even though it proves the residue ideal is not the unit ideal",
+    "checked_compiler_cases": [
+      {
+        "core_rows_killed": 3,
+        "d": 2,
+        "jacobian_x_degree": 2,
+        "polynomial_degree_n": 4,
+        "r": 2
+      },
+      {
+        "core_rows_killed": 5,
+        "d": 3,
+        "jacobian_x_degree": 2,
+        "polynomial_degree_n": 6,
+        "r": 2
+      },
+      {
+        "core_rows_killed": 5,
+        "d": 2,
+        "jacobian_x_degree": 2,
+        "polynomial_degree_n": 6,
+        "r": 3
+      },
+      {
+        "core_rows_killed": 8,
+        "d": 3,
+        "jacobian_x_degree": 2,
+        "polynomial_degree_n": 9,
+        "r": 3
+      },
+      {
+        "core_rows_killed": 5,
+        "d": 2,
+        "jacobian_x_degree": 4,
+        "polynomial_degree_n": 6,
+        "r": 3
+      },
+      {
+        "core_rows_killed": 8,
+        "d": 3,
+        "jacobian_x_degree": 4,
+        "polynomial_degree_n": 9,
+        "r": 3
+      }
+    ],
+    "compiled_row_statement": "R_k=0 for every 1<=k<n, with every visible F coefficient set to zero; hence every compiled residue/Fitting ideal is proper",
+    "first_nonzero_lower_core_row": {
+      "Q_x_exponent": "-(n+d)",
+      "coefficient": "((2*r-1)*(r-1)/(3*r^3))*a^3",
+      "row": "k=n+d"
+    },
+    "lambda": "-((2*r-1)*(r-1)/(2*r^2))*a^2",
+    "section": "B(t)=1+a*t^n",
+    "support_reason": "d*(2*r-1)+k=2*n-d+k is divisible by n only at k=d, and 0<=k-d<n has B^(-1/r) support only at k=d"
+  },
+  "essential_residue_fitting_generators": {
+    "r2_d2_h2": [],
+    "r2_d3_h2": [
+      "-3*(p2**5 - 8*p2**3*p4 - 12*p2**2*p3**2 + 16*p2**2*p6 + 32*p2*p3*p5 + 16*p2*p4**2 + 16*p3**2*p4 - 64*p4*p6 - 32*p5**2)/256",
+      "-3*(5*p2**4*p3 - 8*p2**3*p5 - 24*p2**2*p3*p4 - 8*p2*p3**3 + 32*p2*p3*p6 + 32*p2*p4*p5 + 16*p3**2*p5 + 16*p3*p4**2 - 64*p5*p6)/256"
+    ],
+    "r3_d2_h2": [
+      "-5*(7*p2**4*p3 - 12*p2**3*p5 - 36*p2**2*p3*p4 - 12*p2*p3**3 + 54*p2*p3*p6 + 54*p2*p4*p5 + 27*p3**2*p5 + 27*p3*p4**2 - 162*p5*p6)/729"
+    ],
+    "r3_d2_h4": [],
+    "r3_d3_h2": [
+      "5*(26*p2**8 - 273*p2**6*p4 - 819*p2**5*p3**2 + 378*p2**5*p6 + 1890*p2**4*p3*p5 + 945*p2**4*p4**2 - 567*p2**4*p8 + 3780*p2**3*p3**2*p4 - 2268*p2**3*p3*p7 - 2268*p2**3*p4*p6 - 1134*p2**3*p5**2 + 945*p2**2*p3**4 - 3402*p2**2*p3**2*p6 - 6804*p2**2*p3*p4*p5 + 2916*p2**2*p3*p9 - 1134*p2**2*p4**3 + 2916*p2**2*p4*p8 + 2916*p2**2*p5*p7 + 1458*p2**2*p6**2 - 2268*p2*p3**3*p5 - 3402*p2*p3**2*p4**2 + 2916*p2*p3**2*p8 + 5832*p2*p3*p4*p7 + 5832*p2*p3*p5*p6 + 2916*p2*p4**2*p6 + 2916*p2*p4*p5**2 - 4374*p2*p5*p9 - 4374*p2*p6*p8 - 2187*p2*p7**2 - 567*p3**4*p4 + 972*p3**3*p7 + 2916*p3**2*p4*p6 + 1458*p3**2*p5**2 + 2916*p3*p4**2*p5 - 4374*p3*p4*p9 - 4374*p3*p5*p8 - 4374*p3*p6*p7 + 243*p4**4 - 2187*p4**2*p8 - 4374*p4*p5*p7 - 2187*p4*p6**2 - 2187*p5**2*p6 + 13122*p7*p9 + 6561*p8**2)/59049",
+      "5*(208*p2**7*p3 - 273*p2**6*p5 - 1638*p2**5*p3*p4 + 378*p2**5*p7 - 1365*p2**4*p3**3 + 1890*p2**4*p3*p6 + 1890*p2**4*p4*p5 - 567*p2**4*p9 + 3780*p2**3*p3**2*p5 + 3780*p2**3*p3*p4**2 - 2268*p2**3*p3*p8 - 2268*p2**3*p4*p7 - 2268*p2**3*p5*p6 + 3780*p2**2*p3**3*p4 - 3402*p2**2*p3**2*p7 - 6804*p2**2*p3*p4*p6 - 3402*p2**2*p3*p5**2 - 3402*p2**2*p4**2*p5 + 2916*p2**2*p4*p9 + 2916*p2**2*p5*p8 + 2916*p2**2*p6*p7 + 378*p2*p3**5 - 2268*p2*p3**3*p6 - 6804*p2*p3**2*p4*p5 + 2916*p2*p3**2*p9 - 2268*p2*p3*p4**3 + 5832*p2*p3*p4*p8 + 5832*p2*p3*p5*p7 + 2916*p2*p3*p6**2 + 2916*p2*p4**2*p7 + 5832*p2*p4*p5*p6 + 972*p2*p5**3 - 4374*p2*p6*p9 - 4374*p2*p7*p8 - 567*p3**4*p5 - 1134*p3**3*p4**2 + 972*p3**3*p8 + 2916*p3**2*p4*p7 + 2916*p3**2*p5*p6 + 2916*p3*p4**2*p6 + 2916*p3*p4*p5**2 - 4374*p3*p5*p9 - 4374*p3*p6*p8 - 2187*p3*p7**2 + 972*p4**3*p5 - 2187*p4**2*p9 - 4374*p4*p5*p8 - 4374*p4*p6*p7 - 2187*p5**2*p7 - 2187*p5*p6**2 + 13122*p8*p9)/59049",
+      "-5*(494*p2**8*p3 - 624*p2**7*p5 - 4368*p2**6*p3*p4 + 819*p2**6*p7 - 4368*p2**5*p3**3 + 4914*p2**5*p3*p6 + 4914*p2**5*p4*p5 - 1134*p2**5*p9 + 12285*p2**4*p3**2*p5 + 12285*p2**4*p3*p4**2 - 5670*p2**4*p3*p8 - 5670*p2**4*p4*p7 - 5670*p2**4*p5*p6 + 16380*p2**3*p3**3*p4 - 11340*p2**3*p3**2*p7 - 22680*p2**3*p3*p4*p6 - 11340*p2**3*p3*p5**2 - 11340*p2**3*p4**2*p5 + 6804*p2**3*p4*p9 + 6804*p2**3*p5*p8 + 6804*p2**3*p6*p7 + 2457*p2**2*p3**5 - 11340*p2**2*p3**3*p6 - 34020*p2**2*p3**2*p4*p5 + 10206*p2**2*p3**2*p9 - 11340*p2**2*p3*p4**3 + 20412*p2**2*p3*p4*p8 + 20412*p2**2*p3*p5*p7 + 10206*p2**2*p3*p6**2 + 10206*p2**2*p4**2*p7 + 20412*p2**2*p4*p5*p6 + 3402*p2**2*p5**3 - 8748*p2**2*p6*p9 - 8748*p2**2*p7*p8 - 5670*p2*p3**4*p5 - 11340*p2*p3**3*p4**2 + 6804*p2*p3**3*p8 + 20412*p2*p3**2*p4*p7 + 20412*p2*p3**2*p5*p6 + 20412*p2*p3*p4**2*p6 + 20412*p2*p3*p4*p5**2 - 17496*p2*p3*p5*p9 - 17496*p2*p3*p6*p8 - 8748*p2*p3*p7**2 + 6804*p2*p4**3*p5 - 8748*p2*p4**2*p9 - 17496*p2*p4*p5*p8 - 17496*p2*p4*p6*p7 - 8748*p2*p5**2*p7 - 8748*p2*p5*p6**2 + 13122*p2*p8*p9 - 1134*p3**5*p4 + 1701*p3**4*p7 + 6804*p3**3*p4*p6 + 3402*p3**3*p5**2 + 10206*p3**2*p4**2*p5 - 8748*p3**2*p4*p9 - 8748*p3**2*p5*p8 - 8748*p3**2*p6*p7 + 1701*p3*p4**4 - 8748*p3*p4**2*p8 - 17496*p3*p4*p5*p7 - 8748*p3*p4*p6**2 - 8748*p3*p5**2*p6 + 13122*p3*p7*p9 + 6561*p3*p8**2 - 2916*p4**3*p7 - 8748*p4**2*p5*p6 - 2916*p4*p5**3 + 13122*p4*p6*p9 + 13122*p4*p7*p8 + 6561*p5**2*p9 + 13122*p5*p6*p8 + 6561*p5*p7**2 + 6561*p6**2*p7)/177147",
+      "(988*p2**10 - 12870*p2**8*p4 - 56160*p2**7*p3**2 + 15795*p2**7*p6 + 122850*p2**6*p3*p5 + 61425*p2**6*p4**2 - 19845*p2**6*p8 + 405405*p2**5*p3**2*p4 - 136080*p2**5*p3*p7 - 136080*p2**5*p4*p6 - 68040*p2**5*p5**2 + 184275*p2**4*p3**4 - 382725*p2**4*p3**2*p6 - 765450*p2**4*p3*p4*p5 + 153090*p2**4*p3*p9 - 127575*p2**4*p4**3 + 153090*p2**4*p4*p8 + 153090*p2**4*p5*p7 + 76545*p2**4*p6**2 - 567000*p2**3*p3**3*p5 - 850500*p2**3*p3**2*p4**2 + 357210*p2**3*p3**2*p8 + 714420*p2**3*p3*p4*p7 + 714420*p2**3*p3*p5*p6 + 357210*p2**3*p4**2*p6 + 357210*p2**3*p4*p5**2 - 174960*p2**3*p5*p9 - 174960*p2**3*p6*p8 - 87480*p2**3*p7**2 - 467775*p2**2*p3**4*p4 + 408240*p2**2*p3**3*p7 + 1224720*p2**2*p3**2*p4*p6 + 612360*p2**2*p3**2*p5**2 + 1224720*p2**2*p3*p4**2*p5 - 656100*p2**2*p3*p4*p9 - 656100*p2**2*p3*p5*p8 - 656100*p2**2*p3*p6*p7 + 102060*p2**2*p4**4 - 328050*p2**2*p4**2*p8 - 656100*p2**2*p4*p5*p7 - 328050*p2**2*p4*p6**2 - 328050*p2**2*p5**2*p6 + 196830*p2**2*p7*p9 + 98415*p2**2*p8**2 - 34020*p2*p3**6 + 229635*p2*p3**4*p6 + 918540*p2*p3**3*p4*p5 - 262440*p2*p3**3*p9 + 459270*p2*p3**2*p4**3 - 787320*p2*p3**2*p4*p8 - 787320*p2*p3**2*p5*p7 - 393660*p2*p3**2*p6**2 - 787320*p2*p3*p4**2*p7 - 1574640*p2*p3*p4*p5*p6 - 262440*p2*p3*p5**3 + 590490*p2*p3*p6*p9 + 590490*p2*p3*p7*p8 - 262440*p2*p4**3*p6 - 393660*p2*p4**2*p5**2 + 590490*p2*p4*p5*p9 + 590490*p2*p4*p6*p8 + 295245*p2*p4*p7**2 + 295245*p2*p5**2*p8 + 590490*p2*p5*p6*p7 + 98415*p2*p6**3 + 51030*p3**5*p5 + 127575*p3**4*p4**2 - 76545*p3**4*p8 - 306180*p3**3*p4*p7 - 306180*p3**3*p5*p6 - 459270*p3**2*p4**2*p6 - 459270*p3**2*p4*p5**2 + 393660*p3**2*p5*p9 + 393660*p3**2*p6*p8 + 196830*p3**2*p7**2 - 306180*p3*p4**3*p5 + 393660*p3*p4**2*p9 + 787320*p3*p4*p5*p8 + 787320*p3*p4*p6*p7 + 393660*p3*p5**2*p7 + 393660*p3*p5*p6**2 - 590490*p3*p8*p9 - 15309*p4**5 + 131220*p4**3*p8 + 393660*p4**2*p5*p7 + 196830*p4**2*p6**2 + 393660*p4*p5**2*p6 - 590490*p4*p7*p9 - 295245*p4*p8**2 + 32805*p5**4 - 590490*p5*p6*p9 - 590490*p5*p7*p8 - 295245*p6**2*p8 - 295245*p6*p7**2)/1594323"
+    ],
+    "r3_d3_h4": [
+      "5*(26*p2**8 - 273*p2**6*p4 - 819*p2**5*p3**2 + 378*p2**5*p6 + 1890*p2**4*p3*p5 + 945*p2**4*p4**2 - 567*p2**4*p8 + 3780*p2**3*p3**2*p4 - 2268*p2**3*p3*p7 - 2268*p2**3*p4*p6 - 1134*p2**3*p5**2 + 945*p2**2*p3**4 - 3402*p2**2*p3**2*p6 - 6804*p2**2*p3*p4*p5 + 2916*p2**2*p3*p9 - 1134*p2**2*p4**3 + 2916*p2**2*p4*p8 + 2916*p2**2*p5*p7 + 1458*p2**2*p6**2 - 2268*p2*p3**3*p5 - 3402*p2*p3**2*p4**2 + 2916*p2*p3**2*p8 + 5832*p2*p3*p4*p7 + 5832*p2*p3*p5*p6 + 2916*p2*p4**2*p6 + 2916*p2*p4*p5**2 - 4374*p2*p5*p9 - 4374*p2*p6*p8 - 2187*p2*p7**2 - 567*p3**4*p4 + 972*p3**3*p7 + 2916*p3**2*p4*p6 + 1458*p3**2*p5**2 + 2916*p3*p4**2*p5 - 4374*p3*p4*p9 - 4374*p3*p5*p8 - 4374*p3*p6*p7 + 243*p4**4 - 2187*p4**2*p8 - 4374*p4*p5*p7 - 2187*p4*p6**2 - 2187*p5**2*p6 + 13122*p7*p9 + 6561*p8**2)/59049",
+      "5*(208*p2**7*p3 - 273*p2**6*p5 - 1638*p2**5*p3*p4 + 378*p2**5*p7 - 1365*p2**4*p3**3 + 1890*p2**4*p3*p6 + 1890*p2**4*p4*p5 - 567*p2**4*p9 + 3780*p2**3*p3**2*p5 + 3780*p2**3*p3*p4**2 - 2268*p2**3*p3*p8 - 2268*p2**3*p4*p7 - 2268*p2**3*p5*p6 + 3780*p2**2*p3**3*p4 - 3402*p2**2*p3**2*p7 - 6804*p2**2*p3*p4*p6 - 3402*p2**2*p3*p5**2 - 3402*p2**2*p4**2*p5 + 2916*p2**2*p4*p9 + 2916*p2**2*p5*p8 + 2916*p2**2*p6*p7 + 378*p2*p3**5 - 2268*p2*p3**3*p6 - 6804*p2*p3**2*p4*p5 + 2916*p2*p3**2*p9 - 2268*p2*p3*p4**3 + 5832*p2*p3*p4*p8 + 5832*p2*p3*p5*p7 + 2916*p2*p3*p6**2 + 2916*p2*p4**2*p7 + 5832*p2*p4*p5*p6 + 972*p2*p5**3 - 4374*p2*p6*p9 - 4374*p2*p7*p8 - 567*p3**4*p5 - 1134*p3**3*p4**2 + 972*p3**3*p8 + 2916*p3**2*p4*p7 + 2916*p3**2*p5*p6 + 2916*p3*p4**2*p6 + 2916*p3*p4*p5**2 - 4374*p3*p5*p9 - 4374*p3*p6*p8 - 2187*p3*p7**2 + 972*p4**3*p5 - 2187*p4**2*p9 - 4374*p4*p5*p8 - 4374*p4*p6*p7 - 2187*p5**2*p7 - 2187*p5*p6**2 + 13122*p8*p9)/59049"
+    ]
+  },
+  "family_formulas": {
+    "bracket_tail_formula": {
+      "assumption": "the chosen modified chart has [P,Q] of x-degree h",
+      "certified_F2_j1_X_chart": "h=4 gives five rows",
+      "first_F_row": "d*r-h-1",
+      "historical_r2_chart": "h=2 gives three rows",
+      "leading_F_x_exponent": "h+1-d*r",
+      "scope": "the formal F tail continues below the visible window",
+      "visible_F_rows": "h+1"
+    },
+    "coefficient_map_toeplitz_fitting_formula": {
+      "entry": "T_(k,q)=[t^(d*(2*r-1)+k-q)]G(t), 1<=k<d*r, 2<=q<=d*r",
+      "full_jacobian": "with columns ordered eliminated-then-free, det(J_full)=r^(d*(3*r-1)-2)*det(T)",
+      "kahler_statement": "on a fixed lambda/F fiber, Fitt_0 of the coefficient-map Kahler module is generated by det(T); this is a generic ramification invariant, not the residue obstruction ideal",
+      "multiplier": "G(t)=((2*r-1)/r)*B(t)*S(t) -(lambda/r)*t^(2*d*r)*S(t)/B(t)"
+    },
+    "corner_chain_support_envelope": {
+      "forced_P_vertices": [
+        [
+          "25*r",
+          "20*r"
+        ],
+        [
+          "7*r",
+          "2*r"
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "forced_Q_vertices": [
+        [
+          "25*(2*r-1)",
+          "20*(2*r-1)"
+        ],
+        [
+          "7*(2*r-1)",
+          "2*(2*r-1)"
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "scope": "exact B0 jet envelope and actual forced vertices, not an exhaustive lower Laurent support mask",
+      "source_degree_envelope": "0<=i, 0<=5*i-ell, 6*i-ell<=D; D=25*r for P and D=25*(2*r-1) for Q",
+      "source_monomial_change": "ell=5*i-j",
+      "terminal_halfspaces": [
+        "(2*r-1)*a-(7*r-4)*b<=r for P",
+        "(2*r-1)*a-(7*r-4)*b<=2*r-1 for Q"
+      ]
+    },
+    "direct_residue_fitting_formula": {
+      "artinian_ring": "R=Q[1/r,p_2,...,p_(d*r)], J=R[t]/(t^(d*(3*r-1)))",
+      "base_columns": "d*(2*r-1)+h+2+epsilon",
+      "cokernel_rank": "q=d*r-h-2-epsilon",
+      "lambda_column_epsilon": "1 if d<d*r-h-1, otherwise 0",
+      "membership": "B^2 in B^(1/r)*<1,...,t^(d*(2*r-1))> + <t^(L-h),...,t^L> + R*t^(2*d*r)",
+      "residue_ideal": "for q>0, Fitt_(q-1) of the cokernel after appending B^2; equivalently its maximal minors"
+    },
+    "family_table": {
+      "corner_total_degree": 25,
+      "degree_pair": [
+        "25*r",
+        "25*(2*r-1)"
+      ],
+      "initial_corner": [
+        5,
+        20
+      ],
+      "parameter_change": "j=r-2",
+      "reduced_pair": [
+        "r",
+        "2*r-1"
+      ]
+    },
+    "finite_coefficient_window": {
+      "inspected_coefficient_functions": "d*(3*r-1)-2",
+      "last_inspected_C_x_exponent": "1-d*(3*r-2)",
+      "last_inspected_t_index": "d*(3*r-1)-1",
+      "power_rows_and_eliminated_variables": "d*(2*r-1)-1",
+      "scope": "A(t) is an infinite formal series; these are finite-window bounds, not a lower support bound for C",
+      "surviving_variables_and_Q_rows": "d*r-1"
+    },
+    "normalized_series": "t=x^-1; C=x^d*A(t); A(t)=1+sum_(q>=2) z_(d-q)*t^q",
+    "not_derived_from_corner_chain": [
+      "the common-power equality beyond the forced leading bands",
+      "the d=2 and d=3 chart list and its exhaustiveness",
+      "the Laurent-y supports and endpoint nonvanishing of every C coefficient",
+      "the F-tail supports in either modified chart",
+      "a coordinate change carrying the certified X^4 bracket to historical h=2"
+    ],
+    "triangular_elimination": {
+      "Q_core": "[t^(d*(2*r-1)+k)] (B(t)^2*S(t)+lambda*t^(2*d*r)*S(t))",
+      "inverse_root": "S(t)=B(t)^(-1/r)",
+      "lambda_pivot": "k=d",
+      "polynomial_coordinate": "B(t)=trunc_(<=d*r)(A(t)^r)=1+sum_(q=2)^(d*r) p_q*t^q",
+      "post_lambda_counts": {
+        "equations": "d*r-2",
+        "variables": "d*r-1"
+      }
+    }
+  },
+  "lambda_eliminated_residue_equations": {
+    "r2_d2_h2": [
+      "-(-16*f1 + 3*p2**2*p3 - 12*p3*p4)/16",
+      "(32*f3 + 3*p2**3*p3 - 12*p2*p3*p4 - 2*p3**3)/32"
+    ],
+    "r2_d3_h2": [
+      "-3*(p2**5 - 8*p2**3*p4 - 12*p2**2*p3**2 + 16*p2**2*p6 + 32*p2*p3*p5 + 16*p2*p4**2 + 16*p3**2*p4 - 64*p4*p6 - 32*p5**2)/256",
+      "-3*(5*p2**4*p3 - 8*p2**3*p5 - 24*p2**2*p3*p4 - 8*p2*p3**3 + 32*p2*p3*p6 + 32*p2*p4*p5 + 16*p3**2*p5 + 16*p3*p4**2 - 64*p5*p6)/256",
+      "(512*f4 + 21*p2**5*p3 - 30*p2**4*p5 - 120*p2**3*p3*p4 - 60*p2**2*p3**3 + 144*p2**2*p3*p6 + 144*p2**2*p4*p5 + 144*p2*p3**2*p5 + 144*p2*p3*p4**2 - 192*p2*p5*p6 + 48*p3**3*p4 - 192*p3*p4*p6 - 96*p3*p5**2 - 96*p4**2*p5)/512",
+      "-(-512*f3*p2 - 1024*f5 + p2**7 - 12*p2**5*p4 - 45*p2**4*p3**2 + 12*p2**4*p6 + 96*p2**3*p3*p5 + 48*p2**3*p4**2 + 216*p2**2*p3**2*p4 - 96*p2**2*p4*p6 - 48*p2**2*p5**2 + 48*p2*p3**4 - 192*p2*p3**2*p6 - 384*p2*p3*p4*p5 - 64*p2*p4**3 - 96*p3**3*p5 - 144*p3**2*p4**2 + 384*p3*p5*p6 + 192*p4**2*p6 + 192*p4*p5**2)/1024"
+    ],
+    "r3_d2_h2": [
+      "-5*(7*p2**4*p3 - 12*p2**3*p5 - 36*p2**2*p3*p4 - 12*p2*p3**3 + 54*p2*p3*p6 + 54*p2*p4*p5 + 27*p3**2*p5 + 27*p3*p4**2 - 162*p5*p6)/729",
+      "(2187*f3 + 70*p2**5*p3 - 105*p2**4*p5 - 420*p2**3*p3*p4 - 210*p2**2*p3**3 + 540*p2**2*p3*p6 + 540*p2**2*p4*p5 + 540*p2*p3**2*p5 + 540*p2*p3*p4**2 - 810*p2*p5*p6 + 180*p3**3*p4 - 810*p3*p4*p6 - 405*p3*p5**2 - 405*p4**2*p5)/2187",
+      "-(-6561*f4 + 10*p2**7 - 105*p2**5*p4 - 315*p2**4*p3**2 + 135*p2**4*p6 + 720*p2**3*p3*p5 + 360*p2**3*p4**2 + 1350*p2**2*p3**2*p4 - 810*p2**2*p4*p6 - 405*p2**2*p5**2 + 270*p2*p3**4 - 1215*p2*p3**2*p6 - 2430*p2*p3*p4*p5 - 405*p2*p4**3 - 540*p3**3*p5 - 810*p3**2*p4**2 + 2430*p3*p5*p6 + 1215*p4**2*p6 + 1215*p4*p5**2)/6561",
+      "-(-6561*f5 + 140*p2**6*p3 - 210*p2**5*p5 - 945*p2**4*p3*p4 - 490*p2**3*p3**3 + 1080*p2**3*p3*p6 + 1260*p2**3*p4*p5 + 1350*p2**2*p3**2*p5 + 1620*p2**2*p3*p4**2 - 1620*p2**2*p5*p6 + 720*p2*p3**3*p4 - 2430*p2*p3*p4*p6 - 1215*p2*p3*p5**2 - 1620*p2*p4**2*p5 + 18*p3**5 - 135*p3**3*p6 - 810*p3**2*p4*p5 - 405*p3*p4**3 + 2430*p4*p5*p6 + 405*p5**3)/6561"
+    ],
+    "r3_d2_h4": [
+      "-(-729*f1 + 35*p2**4*p3 - 60*p2**3*p5 - 180*p2**2*p3*p4 - 60*p2*p3**3 + 270*p2*p3*p6 + 270*p2*p4*p5 + 135*p3**2*p5 + 135*p3*p4**2 - 810*p5*p6)/729",
+      "(2187*f3 + 70*p2**5*p3 - 105*p2**4*p5 - 420*p2**3*p3*p4 - 210*p2**2*p3**3 + 540*p2**2*p3*p6 + 540*p2**2*p4*p5 + 540*p2*p3**2*p5 + 540*p2*p3*p4**2 - 810*p2*p5*p6 + 180*p3**3*p4 - 810*p3*p4*p6 - 405*p3*p5**2 - 405*p4**2*p5)/2187",
+      "-(-2187*f2*p2 - 6561*f4 + 10*p2**7 - 105*p2**5*p4 - 315*p2**4*p3**2 + 135*p2**4*p6 + 720*p2**3*p3*p5 + 360*p2**3*p4**2 + 1350*p2**2*p3**2*p4 - 810*p2**2*p4*p6 - 405*p2**2*p5**2 + 270*p2*p3**4 - 1215*p2*p3**2*p6 - 2430*p2*p3*p4*p5 - 405*p2*p4**3 - 540*p3**3*p5 - 810*p3**2*p4**2 + 2430*p3*p5*p6 + 1215*p4**2*p6 + 1215*p4*p5**2)/6561",
+      "-(-2187*f2*p3 - 6561*f5 + 140*p2**6*p3 - 210*p2**5*p5 - 945*p2**4*p3*p4 - 490*p2**3*p3**3 + 1080*p2**3*p3*p6 + 1260*p2**3*p4*p5 + 1350*p2**2*p3**2*p5 + 1620*p2**2*p3*p4**2 - 1620*p2**2*p5*p6 + 720*p2*p3**3*p4 - 2430*p2*p3*p4*p6 - 1215*p2*p3*p5**2 - 1620*p2*p4**2*p5 + 18*p3**5 - 135*p3**3*p6 - 810*p3**2*p4*p5 - 405*p3*p4**3 + 2430*p4*p5*p6 + 405*p5**3)/6561"
+    ],
+    "r3_d3_h2": [
+      "5*(26*p2**8 - 273*p2**6*p4 - 819*p2**5*p3**2 + 378*p2**5*p6 + 1890*p2**4*p3*p5 + 945*p2**4*p4**2 - 567*p2**4*p8 + 3780*p2**3*p3**2*p4 - 2268*p2**3*p3*p7 - 2268*p2**3*p4*p6 - 1134*p2**3*p5**2 + 945*p2**2*p3**4 - 3402*p2**2*p3**2*p6 - 6804*p2**2*p3*p4*p5 + 2916*p2**2*p3*p9 - 1134*p2**2*p4**3 + 2916*p2**2*p4*p8 + 2916*p2**2*p5*p7 + 1458*p2**2*p6**2 - 2268*p2*p3**3*p5 - 3402*p2*p3**2*p4**2 + 2916*p2*p3**2*p8 + 5832*p2*p3*p4*p7 + 5832*p2*p3*p5*p6 + 2916*p2*p4**2*p6 + 2916*p2*p4*p5**2 - 4374*p2*p5*p9 - 4374*p2*p6*p8 - 2187*p2*p7**2 - 567*p3**4*p4 + 972*p3**3*p7 + 2916*p3**2*p4*p6 + 1458*p3**2*p5**2 + 2916*p3*p4**2*p5 - 4374*p3*p4*p9 - 4374*p3*p5*p8 - 4374*p3*p6*p7 + 243*p4**4 - 2187*p4**2*p8 - 4374*p4*p5*p7 - 2187*p4*p6**2 - 2187*p5**2*p6 + 13122*p7*p9 + 6561*p8**2)/59049",
+      "5*(208*p2**7*p3 - 273*p2**6*p5 - 1638*p2**5*p3*p4 + 378*p2**5*p7 - 1365*p2**4*p3**3 + 1890*p2**4*p3*p6 + 1890*p2**4*p4*p5 - 567*p2**4*p9 + 3780*p2**3*p3**2*p5 + 3780*p2**3*p3*p4**2 - 2268*p2**3*p3*p8 - 2268*p2**3*p4*p7 - 2268*p2**3*p5*p6 + 3780*p2**2*p3**3*p4 - 3402*p2**2*p3**2*p7 - 6804*p2**2*p3*p4*p6 - 3402*p2**2*p3*p5**2 - 3402*p2**2*p4**2*p5 + 2916*p2**2*p4*p9 + 2916*p2**2*p5*p8 + 2916*p2**2*p6*p7 + 378*p2*p3**5 - 2268*p2*p3**3*p6 - 6804*p2*p3**2*p4*p5 + 2916*p2*p3**2*p9 - 2268*p2*p3*p4**3 + 5832*p2*p3*p4*p8 + 5832*p2*p3*p5*p7 + 2916*p2*p3*p6**2 + 2916*p2*p4**2*p7 + 5832*p2*p4*p5*p6 + 972*p2*p5**3 - 4374*p2*p6*p9 - 4374*p2*p7*p8 - 567*p3**4*p5 - 1134*p3**3*p4**2 + 972*p3**3*p8 + 2916*p3**2*p4*p7 + 2916*p3**2*p5*p6 + 2916*p3*p4**2*p6 + 2916*p3*p4*p5**2 - 4374*p3*p5*p9 - 4374*p3*p6*p8 - 2187*p3*p7**2 + 972*p4**3*p5 - 2187*p4**2*p9 - 4374*p4*p5*p8 - 4374*p4*p6*p7 - 2187*p5**2*p7 - 2187*p5*p6**2 + 13122*p8*p9)/59049",
+      "-5*(494*p2**8*p3 - 624*p2**7*p5 - 4368*p2**6*p3*p4 + 819*p2**6*p7 - 4368*p2**5*p3**3 + 4914*p2**5*p3*p6 + 4914*p2**5*p4*p5 - 1134*p2**5*p9 + 12285*p2**4*p3**2*p5 + 12285*p2**4*p3*p4**2 - 5670*p2**4*p3*p8 - 5670*p2**4*p4*p7 - 5670*p2**4*p5*p6 + 16380*p2**3*p3**3*p4 - 11340*p2**3*p3**2*p7 - 22680*p2**3*p3*p4*p6 - 11340*p2**3*p3*p5**2 - 11340*p2**3*p4**2*p5 + 6804*p2**3*p4*p9 + 6804*p2**3*p5*p8 + 6804*p2**3*p6*p7 + 2457*p2**2*p3**5 - 11340*p2**2*p3**3*p6 - 34020*p2**2*p3**2*p4*p5 + 10206*p2**2*p3**2*p9 - 11340*p2**2*p3*p4**3 + 20412*p2**2*p3*p4*p8 + 20412*p2**2*p3*p5*p7 + 10206*p2**2*p3*p6**2 + 10206*p2**2*p4**2*p7 + 20412*p2**2*p4*p5*p6 + 3402*p2**2*p5**3 - 8748*p2**2*p6*p9 - 8748*p2**2*p7*p8 - 5670*p2*p3**4*p5 - 11340*p2*p3**3*p4**2 + 6804*p2*p3**3*p8 + 20412*p2*p3**2*p4*p7 + 20412*p2*p3**2*p5*p6 + 20412*p2*p3*p4**2*p6 + 20412*p2*p3*p4*p5**2 - 17496*p2*p3*p5*p9 - 17496*p2*p3*p6*p8 - 8748*p2*p3*p7**2 + 6804*p2*p4**3*p5 - 8748*p2*p4**2*p9 - 17496*p2*p4*p5*p8 - 17496*p2*p4*p6*p7 - 8748*p2*p5**2*p7 - 8748*p2*p5*p6**2 + 13122*p2*p8*p9 - 1134*p3**5*p4 + 1701*p3**4*p7 + 6804*p3**3*p4*p6 + 3402*p3**3*p5**2 + 10206*p3**2*p4**2*p5 - 8748*p3**2*p4*p9 - 8748*p3**2*p5*p8 - 8748*p3**2*p6*p7 + 1701*p3*p4**4 - 8748*p3*p4**2*p8 - 17496*p3*p4*p5*p7 - 8748*p3*p4*p6**2 - 8748*p3*p5**2*p6 + 13122*p3*p7*p9 + 6561*p3*p8**2 - 2916*p4**3*p7 - 8748*p4**2*p5*p6 - 2916*p4*p5**3 + 13122*p4*p6*p9 + 13122*p4*p7*p8 + 6561*p5**2*p9 + 13122*p5*p6*p8 + 6561*p5*p7**2 + 6561*p6**2*p7)/177147",
+      "(988*p2**10 - 12870*p2**8*p4 - 56160*p2**7*p3**2 + 15795*p2**7*p6 + 122850*p2**6*p3*p5 + 61425*p2**6*p4**2 - 19845*p2**6*p8 + 405405*p2**5*p3**2*p4 - 136080*p2**5*p3*p7 - 136080*p2**5*p4*p6 - 68040*p2**5*p5**2 + 184275*p2**4*p3**4 - 382725*p2**4*p3**2*p6 - 765450*p2**4*p3*p4*p5 + 153090*p2**4*p3*p9 - 127575*p2**4*p4**3 + 153090*p2**4*p4*p8 + 153090*p2**4*p5*p7 + 76545*p2**4*p6**2 - 567000*p2**3*p3**3*p5 - 850500*p2**3*p3**2*p4**2 + 357210*p2**3*p3**2*p8 + 714420*p2**3*p3*p4*p7 + 714420*p2**3*p3*p5*p6 + 357210*p2**3*p4**2*p6 + 357210*p2**3*p4*p5**2 - 174960*p2**3*p5*p9 - 174960*p2**3*p6*p8 - 87480*p2**3*p7**2 - 467775*p2**2*p3**4*p4 + 408240*p2**2*p3**3*p7 + 1224720*p2**2*p3**2*p4*p6 + 612360*p2**2*p3**2*p5**2 + 1224720*p2**2*p3*p4**2*p5 - 656100*p2**2*p3*p4*p9 - 656100*p2**2*p3*p5*p8 - 656100*p2**2*p3*p6*p7 + 102060*p2**2*p4**4 - 328050*p2**2*p4**2*p8 - 656100*p2**2*p4*p5*p7 - 328050*p2**2*p4*p6**2 - 328050*p2**2*p5**2*p6 + 196830*p2**2*p7*p9 + 98415*p2**2*p8**2 - 34020*p2*p3**6 + 229635*p2*p3**4*p6 + 918540*p2*p3**3*p4*p5 - 262440*p2*p3**3*p9 + 459270*p2*p3**2*p4**3 - 787320*p2*p3**2*p4*p8 - 787320*p2*p3**2*p5*p7 - 393660*p2*p3**2*p6**2 - 787320*p2*p3*p4**2*p7 - 1574640*p2*p3*p4*p5*p6 - 262440*p2*p3*p5**3 + 590490*p2*p3*p6*p9 + 590490*p2*p3*p7*p8 - 262440*p2*p4**3*p6 - 393660*p2*p4**2*p5**2 + 590490*p2*p4*p5*p9 + 590490*p2*p4*p6*p8 + 295245*p2*p4*p7**2 + 295245*p2*p5**2*p8 + 590490*p2*p5*p6*p7 + 98415*p2*p6**3 + 51030*p3**5*p5 + 127575*p3**4*p4**2 - 76545*p3**4*p8 - 306180*p3**3*p4*p7 - 306180*p3**3*p5*p6 - 459270*p3**2*p4**2*p6 - 459270*p3**2*p4*p5**2 + 393660*p3**2*p5*p9 + 393660*p3**2*p6*p8 + 196830*p3**2*p7**2 - 306180*p3*p4**3*p5 + 393660*p3*p4**2*p9 + 787320*p3*p4*p5*p8 + 787320*p3*p4*p6*p7 + 393660*p3*p5**2*p7 + 393660*p3*p5*p6**2 - 590490*p3*p8*p9 - 15309*p4**5 + 131220*p4**3*p8 + 393660*p4**2*p5*p7 + 196830*p4**2*p6**2 + 393660*p4*p5**2*p6 - 590490*p4*p7*p9 - 295245*p4*p8**2 + 32805*p5**4 - 590490*p5*p6*p9 - 590490*p5*p7*p8 - 295245*p6**2*p8 - 295245*p6*p7**2)/1594323",
+      "(1594323*f6 + 17290*p2**9*p3 - 22230*p2**8*p5 - 168480*p2**7*p3*p4 + 28080*p2**7*p7 - 174720*p2**6*p3**3 + 184275*p2**6*p3*p6 + 196560*p2**6*p4*p5 - 36855*p2**6*p9 + 515970*p2**5*p3**2*p5 + 552825*p2**5*p3*p4**2 - 204120*p2**5*p3*p8 - 221130*p2**5*p4*p7 - 221130*p2**5*p5*p6 + 798525*p2**4*p3**3*p4 - 467775*p2**4*p3**2*p7 - 1020600*p2**4*p3*p4*p6 - 510300*p2**4*p3*p5**2 - 552825*p2**4*p4**2*p5 + 255150*p2**4*p4*p9 + 255150*p2**4*p5*p8 + 255150*p2**4*p6*p7 + 135135*p2**3*p3**5 - 567000*p2**3*p3**3*p6 - 1871100*p2**3*p3**2*p4*p5 + 408240*p2**3*p3**2*p9 - 680400*p2**3*p3*p4**3 + 918540*p2**3*p3*p4*p8 + 918540*p2**3*p3*p5*p7 + 459270*p2**3*p3*p6**2 + 510300*p2**3*p4**2*p7 + 1020600*p2**3*p4*p5*p6 + 170100*p2**3*p5**3 - 306180*p2**3*p6*p9 - 306180*p2**3*p7*p8 - 382725*p2**2*p3**4*p5 - 850500*p2**2*p3**3*p4**2 + 357210*p2**2*p3**3*p8 + 1224720*p2**2*p3**2*p4*p7 + 1224720*p2**2*p3**2*p5*p6 + 1377810*p2**2*p3*p4**2*p6 + 1377810*p2**2*p3*p4*p5**2 - 787320*p2**2*p3*p5*p9 - 787320*p2**2*p3*p6*p8 - 393660*p2**2*p3*p7**2 + 510300*p2**2*p4**3*p5 - 459270*p2**2*p4**2*p9 - 918540*p2**2*p4*p5*p8 - 918540*p2**2*p4*p6*p7 - 459270*p2**2*p5**2*p7 - 459270*p2**2*p5*p6**2 + 393660*p2**2*p8*p9 - 136080*p2*p3**5*p4 + 153090*p2*p3**4*p7 + 714420*p2*p3**3*p4*p6 + 357210*p2*p3**3*p5**2 + 1224720*p2*p3**2*p4**2*p5 - 656100*p2*p3**2*p4*p9 - 656100*p2*p3**2*p5*p8 - 656100*p2*p3**2*p6*p7 + 229635*p2*p3*p4**4 - 787320*p2*p3*p4**2*p8 - 1574640*p2*p3*p4*p5*p7 - 787320*p2*p3*p4*p6**2 - 787320*p2*p3*p5**2*p6 + 590490*p2*p3*p7*p9 + 295245*p2*p3*p8**2 - 306180*p2*p4**3*p7 - 918540*p2*p4**2*p5*p6 - 306180*p2*p4*p5**3 + 787320*p2*p4*p6*p9 + 787320*p2*p4*p7*p8 + 393660*p2*p5**2*p9 + 787320*p2*p5*p6*p8 + 393660*p2*p5*p7**2 + 393660*p2*p6**2*p7 - 2430*p3**7 + 25515*p3**5*p6 + 153090*p3**4*p4*p5 - 32805*p3**4*p9 + 119070*p3**3*p4**3 - 174960*p3**3*p4*p8 - 174960*p3**3*p5*p7 - 87480*p3**3*p6**2 - 328050*p3**2*p4**2*p7 - 656100*p3**2*p4*p5*p6 - 109350*p3**2*p5**3 + 196830*p3**2*p6*p9 + 196830*p3**2*p7*p8 - 262440*p3*p4**3*p6 - 393660*p3*p4**2*p5**2 + 590490*p3*p4*p5*p9 + 590490*p3*p4*p6*p8 + 295245*p3*p4*p7**2 + 295245*p3*p5**2*p8 + 590490*p3*p5*p6*p7 + 98415*p3*p6**3 - 76545*p4**4*p5 + 131220*p4**3*p9 + 393660*p4**2*p5*p8 + 393660*p4**2*p6*p7 + 393660*p4*p5**2*p7 + 393660*p4*p5*p6**2 - 590490*p4*p8*p9 + 131220*p5**3*p6 - 590490*p5*p7*p9 - 295245*p5*p8**2 - 295245*p6**2*p9 - 590490*p6*p7*p8 - 98415*p7**3)/1594323",
+      "-(-4782969*f7 + 2470*p2**11 - 33150*p2**9*p4 - 179010*p2**8*p3**2 + 42120*p2**8*p6 + 386100*p2**7*p3*p5 + 164970*p2**7*p4**2 - 50220*p2**7*p8 + 1400490*p2**6*p3**2*p4 - 419580*p2**6*p3*p7 - 382725*p2**6*p4*p6 - 209790*p2**6*p5**2 + 810810*p2**5*p3**4 - 1428840*p2**5*p3**2*p6 - 2636550*p2**5*p3*p4*p5 + 459270*p2**5*p3*p9 - 365715*p2**5*p4**3 + 408240*p2**5*p4*p8 + 459270*p2**5*p5*p7 + 229635*p2**5*p6**2 - 2608200*p2**4*p3**3*p5 - 3359475*p2**4*p3**2*p4**2 + 1352295*p2**4*p3**2*p8 + 2449440*p2**4*p3*p4*p7 + 2704590*p2**4*p3*p5*p6 + 1097145*p2**4*p4**2*p6 + 1224720*p2**4*p4*p5**2 - 503010*p2**4*p5*p9 - 503010*p2**4*p6*p8 - 251505*p2**4*p7**2 - 2594025*p2**3*p3**4*p4 + 2007180*p2**3*p3**3*p7 + 5511240*p2**3*p3**2*p4*p6 + 3010770*p2**3*p3**2*p5**2 + 5000940*p2**3*p3*p4**2*p5 - 2230740*p2**3*p3*p4*p9 - 2536920*p2**3*p3*p5*p8 - 2536920*p2**3*p3*p6*p7 + 331695*p2**3*p4**4 - 962280*p2**3*p4**2*p8 - 2230740*p2**3*p4*p5*p7 - 1115370*p2**3*p4*p6**2 - 1268460*p2**3*p5**2*p6 + 524880*p2**3*p7*p9 + 262440*p2**3*p8**2 - 289170*p2**2*p3**6 + 1607445*p2**2*p3**4*p6 + 5919480*p2**2*p3**3*p4*p5 - 1443420*p2**2*p3**3*p9 + 2449440*p2**2*p3**2*p4**3 - 3870990*p2**2*p3**2*p4*p8 - 4330260*p2**2*p3**2*p5*p7 - 2165130*p2**2*p3**2*p6**2 - 3411720*p2**2*p3*p4**2*p7 - 7741980*p2**2*p3*p4*p5*p6 - 1443420*p2**2*p3*p5**3 + 2361960*p2**2*p3*p6*p9 + 2361960*p2**2*p3*p7*p8 - 984150*p2**2*p4**3*p6 - 1705860*p2**2*p4**2*p5**2 + 1968300*p2**2*p4*p5*p9 + 1968300*p2**2*p4*p6*p8 + 984150*p2**2*p4*p7**2 + 1180980*p2**2*p5**2*p8 + 2361960*p2**2*p5*p6*p7 + 393660*p2**2*p6**3 + 663390*p2*p3**5*p5 + 1403325*p2*p3**4*p4**2 - 765450*p2*p3**4*p8 - 2755620*p2*p3**3*p4*p7 - 3061800*p2*p3**3*p5*p6 - 3674160*p2*p3**2*p4**2*p6 - 4133430*p2*p3**2*p4*p5**2 + 2755620*p2*p3**2*p5*p9 + 2755620*p2*p3**2*p6*p8 + 1377810*p2*p3**2*p7**2 - 2143260*p2*p3*p4**3*p5 + 1968300*p2*p3*p4**2*p9 + 4723920*p2*p3*p4*p5*p8 + 4723920*p2*p3*p4*p6*p7 + 2755620*p2*p3*p5**2*p7 + 2755620*p2*p3*p5*p6**2 - 2361960*p2*p3*p8*p9 - 76545*p2*p4**5 + 524880*p2*p4**3*p8 + 1968300*p2*p4**2*p5*p7 + 984150*p2*p4**2*p6**2 + 2361960*p2*p4*p5**2*p6 - 1771470*p2*p4*p7*p9 - 885735*p2*p4*p8**2 + 229635*p2*p5**4 - 2361960*p2*p5*p6*p9 - 2361960*p2*p5*p7*p8 - 1180980*p2*p6**2*p8 - 1180980*p2*p6*p7**2 + 102060*p3**6*p4 - 153090*p3**5*p7 - 688905*p3**4*p4*p6 - 382725*p3**4*p5**2 - 1224720*p3**3*p4**2*p5 + 787320*p3**3*p4*p9 + 918540*p3**3*p5*p8 + 918540*p3**3*p6*p7 - 229635*p3**2*p4**4 + 984150*p3**2*p4**2*p8 + 2361960*p3**2*p4*p5*p7 + 1180980*p3**2*p4*p6**2 + 1377810*p3**2*p5**2*p6 - 1180980*p3**2*p7*p9 - 590490*p3**2*p8**2 + 524880*p3*p4**3*p7 + 1968300*p3*p4**2*p5*p6 + 787320*p3*p4*p5**3 - 1771470*p3*p4*p6*p9 - 1771470*p3*p4*p7*p8 - 1180980*p3*p5**2*p9 - 2361960*p3*p5*p6*p8 - 1180980*p3*p5*p7**2 - 1180980*p3*p6**2*p7 + 98415*p4**4*p6 + 262440*p4**3*p5**2 - 590490*p4**2*p5*p9 - 590490*p4**2*p6*p8 - 295245*p4**2*p7**2 - 885735*p4*p5**2*p8 - 1771470*p4*p5*p6*p7 - 295245*p4*p6**3 - 393660*p5**3*p7 - 590490*p5**2*p6**2 + 1771470*p5*p8*p9 + 1771470*p6*p7*p9 + 885735*p6*p8**2 + 885735*p7**2*p8)/4782969",
+      "-(-4782969*f8 + 41990*p2**10*p3 - 51870*p2**9*p5 - 451620*p2**8*p3*p4 + 66690*p2**8*p7 - 521040*p2**7*p3**3 + 484380*p2**7*p3*p6 + 505440*p2**7*p4*p5 - 84240*p2**7*p9 + 1474200*p2**6*p3**2*p5 + 1719900*p2**6*p3*p4**2 - 521640*p2**6*p3*p8 - 589680*p2**6*p4*p7 - 552825*p2**6*p5*p6 + 2997540*p2**5*p3**3*p4 - 1428840*p2**5*p3**2*p7 - 3197880*p2**5*p3*p4*p6 - 1377810*p2**5*p3*p5**2 - 1658475*p2**5*p4**2*p5 + 663390*p2**5*p4*p9 + 612360*p2**5*p5*p8 + 663390*p2**5*p6*p7 + 687960*p2**4*p3**5 - 2268000*p2**4*p3**3*p6 - 6931575*p2**4*p3**2*p4*p5 + 1250235*p2**4*p3**2*p9 - 2721600*p2**4*p3*p4**3 + 2908710*p2**4*p3*p4*p8 + 2653560*p2**4*p3*p5*p7 + 1454355*p2**4*p3*p6**2 + 1658475*p2**4*p4**2*p7 + 3061800*p2**4*p4*p5*p6 + 425250*p2**4*p5**3 - 765450*p2**4*p6*p9 - 765450*p2**4*p7*p8 - 2083725*p2**3*p3**4*p5 - 4876200*p2**3*p3**3*p4**2 + 1598940*p2**3*p3**3*p8 + 5409180*p2**3*p3**2*p4*p7 + 4898880*p2**3*p3**2*p5*p6 + 6021540*p2**3*p3*p4**2*p6 + 5000940*p2**3*p3*p4*p5**2 - 2230740*p2**3*p3*p5*p9 - 2536920*p2**3*p3*p6*p8 - 1268460*p2**3*p3*p7**2 + 2041200*p2**3*p4**3*p5 - 1530900*p2**3*p4**2*p9 - 2755620*p2**3*p4*p5*p8 - 3061800*p2**3*p4*p6*p7 - 1224720*p2**3*p5**2*p7 - 1377810*p2**3*p5*p6**2 + 918540*p2**3*p8*p9 - 1428840*p2**2*p3**5*p4 + 1250235*p2**2*p3**4*p7 + 5409180*p2**2*p3**3*p4*p6 + 2194290*p2**2*p3**3*p5**2 + 7960680*p2**2*p3**2*p4**2*p5 - 3542940*p2**2*p3**2*p4*p9 - 3083670*p2**2*p3**2*p5*p8 - 3542940*p2**2*p3**2*p6*p7 + 1556415*p2**2*p3*p4**4 - 4067820*p2**2*p3*p4**2*p8 - 7217100*p2**2*p3*p4*p5*p7 - 4067820*p2**2*p3*p4*p6**2 - 3149280*p2**2*p3*p5**2*p6 + 1968300*p2**2*p3*p7*p9 + 984150*p2**2*p3*p8**2 - 1530900*p2**2*p4**3*p7 - 4133430*p2**2*p4**2*p5*p6 - 1071630*p2**2*p4*p5**3 + 2755620*p2**2*p4*p6*p9 + 2755620*p2**2*p4*p7*p8 + 984150*p2**2*p5**2*p9 + 2361960*p2**2*p5*p6*p8 + 1180980*p2**2*p5*p7**2 + 1377810*p2**2*p6**2*p7 - 72900*p2*p3**7 + 561330*p2*p3**5*p6 + 2653560*p2*p3**4*p4*p5 - 590490*p2*p3**4*p9 + 2007180*p2*p3**3*p4**3 - 2536920*p2*p3**3*p4*p8 - 2230740*p2*p3**3*p5*p7 - 1268460*p2*p3**3*p6**2 - 4067820*p2*p3**2*p4**2*p7 - 7217100*p2*p3**2*p4*p5*p6 - 896670*p2*p3**2*p5**3 + 1968300*p2*p3**2*p6*p9 + 1968300*p2*p3**2*p7*p8 - 2886840*p2*p3*p4**3*p6 - 3411720*p2*p3*p4**2*p5**2 + 3936600*p2*p3*p4*p5*p9 + 4723920*p2*p3*p4*p6*p8 + 2361960*p2*p3*p4*p7**2 + 1574640*p2*p3*p5**2*p8 + 3936600*p2*p3*p5*p6*p7 + 787320*p2*p3*p6**3 - 688905*p2*p4**4*p5 + 918540*p2*p4**3*p9 + 2361960*p2*p4**2*p5*p8 + 2755620*p2*p4**2*p6*p7 + 1968300*p2*p4*p5**2*p7 + 2361960*p2*p4*p5*p6**2 - 2361960*p2*p4*p8*p9 + 524880*p2*p5**3*p6 - 1771470*p2*p5*p7*p9 - 885735*p2*p5*p8**2 - 1180980*p2*p6**2*p9 - 2361960*p2*p6*p7*p8 - 393660*p2*p7**3 + 102060*p3**6*p5 + 331695*p3**5*p4**2 - 153090*p3**5*p8 - 765450*p3**4*p4*p7 - 688905*p3**4*p5*p6 - 1530900*p3**3*p4**2*p6 - 1224720*p3**3*p4*p5**2 + 787320*p3**3*p5*p9 + 918540*p3**3*p6*p8 + 459270*p3**3*p7**2 - 1377810*p3**2*p4**3*p5 + 1377810*p3**2*p4**2*p9 + 2361960*p3**2*p4*p5*p8 + 2755620*p3**2*p4*p6*p7 + 984150*p3**2*p5**2*p7 + 1180980*p3**2*p5*p6**2 - 1180980*p3**2*p8*p9 - 153090*p3*p4**5 + 918540*p3*p4**3*p8 + 2361960*p3*p4**2*p5*p7 + 1377810*p3*p4**2*p6**2 + 1968300*p3*p4*p5**2*p6 - 2361960*p3*p4*p7*p9 - 1180980*p3*p4*p8**2 + 98415*p3*p5**4 - 1771470*p3*p5*p6*p9 - 1771470*p3*p5*p7*p8 - 1180980*p3*p6**2*p8 - 1180980*p3*p6*p7**2 + 229635*p4**4*p7 + 787320*p4**3*p5*p6 + 262440*p4**2*p5**3 - 1180980*p4**2*p6*p9 - 1180980*p4**2*p7*p8 - 590490*p4*p5**2*p9 - 1771470*p4*p5*p6*p8 - 885735*p4*p5*p7**2 - 1180980*p4*p6**2*p7 - 98415*p5**3*p8 - 590490*p5**2*p6*p7 - 295245*p5*p6**3 + 1771470*p6*p8*p9 + 885735*p7**2*p9 + 885735*p7*p8**2)/4782969"
+    ],
+    "r3_d3_h4": [
+      "5*(26*p2**8 - 273*p2**6*p4 - 819*p2**5*p3**2 + 378*p2**5*p6 + 1890*p2**4*p3*p5 + 945*p2**4*p4**2 - 567*p2**4*p8 + 3780*p2**3*p3**2*p4 - 2268*p2**3*p3*p7 - 2268*p2**3*p4*p6 - 1134*p2**3*p5**2 + 945*p2**2*p3**4 - 3402*p2**2*p3**2*p6 - 6804*p2**2*p3*p4*p5 + 2916*p2**2*p3*p9 - 1134*p2**2*p4**3 + 2916*p2**2*p4*p8 + 2916*p2**2*p5*p7 + 1458*p2**2*p6**2 - 2268*p2*p3**3*p5 - 3402*p2*p3**2*p4**2 + 2916*p2*p3**2*p8 + 5832*p2*p3*p4*p7 + 5832*p2*p3*p5*p6 + 2916*p2*p4**2*p6 + 2916*p2*p4*p5**2 - 4374*p2*p5*p9 - 4374*p2*p6*p8 - 2187*p2*p7**2 - 567*p3**4*p4 + 972*p3**3*p7 + 2916*p3**2*p4*p6 + 1458*p3**2*p5**2 + 2916*p3*p4**2*p5 - 4374*p3*p4*p9 - 4374*p3*p5*p8 - 4374*p3*p6*p7 + 243*p4**4 - 2187*p4**2*p8 - 4374*p4*p5*p7 - 2187*p4*p6**2 - 2187*p5**2*p6 + 13122*p7*p9 + 6561*p8**2)/59049",
+      "5*(208*p2**7*p3 - 273*p2**6*p5 - 1638*p2**5*p3*p4 + 378*p2**5*p7 - 1365*p2**4*p3**3 + 1890*p2**4*p3*p6 + 1890*p2**4*p4*p5 - 567*p2**4*p9 + 3780*p2**3*p3**2*p5 + 3780*p2**3*p3*p4**2 - 2268*p2**3*p3*p8 - 2268*p2**3*p4*p7 - 2268*p2**3*p5*p6 + 3780*p2**2*p3**3*p4 - 3402*p2**2*p3**2*p7 - 6804*p2**2*p3*p4*p6 - 3402*p2**2*p3*p5**2 - 3402*p2**2*p4**2*p5 + 2916*p2**2*p4*p9 + 2916*p2**2*p5*p8 + 2916*p2**2*p6*p7 + 378*p2*p3**5 - 2268*p2*p3**3*p6 - 6804*p2*p3**2*p4*p5 + 2916*p2*p3**2*p9 - 2268*p2*p3*p4**3 + 5832*p2*p3*p4*p8 + 5832*p2*p3*p5*p7 + 2916*p2*p3*p6**2 + 2916*p2*p4**2*p7 + 5832*p2*p4*p5*p6 + 972*p2*p5**3 - 4374*p2*p6*p9 - 4374*p2*p7*p8 - 567*p3**4*p5 - 1134*p3**3*p4**2 + 972*p3**3*p8 + 2916*p3**2*p4*p7 + 2916*p3**2*p5*p6 + 2916*p3*p4**2*p6 + 2916*p3*p4*p5**2 - 4374*p3*p5*p9 - 4374*p3*p6*p8 - 2187*p3*p7**2 + 972*p4**3*p5 - 2187*p4**2*p9 - 4374*p4*p5*p8 - 4374*p4*p6*p7 - 2187*p5**2*p7 - 2187*p5*p6**2 + 13122*p8*p9)/59049",
+      "-(-177147*f4 + 2470*p2**8*p3 - 3120*p2**7*p5 - 21840*p2**6*p3*p4 + 4095*p2**6*p7 - 21840*p2**5*p3**3 + 24570*p2**5*p3*p6 + 24570*p2**5*p4*p5 - 5670*p2**5*p9 + 61425*p2**4*p3**2*p5 + 61425*p2**4*p3*p4**2 - 28350*p2**4*p3*p8 - 28350*p2**4*p4*p7 - 28350*p2**4*p5*p6 + 81900*p2**3*p3**3*p4 - 56700*p2**3*p3**2*p7 - 113400*p2**3*p3*p4*p6 - 56700*p2**3*p3*p5**2 - 56700*p2**3*p4**2*p5 + 34020*p2**3*p4*p9 + 34020*p2**3*p5*p8 + 34020*p2**3*p6*p7 + 12285*p2**2*p3**5 - 56700*p2**2*p3**3*p6 - 170100*p2**2*p3**2*p4*p5 + 51030*p2**2*p3**2*p9 - 56700*p2**2*p3*p4**3 + 102060*p2**2*p3*p4*p8 + 102060*p2**2*p3*p5*p7 + 51030*p2**2*p3*p6**2 + 51030*p2**2*p4**2*p7 + 102060*p2**2*p4*p5*p6 + 17010*p2**2*p5**3 - 43740*p2**2*p6*p9 - 43740*p2**2*p7*p8 - 28350*p2*p3**4*p5 - 56700*p2*p3**3*p4**2 + 34020*p2*p3**3*p8 + 102060*p2*p3**2*p4*p7 + 102060*p2*p3**2*p5*p6 + 102060*p2*p3*p4**2*p6 + 102060*p2*p3*p4*p5**2 - 87480*p2*p3*p5*p9 - 87480*p2*p3*p6*p8 - 43740*p2*p3*p7**2 + 34020*p2*p4**3*p5 - 43740*p2*p4**2*p9 - 87480*p2*p4*p5*p8 - 87480*p2*p4*p6*p7 - 43740*p2*p5**2*p7 - 43740*p2*p5*p6**2 + 65610*p2*p8*p9 - 5670*p3**5*p4 + 8505*p3**4*p7 + 34020*p3**3*p4*p6 + 17010*p3**3*p5**2 + 51030*p3**2*p4**2*p5 - 43740*p3**2*p4*p9 - 43740*p3**2*p5*p8 - 43740*p3**2*p6*p7 + 8505*p3*p4**4 - 43740*p3*p4**2*p8 - 87480*p3*p4*p5*p7 - 43740*p3*p4*p6**2 - 43740*p3*p5**2*p6 + 65610*p3*p7*p9 + 32805*p3*p8**2 - 14580*p4**3*p7 - 43740*p4**2*p5*p6 - 14580*p4*p5**3 + 65610*p4*p6*p9 + 65610*p4*p7*p8 + 32805*p5**2*p9 + 65610*p5*p6*p8 + 32805*p5*p7**2 + 32805*p6**2*p7)/177147",
+      "(1594323*f5 + 988*p2**10 - 12870*p2**8*p4 - 56160*p2**7*p3**2 + 15795*p2**7*p6 + 122850*p2**6*p3*p5 + 61425*p2**6*p4**2 - 19845*p2**6*p8 + 405405*p2**5*p3**2*p4 - 136080*p2**5*p3*p7 - 136080*p2**5*p4*p6 - 68040*p2**5*p5**2 + 184275*p2**4*p3**4 - 382725*p2**4*p3**2*p6 - 765450*p2**4*p3*p4*p5 + 153090*p2**4*p3*p9 - 127575*p2**4*p4**3 + 153090*p2**4*p4*p8 + 153090*p2**4*p5*p7 + 76545*p2**4*p6**2 - 567000*p2**3*p3**3*p5 - 850500*p2**3*p3**2*p4**2 + 357210*p2**3*p3**2*p8 + 714420*p2**3*p3*p4*p7 + 714420*p2**3*p3*p5*p6 + 357210*p2**3*p4**2*p6 + 357210*p2**3*p4*p5**2 - 174960*p2**3*p5*p9 - 174960*p2**3*p6*p8 - 87480*p2**3*p7**2 - 467775*p2**2*p3**4*p4 + 408240*p2**2*p3**3*p7 + 1224720*p2**2*p3**2*p4*p6 + 612360*p2**2*p3**2*p5**2 + 1224720*p2**2*p3*p4**2*p5 - 656100*p2**2*p3*p4*p9 - 656100*p2**2*p3*p5*p8 - 656100*p2**2*p3*p6*p7 + 102060*p2**2*p4**4 - 328050*p2**2*p4**2*p8 - 656100*p2**2*p4*p5*p7 - 328050*p2**2*p4*p6**2 - 328050*p2**2*p5**2*p6 + 196830*p2**2*p7*p9 + 98415*p2**2*p8**2 - 34020*p2*p3**6 + 229635*p2*p3**4*p6 + 918540*p2*p3**3*p4*p5 - 262440*p2*p3**3*p9 + 459270*p2*p3**2*p4**3 - 787320*p2*p3**2*p4*p8 - 787320*p2*p3**2*p5*p7 - 393660*p2*p3**2*p6**2 - 787320*p2*p3*p4**2*p7 - 1574640*p2*p3*p4*p5*p6 - 262440*p2*p3*p5**3 + 590490*p2*p3*p6*p9 + 590490*p2*p3*p7*p8 - 262440*p2*p4**3*p6 - 393660*p2*p4**2*p5**2 + 590490*p2*p4*p5*p9 + 590490*p2*p4*p6*p8 + 295245*p2*p4*p7**2 + 295245*p2*p5**2*p8 + 590490*p2*p5*p6*p7 + 98415*p2*p6**3 + 51030*p3**5*p5 + 127575*p3**4*p4**2 - 76545*p3**4*p8 - 306180*p3**3*p4*p7 - 306180*p3**3*p5*p6 - 459270*p3**2*p4**2*p6 - 459270*p3**2*p4*p5**2 + 393660*p3**2*p5*p9 + 393660*p3**2*p6*p8 + 196830*p3**2*p7**2 - 306180*p3*p4**3*p5 + 393660*p3*p4**2*p9 + 787320*p3*p4*p5*p8 + 787320*p3*p4*p6*p7 + 393660*p3*p5**2*p7 + 393660*p3*p5*p6**2 - 590490*p3*p8*p9 - 15309*p4**5 + 131220*p4**3*p8 + 393660*p4**2*p5*p7 + 196830*p4**2*p6**2 + 393660*p4*p5**2*p6 - 590490*p4*p7*p9 - 295245*p4*p8**2 + 32805*p5**4 - 590490*p5*p6*p9 - 590490*p5*p7*p8 - 295245*p6**2*p8 - 295245*p6*p7**2)/1594323",
+      "(1594323*f6 + 17290*p2**9*p3 - 22230*p2**8*p5 - 168480*p2**7*p3*p4 + 28080*p2**7*p7 - 174720*p2**6*p3**3 + 184275*p2**6*p3*p6 + 196560*p2**6*p4*p5 - 36855*p2**6*p9 + 515970*p2**5*p3**2*p5 + 552825*p2**5*p3*p4**2 - 204120*p2**5*p3*p8 - 221130*p2**5*p4*p7 - 221130*p2**5*p5*p6 + 798525*p2**4*p3**3*p4 - 467775*p2**4*p3**2*p7 - 1020600*p2**4*p3*p4*p6 - 510300*p2**4*p3*p5**2 - 552825*p2**4*p4**2*p5 + 255150*p2**4*p4*p9 + 255150*p2**4*p5*p8 + 255150*p2**4*p6*p7 + 135135*p2**3*p3**5 - 567000*p2**3*p3**3*p6 - 1871100*p2**3*p3**2*p4*p5 + 408240*p2**3*p3**2*p9 - 680400*p2**3*p3*p4**3 + 918540*p2**3*p3*p4*p8 + 918540*p2**3*p3*p5*p7 + 459270*p2**3*p3*p6**2 + 510300*p2**3*p4**2*p7 + 1020600*p2**3*p4*p5*p6 + 170100*p2**3*p5**3 - 306180*p2**3*p6*p9 - 306180*p2**3*p7*p8 - 382725*p2**2*p3**4*p5 - 850500*p2**2*p3**3*p4**2 + 357210*p2**2*p3**3*p8 + 1224720*p2**2*p3**2*p4*p7 + 1224720*p2**2*p3**2*p5*p6 + 1377810*p2**2*p3*p4**2*p6 + 1377810*p2**2*p3*p4*p5**2 - 787320*p2**2*p3*p5*p9 - 787320*p2**2*p3*p6*p8 - 393660*p2**2*p3*p7**2 + 510300*p2**2*p4**3*p5 - 459270*p2**2*p4**2*p9 - 918540*p2**2*p4*p5*p8 - 918540*p2**2*p4*p6*p7 - 459270*p2**2*p5**2*p7 - 459270*p2**2*p5*p6**2 + 393660*p2**2*p8*p9 - 136080*p2*p3**5*p4 + 153090*p2*p3**4*p7 + 714420*p2*p3**3*p4*p6 + 357210*p2*p3**3*p5**2 + 1224720*p2*p3**2*p4**2*p5 - 656100*p2*p3**2*p4*p9 - 656100*p2*p3**2*p5*p8 - 656100*p2*p3**2*p6*p7 + 229635*p2*p3*p4**4 - 787320*p2*p3*p4**2*p8 - 1574640*p2*p3*p4*p5*p7 - 787320*p2*p3*p4*p6**2 - 787320*p2*p3*p5**2*p6 + 590490*p2*p3*p7*p9 + 295245*p2*p3*p8**2 - 306180*p2*p4**3*p7 - 918540*p2*p4**2*p5*p6 - 306180*p2*p4*p5**3 + 787320*p2*p4*p6*p9 + 787320*p2*p4*p7*p8 + 393660*p2*p5**2*p9 + 787320*p2*p5*p6*p8 + 393660*p2*p5*p7**2 + 393660*p2*p6**2*p7 - 2430*p3**7 + 25515*p3**5*p6 + 153090*p3**4*p4*p5 - 32805*p3**4*p9 + 119070*p3**3*p4**3 - 174960*p3**3*p4*p8 - 174960*p3**3*p5*p7 - 87480*p3**3*p6**2 - 328050*p3**2*p4**2*p7 - 656100*p3**2*p4*p5*p6 - 109350*p3**2*p5**3 + 196830*p3**2*p6*p9 + 196830*p3**2*p7*p8 - 262440*p3*p4**3*p6 - 393660*p3*p4**2*p5**2 + 590490*p3*p4*p5*p9 + 590490*p3*p4*p6*p8 + 295245*p3*p4*p7**2 + 295245*p3*p5**2*p8 + 590490*p3*p5*p6*p7 + 98415*p3*p6**3 - 76545*p4**4*p5 + 131220*p4**3*p9 + 393660*p4**2*p5*p8 + 393660*p4**2*p6*p7 + 393660*p4*p5**2*p7 + 393660*p4*p5*p6**2 - 590490*p4*p8*p9 + 131220*p5**3*p6 - 590490*p5*p7*p9 - 295245*p5*p8**2 - 295245*p6**2*p9 - 590490*p6*p7*p8 - 98415*p7**3)/1594323",
+      "-(-4782969*f7 + 2470*p2**11 - 33150*p2**9*p4 - 179010*p2**8*p3**2 + 42120*p2**8*p6 + 386100*p2**7*p3*p5 + 164970*p2**7*p4**2 - 50220*p2**7*p8 + 1400490*p2**6*p3**2*p4 - 419580*p2**6*p3*p7 - 382725*p2**6*p4*p6 - 209790*p2**6*p5**2 + 810810*p2**5*p3**4 - 1428840*p2**5*p3**2*p6 - 2636550*p2**5*p3*p4*p5 + 459270*p2**5*p3*p9 - 365715*p2**5*p4**3 + 408240*p2**5*p4*p8 + 459270*p2**5*p5*p7 + 229635*p2**5*p6**2 - 2608200*p2**4*p3**3*p5 - 3359475*p2**4*p3**2*p4**2 + 1352295*p2**4*p3**2*p8 + 2449440*p2**4*p3*p4*p7 + 2704590*p2**4*p3*p5*p6 + 1097145*p2**4*p4**2*p6 + 1224720*p2**4*p4*p5**2 - 503010*p2**4*p5*p9 - 503010*p2**4*p6*p8 - 251505*p2**4*p7**2 - 2594025*p2**3*p3**4*p4 + 2007180*p2**3*p3**3*p7 + 5511240*p2**3*p3**2*p4*p6 + 3010770*p2**3*p3**2*p5**2 + 5000940*p2**3*p3*p4**2*p5 - 2230740*p2**3*p3*p4*p9 - 2536920*p2**3*p3*p5*p8 - 2536920*p2**3*p3*p6*p7 + 331695*p2**3*p4**4 - 962280*p2**3*p4**2*p8 - 2230740*p2**3*p4*p5*p7 - 1115370*p2**3*p4*p6**2 - 1268460*p2**3*p5**2*p6 + 524880*p2**3*p7*p9 + 262440*p2**3*p8**2 - 289170*p2**2*p3**6 + 1607445*p2**2*p3**4*p6 + 5919480*p2**2*p3**3*p4*p5 - 1443420*p2**2*p3**3*p9 + 2449440*p2**2*p3**2*p4**3 - 3870990*p2**2*p3**2*p4*p8 - 4330260*p2**2*p3**2*p5*p7 - 2165130*p2**2*p3**2*p6**2 - 3411720*p2**2*p3*p4**2*p7 - 7741980*p2**2*p3*p4*p5*p6 - 1443420*p2**2*p3*p5**3 + 2361960*p2**2*p3*p6*p9 + 2361960*p2**2*p3*p7*p8 - 984150*p2**2*p4**3*p6 - 1705860*p2**2*p4**2*p5**2 + 1968300*p2**2*p4*p5*p9 + 1968300*p2**2*p4*p6*p8 + 984150*p2**2*p4*p7**2 + 1180980*p2**2*p5**2*p8 + 2361960*p2**2*p5*p6*p7 + 393660*p2**2*p6**3 + 663390*p2*p3**5*p5 + 1403325*p2*p3**4*p4**2 - 765450*p2*p3**4*p8 - 2755620*p2*p3**3*p4*p7 - 3061800*p2*p3**3*p5*p6 - 3674160*p2*p3**2*p4**2*p6 - 4133430*p2*p3**2*p4*p5**2 + 2755620*p2*p3**2*p5*p9 + 2755620*p2*p3**2*p6*p8 + 1377810*p2*p3**2*p7**2 - 2143260*p2*p3*p4**3*p5 + 1968300*p2*p3*p4**2*p9 + 4723920*p2*p3*p4*p5*p8 + 4723920*p2*p3*p4*p6*p7 + 2755620*p2*p3*p5**2*p7 + 2755620*p2*p3*p5*p6**2 - 2361960*p2*p3*p8*p9 - 76545*p2*p4**5 + 524880*p2*p4**3*p8 + 1968300*p2*p4**2*p5*p7 + 984150*p2*p4**2*p6**2 + 2361960*p2*p4*p5**2*p6 - 1771470*p2*p4*p7*p9 - 885735*p2*p4*p8**2 + 229635*p2*p5**4 - 2361960*p2*p5*p6*p9 - 2361960*p2*p5*p7*p8 - 1180980*p2*p6**2*p8 - 1180980*p2*p6*p7**2 + 102060*p3**6*p4 - 153090*p3**5*p7 - 688905*p3**4*p4*p6 - 382725*p3**4*p5**2 - 1224720*p3**3*p4**2*p5 + 787320*p3**3*p4*p9 + 918540*p3**3*p5*p8 + 918540*p3**3*p6*p7 - 229635*p3**2*p4**4 + 984150*p3**2*p4**2*p8 + 2361960*p3**2*p4*p5*p7 + 1180980*p3**2*p4*p6**2 + 1377810*p3**2*p5**2*p6 - 1180980*p3**2*p7*p9 - 590490*p3**2*p8**2 + 524880*p3*p4**3*p7 + 1968300*p3*p4**2*p5*p6 + 787320*p3*p4*p5**3 - 1771470*p3*p4*p6*p9 - 1771470*p3*p4*p7*p8 - 1180980*p3*p5**2*p9 - 2361960*p3*p5*p6*p8 - 1180980*p3*p5*p7**2 - 1180980*p3*p6**2*p7 + 98415*p4**4*p6 + 262440*p4**3*p5**2 - 590490*p4**2*p5*p9 - 590490*p4**2*p6*p8 - 295245*p4**2*p7**2 - 885735*p4*p5**2*p8 - 1771470*p4*p5*p6*p7 - 295245*p4*p6**3 - 393660*p5**3*p7 - 590490*p5**2*p6**2 + 1771470*p5*p8*p9 + 1771470*p6*p7*p9 + 885735*p6*p8**2 + 885735*p7**2*p8)/4782969",
+      "-(-4782969*f8 + 41990*p2**10*p3 - 51870*p2**9*p5 - 451620*p2**8*p3*p4 + 66690*p2**8*p7 - 521040*p2**7*p3**3 + 484380*p2**7*p3*p6 + 505440*p2**7*p4*p5 - 84240*p2**7*p9 + 1474200*p2**6*p3**2*p5 + 1719900*p2**6*p3*p4**2 - 521640*p2**6*p3*p8 - 589680*p2**6*p4*p7 - 552825*p2**6*p5*p6 + 2997540*p2**5*p3**3*p4 - 1428840*p2**5*p3**2*p7 - 3197880*p2**5*p3*p4*p6 - 1377810*p2**5*p3*p5**2 - 1658475*p2**5*p4**2*p5 + 663390*p2**5*p4*p9 + 612360*p2**5*p5*p8 + 663390*p2**5*p6*p7 + 687960*p2**4*p3**5 - 2268000*p2**4*p3**3*p6 - 6931575*p2**4*p3**2*p4*p5 + 1250235*p2**4*p3**2*p9 - 2721600*p2**4*p3*p4**3 + 2908710*p2**4*p3*p4*p8 + 2653560*p2**4*p3*p5*p7 + 1454355*p2**4*p3*p6**2 + 1658475*p2**4*p4**2*p7 + 3061800*p2**4*p4*p5*p6 + 425250*p2**4*p5**3 - 765450*p2**4*p6*p9 - 765450*p2**4*p7*p8 - 2083725*p2**3*p3**4*p5 - 4876200*p2**3*p3**3*p4**2 + 1598940*p2**3*p3**3*p8 + 5409180*p2**3*p3**2*p4*p7 + 4898880*p2**3*p3**2*p5*p6 + 6021540*p2**3*p3*p4**2*p6 + 5000940*p2**3*p3*p4*p5**2 - 2230740*p2**3*p3*p5*p9 - 2536920*p2**3*p3*p6*p8 - 1268460*p2**3*p3*p7**2 + 2041200*p2**3*p4**3*p5 - 1530900*p2**3*p4**2*p9 - 2755620*p2**3*p4*p5*p8 - 3061800*p2**3*p4*p6*p7 - 1224720*p2**3*p5**2*p7 - 1377810*p2**3*p5*p6**2 + 918540*p2**3*p8*p9 - 1428840*p2**2*p3**5*p4 + 1250235*p2**2*p3**4*p7 + 5409180*p2**2*p3**3*p4*p6 + 2194290*p2**2*p3**3*p5**2 + 7960680*p2**2*p3**2*p4**2*p5 - 3542940*p2**2*p3**2*p4*p9 - 3083670*p2**2*p3**2*p5*p8 - 3542940*p2**2*p3**2*p6*p7 + 1556415*p2**2*p3*p4**4 - 4067820*p2**2*p3*p4**2*p8 - 7217100*p2**2*p3*p4*p5*p7 - 4067820*p2**2*p3*p4*p6**2 - 3149280*p2**2*p3*p5**2*p6 + 1968300*p2**2*p3*p7*p9 + 984150*p2**2*p3*p8**2 - 1530900*p2**2*p4**3*p7 - 4133430*p2**2*p4**2*p5*p6 - 1071630*p2**2*p4*p5**3 + 2755620*p2**2*p4*p6*p9 + 2755620*p2**2*p4*p7*p8 + 984150*p2**2*p5**2*p9 + 2361960*p2**2*p5*p6*p8 + 1180980*p2**2*p5*p7**2 + 1377810*p2**2*p6**2*p7 - 72900*p2*p3**7 + 561330*p2*p3**5*p6 + 2653560*p2*p3**4*p4*p5 - 590490*p2*p3**4*p9 + 2007180*p2*p3**3*p4**3 - 2536920*p2*p3**3*p4*p8 - 2230740*p2*p3**3*p5*p7 - 1268460*p2*p3**3*p6**2 - 4067820*p2*p3**2*p4**2*p7 - 7217100*p2*p3**2*p4*p5*p6 - 896670*p2*p3**2*p5**3 + 1968300*p2*p3**2*p6*p9 + 1968300*p2*p3**2*p7*p8 - 2886840*p2*p3*p4**3*p6 - 3411720*p2*p3*p4**2*p5**2 + 3936600*p2*p3*p4*p5*p9 + 4723920*p2*p3*p4*p6*p8 + 2361960*p2*p3*p4*p7**2 + 1574640*p2*p3*p5**2*p8 + 3936600*p2*p3*p5*p6*p7 + 787320*p2*p3*p6**3 - 688905*p2*p4**4*p5 + 918540*p2*p4**3*p9 + 2361960*p2*p4**2*p5*p8 + 2755620*p2*p4**2*p6*p7 + 1968300*p2*p4*p5**2*p7 + 2361960*p2*p4*p5*p6**2 - 2361960*p2*p4*p8*p9 + 524880*p2*p5**3*p6 - 1771470*p2*p5*p7*p9 - 885735*p2*p5*p8**2 - 1180980*p2*p6**2*p9 - 2361960*p2*p6*p7*p8 - 393660*p2*p7**3 + 102060*p3**6*p5 + 331695*p3**5*p4**2 - 153090*p3**5*p8 - 765450*p3**4*p4*p7 - 688905*p3**4*p5*p6 - 1530900*p3**3*p4**2*p6 - 1224720*p3**3*p4*p5**2 + 787320*p3**3*p5*p9 + 918540*p3**3*p6*p8 + 459270*p3**3*p7**2 - 1377810*p3**2*p4**3*p5 + 1377810*p3**2*p4**2*p9 + 2361960*p3**2*p4*p5*p8 + 2755620*p3**2*p4*p6*p7 + 984150*p3**2*p5**2*p7 + 1180980*p3**2*p5*p6**2 - 1180980*p3**2*p8*p9 - 153090*p3*p4**5 + 918540*p3*p4**3*p8 + 2361960*p3*p4**2*p5*p7 + 1377810*p3*p4**2*p6**2 + 1968300*p3*p4*p5**2*p6 - 2361960*p3*p4*p7*p9 - 1180980*p3*p4*p8**2 + 98415*p3*p5**4 - 1771470*p3*p5*p6*p9 - 1771470*p3*p5*p7*p8 - 1180980*p3*p6**2*p8 - 1180980*p3*p6*p7**2 + 229635*p4**4*p7 + 787320*p4**3*p5*p6 + 262440*p4**2*p5**3 - 1180980*p4**2*p6*p9 - 1180980*p4**2*p7*p8 - 590490*p4*p5**2*p9 - 1771470*p4*p5*p6*p8 - 885735*p4*p5*p7**2 - 1180980*p4*p6**2*p7 - 98415*p5**3*p8 - 590490*p5**2*p6*p7 - 295245*p5*p6**3 + 1771470*p6*p8*p9 + 885735*p7**2*p9 + 885735*p7*p8**2)/4782969"
+    ]
+  },
+  "lambda_substitutions": {
+    "r2_d2_h2": "-(128*f2 + 3*p2**4 - 24*p2**2*p4 - 24*p2*p3**2 + 48*p4**2)/128",
+    "r2_d3_h2": "-(1024*f3 + 7*p2**6 - 60*p2**4*p4 - 120*p2**3*p3**2 + 96*p2**3*p6 + 288*p2**2*p3*p5 + 144*p2**2*p4**2 + 288*p2*p3**2*p4 - 384*p2*p4*p6 - 192*p2*p5**2 + 24*p3**4 - 192*p3**2*p6 - 384*p3*p4*p5 - 64*p4**3 + 384*p6**2)/1024",
+    "r3_d2_h2": "-5*(7*p2**6 - 63*p2**4*p4 - 126*p2**3*p3**2 + 108*p2**3*p6 + 324*p2**2*p3*p5 + 162*p2**2*p4**2 + 324*p2*p3**2*p4 - 486*p2*p4*p6 - 243*p2*p5**2 + 27*p3**4 - 243*p3**2*p6 - 486*p3*p4*p5 - 81*p4**3 + 729*p6**2)/6561",
+    "r3_d2_h4": "-(6561*f2 + 35*p2**6 - 315*p2**4*p4 - 630*p2**3*p3**2 + 540*p2**3*p6 + 1620*p2**2*p3*p5 + 810*p2**2*p4**2 + 1620*p2*p3**2*p4 - 2430*p2*p4*p6 - 1215*p2*p5**2 + 135*p3**4 - 1215*p3**2*p6 - 2430*p3*p4*p5 - 405*p4**3 + 3645*p6**2)/6561",
+    "r3_d3_h2": "5*(494*p2**9 - 5616*p2**7*p4 - 19656*p2**6*p3**2 + 7371*p2**6*p6 + 44226*p2**5*p3*p5 + 22113*p2**5*p4**2 - 10206*p2**5*p8 + 110565*p2**4*p3**2*p4 - 51030*p2**4*p3*p7 - 51030*p2**4*p4*p6 - 25515*p2**4*p5**2 + 36855*p2**3*p3**4 - 102060*p2**3*p3**2*p6 - 204120*p2**3*p3*p4*p5 + 61236*p2**3*p3*p9 - 34020*p2**3*p4**3 + 61236*p2**3*p4*p8 + 61236*p2**3*p5*p7 + 30618*p2**3*p6**2 - 102060*p2**2*p3**3*p5 - 153090*p2**2*p3**2*p4**2 + 91854*p2**2*p3**2*p8 + 183708*p2**2*p3*p4*p7 + 183708*p2**2*p3*p5*p6 + 91854*p2**2*p4**2*p6 + 91854*p2**2*p4*p5**2 - 78732*p2**2*p5*p9 - 78732*p2**2*p6*p8 - 39366*p2**2*p7**2 - 51030*p2*p3**4*p4 + 61236*p2*p3**3*p7 + 183708*p2*p3**2*p4*p6 + 91854*p2*p3**2*p5**2 + 183708*p2*p3*p4**2*p5 - 157464*p2*p3*p4*p9 - 157464*p2*p3*p5*p8 - 157464*p2*p3*p6*p7 + 15309*p2*p4**4 - 78732*p2*p4**2*p8 - 157464*p2*p4*p5*p7 - 78732*p2*p4*p6**2 - 78732*p2*p5**2*p6 + 118098*p2*p7*p9 + 59049*p2*p8**2 - 1701*p3**6 + 15309*p3**4*p6 + 61236*p3**3*p4*p5 - 26244*p3**3*p9 + 30618*p3**2*p4**3 - 78732*p3**2*p4*p8 - 78732*p3**2*p5*p7 - 39366*p3**2*p6**2 - 78732*p3*p4**2*p7 - 157464*p3*p4*p5*p6 - 26244*p3*p5**3 + 118098*p3*p6*p9 + 118098*p3*p7*p8 - 26244*p4**3*p6 - 39366*p4**2*p5**2 + 118098*p4*p5*p9 + 118098*p4*p6*p8 + 59049*p4*p7**2 + 59049*p5**2*p8 + 118098*p5*p6*p7 + 19683*p6**3 - 177147*p9**2)/1594323",
+    "r3_d3_h4": "5*(494*p2**9 - 5616*p2**7*p4 - 19656*p2**6*p3**2 + 7371*p2**6*p6 + 44226*p2**5*p3*p5 + 22113*p2**5*p4**2 - 10206*p2**5*p8 + 110565*p2**4*p3**2*p4 - 51030*p2**4*p3*p7 - 51030*p2**4*p4*p6 - 25515*p2**4*p5**2 + 36855*p2**3*p3**4 - 102060*p2**3*p3**2*p6 - 204120*p2**3*p3*p4*p5 + 61236*p2**3*p3*p9 - 34020*p2**3*p4**3 + 61236*p2**3*p4*p8 + 61236*p2**3*p5*p7 + 30618*p2**3*p6**2 - 102060*p2**2*p3**3*p5 - 153090*p2**2*p3**2*p4**2 + 91854*p2**2*p3**2*p8 + 183708*p2**2*p3*p4*p7 + 183708*p2**2*p3*p5*p6 + 91854*p2**2*p4**2*p6 + 91854*p2**2*p4*p5**2 - 78732*p2**2*p5*p9 - 78732*p2**2*p6*p8 - 39366*p2**2*p7**2 - 51030*p2*p3**4*p4 + 61236*p2*p3**3*p7 + 183708*p2*p3**2*p4*p6 + 91854*p2*p3**2*p5**2 + 183708*p2*p3*p4**2*p5 - 157464*p2*p3*p4*p9 - 157464*p2*p3*p5*p8 - 157464*p2*p3*p6*p7 + 15309*p2*p4**4 - 78732*p2*p4**2*p8 - 157464*p2*p4*p5*p7 - 78732*p2*p4*p6**2 - 78732*p2*p5**2*p6 + 118098*p2*p7*p9 + 59049*p2*p8**2 - 1701*p3**6 + 15309*p3**4*p6 + 61236*p3**3*p4*p5 - 26244*p3**3*p9 + 30618*p3**2*p4**3 - 78732*p3**2*p4*p8 - 78732*p3**2*p5*p7 - 39366*p3**2*p6**2 - 78732*p3*p4**2*p7 - 157464*p3*p4*p5*p6 - 26244*p3*p5**3 + 118098*p3*p6*p9 + 118098*p3*p7*p8 - 26244*p4**3*p6 - 39366*p4**2*p5**2 + 118098*p4*p5*p9 + 118098*p4*p6*p8 + 59049*p4*p7**2 + 59049*p5**2*p8 + 118098*p5*p6*p7 + 19683*p6**3 - 177147*p9**2)/1594323"
+  },
+  "r3_residue_geometry": {
+    "d2_h2": {
+      "geometry": "on p2*p3-3*p5!=0 the one residue equation solves rationally for p6, so the residue is a rational fourfold",
+      "p6_parameterization": "-(7*p2**4*p3 - 12*p2**3*p5 - 36*p2**2*p3*p4 - 12*p2*p3**3 + 54*p2*p4*p5 + 27*p3**2*p5 + 27*p3*p4**2)/(54*(p2*p3 - 3*p5))",
+      "smooth_torus_point": {
+        "f3_to_f5": [
+          "25/243",
+          "-85/2916",
+          "-701/8748"
+        ],
+        "jacobian_rank": 1,
+        "lambda": "7525/34992",
+        "local_dimension": 4,
+        "p2_to_p6": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "55/108"
+        ]
+      }
+    },
+    "d3_h2": {
+      "congruence_stratum": "B(t)=1+u*t^3+v*t^6+w*t^9",
+      "cubic_invariants": {
+        "A": "u^2-3*v",
+        "D": "2*u^3-9*u*v+27*w",
+        "f6": "5*A^2*D/6561",
+        "f7": "0",
+        "f8": "0",
+        "lambda": "-5*(3*A^3+D^2)/6561"
+      },
+      "formal_coefficient_torus_branch": {
+        "field": "Q((eps))",
+        "free_coordinates": "p3=p6=p9=1, p8=eps",
+        "two_jet": "p2=3*eps+O(eps^3), p4=3*eps^2+O(eps^3), p5=2*eps+O(eps^3), p7=eps^2+O(eps^3)",
+        "verdict": "all p2,...,p9, lambda, and the first visible F coefficient are nonzero on the formal branch"
+      },
+      "laurent_bracket_gate": {
+        "antiderivative": "s=-1 is impossible in K[y,y^(-1)]; otherwise F_-6=c*y^(s+1)+c0 with c!=0",
+        "classification": "every survivor has s+1=7*ell with ell!=0, lambda=0, A=a*y^(2*ell), D=b*y^(3*ell), and 3*a^3+b^2=0",
+        "consequence": "the single-monomial support assumption on F_-6 is removed; a monomial bracket coefficient excludes the stratum unless s=7*ell-1 and lambda=0",
+        "hypothesis": "on the cubic congruence stratum, lambda is constant and the nonzero bracket is mu*y^s*x^2",
+        "integration_constant": {
+          "certificate": "N*f-y*f'=N*c0, so f is squarefree",
+          "exponent_obstruction": "after A is forced to be a Laurent unit, the three pairwise-distinct D^2 exponents cannot be made constant by the single A^3 exponent",
+          "verdict": "c0!=0 is impossible",
+          "zero_pair_determinants": [
+            -4,
+            -8,
+            -4
+          ]
+        },
+        "sharp_invariant_witness": {
+          "A": "-3*y^(2*ell)",
+          "D": "9*y^(3*ell)",
+          "f6": "5*y^(7*ell)/81",
+          "lambda": "0",
+          "u": "0",
+          "v": "y^(2*ell)",
+          "w": "y^(3*ell)/3",
+          "warning": "this is a sharp witness for the finite invariant gate, not a reconstructed polynomial Keller map"
+        },
+        "tested_weights": {
+          "s=0_constant_leading_coefficient": "excluded because s+1=1",
+          "s=2_historical_d3_weight": "excluded because s+1=3",
+          "s=6_first_exceptional_weight": "not excluded by this gate; requires lambda=0"
+        }
+      },
+      "reduced_bracket": "for Pbar=X^3+u*X^2+v*X+w and Qbar the polynomial part of Pbar^(5/3), [Pbar,Qbar]=(3*X+u)*lambda' + 3*f6'",
+      "sharp_finite_residual_candidate": {
+        "B": "1+y^2*t^6+(y^3/3)*t^9",
+        "ell": 1,
+        "lambda": "0",
+        "leading_bracket": "(35/9)*y^6*x^2",
+        "verified_scope": "all eight compiled h=2 fiber rows",
+        "visible_F": {
+          "f6": "5*y^7/81",
+          "f7": "0",
+          "f8": "0"
+        },
+        "warning": "the lower F tail, exact Laurent support ledger, and polynomial-coordinate bridge are not reconstructed"
+      },
+      "smooth_base_point": {
+        "f6": "400/6561",
+        "jacobian_rank": 4,
+        "lambda": "-1880/6561",
+        "local_dimension": 4,
+        "nonzero_coordinates": {
+          "p3": 1,
+          "p6": 1,
+          "p9": 1
+        },
+        "pivot_minor": "6988960000/847288609443",
+        "pivot_variables": [
+          "p2",
+          "p4",
+          "p5",
+          "p7"
+        ]
+      }
+    }
+  },
+  "reproduction_command": ".venv/bin/python plane-jc/cas/generate_f2_modified_system.py --include-equations --output artifacts/generated-results/jc2_f2_modified_laurent_family.json",
+  "residual_equations": {
+    "r2_d2": [
+      "3*zm1*zm2",
+      "-(-2*lam + 3*z0*zm1**2 - 3*zm2**2)/2",
+      "-zm1*(6*z0*zm2 + zm1**2)/2"
+    ],
+    "r2_d3": [
+      "3*(z1*zm1**2 + 2*zm1*zm3 + zm2**2)/2",
+      "-3*(z0*zm1**2 - 2*zm2*zm3)/2",
+      "-(-2*lam + 6*z0*zm1*zm2 + 3*z1*zm2**2 + zm1**3 - 3*zm3**2)/2",
+      "-3*(2*z0*zm1*zm3 + z0*zm2**2 + 2*z1*zm2*zm3 + zm1**2*zm2)/2",
+      "(-2*lam*z1 + 3*z0**2*zm1**2 + 6*z0*z1*zm1*zm2 - 6*z0*zm2*zm3 + 3*z1**2*zm2**2 - 3*z1*zm3**2 - 3*zm1**2*zm3 - 3*zm1*zm2**2)/2"
+    ],
+    "r3_d2": [
+      "5*(6*z0**2*zm1*zm2 + 4*z0*zm1**3 + 6*z0*zm1*zm4 + 6*z0*zm2*zm3 + 3*zm1**2*zm3 - 3*zm1*zm2**2 + 6*zm3*zm4)/3",
+      "-(-3*lam + 15*z0**3*zm1**2 + 30*z0**2*zm1*zm3 - 15*z0**2*zm2**2 - 30*z0*zm2*zm4 + 15*z0*zm3**2 - 5*zm1**4 - 15*zm1**2*zm4 + 30*zm1*zm2*zm3 + 5*zm2**3 - 15*zm4**2)/3",
+      "-5*(6*z0**3*zm1*zm2 + 4*z0**2*zm1**3 + 6*z0**2*zm1*zm4 + 6*z0**2*zm2*zm3 + 6*z0*zm1**2*zm3 + 6*z0*zm1*zm2**2 + 6*z0*zm3*zm4 + 2*zm1**3*zm2 + 6*zm1*zm2*zm4 + 3*zm1*zm3**2 + 3*zm2**2*zm3)/3",
+      "(-3*lam*z0 + 15*z0**4*zm1**2 + 30*z0**3*zm1*zm3 - 15*z0**3*zm2**2 - 30*z0**2*zm2*zm4 + 15*z0**2*zm3**2 - 10*z0*zm1**4 - 30*z0*zm1**2*zm4 - 10*z0*zm2**3 - 15*z0*zm4**2 - 10*zm1**3*zm3 + 15*zm1**2*zm2**2 - 30*zm1*zm3*zm4 - 15*zm2**2*zm4 - 15*zm2*zm3**2)/3",
+      "(-3*lam*zm1 + 30*z0**4*zm1*zm2 + 30*z0**3*zm1**3 + 30*z0**3*zm1*zm4 + 30*z0**3*zm2*zm3 + 60*z0**2*zm1**2*zm3 + 30*z0**2*zm1*zm2**2 + 30*z0**2*zm3*zm4 + 20*z0*zm1**3*zm2 + 30*z0*zm1*zm3**2 - 2*zm1**5 - 10*zm1**3*zm4 + 30*zm1**2*zm2*zm3 + 20*zm1*zm2**3 - 15*zm1*zm4**2 - 30*zm2*zm3*zm4 - 5*zm3**3)/3"
+    ],
+    "r3_d3": [
+      "5*(3*z0**2*z1*zm1**2 + 6*z0**2*zm1*zm3 + 3*z0**2*zm2**2 + 6*z0*z1**2*zm1*zm2 + 12*z0*z1*zm1*zm4 + 12*z0*z1*zm2*zm3 + 12*z0*zm1**2*zm2 + 6*z0*zm1*zm6 + 6*z0*zm2*zm5 + 6*z0*zm3*zm4 + 3*z1**3*zm2**2 - z1**2*zm1**3 + 12*z1**2*zm2*zm4 + 3*z1**2*zm3**2 + 6*z1*zm1*zm2**2 + 6*z1*zm2*zm6 + 6*z1*zm3*zm5 + 9*z1*zm4**2 + zm1**4 + 3*zm1**2*zm5 + 6*zm1*zm2*zm4 - 3*zm1*zm3**2 - 3*zm2**2*zm3 + 6*zm4*zm6 + 3*zm5**2)/3",
+      "-5*(3*z0**3*zm1**2 + 6*z0**2*z1*zm1*zm2 + 6*z0**2*zm1*zm4 - 6*z0**2*zm2*zm3 + 3*z0*z1**2*zm2**2 + 2*z0*z1*zm1**3 - 6*z0*z1*zm3**2 - 6*z0*zm1*zm2**2 - 6*z0*zm2*zm6 - 6*z0*zm3*zm5 + 3*z0*zm4**2 + 3*z1**2*zm1**2*zm2 - 6*z1**2*zm3*zm4 + 2*z1*zm2**3 - 6*z1*zm3*zm6 - 6*z1*zm4*zm5 - 4*zm1**3*zm2 - 3*zm1**2*zm6 - 6*zm1*zm2*zm5 + 6*zm1*zm3*zm4 + 3*zm2**2*zm4 + 3*zm2*zm3**2 - 6*zm5*zm6)/3",
+      "-(-3*lam + 30*z0**3*zm1*zm2 + 30*z0**2*z1*zm1*zm3 + 45*z0**2*z1*zm2**2 + 20*z0**2*zm1**3 + 30*z0**2*zm1*zm5 + 30*z0**2*zm2*zm4 - 15*z0**2*zm3**2 + 60*z0*z1**2*zm2*zm3 + 60*z0*z1*zm1**2*zm2 + 60*z0*z1*zm2*zm5 + 30*z0*zm1**2*zm4 + 10*z0*zm2**3 - 30*z0*zm3*zm6 + 30*z0*zm4*zm5 + 15*z1**3*zm3**2 + 30*z1**2*zm1**2*zm3 + 15*z1**2*zm1*zm2**2 + 30*z1**2*zm3*zm5 - 15*z1**2*zm4**2 + 10*z1*zm1**4 + 30*z1*zm1**2*zm5 + 30*z1*zm1*zm3**2 + 30*z1*zm2**2*zm3 - 30*z1*zm4*zm6 + 15*z1*zm5**2 + 10*zm1**3*zm3 - 15*zm1**2*zm2**2 - 30*zm1*zm2*zm6 + 30*zm1*zm3*zm5 + 15*zm1*zm4**2 + 15*zm2**2*zm5 + 30*zm2*zm3*zm4 + 5*zm3**3 - 15*zm6**2)/3",
+      "-5*(6*z0**3*zm1*zm3 + 3*z0**3*zm2**2 + 6*z0**2*z1*zm1*zm4 + 18*z0**2*z1*zm2*zm3 + 12*z0**2*zm1**2*zm2 + 6*z0**2*zm1*zm6 + 6*z0**2*zm2*zm5 + 6*z0**2*zm3*zm4 + 12*z0*z1**2*zm2*zm4 + 9*z0*z1**2*zm3**2 + 12*z0*z1*zm1**2*zm3 + 18*z0*z1*zm1*zm2**2 + 12*z0*z1*zm2*zm6 + 12*z0*z1*zm3*zm5 + 6*z0*z1*zm4**2 + 2*z0*zm1**4 + 6*z0*zm1**2*zm5 + 12*z0*zm1*zm2*zm4 + 6*z0*zm1*zm3**2 + 6*z0*zm2**2*zm3 + 6*z0*zm4*zm6 + 3*z0*zm5**2 + 6*z1**3*zm3*zm4 + 6*z1**2*zm1**2*zm4 + 12*z1**2*zm1*zm2*zm3 + z1**2*zm2**3 + 6*z1**2*zm3*zm6 + 6*z1**2*zm4*zm5 + 8*z1*zm1**3*zm2 + 6*z1*zm1**2*zm6 + 12*z1*zm1*zm2*zm5 + 12*z1*zm1*zm3*zm4 + 6*z1*zm2**2*zm4 + 6*z1*zm2*zm3**2 + 6*z1*zm5*zm6 + 2*zm1**3*zm4 + 6*zm1**2*zm2*zm3 + 2*zm1*zm2**3 + 6*zm1*zm3*zm6 + 6*zm1*zm4*zm5 + 3*zm2**2*zm6 + 6*zm2*zm3*zm5 + 3*zm2*zm4**2 + 3*zm3**2*zm4)/3",
+      "(-3*lam*z1 + 15*z0**4*zm1**2 + 60*z0**3*z1*zm1*zm2 + 30*z0**3*zm1*zm4 - 30*z0**3*zm2*zm3 + 30*z0**2*z1**2*zm1*zm3 + 60*z0**2*z1**2*zm2**2 + 30*z0**2*z1*zm1**3 + 30*z0**2*z1*zm1*zm5 + 30*z0**2*z1*zm2*zm4 - 45*z0**2*z1*zm3**2 - 30*z0**2*zm1*zm2**2 - 30*z0**2*zm2*zm6 - 30*z0**2*zm3*zm5 + 15*z0**2*zm4**2 + 60*z0*z1**3*zm2*zm3 + 60*z0*z1**2*zm1**2*zm2 + 60*z0*z1**2*zm2*zm5 - 30*z0*z1**2*zm3*zm4 - 60*z0*z1*zm1*zm2*zm3 + 20*z0*z1*zm2**3 - 60*z0*z1*zm3*zm6 - 40*z0*zm1**3*zm2 - 30*z0*zm1**2*zm6 - 60*z0*zm1*zm2*zm5 - 30*z0*zm2*zm3**2 - 30*z0*zm5*zm6 + 15*z1**4*zm3**2 + 30*z1**3*zm1**2*zm3 + 30*z1**3*zm3*zm5 - 15*z1**3*zm4**2 + 15*z1**2*zm1**4 + 30*z1**2*zm1**2*zm5 - 60*z1**2*zm1*zm2*zm4 + 15*z1**2*zm1*zm3**2 - 30*z1**2*zm4*zm6 + 15*z1**2*zm5**2 + 20*z1*zm1**3*zm3 - 30*z1*zm1**2*zm2**2 - 60*z1*zm1*zm2*zm6 - 30*z1*zm1*zm4**2 - 60*z1*zm2*zm3*zm4 - 10*z1*zm3**3 - 15*z1*zm6**2 - 2*zm1**5 - 10*zm1**3*zm5 - 30*zm1**2*zm2*zm4 + 15*zm1**2*zm3**2 - 30*zm1*zm4*zm6 - 15*zm1*zm5**2 + 5*zm2**4 - 30*zm2*zm3*zm6 - 30*zm2*zm4*zm5 - 15*zm3**2*zm5 - 15*zm3*zm4**2)/3",
+      "(-3*lam*z0 + 30*z0**4*zm1*zm2 + 60*z0**3*z1*zm1*zm3 + 60*z0**3*z1*zm2**2 + 30*z0**3*zm1**3 + 30*z0**3*zm1*zm5 + 30*z0**3*zm2*zm4 - 15*z0**3*zm3**2 + 30*z0**2*z1**2*zm1*zm4 + 150*z0**2*z1**2*zm2*zm3 + 150*z0**2*z1*zm1**2*zm2 + 30*z0**2*z1*zm1*zm6 + 90*z0**2*z1*zm2*zm5 + 30*z0**2*z1*zm3*zm4 + 60*z0**2*zm1**2*zm4 + 10*z0**2*zm2**3 - 30*z0**2*zm3*zm6 + 30*z0**2*zm4*zm5 + 60*z0*z1**3*zm2*zm4 + 60*z0*z1**3*zm3**2 + 90*z0*z1**2*zm1**2*zm3 + 120*z0*z1**2*zm1*zm2**2 + 60*z0*z1**2*zm2*zm6 + 90*z0*z1**2*zm3*zm5 + 15*z0*z1**2*zm4**2 + 30*z0*z1*zm1**4 + 60*z0*z1*zm1**2*zm5 + 60*z0*z1*zm1*zm2*zm4 + 30*z0*z1*zm1*zm3**2 + 60*z0*z1*zm2**2*zm3 + 30*z0*z1*zm5**2 + 20*z0*zm1**3*zm3 - 30*z0*zm1**2*zm2**2 - 60*z0*zm1*zm2*zm6 + 30*z0*zm1*zm4**2 - 10*z0*zm3**3 - 15*z0*zm6**2 + 30*z1**4*zm3*zm4 + 30*z1**3*zm1**2*zm4 + 60*z1**3*zm1*zm2*zm3 + 30*z1**3*zm3*zm6 + 30*z1**3*zm4*zm5 + 60*z1**2*zm1**3*zm2 + 30*z1**2*zm1**2*zm6 + 60*z1**2*zm1*zm2*zm5 + 30*z1**2*zm1*zm3*zm4 + 15*z1**2*zm2*zm3**2 + 30*z1**2*zm5*zm6 + 20*z1*zm1**3*zm4 + 60*z1*zm1**2*zm2*zm3 + 20*z1*zm1*zm2**3 - 30*z1*zm2*zm4**2 - 30*z1*zm3**2*zm4 - 10*zm1**4*zm2 - 10*zm1**3*zm6 - 30*zm1**2*zm2*zm5 + 30*zm1**2*zm3*zm4 + 30*zm1*zm2*zm3**2 - 30*zm1*zm5*zm6 + 20*zm2**3*zm3 - 30*zm2*zm4*zm6 - 15*zm2*zm5**2 - 15*zm3**2*zm6 - 30*zm3*zm4*zm5 - 5*zm4**3)/3",
+      "-(-3*lam*z1**2 + 3*lam*zm1 + 15*z0**4*z1*zm1**2 - 30*z0**4*zm1*zm3 - 15*z0**4*zm2**2 + 60*z0**3*z1**2*zm1*zm2 - 120*z0**3*z1*zm2*zm3 - 90*z0**3*zm1**2*zm2 - 30*z0**3*zm1*zm6 - 30*z0**3*zm2*zm5 - 30*z0**3*zm3*zm4 + 30*z0**2*z1**3*zm1*zm3 + 60*z0**2*z1**3*zm2**2 + 30*z0**2*z1**2*zm1**3 + 30*z0**2*z1**2*zm1*zm5 - 30*z0**2*z1**2*zm2*zm4 - 90*z0**2*z1**2*zm3**2 - 90*z0**2*z1*zm1**2*zm3 - 180*z0**2*z1*zm1*zm2**2 - 90*z0**2*z1*zm2*zm6 - 90*z0**2*z1*zm3*zm5 - 15*z0**2*z1*zm4**2 - 25*z0**2*zm1**4 - 60*z0**2*zm1**2*zm5 - 120*z0**2*zm1*zm2*zm4 - 30*z0**2*zm1*zm3**2 - 30*z0**2*zm2**2*zm3 - 30*z0**2*zm4*zm6 - 15*z0**2*zm5**2 + 60*z0*z1**4*zm2*zm3 + 60*z0*z1**3*zm1**2*zm2 + 60*z0*z1**3*zm2*zm5 - 60*z0*z1**3*zm3*zm4 - 30*z0*z1**2*zm1**2*zm4 - 180*z0*z1**2*zm1*zm2*zm3 - 90*z0*z1**2*zm3*zm6 - 30*z0*z1**2*zm4*zm5 - 140*z0*z1*zm1**3*zm2 - 60*z0*z1*zm1**2*zm6 - 180*z0*z1*zm1*zm2*zm5 - 60*z0*z1*zm1*zm3*zm4 - 60*z0*z1*zm2**2*zm4 - 60*z0*z1*zm2*zm3**2 - 60*z0*z1*zm5*zm6 - 40*z0*zm1**3*zm4 - 60*z0*zm1**2*zm2*zm3 - 20*z0*zm1*zm2**3 - 60*z0*zm1*zm4*zm5 - 30*z0*zm2*zm4**2 + 15*z1**5*zm3**2 + 30*z1**4*zm1**2*zm3 + 30*z1**4*zm3*zm5 - 15*z1**4*zm4**2 + 15*z1**3*zm1**4 + 30*z1**3*zm1**2*zm5 - 60*z1**3*zm1*zm2*zm4 - 30*z1**3*zm4*zm6 + 15*z1**3*zm5**2 - 10*z1**2*zm1**3*zm3 - 60*z1**2*zm1**2*zm2**2 - 60*z1**2*zm1*zm2*zm6 - 30*z1**2*zm1*zm3*zm5 - 15*z1**2*zm1*zm4**2 - 30*z1**2*zm2*zm3*zm4 - 10*z1**2*zm3**3 - 15*z1**2*zm6**2 - 10*z1*zm1**5 - 40*z1*zm1**3*zm5 - 60*z1*zm1**2*zm2*zm4 - 30*z1*zm1**2*zm3**2 - 60*z1*zm1*zm2**2*zm3 - 30*z1*zm1*zm5**2 - 5*z1*zm2**4 + 30*z1*zm3*zm4**2 - 10*zm1**4*zm3 + 10*zm1**3*zm2**2 + 30*zm1**2*zm2*zm6 - 30*zm1**2*zm3*zm5 - 15*zm1**2*zm4**2 - 60*zm1*zm2*zm3*zm4 - 20*zm1*zm3**3 + 15*zm1*zm6**2 - 20*zm2**3*zm4 - 30*zm2**2*zm3**2 + 30*zm2*zm5*zm6 + 30*zm3*zm4*zm6 + 15*zm3*zm5**2 + 15*zm4**2*zm5)/3",
+      "-(-6*lam*z0*z1 + 3*lam*zm2 + 15*z0**5*zm1**2 + 90*z0**4*z1*zm1*zm2 + 30*z0**4*zm1*zm4 - 30*z0**4*zm2*zm3 + 90*z0**3*z1**2*zm1*zm3 + 120*z0**3*z1**2*zm2**2 + 60*z0**3*z1*zm1**3 + 60*z0**3*z1*zm1*zm5 + 60*z0**3*z1*zm2*zm4 - 60*z0**3*z1*zm3**2 - 30*z0**3*zm1**2*zm3 - 60*z0**3*zm1*zm2**2 - 30*z0**3*zm2*zm6 - 30*z0**3*zm3*zm5 + 15*z0**3*zm4**2 + 30*z0**2*z1**3*zm1*zm4 + 210*z0**2*z1**3*zm2*zm3 + 210*z0**2*z1**2*zm1**2*zm2 + 30*z0**2*z1**2*zm1*zm6 + 150*z0**2*z1**2*zm2*zm5 + 30*z0**2*z1*zm1**2*zm4 - 180*z0**2*z1*zm1*zm2*zm3 - 90*z0**2*z1*zm3*zm6 + 30*z0**2*z1*zm4*zm5 - 100*z0**2*zm1**3*zm2 - 60*z0**2*zm1**2*zm6 - 120*z0**2*zm1*zm2*zm5 - 60*z0**2*zm1*zm3*zm4 - 30*z0**2*zm2**2*zm4 - 30*z0**2*zm2*zm3**2 - 30*z0**2*zm5*zm6 + 60*z0*z1**4*zm2*zm4 + 75*z0*z1**4*zm3**2 + 120*z0*z1**3*zm1**2*zm3 + 120*z0*z1**3*zm1*zm2**2 + 60*z0*z1**3*zm2*zm6 + 120*z0*z1**3*zm3*zm5 + 45*z0*z1**2*zm1**4 + 90*z0*z1**2*zm1**2*zm5 - 60*z0*z1**2*zm1*zm2*zm4 - 30*z0*z1**2*zm4*zm6 + 45*z0*z1**2*zm5**2 - 20*z0*z1*zm1**3*zm3 - 180*z0*z1*zm1**2*zm2**2 - 180*z0*z1*zm1*zm2*zm6 - 60*z0*z1*zm1*zm3*zm5 - 30*z0*z1*zm1*zm4**2 - 60*z0*z1*zm2**2*zm5 - 120*z0*z1*zm2*zm3*zm4 - 20*z0*z1*zm3**3 - 30*z0*z1*zm6**2 - 10*z0*zm1**5 - 40*z0*zm1**3*zm5 - 120*z0*zm1**2*zm2*zm4 - 30*z0*zm1**2*zm3**2 - 60*z0*zm1*zm2**2*zm3 - 60*z0*zm1*zm4*zm6 - 30*z0*zm1*zm5**2 - 5*z0*zm2**4 - 60*z0*zm2*zm4*zm5 - 30*z0*zm3*zm4**2 + 30*z1**5*zm3*zm4 + 30*z1**4*zm1**2*zm4 + 60*z1**4*zm1*zm2*zm3 + 30*z1**4*zm3*zm6 + 30*z1**4*zm4*zm5 + 60*z1**3*zm1**3*zm2 + 30*z1**3*zm1**2*zm6 + 60*z1**3*zm1*zm2*zm5 + 30*z1**3*zm5*zm6 - 10*z1**2*zm1**3*zm4 - 30*z1**2*zm1**2*zm2*zm3 - 30*z1**2*zm1*zm3*zm6 - 30*z1**2*zm1*zm4*zm5 - 30*z1**2*zm2*zm3*zm5 - 15*z1**2*zm2*zm4**2 - 30*z1**2*zm3**2*zm4 - 50*z1*zm1**4*zm2 - 40*z1*zm1**3*zm6 - 120*z1*zm1**2*zm2*zm5 - 60*z1*zm1**2*zm3*zm4 - 60*z1*zm1*zm2**2*zm4 - 60*z1*zm1*zm2*zm3**2 - 60*z1*zm1*zm5*zm6 - 20*z1*zm2**3*zm3 - 30*z1*zm2*zm5**2 + 10*z1*zm4**3 - 10*zm1**4*zm4 - 40*zm1**3*zm2*zm3 - 10*zm1**2*zm2**3 - 30*zm1**2*zm3*zm6 - 30*zm1**2*zm4*zm5 - 60*zm1*zm2*zm3*zm5 - 30*zm1*zm2*zm4**2 - 60*zm1*zm3**2*zm4 - 20*zm2**3*zm5 - 60*zm2**2*zm3*zm4 - 20*zm2*zm3**3 + 15*zm2*zm6**2 + 30*zm3*zm5*zm6 + 15*zm4**2*zm6 + 15*zm4*zm5**2)/3"
+    ]
+  },
+  "schema": "plane-jc.f2-modified-laurent-family.v3",
+  "software_assumptions": [
+    ".python-version",
+    "requirements.txt",
+    "characteristic-zero exact SymPy arithmetic"
+  ],
+  "systems": [
+    {
+      "coefficient_variables": 8,
+      "d": 2,
+      "degree_pair": [
+        50,
+        75
+      ],
+      "degree_pair_provenance": "F2 table: (m,n)=(j+2,2j+3), j=r-2, and v_11(A0)=v_11(5,20)=25",
+      "eliminated_coefficient_variables": 5,
+      "family_parameter_j": 0,
+      "first_block_digest": "d7a2eedcd2dd58792d57954deec2ea778d01ffc66c6d961d46cac8447acf676a",
+      "first_block_equations": 5,
+      "first_block_term_counts": [
+        2,
+        3,
+        3,
+        4,
+        4
+      ],
+      "free_coefficient_variables": 3,
+      "lambda_elimination_equation": 2,
+      "lambda_weight": 8,
+      "last_inspected_z_exponent": -7,
+      "r": 2,
+      "reduced_pair": [
+        2,
+        3
+      ],
+      "residual_digest": "039cfb69ed65e1d847eeeb69012553074380a7a3f385956a43a763fb631059f1",
+      "residual_equations": 3,
+      "residual_partition_assumption": "historical modified chart with bracket x-degree h=2; use compact_residues for an explicit h-dependent partition",
+      "residual_term_counts": [
+        1,
+        3,
+        2
+      ],
+      "residual_weights": [
+        2,
+        3,
+        4
+      ],
+      "residual_z_exponents": [
+        0,
+        -1,
+        -2
+      ],
+      "total_equations": 8,
+      "visible_f_equations": [
+        1,
+        2,
+        3
+      ],
+      "zero_residual_equations": []
+    },
+    {
+      "coefficient_variables": 13,
+      "d": 3,
+      "degree_pair": [
+        50,
+        75
+      ],
+      "degree_pair_provenance": "F2 table: (m,n)=(j+2,2j+3), j=r-2, and v_11(A0)=v_11(5,20)=25",
+      "eliminated_coefficient_variables": 8,
+      "family_parameter_j": 0,
+      "first_block_digest": "1f34dd953bcf9043b03702fe8f6fd13ad74055e08787c2028d17a032b358c87c",
+      "first_block_equations": 8,
+      "first_block_term_counts": [
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "free_coefficient_variables": 5,
+      "lambda_elimination_equation": 3,
+      "lambda_weight": 12,
+      "last_inspected_z_exponent": -11,
+      "r": 2,
+      "reduced_pair": [
+        2,
+        3
+      ],
+      "residual_digest": "c32d7f6e29b4e99fb34411399b0062409ff122383f8b502c430ad33c675a7c1f",
+      "residual_equations": 5,
+      "residual_partition_assumption": "historical modified chart with bracket x-degree h=2; use compact_residues for an explicit h-dependent partition",
+      "residual_term_counts": [
+        3,
+        2,
+        5,
+        4,
+        8
+      ],
+      "residual_weights": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "residual_z_exponents": [
+        1,
+        0,
+        -1,
+        -2,
+        -3
+      ],
+      "total_equations": 13,
+      "visible_f_equations": [
+        3,
+        4,
+        5
+      ],
+      "zero_residual_equations": [
+        1,
+        2
+      ]
+    },
+    {
+      "coefficient_variables": 14,
+      "d": 2,
+      "degree_pair": [
+        75,
+        125
+      ],
+      "degree_pair_provenance": "F2 table: (m,n)=(j+2,2j+3), j=r-2, and v_11(A0)=v_11(5,20)=25",
+      "eliminated_coefficient_variables": 9,
+      "family_parameter_j": 1,
+      "first_block_digest": "8fbe23edcb88dc4505714dc520d5ce46dabc58a7eba3860d37165e3cff835dbe",
+      "first_block_equations": 9,
+      "first_block_term_counts": [
+        4,
+        6,
+        7,
+        9,
+        10,
+        13,
+        14,
+        17,
+        19
+      ],
+      "free_coefficient_variables": 5,
+      "lambda_elimination_equation": 2,
+      "lambda_weight": 12,
+      "last_inspected_z_exponent": -13,
+      "r": 3,
+      "reduced_pair": [
+        3,
+        5
+      ],
+      "residual_digest": "c2648af67ff81484aa66775bfb2e78f3959520dba7e35d4c8c1f7311172963b0",
+      "residual_equations": 5,
+      "residual_partition_assumption": "historical modified chart with bracket x-degree h=2; use compact_residues for an explicit h-dependent partition",
+      "residual_term_counts": [
+        7,
+        11,
+        11,
+        15,
+        17
+      ],
+      "residual_weights": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "residual_z_exponents": [
+        0,
+        -1,
+        -2,
+        -3,
+        -4
+      ],
+      "total_equations": 14,
+      "visible_f_equations": [
+        3,
+        4,
+        5
+      ],
+      "zero_residual_equations": [
+        1,
+        2
+      ]
+    },
+    {
+      "coefficient_variables": 22,
+      "d": 3,
+      "degree_pair": [
+        75,
+        125
+      ],
+      "degree_pair_provenance": "F2 table: (m,n)=(j+2,2j+3), j=r-2, and v_11(A0)=v_11(5,20)=25",
+      "eliminated_coefficient_variables": 14,
+      "family_parameter_j": 1,
+      "first_block_digest": "d3101adb202ef35b0fa011300c48bb1963cac254612b834ece5256c2cc203ff4",
+      "first_block_equations": 14,
+      "first_block_term_counts": [
+        9,
+        10,
+        13,
+        14,
+        17,
+        19,
+        22,
+        24,
+        28,
+        30,
+        34,
+        37,
+        41,
+        44
+      ],
+      "free_coefficient_variables": 8,
+      "lambda_elimination_equation": 3,
+      "lambda_weight": 18,
+      "last_inspected_z_exponent": -20,
+      "r": 3,
+      "reduced_pair": [
+        3,
+        5
+      ],
+      "residual_digest": "533af5cd52bbd4724ed1591dd20bc21c7fefcd4b75172a96803ad4c6a20ae070",
+      "residual_equations": 8,
+      "residual_partition_assumption": "historical modified chart with bracket x-degree h=2; use compact_residues for an explicit h-dependent partition",
+      "residual_term_counts": [
+        25,
+        23,
+        35,
+        44,
+        55,
+        65,
+        88,
+        104
+      ],
+      "residual_weights": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "residual_z_exponents": [
+        1,
+        0,
+        -1,
+        -2,
+        -3,
+        -4,
+        -5,
+        -6
+      ],
+      "total_equations": 22,
+      "visible_f_equations": [
+        6,
+        7,
+        8
+      ],
+      "zero_residual_equations": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ]
+}

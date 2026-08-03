@@ -31,6 +31,19 @@ Hessian determinant in all 96 charts.  This is the finite-box result
 \(\rho,\tau,\lambda\), and it does not classify general coisotropic
 embeddings.
 
+The later
+[Meng--Yang graph obstruction](HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md) is
+parameter-uniform for every affine four-plane and every single graph
+\(y_3=R(x_1,x_2,y_1,y_2)\) of degree at most three in the v2
+five-variable potential.  Its two-slope continuation also excludes every
+graph through degree four over an arbitrary characteristic-zero field.  It
+then makes the degree-five plane equation uniquely solvable for the normal
+jet, forces a vertical quintic trace, and excludes one complete sparse trace
+family by first-transverse coefficients.  The general degree-five graph and
+non-graph generating families remain open; none of these parameter-uniform
+graph results turns this finite Hamiltonian-chart calculation into a
+classification of nonlinear generating families.
+
 Replay the search with
 
 ```bash

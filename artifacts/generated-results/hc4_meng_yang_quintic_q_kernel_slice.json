@@ -1,0 +1,126 @@
+{
+  "bad_prime_common_roots": {
+    "11": [
+      2
+    ],
+    "13": [
+      10
+    ],
+    "53": [
+      34
+    ],
+    "863": [
+      717
+    ]
+  },
+  "complete_degree_two_extension": {
+    "nonzero_yq_branch": {
+      "bad_prime_common_roots": {
+        "11": [
+          0
+        ],
+        "24223": [
+          4365
+        ],
+        "33629": [
+          30101
+        ]
+      },
+      "good_prime_common_roots": {
+        "101": [],
+        "103": []
+      },
+      "resultant": 986335129354383654912000,
+      "resultant_factorization": {
+        "11": 1,
+        "2": 27,
+        "24223": 1,
+        "3": 8,
+        "33629": 1,
+        "5": 3
+      },
+      "witness_F": [
+        160,
+        1968,
+        5841
+      ],
+      "witness_G": [
+        3968000,
+        98457600,
+        896972480,
+        3553345920,
+        5132433339
+      ]
+    },
+    "q_squared_forced_zero_by_quartic_normal_square": 256
+  },
+  "good_prime_common_roots": {
+    "101": [],
+    "103": []
+  },
+  "kernel_chart": "partial_q",
+  "open": [
+    "broader cubic and quartic trace terms on the partial_q chart",
+    "the remaining finite and infinite constant-kernel charts",
+    "lower transverse layers after a surviving high transverse ideal"
+  ],
+  "pq_extension": {
+    "finite_field_counts": {
+      "101": {
+        "admissible": 0,
+        "raw": 1
+      },
+      "103": {
+        "admissible": 0,
+        "raw": 0
+      }
+    },
+    "groebner_basis": [
+      "1"
+    ],
+    "kernel_denominator_boundary_resultant": -15552,
+    "linear_q_coefficient_cancels": true,
+    "resultant_gcd": "32*rho^2+384*rho+1557",
+    "witness_bidegrees_in_a_rho": [
+      [
+        1,
+        3
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        1,
+        3
+      ]
+    ]
+  },
+  "rational_reconstruction": "empty: every degree-at-most-two lower trace branch is excluded over Q",
+  "schema": "hc4-meng-yang-quintic-q-kernel-slice.v3",
+  "status": "exact characteristic-zero exclusion; no HC4 candidate",
+  "terminal_cubics": {
+    "A": [
+      656,
+      11166,
+      70911,
+      168912
+    ],
+    "B": [
+      16,
+      192,
+      801,
+      54
+    ]
+  },
+  "terminal_resultant": -108117004020524928,
+  "terminal_resultant_factorization": {
+    "11": 1,
+    "13": 1,
+    "2": 7,
+    "3": 17,
+    "53": 1,
+    "863": 1
+  },
+  "trace_slice": "kappa*y^5+d*y^3*p+rho*y^2*q+h*y^3+e*y*p^2+T_le2(y,p,q)"
+}

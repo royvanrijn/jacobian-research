@@ -374,6 +374,8 @@ proof satisfies the first-order recurrence
 which is much smaller than the generic rank and was obtained by direct
 finite telescoping.
 
+<!-- status-consumer: FTI1 836c1443b2e29cd8 -->
+
 ## 8. Recommended workflow
 
 For a new parameterized contraction family:
@@ -385,12 +387,17 @@ For a new parameterized contraction family:
 4. primitively normalize the recurrence over the relevant integral
    parameter ring and separate period normalization from raw factorial
    normalization;
-5. compute the local factor/Smith valuation ledger before taking shift
+5. factor any certified first-order hypergeometric components and group their
+   shift quotients by the exact divisor-orbit signature of
+   [`FACTORIAL_TRACE_INDEPENDENCE.md`](FACTORIAL_TRACE_INDEPENDENCE.md);
+   distinct signatures cannot cancel over exponential-rational coefficients,
+   while equal signatures must be merged before initial-value tests;
+6. compute the local factor/Smith valuation ledger before taking shift
    norms, and use recurrence \(p\)-curvature only as a module-level check;
-6. independently compute the Laurent support and normalized Newton volume;
-7. test face nondegeneracy at the actual coefficient point, not only
+7. independently compute the Laurent support and normalized Newton volume;
+8. test face nondegeneracy at the actual coefficient point, not only
    generically; and
-8. use the GKZ rank as an initial-data bound only after constructing the
+9. use the GKZ rank as an initial-data bound only after constructing the
    generating-function pullback and proving the expansion point ordinary.
 
 The hypergeometric route is the primary proof-producing method for the

@@ -1,0 +1,42 @@
+{
+  "axis_graph_coefficients": 91,
+  "finite_field_projected_counts": {
+    "101": {
+      "beta_zero": 201,
+      "five_zeta_plus_four_beta_zero": 201,
+      "total": 10201,
+      "zeta_zero": 101,
+      "zeta_zero_after_t5": 0
+    },
+    "103": {
+      "beta_zero": 205,
+      "five_zeta_plus_four_beta_zero": 205,
+      "total": 10609,
+      "zeta_zero": 103,
+      "zeta_zero_after_t5": 2
+    }
+  },
+  "nonzero_zeta_kernel_charts": [
+    "zeta*y^5+x*T4(x,y,p-kappa*q)",
+    "zeta*y^5+x*U4(x,y,q)"
+  ],
+  "open": [
+    "lower determinant layers",
+    "off-axis determinant identity",
+    "collision equations on the full graph"
+  ],
+  "rational_projected_jet_survivor": {
+    "beta": "6",
+    "rho": "0",
+    "zeta": "-6/41"
+  },
+  "rational_zero_zeta_branch": "empty",
+  "schema": "hc4-meng-yang-quintic-graph-normal-slice.v1",
+  "status": "exact normal-slice reduction; no HC4 candidate",
+  "zero_zeta_discriminant": 19584,
+  "zero_zeta_polynomial": [
+    160,
+    1968,
+    6021
+  ]
+}

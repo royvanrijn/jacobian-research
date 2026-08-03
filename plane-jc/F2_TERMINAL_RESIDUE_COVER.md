@@ -2,6 +2,13 @@
 
 ## Result and claim boundary
 
+The uniform extension to every F2 parameter is proved in
+[`F2_MODIFIED_LAURENT_FAMILY.md`](F2_MODIFIED_LAURENT_FAMILY.md): the terminal
+residue has degree `2r`, passport
+`(2r-1,1)|(r,r)|(3,1^(2r-3))`, and geometric monodromy `A_(2r)`.  This note
+retains the fuller toroidal and global-ledger analysis of its `r=3`
+specialization.
+
 The uniquely normalized F2 terminal block does more than fix five endpoint
 coefficients.  It determines an exact toroidal source-to-target boundary row.
 After extracting the target ray `(5,2)`, the terminal source divisor has

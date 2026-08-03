@@ -319,6 +319,30 @@ calculations may still be needed to establish one of those hypotheses in a
 different setting, but should not be used to rediscover the rank-one update
 identity.
 
+The next direct descent audit is
+[`HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md`](HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md).
+It proves that every affine four-plane restriction of the scaled family is
+degenerate or has nonconstant Hessian determinant, and that every graph
+\(y_3=R(x_1,x_2,y_1,y_2)\) of degree at most three has nonconstant Hessian
+determinant.  The full two-slope jet also excludes degree four over every
+characteristic-zero field by ending in two coprime quadratic equations for
+the same cubic graph coefficient.  In degree five, the determinant on
+\(x_1=0\) becomes a unit-affine equation for the first normal graph jet; the
+leading trace is forced to \(\kappa x_2^5\), and one complete sparse trace
+family is excluded by first-transverse coefficients.  A complementary
+rational top-cone calculation leaves only two constant-kernel charts.  The
+first \(\partial_{y_2}\)-kernel transverse slice is now excluded by an exact
+calculation with the complete degree-at-most-two lower trace.  The generic
+branch gives a three-equation unit ideal, a square in the forced quartic
+normal jet kills the \(y_2^2\) term, the nonzero \(x_2y_2\) branch ends in two
+coprime transverse polynomials, and a separate resultant removes the
+exceptional denominator chart.  This is recorded in
+[`HC4_MENG_YANG_QUINTIC_SCHUR_FRONTIER.md`](HC4_MENG_YANG_QUINTIC_SCHUR_FRONTIER.md).
+Thus degree five remains open, but its next calculation is a joint
+plane/top-cone/transverse ideal with broader lower traces rather than another
+unrestricted graph enumeration.  The same frontier note excludes every
+relative-linear unit-pivot correction through degree 89.
+
 The lemma does **not** make a second descent automatic.  The term \(A^2\)
 usually consumes the dual-linearity that forced (3.2), so the descended
 potential need not have another affine pivot with a singular reduced

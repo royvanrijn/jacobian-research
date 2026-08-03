@@ -28,11 +28,14 @@ poly S3=
 poly norm1=resultant(P,S1,T);
 poly norm3=resultant(P,S3,T);
 poly norm1a=resultant(P,S1+4*a^3,T);
+poly Snear=(b+6)*T-81*(b^2+3*b+9);
+poly normnear=resultant(P,Snear,T);
 
 ring coefficient_ring=0,(a,b),dp;
 poly norm1=imap(root_ring,norm1);
 poly norm3=imap(root_ring,norm3);
 poly norm1a=imap(root_ring,norm1a);
+poly normnear=imap(root_ring,normnear);
 
 if (deg(norm1)!=16 || size(factorize(norm1,1))!=1)
 {
@@ -46,10 +49,15 @@ if (deg(norm1a)!=16 || size(factorize(norm1a,1))!=1)
 {
     ERROR("the a^3 perturbation norm is not irreducible of degree 16");
 }
+if (deg(normnear)!=16 || size(factorize(normnear,1))!=1)
+{
+    ERROR("the affine-modification quotient norm is not irreducible of degree 16");
+}
 
 int genus1=genus(ideal(norm1));
 int genus3=genus(ideal(norm3));
 int genus1a=genus(ideal(norm1a));
+int genusnear=genus(ideal(normnear));
 
 if (genus1!=12)
 {
@@ -63,8 +71,13 @@ if (genus1a!=12)
 {
     ERROR("the displayed a^3 perturbation norm does not have genus 12");
 }
+if (genusnear!=10)
+{
+    ERROR("the affine-modification quotient norm does not have genus 10");
+}
 
 print("PASS: the first irreducible degree-16 selector norm has genus 12");
 print("PASS: the second irreducible degree-16 selector norm has genus 14");
 print("PASS: the displayed a^3 perturbation remains irreducible of genus 12");
+print("PASS: the affine-modification quotient norm is irreducible of genus 10");
 print("NOTE: these sharp-bound samples are not a classification of the degree-16 parameter plane");

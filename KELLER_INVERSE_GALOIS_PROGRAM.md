@@ -247,7 +247,7 @@ The systematic queue is:
 | stage | groups or actions | first model to audit | current repository state |
 |---:|---|---|---|
 | 1 | cyclic and dihedral | Kummer and Dickson/Chebyshev incidence | cyclic absolute no-go; uniform dihedral ledger; canonical one-normal completion excluded in every degree |
-| 2 | \(A_4,S_4,A_5\) | oriented discriminants and low-dimensional generic polynomials | \(A_4\) has the advanced frontier below; \(S_4,A_5\) absolute ledgers are queued |
+| 2 | \(A_4,S_4,A_5\) | oriented discriminants and low-dimensional generic polynomials | \(A_4\) has the advanced frontier below; \(S_4\) has a six-edge collision core and a decomposable absolute group-only checkpoint, but its ordinary collision-frame algebraization is open; \(A_5\) absolute descent is queued |
 | 3 | Frobenius groups | semidirect-product generic polynomials | \(F_{20}\) has a universal smooth-affine chart; absolute descent is open |
 | 4 | \(\operatorname{PSL}_2(\mathbb F_q)\) | point/line and low-index subgroup torsors | queued |
 | 5 | affine linear groups | natural affine actions and additive-polynomial invariants | \(F_{20}\) is the first overlap with stage 3; the general audit is queued |
@@ -303,10 +303,25 @@ The current concrete checkpoints are:
    gives the smooth normalization an explicit determinant-one ambient
    completion, but proves that the resulting inverse blowdown is
    nonpolynomial with nonconstant rational Jacobian. More generally, every
-   automorphic incidence embedding is excluded.
-3. **Small imprimitive groups.** The actions of \(V_4\), \(D_4\), and wreath
-   products test whether block systems survive marked-root completion rather
-   than expanding to \(S_N\).
+   automorphic incidence embedding is excluded. Homogeneous radial scaling
+   is an explicit nonautomorphic solution of the corrected log-Jacobian
+   equation, but an all-degree order argument excludes the entire
+   `(SP,SQ,SR,A,C)` family for arbitrary polynomial masks. Any surviving
+   incidence must therefore couple the three cubic base coordinates
+   nonradially.
+3. [**Decomposable and collision-frame proper
+   groups.**](extended-geometry/S4_COLLISION_FRAME_KELLER_FRONTIER.md) The
+   composition \(F\circ F\) of the foundational degree-three map is an
+   absolute degree-nine Keller map with determinant four.  Its three blocks
+   of three sheets give monodromy inside \(S_3\wr S_3<S_9\), with nonabelian
+   quotient \(S_3\).  This is a literal but decomposable group-only
+   checkpoint.  Independently, factoring a depressed quartic into two
+   quadratics gives the exact \(S_4<S_6\) edge cover, together with its
+   discriminant, primitive-conductor, two-normal, rational cotangent, and
+   relative logarithmic ledgers.  Complementary edges form a three-block
+   system, so no group-theoretic atomicity is claimed.  A one-normal
+   zero-section-preserving completion is impossible; an ordinary polynomial
+   Keller algebraization with a proved affine-space source remains open.
 4. **\(\operatorname{GL}_3(\mathbb F_2)\) in degree seven.** This is the
    existing nonsymmetric benchmark. The relative and Cox realizations are
    known; absolute affine-space descent remains open.
@@ -323,6 +338,11 @@ The current concrete checkpoints are:
 Produce an absolute polynomial Keller map with certified generic inverse
 monodromy \(G<S_N\), a complete connected rational fiber, and at least two
 prescribed unramified Frobenius classes.
+
+The group-only clause is now met by the decomposable map \(F\circ F\), but
+the milestone as stated is not: this checkpoint does not certify the required
+connected rational fiber and Frobenius data, and it is not an atomic family.
+The collision-frame route remains the preferred structural target.
 
 ### Milestone II: a functorial relative theorem
 
@@ -355,24 +375,32 @@ marking base change silently enlarges the arithmetic group.
 2. Formulate a cover-preservation lemma for controlled-boundary suspensions:
    the reconstructed root algebra should be the original finite cover after
    restriction to the common open.
-3. Search for a nonautomorphic incidence map \(\alpha:\mathbb A^5\to
-   \mathbb A^5\) satisfying
+3. Search for a nonradial, nonautomorphic incidence map
+   \(\alpha:\mathbb A^5\to\mathbb A^5\) satisfying
    \[
    \mathcal B(\operatorname{pr}_{1,2,3}\alpha)
    =u\,\mathcal B(P,Q,R)\det D\alpha,
    \]
    both adjugate divisibilities for the inverse two-mask blowdown, and
    reconstruction of the original \(A_4\) target field. The normalized
-   automorphic assembly is excluded. Regular cyclic cubics and \(V_4\)
-   quartics remain absolute no-go cases because their degree extensions are
-   Galois.
-4. Combine the finite-field witness search with conjugacy classes of a
+   automorphic assembly and every radial base `(SP,SQ,SR)` with arbitrary
+   polynomial masks are excluded. Regular cyclic cubics and \(V_4\) quartics
+   remain absolute no-go cases because their degree extensions are Galois.
+4. Run fixed-support mixed-incidence searches for the quartic collision
+   frame in its conductor-adapted parametrization
+   \(m=-2a\tau+\sigma\), \(p=-a^2-2\tau^2+n\).  Feed two masks into at least
+   one coefficient output, impose the modified adjugate divisibilities and a
+   constant full Jacobian, then certify the degree-six \(S_4\) field by
+   elimination.  Every surviving source must pass units, class group/UFD,
+   ML, Derksen, Hodge--Deligne, and topological gates before an affine-space
+   recognition proof is attempted.
+5. Combine the finite-field witness search with conjugacy classes of a
    prescribed subgroup \(G\), rather than partitions of \(N\) sampled from
    \(S_N\).
-5. Recast the Davenport point/line construction as the first complete
+6. Recast the Davenport point/line construction as the first complete
    relative instance of the cover-first theorem and isolate exactly which
    hypothesis fails at affine-space descent.
-6. Separate three arithmetic outputs in every computation: connectedness of
+7. Separate three arithmetic outputs in every computation: connectedness of
    the degree-\(N\) fiber, its splitting-field group, and the geometric
    monodromy of the surrounding inverse cover.
 

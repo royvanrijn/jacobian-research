@@ -50,6 +50,7 @@ ACTIVE_OPEN = {
     "OP-GVC2-RP",
     "OP-GVC3-MIN",
     "OP-HC4-D5",
+    "OP-HC4-SCHUR",
     "OP-KCOMP",
     "OP-KDESC",
     "OP-KMOD",

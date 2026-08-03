@@ -17,6 +17,9 @@ More generally, no polynomial automorphism of the target can both move the
 generic mask-zero section into the target cubic and turn this factorization
 into a Keller map.  A surviving construction must use a nonautomorphic
 log-crepant incidence rechart satisfying a new relative Jacobian identity.
+The first such incidence exists explicitly, but an order argument excludes
+the entire radial-base family containing it, even with arbitrary polynomial
+mask outputs.
 
 Thus the ordinary polynomial Keller theorem has **not** been proved.
 What is proved is an exact obstruction to the first complete assembly.
@@ -300,7 +303,201 @@ Dropping (6.1) and solving only the boundary embedding problem cannot
 produce a Keller map.  This is the correction supplied by the present
 audit.
 
-## 7. Reproduction
+## 7. First nonautomorphic solution and its residue obstruction
+
+The log-crepant equation (6.1) is not empty.  Because \(\mathcal B\) is
+homogeneous of degree three, the polynomial map
+
+\[
+\boxed{
+\alpha_{\rm sc}(P,Q,R,S,T)
+=(SP,SQ,SR,S,T)
+}                                                    \tag{7.1}
+\]
+
+is generically birational and satisfies
+
+\[
+\det D\alpha_{\rm sc}=S^3,
+\qquad
+\mathcal B(SP,SQ,SR)=S^3\mathcal B(P,Q,R).
+                                                               \tag{7.2}
+\]
+
+Thus (6.1) holds exactly with \(u=1\).  This is the first explicit
+nonautomorphic incidence rechart passing the determinant gate.
+
+It nevertheless fails the adjugate gate.  Write
+
+\[
+X=P-Q,
+\qquad
+\mathcal U=27R^2-X^2-3(X-3R)Q.
+\]
+
+For the scaled base one has \(X_{\rm sc}=SX\) and
+\(\mathcal U_{\rm sc}=S^2\mathcal U\).  The two inverse-mask numerators
+become
+
+\[
+\begin{aligned}
+n_{1,{\rm sc}}
+ &=S-SXT
+   =S(1-XT),\\
+n_{2,{\rm sc}}
+ &=-S^2\mathcal U\,S+27(SR)^3T
+   =S^3(-\mathcal U+27R^3T),                       \tag{7.3}
+\end{aligned}
+\]
+
+whereas the denominator is
+
+\[
+\mathcal B(SP,SQ,SR)=S^3\mathcal B(P,Q,R).         \tag{7.4}
+\]
+
+After cancelling the one visible copy of \(S\), the first numerator is
+congruent to \(1\) modulo \((S,T)\).  Consequently (7.4) cannot divide
+it.  In particular this failure persists after the pure-target lift,
+whose first mask is \(S=(WL/4)z_1\): setting \(z_1=T=0\) leaves the same
+unit residue.
+
+Therefore
+
+\[
+\boxed{
+\text{homogeneous scaling solves the log-Jacobian equation but cannot
+solve the first inverse-mask divisibility.}
+}                                                    \tag{7.5}
+\]
+
+The remaining search must alter the mask outputs together with the radial
+base scaling; a base-only log-crepant contraction is insufficient.  In fact
+the next argument shows that arbitrary mask alterations do not rescue this
+radial base either.
+
+### 7.1 All polynomial masks over the radial base are impossible
+
+Let \(A,C\in\mathbb Q[P,Q,R,S,T]\) be arbitrary and consider
+
+\[
+\alpha_{A,C}=(SP,SQ,SR,A,C).                        \tag{7.6}
+\]
+
+Put
+
+\[
+\mathfrak m=(P,Q,R,S),
+\qquad
+E=P\partial_P+Q\partial_Q+R\partial_R,
+\qquad
+\mathcal D=S\partial_S-E.
+\]
+
+An exact block-determinant calculation gives
+
+\[
+\boxed{
+\det D\alpha_{A,C}
+=S^2\bigl((\mathcal D A)C_T-A_T(\mathcal D C)\bigr).
+}                                                    \tag{7.7}
+\]
+
+If (6.1) holds, homogeneity of \(\mathcal B\) and cancellation in the
+polynomial domain give
+
+\[
+(\mathcal D A)C_T-A_T(\mathcal D C)=u^{-1}S.        \tag{7.8}
+\]
+
+Write
+
+\[
+a=\operatorname{ord}_{\mathfrak m}A,
+\qquad
+c=\operatorname{ord}_{\mathfrak m}C.
+\]
+
+The operators \(\mathcal D\) and \(\partial_T\) do not decrease
+\(\mathfrak m\)-adic order.  Therefore the left side of (7.8) has order at
+least \(a+c\), while the right side has order one.  Hence
+
+\[
+\boxed{a+c\leq1.}                                   \tag{7.9}
+\]
+
+Now pull back by the pure-target fivefold map
+
+\[
+\mathcal Y=\left(WN_1,WN_2,WH,\frac{WL}{4}z_1,z_2\right).
+\]
+
+For every nonzero polynomial \(f(P,Q,R,S,T)\),
+
+\[
+\operatorname{ord}_W\mathcal Y^*f
+=\operatorname{ord}_{\mathfrak m}f.                \tag{7.10}
+\]
+
+Indeed, the leading form of \(f\) is evaluated on
+
+\[
+[N_1:N_2:H:(L/4)z_1].
+\]
+
+This map is dominant onto \(\mathbb P^3\): the rational map
+\((U,V)\mapsto[N_1:N_2:H]\) is dominant onto \(\mathbb P^2\), as witnessed
+by its nonzero Jacobian \(4K^3L/H^3\), and \(z_1\) supplies the fourth
+projective coordinate.  Thus a nonzero leading form cannot vanish
+identically.
+
+For (7.6), the first inverse numerator is
+
+\[
+n_1=A-S(P-Q)C.                                      \tag{7.11}
+\]
+
+Its denominator is \(S^3\mathcal B(P,Q,R)\).  After \(\mathcal Y\), that
+denominator is
+
+\[
+\left(\frac{WLz_1}{4}\right)^3
+W^3K^3L^2
+=\frac{W^6K^3L^5z_1^3}{64}.                        \tag{7.12}
+\]
+
+Polynomial divisibility would force
+\(\operatorname{ord}_W\mathcal Y^*n_1\geq6\), hence by (7.10)
+
+\[
+\operatorname{ord}_{\mathfrak m}n_1\geq6.          \tag{7.13}
+\]
+
+But (7.11) then gives
+
+\[
+a=\operatorname{ord}_{\mathfrak m}A
+\geq\min(6,c+2)\geq2,                              \tag{7.14}
+\]
+
+contradicting (7.9).  Therefore
+
+\[
+\boxed{
+\begin{gathered}
+\text{No radial-base incidence }(SP,SQ,SR,A,C)\text{ can satisfy both}\\
+\text{the log-crepant identity and polynomial factorization after
+\(\mathcal Y\).}
+\end{gathered}
+}                                                    \tag{7.15}
+\]
+
+This is an all-degree theorem and uses only the first adjugate numerator.
+It closes radial contraction of the cubic base, not general
+nonautomorphic incidence maps whose first three coordinates are coupled
+nonradially.
+
+## 8. Reproduction
 
 Run
 
@@ -309,4 +506,6 @@ Run
 ```
 
 The checker verifies the normalized boundary, its unimodular completion,
-the two failed divisions, and the explicit nonconstant determinant ratio.
+the two failed divisions, the explicit nonconstant determinant ratio, and
+the homogeneous nonautomorphic log-crepant incidence together with its
+unit inverse-mask residue.
