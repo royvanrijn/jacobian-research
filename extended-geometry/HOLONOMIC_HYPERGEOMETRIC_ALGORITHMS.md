@@ -374,7 +374,7 @@ proof satisfies the first-order recurrence
 which is much smaller than the generic rank and was obtained by direct
 finite telescoping.
 
-<!-- status-consumer: FTI1 836c1443b2e29cd8 -->
+<!-- status-consumer: FTI1 ba09a827b4cff2e7 -->
 
 ## 8. Recommended workflow
 
