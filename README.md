@@ -1513,6 +1513,38 @@ receipt is formal evidence, not independent human peer review.
 <!-- status-consumer: HKM2 79acc8c611bf0466 -->
 
 The
+[plane finite-normalization theorem](verified/HUQ_KURUVILLA_PLANE_BOUNDARY_NORMALIZATION.md)
+then makes the failure mechanism completely explicit in dimension two.  The
+hidden cubic order normalizes after adjoining `Z=P^2/T`; its primitive-order
+conductor is `(P,T)`, while the source is the complement of a different prime
+`E`.  Above `Q=0`, the retained sheet is an ordinary affine line and `E` maps
+by Frobenius `P=Z^2`.  Its generic ledger is
+`(e,f_sep,f_insep,different,sheet loss)=(1,1,2,1,2)`.  The unequal residue
+rows force geometric and arithmetic monodromy `S_3`.  This is the first
+complete plane row in the positive-characteristic wild-boundary atlas.  Its
+three retained/missing intersections are ordinary completed nodes, with
+nodal conductor and different also explicit.
+
+<!-- status-consumer: HKM2B1 680ef39ee14ebf10 -->
+
+The
+[modulo-four lifting obstruction](verified/HUQ_KURUVILLA_PLANE_W2_OBSTRUCTION.md)
+then closes the direct mixed-characteristic route for this exact plane map.
+Every polynomial lift is the displayed integral representative plus
+`(2A,2B)`, but the first Jacobian variation always has zero `xy` coefficient,
+whereas the integral Jacobian error has coefficient `2xy`.  Thus no
+constant-Jacobian lift exists over `Z/4`, at any correction degree, and no
+compatible higher Witt or characteristic-zero plane lift can exist.  The
+obstruction is unstable: after adjoining one identity variable, truncated
+geometric inverses of `1+2K` give a compatible determinant-one polynomial
+lift over every finite `W_n(F_2)`.  The inverse limit is a restricted
+two-adic power series, not a characteristic-zero polynomial map.  Uniform
+bounded-degree algebraization and unstabilized left-right equivalence remain
+open.
+
+<!-- status-consumer: HKM2W1 23c067e5a7c29ac4 -->
+
+The
 [mixed-sign grading literature reconciliation](extended-geometry/MIXED_SIGN_GRADINGS_LITERATURE_RECONCILIATION.md)
 compares Shaska's elliptic/parabolic/hyperbolic classification and quotient
 formula with the repository's terminology.  It records that the foundational
@@ -2900,11 +2932,41 @@ development:
     [graph-obstruction note](HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md) and the
     [quintic Schur-frontier note](HC4_MENG_YANG_QUINTIC_SCHUR_FRONTIER.md).
 
+12. `QHNW1` gives the first theorem-sized Waring-rank floor for the
+    six-variable homogeneous quartic HN search.  No essential example has
+    Waring rank at most eight, and every essential rank-nine example has a
+    polynomially invertible map $z\mapsto z-\nabla P(z)$.  Therefore an
+    essential counterexample has Waring rank at least ten.  At rank ten, the
+    HN traces exclude every Gale parallel class of multiplicity at least four
+    and every pair of triple classes.  The remaining gate, `OP-QHNW10`, is a
+    characteristic-zero representable rank-four matroid lemma asserting the
+    existence of a basis with cyclic six-element complement under the stated
+    cocircuit and multiplicity bounds.  Proving it would raise the lower bound
+    to rank eleven; that improvement is not currently claimed.  The proof and
+    assurance boundary are in the
+    [quartic HN Waring-rigidity note](extended-geometry/QUARTIC_HN_WARING_RIGIDITY.md).
+    Its finite computer-assisted portions can be replayed with:
+
+    ```bash
+    .venv/bin/python scripts/verify_quartic_hn_waring_rigidity.py
+    .venv/bin/python scripts/verify_quartic_hn_rank9_one_zero.py
+    .venv/bin/python scripts/verify_quartic_hn_rank9_top_determinant.py
+    .venv/bin/python scripts/verify_quartic_hn_rank10_parallel_obstructions.py
+    ```
+
+    These exact SymPy checks do not replace independent audit of the written
+    trace, one-latitude Hesse, matroid base-packing, or Witt-index arguments.
+
+<!-- status-consumer: QHNW1 a64c1d6e81c71928 -->
+
 Only the arrows in this list are dependencies or implications.  The certified
 upper endpoints are now SIC 2, unrestricted GVC 3, ordinary-Laplacian GVC 40,
 and homogeneous HN Hessian rank 37.  For homogeneous quartic HN-VC, the best
 externally sourced and independently replayed ambient bound is 38; the
 internally generated dependency-independent route has ambient endpoint 42.
+In six variables, `QHNW1` separately gives the Waring-rank lower bound ten
+for any essential homogeneous quartic HN counterexample; this is a search
+floor, not an ambient-dimension upper endpoint.
 The separate nonhomogeneous degree-at-most-four HN witness has rank 34 in
 dimension 40.  These
 are not additional

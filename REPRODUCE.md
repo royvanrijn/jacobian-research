@@ -32,6 +32,57 @@ canonical note is not inferred from a bounded search.  The same command also
 checks that neither displayed integer formula is a characteristic-zero Keller
 map.
 
+## Characteristic-two plane normalization and wild boundary
+
+Requires Singular:
+
+```bash
+.venv/bin/python scripts/verify_huq_kuruvilla_plane_boundary.py
+```
+
+The dependency-light block verifies the hidden-cubic discriminant, the
+normalized source presentation, three compatible reconstruction charts, the
+global normalized formula for the second source coordinate, the retained and
+missing primes over `Q=0`, their three reduced intersections, and the local
+equation giving generic different exponent one.  The Singular block certifies
+the integral closure, the primitive-order conductor `(P,T)`, the two upstairs
+conductor branches, and the exact reconstruction-boundary ideal.  This is a
+finite exact calculation, not a bounded search.  The checker assumes a
+working Singular installation in addition to the repository Python
+environment.
+
+## Characteristic-two plane modulo-four lift obstruction
+
+```bash
+.venv/bin/python scripts/verify_huq_kuruvilla_plane_w2_obstruction.py
+```
+
+This exact symbolic check isolates the `xy` coefficient of the first
+Jacobian variation for an arbitrary polynomial correction modulo two.  It
+proves an all-degree obstruction to a constant-Jacobian lift over `Z/4`; it
+is not a bounded correction search.  It also verifies the explicit
+determinant-one lift after adjoining one identity coordinate and the
+geometric-series identity producing a compatible tower over all finite Witt
+levels.
+
+## Six-variable quartic HN Waring rigidity
+
+Requires SymPy in the repository Python environment:
+
+```bash
+.venv/bin/python scripts/verify_quartic_hn_waring_rigidity.py
+.venv/bin/python scripts/verify_quartic_hn_rank9_one_zero.py
+.venv/bin/python scripts/verify_quartic_hn_rank9_top_determinant.py
+.venv/bin/python scripts/verify_quartic_hn_rank10_parallel_obstructions.py
+```
+
+These commands exactly replay the finite codimension-two Gale calculation,
+the rank-nine one-zero trace coefficients and complementary-minor gate, and
+the rank-ten parallel-class obstructions.  The coordinate-free trace,
+one-latitude Hesse, matroid base-packing, and Witt-index arguments are written
+in the canonical note and are not replaced by these checks.  In particular,
+the residual rank-ten cyclic-complement lemma remains open.
+
 ## LND-image Mathieu finite-fiber replay
 
 ```bash

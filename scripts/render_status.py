@@ -55,6 +55,7 @@ ACTIVE_OPEN = {
     "OP-KDESC",
     "OP-KMOD",
     "OP-LR-NE",
+    "OP-QHNW10",
     "OP-RITT",
     "OP-SIC2-B33",
     "OP-SUSP",

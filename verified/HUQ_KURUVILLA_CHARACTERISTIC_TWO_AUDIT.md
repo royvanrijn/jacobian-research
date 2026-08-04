@@ -527,6 +527,30 @@ the same formulas over the integers, the Jacobian is
 
 whose nonconstant terms vanish only after reduction modulo two.
 
+The
+[plane normalization and wild-boundary continuation](HUQ_KURUVILLA_PLANE_BOUNDARY_NORMALIZATION.md)
+computes the integral closure of the hidden cubic order, proves that the
+source plane is its complement of one radicial boundary line, gives the
+complete generic ledger `(e,f_sep,f_insep,different,sheet loss)=(1,1,2,1,2)`,
+proves that the three retained/missing intersections are ordinary completed
+nodes, and proves geometric and arithmetic monodromy `S_3`.
+
+<!-- status-consumer: HKM2B1 680ef39ee14ebf10 -->
+
+The
+[modulo-four obstruction theorem](HUQ_KURUVILLA_PLANE_W2_OBSTRUCTION.md)
+strengthens the final lift check below.  It proves that arbitrary polynomial
+corrections divisible by two cannot repair the Jacobian: their first
+variation has zero `xy` coefficient, while the integral Jacobian error has
+coefficient `2xy`.  Thus the exact plane map has no Keller lift through
+`W_2(F_2)`, without any correction-degree bound.  This obstruction disappears
+after one identity stabilization, for which the theorem gives an explicit
+compatible determinant-one polynomial lift through every finite Witt level.
+Its inverse limit is restricted two-adic, not a polynomial map over
+`Z_2`.
+
+<!-- status-consumer: HKM2W1 23c067e5a7c29ac4 -->
+
 ## 9. Exact reproduction
 
 The accompanying dependency-light SymPy audit checks the threefold map,

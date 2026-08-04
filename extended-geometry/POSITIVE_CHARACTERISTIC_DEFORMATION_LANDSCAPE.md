@@ -44,6 +44,17 @@ theorem.
 
 <!-- status-consumer: HKM2 79acc8c611bf0466 -->
 
+The corresponding
+[plane normalization theorem](../verified/HUQ_KURUVILLA_PLANE_BOUNDARY_NORMALIZATION.md)
+now completes the first wild-ledger row: one retained sheet and one missing
+Frobenius sheet over `Q=0`, with generic data
+`(e,f_sep,f_insep,different,sheet loss)=(1,1,2,1,2)` and `S_3` monodromy.
+The primitive cubic order has conductor `(P,T)`, but that conductor is not the
+reconstruction boundary.  This supplies an exact warning that order
+nonnormality and missing-source boundary must be tracked separately.
+
+<!-- status-consumer: HKM2B1 680ef39ee14ebf10 -->
+
 ## 1. Seven-axis survival ledger
 
 | Axis | What survives without change | Characteristic-\(p\) deformation | Correct replacement or open datum |
@@ -349,7 +360,14 @@ descend to map-intrinsic marked edges and which require an enriched map.
 Starting from (5.1), compute the different and conductor for
 \(m=p\), \(2p\), and \(p+1\), then allow collisions of several primitive
 roots over one target point.  Compare separable wild and radicial rows with
-the same \((e,f)\).
+the same \((e,f)\).  `HKM2B1` supplies the first completed plane row, with
+generic data `(1,1,2,1,2)` and three reduced intersections between the
+retained and missing components.  At each intersection the completed reduced
+boundary is the node `k[[p,a]]/(pa)`; its conductor is `(p,a)`, while the
+different remains `(p)`.  The general \(m=p,2p,p+1\) family, plane lifting
+after equivalence, and bounded-degree algebraization of the compatible stable
+Witt tower remain open; the exact plane representative itself is obstructed
+by `HKM2W1`.
 
 ### PCD.5 — reduction of stable moduli
 
@@ -364,6 +382,19 @@ Freeze an integral basis and filtration for a bounded correction complex.
 Compute Smith normal forms, the Bockstein maps, and the Tor term in (6.3).
 Then test whether modular primitives lift through \(W_2,W_3,\ldots\), rather
 than inferring a characteristic-zero primitive from one good-prime rank.
+
+For the Huq--Kuruvilla--Mondello plane map, `HKM2W1` makes the first test
+unbounded and terminal: the `xy` coefficient of the first Jacobian correction
+vanishes for every polynomial pair `(A,B)`, while the integral Jacobian error
+has coefficient `2xy`.  Hence the map has no Keller lift even through
+`W_2(F_2)=Z/4`.  After one identity stabilization, however,
+the truncated geometric inverses of `1+2K` give compatible polynomial Keller
+lifts over every finite `W_n(F_2)`.  Their inverse limit is restricted
+two-adic rather than polynomial.  The viable continuations are bounded-degree
+algebraization of this stable tower and the equivalence-aware plane problem
+for polynomial left-right changes.
+
+<!-- status-consumer: HKM2W1 23c067e5a7c29ac4 -->
 
 ### PCD.7 — arithmetic monodromy degeneration
 

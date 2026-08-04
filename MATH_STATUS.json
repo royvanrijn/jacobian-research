@@ -91,6 +91,76 @@
       "priority": "primary"
     },
     {
+      "id": "HKM2B1",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Plane characteristic-two normalization and wild boundary ledger",
+      "scope": "For the Huq--Kuruvilla--Mondello plane map, the monic hidden-cubic order B0=k[P,Q,T]/(T^3+T^2+(P*Q+P^3)*T+P^3) has discriminant (P*Q)^2, singular line (P,T), conductor (P,T), and an explicit finite normalization C=B0[P^2/T]. The source A2 is exactly the complement of one boundary line E in Spec(C). Above Q=0 the normalized cover has the retained sheet A=(Q,T+1,Z+P^2) and the missing sheet E=(Q,P+Z^2,T+Z^3); they meet in the three reduced points Z^3=1. At each intersection, p=P+Z^2 and a=(Z(1+Z^3)+p^2)/Z^2 are regular parameters with Q=p*a, so the reduced boundary is an ordinary node, its divisor-normalization conductor is (p,a), and the different remains (p). The boundary map is Frobenius Z->P=Z^2, with generic ledger (e,f_sep,f_insep,different,sheet loss)=(1,1,2,1,2). The primitive-order conductor has two separate upstairs branches and is not the reconstruction boundary. Unequal residue data above Q=0 proves geometric and arithmetic monodromy S_3, with wild transposition inertia in the Galois closure. This is a positive-characteristic boundary theorem and has no characteristic-zero plane-Jacobian consequence.",
+      "canonical_source": "verified/HUQ_KURUVILLA_PLANE_BOUNDARY_NORMALIZATION.md",
+      "dependencies": [
+        "HKM2"
+      ],
+      "checker": "scripts/verify_huq_kuruvilla_plane_boundary.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e375f45139a8b633689b6e17dbaa0d2ace1ab2cd5bbab4ed4de943390501181a",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "the Huq--Kuruvilla threefold as the smallest complete wild-radicial boundary model"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "README.md",
+        "extended-geometry/POSITIVE_CHARACTERISTIC_DEFORMATION_LANDSCAPE.md",
+        "verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "HKM2W1",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Plane modulo-four obstruction and stable finite-Witt tower",
+      "scope": "Let P=x+x^2*y+x^4+x^6*y^2 and Q=y+x^5+x^6*y+x^7*y^2+x^8*y^3 over F_2. No pair of polynomials over Z/4 reducing coefficientwise to P,Q has constant Jacobian determinant. For arbitrary corrections P_tilde=P_0+2*A and Q_tilde=Q_0+2*B, the naive integral Jacobian is 1+2*K with [x*y]K=1, while the first variation L=A_x*Q_y+P_x*B_y+A_y*Q_x+P_y*B_x has [x*y]L=0 in every polynomial degree. Hence the exact plane map has no Keller lift through W_2(F_2), and consequently no compatible plane lift through higher Witt vectors, Z_2, or characteristic zero. The obstruction is unstable: for h=2*K and S_n=sum_(j=0)^(n-1)(-h)^j, (P_0,Q_0,z*S_n) is a compatible determinant-one polynomial lift of (P,Q,z) over every finite W_n(F_2), because (1+h)*S_n=1-(-h)^n. The inverse limit is a restricted two-adic power series, not a polynomial over Z_2; no characteristic-zero Keller map is claimed. Polynomial left-right equivalence in the plane and uniformly bounded-degree algebraization of the stable tower remain open.",
+      "canonical_source": "verified/HUQ_KURUVILLA_PLANE_W2_OBSTRUCTION.md",
+      "dependencies": [
+        "HKM2"
+      ],
+      "checker": "scripts/verify_huq_kuruvilla_plane_w2_obstruction.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f6bdd9db86f48553dcd01a83f8d3d51578586502cfb8a3dd837dc9979b5f4f11",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "only the naive displayed integral plane lift is known to fail"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "README.md",
+        "extended-geometry/POSITIVE_CHARACTERISTIC_DEFORMATION_LANDSCAPE.md",
+        "verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "ADK1",
       "kind": "theorem",
       "state": "proved",
@@ -22183,6 +22253,67 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
+    },
+    {
+      "id": "QHNW1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Six-variable quartic HN Waring-rank rigidity through rank nine",
+      "scope": "Over an algebraically closed characteristic-zero field, no essential six-variable homogeneous quartic Hessian-nilpotent polynomial has Waring rank at most eight. At rank nine, every essential quartic HN polynomial has polynomially invertible gradient map z -> z-grad(P). Consequently every essential six-variable quartic HN counterexample has Waring rank at least ten. In rank ten, the HN trace identities exclude every projective Gale parallel class of multiplicity at least four and every pair of distinct triple classes. Thus every remaining rank-ten candidate has parallel-class multiplicity at most two except possibly one triple class. The finite codimension-two Gale, one-latitude rank-nine, complementary-minor, and rank-ten parallel-obstruction calculations are exact SymPy checks; the coordinate-free trace, matroid base-packing, Hesse, and Witt-index arguments are written proofs. QHNW1 does not prove the residual cyclic-complement matroid lemma or a rank-eleven lower bound, and it has not received external mathematical review.",
+      "canonical_source": "extended-geometry/QUARTIC_HN_WARING_RIGIDITY.md",
+      "dependencies": [
+        "external: matroid base-packing theorem",
+        "external: ternary characteristic-zero Hesse theorem"
+      ],
+      "checker": "scripts/verify_quartic_hn_waring_rigidity.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:26f95f1ba27cd71d9b3262e3e3bf407add3d34834399509a7187ed56bc5f91df",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-QHNW10"
+      ],
+      "consumers": [
+        "OP-QHNW10",
+        "README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "OP-QHNW10",
+      "kind": "open_problem",
+      "state": "open",
+      "title": "Rank-ten cyclic-complement matroid gate",
+      "scope": "QHNW1 reduces the six-variable homogeneous quartic HN counterexample search at Waring rank ten to the following characteristic-zero representable-matroid lemma. Prove that every rank-four matroid on ten elements, representable in characteristic zero, whose cocircuits have size at least three and whose parallel classes have size at most two except possibly one class of size three, has a basis with cyclic six-element complement. Combined with QHNW1's determinant gate and parallel-class obstructions, this would raise the counterexample lower bound from Waring rank ten to Waring rank eleven. Sampled rational configurations support the lemma, but finite-field counterexamples exist and the bounded reconnaissance is not a proof.",
+      "canonical_source": "extended-geometry/QUARTIC_HN_WARING_RIGIDITY.md",
+      "dependencies": [
+        "QHNW1"
+      ],
+      "checker": null,
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
     },
     {
       "id": "HC4PPG9",

@@ -11,6 +11,16 @@ This directory contains the stable proof chain:
   the Huq--Kuruvilla wild-radicial normalization, Mondello's polynomial
   skew-product coordinates, and the resulting determinant-one noninjective
   plane map of exact separable generic degree three;
+- [Characteristic-two plane normalization and wild boundary](HUQ_KURUVILLA_PLANE_BOUNDARY_NORMALIZATION.md):
+  the finite normalization, primitive-order conductor, unique missing
+  Frobenius line, complete generic boundary ledger, and `S_3` monodromy of
+  the plane map;
+- [Characteristic-two plane modulo-four obstruction](HUQ_KURUVILLA_PLANE_W2_OBSTRUCTION.md):
+  an all-degree one-coefficient proof that the exact plane map has no
+  constant-Jacobian lift over `Z/4`, hence no compatible higher Witt or
+  characteristic-zero plane lift, together with an explicit compatible
+  polynomial tower over all finite Witt levels after one identity
+  stabilization;
 - [Tangent-map core](TANGENT_MAP_CORE.md): the central theorem unifying the
   inverse pencil, plane incidence, Jacobian factor, discriminant normalization,
   reconstruction pole, Hessian Fitting divisor, weighted suspension, and the
