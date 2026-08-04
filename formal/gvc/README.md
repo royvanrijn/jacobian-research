@@ -13,12 +13,16 @@ lake build
 ## What is checked
 
 - `Definitions` gives a coefficientwise semantics for arbitrary
-  constant-coefficient differential symbols and states GVC in that model.
+  constant-coefficient differential symbols, proves agreement with
+  Mathlib's formal partial derivative on coordinate symbols, and states GVC
+  in that model.
 - `CuspIdentity` proves `x*C = rho^3 - t^2*A^2` over every commutative ring.
 - `EndpointCoefficients` proves the all-order adjacent-coefficient step:
-  endpoint flatness makes the pure coefficient zero and the neighboring
-  mixed coefficient equal to `c_m`.  It also proves nonvanishing of the
-  displayed exact rational scalar.
+  it constructs the normalized polynomial primitive, proves the order
+  `2m+1` endpoint flatness from the actual derivative
+  `(1-(1+u)^2)^(2m)`, and then proves that the pure coefficient is zero while
+  the neighboring mixed coefficient is `c_m`.  It also proves nonvanishing
+  of the displayed exact rational scalar.
 - `ConcreteWitness` defines the manuscript's literal `rho`, `A`, `C`, `P`,
   `Delta`, `Lambda`, and `Q` in `Q[x,y,t]`.  From the explicitly named
   Reynolds/phase bridge it derives the pure identities, the exact mixed
@@ -39,8 +43,9 @@ hypotheses; Lean does not construct values of them in the current package.
 This package is not a complete formal proof of the paper.  The following
 load-bearing arguments remain to be formalized:
 
-1. the Reynolds--apolar identity and quadric phase extraction connecting the
-   concrete ternary polynomials to `endpointKernel`;
+1. the beta evaluation of `c_m`, the Reynolds--apolar identity, and quadric
+   phase extraction connecting the concrete ternary polynomials to
+   `endpointKernel`;
 2. the exposing-point consequence of Duistermaat--van der Kallen and the
    good-prime shifted-ray separation theorem;
 3. binary Hall localization, no-reversal of the moving Newton intervals, and

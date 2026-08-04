@@ -42,6 +42,40 @@ noncomputable def differentialAction
     differentialAction symbol 0 = 0 := by
   simp [differentialAction]
 
+@[simp] theorem differentialAction_add_right
+    {σ K : Type*} [Fintype σ] [CommSemiring K]
+    (symbol p q : MvPolynomial σ K) :
+    differentialAction symbol (p + q) =
+      differentialAction symbol p + differentialAction symbol q := by
+  classical
+  simp [differentialAction, Finsupp.sum_add_index, add_mul, mul_add]
+
+/-- The coefficientwise semantics agrees with Mathlib's formal partial
+derivative for a degree-one symbol. -/
+theorem differentialAction_X
+    {σ K : Type*} [Fintype σ] [CommSemiring K]
+    (i : σ) (p : MvPolynomial σ K) :
+    differentialAction (X i) p = pderiv i p := by
+  classical
+  induction p using MvPolynomial.induction_on' with
+  | monomial β b =>
+      have hprod :
+          (∏ j, ((β j).descFactorial ((Finsupp.single i 1) j) : K)) =
+            (β i : K) := by
+        rw [← Nat.cast_prod]
+        congr
+        rw [Finset.prod_eq_single i]
+        · simp
+        · intro j _hj hji
+          simp [Finsupp.single_eq_of_ne hji]
+        · simp
+      simpa [differentialAction, multiDescFactorial, X,
+        pderiv_monomial] using
+        congrArg
+          (fun z ↦ monomial (β - Finsupp.single i 1) (b * z)) hprod
+  | add p q hp hq =>
+      rw [differentialAction_add_right, map_add, hp, hq]
+
 def PurePowersVanish
     {σ K : Type*} [Fintype σ] [CommSemiring K]
     (symbol p : MvPolynomial σ K) : Prop :=

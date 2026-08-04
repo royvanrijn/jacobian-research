@@ -42,6 +42,11 @@ theorem gvc_cusp_identity :
     gvcX * gvcC = gvcRho ^ 3 - gvcT ^ 2 * gvcA ^ 2 := by
   exact cusp_identity gvcX gvcY gvcT
 
+/-- The Reynolds factor for a degree-`12m` homogeneous polynomial. -/
+noncomputable def reynoldsPureScale (m : ℕ) : ℚ :=
+  (2 : ℚ) ^ (6 * m) * Nat.factorial (6 * m) *
+    Nat.doubleFactorial (12 * m + 1)
+
 /-- The Reynolds factor for a degree-`12m+2` homogeneous polynomial. -/
 noncomputable def reynoldsMixedScale (m : ℕ) : ℚ :=
   (2 : ℚ) ^ (6 * m + 1) * Nat.factorial (6 * m + 1) *
@@ -62,17 +67,17 @@ theorem reynolds_scale_mul_cuspMoment (m : ℕ) :
 extraction for the pure contraction.  `mixed_phase_eq` is the same bridge
 after applying one additional `Δ`. -/
 structure ConcreteCounterexampleBridge where
-  tail : ℕ → ℚ[X]
-  pureScale : ℕ → ℚ
   pure_phase_eq : ∀ m, 0 < m →
     differentialAction (gvcLambda ^ m) (gvcP ^ m) =
-      MvPolynomial.C (pureScale m *
-        (endpointKernel m (cuspMoment m) (tail m)).coeff m)
+      MvPolynomial.C (reynoldsPureScale m *
+        (endpointKernel m (cuspMoment m)
+          (endpointPrimitiveTail m)).coeff m)
   mixed_phase_eq : ∀ m, 0 < m →
     differentialAction gvcDelta
       (differentialAction (gvcLambda ^ m) (gvcQ * gvcP ^ m)) =
       MvPolynomial.C (reynoldsMixedScale m *
-        (endpointKernel m (cuspMoment m) (tail m)).coeff (m - 1))
+        (endpointKernel m (cuspMoment m)
+          (endpointPrimitiveTail m)).coeff (m - 1))
 
 /-- The manuscript's pure identity, conditional only on the explicitly
 displayed Reynolds/phase bridge. -/
