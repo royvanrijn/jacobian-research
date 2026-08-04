@@ -6,6 +6,7 @@ Authors: Roy van Rijn
 import Mathlib.Algebra.Polynomial.Coeff
 import Mathlib.Algebra.Polynomial.Derivative
 import Mathlib.Algebra.Polynomial.Div
+import Mathlib.Algebra.Polynomial.Eval.Coeff
 import Mathlib.Data.Nat.Factorial.DoubleFactorial
 import Mathlib.Tactic.FieldSimp
 import Mathlib.Tactic.Positivity
@@ -52,6 +53,104 @@ theorem derivative_polynomialPrimitive (p : ℚ[X]) :
   ext n
   rw [coeff_derivative, polynomialPrimitive_coeff_succ]
   field_simp
+
+theorem polynomialPrimitive_derivative (p : ℚ[X]) :
+    polynomialPrimitive (derivative p) = p - C (p.coeff 0) := by
+  ext n
+  cases n with
+  | zero => simp
+  | succ n =>
+      rw [polynomialPrimitive_coeff_succ, coeff_derivative, coeff_sub,
+        coeff_C]
+      simp
+      field_simp
+
+theorem polynomialPrimitive_add (p q : ℚ[X]) :
+    polynomialPrimitive (p + q) =
+      polynomialPrimitive p + polynomialPrimitive q := by
+  ext n
+  cases n with
+  | zero => simp
+  | succ n => simp [polynomialPrimitive_coeff_succ, add_div]
+
+theorem polynomialPrimitive_smul (a : ℚ) (p : ℚ[X]) :
+    polynomialPrimitive (a • p) = a • polynomialPrimitive p := by
+  ext n
+  cases n with
+  | zero => simp
+  | succ n => simp [polynomialPrimitive_coeff_succ, mul_div_assoc]
+
+/-- Algebraic integration from `0` to `1`; no analytic integral is used. -/
+noncomputable def formalIntegral01 (p : ℚ[X]) : ℚ :=
+  eval 1 (polynomialPrimitive p)
+
+theorem formalIntegral01_derivative (p : ℚ[X]) :
+    formalIntegral01 (derivative p) = eval 1 p - eval 0 p := by
+  rw [formalIntegral01, polynomialPrimitive_derivative]
+  simp [Polynomial.coeff_zero_eq_eval_zero]
+
+@[simp] theorem formalIntegral01_add (p q : ℚ[X]) :
+    formalIntegral01 (p + q) = formalIntegral01 p + formalIntegral01 q := by
+  simp [formalIntegral01, polynomialPrimitive_add]
+
+@[simp] theorem formalIntegral01_smul (a : ℚ) (p : ℚ[X]) :
+    formalIntegral01 (a • p) = a * formalIntegral01 p := by
+  change eval 1 (polynomialPrimitive (a • p)) =
+    a * eval 1 (polynomialPrimitive p)
+  rw [polynomialPrimitive_smul, smul_eq_C_mul,
+    eval_C_mul]
+
+@[simp] theorem formalIntegral01_neg (p : ℚ[X]) :
+    formalIntegral01 (-p) = -formalIntegral01 p := by
+  rw [← neg_one_smul ℚ p, formalIntegral01_smul, neg_one_mul]
+
+@[simp] theorem formalIntegral01_sub (p q : ℚ[X]) :
+    formalIntegral01 (p - q) = formalIntegral01 p - formalIntegral01 q := by
+  simp [sub_eq_add_neg]
+
+@[simp] theorem formalIntegral01_C_mul (a : ℚ) (p : ℚ[X]) :
+    formalIntegral01 (C a * p) = a * formalIntegral01 p := by
+  rw [← smul_eq_C_mul, formalIntegral01_smul]
+
+@[simp] theorem formalIntegral01_one : formalIntegral01 1 = 1 := by
+  have hprimitive : polynomialPrimitive 1 = X := by
+    ext n
+    cases n with
+    | zero => simp
+    | succ n =>
+        cases n with
+        | zero => simp [polynomialPrimitive_coeff_succ]
+        | succ n => simp [polynomialPrimitive_coeff_succ, coeff_one, coeff_X]
+  simp [formalIntegral01, hprimitive]
+
+/-- Integration by parts, expressed purely in `ℚ[X]`. -/
+theorem formalIntegral01_one_sub_sq_recurrence (n : ℕ) :
+    ((2 * n + 3 : ℕ) : ℚ) *
+        formalIntegral01 ((1 - X ^ 2) ^ (n + 1)) =
+      ((2 * (n + 1) : ℕ) : ℚ) *
+        formalIntegral01 ((1 - X ^ 2) ^ n) := by
+  let f : ℚ[X] := 1 - X ^ 2
+  have hderivative :
+      derivative (X * f ^ (n + 1)) =
+        f ^ (n + 1) -
+          C (1 + (n : ℚ)) *
+            (C 2 * (X ^ 2 * f ^ n)) := by
+    dsimp [f]
+    rw [derivative_mul, derivative_X, one_mul, derivative_pow_succ,
+      derivative_sub, derivative_one, derivative_X_sq, zero_sub]
+    ring_nf
+  have hboundary :
+      formalIntegral01 (derivative (X * f ^ (n + 1))) = 0 := by
+    rw [formalIntegral01_derivative]
+    simp [f]
+  rw [hderivative, formalIntegral01_sub, formalIntegral01_C_mul,
+    formalIntegral01_C_mul] at hboundary
+  have hsplit : X ^ 2 * f ^ n = f ^ n - f ^ (n + 1) := by
+    dsimp [f]
+    ring
+  rw [hsplit, formalIntegral01_sub] at hboundary
+  push_cast at hboundary ⊢
+  nlinarith
 
 /-- Integrating a polynomial divisible by `X^n` raises its order of
 vanishing by one. -/
@@ -125,6 +224,44 @@ theorem cuspMoment_pos (m : ℕ) : 0 < cuspMoment m := by
 
 theorem cuspMoment_ne_zero (m : ℕ) : cuspMoment m ≠ 0 :=
   ne_of_gt (cuspMoment_pos m)
+
+/-- Closed beta evaluation of the endpoint moment, proved from the formal
+polynomial integral recurrence above. -/
+theorem formalIntegral01_one_sub_sq_pow (n : ℕ) :
+    formalIntegral01 ((1 - X ^ 2) ^ n) =
+      ((2 : ℚ) ^ n * (Nat.factorial n : ℚ)) /
+        (Nat.doubleFactorial (2 * n + 1) : ℚ) := by
+  induction n with
+  | zero => simp
+  | succ n ih =>
+      have hrec := formalIntegral01_one_sub_sq_recurrence n
+      rw [ih] at hrec
+      rw [Nat.factorial_succ]
+      have hdf :
+          Nat.doubleFactorial (2 * (n + 1) + 1) =
+            (2 * n + 3) * Nat.doubleFactorial (2 * n + 1) := by
+        rw [show 2 * (n + 1) + 1 = (2 * n + 1) + 2 by omega,
+          Nat.doubleFactorial_add_two]
+      rw [hdf]
+      have hdenom :
+          (Nat.doubleFactorial (2 * n + 1) : ℚ) ≠ 0 := by
+        exact_mod_cast (Nat.ne_of_gt (Nat.doubleFactorial_pos (2 * n + 1)))
+      have hfactor : ((2 * n + 3 : ℕ) : ℚ) ≠ 0 := by positivity
+      have hpow : (2 : ℚ) ^ (n + 1) = 2 * 2 ^ n := by
+        rw [pow_succ]
+        ring
+      rw [hpow]
+      push_cast at hrec ⊢
+      field_simp [hdenom, hfactor] at hrec ⊢
+      nlinarith [hrec]
+
+theorem cuspMoment_eq_formalIntegral (m : ℕ) :
+    cuspMoment m = formalIntegral01 ((1 - X ^ 2) ^ (2 * m)) := by
+  rw [formalIntegral01_one_sub_sq_pow, cuspMoment]
+  congr 1
+  norm_cast
+  apply congrArg Nat.doubleFactorial
+  omega
 
 /-- The shifted primitive `J_m(1+u)`, normalized by its value `c_m` at
 `u=0`. -/

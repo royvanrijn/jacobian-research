@@ -13334,7 +13334,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Explicit homogeneous three-variable GVC counterexample",
-      "scope": "Over a characteristic-zero field put rho=t^2+x*y, A=rho+x^2, C=y*rho^2-2*x*t^2*rho-x^3*t^2, P=A*C^2, Delta=4*partial_x*partial_y+partial_t^2, Lambda=Delta^6, and Q=x^2. The polynomial P is primitive and homogeneous of degree twelve, and Lambda is homogeneous of order twelve. For every m>=1, Lambda^m(P^m)=0, whereas Lambda^m(Q*P^m) is nonzero; more precisely Delta^(6m+1)(x^2*P^m)=2^(8m+1)*(6m+1)!*(2m)!*(12m+3)!!/(4m+1)!!. The proof reduces the contractions to exact quadric phase/height coefficients and transfers them by AQH1's Reynolds--apolar identity; Gaussian/Wick arithmetic remains an independent bounded replay rather than a proof dependency. Adjoining unused variables gives GVC counterexamples in every dimension at least three. This is a counterexample for the sixth power of a nondegenerate quadratic symbol, not for the ordinary Laplacian operator Delta itself. The dependency-free checker supplies two bounded exact replays through m=6; the all-order conclusion is the written proof, not an inference from that finite prefix.",
+      "scope": "Over a characteristic-zero field put rho=t^2+x*y, A=rho+x^2, C=y*rho^2-2*x*t^2*rho-x^3*t^2, P=A*C^2, Delta=4*partial_x*partial_y+partial_t^2, Lambda=Delta^6, and Q=x^2. The polynomial P is primitive and homogeneous of degree twelve, and Lambda is homogeneous of order twelve. For every m>=1, Lambda^m(P^m)=0, whereas Lambda^m(Q*P^m) is nonzero; more precisely Delta^(6m+1)(x^2*P^m)=2^(8m+1)*(6m+1)!*(2m)!*(12m+3)!!/(4m+1)!!. The proof reduces the contractions to exact quadric phase/height coefficients and transfers them by AQH1's Reynolds--apolar identity; Gaussian/Wick arithmetic remains an independent bounded replay rather than a proof dependency. Adjoining unused variables gives GVC counterexamples in every dimension at least three. This is a counterexample for the sixth power of a nondegenerate quadratic symbol, not for the ordinary Laplacian operator Delta itself. The checked-in Lean development proves the all-order differential identities, exact scalar, homogeneity, characteristic-zero coefficient base change, and unused-variable padding. The ancillary primitivity and 23-term expansion checks remain in the exact checker. The dependency-free checker supplies two bounded exact replays through m=6; the all-order conclusion is the written and Lean proofs, not an inference from that finite prefix.",
       "canonical_source": "extended-geometry/THREE_VARIABLE_HOMOGENEOUS_GVC_COUNTEREXAMPLE.md",
       "dependencies": [
         "AQH1"
@@ -13342,10 +13342,13 @@
       "checker": "scripts/verify_gvc3_homogeneous_counterexample.py",
       "proof_type": "counterexample",
       "independent_replay": false,
-      "formal_verification": false,
+      "formal_verification": true,
       "external_review": false,
       "artifact_hash": "sha256:ed3fe5f1e34e0bf884475270ccfcc840869c9c38b9190843db846daeed416fad",
-      "software_lock": [],
+      "software_lock": [
+        "formal/gvc/lean-toolchain",
+        "formal/gvc/lake-manifest.json"
+      ],
       "supersedes_notes": [],
       "supersedes": [],
       "closes_problems": [

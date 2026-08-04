@@ -1068,6 +1068,36 @@ one-dimensional projection.  The binary separation theorem therefore does
 not extend formally to the rank-three symbol in
 Theorem~\ref{thm:gvc3}.
 
+\paragraph{Machine-checked audit.}
+The accompanying Lean development in \texttt{formal/gvc} verifies the
+coefficientwise differential semantics; the literal degree-twelve ternary
+data and cusp identity; the algebraic beta evaluation and complete
+cusp-profile binomial ladder; the literal winding--profile--radial family,
+its degree formula, and its minimal and radial specializations;
+equal-degree coefficientwise apolar
+contraction and composition of differential symbols; the full concrete
+Reynolds/Laurent phase extraction, algebraic height change of variables, and
+endpoint-kernel identification.  These results construct the concrete
+bridge in Lean and prove Theorem~\ref{thm:gvc3}, including its exact mixed
+scalar.  Coefficient base change to every characteristic-zero field and
+unused-variable padding then verify the negative dimension-$n\ge3$ half of
+Theorem~\ref{thm:classification}.  The development also checks the rational
+$p$-adic factorial bounds in
+Lemma~\ref{lem:factorial-valuations} and the negative-final-slope plus
+intermediate-value step for the moving envelopes.  It also derives the
+full-profile implications from an explicitly named bridge record; for
+Theorem~\ref{thm:family}, the record contains only the multivariate phase
+coefficients, after which Lean proves the pure identity and complete exact
+multiplier ladder.  The present
+audit does not yet formalize the full-profile phase extraction, the
+number-field good-prime transfer and shifted-ray theorem, or the binary
+Hall/no-reversal/common-threshold bridge.  The spherical realization of the
+Reynolds functional is likewise not checked, but Lean proves the algebraic
+coefficientwise contraction and Laurent realization used in its place.
+Thus Theorems~\ref{thm:main} and \ref{thm:family}, and the complete
+biconditional in Theorem~\ref{thm:classification}, are not yet fully
+formally verified.
+
 \bibliographystyle{plain}
 \bibliography{references}
 

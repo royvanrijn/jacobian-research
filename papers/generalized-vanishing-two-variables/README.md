@@ -44,8 +44,16 @@ python3 scripts/verify_gvc3_homogeneous_counterexample.py
 
 A partial Lean audit is in
 [`../../formal/gvc`](../../formal/gvc).  It checks the concrete polynomial
-definitions, cusp identity, all-order adjacent-coefficient mechanism, exact
-scalar nonvanishing, and the final continuous-envelope step.  It does not yet
-formalize the Reynolds--apolar/phase bridge or the Hall and shifted-ray parts
-of the binary theorem, so it is supporting evidence rather than a complete
-formal verification of the manuscript.
+definitions and homogeneity, cusp identity, algebraic beta evaluation,
+all-order full cusp-profile coefficient ladder, the literal multivariate
+profile family and its degree/order formula, rational `p`-adic factorial
+valuation lemma, exact scalar nonvanishing, coefficientwise apolar
+contraction and operator composition, the full concrete Reynolds/Laurent
+phase extraction and endpoint-kernel identification, characteristic-zero
+base change, unused-variable padding, and the negative-final-slope plus
+continuous-envelope step.  Consequently Theorem 8.1 and the negative
+`n >= 3` half of Theorem 10.1 are fully Lean-verified.  The development does
+not yet formalize the number-field shifted-ray transfer, the
+Hall/no-reversal parts of the binary theorem, or the arbitrary-profile
+phase bridge, so it is not a complete formal verification of the whole
+manuscript.

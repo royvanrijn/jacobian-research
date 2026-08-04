@@ -216,9 +216,19 @@ boundary, and builds `discriminant-pencils`, `finite-etale-keller`, `gmc2`,
 and `gvc`.  The GMC(2) package deliberately exposes exactly two mathematical
 inputs as axioms; their names and roles are documented in
 [`formal/gmc2/README.md`](formal/gmc2/README.md).  The GVC package contains no
-explicit axioms, but is currently a partial audit: its two bridge structures
-name the unformalized Reynolds/phase and binary envelope obligations.  Its
-exact coverage is documented in [`formal/gvc/README.md`](formal/gvc/README.md).
+explicit axioms, but is currently a partial audit.  It constructs and proves
+the minimal concrete quadric phase bridge, giving an unconditional
+characteristic-zero counterexample in every finite dimension at least
+three; its remaining bridge structures isolate the unformalized
+full-profile phase extraction and binary envelope obligations.  Its
+checked core now includes the algebraic beta and full endpoint-profile
+coefficient calculations, the literal multivariate profile family's
+degree/order formula, the rational `p`-adic factorial-valuation lemma,
+the coefficientwise Reynolds/Laurent phase identity and concrete endpoint
+extraction, the apolar contraction and operator-composition laws,
+characteristic-zero base change, unused-variable padding, and the final
+negative-slope envelope crossing.  Its exact coverage is
+documented in [`formal/gvc/README.md`](formal/gvc/README.md).
 
 Build only the GVC audit with:
 

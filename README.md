@@ -1251,7 +1251,7 @@ kind of route survivor would still need a nonzero shifted-power tail and a
 lift to one actual binary pair.  These calculations produce neither a
 counterexample nor the unrestricted proof; the latter is the independent
 Hall-envelope theorem above.
-<!-- status-consumer: GVC3HC 665dce8482e52966 -->
+<!-- status-consumer: GVC3HC 18bcc7c7dcd52939 -->
 The
 [homogeneous three-variable construction](extended-geometry/THREE_VARIABLE_HOMOGENEOUS_GVC_COUNTEREXAMPLE.md)
 gives an explicit GVC(3) counterexample.  With

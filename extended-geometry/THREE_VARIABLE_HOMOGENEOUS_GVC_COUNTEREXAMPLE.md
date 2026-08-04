@@ -348,6 +348,21 @@ monomial moments.  It also verifies (2.1), homogeneity, primitivity, the
 23-term expansion, the nonzero quadratic mixed output, and formula (1.6).
 The all-order result is the proof in Sections 2--4, not the bounded replay.
 
+The checked-in Lean package supplies an independent all-order formal proof
+of Theorem 1.1.  It verifies the literal ternary definitions and
+homogeneity, coefficientwise differential semantics, the algebraic
+Reynolds/Laurent phase extraction, the endpoint coefficient calculation and
+exact scalar, characteristic-zero coefficient base change, and
+unused-variable padding.  Build it with:
+
+```bash
+make verify-gvc-lean
+```
+
+There are no `sorry`, `admit`, or explicit `axiom` declarations in that
+package.  Primitivity and the 23-term expanded form are covered by the exact
+checker above rather than by named Lean theorems.
+
 ## 7. Provenance and scope
 
 The endpoint-contact coefficient mechanism comes from Christopher D.

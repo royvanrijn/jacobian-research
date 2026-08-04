@@ -24,13 +24,38 @@ horizontal separation.  The dependency-free GVC(3) checker is an independent
 bounded replay, not the all-order proof.
 
 The partial Lean audit in [`../../formal/gvc`](../../formal/gvc) checks the
-literal ternary polynomials, the cusp identity, the adjacent-coefficient
-mechanism for every positive power, positivity of the exact mixed scalar, and
-the intermediate-value threshold step.  It exposes, but does not yet prove,
-two bridge interfaces: the Reynolds--apolar/quadric phase extraction for the
-counterexample and the envelope-closure/common-threshold obligations for the
-binary theorem.  Therefore none of Theorems 1.1, 8.1, 9.1, or 10.1 should yet
-be described as fully Lean-verified.
+literal ternary polynomials and their degree-twelve homogeneity, the cusp
+identity, the algebraic beta evaluation of the endpoint moment, the complete
+binomial coefficient ladder for an arbitrary rational endpoint profile, the
+literal multivariate profile family and its degree/order formula, and
+positivity of the exact mixed scalar.  It also proves the coefficientwise
+equal-degree apolar contraction, composition of differential symbols,
+the full concrete Reynolds/Laurent phase extraction, coefficientwise
+algebraic change of height variable, and identification with the endpoint
+kernel.  The resulting bridge is constructed in Lean, yielding the pure
+identity, exact mixed scalar, and literal ternary counterexample.  Coefficient
+base change and unused-variable padding then prove GVC failure over every
+characteristic-zero field in every finite dimension at least three.  Thus
+Theorem 8.1 and the negative half of Theorem 10.1 are fully Lean-verified.
+Lean also proves abstractly that binary GVC implies unary GVC.  On the binary
+side it proves the rational `p`-adic lower and exact factorial valuations
+from Lemma 3.2 and the negative-final-slope plus intermediate-value envelope
+step.
+
+For Theorem 9.1, the Lean interface assumes only the multivariate phase
+coefficients and the theorem's stated nonzero-moment hypothesis; from those
+it derives the pure identity, the complete exact multiplier ladder, and the
+literal GVC counterexample.
+
+The audit still exposes, but does not yet prove, the full-profile phase
+bridge and the Hall/shifted-ray/no-reversal/common-threshold obligations for
+the binary theorem.  In particular, the transfer of the rational valuation statement to
+an unramified prime ideal remains part of the written number-field proof.  A
+spherical integral realization of the coefficientwise Reynolds functional is
+not checked, but the formal differential identity uses the algebraic top
+contraction directly and does not require that realization.
+Therefore Theorems 1.1 and 9.1 and the complete biconditional in Theorem 10.1
+should not yet be described as fully Lean-verified.
 
 Build and inspect the manuscript with:
 
