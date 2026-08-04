@@ -29,12 +29,11 @@ and its dimensional consequences are recorded in
 The manuscript restates their load-bearing arguments so that it can be read
 without the longer research notes.
 
-The proof has one substantive external input: the Duistermaat--van der
-Kallen constant-term theorem.  It uses no computer algebra.  The manuscript
+The only deep external theorem used in the proof is the Duistermaat--van der
+Kallen constant-term theorem.  The manuscript
 also gives the all-order spherical-coefficient proof of the GVC(3)
 counterexample and explains its origin in Christopher D. Long's Gaussian
-counterexample.  The paper is an active internal draft and has not been
-externally reviewed.
+counterexample.
 
 Replay the independent bounded audit of the three-variable formulas with:
 
@@ -42,3 +41,11 @@ Replay the independent bounded audit of the three-variable formulas with:
 python3 scripts/verify_gvc3_homogeneous_counterexample.py
 .venv/bin/python scripts/verify_gvc3_cusp_profile_suspension.py
 ```
+
+A partial Lean audit is in
+[`../../formal/gvc`](../../formal/gvc).  It checks the concrete polynomial
+definitions, cusp identity, all-order adjacent-coefficient mechanism, exact
+scalar nonvanishing, and the final continuous-envelope step.  It does not yet
+formalize the Reynolds--apolar/phase bridge or the Hall and shifted-ray parts
+of the binary theorem, so it is supporting evidence rather than a complete
+formal verification of the manuscript.

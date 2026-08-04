@@ -50,9 +50,9 @@ shows that, while the two faces have different weights, their horizontal
 Newton intervals cannot overlap.  Since the supports are finite, the two
 piecewise-linear weight envelopes must eventually meet.  Their first meeting
 is an unequal-weight common threshold, where a fixed multiplier cannot repair
-the resulting linear derivative deficit.  Apart from the constant-term
-theorem of Duistermaat and van der Kallen, the argument is elementary and
-does not use a degree bound or computer algebra.  We then give a homogeneous
+the resulting linear derivative deficit.  The only deep external theorem is
+the constant-term theorem of Duistermaat and van der Kallen.  We then give a
+homogeneous
 three-variable counterexample.  With
 $\rho=t^2+xy$, $A=\rho+x^2$,
 $C=y\rho^2-2xt^2\rho-x^3t^2$, and
@@ -87,10 +87,22 @@ It grew out of the Vanishing Conjecture and its relation to the Jacobian
 Conjecture; see Zhao~\cite{Zhao} and van den Essen, Willems, and
 Zhao~\cite{EWZ}.
 
-There were two particularly important precursors.  De Bondt proved GVC for
-every product of linear differential forms, and therefore for every
-homogeneous operator in two variables~\cite{deBondt}.  Much more recently,
-Long found a five-term quartic in three real Gaussian variables for which
+There were several particularly important precursors.  De Bondt proved GVC
+for every product of linear differential forms, and therefore for every
+homogeneous operator in two variables~\cite{deBondt}.  Feng and Sun proved
+the nonhomogeneous binary case
+\[
+ \Lambda=(\partial_x-\Phi(\partial_y))\partial_y
+\]
+for an arbitrary one-variable polynomial $\Phi$~\cite{FengSun}.  Wilson's
+independent July 2026 preprint proves the two-variable Gaussian Moments
+Conjecture by a related Newton-face and prime-isolation method
+~\cite{WilsonGMC}.  Wilson treats the Gaussian functional rather than an
+arbitrary constant-coefficient operator.  In the present argument, Hall
+localization and separation on shifted output rays are the additional steps
+that pass from that philosophy to unrestricted binary GVC.
+
+Also in 2026, Long found a five-term quartic in three real Gaussian variables for which
 all pure Gaussian moments vanish while one fixed mixed moment equals $m!$
 at every power~\cite{LongGMC}.  Long's example disproves the Gaussian
 Moments Conjecture in every dimension at least three, but it is not itself a
@@ -108,15 +120,7 @@ differential operator $\Lambda$ on $k[x,y]$ satisfies
 \eqref{eq:gvc}.
 \end{theorem}
 
-The proof came from trying to understand a repeated pattern in finite-degree
-calculations.  At each Newton wall, the surviving coefficient ideals looked
-like staircase, or Ferrers, ideals: an operator term could move left, and a
-polynomial term could move right, but the two moves were never allowed to
-close the whole gap.  The calculations suggested a local statement stronger
-than any one radical computation: two unequal-weight faces satisfying all
-pure vanishing identities cannot overlap horizontally.
-
-Once that statement is written down, the global proof is short.  Give both
+The global proof is organized as follows.  Give both
 the operator variables and the polynomial variables weight $(s,1)$.  Let
 $L(s)$ be the least operator weight and $U(s)$ the greatest polynomial
 weight.  Hall's theorem orders the corresponding faces just to the right of
@@ -126,14 +130,24 @@ to reach zero.  At the first zero all operator terms lie above one threshold
 and all polynomial terms lie below it, which gives eventual mixed
 vanishing.
 
-There are three points worth emphasizing.  First, the operator may be
-nonhomogeneous.  Second, the argument is not an induction on degree.  Third,
-the earlier carry, factorial, and bounded-radical calculations are not used
-in the proof.  They were useful in finding the horizontal-separation
-principle, but the final argument bypasses them.
-
-The proof is internal and, at the date on this manuscript, has not been
-externally reviewed.
+For orientation, the load-bearing dependencies in the binary argument are
+\[
+\begin{array}{c}
+ \text{Duistermaat--van der Kallen}+\text{split-symbol polarization}
+   \longrightarrow \text{Proposition~\ref{prop:cutoff}},\\[2pt]
+ \text{Duistermaat--van der Kallen}+\text{Hall localization}
+   \longrightarrow \text{Lemma~\ref{lem:hall}},\\[2pt]
+ \text{rational-point exposure}+\text{prime isolation}
+   \longrightarrow \boxed{\text{Proposition~\ref{prop:shifted}}}
+   \longrightarrow \text{Corollary~\ref{cor:horizontal}},\\[2pt]
+ \text{Lemma~\ref{lem:hall}}+\text{Corollary~\ref{cor:horizontal}}
+   \longrightarrow \text{first common threshold}
+   \longrightarrow \text{Proposition~\ref{prop:threshold}}
+   \longrightarrow \text{Theorem~\ref{thm:main}}.
+\end{array}
+\]
+Thus Proposition~\ref{prop:shifted} is the single arithmetic bridge from
+the local Hall gap to the global envelope argument.
 
 \section{Two standard reductions}
 
@@ -173,8 +187,9 @@ We next dispose of the range in which the degree of $P$ is no larger than
 the first positive order of $\Lambda$.  This familiar split-symbol argument
 is included so that the main theorem has no hidden degree case.
 
-\begin{proposition}[Degree cutoff]\label{prop:cutoff}
-Suppose that $\Lambda$ has no constant term, and let $r$ be the least
+\begin{proposition}[Binary degree cutoff]\label{prop:cutoff}
+In two variables, suppose that $\Lambda$ has no constant term, and let $r$
+be the least
 positive degree appearing in its symbol.  If $\deg P\leq r$, then
 \eqref{eq:gvc} holds.
 \end{proposition}
@@ -304,13 +319,60 @@ form, so such a pair would see all $d>r$ polynomial factors and could not
 be Hall-deficient.  Let $\mu=|I|$, and let $e\geq\mu$ be the full
 multiplicity of this direction in $\lambda_r$.  At least $d-\mu+1$, and
 hence at least $d-e+1$, factors of $P_d$ annihilate the direction.  Choosing
-it as the $y$-axis gives \eqref{eq:hall-normal} and
+it as the $x$-axis gives \eqref{eq:hall-normal} and
 \eqref{eq:hall-poly}.
 \end{proof}
 
 The last sentence of the lemma is the initial horizontal gap.  The rest of
 the proof shows that this gap cannot close while the two extremal faces have
 different weights.
+
+We record separately the factorial calculation used in the prime-dilation
+argument.  For a prime ideal $\mathfrak p$, normalize
+$v_{\mathfrak p}$ by $v_{\mathfrak p}(\mathfrak p)=1$.
+
+\begin{lemma}[Factorial valuations at an unramified prime]
+\label{lem:factorial-valuations}
+Let $K$ be a number field, let $p$ be a rational prime unramified in $K$,
+and let $\mathfrak p\mid p$.  For $\eta,\gamma\in\N^2$, put
+\[
+ F_p(\gamma,\eta)=
+ \prod_{i=x,y}\frac{(\gamma_i+p\eta_i)!}{(p\eta_i)!}.
+\]
+Then
+\begin{equation}\label{eq:factorial-lower}
+ v_{\mathfrak p}\bigl(F_p(\gamma,\eta)\bigr)
+ \geq
+ \left\lfloor\frac{\gamma_x}{p}\right\rfloor+
+ \left\lfloor\frac{\gamma_y}{p}\right\rfloor.
+\end{equation}
+If $\gamma=p\beta$ and
+$p>\max_i(\beta_i+\eta_i)$, then
+\begin{equation}\label{eq:factorial-exact}
+ v_{\mathfrak p}\bigl(F_p(p\beta,\eta)\bigr)
+ =\beta_x+\beta_y.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Since $p$ is unramified,
+$v_{\mathfrak p}(n)=v_p(n)$ for every nonzero rational integer $n$.
+Legendre's formula therefore gives, in each coordinate,
+\[
+ v_{\mathfrak p}\!\left(
+  \frac{(\gamma_i+p\eta_i)!}{(p\eta_i)!}
+ \right)
+ =\sum_{j\geq1}\left(
+  \left\lfloor\frac{\gamma_i+p\eta_i}{p^j}\right\rfloor-
+  \left\lfloor\frac{p\eta_i}{p^j}\right\rfloor
+ \right).
+\]
+The $j=1$ summand is $\lfloor\gamma_i/p\rfloor$, and all later
+summands are nonnegative, proving \eqref{eq:factorial-lower}.  If
+$\gamma_i=p\beta_i$ and $\beta_i+\eta_i<p$, the $j=1$ summand is
+$\beta_i$, while every summand with $j\geq2$ is zero.  Summing over
+$i=x,y$ proves \eqref{eq:factorial-exact}.
+\end{proof}
 
 \section{Prime-dilated endpoint separation}
 
@@ -337,58 +399,134 @@ at every integral scale after the denominator of $\delta$ is cleared, then
 \end{proposition}
 
 \begin{proof}
-Suppose the intersection is nonempty.  It lies on one affine weight line.
-Because $u\ne v$, ordinary degree is strictly monotone on that line; hence
-the intersection has a unique point $\rho$ of least ordinary degree.
-Lemma~\ref{lem:expose}, applied in two independent sets of variables, gives
-an integer $k$ for which $k\rho$ and $k(\rho+\delta)$ are integral and
+Suppose the intersection
+\[
+ I=\Newt(A)\cap\bigl(\Newt(B)-\delta\bigr)
+\]
+is nonempty.  Both Newton sets in this intersection lie on the affine line
+of weight $W_A$.  Because $u\ne v$, ordinary degree is strictly monotone
+on that line.  The compact segment $I$ therefore has a unique point
+$\rho$ of least ordinary degree.
+
+\emph{Exposure and specialization.}
+Apply Lemma~\ref{lem:expose} in two independent sets of variables, at
+$\rho$ for $A$ and at $\rho+\delta$ for $B$.  There is an integer $k\geq1$
+which clears both lattice denominators and for which
 \[
  c=[X^{k\rho}]A^k\ne0,
  \qquad b=[x^{k(\rho+\delta)}]B^k\ne0.
 \]
-Put $A_0=A^k$, $B_0=B^k$, $\alpha=k\rho$, and $\eta=k\delta$.
+Put
+\[
+ A_0=A^k,\qquad B_0=B^k,
+ \qquad \alpha=k\rho,\qquad \eta=k\delta,
+\]
+so that $\alpha,\eta\in\N^2$.  Let $R$ be the finitely generated
+$\Q$-subalgebra of the coefficient field generated by the coefficients of
+$A,B$ and by $b^{-1},c^{-1}$.  It is a domain.  A maximal ideal of
+$R$ has number-field residue field by Zariski's lemma.  Specializing to
+that residue field preserves $b,c\ne0$.  It also preserves every identity
+in \eqref{eq:shifted-vanishing}: each requested coefficient is an
+integer-coefficient polynomial in the finitely many coefficients of $A$
+and $B$, and a zero element of $R$ remains zero after specialization.
+We may consequently replace the coefficient field by a number field $K$
+without losing either the vanishing identities or the two exposed endpoint
+coefficients.
 
-All coefficients involved lie in a finitely generated
-characteristic-zero domain.  Specialize it to a number field while keeping
-$bc\ne0$, and choose a sufficiently large unramified rational prime $p$
-at which $b$ and $c$ are units.  The coefficient on the ray $p\eta$ is
+\emph{Choice of the prime.}
+Let
+\[
+ M=\max\{\nu_i:\nu\in\Supp(A_0)\cup\Supp(B_0),\ i=x,y\}.
+\]
+Exclude the following finite set of rational primes:
+\begin{itemize}
+ \item primes below a denominator of a coefficient of $A_0$ or $B_0$;
+ \item primes ramified in $K$;
+ \item primes below a prime ideal at which $b$ or $c$ is not a unit; and
+ \item primes $p\leq M$.
+\end{itemize}
+Choose a rational prime $p$ outside this set and a prime ideal
+$\mathfrak p\mid p$.  All coefficients of $A_0,B_0$ are then
+$\mathfrak p$-integral, $b,c$ are $\mathfrak p$-adic units, $p$ is
+unramified, and $p$ exceeds every coordinate needed below.
+
+In the residue field of $\mathfrak p$, Frobenius gives
+\begin{align}
+ A_0^p&\equiv\sum_{\nu\in\Supp(A_0)}
+   ([X^\nu]A_0)^pX^{p\nu}\pmod{\mathfrak p},
+ \label{eq:frobenius-a}\\
+ B_0^p&\equiv\sum_{\nu\in\Supp(B_0)}
+   ([x^\nu]B_0)^px^{p\nu}\pmod{\mathfrak p}.
+ \label{eq:frobenius-b}
+\end{align}
+In particular,
+\[
+ [X^\gamma]A_0^p\equiv0\pmod{\mathfrak p}
+ \quad\text{unless }\gamma\in p\Z^2,
+\]
+and the analogous statement holds for $B_0^p$.  Since $p\eta\in p\Z^2$,
+$[x^{\gamma+p\eta}]B_0^p$ also vanishes modulo $\mathfrak p$ unless
+$\gamma\in p\Z^2$.
+
+\emph{The coefficient and its valuations.}
+The coefficient of $x^{p\eta_x}y^{p\eta_y}$ in
+$A_0(\partial)^p(B_0^p)$ is
 \begin{equation}\label{eq:coefficient-sum}
  \sum_\gamma
- \frac{(\gamma+p\eta)!}{(p\eta)!}
+ F_p(\gamma,\eta)
  [X^\gamma]A_0^p\,
- [x^{\gamma+p\eta}]B_0^p,
+ [x^{\gamma+p\eta}]B_0^p.
 \end{equation}
-where factorials are taken coordinatewise.  Every contributing $\gamma$
-belongs to
+Every contributing $\gamma$ satisfies
 \[
- p\Newt(A_0)\cap\bigl(p\Newt(B_0)-p\eta\bigr).
+ \frac{\gamma}{p}\in
+ \Newt(A_0)\cap\bigl(\Newt(B_0)-\eta\bigr)=kI.
 \]
+Let $s=\alpha_x+\alpha_y$, the least ordinary degree on $kI$.
 
-Let $s=\alpha_x+\alpha_y$.  Choose $p$ larger than every coordinate in
-the fixed Newton segments.  If $\gamma$ is not divisible by $p$
-coordinatewise, Frobenius makes each of the two coefficients in
-\eqref{eq:coefficient-sum} divisible by $p$.  The factorial quotient has
-$p$-adic valuation at least
+First suppose $\gamma\notin p\Z^2$.  Write
+$\gamma_i=pn_i+r_i$, where $0\leq r_i<p$.  Minimality of $s$ gives
 \[
+ n_x+n_y+\frac{r_x+r_y}{p}
+ =\frac{\gamma_x+\gamma_y}{p}\geq s.
+\]
+Since $(r_x+r_y)/p<2$ and $n_x+n_y$ is an integer, this implies
+\begin{equation}\label{eq:floor-bound}
  \left\lfloor\frac{\gamma_x}{p}\right\rfloor+
  \left\lfloor\frac{\gamma_y}{p}\right\rfloor
- \geq s-1.
+ =n_x+n_y\geq s-1.
+\end{equation}
+Lemma~\ref{lem:factorial-valuations} and
+\eqref{eq:frobenius-a}--\eqref{eq:frobenius-b} now show that this summand
+has $\mathfrak p$-adic valuation at least $(s-1)+1+1=s+1$.
+
+Now suppose $\gamma=p\beta$.  Then $\beta\in kI\cap\Z^2$.  Moreover,
+$\beta\in\Newt(A_0)$ and $\beta+\eta\in\Newt(B_0)$, so the definition of
+$M$ and the choice $p>M$ give
+$p>\max_i(\beta_i+\eta_i)$.  Hence
+\begin{equation}\label{eq:divisible-factorial}
+ v_{\mathfrak p}\bigl(F_p(p\beta,\eta)\bigr)
+ =\beta_x+\beta_y
+\end{equation}
+by Lemma~\ref{lem:factorial-valuations}.  The unique point of $kI$ of
+ordinary degree $s$ is $\alpha$.  Thus every integral
+$\beta\ne\alpha$ has $\beta_x+\beta_y\geq s+1$.
+
+At $\beta=\alpha$, equations \eqref{eq:frobenius-a} and
+\eqref{eq:frobenius-b} give
+\[
+ [X^{p\alpha}]A_0^p\equiv c^p\not\equiv0\pmod{\mathfrak p},
+ \qquad
+ [x^{p(\alpha+\eta)}]B_0^p\equiv b^p\not\equiv0
+ \pmod{\mathfrak p}.
 \]
-Thus such a summand has valuation at least $s+1$.
-
-If $\gamma=p\beta$, the factorial quotient has valuation
-$\beta_x+\beta_y$.  The unique point with this value equal to $s$ is
-$\beta=\alpha$.  At that point the two coefficients reduce to $c^p$ and
-$b^p$, while the factorial quotient has valuation exactly $s$ and a
-nonzero unit part.  Every other summand has valuation at least $s+1$.
-Therefore \eqref{eq:coefficient-sum} has one term of uniquely least
-$p$-adic valuation and cannot vanish.  This contradicts
-\eqref{eq:shifted-vanishing} at scale $kp$.
+Together with \eqref{eq:divisible-factorial}, this says that the
+$\gamma=p\alpha$ summand has valuation exactly $s$, whereas every other
+summand has valuation at least $s+1$.  It is therefore the unique summand
+of least $\mathfrak p$-adic valuation, so \eqref{eq:coefficient-sum} is
+nonzero.  But this is precisely the specialization of the coefficient in
+\eqref{eq:shifted-vanishing} at the admissible scale $kp$, a contradiction.
 \end{proof}
-
-The specialization in this proof is only a device for proving a polynomial
-identity is nonzero.  It therefore proves the result over every
-characteristic-zero field.
 
 \begin{corollary}[Horizontal separation]\label{cor:horizontal}
 Let $A$ and $B$ be nonzero $w$-homogeneous polynomials with
@@ -508,30 +646,42 @@ $(s,1)$-weight in the pure identity is
 Whenever $\Delta(s)>0$, Corollary~\ref{cor:horizontal} says that the two
 $x$-intervals are disjoint.
 
-Their order cannot reverse while $\Delta>0$.  They begin with the operator
-interval strictly to the right by \eqref{eq:initial}.  A change can occur
-only at one of the finitely many rational breakpoints of the envelopes.  At
-the first hypothetical reversal, the complete breakpoint faces contain
-both the old and new endpoints.  Their projected intervals must overlap,
-contrary to Corollary~\ref{cor:horizontal}.  Hence, for every rational
-$s>1$ with $\Delta(s)>0$,
-\begin{equation}\label{eq:ordered}
- \min\{\alpha_x:\alpha\in\Supp A_s\}
- >
- \max\{\beta_x:\beta\in\Supp B_s\}.
+Fix a sufficiently small rational $\varepsilon>0$ for which
+\eqref{eq:initial} holds.  We prove that $\Delta$ reaches zero on the
+connected interval beginning at $1+\varepsilon$.  Suppose, to the contrary,
+that
+\begin{equation}\label{eq:positive-forever}
+ \Delta(s)>0\qquad(s\geq1+\varepsilon).
 \end{equation}
+As $s$ increases, the active slope of the lower envelope $L$ is
+non-increasing, while the active slope of the upper envelope $U$ is
+non-decreasing.  Equivalently, the active operator $x$-exponents move only
+to the left and the active polynomial $x$-exponents move only to the right.
+They begin with the complete operator interval strictly to the right of the
+complete polynomial interval by \eqref{eq:initial}.
 
-The function $\Delta$ cannot stay positive forever.  After its last
-breakpoint, $L$ is realized by an operator monomial with globally least
-$X$-exponent $a_{\min}$, while $U$ is realized by a polynomial monomial
-with globally greatest $x$-exponent $i_{\max}$.  Equation
-\eqref{eq:ordered} gives $a_{\min}>i_{\max}$.  Thus on this final interval
+This order cannot reverse under \eqref{eq:positive-forever}.  A first
+reversal could occur only at one of the finitely many rational breakpoints.
+At that breakpoint, the complete exposed face of each envelope contains
+its active exponents on both adjacent linear pieces.  The monotonicity just
+noted then forces the two complete $x$-intervals to overlap.  Since the
+breakpoint is rational and $\Delta>0$ there, this contradicts
+Corollary~\ref{cor:horizontal}.  Consequently the operator interval remains
+strictly to the right for every $s\geq1+\varepsilon$.
+
+After the last breakpoint, $L$ is realized by an operator monomial with
+globally least $X$-exponent $a_{\min}$, while $U$ is realized by a polynomial
+monomial with globally greatest $x$-exponent $i_{\max}$.  The preserved
+order gives $a_{\min}>i_{\max}$.  Hence on the final linear interval
 \[
  \Delta(s)=C+s(i_{\max}-a_{\min})
 \]
-has strictly negative slope, so it must cross zero.
+has strictly negative slope and must cross zero.  This contradicts
+\eqref{eq:positive-forever}.
 
-Let $s_*>1$ be the first zero.  All breakpoints and zeroes of these
+By continuity, there is therefore a first
+$s_*>1+\varepsilon$ with $\Delta(s_*)=0$ on this initial positive
+component.  All breakpoints and zeroes of these
 integer-exponent envelopes are rational.  After multiplying the weight
 $(s_*,1)$ by a common denominator, we obtain a positive unequal integral
 weight.  With $W=L(s_*)=U(s_*)$, the definitions give
@@ -715,9 +865,9 @@ identities have rational coefficients.  The result therefore descends from
 $\mathbb C$ to every characteristic-zero field, proving
 Theorem~\ref{thm:gvc3}.
 
-\section{How the witness was found and the full family}
+\section{The full cusp-profile family}
 
-The construction can be read backwards from the coefficient calculation.
+The construction is determined by the coefficient calculation.
 Long's example suggested looking for a phase variable $u$ for which the
 pure moment asks for the first coefficient beyond
 $(1+u)^{m-1}$, while multiplication by $u$ moves the request back to the
@@ -890,10 +1040,9 @@ nonzero neighboring coefficient.  There is no single horizontal interval
 gap for the binary envelope argument to preserve.  This is the precise
 mechanism of failure, rather than merely a dimension count.
 
-\section{What the binary proof explains}
+\section{A Ferrers support consequence}
 
-The envelope argument explains the staircase ideals that appeared in the
-finite calculations.  Suppose a wall begins with a horizontal gap $g>0$.
+Suppose a wall begins with a horizontal gap $g>0$.
 Index tied operator corrections by their leftward moves $i$ and polynomial
 corrections by their rightward moves $j$.  The two face intervals overlap
 exactly when
@@ -907,9 +1056,8 @@ with edges $i+j\geq g$.  The corresponding squarefree ideal is
  (a_i:i\geq g)+(b_j:j\geq g)
  +(a_i b_j:i,j<g,\ i+j\geq g).
 \]
-This is why bounded moment calculations repeatedly returned coordinate
-components and staircase products.  They were seeing finite shadows of a
-support-separation theorem.
+Thus the squarefree support obstruction has coordinate components and
+staircase products as a direct consequence of horizontal separation.
 
 The proof is specifically two-dimensional.  Hall deficiency localizes at
 one repeated binary direction, and an unequal-weight face is a segment

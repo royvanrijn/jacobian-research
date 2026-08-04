@@ -203,7 +203,7 @@ bounded searches; the all-order conclusion is deductive.
 
 ## Checked-in Lean projects
 
-All three local Lean packages use the pinned Lean/Mathlib `v4.32.1` release.
+All four local Lean packages use the pinned Lean/Mathlib `v4.32.1` release.
 Build their default targets and audit their source policies with:
 
 ```bash
@@ -212,10 +212,19 @@ make verify-lean-local
 
 This rejects `sorry` and `admit` throughout `formal/`, rejects unexpected
 explicit axioms, checks the finite-étale publication-certificate import
-boundary, and builds `discriminant-pencils`, `finite-etale-keller`, and
-`gmc2`.  The GMC(2) package deliberately exposes exactly two mathematical
+boundary, and builds `discriminant-pencils`, `finite-etale-keller`, `gmc2`,
+and `gvc`.  The GMC(2) package deliberately exposes exactly two mathematical
 inputs as axioms; their names and roles are documented in
-[`formal/gmc2/README.md`](formal/gmc2/README.md).
+[`formal/gmc2/README.md`](formal/gmc2/README.md).  The GVC package contains no
+explicit axioms, but is currently a partial audit: its two bridge structures
+name the unformalized Reynolds/phase and binary envelope obligations.  Its
+exact coverage is documented in [`formal/gvc/README.md`](formal/gvc/README.md).
+
+Build only the GVC audit with:
+
+```bash
+make verify-gvc-lean
+```
 
 ## Stable core
 

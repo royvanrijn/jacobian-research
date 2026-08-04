@@ -30,6 +30,7 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 	verify-linear-torus-free verify-algebraic-torus-free \
 	verify-master \
 	verify-quartic verify-normal-forms verify-formal verify-lean-local \
+	verify-gvc-lean \
 	verify-lean-foundational \
 	verify-foundations verify-foundations-formal \
 	verify-gq2-local-fibers \
@@ -852,9 +853,11 @@ verify-normal-forms:
 
 verify-derived: verify-normal-forms verify-boundary-obstruction-theory
 
-# Optional formal replication. This fetches Dean Cureton's separately authored
-# Lean project at the audited commit recorded in verified/LEAN_FOUNDATIONAL_MAP.md; it is kept
-# out of the default target because it downloads a pinned Lean/mathlib toolchain.
+# Partial local formal audit of the GVC manuscript.
+verify-gvc-lean:
+	cd formal/gvc && lake exe cache get
+	cd formal/gvc && lake build
+
 verify-lean-local:
 	$(SYSTEM_PYTHON) scripts/check_lean_placeholders.py
 	$(SYSTEM_PYTHON) scripts/check_paper_certificate_imports.py
@@ -864,7 +867,11 @@ verify-lean-local:
 	cd formal/finite-etale-keller && lake build
 	cd formal/gmc2 && lake exe cache get
 	cd formal/gmc2 && lake build
+	$(MAKE) verify-gvc-lean
 
+# Optional formal replication. This fetches Dean Cureton's separately authored
+# Lean project at the audited commit recorded in verified/LEAN_FOUNDATIONAL_MAP.md; it is kept
+# out of the default target because it downloads a pinned Lean/mathlib toolchain.
 verify-lean-foundational:
 	bash scripts/verify_lean_foundational_map.sh
 
