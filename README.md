@@ -3,7 +3,11 @@
 This repository verifies a three-dimensional polynomial Keller map with a
 three-point collision, explains it through a tangent-map normal form, and
 develops weighted, cancellation, decorated-normalization, Hurwitz, and
-rank-two symplectic consequences.  In generic degree `N>=4`, the coarse
+rank-two symplectic consequences.  Separately, in characteristic two, it now
+audits the preserved plane fiber of the Huq--Kuruvilla map: an etale
+noninjective endomorphism of `A^2` with separable generic degree three.  This
+positive-characteristic theorem does not address the characteristic-zero
+plane Jacobian conjecture.  In generic degree `N>=4`, the coarse
 decorated normalization already gives an `(N-3)`-dimensional family of stable
 classes.  Adding one affine root sheet generically recovers the seed exactly.
 The same parameters yield four-real-Gaussian witnesses with an optimal
@@ -1481,6 +1485,32 @@ or `0` analytic inverse branches off the boundary discriminant, on its
 smooth remainder, or on the codimension-two omitted triple-root curve.  The
 origin branch and the three rational-collision branches have exact centered
 radius one, not attained.
+
+The
+[Huq--Kuruvilla--Mondello characteristic-two audit](verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md)
+starts from the known threefold counterexample and makes the coordinate chain
+strictly smaller.  After source and target permutations, polynomial source
+coordinates `(a,b,c)` and a linear target change put the map in skew-product
+form `(a,b,c) -> (A,B,c)`.  Its preserved `c=0` fiber is
+
+\[
+\begin{aligned}
+P&=x+x^2y+x^4+x^6y^2,\\
+Q&=y+x^5+x^6y+x^7y^2+x^8y^3.
+\end{aligned}
+\]
+
+The plane determinant is one, the three points `(0,1)`, `(1,0)`, and `(1,1)`
+map to `(0,1)`, and a hidden irreducible cubic reconstructs the source
+function field with exact separable degree three.  Consequently the
+prime-to-characteristic separable Jacobian conjecture already fails in
+dimension two over every characteristic-two field; identity padding gives
+the same plane-derived example in every higher dimension.  The checker also
+shows that the identical integer formulas have nonconstant Jacobian, so this
+is not a characteristic-zero plane construction.  The linked public Lean
+receipt is formal evidence, not independent human peer review.
+
+<!-- status-consumer: HKM2 79acc8c611bf0466 -->
 
 The
 [mixed-sign grading literature reconciliation](extended-geometry/MIXED_SIGN_GRADINGS_LITERATURE_RECONCILIATION.md)

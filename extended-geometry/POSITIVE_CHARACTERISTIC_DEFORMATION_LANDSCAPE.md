@@ -30,6 +30,20 @@ The repository already contains examples where these three operations give,
 respectively, a vacuous eventual-power theorem, a non-Mathieu Hasse kernel,
 and a nontrivial \(p\)-adic valuation tower.
 
+The
+[characteristic-two plane theorem](../verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md#8-the-preserved-coordinate-and-the-dimension-two-theorem)
+is now the smallest-dimensional calibration in this landscape.  A polynomial
+coordinate change makes the Huq--Kuruvilla threefold a skew product, and its
+preserved plane fiber remains etale of exact separable degree three.  This
+shortens the characteristic-two counterexample chain from dimension three to
+dimension two, but it does not spread to odd characteristic: the identical
+integer plane formula has nonconstant Jacobian.  Its ambient threefold
+normalization still supplies the wild-radicial boundary model used below,
+while the plane hidden cubic supplies the dimension-minimal noninvertibility
+theorem.
+
+<!-- status-consumer: HKM2 79acc8c611bf0466 -->
+
 ## 1. Seven-axis survival ledger
 
 | Axis | What survives without change | Characteristic-\(p\) deformation | Correct replacement or open datum |

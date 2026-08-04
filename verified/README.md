@@ -7,6 +7,10 @@ This directory contains the stable proof chain:
   independent sparse determinant replay, and its 19-variable
   cubic-homogeneous parent;
 - [Foundational Keller map](FOUNDATIONAL_GEOMETRY.md): exact determinant and collision;
+- [Characteristic-two threefold and preserved plane fiber](HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md):
+  the Huq--Kuruvilla wild-radicial normalization, Mondello's polynomial
+  skew-product coordinates, and the resulting determinant-one noninjective
+  plane map of exact separable generic degree three;
 - [Tangent-map core](TANGENT_MAP_CORE.md): the central theorem unifying the
   inverse pencil, plane incidence, Jacobian factor, discriminant normalization,
   reconstruction pole, Hessian Fitting divisor, weighted suspension, and the

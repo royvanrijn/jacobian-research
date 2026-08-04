@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
-"""Exact F_2 audit of the Huq--Kuruvilla marked-root normalization.
+"""Exact F_2 audit of the Huq--Kuruvilla map and its Mondello plane fiber.
 
 The map, collision, inverse cubic, and generic rational reconstruction are
 credited to Irit Huq-Kuruvilla, arXiv:2607.20968.  This script additionally
 checks the discriminant, projective collision, normalization charts,
 boundary factorization, reconstruction pole, and determinant ledger used in
 verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md.
+
+The final block checks Mondello's preserved-coordinate reduction, the plane
+Jacobian and collision, the hidden cubic and recovery identities, and the
+separability witness.  Irreducibility of the hidden cubic is the written
+degree-one-in-the-target-parameter argument in the canonical note; the
+checker verifies its polynomial coprimality certificate.
 """
 
 from __future__ import annotations
@@ -143,3 +149,123 @@ expected_integer_jacobian = (
 assert sp.expand(integer_jacobian - expected_integer_jacobian) == 0
 print("PASS: the naive integral lift has nonconstant Jacobian")
 
+# Mondello's coordinate-permuted skew-product form.  Use fresh symbols to
+# keep this calculation independent of the normalization-chart variables.
+xp, yp, zp = sp.symbols("xp yp zp")
+aa, bb, cc = sp.symbols("aa bb cc")
+
+phi_x = xp + xp**2 * zp
+phi_y = yp + xp**2 * yp**2
+phi_z = zp + xp * yp + xp**2 * yp * zp
+
+aa_source = xp
+bb_source = zp + yp**2
+cc_source = xp + yp + xp**2 * bb_source
+
+xp_inverse = aa
+yp_inverse = cc + aa + aa**2 * bb
+zp_inverse = bb + yp_inverse**2
+inverse_substitution = {xp: xp_inverse, yp: yp_inverse, zp: zp_inverse}
+source_substitution = {aa: aa_source, bb: bb_source, cc: cc_source}
+
+for recovered, target in (
+    (aa_source.subs(inverse_substitution), aa),
+    (bb_source.subs(inverse_substitution), bb),
+    (cc_source.subs(inverse_substitution), cc),
+    (xp_inverse.subs(source_substitution), xp),
+    (yp_inverse.subs(source_substitution), yp),
+    (zp_inverse.subs(source_substitution), zp),
+):
+    assert_poly_zero(recovered - target, xp, yp, zp, aa, bb, cc)
+
+A_skew = mod2(phi_x.subs(inverse_substitution), aa, bb, cc)
+B_skew = mod2(phi_z.subs(inverse_substitution), aa, bb, cc)
+C_skew = mod2((phi_x + phi_y).subs(inverse_substitution), aa, bb, cc)
+assert_poly_zero(C_skew - cc, aa, bb, cc)
+
+expected_plane_a = aa + aa**2 * bb + aa**4 + aa**6 * bb**2
+expected_plane_b = bb + aa**5 + aa**6 * bb + aa**7 * bb**2 + aa**8 * bb**3
+assert_poly_zero(A_skew.subs(cc, 0) - expected_plane_a, aa, bb)
+assert_poly_zero(B_skew.subs(cc, 0) - expected_plane_b, aa, bb)
+print("PASS: the coordinate-permuted threefold map is a skew product with the stated plane fiber")
+
+# Direct plane Keller and collision certificates.
+plane_x, plane_y = sp.symbols("plane_x plane_y")
+P2 = plane_x + plane_x**2 * plane_y + plane_x**4 + plane_x**6 * plane_y**2
+Q2 = (
+    plane_y
+    + plane_x**5
+    + plane_x**6 * plane_y
+    + plane_x**7 * plane_y**2
+    + plane_x**8 * plane_y**3
+)
+plane_jacobian = sp.det(sp.Matrix((P2, Q2)).jacobian((plane_x, plane_y)))
+assert_poly_zero(plane_jacobian - 1, plane_x, plane_y)
+
+plane_points = ((0, 1), (1, 0), (1, 1))
+plane_images = {
+    tuple(
+        int(mod2(component.subs({plane_x: px, plane_y: py}), plane_x, plane_y))
+        for component in (P2, Q2)
+    )
+    for px, py in plane_points
+}
+assert plane_images == {(0, 1)}
+print("PASS: the plane map has determinant one and the three-point collision")
+
+# Hidden cubic, source-field recovery, and separability witness.
+plane_r = 1 + plane_x * plane_y
+plane_u = 1 + plane_x**3 * plane_r
+plane_w = plane_r * plane_u**2
+assert_poly_zero(P2 - plane_x * plane_r * plane_u, plane_x, plane_y)
+assert_poly_zero(Q2 - (plane_y + plane_x**5 * plane_r**3), plane_x, plane_y)
+assert_poly_zero(plane_x * Q2 - (1 + plane_w), plane_x, plane_y)
+assert_poly_zero(P2**2 - plane_x**2 * plane_r * plane_w, plane_x, plane_y)
+assert_poly_zero(P2 * Q2 + P2**3 - (plane_r * plane_u + plane_w**2), plane_x, plane_y)
+
+hidden_cubic_at_w = (
+    plane_w**3
+    + plane_w**2
+    + (P2 * Q2 + P2**3) * plane_w
+    + P2**3
+)
+assert_poly_zero(hidden_cubic_at_w, plane_x, plane_y)
+hidden_derivative_at_w = plane_w**2 + P2 * Q2 + P2**3
+assert_poly_zero(hidden_derivative_at_w - plane_r * plane_u, plane_x, plane_y)
+
+# In K=k(P_target), a Q_target-independent factor would divide these two
+# coefficient polynomials.  Their gcd is one already over F_2[P_target,T].
+P_target, T_plane = sp.symbols("P_target T_plane")
+q_coefficient = P_target * T_plane
+q_constant = T_plane**3 + T_plane**2 + P_target**3 * T_plane + P_target**3
+coprimality = sp.gcd(
+    sp.Poly(q_coefficient, P_target, T_plane, modulus=2),
+    sp.Poly(q_constant, P_target, T_plane, modulus=2),
+)
+assert coprimality.as_expr() == 1
+
+elimination = Q2 * (
+    Q2**2 * plane_x**3
+    + (P2**3 + P2 * Q2 + 1) * plane_x
+    + P2
+)
+assert_poly_zero(elimination, plane_x, plane_y)
+print("PASS: the plane hidden cubic, recovery identities, irreducibility certificate, and separability witness hold")
+
+# The same plane formulas do not give a characteristic-zero Keller map.
+expected_plane_integer_jacobian = (
+    1
+    + 2 * plane_x * plane_y
+    + 4 * plane_x**3
+    - 4 * plane_x**6
+    - 2 * plane_x**7 * plane_y
+    + 4 * plane_x**9
+    - 2 * plane_x**9 * plane_y**3
+    - 2 * plane_x**10 * plane_y
+    + 6 * plane_x**5 * plane_y**2
+    + 6 * plane_x**11 * plane_y**2
+    - 2 * plane_x**12 * plane_y**3
+    + 2 * plane_x**13 * plane_y**4
+)
+assert sp.expand(plane_jacobian - expected_plane_integer_jacobian) == 0
+print("PASS: the naive integral plane lift has nonconstant Jacobian")

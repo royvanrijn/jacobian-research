@@ -13,6 +13,25 @@ make check
 This compiles the active Python code, checks local Markdown links, and audits
 the single status ledger.
 
+## Characteristic-two plane Keller counterexample
+
+```bash
+.venv/bin/python scripts/verify_huq_kuruvilla_characteristic_two.py
+```
+
+The first block independently replays the Huq--Kuruvilla threefold Jacobian,
+collision, inverse cubic, projective normalization charts, wild-radicial
+boundary, reconstruction, and zero-pole determinant ledger.  The second block
+checks Mondello's source and target coordinate changes, proves that the map is
+a skew product with a preserved plane fiber, and verifies the plane Jacobian,
+three-point collision, hidden cubic, rational recovery identities,
+irreducibility coprimality certificate, and separability witness.  These exact
+identities support the written proof that the plane generic degree is three;
+the degree-one-in-the-target-parameter irreducibility argument in the
+canonical note is not inferred from a bounded search.  The same command also
+checks that neither displayed integer formula is a characteristic-zero Keller
+map.
+
 ## LND-image Mathieu finite-fiber replay
 
 ```bash

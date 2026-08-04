@@ -35,7 +35,9 @@ weight-redistributed quartic has Jacobian one, generic separable degree four,
 and a visible prime-field collision. Consequently the usual Adjamagbo, or
 separable, positive-characteristic Jacobian conjecture fails in dimension
 three in every positive characteristic. Identity stabilization gives the same
-conclusion in every dimension at least three.
+conclusion in every dimension at least three.  In characteristic two, the
+Huq--Kuruvilla map admits a preserved plane fiber of generic separable degree
+three, so the failure already occurs in dimension two.
 
 The theorem is an existence result, not yet a positive-characteristic analogue
 of the full finite-étale realization theorem: arbitrary prescribed finite
@@ -84,10 +86,36 @@ characteristic.
 The proof uses the integral cubic in Section 2 when `p!=3` and the
 characteristic-three quartic in Section 3 when `p=3`.
 
-### Corollary 1.2 — all higher dimensions
+### Corollary 1.2 — characteristic two already in dimension two
 
-For every `n>=3`, adjoining `n-3` identity coordinates gives a counterexample
-of the same generic degree on `A^n_k`.
+If `char(k)=2`, the polynomial map
+
+```text
+(x,y) |-> (
+  x+x^2*y+x^4+x^6*y^2,
+  y+x^5+x^6*y+x^7*y^2+x^8*y^3
+)
+```
+
+has Jacobian one, sends `(0,1)`, `(1,0)`, and `(1,1)` to `(0,1)`, and has
+generic separable degree three.  Hence the separable Jacobian conjecture is
+false on `A^2_k` in characteristic two.
+
+The [characteristic-two audit](../../verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md)
+gives the polynomial skew-product coordinates that extract this map as a
+preserved fiber of the Huq--Kuruvilla threefold, followed by the direct hidden
+cubic, actual-target irreducibility, reconstruction, and separability proof.
+The plane field-degree statement is proved directly rather than inherited
+from the ambient threefold.
+
+### Corollary 1.3 — all higher dimensions
+
+For every positive characteristic and every `n>=3`, the maps in Theorem 1.1
+give a counterexample on `A^n_k` after identity stabilization.  In
+characteristic two, Corollary 1.2 and identity padding give the same conclusion
+for every `n>=2`.
+
+<!-- status-consumer: HKM2 79acc8c611bf0466 -->
 
 ## 2. One integral cubic for every characteristic
 
@@ -397,17 +425,21 @@ prime-to-characteristic formulation in characteristic three.
 
 ## 4. Proof of the main theorem
 
-If `p!=3`, use the base change of the integral cubic `Phi_3`. It has Jacobian
-one, a prime-field collision, and generic separable degree three. Because
-`p` does not divide three, it satisfies the prime-to-characteristic
-hypothesis.
+If `p=2`, Corollary 1.2 supplies the stronger plane counterexample.  Adjoining
+one identity coordinate gives the required threefold map in Theorem 1.1.
+
+If `p!=2,3`, use the base change of the integral cubic `Phi_3`. It has
+Jacobian one, a prime-field collision, and generic separable degree three.
+Because `p` does not divide three, it satisfies the prime-to-characteristic
+hypothesis.  The integral cubic also works when `p=2`, but the preserved plane
+fiber is dimensionally sharper.
 
 If `p=3`, use `Psi_4`. It has Jacobian one, a prime-field collision, and
 generic separable degree four. Because three does not divide four, it also
 satisfies the hypothesis.
 
-These two formulas cover every field of positive characteristic and prove
-Theorem 1.1.
+These formulas cover every field of positive characteristic and prove
+Theorem 1.1 together with its dimension-two characteristic-two refinement.
 
 ## 5. Relation to the active finite-étale-fiber paper
 
@@ -428,15 +460,20 @@ The common principle is marked-root algebraization:
    target chart; and
 5. forget the root on the target.
 
-The two cases use different realizations of this principle:
+The dimension-minimal characteristic split uses three realizations of this
+principle:
 
 | characteristic | inverse degree | realization | relation to existing work |
 |---|---:|---|---|
-| `p!=3` | `3` | integral normalized linear-times-quadratic factorization | characteristic-free integral chart of the foundational factorization model |
+| `p=2` | `3` | preserved plane fiber of a polynomial threefold skew product | Mondello reduction of the Huq--Kuruvilla map; direct plane field-degree proof |
+| `p!=2,3` | `3` | integral normalized linear-times-quadratic factorization | characteristic-free integral chart of the foundational factorization model |
 | `p=3` | `4` | weight-redistributed tangent suspension | specialization of the complementary chart already verified by `verify_hasse_typical_seed_recovery.py` |
 
-The characteristic-two reduction of the integral cubic and the map of
-Huq-Kuruvilla arise from the same normalized cubic-factorization mechanism.
+The integral cubic remains a uniform three-dimensional option in
+characteristic two.  The preserved fiber improves the ambient dimension, but
+does not replace the integral chart in other characteristics.  The
+characteristic-two reduction of that integral cubic and the map of
+Huq--Kuruvilla arise from the same normalized cubic-factorization mechanism.
 The characteristic-three quartic is not a cubic reparametrization: its generic
 degree is four, so it is not polynomially left-right equivalent to a
 degree-three map.
@@ -477,6 +514,13 @@ Huq-Kuruvilla gave the recent characteristic-two degree-three counterexample:
   Separable Jacobian Conjecture*, arXiv:2607.20968,
   <https://arxiv.org/abs/2607.20968>.
 
+Mondello exposed the preserved polynomial coordinate and proved that its plane
+fiber retains exact separable degree three:
+
+- R. Mondello, *A Dimension-Two Counterexample to the Separable Jacobian
+  Conjecture in Characteristic Two*,
+  <https://integrate-your-mind.github.io/#proof> (2026).
+
 That paper states that, to the author's knowledge, no other counterexample to
 the separable formulation was then known. A dated search on 24 July 2026 for
 `separable Jacobian conjecture`, `Adjamagbo counterexample`,
@@ -497,9 +541,10 @@ Run
 
 ```bash
 .venv/bin/python scripts/verify_prime_to_characteristic_realization.py
+.venv/bin/python scripts/verify_huq_kuruvilla_characteristic_two.py
 ```
 
-The checker verifies:
+The first checker verifies:
 
 - the integral cubic Jacobian over `Z`;
 - both normalized factorization equations;
@@ -516,6 +561,13 @@ The checker verifies:
 The two irreducibility proofs are structural degree-one-in-a-parameter
 arguments and do not depend on a bounded computer search.
 
+The second checker verifies the characteristic-two threefold audit and the
+preserved plane fiber, including its coordinate changes, determinant,
+collision, hidden cubic, recovery identities, irreducibility coprimality
+certificate, and separability witness.  The public Lean source archive and
+receipts provide a separate formal check, but not independent human peer
+review.
+
 ## 8. Recommended manuscript integration
 
 A future revision of the active paper could use the following structure:
@@ -523,8 +575,8 @@ A future revision of the active paper could use the following structure:
 1. characteristic-zero finite étale realization and rank classification;
 2. normalized marked-root mechanisms;
 3. arithmetic and Hasse-principle consequences;
-4. the prime-to-characteristic theorem above;
-5. comparison with the characteristic-two cubic paper; and
+4. the characteristic-two plane fiber and its threefold origin;
+5. the all-characteristic dimension-three theorem above; and
 6. open positive-characteristic finite-étale realization problems.
 
 Until the arbitrary prescribed-algebra realization theorem has been extended

@@ -1,4 +1,4 @@
-# The Huq--Kuruvilla characteristic-two map: a wild marked-root audit
+# The Huq--Kuruvilla characteristic-two map and its plane fiber
 
 This note gives a structural interpretation of Irit Huq-Kuruvilla's
 characteristic-two counterexample to the separable Jacobian conjecture.
@@ -15,6 +15,25 @@ the projective finite normalization, its boundary valuations and residue
 extension, monodromy, and comparison with the marked-root taxonomy in this
 repository.  In particular, no priority claim is made for the map or for
 the positive-characteristic counterexample.
+
+Romy Mondello subsequently exposed a preserved polynomial coordinate after
+permuting the source and target coordinates.  Its zero fiber is the explicit
+plane map
+
+\[
+ \begin{aligned}
+ P_2&=x+x^2y+x^4+x^6y^2,\\
+ Q_2&=y+x^5+x^6y+x^7y^2+x^8y^3.
+ \end{aligned}                                      \tag{0.1}
+\]
+
+Mondello's plane formula, hidden cubic, degree-three proof, and formalization
+are recorded in *A Dimension-Two Counterexample to the Separable Jacobian
+Conjecture in Characteristic Two*,
+[project page](https://integrate-your-mind.github.io/#proof) (2026).  Section
+8 below verifies the preserved-fiber derivation and gives a self-contained
+field-degree proof.  Thus the plane theorem is not inferred merely from the
+threefold collision, and no claim of independent human peer review is made.
 
 Throughout, \(k\) is a field of characteristic \(2\).
 
@@ -350,12 +369,173 @@ by the separable/inseparable residue degree and different of the selected
 boundary map.  The minimal new entry is an \(\mathbb A^1\) critical
 normalization whose discriminant parameter is its Frobenius square.
 
-## 8. Exact reproduction
+## 8. The preserved coordinate and the dimension-two theorem
 
-The accompanying dependency-light SymPy audit checks the map, cubic,
-discriminant, projective collision, normalization-chart identities,
-reconstruction, pole divisor, discriminant pullback, and determinant
-ledger:
+Permute the source and target coordinates of (1.1) by
+
+\[
+ \sigma(x,y,z)=(x,z,y),\qquad
+ \tau(X,Y,Z)=(X,Z,Y).
+\]
+
+Then
+
+\[
+ \Phi=\tau\circ F\circ\sigma
+ =\bigl(x+x^2z,\ y+x^2y^2,\ z+xy+x^2yz\bigr).       \tag{8.1}
+\]
+
+Introduce polynomial source coordinates
+
+\[
+ a=x,\qquad b=z+y^2,\qquad c=x+y+x^2b.              \tag{8.2}
+\]
+
+They have polynomial inverse
+
+\[
+ x=a,\qquad y=c+a+a^2b,\qquad
+ z=b+(c+a+a^2b)^2.                                  \tag{8.3}
+\]
+
+If the target coordinates of (8.1) are denoted by `(X,Y,Z)`, make the
+linear target change
+
+\[
+ A=X,\qquad B=Z,\qquad C=X+Y.
+\]
+
+Substitution gives `C=c`.  Hence the re-coordinatized threefold map is a
+skew product
+
+\[
+ (a,b,c)\longmapsto (A(a,b,c),B(a,b,c),c).           \tag{8.4}
+\]
+
+The fiber `c=0` is preserved, and its first two coordinates are
+
+\[
+ \begin{aligned}
+ A(a,b,0)&=a+a^2b+a^4+a^6b^2,\\
+ B(a,b,0)&=b+a^5+a^6b+a^7b^2+a^8b^3.
+ \end{aligned}                                      \tag{8.5}
+\]
+
+After renaming `(a,b)` as `(x,y)`, this is exactly (0.1).  Because the third
+coordinate in (8.4) is unchanged, the threefold determinant is the plane
+determinant on every fiber.  Directly,
+
+\[
+ \frac{\partial P_2}{\partial x}=1,\quad
+ \frac{\partial P_2}{\partial y}=x^2,\quad
+ \frac{\partial Q_2}{\partial x}=x^4+x^6y^2,\quad
+ \frac{\partial Q_2}{\partial y}=1+x^6+x^8y^2,
+\]
+
+so
+
+\[
+ \det\frac{\partial(P_2,Q_2)}{\partial(x,y)}=1.      \tag{8.6}
+\]
+
+Moreover
+
+\[
+ (0,1),\ (1,0),\ (1,1)\longmapsto(0,1),             \tag{8.7}
+\]
+
+which proves noninjectivity over every characteristic-two field.
+
+It remains to check the prime-to-characteristic condition rather than infer
+it from the ambient threefold.  Put
+
+\[
+ r=1+xy,\qquad u=1+x^3r,\qquad w=ru^2.
+\]
+
+In characteristic two,
+
+\[
+ P_2=xru,\qquad Q_2=y+x^5r^3,
+\]
+
+and the exact identities
+
+\[
+ xQ_2=1+w,\qquad P_2^2=x^2rw,
+ \qquad P_2Q_2+P_2^3=ru+w^2                       \tag{8.8}
+\]
+
+hold.  Therefore `w` is a root of
+
+\[
+ H(T)=T^3+T^2+(P_2Q_2+P_2^3)T+P_2^3               \tag{8.9}
+\]
+
+and the reconstruction formulas
+
+\[
+ x=\frac{w+1}{Q_2},\qquad
+ r=\frac{P_2^2}{x^2w},\qquad
+ y=\frac{r+1}{x}                                    \tag{8.10}
+\]
+
+show that `k(x,y)=k(P_2,Q_2)(w)`.  In particular the target field has
+transcendence degree two, so `P_2,Q_2` are algebraically independent.
+
+For completeness, set `K=k(P_2)` and regard `Q_2` as transcendental over
+`K`.  The polynomial (8.9) has degree one in `Q_2`.  If it factored in
+`K(Q_2)[T]`, Gauss's lemma over `K[Q_2]` would make one positive-degree
+monic factor independent of `Q_2`.  That factor would divide both
+
+\[
+ P_2T\quad\hbox{and}\quad T^3+T^2+P_2^3T+P_2^3.
+\]
+
+Since `P_2` is a unit in `K`, its only possible nonconstant divisor from the
+first polynomial is `T`, but the second has nonzero constant term `P_2^3`.
+This contradiction proves that `H` is irreducible.  Hence
+
+\[
+ [k(x,y):k(P_2,Q_2)]=3.                              \tag{8.11}
+\]
+
+Finally,
+
+\[
+ H'(w)=w^2+P_2Q_2+P_2^3=ru\ne0,                    \tag{8.12}
+\]
+
+so the extension is separable.  Equations (8.6), (8.7), and (8.11)--(8.12)
+prove:
+
+> **Characteristic-two plane theorem.** Over every field of characteristic
+> two, (0.1) is an etale polynomial endomorphism of the affine plane with
+> separable generic degree three and an explicit three-point rational
+> collision.  It is therefore a counterexample to the prime-to-characteristic
+> separable Jacobian conjecture already in dimension two.
+
+This does not address the characteristic-zero plane Jacobian conjecture.  For
+the same formulas over the integers, the Jacobian is
+
+\[
+\begin{aligned}
+1&+2xy+4x^3-4x^6-2x^7y+4x^9-2x^9y^3-2x^{10}y\\
+ &+6x^5y^2+6x^{11}y^2-2x^{12}y^3+2x^{13}y^4,
+\end{aligned}                                       \tag{8.13}
+\]
+
+whose nonconstant terms vanish only after reduction modulo two.
+
+## 9. Exact reproduction
+
+The accompanying dependency-light SymPy audit checks the threefold map,
+cubic, discriminant, projective collision, normalization-chart identities,
+reconstruction, pole divisor, discriminant pullback, and determinant ledger.
+It also checks the coordinate permutations, polynomial source change, skew
+product, plane fiber, plane determinant and collision, hidden cubic and
+recovery identities, separability witness, and failure of the naive integral
+plane lift:
 
 ```bash
 .venv/bin/python scripts/verify_huq_kuruvilla_characteristic_two.py

@@ -46,6 +46,51 @@
       "priority": "core"
     },
     {
+      "id": "HKM2",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Characteristic-two separable plane Keller counterexample",
+      "scope": "Over every field k of characteristic two, the explicit plane map P=x+x^2*y+x^4+x^6*y^2, Q=y+x^5+x^6*y+x^7*y^2+x^8*y^3 has Jacobian determinant one and sends the three distinct k-points (0,1), (1,0), and (1,1) to (0,1). After polynomial source coordinates and a linear target change, the Huq--Kuruvilla threefold map is a skew product whose c=0 fiber is this plane map. The hidden element w=(1+x*y)*(1+x^3*(1+x*y))^2 has an irreducible actual-target cubic, reconstructs k(x,y), and has nonzero derivative, so the generic degree is exactly three and separable. Thus the prime-to-characteristic separable Jacobian conjecture fails already in dimension two in characteristic two. The identical integer formulas have nonconstant Jacobian, so this does not address the characteristic-zero plane conjecture. The public Lean receipt is formal computational evidence but not independent human peer review.",
+      "canonical_source": "verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md",
+      "dependencies": [
+        "external: Huq--Kuruvilla characteristic-two threefold counterexample",
+        "external: Mondello preserved-coordinate plane reduction"
+      ],
+      "checker": "scripts/verify_huq_kuruvilla_characteristic_two.py",
+      "proof_type": "formal",
+      "independent_replay": true,
+      "formal_verification": true,
+      "external_review": false,
+      "external_formal_certificates": [
+        {
+          "name": "Lean 4 source archive and receipts",
+          "url": "https://integrate-your-mind.github.io/dimension-two-counterexample-arxiv.zip",
+          "prover": "Lean 4",
+          "scope": "Plane determinant, collision, etaleness, algebraic independence, exact separable degree three, geometric generic-fiber cardinality, and failure of isomorphism over the algebraic closure of F_2.",
+          "refereed": false
+        }
+      ],
+      "artifact_hash": "sha256:2a48e161c682c514e4009a70deb53de3c364f229a08747cca06c41e1e7b2a91c",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "dimension three as the smallest known characteristic-two separable Keller counterexample"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "README.md",
+        "extended-geometry/POSITIVE_CHARACTERISTIC_DEFORMATION_LANDSCAPE.md",
+        "papers/common-arithmetic-fibers/PRIME_TO_CHARACTERISTIC_EXTENSION.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "ADK1",
       "kind": "theorem",
       "state": "proved",

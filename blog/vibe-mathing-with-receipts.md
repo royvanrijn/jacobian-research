@@ -1,27 +1,18 @@
 ---
 title: "Vibe mathing, with receipts"
-subtitle: "What happened when I treated mathematical research like an unfamiliar codebase—and refused to trust the output"
+subtitle: "How AI-assisted exploration found the exact dimensional boundary of the Generalized Vanishing Conjecture"
 author: "Roy van Rijn"
-date: "2026-07-28"
-status: "Draft for publication after the Zenodo records are live"
-description: "A developer's account of using AI, exact computation, Lean, and repeated falsification to move from one checkable counterexample to two constructive papers about Keller fibers."
+date: "2026-08-04"
+status: "Draft article accompanying the published GVC preprint"
+description: "A developer's account of using AI, exact computation, Lean, and repeated falsification to prove the two-variable Generalized Vanishing Conjecture and find its first counterexample in dimension three."
 ---
 
-> **Paper I:** *Over Characteristic Zero, Every Finite Étale Algebra of Rank at Least Three Is a Full Keller Fiber*  
-> Zenodo record: [{{ZENODO_FIBERS_RECORD_URL}}]({{ZENODO_FIBERS_RECORD_URL}})  
-> DOI: `{{ZENODO_FIBERS_DOI}}`  
-> Direct PDF: [{{ZENODO_FIBERS_PDF_URL}}]({{ZENODO_FIBERS_PDF_URL}})
->
-> **Paper II:** *Quantitative Hasse-Principle Failures in the Fibers of a Fixed Keller Map*  
-> Zenodo record: [{{ZENODO_HASSE_RECORD_URL}}]({{ZENODO_HASSE_RECORD_URL}})  
-> DOI: `{{ZENODO_HASSE_DOI}}`  
-> Direct PDF: [{{ZENODO_HASSE_PDF_URL}}]({{ZENODO_HASSE_PDF_URL}})
->
-> **Code and formalization:**  
-> Repository: [{{REPOSITORY_URL}}]({{REPOSITORY_URL}})  
-> Archived release: [{{ZENODO_CODE_RECORD_URL}}]({{ZENODO_CODE_RECORD_URL}})  
-> DOI: `{{ZENODO_CODE_DOI}}`  
-> Commit: `{{PUBLICATION_COMMIT_SHA}}`
+> **Paper:** *The Generalized Vanishing Conjecture: The Two-Variable Theorem and the First Failing Dimension*<br>
+> Zenodo record: [zenodo.org/records/21782342](https://zenodo.org/records/21782342)<br>
+> DOI: [10.5281/zenodo.21782342](https://doi.org/10.5281/zenodo.21782342)<br>
+> Repository source: [`papers/generalized-vanishing-two-variables/main.tex`](../papers/generalized-vanishing-two-variables/main.tex)<br>
+> Lean proof: [github.com/royvanrijn/jacobian-research/tree/main/formal/gvc](https://github.com/royvanrijn/jacobian-research/tree/main/formal/gvc)<br>
+> Formalization: the counterexample and failure in every dimension at least three are fully Lean-verified; nearly all supporting algebraic machinery and much of the binary proof infrastructure are checked as well
 
 # Vibe mathing, with receipts
 
@@ -38,12 +29,22 @@ being generated. It is that the people producing it do not necessarily read
 or understand every line. They may never have been able to write those lines
 themselves.
 
-As a developer, this feels less alien to me than it might sound. Large
-software systems have always exceeded the understanding of any one person.
-We navigate them through interfaces, types, tests, logs, debuggers,
-reproducible builds, and carefully chosen experiments. None of these makes a
-program correct. Together, however, they let us ask much better questions
-than “does this code look convincing?”
+Vibe coders sometimes even seem to have a major advantage. Their
+unwillingness to read the code makes it possible to work with several agents
+in parallel, producing incredible speedups. However, I am not going to settle the
+questions of viability or quality here.
+
+Instead, I decided to take that instinct somewhere else: to vibe my way into
+a field about which I had very limited knowledge, not burdened by knowledge,
+deep understanding, or preconceptions.
+
+As a developer, this feels less alien to me than it might sound. I have
+spent a lot of time using tools like Codex, refining prompts, and running
+parallel experiments. Large software systems have always exceeded the
+understanding of any one person. We navigate them through interfaces, types,
+tests, logs, debuggers, reproducible builds, and carefully chosen
+experiments. None of these makes a program correct. Together, however, they
+let us ask much better questions than “does this code look convincing?”
 
 I began to wonder whether something similar was possible in mathematics.
 
@@ -56,6 +57,20 @@ territory in the traditional order?
 Or, stated more provocatively: could I vibe-math my way to a genuine
 mathematical frontier?
 
+The real spark was Levent posting the [JC(3) counterexample](https://x.com/__alpoge__/status/2079028340955197566).
+
+That construction changed the question for me. Until then, I had been
+thinking mostly about whether AI could help me navigate unfamiliar
+mathematics. Suddenly there was a concrete mathematical object to inspect:
+a three-variable construction connected to the Jacobian Conjecture, with
+the kind of exact algebraic structure that could be tested, generalized,
+formalized, and attacked from several directions.
+
+It also suggested a sharper experiment. Instead of asking whether AI could
+produce mathematics that looked plausible, I could ask whether an
+AI-assisted process could locate the exact boundary between a theorem and
+its first counterexample.
+
 The experiment was never supposed to be “can AI produce a paper that looks
 like mathematics?” We already know that it can. That is precisely the
 problem. A plausible-looking proof is now almost free, while the time needed
@@ -63,520 +78,249 @@ to find the hidden gap still belongs to a human reader.
 
 The real question was:
 
-> Can AI-assisted exploration produce a result that survives exact
-> computation, independent implementations, formal proof, explicit statement
-> boundaries, and eventually human mathematical review?
+> Can AI-assisted exploration turn a concrete spark into a result that
+> survives exact computation, independent implementations, formal proof,
+> explicit statement boundaries, and eventually human mathematical review?
 
-I now have two papers that I believe give a meaningful partial answer. They
-are not externally refereed yet, and their novelty claims remain open to
-specialist correction. But they have passed a much stronger internal process
-than “the model said it was true.”
+The Generalized Vanishing Conjecture became my test case. The result is a
+sharp boundary: it holds for every constant-coefficient differential
+operator in one or two variables, and it fails from dimension three onward.
 
-This is the story of how I got there.
+This is the story of how Levent's post became a theorem, a counterexample,
+and a collection of receipts.
 
-## Why I started with counterexamples
+## A conjecture with an infinite premise
 
-My first instinct was to search for counterexamples.
-
-This was not accidental. Counterexamples have a useful asymmetry: they can be
-hard to find but easy to challenge. If someone claims that a polynomial map
-has constant Jacobian and sends two distinct points to the same target, I do
-not need to trust the story that produced it. I can differentiate the map,
-expand the determinant, substitute the points, and compare the outputs.
-
-The witness is concrete. It can be attacked from several directions. A
-second computer algebra system can repeat the calculation. A short
-dependency-free script can check the integers. A proof assistant can verify
-the identities from definitions.
-
-That is an unusually good match for the current AI moment. AI can generate
-many candidates, including many bad ones. Exact witnesses let us discard the
-bad candidates without debating whether their explanations sound
-intelligent.
-
-Proofs and constructions are different. A twenty-page argument is not one
-object with one obvious test. Its correctness is spread across definitions,
-quantifiers, genericity assumptions, field extensions, literature
-interfaces, and sentences that may quietly claim more than the lemmas
-support. AI can make such an argument look smooth long before it is sound.
-
-This difference became the central difficulty of the project. Searching for
-a counterexample was the easy-to-check beginning. Moving from a witness to a
-general construction, and from a construction to a precise paper, was much
-harder.
-
-## The seed I did not discover
-
-The starting point was an explicit three-dimensional polynomial Keller map.
-A Keller map is a polynomial map whose Jacobian determinant is a nonzero
-constant. For generations, the Jacobian conjecture asked whether every such
-map in characteristic zero must be polynomially invertible.
-
-In July 2026, Levent Alpöge publicly announced an explicit counterexample,
-crediting Akhil Mathew with suggesting the problem and Fable with producing
-the example. The determinant and collision were subsequently formalized
-independently in Isabelle/HOL by André Ramos, Davi Hulak, and Ruy de
-Queiroz.
-
-- [Alpöge's announcement](https://x.com/__alpoge__/status/2079028340955197566)
-- [Independent Isabelle/HOL formalization](https://isa-afp.org/entries/Jacobian_Counterexample.html)
-- [Terence Tao's explanation of the construction](https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/)
-
-I did not discover that cubic map. My work began with a different question:
-
-> What is this map the first example of?
-
-The original witness was already exact. Its Jacobian and collision could be
-checked directly. I reproduced those calculations, normalized the
-determinant to one, and began changing coefficients and coordinates to see
-which parts of the mechanism survived.
-
-Most changes failed. That was useful. A failed symbolic identity is much
-more informative than an AI explanation of why a construction “should”
-work.
-
-The first real milestone was recognizing that the complicated
-three-variable formula was hiding a one-variable inverse equation.
-
-## Milestone 1: stop staring at the map
-
-The map looked complicated in source coordinates. The inverse problem did
-not.
-
-After changing perspective, a source point could be represented by a marked
-root \(S\) of a scalar equation
+Let \(\Lambda\) be a constant-coefficient differential operator and let
+\(P\) be a polynomial. The Generalized Vanishing Conjecture asks whether
 
 \[
-E_{\Pi,B,C}(S)=0.
+\Lambda^m(P^m)=0\quad\text{for every }m\geq1
 \]
 
-The crucial quantity was its derivative
+forces
 
 \[
-D=\frac{\partial E_{\Pi,B,C}}{\partial S}.
+\Lambda^m(QP^m)=0\quad\text{for all sufficiently large }m
 \]
 
-At first the derivative looked like an auxiliary expression. It turned out
-to be the organizing principle of the construction.
+for every fixed polynomial multiplier \(Q\).
 
-It did two jobs at once:
+The statement grew out of work around the Vanishing Conjecture and the
+Jacobian Conjecture. But what made it especially interesting to me was its
+shape. The premise is an infinite sequence of exact identities, and the
+conclusion is eventual vanishing after inserting any fixed multiplier.
 
-1. \(D\) was the unit needed to reconstruct the original source coordinates
-   from the marked root.
-2. The same \(D\) was the factor that cancelled from the Jacobian
-   calculation.
+This is exactly the kind of statement on which vibe mathing can go wrong.
+A search can verify the first ten powers, or the first hundred, and still
+prove nothing about the next one. An AI can explain why a visible pattern
+“should” continue and bury the missing quantifier inside a polished proof.
 
-That was the moment the example stopped looking like a miraculous cubic
-formula. The inverse equation was the real object. The large polynomial map
-was its pullback into coordinates where the denominators cancelled.
+So the first rule was severe:
 
-This was also the first place where the developer's way of working helped
-me. I did not initially understand the entire geometry. I could still track
-the same quantity through several representations, generate expansions,
-compare identities, and ask which invariant appeared in every successful
-version.
+> A bounded search was never a proof of GVC.
 
-The derivative kept appearing. Eventually I understood why.
+That did not make bounded searches useless. It changed what I allowed them
+to mean.
 
-## Milestone 2: choose the fiber before the map
+## The long route through exact computation
 
-Once the inverse equation was visible, the direction of the problem could be
-reversed.
+I began classifying low-degree cases in two variables. The calculations
+separated operator symbols by root type, exposed exceptional coefficient
+branches, and tracked which weighted faces could survive the first several
+pure identities.
 
-Normally one chooses a polynomial map and then studies its fibers. I asked
-whether I could choose a finite fiber first and build the map around it.
+Again and again, the same patterns appeared. Surviving supports became
+one-sided. Moment ideals developed staircase-shaped radicals. A complicated
+coefficient system would collapse onto a face where a simple weighted
+degree deficit forced every mixed expression to vanish eventually.
 
-Suppose \(P(T)\) is a separable polynomial of degree \(N\). Choose a
-translation \(a\) and form
+Degree by degree, exact calculations closed polynomial degrees four, five,
+six, and seven for arbitrary binary constant-coefficient operators. These
+were real theorems in their stated ranges. They were not a license to draw
+an all-degree curve through four data points.
+
+The attempted general proof grew into a much larger machine: Hall
+matchings, factorial packets, prime-power carries, characters, Graver
+bases, and finite traces. AI was useful here in the same way it is useful in
+an unfamiliar codebase. It could suggest representations, translate between
+formulations, generate experiments, and help turn a failed idea into a
+smaller exact question.
+
+Many pieces of that machine became valid mathematics. The machine as a
+whole did not close the conjecture. One promotion step kept moving away: I
+could understand a packet after it had been isolated, but I could not prove
+that the original infinite vanishing premise always exposed one fixed
+packet in the required way.
+
+This was an important part of the experiment. The repository accumulated
+more positive results without quietly changing the status of the missing
+step. The route was productive, but it remained incomplete.
+
+Then the proof became shorter.
+
+## Two moving Newton faces
+
+Take the symbol of \(\Lambda\) and the support of \(P\). For every positive
+weight
 
 \[
-G(S)=P(a+S)-P(a).
+w_s=(s,1),
 \]
 
-The translated polynomial has a marked root at \(S=0\). Feeding \(G\) into
-the inverse construction makes the distinguished inverse equation become
-the polynomial \(P(a+S)\). A root of \(P\) then determines a source point,
-and the reconstruction sends that source point back to the root.
+look at two faces:
 
-This sounds almost too simple when written afterward. It was not simple to
-make precise.
+- the lowest-weight face of the operator symbol;
+- the highest-weight face of the polynomial.
 
-It is easy to arrange for the desired roots to appear among the points of a
-fiber. That is not enough. I needed to prove all of the following:
+The pure vanishing identity passes to these extremal faces. Hall's marriage
+theorem orders their horizontal Newton intervals just after ordinary
+degree. A separate prime-dilation argument shows that, while the two faces
+have unequal weights, their intervals cannot overlap.
 
-- the displayed formulas are polynomial rather than merely rational;
-- the Jacobian determinant is exactly one;
-- every root reconstructs to a source point;
-- every source point in the fiber comes from a root;
-- this equivalence works over every commutative test algebra, not only over
-  an algebraic closure;
-- the literal fiber scheme is \(\operatorname{Spec} K[T]/(P)\);
-- the actual function-field degree of the map is \(N\);
-- the fiber has rank \(N\), so it contains every generic inverse sheet.
+In two variables, this has a decisive consequence. The projection of each
+face is an interval on a line. Two disjoint intervals cannot exchange order
+without meeting.
 
-That last equality is what I call fullness:
+Now define the lower operator envelope \(L(s)\) and the upper polynomial
+envelope \(U(s)\). Their gap
 
 \[
-\operatorname{rank}_K F^{-1}(y)
-=N
-=\operatorname{gdeg}(F).
+\Delta(s)=U(s)-L(s)
 \]
 
-The distinction matters. A list of \(N\) points is a computation. A natural
-identification of the complete fiber algebra, together with the actual
-generic degree of the map, is a theorem.
+is piecewise linear because both supports are finite. Just after \(s=1\),
+Hall localization puts the operator interval strictly to the right of the
+polynomial interval. Shifted-ray rigidity prevents the intervals from
+overlapping, so they cannot pass one another while \(\Delta(s)>0\).
 
-The resulting statement is:
+The gap cannot stay positive forever. After the last breakpoint its slope
+is forced to be negative, so it must reach zero. At the first meeting, every
+operator monomial lies on or above one common weighted threshold and every
+polynomial monomial lies on or below it. A fixed multiplier contributes
+only a bounded defect; it cannot repair a deficit that grows linearly with
+the power \(m\).
 
-> Over every characteristic-zero field \(K\), every separable polynomial
-> \(P\in K[T]\) of degree \(N\geq 3\) produces a polynomial map
-> \(F_P:\mathbb A^3_K\to\mathbb A^3_K\) with Jacobian determinant one,
-> geometric degree \(N\), and a distinguished full fiber naturally
-> isomorphic to \(\operatorname{Spec} K[T]/(P)\).
+That proves:
 
-Every finite étale algebra over an infinite field is generated by one
-element. In characteristic zero, that turns the polynomial statement into
-the paper's abstract conclusion:
+> Over a characteristic-zero field, every constant-coefficient
+> differential operator in two variables satisfies the Generalized
+> Vanishing Conjecture.
 
-> Every finite étale algebra of rank at least three over a
-> characteristic-zero field occurs as a full fiber of a Jacobian-one
-> polynomial self-map of affine three-space.
+The short proof also explains the staircase radicals from the earlier
+computer algebra. They were not mysterious survivors. They were finite
+shadows of a geometric fact: the moving Newton intervals were forbidden to
+overlap.
 
-This became the first paper.
+Years of imagined mathematical labor had collapsed into following two
+piecewise-linear envelopes until they met.
 
-## Milestone 3: the proof assistant stopped being decoration
+## Then the conjecture broke
 
-At the beginning, my Lean knowledge was basic. I used AI to help translate
-definitions, locate library lemmas, interpret compiler errors, generate
-proof attempts, and reorganize statements when the first formulation was
-too vague to formalize.
+The binary theorem raised the obvious question: was two variables merely
+the first case of a higher-dimensional principle?
 
-This was looped prompting in the most literal sense:
+No.
 
-1. ask for a formal statement;
-2. compile it;
-3. read the error;
-4. reduce the claim;
-5. expose the missing hypothesis;
-6. try again;
-7. independently compare the result with the paper.
-
-Lean did not tell me that the theorem was interesting or new. It did
-something narrower and indispensable: it made it difficult to slide between
-similar-looking statements.
-
-For example, these are not interchangeable:
-
-- exhibiting roots and representing the whole fiber;
-- bounding the inverse polynomial degree and proving the actual
-  function-field degree;
-- choosing a polynomial presentation and choosing one naturally;
-- working in characteristic zero and working in every characteristic other
-  than two;
-- proving an equality over the base field and proving it naturally after
-  scalar extension.
-
-The formalization forced these boundaries into public declarations.
-
-The characteristic-zero polynomial-presentation theorem is now formalized
-end to end in Lean, including the literal natural fiber, finite étaleness,
-rank, the function-field comparison, geometric degree, admissible
-translation, monogenicity, and the abstract finite-étale corollary. The
-publication certificate contains no `sorry`, no `admit`, and no
-project-specific axioms.
-
-The broader supplied-presentation theorem in characteristic different from
-two is proved in the paper but is not yet formalized end to end. The
-rank-two exclusion uses classical results of Campbell, Razar, and Wright and
-also lies outside the Lean certificate.
-
-Those are not footnotes to hide. They are the boundary of what I am asking a
-reader to trust.
-
-## Milestone 4: one arithmetic fiber
-
-The construction can carry arbitrary finite étale arithmetic into a Keller
-fiber. A particularly striking example comes from the classical polynomial
+Put
 
 \[
-(X^3-19)(X^2+X+1).
+\rho=t^2+xy,\qquad A=\rho+x^2,
 \]
-
-It has no rational root, but it has a root over the real numbers and over
-every \(p\)-adic field \(\mathbb Q_p\). The two factors divide the local work
-between them. The cubic supplies roots at one collection of primes; the
-quadratic cyclotomic factor supplies them at the others.
-
-The first paper turns this algebra into a complete degree-five Keller fiber.
-But the map produced by the general construction depends on the polynomial.
-Changing \(19\) to another parameter generally changes the map.
-
-That left a more demanding question:
-
-> Can one fixed polynomial Keller map contain infinitely many complete
-> fibers that are everywhere locally soluble but have no rational point?
-
-This is a small change in quantifiers and a large change in difficulty.
-
-The first theorem says:
 
 \[
-\text{for every fiber algebra, there exists a map.}
+C=y\rho^2-2xt^2\rho-x^3t^2,
+\qquad P=AC^2,
 \]
 
-The new question asks:
+and let
 
 \[
-\text{there exists one map with infinitely many such fiber algebras.}
+\Delta=4\partial_x\partial_y+\partial_t^2,
+\qquad \Lambda=\Delta^6.
 \]
 
-## Milestone 5: finding the line
-
-The natural arithmetic family was
+Then, for every \(m\geq1\),
 
 \[
-f_a(X)=(X^3-a)(X^2+X+1).
+\Lambda^m(P^m)=0,
+\qquad
+\Lambda^m(x^2P^m)\ne0.
 \]
 
-Expanded in \(X\), the parameter \(a\) moves three coefficients:
+The first identity supplies the complete pure premise. The second uses the
+single fixed multiplier \(Q=x^2\) and fails at every power, not merely
+infinitely often. This is a homogeneous counterexample in three variables.
+
+Adding unused variables propagates the same failure to every larger finite
+dimension. Combined with the binary theorem, the exact dimensional
+classification is:
 
 \[
-f_a(X)=X^5+X^4+X^3-aX^2-aX-a.
+\boxed{\operatorname{GVC}(n)\text{ holds if and only if }n\leq2.}
 \]
 
-That did not fit the target pencil I had. Repeated searches for a fixed map
-kept producing formulas that were almost right and geometrically wrong.
+The same boundary already holds when the differential operator is required
+to be homogeneous.
 
-Then came the smallest observation in the project:
+The contrast is sharp. In two variables, Newton faces project to intervals
+and inherit a total order. In three variables, higher-dimensional faces can
+move around one another. The mechanism that makes the binary proof work is
+precisely what disappears at the first failing dimension.
 
-\[
-X=S-\frac12.
-\]
+## From a witness to an all-order Lean theorem
 
-Under this translation,
+The [public Lean development](https://github.com/royvanrijn/jacobian-research/tree/main/formal/gvc)
+is not a small certificate attached to the end of the project. It currently
+contains more than 3,100 lines across sixteen modules and 164 theorem or
+lemma declarations, with no `sorry`, `admit`, or explicit `axiom`
+declarations. We have now checked almost every part of the argument that can
+be cleanly isolated into an algebraic interface.
 
-\[
-X^2+X+1=S^2+\frac34.
-\]
+Most importantly, the three-variable counterexample is formalized end to
+end.
 
-Now the moving part is
+The development does not check a list of sample powers. It defines the
+literal polynomials \(\rho,A,C,P\), the operator \(\Delta\), its sixth
+power \(\Lambda\), and the multiplier \(Q\). It then proves the algebraic
+machinery connecting them:
 
-\[
--a\left(S^2+\frac34\right).
-\]
+- coefficientwise semantics for constant-coefficient differential
+  operators;
+- composition of operator symbols and apolar top contraction;
+- the cusp identity behind the construction;
+- the Reynolds--phase identity by exact coefficient expansion;
+- the endpoint coefficient extraction for every power;
+- the zero pure coefficient and exact nonzero neighboring coefficient;
+- base change from the rationals to every characteristic-zero field;
+- padding from three variables to every larger finite dimension.
 
-Only the quadratic and constant coefficients move. Those are exactly the two
-coefficients controlled by a line in the target of one quadratic-gauge map.
+The resulting Lean theorem is unconditional: GVC fails over every
+characteristic-zero field in every finite dimension at least three.
 
-The isolated example had become a rational target line.
+That is the entire negative half of the dimensional classification, fully
+checked for all powers, fields, and finite dimensions in its stated scope.
+Nothing in the counterexample is left as an assumed computational bridge.
 
-This is the kind of moment I had hoped AI-assisted exploration might make
-possible. No individual computation was deep. The value came from keeping
-many equivalent forms alive, testing them, and noticing which tiny change
-made the coefficient motion match the geometry.
+The formalization goes considerably further. It checks the coefficientwise
+definition of GVC, operator composition, top contraction, the full endpoint
+coefficient ladder, formal beta evaluation, exact factorial valuations,
+Reynolds expansion, Laurent phase extraction, coefficient-ring base change,
+unused-variable padding, the winding--profile--radial degree formulas, and
+the final piecewise-linear envelope crossing used by the positive theorem.
 
-For the resulting fixed determinant-one map \(\Phi\), the targets are
+What remains outside Lean is now concentrated rather than diffuse: the
+global Hall-localization and shifted-ray separation bridge that drives the
+short binary proof, together with its no-reversal and common-threshold
+termination argument. Those steps are proved in the paper. Everything
+around that bridge has been reduced to explicit definitions, exact lemmas,
+or independent degree-four through degree-seven regressions.
 
-\[
-y_a=\left(-1,\frac{32a}{9},\frac{8a+1}{3}\right),
-\]
-
-and the complete fiber is
-
-\[
-\Phi^{-1}(y_a)
-\simeq
-\operatorname{Spec}\mathbb Q[X]/
-\bigl((X^3-a)(X^2+X+1)\bigr).
-\]
-
-## Milestone 6: the prime family was not the real family
-
-At first I concentrated on primes
-
-\[
-a=\ell\equiv 1\pmod 9.
-\]
-
-That already gives infinitely many Hasse failures. But when I rewrote the
-local proof place by place, I discovered that primality was not doing the
-work I had assigned to it.
-
-The actual sufficient conditions are:
-
-\[
-a>1,\qquad
-a\equiv1\pmod9,\qquad
-a\notin\mathbb Q^3,\qquad
-p\mid a\Longrightarrow p\equiv1\pmod3.
-\]
-
-The congruence-and-prime-support core is multiplicatively closed. The
-noncube condition is imposed afterward, because perfect cubes would give a
-rational root. This distinction mattered enough to formalize explicitly:
-the core is a semigroup; the final admissible set is not claimed to be one.
-
-For every admissible \(a\):
-
-- the fiber is reduced, finite étale, and has rank five;
-- it has a real point;
-- it has a point over every \(\mathbb Q_p\);
-- it has no rational point;
-- its primitive projective target coordinates are
-  \([9:-9:32a:24a+3]\);
-- its height is exactly \(32a\);
-- different parameters give different targets.
-
-The first parameter is \(a=19\). The old example did not disappear. It
-became the first visible point on the line.
-
-The multiplicative family is much larger than the prime progression. A
-character-twisted Selberg--Delange argument gives the asymptotic
-
-\[
-\#\{a:H(y_a)\leq B\}
-\sim
-\frac{G_3(1)}{96\sqrt{\pi}}\,
-\frac{B}{\sqrt{\log B}},
-\]
-
-for an explicit positive Euler-product constant \(G_3(1)\).
-
-A bounded dependency-free enumeration through \(a=10^6\) reproduces the
-pinned artifact and finds 26,846 members of the full sufficient family.
-That computation is a regression test, not the proof of the asymptotic.
-
-Finally, the classical low-degree theory of intersective polynomials shows
-that degree five is the first degree in which such a zero-dimensional Hasse
-failure can occur. The fixed map therefore has the smallest possible
-geometric degree.
-
-This became the second paper.
-
-## Milestone 7: formalizing the fixed-map family
-
-The second Lean certificate proves considerably more than a few sample
-values of \(a\).
-
-For every admissible parameter, it verifies:
-
-- the exact displayed fixed map and its determinant-one normalization;
-- the centered inverse factorization;
-- the function-field degree-five calculation;
-- the literal quotient-algebra representation of the fiber;
-- separability, finite étaleness, and rank five;
-- the rational-point obstruction;
-- existence of a real point;
-- existence of a root over every \(\mathbb Q_p\);
-- multiplicative closure of the congruence-and-support core;
-- the prime subfamily;
-- primitive target coordinates, exact height, and target distinctness.
-
-Again, the certificate has no `sorry`, no `admit`, and no project-specific
-axioms.
-
-The Selberg--Delange asymptotic is still an ordinary mathematical proof. So
-is the degree-minimality argument using the Berend--Bilu criterion. I have
-made both interfaces explicit in the paper, but neither should be described
-as Lean-verified.
-
-This is where the difference between finding counterexamples and writing
-papers became impossible to ignore.
-
-The original collision could be checked by differentiating and
-substitution. The two new papers required me to control entire families,
-generic degrees, naturality, base change, local fields, analytic counting,
-external literature, and the exact relationship between formal and informal
-statements. There was no single green test that made all of that true.
-
-The verification had to become layered.
-
-## What “verified” means here
-
-I do not use “verified” as one undifferentiated label.
-
-| Claim layer | How it is checked | What the check does not establish |
-|---|---|---|
-| Foundational cubic determinant and collision | Direct exact calculation; independent Isabelle/HOL formalization | That every later generalization is correct |
-| Generated polynomial identities and explicit examples | SymPy, Sage, Singular, dependency-free Python, and cross-format hash checks | Generic theorems outside the checked identities |
-| Characteristic-zero prescribed-fiber theorem | Isolated Lean publication certificate | Novelty, importance, or the broader characteristic-\(\ne2\) statement |
-| Fixed-map Hasse family, local points, and target height | Isolated Lean publication certificate plus exact audits | Selberg--Delange or degree minimality |
-| Asymptotic count | Written Euler-product and character-twisted Selberg--Delange proof; bounded enumeration as regression | A machine-checked analytic-number-theory proof |
-| Minimal geometric degree | Written reduction to classical intersective-polynomial theory | A new formalization of the external theorem |
-| Novelty | Literature audit and explicit comparison with nearby work | Exhaustive priority or peer review |
-
-The repository also has a machine-readable mathematical status file. It
-distinguishes theorem, conditional result, computation, experiment, and open
-problem. A successful bounded search is not promoted into a theorem.
-
-This sounds administrative. In an AI-assisted project, I think it is part of
-the mathematics.
-
-## What the machines did not prove
-
-Lean did not prove that I chose the most meaningful question.
-
-Singular did not prove that the construction is new.
-
-Passing tests did not prove that my definitions are the definitions the
-community will care about.
-
-An AI-assisted literature search did not prove that I found every relevant
-paper.
-
-Formalizing a statement did not prove that the prose surrounding it is
-incapable of misleading a reader.
-
-And none of these tools can perform the social and mathematical function of
-an expert referee who understands the surrounding field.
-
-The papers therefore disclose the use of generative AI. I used it during
-exploration, symbolic-checker development, proof review, literature search,
-Lean formalization, and manuscript editing. AI-generated suggestions were
-not treated as evidence. References were checked against their original
-sources, and claims were checked through written arguments, exact
-computations, or the Lean declarations identified in the verification
-appendices. I reviewed the manuscripts and take responsibility for them.
-
-That is not a claim that I manually derived every line before allowing a
-machine to touch it. I did not. It is a claim that the route by which an idea
-was generated is separate from the evidence offered for its correctness.
-
-## The receipts
-
-The two papers are available as fixed Zenodo records:
-
-1. [*Over Characteristic Zero, Every Finite Étale Algebra of Rank at Least
-   Three Is a Full Keller Fiber*]({{ZENODO_FIBERS_RECORD_URL}}), DOI
-   `{{ZENODO_FIBERS_DOI}}`.
-2. [*Quantitative Hasse-Principle Failures in the Fibers of a Fixed Keller
-   Map*]({{ZENODO_HASSE_RECORD_URL}}), DOI `{{ZENODO_HASSE_DOI}}`.
-
-The archived code and formalization release is available at
-[{{ZENODO_CODE_RECORD_URL}}]({{ZENODO_CODE_RECORD_URL}}), DOI
-`{{ZENODO_CODE_DOI}}`. The corresponding public repository commit is
-`{{PUBLICATION_COMMIT_SHA}}`.
-
-The narrow reproduction commands are:
-
-```bash
-# Paper I: generated paper/Lean correspondence
-.venv/bin/python scripts/verify_common_arithmetic_fibers_correspondence.py
-
-# Paper II: fixed map and uniform Hasse family
-.venv/bin/python scripts/verify_infinite_hasse_keller_fibers.py
-.venv/bin/python scripts/verify_multiplicative_hasse_artifact.py
-
-# Lean publication certificates
-cd formal/finite-etale-keller
-lake build FiniteEtaleKeller.PaperCertificate
-lake build FiniteEtaleKeller.FixedHassePaperCertificate
-```
-
-The repository contains more exploratory material than these two papers.
-That material has mixed status and should not be read as one enormous claim.
-The two publication certificates and their verification documents are the
-intended narrow entry points.
+This combination matters to me. Exploration found the construction and the
+proof architecture. Exact computation kept killing false branches.
+Formalization then converted the entire negative half of the dimensional
+classification, and much of the positive machinery, into declarations that
+can be checked from definitions.
 
 ## What I think I learned
 
@@ -589,15 +333,21 @@ first.
 I could begin by navigating representations, generating examples, asking AI
 for possible bridges, and trying to falsify every bridge that appeared.
 Exact computation let me reject bad directions. Formalization forced vague
-claims to split into precise ones. Writing the papers forced me to explain
+claims to split into precise ones. Writing the proof forced me to explain
 why the surviving path worked.
 
 My understanding followed the artifacts. It did not precede all of them.
 
 That changes what may be possible for people outside the normal research
-pipeline. It does not abolish expertise. In fact, it makes the remaining
-expert work easier to see. Once calculations and formal statements are
-machine-checkable, the scarce human questions become:
+pipeline. It does not abolish expertise, and I would not say that it makes
+the work easier for them. It creates a new experience: people can begin
+exploring unfamiliar mathematics before they have acquired the usual
+training, but they will also produce a great deal of low-quality material
+that needs to be filtered.
+
+AI may be useful for that first pass, helping rate, sort, and identify which
+artifacts deserve closer human attention. But that is only a pre-check, not
+a substitute for expert judgment. The remaining human questions become:
 
 - Is this the right theorem?
 - Is the interface with the literature correct?
@@ -605,16 +355,16 @@ machine-checkable, the scarce human questions become:
 - Is the ordinary proof outside the formal boundary sound?
 - Has the result already appeared in another language?
 
+
 Those are exactly the questions on which I now want expert criticism.
 
-I began with counterexamples because they were cheap to distrust and easy to
-check. I ended with constructions because the first witness contained more
-structure than I expected. Crossing from one to the other was far harder
-than generating the original candidates, and it required more than prompting:
-it required a growing system of definitions, tests, exact certificates,
-failed searches, formal proofs, literature boundaries, and prose.
+The GVC project forced the process in both directions at once: a general
+positive theorem in two variables and a concrete failure in three. Crossing
+between those modes was far harder than generating plausible candidates. It
+required a growing system of definitions, tests, exact certificates, failed
+searches, formal proofs, literature boundaries, and prose.
 
-I do not know yet how the mathematical community will judge the two results.
+I do not know yet how the mathematical community will judge the result.
 That judgment cannot be automated.
 
 But I do think the experiment has reached the point where the right response
@@ -625,37 +375,19 @@ proof, and try to break it.
 
 The vibes helped find the path. Verification decided which parts survived.
 
----
+## The receipts
 
-## Citation placeholders
+- [Published GVC preprint on Zenodo](https://zenodo.org/records/21782342), DOI [10.5281/zenodo.21782342](https://doi.org/10.5281/zenodo.21782342)
+- [Public Lean proof and formalization](https://github.com/royvanrijn/jacobian-research/tree/main/formal/gvc)
+- [Repository source](../papers/generalized-vanishing-two-variables/main.tex)
+- [Unrestricted binary GVC by Hall-envelope separation](../extended-geometry/BINARY_GVC_ENVELOPE_CLOSURE.md)
+- [Homogeneous three-variable counterexample](../extended-geometry/THREE_VARIABLE_HOMOGENEOUS_GVC_COUNTEREXAMPLE.md)
+- [Lean coverage and build instructions](../formal/gvc/README.md)
+- [Reproduction catalogue](../REPRODUCE.md)
 
-Replace every `{{...}}` token before publication.
+The formal development is pinned to Lean and Mathlib versions recorded in
+the repository. From the repository root, build the GVC verification with:
 
-### Paper I
-
-```text
-Roy van Rijn, "Over Characteristic Zero, Every Finite Étale Algebra of
-Rank at Least Three Is a Full Keller Fiber", Zenodo, 2026.
-DOI: {{ZENODO_FIBERS_DOI}}
-Record: {{ZENODO_FIBERS_RECORD_URL}}
-```
-
-### Paper II
-
-```text
-Roy van Rijn, "Quantitative Hasse-Principle Failures in the Fibers of a
-Fixed Keller Map", Zenodo, 2026.
-DOI: {{ZENODO_HASSE_DOI}}
-Record: {{ZENODO_HASSE_RECORD_URL}}
-```
-
-### Code and formalization archive
-
-```text
-Roy van Rijn, "Jacobian Research: publication certificates for prescribed
-Keller fibers and fixed-map Hasse failures", Zenodo, 2026.
-Version: {{ZENODO_CODE_VERSION}}
-DOI: {{ZENODO_CODE_DOI}}
-Record: {{ZENODO_CODE_RECORD_URL}}
-Commit: {{PUBLICATION_COMMIT_SHA}}
+```bash
+make verify-gvc-lean
 ```
