@@ -101,12 +101,27 @@ has Jacobian one, sends `(0,1)`, `(1,0)`, and `(1,1)` to `(0,1)`, and has
 generic separable degree three.  Hence the separable Jacobian conjecture is
 false on `A^2_k` in characteristic two.
 
+Mondello's external theorem
+[arXiv:2608.02634v1](https://arxiv.org/abs/2608.02634) states this result for
+(k=overline{mathbb F}_2).  The every-field wording above is the separately
+named repository corollary `HKM2-ALLFIELDS`.  Its proof repeats Mondello's
+actual-target irreducibility argument over (k(P,Q)); it uses no perfectness
+hypothesis, and the same proof after constant-field extension preserves exact
+degree three and the three-point geometric generic fibre.
+
 The [characteristic-two audit](../../verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md)
 gives the polynomial skew-product coordinates that extract this map as a
 preserved fiber of the Huq--Kuruvilla threefold, followed by the direct hidden
 cubic, actual-target irreducibility, reconstruction, and separability proof.
 The plane field-degree statement is proved directly rather than inherited
 from the ambient threefold.
+
+The plane reduction, determinant, collision, etaleness, algebraic
+independence, hidden cubic, actual-target irreducibility, exact separable
+degree, geometric generic-fibre bridge, skew-product derivation, and stated
+Lean/replay scope are contained in Mondello.  The arbitrary-field scope,
+finite-normalization boundary, conductor/different/node and (S_3) ledgers,
+and mixed-characteristic/Witt obstructions are repository extensions.
 
 ### Corollary 1.3 — all higher dimensions
 
@@ -115,7 +130,9 @@ give a counterexample on `A^n_k` after identity stabilization.  In
 characteristic two, Corollary 1.2 and identity padding give the same conclusion
 for every `n>=2`.
 
-<!-- status-consumer: HKM2 79acc8c611bf0466 -->
+<!-- status-consumer: HKM2 6891c4426fa9c6ff -->
+
+<!-- status-consumer: HKM2-ALLFIELDS bc2d0e1d0c37827c -->
 
 ## 2. One integral cubic for every characteristic
 
@@ -514,12 +531,13 @@ Huq-Kuruvilla gave the recent characteristic-two degree-three counterexample:
   Separable Jacobian Conjecture*, arXiv:2607.20968,
   <https://arxiv.org/abs/2607.20968>.
 
-Mondello exposed the preserved polynomial coordinate and proved that its plane
-fiber retains exact separable degree three:
+Mondello exposed the preserved polynomial coordinate and proved over
+(k=overline{mathbb F}_2) that its plane fiber retains exact separable
+degree three:
 
 - R. Mondello, *A Dimension-Two Counterexample to the Separable Jacobian
-  Conjecture in Characteristic Two*,
-  <https://integrate-your-mind.github.io/#proof> (2026).
+  Conjecture in Characteristic Two*, arXiv:2608.02634v1,
+  <https://arxiv.org/abs/2608.02634> (2026).
 
 That paper states that, to the author's knowledge, no other counterexample to
 the separable formulation was then known. A dated search on 24 July 2026 for
@@ -561,12 +579,13 @@ The first checker verifies:
 The two irreducibility proofs are structural degree-one-in-a-parameter
 arguments and do not depend on a bounded computer search.
 
-The second checker verifies the characteristic-two threefold audit and the
-preserved plane fiber, including its coordinate changes, determinant,
-collision, hidden cubic, recovery identities, irreducibility coprimality
-certificate, and separability witness.  The public Lean source archive and
-receipts provide a separate formal check, but not independent human peer
-review.
+The second checker internally replays the characteristic-two threefold audit
+and Mondello's preserved plane fiber, including its coordinate changes,
+determinant, collision, hidden cubic, recovery identities, irreducibility
+coprimality certificate, and separability witness.  Mondello's paper records
+a Lean kernel-check and a computationally separate Harmonic Aristotle replay.
+Neither constitutes independent human peer review, and neither verifies the
+repository's normalization, monodromy, or Witt extensions.
 
 ## 8. Recommended manuscript integration
 

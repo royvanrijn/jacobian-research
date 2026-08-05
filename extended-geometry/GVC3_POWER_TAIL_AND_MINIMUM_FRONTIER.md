@@ -389,6 +389,40 @@ should therefore allow independent linear profiles on the two odd pieces,
 then move to multi-profile homogeneous sphere searches in degrees six,
 eight, and ten.
 
+The independent-linear quartic calculation was subsequently closed in
+[`GVC3_INDEPENDENT_PARITY_QUARTIC_OBSTRUCTION.md`](GVC3_INDEPENDENT_PARITY_QUARTIC_OBSTRUCTION.md).
+The later
+[`GVC3_ISOTROPIC_HARMONIC_CHANNEL_OBSTRUCTION.md`](GVC3_ISOTROPIC_HARMONIC_CHANNEL_OBSTRUCTION.md)
+also completes one genuinely equivariant multi-profile architecture: in
+balanced degrees four, six, eight, and ten, one isotropic coherent state in
+each of two or three distinct positive harmonic summands is forced by its
+first nine moments onto a one-direction terminal stratum.  That result uses
+invariant Wick occupation sums and exact saturated elimination.  It does not
+classify noncoherent harmonic vectors, repeated profiles inside one summand,
+or the full harmonic-cubic repair.  The first two remain active targets; the
+last is closed below.
+
+The full harmonic-cubic target has since been closed exactly in
+[`GVC3_HARMONIC_CUBIC_PROFILE_MODULAR_SEARCH.md`](GVC3_HARMONIC_CUBIC_PROFILE_MODULAR_SEARCH.md).
+For \(P=\alpha\rho E_4+H_3O_3\) with arbitrary
+\(H_3\in\mathcal H_3\), three exact characteristic-zero unit ideals exhaust
+the nonzero-\(\alpha\) projective chart through pure moment eight.  On
+\(\alpha=0\), six exact Rabinowitsch certificates leave precisely two
+one-sided terminal harmonic planes, both with all-order multiplier cutoffs.
+This excludes the complete genuine harmonic-cubic repair for \(\Delta^3\).
+
+The unique four-channel coherent profile in balanced degree eight is treated
+next in
+[`GVC3_FOUR_COHERENT_CHANNEL_FRONTIER.md`](GVC3_FOUR_COHERENT_CHANNEL_FRONTIER.md).
+Every coefficient boundary, all thirteen direction-collision partitions,
+and the four-distinct \(B=0\) boundary are excluded exactly.  The remaining
+four-distinct \(B\ne0\) saturated ideal is \([1]\) modulo
+\(101,103,107\) through moment seven, but still lacks a characteristic-zero
+certificate and is not promoted.  Thus exact promotion of that single chart,
+the five four-of-five degree-ten coherent profiles, the degree-ten
+five-channel profile, noncoherent harmonic vectors, and repeated profiles
+remain active.
+
 ## 9. Reproduction
 
 Run

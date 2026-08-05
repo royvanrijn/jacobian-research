@@ -62,27 +62,52 @@ lake build
   characteristic-zero field in every finite dimension `n >= 3`.
 - `ProfileFamily` defines the manuscript's literal
   winding--profile--radial family, proves the degree/order formula
-  `2 * (6r + 3e + h)`, and checks the minimal and radial specializations.
-  It also derives the pure identity, every exact multiplier-ladder scalar,
-  and failure of GVC from a bridge containing only the remaining
-  multivariate phase-extraction equalities and the paper's nonzero-moment
+  `2 * (6r + 3e + h)`, checks the minimal and radial specializations, and
+  isolates the exact phase interface used by the final theorem.
+- `ProfilePhase` constructs that interface under the manuscript's declared
+  degree condition `S.natDegree <= e`.  It proves the literal multivariate
+  quadric restriction, arbitrary even-phase coefficient extraction,
+  coefficientwise height change of variables, endpoint factorization, and
+  shifted primitive identity.  Consequently the pure identity, complete
+  exact multiplier ladder, and GVC failure of Theorem 9.1 are unconditional
+  Lean theorems over `Q`, and coefficient base change proves the family over
+  every characteristic-zero field from precisely the stated nonzero-moment
   hypothesis.
 - `FactorialValuation` proves over the rational `p`-adic valuation both the
   coordinatewise lower bound and the exact prime-block formula in Lemma 3.2,
   combines them into its two-coordinate factorial product, and proves the
   floor-sum estimate used for the non-Frobenius terms in Proposition 4.1.
+- `HallLocalization` proves the finite combinatorial and binary
+  linear-algebra core of Lemma 3.1.  From the exact absence of a matching it
+  invokes Mathlib's Hall theorem, extracts a deficient set, proves that the
+  set lies in one direction class because two nonparallel binary directions
+  see every nonzero linear factor, and obtains the sharp count
+  `d - e + 1` of annihilated polynomial factors.  It also proves the
+  coordinate-free normal forms: the full direction power divides the symbol
+  and the corresponding perpendicular power divides the polynomial.  Its
+  split-factor structure records the actual symbol and polynomial
+  factorizations; the translated
+  Duistermaat--van der Kallen/polarization argument is isolated as the
+  remaining `no_matching` input.
 - `Envelope` checks the intermediate-value step which turns a positive
   continuous envelope gap into a common threshold.  It also proves that the
   strictly negative slope on the final affine envelope pieces supplies the
   required later nonpositive value.
-- `BinaryReduction` states the common-threshold support inequalities and
-  proves the binary theorem from two separately named obligations: envelope
-  closure and common-threshold terminality.
+- `BinaryReduction` formalizes the finite-support content of the
+  common-threshold cutoff (Proposition 5.1).  An integral coordinate cut on
+  the equal faces is refined to one strict positive weight threshold; powers
+  amplify its unit gap past the bounded weight of every fixed multiplier,
+  and coefficientwise support separation makes the differential action
+  zero.  Empty equality faces are handled directly, while an ordering of two
+  nonempty equal faces yields the cut by finite maximization.  The binary
+  theorem is thereby reduced to envelope closure and the `delta = 0`
+  equal-face ordering supplied by the shifted-ray theorem.
 
 There are no `sorry`, `admit`, or explicit `axiom` declarations.
-`verifiedConcreteCounterexampleBridge` constructs the concrete bridge.
-`ProfileFamilyBridge` and `BinaryEnvelopeBridge` remain structures of
-hypotheses for the arguments not yet formalized.
+`verifiedConcreteCounterexampleBridge` and `verifiedProfileFamilyBridge`
+construct the concrete and full-profile bridges.  `BinaryEnvelopeBridge`
+remains the sole structure of hypotheses for the paper's main positive
+theorem.
 
 ## What is not yet verified
 
@@ -93,14 +118,21 @@ load-bearing arguments remain to be formalized:
    of the rational `p`-adic factorial calculation to an unramified
    number-field prime, and the full good-prime shifted-ray separation
    theorem;
-2. binary Hall localization, no-reversal of the moving Newton intervals, and
-   the full common-threshold cutoff;
-3. the multivariate phase bridge for the arbitrary cusp-profile family and
-   the positive half of the final dimension classification.  The
-   counterexample's coefficient base change and unused-variable padding are
-   now checked.
+2. the translated polarization/Duistermaat--van der Kallen implication that
+   rules out a split-factor matching, construction of the split-factor
+   system after scalar extension, and the literal coordinate-change/exact
+   quotient packaging of Lemma 3.1, no-reversal of the moving
+   Newton intervals, global envelope closure, and the equal-face ordering at
+   the first common threshold.  The finite Hall-deficiency and binary
+   direction-localization core of Lemma 3.1 is checked;
+3. the positive `n <= 2` half of the final dimension classification, which
+   depends on the preceding binary theorem.  The arbitrary cusp-profile
+   phase bridge, the counterexample's coefficient base change, and
+   unused-variable padding are now checked.
 
-Theorem 8.1 and the negative `n >= 3` half of Theorem 10.1 are now fully
-Lean-verified.  `MATH_STATUS.json` records `formal_verification: true` for
-the canonical concrete-counterexample entry `GVC3HC`; it remains false for
-the paper's binary, full-profile, and complete-classification entries.
+Theorems 8.1 and 9.1 and the negative `n >= 3` half of Theorem 10.2 are now
+fully Lean-verified.  `MATH_STATUS.json` records `formal_verification: true`
+for the canonical concrete-counterexample entry `GVC3HC`.  The broader
+`GVC3CPS` entry contains additional shifted-power, converse-classification,
+and geometric claims, so its entry remains false; the paper's binary and
+complete-classification entries also remain false.

@@ -1,0 +1,46 @@
+{
+  "bordered_unit_reductions": {
+    "adjugate": "adj(M)=epsilon*v*v^T with epsilon in K^*",
+    "pairing": "grad(A).v=alpha in K^*",
+    "parameter_degree": "deg_s(v)<=1 because deg_s(adj(M))<=3",
+    "piola": [
+      "tr(L(s))=0",
+      "L(s)^2=0",
+      "L(s)*a(s)=0",
+      "rank(L(s))<=1"
+    ]
+  },
+  "format": "hc4-parameter-moving-affine-kernel-pencils-v1",
+  "open_frontier": "primitive kernel generators nonlinear in x",
+  "rank_one_pencil_classification": {
+    "common_covector": {
+      "normal_forms": [
+        "v=(s*z,z,1,0)",
+        "v=(1+s*z,z,0,0)"
+      ],
+      "type_one_hessian_rank": "at most two",
+      "type_one_terminal_potential": {
+        "A": "alpha*r+z*p'(z)*q+h(z)",
+        "B": "r*C(z)+q*C'(z)+p(z)*x+g(z)",
+        "q": "y-z*r"
+      },
+      "type_two": "would require z*D_u(A)=alpha"
+    },
+    "common_image": "collapse to a fixed kernel line",
+    "constant_at_infinity": {
+      "cross_equations": [
+        "b4*G_ww=0",
+        "F_r=(b1-b2*z)*C''+b4*G_wz"
+      ],
+      "kernel": "v0=(z,1,0,0), v1=(b1,b2,0,b4)",
+      "terminal_equation": "b2*alpha+(b1-b2*z)^2*C''=0, incompatible with C''*G_ww nonzero"
+    },
+    "proportional_linear_parts": "collapse to a fixed kernel line"
+  },
+  "result": "no parameter-moving affine-in-x kernel line survives the bordered-unit gate",
+  "status": {
+    "id": "HC4RSD3",
+    "kind": "hybrid theorem",
+    "scope": "scalar singular pencil whose primitive kernel generator is affine in x and arbitrary in the pencil parameter"
+  }
+}

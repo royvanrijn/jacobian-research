@@ -1,0 +1,42 @@
+{
+  "bordered_pairing": {
+    "common_composite": "P=P0(H), Q=Q0(H)",
+    "consequence": "dP wedge dQ=0",
+    "equations": [
+      "P*a_A+Q*b_A=alpha",
+      "a_A*dP+b_A*dQ=0"
+    ]
+  },
+  "complete_kernel_integral": {
+    "integrability": "P*da+Q*db=0",
+    "moving_direction_gate": "P*dQ-Q*dP is nonzero",
+    "potential": "f=x*a(z,w)+y*b(z,w)+G(z,w)"
+  },
+  "format": "hc4-two-component-quasitranslation-kernels-v1",
+  "open_frontier": "fixed kernels with three or four active components, and parameter-moving nonlinear kernels",
+  "piola_active_dependence_gate": {
+    "consequence": "P_x=P_y=Q_x=Q_y=0",
+    "equations": [
+      "2*P*P_x+Q*P_y+P*Q_y=0",
+      "P*Q_x+Q*P_x+2*Q*Q_y=0"
+    ],
+    "terminal_matrix": "[[2,1],[1,2]]",
+    "unimodular_reduction": "P_y=Q_x=0"
+  },
+  "polynomial_frame": {
+    "constant_coordinate_reduction": "kernel becomes (1,L(H),0,0)",
+    "degree_consequence": "projective motion forces T=0",
+    "differential_system": [
+      "row0'=S*row1",
+      "row1'=T*row0"
+    ],
+    "matrix": "[[P0,Q0],[-b_A,a_A]] in GL2(K[H])",
+    "normal_form": "(P0,Q0)=(p0,q0)+L(H)*(-b0,a0)"
+  },
+  "result": "HC4RSD4 gives a triangular polynomial inverse",
+  "status": {
+    "id": "HC4RSD5",
+    "kind": "hybrid theorem",
+    "scope": "fixed primitive kernel v=(P,Q,0,0), with (P,Q) unimodular"
+  }
+}

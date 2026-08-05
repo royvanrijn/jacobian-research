@@ -86,6 +86,212 @@ will still require an explicit scalar operator, telescoping certificates
 including the endpoint terms, its singular-step audit, and enough exact
 initial values.
 
+### 2.1 Quotient the internal gauge first
+
+The factor variables in (2.1) should not be submitted to a moment solver
+with their four-dimensional internal gauge still present.  Let \(I\) be a
+pair of rows with \(\det U_I\ne0\).  Applying (2.1) with
+\(G=U_I^{-1}\) gives the unique representative
+
+\[
+ U'=
+ \begin{pmatrix}
+  1&0\\0&1\\a_{20}&a_{21}\\a_{30}&a_{31}\\a_{40}&a_{41}
+ \end{pmatrix},\qquad
+ B=(U_IV^{\mathsf T}),\qquad C=U'B,                       \tag{2.6}
+\]
+
+after relabelling the pivot rows as \(0,1\).  Thus this quotient chart has
+six \(a\)-coordinates and ten \(b\)-coordinates, exactly
+
+\[
+ 6+10=16=\dim X_{4,2}.                                   \tag{2.7}
+\]
+
+There is no residual internal \(\operatorname {GL}_2\)-gauge.  Exact rank
+two is imposed by localizing at one column minor
+
+\[
+ \Delta_{pq}=b_{0p}b_{1q}-b_{0q}b_{1p}\ne0.              \tag{2.8}
+\]
+
+The ten row-pair charts and ten column-minor opens cover the exact-rank-two
+stratum.  No ambient \(3\times3\) determinantal ideal is needed.  On the
+displayed chart the first moment already has the constant pivot
+
+\[
+\begin{aligned}
+ \mu _1={}&24b_{00}+6b_{11}
+ +4(a_{20}b_{02}+a_{21}b_{12})\\
+ &+6(a_{30}b_{03}+a_{31}b_{13})
+ +24(a_{40}b_{04}+a_{41}b_{14}),                         \tag{2.9}
+\end{aligned}
+\]
+
+so \(b_{00}\) should be eliminated before any higher moment is formed.
+
+The same beta transform treats mixed sequences without changing the
+denominator.  For
+
+\[
+ M_{e,a,b}=\xi _1^a\xi _2^{e-a}z_1^bz_2^{e-b}
+ \qquad(0\le a,b\le e),
+\]
+
+direct coefficient extraction gives
+
+\[
+ \boxed{
+ \frac{\mathcal E_2(M_{e,a,b}F^m)}{(4m+e+1)!}
+ =\operatorname {CT}_u\int_0^1
+ u^{b-a}t^b(1-t)^{e-b}P_{U',B}(u,t)^m\,dt.}              \tag{2.10}
+\]
+
+Hence a low-degree multiplier search changes only the numerator of the
+same relative period.  The checker verifies (2.10) exactly for every
+monomial multiplier of degrees \(e=0,1,2\) and orders \(0\le m\le4\).
+
+### 2.2 An exact-rank-two all-order control family
+
+There is a useful fixed-flag control inside another quotient chart.  Put
+
+\[
+ U=\begin{pmatrix}
+ 0&0\\0&0\\1&0\\0&1\\a_{40}&a_{41}
+ \end{pmatrix},\qquad
+ B=\begin{pmatrix}
+ b_{20}&b_{21}&0&0&0\\
+ b_{30}&b_{31}&b_{32}&0&0
+ \end{pmatrix},                                         \tag{2.11}
+\]
+
+and localize at \(b_{21}b_{32}\ne0\).  The coefficient matrix \(C=UB\)
+then has exact rank two, and every nonzero entry satisfies \(i>j\).  In the
+relative period, the corresponding monomial has \(u\)-degree \(j-i\le-1\).
+Over the function field
+
+\[
+ K=\mathbb Q(a_{40},a_{41},b_{20},b_{21},b_{30},b_{31},b_{32})
+\]
+
+with \(b_{21}b_{32}\) inverted, this proves
+
+\[
+ \nu_m:=\frac{\mu_m}{(4m+1)!},\qquad
+ \operatorname {CT}_u P^m=0\quad(m\ge1),\qquad
+ \boxed{\nu_{m+1}=0\quad(m\ge0).}                        \tag{2.12}
+\]
+
+Thus the scalar recurrence has forward coefficient one and no exceptional
+integer step; its initial condition is \(\mu _1=0\).  The valuation argument
+is stronger here than running a general creative-telescoping reduction.
+
+For the multiplier in (2.10), the numerator has \(u\)-degree at most \(e\).
+Therefore
+
+\[
+ \boxed{
+ \mathcal E_2(M_{e,a,b}F^m)=0\qquad(m>e).}               \tag{2.13}
+\]
+
+The exact searches at \(e=1,2\) do find nonzero low-order mixed values,
+but every sequence terminates at the bound (2.13).  This seven-parameter
+exact-rank-two family is consequently SIC-safe.  It lies in the known
+one-sided nullcone and is a control family, not a semistable component of
+the unresolved rank-two moment fiber.
+
+### 2.3 Exact component exhaustion on two separated rows
+
+A larger two-channel chart can be closed without passing to a recurrence.
+Fix the row pivot \(U=(e_0,e_4)\) and take the dense coefficient support
+
+\[
+ \{0\}\mathbin{\times}\{1,2,3,4\}\ \cup
+ \{4\}\mathbin{\times}\{0,1,2,3\}.                       \tag{2.14}
+\]
+
+The internal \(\operatorname {GL}_2\)-gauge is already gone.  Overall
+scaling and the contraction-preserving diagonal torus have coefficient
+weights \((1,i-j)\).  The anchor weights \((1,-1)\) and \((1,1)\) are
+independent up to a finite isogeny, so over the algebraic closure the
+dense orbit can be normalized by
+
+\[
+ c_{01}=c_{43}=1.                                       \tag{2.15}
+\]
+
+Write the other six coefficients as \(z_0,\ldots,z_5\) in row-major
+order and saturate by \(z_0\cdots z_5\).  In particular
+
+\[
+ \det C_{\{0,4\},\{0,4\}}=-c_{04}c_{40}=-z_2z_3\ne0,    \tag{2.16}
+\]
+
+so this is an exact-rank-two coefficient torus, not a calculation in the
+ambient determinantal ideal.
+
+The exact characteristic-zero moment scheme has the following sharp
+finite-prefix profile:
+
+\[
+ \begin{array}{c|c}
+  \text{equations}&\text{localized scheme over }\mathbb Q\\ \hline
+  \mu_1,\ldots,\mu_7&\text{zero-dimensional of degree }604,\\
+  \mu_1,\ldots,\mu_8&\text{empty (unit ideal).}
+ \end{array}                                             \tag{2.17}
+\]
+
+The first row is a full rational-univariate calculation, not a collection
+of modular specializations.  The second row proves that \(\mu_8\) removes
+every exact component of the seven-moment scheme.  Consequently:
+
+> **Proposition 2.1.** The dense two-separated-row chart (2.14) contains
+> no all-order pure-moment point and hence no rank-two SIC
+> counterexample.
+
+There is therefore no surviving component on which to derive a relative
+period recurrence or search for an infinite mixed tail.
+
+The coordinate boundary is now closed as well.  The eight positions in
+(2.14) have distinct diagonal-torus weights
+\[
+ \{-4,-3,-2,-1,1,2,3,4\}.                              \tag{2.18}
+\]
+Transpose and simultaneous reversal both negate the weights.  There are
+135 proper support orbits under this involution, including the empty
+support.  Their matrix strata are
+\[
+ \begin{array}{c|rrrrr}
+  \text{stratum}&0&\text{one-sided rank one}&
+  \text{mixed rank one}&\text{rank-one/rank-two}&
+  \text{exact rank two}\\ \hline
+  \text{orbit count}&1&15&2&3&114 .
+ \end{array}                                             \tag{2.19}
+\]
+For each of the three coefficient tori containing both ranks, every
+nonzero \(2\times2\) minor chart and the closed all-minors-zero locus are
+localized separately over \(\mathbb Q\).
+
+All 119 mixed proper support orbits have a sharp exact moment cutoff at
+most seven:
+\[
+ \begin{array}{c|rrrrrr}
+  \text{sharp cutoff}&2&3&4&5&6&7\\ \hline
+  \text{orbit count}&56&17&15&8&18&5 .
+ \end{array}                                             \tag{2.20}
+\]
+Sharp means that the preceding localized moment ideal is nonunit and
+adjoining the displayed moment gives the unit ideal over \(\mathbb Q\).
+The remaining proper supports are the zero form or one-sided rank-one
+forms, hence SIC-safe.  Combining (2.17)--(2.20) gives:
+
+> **Corollary 2.2.** Every form supported on the complete
+> two-separated-row coordinate subspace (2.14) is SIC-safe.  Its only
+> all-order pure-moment points are the zero form and one-sided rank-one
+> forms.
+
+Other row-pivot charts are not covered by this corollary.
+
 ## 3. Rank two does not supply a small generic cutoff
 
 For a generic rank-two factor point, the exponent support of (2.2) has
@@ -154,6 +360,11 @@ Run
 
 ```bash
 python3 scripts/verify_two_pair_sic_bidegree44_rank_two_all_order_audit.py
+python3 scripts/verify_two_pair_sic_bidegree44_rank_two_direct_chart.py
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree44_two_row_channel.py
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree44_two_row_boundaries.py
 ```
 
 The dependency-free checker verifies the factor identity (2.3), the
@@ -161,4 +372,10 @@ beta/constant-term identity (2.4) through order four at the displayed
 exact rank-two chart point, the four nonzero values in (1.1), and the
 Newton polygon and normalized volume in (3.1).  The finite replay audits
 why recurrence work is parked; it is not an all-order recurrence
-certificate.
+certificate.  The second checker verifies the gauge quotient (2.6)--(2.9),
+the mixed relative period (2.10), and the all-order pure and mixed
+valuation certificates (2.12)--(2.13).  The last checker constructs the
+degree-\(604\) exact scheme in (2.17) and certifies the eighth-moment unit
+ideal over \(\mathbb Q\).  The boundary checker proves
+(2.18)--(2.20), including the separate rank-one and exact-rank-two
+localizations on the three mixed-rank coefficient tori.

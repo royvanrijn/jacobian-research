@@ -1,0 +1,198 @@
+{
+  "format": "k12-tensor-module-frontier-v1",
+  "status": "exact rational linear-algebra theorem",
+  "K12": {
+    "quadratic_tensor": {
+      "name": "K12 quadratic correction Q",
+      "input_dimension": 12,
+      "output_dimension": 12,
+      "homogeneous_degree": 2,
+      "nonzero_output_count": 11,
+      "total_monomial_count": 22,
+      "output_flattening_rank": 11,
+      "input_directional_flattening_rank": 12,
+      "common_left_kernel_dimension_of_jacobian_coefficients": 1,
+      "common_left_kernel_basis": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "common_right_kernel_dimension_of_jacobian_coefficients": 0,
+      "common_right_kernel_basis": [],
+      "common_column_module_dimension": 11,
+      "common_row_module_dimension": 12,
+      "jacobian_coefficient_matrix_span_dimension": 12,
+      "partially_symmetric_cp_rank_lower_bound": 12
+    },
+    "cubic_tensor": {
+      "name": "K12 cubic correction C",
+      "input_dimension": 12,
+      "output_dimension": 12,
+      "homogeneous_degree": 3,
+      "nonzero_output_count": 6,
+      "total_monomial_count": 26,
+      "output_flattening_rank": 6,
+      "input_directional_flattening_rank": 12,
+      "common_left_kernel_dimension_of_jacobian_coefficients": 6,
+      "common_left_kernel_basis": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "common_right_kernel_dimension_of_jacobian_coefficients": 0,
+      "common_right_kernel_basis": [],
+      "common_column_module_dimension": 6,
+      "common_row_module_dimension": 12,
+      "jacobian_coefficient_matrix_span_dimension": 19,
+      "partially_symmetric_cp_rank_lower_bound": 12
+    },
+    "collision_replayed": true
+  },
+  "G19": {
+    "cubic_tensor": {
+      "name": "G19 cubic homogeneous correction H",
+      "input_dimension": 19,
+      "output_dimension": 19,
+      "homogeneous_degree": 3,
+      "nonzero_output_count": 18,
+      "total_monomial_count": 48,
+      "output_flattening_rank": 18,
+      "input_directional_flattening_rank": 19,
+      "common_left_kernel_dimension_of_jacobian_coefficients": 1,
+      "common_left_kernel_basis": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "common_right_kernel_dimension_of_jacobian_coefficients": 0,
+      "common_right_kernel_basis": [],
+      "common_column_module_dimension": 18,
+      "common_row_module_dimension": 19,
+      "jacobian_coefficient_matrix_span_dimension": 38,
+      "partially_symmetric_cp_rank_lower_bound": 19
+    },
+    "collision_replayed": true,
+    "determinant_certificate": "exact companion cancellation plus E_tau(z)=tau^-1*K12(tau*z); the direct determinant-one K12 certificate is replayed by make verify-macfarlane-f12"
+  },
+  "consequences": {
+    "K12_cubic_tensor_has_no_constant_source_direction": true,
+    "G19_tensor_has_no_constant_source_direction": true,
+    "G19_only_constant_output_annihilator": "the tau output",
+    "linear_tensor_quotient_of_G19_is_obstructed": true,
+    "pure_cube_summand_lower_bounds": {
+      "K12_cubic_tensor": 12,
+      "G19_cubic_tensor": 19
+    }
+  },
+  "scope": "These flattening and common-kernel calculations exclude only constant linear source quotients and give lower bounds for decompositions H=sum u_s*ell_s^3. They do not exclude nonlinear graph coordinates, nonlinear row/column modules, Schur elimination, or a different tensor."
+}

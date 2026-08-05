@@ -71,6 +71,10 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 	verify-hvc38-cross-frontier \
 	verify-hvc38-gap-closure \
 	verify-hvc38-maximal-block-closure \
+	verify-k12-tensor-module-frontier \
+	verify-k12-cubic-graph-bilinear-obstruction \
+	search-k12-schur-cubic-completions \
+	verify-k12-graph-cubic-completion-obstruction \
 	verify-support-saturation-compiler verify-degree42-c6-macaulay \
 	refresh-support-saturation-cases refresh-degree42-c6-macaulay \
 	verify-degree30-hessian-pairs refresh-degree30-hessian-pairs \
@@ -114,6 +118,14 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: verify-factorial-trace-independence-sympy
 .PHONY: verify-projective-gradient-segre verify-hc4-quintic-infinity-rees
 .PHONY: verify-hc4-meng-yang-graphs verify-hc4-meng-yang-quintic
+.PHONY: verify-hc4-reverse-schur verify-hc4-affine-moving-kernel
+.PHONY: verify-hc4-parameter-moving-affine verify-hc4-univariate-shear-kernel
+.PHONY: verify-hc4-two-component-quasitranslation
+.PHONY: verify-hc4-affine-pivot-coverage
+.PHONY: verify-hc4-affine-pivot-collision-fibers
+.PHONY: verify-hc4-quadratic-pivot-rank
+.PHONY: verify-hc4-quadratic-rank-two
+.PHONY: verify-hc4-quadratic-rank-one
 .PHONY: verify-s4-collision-frame-keller
 .PHONY: verify-global-low-degree-census
 
@@ -130,6 +142,36 @@ verify-s4-collision-frame-keller:
 
 verify-hc4-meng-yang-graphs:
 	$(PYTHON) scripts/verify_hc4_meng_yang_graph_obstructions.py
+
+verify-hc4-reverse-schur:
+	$(PYTHON) scripts/verify_hc4_reverse_schur_descent.py
+
+verify-hc4-affine-moving-kernel: verify-hc4-reverse-schur
+	$(PYTHON) scripts/verify_hc4_affine_moving_kernel_pencils.py
+
+verify-hc4-parameter-moving-affine: verify-hc4-affine-moving-kernel
+	$(PYTHON) scripts/verify_hc4_parameter_moving_affine_kernel_pencils.py
+
+verify-hc4-univariate-shear-kernel: verify-hc4-parameter-moving-affine
+	$(PYTHON) scripts/verify_hc4_univariate_shear_kernel_pencils.py
+
+verify-hc4-two-component-quasitranslation: verify-hc4-univariate-shear-kernel
+	$(PYTHON) scripts/verify_hc4_two_component_quasitranslation_kernels.py
+
+verify-hc4-affine-pivot-coverage: verify-hc4-two-component-quasitranslation
+	$(PYTHON) scripts/verify_hc4_affine_pivot_coverage_gate.py
+
+verify-hc4-affine-pivot-collision-fibers: verify-hc4-affine-pivot-coverage
+	$(PYTHON) scripts/verify_hc4_affine_pivot_collision_fibers.py
+
+verify-hc4-quadratic-pivot-rank: verify-hc4-affine-pivot-collision-fibers
+	$(PYTHON) scripts/verify_hc4_quadratic_pivot_rank_obstruction.py
+
+verify-hc4-quadratic-rank-two: verify-hc4-quadratic-pivot-rank
+	$(PYTHON) scripts/verify_hc4_quadratic_rank_two_pivots.py
+
+verify-hc4-quadratic-rank-one: verify-hc4-quadratic-rank-two
+	$(PYTHON) scripts/verify_hc4_quadratic_rank_one_pivots.py
 
 verify-hc4-meng-yang-quintic: verify-hc4-meng-yang-graphs
 	$(PYTHON) scripts/verify_hc4_meng_yang_quintic_graph_normal_slice.py
@@ -213,6 +255,18 @@ verify-hvc38-gap-closure:
 
 verify-hvc38-maximal-block-closure:
 	$(PYTHON) scripts/audit_hvc38_maximal_block_closure.py
+
+verify-k12-tensor-module-frontier:
+	$(PYTHON) scripts/verify_k12_tensor_module_frontier.py
+
+verify-k12-cubic-graph-bilinear-obstruction:
+	$(PYTHON) scripts/verify_k12_cubic_graph_bilinear_obstruction.py
+
+search-k12-schur-cubic-completions:
+	$(PYTHON) scripts/search_k12_schur_cubic_completions.py --support-max 1 --values=-2,-1,1,2 --random-samples 250 --random-seed 20260804 --primes 101,103 --keep-closest 5 --output artifacts/generated-results/k12_schur_cubic_completion_modular_search.json
+
+verify-k12-graph-cubic-completion-obstruction:
+	$(PYTHON) scripts/verify_k12_graph_cubic_completion_obstruction.py
 
 verify-support-saturation-compiler:
 	$(PYTHON) scripts/verify_support_saturation_compiler.py

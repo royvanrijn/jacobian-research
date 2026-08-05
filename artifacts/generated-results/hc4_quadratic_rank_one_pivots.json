@@ -1,0 +1,39 @@
+{
+  "format": "hc4-quadratic-rank-one-pivots-v1",
+  "normal_form": {
+    "A": "x^2/2+w",
+    "B": "x*z+rho*(y+h(x)*w)^2/2+alpha(x)*y+gamma(x)*w+delta(x)",
+    "descendant_hessian_determinant": "-kappa*rho",
+    "parent_hessian_determinant": "rho"
+  },
+  "open_frontier": "higher-degree nonlinear pivots, nonsingular pencil cancellation, and moving matrix pivots",
+  "passive_rank_split": {
+    "parent_leading_face": "a^T*adj(E)*a=0",
+    "pencil_leading_face": "det(E)=0",
+    "rank_two": "produces a reduced-pencil kernel orthogonal to grad(A), so the parent Hessian is singular",
+    "rank_zero": "contradicts generic pencil rank three",
+    "survivor": "rank(E)=1"
+  },
+  "rank_one_frame": {
+    "factorization": "E=rho*ell*ell^T",
+    "motion_equation": "p'*r-r'*p=0",
+    "normalization": "(p,r)=(1,0), b2=x",
+    "parent_determinant": "rho*det(a,d,ell)^2",
+    "unit_consequence": "rho and det(a,d,ell) are constants"
+  },
+  "result": "all quadratic scalar pivots in the singular-pencil programme are collision-free",
+  "status": {
+    "id": "HC4RSD10",
+    "kind": "hybrid theorem",
+    "scope": "rank-one quadratic scalar pivots with an identically singular four-variable Hessian pencil",
+    "structural_input": "rank-one polynomial-Hessian normal form"
+  },
+  "triangular_recovery": [
+    "x=F_z",
+    "Y=(F_y-alpha(x))/rho",
+    "A=(F_w-rho*h(x)*Y-gamma(x)-mu)/kappa",
+    "w=A-x^2/2",
+    "y=Y-h(x)*w",
+    "z=F_x-known_polynomial"
+  ]
+}

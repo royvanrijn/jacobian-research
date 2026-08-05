@@ -1,20 +1,14 @@
-# The Huq--Kuruvilla characteristic-two map and its plane fiber
+# The Huq--Kuruvilla map, Mondello's plane theorem, and repository extensions
 
-This note gives a structural interpretation of Irit Huq-Kuruvilla's
-characteristic-two counterexample to the separable Jacobian conjecture.
-The map, its determinant-one property, its three-point collision, its
-generic inverse cubic, and the rational reconstruction on the generic
-sheet are due to Huq-Kuruvilla:
+This note begins with Irit Huq-Kuruvilla's characteristic-two threefold
+counterexample to the separable Jacobian conjecture.  The threefold map, its
+determinant-one property, its three-point collision, its generic inverse
+cubic, and the rational reconstruction on the generic sheet are due to
+Huq-Kuruvilla:
 
 > I. Huq-Kuruvilla, *An Explicit Characteristic-\(2\) Counterexample to the
 > Separable Jacobian Conjecture*,
 > [arXiv:2607.20968](https://arxiv.org/abs/2607.20968) (2026).
-
-The contribution here begins with the discriminant and continues through
-the projective finite normalization, its boundary valuations and residue
-extension, monodromy, and comparison with the marked-root taxonomy in this
-repository.  In particular, no priority claim is made for the map or for
-the positive-characteristic counterexample.
 
 Romy Mondello subsequently exposed a preserved polynomial coordinate after
 permuting the source and target coordinates.  Its zero fiber is the explicit
@@ -27,13 +21,45 @@ plane map
  \end{aligned}                                      \tag{0.1}
 \]
 
-Mondello's plane formula, hidden cubic, degree-three proof, and formalization
-are recorded in *A Dimension-Two Counterexample to the Separable Jacobian
-Conjecture in Characteristic Two*,
-[project page](https://integrate-your-mind.github.io/#proof) (2026).  Section
-8 below verifies the preserved-fiber derivation and gives a self-contained
-field-degree proof.  Thus the plane theorem is not inferred merely from the
-threefold collision, and no claim of independent human peer review is made.
+The primary source for the plane theorem is:
+
+> R. Mondello, *A Dimension-Two Counterexample to the Separable Jacobian
+> Conjecture in Characteristic Two*,
+> [arXiv:2608.02634v1](https://arxiv.org/abs/2608.02634) (2026).
+
+Mondello proves the theorem over \(k=\overline{\mathbb F}_2\): the displayed
+map has determinant one and is etale; its target coordinates are
+algebraically independent; its function-field extension is separable of
+exact degree three; its geometric generic fibre has three points; and the
+three rational points \((0,1),(1,0),(1,1)\) collide at \((0,1)\).  The paper
+also derives the map as the invariant fibre of a skew-product presentation of
+Huq--Kuruvilla's threefold construction.
+
+The paper's proof architecture includes the hidden variables, recovery
+formulas, actual-target irreducibility argument, and geometric-generic-fibre
+bridge reproduced in Section 8 below.  Its appendix records a Lean kernel
+check and a computationally separate Harmonic Aristotle replay.  Those are
+formal and computational assurance signals; neither constitutes independent
+human peer review, and neither settles novelty, exposition, or the later
+boundary and lifting claims in this repository.
+
+The provenance boundary is therefore sharp:
+
+- **Contained in Mondello:** the plane reduction, determinant one, collision,
+  etaleness, algebraic independence, hidden cubic, actual-target
+  irreducibility, exact separable degree three, geometric generic-fibre
+  interpretation, skew-product derivation, and the stated Lean/replay scope.
+- **Added by this repository:** the arbitrary-characteristic-two base-field
+  corollary in Proposition 8.1; the explicit finite normalization and the
+  distinction between reconstruction boundary and primitive-order conductor;
+  conductor, different, nodal intersections, Frobenius boundary map,
+  \(S_3\) monodromy and wild inertia; and the modulo-four obstruction,
+  stabilized finite-Witt tower, and nonpolynomial inverse-limit phenomenon.
+
+Accordingly `HKM2` is an external theorem with an internal exact replay, not
+a repository theorem.  The threefold normalization in Sections 2--7 and the
+plane extensions following Proposition 8.1 are repository results.  No
+priority claim is made here for either external counterexample.
 
 Throughout, \(k\) is a field of characteristic \(2\).
 
@@ -371,6 +397,19 @@ normalization whose discriminant parameter is its Frobenius square.
 
 ## 8. The preserved coordinate and the dimension-two theorem
 
+### 8.1 Mondello's theorem (external)
+
+Mondello's Theorem 1.2 proves, over \(k=\overline{\mathbb F}_2\), that
+the map (0.1) is etale with determinant one, has algebraically independent
+target coordinates and exact separable function-field degree three, has
+three points in its geometric generic fibre, and sends the three distinct
+points \((0,1),(1,0),(1,1)\) to \((0,1)\).  Section 10 of the paper gives
+the preserved-coordinate skew-product derivation from Huq--Kuruvilla's
+threefold map.  The calculations below are an internal exact replay of that
+external theorem and make the base-field dependence visible.
+
+### 8.2 Preserved-coordinate derivation and hidden cubic
+
 Permute the source and target coordinates of (1.1) by
 
 \[
@@ -423,7 +462,17 @@ The fiber `c=0` is preserved, and its first two coordinates are
 
 After renaming `(a,b)` as `(x,y)`, this is exactly (0.1).  Because the third
 coordinate in (8.4) is unchanged, the threefold determinant is the plane
-determinant on every fiber.  Directly,
+determinant on every fiber.
+
+> **Preserved-coordinate reduction rule.** For every new counterexample,
+> search for a polynomial source coordinate \(c(x)\) whose image is a target
+> coordinate or a linear combination \(L(F)\) of target coordinates.  Run
+> this test alongside grading detection, locally nilpotent derivation
+> searches, tangent-quotient calculations, and finite-normalization analysis.
+
+Here \(L=X+Y\) and \(L(\Phi)=c\), so the rule exposes a genuine
+two-dimensional invariant fibre rather than merely a convenient
+specialization.  Directly,
 
 \[
  \frac{\partial P_2}{\partial x}=1,\quad
@@ -507,13 +556,33 @@ Finally,
 \]
 
 so the extension is separable.  Equations (8.6), (8.7), and (8.11)--(8.12)
-prove:
+also prove the following base-field extension of Mondello's theorem.
 
-> **Characteristic-two plane theorem.** Over every field of characteristic
-> two, (0.1) is an etale polynomial endomorphism of the affine plane with
-> separable generic degree three and an explicit three-point rational
-> collision.  It is therefore a counterexample to the prime-to-characteristic
-> separable Jacobian conjecture already in dimension two.
+> **Proposition 8.1 (`HKM2-ALLFIELDS`, repository corollary).** For every
+> field \(k\) of characteristic two, (0.1) is an etale, noninvertible
+> polynomial endomorphism of \(\mathbb A^2_k\) with separable generic degree
+> three.  Its geometric generic fibre has three points.  After any extension
+> of the constant field, including passage from a nonperfect field to an
+> algebraic closure, the same conclusions hold.
+
+**Proof.** All coefficients lie in \(\mathbb F_2\), and every calculation
+above uses only the characteristic-two identities and the fact that
+\(k[x,y]\) is a domain.  The recovery formulas make \(k(x,y)\) algebraic
+over \(k(P_2,Q_2)\), hence prove algebraic independence of \(P_2,Q_2\).
+The degree-one-in-\(Q_2\) Gauss-lemma argument is valid over
+\(k(P_2)[Q_2]\) for every field \(k\), so it proves irreducibility over the
+actual target field without any perfectness hypothesis.  The nonzero value
+\(H'(w)=ru\) proves separability directly.  Repeating the same
+actual-target argument after an arbitrary constant-field extension keeps
+the degree equal to three; over an algebraic closure of the target function
+field, separability gives exactly three embeddings and therefore three
+geometric-generic-fibre points.  Finally, determinant one gives etaleness,
+and the three rational collision points remain distinct over every such
+field. \(\square\)
+
+The new content of Proposition 8.1 is the base-field scope.  Its formulas
+and proof mechanism are Mondello's; the repository does not claim a second
+discovery of the plane theorem.
 
 This does not address the characteristic-zero plane Jacobian conjecture.  For
 the same formulas over the integers, the Jacobian is
@@ -535,7 +604,7 @@ complete generic ledger `(e,f_sep,f_insep,different,sheet loss)=(1,1,2,1,2)`,
 proves that the three retained/missing intersections are ordinary completed
 nodes, and proves geometric and arithmetic monodromy `S_3`.
 
-<!-- status-consumer: HKM2B1 680ef39ee14ebf10 -->
+<!-- status-consumer: HKM2B1 c197aa4165670dc5 -->
 
 The
 [modulo-four obstruction theorem](HUQ_KURUVILLA_PLANE_W2_OBSTRUCTION.md)
@@ -549,9 +618,48 @@ compatible determinant-one polynomial lift through every finite Witt level.
 Its inverse limit is restricted two-adic, not a polynomial map over
 `Z_2`.
 
-<!-- status-consumer: HKM2W1 23c067e5a7c29ac4 -->
+<!-- status-consumer: HKM2W1 333c767416c0d59f -->
 
-## 9. Exact reproduction
+## 9. Follow-up experiments
+
+Only the first item below is closed.  The others are research tasks, not
+claims supported by the current certificates.
+
+1. **Arbitrary base fields (closed by Proposition 8.1).** Keep the
+   algebraic-independence, actual-target irreducibility, nonperfect-base, and
+   geometric-fibre arguments separate and explicit.
+2. **Independent normalization audit.** Recompute the integral closure of
+   the primitive order, the singular locus, conductor, reconstruction open,
+   two components above \(Q=0\), completed nodes, different, and residue
+   degrees in a second CAS implementation that does not reuse the current
+   elimination order or intermediate formulas.
+3. **Independent \(S_3\) monodromy routes.** Add a discriminant/resolvent
+   calculation and a target-line specialization with explicit Galois group;
+   compare arithmetic and geometric monodromy and identify the
+   characteristic-two wild transposition inertia precisely.
+4. **Cohomological first lifting obstruction.** For
+   \(\mathcal D_F(A,B)=A_xQ_y+P_xB_y+A_yQ_x+P_yB_x\), compute the full
+   cokernel and the class of the integral Jacobian error \(K\); determine
+   whether the \(xy\)-functional is unique and whether the class is
+   invariant under source/target automorphisms and stabilization.
+5. **Left--right equivalence before lifting.** Search affine, triangular,
+   low-degree tame, collision-preserving, and hidden-cubic-preserving
+   representatives; for each, test whether its first-order Jacobian error
+   lies in the image of \(\mathcal D_F\).
+6. **Degree growth in the stabilized Witt tower.** Determine the minimum
+   degree at level \(n\), lower bounds on its growth, possible lower-degree
+   corrections, bounded-support impossibility, and algebraicity of the
+   inverse limit over the restricted power-series ring.
+7. **Odd-characteristic analogues.** Use prescribed hidden-root covers and
+   boundary residue data in characteristics \(3\) and \(5\), initially in
+   generic degrees \(2,3,4\), instead of a random coefficient search.
+8. **Preserved-coordinate detector.** Search degree by degree for a
+   polynomial coordinate \(c(x)\) and a target linear combination \(L\)
+   with \(L(F)=c\), using linear algebra and Groebner reduction; apply it to
+   the foundational, weighted, cancellation, quadratic-gauge, cubic BCW,
+   and positive-characteristic examples.
+
+## 10. Exact reproduction
 
 The accompanying dependency-light SymPy audit checks the threefold map,
 cubic, discriminant, projective collision, normalization-chart identities,

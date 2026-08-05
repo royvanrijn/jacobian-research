@@ -1,6 +1,6 @@
 # Quartic HN Waring rigidity and the first viable ordinary-Laplacian architecture
 
-**Research note — 4 August 2026**
+**Research note — 5 August 2026**
 
 ## Status
 
@@ -12,8 +12,9 @@ The principal conclusions are:
 
 > **There is no essential six-variable quartic HN polynomial of Waring rank
 > at most eight. Every essential rank-nine quartic HN polynomial has a
-> polynomially invertible gradient map. Consequently, every essential
-> six-variable quartic HN counterexample has Waring rank at least ten.**
+> polynomially invertible gradient map, and there is no essential rank-ten
+> quartic HN polynomial. Consequently, every essential six-variable quartic
+> HN counterexample has Waring rank at least eleven.**
 
 The proof has four layers:
 
@@ -22,7 +23,9 @@ The proof has four layers:
 3. a complete one-latitude classification for the rank-nine stratum with one
    relation-free Waring term; and
 4. a complementary-minor/Cauchy--Binet obstruction for the fully supported
-   rank-nine Gale matroid.
+   rank-nine Gale matroid;
+5. exact rank-ten Gale-matroid censuses and realization schemes; and
+6. first-two-trace Witt obstructions on every rank-ten survivor.
 
 The finite calculations are over `QQ` and `QQ(lambda)`, not bounded
 coefficient searches. The rank-nine top-determinant step uses the standard
@@ -1421,14 +1424,14 @@ span rank two, so
 
 contradicting that the Gale matrix has rank four. \(\square\)
 
-### Corollary 9.4 — the sole remaining rank-ten matroid gate
+### Corollary 9.4 — the parallel-class conclusion
 
 In any rank-ten HN candidate:
 
 1. every projective Gale class has multiplicity at most three; and
 2. at most one class has multiplicity three.
 
-The remaining purely combinatorial target is now:
+The natural purely combinatorial target suggested by these bounds was:
 
 > **Rank-ten cyclic-complement lemma.**  Let \(M\) be a characteristic-zero
 > representable rank-four matroid on ten elements.  Assume every cocircuit
@@ -1436,7 +1439,8 @@ The remaining purely combinatorial target is now:
 > possibly one class of size three.  Then \(M\) has a basis whose
 > six-element complement is cyclic.
 
-This lemma would combine with Lemma 8.1 and Propositions 9.2--9.3 to prove:
+If true, this lemma would combine with Lemma 8.1 and Propositions 9.2--9.3
+to prove directly:
 
 \[
  \boxed{
@@ -1446,28 +1450,100 @@ This lemma would combine with Lemma 8.1 and Propositions 9.2--9.3 to prove:
  \tag{9.7}
 \]
 
-Exact reconnaissance supports the lemma:
+That proposed proof is **not valid**: the lemma is false.  The conclusion is
+recovered below by enumerating the survivors and applying the first two
+trace identities.
 
-- every sampled rational configuration under its hypotheses has a
-  cyclic-complement basis;
-- the characteristic-zero configurations without such a basis found by the
-  search have either one class of multiplicity four or two classes of
-  multiplicity three;
-- binary and ternary finite-field exceptions exist, so a proof cannot simply
-  be an unrestricted abstract-matroid statement.
+### Proposition 9.5 — counterexamples to the cyclic-complement lemma
 
-This is the current dead end.  It is a small representable-matroid theorem,
-not a remaining polynomial-system computation.  The HN side of every
-observed exceptional architecture is already closed above.
+The direct sum \(U_{4,6}\oplus U_{0,4}\) satisfies the lemma's literal
+hypotheses and has no cyclic six-element basis complement.  Moreover,
+looplessness does not repair the statement.  Duplicate the first three
+columns of
+
+\[
+ \begin{pmatrix}
+ 1&0&1&0&0&0&1\\
+ 0&1&1&0&0&0&a\\
+ 0&0&0&1&0&1&1\\
+ 0&0&0&0&1&1&b
+ \end{pmatrix},
+ \qquad ab(a-1)(b-1)\ne0.
+ \tag{9.8}
+\]
+
+This gives a loopless rational rank-four matroid on ten elements with three
+parallel pairs, cocircuits of size at least three, and no basis with cyclic
+six-element complement.  Its normalized realization scheme is
+
+\[
+ \operatorname{Spec}\mathbb Q[a,b,(ab(a-1)(b-1))^{-1}].
+ \tag{9.9}
+\]
+
+The rank-oracle check, realization ideals, and a catalogue-relative census
+are given in
+[`QUARTIC_HN_RANK10_MATROID_SURVIVORS.md`](QUARTIC_HN_RANK10_MATROID_SURVIVORS.md).
+
+### Proposition 9.6 — the loopless nonsimple trace slice is empty
+
+Relative to the rank-four catalogues through nine simple points distributed
+by `matroid-database==0.3`, there are 37 loopless nonsimple coloured
+isomorphism types satisfying the failed lemma's constraints.  Two have unit
+normalized realization ideal over \(\mathbb Q\); the other 35 have rational
+realizations.  Every one of those 35 contains a six-element rank-two Gale
+flat.  On its four-dimensional kernel, the six coordinate squares are
+independent, so the first trace kills the Gram diagonal on the flat.  The
+second trace then forces the whole corresponding Gram block to vanish.  Gale
+duality makes at least a four-dimensional Waring subspace totally isotropic,
+contradicting the Witt index three of a nondegenerate quadratic form in six
+variables.
+
+Thus none of these 35 types supports any rank-six Gram matrix satisfying
+the first two HN traces.  This does not enumerate the simple ten-point case
+or establish (9.7).
+
+### Proposition 9.7 — the Gale-loop reduction
+
+The complete catalogue-relative loop slice has 115 abstract coloured types,
+111 of them characteristic-zero realizable.  If there are at least two Gale
+loops, Gale duality splits the Waring spans into complementary subspaces of
+dimensions \(z\) and \(6-z\).  Hessian-determinant factorization and the
+characteristic-zero Hesse theorem in at most four variables close all 66
+such types.  For one loop, the first two traces require a nonzero active
+self-square vector.  A matroidal cyclic-support and half-rank obstruction
+closes 16 more types universally.  Exact realization-open saturations close
+25 further types; a disconnected active Gale matroid splits into summands
+of dimensions \(3,2,1\); and a loop--triple Witt obstruction closes the last
+three types.  Thus all 111 characteristic-zero Gale-loop types are
+impossible.  The census, proof, and exact checks are in
+[`QUARTIC_HN_RANK10_MATROID_SURVIVORS.md`](QUARTIC_HN_RANK10_MATROID_SURVIVORS.md).
+
+### Proposition 9.8 — the simple ten-point trace slice is empty
+
+Exact modular-cut enumeration from the complete rank-four nine-element
+catalogue leaves 23 extension models, comprising five abstract simple
+ten-point matroids.  All five have rational realization points.  Every one
+contains a six-point rank-two Gale flat whose complement has rank two or
+three.  On the four-dimensional value subspace supported on the flat, six
+coordinate squares and all fifteen off-diagonal square-pairs are independent
+throughout the realization open set.  The first two traces therefore make
+the corresponding Gram block zero.  Gale duality makes its Waring span have
+dimension four or five, contradicting Witt index three.
+
+Thus no characteristic-zero simple survivor supports a rank-six Gram matrix
+satisfying even the first two HN traces.  The complete enumeration,
+realization schemes, determinant certificates, and proof are in
+[`QUARTIC_HN_RANK10_MATROID_SURVIVORS.md`](QUARTIC_HN_RANK10_MATROID_SURVIVORS.md).
 
 ---
 
-## 10. The exact search representation after the matroid gate
+## 10. Rank-ten closure after the failed matroid gate
 
-If the cyclic-complement lemma is proved, the first possible Waring rank is
-eleven.  Without it, a rank-ten search should only inspect Gale matroids
-satisfying Corollary 9.4 and failing the determinant gate.  For each such
-\(4\times10\) Gale matrix \(K\), impose
+The failed cyclic-complement lemma does not leave a rank-ten HN component.
+Proposition 9.6 closes the loopless nonsimple slice, Proposition 9.7 closes
+the complete loop slice, and Proposition 9.8 closes the simple slice.  In
+the notation of the prospective trace scheme
 
 \[
  T_j(l)=\operatorname{tr}
@@ -1479,12 +1555,24 @@ satisfying Corollary 9.4 and failing the determinant gate.  For each such
  \tag{10.1}
 \]
 
-on symmetric Gram matrices \(G\) of rank six with \(\ker G\) equal to the
-Gale row space.  The nonradial collision is tested only after the trace
-scheme survives.
+on symmetric rank-six Gram matrices \(G\) with \(\ker G\) equal to the Gale
+row space, every combinatorial branch is already empty for \(j\le2\), or is
+closed by the loop splitting and Witt arguments of Proposition 9.7.  A
+nonzero Gram diagonal was allowed on the simple realization schemes; the
+six-point-flat restriction forces the six diagonal entries needed for the
+obstruction to vanish on every realization.
 
-Thus neither route returns to the generic 126-dimensional quartic
-coefficient space.
+Consequently there is no essential six-variable quartic HN polynomial of
+Waring rank ten.  Together with Theorem 7.9 and Corollary 8.4, this proves
+
+\[
+ \boxed{\text{every essential six-variable quartic HN counterexample has
+ Waring rank at least eleven.}}
+ \tag{10.2}
+\]
+
+No rank-ten component reaches the higher traces or the nonradial collision
+test.
 
 ---
 
@@ -1497,6 +1585,10 @@ Run
 .venv/bin/python scripts/verify_quartic_hn_rank9_one_zero.py
 .venv/bin/python scripts/verify_quartic_hn_rank9_top_determinant.py
 .venv/bin/python scripts/verify_quartic_hn_rank10_parallel_obstructions.py
+.venv/bin/python scripts/verify_quartic_hn_rank10_matroid_survivors.py
+.venv/bin/python scripts/verify_quartic_hn_rank10_loop_survivors.py
+.venv/bin/python scripts/verify_quartic_hn_rank10_loop_closure.py
+.venv/bin/python scripts/verify_quartic_hn_rank10_simple_survivors.py
 ```
 
 Expected final markers:
@@ -1517,11 +1609,43 @@ QUARTIC_HN_WARING_RANK9_TOP_DETERMINANT_GATE_PASS
 QUARTIC_HN_RANK10_CLASS4_BLOCK_FACTOR_PASS
 QUARTIC_HN_RANK10_TWO_TRIPLE_TENSOR_RANK
 QUARTIC_HN_WARING_RANK10_PARALLEL_GATE_PASS
+QHNW10_LITERAL_LOOP_SURVIVOR=U_4_6_PLUS_4_LOOPS
+QHNW10_LITERAL_LOOP_GRAM_SURVIVORS=0
+QHNW10_LOOPLESS_SURVIVOR=M7_19_WEIGHTS_2221111
+QHNW10_SIX_FLAT_DIAGONAL_MINOR
+QHNW10_LOOPLESS_NONSIMPLE_ABSTRACT_SURVIVORS=37
+QHNW10_LOOPLESS_NONSIMPLE_QBAR_SURVIVORS=35
+QHNW10_GRAM_SURVIVORS=0
+QUARTIC_HN_RANK10_MATROID_SURVIVOR_AUDIT_PASS
+QHNW10_LOOP_ABSTRACT_COLOURED_TYPES=115
+QHNW10_LOOP_QBAR_COLOURED_TYPES=111
+QHNW10_LOOP_QBAR_TYPES_UNIVERSALLY_CLOSED=103
+QHNW10_ONE_LOOP_SPECIAL_LOCUS_TYPES=8
+QHNW10_ONE_LOOP_GENERIC_TRACE_SURVIVORS=0
+QUARTIC_HN_RANK10_LOOP_SURVIVOR_AUDIT_PASS
+QHNW10_ONE_LOOP_DISCONNECTED_CLOSED=1
+QHNW10_ONE_LOOP_TRIPLE_WITT_CLOSED=3
+QHNW10_ONE_LOOP_SINGULAR_SATURATION_CLOSED=4
+QHNW10_ONE_LOOP_QBAR_TYPES_UNIVERSALLY_CLOSED=45
+QHNW10_LOOP_QBAR_TYPES_UNIVERSALLY_CLOSED=111
+QHNW10_LOOP_QBAR_TYPES_REMAINING=0
+QUARTIC_HN_RANK10_LOOP_CLOSURE_PASS
+QHNW10_SIMPLE_RESIDUAL_DELETIONS=13
+QHNW10_SIMPLE_LABELLED_EXTENSIONS=23
+QHNW10_SIMPLE_ABSTRACT_SURVIVORS=5
+QHNW10_SIMPLE_QBAR_SURVIVORS=5
+QHNW10_SIMPLE_SIX_POINT_TRACE_CLOSED=5
+QHNW10_SIMPLE_RANK6_GRAM_SURVIVORS=0
+QUARTIC_HN_RANK10_SIMPLE_SURVIVOR_AUDIT_PASS
 ```
 
 The first script prints every exact minor determinant and verifies the
 rank-nine linear normal forms. The second independently replays the finite
-trace coefficients used in Theorem 7.9.
+trace coefficients used in Theorem 7.9.  The nonsimple and loop scripts
+freeze their catalogue slices and verify Propositions 9.6--9.7.  The last
+script freezes the simple census, constructs all five normalized realization
+schemes, and verifies the six-point-flat trace obstruction in Proposition
+9.8.
 
 ---
 
@@ -1535,14 +1659,12 @@ complete structural results:
    polynomial;
 2. every essential rank-nine quartic HN polynomial has a polynomially
    invertible gradient map;
-3. therefore every essential six-variable quartic HN counterexample has
-   Waring rank at least ten.
+3. no essential six-variable quartic HN polynomial has Waring rank ten; and
+4. therefore every essential six-variable quartic HN counterexample has
+   Waring rank at least eleven.
 
-The next theorem-directed problem is precisely the rank-ten
-cyclic-complement lemma in Corollary 9.4.  The determinant gate removes the
-generic Gale matroid, while the HN traces remove every observed
-characteristic-zero obstruction family.  I do not currently have a clean
-proof of the residual matroid statement, and the small-characteristic
-counterexamples show that representability in characteristic zero must be
-used essentially.  This is therefore the current mathematical dead end,
-rather than a computational timeout or an unexamined coefficient boundary.
+The former all-matroid cyclic-complement lemma is false even on the simple
+branch, but every rank-ten survivor is closed by the first two HN traces,
+splitting, Hesse, or a Witt-index obstruction.  The next Waring-directed
+frontier begins at rank eleven; the present work does not enumerate its
+rank-five Gale matroids or construct a noninjective gradient map.

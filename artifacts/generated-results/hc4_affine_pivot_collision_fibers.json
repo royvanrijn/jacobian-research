@@ -1,0 +1,18 @@
+{
+  "collision_consequence": "grad(psi)(p)=grad(psi)(q) and ell.p=ell.q imply p=q",
+  "format": "hc4-affine-pivot-collision-fibers-v1",
+  "hc3_consequence": "the tangential gradient is injective on every affine fiber ell.x=c",
+  "open_frontier": "nonlinear scalar pivots, mixed/coisotropic pivots, and affine representations whose collisions lie on different pivot fibers",
+  "schur_consequence": "an affine zero-corner pivot, singular or nonsingular after reduction, cannot transfer a marked collision at a common pivot value",
+  "slice_identity": {
+    "adapted_covector": "ell=e4",
+    "bordered_determinant": "det([[0,ell^T],[ell,H]])=-N_ell",
+    "coordinate_change": "the slice determinant scales by det(P3)^2",
+    "metric_numerator": "N_ell=det(Hess_(x1,x2,x3)(psi))"
+  },
+  "status": {
+    "id": "HC4RSD7",
+    "kind": "hybrid theorem",
+    "scope": "all affine constant-covector pivots with nonzero constant inverse-Hessian metric numerator"
+  }
+}

@@ -1,0 +1,1074 @@
+{
+  "counts": {
+    "catalogue_keys": 102,
+    "coloured_isomorphism_types_by_loops": {
+      "1": 47,
+      "2": 49,
+      "3": 18,
+      "4": 1
+    },
+    "labelled_survivors_by_loops": {
+      "1": 126,
+      "2": 84,
+      "3": 24,
+      "4": 1
+    },
+    "underlying_simplifications": 66
+  },
+  "records": [
+    {
+      "automorphism_group_order": 48,
+      "catalogue_index": 1,
+      "loops": 1,
+      "rankline": "0**************",
+      "simple_points": 6,
+      "weight_representatives": [
+        "111123"
+      ]
+    },
+    {
+      "automorphism_group_order": 48,
+      "catalogue_index": 3,
+      "loops": 1,
+      "rankline": "0********0****0",
+      "simple_points": 6,
+      "weight_representatives": [
+        "121212"
+      ]
+    },
+    {
+      "automorphism_group_order": 36,
+      "catalogue_index": 4,
+      "loops": 1,
+      "rankline": "00***0*********",
+      "simple_points": 6,
+      "weight_representatives": [
+        "111123"
+      ]
+    },
+    {
+      "automorphism_group_order": 120,
+      "catalogue_index": 10,
+      "loops": 1,
+      "rankline": "00000**********",
+      "simple_points": 6,
+      "weight_representatives": [
+        "111123"
+      ]
+    },
+    {
+      "automorphism_group_order": 12,
+      "catalogue_index": 11,
+      "loops": 1,
+      "rankline": "000000*********",
+      "simple_points": 6,
+      "weight_representatives": [
+        "111123"
+      ]
+    },
+    {
+      "automorphism_group_order": 5040,
+      "catalogue_index": 0,
+      "loops": 1,
+      "rankline": "***********************************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111113"
+      ]
+    },
+    {
+      "automorphism_group_order": 144,
+      "catalogue_index": 1,
+      "loops": 1,
+      "rankline": "0**********************************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111113"
+      ]
+    },
+    {
+      "automorphism_group_order": 72,
+      "catalogue_index": 2,
+      "loops": 1,
+      "rankline": "0******************************0***",
+      "simple_points": 7,
+      "weight_representatives": [
+        "3111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 16,
+      "catalogue_index": 3,
+      "loops": 1,
+      "rankline": "0********0*************************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111113"
+      ]
+    },
+    {
+      "automorphism_group_order": 8,
+      "catalogue_index": 4,
+      "loops": 1,
+      "rankline": "0********0**************0**********",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111311"
+      ]
+    },
+    {
+      "automorphism_group_order": 4,
+      "catalogue_index": 6,
+      "loops": 1,
+      "rankline": "0********0**********0********0*****",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111113"
+      ]
+    },
+    {
+      "automorphism_group_order": 48,
+      "catalogue_index": 8,
+      "loops": 1,
+      "rankline": "0********0****0********************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111113"
+      ]
+    },
+    {
+      "automorphism_group_order": 12,
+      "catalogue_index": 10,
+      "loops": 1,
+      "rankline": "0********0****0*****0********0*****",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111113"
+      ]
+    },
+    {
+      "automorphism_group_order": 144,
+      "catalogue_index": 15,
+      "loops": 1,
+      "rankline": "00***0*********0******************0",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111113",
+        "1131111",
+        "1221111"
+      ]
+    },
+    {
+      "automorphism_group_order": 72,
+      "catalogue_index": 19,
+      "loops": 1,
+      "rankline": "00***0******0000******************0",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111113",
+        "1111131",
+        "1111221"
+      ]
+    },
+    {
+      "automorphism_group_order": 240,
+      "catalogue_index": 23,
+      "loops": 1,
+      "rankline": "00000******************************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111113"
+      ]
+    },
+    {
+      "automorphism_group_order": 48,
+      "catalogue_index": 26,
+      "loops": 1,
+      "rankline": "00000********************00*0**0***",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111113",
+        "1111122",
+        "2111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 24,
+      "catalogue_index": 29,
+      "loops": 1,
+      "rankline": "000000*********0******************0",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111113"
+      ]
+    },
+    {
+      "automorphism_group_order": 12,
+      "catalogue_index": 32,
+      "loops": 1,
+      "rankline": "000000*********0************000***0",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111113",
+        "1111122",
+        "1112112"
+      ]
+    },
+    {
+      "automorphism_group_order": 48,
+      "catalogue_index": 34,
+      "loops": 1,
+      "rankline": "000000*********0*********000******0",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111212"
+      ]
+    },
+    {
+      "automorphism_group_order": 144,
+      "catalogue_index": 54,
+      "loops": 1,
+      "rankline": "000000000******0000************0000",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111122"
+      ]
+    },
+    {
+      "automorphism_group_order": 720,
+      "catalogue_index": 70,
+      "loops": 1,
+      "rankline": "000000000000000********************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111113"
+      ]
+    },
+    {
+      "automorphism_group_order": 72,
+      "catalogue_index": 72,
+      "loops": 1,
+      "rankline": "0000000000000000******************0",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111113"
+      ]
+    },
+    {
+      "automorphism_group_order": 1344,
+      "catalogue_index": 269,
+      "loops": 1,
+      "rankline": "0********0****0*****0**0***00************00***0**0*****0****0********0",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 576,
+      "catalogue_index": 581,
+      "loops": 1,
+      "rankline": "000000000******0000****************0000******************************0",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11121111"
+      ]
+    },
+    {
+      "automorphism_group_order": 144,
+      "catalogue_index": 586,
+      "loops": 1,
+      "rankline": "000000000******0000************0***0000************0*********0***0***0",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11121111",
+        "21111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 144,
+      "catalogue_index": 587,
+      "loops": 1,
+      "rankline": "000000000******0000************00000000******************************0",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11121111"
+      ]
+    },
+    {
+      "automorphism_group_order": 36,
+      "catalogue_index": 588,
+      "loops": 1,
+      "rankline": "000000000******0000************00000000************0*********0***0***0",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11121111",
+        "21111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 1152,
+      "catalogue_index": 589,
+      "loops": 1,
+      "rankline": "000000000******0000************00000000************0000******000000000",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 144,
+      "catalogue_index": 639,
+      "loops": 1,
+      "rankline": "0000000000000000******************00******************0000******0***00",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 1296,
+      "catalogue_index": 186285,
+      "loops": 1,
+      "rankline": "0000000000000000******************00******************0000******0***000******************0000******0***00000******0***00000000",
+      "simple_points": 9,
+      "weight_representatives": [
+        "111111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 144,
+      "catalogue_index": 187398,
+      "loops": 1,
+      "rankline": "0000000000000000******0******0***0*0******0******0***0******0*0**0****0******0******0***0******0*0**0*********0*0**0****000000",
+      "simple_points": 9,
+      "weight_representatives": [
+        "111111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 2880,
+      "catalogue_index": 188841,
+      "loops": 1,
+      "rankline": "0000000000000000000000000**********0000000000*************************0000000000*********************************************0",
+      "simple_points": 9,
+      "weight_representatives": [
+        "111111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 576,
+      "catalogue_index": 188846,
+      "loops": 1,
+      "rankline": "0000000000000000000000000**********0000000000********************0****0000000000********************0**************0****0****0",
+      "simple_points": 9,
+      "weight_representatives": [
+        "111111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 720,
+      "catalogue_index": 188847,
+      "loops": 1,
+      "rankline": "0000000000000000000000000**********0000000000********************000000000000000*********************************************0",
+      "simple_points": 9,
+      "weight_representatives": [
+        "111111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 144,
+      "catalogue_index": 188848,
+      "loops": 1,
+      "rankline": "0000000000000000000000000**********0000000000********************000000000000000********************0**************0****0****0",
+      "simple_points": 9,
+      "weight_representatives": [
+        "111111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 2880,
+      "catalogue_index": 188849,
+      "loops": 1,
+      "rankline": "0000000000000000000000000**********0000000000********************000000000000000********************00000**********00000000000",
+      "simple_points": 9,
+      "weight_representatives": [
+        "111111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 720,
+      "catalogue_index": 0,
+      "loops": 2,
+      "rankline": "***************",
+      "simple_points": 6,
+      "weight_representatives": [
+        "111113"
+      ]
+    },
+    {
+      "automorphism_group_order": 48,
+      "catalogue_index": 1,
+      "loops": 2,
+      "rankline": "0**************",
+      "simple_points": 6,
+      "weight_representatives": [
+        "111113",
+        "111122"
+      ]
+    },
+    {
+      "automorphism_group_order": 36,
+      "catalogue_index": 4,
+      "loops": 2,
+      "rankline": "00***0*********",
+      "simple_points": 6,
+      "weight_representatives": [
+        "111122"
+      ]
+    },
+    {
+      "automorphism_group_order": 120,
+      "catalogue_index": 10,
+      "loops": 2,
+      "rankline": "00000**********",
+      "simple_points": 6,
+      "weight_representatives": [
+        "111113"
+      ]
+    },
+    {
+      "automorphism_group_order": 5040,
+      "catalogue_index": 0,
+      "loops": 2,
+      "rankline": "***********************************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 144,
+      "catalogue_index": 1,
+      "loops": 2,
+      "rankline": "0**********************************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 72,
+      "catalogue_index": 2,
+      "loops": 2,
+      "rankline": "0******************************0***",
+      "simple_points": 7,
+      "weight_representatives": [
+        "2111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 16,
+      "catalogue_index": 3,
+      "loops": 2,
+      "rankline": "0********0*************************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 8,
+      "catalogue_index": 4,
+      "loops": 2,
+      "rankline": "0********0**************0**********",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111211"
+      ]
+    },
+    {
+      "automorphism_group_order": 4,
+      "catalogue_index": 6,
+      "loops": 2,
+      "rankline": "0********0**********0********0*****",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 48,
+      "catalogue_index": 8,
+      "loops": 2,
+      "rankline": "0********0****0********************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 12,
+      "catalogue_index": 10,
+      "loops": 2,
+      "rankline": "0********0****0*****0********0*****",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 144,
+      "catalogue_index": 14,
+      "loops": 2,
+      "rankline": "00***0*********0*******************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 144,
+      "catalogue_index": 15,
+      "loops": 2,
+      "rankline": "00***0*********0******************0",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111112",
+        "1121111"
+      ]
+    },
+    {
+      "automorphism_group_order": 12,
+      "catalogue_index": 16,
+      "loops": 2,
+      "rankline": "00***0******0**0*******************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 72,
+      "catalogue_index": 19,
+      "loops": 2,
+      "rankline": "00***0******0000******************0",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111112",
+        "1111121"
+      ]
+    },
+    {
+      "automorphism_group_order": 240,
+      "catalogue_index": 23,
+      "loops": 2,
+      "rankline": "00000******************************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 48,
+      "catalogue_index": 26,
+      "loops": 2,
+      "rankline": "00000********************00*0**0***",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 24,
+      "catalogue_index": 28,
+      "loops": 2,
+      "rankline": "000000*********0*******************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 24,
+      "catalogue_index": 29,
+      "loops": 2,
+      "rankline": "000000*********0******************0",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 12,
+      "catalogue_index": 32,
+      "loops": 2,
+      "rankline": "000000*********0************000***0",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 16,
+      "catalogue_index": 35,
+      "loops": 2,
+      "rankline": "000000******0**0******0************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 40320,
+      "catalogue_index": 0,
+      "loops": 2,
+      "rankline": "**********************************************************************",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 1152,
+      "catalogue_index": 2,
+      "loops": 2,
+      "rankline": "0********************************************************************0",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 128,
+      "catalogue_index": 8,
+      "loops": 2,
+      "rankline": "0********0**************************************************0********0",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 48,
+      "catalogue_index": 28,
+      "loops": 2,
+      "rankline": "0********0**********0****************************0**********0********0",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 192,
+      "catalogue_index": 101,
+      "loops": 2,
+      "rankline": "0********0**********0*******0************0*******0**********0********0",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 384,
+      "catalogue_index": 111,
+      "loops": 2,
+      "rankline": "0********0****0****************************************0****0********0",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 48,
+      "catalogue_index": 134,
+      "loops": 2,
+      "rankline": "0********0****0*****0****************************0*****0****0********0",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 64,
+      "catalogue_index": 214,
+      "loops": 2,
+      "rankline": "0********0****0*****0**0**********************0**0*****0****0********0",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 192,
+      "catalogue_index": 248,
+      "loops": 2,
+      "rankline": "0********0****0*****0**0***0**************0***0**0*****0****0********0",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 1344,
+      "catalogue_index": 269,
+      "loops": 2,
+      "rankline": "0********0****0*****0**0***00************00***0**0*****0****0********0",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 720,
+      "catalogue_index": 270,
+      "loops": 2,
+      "rankline": "00***0*********0*******************0**********************************",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 144,
+      "catalogue_index": 271,
+      "loops": 2,
+      "rankline": "00***0*********0******************00**********************************",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 144,
+      "catalogue_index": 313,
+      "loops": 2,
+      "rankline": "00***0******0000******************00******************0***************",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 720,
+      "catalogue_index": 324,
+      "loops": 2,
+      "rankline": "00000************************************************************00000",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 72,
+      "catalogue_index": 381,
+      "loops": 2,
+      "rankline": "000000*********0*******************0*****************************00000",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 144,
+      "catalogue_index": 385,
+      "loops": 2,
+      "rankline": "000000*********0******************00******************0*********000000",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 48,
+      "catalogue_index": 470,
+      "loops": 2,
+      "rankline": "000000******0**0******0************0******0**********************0****",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 48,
+      "catalogue_index": 471,
+      "loops": 2,
+      "rankline": "000000******0**0******0************0******0**********************00000",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 48,
+      "catalogue_index": 515,
+      "loops": 2,
+      "rankline": "000000******0**0******0**0000**0**00******0**********************0****",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 576,
+      "catalogue_index": 581,
+      "loops": 2,
+      "rankline": "000000000******0000****************0000******************************0",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 144,
+      "catalogue_index": 586,
+      "loops": 2,
+      "rankline": "000000000******0000************0***0000************0*********0***0***0",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 144,
+      "catalogue_index": 587,
+      "loops": 2,
+      "rankline": "000000000******0000************00000000******************************0",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 36,
+      "catalogue_index": 588,
+      "loops": 2,
+      "rankline": "000000000******0000************00000000************0*********0***0***0",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 1152,
+      "catalogue_index": 589,
+      "loops": 2,
+      "rankline": "000000000******0000************00000000************0000******000000000",
+      "simple_points": 8,
+      "weight_representatives": [
+        "11111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 720,
+      "catalogue_index": 0,
+      "loops": 3,
+      "rankline": "***************",
+      "simple_points": 6,
+      "weight_representatives": [
+        "111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 48,
+      "catalogue_index": 1,
+      "loops": 3,
+      "rankline": "0**************",
+      "simple_points": 6,
+      "weight_representatives": [
+        "111112"
+      ]
+    },
+    {
+      "automorphism_group_order": 5040,
+      "catalogue_index": 0,
+      "loops": 3,
+      "rankline": "***********************************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 144,
+      "catalogue_index": 1,
+      "loops": 3,
+      "rankline": "0**********************************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 72,
+      "catalogue_index": 2,
+      "loops": 3,
+      "rankline": "0******************************0***",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 16,
+      "catalogue_index": 3,
+      "loops": 3,
+      "rankline": "0********0*************************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 8,
+      "catalogue_index": 4,
+      "loops": 3,
+      "rankline": "0********0**************0**********",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 6,
+      "catalogue_index": 5,
+      "loops": 3,
+      "rankline": "0********0**********0**************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 4,
+      "catalogue_index": 6,
+      "loops": 3,
+      "rankline": "0********0**********0********0*****",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 24,
+      "catalogue_index": 7,
+      "loops": 3,
+      "rankline": "0********0**********0*******0******",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 48,
+      "catalogue_index": 8,
+      "loops": 3,
+      "rankline": "0********0****0********************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 6,
+      "catalogue_index": 9,
+      "loops": 3,
+      "rankline": "0********0****0*****0**************",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 12,
+      "catalogue_index": 10,
+      "loops": 3,
+      "rankline": "0********0****0*****0********0*****",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 8,
+      "catalogue_index": 11,
+      "loops": 3,
+      "rankline": "0********0****0*****0**0***********",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 24,
+      "catalogue_index": 12,
+      "loops": 3,
+      "rankline": "0********0****0*****0**0***0*******",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 168,
+      "catalogue_index": 13,
+      "loops": 3,
+      "rankline": "0********0****0*****0**0***00******",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 144,
+      "catalogue_index": 15,
+      "loops": 3,
+      "rankline": "00***0*********0******************0",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 72,
+      "catalogue_index": 19,
+      "loops": 3,
+      "rankline": "00***0******0000******************0",
+      "simple_points": 7,
+      "weight_representatives": [
+        "1111111"
+      ]
+    },
+    {
+      "automorphism_group_order": 720,
+      "catalogue_index": 0,
+      "loops": 4,
+      "rankline": "***************",
+      "simple_points": 6,
+      "weight_representatives": [
+        "111111"
+      ]
+    }
+  ],
+  "schema": "quartic-hn-rank10-loop-survivors-v1",
+  "scope": {
+    "characteristic_zero_representability_imposed": false,
+    "finite_field_representability_imposed": false,
+    "minimum_loops": 1,
+    "rank": 4,
+    "total_elements": 10
+  },
+  "source": {
+    "catalogue_files_sha256": "7c30ea1ef0a8ccf7548e7fbbdb64b636c889fe2185dae59f9a46c6571c6bb006",
+    "catalogue_line_counts": {
+      "4": 1,
+      "5": 5,
+      "6": 23,
+      "7": 108,
+      "8": 940,
+      "9": 190214
+    },
+    "package": "matroid-database==0.3",
+    "source_wheel_sha256": "85d0304575784ceb4797014fb5a761443d2a0bbf01aafc38ef293d2c64a1b5ce"
+  }
+}

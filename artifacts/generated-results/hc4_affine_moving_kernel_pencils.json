@@ -1,0 +1,68 @@
+{
+  "affine_piola_classification": {
+    "consequences": [
+      "tr(L)=0",
+      "L^2=0",
+      "L*a=0"
+    ],
+    "equation": "(L+tr(L)*I)*(a+L*x)=0",
+    "rank_two": "excluded because image(L)=kernel(L) gives a common zero",
+    "unimodular_orbits": [
+      "constant kernel",
+      "v=(z,1,0,0) with rank(L)=1"
+    ]
+  },
+  "bordered_unit_normal_form": {
+    "A": "alpha*y+p(z)*w+q(z)",
+    "B": "y*C(z)+(x-y*z)*C'(z)+gamma*w^2/2+h(z)*w+k(z)",
+    "C": "eta*z^2/2+xi*z+zeta",
+    "descendant_determinant": "-kappa*alpha^2*eta^2*gamma",
+    "gradient_inverse_order": [
+      "z",
+      "S=kappa*A+mu",
+      "w",
+      "y",
+      "x"
+    ],
+    "parent_determinant": "alpha^2*eta^2*gamma",
+    "result": "every descendant is a triangular polynomial automorphism",
+    "units": [
+      "alpha",
+      "eta",
+      "gamma",
+      "kappa"
+    ]
+  },
+  "format": "hc4-affine-moving-kernel-pencils-v1",
+  "integrated_nonconstant_orbit": {
+    "adjugate_scalar": "-C''(z)^2*G_ww(z,w)",
+    "kernel": "v=(z,1,0,0)",
+    "potential": "f=y*C(z)+(x-y*z)*C'(z)+G(z,w)"
+  },
+  "projective_polar_intersection": {
+    "input_live_rows": {
+      "affine_degree_2": 318,
+      "affine_degree_3": 306,
+      "total": 624
+    },
+    "reason": "the explicit polynomial inverse excludes every collision",
+    "surviving_rows": 0
+  },
+  "rational_reconstruction": {
+    "status": "not invoked",
+    "surviving_components": 0
+  },
+  "status": {
+    "id": "HC4RSD2",
+    "kind": "hybrid theorem",
+    "scope": "scalar singular pencil with an affine-in-x, parameter-independent normalized kernel line"
+  },
+  "subsequent_frontier": {
+    "calibration": {
+      "bordered_determinant": "z^2",
+      "kernel": "(-s,1,0,0)"
+    },
+    "nonlinear_fixed_shear": "the transverse family v=(P(z,w),1,0,0) is closed by HC4RSD4",
+    "parameter_moving_affine": "excluded in HC4RSD3; no minimal-index-one affine branch survives"
+  }
+}

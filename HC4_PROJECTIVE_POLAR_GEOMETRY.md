@@ -1354,6 +1354,26 @@ cones at isolated ternary singularities satisfying (11.15)—together with
 the higher-\(X_0\)-torsion failure locus of `HC4PPG9` in codimension two.
 Rank-one synchronization remains behind it.
 
+The affine reverse-Schur intersection is now finite as well. By `HC4RSD6`,
+an affine singular pivot on the open rank-three packet requires the three
+degree-eight components of
+\(w=\operatorname{adj}(C_3)\nabla s_3\) to have a nontrivial constant
+linear relation. Thus the affine-pivot-covered part of the nonsquarefree
+Schur packet is cut out by the 3-by-3 minors of the 3-by-45 coefficient
+matrix of \(w\). This coverage locus should be intersected with (8.6)
+before any lower-face or collision elimination. See
+[`HC4_AFFINE_PIVOT_COVERAGE_GATE.md`](HC4_AFFINE_PIVOT_COVERAGE_GATE.md).
+On the diagonal nonsquarefree top, the intersection is explicit: the Schur
+pair has three diagonal cubic channels and affine coverage forces at least
+one channel to vanish.
+
+For a marked collision, `HC4RSD7` makes the affine coverage intersection
+empty before lower faces: every affine pivot fiber has a ternary
+constant-Hessian restriction, and `HC3` separates its tangential gradient.
+The coefficient-rank locus remains relevant to representation theory, but
+not to inherited affine collision transfer. Direct degree-five exclusion
+and nonlinear or mixed/coisotropic pivots remain live.
+
 ## 13. Reproduction
 
 Run:

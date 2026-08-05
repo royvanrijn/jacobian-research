@@ -265,7 +265,7 @@ def main() -> None:
     assert twice_area == 48
 
     artifact = {
-        "format": "two-pair-sic-bidegree44-rank-two-prerequisite-audit-v2",
+        "format": "two-pair-sic-bidegree44-rank-two-prerequisite-audit-v3",
         "field": "characteristic zero",
         "factor_chart": "C=U*W with U in Mat(5,2), W in Mat(2,5)",
         "displayed_rank_two_point": {
@@ -305,20 +305,24 @@ def main() -> None:
             "one squarefree Rabinowitsch membership remains open"
         ),
         "recurrence_status": (
-            "parked until the rank-one boundary is closed, an explicit "
-            "closed semistable point or component is extracted, and its "
-            "coefficient rank is proved to be exactly two"
+            "parked until an explicit closed semistable point or component "
+            "is extracted directly on an exact-rank-two factor chart"
         ),
         "tail_evaluation_status": (
             "mu_14 is not evaluated without an explicit exact-rank-two "
             "specialization"
         ),
         "mandatory_gate_sequence": [
-            "close the remaining rank-one membership",
-            "extract an explicit closed semistable point or component",
-            "prove exact coefficient rank two",
+            "quotient the internal GL2 gauge on a localized rank-two chart",
+            "extract an exact closed semistable point or prime component",
+            "certify its component or residue function field",
             "derive the specialized recurrence and evaluate mu_14",
         ],
+        "independent_rank_one_boundary_task": (
+            "the remaining squarefree Rabinowitsch membership sharpens the "
+            "finite-prefix Hilbert statement but is not a prerequisite for "
+            "direct exact-rank-two search"
+        ),
         "written_source": (
             "extended-geometry/"
             "TWO_PAIR_SIC_BIDEGREE44_RANK_TWO_ALL_ORDER_AUDIT.md"

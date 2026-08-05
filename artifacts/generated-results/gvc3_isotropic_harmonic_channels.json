@@ -1,0 +1,909 @@
+{
+  "balanced_polynomial_degrees": [
+    4,
+    6,
+    8,
+    10
+  ],
+  "candidate_promotion": "none; every multi-direction prefix survivor is eliminated",
+  "first_nine_moment_conclusion": "within the declared two/three-channel architecture, vanishing of moments 1..9 forces the one-direction terminal stratum",
+  "format": "gvc3-isotropic-harmonic-channels-v1",
+  "harmonic_decomposition": "P=sum_i c_i*rho^((d-ell_i)/2)*<v_i,z>^ell_i",
+  "laplacian_powers": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "modular_discovery_primes": [
+    101,
+    103,
+    107
+  ],
+  "near_survivor": {
+    "H2_multiplier_order_2_numerator_remainder": "8*b",
+    "b_relation": "56*b**2 + 272*b + 85",
+    "c": "-143/60",
+    "degrees": [
+      2,
+      4,
+      6
+    ],
+    "normalization": "a=1",
+    "pure_numerator_remainders_mod_b_relation": {
+      "3": "0",
+      "4": "0",
+      "5": "16*(73454869*b + 33284470)/49"
+    },
+    "status": "pure moments 1..4 vanish and the H2 multiplier channel survives at order 2, but pure moment 5 is nonzero"
+  },
+  "one_direction_terminal_reason": "all active coherent states have one positive phase direction; for a fixed multiplier Q the phase-weight/degree bound kills Delta^(d*m/2)(Q*P^m) for all sufficiently large m",
+  "profile_condition": "each v_i is isotropic and ell_i is positive, even, and distinct",
+  "status": "exact characteristic-zero obstruction in the declared coherent-channel architecture",
+  "three_distinct_directions": [
+    {
+      "degrees": [
+        2,
+        4,
+        6
+      ],
+      "exact_Q_unit_cutoff": 5,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 5,
+        "103": 5,
+        "107": 5
+      },
+      "nonzero_moment_orders_used": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "degrees": [
+        2,
+        4,
+        8
+      ],
+      "exact_Q_unit_cutoff": 5,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 5,
+        "103": 5,
+        "107": 5
+      },
+      "nonzero_moment_orders_used": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "degrees": [
+        2,
+        4,
+        10
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    },
+    {
+      "degrees": [
+        2,
+        6,
+        8
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    },
+    {
+      "degrees": [
+        2,
+        6,
+        10
+      ],
+      "exact_Q_unit_cutoff": 6,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 6,
+        "103": 6,
+        "107": 6
+      },
+      "nonzero_moment_orders_used": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "degrees": [
+        2,
+        8,
+        10
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    },
+    {
+      "degrees": [
+        4,
+        6,
+        8
+      ],
+      "exact_Q_unit_cutoff": 4,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 4,
+        "103": 4,
+        "107": 4
+      },
+      "nonzero_moment_orders_used": [
+        3,
+        4
+      ]
+    },
+    {
+      "degrees": [
+        4,
+        6,
+        10
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    },
+    {
+      "degrees": [
+        4,
+        8,
+        10
+      ],
+      "exact_Q_unit_cutoff": 4,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 4,
+        "103": 4,
+        "107": 4
+      },
+      "nonzero_moment_orders_used": [
+        3,
+        4
+      ]
+    },
+    {
+      "degrees": [
+        6,
+        8,
+        10
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    }
+  ],
+  "two_channel_first_returns": {
+    "2,10": {
+      "first_return_order": 6,
+      "left_count": 5,
+      "right_count": 1
+    },
+    "2,4": {
+      "first_return_order": 3,
+      "left_count": 2,
+      "right_count": 1
+    },
+    "2,6": {
+      "first_return_order": 4,
+      "left_count": 3,
+      "right_count": 1
+    },
+    "2,8": {
+      "first_return_order": 5,
+      "left_count": 4,
+      "right_count": 1
+    },
+    "4,10": {
+      "first_return_order": 7,
+      "left_count": 5,
+      "right_count": 2
+    },
+    "4,6": {
+      "first_return_order": 5,
+      "left_count": 3,
+      "right_count": 2
+    },
+    "4,8": {
+      "first_return_order": 3,
+      "left_count": 2,
+      "right_count": 1
+    },
+    "6,10": {
+      "first_return_order": 8,
+      "left_count": 5,
+      "right_count": 3
+    },
+    "6,8": {
+      "first_return_order": 7,
+      "left_count": 4,
+      "right_count": 3
+    },
+    "8,10": {
+      "first_return_order": 9,
+      "left_count": 5,
+      "right_count": 4
+    }
+  },
+  "two_distinct_directions": [
+    {
+      "coincident_channel_indices": [
+        0,
+        1
+      ],
+      "degrees": [
+        2,
+        4,
+        6
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        2
+      ],
+      "degrees": [
+        2,
+        4,
+        6
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        1,
+        2
+      ],
+      "degrees": [
+        2,
+        4,
+        6
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        1
+      ],
+      "degrees": [
+        2,
+        4,
+        8
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        2
+      ],
+      "degrees": [
+        2,
+        4,
+        8
+      ],
+      "exact_Q_unit_cutoff": 6,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 6,
+        "103": 6,
+        "107": 6
+      },
+      "nonzero_moment_orders_used": [
+        3,
+        6
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        1,
+        2
+      ],
+      "degrees": [
+        2,
+        4,
+        8
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        1
+      ],
+      "degrees": [
+        2,
+        4,
+        10
+      ],
+      "exact_Q_unit_cutoff": 4,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 4,
+        "103": 4,
+        "107": 4
+      },
+      "nonzero_moment_orders_used": [
+        4
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        2
+      ],
+      "degrees": [
+        2,
+        4,
+        10
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        1,
+        2
+      ],
+      "degrees": [
+        2,
+        4,
+        10
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        1
+      ],
+      "degrees": [
+        2,
+        6,
+        8
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        2
+      ],
+      "degrees": [
+        2,
+        6,
+        8
+      ],
+      "exact_Q_unit_cutoff": 4,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 4,
+        "103": 4,
+        "107": 4
+      },
+      "nonzero_moment_orders_used": [
+        4
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        1,
+        2
+      ],
+      "degrees": [
+        2,
+        6,
+        8
+      ],
+      "exact_Q_unit_cutoff": 4,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 4,
+        "103": 4,
+        "107": 4
+      },
+      "nonzero_moment_orders_used": [
+        4
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        1
+      ],
+      "degrees": [
+        2,
+        6,
+        10
+      ],
+      "exact_Q_unit_cutoff": 4,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 4,
+        "103": 4,
+        "107": 4
+      },
+      "nonzero_moment_orders_used": [
+        4
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        2
+      ],
+      "degrees": [
+        2,
+        6,
+        10
+      ],
+      "exact_Q_unit_cutoff": 8,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 8,
+        "103": 8,
+        "107": 8
+      },
+      "nonzero_moment_orders_used": [
+        4,
+        8
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        1,
+        2
+      ],
+      "degrees": [
+        2,
+        6,
+        10
+      ],
+      "exact_Q_unit_cutoff": 4,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 4,
+        "103": 4,
+        "107": 4
+      },
+      "nonzero_moment_orders_used": [
+        4
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        1
+      ],
+      "degrees": [
+        2,
+        8,
+        10
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        2
+      ],
+      "degrees": [
+        2,
+        8,
+        10
+      ],
+      "exact_Q_unit_cutoff": 5,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 5,
+        "103": 5,
+        "107": 5
+      },
+      "nonzero_moment_orders_used": [
+        5
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        1,
+        2
+      ],
+      "degrees": [
+        2,
+        8,
+        10
+      ],
+      "exact_Q_unit_cutoff": 5,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 5,
+        "103": 5,
+        "107": 5
+      },
+      "nonzero_moment_orders_used": [
+        5
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        1
+      ],
+      "degrees": [
+        4,
+        6,
+        8
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        2
+      ],
+      "degrees": [
+        4,
+        6,
+        8
+      ],
+      "exact_Q_unit_cutoff": 4,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 4,
+        "103": 4,
+        "107": 4
+      },
+      "nonzero_moment_orders_used": [
+        4
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        1,
+        2
+      ],
+      "degrees": [
+        4,
+        6,
+        8
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        1
+      ],
+      "degrees": [
+        4,
+        6,
+        10
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        2
+      ],
+      "degrees": [
+        4,
+        6,
+        10
+      ],
+      "exact_Q_unit_cutoff": 5,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 5,
+        "103": 5,
+        "107": 5
+      },
+      "nonzero_moment_orders_used": [
+        5
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        1,
+        2
+      ],
+      "degrees": [
+        4,
+        6,
+        10
+      ],
+      "exact_Q_unit_cutoff": 5,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 5,
+        "103": 5,
+        "107": 5
+      },
+      "nonzero_moment_orders_used": [
+        5
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        1
+      ],
+      "degrees": [
+        4,
+        8,
+        10
+      ],
+      "exact_Q_unit_cutoff": 5,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 5,
+        "103": 5,
+        "107": 5
+      },
+      "nonzero_moment_orders_used": [
+        5
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        2
+      ],
+      "degrees": [
+        4,
+        8,
+        10
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        1,
+        2
+      ],
+      "degrees": [
+        4,
+        8,
+        10
+      ],
+      "exact_Q_unit_cutoff": 3,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 3,
+        "103": 3,
+        "107": 3
+      },
+      "nonzero_moment_orders_used": [
+        3
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        1
+      ],
+      "degrees": [
+        6,
+        8,
+        10
+      ],
+      "exact_Q_unit_cutoff": 5,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 5,
+        "103": 5,
+        "107": 5
+      },
+      "nonzero_moment_orders_used": [
+        5
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        0,
+        2
+      ],
+      "degrees": [
+        6,
+        8,
+        10
+      ],
+      "exact_Q_unit_cutoff": 4,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 4,
+        "103": 4,
+        "107": 4
+      },
+      "nonzero_moment_orders_used": [
+        4
+      ]
+    },
+    {
+      "coincident_channel_indices": [
+        1,
+        2
+      ],
+      "degrees": [
+        6,
+        8,
+        10
+      ],
+      "exact_Q_unit_cutoff": 5,
+      "exact_basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "modular_unit_cutoffs": {
+        "101": 5,
+        "103": 5,
+        "107": 5
+      },
+      "nonzero_moment_orders_used": [
+        5
+      ]
+    }
+  ]
+}

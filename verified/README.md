@@ -7,14 +7,17 @@ This directory contains the stable proof chain:
   independent sparse determinant replay, and its 19-variable
   cubic-homogeneous parent;
 - [Foundational Keller map](FOUNDATIONAL_GEOMETRY.md): exact determinant and collision;
-- [Characteristic-two threefold and preserved plane fiber](HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md):
-  the Huq--Kuruvilla wild-radicial normalization, Mondello's polynomial
-  skew-product coordinates, and the resulting determinant-one noninjective
-  plane map of exact separable generic degree three;
+- [Characteristic-two threefold, Mondello plane theorem, and field extension](HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md):
+  the repository's Huq--Kuruvilla wild-radicial normalization; Mondello's
+  external arXiv:2608.02634v1 plane theorem, hidden cubic, actual-target
+  irreducibility proof, and polynomial skew-product coordinates; and the
+  separately named repository corollary extending the theorem from
+  `algebraicClosure(F_2)` to every characteristic-two field;
 - [Characteristic-two plane normalization and wild boundary](HUQ_KURUVILLA_PLANE_BOUNDARY_NORMALIZATION.md):
   the finite normalization, primitive-order conductor, unique missing
   Frobenius line, complete generic boundary ledger, and `S_3` monodromy of
-  the plane map;
+  the plane map; this is a repository theorem whose independent second
+  normalization implementation remains open;
 - [Characteristic-two plane modulo-four obstruction](HUQ_KURUVILLA_PLANE_W2_OBSTRUCTION.md):
   an all-degree one-coefficient proof that the exact plane map has no
   constant-Jacobian lift over `Z/4`, hence no compatible higher Witt or

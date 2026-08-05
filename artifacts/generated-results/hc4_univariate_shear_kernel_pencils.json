@@ -1,0 +1,43 @@
+{
+  "bordered_unit_normal_form": {
+    "A": "alpha*y+p(z)*w+q(z)",
+    "B": "x*(eta*z+xi)+y*(beta-eta*Integral(P dz))+gamma*w^2/2+h(z)*w+k(z)",
+    "descendant_determinant": "-kappa*alpha^2*eta^2*gamma",
+    "gradient_inverse_order": [
+      "z",
+      "S=kappa*A+mu",
+      "w",
+      "y",
+      "x"
+    ],
+    "parent_determinant": "alpha^2*eta^2*gamma",
+    "units": [
+      "alpha",
+      "eta",
+      "gamma",
+      "kappa"
+    ]
+  },
+  "complete_kernel_integral": {
+    "adjugate_scalar": "-a'(z)^2*G_ww(z,w)",
+    "integrability": "b'(z)=-P(z)*a'(z)",
+    "kernel": "v=(P(z),1,0,0)",
+    "potential": "f=x*a(z)+y*b(z)+G(z,w)"
+  },
+  "format": "hc4-univariate-shear-kernel-pencils-v1",
+  "open_frontier": "more general polynomial quasi-translation kernels and parameter-moving nonlinear kernels",
+  "result": "every descendant is a triangular polynomial automorphism",
+  "status": {
+    "id": "HC4RSD4",
+    "kind": "hybrid theorem",
+    "scope": "scalar singular pencil with fixed normalized kernel v=(P(z,w),1,0,0), P nonconstant"
+  },
+  "transverse_reduction": {
+    "common_composite": "P=P0(H), a=a0(H), b=b0(H)",
+    "complete_potential": "f=x*a(z,w)+y*b(z,w)+G(z,w)",
+    "curvature_numerator": "H_z^2*H_ww-2*H_z*H_w*H_zw+H_w^2*H_zz",
+    "integrability": "db=-P*da, hence dP wedge da=0",
+    "straight_level_result": "H is a polynomial in one linear form",
+    "unit_consequence": "the curvature numerator vanishes"
+  }
+}

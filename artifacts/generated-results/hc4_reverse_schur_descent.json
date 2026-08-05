@@ -1,0 +1,73 @@
+{
+  "calibrations": {
+    "common_kernel": {
+      "adjugate_scalar": -1,
+      "bordered_determinant": 1,
+      "descendant_determinant": "-kappa",
+      "pencil_rank": 3
+    },
+    "matrix_pivot": {
+      "parent_determinant": 1,
+      "pivot_rank": 2,
+      "reduced_pencil_corank": 2
+    },
+    "moving_kernel_rejection": {
+      "adjugate_scalar": -1,
+      "bordered_determinant": "x3^2",
+      "kernel": "(-s,1,0,0)",
+      "kernel_gradient_pairing": "x3"
+    }
+  },
+  "equation_builder": {
+    "matrix_pivot": [
+      "prescribed-corank pencil minors",
+      "exact simultaneous Schur identity"
+    ],
+    "scalar": [
+      "singular pencil coefficients",
+      "constant parent determinant coefficients",
+      "exact reduced collision equations",
+      "Hessian integrability residuals"
+    ]
+  },
+  "exact_scalar_classification": {
+    "border_unit_equation": "c=-q*(v^T*grad(A))^2",
+    "collision_fiber": "grad_u(b+s0*a) with s0=kappa*A+mu fixed",
+    "consequence": "q and v^T*grad(A) are units over Q(s)[x], forcing a common constant kernel direction for Hess(A) and Hess(B)",
+    "corank_at_least_two": "bordered determinant identically zero",
+    "corank_one_adjugate": "adj(M)=q*v*v^T",
+    "generic_pencil_corank": 1,
+    "normal_form": "A=alpha*z+a(u), B=beta*z+b(u), alpha!=0",
+    "result": "HC3 makes every reduced gradient fiber a singleton",
+    "ternary_pencil_determinant": "det Hess_u(b+s*a)=-c/alpha^2"
+  },
+  "format": "hc4-reverse-schur-descent-v1",
+  "open_frontier": {
+    "matrix_pivot": "classify nonconstant jointly moving kernel planes for r>=2; the implemented minor and Schur equations do not prove this classification",
+    "moving_kernel_scalar_pencil": "classify nonhomogeneous singular Hessian pencils whose generic kernel direction depends on x",
+    "nonsingular_scalar_pencil": "allow cancellation between lambda*det(M) and the bordered term"
+  },
+  "projective_polar_intersection": {
+    "input_live_quintic_rows": {
+      "affine_degree_2": 318,
+      "affine_degree_3": 306,
+      "total": 624
+    },
+    "reason": "injectivity excludes every collision-normalized packet",
+    "scalar_cone_reverse_schur_rows": {
+      "affine_degree_2": 0,
+      "affine_degree_3": 0,
+      "total": 0
+    }
+  },
+  "rational_reconstruction": {
+    "status": "not invoked because the exact cone-stratum intersection is empty",
+    "surviving_scalar_cone_components": 0
+  },
+  "status": {
+    "external_input": "Gordan--Noether supplies the x-constant kernel for homogeneous four-variable pencil members; the general polynomial moving-kernel case is not claimed",
+    "id": "HC4RSD1",
+    "kind": "hybrid theorem",
+    "scope": "scalar pivot with identically singular four-variable Hessian pencil and x-constant generic kernel line"
+  }
+}

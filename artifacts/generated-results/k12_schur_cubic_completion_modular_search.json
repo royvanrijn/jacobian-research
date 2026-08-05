@@ -1,0 +1,4568 @@
+{
+  "format": "k12-schur-cubic-completion-modular-search-v1",
+  "status": "bounded finite-field discovery experiment; not a proof",
+  "primes": [
+    101,
+    103
+  ],
+  "source_pivots": [
+    4,
+    9,
+    10,
+    11,
+    12
+  ],
+  "support_maximum": 1,
+  "nonzero_integer_values": [
+    -2,
+    -1,
+    1,
+    2
+  ],
+  "random_samples_per_parameter_count": 250,
+  "random_seed": 20260804,
+  "desired_source_degree": 3,
+  "target_completion_degree": 3,
+  "target_completion_basis": "all 10 linear, 55 quadratic, and 220 cubic monomials in the other retained raw outputs",
+  "schur_strategy": "build the exact-theorem bilinear column space first, then add cubic columns in its finite-field quotient",
+  "total_modular_point_evaluations": 2902,
+  "families": [
+    {
+      "source_pivot": 4,
+      "parameter_count": 9,
+      "normalized_linear_target_coefficients": [
+        "tau0",
+        "tau1",
+        "0",
+        "1",
+        "tau2",
+        "tau3",
+        "tau4",
+        "tau5",
+        "tau6",
+        "0",
+        "tau7",
+        "tau8"
+      ],
+      "selected_retained_component": 2,
+      "point_count_per_prime": 287,
+      "prime_records": [
+        {
+          "prime": 101,
+          "point_count": 287,
+          "genuinely_cubic_graph_count": 287,
+          "selected_component_rank_signatures": [
+            {
+              "bilinear_rank": 56,
+              "cubic_quotient_rank": 220,
+              "augmented_rank_increment": 1,
+              "point_count": 287
+            }
+          ],
+          "survivor_count": 0,
+          "survivors": [],
+          "closest_cubic_graph_points": [
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 2,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2,
+                8
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 1,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 56,
+                  "bilinear_residual_term_count": 7,
+                  "bilinear_residual_leading_monomial": [
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 276,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    2,
+                    2,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                2,
+                2
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                -2,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                99,
+                0,
+                0,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 4,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2,
+                8
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 7,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 1,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 56,
+                  "bilinear_residual_term_count": 9,
+                  "bilinear_residual_leading_monomial": [
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 276,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    2,
+                    2,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                2,
+                4
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                100,
+                0,
+                0,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 4,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2,
+                8
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 7,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 1,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 56,
+                  "bilinear_residual_term_count": 9,
+                  "bilinear_residual_leading_monomial": [
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 276,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    2,
+                    2,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                2,
+                4
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -2,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                99,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 4,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2,
+                8
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 7,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 1,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 56,
+                  "bilinear_residual_term_count": 10,
+                  "bilinear_residual_leading_monomial": [
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 276,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    2,
+                    2,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                2,
+                4
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 4,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2,
+                8
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 7,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 1,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 56,
+                  "bilinear_residual_term_count": 10,
+                  "bilinear_residual_leading_monomial": [
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 276,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    2,
+                    2,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                2,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "prime": 103,
+          "point_count": 287,
+          "genuinely_cubic_graph_count": 287,
+          "selected_component_rank_signatures": [
+            {
+              "bilinear_rank": 56,
+              "cubic_quotient_rank": 220,
+              "augmented_rank_increment": 1,
+              "point_count": 287
+            }
+          ],
+          "survivor_count": 0,
+          "survivors": [],
+          "closest_cubic_graph_points": [
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 2,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2,
+                8
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 1,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 56,
+                  "bilinear_residual_term_count": 7,
+                  "bilinear_residual_leading_monomial": [
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 276,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    2,
+                    2,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                2,
+                2
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                -2,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                101,
+                0,
+                0,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 4,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2,
+                8
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 7,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 1,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 56,
+                  "bilinear_residual_term_count": 9,
+                  "bilinear_residual_leading_monomial": [
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 276,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    2,
+                    2,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                2,
+                4
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                102,
+                0,
+                0,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 4,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2,
+                8
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 7,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 1,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 56,
+                  "bilinear_residual_term_count": 9,
+                  "bilinear_residual_leading_monomial": [
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 276,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    2,
+                    2,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                2,
+                4
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -2,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                101,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 4,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2,
+                8
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 7,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 1,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 56,
+                  "bilinear_residual_term_count": 10,
+                  "bilinear_residual_leading_monomial": [
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 276,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    2,
+                    2,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                2,
+                4
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                102,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 4,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2,
+                8
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 7,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 1,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 56,
+                  "bilinear_residual_term_count": 10,
+                  "bilinear_residual_leading_monomial": [
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 276,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    2,
+                    2,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                2,
+                4
+              ]
+            }
+          ]
+        }
+      ],
+      "cross_prime_survivor_count": 0
+    },
+    {
+      "source_pivot": 9,
+      "parameter_count": 10,
+      "normalized_linear_target_coefficients": [
+        "tau0",
+        "0",
+        "tau1",
+        "tau2",
+        "tau3",
+        "tau4",
+        "tau5",
+        "tau6",
+        "1",
+        "tau7",
+        "tau8",
+        "tau9"
+      ],
+      "selected_retained_component": 1,
+      "point_count_per_prime": 291,
+      "prime_records": [
+        {
+          "prime": 101,
+          "point_count": 291,
+          "genuinely_cubic_graph_count": 270,
+          "selected_component_rank_signatures": [
+            {
+              "bilinear_rank": 55,
+              "cubic_quotient_rank": 220,
+              "augmented_rank_increment": 1,
+              "point_count": 291
+            }
+          ],
+          "survivor_count": 0,
+          "survivors": [],
+          "closest_cubic_graph_points": [
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                -2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                99,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 5,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                1
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 1,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 2,
+                  "bilinear_residual_leading_monomial": [
+                    2,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                1,
+                5
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 5,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                1
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 1,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 2,
+                  "bilinear_residual_leading_monomial": [
+                    2,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                1,
+                5
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 5,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                1
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 1,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 2,
+                  "bilinear_residual_leading_monomial": [
+                    2,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                1,
+                5
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 5,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                1
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 1,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 2,
+                  "bilinear_residual_leading_monomial": [
+                    2,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                1,
+                5
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                -2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                99,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 6,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                1
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 1,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 2,
+                  "bilinear_residual_leading_monomial": [
+                    2,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                1,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "prime": 103,
+          "point_count": 291,
+          "genuinely_cubic_graph_count": 270,
+          "selected_component_rank_signatures": [
+            {
+              "bilinear_rank": 55,
+              "cubic_quotient_rank": 220,
+              "augmented_rank_increment": 1,
+              "point_count": 291
+            }
+          ],
+          "survivor_count": 0,
+          "survivors": [],
+          "closest_cubic_graph_points": [
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                -2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                101,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 5,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                1
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 1,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 2,
+                  "bilinear_residual_leading_monomial": [
+                    2,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                1,
+                5
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                102,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 5,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                1
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 1,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 2,
+                  "bilinear_residual_leading_monomial": [
+                    2,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                1,
+                5
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 5,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                1
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 1,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 2,
+                  "bilinear_residual_leading_monomial": [
+                    2,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                1,
+                5
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 5,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                1
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 1,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 2,
+                  "bilinear_residual_leading_monomial": [
+                    2,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                1,
+                5
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                -2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                101,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 6,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                1
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 1,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 2,
+                  "bilinear_residual_leading_monomial": [
+                    2,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 3,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                3,
+                1,
+                6
+              ]
+            }
+          ]
+        }
+      ],
+      "cross_prime_survivor_count": 0
+    },
+    {
+      "source_pivot": 10,
+      "parameter_count": 10,
+      "normalized_linear_target_coefficients": [
+        "tau0",
+        "tau1",
+        "0",
+        "tau2",
+        "tau3",
+        "tau4",
+        "tau5",
+        "tau6",
+        "tau7",
+        "1",
+        "tau8",
+        "tau9"
+      ],
+      "selected_retained_component": 2,
+      "point_count_per_prime": 291,
+      "prime_records": [
+        {
+          "prime": 101,
+          "point_count": 291,
+          "genuinely_cubic_graph_count": 270,
+          "selected_component_rank_signatures": [
+            {
+              "bilinear_rank": 55,
+              "cubic_quotient_rank": 220,
+              "augmented_rank_increment": 1,
+              "point_count": 291
+            }
+          ],
+          "survivor_count": 0,
+          "survivors": [],
+          "closest_cubic_graph_points": [
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                -2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                99,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 5,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 3,
+                  "bilinear_residual_leading_monomial": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 5,
+                  "cubic_residual_leading_monomial": [
+                    1,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                5,
+                1,
+                5
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                100,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 5,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 3,
+                  "bilinear_residual_leading_monomial": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 5,
+                  "cubic_residual_leading_monomial": [
+                    1,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                5,
+                1,
+                5
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 5,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 3,
+                  "bilinear_residual_leading_monomial": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 5,
+                  "cubic_residual_leading_monomial": [
+                    1,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                5,
+                1,
+                5
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 5,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 3,
+                  "bilinear_residual_leading_monomial": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 5,
+                  "cubic_residual_leading_monomial": [
+                    1,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                5,
+                1,
+                5
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                -2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                99,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 6,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 3,
+                  "bilinear_residual_leading_monomial": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 5,
+                  "cubic_residual_leading_monomial": [
+                    1,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                5,
+                1,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "prime": 103,
+          "point_count": 291,
+          "genuinely_cubic_graph_count": 270,
+          "selected_component_rank_signatures": [
+            {
+              "bilinear_rank": 55,
+              "cubic_quotient_rank": 220,
+              "augmented_rank_increment": 1,
+              "point_count": 291
+            }
+          ],
+          "survivor_count": 0,
+          "survivors": [],
+          "closest_cubic_graph_points": [
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                -2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                101,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 5,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 3,
+                  "bilinear_residual_leading_monomial": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 5,
+                  "cubic_residual_leading_monomial": [
+                    1,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                5,
+                1,
+                5
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                102,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 5,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 3,
+                  "bilinear_residual_leading_monomial": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 5,
+                  "cubic_residual_leading_monomial": [
+                    1,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                5,
+                1,
+                5
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 5,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 3,
+                  "bilinear_residual_leading_monomial": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 5,
+                  "cubic_residual_leading_monomial": [
+                    1,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                5,
+                1,
+                5
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 5,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 3,
+                  "bilinear_residual_leading_monomial": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 5,
+                  "cubic_residual_leading_monomial": [
+                    1,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                5,
+                1,
+                5
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                -2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                101,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 6,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                2
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 2,
+                  "target_term_count": 5,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 3,
+                  "bilinear_residual_leading_monomial": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 5,
+                  "cubic_residual_leading_monomial": [
+                    1,
+                    3,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                5,
+                1,
+                6
+              ]
+            }
+          ]
+        }
+      ],
+      "cross_prime_survivor_count": 0
+    },
+    {
+      "source_pivot": 11,
+      "parameter_count": 10,
+      "normalized_linear_target_coefficients": [
+        "0",
+        "tau0",
+        "tau1",
+        "tau2",
+        "tau3",
+        "tau4",
+        "tau5",
+        "tau6",
+        "tau7",
+        "tau8",
+        "1",
+        "tau9"
+      ],
+      "selected_retained_component": 0,
+      "point_count_per_prime": 291,
+      "prime_records": [
+        {
+          "prime": 101,
+          "point_count": 291,
+          "genuinely_cubic_graph_count": 270,
+          "selected_component_rank_signatures": [
+            {
+              "bilinear_rank": 55,
+              "cubic_quotient_rank": 220,
+              "augmented_rank_increment": 1,
+              "point_count": 291
+            }
+          ],
+          "survivor_count": 0,
+          "survivors": [],
+          "closest_cubic_graph_points": [
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                -2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                99,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 3,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 3,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                3
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 3,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 3,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                3
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 3,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 3,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                3
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 3,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 3,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                3
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                -2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                99,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 4,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 4,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "prime": 103,
+          "point_count": 291,
+          "genuinely_cubic_graph_count": 270,
+          "selected_component_rank_signatures": [
+            {
+              "bilinear_rank": 55,
+              "cubic_quotient_rank": 220,
+              "augmented_rank_increment": 1,
+              "point_count": 291
+            }
+          ],
+          "survivor_count": 0,
+          "survivors": [],
+          "closest_cubic_graph_points": [
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                -2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                101,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 3,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 3,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                3
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                102,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 3,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 3,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                3
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 3,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 3,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                3
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 3,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 3,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                3
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                -2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                101,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 4,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 4,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                4
+              ]
+            }
+          ]
+        }
+      ],
+      "cross_prime_survivor_count": 0
+    },
+    {
+      "source_pivot": 12,
+      "parameter_count": 10,
+      "normalized_linear_target_coefficients": [
+        "0",
+        "tau0",
+        "tau1",
+        "tau2",
+        "tau3",
+        "tau4",
+        "tau5",
+        "tau6",
+        "tau7",
+        "tau8",
+        "tau9",
+        "1"
+      ],
+      "selected_retained_component": 0,
+      "point_count_per_prime": 291,
+      "prime_records": [
+        {
+          "prime": 101,
+          "point_count": 291,
+          "genuinely_cubic_graph_count": 270,
+          "selected_component_rank_signatures": [
+            {
+              "bilinear_rank": 55,
+              "cubic_quotient_rank": 220,
+              "augmented_rank_increment": 1,
+              "point_count": 291
+            }
+          ],
+          "survivor_count": 0,
+          "survivors": [],
+          "closest_cubic_graph_points": [
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                -2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                99,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 3,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 3,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                3
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 3,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 3,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                3
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 3,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 3,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                3
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 3,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 3,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                3
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                -2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                99,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 4,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 4,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "prime": 103,
+          "point_count": 291,
+          "genuinely_cubic_graph_count": 270,
+          "selected_component_rank_signatures": [
+            {
+              "bilinear_rank": 55,
+              "cubic_quotient_rank": 220,
+              "augmented_rank_increment": 1,
+              "point_count": 291
+            }
+          ],
+          "survivor_count": 0,
+          "survivors": [],
+          "closest_cubic_graph_points": [
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                -2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                101,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 3,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 3,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                3
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                102,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 3,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 3,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                3
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 3,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 3,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                3
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 3,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 3,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                3
+              ]
+            },
+            {
+              "parameter_point": [
+                0,
+                0,
+                -2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "linear_target_coefficients_mod_prime": [
+                0,
+                0,
+                0,
+                101,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "graph_degree": 3,
+              "graph_term_count": 4,
+              "restricted_maximum_degree": 5,
+              "bad_retained_components": [
+                0
+              ],
+              "screened_components": [
+                {
+                  "retained_component": 0,
+                  "target_term_count": 4,
+                  "formal_linear_count": 10,
+                  "formal_quadratic_count": 55,
+                  "formal_cubic_count": 220,
+                  "nonzero_linear_count": 0,
+                  "nonzero_quadratic_count": 55,
+                  "nonzero_cubic_count": 220,
+                  "bilinear_rank": 55,
+                  "bilinear_residual_term_count": 1,
+                  "bilinear_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "cubic_quotient_rank": 220,
+                  "total_completion_rank": 275,
+                  "cubic_solvable": false,
+                  "cubic_residual_term_count": 1,
+                  "cubic_residual_leading_monomial": [
+                    3,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ],
+              "all_bad_components_cubically_solvable": false,
+              "score": [
+                1,
+                1,
+                1,
+                4
+              ]
+            }
+          ]
+        }
+      ],
+      "cross_prime_survivor_count": 0
+    }
+  ],
+  "cross_prime_survivors": [],
+  "scope": "The search covers only the stated parameter points in the five constant-bilinear-rank normalized linear graph families. A survivor requires reconstruction over Q and a complete target-automorphism, determinant, degree, and collision audit. Absence of survivors is not a characteristic-zero obstruction."
+}

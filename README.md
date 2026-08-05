@@ -3,11 +3,12 @@
 This repository verifies a three-dimensional polynomial Keller map with a
 three-point collision, explains it through a tangent-map normal form, and
 develops weighted, cancellation, decorated-normalization, Hurwitz, and
-rank-two symplectic consequences.  Separately, in characteristic two, it now
-audits the preserved plane fiber of the Huq--Kuruvilla map: an etale
-noninjective endomorphism of `A^2` with separable generic degree three.  This
-positive-characteristic theorem does not address the characteristic-zero
-plane Jacobian conjecture.  In generic degree `N>=4`, the coarse
+rank-two symplectic consequences.  Separately, it records Mondello's external
+characteristic-two plane theorem over \(\overline{\mathbb F}_2\), replays
+its preserved-fibre proof, and proves a repository corollary over every
+characteristic-two field.  These etale noninjective plane maps have separable
+generic degree three and do not address the characteristic-zero plane
+Jacobian conjecture.  In generic degree `N>=4`, the coarse
 decorated normalization already gives an `(N-3)`-dimensional family of stable
 classes.  Adding one affine root sheet generically recovers the seed exactly.
 The same parameters yield four-real-Gaussian witnesses with an optimal
@@ -337,7 +338,26 @@ derivation and evaluation of \(\mu_{14}\) are parked until an explicit
 exact-rank-two point or component is extracted.  The split-symbol theorem
 has already removed rank one from the all-order SIC search; the remaining
 squarefree rank-one membership would only sharpen the finite-prefix
-Hilbert statement.
+Hilbert statement.  The factor search is now written on the direct
+internal-gauge quotient \(U=[I_2;A]\), \(C=UB\), with sixteen coordinates,
+a constant \(\mu_1\)-pivot, and an exact mixed relative-period formula.
+As an all-order control, a seven-parameter fixed-flag open has exact rank
+two, recurrence \(\nu_{m+1}=0\), and the sharp mixed cutoff \(m>e\) for
+every bidegree-\((e,e)\) multiplier.  This family is one-sided and
+SIC-safe; it is not the missing semistable component.
+The first broader direct-chart component calculation is also exact.
+On the dense two-separated-row support
+\(\{0\}\times\{1,2,3,4\}\cup\{4\}\times\{0,1,2,3\}\), quotient
+normalization leaves six coordinates and coefficient-torus localization
+forces rank exactly two.  Moments through seven give a
+zero-dimensional degree-\(604\) scheme over \(\mathbb Q\); adjoining
+\(\mu_8\) gives the unit ideal.  Hence none of those exact components
+reaches the recurrence stage.  An exhaustive exact boundary audit
+classifies all 135 proper support orbits under weight negation.  Every
+one of the 119 mixed boundaries has a sharp cutoff at most \(\mu_7\);
+the only all-order boundaries are zero or one-sided rank one.  Thus the
+complete eight-position two-separated-row coordinate subspace is
+SIC-safe.  Other rank-two charts remain open.
 The new
 [rank-stratified moment programme](extended-geometry/RANK_STRATIFIED_MOMENT_PROGRAM.md)
 organizes the balanced problem by the determinantal loci \(X_{d,r}\).
@@ -526,8 +546,52 @@ normalized points on the other fourteen systems are pair-linearly
 one-sided: twelve systems are rectangular cube factorizations, one is a
 three-point family indexed by \(q^3=1\), and one is a single two-factor
 point.  Hence any degree-three SIC counterexample has at least nine
-entries in the displayed monomial basis.  On the normalized
-null-quadratic chart the Rodrigues point is an isolated local component
+entries in the displayed monomial basis.  The first complete size-nine
+class is now closed: all sixteen \(3\times3\) coefficient rectangles are
+SIC-safe.  Six transpose/reversal orbits suffice; over \(\mathbb Q\), 54
+minor-localized finite moment schemes through order fourteen are unit
+ideals, so every reduced dense point has coefficient rank one, while
+every boundary is covered by the size-at-most-eight theorem.  On the
+next structured class, all 96 complete-two-row/column fringe supports
+are also SIC-safe: 24 symmetry representatives have exact
+dense coefficient-torus unit ideals through order fourteen, and their
+boundaries again reduce to support at most eight.  These two results
+are joined by the complete cross-plus-two class: one full row, one full
+column, and any two further entries.  All 576 supports in its 156
+symmetry orbits have exact dense-torus unit ideals through order ten.
+Six of those cross supports are nonmixed.  A fourth exact class closes all
+480 regular three-line supports: three occupied rows with three entries
+each, or transpose, excluding the rectangles.  Of its 120 symmetry
+orbits, 114 have unit dense-torus ideals through order ten.  The other six
+have unique rational rank-two points, and exact flag changes put all six
+in the fixed one-sided chamber \(i>j\), giving recurrence
+\(\nu_{m+1}=0\) and mixed cutoff \(m>e\).
+The remaining \(4+3+2\) three-line pattern contributes 1,148 supports in
+287 symmetry orbits; every dense coefficient-torus ideal is a unit through
+order ten.  Thus every one of the 1,740 nine-entry supports with an empty
+row or column is now closed.  The five structured results close 2,310 of
+the \(11{,}420\) mixed size-nine supports.  A sixth class closes all 1,244
+full-line supports with line-count partition \(4+3+1+1\) and no complete
+line on the other axis; its 311 dense symmetry representatives are unit
+ideals through order ten.  Thus 3,554 mixed supports are now closed.
+The complete discrete transpose/reversal census has 2,924 support orbits;
+902 are now closed and 2,022 remain.  The remaining 7,866 supports use
+every row and column and occupy only five incidence-partition types.  This
+count is basis-dependent and is not a
+continuous diagonal-\(\mathrm{SL}_2\) orbit classification.
+
+The complete reversal-parity exact-rank-two factor family is also
+SIC-safe.  The one-parameter \(\mathrm{SL}_2\) centralizer of reversal
+moves every nonzero even/odd \(U\)-pair into the chart
+\(U_{0,*}=(1,1)\).  On both projective semistable \(W\)-charts, complete exact-rank-two open covers
+become unit ideals after adjoining \(\mu_6\).  The invariant-zero boundary
+has exactly two \(\mathbb Q(q)\)-components through \(\mu_6\); fixed-flag
+factorizations put both in the one-sided nullcone, with exact recurrence
+\(\nu_{m+1}=0\), nonzero degree-two mixed values, and mixed cutoff
+\(2m>e\).
+On the normalized null-quadratic chart the Rodrigues point is an isolated
+local
+component
 of length five through \(\mu_{11}\).  On the normalized anti-Weyl
 non-null branch, the even moments through order fourteen generate the
 unit ideal over \(\mathbb Q\).  On the generic rank-two
@@ -1330,6 +1394,53 @@ homogeneous witness below degree twelve, beginning with harmonic-cubic and
 multi-profile repairs.  None of these results settles the
 ordinary-Laplacian/Hessian-nilpotent conjecture.
 
+<!-- status-consumer: GVC3IHC fdc97a98f5bccc9a -->
+The
+[isotropic harmonic-channel obstruction](extended-geometry/GVC3_ISOTROPIC_HARMONIC_CHANNEL_OBSTRUCTION.md)
+now excludes an equivariant multi-profile family simultaneously for
+\(\Delta^2,\Delta^3,\Delta^4,\Delta^5\).  In balanced degrees
+four, six, eight, and ten, take one isotropic coherent state in each of two
+or three distinct positive harmonic summands.  Invariant Wick occupation
+sums replace expanded polynomial coefficients; modular Gröbner discovery at
+three primes is promoted by exact saturated elimination over \(\mathbb Q\).
+The first nine moments force every active coherent state onto one isotropic
+direction, where phase weight gives an all-order GVC cutoff.  A genuine
+\(\mathcal H_2\oplus\mathcal H_4\oplus\mathcal H_6\) point cancels the first
+four pure moments and retains a second-order multiplier channel, but its
+fifth pure moment is nonzero.  Thus it is a near survivor, not a candidate.
+The global frontier remains open for noncoherent harmonic vectors, repeated
+profiles inside one summand, and the full harmonic-cubic repair.
+
+<!-- status-consumer: GVC3FCCB 240c9790dd9367a7 -->
+The
+[four-coherent-channel degree-eight frontier](extended-geometry/GVC3_FOUR_COHERENT_CHANNEL_FRONTIER.md)
+handles the unique missing four-channel profile
+\(\mathcal H_2\oplus\mathcal H_4\oplus\mathcal H_6\oplus\mathcal H_8\).
+Its invariant moments have a finite proper-hypergeometric occupation/edge
+sum.  Exact characteristic-zero bases exclude every coefficient face, all
+thirteen nonterminal direction-collision partitions, and the
+four-distinct-direction \(B=0\) boundary through moment six.  On the sole
+remaining \(B\ne0\) chart, the full saturated ideal through moment seven is
+\([1]\) modulo \(101,103,107\), but no characteristic-zero certificate has
+yet completed; this is explicitly modular evidence, not a theorem.  The
+next coherent targets are exact promotion of that chart and the four/five
+channel degree-ten profiles.
+
+<!-- status-consumer: GVC3HCB be9ebf286c6f24f4 -->
+<!-- status-consumer: GVC3HCM 5269510029077997 -->
+The
+[full harmonic-cubic obstruction](extended-geometry/GVC3_HARMONIC_CUBIC_PROFILE_MODULAR_SEARCH.md)
+now compiles the genuine degree-six repair
+\(P=\alpha\rho E_4+H_3O_3\), with arbitrary
+\(H_3\in\mathcal H_3\), into seven weight-channel moment polynomials.  An
+exhaustive characteristic-zero projective cover has no \(\alpha\ne0\) point
+through moment eight; on \(\alpha=0\), exact elimination proves that moments
+through seven have exactly the two expected one-sided terminal planes as
+their radical.  Phase weight gives an all-order mixed cutoff on those
+planes.  Thus the complete harmonic-cubic repair contains no \(\Delta^3\)
+witness.  Modular Gröbner calculations at \(101,103,107\) are retained only
+as discovery replay, and no candidate is promoted.
+
 <!-- status-consumer: GVC3TAG eca05b28b6dc69b2 -->
 The earlier
 [three-variable tagged-lift analysis](extended-geometry/THREE_VARIABLE_GVC_TAGGED_LIFT.md)
@@ -1486,12 +1597,14 @@ smooth remainder, or on the codimension-two omitted triple-root curve.  The
 origin branch and the three rational-collision branches have exact centered
 radius one, not attained.
 
-The
-[Huq--Kuruvilla--Mondello characteristic-two audit](verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md)
-starts from the known threefold counterexample and makes the coordinate chain
-strictly smaller.  After source and target permutations, polynomial source
-coordinates `(a,b,c)` and a linear target change put the map in skew-product
-form `(a,b,c) -> (A,B,c)`.  Its preserved `c=0` fiber is
+## Mondello's characteristic-two plane theorem and repository extensions
+
+### External theorem and proof architecture
+
+Romy Mondello proves in [*A Dimension-Two Counterexample to the Separable
+Jacobian Conjecture in Characteristic Two*,
+arXiv:2608.02634v1](https://arxiv.org/abs/2608.02634) that, over
+\(k=\overline{\mathbb F}_2\), the plane map
 
 \[
 \begin{aligned}
@@ -1500,17 +1613,74 @@ Q&=y+x^5+x^6y+x^7y^2+x^8y^3.
 \end{aligned}
 \]
 
-The plane determinant is one, the three points `(0,1)`, `(1,0)`, and `(1,1)`
-map to `(0,1)`, and a hidden irreducible cubic reconstructs the source
-function field with exact separable degree three.  Consequently the
-prime-to-characteristic separable Jacobian conjecture already fails in
-dimension two over every characteristic-two field; identity padding gives
-the same plane-derived example in every higher dimension.  The checker also
-shows that the identical integer formulas have nonconstant Jacobian, so this
-is not a characteristic-zero plane construction.  The linked public Lean
-receipt is formal evidence, not independent human peer review.
+has \(\det JF=1\), is etale, and sends the three distinct points
+\((0,1),(1,0),(1,1)\) to \((0,1)\).  Mondello proves that \(P,Q\) are
+algebraically independent, \([k(x,y):k(P,Q)]=3\), the extension is separable,
+and the geometric generic fibre has three points.  Thus HKM2 is an
+**external theorem with an internal exact replay**, not a repository theorem.
 
-<!-- status-consumer: HKM2 79acc8c611bf0466 -->
+The reusable proof mechanism is explicit.  Put
+
+\[
+r=1+xy,\qquad u=1+x^3r,\qquad w=ru^2.
+\]
+
+Then \(w\) satisfies
+
+\[
+H(T)=T^3+T^2+(PQ+P^3)T+P^3,
+\]
+
+and the source is recovered by
+
+\[
+x=\frac{w+1}{Q},\qquad
+r=\frac{P^2}{x^2w},\qquad
+y=\frac{r+1}{x}.
+\]
+
+The decisive step is **actual-target irreducibility**: \(H\) is proved
+irreducible over the literal subfield \(k(P,Q)\), after algebraic
+independence identifies it with the appropriate rational function field;
+irreducibility is not inferred from a generic symbolic cubic.  This is a
+useful template for other hidden-root constructions.
+
+Mondello's appendix records a Lean kernel-check of the theorem and a
+computationally separate Harmonic Aristotle replay.  Neither constitutes
+independent human peer review or settles novelty, exposition, or the
+repository's broader geometric claims.
+
+<!-- status-consumer: HKM2 6891c4426fa9c6ff -->
+
+### Preserved-coordinate reduction from Huq--Kuruvilla
+
+Mondello obtains the plane map from Huq--Kuruvilla's three-variable map.
+After source and target permutations, polynomial source coordinates
+`(a,b,c)` and a linear target change put it in skew-product form
+`(a,b,c) -> (A,B,c)`; the displayed plane map is the invariant fibre
+`c=0`.  The
+[canonical audit](verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md)
+replays these identities.
+
+> **Research rule.** For every new counterexample, search for a polynomial
+> source coordinate \(c(x)\) whose image is a target coordinate or a linear
+> combination \(L(F)\) of target coordinates.  Run preserved-coordinate
+> detection beside grading detection, LND searches, tangent quotients, and
+> normalization analysis.
+
+The same field-independent actual-target proof gives the separately named
+repository corollary HKM2-ALLFIELDS: over every field of characteristic two,
+including nonperfect fields, the map is etale and noninvertible of exact
+separable generic degree three; after base change to an algebraic closure its
+geometric generic fibre still has three points.  Only this base-field
+enlargement is repository-added; the formulas and proof architecture remain
+Mondello's.  Identity padding gives examples in every higher dimension.  The
+identical integer formulas have nonconstant Jacobian, so none of this
+addresses the characteristic-zero plane conjecture.
+
+<!-- status-consumer: HKM2-ALLFIELDS bc2d0e1d0c37827c -->
+
+### Repository extension: wild finite-normalization boundary
 
 The
 [plane finite-normalization theorem](verified/HUQ_KURUVILLA_PLANE_BOUNDARY_NORMALIZATION.md)
@@ -1523,16 +1693,24 @@ by Frobenius `P=Z^2`.  Its generic ledger is
 rows force geometric and arithmetic monodromy `S_3`.  This is the first
 complete plane row in the positive-characteristic wild-boundary atlas.  Its
 three retained/missing intersections are ordinary completed nodes, with
-nodal conductor and different also explicit.
+nodal conductor and different also explicit.  This is a repository theorem.
+Its present Singular certificate and separate formula replay are not yet a
+second independent implementation of the normalization algorithm; that
+audit, plus independent resolvent and specialization routes to \(S_3\),
+remains open.
 
-<!-- status-consumer: HKM2B1 680ef39ee14ebf10 -->
+<!-- status-consumer: HKM2B1 c197aa4165670dc5 -->
+
+### Repository extension: mixed-characteristic and Witt obstruction
 
 The
 [modulo-four lifting obstruction](verified/HUQ_KURUVILLA_PLANE_W2_OBSTRUCTION.md)
 then closes the direct mixed-characteristic route for this exact plane map.
 Every polynomial lift is the displayed integral representative plus
 `(2A,2B)`, but the first Jacobian variation always has zero `xy` coefficient,
-whereas the integral Jacobian error has coefficient `2xy`.  Thus no
+whereas the integral Jacobian error has coefficient `2xy`.  Equivalently,
+the error defines a nonzero cokernel class for
+`D_F(A,B)=A_x Q_y+P_x B_y+A_y Q_x+P_y B_x`.  Thus no
 constant-Jacobian lift exists over `Z/4`, at any correction degree, and no
 compatible higher Witt or characteristic-zero plane lift can exist.  The
 obstruction is unstable: after adjoining one identity variable, truncated
@@ -1540,9 +1718,10 @@ geometric inverses of `1+2K` give a compatible determinant-one polynomial
 lift over every finite `W_n(F_2)`.  The inverse limit is a restricted
 two-adic power series, not a characteristic-zero polynomial map.  Uniform
 bounded-degree algebraization and unstabilized left-right equivalence remain
-open.
+open, as do the full cokernel, uniqueness and coordinate-invariance of the
+`xy` functional, and quantitative minimum-degree growth in the tower.
 
-<!-- status-consumer: HKM2W1 23c067e5a7c29ac4 -->
+<!-- status-consumer: HKM2W1 333c767416c0d59f -->
 
 The
 [mixed-sign grading literature reconciliation](extended-geometry/MIXED_SIGN_GRADINGS_LITERATURE_RECONCILIATION.md)
@@ -2833,7 +3012,18 @@ development:
    omitted source-only and individually obstructed kernel direction, and
    proves by exact Schur witnesses and Singular unit ideals that none of the
    six full finite quadratic left-right kernel families reaches
-   cubic-output rank five on its degree-three locus.
+   cubic-output rank five on its degree-three locus. `BCR10` then changes to
+   the tensor language: it proves full input-directional ranks 12 and 19 for
+   the displayed `K12` cubic tensor and `G19`, excluding constant source
+   quotients, and records a separate two-prime sparse cubic-graph bilinear
+   scout with no survivor in 15,688 modular evaluations. `BCR11` lifts the
+   modular rows to exact rational minors and rank-stratified covers for all
+   nine full cubic graph families `z4,...,z12`, closing the complete
+   linear-coordinate, one-stage bilinear frontier. `BCR12` then Schur-reduces
+   the 220 cubic target monomials against those bilinear pivots and
+   reconstructs constant or stratified rational minors for every family,
+   closing the same full linear-coordinate architecture through one-stage
+   target degree three.
 2. `LR1 -> GS1` gives the nonexplicit fixed-dimensional route to
    `not GMC(42)`.
 3. `LR1 -> IV1` gives direct `not SIC(21)`, descends to `not SIC(20)`, and
@@ -2911,7 +3101,93 @@ development:
     See
     [`PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`](PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md).
 
-11. The Meng--Yang route now has a degree-five normal form rather than a
+11. `HC4RSD1` implements reverse scalar Schur descent at the pencil level.
+    An identically singular four-variable Hessian pencil with an
+    \(x\)-constant generic kernel line must have corank one; the bordered
+    unit then forces a common constant kernel direction for \(A\) and
+    \(B\).  Every reduced collision fiber becomes a three-variable
+    constant-Hessian gradient fiber, so `HC3` makes it a singleton.  This
+    closes the homogeneous scalar cone-pencil stratum and meets none of the
+    318/306 live affine-degree-two/three projective-polar rows.  The exact
+    implementation also generates integrability, collision, corank-minor,
+    and simultaneous matrix-pivot Schur equations.  `HC4RSD2` then applies
+    the adjugate Piola identity to affine moving kernels.  The unique
+    nonconstant unimodular orbit is \((z,1,0,0)\); exact integration and the
+    bordered unit force a normal form whose every descendant has a
+    triangular polynomial inverse. `HC4RSD3` then classifies the complete
+    parameter-moving affine branch: adjugate degree makes the kernel linear
+    in the pencil parameter, Piola leaves two rank-one compression types,
+    and the sole genuinely moving terminal integral has Hessian rank at most
+    two. `HC4RSD4` reaches the first nonlinear family without a degree bound:
+    every fixed kernel \((P(z,w),1,0,0)\) is forced onto one transverse
+    linear form and again has a triangular descendant. `HC4RSD5` extends
+    this to every fixed primitive two-component kernel in a constant support
+    plane. Piola first eliminates all active-variable dependence; the
+    bordered unit then produces a constant-determinant polynomial frame,
+    and degree rigidity makes its image an affine line, reducing it to
+    `HC4RSD4`. Fixed kernels with three or four nonlinear components,
+    parameter-moving nonlinear kernels, and moving matrix-pivot planes
+    remain. `HC4RSD6` supplies the missing first coverage test: an affine
+    scalar pivot exists exactly when a constant covector has nonzero
+    constant inverse-Hessian norm. On the open rank-three quintic packet,
+    this forces a constant linear relation among the components of the
+    Schur vector
+    \(\operatorname{adj}(\operatorname{Hess}h_5)\nabla s_3\), cutting
+    affine-pivot coverage down to an explicit coefficient-rank locus. On the
+    diagonal nonsquarefree top, Schur divisibility leaves three diagonal
+    cubic channels and affine coverage forces their product to vanish.
+    `HC4RSD7` then imposes the marked collision globally: the metric
+    numerator is the Hessian determinant of every affine pivot fiber, so
+    `HC3` makes its tangential gradient injective. Hence no affine
+    zero-corner scalar pivot can inherit a nontrivial collision at a common
+    pivot value, whether its reduced Hessian is singular or lies in the
+    nonsingular exact-remainder branch. `HC4RSD8` begins the nonlinear
+    branch: for a quadratic pivot with an identically singular reduced
+    Hessian pencil, constant parent Hessian determinant forces the pivot
+    Hessian to have rank at most two. Rank four contradicts pencil
+    singularity directly; in rank three, a cleared block identity would
+    make a polynomial square equal a cubic polynomial in the pencil
+    parameter. The bordered unit also forces a linear slice along the
+    pivot-Hessian kernel, giving the normal form
+    \(A=w+u^{\mathsf T}Q_ru/2\). Thus only the rank-one/rank-two
+    moving-kernel quadratic strata remain at that stage. In rank two, the
+    passive binary
+    Hessian of \(B\) must be singular; its rank-zero stratum reduces to the
+    fixed-support two-component kernel theorem HC4RSD5. The genuinely new
+    rank-two locus therefore has passive Hessian rank exactly one.
+    `HC4RSD9` closes it: after the hyperbolic normalization \(A=xy+w\),
+    the remaining determinant faces integrate to
+    \(B=xz+\rho(y+h(x)A)^2/2+\beta(x)y+\gamma(x)A+\delta(x)\).
+    Every Schur descendant has an explicit triangular polynomial inverse.
+    `HC4RSD10` closes the final rank-one case. For
+    \(A=x^2/2+w\), the passive \(3\)-by-\(3\) Hessian has rank one: ranks
+    zero and two contradict the generic corank-one bordered unit. The
+    rank-one polynomial-Hessian normal form and the exact unit-frame
+    identity force
+    \(B=xz+\rho(y+h(x)w)^2/2+\alpha(x)y+\gamma(x)w+\delta(x)\),
+    and its descendants again have a triangular polynomial inverse. Thus
+    the complete quadratic scalar-pivot branch with an identically singular
+    reduced pencil is closed.
+    See the
+    [reverse-Schur note](HC4_REVERSE_SCHUR_DESCENT.md) and the
+    [affine moving-kernel note](HC4_AFFINE_MOVING_KERNEL_PENCILS.md), the
+    [parameter-moving completion](HC4_PARAMETER_MOVING_AFFINE_KERNEL_PENCILS.md),
+    and the
+    [transverse shear extension](HC4_UNIVARIATE_SHEAR_KERNEL_PENCILS.md),
+    followed by the
+    [two-component extension](HC4_TWO_COMPONENT_QUASITRANSLATION_KERNELS.md)
+    and the
+    [affine-pivot coverage gate](HC4_AFFINE_PIVOT_COVERAGE_GATE.md), followed
+    by the
+    [affine collision-fiber obstruction](HC4_AFFINE_PIVOT_COLLISION_FIBERS.md),
+    and then the
+    [quadratic-pivot rank obstruction](HC4_QUADRATIC_PIVOT_RANK_OBSTRUCTION.md).
+    The rank-two completion is
+    [HC4_QUADRATIC_RANK_TWO_PIVOTS.md](HC4_QUADRATIC_RANK_TWO_PIVOTS.md),
+    and the final passive \(3\)-by-\(3\) classification is
+    [HC4_QUADRATIC_RANK_ONE_PIVOTS.md](HC4_QUADRATIC_RANK_ONE_PIVOTS.md).
+
+12. The Meng--Yang route now has a degree-five normal form rather than a
     generic graph search.  HC4MYA1 and HC4MYG4 exclude all affine descents
     and all graphs through degree four.  HC4MYGJ1 makes the determinant on
     \(x_1=0\) a unit-affine equation for the first normal jet and excludes
@@ -2932,41 +3208,67 @@ development:
     [graph-obstruction note](HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md) and the
     [quintic Schur-frontier note](HC4_MENG_YANG_QUINTIC_SCHUR_FRONTIER.md).
 
-12. `QHNW1` gives the first theorem-sized Waring-rank floor for the
+13. `QHNW1` gives the first theorem-sized Waring-rank floor for the
     six-variable homogeneous quartic HN search.  No essential example has
     Waring rank at most eight, and every essential rank-nine example has a
     polynomially invertible map $z\mapsto z-\nabla P(z)$.  Therefore an
     essential counterexample has Waring rank at least ten.  At rank ten, the
     HN traces exclude every Gale parallel class of multiplicity at least four
-    and every pair of triple classes.  The remaining gate, `OP-QHNW10`, is a
-    characteristic-zero representable rank-four matroid lemma asserting the
-    existence of a basis with cyclic six-element complement under the stated
-    cocircuit and multiplicity bounds.  Proving it would raise the lower bound
-    to rank eleven; that improvement is not currently claimed.  The proof and
-    assurance boundary are in the
-    [quartic HN Waring-rigidity note](extended-geometry/QUARTIC_HN_WARING_RIGIDITY.md).
-    Its finite computer-assisted portions can be replayed with:
+    and every pair of triple classes.  `QHNW2` shows that the proposed
+    cyclic-complement matroid lemma is false, both literally and after adding
+    looplessness.  In the complete loopless nonsimple slice relative to
+    `matroid-database==0.3`, 37 coloured types survive the combinatorial
+    filter, 35 are rationally realizable, and a six-point-flat trace
+    obstruction excludes every rank-six Gram matrix satisfying the first two
+    HN traces on all 35.  `QHNW3` completes the abstract Gale-loop census:
+    115 coloured types survive the combinatorial filter and 111 are
+    characteristic-zero realizable.
+    Complementary splitting and low-dimensional Hesse close all 66 types
+    with at least two loops; the support sieve and exact SymPy saturations
+    close 37 one-loop types.  `QHNW4` closes the last eight by four exact
+    Singular saturations, one disconnected Waring splitting, and three
+    loop--triple Witt obstructions.  `QHNW5` enumerates the complete simple
+    branch by exact modular cuts: 23 extension models give five abstract
+    matroids, all with rational realizations.  Every one has a six-point
+    rank-two Gale flat on which the first two traces force a zero Gram block;
+    Gale duality and Witt index exclude all five.  Hence no essential
+    six-variable quartic HN polynomial has Waring rank ten, and every
+    essential counterexample has Waring rank at least eleven.
+    The proofs and assurance boundaries are in the
+    [Waring-rigidity note](extended-geometry/QUARTIC_HN_WARING_RIGIDITY.md)
+    and the
+    [rank-ten survivor note](extended-geometry/QUARTIC_HN_RANK10_MATROID_SURVIVORS.md).
+    Their finite computer-assisted portions can be replayed with:
 
     ```bash
     .venv/bin/python scripts/verify_quartic_hn_waring_rigidity.py
     .venv/bin/python scripts/verify_quartic_hn_rank9_one_zero.py
     .venv/bin/python scripts/verify_quartic_hn_rank9_top_determinant.py
     .venv/bin/python scripts/verify_quartic_hn_rank10_parallel_obstructions.py
+    .venv/bin/python scripts/verify_quartic_hn_rank10_matroid_survivors.py
+    .venv/bin/python scripts/verify_quartic_hn_rank10_loop_survivors.py
+    .venv/bin/python scripts/verify_quartic_hn_rank10_loop_closure.py
+    .venv/bin/python scripts/verify_quartic_hn_rank10_simple_survivors.py
     ```
 
-    These exact SymPy checks do not replace independent audit of the written
-    trace, one-latitude Hesse, matroid base-packing, or Witt-index arguments.
+    The loop-closure command requires Singular.  These exact checks do not replace
+    independent audit of the written trace, one-latitude Hesse, matroid
+    base-packing, or Witt-index arguments.
 
 <!-- status-consumer: QHNW1 a64c1d6e81c71928 -->
+<!-- status-consumer: QHNW2 64185e334886bbdd -->
+<!-- status-consumer: QHNW3 dfd56ae4c5a0d164 -->
+<!-- status-consumer: QHNW4 dd217256a06170ef -->
+<!-- status-consumer: QHNW5 d19ca18083140233 -->
 
 Only the arrows in this list are dependencies or implications.  The certified
 upper endpoints are now SIC 2, unrestricted GVC 3, ordinary-Laplacian GVC 40,
 and homogeneous HN Hessian rank 37.  For homogeneous quartic HN-VC, the best
 externally sourced and independently replayed ambient bound is 38; the
 internally generated dependency-independent route has ambient endpoint 42.
-In six variables, `QHNW1` separately gives the Waring-rank lower bound ten
-for any essential homogeneous quartic HN counterexample; this is a search
-floor, not an ambient-dimension upper endpoint.
+In six variables, `QHNW5` gives the Waring-rank lower bound eleven for any
+essential homogeneous quartic HN counterexample; this is a search floor, not
+an ambient-dimension upper endpoint.
 The separate nonhomogeneous degree-at-most-four HN witness has rank 34 in
 dimension 40.  These
 are not additional

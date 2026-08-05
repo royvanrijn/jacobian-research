@@ -1,0 +1,199 @@
+{
+  "format": "two-pair-sic-bidegree44-rank-two-direct-chart-v1",
+  "field": "characteristic zero",
+  "direct_chart": {
+    "pivot_rows": [
+      0,
+      1
+    ],
+    "normal_form": "U=[I_2;A], C=U*B",
+    "coordinates": {
+      "A": 6,
+      "B": 10,
+      "total": 16
+    },
+    "internal_gauge_removed": true,
+    "rank_two_localization": "a nonzero 2-by-2 column minor of B",
+    "sample_minor_columns_0_1": "-7",
+    "mu1_formula": "24*b00+6*b11+4*(a20*b02+a21*b12)+6*(a30*b03+a31*b13)+24*(a40*b04+a41*b14)",
+    "mu1_constant_pivot": "24*b00"
+  },
+  "relative_period": {
+    "P": "Phi_C(1,u,t,(1-t)/u)",
+    "pure": "mu_m/(4m+1)!=CT_u integral_0^1 P^m dt",
+    "mixed": "E_2(M_eab*F^m)/(4m+e+1)!=CT_u integral_0^1 u^(b-a)t^b(1-t)^(e-b)P^m dt",
+    "exact_checks": 70,
+    "orders": [
+      0,
+      4
+    ],
+    "multiplier_degrees": [
+      0,
+      2
+    ]
+  },
+  "fixed_flag_rank_two_control_family": {
+    "parameters": [
+      "a40",
+      "a41",
+      "b20",
+      "b21",
+      "b30",
+      "b31",
+      "b32"
+    ],
+    "localization": "b21*b32 != 0",
+    "dimension": 7,
+    "support_condition": "every nonzero c_ij has i>j",
+    "relative_valuation": "max u-degree(P)<=-1",
+    "pure_recurrence": "nu_(m+1)=0 for every m>=0",
+    "initial_vanishing": "mu_1=0",
+    "mixed_cutoff": "for every bidegree-(e,e) multiplier, eta_m=0 when m>e",
+    "sample_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        -1,
+        1,
+        0,
+        0
+      ],
+      [
+        -1,
+        5,
+        -1,
+        0,
+        0
+      ]
+    ],
+    "sample_pure_moments_1_through_8": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "sample_low_degree_mixed_sequences": {
+      "e1_a0_b0": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "e1_a0_b1": [
+        36,
+        0,
+        0,
+        0
+      ],
+      "e1_a1_b0": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "e1_a1_b1": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "e2_a0_b0": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "e2_a0_b1": [
+        132,
+        0,
+        0,
+        0,
+        0
+      ],
+      "e2_a0_b2": [
+        -36,
+        144000,
+        0,
+        0,
+        0
+      ],
+      "e2_a1_b0": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "e2_a1_b1": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "e2_a1_b2": [
+        120,
+        0,
+        0,
+        0,
+        0
+      ],
+      "e2_a2_b0": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "e2_a2_b1": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "e2_a2_b2": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "nonzero_but_terminating_multipliers": [
+      "e1_a0_b1",
+      "e2_a0_b1",
+      "e2_a0_b2",
+      "e2_a1_b2"
+    ],
+    "persistent_mixed_sequence_found": false,
+    "conclusion": "exact-rank-two fixed-flag family is SIC-safe"
+  },
+  "scope": "direct quotient infrastructure and an exact safe control family; not an exact semistable component, a global rank-two exclusion, or a counterexample",
+  "written_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_TWO_ALL_ORDER_AUDIT.md"
+}

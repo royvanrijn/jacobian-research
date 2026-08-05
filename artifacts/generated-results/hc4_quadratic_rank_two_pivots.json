@@ -1,0 +1,36 @@
+{
+  "channel_split": {
+    "one_channel": "b=b(x), up to swapping x and y",
+    "parent": "(b')^2*(C_yy-2*x*C_yw+x^2*C_ww) + lambda*det(pencil)",
+    "pencil_s0": "(b')^2*(C_yw^2-C_yy*C_ww)",
+    "pencil_s1": "2*C_ww*b_x*b_y",
+    "unit_consequence": "b is affine nonconstant and normalizes to x"
+  },
+  "format": "hc4-quadratic-rank-two-pivots-v1",
+  "leading_faces": {
+    "consequence": "B=z*b(x,y)+C(x,y,w)",
+    "parent_s2_mod_pencil": "B_zz",
+    "pencil_s2": "-det(Hess_(z,w)(B))"
+  },
+  "normal_form": {
+    "A": "x*y+w",
+    "B": "x*z+rho*(y+h(x)*A)^2/2+beta(x)*y+gamma(x)*A+delta(x)",
+    "descendant_hessian_determinant": "-kappa*rho",
+    "parent_hessian_determinant": "rho"
+  },
+  "open_frontier": "rank-one quadratic pivots",
+  "result": "every rank-two quadratic-pivot descendant is injective",
+  "status": {
+    "id": "HC4RSD9",
+    "kind": "theorem",
+    "scope": "rank-two quadratic scalar pivots with an identically singular four-variable Hessian pencil"
+  },
+  "triangular_recovery": [
+    "x=F_z",
+    "Y=(F_y-x*F_w-beta(x))/rho",
+    "A=(F_w-rho*h(x)*Y-gamma(x)-mu)/kappa",
+    "y=Y-h(x)*A",
+    "w=A-x*y",
+    "z=F_x-known_polynomial"
+  ]
+}

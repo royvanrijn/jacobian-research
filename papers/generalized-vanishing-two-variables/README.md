@@ -50,10 +50,20 @@ profile family and its degree/order formula, rational `p`-adic factorial
 valuation lemma, exact scalar nonvanishing, coefficientwise apolar
 contraction and operator composition, the full concrete Reynolds/Laurent
 phase extraction and endpoint-kernel identification, characteristic-zero
-base change, unused-variable padding, and the negative-final-slope plus
-continuous-envelope step.  Consequently Theorem 8.1 and the negative
-`n >= 3` half of Theorem 10.1 are fully Lean-verified.  The development does
-not yet formalize the number-field shifted-ray transfer, the
-Hall/no-reversal parts of the binary theorem, or the arbitrary-profile
-phase bridge, so it is not a complete formal verification of the whole
-manuscript.
+base change, unused-variable padding, the arbitrary-profile quadric
+restriction, all even-phase coefficient extractions, the shifted primitive
+identity, the negative-final-slope plus continuous-envelope step, and the
+complete finite-support common-threshold cutoff of Proposition 5.1.  It also
+checks the finite Hall-deficiency and binary direction-localization core of
+Lemma 3.1, including the sharp `d - e + 1` factor count and the two
+coordinate-free power-divisibility normal forms.
+Consequently Theorems 8.1 and 9.1 and the negative `n >= 3` half of Theorem
+10.2 are fully Lean-verified.  The profile theorem uses exactly the
+manuscript's declared-degree condition `S.natDegree <= e`.  The development
+does not yet formalize the translated Duistermaat--van der Kallen argument
+which rules out a split-factor matching, the literal field-extension and
+split-factor construction and coordinate-change/exact-quotient packaging of
+Lemma 3.1, the number-field shifted-ray
+transfer and its equal-face ordering, or the no-reversal/global-envelope
+parts of the binary theorem.  Thus it is not a complete formal verification
+of the whole manuscript.

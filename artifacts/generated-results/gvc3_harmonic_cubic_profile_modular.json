@@ -1,0 +1,629 @@
+{
+  "cases": [
+    {
+      "basis_preview": "1",
+      "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "basis_size": 1,
+      "chart": "alpha1_n3",
+      "cutoff": 8,
+      "dimension": -1,
+      "elapsed_ticks": 219,
+      "input_sha256": "f1872914f7c76e4cfc9ecd3762911425f72d0b0e5213e8ea13eba3b1f9b359af",
+      "prime": 101,
+      "returncode": 0,
+      "seconds": 281.59230345801916,
+      "status": "completed",
+      "stderr": "",
+      "stdout_tail": "//used time: 218.68 sec\nRESULT_BEGIN\nbasis_size=1\ndimension=-1\nelapsed_ticks=219\nunit=1\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+      "term_counts": [
+        4,
+        105,
+        193,
+        535,
+        1225,
+        1842,
+        3656
+      ],
+      "unit": 1
+    },
+    {
+      "basis_preview": "1",
+      "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "basis_size": 1,
+      "chart": "alpha1_n3",
+      "cutoff": 8,
+      "dimension": -1,
+      "elapsed_ticks": 194,
+      "input_sha256": "0e98a9419dd65c3da32b0a6d6da310da42a15a663b9b371fcdeeba861117421e",
+      "prime": 103,
+      "returncode": 0,
+      "seconds": 195.6208163750125,
+      "status": "completed",
+      "stderr": "",
+      "stdout_tail": "//used time: 194.46 sec\nRESULT_BEGIN\nbasis_size=1\ndimension=-1\nelapsed_ticks=194\nunit=1\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+      "term_counts": [
+        4,
+        104,
+        192,
+        536,
+        1225,
+        1844,
+        3650
+      ],
+      "unit": 1
+    },
+    {
+      "basis_preview": "1",
+      "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "basis_size": 1,
+      "chart": "alpha1_n3",
+      "cutoff": 8,
+      "dimension": -1,
+      "elapsed_ticks": 193,
+      "input_sha256": "fd80f3fd100bf7f2f56cd6b38bac1f8a59a600cec8651752216150e158093feb",
+      "prime": 107,
+      "returncode": 0,
+      "seconds": 193.56532537500607,
+      "status": "completed",
+      "stderr": "",
+      "stdout_tail": "//used time: 192.91 sec\nRESULT_BEGIN\nbasis_size=1\ndimension=-1\nelapsed_ticks=193\nunit=1\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+      "term_counts": [
+        4,
+        105,
+        192,
+        537,
+        1229,
+        1839,
+        3644
+      ],
+      "unit": 1
+    },
+    {
+      "basis_preview": "1",
+      "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "basis_size": 1,
+      "chart": "alpha1_d_k",
+      "cutoff": 7,
+      "dimension": -1,
+      "elapsed_ticks": 0,
+      "input_sha256": "519467fedfbcee370195b59efef315e3dc7ae6c675dc6aa4645526ef01f53851",
+      "prime": 101,
+      "returncode": 0,
+      "seconds": 0.34907254204154015,
+      "status": "completed",
+      "stderr": "",
+      "stdout_tail": "RESULT_BEGIN\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nunit=1\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+      "term_counts": [
+        10,
+        27,
+        74,
+        162,
+        331,
+        616,
+        1,
+        2
+      ],
+      "unit": 1
+    },
+    {
+      "basis_preview": "1",
+      "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "basis_size": 1,
+      "chart": "alpha1_d_k",
+      "cutoff": 7,
+      "dimension": -1,
+      "elapsed_ticks": 0,
+      "input_sha256": "ee3b6df5b79cf9508a3b8a4bd2a77b52fd89cea590eea96bbed8ac8ca8eb7076",
+      "prime": 103,
+      "returncode": 0,
+      "seconds": 0.34536429098807275,
+      "status": "completed",
+      "stderr": "",
+      "stdout_tail": "RESULT_BEGIN\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nunit=1\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+      "term_counts": [
+        10,
+        27,
+        74,
+        162,
+        331,
+        616,
+        1,
+        2
+      ],
+      "unit": 1
+    },
+    {
+      "basis_preview": "1",
+      "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "basis_size": 1,
+      "chart": "alpha1_d_k",
+      "cutoff": 7,
+      "dimension": -1,
+      "elapsed_ticks": 0,
+      "input_sha256": "c175430ac37957ee8e3cfe88ef71fdbaec679b58b0cb94a1e053b782b4b31f21",
+      "prime": 107,
+      "returncode": 0,
+      "seconds": 0.34111416700761765,
+      "status": "completed",
+      "stderr": "",
+      "stdout_tail": "RESULT_BEGIN\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nunit=1\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+      "term_counts": [
+        10,
+        27,
+        74,
+        162,
+        331,
+        616,
+        1,
+        2
+      ],
+      "unit": 1
+    },
+    {
+      "basis_preview": "1",
+      "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "basis_size": 1,
+      "chart": "alpha1_dk",
+      "cutoff": 7,
+      "dimension": -1,
+      "elapsed_ticks": 0,
+      "input_sha256": "a7c3f4091638153e37817ae1d668f1790de0bdc9f8fe39e8bb0c089c3b03f362",
+      "prime": 101,
+      "returncode": 0,
+      "seconds": 0.014355792023707181,
+      "status": "completed",
+      "stderr": "",
+      "stdout_tail": "RESULT_BEGIN\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nunit=1\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+      "term_counts": [
+        10,
+        27,
+        74,
+        162,
+        331,
+        616,
+        1,
+        2
+      ],
+      "unit": 1
+    },
+    {
+      "basis_preview": "1",
+      "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "basis_size": 1,
+      "chart": "alpha1_dk",
+      "cutoff": 7,
+      "dimension": -1,
+      "elapsed_ticks": 0,
+      "input_sha256": "4d4c48aa3c6580bfbd708a5c95b0871d70537c11b782b56583160dc3d295ad45",
+      "prime": 103,
+      "returncode": 0,
+      "seconds": 0.013665542006492615,
+      "status": "completed",
+      "stderr": "",
+      "stdout_tail": "RESULT_BEGIN\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nunit=1\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+      "term_counts": [
+        10,
+        27,
+        74,
+        162,
+        331,
+        616,
+        1,
+        2
+      ],
+      "unit": 1
+    },
+    {
+      "basis_preview": "1",
+      "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "basis_size": 1,
+      "chart": "alpha1_dk",
+      "cutoff": 7,
+      "dimension": -1,
+      "elapsed_ticks": 0,
+      "input_sha256": "1208dcf65da6ad74f210a7eef3b7c4d98e069ec9483e594018843b5c396f9b2d",
+      "prime": 107,
+      "returncode": 0,
+      "seconds": 0.013434624997898936,
+      "status": "completed",
+      "stderr": "",
+      "stdout_tail": "RESULT_BEGIN\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nunit=1\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+      "term_counts": [
+        10,
+        27,
+        74,
+        162,
+        331,
+        616,
+        1,
+        2
+      ],
+      "unit": 1
+    },
+    {
+      "basis_preview": "p1^2-50*p2*p0+30*p0^2-5*p2*n2+33*p0*n2-47*p3*n3-38*p1*n3,\np2*p1*p0-45*p3*p0^2+31*p1*p0^2+10*p3*p2*n2+38*p2*p1*n2-36*p3*p0*n2-33*p1*p0*n2+2*p3*n2^2+37*p1*n2^2-41*p3^2*n3-9*p2^2*n3-14*p3*p1*n3+46*p2*p0*n3+14*p0^2*n3-36*p2*n2*n3+28*p0*n2*n3-26*p3*n3^2-20*p1*n3^2,\np3*p1*p0^2-26*p2*p0^3-39*p0^4+33*p2^3*n2-19*p3*p2*p1*n2-24*p3^2*p0*n2+26*p2^2*p0*n2+30*p3*p1*p0*n2-12*p2*p0^2*n2+46*p0^3*n2-39*p3^2*n2^2-10*p2^2*n2^2-7*p3*p1*n2^2+22*p2*p0*n2^2+37*p0^2*n2^2+43*p2*n2^3-44*p0*n2^3-43*p3*p2^2*n3-8*p3^2*p1*n3-37*p2^2*p1*n3-46*p3*p2*p0*n3-33*p3*p0^2*n3+45*p1*p0^2*n3-48*p3*p2*n2*n3-45*p2*p1*n2*n3-36*p3*p0*n2*n3-24*p1*p0*n2*n3-22*p3*n2^2*n3-36*p1*n2^2*n3+16*p3^2*n3^2-11*p2^2*n3^2-26*p3*p1*n3^2-42*p2*p0*n3^2-34*p0^2*n3^2-28*p2*n2*n3^2+39*p0*n2*n3^2-43*p3*n3^3+p1*n3^3,\np2^2*p0^2+7*p2*p0^3+17*p0^4-41*p2^3*n2-27*p3*p2*p1*n2+39*p3^2*p0*n2+11*p2^2*p0*n2-2*p3*p1*p0*n2-48*p2*p0^2*n2-34*p0^3*n2-25*p3^2*n2^2+15*p2^2*n2^2+20*p3*p1*n2^2-14*p2*p0*n2^2+45*p0^2*n2^2+2*p2*n2^3+39*p0*n2^3+32*p3*p2^2*n3-6*p3^2*p1*n3+15*p2^2*p1*n3-8*p3*p2*p0*n3+39*p3*p0^2*n3-14*p1*p0^2*n3+43*p3*p2*n2*n3+43*p2*p1*n2*n3-24*p3*p0*n2*n3-23*p1*p0*n2*n3+50*p3*n2^2*n3-22*p1*n2^2*n3-43*p3^2*n3^2-17*p2^2*n3^2-7*p3*p1*n3^2-26*p2*p0*n3^2-30*p0^2*n3^2+5*p2*n2*n3^2-25*p0*n2*n3^2-32*p3*n3^3-11*p1*n3^3,\np3*p0^4-35*p1*p0^4+27*p2^3*p1*n2+5*p3*p2^2*p0*n2-41*p3^2*p1*p0*n2-p3*p2*p0^2*n2+39*p3*p0^3*n2+15*p1*p0^3*n2+5*p3^3*n2^2-44*p3*p2^2*n2^2-16*p3^2*p1*n2^2+42*p2^2*p1*n2^2+20*p3*p2*p0*n2^2+48*p3*p0^2*n2^2-12*p1*p0^2*n2^2+50*p3*p2*n2^3-47*p2*p1*n2^3+50*p3*p0*n2^3+44*p1*p0*n2^3+48*p3*n2^4+25*p1*n2^4-8*p2^4*n3-27*p3*p2^2*p1*n3+45*p3^2*p2*p0*n3-42*p2^3*p0*n3-35*p3^2*p0^2*n3+17*p2*p0^3*n3+10*p0^4*n3-7*p3^2*p2*n2*n3+40*p2^3*n2*n3+9*p3*p2*p1*n2*n3-35*p3^2*p0*n2*n3-9*p2^2*p0*n2*n3+38*p3*p1*p0*n2*n3-26*p2*p0^2*n2*n3-15*p0^3*n2*n3+23*p3^2*n2^2*n3-28*p2^2*n2^2*n3-p3*p1*n2^2*n3-38*p2*p0*n2^2*n3-19*p0^2*n2^2*n3+13*p2*n2^3*n3-25*p0*n2^3*n3-p3^3*n3^2-12*p3*p2^2*n3^2-31*p3^2*p1*n3^2+39*p2^2*p1*n3^2-40*p3*p2*p0*n3^2+32*p3*p0^2*n3^2-7*p1*p0^2*n3^2-46*p3*p2*n2*n3^2+14*p2*p1*n2*n3^2-24*p3*p0*n2*n3^2+38*p1*p0*n2*n3^2-22*p3*n2^2*n3^2+15*p3^2*n3^3+14*p2^2*n3^3+11*p3*p1*n3^3-43*p2*p0*n3^3-37*p0^2*n3^3+23*p2*n2*n3^3+13*p0*n2*n3^3+23*p3*n3^4+34*p1*n3^4,\np3*p2*p0^3+50*p1*p0^4-24*p2^3*p1*n2-27*p3^2*p1*p0*n2+36*p3*p2*p0^2*n2-21*p3*p0^3*n2+19*p3^3*n2^2-43*p3*p2^2*n2^2-3*p3^2*p1*n2^2-26*p2^2*p1*n2^2+43*p3*p2*p0*n2^2-9*p3*p0^2*n2^2-7*p1*p0^2*n2^2-35*p3*p2*n2^3+22*p2*p1*n2^3-14*p3*p0*n2^3+22*p1*p0*n2^3+42*p3*n2^4-38*p1*n2^4+10*p2^4*n3+44*p3*p2^2*p1*n3-39*p3^2*p2*p0*n3-35*p2^3*p0*n3+10*p3^2*p0^2*n3-12*p2*p0^3*n3-23*p0^4*n3-41*p3^2*p2*n2*n3-43*p2^3*n2*n3-24*p3*p2*p1*n2*n3-27*p3^2*p0*n2*n3-22*p2^2*p0*n2*n3+27*p3*p1*p0*n2*n3-19*p2*p0^2*n2*n3+44*p0^3*n2*n3-23*p3^2*n2^2*n3-37*p2^2*n2^2*n3-28*p3*p1*n2^2*n3+2*p2*p0*n2^2*n3+10*p0^2*n2^2*n3-30*p2*n2^3*n3-48*p0*n2^3*n3-45*p3^3*n3^2+34*p3*p2^2*n3^2-2*p3^2*p1*n3^2-24*p2^2*p1*n3^2-36*p3*p2*p0*n3^2-40*p3*p0^2*n3^2-40*p1*p0^2*n3^2+34*p3*p2*n2*n3^2-5*p2*p1*n2*n3^2-40*p3*p0*n2*n3^2+38*p1*p0*n2*n3^2-2*p3*n2^2*n3^2-4*p1*n2^2*n3^2-30*p3^2*n3^3-50*p2^2*n3^3+12*p3*p1*n3^3+12*p2*p0*n3^3+39*p0^2*n3^3+44*p2*n2*n3^3-19*p0*n2*n3^3-47*p3*n3^4+28*p1*n3^4,\np3^2*p0^3-8*p2*p0^4-35*p0^5-6*p2^4*n2+31*p3*p2^2*p1*n2-3*p3^2*p2*p0*n2+49*p2^3*p0*n2+41*p3^2*p0^2*n2+21*p2*p0^3*n2-5*p0^4*n2+5*p3^2*p2*n2^2+19*p2^3*n2^2-2*p3*p2*p1*n2^2-7*p3^2*p0*n2^2+35*p2^2*p0*n2^2+20*p3*p1*p0*n2^2+10*p2*p0^2*n2^2+32*p0^3*n2^2+14*p3^2*n2^3+32*p2^2*n2^3-38*p3*p1*n2^3-29*p2*p0*n2^3+44*p0^2*n2^3-19*p2*n2^4-5*p0*n2^4+17*p3*p2^3*n3+29*p3^2*p2*p1*n3-30*p2^3*p1*n3-35*p3^3*p0*n3+6*p3*p2^2*p0*n3+25*p3^2*p1*p0*n3-14*p3*p2*p0^2*n3-26*p3*p0^3*n3-12*p1*p0^3*n3+15*p3^3*n2*n3-39*p3*p2^2*n2*n3-7*p3^2*p1*n2*n3+42*p2^2*p1*n2*n3+9*p3*p2*p0*n2*n3-40*p3*p0^2*n2*n3+29*p1*p0^2*n2*n3+31*p3*p2*n2^2*n3+37*p2*p1*n2^2*n3+3*p3*p0*n2^2*n3-10*p1*p0*n2^2*n3-29*p3*n2^3*n3-12*p1*n2^3*n3-25*p3^2*p2*n3^2-8*p2^3*n3^2+31*p3*p2*p1*n3^2+17*p3^2*p0*n3^2-41*p2^2*p0*n3^2-46*p3*p1*p0*n3^2+17*p2*p0^2*n3^2-23*p0^3*n3^2+13*p3^2*n2*n3^2+2*p2^2*n2*n3^2+35*p3*p1*n2*n3^2-36*p2*p0*n2*n3^2-10*",
+      "basis_sha256": "b63d0c0819a1968c6566c8dabedb1a6c08eb47ae1aa735e0284d85e0d57a8923",
+      "basis_size": 569,
+      "chart": "alpha0",
+      "cutoff": 7,
+      "dimension": 2,
+      "elapsed_ticks": 0,
+      "input_sha256": "3c80547189dce7f745332812b30daf1fa19d966c4ebdb8562188d89695573e12",
+      "prime": 101,
+      "returncode": 0,
+      "seconds": 0.3663845409755595,
+      "status": "completed",
+      "stderr": "",
+      "stdout_tail": "*n3^13-49*p1*p0^2*n3^13+11*p3*p2*n2*n3^13-47*p2*p1*n2*n3^13-29*p3*p0*n2*n3^13+15*p1*p0*n2*n3^13+27*p3*n2^2*n3^13-24*p1*n2^2*n3^13-36*p3^2*n3^14+33*p2^2*n3^14-21*p3*p1*n3^14+p2*p0*n3^14-12*p0^2*n3^14+2*p2*n2*n3^14+23*p0*n2*n3^14-18*p3*n3^15-2*p1*n3^15,\np3^2*p2*p0*n2*n3^11-20*p3^2*p0*n3^13-24*p2^2*p0*n3^13-14*p3*p1*p0*n3^13-44*p2*p0^2*n3^13-37*p0^3*n3^13-15*p3^2*n2*n3^13-4*p2^2*n2*n3^13-47*p3*p1*n2*n3^13+p2*p0*n2*n3^13+46*p2*n2^2*n3^13-41*p0*n2^2*n3^13+49*p3*p2*n3^14-2*p2*p1*n3^14+14*p3*p0*n3^14-24*p1*p0*n3^14-12*p3*n2*n3^14-14*p1*n2*n3^14,\np3^3*p0*n2*n3^11-44*p0^2*n2^2*n3^12-45*p2*n2^3*n3^12+18*p0*n2^3*n3^12-35*p3^3*n3^13-12*p3*p2^2*n3^13-46*p3^2*p1*n3^13+8*p2^2*p1*n3^13-29*p3*p2*p0*n3^13-40*p3*p0^2*n3^13-p1*p0^2*n3^13+7*p3*p2*n2*n3^13+28*p2*p1*n2*n3^13-22*p3*p0*n2*n3^13+15*p1*p0*n2*n3^13+29*p3*n2^2*n3^13-36*p1*n2^2*n3^13+2*p3^2*n3^14+23*p2^2*n3^14+11*p3*p1*n3^14+10*p2*p0*n3^14+19*p0^2*n3^14-20*p2*n2*n3^14-8*p0*n2*n3^14+33*p3*n3^15+49*p1*n3^15,\np2^3*p1*n2*n3^11+46*p0^2*n2^2*n3^12+4*p2*n2^3*n3^12+16*p0*n2^3*n3^12+11*p3^3*n3^13-39*p3*p2^2*n3^13-45*p3^2*p1*n3^13-18*p2^2*p1*n3^13-4*p3*p2*p0*n3^13+44*p3*p0^2*n3^13-27*p1*p0^2*n3^13-12*p3*p2*n2*n3^13+42*p2*p1*n2*n3^13-42*p3*p0*n2*n3^13+46*p1*p0*n2*n3^13-47*p3*n2^2*n3^13-48*p1*n2^2*n3^13+12*p3^2*n3^14-32*p2^2*n3^14+4*p3*p1*n3^14+9*p2*p0*n3^14-42*p0^2*n3^14+7*p2*n2*n3^14-39*p0*n2*n3^14+25*p3*n3^15-p1*n3^15,\np3*p2^2*p1*n2*n3^11-36*p3^2*p0*n3^13-33*p2^2*p0*n3^13+41*p3*p1*p0*n3^13+50*p2*p0^2*n3^13+17*p0^3*n3^13-7*p3^2*n2*n3^13+25*p2^2*n2*n3^13-19*p3*p1*n2*n3^13+37*p2*p0*n2*n3^13+4*p0^2*n2*n3^13-32*p2*n2^2*n3^13-11*p0*n2^2*n3^13+16*p3*p2*n3^14-43*p2*p1*n3^14-10*p1*p0*n3^14-18*p3*n2*n3^14-21*p1*n2*n3^14,\np2^2*p0*n3^14-45*p3*p1*p0*n3^14-21*p2*p0^2*n3^14+28*p0^3*n3^14-2*p3^2*n2*n3^14+19*p2^2*n2*n3^14+50*p3*p1*n2*n3^14+49*p2*p0*n2*n3^14+40*p0^2*n2*n3^14-37*p2*n2^2*n3^14+22*p0*n2^2*n3^14-15*p3*p2*n3^15+10*p2*p1*n3^15-50*p3*p0*n3^15+29*p1*p0*n3^15+36*p3*n2*n3^15+42*p1*n2*n3^15,\np3^2*p0*n3^14-16*p3*p1*p0*n3^14-13*p2*p0^2*n3^14+44*p0^3*n3^14-12*p3^2*n2*n3^14+38*p2^2*n2*n3^14+8*p3*p1*n2*n3^14+27*p2*p0*n2*n3^14-48*p0^2*n2*n3^14+32*p2*n2^2*n3^14+11*p0*n2^2*n3^14-40*p3*p2*n3^15-22*p2*p1*n3^15+29*p3*p0*n3^15+27*p1*p0*n3^15+18*p3*n2*n3^15+21*p1*n2*n3^15,\np2^2*p1*n3^14-7*p3*p2*p0*n3^14+48*p3*p0^2*n3^14-3*p1*p0^2*n3^14-16*p3*p2*n2*n3^14+10*p2*p1*n2*n3^14+19*p3*p0*n2*n3^14-30*p1*p0*n2*n3^14+2*p3*n2^2*n3^14+37*p1*n2^2*n3^14-16*p3^2*n3^15-9*p2^2*n3^15+50*p3*p1*n3^15+11*p2*p0*n3^15+35*p0^2*n3^15+11*p2*n2*n3^15+41*p0*n2*n3^15+32*p3*n3^16+14*p1*n3^16,\np3^2*p1*n3^14-30*p3*p2*p0*n3^14-32*p3*p0^2*n3^14+18*p1*p0^2*n3^14-14*p3*p2*n2*n3^14+41*p2*p1*n2*n3^14+6*p3*p0*n2*n3^14-22*p1*p0*n2*n3^14-12*p3*n2^2*n3^14-20*p1*n2^2*n3^14-29*p3^2*n3^15-47*p2^2*n3^15-25*p3*p1*n3^15+35*p2*p0*n3^15-8*p0^2*n3^15+35*p2*n2*n3^15-44*p0*n2*n3^15+10*p3*n3^16+17*p1*n3^16,\np3*p2^2*n3^14+6*p3*p2*p0*n3^14-34*p3*p0^2*n3^14-44*p1*p0^2*n3^14+23*p3*p2*n2*n3^14+12*p2*p1*n2*n3^14+19*p3*p0*n2*n3^14-36*p1*p0*n2*n3^14-38*p3*n2^2*n3^14+4*p1*n2^2*n3^14+26*p3^2*n3^15-31*p2^2*n3^15+5*p3*p1*n3^15-7*p2*p0*n3^15+42*p0^2*n3^15-7*p2*n2*n3^15+29*p0*n2*n3^15-2*p3*n3^16+37*p1*n3^16,\np3^3*n3^14,\np0*n2^3*n3^13+11*p3*p2*p0*n3^14-12*p3*p0^2*n3^14+46*p1*p0^2*n3^14+7*p2*p1*n2*n3^14+6*p3*p0*n2*n3^14-32*p1*p0*n2*n3^14-42*p3*n2^2*n3^14+32*p1*n2^2*n3^14-6*p3^2*n3^15+18*p2^2*n3^15+15*p3*p1*n3^15+47*p2*p0*n3^15-14*p0^2*n3^15+36*p2*n2*n3^15-19*p0*n2*n3^15-25*p3*n3^16+28*p1*n3^16,\np2*n2^3*n3^13+36*p3*p2*p0*n3^14+p3*p0^2*n3^14+46*p1*p0^2*n3^14-2*p3*p2*n2*n3^14-20*p2*p1*n2*n3^14+34*p3*p0*n2*n3^14+11*p1*p0*n2*n3^14+5*p3*n2^2*n3^14-47*p1*n2^2*n3^14+3*p3^2*n3^15-18*p2^2*n3^15-18*p3*p1*n3^15+16*p2*p0*n3^15-35*p0^2*n3^15-11*p2*n2*n3^15+2*p0*n2*n3^15-40*p3*n3^16+13*p1*n3^16,\np0^2*n2^2*n3^13+45*p3*p2*p0*n3^14+12*p3*p0^2*n3^14+31*p1*p0^2*n3^14+28*p3*p2*n2*n3^14-40*p2*p1*n2*n3^14-49*p3*p0*n2*n3^14+44*p1*p0*n2*n3^14-41*p3*n2^2*n3^14-p1*n2^2*n3^14+40*p3^2*n3^15+33*p2^2*n3^15-13*p3*p1*n3^15+48*p2*p0*n3^15-13*p0^2*n3^15+19*p2*n2*n3^15-10*p0*n2*n3^15-4*p3*n3^16+36*p1*n3^16\nBASIS_END\nRESULT_END\n",
+      "term_counts": [
+        7,
+        17,
+        42,
+        82,
+        157,
+        267
+      ],
+      "unit": 0
+    },
+    {
+      "basis_preview": "p1^2-51*p2*p0+47*p0^2+23*p2*n2+7*p0*n2+27*p3*n3+16*p1*n3,\np2*p1*p0+5*p3*p0^2+17*p1*p0^2+10*p3*p2*n2+29*p2*p1*n2-36*p3*p0*n2-42*p1*p0*n2+14*p3*n2^2+21*p1*n2^2-43*p3^2*n3-9*p2^2*n3-5*p3*p1*n3+17*p2*p0*n3+35*p0^2*n3-13*p2*n2*n3-39*p0*n2*n3-16*p3*n3^2-45*p1*n3^2,\np3*p1*p0^2+50*p2*p0^3-43*p0^4+38*p2^3*n2+15*p3*p2*p1*n2+29*p3^2*p0*n2-46*p2^2*p0*n2-9*p3*p1*p0*n2+33*p2*p0^2*n2+22*p0^3*n2+11*p3^2*n2^2-5*p2^2*n2^2+26*p3*p1*n2^2-47*p2*p0*n2^2+43*p0^2*n2^2+34*p2*n2^3-20*p0*n2^3+17*p3*p2^2*n3+30*p2^2*p1*n3-12*p3*p2*p0*n3+40*p3*p0^2*n3+43*p1*p0^2*n3+34*p3*p2*n2*n3+43*p2*p1*n2*n3-22*p3*p0*n2*n3-14*p1*p0*n2*n3-26*p3*n2^2*n3+3*p1*n2^2*n3+35*p3^2*n3^2-p2^2*n3^2-43*p3*p1*n3^2-48*p2*p0*n3^2-34*p0^2*n3^2+26*p2*n2*n3^2-42*p0*n2*n3^2+8*p3*n3^3+7*p1*n3^3,\np2^2*p0^2-7*p2*p0^3+35*p0^4-32*p2^3*n2+27*p3*p2*p1*n2-19*p3^2*p0*n2+27*p2^2*p0*n2-18*p3*p1*p0*n2-p2*p0^2*n2+12*p0^3*n2+7*p3^2*n2^2+48*p2^2*n2^2+26*p3*p1*n2^2-18*p2*p0*n2^2-38*p0^2*n2^2-33*p2*n2^3-9*p0*n2^3-36*p3*p2^2*n3-17*p3^2*p1*n3+9*p2^2*p1*n3+32*p3*p2*p0*n3+34*p3*p0^2*n3+11*p1*p0^2*n3+48*p3*p2*n2*n3+48*p3*p0*n2*n3-48*p1*p0*n2*n3-25*p3*n2^2*n3+23*p1*n2^2*n3-6*p3^2*n3^2-28*p2^2*n3^2+50*p3*p1*n3^2+24*p2*p0*n3^2+32*p0^2*n3^2+18*p2*n2*n3^2+5*p0*n2*n3^2-13*p3*n3^3-18*p1*n3^3,\np3*p0^4-40*p1*p0^4+22*p2^3*p1*n2+16*p3*p2^2*p0*n2+p3^2*p1*p0*n2-38*p3*p2*p0^2*n2+17*p3*p0^3*n2-3*p1*p0^3*n2+36*p3^3*n2^2-3*p3*p2^2*n2^2-9*p3^2*p1*n2^2+41*p2^2*p1*n2^2+10*p3*p2*p0*n2^2-4*p3*p0^2*n2^2+34*p1*p0^2*n2^2-19*p3*p2*n2^3-9*p2*p1*n2^3-6*p3*p0*n2^3-35*p1*p0*n2^3+5*p3*n2^4-13*p1*n2^4+3*p2^4*n3+10*p3*p2^2*p1*n3-49*p3^2*p2*p0*n3-34*p2^3*p0*n3+31*p3^2*p0^2*n3+44*p2*p0^3*n3+36*p0^4*n3-38*p3^2*p2*n2*n3-23*p2^3*n2*n3+40*p3*p2*p1*n2*n3+33*p3^2*p0*n2*n3-39*p2^2*p0*n2*n3-30*p3*p1*p0*n2*n3-46*p2*p0^2*n2*n3-p0^3*n2*n3-44*p3^2*n2^2*n3-20*p2^2*n2^2*n3+21*p3*p1*n2^2*n3-50*p2*p0*n2^2*n3-2*p0^2*n2^2*n3-36*p2*n2^3*n3-7*p0*n2^3*n3-23*p3^3*n3^2-38*p3*p2^2*n3^2-23*p3^2*p1*n3^2+19*p2^2*p1*n3^2+21*p3*p2*p0*n3^2-33*p3*p0^2*n3^2+40*p1*p0^2*n3^2-37*p3*p2*n2*n3^2+44*p2*p1*n2*n3^2+25*p1*p0*n2*n3^2+33*p3*n2^2*n3^2+27*p1*n2^2*n3^2-48*p3^2*n3^3+25*p2^2*n3^3+33*p3*p1*n3^3+47*p2*p0*n3^3+43*p0^2*n3^3+6*p2*n2*n3^3-26*p0*n2*n3^3-3*p3*n3^4-30*p1*n3^4,\np3*p2*p0^3+2*p1*p0^4+40*p2^3*p1*n2-13*p3*p2^2*p0*n2-34*p3^2*p1*p0*n2+45*p3*p2*p0^2*n2+29*p3*p0^3*n2+50*p1*p0^3*n2+40*p3^3*n2^2+7*p3*p2^2*n2^2-32*p3^2*p1*n2^2-26*p2^2*p1*n2^2+47*p3*p2*p0*n2^2-23*p3*p0^2*n2^2-19*p1*p0^2*n2^2+14*p3*p2*n2^3-30*p2*p1*n2^3+28*p3*p0*n2^3+19*p1*p0*n2^3+21*p3*n2^4+3*p1*n2^4-31*p2^4*n3-43*p3^2*p2*p0*n3+38*p2^3*p0*n3-17*p3^2*p0^2*n3-27*p2*p0^3*n3+8*p0^4*n3+9*p3^2*p2*n2*n3+29*p2^3*n2*n3-5*p3*p2*p1*n2*n3-11*p3^2*p0*n2*n3-6*p2^2*p0*n2*n3+8*p3*p1*p0*n2*n3+3*p2*p0^2*n2*n3-8*p0^3*n2*n3+48*p3^2*n2^2*n3-33*p2^2*n2^2*n3-50*p3*p1*n2^2*n3-13*p2*p0*n2^2*n3-21*p0^2*n2^2*n3-23*p2*n2^3*n3+24*p0*n2^3*n3-35*p3^3*n3^2-18*p3*p2^2*n3^2+2*p3^2*p1*n3^2+46*p2^2*p1*n3^2-38*p3*p2*p0*n3^2-27*p3*p0^2*n3^2-14*p1*p0^2*n3^2-48*p3*p2*n2*n3^2+39*p2*p1*n2*n3^2-22*p3*p0*n2*n3^2+11*p1*p0*n2*n3^2-43*p3*n2^2*n3^2+21*p1*n2^2*n3^2-23*p3^2*n3^3-13*p2^2*n3^3+18*p3*p1*n3^3+29*p2*p0*n3^3-30*p0^2*n3^3+44*p2*n2*n3^3+22*p0*n2*n3^3+48*p3*n3^4-38*p1*n3^4,\np3^2*p0^3-46*p2*p0^4+43*p0^5+13*p2^4*n2-3*p3*p2^2*p1*n2-45*p3^2*p2*p0*n2-28*p2^3*p0*n2-28*p3^2*p0^2*n2-10*p2*p0^3*n2+32*p0^4*n2+39*p3^2*p2*n2^2-36*p2^3*n2^2+50*p3*p2*p1*n2^2-40*p3^2*p0*n2^2+41*p2^2*p0*n2^2+29*p3*p1*p0*n2^2-46*p2*p0^2*n2^2+9*p0^3*n2^2-8*p3^2*n2^3+4*p2^2*n2^3-14*p3*p1*n2^3-34*p2*p0*n2^3-6*p0^2*n2^3+40*p2*n2^4-37*p0*n2^4-24*p3*p2^3*n3-6*p2^3*p1*n3+12*p3^3*p0*n3+36*p3*p2^2*p0*n3+35*p3^2*p1*p0*n3-37*p3*p2*p0^2*n3-45*p3*p0^3*n3+41*p1*p0^3*n3-34*p3*p2^2*n2*n3+9*p3^2*p1*n2*n3+18*p2^2*p1*n2*n3-43*p3*p2*p0*n2*n3+43*p3*p0^2*n2*n3-37*p1*p0^2*n2*n3+15*p3*p2*n2^2*n3+46*p2*p1*n2^2*n3+10*p3*p0*n2^2*n3-37*p1*p0*n2^2*n3-13*p3*n2^3*n3+18*p1*n2^3*n3-8*p3^2*p2*n3^2-46*p2^3*n3^2+31*p3*p2*p1*n3^2-20*p3^2*p0*n3^2+27*p2^2*p0*n3^2+28*p3*p1*p0*n3^2+42*p2*p0^2*n3^2-38*p0^3*n3^2-48*p3^2*n2*n3^2-50*p2^2*n2*n3^2-38*p3*p1*n2*n3^2-36*p2*p0*n2*n3^2-33*p0^2*n2*n3^2-25*p2*n2^2*n3^2-27*p0*n2^2*n3^2+33*p3*p",
+      "basis_sha256": "3d5a93b4f3dcdad0db2600b637bbfecfaccf88cebd1d9df4bf91060e9a655864",
+      "basis_size": 569,
+      "chart": "alpha0",
+      "cutoff": 7,
+      "dimension": 2,
+      "elapsed_ticks": 0,
+      "input_sha256": "a6b2d186e29d8619375e6fcfa6326621d923194ae832d03e61f8ea7de1662303",
+      "prime": 103,
+      "returncode": 0,
+      "seconds": 0.36790958303026855,
+      "status": "completed",
+      "stderr": "",
+      "stdout_tail": "-42*p1*n2^2*n3^13+43*p3^2*n3^14+32*p2^2*n3^14+26*p3*p1*n3^14+2*p2*p0*n3^14+21*p0^2*n3^14+36*p2*n2*n3^14+16*p0*n2*n3^14+37*p3*n3^15-37*p1*n3^15,\np3^2*p2*p0*n2*n3^11+45*p3^2*p0*n3^13-5*p2^2*p0*n3^13+21*p3*p1*p0*n3^13-16*p2*p0^2*n3^13-34*p0^3*n3^13+2*p3^2*n2*n3^13+15*p2^2*n2*n3^13-42*p3*p1*n2*n3^13+5*p2*p0*n2*n3^13-27*p0^2*n2*n3^13-18*p2*n2^2*n3^13-p0*n2^2*n3^13-48*p3*p2*n3^14+36*p2*p1*n3^14-13*p3*p0*n3^14+23*p1*p0*n3^14-48*p3*n2*n3^14-17*p1*n2*n3^14,\np3^3*p0*n2*n3^11+47*p0^2*n2^2*n3^12+11*p2*n2^3*n3^12-14*p0*n2^3*n3^12-28*p3^3*n3^13+42*p3*p2^2*n3^13-50*p3^2*p1*n3^13-8*p2^2*p1*n3^13-23*p3*p2*p0*n3^13-41*p3*p0^2*n3^13-15*p1*p0^2*n3^13+13*p3*p2*n2*n3^13+8*p2*p1*n2*n3^13+24*p3*p0*n2*n3^13-30*p1*p0*n2*n3^13-42*p3*n2^2*n3^13+6*p1*n2^2*n3^13-24*p3^2*n3^14-47*p2^2*n3^14-49*p3*p1*n3^14-39*p2*p0*n3^14+44*p0^2*n3^14-7*p2*n2*n3^14+14*p0*n2*n3^14+38*p3*n3^15+32*p1*n3^15,\np2^3*p1*n2*n3^11-22*p0^2*n2^2*n3^12+42*p2*n2^3*n3^12+12*p0*n2^3*n3^12+26*p3^3*n3^13+4*p3*p2^2*n3^13+5*p3^2*p1*n3^13-31*p2^2*p1*n3^13+2*p3*p2*p0*n3^13+p3*p0^2*n3^13-15*p1*p0^2*n3^13+40*p3*p2*n2*n3^13+17*p2*p1*n2*n3^13+46*p3*p0*n2*n3^13+9*p1*p0*n2*n3^13+51*p3*n2^2*n3^13-13*p1*n2^2*n3^13-49*p3^2*n3^14+28*p2^2*n3^14-5*p3*p1*n3^14-17*p2*p0*n3^14-19*p0^2*n3^14+50*p2*n2*n3^14+34*p0*n2*n3^14+32*p3*n3^15-40*p1*n3^15,\np3*p2^2*p1*n2*n3^11-3*p3^2*p0*n3^13-14*p2^2*p0*n3^13+8*p3*p1*p0*n3^13+30*p2*p0^2*n3^13-28*p0^3*n3^13+41*p3^2*n2*n3^13+13*p2^2*n2*n3^13+37*p3*p1*n2*n3^13-37*p2*p0*n2*n3^13+17*p0^2*n2*n3^13-12*p2*n2^2*n3^13-35*p0*n2^2*n3^13+17*p3*p2*n3^14+27*p2*p1*n3^14-11*p3*p0*n3^14-42*p1*p0*n3^14-32*p3*n2*n3^14+23*p1*n2*n3^14,\np2^2*p0*n3^14-50*p3*p1*p0*n3^14+9*p2*p0^2*n3^14+39*p0^3*n3^14+23*p3^2*n2*n3^14+11*p2^2*n2*n3^14+46*p3*p1*n2*n3^14-19*p2*p0*n2*n3^14+9*p0^2*n2*n3^14+22*p2*n2^2*n3^14+47*p0*n2^2*n3^14-23*p3*p2*n3^15-49*p2*p1*n3^15-26*p3*p0*n3^15-47*p1*p0*n3^15-10*p3*n2*n3^15-25*p1*n2*n3^15,\np3^2*p0*n3^14-44*p3*p1*p0*n3^14+51*p2*p0^2*n3^14-p0^3*n3^14-18*p3^2*n2*n3^14+13*p2^2*n2*n3^14-21*p3*p1*n2*n3^14-2*p2*p0*n2*n3^14+21*p0^2*n2*n3^14-30*p2*n2^2*n3^14-36*p0*n2^2*n3^14+33*p3*p2*n3^15+48*p2*p1*n3^15+22*p3*p0*n3^15-7*p1*p0*n3^15+23*p3*n2*n3^15+6*p1*n2*n3^15,\np3^2*p1*n3^14-3*p2^2*p1*n3^14-22*p3*p2*p0*n3^14-7*p3*p0^2*n3^14+20*p1*p0^2*n3^14-9*p3*p2*n2*n3^14-6*p2*p1*n2*n3^14+20*p3*p0*n2*n3^14+41*p1*p0*n2*n3^14-34*p3*n2^2*n3^14-51*p1*n2^2*n3^14-13*p3^2*n3^15-37*p2^2*n3^15-p3*p1*n3^15-p2*p0*n3^15+38*p0^2*n3^15+16*p2*n2*n3^15+26*p0*n2*n3^15-37*p3*n3^16+30*p1*n3^16,\np3*p2^2*n3^14-35*p2^2*p1*n3^14-16*p3*p2*p0*n3^14+14*p3*p0^2*n3^14-41*p1*p0^2*n3^14-49*p3*p2*n2*n3^14+2*p2*p1*n2*n3^14-21*p3*p0*n2*n3^14-48*p1*p0*n2*n3^14-23*p3*n2^2*n3^14+17*p1*n2^2*n3^14+3*p3^2*n3^15-22*p2^2*n3^15-3*p3*p1*n3^15-34*p2*p0*n3^15-47*p0^2*n3^15+29*p2*n2*n3^15-43*p0*n2*n3^15-22*p3*n3^16-10*p1*n3^16,\np3^3*n3^14-26*p2^2*p1*n3^14-40*p3*p2*p0*n3^14-45*p3*p0^2*n3^14+15*p1*p0^2*n3^14-p3*p2*n2*n3^14+47*p2*p1*n2*n3^14-9*p3*p0*n2*n3^14+5*p1*p0*n2*n3^14+26*p3*n2^2*n3^14+39*p1*n2^2*n3^14-3*p3^2*n3^15-2*p2^2*n3^15+29*p3*p1*n3^15+25*p2*p0*n3^15-23*p0^2*n3^15+12*p2*n2*n3^15-32*p0*n2*n3^15-2*p3*n3^16-29*p1*n3^16,\np0*n2^3*n3^13+39*p2^2*p1*n3^14+43*p3*p2*p0*n3^14-31*p3*p0^2*n3^14-12*p1*p0^2*n3^14+5*p3*p2*n2*n3^14+20*p2*p1*n2*n3^14+35*p3*p0*n2*n3^14-26*p1*p0*n2*n3^14-23*p3*n2^2*n3^14+37*p1*n2^2*n3^14+8*p3^2*n3^15+5*p2^2*n3^15+37*p3*p1*n3^15-8*p2*p0*n3^15+30*p0^2*n3^15+27*p2*n2*n3^15+16*p0*n2*n3^15+44*p3*n3^16-37*p1*n3^16,\np2*n2^3*n3^13-10*p2^2*p1*n3^14-38*p3*p2*p0*n3^14+5*p3*p0^2*n3^14+43*p1*p0^2*n3^14-6*p3*p2*n2*n3^14-17*p2*p1*n2*n3^14-51*p3*p0*n2*n3^14+30*p1*p0*n2*n3^14-50*p3*n2^2*n3^14+41*p1*n2^2*n3^14+15*p3^2*n3^15+25*p2^2*n3^15+11*p3*p1*n3^15+26*p2*p0*n3^15+2*p0^2*n3^15+27*p2*n2*n3^15-28*p0*n2*n3^15-6*p3*n3^16+39*p1*n3^16,\np0^2*n2^2*n3^13+22*p2^2*p1*n3^14+8*p3*p2*p0*n3^14+34*p3*p0^2*n3^14-26*p1*p0^2*n3^14-18*p3*p2*n2*n3^14-38*p2*p1*n2*n3^14-6*p3*p0*n2*n3^14-7*p1*p0*n2*n3^14-40*p3*n2^2*n3^14+43*p1*n2^2*n3^14+48*p3^2*n3^15+11*p2^2*n3^15+13*p2*p0*n3^15+8*p0^2*n3^15-44*p2*n2*n3^15+17*p0*n2*n3^15+p3*n3^16-20*p1*n3^16\nBASIS_END\nRESULT_END\n",
+      "term_counts": [
+        7,
+        17,
+        42,
+        82,
+        157,
+        267
+      ],
+      "unit": 0
+    },
+    {
+      "basis_preview": "p1^2-53*p2*p0+44*p0^2-15*p2*n2+14*p0*n2-40*p3*n3-29*p1*n3,\np2*p1*p0+4*p3*p0^2+36*p1*p0^2+10*p3*p2*n2-29*p2*p1*n2-36*p3*p0*n2-p1*p0*n2+52*p3*n2^2-2*p1*n2^2-47*p3^2*n3-9*p2^2*n3+53*p3*p1*n3+27*p2*p0*n3+18*p0^2*n3+27*p2*n2*n3+13*p0*n2*n3-37*p3*n3^2-4*p1*n3^2,\np3*p1*p0^2-15*p2*p0^3-26*p0^4+17*p2^3*n2-48*p3*p2*p1*n2-30*p3^2*p0*n2+13*p2^2*p0*n2-15*p3*p1*p0*n2+41*p2*p0^2*n2+25*p0^3*n2-34*p3^2*n2^2-30*p2^2*n2^2-31*p3*p1*n2^2+21*p2*p0*n2^2-48*p0^2*n2^2-39*p2*n2^3+33*p0*n2^3+24*p3*p2^2*n3+20*p3^2*p1*n3+51*p2^2*p1*n3+2*p3*p2*p0*n3+10*p3*p0^2*n3+43*p1*p0^2*n3-8*p3*p2*n2*n3+35*p2*p1*n2*n3-40*p3*p0*n2*n3+43*p1*p0*n2*n3+20*p3*n2^2*n3-13*p1*n2^2*n3-12*p3^2*n3^2+45*p2^2*n3^2-20*p3*p1*n3^2-20*p2*p0*n3^2-23*p0^2*n3^2-37*p0*n2*n3^2-44*p3*n3^3-38*p1*n3^3,\np2^2*p0^2+4*p2*p0^3-36*p0^4+29*p2^3*n2+24*p3*p2*p1*n2-26*p3^2*p0*n2+45*p2^2*p0*n2-48*p3*p1*p0*n2+40*p2*p0^2*n2+50*p0^3*n2+49*p3^2*n2^2-12*p2^2*n2^2-31*p3*p1*n2^2+26*p2*p0*n2^2-53*p0^2*n2^2-38*p2*n2^3-6*p0*n2^3-22*p3*p2^2*n3+40*p3^2*p1*n3-2*p2^2*p1*n3-11*p3*p2*p0*n3-42*p3*p0^2*n3+5*p1*p0^2*n3-33*p3*p2*n2*n3+51*p2*p1*n2*n3-6*p3*p0*n2*n3+50*p1*p0*n2*n3+45*p3*n2^2*n3+2*p1*n2^2*n3+30*p3^2*n3^2-6*p2^2*n3^2-6*p3*p1*n3^2-29*p2*p0*n3^2-18*p0^2*n3^2+41*p2*n2*n3^2-22*p0*n2*n3^2-3*p3*n3^3+15*p1*n3^3,\np3*p0^4-27*p1*p0^4+31*p2^3*p1*n2-7*p3*p2^2*p0*n2-p3^2*p1*p0*n2-14*p3*p2*p0^2*n2+8*p3*p0^3*n2+46*p1*p0^3*n2-50*p3^3*n2^2-35*p3*p2^2*n2^2-32*p3^2*p1*n2^2-8*p2^2*p1*n2^2-32*p3*p2*p0*n2^2-23*p3*p0^2*n2^2-2*p1*p0^2*n2^2+19*p3*p2*n2^3+31*p2*p1*n2^3+10*p3*p0*n2^3+22*p1*p0*n2^3+5*p3*n2^4+37*p1*n2^4-22*p2^4*n3+26*p3*p2^2*p1*n3+33*p3^2*p2*p0*n3+29*p2^3*p0*n3-10*p3^2*p0^2*n3-32*p2*p0^3*n3-10*p0^4*n3-18*p3^2*p2*n2*n3-46*p2^3*n2*n3+5*p3*p2*p1*n2*n3-31*p3^2*p0*n2*n3+37*p2^2*p0*n2*n3+18*p3*p1*p0*n2*n3-8*p2*p0^2*n2*n3+46*p0^3*n2*n3+42*p3^2*n2^2*n3+24*p2^2*n2^2*n3-10*p3*p1*n2^2*n3-46*p2*p0*n2^2*n3-10*p0^2*n2^2*n3+8*p2*n2^3*n3+40*p0*n2^3*n3-11*p3^3*n3^2+25*p3*p2^2*n3^2-26*p3^2*p1*n3^2-40*p2^2*p1*n3^2+3*p3*p2*p0*n3^2-48*p3*p0^2*n3^2-31*p1*p0^2*n3^2+17*p3*p2*n2*n3^2+29*p2*p1*n2*n3^2+42*p3*p0*n2*n3^2+36*p1*p0*n2*n3^2-33*p3*n2^2*n3^2-26*p1*n2^2*n3^2+42*p3^2*n3^3-24*p2^2*n3^3+9*p3*p1*n3^3+35*p2*p0*n3^3-29*p0^2*n3^3-7*p2*n2*n3^3+14*p0*n2*n3^3+28*p3*n3^4-29*p1*n3^4,\np3*p2*p0^3+34*p1*p0^4-5*p2^3*p1*n2+49*p3*p2^2*p0*n2+28*p3^2*p1*p0*n2+9*p3*p2*p0^2*n2-4*p3*p0^3*n2-50*p1*p0^3*n2+5*p3^3*n2^2+45*p3*p2^2*n2^2+7*p3^2*p1*n2^2+13*p2^2*p1*n2^2-9*p3*p2*p0*n2^2-33*p3*p0^2*n2^2-25*p1*p0^2*n2^2-17*p3*p2*n2^3+43*p2*p1*n2^3+27*p3*p0*n2^3-21*p1*p0*n2^3+45*p3*n2^4+32*p1*n2^4+45*p2^4*n3+35*p3*p2^2*p1*n3+6*p3^2*p2*p0*n3+16*p2^3*p0*n3+4*p3^2*p0^2*n3-27*p2*p0^3*n3-18*p0^4*n3-16*p3^2*p2*n2*n3+36*p2^3*n2*n3-45*p3*p2*p1*n2*n3-4*p3^2*p0*n2*n3+47*p2^2*p0*n2*n3+7*p3*p1*p0*n2*n3-23*p2*p0^2*n2*n3+45*p0^3*n2*n3-52*p3^2*n2^2*n3-22*p2^2*n2^2*n3-40*p3*p1*n2^2*n3-37*p2*p0*n2^2*n3+12*p0^2*n2^2*n3-36*p2*n2^3*n3+39*p0*n2^3*n3+13*p3*p2^2*n3^2-26*p3^2*p1*n3^2-13*p2^2*p1*n3^2+37*p3*p2*p0*n3^2-37*p3*p0^2*n3^2-40*p1*p0^2*n3^2+30*p3*p2*n2*n3^2+26*p2*p1*n2*n3^2+38*p3*p0*n2*n3^2+6*p1*p0*n2*n3^2+7*p3*n2^2*n3^2+42*p1*n2^2*n3^2-25*p3^2*n3^3-8*p2^2*n3^3+36*p3*p1*n3^3-31*p2*p0*n3^3+18*p0^2*n3^3+33*p2*n2*n3^3-35*p0*n2*n3^3+35*p3*n3^4+19*p1*n3^4,\np3^2*p0^3-34*p2*p0^4+48*p0^5-31*p2^4*n2+12*p3*p2^2*p1*n2+10*p3^2*p2*p0*n2-51*p2^3*p0*n2+21*p3^2*p0^2*n2-4*p2*p0^3*n2-5*p0^4*n2-6*p3^2*p2*n2^2+14*p2^3*n2^2+4*p3*p2*p1*n2^2-44*p3^2*p0*n2^2-34*p2^2*p0*n2^2+40*p3*p1*p0*n2^2-39*p2*p0^2*n2^2-14*p0^3*n2^2+40*p3^2*n2^3-26*p2^2*n2^3+52*p3*p1*n2^3-18*p2*p0*n2^3-11*p0^2*n2^3+24*p2*n2^4-13*p0*n2^4-6*p3*p2^3*n3-5*p3^2*p2*p1*n3+14*p2^3*p1*n3+15*p3^3*p0*n3+51*p3*p2^2*p0*n3+31*p3^2*p1*p0*n3-39*p3*p2*p0^2*n3+48*p3*p0^3*n3+47*p1*p0^3*n3+20*p3^3*n2*n3+4*p3*p2^2*n2*n3+44*p3^2*p1*n2*n3-24*p2^2*p1*n2*n3+7*p3*p2*p0*n2*n3-10*p3*p0^2*n2*n3-25*p1*p0^2*n2*n3-16*p3*p2*n2^2*n3-4*p2*p1*n2^2*n3-33*p3*p0*n2^2*n3+50*p1*p0*n2^2*n3-51*p3*n2^3*n3+14*p1*n2^3*n3+22*p3^2*p2*n3^2+18*p2^3*n3^2+20*p3*p2*p1*n3^2-26*p3^2*p0*n3^2-10*p2^2*p0*n3^2+44*p3*p1*p0*n3^2-33*p2*p0^2*n3^2+6*p0^3*n3^2-32*p3^2*n2*n3^2+36*p2^2*n2*n3^2+18*p3*p1*n2*n3^2-19",
+      "basis_sha256": "920f1617757aa58f5e7d5266d783591fae4f978b379b62037a1c950afbc2fa2d",
+      "basis_size": 569,
+      "chart": "alpha0",
+      "cutoff": 7,
+      "dimension": 2,
+      "elapsed_ticks": 0,
+      "input_sha256": "e2092fac4cc758a371dffa0b2e07059e2978c3bf69a72f6f73609a4ec9296385",
+      "prime": 107,
+      "returncode": 0,
+      "seconds": 0.36654233298031613,
+      "status": "completed",
+      "stderr": "",
+      "stdout_tail": "2*n3^13-21*p2*p1*n2*n3^13-40*p3*p0*n2*n3^13+51*p1*p0*n2*n3^13-46*p3*n2^2*n3^13-28*p1*n2^2*n3^13-19*p3^2*n3^14-10*p2^2*n3^14-42*p3*p1*n3^14+10*p2*p0*n3^14+20*p0^2*n3^14-50*p2*n2*n3^14-47*p0*n2*n3^14-50*p3*n3^15-2*p1*n3^15,\np3^2*p2*p0*n2*n3^11-5*p3^2*p0*n3^13-53*p2^2*p0*n3^13+36*p3*p1*p0*n3^13-29*p2*p0^2*n3^13-39*p0^3*n3^13+34*p3^2*n2*n3^13+49*p2^2*n2*n3^13-51*p3*p1*n2*n3^13+19*p2*p0*n2*n3^13+19*p0^2*n2*n3^13-27*p2*n2^2*n3^13-39*p0*n2^2*n3^13-22*p3*p2*n3^14+42*p2*p1*n3^14+23*p3*p0*n3^14+7*p1*p0*n3^14+35*p3*n2*n3^14+12*p1*n2*n3^14,\np3^3*p0*n2*n3^11+5*p0^2*n2^2*n3^12+52*p2*n2^3*n3^12+11*p0*n2^3*n3^12-20*p3^3*n3^13-12*p3*p2^2*n3^13-6*p3^2*p1*n3^13-52*p2^2*p1*n3^13-35*p3*p2*p0*n3^13+36*p3*p0^2*n3^13-44*p1*p0^2*n3^13-7*p3*p2*n2*n3^13+18*p2*p1*n2*n3^13+7*p3*p0*n2*n3^13-49*p1*p0*n2*n3^13-32*p3*n2^2*n3^13-15*p1*n2^2*n3^13+28*p3^2*n3^14+37*p2^2*n3^14+30*p3*p1*n3^14-5*p2*p0*n3^14+19*p0^2*n3^14+12*p2*n2*n3^14+9*p0*n2*n3^14-29*p3*n3^15-11*p1*n3^15,\np2^3*p1*n2*n3^11+11*p0^2*n2^2*n3^12+42*p2*n2^3*n3^12-15*p0*n2^3*n3^12+33*p3^3*n3^13-46*p3*p2^2*n3^13+50*p3^2*p1*n3^13+22*p2^2*p1*n3^13+37*p3*p2*p0*n3^13+31*p3*p0^2*n3^13+22*p1*p0^2*n3^13+47*p3*p2*n2*n3^13-33*p2*p1*n2*n3^13-32*p3*p0*n2*n3^13+30*p1*p0*n2*n3^13+33*p3*n2^2*n3^13-30*p1*n2^2*n3^13+50*p3^2*n3^14+45*p2^2*n3^14-30*p3*p1*n3^14+32*p2*p0*n3^14+31*p0^2*n3^14-22*p2*n2*n3^14-30*p0*n2*n3^14+p1*n3^15,\np3*p2^2*p1*n2*n3^11+9*p3^2*p0*n3^13-43*p2^2*p0*n3^13+51*p3*p1*p0*n3^13-52*p2*p0^2*n3^13-31*p0^3*n3^13-30*p3^2*n2*n3^13+50*p2^2*n2*n3^13+46*p3*p1*n2*n3^13-12*p2*p0*n2*n3^13-35*p0^2*n2*n3^13-p2*n2^2*n3^13-49*p0*n2^2*n3^13-18*p3*p2*n3^14-47*p2*p1*n3^14+27*p3*p0*n3^14+21*p1*p0*n3^14+33*p3*n2*n3^14+48*p1*n2*n3^14,\np2^2*p0*n3^14-18*p3*p1*p0*n3^14+4*p2*p0^2*n3^14-7*p0^3*n3^14+14*p3^2*n2*n3^14+14*p2^2*n2*n3^14+11*p3*p1*n2*n3^14+47*p2*p0*n2*n3^14-47*p0^2*n2*n3^14-25*p2*n2^2*n3^14-48*p0*n2^2*n3^14+40*p3*p2*n3^15-5*p2*p1*n3^15+6*p3*p0*n3^15+48*p1*p0*n3^15-31*p3*n2*n3^15+23*p1*n2*n3^15,\np3*p2*p0*n3^14+6*p3*p0^2*n3^14-2*p1*p0^2*n3^14+21*p3*p2*n2*n3^14-50*p2*p1*n2*n3^14-37*p3*p0*n2*n3^14+16*p1*p0*n2*n3^14-39*p3*n2^2*n3^14-52*p1*n2^2*n3^14-47*p3^2*n3^15-20*p2^2*n3^15-31*p3*p1*n3^15+50*p2*p0*n3^15+16*p0^2*n3^15+39*p2*n2*n3^15-49*p0*n2*n3^15+52*p3*n3^16+48*p1*n3^16,\np3^2*p0*n3^14-9*p3*p1*p0*n3^14+49*p2*p0^2*n3^14-25*p0^3*n3^14+16*p3^2*n2*n3^14+13*p2^2*n2*n3^14+22*p3*p1*n2*n3^14+33*p2*p0*n2*n3^14+45*p0^2*n2*n3^14+35*p2*n2^2*n3^14+3*p0*n2^2*n3^14-13*p3*p2*n3^15-41*p2*p1*n3^15-4*p3*p0*n3^15-18*p1*p0*n3^15+22*p3*n2*n3^15+32*p1*n2*n3^15,\np3^2*p1*n3^14+17*p2^2*p1*n3^14-8*p3*p0^2*n3^14-4*p1*p0^2*n3^14-29*p3*p2*n2*n3^14+7*p2*p1*n2*n3^14-22*p3*p0*n2*n3^14+32*p1*p0*n2*n3^14+29*p3*n2^2*n3^14+3*p1*n2^2*n3^14+2*p3^2*n3^15-40*p2^2*n3^15+29*p3*p1*n3^15-7*p2*p0*n3^15+32*p0^2*n3^15-29*p2*n2*n3^15+9*p0*n2*n3^15-3*p3*n3^16-11*p1*n3^16,\np3*p2^2*n3^14-15*p2^2*p1*n3^14-37*p3*p0^2*n3^14+35*p1*p0^2*n3^14+13*p3*p2*n2*n3^14+19*p2*p1*n2*n3^14+32*p3*p0*n2*n3^14+41*p1*p0*n2*n3^14-13*p3*n2^2*n3^14-53*p1*n2^2*n3^14+36*p3^2*n3^15+29*p2^2*n3^15-13*p3*p1*n3^15-19*p2*p0*n3^15+41*p0^2*n3^15+13*p2*n2*n3^15-52*p0*n2*n3^15+53*p3*n3^16+16*p1*n3^16,\np3^3*n3^14,\np0*n2^3*n3^13-41*p2^2*p1*n3^14-37*p3*p0^2*n3^14-12*p1*p0^2*n3^14-35*p3*p2*n2*n3^14+40*p2*p1*n2*n3^14+25*p3*p0*n2*n3^14-44*p1*p0*n2*n3^14-11*p3*n2^2*n3^14+24*p1*n2^2*n3^14+12*p3^2*n3^15+20*p2^2*n3^15-37*p3*p1*n3^15-14*p2*p0*n3^15-28*p0^2*n3^15-46*p2*n2*n3^15-12*p0*n2*n3^15-38*p3*n3^16-21*p1*n3^16,\np2*n2^3*n3^13-40*p2^2*p1*n3^14-15*p3*p0^2*n3^14-42*p1*p0^2*n3^14+17*p3*p2*n2*n3^14-26*p2*p1*n2*n3^14-26*p3*p0*n2*n3^14+27*p1*p0*n2*n3^14+29*p3*n2^2*n3^14-41*p1*n2^2*n3^14-31*p3^2*n3^15+10*p2^2*n3^15-40*p3*p1*n3^15-19*p2*p0*n3^15+13*p0^2*n3^15+28*p2*n2*n3^15-17*p0*n2*n3^15-2*p3*n3^16-3*p1*n3^16,\np0^2*n2^2*n3^13-12*p2^2*p1*n3^14+17*p3*p0^2*n3^14+6*p1*p0^2*n3^14-22*p3*p2*n2*n3^14-3*p2*p1*n2*n3^14+51*p3*p0*n2*n3^14-52*p1*p0*n2*n3^14+46*p3*n2^2*n3^14-10*p1*n2^2*n3^14+40*p3^2*n3^15-45*p2^2*n3^15-31*p3*p1*n3^15-33*p2*p0*n3^15-35*p0^2*n3^15+39*p2*n2*n3^15-38*p0*n2*n3^15-13*p3*n3^16-13*p1*n3^16\nBASIS_END\nRESULT_END\n",
+      "term_counts": [
+        7,
+        17,
+        42,
+        82,
+        157,
+        267
+      ],
+      "unit": 0
+    },
+    {
+      "all_radical_tests_unit": 1,
+      "chart": "alpha0_radical",
+      "cutoff": 7,
+      "input_sha256": "774161fd25ad4def0420959282b33cb59630dd6e13f9f00a78e46d4492a7108e",
+      "prime": 101,
+      "radical_tests": [
+        {
+          "generator": "p1",
+          "unit": 1
+        },
+        {
+          "generator": "p0",
+          "unit": 1
+        },
+        {
+          "generator": "p3*n2",
+          "unit": 1
+        },
+        {
+          "generator": "p3*n3",
+          "unit": 1
+        },
+        {
+          "generator": "p2*n2",
+          "unit": 1
+        },
+        {
+          "generator": "p2*n3",
+          "unit": 1
+        }
+      ],
+      "returncode": 0,
+      "seconds": 11.970524207979906,
+      "status": "completed",
+      "stderr": "",
+      "stdout_tail": "//used time: 3.07 sec\nradical_0=1\n//used time: 2.60 sec\nradical_1=1\n//used time: 1.83 sec\nradical_2=1\n//used time: 1.23 sec\nradical_3=1\n//used time: 1.94 sec\nradical_4=1\n//used time: 1.25 sec\nradical_5=1\nRESULT_BEGIN\nelapsed_ticks=12\nRESULT_END\n",
+      "term_counts": [
+        7,
+        17,
+        42,
+        82,
+        157,
+        267
+      ]
+    },
+    {
+      "all_radical_tests_unit": 1,
+      "chart": "alpha0_radical",
+      "cutoff": 7,
+      "input_sha256": "18184e2ffaaf329dbae8563f27972a637a376c71965af99b6f74adb9b03856ef",
+      "prime": 103,
+      "radical_tests": [
+        {
+          "generator": "p1",
+          "unit": 1
+        },
+        {
+          "generator": "p0",
+          "unit": 1
+        },
+        {
+          "generator": "p3*n2",
+          "unit": 1
+        },
+        {
+          "generator": "p3*n3",
+          "unit": 1
+        },
+        {
+          "generator": "p2*n2",
+          "unit": 1
+        },
+        {
+          "generator": "p2*n3",
+          "unit": 1
+        }
+      ],
+      "returncode": 0,
+      "seconds": 12.006756041955668,
+      "status": "completed",
+      "stderr": "",
+      "stdout_tail": "//used time: 3.15 sec\nradical_0=1\n//used time: 2.59 sec\nradical_1=1\n//used time: 1.83 sec\nradical_2=1\n//used time: 1.22 sec\nradical_3=1\n//used time: 1.91 sec\nradical_4=1\n//used time: 1.25 sec\nradical_5=1\nRESULT_BEGIN\nelapsed_ticks=12\nRESULT_END\n",
+      "term_counts": [
+        7,
+        17,
+        42,
+        82,
+        157,
+        267
+      ]
+    },
+    {
+      "all_radical_tests_unit": 1,
+      "chart": "alpha0_radical",
+      "cutoff": 7,
+      "input_sha256": "a1053639e961fee4894186f317822695fcf4527e91161e98a371b73f0960b773",
+      "prime": 107,
+      "radical_tests": [
+        {
+          "generator": "p1",
+          "unit": 1
+        },
+        {
+          "generator": "p0",
+          "unit": 1
+        },
+        {
+          "generator": "p3*n2",
+          "unit": 1
+        },
+        {
+          "generator": "p3*n3",
+          "unit": 1
+        },
+        {
+          "generator": "p2*n2",
+          "unit": 1
+        },
+        {
+          "generator": "p2*n3",
+          "unit": 1
+        }
+      ],
+      "returncode": 0,
+      "seconds": 12.422720375005156,
+      "status": "completed",
+      "stderr": "",
+      "stdout_tail": "//used time: 3.52 sec\nradical_0=1\n//used time: 2.60 sec\nradical_1=1\n//used time: 1.85 sec\nradical_2=1\n//used time: 1.23 sec\nradical_3=1\n//used time: 1.93 sec\nradical_4=1\n//used time: 1.25 sec\nradical_5=1\nRESULT_BEGIN\nelapsed_ticks=12\nRESULT_END\n",
+      "term_counts": [
+        7,
+        17,
+        42,
+        82,
+        157,
+        267
+      ]
+    }
+  ],
+  "elimination": "h_-1=0",
+  "exact_characteristic_zero_boundary": {
+    "all_unit": 1,
+    "backend": "msolve exact characteristic-zero F4",
+    "conclusion": "radical(I_2,...,I_7)=(p1,p0,p3*n2,p3*n3,p2*n2,p2*n3)",
+    "moments": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "radical_generators": [
+      "p1",
+      "p0",
+      "p3*n2",
+      "p3*n3",
+      "p2*n2",
+      "p2*n3"
+    ],
+    "tests": [
+      {
+        "generator": "p1",
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, p3, p2, p1, p0, n2, n3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "d97fd9e58767f5fa5d38b04889f649d1bd93af5a26a4bd85449e8243c3f7458e",
+        "returncode": 0,
+        "seconds": 2.117494500009343,
+        "stderr": "",
+        "unit": 1
+      },
+      {
+        "generator": "p0",
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, p3, p2, p1, p0, n2, n3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "d97fd9e58767f5fa5d38b04889f649d1bd93af5a26a4bd85449e8243c3f7458e",
+        "returncode": 0,
+        "seconds": 1.8009975830209441,
+        "stderr": "",
+        "unit": 1
+      },
+      {
+        "generator": "n2*p3",
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, p3, p2, p1, p0, n2, n3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "d97fd9e58767f5fa5d38b04889f649d1bd93af5a26a4bd85449e8243c3f7458e",
+        "returncode": 0,
+        "seconds": 1.2175825419835746,
+        "stderr": "",
+        "unit": 1
+      },
+      {
+        "generator": "n3*p3",
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, p3, p2, p1, p0, n2, n3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "d97fd9e58767f5fa5d38b04889f649d1bd93af5a26a4bd85449e8243c3f7458e",
+        "returncode": 0,
+        "seconds": 1.0103124169982038,
+        "stderr": "",
+        "unit": 1
+      },
+      {
+        "generator": "n2*p2",
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, p3, p2, p1, p0, n2, n3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "d97fd9e58767f5fa5d38b04889f649d1bd93af5a26a4bd85449e8243c3f7458e",
+        "returncode": 0,
+        "seconds": 1.2256369579699822,
+        "stderr": "",
+        "unit": 1
+      },
+      {
+        "generator": "n3*p2",
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, p3, p2, p1, p0, n2, n3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "d97fd9e58767f5fa5d38b04889f649d1bd93af5a26a4bd85449e8243c3f7458e",
+        "returncode": 0,
+        "seconds": 1.021990040957462,
+        "stderr": "",
+        "unit": 1
+      }
+    ]
+  },
+  "exact_characteristic_zero_projective_cover": {
+    "all_unit": 1,
+    "backend": "msolve exact characteristic-zero F4",
+    "conclusion": "the alpha=1 pure-moment scheme through moment 8 is empty",
+    "pivots": {
+      "D": "936-2592*p1-4992*p3",
+      "K": "720*p0-1872*p2"
+    },
+    "tests": [
+      {
+        "chart": "D_nonzero",
+        "moments": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, p3, p2, p1, p0, n2, n3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "d97fd9e58767f5fa5d38b04889f649d1bd93af5a26a4bd85449e8243c3f7458e",
+        "returncode": 0,
+        "seconds": 6.711292832973413,
+        "stderr": "",
+        "unit": 1
+      },
+      {
+        "chart": "D_zero_K_nonzero",
+        "moments": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, p3, p2, p1, p0, n2, n3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "d97fd9e58767f5fa5d38b04889f649d1bd93af5a26a4bd85449e8243c3f7458e",
+        "returncode": 0,
+        "seconds": 0.46018258295953274,
+        "stderr": "",
+        "unit": 1
+      },
+      {
+        "chart": "D_zero_K_zero",
+        "moments": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       p3, p2, p1, p0, n2, n3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "6bfeadefc98e3f610c8a6255707a4a24799cb4035b40b4a63e9c70bf1546c8e7",
+        "returncode": 0,
+        "seconds": 0.27579537499696016,
+        "stderr": "",
+        "unit": 1
+      }
+    ]
+  },
+  "exact_structural_checks": {
+    "second_moment_primitive": {
+      "720*n2*p0-1872*n2*p2-2592*n3*p1-4992*n3*p3+936*n3-4524*p0^2+2288*p0*p2+4576*p1^2+10296*p1+9009": true
+    },
+    "terminal_planes_exact_through_compiled_cutoff": {
+      "negative": true,
+      "positive": true
+    }
+  },
+  "family": "F=alpha*E+H3*O with H3 an arbitrary harmonic cubic",
+  "first_moment": "16*h_-1/35",
+  "format": "gvc3-harmonic-cubic-profile-v3",
+  "harmonic_basis": [
+    "x^3",
+    "x^2*t",
+    "x^2*y-4*x*t^2",
+    "3*x*y*t-2*t^3",
+    "x*y^2-4*y*t^2",
+    "y^2*t",
+    "y^3"
+  ],
+  "moment_term_counts": {
+    "2": 10,
+    "3": 27,
+    "4": 74,
+    "5": 162,
+    "6": 331,
+    "7": 616,
+    "8": 1093
+  },
+  "status": "exact characteristic-zero obstruction; modular cases are discovery replay"
+}

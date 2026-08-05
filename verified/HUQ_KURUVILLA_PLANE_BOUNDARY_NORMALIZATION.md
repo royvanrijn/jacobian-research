@@ -1,18 +1,22 @@
 # The characteristic-two plane counterexample: normalization and wild boundary
 
-> **Status.** This note proves the finite normalization, reconstruction open,
-> conductor, generic boundary ledger, and monodromy of the
-> Huq--Kuruvilla--Mondello plane map.  The normalization and ideal
-> decompositions have an exact Singular certificate; all displayed source,
-> chart, divisor, and local-different identities have an independent SymPy
-> replay.  The result is a positive-characteristic boundary theorem.  It does
-> not address the characteristic-zero plane Jacobian conjecture.
+> **Status.** This is a repository theorem about the boundary of Mondello's
+> external plane map.  The finite normalization and ideal decompositions have
+> an exact Singular certificate, while a separate SymPy calculation replays
+> the displayed source, chart, divisor, and local-different identities.  The
+> SymPy replay is not a second implementation of the integral-closure
+> algorithm.  An independent Sage/Singular, Magma, or differently organized
+> CAS audit of the normalization, conductor, completed nodes, different, and
+> residue ledger is still needed.  The result is a positive-characteristic
+> boundary theorem and does not address the characteristic-zero plane
+> Jacobian conjecture.
 
 The plane map and its exact separable degree-three proof are in the
 [parent audit](HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md#8-the-preserved-coordinate-and-the-dimension-two-theorem).
-The formula and preserved-fiber reduction are due to Romy Mondello,
-[*A Dimension-Two Counterexample to the Separable Jacobian Conjecture in
-Characteristic Two*](https://integrate-your-mind.github.io/#proof) (2026),
+The formula, plane theorem, and preserved-fiber reduction are due to Romy
+Mondello, [*A Dimension-Two Counterexample to the Separable Jacobian
+Conjecture in Characteristic Two*,
+arXiv:2608.02634v1](https://arxiv.org/abs/2608.02634) (2026),
 building on Irit Huq-Kuruvilla's
 [threefold map](https://arxiv.org/abs/2607.20968).  The normalization and
 boundary statements below are the contribution of this audit.
@@ -319,6 +323,11 @@ in \(S_3\), so
 In the Galois closure, the wild inertia detected by (4.4)--(5.3) acts as a
 transposition.  The prime-to-characteristic generic degree three therefore
 coexists with order-two wild inertia at the missing boundary.
+
+This is one residue-ledger proof of the monodromy statement.  Independent
+discriminant/resolvent and target-line specialization calculations, together
+with a separate derivation of the wild inertia filtration, remain open
+assurance tasks; the current checker does not supply those second routes.
 
 ## 7. Consequence for the positive-characteristic programme
 

@@ -1,0 +1,1200 @@
+{
+  "balanced_degree": 8,
+  "coefficient_boundaries": "a zero coefficient reduces to the exact two/three-channel theorem GVC3IHC",
+  "conclusion": "all collision and B=0 boundaries are excluded exactly; the four-distinct B!=0 chart is a three-prime modular unit candidate awaiting exact promotion",
+  "direction_collision_partitions": [
+    {
+      "cutoff": 4,
+      "directions": 2,
+      "exact_Q_result": {
+        "cutoff": 4,
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, a1, a2, a3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "83797e93777d27aadb1e04fb8a96c95f20cc0471156ec0af1fdad8cd75f2121a",
+        "returncode": 0,
+        "seconds": 0.009157042019069195,
+        "stderr": "",
+        "unit": 1
+      },
+      "groups": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "modular_results": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 4,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "e4169303d4240b49165c9672edc1f526e2905afe864b5ac339ca3757b234adf4",
+          "prime": 101,
+          "returncode": 0,
+          "seconds": 0.010744666971731931,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=4\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 4,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "9e8f8a5fb890e12d36da2a3ee5bd73dc71bbedf4952c411e2c54c21499726c2b",
+          "prime": 103,
+          "returncode": 0,
+          "seconds": 0.010583374998532236,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=4\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 4,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "aba5ad7618c7732873504f456785722983c3687c38df1f6c77a902a0b6e9d4c5",
+          "prime": 107,
+          "returncode": 0,
+          "seconds": 0.011267124966252595,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=4\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "nonzero_moment_orders": [
+        3,
+        4
+      ]
+    },
+    {
+      "cutoff": 3,
+      "directions": 2,
+      "exact_Q_result": {
+        "cutoff": 3,
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, a1, a2, a3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "83797e93777d27aadb1e04fb8a96c95f20cc0471156ec0af1fdad8cd75f2121a",
+        "returncode": 0,
+        "seconds": 0.008312791003845632,
+        "stderr": "",
+        "unit": 1
+      },
+      "groups": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          2
+        ]
+      ],
+      "modular_results": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 3,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "daa21910b91d2acc6092cd66cbe4adcd5646b6f716d4c44dc9ae86bc908d8622",
+          "prime": 101,
+          "returncode": 0,
+          "seconds": 0.01133033400401473,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=3\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 3,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "79a9479e0732086f2015ed7c50f043c211e0e21cc765348eb058a1ffe18ae9c1",
+          "prime": 103,
+          "returncode": 0,
+          "seconds": 0.010099167004227638,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=3\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 3,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "28455c33426d50209dcfcf0dd312134a2d5659c321a1a95608b4621236633c0c",
+          "prime": 107,
+          "returncode": 0,
+          "seconds": 0.011111750034615397,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=3\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "nonzero_moment_orders": [
+        3
+      ]
+    },
+    {
+      "cutoff": 4,
+      "directions": 2,
+      "exact_Q_result": {
+        "cutoff": 4,
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, a1, a2, a3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "83797e93777d27aadb1e04fb8a96c95f20cc0471156ec0af1fdad8cd75f2121a",
+        "returncode": 0,
+        "seconds": 0.008485374972224236,
+        "stderr": "",
+        "unit": 1
+      },
+      "groups": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "modular_results": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 4,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "ab57f0cb7b7df5374b1710bd04687b64073fe51ad424a8d42286e7751fe21577",
+          "prime": 101,
+          "returncode": 0,
+          "seconds": 0.009235125035047531,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=4\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 4,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "b5c75d8fdf083dab1c903b23fe44c3d5184ec65e6b52d69c0b086456e1f7fc4b",
+          "prime": 103,
+          "returncode": 0,
+          "seconds": 0.009541167004499584,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=4\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 4,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "4c02c47d199d83cd77bf06856d2be7256bb45b4ce698e7554075ff6cce5413fa",
+          "prime": 107,
+          "returncode": 0,
+          "seconds": 0.01006541698006913,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=4\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "nonzero_moment_orders": [
+        3,
+        4
+      ]
+    },
+    {
+      "cutoff": 6,
+      "directions": 3,
+      "exact_Q_result": {
+        "cutoff": 6,
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, a1, a2, a3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "83797e93777d27aadb1e04fb8a96c95f20cc0471156ec0af1fdad8cd75f2121a",
+        "returncode": 0,
+        "seconds": 0.014232665998861194,
+        "stderr": "",
+        "unit": 1
+      },
+      "groups": [
+        [
+          0,
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "modular_results": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "a9a36a6c36079d85d2b7cdcfd30c2c26ffd1d08fadb7e17def6a1c2420e110da",
+          "prime": 101,
+          "returncode": 0,
+          "seconds": 0.01083758397726342,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "87392b323fc50aba4d83360db15417f73ffd38523f3a1d778927751b83b33ad7",
+          "prime": 103,
+          "returncode": 0,
+          "seconds": 0.010822749987710267,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "30f8226b218656c5cdf217b7d479c59f764dfa3d549c3538d04a80772a33db1b",
+          "prime": 107,
+          "returncode": 0,
+          "seconds": 0.010407041991129518,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "nonzero_moment_orders": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "cutoff": 4,
+      "directions": 2,
+      "exact_Q_result": {
+        "cutoff": 4,
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, a1, a2, a3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "83797e93777d27aadb1e04fb8a96c95f20cc0471156ec0af1fdad8cd75f2121a",
+        "returncode": 0,
+        "seconds": 0.009235584002453834,
+        "stderr": "",
+        "unit": 1
+      },
+      "groups": [
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "modular_results": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 4,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "5ea6f19063d917a1362c5b55cb2d007d2a3b804b2746d8e5fc3c3210e0f34eef",
+          "prime": 101,
+          "returncode": 0,
+          "seconds": 0.011443792027421296,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=4\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 4,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "bdb5e163e297b199ce669178dcdf94ca0fe5f971162dff94c724103b35167e0b",
+          "prime": 103,
+          "returncode": 0,
+          "seconds": 0.010793666006065905,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=4\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 4,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "edd9dd6cfe0e5905165b390588db5cf16c8ac14962f3a17ea081929a4a36e344",
+          "prime": 107,
+          "returncode": 0,
+          "seconds": 0.011136415996588767,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=4\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "nonzero_moment_orders": [
+        3,
+        4
+      ]
+    },
+    {
+      "cutoff": 4,
+      "directions": 2,
+      "exact_Q_result": {
+        "cutoff": 4,
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, a1, a2, a3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "83797e93777d27aadb1e04fb8a96c95f20cc0471156ec0af1fdad8cd75f2121a",
+        "returncode": 0,
+        "seconds": 0.009422458009794354,
+        "stderr": "",
+        "unit": 1
+      },
+      "groups": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "modular_results": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 4,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "3178ff100cce2cee3cbee334bac833b328724104a11023b1cdaa89ebb91a2777",
+          "prime": 101,
+          "returncode": 0,
+          "seconds": 0.010411082999780774,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=4\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 4,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "ea3bb7ef8c117fa1cdfe7d916b06cd174aae55b74f88b2fee762222e86030073",
+          "prime": 103,
+          "returncode": 0,
+          "seconds": 0.010676542005967349,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=4\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 4,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "aadd56b607a97ed6781b23a68af0e5ddcfd190174c104f48734fe6b0c9bd2e5e",
+          "prime": 107,
+          "returncode": 0,
+          "seconds": 0.011026374995708466,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=4\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "nonzero_moment_orders": [
+        3,
+        4
+      ]
+    },
+    {
+      "cutoff": 6,
+      "directions": 3,
+      "exact_Q_result": {
+        "cutoff": 6,
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, a1, a2, a3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "83797e93777d27aadb1e04fb8a96c95f20cc0471156ec0af1fdad8cd75f2121a",
+        "returncode": 0,
+        "seconds": 0.022674583015032113,
+        "stderr": "",
+        "unit": 1
+      },
+      "groups": [
+        [
+          0,
+          2
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "modular_results": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "e0e92f42a29010d9b6b21a43c8ae5a9ea65e426a6f0a4ed3a4238e1e881416b0",
+          "prime": 101,
+          "returncode": 0,
+          "seconds": 0.011398124974220991,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "590d33374f9534bbf1421d0512456d12d22c6d32dc916149f073128d68fc018e",
+          "prime": 103,
+          "returncode": 0,
+          "seconds": 0.011947041028179228,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "cc4a7a91bc87cfa94c66ed7f950cc0116c936c5b9fef22765dca528514dd970d",
+          "prime": 107,
+          "returncode": 0,
+          "seconds": 0.010886624979320914,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "nonzero_moment_orders": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "cutoff": 4,
+      "directions": 2,
+      "exact_Q_result": {
+        "cutoff": 4,
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, a1, a2, a3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "83797e93777d27aadb1e04fb8a96c95f20cc0471156ec0af1fdad8cd75f2121a",
+        "returncode": 0,
+        "seconds": 0.009695791988633573,
+        "stderr": "",
+        "unit": 1
+      },
+      "groups": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "modular_results": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 4,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "4a7c9ac221b3a5fcbd6a3e5216c456d209f1efbe416ef5eb1b7a84a29a2e2a29",
+          "prime": 101,
+          "returncode": 0,
+          "seconds": 0.011178999964613467,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=4\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 4,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "a2efe5c70f42744607859cf8414abcc1d87cdd01b4eec3a36a7988f892e62f3e",
+          "prime": 103,
+          "returncode": 0,
+          "seconds": 0.009766083036083728,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=4\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 4,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "3963926a098ade357087d83fc8d83133ab59970ab8e1f8040fcac6e8a07df893",
+          "prime": 107,
+          "returncode": 0,
+          "seconds": 0.01090829202439636,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=4\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "nonzero_moment_orders": [
+        3,
+        4
+      ]
+    },
+    {
+      "cutoff": 3,
+      "directions": 2,
+      "exact_Q_result": {
+        "cutoff": 3,
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, a1, a2, a3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "83797e93777d27aadb1e04fb8a96c95f20cc0471156ec0af1fdad8cd75f2121a",
+        "returncode": 0,
+        "seconds": 0.008531458035577089,
+        "stderr": "",
+        "unit": 1
+      },
+      "groups": [
+        [
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "modular_results": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 3,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "de700382a09242941fb5fbd8062ff052773d615e58e9dea2b9abd04467d8b2dc",
+          "prime": 101,
+          "returncode": 0,
+          "seconds": 0.010730416048318148,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=3\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 3,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "130ee8bd314f76c62ea012232474d10a9c0e3fab9a7c3d838188a24f07548020",
+          "prime": 103,
+          "returncode": 0,
+          "seconds": 0.010145874985028058,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=3\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 3,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "d9c3c00cfb40ec396f84e32483c9847f75e2d3aeee92ba4e7bafa7b2f19a3d0d",
+          "prime": 107,
+          "returncode": 0,
+          "seconds": 0.00941441603936255,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=3\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "nonzero_moment_orders": [
+        3
+      ]
+    },
+    {
+      "cutoff": 6,
+      "directions": 3,
+      "exact_Q_result": {
+        "cutoff": 6,
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, a1, a2, a3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "83797e93777d27aadb1e04fb8a96c95f20cc0471156ec0af1fdad8cd75f2121a",
+        "returncode": 0,
+        "seconds": 0.012517625000327826,
+        "stderr": "",
+        "unit": 1
+      },
+      "groups": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "modular_results": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "855fcc912d9985554c4094cf3eb753354b2437742f22ddfcd03a2ff1e59f7646",
+          "prime": 101,
+          "returncode": 0,
+          "seconds": 0.010711457987781614,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "9797c777879dd33538274f0fec02464edd561c7844e3cd8c8bd6346f709d38d3",
+          "prime": 103,
+          "returncode": 0,
+          "seconds": 0.011322334001306444,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "5240e8d694599f2ce95e6e65ae869fbfdacfa5893409734d96566ed15b96a939",
+          "prime": 107,
+          "returncode": 0,
+          "seconds": 0.011629874992650002,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "nonzero_moment_orders": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "cutoff": 6,
+      "directions": 3,
+      "exact_Q_result": {
+        "cutoff": 6,
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, a1, a2, a3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "83797e93777d27aadb1e04fb8a96c95f20cc0471156ec0af1fdad8cd75f2121a",
+        "returncode": 0,
+        "seconds": 0.014760292018763721,
+        "stderr": "",
+        "unit": 1
+      },
+      "groups": [
+        [
+          0,
+          3
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "modular_results": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "c098d16904aa78f3d750b1e3bffc2ad7f0effbcb16021ec82ee2c17dcbe4a392",
+          "prime": 101,
+          "returncode": 0,
+          "seconds": 0.011092667002230883,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "fa051d4422ec31c6d223d589b83adaf8160d301ee3e1cbfcceae82cd1eca2802",
+          "prime": 103,
+          "returncode": 0,
+          "seconds": 0.010711208044085652,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "f75f124fbc35c4a50a76c6f71437ff8c59151e49aa3136ea63599a34343db4a3",
+          "prime": 107,
+          "returncode": 0,
+          "seconds": 0.010582915972918272,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "nonzero_moment_orders": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "cutoff": 6,
+      "directions": 3,
+      "exact_Q_result": {
+        "cutoff": 6,
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, a1, a2, a3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "83797e93777d27aadb1e04fb8a96c95f20cc0471156ec0af1fdad8cd75f2121a",
+        "returncode": 0,
+        "seconds": 0.012428540969267488,
+        "stderr": "",
+        "unit": 1
+      },
+      "groups": [
+        [
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2
+        ]
+      ],
+      "modular_results": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "a68427d5cfecd901d9b7e8ae55285ac650938b413df781941e2db99f35bafc05",
+          "prime": 101,
+          "returncode": 0,
+          "seconds": 0.011204667040146887,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "438452375f4b62942210d5bdab1ec80b4dc98f54149572353969c0ed8069b4c3",
+          "prime": 103,
+          "returncode": 0,
+          "seconds": 0.01068391598528251,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "facf4efeda54e1c786fbe196849d9749bb746511284837f716c80c75433aa50a",
+          "prime": 107,
+          "returncode": 0,
+          "seconds": 0.010608874959871173,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "nonzero_moment_orders": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "cutoff": 6,
+      "directions": 3,
+      "exact_Q_result": {
+        "cutoff": 6,
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, a1, a2, a3\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "83797e93777d27aadb1e04fb8a96c95f20cc0471156ec0af1fdad8cd75f2121a",
+        "returncode": 0,
+        "seconds": 0.013371207984164357,
+        "stderr": "",
+        "unit": 1
+      },
+      "groups": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "modular_results": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "88205cd8d33c478d2408a35ccefc3f913b98aaa1a845f4e9d9ab853285873026",
+          "prime": 101,
+          "returncode": 0,
+          "seconds": 0.010606499970890582,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "b0f84e3b58999a60b377e8e93639153410aa0fa214daed5cb6d8f71640771a04",
+          "prime": 103,
+          "returncode": 0,
+          "seconds": 0.010379959014244378,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 0,
+          "input_sha256": "ef9272e860a1b6ecb3f23db0248c8ef957ce29921ad498e4b49505d43b70f524",
+          "prime": 107,
+          "returncode": 0,
+          "seconds": 0.0109761250205338,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "RESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=0\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "nonzero_moment_orders": [
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "family": "P=sum_i a_i*rho^((8-ell_i)/2)*<v_i,z>^ell_i",
+  "format": "gvc3-four-coherent-channels-v1",
+  "four_distinct_directions": {
+    "A_terms": 2,
+    "B_nonzero_chart": {
+      "cutoff": 7,
+      "exact_Q_saturation": null,
+      "modular_saturations": [
+        {
+          "basis": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "characteristic": 101,
+          "dimension": -1,
+          "elapsed_ticks": 16,
+          "input_bytes": 18755,
+          "input_sha256": "9f07399f4dc042802dfb45ad0a88ec57f154145679a075b079717ea2c57b5d98",
+          "output_sha256": "3453e10c57fb6c1ee298e3ade7f5ed8600d016890fe9827dd837bd6d9e2da258",
+          "returncode": 0,
+          "seconds": 16.683683083043434,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 15.86 sec\nRESULT_BEGIN\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=16\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "characteristic": 103,
+          "dimension": -1,
+          "elapsed_ticks": 17,
+          "input_bytes": 18797,
+          "input_sha256": "a3e4fa325afc917b31ae76500fc7d9faef733782dbf6c477d51fa9f4a77aadf7",
+          "output_sha256": "553e6e62ad835c0984444ee47ffec96a3877ddce2821f6c568e0bfdc273d4d66",
+          "returncode": 0,
+          "seconds": 17.64234987500822,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 16.66 sec\nRESULT_BEGIN\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=17\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "characteristic": 107,
+          "dimension": -1,
+          "elapsed_ticks": 17,
+          "input_bytes": 18856,
+          "input_sha256": "b640fea2533e303c129a7bd8d73031e0a53fad7c34d839e49bcf79b1508067c3",
+          "output_sha256": "c4b23531b4bf31e6146c39b1bf11206fbb9b91feb8bd27a82bb24991a2db4e96",
+          "returncode": 0,
+          "seconds": 17.94364187499741,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 17.02 sec\nRESULT_BEGIN\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=17\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ]
+    },
+    "B_terms": 25,
+    "B_zero_chart": {
+      "a3_solution": "-2431/(112*a1*lam**16)",
+      "cutoff": 6,
+      "exact_Q_result": {
+        "cutoff": 6,
+        "output": "#Reduced Groebner basis data\n#---\n#field characteristic: 0\n#variable order:       z, a1, a2, lam\n#monomial order:       graded reverse lexicographical\n#length of basis:      1 element\n#---\n[1]:\n",
+        "output_sha256": "f0133c03239249d99d98b0e239562b2b996b8862e0233ebe157ebb4c8ae3e0f8",
+        "returncode": 0,
+        "seconds": 0.3454970410093665,
+        "stderr": "",
+        "unit": 1
+      },
+      "modular_results": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 3,
+          "input_sha256": "73c1bb9021e5b6ce4609d50d2e144a7c550b03525452c4586428bbf70b548eaf",
+          "prime": 101,
+          "returncode": 0,
+          "seconds": 3.1824377499870025,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 3.15 sec\nRESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=3\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 3,
+          "input_sha256": "72e2ca4c25f5d67f452d38ab0ea9f3635187b6bac5f0f51a7af9d25986e48714",
+          "prime": 103,
+          "returncode": 0,
+          "seconds": 3.0115552920033224,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 2.98 sec\nRESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=3\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 6,
+          "dimension": -1,
+          "elapsed_ticks": 3,
+          "input_sha256": "4d8c91d2c4095da8c52af03e8c48c6dc69d9bae53a3950f0a7c57951a5e57c6c",
+          "prime": 107,
+          "returncode": 0,
+          "seconds": 3.0614371659466997,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 3.02 sec\nRESULT_BEGIN\ncutoff=6\nunit=1\nbasis_size=1\ndimension=-1\nelapsed_ticks=3\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "term_counts": {
+        "3": 25,
+        "4": 51,
+        "5": 93,
+        "6": 199
+      }
+    },
+    "configuration_saturation": "lam*(lam-1)",
+    "moment_sha256": {
+      "3": "5f8700b600fe75e0742cbb32ac08480c8aa48bdbe60f18042f0063439883223f",
+      "4": "c78ff121427b170415caaed35e55105e408ef6a293dbf96d26a235ae28579a22",
+      "5": "3bbe796a12e0d567abf0b5f225c1116f1b8b61610fa5c0d8b0ee95d12b718f56",
+      "6": "d02666a248115fdef598a387aec9878246a08402375f858f09af8c6c91e122d9",
+      "7": "21985e96c8ec090a296b9dc1de416a7939870092de921c01ab823779db333f02"
+    },
+    "moment_term_counts": {
+      "3": 27,
+      "4": 53,
+      "5": 112,
+      "6": 260,
+      "7": 417
+    },
+    "normalization": "directions infinity, zero, one, lam; a0=1",
+    "third_moment": "A+B*a2"
+  },
+  "harmonic_degrees": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "laplacian_power": 4,
+  "modular_discovery_primes": [
+    101,
+    103,
+    107
+  ],
+  "moment_sequence_promotion_gate": {
+    "moment": "mu_m=sum_(|n|=m) multinomial(m;n)*prod_i(a_i^n_i)*prod_i((ell_i*n_i)!)/(sum_i ell_i*n_i+1)!!*W(ell*n)",
+    "reason": "every summand has rational shift quotients in the occupation and edge indices",
+    "type": "finite proper-hypergeometric sum",
+    "wick_coefficient": "W(s)=[u^s] exp(sum_(i<j) g_ij*u_i*u_j)=sum_(deg(e)=s) prod_(i<j) g_ij^e_ij/e_ij!"
+  },
+  "one_direction_terminal_reason": "phase weight is one-sided, so every fixed multiplier is eventually killed",
+  "profile_condition": "one isotropic coherent state in each of H2,H4,H6,H8",
+  "status": "bounded modular discovery on the four-distinct B!=0 chart; not a characteristic-zero theorem"
+}

@@ -32,17 +32,22 @@ and a nontrivial \(p\)-adic valuation tower.
 
 The
 [characteristic-two plane theorem](../verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md#8-the-preserved-coordinate-and-the-dimension-two-theorem)
-is now the smallest-dimensional calibration in this landscape.  A polynomial
-coordinate change makes the Huq--Kuruvilla threefold a skew product, and its
-preserved plane fiber remains etale of exact separable degree three.  This
-shortens the characteristic-two counterexample chain from dimension three to
-dimension two, but it does not spread to odd characteristic: the identical
-integer plane formula has nonconstant Jacobian.  Its ambient threefold
-normalization still supplies the wild-radicial boundary model used below,
-while the plane hidden cubic supplies the dimension-minimal noninvertibility
-theorem.
+is now the smallest-dimensional calibration in this landscape.  Mondello,
+[arXiv:2608.02634v1](https://arxiv.org/abs/2608.02634), proves it over
+(k=overline{mathbb F}_2): a polynomial coordinate change makes the
+Huq--Kuruvilla threefold a skew product, and its preserved plane fibre is
+etale of exact separable degree three.  The separately named repository
+corollary `HKM2-ALLFIELDS` proves the same conclusion over every
+characteristic-two field.  This shortens the characteristic-two
+counterexample chain from dimension three to dimension two, but it does not
+spread to odd characteristic: the identical integer plane formula has
+nonconstant Jacobian.  Its ambient threefold normalization still supplies
+the wild-radicial boundary model used below, while the plane hidden cubic
+supplies the dimension-minimal noninvertibility theorem.
 
-<!-- status-consumer: HKM2 79acc8c611bf0466 -->
+<!-- status-consumer: HKM2 6891c4426fa9c6ff -->
+
+<!-- status-consumer: HKM2-ALLFIELDS bc2d0e1d0c37827c -->
 
 The corresponding
 [plane normalization theorem](../verified/HUQ_KURUVILLA_PLANE_BOUNDARY_NORMALIZATION.md)
@@ -51,9 +56,12 @@ Frobenius sheet over `Q=0`, with generic data
 `(e,f_sep,f_insep,different,sheet loss)=(1,1,2,1,2)` and `S_3` monodromy.
 The primitive cubic order has conductor `(P,T)`, but that conductor is not the
 reconstruction boundary.  This supplies an exact warning that order
-nonnormality and missing-source boundary must be tracked separately.
+nonnormality and missing-source boundary must be tracked separately.  The
+current Singular certificate plus separate identity replay is not an
+independent second normalization implementation; that audit and two
+independent monodromy routes remain open.
 
-<!-- status-consumer: HKM2B1 680ef39ee14ebf10 -->
+<!-- status-consumer: HKM2B1 c197aa4165670dc5 -->
 
 ## 1. Seven-axis survival ledger
 
@@ -394,7 +402,7 @@ two-adic rather than polynomial.  The viable continuations are bounded-degree
 algebraization of this stable tower and the equivalence-aware plane problem
 for polynomial left-right changes.
 
-<!-- status-consumer: HKM2W1 23c067e5a7c29ac4 -->
+<!-- status-consumer: HKM2W1 333c767416c0d59f -->
 
 ### PCD.7 — arithmetic monodromy degeneration
 
@@ -403,6 +411,24 @@ compute geometric monodromy over \(\overline{\mathbb F}_p(s,t)\), arithmetic
 monodromy over \(\mathbb F_q(s,t)\), inertia filtrations at the discriminant
 and infinity, and specialization maps from an integral characteristic-zero
 model.
+
+### PCD.8 — preserved-coordinate and Mondello-extension queue
+
+For every new counterexample, search degree by degree for a polynomial source
+coordinate \(c(x)\) and a target linear combination \(L\) with \(L(F)=c\).
+Use linear algebra and Groebner reduction, and apply the detector to the
+foundational, weighted, cancellation, quadratic-gauge, cubic BCW, and
+positive-characteristic examples.  This is now a standard frontend beside
+grading detection, LND searches, tangent quotients, and normalization
+analysis.
+
+For Mondello's plane map, the
+[canonical follow-up queue](../verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md#9-follow-up-experiments)
+records the remaining independent normalization audit, two-route monodromy
+verification, full cokernel and functoriality of the first Jacobian variation,
+left--right-equivalence lifting tests, quantitative Witt degree growth, and
+boundary-led searches for odd-characteristic analogues.  These are open
+experiments.  Only the arbitrary-field corollary is closed.
 
 ## 8. Initial exact audit
 

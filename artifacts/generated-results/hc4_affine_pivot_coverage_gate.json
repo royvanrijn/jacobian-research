@@ -1,0 +1,37 @@
+{
+  "affine_pivot_criterion": {
+    "metric_numerator": "N_ell=ell^T*adj(Hess(psi))*ell",
+    "necessary_and_sufficient": "N_ell is a nonzero constant",
+    "parent_bordered_determinant": "-N_ell",
+    "reduced_hessian": "Hess(psi)-kappa*ell*ell^T",
+    "repair": "kappa=det(Hess(psi))/N_ell"
+  },
+  "collision_transfer": {
+    "condition": "ell.(p_plus-p_minus)=0",
+    "result": "the marked collision lifts at any common pivot value"
+  },
+  "diagonal_top_classification": {
+    "affine_coverage_gate": "alpha*beta*gamma=0",
+    "coefficient_matrix_determinant": "alpha*beta*gamma",
+    "schur_divisibility_consequence": "s3=(alpha*u1^3+beta*u2^3+gamma*u3^3)/3"
+  },
+  "format": "hc4-affine-pivot-coverage-gate-v1",
+  "open_frontier": "classify the constant-span-deficient Schur vectors w on the nonsquarefree rank-three packet, and derive the analogous gates for essential ranks one and two",
+  "rank_three_quintic_gate": {
+    "coverage_consequence": "a^T*w=0 for one nonzero constant a",
+    "determinant_faces": [
+      "D_t^2(h4)=0",
+      "R=det(C)*D_t^2(h3)-d^T*adj(C)*d=0"
+    ],
+    "finite_equations": "all 3-by-3 minors of the 3-by-45 degree-eight coefficient matrix of w vanish",
+    "metric_identity": "det(C)*N7=R*(a^T*adj(C)*a)+(a^T*w)^2",
+    "properness_calibration": "at alpha=beta=gamma=1, C=diag(u1^3,u2^3,u3^3), d=(u1^2,u2^2,u3^2), f=u1+u2+u3 solves R=0 but has coefficient rank three",
+    "schur_vector": "w=adj(C)*d",
+    "top_kernel_condition": "the pivot covector has zero kernel component"
+  },
+  "status": {
+    "id": "HC4RSD6",
+    "kind": "hybrid theorem",
+    "scope": "affine scalar singular-pivot lifts of constant-Hessian four-variable potentials, with a rank-three quintic packet gate"
+  }
+}

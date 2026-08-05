@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact F_2 audit of the Huq--Kuruvilla map and its Mondello plane fiber.
+"""Exact F_2 replay of the Huq--Kuruvilla map and Mondello's plane theorem.
 
 The map, collision, inverse cubic, and generic rational reconstruction are
 credited to Irit Huq-Kuruvilla, arXiv:2607.20968.  This script additionally
@@ -7,11 +7,14 @@ checks the discriminant, projective collision, normalization charts,
 boundary factorization, reconstruction pole, and determinant ledger used in
 verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md.
 
-The final block checks Mondello's preserved-coordinate reduction, the plane
-Jacobian and collision, the hidden cubic and recovery identities, and the
-separability witness.  Irreducibility of the hidden cubic is the written
-degree-one-in-the-target-parameter argument in the canonical note; the
-checker verifies its polynomial coprimality certificate.
+The plane theorem and proof architecture are due to Romy Mondello,
+arXiv:2608.02634v1.  The final block internally replays the preserved-coordinate
+reduction, plane Jacobian and collision, hidden cubic, recovery identities,
+and separability witness.  Irreducibility of the hidden cubic is the written
+degree-one-in-the-actual-target-parameter argument in the canonical note; the
+checker verifies its polynomial coprimality certificate.  Because these are
+polynomial identities over F_2, the replay also supports the repository's
+separately proved arbitrary-characteristic-two base-field corollary.
 """
 
 from __future__ import annotations

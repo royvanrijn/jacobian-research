@@ -528,6 +528,31 @@ nonzero.  But this is precisely the specialization of the coefficient in
 \eqref{eq:shifted-vanishing} at the admissible scale $kp$, a contradiction.
 \end{proof}
 
+\begin{remark}[Relation with Wilson's prime-isolation argument]
+The arithmetic mechanism in Proposition~\ref{prop:shifted} closely parallels
+the face-isolation argument of Wilson~\cite{WilsonGMC}.  Both arguments
+first pass from the original coefficient domain to a number field and then
+evaluate a moment at an index equal to a fixed integer times a sufficiently
+large good prime: $m=qp$ in Wilson's notation and $m=kp$ above.
+Frobenius separates a distinguished face or endpoint contribution from the
+remaining terms.  A factorial-valuation calculation shows that the
+distinguished contribution has its predicted exact $p$-adic valuation,
+whereas every other contribution has valuation at least one greater.
+Together with the Duistermaat--van der Kallen theorem, this turns the
+vanishing of all moments into a Newton-support separation statement.
+
+The geometric settings and the order of these ingredients are different.
+Wilson isolates a lower face for the one-radial Gaussian functional.  Here
+the distinguished term is the least-ordinary-degree endpoint $\alpha$ of a
+shifted intersection, the relevant factorial factor is the two-coordinate
+quotient $F_p(\gamma,\eta)$, and Duistermaat--van der Kallen enters through
+Lemma~\ref{lem:expose} before the prime-dilation step.  Thus
+Proposition~\ref{prop:shifted} is a shifted-ray analogue of Wilson's
+prime-isolation mechanism, rather than a direct specialization of it.
+The subsequent passage to arbitrary binary constant-coefficient operators
+also uses Hall localization and the Newton-envelope argument.
+\end{remark}
+
 \begin{corollary}[Horizontal separation]\label{cor:horizontal}
 Let $A$ and $B$ be nonzero $w$-homogeneous polynomials with
 $W_A<W_B$.  If
@@ -991,6 +1016,37 @@ constant-coefficient operators and all polynomials in $n$ variables, and
 let $\operatorname{HGVC}(n)$ denote the same assertion restricted to
 homogeneous operators.
 
+\begin{lemma}[Unused-variable padding]\label{lem:padding}
+Let $1\leq r\leq n$.  Every counterexample to $\operatorname{GVC}(r)$
+over a characteristic-zero field gives a counterexample to
+$\operatorname{GVC}(n)$ over the same field.  The same assertion holds for
+homogeneous GVC.
+\end{lemma}
+
+\begin{proof}
+Write the counterexample in variables $x_1,\ldots,x_r$ as
+$\Lambda=\lambda(\partial_{x_1},\ldots,\partial_{x_r})$, $P$, and $Q$.
+View $\lambda$, $P$, and $Q$ as polynomials in
+$x_1,\ldots,x_n$ that are independent of the added variables
+$x_{r+1},\ldots,x_n$, and let $\widetilde\Lambda$ be the resulting
+$n$-variable operator.  If
+\[
+ \iota:k[x_1,\ldots,x_r]\longrightarrow k[x_1,\ldots,x_n]
+\]
+is the natural inclusion, then coefficientwise differentiation gives, for
+every $m\geq1$,
+\[
+ \widetilde\Lambda^m\bigl(\iota(P)^m\bigr)
+ =\iota\bigl(\Lambda^m(P^m)\bigr),
+ \qquad
+ \widetilde\Lambda^m\bigl(\iota(Q)\iota(P)^m\bigr)
+ =\iota\bigl(\Lambda^m(QP^m)\bigr).
+\]
+Thus all pure identities are preserved, as is every nonzero mixed output.
+The inclusion also preserves total degrees, so a homogeneous operator and
+homogeneous polynomial remain homogeneous after padding.
+\end{proof}
+
 \begin{theorem}[Dimension classification]\label{thm:classification}
 For every $n\geq1$,
 \begin{equation}\label{eq:classification}
@@ -1009,9 +1065,11 @@ homogeneous symbol splits into linear forms after scalar extension, which
 is the case proved by de Bondt~\cite{deBondt}.
 
 Theorem~\ref{thm:gvc3} gives a homogeneous failure in three variables.
-For $n>3$, use the same $P,Q$, and $\Lambda$ in the first three variables
-and let them ignore the remaining variables.  This preserves both
-identities in \eqref{eq:gvc3-pure-mixed}.
+Lemma~\ref{lem:padding} transports this same counterexample to every
+$n\geq3$, while preserving homogeneity.  Equivalently,
+$\neg\operatorname{GVC}(3)$ implies
+$\neg\operatorname{GVC}(n)$ and
+$\neg\operatorname{HGVC}(n)$ for every $n\geq3$.
 \end{proof}
 
 The classification is a closure of GVC by dimension, not a solution of the
@@ -1077,26 +1135,41 @@ its degree formula, and its minimal and radial specializations;
 equal-degree coefficientwise apolar
 contraction and composition of differential symbols; the full concrete
 Reynolds/Laurent phase extraction, algebraic height change of variables, and
-endpoint-kernel identification.  These results construct the concrete
-bridge in Lean and prove Theorem~\ref{thm:gvc3}, including its exact mixed
-scalar.  Coefficient base change to every characteristic-zero field and
-unused-variable padding then verify the negative dimension-$n\ge3$ half of
+endpoint-kernel identification.  It also proves the arbitrary-profile
+quadric restriction under the displayed degree bound on $S$, arbitrary
+even-phase coefficient extraction, the full height substitution and
+endpoint factorization, and the shifted primitive identity.  These results
+construct both phase bridges in Lean and prove
+Theorems~\ref{thm:gvc3} and \ref{thm:family}, including their exact mixed
+scalars and coefficient base change to every characteristic-zero field.
+Unused-variable padding verifies the negative dimension-$n\ge3$ half of
 Theorem~\ref{thm:classification}.  The development also checks the rational
 $p$-adic factorial bounds in
 Lemma~\ref{lem:factorial-valuations} and the negative-final-slope plus
-intermediate-value step for the moving envelopes.  It also derives the
-full-profile implications from an explicitly named bridge record; for
-Theorem~\ref{thm:family}, the record contains only the multivariate phase
-coefficients, after which Lean proves the pure identity and complete exact
-multiplier ladder.  The present
-audit does not yet formalize the full-profile phase extraction, the
-number-field good-prime transfer and shifted-ray theorem, or the binary
-Hall/no-reversal/common-threshold bridge.  The spherical realization of the
+intermediate-value step for the moving envelopes.  For
+Lemma~\ref{lem:hall}, it proves the finite Hall-deficiency core: Mathlib's
+Hall theorem produces a deficient set, binary linear algebra puts that set
+in one direction class, and exact counting gives at least $d-e+1$
+annihilated polynomial factors.  The split-factor interface records the
+literal symbol and polynomial products, and Lean proves the coordinate-free
+normal forms: the full direction power divides the symbol and the matching
+perpendicular power divides the polynomial.  The translated
+Duistermaat--van der Kallen/polarization argument that rules out a matching
+is not yet formalized.  It further proves the
+complete finite-support deduction in Proposition~\ref{prop:threshold}:
+finite maximization turns an ordering of the equal faces into an integral
+coordinate cut, which refines the common threshold to a strict positive
+weight; the growing power gap then dominates every fixed multiplier.  Empty
+equality faces are handled separately.
+The present audit does not yet formalize construction of the split-factor
+system after field extension or the literal coordinate-change/exact-quotient
+packaging of Lemma~\ref{lem:hall}, the number-field
+good-prime transfer and shifted-ray theorem, including its equal-face
+ordering, or the binary no-reversal/global-envelope bridge.  The spherical realization of the
 Reynolds functional is likewise not checked, but Lean proves the algebraic
 coefficientwise contraction and Laurent realization used in its place.
-Thus Theorems~\ref{thm:main} and \ref{thm:family}, and the complete
-biconditional in Theorem~\ref{thm:classification}, are not yet fully
-formally verified.
+Thus Theorem~\ref{thm:main} and the complete biconditional in
+Theorem~\ref{thm:classification} are not yet fully formally verified.
 
 \bibliographystyle{plain}
 \bibliography{references}

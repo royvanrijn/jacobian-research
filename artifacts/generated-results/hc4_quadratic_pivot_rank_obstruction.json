@@ -1,0 +1,43 @@
+{
+  "format": "hc4-quadratic-pivot-rank-obstruction-v1",
+  "open_frontier": "rank-one and rank-two quadratic pivots with x-moving generic kernel lines",
+  "rank_four": {
+    "leading_pencil_coefficient": "det(Hess(A))",
+    "result": "excluded by pencil singularity"
+  },
+  "rank_three": {
+    "cleared_block_identity": "det(K)*det(Hess(Phi))-G*det(M)+P^2=0",
+    "constant_parent_consequence": "P^2=-c*det(s*Q3+H)",
+    "contradiction": "the two sides have even and odd s-degree",
+    "leading_pencil_coefficient": "B_zz*det(Q3)",
+    "normal_form": "Hess(A)=diag(Q3,0), det(Q3)!=0",
+    "result": "excluded without a constant-kernel hypothesis",
+    "singularity_consequence": "B_zz=0"
+  },
+  "rank_two_passive_split": {
+    "leading_pencil_coefficient": "det(Q2)*det(Hess_(z,w)(B))",
+    "new_rank_two_frontier": "rank Hess_(z,w)(B)=1",
+    "passive_rank_zero_identity": "det(M)=det(D)^2",
+    "passive_rank_zero_result": "a pencil-independent primitive kernel line lies in the fixed passive support plane, so HC4RSD5 applies"
+  },
+  "sharpness": {
+    "A": "y*z+w",
+    "B": "x*z+y^2/2",
+    "classification": "fixed-kernel HC4RSD1 calibration",
+    "parent_hessian_determinant": 1,
+    "pencil_determinant": 0,
+    "pencil_rank": 3,
+    "pivot_hessian_rank": 2
+  },
+  "status": {
+    "id": "HC4RSD8",
+    "kind": "theorem",
+    "scope": "quadratic scalar pivots with an identically singular four-variable Hessian pencil"
+  },
+  "surviving_pivot_normal_form": {
+    "affine_rank_zero": "closed by HC4RSD7",
+    "kernel_linear_term": "dA restricted to ker(Hess(A)) is nonzero",
+    "normal_form": "A=w+u^T*Qr*u/2 with rank(Qr)=r<=2",
+    "unit_ideal": "the entries of grad(A) generate (1)"
+  }
+}

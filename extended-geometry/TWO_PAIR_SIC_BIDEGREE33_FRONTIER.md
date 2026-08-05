@@ -51,7 +51,7 @@ The ten earlier exact characteristic-zero results are:
     strictly containing the earlier two-parameter plane, is excluded
     exactly by moments \(3,\ldots,7\).
 
-Seven further exact results sharpen the remaining SIC problem:
+Fifteen further exact results sharpen the remaining SIC problem:
 
 11. on the normalized anti-Weyl locus, all odd moments vanish by symmetry
     and the even moments through order fourteen generate the unit ideal
@@ -80,10 +80,51 @@ Seven further exact results sharpen the remaining SIC problem:
     the complete \(\lambda=0\) fibre and the doubly exceptional
     \(\mu_2\)-pivot branch \(P_1=P_2=0\), both already through
     \(\mu_8\).
+19. all sixteen nine-entry \(3\times3\) rectangle supports are SIC-safe.
+    Six transpose/reversal orbits cover them.  On each dense coefficient
+    torus the exact finite scheme through \(\mu_{14}\) has every
+    \(2\times2\) minor in its radical, as proved by 54 characteristic-zero
+    Rabinowitsch unit ideals; hence its reduced points have rank one.
+    Every coordinate boundary has support at most eight and is covered by
+    result 17.
+20. all 96 complete-two-row/column fringe supports are SIC-safe.
+    They form 24 transpose/reversal orbits; on every representative
+    the dense coefficient-torus ideal through \(\mu_{14}\) is the unit
+    ideal over \(\mathbb Q\), while every boundary has support at most
+    eight.
+21. the complete exact-rank-two reversal-parity factor family is SIC-safe.
+    The reversal centralizer moves every nonzero even/odd \(U\)-pair into
+    the normalized chart \(U_{0,*}=(1,1)\).  On both projective
+    semistable \(W\)-charts the exact-rank-two opens are unit
+    ideals through \(\mu_6\).  The invariant-zero slice has exactly two
+    one-dimensional components through \(\mu_6\); both are fixed-flag
+    one-sided families over \(\mathbb Q(q)\), with recurrence
+    \(\nu_{m+1}=0\), a nonzero degree-two mixed value, and mixed tail
+    \(2m>e\).
+22. all 576 cross-plus-two supports are SIC-safe.  They consist of one
+    complete row, one complete column, and any two further entries, and
+    form 156 transpose/reversal orbits.  Every dense coefficient-torus
+    ideal is the unit ideal over \(\mathbb Q\) through \(\mu_{10}\).
+23. all 480 regular three-line supports are SIC-safe.  They have three
+    occupied rows with three entries each, or are transposes of such a
+    support, with the sixteen rectangles removed.  Of their 120 symmetry
+    orbits, 114 have unit dense-torus ideals through \(\mu_{10}\).  Each
+    of the other six has one rational point; all six have coefficient
+    rank two and an exact flag change into the fixed chamber \(i>j\), so
+    their recurrence is \(\nu_{m+1}=0\) and their mixed cutoff is \(m>e\).
+24. all 1,148 three-line supports with line counts \(4+3+2\), or their
+    transposes, are SIC-safe.  Their 287 symmetry representatives have
+    exact dense coefficient-torus unit ideals through \(\mu_{10}\).
+    Together with the rectangle, fringe, and regular-three-line classes,
+    this closes every nine-entry support with an empty row or column.
+25. all 1,244 full-line supports with line-count partition
+    \(4+3+1+1\), no complete line on the other axis, or their transposes,
+    are SIC-safe.  Every one of their 311 dense symmetry representatives
+    has unit moment ideal over \(\mathbb Q\) through \(\mu_{10}\).
 
 The fourth result excludes every SIC(2) counterexample lying in a single
 irreducible summand.  The sixth gives dimension-sized moment coordinates,
-not a zero-fiber theorem.  Results 11--18 remove the first semistable
+not a zero-fiber theorem.  Results 11--25 remove the first semistable
 all-order survivor from the SIC search and force any counterexample to
 have at least nine nonzero entries in the displayed coefficient basis.
 They do not classify the remaining full mixed
@@ -573,6 +614,18 @@ Under the diagonal \(\mathrm{SL}_2\)-action,
  \operatorname{Sym}^2\oplus
  \operatorname{Sym}^0.                                   \tag{5.1}
 \]
+
+This is specifically a decomposition for the contraction-preserving
+diagonal group.  Before restriction, the coefficient space is the single
+external-tensor representation
+\[
+ \operatorname{Sym}^3(k^2)^*\boxtimes\operatorname{Sym}^3(k^2)
+\]
+of \(\mathrm{SL}_2\times\mathrm{SL}_2\).  Independent changes in the two
+factors do not preserve \(WZ+VY\), hence do not preserve the SIC moments.
+They may organize left/right binary-cubic rank or root data, but they
+cannot be used as the orbit quotient for (5.1), the quadratic
+null/non-null split, or the moment equations.
 
 The first moment removes the scalar summand.  The unresolved locus is
 therefore the mixed fifteen-dimensional representation
@@ -2101,10 +2154,131 @@ complex zero sets, not merely their real loci.
 
 This support statement is not invariant under the diagonal
 \(\mathrm{SL}_2\)-action, but it removes every support of size at most
-eight from later coefficient-torus calculations.  The next global
-computation should saturate each normalized chart by the nullcone and the
-explicit Rodrigues orbit before eliminating later moments.  Reconstructing
-a specialized norm or a single finite-field quotient remains useful
+eight from later coefficient-torus calculations.
+
+The first structured size-nine class is now closed as well.  Delete one
+row and one column from the \(4\times4\) coefficient matrix.  Transpose
+and simultaneous row/column reversal preserve all moments and split the
+sixteen resulting \(3\times3\) rectangles into six orbits.  On a
+representative dense coefficient torus, normalization leaves seven
+coordinates.  Exact rational-univariate calculation of
+\(\mu_1,\ldots,\mu_{14}\) gives a finite scheme.  Localizing that scheme
+at each of the nine \(2\times2\) minors gives the unit ideal over
+\(\mathbb Q\), in all \(6\mathbin{\cdot}9=54\) cases.  Therefore every
+reduced dense point has coefficient rank one and is SIC-safe by the
+balanced cubic rank-one theorem.  A rectangle boundary has at most eight
+entries and is already safe by the complete smaller-support census.
+Consequently:
+
+> **Proposition 6.1.** Every bidegree-\((3,3)\) form supported in a
+> \(3\times3\) coefficient rectangle is SIC-safe.  In particular none of
+> the sixteen dense nine-entry rectangle tori contains a counterexample.
+
+This is an exact characteristic-zero component calculation, not a
+collection of modular fibres.  It closes sixteen of the \(11{,}420\)
+mixed size-nine supports.  Support remains basis-dependent, so this does
+not replace the diagonal-\(\mathrm{SL}_2\) chart classification.  The
+second structured class closes 96 further supports.  Its row-fringe
+members contain any two complete rows and one entry in a third row; the
+column-fringe members are their transposes.  The 96 supports form 24
+four-element transpose/reversal orbits.  Exact coefficient-torus saturation gives the
+unit ideal through \(\mu_{14}\) on every representative, and every
+boundary is covered by the support-eight theorem.  Hence:
+
+> **Proposition 6.2.** Every bidegree-\((3,3)\) form supported on a
+> complete-two-row/column fringe is SIC-safe.
+
+The third class consists of one complete row, one complete column, and
+any two entries outside their seven-entry cross.  There are 576 such
+supports: 288 have the extra entries aligned in a secondary row or column,
+and 288 have them in distinct secondary rows and columns.  They form 156
+transpose/reversal orbits, 24 of size two and 132 of size four.  Exact
+coefficient-torus saturation through \(\mu_{10}\) gives the unit ideal on
+every representative.  Thus:
+
+> **Proposition 6.3.** Every bidegree-\((3,3)\) form supported on a
+> complete-row/complete-column cross plus two further entries is
+> SIC-safe.
+
+Six of the 576 cross supports lie entirely in one triangular half of the
+coefficient matrix.  Thus Propositions 6.1--6.3 close 688 coordinate
+subspaces, of which 682 belong to the mixed size-nine census.
+
+The fourth class has three occupied rows, exactly three entries in each,
+or the transposed column pattern; the sixteen \(3\times3\) rectangles are
+removed.  There are 480 such mixed supports in 120 four-element symmetry
+orbits.  Exact coefficient-torus elimination through \(\mu_{10}\) gives
+the unit ideal on 114 representatives.  The remaining six systems each
+have a degree-one rational RUR.  In the normalized coefficient order,
+every residual point has matrix rank two.  For a rational flag parameter
+\(q\), the contraction-preserving change
+
+\[
+ W'=W,\qquad V'=V-qW,\qquad Z'=Z+qY,\qquad Y'=Y
+\]
+
+sends its dehomogenized polynomial to a sum supported only at \(i>j\).
+The relative-period integrand therefore has strictly positive
+\(u\)-weight, and
+
+\[
+ \operatorname{CT}_u P(u,t)^m=0,\qquad
+ \nu_{m+1}=0,\qquad \nu_1=0.
+\]
+
+For a balanced multiplier of bidegree \((e,e)\), its weight is at least
+\(-e\), whereas every monomial in the \(m\)-th power has weight at least
+\(m\).  Hence every mixed contraction vanishes for \(m>e\).  Exact checks
+at multiplier degrees one and two also find nonzero low-order values, so
+the cutoff is substantive rather than an identically zero mixed family.
+Consequently:
+
+> **Proposition 6.4.** Every bidegree-\((3,3)\) form supported on a
+> regular three-row/column nine-entry support is SIC-safe.  The only
+> nonempty dense moment systems through order ten are six unique rational
+> rank-two points, and every one is fixed-flag one-sided.
+
+The remaining three-line degree pattern is \(4+3+2\), together with its
+transpose.  It contains 1,148 mixed supports in 287 four-element symmetry
+orbits.  Exact coefficient-torus saturation through \(\mu_{10}\) gives
+the unit ideal on every representative.  Its boundaries again have
+support at most eight.  Hence:
+
+> **Proposition 6.5.** Every bidegree-\((3,3)\) form supported on a
+> nine-entry \(4+3+2\) three-row/column support is SIC-safe.
+
+The row-count partitions \(4+4+1\), \(4+3+2\), and \(3+3+3\) exhaust
+nine entries on three occupied rows.  Propositions 6.1, 6.2, 6.4, and
+6.5 and their transposes therefore close all 1,740 nine-entry supports
+having an empty row or column.  Including Proposition 6.3, the five
+structured theorems close 2,310 mixed size-nine supports, leaving
+\(9{,}110\) at this basis-dependent level.  The full discrete census has
+\(2{,}924\) orbits under transpose and simultaneous reversal: 138 of size
+two and 2,786 of size four.  The five propositions close 591 of these
+mixed orbits and leave 2,333.  This is a support orbit census, not a
+classification of continuous diagonal-\(\mathrm{SL}_2\) orbits.
+
+There is one further complete-line family with row-count partition
+\(4+3+1+1\) and no complete column, together with its transpose.  It has
+1,244 mixed supports in 311 four-element symmetry orbits.  Exact dense
+coefficient-torus elimination gives the unit ideal through \(\mu_{10}\)
+on every representative, and support-eight handles every boundary.
+Therefore:
+
+> **Proposition 6.6.** Every bidegree-\((3,3)\) form supported on a
+> full-line \(4+3+1+1\) nine-entry support, with no complete line on the
+> other axis, is SIC-safe.
+
+The six structured support theorems now close 3,554 mixed size-nine
+supports in 902 discrete transpose/reversal orbits, leaving 7,866
+supports in 2,022 orbits.  Every remaining support uses all four rows and
+columns and belongs to one of five unordered row/column degree-partition
+types.
+
+The next global computation should saturate each normalized chart by the
+nullcone and the explicit Rodrigues orbit before eliminating later
+moments.  Reconstructing a specialized norm or a single finite-field
+quotient remains useful
 evidence, but cannot replace this residual component calculation.
 
 On the exact-rank-two locus, the
@@ -2115,6 +2289,146 @@ successive \(\mu_2\) pivots vanish.  The two principal-open branches
 channel charts, and exceptional cubic pencils remain.  The original
 seven-equation system has mixed volume \(74\,144\); this is a complexity
 measurement, not a root count or an exclusion theorem.
+
+A complementary direct factor family uses reversal-even and reversal-odd
+channel lines.  Before normalizing the internal gauge, write its two dual
+channels as
+\[
+ \begin{aligned}
+ A_+&=a(W^3+V^3)+b(W^2V+WV^2),\\
+ A_-&=c(W^3-V^3)+d(W^2V-WV^2).
+ \end{aligned}                                          \tag{6.0a}
+\]
+For \(\lambda\ne0\), put
+\[
+ \alpha=\frac{\lambda+\lambda^{-1}}2,\qquad
+ \beta=\frac{\lambda-\lambda^{-1}}2,\qquad
+ g_\lambda=\begin{pmatrix}\alpha&\beta\\\beta&\alpha\end{pmatrix}.
+                                                               \tag{6.0b}
+\]
+Then \(\det g_\lambda=1\), and \(g_\lambda\) commutes with reversal.
+In the eigen-coordinates \(X=W+V,Y=W-V\), it acts by
+\(X\mapsto\lambda X,Y\mapsto\lambda^{-1}Y\).  The transformed endpoint
+coefficients of (6.0a) are
+\[
+ \widetilde a=
+ \frac{(a+b)\lambda^4+3a-b}{4\lambda},\qquad
+ \widetilde c=
+ \frac{(3c+d)\lambda^4+c-d}{4\lambda^3}.                \tag{6.0c}
+\]
+The coefficient matrices
+\[
+ \begin{pmatrix}1&1\\3&-1\end{pmatrix},\qquad
+ \begin{pmatrix}3&1\\1&-1\end{pmatrix}
+\]
+both have determinant \(-4\).  Hence for every nonzero even/odd channel
+pair the two bad endpoint conditions are proper affine-linear equations
+in \(z=\lambda^4\).  Over the algebraic closure, a nonzero \(z\) avoids
+both.  The inverse target action also commutes with reversal, and internal
+diagonal gauge then normalizes \(U_{0,*}=(1,1)\).  Thus the normalized
+chart below meets every exact-rank-two orbit in the parity family:
+\[
+ U=\begin{pmatrix}
+ 1&1\\ b&d\\ b&-d\\1&-1
+ \end{pmatrix},\qquad
+ W=\begin{pmatrix}
+ p&q&q&p\\r&s&-s&-r
+ \end{pmatrix}.                                         \tag{6.1}
+\]
+The parity decomposition fixes the two channel lines, and their internal
+scalings are removed by the first row of \(U\).  On \(r=1\), the first
+moment eliminates
+\[
+ p=-\frac{bq+ds+3}{3}.                                  \tag{6.2}
+\]
+The rows zero and three of \(U\) have determinant \(-2\), so \(U\) is
+always rank two.  On this chart the odd row of \(W\) is nonzero, while
+the even row is nonzero on the complete two-open cover
+\[
+ q\ne0\qquad\text{or}\qquad bq+ds+3\ne0.                \tag{6.3}
+\]
+Moreover
+\[
+ \operatorname {tr}\!\left((C\operatorname {diag}(6,2,2,6))^2\right)
+ =32(ds+3)^2,                                           \tag{6.4}
+\]
+so inverting \(ds+3\) places the chart off the diagonal
+\(\mathrm{SL}_2\)-nullcone.  On each open in (6.3), exact
+characteristic-zero calculations in the variable orders
+\((b,d,q,s)\) and \((s,q,d,b)\) agree:
+\[
+ \begin{array}{c|c}
+  \mu_2,\ldots,\mu_5&\text{positive-dimensional},\\
+  \mu_2,\ldots,\mu_6&\text{unit ideal}.
+ \end{array}                                             \tag{6.5}
+\]
+The complementary projective chart has \(r=0,s=1\) and
+\(p=-(bq+d)/3\).  Its exact-rank-two locus is likewise covered by
+\(q\ne0\) and \(bq+d\ne0\).  On both opens the scheme is
+zero-dimensional through \(\mu_5\) and is the unit ideal through
+\(\mu_6\), again in two variable orders.  If \(r=s=0\), then \(W\) has
+rank at most one.
+
+It remains to classify the boundary \(ds+3=0\) on the \(r=1\) chart.
+Put
+\[
+ d=-\frac3s,\qquad p=-\frac{bq}{3}.
+\]
+Here \(s\ne0\), and exact rank two is exactly \(q\ne0\).  After adjoining
+\(hsq-1\), an exact characteristic-zero minimal-prime decomposition of
+the ideal through \(\mu_6\) is
+\[
+ \begin{aligned}
+  \mathfrak p_+&=(s-1,b+1,hq-1),\\
+  \mathfrak p_-&=(s+3,b-3,3hq+1).
+ \end{aligned}                                          \tag{6.6}
+\]
+Thus these are complete components over \(\mathbb Q(q)\), rather than
+isolated modular fibres.
+
+Both components are one-sided.  On \(\mathfrak p_+\), use
+\((W',V',Z',Y')=(W,V-W,Z+Y,Y)\); on \(\mathfrak p_-\), use
+\((W',V',Z',Y')=(W,V+W,Z-Y,Y)\).  The two forms become
+\[
+ \begin{aligned}
+ F_+={}&(V')^2(Z')^2
+ \left(\frac q3(2W'+V')Z'-V'(Z'-2Y')\right),\\
+ F_-={}&(V')^2(Z')^2
+ \left(-qV'(Z'+2Y')+(2W'-V')Z'\right).
+ \end{aligned}                                          \tag{6.7}
+\]
+Every displayed monomial has dual-minus-target weight at least two.
+Writing
+\[
+ P(u,t)=\sum_{i,j}c_{ij}u^{j-i}t^j(1-t)^{3-j},
+\]
+the relative period is
+\[
+ \frac{\mu_m}{(3m+1)!}
+ =\operatorname {CT}_u\int_0^1P(u,t)^m\,dt.             \tag{6.8}
+\]
+Every term of \(P\) has \(u\)-degree at most \(-2\).  Hence the
+function-field creative-telescoping recurrence degenerates to the exact
+valuation telescoper
+\[
+ \nu_{m+1}=0\quad(m\ge0),\qquad
+ \nu_m=\frac{\mu_m}{(3m+1)!},                            \tag{6.9}
+\]
+with forward coefficient one, no singular step, and initial vanishing
+\(\mu_1=0\).
+
+The degree-two multiplier \(M_{2,0,2}\) has relative-period numerator
+\(u^2t^2\).  At \(m=1\) its mixed contractions are respectively
+\[
+ 8(q+3),\qquad 24(1-q),                                  \tag{6.10}
+\]
+which are nonzero in \(\mathbb Q(q)\).  For an arbitrary degree-\(e\)
+multiplier its numerator has \(u\)-degree at most \(e\), so the mixed
+sequence vanishes whenever \(2m>e\).  The two components are therefore
+SIC-safe.  Equations (6.0a)--(6.10), together with the \(r=0\) chart,
+classify the complete exact-rank-two reversal-parity factor family up to
+pair-preserving \(\mathrm{SL}_2\)-orbit and internal gauge.  The full
+rank-two factor space remains open.
 
 ## Reproduction
 
@@ -2171,6 +2485,27 @@ replayed by
 
 .venv/bin/python \
   scripts/verify_two_pair_sic_bidegree33_sparse_support8.py
+
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_sparse_rectangle9.py
+
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_sparse_two_row_fringe9.py
+
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_sparse_cross_two9.py
+
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_sparse_three_line9.py
+
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_sparse_three_line4329.py
+
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_sparse_full_line43119.py
+
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_rank_two_parity_channels.py
 ```
 
 The two characteristic-zero Hurwitz exclusions are replayed by

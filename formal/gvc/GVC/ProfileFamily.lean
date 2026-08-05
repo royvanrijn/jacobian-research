@@ -10,7 +10,7 @@ import GVC.ConcreteWitness
 
 This file defines the literal multivariate family from Theorem 9.1 and
 checks its homogeneity and the claimed degree/order formula.  Its all-order
-quadric phase extraction is intentionally not asserted here.
+quadric phase extraction is constructed in `GVC.ProfilePhase`.
 -/
 
 namespace GVC
@@ -155,8 +155,8 @@ theorem gvcProfileMultiplier_isHomogeneous
   convert hx.mul (gvcProfileP_pow_isHomogeneous r e h m S) using 1
   omega
 
-/-- Exact interface still needed for a complete proof of Theorem 9.1.  Its
-fields are only the pure and shifted quadric phase-extraction formulas; the
+/-- Exact interface for the pure and shifted quadric phase-extraction
+formulas.  `GVC.ProfilePhase` constructs it from the literal family; the
 endpoint ladder, Reynolds contraction, and all subsequent implications are
 proved below. -/
 structure ProfileFamilyBridge
@@ -242,7 +242,8 @@ theorem gvcProfile_purePowersVanish
   exact gvcProfile_pure_identity B hr m hm
 
 /-- Once the phase bridge and the paper's nonzero-moment hypothesis are
-supplied, the literal family is a GVC counterexample. -/
+supplied, the literal family is a GVC counterexample.  The bridge is
+constructed in `GVC.ProfilePhase`. -/
 theorem gvcProfile_not_generalizedVanishingFor
     {r e h : ℕ} {S : ℚ[X]} (B : ProfileFamilyBridge r e h S)
     (hr : 0 < r) (hmoment : ∀ m, 0 < m → gvcProfileMoment r m S ≠ 0) :

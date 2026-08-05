@@ -1,0 +1,55 @@
+{
+  "calibrations": {
+    "nonlinear_graph_coordinate_degree": 3,
+    "nonlinear_graph_parent_determinant": 1,
+    "suspension_parent_determinant": 3,
+    "universal_graph_coordinate_residual": 0,
+    "universal_nonzero_corner_residual": 0
+  },
+  "format": "hc4-scalar-cancellation-dichotomy-v1",
+  "nonzero_corner": {
+    "base_potential": "psi=B-A^2/(2*lambda)",
+    "block_identity": "det([[lambda,g^T],[g,M]])=lambda*det(M-g*g^T/lambda)",
+    "classification_status": "affine A contains direct HC4; nonlinear A is a structured constant-Hessian pencil locus",
+    "collision_transfer": "bijective after t=s-A/lambda",
+    "converse": "Phi=lambda*(t+A/lambda)^2/2+psi",
+    "pencil": "psi+s*A with s=t+A/lambda"
+  },
+  "open_frontier": "nonlinear four-variable constant-Hessian pencils, moving matrix-pivot planes, genuinely mixed/coisotropic canonical transformations, and direct degree-five HC4",
+  "quadratic_corollary": {
+    "conclusion": "every quadratic zero-corner parent is collision-free",
+    "linear_algebra": "for deg(A)<=2, some constant v has D_v(A) in K^*",
+    "pencil_scope": "singular and nonsingular exact-remainder pencils",
+    "unit_ideal": "constant bordered determinant puts 1 in (grad(A))"
+  },
+  "status": [
+    {
+      "id": "HC4RSD11",
+      "kind": "exact theorem",
+      "result": "equivalence with a four-variable constant-Hessian pencil",
+      "scope": "nonzero-corner scalar Schur cancellation"
+    },
+    {
+      "external_input": "HC3 and Ax--Grothendieck",
+      "id": "HC4RSD12",
+      "kind": "hybrid theorem",
+      "result": "the five-variable parent gradient is a polynomial automorphism",
+      "scope": "zero-corner graph-coordinate scalar pivots"
+    }
+  ],
+  "zero_corner_graph_coordinate": {
+    "collision_obstruction": "fixed (r,tau) reduces to HC3",
+    "coordinates": [
+      "r=A",
+      "tau=t+C_r"
+    ],
+    "degree_bound": "none",
+    "determinant": "det Hess(Phi)=-det Hess_u(C+tau*q)",
+    "gradient": [
+      "F_t=r",
+      "F_u=grad_u(C+tau*q)",
+      "F_w=tau"
+    ],
+    "pivot": "A=w+q(u1,u2,u3)"
+  }
+}

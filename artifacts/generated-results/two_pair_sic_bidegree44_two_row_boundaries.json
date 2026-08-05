@@ -1,0 +1,5294 @@
+{
+  "format": "two-pair-sic-bidegree44-two-row-boundaries-v1",
+  "field": "QQ (geometric support normalization over its algebraic closure)",
+  "ambient_support": [
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      0
+    ]
+  ],
+  "weight_model": {
+    "weight": "w=i-j",
+    "weights": [
+      -4,
+      -3,
+      -2,
+      -1,
+      1,
+      2,
+      3,
+      4
+    ],
+    "transpose": "w -> -w",
+    "simultaneous_reversal": "w -> -w",
+    "torus_normalization": "on supports of size at least two, normalize the first two coefficients to one and localize every residual coefficient"
+  },
+  "proper_support_orbit_count": 135,
+  "stratum_counts": {
+    "exact_rank_two": 114,
+    "rank_one_and_exact_rank_two": 3,
+    "rank_one_mixed": 2,
+    "rank_one_one_sided": 15,
+    "rank_zero": 1
+  },
+  "mixed_sharp_cutoff_distribution": {
+    "2": 56,
+    "3": 17,
+    "4": 15,
+    "5": 8,
+    "6": 18,
+    "7": 5
+  },
+  "maximum_boundary_cutoff": 7,
+  "dense_chart_comparison": "the omitted full eight-coordinate support is the separately certified chart whose sharp cutoff is eight",
+  "support_orbits": [
+    {
+      "weights": [],
+      "positions": [],
+      "support_size": 0,
+      "matrix_stratum": "rank_zero",
+      "moment_status": "zero polynomial; all moments vanish"
+    },
+    {
+      "weights": [
+        -4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ]
+      ],
+      "support_size": 1,
+      "matrix_stratum": "rank_one_one_sided",
+      "moment_status": "one-sided weight support; every positive pure moment vanishes identically"
+    },
+    {
+      "weights": [
+        -3
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ]
+      ],
+      "support_size": 1,
+      "matrix_stratum": "rank_one_one_sided",
+      "moment_status": "one-sided weight support; every positive pure moment vanishes identically"
+    },
+    {
+      "weights": [
+        -2
+      ],
+      "positions": [
+        [
+          0,
+          2
+        ]
+      ],
+      "support_size": 1,
+      "matrix_stratum": "rank_one_one_sided",
+      "moment_status": "one-sided weight support; every positive pure moment vanishes identically"
+    },
+    {
+      "weights": [
+        -1
+      ],
+      "positions": [
+        [
+          0,
+          1
+        ]
+      ],
+      "support_size": 1,
+      "matrix_stratum": "rank_one_one_sided",
+      "moment_status": "one-sided weight support; every positive pure moment vanishes identically"
+    },
+    {
+      "weights": [
+        -4,
+        -3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "support_size": 2,
+      "matrix_stratum": "rank_one_one_sided",
+      "moment_status": "one-sided weight support; every positive pure moment vanishes identically"
+    },
+    {
+      "weights": [
+        -4,
+        -2
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "support_size": 2,
+      "matrix_stratum": "rank_one_one_sided",
+      "moment_status": "one-sided weight support; every positive pure moment vanishes identically"
+    },
+    {
+      "weights": [
+        -4,
+        -1
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "support_size": 2,
+      "matrix_stratum": "rank_one_one_sided",
+      "moment_status": "one-sided weight support; every positive pure moment vanishes identically"
+    },
+    {
+      "weights": [
+        -4,
+        1
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "support_size": 2,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 5,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "6a96f8f53ca02f83b39311f5fca74e5f15454eab491ecf68c540fba959d9e737",
+        "result_bytes": 7
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "385cfdbc00ec32031699460779c15099b2bba3cad0e440fffb08e10df0acb9e1",
+        "result_bytes": 4
+      }
+    },
+    {
+      "weights": [
+        -4,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 2,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 3,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "6a96f8f53ca02f83b39311f5fca74e5f15454eab491ecf68c540fba959d9e737",
+        "result_bytes": 7
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "385cfdbc00ec32031699460779c15099b2bba3cad0e440fffb08e10df0acb9e1",
+        "result_bytes": 4
+      }
+    },
+    {
+      "weights": [
+        -4,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 2,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 7,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "6a96f8f53ca02f83b39311f5fca74e5f15454eab491ecf68c540fba959d9e737",
+        "result_bytes": 7
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "385cfdbc00ec32031699460779c15099b2bba3cad0e440fffb08e10df0acb9e1",
+        "result_bytes": 4
+      }
+    },
+    {
+      "weights": [
+        -4,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 2,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "6a96f8f53ca02f83b39311f5fca74e5f15454eab491ecf68c540fba959d9e737",
+        "result_bytes": 7
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "385cfdbc00ec32031699460779c15099b2bba3cad0e440fffb08e10df0acb9e1",
+        "result_bytes": 4
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -2
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "support_size": 2,
+      "matrix_stratum": "rank_one_one_sided",
+      "moment_status": "one-sided weight support; every positive pure moment vanishes identically"
+    },
+    {
+      "weights": [
+        -3,
+        -1
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "support_size": 2,
+      "matrix_stratum": "rank_one_one_sided",
+      "moment_status": "one-sided weight support; every positive pure moment vanishes identically"
+    },
+    {
+      "weights": [
+        -3,
+        1
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "support_size": 2,
+      "matrix_stratum": "rank_one_mixed",
+      "sharp_cutoff": 4,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "6a96f8f53ca02f83b39311f5fca74e5f15454eab491ecf68c540fba959d9e737",
+        "result_bytes": 7
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "385cfdbc00ec32031699460779c15099b2bba3cad0e440fffb08e10df0acb9e1",
+        "result_bytes": 4
+      }
+    },
+    {
+      "weights": [
+        -3,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 2,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 5,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "6a96f8f53ca02f83b39311f5fca74e5f15454eab491ecf68c540fba959d9e737",
+        "result_bytes": 7
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "385cfdbc00ec32031699460779c15099b2bba3cad0e440fffb08e10df0acb9e1",
+        "result_bytes": 4
+      }
+    },
+    {
+      "weights": [
+        -3,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 2,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "6a96f8f53ca02f83b39311f5fca74e5f15454eab491ecf68c540fba959d9e737",
+        "result_bytes": 7
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "385cfdbc00ec32031699460779c15099b2bba3cad0e440fffb08e10df0acb9e1",
+        "result_bytes": 4
+      }
+    },
+    {
+      "weights": [
+        -2,
+        -1
+      ],
+      "positions": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "support_size": 2,
+      "matrix_stratum": "rank_one_one_sided",
+      "moment_status": "one-sided weight support; every positive pure moment vanishes identically"
+    },
+    {
+      "weights": [
+        -2,
+        1
+      ],
+      "positions": [
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "support_size": 2,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 3,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "6a96f8f53ca02f83b39311f5fca74e5f15454eab491ecf68c540fba959d9e737",
+        "result_bytes": 7
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "385cfdbc00ec32031699460779c15099b2bba3cad0e440fffb08e10df0acb9e1",
+        "result_bytes": 4
+      }
+    },
+    {
+      "weights": [
+        -2,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 2,
+      "matrix_stratum": "rank_one_mixed",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "6a96f8f53ca02f83b39311f5fca74e5f15454eab491ecf68c540fba959d9e737",
+        "result_bytes": 7
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "385cfdbc00ec32031699460779c15099b2bba3cad0e440fffb08e10df0acb9e1",
+        "result_bytes": 4
+      }
+    },
+    {
+      "weights": [
+        -1,
+        1
+      ],
+      "positions": [
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "support_size": 2,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "6a96f8f53ca02f83b39311f5fca74e5f15454eab491ecf68c540fba959d9e737",
+        "result_bytes": 7
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "385cfdbc00ec32031699460779c15099b2bba3cad0e440fffb08e10df0acb9e1",
+        "result_bytes": 4
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "rank_one_one_sided",
+      "moment_status": "one-sided weight support; every positive pure moment vanishes identically"
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -1
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "rank_one_one_sided",
+      "moment_status": "one-sided weight support; every positive pure moment vanishes identically"
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        1
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 4,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 3,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        -1
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "rank_one_one_sided",
+      "moment_status": "one-sided weight support; every positive pure moment vanishes identically"
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        1
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 3,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 4,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -1,
+        1
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 6,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "1f0d6ec69ec73a0f6f74a1daf38dece0087d9f52c246e4f3ca98fa05c5979254",
+        "result_bytes": 34
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -1,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 4,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -1,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 3,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        1,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 3,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 3,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -2,
+        -1
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "rank_one_one_sided",
+      "moment_status": "one-sided weight support; every positive pure moment vanishes identically"
+    },
+    {
+      "weights": [
+        -3,
+        -2,
+        1
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 3,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -2,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -1,
+        1
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 3,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -1,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -3,
+        1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 3,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -2,
+        -1,
+        1
+      ],
+      "positions": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -2,
+        -1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 3,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "3300c99f06517e7bec6d334f3ab9b5a547e6b3a24512475e0184cafca2ce4033",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        -1
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "rank_one_one_sided",
+      "moment_status": "one-sided weight support; every positive pure moment vanishes identically"
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        1
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 3,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -1,
+        1
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 4,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -1,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -1,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 4,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        1,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        1,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        2,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        3,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 4,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        -1,
+        1
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        -1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        -1,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 3,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        -1,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        1,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 4,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        1,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        2,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 4,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "0df3fc49f63d275d21b07270a0a9d77c2c47f24d0fe79cbac80d9c32a095a156",
+        "result_bytes": 42
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -1,
+        1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -1,
+        1,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -1,
+        1,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 4,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -1,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 4,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        1,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 4,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -2,
+        -1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -2,
+        -1,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -2,
+        1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "rank_one_and_exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      },
+      "rank_stratification": {
+        "minors": [
+          "x0 - x1"
+        ],
+        "exact_rank_two_cover": [
+          {
+            "minor": "x0 - x1",
+            "sharp_cutoff": 2,
+            "through_previous": {
+              "unit": false,
+              "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+              "result_bytes": 15
+            },
+            "through_cutoff": {
+              "unit": true,
+              "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+              "result_bytes": 5
+            }
+          }
+        ],
+        "exact_rank_two_sharp_cutoff": 2,
+        "rank_one_closed_locus": {
+          "sharp_cutoff": 2,
+          "through_previous": {
+            "unit": false,
+            "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+            "result_bytes": 15
+          },
+          "through_cutoff": {
+            "unit": true,
+            "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+            "result_bytes": 5
+          }
+        }
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -2,
+        1,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -2,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 4,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -1,
+        1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -1,
+        1,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "rank_one_and_exact_rank_two",
+      "sharp_cutoff": 6,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "e4a8c3f2f083ef805fe1fab37a072b3865bd447d31b8494cd7183cccd2456cf5",
+        "result_bytes": 624
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      },
+      "rank_stratification": {
+        "minors": [
+          "x0 - x1"
+        ],
+        "exact_rank_two_cover": [
+          {
+            "minor": "x0 - x1",
+            "sharp_cutoff": 6,
+            "through_previous": {
+              "unit": false,
+              "result_sha256": "06a2ed98dea437fdd350929daf226f67c9895a0272cad170e0212b66001f19da",
+              "result_bytes": 623
+            },
+            "through_cutoff": {
+              "unit": true,
+              "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+              "result_bytes": 5
+            }
+          }
+        ],
+        "exact_rank_two_sharp_cutoff": 6,
+        "rank_one_closed_locus": {
+          "sharp_cutoff": 2,
+          "through_previous": {
+            "unit": false,
+            "result_sha256": "ced08a9f3480ccdb77c7eef178676a4155600bcca1fe4b5482ce72c422c32a63",
+            "result_bytes": 15
+          },
+          "through_cutoff": {
+            "unit": true,
+            "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+            "result_bytes": 5
+          }
+        }
+      }
+    },
+    {
+      "weights": [
+        -2,
+        -1,
+        1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 4,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 4,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "0df3fc49f63d275d21b07270a0a9d77c2c47f24d0fe79cbac80d9c32a095a156",
+        "result_bytes": 42
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        -1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        -1,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        -1,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        1,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        1,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 3,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        2,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 5,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "208aad08971cf7d386e2129de639451a94400d602203db3c5f8c3f6e5412af37",
+        "result_bytes": 54
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        3,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 3,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -1,
+        1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -1,
+        1,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 3,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -1,
+        1,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 3,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -1,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -1,
+        2,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -1,
+        3,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 3,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        1,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        1,
+        2,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        -1,
+        1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 5,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "f84c74ca7c6fa8a1f8186cb948ad3867a67930b1be38a8e6d7868484c73648a4",
+        "result_bytes": 14
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        -1,
+        1,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        -1,
+        1,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 4,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        -1,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        -1,
+        2,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 5,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "f84c74ca7c6fa8a1f8186cb948ad3867a67930b1be38a8e6d7868484c73648a4",
+        "result_bytes": 14
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        1,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -1,
+        1,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 2,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "bfa6c5813d4b78f4b698189cfb627adc91656bbffb131d6b99b85f1245432396",
+        "result_bytes": 15
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -2,
+        -1,
+        1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 5,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "2c0785722e9d59b527db052c377b08dd36d034258e71f64fc7a599ad42fb45b0",
+        "result_bytes": 826
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -2,
+        -1,
+        1,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 5,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "6b312aab1983ef5793d50a7d63551633695e015cbe15221a3288d5ad945c5a6c",
+        "result_bytes": 417
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -2,
+        -1,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 5,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 5,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "b6b360cd64bec2e36b240fe6c2f60463648f77b445bcd475a69fb16afb0057f8",
+        "result_bytes": 358
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "support_size": 6,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 6,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "6d909cc44edfa5394611b0e6e387dd401c72a5bba69de6bececb8671e7292de0",
+        "result_bytes": 1033
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 6,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 6,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "31004383bb5c31196afc25aedc59f784989e582207fd4004f8a24a84d861a5ac",
+        "result_bytes": 1060
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 6,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 6,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "45edc9bfe65856a7d908ba497d700dd42bf7aa805639322f1d216f71ba6e055a",
+        "result_bytes": 1577
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        -1,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 6,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 6,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "1e1cf9492b891a73d5ad74f34d77dcda264e6c9584d4ef3cceb5386987ab417c",
+        "result_bytes": 555
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        -1,
+        2,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 6,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 6,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "fa95df45394bf9f6f68f1ef7b6b39ccce42d2ac8a57cb77a93c9c44901c845f2",
+        "result_bytes": 2183
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        -1,
+        3,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 6,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 6,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "2cf55de203eee67db52d247ac7da61eda887473684b0781cb0b6d01b5f1cc9f4",
+        "result_bytes": 550
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        1,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 6,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 6,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "a5aaedd5148052aa42f8d74dc504807419359b52853d49be60211bf58292e72d",
+        "result_bytes": 1060
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        1,
+        2,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 6,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 6,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "d3e586305671fb887868d243d0172dd747deb75480a62d7ab542a10dd326cb35",
+        "result_bytes": 1688
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        1,
+        3,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 6,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 6,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "45218d818df7e1d08e5cac88dec5f44a5e7e502c1365f86f85b584d5d031b759",
+        "result_bytes": 527
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        2,
+        3,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 6,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 6,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "1036eb933f2c27a8a3d11d3691b1865db544c28cc93c3c9c2175306f53170f7a",
+        "result_bytes": 1029
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -1,
+        1,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 6,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 6,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "c9633b2956f18132ddc972869100cfcfc8e14f537c95aae14cfc2b5e4182c389",
+        "result_bytes": 1576
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -1,
+        1,
+        2,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 6,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 6,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "953e92f77c371868eaa39b1548dcbe57ea456e8b15155b668004490fdef3c840",
+        "result_bytes": 2072
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -1,
+        1,
+        3,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 6,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 6,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "0aca77ae32e869c95e23f8449bf3cf56e950da45ff6e0481cddc78e3eca3e87f",
+        "result_bytes": 2065
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        -1,
+        1,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 6,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 6,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "681c498cd7c9f4f27fd4062ee78397d73783e83bda3e072382c176c9d416a629",
+        "result_bytes": 2134
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -2,
+        -1,
+        1,
+        2,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 6,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 6,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "55903624886613baea2c42e4cdf5803044091f93bd2ae6406e0ea5e39ee7f21e",
+        "result_bytes": 2048
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 6,
+      "matrix_stratum": "rank_one_and_exact_rank_two",
+      "sharp_cutoff": 6,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "261ae9854ba3c6ba0b3493c36f750bdb32bf9eb73d6f05ccf2a950324945cadd",
+        "result_bytes": 1030
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      },
+      "rank_stratification": {
+        "minors": [
+          "x0*x2 - x3",
+          "x0*x1 - x3",
+          "x1 - x2"
+        ],
+        "exact_rank_two_cover": [
+          {
+            "minor": "x0*x2 - x3",
+            "sharp_cutoff": 6,
+            "through_previous": {
+              "unit": false,
+              "result_sha256": "29a5841fc75ba2b0cb788a16f21e663fbc37a8be066bae575a2a0f23532f218e",
+              "result_bytes": 1034
+            },
+            "through_cutoff": {
+              "unit": true,
+              "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+              "result_bytes": 5
+            }
+          },
+          {
+            "minor": "x0*x1 - x3",
+            "sharp_cutoff": 6,
+            "through_previous": {
+              "unit": false,
+              "result_sha256": "c839fcf71b530d55442a3d6b248e2819e0d84bba3a57e704f3b916dfcb0c3343",
+              "result_bytes": 1036
+            },
+            "through_cutoff": {
+              "unit": true,
+              "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+              "result_bytes": 5
+            }
+          },
+          {
+            "minor": "x1 - x2",
+            "sharp_cutoff": 6,
+            "through_previous": {
+              "unit": false,
+              "result_sha256": "4df1c91c928567c19b7bbf2905137096754f4af85c7622260cd963ca92c930cd",
+              "result_bytes": 1035
+            },
+            "through_cutoff": {
+              "unit": true,
+              "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+              "result_bytes": 5
+            }
+          }
+        ],
+        "exact_rank_two_sharp_cutoff": 6,
+        "rank_one_closed_locus": {
+          "sharp_cutoff": 4,
+          "through_previous": {
+            "unit": false,
+            "result_sha256": "eeccbb1db02084bb9cca63666d1d26f594ce6e8b3748287bd128667795a44074",
+            "result_bytes": 110
+          },
+          "through_cutoff": {
+            "unit": true,
+            "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+            "result_bytes": 5
+          }
+        }
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "support_size": 7,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 7,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "940c572ef5f3a289584a0385d85715794ee28ce1f0f026d28ed85e3d84cc4cf1",
+        "result_bytes": 9750
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 7,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 7,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "a87052a0bdbefd40199ce12ecbfa82ac4130e868927cc2a58639a209986a7ac9",
+        "result_bytes": 10428
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        3,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 7,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 7,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "9f69f1f80443ea01ed4c95cf6d6037419b30a2b5e95edc580c13f1a16ff750eb",
+        "result_bytes": 6862
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    },
+    {
+      "weights": [
+        -4,
+        -3,
+        -2,
+        -1,
+        2,
+        3,
+        4
+      ],
+      "positions": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "support_size": 7,
+      "matrix_stratum": "exact_rank_two",
+      "sharp_cutoff": 7,
+      "through_previous": {
+        "unit": false,
+        "result_sha256": "8aa3e53703f0da819e2dab5a3a26c4ae5f7183f76431b6f3c3836fc338dcef6b",
+        "result_bytes": 5046
+      },
+      "through_cutoff": {
+        "unit": true,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5
+      }
+    }
+  ],
+  "conclusion": "every mixed proper coordinate boundary is removed by a sharp moment cutoff at most seven; the only all-moment coordinate boundaries are rank-zero or rank-one one-sided supports",
+  "scope": "complete coordinate-boundary classification for the declared two-separated-row support, including rank-one loci inside the three equal-row-support tori; no other rank-two factor chart"
+}

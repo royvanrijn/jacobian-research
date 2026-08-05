@@ -1,0 +1,157 @@
+{
+  "format": "two-pair-sic-bidegree44-two-row-channel-v1",
+  "field": "characteristic zero",
+  "coefficient_support": [
+    [
+      0,
+      1
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ]
+  ],
+  "factor_chart": {
+    "U": "rows e_0 and e_4",
+    "B": "two coefficient rows on columns 1..4 and 0..3",
+    "internal_GL2_gauge": "already quotiented by the fixed U pivot",
+    "orbit_normalization": "c_01=c_43=1",
+    "residual_coordinates": [
+      "z0",
+      "z1",
+      "z2",
+      "z3",
+      "z4",
+      "z5"
+    ],
+    "coefficient_torus_saturation": "z0*z1*z2*z3*z4*z5 != 0",
+    "exact_rank_two_minor": "det C[rows 0,4; columns 0,4]=-z2*z3"
+  },
+  "moment_formula": "mu_m=sum_I I!*(4m-I)!*[x^I*y^I]Phi_C(x,y)^m",
+  "through_seven": {
+    "returncode": 0,
+    "through": 7,
+    "profiles": [
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        2,
+        2,
+        4
+      ],
+      [
+        3,
+        3,
+        8
+      ],
+      [
+        4,
+        4,
+        20
+      ],
+      [
+        5,
+        5,
+        40
+      ],
+      [
+        6,
+        6,
+        78
+      ],
+      [
+        7,
+        7,
+        138
+      ]
+    ],
+    "status": "zero_dimensional",
+    "variables": 7,
+    "scheme_degree": 604,
+    "result_sha256": "e12e8d54585eade2d3c103a7fc9ffba4f1a6dfcf90b08b92d0f4dceaa24f79c2",
+    "result_bytes": 4249027
+  },
+  "through_eight": {
+    "returncode": 0,
+    "through": 8,
+    "profiles": [
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        2,
+        2,
+        4
+      ],
+      [
+        3,
+        3,
+        8
+      ],
+      [
+        4,
+        4,
+        20
+      ],
+      [
+        5,
+        5,
+        40
+      ],
+      [
+        6,
+        6,
+        78
+      ],
+      [
+        7,
+        7,
+        138
+      ],
+      [
+        8,
+        8,
+        237
+      ]
+    ],
+    "status": "unit_ideal",
+    "variables": null,
+    "scheme_degree": null,
+    "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+    "result_bytes": 5
+  },
+  "component_conclusion": "the exact QQ seven-moment coefficient-torus scheme is finite of degree 604, and mu_8 removes every component",
+  "recurrence_gate": "no component survives the eighth pure moment, so there is no all-order candidate on which creative telescoping is required",
+  "conclusion": "the dense two-separated-row exact-rank-two chart contains no all-order pure-moment point and hence no SIC counterexample",
+  "scope": "exact dense coefficient-torus exclusion; coordinate boundaries and other rank-two factor charts remain open",
+  "written_source": "extended-geometry/TWO_PAIR_SIC_BIDEGREE44_RANK_TWO_ALL_ORDER_AUDIT.md"
+}

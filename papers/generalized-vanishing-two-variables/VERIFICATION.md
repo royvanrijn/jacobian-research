@@ -9,21 +9,21 @@ The matrix records where each load-bearing step is proved and what it uses.
 | Initial strict horizontal gap | Lemma 3.1 | Complete polarization, Duistermaat--van der Kallen, Hall's marriage theorem |
 | Factorial valuation at a good prime | Lemma 3.2 | Legendre's formula at an unramified prime ideal |
 | Shifted unequal-weight faces cannot overlap | Proposition 4.1 | Number-field specialization, Frobenius, Lemma 3.2, and unique-minimum valuation |
-| Unequal-weight pure-zero faces are horizontally disjoint | Corollary 4.2 | Proposition 4.1 |
+| Unequal-weight pure-zero faces are horizontally disjoint | Corollary 4.3 | Proposition 4.1 |
 | A common unequal threshold is terminal for every fixed multiplier | Proposition 5.1 | Equal-face coordinate gap and bounded weight defect |
 | The global envelopes reach a common threshold | Section 6 | Finite piecewise-linear envelopes and the initial Hall gap |
 | Unrestricted GVC in two variables | Theorem 1.1 | The preceding rows |
 | Long's adjacent-coefficient mechanism | Section 7 | Long's published Gaussian moment identity |
 | Homogeneous GVC(3) counterexample | Theorem 8.1 | Quadric identity, exact spherical coefficients, and the Reynolds--apolar identity |
 | Full winding--profile--radial failure family | Theorem 9.1 | The same phase extraction with arbitrary endpoint contact and profile |
-| `GVC(n)` and homogeneous `GVC(n)` hold exactly for `n <= 2` | Theorem 10.1 | Theorems 1.1 and 8.1, de Bondt's split-symbol theorem, and unused-variable padding |
+| `GVC(n)` and homogeneous `GVC(n)` hold exactly for `n <= 2` | Theorem 10.2 | Theorems 1.1 and 8.1, de Bondt's split-symbol theorem, and Lemma 10.1 |
 
 No bounded search, generated artifact, or symbolic certificate is used in
 the proof.  The Ferrers support statement in Section 12 is a consequence of
 horizontal separation.  The dependency-free GVC(3) checker is an independent
 bounded replay, not the all-order proof.
 
-The partial Lean audit in [`../../formal/gvc`](../../formal/gvc) checks the
+The Lean audit in [`../../formal/gvc`](../../formal/gvc) checks the
 literal ternary polynomials and their degree-twelve homogeneity, the cusp
 identity, the algebraic beta evaluation of the endpoint moment, the complete
 binomial coefficient ladder for an arbitrary rational endpoint profile, the
@@ -36,26 +36,47 @@ kernel.  The resulting bridge is constructed in Lean, yielding the pure
 identity, exact mixed scalar, and literal ternary counterexample.  Coefficient
 base change and unused-variable padding then prove GVC failure over every
 characteristic-zero field in every finite dimension at least three.  Thus
-Theorem 8.1 and the negative half of Theorem 10.1 are fully Lean-verified.
+Theorem 8.1 and the negative half of Theorem 10.2 are fully Lean-verified.
+For Theorem 9.1 it also proves the literal arbitrary-profile quadric
+restriction under the stated declared-degree condition, general even-phase
+coefficient extraction, coefficientwise height substitution, endpoint
+factorization, and the shifted primitive identity.  The resulting
+`verifiedProfileFamilyBridge` yields the pure identity, complete exact
+multiplier ladder, and GVC counterexample over `Q`; injective coefficient
+base change proves the same failure over every characteristic-zero field
+from exactly the theorem's nonzero-moment hypothesis.  Thus Theorem 9.1 is
+fully Lean-verified.
 Lean also proves abstractly that binary GVC implies unary GVC.  On the binary
 side it proves the rational `p`-adic lower and exact factorial valuations
 from Lemma 3.2 and the negative-final-slope plus intermediate-value envelope
-step.
+step.  For Lemma 3.1 it now proves the complete finite Hall-deficiency core:
+Mathlib's Hall theorem produces a deficient set, binary linear algebra puts
+that set in one direction class, and exact counting gives at least
+`d - e + 1` annihilated polynomial factors.  The split-factor interface
+records the literal symbol and polynomial products, and Lean proves that the
+full direction power divides the symbol while the matching perpendicular
+power divides the polynomial.  These are the coordinate-free versions of
+the displayed normal forms.  It also proves the
+complete finite-support deduction in Proposition
+5.1: finite maximization turns an ordering of the equal faces into an
+integral coordinate cut, which refines the common threshold to a strict
+positive weight whose linearly growing power gap eventually dominates every
+fixed multiplier.  Empty equality faces are handled separately.
 
-For Theorem 9.1, the Lean interface assumes only the multivariate phase
-coefficients and the theorem's stated nonzero-moment hypothesis; from those
-it derives the pure identity, the complete exact multiplier ladder, and the
-literal GVC counterexample.
-
-The audit still exposes, but does not yet prove, the full-profile phase
-bridge and the Hall/shifted-ray/no-reversal/common-threshold obligations for
-the binary theorem.  In particular, the transfer of the rational valuation statement to
-an unramified prime ideal remains part of the written number-field proof.  A
-spherical integral realization of the coefficientwise Reynolds functional is
-not checked, but the formal differential identity uses the algebraic top
-contraction directly and does not require that realization.
-Therefore Theorems 1.1 and 9.1 and the complete biconditional in Theorem 10.1
-should not yet be described as fully Lean-verified.
+The audit still exposes, but does not yet prove, the translated
+polarization/Duistermaat--van der Kallen implication that rules out a
+split-factor matching, the literal field-extension and coordinate-change
+and exact-quotient packaging of Lemma 3.1, or the
+shifted-ray/no-reversal/global-envelope
+obligations for the binary theorem.  In particular, the transfer of the
+rational valuation statement to an unramified prime ideal and the resulting
+`delta = 0` equal-face ordering remain part of the written number-field
+proof.  A spherical integral
+realization of the coefficientwise Reynolds functional is not checked, but
+the formal differential identity uses the algebraic top contraction directly
+and does not require that realization.
+Therefore Theorem 1.1 and the complete biconditional in Theorem 10.2 should
+not yet be described as fully Lean-verified.
 
 Build and inspect the manuscript with:
 
