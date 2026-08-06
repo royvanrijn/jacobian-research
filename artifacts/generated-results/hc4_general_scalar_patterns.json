@@ -1,0 +1,14 @@
+{
+  "scope": "all-degree synchronized scalar reverse-Schur identities",
+  "resonance_square_identity": "C=(dn-em)^2+m(d-m)(d-2e-1)",
+  "transverse_excess": {
+    "W": "(d+o)/2",
+    "deg_H": "h=e-W",
+    "deg_C": "2h"
+  },
+  "all_even_h0": {
+    "family": "f=A^2, g=aA, q=a^2/d",
+    "terminal_coefficient": "[z^4]J=a^6 det(Hess A)/d^2",
+    "consequence": "binary Hess(A)=0, hence A is a power of a linear form"
+  }
+}
