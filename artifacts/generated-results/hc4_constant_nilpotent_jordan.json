@@ -1,0 +1,10 @@
+{
+  "scope": "constant nilpotent relative frames in four variables",
+  "status": "classified",
+  "types": {
+    "4": "triangular polynomial automorphism",
+    "3+1": "triangular polynomial automorphism",
+    "2+1+1": "HC2 endpoint",
+    "2+2": "JC2 cotangent endpoint"
+  }
+}

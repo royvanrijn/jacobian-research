@@ -1,0 +1,11 @@
+{
+  "status": "all six three-root survivors closed",
+  "record": {
+    "6+2+1": {"basis": ["a**3","6_2_1_r0","6_2_1_r1","6_2_1_r2","6_2_1_r3","6_2_1_s0","6_2_1_s1"], "transverse_radical": "a=0"},
+    "5+2+2": {"basis": ["a**3","5_2_2_r0","5_2_2_r1","5_2_2_r2","5_2_2_r3","5_2_2_s0","5_2_2_s1"], "transverse_radical": "a=0"},
+    "4+4+1": {"basis": ["a**3","4_4_1_r0","4_4_1_r1","4_4_1_r2","4_4_1_r3","4_4_1_s0","4_4_1_s1"], "transverse_radical": "a=0"},
+    "4+3+2": {"basis": ["a**3","4_3_2_r0","4_3_2_r1","4_3_2_r2","4_3_2_r3","4_3_2_s0","4_3_2_s1"], "transverse_radical": "a=0"},
+    "3+3+3@e=5": {"basis": ["u**3","u*v*(u + v)","v**3"], "transverse_radical": "u=v=0"},
+    "3+3+3@e=6": {"basis": ["a6**2*r6","-(-2*a6**3 + 81*r6)/2","r6**2"], "transverse_radical": "a6=r6=0"}
+  }
+}

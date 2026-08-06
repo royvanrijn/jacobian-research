@@ -1,0 +1,14 @@
+{
+  "scope": "degree-nine synchronized scalar packets with five odd multiplicities",
+  "status": "closed",
+  "unique_local_survivor": "(3,3,1,1,1)",
+  "complete_face_basis": [
+    "a**2",
+    "r0",
+    "r1",
+    "r2",
+    "r3",
+    "s0",
+    "s1"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "scope": "degree-nine synchronized scalar packets with three odd multiplicities",
+  "status": "closed",
+  "e6_root_values": {"1":"23/72","2":"47/126","3":"4/9","4":"11/45","5":"71/180","6":"-1/18","7":"10/63","8":"-14/9"},
+  "e7_root_values": {"1":"11/18","2":"59/126","3":"11/18","4":"1/9","5":"14/45","6":"-13/18","7":"-85/126","8":"-44/9"},
+  "complete_face_basis": ["a**2","r0","r1","r2","r3","s0","s1"]
+}

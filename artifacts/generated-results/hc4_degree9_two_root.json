@@ -1,0 +1,10 @@
+{
+  "scope": "degree-nine synchronized scalar packet with exactly two leading roots",
+  "status": "closed to fixed cylinders",
+  "partitions": {
+    "8+1": {"5": [3], "6": [3,3], "7": [5,4,3]},
+    "7+2": {"5": [3], "6": [3,3], "7": [3,5,3]},
+    "6+3": {"5": [3,3], "6": [5,3], "7": [4,5,3]},
+    "5+4": {"5": [3], "6": [3,3], "7": [3,5,3]}
+  }
+}

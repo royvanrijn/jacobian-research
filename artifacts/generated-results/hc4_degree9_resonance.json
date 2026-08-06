@@ -1,0 +1,6 @@
+{
+  "scope": "degree-nine synchronized scalar m=3,e=5 resonance",
+  "status": "closed",
+  "only_schur_survivor": ["lambda+mu+1","mu^2+mu+1"],
+  "terminal_coefficient": "[x^16 y^4 z] = 36 a^3"
+}

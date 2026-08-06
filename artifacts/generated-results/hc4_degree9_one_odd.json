@@ -1,0 +1,14 @@
+{
+  "scope": "nonresonant degree-nine synchronized scalar packets with one odd multiplicity",
+  "status": "closed",
+  "cubic_ode": {
+    "constant": ["1"], "linear": ["1"],
+    "double": ["1070696*a3_0 + 1972593*l3_0**3","11638*a3_1 - 41013*l3_0**2","23*a3_2 + 63*l3_0","l3_0**4","7*l3_1 - 1"],
+    "distinct": ["1"]
+  },
+  "quartic_ode": {
+    "constant": ["1"], "linear": ["1"],
+    "double": ["a4_0","a4_1","a4_2","a4_3","7*k4 - 1"],
+    "distinct": ["1"]
+  }
+}
