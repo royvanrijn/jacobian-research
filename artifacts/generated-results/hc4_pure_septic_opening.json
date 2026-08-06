@@ -1,0 +1,19 @@
+{
+  "faces": {
+    "degree_19": "49*x^12*(H6)_yy*(2*(c5)_zz-(8/7)*k^2*x^3)/2",
+    "degree_20": "49*x^12*det Hess_(y,z)(c6)"
+  },
+  "format": "hc4-pure-septic-opening-v1",
+  "normal_form": {
+    "c5_when_H6_yy_nonzero": "R5(x,y)+z*P4(x,y)+(2/7)*k^2*x^3*z^2",
+    "c6": "H6(x,y)+k*x^5*z",
+    "c7": "x^7"
+  },
+  "residual": "the descendants of the moving k!=0, (H6)_yy!=0 chart and the passive-affine (H6)_yy=0 boundary",
+  "status": {
+    "id": "HC4RSD34",
+    "kind": "exact narrowing theorem",
+    "result": "the sextic correction is passive singular-Hessian; in its binary normal form, when (H6)_yy is nonzero, the next face fixes the complete z^2 quintic tail",
+    "scope": "the pure-seventh scalar leading chart left by HC4RSD33"
+  }
+}

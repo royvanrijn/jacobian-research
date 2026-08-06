@@ -1,0 +1,144 @@
+{
+  "bad_prime_conclusion": "the audited exceptions do not follow a uniform 2*n+1 rule",
+  "bad_reductions": {
+    "degree_6_p17": {
+      "h3_kernel_dimension": 6,
+      "h3_rank": 77,
+      "h5_augmented_rank": 41,
+      "h5_correction_kernel_dimension": null,
+      "h5_correction_rank": 34,
+      "h5_output_dimension": 110,
+      "h5_strong_span_rank": 40
+    },
+    "degree_8_p17": {
+      "h3_kernel_dimension": 11,
+      "h3_rank": 167,
+      "h5_augmented_rank": 105,
+      "h5_correction_kernel_dimension": 4,
+      "h5_correction_rank": 97,
+      "h5_output_dimension": 269,
+      "h5_strong_span_rank": 104
+    },
+    "degree_9_p19": {
+      "h3_kernel_dimension": 13,
+      "h3_rank": 226,
+      "h5_augmented_rank": 150,
+      "h5_correction_kernel_dimension": 6,
+      "h5_correction_rank": 142,
+      "h5_output_dimension": 371,
+      "h5_strong_span_rank": 149
+    }
+  },
+  "rows": {
+    "6": {
+      "ranks": {
+        "h3_kernel_dimension": 6,
+        "h3_rank": 77,
+        "h5_augmented_rank": 42,
+        "h5_correction_kernel_dimension": 0,
+        "h5_correction_rank": 34,
+        "h5_output_dimension": 110,
+        "h5_strong_span_rank": 41
+      },
+      "supports": [
+        {
+          "S": 49,
+          "T": 34,
+          "correction_order": 2
+        },
+        {
+          "S": 22,
+          "T": 12,
+          "correction_order": 4
+        }
+      ]
+    },
+    "7": {
+      "ranks": {
+        "h3_kernel_dimension": 8,
+        "h3_rank": 118,
+        "h5_augmented_rank": 69,
+        "h5_correction_kernel_dimension": 2,
+        "h5_correction_rank": 61,
+        "h5_output_dimension": 178,
+        "h5_strong_span_rank": 68
+      },
+      "supports": [
+        {
+          "S": 72,
+          "T": 54,
+          "correction_order": 2
+        },
+        {
+          "S": 38,
+          "T": 25,
+          "correction_order": 4
+        }
+      ]
+    },
+    "8": {
+      "ranks": {
+        "h3_kernel_dimension": 10,
+        "h3_rank": 168,
+        "h5_augmented_rank": 105,
+        "h5_correction_kernel_dimension": 4,
+        "h5_correction_rank": 97,
+        "h5_output_dimension": 269,
+        "h5_strong_span_rank": 104
+      },
+      "supports": [
+        {
+          "S": 100,
+          "T": 78,
+          "correction_order": 2
+        },
+        {
+          "S": 59,
+          "T": 42,
+          "correction_order": 4
+        }
+      ]
+    },
+    "9": {
+      "ranks": {
+        "h3_kernel_dimension": 12,
+        "h3_rank": 227,
+        "h5_augmented_rank": 150,
+        "h5_correction_kernel_dimension": 6,
+        "h5_correction_rank": 142,
+        "h5_output_dimension": 371,
+        "h5_strong_span_rank": 149
+      },
+      "supports": [
+        {
+          "S": 132,
+          "T": 107,
+          "correction_order": 2
+        },
+        {
+          "S": 84,
+          "T": 64,
+          "correction_order": 4
+        },
+        {
+          "S": 46,
+          "T": 31,
+          "correction_order": 6
+        }
+      ]
+    }
+  },
+  "scope": "exact four-row rank audit and combinatorial support formulas; no all-degree rank theorem",
+  "verified_degrees": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "verified_row_patterns": {
+    "dim_kernel_D5": "2*n-12",
+    "dim_kernel_d3": "2*n-6",
+    "generic_constant_rank_jump": 1,
+    "rank_M5_minus_rank_D5": 7
+  }
+}

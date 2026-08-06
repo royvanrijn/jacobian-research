@@ -641,6 +641,52 @@ Run the combined regression with
 .venv/bin/python plane-jc/cas/test_plane_boundary_exclusion.py
 ```
 
+### 6.2 Reconstruction lattice gate
+
+The typed one-dicritical certificate controls the cover over a target
+nonproperness curve; it does not by itself prove that the reconstructed
+source open is `A^2`.  If that normal open contains a certified dense
+`G_m^2`, a second exact localization sequence computes its units and Weil
+class group from the valuations of the two torus characters on every
+codimension-one fill divisor.  Affine-plane reconstruction requires this
+matrix to be square and unimodular; see the
+[normal-core Smith criterion](BOUNDARY_LATTICE_PREFILTER.md#dual-torus-core-localization).
+
+This adds a reusable rejection stage after the different/conductor audit and
+before coefficient reconstruction.  It detects torsion that point counts,
+generic sheet budgets, and local conductor packets can all miss.  A passing
+matrix does not strengthen the exclusion theorem above: affineness and
+polynomial coordinates remain separate hypotheses.
+
+For the wild one-variable gluing search this gate now closes the omitted
+zero exponent through the core row `(N+1,N+1)`, while Newton ramification
+closes all exponents `a>=N`.  A nonmonomial coefficient `C(P)` cannot evade
+the classification without adding a new target different divisor at a factor
+of `C` away from `P=0`.  For arbitrary `C(P,Q)`, the same support condition
+forces `C=cP^aQ^b`.  The prime-to-characteristic base-change Euler formula,
+purely inseparable transfer of `[L1]`, and the residual full-source identity
+`Cl(U_(2,c))=Cl(D(xu))=(Z/2)^2` close the `b>0` rows as well.  Thus this
+complete boundary architecture has only the original characteristic-two
+cubic as a Keller affine-plane row.
+More generally, a principal reduced multiple-fibre packet of multiplicities
+`m_i` with generic unit rank one forces vertical group
+`(direct_sum Z/m_i)/<diagonal>`; a shared prime in two multiplicities is
+therefore a fast architecture-independent exclusion gate.
+For a squarefree retained polynomial `A(T)`, balanced gluing has the exact
+support factor `A-T*A'`.  Thus target different supported in `V(PQ)` forces
+`A=a0+T*B(T^p)` and restricts the next odd-characteristic source search to
+cover degrees congruent to one modulo `p` at the support stage.  The normalized complement has
+the exact formula
+`#(C_A-E_A)(F_q)=q^2+(n_q(A)-1)q` and compactly supported Euler
+characteristic `deg(A)` after the retained roots split.  Hence every
+nonlinear squarefree retained polynomial is geometrically non-affine-plane;
+the linear class-group obstruction leaves only the characteristic-two cubic.
+In the first `(p,d)=(3,7)` row, the six prime-field retained polynomials all
+give smooth normalizations with different supported only on the omitted
+affine-line boundary; exact point counts leave only
+`A=T^4+T+1,T^4+2T+1` over `F_3`, and both are then rejected over `F_27` by
+the count `810!=729`.
+
 ## 7. Sources and status
 
 - Nguyen Van Chau,

@@ -353,9 +353,12 @@ What remains open is the corresponding computation for systematic higher
 wild families.  The separate direct lifting question for this exact plane map
 is settled negatively by the
 [modulo-four obstruction theorem](HUQ_KURUVILLA_PLANE_W2_OBSTRUCTION.md);
-lifting after plane polynomial equivalence and extending the explicit
-one-variable stable Witt tower with uniformly bounded polynomial degree
-remain open.  Neither issue affects the plane boundary theorem proved above.
+its de Rham obstruction is invariant under plane polynomial equivalence.
+Extending the explicit one-variable stable Witt tower with uniformly bounded
+polynomial degree remains open.  Neither issue affects the plane boundary
+theorem proved above.
+
+<!-- status-consumer: HKM2W1 904c57385ac0b0dd -->
 
 ## 8. Exact reproduction
 

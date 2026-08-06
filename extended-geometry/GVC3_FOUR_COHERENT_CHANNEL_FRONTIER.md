@@ -124,15 +124,18 @@ the substitution \(a_2=-A/B\), and saturate by
 
 Through \(\mu_7\), Singular returns the unit basis at all three primes:
 
-| characteristic | basis | measured checker time |
-|---:|:---:|---:|
-| 101 | \([1]\) | 16.7 s |
-| 103 | \([1]\) | 17.6 s |
-| 107 | \([1]\) | 17.9 s |
+| characteristic | basis | saturation exponent | measured checker time |
+|---:|:---:|---:|---:|
+| 101 | \([1]\) | 1 | 17.4 s |
+| 103 | \([1]\) | 1 | 17.9 s |
+| 107 | \([1]\) | 1 | 18.4 s |
 
 These are full polynomial-ring saturations, so they exclude algebraic, not
 merely prime-field-rational, cross-ratios in those characteristics.  They do
-not by themselves prove the characteristic-zero ideal is a unit.
+not by themselves prove the characteristic-zero ideal is a unit.  The
+exponent-one result says that the open-set product itself belongs to each
+finite-field moment ideal; this is the smallest possible target for a future
+rational Nullstellensatz lift.
 
 ## Direction collisions
 

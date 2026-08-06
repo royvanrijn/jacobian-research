@@ -1,0 +1,21 @@
+{
+  "completion": "c4_hat=c4-x^2*L^2/4 has singular passive Hessian",
+  "format": "hc4-pure-sextic-affine-quartic-v1",
+  "localized_resonance_ideal": [
+    "D",
+    "s"
+  ],
+  "residual": "c5=a*x^5+x^4*L and c4=b*x^4+x^3*M+x^2*L^2/4 for constant passive linear forms L,M",
+  "status": {
+    "id": "HC4RSD31",
+    "kind": "hybrid theorem",
+    "result": "all misaligned, transverse, and aligned lower-tail charts close, so the complete potential is a fixed cylinder",
+    "scope": "the passive-affine quintic boundary after HC4RSD30, when the completed quartic has nonzero passive curvature"
+  },
+  "terminal_coefficients": [
+    "2",
+    "5/108",
+    "36",
+    "-1"
+  ]
+}

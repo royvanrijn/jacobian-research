@@ -1,17 +1,26 @@
 #!/usr/bin/env python3
 """Regression tests for the certified Newton/log-boundary front end."""
 
+from dataclasses import replace
+
 import sympy as sp
 
 from intrinsic_a2_boundary import (
     infer_finite_model_dicritical_projection_budget,
 )
 from log_boundary_compiler import (
+    BoundaryOutputExpressionDatum,
     BranchScale,
+    ConductorBranchJetDatum,
+    ConductorBranchSensitivityDatum,
+    ContactExpression,
     NewtonBoundaryCertificate,
+    NormalJetInputDatum,
     PullbackMonomial,
+    RetainedRootEulerDatum,
     ToroidalCluster,
     branch_scale_regression_certificate,
+    certificate_from_dict,
     compile_log_boundary,
     corner_direction,
     frontier_72_108_case1_boundary_package_audit,
@@ -81,6 +90,353 @@ valuation = {
 }["E3"]
 assert valuation.pullback_orders == (("target_u", 2), ("target_v", 3))
 assert valuation.tame_differents == (("target_u", 1), ("target_v", 2))
+assert compiled.retained_root_euler_audit.status.value == "not_applicable"
+assert compiled.passes_search_gates
+assert compiled.as_dict()["retained_root_euler_gate"]["status"] == (
+    "not_applicable"
+)
+assert compiled.conductor_jet_audit.status.value == "not_declared"
+assert not compiled.boundary_module_truncation_ready
+assert compiled.as_dict()["conductor_jet_truncation"]["status"] == (
+    "not_declared"
+)
+assert compiled.conductor_sensitivity_audit.status.value == "not_declared"
+assert compiled.as_dict()["conductor_jet_sensitivity"]["status"] == (
+    "not_declared"
+)
+
+
+retained_root_certificate = RetainedRootEulerDatum(
+    retained_degree=4,
+    squarefree=True,
+    nonzero_constant_term=True,
+    omitted_fierce_boundary_count=1,
+    balanced_chart_certificate=(
+        "P=x*u,T=x^2*u,Q=A(x^2*u)*(u-x^(N-1)) over D(A)"
+    ),
+    different_support_certificate=(
+        "relative different supported on the omitted fierce boundary"
+    ),
+    root_fibre_certificate=(
+        "each simple nonzero retained root replaces Gm by two A1s"
+    ),
+    omitted_boundary_certificate=(
+        "E is the single A1 parametrized by P=s^N,T=s^(N+1),Q=0"
+    ),
+    theorem_source=(
+        "extended-geometry/PLANE_WILD_BOUNDARY_ATLAS.md, Theorem 7.12"
+    ),
+)
+retained_quartic = compile_log_boundary(
+    replace(
+        branch_scale_regression_certificate(),
+        name="balanced retained quartic",
+        retained_root_euler=retained_root_certificate,
+    )
+)
+assert retained_quartic.passes_prefilter
+assert not retained_quartic.passes_search_gates
+assert retained_quartic.retained_root_euler_audit.obstruction
+assert retained_quartic.as_dict()["retained_root_euler_gate"] == {
+    "applicable": True,
+    "expected_affine_plane_euler_characteristic": 1,
+    "finite_field_open_count": "q^2+(n_q(A)-1)*q",
+    "geometric_euler_characteristic": 4,
+    "geometric_open_class": "L^2+3*L",
+    "obstruction": True,
+    "reason": "geometric Euler characteristic 4 differs from 1",
+    "retained_degree": 4,
+    "status": "obstructed",
+    "theorem_source": (
+        "extended-geometry/PLANE_WILD_BOUNDARY_ATLAS.md, Theorem 7.12"
+    ),
+}
+
+retained_linear = compile_log_boundary(
+    replace(
+        branch_scale_regression_certificate(),
+        name="balanced retained linear row",
+        retained_root_euler=replace(
+            retained_root_certificate, retained_degree=1
+        ),
+    )
+)
+assert retained_linear.passes_search_gates
+assert retained_linear.retained_root_euler_audit.status.value == "passes"
+
+retained_uncertified = compile_log_boundary(
+    replace(
+        branch_scale_regression_certificate(),
+        name="uncertified retained row",
+        retained_root_euler=replace(
+            retained_root_certificate,
+            different_support_certificate="",
+        ),
+    )
+)
+assert retained_uncertified.passes_search_gates
+assert retained_uncertified.retained_root_euler_audit.status.value == (
+    "uncertified"
+)
+print("PASS retained-root Euler gate: nonlinear reject, linear pass, safe fallback")
+
+parsed_retained = compile_log_boundary(
+    certificate_from_dict(
+        {
+            "name": "JSON retained quartic",
+            "chart": "A2",
+            "transformations": ["certified balanced chart"],
+            "theorem_source": "regression fixture",
+            "exhaustive": True,
+            "retained_root_euler": {
+                "retained_degree": 4,
+                "squarefree": True,
+                "nonzero_constant_term": True,
+                "omitted_fierce_boundary_count": 1,
+                "balanced_chart_certificate": "balanced chart",
+                "different_support_certificate": "different on E only",
+                "root_fibre_certificate": "simple nonzero roots",
+                "omitted_boundary_certificate": "one omitted E",
+                "theorem_source": "PWB6",
+            },
+            "clusters": [
+                {
+                    "name": "p",
+                    "root_boundary": "L",
+                    "scales": [
+                        {
+                            "name": "relative branch value",
+                            "u_power": 3,
+                            "v_power": 2,
+                        }
+                    ],
+                }
+            ],
+        }
+    )
+)
+assert not parsed_retained.passes_search_gates
+assert parsed_retained.retained_root_euler_audit.status.value == "obstructed"
+print("PASS retained-root Euler JSON block compiles to the shared audit")
+
+
+conductor_branch = ConductorBranchJetDatum(
+    name="cusp-branch",
+    conductor_exponent=2,
+    differential_order=1,
+    pole_order=2,
+    additional_contact_loss=1,
+    available_jet_order=6,
+    conductor_certificate="cusp conductor t^2",
+    expression_certificate="one derivative and pole two",
+    valuation_certificate="inputs known modulo t^6",
+)
+jet_ready = compile_log_boundary(
+    replace(
+        branch_scale_regression_certificate(),
+        name="conductor jet ready",
+        conductor_jet_branches=(conductor_branch,),
+    )
+)
+assert jet_ready.boundary_module_truncation_ready
+assert jet_ready.conductor_jet_audit.status.value == "passes"
+assert jet_ready.as_dict()["conductor_jet_truncation"]["branches"][0] == {
+    "additional_contact_loss": 1,
+    "available_jet_order": 6,
+    "conductor_certificate": "cusp conductor t^2",
+    "conductor_exponent": 2,
+    "contact_loss": 4,
+    "differential_order": 1,
+    "expression_certificate": "one derivative and pole two",
+    "margin": 0,
+    "name": "cusp-branch",
+    "pole_order": 2,
+    "required_jet_order": 6,
+    "valuation_certificate": "inputs known modulo t^6",
+}
+
+jet_short = compile_log_boundary(
+    replace(
+        branch_scale_regression_certificate(),
+        name="conductor jet short",
+        conductor_jet_branches=(
+            replace(conductor_branch, available_jet_order=5),
+        ),
+    )
+)
+assert not jet_short.boundary_module_truncation_ready
+assert jet_short.conductor_jet_audit.status.value == "insufficient"
+assert jet_short.passes_search_gates
+
+parsed_jet = compile_log_boundary(
+    certificate_from_dict(
+        {
+            "name": "JSON conductor jet",
+            "chart": "A2",
+            "transformations": ["certified conductor chart"],
+            "theorem_source": "regression fixture",
+            "exhaustive": True,
+            "conductor_jet_branches": [
+                {
+                    "name": "node-left",
+                    "conductor_exponent": 1,
+                    "differential_order": 1,
+                    "pole_order": 0,
+                    "additional_contact_loss": 0,
+                    "available_jet_order": 2,
+                    "conductor_certificate": "node conductor",
+                    "expression_certificate": "first derivative",
+                    "valuation_certificate": "two normal jets",
+                }
+            ],
+            "clusters": [
+                {
+                    "name": "p",
+                    "root_boundary": "L",
+                    "scales": [
+                        {
+                            "name": "relative branch value",
+                            "u_power": 3,
+                            "v_power": 2,
+                        }
+                    ],
+                }
+            ],
+        }
+    )
+)
+assert parsed_jet.boundary_module_truncation_ready
+assert parsed_jet.conductor_jet_audit.status.value == "passes"
+print("PASS conductor/contact-loss jet ledger: exact pass, deficit, and JSON replay")
+
+
+detailed_expression = ContactExpression.combine(
+    "add",
+    ContactExpression.shift("derivative", ContactExpression.input("P"), 1),
+    ContactExpression.shift(
+        "pole",
+        ContactExpression.shift(
+            "derivative", ContactExpression.input("Q"), 2
+        ),
+        2,
+    ),
+)
+detailed_branch = ConductorBranchSensitivityDatum(
+    name="asymmetric-cusp",
+    conductor_exponent=2,
+    inputs=(
+        NormalJetInputDatum("P", 3, "P normal valuation"),
+        NormalJetInputDatum("Q", 6, "Q normal valuation"),
+    ),
+    outputs=(
+        BoundaryOutputExpressionDatum(
+            "rho", detailed_expression, "complete P/Q expression tree"
+        ),
+    ),
+    conductor_certificate="cusp conductor (t^2)",
+    dependency_completeness_certificate="all dependencies listed",
+)
+detailed_ready = compile_log_boundary(
+    replace(
+        branch_scale_regression_certificate(),
+        name="dependency-sensitive conductor ledger",
+        conductor_jet_sensitivity=(detailed_branch,),
+    )
+)
+assert detailed_ready.boundary_module_truncation_ready
+assert detailed_ready.conductor_sensitivity_audit.status.value == "passes"
+assert detailed_ready.as_dict()["conductor_jet_sensitivity"][
+    "maximum_deficit"
+] == 0
+
+detailed_short = compile_log_boundary(
+    replace(
+        branch_scale_regression_certificate(),
+        name="dependency-sensitive conductor deficit",
+        conductor_jet_sensitivity=(
+            replace(
+                detailed_branch,
+                inputs=(
+                    detailed_branch.inputs[0],
+                    NormalJetInputDatum("Q", 5, "short Q normal valuation"),
+                ),
+            ),
+        ),
+    )
+)
+assert not detailed_short.boundary_module_truncation_ready
+assert detailed_short.conductor_sensitivity_audit.status.value == "insufficient"
+assert detailed_short.conductor_sensitivity_audit.maximum_deficit == 1
+
+parsed_detailed = compile_log_boundary(
+    certificate_from_dict(
+        {
+            "name": "JSON detailed conductor ledger",
+            "chart": "A2",
+            "transformations": ["certified conductor chart"],
+            "theorem_source": "regression fixture",
+            "exhaustive": True,
+            "conductor_jet_sensitivity": [
+                {
+                    "name": "node-left",
+                    "conductor_exponent": 1,
+                    "conductor_certificate": "node conductor",
+                    "dependency_completeness_certificate": "complete tree",
+                    "normal_valuation": {
+                        "coordinate_names": ["X", "z"],
+                        "coordinate_orders": [1, 3],
+                        "normalization_shift": 0,
+                        "certificate": "ord_t(X)=1, ord_t(z)=3"
+                    },
+                    "inputs": [
+                        {
+                            "name": "P",
+                            "first_omitted_exponents": [[2, 0]],
+                            "support_completeness_certificate": (
+                                "all omitted P terms have normal order at least two"
+                            ),
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "phi_1",
+                            "expression_certificate": "first derivative",
+                            "expression": {
+                                "operation": "derivative",
+                                "loss_order": 1,
+                                "operands": [
+                                    {
+                                        "operation": "input",
+                                        "input_name": "P"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "clusters": [
+                {
+                    "name": "p",
+                    "root_boundary": "L",
+                    "scales": [
+                        {
+                            "name": "relative branch value",
+                            "u_power": 3,
+                            "v_power": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    )
+)
+assert parsed_detailed.boundary_module_truncation_ready
+assert parsed_detailed.conductor_sensitivity_audit.status.value == "passes"
+assert parsed_detailed.conductor_sensitivity_audit.requirements[
+    0
+].available_jet_order == 2
+print("PASS dependency-sensitive conductor ledger: asymmetric pass and exact deficit")
 
 
 # Two scales at one infinitely-near point share their fan prefix rather than

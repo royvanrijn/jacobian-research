@@ -502,10 +502,16 @@ generate an exact unit ideal, excluding gcd degree seven without a residual
 endpoint certificate is a smaller coefficient contradiction, not yet a
 pure ramification/residue-degree replacement.
 
-The analogous Case-1 decomposition sieve requires data not present in the
-archived necessary truncation: the full polygons continue from the recorded
-`P:z^-5,Q:z^-4` bands down to `P:z^-8,Q:z^-12`, and those terms enter the
-alternate-chart residue.  They must be derived, not silently set to zero.
+The archived necessary truncation did not contain enough data for the
+analogous Case-1 decomposition sieve: it stopped at `P:z^-5,Q:z^-4`, while
+the full polygons continue through `P:z^-8,Q:z^-12`.  The exact continuation
+in [CASE1_FULL_BAND_CONTINUATION.md](CASE1_FULL_BAND_CONTINUATION.md) now
+derives all eleven lower bands from bracket layers `-4,...,-11`.  Its eight
+linear blocks have full column rank, introduce no parameter, and add 66
+compatibility equations.  Thus band recovery is no longer the prerequisite;
+the remaining work is to transport the completed pair to the alternate chart,
+extract its two exact residue vectors, and run the degree-two and degree-four
+right-component sieve.
 
 No Smith-normal-form obstruction of the boundary intersection matrix and no
 conductor inequality recovering the hard identity has been found.
@@ -514,3 +520,5 @@ The promising repository-original question is whether the order-seven grading
 and the two approximate-root filtrations define incompatible value semigroups.
 Until that is proved, it is a conjectural continuation, not a strengthening of
 the marked-point theorem or a family theorem.
+
+<!-- status-consumer: C1FBC1 0f14ef01fff25097 -->

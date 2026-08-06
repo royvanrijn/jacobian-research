@@ -1,0 +1,92 @@
+{
+  "classical_symbol_bounds": {
+    "S": {
+      "bernstein_degree": 43,
+      "z_order": 7
+    },
+    "T": {
+      "bernstein_degree": 39,
+      "z_order": 6
+    }
+  },
+  "conclusion": "the selected two-parameter family is obstructed at order five on a nonempty open in the declared filtration",
+  "family": {
+    "completing_shear": "3*(26104*sigma^2+21736*sigma*tau+134160*sigma+4576*tau^2+56160*tau+75285)/28028",
+    "degree": 7,
+    "factor": "w^4+sigma*w^3+tau*w^2+(-13/2-3*sigma-2*tau)*w+9/2+2*sigma+tau",
+    "kappa": -9,
+    "parameters": [
+      "sigma",
+      "tau"
+    ]
+  },
+  "generic_rank_lower_bound": {
+    "h3_kernel_dimension": 8,
+    "h3_rank": 118,
+    "h5_augmented_rank": 69,
+    "h5_correction_rank": 61,
+    "h5_output_dimension": 178,
+    "h5_strong_span_rank": 68
+  },
+  "good_prime_records": {
+    "17": {
+      "h3_kernel_dimension": 8,
+      "h3_rank": 118,
+      "h5_augmented_rank": 69,
+      "h5_correction_rank": 61,
+      "h5_output_dimension": 178,
+      "h5_strong_span_rank": 68
+    },
+    "19": {
+      "h3_kernel_dimension": 8,
+      "h3_rank": 118,
+      "h5_augmented_rank": 69,
+      "h5_correction_rank": 61,
+      "h5_output_dimension": 178,
+      "h5_strong_span_rank": 68
+    },
+    "23": {
+      "h3_kernel_dimension": 8,
+      "h3_rank": 118,
+      "h5_augmented_rank": 69,
+      "h5_correction_rank": 61,
+      "h5_output_dimension": 178,
+      "h5_strong_span_rank": 68
+    },
+    "29": {
+      "h3_kernel_dimension": 8,
+      "h3_rank": 118,
+      "h5_augmented_rank": 69,
+      "h5_correction_rank": 61,
+      "h5_output_dimension": 178,
+      "h5_strong_span_rank": 68
+    },
+    "31": {
+      "h3_kernel_dimension": 8,
+      "h3_rank": 118,
+      "h5_augmented_rank": 69,
+      "h5_correction_rank": 61,
+      "h5_output_dimension": 178,
+      "h5_strong_span_rank": 68
+    }
+  },
+  "rational_point": {
+    "ranks": {
+      "h3_kernel_dimension": 8,
+      "h3_rank": 118,
+      "h5_augmented_rank": 69,
+      "h5_correction_rank": 61,
+      "h5_output_dimension": 178,
+      "h5_strong_span_rank": 68
+    },
+    "sigma": 1,
+    "tau": 0
+  },
+  "scope": "parity-preserving inherited root-weight filtration; no unrestricted quantization or DC_2 claim",
+  "supports": {
+    "S2": 72,
+    "S4": 38,
+    "T2": 54,
+    "T4": 25
+  }
+}

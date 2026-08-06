@@ -1,0 +1,76 @@
+{
+  "coefficient_saturation": [
+    "a1",
+    "a2",
+    "a3",
+    "a4"
+  ],
+  "compile_only": true,
+  "compile_seconds": {
+    "2": 0.014223250094801188,
+    "3": 2.453091291943565,
+    "4": 30.671461791032925,
+    "5": 130.2353762499988
+  },
+  "configuration_discriminant": "lam**3*mu**2 - lam**3*mu - lam**2*mu**3 + lam**2*mu + lam*mu**3 - lam*mu**2",
+  "configuration_parameters": [
+    "lam",
+    "mu"
+  ],
+  "degrees": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "directions": 5,
+  "exact_result": null,
+  "format": "gvc3-many-coherent-channels-research-v1",
+  "groups": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ]
+  ],
+  "linear_pivot_localization": {
+    "A_sha256": "003431fd8aee1db1a6a66903ede1c3822c6a6007ede8aa1363a50d6a94866f05",
+    "A_terms": 27,
+    "B_sha256": "d8f26755be42f6047b33a029da2c668cda3bd071c15d6987f09261eec4771e34",
+    "B_terms": 244,
+    "chart": "A*B!=0 (equivalently pivot!=0 and B!=0)",
+    "equation": "A+B*pivot=0",
+    "first_order": 3,
+    "pivot": "a4",
+    "transformed_term_counts": {
+      "4": 7333,
+      "5": 58971
+    }
+  },
+  "linear_pivot_scan": null,
+  "linear_pivot_scan_max_order": null,
+  "max_order": 5,
+  "modular_results": [],
+  "moment_term_counts": {
+    "2": 0,
+    "3": 271,
+    "4": 1142,
+    "5": 3686
+  },
+  "normalization": "a0=1; first three direction points are infinity, zero, one",
+  "saturation_method": "rabinowitsch",
+  "scope": "one declared direction-partition and nonzero-coefficient chart",
+  "specialization": {},
+  "status": "moment compilation only; no elimination result"
+}

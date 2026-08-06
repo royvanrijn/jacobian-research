@@ -1,0 +1,21 @@
+{
+  "coupled_equations": [
+    "H_yy*D=P_y^2",
+    "D*(P_y)_y-2*D_y*P_y+6*t0*H_yy=0"
+  ],
+  "format": "hc4-pure-septic-kzero-wronskian-v1",
+  "global_packet": "H_yy=L*E^3, P_y=L*E^2, D=L*E, t0=L_y/6",
+  "ordered_line_charts": {
+    "L=E=x": "degree 16: r4=0 then -1",
+    "L=x,E=y": "degree 17: 7/36",
+    "L=y,E=x": "degree 16: -1/16",
+    "finite distinct": "degree 17 obstruction",
+    "finite equal": "degree 17: 21/200"
+  },
+  "residual": "only the passive-affine H_yy=0 pure-septic boundary",
+  "status": {
+    "id": "HC4RSD38",
+    "kind": "exact closure theorem",
+    "scope": "the P_y!=0 part of the k=0 curved pure-septic chart"
+  }
+}

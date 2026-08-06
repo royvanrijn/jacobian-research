@@ -357,7 +357,31 @@ classifies all 135 proper support orbits under weight negation.  Every
 one of the 119 mixed boundaries has a sharp cutoff at most \(\mu_7\);
 the only all-order boundaries are zero or one-sided rank one.  Thus the
 complete eight-position two-separated-row coordinate subspace is
-SIC-safe.  Other rank-two charts remain open.
+SIC-safe.  The dense calculation now extends to every off-diagonal
+two-row chart: six reversal representatives cover all ten row pairs, and
+all six exact-rank-two coefficient-torus ideals are units through
+\(\mu_8\) over \(\mathbb Q\).  The complete boundary census has now
+closed the other five reversal orbits as well: 1174 proper support orbits
+split into 1 zero, 222 one-sided fixed-flag, 19 rank-one, 16 mixed-rank,
+and 916 exact-rank-two strata.  All 942 localized rank-two opens are unit
+ideals through \(\mu_{10}\).  The only delayed fibres have exact degrees
+8 through \(\mu_8\) and 252 through \(\mu_9\), and are killed by
+\(\mu_9\) and \(\mu_{10}\), respectively.  Thus all ten complete
+off-diagonal two-row coordinate subspaces are SIC-safe.  Non-coordinate
+factor charts remain open.  The first non-coordinate layer is now closed
+too.  On each of the 60 dense single-shear quotient charts
+\(U_{k\ell}=a\ne0\), the off-diagonal \(B\)-torus has exact rank two and
+creates exactly one diagonal coefficient.  Thus
+\(\mu_1=k!(4-k)!aB_{\ell k}\ne0\).  Multiple-shear charts and shear-torus
+boundaries are the next frontier.  The double-shear atlas has 150 labelled
+charts and 78 reversal orbits, split as 16 same-row/two-column, 30
+two-row/same-column, and 32 two-row/two-column types.  On the first hard
+two-row/two-column representative, an exact rational Krawczyk box now
+isolates a real exact-rank-two coefficient-torus point with
+\(\mu_1=\cdots=\mu_8=0\).  Exact interval evaluation proves
+\(\mu_9/(37!)>0\), approximately \(7.5320091289\cdot10^{-7}\).  Thus this
+finite-prefix point is not a counterexample.  Global complex exclusion of
+that orbit and the other 77 double-shear orbits remains open.
 The new
 [rank-stratified moment programme](extended-geometry/RANK_STRATIFIED_MOMENT_PROGRAM.md)
 organizes the balanced problem by the determinantal loci \(X_{d,r}\).
@@ -545,8 +569,8 @@ Full complex RURs and explicit factorizations show that all twenty
 normalized points on the other fourteen systems are pair-linearly
 one-sided: twelve systems are rectangular cube factorizations, one is a
 three-point family indexed by \(q^3=1\), and one is a single two-factor
-point.  Hence any degree-three SIC counterexample has at least nine
-entries in the displayed monomial basis.  The first complete size-nine
+point.  The size-eight theorem therefore forces at least nine entries
+before the size-nine census below is applied.  The first complete size-nine
 class is now closed: all sixteen \(3\times3\) coefficient rectangles are
 SIC-safe.  Six transpose/reversal orbits suffice; over \(\mathbb Q\), 54
 minor-localized finite moment schemes through order fourteen are unit
@@ -573,12 +597,18 @@ row or column is now closed.  The five structured results close 2,310 of
 the \(11{,}420\) mixed size-nine supports.  A sixth class closes all 1,244
 full-line supports with line-count partition \(4+3+1+1\) and no complete
 line on the other axis; its 311 dense symmetry representatives are unit
-ideals through order ten.  Thus 3,554 mixed supports are now closed.
-The complete discrete transpose/reversal census has 2,924 support orbits;
-902 are now closed and 2,022 remain.  The remaining 7,866 supports use
-every row and column and occupy only five incidence-partition types.  This
-count is basis-dependent and is not a
-continuous diagonal-\(\mathrm{SL}_2\) orbit classification.
+ideals through order ten.  The 816 full-incidence supports of type
+\((3+2+2+2)^2\) form 230 orbits.  Exact elimination gives 228 unit
+ideals and two unique rational rank-three points; rational flag changes
+put both points in the fixed chamber \(i>j\), with relative-period
+recurrence \(\nu_{m+1}=0\) and mixed cutoff \(m>e\).  The other four
+full-incidence types contain 7,050 supports in 1,792 orbits, and every
+dense coefficient-torus ideal is a unit through order ten.  Consequently
+all 11,420 mixed size-nine supports in all 2,924 discrete
+transpose/reversal orbits are SIC-safe.  Any degree-three counterexample
+has at least ten entries in this monomial basis.  This complete discrete
+support census remains basis-dependent and is not a continuous
+diagonal-\(\mathrm{SL}_2\) orbit classification.
 
 The complete reversal-parity exact-rank-two factor family is also
 SIC-safe.  The one-parameter \(\mathrm{SL}_2\) centralizer of reversal
@@ -595,11 +625,32 @@ component
 of length five through \(\mu_{11}\).  On the normalized anti-Weyl
 non-null branch, the even moments through order fourteen generate the
 unit ideal over \(\mathbb Q\).  On the generic rank-two
-[Hurwitz chart](extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_FINITE_PREFIX.md#4-two-exact-exclusions-on-the-generic-hurwitz-chart),
+[Hurwitz chart](extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_FINITE_PREFIX.md#4-exact-exclusions-on-the-generic-hurwitz-chart),
 exact characteristic-zero elimination through \(\mu_8\) also excludes
-the complete \(\lambda=0\) fibre and the locus where both successive
-\(\mu_2\) pivots vanish.  The two complementary pivot-open branches and
-the chart boundaries remain open.
+the four complete fibres \(\lambda=-1,0,1,2\) and the locus where both
+successive \(\mu_2\) pivots vanish.  On the unlocalized five-parameter
+exact-rank-two coefficient slice \(b_0=0,b_1=1\), \(\mu_7\) leaves one
+rational fixed-flag one-sided point of local length 26; its recurrence is
+\(\nu_{m+1}=0\), its degree-one mixed value is \(-2\), and its mixed
+cutoff is \(m>e\).  Thus that complete slice is SIC-safe, but it is not
+an orbit chart.  On the complementary \(P_1\ne0,A=0\) divisor, the ratio
+coordinates \(q=b_1/b_0,\ z=b_0a_2\) now give an exact first component
+decomposition: the linear-incidence \(\mathcal B\ne0\) projection through
+\(\mu_4\) is an irreducible degree-\(44\) hypersurface, while
+\(\mathcal B=\mathcal C=0\) has one irreducible degree-\(26\) projected
+component and an irreducible cubic-in-\(z\) descended \(\mu_4\) equation.
+On the leading-coefficient open, \(\mu_5\) then descends by one
+cubic--cubic pseudoremainder to an irreducible degree-\(40\)
+quadratic-in-\(z\) equation, with irreducible leading-coefficient
+boundaries retained separately.  The forced cubic--quadratic norm is an
+irreducible degree-\(118\) equation \(K\) in \((b_0,q,\lambda)\).  On the
+birational and linear-remainder open \(VR_1\ne0\), the descended
+\(\mu_6,\mu_7\) conditions become
+irreducible degree-\(130\) and degree-\(162\) base equations \(J_6,J_7\).
+Thus the generic prefix through \(\mu_7\) is reduced exactly to
+\(H=K=J_6=J_7=0\) in three variables.  The common base intersection,
+the \(V=0\) and simultaneous linear-remainder boundaries, the other
+pivot-open branch, and the chart boundaries remain open.
 
 The remaining global work is therefore a true SIC classification, not
 moment--nullcone equality: classify the other semistable pure-zero orbits
@@ -1426,6 +1477,61 @@ yet completed; this is explicitly modular evidence, not a theorem.  The
 next coherent targets are exact promotion of that chart and the four/five
 channel degree-ten profiles.
 
+<!-- status-consumer: GVC3D10F bdf33da82b6b2aad -->
+<!-- status-consumer: GVC3D10C bc4f225730cd21ef -->
+<!-- status-consumer: GVC3D10F5S c9dd7c285a93b9e5 -->
+The
+[degree-ten four-channel frontier](extended-geometry/GVC3_DEGREE10_DISTINCT_FOUR_CHANNEL_FRONTIER.md)
+now checks every four-of-five subset of
+\(\mathcal H_2,\mathcal H_4,\mathcal H_6,\mathcal H_8,\mathcal H_{10}\).
+Compact quotient saturation through moment seven has basis \([1]\) over
+\(\mathbb F_{101},\mathbb F_{103},\mathbb F_{107}\) for all five profiles,
+always with saturation exponent one.  This is exact finite-field discovery,
+not a characteristic-zero obstruction on the pairwise-distinct chart.
+Separately, exact characteristic-zero Rabinowitsch elimination gives the
+literal basis \([1]\) on all 52 new direction-collision coefficient-torus
+charts.  Their last required moments are distributed as
+\(21,3,5,22,1\) at orders \(3,4,5,6,9\); combined with the thirteen
+radially equivalent degree-eight charts, this closes the full four-channel
+collision boundary.  Exact pairwise-distinct promotion and the degree-ten
+five-channel profile remain open.  On the latter, a linear-pivot scan selects
+the \(\mathcal H_{10}\) coefficient: the exceptional \(A=B=0\) boundary on
+the rational cross-ratio fiber \((\lambda,\mu)=(2,3)\) has dimension
+progression \(2,1,0\) through moments three, four, and five, with quotient
+length 36, and moment six gives an exact characteristic-zero basis \([1]\).
+This closes one rational boundary slice only; the generic boundary and main
+pivot localization remain open.  On the generic nested \(a_3\) chart,
+successive saturation now clears all ten localization factors at cutoff three
+over \(101,103,107\).  At cutoff four, certified residual-intersection minors
+and unmixed boundary gcds clear seven of ten factors scheme-theoretically.
+Solving the final degree-17 denominator \(D\) for \(a_0\) then classifies its
+entire divisorial support at all three primes: the reciprocal boundary gcd is
+supported once on \(143a_0+60a_2\), twelve times on \(\lambda-\mu\), and has
+no residual factor.  An exact characteristic-zero replay on the two original
+equations strengthens this: their cleared \(D=0\) restrictions have
+\((\lambda-\mu)\)-orders 12 and 20, and their 728-term gcd is exactly the
+product of the cleared \(a_0\) and \(143a_0+60a_2\) restrictions with
+\((\lambda-\mu)^{12}\), up to a rational scalar.  A nonzero 959-term
+normal-jet determinant then proves that the completed local ideal at the
+generic \((D,\lambda-\mu)\) point is equivalent to
+\((D,(\lambda-\mu)^{12})\) and has length 12 over
+\(\mathbb Q(a_2,a_4,\lambda)\).  After the already inverted chart factors
+are removed, its sole exceptional factor has 115 terms and degree 47.  That
+factor is irreducible and squarefree; on it the first surviving normal jet is
+jet six, giving generic length 18.  The next irreducible factor has degree
+57, and its only intersection with the degree-47 factor lies on the already
+inverted companion boundary, so the exceptional normal stratification is
+complete.  The rational normal fiber
+\((a_2,a_4,\lambda)=(2,3,5)\) independently gives that literal basis over
+\(\mathbb Q\).  At moment five, the exact common gcd of the three cleared
+\(D=0\) restrictions drops to the two cleared chart factors \(a_0\) and
+\(143a_0+60a_2\).  After chart units are removed, the fifth restriction on
+\(\lambda=\mu\) is
+\(a_2^3\lambda^8(\lambda-1)^{36}\), hence a unit.  This closes the entire
+\(D\)-supported fibre in characteristic zero.  The residual \(D\ne0\)
+generic boundary and the main pivot chart remain open; no global minimum is
+claimed.
+
 <!-- status-consumer: GVC3HCB be9ebf286c6f24f4 -->
 <!-- status-consumer: GVC3HCM 5269510029077997 -->
 The
@@ -1701,27 +1807,243 @@ remains open.
 
 <!-- status-consumer: HKM2B1 c197aa4165670dc5 -->
 
+The
+[characteristic-divisible wild-boundary atlas](extended-geometry/PLANE_WILD_BOUNDARY_ATLAS.md)
+uses that characteristic-two row as the first member of a finite-cover
+construction rather than as a literal characteristic-zero lift.  For
+`N=p^n*m`, with `(m,p)=1`, it gives the exact mixed residue split
+`(f_sep,f_insep)=(m,p^n)` together with conductor, sheet-loss, and
+companion-different ledgers.  The original monomial gluing retains a tame
+different when `N>2`;
+the unique balanced exponent removes that divisor but leaves a normal
+`G_m^2` core with valuation matrix
+`[[1,0],[N-2,N-1]]` and class group `Z/(N-1)`.  Thus the whole monomial band
+fails affine-plane reconstruction outside `N=2`.  This now includes every
+nonnegative exponent: `a=0` has a free unit and class group `Z/(N+1)`, while
+`a>=N` has a wild index-`N` branch over `P=0`.  More generally, any
+nonmonomial `C(P)` introduces an extra different divisor at each factor away
+from `P=0`; hence the same theorem exhausts all one-variable coefficients
+whose target different support is contained in `P*Q=0`.  For arbitrary
+`C(P,Q)`, the same support argument reduces the search to `cP^aQ^b`, and the
+entire quadrant is now closed.  On the balanced edge, writing
+`b+1=p^s*d`, the prime-to-characteristic part is excluded by
+`chi_c=(N+1)*d-N`, pure `p`-powers with `N>2` preserve the exact order
+`N-1` of `[L1]` under finite push--pull, and the residual `p=N=2` tower has
+`Cl(U_(2,c))=Cl(D(xu))=(Z/2)^2` for every Frobenius height: the two deleted
+source primes are filled by the unimodular valuation matrix
+`[[1,0],[-1,1]]`.  The
+other `a`-ranges retain the unit, tame-different, or wild-ramification
+obstructions already present at `b=0`.  Consequently `N=2,a=1,b=0` is the
+unique affine-plane Keller row under the one-omitted-fierce-boundary and
+target-support hypothesis.  This is a characteristic-two exception theorem
+for that architecture, not for arbitrary plane covers.  For a squarefree
+retained polynomial `A(T)`, the balanced multi-retained identity
+`A*H_T-A'*H=P^(N-1)*Q*(A-T*A')` gives a further exact support sieve:
+no extra target different occurs precisely when `A=a0+T*B(T^p)`.  Thus the
+retained degree, and hence the cover degree, must be `1 mod p`.  Through
+cover degree `15`, the support-only odd-characteristic rows are
+`(p,d)=(3,7),(3,10),(3,13),(5,11),(7,15)`.  A second uniform theorem now
+closes all of them.  On the normalization, the chart
+`P=xu,T=x^2u,Q=A(x^2u)(u-x^(N-1))` is the full locus `D(A)`.  If
+`n_q(A)` is the number of retained roots over `F_q`, then
+`#(C_A-E_A)(F_q)=q^2+(n_q(A)-1)q`; after `A` splits this gives
+`chi_c(C_A-E_A)=deg(A)`.  Hence every nonlinear retained polynomial is
+geometrically non-affine-plane.  The linear row has
+`Cl=Z/(N-1)` for `N>2`, leaving only the known `p=N=2` cubic in this
+balanced squarefree-retained architecture.
+The machine-readable
+[survivor atlas](artifacts/generated-results/plane_wild_boundary_survivor_atlas.json)
+keeps these finite-cover targets separate from proved Keller rows and local
+Artin--Schreier/Witt comparisons.  The complete `F_3` degree-seven scan then
+checks all six `A=T^4+bT+a0`: every normalization is smooth with conductor
+`(P,T)^2`, affine-line fierce boundary, and no residual different.  Four are
+excluded over `F_3`.  The other two have one linear and one cubic retained
+factor; both have `81=9^2` open points over `F_9` but
+`810!=27^2` over `F_27`, exactly as the root-count theorem predicts.
+Thus all six are excluded, and the balanced retained-polynomial
+odd-characteristic reconstruction queue is empty.  A shared proof-bearing
+`retained_root_euler` block is now wired into both the abstract
+boundary-package compiler and the Newton/log-boundary compiler.  Their
+reports reject only certified nonlinear rows, pass degree one, and preserve
+`uncertified` or `not_applicable` status for collisions and missing data.
+The characteristic-zero boundary module now also has a sharp
+[conductor/contact-loss truncation theorem](plane-jc/CONDUCTOR_JET_TRUNCATION.md).
+On normalization branch (i), conductor exponent (c_i) and certified
+contact loss (lambda_i) make the matching cokernel and its determinant
+residue depend only on jets modulo (t_i^{c_i+\lambda_i}); one fewer jet can
+change the class in general.  A stronger dependency-sensitive form uses a
+separate conductor-plus-path-loss inequality for every input-to-output path,
+so a large loss on `Q` no longer forces an equally long `P` jet.  The compiler
+can derive each available order from a normal-valuation vector and a certified
+valuation frontier of the omitted Newton support, and reports the exact
+failing input-band deficit.  This
+covers nodes, numerical-semigroup cusps, multibranch conductors,
+determinant-line twists, and finite source/target/gauge matching maps.  The
+archived `(72,108)` Case-1 row is not silently promoted by this theorem: its
+matching expressions and band-to-normal valuation orders still need
+compilation before the theorem can certify its truncation.  Independently,
+the exact [full-band continuation](plane-jc/CASE1_FULL_BAND_CONTINUATION.md)
+now reconstructs all eleven formerly omitted bands through `P:z^-8` and
+`Q:z^-12`, closing the data prerequisite without claiming the conductor
+audit.  Alternate-chart residue extraction remains to be done.
+The underlying
+[normal-core Smith theorem](plane-jc/BOUNDARY_LATTICE_PREFILTER.md#dual-torus-core-localization)
+is program-wide.  For a normal open containing a dense core with trivial class
+group (in particular an affine UFD core), known unit lattice, and complete
+codimension-one complement, the valuation matrix has kernel equal to units
+modulo constants and cokernel equal to the Weil class group.  More generally,
+if `Cl(W)=coker(R)` is finitely presented and the core relations have boundary
+correction matrix `A`, then `Cl(U)` is presented by the block
+`[[V,A],[0,R]]`.  This extra block detects nonsplit extensions invisible to
+the two groups separately.  A complementary multiple-fibre shortcut now
+applies when prime fibres of multiplicities `m_i` have principal reduced sum
+and generic-fibre unit rank one: their vertical classes form
+`(direct_sum Z/m_i)/<(1,...,1)>` without first computing the entire core
+class group.  Its order is `prod(m_i)/lcm(m_i)`, so a shared prime between
+two multiplicities is exactly the torsion trigger.  If the generic fibre has
+trivial class group and all other vertical prime classes vanish, this is the
+full class group.  Irreducibility alone over an arbitrary base curve is not
+sufficient.
+Determinantal divisors also compute the exact order of any
+named reflexive/determinant class; here `[L1]` has order `N-1`.  In the
+narrower normal affine toric category, trivial class group and constant units
+force affine space.  In general this remains a necessary filter, not an
+odd-characteristic counterexample or a proof of `JC_2`.
+
+<!-- status-consumer: BL1 e86cdcd66993bccc -->
+<!-- status-consumer: PWB1 4ce9a0bf6d277321 -->
+<!-- status-consumer: PWB3 a6bcf405759ddd5d -->
+<!-- status-consumer: PWB4 ebddf245e65b62a7 -->
+<!-- status-consumer: PWB5 142b02344181fed3 -->
+<!-- status-consumer: PWB6 35636805d73e0bec -->
+<!-- status-consumer: PWB7 19f4f4ffc96227a3 -->
+<!-- status-consumer: CJT1 afb70f90ff10f3d7 -->
+
 ### Repository extension: mixed-characteristic and Witt obstruction
 
 The
 [modulo-four lifting obstruction](verified/HUQ_KURUVILLA_PLANE_W2_OBSTRUCTION.md)
 then closes the direct mixed-characteristic route for this exact plane map.
 Every polynomial lift is the displayed integral representative plus
-`(2A,2B)`, but the first Jacobian variation always has zero `xy` coefficient,
-whereas the integral Jacobian error has coefficient `2xy`.  Equivalently,
-the error defines a nonzero cokernel class for
-`D_F(A,B)=A_x Q_y+P_x B_y+A_y Q_x+P_y B_x`.  Thus no
-constant-Jacobian lift exists over `Z/4`, at any correction degree, and no
-compatible higher Witt or characteristic-zero plane lift can exist.  The
-obstruction is unstable: after adjoining one identity variable, truncated
-geometric inverses of `1+2K` give a compatible determinant-one polynomial
-lift over every finite `W_n(F_2)`.  The inverse limit is a restricted
-two-adic power series, not a characteristic-zero polynomial map.  Uniform
-bounded-degree algebraization and unstabilized left-right equivalence remain
-open, as do the full cokernel, uniqueness and coordinate-invariance of the
-`xy` functional, and quantitative minimum-degree growth in the tower.
+`(2A,2B)`.  The full cokernel of its first Jacobian variation is
+`H^2_dR(F_2[x,y]) = xy F_2[x^2,y^2]`; the integral error represents
+`xy(1+x^3(1+xy))^2`, with nonzero Cartier image `1+x^3(1+xy)`.  Thus no
+constant-Jacobian lift exists over `Z/4`, at any correction degree.  The
+class is functorial under polynomial source changes, and Jung--van der Kulk
+tameness shows that nonvanishing survives arbitrary polynomial plane
+left--right equivalence.  The obstruction is unstable: every first
+obstruction becomes exact after adjoining one identity variable, and for
+this map truncated geometric inverses of `1+2K` give a compatible
+determinant-one polynomial lift over every finite `W_n(F_2)`.  The inverse
+limit is a restricted two-adic power series, not a polynomial over `Z_2`.
+At the first stable Witt level the current lift is degree-minimal: the exact
+minimum is `d_2=18`.  The dual functional
+`[x^13 y^4]+[x^14 y^5]` excludes every degree-at-most-17 correction, while
+`z(1+2K)` attains degree 18.  Consequently
+`18 <= d_n <= 17(n-1)+1`.  At `W_3`, an explicit plane correction improves
+the upper bound from 35 to 25.  A complete 1,083-variable, 1,639-constraint
+Boolean coefficient system excludes every degree-18 lift.  At degree 19, a
+2,685-variable, 4,513-constraint system produces a lift whose directly
+replayed Jacobian is an odd constant modulo 8, hence normalizes to determinant
+one at the same degree.  Thus the exact unrestricted
+minimum is `d_3=19`.  These Z3 calculations are not an independent
+implementation or human peer review.  The remaining questions begin at
+level four: later exact values, asymptotic growth, bounded-support
+impossibility, and algebraization of the stable tower.  The older degree-25
+value remains sharp only among extensions that retain the canonical
+degree-18 lift modulo four.
+The preferred frozen degree-19 witness has determinant one and 440 correction
+coefficients, split 280 in the first Witt digit and 160 in the second.  With
+that first digit fixed, the second correction lies in an exactly audited
+804-dimensional affine solution space (1,485 variables and rank 681), which
+splits into independent `z0`, `z1`, and `z2` blocks and then into 59, 14, and
+50 nontrivial incidence components.  Exact componentwise decoding gives
+block minima 92, 54, and 14, hence the fixed-first minimum `s_2=160`;
+imposing determinant one gives the same minimum.  The previous 299-term
+first gauge has exact second minimum 165 and total 464, exposing a measurable
+cross-Witt support tradeoff.  First support 280 exists while bound 275 times
+out, so no global support minimum over all first Witt digits is claimed.
 
-<!-- status-consumer: HKM2W1 333c767416c0d59f -->
+At `W_4` there is now a sharp fixed-representative separation.  The preferred
+degree-19 `W_3` witness cannot extend at any degree: its next determinant
+digit has a nonzero 48-term class in
+`H^3_dR(F_2[x,y,z]) = xyz F_2[x^2,y^2,z^2]`.  The explicit degree-25 `W_3`
+representative has zero top class and does extend, but not below degree 52.
+For its 35-term degree-51 error `L`, the functional
+`Lambda_4=[x^39 y^12]+[x^40 y^13]` satisfies
+`Lambda_4(D_F(R,S))=[x^41 y^13]R` and `Lambda_4(L)=1`, excluding every
+degree-at-most-51 extension; adding `8zL` to the third coordinate attains
+degree 52 with determinant one modulo 16.  Thus the unrestricted statement is
+only `19 <= d_4 <= 52`: the exact value remains open.
+
+Imposing all 241 next-class equations on the degree-19 `W_3` ansatz disproves
+the hoped-for unrestricted UNSAT statement.  The preferred 280-term first
+digit is UNSAT within that ansatz, but after releasing it Z3 finds an
+818-term degree-19 representative with zero `H^3_dR` class.  Its full next
+error has support 1,027 and degree 52.  Exact unrestricted affine elimination
+for corrections of this fixed representative is UNSAT in degree 51 and SAT
+in degree 52; a pinned 1,086-term correction replays to constant determinant
+13 modulo 16.  Hence this second fixed representative also has exact
+extension degree 52.  This still does not decide whether some other
+degree-19 `W_3` representative extends in degree 19.
+
+An exact joint master--subproblem search now attacks that remaining case.
+Each degree-19 `W_3` model is replayed modulo 16, its unrestricted degree-19
+affine correction system is eliminated, and any dual inconsistency
+certificate is compiled back into the nonlinear master.  The sampled duals
+through 64 cuts are all singleton *codomain holes*: for example
+`[y^19 z] D_(F x z)(R,S,T)=0` for every degree-19 correction, while the first
+class-zero witness has this next-error coefficient nonzero.  Systems with 16
+and 64 such cuts remain SAT but every returned model still has an UNSAT
+completion subproblem.  A model-independent support audit finds 5,396
+structurally possible determinant targets in the ansatz and 4,340 zero-row
+holes in the bounded correction operator (structural-hole SHA-256
+`de442207ad627a8202168496c37fcd2b9af7bb8cf03cbeb96bf90a662097ab99`).
+Compiling all 599 singleton holes active on the
+pinned class-zero witness gives 6,095,343 collected terms and target-list
+SHA-256
+`8faad19cd5212c598c270233f1d4407791cc75f00a689f768f690c4267c2bcb1`;
+Z3 returns `unknown` at 600 seconds.  This is an experiment, not an UNSAT
+certificate, so the proved unrestricted bound remains `19 <= d_4 <= 52`.
+The new factored quotient compiler shares projected two-by-two Jacobian
+minors instead of expanding cubic conjunctions target by target.  On the 599
+holes it uses 13,804 shared minors and 1,522,793 factored products, cutting
+recorded compilation time from roughly twelve minutes to two while retaining
+the same `unknown` decision result.  It also compiles the complete 4,340-hole
+singleton quotient (15,564 shared minors and 5,126,474 products); that master
+again returns `unknown`.  Layerwise, the complete `z1` and `z3` quotients are
+SAT but their returned models still fail the full affine completion test;
+`z0` and `z2` return `unknown`.  Thus quotient construction is no longer the
+main bottleneck: compatible `W_3`-digit selection is.
+
+> **Affine-support rule.** Before imposing one global cardinality bound on a
+> coefficient-correction system, form the bipartite graph of variables and
+> affine equations.  Split by connected components and minimize each component
+> independently; minimum support and its proof then add across components.
+
+> **Witt-support rule.** Optimize successive Witt digits as a Pareto problem,
+> not one digit in isolation: changing a kernel representative in the first
+> digit changes the affine syndrome, and therefore the exact minimum support,
+> at the next digit.
+
+> **Witt-compatibility rule.** Retain both the next determinant-digit
+> cohomology class and the minimum degree of a primitive as frontier
+> coordinates alongside current degree and support.  A degree-optimal
+> representative can be nonextendable, while vanishing of the class alone
+> guarantees only some finite-degree extension, not a low-degree one.
+
+> **Witt-codomain-hole rule.** Before computing a full cokernel basis for a
+> bounded correction operator, enumerate target monomials with zero incidence
+> columns.  Each nonzero error coefficient there is already a one-row dual
+> certificate and can be fed back to a nonlinear master independently.
+
+<!-- status-consumer: HKM2W1 904c57385ac0b0dd -->
+
+<!-- status-consumer: HKM2W2 474e0d677133ee23 -->
+
+<!-- status-consumer: HKM2W3 55d99efeee0298af -->
+
+<!-- status-consumer: HKM2W4 6075dd4fbb9cb89c -->
 
 The
 [mixed-sign grading literature reconciliation](extended-geometry/MIXED_SIGN_GRADINGS_LITERATURE_RECONCILIATION.md)
@@ -3186,6 +3508,101 @@ development:
     [HC4_QUADRATIC_RANK_TWO_PIVOTS.md](HC4_QUADRATIC_RANK_TWO_PIVOTS.md),
     and the final passive \(3\)-by-\(3\) classification is
     [HC4_QUADRATIC_RANK_ONE_PIVOTS.md](HC4_QUADRATIC_RANK_ONE_PIVOTS.md).
+    HC4RSD11--HC4RSD16 then resolve the scalar cancellation split beyond
+    the singular pencil. A nonzero pivot corner is exactly a
+    four-variable constant-Hessian pencil; a zero corner with a
+    graph-coordinate pivot is injective by an HC3 fiber reduction, and
+    every quadratic zero-corner pivot has that form. For a quadratic
+    nonzero-corner pencil, Hessian rank four is impossible and rank three
+    is triangular. Rank two has one HC2-safe packet and one packet exactly
+    equal to the cotangent lift of an arbitrary plane Keller map. In rank
+    one, both ternary singular-Hessian charts likewise reduce to HC2 or the
+    same JC2 cotangent packet. The unit border freezes their apparently
+    \(x\)-moving rational globalization: differentiating the constant-kernel
+    gate fixes its projective kernel, while the exceptional gate fixes its
+    distinguished covector or degenerates to the first type. Thus every
+    quadratic scalar pencil reduces to HC2 or exactly the unavoidable JC2
+    endpoint. See the
+    [scalar cancellation dichotomy](HC4_SCALAR_CANCELLATION_DICHOTOMY.md).
+    HC4RSD17--HC4RSD40 continue beyond the quadratic direction. Every
+    constant-Hessian pencil is exactly a polynomial nilpotent deformation
+    (N=(\operatorname{Hess}\psi)^{-1}\operatorname{Hess}A), self-adjoint
+    for the base Hessian metric and subject to a second Hessian-integrability
+    system. The rank-one direction proof is degree-independent, so every
+    direction of generic Hessian rank one reduces to HC2 or the same JC2
+    cotangent packet. For cubic directions whose leading Hessian has rank
+    three, the only moving-kernel normal form is
+    (A=wz+y b(z)+G(x,z)). Its (s^3)-face integrates to
+    (psi=yC(x,z,w+b'(z)y)+D(x,z,w+b'(z)y)); the (y)-coefficient of the
+    next face is (3b''G_{xx}C_r^2), and the final two faces force
+    incompatible units. Thus that moving cubic packet is empty. In the
+    residual constant-kernel packet, the complete determinant restricts to
+    a binary tangent pencil: the Hessians of the cubic direction and of the
+    border coefficient synchronize to one ruling, which is null for the
+    base tangent metric. Every fixed ruling is triangular over HC2 or the
+    exact cotangent lift of JC2. The universal-field identity fixes every
+    homogeneous ruling in every degree. Exact binary root-chart calculations
+    then fix every arbitrary border coefficient through degree four; the
+    apparent double--double quartic cancellation dies on the next face
+    (-3b^4x^2y^2z^2/4). In degree five, a simple-root square and the four
+    repeated-root Schur charts close every non-pure binary quintic top; the
+    apparent (3+2) and (4+1) solutions die one face later. The remaining
+    pure-fifth chart has a passive quartic-Hessian first face; two unit
+    ideals and the passive-alignment radicals force a fixed cylinder.
+    Thus every border coefficient through degree five closes. The same
+    simple-root square closes squarefree binary tops in every degree, so the
+    dense packet closes. A double-root valuation gap also closes the generic
+    discriminant stratum with exactly one double root. A general
+    root-valuation resonance formula then closes the sextic
+    (3+1+1+1) stratum, and complete weighted-face ideals close every
+    non-pure binary sextic top. Over the sole pure-sixth top, the first
+    three collision faces force the quintic correction to use one fixed
+    passive direction: the three possible moving charts have immutable
+    coefficients (1), (6), and (-10/9). If the resulting binary quintic
+    correction has nonzero passive curvature, the next factor equation and
+    its five repeated-root charts close the entire potential; later
+    transverse tails die in a five-step square cascade. Completing the square
+    in the remaining passive-affine quintic term also closes every curved
+    quartic correction. The final two-linear-form tower
+    (c_5=ax^5+x^4L, c_4=bx^4+x^3M+x^2L^2/4) is now closed in every rank
+    pattern of (L,M). For independent forms, the exact cubic packet has two
+    charts: its finite chart aligns and then dies by (-4p,-u/9), its infinity
+    chart dies by (-v^2/1296,-4r^2), and its base point has the incompatible
+    coefficients q_5=1/12 and (-1/46656). Dependent forms reduce to cylinders
+    by a pair of global obstructions
+    ([J(h+vD)]_v=D h_{ww}(DD''-2(D')^2)) and
+    (J(h+yf+zg)=-(fg'-f'g)^2). Thus every scalar degree-six leading
+    direction closes. The valuation sieve then leaves exactly seventeen
+    non-pure septic faces. Exact characteristic-zero saturations at every
+    zero-, one-, and two-cross-ratio stratum kill all their transverse
+    coefficients, including the same-weight binary-linear cubic tails.
+    Hence every non-pure scalar septic also closes. The remaining pure top
+    now begins in the exact normal form
+    (c_7=x^7, c_6=H_6(x,y)+kx^5z); when (H_6)_{yy}\ne0, its next face forces
+    (c_5=R_5+zP_4+(2/7)k^2x^3z^2). Its complete degree-eighteen face is now
+    a Hessian factor minus the square
+    ((7x^2(P_4)_y-4k(H_6)_y)^2). It kills the quartic (z^4)-term, fixes the
+    (z^3)-term to (k^3xz^3/49), and leaves one binary UFD-divisibility
+    identity. On (k\ne0), its first immutable coefficients force
+    ((H_6)_{yy}) to be divisible by (x^2). Two final product--square
+    factorizations classify the result into exactly six packets: two generic
+    resonances, two double-root packets, and the (x^3L) and (x^4) endpoints.
+    All six nonzero-(k) packets die in degrees seventeen and sixteen. At
+    (k=0), the corrected Wronskian including the cubic (z^3)-tail has the
+    global ordered two-linear-form solution
+    ((H_6)_{yy}=LE^3,(P_4)_y=LE^2,D_2=LE), and all five projective charts
+    close; the zero-((P_4)_y) recursive square closes as well. A shifted
+    passive-Hessian face then closes every curved correction on the
+    passive-affine sextic boundary and reduces its final two-linear-form
+    tower to eight degree-fifteen quartic direction packets. Their common
+    degree-fourteen system has the sole nonzero resonance
+    (3A_3^2=8A_2A_4), equivalently a square passive second polar. All five
+    resonant direction charts have immutable lower coefficients, three
+    transverse charts die by (12/7) or (-12/2401), and the only remaining
+    zero strata obey an affine-transverse identity forcing a fixed cylinder.
+    Hence every scalar degree-seven leading direction is fixed; repeated-root
+    tops in degree at least eight are now the next degree-based frontier. See
+    [HC4_HIGHER_DEGREE_PENCIL_OBSTRUCTIONS.md](HC4_HIGHER_DEGREE_PENCIL_OBSTRUCTIONS.md).
 
 12. The Meng--Yang route now has a degree-five normal form rather than a
     generic graph search.  HC4MYA1 and HC4MYG4 exclude all affine descents
@@ -3610,8 +4027,29 @@ two-parameter degree-five family, relative order-five periods leave one
 cubic closed point with reduced lift scheme \(\mathbb A^{27}\); a global
 order-seven Schur cocycle now has a nonzero constant value on that entire
 component.  Thus the interior of this relative family is closed in the
-declared filtration, and the next \(DC_2\) calculation must vary the
-classical-symbol family rather than enlarge support at the old symbol.
+declared filtration.  The subsequent
+[classical-symbol census](extended-geometry/DC2_CLASSICAL_SYMBOL_FAMILY_SEARCH.md)
+does vary the symbol: its degree-six quartic survivor and the follow-up
+[degree-seven octic survivor](extended-geometry/DC2_DEGREE_SEVEN_MARKED_ROOT_SEARCH.md)
+both admit genuine order-five lifts, but their complete inherited order-seven
+ideals are units.  The
+[degree-eight marked-root continuation](extended-geometry/DC2_DEGREE_EIGHT_MARKED_ROOT_SEARCH.md)
+now reconstructs one irreducible degree-twelve component, proves that its
+reduced nonlinear lift is affine five-space over the residue field, and again
+finds a terminal order-seven unit ideal.  The
+[degree-nine continuation](extended-geometry/DC2_DEGREE_NINE_MARKED_ROOT_SEARCH.md)
+now adds a fourth exact relative-rank row, with a twelve-dimensional
+order-three lift kernel, six-dimensional current-order kernel, and the same
+seven new strong defect directions.  Complete scans at four good primes find
+order-five base-point counts `2,0,1,0`; every recorded point passes the genuine
+nonlinear screen as a rank-six thickening of affine six-space.  This extends
+the reduced-fibre pattern `A^(n-3)` and thickening ranks `2,4,6` across
+degrees seven through nine, with the degree-nine row still modular.  A held-out modular chart
+probe proves denominator degree `72=2(9-3)^2` and the residual numerator
+degree staircase needed for reconstruction.  These degree-nine data remain
+component discovery: characteristic-zero reconstruction is the gate before
+any order-seven work.  No support should be enlarged on the already closed
+degree-six/eight components.
 
 Other questions—arithmetic Galois theory, wider quantization,
 coefficient-scheme gluing, quadratic--cubic flexibility, and the two plane
@@ -3641,3 +4079,5 @@ Proofs belong in canonical sources, statuses belong in `MATH_STATUS.json`, and
 open-problem IDs belong in `STATUS.md`.  Papers and notes may cite those IDs
 but do not maintain independent continuation queues.  Superseded derivations
 remain available under `archive/` and outside primary navigation.
+
+<!-- status-consumer: C1FBC1 0f14ef01fff25097 -->

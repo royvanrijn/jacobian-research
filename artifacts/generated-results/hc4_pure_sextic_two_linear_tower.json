@@ -1,0 +1,27 @@
+{
+  "conclusion": "all scalar degree-six leading directions are fixed cylinders",
+  "cubic_packets": {
+    "dependent_unshifted": "prime dimension-three two-chart packet",
+    "independent_shifted": "prime dimension-three two-chart packet"
+  },
+  "format": "hc4-pure-sextic-two-linear-tower-v1",
+  "global_obstructions": [
+    "D*h_ww*(D*D''-2*(D')^2)",
+    "-(f*g'-f'*g)^2"
+  ],
+  "independent_terminal_coefficients": [
+    "-a^2*u^2/1296",
+    "-4*a^2*p^2",
+    "-4*p",
+    "-u/9",
+    "-v^2/1296",
+    "-4*r^2",
+    "-1/46656"
+  ],
+  "status": {
+    "id": "HC4RSD32",
+    "kind": "hybrid theorem",
+    "result": "the independent packet is empty and every dependent packet is a fixed cylinder; hence every scalar pure-sixth boundary closes",
+    "scope": "the complete two-linear-form tower left by HC4RSD31"
+  }
+}

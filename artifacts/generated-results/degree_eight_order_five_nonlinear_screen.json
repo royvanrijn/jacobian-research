@@ -1,0 +1,295 @@
+{
+  "empty_points": [],
+  "nonempty_points": [
+    {
+      "correction_rank": 97,
+      "degree": 8,
+      "dimension": 5,
+      "dual_rank": 172,
+      "groebner_basis_size": 6,
+      "lower_lift_variables": 10,
+      "nonempty": true,
+      "prime": 23,
+      "projected_equations": 172,
+      "reduced_square_structure": {
+        "bridge_vanishes_on_reduced_roots": true,
+        "certified": true,
+        "free_reduced_coordinates": [
+          "z0",
+          "z2",
+          "z4",
+          "z6",
+          "z8"
+        ],
+        "linear_dependent_variables": [
+          "z1",
+          "z3",
+          "z5"
+        ],
+        "square_root_variables": [
+          "z7",
+          "z9"
+        ],
+        "z7_quadratic_discriminant_zero": true,
+        "z9_quadratic_discriminant_zero": true
+      },
+      "sigma": 20,
+      "singular_program_sha256": "57ba19564a0f7844b9a57a68d61c292f54793235fca8efeec51e5a5d156b73dd",
+      "tau": 12
+    },
+    {
+      "correction_rank": 97,
+      "degree": 8,
+      "dimension": 5,
+      "dual_rank": 172,
+      "groebner_basis_size": 6,
+      "lower_lift_variables": 10,
+      "nonempty": true,
+      "prime": 29,
+      "projected_equations": 172,
+      "reduced_square_structure": {
+        "bridge_vanishes_on_reduced_roots": true,
+        "certified": true,
+        "free_reduced_coordinates": [
+          "z0",
+          "z2",
+          "z4",
+          "z6",
+          "z8"
+        ],
+        "linear_dependent_variables": [
+          "z1",
+          "z3",
+          "z5"
+        ],
+        "square_root_variables": [
+          "z7",
+          "z9"
+        ],
+        "z7_quadratic_discriminant_zero": true,
+        "z9_quadratic_discriminant_zero": true
+      },
+      "sigma": 9,
+      "singular_program_sha256": "0da8f0861ca852f29c516df3254436653946500aeb03e5444e01c2c949af6c32",
+      "tau": 14
+    },
+    {
+      "correction_rank": 97,
+      "degree": 8,
+      "dimension": 5,
+      "dual_rank": 172,
+      "groebner_basis_size": 6,
+      "lower_lift_variables": 10,
+      "nonempty": true,
+      "prime": 29,
+      "projected_equations": 172,
+      "reduced_square_structure": {
+        "bridge_vanishes_on_reduced_roots": true,
+        "certified": true,
+        "free_reduced_coordinates": [
+          "z0",
+          "z2",
+          "z4",
+          "z6",
+          "z8"
+        ],
+        "linear_dependent_variables": [
+          "z1",
+          "z3",
+          "z5"
+        ],
+        "square_root_variables": [
+          "z7",
+          "z9"
+        ],
+        "z7_quadratic_discriminant_zero": true,
+        "z9_quadratic_discriminant_zero": true
+      },
+      "sigma": 21,
+      "singular_program_sha256": "3443b0ac896876cc30ee93a07e4b302e94cbbd6f40f025cf269dc1a6a706a8eb",
+      "tau": 2
+    },
+    {
+      "correction_rank": 97,
+      "degree": 8,
+      "dimension": 5,
+      "dual_rank": 172,
+      "groebner_basis_size": 6,
+      "lower_lift_variables": 10,
+      "nonempty": true,
+      "prime": 31,
+      "projected_equations": 172,
+      "reduced_square_structure": {
+        "bridge_vanishes_on_reduced_roots": true,
+        "certified": true,
+        "free_reduced_coordinates": [
+          "z0",
+          "z2",
+          "z4",
+          "z6",
+          "z8"
+        ],
+        "linear_dependent_variables": [
+          "z1",
+          "z3",
+          "z5"
+        ],
+        "square_root_variables": [
+          "z7",
+          "z9"
+        ],
+        "z7_quadratic_discriminant_zero": true,
+        "z9_quadratic_discriminant_zero": true
+      },
+      "sigma": 8,
+      "singular_program_sha256": "acc6c6555a9a64cadbe92e4b6cc3fbdd1897b6f6e5ec3f6ca429a0450f159620",
+      "tau": 14
+    },
+    {
+      "correction_rank": 97,
+      "degree": 8,
+      "dimension": 5,
+      "dual_rank": 172,
+      "groebner_basis_size": 6,
+      "lower_lift_variables": 10,
+      "nonempty": true,
+      "prime": 41,
+      "projected_equations": 172,
+      "reduced_square_structure": {
+        "bridge_vanishes_on_reduced_roots": true,
+        "certified": true,
+        "free_reduced_coordinates": [
+          "z0",
+          "z2",
+          "z4",
+          "z6",
+          "z8"
+        ],
+        "linear_dependent_variables": [
+          "z1",
+          "z3",
+          "z5"
+        ],
+        "square_root_variables": [
+          "z7",
+          "z9"
+        ],
+        "z7_quadratic_discriminant_zero": true,
+        "z9_quadratic_discriminant_zero": true
+      },
+      "sigma": 25,
+      "singular_program_sha256": "b4cf09796568eca23f1b498974019f4943dc4e5610d37b9bec29df1cb33ec515",
+      "tau": 6
+    },
+    {
+      "correction_rank": 97,
+      "degree": 8,
+      "dimension": 5,
+      "dual_rank": 172,
+      "groebner_basis_size": 6,
+      "lower_lift_variables": 10,
+      "nonempty": true,
+      "prime": 43,
+      "projected_equations": 172,
+      "reduced_square_structure": {
+        "bridge_vanishes_on_reduced_roots": true,
+        "certified": true,
+        "free_reduced_coordinates": [
+          "z0",
+          "z2",
+          "z4",
+          "z6",
+          "z8"
+        ],
+        "linear_dependent_variables": [
+          "z1",
+          "z3",
+          "z5"
+        ],
+        "square_root_variables": [
+          "z7",
+          "z9"
+        ],
+        "z7_quadratic_discriminant_zero": true,
+        "z9_quadratic_discriminant_zero": true
+      },
+      "sigma": 29,
+      "singular_program_sha256": "07f32798bc7edac85981e6f8212fe5bfeaef9f3fcb1b83ec82500966b98283f7",
+      "tau": 21
+    },
+    {
+      "correction_rank": 97,
+      "degree": 8,
+      "dimension": 5,
+      "dual_rank": 172,
+      "groebner_basis_size": 6,
+      "lower_lift_variables": 10,
+      "nonempty": true,
+      "prime": 47,
+      "projected_equations": 172,
+      "reduced_square_structure": {
+        "bridge_vanishes_on_reduced_roots": true,
+        "certified": true,
+        "free_reduced_coordinates": [
+          "z0",
+          "z2",
+          "z4",
+          "z6",
+          "z8"
+        ],
+        "linear_dependent_variables": [
+          "z1",
+          "z3",
+          "z5"
+        ],
+        "square_root_variables": [
+          "z7",
+          "z9"
+        ],
+        "z7_quadratic_discriminant_zero": true,
+        "z9_quadratic_discriminant_zero": true
+      },
+      "sigma": 2,
+      "singular_program_sha256": "96f7179dd0e5aad51b0f60f2d3b31b5ad83e9e7b6c009c1a1af0acb1f25aa7bb",
+      "tau": 4
+    },
+    {
+      "correction_rank": 97,
+      "degree": 8,
+      "dimension": 5,
+      "dual_rank": 172,
+      "groebner_basis_size": 6,
+      "lower_lift_variables": 10,
+      "nonempty": true,
+      "prime": 47,
+      "projected_equations": 172,
+      "reduced_square_structure": {
+        "bridge_vanishes_on_reduced_roots": true,
+        "certified": true,
+        "free_reduced_coordinates": [
+          "z0",
+          "z2",
+          "z4",
+          "z6",
+          "z8"
+        ],
+        "linear_dependent_variables": [
+          "z1",
+          "z3",
+          "z5"
+        ],
+        "square_root_variables": [
+          "z7",
+          "z9"
+        ],
+        "z7_quadratic_discriminant_zero": true,
+        "z9_quadratic_discriminant_zero": true
+      },
+      "sigma": 37,
+      "singular_program_sha256": "9225d67a7fbc8a823e90756da72079fdeba6d1cfb3a1dfe0b86f586bb122fb4f",
+      "tau": 42
+    }
+  ],
+  "points_screened": 8,
+  "scope": "modular nonlinear Kuranishi screen; no characteristic-zero component and no order-seven claim"
+}

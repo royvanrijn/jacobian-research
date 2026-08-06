@@ -1,0 +1,122 @@
+{
+  "coefficient_saturation": [
+    "a1",
+    "a2",
+    "a3",
+    "a4"
+  ],
+  "compile_only": true,
+  "compile_seconds": {
+    "2": 0.020174333942122757,
+    "3": 1.5551161249168217,
+    "4": 16.87070224992931
+  },
+  "configuration_discriminant": "lam**3*mu**2 - lam**3*mu - lam**2*mu**3 + lam**2*mu + lam*mu**3 - lam*mu**2",
+  "configuration_parameters": [
+    "lam",
+    "mu"
+  ],
+  "degrees": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "directions": 5,
+  "exact_result": null,
+  "format": "gvc3-many-coherent-channels-research-v1",
+  "groups": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ]
+  ],
+  "linear_pivot_localization": null,
+  "linear_pivot_scan": {
+    "a1": {
+      "degree": 2,
+      "eligible": false,
+      "first_order": 3
+    },
+    "a2": {
+      "A_sha256": "7768797c173d07445e548e760c61ff8658163b4d2a9d800ecaad08545a1891b9",
+      "A_terms": 34,
+      "B_sha256": "177118c47ab5857766f05593ca19315bbe87010ccaa03956cc8b2035b5f13a15",
+      "B_terms": 237,
+      "chart": "A*B!=0 (equivalently pivot!=0 and B!=0)",
+      "degree": 1,
+      "eligible": true,
+      "equation": "A+B*pivot=0",
+      "first_order": 3,
+      "pivot": "a2",
+      "transformed_term_counts": {
+        "4": 29002
+      }
+    },
+    "a3": {
+      "A_sha256": "b6c8706e57b093426e423f6b8d1017f306113afb846897b7baa5abc2872b5592",
+      "A_terms": 15,
+      "B_sha256": "716f81c4b9395865b3e6888d8f5aa53063103d818482aa6907fec7fe599f0bde",
+      "B_terms": 256,
+      "chart": "A*B!=0 (equivalently pivot!=0 and B!=0)",
+      "degree": 1,
+      "eligible": true,
+      "equation": "A+B*pivot=0",
+      "first_order": 3,
+      "pivot": "a3",
+      "transformed_term_counts": {
+        "4": 32148
+      }
+    },
+    "a4": {
+      "A_sha256": "003431fd8aee1db1a6a66903ede1c3822c6a6007ede8aa1363a50d6a94866f05",
+      "A_terms": 27,
+      "B_sha256": "d8f26755be42f6047b33a029da2c668cda3bd071c15d6987f09261eec4771e34",
+      "B_terms": 244,
+      "chart": "A*B!=0 (equivalently pivot!=0 and B!=0)",
+      "degree": 1,
+      "eligible": true,
+      "equation": "A+B*pivot=0",
+      "first_order": 3,
+      "pivot": "a4",
+      "transformed_term_counts": {
+        "4": 7333
+      }
+    },
+    "lam": {
+      "degree": 16,
+      "eligible": false,
+      "first_order": 3
+    },
+    "mu": {
+      "degree": 20,
+      "eligible": false,
+      "first_order": 3
+    }
+  },
+  "linear_pivot_scan_max_order": 4,
+  "max_order": 4,
+  "modular_results": [],
+  "moment_term_counts": {
+    "2": 0,
+    "3": 271,
+    "4": 1142
+  },
+  "normalization": "a0=1; first three direction points are infinity, zero, one",
+  "saturation_method": "rabinowitsch",
+  "scope": "one declared direction-partition and nonzero-coefficient chart",
+  "specialization": {},
+  "status": "moment compilation only; no elimination result"
+}

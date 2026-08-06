@@ -20,10 +20,12 @@ three-dimensional counterexample construction.
 | [WEIGHTED_WRONSKIAN_FIRST_BLOCK.md](WEIGHTED_WRONSKIAN_FIRST_BLOCK.md) | Hyperelliptic/de Rham interpretation and residual-scaling quotient of the audited first block |
 | [SUPERELLIPTIC_DERHAM_ENGINE.md](SUPERELLIPTIC_DERHAM_ENGINE.md) | Reusable character-wise Hermite reduction, Gauss--Manin matrices, exact scalar Picard--Fuchs extraction, and frontier experiment design |
 | [NEWTON_BOUNDARY_DICTIONARY.md](NEWTON_BOUNDARY_DICTIONARY.md) | Qualified comparison with boundary/valuation language |
-| [BOUNDARY_LATTICE_PREFILTER.md](BOUNDARY_LATTICE_PREFILTER.md) | Chart-aware localization/SNF gate and exact checker for complete proposed boundaries |
+| [BOUNDARY_LATTICE_PREFILTER.md](BOUNDARY_LATTICE_PREFILTER.md) | Dual chart-completion and normal-core localization/SNF gates, including finitely presented nontrivial core class groups, lifted relation corrections, exact unit, Picard, Weil-class, and named-class-order checks; plus a toric sufficiency specialization |
 | [INTRINSIC_A2_BOUNDARY_GATE.md](INTRINSIC_A2_BOUNDARY_GATE.md) | Adjunction/Noether reconstruction, pole-vector ramification gate, and intrinsic dicritical depth obstruction |
 | [PLANE_BOUNDARY_EXCLUSION.md](PLANE_BOUNDARY_EXCLUSION.md) | Conditional smooth-target residue calculation and finite-flat conductor-packet inequality; the former residue-immersion claim for singular target curves is corrected by the cubic cusp audit |
 | [LOG_BOUNDARY_COMPILER.md](LOG_BOUNDARY_COMPILER.md) | Certified branch scales to regular toroidal proximity graphs, complete boundary matrices, differents, and conductors |
+| [CONDUCTOR_JET_TRUNCATION.md](CONDUCTOR_JET_TRUNCATION.md) | Sharp conductor-plus-contact-loss finite-determinacy theorem for node, cusp, multibranch, and matching-cokernel boundary residues |
+| [CASE1_FULL_BAND_CONTINUATION.md](CASE1_FULL_BAND_CONTINUATION.md) | Exact continuation of bracket layers `-4,...,-11`, reconstructing all eleven formerly omitted Case-1 bands with a hash-pinned 66-equation ledger |
 | [FRONTIER_LOG_SCALE_AUDIT.md](FRONTIER_LOG_SCALE_AUDIT.md) | Fixed-completion replay of the `(72,108)` rays, the Wronskian-forced `E3∩E4` cluster, all five plane-return root-partition fans, the two 23-component terminal packages, their corrected `X^2` ramification, and the finite residue-cover split |
 | [FRONTIER_CLOSING_ATTACKS.md](FRONTIER_CLOSING_ATTACKS.md) | Map-decorated boundary package, completed Case-2 composition sieve, and finite harmonic-cover, Pluecker, and log-Chern closure attacks |
 | [POISSON_SQUARE_RIGIDITY.md](POISSON_SQUARE_RIGIDITY.md) | Reduced classification and exact eight-prime embedded filtration of the three-layer `[P,Q]=X^2` box |
@@ -48,6 +50,13 @@ three-dimensional counterexample construction.
 | [cas/README.md](cas/README.md) | Replay commands, hashes, and independent checker |
 | [AUDIT_COMPLETION.md](AUDIT_COMPLETION.md) | Objective-by-objective completion and residual limitations |
 | [Weighted tangent suspension](../extended-geometry/WEIGHTED_TANGENT_SUSPENSION.md) | Exact Poisson-square and weighted-Wronskian bridge from the weighted JC(3) model |
+
+The conductor truncation theorem also has a dependency-sensitive compiler:
+it tracks separate input-to-output contact losses, derives available orders
+from certified frontiers of omitted Newton supports, and reports only the
+exact bands that a failed audit still needs.
+
+<!-- status-consumer: CJT1 afb70f90ff10f3d7 -->
 
 Current scoped conclusion:
 
@@ -83,3 +92,5 @@ This does not prove JC(2), require both degrees to be at least 125, or show
 that any candidate at or beyond 125 exists.  The finite-flatness theorem
 removes the module-theoretic obstruction but leaves the surface boundary
 classification open.
+
+<!-- status-consumer: C1FBC1 0f14ef01fff25097 -->

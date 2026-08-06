@@ -1,0 +1,983 @@
+{
+  "boundary_linear_pivot_localization": {
+    "A_sha256": "87c744c11b0c83e08240f76c9727a932af8642e581f146f8e9fe783065792ec1",
+    "A_terms": 2,
+    "B_sha256": "d2dbb3961614822ccca16aa8d9b48a4c38a527d7a4ff8f2f7e41c38b3eff51f4",
+    "B_terms": 25,
+    "chart": "A*B!=0 (equivalently pivot!=0 and B!=0)",
+    "equation": "A+B*pivot=0",
+    "first_order": 2,
+    "pivot": "a3",
+    "transformed_term_counts": {
+      "3": 648,
+      "4": 7340,
+      "5": 15300
+    }
+  },
+  "coefficient_saturation": [
+    "a0",
+    "a2",
+    "a3",
+    "a4"
+  ],
+  "compile_only": false,
+  "compile_seconds": {
+    "2": 0.01434500003233552,
+    "3": 1.2734655420063064,
+    "4": 14.845875791972503,
+    "5": 88.95780641702004
+  },
+  "configuration_discriminant": "lam**3*mu**2 - lam**3*mu - lam**2*mu**3 + lam**2*mu + lam*mu**3 - lam*mu**2",
+  "configuration_parameters": [
+    "lam",
+    "mu"
+  ],
+  "degrees": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "directions": 5,
+  "exact_generic_primary_result": null,
+  "exact_local_primary_result": null,
+  "exact_result": null,
+  "format": "gvc3-many-coherent-channels-research-v1",
+  "groups": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ]
+  ],
+  "linear_pivot_boundary": {
+    "A_sha256": "aadaea1f8b51dc7c0298cd8dab6dc87c018f1dfa85680ab56d123044c0ff17c8",
+    "A_terms": 27,
+    "B_sha256": "4c505ac5a1b4936202ff1914e6bb2f4285b388eb0e9f76d0233fb90edcd70b42",
+    "B_terms": 244,
+    "chart": "B=0; the first moment and pivot!=0 force A=0",
+    "equations": "A=B=0 for A+B*pivot=0",
+    "pivot": "a4",
+    "source_order": 3
+  },
+  "linear_pivot_localization": null,
+  "linear_pivot_scan": null,
+  "linear_pivot_scan_max_order": null,
+  "max_order": 5,
+  "modular_results": [
+    {
+      "attempted_cutoff": 5,
+      "basis_preview": "57*a0^3*lam^16+98*a0^3*lam^15*mu+73*a0^3*lam^14*mu^2+97*a0^3*lam^13*mu^3+13*a0^3*lam^12*mu^4+90*a0^3*lam^11*mu^5+37*a0^3*lam^10*mu^6+77*a0^3*lam^9*mu^7+27*a0^3*lam^8*mu^8+77*a0^3*lam^7*mu^9+37*a0^3*lam^6*mu^10+90*a0^3*lam^5*mu^11+13*a0^3*lam^4*mu^12+97*a0^3*lam^3*mu^13+73*a0^3*lam^2*mu^14+98*a0^3*lam*mu^15+57*a0^3*mu^16+78*a0^2*a2*lam^16*mu^8+83*a0^2*a2*lam^16*mu^7+63*a0^2*a2*lam^16*mu^6+76*a0^2*a2*lam^16*mu^5+6*a0^2*a2*lam^16*mu^4+76*a0^2*a2*lam^16*mu^3+63*a0^2*a2*lam^16*mu^2+83*a0^2*a2*lam^16*mu+44*a0^2*a2*lam^16+74*a0^2*a2*lam^15*mu^9+5*a0^2*a2*lam^15*mu^8+23*a0^2*a2*lam^15*mu^7+48*a0^2*a2*lam^15*mu^6+28*a0^2*a2*lam^15*mu^5+74*a0^2*a2*lam^15*mu^4+51*a0^2*a2*lam^15*mu^3+65*a0^2*a2*lam^15*mu^2+84*a0^2*a2*lam^15*mu+92*a0^2*a2*lam^15+98*a0^2*a2*lam^14*mu^10+31*a0^2*a2*lam^14*mu^9+25*a0^2*a2*lam^14*mu^8+54*a0^2*a2*lam^14*mu^7+79*a0^2*a2*lam^14*mu^6+3*a0^2*a2*lam^14*mu^5+65*a0^2*a2*lam^14*mu^4+70*a0^2*a2*lam^14*mu^3+77*a0^2*a2*lam^14*mu^2+64*a0^2*a2*lam^14+10*a0^2*a2*lam^13*mu^11+33*a0^2*a2*lam^13*mu^10+22*a0^2*a2*lam^13*mu^9+53*a0^2*a2*lam^13*mu^8+8*a0^2*a2*lam^13*mu^7+10*a0^2*a2*lam^13*mu^6+84*a0^2*a2*lam^13*mu^5+12*a0^2*a2*lam^13*mu^4+75*a0^2*a2*lam^13*mu^3+46*a0^2*a2*lam^13*mu^2+11*a0^2*a2*lam^13*mu+92*a0^2*a2*lam^13+28*a0^2*a2*lam^12*mu^12+39*a0^2*a2*lam^12*mu^11+76*a0^2*a2*lam^12*mu^10+89*a0^2*a2*lam^12*mu^9+82*a0^2*a2*lam^12*mu^8+50*a0^2*a2*lam^12*mu^7+21*a0^2*a2*lam^12*mu^6+28*a0^2*a2*lam^12*mu^5+97*a0^2*a2*lam^12*mu^4+73*a0^2*a2*lam^12*mu^3+90*a0^2*a2*lam^12*mu^2+90*a0^2*a2*lam^12*mu+78*a0^2*a2*lam^12+36*a0^2*a2*lam^11*mu^13+4*a0^2*a2*lam^11*mu^12+45*a0^2*a2*lam^11*mu^11+36*a0^2*a2*lam^11*mu^10+47*a0^2*a2*lam^11*mu^9+62*a0^2*a2*lam^11*mu^8+53*a0^2*a2*lam^11*mu^7+12*a0^2*a2*lam^11*mu^6+92*a0^2*a2*lam^11*mu^5+44*a0^2*a2*lam^11*mu^4+16*a0^2*a2*lam^11*mu^3+26*a0^2*a2*lam^11*mu^2+74*a0^2*a2*lam^11*mu+59*a0^2*a2*lam^10*mu^14+91*a0^2*a2*lam^10*mu^13+43*a0^2*a2*lam^10*mu^12+67*a0^2*a2*lam^10*mu^11+45*a0^2*a2*lam^10*mu^10+49*a0^2*a2*lam^10*mu^9+99*a0^2*a2*lam^10*mu^8+20*a0^2*a2*lam^10*mu^7+91*a0^2*a2*lam^10*mu^6+85*a0^2*a2*lam^10*mu^5+85*a0^2*a2*lam^10*mu^3+98*a0^2*a2*lam^10*mu^2+36*a0^2*a2*lam^9*mu^15+82*a0^2*a2*lam^9*mu^14+82*a0^2*a2*lam^9*mu^13+40*a0^2*a2*lam^9*mu^12+66*a0^2*a2*lam^9*mu^11+88*a0^2*a2*lam^9*mu^10+41*a0^2*a2*lam^9*mu^9+80*a0^2*a2*lam^9*mu^8+5*a0^2*a2*lam^9*mu^7+97*a0^2*a2*lam^9*mu^6+79*a0^2*a2*lam^9*mu^5+10*a0^2*a2*lam^9*mu^4+10*a0^2*a2*lam^9*mu^3+28*a0^2*a2*lam^8*mu^16+36*a0^2*a2*lam^8*mu^15+68*a0^2*a2*lam^8*mu^14+9*a0^2*a2*lam^8*mu^13+7*a0^2*a2*lam^8*mu^12+26*a0^2*a2*lam^8*mu^11+56*a0^2*a2*lam^8*mu^10+26*a0^2*a2*lam^8*mu^9+60*a0^2*a2*lam^8*mu^8+9*a0^2*a2*lam^8*mu^7+68*a0^2*a2*lam^8*mu^6+36*a0^2*a2*lam^8*mu^5+28*a0^2*a2*lam^8*mu^4+10*a0^2*a2*lam^7*mu^17+10*a0^2*a2*lam^7*mu^16+79*a0^2*a2*lam^7*mu^15+97*a0^2*a2*lam^7*mu^14+97*a0^2*a2*lam^7*mu^13+80*a0^2*a2*lam^7*mu^12+41*a0^2*a2*lam^7*mu^11+88*a0^2*a2*lam^7*mu^10+75*a0^2*a2*lam^7*mu^9+40*a0^2*a2*lam^7*mu^8+82*a0^2*a2*lam^7*mu^7+82*a0^2*a2*lam^7*mu^6+36*a0^2*a2*lam^7*mu^5+98*a0^2*a2*lam^6*mu^18+85*a0^2*a2*lam^6*mu^17+85*a0^2*a2*lam^6*mu^15+67*a0^2*a2*lam^6*mu^14+20*a0^2*a2*lam^6*mu^13+99*a0^2*a2*lam^6*mu^12+49*a0^2*a2*lam^6*mu^11+69*a0^2*a2*lam^6*mu^10+67*a0^2*a2*lam^6*mu^9+43*a0^2*a2*lam^6*mu^8+91*a0^2*a2*lam^6*mu^7+59*a0^2*a2*lam^6*mu^6+74*a0^2*a2*lam^5*mu^19+26*a0^2*a2*lam^5*mu^18+16*a0^2*a2*lam^5*mu^17+44*a0^2*a2*lam^5*mu^16+50*a0^2*a2*lam^5*mu^15+12*a0^2*a2*lam^5*mu^14+53*a0^2*a2*lam^5*mu^13+62*a0^2*a2*lam^5*mu^12+89*a0^2*a2*lam^5*mu^11+36*a0^2*a2*lam^5*mu^10+45*a0^2*a2*lam^5*mu^9+4*a0^2*a2*lam^5*mu^8+36*a0^2*a2*lam^5*mu^7+78*a0^2*a2*lam^4*mu^20+90*a0^2*a2*lam^4*mu^19+90*a0^2*a2*lam^4*mu^18+73*a0^2*a2*lam^4*mu^17+64*a0^2*a2*lam^4*mu^16+28*a0^2*a2*lam^4*mu^15+21*a0^2*a2*lam^4*mu^14+50*a0^2*a2*lam^4*mu^13+14*a0^2*a2*lam^4*mu^12+89*a0^2*a2*lam^4*mu^11+76*a0^2*a2*lam^4*mu^10+39*a0^2*a2*lam^4*mu^9+28*a0^2*a2*lam^4*mu^8+92*a0^2*a2*lam^3*mu^20+11*a0^2*a2*lam^3*mu^19+46*a0^2*a2*lam^3*mu^18+23*a0^2*a2*lam^3*mu^17+12*a0^2*a2*lam^3*mu^16+84*a0^2*a2*lam^3*mu^15+10*a0^2*a",
+      "basis_sha256": "4cd530d1998f96eb55a7c6b18a7793ed8fdfbf7fe7f303e8bcb7da205a0c4032",
+      "basis_size": 6,
+      "component_cycles": [],
+      "cutoff": 0,
+      "dimension": 3,
+      "factor_order": [
+        {
+          "expression_text": "a0",
+          "multiplicity": 2,
+          "sha256": "4e1195df020de59e0d65a33a4279f1183e7ae4e5d980e309f8b55adff2e61c3e",
+          "terms": 1,
+          "total_degree": 1
+        },
+        {
+          "expression_text": "a2",
+          "multiplicity": 1,
+          "sha256": "2c3a4249d77070058649dbd822dcaf7957586fce428cfb2ca88b94741eda8b07",
+          "terms": 1,
+          "total_degree": 1
+        },
+        {
+          "expression_text": "a4",
+          "multiplicity": 1,
+          "sha256": "4539e4b4889079c2a00afeae0bfc1439840ef2379a1fb81c8ba27361ad476d6b",
+          "terms": 1,
+          "total_degree": 1
+        },
+        {
+          "expression_text": "lam",
+          "multiplicity": 1,
+          "sha256": "7f1b55b860590406f84f9394f4e73356902dad022a8cd6f43221086d3c70699e",
+          "terms": 1,
+          "total_degree": 1
+        },
+        {
+          "expression_text": "mu",
+          "multiplicity": 1,
+          "sha256": "19503ea6785ee1243cd3373fe0d201404089fb7c559d2cd4b025585ee36ff3c3",
+          "terms": 1,
+          "total_degree": 1
+        },
+        {
+          "expression_text": "143*a0 + 60*a2",
+          "multiplicity": 1,
+          "sha256": "d3682817bfcb3b703de3df6c9f09f188b151d624a829fd6f163619ca57e4a121",
+          "terms": 2,
+          "total_degree": 1
+        },
+        {
+          "expression_text": "lam - 1",
+          "multiplicity": 1,
+          "sha256": "87e3e538ee767f7342736bfd26fba4d59e9e3edc729b08bd40da2a598427e219",
+          "terms": 2,
+          "total_degree": 1
+        },
+        {
+          "expression_text": "lam - mu",
+          "multiplicity": 1,
+          "sha256": "c9a169d92e72520ccc8539b08b699593ff1179b3824aca59c9642633f6a71de9",
+          "terms": 2,
+          "total_degree": 1
+        },
+        {
+          "expression_text": "mu - 1",
+          "multiplicity": 1,
+          "sha256": "0e9dc34263be52381c75712558c9bb817c802da84c475b520af9fe4ed993d141",
+          "terms": 2,
+          "total_degree": 1
+        },
+        {
+          "expression_text": "38*a0*a2*lam**12 - 456*a0*a2*lam**11 + 2508*a0*a2*lam**10 - 8360*a0*a2*lam**9 + 18810*a0*a2*lam**8 - 30096*a0*a2*lam**7 + 35112*a0*a2*lam**6 - 30096*a0*a2*lam**5 + 18810*a0*a2*lam**4 - 8360*a0*a2*lam**3 + 2508*a0*a2*lam**2 - 456*a0*a2*lam + 38*a0*a2 + 48*a2*lam**16 - 480*a2*lam**15 + 2160*a2*lam**14 - 5760*a2*lam**13 + 10080*a2*lam**12 - 12096*a2*lam**11 + 10080*a2*lam**10 - 5760*a2*lam**9 + 2160*a2*lam**8 - 480*a2*lam**7 + 48*a2*lam**6 + 19*lam**16",
+          "multiplicity": 1,
+          "sha256": "763f90aa3b45091c472616c0d20a033e538c13e41a080927cf0a4163b95c884c",
+          "terms": 25,
+          "total_degree": 17
+        }
+      ],
+      "factors_completed": 5,
+      "factors_component_classified": 5,
+      "factors_total": 10,
+      "method": "successive_factor_quotients",
+      "prime": 101,
+      "seconds": 300.2664785020752,
+      "status": "timeout",
+      "steps": [
+        {
+          "basis_preview": "57*a0^3*lam^16+98*a0^3*lam^15*mu+73*a0^3*lam^14*mu^2+97*a0^3*lam^13*mu^3+13*a0^3*lam^12*mu^4+90*a0^3*lam^11*mu^5+37*a0^3*lam^10*mu^6+77*a0^3*lam^9*mu^7+27*a0^3*lam^8*mu^8+77*a0^3*lam^7*mu^9+37*a0^3*lam^6*mu^10+90*a0^3*lam^5*mu^11+13*a0^3*lam^4*mu^12+97*a0^3*lam^3*mu^13+73*a0^3*lam^2*mu^14+98*a0^3*lam*mu^15+57*a0^3*mu^16+78*a0^2*a2*lam^16*mu^8+83*a0^2*a2*lam^16*mu^7+63*a0^2*a2*lam^16*mu^6+76*a0^2*a2*lam^16*mu^5+6*a0^2*a2*lam^16*mu^4+76*a0^2*a2*lam^16*mu^3+63*a0^2*a2*lam^16*mu^2+83*a0^2*a2*lam^16*mu+44*a0^2*a2*lam^16+74*a0^2*a2*lam^15*mu^9+5*a0^2*a2*lam^15*mu^8+23*a0^2*a2*lam^15*mu^7+48*a0^2*a2*lam^15*mu^6+28*a0^2*a2*lam^15*mu^5+74*a0^2*a2*lam^15*mu^4+51*a0^2*a2*lam^15*mu^3+65*a0^2*a2*lam^15*mu^2+84*a0^2*a2*lam^15*mu+92*a0^2*a2*lam^15+98*a0^2*a2*lam^14*mu^10+31*a0^2*a2*lam^14*mu^9+25*a0^2*a2*lam^14*mu^8+54*a0^2*a2*lam^14*mu^7+79*a0^2*a2*lam^14*mu^6+3*a0^2*a2*lam^14*mu^5+65*a0^2*a2*lam^14*mu^4+70*a0^2*a2*lam^14*mu^3+77*a0^2*a2*lam^14*mu^2+64*a0^2*a2*lam^14+10*a0^2*a2*lam^13*mu^11+33*a0^2*a2*lam^13*mu^10+22*a0^2*a2*lam^13*mu^9+53*a0^2*a2*lam^13*mu^8+8*a0^2*a2*lam^13*mu^7+10*a0^2*a2*lam^13*mu^6+84*a0^2*a2*lam^13*mu^5+12*a0^2*a2*lam^13*mu^4+75*a0^2*a2*lam^13*mu^3+46*a0^2*a2*lam^13*mu^2+11*a0^2*a2*lam^13*mu+92*a0^2*a2*lam^13+28*a0^2*a2*lam^12*mu^12+39*a0^2*a2*lam^12*mu^11+76*a0^2*a2*lam^12*mu^10+89*a0^2*a2*lam^12*mu^9+82*a0^2*a2*lam^12*mu^8+50*a0^2*a2*lam^12*mu^7+21*a0^2*a2*lam^12*mu^6+28*a0^2*a2*lam^12*mu^5+97*a0^2*a2*lam^12*mu^4+73*a0^2*a2*lam^12*mu^3+90*a0^2*a2*lam^12*mu^2+90*a0^2*a2*lam^12*mu+78*a0^2*a2*lam^12+36*a0^2*a2*lam^11*mu^13+4*a0^2*a2*lam^11*mu^12+45*a0^2*a2*lam^11*mu^11+36*a0^2*a2*lam^11*mu^10+47*a0^2*a2*lam^11*mu^9+62*a0^2*a2*lam^11*mu^8+53*a0^2*a2*lam^11*mu^7+12*a0^2*a2*lam^11*mu^6+92*a0^2*a2*lam^11*mu^5+44*a0^2*a2*lam^11*mu^4+16*a0^2*a2*lam^11*mu^3+26*a0^2*a2*lam^11*mu^2+74*a0^2*a2*lam^11*mu+59*a0^2*a2*lam^10*mu^14+91*a0^2*a2*lam^10*mu^13+43*a0^2*a2*lam^10*mu^12+67*a0^2*a2*lam^10*mu^11+45*a0^2*a2*lam^10*mu^10+49*a0^2*a2*lam^10*mu^9+99*a0^2*a2*lam^10*mu^8+20*a0^2*a2*lam^10*mu^7+91*a0^2*a2*lam^10*mu^6+85*a0^2*a2*lam^10*mu^5+85*a0^2*a2*lam^10*mu^3+98*a0^2*a2*lam^10*mu^2+36*a0^2*a2*lam^9*mu^15+82*a0^2*a2*lam^9*mu^14+82*a0^2*a2*lam^9*mu^13+40*a0^2*a2*lam^9*mu^12+66*a0^2*a2*lam^9*mu^11+88*a0^2*a2*lam^9*mu^10+41*a0^2*a2*lam^9*mu^9+80*a0^2*a2*lam^9*mu^8+5*a0^2*a2*lam^9*mu^7+97*a0^2*a2*lam^9*mu^6+79*a0^2*a2*lam^9*mu^5+10*a0^2*a2*lam^9*mu^4+10*a0^2*a2*lam^9*mu^3+28*a0^2*a2*lam^8*mu^16+36*a0^2*a2*lam^8*mu^15+68*a0^2*a2*lam^8*mu^14+9*a0^2*a2*lam^8*mu^13+7*a0^2*a2*lam^8*mu^12+26*a0^2*a2*lam^8*mu^11+56*a0^2*a2*lam^8*mu^10+26*a0^2*a2*lam^8*mu^9+60*a0^2*a2*lam^8*mu^8+9*a0^2*a2*lam^8*mu^7+68*a0^2*a2*lam^8*mu^6+36*a0^2*a2*lam^8*mu^5+28*a0^2*a2*lam^8*mu^4+10*a0^2*a2*lam^7*mu^17+10*a0^2*a2*lam^7*mu^16+79*a0^2*a2*lam^7*mu^15+97*a0^2*a2*lam^7*mu^14+97*a0^2*a2*lam^7*mu^13+80*a0^2*a2*lam^7*mu^12+41*a0^2*a2*lam^7*mu^11+88*a0^2*a2*lam^7*mu^10+75*a0^2*a2*lam^7*mu^9+40*a0^2*a2*lam^7*mu^8+82*a0^2*a2*lam^7*mu^7+82*a0^2*a2*lam^7*mu^6+36*a0^2*a2*lam^7*mu^5+98*a0^2*a2*lam^6*mu^18+85*a0^2*a2*lam^6*mu^17+85*a0^2*a2*lam^6*mu^15+67*a0^2*a2*lam^6*mu^14+20*a0^2*a2*lam^6*mu^13+99*a0^2*a2*lam^6*mu^12+49*a0^2*a2*lam^6*mu^11+69*a0^2*a2*lam^6*mu^10+67*a0^2*a2*lam^6*mu^9+43*a0^2*a2*lam^6*mu^8+91*a0^2*a2*lam^6*mu^7+59*a0^2*a2*lam^6*mu^6+74*a0^2*a2*lam^5*mu^19+26*a0^2*a2*lam^5*mu^18+16*a0^2*a2*lam^5*mu^17+44*a0^2*a2*lam^5*mu^16+50*a0^2*a2*lam^5*mu^15+12*a0^2*a2*lam^5*mu^14+53*a0^2*a2*lam^5*mu^13+62*a0^2*a2*lam^5*mu^12+89*a0^2*a2*lam^5*mu^11+36*a0^2*a2*lam^5*mu^10+45*a0^2*a2*lam^5*mu^9+4*a0^2*a2*lam^5*mu^8+36*a0^2*a2*lam^5*mu^7+78*a0^2*a2*lam^4*mu^20+90*a0^2*a2*lam^4*mu^19+90*a0^2*a2*lam^4*mu^18+73*a0^2*a2*lam^4*mu^17+64*a0^2*a2*lam^4*mu^16+28*a0^2*a2*lam^4*mu^15+21*a0^2*a2*lam^4*mu^14+50*a0^2*a2*lam^4*mu^13+14*a0^2*a2*lam^4*mu^12+89*a0^2*a2*lam^4*mu^11+76*a0^2*a2*lam^4*mu^10+39*a0^2*a2*lam^4*mu^9+28*a0^2*a2*lam^4*mu^8+92*a0^2*a2*lam^3*mu^20+11*a0^2*a2*lam^3*mu^19+46*a0^2*a2*lam^3*mu^18+23*a0^2*a2*lam^3*mu^17+12*a0^2*a2*lam^3*mu^16+84*a0^2*a2*lam^3*mu^15+10*a0^2*a",
+          "basis_sha256": "624bfd9689cbb140d2370b89d71f4f76070a79214d7040dab075d0a826501afb",
+          "basis_size": 3,
+          "boundary_test": {
+            "boundary_gcd_degree": 18,
+            "boundary_gcd_preview": "a2^2*lam^16-10*a2^2*lam^15-48*a2*lam^16+45*a2^2*lam^14-19*a2^2*lam^13+8*a2^2*lam^12-50*a2^2*lam^11+8*a2^2*lam^10-19*a2^2*lam^9+45*a2^2*lam^8-10*a2^2*lam^7+a2^2*lam^6",
+            "boundary_gcd_sha256": "435052c288580862b535f2dc30e28d50874fe1c1978cab9d999fa606c0ffb967",
+            "boundary_term_counts": [
+              156,
+              816,
+              633
+            ],
+            "elapsed_ticks": 0,
+            "engine": "unmixed_linear_boundary_gcd",
+            "input_sha256": "96b185caababe272828b7da177401630fee9e1af2d83aefef4f8bd066c66acbd",
+            "pivot": "a0",
+            "returncode": 0,
+            "saturated": 0,
+            "seconds": 0.020717334002256393,
+            "status": "completed",
+            "stderr": "",
+            "stdout_tail": "RESULT_BEGIN\nboundary_gcd_degree=18\nelapsed_ticks=0\nBOUNDARY_GCD_BEGIN\na2^2*lam^16-10*a2^2*lam^15-48*a2*lam^16+45*a2^2*lam^14-19*a2^2*lam^13+8*a2^2*lam^12-50*a2^2*lam^11+8*a2^2*lam^10-19*a2^2*lam^9+45*a2^2*lam^8-10*a2^2*lam^7+a2^2*lam^6\nBOUNDARY_GCD_END\nRESULT_END\n",
+            "substitution": "0"
+          },
+          "deferred_support_exponents": {
+            "38*a0*a2*lam**12 - 456*a0*a2*lam**11 + 2508*a0*a2*lam**10 - 8360*a0*a2*lam**9 + 18810*a0*a2*lam**8 - 30096*a0*a2*lam**7 + 35112*a0*a2*lam**6 - 30096*a0*a2*lam**5 + 18810*a0*a2*lam**4 - 8360*a0*a2*lam**3 + 2508*a0*a2*lam**2 - 456*a0*a2*lam + 38*a0*a2 + 48*a2*lam**16 - 480*a2*lam**15 + 2160*a2*lam**14 - 5760*a2*lam**13 + 10080*a2*lam**12 - 12096*a2*lam**11 + 10080*a2*lam**10 - 5760*a2*lam**9 + 2160*a2*lam**8 - 480*a2*lam**7 + 48*a2*lam**6 + 19*lam**16": 1,
+            "a2": 1
+          },
+          "dimension": 3,
+          "engine": "boundary_gcd_supported_on_localization_factors",
+          "factor": "a0",
+          "factor_index": 1,
+          "factor_sha256": "4e1195df020de59e0d65a33a4279f1183e7ae4e5d980e309f8b55adff2e61c3e",
+          "quotient_dimension": -1,
+          "saturation_exponent_lower_bound": 0,
+          "seconds": 0.020717334002256393,
+          "status": "deferred",
+          "unit": 0
+        },
+        {
+          "basis_preview": "57*a0^3*lam^16+98*a0^3*lam^15*mu+73*a0^3*lam^14*mu^2+97*a0^3*lam^13*mu^3+13*a0^3*lam^12*mu^4+90*a0^3*lam^11*mu^5+37*a0^3*lam^10*mu^6+77*a0^3*lam^9*mu^7+27*a0^3*lam^8*mu^8+77*a0^3*lam^7*mu^9+37*a0^3*lam^6*mu^10+90*a0^3*lam^5*mu^11+13*a0^3*lam^4*mu^12+97*a0^3*lam^3*mu^13+73*a0^3*lam^2*mu^14+98*a0^3*lam*mu^15+57*a0^3*mu^16+78*a0^2*a2*lam^16*mu^8+83*a0^2*a2*lam^16*mu^7+63*a0^2*a2*lam^16*mu^6+76*a0^2*a2*lam^16*mu^5+6*a0^2*a2*lam^16*mu^4+76*a0^2*a2*lam^16*mu^3+63*a0^2*a2*lam^16*mu^2+83*a0^2*a2*lam^16*mu+44*a0^2*a2*lam^16+74*a0^2*a2*lam^15*mu^9+5*a0^2*a2*lam^15*mu^8+23*a0^2*a2*lam^15*mu^7+48*a0^2*a2*lam^15*mu^6+28*a0^2*a2*lam^15*mu^5+74*a0^2*a2*lam^15*mu^4+51*a0^2*a2*lam^15*mu^3+65*a0^2*a2*lam^15*mu^2+84*a0^2*a2*lam^15*mu+92*a0^2*a2*lam^15+98*a0^2*a2*lam^14*mu^10+31*a0^2*a2*lam^14*mu^9+25*a0^2*a2*lam^14*mu^8+54*a0^2*a2*lam^14*mu^7+79*a0^2*a2*lam^14*mu^6+3*a0^2*a2*lam^14*mu^5+65*a0^2*a2*lam^14*mu^4+70*a0^2*a2*lam^14*mu^3+77*a0^2*a2*lam^14*mu^2+64*a0^2*a2*lam^14+10*a0^2*a2*lam^13*mu^11+33*a0^2*a2*lam^13*mu^10+22*a0^2*a2*lam^13*mu^9+53*a0^2*a2*lam^13*mu^8+8*a0^2*a2*lam^13*mu^7+10*a0^2*a2*lam^13*mu^6+84*a0^2*a2*lam^13*mu^5+12*a0^2*a2*lam^13*mu^4+75*a0^2*a2*lam^13*mu^3+46*a0^2*a2*lam^13*mu^2+11*a0^2*a2*lam^13*mu+92*a0^2*a2*lam^13+28*a0^2*a2*lam^12*mu^12+39*a0^2*a2*lam^12*mu^11+76*a0^2*a2*lam^12*mu^10+89*a0^2*a2*lam^12*mu^9+82*a0^2*a2*lam^12*mu^8+50*a0^2*a2*lam^12*mu^7+21*a0^2*a2*lam^12*mu^6+28*a0^2*a2*lam^12*mu^5+97*a0^2*a2*lam^12*mu^4+73*a0^2*a2*lam^12*mu^3+90*a0^2*a2*lam^12*mu^2+90*a0^2*a2*lam^12*mu+78*a0^2*a2*lam^12+36*a0^2*a2*lam^11*mu^13+4*a0^2*a2*lam^11*mu^12+45*a0^2*a2*lam^11*mu^11+36*a0^2*a2*lam^11*mu^10+47*a0^2*a2*lam^11*mu^9+62*a0^2*a2*lam^11*mu^8+53*a0^2*a2*lam^11*mu^7+12*a0^2*a2*lam^11*mu^6+92*a0^2*a2*lam^11*mu^5+44*a0^2*a2*lam^11*mu^4+16*a0^2*a2*lam^11*mu^3+26*a0^2*a2*lam^11*mu^2+74*a0^2*a2*lam^11*mu+59*a0^2*a2*lam^10*mu^14+91*a0^2*a2*lam^10*mu^13+43*a0^2*a2*lam^10*mu^12+67*a0^2*a2*lam^10*mu^11+45*a0^2*a2*lam^10*mu^10+49*a0^2*a2*lam^10*mu^9+99*a0^2*a2*lam^10*mu^8+20*a0^2*a2*lam^10*mu^7+91*a0^2*a2*lam^10*mu^6+85*a0^2*a2*lam^10*mu^5+85*a0^2*a2*lam^10*mu^3+98*a0^2*a2*lam^10*mu^2+36*a0^2*a2*lam^9*mu^15+82*a0^2*a2*lam^9*mu^14+82*a0^2*a2*lam^9*mu^13+40*a0^2*a2*lam^9*mu^12+66*a0^2*a2*lam^9*mu^11+88*a0^2*a2*lam^9*mu^10+41*a0^2*a2*lam^9*mu^9+80*a0^2*a2*lam^9*mu^8+5*a0^2*a2*lam^9*mu^7+97*a0^2*a2*lam^9*mu^6+79*a0^2*a2*lam^9*mu^5+10*a0^2*a2*lam^9*mu^4+10*a0^2*a2*lam^9*mu^3+28*a0^2*a2*lam^8*mu^16+36*a0^2*a2*lam^8*mu^15+68*a0^2*a2*lam^8*mu^14+9*a0^2*a2*lam^8*mu^13+7*a0^2*a2*lam^8*mu^12+26*a0^2*a2*lam^8*mu^11+56*a0^2*a2*lam^8*mu^10+26*a0^2*a2*lam^8*mu^9+60*a0^2*a2*lam^8*mu^8+9*a0^2*a2*lam^8*mu^7+68*a0^2*a2*lam^8*mu^6+36*a0^2*a2*lam^8*mu^5+28*a0^2*a2*lam^8*mu^4+10*a0^2*a2*lam^7*mu^17+10*a0^2*a2*lam^7*mu^16+79*a0^2*a2*lam^7*mu^15+97*a0^2*a2*lam^7*mu^14+97*a0^2*a2*lam^7*mu^13+80*a0^2*a2*lam^7*mu^12+41*a0^2*a2*lam^7*mu^11+88*a0^2*a2*lam^7*mu^10+75*a0^2*a2*lam^7*mu^9+40*a0^2*a2*lam^7*mu^8+82*a0^2*a2*lam^7*mu^7+82*a0^2*a2*lam^7*mu^6+36*a0^2*a2*lam^7*mu^5+98*a0^2*a2*lam^6*mu^18+85*a0^2*a2*lam^6*mu^17+85*a0^2*a2*lam^6*mu^15+67*a0^2*a2*lam^6*mu^14+20*a0^2*a2*lam^6*mu^13+99*a0^2*a2*lam^6*mu^12+49*a0^2*a2*lam^6*mu^11+69*a0^2*a2*lam^6*mu^10+67*a0^2*a2*lam^6*mu^9+43*a0^2*a2*lam^6*mu^8+91*a0^2*a2*lam^6*mu^7+59*a0^2*a2*lam^6*mu^6+74*a0^2*a2*lam^5*mu^19+26*a0^2*a2*lam^5*mu^18+16*a0^2*a2*lam^5*mu^17+44*a0^2*a2*lam^5*mu^16+50*a0^2*a2*lam^5*mu^15+12*a0^2*a2*lam^5*mu^14+53*a0^2*a2*lam^5*mu^13+62*a0^2*a2*lam^5*mu^12+89*a0^2*a2*lam^5*mu^11+36*a0^2*a2*lam^5*mu^10+45*a0^2*a2*lam^5*mu^9+4*a0^2*a2*lam^5*mu^8+36*a0^2*a2*lam^5*mu^7+78*a0^2*a2*lam^4*mu^20+90*a0^2*a2*lam^4*mu^19+90*a0^2*a2*lam^4*mu^18+73*a0^2*a2*lam^4*mu^17+64*a0^2*a2*lam^4*mu^16+28*a0^2*a2*lam^4*mu^15+21*a0^2*a2*lam^4*mu^14+50*a0^2*a2*lam^4*mu^13+14*a0^2*a2*lam^4*mu^12+89*a0^2*a2*lam^4*mu^11+76*a0^2*a2*lam^4*mu^10+39*a0^2*a2*lam^4*mu^9+28*a0^2*a2*lam^4*mu^8+92*a0^2*a2*lam^3*mu^20+11*a0^2*a2*lam^3*mu^19+46*a0^2*a2*lam^3*mu^18+23*a0^2*a2*lam^3*mu^17+12*a0^2*a2*lam^3*mu^16+84*a0^2*a2*lam^3*mu^15+10*a0^2*a",
+          "basis_sha256": "624bfd9689cbb140d2370b89d71f4f76070a79214d7040dab075d0a826501afb",
+          "basis_size": 3,
+          "boundary_test": {
+            "boundary_gcd_degree": 1,
+            "boundary_gcd_preview": "a0",
+            "boundary_gcd_sha256": "4e1195df020de59e0d65a33a4279f1183e7ae4e5d980e309f8b55adff2e61c3e",
+            "boundary_term_counts": [
+              32,
+              46,
+              96
+            ],
+            "component_minor_boundary_screen": {
+              "best_pair": {
+                "boundary_gcd_degree": 0,
+                "boundary_minor_terms": 199150,
+                "generator_pair": [
+                  0,
+                  1
+                ],
+                "local_pair": [
+                  0,
+                  1
+                ]
+              },
+              "boundary_coefficient_term_counts": [
+                32,
+                46,
+                96
+              ],
+              "boundary_linear_coefficient_term_counts": [
+                225,
+                1000,
+                1594
+              ],
+              "boundary_linear_common_gcd_degrees": [
+                0,
+                0,
+                0
+              ],
+              "boundary_residual_common_gcd_degrees": [
+                1,
+                0,
+                0
+              ],
+              "common_boundary_degree": 1,
+              "common_boundary_sha256": "4e1195df020de59e0d65a33a4279f1183e7ae4e5d980e309f8b55adff2e61c3e",
+              "coprime_boundary_minor_found": 1,
+              "elapsed_ticks": 102,
+              "engine": "component_minor_boundary_screen",
+              "forced_common_factor": 0,
+              "input_sha256": "d97ecd300bc3f6a0b2e4ec49ece7f36a3e0961f1528cda0b17fb58b5afafc28c",
+              "pairs": [
+                {
+                  "boundary_gcd_degree": 0,
+                  "boundary_minor_terms": 199150,
+                  "generator_pair": [
+                    0,
+                    1
+                  ],
+                  "local_pair": [
+                    0,
+                    1
+                  ]
+                }
+              ],
+              "pairs_examined": 1,
+              "returncode": 0,
+              "seconds": 104.48699741601013,
+              "selected_generator_indices": [
+                0,
+                1,
+                2
+              ],
+              "selected_generator_sha256": [
+                "ed0e597a11ccf98a2f62d8f5a811d3be1a08fbf93b2ada18ed138394d5310af5",
+                "59175b960ae9659a60d7209a26d5c52e86c4e1e0e479f470e42e818470cf077a",
+                "fa71c8b5f9b3661bda93101660ec76948bdbc8da8144b247c143b5c5855df956"
+              ],
+              "selected_generator_term_counts": [
+                643,
+                7298,
+                15170
+              ],
+              "status": "completed",
+              "stderr": "",
+              "stdout_tail": "   ? ringvar expected\n   ? error occurred in or before STDIN line 47: `poly a2=subst(diff(p2,a2),a2,0)*1;`\n   ? expected poly-expression. type 'help poly;'\nPAIR=0,1,0,199150\nRESULT_BEGIN\nelapsed_ticks=102\npairs_examined=1\nforced_common_factor=0\nA_GCD_0=0\nA_GCD_1=0\nA_GCD_2=0\nB_GCD_0=1\nB_GCD_1=0\nB_GCD_2=0\nRESULT_END\n"
+            },
+            "component_support_exponents": {
+              "a0": 1
+            },
+            "elapsed_ticks": 0,
+            "engine": "unmixed_linear_boundary_gcd",
+            "input_sha256": "87cdd5a30da3808fef0fee775205c3559042b7be5085f90fb09caa3895224767",
+            "pivot": "a2",
+            "returncode": 0,
+            "saturated": 0,
+            "seconds": 0.014822542085312307,
+            "status": "completed",
+            "stderr": "",
+            "stdout_tail": "RESULT_BEGIN\nboundary_gcd_degree=1\nelapsed_ticks=0\nBOUNDARY_GCD_BEGIN\na0\nBOUNDARY_GCD_END\nRESULT_END\n",
+            "substitution": "0"
+          },
+          "deferred_support_exponents": {
+            "a0": 1
+          },
+          "dimension": 3,
+          "engine": "boundary_gcd_supported_on_localization_factors",
+          "factor": "a2",
+          "factor_index": 2,
+          "factor_sha256": "2c3a4249d77070058649dbd822dcaf7957586fce428cfb2ca88b94741eda8b07",
+          "quotient_dimension": -1,
+          "saturation_exponent_lower_bound": 0,
+          "seconds": 0.014822542085312307,
+          "status": "deferred",
+          "unit": 0
+        },
+        {
+          "basis_preview": "57*a0^3*lam^16+98*a0^3*lam^15*mu+73*a0^3*lam^14*mu^2+97*a0^3*lam^13*mu^3+13*a0^3*lam^12*mu^4+90*a0^3*lam^11*mu^5+37*a0^3*lam^10*mu^6+77*a0^3*lam^9*mu^7+27*a0^3*lam^8*mu^8+77*a0^3*lam^7*mu^9+37*a0^3*lam^6*mu^10+90*a0^3*lam^5*mu^11+13*a0^3*lam^4*mu^12+97*a0^3*lam^3*mu^13+73*a0^3*lam^2*mu^14+98*a0^3*lam*mu^15+57*a0^3*mu^16+78*a0^2*a2*lam^16*mu^8+83*a0^2*a2*lam^16*mu^7+63*a0^2*a2*lam^16*mu^6+76*a0^2*a2*lam^16*mu^5+6*a0^2*a2*lam^16*mu^4+76*a0^2*a2*lam^16*mu^3+63*a0^2*a2*lam^16*mu^2+83*a0^2*a2*lam^16*mu+44*a0^2*a2*lam^16+74*a0^2*a2*lam^15*mu^9+5*a0^2*a2*lam^15*mu^8+23*a0^2*a2*lam^15*mu^7+48*a0^2*a2*lam^15*mu^6+28*a0^2*a2*lam^15*mu^5+74*a0^2*a2*lam^15*mu^4+51*a0^2*a2*lam^15*mu^3+65*a0^2*a2*lam^15*mu^2+84*a0^2*a2*lam^15*mu+92*a0^2*a2*lam^15+98*a0^2*a2*lam^14*mu^10+31*a0^2*a2*lam^14*mu^9+25*a0^2*a2*lam^14*mu^8+54*a0^2*a2*lam^14*mu^7+79*a0^2*a2*lam^14*mu^6+3*a0^2*a2*lam^14*mu^5+65*a0^2*a2*lam^14*mu^4+70*a0^2*a2*lam^14*mu^3+77*a0^2*a2*lam^14*mu^2+64*a0^2*a2*lam^14+10*a0^2*a2*lam^13*mu^11+33*a0^2*a2*lam^13*mu^10+22*a0^2*a2*lam^13*mu^9+53*a0^2*a2*lam^13*mu^8+8*a0^2*a2*lam^13*mu^7+10*a0^2*a2*lam^13*mu^6+84*a0^2*a2*lam^13*mu^5+12*a0^2*a2*lam^13*mu^4+75*a0^2*a2*lam^13*mu^3+46*a0^2*a2*lam^13*mu^2+11*a0^2*a2*lam^13*mu+92*a0^2*a2*lam^13+28*a0^2*a2*lam^12*mu^12+39*a0^2*a2*lam^12*mu^11+76*a0^2*a2*lam^12*mu^10+89*a0^2*a2*lam^12*mu^9+82*a0^2*a2*lam^12*mu^8+50*a0^2*a2*lam^12*mu^7+21*a0^2*a2*lam^12*mu^6+28*a0^2*a2*lam^12*mu^5+97*a0^2*a2*lam^12*mu^4+73*a0^2*a2*lam^12*mu^3+90*a0^2*a2*lam^12*mu^2+90*a0^2*a2*lam^12*mu+78*a0^2*a2*lam^12+36*a0^2*a2*lam^11*mu^13+4*a0^2*a2*lam^11*mu^12+45*a0^2*a2*lam^11*mu^11+36*a0^2*a2*lam^11*mu^10+47*a0^2*a2*lam^11*mu^9+62*a0^2*a2*lam^11*mu^8+53*a0^2*a2*lam^11*mu^7+12*a0^2*a2*lam^11*mu^6+92*a0^2*a2*lam^11*mu^5+44*a0^2*a2*lam^11*mu^4+16*a0^2*a2*lam^11*mu^3+26*a0^2*a2*lam^11*mu^2+74*a0^2*a2*lam^11*mu+59*a0^2*a2*lam^10*mu^14+91*a0^2*a2*lam^10*mu^13+43*a0^2*a2*lam^10*mu^12+67*a0^2*a2*lam^10*mu^11+45*a0^2*a2*lam^10*mu^10+49*a0^2*a2*lam^10*mu^9+99*a0^2*a2*lam^10*mu^8+20*a0^2*a2*lam^10*mu^7+91*a0^2*a2*lam^10*mu^6+85*a0^2*a2*lam^10*mu^5+85*a0^2*a2*lam^10*mu^3+98*a0^2*a2*lam^10*mu^2+36*a0^2*a2*lam^9*mu^15+82*a0^2*a2*lam^9*mu^14+82*a0^2*a2*lam^9*mu^13+40*a0^2*a2*lam^9*mu^12+66*a0^2*a2*lam^9*mu^11+88*a0^2*a2*lam^9*mu^10+41*a0^2*a2*lam^9*mu^9+80*a0^2*a2*lam^9*mu^8+5*a0^2*a2*lam^9*mu^7+97*a0^2*a2*lam^9*mu^6+79*a0^2*a2*lam^9*mu^5+10*a0^2*a2*lam^9*mu^4+10*a0^2*a2*lam^9*mu^3+28*a0^2*a2*lam^8*mu^16+36*a0^2*a2*lam^8*mu^15+68*a0^2*a2*lam^8*mu^14+9*a0^2*a2*lam^8*mu^13+7*a0^2*a2*lam^8*mu^12+26*a0^2*a2*lam^8*mu^11+56*a0^2*a2*lam^8*mu^10+26*a0^2*a2*lam^8*mu^9+60*a0^2*a2*lam^8*mu^8+9*a0^2*a2*lam^8*mu^7+68*a0^2*a2*lam^8*mu^6+36*a0^2*a2*lam^8*mu^5+28*a0^2*a2*lam^8*mu^4+10*a0^2*a2*lam^7*mu^17+10*a0^2*a2*lam^7*mu^16+79*a0^2*a2*lam^7*mu^15+97*a0^2*a2*lam^7*mu^14+97*a0^2*a2*lam^7*mu^13+80*a0^2*a2*lam^7*mu^12+41*a0^2*a2*lam^7*mu^11+88*a0^2*a2*lam^7*mu^10+75*a0^2*a2*lam^7*mu^9+40*a0^2*a2*lam^7*mu^8+82*a0^2*a2*lam^7*mu^7+82*a0^2*a2*lam^7*mu^6+36*a0^2*a2*lam^7*mu^5+98*a0^2*a2*lam^6*mu^18+85*a0^2*a2*lam^6*mu^17+85*a0^2*a2*lam^6*mu^15+67*a0^2*a2*lam^6*mu^14+20*a0^2*a2*lam^6*mu^13+99*a0^2*a2*lam^6*mu^12+49*a0^2*a2*lam^6*mu^11+69*a0^2*a2*lam^6*mu^10+67*a0^2*a2*lam^6*mu^9+43*a0^2*a2*lam^6*mu^8+91*a0^2*a2*lam^6*mu^7+59*a0^2*a2*lam^6*mu^6+74*a0^2*a2*lam^5*mu^19+26*a0^2*a2*lam^5*mu^18+16*a0^2*a2*lam^5*mu^17+44*a0^2*a2*lam^5*mu^16+50*a0^2*a2*lam^5*mu^15+12*a0^2*a2*lam^5*mu^14+53*a0^2*a2*lam^5*mu^13+62*a0^2*a2*lam^5*mu^12+89*a0^2*a2*lam^5*mu^11+36*a0^2*a2*lam^5*mu^10+45*a0^2*a2*lam^5*mu^9+4*a0^2*a2*lam^5*mu^8+36*a0^2*a2*lam^5*mu^7+78*a0^2*a2*lam^4*mu^20+90*a0^2*a2*lam^4*mu^19+90*a0^2*a2*lam^4*mu^18+73*a0^2*a2*lam^4*mu^17+64*a0^2*a2*lam^4*mu^16+28*a0^2*a2*lam^4*mu^15+21*a0^2*a2*lam^4*mu^14+50*a0^2*a2*lam^4*mu^13+14*a0^2*a2*lam^4*mu^12+89*a0^2*a2*lam^4*mu^11+76*a0^2*a2*lam^4*mu^10+39*a0^2*a2*lam^4*mu^9+28*a0^2*a2*lam^4*mu^8+92*a0^2*a2*lam^3*mu^20+11*a0^2*a2*lam^3*mu^19+46*a0^2*a2*lam^3*mu^18+23*a0^2*a2*lam^3*mu^17+12*a0^2*a2*lam^3*mu^16+84*a0^2*a2*lam^3*mu^15+10*a0^2*a",
+          "basis_sha256": "624bfd9689cbb140d2370b89d71f4f76070a79214d7040dab075d0a826501afb",
+          "basis_size": 3,
+          "boundary_test": {
+            "boundary_gcd_degree": 0,
+            "boundary_gcd_preview": "1",
+            "boundary_gcd_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+            "boundary_term_counts": [
+              643,
+              338,
+              452
+            ],
+            "elapsed_ticks": 0,
+            "engine": "unmixed_linear_boundary_gcd",
+            "input_sha256": "e7abd30cb12f460398a91d1e392ce3738bfedf8c4696ed2cc898f73ab0f29eb5",
+            "pivot": "a4",
+            "returncode": 0,
+            "saturated": 1,
+            "seconds": 0.015760499984025955,
+            "status": "completed",
+            "stderr": "",
+            "stdout_tail": "RESULT_BEGIN\nboundary_gcd_degree=0\nelapsed_ticks=0\nBOUNDARY_GCD_BEGIN\n1\nBOUNDARY_GCD_END\nRESULT_END\n",
+            "substitution": "0"
+          },
+          "dimension": 3,
+          "engine": "unmixed_linear_boundary_gcd",
+          "factor": "a4",
+          "factor_index": 3,
+          "factor_sha256": "4539e4b4889079c2a00afeae0bfc1439840ef2379a1fb81c8ba27361ad476d6b",
+          "quotient_dimension": -1,
+          "saturation_exponent": 0,
+          "seconds": 0.015760499984025955,
+          "status": "completed",
+          "unit": 0
+        },
+        {
+          "basis_preview": "57*a0^3*lam^16+98*a0^3*lam^15*mu+73*a0^3*lam^14*mu^2+97*a0^3*lam^13*mu^3+13*a0^3*lam^12*mu^4+90*a0^3*lam^11*mu^5+37*a0^3*lam^10*mu^6+77*a0^3*lam^9*mu^7+27*a0^3*lam^8*mu^8+77*a0^3*lam^7*mu^9+37*a0^3*lam^6*mu^10+90*a0^3*lam^5*mu^11+13*a0^3*lam^4*mu^12+97*a0^3*lam^3*mu^13+73*a0^3*lam^2*mu^14+98*a0^3*lam*mu^15+57*a0^3*mu^16+78*a0^2*a2*lam^16*mu^8+83*a0^2*a2*lam^16*mu^7+63*a0^2*a2*lam^16*mu^6+76*a0^2*a2*lam^16*mu^5+6*a0^2*a2*lam^16*mu^4+76*a0^2*a2*lam^16*mu^3+63*a0^2*a2*lam^16*mu^2+83*a0^2*a2*lam^16*mu+44*a0^2*a2*lam^16+74*a0^2*a2*lam^15*mu^9+5*a0^2*a2*lam^15*mu^8+23*a0^2*a2*lam^15*mu^7+48*a0^2*a2*lam^15*mu^6+28*a0^2*a2*lam^15*mu^5+74*a0^2*a2*lam^15*mu^4+51*a0^2*a2*lam^15*mu^3+65*a0^2*a2*lam^15*mu^2+84*a0^2*a2*lam^15*mu+92*a0^2*a2*lam^15+98*a0^2*a2*lam^14*mu^10+31*a0^2*a2*lam^14*mu^9+25*a0^2*a2*lam^14*mu^8+54*a0^2*a2*lam^14*mu^7+79*a0^2*a2*lam^14*mu^6+3*a0^2*a2*lam^14*mu^5+65*a0^2*a2*lam^14*mu^4+70*a0^2*a2*lam^14*mu^3+77*a0^2*a2*lam^14*mu^2+64*a0^2*a2*lam^14+10*a0^2*a2*lam^13*mu^11+33*a0^2*a2*lam^13*mu^10+22*a0^2*a2*lam^13*mu^9+53*a0^2*a2*lam^13*mu^8+8*a0^2*a2*lam^13*mu^7+10*a0^2*a2*lam^13*mu^6+84*a0^2*a2*lam^13*mu^5+12*a0^2*a2*lam^13*mu^4+75*a0^2*a2*lam^13*mu^3+46*a0^2*a2*lam^13*mu^2+11*a0^2*a2*lam^13*mu+92*a0^2*a2*lam^13+28*a0^2*a2*lam^12*mu^12+39*a0^2*a2*lam^12*mu^11+76*a0^2*a2*lam^12*mu^10+89*a0^2*a2*lam^12*mu^9+82*a0^2*a2*lam^12*mu^8+50*a0^2*a2*lam^12*mu^7+21*a0^2*a2*lam^12*mu^6+28*a0^2*a2*lam^12*mu^5+97*a0^2*a2*lam^12*mu^4+73*a0^2*a2*lam^12*mu^3+90*a0^2*a2*lam^12*mu^2+90*a0^2*a2*lam^12*mu+78*a0^2*a2*lam^12+36*a0^2*a2*lam^11*mu^13+4*a0^2*a2*lam^11*mu^12+45*a0^2*a2*lam^11*mu^11+36*a0^2*a2*lam^11*mu^10+47*a0^2*a2*lam^11*mu^9+62*a0^2*a2*lam^11*mu^8+53*a0^2*a2*lam^11*mu^7+12*a0^2*a2*lam^11*mu^6+92*a0^2*a2*lam^11*mu^5+44*a0^2*a2*lam^11*mu^4+16*a0^2*a2*lam^11*mu^3+26*a0^2*a2*lam^11*mu^2+74*a0^2*a2*lam^11*mu+59*a0^2*a2*lam^10*mu^14+91*a0^2*a2*lam^10*mu^13+43*a0^2*a2*lam^10*mu^12+67*a0^2*a2*lam^10*mu^11+45*a0^2*a2*lam^10*mu^10+49*a0^2*a2*lam^10*mu^9+99*a0^2*a2*lam^10*mu^8+20*a0^2*a2*lam^10*mu^7+91*a0^2*a2*lam^10*mu^6+85*a0^2*a2*lam^10*mu^5+85*a0^2*a2*lam^10*mu^3+98*a0^2*a2*lam^10*mu^2+36*a0^2*a2*lam^9*mu^15+82*a0^2*a2*lam^9*mu^14+82*a0^2*a2*lam^9*mu^13+40*a0^2*a2*lam^9*mu^12+66*a0^2*a2*lam^9*mu^11+88*a0^2*a2*lam^9*mu^10+41*a0^2*a2*lam^9*mu^9+80*a0^2*a2*lam^9*mu^8+5*a0^2*a2*lam^9*mu^7+97*a0^2*a2*lam^9*mu^6+79*a0^2*a2*lam^9*mu^5+10*a0^2*a2*lam^9*mu^4+10*a0^2*a2*lam^9*mu^3+28*a0^2*a2*lam^8*mu^16+36*a0^2*a2*lam^8*mu^15+68*a0^2*a2*lam^8*mu^14+9*a0^2*a2*lam^8*mu^13+7*a0^2*a2*lam^8*mu^12+26*a0^2*a2*lam^8*mu^11+56*a0^2*a2*lam^8*mu^10+26*a0^2*a2*lam^8*mu^9+60*a0^2*a2*lam^8*mu^8+9*a0^2*a2*lam^8*mu^7+68*a0^2*a2*lam^8*mu^6+36*a0^2*a2*lam^8*mu^5+28*a0^2*a2*lam^8*mu^4+10*a0^2*a2*lam^7*mu^17+10*a0^2*a2*lam^7*mu^16+79*a0^2*a2*lam^7*mu^15+97*a0^2*a2*lam^7*mu^14+97*a0^2*a2*lam^7*mu^13+80*a0^2*a2*lam^7*mu^12+41*a0^2*a2*lam^7*mu^11+88*a0^2*a2*lam^7*mu^10+75*a0^2*a2*lam^7*mu^9+40*a0^2*a2*lam^7*mu^8+82*a0^2*a2*lam^7*mu^7+82*a0^2*a2*lam^7*mu^6+36*a0^2*a2*lam^7*mu^5+98*a0^2*a2*lam^6*mu^18+85*a0^2*a2*lam^6*mu^17+85*a0^2*a2*lam^6*mu^15+67*a0^2*a2*lam^6*mu^14+20*a0^2*a2*lam^6*mu^13+99*a0^2*a2*lam^6*mu^12+49*a0^2*a2*lam^6*mu^11+69*a0^2*a2*lam^6*mu^10+67*a0^2*a2*lam^6*mu^9+43*a0^2*a2*lam^6*mu^8+91*a0^2*a2*lam^6*mu^7+59*a0^2*a2*lam^6*mu^6+74*a0^2*a2*lam^5*mu^19+26*a0^2*a2*lam^5*mu^18+16*a0^2*a2*lam^5*mu^17+44*a0^2*a2*lam^5*mu^16+50*a0^2*a2*lam^5*mu^15+12*a0^2*a2*lam^5*mu^14+53*a0^2*a2*lam^5*mu^13+62*a0^2*a2*lam^5*mu^12+89*a0^2*a2*lam^5*mu^11+36*a0^2*a2*lam^5*mu^10+45*a0^2*a2*lam^5*mu^9+4*a0^2*a2*lam^5*mu^8+36*a0^2*a2*lam^5*mu^7+78*a0^2*a2*lam^4*mu^20+90*a0^2*a2*lam^4*mu^19+90*a0^2*a2*lam^4*mu^18+73*a0^2*a2*lam^4*mu^17+64*a0^2*a2*lam^4*mu^16+28*a0^2*a2*lam^4*mu^15+21*a0^2*a2*lam^4*mu^14+50*a0^2*a2*lam^4*mu^13+14*a0^2*a2*lam^4*mu^12+89*a0^2*a2*lam^4*mu^11+76*a0^2*a2*lam^4*mu^10+39*a0^2*a2*lam^4*mu^9+28*a0^2*a2*lam^4*mu^8+92*a0^2*a2*lam^3*mu^20+11*a0^2*a2*lam^3*mu^19+46*a0^2*a2*lam^3*mu^18+23*a0^2*a2*lam^3*mu^17+12*a0^2*a2*lam^3*mu^16+84*a0^2*a2*lam^3*mu^15+10*a0^2*a",
+          "basis_sha256": "6ed874fa3ad6ddd4ab5421d4f292f4b2ef14ccfc202308e624465229e8b370ad",
+          "basis_size": 6,
+          "boundary_test": {
+            "boundary_gcd_degree": 1,
+            "boundary_gcd_preview": "a0",
+            "boundary_gcd_sha256": "4e1195df020de59e0d65a33a4279f1183e7ae4e5d980e309f8b55adff2e61c3e",
+            "boundary_term_counts": [
+              22,
+              99,
+              238
+            ],
+            "component_minor_boundary_screen": {
+              "boundary_coefficient_term_counts": [
+                22,
+                99,
+                238
+              ],
+              "boundary_linear_coefficient_term_counts": [
+                24,
+                103,
+                246
+              ],
+              "boundary_linear_common_gcd_degrees": [
+                1,
+                1,
+                1
+              ],
+              "boundary_residual_common_gcd_degrees": [
+                0,
+                1,
+                1
+              ],
+              "common_boundary_degree": 1,
+              "common_boundary_sha256": "4e1195df020de59e0d65a33a4279f1183e7ae4e5d980e309f8b55adff2e61c3e",
+              "coprime_boundary_minor_found": 0,
+              "elapsed_ticks": 0,
+              "engine": "component_minor_boundary_screen",
+              "forced_common_factor": 1,
+              "input_sha256": "a5abff680073dc48893069e0bdb9730978a0af3abcd64811c14dad5730e1127d",
+              "pairs": [],
+              "pairs_examined": 0,
+              "returncode": 0,
+              "seconds": 2.22609258396551,
+              "selected_generator_indices": [
+                0,
+                1,
+                2
+              ],
+              "selected_generator_sha256": [
+                "ed0e597a11ccf98a2f62d8f5a811d3be1a08fbf93b2ada18ed138394d5310af5",
+                "59175b960ae9659a60d7209a26d5c52e86c4e1e0e479f470e42e818470cf077a",
+                "fa71c8b5f9b3661bda93101660ec76948bdbc8da8144b247c143b5c5855df956"
+              ],
+              "selected_generator_term_counts": [
+                643,
+                7298,
+                15170
+              ],
+              "status": "completed",
+              "stderr": "",
+              "stdout_tail": "RESULT_BEGIN\nelapsed_ticks=0\npairs_examined=0\nforced_common_factor=1\nA_GCD_0=1\nA_GCD_1=1\nA_GCD_2=1\nB_GCD_0=0\nB_GCD_1=1\nB_GCD_2=1\nRESULT_END\n"
+            },
+            "component_minor_sequence": {
+              "engine": "iterated_two_generator_component_minors",
+              "generators_added": 3,
+              "layers": [
+                {
+                  "boundary_gcd_degree_before": 1,
+                  "index": 1,
+                  "minor_step": {
+                    "boundary_coefficient_term_counts": [
+                      22,
+                      99,
+                      238
+                    ],
+                    "common_boundary_degree": 1,
+                    "common_boundary_sha256": "4e1195df020de59e0d65a33a4279f1183e7ae4e5d980e309f8b55adff2e61c3e",
+                    "engine": "two_generator_component_minors",
+                    "input_generators": 3,
+                    "linear_coefficient_term_counts": [
+                      621,
+                      7199,
+                      14932
+                    ],
+                    "minor_count": 1,
+                    "minor_sha256": [
+                      "87e53847099b42dfbb59e2f5626fb08de2244738fa0cafa0cc143ecdb550368a"
+                    ],
+                    "minor_term_counts": [
+                      24464
+                    ],
+                    "minor_total_degrees": [
+                      79
+                    ],
+                    "multiplication_identities_by_construction": 2,
+                    "multiplication_seconds": 0.09580308303702623,
+                    "seconds": 1.5055914579425007,
+                    "selected_generator_indices": [
+                      0,
+                      1,
+                      2
+                    ],
+                    "selected_generator_sha256": [
+                      "ed0e597a11ccf98a2f62d8f5a811d3be1a08fbf93b2ada18ed138394d5310af5",
+                      "59175b960ae9659a60d7209a26d5c52e86c4e1e0e479f470e42e818470cf077a",
+                      "fa71c8b5f9b3661bda93101660ec76948bdbc8da8144b247c143b5c5855df956"
+                    ],
+                    "selected_generator_term_counts": [
+                      643,
+                      7298,
+                      15170
+                    ],
+                    "selected_minor_pair": [
+                      0,
+                      1
+                    ],
+                    "status": "completed"
+                  },
+                  "post_boundary_test": {
+                    "boundary_gcd_degree": 1,
+                    "boundary_gcd_preview": "a0",
+                    "boundary_gcd_sha256": "4e1195df020de59e0d65a33a4279f1183e7ae4e5d980e309f8b55adff2e61c3e",
+                    "boundary_term_counts": [
+                      22,
+                      99,
+                      238,
+                      388
+                    ],
+                    "elapsed_ticks": 0,
+                    "engine": "unmixed_linear_boundary_gcd",
+                    "input_sha256": "dc1915121243a62bdaba351e7b85c9c21bf93b77249b0706557229064148bea3",
+                    "pivot": "lam",
+                    "returncode": 0,
+                    "saturated": 0,
+                    "seconds": 0.01595037488732487,
+                    "status": "completed",
+                    "stderr": "",
+                    "stdout_tail": "RESULT_BEGIN\nboundary_gcd_degree=1\nelapsed_ticks=0\nBOUNDARY_GCD_BEGIN\na0\nBOUNDARY_GCD_END\nRESULT_END\n",
+                    "substitution": "0"
+                  }
+                },
+                {
+                  "boundary_gcd_degree_before": 1,
+                  "index": 2,
+                  "minor_step": {
+                    "boundary_coefficient_term_counts": [
+                      22,
+                      99,
+                      238
+                    ],
+                    "common_boundary_degree": 1,
+                    "common_boundary_sha256": "4e1195df020de59e0d65a33a4279f1183e7ae4e5d980e309f8b55adff2e61c3e",
+                    "engine": "two_generator_component_minors",
+                    "input_generators": 4,
+                    "linear_coefficient_term_counts": [
+                      621,
+                      7199,
+                      14932
+                    ],
+                    "minor_count": 1,
+                    "minor_sha256": [
+                      "e309510ab03335aa03522f67925b2874ace65fbef58c73f03f4b280000e80b43"
+                    ],
+                    "minor_term_counts": [
+                      45702
+                    ],
+                    "minor_total_degrees": [
+                      84
+                    ],
+                    "multiplication_identities_by_construction": 2,
+                    "multiplication_seconds": 0.22999816690571606,
+                    "seconds": 2.034381665987894,
+                    "selected_generator_indices": [
+                      0,
+                      1,
+                      2
+                    ],
+                    "selected_generator_sha256": [
+                      "ed0e597a11ccf98a2f62d8f5a811d3be1a08fbf93b2ada18ed138394d5310af5",
+                      "59175b960ae9659a60d7209a26d5c52e86c4e1e0e479f470e42e818470cf077a",
+                      "fa71c8b5f9b3661bda93101660ec76948bdbc8da8144b247c143b5c5855df956"
+                    ],
+                    "selected_generator_term_counts": [
+                      643,
+                      7298,
+                      15170
+                    ],
+                    "selected_minor_pair": [
+                      0,
+                      2
+                    ],
+                    "status": "completed"
+                  },
+                  "post_boundary_test": {
+                    "boundary_gcd_degree": 1,
+                    "boundary_gcd_preview": "a0",
+                    "boundary_gcd_sha256": "4e1195df020de59e0d65a33a4279f1183e7ae4e5d980e309f8b55adff2e61c3e",
+                    "boundary_term_counts": [
+                      22,
+                      99,
+                      238,
+                      388,
+                      815
+                    ],
+                    "elapsed_ticks": 0,
+                    "engine": "unmixed_linear_boundary_gcd",
+                    "input_sha256": "24466e6a68d7fd9058fe1fc2bcb1665203b0b1bac7023d0334929f442cd5b256",
+                    "pivot": "lam",
+                    "returncode": 0,
+                    "saturated": 0,
+                    "seconds": 0.017147041973657906,
+                    "status": "completed",
+                    "stderr": "",
+                    "stdout_tail": "RESULT_BEGIN\nboundary_gcd_degree=1\nelapsed_ticks=0\nBOUNDARY_GCD_BEGIN\na0\nBOUNDARY_GCD_END\nRESULT_END\n",
+                    "substitution": "0"
+                  }
+                },
+                {
+                  "boundary_gcd_degree_before": 1,
+                  "index": 3,
+                  "minor_step": {
+                    "boundary_coefficient_term_counts": [
+                      22,
+                      99,
+                      238
+                    ],
+                    "common_boundary_degree": 1,
+                    "common_boundary_sha256": "4e1195df020de59e0d65a33a4279f1183e7ae4e5d980e309f8b55adff2e61c3e",
+                    "engine": "two_generator_component_minors",
+                    "input_generators": 5,
+                    "linear_coefficient_term_counts": [
+                      621,
+                      7199,
+                      14932
+                    ],
+                    "minor_count": 1,
+                    "minor_sha256": [
+                      "a16e3ce9a06fa2b20ccfcc9246d8ac735915a6c1385dece817948ae99e428f76"
+                    ],
+                    "minor_term_counts": [
+                      98155
+                    ],
+                    "minor_total_degrees": [
+                      104
+                    ],
+                    "multiplication_identities_by_construction": 2,
+                    "multiplication_seconds": 1.0951525000855327,
+                    "seconds": 3.5543929579434916,
+                    "selected_generator_indices": [
+                      0,
+                      1,
+                      2
+                    ],
+                    "selected_generator_sha256": [
+                      "ed0e597a11ccf98a2f62d8f5a811d3be1a08fbf93b2ada18ed138394d5310af5",
+                      "59175b960ae9659a60d7209a26d5c52e86c4e1e0e479f470e42e818470cf077a",
+                      "fa71c8b5f9b3661bda93101660ec76948bdbc8da8144b247c143b5c5855df956"
+                    ],
+                    "selected_generator_term_counts": [
+                      643,
+                      7298,
+                      15170
+                    ],
+                    "selected_minor_pair": [
+                      1,
+                      2
+                    ],
+                    "status": "completed"
+                  },
+                  "post_boundary_test": {
+                    "boundary_gcd_degree": 1,
+                    "boundary_gcd_preview": "a0",
+                    "boundary_gcd_sha256": "4e1195df020de59e0d65a33a4279f1183e7ae4e5d980e309f8b55adff2e61c3e",
+                    "boundary_term_counts": [
+                      22,
+                      99,
+                      238,
+                      388,
+                      815,
+                      1642
+                    ],
+                    "elapsed_ticks": 0,
+                    "engine": "unmixed_linear_boundary_gcd",
+                    "input_sha256": "8b16631d3a3b905cec04e9682252b7555f68e447edef28c016ec6ed3616b67d8",
+                    "pivot": "lam",
+                    "returncode": 0,
+                    "saturated": 0,
+                    "seconds": 0.019527583965100348,
+                    "status": "completed",
+                    "stderr": "",
+                    "stdout_tail": "RESULT_BEGIN\nboundary_gcd_degree=1\nelapsed_ticks=0\nBOUNDARY_GCD_BEGIN\na0\nBOUNDARY_GCD_END\nRESULT_END\n",
+                    "substitution": "0"
+                  }
+                },
+                {
+                  "boundary_gcd_degree_before": 1,
+                  "index": 4,
+                  "minor_step": {
+                    "boundary_coefficient_term_counts": [
+                      22,
+                      99,
+                      238
+                    ],
+                    "common_boundary_degree": 1,
+                    "common_boundary_sha256": "4e1195df020de59e0d65a33a4279f1183e7ae4e5d980e309f8b55adff2e61c3e",
+                    "engine": "two_generator_component_minors",
+                    "input_generators": 6,
+                    "linear_coefficient_term_counts": [
+                      621,
+                      7199,
+                      14932
+                    ],
+                    "minor_count": 0,
+                    "minor_sha256": [],
+                    "minor_term_counts": [],
+                    "minor_total_degrees": [],
+                    "multiplication_identities_by_construction": 0,
+                    "multiplication_seconds": 0.0,
+                    "seconds": 1.0575476669473574,
+                    "selected_generator_indices": [
+                      0,
+                      1,
+                      2
+                    ],
+                    "selected_generator_sha256": [
+                      "ed0e597a11ccf98a2f62d8f5a811d3be1a08fbf93b2ada18ed138394d5310af5",
+                      "59175b960ae9659a60d7209a26d5c52e86c4e1e0e479f470e42e818470cf077a",
+                      "fa71c8b5f9b3661bda93101660ec76948bdbc8da8144b247c143b5c5855df956"
+                    ],
+                    "selected_generator_term_counts": [
+                      643,
+                      7298,
+                      15170
+                    ],
+                    "selected_minor_pair": null,
+                    "status": "failed"
+                  }
+                }
+              ],
+              "seconds": 8.204538749647327,
+              "status": "partial",
+              "steps": 4
+            },
+            "component_support_exponents": {
+              "a0": 1
+            },
+            "elapsed_ticks": 0,
+            "engine": "unmixed_linear_boundary_gcd",
+            "input_sha256": "02f3185eb3aaeec7697105f5fb2f0844a2b775c4c8a51f38e9f8cf676b24a992",
+            "pivot": "lam",
+            "returncode": 0,
+            "saturated": 0,
+            "seconds": 0.014611999969929457,
+            "status": "completed",
+            "stderr": "",
+            "stdout_tail": "RESULT_BEGIN\nboundary_gcd_degree=1\nelapsed_ticks=0\nBOUNDARY_GCD_BEGIN\na0\nBOUNDARY_GCD_END\nRESULT_END\n",
+            "substitution": "0"
+          },
+          "deferred_support_exponents": {
+            "a0": 1
+          },
+          "dimension": 3,
+          "engine": "boundary_gcd_supported_on_localization_factors",
+          "factor": "lam",
+          "factor_index": 4,
+          "factor_sha256": "7f1b55b860590406f84f9394f4e73356902dad022a8cd6f43221086d3c70699e",
+          "quotient_dimension": -1,
+          "saturation_exponent_lower_bound": 0,
+          "seconds": 0.014611999969929457,
+          "status": "deferred",
+          "unit": 0
+        },
+        {
+          "basis_preview": "57*a0^3*lam^16+98*a0^3*lam^15*mu+73*a0^3*lam^14*mu^2+97*a0^3*lam^13*mu^3+13*a0^3*lam^12*mu^4+90*a0^3*lam^11*mu^5+37*a0^3*lam^10*mu^6+77*a0^3*lam^9*mu^7+27*a0^3*lam^8*mu^8+77*a0^3*lam^7*mu^9+37*a0^3*lam^6*mu^10+90*a0^3*lam^5*mu^11+13*a0^3*lam^4*mu^12+97*a0^3*lam^3*mu^13+73*a0^3*lam^2*mu^14+98*a0^3*lam*mu^15+57*a0^3*mu^16+78*a0^2*a2*lam^16*mu^8+83*a0^2*a2*lam^16*mu^7+63*a0^2*a2*lam^16*mu^6+76*a0^2*a2*lam^16*mu^5+6*a0^2*a2*lam^16*mu^4+76*a0^2*a2*lam^16*mu^3+63*a0^2*a2*lam^16*mu^2+83*a0^2*a2*lam^16*mu+44*a0^2*a2*lam^16+74*a0^2*a2*lam^15*mu^9+5*a0^2*a2*lam^15*mu^8+23*a0^2*a2*lam^15*mu^7+48*a0^2*a2*lam^15*mu^6+28*a0^2*a2*lam^15*mu^5+74*a0^2*a2*lam^15*mu^4+51*a0^2*a2*lam^15*mu^3+65*a0^2*a2*lam^15*mu^2+84*a0^2*a2*lam^15*mu+92*a0^2*a2*lam^15+98*a0^2*a2*lam^14*mu^10+31*a0^2*a2*lam^14*mu^9+25*a0^2*a2*lam^14*mu^8+54*a0^2*a2*lam^14*mu^7+79*a0^2*a2*lam^14*mu^6+3*a0^2*a2*lam^14*mu^5+65*a0^2*a2*lam^14*mu^4+70*a0^2*a2*lam^14*mu^3+77*a0^2*a2*lam^14*mu^2+64*a0^2*a2*lam^14+10*a0^2*a2*lam^13*mu^11+33*a0^2*a2*lam^13*mu^10+22*a0^2*a2*lam^13*mu^9+53*a0^2*a2*lam^13*mu^8+8*a0^2*a2*lam^13*mu^7+10*a0^2*a2*lam^13*mu^6+84*a0^2*a2*lam^13*mu^5+12*a0^2*a2*lam^13*mu^4+75*a0^2*a2*lam^13*mu^3+46*a0^2*a2*lam^13*mu^2+11*a0^2*a2*lam^13*mu+92*a0^2*a2*lam^13+28*a0^2*a2*lam^12*mu^12+39*a0^2*a2*lam^12*mu^11+76*a0^2*a2*lam^12*mu^10+89*a0^2*a2*lam^12*mu^9+82*a0^2*a2*lam^12*mu^8+50*a0^2*a2*lam^12*mu^7+21*a0^2*a2*lam^12*mu^6+28*a0^2*a2*lam^12*mu^5+97*a0^2*a2*lam^12*mu^4+73*a0^2*a2*lam^12*mu^3+90*a0^2*a2*lam^12*mu^2+90*a0^2*a2*lam^12*mu+78*a0^2*a2*lam^12+36*a0^2*a2*lam^11*mu^13+4*a0^2*a2*lam^11*mu^12+45*a0^2*a2*lam^11*mu^11+36*a0^2*a2*lam^11*mu^10+47*a0^2*a2*lam^11*mu^9+62*a0^2*a2*lam^11*mu^8+53*a0^2*a2*lam^11*mu^7+12*a0^2*a2*lam^11*mu^6+92*a0^2*a2*lam^11*mu^5+44*a0^2*a2*lam^11*mu^4+16*a0^2*a2*lam^11*mu^3+26*a0^2*a2*lam^11*mu^2+74*a0^2*a2*lam^11*mu+59*a0^2*a2*lam^10*mu^14+91*a0^2*a2*lam^10*mu^13+43*a0^2*a2*lam^10*mu^12+67*a0^2*a2*lam^10*mu^11+45*a0^2*a2*lam^10*mu^10+49*a0^2*a2*lam^10*mu^9+99*a0^2*a2*lam^10*mu^8+20*a0^2*a2*lam^10*mu^7+91*a0^2*a2*lam^10*mu^6+85*a0^2*a2*lam^10*mu^5+85*a0^2*a2*lam^10*mu^3+98*a0^2*a2*lam^10*mu^2+36*a0^2*a2*lam^9*mu^15+82*a0^2*a2*lam^9*mu^14+82*a0^2*a2*lam^9*mu^13+40*a0^2*a2*lam^9*mu^12+66*a0^2*a2*lam^9*mu^11+88*a0^2*a2*lam^9*mu^10+41*a0^2*a2*lam^9*mu^9+80*a0^2*a2*lam^9*mu^8+5*a0^2*a2*lam^9*mu^7+97*a0^2*a2*lam^9*mu^6+79*a0^2*a2*lam^9*mu^5+10*a0^2*a2*lam^9*mu^4+10*a0^2*a2*lam^9*mu^3+28*a0^2*a2*lam^8*mu^16+36*a0^2*a2*lam^8*mu^15+68*a0^2*a2*lam^8*mu^14+9*a0^2*a2*lam^8*mu^13+7*a0^2*a2*lam^8*mu^12+26*a0^2*a2*lam^8*mu^11+56*a0^2*a2*lam^8*mu^10+26*a0^2*a2*lam^8*mu^9+60*a0^2*a2*lam^8*mu^8+9*a0^2*a2*lam^8*mu^7+68*a0^2*a2*lam^8*mu^6+36*a0^2*a2*lam^8*mu^5+28*a0^2*a2*lam^8*mu^4+10*a0^2*a2*lam^7*mu^17+10*a0^2*a2*lam^7*mu^16+79*a0^2*a2*lam^7*mu^15+97*a0^2*a2*lam^7*mu^14+97*a0^2*a2*lam^7*mu^13+80*a0^2*a2*lam^7*mu^12+41*a0^2*a2*lam^7*mu^11+88*a0^2*a2*lam^7*mu^10+75*a0^2*a2*lam^7*mu^9+40*a0^2*a2*lam^7*mu^8+82*a0^2*a2*lam^7*mu^7+82*a0^2*a2*lam^7*mu^6+36*a0^2*a2*lam^7*mu^5+98*a0^2*a2*lam^6*mu^18+85*a0^2*a2*lam^6*mu^17+85*a0^2*a2*lam^6*mu^15+67*a0^2*a2*lam^6*mu^14+20*a0^2*a2*lam^6*mu^13+99*a0^2*a2*lam^6*mu^12+49*a0^2*a2*lam^6*mu^11+69*a0^2*a2*lam^6*mu^10+67*a0^2*a2*lam^6*mu^9+43*a0^2*a2*lam^6*mu^8+91*a0^2*a2*lam^6*mu^7+59*a0^2*a2*lam^6*mu^6+74*a0^2*a2*lam^5*mu^19+26*a0^2*a2*lam^5*mu^18+16*a0^2*a2*lam^5*mu^17+44*a0^2*a2*lam^5*mu^16+50*a0^2*a2*lam^5*mu^15+12*a0^2*a2*lam^5*mu^14+53*a0^2*a2*lam^5*mu^13+62*a0^2*a2*lam^5*mu^12+89*a0^2*a2*lam^5*mu^11+36*a0^2*a2*lam^5*mu^10+45*a0^2*a2*lam^5*mu^9+4*a0^2*a2*lam^5*mu^8+36*a0^2*a2*lam^5*mu^7+78*a0^2*a2*lam^4*mu^20+90*a0^2*a2*lam^4*mu^19+90*a0^2*a2*lam^4*mu^18+73*a0^2*a2*lam^4*mu^17+64*a0^2*a2*lam^4*mu^16+28*a0^2*a2*lam^4*mu^15+21*a0^2*a2*lam^4*mu^14+50*a0^2*a2*lam^4*mu^13+14*a0^2*a2*lam^4*mu^12+89*a0^2*a2*lam^4*mu^11+76*a0^2*a2*lam^4*mu^10+39*a0^2*a2*lam^4*mu^9+28*a0^2*a2*lam^4*mu^8+92*a0^2*a2*lam^3*mu^20+11*a0^2*a2*lam^3*mu^19+46*a0^2*a2*lam^3*mu^18+23*a0^2*a2*lam^3*mu^17+12*a0^2*a2*lam^3*mu^16+84*a0^2*a2*lam^3*mu^15+10*a0^2*a",
+          "basis_sha256": "6ed874fa3ad6ddd4ab5421d4f292f4b2ef14ccfc202308e624465229e8b370ad",
+          "basis_size": 6,
+          "boundary_test": {
+            "boundary_gcd_degree": 0,
+            "boundary_gcd_preview": "1",
+            "boundary_gcd_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+            "boundary_term_counts": [
+              11,
+              569,
+              865,
+              59,
+              85,
+              2261
+            ],
+            "elapsed_ticks": 0,
+            "engine": "unmixed_linear_boundary_gcd",
+            "input_sha256": "4a0875b4d4425806d6cee39988bcca178785422c9c2d1bb6932f1b315826170d",
+            "pivot": "mu",
+            "returncode": 0,
+            "saturated": 1,
+            "seconds": 0.0206736660329625,
+            "status": "completed",
+            "stderr": "",
+            "stdout_tail": "RESULT_BEGIN\nboundary_gcd_degree=0\nelapsed_ticks=0\nBOUNDARY_GCD_BEGIN\n1\nBOUNDARY_GCD_END\nRESULT_END\n",
+            "substitution": "0"
+          },
+          "dimension": 3,
+          "engine": "unmixed_linear_boundary_gcd",
+          "factor": "mu",
+          "factor_index": 5,
+          "factor_sha256": "19503ea6785ee1243cd3373fe0d201404089fb7c559d2cd4b025585ee36ff3c3",
+          "quotient_dimension": -1,
+          "saturation_exponent": 0,
+          "seconds": 0.0206736660329625,
+          "status": "completed",
+          "unit": 0
+        },
+        {
+          "basis_preview": "57*a0^3*lam^16+98*a0^3*lam^15*mu+73*a0^3*lam^14*mu^2+97*a0^3*lam^13*mu^3+13*a0^3*lam^12*mu^4+90*a0^3*lam^11*mu^5+37*a0^3*lam^10*mu^6+77*a0^3*lam^9*mu^7+27*a0^3*lam^8*mu^8+77*a0^3*lam^7*mu^9+37*a0^3*lam^6*mu^10+90*a0^3*lam^5*mu^11+13*a0^3*lam^4*mu^12+97*a0^3*lam^3*mu^13+73*a0^3*lam^2*mu^14+98*a0^3*lam*mu^15+57*a0^3*mu^16+78*a0^2*a2*lam^16*mu^8+83*a0^2*a2*lam^16*mu^7+63*a0^2*a2*lam^16*mu^6+76*a0^2*a2*lam^16*mu^5+6*a0^2*a2*lam^16*mu^4+76*a0^2*a2*lam^16*mu^3+63*a0^2*a2*lam^16*mu^2+83*a0^2*a2*lam^16*mu+44*a0^2*a2*lam^16+74*a0^2*a2*lam^15*mu^9+5*a0^2*a2*lam^15*mu^8+23*a0^2*a2*lam^15*mu^7+48*a0^2*a2*lam^15*mu^6+28*a0^2*a2*lam^15*mu^5+74*a0^2*a2*lam^15*mu^4+51*a0^2*a2*lam^15*mu^3+65*a0^2*a2*lam^15*mu^2+84*a0^2*a2*lam^15*mu+92*a0^2*a2*lam^15+98*a0^2*a2*lam^14*mu^10+31*a0^2*a2*lam^14*mu^9+25*a0^2*a2*lam^14*mu^8+54*a0^2*a2*lam^14*mu^7+79*a0^2*a2*lam^14*mu^6+3*a0^2*a2*lam^14*mu^5+65*a0^2*a2*lam^14*mu^4+70*a0^2*a2*lam^14*mu^3+77*a0^2*a2*lam^14*mu^2+64*a0^2*a2*lam^14+10*a0^2*a2*lam^13*mu^11+33*a0^2*a2*lam^13*mu^10+22*a0^2*a2*lam^13*mu^9+53*a0^2*a2*lam^13*mu^8+8*a0^2*a2*lam^13*mu^7+10*a0^2*a2*lam^13*mu^6+84*a0^2*a2*lam^13*mu^5+12*a0^2*a2*lam^13*mu^4+75*a0^2*a2*lam^13*mu^3+46*a0^2*a2*lam^13*mu^2+11*a0^2*a2*lam^13*mu+92*a0^2*a2*lam^13+28*a0^2*a2*lam^12*mu^12+39*a0^2*a2*lam^12*mu^11+76*a0^2*a2*lam^12*mu^10+89*a0^2*a2*lam^12*mu^9+82*a0^2*a2*lam^12*mu^8+50*a0^2*a2*lam^12*mu^7+21*a0^2*a2*lam^12*mu^6+28*a0^2*a2*lam^12*mu^5+97*a0^2*a2*lam^12*mu^4+73*a0^2*a2*lam^12*mu^3+90*a0^2*a2*lam^12*mu^2+90*a0^2*a2*lam^12*mu+78*a0^2*a2*lam^12+36*a0^2*a2*lam^11*mu^13+4*a0^2*a2*lam^11*mu^12+45*a0^2*a2*lam^11*mu^11+36*a0^2*a2*lam^11*mu^10+47*a0^2*a2*lam^11*mu^9+62*a0^2*a2*lam^11*mu^8+53*a0^2*a2*lam^11*mu^7+12*a0^2*a2*lam^11*mu^6+92*a0^2*a2*lam^11*mu^5+44*a0^2*a2*lam^11*mu^4+16*a0^2*a2*lam^11*mu^3+26*a0^2*a2*lam^11*mu^2+74*a0^2*a2*lam^11*mu+59*a0^2*a2*lam^10*mu^14+91*a0^2*a2*lam^10*mu^13+43*a0^2*a2*lam^10*mu^12+67*a0^2*a2*lam^10*mu^11+45*a0^2*a2*lam^10*mu^10+49*a0^2*a2*lam^10*mu^9+99*a0^2*a2*lam^10*mu^8+20*a0^2*a2*lam^10*mu^7+91*a0^2*a2*lam^10*mu^6+85*a0^2*a2*lam^10*mu^5+85*a0^2*a2*lam^10*mu^3+98*a0^2*a2*lam^10*mu^2+36*a0^2*a2*lam^9*mu^15+82*a0^2*a2*lam^9*mu^14+82*a0^2*a2*lam^9*mu^13+40*a0^2*a2*lam^9*mu^12+66*a0^2*a2*lam^9*mu^11+88*a0^2*a2*lam^9*mu^10+41*a0^2*a2*lam^9*mu^9+80*a0^2*a2*lam^9*mu^8+5*a0^2*a2*lam^9*mu^7+97*a0^2*a2*lam^9*mu^6+79*a0^2*a2*lam^9*mu^5+10*a0^2*a2*lam^9*mu^4+10*a0^2*a2*lam^9*mu^3+28*a0^2*a2*lam^8*mu^16+36*a0^2*a2*lam^8*mu^15+68*a0^2*a2*lam^8*mu^14+9*a0^2*a2*lam^8*mu^13+7*a0^2*a2*lam^8*mu^12+26*a0^2*a2*lam^8*mu^11+56*a0^2*a2*lam^8*mu^10+26*a0^2*a2*lam^8*mu^9+60*a0^2*a2*lam^8*mu^8+9*a0^2*a2*lam^8*mu^7+68*a0^2*a2*lam^8*mu^6+36*a0^2*a2*lam^8*mu^5+28*a0^2*a2*lam^8*mu^4+10*a0^2*a2*lam^7*mu^17+10*a0^2*a2*lam^7*mu^16+79*a0^2*a2*lam^7*mu^15+97*a0^2*a2*lam^7*mu^14+97*a0^2*a2*lam^7*mu^13+80*a0^2*a2*lam^7*mu^12+41*a0^2*a2*lam^7*mu^11+88*a0^2*a2*lam^7*mu^10+75*a0^2*a2*lam^7*mu^9+40*a0^2*a2*lam^7*mu^8+82*a0^2*a2*lam^7*mu^7+82*a0^2*a2*lam^7*mu^6+36*a0^2*a2*lam^7*mu^5+98*a0^2*a2*lam^6*mu^18+85*a0^2*a2*lam^6*mu^17+85*a0^2*a2*lam^6*mu^15+67*a0^2*a2*lam^6*mu^14+20*a0^2*a2*lam^6*mu^13+99*a0^2*a2*lam^6*mu^12+49*a0^2*a2*lam^6*mu^11+69*a0^2*a2*lam^6*mu^10+67*a0^2*a2*lam^6*mu^9+43*a0^2*a2*lam^6*mu^8+91*a0^2*a2*lam^6*mu^7+59*a0^2*a2*lam^6*mu^6+74*a0^2*a2*lam^5*mu^19+26*a0^2*a2*lam^5*mu^18+16*a0^2*a2*lam^5*mu^17+44*a0^2*a2*lam^5*mu^16+50*a0^2*a2*lam^5*mu^15+12*a0^2*a2*lam^5*mu^14+53*a0^2*a2*lam^5*mu^13+62*a0^2*a2*lam^5*mu^12+89*a0^2*a2*lam^5*mu^11+36*a0^2*a2*lam^5*mu^10+45*a0^2*a2*lam^5*mu^9+4*a0^2*a2*lam^5*mu^8+36*a0^2*a2*lam^5*mu^7+78*a0^2*a2*lam^4*mu^20+90*a0^2*a2*lam^4*mu^19+90*a0^2*a2*lam^4*mu^18+73*a0^2*a2*lam^4*mu^17+64*a0^2*a2*lam^4*mu^16+28*a0^2*a2*lam^4*mu^15+21*a0^2*a2*lam^4*mu^14+50*a0^2*a2*lam^4*mu^13+14*a0^2*a2*lam^4*mu^12+89*a0^2*a2*lam^4*mu^11+76*a0^2*a2*lam^4*mu^10+39*a0^2*a2*lam^4*mu^9+28*a0^2*a2*lam^4*mu^8+92*a0^2*a2*lam^3*mu^20+11*a0^2*a2*lam^3*mu^19+46*a0^2*a2*lam^3*mu^18+23*a0^2*a2*lam^3*mu^17+12*a0^2*a2*lam^3*mu^16+84*a0^2*a2*lam^3*mu^15+10*a0^2*a",
+          "basis_sha256": "4cd530d1998f96eb55a7c6b18a7793ed8fdfbf7fe7f303e8bcb7da205a0c4032",
+          "basis_size": 6,
+          "boundary_test": {
+            "boundary_gcd_degree": 18,
+            "boundary_gcd_preview": "a0^2*lam^16-10*a0^2*lam^15-18*a0*lam^16+45*a0^2*lam^14+5*a0^3*lam^12-19*a0^2*lam^13+41*a0^3*lam^11+8*a0^2*lam^12+27*a0^3*lam^10-50*a0^2*lam^11+11*a0^3*lam^9+8*a0^2*lam^10-50*a0^3*lam^8-19*a0^2*lam^9-21*a0^3*lam^7+45*a0^2*lam^8-26*a0^3*lam^6-10*a0^2*lam^7-21*a0^3*lam^5+a0^2*lam^6-50*a0^3*lam^4+11*a0^3*lam^3+27*a0^3*lam^2+41*a0^3*lam+5*a0^3",
+            "boundary_gcd_sha256": "c04bf7dc909574e8b53448dde047be3b8e7af211291b6ad897976046ae8dc9f2",
+            "boundary_term_counts": [
+              325,
+              2724,
+              3119,
+              6109,
+              6873,
+              18253
+            ],
+            "elapsed_ticks": 0,
+            "engine": "unmixed_linear_boundary_gcd",
+            "input_sha256": "163d58339278238d54803423b097f28c905be7e74ecb66ce553316c2a1b02954",
+            "pivot": "a2",
+            "returncode": 0,
+            "saturated": 0,
+            "seconds": 0.07457191706635058,
+            "status": "completed",
+            "stderr": "",
+            "stdout_tail": "RESULT_BEGIN\nboundary_gcd_degree=18\nelapsed_ticks=0\nBOUNDARY_GCD_BEGIN\na0^2*lam^16-10*a0^2*lam^15-18*a0*lam^16+45*a0^2*lam^14+5*a0^3*lam^12-19*a0^2*lam^13+41*a0^3*lam^11+8*a0^2*lam^12+27*a0^3*lam^10-50*a0^2*lam^11+11*a0^3*lam^9+8*a0^2*lam^10-50*a0^3*lam^8-19*a0^2*lam^9-21*a0^3*lam^7+45*a0^2*lam^8-26*a0^3*lam^6-10*a0^2*lam^7-21*a0^3*lam^5+a0^2*lam^6-50*a0^3*lam^4+11*a0^3*lam^3+27*a0^3*lam^2+41*a0^3*lam+5*a0^3\nBOUNDARY_GCD_END\nRESULT_END\n",
+            "substitution": "-143*a0/60"
+          },
+          "deferred_support_exponents": {
+            "38*a0*a2*lam**12 - 456*a0*a2*lam**11 + 2508*a0*a2*lam**10 - 8360*a0*a2*lam**9 + 18810*a0*a2*lam**8 - 30096*a0*a2*lam**7 + 35112*a0*a2*lam**6 - 30096*a0*a2*lam**5 + 18810*a0*a2*lam**4 - 8360*a0*a2*lam**3 + 2508*a0*a2*lam**2 - 456*a0*a2*lam + 38*a0*a2 + 48*a2*lam**16 - 480*a2*lam**15 + 2160*a2*lam**14 - 5760*a2*lam**13 + 10080*a2*lam**12 - 12096*a2*lam**11 + 10080*a2*lam**10 - 5760*a2*lam**9 + 2160*a2*lam**8 - 480*a2*lam**7 + 48*a2*lam**6 + 19*lam**16": 1,
+            "a0": 1
+          },
+          "dimension": 3,
+          "engine": "boundary_gcd_supported_on_localization_factors",
+          "factor": "143*a0 + 60*a2",
+          "factor_index": 6,
+          "factor_sha256": "d3682817bfcb3b703de3df6c9f09f188b151d624a829fd6f163619ca57e4a121",
+          "quotient_dimension": -1,
+          "saturation_exponent_lower_bound": 0,
+          "seconds": 0.07457191706635058,
+          "status": "deferred",
+          "unit": 0
+        },
+        {
+          "basis_preview": "57*a0^3*lam^16+98*a0^3*lam^15*mu+73*a0^3*lam^14*mu^2+97*a0^3*lam^13*mu^3+13*a0^3*lam^12*mu^4+90*a0^3*lam^11*mu^5+37*a0^3*lam^10*mu^6+77*a0^3*lam^9*mu^7+27*a0^3*lam^8*mu^8+77*a0^3*lam^7*mu^9+37*a0^3*lam^6*mu^10+90*a0^3*lam^5*mu^11+13*a0^3*lam^4*mu^12+97*a0^3*lam^3*mu^13+73*a0^3*lam^2*mu^14+98*a0^3*lam*mu^15+57*a0^3*mu^16+78*a0^2*a2*lam^16*mu^8+83*a0^2*a2*lam^16*mu^7+63*a0^2*a2*lam^16*mu^6+76*a0^2*a2*lam^16*mu^5+6*a0^2*a2*lam^16*mu^4+76*a0^2*a2*lam^16*mu^3+63*a0^2*a2*lam^16*mu^2+83*a0^2*a2*lam^16*mu+44*a0^2*a2*lam^16+74*a0^2*a2*lam^15*mu^9+5*a0^2*a2*lam^15*mu^8+23*a0^2*a2*lam^15*mu^7+48*a0^2*a2*lam^15*mu^6+28*a0^2*a2*lam^15*mu^5+74*a0^2*a2*lam^15*mu^4+51*a0^2*a2*lam^15*mu^3+65*a0^2*a2*lam^15*mu^2+84*a0^2*a2*lam^15*mu+92*a0^2*a2*lam^15+98*a0^2*a2*lam^14*mu^10+31*a0^2*a2*lam^14*mu^9+25*a0^2*a2*lam^14*mu^8+54*a0^2*a2*lam^14*mu^7+79*a0^2*a2*lam^14*mu^6+3*a0^2*a2*lam^14*mu^5+65*a0^2*a2*lam^14*mu^4+70*a0^2*a2*lam^14*mu^3+77*a0^2*a2*lam^14*mu^2+64*a0^2*a2*lam^14+10*a0^2*a2*lam^13*mu^11+33*a0^2*a2*lam^13*mu^10+22*a0^2*a2*lam^13*mu^9+53*a0^2*a2*lam^13*mu^8+8*a0^2*a2*lam^13*mu^7+10*a0^2*a2*lam^13*mu^6+84*a0^2*a2*lam^13*mu^5+12*a0^2*a2*lam^13*mu^4+75*a0^2*a2*lam^13*mu^3+46*a0^2*a2*lam^13*mu^2+11*a0^2*a2*lam^13*mu+92*a0^2*a2*lam^13+28*a0^2*a2*lam^12*mu^12+39*a0^2*a2*lam^12*mu^11+76*a0^2*a2*lam^12*mu^10+89*a0^2*a2*lam^12*mu^9+82*a0^2*a2*lam^12*mu^8+50*a0^2*a2*lam^12*mu^7+21*a0^2*a2*lam^12*mu^6+28*a0^2*a2*lam^12*mu^5+97*a0^2*a2*lam^12*mu^4+73*a0^2*a2*lam^12*mu^3+90*a0^2*a2*lam^12*mu^2+90*a0^2*a2*lam^12*mu+78*a0^2*a2*lam^12+36*a0^2*a2*lam^11*mu^13+4*a0^2*a2*lam^11*mu^12+45*a0^2*a2*lam^11*mu^11+36*a0^2*a2*lam^11*mu^10+47*a0^2*a2*lam^11*mu^9+62*a0^2*a2*lam^11*mu^8+53*a0^2*a2*lam^11*mu^7+12*a0^2*a2*lam^11*mu^6+92*a0^2*a2*lam^11*mu^5+44*a0^2*a2*lam^11*mu^4+16*a0^2*a2*lam^11*mu^3+26*a0^2*a2*lam^11*mu^2+74*a0^2*a2*lam^11*mu+59*a0^2*a2*lam^10*mu^14+91*a0^2*a2*lam^10*mu^13+43*a0^2*a2*lam^10*mu^12+67*a0^2*a2*lam^10*mu^11+45*a0^2*a2*lam^10*mu^10+49*a0^2*a2*lam^10*mu^9+99*a0^2*a2*lam^10*mu^8+20*a0^2*a2*lam^10*mu^7+91*a0^2*a2*lam^10*mu^6+85*a0^2*a2*lam^10*mu^5+85*a0^2*a2*lam^10*mu^3+98*a0^2*a2*lam^10*mu^2+36*a0^2*a2*lam^9*mu^15+82*a0^2*a2*lam^9*mu^14+82*a0^2*a2*lam^9*mu^13+40*a0^2*a2*lam^9*mu^12+66*a0^2*a2*lam^9*mu^11+88*a0^2*a2*lam^9*mu^10+41*a0^2*a2*lam^9*mu^9+80*a0^2*a2*lam^9*mu^8+5*a0^2*a2*lam^9*mu^7+97*a0^2*a2*lam^9*mu^6+79*a0^2*a2*lam^9*mu^5+10*a0^2*a2*lam^9*mu^4+10*a0^2*a2*lam^9*mu^3+28*a0^2*a2*lam^8*mu^16+36*a0^2*a2*lam^8*mu^15+68*a0^2*a2*lam^8*mu^14+9*a0^2*a2*lam^8*mu^13+7*a0^2*a2*lam^8*mu^12+26*a0^2*a2*lam^8*mu^11+56*a0^2*a2*lam^8*mu^10+26*a0^2*a2*lam^8*mu^9+60*a0^2*a2*lam^8*mu^8+9*a0^2*a2*lam^8*mu^7+68*a0^2*a2*lam^8*mu^6+36*a0^2*a2*lam^8*mu^5+28*a0^2*a2*lam^8*mu^4+10*a0^2*a2*lam^7*mu^17+10*a0^2*a2*lam^7*mu^16+79*a0^2*a2*lam^7*mu^15+97*a0^2*a2*lam^7*mu^14+97*a0^2*a2*lam^7*mu^13+80*a0^2*a2*lam^7*mu^12+41*a0^2*a2*lam^7*mu^11+88*a0^2*a2*lam^7*mu^10+75*a0^2*a2*lam^7*mu^9+40*a0^2*a2*lam^7*mu^8+82*a0^2*a2*lam^7*mu^7+82*a0^2*a2*lam^7*mu^6+36*a0^2*a2*lam^7*mu^5+98*a0^2*a2*lam^6*mu^18+85*a0^2*a2*lam^6*mu^17+85*a0^2*a2*lam^6*mu^15+67*a0^2*a2*lam^6*mu^14+20*a0^2*a2*lam^6*mu^13+99*a0^2*a2*lam^6*mu^12+49*a0^2*a2*lam^6*mu^11+69*a0^2*a2*lam^6*mu^10+67*a0^2*a2*lam^6*mu^9+43*a0^2*a2*lam^6*mu^8+91*a0^2*a2*lam^6*mu^7+59*a0^2*a2*lam^6*mu^6+74*a0^2*a2*lam^5*mu^19+26*a0^2*a2*lam^5*mu^18+16*a0^2*a2*lam^5*mu^17+44*a0^2*a2*lam^5*mu^16+50*a0^2*a2*lam^5*mu^15+12*a0^2*a2*lam^5*mu^14+53*a0^2*a2*lam^5*mu^13+62*a0^2*a2*lam^5*mu^12+89*a0^2*a2*lam^5*mu^11+36*a0^2*a2*lam^5*mu^10+45*a0^2*a2*lam^5*mu^9+4*a0^2*a2*lam^5*mu^8+36*a0^2*a2*lam^5*mu^7+78*a0^2*a2*lam^4*mu^20+90*a0^2*a2*lam^4*mu^19+90*a0^2*a2*lam^4*mu^18+73*a0^2*a2*lam^4*mu^17+64*a0^2*a2*lam^4*mu^16+28*a0^2*a2*lam^4*mu^15+21*a0^2*a2*lam^4*mu^14+50*a0^2*a2*lam^4*mu^13+14*a0^2*a2*lam^4*mu^12+89*a0^2*a2*lam^4*mu^11+76*a0^2*a2*lam^4*mu^10+39*a0^2*a2*lam^4*mu^9+28*a0^2*a2*lam^4*mu^8+92*a0^2*a2*lam^3*mu^20+11*a0^2*a2*lam^3*mu^19+46*a0^2*a2*lam^3*mu^18+23*a0^2*a2*lam^3*mu^17+12*a0^2*a2*lam^3*mu^16+84*a0^2*a2*lam^3*mu^15+10*a0^2*a",
+          "basis_sha256": "4cd530d1998f96eb55a7c6b18a7793ed8fdfbf7fe7f303e8bcb7da205a0c4032",
+          "basis_size": 6,
+          "boundary_test": {
+            "boundary_gcd_degree": 0,
+            "boundary_gcd_preview": "1",
+            "boundary_gcd_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+            "boundary_term_counts": [
+              77,
+              149,
+              368,
+              1181,
+              2218,
+              2378
+            ],
+            "elapsed_ticks": 0,
+            "engine": "unmixed_linear_boundary_gcd",
+            "input_sha256": "30877559c4ced1cc26f82cd33ab47413297fb6947dd2dd2ed6e169622b7985ae",
+            "pivot": "lam",
+            "returncode": 0,
+            "saturated": 1,
+            "seconds": 0.02433179202489555,
+            "status": "completed",
+            "stderr": "",
+            "stdout_tail": "RESULT_BEGIN\nboundary_gcd_degree=0\nelapsed_ticks=0\nBOUNDARY_GCD_BEGIN\n1\nBOUNDARY_GCD_END\nRESULT_END\n",
+            "substitution": "1"
+          },
+          "dimension": 3,
+          "engine": "unmixed_linear_boundary_gcd",
+          "factor": "lam - 1",
+          "factor_index": 7,
+          "factor_sha256": "87e3e538ee767f7342736bfd26fba4d59e9e3edc729b08bd40da2a598427e219",
+          "quotient_dimension": -1,
+          "saturation_exponent": 0,
+          "seconds": 0.02433179202489555,
+          "status": "completed",
+          "unit": 0
+        },
+        {
+          "basis_preview": "57*a0^3*lam^16+98*a0^3*lam^15*mu+73*a0^3*lam^14*mu^2+97*a0^3*lam^13*mu^3+13*a0^3*lam^12*mu^4+90*a0^3*lam^11*mu^5+37*a0^3*lam^10*mu^6+77*a0^3*lam^9*mu^7+27*a0^3*lam^8*mu^8+77*a0^3*lam^7*mu^9+37*a0^3*lam^6*mu^10+90*a0^3*lam^5*mu^11+13*a0^3*lam^4*mu^12+97*a0^3*lam^3*mu^13+73*a0^3*lam^2*mu^14+98*a0^3*lam*mu^15+57*a0^3*mu^16+78*a0^2*a2*lam^16*mu^8+83*a0^2*a2*lam^16*mu^7+63*a0^2*a2*lam^16*mu^6+76*a0^2*a2*lam^16*mu^5+6*a0^2*a2*lam^16*mu^4+76*a0^2*a2*lam^16*mu^3+63*a0^2*a2*lam^16*mu^2+83*a0^2*a2*lam^16*mu+44*a0^2*a2*lam^16+74*a0^2*a2*lam^15*mu^9+5*a0^2*a2*lam^15*mu^8+23*a0^2*a2*lam^15*mu^7+48*a0^2*a2*lam^15*mu^6+28*a0^2*a2*lam^15*mu^5+74*a0^2*a2*lam^15*mu^4+51*a0^2*a2*lam^15*mu^3+65*a0^2*a2*lam^15*mu^2+84*a0^2*a2*lam^15*mu+92*a0^2*a2*lam^15+98*a0^2*a2*lam^14*mu^10+31*a0^2*a2*lam^14*mu^9+25*a0^2*a2*lam^14*mu^8+54*a0^2*a2*lam^14*mu^7+79*a0^2*a2*lam^14*mu^6+3*a0^2*a2*lam^14*mu^5+65*a0^2*a2*lam^14*mu^4+70*a0^2*a2*lam^14*mu^3+77*a0^2*a2*lam^14*mu^2+64*a0^2*a2*lam^14+10*a0^2*a2*lam^13*mu^11+33*a0^2*a2*lam^13*mu^10+22*a0^2*a2*lam^13*mu^9+53*a0^2*a2*lam^13*mu^8+8*a0^2*a2*lam^13*mu^7+10*a0^2*a2*lam^13*mu^6+84*a0^2*a2*lam^13*mu^5+12*a0^2*a2*lam^13*mu^4+75*a0^2*a2*lam^13*mu^3+46*a0^2*a2*lam^13*mu^2+11*a0^2*a2*lam^13*mu+92*a0^2*a2*lam^13+28*a0^2*a2*lam^12*mu^12+39*a0^2*a2*lam^12*mu^11+76*a0^2*a2*lam^12*mu^10+89*a0^2*a2*lam^12*mu^9+82*a0^2*a2*lam^12*mu^8+50*a0^2*a2*lam^12*mu^7+21*a0^2*a2*lam^12*mu^6+28*a0^2*a2*lam^12*mu^5+97*a0^2*a2*lam^12*mu^4+73*a0^2*a2*lam^12*mu^3+90*a0^2*a2*lam^12*mu^2+90*a0^2*a2*lam^12*mu+78*a0^2*a2*lam^12+36*a0^2*a2*lam^11*mu^13+4*a0^2*a2*lam^11*mu^12+45*a0^2*a2*lam^11*mu^11+36*a0^2*a2*lam^11*mu^10+47*a0^2*a2*lam^11*mu^9+62*a0^2*a2*lam^11*mu^8+53*a0^2*a2*lam^11*mu^7+12*a0^2*a2*lam^11*mu^6+92*a0^2*a2*lam^11*mu^5+44*a0^2*a2*lam^11*mu^4+16*a0^2*a2*lam^11*mu^3+26*a0^2*a2*lam^11*mu^2+74*a0^2*a2*lam^11*mu+59*a0^2*a2*lam^10*mu^14+91*a0^2*a2*lam^10*mu^13+43*a0^2*a2*lam^10*mu^12+67*a0^2*a2*lam^10*mu^11+45*a0^2*a2*lam^10*mu^10+49*a0^2*a2*lam^10*mu^9+99*a0^2*a2*lam^10*mu^8+20*a0^2*a2*lam^10*mu^7+91*a0^2*a2*lam^10*mu^6+85*a0^2*a2*lam^10*mu^5+85*a0^2*a2*lam^10*mu^3+98*a0^2*a2*lam^10*mu^2+36*a0^2*a2*lam^9*mu^15+82*a0^2*a2*lam^9*mu^14+82*a0^2*a2*lam^9*mu^13+40*a0^2*a2*lam^9*mu^12+66*a0^2*a2*lam^9*mu^11+88*a0^2*a2*lam^9*mu^10+41*a0^2*a2*lam^9*mu^9+80*a0^2*a2*lam^9*mu^8+5*a0^2*a2*lam^9*mu^7+97*a0^2*a2*lam^9*mu^6+79*a0^2*a2*lam^9*mu^5+10*a0^2*a2*lam^9*mu^4+10*a0^2*a2*lam^9*mu^3+28*a0^2*a2*lam^8*mu^16+36*a0^2*a2*lam^8*mu^15+68*a0^2*a2*lam^8*mu^14+9*a0^2*a2*lam^8*mu^13+7*a0^2*a2*lam^8*mu^12+26*a0^2*a2*lam^8*mu^11+56*a0^2*a2*lam^8*mu^10+26*a0^2*a2*lam^8*mu^9+60*a0^2*a2*lam^8*mu^8+9*a0^2*a2*lam^8*mu^7+68*a0^2*a2*lam^8*mu^6+36*a0^2*a2*lam^8*mu^5+28*a0^2*a2*lam^8*mu^4+10*a0^2*a2*lam^7*mu^17+10*a0^2*a2*lam^7*mu^16+79*a0^2*a2*lam^7*mu^15+97*a0^2*a2*lam^7*mu^14+97*a0^2*a2*lam^7*mu^13+80*a0^2*a2*lam^7*mu^12+41*a0^2*a2*lam^7*mu^11+88*a0^2*a2*lam^7*mu^10+75*a0^2*a2*lam^7*mu^9+40*a0^2*a2*lam^7*mu^8+82*a0^2*a2*lam^7*mu^7+82*a0^2*a2*lam^7*mu^6+36*a0^2*a2*lam^7*mu^5+98*a0^2*a2*lam^6*mu^18+85*a0^2*a2*lam^6*mu^17+85*a0^2*a2*lam^6*mu^15+67*a0^2*a2*lam^6*mu^14+20*a0^2*a2*lam^6*mu^13+99*a0^2*a2*lam^6*mu^12+49*a0^2*a2*lam^6*mu^11+69*a0^2*a2*lam^6*mu^10+67*a0^2*a2*lam^6*mu^9+43*a0^2*a2*lam^6*mu^8+91*a0^2*a2*lam^6*mu^7+59*a0^2*a2*lam^6*mu^6+74*a0^2*a2*lam^5*mu^19+26*a0^2*a2*lam^5*mu^18+16*a0^2*a2*lam^5*mu^17+44*a0^2*a2*lam^5*mu^16+50*a0^2*a2*lam^5*mu^15+12*a0^2*a2*lam^5*mu^14+53*a0^2*a2*lam^5*mu^13+62*a0^2*a2*lam^5*mu^12+89*a0^2*a2*lam^5*mu^11+36*a0^2*a2*lam^5*mu^10+45*a0^2*a2*lam^5*mu^9+4*a0^2*a2*lam^5*mu^8+36*a0^2*a2*lam^5*mu^7+78*a0^2*a2*lam^4*mu^20+90*a0^2*a2*lam^4*mu^19+90*a0^2*a2*lam^4*mu^18+73*a0^2*a2*lam^4*mu^17+64*a0^2*a2*lam^4*mu^16+28*a0^2*a2*lam^4*mu^15+21*a0^2*a2*lam^4*mu^14+50*a0^2*a2*lam^4*mu^13+14*a0^2*a2*lam^4*mu^12+89*a0^2*a2*lam^4*mu^11+76*a0^2*a2*lam^4*mu^10+39*a0^2*a2*lam^4*mu^9+28*a0^2*a2*lam^4*mu^8+92*a0^2*a2*lam^3*mu^20+11*a0^2*a2*lam^3*mu^19+46*a0^2*a2*lam^3*mu^18+23*a0^2*a2*lam^3*mu^17+12*a0^2*a2*lam^3*mu^16+84*a0^2*a2*lam^3*mu^15+10*a0^2*a",
+          "basis_sha256": "4cd530d1998f96eb55a7c6b18a7793ed8fdfbf7fe7f303e8bcb7da205a0c4032",
+          "basis_size": 6,
+          "boundary_test": {
+            "boundary_gcd_degree": 0,
+            "boundary_gcd_preview": "1",
+            "boundary_gcd_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+            "boundary_term_counts": [
+              61,
+              816,
+              1157,
+              1900,
+              2898,
+              5276
+            ],
+            "elapsed_ticks": 0,
+            "engine": "unmixed_linear_boundary_gcd",
+            "input_sha256": "5a309f26127cc8a24ecb403e1f489b98b5bb68f97518ea08cb1d3522aa2193c0",
+            "pivot": "mu",
+            "returncode": 0,
+            "saturated": 1,
+            "seconds": 0.031996750039979815,
+            "status": "completed",
+            "stderr": "",
+            "stdout_tail": "RESULT_BEGIN\nboundary_gcd_degree=0\nelapsed_ticks=0\nBOUNDARY_GCD_BEGIN\n1\nBOUNDARY_GCD_END\nRESULT_END\n",
+            "substitution": "lam"
+          },
+          "dimension": 3,
+          "engine": "unmixed_linear_boundary_gcd",
+          "factor": "lam - mu",
+          "factor_index": 8,
+          "factor_sha256": "c9a169d92e72520ccc8539b08b699593ff1179b3824aca59c9642633f6a71de9",
+          "quotient_dimension": -1,
+          "saturation_exponent": 0,
+          "seconds": 0.031996750039979815,
+          "status": "completed",
+          "unit": 0
+        },
+        {
+          "basis_preview": "57*a0^3*lam^16+98*a0^3*lam^15*mu+73*a0^3*lam^14*mu^2+97*a0^3*lam^13*mu^3+13*a0^3*lam^12*mu^4+90*a0^3*lam^11*mu^5+37*a0^3*lam^10*mu^6+77*a0^3*lam^9*mu^7+27*a0^3*lam^8*mu^8+77*a0^3*lam^7*mu^9+37*a0^3*lam^6*mu^10+90*a0^3*lam^5*mu^11+13*a0^3*lam^4*mu^12+97*a0^3*lam^3*mu^13+73*a0^3*lam^2*mu^14+98*a0^3*lam*mu^15+57*a0^3*mu^16+78*a0^2*a2*lam^16*mu^8+83*a0^2*a2*lam^16*mu^7+63*a0^2*a2*lam^16*mu^6+76*a0^2*a2*lam^16*mu^5+6*a0^2*a2*lam^16*mu^4+76*a0^2*a2*lam^16*mu^3+63*a0^2*a2*lam^16*mu^2+83*a0^2*a2*lam^16*mu+44*a0^2*a2*lam^16+74*a0^2*a2*lam^15*mu^9+5*a0^2*a2*lam^15*mu^8+23*a0^2*a2*lam^15*mu^7+48*a0^2*a2*lam^15*mu^6+28*a0^2*a2*lam^15*mu^5+74*a0^2*a2*lam^15*mu^4+51*a0^2*a2*lam^15*mu^3+65*a0^2*a2*lam^15*mu^2+84*a0^2*a2*lam^15*mu+92*a0^2*a2*lam^15+98*a0^2*a2*lam^14*mu^10+31*a0^2*a2*lam^14*mu^9+25*a0^2*a2*lam^14*mu^8+54*a0^2*a2*lam^14*mu^7+79*a0^2*a2*lam^14*mu^6+3*a0^2*a2*lam^14*mu^5+65*a0^2*a2*lam^14*mu^4+70*a0^2*a2*lam^14*mu^3+77*a0^2*a2*lam^14*mu^2+64*a0^2*a2*lam^14+10*a0^2*a2*lam^13*mu^11+33*a0^2*a2*lam^13*mu^10+22*a0^2*a2*lam^13*mu^9+53*a0^2*a2*lam^13*mu^8+8*a0^2*a2*lam^13*mu^7+10*a0^2*a2*lam^13*mu^6+84*a0^2*a2*lam^13*mu^5+12*a0^2*a2*lam^13*mu^4+75*a0^2*a2*lam^13*mu^3+46*a0^2*a2*lam^13*mu^2+11*a0^2*a2*lam^13*mu+92*a0^2*a2*lam^13+28*a0^2*a2*lam^12*mu^12+39*a0^2*a2*lam^12*mu^11+76*a0^2*a2*lam^12*mu^10+89*a0^2*a2*lam^12*mu^9+82*a0^2*a2*lam^12*mu^8+50*a0^2*a2*lam^12*mu^7+21*a0^2*a2*lam^12*mu^6+28*a0^2*a2*lam^12*mu^5+97*a0^2*a2*lam^12*mu^4+73*a0^2*a2*lam^12*mu^3+90*a0^2*a2*lam^12*mu^2+90*a0^2*a2*lam^12*mu+78*a0^2*a2*lam^12+36*a0^2*a2*lam^11*mu^13+4*a0^2*a2*lam^11*mu^12+45*a0^2*a2*lam^11*mu^11+36*a0^2*a2*lam^11*mu^10+47*a0^2*a2*lam^11*mu^9+62*a0^2*a2*lam^11*mu^8+53*a0^2*a2*lam^11*mu^7+12*a0^2*a2*lam^11*mu^6+92*a0^2*a2*lam^11*mu^5+44*a0^2*a2*lam^11*mu^4+16*a0^2*a2*lam^11*mu^3+26*a0^2*a2*lam^11*mu^2+74*a0^2*a2*lam^11*mu+59*a0^2*a2*lam^10*mu^14+91*a0^2*a2*lam^10*mu^13+43*a0^2*a2*lam^10*mu^12+67*a0^2*a2*lam^10*mu^11+45*a0^2*a2*lam^10*mu^10+49*a0^2*a2*lam^10*mu^9+99*a0^2*a2*lam^10*mu^8+20*a0^2*a2*lam^10*mu^7+91*a0^2*a2*lam^10*mu^6+85*a0^2*a2*lam^10*mu^5+85*a0^2*a2*lam^10*mu^3+98*a0^2*a2*lam^10*mu^2+36*a0^2*a2*lam^9*mu^15+82*a0^2*a2*lam^9*mu^14+82*a0^2*a2*lam^9*mu^13+40*a0^2*a2*lam^9*mu^12+66*a0^2*a2*lam^9*mu^11+88*a0^2*a2*lam^9*mu^10+41*a0^2*a2*lam^9*mu^9+80*a0^2*a2*lam^9*mu^8+5*a0^2*a2*lam^9*mu^7+97*a0^2*a2*lam^9*mu^6+79*a0^2*a2*lam^9*mu^5+10*a0^2*a2*lam^9*mu^4+10*a0^2*a2*lam^9*mu^3+28*a0^2*a2*lam^8*mu^16+36*a0^2*a2*lam^8*mu^15+68*a0^2*a2*lam^8*mu^14+9*a0^2*a2*lam^8*mu^13+7*a0^2*a2*lam^8*mu^12+26*a0^2*a2*lam^8*mu^11+56*a0^2*a2*lam^8*mu^10+26*a0^2*a2*lam^8*mu^9+60*a0^2*a2*lam^8*mu^8+9*a0^2*a2*lam^8*mu^7+68*a0^2*a2*lam^8*mu^6+36*a0^2*a2*lam^8*mu^5+28*a0^2*a2*lam^8*mu^4+10*a0^2*a2*lam^7*mu^17+10*a0^2*a2*lam^7*mu^16+79*a0^2*a2*lam^7*mu^15+97*a0^2*a2*lam^7*mu^14+97*a0^2*a2*lam^7*mu^13+80*a0^2*a2*lam^7*mu^12+41*a0^2*a2*lam^7*mu^11+88*a0^2*a2*lam^7*mu^10+75*a0^2*a2*lam^7*mu^9+40*a0^2*a2*lam^7*mu^8+82*a0^2*a2*lam^7*mu^7+82*a0^2*a2*lam^7*mu^6+36*a0^2*a2*lam^7*mu^5+98*a0^2*a2*lam^6*mu^18+85*a0^2*a2*lam^6*mu^17+85*a0^2*a2*lam^6*mu^15+67*a0^2*a2*lam^6*mu^14+20*a0^2*a2*lam^6*mu^13+99*a0^2*a2*lam^6*mu^12+49*a0^2*a2*lam^6*mu^11+69*a0^2*a2*lam^6*mu^10+67*a0^2*a2*lam^6*mu^9+43*a0^2*a2*lam^6*mu^8+91*a0^2*a2*lam^6*mu^7+59*a0^2*a2*lam^6*mu^6+74*a0^2*a2*lam^5*mu^19+26*a0^2*a2*lam^5*mu^18+16*a0^2*a2*lam^5*mu^17+44*a0^2*a2*lam^5*mu^16+50*a0^2*a2*lam^5*mu^15+12*a0^2*a2*lam^5*mu^14+53*a0^2*a2*lam^5*mu^13+62*a0^2*a2*lam^5*mu^12+89*a0^2*a2*lam^5*mu^11+36*a0^2*a2*lam^5*mu^10+45*a0^2*a2*lam^5*mu^9+4*a0^2*a2*lam^5*mu^8+36*a0^2*a2*lam^5*mu^7+78*a0^2*a2*lam^4*mu^20+90*a0^2*a2*lam^4*mu^19+90*a0^2*a2*lam^4*mu^18+73*a0^2*a2*lam^4*mu^17+64*a0^2*a2*lam^4*mu^16+28*a0^2*a2*lam^4*mu^15+21*a0^2*a2*lam^4*mu^14+50*a0^2*a2*lam^4*mu^13+14*a0^2*a2*lam^4*mu^12+89*a0^2*a2*lam^4*mu^11+76*a0^2*a2*lam^4*mu^10+39*a0^2*a2*lam^4*mu^9+28*a0^2*a2*lam^4*mu^8+92*a0^2*a2*lam^3*mu^20+11*a0^2*a2*lam^3*mu^19+46*a0^2*a2*lam^3*mu^18+23*a0^2*a2*lam^3*mu^17+12*a0^2*a2*lam^3*mu^16+84*a0^2*a2*lam^3*mu^15+10*a0^2*a",
+          "basis_sha256": "4cd530d1998f96eb55a7c6b18a7793ed8fdfbf7fe7f303e8bcb7da205a0c4032",
+          "basis_size": 6,
+          "boundary_test": {
+            "boundary_gcd_degree": 0,
+            "boundary_gcd_preview": "1",
+            "boundary_gcd_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+            "boundary_term_counts": [
+              64,
+              639,
+              974,
+              929,
+              1379,
+              2692
+            ],
+            "elapsed_ticks": 0,
+            "engine": "unmixed_linear_boundary_gcd",
+            "input_sha256": "1eba2593492fc6bdd67d0b56b5573fc54453f92ef6e528a589b85bbcd1f29b03",
+            "pivot": "mu",
+            "returncode": 0,
+            "saturated": 1,
+            "seconds": 0.02427470893599093,
+            "status": "completed",
+            "stderr": "",
+            "stdout_tail": "RESULT_BEGIN\nboundary_gcd_degree=0\nelapsed_ticks=0\nBOUNDARY_GCD_BEGIN\n1\nBOUNDARY_GCD_END\nRESULT_END\n",
+            "substitution": "1"
+          },
+          "dimension": 3,
+          "engine": "unmixed_linear_boundary_gcd",
+          "factor": "mu - 1",
+          "factor_index": 9,
+          "factor_sha256": "0e9dc34263be52381c75712558c9bb817c802da84c475b520af9fe4ed993d141",
+          "quotient_dimension": -1,
+          "saturation_exponent": 0,
+          "seconds": 0.02427470893599093,
+          "status": "completed",
+          "unit": 0
+        },
+        {
+          "factor": "38*a0*a2*lam**12 - 456*a0*a2*lam**11 + 2508*a0*a2*lam**10 - 8360*a0*a2*lam**9 + 18810*a0*a2*lam**8 - 30096*a0*a2*lam**7 + 35112*a0*a2*lam**6 - 30096*a0*a2*lam**5 + 18810*a0*a2*lam**4 - 8360*a0*a2*lam**3 + 2508*a0*a2*lam**2 - 456*a0*a2*lam + 38*a0*a2 + 48*a2*lam**16 - 480*a2*lam**15 + 2160*a2*lam**14 - 5760*a2*lam**13 + 10080*a2*lam**12 - 12096*a2*lam**11 + 10080*a2*lam**10 - 5760*a2*lam**9 + 2160*a2*lam**8 - 480*a2*lam**7 + 48*a2*lam**6 + 19*lam**16",
+          "factor_index": 10,
+          "factor_sha256": "763f90aa3b45091c472616c0d20a033e538c13e41a080927cf0a4163b95c884c",
+          "hypersurface_test": {
+            "engine": "unmixed_hypersurface_dimension",
+            "input_generators": 6,
+            "input_sha256": "ab5294b7732427fa2b5c777b036f9fe9fa6066cf802f4197ba1b68b49e18f82f",
+            "ring_variable_order": [
+              "a4",
+              "mu",
+              "a0",
+              "a2",
+              "lam"
+            ],
+            "seconds": 300.0157672909554,
+            "status": "timeout",
+            "stderr": "",
+            "stdout_tail": ""
+          },
+          "input_sha256": "b3c2aad24f8a4b4661436305410ee04a0c0dc92c7b8c90e773474ca39d6eab06",
+          "ring_variable_order": [
+            "a4",
+            "mu",
+            "a0",
+            "a2",
+            "lam"
+          ],
+          "seconds": 300.0247172919335,
+          "status": "timeout",
+          "stderr": "",
+          "stdout_tail": ""
+        }
+      ],
+      "unit": 0
+    }
+  ],
+  "moment_term_counts": {
+    "2": 0,
+    "3": 271,
+    "4": 1142,
+    "5": 3686
+  },
+  "normalization": "a1=1; first three direction points are infinity, zero, one",
+  "report_quotient_dimension": true,
+  "saturation_method": "successive",
+  "scope": "one declared direction-partition and nonzero-coefficient chart",
+  "specialization": {},
+  "status": "bounded modular discovery; not a characteristic-zero theorem"
+}

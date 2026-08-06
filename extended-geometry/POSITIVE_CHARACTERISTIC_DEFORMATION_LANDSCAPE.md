@@ -372,10 +372,56 @@ the same \((e,f)\).  `HKM2B1` supplies the first completed plane row, with
 generic data `(1,1,2,1,2)` and three reduced intersections between the
 retained and missing components.  At each intersection the completed reduced
 boundary is the node `k[[p,a]]/(pa)`; its conductor is `(p,a)`, while the
-different remains `(p)`.  The general \(m=p,2p,p+1\) family, plane lifting
-after equivalence, and bounded-degree algebraization of the compatible stable
-Witt tower remain open; the exact plane representative itself is obstructed
-by `HKM2W1`.
+different remains `(p)`.  The general \(m=p,2p,p+1\) family and
+bounded-degree algebraization of the compatible stable Witt tower remain
+open.  `HKM2W1` obstructs both the exact plane representative and every
+polynomially left--right equivalent plane representative.
+
+The characteristic-divisible continuation now provides the reusable search
+order.  Writing `N=p^n*m` with `(m,p)=1` separates the fierce component's
+residue degrees as `(m,p^n)`; exact `N=6` controls in characteristics two and
+three verify that the construction is not limited to prime powers.  The
+canonical monomial gluing has a residual tame different for every `N>2`.
+Balancing the gluing exponent removes that height-one different, but the
+normal complement has a `G_m^2` core with valuation matrix
+
+\[
+ \begin{pmatrix}1&0\\N-2&N-1\end{pmatrix}
+\]
+
+and hence class group `Z/(N-1)`.  Thus a wild row must pass both a saturated
+different gate and the complete
+[class-trivial-core Smith gate](../plane-jc/BOUNDARY_LATTICE_PREFILTER.md#dual-torus-core-localization)
+before point counts, Witt lifting, or coefficient algebraization are
+informative.  These gates prove a characteristic-two exception only for the
+complete one-boundary monomial-gluing architecture; other boundary
+presentations remain open.
+The exponent search itself is now complete for all `a>=0`: `a=0` has core
+matrix `(N+1,N+1)`, a free unit, and class group `Z/(N+1)`; `a>=N` has a
+wild index-`N` branch over `P=0`.  If `P^a` is replaced by an arbitrary
+`C(P)`, every factor away from `P=0` creates an extra different divisor; on a
+normalized noncollision prime its coefficient is `h*ord_D(R)`, not
+automatically `h`.  For arbitrary `C(P,Q)`, the same support gate reduces the
+search to `cP^aQ^b`.  The base-change Euler/transfer theorem and the uniform
+full-source identity `Cl(U_(2,c))=Cl(D(xu))=(Z/2)^2` now close every `b>0` row.
+For new families, the unequal-multiplicity form gives a cheap first sieve:
+a principal reduced packet with generic unit rank one carries torsion exactly
+when two fibre multiplicities share a prime.
+For balanced multi-retained orders, the independent support identity forces
+the retained polynomial to have the form `a0+T*B(T^p)`; therefore only cover
+degrees congruent to one modulo `p` pass the divisorial different gate.  The
+normalization then gives the exact root-count formula
+`#(C_A-E_A)(F_q)=q^2+(n_q(A)-1)q` and
+`chi_c(C_A-E_A)=deg(A)` after splitting `A`.  Thus every nonlinear
+squarefree retained polynomial fails geometric affine-plane reconstruction.
+The first degree-seven characteristic-three coefficient scan passes the
+different gate in all six rows; four fail over `F_3`, and the two temporary
+survivors fail over `F_27` with `810` rather than `729` open points.
+Together with the linear class-group obstruction, this makes the
+characteristic-two cubic exceptional throughout the balanced
+squarefree-retained architecture.
+Thus a next one-boundary candidate must change the boundary support or the
+gluing architecture, not merely use a more complicated coefficient.
 
 ### PCD.5 — reduction of stable moduli
 
@@ -391,18 +437,74 @@ Compute Smith normal forms, the Bockstein maps, and the Tor term in (6.3).
 Then test whether modular primitives lift through \(W_2,W_3,\ldots\), rather
 than inferring a characteristic-zero primitive from one good-prime rank.
 
-For the Huq--Kuruvilla--Mondello plane map, `HKM2W1` makes the first test
-unbounded and terminal: the `xy` coefficient of the first Jacobian correction
-vanishes for every polynomial pair `(A,B)`, while the integral Jacobian error
-has coefficient `2xy`.  Hence the map has no Keller lift even through
-`W_2(F_2)=Z/4`.  After one identity stabilization, however,
-the truncated geometric inverses of `1+2K` give compatible polynomial Keller
-lifts over every finite `W_n(F_2)`.  Their inverse limit is restricted
-two-adic rather than polynomial.  The viable continuations are bounded-degree
-algebraization of this stable tower and the equivalence-aware plane problem
-for polynomial left-right changes.
+For plane boundary modules, run the Smith computation twice and keep the
+matrices distinct: first on the codimension-one character valuations of the
+normal reconstruction open, then on the integral correction complex used
+for Bockstein/Tor.  The first is a geometric unit/class-group obstruction;
+the second is a mixed-characteristic lifting obstruction.  Neither can
+cancel a residual different divisor.
 
-<!-- status-consumer: HKM2W1 333c767416c0d59f -->
+For the Huq--Kuruvilla--Mondello plane map, `HKM2W1` makes the first test
+unbounded and terminal.  The complete cokernel is
+`H^2_dR(F_2[x,y]) = xy F_2[x^2,y^2]`, and the integral Jacobian error has
+class `xy(1+x^3(1+xy))^2`, with nonzero Cartier image.  Hence neither the map
+nor any polynomially left--right equivalent plane representative has a
+Keller lift through `W_2(F_2)=Z/4`.  After one identity stabilization,
+however, every first obstruction is exact; for this map the truncated
+geometric inverses of `1+2K` give compatible polynomial Keller lifts over
+every finite `W_n(F_2)`.  Their inverse limit is restricted two-adic rather
+than polynomial.  At `W_2`, the exact minimum stable degree is 18: the
+functional `[x^13 y^4]+[x^14 y^5]` excludes every degree-at-most-17 lift and
+the geometric correction attains degree 18.  Thus
+`18 <= d_n <= 17(n-1)+1`.  A separate degree-25 construction at `W_3`
+improves that level's upper bound from 35.  The unrestricted degree-18
+coefficient system has 1,083 Boolean variables and 1,639 exact constraints;
+Z3 proves it unsatisfiable.  At degree 19, a complete z-linear witness system
+has 2,685 variables and 4,513 constraints; its SAT model has an odd constant
+Jacobian modulo 8 under a direct sparse-polynomial replay and normalizes to
+determinant one.  Hence `d_3=19` exactly.
+This has no independent implementation or external human review.  The viable
+continuation is quantitative and algebraic: later exact degrees, asymptotic
+growth, bounded support, and algebraization of this stable tower.  The older
+degree 25 remains sharp only in the canonical first-digit gauge; the optimal
+lift necessarily uses a noncanonical kernel correction.
+The preferred frozen optimal-degree witness has determinant one and support
+`280+160` across the two Witt digits.  With its first digit fixed, the second
+completion system has 1,485 variables, rank 681, and affine dimension 804.
+It splits into independent `z0`, `z1`, and `z2` blocks and then into small
+incidence components.  Exact componentwise minima are 92, 54, and 14, so
+`s_2=160`; the determinant-one constraint has the same minimum.  The earlier
+gauge gives `299+165`, showing cross-Witt support tradeoff.  Global support
+minimality over all first digits is open.
+
+The next digit separates degree optimality from tower compatibility.  The
+preferred degree-19 `W_3` witness has a nonzero 48-term top de Rham class and
+cannot extend to `W_4` at any degree.  A fixed degree-25 representative has
+zero top class and exact extension degree 52: a two-coefficient functional
+excludes degrees at most 51, while the third-coordinate correction `8zL`
+attains 52.  Thus only `19 <= d_4 <= 52` is currently unrestricted.  Future
+searches should carry the next determinant-digit cohomology class as a
+frontier coordinate alongside present degree and support.
+The zero-class locus is nonempty already in the degree-19 ansatz: a pinned
+818-term `W_3` representative lies on it.  Its exact fixed extension degree
+is nevertheless 52, so cohomological extendability and bounded-degree
+extendability are separate frontier coordinates.  Exact unrestricted `d_4`
+requires the joint bounded correction system, not just vanishing of the next
+class.  The exact master--subproblem experiment has so far returned only
+singleton codomain-hole duals through 64 cuts; a 599-hole master reaches the
+600-second bound with status `unknown`, so this is evidence about the shape
+of the obstruction space rather than an UNSAT theorem.  Factoring through
+shared projected Jacobian minors makes the complete 4,340-hole quotient
+computable, but its master also returns `unknown`; separately, its `z1` and
+`z3` layers are SAT while `z0` and `z2` remain undecided at the same bound.
+
+<!-- status-consumer: HKM2W1 904c57385ac0b0dd -->
+
+<!-- status-consumer: HKM2W2 474e0d677133ee23 -->
+
+<!-- status-consumer: HKM2W3 55d99efeee0298af -->
+
+<!-- status-consumer: HKM2W4 6075dd4fbb9cb89c -->
 
 ### PCD.7 — arithmetic monodromy degeneration
 
@@ -425,10 +527,10 @@ analysis.
 For Mondello's plane map, the
 [canonical follow-up queue](../verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md#9-follow-up-experiments)
 records the remaining independent normalization audit, two-route monodromy
-verification, full cokernel and functoriality of the first Jacobian variation,
-left--right-equivalence lifting tests, quantitative Witt degree growth, and
-boundary-led searches for odd-characteristic analogues.  These are open
-experiments.  Only the arbitrary-field corollary is closed.
+verification, higher-Witt degree growth, and boundary-led searches for
+odd-characteristic analogues.  The arbitrary-field corollary, full cokernel,
+Cartier class, stabilization theorem, plane left--right lifting question, and
+exact first stable Witt degree are closed.
 
 ## 8. Initial exact audit
 

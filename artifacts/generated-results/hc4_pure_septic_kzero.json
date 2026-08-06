@@ -1,0 +1,29 @@
+{
+  "format": "hc4-pure-septic-kzero-v1",
+  "p_nonzero": {
+    "classification": "G_y=0, G_y proportional to K_yy^2, or the K_yy=x endpoint",
+    "normalized_obstructions": [
+      "-648/49",
+      "16",
+      "12/7",
+      "48/7"
+    ]
+  },
+  "p_zero_Qzz_nonzero": {
+    "alignment": "Q_zz*H_yy=V_y^2 forces V_y=s*x^2",
+    "explanation": "J(h(x,z+D*y))=-D'^2*h_w^4",
+    "obstruction": "normalized degree-fourteen coefficient -4"
+  },
+  "p_zero_Qzz_zero": {
+    "cubic_tail": "linear-in-z global identity forces H_yy=0",
+    "later_tails": "constant-direction cylinder",
+    "quartic_tail": "two rho packets, then normalized coefficient -24"
+  },
+  "recursive_square": "x^6*(H_yy*(49*x^6*Q_zz-14*p*x^3*V+6*p^2*H)-(7*x^3*V_y-3*p*H_y)^2)",
+  "residual": "P_y!=0 k=0 packets and the H_yy=0 boundary",
+  "status": {
+    "id": "HC4RSD37",
+    "kind": "exact narrowing theorem",
+    "scope": "the complete P_y=0 residue in the k=0 curved chart"
+  }
+}

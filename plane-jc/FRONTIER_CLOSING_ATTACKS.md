@@ -27,6 +27,51 @@ component, with vanishing data `Sigma_D` at nodes and critical points.
 The current compiler supplies the first four entries and part of `e,f`; the
 next attacks construct and test the missing entries.
 
+Every proposed finite-normalization reconstruction now has two preliminary
+global gates before a finite-support residue or a large coefficient search is
+meaningful:
+
+1. saturate the different away from the declared omitted boundary and reject
+   any residual height-one ramification;
+2. when the normalized open contains a certified `G_m^2` core, compute the
+   valuations of both character generators on **all** codimension-one fill
+   primes and require the resulting matrix to be unimodular.
+
+The first gate detects the companion tame divisor in the canonical odd
+wild-boundary rows.  The second detects `Cl=Z/(N-1)` in the balanced rows
+after their different has vanished.  The enlarged coefficient audit also
+detects a free unit and `Z/(N+1)` at gluing exponent zero, a wild index-`N`
+branch at every exponent `a>=N`, and an extra different divisor for every
+factor of a general `C(P)` away from `P=0`.  For arbitrary `C(P,Q)` the same
+support gate leaves only `cP^aQ^b`; the base-change Euler/transfer theorem and
+the uniform full-source calculation
+`Cl(U_(2,c))=Cl(D(xu))=(Z/2)^2` now close every `b>0` row.
+The same proof gives an immediate atlas sieve for future architectures: a
+principal reduced packet of fibres with multiplicities `m_i` and generic
+unit rank one forces `(direct_sum Z/m_i)/<diagonal>`, so any prime shared by
+two multiplicities rejects affine-plane reconstruction before a full class
+group computation.
+For multi-retained balanced covers there is now an earlier support gate:
+`A*H_T-A'*H=P^(N-1)*Q*(A-T*A')` forces
+`A=a0+T*B(T^p)`.  Consequently only cover degrees `1 mod p` enter the source
+search.  The normalization chart supplies the stronger global gate
+`#(C_A-E_A)(F_q)=q^2+(n_q(A)-1)q` and
+`chi_c(C_A-E_A)=deg(A)` after the roots split.  It excludes every nonlinear
+retained polynomial, including the former degree `7,10,13,11,15`
+support-only rows in characteristics `3,5,7`.
+The complete degree-seven scan makes the mechanism exact: four coefficients
+fail over `F_3`, while `A=T^4+T+1` and `A=T^4+2T+1` match `A^2` over
+`F_3` and `F_9` but have `810!=27^2` open points over `F_27`.  No unit or
+class-group calculation is needed to reject them.  The next search must
+change the retained-boundary or gluing architecture.
+This is the general
+[normal-core Smith criterion](BOUNDARY_LATTICE_PREFILTER.md#dual-torus-core-localization),
+not the local two-by-two Smith profile of the logarithmic differential in
+Attack E.  The same gate computes `ord([L1])=N-1`, rather than only the
+abstract cokernel.  Passing both remains necessary, not sufficient unless an
+extended affine toric action is separately certified: affineness, coordinate
+reconstruction, and the coefficient equations are still later tests.
+
 There is also a new exact reduction.  In terminal Case 2 of the archived
 `(72,108)` pair, the a priori residue-cover degrees were `1,2,4`.  For
 degrees `2` and `4`, reconstructing a completely general monic polynomial
@@ -297,14 +342,14 @@ three Case-1 rows remain.
 **Input.**  The exact alternate-chart residue
 `[1:P2(0,r/u):Q2(0,r/u)]` on each of the two sign branches.
 
-**Prerequisite gap.**  This input is not present in the archived
-certificate.  Case 1 records `P` only through `z^-5` and `Q` only through
-`z^-4`; its full Newton polygons continue through `z^-8` and `z^-12`.
-Those omitted bands contribute to the alternate residue.  The next valid
-step is therefore either to derive the missing bands from the Newton descent,
-or to prove a truncation lemma showing that the degree-two and degree-four
-composition remainders use only archived coefficients.  Assigning zero to
-the omitted bands is forbidden.
+**Band prerequisite -- completed.**  The archived certificate records `P`
+only through `z^-5` and `Q` only through `z^-4`, but the exact continuation
+in [CASE1_FULL_BAND_CONTINUATION.md](CASE1_FULL_BAND_CONTINUATION.md) solves
+bracket layers `-4,...,-11` and reconstructs the full tails through `z^-8`
+and `z^-12`.  All eight systems have full column rank and add 66 necessary
+compatibility equations without new moduli.  The next input-construction step
+is now the certified alternate-chart substitution and restriction to `X=0`;
+zero-filling is neither needed nor permitted.
 
 **Calculation.**  Reconstruct the general monic right component of degree
 two and four from the top residue coefficients, reduce both coordinates
@@ -315,9 +360,10 @@ branch unit identities.
 must emit its dimension, generic residue field, and a sample point; merely
 timing out is not a result.
 
-**Why it matters.**  Once the prerequisite is met, this is now the only live
-case/cover sieve, and the Case-2 implementation is reusable.  Until then it
-is blocked by missing mathematical input, not by CAS cost.
+**Why it matters.**  This is now the only live case/cover sieve, and the
+Case-2 implementation is reusable.  The search has narrowed from an
+unspecified Newton-tail derivation to a deterministic transport followed by
+two already-implemented polynomial remainder tests.
 
 ## Attack D2 — Case-2 target resolution — closed before implicitization
 
@@ -500,3 +546,5 @@ For movement of the numerical degree frontier:
 Every stage has a finite artifact: a unit certificate, a target resolution,
 a list of harmonic graph covers, a Pluecker partition, or a support mask.
 This prevents “more boundary geometry” from becoming an unbounded search.
+
+<!-- status-consumer: C1FBC1 0f14ef01fff25097 -->

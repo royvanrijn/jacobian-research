@@ -1,0 +1,573 @@
+{
+  "build_primes": [
+    2147483647,
+    2099999999,
+    2049999979,
+    1019,
+    1021,
+    1013
+  ],
+  "crt_modulus": "9743441634402361595687524099615669769",
+  "crt_modulus_bits": 123,
+  "degree_reverse_lexicographic_basis": [
+    [
+      {
+        "denominator": 47094822587671753953,
+        "numerator": -16670070469605785034194,
+        "sigma_degree": 0,
+        "tau_degree": 0
+      },
+      {
+        "denominator": 1177370564691793848825,
+        "numerator": -595684160054427732557074,
+        "sigma_degree": 0,
+        "tau_degree": 1
+      },
+      {
+        "denominator": 235474112938358769765,
+        "numerator": -32728977947255444901323,
+        "sigma_degree": 0,
+        "tau_degree": 2
+      },
+      {
+        "denominator": 329663758113702277671,
+        "numerator": -4242017785335313748960,
+        "sigma_degree": 0,
+        "tau_degree": 3
+      },
+      {
+        "denominator": 15698274195890584651,
+        "numerator": 11279174731643920000,
+        "sigma_degree": 0,
+        "tau_degree": 4
+      },
+      {
+        "denominator": 47094822587671753953,
+        "numerator": -37090483317605638548157,
+        "sigma_degree": 1,
+        "tau_degree": 0
+      },
+      {
+        "denominator": 1177370564691793848825,
+        "numerator": -612484465075127589289676,
+        "sigma_degree": 1,
+        "tau_degree": 1
+      },
+      {
+        "denominator": 1648318790568511388355,
+        "numerator": -121972336838208151064038,
+        "sigma_degree": 1,
+        "tau_degree": 2
+      },
+      {
+        "denominator": 47094822587671753953,
+        "numerator": 53918832531247394480,
+        "sigma_degree": 1,
+        "tau_degree": 3
+      },
+      {
+        "denominator": 15698274195890584651,
+        "numerator": -7089363312275729688992,
+        "sigma_degree": 2,
+        "tau_degree": 0
+      },
+      {
+        "denominator": 2747197984280852313925,
+        "numerator": -388054253028341296622058,
+        "sigma_degree": 2,
+        "tau_degree": 1
+      },
+      {
+        "denominator": 1,
+        "numerator": 1,
+        "sigma_degree": 2,
+        "tau_degree": 2
+      },
+      {
+        "denominator": 392456854897264616275,
+        "numerator": -33847581940433389971507,
+        "sigma_degree": 3,
+        "tau_degree": 0
+      }
+    ],
+    [
+      {
+        "denominator": 141284467763015261859,
+        "numerator": 79475984271803436884705,
+        "sigma_degree": 0,
+        "tau_degree": 0
+      },
+      {
+        "denominator": 706422338815076309295,
+        "numerator": 565194815535202549866593,
+        "sigma_degree": 0,
+        "tau_degree": 1
+      },
+      {
+        "denominator": 988991274341106833013,
+        "numerator": 212097851479355968746640,
+        "sigma_degree": 0,
+        "tau_degree": 2
+      },
+      {
+        "denominator": 988991274341106833013,
+        "numerator": 18062910582399511929200,
+        "sigma_degree": 0,
+        "tau_degree": 3
+      },
+      {
+        "denominator": 47094822587671753953,
+        "numerator": -60257703995083600000,
+        "sigma_degree": 0,
+        "tau_degree": 4
+      },
+      {
+        "denominator": 141284467763015261859,
+        "numerator": 171647800392402756110845,
+        "sigma_degree": 1,
+        "tau_degree": 0
+      },
+      {
+        "denominator": 4944956371705534165065,
+        "numerator": 3824404782505004293753819,
+        "sigma_degree": 1,
+        "tau_degree": 1
+      },
+      {
+        "denominator": 988991274341106833013,
+        "numerator": 102967136666260194205328,
+        "sigma_degree": 1,
+        "tau_degree": 2
+      },
+      {
+        "denominator": 141284467763015261859,
+        "numerator": -156056691930503428400,
+        "sigma_degree": 1,
+        "tau_degree": 3
+      },
+      {
+        "denominator": 329663758113702277671,
+        "numerator": 215604471930378978775847,
+        "sigma_degree": 2,
+        "tau_degree": 0
+      },
+      {
+        "denominator": 1648318790568511388355,
+        "numerator": 318926487678035760027751,
+        "sigma_degree": 2,
+        "tau_degree": 1
+      },
+      {
+        "denominator": 78491370979452923255,
+        "numerator": 9106065387994379324643,
+        "sigma_degree": 3,
+        "tau_degree": 0
+      },
+      {
+        "denominator": 1,
+        "numerator": 1,
+        "sigma_degree": 3,
+        "tau_degree": 1
+      }
+    ],
+    [
+      {
+        "denominator": 423853403289045785577,
+        "numerator": -262580232516885140128955,
+        "sigma_degree": 0,
+        "tau_degree": 0
+      },
+      {
+        "denominator": 2119267016445228927885,
+        "numerator": -1867496867694401578166888,
+        "sigma_degree": 0,
+        "tau_degree": 1
+      },
+      {
+        "denominator": 2966973823023320499039,
+        "numerator": -699185671457823365968480,
+        "sigma_degree": 0,
+        "tau_degree": 2
+      },
+      {
+        "denominator": 2966973823023320499039,
+        "numerator": -58961572650821254347200,
+        "sigma_degree": 0,
+        "tau_degree": 3
+      },
+      {
+        "denominator": 141284467763015261859,
+        "numerator": 198281836904689600000,
+        "sigma_degree": 0,
+        "tau_degree": 4
+      },
+      {
+        "denominator": 423853403289045785577,
+        "numerator": -561721718791214256007120,
+        "sigma_degree": 1,
+        "tau_degree": 0
+      },
+      {
+        "denominator": 14834869115116602495195,
+        "numerator": -12384794614404434257699024,
+        "sigma_degree": 1,
+        "tau_degree": 1
+      },
+      {
+        "denominator": 2966973823023320499039,
+        "numerator": -329367605013462878670368,
+        "sigma_degree": 1,
+        "tau_degree": 2
+      },
+      {
+        "denominator": 423853403289045785577,
+        "numerator": 398921590224354142400,
+        "sigma_degree": 1,
+        "tau_degree": 3
+      },
+      {
+        "denominator": 988991274341106833013,
+        "numerator": -688115534518002389699342,
+        "sigma_degree": 2,
+        "tau_degree": 0
+      },
+      {
+        "denominator": 4944956371705534165065,
+        "numerator": -992208425314852597035976,
+        "sigma_degree": 2,
+        "tau_degree": 1
+      },
+      {
+        "denominator": 549439596856170462785,
+        "numerator": -64474480642329077262872,
+        "sigma_degree": 3,
+        "tau_degree": 0
+      },
+      {
+        "denominator": 1,
+        "numerator": 1,
+        "sigma_degree": 4,
+        "tau_degree": 0
+      }
+    ],
+    [
+      {
+        "denominator": 1879083421248102982724700000000,
+        "numerator": 783927177140477230699473632303357,
+        "sigma_degree": 0,
+        "tau_degree": 0
+      },
+      {
+        "denominator": 5872135691400321821014687500000,
+        "numerator": -1098433397850759909391250388391411,
+        "sigma_degree": 0,
+        "tau_degree": 1
+      },
+      {
+        "denominator": 8220989967960450549420562500000,
+        "numerator": -7587265376219560300133834657878339,
+        "sigma_degree": 0,
+        "tau_degree": 2
+      },
+      {
+        "denominator": 65767919743683604395364500000,
+        "numerator": -20003199294372283674185716682591,
+        "sigma_degree": 0,
+        "tau_degree": 3
+      },
+      {
+        "denominator": 58721356914003218210146875,
+        "numerator": -1361515905714319621148014172,
+        "sigma_degree": 0,
+        "tau_degree": 4
+      },
+      {
+        "denominator": 1,
+        "numerator": 1,
+        "sigma_degree": 0,
+        "tau_degree": 5
+      },
+      {
+        "denominator": 626361140416034327574900000000,
+        "numerator": -1112571553503734002575013340334973,
+        "sigma_degree": 1,
+        "tau_degree": 0
+      },
+      {
+        "denominator": 360569735436861866202656250000,
+        "numerator": -1494853677625033547939607041478307,
+        "sigma_degree": 1,
+        "tau_degree": 1
+      },
+      {
+        "denominator": 2740329989320150183140187500000,
+        "numerator": -3909679523459680947248882968514479,
+        "sigma_degree": 1,
+        "tau_degree": 2
+      },
+      {
+        "denominator": 5219676170133619396457500000,
+        "numerator": -72139300913913641967351072079,
+        "sigma_degree": 1,
+        "tau_degree": 3
+      },
+      {
+        "denominator": 292301865527482686201620000000,
+        "numerator": -1185797805733233936072319100511307,
+        "sigma_degree": 2,
+        "tau_degree": 0
+      },
+      {
+        "denominator": 13701649946600750915700937500000,
+        "numerator": -34474957446554885625881241666206687,
+        "sigma_degree": 2,
+        "tau_degree": 1
+      },
+      {
+        "denominator": 5219676170133619396457500000000,
+        "numerator": -7388803734933850621000847851037053,
+        "sigma_degree": 3,
+        "tau_degree": 0
+      }
+    ],
+    [
+      {
+        "denominator": 626361140416034327574900000,
+        "numerator": -2300948562135753041942517419803,
+        "sigma_degree": 0,
+        "tau_degree": 0
+      },
+      {
+        "denominator": 1957378563800107273671562500,
+        "numerator": -10497283273392534395221442995981,
+        "sigma_degree": 0,
+        "tau_degree": 1
+      },
+      {
+        "denominator": 2740329989320150183140187500,
+        "numerator": -4419474969930697938012639426019,
+        "sigma_degree": 0,
+        "tau_degree": 2
+      },
+      {
+        "denominator": 21922639914561201465121500,
+        "numerator": -4103489657123216008492739291,
+        "sigma_degree": 0,
+        "tau_degree": 3
+      },
+      {
+        "denominator": 8241593952842556941775,
+        "numerator": 20215287672826113566291,
+        "sigma_degree": 0,
+        "tau_degree": 4
+      },
+      {
+        "denominator": 208787046805344775858300000,
+        "numerator": -1850950187695342613329214467733,
+        "sigma_degree": 1,
+        "tau_degree": 0
+      },
+      {
+        "denominator": 2283608324433458485950156250,
+        "numerator": -14897983185927520226309853357293,
+        "sigma_degree": 1,
+        "tau_degree": 1
+      },
+      {
+        "denominator": 913443329773383394380062500,
+        "numerator": -999738022804166940338495831959,
+        "sigma_degree": 1,
+        "tau_degree": 2
+      },
+      {
+        "denominator": 5219676170133619396457500,
+        "numerator": 12346902527702446041434623,
+        "sigma_degree": 1,
+        "tau_degree": 3
+      },
+      {
+        "denominator": 1,
+        "numerator": 1,
+        "sigma_degree": 1,
+        "tau_degree": 4
+      },
+      {
+        "denominator": 292301865527482686201620000,
+        "numerator": -1726416378866597003526968895081,
+        "sigma_degree": 2,
+        "tau_degree": 0
+      },
+      {
+        "denominator": 4567216648866916971900312500,
+        "numerator": -9625297637324212483869107575877,
+        "sigma_degree": 2,
+        "tau_degree": 1
+      },
+      {
+        "denominator": 5219676170133619396457500000,
+        "numerator": -6681050961344006791190590186239,
+        "sigma_degree": 3,
+        "tau_degree": 0
+      }
+    ]
+  ],
+  "exact_zero_scheme": {
+    "dimension": 0,
+    "factor_degrees_over_Q": [
+      [
+        12,
+        1
+      ]
+    ],
+    "lexicographic_basis": [
+      [
+        {
+          "coefficient": "9699739875",
+          "sigma_degree": 12,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "41496410970",
+          "sigma_degree": 11,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "-846610243920",
+          "sigma_degree": 10,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "-10549859894154",
+          "sigma_degree": 9,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "-56081730021765",
+          "sigma_degree": 8,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "-173027569716540",
+          "sigma_degree": 7,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "-339093184426920",
+          "sigma_degree": 6,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "-467796452829460",
+          "sigma_degree": 5,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "-560246361633175",
+          "sigma_degree": 4,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "-553097854439102",
+          "sigma_degree": 3,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "-51771900582024",
+          "sigma_degree": 2,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "380750072251710",
+          "sigma_degree": 1,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "-92072207284295",
+          "sigma_degree": 0,
+          "tau_degree": 0
+        }
+      ],
+      [
+        {
+          "coefficient": "54080910564821291547515739452772166153734085017600",
+          "sigma_degree": 0,
+          "tau_degree": 1
+        },
+        {
+          "coefficient": "-55802812611790659034652598037671290747207740125",
+          "sigma_degree": 11,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "-262358046922710709075224439973675750605108612605",
+          "sigma_degree": 10,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "4765467627420788184549877339779451977679203682605",
+          "sigma_degree": 9,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "62730941168388427674991601716090335154627876065021",
+          "sigma_degree": 8,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "348682812722080092497572629788413672056790415312190",
+          "sigma_degree": 7,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "1136994521389140628707472846183955324009901346410558",
+          "sigma_degree": 6,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "2401847917532181528787923863015613386010710992815834",
+          "sigma_degree": 5,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "3622735318016052594825977047978624326306836704741306",
+          "sigma_degree": 4,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "4612997038578783829256914646698111160271334254175535",
+          "sigma_degree": 3,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "4952449438515383182657804140030488342992696395618511",
+          "sigma_degree": 2,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "2217865725516511443567341014577792676606269322096745",
+          "sigma_degree": 1,
+          "tau_degree": 0
+        },
+        {
+          "coefficient": "-1410116807972137070039014583482732164085486263153095",
+          "sigma_degree": 0,
+          "tau_degree": 0
+        }
+      ]
+    ],
+    "primitive_sigma_polynomial": "9699739875*sigma**12 + 41496410970*sigma**11 - 846610243920*sigma**10 - 10549859894154*sigma**9 - 56081730021765*sigma**8 - 173027569716540*sigma**7 - 339093184426920*sigma**6 - 467796452829460*sigma**5 - 560246361633175*sigma**4 - 553097854439102*sigma**3 - 51771900582024*sigma**2 + 380750072251710*sigma - 92072207284295",
+    "vector_space_dimension": 12
+  },
+  "holdout": {
+    "prime": 1009,
+    "status": "exact agreement; excluded from CRT"
+  },
+  "reconstruction_method": "simultaneous LLL common-denominator vectors",
+  "scope": "exact characteristic-zero degree-eight pivot-chart certificate",
+  "stability": "the first three normalized generators are identical after dropping the final build prime; exact Buchberger completion recovers the full five-polynomial basis",
+  "stable_generator_indices_zero_based": [
+    0,
+    1,
+    2
+  ]
+}

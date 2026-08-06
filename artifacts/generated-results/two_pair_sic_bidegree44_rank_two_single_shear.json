@@ -1,0 +1,1574 @@
+{
+  "format": "two-pair-sic-bidegree44-rank-two-single-shear-v1",
+  "field": "characteristic zero",
+  "chart_count": 60,
+  "parameterization": "C=U*B with U[pivot_rows,:]=I_2",
+  "internal_GL2_gauge_removed": true,
+  "B_support": "B[0,r]=B[1,s]=0; all other B entries nonzero",
+  "rank_certificate": "the (r,s)-column minor of B is -B[0,s]*B[1,r]",
+  "moment_certificate": "mu_1=k!*(4-k)!*a*B[ell,k] is nonzero",
+  "global_conclusion": "all sixty dense genuinely non-coordinate single-shear factor tori are SIC-safe",
+  "scope": "one nonpivot entry of U and the dense off-diagonal B torus; multiple shears and coefficient boundaries remain open",
+  "charts": [
+    {
+      "pivot_rows": [
+        0,
+        1
+      ],
+      "factor_column": 0,
+      "shear_row": 2,
+      "gauge": "U[0,:]=(1,0), U[1,:]=(0,1)",
+      "shear": "U[2,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b01*b10",
+      "only_diagonal_coefficient": "a*b02",
+      "mu_1": "4*a*b02",
+      "coefficient_torus_localizer_sha256": "30111764bad65056763d5b5816246e4adec7d801a317687fbe4fde49f6bf4faf",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        1
+      ],
+      "factor_column": 0,
+      "shear_row": 3,
+      "gauge": "U[0,:]=(1,0), U[1,:]=(0,1)",
+      "shear": "U[3,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b01*b10",
+      "only_diagonal_coefficient": "a*b03",
+      "mu_1": "6*a*b03",
+      "coefficient_torus_localizer_sha256": "30111764bad65056763d5b5816246e4adec7d801a317687fbe4fde49f6bf4faf",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        1
+      ],
+      "factor_column": 0,
+      "shear_row": 4,
+      "gauge": "U[0,:]=(1,0), U[1,:]=(0,1)",
+      "shear": "U[4,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b01*b10",
+      "only_diagonal_coefficient": "a*b04",
+      "mu_1": "24*a*b04",
+      "coefficient_torus_localizer_sha256": "30111764bad65056763d5b5816246e4adec7d801a317687fbe4fde49f6bf4faf",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        1
+      ],
+      "factor_column": 1,
+      "shear_row": 2,
+      "gauge": "U[0,:]=(1,0), U[1,:]=(0,1)",
+      "shear": "U[2,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b01*b10",
+      "only_diagonal_coefficient": "a*b12",
+      "mu_1": "4*a*b12",
+      "coefficient_torus_localizer_sha256": "30111764bad65056763d5b5816246e4adec7d801a317687fbe4fde49f6bf4faf",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        1
+      ],
+      "factor_column": 1,
+      "shear_row": 3,
+      "gauge": "U[0,:]=(1,0), U[1,:]=(0,1)",
+      "shear": "U[3,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b01*b10",
+      "only_diagonal_coefficient": "a*b13",
+      "mu_1": "6*a*b13",
+      "coefficient_torus_localizer_sha256": "30111764bad65056763d5b5816246e4adec7d801a317687fbe4fde49f6bf4faf",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        1
+      ],
+      "factor_column": 1,
+      "shear_row": 4,
+      "gauge": "U[0,:]=(1,0), U[1,:]=(0,1)",
+      "shear": "U[4,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b01*b10",
+      "only_diagonal_coefficient": "a*b14",
+      "mu_1": "24*a*b14",
+      "coefficient_torus_localizer_sha256": "30111764bad65056763d5b5816246e4adec7d801a317687fbe4fde49f6bf4faf",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        2
+      ],
+      "factor_column": 0,
+      "shear_row": 1,
+      "gauge": "U[0,:]=(1,0), U[2,:]=(0,1)",
+      "shear": "U[1,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b02*b10",
+      "only_diagonal_coefficient": "a*b01",
+      "mu_1": "6*a*b01",
+      "coefficient_torus_localizer_sha256": "92f5a05fe107153f8719285dfcdcf40874860d0cc06b5c47678c12eff1e3d20d",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        2
+      ],
+      "factor_column": 0,
+      "shear_row": 3,
+      "gauge": "U[0,:]=(1,0), U[2,:]=(0,1)",
+      "shear": "U[3,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b02*b10",
+      "only_diagonal_coefficient": "a*b03",
+      "mu_1": "6*a*b03",
+      "coefficient_torus_localizer_sha256": "92f5a05fe107153f8719285dfcdcf40874860d0cc06b5c47678c12eff1e3d20d",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        2
+      ],
+      "factor_column": 0,
+      "shear_row": 4,
+      "gauge": "U[0,:]=(1,0), U[2,:]=(0,1)",
+      "shear": "U[4,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b02*b10",
+      "only_diagonal_coefficient": "a*b04",
+      "mu_1": "24*a*b04",
+      "coefficient_torus_localizer_sha256": "92f5a05fe107153f8719285dfcdcf40874860d0cc06b5c47678c12eff1e3d20d",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        2
+      ],
+      "factor_column": 1,
+      "shear_row": 1,
+      "gauge": "U[0,:]=(1,0), U[2,:]=(0,1)",
+      "shear": "U[1,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b02*b10",
+      "only_diagonal_coefficient": "a*b11",
+      "mu_1": "6*a*b11",
+      "coefficient_torus_localizer_sha256": "92f5a05fe107153f8719285dfcdcf40874860d0cc06b5c47678c12eff1e3d20d",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        2
+      ],
+      "factor_column": 1,
+      "shear_row": 3,
+      "gauge": "U[0,:]=(1,0), U[2,:]=(0,1)",
+      "shear": "U[3,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b02*b10",
+      "only_diagonal_coefficient": "a*b13",
+      "mu_1": "6*a*b13",
+      "coefficient_torus_localizer_sha256": "92f5a05fe107153f8719285dfcdcf40874860d0cc06b5c47678c12eff1e3d20d",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        2
+      ],
+      "factor_column": 1,
+      "shear_row": 4,
+      "gauge": "U[0,:]=(1,0), U[2,:]=(0,1)",
+      "shear": "U[4,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b02*b10",
+      "only_diagonal_coefficient": "a*b14",
+      "mu_1": "24*a*b14",
+      "coefficient_torus_localizer_sha256": "92f5a05fe107153f8719285dfcdcf40874860d0cc06b5c47678c12eff1e3d20d",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        3
+      ],
+      "factor_column": 0,
+      "shear_row": 1,
+      "gauge": "U[0,:]=(1,0), U[3,:]=(0,1)",
+      "shear": "U[1,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b03*b10",
+      "only_diagonal_coefficient": "a*b01",
+      "mu_1": "6*a*b01",
+      "coefficient_torus_localizer_sha256": "23bf06f310596162638fe3e983ee42fbd4dc9658b9038f41f3c918ecd0155d75",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        3
+      ],
+      "factor_column": 0,
+      "shear_row": 2,
+      "gauge": "U[0,:]=(1,0), U[3,:]=(0,1)",
+      "shear": "U[2,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b03*b10",
+      "only_diagonal_coefficient": "a*b02",
+      "mu_1": "4*a*b02",
+      "coefficient_torus_localizer_sha256": "23bf06f310596162638fe3e983ee42fbd4dc9658b9038f41f3c918ecd0155d75",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        3
+      ],
+      "factor_column": 0,
+      "shear_row": 4,
+      "gauge": "U[0,:]=(1,0), U[3,:]=(0,1)",
+      "shear": "U[4,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b03*b10",
+      "only_diagonal_coefficient": "a*b04",
+      "mu_1": "24*a*b04",
+      "coefficient_torus_localizer_sha256": "23bf06f310596162638fe3e983ee42fbd4dc9658b9038f41f3c918ecd0155d75",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        3
+      ],
+      "factor_column": 1,
+      "shear_row": 1,
+      "gauge": "U[0,:]=(1,0), U[3,:]=(0,1)",
+      "shear": "U[1,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b03*b10",
+      "only_diagonal_coefficient": "a*b11",
+      "mu_1": "6*a*b11",
+      "coefficient_torus_localizer_sha256": "23bf06f310596162638fe3e983ee42fbd4dc9658b9038f41f3c918ecd0155d75",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        3
+      ],
+      "factor_column": 1,
+      "shear_row": 2,
+      "gauge": "U[0,:]=(1,0), U[3,:]=(0,1)",
+      "shear": "U[2,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b03*b10",
+      "only_diagonal_coefficient": "a*b12",
+      "mu_1": "4*a*b12",
+      "coefficient_torus_localizer_sha256": "23bf06f310596162638fe3e983ee42fbd4dc9658b9038f41f3c918ecd0155d75",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        3
+      ],
+      "factor_column": 1,
+      "shear_row": 4,
+      "gauge": "U[0,:]=(1,0), U[3,:]=(0,1)",
+      "shear": "U[4,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b03*b10",
+      "only_diagonal_coefficient": "a*b14",
+      "mu_1": "24*a*b14",
+      "coefficient_torus_localizer_sha256": "23bf06f310596162638fe3e983ee42fbd4dc9658b9038f41f3c918ecd0155d75",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        4
+      ],
+      "factor_column": 0,
+      "shear_row": 1,
+      "gauge": "U[0,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[1,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b10",
+      "only_diagonal_coefficient": "a*b01",
+      "mu_1": "6*a*b01",
+      "coefficient_torus_localizer_sha256": "5b984b4f45a1971d809dda946b82b2fdad8ec0191600e271bf522199cbe68953",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        4
+      ],
+      "factor_column": 0,
+      "shear_row": 2,
+      "gauge": "U[0,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[2,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b10",
+      "only_diagonal_coefficient": "a*b02",
+      "mu_1": "4*a*b02",
+      "coefficient_torus_localizer_sha256": "5b984b4f45a1971d809dda946b82b2fdad8ec0191600e271bf522199cbe68953",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        4
+      ],
+      "factor_column": 0,
+      "shear_row": 3,
+      "gauge": "U[0,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[3,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b10",
+      "only_diagonal_coefficient": "a*b03",
+      "mu_1": "6*a*b03",
+      "coefficient_torus_localizer_sha256": "5b984b4f45a1971d809dda946b82b2fdad8ec0191600e271bf522199cbe68953",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        4
+      ],
+      "factor_column": 1,
+      "shear_row": 1,
+      "gauge": "U[0,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[1,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b10",
+      "only_diagonal_coefficient": "a*b11",
+      "mu_1": "6*a*b11",
+      "coefficient_torus_localizer_sha256": "5b984b4f45a1971d809dda946b82b2fdad8ec0191600e271bf522199cbe68953",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        4
+      ],
+      "factor_column": 1,
+      "shear_row": 2,
+      "gauge": "U[0,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[2,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b10",
+      "only_diagonal_coefficient": "a*b12",
+      "mu_1": "4*a*b12",
+      "coefficient_torus_localizer_sha256": "5b984b4f45a1971d809dda946b82b2fdad8ec0191600e271bf522199cbe68953",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        0,
+        4
+      ],
+      "factor_column": 1,
+      "shear_row": 3,
+      "gauge": "U[0,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[3,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b10",
+      "only_diagonal_coefficient": "a*b13",
+      "mu_1": "6*a*b13",
+      "coefficient_torus_localizer_sha256": "5b984b4f45a1971d809dda946b82b2fdad8ec0191600e271bf522199cbe68953",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        1,
+        2
+      ],
+      "factor_column": 0,
+      "shear_row": 0,
+      "gauge": "U[1,:]=(1,0), U[2,:]=(0,1)",
+      "shear": "U[0,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b02*b11",
+      "only_diagonal_coefficient": "a*b00",
+      "mu_1": "24*a*b00",
+      "coefficient_torus_localizer_sha256": "e86808459f45f75cac192de86888cd9fa40a7074301651a83410057169493d01",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        1,
+        2
+      ],
+      "factor_column": 0,
+      "shear_row": 3,
+      "gauge": "U[1,:]=(1,0), U[2,:]=(0,1)",
+      "shear": "U[3,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b02*b11",
+      "only_diagonal_coefficient": "a*b03",
+      "mu_1": "6*a*b03",
+      "coefficient_torus_localizer_sha256": "e86808459f45f75cac192de86888cd9fa40a7074301651a83410057169493d01",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        1,
+        2
+      ],
+      "factor_column": 0,
+      "shear_row": 4,
+      "gauge": "U[1,:]=(1,0), U[2,:]=(0,1)",
+      "shear": "U[4,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b02*b11",
+      "only_diagonal_coefficient": "a*b04",
+      "mu_1": "24*a*b04",
+      "coefficient_torus_localizer_sha256": "e86808459f45f75cac192de86888cd9fa40a7074301651a83410057169493d01",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        1,
+        2
+      ],
+      "factor_column": 1,
+      "shear_row": 0,
+      "gauge": "U[1,:]=(1,0), U[2,:]=(0,1)",
+      "shear": "U[0,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b02*b11",
+      "only_diagonal_coefficient": "a*b10",
+      "mu_1": "24*a*b10",
+      "coefficient_torus_localizer_sha256": "e86808459f45f75cac192de86888cd9fa40a7074301651a83410057169493d01",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        1,
+        2
+      ],
+      "factor_column": 1,
+      "shear_row": 3,
+      "gauge": "U[1,:]=(1,0), U[2,:]=(0,1)",
+      "shear": "U[3,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b02*b11",
+      "only_diagonal_coefficient": "a*b13",
+      "mu_1": "6*a*b13",
+      "coefficient_torus_localizer_sha256": "e86808459f45f75cac192de86888cd9fa40a7074301651a83410057169493d01",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        1,
+        2
+      ],
+      "factor_column": 1,
+      "shear_row": 4,
+      "gauge": "U[1,:]=(1,0), U[2,:]=(0,1)",
+      "shear": "U[4,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b02*b11",
+      "only_diagonal_coefficient": "a*b14",
+      "mu_1": "24*a*b14",
+      "coefficient_torus_localizer_sha256": "e86808459f45f75cac192de86888cd9fa40a7074301651a83410057169493d01",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        1,
+        3
+      ],
+      "factor_column": 0,
+      "shear_row": 0,
+      "gauge": "U[1,:]=(1,0), U[3,:]=(0,1)",
+      "shear": "U[0,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b03*b11",
+      "only_diagonal_coefficient": "a*b00",
+      "mu_1": "24*a*b00",
+      "coefficient_torus_localizer_sha256": "e81ccf30240a53bd3309a8344241d955d9e921559c3f9dd9e2609de707186eeb",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        1,
+        3
+      ],
+      "factor_column": 0,
+      "shear_row": 2,
+      "gauge": "U[1,:]=(1,0), U[3,:]=(0,1)",
+      "shear": "U[2,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b03*b11",
+      "only_diagonal_coefficient": "a*b02",
+      "mu_1": "4*a*b02",
+      "coefficient_torus_localizer_sha256": "e81ccf30240a53bd3309a8344241d955d9e921559c3f9dd9e2609de707186eeb",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        1,
+        3
+      ],
+      "factor_column": 0,
+      "shear_row": 4,
+      "gauge": "U[1,:]=(1,0), U[3,:]=(0,1)",
+      "shear": "U[4,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b03*b11",
+      "only_diagonal_coefficient": "a*b04",
+      "mu_1": "24*a*b04",
+      "coefficient_torus_localizer_sha256": "e81ccf30240a53bd3309a8344241d955d9e921559c3f9dd9e2609de707186eeb",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        1,
+        3
+      ],
+      "factor_column": 1,
+      "shear_row": 0,
+      "gauge": "U[1,:]=(1,0), U[3,:]=(0,1)",
+      "shear": "U[0,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b03*b11",
+      "only_diagonal_coefficient": "a*b10",
+      "mu_1": "24*a*b10",
+      "coefficient_torus_localizer_sha256": "e81ccf30240a53bd3309a8344241d955d9e921559c3f9dd9e2609de707186eeb",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        1,
+        3
+      ],
+      "factor_column": 1,
+      "shear_row": 2,
+      "gauge": "U[1,:]=(1,0), U[3,:]=(0,1)",
+      "shear": "U[2,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b03*b11",
+      "only_diagonal_coefficient": "a*b12",
+      "mu_1": "4*a*b12",
+      "coefficient_torus_localizer_sha256": "e81ccf30240a53bd3309a8344241d955d9e921559c3f9dd9e2609de707186eeb",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        1,
+        3
+      ],
+      "factor_column": 1,
+      "shear_row": 4,
+      "gauge": "U[1,:]=(1,0), U[3,:]=(0,1)",
+      "shear": "U[4,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b03*b11",
+      "only_diagonal_coefficient": "a*b14",
+      "mu_1": "24*a*b14",
+      "coefficient_torus_localizer_sha256": "e81ccf30240a53bd3309a8344241d955d9e921559c3f9dd9e2609de707186eeb",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        1,
+        4
+      ],
+      "factor_column": 0,
+      "shear_row": 0,
+      "gauge": "U[1,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[0,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b11",
+      "only_diagonal_coefficient": "a*b00",
+      "mu_1": "24*a*b00",
+      "coefficient_torus_localizer_sha256": "549ace62354316aa7f4faf9f9e5e263deb4b3584598bf5f397d91b829f9815d2",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        1,
+        4
+      ],
+      "factor_column": 0,
+      "shear_row": 2,
+      "gauge": "U[1,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[2,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b11",
+      "only_diagonal_coefficient": "a*b02",
+      "mu_1": "4*a*b02",
+      "coefficient_torus_localizer_sha256": "549ace62354316aa7f4faf9f9e5e263deb4b3584598bf5f397d91b829f9815d2",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        1,
+        4
+      ],
+      "factor_column": 0,
+      "shear_row": 3,
+      "gauge": "U[1,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[3,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b11",
+      "only_diagonal_coefficient": "a*b03",
+      "mu_1": "6*a*b03",
+      "coefficient_torus_localizer_sha256": "549ace62354316aa7f4faf9f9e5e263deb4b3584598bf5f397d91b829f9815d2",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        1,
+        4
+      ],
+      "factor_column": 1,
+      "shear_row": 0,
+      "gauge": "U[1,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[0,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b11",
+      "only_diagonal_coefficient": "a*b10",
+      "mu_1": "24*a*b10",
+      "coefficient_torus_localizer_sha256": "549ace62354316aa7f4faf9f9e5e263deb4b3584598bf5f397d91b829f9815d2",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        1,
+        4
+      ],
+      "factor_column": 1,
+      "shear_row": 2,
+      "gauge": "U[1,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[2,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b11",
+      "only_diagonal_coefficient": "a*b12",
+      "mu_1": "4*a*b12",
+      "coefficient_torus_localizer_sha256": "549ace62354316aa7f4faf9f9e5e263deb4b3584598bf5f397d91b829f9815d2",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        1,
+        4
+      ],
+      "factor_column": 1,
+      "shear_row": 3,
+      "gauge": "U[1,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[3,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b11",
+      "only_diagonal_coefficient": "a*b13",
+      "mu_1": "6*a*b13",
+      "coefficient_torus_localizer_sha256": "549ace62354316aa7f4faf9f9e5e263deb4b3584598bf5f397d91b829f9815d2",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        2,
+        3
+      ],
+      "factor_column": 0,
+      "shear_row": 0,
+      "gauge": "U[2,:]=(1,0), U[3,:]=(0,1)",
+      "shear": "U[0,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b03*b12",
+      "only_diagonal_coefficient": "a*b00",
+      "mu_1": "24*a*b00",
+      "coefficient_torus_localizer_sha256": "9e9014683705891f314608ff8ee66f7ba97a76834b492e199c0fb65671036909",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        2,
+        3
+      ],
+      "factor_column": 0,
+      "shear_row": 1,
+      "gauge": "U[2,:]=(1,0), U[3,:]=(0,1)",
+      "shear": "U[1,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b03*b12",
+      "only_diagonal_coefficient": "a*b01",
+      "mu_1": "6*a*b01",
+      "coefficient_torus_localizer_sha256": "9e9014683705891f314608ff8ee66f7ba97a76834b492e199c0fb65671036909",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        2,
+        3
+      ],
+      "factor_column": 0,
+      "shear_row": 4,
+      "gauge": "U[2,:]=(1,0), U[3,:]=(0,1)",
+      "shear": "U[4,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b03*b12",
+      "only_diagonal_coefficient": "a*b04",
+      "mu_1": "24*a*b04",
+      "coefficient_torus_localizer_sha256": "9e9014683705891f314608ff8ee66f7ba97a76834b492e199c0fb65671036909",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        2,
+        3
+      ],
+      "factor_column": 1,
+      "shear_row": 0,
+      "gauge": "U[2,:]=(1,0), U[3,:]=(0,1)",
+      "shear": "U[0,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b03*b12",
+      "only_diagonal_coefficient": "a*b10",
+      "mu_1": "24*a*b10",
+      "coefficient_torus_localizer_sha256": "9e9014683705891f314608ff8ee66f7ba97a76834b492e199c0fb65671036909",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        2,
+        3
+      ],
+      "factor_column": 1,
+      "shear_row": 1,
+      "gauge": "U[2,:]=(1,0), U[3,:]=(0,1)",
+      "shear": "U[1,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b03*b12",
+      "only_diagonal_coefficient": "a*b11",
+      "mu_1": "6*a*b11",
+      "coefficient_torus_localizer_sha256": "9e9014683705891f314608ff8ee66f7ba97a76834b492e199c0fb65671036909",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        2,
+        3
+      ],
+      "factor_column": 1,
+      "shear_row": 4,
+      "gauge": "U[2,:]=(1,0), U[3,:]=(0,1)",
+      "shear": "U[4,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b03*b12",
+      "only_diagonal_coefficient": "a*b14",
+      "mu_1": "24*a*b14",
+      "coefficient_torus_localizer_sha256": "9e9014683705891f314608ff8ee66f7ba97a76834b492e199c0fb65671036909",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        2,
+        4
+      ],
+      "factor_column": 0,
+      "shear_row": 0,
+      "gauge": "U[2,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[0,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b12",
+      "only_diagonal_coefficient": "a*b00",
+      "mu_1": "24*a*b00",
+      "coefficient_torus_localizer_sha256": "4df97a66e0fdc7bcd27497b1cd2e1de2afa931bd27b66b6437e2dbfea1054f59",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        2,
+        4
+      ],
+      "factor_column": 0,
+      "shear_row": 1,
+      "gauge": "U[2,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[1,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b12",
+      "only_diagonal_coefficient": "a*b01",
+      "mu_1": "6*a*b01",
+      "coefficient_torus_localizer_sha256": "4df97a66e0fdc7bcd27497b1cd2e1de2afa931bd27b66b6437e2dbfea1054f59",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        2,
+        4
+      ],
+      "factor_column": 0,
+      "shear_row": 3,
+      "gauge": "U[2,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[3,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b12",
+      "only_diagonal_coefficient": "a*b03",
+      "mu_1": "6*a*b03",
+      "coefficient_torus_localizer_sha256": "4df97a66e0fdc7bcd27497b1cd2e1de2afa931bd27b66b6437e2dbfea1054f59",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        2,
+        4
+      ],
+      "factor_column": 1,
+      "shear_row": 0,
+      "gauge": "U[2,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[0,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b12",
+      "only_diagonal_coefficient": "a*b10",
+      "mu_1": "24*a*b10",
+      "coefficient_torus_localizer_sha256": "4df97a66e0fdc7bcd27497b1cd2e1de2afa931bd27b66b6437e2dbfea1054f59",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        2,
+        4
+      ],
+      "factor_column": 1,
+      "shear_row": 1,
+      "gauge": "U[2,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[1,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b12",
+      "only_diagonal_coefficient": "a*b11",
+      "mu_1": "6*a*b11",
+      "coefficient_torus_localizer_sha256": "4df97a66e0fdc7bcd27497b1cd2e1de2afa931bd27b66b6437e2dbfea1054f59",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        2,
+        4
+      ],
+      "factor_column": 1,
+      "shear_row": 3,
+      "gauge": "U[2,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[3,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b12",
+      "only_diagonal_coefficient": "a*b13",
+      "mu_1": "6*a*b13",
+      "coefficient_torus_localizer_sha256": "4df97a66e0fdc7bcd27497b1cd2e1de2afa931bd27b66b6437e2dbfea1054f59",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        3,
+        4
+      ],
+      "factor_column": 0,
+      "shear_row": 0,
+      "gauge": "U[3,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[0,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b13",
+      "only_diagonal_coefficient": "a*b00",
+      "mu_1": "24*a*b00",
+      "coefficient_torus_localizer_sha256": "e020cea4030d82a585319f6e90a4257eff18f85154916157de30710a27368d3d",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        3,
+        4
+      ],
+      "factor_column": 0,
+      "shear_row": 1,
+      "gauge": "U[3,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[1,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b13",
+      "only_diagonal_coefficient": "a*b01",
+      "mu_1": "6*a*b01",
+      "coefficient_torus_localizer_sha256": "e020cea4030d82a585319f6e90a4257eff18f85154916157de30710a27368d3d",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        3,
+        4
+      ],
+      "factor_column": 0,
+      "shear_row": 2,
+      "gauge": "U[3,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[2,0]=a",
+      "B_zero_positions": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b13",
+      "only_diagonal_coefficient": "a*b02",
+      "mu_1": "4*a*b02",
+      "coefficient_torus_localizer_sha256": "e020cea4030d82a585319f6e90a4257eff18f85154916157de30710a27368d3d",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        3,
+        4
+      ],
+      "factor_column": 1,
+      "shear_row": 0,
+      "gauge": "U[3,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[0,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b13",
+      "only_diagonal_coefficient": "a*b10",
+      "mu_1": "24*a*b10",
+      "coefficient_torus_localizer_sha256": "e020cea4030d82a585319f6e90a4257eff18f85154916157de30710a27368d3d",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        3,
+        4
+      ],
+      "factor_column": 1,
+      "shear_row": 1,
+      "gauge": "U[3,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[1,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b13",
+      "only_diagonal_coefficient": "a*b11",
+      "mu_1": "6*a*b11",
+      "coefficient_torus_localizer_sha256": "e020cea4030d82a585319f6e90a4257eff18f85154916157de30710a27368d3d",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    },
+    {
+      "pivot_rows": [
+        3,
+        4
+      ],
+      "factor_column": 1,
+      "shear_row": 2,
+      "gauge": "U[3,:]=(1,0), U[4,:]=(0,1)",
+      "shear": "U[2,1]=a",
+      "B_zero_positions": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "B_torus_coordinate_count": 8,
+      "exact_rank_two_minor": "-b04*b13",
+      "only_diagonal_coefficient": "a*b12",
+      "mu_1": "4*a*b12",
+      "coefficient_torus_localizer_sha256": "e020cea4030d82a585319f6e90a4257eff18f85154916157de30710a27368d3d",
+      "conclusion": "mu_1 is nonzero on the dense single-shear torus"
+    }
+  ]
+}

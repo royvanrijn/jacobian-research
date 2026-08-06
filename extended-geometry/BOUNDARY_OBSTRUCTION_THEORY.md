@@ -1021,16 +1021,27 @@ relative Kuranishi section over the classical-symbol base.
 
 ### 7.5 Plane Jacobian boundary
 
-No application is available yet.  One must first construct the missing
-Newton bands, a functorial residue/conductor matching map, its coherent
-cokernel \(M\), and the actual class
+The abstract finite-determinacy step is now available in
+[`CONDUCTOR_JET_TRUNCATION.md`](../plane-jc/CONDUCTOR_JET_TRUNCATION.md).
+On a completed branch with conductor exponent \(c_i\), an expression with
+certified contact loss \(\lambda_i\) is determined in the conductor quotient
+by inputs modulo \(t_i^{c_i+\lambda_i}\), and the bound is sharp in general.
+One must still construct a functorial residue/conductor matching map, compile
+its expression losses and band-to-normal valuation orders, form its coherent
+cokernel \(M\), and define the actual class
 
 \[
  \rho\in H^0_Z(M).
 \]
 
 Only then can boundary saturation or conductor descent be invoked.  The
-formalism does not manufacture the ambient module or the residue class.
+truncation theorem can replace a full missing Newton tail by a finite jet
+ledger.  Its dependency-sensitive form isolates the exact input-to-output
+deficit, and its normal-valuation adapter derives available orders from a
+certified frontier of omitted Newton support.  It still does not manufacture
+the ambient module or residue class.
+
+<!-- status-consumer: CJT1 afb70f90ff10f3d7 -->
 
 ## 8. Certificate record
 

@@ -1,0 +1,33 @@
+{
+  "first_break": "H_yy*Q_1=(P_3,y)^2",
+  "format": "hc4-pure-sextic-lower-flag-v1",
+  "immutable_coefficients": [
+    "5/24",
+    "36",
+    "-36",
+    "36",
+    "-1",
+    "-4"
+  ],
+  "residual": "pure-sixth top whose binary quintic correction is passive-affine: c5=a*x^5+x^4*L(y,z)",
+  "resonance_charts": [
+    "triple_finite",
+    "triple_infinity",
+    "double_finite_simple_infinity",
+    "double_infinity_simple_finite",
+    "double_finite_simple_finite"
+  ],
+  "status": {
+    "id": "HC4RSD30",
+    "kind": "hybrid theorem",
+    "result": "every possible quartic direction break and every later transverse tail is impossible, so the complete potential is a fixed cylinder",
+    "scope": "the pure-sixth scalar chart after HC4RSD29, when the stabilized binary quintic correction has nonzero passive second derivative"
+  },
+  "tail_cascade": [
+    "72*x^10*H_yy*(c2_z2)",
+    "-36*x^10*(T_y)^2",
+    "6*x^8*H_yy*T_x2^2",
+    "-36*x^10*(c2_yz)^2",
+    "18*x^6*H_yy*(c2_xz)^2"
+  ]
+}

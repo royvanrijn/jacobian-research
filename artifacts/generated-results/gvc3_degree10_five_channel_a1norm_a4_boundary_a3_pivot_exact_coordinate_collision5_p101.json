@@ -1,0 +1,304 @@
+{
+  "boundary_linear_pivot_localization": {
+    "A_sha256": "87c744c11b0c83e08240f76c9727a932af8642e581f146f8e9fe783065792ec1",
+    "A_terms": 2,
+    "B_sha256": "d2dbb3961614822ccca16aa8d9b48a4c38a527d7a4ff8f2f7e41c38b3eff51f4",
+    "B_terms": 25,
+    "chart": "A*B!=0 (equivalently pivot!=0 and B!=0)",
+    "equation": "A+B*pivot=0",
+    "first_order": 2,
+    "pivot": "a3",
+    "transformed_term_counts": {
+      "3": 648,
+      "4": 7340,
+      "5": 15300
+    }
+  },
+  "coefficient_saturation": [
+    "a0",
+    "a2",
+    "a3",
+    "a4"
+  ],
+  "compile_only": false,
+  "compile_seconds": {
+    "2": 0.014338332926854491,
+    "3": 1.259836292010732,
+    "4": 14.841897708945908,
+    "5": 88.14735108299647
+  },
+  "configuration_discriminant": "lam**3*mu**2 - lam**3*mu - lam**2*mu**3 + lam**2*mu + lam*mu**3 - lam*mu**2",
+  "configuration_parameters": [
+    "lam",
+    "mu"
+  ],
+  "coordinate_boundary_only": true,
+  "coordinate_colon_only": false,
+  "coordinate_component_minor_boundary_only": false,
+  "coordinate_component_minor_only": false,
+  "coordinate_component_quotient_only": false,
+  "degrees": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "directions": 5,
+  "exact_coordinate_boundary_support": {
+    "cleared_restriction_identities_by_construction": 3,
+    "collision_specializations": [
+      {
+        "factorization": [
+          {
+            "exponent": 8,
+            "expression": "lam",
+            "sha256": "7f1b55b860590406f84f9394f4e73356902dad022a8cd6f43221086d3c70699e",
+            "term_count": 1,
+            "total_degree": 1,
+            "variable_degrees": {
+              "a2": 0,
+              "a4": 0,
+              "lam": 1
+            }
+          },
+          {
+            "exponent": 36,
+            "expression": "lam - 1",
+            "sha256": "87e3e538ee767f7342736bfd26fba4d59e9e3edc729b08bd40da2a598427e219",
+            "term_count": 2,
+            "total_degree": 1,
+            "variable_degrees": {
+              "a2": 0,
+              "a4": 0,
+              "lam": 1
+            }
+          },
+          {
+            "exponent": 3,
+            "expression": "a2",
+            "sha256": "2c3a4249d77070058649dbd822dcaf7957586fce428cfb2ca88b94741eda8b07",
+            "term_count": 1,
+            "total_degree": 1,
+            "variable_degrees": {
+              "a2": 1,
+              "a4": 0,
+              "lam": 0
+            }
+          }
+        ],
+        "generator_index": 2,
+        "pivot": "mu",
+        "sha256": "fa9dab398dc0dea754dab19b07ac2adeeaf09523c4ae9f260a681570c31e7f4a",
+        "substitution": "lam",
+        "term_count": 37,
+        "total_degree": 47,
+        "variable_degrees": {
+          "a2": 3,
+          "a4": 0,
+          "lam": 44
+        }
+      }
+    ],
+    "engine": "exact_solved_hypersurface_boundary_support",
+    "exact_gcd_sha256": "755f1de4761ddd422762eedffaab5277f766208529d0cad64fcc35d63d32f84e",
+    "exact_gcd_term_count": 56,
+    "exact_gcd_total_degree": 34,
+    "field": "Q",
+    "individual_chart_factor_valuations": [
+      {
+        "143*a0 + 60*a2": 1,
+        "a0": 1,
+        "lam - mu": 12
+      },
+      {
+        "143*a0 + 60*a2": 2,
+        "a0": 2,
+        "a2": 2,
+        "a4": 1,
+        "lam - 1": 24,
+        "lam - mu": 20
+      },
+      {
+        "143*a0 + 60*a2": 2,
+        "a0": 2,
+        "a2": 2,
+        "lam - 1": 24
+      }
+    ],
+    "individual_chart_residual_sha256": [
+      "ae04a73036c759bf8440611956d5ed151fb253e4a5fff513c481e63c64751e0a",
+      "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "96a4204197db7325a8f9f497fe37bc0e6868133e9b42f24bbe0a0e139736d886"
+    ],
+    "individual_chart_residual_term_counts": [
+      252,
+      1,
+      2926
+    ],
+    "individual_chart_residual_total_degrees": [
+      26,
+      0,
+      58
+    ],
+    "input_generator_count": 3,
+    "input_generator_pivot_degrees": [
+      3,
+      5,
+      7
+    ],
+    "input_generator_term_counts": [
+      648,
+      7340,
+      15300
+    ],
+    "leading_coefficient_term_count": 13,
+    "leading_coefficient_total_degree": 13,
+    "pivot": "a0",
+    "remainder_term_count": 12,
+    "remainder_total_degree": 17,
+    "restriction_sha256": [
+      "8862e019a76dac1346aaf03ebca1fe33c7555e4b5af9459b3e078347c129e7c7",
+      "d71868127c01f09f2ab61cfb24a79516739305c7f0a213228bdf89b450b0b60c",
+      "d0ac4b3e2ba726bf1db53dc4dbe20be60a7f1798d4e561159adeb001fd46abdc"
+    ],
+    "restriction_term_counts": [
+      3284,
+      7581,
+      38015
+    ],
+    "restriction_total_degrees": [
+      72,
+      115,
+      152
+    ],
+    "scope_warning": "boundary common-divisor support only; ambient colon and lower-codimension hypersurface torsion are not classified",
+    "seconds": 259.28569429100025,
+    "status": "completed",
+    "support_complete": 1,
+    "support_residual_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+    "support_residual_term_count": 1,
+    "support_residual_total_degree": 0,
+    "support_restrictions": {
+      "143*a0 + 60*a2": {
+        "sha256": "44ab19f17427c109afe0e9293309954914e51fcae608c37f120f1c696ba4b34e",
+        "term_count": 25,
+        "total_degree": 17
+      },
+      "a0": {
+        "sha256": "30d3a727e37cf3a9ea22dad15280086321fd85d74612c6f0f8ab972a62d77ab2",
+        "term_count": 12,
+        "total_degree": 17
+      }
+    },
+    "support_valuations": {
+      "143*a0 + 60*a2": 1,
+      "a0": 1
+    }
+  },
+  "exact_generic_primary_result": null,
+  "exact_local_primary_result": null,
+  "exact_result": null,
+  "format": "gvc3-many-coherent-channels-research-v1",
+  "groups": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ]
+  ],
+  "linear_pivot_boundary": {
+    "A_sha256": "aadaea1f8b51dc7c0298cd8dab6dc87c018f1dfa85680ab56d123044c0ff17c8",
+    "A_terms": 27,
+    "B_sha256": "4c505ac5a1b4936202ff1914e6bb2f4285b388eb0e9f76d0233fb90edcd70b42",
+    "B_terms": 244,
+    "chart": "B=0; the first moment and pivot!=0 force A=0",
+    "equations": "A=B=0 for A+B*pivot=0",
+    "pivot": "a4",
+    "source_order": 3
+  },
+  "linear_pivot_localization": null,
+  "linear_pivot_scan": null,
+  "linear_pivot_scan_max_order": null,
+  "max_order": 5,
+  "modular_results": [
+    {
+      "basis_size": null,
+      "cutoff": 0,
+      "dimension": null,
+      "method": "solved_hypersurface_coordinate_boundary_only",
+      "prime": 101,
+      "seconds": 0.6656071250326931,
+      "solved_hypersurface_coordinate_colon": {
+        "boundary_gcd_degree": 34,
+        "boundary_gcd_preview": "a2^2*lam^32-20*a2^2*lam^31+5*a2*lam^32-12*a2^2*lam^30-50*a2*lam^31-19*lam^32-36*a2^3*lam^28-29*a2^2*lam^29+23*a2*lam^30-16*a2^3*lam^27+8*a2^2*lam^28+6*a2*lam^29-34*a2^3*lam^26+19*a2^2*lam^27+40*a2*lam^28-9*a2^3*lam^25-5*a2^2*lam^26-48*a2*lam^27-33*a2^3*lam^24-49*a2^2*lam^25+40*a2*lam^26+38*a2^3*lam^23+14*a2^2*lam^24+6*a2*lam^25+27*a2^3*lam^22-23*a2^2*lam^23+23*a2*lam^24-4*a2^3*lam^21-10*a2^2*lam^22-50*a2*lam^23-43*a2^3*lam^20-23*a2^2*lam^21+5*a2*lam^22+22*a2^3*lam^19+14*a2^2*lam^20+32*a2^3*lam^18-49*a2^2*lam^19+11*a2^3*lam^17-5*a2^2*lam^18+32*a2^3*lam^16+19*a2^2*lam^17+22*a2^3*lam^15+8*a2^2*lam^16-43*a2^3*lam^14-29*a2^2*lam^15-4*a2^3*lam^13-12*a2^2*lam^14+27*a2^3*lam^12-20*a2^2*lam^13+38*a2^3*lam^11+a2^2*lam^12-33*a2^3*lam^10-9*a2^3*lam^9-34*a2^3*lam^8-16*a2^3*lam^7-36*a2^3*lam^6",
+        "boundary_gcd_sha256": "8ddb81a4d8b029844316477648a56768c2b54435ab342bc45b2589b8899f03d4",
+        "boundary_input_sha256": "12d6f9ee1f5c000c0d69a0b17acaba9749888389bde5b2d618e01e45d354e3d5",
+        "colon_skipped": 1,
+        "component_minor": 0,
+        "component_quotient": 0,
+        "coordinate_variables": [
+          "delta",
+          "a2",
+          "a4",
+          "lam",
+          "mu"
+        ],
+        "divisorial_boundary_component_absent": 0,
+        "engine": "solved_hypersurface_coordinate_colon",
+        "input_generator_count": 3,
+        "input_generator_pivot_degrees": [
+          3,
+          5,
+          7
+        ],
+        "input_generator_term_counts": [
+          643,
+          7298,
+          15170
+        ],
+        "input_sha256": "a34b37faa59ecc435fde8dde91b797ff45d56130d0ff8feb870d9f4a07321182",
+        "leading_coefficient_degree": 13,
+        "leading_coefficient_terms": 13,
+        "minor_boundary_only": 0,
+        "normal_coordinate": "delta",
+        "pivot": "a0",
+        "remainder_degree": 17,
+        "remainder_terms": 12,
+        "seconds": 0.6656071250326931,
+        "status": "completed",
+        "stderr": "",
+        "stdout_tail": "RESULT_BEGIN\nboundary_gcd_degree=34\nBOUNDARY_GCD_BEGIN\na2^2*lam^32-20*a2^2*lam^31+5*a2*lam^32-12*a2^2*lam^30-50*a2*lam^31-19*lam^32-36*a2^3*lam^28-29*a2^2*lam^29+23*a2*lam^30-16*a2^3*lam^27+8*a2^2*lam^28+6*a2*lam^29-34*a2^3*lam^26+19*a2^2*lam^27+40*a2*lam^28-9*a2^3*lam^25-5*a2^2*lam^26-48*a2*lam^27-33*a2^3*lam^24-49*a2^2*lam^25+40*a2*lam^26+38*a2^3*lam^23+14*a2^2*lam^24+6*a2*lam^25+27*a2^3*lam^22-23*a2^2*lam^23+23*a2*lam^24-4*a2^3*lam^21-10*a2^2*lam^22-50*a2*lam^23-43*a2^3*lam^20-23*a2^2*lam^21+5*a2*lam^22+22*a2^3*lam^19+14*a2^2*lam^20+32*a2^3*lam^18-49*a2^2*lam^19+11*a2^3*lam^17-5*a2^2*lam^18+32*a2^3*lam^16+19*a2^2*lam^17+22*a2^3*lam^15+8*a2^2*lam^16-43*a2^3*lam^14-29*a2^2*lam^15-4*a2^3*lam^13-12*a2^2*lam^14+27*a2^3*lam^12-20*a2^2*lam^13+38*a2^3*lam^11+a2^2*lam^12-33*a2^3*lam^10-9*a2^3*lam^9-34*a2^3*lam^8-16*a2^3*lam^7-36*a2^3*lam^6\nBOUNDARY_GCD_END\nRESULT_END\n",
+        "transformed_compact_expression_lengths": [
+          12941,
+          163757,
+          354433
+        ]
+      },
+      "status": "completed",
+      "unit": null
+    }
+  ],
+  "moment_term_counts": {
+    "2": 0,
+    "3": 271,
+    "4": 1142,
+    "5": 3686
+  },
+  "normalization": "a1=1; first three direction points are infinity, zero, one",
+  "saturation_method": "rabinowitsch",
+  "scope": "one declared direction-partition and nonzero-coefficient chart",
+  "solved_hypersurface_coordinate_colon": true,
+  "specialization": {},
+  "status": "bounded modular discovery; not a characteristic-zero theorem"
+}

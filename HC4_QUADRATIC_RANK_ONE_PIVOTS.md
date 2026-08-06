@@ -291,10 +291,12 @@ reduced Hessian pencil:
 - rank two is the triangular classification HC4RSD9;
 - rank one is the triangular classification HC4RSD10.
 
-The remaining scalar mechanisms are higher-degree nonlinear pivots and
-nonsingular reduced pencils with exact determinant-term cancellation.
-Moving matrix-pivot planes and genuinely mixed/coisotropic reductions also
-remain open.
+HC4RSD11--HC4RSD16 additionally close every quadratic zero-corner parent
+and reduce every nonlinear quadratic nonzero-corner pencil to HC2 or
+exactly the JC2 cotangent packet. The remaining scalar mechanisms require a
+pencil direction of degree at least three, besides the affine embedding of
+direct HC4. Moving matrix-pivot planes and genuinely mixed/coisotropic
+reductions also remain open.
 
 ## 6. Reproduction
 

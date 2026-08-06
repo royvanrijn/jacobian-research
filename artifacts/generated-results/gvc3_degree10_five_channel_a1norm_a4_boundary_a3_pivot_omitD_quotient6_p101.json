@@ -1,0 +1,118 @@
+{
+  "boundary_linear_pivot_localization": {
+    "A_sha256": "87c744c11b0c83e08240f76c9727a932af8642e581f146f8e9fe783065792ec1",
+    "A_terms": 2,
+    "B_sha256": "d2dbb3961614822ccca16aa8d9b48a4c38a527d7a4ff8f2f7e41c38b3eff51f4",
+    "B_terms": 25,
+    "chart": "A*B!=0 (equivalently pivot!=0 and B!=0)",
+    "equation": "A+B*pivot=0",
+    "first_order": 2,
+    "pivot": "a3",
+    "transformed_term_counts": {
+      "3": 648,
+      "4": 7340,
+      "5": 15300,
+      "6": 59418
+    }
+  },
+  "coefficient_saturation": [
+    "a0",
+    "a2",
+    "a3",
+    "a4"
+  ],
+  "compile_only": false,
+  "compile_seconds": {
+    "2": 0.019456792040728033,
+    "3": 1.294649959076196,
+    "4": 15.283839292009361,
+    "5": 88.89125874999445,
+    "6": 375.90871737501584
+  },
+  "configuration_discriminant": "lam**3*mu**2 - lam**3*mu - lam**2*mu**3 + lam**2*mu + lam*mu**3 - lam*mu**2",
+  "configuration_parameters": [
+    "lam",
+    "mu"
+  ],
+  "coordinate_boundary_only": false,
+  "coordinate_colon_only": false,
+  "coordinate_component_minor_boundary_only": false,
+  "coordinate_component_minor_only": false,
+  "coordinate_component_quotient_only": false,
+  "degrees": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "directions": 5,
+  "exact_coordinate_boundary_support": null,
+  "exact_generic_primary_result": null,
+  "exact_local_primary_result": null,
+  "exact_result": null,
+  "format": "gvc3-many-coherent-channels-research-v1",
+  "groups": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ]
+  ],
+  "linear_pivot_boundary": {
+    "A_sha256": "aadaea1f8b51dc7c0298cd8dab6dc87c018f1dfa85680ab56d123044c0ff17c8",
+    "A_terms": 27,
+    "B_sha256": "4c505ac5a1b4936202ff1914e6bb2f4285b388eb0e9f76d0233fb90edcd70b42",
+    "B_terms": 244,
+    "chart": "B=0; the first moment and pivot!=0 force A=0",
+    "equations": "A=B=0 for A+B*pivot=0",
+    "pivot": "a4",
+    "source_order": 3
+  },
+  "linear_pivot_localization": null,
+  "linear_pivot_scan": null,
+  "linear_pivot_scan_max_order": null,
+  "max_order": 6,
+  "modular_results": [
+    {
+      "input_sha256": "3e5402b5c70f5bd9d8050a71b5976d9634215c4ef5a9dde47d370af6dc7eb846",
+      "method": "quotient_saturation",
+      "prime": 101,
+      "seconds": 900.0901573749725,
+      "status": "timeout",
+      "stderr": "",
+      "stdout_tail": ""
+    }
+  ],
+  "moment_term_counts": {
+    "2": 0,
+    "3": 271,
+    "4": 1142,
+    "5": 3686,
+    "6": 9263
+  },
+  "normalization": "a1=1; first three direction points are infinity, zero, one",
+  "omitted_nonlinear_localization_factor": {
+    "expression_text": "38*a0*a2*lam**12 - 456*a0*a2*lam**11 + 2508*a0*a2*lam**10 - 8360*a0*a2*lam**9 + 18810*a0*a2*lam**8 - 30096*a0*a2*lam**7 + 35112*a0*a2*lam**6 - 30096*a0*a2*lam**5 + 18810*a0*a2*lam**4 - 8360*a0*a2*lam**3 + 2508*a0*a2*lam**2 - 456*a0*a2*lam + 38*a0*a2 + 48*a2*lam**16 - 480*a2*lam**15 + 2160*a2*lam**14 - 5760*a2*lam**13 + 10080*a2*lam**12 - 12096*a2*lam**11 + 10080*a2*lam**10 - 5760*a2*lam**9 + 2160*a2*lam**8 - 480*a2*lam**7 + 48*a2*lam**6 + 19*lam**16",
+    "multiplicity": 1,
+    "sha256": "763f90aa3b45091c472616c0d20a033e538c13e41a080927cf0a4163b95c884c",
+    "terms": 25,
+    "total_degree": 17
+  },
+  "report_quotient_dimension": true,
+  "saturation_method": "quotient",
+  "scope": "one declared direction-partition and nonzero-coefficient chart",
+  "solved_hypersurface_coordinate_colon": false,
+  "specialization": {},
+  "status": "bounded modular discovery; not a characteristic-zero theorem"
+}

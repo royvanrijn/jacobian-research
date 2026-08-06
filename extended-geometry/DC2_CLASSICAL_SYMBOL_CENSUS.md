@@ -199,16 +199,17 @@ linear obstruction module is zero. For `I3,6`, corrections must respect the
 intermediate block algebra; treating the degree-18 composite as a primitive
 single incidence would discard its defining feature.
 
-The first success criterion has now been reached on `W6`. The
-[degree-six relative quantization theorem](DEGREE_SIX_RELATIVE_QUANTIZATION_OBSTRUCTION.md)
-constructs the coherent order-five strong-cocycle/Fitting presentation over
-\(\mathbb Q(\sigma,\tau)\) on the \(\kappa=-9\) slice. Its correction and
-lower-lift span has rank \(41\), while adjoining the constant defect raises
-the rank to \(42\). Hence a nonempty open of this two-dimensional family is
-uniformly obstructed at \(\hbar^5\) in the complete parity-preserving,
-root-weight-homogeneous inherited filtration. Other weights, odd
-corrections, wider filtrations, and the remaining three census packets stay
-open.
+The first success criterion was reached on `W6` by the
+[degree-six relative quantization theorem](DEGREE_SIX_RELATIVE_QUANTIZATION_OBSTRUCTION.md).
+The subsequent
+[classical-symbol family search](DC2_CLASSICAL_SYMBOL_FAMILY_SEARCH.md)
+computes its exceptional strong-cocycle locus. A residue-degree-four
+component is reconstructed over \(\mathbb Q\); its genuine order-five lift
+scheme is \(\mathbb A^4\) over the quartic residue field, but its complete
+inherited order-seven ideal is the unit ideal. Thus this component is closed
+in the parity-preserving, root-weight-homogeneous filtration. Other weights,
+odd corrections, wider filtrations, and genuinely different noninjective
+classical families stay open.
 
 ## Reproduction
 

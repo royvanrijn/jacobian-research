@@ -419,9 +419,30 @@ and the four-distinct \(B=0\) boundary are excluded exactly.  The remaining
 four-distinct \(B\ne0\) saturated ideal is \([1]\) modulo
 \(101,103,107\) through moment seven, but still lacks a characteristic-zero
 certificate and is not promoted.  Thus exact promotion of that single chart,
-the five four-of-five degree-ten coherent profiles, the degree-ten
+the degree-ten pairwise-distinct characteristic-zero charts, the degree-ten
 five-channel profile, noncoherent harmonic vectors, and repeated profiles
-remain active.
+remain active.  On the pairwise-distinct coefficient torus, all five
+four-of-five degree-ten profiles now have quotient-saturation basis \([1]\)
+through moment seven modulo \(101,103,107\); see
+[`GVC3_DEGREE10_DISTINCT_FOUR_CHANNEL_FRONTIER.md`](GVC3_DEGREE10_DISTINCT_FOUR_CHANNEL_FRONTIER.md).
+That three-prime computation is discovery only and is not used as a lower
+bound over characteristic zero.  The same note now gives exact rational unit
+bases for all 52 new direction-collision charts through moment nine.  Together
+with the thirteen radially equivalent degree-eight collision charts, this
+closes every four-channel direction-collision boundary in balanced degree ten.
+For the five-channel profile, the same note selects the \(a_4\) linear pivot
+and exactly excludes its exceptional \(A=B=0\) boundary on the rational
+cross-ratio slice \((\lambda,\mu)=(2,3)\) through moment six.  On the generic
+nested \(a_3\) chart, the cutoff-four \(D\)-supported primary locus is now
+stratified exactly: its generic lengths are 12 and 18, and the putative
+deeper stratum lies on an already inverted boundary.  At cutoff five, the
+third restriction is a unit on \(D=0,\lambda=\mu\) after chart factors are
+removed, which closes the entire localized \(D=0\) fibre over
+\(\mathbb Q\).  The residual \(D\ne0\) generic boundary and the main pivot
+chart are still open.  Consequently these advances do not yet prove the
+global minimum: exact promotion of the pairwise-distinct modular charts,
+the two residual five-channel charts, noncoherent harmonic vectors, and
+repeated-profile strata remain necessary.
 
 ## 9. Reproduction
 

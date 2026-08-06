@@ -1,0 +1,97 @@
+{
+  "coefficient_saturation": [
+    "a1",
+    "a2",
+    "a3",
+    "a4"
+  ],
+  "compile_only": false,
+  "compile_seconds": {
+    "2": 0.014378875028342009,
+    "3": 1.286116375005804
+  },
+  "configuration_discriminant": "lam**3*mu**2 - lam**3*mu - lam**2*mu**3 + lam**2*mu + lam*mu**3 - lam*mu**2",
+  "configuration_parameters": [
+    "lam",
+    "mu"
+  ],
+  "degrees": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "directions": 5,
+  "exact_result": null,
+  "format": "gvc3-many-coherent-channels-research-v1",
+  "groups": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ]
+  ],
+  "linear_pivot_boundary": {
+    "A_sha256": "5f8700b600fe75e0742cbb32ac08480c8aa48bdbe60f18042f0063439883223f",
+    "A_terms": 27,
+    "B_sha256": "aee75e043bdf49f15a4655b3cb646bf42f025024891706d079e9ca6b7825bdf0",
+    "B_terms": 244,
+    "chart": "B=0; the first moment and pivot!=0 force A=0",
+    "equations": "A=B=0 for A+B*pivot=0",
+    "pivot": "a4",
+    "source_order": 3
+  },
+  "linear_pivot_localization": null,
+  "linear_pivot_scan": null,
+  "linear_pivot_scan_max_order": null,
+  "max_order": 3,
+  "modular_results": [
+    {
+      "input_sha256": "d2cc79e2719d22ac132bbccaca9dd2ab82bf2286ec7d11049cbecb31a33b4963",
+      "method": "quotient_saturation",
+      "prime": 101,
+      "seconds": 60.01108970795758,
+      "status": "timeout",
+      "stderr": "",
+      "stdout_tail": ""
+    },
+    {
+      "input_sha256": "c58493f7dfe037a04f7256f281276b58cb9a1892e829d1c6f86b9d5fe11019b8",
+      "method": "quotient_saturation",
+      "prime": 103,
+      "seconds": 60.009850375005044,
+      "status": "timeout",
+      "stderr": "",
+      "stdout_tail": ""
+    },
+    {
+      "input_sha256": "1c6e7a34da77176b9480660af85b1f14b9edf156358c74c9cc5820b387e7fd19",
+      "method": "quotient_saturation",
+      "prime": 107,
+      "seconds": 60.00983208301477,
+      "status": "timeout",
+      "stderr": "",
+      "stdout_tail": ""
+    }
+  ],
+  "moment_term_counts": {
+    "2": 0,
+    "3": 271
+  },
+  "normalization": "a0=1; first three direction points are infinity, zero, one",
+  "saturation_method": "quotient",
+  "scope": "one declared direction-partition and nonzero-coefficient chart",
+  "specialization": {},
+  "status": "bounded modular discovery; not a characteristic-zero theorem"
+}

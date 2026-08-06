@@ -462,3 +462,115 @@ pivots with an identically singular reduced pencil. What remains is the
 higher-degree nonlinear scalar branch, nonsingular pencils with exact
 determinant-term cancellation, and genuinely mixed/coisotropic or moving
 matrix pivots.
+
+HC4RSD11--HC4RSD16 in
+[`HC4_SCALAR_CANCELLATION_DICHOTOMY.md`](HC4_SCALAR_CANCELLATION_DICHOTOMY.md)
+resolve most of that exact-cancellation qualification. If the scalar pivot
+corner is nonzero, completing the square is an exact equivalence with a
+four-variable constant-Hessian pencil \(\psi+sA\), including its gradient
+collisions. If the corner is zero and \(D_vA\) is a nonzero constant, the
+parent gradient factors fiberwise through a ternary constant-Hessian
+gradient and is a polynomial automorphism. The bordered unit puts every
+quadratic zero-corner pivot in this graph-coordinate class.
+
+For a quadratic nonzero-corner pencil, pivot-Hessian rank four is
+impossible. Rank three has the complete triangular form
+
+\[
+A=xy+\frac12z^2,\qquad
+\psi=wx+y(\alpha z+\beta(x))+G(x,z).
+\]
+
+In rank two, the passive-rank-one component reduces to HC2, while passive
+rank zero is exactly the cotangent lift
+
+\[
+\psi=z\,b(x,y)+w\,c(x,y)+D(x,y),
+\qquad \det J(b,c)\in K^\times,
+\]
+
+so invertibility is equivalent to JC2. In rank one, the two ternary
+singular-Hessian normal forms reduce to HC2 or the same cotangent JC2
+packet. The bordered unit freezes a rationally \(x\)-moving kernel in the
+constant-kernel type. In the exceptional type its transverse-coordinate
+coefficient likewise forces the distinguished covector to be projectively
+constant, unless the chart has already collapsed to the constant-kernel
+type. Thus every quadratic scalar pencil reduces to HC2 or exactly JC2.
+
+HC4RSD17--HC4RSD40 in
+[`HC4_HIGHER_DEGREE_PENCIL_OBSTRUCTIONS.md`](HC4_HIGHER_DEGREE_PENCIL_OBSTRUCTIONS.md)
+continue the same cancellation analysis without assuming a quadratic
+direction. The global pencil is exactly a polynomial nilpotent deformation
+
+\[
+N=(\operatorname{Hess}\psi)^{-1}\operatorname{Hess}A,
+\qquad N^{\mathsf T}\operatorname{Hess}\psi
+=\operatorname{Hess}\psi\,N,
+\]
+
+with both metric products Hessian-integrable. Every direction of generic
+Hessian rank one reduces, in every degree, to HC2 or the JC2 cotangent
+packet. For a cubic direction whose leading Hessian has rank three, the
+sole moving-kernel form is
+
+\[
+A=wz+y b(z)+G(x,z),
+\qquad v=(0,1,0,-b'(z)).
+\]
+
+The (s^3)-face makes (v) null for the base Hessian. Exact integration
+and the next two faces force a pair of incompatible polynomial units when
+(b''\ne0). Hence the moving cubic packet is empty. In the remaining
+constant-kernel component, the full ternary bordered determinant restricts
+to a binary tangent pencil. Its two singular forms are proportional and
+share one ruling. A fixed ruling makes the border coefficient a cylinder,
+which reduces to HC2 or exactly the JC2 cotangent lift. The universal-field
+identity fixes all homogeneous rulings in every degree. The complete cubic
+and quartic correction calculations fix every arbitrary border coefficient
+through degree four; in particular the only apparent non-pure quartic Schur
+solution dies by the coefficient (-3b^4x^2y^2z^2/4). The quintic
+simple-root square and repeated-root Schur charts then close every non-pure
+leading quintic, including the two apparent exceptions at their next faces.
+The pure-fifth passive-Hessian chart is closed by HC4BL5: its curved
+corrections have unit ideals and every surviving lower tail aligns with one
+constant passive form. Thus every degree-five border coefficient closes.
+The simple-root square also closes squarefree leading binary forms in every
+degree. Its double-root valuation continuation closes the generic
+discriminant stratum as well. The arbitrary-multiplicity root-order formula
+then exposes every resonance. In degree six, exact weighted faces close all
+non-pure leading sextics. For the remaining pure-sixth top, the first three
+collision faces stabilize one constant passive direction through the
+quintic correction. If that correction has nonzero passive curvature, the
+factorized lower-direction equation and its repeated-root charts force the
+whole potential to remain binary. Completing the square in the remaining
+passive-affine quintic term then closes every curved completed quartic. The
+last two-linear-form tower through degrees five and four is also closed:
+its independent packet has incompatible finite, infinity, and base faces,
+while every dependent-rank endpoint is a fixed cylinder by the exact
+(D D''-2(D')^2) and Wronskian-square obstructions. Thus every scalar
+degree-six leading direction closes. The valuation sieve and seventeen
+complete discriminant-open weighted faces then close every non-pure septic,
+including all same-weight cubic transverse tails. The pure-seventh residue
+has first faces (49x^{12}\det\operatorname{Hess}_{y,z}(c_6)) and
+((49/2)x^{12}(H_6)_{yy}(2(c_5)_{zz}-(8/7)k^2x^3)), giving the normal form
+(c_6=H_6(x,y)+kx^5z) and the forced curved-chart quintic square. The complete
+degree-eighteen face is a Hessian factor minus
+((7x^2(P_4)_y-4k(H_6)_y)^2); it kills (z^4), fixes the quartic (z^3)-tail to
+(k^3xz^3/49), and leaves one binary root-divisibility identity. For
+(k\ne0), the immutable low-(x) coefficients force ((H_6)_{yy}) to contain
+(x^2); two terminal product--square factorizations leave exactly six
+packets, all killed in the next two faces. At (k=0), retaining the cubic
+(z^3)-tail gives a coupled Wronskian whose complete nonzero solution is the
+ordered two-linear-form packet
+((H_6)_{yy}=LE^3,(P_4)_y=LE^2,D_2=LE); all five projective charts close.
+The zero-((P_4)_y) recurrence also closes by four normalized coefficients
+and the exact nonlinear-coordinate identities. On the remaining
+passive-affine sextic boundary, a shifted passive-Hessian face closes every
+curved quintic correction. Its two-linear-form tower is now reduced to
+eight degree-fifteen quartic direction packets. Their common quartic-polar
+rank-one system has only a zero stratum and a square-Hessian resonance. The
+resonances all have immutable lower coefficients, while the only nonempty
+zero strata satisfy a global affine-transverse cylinder identity. Thus all
+eight packets close and every scalar degree-seven leading direction is
+fixed. The next degree-based scalar frontier is the repeated-root locus in
+degree at least eight.

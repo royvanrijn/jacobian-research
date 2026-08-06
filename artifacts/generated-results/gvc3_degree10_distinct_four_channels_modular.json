@@ -1,0 +1,433 @@
+{
+  "all_profiles_unit_at_all_declared_primes": true,
+  "balanced_degree": 10,
+  "coefficient_saturation": "a1*a2*a3",
+  "conclusion": "every pairwise-distinct degree-ten four-channel profile is a modular unit candidate through moment seven",
+  "configuration_saturation": "lam*(lam-1)",
+  "format": "gvc3-degree10-distinct-four-channels-modular-v1",
+  "laplacian_power": 5,
+  "max_moment_order": 7,
+  "moment_sequence_promotion_gate": {
+    "reference": "gvc3_four_coherent_channels.json",
+    "type": "finite proper-hypergeometric Wick/occupation sum"
+  },
+  "normalization": "directions infinity, zero, one, lam; a0=1",
+  "not_checked_here": [
+    "characteristic-zero promotion",
+    "direction-collision strata",
+    "the five-channel degree-ten profile",
+    "multiplier survival, because no pure-moment survivor was produced"
+  ],
+  "per_saturation_timeout_seconds": 900,
+  "primes": [
+    101,
+    103,
+    107
+  ],
+  "profiles": [
+    {
+      "all_declared_primes_unit": true,
+      "harmonic_degrees": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "modular_saturations": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 7,
+          "dimension": -1,
+          "elapsed_ticks": 17,
+          "input_sha256": "e73a1889353f04db9c3d45a1fb1d4d2899cac0ea82b24ccc99d552278c3ca840",
+          "method": "quotient_saturation",
+          "prime": 101,
+          "returncode": 0,
+          "saturation_exponent": 1,
+          "seconds": 19.76758899993729,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 16.70 sec\nRESULT_BEGIN\ncutoff=7\nunit=1\nbasis_size=1\ndimension=-1\nsaturation_exponent=1\nelapsed_ticks=17\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 7,
+          "dimension": -1,
+          "elapsed_ticks": 17,
+          "input_sha256": "bab54d148ca79fd3e73f35873735bca3e8bbcaac456a667601a559ccc0f99ca0",
+          "method": "quotient_saturation",
+          "prime": 103,
+          "returncode": 0,
+          "saturation_exponent": 1,
+          "seconds": 19.93455762497615,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 17.16 sec\nRESULT_BEGIN\ncutoff=7\nunit=1\nbasis_size=1\ndimension=-1\nsaturation_exponent=1\nelapsed_ticks=17\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 7,
+          "dimension": -1,
+          "elapsed_ticks": 18,
+          "input_sha256": "26a954e410f22afd63063945fa28534c2ad498093b093e3d943d7da92f24d1d0",
+          "method": "quotient_saturation",
+          "prime": 107,
+          "returncode": 0,
+          "saturation_exponent": 1,
+          "seconds": 21.11750862491317,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 18.01 sec\nRESULT_BEGIN\ncutoff=7\nunit=1\nbasis_size=1\ndimension=-1\nsaturation_exponent=1\nelapsed_ticks=18\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "moment_sha256": {
+        "3": "5f8700b600fe75e0742cbb32ac08480c8aa48bdbe60f18042f0063439883223f",
+        "4": "c78ff121427b170415caaed35e55105e408ef6a293dbf96d26a235ae28579a22",
+        "5": "3bbe796a12e0d567abf0b5f225c1116f1b8b61610fa5c0d8b0ee95d12b718f56",
+        "6": "d02666a248115fdef598a387aec9878246a08402375f858f09af8c6c91e122d9",
+        "7": "21985e96c8ec090a296b9dc1de416a7939870092de921c01ab823779db333f02"
+      },
+      "moment_term_counts": {
+        "2": 0,
+        "3": 27,
+        "4": 53,
+        "5": 112,
+        "6": 260,
+        "7": 417
+      }
+    },
+    {
+      "all_declared_primes_unit": true,
+      "harmonic_degrees": [
+        2,
+        4,
+        6,
+        10
+      ],
+      "modular_saturations": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 7,
+          "dimension": -1,
+          "elapsed_ticks": 14,
+          "input_sha256": "61ffd5d3bde53877095de47ccc9bb54d8ed94307b95c57bf9bcfee3faab868f8",
+          "method": "quotient_saturation",
+          "prime": 101,
+          "returncode": 0,
+          "saturation_exponent": 1,
+          "seconds": 16.700201291008852,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 14.44 sec\nRESULT_BEGIN\ncutoff=7\nunit=1\nbasis_size=1\ndimension=-1\nsaturation_exponent=1\nelapsed_ticks=14\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 7,
+          "dimension": -1,
+          "elapsed_ticks": 17,
+          "input_sha256": "4a30ede6aa498216dec1572e460c44f7a2079ce9f7783517a25e256d3057167d",
+          "method": "quotient_saturation",
+          "prime": 103,
+          "returncode": 0,
+          "saturation_exponent": 1,
+          "seconds": 19.424017457989976,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 16.98 sec\nRESULT_BEGIN\ncutoff=7\nunit=1\nbasis_size=1\ndimension=-1\nsaturation_exponent=1\nelapsed_ticks=17\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 7,
+          "dimension": -1,
+          "elapsed_ticks": 16,
+          "input_sha256": "54f28cfd8851aded6ccc7484ef621eaccee9b2677fd83de969c6853deba1db45",
+          "method": "quotient_saturation",
+          "prime": 107,
+          "returncode": 0,
+          "saturation_exponent": 1,
+          "seconds": 18.489459917065687,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 16.06 sec\nRESULT_BEGIN\ncutoff=7\nunit=1\nbasis_size=1\ndimension=-1\nsaturation_exponent=1\nelapsed_ticks=16\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "moment_sha256": {
+        "3": "6c7200f33e6be4115e340e6f24535f951dbd4504a3b9aba635a080da4c3a123a",
+        "4": "573d5af7eaac356da3441ab031edbd9ae14c494c5bb097a96a0a2a2d859f5c3a",
+        "5": "61771556f5292d8c0e67ae7ed4b92e49300000bb9749d573c70afe48c6f1b485",
+        "6": "af72ec3475999bb434da1f873e43e2262615a9abbe89ed830cbe83f6d8954566",
+        "7": "181f4935263a01c978ae971874b746779b34e491203322cbce4978e43cd05699"
+      },
+      "moment_term_counts": {
+        "2": 0,
+        "3": 15,
+        "4": 79,
+        "5": 101,
+        "6": 236,
+        "7": 428
+      }
+    },
+    {
+      "all_declared_primes_unit": true,
+      "harmonic_degrees": [
+        2,
+        4,
+        8,
+        10
+      ],
+      "modular_saturations": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 7,
+          "dimension": -1,
+          "elapsed_ticks": 35,
+          "input_sha256": "b58e35ad5791e3f6a05961fcb2c310325710f9e0f9e803d42746d78d62686ad3",
+          "method": "quotient_saturation",
+          "prime": 101,
+          "returncode": 0,
+          "saturation_exponent": 1,
+          "seconds": 38.63838120899163,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 35.31 sec\nRESULT_BEGIN\ncutoff=7\nunit=1\nbasis_size=1\ndimension=-1\nsaturation_exponent=1\nelapsed_ticks=35\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 7,
+          "dimension": -1,
+          "elapsed_ticks": 37,
+          "input_sha256": "3c85bc62addc0236bf845c4f23f1ef2a1abcece8489a5598af60f43684da6912",
+          "method": "quotient_saturation",
+          "prime": 103,
+          "returncode": 0,
+          "saturation_exponent": 1,
+          "seconds": 40.51108233293053,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 37.18 sec\nRESULT_BEGIN\ncutoff=7\nunit=1\nbasis_size=1\ndimension=-1\nsaturation_exponent=1\nelapsed_ticks=37\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 7,
+          "dimension": -1,
+          "elapsed_ticks": 37,
+          "input_sha256": "33f50972aed9a5b6a6eef5f7d4678639cd75db140ea3fa9013fd5d4b265adba2",
+          "method": "quotient_saturation",
+          "prime": 107,
+          "returncode": 0,
+          "saturation_exponent": 1,
+          "seconds": 40.794246208970435,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 37.40 sec\nRESULT_BEGIN\ncutoff=7\nunit=1\nbasis_size=1\ndimension=-1\nsaturation_exponent=1\nelapsed_ticks=37\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "moment_sha256": {
+        "3": "5ee659eddf24ee9ee73b02d1e54a1e082f7efb546cfbbf236e133ca9fae90965",
+        "4": "0359b10fd2c81b49c0e2e9f089e0fd1622c805ff45e3df03ba8528ef9a517153",
+        "5": "e9e4949acc1636711a6a0aacd64d049b1f80d248a28e3a80ef2f60594f7e08ca",
+        "6": "7041c9c14cf22882f469d49195a2aee1799fa7a4128be50942baf6c221944d80",
+        "7": "c4f8096417aacee98f5c31883569459e7a6ae6eae77779a9738a7ea7de931fb6"
+      },
+      "moment_term_counts": {
+        "2": 0,
+        "3": 34,
+        "4": 46,
+        "5": 129,
+        "6": 295,
+        "7": 441
+      }
+    },
+    {
+      "all_declared_primes_unit": true,
+      "harmonic_degrees": [
+        2,
+        6,
+        8,
+        10
+      ],
+      "modular_saturations": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 7,
+          "dimension": -1,
+          "elapsed_ticks": 95,
+          "input_sha256": "7da3bda70d8e9653f823cb4165d992c69a8f39d777c13792856c88845760e115",
+          "method": "quotient_saturation",
+          "prime": 101,
+          "returncode": 0,
+          "saturation_exponent": 1,
+          "seconds": 102.45078995905351,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 94.61 sec\nRESULT_BEGIN\ncutoff=7\nunit=1\nbasis_size=1\ndimension=-1\nsaturation_exponent=1\nelapsed_ticks=95\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 7,
+          "dimension": -1,
+          "elapsed_ticks": 98,
+          "input_sha256": "52484798b6f21bfffcfa157b4174c0aa8c7c8d77f91853ba20f132c9537d3a73",
+          "method": "quotient_saturation",
+          "prime": 103,
+          "returncode": 0,
+          "saturation_exponent": 1,
+          "seconds": 105.81352862494532,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 97.90 sec\nRESULT_BEGIN\ncutoff=7\nunit=1\nbasis_size=1\ndimension=-1\nsaturation_exponent=1\nelapsed_ticks=98\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 7,
+          "dimension": -1,
+          "elapsed_ticks": 96,
+          "input_sha256": "50463edc55c3601427c180be785fb2388849545b8925d8eae65bec3774b2b901",
+          "method": "quotient_saturation",
+          "prime": 107,
+          "returncode": 0,
+          "saturation_exponent": 1,
+          "seconds": 102.07379204209428,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 95.65 sec\nRESULT_BEGIN\ncutoff=7\nunit=1\nbasis_size=1\ndimension=-1\nsaturation_exponent=1\nelapsed_ticks=96\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "moment_sha256": {
+        "3": "82ffdffe5ad2bd89f5c47d95d83e3f2ffe624802ac95f12978793e96f473c4e5",
+        "4": "7c0be7f6c64c2008bc9768eb6596fc6a8cc3c09fdb80233592a9fa09689314eb",
+        "5": "5c7ba10eece6edb4766e3010606b2354cf2c3273e0f0178f2098c064438a14d9",
+        "6": "9088c0aef813dd7d20a554ebe184e5792a16ea3a3985bec4635a6f97d1bc8cc4",
+        "7": "df078f2a7c0973ace1bbb2a0df4e33ae407a48e83d7715eec492c3beac249b59"
+      },
+      "moment_term_counts": {
+        "2": 0,
+        "3": 31,
+        "4": 62,
+        "5": 129,
+        "6": 276,
+        "7": 489
+      }
+    },
+    {
+      "all_declared_primes_unit": true,
+      "harmonic_degrees": [
+        4,
+        6,
+        8,
+        10
+      ],
+      "modular_saturations": [
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 7,
+          "dimension": -1,
+          "elapsed_ticks": 299,
+          "input_sha256": "eb26a6f534f6e0e2a4a5ea69ac4dfa9ace98fed999a7ac192a90e6ffed557b60",
+          "method": "quotient_saturation",
+          "prime": 101,
+          "returncode": 0,
+          "saturation_exponent": 1,
+          "seconds": 309.7430138330674,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 298.48 sec\nRESULT_BEGIN\ncutoff=7\nunit=1\nbasis_size=1\ndimension=-1\nsaturation_exponent=1\nelapsed_ticks=299\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 7,
+          "dimension": -1,
+          "elapsed_ticks": 326,
+          "input_sha256": "1c2adeb3d2a3475aa2c82dc9adf77930b5154080c20b9670034b515b27fe1f79",
+          "method": "quotient_saturation",
+          "prime": 103,
+          "returncode": 0,
+          "saturation_exponent": 1,
+          "seconds": 338.10190220794175,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 325.51 sec\nRESULT_BEGIN\ncutoff=7\nunit=1\nbasis_size=1\ndimension=-1\nsaturation_exponent=1\nelapsed_ticks=326\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        },
+        {
+          "basis_preview": "1",
+          "basis_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+          "basis_size": 1,
+          "cutoff": 7,
+          "dimension": -1,
+          "elapsed_ticks": 321,
+          "input_sha256": "bde4e30b0ce113a12c2be364877638a547f49b3e73019fff03c346f5127342e1",
+          "method": "quotient_saturation",
+          "prime": 107,
+          "returncode": 0,
+          "saturation_exponent": 1,
+          "seconds": 333.91682366700843,
+          "status": "completed",
+          "stderr": "",
+          "stdout_tail": "//used time: 321.27 sec\nRESULT_BEGIN\ncutoff=7\nunit=1\nbasis_size=1\ndimension=-1\nsaturation_exponent=1\nelapsed_ticks=321\nBASIS_BEGIN\n1\nBASIS_END\nRESULT_END\n",
+          "unit": 1
+        }
+      ],
+      "moment_sha256": {
+        "3": "596d40e1516f08e109b4f0ea228966390c9fb5918d6e13cfc955dca03824624e",
+        "4": "37285668fb34f27d6837cdacbc09e60894fbb54412f3c3bbde2690991072e5fd",
+        "5": "5aad1e77b5d16af1550067ba4a035d454195c2c4fae83c711b2b743e7ba2f564",
+        "6": "2abb9c111273313eb288b6dd674e1d4b3b418ade1fbc081aa6c953fd9d85b319",
+        "7": "9eadff8691fc61bfe72903d3542ba107e2179ab9c8fef8b15c3fd7a45c8a32f4"
+      },
+      "moment_term_counts": {
+        "2": 0,
+        "3": 31,
+        "4": 60,
+        "5": 178,
+        "6": 339,
+        "7": 509
+      }
+    }
+  ],
+  "saturation_method": "successive ideal quotients (Singular sat_with_exp)",
+  "scope": "all five four-of-five positive-even harmonic profiles, with pairwise-distinct directions and nonzero coefficients",
+  "status": "bounded modular discovery; not a characteristic-zero theorem",
+  "workers": 11
+}

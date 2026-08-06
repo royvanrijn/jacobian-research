@@ -1,0 +1,323 @@
+{
+  "checkpoint_sha256": "2dcf13d924530cdc9a8728e943efdc73d003ce1c187d5cec273f6f701e0240ba",
+  "derived_P_bands": [
+    -8,
+    -7,
+    -6
+  ],
+  "derived_Q_bands": [
+    -12,
+    -11,
+    -10,
+    -9,
+    -8,
+    -7,
+    -6,
+    -5
+  ],
+  "exact_core_sha256": "3ba2d44e52a8028044dd73a9394449f6a26c638aebed6cc9f09288e49d77ff82",
+  "final_parameter_count": 6,
+  "initial_layer": -4,
+  "initial_parameter_count": 6,
+  "layers": [
+    {
+      "P_band": -6,
+      "P_shape": {
+        "coefficient_slots": 3,
+        "maximum_parameter_degree": 8,
+        "nonzero_coefficients": 3,
+        "parameter_terms": 387,
+        "sha256": "a2978b62b5653aff769ef136365941a602412663a953f36bd7ef648f8101ebe9"
+      },
+      "P_support": [
+        0,
+        1,
+        2
+      ],
+      "Q_band": -5,
+      "Q_shape": {
+        "coefficient_slots": 8,
+        "maximum_parameter_degree": 8,
+        "nonzero_coefficients": 8,
+        "parameter_terms": 1032,
+        "sha256": "3b9449902f6c79cb63966f640195338fa846c2ebe4f5f7a8208efc215172222e"
+      },
+      "Q_support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "column_count": 11,
+      "compatibility_count": 6,
+      "compatibility_shape": {
+        "coefficient_slots": 6,
+        "maximum_parameter_degree": 8,
+        "nonzero_coefficients": 6,
+        "parameter_terms": 751,
+        "sha256": "c0dbafe7a10f2654ddb9b772b6fa3d329a61baa50578e6ab39099ce5bdeffff6"
+      },
+      "layer": -4,
+      "nullity": 0,
+      "parameters_after": 6,
+      "parameters_before": 6,
+      "rank": 11
+    },
+    {
+      "P_band": -7,
+      "P_shape": {
+        "coefficient_slots": 2,
+        "maximum_parameter_degree": 9,
+        "nonzero_coefficients": 2,
+        "parameter_terms": 380,
+        "sha256": "a1aa06712c2cc4a9a18e298ea98d2c49ae5ef65a576cabed9ad9a4259de16b40"
+      },
+      "P_support": [
+        0,
+        1
+      ],
+      "Q_band": -6,
+      "Q_shape": {
+        "coefficient_slots": 7,
+        "maximum_parameter_degree": 9,
+        "nonzero_coefficients": 7,
+        "parameter_terms": 1330,
+        "sha256": "343c8338b6f097ca2153d221a6c6ad59eeef5ef8ff3c55b0b8e905f810406ab9"
+      },
+      "Q_support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "column_count": 9,
+      "compatibility_count": 7,
+      "compatibility_shape": {
+        "coefficient_slots": 7,
+        "maximum_parameter_degree": 9,
+        "nonzero_coefficients": 7,
+        "parameter_terms": 1322,
+        "sha256": "de2b14f8824cdf78cb5a30469793a84b6b5d0f699c64d95f5de1b22fd037bc42"
+      },
+      "layer": -5,
+      "nullity": 0,
+      "parameters_after": 6,
+      "parameters_before": 6,
+      "rank": 9
+    },
+    {
+      "P_band": -8,
+      "P_shape": {
+        "coefficient_slots": 1,
+        "maximum_parameter_degree": 10,
+        "nonzero_coefficients": 1,
+        "parameter_terms": 275,
+        "sha256": "b3546e3ad9db3fe3b4ba9c3a2f36ba1a99b5aa6b2cd30dc47bca2b8d02d72c61"
+      },
+      "P_support": [
+        0
+      ],
+      "Q_band": -7,
+      "Q_shape": {
+        "coefficient_slots": 6,
+        "maximum_parameter_degree": 10,
+        "nonzero_coefficients": 6,
+        "parameter_terms": 1650,
+        "sha256": "c2e77fc1aa3de715d0d37cd293fec760062d7061cf354867d218ad8cbfc2d656"
+      },
+      "Q_support": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "column_count": 7,
+      "compatibility_count": 8,
+      "compatibility_shape": {
+        "coefficient_slots": 8,
+        "maximum_parameter_degree": 10,
+        "nonzero_coefficients": 8,
+        "parameter_terms": 2194,
+        "sha256": "0680894beddcfa65821a4879976bebc3436aeecc33924202a459318d2b94e95f"
+      },
+      "layer": -6,
+      "nullity": 0,
+      "parameters_after": 6,
+      "parameters_before": 6,
+      "rank": 7
+    },
+    {
+      "P_band": null,
+      "P_shape": null,
+      "P_support": [],
+      "Q_band": -8,
+      "Q_shape": {
+        "coefficient_slots": 5,
+        "maximum_parameter_degree": 11,
+        "nonzero_coefficients": 5,
+        "parameter_terms": 1930,
+        "sha256": "4854b7bd3152cfc0735f2964dfa2257e215d46ceacabda38ae8119477c3f1596"
+      },
+      "Q_support": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "column_count": 5,
+      "compatibility_count": 9,
+      "compatibility_shape": {
+        "coefficient_slots": 9,
+        "maximum_parameter_degree": 11,
+        "nonzero_coefficients": 9,
+        "parameter_terms": 3474,
+        "sha256": "0836f86376fd971b29145392a1387748be89565a545c4f771f75e9fe327ee628"
+      },
+      "layer": -7,
+      "nullity": 0,
+      "parameters_after": 6,
+      "parameters_before": 6,
+      "rank": 5
+    },
+    {
+      "P_band": null,
+      "P_shape": null,
+      "P_support": [],
+      "Q_band": -9,
+      "Q_shape": {
+        "coefficient_slots": 4,
+        "maximum_parameter_degree": 12,
+        "nonzero_coefficients": 4,
+        "parameter_terms": 2144,
+        "sha256": "01d8ff76631a580af83190434949427cd7665b40e433abffd6c4671dd1014f46"
+      },
+      "Q_support": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "column_count": 4,
+      "compatibility_count": 9,
+      "compatibility_shape": {
+        "coefficient_slots": 9,
+        "maximum_parameter_degree": 12,
+        "nonzero_coefficients": 9,
+        "parameter_terms": 4824,
+        "sha256": "644bfc5df82364d0f3dd6fdcb7c7069ee1bc75d031ad095d92a3be65d2c61306"
+      },
+      "layer": -8,
+      "nullity": 0,
+      "parameters_after": 6,
+      "parameters_before": 6,
+      "rank": 4
+    },
+    {
+      "P_band": null,
+      "P_shape": null,
+      "P_support": [],
+      "Q_band": -10,
+      "Q_shape": {
+        "coefficient_slots": 3,
+        "maximum_parameter_degree": 13,
+        "nonzero_coefficients": 3,
+        "parameter_terms": 2178,
+        "sha256": "390a2d1435f858e90418f9b48d99cfb613fac577d27647d8a8578073e281bb51"
+      },
+      "Q_support": [
+        0,
+        1,
+        2
+      ],
+      "column_count": 3,
+      "compatibility_count": 9,
+      "compatibility_shape": {
+        "coefficient_slots": 9,
+        "maximum_parameter_degree": 13,
+        "nonzero_coefficients": 9,
+        "parameter_terms": 6534,
+        "sha256": "b7e6fdb2f44b68b85e2bb3e38beba8df5e6fb523b9b7663a929dabe110ab5553"
+      },
+      "layer": -9,
+      "nullity": 0,
+      "parameters_after": 6,
+      "parameters_before": 6,
+      "rank": 3
+    },
+    {
+      "P_band": null,
+      "P_shape": null,
+      "P_support": [],
+      "Q_band": -11,
+      "Q_shape": {
+        "coefficient_slots": 2,
+        "maximum_parameter_degree": 14,
+        "nonzero_coefficients": 2,
+        "parameter_terms": 1946,
+        "sha256": "1e96693f1e37394a5432af41de677a27b8593d0b9b54ab5e849b8731e8b9efff"
+      },
+      "Q_support": [
+        0,
+        1
+      ],
+      "column_count": 2,
+      "compatibility_count": 9,
+      "compatibility_shape": {
+        "coefficient_slots": 9,
+        "maximum_parameter_degree": 14,
+        "nonzero_coefficients": 9,
+        "parameter_terms": 8757,
+        "sha256": "3f3a96b5005c6c602830fa555bee4f3f4eb0d8c8ff9cfdbc41eb2658e966d856"
+      },
+      "layer": -10,
+      "nullity": 0,
+      "parameters_after": 6,
+      "parameters_before": 6,
+      "rank": 2
+    },
+    {
+      "P_band": null,
+      "P_shape": null,
+      "P_support": [],
+      "Q_band": -12,
+      "Q_shape": {
+        "coefficient_slots": 1,
+        "maximum_parameter_degree": 15,
+        "nonzero_coefficients": 1,
+        "parameter_terms": 1282,
+        "sha256": "0f5b21bac58c2f2b7d8ce8d43f16ad7c9558e6489e9454ff956b0ce7ea9eed6d"
+      },
+      "Q_support": [
+        0
+      ],
+      "column_count": 1,
+      "compatibility_count": 9,
+      "compatibility_shape": {
+        "coefficient_slots": 9,
+        "maximum_parameter_degree": 15,
+        "nonzero_coefficients": 9,
+        "parameter_terms": 11538,
+        "sha256": "8851215425d38255e87a5dde55a8de10c8c701f8992a445baf08fd66d727368c"
+      },
+      "layer": -11,
+      "nullity": 0,
+      "parameters_after": 6,
+      "parameters_before": 6,
+      "rank": 1
+    }
+  ],
+  "schema_version": 1,
+  "scope_warning": "the original thirteen compatibility equations already define the empty scheme; this derives the omitted formal bands but does not assert existence of a Case-1 point",
+  "status": "exact continuation of a necessary band recurrence",
+  "terminal_layer": -11
+}

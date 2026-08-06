@@ -609,21 +609,74 @@ nodes, and proves geometric and arithmetic monodromy `S_3`.
 The
 [modulo-four obstruction theorem](HUQ_KURUVILLA_PLANE_W2_OBSTRUCTION.md)
 strengthens the final lift check below.  It proves that arbitrary polynomial
-corrections divisible by two cannot repair the Jacobian: their first
-variation has zero `xy` coefficient, while the integral Jacobian error has
-coefficient `2xy`.  Thus the exact plane map has no Keller lift through
-`W_2(F_2)`, without any correction-degree bound.  This obstruction disappears
-after one identity stabilization, for which the theorem gives an explicit
-compatible determinant-one polynomial lift through every finite Witt level.
-Its inverse limit is restricted two-adic, not a polynomial map over
-`Z_2`.
+corrections divisible by two cannot repair the Jacobian.  More precisely, the
+full cokernel of the first variation is
+`H^2_dR(F_2[x,y]) = xy F_2[x^2,y^2]`, and the integral error has class
+`xy(1+x^3(1+xy))^2`.  Its Cartier image is `1+x^3(1+xy)`, so the class is
+nonzero and remains nonzero under every polynomial plane left--right
+equivalence.  Thus no equivalent representative has a Keller lift through
+`W_2(F_2)`, without any correction-degree bound.  Every first obstruction
+becomes exact after one identity stabilization; for this map the theorem
+gives an explicit compatible determinant-one polynomial lift through every
+finite Witt level.  Its inverse limit is restricted two-adic, not a
+polynomial map over `Z_2`.  At the first stable level the lift has sharp
+degree 18: the two-coefficient functional
+`[x^13 y^4]+[x^14 y^5]` excludes every degree-at-most-17 lift, with arbitrary
+corrections in all three variables.
+At the next level an explicit plane correction gives a degree-25 lift over
+`W_3(F_2)`, improving the elementary geometric-series degree 35.  A complete
+1,083-variable, 1,639-constraint Boolean coefficient system excludes every
+degree-18 lift.  A second exact system produces a degree-19 lift and a direct
+polynomial replay gives an odd constant Jacobian modulo 8, normalizable to
+determinant one, so `d_3=19`.  These Z3
+certificates have no independent implementation or external human review.
+Degree 25 is sharp only among extensions whose reduction modulo four is the
+canonical degree-18 lift.
+The preferred frozen degree-19 witness already has determinant one and 440
+correction coefficients.  Fixing its first digit leaves an exact affine
+second-completion space of dimension 804 (1,485 variables and rank 681).
+The independent `z0`, `z1`, and `z2` blocks split further into incidence
+components and have exact support minima 92, 54, and 14.  Thus the fixed-first
+minimum is 160, also under the determinant-one constraint.  Together with
+first support 280 this gives total 440; no global support minimum over all
+first digits is claimed.
 
-<!-- status-consumer: HKM2W1 333c767416c0d59f -->
+At `W_4`, the preferred degree-19 representative is a dead end: its next
+determinant digit has a nonzero 48-term class in
+`H^3_dR(F_2[x,y,z])`, so no correction of any degree extends that fixed map.
+The block-triangular degree-25 representative has vanishing top class.  Its
+35-term next error `L` has exact fixed-representative extension degree 52:
+the functional `[x^39 y^12]+[x^40 y^13]` excludes degrees at most 51, and
+the correction `8zL` attains degree 52.  Hence the unrestricted result is
+only `19 <= d_4 <= 52`; exact `d_4` remains open.
+The hoped-for cohomological UNSAT strengthening is false within the complete
+degree-19 existence ansatz: 241 next-class equations have a SAT model with
+support `327+491=818` and zero `H^3_dR` class.  Its full error has support
+1,027 and degree 52; exact affine elimination proves that this fixed map also
+has extension degree 52, attained by a `314+98+674` correction.  This does
+not decide whether another degree-19 representative extends in degree 19.
+An exact joint search now eliminates the full affine correction system for
+each nonlinear master model and feeds dual certificates back as cuts.  All
+sampled duals through 64 cuts are singleton codomain holes.  A master seeded
+with all 599 such holes active on the pinned zero-class model returns
+`unknown` at 600 seconds, not UNSAT.  A shared-minor quotient compiler also
+reaches all 4,340 structural holes; the full master remains `unknown`, while
+the `z1` and `z3` layers are individually SAT and `z0`,`z2` remain undecided.
+The unrestricted problem remains open.
+
+<!-- status-consumer: HKM2W1 904c57385ac0b0dd -->
+
+<!-- status-consumer: HKM2W2 474e0d677133ee23 -->
+
+<!-- status-consumer: HKM2W3 55d99efeee0298af -->
+
+<!-- status-consumer: HKM2W4 6075dd4fbb9cb89c -->
 
 ## 9. Follow-up experiments
 
-Only the first item below is closed.  The others are research tasks, not
-claims supported by the current certificates.
+Items 1, 4, and 5, together with the first-Witt-level part of item 6, are
+closed.  The others are research tasks, not claims supported by the current
+certificates.
 
 1. **Arbitrary base fields (closed by Proposition 8.1).** Keep the
    algebraic-independence, actual-target irreducibility, nonperfect-base, and
@@ -637,19 +690,28 @@ claims supported by the current certificates.
    calculation and a target-line specialization with explicit Galois group;
    compare arithmetic and geometric monodromy and identify the
    characteristic-two wild transposition inertia precisely.
-4. **Cohomological first lifting obstruction.** For
+4. **Cohomological first lifting obstruction (closed by `HKM2W1`).** For
    \(\mathcal D_F(A,B)=A_xQ_y+P_xB_y+A_yQ_x+P_yB_x\), compute the full
-   cokernel and the class of the integral Jacobian error \(K\); determine
-   whether the \(xy\)-functional is unique and whether the class is
-   invariant under source/target automorphisms and stabilization.
-5. **Left--right equivalence before lifting.** Search affine, triangular,
-   low-degree tame, collision-preserving, and hidden-cubic-preserving
-   representatives; for each, test whether its first-order Jacobian error
-   lies in the image of \(\mathcal D_F\).
-6. **Degree growth in the stabilized Witt tower.** Determine the minimum
-   degree at level \(n\), lower bounds on its growth, possible lower-degree
-   corrections, bounded-support impossibility, and algebraicity of the
-   inverse limit over the restricted power-series ring.
+   cokernel and the class of the integral Jacobian error \(K\).  The answer is
+   `H^2_dR(F_2[x,y]) = xy F_2[x^2,y^2]`, with class `xyu^2` and Cartier image
+   `u`; one identity coordinate kills every first obstruction.
+5. **Left--right equivalence before lifting (closed by `HKM2W1`).** The
+   obstruction class is functorial under source automorphisms and unchanged,
+   up to an invertible pullback, by arbitrary polynomial source/target
+   equivalence.  Jung--van der Kulk tameness supplies lifts of all plane
+   automorphisms, so no bounded search is needed.
+6. **Degree growth in the stabilized Witt tower.** The first two levels are closed:
+   `HKM2W2` proves `d_2=18` and
+   `18 <= d_n <= 17(n-1)+1`; its degree-25 construction also gives
+   an upper bound at the next level.  `HKM2W3` excludes degree 18 without a
+   sparse ansatz and supplies a directly replayed degree-19 witness, proving
+   `d_3=19`.  `HKM2W4` shows that this preferred degree-19 representative
+   cannot extend, proves exact extension degree 52 for a fixed degree-25
+   representative, and gives `19 <= d_4 <= 52`.  Determine exact `d_4` by
+   imposing the bounded degree-19 `W_4` correction equations jointly—the
+   weaker next-class-zero system is SAT—then compute later
+   levels, prove growth bounds, and decide algebraicity of the inverse limit
+   over the restricted power-series ring.
 7. **Odd-characteristic analogues.** Use prescribed hidden-root covers and
    boundary residue data in characteristics \(3\) and \(5\), initially in
    generic degrees \(2,3,4\), instead of a random coefficient search.

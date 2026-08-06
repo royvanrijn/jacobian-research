@@ -1,0 +1,61 @@
+{
+  "coefficient_saturation": [
+    "a1",
+    "a2",
+    "a3",
+    "a4"
+  ],
+  "compile_only": true,
+  "compile_seconds": {
+    "2": 0.01491783291567117,
+    "3": 1.2654426660155877,
+    "4": 15.284997374983504,
+    "5": 89.88199237501249
+  },
+  "configuration_discriminant": "lam**3*mu**2 - lam**3*mu - lam**2*mu**3 + lam**2*mu + lam*mu**3 - lam*mu**2",
+  "configuration_parameters": [
+    "lam",
+    "mu"
+  ],
+  "degrees": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "directions": 5,
+  "exact_result": null,
+  "format": "gvc3-many-coherent-channels-research-v1",
+  "groups": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ]
+  ],
+  "linear_pivot_localization": null,
+  "max_order": 5,
+  "modular_results": [],
+  "moment_term_counts": {
+    "2": 0,
+    "3": 271,
+    "4": 1142,
+    "5": 3686
+  },
+  "normalization": "a0=1; first three direction points are infinity, zero, one",
+  "saturation_method": "rabinowitsch",
+  "scope": "one declared direction-partition and nonzero-coefficient chart",
+  "specialization": {},
+  "status": "moment compilation only; no elimination result"
+}

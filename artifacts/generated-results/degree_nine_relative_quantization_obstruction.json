@@ -1,0 +1,83 @@
+{
+  "excluded_bad_reduction": {
+    "19": {
+      "h3_kernel_dimension": 13,
+      "h3_rank": 226,
+      "h5_augmented_rank": 150,
+      "h5_correction_kernel_dimension": 6,
+      "h5_correction_rank": 142,
+      "h5_output_dimension": 371,
+      "h5_strong_span_rank": 149
+    }
+  },
+  "family": {
+    "completing_shear": "3*(2437664*sigma^2+3435360*sigma*tau+8147828*sigma+1214208*tau^2+5770548*tau+5171465)/476476",
+    "degree": 9,
+    "factor": "w^6+sigma*w^5+tau*w^4+(-17/2-5*sigma-4*tau)*w+13/2+4*sigma+3*tau",
+    "kappa": -9,
+    "parameters": [
+      "sigma",
+      "tau"
+    ]
+  },
+  "good_prime_records": {
+    "23": {
+      "h3_kernel_dimension": 12,
+      "h3_rank": 227,
+      "h5_augmented_rank": 150,
+      "h5_correction_kernel_dimension": 6,
+      "h5_correction_rank": 142,
+      "h5_output_dimension": 371,
+      "h5_strong_span_rank": 149
+    },
+    "29": {
+      "h3_kernel_dimension": 12,
+      "h3_rank": 227,
+      "h5_augmented_rank": 150,
+      "h5_correction_kernel_dimension": 6,
+      "h5_correction_rank": 142,
+      "h5_output_dimension": 371,
+      "h5_strong_span_rank": 149
+    },
+    "31": {
+      "h3_kernel_dimension": 12,
+      "h3_rank": 227,
+      "h5_augmented_rank": 150,
+      "h5_correction_kernel_dimension": 6,
+      "h5_correction_rank": 142,
+      "h5_output_dimension": 371,
+      "h5_strong_span_rank": 149
+    },
+    "37": {
+      "h3_kernel_dimension": 12,
+      "h3_rank": 227,
+      "h5_augmented_rank": 150,
+      "h5_correction_kernel_dimension": 6,
+      "h5_correction_rank": 142,
+      "h5_output_dimension": 371,
+      "h5_strong_span_rank": 149
+    }
+  },
+  "rational_point": {
+    "ranks": {
+      "h3_kernel_dimension": 12,
+      "h3_rank": 227,
+      "h5_augmented_rank": 150,
+      "h5_correction_kernel_dimension": 6,
+      "h5_correction_rank": 142,
+      "h5_output_dimension": 371,
+      "h5_strong_span_rank": 149
+    },
+    "sigma": 1,
+    "tau": 0
+  },
+  "scope": "degree-nine rank discovery in the parity-preserving inherited root-weight filtration; no vanishing-locus or DC_2 claim",
+  "supports": {
+    "S2": 132,
+    "S4": 84,
+    "S6": 46,
+    "T2": 107,
+    "T4": 64,
+    "T6": 31
+  }
+}

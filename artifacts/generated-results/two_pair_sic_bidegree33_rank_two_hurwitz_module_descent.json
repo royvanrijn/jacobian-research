@@ -1,0 +1,324 @@
+{
+  "format": "two-pair-sic-bidegree33-rank-two-hurwitz-module-descent-v1",
+  "field": "characteristic zero",
+  "chart": "A=0 on the M01-open cubic Hurwitz chart",
+  "coordinates": "q=b1/b0, z=b0*a2, with b2 eliminated by A",
+  "exact_b0_open_proof": {
+    "A": "3*b0^2*lambda^2+b0^2*lambda+6*b0^2+b0*b1*lambda+5*b0*b1-8*b0*b2-8*b0+4*b1^2",
+    "M01": "b1-a1*b0",
+    "argument": "at b0=0, A=4*b1^2 while M01=b1"
+  },
+  "prime": 29,
+  "prime_guard": "29>3*7, so no factorial in moments through mu_7 vanishes",
+  "incidence_terms": 273,
+  "open_projection": {
+    "construction": "numerator of mu4 after z=-C/B",
+    "profile": {
+      "terms": 11128,
+      "total_degree": 44,
+      "variable_degrees": {
+        "lambda": 32,
+        "a1": 10,
+        "b0": 12,
+        "q": 28
+      }
+    },
+    "reduction_scalar": 27,
+    "factorization": {
+      "factor_count": 1,
+      "degree": 44,
+      "factor_degree": 44,
+      "source_sha256": "431296d8f9983980541eb53215971a620bef60aeb6147f15398f6dc50ed5d40b"
+    },
+    "conclusion": "the B-open incidence-plus-mu4 projection is irreducible over QQ"
+  },
+  "degree_drop_norm": {
+    "quadratic_terms_by_a1_power": {
+      "0": 49,
+      "1": 12,
+      "2": 1
+    },
+    "remainder_terms": {
+      "U": 160,
+      "V": 70
+    },
+    "exact_remainder_identities": true,
+    "removed_localizer_factor": {
+      "factor": "3*lambda+3+4*q=P1/(3*b0)",
+      "power": 2
+    },
+    "construction": "A2*U^2-A1*U*V+A0*V^2",
+    "profile": {
+      "terms": 714,
+      "total_degree": 26,
+      "variable_degrees": {
+        "lambda": 18,
+        "b0": 8,
+        "q": 18
+      }
+    },
+    "reduction_scalar": 18,
+    "factorization": {
+      "factor_count": 1,
+      "degree": 26,
+      "factor_degree": 26,
+      "source_sha256": "a3ac38c79362c3cb73a28ef1f84c87722ccc0f2c9b434e8532e2d1bc291b255b"
+    },
+    "conclusion": "B=C=0 has one irreducible characteristic-zero component; its V-open is birational to the norm hypersurface",
+    "first_later_moment": {
+      "equation": "V*(mu4 mod B)_0-U*(mu4 mod B)_1",
+      "removed_P1_power": 3,
+      "profile": {
+        "terms": 1296,
+        "total_degree": 27,
+        "variable_degrees": {
+          "lambda": 18,
+          "z": 3,
+          "b0": 9,
+          "q": 18
+        }
+      },
+      "reduction_scalar": 10,
+      "factorization": {
+        "factor_count": 1,
+        "degree": 27,
+        "factor_degree": 27,
+        "source_sha256": "10dbb30a2410054fff16f18601969dfc2479944662b460b81e7a1a1c7c2b3833"
+      },
+      "conclusion": "the descended mu4 equation is irreducible over QQ",
+      "z_leading_coefficient": {
+        "profile": {
+          "terms": 50,
+          "total_degree": 9,
+          "variable_degrees": {
+            "lambda": 6,
+            "b0": 3,
+            "q": 6
+          }
+        },
+        "reduction_scalar": 23,
+        "factorization": {
+          "factor_count": 1,
+          "degree": 9,
+          "factor_degree": 9,
+          "source_sha256": "95e0b636925b2bfc75882e0ce8a4892f8b5a55d77b7a2844f5d190843094f981"
+        }
+      }
+    },
+    "second_later_moment": {
+      "removed_mu5_P1_power": 4,
+      "construction": "lc_z(N4)*N5-lc_z(N5)*N4; quadratic in z",
+      "profile": {
+        "terms": 4332,
+        "total_degree": 40,
+        "variable_degrees": {
+          "lambda": 27,
+          "z": 2,
+          "b0": 13,
+          "q": 27
+        }
+      },
+      "reduction_scalar": 17,
+      "factorization": {
+        "factor_count": 1,
+        "degree": 40,
+        "factor_degree": 40,
+        "source_sha256": "dcb62bad203fc42485e857a3d4d785307d8bfcc000f5a48b244b8e09625587e3"
+      },
+      "z_leading_coefficient": {
+        "profile": {
+          "terms": 825,
+          "total_degree": 28,
+          "variable_degrees": {
+            "lambda": 19,
+            "b0": 9,
+            "q": 19
+          }
+        },
+        "reduction_scalar": 23,
+        "factorization": {
+          "factor_count": 1,
+          "degree": 28,
+          "factor_degree": 28,
+          "source_sha256": "663250ced2e5ab03ebae7b874f3d55c023443c1da4c68be908f2ea449ede9c84"
+        }
+      },
+      "conclusion": "on lc_z(N4)!=0, mu5 descends to an irreducible quadratic-in-z subresultant; both displayed leading coefficient divisors are irreducible over QQ",
+      "linear_remainder": {
+        "construction": "pseudo-remainder of cubic N4 modulo quadratic S5",
+        "constant_profile": {
+          "terms": 16668,
+          "total_degree": 83,
+          "variable_degrees": {
+            "b0": 27,
+            "q": 56,
+            "lambda": 56
+          }
+        },
+        "linear_profile": {
+          "terms": 13475,
+          "total_degree": 77,
+          "variable_degrees": {
+            "b0": 25,
+            "q": 52,
+            "lambda": 52
+          }
+        },
+        "common_reduction_scalar": 19
+      },
+      "linear_norm": {
+        "construction": "S2*R0^2-S1*R0*R1+S0*R1^2",
+        "raw_profile": {
+          "terms": 198183,
+          "total_degree": 194,
+          "variable_degrees": {
+            "b0": 63,
+            "q": 131,
+            "lambda": 131
+          }
+        },
+        "removed_factors": {
+          "b0": 2,
+          "lc_z_N4": 2,
+          "lc_z_S5": 2
+        },
+        "residual_profile": {
+          "terms": 48469,
+          "total_degree": 118,
+          "variable_degrees": {
+            "b0": 37,
+            "q": 81,
+            "lambda": 81
+          }
+        },
+        "modular_residual_terms": 46755,
+        "reduction_scalar": 12,
+        "factorization": {
+          "factor_count": 1,
+          "degree": 118,
+          "factor_degree": 118,
+          "source_sha256": "850234ebf7869b7f408105a60a2710bf2ebf2daf0cd2040be4e8b0859d6a8dd3"
+        },
+        "conclusion": "on b0*lc_z(N4)*lc_z(S5)!=0, the common-root projection of N4 and N5 is the irreducible degree-118 hypersurface K=0 over QQ"
+      },
+      "later_base_equations": {
+        "6": {
+          "construction": "R1*(mu_order mod S5)_0-R0*(mu_order mod S5)_1",
+          "removed_P1_power_before_z_reduction": 4,
+          "module_constant_profile": {
+            "terms": 48490,
+            "total_degree": 119,
+            "variable_degrees": {
+              "b0": 38,
+              "q": 81,
+              "lambda": 81
+            }
+          },
+          "module_linear_profile": {
+            "terms": 41847,
+            "total_degree": 113,
+            "variable_degrees": {
+              "b0": 36,
+              "q": 77,
+              "lambda": 77
+            }
+          },
+          "common_module_reduction_scalar": 23,
+          "raw_determinant_profile": {
+            "terms": 207228,
+            "total_degree": 196,
+            "variable_degrees": {
+              "b0": 63,
+              "q": 133,
+              "lambda": 133
+            }
+          },
+          "residual_content_before_primitive_normalization": 173946175488,
+          "raw_determinant_reduction_scalar": 2,
+          "removed_factors": {
+            "b0": 1,
+            "lc_z_N4": 1,
+            "lc_z_S5": 2
+          },
+          "residual_profile": {
+            "terms": 63791,
+            "total_degree": 130,
+            "variable_degrees": {
+              "b0": 41,
+              "q": 89,
+              "lambda": 89
+            }
+          },
+          "modular_residual_terms": 61552,
+          "residual_reduction_scalar": 27,
+          "factorization": {
+            "factor_count": 1,
+            "degree": 130,
+            "factor_degree": 130,
+            "source_sha256": "3719ec481a0ff7a312254ffb0a4c61538f61205b772b6d6cadb1f46bdd87986f"
+          },
+          "conclusion": "the primitive base equation is irreducible over QQ; on V*R1!=0 it is equivalent to imposing this later moment after N4=S5=0, while V=0 and R0=R1=0 remain separate boundaries"
+        },
+        "7": {
+          "construction": "R1*(mu_order mod S5)_0-R0*(mu_order mod S5)_1",
+          "removed_P1_power_before_z_reduction": 5,
+          "module_constant_profile": {
+            "terms": 97804,
+            "total_degree": 152,
+            "variable_degrees": {
+              "b0": 49,
+              "q": 103,
+              "lambda": 103
+            }
+          },
+          "module_linear_profile": {
+            "terms": 87091,
+            "total_degree": 146,
+            "variable_degrees": {
+              "b0": 47,
+              "q": 99,
+              "lambda": 99
+            }
+          },
+          "common_module_reduction_scalar": 20,
+          "raw_determinant_profile": {
+            "terms": 325434,
+            "total_degree": 229,
+            "variable_degrees": {
+              "b0": 74,
+              "q": 155,
+              "lambda": 155
+            }
+          },
+          "residual_content_before_primitive_normalization": 102597629011034112,
+          "raw_determinant_reduction_scalar": 3,
+          "removed_factors": {
+            "b0": 2,
+            "lc_z_N4": 1,
+            "lc_z_S5": 2
+          },
+          "residual_profile": {
+            "terms": 121758,
+            "total_degree": 162,
+            "variable_degrees": {
+              "b0": 51,
+              "q": 111,
+              "lambda": 111
+            }
+          },
+          "modular_residual_terms": 117609,
+          "residual_reduction_scalar": 21,
+          "factorization": {
+            "factor_count": 1,
+            "degree": 162,
+            "factor_degree": 162,
+            "source_sha256": "2811200c2e7447ccad696d91cc22371a5dbfa39ff144a7062981064422f064a2"
+          },
+          "conclusion": "the primitive base equation is irreducible over QQ; on V*R1!=0 it is equivalent to imposing this later moment after N4=S5=0, while V=0 and R0=R1=0 remain separate boundaries"
+        }
+      }
+    }
+  },
+  "logic": "each primitive exact polynomial has degree-preserving reduction equal up to a nonzero scalar to its independently constructed GF(29) polynomial; irreducibility modulo 29 implies irreducibility over QQ",
+  "scope": "component and subresultant structure through mu7, including exact irreducible base equations K, J6, and J7; their common zero set, the V=0 and R0=R1=0 boundaries, and the localization boundaries P1=0, Delta=0, and M01=0 remain separate"
+}

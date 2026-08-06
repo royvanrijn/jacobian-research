@@ -1,0 +1,47 @@
+{
+  "counts": {
+    "errors": 0,
+    "exceptional": 1,
+    "order_five_consistent": 1
+  },
+  "errors": [],
+  "exceptional_points": [
+    {
+      "order_five_consistent": true,
+      "sigma": 24,
+      "signature": [
+        118,
+        8,
+        61,
+        68,
+        68
+      ],
+      "strong_rank_drop": false,
+      "tau": 24
+    }
+  ],
+  "generic_signature": [
+    118,
+    8,
+    61,
+    68,
+    69
+  ],
+  "order_five_consistent_points": [
+    {
+      "order_five_consistent": true,
+      "sigma": 24,
+      "signature": [
+        118,
+        8,
+        61,
+        68,
+        68
+      ],
+      "strong_rank_drop": false,
+      "tau": 24
+    }
+  ],
+  "parameter_points": 2209,
+  "prime": 47
+}

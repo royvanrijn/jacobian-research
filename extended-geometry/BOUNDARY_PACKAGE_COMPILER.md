@@ -29,6 +29,31 @@ Its first benchmark suite establishes the following computational facts.
    global \(L\)-prime with \((e,f)=(2,2)\).  It passes the degree,
    cycle-profile, and Riemann--Hurwitz checks and is rejected solely because
    that ramified prime is affine-colored.
+7. The compiler now has a second affine-source lattice gate for any certified
+   affine factorial core with a based unit lattice.  It reproduces the balanced
+   wild-boundary Smith factors in `N=2,3,5,6,7`, rejects the stabilized `N=5`
+   block by class-group torsion `Z/4`, and computes the exact order four of
+   its named class `[L1]`, despite constant units and a unimodular synthetic
+   projective-boundary input.
+8. The factoriality restriction can be replaced by a finite presentation of
+   the core class group plus explicit lifts of its relations.  The resulting
+   block presentation detects nonsplit extensions: the regression with
+   `V=(2)`, `R=(2)`, and correction `A=(1)` has class group `Z/4` and a lifted
+   core class of exact order four, whereas `A=(0)` gives `Z/2 + Z/2`.
+9. A shared retained-root Euler gate now rejects a certified balanced
+   squarefree retained polynomial of degree `r>1` before source
+   reconstruction.  It records
+   `[U]=L^2+(r-1)L` and `chi_c(U)=r`.  The regression rejects `r=4`,
+   passes `r=1`, and leaves missing or nonsquarefree hypotheses explicitly
+   `uncertified` or `not_applicable` rather than guessing them.
+10. A shared conductor/contact-loss audit now turns a proposed lower-band
+    truncation into exact branchwise inequalities.  The legacy scalar form is
+    `available >= conductor + derivative loss + pole loss + other loss`; the
+    preferred form records every named input-to-output path and requires only
+    `available(input) >= conductor + path loss(input,output)`.  Passing data
+    certify invariance of the conductor matching cokernel and distinguished
+    residue class.  Short or incomplete data remain non-obstructing
+    `insufficient` or `uncertified` rows.
 
 Passing has status `unknown`, never `realized`.  The four surviving packages
 still need a root equation, reconstruction functions, and a proof that the
@@ -56,7 +81,9 @@ prime of a threefold normalization.
 
 ## 2. Package schema
 
-The current `BoundaryPackage` has five proof-relevant blocks.
+The current `BoundaryPackage` has six stage-one proof blocks; the
+retained-root block is optional.  A separate optional stage-two block carries
+realization references.
 
 ### Cover data
 
@@ -148,6 +175,75 @@ These are the identities proved in
 [`A4_PURE_TARGET_LEDGER_LIFT.md`](A4_PURE_TARGET_LEDGER_LIFT.md).  They make
 the lift log-Keller; they do not make it an ordinary Keller map.
 
+### Retained-root Euler prefilter
+
+`RetainedRootEulerDatum` is accepted only when the package explicitly names
+certificates for:
+
+1. the balanced chart
+   `P=xu,T=x^2u,Q=A(x^2u)(u-x^(N-1))`;
+2. different support on the declared omitted fierce boundary;
+3. squarefree nonzero retained root fibres; and
+4. exactly one omitted fierce boundary.
+
+The shared evaluator then emits one of `not_applicable`, `uncertified`,
+`passes`, or `obstructed`.  In the applicable case it records
+
+\[
+ \#U(\mathbb F_q)=q^2+(n_q(A)-1)q,\qquad
+ [U_{\bar k}]=L^2+(\deg A-1)L,\qquad
+ \chi_c(U_{\bar k})=\deg A.
+\]
+
+Thus `deg(A)>1` is an affine-plane obstruction, while degree one is neutral
+at this gate and proceeds to the class-lattice tests.  The compiler does not
+infer squarefreeness, the chart, or the omitted divisor from a coarse
+monodromy ledger.  Nonsquarefree collision presentations remain live.
+
+### Conductor/contact-loss truncation
+
+An optional tuple of `ConductorBranchJetDatum` records, on every completed
+normalization branch in the finite conductor support,
+
+```text
+(conductor exponent, derivative loss, pole loss, other contact loss,
+ available jet order)
+```
+
+together with certificates for the conductor, expression tree, and
+band-to-normal valuation.  The theorem in
+[`CONDUCTOR_JET_TRUNCATION.md`](../plane-jc/CONDUCTOR_JET_TRUNCATION.md)
+proves that the conductor quotient, the finite matching-map cokernel, and its
+distinguished residue class are unchanged when
+
+\[
+ n_i\ge c_i+d_i+\ell_i+\epsilon_i
+\]
+
+on every branch.  The emitted `conductor_jet_truncation` status is
+`not_declared`, `uncertified`, `passes`, or `insufficient`.  Neither
+`uncertified` nor `insufficient` is a Keller obstruction; those statuses say
+that the omitted bands must still be recovered or certified.
+
+The preferred `ConductorBranchSensitivityDatum` ledger replaces the branch
+maximum by named inputs, named matching or residue outputs, and certified
+expression trees.  If `lambda_(i,alpha,j)` is the loss on paths from input
+`j` to output `alpha`, it asks only for
+
+```text
+available(i,j) >= conductor(i) + lambda(i,alpha,j).
+```
+
+Inputs absent from a certified complete dependency graph are reported as
+unused and require no jet.  Every failing pair carries its exact deficit, so
+a search can reconstruct only that input band.  Available orders can be
+compiled from a certified normal-valuation vector and a finite valuation
+frontier of omitted Newton exponents.  Its certificate must prove that every
+omitted monomial has order at least the displayed minimum; on a Laurent cone,
+a coordinatewise antichain alone need not do so.  The scalar and
+dependency-sensitive inputs are mutually exclusive; the scalar schema remains
+supported for existing certificates.
+
 ### Pole box and value semigroup
 
 `PolarLedger` records:
@@ -179,8 +275,9 @@ next implementation layer.
 
 ### Affine-source necessary data
 
-For a normal finite normalization \(\bar X\) with distinguished open
-\(U=\mathbb A^n\), the localization sequence forces the boundary-class map
+There are two distinct localization matrices.  For a normal finite
+normalization \(\bar X\) with distinguished open \(U=\mathbb A^n\), the
+projective-complement localization sequence forces the boundary-class map
 
 \[
  \bigoplus_i\mathbb Z[E_i]\longrightarrow\operatorname{Cl}(\bar X)
@@ -189,6 +286,86 @@ For a normal finite normalization \(\bar X\) with distinguished open
 to have trivial kernel and cokernel.  The prototype checks a supplied square
 boundary-class matrix has determinant \(\pm1\), and rejects declared
 nonzero source unit or class-group rank.
+
+When the reconstructed open itself contains a certified dense affine
+factorial open `W=Spec(A)`, with `A` a UFD and hence `Cl(W)=0`, there is a
+dual and often sharper test.  Put
+`M=Gamma(W,O_W)^*/k^*`, require an explicit free basis, and let
+`D_1,...,D_r` be all codimension-one primes in `U-W`.  The unit-valuation map
+
+\[
+ V:M\longrightarrow\mathbb Z^r
+\]
+
+fits into
+
+\[
+ 0\longrightarrow\Gamma(U,\mathcal O_U)^*/k^*
+ \longrightarrow M\xrightarrow{V}\mathbb Z^r
+ \longrightarrow\operatorname{Cl}(U)\longrightarrow0.       \tag{1}
+\]
+
+The new `FactorialCoreDatum` therefore names the unit generators, every
+boundary prime, their full valuation matrix, and proof references for
+normality, factoriality, and codimension-one completeness.  A torus is the
+important special case `W=G_m^n`.  The dependency-free compiler computes the
+Smith factors as gcds of minors.  A free kernel is a unit obstruction; a free
+or torsion cokernel is a Weil-class obstruction.  A `CoreClassQuery` also
+computes the exact order of a represented reflexive class `delta`: infinite
+if `[V|delta]` raises rank, otherwise the quotient of the top determinantal
+divisors of `V` and `[V|delta]`.  The exact theorem and a second SymPy
+implementation are in the
+[boundary-lattice prefilter](../plane-jc/BOUNDARY_LATTICE_PREFILTER.md#dual-torus-core-localization).
+
+For the balanced wild block
+
+\[
+ V_N=\begin{pmatrix}1&0\\N-2&N-1\end{pmatrix},
+\]
+
+the kernel is zero and the cokernel is `Z/(N-1)`.  Adding an identity torus
+direction changes the Smith diagonal to `(1,1,N-1)` and preserves the
+obstruction, which is the three-dimensional regression used here.  The
+query vector for `L1` has exact order `N-1`; the vector for `div(x)` has
+order one, providing a positive membership control.
+
+The more general `PresentedCoreDatum` does not require `Cl(W)=0`.  It records
+a finite presentation
+
+\[
+ \mathbb Z^s\xrightarrow{R}\mathbb Z^c
+ \longrightarrow\operatorname{Cl}(W)\longrightarrow0,
+\]
+
+lifts of the `c` generators to `U`, and the boundary-valuation matrix `A` of
+rational functions witnessing the `s` relations.  Divisor localization then
+presents the reconstruction class group by
+
+\[
+ \operatorname{Cl}(U)=\operatorname{coker}
+ \begin{pmatrix}V&A\\0&R\end{pmatrix}.             \tag{2}
+\]
+
+Here `V` is still the complete unit-valuation matrix, and
+`Gamma(U,O_U)^*/k^*=ker(V)`.  The datum therefore requires separate
+certificates for normality, the presentation of `Cl(W)`, the lifted relation
+witnesses, and completeness of the codimension-one complement.  Its named
+class vectors have `r+c` coordinates and use the same exact determinantal-
+divisor order formula.  The correction matrix cannot be omitted: the two
+one-relation examples `V=R=(2)` with `A=(0)` and `A=(1)` have the same
+boundary and core quotients but total class groups `Z/2 + Z/2` and `Z/4`.
+The schema also permits zero unit columns and zero relation columns, so cores
+with only constant units or with free class-group summands are not excluded.
+
+<!-- status-consumer: BL1 e86cdcd66993bccc -->
+<!-- status-consumer: PWB7 19f4f4ffc96227a3 -->
+<!-- status-consumer: CJT1 afb70f90ff10f3d7 -->
+
+The qualifier “necessary” can be removed only in a narrower toric category:
+if the dense-torus action extends and `U` is a normal affine toric variety,
+then trivial class group gives `A^r x G_m^(n-r)`, and constant units force
+`A^n`.  The present compiler does not infer an extended torus action from a
+Laurent open, so its general verdict remains a filter.
 
 This is only a necessary filter.  Trivial units, class group, and canonical
 ledger do not characterize affine space; the motivic obstruction in
@@ -464,10 +641,14 @@ certificate references from
 4. replay a finite Khovanskii/SAGBI presentation; and
 5. verify Rees-module strictness by saturation.
 
-It must also distinguish an actual boundary-class matrix computed from a
-normalization from a synthetically supplied unimodular candidate.  The
-benchmark matrices in the current script are inputs to the necessary test,
-not proofs that the corresponding normalizations exist.
+It must also distinguish an actual boundary-class or normal-core valuation
+matrix computed from a normalization from a synthetically supplied
+candidate.  The compiler now refuses to treat the core matrix as conclusive
+without named normality, complete-codimension-one-boundary data, and either
+core factoriality or a class presentation with lifted relation witnesses; it
+does not replay those certificates.  The benchmark
+matrices in the current script are inputs to the necessary tests, not proofs
+that the corresponding normalizations exist.
 
 After that, the first symbolic target should be the \(A_4\) package.  A
 first adapter now recovers the known root equation and residual \(WL\)
@@ -488,8 +669,10 @@ python3 scripts/verify_boundary_package_compiler.py
 python3 scripts/verify_boundary_package_a4_stage_two.py
 ```
 
-The verifier checks four surviving `unknown` packages and five intrinsic
-`obstructed` packages, then emits their complete machine-readable reports.
+The verifier checks four surviving `unknown` packages and eight intrinsic
+`obstructed` packages, including the factorial-core, presented-core, and
+retained-root Euler fixtures, then
+emits their complete machine-readable reports.
 The second command replays the four existing \(A_4\) symbolic certificates,
 extracts their divisor orders, computes the residue degree and conductor map
 over the target cubic, compares them to the abstract package, and emits the

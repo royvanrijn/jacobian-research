@@ -390,6 +390,86 @@ gives unique normalization and removes the square lattice obstruction.  A
 rank defect leaves a positive-dimensional scaling kernel and a free
 unit/Picard contribution.
 
+### The dual class-trivial-core theorem
+
+There is a second use of the same integer matrix which applies after a finite
+normalization has produced a candidate reconstruction open.  Let `U` be an
+integral locally Noetherian normal variety, let `W` be a dense open with
+`Cl(W)=0` whose unit lattice `M=Gamma(W,O_W)^*/k^*` is free and explicitly based,
+and let `D_1,...,D_r` be **all** codimension-one primes of `U-W`.  Valuation
+gives
+
+\[
+ V:M\longrightarrow\mathbb Z^r.
+\]
+
+Divisor localization gives the exact sequence
+
+\[
+ 0\longrightarrow\Gamma(U,\mathcal O_U)^*/k^*
+ \longrightarrow M\xrightarrow{V}\mathbb Z^r
+ \longrightarrow\operatorname{Cl}(U)\longrightarrow0.       \tag{26}
+\]
+
+Thus units modulo constants are `ker(V)` and the Weil class group is
+`coker(V)`.  The dense-torus case is recovered with `W=G_m^n`.  If `U=A^n`,
+then constant units and trivial class group force `V` to be an isomorphism;
+thus the fill-prime count equals `rank(M)`.  In the plane torus-core case
+`M=Z^2`, this forces exactly two fill divisors and a unimodular `2 x 2`
+valuation matrix.
+For a boundary vector `delta`, the same determinantal divisors compute the
+exact order of its reflexive class: it is infinite if adjoining `delta`
+raises rank, and otherwise is
+`Delta_rank(V)(V)/Delta_rank(V)([V|delta])`.  The exact hypotheses, proof
+references, executable Smith gate, and the distinction between `Pic` and
+`Cl` are recorded in the
+[boundary-lattice prefilter](../plane-jc/BOUNDARY_LATTICE_PREFILTER.md#dual-torus-core-localization).
+
+The class-trivial hypothesis is convenient, but not essential.  For an
+arbitrary certified core the localization tail is
+
+\[
+ \Gamma(W,\mathcal O_W)^*/\Gamma(U,\mathcal O_U)^*
+ \longrightarrow \mathbb Z^r\longrightarrow\operatorname{Cl}(U)
+ \longrightarrow\operatorname{Cl}(W)\longrightarrow0.       \tag{27}
+\]
+
+Suppose a finite presentation
+
+\[
+ \mathbb Z^s\xrightarrow{R}\mathbb Z^c
+ \longrightarrow\operatorname{Cl}(W)\longrightarrow0
+\]
+
+is certified, its `c` generators are lifted to Weil divisors on `U`, and
+the rational functions witnessing the `s` core relations have boundary-
+valuation columns `A in Mat_(r x s)(Z)`.  If `V` is the complete core-unit
+valuation matrix, presentation chasing in (27) gives
+
+\[
+ \operatorname{Cl}(U)=\operatorname{coker}
+ \begin{pmatrix}V&A\\0&R\end{pmatrix}.             \tag{28}
+\]
+
+The units of `U` remain `ker(V)`.  The determinantal-divisor formula above,
+applied to the block in (28), computes the exact order of a class with both
+boundary and core coordinates.  The correction block `A` records genuine
+extension data: with `V=(2)` and `R=(2)`, `A=(0)` gives
+`Z/2 + Z/2`, whereas `A=(1)` gives Smith diagonal `(1,4)` and class group
+`Z/4`.  Thus separate knowledge of the boundary cokernel and `Cl(W)` is not
+enough.  The stage-one compiler and the independent SymPy prefilter both
+replay this split/nonsplit example exactly.
+
+This normal-core presentation is dual in purpose to the projective boundary-class
+matrix.  The latter audits a compactification of a declared chart; the former
+audits whether a normal finite-cover complement can be that chart at all.
+Neither may be replaced by a selected minor, and passing either matrix test
+does not prove affine-space reconstruction.  There is one useful sufficiency
+case: if the core is the dense torus and its action extends so that `U` is a
+normal affine toric variety, trivial class group gives
+`A^r x G_m^(n-r)`; constant units then force `A^n`.  A torus open without an
+extended torus action does not justify this conclusion.
+
 For future factorization constructions the correct order of tests is
 therefore:
 
@@ -398,7 +478,11 @@ therefore:
 3. factor the entire projective boundary into prime divisors;
 4. compute the full boundary-class matrix, not merely a convenient square
    minor;
-5. only after these lattice tests pass, use motives, point counts, topology,
+5. after normalization, identify a core with a certified unit basis and
+   either trivial class group or a finite class presentation with explicitly
+   lifted relation witnesses, then compute the complete valuation or block
+   presentation matrix;
+6. only after these lattice tests pass, use motives, point counts, topology,
    or finer affine geometry.
 
 ## 8. What remains after the lattice theorem

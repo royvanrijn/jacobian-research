@@ -19,11 +19,15 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Sequence
 
 import sympy as sp
+
+REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPOSITORY_ROOT / "scripts"))
 
 from boundary_lattice_prefilter import (
     BoundaryConfiguration,
@@ -32,12 +36,31 @@ from boundary_lattice_prefilter import (
     localization_invariants,
     standard_completion,
 )
+from conductor_jet_truncation import (
+    BoundaryOutputExpressionDatum,
+    ConductorBranchJetDatum,
+    ConductorBranchSensitivityDatum,
+    ConductorJetAudit,
+    ConductorSensitivityAudit,
+    ContactExpression,
+    NormalJetInputDatum,
+    audit_conductor_sensitivity_ledger,
+    audit_conductor_jet_truncation,
+    conductor_branch_sensitivity_from_dict,
+    conductor_branch_jet_datum_from_dict,
+)
 from intrinsic_a2_boundary import (
     A2BoundaryAudit,
     IntrinsicA2Boundary,
     KellerPoleAudit,
     audit_a2_boundary,
     audit_keller_pole_vector,
+)
+from retained_root_euler_gate import (
+    RetainedRootEulerAudit,
+    RetainedRootEulerDatum,
+    audit_retained_root_euler,
+    retained_root_euler_datum_from_dict,
 )
 
 
@@ -189,6 +212,11 @@ class NewtonBoundaryCertificate:
     corners: tuple[tuple[sp.Rational, sp.Rational], ...] = ()
     theorem_source: str = ""
     missing_data: tuple[str, ...] = ()
+    retained_root_euler: RetainedRootEulerDatum | None = None
+    conductor_jet_branches: tuple[ConductorBranchJetDatum, ...] | None = None
+    conductor_jet_sensitivity: (
+        tuple[ConductorBranchSensitivityDatum, ...] | None
+    ) = None
 
     @property
     def frontend_complete(self) -> bool:
@@ -255,10 +283,30 @@ class LogBoundaryCompilation:
     clusters: tuple[ClusterReport, ...]
     localization: LocalizationInvariants
     intersection_matrix: sp.Matrix
+    retained_root_euler_audit: RetainedRootEulerAudit
+    conductor_jet_audit: ConductorJetAudit
+    conductor_sensitivity_audit: ConductorSensitivityAudit
 
     @property
     def passes_prefilter(self) -> bool:
         return self.localization.passes(self.expected_unit_rank)
+
+    @property
+    def passes_search_gates(self) -> bool:
+        """Combine the local lattice gate with the global Euler obstruction."""
+
+        return (
+            self.passes_prefilter
+            and self.retained_root_euler_audit.allows_continuation
+        )
+
+    @property
+    def boundary_module_truncation_ready(self) -> bool:
+        """Whether omitted bands are proved invisible to the boundary module."""
+
+        if self.source.conductor_jet_sensitivity is not None:
+            return self.conductor_sensitivity_audit.truncation_certified
+        return self.conductor_jet_audit.truncation_certified
 
     @property
     def intrinsic_a2_audit(self) -> A2BoundaryAudit | None:
@@ -287,6 +335,17 @@ class LogBoundaryCompilation:
                 [str(first), str(second)] for first, second in self.source.corners
             ],
             "passes_prefilter": self.passes_prefilter,
+            "passes_search_gates": self.passes_search_gates,
+            "retained_root_euler_gate": (
+                self.retained_root_euler_audit.to_dict()
+            ),
+            "conductor_jet_truncation": self.conductor_jet_audit.to_dict(),
+            "conductor_jet_sensitivity": (
+                self.conductor_sensitivity_audit.to_dict()
+            ),
+            "boundary_module_truncation_ready": (
+                self.boundary_module_truncation_ready
+            ),
             "expected_unit_rank": self.expected_unit_rank,
             "boundary_names": list(self.boundary.names),
             "boundary_matrix": [
@@ -485,6 +544,23 @@ def compile_log_boundary(
             f"log-boundary certificate for {certificate.name} is incomplete: {missing}"
         )
 
+    retained_root_euler_audit = audit_retained_root_euler(
+        certificate.retained_root_euler
+    )
+    conductor_jet_audit = audit_conductor_jet_truncation(
+        certificate.conductor_jet_branches
+    )
+    conductor_sensitivity_audit = audit_conductor_sensitivity_ledger(
+        certificate.conductor_jet_sensitivity
+    )
+    if (
+        certificate.conductor_jet_branches is not None
+        and certificate.conductor_jet_sensitivity is not None
+    ):
+        raise ValueError(
+            "declare either the scalar conductor jet ledger or the "
+            "dependency-sensitive ledger, not both"
+        )
     boundary, initial_form, expected_unit_rank = standard_completion(
         certificate.chart
     )
@@ -608,6 +684,9 @@ def compile_log_boundary(
         clusters=tuple(reports),
         localization=localization,
         intersection_matrix=intersection,
+        retained_root_euler_audit=retained_root_euler_audit,
+        conductor_jet_audit=conductor_jet_audit,
+        conductor_sensitivity_audit=conductor_sensitivity_audit,
     )
     if not result.passes_prefilter:
         raise ArithmeticError(
@@ -3811,6 +3890,28 @@ def certificate_from_dict(data: dict[str, object]) -> NewtonBoundaryCertificate:
         (sp.Rational(first), sp.Rational(second))
         for first, second in data.get("corners", [])
     )
+    raw_retained_root_euler = data.get("retained_root_euler")
+    if (
+        raw_retained_root_euler is not None
+        and not isinstance(raw_retained_root_euler, dict)
+    ):
+        raise ValueError("retained_root_euler must be one JSON object")
+    raw_conductor_jets = data.get("conductor_jet_branches")
+    if raw_conductor_jets is not None and (
+        not isinstance(raw_conductor_jets, list)
+        or not all(isinstance(item, dict) for item in raw_conductor_jets)
+    ):
+        raise ValueError("conductor_jet_branches must be a list of JSON objects")
+    raw_conductor_sensitivity = data.get("conductor_jet_sensitivity")
+    if raw_conductor_sensitivity is not None and (
+        not isinstance(raw_conductor_sensitivity, list)
+        or not all(isinstance(item, dict) for item in raw_conductor_sensitivity)
+    ):
+        raise ValueError("conductor_jet_sensitivity must be a list of JSON objects")
+    if raw_conductor_jets is not None and raw_conductor_sensitivity is not None:
+        raise ValueError(
+            "scalar and dependency-sensitive conductor ledgers are mutually exclusive"
+        )
     return NewtonBoundaryCertificate(
         name=str(data.get("name", "unnamed Newton boundary")),
         chart=str(data["chart"]),
@@ -3820,6 +3921,27 @@ def certificate_from_dict(data: dict[str, object]) -> NewtonBoundaryCertificate:
         corners=corners,
         theorem_source=str(data.get("theorem_source", "")),
         missing_data=tuple(str(item) for item in data.get("missing_data", [])),
+        retained_root_euler=(
+            retained_root_euler_datum_from_dict(raw_retained_root_euler)
+            if isinstance(raw_retained_root_euler, dict)
+            else None
+        ),
+        conductor_jet_branches=(
+            tuple(
+                conductor_branch_jet_datum_from_dict(item)
+                for item in raw_conductor_jets
+            )
+            if isinstance(raw_conductor_jets, list)
+            else None
+        ),
+        conductor_jet_sensitivity=(
+            tuple(
+                conductor_branch_sensitivity_from_dict(item)
+                for item in raw_conductor_sensitivity
+            )
+            if isinstance(raw_conductor_sensitivity, list)
+            else None
+        ),
     )
 
 

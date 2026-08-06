@@ -1,0 +1,42 @@
+{
+  "family_factor": "w^6+sigma*w^5+tau*w^4+(-17/2-5*sigma-4*tau)*w+13/2+4*sigma+3*tau",
+  "independent_test_point": {
+    "shear": "240208359/476476",
+    "sigma": 2,
+    "tau": 3
+  },
+  "interpolation_points": [
+    {
+      "shear": "1193415/36652",
+      "sigma": 0,
+      "tau": 0
+    },
+    {
+      "shear": "47270871/476476",
+      "sigma": 1,
+      "tau": 0
+    },
+    {
+      "shear": "473619/6188",
+      "sigma": 0,
+      "tau": 1
+    },
+    {
+      "shear": "6040863/36652",
+      "sigma": 1,
+      "tau": 1
+    },
+    {
+      "shear": "93653331/476476",
+      "sigma": 2,
+      "tau": 0
+    },
+    {
+      "shear": "64708179/476476",
+      "sigma": 0,
+      "tau": 2
+    }
+  ],
+  "quadratic_shear": "3*(2437664*sigma**2 + 3435360*sigma*tau + 8147828*sigma + 1214208*tau**2 + 5770548*tau + 5171465)/476476",
+  "scope": "exact degree-nine classical rank-two shear interpolation"
+}

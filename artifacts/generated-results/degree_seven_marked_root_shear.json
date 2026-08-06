@@ -1,0 +1,41 @@
+{
+  "independent_test_point": {
+    "shear": "2364303/28028",
+    "sigma": 2,
+    "tau": 3
+  },
+  "interpolation_points": [
+    {
+      "shear": "32265/4004",
+      "sigma": 0,
+      "tau": 0
+    },
+    {
+      "shear": "706647/28028",
+      "sigma": 1,
+      "tau": 0
+    },
+    {
+      "shear": "408063/28028",
+      "sigma": 0,
+      "tau": 1
+    },
+    {
+      "shear": "86733/2548",
+      "sigma": 1,
+      "tau": 1
+    },
+    {
+      "shear": "192009/4004",
+      "sigma": 2,
+      "tau": 0
+    },
+    {
+      "shear": "56157/2548",
+      "sigma": 0,
+      "tau": 2
+    }
+  ],
+  "quadratic_shear": "3*(26104*sigma**2 + 21736*sigma*tau + 134160*sigma + 4576*tau**2 + 56160*tau + 75285)/28028",
+  "scope": "exact classical rank-two shear interpolation"
+}

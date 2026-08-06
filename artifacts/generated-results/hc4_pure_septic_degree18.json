@@ -1,0 +1,35 @@
+{
+  "binary_identity": "H_yy*(49*x^4*D2-42*k*x^2*P+18*k^2*H)=(7*x^2*P_y-4*k*H_y)^2",
+  "degree_18": "x^8*(H_yy*(49*x^4*(c4)_zz-42*k*x^2*P+18*k^2*H-6*k^3*x^5*z)-(7*x^2*P_y-4*k*H_y)^2)",
+  "forced_quartic": "c4=U4(x,y)+z*V3(x,y)+z^2*D2(x,y)/2+k^3*x*z^3/49",
+  "format": "hc4-pure-septic-degree18-v1",
+  "moving_alignment": {
+    "a4_zero_endpoint": "p4=0 and p3=2*a3*k/7",
+    "forced_curvature": "a6=a5=0, so H_yy is divisible by x^2",
+    "nonzero_a4_ratios": [
+      "p4=a4*k/7",
+      "p4=5*a4*k/14"
+    ],
+    "second_ratio_descendant": "p3=5*a3*k/14"
+  },
+  "moving_packet_classification": {
+    "a4_nonzero_ratio_A": [
+      "generic resonance A_left=A_generic_linear=0",
+      "double-root discriminant with A_right=0"
+    ],
+    "a4_nonzero_ratio_B": [
+      "generic resonance B_left=B_generic_linear=0",
+      "double-root discriminant with B_right=0"
+    ],
+    "a4_zero_a3_nonzero": "triangular D and one terminal square",
+    "a4_zero_a3_zero": "pure-fourth curvature with unique D",
+    "packet_count": 6
+  },
+  "residual": "six exact moving-curvature packets followed by degree seventeen, the k=0 curved chart, and the passive-affine H_yy=0 boundary",
+  "status": {
+    "id": "HC4RSD35",
+    "kind": "exact narrowing theorem",
+    "result": "the complete face is one Hessian-factor times a Schur factor minus a square; it fixes the quartic z^4 and z^3 tails and leaves one binary divisibility equation",
+    "scope": "degree-eighteen descendants of the curved pure-septic chart"
+  }
+}

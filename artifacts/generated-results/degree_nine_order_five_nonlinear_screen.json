@@ -1,0 +1,157 @@
+{
+  "empty_points": [],
+  "nonempty_points": [
+    {
+      "correction_rank": 142,
+      "degree": 9,
+      "degree_nine_thickening_structure": {
+        "certified": true,
+        "finite_flat_rank_over_radical": 6,
+        "free_reduced_coordinates": [
+          "z0",
+          "z2",
+          "z4",
+          "z6",
+          "z8",
+          "z10"
+        ],
+        "radical": "affine six-space",
+        "triple_root_variable": "z11",
+        "univariate_cubic_is_perfect_cube": true
+      },
+      "dimension": 6,
+      "dual_rank": 229,
+      "groebner_basis": [
+        "z5-3*z6-10*z7-3*z8-6*z9+5*z10+2*z11",
+        "z3+4*z4-8*z6-2*z7+7*z8-8*z9-10*z10+8*z11+2",
+        "z1+11*z2+3*z4-2*z6+6*z7-4*z8+2*z9-4*z10+6*z11-9",
+        "z7*z11-10*z8*z11-4*z9*z11-3*z10*z11-2*z7-3*z8+8*z9+6*z10-10*z11-3",
+        "z9^2-11*z9*z10-10*z10^2-8*z9*z11-2*z10*z11-z11^2+7*z9-4*z10-6*z11-4",
+        "z7*z9-10*z8*z9+6*z7*z10+9*z8*z10-2*z9*z10+11*z10^2-11*z9*z11+3*z10*z11-4*z11^2+7*z7-z8-6*z9-4*z10+8*z11+11",
+        "z7^2+3*z7*z8+8*z8^2-4*z7*z10-6*z8*z10+4*z10^2+8*z9*z11+2*z10*z11-7*z11^2-10*z7+8*z8+7*z9-7*z10-8*z11",
+        "z11^3-6*z11^2-11*z11-8",
+        "z9*z11^2+6*z10*z11^2-4*z9*z11-z10*z11+7*z11^2+4*z9+z10-5*z11+5"
+      ],
+      "groebner_basis_size": 9,
+      "lower_lift_variables": 12,
+      "nonempty": true,
+      "prime": 23,
+      "projected_equations": 229,
+      "radical_dimension": 6,
+      "radical_groebner_basis": [
+        "z11-2",
+        "z9+6*z10+7",
+        "z7-10*z8-2*z10-5",
+        "z5-3*z6-11*z8-2*z10-4",
+        "z3+4*z4-8*z6+10*z8+11*z10-5",
+        "z1+11*z2+3*z4-2*z6+10*z8-4*z10-4"
+      ],
+      "reduced_square_structure": null,
+      "sigma": 10,
+      "singular_program_sha256": "14d148f08b56784e52af6c4b714f9457e17ba5717a352f5505ac003dfcf73430",
+      "tau": 8
+    },
+    {
+      "correction_rank": 142,
+      "degree": 9,
+      "degree_nine_thickening_structure": {
+        "certified": true,
+        "finite_flat_rank_over_radical": 6,
+        "free_reduced_coordinates": [
+          "z0",
+          "z2",
+          "z4",
+          "z6",
+          "z8",
+          "z10"
+        ],
+        "radical": "affine six-space",
+        "triple_root_variable": "z11",
+        "univariate_cubic_is_perfect_cube": true
+      },
+      "dimension": 6,
+      "dual_rank": 229,
+      "groebner_basis": [
+        "z5-3*z6+8*z7+z8+9*z9-4*z10+3*z11+1",
+        "z3+4*z4+6*z6-9*z7-10*z8+2*z9-2*z10-5*z11",
+        "z1+11*z2+11*z4+7*z6+8*z7-7*z8-5*z9+5*z10+7*z11+7",
+        "z9*z11+6*z10*z11+7*z11^2+2*z9-11*z10-z11-7",
+        "z9^2-11*z9*z10-10*z10^2+2*z7*z11+3*z8*z11-5*z10*z11-z11^2+4*z7+6*z8+11*z9+10*z10-10*z11-3",
+        "z7*z9-10*z8*z9+6*z7*z10+9*z8*z10+9*z9*z10+8*z10^2-8*z7*z11+11*z8*z11-3*z10*z11-7*z11^2+z7-10*z8-3*z9-9*z10-4*z11-8",
+        "z7^2+3*z7*z8+8*z8^2-5*z7*z10+4*z8*z10-11*z10^2+3*z7*z11-7*z8*z11+4*z10*z11-5*z11^2-6*z11-6",
+        "z11^3+6*z11^2-11*z11+8",
+        "z7*z11^2-10*z8*z11^2+9*z10*z11^2+4*z7*z11+6*z8*z11-10*z10*z11-3*z11^2+4*z7+6*z8-10*z10+11*z11+11"
+      ],
+      "groebner_basis_size": 9,
+      "lower_lift_variables": 12,
+      "nonempty": true,
+      "prime": 23,
+      "projected_equations": 229,
+      "radical_dimension": 6,
+      "radical_groebner_basis": [
+        "z11+2",
+        "z9+6*z10-6",
+        "z7-10*z8+9*z10-3",
+        "z5-3*z6-11*z8+8*z10+4",
+        "z3+4*z4+6*z6-8*z8-2*z10-5",
+        "z1+11*z2+11*z4+7*z6+4*z8+9*z10+10"
+      ],
+      "reduced_square_structure": null,
+      "sigma": 14,
+      "singular_program_sha256": "cea93d22a76540b7983b2f6186259741d55146808efc955390220b005d2bcd0f",
+      "tau": 14
+    },
+    {
+      "correction_rank": 142,
+      "degree": 9,
+      "degree_nine_thickening_structure": {
+        "certified": true,
+        "finite_flat_rank_over_radical": 6,
+        "free_reduced_coordinates": [
+          "z0",
+          "z2",
+          "z4",
+          "z6",
+          "z8",
+          "z10"
+        ],
+        "radical": "affine six-space",
+        "triple_root_variable": "z11",
+        "univariate_cubic_is_perfect_cube": true
+      },
+      "dimension": 6,
+      "dual_rank": 229,
+      "groebner_basis": [
+        "z5+15*z6+z7+2*z8-13*z9+10*z10+9*z11-8",
+        "z3+4*z4-14*z6-10*z7-4*z8+15*z9-6*z10-13*z11-7",
+        "z1-7*z2+9*z4+3*z6+13*z7-3*z8-6*z9+4*z10+2*z11+14",
+        "z7*z11-5*z8*z11-14*z9*z11+15*z10*z11-5*z11^2+15*z7-13*z8+7*z9+8*z10+10*z11+4",
+        "z9^2+12*z9*z10+5*z10^2+15*z9*z11-3*z10*z11+7*z11^2+2*z9+12*z10+10*z11+10",
+        "z7*z9-5*z8*z9+6*z7*z10+z8*z10+6*z9*z10+5*z10^2-7*z9*z11-11*z10*z11+13*z11^2-3*z7+15*z8+13*z9-2*z10+8*z11+3",
+        "z7^2-10*z7*z8-6*z8^2+12*z7*z10+2*z8*z10+5*z10^2+9*z9*z11-8*z10*z11-2*z11^2-12*z7-2*z8+11*z9-6*z10+6*z11-13",
+        "z11^3+14*z11^2-7*z11-4",
+        "z9*z11^2+6*z10*z11^2-z9*z11-6*z10*z11-3*z11^2+8*z9-14*z10+3*z11+7"
+      ],
+      "groebner_basis_size": 9,
+      "lower_lift_variables": 12,
+      "nonempty": true,
+      "prime": 31,
+      "projected_equations": 229,
+      "radical_dimension": 6,
+      "radical_groebner_basis": [
+        "z11+15",
+        "z9+6*z10-3",
+        "z7-5*z8+6*z10-6",
+        "z5+15*z6+7*z8-11*z10+10",
+        "z3+4*z4-14*z6+8*z8-5*z10-13",
+        "z1-7*z2+9*z4+3*z6-7*z10+13"
+      ],
+      "reduced_square_structure": null,
+      "sigma": 9,
+      "singular_program_sha256": "80750089fbfa266e21c1e6afc0467606e144f5faad3c9c9affa94dff5629e482",
+      "tau": 22
+    }
+  ],
+  "points_screened": 3,
+  "scope": "modular nonlinear Kuranishi screen; no characteristic-zero component and no order-seven claim"
+}

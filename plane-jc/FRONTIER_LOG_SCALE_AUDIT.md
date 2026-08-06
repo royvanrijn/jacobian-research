@@ -628,16 +628,17 @@ degree-29 valuation identity and the unaccounted remainder are:
 | 1 | 3 | `3,6,12` | `26,23,17` |
 | 2 | 5 | `5` | `24` |
 
-There is a concrete data boundary on the Case-1 decomposition test.  The
+There was a concrete data boundary on the Case-1 decomposition test.  The
 archived descent is a complete necessary *upper truncation*: it contains
 `P` only through `z^-5` and `Q` only through `z^-4`, whereas the full
-Newton polygons continue through `z^-8` and `z^-12`.  The alternate residue
-`[1:P_2(0,r/u):Q_2(0,r/u)]` depends on those omitted lower bands.  Thus its
-exact coefficient vector cannot be reconstructed from the archive, and a
-Case-1 right-component sieve must not insert guessed zero coefficients.
-That sieve becomes executable only after the missing bands are derived, or
-after a lemma proves that its remainders depend solely on the archived
-truncation.
+Newton polygons continue through `z^-8` and `z^-12`.  The exact continuation
+in [CASE1_FULL_BAND_CONTINUATION.md](CASE1_FULL_BAND_CONTINUATION.md) now
+derives all three omitted `P` bands and all eight omitted `Q` bands.  Every
+new block has full column rank, the same six parameters remain, and 66 new
+compatibility equations are recorded in a deterministic ledger.  No guessed
+zero coefficient is used.  The data prerequisite is therefore closed; the
+alternate-chart substitution and exact residue-vector extraction have not
+yet been performed.
 
 The Case-2 row is now strictly smaller than its a priori degree split.
 If its normalization cover had degree `delta=2` or `4`, then the polynomial
@@ -865,9 +866,12 @@ needed before coefficient elimination can be replaced.
 The next target is now finite and correctly normalized.  The dicritical has
 hyperplane degree twelve and total ramification intersection `35`, but its
 actual normal index is three in Case 1 and five in Case 2.  Case 1 retains
-cover degrees `1,2,4`, and its decomposition sieve awaits the omitted lower
-bands.  Case 2 has no compatible degree-twelve endpoint and is closed before
-`(J0)`.  The immediate one-pair task is therefore solely Case 1: derive the
-missing lower bands or prove the truncation lemma, then run the three
-composition strata.  The Case-2 equation (18) and its gcd rows remain useful
-only for compressing the already established exclusion geometrically.
+cover degrees `1,2,4`.  Its omitted lower bands are now reconstructed
+exactly; its decomposition sieve awaits only alternate-chart transport and
+residue-vector extraction.  Case 2 has no compatible degree-twelve endpoint
+and is closed before `(J0)`.  The immediate one-pair task is therefore solely
+Case 1: construct the two exact residues and run the three composition
+strata.  The Case-2 equation (18) and its gcd rows remain useful only for
+compressing the already established exclusion geometrically.
+
+<!-- status-consumer: C1FBC1 0f14ef01fff25097 -->

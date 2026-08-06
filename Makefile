@@ -126,6 +126,19 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: verify-hc4-quadratic-pivot-rank
 .PHONY: verify-hc4-quadratic-rank-two
 .PHONY: verify-hc4-quadratic-rank-one
+.PHONY: verify-hc4-scalar-cancellation
+.PHONY: verify-hc4-higher-degree-pencils
+.PHONY: verify-hc4-quintic-bordered-lemma
+.PHONY: verify-hc4-pure-sextic-collision
+.PHONY: verify-hc4-pure-sextic-lower-flag
+.PHONY: verify-hc4-pure-sextic-affine-quartic
+.PHONY: verify-hc4-pure-sextic-two-linear-tower
+.PHONY: verify-hc4-nonpure-septic
+.PHONY: verify-hc4-pure-septic-opening
+.PHONY: verify-hc4-pure-septic-degree18
+.PHONY: verify-hc4-pure-septic-moving-closure verify-hc4-pure-septic-kzero
+.PHONY: verify-hc4-pure-septic-kzero-wronskian verify-hc4-pure-septic-passive-affine
+.PHONY: verify-hc4-pure-septic-quartic-packets
 .PHONY: verify-s4-collision-frame-keller
 .PHONY: verify-global-low-degree-census
 
@@ -172,6 +185,51 @@ verify-hc4-quadratic-rank-two: verify-hc4-quadratic-pivot-rank
 
 verify-hc4-quadratic-rank-one: verify-hc4-quadratic-rank-two
 	$(PYTHON) scripts/verify_hc4_quadratic_rank_one_pivots.py
+
+verify-hc4-scalar-cancellation: verify-hc4-quadratic-rank-one
+	$(PYTHON) scripts/verify_hc4_scalar_cancellation_dichotomy.py
+
+verify-hc4-higher-degree-pencils: verify-hc4-scalar-cancellation
+	$(PYTHON) scripts/verify_hc4_higher_degree_pencil_obstructions.py
+
+verify-hc4-quintic-bordered-lemma: verify-hc4-higher-degree-pencils
+	$(PYTHON) scripts/verify_hc4_quintic_bordered_lemma.py
+
+verify-hc4-pure-sextic-collision: verify-hc4-quintic-bordered-lemma
+	$(PYTHON) scripts/verify_hc4_pure_sextic_collision.py
+
+verify-hc4-pure-sextic-lower-flag: verify-hc4-pure-sextic-collision
+	$(PYTHON) scripts/verify_hc4_pure_sextic_lower_flag.py
+
+verify-hc4-pure-sextic-affine-quartic: verify-hc4-pure-sextic-lower-flag
+	$(PYTHON) scripts/verify_hc4_pure_sextic_affine_quartic.py
+
+verify-hc4-pure-sextic-two-linear-tower: verify-hc4-pure-sextic-affine-quartic
+	$(PYTHON) scripts/verify_hc4_pure_sextic_two_linear_tower.py
+
+verify-hc4-nonpure-septic: verify-hc4-pure-sextic-two-linear-tower
+	$(PYTHON) scripts/verify_hc4_nonpure_septic.py
+
+verify-hc4-pure-septic-opening: verify-hc4-nonpure-septic
+	$(PYTHON) scripts/verify_hc4_pure_septic_opening.py
+
+verify-hc4-pure-septic-degree18: verify-hc4-pure-septic-opening
+	$(PYTHON) scripts/verify_hc4_pure_septic_degree18.py
+
+verify-hc4-pure-septic-moving-closure: verify-hc4-pure-septic-degree18
+	$(PYTHON) scripts/verify_hc4_pure_septic_moving_closure.py
+
+verify-hc4-pure-septic-kzero: verify-hc4-pure-septic-moving-closure
+	$(PYTHON) scripts/verify_hc4_pure_septic_kzero.py
+
+verify-hc4-pure-septic-kzero-wronskian: verify-hc4-pure-septic-kzero
+	$(PYTHON) scripts/verify_hc4_pure_septic_kzero_wronskian.py
+
+verify-hc4-pure-septic-passive-affine: verify-hc4-pure-septic-kzero-wronskian
+	$(PYTHON) scripts/verify_hc4_pure_septic_passive_affine.py
+
+verify-hc4-pure-septic-quartic-packets: verify-hc4-pure-septic-passive-affine
+	$(PYTHON) scripts/verify_hc4_pure_septic_quartic_packets.py
 
 verify-hc4-meng-yang-quintic: verify-hc4-meng-yang-graphs
 	$(PYTHON) scripts/verify_hc4_meng_yang_quintic_graph_normal_slice.py

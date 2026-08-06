@@ -1,7 +1,14 @@
 {
   "calibrations": {
+    "moving_constant_kernel_gate": "x*y-z",
+    "moving_exceptional_chart_coefficient": -1,
     "nonlinear_graph_coordinate_degree": 3,
     "nonlinear_graph_parent_determinant": 1,
+    "rank_one_constant_kernel_determinant": "-bx^2*det(binary Hessian)",
+    "rank_one_exceptional_determinant": "Jac(P,Q)^2",
+    "rank_three_pencil_determinant": "alpha^2",
+    "rank_two_passive_one_determinant": "Cyw^2-Cyy*Cww",
+    "rank_two_passive_zero_determinant": "det(D)^2",
     "suspension_parent_determinant": 3,
     "universal_graph_coordinate_residual": 0,
     "universal_nonzero_corner_residual": 0
@@ -15,12 +22,66 @@
     "converse": "Phi=lambda*(t+A/lambda)^2/2+psi",
     "pencil": "psi+s*A with s=t+A/lambda"
   },
-  "open_frontier": "nonlinear four-variable constant-Hessian pencils, moving matrix-pivot planes, genuinely mixed/coisotropic canonical transformations, and direct degree-five HC4",
+  "open_frontier": "higher-degree nonlinear four-variable constant-Hessian pencils, moving matrix-pivot planes, genuinely mixed/coisotropic canonical transformations, and direct degree-five HC4; every quadratic scalar pencil is reduced to HC2 or JC2",
   "quadratic_corollary": {
     "conclusion": "every quadratic zero-corner parent is collision-free",
     "linear_algebra": "for deg(A)<=2, some constant v has D_v(A) in K^*",
     "pencil_scope": "singular and nonsingular exact-remainder pencils",
     "unit_ideal": "constant bordered determinant puts 1 in (grad(A))"
+  },
+  "rank_one_nonlinear_pencil": {
+    "conclusion": "rank one reduces completely to HC2 or the JC2 cotangent packet",
+    "constant_exceptional_chart": {
+      "determinant": "Jac(P,Q)^2",
+      "normal_form": "psi=z*P(x,y)+w*Q(x,y)+R(x,y)",
+      "result": "exactly the JC2 cotangent packet"
+    },
+    "constant_kernel_chart": {
+      "binary_hessian_determinant": "-delta",
+      "normal_form": "psi=x*w+C(x,y,z)",
+      "result": "HC2 makes every pencil member injective"
+    },
+    "globalization": {
+      "constant_kernel_identity": "grad_u(v^T*d)=E_x*v=-E*v_x; a unit gate forces v_x in ker(E)",
+      "exceptional_adjugate": "adj(E)=-(p cross g_l)*(p cross g_l)^T",
+      "exceptional_gate": "(p cross g_l)^T*g_x+(u^T*g_l+R_l)*(p cross g_l)^T*p_x",
+      "exceptional_representation": "psi=u^T*g(x,l)+R(x,l), l=p(x)^T*u",
+      "result": "either the chart is constant-kernel or p_x is parallel to p; both normal-form charts are x-independent"
+    },
+    "passive_gate": {
+      "adjugate": "adj(E)=rho*v*v^T",
+      "rank": 2,
+      "unit_identity": "delta=-rho*(v^T*d)^2"
+    },
+    "pivot": "A=x^2/2"
+  },
+  "rank_three_nonlinear_pencil": {
+    "leading_faces": [
+      "psi_ww=0",
+      "grad(b)^T*adj(Q)*grad(b)=0"
+    ],
+    "normal_form": "psi=w*x+y*(alpha*z+beta(x))+G(x,z), alpha!=0",
+    "pencil_hessian_determinant": "alpha^2",
+    "pivot": "A=x*y+z^2/2",
+    "result": "every member has a triangular polynomial gradient inverse",
+    "structural_lemma": "a unimodular polynomial eikonal gradient in three variables is constant",
+    "unit_consequence": "grad(b) is a unimodular isotropic vector"
+  },
+  "rank_two_nonlinear_pencil": {
+    "leading_face": "det Hess_(z,w)(psi)=0",
+    "passive_rank_one": {
+      "binary_hessian_determinant": "-delta",
+      "channel_split": "2*rho*Delta_x*Delta_y=0",
+      "normal_form": "psi=x*z+C(x,y,w)",
+      "result": "HC2 makes every pencil member injective",
+      "unit_frame": "delta=(h^2-rho*psi_yy)*Delta_x^2"
+    },
+    "passive_rank_zero": {
+      "determinant": "Jac(b,c)^2",
+      "normal_form": "psi=z*b(x,y)+w*c(x,y)+D(x,y)",
+      "result": "gradient invertibility is equivalent to JC2 for (b,c)"
+    },
+    "pivot": "A=x*y"
   },
   "status": [
     {
@@ -35,6 +96,30 @@
       "kind": "hybrid theorem",
       "result": "the five-variable parent gradient is a polynomial automorphism",
       "scope": "zero-corner graph-coordinate scalar pivots"
+    },
+    {
+      "id": "HC4RSD13",
+      "kind": "hybrid theorem",
+      "result": "complete triangular normal form",
+      "scope": "rank-three quadratic four-variable constant-Hessian pencils"
+    },
+    {
+      "id": "HC4RSD14",
+      "kind": "hybrid theorem",
+      "result": "passive rank one is safe; passive rank zero is exactly JC2",
+      "scope": "rank-two quadratic four-variable constant-Hessian pencils"
+    },
+    {
+      "id": "HC4RSD15",
+      "kind": "hybrid theorem",
+      "result": "constant kernel is safe; exceptional chart is exactly JC2",
+      "scope": "rank-one quadratic pencils in x-constant ternary normal-form charts"
+    },
+    {
+      "id": "HC4RSD16",
+      "kind": "hybrid theorem",
+      "result": "unit border transversality freezes both rationally moving charts",
+      "scope": "globalization of rank-one ternary singular-Hessian charts"
     }
   ],
   "zero_corner_graph_coordinate": {

@@ -51,7 +51,7 @@ The ten earlier exact characteristic-zero results are:
     strictly containing the earlier two-parameter plane, is excluded
     exactly by moments \(3,\ldots,7\).
 
-Fifteen further exact results sharpen the remaining SIC problem:
+Seventeen further exact results sharpen the remaining SIC problem:
 
 11. on the normalized anti-Weyl locus, all odd moments vanish by symmetry
     and the even moments through order fourteen generate the unit ideal
@@ -77,7 +77,7 @@ Fifteen further exact results sharpen the remaining SIC problem:
     complex point on the other fourteen systems is explicitly one-sided.
 18. on the generic rank-two Hurwitz chart with \(B(0)=1\),
     \(\Delta M_{01}\ne0\), exact characteristic-zero elimination excludes
-    the complete \(\lambda=0\) fibre and the doubly exceptional
+    the four complete fibres \(\lambda=-1,0,1,2\) and the doubly exceptional
     \(\mu_2\)-pivot branch \(P_1=P_2=0\), both already through
     \(\mu_8\).
 19. all sixteen nine-entry \(3\times3\) rectangle supports are SIC-safe.
@@ -121,12 +121,51 @@ Fifteen further exact results sharpen the remaining SIC problem:
     \(4+3+1+1\), no complete line on the other axis, or their transposes,
     are SIC-safe.  Every one of their 311 dense symmetry representatives
     has unit moment ideal over \(\mathbb Q\) through \(\mu_{10}\).
+26. all 816 full-incidence supports with row and column partitions
+    \(3+2+2+2\) are SIC-safe.  Of their 230 symmetry representatives,
+    228 have unit dense-torus ideals through \(\mu_{10}\).  The two
+    nonunit systems each have one rational rank-three point; exact flag
+    changes put both in the chamber \(i>j\), with recurrence
+    \(\nu_{m+1}=0\) and mixed cutoff \(m>e\).
+27. the other 7,050 full-incidence supports form 1,792 symmetry orbits
+    in four unordered row/column partition types.  Every dense-torus
+    ideal is a unit over \(\mathbb Q\) through \(\mu_{10}\).  Together
+    with results 19--26 this closes all 11,420 mixed nine-entry supports.
+28. on the rank-two Hurwitz coefficient slice
+    \(b_0=0,b_1=1\), moments through \(\mu_6\) cut out a quotient of
+    length 687 over \(\mathbb Q\), and \(\mu_7\) leaves one rational
+    support point of local length 26.  A rational flag change puts its
+    three terms in the strict chamber \(i>j\), proving the recurrence
+    \(\nu_{m+1}=0\), a degree-one mixed value \(-2\), and the cutoff
+    \(m>e\).  Thus the complete five-parameter slice is SIC-safe.  This
+    remains a coefficient-slice theorem, not a diagonal-\(\mathrm{SL}_2\)
+    orbit classification.
+29. on the complementary \(P_1\ne0,A=0\) Hurwitz divisor, the ratio
+    coordinates \(q=b_1/b_0,\ z=b_0a_2\) give an exact first component
+    decomposition.  The \(\mathcal B\ne0\) incidence-plus-\(\mu_4\)
+    projection is an irreducible degree-\(44\) hypersurface over
+    \(\mathbb Q\).  The degree-drop locus
+    \(\mathcal B=\mathcal C=0\) has one irreducible component after
+    removing the already-inverted factor
+    \((P_1/(3b_0))^2\); its projection has degree \(26\), and its first
+    descended \(\mu_4\) equation is irreducible of total degree \(27\)
+    and cubic in \(z\).  On its irreducible leading-coefficient open,
+    \(\mu_5\) descends to an irreducible degree-\(40\) quadratic in
+    \(z\); both leading-coefficient boundaries exposed by this
+    cubic--cubic step are irreducible.  The forced cubic--quadratic norm
+    then gives an irreducible degree-\(118\) base equation \(K\).  On its
+    birational and linear-remainder open \(VR_1\ne0\), the descended
+    \(\mu_6,\mu_7\) conditions give
+    irreducible base equations \(J_6,J_7\) of degrees \(130,162\).
+    Hence the generic finite prefix through \(\mu_7\) is exactly reduced
+    to \(H=K=J_6=J_7=0\) in three variables.  Its common zero set and
+    the \(V=0\) and simultaneous linear-remainder boundaries remain open.
 
 The fourth result excludes every SIC(2) counterexample lying in a single
 irreducible summand.  The sixth gives dimension-sized moment coordinates,
-not a zero-fiber theorem.  Results 11--25 remove the first semistable
+not a zero-fiber theorem.  Results 11--29 remove the first semistable
 all-order survivor from the SIC search and force any counterexample to
-have at least nine nonzero entries in the displayed coefficient basis.
+have at least ten nonzero entries in the displayed coefficient basis.
 They do not classify the remaining full mixed
 \(\operatorname{Sym}^6\oplus\operatorname{Sym}^4\oplus
 \operatorname{Sym}^2\) locus.  Consequently bidegree-\((3,3)\) SIC safety,
@@ -2116,7 +2155,7 @@ parts:
 3. the boundary \(F_2=0\).
 
 The complete sparse census proves that a new SIC counterexample, if one
-exists, has at least nine nonzero entries in the displayed coefficient
+exists, has at least ten nonzero entries in the displayed coefficient
 basis.  For size six, full complex degree-one RURs show that the two
 nonunit systems contain only the Rodrigues copies.  At size eight the
 sole hard odd-parity support is an exact characteristic-zero unit through
@@ -2275,6 +2314,111 @@ supports in 2,022 orbits.  Every remaining support uses all four rows and
 columns and belongs to one of five unordered row/column degree-partition
 types.
 
+First take the 816 supports whose row and column partitions are both
+\(3+2+2+2\).  They form 230 symmetry orbits: 52 of size two and 178 of
+size four.  Exact coefficient-torus elimination through \(\mu_{10}\)
+gives 228 unit ideals.  Each of the two remaining systems has a
+degree-one rational RUR and hence exactly one complex point.  With the
+first two normalized coefficients equal to one, their coefficient
+matrices are
+
+\[
+ C_1=\begin{pmatrix}
+ 1&1&2/9&0\\[-2pt]
+ -9/4&-3/2&0&0\\[-2pt]
+ 9/8&0&0&1/3\\[-2pt]
+ 0&0&-3/4&-1/2
+ \end{pmatrix},\qquad
+ C_2=\begin{pmatrix}
+ 0&1&1&2/9\\[-2pt]
+ 0&0&-3&-1\\[-2pt]
+ 27&0&0&1\\[-2pt]
+ -81&-27&0&0
+ \end{pmatrix}.                                      \tag{6.6a}
+\]
+
+Both matrices have rank three.  Their dehomogenized polynomials factor
+as
+
+\[
+\begin{aligned}
+ f_1(x,y)&=-\frac{(3x-2)(2y+3)
+ (6x^2y^2+6xy-9x+4y+12)}{72},\\
+ f_2(x,y)&=-\frac{(3x-1)(y+3)
+ (81x^2-3xy^2+9xy+2y^2+3y)}9.
+\end{aligned}                                         \tag{6.6b}
+\]
+
+Under the contraction-preserving finite flag changes (2.1) with
+\(q=2/3\) and \(q=1/3\), respectively, they become
+
+\[
+\begin{aligned}
+ f'_1(X,Y)&=-\frac{3X}{8}
+ (2X^2Y^2+6XY-3X+2),\\
+ f'_2(X,Y)&=-9X
+ (X^2Y^2-6X^2Y+9X^2-3XY+6X+1).
+\end{aligned}                                         \tag{6.6c}
+\]
+
+Every exponent \((i,j)\) displayed in (6.6c) has \(i>j\).  For
+
+\[
+ P(u,t)=\sum_{i,j}c_{ij}u^{j-i}t^j(1-t)^{3-j},\qquad
+ \nu_m=\frac{\mu_m}{(3m+1)!}
+       =\operatorname {CT}_u\int_0^1P(u,t)^m\,dt,      \tag{6.6d}
+\]
+
+every term of \(P\) therefore has strictly negative \(u\)-degree.  Over
+each exact residue field \(\mathbb Q\), creative telescoping degenerates
+to the valuation certificate
+
+\[
+ \nu_{m+1}=0\quad(m\ge0),\qquad \nu_1=0,               \tag{6.6e}
+\]
+
+with forward coefficient one and no singular integer step.  A balanced
+degree-\(e\) multiplier contributes \(u\)-degree at most \(e\), so all
+of its mixed contractions vanish for \(m>e\).  Direct exact checks for
+degrees one and two include nonzero low-order values.  Hence:
+
+> **Proposition 6.7.** Every bidegree-\((3,3)\) form supported on a
+> \((3+2+2+2)\)-by-\((3+2+2+2)\) nine-entry incidence pattern is
+> SIC-safe.  The only nonunit dense systems are the two rational
+> fixed-flag one-sided rank-three points (6.6a).
+
+Four unordered incidence types remain.  Their exact
+characteristic-zero classification is
+
+\[
+\begin{array}{c|r|r|r}
+ \text{row/column partitions}&\text{supports}&\text{orbits}
+     &\text{unit ideals through }\mu_{10}\\ \hline
+ (4+2+2+1)\times(3+2+2+2)&1,152&288&288\\
+ (4+2+2+1)\times(3+3+2+1)&1,436&359&359\\
+ (3+3+2+1)\times(3+3+2+1)&1,870&497&497\\
+ (3+3+2+1)\times(3+2+2+2)&2,592&648&648
+\end{array}                                             \tag{6.6f}
+\]
+
+The first, second, and fourth rows have only four-element symmetry
+orbits.  The symmetric third row has 59 size-two and 438 size-four
+orbits.  Thus (6.6f) contains 7,050 supports in 1,792 orbits, and every
+dense coefficient torus is empty on the moment zero set through
+\(\mu_{10}\).  Every coordinate boundary has support at most eight.
+Consequently:
+
+> **Proposition 6.8.** Every mixed nine-entry bidegree-\((3,3)\)
+> coefficient support is SIC-safe.
+
+The complete basis-dependent census is therefore 11,420 closed supports
+in 2,924 transpose/reversal orbits: 138 of size two and 2,786 of size
+four, with none remaining.  In particular, a bidegree-\((3,3)\) SIC
+counterexample must have at least ten nonzero coefficients in the
+standard monomial basis.  Proposition 6.8 is not a continuous
+diagonal-\(\mathrm{SL}_2\) orbit classification, so the dense
+degree-three SIC problem remains open.
+
 The next global computation should saturate each normalized chart by the
 nullcone and the explicit Rodrigues orbit before eliminating later
 moments.  Reconstructing a specialized norm or a single finite-field
@@ -2282,13 +2426,25 @@ quotient remains useful
 evidence, but cannot replace this residual component calculation.
 
 On the exact-rank-two locus, the
-[Hurwitz-chart calculation](TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_FINITE_PREFIX.md#4-two-exact-exclusions-on-the-generic-hurwitz-chart)
-now removes the full \(\lambda=0\) fibre and the branch on which both
-successive \(\mu_2\) pivots vanish.  The two principal-open branches
+[Hurwitz-chart calculation](TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_FINITE_PREFIX.md#4-exact-exclusions-on-the-generic-hurwitz-chart)
+now removes the four full fibres \(\lambda=-1,0,1,2\) and the branch on
+which both successive \(\mu_2\) pivots vanish.  It also classifies the
+exact-rank-two coefficient slice \(b_0=0,b_1=1\): \(\mu_7\) leaves one
+rational fixed-flag one-sided point, so the whole slice is SIC-safe
+without localizing \(\Delta\).  This slice is not a diagonal-
+\(\mathrm{SL}_2\) orbit chart.  Away from the four fibres,
+the two principal-open branches
 \(P_1\ne0\) and \(P_1=0,\ P_2\ne0\), the localization boundaries, other
 channel charts, and exceptional cubic pencils remain.  The original
 seven-equation system has mixed volume \(74\,144\); this is a complexity
 measurement, not a root count or an exclusion theorem.
+
+On the degree-drop divisor inside \(P_1\ne0\), the reduced third moment is
+\(Aa_2^2+Ba_2+C\).  The exact implication
+\(A=0,\ M_{01}\ne0\Rightarrow b_0\ne0\) now eliminates \(b_2\) first.
+Keeping \(Ba_2+C=0\) as an incidence equation produces a 632 KB exact
+\(\mathbb Q\) source through \(\mu_7\), avoiding the much larger expanded
+resultants.  Its component decomposition remains open.
 
 A complementary direct factor family uses reversal-even and reversal-odd
 channel lines.  Before normalizing the internal gauge, write its two dual
@@ -2508,7 +2664,7 @@ replayed by
   scripts/verify_two_pair_sic_bidegree33_rank_two_parity_channels.py
 ```
 
-The two characteristic-zero Hurwitz exclusions are replayed by
+The characteristic-zero Hurwitz exclusions are replayed by
 
 ```bash
 .venv/bin/python \
@@ -2527,6 +2683,12 @@ The two characteristic-zero Hurwitz exclusions are replayed by
   --timeout 120 --memory-gb 3 \
   --output \
   artifacts/generated-results/two_pair_sic_bidegree33_rank_two_hurwitz_secondary_boundary_char0.json
+
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_rank_two_hurwitz_fixed_fibres.py
+
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_rank_two_hurwitz_root_jet_slice.py
 ```
 
 The sharded size-six and size-seven census commands are recorded in

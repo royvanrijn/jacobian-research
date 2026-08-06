@@ -1,0 +1,171 @@
+{
+  "direct_weight_partitions": [
+    "1111111",
+    "211111",
+    "31111"
+  ],
+  "format": "hc4-nonpure-septic-v1",
+  "residual": "the pure-seventh leading form",
+  "same_weight_tail_rule": "deg(r_k)=7-k*(7-e)",
+  "status": {
+    "id": "HC4RSD33",
+    "kind": "hybrid theorem",
+    "result": "the valuation sieve leaves seventeen complete weighted faces; their exact discriminant-open coefficient ideals have the full transverse coefficient origin as radical",
+    "scope": "all non-pure binary septic leading forms"
+  },
+  "weighted_layers": [
+    {
+      "cross_ratio_dimension": 0,
+      "g_dimension": 1,
+      "partition": "61",
+      "q_dimension": 2,
+      "r_dimension": 0,
+      "root_weight": 4,
+      "transverse_degree": 4
+    },
+    {
+      "cross_ratio_dimension": 0,
+      "g_dimension": 2,
+      "partition": "61",
+      "q_dimension": 4,
+      "r_dimension": 2,
+      "root_weight": 4,
+      "transverse_degree": 5
+    },
+    {
+      "cross_ratio_dimension": 0,
+      "g_dimension": 1,
+      "partition": "52",
+      "q_dimension": 2,
+      "r_dimension": 0,
+      "root_weight": 4,
+      "transverse_degree": 4
+    },
+    {
+      "cross_ratio_dimension": 0,
+      "g_dimension": 2,
+      "partition": "52",
+      "q_dimension": 4,
+      "r_dimension": 2,
+      "root_weight": 4,
+      "transverse_degree": 5
+    },
+    {
+      "cross_ratio_dimension": 0,
+      "g_dimension": 1,
+      "partition": "511",
+      "q_dimension": 4,
+      "r_dimension": 2,
+      "root_weight": 5,
+      "transverse_degree": 5
+    },
+    {
+      "cross_ratio_dimension": 0,
+      "g_dimension": 1,
+      "partition": "43",
+      "q_dimension": 2,
+      "r_dimension": 0,
+      "root_weight": 4,
+      "transverse_degree": 4
+    },
+    {
+      "cross_ratio_dimension": 0,
+      "g_dimension": 2,
+      "partition": "43",
+      "q_dimension": 4,
+      "r_dimension": 2,
+      "root_weight": 4,
+      "transverse_degree": 5
+    },
+    {
+      "cross_ratio_dimension": 0,
+      "g_dimension": 1,
+      "partition": "421",
+      "q_dimension": 2,
+      "r_dimension": 0,
+      "root_weight": 4,
+      "transverse_degree": 4
+    },
+    {
+      "cross_ratio_dimension": 0,
+      "g_dimension": 2,
+      "partition": "421",
+      "q_dimension": 4,
+      "r_dimension": 2,
+      "root_weight": 4,
+      "transverse_degree": 5
+    },
+    {
+      "cross_ratio_dimension": 1,
+      "g_dimension": 1,
+      "partition": "4111",
+      "q_dimension": 4,
+      "r_dimension": 2,
+      "root_weight": 5,
+      "transverse_degree": 5
+    },
+    {
+      "cross_ratio_dimension": 0,
+      "g_dimension": 1,
+      "partition": "331",
+      "q_dimension": 4,
+      "r_dimension": 2,
+      "root_weight": 5,
+      "transverse_degree": 5
+    },
+    {
+      "cross_ratio_dimension": 0,
+      "g_dimension": 1,
+      "partition": "322",
+      "q_dimension": 2,
+      "r_dimension": 0,
+      "root_weight": 4,
+      "transverse_degree": 4
+    },
+    {
+      "cross_ratio_dimension": 0,
+      "g_dimension": 2,
+      "partition": "322",
+      "q_dimension": 4,
+      "r_dimension": 2,
+      "root_weight": 4,
+      "transverse_degree": 5
+    },
+    {
+      "cross_ratio_dimension": 1,
+      "g_dimension": 1,
+      "partition": "3211",
+      "q_dimension": 4,
+      "r_dimension": 2,
+      "root_weight": 5,
+      "transverse_degree": 5
+    },
+    {
+      "cross_ratio_dimension": 1,
+      "g_dimension": 1,
+      "partition": "2221",
+      "q_dimension": 2,
+      "r_dimension": 0,
+      "root_weight": 4,
+      "transverse_degree": 4
+    },
+    {
+      "cross_ratio_dimension": 1,
+      "g_dimension": 2,
+      "partition": "2221",
+      "q_dimension": 4,
+      "r_dimension": 2,
+      "root_weight": 4,
+      "transverse_degree": 5
+    },
+    {
+      "cross_ratio_dimension": 2,
+      "g_dimension": 1,
+      "partition": "22111",
+      "q_dimension": 4,
+      "r_dimension": 2,
+      "root_weight": 5,
+      "transverse_degree": 5
+    }
+  ]
+}

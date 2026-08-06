@@ -1,0 +1,20 @@
+{
+  "counts": {
+    "errors": 0,
+    "exceptional": 0,
+    "order_five_consistent": 0
+  },
+  "degree": 9,
+  "errors": [],
+  "exceptional_points": [],
+  "generic_signature": [
+    227,
+    12,
+    142,
+    149,
+    150
+  ],
+  "order_five_consistent_points": [],
+  "parameter_points": 1369,
+  "prime": 37
+}

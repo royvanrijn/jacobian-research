@@ -1,0 +1,5170 @@
+{
+  "balanced_prescribed_degree_rows": [
+    {
+      "admissible_polynomial_shape": "A=a0+a1*T",
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "characteristic": 3,
+      "cover_degree": 4,
+      "decision": "obstructed",
+      "decisive_gate": "balanced_source_class_group",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "id": "balanced-prescribed-p3-N3-d4",
+      "obstruction": {
+        "class_group": "Z/2",
+        "named_class_order": 2
+      },
+      "retained_polynomial_degree": 1,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 3
+    },
+    {
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "characteristic": 3,
+      "cover_degree": 5,
+      "decision": "obstructed",
+      "decisive_gate": "extra_target_different",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "id": "balanced-prescribed-p3-N3-d5",
+      "obstruction": {
+        "leading_coefficient_of_A_minus_TA_prime_mod_p": 2,
+        "reason": "A-T*A' cannot be constant"
+      },
+      "retained_polynomial_degree": 2,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 3
+    },
+    {
+      "admissible_polynomial_shape": "A=a0+T*B(T^p)",
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "canonical_squarefree_control": "A=1+T^4",
+      "characteristic": 3,
+      "cover_degree": 7,
+      "decision": "obstructed",
+      "decisive_gate": "geometric_point_count_after_retained_roots_split",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "id": "balanced-prescribed-p3-N3-d7",
+      "obstruction": {
+        "open_count_over_Fq": "q^2+(n_q(A)-1)*q",
+        "open_count_over_splitting_field": "q^2+3*q",
+        "retained_root_count_over_splitting_field": 4
+      },
+      "retained_polynomial_degree": 4,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 3
+    },
+    {
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "characteristic": 3,
+      "cover_degree": 8,
+      "decision": "obstructed",
+      "decisive_gate": "extra_target_different",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "id": "balanced-prescribed-p3-N3-d8",
+      "obstruction": {
+        "leading_coefficient_of_A_minus_TA_prime_mod_p": 2,
+        "reason": "A-T*A' cannot be constant"
+      },
+      "retained_polynomial_degree": 5,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 3
+    },
+    {
+      "admissible_polynomial_shape": "A=a0+T*B(T^p)",
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "canonical_squarefree_control": "A=1+T^7",
+      "characteristic": 3,
+      "cover_degree": 10,
+      "decision": "obstructed",
+      "decisive_gate": "geometric_point_count_after_retained_roots_split",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "id": "balanced-prescribed-p3-N3-d10",
+      "obstruction": {
+        "open_count_over_Fq": "q^2+(n_q(A)-1)*q",
+        "open_count_over_splitting_field": "q^2+6*q",
+        "retained_root_count_over_splitting_field": 7
+      },
+      "retained_polynomial_degree": 7,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 3
+    },
+    {
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "characteristic": 3,
+      "cover_degree": 11,
+      "decision": "obstructed",
+      "decisive_gate": "extra_target_different",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "id": "balanced-prescribed-p3-N3-d11",
+      "obstruction": {
+        "leading_coefficient_of_A_minus_TA_prime_mod_p": 2,
+        "reason": "A-T*A' cannot be constant"
+      },
+      "retained_polynomial_degree": 8,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 3
+    },
+    {
+      "admissible_polynomial_shape": "A=a0+T*B(T^p)",
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "canonical_squarefree_control": "A=1+T^10",
+      "characteristic": 3,
+      "cover_degree": 13,
+      "decision": "obstructed",
+      "decisive_gate": "geometric_point_count_after_retained_roots_split",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "id": "balanced-prescribed-p3-N3-d13",
+      "obstruction": {
+        "open_count_over_Fq": "q^2+(n_q(A)-1)*q",
+        "open_count_over_splitting_field": "q^2+9*q",
+        "retained_root_count_over_splitting_field": 10
+      },
+      "retained_polynomial_degree": 10,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 3
+    },
+    {
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "characteristic": 3,
+      "cover_degree": 14,
+      "decision": "obstructed",
+      "decisive_gate": "extra_target_different",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "id": "balanced-prescribed-p3-N3-d14",
+      "obstruction": {
+        "leading_coefficient_of_A_minus_TA_prime_mod_p": 2,
+        "reason": "A-T*A' cannot be constant"
+      },
+      "retained_polynomial_degree": 11,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 3
+    },
+    {
+      "admissible_polynomial_shape": "A=a0+a1*T",
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "characteristic": 5,
+      "cover_degree": 6,
+      "decision": "obstructed",
+      "decisive_gate": "balanced_source_class_group",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "id": "balanced-prescribed-p5-N5-d6",
+      "obstruction": {
+        "class_group": "Z/4",
+        "named_class_order": 4
+      },
+      "retained_polynomial_degree": 1,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 5
+    },
+    {
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "characteristic": 5,
+      "cover_degree": 7,
+      "decision": "obstructed",
+      "decisive_gate": "extra_target_different",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "id": "balanced-prescribed-p5-N5-d7",
+      "obstruction": {
+        "leading_coefficient_of_A_minus_TA_prime_mod_p": 4,
+        "reason": "A-T*A' cannot be constant"
+      },
+      "retained_polynomial_degree": 2,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 5
+    },
+    {
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "characteristic": 5,
+      "cover_degree": 8,
+      "decision": "obstructed",
+      "decisive_gate": "extra_target_different",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "id": "balanced-prescribed-p5-N5-d8",
+      "obstruction": {
+        "leading_coefficient_of_A_minus_TA_prime_mod_p": 3,
+        "reason": "A-T*A' cannot be constant"
+      },
+      "retained_polynomial_degree": 3,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 5
+    },
+    {
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "characteristic": 5,
+      "cover_degree": 9,
+      "decision": "obstructed",
+      "decisive_gate": "extra_target_different",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "id": "balanced-prescribed-p5-N5-d9",
+      "obstruction": {
+        "leading_coefficient_of_A_minus_TA_prime_mod_p": 2,
+        "reason": "A-T*A' cannot be constant"
+      },
+      "retained_polynomial_degree": 4,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 5
+    },
+    {
+      "admissible_polynomial_shape": "A=a0+T*B(T^p)",
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "canonical_squarefree_control": "A=1+T^6",
+      "characteristic": 5,
+      "cover_degree": 11,
+      "decision": "obstructed",
+      "decisive_gate": "geometric_point_count_after_retained_roots_split",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "id": "balanced-prescribed-p5-N5-d11",
+      "obstruction": {
+        "open_count_over_Fq": "q^2+(n_q(A)-1)*q",
+        "open_count_over_splitting_field": "q^2+5*q",
+        "retained_root_count_over_splitting_field": 6
+      },
+      "retained_polynomial_degree": 6,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 5
+    },
+    {
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "characteristic": 5,
+      "cover_degree": 12,
+      "decision": "obstructed",
+      "decisive_gate": "extra_target_different",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "id": "balanced-prescribed-p5-N5-d12",
+      "obstruction": {
+        "leading_coefficient_of_A_minus_TA_prime_mod_p": 4,
+        "reason": "A-T*A' cannot be constant"
+      },
+      "retained_polynomial_degree": 7,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 5
+    },
+    {
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "characteristic": 5,
+      "cover_degree": 13,
+      "decision": "obstructed",
+      "decisive_gate": "extra_target_different",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "id": "balanced-prescribed-p5-N5-d13",
+      "obstruction": {
+        "leading_coefficient_of_A_minus_TA_prime_mod_p": 3,
+        "reason": "A-T*A' cannot be constant"
+      },
+      "retained_polynomial_degree": 8,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 5
+    },
+    {
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "characteristic": 5,
+      "cover_degree": 14,
+      "decision": "obstructed",
+      "decisive_gate": "extra_target_different",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "id": "balanced-prescribed-p5-N5-d14",
+      "obstruction": {
+        "leading_coefficient_of_A_minus_TA_prime_mod_p": 2,
+        "reason": "A-T*A' cannot be constant"
+      },
+      "retained_polynomial_degree": 9,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 5
+    },
+    {
+      "admissible_polynomial_shape": "A=a0+a1*T",
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "characteristic": 7,
+      "cover_degree": 8,
+      "decision": "obstructed",
+      "decisive_gate": "balanced_source_class_group",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "id": "balanced-prescribed-p7-N7-d8",
+      "obstruction": {
+        "class_group": "Z/6",
+        "named_class_order": 6
+      },
+      "retained_polynomial_degree": 1,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 7
+    },
+    {
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "characteristic": 7,
+      "cover_degree": 9,
+      "decision": "obstructed",
+      "decisive_gate": "extra_target_different",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "id": "balanced-prescribed-p7-N7-d9",
+      "obstruction": {
+        "leading_coefficient_of_A_minus_TA_prime_mod_p": 6,
+        "reason": "A-T*A' cannot be constant"
+      },
+      "retained_polynomial_degree": 2,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 7
+    },
+    {
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "characteristic": 7,
+      "cover_degree": 10,
+      "decision": "obstructed",
+      "decisive_gate": "extra_target_different",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "id": "balanced-prescribed-p7-N7-d10",
+      "obstruction": {
+        "leading_coefficient_of_A_minus_TA_prime_mod_p": 5,
+        "reason": "A-T*A' cannot be constant"
+      },
+      "retained_polynomial_degree": 3,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 7
+    },
+    {
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "characteristic": 7,
+      "cover_degree": 11,
+      "decision": "obstructed",
+      "decisive_gate": "extra_target_different",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "id": "balanced-prescribed-p7-N7-d11",
+      "obstruction": {
+        "leading_coefficient_of_A_minus_TA_prime_mod_p": 4,
+        "reason": "A-T*A' cannot be constant"
+      },
+      "retained_polynomial_degree": 4,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 7
+    },
+    {
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "characteristic": 7,
+      "cover_degree": 12,
+      "decision": "obstructed",
+      "decisive_gate": "extra_target_different",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "id": "balanced-prescribed-p7-N7-d12",
+      "obstruction": {
+        "leading_coefficient_of_A_minus_TA_prime_mod_p": 3,
+        "reason": "A-T*A' cannot be constant"
+      },
+      "retained_polynomial_degree": 5,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 7
+    },
+    {
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "characteristic": 7,
+      "cover_degree": 13,
+      "decision": "obstructed",
+      "decisive_gate": "extra_target_different",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "id": "balanced-prescribed-p7-N7-d13",
+      "obstruction": {
+        "leading_coefficient_of_A_minus_TA_prime_mod_p": 2,
+        "reason": "A-T*A' cannot be constant"
+      },
+      "retained_polynomial_degree": 6,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 7
+    },
+    {
+      "admissible_polynomial_shape": "A=a0+T*B(T^p)",
+      "architecture": "balanced_prescribed_degree_hidden_order",
+      "canonical_squarefree_control": "A=1+T^8",
+      "characteristic": 7,
+      "cover_degree": 15,
+      "decision": "obstructed",
+      "decisive_gate": "geometric_point_count_after_retained_roots_split",
+      "equation": "A(T)*(T^N-P^(N+1))+P^(N-1)*Q*T",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "id": "balanced-prescribed-p7-N7-d15",
+      "obstruction": {
+        "open_count_over_Fq": "q^2+(n_q(A)-1)*q",
+        "open_count_over_splitting_field": "q^2+7*q",
+        "retained_root_count_over_splitting_field": 8
+      },
+      "retained_polynomial_degree": 8,
+      "support_identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+      "wild_degree": 7
+    }
+  ],
+  "balanced_root_count_certificate": {
+    "boundary_count": "q",
+    "chart": "P=x*u,T=x^2*u,Q=A(x^2*u)*(u-x^(N-1)); isomorphism over D(A)",
+    "chart_count": "q^2-n_q(A)*(q-1)",
+    "cover_count": "q^2+n_q(A)*q",
+    "geometric_consequence": "after a finite splitting field n_q(A)=deg(A), so C-E is geometrically A2 only if deg(A)=1",
+    "open_count": "q^2+(n_q(A)-1)*q",
+    "root_fibre_count": "2*q-1 per rational root",
+    "rows_checked": 8
+  },
+  "balanced_support_certificate": {
+    "admissible_retained_degrees_through_bound": {
+      "3": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "5": [
+        1,
+        6
+      ],
+      "7": [
+        1,
+        8
+      ]
+    },
+    "coefficient_characterization": "A=a0+T*B(T^p)",
+    "identity": "A*H_T-A'*H=P^(N-1)*Q*(A-T*A')",
+    "rows_checked": 30
+  },
+  "characteristic_zero_boundary_module": {
+    "class_group_block": "[[V,A],[0,R]]",
+    "finite_support_residue": "H^0_Z(coker(Phi))=(im(Phi):I_Z^infinity)/im(Phi)",
+    "minimal_packet_presentations": [
+      {
+        "multiplicities": [
+          2,
+          3
+        ],
+        "relation_matrix_R": [
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            1
+          ]
+        ],
+        "smith_diagonal": [
+          1,
+          1
+        ],
+        "vertical_class_group": []
+      },
+      {
+        "multiplicities": [
+          2,
+          5
+        ],
+        "relation_matrix_R": [
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            5,
+            1
+          ]
+        ],
+        "smith_diagonal": [
+          1,
+          1
+        ],
+        "vertical_class_group": []
+      },
+      {
+        "multiplicities": [
+          2,
+          7
+        ],
+        "relation_matrix_R": [
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            7,
+            1
+          ]
+        ],
+        "smith_diagonal": [
+          1,
+          1
+        ],
+        "vertical_class_group": []
+      }
+    ],
+    "required_order_of_gates": [
+      "different vanishes away from the omitted boundary",
+      "compiled determinant class vanishes in Cl(U) or Pic(U)",
+      "finite-support local-cohomology residue vanishes",
+      "affineness and polynomial-coordinate reconstruction"
+    ],
+    "status": "coherent_template_not_instantiated"
+  },
+  "comparison_rows": [
+    {
+      "architecture": "fierce_additive_block",
+      "characteristic": 3,
+      "cover_degree": 3,
+      "decision": "needs_reconstruction",
+      "equation": "Z^p+Q^m*Z-P",
+      "id": "additive-p3-m1",
+      "ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "missing_certificates": [
+        "global omitted-boundary presentation",
+        "affine-plane source reconstruction",
+        "determinant cancellation ledger"
+      ]
+    },
+    {
+      "architecture": "fierce_additive_block",
+      "characteristic": 3,
+      "cover_degree": 3,
+      "decision": "needs_reconstruction",
+      "equation": "Z^p+Q^m*Z-P",
+      "id": "additive-p3-m2",
+      "ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 2
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "missing_certificates": [
+        "global omitted-boundary presentation",
+        "affine-plane source reconstruction",
+        "determinant cancellation ledger"
+      ]
+    },
+    {
+      "architecture": "artin_schreier_local",
+      "characteristic": 3,
+      "decision": "local_comparison_only",
+      "equation": "Y^p-Y=c*Q^(-m)",
+      "id": "as-p3-m1",
+      "ledger": {
+        "conductor": {
+          "kind": "artin",
+          "value": 2
+        },
+        "different": {
+          "certification": "exact",
+          "value": 4
+        },
+        "e": 3,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 3
+      }
+    },
+    {
+      "architecture": "artin_schreier_local",
+      "characteristic": 3,
+      "decision": "local_comparison_only",
+      "equation": "Y^p-Y=c*Q^(-m)",
+      "id": "as-p3-m2",
+      "ledger": {
+        "conductor": {
+          "kind": "artin",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 6
+        },
+        "e": 3,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 3
+      }
+    },
+    {
+      "architecture": "artin_schreier_witt_local",
+      "characteristic": 3,
+      "decision": "local_comparison_only",
+      "id": "asw-p3-j1-4",
+      "jumps": [
+        1,
+        4
+      ],
+      "ledger": {
+        "conductor": {
+          "kind": "artin_witt_vector",
+          "value": [
+            2,
+            5
+          ]
+        },
+        "different": {
+          "certification": "exact",
+          "value": 34
+        },
+        "e": 9,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 9
+      }
+    },
+    {
+      "architecture": "tame_kummer_local",
+      "characteristic": 3,
+      "decision": "local_comparison_only",
+      "id": "kummer-p3-e2",
+      "ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 2,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 2
+      }
+    },
+    {
+      "architecture": "tame_kummer_local",
+      "characteristic": 3,
+      "decision": "local_comparison_only",
+      "id": "kummer-p3-e4",
+      "ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 3
+        },
+        "e": 4,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 4
+      }
+    },
+    {
+      "architecture": "tame_kummer_local",
+      "characteristic": 3,
+      "decision": "local_comparison_only",
+      "id": "kummer-p3-e5",
+      "ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 4
+        },
+        "e": 5,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 5
+      }
+    },
+    {
+      "architecture": "fierce_additive_block",
+      "characteristic": 5,
+      "cover_degree": 5,
+      "decision": "needs_reconstruction",
+      "equation": "Z^p+Q^m*Z-P",
+      "id": "additive-p5-m1",
+      "ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "missing_certificates": [
+        "global omitted-boundary presentation",
+        "affine-plane source reconstruction",
+        "determinant cancellation ledger"
+      ]
+    },
+    {
+      "architecture": "fierce_additive_block",
+      "characteristic": 5,
+      "cover_degree": 5,
+      "decision": "needs_reconstruction",
+      "equation": "Z^p+Q^m*Z-P",
+      "id": "additive-p5-m2",
+      "ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 2
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "missing_certificates": [
+        "global omitted-boundary presentation",
+        "affine-plane source reconstruction",
+        "determinant cancellation ledger"
+      ]
+    },
+    {
+      "architecture": "artin_schreier_local",
+      "characteristic": 5,
+      "decision": "local_comparison_only",
+      "equation": "Y^p-Y=c*Q^(-m)",
+      "id": "as-p5-m1",
+      "ledger": {
+        "conductor": {
+          "kind": "artin",
+          "value": 2
+        },
+        "different": {
+          "certification": "exact",
+          "value": 8
+        },
+        "e": 5,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 5
+      }
+    },
+    {
+      "architecture": "artin_schreier_local",
+      "characteristic": 5,
+      "decision": "local_comparison_only",
+      "equation": "Y^p-Y=c*Q^(-m)",
+      "id": "as-p5-m2",
+      "ledger": {
+        "conductor": {
+          "kind": "artin",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 12
+        },
+        "e": 5,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 5
+      }
+    },
+    {
+      "architecture": "artin_schreier_witt_local",
+      "characteristic": 5,
+      "decision": "local_comparison_only",
+      "id": "asw-p5-j1-6",
+      "jumps": [
+        1,
+        6
+      ],
+      "ledger": {
+        "conductor": {
+          "kind": "artin_witt_vector",
+          "value": [
+            2,
+            7
+          ]
+        },
+        "different": {
+          "certification": "exact",
+          "value": 148
+        },
+        "e": 25,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 25
+      }
+    },
+    {
+      "architecture": "tame_kummer_local",
+      "characteristic": 5,
+      "decision": "local_comparison_only",
+      "id": "kummer-p5-e2",
+      "ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 2,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 2
+      }
+    },
+    {
+      "architecture": "tame_kummer_local",
+      "characteristic": 5,
+      "decision": "local_comparison_only",
+      "id": "kummer-p5-e3",
+      "ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 2
+        },
+        "e": 3,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 3
+      }
+    },
+    {
+      "architecture": "tame_kummer_local",
+      "characteristic": 5,
+      "decision": "local_comparison_only",
+      "id": "kummer-p5-e4",
+      "ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 3
+        },
+        "e": 4,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 4
+      }
+    },
+    {
+      "architecture": "fierce_additive_block",
+      "characteristic": 7,
+      "cover_degree": 7,
+      "decision": "needs_reconstruction",
+      "equation": "Z^p+Q^m*Z-P",
+      "id": "additive-p7-m1",
+      "ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "missing_certificates": [
+        "global omitted-boundary presentation",
+        "affine-plane source reconstruction",
+        "determinant cancellation ledger"
+      ]
+    },
+    {
+      "architecture": "fierce_additive_block",
+      "characteristic": 7,
+      "cover_degree": 7,
+      "decision": "needs_reconstruction",
+      "equation": "Z^p+Q^m*Z-P",
+      "id": "additive-p7-m2",
+      "ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 2
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "missing_certificates": [
+        "global omitted-boundary presentation",
+        "affine-plane source reconstruction",
+        "determinant cancellation ledger"
+      ]
+    },
+    {
+      "architecture": "artin_schreier_local",
+      "characteristic": 7,
+      "decision": "local_comparison_only",
+      "equation": "Y^p-Y=c*Q^(-m)",
+      "id": "as-p7-m1",
+      "ledger": {
+        "conductor": {
+          "kind": "artin",
+          "value": 2
+        },
+        "different": {
+          "certification": "exact",
+          "value": 12
+        },
+        "e": 7,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 7
+      }
+    },
+    {
+      "architecture": "artin_schreier_local",
+      "characteristic": 7,
+      "decision": "local_comparison_only",
+      "equation": "Y^p-Y=c*Q^(-m)",
+      "id": "as-p7-m2",
+      "ledger": {
+        "conductor": {
+          "kind": "artin",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 18
+        },
+        "e": 7,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 7
+      }
+    },
+    {
+      "architecture": "artin_schreier_witt_local",
+      "characteristic": 7,
+      "decision": "local_comparison_only",
+      "id": "asw-p7-j1-8",
+      "jumps": [
+        1,
+        8
+      ],
+      "ledger": {
+        "conductor": {
+          "kind": "artin_witt_vector",
+          "value": [
+            2,
+            9
+          ]
+        },
+        "different": {
+          "certification": "exact",
+          "value": 390
+        },
+        "e": 49,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 49
+      }
+    },
+    {
+      "architecture": "tame_kummer_local",
+      "characteristic": 7,
+      "decision": "local_comparison_only",
+      "id": "kummer-p7-e2",
+      "ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 2,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 2
+      }
+    },
+    {
+      "architecture": "tame_kummer_local",
+      "characteristic": 7,
+      "decision": "local_comparison_only",
+      "id": "kummer-p7-e3",
+      "ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 2
+        },
+        "e": 3,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 3
+      }
+    },
+    {
+      "architecture": "tame_kummer_local",
+      "characteristic": 7,
+      "decision": "local_comparison_only",
+      "id": "kummer-p7-e4",
+      "ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 3
+        },
+        "e": 4,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 4
+      }
+    },
+    {
+      "architecture": "tame_kummer_local",
+      "characteristic": 7,
+      "decision": "local_comparison_only",
+      "id": "kummer-p7-e5",
+      "ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 4
+        },
+        "e": 5,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 5
+      }
+    }
+  ],
+  "format": "plane-wild-boundary-survivor-atlas-v2",
+  "hidden_order_rows": [
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 2,
+      "cover_degree": 3,
+      "decision": "obstructed",
+      "decisive_gate": "unit_and_class_group",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 0
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 2,
+        "f_sep": 1,
+        "sheet_loss": 2
+      },
+      "gluing": {
+        "a": 0,
+        "b": 0
+      },
+      "id": "hidden-p2-N2-a0-b0",
+      "obstruction": {
+        "class_group": "Z/3",
+        "unit_rank": 1
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 2
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 2,
+      "companion_ledgers": [
+        {
+          "conductor": {
+            "kind": "none",
+            "value": null
+          },
+          "different": {
+            "certification": "exact",
+            "value": 0
+          },
+          "e": 1,
+          "f_insep": 1,
+          "f_sep": 1,
+          "sheet_loss": 1
+        },
+        {
+          "conductor": {
+            "kind": "none",
+            "value": null
+          },
+          "different": {
+            "certification": "exact",
+            "value": 0
+          },
+          "e": 1,
+          "f_insep": 1,
+          "f_sep": 1,
+          "sheet_loss": 1
+        }
+      ],
+      "cover_degree": 3,
+      "decision": "known_keller",
+      "decisive_gate": "all_known_gates_pass",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 0
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 2,
+        "f_sep": 1,
+        "sheet_loss": 2
+      },
+      "gluing": {
+        "a": 1,
+        "b": 0
+      },
+      "id": "hidden-p2-N2-a1-b0",
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "reconstruction": "characteristic_two_affine_plane",
+      "wild_degree": 2
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 2,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "proved_positive_not_computed",
+          "value": null
+        },
+        "e": 2,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 2
+      },
+      "cover_degree": 3,
+      "decision": "obstructed",
+      "decisive_gate": "wild_ramification_over_P",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 0
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 2,
+        "f_sep": 1,
+        "sheet_loss": 2
+      },
+      "gluing": {
+        "a": 2,
+        "b": 0
+      },
+      "id": "hidden-p2-N2-a2-b0",
+      "obstruction": {
+        "different": "positive",
+        "ramification_index": 2
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 2
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 2,
+      "cover_degree": 5,
+      "decision": "obstructed",
+      "decisive_gate": "unit_and_class_group",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 8
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 4,
+        "f_sep": 1,
+        "sheet_loss": 4
+      },
+      "gluing": {
+        "a": 0,
+        "b": 0
+      },
+      "id": "hidden-p2-N4-a0-b0",
+      "obstruction": {
+        "class_group": "Z/5",
+        "unit_rank": 1
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 4
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 2,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 2
+        },
+        "e": 3,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "cover_degree": 5,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 8
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 4,
+        "f_sep": 1,
+        "sheet_loss": 4
+      },
+      "gluing": {
+        "a": 1,
+        "b": 0
+      },
+      "id": "hidden-p2-N4-a1-b0",
+      "obstruction": {
+        "different": 2,
+        "ramification_index": 3
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 4
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 2,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 2
+        },
+        "e": 3,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "cover_degree": 5,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 8
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 4,
+        "f_sep": 1,
+        "sheet_loss": 4
+      },
+      "gluing": {
+        "a": 2,
+        "b": 0
+      },
+      "id": "hidden-p2-N4-a2-b0",
+      "obstruction": {
+        "different": 2,
+        "ramification_index": 3
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 4
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 2,
+      "companion_ledgers": [
+        {
+          "conductor": {
+            "kind": "none",
+            "value": null
+          },
+          "different": {
+            "certification": "exact",
+            "value": 0
+          },
+          "e": 1,
+          "f_insep": 1,
+          "f_sep": 1,
+          "sheet_loss": 1
+        },
+        {
+          "conductor": {
+            "kind": "none",
+            "value": null
+          },
+          "different": {
+            "certification": "exact",
+            "value": 0
+          },
+          "e": 1,
+          "f_insep": 1,
+          "f_sep": 3,
+          "sheet_loss": 3
+        }
+      ],
+      "cover_degree": 5,
+      "decision": "obstructed",
+      "decisive_gate": "balanced_source_class_group",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 8
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 4,
+        "f_sep": 1,
+        "sheet_loss": 4
+      },
+      "gluing": {
+        "a": 3,
+        "b": 0
+      },
+      "id": "hidden-p2-N4-a3-b0",
+      "obstruction": {
+        "class_group": "Z/3",
+        "named_class": "L1",
+        "named_class_order": 3
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 4
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 2,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "proved_positive_not_computed",
+          "value": null
+        },
+        "e": 4,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 4
+      },
+      "cover_degree": 5,
+      "decision": "obstructed",
+      "decisive_gate": "wild_ramification_over_P",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 8
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 4,
+        "f_sep": 1,
+        "sheet_loss": 4
+      },
+      "gluing": {
+        "a": 4,
+        "b": 0
+      },
+      "id": "hidden-p2-N4-a4-b0",
+      "obstruction": {
+        "different": "positive",
+        "ramification_index": 4
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 4
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 2,
+      "cover_degree": 7,
+      "decision": "obstructed",
+      "decisive_gate": "unit_and_class_group",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 24
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 2,
+        "f_sep": 3,
+        "sheet_loss": 6
+      },
+      "gluing": {
+        "a": 0,
+        "b": 0
+      },
+      "id": "hidden-p2-N6-a0-b0",
+      "obstruction": {
+        "class_group": "Z/7",
+        "unit_rank": 1
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 6
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 2,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 4
+        },
+        "e": 5,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "cover_degree": 7,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 24
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 2,
+        "f_sep": 3,
+        "sheet_loss": 6
+      },
+      "gluing": {
+        "a": 1,
+        "b": 0
+      },
+      "id": "hidden-p2-N6-a1-b0",
+      "obstruction": {
+        "different": 4,
+        "ramification_index": 5
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 6
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 2,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 4
+        },
+        "e": 5,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "cover_degree": 7,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 24
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 2,
+        "f_sep": 3,
+        "sheet_loss": 6
+      },
+      "gluing": {
+        "a": 2,
+        "b": 0
+      },
+      "id": "hidden-p2-N6-a2-b0",
+      "obstruction": {
+        "different": 4,
+        "ramification_index": 5
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 6
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 2,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 4
+        },
+        "e": 5,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "cover_degree": 7,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 24
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 2,
+        "f_sep": 3,
+        "sheet_loss": 6
+      },
+      "gluing": {
+        "a": 3,
+        "b": 0
+      },
+      "id": "hidden-p2-N6-a3-b0",
+      "obstruction": {
+        "different": 4,
+        "ramification_index": 5
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 6
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 2,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 4
+        },
+        "e": 5,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "cover_degree": 7,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 24
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 2,
+        "f_sep": 3,
+        "sheet_loss": 6
+      },
+      "gluing": {
+        "a": 4,
+        "b": 0
+      },
+      "id": "hidden-p2-N6-a4-b0",
+      "obstruction": {
+        "different": 4,
+        "ramification_index": 5
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 6
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 2,
+      "companion_ledgers": [
+        {
+          "conductor": {
+            "kind": "none",
+            "value": null
+          },
+          "different": {
+            "certification": "exact",
+            "value": 0
+          },
+          "e": 1,
+          "f_insep": 1,
+          "f_sep": 1,
+          "sheet_loss": 1
+        },
+        {
+          "conductor": {
+            "kind": "none",
+            "value": null
+          },
+          "different": {
+            "certification": "exact",
+            "value": 0
+          },
+          "e": 1,
+          "f_insep": 1,
+          "f_sep": 5,
+          "sheet_loss": 5
+        }
+      ],
+      "cover_degree": 7,
+      "decision": "obstructed",
+      "decisive_gate": "balanced_source_class_group",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 24
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 2,
+        "f_sep": 3,
+        "sheet_loss": 6
+      },
+      "gluing": {
+        "a": 5,
+        "b": 0
+      },
+      "id": "hidden-p2-N6-a5-b0",
+      "obstruction": {
+        "class_group": "Z/5",
+        "named_class": "L1",
+        "named_class_order": 5
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 6
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 2,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "proved_positive_not_computed",
+          "value": null
+        },
+        "e": 6,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 6
+      },
+      "cover_degree": 7,
+      "decision": "obstructed",
+      "decisive_gate": "wild_ramification_over_P",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 24
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 2,
+        "f_sep": 3,
+        "sheet_loss": 6
+      },
+      "gluing": {
+        "a": 6,
+        "b": 0
+      },
+      "id": "hidden-p2-N6-a6-b0",
+      "obstruction": {
+        "different": "positive",
+        "ramification_index": 6
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 6
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 3,
+      "cover_degree": 4,
+      "decision": "obstructed",
+      "decisive_gate": "unit_and_class_group",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "gluing": {
+        "a": 0,
+        "b": 0
+      },
+      "id": "hidden-p3-N3-a0-b0",
+      "obstruction": {
+        "class_group": "Z/4",
+        "unit_rank": 1
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 3
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 3,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 2,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 2
+      },
+      "cover_degree": 4,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "gluing": {
+        "a": 1,
+        "b": 0
+      },
+      "id": "hidden-p3-N3-a1-b0",
+      "obstruction": {
+        "different": 1,
+        "ramification_index": 2
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 3
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 3,
+      "companion_ledgers": [
+        {
+          "conductor": {
+            "kind": "none",
+            "value": null
+          },
+          "different": {
+            "certification": "exact",
+            "value": 0
+          },
+          "e": 1,
+          "f_insep": 1,
+          "f_sep": 1,
+          "sheet_loss": 1
+        },
+        {
+          "conductor": {
+            "kind": "none",
+            "value": null
+          },
+          "different": {
+            "certification": "exact",
+            "value": 0
+          },
+          "e": 1,
+          "f_insep": 1,
+          "f_sep": 2,
+          "sheet_loss": 2
+        }
+      ],
+      "cover_degree": 4,
+      "decision": "obstructed",
+      "decisive_gate": "balanced_source_class_group",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "gluing": {
+        "a": 2,
+        "b": 0
+      },
+      "id": "hidden-p3-N3-a2-b0",
+      "obstruction": {
+        "class_group": "Z/2",
+        "named_class": "L1",
+        "named_class_order": 2
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 3
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 3,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "proved_positive_not_computed",
+          "value": null
+        },
+        "e": 3,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "cover_degree": 4,
+      "decision": "obstructed",
+      "decisive_gate": "wild_ramification_over_P",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "gluing": {
+        "a": 3,
+        "b": 0
+      },
+      "id": "hidden-p3-N3-a3-b0",
+      "obstruction": {
+        "different": "positive",
+        "ramification_index": 3
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 3
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 3,
+      "cover_degree": 7,
+      "decision": "obstructed",
+      "decisive_gate": "unit_and_class_group",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 24
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 2,
+        "sheet_loss": 6
+      },
+      "gluing": {
+        "a": 0,
+        "b": 0
+      },
+      "id": "hidden-p3-N6-a0-b0",
+      "obstruction": {
+        "class_group": "Z/7",
+        "unit_rank": 1
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 6
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 3,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 4
+        },
+        "e": 5,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "cover_degree": 7,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 24
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 2,
+        "sheet_loss": 6
+      },
+      "gluing": {
+        "a": 1,
+        "b": 0
+      },
+      "id": "hidden-p3-N6-a1-b0",
+      "obstruction": {
+        "different": 4,
+        "ramification_index": 5
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 6
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 3,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 4
+        },
+        "e": 5,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "cover_degree": 7,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 24
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 2,
+        "sheet_loss": 6
+      },
+      "gluing": {
+        "a": 2,
+        "b": 0
+      },
+      "id": "hidden-p3-N6-a2-b0",
+      "obstruction": {
+        "different": 4,
+        "ramification_index": 5
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 6
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 3,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 4
+        },
+        "e": 5,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "cover_degree": 7,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 24
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 2,
+        "sheet_loss": 6
+      },
+      "gluing": {
+        "a": 3,
+        "b": 0
+      },
+      "id": "hidden-p3-N6-a3-b0",
+      "obstruction": {
+        "different": 4,
+        "ramification_index": 5
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 6
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 3,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 4
+        },
+        "e": 5,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "cover_degree": 7,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 24
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 2,
+        "sheet_loss": 6
+      },
+      "gluing": {
+        "a": 4,
+        "b": 0
+      },
+      "id": "hidden-p3-N6-a4-b0",
+      "obstruction": {
+        "different": 4,
+        "ramification_index": 5
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 6
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 3,
+      "companion_ledgers": [
+        {
+          "conductor": {
+            "kind": "none",
+            "value": null
+          },
+          "different": {
+            "certification": "exact",
+            "value": 0
+          },
+          "e": 1,
+          "f_insep": 1,
+          "f_sep": 1,
+          "sheet_loss": 1
+        },
+        {
+          "conductor": {
+            "kind": "none",
+            "value": null
+          },
+          "different": {
+            "certification": "exact",
+            "value": 0
+          },
+          "e": 1,
+          "f_insep": 1,
+          "f_sep": 5,
+          "sheet_loss": 5
+        }
+      ],
+      "cover_degree": 7,
+      "decision": "obstructed",
+      "decisive_gate": "balanced_source_class_group",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 24
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 2,
+        "sheet_loss": 6
+      },
+      "gluing": {
+        "a": 5,
+        "b": 0
+      },
+      "id": "hidden-p3-N6-a5-b0",
+      "obstruction": {
+        "class_group": "Z/5",
+        "named_class": "L1",
+        "named_class_order": 5
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 6
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 3,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "proved_positive_not_computed",
+          "value": null
+        },
+        "e": 6,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 6
+      },
+      "cover_degree": 7,
+      "decision": "obstructed",
+      "decisive_gate": "wild_ramification_over_P",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 24
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 2,
+        "sheet_loss": 6
+      },
+      "gluing": {
+        "a": 6,
+        "b": 0
+      },
+      "id": "hidden-p3-N6-a6-b0",
+      "obstruction": {
+        "different": "positive",
+        "ramification_index": 6
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 6
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 5,
+      "cover_degree": 6,
+      "decision": "obstructed",
+      "decisive_gate": "unit_and_class_group",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "gluing": {
+        "a": 0,
+        "b": 0
+      },
+      "id": "hidden-p5-N5-a0-b0",
+      "obstruction": {
+        "class_group": "Z/6",
+        "unit_rank": 1
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 5
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 5,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 3
+        },
+        "e": 4,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 4
+      },
+      "cover_degree": 6,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "gluing": {
+        "a": 1,
+        "b": 0
+      },
+      "id": "hidden-p5-N5-a1-b0",
+      "obstruction": {
+        "different": 3,
+        "ramification_index": 4
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 5
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 5,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 2,
+        "f_insep": 1,
+        "f_sep": 2,
+        "sheet_loss": 4
+      },
+      "cover_degree": 6,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "gluing": {
+        "a": 2,
+        "b": 0
+      },
+      "id": "hidden-p5-N5-a2-b0",
+      "obstruction": {
+        "different": 1,
+        "ramification_index": 2
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 5
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 5,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 3
+        },
+        "e": 4,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 4
+      },
+      "cover_degree": 6,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "gluing": {
+        "a": 3,
+        "b": 0
+      },
+      "id": "hidden-p5-N5-a3-b0",
+      "obstruction": {
+        "different": 3,
+        "ramification_index": 4
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 5
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 5,
+      "companion_ledgers": [
+        {
+          "conductor": {
+            "kind": "none",
+            "value": null
+          },
+          "different": {
+            "certification": "exact",
+            "value": 0
+          },
+          "e": 1,
+          "f_insep": 1,
+          "f_sep": 1,
+          "sheet_loss": 1
+        },
+        {
+          "conductor": {
+            "kind": "none",
+            "value": null
+          },
+          "different": {
+            "certification": "exact",
+            "value": 0
+          },
+          "e": 1,
+          "f_insep": 1,
+          "f_sep": 4,
+          "sheet_loss": 4
+        }
+      ],
+      "cover_degree": 6,
+      "decision": "obstructed",
+      "decisive_gate": "balanced_source_class_group",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "gluing": {
+        "a": 4,
+        "b": 0
+      },
+      "id": "hidden-p5-N5-a4-b0",
+      "obstruction": {
+        "class_group": "Z/4",
+        "named_class": "L1",
+        "named_class_order": 4
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 5
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 5,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "proved_positive_not_computed",
+          "value": null
+        },
+        "e": 5,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "cover_degree": 6,
+      "decision": "obstructed",
+      "decisive_gate": "wild_ramification_over_P",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "gluing": {
+        "a": 5,
+        "b": 0
+      },
+      "id": "hidden-p5-N5-a5-b0",
+      "obstruction": {
+        "different": "positive",
+        "ramification_index": 5
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 5
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 7,
+      "cover_degree": 8,
+      "decision": "obstructed",
+      "decisive_gate": "unit_and_class_group",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "gluing": {
+        "a": 0,
+        "b": 0
+      },
+      "id": "hidden-p7-N7-a0-b0",
+      "obstruction": {
+        "class_group": "Z/8",
+        "unit_rank": 1
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 7
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 7,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 5
+        },
+        "e": 6,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 6
+      },
+      "cover_degree": 8,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "gluing": {
+        "a": 1,
+        "b": 0
+      },
+      "id": "hidden-p7-N7-a1-b0",
+      "obstruction": {
+        "different": 5,
+        "ramification_index": 6
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 7
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 7,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 2
+        },
+        "e": 3,
+        "f_insep": 1,
+        "f_sep": 2,
+        "sheet_loss": 6
+      },
+      "cover_degree": 8,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "gluing": {
+        "a": 2,
+        "b": 0
+      },
+      "id": "hidden-p7-N7-a2-b0",
+      "obstruction": {
+        "different": 2,
+        "ramification_index": 3
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 7
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 7,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 2,
+        "f_insep": 1,
+        "f_sep": 3,
+        "sheet_loss": 6
+      },
+      "cover_degree": 8,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "gluing": {
+        "a": 3,
+        "b": 0
+      },
+      "id": "hidden-p7-N7-a3-b0",
+      "obstruction": {
+        "different": 1,
+        "ramification_index": 2
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 7
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 7,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 2
+        },
+        "e": 3,
+        "f_insep": 1,
+        "f_sep": 2,
+        "sheet_loss": 6
+      },
+      "cover_degree": 8,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "gluing": {
+        "a": 4,
+        "b": 0
+      },
+      "id": "hidden-p7-N7-a4-b0",
+      "obstruction": {
+        "different": 2,
+        "ramification_index": 3
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 7
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 7,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "exact",
+          "value": 5
+        },
+        "e": 6,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 6
+      },
+      "cover_degree": 8,
+      "decision": "obstructed",
+      "decisive_gate": "companion_tame_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "gluing": {
+        "a": 5,
+        "b": 0
+      },
+      "id": "hidden-p7-N7-a5-b0",
+      "obstruction": {
+        "different": 5,
+        "ramification_index": 6
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 7
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 7,
+      "companion_ledgers": [
+        {
+          "conductor": {
+            "kind": "none",
+            "value": null
+          },
+          "different": {
+            "certification": "exact",
+            "value": 0
+          },
+          "e": 1,
+          "f_insep": 1,
+          "f_sep": 1,
+          "sheet_loss": 1
+        },
+        {
+          "conductor": {
+            "kind": "none",
+            "value": null
+          },
+          "different": {
+            "certification": "exact",
+            "value": 0
+          },
+          "e": 1,
+          "f_insep": 1,
+          "f_sep": 6,
+          "sheet_loss": 6
+        }
+      ],
+      "cover_degree": 8,
+      "decision": "obstructed",
+      "decisive_gate": "balanced_source_class_group",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "gluing": {
+        "a": 6,
+        "b": 0
+      },
+      "id": "hidden-p7-N7-a6-b0",
+      "obstruction": {
+        "class_group": "Z/6",
+        "named_class": "L1",
+        "named_class_order": 6
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 7
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "characteristic": 7,
+      "companion_ledger": {
+        "conductor": {
+          "kind": "none",
+          "value": null
+        },
+        "different": {
+          "certification": "proved_positive_not_computed",
+          "value": null
+        },
+        "e": 7,
+        "f_insep": 1,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "cover_degree": 8,
+      "decision": "obstructed",
+      "decisive_gate": "wild_ramification_over_P",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "gluing": {
+        "a": 7,
+        "b": 0
+      },
+      "id": "hidden-p7-N7-a7-b0",
+      "obstruction": {
+        "different": "positive",
+        "ramification_index": 7
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 7
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "base_change": {
+        "degree": 2,
+        "purely_inseparable_degree": 2,
+        "separable_degree": 1
+      },
+      "characteristic": 2,
+      "cover_degree": 3,
+      "decision": "obstructed",
+      "decisive_gate": "full_source_class_group",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 0
+        },
+        "different": {
+          "certification": "exact",
+          "value": 2
+        },
+        "e": 1,
+        "f_insep": 2,
+        "f_sep": 1,
+        "sheet_loss": 2
+      },
+      "gluing": {
+        "a": 1,
+        "b": 1
+      },
+      "id": "hidden-p2-N2-a1-b1",
+      "obstruction": {
+        "class_group": [
+          2,
+          2
+        ],
+        "core": "D(x*u)",
+        "multiple_fiber_multiplicities": [
+          2,
+          2,
+          2
+        ],
+        "smith_diagonal": [
+          1,
+          2,
+          2
+        ],
+        "source_fill_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            -1,
+            1
+          ]
+        ]
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 2
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "base_change": {
+        "degree": 4,
+        "purely_inseparable_degree": 4,
+        "separable_degree": 1
+      },
+      "characteristic": 2,
+      "cover_degree": 3,
+      "decision": "obstructed",
+      "decisive_gate": "full_source_class_group",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 0
+        },
+        "different": {
+          "certification": "exact",
+          "value": 4
+        },
+        "e": 1,
+        "f_insep": 2,
+        "f_sep": 1,
+        "sheet_loss": 2
+      },
+      "gluing": {
+        "a": 1,
+        "b": 3
+      },
+      "id": "hidden-p2-N2-a1-b3",
+      "obstruction": {
+        "class_group": [
+          2,
+          2
+        ],
+        "core": "D(x*u)",
+        "multiple_fiber_multiplicities": [
+          2,
+          2,
+          2
+        ],
+        "smith_diagonal": [
+          1,
+          2,
+          2
+        ],
+        "source_fill_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            -1,
+            1
+          ]
+        ]
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 2
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "base_change": {
+        "degree": 8,
+        "purely_inseparable_degree": 8,
+        "separable_degree": 1
+      },
+      "characteristic": 2,
+      "cover_degree": 3,
+      "decision": "obstructed",
+      "decisive_gate": "full_source_class_group",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 0
+        },
+        "different": {
+          "certification": "exact",
+          "value": 8
+        },
+        "e": 1,
+        "f_insep": 2,
+        "f_sep": 1,
+        "sheet_loss": 2
+      },
+      "gluing": {
+        "a": 1,
+        "b": 7
+      },
+      "id": "hidden-p2-N2-a1-b7",
+      "obstruction": {
+        "class_group": [
+          2,
+          2
+        ],
+        "core": "D(x*u)",
+        "multiple_fiber_multiplicities": [
+          2,
+          2,
+          2
+        ],
+        "smith_diagonal": [
+          1,
+          2,
+          2
+        ],
+        "source_fill_matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            -1,
+            1
+          ]
+        ]
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 2
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "base_change": {
+        "degree": 2,
+        "purely_inseparable_degree": 1,
+        "separable_degree": 2
+      },
+      "characteristic": 3,
+      "cover_degree": 4,
+      "decision": "obstructed",
+      "decisive_gate": "compactly_supported_euler_characteristic",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 2
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "gluing": {
+        "a": 2,
+        "b": 1
+      },
+      "id": "hidden-p3-N3-a2-b1",
+      "obstruction": {
+        "chi_c": 5,
+        "required_for_A2": 1
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 3
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "base_change": {
+        "degree": 3,
+        "purely_inseparable_degree": 3,
+        "separable_degree": 1
+      },
+      "characteristic": 3,
+      "cover_degree": 4,
+      "decision": "obstructed",
+      "decisive_gate": "purely_inseparable_class_transfer",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 3
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "gluing": {
+        "a": 2,
+        "b": 2
+      },
+      "id": "hidden-p3-N3-a2-b2",
+      "obstruction": {
+        "class_group_contains": "Z/2",
+        "named_class": "L1",
+        "named_class_order": 2
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 3
+    },
+    {
+      "architecture": "target_supported_hidden_order",
+      "base_change": {
+        "degree": 2,
+        "purely_inseparable_degree": 1,
+        "separable_degree": 2
+      },
+      "characteristic": 5,
+      "cover_degree": 6,
+      "decision": "obstructed",
+      "decisive_gate": "compactly_supported_euler_characteristic",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 2
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "gluing": {
+        "a": 4,
+        "b": 1
+      },
+      "id": "hidden-p5-N5-a4-b1",
+      "obstruction": {
+        "chi_c": 7,
+        "required_for_A2": 1
+      },
+      "omitted_boundary_count": 1,
+      "primitive_order": "(T-1)*(T^N-P^(N+1))+P^a*Q^(b+1)*T",
+      "wild_degree": 5
+    }
+  ],
+  "odd_characteristic_packet_scan": {
+    "bounds": {
+      "max_length": 3,
+      "max_multiplicity": 12
+    },
+    "by_characteristic": {
+      "3": {
+        "minimal_survivors": [
+          {
+            "multiplicities": [
+              2,
+              3
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              4
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              5
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              2,
+              3,
+              5
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              2,
+              9
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              8
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              5,
+              6
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              2,
+              3,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              4,
+              5
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              10
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              4,
+              9
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              6,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              11
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              5,
+              9
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              4,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              5,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              7,
+              9
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              2,
+              3,
+              11
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              2,
+              5,
+              9
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          }
+        ],
+        "rejected_by_vertical_torsion": 186,
+        "survivor_count": 54,
+        "tested_count": 240,
+        "torsion_order_distribution": {
+          "10": 4,
+          "11": 4,
+          "12": 14,
+          "144": 1,
+          "16": 3,
+          "18": 4,
+          "2": 34,
+          "20": 2,
+          "24": 4,
+          "27": 3,
+          "3": 32,
+          "32": 1,
+          "36": 4,
+          "4": 20,
+          "48": 2,
+          "5": 6,
+          "6": 20,
+          "7": 4,
+          "72": 1,
+          "8": 8,
+          "81": 1,
+          "9": 14
+        }
+      },
+      "5": {
+        "minimal_survivors": [
+          {
+            "multiplicities": [
+              2,
+              5
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              5
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              4,
+              5
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              2,
+              3,
+              5
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              5,
+              6
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              5,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              4,
+              5
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              10
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              5,
+              8
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              5,
+              9
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              2,
+              5,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              5,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              5,
+              11
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              2,
+              5,
+              9
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              5,
+              8
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              4,
+              5,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              5,
+              12
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              7,
+              10
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              2,
+              5,
+              11
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              4,
+              5,
+              9
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          }
+        ],
+        "rejected_by_vertical_torsion": 103,
+        "survivor_count": 39,
+        "tested_count": 142,
+        "torsion_order_distribution": {
+          "10": 10,
+          "100": 1,
+          "11": 2,
+          "12": 3,
+          "16": 1,
+          "2": 28,
+          "20": 5,
+          "24": 1,
+          "25": 2,
+          "3": 8,
+          "4": 11,
+          "5": 15,
+          "50": 1,
+          "6": 6,
+          "7": 2,
+          "8": 5,
+          "9": 2
+        }
+      },
+      "7": {
+        "minimal_survivors": [
+          {
+            "multiplicities": [
+              2,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              4,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              5,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              2,
+              3,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              6,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              2,
+              5,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              4,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              7,
+              8
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              5,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              7,
+              9
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              4,
+              5,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              7,
+              10
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              7,
+              11
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              2,
+              7,
+              9
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              7,
+              8
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              5,
+              6,
+              7
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              7,
+              12
+            ],
+            "smith_diagonal": [
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              2,
+              7,
+              11
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          },
+          {
+            "multiplicities": [
+              3,
+              7,
+              10
+            ],
+            "smith_diagonal": [
+              1,
+              1,
+              1
+            ],
+            "status": "packet_gate_only"
+          }
+        ],
+        "rejected_by_vertical_torsion": 43,
+        "survivor_count": 34,
+        "tested_count": 77,
+        "torsion_order_distribution": {
+          "10": 1,
+          "11": 1,
+          "12": 1,
+          "2": 12,
+          "3": 6,
+          "4": 4,
+          "49": 1,
+          "5": 2,
+          "6": 2,
+          "7": 11,
+          "8": 1,
+          "9": 1
+        }
+      }
+    },
+    "interpretation": "These are only packets not rejected by the vertical class-group gate. Pairwise coprimality is necessary and sufficient inside the certified principal-sum, generic-unit-rank-one model."
+  },
+  "odd_characteristic_reconstruction_queue": [],
+  "odd_characteristic_support_only_rows": [
+    {
+      "candidate_id": "balanced-prescribed-p3-N3-d7",
+      "characteristic": 3,
+      "cover_degree": 7,
+      "decision": "obstructed",
+      "former_status": "support_only_survivor",
+      "obstruction": "geometric point count after the retained polynomial splits",
+      "retained_polynomial_degree": 4
+    },
+    {
+      "candidate_id": "balanced-prescribed-p3-N3-d10",
+      "characteristic": 3,
+      "cover_degree": 10,
+      "decision": "obstructed",
+      "former_status": "support_only_survivor",
+      "obstruction": "geometric point count after the retained polynomial splits",
+      "retained_polynomial_degree": 7
+    },
+    {
+      "candidate_id": "balanced-prescribed-p3-N3-d13",
+      "characteristic": 3,
+      "cover_degree": 13,
+      "decision": "obstructed",
+      "former_status": "support_only_survivor",
+      "obstruction": "geometric point count after the retained polynomial splits",
+      "retained_polynomial_degree": 10
+    },
+    {
+      "candidate_id": "balanced-prescribed-p5-N5-d11",
+      "characteristic": 5,
+      "cover_degree": 11,
+      "decision": "obstructed",
+      "former_status": "support_only_survivor",
+      "obstruction": "geometric point count after the retained polynomial splits",
+      "retained_polynomial_degree": 6
+    },
+    {
+      "candidate_id": "balanced-prescribed-p7-N7-d15",
+      "characteristic": 7,
+      "cover_degree": 15,
+      "decision": "obstructed",
+      "former_status": "support_only_survivor",
+      "obstruction": "geometric point count after the retained polynomial splits",
+      "retained_polynomial_degree": 8
+    }
+  ],
+  "prescribed_degree_rows": [
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 3,
+      "cover_degree": 4,
+      "decision": "obstructed",
+      "decisive_gate": "linear_retained_case_companion_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "id": "prescribed-p3-N3-d4",
+      "node_count": 4,
+      "obstruction": {
+        "different": 1
+      },
+      "retained_sheet_count": 1,
+      "wild_degree": 3
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 3,
+      "cover_degree": 5,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "id": "prescribed-p3-N3-d5",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 8,
+      "retained_sheet_count": 2,
+      "wild_degree": 3
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 3,
+      "cover_degree": 7,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "id": "prescribed-p3-N3-d7",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 16,
+      "retained_sheet_count": 4,
+      "wild_degree": 3
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 3,
+      "cover_degree": 8,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "id": "prescribed-p3-N3-d8",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 20,
+      "retained_sheet_count": 5,
+      "wild_degree": 3
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 3,
+      "cover_degree": 10,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "id": "prescribed-p3-N3-d10",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 28,
+      "retained_sheet_count": 7,
+      "wild_degree": 3
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 3,
+      "cover_degree": 11,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "id": "prescribed-p3-N3-d11",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 32,
+      "retained_sheet_count": 8,
+      "wild_degree": 3
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 3,
+      "cover_degree": 13,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "id": "prescribed-p3-N3-d13",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 40,
+      "retained_sheet_count": 10,
+      "wild_degree": 3
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 3,
+      "cover_degree": 14,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 3
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 3,
+        "f_sep": 1,
+        "sheet_loss": 3
+      },
+      "id": "prescribed-p3-N3-d14",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 44,
+      "retained_sheet_count": 11,
+      "wild_degree": 3
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 5,
+      "cover_degree": 6,
+      "decision": "obstructed",
+      "decisive_gate": "linear_retained_case_companion_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "id": "prescribed-p5-N5-d6",
+      "node_count": 6,
+      "obstruction": {
+        "different": 3
+      },
+      "retained_sheet_count": 1,
+      "wild_degree": 5
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 5,
+      "cover_degree": 7,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "id": "prescribed-p5-N5-d7",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 12,
+      "retained_sheet_count": 2,
+      "wild_degree": 5
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 5,
+      "cover_degree": 8,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "id": "prescribed-p5-N5-d8",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 18,
+      "retained_sheet_count": 3,
+      "wild_degree": 5
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 5,
+      "cover_degree": 9,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "id": "prescribed-p5-N5-d9",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 24,
+      "retained_sheet_count": 4,
+      "wild_degree": 5
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 5,
+      "cover_degree": 11,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "id": "prescribed-p5-N5-d11",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 36,
+      "retained_sheet_count": 6,
+      "wild_degree": 5
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 5,
+      "cover_degree": 12,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "id": "prescribed-p5-N5-d12",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 42,
+      "retained_sheet_count": 7,
+      "wild_degree": 5
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 5,
+      "cover_degree": 13,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "id": "prescribed-p5-N5-d13",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 48,
+      "retained_sheet_count": 8,
+      "wild_degree": 5
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 5,
+      "cover_degree": 14,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 15
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 5,
+        "f_sep": 1,
+        "sheet_loss": 5
+      },
+      "id": "prescribed-p5-N5-d14",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 54,
+      "retained_sheet_count": 9,
+      "wild_degree": 5
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 7,
+      "cover_degree": 8,
+      "decision": "obstructed",
+      "decisive_gate": "linear_retained_case_companion_different",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "id": "prescribed-p7-N7-d8",
+      "node_count": 8,
+      "obstruction": {
+        "different": 5
+      },
+      "retained_sheet_count": 1,
+      "wild_degree": 7
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 7,
+      "cover_degree": 9,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "id": "prescribed-p7-N7-d9",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 16,
+      "retained_sheet_count": 2,
+      "wild_degree": 7
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 7,
+      "cover_degree": 10,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "id": "prescribed-p7-N7-d10",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 24,
+      "retained_sheet_count": 3,
+      "wild_degree": 7
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 7,
+      "cover_degree": 11,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "id": "prescribed-p7-N7-d11",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 32,
+      "retained_sheet_count": 4,
+      "wild_degree": 7
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 7,
+      "cover_degree": 12,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "id": "prescribed-p7-N7-d12",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 40,
+      "retained_sheet_count": 5,
+      "wild_degree": 7
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 7,
+      "cover_degree": 13,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "id": "prescribed-p7-N7-d13",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 48,
+      "retained_sheet_count": 6,
+      "wild_degree": 7
+    },
+    {
+      "architecture": "prescribed_degree_hidden_order",
+      "characteristic": 7,
+      "cover_degree": 15,
+      "decision": "needs_reconstruction",
+      "fierce_ledger": {
+        "conductor": {
+          "kind": "boundary_normalization_exponent",
+          "value": 35
+        },
+        "different": {
+          "certification": "exact",
+          "value": 1
+        },
+        "e": 1,
+        "f_insep": 7,
+        "f_sep": 1,
+        "sheet_loss": 7
+      },
+      "id": "prescribed-p7-N7-d15",
+      "missing_certificates": [
+        "normalization of the proposed source open",
+        "complete different away from the omitted boundary",
+        "generic-fibre unit and class groups",
+        "source-fill valuation matrix",
+        "constant-Jacobian coordinates"
+      ],
+      "node_count": 64,
+      "retained_sheet_count": 8,
+      "wild_degree": 7
+    }
+  ],
+  "scope": "Exact compilation of the proved target-supported hidden-order rows, theorem-backed prescribed-degree covers through the stated bound, representative additive/AS/AS-Witt/Kummer comparison rows, the geometric retained-root point-count obstruction, and a bounded abstract multiple-fibre packet scan. No nonlinear balanced retained-polynomial row survives affine-plane reconstruction. A bounded packet survivor is not a cover and not a Keller map.",
+  "summary": {
+    "balanced_prescribed_degree_decisions": {
+      "obstructed": 23
+    },
+    "balanced_prescribed_degree_row_count": 23,
+    "comparison_decisions": {
+      "local_comparison_only": 19,
+      "needs_reconstruction": 6
+    },
+    "comparison_row_count": 25,
+    "hidden_decisions": {
+      "known_keller": 1,
+      "obstructed": 45
+    },
+    "hidden_row_count": 46,
+    "odd_hidden_keller_rows": 0,
+    "prescribed_degree_decisions": {
+      "needs_reconstruction": 20,
+      "obstructed": 3
+    },
+    "prescribed_degree_row_count": 23
+  }
+}

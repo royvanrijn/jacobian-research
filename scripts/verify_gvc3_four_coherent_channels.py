@@ -145,7 +145,9 @@ def singular_saturation(
             f"ideal I={','.join(names)};",
             "ideal J=jsat;",
             "timer=1;",
-            "ideal G=sat(I,J);",
+            "list L=sat_with_exp(I,J);",
+            "ideal G=L[1];",
+            "int saturation_exponent=L[2];",
             "int elapsed=timer;",
             "int unit=0;",
             "if ((size(G)==1)&&(G[1]==1)) { unit=1; }",
@@ -153,6 +155,7 @@ def singular_saturation(
             'print("unit="+string(unit));',
             'print("basis_size="+string(size(G)));',
             'print("dimension="+string(dim(G)));',
+            'print("saturation_exponent="+string(saturation_exponent));',
             'print("elapsed_ticks="+string(elapsed));',
             'print("BASIS_BEGIN"); print(G); print("BASIS_END");',
             'print("RESULT_END");',
@@ -192,7 +195,13 @@ def singular_saturation(
     )
     for line in completed.stdout.splitlines():
         stripped = line.strip()
-        for key in ("unit", "basis_size", "dimension", "elapsed_ticks"):
+        for key in (
+            "unit",
+            "basis_size",
+            "dimension",
+            "saturation_exponent",
+            "elapsed_ticks",
+        ):
             if stripped.startswith(key + "="):
                 record[key] = int(stripped.split("=", 1)[1])
     if "BASIS_BEGIN" in completed.stdout and "BASIS_END" in completed.stdout:

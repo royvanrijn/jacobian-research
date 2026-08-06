@@ -1,0 +1,817 @@
+{
+  "format": "two-pair-sic-bidegree44-two-row-off-diagonal-v1",
+  "field": "characteristic zero",
+  "factor_chart": {
+    "normal_form": "U=(e_r,e_s), C=U*B",
+    "internal_GL2_gauge_removed": true,
+    "dense_support": "all positions in rows r,s except the two diagonal positions",
+    "orbit_normalization": "overall scaling and diagonal torus set two distinct-weight coefficients to one",
+    "residual_coordinates": 6,
+    "exact_rank_two_minor": "det C[rows r,s; columns r,s]=-c_rs*c_sr"
+  },
+  "row_pair_count": 10,
+  "reversal_orbit_count": 6,
+  "moment_orders": [
+    1,
+    8
+  ],
+  "exact_unit_system_count": 6,
+  "component_conclusion": "the dense coefficient-torus moment scheme through mu_8 is empty over QQ on every row-pair orbit",
+  "recurrence_gate": "no exact component survives through mu_8, so no recurrence or mixed-tail search is required on these dense charts",
+  "global_conclusion": "all ten dense off-diagonal two-row exact-rank-two charts contain no all-order pure-moment point",
+  "scope": "complete dense-torus classification of this ten-chart coordinate family; coordinate boundaries and generic factor charts remain open",
+  "orbits": [
+    {
+      "row_pair": [
+        0,
+        1
+      ],
+      "reversal_partner": [
+        3,
+        4
+      ],
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "normalization_anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "normalization_weights": [
+        -1,
+        -2
+      ],
+      "residual_coordinate_count": 6,
+      "internal_GL2_gauge": "removed by U=(e_r,e_s)",
+      "exact_rank_two_minor_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "exact_rank_two_minor": "-c_rs*c_sr, nonzero on the coefficient torus",
+      "moment_profiles": [
+        {
+          "order": 1,
+          "total_degree": null,
+          "terms": 1
+        },
+        {
+          "order": 2,
+          "total_degree": 2,
+          "terms": 2
+        },
+        {
+          "order": 3,
+          "total_degree": 3,
+          "terms": 2
+        },
+        {
+          "order": 4,
+          "total_degree": 4,
+          "terms": 5
+        },
+        {
+          "order": 5,
+          "total_degree": 5,
+          "terms": 5
+        },
+        {
+          "order": 6,
+          "total_degree": 6,
+          "terms": 11
+        },
+        {
+          "order": 7,
+          "total_degree": 7,
+          "terms": 12
+        },
+        {
+          "order": 8,
+          "total_degree": 8,
+          "terms": 22
+        }
+      ],
+      "classification_through_requested_order": {
+        "returncode": 0,
+        "status": "unit_ideal",
+        "variables": null,
+        "scheme_degree": null,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5,
+        "result_head": "[-1]:",
+        "stderr_tail": ""
+      },
+      "component_rational_parametrization": null
+    },
+    {
+      "row_pair": [
+        0,
+        2
+      ],
+      "reversal_partner": [
+        2,
+        4
+      ],
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "normalization_anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "normalization_weights": [
+        -1,
+        -2
+      ],
+      "residual_coordinate_count": 6,
+      "internal_GL2_gauge": "removed by U=(e_r,e_s)",
+      "exact_rank_two_minor_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "exact_rank_two_minor": "-c_rs*c_sr, nonzero on the coefficient torus",
+      "moment_profiles": [
+        {
+          "order": 1,
+          "total_degree": null,
+          "terms": 1
+        },
+        {
+          "order": 2,
+          "total_degree": 2,
+          "terms": 4
+        },
+        {
+          "order": 3,
+          "total_degree": 3,
+          "terms": 7
+        },
+        {
+          "order": 4,
+          "total_degree": 4,
+          "terms": 14
+        },
+        {
+          "order": 5,
+          "total_degree": 5,
+          "terms": 27
+        },
+        {
+          "order": 6,
+          "total_degree": 6,
+          "terms": 49
+        },
+        {
+          "order": 7,
+          "total_degree": 7,
+          "terms": 77
+        },
+        {
+          "order": 8,
+          "total_degree": 8,
+          "terms": 129
+        }
+      ],
+      "classification_through_requested_order": {
+        "returncode": 0,
+        "status": "unit_ideal",
+        "variables": null,
+        "scheme_degree": null,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5,
+        "result_head": "[-1]:",
+        "stderr_tail": ""
+      },
+      "component_rational_parametrization": null
+    },
+    {
+      "row_pair": [
+        0,
+        3
+      ],
+      "reversal_partner": [
+        1,
+        4
+      ],
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "normalization_anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "normalization_weights": [
+        -1,
+        -2
+      ],
+      "residual_coordinate_count": 6,
+      "internal_GL2_gauge": "removed by U=(e_r,e_s)",
+      "exact_rank_two_minor_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "exact_rank_two_minor": "-c_rs*c_sr, nonzero on the coefficient torus",
+      "moment_profiles": [
+        {
+          "order": 1,
+          "total_degree": null,
+          "terms": 1
+        },
+        {
+          "order": 2,
+          "total_degree": 2,
+          "terms": 4
+        },
+        {
+          "order": 3,
+          "total_degree": 3,
+          "terms": 9
+        },
+        {
+          "order": 4,
+          "total_degree": 4,
+          "terms": 22
+        },
+        {
+          "order": 5,
+          "total_degree": 5,
+          "terms": 40
+        },
+        {
+          "order": 6,
+          "total_degree": 6,
+          "terms": 83
+        },
+        {
+          "order": 7,
+          "total_degree": 7,
+          "terms": 138
+        },
+        {
+          "order": 8,
+          "total_degree": 8,
+          "terms": 242
+        }
+      ],
+      "classification_through_requested_order": {
+        "returncode": 0,
+        "status": "unit_ideal",
+        "variables": null,
+        "scheme_degree": null,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5,
+        "result_head": "[-1]:",
+        "stderr_tail": ""
+      },
+      "component_rational_parametrization": null
+    },
+    {
+      "row_pair": [
+        0,
+        4
+      ],
+      "reversal_partner": [
+        0,
+        4
+      ],
+      "support": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "normalization_anchors": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "normalization_weights": [
+        -1,
+        -2
+      ],
+      "residual_coordinate_count": 6,
+      "internal_GL2_gauge": "removed by U=(e_r,e_s)",
+      "exact_rank_two_minor_positions": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "exact_rank_two_minor": "-c_rs*c_sr, nonzero on the coefficient torus",
+      "moment_profiles": [
+        {
+          "order": 1,
+          "total_degree": null,
+          "terms": 1
+        },
+        {
+          "order": 2,
+          "total_degree": 2,
+          "terms": 4
+        },
+        {
+          "order": 3,
+          "total_degree": 3,
+          "terms": 8
+        },
+        {
+          "order": 4,
+          "total_degree": 4,
+          "terms": 20
+        },
+        {
+          "order": 5,
+          "total_degree": 5,
+          "terms": 40
+        },
+        {
+          "order": 6,
+          "total_degree": 6,
+          "terms": 78
+        },
+        {
+          "order": 7,
+          "total_degree": 7,
+          "terms": 138
+        },
+        {
+          "order": 8,
+          "total_degree": 8,
+          "terms": 237
+        }
+      ],
+      "classification_through_requested_order": {
+        "returncode": 0,
+        "status": "unit_ideal",
+        "variables": null,
+        "scheme_degree": null,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5,
+        "result_head": "[-1]:",
+        "stderr_tail": ""
+      },
+      "component_rational_parametrization": null
+    },
+    {
+      "row_pair": [
+        1,
+        2
+      ],
+      "reversal_partner": [
+        2,
+        3
+      ],
+      "support": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "normalization_anchors": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "normalization_weights": [
+        1,
+        -1
+      ],
+      "residual_coordinate_count": 6,
+      "internal_GL2_gauge": "removed by U=(e_r,e_s)",
+      "exact_rank_two_minor_positions": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "exact_rank_two_minor": "-c_rs*c_sr, nonzero on the coefficient torus",
+      "moment_profiles": [
+        {
+          "order": 1,
+          "total_degree": null,
+          "terms": 1
+        },
+        {
+          "order": 2,
+          "total_degree": 2,
+          "terms": 6
+        },
+        {
+          "order": 3,
+          "total_degree": 3,
+          "terms": 11
+        },
+        {
+          "order": 4,
+          "total_degree": 4,
+          "terms": 26
+        },
+        {
+          "order": 5,
+          "total_degree": 5,
+          "terms": 50
+        },
+        {
+          "order": 6,
+          "total_degree": 6,
+          "terms": 101
+        },
+        {
+          "order": 7,
+          "total_degree": 7,
+          "terms": 163
+        },
+        {
+          "order": 8,
+          "total_degree": 8,
+          "terms": 289
+        }
+      ],
+      "classification_through_requested_order": {
+        "returncode": 0,
+        "status": "unit_ideal",
+        "variables": null,
+        "scheme_degree": null,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5,
+        "result_head": "[-1]:",
+        "stderr_tail": ""
+      },
+      "component_rational_parametrization": null
+    },
+    {
+      "row_pair": [
+        1,
+        3
+      ],
+      "reversal_partner": [
+        1,
+        3
+      ],
+      "support": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "normalization_anchors": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "normalization_weights": [
+        1,
+        -1
+      ],
+      "residual_coordinate_count": 6,
+      "internal_GL2_gauge": "removed by U=(e_r,e_s)",
+      "exact_rank_two_minor_positions": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "exact_rank_two_minor": "-c_rs*c_sr, nonzero on the coefficient torus",
+      "moment_profiles": [
+        {
+          "order": 1,
+          "total_degree": null,
+          "terms": 1
+        },
+        {
+          "order": 2,
+          "total_degree": 2,
+          "terms": 6
+        },
+        {
+          "order": 3,
+          "total_degree": 3,
+          "terms": 10
+        },
+        {
+          "order": 4,
+          "total_degree": 4,
+          "terms": 32
+        },
+        {
+          "order": 5,
+          "total_degree": 5,
+          "terms": 50
+        },
+        {
+          "order": 6,
+          "total_degree": 6,
+          "terms": 122
+        },
+        {
+          "order": 7,
+          "total_degree": 7,
+          "terms": 182
+        },
+        {
+          "order": 8,
+          "total_degree": 8,
+          "terms": 361
+        }
+      ],
+      "classification_through_requested_order": {
+        "returncode": 0,
+        "status": "unit_ideal",
+        "variables": null,
+        "scheme_degree": null,
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 5,
+        "result_head": "[-1]:",
+        "stderr_tail": ""
+      },
+      "component_rational_parametrization": null
+    }
+  ]
+}

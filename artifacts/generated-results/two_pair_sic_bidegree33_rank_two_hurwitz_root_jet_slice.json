@@ -1,0 +1,89 @@
+{
+  "format": "two-pair-sic-bidegree33-rank-two-hurwitz-root-jet-slice-v2",
+  "field": "characteristic zero",
+  "chart": "F=(1+x)B(y)+x^2*(lambda+x)D(y)",
+  "slice": {
+    "B": "1+a1*y+a2*y^2+a3*y^3",
+    "D": "y+b2*y^2+(-1-a1/3-lambda*b2/3)*y^3",
+    "generic_coordinates": "b0=0 and b1=1",
+    "coefficient_rank": 2
+  },
+  "scaled_form": "3F",
+  "moment_profiles": {
+    "2": {
+      "terms": 17,
+      "integer_content": "72",
+      "primitive_sha256": "0a51f5fd2eaf5f87bda05abf3baf52ccf1f2ba85cd06f73199f864dcd6ece23d"
+    },
+    "3": {
+      "terms": 34,
+      "integer_content": "12960",
+      "primitive_sha256": "d885c98baa740af4bf4d2fed53f210b721c99fc874c92da3de5d0ad1ec7c0d28"
+    },
+    "4": {
+      "terms": 111,
+      "integer_content": "1866240",
+      "primitive_sha256": "fae9b6e068cfbf368604fb72262a4a5b01cc4b719a9a243f21d728a694a0e420"
+    },
+    "5": {
+      "terms": 213,
+      "integer_content": "2612736000",
+      "primitive_sha256": "42ae994b2fe19a8168c1d50b6202fdfdfeff1103f7c3660c849d955e001002b8"
+    },
+    "6": {
+      "terms": 432,
+      "integer_content": "94058496000",
+      "primitive_sha256": "3fdc9777cb43800881b04c911f9edece8e6c206a080d0ed29306d731e2fdea21"
+    },
+    "7": {
+      "terms": 733,
+      "integer_content": "4562777640960000",
+      "primitive_sha256": "63b7ef2ca2e5f2ef5cf55178c2b256892732f92ae6c7aefbfa67ea5be59ead74"
+    }
+  },
+  "prefix_mu2_through_mu6": {
+    "returncode": 0,
+    "result_sha256": "48911adfee2b9eab4cb6a95e263b1beb82906230161215f1c15e04ffbb4c0707",
+    "degree": 687,
+    "eliminant_degree": 668,
+    "squarefree_eliminant_degree": 658,
+    "msolve_input_sha256": "8c2631cec46d2ef7cd5c79a14e1eb3d0d33e90f1008d53712d2da6f0fec1b07a",
+    "conclusion": "zero-dimensional quotient of length 687"
+  },
+  "classification_mu2_through_mu7": {
+    "returncode": 0,
+    "result_sha256": "27c93ae10f856f5eb13cbe4c694c4fe8eee701f87e50bda0ceb7bc34becf9827",
+    "degree": 26,
+    "eliminant_degree": 9,
+    "squarefree_eliminant_degree": 1,
+    "msolve_input_sha256": "3b96bf4e6a23b9fd00fbfafb331190850ac855981a016a450353e0365f0777bd",
+    "support": [
+      [
+        1,
+        -4,
+        5,
+        -2,
+        -2
+      ]
+    ],
+    "local_length": 26
+  },
+  "all_order_component_certificate": {
+    "point_form": "(x + 1)*(y - 1)**2*(x**2*y - 2*y + 1)",
+    "flag_parameter": -1,
+    "fixed_flag_factorization": "Vp*Zp**2*(Vp**2*Yp - 2*Vp*Wp*Yp + Wp**2*Zp)",
+    "fixed_flag_entries": {
+      "1,0": 1,
+      "2,1": -2,
+      "3,1": 1
+    },
+    "period_laurent_polynomial": "-3*t**3/u + t**3/u**2 + 7*t**2/u - 2*t**2/u**2 - 5*t/u + t/u**2 + 1/u",
+    "creative_telescoping_recurrence": "nu_(m+1)=0 for m>=0",
+    "initial_condition": "nu_1=0 by strict u-valuation",
+    "degree_one_multiplier_period_numerator": "u*t",
+    "degree_one_mixed_value_at_m1": -2,
+    "mixed_tail": "every degree-e multiplier vanishes for m>e"
+  },
+  "conclusion": "the only all-order point on the slice is fixed-flag one-sided and SIC-safe",
+  "scope": "exact five-parameter coefficient slice only; this is not a diagonal-SL_2 orbit chart or a generic Hurwitz classification"
+}

@@ -1,0 +1,639 @@
+{
+  "format": "two-pair-sic-bidegree33-rank-two-hurwitz-base-fibres-v1",
+  "field": "GF(31)",
+  "equations": [
+    "H",
+    "K",
+    "J6",
+    "J7",
+    "J8",
+    "J9"
+  ],
+  "open_localizer": "b0*P1*lc_z(N4)*lc_z(S5)*V*R1",
+  "prime_guard": "31>3*9",
+  "polynomial_profiles": {
+    "H": {
+      "terms": 698,
+      "total_degree": 26,
+      "variable_degrees": {
+        "b0": 8,
+        "q": 18,
+        "lambda": 18
+      }
+    },
+    "K": {
+      "terms": 46890,
+      "total_degree": 118,
+      "variable_degrees": {
+        "b0": 37,
+        "q": 81,
+        "lambda": 81
+      }
+    },
+    "J6": {
+      "terms": 61794,
+      "total_degree": 130,
+      "variable_degrees": {
+        "b0": 41,
+        "q": 89,
+        "lambda": 89
+      }
+    },
+    "J7": {
+      "terms": 117809,
+      "total_degree": 162,
+      "variable_degrees": {
+        "b0": 51,
+        "q": 111,
+        "lambda": 111
+      }
+    },
+    "J8": {
+      "terms": 200648,
+      "total_degree": 195,
+      "variable_degrees": {
+        "b0": 62,
+        "q": 133,
+        "lambda": 133
+      }
+    },
+    "J9": {
+      "terms": 214193,
+      "total_degree": 199,
+      "variable_degrees": {
+        "b0": 63,
+        "q": 136,
+        "lambda": 136
+      }
+    }
+  },
+  "descent_factor_removal": {
+    "6": {
+      "removed_P1_power": 4,
+      "removed_determinant_factors": {
+        "b0": 1,
+        "lc_z_N4": 1,
+        "lc_z_S5": 2
+      }
+    },
+    "7": {
+      "removed_P1_power": 5,
+      "removed_determinant_factors": {
+        "b0": 2,
+        "lc_z_N4": 1,
+        "lc_z_S5": 2
+      }
+    },
+    "8": {
+      "removed_P1_power": 5,
+      "removed_determinant_factors": {
+        "b0": 2,
+        "lc_z_N4": 1,
+        "lc_z_S5": 2
+      }
+    },
+    "9": {
+      "removed_P1_power": 6,
+      "removed_determinant_factors": {
+        "b0": 2,
+        "lc_z_N4": 1,
+        "lc_z_S5": 2
+      }
+    }
+  },
+  "counts": {
+    "unit": 27,
+    "survivor": 4,
+    "timeout": 0
+  },
+  "fibres": [
+    {
+      "q": 0,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "b8f6943992dc7192caf1b188f8efd79f1e00632b6fb94ba15057774ac88af9b9",
+      "specialized_terms": {
+        "H": 98,
+        "K": 1660,
+        "J6": 1977,
+        "J7": 3067,
+        "J8": 4381,
+        "J9": 4583
+      },
+      "localizer_terms": 1821,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 1,
+      "status": "survivor",
+      "basis_size": 4,
+      "first_degree": 1,
+      "source_sha256": "3b8e7e695e3ecc3be5584fa3053af53965ca1251713ebf44b5f998374856c74f",
+      "specialized_terms": {
+        "H": 96,
+        "K": 1648,
+        "J6": 1991,
+        "J7": 3078,
+        "J8": 4396,
+        "J9": 4579
+      },
+      "localizer_terms": 1811,
+      "basis": "b0+lambda+8*s+3,\ns^2-5*lambda-3*s-6,\nlambda*s-12*lambda+9*s+4,\nlambda^2+lambda+10*s-13"
+    },
+    {
+      "q": 2,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "4553aa02f8a2f5a282ed1a67c3bb6d3758d10820c7e7a7fea2c935aa7f677367",
+      "specialized_terms": {
+        "H": 94,
+        "K": 1643,
+        "J6": 2012,
+        "J7": 3073,
+        "J8": 4409,
+        "J9": 4583
+      },
+      "localizer_terms": 1822,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 3,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "24c80df1bb0504181d88e36ec0a889783d2649c70981b6884870346e16515836",
+      "specialized_terms": {
+        "H": 96,
+        "K": 1663,
+        "J6": 1994,
+        "J7": 3066,
+        "J8": 4405,
+        "J9": 4592
+      },
+      "localizer_terms": 1818,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 4,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "c62ba87355d0655020ffd09ae79fb7db169d95441c0f95b132ff9c568fcdeb77",
+      "specialized_terms": {
+        "H": 98,
+        "K": 1644,
+        "J6": 1996,
+        "J7": 3060,
+        "J8": 4389,
+        "J9": 4573
+      },
+      "localizer_terms": 1826,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 5,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "8b44d6361ca0f114bbacc89242612888ac838e495286c5e7439289d0a4bed842",
+      "specialized_terms": {
+        "H": 96,
+        "K": 1640,
+        "J6": 1987,
+        "J7": 3037,
+        "J8": 4399,
+        "J9": 4602
+      },
+      "localizer_terms": 1815,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 6,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "bff3d5617d3bc683edd91208d1d72381de6556cdbc23c067b73026c6845aef93",
+      "specialized_terms": {
+        "H": 95,
+        "K": 1661,
+        "J6": 2005,
+        "J7": 3078,
+        "J8": 4394,
+        "J9": 4599
+      },
+      "localizer_terms": 1826,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 7,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "e231b651442ca69d5d9f1bc453820c4335ebb9f2f844116cb9f4dfbb12bd347a",
+      "specialized_terms": {
+        "H": 95,
+        "K": 1650,
+        "J6": 1989,
+        "J7": 3088,
+        "J8": 4405,
+        "J9": 4603
+      },
+      "localizer_terms": 1743,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 8,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "598f4bad6e952004e4c08f2bf614b365843a48d65cadf1933e0aa299674e2c1c",
+      "specialized_terms": {
+        "H": 97,
+        "K": 1651,
+        "J6": 1996,
+        "J7": 3074,
+        "J8": 4390,
+        "J9": 4582
+      },
+      "localizer_terms": 1816,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 9,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "107d302455e48bea995a336e17304a7a45469b89a43da067a81861e74c34a3a7",
+      "specialized_terms": {
+        "H": 98,
+        "K": 1649,
+        "J6": 2008,
+        "J7": 3070,
+        "J8": 4382,
+        "J9": 4578
+      },
+      "localizer_terms": 1822,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 10,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "0be3ad50738d991d7b55b83c5f8bfeac319ad194cf43bae4b538052444cbd2b6",
+      "specialized_terms": {
+        "H": 97,
+        "K": 1663,
+        "J6": 2001,
+        "J7": 3078,
+        "J8": 4390,
+        "J9": 4590
+      },
+      "localizer_terms": 1806,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 11,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "8c841dc0231e19d5b802d521e1cff913b2113efdbb93c48bfd0db4c7dff7d091",
+      "specialized_terms": {
+        "H": 95,
+        "K": 1642,
+        "J6": 1985,
+        "J7": 3069,
+        "J8": 4399,
+        "J9": 4584
+      },
+      "localizer_terms": 1828,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 12,
+      "status": "survivor",
+      "basis_size": 4,
+      "first_degree": 1,
+      "source_sha256": "ceaebdef7be0d29cdcf390afb7a97d9453b2d3f2cc77c0a1cc3dee6603282746",
+      "specialized_terms": {
+        "H": 97,
+        "K": 1657,
+        "J6": 1995,
+        "J7": 3067,
+        "J8": 4400,
+        "J9": 4592
+      },
+      "localizer_terms": 1832,
+      "basis": "b0-15*lambda+15*s+5,\ns^2-12*lambda-11*s+6,\nlambda*s-11*lambda+2*s,\nlambda^2-14*lambda+7*s-1"
+    },
+    {
+      "q": 13,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "59c6cd0cbb5f3fd324181255d44920e27ae2fa8a076e6db83aeda2dfd9e17f0d",
+      "specialized_terms": {
+        "H": 93,
+        "K": 1661,
+        "J6": 1997,
+        "J7": 3081,
+        "J8": 4386,
+        "J9": 4594
+      },
+      "localizer_terms": 1820,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 14,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "2e055f8167b68e90130736ee6385ef1df3239a6231599eb5686f8da0e11be5b7",
+      "specialized_terms": {
+        "H": 96,
+        "K": 1663,
+        "J6": 1983,
+        "J7": 3075,
+        "J8": 4390,
+        "J9": 4579
+      },
+      "localizer_terms": 1822,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 15,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "07f4cd072e72344ebc73202a62e0bcd9c064c98aa7f326f7476eaadce005aa84",
+      "specialized_terms": {
+        "H": 95,
+        "K": 1642,
+        "J6": 1997,
+        "J7": 3063,
+        "J8": 4382,
+        "J9": 4565
+      },
+      "localizer_terms": 1814,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 16,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "c71dca6a259c5122bb7b16cfe29eb3e8b6efd7aa6ff0b720621435dbda1d23cf",
+      "specialized_terms": {
+        "H": 97,
+        "K": 1654,
+        "J6": 1990,
+        "J7": 3072,
+        "J8": 4374,
+        "J9": 4575
+      },
+      "localizer_terms": 1825,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 17,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "43695e93dc20adf86b68ed9875558141bf0ef3480f1a3a06019f3c52e3a6376c",
+      "specialized_terms": {
+        "H": 95,
+        "K": 1645,
+        "J6": 1977,
+        "J7": 3067,
+        "J8": 4407,
+        "J9": 4575
+      },
+      "localizer_terms": 1824,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 18,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "62c6192ff43afbcbd073108f3e9a64b32bf6bb139aebc54750a3675bc94a9d3b",
+      "specialized_terms": {
+        "H": 94,
+        "K": 1652,
+        "J6": 1997,
+        "J7": 3069,
+        "J8": 4388,
+        "J9": 4594
+      },
+      "localizer_terms": 1815,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 19,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "9ed41823cf466b8ff717aca795c544962a30425b0b5e1d05435de343253af367",
+      "specialized_terms": {
+        "H": 97,
+        "K": 1667,
+        "J6": 1987,
+        "J7": 3042,
+        "J8": 4388,
+        "J9": 4587
+      },
+      "localizer_terms": 1822,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 20,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "fe647579dae227a23de60f39376449e7248e713d4ec11901e1d9838eab6ed564",
+      "specialized_terms": {
+        "H": 97,
+        "K": 1649,
+        "J6": 2005,
+        "J7": 3084,
+        "J8": 4384,
+        "J9": 4592
+      },
+      "localizer_terms": 1817,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 21,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "e975d437feb9f2e59998233e647b72408c9f220f5cc547d93338a1c3f2634b85",
+      "specialized_terms": {
+        "H": 98,
+        "K": 1654,
+        "J6": 1995,
+        "J7": 3087,
+        "J8": 4394,
+        "J9": 4587
+      },
+      "localizer_terms": 1817,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 22,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "cade2863b03b242e32979116e13955b95533a5755b91574d485afaa7880c2ebf",
+      "specialized_terms": {
+        "H": 98,
+        "K": 1662,
+        "J6": 1993,
+        "J7": 3060,
+        "J8": 4385,
+        "J9": 4575
+      },
+      "localizer_terms": 1811,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 23,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "446c966c05fc464b80ec616c3effbcef21520586639054402093290b614879a3",
+      "specialized_terms": {
+        "H": 97,
+        "K": 1653,
+        "J6": 1992,
+        "J7": 3089,
+        "J8": 4392,
+        "J9": 4577
+      },
+      "localizer_terms": 1816,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 24,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "316c987bedbc1fa4da38f0c58e272dc289d83d06e60a90cffb1e038cd183f3dd",
+      "specialized_terms": {
+        "H": 97,
+        "K": 1653,
+        "J6": 1994,
+        "J7": 3083,
+        "J8": 4371,
+        "J9": 4595
+      },
+      "localizer_terms": 1828,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 25,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "b874bb97300f0d49697d5d326606d2d4be2e520b827253e503a0988b4ecf8940",
+      "specialized_terms": {
+        "H": 91,
+        "K": 1658,
+        "J6": 1979,
+        "J7": 3055,
+        "J8": 4397,
+        "J9": 4594
+      },
+      "localizer_terms": 1822,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 26,
+      "status": "survivor",
+      "basis_size": 4,
+      "first_degree": 1,
+      "source_sha256": "9362dd67766abe74528f1781686816144d6c6484df770406d9592af5b290ed6b",
+      "specialized_terms": {
+        "H": 96,
+        "K": 1633,
+        "J6": 1988,
+        "J7": 3067,
+        "J8": 4358,
+        "J9": 4587
+      },
+      "localizer_terms": 1818,
+      "basis": "b0-12*lambda-3*s-3,\ns^2+15*lambda+13*s-2,\nlambda*s+3*s+2,\nlambda^2+7*lambda+4*s+2"
+    },
+    {
+      "q": 27,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "787b8c9c05c65ce4b7496c0a65ea602d861878ee6c394ded19c24d0b77765749",
+      "specialized_terms": {
+        "H": 97,
+        "K": 1661,
+        "J6": 1991,
+        "J7": 3058,
+        "J8": 4396,
+        "J9": 4589
+      },
+      "localizer_terms": 1826,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 28,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "cac3f08ed6171f3c6f2ab182240f2c9f355ca519c1c48d4306f0a65ed9fcf970",
+      "specialized_terms": {
+        "H": 99,
+        "K": 1665,
+        "J6": 1984,
+        "J7": 3073,
+        "J8": 4393,
+        "J9": 4572
+      },
+      "localizer_terms": 1817,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 29,
+      "status": "survivor",
+      "basis_size": 4,
+      "first_degree": 1,
+      "source_sha256": "fb78d43ea84ab0a9a24fec2838d36ebb20c79e664da3c158f92f0600a26ada10",
+      "specialized_terms": {
+        "H": 96,
+        "K": 1659,
+        "J6": 1998,
+        "J7": 3085,
+        "J8": 4375,
+        "J9": 4569
+      },
+      "localizer_terms": 1830,
+      "basis": "b0+11*lambda+8*s,\ns^2+5*s+14,\nlambda*s-13*lambda-4*s-10,\nlambda^2-8*lambda-12*s-14"
+    },
+    {
+      "q": 30,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "05e34cff313a0db3fa3952b7c7184520f153a2c8260d9a4db3e18dbcf448a63a",
+      "specialized_terms": {
+        "H": 95,
+        "K": 1659,
+        "J6": 1984,
+        "J7": 3075,
+        "J8": 4406,
+        "J9": 4591
+      },
+      "localizer_terms": 1825,
+      "basis": "_[1]=1"
+    }
+  ],
+  "conclusion": "bounded exact modular routing only; unit fibres exclude geometric points with that GF(p)-rational q-coordinate on the displayed open, but do not exclude q in extension fields or imply a characteristic-zero unit ideal"
+}

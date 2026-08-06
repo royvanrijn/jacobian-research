@@ -19,11 +19,37 @@ This directory contains the stable proof chain:
   the plane map; this is a repository theorem whose independent second
   normalization implementation remains open;
 - [Characteristic-two plane modulo-four obstruction](HUQ_KURUVILLA_PLANE_W2_OBSTRUCTION.md):
-  an all-degree one-coefficient proof that the exact plane map has no
-  constant-Jacobian lift over `Z/4`, hence no compatible higher Witt or
-  characteristic-zero plane lift, together with an explicit compatible
-  polynomial tower over all finite Witt levels after one identity
-  stabilization;
+  the full de Rham cokernel and nonzero Cartier obstruction proving that no
+  polynomially left--right equivalent plane representative has a
+  constant-Jacobian lift over `Z/4`, together with the general
+  one-coordinate first-order stabilization theorem and an explicit
+  compatible polynomial tower over all finite Witt levels; the first stable
+  Witt lift has sharp minimum degree 18, and an explicit `W_3` correction has
+  degree 25, sharply among extensions of the canonical first digit; an exact
+  Boolean certificate excludes unrestricted degree 18 at `W_3`, while a
+  directly replayed SAT witness attains degree 19, proving `d_3=19`; the
+  preferred frozen determinant-one witness has 440 correction coefficients;
+  its fixed-first second-completion space has dimension 804 and exact minimum
+  support 160 by incidence-component decoding; at `W_4`, that preferred
+  degree-19 representative is obstructed in every degree by a nonzero
+  `H^3_dR` class, while the fixed degree-25 representative has exact extension
+  degree 52 by a two-coefficient functional and an explicit `8zL` correction;
+  the unrestricted next-class-zero search inside the degree-19 ansatz is SAT,
+  producing an 818-term representative whose own exact fixed extension degree
+  is 52; a joint degree-19 master--subproblem experiment finds only singleton
+  codomain-hole obstructions through 64 cuts, while a 599-hole master times
+  out rather than proving UNSAT; a shared-minor compiler now reaches the full
+  4,340-hole quotient, which also times out, with `z1` and `z3` separately
+  SAT and `z0`,`z2` undecided; unrestricted, only `19 <= d_4 <= 52` is proved;
+
+<!-- status-consumer: HKM2W1 904c57385ac0b0dd -->
+
+<!-- status-consumer: HKM2W2 474e0d677133ee23 -->
+
+<!-- status-consumer: HKM2W3 55d99efeee0298af -->
+
+<!-- status-consumer: HKM2W4 6075dd4fbb9cb89c -->
+
 - [Tangent-map core](TANGENT_MAP_CORE.md): the central theorem unifying the
   inverse pencil, plane incidence, Jacobian factor, discriminant normalization,
   reconstruction pole, Hessian Fitting divisor, weighted suspension, and the

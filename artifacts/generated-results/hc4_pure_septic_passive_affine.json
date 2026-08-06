@@ -1,0 +1,37 @@
+{
+  "curved_shifted_quintic": {
+    "aligned": "c4_zz=0; the exact factor-minus-square recurrence has five ordered-line charts, all closed by degree 15 or 13",
+    "misaligned": "c4_zz=6*k*x^2/7+6*x*z/49; then h5=h4=0 and v3=h3/3 or h3/7, killed by -20/21 and 36/7"
+  },
+  "degree_18": "49*x^12*det Hess_(y,z)(c5-(2/7)*x^3*L^2)",
+  "format": "hc4-pure-septic-passive-affine-v1",
+  "residual": "eight explicit degree-fifteen quartic-cylinder direction packets",
+  "status": {
+    "id": "HC4RSD39",
+    "kind": "exact narrowing theorem",
+    "scope": "the final H_yy=0 pure-septic boundary"
+  },
+  "two_linear_form_tower": {
+    "degree_15_positive_z_counts": {
+      "Lzero_Ny": 3,
+      "Lzero_Nz": 5,
+      "bothzero_Ny": 3,
+      "dependent_Ny": 3,
+      "dependent_Nz": 5,
+      "independent_Nsum": 6,
+      "independent_Ny": 3,
+      "independent_Nz": 5
+    },
+    "degree_16": "49*x^12*det Hess_(y,z)(c4-shift), with shifts 0, x*y^3/49, or x*y^3/49+3*x^2*y*z/7",
+    "quartic_packets": [
+      "independent_Ny",
+      "independent_Nz",
+      "independent_Nsum",
+      "dependent_Ny",
+      "dependent_Nz",
+      "Lzero_Ny",
+      "Lzero_Nz",
+      "bothzero_Ny"
+    ]
+  }
+}

@@ -18,6 +18,18 @@ For a ternary polynomial \(s\), put
 > field and \(J(s)=0\), then \(s\) is independent of a nonzero constant
 > direction.
 
+The degree-five continuation is now complete as well:
+
+> **Theorem `HC4BL5` — Quintic bordered lemma.**  If
+> \(s\in K[x,y,m]\) has degree at most five over a characteristic-zero
+> field and \(J(s)=0\), then \(s\) is independent of a nonzero constant
+> direction.
+>
+> `HC4RSD23` closes every non-pure binary quintic top.  For the remaining
+> fifth-power top, the first passive Hessian face, two exact unit ideals,
+> and three constant-direction alignment radicals close every lower tail;
+> Section 9 gives the proof and exact certificates.
+
 Consequently:
 
 > **Theorem `HC4CD5` — Quintic common-direction descent.**  Let
@@ -707,12 +719,144 @@ across special fibers.  Further progress should extract the exceptional
 denominator/discriminant divisor and analyze its components geometrically,
 not add more parameters to the same dense elimination.
 
+## 9. The pure-fifth bordered chart
+
+It remains, after `HC4RSD23`, to prove `HC4BL5` when the leading quintic is
+a fifth power.  Work after scalar extension and normalize
+
+\[
+ s_5=\frac{x^5}{20}.
+\tag{9.1}
+\]
+
+For a generic quartic correction, the degree-twelve bordered face is
+
+\[
+ [J(s)]_{12}
+ =\frac{x^8}{16}\det\operatorname{Hess}_{y,m}(s_4).
+\tag{9.2}
+\]
+
+The binary singular-Hessian classification over \(K(x)\), together with
+ordinary homogeneity, gives constant passive coordinates in which
+
+\[
+ s_4=Q_4(x,y)+k x^3m.
+\tag{9.3}
+\]
+
+Suppose first that \(kQ_{yy}\ne0\).  Write the cubic coefficients of
+\(m^3,ym^2,y^2m,y^3,xm^2,xym,xy^2,x^2m,x^2y,x^3\) as
+\(b_0,\ldots,b_9\).  The next face is
+
+\[
+ [J(s)]_{11}
+ =\frac{x^8Q_{yy}}8
+   (3b_0m+b_1y+b_4x-4k^2x).
+\tag{9.4}
+\]
+
+Thus \(b_0=b_1=0\) and \(b_4=4k^2\).  The following face first gives
+\(Q_4=a_0x^4+a_1x^3y+a_2x^2y^2\), with \(a_2\ne0\), and then splits into
+exactly two branches:
+
+\[
+\begin{array}{c|ccc}
+ &b_2&b_5&b_7\\ \hline
+\mathrm{I}&8a_2k&8a_1k&8a_0k\\
+\mathrm{II}&4a_2k&b_5&
+8a_0k-(8a_1k-b_5)^2/(16a_2k).
+\end{array}
+\tag{9.5}
+\]
+
+The diagonal scaling torus normalizes \(a_2=k=1\).  Retain all four
+binary cubic coefficients, all six quadratic coefficients, and all three
+linear coefficients.  The complete bordered coefficient ideal is the unit
+ideal on both rows of (9.5).  Hence no curved-passive branch survives.
+
+Now suppose that the nonzero quartic passive part is affine.  Normalize it
+to \(a x^4+x^3m\).  The first cubic face is a prime rank-one system.  On a
+finite nonzero ratio chart its complete radical contains
+
+\[
+ (b_0,b_4-4,b_8,e_{ym},e_{y^2},e_{xy},r_y),
+\tag{9.6}
+\]
+
+so the polynomial omits \(\partial_y\).  At ratio zero, the exact
+325-element basis contains powers at most three of
+
+\[
+ b_8, e_{ym}, e_{y^2}, e_{xy}, r_y.
+\tag{9.7}
+\]
+
+The ratio-infinity passive cube has unit ideal.  On its remaining conic
+boundary the full ideal contains the residual parameter and returns to
+(9.7).  This exhausts the projective ratio line.
+
+If (9.3) is binary and the first transverse cubic coefficient is nonzero,
+normalize it to \(x^2m\).  The full radical forces
+
+\[
+\begin{gathered}
+ Q_4\in K[x],\qquad
+ s_3=d_0x^3+d_1x^2y+x^2m,\\
+ e_{ym}=2d_1e_{m^2},\quad
+ e_{y^2}=d_1^2e_{m^2},\quad
+ e_{xy}=d_1e_{xm},\quad
+ r_y=d_1r_m.
+\end{gathered}
+\tag{9.8}
+\]
+
+Every passive occurrence is through \(m+d_1y\), so
+\(\partial_y-d_1\partial_m\) is missing.
+
+In the zero-transverse branch, after absorbing binary lower terms into
+\(h\), one has
+
+\[
+ s=h(x,y)+m(Mx+Ny+R)+\frac F2m^2.
+\tag{9.9}
+\]
+
+If \(H=\operatorname{Hess}_{x,y}h\), the coefficients of \(m^2\) and
+\(m\) in \(J(s)\) are respectively
+
+\[
+ FK,\qquad 2(Mx+Ny+R)K,
+\quad
+K=F\det H-(M,N)\operatorname{adj}(H)(M,N)^{\mathsf T}.
+\tag{9.10}
+\]
+
+For \(F\ne0\), completing the square in \(m\) reduces to a binary
+polynomial with both Hessian and bordered determinant zero; its pure-fifth
+top makes it univariate, leaving a fixed direction.  For \(F=0\), the
+leading \(x^5\) term forces \((M,N)\) to align with the \(x\)-direction.
+The only nontrivial normal form is
+
+\[
+ s=f(x)+y g(x)+xm,
+\qquad
+J(s)=-(xg'(x)-g(x))^2.
+\tag{9.11}
+\]
+
+Thus \(g=\gamma x\), and \(s=f(x)+x(m+\gamma y)\) again omits a constant
+direction.  The constant and zero linear forms in (9.9) are easier binary
+subcases.  This proves the pure-fifth chart and, with `HC4RSD23`, proves
+`HC4BL5`.
+
 ## Reproduction
 
 Run:
 
 ```bash
 .venv/bin/python scripts/verify_hc4_quintic_common_direction.py
+.venv/bin/python scripts/verify_hc4_quintic_bordered_lemma.py
 .venv/bin/python scripts/verify_hc4_quintic_diagonal_schur.py
 .venv/bin/python scripts/verify_hc4_quintic_symmetric_sextic_schur.py
 .venv/bin/python \
@@ -726,23 +870,27 @@ Run:
 .venv/bin/python scripts/verify_hc4_exceptional_schur_atlas.py
 ```
 
-The checker replays `HC4T31`, verifies every symbolic face, runs the exact
+The first checker replays `HC4T31`, verifies every symbolic face, runs the
+exact
 rational radical certificates with Singular, and verifies (5.1).  The
-second checker retains all 72 lower coefficients symbolically and extracts
+pure-fifth checker verifies (9.2), (9.4), both unit ideals (9.5), every
+projective passive-affine chart, the alignment radicals (9.6)--(9.8), and
+the Schur identities (9.10)--(9.11). The diagonal Schur checker retains all
+72 lower coefficients symbolically and extracts
 the 66-equation Schur divisibility ideal and the four determinant
-coefficients (6.5)--(6.6) by exact rational calculations.  The third
-checker constructs the full 111-equation ideal (7.2), saturates by
+coefficients (6.5)--(6.6) by exact rational calculations.  The symmetric
+sextic checker constructs the full 111-equation ideal (7.2), saturates by
 \(\mu\), and verifies all twenty-one fourth-power radical certificates.
-The fourth checker eliminates the quadratic quotient on \(\nu\ne0\),
+The two-parameter checker eliminates the quadratic quotient on \(\nu\ne0\),
 constructs the 114 intrinsic equations, and verifies the 117-element
-function-field basis and all fifteen cube certificates (8.3).  The fifth
+function-field basis and all fifteen cube certificates (8.3).  The radial
 checker verifies the radial specialization, its nonzero Hessian
 determinant, the exact Schur identity (8.5), and uniqueness of this radial
-quartic on the surface.  The sixth checker keeps
+quartic on the surface.  The radial-prolongation checker keeps
 all lower forms generic and extracts the two sparse determinant
-coefficients (8.6), proving the obstruction (8.7).  The seventh checker
+coefficients (8.6), proving the obstruction (8.7).  The even-symmetric checker
 computes the exact radical decomposition (8.8) and the unit ideal on the
-remaining projective chart.  The eighth constructs all 120 incidence
+remaining projective chart.  The atlas checker constructs all 120 incidence
 coefficients, verifies the seven-term invariant Hessian determinant,
 classifies its nonsquarefree parameter locus, and removes the extra
 squarefree split point and invariant-quotient ramification divisors.

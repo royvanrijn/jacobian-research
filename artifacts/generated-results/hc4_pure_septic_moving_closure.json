@@ -1,0 +1,24 @@
+{
+  "degree_17_obstructions": {
+    "a4_ratio_A": "72*a4^3*k^2/7",
+    "a4_ratio_B": "18*a4^3*k^2/7",
+    "a4_zero_a3_nonzero": "24*a3^3*k^2/7"
+  },
+  "format": "hc4-pure-septic-moving-closure-v1",
+  "pure_x4_resonances": {
+    "normalized_degree_16_obstructions": [
+      "-24/49",
+      "256/1225"
+    ],
+    "ratios": [
+      "p2=3*a2*k/7",
+      "p2=4*a2*k/7 with p1=0"
+    ]
+  },
+  "residual": "k=0 curved chart and passive-affine H_yy=0 boundary",
+  "status": {
+    "id": "HC4RSD36",
+    "kind": "exact closure theorem",
+    "scope": "the six k!=0 curved packets left by HC4RSD35"
+  }
+}

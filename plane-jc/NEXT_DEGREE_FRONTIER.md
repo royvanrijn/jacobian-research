@@ -84,10 +84,12 @@ Open work, in dependency order:
    Case 2; the total ramification intersection remains `35`.  The exact
    degree-twelve residue has a priori normalization-cover degree `1,2,4`,
    with image degrees `12,6,3`.  Case 1 retains all three rows, with
-   degree-29 valuation contributions `3,6,12`; its composition sieve first
-   requires the omitted bands `P:z^-6,...,z^-8` and
-   `Q:z^-5,...,z^-12`, or a proof that they cannot affect the remainder
-   equations.  In Case 2, general
+   degree-29 valuation contributions `3,6,12`.  Its formerly omitted bands
+   `P:z^-6,...,z^-8` and `Q:z^-5,...,z^-12` are now reconstructed by the
+   exact eight-layer continuation in
+   [`CASE1_FULL_BAND_CONTINUATION.md`](CASE1_FULL_BAND_CONTINUATION.md); the
+   remaining sieve input is the transported exact residue coefficient vector.
+   In Case 2, general
    polynomial-right-component remainder ideals exclude cover degrees `2`
    and `4` already from `(J3),(J2)` and the determined part of `(J1)`.
    The remaining degree-twelve row is also empty: after localization at its
@@ -270,3 +272,5 @@ enumeration has counts `1,6,3,0` and no final corner.  The source-aware
 compiler records the row as pre-excluded and refuses to manufacture a Laurent
 block.  See [`NEWTON_DERHAM_COMPILER.md`](NEWTON_DERHAM_COMPILER.md) and
 [`cas/complete_chain_no_escape.py`](cas/complete_chain_no_escape.py).
+
+<!-- status-consumer: C1FBC1 0f14ef01fff25097 -->

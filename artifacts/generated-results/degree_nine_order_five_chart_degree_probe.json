@@ -1,0 +1,81 @@
+{
+  "denominator_degree_bound": 72,
+  "prime": 1009,
+  "results": [
+    {
+      "actual_denominator_degree": 72,
+      "actual_numerator_degree": 74,
+      "numerator_degree_bound": 74,
+      "target_index": 149
+    },
+    {
+      "actual_denominator_degree": 72,
+      "actual_numerator_degree": 76,
+      "numerator_degree_bound": 76,
+      "target_index": 150
+    },
+    {
+      "actual_denominator_degree": 72,
+      "actual_numerator_degree": 78,
+      "numerator_degree_bound": 78,
+      "target_index": 151
+    },
+    {
+      "actual_denominator_degree": 72,
+      "actual_numerator_degree": 80,
+      "numerator_degree_bound": 80,
+      "target_index": 152
+    },
+    {
+      "actual_denominator_degree": 72,
+      "actual_numerator_degree": 82,
+      "numerator_degree_bound": 82,
+      "target_index": 153
+    },
+    {
+      "actual_denominator_degree": 72,
+      "actual_numerator_degree": 84,
+      "numerator_degree_bound": 84,
+      "target_index": 154
+    },
+    {
+      "actual_denominator_degree": 72,
+      "actual_numerator_degree": 86,
+      "numerator_degree_bound": 86,
+      "target_index": 155
+    },
+    {
+      "actual_denominator_degree": 72,
+      "actual_numerator_degree": 73,
+      "numerator_degree_bound": 73,
+      "target_index": 156
+    },
+    {
+      "actual_denominator_degree": 72,
+      "actual_numerator_degree": 75,
+      "numerator_degree_bound": 75,
+      "target_index": 157
+    },
+    {
+      "actual_denominator_degree": 72,
+      "actual_numerator_degree": 77,
+      "numerator_degree_bound": 77,
+      "target_index": 158
+    },
+    {
+      "actual_denominator_degree": 72,
+      "actual_numerator_degree": 79,
+      "numerator_degree_bound": 79,
+      "target_index": 159
+    },
+    {
+      "actual_denominator_degree": 72,
+      "actual_numerator_degree": 81,
+      "numerator_degree_bound": 81,
+      "target_index": 160
+    }
+  ],
+  "samples": 166,
+  "scope": "one-line modular degree-bound probe; discovery only",
+  "tau": 0
+}

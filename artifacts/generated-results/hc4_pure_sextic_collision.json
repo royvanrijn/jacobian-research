@@ -1,0 +1,25 @@
+{
+  "faces": {
+    "degree_13_terminal_coefficients": [
+      "1",
+      "6",
+      "-10/9"
+    ],
+    "degree_14": {
+      "cubic_split": "-3*(18*p3-7*a3*k)*(6*p3-a3*k)",
+      "y4_after_y5": "-24*a4^2*k^2",
+      "y5": "-25*a5^2*k^2",
+      "z3_alignment": "108*w9=k^3"
+    },
+    "degree_15": "18*x^10*(c5)_yy*(2*(c4)_zz-k^2*x^2)",
+    "degree_16": "36*x^10*det Hess_(y,z)(c5)"
+  },
+  "format": "hc4-pure-sextic-collision-v1",
+  "residual": "pure-sixth leading potential with its degree-five correction binary in one fixed passive direction; lower components may still break the flag",
+  "status": {
+    "id": "HC4RSD29",
+    "kind": "hybrid theorem",
+    "result": "the degree-five correction has a fixed passive direction; a moving two-direction correction reduces to three charts with immutable nonzero next-face coefficients",
+    "scope": "the pure-sixth leading chart in the scalar HC4RSD20 packet"
+  }
+}

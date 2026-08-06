@@ -1,0 +1,197 @@
+{
+  "component": {
+    "contained_in_reconstructed_rank_drop_quartic": true,
+    "minimal_polynomial": "4*minimal_variable**4 + 66*minimal_variable**3 + 561*minimal_variable**2 + 1260*minimal_variable + 900",
+    "prime_point_profile": {
+      "139": [
+        [
+          56,
+          94
+        ],
+        [
+          62,
+          46
+        ],
+        [
+          75,
+          117
+        ],
+        [
+          138,
+          110
+        ]
+      ],
+      "167": [
+        [
+          6,
+          79
+        ],
+        [
+          25,
+          74
+        ],
+        [
+          96,
+          20
+        ],
+        [
+          107,
+          97
+        ]
+      ],
+      "17": [
+        [
+          2,
+          16
+        ],
+        [
+          9,
+          15
+        ]
+      ],
+      "19": [],
+      "197": [
+        [
+          94,
+          101
+        ],
+        [
+          95,
+          13
+        ],
+        [
+          102,
+          60
+        ],
+        [
+          185,
+          141
+        ]
+      ],
+      "23": [
+        [
+          2,
+          10
+        ],
+        [
+          8,
+          20
+        ],
+        [
+          13,
+          9
+        ],
+        [
+          18,
+          15
+        ]
+      ],
+      "29": [],
+      "31": [
+        [
+          14,
+          22
+        ],
+        [
+          25,
+          28
+        ]
+      ],
+      "37": [],
+      "41": []
+    },
+    "residue_degree": 4,
+    "tau_relation": "4260*tau+52*sigma^3+498*sigma^2+12693*sigma+13050"
+  },
+  "order_five_kuranishi": {
+    "correction_rank": 34,
+    "dimension": 4,
+    "dual_rank": 76,
+    "groebner_basis_size": 2,
+    "projected_equations": 76,
+    "singular_program_sha256": "f49ca162c02793ea2960e802ea95a89ad2f2f359ebaad1ce5e90c7e4c125fdfa"
+  },
+  "order_seven": {
+    "current_correction_rank": 5,
+    "current_correction_support": [
+      [
+        16,
+        0,
+        0
+      ],
+      [
+        17,
+        1,
+        0
+      ],
+      [
+        18,
+        2,
+        0
+      ],
+      [
+        19,
+        3,
+        0
+      ],
+      [
+        20,
+        4,
+        0
+      ]
+    ],
+    "equation_degree": 3,
+    "groebner_basis": [
+      "1"
+    ],
+    "independent_interpolation_check": [
+      4,
+      1,
+      2,
+      3
+    ],
+    "interpolation_points": 35,
+    "output_dimension": 65,
+    "projected_equations": 60,
+    "singular_program_sha256": "bef1235332a515850298d0b190362af4e0bddcf143cea3b2455a39eeca87cce7"
+  },
+  "relative_ranks": {
+    "h3_kernel_dimension": 6,
+    "h3_rank": 77,
+    "h5_augmented_rank": 40,
+    "h5_correction_rank": 34,
+    "h5_output_dimension": 110,
+    "h5_strong_span_rank": 40
+  },
+  "root_at_infinity_weights": {
+    "classical": {
+      "S": -2,
+      "T": -1
+    },
+    "order_four": {
+      "S4": 10,
+      "T4": 11
+    },
+    "order_six": {
+      "S6": 16,
+      "T6": null
+    },
+    "order_two": {
+      "S2": 4,
+      "T2": 5
+    },
+    "variables": {
+      "Q": -1,
+      "X": 1,
+      "Z": -2
+    }
+  },
+  "scope": "exact quartic reconstruction and closure through hbar^7 in the parity-preserving root-weight-homogeneous degree-six filtration",
+  "terminal_status": {
+    "conductor_gluing": "not reached",
+    "nonsurjectivity": "not reached",
+    "ore_localized_quantization": "inconsistent at hbar^7",
+    "root_at_infinity_correction_valuations": "not reached beyond the listed filtration weights",
+    "weyl_relations": "not reached"
+  }
+}

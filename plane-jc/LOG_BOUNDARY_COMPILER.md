@@ -14,7 +14,9 @@ certified local branch scales
     -> intrinsic A2 adjunction and Noether gate
     -> coordinate and target-pullback valuations
     -> tame differents and binomial-branch conductors
+    -> certified retained-root Euler gate when declared
     -> chart-aware localization/SNF gate
+    -> downstream normal class-trivial-core/SNF gate when such a core is certified
 ```
 
 It does **not** infer branch scales from printed Newton corners.  That step
@@ -285,6 +287,15 @@ initial map does not force cover degree four for the exact Case-1 residue.
 The normal-index contributions to the degree-29 valuation budget are
 `3,6,12` in Case 1.
 
+The archived Case-1 descent originally stopped at `P:z^-5,Q:z^-4`.  The
+exact continuation in
+[`CASE1_FULL_BAND_CONTINUATION.md`](CASE1_FULL_BAND_CONTINUATION.md) now
+solves the remaining eight bracket layers, reconstructs the complete tails
+through `P:z^-8,Q:z^-12`, and records 66 additional compatibility equations
+with no new parameters.  Hence the Case-1 residue-cover rows are no longer
+waiting for Newton bands; they are waiting for alternate-chart transport and
+the exact degree-two/four remainder tests.
+
 In Case 2 the two nontrivial cover strata are now excluded exactly.  A
 degree-two or degree-four cover would factor `C,G` through a general monic
 polynomial right component.  Reconstructing that component from the leading
@@ -371,6 +382,24 @@ exceptional divisor and returns `Q=B^tJB`.  It then runs the localization
 invariants from the [boundary-lattice prefilter](BOUNDARY_LATTICE_PREFILTER.md).
 This prevents applying the affine-plane unit-rank test to a Laurent stage.
 
+There are now two Smith gates, and they answer different questions.  This
+compiler's matrix sends complete projective boundary primes to `Pic(X)` and
+audits the declared completion.  After a finite normalization produces a
+candidate open `U` with a certified dense normal core, the dual matrix sends
+a based core-unit lattice to valuations on every prime of its complement.  A
+class-trivial core gives the units and `Cl(U)` as its kernel and cokernel.  A
+finitely presented nontrivial `Cl(W)` instead adds the lifted-relation block
+`[[V,A],[0,R]]`, whose cokernel is `Cl(U)`.  The latter
+[normal-core criterion](BOUNDARY_LATTICE_PREFILTER.md#dual-torus-core-localization)
+can reject a reconstruction even when the source completion matrix is
+unimodular.  It is implemented in the prefilter and in the
+[stage-one boundary-package compiler](../extended-geometry/BOUNDARY_PACKAGE_COMPILER.md),
+not inferred from Newton corners by this log compiler.
+
+<!-- status-consumer: BL1 e86cdcd66993bccc -->
+<!-- status-consumer: PWB7 19f4f4ffc96227a3 -->
+<!-- status-consumer: CJT1 afb70f90ff10f3d7 -->
+
 For an `A2` certificate it now also reconstructs `K_X` from `Q` by
 adjunction and checks the rational-surface identity `K_X^2+rho(X)=10`.
 These data are emitted under `intrinsic_a2_boundary`.  Once a global target
@@ -379,6 +408,53 @@ pole vector is supplied, the companion
 ordinary and logarithmic ramification vectors and identifies dicritical
 primes.  Laurent `GmA1` stages are deliberately not passed through the
 affine-plane audit.
+
+An optional `retained_root_euler` block supplies a global gate between the
+different ledger and downstream reconstruction.  It must explicitly certify
+the balanced chart, different support, squarefree nonzero retained roots,
+and exactly one omitted fierce boundary.  The emitted
+`retained_root_euler_gate` has status `not_applicable`, `uncertified`,
+`passes`, or `obstructed`.  The combined boolean `passes_search_gates` is
+false precisely when the localization gate fails or a certified nonlinear
+retained row has `chi_c=deg(A)>1`.  Missing or collision data do not trigger
+a false rejection.
+
+An optional legacy `conductor_jet_branches` list supplies the scalar
+finite-determinacy ledger proved in
+[`CONDUCTOR_JET_TRUNCATION.md`](CONDUCTOR_JET_TRUNCATION.md).  Each supported
+normalization branch declares its conductor exponent, derivative loss, pole
+loss, any additional certified contact loss, available normal-jet order, and
+three proof references.  It passes exactly when every branch satisfies
+
+\[
+ \texttt{available}\ge
+ \texttt{conductor}+\texttt{derivative}+\texttt{pole}+\texttt{additional}.
+\]
+
+The preferred `conductor_jet_sensitivity` list instead declares named inputs,
+named outputs, and a complete expression tree for each output.  The compiler
+propagates a separate loss `lambda_(i,alpha,j)` from input `j` to output
+`alpha` and tests
+
+\[
+ n_{i,j}\ge c_i+\lambda_{i,\alpha,j}
+\]
+
+only when that dependency occurs.  A certified unused input requires no jet.
+Each row reports its margin and exact deficit.  The optional
+`normal_valuation` adapter computes `n_(i,j)` from a valuation weight vector,
+a trivialization shift, and each input's finite omitted-support valuation
+frontier.  Its completeness certificate must bound every omitted monomial by
+the displayed minimum; a coordinatewise antichain alone is not sufficient on
+a Laurent cone with a negative valuation direction.  Scalar and sensitivity
+ledgers cannot be supplied together.
+
+The compiler emits the selected audit and sets
+`boundary_module_truncation_ready=true` only when it passes.  This flag
+certifies that the matching-map presentation and distinguished residue use
+only the retained jets.  It does not assert that the resulting
+local-cohomology class vanishes.  Missing or short data require only the
+displayed input-band recovery and do not reject the boundary package.
 
 The frontier report uses `GmA1_F4`.  In that completion
 `(x,y)->(x^-1,x^4y)` is the transition between the two trivializations of
@@ -424,6 +500,58 @@ The executable accepts a certificate such as
   "transformations": ["normalized blowup of the branch-scale ideal"],
   "theorem_source": "the normal-form lemma proving this scale exhaustive",
   "exhaustive": true,
+  "retained_root_euler": {
+    "retained_degree": 4,
+    "squarefree": true,
+    "nonzero_constant_term": true,
+    "omitted_fierce_boundary_count": 1,
+    "balanced_chart_certificate": "certificate for the balanced x,u chart",
+    "different_support_certificate": "certificate for different support on E",
+    "root_fibre_certificate": "certificate for simple nonzero retained roots",
+    "omitted_boundary_certificate": "certificate that E is the sole omission",
+    "theorem_source": "PLANE_WILD_BOUNDARY_ATLAS.md, Theorem 7.12"
+  },
+  "conductor_jet_sensitivity": [{
+    "name": "cusp branch",
+    "conductor_exponent": 2,
+    "conductor_certificate": "completed conductor is (t^2)",
+    "dependency_completeness_certificate": "the displayed trees contain every matching and residue entry",
+    "normal_valuation": {
+      "coordinate_names": ["X", "z"],
+      "coordinate_orders": [1, 4],
+      "normalization_shift": 0,
+      "certificate": "X=t times a unit and z=t^4 times a unit"
+    },
+    "inputs": [{
+      "name": "P",
+      "first_omitted_exponents": [[2, 1], [6, 0]],
+      "support_completeness_certificate": "every omitted P monomial has normal order at least the displayed minimum"
+    }, {
+      "name": "Q",
+      "first_omitted_exponents": [[1, 2], [9, 0]],
+      "support_completeness_certificate": "every omitted Q monomial has normal order at least the displayed minimum"
+    }],
+    "outputs": [{
+      "name": "rho",
+      "expression": {
+        "operation": "add",
+        "operands": [{
+          "operation": "derivative",
+          "loss_order": 1,
+          "operands": [{"operation": "input", "input_name": "P"}]
+        }, {
+          "operation": "pole",
+          "loss_order": 2,
+          "operands": [{
+            "operation": "derivative",
+            "loss_order": 2,
+            "operands": [{"operation": "input", "input_name": "Q"}]
+          }]
+        }]
+      },
+      "expression_certificate": "rho is the displayed regular normalization expression"
+    }]
+  }],
   "clusters": [{
     "name": "p",
     "root_boundary": "L",
@@ -466,8 +594,11 @@ regression suite is:
 .venv/bin/python plane-jc/cas/test_log_boundary_compiler.py
 ```
 
-It checks the proximity sequence and matrices above, merged prefixes for two
-scales, the `Gm x A1` unit rank, local different/conductor labels, a
+It checks the retained-root gate in its nonlinear-reject, linear-pass,
+uncertified-fallback, and absent/not-applicable states; the conductor-jet
+ledger in exact-pass, one-jet-short, absent, and JSON-replay states; the proximity sequence
+and matrices above; merged prefixes for two scales; the `Gm x A1` unit rank;
+local different/conductor labels; a
 two-boundary SNC crossing, extraction of the published `(72,108)` local rays
 `(2,1),(3,1),(4,1)` into regular branch fans of lengths `2,3,4`, the distinct
 Laurent-map base ideals `(t,x^4),(t,x^6),(t,x^8)` and their complete nested
@@ -487,7 +618,18 @@ The pre-coefficient workflow is now:
 3. compile and merge its toroidal clusters;
 4. inspect the complete boundary graph, valuations, differents, conductors,
    and target pullback degrees;
-5. only then build the coefficient ideal.
+5. when a balanced retained-polynomial presentation is certified, apply the
+   retained-root Euler gate and stop if `deg(A)>1`;
+6. before discarding omitted bands in a conductor-supported residue, compile
+   every branch's dependency-sensitive conductor/contact-loss ledger and
+   require `boundary_module_truncation_ready`; derive available orders from
+   certified omitted-support valuation frontiers when possible, and recover
+   only the displayed input/output deficit when the audit fails;
+7. if normalization exposes a usable normal core, certify its unit basis,
+   complete codimension-one complement, and either `Cl(W)=0` or a finite
+   class presentation with explicitly lifted relation witnesses, then run
+   the valuation/block Smith gate;
+8. only then build the coefficient ideal.
 
 The implementation makes steps 3--4 deterministic.  For `(72,108)`, the
 source graph and symbolic residue tree in step 2 are now audited.  The
@@ -501,8 +643,9 @@ same `(4)` architecture for Case 1.  The other four edge-only models pass as
 well, proving that the present intrinsic gate cannot distinguish the
 source-selected package.  The transformed-Poisson correction now separates
 the two normal indices.  The Case-2 decomposition and endpoint certificates
-remove all three Case-2 cover rows.  Only the three Case-1 rows remain.  No
-chain-to-boundary geometry remains missing.
+remove all three Case-2 cover rows.  Only the three Case-1 rows remain.  Their
+full Newton tails are now exact; alternate-chart residue extraction is the
+remaining map-data step.  No chain-to-boundary geometry remains missing.
 For `(75,125)`, exhaustive Laurent branches for a full coefficient
 classification have not been derived.  That compiler refusal remains correct
 for the coefficient/de Rham route.  It is no longer a statement that the
@@ -557,3 +700,5 @@ extension is implementation work: add declared reconstruction denominators,
 residue maps, semigroup presentations, and Rees-saturation witnesses to the
 compiler IR.  It is not needed for the existing fixed-family proofs, whose
 expanded formulas already satisfy the finite operational criterion.
+
+<!-- status-consumer: C1FBC1 0f14ef01fff25097 -->

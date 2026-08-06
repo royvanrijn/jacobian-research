@@ -1,0 +1,140 @@
+{
+  "boundary_linear_pivot_localization": {
+    "A_sha256": "87c744c11b0c83e08240f76c9727a932af8642e581f146f8e9fe783065792ec1",
+    "A_terms": 2,
+    "B_sha256": "d2dbb3961614822ccca16aa8d9b48a4c38a527d7a4ff8f2f7e41c38b3eff51f4",
+    "B_terms": 25,
+    "chart": "A*B!=0 (equivalently pivot!=0 and B!=0)",
+    "equation": "A+B*pivot=0",
+    "first_order": 2,
+    "pivot": "a3",
+    "transformed_term_counts": {
+      "3": 648,
+      "4": 7340,
+      "5": 15300
+    }
+  },
+  "coefficient_saturation": [
+    "a0",
+    "a2",
+    "a3",
+    "a4"
+  ],
+  "compile_only": false,
+  "compile_seconds": {
+    "2": 0.01835829101037234,
+    "3": 1.2857724580680951,
+    "4": 15.395418333006091,
+    "5": 90.5835178749403
+  },
+  "configuration_discriminant": "lam**3*mu**2 - lam**3*mu - lam**2*mu**3 + lam**2*mu + lam*mu**3 - lam*mu**2",
+  "configuration_parameters": [
+    "lam",
+    "mu"
+  ],
+  "coordinate_colon_only": true,
+  "degrees": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "directions": 5,
+  "exact_generic_primary_result": null,
+  "exact_local_primary_result": null,
+  "exact_result": null,
+  "format": "gvc3-many-coherent-channels-research-v1",
+  "groups": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ]
+  ],
+  "linear_pivot_boundary": {
+    "A_sha256": "aadaea1f8b51dc7c0298cd8dab6dc87c018f1dfa85680ab56d123044c0ff17c8",
+    "A_terms": 27,
+    "B_sha256": "4c505ac5a1b4936202ff1914e6bb2f4285b388eb0e9f76d0233fb90edcd70b42",
+    "B_terms": 244,
+    "chart": "B=0; the first moment and pivot!=0 force A=0",
+    "equations": "A=B=0 for A+B*pivot=0",
+    "pivot": "a4",
+    "source_order": 3
+  },
+  "linear_pivot_localization": null,
+  "linear_pivot_scan": null,
+  "linear_pivot_scan_max_order": null,
+  "max_order": 5,
+  "modular_results": [
+    {
+      "basis_size": null,
+      "cutoff": 0,
+      "dimension": null,
+      "method": "solved_hypersurface_coordinate_colon_only",
+      "prime": 101,
+      "seconds": 600.3410096250009,
+      "solved_hypersurface_coordinate_colon": {
+        "coordinate_variables": [
+          "delta",
+          "a2",
+          "a4",
+          "lam",
+          "mu"
+        ],
+        "engine": "solved_hypersurface_coordinate_colon",
+        "input_generator_count": 3,
+        "input_generator_pivot_degrees": [
+          3,
+          5,
+          7
+        ],
+        "input_generator_term_counts": [
+          643,
+          7298,
+          15170
+        ],
+        "input_sha256": "cc797a840b4d464567a9292f27cc93e2e5acaab316c75899ff4d38523d0b4151",
+        "leading_coefficient_degree": 13,
+        "leading_coefficient_terms": 13,
+        "normal_coordinate": "delta",
+        "pivot": "a0",
+        "remainder_degree": 17,
+        "remainder_terms": 12,
+        "seconds": 600.3410096250009,
+        "status": "timeout",
+        "stderr": "",
+        "stdout_tail": "",
+        "transformed_compact_expression_lengths": [
+          12941,
+          163757,
+          354433
+        ]
+      },
+      "status": "timeout",
+      "unit": null
+    }
+  ],
+  "moment_term_counts": {
+    "2": 0,
+    "3": 271,
+    "4": 1142,
+    "5": 3686
+  },
+  "normalization": "a1=1; first three direction points are infinity, zero, one",
+  "saturation_method": "rabinowitsch",
+  "scope": "one declared direction-partition and nonzero-coefficient chart",
+  "solved_hypersurface_coordinate_colon": true,
+  "specialization": {},
+  "status": "bounded modular discovery; not a characteristic-zero theorem"
+}

@@ -292,6 +292,195 @@ forms, hence SIC-safe.  Combining (2.17)--(2.20) gives:
 
 Other row-pivot charts are not covered by this corollary.
 
+### 2.4 All dense off-diagonal two-row charts
+
+The dense calculation admits a uniform extension across all row pairs.
+For \(0\le r<s\le4\), fix the gauge-free factor
+\(U=(e_r,e_s)\) and use the eight-position support
+
+\[
+ \{r\}\times(\{0,\ldots,4\}\setminus\{r\})
+ \ \cup\
+ \{s\}\times(\{0,\ldots,4\}\setminus\{s\}).           \tag{2.21}
+\]
+
+On its coefficient torus,
+
+\[
+ \det C_{\{r,s\},\{r,s\}}=-c_{rs}c_{sr}\ne0,          \tag{2.22}
+\]
+
+so every point has exact coefficient rank two.  Overall scaling and the
+contraction-preserving diagonal torus normalize two coefficients of
+distinct weights, leaving six quotient coordinates.  Simultaneous
+reversal reduces the ten row pairs to
+
+\[
+ (0,1),\ (0,2),\ (0,3),\ (0,4),\ (1,2),\ (1,3).        \tag{2.23}
+\]
+
+For every representative in (2.23), exact \(\mathbb Q\) moments through
+\(\mu_8\), localized at all six residual coordinates, generate the unit
+ideal.  No modular specialization or ambient determinantal ideal enters
+the calculation.  Therefore:
+
+> **Proposition 2.3.** None of the ten dense off-diagonal two-row
+> exact-rank-two charts (2.21) contains an all-order pure-moment point or
+> a rank-two SIC counterexample.
+
+The \((0,4)\) representative is the dense chart in Proposition 2.1.  The
+coordinate boundaries of all ten charts can also be closed uniformly.
+Taking every proper subset of (2.21) and quotienting by simultaneous
+reversal gives 1174 support orbits, with exact stratum census
+
+\[
+ \begin{array}{c|rrrrr}
+  \text{stratum}&0&\text{one-sided fixed flag}&\text{rank one}&
+  \text{rank-one/rank-two}&\text{exact rank two}\\ \hline
+  \text{orbit count}&1&222&19&16&916.
+ \end{array}                                             \tag{2.24}
+\]
+
+The zero, one-sided, and rank-one strata are SIC-safe by the fixed-flag
+and split-symbol theorems.  If the two occupied rows have different
+column supports, coefficient-torus nonvanishing forces exact rank two.
+If they have the same column support, the rank-one closed locus is safe
+and every nonzero \(2\)-by-\(2\) minor open is localized separately.
+Thus rank is handled directly on the factor chart, without an ambient
+rank-at-most-two determinantal ideal.
+
+There are 942 exact rank-two localized systems.  Exact \(\mathbb Q\)
+elimination proves that every one is a unit through \(\mu_{10}\).  Two
+finite-prefix fibres explain why the cutoff must be longer than the dense
+cutoff in Proposition 2.3:
+
+\[
+ \begin{array}{c|c|c|c}
+  \text{support}&\text{open}&\text{last nonempty prefix}&
+  \text{killing moment}\\ \hline
+  \{(0,1),(0,4),(2,0),(2,3)\}&\text{coefficient torus}&
+  \deg 8\text{ through }\mu_8&\mu_9\\
+  \{1,3\}\times\{0,2,4\}&\Delta_{02}\ne0&
+  \deg 252\text{ through }\mu_9&\mu_{10}.
+ \end{array}                                             \tag{2.25}
+\]
+
+Both degrees are exact characteristic-zero rational-univariate
+calculations, not modular fibre counts.  Adjoining the displayed killing
+moment gives the unit ideal.  Hence neither finite-prefix component
+reaches the creative-telescoping or mixed-tail stages; its relative
+period is already covered by (2.4), but there is no all-order component
+function field on which a recurrence must be certified.
+
+> **Corollary 2.4.** Every form supported on any of the ten complete
+> off-diagonal two-row coordinate subspaces (2.21) is SIC-safe.  In
+> particular none yields a rank-two SIC counterexample.
+
+Non-coordinate \(U\)-charts remain open.
+
+### 2.5 The dense single-shear layer
+
+The first genuinely non-coordinate layer has a uniform first-moment
+obstruction.  Fix pivot rows \(r<s\), retain the gauge
+\(U_{r,*}=(1,0)\), \(U_{s,*}=(0,1)\), and put
+
+\[
+ B_{0r}=B_{1s}=0                                      \tag{2.26}
+\]
+
+with the other eight entries of \(B\) nonzero.  Choose a factor column
+\(\ell\in\{0,1\}\) and a row \(k\notin\{r,s\}\), and add the one shear
+\(U_{k\ell}=a\ne0\).  The pivot-column minor is
+
+\[
+ \det B_{*,\{r,s\}}=-B_{0s}B_{1r}\ne0,                \tag{2.27}
+\]
+
+so \(C=UB\) has exact rank two.  The only diagonal entry of \(C\) is
+\(c_{kk}=aB_{\ell k}\).  Consequently
+
+\[
+ \boxed{\mu_1=k!(4-k)!\,aB_{\ell k}\ne0}              \tag{2.28}
+\]
+
+on the coefficient torus.  There are
+\(\binom52\cdot2\cdot3=60\) such quotient charts.
+
+> **Proposition 2.5.** Every dense single-shear thickening (2.26)--(2.28)
+> is SIC-safe.  In fact it contains no point satisfying even the first
+> pure-moment equation.
+
+This removes a genuinely non-coordinate layer without a determinantal
+ideal or elimination.  Multiple simultaneous shears and coordinate
+boundaries of the shear tori remain open.
+
+### 2.6 The first double-shear component
+
+The double-shear layer does not admit the same first-moment exclusion.
+Before any moment calculation, the 150 labelled two-entry supports in the
+six nonpivot coordinates of \(U\) reduce to 78 simultaneous-reversal
+orbits:
+
+\[
+ \begin{array}{c|rrr}
+  \text{incidence type}&\text{same row, two columns}&
+  \text{two rows, same column}&\text{two rows, two columns}\\ \hline
+  \text{orbit count}&16&30&32.
+ \end{array}                                             \tag{2.29}
+\]
+
+An exact real finite-prefix point occurs in the last type.  On pivot rows
+\((0,4)\), put
+
+\[
+ U_0=e_0+ae_1,\qquad U_1=e_4+de_3,                     \tag{2.30}
+\]
+
+normalize \(B_{04}=B_{10}=1\), and keep
+\(b_{01},b_{02},b_{03},b_{11},b_{12},b_{13}\) nonzero.
+The pivot minor in columns \((0,4)\) is \(-1\), so the chart has exact
+rank two.  The first moment eliminates
+
+\[
+ d=-\frac{ab_{01}}{b_{13}}.                            \tag{2.31}
+\]
+
+In the variable order
+\((a,b_{01},b_{02},b_{03},b_{11},b_{12},b_{13})\), an
+exact rational Krawczyk box of radius \(10^{-10}\) is centred at
+
+\[
+\begin{split}
+(&-0.3524378371261593,-1.3307525332074560,
+ -1.6245630868373802,\\
+ &-0.7928610509028164,0.3680936242580407,
+ 0.9407113877550523,1.2756140806891972).
+\end{split}                                             \tag{2.32}
+\]
+
+The Krawczyk image lies strictly inside the box, hence the box contains a
+unique real zero of \(\mu_2,\ldots,\mu_8\).  Every displayed coordinate
+and the eliminated coordinate \(d\) stay nonzero throughout the box.
+Exact interval evaluation gives
+
+\[
+ \frac{\mu_9}{37!}>0,
+ \qquad
+ \frac{\mu_9}{37!}\approx7.5320091288774\cdot10^{-7}.  \tag{2.33}
+\]
+
+> **Proposition 2.6.** The double-shear chart (2.30) contains a real
+> exact-rank-two coefficient-torus point satisfying
+> \(\mu_1=\cdots=\mu_8=0\), but that point fails at \(\mu_9\).
+
+Thus the component never reaches recurrence or mixed-tail testing.  Its
+relative period is still (2.4), but the exact ninth moment already gives
+the obstruction.  This proposition does not classify the complete
+complex fibre of this orbit or the other 77 reversal orbits.  Direct
+`msolve` runs on the localized systems through \(\mu_8\) and \(\mu_9\)
+both reached a 600-second timeout; those timeouts carry no mathematical
+conclusion.
+
 ## 3. Rank two does not supply a small generic cutoff
 
 For a generic rank-two factor point, the exponent support of (2.2) has
@@ -365,6 +554,14 @@ python3 scripts/verify_two_pair_sic_bidegree44_rank_two_direct_chart.py
   scripts/verify_two_pair_sic_bidegree44_two_row_channel.py
 .venv/bin/python \
   scripts/verify_two_pair_sic_bidegree44_two_row_boundaries.py
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree44_two_row_off_diagonal.py
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree44_two_row_off_diagonal_boundaries.py
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree44_rank_two_single_shear.py
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree44_rank_two_double_shear_real_prefix.py
 ```
 
 The dependency-free checker verifies the factor identity (2.3), the
@@ -379,3 +576,12 @@ degree-\(604\) exact scheme in (2.17) and certifies the eighth-moment unit
 ideal over \(\mathbb Q\).  The boundary checker proves
 (2.18)--(2.20), including the separate rank-one and exact-rank-two
 localizations on the three mixed-rank coefficient tori.
+The final checker proves Proposition 2.3: six reversal representatives
+cover all ten row pairs, every dense chart has exact coefficient rank
+two, and all six localized \(\mathbb Q\)-moment ideals are units through
+\(\mu_8\).  Its boundary companion proves (2.24)--(2.25), including 942
+exact rank-two opens through \(\mu_{10}\), and hence Corollary 2.4.
+The single-shear checker verifies (2.26)--(2.28) on all 60 quotient
+charts and proves Proposition 2.5.
+The double-shear checker proves the census (2.29), the exact rational
+Krawczyk inclusion (2.32), and the ninth-moment sign (2.33).

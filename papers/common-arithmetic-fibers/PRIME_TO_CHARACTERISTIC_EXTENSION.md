@@ -121,7 +121,40 @@ independence, hidden cubic, actual-target irreducibility, exact separable
 degree, geometric generic-fibre bridge, skew-product derivation, and stated
 Lean/replay scope are contained in Mondello.  The arbitrary-field scope,
 finite-normalization boundary, conductor/different/node and (S_3) ledgers,
-and mixed-characteristic/Witt obstructions are repository extensions.
+and mixed-characteristic/Witt obstructions are repository extensions.  For
+the stabilized map `(P,Q,z)`, the repository further proves that the exact
+minimum lift degree over `W_2(F_2)` is 18 and constructs a degree-25 lift
+over `W_3(F_2)`.  Degree 25 is sharp for extensions of the canonical
+first-digit lift.  An exact Boolean coefficient certificate excludes every
+unrestricted degree-18 lift over `W_3(F_2)`, while a complete z-linear system
+produces a degree-19 lift whose full Jacobian replays to an odd constant
+modulo 8 and normalizes to determinant one at the same degree.  Hence
+`d_3=19`.  At `W_4`, the preferred degree-19 representative has a nonzero
+top de Rham class and cannot extend at any degree.  The fixed degree-25
+representative has exact extension degree 52: a two-coefficient functional
+excludes degrees at most 51 and an `8zL` correction attains 52.  Thus the
+unrestricted result is only `19 <= d_4 <= 52`; its exact value and later
+minimum degrees remain open.  The Z3 certificate has no independent
+implementation or external human review.
+The stronger next-class UNSAT proposal fails: the complete degree-19
+existence ansatz contains a pinned 818-term representative with zero
+`H^3_dR` class.  Its full fixed-representative correction problem is UNSAT in
+degree 51 and SAT in degree 52, so it too has exact extension degree 52.
+This does not settle the joint unrestricted degree-19 `W_4` system.
+An exact master--subproblem experiment for that joint system has found only
+singleton codomain-hole dual obstructions through 64 cuts.  Seeding all 599
+holes activated by the pinned zero-class representative leaves the master
+undecided at a 600-second Z3 bound.  This is a bounded computation, not an
+UNSAT proof.  A factored shared-minor compiler reaches the complete 4,340-hole
+quotient, but that master is likewise undecided; its `z1` and `z3` layers are
+separately SAT while `z0` and `z2` remain unknown.  The manuscript makes no
+sharper unrestricted claim.
+The preferred frozen degree-19 witness has determinant one and 440 correction
+coefficients.  After fixing its first Witt digit, the second completion space
+has exact affine dimension 804 and splits into three independent blocks, then
+into incidence components.  Their exact minima are 92, 54, and 14, proving
+fixed-first minimum support 160; the first digit has support 280, but support
+has not been minimized globally over all first digits.
 
 ### Corollary 1.3 — all higher dimensions
 
@@ -133,6 +166,12 @@ for every `n>=2`.
 <!-- status-consumer: HKM2 6891c4426fa9c6ff -->
 
 <!-- status-consumer: HKM2-ALLFIELDS bc2d0e1d0c37827c -->
+
+<!-- status-consumer: HKM2W2 474e0d677133ee23 -->
+
+<!-- status-consumer: HKM2W3 55d99efeee0298af -->
+
+<!-- status-consumer: HKM2W4 6075dd4fbb9cb89c -->
 
 ## 2. One integral cubic for every characteristic
 

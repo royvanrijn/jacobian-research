@@ -52,11 +52,13 @@ object.
 
 The open tests must use a map-decorated package:
 
-1. Recover the omitted lower Case-1 bands before running the general
-   polynomial-right-component sieve on its alternate-chart residue.  The
-   archive stops at `P:z^-5,Q:z^-4`, while the polygons continue to
-   `P:z^-8,Q:z^-12`; guessed zero coefficients are not valid.  The same
-   sieve already excludes Case-2 cover degrees `2,4`.
+1. Transport the now-complete Case-1 pair to the alternate chart, extract its
+   two exact residue vectors, and run the general polynomial-right-component
+   sieve.  The exact continuation in
+   [`CASE1_FULL_BAND_CONTINUATION.md`](CASE1_FULL_BAND_CONTINUATION.md)
+   reconstructs the archive's eleven formerly omitted bands through
+   `P:z^-8,Q:z^-12`; guessed zero coefficients are not used.  The same sieve
+   already excludes Case-2 cover degrees `2,4`.
 2. Retire the Case-2 target-resolution branch.  Its forced endpoint
    `G_12 != 0` is incompatible with the seven residual `(J1)` equations:
    their localization is the unit ideal before `(J0)`.
@@ -81,3 +83,5 @@ closure and two explicit degenerate components `C=0` and `A=0`; see
 [POISSON_SQUARE_RIGIDITY.md](POISSON_SQUARE_RIGIDITY.md).  Only the
 nonreduced structure at component intersections remains a separate input in
 a Newton application; the generic component multiplicities are `2,3,1`.
+
+<!-- status-consumer: C1FBC1 0f14ef01fff25097 -->

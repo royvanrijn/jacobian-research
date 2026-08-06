@@ -20,7 +20,12 @@ This policy applies only to searches for two-dimensional Keller maps.
    boundary prime, not only dicritical components; distinguish primitive
    divisor classes from pullback multiplicities; and declare whether the
    chart is `A^2` or a Laurent chart.  Inspect the compiled semigroup
-   conductors, differents, and residue degrees.  On a complete `A^2`
+   conductors, differents, and residue degrees.  If the candidate has a
+   certified balanced squarefree retained-polynomial presentation with one
+   omitted fierce boundary, supply the `retained_root_euler` block and reject
+   `deg(A)>1` before normalization, Smith, or coefficient searches.  Do not
+   apply this shortcut to nonsquarefree collisions or undeclared boundary
+   presentations.  On a complete `A^2`
    resolution, also run the
    [intrinsic adjunction/Noether gate](INTRINSIC_A2_BOUNDARY_GATE.md), supply
    the global target pole vector, and require effective ordinary and log
@@ -55,9 +60,20 @@ This policy applies only to searches for two-dimensional Keller maps.
    right-component remainder sieve for every cover degree dividing the gcd
    of its coordinate degrees.  Do not replace a general right component by
    a parity or fixed-critical-point ansatz.  The sieve requires the complete
-   residue coefficient vector: if an archived Newton calculation omits lower
-   bands contributing to the residue, derive them or prove a truncation lemma
-   before running it; never fill them with guessed zeros.
+   residue coefficient vector.  If an archived Newton calculation omits lower
+   bands, compile the branchwise ledger from
+   [`CONDUCTOR_JET_TRUNCATION.md`](CONDUCTOR_JET_TRUNCATION.md).  Prefer its
+   dependency-sensitive form: name every input and matching/residue output,
+   certify a complete expression tree, propagate derivative, pole, and other
+   contact losses only along paths that actually use that input, and derive
+   available normal-jet orders from a certified valuation frontier of omitted
+   Newton exponents and a normal-valuation vector.  On Laurent cones, require
+   the frontier certificate to bound the entire omitted support, not merely
+   its coordinatewise antichain.  Use the scalar branch maximum only as a
+   backward-compatible fallback.  The archive is sufficient only when
+   every displayed dependency reaches `conductor + path loss`.  Otherwise
+   recover precisely the failing input band and exact deficit; never fill
+   omitted bands with guessed zeros.
 9. Any localization in a coefficient solve must ship with a complementary-
    strata audit.  A basis containing `1` is not an adequate artifact without
    the input generators, field, order, saturation factors, and an explicit
@@ -72,6 +88,10 @@ This policy applies only to searches for two-dimensional Keller maps.
     `cas/finite_normalization_signatures.py` before treating it as a new
     boundary type; use the resulting Pareto coordinates only as a bounded
     classification device, not as an existence claim.
+    Before assembling its conductor quotient or local-cohomology residue, run
+    the shared retained-root Euler gate whenever its hypotheses are certified;
+    a finite-support residue cannot repair the global term
+    `(deg(A)-1)[A^1]`.
     Do not pursue a purely local exclusion of singular unibranch packets:
     [`UNIBRANCH_SPECTATOR_COUNTERMODELS.md`](UNIBRANCH_SPECTATOR_COUNTERMODELS.md)
     gives smooth integral finite-free models in every rank at least four,
@@ -92,6 +112,8 @@ This policy applies only to searches for two-dimensional Keller maps.
    \((84,126)\), \((90,135)\), and \((96,144)\) may still offer reusable
    structural tests.
    <!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
+   <!-- status-consumer: PWB7 19f4f4ffc96227a3 -->
+   <!-- status-consumer: CJT1 afb70f90ff10f3d7 -->
 
 The frontier is a lower bound, not an attainability prediction.  Search
 documentation must keep JC(2) separate from the repository's JC(3)

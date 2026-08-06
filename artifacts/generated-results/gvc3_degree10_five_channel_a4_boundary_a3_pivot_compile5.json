@@ -1,0 +1,88 @@
+{
+  "boundary_linear_pivot_localization": {
+    "A_sha256": "f16279296d2fec90e7fe096ef1f0bcaa25492f3815368671e840820ced378370",
+    "A_terms": 2,
+    "B_sha256": "c783308d9e893ee917ea51fb9c3cf7d562b02ce62819fcc5735234439e194245",
+    "B_terms": 25,
+    "chart": "A*B!=0 (equivalently pivot!=0 and B!=0)",
+    "equation": "A+B*pivot=0",
+    "first_order": 2,
+    "pivot": "a3",
+    "transformed_term_counts": {
+      "3": 648,
+      "4": 7340,
+      "5": 15300
+    }
+  },
+  "coefficient_saturation": [
+    "a1",
+    "a2",
+    "a3",
+    "a4"
+  ],
+  "compile_only": true,
+  "compile_seconds": {
+    "2": 0.01590366696473211,
+    "3": 1.2988694170489907,
+    "4": 15.073172792093828,
+    "5": 89.43023979093414
+  },
+  "configuration_discriminant": "lam**3*mu**2 - lam**3*mu - lam**2*mu**3 + lam**2*mu + lam*mu**3 - lam*mu**2",
+  "configuration_parameters": [
+    "lam",
+    "mu"
+  ],
+  "degrees": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "directions": 5,
+  "exact_result": null,
+  "format": "gvc3-many-coherent-channels-research-v1",
+  "groups": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ]
+  ],
+  "linear_pivot_boundary": {
+    "A_sha256": "5f8700b600fe75e0742cbb32ac08480c8aa48bdbe60f18042f0063439883223f",
+    "A_terms": 27,
+    "B_sha256": "aee75e043bdf49f15a4655b3cb646bf42f025024891706d079e9ca6b7825bdf0",
+    "B_terms": 244,
+    "chart": "B=0; the first moment and pivot!=0 force A=0",
+    "equations": "A=B=0 for A+B*pivot=0",
+    "pivot": "a4",
+    "source_order": 3
+  },
+  "linear_pivot_localization": null,
+  "linear_pivot_scan": null,
+  "linear_pivot_scan_max_order": null,
+  "max_order": 5,
+  "modular_results": [],
+  "moment_term_counts": {
+    "2": 0,
+    "3": 271,
+    "4": 1142,
+    "5": 3686
+  },
+  "normalization": "a0=1; first three direction points are infinity, zero, one",
+  "saturation_method": "rabinowitsch",
+  "scope": "one declared direction-partition and nonzero-coefficient chart",
+  "specialization": {},
+  "status": "moment compilation only; no elimination result"
+}

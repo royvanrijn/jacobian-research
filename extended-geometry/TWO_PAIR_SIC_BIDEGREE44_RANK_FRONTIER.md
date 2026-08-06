@@ -534,7 +534,13 @@ candidate.  This remains a necessary-test result, not a proof that
 The efficient order is now:
 
 1. cover the exact-rank-two locus by factor charts \(C=UW\) with chosen
-   nonzero \(2\)-by-\(2\) minors in both factors;
+   nonzero \(2\)-by-\(2\) minors in both factors; the ten coordinate
+   two-row charts, including all their coordinate boundaries, and all 60
+   dense single-shear thickenings are already excluded, so the remaining
+   work starts with the 78 double-shear reversal orbits and shear-torus
+   boundaries; one real eight-moment point in the first hard orbit is
+   exactly isolated and killed by \(\mu_9\), but its full complex fibre is
+   not classified;
 2. impose a dimension-sized moment system and extract an explicit closed
    point or positive-dimensional determinantal component, including its
    exact residue field or function field;
@@ -571,6 +577,10 @@ Run
 python3 scripts/verify_two_pair_sic_bidegree44_rank_frontier.py
 python3 scripts/verify_two_pair_sic_bidegree44_rank_two_invariants.py
 .venv/bin/python scripts/verify_two_pair_sic_bidegree44_rank_two_swap_slice.py
+.venv/bin/python scripts/verify_two_pair_sic_bidegree44_two_row_off_diagonal.py
+.venv/bin/python scripts/verify_two_pair_sic_bidegree44_two_row_off_diagonal_boundaries.py
+.venv/bin/python scripts/verify_two_pair_sic_bidegree44_rank_two_single_shear.py
+PYTHONPATH=scripts .venv/bin/python scripts/verify_two_pair_sic_bidegree44_rank_two_double_shear_real_prefix.py
 .venv/bin/python scripts/verify_two_variable_quartic_squarefree_pivot.py
 .venv/bin/python scripts/verify_two_variable_quartic_two_root_finite.py
 ```
@@ -594,6 +604,19 @@ containment and triangular radical exactly, checks equality by the
 good-prime length bound, and excludes the complete \(a_4=0\) projective
 boundary.  It also proves the three-moment parity-even corollary on all
 three projective charts.
+
+The two off-diagonal-row checkers remove the internal gauge by fixing
+\(U=(e_r,e_s)\).  The first proves all ten dense coefficient tori empty
+through \(\mu_8\); the second classifies 1174 proper support orbits and
+proves all 942 rank-two localized opens empty through \(\mu_{10}\).
+Thus the complete ten-chart coordinate atlas is SIC-safe, while
+non-coordinate \(U\)-charts remain open.  The single-shear checker removes
+the first such layer: on all 60 dense quotient charts the exact identity
+\(\mu_1=k!(4-k)!aB_{\ell k}\ne0\) excludes the pure-moment premise.
+The double-shear checker reduces 150 labelled charts to 78 reversal
+orbits and exactly isolates one real coefficient-torus zero through
+\(\mu_8\); its positive ninth moment excludes that point.  The complete
+complex orbit and the other 77 orbits remain open.
 
 The third checker proves the generic squarefree pivot-boundary unit certificate,
 the two-generator expected affine ideal (6.8), the four exact cubic-factor

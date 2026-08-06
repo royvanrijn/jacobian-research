@@ -1,0 +1,41 @@
+{
+  "common_quartic_polar_split": {
+    "equation": "rank-one 2-by-2 system",
+    "resonance": "3*A3^2=8*A2*A4, equivalently Q_NN is a square"
+  },
+  "conclusion": "all eight quartic packets are impossible or fixed cylinders; the scalar pure-septic branch is closed",
+  "format": "hc4-pure-septic-quartic-packets-v1",
+  "resonant_obstructions": {
+    "Lzero_Ny": "-6*u^2 at degree 10",
+    "Lzero_Nz": "-147*t5^4/(4*r^2) at degree 12",
+    "bothzero_Ny": "-u^6/(4*b0^2) at degree 8",
+    "dependent_Ny": "4*b0*u at degree 12",
+    "independent_Ny": "-3*q^2/(49*r) at degree 12"
+  },
+  "status": {
+    "id": "HC4RSD40",
+    "kind": "exact closure theorem",
+    "scope": "the eight degree-fifteen packets left by HC4RSD39"
+  },
+  "transverse_direction_packets": {
+    "dependent_Nz": [
+      "12/7",
+      "-12/2401"
+    ],
+    "independent_Nsum": [
+      "12/7",
+      "-12/2401"
+    ],
+    "independent_Nz": [
+      "12/7",
+      "-12/2401"
+    ]
+  },
+  "zero_strata": {
+    "Lzero_Ny": "fixed cylinder by the affine-transverse lemma",
+    "Lzero_Nz": "curvature contradiction at degree 12",
+    "bothzero_Ny": "fixed cylinder by the affine-transverse lemma",
+    "dependent_Ny": "fixed cylinder by the affine-transverse lemma",
+    "independent_Ny": "curvature contradiction at degree 12"
+  }
+}

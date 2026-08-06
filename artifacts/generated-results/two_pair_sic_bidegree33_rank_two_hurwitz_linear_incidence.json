@@ -1,0 +1,50 @@
+{
+  "branch": "P1!=0, A=0, B!=0 linear incidence",
+  "chart": "rank-two cubic Hurwitz 01-minor open",
+  "exact_observation": "on A=0 and M01!=0, b0!=0, so A eliminates b2",
+  "f4sat": false,
+  "format": "msolve",
+  "interpretation": "generic component source only; no emptiness or lifting claim",
+  "localization": [
+    "P1",
+    "b0",
+    "B",
+    "Delta",
+    "M01"
+  ],
+  "localized": true,
+  "orders": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "profiles": {
+    "coefficient_branch": "open",
+    "field": "QQ",
+    "later_moment_terms": {
+      "4": 915,
+      "5": 2245,
+      "6": 4234,
+      "7": 8687
+    },
+    "linear_incidence_terms": 273,
+    "mu3_coefficient_terms": {
+      "constant": 211,
+      "linear": 62
+    },
+    "removed_b0_powers": {
+      "3": 1,
+      "4": 3,
+      "5": 4,
+      "6": 5,
+      "7": 6
+    }
+  },
+  "reproduction_command": "scripts/research_two_pair_sic_bidegree33_rank_two_hurwitz_linear_incidence.py --characteristic-zero --orders 2,3,4,5,6,7 --emit /tmp/hurwitz_p1_A0_Bopen_incidence_QQ_m7.ms --output artifacts/generated-results/two_pair_sic_bidegree33_rank_two_hurwitz_linear_incidence.json",
+  "source_bytes": 593624,
+  "source_sha256": "605e4706c3498154499420a6806cfa083f1e7e189d6d7bc5cada8d5c38d3b4d4",
+  "status": "exploratory"
+}

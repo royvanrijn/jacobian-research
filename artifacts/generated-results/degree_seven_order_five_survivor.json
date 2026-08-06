@@ -1,0 +1,99 @@
+{
+  "nonlinear_order_five_lift": {
+    "dimension_over_residue_field": 4,
+    "free_lower_lift_coordinates": [
+      "z0",
+      "z2",
+      "z4",
+      "z6"
+    ],
+    "groebner_basis_size": 4,
+    "projected_equations": 117,
+    "reduced_lift_residue_degree": 8,
+    "scheme_structure": "a doubled affine four-space over the octic field",
+    "shape": "three affine-linear relations and one perfect-square quadratic relation"
+  },
+  "order_five_component": {
+    "minimal_polynomial": "1687500*x**8 + 41047500*x**7 + 462666750*x**6 + 3259667250*x**5 + 15781954748*x**4 + 53969799492*x**3 + 126253770468*x**2 + 183369004011*x + 119142437697",
+    "reconstruction_chart": {
+      "component_inside_chart": true,
+      "pivot_columns": 68,
+      "pivot_rows": 68,
+      "rank_over_octic_residue_field": 68
+    },
+    "relative_ranks": {
+      "h3_kernel_dimension": 8,
+      "h3_rank": 118,
+      "h5_augmented_rank": 68,
+      "h5_correction_rank": 61,
+      "h5_output_dimension": 178,
+      "h5_strong_span_rank": 68
+    },
+    "residue_degree": 8
+  },
+  "order_seven": {
+    "current_correction_rank": 20,
+    "current_correction_support_sizes": {
+      "S6": 14,
+      "T6": 6
+    },
+    "equation_degree": 3,
+    "fifth_correction_holdout": [
+      3,
+      1,
+      2,
+      4
+    ],
+    "fifth_correction_interpolation_points": 15,
+    "fifth_correction_kernel_dimension": 2,
+    "fifth_correction_rank": 61,
+    "independent_interpolation_check": [
+      4,
+      1,
+      2,
+      3,
+      2,
+      1
+    ],
+    "interpolation_points": 84,
+    "output_dimension": 124,
+    "projected_equations": 104,
+    "singular_result": {
+      "DIMENSION": "-1",
+      "REDUCED_ONE": "0",
+      "SIZE": "1"
+    }
+  },
+  "root_at_infinity_weights": {
+    "classical": {
+      "S": -2,
+      "T": -1
+    },
+    "order_four": {
+      "S4": 10,
+      "T4": 11
+    },
+    "order_six": {
+      "S6": 16,
+      "T6": 17
+    },
+    "order_two": {
+      "S2": 4,
+      "T2": 5
+    },
+    "variables": {
+      "Q": -1,
+      "X": 1,
+      "Z": -2
+    }
+  },
+  "scope": "exact nonlinear lifting in the parity-preserving inherited root-weight filtration; no unrestricted or DC_2 claim",
+  "terminal_status": {
+    "conductor_gluing": "not applicable: no hbar^7 local quantization",
+    "nonreduced_order_five_thickening": "also excluded: a unit ideal modulo a nilpotent ideal lifts to a unit ideal",
+    "order_seven_unit_ideal": true,
+    "ore_localized_quantization": "inconsistent at hbar^7",
+    "root_at_infinity_valuations": "all correction summands through hbar^6 recorded",
+    "weyl_relations_and_nonsurjectivity": "not applicable: no quantized homomorphism survives"
+  }
+}

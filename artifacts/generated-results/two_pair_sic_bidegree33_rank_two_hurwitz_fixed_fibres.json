@@ -1,0 +1,91 @@
+{
+  "format": "two-pair-sic-bidegree33-rank-two-hurwitz-fixed-fibres-v1",
+  "field": "characteristic zero",
+  "chart": "F=(1+x)B(y)+x^2*(lambda+x)D(y)",
+  "normalization": "B(0)=1 and d3 eliminated by mu_1",
+  "localization": "quadratic discriminant Delta and channel minor M_01",
+  "orders": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "lambda_values": [
+    -1,
+    1,
+    2
+  ],
+  "scaled_form": "3F",
+  "exact_reconstruction": {
+    "prime": "6864797660130609714981900799081393217269435300143305409394463459185543183397656052122559640661454554977296311391480858037121987999716643812574028291115057151",
+    "coefficient_bound": "(3m)!*52^m",
+    "prime_exceeds_twice_bound": true
+  },
+  "moment_profiles": {
+    "2": {
+      "terms": 22,
+      "sha256": "fbb7514704f0bd52bdfa8aab193f8c3bb1d8b8c3e11743f6cdae66fddb687725"
+    },
+    "3": {
+      "terms": 67,
+      "sha256": "69b0d355967334d98a19384f2c314bfb703c7b80bceae4f9699edf1c5e619226"
+    },
+    "4": {
+      "terms": 252,
+      "sha256": "1c3ef7c443b08863d174b5dd3c3e3121afa5ec8c7cf89c5e2dd7583b1dbccb73"
+    },
+    "5": {
+      "terms": 630,
+      "sha256": "fe3c5d6c26b58a34004a9b8b6c8c5ab3d482f0aa518ba9b19b967e39ca69f5e1"
+    },
+    "6": {
+      "terms": 1569,
+      "sha256": "981db07924b2a826e5d6057794296890a3f647cb7111dcea3b9610278c17848c"
+    },
+    "7": {
+      "terms": 3242,
+      "sha256": "e2ff4aa0034ece771f9305b5c7451f4a97bc09cc23a60d78122758fbbc8a5b9c"
+    },
+    "8": {
+      "terms": 6589,
+      "sha256": "790948640a28e3336f6837ac6a782af7864e1ebc6eeed7dc0d01d62dfc06df33"
+    }
+  },
+  "fibres": [
+    {
+      "lambda": -1,
+      "msolve_input_sha256": "55f0056f354325c5158a6ba83976db4d8c4af9f7a5fc75facd4be044558b1b28",
+      "certificate": {
+        "returncode": 0,
+        "status": "unit_ideal",
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 6
+      }
+    },
+    {
+      "lambda": 1,
+      "msolve_input_sha256": "dfc65237be4fead5d9d8b034fd1fc76d8cb4805718f640bbb6e1740ad3db9452",
+      "certificate": {
+        "returncode": 0,
+        "status": "unit_ideal",
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 6
+      }
+    },
+    {
+      "lambda": 2,
+      "msolve_input_sha256": "d595d08deaa0c3396add8c131295bd31611e02dd913f5c935ca8e873d0602cc6",
+      "certificate": {
+        "returncode": 0,
+        "status": "unit_ideal",
+        "result_sha256": "3820f7d3761aff26945841963098ed97aa9b645b8e3049c170a0eb949fbc9dac",
+        "result_bytes": 6
+      }
+    }
+  ],
+  "conclusion": "the complete declared lambda=-1,1,2 fibres have no common zero of mu_2 through mu_8",
+  "scope": "three fixed fibres on one localized generic channel chart; the generic lambda-line, localization boundaries, other channel charts, and exceptional cubic pencils remain open"
+}

@@ -1,0 +1,64 @@
+{
+  "families": [
+    {
+      "candidate_status": "genuine noninjective classical branch",
+      "construction": "degree-six weighted marked-root incidence",
+      "key": "MR6",
+      "order_five_locus": "generic obstruction; reconstructed quartic closed component is checked by verify_degree_six_order_five_survivor.py",
+      "parameter_ring": "Q[sigma,tau,1/sigma] on the exact-degree chart",
+      "symbol_terms": {
+        "S": 75,
+        "T": 59
+      }
+    },
+    {
+      "candidate_status": "gauge-equivalent obstruction control",
+      "construction": "two-parameter target-symplectic orbit of the normalized linear-quadratic factorization completion",
+      "key": "NF3",
+      "order_five_locus": "empty in the transported c=-9 filtration",
+      "order_five_value": "-49",
+      "parameter_ring": "Q[rho,eta]",
+      "target_shear": [
+        "D -> D+rho*R",
+        "S -> S+eta*T"
+      ]
+    },
+    {
+      "candidate_status": "exact Weyl automorphism control",
+      "construction": "low-degree Hamiltonian suspension",
+      "hamiltonian": "lambda*q1^3/3+mu*q1*q2^2",
+      "key": "HS3",
+      "order_five_locus": "all of A^2",
+      "order_seven_locus": "all of A^2",
+      "parameter_ring": "Q[lambda,mu]"
+    },
+    {
+      "candidate_status": "exact Weyl automorphism control",
+      "connection_coordinate": "U+lambda*v^3/3+mu*R*v^2",
+      "construction": "rank-one fibre map over central R with connection",
+      "key": "RF3",
+      "order_five_locus": "all of A^2",
+      "order_seven_locus": "all of A^2",
+      "parameter_ring": "Q[lambda,mu]",
+      "potential": "lambda*R*v^3/3+mu*R^2*v^2/2"
+    }
+  ],
+  "relative_fibre_connection_complex": {
+    "cohomology_dimensions": [
+      1,
+      0,
+      0
+    ],
+    "dimensions": [
+      35,
+      60,
+      26
+    ],
+    "fitting_0_obstruction_module": "unit ideal",
+    "ranks": [
+      34,
+      26
+    ]
+  },
+  "scope": "four explicit two-parameter classical families; exact Moyal control through order seven for the tame controls; no DC_2 claim"
+}

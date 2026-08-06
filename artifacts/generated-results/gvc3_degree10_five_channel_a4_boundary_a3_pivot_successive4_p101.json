@@ -1,0 +1,190 @@
+{
+  "boundary_linear_pivot_localization": {
+    "A_sha256": "f16279296d2fec90e7fe096ef1f0bcaa25492f3815368671e840820ced378370",
+    "A_terms": 2,
+    "B_sha256": "c783308d9e893ee917ea51fb9c3cf7d562b02ce62819fcc5735234439e194245",
+    "B_terms": 25,
+    "chart": "A*B!=0 (equivalently pivot!=0 and B!=0)",
+    "equation": "A+B*pivot=0",
+    "first_order": 2,
+    "pivot": "a3",
+    "transformed_term_counts": {
+      "3": 648,
+      "4": 7340
+    }
+  },
+  "coefficient_saturation": [
+    "a1",
+    "a2",
+    "a3",
+    "a4"
+  ],
+  "compile_only": false,
+  "compile_seconds": {
+    "2": 0.01564583310391754,
+    "3": 1.2613929589278996,
+    "4": 15.157209582976066
+  },
+  "configuration_discriminant": "lam**3*mu**2 - lam**3*mu - lam**2*mu**3 + lam**2*mu + lam*mu**3 - lam*mu**2",
+  "configuration_parameters": [
+    "lam",
+    "mu"
+  ],
+  "degrees": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "directions": 5,
+  "exact_result": null,
+  "format": "gvc3-many-coherent-channels-research-v1",
+  "groups": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ]
+  ],
+  "linear_pivot_boundary": {
+    "A_sha256": "5f8700b600fe75e0742cbb32ac08480c8aa48bdbe60f18042f0063439883223f",
+    "A_terms": 27,
+    "B_sha256": "aee75e043bdf49f15a4655b3cb646bf42f025024891706d079e9ca6b7825bdf0",
+    "B_terms": 244,
+    "chart": "B=0; the first moment and pivot!=0 force A=0",
+    "equations": "A=B=0 for A+B*pivot=0",
+    "pivot": "a4",
+    "source_order": 3
+  },
+  "linear_pivot_localization": null,
+  "linear_pivot_scan": null,
+  "linear_pivot_scan_max_order": null,
+  "max_order": 4,
+  "modular_results": [
+    {
+      "attempted_cutoff": 4,
+      "basis_preview": "98*a1^3*a2*lam^16*mu^20+36*a1^3*a2*lam^16*mu^19+4*a1^3*a2*lam^16*mu^18+54*a1^3*a2*lam^16*mu^17+30*a1^3*a2*lam^16*mu^16+53*a1^3*a2*lam^16*mu^15+56*a1^3*a2*lam^16*mu^14+53*a1^3*a2*lam^16*mu^13+30*a1^3*a2*lam^16*mu^12+54*a1^3*a2*lam^16*mu^11+4*a1^3*a2*lam^16*mu^10+36*a1^3*a2*lam^16*mu^9+98*a1^3*a2*lam^16*mu^8+19*a1^2*a2^2*lam^16*mu^20+75*a1^2*a2^2*lam^16*mu^19+42*a1^2*a2^2*lam^16*mu^18+62*a1^2*a2^2*lam^16*mu^17+12*a1^2*a2^2*lam^16*mu^16+a1^2*a2^2*lam^16*mu^15+83*a1^2*a2^2*lam^16*mu^14+a1^2*a2^2*lam^16*mu^13+12*a1^2*a2^2*lam^16*mu^12+62*a1^2*a2^2*lam^16*mu^11+42*a1^2*a2^2*lam^16*mu^10+75*a1^2*a2^2*lam^16*mu^9+19*a1^2*a2^2*lam^16*mu^8+12*a1^2*a2^2*lam^15*mu^20+58*a1^2*a2^2*lam^15*mu^19+85*a1^2*a2^2*lam^15*mu^18+87*a1^2*a2^2*lam^15*mu^17+82*a1^2*a2^2*lam^15*mu^16+91*a1^2*a2^2*lam^15*mu^15+79*a1^2*a2^2*lam^15*mu^14+91*a1^2*a2^2*lam^15*mu^13+82*a1^2*a2^2*lam^15*mu^12+87*a1^2*a2^2*lam^15*mu^11+85*a1^2*a2^2*lam^15*mu^10+58*a1^2*a2^2*lam^15*mu^9+12*a1^2*a2^2*lam^15*mu^8+47*a1^2*a2^2*lam^14*mu^20+42*a1^2*a2^2*lam^14*mu^19+72*a1^2*a2^2*lam^14*mu^18+63*a1^2*a2^2*lam^14*mu^17+35*a1^2*a2^2*lam^14*mu^16+45*a1^2*a2^2*lam^14*mu^15+99*a1^2*a2^2*lam^14*mu^14+45*a1^2*a2^2*lam^14*mu^13+35*a1^2*a2^2*lam^14*mu^12+63*a1^2*a2^2*lam^14*mu^11+72*a1^2*a2^2*lam^14*mu^10+42*a1^2*a2^2*lam^14*mu^9+47*a1^2*a2^2*lam^14*mu^8+43*a1^2*a2^2*lam^13*mu^20+90*a1^2*a2^2*lam^13*mu^19+10*a1^2*a2^2*lam^13*mu^18+34*a1^2*a2^2*lam^13*mu^17+75*a1^2*a2^2*lam^13*mu^16+82*a1^2*a2^2*lam^13*mu^15+39*a1^2*a2^2*lam^13*mu^14+82*a1^2*a2^2*lam^13*mu^13+75*a1^2*a2^2*lam^13*mu^12+34*a1^2*a2^2*lam^13*mu^11+10*a1^2*a2^2*lam^13*mu^10+90*a1^2*a2^2*lam^13*mu^9+43*a1^2*a2^2*lam^13*mu^8+51*a1^2*a2^2*lam^12*mu^20+95*a1^2*a2^2*lam^12*mu^19+33*a1^2*a2^2*lam^12*mu^18+92*a1^2*a2^2*lam^12*mu^17+96*a1^2*a2^2*lam^12*mu^16+8*a1^2*a2^2*lam^12*mu^15+58*a1^2*a2^2*lam^12*mu^14+8*a1^2*a2^2*lam^12*mu^13+96*a1^2*a2^2*lam^12*mu^12+92*a1^2*a2^2*lam^12*mu^11+33*a1^2*a2^2*lam^12*mu^10+95*a1^2*a2^2*lam^12*mu^9+51*a1^2*a2^2*lam^12*mu^8+60*a1^2*a2^2*lam^11*mu^20+88*a1^2*a2^2*lam^11*mu^19+21*a1^2*a2^2*lam^11*mu^18+31*a1^2*a2^2*lam^11*mu^17+6*a1^2*a2^2*lam^11*mu^16+51*a1^2*a2^2*lam^11*mu^15+92*a1^2*a2^2*lam^11*mu^14+51*a1^2*a2^2*lam^11*mu^13+6*a1^2*a2^2*lam^11*mu^12+31*a1^2*a2^2*lam^11*mu^11+21*a1^2*a2^2*lam^11*mu^10+88*a1^2*a2^2*lam^11*mu^9+60*a1^2*a2^2*lam^11*mu^8+51*a1^2*a2^2*lam^10*mu^20+95*a1^2*a2^2*lam^10*mu^19+33*a1^2*a2^2*lam^10*mu^18+92*a1^2*a2^2*lam^10*mu^17+96*a1^2*a2^2*lam^10*mu^16+8*a1^2*a2^2*lam^10*mu^15+58*a1^2*a2^2*lam^10*mu^14+8*a1^2*a2^2*lam^10*mu^13+96*a1^2*a2^2*lam^10*mu^12+92*a1^2*a2^2*lam^10*mu^11+33*a1^2*a2^2*lam^10*mu^10+95*a1^2*a2^2*lam^10*mu^9+51*a1^2*a2^2*lam^10*mu^8+43*a1^2*a2^2*lam^9*mu^20+90*a1^2*a2^2*lam^9*mu^19+10*a1^2*a2^2*lam^9*mu^18+34*a1^2*a2^2*lam^9*mu^17+75*a1^2*a2^2*lam^9*mu^16+82*a1^2*a2^2*lam^9*mu^15+39*a1^2*a2^2*lam^9*mu^14+82*a1^2*a2^2*lam^9*mu^13+75*a1^2*a2^2*lam^9*mu^12+34*a1^2*a2^2*lam^9*mu^11+10*a1^2*a2^2*lam^9*mu^10+90*a1^2*a2^2*lam^9*mu^9+43*a1^2*a2^2*lam^9*mu^8+47*a1^2*a2^2*lam^8*mu^20+42*a1^2*a2^2*lam^8*mu^19+72*a1^2*a2^2*lam^8*mu^18+63*a1^2*a2^2*lam^8*mu^17+35*a1^2*a2^2*lam^8*mu^16+45*a1^2*a2^2*lam^8*mu^15+99*a1^2*a2^2*lam^8*mu^14+45*a1^2*a2^2*lam^8*mu^13+35*a1^2*a2^2*lam^8*mu^12+63*a1^2*a2^2*lam^8*mu^11+72*a1^2*a2^2*lam^8*mu^10+42*a1^2*a2^2*lam^8*mu^9+47*a1^2*a2^2*lam^8*mu^8+12*a1^2*a2^2*lam^7*mu^20+58*a1^2*a2^2*lam^7*mu^19+85*a1^2*a2^2*lam^7*mu^18+87*a1^2*a2^2*lam^7*mu^17+82*a1^2*a2^2*lam^7*mu^16+91*a1^2*a2^2*lam^7*mu^15+79*a1^2*a2^2*lam^7*mu^14+91*a1^2*a2^2*lam^7*mu^13+82*a1^2*a2^2*lam^7*mu^12+87*a1^2*a2^2*lam^7*mu^11+85*a1^2*a2^2*lam^7*mu^10+58*a1^2*a2^2*lam^7*mu^9+12*a1^2*a2^2*lam^7*mu^8+19*a1^2*a2^2*lam^6*mu^20+75*a1^2*a2^2*lam^6*mu^19+42*a1^2*a2^2*lam^6*mu^18+62*a1^2*a2^2*lam^6*mu^17+12*a1^2*a2^2*lam^6*mu^16+a1^2*a2^2*lam^6*mu^15+83*a1^2*a2^2*lam^6*mu^14+a1^2*a2^2*lam^6*mu^13+12*a1^2*a2^2*lam^6*mu^12+62*a1^2*a2^2*lam^6*mu^11+42*a1^2*a2^2*lam^6*mu^10+75*a1^2*a2^2*lam^6*mu^9+19*a1^2*a2^2*lam^6*mu^8+a1^2*a2*lam^16*mu^6+87*a1^2*a2*lam^15*mu^7+91*a1^2*a2*lam^14*mu^8+",
+      "basis_sha256": "aafae31544bb5ab938762cf992b3e229a3c36cbbc81b496ddc59342da6ff9e01",
+      "basis_size": null,
+      "cutoff": 0,
+      "dimension": null,
+      "factor_order": [
+        {
+          "expression_text": "a1",
+          "multiplicity": 2,
+          "sha256": "f55ff16f66f43360266b95db6f8fec01d76031054306ae4a4b380598f6cfd114",
+          "terms": 1,
+          "total_degree": 1
+        },
+        {
+          "expression_text": "a2",
+          "multiplicity": 1,
+          "sha256": "2c3a4249d77070058649dbd822dcaf7957586fce428cfb2ca88b94741eda8b07",
+          "terms": 1,
+          "total_degree": 1
+        },
+        {
+          "expression_text": "a4",
+          "multiplicity": 1,
+          "sha256": "4539e4b4889079c2a00afeae0bfc1439840ef2379a1fb81c8ba27361ad476d6b",
+          "terms": 1,
+          "total_degree": 1
+        },
+        {
+          "expression_text": "lam",
+          "multiplicity": 1,
+          "sha256": "7f1b55b860590406f84f9394f4e73356902dad022a8cd6f43221086d3c70699e",
+          "terms": 1,
+          "total_degree": 1
+        },
+        {
+          "expression_text": "mu",
+          "multiplicity": 1,
+          "sha256": "19503ea6785ee1243cd3373fe0d201404089fb7c559d2cd4b025585ee36ff3c3",
+          "terms": 1,
+          "total_degree": 1
+        },
+        {
+          "expression_text": "60*a2 + 143",
+          "multiplicity": 1,
+          "sha256": "27c9a642674853f0f030a2701a6414868b7903171ddabbf7ba531b1924f8ebac",
+          "terms": 2,
+          "total_degree": 1
+        },
+        {
+          "expression_text": "lam - 1",
+          "multiplicity": 1,
+          "sha256": "87e3e538ee767f7342736bfd26fba4d59e9e3edc729b08bd40da2a598427e219",
+          "terms": 2,
+          "total_degree": 1
+        },
+        {
+          "expression_text": "lam - mu",
+          "multiplicity": 1,
+          "sha256": "c9a169d92e72520ccc8539b08b699593ff1179b3824aca59c9642633f6a71de9",
+          "terms": 2,
+          "total_degree": 1
+        },
+        {
+          "expression_text": "mu - 1",
+          "multiplicity": 1,
+          "sha256": "0e9dc34263be52381c75712558c9bb817c802da84c475b520af9fe4ed993d141",
+          "terms": 2,
+          "total_degree": 1
+        },
+        {
+          "expression_text": "19*a1**2*lam**16 + 48*a1*a2*lam**16 - 480*a1*a2*lam**15 + 2160*a1*a2*lam**14 - 5760*a1*a2*lam**13 + 10080*a1*a2*lam**12 - 12096*a1*a2*lam**11 + 10080*a1*a2*lam**10 - 5760*a1*a2*lam**9 + 2160*a1*a2*lam**8 - 480*a1*a2*lam**7 + 48*a1*a2*lam**6 + 38*a2*lam**12 - 456*a2*lam**11 + 2508*a2*lam**10 - 8360*a2*lam**9 + 18810*a2*lam**8 - 30096*a2*lam**7 + 35112*a2*lam**6 - 30096*a2*lam**5 + 18810*a2*lam**4 - 8360*a2*lam**3 + 2508*a2*lam**2 - 456*a2*lam + 38*a2",
+          "multiplicity": 1,
+          "sha256": "99080bdf6bf13b912916e74a18de4e94d4efe1c170cff21775a59e3e72f87d68",
+          "terms": 25,
+          "total_degree": 18
+        }
+      ],
+      "factors_completed": 0,
+      "factors_total": 10,
+      "method": "successive_factor_quotients",
+      "prime": 101,
+      "seconds": 60.01317654096056,
+      "status": "timeout",
+      "steps": [
+        {
+          "factor": "a1",
+          "factor_index": 1,
+          "factor_sha256": "f55ff16f66f43360266b95db6f8fec01d76031054306ae4a4b380598f6cfd114",
+          "generator_predivision_exponents": [
+            1,
+            0
+          ],
+          "input_sha256": "ec884b29b6536a0128307bbbfc6856a22016dd4bfca90b82b64a50d1c846aabe",
+          "seconds": 60.01317654096056,
+          "status": "timeout",
+          "stderr": "",
+          "stdout_tail": ""
+        }
+      ],
+      "unit": 0
+    }
+  ],
+  "moment_term_counts": {
+    "2": 0,
+    "3": 271,
+    "4": 1142
+  },
+  "normalization": "a0=1; first three direction points are infinity, zero, one",
+  "report_quotient_dimension": true,
+  "saturation_method": "successive",
+  "scope": "one declared direction-partition and nonzero-coefficient chart",
+  "specialization": {},
+  "status": "bounded modular discovery; not a characteristic-zero theorem"
+}

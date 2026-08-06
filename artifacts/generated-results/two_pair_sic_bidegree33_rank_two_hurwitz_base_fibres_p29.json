@@ -1,0 +1,624 @@
+{
+  "format": "two-pair-sic-bidegree33-rank-two-hurwitz-base-fibres-v1",
+  "field": "GF(29)",
+  "equations": [
+    "H",
+    "K",
+    "J6",
+    "J7",
+    "J8",
+    "J9"
+  ],
+  "open_localizer": "b0*P1*lc_z(N4)*lc_z(S5)*V*R1",
+  "prime_guard": "29>3*9",
+  "polynomial_profiles": {
+    "H": {
+      "terms": 687,
+      "total_degree": 26,
+      "variable_degrees": {
+        "b0": 8,
+        "q": 18,
+        "lambda": 18
+      }
+    },
+    "K": {
+      "terms": 46755,
+      "total_degree": 118,
+      "variable_degrees": {
+        "b0": 37,
+        "q": 81,
+        "lambda": 81
+      }
+    },
+    "J6": {
+      "terms": 61552,
+      "total_degree": 130,
+      "variable_degrees": {
+        "b0": 41,
+        "q": 89,
+        "lambda": 89
+      }
+    },
+    "J7": {
+      "terms": 117609,
+      "total_degree": 162,
+      "variable_degrees": {
+        "b0": 51,
+        "q": 111,
+        "lambda": 111
+      }
+    },
+    "J8": {
+      "terms": 200123,
+      "total_degree": 195,
+      "variable_degrees": {
+        "b0": 62,
+        "q": 133,
+        "lambda": 133
+      }
+    },
+    "J9": {
+      "terms": 213719,
+      "total_degree": 199,
+      "variable_degrees": {
+        "b0": 63,
+        "q": 136,
+        "lambda": 136
+      }
+    }
+  },
+  "descent_factor_removal": {
+    "6": {
+      "removed_P1_power": 4,
+      "removed_determinant_factors": {
+        "b0": 1,
+        "lc_z_N4": 1,
+        "lc_z_S5": 2
+      }
+    },
+    "7": {
+      "removed_P1_power": 5,
+      "removed_determinant_factors": {
+        "b0": 2,
+        "lc_z_N4": 1,
+        "lc_z_S5": 2
+      }
+    },
+    "8": {
+      "removed_P1_power": 5,
+      "removed_determinant_factors": {
+        "b0": 2,
+        "lc_z_N4": 1,
+        "lc_z_S5": 2
+      }
+    },
+    "9": {
+      "removed_P1_power": 6,
+      "removed_determinant_factors": {
+        "b0": 2,
+        "lc_z_N4": 1,
+        "lc_z_S5": 2
+      }
+    }
+  },
+  "counts": {
+    "unit": 28,
+    "survivor": 1,
+    "timeout": 0
+  },
+  "fibres": [
+    {
+      "q": 0,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "01d28798c9d7077e2990c5bd706fb104114b54b25dbbece1a466db18601933b0",
+      "specialized_terms": {
+        "H": 99,
+        "K": 1650,
+        "J6": 1989,
+        "J7": 3061,
+        "J8": 4364,
+        "J9": 4550
+      },
+      "localizer_terms": 1812,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 1,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "9c82e6a15b480579edcfff89577eb5874e5515d796baa37eca53065f3aba2cc6",
+      "specialized_terms": {
+        "H": 96,
+        "K": 1656,
+        "J6": 1986,
+        "J7": 3058,
+        "J8": 4374,
+        "J9": 4549
+      },
+      "localizer_terms": 1806,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 2,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "271363b237ad7ea813767022bb557202ac89d1a8a92ddee23715030637e74194",
+      "specialized_terms": {
+        "H": 97,
+        "K": 1650,
+        "J6": 1985,
+        "J7": 3038,
+        "J8": 4377,
+        "J9": 4572
+      },
+      "localizer_terms": 1822,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 3,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "a47f6bce6185e7cfd9a834fd0573827e7dacd23e29ac0a180d9ce518ec4a4986",
+      "specialized_terms": {
+        "H": 97,
+        "K": 1657,
+        "J6": 2007,
+        "J7": 3045,
+        "J8": 4391,
+        "J9": 4567
+      },
+      "localizer_terms": 1813,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 4,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "30f8eb40714482e8d66ab76f8e1fa1b4c7bb4e79b70ea7e5296438c5dd110dfe",
+      "specialized_terms": {
+        "H": 98,
+        "K": 1665,
+        "J6": 1987,
+        "J7": 3045,
+        "J8": 4365,
+        "J9": 4561
+      },
+      "localizer_terms": 1809,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 5,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "2b032d544de9413f4bcea3971dbbf0feab40aa5e4379b417ba3e85724d6598ff",
+      "specialized_terms": {
+        "H": 95,
+        "K": 1661,
+        "J6": 1996,
+        "J7": 3051,
+        "J8": 4391,
+        "J9": 4570
+      },
+      "localizer_terms": 1803,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 6,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "1c7fed614959981817ced21f98e1292a7c26f06fbd2a2b63dd88b8c65f4f5a2d",
+      "specialized_terms": {
+        "H": 96,
+        "K": 1650,
+        "J6": 1985,
+        "J7": 3053,
+        "J8": 4360,
+        "J9": 4552
+      },
+      "localizer_terms": 1814,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 7,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "d34edf2cc8df32d9dbeb5b6d9e69a40897b9178f9ca4f184cdb5da5c8e849c0e",
+      "specialized_terms": {
+        "H": 96,
+        "K": 1643,
+        "J6": 1977,
+        "J7": 3047,
+        "J8": 4383,
+        "J9": 4554
+      },
+      "localizer_terms": 1803,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 8,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "3ae379549ebb0e2dc1a262cb06b0f288a9fb0a16c8ee80980eef54123ceba452",
+      "specialized_terms": {
+        "H": 95,
+        "K": 1645,
+        "J6": 1973,
+        "J7": 3066,
+        "J8": 4374,
+        "J9": 4552
+      },
+      "localizer_terms": 1819,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 9,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "5b7cacd0f3e69bb55a60715d14c2d0ae2befd9315e814e06a073f5a92b556ab0",
+      "specialized_terms": {
+        "H": 96,
+        "K": 1650,
+        "J6": 1998,
+        "J7": 3066,
+        "J8": 4366,
+        "J9": 4575
+      },
+      "localizer_terms": 1814,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 10,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "842c75014e46c26b765b2e0fd65aec2bb525fa4d4050209eed92342009624d53",
+      "specialized_terms": {
+        "H": 95,
+        "K": 1662,
+        "J6": 1987,
+        "J7": 3068,
+        "J8": 4355,
+        "J9": 4567
+      },
+      "localizer_terms": 1819,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 11,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "2cacae5075b668dbbdbf782d26d14d79fd90293bbe717aef39cb33fe7d8474e2",
+      "specialized_terms": {
+        "H": 93,
+        "K": 1646,
+        "J6": 1986,
+        "J7": 3066,
+        "J8": 4362,
+        "J9": 4571
+      },
+      "localizer_terms": 1810,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 12,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "5858734eb2d249a35a39695662862b1a957e1933d1eb38bf4d2f50666ebf2cf1",
+      "specialized_terms": {
+        "H": 97,
+        "K": 1642,
+        "J6": 1971,
+        "J7": 3057,
+        "J8": 4378,
+        "J9": 4581
+      },
+      "localizer_terms": 1804,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 13,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "a464c3e7463a2be49203c12dd76650f9b699f88976cb9ee7b5749cd5dc252162",
+      "specialized_terms": {
+        "H": 96,
+        "K": 1646,
+        "J6": 1995,
+        "J7": 3054,
+        "J8": 4370,
+        "J9": 4578
+      },
+      "localizer_terms": 1814,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 14,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "9e394970b8fe7e643957cc8e92528e79369c380369dfe42905d555997d9965a4",
+      "specialized_terms": {
+        "H": 96,
+        "K": 1635,
+        "J6": 1988,
+        "J7": 3057,
+        "J8": 4349,
+        "J9": 4563
+      },
+      "localizer_terms": 1800,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 15,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "ed8526ebdecbac8f03986db81e8e08485687f84d81009b6e1d822758791e13ce",
+      "specialized_terms": {
+        "H": 97,
+        "K": 1650,
+        "J6": 1991,
+        "J7": 3057,
+        "J8": 4372,
+        "J9": 4566
+      },
+      "localizer_terms": 1807,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 16,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "da6de02bdf60a62afdfa29f8ef3b2a455055c20268958429cbdd775666ea45b2",
+      "specialized_terms": {
+        "H": 96,
+        "K": 1647,
+        "J6": 1973,
+        "J7": 3049,
+        "J8": 4385,
+        "J9": 4560
+      },
+      "localizer_terms": 1814,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 17,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "b9d3ca7a216c06e4e40f445375b575e913710f26341172c3f22017938d72223b",
+      "specialized_terms": {
+        "H": 94,
+        "K": 1648,
+        "J6": 1984,
+        "J7": 3045,
+        "J8": 4361,
+        "J9": 4571
+      },
+      "localizer_terms": 1799,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 18,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "46c0c6f0a97dd92674ed098a14995dcbb42695c77662ec4991ba8ecfa22071c8",
+      "specialized_terms": {
+        "H": 95,
+        "K": 1612,
+        "J6": 1948,
+        "J7": 2986,
+        "J8": 4287,
+        "J9": 4472
+      },
+      "localizer_terms": 1773,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 19,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "3cee1058189ba6e7cbb268bb919aed1a710d21a21f87b9b5992ed690213915bb",
+      "specialized_terms": {
+        "H": 93,
+        "K": 1668,
+        "J6": 1976,
+        "J7": 3039,
+        "J8": 4376,
+        "J9": 4576
+      },
+      "localizer_terms": 1818,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 20,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "cd7ccef7d55591753fbb4f1306db571a0ed6511145cb825e36e47c052a1149f2",
+      "specialized_terms": {
+        "H": 95,
+        "K": 1650,
+        "J6": 1987,
+        "J7": 3060,
+        "J8": 4361,
+        "J9": 4574
+      },
+      "localizer_terms": 1811,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 21,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "8a8b8e2c048fda8c79fcd245339921ecb14e5699c71fa2afde69a08a0a13e8fb",
+      "specialized_terms": {
+        "H": 95,
+        "K": 1653,
+        "J6": 1996,
+        "J7": 3067,
+        "J8": 4387,
+        "J9": 4573
+      },
+      "localizer_terms": 1740,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 22,
+      "status": "survivor",
+      "basis_size": 3,
+      "first_degree": 1,
+      "source_sha256": "f83f6a4ca6f7b2019c46dbc0dff0c3947b5d1c20fd755f270b18efac495f1e8d",
+      "specialized_terms": {
+        "H": 94,
+        "K": 1656,
+        "J6": 1989,
+        "J7": 3069,
+        "J8": 4376,
+        "J9": 4578
+      },
+      "localizer_terms": 1810,
+      "basis": "lambda-3*s+13,\nb0+s-2,\ns^2+9*s+13"
+    },
+    {
+      "q": 23,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "05bcfa6981a136a79bfe55afa1f537b9256a871a36d4f1593d9c1f30b5d2dd3c",
+      "specialized_terms": {
+        "H": 94,
+        "K": 1647,
+        "J6": 1971,
+        "J7": 3044,
+        "J8": 4364,
+        "J9": 4555
+      },
+      "localizer_terms": 1814,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 24,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "abf6bdb72f221d1a014ea882bd9b2bbafaa8e614504d25f7f8d0c9f32a1435c2",
+      "specialized_terms": {
+        "H": 98,
+        "K": 1648,
+        "J6": 2007,
+        "J7": 3058,
+        "J8": 4382,
+        "J9": 4548
+      },
+      "localizer_terms": 1809,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 25,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "5ed8fc92977ac576e3518652b8077f33164a799e4d248218a826b4aecf1ceba4",
+      "specialized_terms": {
+        "H": 95,
+        "K": 1660,
+        "J6": 1985,
+        "J7": 3048,
+        "J8": 4377,
+        "J9": 4566
+      },
+      "localizer_terms": 1815,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 26,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "954bc6d64eff9fd568c54a4cf0c5eb8d7170ef4b01c82d9bb9f31bda355091e2",
+      "specialized_terms": {
+        "H": 96,
+        "K": 1638,
+        "J6": 1952,
+        "J7": 3026,
+        "J8": 4346,
+        "J9": 4529
+      },
+      "localizer_terms": 1795,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 27,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "304d503aa6e33718e47b3181d4f750e35d4ee855c7e36ea1e1678c04d884d7bf",
+      "specialized_terms": {
+        "H": 94,
+        "K": 1639,
+        "J6": 1989,
+        "J7": 3060,
+        "J8": 4378,
+        "J9": 4554
+      },
+      "localizer_terms": 1815,
+      "basis": "_[1]=1"
+    },
+    {
+      "q": 28,
+      "status": "unit",
+      "basis_size": 1,
+      "first_degree": 0,
+      "source_sha256": "a3e9141327c12e5e1310ece3e57fb0430d71cdf643edb960abea569e94406a6e",
+      "specialized_terms": {
+        "H": 92,
+        "K": 1651,
+        "J6": 1977,
+        "J7": 3080,
+        "J8": 4373,
+        "J9": 4546
+      },
+      "localizer_terms": 1811,
+      "basis": "_[1]=1"
+    }
+  ],
+  "conclusion": "bounded exact modular routing only; unit fibres exclude geometric points with that GF(p)-rational q-coordinate on the displayed open, but do not exclude q in extension fields or imply a characteristic-zero unit ideal",
+  "small_lift_rejection": {
+    "symmetric_base_lift": {
+      "q": -7,
+      "b0": -8,
+      "lambda": -12,
+      "z": -5
+    },
+    "reconstructed_coefficients": {
+      "a1": "-7",
+      "a2": "5/8",
+      "a3": "346616145/976",
+      "b0": "-8",
+      "b1": "56",
+      "b2": "-672"
+    },
+    "mu2": "0",
+    "mu3": "20248589552328608490/61",
+    "conclusion": "the symmetric small lift is not a QQ moment-zero point"
+  }
+}

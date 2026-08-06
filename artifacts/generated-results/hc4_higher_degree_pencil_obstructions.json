@@ -1,0 +1,214 @@
+{
+  "all_degree_rank_one": {
+    "conclusion": "HC4RSD15--HC4RSD16 apply without a degree bound; rank one is HC2/JC2",
+    "normal_form": "A=h(x)+affine",
+    "pencil_face": "h''(x)*det Hess_(y,z,w)(psi)=0"
+  },
+  "calibrations": {
+    "binary_null_pair_minor_power": 2,
+    "cubic_border_root_charts": [
+      "111",
+      "21",
+      "3"
+    ],
+    "double_double_next_face": "-3*b^4*x^2*y^2*z^2/4",
+    "fixed_cylinder_determinant": "Jac(c,L)^2",
+    "moving_chart_s2_y_coefficient": "3*m*G_xx*C_r^2",
+    "moving_cubic_active_determinant": "-z^3",
+    "moving_cubic_kernel": [
+      0,
+      1,
+      0,
+      "-z"
+    ],
+    "quadruple_simple_next_face": "6*b^3*x^8*y^2*z/5",
+    "quartic_border_root_charts": [
+      "1111",
+      "211",
+      "22",
+      "31",
+      "4"
+    ],
+    "quintic_border_root_charts": [
+      "11111",
+      "2111",
+      "221",
+      "311",
+      "32",
+      "41",
+      "5"
+    ],
+    "rank_one_pencil_coefficient": "h''*det(E3)",
+    "sextic_root_partitions_closed": [
+      "111111",
+      "21111",
+      "3111",
+      "2211",
+      "411",
+      "321",
+      "51",
+      "222",
+      "42",
+      "33"
+    ],
+    "triple_double_next_face": "-8*b^3*x^7*y^3*z/15"
+  },
+  "constant_kernel_cubic": {
+    "closed_border_classes": [
+      "homogeneous c of every degree",
+      "arbitrary c of degree at most four",
+      "degree-five c with non-pure leading quintic",
+      "arbitrary-degree c with squarefree leading binary form",
+      "arbitrary-degree c with one double leading root and all others simple",
+      "degree-six c with non-pure leading sextic"
+    ],
+    "companion_closure": "HC4BL5 closes the pure-fifth degree-five chart in the separate quintic bordered-lemma checker",
+    "fixed_ruling": "c is a cylinder; affine c is triangular over HC2, while nonaffine c forces D=z*L+M and det Hess(psi)=Jac(c,L)^2",
+    "form": "A=a(x,y,z), psi=w*c(x,y,z)+D(x,y,z)",
+    "quartic_schur_charts": {
+      "1111": "g=0, q=0",
+      "211": "g=0, q=0",
+      "22": "g=b*x*y, q=b^2/4, then b=0 on the next face",
+      "31": "g=0, q=0",
+      "4": "passive cube/square/line charts all force a fixed cylinder"
+    },
+    "quintic_schur_charts": {
+      "11111/2111": "simple-root count forces g=0 and q=0",
+      "221": "radical(g,q)",
+      "311": "radical(g,q)",
+      "32": "g=b*x^2*y, q=11*b^2*x/30, then b=0",
+      "41": "g=b*x^2*y, q=b^2*y/5, then b=0"
+    },
+    "residual": "genuinely moving nonhomogeneous ruling of degree at least seven; the pure-sixth branch closes in companion HC4RSD29--HC4RSD32 checkers",
+    "root_valuation_sieve": {
+      "consequence": "if n<m/2 and C is nonzero, polynomial Schur divisibility fails",
+      "determinant_order": "3*m-2",
+      "numerator_order": "2*n+2*m-2",
+      "resonance": "C=d^2*m+d^2*n^2-2*d*e*m*n-2*d*e*m-d*m^2-d*m+e^2*m^2+2*e*m^2+m^2"
+    },
+    "sextic_schur_charts": {
+      "2211/411": "unit first-face ideal",
+      "222": "e=4 radical(g); unique e=3 solution dies in the weighted face",
+      "3111": "root-weight sum exceeds e in every transverse degree",
+      "321": "unit at e=4 and radical(g) at the resonant e=3 face",
+      "33": "e=4 scalar solution with scalar z^3 and the e=3 two-parameter solution die in weighted faces",
+      "42": "e=4 two-parameter solution with scalar z^3 and the e=3 scalar solution die in weighted faces",
+      "51": "unique e=4 Schur solution and scalar z^3 tail die in the full weighted face"
+    },
+    "synchronization": "F=Hess(a)|T and G=Hess(c)|T are proportional rank-one forms over the fraction field and have one common ruling",
+    "tangent_pencil": "det(E+s*F+w*G)=unit on T=ker(dc)",
+    "universal_field_identity": "det Hess_(tau,x,y,z)(tau*c)=-tau^2*grad(c)^T*adj(Hess(c))*grad(c)"
+  },
+  "cubic_leading_rank_three": {
+    "faces": {
+      "s0_after_U_X_zero": "Z^2*(psi_xw^2-psi_ww*psi_xx)=delta",
+      "s1_after_U_X_zero": "-G_xx*Z^2*psi_ww=0",
+      "s2": "(X-G_xz*U)^2+G_xx*U*(2*Z-A_zz*U)=0",
+      "s3": "v^T*S*v=0"
+    },
+    "moving_chart": {
+      "coordinate": "r=w+b'(z)*y",
+      "integrated_base": "psi=y*C(x,z,r)+D(x,z,r)",
+      "result": "no genuinely moving leading-rank-three cubic direction survives",
+      "s2_y_coefficient": "3*b''*G_xx*C_r^2",
+      "unit_chain": [
+        "C_r=0",
+        "C_x=0",
+        "D_rr=0",
+        "D_xr and C'(z)+b''*D_r are units",
+        "d_x(C'(z)+b''*D_r)=b''*D_xr != 0, contradiction"
+      ]
+    },
+    "moving_kernel": "v=(0,1,0,-b'(z))",
+    "normal_forms": [
+      "A=a(x,y,z)+affine(w) (constant kernel)",
+      "A=w*z+y*b(z)+G(x,z), deg(b)<=2 (exceptional)"
+    ],
+    "residual": "A=a(x,y,z) and psi=w*b(x,y,z)+C(x,y,z), with grad(b)^T*adj(Hess(a))*grad(b)=0"
+  },
+  "format": "hc4-higher-degree-pencil-obstructions-v8",
+  "global_pencil": {
+    "base": "S=Hess(psi), det(S)=delta in K^*",
+    "direction": "T=Hess(A)",
+    "equivalence": "det(S+s*T)=delta iff det(I+s*N)=1 iff N is nilpotent",
+    "extra_structure": [
+      "N^T*S=S*N",
+      "S and S*N are Hessians"
+    ],
+    "relative_endomorphism": "N=S^{-1}*T=adj(S)*T/delta"
+  },
+  "open_frontier": [
+    "constant-kernel cubic packet with a repeated-root leading border form of degree at least seven",
+    "cubic directions of leading Hessian rank at most two",
+    "directions of generic Hessian ranks two and three in higher degree",
+    "matrix pivots and direct degree-five HC4"
+  ],
+  "status": [
+    {
+      "id": "HC4RSD17",
+      "kind": "exact theorem",
+      "result": "the relative Hessian endomorphism is polynomial, nilpotent, self-adjoint for the base Hessian metric, and Hessian-integrable",
+      "scope": "arbitrary four-variable constant-Hessian pencils"
+    },
+    {
+      "id": "HC4RSD18",
+      "kind": "hybrid theorem",
+      "result": "complete reduction to HC2 or the exact JC2 cotangent packet",
+      "scope": "pencil directions of generic Hessian rank one in every degree"
+    },
+    {
+      "id": "HC4RSD19",
+      "kind": "hybrid theorem",
+      "result": "the moving-kernel normal form is impossible; the sole residual is the constant-kernel ternary Hessian-eikonal packet",
+      "scope": "cubic directions whose leading homogeneous Hessian has rank three"
+    },
+    {
+      "id": "HC4RSD20",
+      "kind": "exact theorem",
+      "result": "the tangent Hessians of the cubic direction and border coefficient synchronize to one ruling; every fixed ruling reduces to HC2 or the exact JC2 cotangent packet",
+      "scope": "residual constant-kernel leading-rank-three cubic packet"
+    },
+    {
+      "id": "HC4RSD21",
+      "kind": "hybrid theorem",
+      "result": "the universal-field equation forces a fixed cylinder, so the corresponding cubic eikonal packets reduce to HC2 or JC2",
+      "scope": "homogeneous border coefficients in every degree and arbitrary border coefficients of degree at most three"
+    },
+    {
+      "id": "HC4RSD22",
+      "kind": "hybrid theorem",
+      "result": "the binary quartic Schur equation and all fourth-power-top correction charts force a fixed cylinder, hence HC2 or JC2",
+      "scope": "arbitrary border coefficients c of degree at most four"
+    },
+    {
+      "id": "HC4RSD23",
+      "kind": "hybrid theorem",
+      "result": "simple-root vanishing, the repeated-root Schur ideals, and two immutable next-face coefficients force a fixed cylinder",
+      "scope": "degree-five border coefficients whose leading binary quintic is not a fifth power"
+    },
+    {
+      "id": "HC4RSD25",
+      "kind": "hybrid theorem",
+      "result": "the simple-root square and degree deficit kill every transverse layer, forcing a fixed cylinder",
+      "scope": "arbitrary-degree border coefficients with squarefree leading binary form"
+    },
+    {
+      "id": "HC4RSD26",
+      "kind": "hybrid theorem",
+      "result": "the double-root valuation gap adds the repeated root to the simple-root vanishing set, forcing every transverse layer to zero",
+      "scope": "arbitrary-degree border coefficients whose leading binary form has exactly one double root and all other roots simple"
+    },
+    {
+      "id": "HC4RSD27",
+      "kind": "exact theorem",
+      "result": "an explicit resonance polynomial C(d,m,e,n) gives a root-order sieve for every transverse degree e and closes the sextic 3111 stratum",
+      "scope": "the first nonbinary weighted face over an arbitrary root of multiplicity m in a degree-d binary leading form"
+    },
+    {
+      "id": "HC4RSD28",
+      "kind": "hybrid theorem",
+      "result": "the valuation sieve and seven exact weighted Schur charts force a fixed cylinder; only the pure-sixth top remains",
+      "scope": "degree-six border coefficients whose leading binary sextic is not a sixth power"
+    }
+  ]
+}

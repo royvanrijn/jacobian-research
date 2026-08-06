@@ -1,0 +1,86 @@
+{
+  "counts": {
+    "errors": 0,
+    "exceptional": 3,
+    "order_five_consistent": 2
+  },
+  "errors": [],
+  "exceptional_points": [
+    {
+      "order_five_consistent": true,
+      "sigma": 6,
+      "signature": [
+        118,
+        8,
+        61,
+        68,
+        68
+      ],
+      "strong_rank_drop": false,
+      "tau": 41
+    },
+    {
+      "order_five_consistent": true,
+      "sigma": 25,
+      "signature": [
+        118,
+        8,
+        61,
+        68,
+        68
+      ],
+      "strong_rank_drop": false,
+      "tau": 51
+    },
+    {
+      "order_five_consistent": false,
+      "sigma": 56,
+      "signature": [
+        118,
+        8,
+        61,
+        67,
+        68
+      ],
+      "strong_rank_drop": true,
+      "tau": 5
+    }
+  ],
+  "generic_signature": [
+    118,
+    8,
+    61,
+    68,
+    69
+  ],
+  "order_five_consistent_points": [
+    {
+      "order_five_consistent": true,
+      "sigma": 6,
+      "signature": [
+        118,
+        8,
+        61,
+        68,
+        68
+      ],
+      "strong_rank_drop": false,
+      "tau": 41
+    },
+    {
+      "order_five_consistent": true,
+      "sigma": 25,
+      "signature": [
+        118,
+        8,
+        61,
+        68,
+        68
+      ],
+      "strong_rank_drop": false,
+      "tau": 51
+    }
+  ],
+  "parameter_points": 3721,
+  "prime": 61
+}
