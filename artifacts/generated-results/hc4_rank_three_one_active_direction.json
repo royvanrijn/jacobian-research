@@ -1,0 +1,10 @@
+{
+  "scope": "rank-three [4] one-active-direction family A=xy+F(x)z+R(x,w)",
+  "status": "moving kernel impossible",
+  "conclusion": "F''=0",
+  "identities": {
+    "s2": "coefficient of z is 3 F'' R_ww P_u^2; then P_w^2",
+    "s1": "-(F'' Q_u+H')^2 Q_uu R_ww",
+    "detS": "-(F'' Q_u+H')^2 (Q_uu Q_ww-Q_uw^2)"
+  }
+}
