@@ -1,0 +1,19 @@
+{
+  "scope": "global smooth-developable obstruction for scalar HC4 reverse Schur",
+  "status": "exact algebraic bridge verified",
+  "theorems": {
+    "HC4RSD52": "polynomial submersion plus bordered-Hessian zero implies a constant cylinder direction",
+    "HC4RSD53": "the complete residual scalar reverse-Schur branch reduces to HC2 or the exact JC2 cotangent endpoint"
+  },
+  "identities": {
+    "block_determinant": "det[[E+wG,p],[p^T,0]]=-p^T adj(E+wG)p",
+    "quadratic_coefficient": "[w^2]det=-p^T adj(G)p",
+    "gradient_zero": "p=0 forces determinant zero",
+    "bordered_hessian": "det[[G,p],[p^T,0]]=-p^T adj(G)p"
+  },
+  "external_inputs": [
+    "classical Bertini irreducibility for non-composite polynomials",
+    "classification of irreducible projective developable surfaces in P3",
+    "singularity of a non-planar tangent developable along its edge of regression"
+  ]
+}
