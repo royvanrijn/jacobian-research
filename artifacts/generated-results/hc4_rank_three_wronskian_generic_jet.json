@@ -1,0 +1,13 @@
+{
+  "scope": "generic nonlinear-generator jet for moving rank-three [4]",
+  "status": "Wronskian identities verified",
+  "identities": {
+    "s2_t_coefficient": "3 Theta Lambda C_u^2",
+    "s1": "-Lambda E_uu (Theta E_u+B)^2",
+    "det_after_Euu_zero": "(E_u_tau)^2 (Theta E_u+B)^2"
+  },
+  "parameters": {
+    "Theta": "beta",
+    "Lambda": "Aww*U+Rww"
+  }
+}
