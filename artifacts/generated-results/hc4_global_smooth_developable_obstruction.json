@@ -9,7 +9,8 @@
     "block_determinant": "det[[E+wG,p],[p^T,0]]=-p^T adj(E+wG)p",
     "quadratic_coefficient": "[w^2]det=-p^T adj(G)p",
     "gradient_zero": "p=0 forces determinant zero",
-    "bordered_hessian": "det[[G,p],[p^T,0]]=-p^T adj(G)p"
+    "bordered_hessian": "det[[G,p],[p^T,0]]=-p^T adj(G)p",
+    "gauss_differential": "p^T u=0 and G u=alpha p imply d gamma(u)=alpha gamma"
   },
   "external_inputs": [
     "classical Bertini irreducibility for non-composite polynomials",

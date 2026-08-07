@@ -162,12 +162,43 @@ The bordered Hessian of \(F\) is
 \]
 
 The classical bordered-Hessian criterion says exactly that a smooth implicit
-surface satisfying (3.1) is developable.  Equivalently, its projective tangent
-plane map has rank at most one.
+surface satisfying (3.1) is developable.  Here is the corresponding Gauss-map
+calculation.
+
+At a smooth point put \(p=\nabla F\), \(H=\operatorname{Hess}F\).  The
+tangent space is \(p^\perp\), and (3.1) says that the restriction of the
+second fundamental form \(H\) to \(p^\perp\) is singular.  Hence there is
+a nonzero tangent vector \(u\) and a scalar \(\alpha\) with
+
+\[
+p^{\mathsf T}u=0,
+\qquad
+Hu=\alpha p.
+\tag{3.2}
+\]
+
+The projective tangent-plane map on the affine chart is
+
+\[
+\gamma(x)=[p:-x^{\mathsf T}p]\in(\mathbb P^3)^*.
+\]
+
+Along \(u\),
+
+\[
+d\gamma_x(u)
+=[Hu:-u^{\mathsf T}p-x^{\mathsf T}Hu]
+=\alpha[p:-x^{\mathsf T}p],
+\tag{3.3}
+\]
+
+which is zero in projective tangent space.  Therefore \(\gamma\) has rank
+at most one.  Its image has dimension zero only for a plane; otherwise its
+closure is a curve.
 
 Let \(X\subset\mathbb P^3\) be the projective closure of \(S\).  Irreducibility
-of \(F\) implies irreducibility of \(X\), and developability on the dense
-affine open makes \(X\) a projective developable surface.
+of \(F\) implies irreducibility of \(X\), and the rank calculation on the
+dense affine open makes \(X\) a projective developable surface.
 
 ## 4. Smooth affine developables can only be cones at infinity
 

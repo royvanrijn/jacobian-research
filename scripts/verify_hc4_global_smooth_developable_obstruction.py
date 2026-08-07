@@ -77,6 +77,36 @@ bordered_c = sp.Matrix.vstack(
 ufe = sp.expand((p.T * G.adjugate() * p)[0])
 assert sp.expand(bordered_c.det(method="domain-ge") + ufe) == 0
 
+# Gauss-map differential identity.  At an affine point x, the projective
+# tangent-plane vector is gamma=(p,-x.p).  If u is tangent and G*u=alpha*p,
+# then d gamma(u) is alpha*gamma.  The displayed residual makes the
+# implication an exact polynomial identity rather than a differential-geometric
+# assertion hidden from the checker.
+u0, u1, u2, alpha = sp.symbols("u0 u1 u2 alpha")
+x0, x1, x2 = sp.symbols("x0 x1 x2")
+u = sp.Matrix([u0, u1, u2])
+x = sp.Matrix([x0, x1, x2])
+gauss_residual = sp.Matrix.vstack(
+    G * u - alpha * p,
+    sp.Matrix(
+        [
+            -(u.T * p)[0]
+            - (x.T * (G * u - alpha * p))[0]
+        ]
+    ),
+)
+direct_differential_residual = sp.Matrix.vstack(
+    G * u - alpha * p,
+    sp.Matrix(
+        [
+            -(u.T * p)[0]
+            - (x.T * G * u)[0]
+            + alpha * (x.T * p)[0]
+        ]
+    ),
+)
+assert sp.simplify(gauss_residual - direct_differential_residual) == sp.zeros(4, 1)
+
 result = {
     "scope": "global smooth-developable obstruction for scalar HC4 reverse Schur",
     "status": "exact algebraic bridge verified",
@@ -85,6 +115,7 @@ result = {
         "quadratic_coefficient": "[w^2]det=-p^T adj(G)p",
         "gradient_zero": "p=0 forces determinant zero",
         "bordered_hessian": "det[[G,p],[p^T,0]]=-p^T adj(G)p",
+        "gauss_differential": "p^T u=0 and G u=alpha p imply d gamma(u)=alpha gamma",
     },
     "external_inputs": [
         "classical Bertini irreducibility for non-composite polynomials",
