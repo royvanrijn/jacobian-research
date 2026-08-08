@@ -1,0 +1,13 @@
+{
+  "scope": "HC4RSD72 polynomial-graph moving ternary scroll",
+  "status": "exact generic-2-jet determinant identities verified",
+  "identities": {
+    "linear_pencil_coefficient": "[z] det(L''-zH'') = P_h*((a''h+c'')P_h-3s a'q'P_h-2a'q'Q_h-2a'P_t)",
+    "reduced_legendre_determinant": "det L''=-(P'+q'Q_h)^2 Q_hh"
+  },
+  "consequence": "every final rank-three [4] HC4 packet whose gradient image is a polynomial graph reduces to the already closed linearly-dependent/fixed-kernel branch",
+  "external_inputs": [
+    "dimension-three quasi-translation classification",
+    "existence and uniqueness up to affine change of closed/generative polynomials"
+  ]
+}
