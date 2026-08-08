@@ -41,6 +41,18 @@ ryy = a*pyy + b*qyy
 BR = sp.expand(ry**2*rxx - 2*rx*ry*rxy + rx**2*ryy)
 assert sp.Poly(BR, a, b).total_degree() == 3
 
+# Exact nonlinear target-shear law Q -> Q - phi(P).
+phi1, phi2 = sp.symbols("phi1 phi2")
+sx = qx - phi1*px
+sy = qy - phi1*py
+sxx = qxx - phi1*pxx - phi2*px**2
+sxy = qxy - phi1*pxy - phi2*px*py
+syy = qyy - phi1*pyy - phi2*py**2
+Bshear = sp.expand(sy**2*sxx - 2*sx*sy*sxy + sx**2*syy)
+Cpencil = sp.expand(BR.subs({a: -phi1, b: 1}))
+J = px*qy - py*qx
+assert sp.factor(Bshear - Cpencil + phi2*J**2) == 0
+
 result = {
     "scope": "JC2 dual-variable Schur descent",
     "status": "exact identities verified",
@@ -48,6 +60,7 @@ result = {
         "minor": "det Hess(uP+sQ)=-u B(P)-s B(P;Q)",
         "repair": "det Hess psi=-u B(P)-(mu+lambda Q)B(P;Q)-lambda c^2",
         "target_pencil": "B(aP+bQ) is homogeneous cubic in (a,b)",
+        "target_shear": "B(Q-phi(P))=C_F(-phi'(P),1)-J(P,Q)^2 phi''(P)",
     },
 }
 OUT.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
