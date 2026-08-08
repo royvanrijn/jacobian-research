@@ -177,30 +177,120 @@ Consequently any `JC2` counterexample must satisfy the global obstruction
 Over an algebraically closed base the same statement holds for every constant
 projective target direction.
 
-## 4. Interpretation
+## 4. Curvature under a triangular target shear
+
+The constant-direction criterion is only the first level.  The natural
+Jung/Magnus move is a polynomial target shear
+
+\[
+\widetilde Q=Q-\phi(P).
+\tag{4.1}
+\]
+
+Put
+
+\[
+C_F(a,b):=\mathcal B(aP+bQ),
+\tag{4.2}
+\]
+
+where `a,b` are treated as constants.  Since
+
+\[
+\nabla\widetilde Q=\nabla Q-\phi'(P)\nabla P
+\]
+
+and
+
+\[
+\operatorname{Hess}\widetilde Q
+=\operatorname{Hess}Q
+-\phi'(P)\operatorname{Hess}P
+-\phi''(P)\nabla P\nabla P^{\mathsf T},
+\]
+
+the rank-one final term contributes the square of
+
+\[
+\det(\nabla P,\nabla Q)=c.
+\]
+
+Therefore
+
+\[
+\boxed{
+\mathcal B(Q-\phi(P))
+=C_F(-\phi'(P),1)-c^2\phi''(P).
+}
+\tag{4.3}
+\]
+
+This is the exact nonlinear counterpart of the Schur repair formula (2.1).
+It turns straightening one target component into a one-variable polynomial
+ODE driven by the curvature cubic.
+
+> **Corollary JC2DS2.**  If there exists `phi in K[t]` satisfying
+>
+> \[
+> C_F(-\phi'(P),1)=c^2\phi''(P),
+> \tag{4.4}
+> \]
+>
+> then `F` is a polynomial automorphism.
+
+Indeed (4.4) says `B(Q-phi(P))=0`, and JC2DS1 applies after the triangular
+target automorphism `(P,Q) -> (P,Q-phi(P))`.
+
+Thus a hypothetical counterexample must avoid **every polynomial solution** of
+(4.4), not merely every constant projective root of `C_F`.
+
+## 5. Relation to degree reduction
+
+Formula (4.3) is structurally the same operation used by the classical
+Newton/Magnus reductions: replace the larger-degree component by
+
+\[
+Q-\phi(P)
+\]
+
+to cancel a leading common-power term.  The new observation is that the same
+move evolves the geometric curvature by the scalar ODE (4.3).
+
+This suggests a concrete attack on a minimal Keller pair.  At each weighted
+Newton face:
+
+1. use the generalized Magnus expansion to choose the degree-lowering
+   polynomial `phi`;
+2. track the leading weighted face of `C_F(-phi'(P),1)`;
+3. compare it with the one-variable correction `c^2 phi''(P)`;
+4. prove that repeated degree reduction eventually solves (4.4), or identify
+   the exact weighted resonance that prevents it.
+
+This is closely analogous to the scalar HC4 programme, where apparently
+large degree-specific families collapsed after the correct transverse-excess
+and resonance parameters were isolated.
+
+## 6. Interpretation
 
 The homogeneous cubic
 
 \[
-C_F(a,b):=\mathcal B(aP+bQ)
-\tag{4.1}
+C_F(a,b)=\mathcal B(aP+bQ)
 \]
 
 is the complete second-order obstruction to descending the cotangent `HC4`
 lift along a dual variable.  It packages the curvature numerators of the
 entire target pencil.
 
-Thus a hypothetical plane Keller counterexample has to satisfy two simultaneous
-properties:
+Thus a hypothetical plane Keller counterexample has to satisfy simultaneously:
 
-1. every nonzero target pencil member is a polynomial submersion; and
-2. every target direction has nonzero curvature polynomial.
+1. every nonzero target pencil member is a polynomial submersion;
+2. every constant target direction has nonzero curvature polynomial; and
+3. no polynomial triangular target shear solves the curvature ODE (4.4).
 
-The first is automatic from the Keller condition.  The second is the new
-Schur obstruction.
-
-This does **not** prove `JC2`: polynomial automorphisms themselves can have
-curved constant target directions.  The next target is to combine the cubic
-pencil `C_F` with the flatness equations coming from `J(P,Q)=c`, or with the
-Newton/Magnus degree-reduction theory, to force a polynomial target change
-that lowers the curvature/degree.
+This does **not** yet prove `JC2`.  Polynomial automorphisms themselves may
+have curved constant target directions, so the correct object is the orbit of
+`C_F` under polynomial Jung shears rather than its constant projective roots.
+The next target is to combine (4.3) with the generalized Magnus/Newton
+weighted-face formulas and classify the possible resonances of a minimal
+counterexample.
