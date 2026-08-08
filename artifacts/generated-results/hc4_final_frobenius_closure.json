@@ -1,0 +1,13 @@
+{
+  "scope": "final rank-three [4] HC4 Frobenius gap",
+  "status": "closed",
+  "canonical_pair": "N single nilpotent Jordan block, S anti-diagonal self-adjoint metric",
+  "trace_identity": "tr(Hess(g)(F) * T) = 2 b24 + b33",
+  "gauss_radical": [
+    "b24=0",
+    "b34=0",
+    "b44=0"
+  ],
+  "remaining_scalar": "b33 = II_Y(m,m) = Frobenius obstruction for ker N^3",
+  "nilpotence_consequence": "tr Jn = 0 => b33 = 0"
+}
