@@ -1,0 +1,12 @@
+{
+  "scope": "first-order affine bridge after HC4RSD75",
+  "linear_unknowns": 64,
+  "linear_rank": 47,
+  "solution_dimension": 17,
+  "allowed_nonparallel_kernel_motion": [
+    "Gamma^2_3,1",
+    "Gamma^2_4,1",
+    "Gamma^3_4,1"
+  ],
+  "conclusion": "Hessian/Codazzi + full Jordan-flag Frobenius + quasi-translation + unit Hessian volume do not by themselves force a constant affine kernel line"
+}
