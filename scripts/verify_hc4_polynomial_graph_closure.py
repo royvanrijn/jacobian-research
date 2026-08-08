@@ -21,7 +21,7 @@ OUTPUT = (
 )
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
-t, r, s, z = sp.symbols("t r s z")
+t, r, s, z, H = sp.symbols("t r s z H")
 a = sp.Function("a")(t)
 b = sp.Function("b")(t)
 c = sp.Function("c")(t)
@@ -30,6 +30,13 @@ P = sp.Function("P")
 Q = sp.Function("Q")
 
 h = r + q * s
+P_base = P(t, H)
+Q_base = Q(t, H)
+P_h = sp.diff(P_base, H).subs(H, h)
+P_t = sp.diff(P_base, t).subs(H, h)
+Q_h = sp.diff(Q_base, H).subs(H, h)
+Q_hh = sp.diff(Q_base, H, 2).subs(H, h)
+
 L = s * P(t, h) + Q(t, h)
 Hamiltonian = a * r + b * s + c
 variables = (t, r, s)
@@ -45,17 +52,13 @@ subs = {
     sp.diff(b, t, 2): sp.diff(a, t, 2) * q + sp.diff(a, t) * sp.diff(q, t),
 }
 coeff_z = sp.factor(coeff_z.xreplace(subs))
-
-Ph = sp.diff(P(t, h), h)
-Qh = sp.diff(Q(t, h), h)
-Pt = sp.diff(P(t, h), t)
 expected = sp.factor(
-    Ph
+    P_h
     * (
-        (sp.diff(a, t, 2) * h + sp.diff(c, t, 2)) * Ph
-        - 3 * s * sp.diff(a, t) * sp.diff(q, t) * Ph
-        - 2 * sp.diff(a, t) * sp.diff(q, t) * Qh
-        - 2 * sp.diff(a, t) * Pt
+        (sp.diff(a, t, 2) * h + sp.diff(c, t, 2)) * P_h
+        - 3 * s * sp.diff(a, t) * sp.diff(q, t) * P_h
+        - 2 * sp.diff(a, t) * sp.diff(q, t) * Q_h
+        - 2 * sp.diff(a, t) * P_t
     )
 )
 assert sp.simplify(coeff_z - expected) == 0
@@ -65,11 +68,7 @@ P0 = sp.Function("P0")(t)
 L_reduced = s * P0 + Q(t, h)
 det_reduced = sp.factor(sp.hessian(L_reduced, variables).det())
 expected_det = sp.factor(
-    -(
-        sp.diff(P0, t)
-        + sp.diff(q, t) * sp.diff(Q(t, h), h)
-    ) ** 2
-    * sp.diff(Q(t, h), h, 2)
+    -(sp.diff(P0, t) + sp.diff(q, t) * Q_h) ** 2 * Q_hh
 )
 assert sp.simplify(det_reduced - expected_det) == 0
 
