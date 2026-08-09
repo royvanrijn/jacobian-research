@@ -1,0 +1,8 @@
+{
+  "scope": "direct HC4 top homogeneous filtration",
+  "status": "verified",
+  "identities": {
+    "first": "[t] det M = c1 det(A0)",
+    "second_when_c1_zero": "[t^2] det M = c2 det(A0) - b1^T adj(A0) b1"
+  }
+}
