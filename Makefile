@@ -25,7 +25,7 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 	verify-lr-rees-sagbi \
 	verify-lr-rooted-trees \
 	verify-lr-mixed-bch \
-	verify-plane-sparse-supports verify-plane-support-bridge \
+	verify-plane-sparse-supports verify-plane-support-bridge verify-plane-universal-boundary-saturation verify-plane-log-conductor-degree-shift verify-plane-f2-log-node-profiles verify-plane-f2-carrier-log-node-profiles \
 	verify-plane-f2-modified-chart-bridge verify-plane-f2-global-attachment verify-plane-f2-carrier-wronskian verify-plane-f2-carrier-specializations verify-plane-f2-nonlinear-forcing probe-plane-f2-nonlinear-modular verify-plane-f2-formal-frontier verify-plane-common-power-carrier \
 	verify-linear-torus-free verify-algebraic-torus-free \
 	verify-master \
@@ -151,6 +151,7 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: verify-hc4-direct-filtration verify-hc4-direct-repeated-linear
 .PHONY: verify-s4-collision-frame-keller
 .PHONY: verify-global-low-degree-census
+.PHONY: verify-collision-axis-unimodular-frontend
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts
@@ -160,6 +161,9 @@ check:
 
 verify-global-low-degree-census:
 	$(PYTHON) scripts/verify_global_low_degree_census.py
+
+verify-collision-axis-unimodular-frontend:
+	$(PYTHON) scripts/verify_collision_axis_unimodular_frontend.py
 
 verify-s4-collision-frame-keller:
 	$(PYTHON) scripts/verify_s4_collision_frame_keller_frontier.py
@@ -420,6 +424,10 @@ verify-minimal:
 
 verify-plane-jc:
 	$(SYSTEM_PYTHON) plane-jc/cas/frontier_125_150.py
+	$(PYTHON) scripts/verify_universal_boundary_saturation.py
+	$(PYTHON) scripts/verify_log_conductor_degree_shift.py
+	$(PYTHON) scripts/verify_f2_log_node_profiles.py
+	$(PYTHON) scripts/verify_f2_carrier_log_node_profiles.py
 	$(PYTHON) plane-jc/cas/boundary_lattice_prefilter.py
 	$(PYTHON) plane-jc/cas/test_intrinsic_a2_boundary.py
 	$(PYTHON) plane-jc/cas/test_plane_boundary_exclusion.py
@@ -442,6 +450,18 @@ refresh-plane-72-108-belyi-deformations:
 
 verify-plane-sparse-supports:
 	$(PYTHON) plane-jc/cas/verify_sparse_support_exclusions.py
+
+verify-plane-universal-boundary-saturation:
+	$(PYTHON) scripts/verify_universal_boundary_saturation.py
+
+verify-plane-log-conductor-degree-shift:
+	$(PYTHON) scripts/verify_log_conductor_degree_shift.py
+
+verify-plane-f2-log-node-profiles:
+	$(PYTHON) scripts/verify_f2_log_node_profiles.py
+
+verify-plane-f2-carrier-log-node-profiles:
+	$(PYTHON) scripts/verify_f2_carrier_log_node_profiles.py
 
 verify-plane-support-bridge:
 	$(PYTHON) plane-jc/cas/verify_affine_support_newton_bridge.py

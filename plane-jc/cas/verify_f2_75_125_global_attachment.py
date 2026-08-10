@@ -11,7 +11,8 @@ completion can provide.  In particular it
 
 * orients the two target nodes in the regular fan around ``(5,2)``;
 * compiles all endpoint and interior attachment slots;
-* derives the source-boundary tree lower bounds;
+* derives the source-boundary tree lower bounds, including the two-step
+  regularization forced at every interior terminal attachment;
 * writes the two live finite-normalization degree equations and retains the
   distinct-target double row as an explicitly excluded audit case; and
 * emits a machine-readable contract for the missing class-group, unit,
@@ -467,17 +468,24 @@ def minimal_source_principal_boundary(case: str) -> dict[str, object]:
             previous = name
         terminal_name = arm_names[3]
         terminal_components.append(terminal_name)
-        weights[terminal_name] -= 3
+        # Each interior residue point has local target-node model
+        # (pi,xi)=(tau*w^-2,w^e), so one blowup is insufficient.  The first
+        # exceptional component has weight -1; blowing up its intersection
+        # with the strict terminal component inserts a second exceptional,
+        # lowers the first to -2, and lowers the terminal a second time.
+        weights[terminal_name] -= 6
         marked: dict[str, str] = {
             "endpoint_s=0": arm_names[4],
             "endpoint_s=infinity": arm_names[2],
         }
         for attachment_index, slot in enumerate(REQUIRED_SLOT_NAMES[2:], start=1):
-            leaf = f"{packet}_attachment_{attachment_index}"
-            names.append(leaf)
-            weights[leaf] = -1
-            edges.append((terminal_name, leaf))
-            marked[slot] = leaf
+            inner = f"{packet}_attachment_{attachment_index}_inner"
+            outer = f"{packet}_attachment_{attachment_index}_outer"
+            names.extend((inner, outer))
+            weights[inner] = -1
+            weights[outer] = -2
+            edges.extend(((terminal_name, inner), (inner, outer)))
+            marked[slot] = inner
         attachment_neighbors[packet] = marked
 
     edge_set = {tuple(sorted(edge)) for edge in edges}
@@ -501,7 +509,7 @@ def minimal_source_principal_boundary(case: str) -> dict[str, object]:
         adjacency[left_name].add(right_name)
         adjacency[right_name].add(left_name)
     leaf_count = sum(len(adjacency[name]) == 1 for name in names)
-    expected = (16, 6) if packet_count == 1 else (25, 10)
+    expected = (19, 6) if packet_count == 1 else (31, 10)
     if (len(names), leaf_count) != expected:
         raise AssertionError("the minimal source principal topology changed")
     if abs(matrix_determinant) != 1 or inertia != (1, len(names) - 1, 0):
@@ -649,6 +657,11 @@ class AttachmentSlot:
     tangential_index: int
     residue_different: int
     forces_new_interior_branch: bool
+    transverse_coefficient_order: int
+    required_source_blowups: int
+    resolved_log_determinant: int | None
+    resolved_log_cokernel: str
+    normalization_defect: str
 
 
 CASES = (
@@ -721,6 +734,11 @@ def attachment_slots() -> tuple[AttachmentSlot, ...]:
             tangential_index=1,
             residue_different=0,
             forces_new_interior_branch=False,
+            transverse_coefficient_order=0,
+            required_source_blowups=0,
+            resolved_log_determinant=1,
+            resolved_log_cokernel="0",
+            normalization_defect="zero",
         ),
         AttachmentSlot(
             name="endpoint_s=infinity",
@@ -729,6 +747,11 @@ def attachment_slots() -> tuple[AttachmentSlot, ...]:
             tangential_index=3,
             residue_different=2,
             forces_new_interior_branch=False,
+            transverse_coefficient_order=1,
+            required_source_blowups=0,
+            resolved_log_determinant=None,
+            resolved_log_cokernel="R/(w^3)",
+            normalization_defect="zero_on_smooth_reduced_support",
         ),
         AttachmentSlot(
             name="interior_s=-1",
@@ -737,6 +760,11 @@ def attachment_slots() -> tuple[AttachmentSlot, ...]:
             tangential_index=5,
             residue_different=4,
             forces_new_interior_branch=True,
+            transverse_coefficient_order=-2,
+            required_source_blowups=2,
+            resolved_log_determinant=5,
+            resolved_log_cokernel="0",
+            normalization_defect="zero",
         ),
         AttachmentSlot(
             name="interior_denominator_root_1",
@@ -745,6 +773,11 @@ def attachment_slots() -> tuple[AttachmentSlot, ...]:
             tangential_index=3,
             residue_different=2,
             forces_new_interior_branch=True,
+            transverse_coefficient_order=-2,
+            required_source_blowups=2,
+            resolved_log_determinant=3,
+            resolved_log_cokernel="0",
+            normalization_defect="zero",
         ),
         AttachmentSlot(
             name="interior_denominator_root_2",
@@ -753,6 +786,11 @@ def attachment_slots() -> tuple[AttachmentSlot, ...]:
             tangential_index=3,
             residue_different=2,
             forces_new_interior_branch=True,
+            transverse_coefficient_order=-2,
+            required_source_blowups=2,
+            resolved_log_determinant=3,
+            resolved_log_cokernel="0",
+            normalization_defect="zero",
         ),
     )
     if tuple(slot.name for slot in slots) != REQUIRED_SLOT_NAMES:
@@ -761,15 +799,25 @@ def attachment_slots() -> tuple[AttachmentSlot, ...]:
         raise AssertionError("the residue different no longer totals ten")
     if sum(slot.forces_new_interior_branch for slot in slots) != 3:
         raise AssertionError("the interior attachment count changed")
+    if [slot.required_source_blowups for slot in slots] != [0, 0, 2, 2, 2]:
+        raise AssertionError("the terminal base-point resolution changed")
+    if [slot.resolved_log_determinant for slot in slots] != [1, None, 5, 3, 3]:
+        raise AssertionError("the terminal logarithmic node profile changed")
+    if [slot.resolved_log_cokernel for slot in slots] != [
+        "0", "R/(w^3)", "0", "0", "0"
+    ]:
+        raise AssertionError("the terminal logarithmic cokernel profile changed")
+    if any("zero" not in slot.normalization_defect for slot in slots):
+        raise AssertionError("a terminal normalization defect reappeared")
     return slots
 
 
 def topology_bounds(packet_count: int) -> dict[str, int | str]:
     if packet_count == 1:
-        minimum_components = 16
+        minimum_components = 19
         minimum_leaves = 6
     elif packet_count == 2:
-        minimum_components = 25
+        minimum_components = 31
         minimum_leaves = 10
     else:
         raise ValueError("only one or two terminal packets occur in F2")
@@ -779,8 +827,9 @@ def topology_bounds(packet_count: int) -> dict[str, int | str]:
         "minimum_source_boundary_leaves": minimum_leaves,
         "proof": (
             "six blowups extract the shared (-5,1) carrier; each principal "
-            "center contributes a six-blowup (5,12) arm and three interior "
-            "attachment blowups; the leaf count follows from the compiled tree"
+            "center contributes a six-blowup (5,12) arm and three two-blowup "
+            "interior attachment chains; the leaf count follows from the "
+            "compiled tree"
         ),
     }
 
@@ -1530,7 +1579,7 @@ def build_payload() -> dict[str, object]:
     slots = attachment_slots()
     cases = [finite_normalization_case(case) for case in CASES]
     payload = {
-        "schema": "plane-jc.f2-75-125-global-attachment.v1",
+        "schema": "plane-jc.f2-75-125-global-attachment.v2",
         "status": "exact-obligation-compiler-global-completion-still-missing",
         "certified_input": {
             "source_ray": [12, -17],
@@ -1553,6 +1602,7 @@ def build_payload() -> dict[str, object]:
         "attachment_summary": {
             "toric_endpoint_neighbor_count_per_packet": 2,
             "new_interior_branch_count_per_packet": 3,
+            "interior_blowups_per_branch": 2,
             "terminal_valency_lower_bound": 5,
             "node_h=0": ["endpoint_s=0", "interior_s=-1"],
             "node_h=infinity": [
@@ -1568,7 +1618,9 @@ def build_payload() -> dict[str, object]:
                 "the translated terminal chart restricts to the original nonmonomial valuation nu(x),nu(y_old),nu(x*y_old^5-center)=(-25,5,12)",
                 "six blowups extract the shared carrier ray (-5,1), and six further blowups at each marked carrier center extract a principal terminal arm",
                 "the target ray (5,2) is extracted by four blowups and gives the unimodular boundary chain (-2,-2,-1,-3,-2)",
-                "one terminal packet forces a 16-component, 6-leaf minimal principal boundary; two packets sharing the carrier force 25 components and 10 leaves",
+                "one terminal packet forces a 19-component, 6-leaf principal boundary lower bound; two packets sharing the carrier force 31 components and 10 leaves",
+                "the four terminal preimages of target nodes have invertible resolved logarithmic matrices with residual determinants 1,5,3,3",
+                "the smooth endpoint has cyclic logarithmic cokernel R/(w^3), so every marked terminal normalization defect is zero",
                 "squarefree spectator centers are the two simple R roots on the carrier; the double R root is the second principal center",
                 "both double-root packets restrict to the unique target divisor (5,2), excluding the distinct-target case and forcing d>=12",
                 "a declared complete A2 source boundary must have a unimodular intersection matrix and integral adjunction solution",
@@ -1638,8 +1690,8 @@ def main() -> None:
     print("F2_75_125_TARGET_FAN=(3,1),(5,2),(2,1)")
     print("F2_75_125_ATTACHMENTS_PER_TERMINAL=5")
     print("F2_75_125_INTERIOR_ATTACHMENTS_PER_TERMINAL=3")
-    print("F2_75_125_ONE_PACKET_TREE_MIN=components:16,leaves:6")
-    print("F2_75_125_TWO_PACKET_TREE_MIN=components:25,leaves:10")
+    print("F2_75_125_ONE_PACKET_TREE_MIN=components:19,leaves:6")
+    print("F2_75_125_TWO_PACKET_TREE_MIN=components:31,leaves:10")
     print("F2_75_125_GLOBAL_ATTACHMENT_STATUS=INCOMPLETE")
     print(f"F2_75_125_GLOBAL_ATTACHMENT_ARTIFACT_SHA256={artifact_sha256(artifact)}")
 

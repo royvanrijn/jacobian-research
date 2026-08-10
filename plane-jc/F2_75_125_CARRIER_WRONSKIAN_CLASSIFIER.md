@@ -308,9 +308,17 @@ The global F2 problem is now finite at the carrier level:
    carrier cover and two unramified simple-root points;
 2. double-root `R` has the two conjugate values (3), and its carrier cover is
    the same degree-six Belyi map as the terminal packet;
-3. the remaining work is to impose these rows on the lower Laurent
-   coefficient system, attach the purity-forced affine row, and close the
-   global degree and meridian ledgers.
+3. the exact
+   [`carrier log-node profile`](F2_CARRIER_LOG_NODE_PROFILE.md) resolves all
+   marked carrier-local points and the common fans along the principal arms.
+   Their logarithmic exponent determinants are `1`, `3`, or `5`, so none
+   supplies a normalization defect;
+4. the remaining geometric support is the upstream carrier-extraction chain,
+   the outgoing terminal tail, the purity-forced affine row, and uncompiled
+   global centers.  The independent coefficient route still has to impose
+   these rows on the lower Laurent system.
+
+<!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
 
 Until those steps are completed, the F2 row and `(75,125)` remain
 unexcluded.

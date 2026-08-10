@@ -32,6 +32,14 @@ from pathlib import Path
 
 import sympy as sp
 
+from canonical_transform_search import (
+    canonical_poisson_matrix,
+    compose_maps,
+    hamiltonian_vector_field,
+    poisson_bracket as shared_poisson_bracket,
+    verify_symplectic_map as shared_verify_symplectic_map,
+)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -39,14 +47,7 @@ Q1, Q2, P1, P2 = VARIABLES = sp.symbols("q1 q2 p1 p2")
 A_PARAMETER, B_PARAMETER = PARAMETERS = sp.symbols("a b")
 
 # Bracket convention {p_i,q_j}=delta_ij, as in the DC_2 notes.
-POISSON = sp.Matrix(
-    (
-        (0, 0, -1, 0),
-        (0, 0, 0, -1),
-        (1, 0, 0, 0),
-        (0, 1, 0, 0),
-    )
-)
+POISSON = canonical_poisson_matrix(2, q_p_bracket=-1)
 PAIRS = tuple(itertools.combinations(range(4), 2))
 
 
@@ -102,15 +103,11 @@ def polynomial_coefficients(expression: sp.Expr) -> dict[Exponent, sp.Expr]:
 
 
 def poisson(left: sp.Expr, right: sp.Expr) -> sp.Expr:
-    return sp.expand(
-        sum(
-            POISSON[i, j]
-            * sp.diff(left, VARIABLES[i])
-            * sp.diff(right, VARIABLES[j])
-            for i in range(4)
-            for j in range(4)
-            if POISSON[i, j]
-        )
+    return shared_poisson_bracket(
+        left,
+        right,
+        VARIABLES,
+        POISSON,
     )
 
 
@@ -205,10 +202,10 @@ def integrate_closed_rows(jacobian: sp.Matrix) -> tuple[sp.Expr, ...]:
 
 
 def euler_shear(potential: sp.Expr) -> tuple[sp.Expr, ...]:
-    gradient = sp.Matrix([sp.diff(potential, variable) for variable in VARIABLES])
+    velocity = hamiltonian_vector_field(potential, VARIABLES, POISSON)
     return tuple(
-        sp.expand(VARIABLES[index] + (POISSON * gradient)[index])
-        for index in range(4)
+        sp.expand(variable + component)
+        for variable, component in zip(VARIABLES, velocity, strict=True)
     )
 
 
@@ -216,17 +213,11 @@ def compose(
     outer: tuple[sp.Expr, ...],
     inner: tuple[sp.Expr, ...],
 ) -> tuple[sp.Expr, ...]:
-    substitution = dict(zip(VARIABLES, inner, strict=True))
-    return tuple(
-        sp.expand(expression.subs(substitution, simultaneous=True))
-        for expression in outer
-    )
+    return compose_maps(outer, inner, VARIABLES)
 
 
 def verify_symplectic_map(outputs: tuple[sp.Expr, ...]) -> None:
-    jacobian = sp.Matrix(outputs).jacobian(VARIABLES)
-    assert sp.expand(jacobian.det()) == 1
-    assert (jacobian * POISSON * jacobian.T).applyfunc(sp.expand) == POISSON
+    shared_verify_symplectic_map(outputs, VARIABLES, POISSON)
 
 
 def moyal_defects(

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Exact identities for the shared JC(2)--HC(4) isotropic boundary package.
 
-This checker has seven independent blocks.
+This checker has eight independent blocks.
 
 1.  For the cotangent potential
 
@@ -10,7 +10,12 @@ This checker has seven independent blocks.
     its four-variable Hessian determinant is Jac(P,Q)^2, independently of
     the second derivatives and of t,m.
 
-2.  For the more general isotropic form Psi=t*P(x,y)+Phi(x,y,m), the t^2
+2.  Every source-only Hessian direction R gives a constant-Hessian pencil
+    through the cotangent block.  Its relative endomorphism N=S^(-1)T is
+    square-zero.  Thus the plane cotangent packet lies inside the precise
+    relative-nilpotent class closed by HC4MR1.
+
+3.  For the more general isotropic form Psi=t*P(x,y)+Phi(x,y,m), the t^2
     Schur coefficient vanishes and the t coefficient is
 
         -Phi_mm * grad(P)^T adj(Hess(P)) grad(P).
@@ -18,25 +23,25 @@ This checker has seven independent blocks.
     Thus the cotangent branch Phi_mm=0 is one exact factor of the first
     nontrivial Schur remainder.
 
-3.  In an adapted index-two boundary chart g=r^2*ell(r,z), the reduced
+4.  In an adapted index-two boundary chart g=r^2*ell(r,z), the reduced
     conormal residue r^(-1)*partial_r(g) mod r is 2*ell(0,z).  Hence the
     quartic packet's odd-square multiplier ell is half of the normal
     residue, and its square is the leading cotangent-Hessian coefficient.
 
-4.  For the exact quartic spectator model, the discriminant pulls back as
+5.  For the exact quartic spectator model, the discriminant pulls back as
     r^2*ell.  The cusp initial residue is 18*T^2.  At the two branches of
     the 2+2 connector the initial coefficients are respectively
     -9*sqrt(3)/2 and 9*sqrt(3)/2.
 
-5.  The completed cusp and node conductor maps are isomorphisms in the
+6.  The completed cusp and node conductor maps are isomorphisms in the
     positive associated-graded degree occupied by those residues.  Thus the
     proposed associated-graded cokernel class Obs_pair is zero.
 
-6.  The degree-zero conductor mismatch also vanishes because both connector
+7.  The degree-zero conductor mismatch also vanishes because both connector
     residue values are zero.  Comparing their first derivatives would
     require a noncanonical identification of the two tangent parameters.
 
-7.  Every one of the 72 labelled cusp/matching packets generates S4, and
+8.  Every one of the 72 labelled cusp/matching packets generates S4, and
     the zero conductor class is independent of the labelling.
 
 The script does not prove that an arbitrary HC(4) counterexample admits the
@@ -73,7 +78,35 @@ assert sp.factor(cotangent_hessian.det() - jacobian**2) == 0
 
 
 # ---------------------------------------------------------------------------
-# 2. First isotropic Schur remainder
+# 2. Cotangent packets are square-zero constant-Hessian pencils
+# ---------------------------------------------------------------------------
+
+s = sp.symbols("s")
+R_xx, R_xy, R_yy = sp.symbols("R_xx R_xy R_yy")
+source_direction = sp.Matrix(
+    [
+        [R_xx, R_xy, 0, 0],
+        [R_xy, R_yy, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+    ]
+)
+assert sp.factor(
+    (cotangent_hessian + s * source_direction).det() - jacobian**2
+) == 0
+
+source_jacobian = sp.Matrix([[P_x, P_y], [Q_x, Q_y]])
+source_hessian = sp.Matrix([[R_xx, R_xy], [R_xy, R_yy]])
+relative_nilpotent = sp.zeros(4)
+relative_nilpotent[2:4, 0:2] = source_jacobian.inv().T * source_hessian
+assert (cotangent_hessian * relative_nilpotent - source_direction).applyfunc(
+    sp.factor
+) == sp.zeros(4)
+assert relative_nilpotent**2 == sp.zeros(4)
+
+
+# ---------------------------------------------------------------------------
+# 3. First isotropic Schur remainder
 # ---------------------------------------------------------------------------
 
 t = sp.symbols("t")
@@ -103,7 +136,7 @@ assert sp.factor(
 
 
 # ---------------------------------------------------------------------------
-# 3. Index-two reduced conormal residue and its square
+# 4. Index-two reduced conormal residue and its square
 # ---------------------------------------------------------------------------
 
 r, z = sp.symbols("r z")
@@ -124,7 +157,7 @@ assert cusp_residue == -18 * T**2
 
 
 # ---------------------------------------------------------------------------
-# 4. Exact 3+1 cusp and both 2+2 connector branches
+# 5. Exact 3+1 cusp and both 2+2 connector branches
 # ---------------------------------------------------------------------------
 
 X, u, v = sp.symbols("X u v")
@@ -186,7 +219,7 @@ assert rho_minus_initial == 9 * sqrt_three / 2
 
 
 # ---------------------------------------------------------------------------
-# 5. The associated-graded conductor obstruction is zero
+# 6. The associated-graded conductor obstruction is zero
 # ---------------------------------------------------------------------------
 
 def lies_in_image(
@@ -234,7 +267,7 @@ assert connector_zero and connector_lift == connector_initial_vector
 
 
 # ---------------------------------------------------------------------------
-# 6. Value descent and the absence of a canonical derivative comparison
+# 7. Value descent and the absence of a canonical derivative comparison
 # ---------------------------------------------------------------------------
 
 # In degree zero the node map is the diagonal k -> k+k.  Its cokernel is
@@ -268,7 +301,7 @@ assert sp.simplify(naive_difference.subs(beta, alpha)) != 0
 
 
 # ---------------------------------------------------------------------------
-# 7. Actual S4-compatible packet labellings
+# 8. Actual S4-compatible packet labellings
 # ---------------------------------------------------------------------------
 
 SheetPermutation = tuple[int, int, int, int]
@@ -354,6 +387,7 @@ assert packet_count == 72
 
 
 print("PASS: cotangent determinant = Jac(P,Q)^2")
+print("PASS: cotangent source directions give square-zero Hessian pencils")
 print("PASS: first isotropic Schur remainder = -Phi_mm*R(P)")
 print("PASS: index-two reduced conormal residue = 2*ell")
 print("PASS: clean cusp initial conormal residue = -18*T^2")

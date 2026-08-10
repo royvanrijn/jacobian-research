@@ -155,6 +155,27 @@ orbits.  We do not quotient by the continuous affine stabilizer of (e_1):
 it changes Newton supports by creating and cancelling monomials, so a naive
 support quotient would not preserve completeness.
 
+The later
+[collision-axis unimodular frontend](COLLISION_AXIS_UNIMODULAR_FRONTEND.md)
+strengthens (2.1) before determinant algebra.  If (a_2=a_3=0), then the
+first Jacobian column on the collision axis is ((h_1',0,0)); its zero integral
+prevents it from being unimodular.  Hence
+
+\[
+a_2+a_3>0,
+\tag{2.4}
+\]
+
+so at least one of (a_2,a_3) is at least two.  This gate is logically prior to
+three-dimensional support enumeration.  As an audit of the already pinned
+ledger, it eliminates all determinant-balanced supports in sizes four and
+five and reduces size six from (1,694) labelled supports to (900).  The
+original census remains a valid exhaustive certificate because it sent the
+larger set through exact coefficient algebra; its pinned artifacts are not
+silently rewritten here.  The reusable support predicate
+`Support.collision_axis_unimodularity_possible` exposes (2.4) to future
+cardinality shards.
+
 Equations (2.2)--(2.3) explain why writing every unrestricted support to a
 flat JSON list is not a meaningful near-term computation.  The pipeline
 stores the full Boolean universe and rank gates compactly, and exhausts

@@ -36,6 +36,13 @@ reduction modulo a good prime prove failure over characteristic zero.  Thus
 the zero survivor counts are exact for the declared finite coefficient
 boxes.
 
+The exact Hamiltonian alphabet, flow, composition, pullback, and Poisson
+conventions are now shared with the rank-two Weyl-symbol programme through
+[`scripts/canonical_transform_search.py`](scripts/canonical_transform_search.py).
+The programme-specific Hessian and collision gates remain here. The joint
+orbit discipline, including the DC2 automorphism veto, is recorded in the
+[shared canonical-search protocol](HC4_DC2_CANONICAL_SEARCH_PROTOCOL.md).
+
 ## 1. Collision-centred doubling
 
 Use canonical coordinates
@@ -602,7 +609,90 @@ a persistent rank-three locus.  Thus the bracket types do not merely
 systematically force rank three: they force generic rank four throughout
 the entire parent-preserving locus.
 
-## 11. The first quadratic--cubic commutator box
+## 11. Direct unit blocks on the nonlinear parent resonance
+
+The reverse-order family above is the first place where a genuinely
+nonlinear canonical word passes the logically prior parent gate.  This
+makes it possible to test a stronger pivot objective than coordinate
+affineness.  For a constant direction \(c\in\mathbb Q^6\), a direct scalar
+unit pivot is exactly
+
+\[
+ D_c^2\Phi\in\mathbb Q^\times.
+\]
+
+After a constant linear symplectic completion of \(c\), the corresponding
+critical equation has the form
+
+\[
+ \partial_u\Phi=\alpha u+\beta(v),\qquad
+ \alpha\in\mathbb Q^\times.
+\]
+
+For a two-plane with basis \(c,d\), the exact polynomial Schur conditions
+are
+
+\[
+ D_c^3\Phi=D_c^2D_d\Phi=D_cD_d^2\Phi=D_d^3\Phi=0
+\]
+
+and
+
+\[
+ \Delta_{c,d}
+ =(D_c^2\Phi)(D_d^2\Phi)-(D_cD_d\Phi)^2
+ \in\mathbb Q^\times.
+\]
+
+The first row says that the two critical equations are affine in the two
+pivot variables.  The second makes their coefficient matrix unimodular,
+so its inverse is polynomial.  Substitution of the unique polynomial
+critical section gives a four-variable potential whose Hessian is the
+Schur complement.  Consequently
+
+\[
+ \det\operatorname{Hess}\psi
+ =\frac{\det\operatorname{Hess}\Phi}{\Delta_{c,d}}
+ \in\mathbb Q^\times.
+\]
+
+The two transformed marked critical points lie on this section and cannot
+have the same four retained coordinates, since the section is a function.
+Thus any survivor would retain the collision and prove `not HC(4)`.
+
+`HC4MCP9` tests this mechanism on all 54 parent-preserving support/sign
+patterns, at
+
+\[
+ b\in\{-2,-1,1,2\},\qquad
+ c\in(\{-1,0,1\}^6-\{0\})/\{\pm1\}.
+\]
+
+There are 216 nonlinear constant-Hessian charts and 364 projective
+directions per chart, hence 78,624 scalar trials.  None survives the
+modular constancy screen with a nonzero exact origin value.  Exact symbolic
+testing leaves 4,968 directions
+with \(D_c^3\Phi=0\); their direction pairs determine 32,360 distinct
+rational two-planes that reach the mixed-third-derivative screen.  Every
+plane is rejected.  All but 72 have a modular nonconstancy witness for
+
+\[
+ \Delta_{c,d}.
+\]
+
+The 72 modular near misses occur in eight reciprocal charts.  Each is
+jointly quadratic exactly, but its full determinant is a nonconstant
+degree-twelve polynomial with 28 terms; the artifact records a leading
+coefficient and SHA-256 for every exact witness.  Hence the declared box
+contains neither a scalar unit pivot nor a unimodular polynomial
+\(2\)-by-\(2\) Schur block.
+
+This closes a finite oblique-direction box on the known nonlinear
+parent-preserving resonance.  It does not cover larger direction
+coefficients, other nonzero values of \(b\), coefficient-dependent or
+nonlinear pivot directions, other Hamiltonian supports, or longer words.
+
+## 12. The first quadratic--cubic commutator box
 
 The next canonical family is the unit-coefficient group commutator
 
@@ -728,6 +818,21 @@ The exact parent-family and reduced-rank census is
 [`artifacts/generated-results/hc4_symbolic_cubic_quadratic_words.json`](artifacts/generated-results/hc4_symbolic_cubic_quadratic_words.json).
 Its pinned SHA-256 is
 `1c33fdbcb2296efe04df6e6e86d79bd407793a1adc5142f89e11912b419a36d9`.
+
+Search direct scalar units and polynomial (2\)-by-(2) Schur blocks on
+the nonlinear parent-preserving family with:
+
+```bash
+PYTHONHASHSEED=0 PYTHONPATH=scripts .venv/bin/python \
+  scripts/search_hc4_nonlinear_unit_schur_blocks.py \
+  --output \
+  artifacts/generated-results/hc4_nonlinear_unit_schur_blocks.json
+```
+
+The exact finite-box census is
+[`artifacts/generated-results/hc4_nonlinear_unit_schur_blocks.json`](artifacts/generated-results/hc4_nonlinear_unit_schur_blocks.json).
+Its pinned SHA-256 is
+`7f235d427e0cf63e3aeddf198d6ade72c5478ae90774d526fb3a5610dae9286e`.
 
 Replay the unit quadratic--cubic commutator box with:
 

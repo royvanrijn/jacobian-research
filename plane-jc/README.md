@@ -12,6 +12,8 @@ three-dimensional counterexample construction.
 | --- | --- |
 | [PROVENANCE.md](PROVENANCE.md) | Exact Zenodo/arXiv versions, files, licenses, and hashes |
 | [DEGREE_FRONTIER_125.md](DEGREE_FRONTIER_125.md) | Theorem scope, reduction chain, and historical frontier |
+| [UNIVERSAL_COMPLETE_CHAIN_BOUNDARY_SATURATION.md](UNIVERSAL_COMPLETE_CHAIN_BOUNDARY_SATURATION.md) | Degree-independent logarithmic-cotangent `S1` theorem and exact nodal-tree no-go models for automatic matching-cokernel depth/height |
+| [LOG_CONDUCTOR_DEGREE_SHIFT.md](LOG_CONDUCTOR_DEGREE_SHIFT.md) | Normalization mismatches live in `H_Z^1`, not `H_Z^0`; normalized determinant descent; integrable same-determinant/different-node-cokernel models; reduction to nodal `Fitt_1` and localized `c_2` |
 | [FINITE_NORMALIZATION_PROGRAM.md](FINITE_NORMALIZATION_PROGRAM.md) | Unconditional surface finite-flatness theorem; canonical branch/missing-boundary cover; arbitrary-puncture rigidity, bounded Pareto signature atlas, residual-different identity, and log-surface programme |
 | [JC2_FINITE_NORMALIZATION_FRONTIER.md](JC2_FINITE_NORMALIZATION_FRONTIER.md) | Cubic cusp countermodel to automatic residue immersion; clean-packet classification; Orevkov Euler-budget closure of the cusp and all geometric degree three |
 | [JC2_QUARTIC_PACKET_FRONTIER.md](JC2_QUARTIC_PACKET_FRONTIER.md) | Orevkov's exact quartic jump/two-boundary dichotomy; \(3+1\) cusp and \(2+2\) collision atlas; monodromy exclusion of the lone-cusp packet |
@@ -26,7 +28,7 @@ three-dimensional counterexample construction.
 | [INTRINSIC_A2_BOUNDARY_GATE.md](INTRINSIC_A2_BOUNDARY_GATE.md) | Adjunction/Noether reconstruction, pole-vector ramification gate, and intrinsic dicritical depth obstruction |
 | [PLANE_BOUNDARY_EXCLUSION.md](PLANE_BOUNDARY_EXCLUSION.md) | Conditional smooth-target residue calculation and finite-flat conductor-packet inequality; the former residue-immersion claim for singular target curves is corrected by the cubic cusp audit |
 | [LOG_BOUNDARY_COMPILER.md](LOG_BOUNDARY_COMPILER.md) | Certified branch scales to regular toroidal proximity graphs, complete boundary matrices, differents, and conductors |
-| [CONDUCTOR_JET_TRUNCATION.md](CONDUCTOR_JET_TRUNCATION.md) | Sharp conductor-plus-contact-loss finite-determinacy theorem for node, cusp, multibranch, and matching-cokernel boundary residues; canonical `P0`--`P4` support-saturation gate from finite presentation through localized vanishing, relative height, and `S1` |
+| [CONDUCTOR_JET_TRUNCATION.md](CONDUCTOR_JET_TRUNCATION.md) | Sharp conductor-plus-contact-loss finite-determinacy theorem for node, cusp, multibranch, and matching-cokernel boundary residues; conditional `P0`--`P4` gate for the alternative matching-cokernel route |
 | [CASE1_FULL_BAND_CONTINUATION.md](CASE1_FULL_BAND_CONTINUATION.md) | Exact continuation of bracket layers `-4,...,-11`, reconstructing all eleven formerly omitted Case-1 bands with a hash-pinned 66-equation ledger |
 | [FRONTIER_LOG_SCALE_AUDIT.md](FRONTIER_LOG_SCALE_AUDIT.md) | Fixed-completion replay of the `(72,108)` rays, the Wronskian-forced `E3∩E4` cluster, all five plane-return root-partition fans, the two 23-component terminal packages, their corrected `X^2` ramification, and the finite residue-cover split |
 | [FRONTIER_CLOSING_ATTACKS.md](FRONTIER_CLOSING_ATTACKS.md) | Map-decorated boundary package, completed Case-2 composition sieve, and finite harmonic-cover, Pluecker, and log-Chern closure attacks |
@@ -48,9 +50,12 @@ three-dimensional counterexample construction.
 <!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 | [F2_TERMINAL_RESIDUE_COVER.md](F2_TERMINAL_RESIDUE_COVER.md) | Target ray `(5,2)`, degree floors `6`/same-target `12`, three forced node attachments, genus-25 `A_6` Galois closure, purity/different ledger, geometric `A_6` versus arithmetic `S_6`, and trivial target-fixed deck group |
 | [F2_A6_SIMPLE_SPECTATOR_GLUING.md](F2_A6_SIMPLE_SPECTATOR_GLUING.md) | Conditional spectator gluing: six genus-zero `S_7` one-cycle classes, exact Kummer/terminal order-five comparison, and one inertia-supported degree-11 `S_11` class in the rational-source fivefold model |
-<!-- status-consumer: PF2GA1 cbca9b6c44a2bc7e -->
-| [F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md](F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md) | Original-coordinate proximity chains, exact 16/25-component principal source trees, target completion, and same-target uniqueness for the double packet |
+<!-- status-consumer: PF2GA1 57dea3062b1147fb -->
+| [F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md](F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md) | Original-coordinate proximity chains, corrected 19/31-component principal source lower bounds, target completion, and same-target uniqueness for the double packet |
+| [F2_LOG_NODE_PROFILE.md](F2_LOG_NODE_PROFILE.md) | Exact transverse order `-2`, two-blowup interior regularization, target-node log-etaleness, and the smooth-endpoint cyclic model `R/(w^3)` |
 | [F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md](F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md) | Descent-36 carrier Wronskian, target ray `(5,36)`, unique cyclic-cubic squarefree row with unramified spectators, and two conjugate double rows identified with the terminal Belyi map |
+| [F2_CARRIER_LOG_NODE_PROFILE.md](F2_CARRIER_LOG_NODE_PROFILE.md) | Exact carrier normal orders and common fan refinements; log-etaleness of all marked carrier/arm/spectator nodes and strengthened `27/48` source-boundary lower bounds |
+<!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
 <!-- status-consumer: PF2CW1 a7774b0fa736b64c -->
 | [F2_75_125_CARRIER_SPECIALIZATIONS.md](F2_75_125_CARRIER_SPECIALIZATIONS.md) | Exact quadratic-field specialization of all exposed lower-Laurent kernels/cokernels, quartic defect compositum, the `294+53=347` full/quotient distinction, and final `7+6` cokernel |
 <!-- status-consumer: PF2CS1 666da98d2d24669e -->
@@ -69,6 +74,12 @@ from certified frontiers of omitted Newton supports, and reports only the
 exact bands that a failed audit still needs.
 
 <!-- status-consumer: CJT1 afb70f90ff10f3d7 -->
+
+<!-- status-consumer: UCBS1 824720a8f727bdf8 -->
+
+<!-- status-consumer: LCDS1 5b4d92acd50d6c41 -->
+
+<!-- status-consumer: PF2LNP1 e4f0f231bf7494d5 -->
 
 Current scoped conclusion:
 

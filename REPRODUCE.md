@@ -1044,6 +1044,26 @@ identities.  The leading layer exposes the quadratic obstruction directly,
 and two further unit-ideal checks eliminate both one-sided nonconstant-`C`
 boundary charts.
 
+## Collision-axis unimodular frontend
+
+Verify the normalized one-variable reduction, the sharp three-occurrence
+pure-axis bound, the exact minimum elementary length two, and the induced
+pruning of the pinned degree-seven support ledger with:
+
+```bash
+.venv/bin/python scripts/verify_collision_axis_unimodular_frontend.py
+```
+
+The audit shows that the elementary orbit problem itself is trivial and that
+the zero-moment constraint is not preserved by the relative elementary
+action.  The useful gate is instead
+`gcd(h_1',h_2',h_3')=1` for `h(t)=F(t*e_1)`.  It eliminates all balanced
+supports of sizes four and five and leaves `900` labelled (`450` orbit)
+supports in size six.  It does not strengthen the already proved global lower
+bound seven, because completion over `k[t]` and first-jet integrability impose
+no further obstruction.  See
+[`COLLISION_AXIS_UNIMODULAR_FRONTEND.md`](extended-geometry/COLLISION_AXIS_UNIMODULAR_FRONTEND.md).
+
 ## Global low-degree support census below `(7,6,4)`
 
 Generate the eight support-first stage ledgers and their manifest with:
@@ -8673,6 +8693,78 @@ candidate is promoted to the nonlinear-`U` translated-incidence equations.
 
 ## Plane degree-frontier audit
 
+The universal logarithmic boundary-purity theorem and the two exact
+matching-cokernel countermodels are checked by:
+
+```bash
+.venv/bin/python scripts/verify_universal_boundary_saturation.py
+```
+
+The written proof identifies the logarithmic cotangent cokernel on every
+resolved SNC plane Keller compactification as a perfect codimension-one
+module.  The checker verifies the finite nodal-tree presentations showing
+that the same conclusion does not follow for an arbitrary conductor/gauge
+matching matrix.
+
+<!-- status-consumer: UCBS1 824720a8f727bdf8 -->
+
+The log-conductor degree shift, determinant-insufficiency models, boundary
+blowup factors, and normalized `(75,125)` terminal bracket are checked by:
+
+```bash
+.venv/bin/python scripts/verify_log_conductor_degree_shift.py
+```
+
+The written theorem places normalization mismatches in `H_Z^1` and proves
+that the complete normalized logarithmic determinant has zero conductor
+mismatch.  The checker exhibits two integrable Jacobian matrices with the
+same determinant and generic branch data but different nodal `Fitt_1`
+profiles.  It is an exact local regression for the new full-matrix/localized-
+`c_2` target, not a proof of `JC(2)`.
+
+<!-- status-consumer: LCDS1 5b4d92acd50d6c41 -->
+
+The exact F2 terminal logarithmic node profiles and the corrected two-blowup
+interior attachment count are checked by:
+
+```bash
+.venv/bin/python scripts/verify_f2_log_node_profiles.py
+.venv/bin/python plane-jc/cas/verify_f2_75_125_global_attachment.py
+.venv/bin/python plane-jc/cas/test_f2_75_125_global_attachment.py
+```
+
+The first command derives the transverse coefficient orders `0,-2,-2,+1`
+directly from the terminal rational functions, verifies the tame exponent
+matrices at both nodes of every interior chain, and applies Keller boundary
+support to identify the smooth endpoint cokernel as `R/(w^3)`.  The second
+and third replay
+the corrected 19/31-component principal source lower bounds.  Intentional
+regeneration of the pinned JSON uses
+`plane-jc/cas/verify_f2_75_125_global_attachment.py --refresh`; its current
+whole-file SHA-256 is
+`419c970e322b16e1bfb6403dc36b1a38b95eb9a52403def6b7ee067c42fe8ddc`.
+
+<!-- status-consumer: PF2LNP1 e4f0f231bf7494d5 -->
+
+The exact F2 carrier, principal-arm, and spectator logarithmic profiles are
+checked by:
+
+```bash
+.venv/bin/python scripts/verify_f2_carrier_log_node_profiles.py
+```
+
+The command derives the two carrier target-node normal coordinates, verifies
+the order pairs `(-1,1)`, `(-1,3)`, and `(-4,5)`, constructs the exact common
+regular fans, and checks that every marked local exponent determinant is
+`1`, `3`, or `5`.  It then inserts six missing components on each principal
+arm, two squarefree spectator branches, or the five-component double-row
+attachment, and rechecks unimodularity, Hodge inertia, and integral
+adjunction.  The resulting `27/48`-component graphs are lower bounds; the
+upstream carrier-extraction chain, outgoing terminal tail, affine purity row,
+and uncompiled global centers are outside this theorem.
+
+<!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
+
 The fixed-coordinate normalized sparse-support exclusions are replayed by:
 
 ```bash
@@ -8759,7 +8851,7 @@ carrier maps, and prove the squarefree simple spectators are unramified.
 The lower-band realization, purity row, global degree, and global meridians
 remain unknown.
 <!-- status-consumer: PF2CW1 a7774b0fa736b64c -->
-<!-- status-consumer: PF2GA1 cbca9b6c44a2bc7e -->
+<!-- status-consumer: PF2GA1 57dea3062b1147fb -->
 
 The carrier-specialization pair performs the exact next handoff.  It routes
 the squarefree rational carrier outside the descent-eight double-root
@@ -9350,7 +9442,11 @@ The combined programme is
 Its exact first calculation identifies the cotangent determinant
 \(\det\operatorname{Hess}(tP+mQ+H)=J(P,Q)^2\), the first isotropic Schur
 remainder \(-\Phi_{mm}R(P)\), and the quartic packet's reduced conormal
-residue \(2\ell\).  The completed continuation computes the \(3+1\) cusp
+residue \(2\ell\). It also verifies that every source-only Hessian direction
+preserves the cotangent determinant and gives a square-zero relative
+endomorphism. Together with `HC4MR1`, this is the exact restricted
+equivalence `HC4MR2`: `JC2` is equivalent to pencil-admissible `HC4`.
+The completed continuation computes the \(3+1\) cusp
 and both \(2+2\) connector initials, proves that the relevant positive
 associated-graded conductor maps are isomorphisms, and finds
 \(\operatorname{Obs}_{\rm pair}=0\) for all 72 monodromy-compatible
@@ -9359,7 +9455,26 @@ labellings.  Run:
 ```bash
 .venv/bin/python scripts/verify_jc2_hc4_isotropic_boundary_bridge.py
 .venv/bin/python scripts/verify_jc2_hc4_global_jet_transport.py
+.venv/bin/python scripts/verify_hc4_rank_one_pencil_recognition.py
+.venv/bin/python scripts/verify_hc4_diagonal_rank_one_pencil_obstruction.py
 ```
+
+The third command verifies `HC4MR3`: the coefficient quadrics of
+`ell^T*adj(Hess(psi))*ell` define the constant-null-covector scheme; any
+projective point supplies a square-zero rank-one pencil. It checks the
+universal determinant identity, a nonlinear cotangent control, an oblique
+linear rechart, and the four exact projective Groebner charts. This is a
+sufficient pencil-recognition gate, not a proof that every HC4 potential
+passes it.
+
+The fourth command verifies `HC4MR4`, the first application to the direct
+degree-five open problem.  It retains arbitrary lower quartic, cubic, and
+quadratic coefficients on the diagonal rank-three Schur packet and extracts
+six lower-independent metric coefficients.  Their three channel squares and
+three immutable `t^2` squares prove that every nonaligned prolongation has an
+empty constant-null-covector scheme.  The calculation rules out this
+rank-one recognition method on the packet; it does not rule out the packet
+or higher-rank/nonlinear pencil directions.
 
 This does not verify isotropic-flag recognition for an arbitrary
 four-variable potential.  It proves instead that the proposed local
@@ -9990,6 +10105,19 @@ compositions, coefficient-dependent repairs, or general coisotropic
 embeddings.  See
 [`HC4_MIXED_CANONICAL_PIVOT_SEARCH.md`](HC4_MIXED_CANONICAL_PIVOT_SEARCH.md).
 
+The exact canonical primitives used by that search and by the DC2
+Hessian-symbol optimizer now share one convention-explicit implementation.
+Check its rank-two/rank-three Poisson signs, mixed-line alphabet, exact word
+inverses, and symplectic identities with:
+
+```bash
+.venv/bin/python scripts/verify_canonical_transform_search.py
+```
+
+The two consumers retain separate Hessian/collision and
+symplectic/Weyl/nonsurjectivity gates; see
+[`HC4_DC2_CANONICAL_SEARCH_PROTOCOL.md`](HC4_DC2_CANONICAL_SEARCH_PROTOCOL.md).
+
 The first genuinely compositional continuation is:
 
 ```bash
@@ -10130,6 +10258,32 @@ descended-determinant calculation is reached.  This is the bounded result
 `HC4MCP8`; arbitrary rational parameters and general coisotropic embeddings
 remain open.  See
 [`HC4_NONCOORDINATE_COISOTROPIC_GATE.md`](HC4_NONCOORDINATE_COISOTROPIC_GATE.md).
+
+Search the direct affine-unit scalar and unimodular polynomial matrix-pivot
+objectives on the nonlinear parent-preserving `HC4MCP6` family with:
+
+```bash
+PYTHONHASHSEED=0 PYTHONPATH=scripts .venv/bin/python \
+  scripts/search_hc4_nonlinear_unit_schur_blocks.py \
+  --output \
+  artifacts/generated-results/hc4_nonlinear_unit_schur_blocks.json
+```
+
+The 54 reverse-order cubic--quadratic support/sign patterns have exact
+parent-constant resonances `a=+/-1/2` or `a=+/-1/4`; the search specializes
+`b` to `{-2,-1,1,2}`, giving 216 genuinely nonlinear constant-Hessian
+charts.  It exhausts the 364 projective directions in
+`({-1,0,1}^6-{0})/{+/-1}`.  None of the 78624 scalar trials has a constant
+nonzero second directional derivative.  Exact symbolic filtering leaves
+4968 cubic-null directions and 32360 distinct candidate two-planes.  All
+but 72 restricted Hessian determinants have modular nonconstancy witnesses;
+the 72 reciprocal near misses are jointly quadratic exactly, but each full
+determinant is a nonconstant degree-twelve, 28-term polynomial.  Thus the
+box contains no scalar unit pivot and no unimodular polynomial `2x2` Schur
+block.  This is `HC4MCP9`, not a classification of arbitrary coefficients,
+directions, longer words, or polynomial symplectomorphisms.  The generated
+artifact hash is
+`7f235d427e0cf63e3aeddf198d6ade72c5478ae90774d526fb3a5610dae9286e`.
 
 The direct one-variable calculation for the `PC(2)` graph is:
 

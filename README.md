@@ -104,6 +104,18 @@ calculation eliminates the four profiles of maximum degree at most two.  The
 cardinality-unbounded support census remains open, so the existing weighted
 and other template-specific searches are not superseded.
 
+The [collision-axis unimodular frontend](extended-geometry/COLLISION_AXIS_UNIMODULAR_FRONTEND.md)
+now isolates the universal one-variable gate before that support search.  It
+proves a sharp degree-independent lower bound of three nonlinear pure-axis
+occurrences and gives the exact binomial resultant test in the equality case.
+Unrestricted elementary equivalence is too coarse: all unimodular columns lie
+in one orbit, and the proposed normalized zero-moment elementary length has
+minimum two.  Nevertheless the axis gate removes every determinant-balanced
+size-four and size-five support in the pinned census and reduces the size-six
+row from `1,694` labelled supports to `900` before coefficient algebra.  Axis
+completion and first-jet integrability are automatic; the remaining gate is a
+global transverse determinant-one lift.
+
 For Gaussian moments, Long's explicit five-term polynomial settles GMC
 negatively in three real variables and, by adjoining unused coordinates, in
 every dimension `n>=3`.  Broad high-dimensional searches are archived.
@@ -3894,6 +3906,33 @@ development:
     unrestricted `HC4`, because an arbitrary constant-Hessian polynomial need
     not lie in such an auxiliary pencil.
 
+    `HC4MR2` makes the fixed-dimensional consequence exact. If `PHC4` denotes
+    `HC4` restricted to potentials admitting a nonzero polynomial Hessian
+    direction along which the Hessian determinant stays constant, then
+    `JC2` is equivalent to `PHC4`. Every plane cotangent potential lies in
+    the square-zero part of this class: any source-only direction preserves
+    the block determinant. Thus the unrestricted converse `JC2 => HC4` is
+    isolated as a pencil-recognition problem, not left as an informal
+    resemblance between the two reductions.
+
+    `HC4MR3` supplies the first exact recognition frontend. For a direct
+    potential `psi`, the coefficients of
+    `ell^T adj(Hess(psi)) ell` cut out a projective quadratic scheme in the
+    constant covector `ell`. Any point gives the rank-one direction
+    `A=(ell.x)^2/2`, whose relative endomorphism is square-zero, and therefore
+    reduces the potential to `JC2` through `HC4MR2`. Nonemptiness is decided
+    by four exact Groebner charts. Cotangent potentials contain a whole
+    projective null line; an empty scheme leaves higher-rank recognition open.
+
+    `HC4MR4` applies that frontend to the first live direct quintic test.  On
+    the diagonal nonsquarefree rank-three top, the Schur face has three cubic
+    channels.  Six lower-independent coefficients of the inverse-Hessian
+    metric numerator show that every nonaligned prolongation has empty
+    constant-null-covector scheme, including the one- and two-channel
+    boundaries.  This is a method obstruction, not a direct-quintic
+    exclusion: that packet now specifically requires a higher-rank or
+    nonlinear pencil direction, or a collision-preserving rechart.
+
     The unrestricted direct filtration supplies the complementary progress.
     `HC4DIR2` eliminates squarefree rank-three top Hessians in every degree,
     and `HC4DIR27` eliminates the repeated-linear strata stated above.  Its
@@ -3922,9 +3961,22 @@ development:
     first-transverse coefficients.  An exact graph can already preserve the
     marked collision and flatten the determinant on the whole plane, so the
     live gate is transverse compatibility, not collision containment.
+    The complementary nonlinear-canonical route now reaches direct oblique
+    unit blocks.  `HC4MCP6` supplies 54 exact nonlinear parent-preserving
+    cubic--quadratic resonance families.  `HC4MCP9` tests 216 small
+    coefficient specializations against all 364 projective directions in
+    the signed-unit box: no scalar second directional derivative is a
+    nonzero constant, and none of the 32,360 candidate two-planes has a
+    unimodular polynomial Hessian block.  The 72 modular near misses are
+    exact jointly quadratic planes, but their block determinants are
+    nonconstant degree-twelve polynomials.  This is a finite box, not an
+    exclusion of coefficient-dependent directions or general polynomial
+    symplectomorphisms.
     See the
     [graph-obstruction note](HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md) and the
-    [quintic Schur-frontier note](HC4_MENG_YANG_QUINTIC_SCHUR_FRONTIER.md).
+    [quintic Schur-frontier note](HC4_MENG_YANG_QUINTIC_SCHUR_FRONTIER.md),
+    together with the
+    [mixed canonical-pivot search](HC4_MIXED_CANONICAL_PIVOT_SEARCH.md).
 
 13. `QHNW1` gives the first theorem-sized Waring-rank floor for the
     six-variable homogeneous quartic HN search.  No essential example has
@@ -4365,6 +4417,11 @@ factorwise Weyl lift escapes by one monomial.  Thus they calibrate a false
 positive of the restricted score rather than supply a `DC_2` candidate.  The
 next genuinely different gates are a higher-nilpotence Cayley-integrable
 family or polynomial rank-two admission of the reciprocal `R21` packet.
+The [shared canonical-search protocol](HC4_DC2_CANONICAL_SEARCH_PROTOCOL.md)
+now makes the Hamiltonian word engine common to the HC4 and DC2 searches.
+Invertible words are treated as orbit/polarization controls with factorwise
+Weyl lifts; they are rejected as DC2 candidates before any moving-symbol
+obstruction is interpreted.
 
 The first higher-nilpotence continuation is now exact.  The
 [regular-index-four frontier](extended-geometry/DC2_HIGHER_NILPOTENCE_R21_FRONTIER.md)

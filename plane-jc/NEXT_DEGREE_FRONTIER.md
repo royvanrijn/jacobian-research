@@ -181,8 +181,12 @@ Open work, in dependency order:
    shared carrier `(-5,1)`, and six further blowups at each marked carrier
    point extract a principal arm.  It also completes the four-blowup target
    boundary with weights `(-2,-2,-1,-3,-2)`.  Each terminal source component
-   has five forced boundary neighbors.  The one/two-packet minimal principal
-   source graphs have `(components,leaves)=(16,6)/(25,10)`, while the two live
+   has five forced boundary neighbors.  Exact transverse orders show that
+   every interior neighbor needs two source blowups and is log-etale after
+   resolution; the remaining smooth endpoint is the cyclic thickening
+   `R/(w^3)` with zero normalization defect.  The one/two-packet principal
+   source terminal-resolved skeletons have
+   `(components,leaves)=(19,6)/(31,10)`, while the two live
    normalization equations are `d=6+rho_T` and `d=12+rho_T`.  Candidate mode
    rejects the former distinct-target row and runs the class-group, unit,
    canonical, purity, spectator, finite-normalization, and meridian gates once
@@ -192,10 +196,16 @@ Open work, in dependency order:
    squarefree value `R=(v^2-3v+3)/25`, whose carrier map is the cyclic cubic
    `1+1/(v-1)^3`, so both simple spectators are unramified.  On the double
    row it forces `rho^2-3rho+1=0`; the degree-six carrier map is exactly the
-   terminal Belyi map after a linear source change.  The next task is to
-   impose these three exact carrier points on the lower Laurent system and
-   supply the affine purity row and global branch cycles.  The degree pair
-   `(75,125)` remains unexcluded.
+   terminal Belyi map after a linear source change.  The
+   [`carrier log-node theorem`](F2_CARRIER_LOG_NODE_PROFILE.md) now resolves
+   the two squarefree spectator branches, the double-row fivefold point, and
+   the common fan on every principal arm.  All marked exponent determinants
+   are `1`, `3`, or `5`; the refined lower bounds are
+   `(components,leaves)=(27,8)/(48,11)`.  The live geometric support is the
+   upstream carrier-extraction chain, outgoing terminal tail, affine purity
+   row, and uncompiled global centers.  The independent coefficient route
+   still must impose the exact carrier points on the lower Laurent system.
+   The degree pair `(75,125)` remains unexcluded.
    The
    [`common-power carrier theorem`](COMMON_POWER_CARRIER_WRONSKIAN.md)
    now makes this reusable: for every primitive degree-`k` common edge with
@@ -221,7 +231,9 @@ Open work, in dependency order:
    <!-- status-consumer: PF2NF1 cfd1da5136c0b6d0 -->
    <!-- status-consumer: PCW1 94b10929118f151d -->
    <!-- status-consumer: PF2CW1 a7774b0fa736b64c -->
-   <!-- status-consumer: PF2GA1 cbca9b6c44a2bc7e -->
+   <!-- status-consumer: PF2GA1 57dea3062b1147fb -->
+   <!-- status-consumer: PF2LNP1 e4f0f231bf7494d5 -->
+   <!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
    <!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 3. **Retire the excluded `(96,144)` repeated-tail branch.**  The source
    statements are now reconciled in

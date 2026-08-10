@@ -220,6 +220,26 @@ class Support:
             counts[component] != 1 for component in range(3) if component != axis
         )
 
+    def collision_axis_unimodularity_possible(self, axis: int = 0) -> bool:
+        """Support-level necessity for a unimodular collision-axis column.
+
+        If every component transverse to ``axis`` has zero pure-axis support,
+        then ``d/dt F(t e_axis)`` has only its ``axis`` component.  The
+        collision moment prevents that component from being a unit, so the
+        column cannot be unimodular.  Passing this test is not sufficient:
+        the nonzero derivative components may still have a coefficient-
+        dependent common factor.
+        """
+
+        if not self.collision_support_possible(axis):
+            return False
+        counts = self.collision_axis_counts(axis)
+        return any(
+            counts[component] > 0
+            for component in range(3)
+            if component != axis
+        )
+
     def swapped_23(self) -> "Support":
         """Residual simultaneous source/target swap fixing the e1 collision."""
 

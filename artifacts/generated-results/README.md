@@ -2037,7 +2037,7 @@ binary GVC without using these bounded searches.
   six-blowup carrier `(-5,1)` and a six-blowup arm at each principal carrier
   center, and completes the four-blowup target boundary chain with weights
   `(-2,-2,-1,-3,-2)`.  It also records the five marked source-neighbor slots,
-  the exact 16- and 25-component minimal principal graphs, the two live
+  the exact 19- and 31-component principal lower-bound graphs, the two live
   finite-normalization equations, the target-valuation exclusion of the
   distinct-target double row, and the strict input contract for candidate
   class/unit/canonical, purity, spectator, and meridian audits.  Generate or
@@ -2045,10 +2045,11 @@ binary GVC without using these bounded searches.
   `plane-jc/cas/verify_f2_75_125_global_attachment.py`; run
   `plane-jc/cas/test_f2_75_125_global_attachment.py` for gate regressions.
   Intentional regeneration uses `--refresh`.  Its whole-file SHA-256 is
-  `9a0c2d3783579f459698241efa017c34ab7676203c6845a03568cc4bbb3da775`.
+  `419c970e322b16e1bfb6403dc36b1a38b95eb9a52403def6b7ee067c42fe8ddc`.
   The artifact is an exact incomplete-obligation report, not a global
   completion or an exclusion of `(75,125)`.
-  <!-- status-consumer: PF2GA1 cbca9b6c44a2bc7e -->
+  <!-- status-consumer: PF2GA1 57dea3062b1147fb -->
+  <!-- status-consumer: PF2LNP1 e4f0f231bf7494d5 -->
 - `jc2_f2_75_125_carrier_wronskian.json` records the exact continuation at
   the generic source carrier.  It proves that seven pre-target coefficients
   are removable target shears, that the first nonshear coefficient occurs at

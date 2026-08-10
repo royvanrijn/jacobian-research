@@ -22,7 +22,15 @@ The first global compiler is now implemented in
 It tracks the translated terminal chart back to the nonmonomial original
 valuation `nu(x),nu(y_old),nu(x*y_old^5-c)=(-25,5,12)`.  Six blowups extract
 the carrier `(-5,1)` and six more at `v=xy_old^5=c` extract each principal
-arm.  The compiler completes these source class/unit/canonical skeletons,
+arm.  The logarithmic node-profile correction resolves each interior
+attachment with two, not one, source blowups.  The subsequent carrier-profile
+theorem adds the necessary common fans along each principal arm and the
+carrier-local spectator/fivefold branches, strengthening the lower bounds
+from `19/31` to `27/48` components.  All marked terminal, carrier-local,
+aligned-arm, and spectator node log cokernels vanish.  Boundary
+support also identifies the smooth endpoint cokernel as `R/(w^3)` with zero
+normalization defect.  The compiler
+completes these source class/unit/canonical skeletons,
 the four-blowup target ledger, and the five marked neighbors per terminal
 component.  The target valuation `(5,2)` is unique, so the two double-root
 arms necessarily share it and force degree at least twelve.  The subsequent
@@ -32,7 +40,9 @@ extracts `(5,36)`, forces `R=(v^2-3v+3)/25` in the squarefree case and
 as a cyclic cubic and the terminal degree-six Belyi map.  The purity row,
 lower-band realization, and global meridians remain missing.
 <!-- status-consumer: PF2CW1 a7774b0fa736b64c -->
-<!-- status-consumer: PF2GA1 cbca9b6c44a2bc7e -->
+<!-- status-consumer: PF2GA1 57dea3062b1147fb -->
+<!-- status-consumer: PF2LNP1 e4f0f231bf7494d5 -->
+<!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
 
 The three exact replays are:
 
@@ -261,17 +271,18 @@ from contact multiplicities.
 
 ## 6. Remaining gap
 
-The F2 route is reopened, but only at the global level.  The immediate tasks
-are:
+The F2 route is open only at the unresolved global support.  The immediate
+tasks are:
 
-1. determine the first normal order and inertia of the two squarefree
-   spectator points `v=rho_1,rho_2` on the compiled carrier; both principal
-   proximity chains and the target `(5,2)` completion are now explicit;
-2. determine how the one-chain row sits with the simple `R` spectator orbits;
-3. add any spectator/purity resolution branches to the compiled source
-   class-group/unit/canonical skeleton and submit the result to candidate mode;
-4. identify which descendants, if any, map to affine nonproperness curves;
-5. then run finite-normalization and global meridian filters.
+1. transport the full logarithmic matrix through the upstream six-blowup
+   carrier-extraction chain;
+2. resolve the outgoing tail beyond the terminal `s=0` node and its transition
+   to the target `(5,2)` fan;
+3. construct the purity-forced affine ramification row and its companion;
+4. add any remaining global resolution centers to the source
+   class-group/unit/canonical skeleton; and
+5. run the localized-second-Chern, finite-normalization, and global meridian
+   filters.
 
 Thus the live global ledger has one squarefree case with one principal packet
 and one double-root case with two identical packets over the unique target

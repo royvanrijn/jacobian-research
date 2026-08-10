@@ -42,6 +42,7 @@ The attempted Newton/boundary bridge is replayed by:
 .venv/bin/python plane-jc/cas/verify_f2_a6_simple_spectator_gluing.py
 .venv/bin/python plane-jc/cas/verify_f2_75_125_global_attachment.py
 .venv/bin/python plane-jc/cas/test_f2_75_125_global_attachment.py
+.venv/bin/python scripts/verify_f2_carrier_log_node_profiles.py
 .venv/bin/python plane-jc/cas/verify_f2_75_125_carrier_wronskian.py
 .venv/bin/python plane-jc/cas/test_f2_75_125_carrier_wronskian.py
 .venv/bin/python plane-jc/cas/verify_f2_75_125_carrier_specializations.py
@@ -85,14 +86,25 @@ The retained contact-only warning is
 The final attachment compiler tracks the translated terminal normal to the
 original nonmonomial orders `(-25,5,12)`, constructs the six-blowup carrier,
 the six-blowup principal arms and the target extraction fan, orients all five
-endpoint/interior attachment slots, and emits the two live global
+endpoint/interior attachment slots, and uses the exact transverse order
+`-2` to resolve every interior slot by two source blowups.  This gives the
+corrected 19/31-component principal lower-bound trees and emits the two live global
 normalization cases plus an audited rejection of the distinct-target double
 case by target-valuation uniqueness.  Its optional `--candidate FILE.json` mode
 rejects incomplete geometry and checks declared source class/unit/canonical,
 purity, spectator, and meridian data.  Passing remains a necessary-gate
 result, not a constructed Keller map; see
 [`../F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md`](../F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md).
-<!-- status-consumer: PF2GA1 cbca9b6c44a2bc7e -->
+<!-- status-consumer: PF2GA1 57dea3062b1147fb -->
+<!-- status-consumer: PF2LNP1 e4f0f231bf7494d5 -->
+The carrier-profile command continues the exact log-matrix audit through the
+marked carrier points and principal arms.  It constructs the common regular
+fans, verifies local determinants `1`, `3`, and `5`, and strengthens the
+source-boundary lower bounds to `27/48` components.  It does not compile the
+upstream carrier-extraction chain, outgoing terminal tail, affine purity row,
+or other global centers; see
+[`../F2_CARRIER_LOG_NODE_PROFILE.md`](../F2_CARRIER_LOG_NODE_PROFILE.md).
+<!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
 The carrier-Wronskian commands continue from that skeleton at the generic
 carrier.  They remove the seven rational target shears before descent 36,
 solve the resulting low-degree Wronskian, extract target ray `(5,36)`, and

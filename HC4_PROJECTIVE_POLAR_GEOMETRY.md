@@ -1367,6 +1367,15 @@ On the diagonal nonsquarefree top, the intersection is explicit: the Schur
 pair has three diagonal cubic channels and affine coverage forces at least
 one channel to vanish.
 
+The zero-metric branch does not survive this diagonal calibration.  Applying
+the rank-one recognition scheme `HC4MR3` through the next immutable metric
+face, `HC4MR4` shows that every nonaligned diagonal Schur prolongation has
+empty projective constant-null-covector scheme, including the one-channel
+and two-channel boundaries.  This does not exclude a direct quintic
+candidate; it shows that the diagonal packet can enter the restricted
+`JC2 <=> PHC4` theorem only through a higher-rank or nonlinear pencil
+direction, or after a collision-preserving rechart.
+
 For a marked collision, `HC4RSD7` makes the affine coverage intersection
 empty before lower faces: every affine pivot fiber has a ternary
 constant-Hessian restriction, and `HC3` separates its tangential gradient.

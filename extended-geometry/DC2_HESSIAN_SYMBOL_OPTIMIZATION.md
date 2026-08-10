@@ -32,6 +32,14 @@ by
 \tag{1}
 \]
 
+The exact Poisson, mixed-line generator, shear, word-composition, and
+symplectic-verification primitives are shared with the HC4 mixed-canonical
+search. See the
+[shared canonical-search protocol](../HC4_DC2_CANONICAL_SEARCH_PROTOCOL.md).
+In particular, every invertible Hamiltonian word is an automorphism control,
+not a `DC_2` candidate, and its factorwise Weyl lift must be included before
+interpreting a restricted moving-symbol obstruction.
+
 The parent family calculation already says that the old quintic survivor is
 globally killed at order seven; see the
 [relative family package](QUANTUM_RESIDUE_OBSTRUCTION.md#12-relative-family-package).

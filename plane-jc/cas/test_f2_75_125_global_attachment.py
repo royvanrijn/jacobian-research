@@ -150,9 +150,9 @@ assert case_records["double_distinct_targets"]["status"] == "excluded_by_target_
 assert payload["target_local_fan"]["terminal_self_intersection_in_this_local_fan"] == -1
 assert len(payload["attachment_slots"]) == 5
 assert sum(slot["forces_new_interior_branch"] for slot in payload["attachment_slots"]) == 3
-assert topology_bounds(1)["minimum_source_boundary_components"] == 16
+assert topology_bounds(1)["minimum_source_boundary_components"] == 19
 assert topology_bounds(1)["minimum_source_boundary_leaves"] == 6
-assert topology_bounds(2)["minimum_source_boundary_components"] == 25
+assert topology_bounds(2)["minimum_source_boundary_components"] == 31
 assert topology_bounds(2)["minimum_source_boundary_leaves"] == 10
 
 synthetic = synthetic_squarefree_candidate()
@@ -183,6 +183,6 @@ assert "product one" in " ".join(bad_meridian_audit["global_meridians"]["reasons
 
 print("PASS: F2 target fan orients both toric node attachments")
 print("PASS: source valuation compiles as a six-blowup carrier plus principal arm")
-print("PASS: one/two terminal packets force the 16/25-component proximity trees")
+print("PASS: one/two terminal packets force the 19/31-component proximity trees")
 print("PASS: candidate mode separates passing, incomplete, and excluded ledgers")
 print("PASS: class/unit/canonical and meridian gates reject malformed candidates")

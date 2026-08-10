@@ -98,8 +98,30 @@ This policy applies only to searches for two-dimensional Keller maps.
     with an étale spectator and saturated Euler budget.  The usable
     obstruction must retain the global distinguished `A2` open, its trivial
     unit group, the free boundary class group, and connected monodromy.
-11. Rank future degree-frontier work by the tables in
-   [FRONTIER_CLOSING_ATTACKS.md](FRONTIER_CLOSING_ATTACKS.md) and
+11. Make the full nodal logarithmic matrix the primary Plane-JC theorem
+    target.  The logarithmic cotangent cokernel is pure Cohen--Macaulay, but a
+    conductor mismatch lives naturally in degree-one local cohomology and
+    cannot be lifted faithfully into its degree-zero torsion.  The complete
+    determinant divisor and generic branch Smith profiles are insufficient:
+    compile `Fitt_1`, the normalization defect, and the localized second
+    Chern length at every node.  Type-I bracket nonvanishing alone is not a
+    finite-support residue; the `(75,125)` terminal bracket normalizes to
+    one.  Use
+    [`LOG_CONDUCTOR_DEGREE_SHIFT.md`](LOG_CONDUCTOR_DEGREE_SHIFT.md) and
+    [`F2_LOG_NODE_PROFILE.md`](F2_LOG_NODE_PROFILE.md) for the terminal
+    profiles.  The
+    [`F2 carrier profile`](F2_CARRIER_LOG_NODE_PROFILE.md) closes the marked
+    carrier, aligned principal-arm, and spectator nodes as tame log-etale and
+    moves the live support to the upstream carrier-extraction chain, outgoing
+    terminal tail, affine purity row, and uncompiled global centers.  Use
+    [`UNIVERSAL_COMPLETE_CHAIN_BOUNDARY_SATURATION.md`](UNIVERSAL_COMPLETE_CHAIN_BOUNDARY_SATURATION.md)
+    as the claim boundary.
+    <!-- status-consumer: UCBS1 824720a8f727bdf8 -->
+    <!-- status-consumer: LCDS1 5b4d92acd50d6c41 -->
+    <!-- status-consumer: PF2LNP1 e4f0f231bf7494d5 -->
+    <!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
+12. Rank residual degree-frontier regression work by the tables in
+    [FRONTIER_CLOSING_ATTACKS.md](FRONTIER_CLOSING_ATTACKS.md) and
    [NEXT_DEGREE_FRONTIER.md](NEXT_DEGREE_FRONTIER.md).
    The pair \((75,125)\) is the first numerical maximum.  Its selected F2
    chain now has a certified `(e,f)=(1,6)` terminal row, so its live priority
@@ -111,9 +133,9 @@ This policy applies only to searches for two-dimensional Keller maps.
    route, not a prerequisite for that gluing.  Multiple chains at
    \((84,126)\), \((90,135)\), and \((96,144)\) may still offer reusable
    structural tests.
-   <!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
-   <!-- status-consumer: PWB7 19f4f4ffc96227a3 -->
-   <!-- status-consumer: CJT1 afb70f90ff10f3d7 -->
+    <!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
+    <!-- status-consumer: PWB7 19f4f4ffc96227a3 -->
+    <!-- status-consumer: CJT1 afb70f90ff10f3d7 -->
 
 The frontier is a lower bound, not an attainability prediction.  Search
 documentation must keep JC(2) separate from the repository's JC(3)

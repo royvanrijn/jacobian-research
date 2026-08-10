@@ -50,6 +50,14 @@ from typing import Iterable, Sequence
 
 import sympy as sp
 
+from canonical_transform_search import (
+    canonical_poisson_matrix,
+    exact_invariant_shear,
+    mixed_line_hamiltonians,
+    poisson_bracket as shared_poisson_bracket,
+    pullback_polynomial,
+)
+
 
 PRIME = 1_000_003
 TAU_BOX = (-2, -1, 1, 2)
@@ -68,6 +76,7 @@ p = sp.symbols("u v w")
 variables = q + p
 x, y, z = q
 u, v, w = p
+POISSON = canonical_poisson_matrix(3, q_p_bracket=1)
 
 
 unit = 1 + x * y
@@ -93,23 +102,29 @@ class Chart:
 
 
 def poisson_bracket(left: sp.Expr, right: sp.Expr) -> sp.Expr:
-    return sp.expand(
-        sum(
-            sp.diff(left, q_i) * sp.diff(right, p_i)
-            - sp.diff(left, p_i) * sp.diff(right, q_i)
-            for q_i, p_i in zip(q, p, strict=True)
-        )
+    return shared_poisson_bracket(
+        left,
+        right,
+        variables,
+        POISSON,
     )
 
 
 def charts() -> Iterable[Chart]:
     """Yield the complete declared finite chart box without duplicates."""
 
-    for source_index, dual_index, epsilon, degree, tau in product(
-        range(3), range(3), (-1, 1), (2, 3), TAU_BOX
+    for letter in mixed_line_hamiltonians(
+        q,
+        p,
+        degrees=(2, 3),
+        coefficients=TAU_BOX,
     ):
-        linear = q[source_index] + epsilon * p[dual_index]
-        hamiltonian = tau * linear**degree
+        source_index = letter.source_index
+        dual_index = letter.dual_index
+        epsilon = letter.epsilon
+        degree = letter.degree
+        tau = letter.coefficient
+        hamiltonian = letter.hamiltonian
         yield Chart(
             chart_id=(
                 f"one-q{source_index}-p{dual_index}-e{epsilon:+d}"
@@ -185,20 +200,12 @@ def charts() -> Iterable[Chart]:
 def time_one_pullback(hamiltonian: sp.Expr) -> sp.Expr:
     """Return base_potential after the exact time-one Hamiltonian shear."""
 
-    substitution: dict[sp.Symbol, sp.Expr] = {}
-    for q_i, p_i in zip(q, p, strict=True):
-        substitution[q_i] = sp.expand(q_i + sp.diff(hamiltonian, p_i))
-        substitution[p_i] = sp.expand(p_i - sp.diff(hamiltonian, q_i))
-
-    # All declared Hamiltonians are polynomials in mutually commuting linear
-    # forms, so their gradients are invariant along the Hamiltonian flow.
-    for coordinate in variables:
-        velocity = sp.expand(substitution[coordinate] - coordinate)
-        assert poisson_bracket(hamiltonian, velocity) == 0
-
-    return sp.expand(
-        base_potential.subs(substitution, simultaneous=True)
+    coordinate_map = exact_invariant_shear(
+        hamiltonian,
+        variables,
+        POISSON,
     )
+    return pullback_polynomial(base_potential, coordinate_map, variables)
 
 
 def deterministic_points(dimension: int, count: int = 15) -> tuple[tuple[int, ...], ...]:

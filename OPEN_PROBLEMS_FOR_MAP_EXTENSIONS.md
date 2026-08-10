@@ -302,43 +302,102 @@ See
 and
 [`extended-geometry/QUANTUM_RESIDUE_OBSTRUCTION.md`](extended-geometry/QUANTUM_RESIDUE_OBSTRUCTION.md).
 
-## 4. Plane JC(2): boundary local-cohomology obstruction
+## 4. Plane JC(2): log-conductor and localized-Chern obstruction
 
-The plane boundary compiler now supplies valuation, conductor, dicritical,
-and intersection data.  The numerical `(72,108)` Case-1 systems have since
-been closed by the quotient-first determinantal argument in
-[`JC2_72_108_DETERMINANTAL_CLOSURE.md`](plane-jc/JC2_72_108_DETERMINANTAL_CLOSURE.md).
-The remaining conceptual target is to package an alternate-chart Case-1
-residue, for this or a future boundary stratum, as a section of a coherent
-boundary module that vanishes away from its finite support.
+The degree-independent depth theorem is now proved in
+[`UNIVERSAL_COMPLETE_CHAIN_BOUNDARY_SATURATION.md`](plane-jc/UNIVERSAL_COMPLETE_CHAIN_BOUNDARY_SATURATION.md).
+For any resolved morphism of smooth SNC surface pairs attached to a plane
+Keller map, the logarithmic differential is an injective square map of
+rank-two bundles.  Its cokernel is perfect of codimension one, hence pure
+Cohen--Macaulay and `S1`.  Therefore
 
-The construction target is:
+\[
+H_Z^0(\mathcal T_f^{\log})=0
+\]
 
-1. define a boundary residue/conductor matching map;
-2. let \(M\) be its cokernel, or the corresponding reflexive quotient;
-3. realize the surviving Case-1 residue as a class
-   \(\rho\in H_Z^0(M)\); and
-4. prove
-   \[
-   H_Z^0(M)=0
-   \]
-   by depth, normality, intersection theory, or presentation saturation.
+for every zero-dimensional boundary collision locus, uniformly in the
+coordinate degrees and the length of the complete chain.
 
-This would place the plane-JC residue problem in the same
-support-saturation architecture as the degree-forty-two synchronization
-defect and the cubic cotangent defect.
+The same note gives exact constant nodal-tree countermodels to the stronger
+claim that the conductor/gauge matching cokernel is automatically `S1` or
+has positive collision height.  Simultaneous normalization, a tree dual
+graph, and free conductor and jet modules do not control the associated
+primes of an arbitrary matching matrix.
 
-The [plane specialization of the general theorem](verified/SUPPORT_SATURATION_PRINCIPLE.md#plane-jc-conductor-residue)
-shows exactly what must follow construction: \(M\) must be \(S_1\) and
-\(Z\) must have positive relative height on its support. If the entire
+The
+[`log-conductor degree-shift theorem`](plane-jc/LOG_CONDUCTOR_DEGREE_SHIFT.md)
+corrects the proposed comparison.  A normalization mismatch of a
+torsion-free curve module embeds canonically in `H_Z^1`, and admits no
+nonzero `O`-linear lift into `H_Z^0`.  Subtracting the complete logarithmic
+different makes the scalar normalized determinant a global unit with zero
+conductor mismatch.  Nevertheless two genuine local polynomial Jacobian
+matrices can have the same determinant and generic branch Smith profiles
+while their nodal cokernels are the glued node ring and its split
+normalization.  Their `Fitt_1` ideals distinguish them.
+
+The primary conceptual target is therefore the **full nodal logarithmic
+matrix theorem**:
+
+1. transport the complete `2 x 2` logarithmic differential through every
+   Newton/blowup chart, including boundary discrepancies;
+2. compute its nodal `Fitt_1`, normalization defect, and localized second
+   Chern contribution;
+3. identify a terminal Laurent class in that defect and prove it is nonzero;
+4. independently prove that Keller geometry makes the same class descend.
+
+The last two assertions would contradict each other.  Terminal type-I
+determinant nonvanishing alone does not supply item 3: in the `(75,125)`
+terminal block, `[P,Q]_(X,y)=X^4` normalizes to `1`, so its scalar conductor
+mismatch is zero.  Existing degree calculations are regression fixtures for
+the full-matrix/Chern compiler.
+
+The first full local profiles are now known.  In the `(75,125)` terminal
+packet, all three interior target-node attachments have transverse order
+`-2`, require two source blowups, and become log-etale at both nodes of the
+resulting attachment chain.  The endpoint `s=0` is log-etale as well.  At the
+source endpoint `s=infinity` over a smooth target-boundary point, Keller
+boundary support forces the unit-`Fitt_1` cokernel to be exactly `R/(w^3)`
+on a smooth reduced support.  Hence none of the five terminal marked slots
+supplies item 3.
+
+The carrier-local continuation is also complete for both certified F2 rows.
+The two squarefree simple-root spectators require one blowup each; the
+double-row fivefold point requires four carrier-centered blowups and one
+fan-alignment ray; and every principal arm requires six further common-fan
+components.  All resulting exponent determinants are `1`, `3`, or `5`, so
+these nodes are log-etale in characteristic zero.  Together with the
+terminal audit this strengthens the source-boundary lower bounds to `27/48`
+components, but still produces no normalization defect.  The remaining
+candidate support is the upstream carrier-extraction chain, the outgoing
+terminal tail, the affine purity row, uncompiled global centers, and any
+positive remainder forced by a global localized-`c_2` identity.
+
+<!-- status-consumer: UCBS1 824720a8f727bdf8 -->
+
+<!-- status-consumer: LCDS1 5b4d92acd50d6c41 -->
+
+<!-- status-consumer: PF2LNP1 e4f0f231bf7494d5 -->
+
+<!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
+
+An alternative route may retain the original matching cokernel `M`.  The
+[plane specialization of the general theorem](verified/SUPPORT_SATURATION_PRINCIPLE.md#plane-jc-conductor-residue)
+then shows exactly what must follow construction: \(M\) must be \(S_1\) and
+\(Z\) must have positive relative height on its support.  `UCBS1` proves that
+neither property follows merely from a nodal tree, simultaneous
+normalization, or free conductor and jet modules.  They would have to be new
+Keller-specific theorems about the actual matching map.  If the entire
 nonzero matching cokernel is already supported on \(Z\), support saturation
 cannot annihilate it; one must prove componentwise surjectivity or enlarge
 the family.
 
-The order is `P0` (construct the truncation-independent matching module),
-`P1` (construct and localize the residue), `P2` (positive relative height),
-`P3` (`S_1`/associated-prime exclusion), then conditional conclusion `P4`.
-No finite-support wording may skip `P1`'s divisorial-different check.
+For this alternative route, the order remains `P0` (construct the
+truncation-independent matching module), `P1` (construct and localize the
+residue), `P2` (positive relative height), `P3`
+(`S_1`/associated-prime exclusion), then conditional conclusion `P4`.  No
+finite-support wording may skip `P1`'s divisorial-different check.  This
+coefficient-base route is distinct from the surface normalization defect:
+purity of the latter does not prove `P2`--`P3` for the former.
 
 The characteristic-divisible wild-boundary atlas now supplies an explicit
 candidate.  If
@@ -499,12 +558,14 @@ and
 1. Prove the cubic presentation saturation \(N:I^\infty=N\).
 2. Build the restricted filtered deformation complex for the rank-two
    quantization obstruction.
-3. Transport the completed Case-1 bands to the alternate chart, compile the
-   matching map, and construct the plane boundary module and residue class.
+3. Compile the full nodal logarithmic matrices and compare their localized
+   second Chern length with the global Chern identity, using the completed
+   `(72,108)` and `(75,125)` packages as exact regression fixtures.
 
 The first is the smallest exact algebraic certificate already exposed by
 the repository; the second has a strong invariant reformulation; and the
-third is the broadest conceptual unification; its former Newton-band data gap
-is closed, while the map-and-module construction remains open.
+third is the broadest conceptual unification.  The determinant and generic
+Smith data are now proved insufficient; the nodal `Fitt_1` profile is the
+first invariant capable of seeing the required extension defect.
 
 <!-- status-consumer: C1FBC1 0f14ef01fff25097 -->

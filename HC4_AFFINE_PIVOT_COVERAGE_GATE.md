@@ -139,6 +139,15 @@ the inverse Hessian metric:
 
 This is the exact affine-pivot coverage test for a given direct candidate.
 
+The zero-norm branch has a different meaning and is not rejected by this
+theorem. If `N_ell=0`, then
+`A=(ell.x)^2/2` is itself a rank-one square-zero constant-Hessian pencil
+direction. It is the recognition frontend `HC4MR3`, recorded in the
+[relative-pencil master note](HC4_RELATIVE_NILPOTENT_MASTER_REDUCTION.md#first-exact-recognition-frontend).
+Thus the metric numerator has a useful trichotomy: nonzero constant gives the
+affine singular-Schur presentation above, zero gives direct admission to
+`PHC4`, and a nonconstant value gives neither conclusion.
+
 ## 2. Marked collision transfer
 
 Suppose \(p_+\ne p_-\) and
@@ -305,6 +314,14 @@ At \(\alpha=\beta=\gamma=1\), equation (3.4) holds but the coefficient
 rank is three, so Schur divisibility alone does not imply affine-pivot
 coverage. These are leading-face statements, not assertions that any of
 the displayed pairs prolongs to a full HC4 candidate.
+
+The zero-norm recognition branch is strictly smaller than (4.6).  The
+full lower-face calculation `HC4MR4` proves that every nonaligned member of
+the diagonal Schur packet has empty constant-null-covector scheme, even when
+one or two of `alpha,beta,gamma` vanish.  Thus (4.6) remains the exact leading
+gate for a **nonzero constant** affine metric numerator, but it does not
+produce a rank-one zero-norm pencil.  See the
+[direct application](HC4_RELATIVE_NILPOTENT_MASTER_REDUCTION.md#application-to-the-direct-diagonal-quintic-packet).
 
 ## 5. Reproduction and next target
 

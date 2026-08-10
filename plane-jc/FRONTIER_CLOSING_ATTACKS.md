@@ -477,6 +477,40 @@ raise the degree bound, because `(72,108)` is already exactly excluded.
 
 ## Attack E — logarithmic second-Chern defect
 
+The
+[`log-conductor degree-shift theorem`](LOG_CONDUCTOR_DEGREE_SHIFT.md)
+now proves that this is the first intrinsic invariant not already erased by
+the complete determinant ledger.  It exhibits two integrable local
+Jacobian matrices with determinant `uv` and identical generic branch Smith
+profiles whose cokernels are respectively `R/(uv)` and
+`R/(u) direct-sum R/(v)`.  Their nodal `Fitt_1` ideals are `R` and `(u,v)`.
+It also proves that a conductor mismatch belongs naturally to `H_Z^1`, so
+the `H_Z^0` purity theorem cannot replace this calculation.
+
+<!-- status-consumer: LCDS1 5b4d92acd50d6c41 -->
+
+The first terminal-node audit is now complete.  The three interior F2
+attachments have local form `(pi,xi)=(tau*w^-2*unit,w^e*unit)` with
+`e=5,3,3`.  Two source blowups are required; both nodes in each resulting
+chain have invertible tame exponent matrices.  Together with `s=0`, all four
+terminal preimages of target nodes have zero logarithmic cokernel.  At the
+smooth-target endpoint `s=infinity`, boundary support forces the cyclic model
+`R/(w^3)`, whose reduced support is smooth and whose normalization defect is
+also zero.  The carrier continuation now closes the next packet as well: the
+squarefree spectators, the double-row fivefold attachment, and all aligned
+principal-arm nodes have tame exponent determinants `1`, `5`, and `3`.
+Their common fan refinements strengthen the source lower bounds to `27/48`
+components but again have zero normalization defect.  Attack E must therefore
+move to the upstream carrier-extraction chain, the outgoing terminal tail,
+the affine purity row, uncompiled global centers, or a positive global
+localized-second-Chern remainder.  Assigning a positive localized defect to
+any marked terminal, carrier-local, arm, or spectator slot is no longer
+viable.
+
+<!-- status-consumer: PF2LNP1 e4f0f231bf7494d5 -->
+
+<!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
+
 The determinant of the logarithmic differential gives the current
 `R_log=k+1+2p` gate, but a rank-two bundle map has a second invariant.  For
 an SNC completion of `A^2`,
@@ -490,10 +524,12 @@ while the integrated class
 known first Chern classes, these determine the codimension-two Chern
 character of the boundary torsion cokernel.
 
-**Calculation.**  Record the local two-by-two Smith profile of the log
-differential at each boundary generic point and node.  Compute its localized
-second Chern class in two ways: globally from `Q,k,p` and locally from the
-profiles.
+**Calculation.**  In every node chart record the full two-by-two logarithmic
+matrix up to invertible row and column operations, `Fitt_0`, `Fitt_1`, the
+two generic branch elementary divisors, and the normalization-defect length.
+Compute its localized second Chern class in two ways: globally from `Q,k,p`
+and locally from these profiles.  A determinant-only or generic-profile-only
+record is now known to be insufficient.
 
 **Kill criterion.**  The required residual zero-cycle has negative length
 or a length smaller than the forced node contributions.

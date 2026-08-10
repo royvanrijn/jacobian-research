@@ -536,9 +536,41 @@ packet.
 
 ---
 
-## Consequence for `JC2`
+## Exact restricted equivalence with `JC2`
 
-Every plane Keller map
+Define `PHC4` (pencil-admissible `HC4`) to be the following assertion over a
+characteristic-zero field:
+
+> If a four-variable polynomial `psi` has constant nonzero Hessian
+> determinant and admits a polynomial `A` with nonzero Hessian such that
+> \[
+> \det\operatorname{Hess}(\psi+sA)
+> =\det\operatorname{Hess}(\psi)\qquad\text{for all }s,
+> \tag{7.1}
+> \]
+> then `grad(psi)` is injective, equivalently a polynomial automorphism.
+
+The master theorem gives a precise fixed-dimensional equivalence, rather
+than only a similarity of obstruction content:
+
+This is distinct from Meng's
+[Legendre-transform equivalence](https://arxiv.org/abs/math-ph/0308035) of the
+unrestricted Jacobian and Hessian conjecture families. That broad equivalence
+allows the standard dimension-changing constructions; it does not by itself
+give the fixed implication `JC2 => HC4`.
+
+> **Corollary HC4-MR2 -- relative-pencil equivalence.**
+> \[
+> \boxed{JC2\quad\Longleftrightarrow\quad PHC4.}
+> \tag{7.2}
+> \]
+
+Assume `JC2`.  Every polynomial in the `PHC4` class satisfies the hypotheses
+of `HC4-MR`; each generic Jordan stratum reduces globally to `HC2` or to the
+exact cotangent lift of a plane Keller map.  The first endpoint is already
+closed, and `JC2` closes the second.  Hence `PHC4` follows.
+
+Conversely, every plane Keller map
 
 \[
 F=(P,Q),\qquad J(P,Q)=c\in K^\times,
@@ -554,25 +586,208 @@ with
 
 \[
 \det\operatorname{Hess}\Psi=c^2.
-\tag{7.1}
+\tag{7.3}
 \]
 
-Thus
+More generally, for any source-only polynomial `A=A(x,y)`, write
+
+\[
+S=
+\begin{pmatrix}U&(DF)^{\mathsf T}\\DF&0\end{pmatrix},
+\qquad
+T=
+\begin{pmatrix}\operatorname{Hess}A&0\\0&0\end{pmatrix}.
+\tag{7.4}
+\]
+
+The block determinant is independent of the upper-left block, so
+
+\[
+\det(S+sT)=c^2.
+\tag{7.5}
+\]
+
+Taking, for example, `A=x^2/2` makes `T` nonzero.  In fact
+
+\[
+S^{-1}T=
+\begin{pmatrix}
+0&0\\(DF)^{-\mathsf T}\operatorname{Hess}A&0
+\end{pmatrix},
+\qquad (S^{-1}T)^2=0,
+\tag{7.6}
+\]
+
+so every plane cotangent packet lies in the square-zero stratum of `PHC4`,
+not merely somewhere in the full relative-pencil class.  The exact collision
+comparison says that `grad(Psi)` is injective if and only if `F` is injective.
+Thus `PHC4` implies `JC2`, proving (7.2).
+
+In particular, the already-known implication remains
 
 \[
 HC4\Longrightarrow JC2
 \]
 
 by the standard cotangent bridge.
+Equivalently, unrestricted `HC4` implies `PHC4`.
 
-The reductions above show considerably more inside the relative-nilpotent
-branch: every stratum runs *back* to `HC2` or this exact plane-cotangent
-geometry.  The complete relative-nilpotent branch is therefore equivalent, in
-obstruction content, to `JC2`.
+The remaining converse is now isolated exactly.  To prove
+`JC2 => HC4`, it is enough to prove a **pencil-recognition theorem**: every
+hypothetical four-variable constant-Hessian collision admits a nonaffine
+direction `A` satisfying (7.1), or can be changed to one by an operation that
+preserves the collision and the constant-Hessian condition.  A source-only
+direction in a cotangent chart gives a square-zero relative endomorphism;
+more general recognition may land in any of the Jordan strata closed by
+`HC4-MR`.
 
-This does not prove unrestricted `HC4` or `JC2`: it closes the
-relative-nilpotent Hessian-pencil branch and identifies its only possible
-endpoint with the still-open plane Keller problem.
+This corollary does not prove unrestricted `HC4` or `JC2`: an arbitrary
+constant-Hessian polynomial is not known to admit a nonzero direction (7.1),
+and a nonlinear canonical rechart does not automatically preserve a constant
+Hessian determinant.
+
+### First exact recognition frontend
+
+There is a finite first test for the missing pencil-recognition theorem. Let
+
+\[
+H=\operatorname{Hess}\psi,
+\qquad
+q_\alpha(\ell)=
+[x^\alpha]\bigl(\ell^{\mathsf T}\operatorname{adj}(H)\ell\bigr),
+\tag{7.7}
+\]
+
+where `ell` is a constant four-component covector. The coefficient quadrics
+define a projective scheme
+
+\[
+Z_\psi=V\bigl(q_\alpha(\ell)\bigr)\subset\mathbb P^3.
+\tag{7.8}
+\]
+
+> **Corollary HC4-MR3 -- constant-null-covector recognition.** Assume the
+> base field is algebraically closed of characteristic zero. If `psi` has
+> constant nonzero Hessian determinant and `Z_psi` is nonempty, then `psi`
+> lies in `PHC4`. Consequently `JC2` implies that `grad(psi)` is a polynomial
+> automorphism.
+
+Indeed, choose a nonzero point `ell` of `Z_psi` and put
+
+\[
+A=\frac12(\ell\mathbin{\cdot}x)^2,
+\qquad T=\operatorname{Hess}A=\ell\ell^{\mathsf T}.
+\tag{7.9}
+\]
+
+The rank-one determinant identity gives
+
+\[
+\det(H+sT)
+=\det H+s\,\ell^{\mathsf T}\operatorname{adj}(H)\ell
+=\det H.
+\tag{7.10}
+\]
+
+Moreover, with `N=H^(-1)T`,
+
+\[
+N^2=(\ell^{\mathsf T}H^{-1}\ell)N=0.
+\tag{7.11}
+\]
+
+Thus this frontend lands directly in the square-zero stratum of `HC4-MR`.
+The condition is invariant under constant linear recharts. In a cotangent
+chart the entire projectivized source covector plane lies in `Z_psi`, so the
+test recognizes the JC2 endpoint without choosing its source/dual splitting
+in advance.
+
+For a concrete potential, (7.8) is algorithmic: normalize each of the four
+covector coordinates to one and compute an exact Groebner basis. The scheme
+is empty exactly when all four chart ideals are unit ideals. The reusable
+compiler is
+[`scripts/hc4_rank_one_pencil_recognition.py`](scripts/hc4_rank_one_pencil_recognition.py),
+with exact controls in
+[`scripts/verify_hc4_rank_one_pencil_recognition.py`](scripts/verify_hc4_rank_one_pencil_recognition.py).
+
+Failure of this rank-one gate is not evidence against `JC2 => HC4`: a
+potential may admit a higher-rank or nonlinear Hessian direction even when
+`Z_psi` is empty. The next recognition layer should therefore be rank-two
+quadratic directions, but only after this inexpensive projective scheme has
+been imposed on every direct HC4 candidate family.
+
+### Application to the direct diagonal quintic packet
+
+The first application to `OP-HC4-D5` is exact, but negative.  Use the
+constant-kernel coordinates `(x,y,z,t)` and normalize the diagonal
+nonsquarefree rank-three top by
+
+\[
+ \operatorname{Hess}_{x,y,z}(h_5)=
+ \operatorname{diag}(x^3,y^3,z^3).
+\tag{7.12}
+\]
+
+The Schur face recalled in `HC4RSD6` forces
+
+\[
+ D_th_4=s_3=\frac{a x^3+b y^3+c z^3}{3},
+ \qquad
+ D_t^2h_3=a^2x+b^2y+c^2z.
+\tag{7.13}
+\]
+
+Retain arbitrary compatible ternary pieces `r4`, `g2`, `r3` and an arbitrary
+quadratic `q2`, so that
+
+\[
+ \psi=h_5+t s_3+r_4+
+ \frac{t^2}{2}(a^2x+b^2y+c^2z)+t g_2+r_3+q_2.
+\tag{7.14}
+\]
+
+Write a putative constant null covector as `ell=(p,q,r,tau)`.  Its
+degree-nine metric face is
+
+\[
+ [\ell^{\mathsf T}\operatorname{adj}(H)\ell]_9
+ =\tau^2x^3y^3z^3,
+\tag{7.15}
+\]
+
+so `tau=0`.  Six coefficients of the remaining metric numerator are
+independent of every lower coefficient:
+
+\[
+\begin{array}{lll}
+ [xy^3z^3]N=a^2p^2,&
+ [x^3yz^3]N=b^2q^2,&
+ [x^3y^3z]N=c^2r^2,\\[2mm]
+ [x^3t^2]N=-(b^2r-c^2q)^2,&
+ [y^3t^2]N=-(a^2r-c^2p)^2,&
+ [z^3t^2]N=-(a^2q-b^2p)^2.
+\end{array}
+\tag{7.16}
+\]
+
+If, for example, `a` is nonzero, the first equation gives `p=0` and the
+last two then give `r=q=0`.  The other two channel charts are symmetric.
+Therefore a nonzero constant null covector can exist only if
+`a=b=c=0`.  That is the aligned branch, already closed for a collision
+candidate by `HC4CD5`.
+
+> **Theorem HC4-MR4 -- diagonal quintic rank-one pencil obstruction.**  Every
+> nonaligned prolongation of the diagonal rank-three quintic Schur packet has
+> empty projective null-covector scheme `Z_psi`.  In particular, `HC4MR3`
+> does not reduce this surviving direct packet to `JC2`; any pencil-recognition
+> proof there must use a higher-rank quadratic direction, a nonlinear
+> direction, or a collision-preserving rechart.
+
+This is not an exclusion of the direct quintic packet and is not evidence
+against `JC2 => HC4`.  It is a sharp obstruction to the first recognition
+frontend.  The exact coefficient extraction, with every lower coefficient
+left symbolic, is
+[`scripts/verify_hc4_diagonal_rank_one_pencil_obstruction.py`](scripts/verify_hc4_diagonal_rank_one_pencil_obstruction.py).
 
 As of August 2026 this is particularly meaningful: after the dimension-three
 Jacobian counterexample and the five-variable Hessian counterexample, the only

@@ -1,12 +1,19 @@
 # Global attachment compiler for F2 `(75,125)`
 
+<!-- status-consumer: PF2LNP1 e4f0f231bf7494d5 -->
+
+<!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
+
 ## Result and claim boundary
 
 The exact checker
 [`cas/verify_f2_75_125_global_attachment.py`](cas/verify_f2_75_125_global_attachment.py)
 now carries the terminal F2 row back through the Kummer translation to the
 original affine source coordinates.  This resolves the previously missing
-principal proximity chain.
+principal proximity chain.  The terminal attachment part was subsequently
+corrected by the exact [`log-node profile theorem`](F2_LOG_NODE_PROFILE.md):
+residue incidence alone missed a transverse pole of order two at each
+interior node preimage.
 
 The important coordinate point is that the terminal variable `y` is
 
@@ -35,18 +42,34 @@ Equation (1) has an exact two-stage resolution:
 2. at the marked carrier point `v=xy_old^5=c`, six further blowups extract
    the local ray `(5,12)` and its terminal divisor.
 
-The three interior node preimages then require three further boundary
-branches at distinct points of each terminal divisor.  Consequently the
-minimal principal source boundary has:
+The three interior node preimages require two successive boundary blowups at
+each distinct point of every terminal divisor.  Consequently the corrected
+principal source lower bound is:
 
 | F2 case | principal arms | components | leaves | carrier valency |
 | --- | ---: | ---: | ---: | ---: |
-| squarefree | 1 | 16 | 6 | 3 |
-| double root | 2 | 25 | 10 | 4 |
+| squarefree | 1 | 19 | 6 | 3 |
+| double root | 2 | 31 | 10 | 4 |
 
-Every terminal divisor has valency five.  The compiled source matrices
+Every terminal divisor has valency five and self-intersection `-7`.  The
+compiled source matrices
 are unimodular, have Hodge inertia `(1,n-1,0)`, and give integral canonical
 coefficient vectors by adjunction.
+
+These `19/31` graphs are the pinned compiler's terminal-resolved principal
+skeletons, not the latest carrier-complete lower bounds.  The subsequent
+[`carrier log-node profile theorem`](F2_CARRIER_LOG_NODE_PROFILE.md) inserts
+six common-fan components on every principal arm, the two simple squarefree
+spectator branches, and the five-component double-row attachment.  It gives:
+
+| F2 case | components | leaves | carrier valency | terminal weights |
+| --- | ---: | ---: | ---: | --- |
+| squarefree | 27 | 8 | 5 | `(-9)` |
+| double root | 48 | 11 | 5 | `(-9,-9)` |
+
+Both refined intersection forms remain unimodular with integral canonical
+vectors.  All marked new nodes are log-etale; the upstream carrier-extraction
+chain and outgoing terminal tail are not yet compiled by that theorem.
 
 The target side remains completely explicit: four blowups extract `(5,2)`,
 with boundary weights
@@ -218,7 +241,7 @@ Therefore
 
 Kummer transfer gives the same oriented arm at the second double-root center.
 
-## 4. Three interior attachments per arm
+## 4. Three two-blowup interior attachments per arm
 
 The residue map
 
@@ -236,19 +259,34 @@ gives five marked boundary-neighbor slots on every terminal divisor.
 | first denominator root | node `h=infinity` | 3 | 2 | new interior branch |
 | second denominator root | node `h=infinity` | 3 | 2 | new interior branch |
 
-Blowing up the three distinct interior points lowers the terminal
-self-intersection from `-1` to `-4` and raises its boundary valency from two
-to five.
+The residue table alone does not determine the number of point blowups.  In
+target-node coordinates, the transverse coefficient has order `-2` at each
+of the three interior points.  The local form is
 
-For one arm, the resulting minimal principal source graph has 16 components,
-6 leaves, determinant `-1`, and canonical vector
+\[
+ (\pi,\xi)=(\tau w^{-2}\cdot\text{unit},
+             w^e\cdot\text{unit}),
+ \qquad e=5,3,3.                                  \tag{7}
+\]
+
+One blowup leaves a pole of order one.  A second blowup at the intersection
+of the strict terminal divisor and the first exceptional curve gives
+`tau=w^2*u`.  Each marked point therefore contributes a two-component chain
+with weights `(-1,-2)` from the terminal outwards.  The three chains lower
+the terminal self-intersection from `-1` to `-7` and raise its boundary
+valency from two to five.  At the terminal node the resolved logarithmic
+matrix is `diag(1,e)`, so its cokernel vanishes.
+
+For one arm, the resulting principal source lower-bound graph has 19
+components, 6 leaves, determinant `1`, and canonical vector
 
 ```text
-(-1,-2,-3,-4,-5,-2,-3,-4,-3,-6,-9,-4,-2,-8,-8,-8).
+(-1,-2,-3,-4,-5,-2,-3,-4,-3,-6,-9,-4,-2,
+ -16,-8,-16,-8,-16,-8).
 ```
 
 For two arms at `v=1,rho`, the arms share the seven-component carrier chain.
-The resulting graph has 25 components, 10 leaves, determinant `1`, and two
+The resulting graph has 31 components, 10 leaves, determinant `1`, and two
 valency-five terminal vertices.
 
 ## 5. Complete minimal target extraction
@@ -263,7 +301,7 @@ Here `a=0` is the target line at infinity and `b=0` is nonboundary.  The
 minimal regular fan containing `(5,2)` is
 
 \[
-(1,0),(3,1),(5,2),(2,1),(1,1),(0,1). \tag{7}
+(1,0),(3,1),(5,2),(2,1),(1,1),(0,1). \tag{8}
 \]
 
 Four blowups give the boundary weights and canonical coefficients stated
@@ -356,14 +394,16 @@ double:     rho^2-3*rho+1=0,   carrier (e,f)=(1,6).
 
 In the squarefree row the two simple `R` points are unramified points of the
 cyclic cubic carrier map `1+1/(v-1)^3`.  In the double row the carrier map is
-the terminal degree-six Belyi map after a linear source change.  Thus the
-remaining inputs are:
+the terminal degree-six Belyi map after a linear source change.  The carrier
+log-node theorem resolves their marked local boundary points but does not add
+the unresolved global rows.  Thus the remaining inputs are:
 
 1. impose the three exact carrier parameter points on the complete lower
    Laurent coefficient system;
-2. construct the purity-forced affine ramification row and affine companion;
-3. determine the common global field degree and all remaining pullback rows;
-4. supply the corresponding global branch cycles and run candidate mode.
+2. compile the upstream carrier-extraction chain and outgoing terminal tail;
+3. construct the purity-forced affine ramification row and affine companion;
+4. determine the common global field degree and all remaining pullback rows;
+5. supply the corresponding global branch cycles and run candidate mode.
 
 Until one of those declarations fails a hard compiled gate, `(75,125)`
 remains unexcluded.
