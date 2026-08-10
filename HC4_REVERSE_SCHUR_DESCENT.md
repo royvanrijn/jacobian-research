@@ -572,5 +572,10 @@ rank-one system has only a zero stratum and a square-Hessian resonance. The
 resonances all have immutable lower coefficients, while the only nonempty
 zero strata satisfy a global affine-transverse cylinder identity. Thus all
 eight packets close and every scalar degree-seven leading direction is
-fixed. The next degree-based scalar frontier is the repeated-root locus in
-degree at least eight.
+fixed. At the endpoint `HC4RSD40`, this left the repeated-root locus in degree
+at least eight as the next degree-based scalar frontier.  The continuation
+consolidated as [HC4MR1](HC4_RELATIVE_NILPOTENT_MASTER_REDUCTION.md) now closes
+that continuation through `HC4RSD80` inside the auxiliary relative-nilpotent
+constant-Hessian-pencil branch, reducing it to HC2 or the exact JC2 cotangent
+endpoint.  The unrestricted direct and mixed/coisotropic HC4 frontiers are
+separate.

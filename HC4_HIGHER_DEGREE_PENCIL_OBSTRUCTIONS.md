@@ -2382,14 +2382,20 @@ The scalar reverse-Schur branch now has the following exact boundary:
   eight, and its only nonempty zero strata are fixed cylinders. Consequently
   every scalar degree-seven leading direction is fixed.
 
-The next scalar targets are:
+At the endpoint `HC4RSD40`, the next scalar targets were:
 
 1. repeated-root leading forms in degree at least eight;
 2. cubic directions whose leading Hessian has rank at most two;
 3. higher-degree directions of generic Hessian rank two or three.
 
-Matrix pivots, mixed/coisotropic transformations, and the direct degree-five
-HC4 classification remain parallel routes.
+The continuation consolidated as
+[HC4MR1](HC4_RELATIVE_NILPOTENT_MASTER_REDUCTION.md) now discharges all three
+targets inside the auxiliary relative-nilpotent constant-Hessian-pencil
+branch, reducing that branch to HC2 or the exact JC2 cotangent endpoint.  The
+list above is therefore historical, not an active HC4 frontier.  It does not
+imply unrestricted HC4 or JC2: direct degree-five resonance and nonlinear or
+multiple repeated factors remain on the unrestricted direct route, while
+matrix pivots and mixed/coisotropic transformations remain separate routes.
 
 ## 13. Reproduction
 

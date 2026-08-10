@@ -1909,8 +1909,9 @@ binary GVC without using these bounded searches.
   Generate them with the same checker and, respectively,
   `--research-triple-root-prime`, `--research-two-double-root-prime`, and
   `--research-singular-boundary`.  These runs use Macaulay2 1.22.  The
-  unfinished `rank_five_wall_singular_primes_QQ.log` is retained only as
-  the output of the older blind comparison run; it is not a certificate.
+  The older blind comparison run used the name
+  `rank_five_wall_singular_primes_QQ.log`, but it was unfinished and is
+  intentionally not retained; it was not a certificate.
   The optional `--research-characteristic=1000003` pass is modular
   discovery evidence only.
 - `jc2_f2_modified_laurent_family.json` records the exact `r=2` regression,

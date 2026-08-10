@@ -49,6 +49,16 @@ parallel routes with conflicting local identifiers are preserved only in the
 | Rank-three reduction to the plane endpoint | [cofactor flag](HC4_RANK_THREE_COFACTOR_FLAG.md), [fixed-kernel closure](HC4_RANK_THREE_FIXED_KERNEL_CLOSURE.md), [null-fiber reduction](HC4_RANK_THREE_NULL_FIBER_REDUCTION.md), [one-active-direction obstruction](HC4_RANK_THREE_ONE_ACTIVE_DIRECTION_OBSTRUCTION.md), [affine-generator Wronskian](HC4_RANK_THREE_AFFINE_GENERATOR_WRONSKIAN.md), and [Wronskian-to-JC2 theorem](HC4_RANK_THREE_WRONSKIAN_TO_JC2.md) |
 | Final regular `[4]` packet | [developable-image reduction](HC4_FINAL_RANK_THREE_DEVELOPABLE_IMAGE.md), [smooth-chart obstruction](HC4_FINAL_RANK_THREE_SMOOTH_CHART_OBSTRUCTION.md), [Krylov flag](HC4_FINAL_RANK_THREE_KRYLOV_FLAG.md), [Frobenius closure](HC4_FINAL_FROBENIUS_CLOSURE.md), [dimension-four trace/focal identity](HC4_TRACE_FOCAL_DIMENSION_FOUR_MIRACLE.md), and [affine-plane flatness closure](HC4_AFFINE_PLANE_SCHUBERT_BRIDGE.md) |
 
+### Verification boundary
+
+The registered checker replays the exact moving-frame and prolongation
+calculations in the final regular `[4]` packet.  It is not an aggregate replay
+of every implication in the proof map above.  The scalar, rank-at-most-two,
+rank-three reduction, developability, and incidence steps remain written
+proofs in their linked canonical notes.  `HC4MR1` currently has neither an
+independent end-to-end replay nor external review; those assurance tasks are
+separate from the theorem's stated scope.
+
 Then `N` is polynomial, nilpotent, `S`-self-adjoint and Hessian-integrable:
 
 \[
