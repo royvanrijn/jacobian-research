@@ -842,21 +842,110 @@ The command
 ```
 
 reconstructs (5.22)--(5.30), including six exact `normalConductor`
-calculations.  The remaining global step is to assemble these normalized
-center curves inside the rational exceptional **surfaces**, impose the
-incidence maps (5.27)--(5.30) in the bigraded Rees algebra, and take that
-single conductor pushout.  Only then is the normalized-graph Hilbert
-polynomial justified.  No characteristic-zero graph multidegree or
-simultaneous-normalization statement is inferred yet.
+calculations.  Before the global pushout, one must still determine how these
+normalized center curves sit inside the rational exceptional **surfaces**.
+In particular, the divisor classes and normal-bundle degrees of the
+successive centers are not determined by (5.22)--(5.30).  Only after that
+surface-intersection ledger is known can one impose the incidence maps in the
+bigraded Rees algebra and take the single conductor pushout.  No
+characteristic-zero graph multidegree or simultaneous-normalization statement
+is inferred yet.
+
+### 5.6 Pause checkpoint: the two-coefficient Hilbert-polynomial gap
+
+The following records a computational checkpoint from August 10, 2026.  It
+is deliberately not promoted to a theorem or to `MATH_STATUS.json`.
+
+A Singular 4.4.1 calculation over `F_32003`, using the saturated modular
+graph ideal from `WQG1` with
+
+\[
+ \deg X_i=(1,0),\qquad \deg Y_j=(0,1),
+\]
+
+and Hilbert-series denominator `(1-s)^4(1-t)^4`, returned
+
+\[
+ P_\Gamma(m,n)=\frac{1}{6}\bigl(
+ m^3+36m^2n+84mn^2+4n^3+6m^2-54mn-30n^2
+ -19m-268n+582\bigr).                                      \tag{5.31}
+\]
+
+Its cubic part recovers the modular multidegrees `(1,12,28,4)`.  In the Rees
+grading `d=m+12n`, (5.31) is equivalent to
+
+\[
+ P_{R/B^n}(d)=
+ (58n^2+33n+5)d-
+ \frac{1226}{3}n^3-247n^2+\frac{20}{3}n-96.                 \tag{5.32}
+\]
+
+The exact normalized open-side point bases give the corresponding
+degree-in-`d` coefficient
+
+\[
+ (33n^2+10n)+(14n^2+5n)+(11n^2+6n)=58n^2+21n.              \tag{5.33}
+\]
+
+Consequently, within the finite side-and-corner conductor model, every term
+of the normalization correction involving the source degree is fixed.  The
+candidate normalized polynomial is reduced to two target-direction
+coefficients:
+
+\[
+ P_{\widetilde\Gamma}-P_\Gamma
+   =12mn+5m+\alpha n^2+\beta n-96,                          \tag{5.34}
+\]
+
+or equivalently
+
+\[
+ P_{\widetilde\Gamma}(m,n)=\frac{1}{6}\bigl(
+ m^3+36m^2n+84mn^2+4n^3+6m^2+18mn
+ +(6\alpha-30)n^2+11m+(6\beta-268)n+6\bigr).              \tag{5.35}
+\]
+
+The specialization `n=0` is correctly
+`binomial(m+3,3)`.  Equations (5.34)--(5.35) are a reduction of the pending
+calculation, not a proof that the finite model is already the global
+normalization.  The integers `alpha` and `beta` remain unknown.
+
+A direct ambient normalization is not a useful way to determine them.  Two
+scratch runs of Singular `normalI` on the modular Rees algebra were stopped:
+`normalI(I,4)` had run for more than 36 minutes, while the localized route
+`normalI(I,8,0,1)` spent about 29 minutes on its main closure and then more
+than 70 minutes in two local workers, each using roughly 2--2.5 GiB.  Neither
+run produced a result used here.  These timings are failed exploratory
+computations, not certificates, and this ambient route should not be resumed
+without a new reason.
+
+The correct restart point is a **normal-bundle ledger** on the three ruled
+exceptional surfaces.  For each of the twelve rational centers and three
+algebraic packets, record its residue or covering degree, divisor class,
+Rees multiplicity, restriction degree of the current polarization, and
+`deg N_(C/X)`.  Then apply, center by center,
+
+\[
+ \chi(\pi^*L-rE)=\chi(L)
+ -\frac{r(r+1)}2\bigl(\deg(L|_C)+1\bigr)
+ +\frac{r(r-1)(r+1)}6\deg N_{C/X},                          \tag{5.36}
+\]
+
+sum normalized algebraic branches, and impose the endpoint conductor
+corrections `(12,6,6)` (twice the endpoint deltas `(6,3,3)`).  The incidence
+maps (5.27)--(5.30) can then be used to perform one global pushout.  That
+finite Riemann--Roch calculation, rather than ambient normalization, is the
+next route to `alpha` and `beta`.
 
 This construction directly joins invariant theory to `OP-CCDM`.  The first
 deliverables are therefore:
 
 1. prove local representability of `X_N^(bdy)` along the weighted core;
-2. assemble the normalized side-center curves (5.22)--(5.30) inside their
-   rational exceptional surfaces, perform the resulting global conductor
-   pushout, identify the equinormalization stratum, and compute the
-   normalized-graph Hilbert polynomial in the quartic box;
+2. compute the normal-bundle and divisor-class ledger for the center curves
+   (5.22)--(5.30), then assemble them inside their rational exceptional
+   surfaces, perform the resulting global conductor pushout, identify the
+   equinormalization stratum, and compute the normalized-graph Hilbert
+   polynomial in the quartic box;
 3. construct its stable-equivalence correspondence and quotient the
    vertical stabilization gauge;
 4. compute (5.1), beginning with `N=4` and `d_4=12`;
