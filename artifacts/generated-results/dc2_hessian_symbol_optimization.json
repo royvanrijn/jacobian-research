@@ -1,0 +1,544 @@
+{
+  "bridge": {
+    "cayley_jacobian": "I+N+N^2/2+N^3/4",
+    "integrability_gate": "each Cayley row is a closed polynomial one-form",
+    "nilpotence_gate": "N^4=0",
+    "nilpotent_matrix": "N=Pi*Hess(A)",
+    "poisson_convention": "{p_i,q_j}=delta_ij",
+    "variables": [
+      "q1",
+      "q2",
+      "p1",
+      "p2"
+    ]
+  },
+  "format": "dc2-hessian-symbol-optimization-v1",
+  "next_family_gate": "seek a genuinely higher-nilpotence Cayley-integrable family or complete polynomial rank-two admission for the reciprocal R21 packet before spending on higher PBW orders",
+  "one_pencil_search": {
+    "conclusion": "every Cayley-integrable template is square-zero and has zero odd Moyal defect through the degree cutoff",
+    "counts": [
+      {
+        "cayley_integrable": 40,
+        "degree_pattern": "3",
+        "moyal_flat": 40,
+        "nilpotent": 56,
+        "square_zero": 40,
+        "templates": 210
+      },
+      {
+        "cayley_integrable": 84,
+        "degree_pattern": "3+4",
+        "moyal_flat": 84,
+        "nilpotent": 124,
+        "square_zero": 84,
+        "templates": 700
+      },
+      {
+        "cayley_integrable": 60,
+        "degree_pattern": "4",
+        "moyal_flat": 60,
+        "nilpotent": 84,
+        "square_zero": 60,
+        "templates": 630
+      }
+    ],
+    "higher_nilpotence_integrable": 0,
+    "support_policy": "identities must hold over the full natural Q[a] or Q[a,b] coefficient base; exceptional subloci of rejected supports are outside this search",
+    "total_cayley_integrable": 184,
+    "total_templates": 1540
+  },
+  "quantized_shortlist": [
+    {
+      "factorwise_quantization": {
+        "all_order_status": "known exact Weyl automorphism by factorwise composition",
+        "hbar2_correction": {
+          "components": [
+            "0",
+            "0",
+            "-3*q2",
+            "0"
+          ],
+          "term_count": 1,
+          "terms_outside_native_component_support": 1
+        },
+        "hbar4_correction": {
+          "components": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "term_count": 0,
+          "terms_outside_native_component_support": 0
+        },
+        "method": "factorwise Moyal exponential for the two exact shear automorphisms, specialized at (a,b)=(1,1)",
+        "verified_relations": "Moyal canonical relations through hbar^5"
+      },
+      "first_nonzero_moyal_order": 3,
+      "first_potential": "p1*q2**3",
+      "key": "HPW177",
+      "localization_pole_width": 0,
+      "map_terms": 18,
+      "maximum_degree": 9,
+      "moyal_defect_terms": 4,
+      "native_gauge": {
+        "admissible_hamiltonian_dimension": 3,
+        "hamiltonian_degree_bound": 4,
+        "image_rank": 3
+      },
+      "native_order_five": null,
+      "native_order_three": {
+        "augmented_rank": 15,
+        "cokernel_dimension": 25,
+        "correction_dimension": 18,
+        "defect_dimension": 39,
+        "rank": 14,
+        "section_rank_jump": 1
+      },
+      "parameter_base_complexity": 2,
+      "preliminary_score": 26,
+      "quantization_status": "native-support obstruction at hbar^3",
+      "score": 133,
+      "second_potential": "p2**2*q1**2"
+    },
+    {
+      "factorwise_quantization": {
+        "all_order_status": "known exact Weyl automorphism by factorwise composition",
+        "hbar2_correction": {
+          "components": [
+            "0",
+            "0",
+            "-3*p2",
+            "0"
+          ],
+          "term_count": 1,
+          "terms_outside_native_component_support": 1
+        },
+        "hbar4_correction": {
+          "components": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "term_count": 0,
+          "terms_outside_native_component_support": 0
+        },
+        "method": "factorwise Moyal exponential for the two exact shear automorphisms, specialized at (a,b)=(1,1)",
+        "verified_relations": "Moyal canonical relations through hbar^5"
+      },
+      "first_nonzero_moyal_order": 3,
+      "first_potential": "p1*p2**3",
+      "key": "HPW154",
+      "localization_pole_width": 0,
+      "map_terms": 18,
+      "maximum_degree": 9,
+      "moyal_defect_terms": 4,
+      "native_gauge": {
+        "admissible_hamiltonian_dimension": 3,
+        "hamiltonian_degree_bound": 4,
+        "image_rank": 3
+      },
+      "native_order_five": null,
+      "native_order_three": {
+        "augmented_rank": 15,
+        "cokernel_dimension": 25,
+        "correction_dimension": 18,
+        "defect_dimension": 39,
+        "rank": 14,
+        "section_rank_jump": 1
+      },
+      "parameter_base_complexity": 2,
+      "preliminary_score": 26,
+      "quantization_status": "native-support obstruction at hbar^3",
+      "score": 133,
+      "second_potential": "q1**2*q2**2"
+    },
+    {
+      "factorwise_quantization": {
+        "all_order_status": "known exact Weyl automorphism by factorwise composition",
+        "hbar2_correction": {
+          "components": [
+            "0",
+            "-3*p1",
+            "0",
+            "0"
+          ],
+          "term_count": 1,
+          "terms_outside_native_component_support": 1
+        },
+        "hbar4_correction": {
+          "components": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "term_count": 0,
+          "terms_outside_native_component_support": 0
+        },
+        "method": "factorwise Moyal exponential for the two exact shear automorphisms, specialized at (a,b)=(1,1)",
+        "verified_relations": "Moyal canonical relations through hbar^5"
+      },
+      "first_nonzero_moyal_order": 3,
+      "first_potential": "p1**3*q2",
+      "key": "HPW105",
+      "localization_pole_width": 0,
+      "map_terms": 18,
+      "maximum_degree": 9,
+      "moyal_defect_terms": 4,
+      "native_gauge": {
+        "admissible_hamiltonian_dimension": 3,
+        "hamiltonian_degree_bound": 4,
+        "image_rank": 3
+      },
+      "native_order_five": null,
+      "native_order_three": {
+        "augmented_rank": 15,
+        "cokernel_dimension": 25,
+        "correction_dimension": 18,
+        "defect_dimension": 39,
+        "rank": 14,
+        "section_rank_jump": 1
+      },
+      "parameter_base_complexity": 2,
+      "preliminary_score": 26,
+      "quantization_status": "native-support obstruction at hbar^3",
+      "score": 133,
+      "second_potential": "p2**2*q1**2"
+    },
+    {
+      "factorwise_quantization": {
+        "all_order_status": "known exact Weyl automorphism by factorwise composition",
+        "hbar2_correction": {
+          "components": [
+            "0",
+            "0",
+            "0",
+            "-3*p1"
+          ],
+          "term_count": 1,
+          "terms_outside_native_component_support": 1
+        },
+        "hbar4_correction": {
+          "components": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "term_count": 0,
+          "terms_outside_native_component_support": 0
+        },
+        "method": "factorwise Moyal exponential for the two exact shear automorphisms, specialized at (a,b)=(1,1)",
+        "verified_relations": "Moyal canonical relations through hbar^5"
+      },
+      "first_nonzero_moyal_order": 3,
+      "first_potential": "p1**3*p2",
+      "key": "HPW094",
+      "localization_pole_width": 0,
+      "map_terms": 18,
+      "maximum_degree": 9,
+      "moyal_defect_terms": 4,
+      "native_gauge": {
+        "admissible_hamiltonian_dimension": 3,
+        "hamiltonian_degree_bound": 4,
+        "image_rank": 3
+      },
+      "native_order_five": null,
+      "native_order_three": {
+        "augmented_rank": 15,
+        "cokernel_dimension": 25,
+        "correction_dimension": 18,
+        "defect_dimension": 39,
+        "rank": 14,
+        "section_rank_jump": 1
+      },
+      "parameter_base_complexity": 2,
+      "preliminary_score": 26,
+      "quantization_status": "native-support obstruction at hbar^3",
+      "score": 133,
+      "second_potential": "q1**2*q2**2"
+    },
+    {
+      "factorwise_quantization": {
+        "all_order_status": "known exact Weyl automorphism by factorwise composition",
+        "hbar2_correction": {
+          "components": [
+            "0",
+            "9*q2/2",
+            "3*p1/2",
+            "0"
+          ],
+          "term_count": 2,
+          "terms_outside_native_component_support": 0
+        },
+        "hbar4_correction": {
+          "components": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "term_count": 0,
+          "terms_outside_native_component_support": 0
+        },
+        "method": "factorwise Moyal exponential for the two exact shear automorphisms, specialized at (a,b)=(1,1)",
+        "verified_relations": "Moyal canonical relations through hbar^5"
+      },
+      "first_nonzero_moyal_order": 3,
+      "first_potential": "p1*q2**3",
+      "key": "HPW179",
+      "localization_pole_width": 0,
+      "map_terms": 16,
+      "maximum_degree": 9,
+      "moyal_defect_terms": 5,
+      "native_gauge": {
+        "admissible_hamiltonian_dimension": 3,
+        "hamiltonian_degree_bound": 4,
+        "image_rank": 3
+      },
+      "native_order_five": {
+        "augmented_rank": 12,
+        "cokernel_dimension": 18,
+        "current_correction_columns": 16,
+        "defect_dimension": 30,
+        "lower_lift_span_columns": 14,
+        "rank": 12,
+        "section_rank_jump": 0,
+        "strong_columns": 30
+      },
+      "native_order_three": {
+        "augmented_rank": 12,
+        "cokernel_dimension": 18,
+        "correction_dimension": 16,
+        "defect_dimension": 30,
+        "lift_kernel_dimension": 4,
+        "rank": 12,
+        "section_rank_jump": 0
+      },
+      "parameter_base_complexity": 2,
+      "preliminary_score": 40,
+      "quantization_status": "native-support lift through hbar^5",
+      "score": 89,
+      "second_potential": "p2**3*q1"
+    },
+    {
+      "factorwise_quantization": {
+        "all_order_status": "known exact Weyl automorphism by factorwise composition",
+        "hbar2_correction": {
+          "components": [
+            "0",
+            "0",
+            "-3*p1/2",
+            "-9*p2/2"
+          ],
+          "term_count": 2,
+          "terms_outside_native_component_support": 0
+        },
+        "hbar4_correction": {
+          "components": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "term_count": 0,
+          "terms_outside_native_component_support": 0
+        },
+        "method": "factorwise Moyal exponential for the two exact shear automorphisms, specialized at (a,b)=(1,1)",
+        "verified_relations": "Moyal canonical relations through hbar^5"
+      },
+      "first_nonzero_moyal_order": 3,
+      "first_potential": "p1*p2**3",
+      "key": "HPW159",
+      "localization_pole_width": 0,
+      "map_terms": 16,
+      "maximum_degree": 9,
+      "moyal_defect_terms": 5,
+      "native_gauge": {
+        "admissible_hamiltonian_dimension": 3,
+        "hamiltonian_degree_bound": 4,
+        "image_rank": 3
+      },
+      "native_order_five": {
+        "augmented_rank": 12,
+        "cokernel_dimension": 18,
+        "current_correction_columns": 16,
+        "defect_dimension": 30,
+        "lower_lift_span_columns": 14,
+        "rank": 12,
+        "section_rank_jump": 0,
+        "strong_columns": 30
+      },
+      "native_order_three": {
+        "augmented_rank": 12,
+        "cokernel_dimension": 18,
+        "correction_dimension": 16,
+        "defect_dimension": 30,
+        "lift_kernel_dimension": 4,
+        "rank": 12,
+        "section_rank_jump": 0
+      },
+      "parameter_base_complexity": 2,
+      "preliminary_score": 40,
+      "quantization_status": "native-support lift through hbar^5",
+      "score": 89,
+      "second_potential": "q1*q2**3"
+    },
+    {
+      "factorwise_quantization": {
+        "all_order_status": "known exact Weyl automorphism by factorwise composition",
+        "hbar2_correction": {
+          "components": [
+            "0",
+            "3*q2/2",
+            "9*p1/2",
+            "0"
+          ],
+          "term_count": 2,
+          "terms_outside_native_component_support": 0
+        },
+        "hbar4_correction": {
+          "components": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "term_count": 0,
+          "terms_outside_native_component_support": 0
+        },
+        "method": "factorwise Moyal exponential for the two exact shear automorphisms, specialized at (a,b)=(1,1)",
+        "verified_relations": "Moyal canonical relations through hbar^5"
+      },
+      "first_nonzero_moyal_order": 3,
+      "first_potential": "p1**3*q2",
+      "key": "HPW110",
+      "localization_pole_width": 0,
+      "map_terms": 16,
+      "maximum_degree": 9,
+      "moyal_defect_terms": 5,
+      "native_gauge": {
+        "admissible_hamiltonian_dimension": 3,
+        "hamiltonian_degree_bound": 4,
+        "image_rank": 3
+      },
+      "native_order_five": {
+        "augmented_rank": 12,
+        "cokernel_dimension": 18,
+        "current_correction_columns": 16,
+        "defect_dimension": 30,
+        "lower_lift_span_columns": 14,
+        "rank": 12,
+        "section_rank_jump": 0,
+        "strong_columns": 30
+      },
+      "native_order_three": {
+        "augmented_rank": 12,
+        "cokernel_dimension": 18,
+        "correction_dimension": 16,
+        "defect_dimension": 30,
+        "lift_kernel_dimension": 4,
+        "rank": 12,
+        "section_rank_jump": 0
+      },
+      "parameter_base_complexity": 2,
+      "preliminary_score": 40,
+      "quantization_status": "native-support lift through hbar^5",
+      "score": 89,
+      "second_potential": "p2*q1**3"
+    },
+    {
+      "factorwise_quantization": {
+        "all_order_status": "known exact Weyl automorphism by factorwise composition",
+        "hbar2_correction": {
+          "components": [
+            "0",
+            "0",
+            "-9*p1/2",
+            "-3*p2/2"
+          ],
+          "term_count": 2,
+          "terms_outside_native_component_support": 0
+        },
+        "hbar4_correction": {
+          "components": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "term_count": 0,
+          "terms_outside_native_component_support": 0
+        },
+        "method": "factorwise Moyal exponential for the two exact shear automorphisms, specialized at (a,b)=(1,1)",
+        "verified_relations": "Moyal canonical relations through hbar^5"
+      },
+      "first_nonzero_moyal_order": 3,
+      "first_potential": "p1**3*p2",
+      "key": "HPW096",
+      "localization_pole_width": 0,
+      "map_terms": 16,
+      "maximum_degree": 9,
+      "moyal_defect_terms": 5,
+      "native_gauge": {
+        "admissible_hamiltonian_dimension": 3,
+        "hamiltonian_degree_bound": 4,
+        "image_rank": 3
+      },
+      "native_order_five": {
+        "augmented_rank": 12,
+        "cokernel_dimension": 18,
+        "current_correction_columns": 16,
+        "defect_dimension": 30,
+        "lower_lift_span_columns": 14,
+        "rank": 12,
+        "section_rank_jump": 0,
+        "strong_columns": 30
+      },
+      "native_order_three": {
+        "augmented_rank": 12,
+        "cokernel_dimension": 18,
+        "correction_dimension": 16,
+        "defect_dimension": 30,
+        "lift_kernel_dimension": 4,
+        "rank": 12,
+        "section_rank_jump": 0
+      },
+      "parameter_base_complexity": 2,
+      "preliminary_score": 40,
+      "quantization_status": "native-support lift through hbar^5",
+      "score": 89,
+      "second_potential": "q1**3*q2"
+    }
+  ],
+  "scope": "exact coefficient-uniform cubic/quartic sparse-family search and native-support Moyal calibration at (a,b)=(1,1); exceptional coefficient subloci in rejected supports are not classified, and two-step rows are known polynomial automorphism controls, not DC_2 candidates",
+  "score": {
+    "hard_gates": [
+      "polynomial four-tuple",
+      "exact symplectic identity",
+      "Jacobian determinant one"
+    ],
+    "higher_is_better": [
+      "relative native obstruction-cokernel size",
+      "raw odd Moyal defect support",
+      "a nonzero native-support section rank jump"
+    ],
+    "lower_is_better": [
+      "bounded Hamiltonian gauge-image rank",
+      "localization pole width",
+      "parameter-base complexity"
+    ],
+    "native_correction_lattice": "componentwise monomial support at (a,b)=(1,1)",
+    "warning": "the scalar score compares only rows in this common native lattice; use the component vector, not the scalar, across other DC_2 filtrations"
+  },
+  "selection_conclusion": "the direct sparse Hessian bridge yields no new nonautomorphic symbol: one-pencil rows are Moyal-flat, while the hostile two-pencil rows are known factorwise-quantizable controls",
+  "two_pencil_search": {
+    "canonical_noncommuting_words": 238,
+    "orientation_rule": "one order per unordered pair; reversal is represented by inversion together with parameter sign change",
+    "primitive_monomial_pencils": 28,
+    "shortlist_size": 8,
+    "words_with_nonzero_raw_moyal_defect": 24
+  }
+}

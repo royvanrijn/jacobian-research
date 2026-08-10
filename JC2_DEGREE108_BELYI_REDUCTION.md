@@ -1,9 +1,9 @@
-# The open degree-108 JC2 case as a finite Belyi deformation problem
+# The degree-108 JC2 no-vertical branch as a finite Belyi deformation problem
 
 ## Scope
 
-Guccione--Guccione--Horruitiner--Valqui reduce the only unresolved plane
-Jacobian degree pair below 125, `(72,108)`, to two combinatorial families.
+Guccione--Guccione--Horruitiner--Valqui reduced the then-unresolved plane
+Jacobian degree pair `(72,108)` to two combinatorial families.
 Their `(9,27),(2,3)` family is eliminated in Section 5 of arXiv:2204.14178;
 the remaining family is `(8,28),(3,2)`.  Proposition 4.3 gives, after a
 birational Laurent coordinate reduction, a pair `P,Q` with
@@ -213,9 +213,10 @@ points, leaves five center-set types:
 \tag{4.1}
 \]
 
-where indices are read modulo 17.  (Equivalent representatives may occur if
-one also identifies orientation reversal; five is the upper bound needed for
-the deformation attack.)
+where indices are read modulo 17.  The exact branch-cycle replay verifies that
+these are five transitive dessin types with trivial automorphism groups;
+orientation reversal is part of their arithmetic Galois action, not an extra
+quotient in this enumeration.
 
 Thus the no-vertical-edge `(8,28)` residue has only finitely many top dessins.
 The four lower equations in (2.1) are linear successively in the deformation
@@ -236,19 +237,26 @@ appears in the generalized Magnus expansion of a `(72,108)` pair.  The Belyi
 reduction therefore packages the same `2:3` obstruction globally rather than
 as a large coefficient system.
 
-## 6. Proof boundary
+## 6. Exact implementation and proof boundary
 
-This note does **not** yet eliminate the `(8,28)` family.  It proves that its
-no-vertical-edge subcase reduces to five finite Belyi deformation types.  The
-remaining tasks are:
+The finite program proposed above is now implemented and closes this
+no-vertical-edge Laurent branch.  The intrinsic quintic graph reconstructs
+the five conjugate `(A,D)` pairs exactly; its irreducible quintic has Galois
+closure group `S_5`.  The distinguished `X=0` point and the polynomial
+normalization are compatible with every conjugate, so the arithmetic shortcut
+does not remove a dessin before deformation.
 
-1. reconstruct `(A,D)` (algebraically or through their Belyi maps) for the five
-   types;
-2. compute the polynomial solution space of the `s^3` deformation equation;
-3. propagate through `s^2,s^1,s^0` and the boundary leading coefficients;
-4. repeat/adapt the reduction for the second polygon containing the vertical
-   edges `(0,8)` and `(0,12)`.
+Over the quintic field the successive `(B,E)`, `(C,F)`, and derivative-`G`
+maps have ranks `17`, `18`, and `12`, with kernel dimensions `2`, `3`, and
+`0`; the constant of `G` is a separate target-translation kernel.  After
+solving these maps, the last two levels give only 25 sparse degree-three/four
+equations in five parameters.  On the required `deg(B)=8` open their exact
+Singular ideal is `(1)`.
 
-The point is that the open degree-108 frontier is now a finite deformation
-problem in univariate polynomials, closely matching the obstruction machinery
-that succeeded in the HC4 packet.
+The canonical proof and reproduction commands are in
+[`plane-jc/JC2_72_108_BELYI_DEFORMATION_CLOSURE.md`](plane-jc/JC2_72_108_BELYI_DEFORMATION_CLOSURE.md).
+This conclusion is conditional on the audited Proposition-4.3 Laurent
+reduction and the complete intrinsic first-block graph; it is not a
+stand-alone proof of the general degree reduction or of `JC(2)`.  The other
+Laurent polygon is closed by the separate certified `(72,108)` calculations
+recorded in `MATH_STATUS.json`.

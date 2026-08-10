@@ -2,11 +2,16 @@
 
 ## Purpose
 
-This note replaces the incremental `HC4RSD17--76` narrative by one proof tree.
+This note replaces the incremental `HC4RSD17--80` narrative by one proof tree.
 It records the strongest statement currently proved for the relative-nilpotent
-Hessian-pencil branch and, crucially, isolates the **single remaining global
-algebraic bridge**.  It deliberately does not identify local smooth
-triangularization with a constant affine flag.
+Hessian-pencil branch.  The final regular `[4]` globalization is closed by the
+affine-plane/flatness calculation and the affine-hyperplane pencil argument;
+it does not identify local smooth triangularization with a constant affine
+flag.
+
+Repository-status caveat: the `HC4RSD41--80` continuation is not yet
+registered in `MATH_STATUS.json`.  This document summarizes that proof-note
+chain; it does not itself promote the authoritative status entries.
 
 Throughout let `K` be a characteristic-zero field and let
 
@@ -42,26 +47,25 @@ N^{\mathsf T}S=SN,\qquad SN=T=\operatorname{Hess}A.
 ## Master theorem
 
 > **Theorem HC4-MR — relative-nilpotent master reduction.**
-> Under (0.1), every generic Jordan stratum except one reduces globally to
-> either an `HC2` packet or the exact cotangent lift of a plane Keller map.
-> The sole residual stratum is the regular rank-three block
+> Under (0.1), every generic Jordan stratum reduces globally to either an
+> `HC2` packet or the exact cotangent lift of a plane Keller map.  In
+> particular, the regular rank-three block
 > \[
 > \operatorname{rank}T=3,\qquad N\sim J_4(0),
 > \tag{0.4}
 > \]
-> with a linearly-independent associated four-variable quasi-translation.
-> On this final stratum the complete Jordan flag
+> with a linearly-independent associated four-variable quasi-translation has
+> no residual moving packet.  On this final stratum the complete Jordan flag
 > \[
 > \ker N\subset\ker N^2\subset\ker N^3
 > \tag{0.5}
 > \]
-> is Frobenius-integrable on the generic constant-rank locus.  Hence `N` is
-> locally strictly upper triangularizable there.
->
-> What remains is purely global: prove that this polynomial integrable flag
-> either admits a constant affine invariant or produces a global plane Keller
-> quotient.  No degree-by-degree scalar obstruction remains, and no local
-> focal/Frobenius modulus remains.
+> is Frobenius-integrable, its middle distribution has affine two-plane
+> leaves, and the complete flatness prolongation excludes rank-two kernel-line
+> motion.  Rank zero is fixed; rank one either makes the middle plane constant
+> or produces an affine-hyperplane pencil which again forces a constant affine
+> invariant.  The latter alternatives lie in the already closed
+> linearly-dependent packet.
 
 The theorem is proved in six conceptual steps.
 
@@ -423,65 +427,88 @@ In dimension five several independent scalars remain.
 
 ---
 
-## 6. Exact globalization boundary
+## 6. Final regular `[4]` globalization
 
-The preceding section closes the **local differential-geometric** problem.  It
-does *not* by itself produce a constant affine flag.
+Frobenius alone still does *not* produce a constant affine flag: ordinary
+Hessians are tied to the ambient flat affine coordinates, and the exact
+first-order audit permits upper-triangular flag motion.  The additional flat
+affine equations close that motion as follows.
 
-This distinction is essential because ordinary Hessians are tied to the
-ambient flat affine coordinates.  A nonlinear coordinate change that
-triangularizes `N` does not preserve the simple form
+In an `S`-adapted Jordan frame put
 
 \[
-S=\operatorname{Hess}\psi,
-\qquad
-T=\operatorname{Hess}A.
+a=\Gamma^3_{4,1}=\Gamma^2_{3,1},\quad
+b=\Gamma^2_{4,1},\quad
+p=\Gamma^4_{3,3},\quad
+q=\Gamma^4_{4,2},\quad
+r=\Gamma^3_{4,2}.
 \]
 
-An exact first-order audit in an `S`-adapted regular-nilpotent frame imposes:
-
-1. Hessian/Codazzi symmetry of `S`;
-2. Hessian/Codazzi symmetry of `T`;
-3. Frobenius of `ker N^2` and `ker N^3`;
-4. quasi-translation normalization `nabla_{e1}e1=0`;
-5. constant affine volume from `det S in K^*`.
-
-These equations still permit exactly three transverse projective motions of
-the kernel line:
+The middle distribution `E2=ker N^2` is autoparallel.  Its two transverse
+direction derivatives and the projective derivative of `E1=ker N` are
 
 \[
-\Gamma^2_{31},\qquad
-\Gamma^2_{41},\qquad
-\Gamma^3_{41}.
+A_3=\begin{pmatrix}0&-(a+q)/2\\0&0\end{pmatrix},\qquad
+A_4=\begin{pmatrix}a&r\\0&q\end{pmatrix},
 \tag{6.1}
 \]
 
-All lower-triangular motions vanish.  Thus the surviving motion is itself
-strictly upper triangular, matching the quotient/Krylov geometry, but it need
-not be affine-parallel at first order.
+\[
+D[e_1]=
+\begin{pmatrix}
+0&0&a&b\\
+0&0&0&a\\
+0&0&0&0
+\end{pmatrix}.
+\tag{6.2}
+\]
 
-Run
+The complete second-order flatness elimination gives
+
+\[
+a(p-q)=0,\qquad 4pa-3a^2-4aq+3q^2=0.
+\tag{6.3}
+\]
+
+On rank-two motion, `HC4RSD72` makes `pq` a nonzero constant in the canonical
+frame.  Prolonging by `d(pq)=0` adds
+
+\[
+p(2pa-aq+3q^2)=0.
+\tag{6.4}
+\]
+
+Equations (6.3)--(6.4), saturated by `a`, generate the unit ideal.  Thus
+rank-two motion is empty (`HC4RSD79`).
+
+For lower motion, rank zero is `HC4RSD65`.  Rank one has
+
+\[
+a=q=0,\qquad b\ne0,qquad pr=0.
+\tag{6.5}
+\]
+
+If `r=0`, (6.1) makes `E2` a constant two-plane.  If `p=0`, the affine second
+fundamental form of `E3=ker N^3` vanishes, so its leaves are affine
+hyperplanes.  Their projective closures form a line in the dual projective
+space: the graph of the leaf-hyperplane map equals the incidence variety, and
+the incidence degree is therefore one.  A constant pencil direction gives a
+constant linear invariant.  A moving direction has conormal
+`lambda0+t*lambda1`; differentiating `lambda(t)v(t)=0` shows that the moving
+kernel line and its derivative lie in the fixed two-plane
+`ker(lambda0) intersect ker(lambda1)`.  Hence `E2` is constant, contradicting
+`r!=0`.  This proves `HC4RSD80`.
+
+The exact calculations and the full incidence proof are in
+`HC4_AFFINE_PLANE_SCHUBERT_BRIDGE.md`.  Reproduce the local certificates with
 
 ```bash
-.venv/bin/python scripts/verify_hc4_affine_bridge_first_order.py
+.venv/bin/python scripts/verify_hc4_affine_plane_bridge.py
+.venv/bin/python scripts/verify_hc4_affine_plane_prolongation.py
 ```
 
-for the exact `64`-unknown linear audit.
-
-Accordingly the remaining statement is now a single global algebraic problem.
-
-> **Global affine-or-Keller bridge.**  Let a polynomial regular `[4]`
-> relative-nilpotent Hessian pencil satisfy (0.1) and suppose its complete
-> Jordan flag is Frobenius on the generic locus.  Prove that either
->
-> 1. the kernel flag has a constant affine invariant, reducing to the fixed
->    `HC2/JC2` packets; or
-> 2. the upper-triangular global twisting descends to a polynomial plane
->    Keller quotient.
-
-This bridge cannot be replaced by the stronger assertion “Frobenius implies
-constant affine flag”: the first-order audit disproves that implication at the
-formal level.
+Thus the former global affine-or-Keller bridge has no surviving regular `[4]`
+packet.
 
 ---
 
@@ -515,10 +542,13 @@ HC4\Longrightarrow JC2
 by the standard cotangent bridge.
 
 The reductions above show considerably more inside the relative-nilpotent
-branch: every classified stratum already runs *back* to `HC2` or this exact
-plane-cotangent geometry.  If the Global affine-or-Keller bridge is proved,
-then the complete relative-nilpotent branch is equivalent, in obstruction
-content, to `JC2`.
+branch: every stratum runs *back* to `HC2` or this exact plane-cotangent
+geometry.  The complete relative-nilpotent branch is therefore equivalent, in
+obstruction content, to `JC2`.
+
+This does not prove unrestricted `HC4` or `JC2`: it closes the
+relative-nilpotent Hessian-pencil branch and identifies its only possible
+endpoint with the still-open plane Keller problem.
 
 As of August 2026 this is particularly meaningful: after the dimension-three
 Jacobian counterexample and the five-variable Hessian counterexample, the only
@@ -538,8 +568,9 @@ open classical low-dimensional statements are precisely `JC2` and `HC4`.
 \operatorname{rank}T\le2 &\to HC2/JC2,\\
 \operatorname{rank}T=3,\ k\text{ dependent} &\to HC2/JC2,\\
 \operatorname{rank}T=3,\ k\text{ independent}
-&\to\text{developable image}\to\text{Frobenius Jordan flag}\to\boxed{\text{global bridge}}.
+&\to\text{Frobenius flag}\to\text{affine }E_2
+\to\text{flatness/hyperplane pencil}\to HC2/JC2.
 \end{cases}}
 \]
 
-Everything before the final boxed bridge is degree-free.
+The complete reduction is degree-free.

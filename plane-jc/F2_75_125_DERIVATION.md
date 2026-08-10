@@ -47,6 +47,22 @@
 > couples to the endpoint solution; its Schur/Fitting system must be carried
 > through descent `37` and the thirteen residual functionals.
 
+The carrier-specialization continuation in
+[`F2_75_125_CARRIER_SPECIALIZATIONS.md`](F2_75_125_CARRIER_SPECIALIZATIONS.md)
+now fixes every exposed Schur and Hermite kernel/cokernel over
+`Q[rho]/(rho^2-3*rho+1)`.  The `53` successive coordinates are the normalized
+factor-quotient block; the full coupled Laurent cokernel has `347`
+coordinates, including `294` divisibility/local-jet conditions.  The
+downstream
+[`nonlinear forcing compiler`](F2_75_125_NONLINEAR_FORCING.md) now substitutes
+the ten endpoint circuits and upper tangent solutions into all of them,
+appends the terminal `7+6` block and the descent-eight incidence rows, and
+routes the rational squarefree carrier through later spacings `9..90`.  The
+localized circuit-ideal test and the squarefree target-and-tail compilers
+remain open.
+<!-- status-consumer: PF2CS1 666da98d2d24669e -->
+<!-- status-consumer: PF2NF1 cfd1da5136c0b6d0 -->
+
 The executable record is
 [`cas/f2_75_125_frontend.py`](cas/f2_75_125_frontend.py).  It emits the
 machine-readable residual certificate

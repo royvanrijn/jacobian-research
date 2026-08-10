@@ -305,10 +305,13 @@ The receiver changes the next attacks as follows.
    orbit a point in arbitrary degree and stabilization dimension.
 4. For an alternative compiler, test whether its analogue of `p_N` is
    constant on Tschirnhaus arrows.  That is the actual descent criterion.
-5. For a global moduli construction, first define and quotient the vertical
-   stabilization gauge.  The clean chart contributes no further physical
-   inertia, but this pointwise result does not construct the global
-   groupoid.
+5. Use the represented receiver as a test locus for the
+   [degreewise stable Keller-moduli problem](../extended-geometry/STABLE_KELLER_MODULI_PROBLEM.md):
+   construct its morphism to the stable groupoid, determine whether its
+   image is locally closed, and compute its normal deformation theory.
+   This still requires defining and quotienting the vertical stabilization
+   gauge; the pointwise physical-inertia result does not construct the
+   global groupoid.
 
 This constructs and represents the clean quadratic-gauge receiver.  It
 does not construct a finite-type global moduli stack of all stable

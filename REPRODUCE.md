@@ -496,6 +496,17 @@ The program-wide normal-core lattice gate is replayed separately by:
 ```bash
 .venv/bin/python plane-jc/cas/boundary_lattice_prefilter.py
 python3 scripts/verify_boundary_package_compiler.py
+.venv/bin/python scripts/verify_toroidal_boundary_feasibility.py
+.venv/bin/python scripts/verify_f20_colored_cox_packets.py \
+  --output artifacts/generated-results/f20_colored_cox_packets.json
+.venv/bin/python scripts/verify_f20_global_multi_rees_cox_algebra.py \
+  --output artifacts/generated-results/f20_global_multi_rees_cox_algebra.json
+.venv/bin/python scripts/verify_f20_normalized_cox_conductor.py \
+  --output artifacts/generated-results/f20_normalized_cox_conductor.json
+.venv/bin/python scripts/verify_f20_exceptional_cox_atlas.py \
+  --output artifacts/generated-results/f20_exceptional_cox_atlas.json
+.venv/bin/python scripts/verify_f20_exceptional_cox_corners.py \
+  --output artifacts/generated-results/f20_exceptional_cox_corners.json
 ```
 
 Besides the class-trivial-core and balanced-wild rows, these commands check
@@ -509,7 +520,100 @@ The package compiler also replays the shared retained-root Euler gate:
 certified degree four is obstructed by `chi_c=4`, degree one passes this
 gate, and incomplete proof data remains `uncertified` rather than being
 rejected.
-The final command verifies the sharp scalar conductor/contact-loss bound
+The toroidal command compiles the \(A_4\), \(D_5\), Davenport, and corrected
+Lecacheux \(F_{20}\) boundary data as colored fans and valuation matrices.
+It checks smooth-cone Smith diagonals, both exceptional \(D_5\) rows, the
+primitive bounded \(D_5\) model, and the Davenport unimodular block.  For
+\(F_{20}\) it independently factors the discriminant as
+\(d^3q^2r^2/256\), distinguishes the unramified \(q\)-crossing from the
+ramified \(d\)- and \(r\)-colors, and verifies all ten generic geometric
+rows.  Exact elimination then reduces the finite base-incidence locus to one
+node, one ramphoid \(A_4\) cusp, two conjugate triple tangencies, one
+transverse intersection, and three further tangencies.  Blowing up the node
+adds four unramified derivative-order-one slope colors and one simple color,
+all checked from the exact residual quadratic; the compiler therefore has
+fifteen \(F_{20}\) rows.  Four Newton residuals over the ramphoid-cusp
+resolution then prove the profiles \((5)\), \((5)\), \((1,2,2)\), and
+\((1,1,1,1,1)\), adding ten more rows and recovering derivative sums
+\((4,8,10,20)\).  The two conjugate triple centers add fourteen exact rows.
+For the last cubic orbit, one residue-field computation proves the center
+profile \((3,2)\), the first-exceptional profile \((2,1,2)\), and five
+unramified colors on the second exceptional; its eight-row template repeats
+at three centers and adds twenty-four rows.  The final \(F_{20}\) fixture has
+six primitive rays, six smooth maximal cones, and sixty-three color rows.
+The same checker then normalizes the \(q\)-curve by
+\(t=(y^2-9)/8,\ s=4(y+2)/((y+1)(y+3))\), proves that its two crossing
+slopes form the connected rational cover \(w^2=(y-5)/(y+3)\), and computes
+the rank-three-to-rank-four conductor-unit pullback.  The selector \(w-1\)
+completes that lattice unimodularly.  Four proposed mask columns then define
+the exhaustive 1,458-assignment architecture
+\(d^a q^b r^c(w-1)^e\).  It has no model, so its inverse-adjugate and
+affine-recognition report sets are exactly empty.  The core fixture remains
+`feasible`; the separate mask fixture is `obstructed` only within this
+certificate-scoped Laurent-monomial architecture.  A genuinely colored Cox
+divisor remains open.
+The same run also checks the general colored divisor-span theorem.  For any
+declared generator matrix \(A\) and colored target \(\tau\), it computes the
+class of \(\tau\) in \(\mathbf Z^m/A\mathbf Z^n\) and emits one violated
+proportional-row relation per primitive row class.  In the \(F_{20}\)
+fixture, the generator rank is three, the augmented rank is four, and six
+representative witnesses force color separation on the \(d\), \(q\), \(r\),
+triple-\(E_1\), triple-\(E_2\), and \(q\)-\(r\)-tangent classes.
+The colored-packet command constructs the first packet-supported
+continuation.  Six
+primitive orbit packets break all six witnesses but leave ranks `9 -> 10`.
+The complete positive derivative support has sixteen packets; their
+indicator columns give a saturated rank-nineteen lattice and the unique
+nonnegative derivative model.  They compress to three Cartier-compatible
+different-factor columns satisfying
+`3*D_d+D_q+D_r=div(P_X)`, with unique model `(3,1,1)`.  The checker verifies
+the determinant-minus-one \(q\)-conductor unit completion and proves that the natural `4*X-1` and
+linear \(q\)-collision selectors acquire extra interior norm factors.  The
+generated certificate deliberately stops at the missing conductor residue
+cocycle and global Cox algebra, so it does not run entrywise adjugate or
+affine-space recognition.  Regenerate the pinned JSON only with the displayed
+command.
+The multi-Rees command requires Singular.  It proves the general saturated
+presentation for a multi-Rees algebra of two-generated ideals and applies it
+to the natural (d,q,r) incidence ideals.  At a triple-(E_1) color it
+certifies the local orders (4,4,2) of the base/root parameters and the
+value-one gap, so the natural (d)-ideal has order two rather than the
+required compact-column order one.  Exact quotient, elimination, and radical
+calculations then show that (P_X\notin I_d^3I_qI_r), that the cyclic residue
+has length 57 and base length 33, that (dqr) is its unique squarefree
+boundary annihilator, and that its reduced base support is exactly the eight
+known collision centers.  This is a normalization-first obstruction to the
+ordinary incidence algebra, not an obstruction to the normalized divisorial
+Cox algebra.
+The normalization command also requires Singular, including `normal.lib`
+and `primdec.lib`.  It computes the exact global normalization module and
+conductor, decomposes the root/base residues into five collision packets,
+factors the connected conductor cover, and proves that the total derivative
+slope residue is anti-invariant.  Both nontrivial normalization generators
+have triple-`E1` order two, and the natural normalized degree-`(3,1,1)`
+product still excludes `P_X`.  The checker therefore stops at the required
+exceptional Cox algebra; it does not run inverse-adjugate or affine-space
+recognition.
+The exceptional-atlas command uses exact SymPy arithmetic over the rational,
+quadratic, and cubic chart fields.  It verifies thirteen strict-transform
+types covering all `48` positive exceptional colors, constructs one
+primitive value-one Rees variable on each chart, and proves
+`P_X=tau^(3*a+b+c)*dF/dY` for the compact local orders `(a,b,c)`.  It also
+checks a parity-compatible three-frame factorization of the total derivative
+residue on the punctured conductor.  The generated certificate stops at the
+missing Čech overlap maps; it does not promote chartwise cancellation to a
+global Cox ring, full inverse-adjugate polynomiality, or affine-space
+recognition.
+The exceptional-corner command verifies the two-parameter continuation.  It
+constructs four exact corners in the cusp graph and three in the
+`q-r`-tangency graph, proves bivariate strict-transform and derivative
+identities, and checks the compact `(3,1,1)` monomial on every corner.  It
+also proves the complementary `q`-node transition law and certifies that the
+positive triple-`E1` and triple-`E2` colors are root-center separated despite
+base-ray adjacency.  Strict-boundary attachments and the global Čech class
+remain outside the certificate.
+The boundary-package compiler command also verifies the sharp scalar
+conductor/contact-loss bound
 `n_i >= c_i+d_i+ell_i+epsilon_i`, its stronger per-input/output dependency
 bound `n_(i,j) >= c_i+lambda_(i,alpha,j)`, node and cusp quotients, arbitrary
 numerical-semigroup gap bases, the four audit states, strict scalar and
@@ -772,7 +876,7 @@ bounded searches; the all-order conclusion is deductive.
 
 ## Checked-in Lean projects
 
-All four local Lean packages use the pinned Lean/Mathlib `v4.32.1` release.
+All five local Lean packages use the pinned Lean/Mathlib `v4.32.1` release.
 Build their default targets and audit their source policies with:
 
 ```bash
@@ -782,7 +886,8 @@ make verify-lean-local
 This rejects `sorry` and `admit` throughout `formal/`, rejects unexpected
 explicit axioms, checks the finite-étale publication-certificate import
 boundary, and builds `discriminant-pencils`, `finite-etale-keller`, `gmc2`,
-and `gvc`.  The GMC(2) package deliberately exposes exactly two mathematical
+`gvc`, and `support-saturation`.  The GMC(2) package deliberately exposes
+exactly two mathematical
 inputs as axioms; their names and roles are documented in
 [`formal/gmc2/README.md`](formal/gmc2/README.md).  The GVC package contains no
 explicit axioms, but is currently a partial audit.  It constructs and proves
@@ -813,6 +918,20 @@ manuscript's declared-degree condition `S.natDegree <= e`, proves arbitrary
 even-phase extraction and the shifted primitive identity, and constructs
 the previously missing bridge.  Its exact coverage is
 documented in [`formal/gvc/README.md`](formal/gvc/README.md).
+
+Build only the support-saturation theorem with:
+
+```bash
+make verify-lean-support-saturation
+```
+
+This kernel-checks the associated-prime equivalence, the regular-element
+criterion, the no-embedded-primes support theorem, the explicit torsion
+counter-witness, and the quotient/presentation saturation equivalence.  The
+precise boundary of the formalization is recorded in
+[`formal/support-saturation/README.md`](formal/support-saturation/README.md).
+
+<!-- status-consumer: SST1F 838e558b5fcb9d81 -->
 
 Build only the GVC audit with:
 
@@ -2406,6 +2525,7 @@ saturation modules are audited by:
 .venv/bin/python scripts/verify_cubic_symbol_affine_dense_quartic_plane_saturation.py
 .venv/bin/python scripts/verify_universal_cubic_cotangent_saturation.py
 .venv/bin/python scripts/verify_cubic_formal_gauge_cokernel_atlas.py
+.venv/bin/python scripts/verify_cubic_double_saturation_stratification.py
 .venv/bin/python scripts/verify_nodal_cubic_formal_slice.py
 ```
 
@@ -2416,8 +2536,11 @@ intrinsic cross forms and three intrinsic pure-gauge quadrics, and checks
 that the pure-curvature zero scheme is two reduced rational planes with
 one embedded quadratic socle class.  Relative to the stored quartic lift,
 it continues both reduced planes through degree six, constructs the exact
-quadratic corrections, and obtains the two cubic Veronese classes.
-Quartic-lift independence and the embedded-socle continuation remain open.
+quadratic corrections, and obtains the two cubic Veronese classes.  It then
+changes the plus-branch lift by `p` times the first quartic stabilizer and
+proves that the resulting degree-six class changes literally while retaining
+the same origin-only zero locus.  The full stabilizer-orbit classification
+and embedded-socle continuation remain open.
 
 For the homogeneous tensor, all seven squarefree strata have saturated
 cotangent presentation and a length-six `Ext_A^2(T,A)` support defect with
@@ -2851,6 +2974,11 @@ identities are checked exactly by
 ```bash
 .venv/bin/python scripts/verify_stable_generator_rigidity.py
 .venv/bin/python scripts/verify_generic_affine_mark_faithfulness.py
+.venv/bin/python scripts/verify_weighted_stable_moduli_chart.py
+.venv/bin/python scripts/verify_quartic_biprojective_graph.py
+.venv/bin/python scripts/verify_quartic_rees_stratification.py
+.venv/bin/python scripts/verify_quartic_rees_corner_atlas.py
+.venv/bin/python scripts/verify_quartic_rees_side_corner_matching.py
 .venv/bin/python scripts/verify_intrinsic_selector_attack.py
 .venv/bin/python scripts/verify_hasse_typical_seed_recovery.py
 python3 scripts/verify_positive_characteristic_deformation_landscape.py
@@ -2876,6 +3004,37 @@ python3 scripts/verify_positive_characteristic_deformation_landscape.py
 .venv/bin/python scripts/verify_restricted_ll_degree.py
 .venv/bin/python scripts/verify_caustic_maxwell_boundary.py
 ```
+
+The quartic biprojective-graph command requires Singular `4.4.1`.  It first
+checks the source base triangle and generic line orders `(6,4,2)`, checks
+two radical length-`28` sections exactly over `Q`, then separately computes
+the saturated graph dimension, minimal-generator count, and multidegrees
+over `F_32003`; the latter is a modular calibration, not a
+characteristic-zero normalization certificate.
+
+The Rees-stratification command is an exact SymPy calculation over rational
+function fields.  It computes the complete generic-side base-point clusters,
+the integral-closure colengths `(43,19,17)` and defects `(9,6,1)`, the six
+compact vertex Newton facets, and the quadratic-transform principalization
+of all six generic face colors.
+
+The Rees-corner command completes the finite vertex atlas.  It verifies the
+eight maximal Newton cones and their unit witnesses, the two `P_18` boundary
+branch packets and conductor colengths `(12,15)`, the residual rational and
+quadratic cusp conductors of colengths `(1,2)`, their explicit quadratic
+normalizations, and the smooth colored `V_23` overlaps.  It requires
+Singular `4.4.1` for four exact conductor calculations.  It does not glue the
+closures of the three generic side clusters, compute the global bigraded
+Hilbert polynomial, or prove simultaneous normalization.
+
+The side-corner matching command compactifies all rational and algebraic
+infinitely-near center curves over the three side parameter lines.  It finds
+the three nontrivial packet bidegrees `(4,4)`, `(6,2)`, `(6,2)`, verifies
+endpoint conductor colengths `(6,3,3)` at both ends and the corresponding
+packet Hilbert corrections, and checks the exact `V_12`, `V_13`, and `V_23`
+transitions.  It requires Singular `4.4.1` for six curve-conductor
+calculations.  It does not assemble the rational exceptional surfaces or
+compute the global normalized-Rees Hilbert polynomial.
 
 For at least eight labelled finite branch values, the target receiver in the
 wonderful-pullback construction is `Mbar_0,b+2` with `b+2>=10`.  Its Cox ring
@@ -8117,6 +8276,63 @@ monodromy are in
 The bounded replay is a regression certificate, not an exhaustive proof over
 all degrees.
 
+## \(\operatorname{PSL}_2(11)\) Keller monodromy action spectrum
+
+The exact checker constructs
+\(\operatorname{PSL}_2(\mathbb F_{11})\) as
+\(\operatorname{SL}_2(\mathbb F_{11})/\{\pm I\}\), enumerates its natural
+degree-twelve action and both exceptional degree-eleven \(A_5\)-coset
+actions, and verifies Gassmann equivalence, cross-subdegrees \(5+6\), the two
+rigid \((2,3,11)\) Nielsen orbits, and the genus-one/genus-zero
+Riemann--Hurwitz split.  It identifies the normalized degree-five/six
+components as the degree-\(55\) \(A_4\) quotient of genus one and the
+degree-\(66\) \(D_{10}\) quotient of genus two, including both projection
+passports.  Its symbolic half checks the corrected Klein Shabat factorization
+over \(\mathbb Q(\sqrt{-11})\), the derivative, square discriminant, the
+direct correspondence, irreducible boundary factors, the rank-six/rank-two
+unit ledger, the exact two-step cubic reduction of the genus-one component,
+its conductor-\(121\) model and \(j=-121\), the trace obstruction to an
+isogeny with \(X_0(11)\), the canonical adjoint pencil and even
+hyperelliptic model of the genus-two component, its two elliptic quotients
+and \((2,2)\)-split Jacobian, the explicit \(X_0(11)\) equation and
+degree-twelve \(j\)-map, and the exact positive-genus boundary-unit lattices
+of ranks \(3,14,17\).  It also constructs both compact boundary pullback
+matrices, computes their primitive rank-ten unit images and free cokernels
+of ranks four/seven, and tests the minimal two-output derivative ledger.  It
+also reduces projection exchange on the residual quotients, constructs
+effective bases for all four/seven mask classes, exhausts the degree-five
+simple-pole divisors, and certifies the first normal-support degrees two and
+three:
+
+```bash
+.venv/bin/python scripts/verify_psl2_11_keller_action_spectrum.py
+.venv/bin/python scripts/verify_psl2_11_keller_action_spectrum.py \
+  --pari-mordell-weil
+.venv/bin/python scripts/verify_psl2_11_keller_action_spectrum.py \
+  --singular-normalization
+Singular -q scripts/psl2_11_c5_boundary_pullbacks.sing
+.venv/bin/python scripts/verify_psl2_11_c6_boundary_images.py
+```
+
+The second command requires PARI/GP and certifies the rational ranks and
+Heegner generators used in the quadratic rank decompositions over
+\(\mathbb Q(\sqrt{-11})\).  The third requires Singular \(4.4.1\).  It
+exactly normalizes both affine correspondence curves, proves that their
+conductor ideals equal their reduced singular ideals, verifies five/eight
+ordinary nodes and all fifteen/twenty normalized boundary primes, and
+replays the canonical elimination for the genus-two sextic and both
+quadratic Cremona transformations from the nodal quintic to the sparse
+cubic.  The fourth labels the \(C_5\) boundary primes by both projection
+colors and separates all three normalized node branches.  The fifth
+requires Singular and SymPy; it replays the nineteen direct \(C_6\) residue
+traces through both elliptic quotients and recovers the remaining
+\(q_2\)-node class from its principal fiber relation.
+
+The action-level classification problem, determinant-one common-target
+Keller charts, affine-completion obstructions, and external
+Jones--Zvonkin monodromy input are in
+[`extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md`](extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md).
+
 ## Absolute \(D_5\) affine-modification frontier
 
 The degree-five precomputation checks the split derivative and branch
@@ -8482,7 +8698,77 @@ The exact affine-support/Newton bridge audit is:
 .venv/bin/python plane-jc/cas/verify_f2_kummer_orbit_transfer.py
 .venv/bin/python plane-jc/cas/verify_f2_terminal_residue_cover.py
 .venv/bin/python plane-jc/cas/verify_f2_a6_simple_spectator_gluing.py
+.venv/bin/python plane-jc/cas/verify_f2_75_125_global_attachment.py
+.venv/bin/python plane-jc/cas/test_f2_75_125_global_attachment.py
+.venv/bin/python plane-jc/cas/verify_f2_75_125_carrier_wronskian.py
+.venv/bin/python plane-jc/cas/test_f2_75_125_carrier_wronskian.py
+.venv/bin/python plane-jc/cas/verify_f2_75_125_carrier_specializations.py
+.venv/bin/python plane-jc/cas/test_f2_75_125_carrier_specializations.py
+.venv/bin/python plane-jc/cas/compile_f2_75_125_nonlinear_forcing.py
+.venv/bin/python plane-jc/cas/test_f2_75_125_nonlinear_forcing.py
+.venv/bin/python plane-jc/cas/test_sparse_circuit_modp.py
+.venv/bin/python plane-jc/cas/probe_f2_75_125_nonlinear_modular.py
+.venv/bin/python plane-jc/cas/compile_f2_75_125_tangent_obstruction.py
+.venv/bin/python plane-jc/cas/compile_f2_75_125_formal_homotopy.py
+.venv/bin/python plane-jc/cas/compile_f2_75_125_formal_homotopy.py --regular-gauge --artifact artifacts/generated-results/jc2_f2_75_125_formal_homotopy_regular_gauge.json
+.venv/bin/python plane-jc/cas/compile_f2_75_125_formal_homotopy.py --prime 61 --rho 19 --y 19 --maximum-order 8 --artifact artifacts/generated-results/jc2_f2_75_125_formal_homotopy_mod61.json
+.venv/bin/python plane-jc/cas/verify_common_power_carrier_wronskian.py
+.venv/bin/python plane-jc/cas/test_common_power_carrier_wronskian.py
 ```
+
+The global-attachment command pair compiles the first global `(75,125)`
+attachment layer:
+the original nonmonomial valuation orders `(-25,5,12)`, the shared six-blowup
+carrier and six-blowup principal arms, the complete minimal target boundary
+ledger, five marked attachment slots per terminal packet, the three symbolic
+degree ledgers, and strict candidate-mode gates for any proposed completion.
+Target-valuation uniqueness removes the distinct-target double row.  The
+pinned attachment output remains incomplete.  The carrier-Wronskian command
+pair then
+classify its carrier target row: they extract `(5,36)`, force the unique
+squarefree cofactor `R=(v^2-3v+3)/25` or the two double-root parameters
+`rho^2-3rho+1=0`, identify the cyclic degree-three and Belyi degree-six
+carrier maps, and prove the squarefree simple spectators are unramified.
+The lower-band realization, purity row, global degree, and global meridians
+remain unknown.
+<!-- status-consumer: PF2CW1 a7774b0fa736b64c -->
+<!-- status-consumer: PF2GA1 cbca9b6c44a2bc7e -->
+
+The carrier-specialization pair performs the exact next handoff.  It routes
+the squarefree rational carrier outside the descent-eight double-root
+component, specializes every exposed Schur and Hermite matrix at
+`rho^2-3*rho+1=0`, and pins the zero-row kernel/cokernel bases through layer
+`3`.  The double-carrier and descent-eight defect fields form a quartic
+compositum with four embeddings.  The coupled zero rows have a raw successive
+forcing-cokernel total of `53`, followed by the residual `7+6` target/Hermite
+coordinates.  The nonlinear compiler then substitutes the endpoint circuits,
+retains all `294+53` Laurent coordinates, appends the final thirteen
+functionals and descent-eight incidence, and routes the squarefree carrier
+through its later first-defect ledger.  The modular probe adds the explicit
+`a!=0` Rabinowitsch coordinate over `F_31`.  Its localized seed has full
+Jacobian rank `214`; the spacing-four staircase has `169` variables,
+restricted rank `57`, and a consistent `112`-dimensional affine tangent
+fiber.  Its full Jacobian cokernel has dimension `153`.  Of six sampled free
+directions, none has a nonzero projected remainder after corrected
+descending-column back-substitution.  The next compiler checks all `112`
+coordinate lines and eight dense mixed lines through the exact degree-seven
+bound; all are zero in the `153` cokernel.  The fixed-Jacobian homotopy then
+lifts without obstruction through order `16` over `F_31` and order `8` over
+the independent good split reduction `F_61`.  A regular seven-coordinate
+gauge removes a repeated pivot-pole mode.  Direct `lambda=1` substitution in
+the order-16 regular truncation still leaves `50` nonzero equations, so these
+are formal jets rather than modular points or component exclusions.
+<!-- status-consumer: PF2CS1 666da98d2d24669e -->
+<!-- status-consumer: PF2NF1 cfd1da5136c0b6d0 -->
+
+The last command pair abstracts the carrier calculation from F2.  For every
+primitive degree-`k` common-power edge with coprime powers `(m,n)`, it proves
+the forced first nonshear descent `k*(m+n-1)+1`, constructs the fixed-carrier
+linear reconstruction matrix, and derives the universal three-point Hurwitz
+passport.  The pinned partition census through `k=24` is a regression audit;
+the theorem itself is symbolic and unbounded.  The resonant `k=2` and
+imprimitive-multiplicity algorithms remain separate open continuations.
+<!-- status-consumer: PCW1 94b10929118f151d -->
 
 An optional exact characteristic-zero family sample requires Singular and
 proves that the `r=5` P-only projected top-gap ideal is also `(1)`:
@@ -8967,6 +9253,40 @@ make verify-plane-72-108-exact-fast PYTHON=/absolute/path/to/venv/bin/python
 GPU backends are intentionally deferred.  They may later be used for modular
 or bounded discovery workloads only when their output has a separate portable
 CPU verifier.
+
+### Dessin-first no-vertical `(72,108)` closure
+
+The no-vertical Laurent polygon has a separate exact reconstruction that does
+not form a Gröbner basis of the original coefficient system.  It enumerates
+the five dessins of passport
+`(2^10,1)|(3^7)|(17,1,1,1,1)`, reconstructs their single `S_5`-transitive
+quintic coefficient model, and verifies the normalized Belyi factorization.
+It then compiles the successive linear maps for `(B,E)`, `(C,F)`, and `G'`.
+Their shape/rank pairs are `(20x19,17)`, `(20x21,18)`, and `(20x12,12)`,
+with complete kernel dimensions `2`, `3`, and `0`; the constant of `G` is a
+one-dimensional target-translation kernel.  The terminal calculation uses
+Singular only for 25 sparse degree-three/four equations in five deformation
+parameters.  Saturation by the required `B_8!=0` open gives the unit ideal.
+
+Generate the pinned artifact with:
+
+```bash
+.venv/bin/python plane-jc/cas/jc2_degree108_belyi_deformations.py
+make refresh-plane-72-108-belyi-deformations
+```
+
+Replay the exact coefficient reconstruction, Galois audit, linear maps, and
+terminal Singular unit ideal with:
+
+```bash
+.venv/bin/python scripts/verify_jc2_degree108_belyi_deformations.py
+make verify-plane-72-108-belyi-deformations
+```
+
+Add `--quick` to the direct verifier command to skip Singular while replaying
+all preceding exact stages against the pinned terminal result.  The canonical
+claim boundary and formulas are in
+[`plane-jc/JC2_72_108_BELYI_DEFORMATION_CLOSURE.md`](plane-jc/JC2_72_108_BELYI_DEFORMATION_CLOSURE.md).
 
 ### Case-1 full lower-band continuation
 
@@ -10688,6 +11008,20 @@ Its fast exact calibration is:
 make verify-support-saturation-compiler
 ```
 
+The theorem-to-programme gate ledger has a dependency-free status check:
+
+```bash
+make verify-support-saturation-paths
+```
+
+This validates the common `G0`--`G4` contract, the cubic `C0`--`C3`,
+plane-JC `P0`--`P4`, and restricted-Weyl `W0`--`W5` routes, and the
+deliberately open status of all three application outcomes.  The broader
+compiler target depends on this check, so a numerical certificate cannot
+silently promote an unmet structural gate.
+
+<!-- status-consumer: SST1 12c5cb15e8b6de26 -->
+
 This target also runs the standard-library-only replay of the exact
 characteristic-zero degree-42 \(c_6\) certificate.  It verifies
 \[
@@ -10707,9 +11041,10 @@ primes is:
 make refresh-degree42-c6-macaulay
 ```
 
-Intentional regeneration of the homogeneous cubic-symbol atlas, the exact
-degree-42 finite-jet computation over `GF(32003)`, and the normalized
-plane-JC cyclic `d3` boundary layer is:
+Intentional regeneration of the homogeneous cubic-symbol atlas, the six-row
+cubic double-saturation stratification, the exact degree-42 finite-jet
+computation over `GF(32003)`, and the normalized plane-JC cyclic `d3`
+boundary layer is:
 
 ```bash
 make refresh-support-saturation-cases
@@ -10729,6 +11064,100 @@ singular squarefree cases by annihilator type, and places the
 generically-étale/Keller gate before saturation for the double-line,
 triple-line, and zero symbols.  It is a routing certificate, not a new
 singular saturation computation.
+
+Compile and replay the complete deterministic nongauge complements for the
+six singular-squarefree rows with:
+
+```bash
+make refresh-cubic-double-saturation-stratification
+make verify-cubic-double-saturation-stratification
+```
+
+The generated
+`artifacts/generated-results/cubic_double_saturation_stratification.json`
+stores all representative quartic tensors and complement ranks.  On each
+full complement family, the replay proves exact cotangent saturation and a
+parameter-independent multiplicity-six `Ext^2` obstruction.  It also builds
+the weighted Rees presentations of `Omega` and of the cokernel controlling
+`Ann_B(Omega)`, proves both are `t`-saturated with their literal central
+initial presentations, and thereby promotes annihilator, support-module,
+cotangent, and `Ext^2` base change to every geometric parameter fiber.  It
+therefore closes `C2` and fails `C1` fiberwise for these quartic models.
+Reduction of the intrinsic annihilator modulo the collision maximal ideal
+also gives a parameter-independent six-dimensional Nakayama module, proving
+that the Kähler different needs six local generators and is not Cartier on
+any geometric fiber.  It does not promote either result to higher formal
+orders or close the global Keller-compatible cubic programme.
+
+<!-- status-consumer: KDSQ6 cd423f625f1f3cd2 -->
+
+Compile intentionally and replay the nodal sextic different-persistence
+certificate with:
+
+```bash
+make refresh-nodal-sextic-different-persistence
+make verify-nodal-sextic-different-persistence
+```
+
+The pinned artifact proves that the homogeneous nodal quintic and sextic
+compatible spaces decompose as `42=39+3` and `64=60+4`, with quotient bases
+`y^2*eta,y*z*eta,z^2*eta` and
+`y^3*eta,y^2*z*eta,y*z^2*eta,z^3*eta`.  On the exact family formed with the
+two quartic quotient directions, strict Rees base change identifies the
+intrinsic annihilator on every geometric fiber, and `J/nJ` is the scalar
+extension of the six-dimensional central module.  Thus the Kähler different
+remains non-Cartier through the complete sextic normal-form quotient.  The
+command does not control order-seven corrections, normality, or Keller-open
+compatibility.
+
+<!-- status-consumer: NSDP6 c5f68253995b7b6a -->
+
+Compile intentionally and replay the all-orders nodal different-persistence
+certificate with:
+
+```bash
+make refresh-nodal-all-orders-different-persistence
+make verify-nodal-all-orders-different-persistence
+```
+
+The checker independently replays the cyclic graded gauge quotient
+`ker(C)/im(G_nod)=Q[y,z](-3)`, then works over the universal coefficient
+ring `Q[u,x,y,z]`.  It verifies that the multiplication table of
+`h_nod+u*eta` is affine-linear in `u`, that the intrinsic collision
+Nakayama module is `Q[u]^6`, and that assigning `u` collision weight one
+gives `t`-saturated Rees presentations with literal central initial modules
+for both `Omega` and `coker(B -> Omega^3)`.  The formal proof then applies
+the monic graph equation `u-f` to commute the annihilator with every
+polynomial or power-series specialization in the collision ideal.  Thus the
+nodal Kähler different remains six-generated and non-Cartier after every
+compatible formal tail.  Normality, algebraization of the infinite formal
+gauge, and Keller-open compatibility are outside the claim.
+
+<!-- status-consumer: NADPALL 60218641ccdf6fac -->
+
+Compile intentionally and replay the all-orders singular-squarefree
+different-persistence certificate with:
+
+```bash
+make refresh-singular-squarefree-all-orders-different-persistence
+make verify-singular-squarefree-all-orders-different-persistence
+```
+
+The checker first verifies the formally rigid smooth central row, including
+its six-generator intrinsic different.  For the six singular squarefree
+symbols it verifies exact minimal presentations of the graded gauge
+cokernels and the generator counts `1,2,2,3,3,4`, then constructs each
+universal normal-coefficient family and computes the intrinsic `J/nJ`
+presentation as six copies of the
+collision residue module, and verifies strict weight-one Rees packets for
+`Omega` and `coker(B -> Omega^3)`.  The formal theorem applies the graph
+equations successively; each has initial form monic in an unused coefficient,
+so the annihilator commutes with every polynomial or formal compatible tail.
+The command therefore closes all-orders non-Cartier persistence for every
+squarefree cubic symbol.  It does not prove normality, algebraize an infinite
+formal gauge, or construct a Keller open.
+
+<!-- status-consumer: SSADPALL 584a6e05374612ee -->
 
 The older degree-42 and plane cases require Singular; the plane primary
 decomposition is the longer run.  Their exact scopes, especially the
@@ -11397,4 +11826,216 @@ This `150 x 84` interpolation batch has not yet been completed or checked in.
 Its output will still be modular; multiple images, rational reconstruction,
 and an unused-prime reduction are required for a characteristic-zero claim.
 
+## Optimized Hessian-symbol search for `DC_2`
+
+The first cross-branch search from nilpotent Hessian pencils to rank-two
+classical symplectic symbols is replayed by
+
+```bash
+.venv/bin/python scripts/search_dc2_hessian_symbol_candidates.py \
+  --shortlist 8 \
+  --output \
+  artifacts/generated-results/dc2_hessian_symbol_optimization.json
+```
+
+The command exactly screens all 1,540 one- and two-monomial cubic/quartic
+Hamiltonian Hessian pencils through `N^4=0`, polynomial Cayley integrability,
+the symplectic identities, and determinant one.  All 184 integrable rows are
+square-zero Moyal-flat shears.  It then scores 238 canonical noncommuting
+two-pencil words and quantizes the best eight through the native-support
+`hbar^5` equations.  Four top rows have a native order-three rank jump
+`14 -> 15`, but the factorwise Weyl lift adds one correction monomial outside
+that lattice and verifies the relations through order five.  These are exact
+automorphism controls and a support-saturation warning, not `DC_2`
+counterexamples or unrestricted quantization obstructions.
+
+The exact regular-index-four `N^2 != 0` control and the reciprocal `R21`
+stable-chart, affine-contact, and tame degree-four graph frontier are checked
+by the command below.  It also proves the fiber-preserving stabilization
+no-go from the nontrivial factorization `R=x*S` and verifies the surviving
+stable-mixed `U_2` chart through sextic order, including the explicit nonzero
+degree-seven remainder. Finally, it verifies on the degree-six and
+degree-seven rows the Euler-homotopy recurrence that eliminates every
+homogeneous defect to all orders in the completed local ring. This formal
+trivialization is not a finite polynomial admission certificate. The same
+run computes the exact straight-line Moser Pfaffian correction: it is nonzero,
+has 124 terms in source degrees two through twenty-seven, and therefore gives
+a genuinely nonterminating canonical geometric series. It then constructs
+the constant-Pfaffian dilation path and its exact polynomial trivializing
+field, proves that its time-one map is the nonpolynomial inverse of the
+generic-degree-four graph, and excludes every polynomial Darboux normalizer
+whose target-`b` component has a polynomial Poisson mate on its zero fiber.
+The exact invariant curve has induced field
+`((y^2-1)^2/144)*partial_y`; its time form has residues `-36,36`, proving
+that the kernel has no polynomial slice. This excludes every elementary
+target-`b` coordinate, including all displayed corrections and elementary
+`b`-moving shears. Finally, it verifies the first three rows of the infinite
+tame no-slice family `F_k=a+c^k*(b+a*d)`. The general residue formula proves
+that this family works for every `k>=1`; its degree-three row makes the
+target-coordinate obstruction sharp, while its tied signature `(k,k)`
+isolates the R21 target's split pole/weight signature `(2,3)`. The bounded
+semi-invariant census through degree seven is also checked, together with its
+degree-eight counterexample. The decisive all-degree calculation identifies
+the polynomial constant rings as Danielewski surfaces with exponents `k` and
+three. Combined with the generic time-form pole order, this excludes every
+`F_k`. Finally, the checker constructs the exact `k=2` conjugacy on `I!=0`
+and verifies that its Jacobian is `-I/5184`. It then crosses this
+affine-modification divisor with the degree-seven Bezout coordinate
+`F=A*(Q+G^2/2)-B*P`: the displayed companion `W` makes `(F,G,C,W)` a
+determinant-one polynomial coordinate system, and its zero hypersurface pulls
+the complete R21 `b=0` two-form back exactly. Finally, it verifies the
+polynomial cancellation `s=-2/C-I^2*L/144`, the full normal--tangent form
+match, and the divergence-free first transverse jet. The jet's canonical
+normal vector is not locally nilpotent, so the run does not claim a finite
+four-dimensional completion. At the next order, it verifies that only three
+normal form coefficients remain, constructs their polynomial Bezout
+correction, and reduces volume compatibility to a one-variable coefficient
+recurrence. The nonzero tail beginning `p_5=-17/5388768` proves that the
+canonical minimal first jet has no polynomial second completion. It then
+checks that the obstruction is affine-linear in an arbitrary shift, uses the
+constant-ring grading to isolate `I^2*U*K[S]`, and verifies the symbolic
+nonzero top-`J` coefficient for `I^2*U*S^m`, `m>=0`. Hence every polynomial
+invariant shift is excluded and this degree-seven target-`b` coordinate has
+no polynomial second completion. Finally, it checks the general identity
+`{F_H,W_H}|_(F_H=0)=-H_G`, proving that compatible shifts are only the
+ambient symplectic shears `H=G^2/2+k(C)`, and verifies that every other
+Bezout pair changes the companion by `W->W-T*F`. Thus the no-go covers the
+complete reciprocal-compatible Bezout ansatz.
+
+```bash
+.venv/bin/python scripts/verify_dc2_higher_nilpotence_r21_frontier.py \
+  --output \
+  artifacts/generated-results/dc2_higher_nilpotence_r21_frontier.json
+```
+
 <!-- status-consumer: C1FBC1 0f14ef01fff25097 -->
+
+## HC4 final regular `[4]` affine-flag packet
+
+The exact first-order moving-frame audit and its second-order flatness
+prolongation are replayed by
+
+```bash
+.venv/bin/python scripts/verify_hc4_affine_plane_bridge.py
+.venv/bin/python scripts/verify_hc4_affine_plane_prolongation.py
+```
+
+The first command certifies the affine middle foliation and its two transverse
+Grassmann matrices.  The second eliminates all 68 derivative jets, excludes
+rank-two source-kernel motion after imposing the constant HC4 motion
+determinant, and certifies the lower-rank split `p*r=0` together with the exact
+`E2` and `E3` flag tensors.  It regenerates
+`artifacts/generated-results/hc4_affine_plane_prolongation.json`.  The final
+`p=0` closure is the degree-one hyperplane-incidence proof in
+`HC4_AFFINE_PLANE_SCHUBERT_BRIDGE.md`; it is not represented as a bounded
+symbolic computation.
+
+## HC4 direct repeated-linear Hessian-factor gates
+
+Replay the exact all-degree normal-form and boundary-jet identities for
+`HC4-DIR3--22` with
+
+```bash
+.venv/bin/python scripts/verify_hc4_direct_double_linear_hessian_gate.py
+```
+
+The command regenerates
+`artifacts/generated-results/hc4_direct_double_linear_hessian_gate.json`.  It
+checks the degree gate forcing first transverse order `j=1` and the two
+normal-form Hessian determinants with linear-factor multiplicities `D-2` and
+at least `2(D-2)`.  This closes exact multiplicity two from degree five and
+reduces exact multiplicity three to one degree-five additive split top.  The
+`HC4-DIR3b` weighted channel fixes its `w^2*ell` coefficient and then gives
+the nonzero terminal multiplier `-(81/400)*(alpha^4/C^2)`, closing exact
+multiplicity three for every `D>=5`.  It also checks the lower-rank exact quadruple-linear
+boundary coefficients and incompatible rank-one weights, closing that
+boundary for every `D>=5`.  Finally it checks the quadratic-suspension
+coefficient that eliminates the apparent rank-two order-two degree-six split.
+It also verifies the rank-one fraction-field integration used by `HC4-DIR5`,
+which collapses the remaining order-one system to
+`D=6`, `f=C*ell^6+h_6(y,z)`, and `L=ell*partial_ell`.
+The final weighted-binary channel check verifies `HC4-DIR6`: after the forced
+`w^2*ell^2` and `w^3` coefficients are substituted, the next determinant
+channel is `(128/3375)*(alpha^5/C^3)*det Hess_(y,z)(h_6)`, closing exact
+linear multiplicity four.
+For `HC4-DIR7`, it checks the two possible first-motion orders on the generic
+corank-one exact quintuple boundary.  The order-two packet has terminal
+multiplier `(32/21)*(alpha^3/C)`; the order-one packet forces
+`B_1=25*alpha^2/(84*C)`, `gamma=125*alpha^3/(5292*C^2)`, and `eta=0`, then
+ends in the nonzero channel `-9*gamma^2*det Hess_(y,z)(h_7)`.
+For `HC4-DIR8`, it verifies the exact order-five coefficients of both
+lower-rank boundary jets.  The field equations force respectively `m=2` and
+`m=3`; the first is below `D=5`, while in the second the required coefficient
+has degree one and hence zero second transverse derivative.  Thus exact
+linear multiplicity five is closed in every boundary rank.
+For `HC4-DIR9`, it checks the two high-order exact sextuple channels.  At
+`j=3`, the forced constant `w^2` Hessian entry leaves terminal multiplier
+`(24/7)*(alpha^3/C)`.  At `j=2`, the rank-one field integration reduces to
+the degree-eight split packet and leaves terminal multiplier
+`-(1875/3136)*(alpha^4/C^2)`.  Thus only the quadratic-vector `j=1` system
+survives on the generic corank-one boundary; the Jacobian of that quadratic
+field is a linear boundary matrix of rank at most two.  For `HC4-DIR10`, the checker
+verifies the two exact order-six coefficients in the lower-rank jets; the
+degree-five tangent packet and these two jets are reductions, not exclusions.
+For `HC4-DIR11`, it verifies the five forced coefficients in the
+quadratic-Jacobian rank-zero ladder and the terminal nonzero multiplier
+`2187*alpha^7/(4302592*C^5)`.  The surviving generic `j=1` matrix therefore
+has boundary rank one or two.  For `HC4-DIR12`, it checks the outer-product
+normal form of the rank-one boundary Jacobian and the exact leading ratios in
+the tangent field equations.  The axial branch reduces to the earlier
+linear-field system, the normal orientation is eliminated by valuation, and
+the tangent orientation is reduced to `t=3,4,5,6`.  For `t<6` the boundary
+quadratic is a square; for `t=6`, a nonsquare boundary quadratic requires odd
+`m`.  These four tangent rows are reductions, not exclusions.
+For `HC4-DIR13`, it verifies the eliminated one-form identity for
+`q/ell^2` and `F/ell^m`, the primitive monomial construction, and its exact
+order `t=m+3-2k`.  The written quadratic-centralizer lemma splits each row
+into a binary-composite pencil and a primitive conic packet.  Below `t=6`,
+the composite field is invariant along its image and the top is linear in
+the complementary tangent coordinate; `t=6` also has a transverse composite
+orientation.  The primitive packet has parity `(3,even)`, `(4,odd)`,
+`(5,even)`, or `(6,odd)` and, below `t=6`, normal form `q=y^2+ell*z`.
+This remains a reduction rather than a closure.
+For `HC4-DIR14`, it checks the Hessian determinant of the invariant composite
+top `f=z*G(ell,y)+h(ell,y)`.  The valuation bound eliminates `t=5,6`; at
+`t=3`, the order-four equation kills the pure boundary coefficient and
+boundary rank two then makes the order-five coefficient nonzero.  The sole
+invariant composite survivor is `t=4`, whose exact order-six coefficient is
+`-16*a0*c0^2*(m+1)*(m+2)*y^(3m-6)`.
+For `HC4-DIR15`, the `z` coefficient of the field equation makes the binary
+part of `v` annihilate `G`.  If it vanishes, the logarithmic identity
+`G*q^(m+1)=C*ell^(3m+3)` contradicts `q mod ell!=0`; otherwise `G` is a pure
+linear power, and the only order-four possibility contradicts the nonzero
+boundary derivative from `HC4-DIR14`.  Thus the invariant composite
+orientation is closed.
+For `HC4-DIR16`, the transverse composite top splits as
+`f=P(ell,y)+h(ell,z)`.  The active part of `v` would lie in the kernel of the
+invertible boundary Hessian of `h`, so it vanishes; absorbing the remaining
+component reduces again to the impossible logarithmic identity.  Hence all
+composite rank-one packets are closed.
+For `HC4-DIR17`, `ord_ell(V)=t-2>=2` puts both constant vectors in the unique
+boundary-Hessian kernel for `t>=4`, again forcing the pure-quadratic
+contradiction.  At primitive `t=3`, the checker verifies
+`[ell]Q(F)=c*(m/2)*y^m`, incompatible with `ell^3|Q(F)`.  Thus boundary
+Jacobian rank one is completely closed and only rank two remains in the
+generic sextuple system.
+For `HC4-DIR18`, it checks the derivative-gcd count behind the rank-two
+root gate.  A primitive left-kernel generator of a linear rank-two boundary
+matrix has degree at most two; consequently a nonzero binary boundary form
+has one, two, or three distinct roots.  The alternative normal packet has
+`f mod ell=0` and normal component `Q_ell in (ell^2)`.  This is an exact
+reduction, not a closure of those four packets.
+For `HC4-DIR19--20`, the one-root order-two Hessian coefficient forces its
+second jet to `C*y^m`; the `Q(f)` and matrix equations then require
+incompatible values of the same constant field coefficient, closing that
+profile.  `HC4-DIR21` verifies the shear-basis calculations that reduce the
+two- and three-root first jets to finite monomial representatives.
+`HC4-DIR22` checks their Schur complements.  It records the two explicit
+outer second jets, verifies the residual quadratic denominator in 27
+three-root cases, and proves in the written all-degree argument that
+polynomiality kills the three-root parameter.  If the first jet vanishes,
+exact sextuple order forces the first positive `ell`-jet to be `ell^8` and
+therefore `D>=8`.
+The UFD/DVR argument showing that the required half radical divides the
+adjugate motion vector is the written proof in
+`HC4_DIRECT_DOUBLE_LINEAR_HESSIAN_GATE.md`, not a bounded search.

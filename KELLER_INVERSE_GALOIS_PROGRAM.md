@@ -170,6 +170,29 @@ already reaches the first two kinds of output for the point and line actions of
 \(\operatorname{GL}_3(\mathbb F_2)\). Its affine-space descent obstruction
 shows why the third output is substantially stronger.
 
+The
+[\(\operatorname{PSL}_2(11)\) action-spectrum benchmark](extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md)
+adds a second global Gassmann chart.  Two nonconjugate exceptional \(A_5\)
+stabilizers give conjugate degree-eleven Shabat polynomials and determinant-one
+common-target Keller charts, while the natural degree-twelve action of the
+same group and the same \((2,3,11)\) closure is the explicit elliptic modular
+curve \(X_0(11)\).  The degree-five/six direct correspondences normalize to
+genus-one \(A_4\)- and genus-two \(D_{10}\)-quotients, with reduced
+five/eight-node conductors.  The genus-one normalization is the
+conductor-\(121\) curve \(v^2+uv=u^3+u^2-2u-7\), has \(j=-121\), and is
+not isogenous over \(\mathbb Q(\sqrt{-11})\) to \(X_0(11)\).  The genus-two
+normalization is bielliptic: its Jacobian is \((2,2)\)-isogenous to the
+product of the conductor-\(11\) class containing \(X_0(11)\) and the CM
+conductor-\(121\) class of discriminant \(-11\).  The three positive-genus
+boundary-unit lattices are exact: ranks \(3,14,17\), with an index-six
+saturation on \(X_0(11)\) and quotient
+\(\mathbb Z^3\oplus\mathbb Z/5\) in genus two.  Along both correspondence
+projections, the two rank-six unit images meet in the two common base units;
+their rank-ten sum is primitive and has free cokernel of rank four/seven in
+the genus-one/genus-two unit lattice.  Thus even the geometry between two
+Gassmann actions carries new obstructions.  The action and its quotient
+geometry, not the abstract group, are the correct unit of classification.
+
 ## 5. The proposed construction pipeline
 
 ### Step A: choose an explicit \(G\)-cover
@@ -242,15 +265,30 @@ cover-preserving Jacobian completion, and affine-space descent.
 
 ## 7. Programme 3 queue and current checkpoints
 
+The examples now motivate an action-level problem rather than only a
+construction queue:
+
+> **Keller monodromy action-spectrum problem.** Classify faithful transitive
+> permutation actions which occur as geometric generic monodromy of
+> noninvertible polynomial Keller self-maps of affine space.  Determine the
+> obstruction to promotion from determinant-one smooth-affine charts to
+> absolute affine-space maps.
+
+The first filtration records regularity and the block interval, Hurwitz
+inertia and quotient genus, stable birational type, the boundary-unit
+pullback and derivative class, arithmetic normalizers, and essential
+dimension only at the versal layer.  These fields are developed and tested in
+the [action-spectrum note](extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md).
+
 The systematic queue is:
 
 | stage | groups or actions | first model to audit | current repository state |
 |---:|---|---|---|
 | 1 | cyclic and dihedral | Kummer and Dickson/Chebyshev incidence | cyclic absolute no-go; uniform dihedral ledger; canonical one-normal completion excluded in every degree |
 | 2 | \(A_4,S_4,A_5\) | oriented discriminants and low-dimensional generic polynomials | \(A_4\) has the advanced frontier below; \(S_4\) has a six-edge collision core and a decomposable absolute group-only checkpoint, but its ordinary collision-frame algebraization is open; \(A_5\) absolute descent is queued |
-| 3 | Frobenius groups | semidirect-product generic polynomials | \(F_{20}\) has a universal smooth-affine chart; absolute descent is open |
-| 4 | \(\operatorname{PSL}_2(\mathbb F_q)\) | point/line and low-index subgroup torsors | queued |
-| 5 | affine linear groups | natural affine actions and additive-polynomial invariants | \(F_{20}\) is the first overlap with stage 3; the general audit is queued |
+| 3 | Frobenius groups | semidirect-product generic polynomials | \(F_{20}\) has a universal smooth-affine chart, a complete finite exceptional-color audit, and a rational connected \(q\)-conductor cover; the complete packet closure compresses to \(3D_d+D_q+D_r=\operatorname{div}(P_X)\), while the natural incidence algebra and its finite normalization fail the value-one gate; thirteen controlled-transform chart types supply primitive exceptional variables for every positive exceptional color and verify literal local \((3,1,1)\) cancellation; seven bivariate corner charts now close the cusp and \(q\)-\(r\) exceptional intersections, the \(q\)-node transition is exact, and the apparent positive triple \(E_1\)-\(E_2\) edge is deleted by root-center separation; a compact residue product passes on the punctured conductor; strict-boundary/conductor attachments, the global Cox ring, affine completion, and absolute descent remain open |
+| 4 | \(\operatorname{PSL}_2(\mathbb F_q)\) | natural projective-line and low-index subgroup torsors | \(q=11\): the natural degree-12 quotient is explicit \(X_0(11)\); the two exceptional degree-11 \(A_5\)-coset actions form a Gassmann pair with Shabat and determinant-one chart outputs; their degree-5/6 correspondences normalize to genus 1/2, so none of these rigid bridges stably straightens; absolute descent is open |
+| 5 | affine linear groups | natural affine actions and additive-polynomial invariants | \(F_{20}\) is the first overlap with stage 3; its \((4,1)\), unramified-crossing, and \((2,2,1)\) boundary colors are compiled, while higher-rank audits are queued |
 | 6 | selected Gassmann pairs | common-closure point/subspace actions | the degree-seven \(\operatorname{GL}_3(\mathbb F_2)\) pair has relative and Cox outputs; absolute descent is open |
 
 Every row is to be reported with the common eight-field card: invariant
@@ -325,7 +363,37 @@ The current concrete checkpoints are:
 4. **\(\operatorname{GL}_3(\mathbb F_2)\) in degree seven.** This is the
    existing nonsymmetric benchmark. The relative and Cox realizations are
    known; absolute affine-space descent remains open.
-5. **Gassmann pairs inside a fixed \(G\).** Once one \(G\)-closure has been
+5. [**\(\operatorname{PSL}_2(11)\) in degrees eleven and
+   twelve.**](extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md) The two
+   nonconjugate exceptional \(A_5\) stabilizers are Gassmann equivalent.  Their
+   conjugate genus-zero Shabat polynomials over
+   \(\mathbb Q(\sqrt{-11})\) have square discriminant, a corrected exact
+   branch factorization, and derivative-unit common-target Keller charts.
+   The source/target unit ranks are six and two, the derivative is nonzero
+   modulo the target pullback lattice, and stable straightening is excluded.
+   The direct \(C_5,C_6\) correspondences normalize to the degree-\(55\)
+   \(A_4\) quotient of genus one and degree-\(66\) \(D_{10}\) quotient of
+   genus two.  Their affine models have five/eight ordinary nodes and reduced
+   conductor, with exact boundary pullback through both projections.  The
+   first normalization is the conductor-\(121\) curve with \(j=-121\); exact
+   traces above (23) prove it is not isogenous to the natural
+   degree-twelve \(X_0(11)\) quotient, whose Weierstrass \(j\)-map is also
+   explicit.  The second is bielliptic, with Jacobian \((2,2)\)-isogenous to
+   the product of that conductor-\(11\) isogeny type and the CM
+   conductor-\(121\) type.  Their positive-genus boundary-unit lattices have
+   exact ranks \(3,14,17\); the natural quotient has an index-six support
+   saturation, and the genus-two quotient has Smith cokernel
+   \(\mathbb Z^3\oplus\mathbb Z/5\).  Both correspondence pullback images
+   have rank ten and primitive free cokernels of ranks four and seven.  The
+   two pulled-back derivative rows pass the weak integral ledger, while two
+   additional mask characters cannot complete either full lattice.
+   Projection exchange fixes the four residual \(C_5\) classes and splits
+   the \(C_6\) quotient as five fixed classes plus one exchanged pair.
+   Effective divisor bases realize every class; the \(C_5\) simple-pole
+   lattice has index two, so one double pole is unavoidable.  The first
+   one-class-per-monomial supports occur in normal degrees two and three.
+   None has an absolute realization.
+6. **Gassmann pairs inside a fixed \(G\).** Once one \(G\)-closure has been
    Kellerized, nonconjugate almost-conjugate subgroups should produce
    arithmetically indistinguishable inverse covers. This is the strongest
    test that the construction retains the original cover rather than only
@@ -361,6 +429,11 @@ and finitely many good-prime splitting conditions.
 For a Gassmann triple \((G,H_1,H_2)\), construct two nonisomorphic Keller
 inverse covers with common \(G\)-closure and identical good-fiber zeta
 functions; then determine when both descend to absolute affine-space maps.
+
+The chart/relative clause is now met in two structurally different cases:
+Fano point/line stabilizers in \(\operatorname{GL}_3(\mathbb F_2)\), and the
+two exceptional \(A_5\) classes in \(\operatorname{PSL}_2(11)\).  Absolute
+descent remains open in both.
 
 A proposed construction fails the program if it only places the desired
 extension on a proper target section while the ambient generic group is
@@ -403,6 +476,22 @@ marking base change silently enlarges the arithmetic group.
 7. Separate three arithmetic outputs in every computation: connectedness of
    the degree-\(N\) fiber, its splitting-field group, and the geometric
    monodromy of the surrounding inverse cover.
+8. The positive-genus pullback/cokernel and support pre-sieves are complete.
+   The two
+   projection images have rank ten and primitive cokernels
+   \(\mathbb Z^4,\mathbb Z^7\); the order-five class on the genus-two curve
+   is a prior divisor-class gate, whereas the order six on \(X_0(11)\) is an
+   internal saturation defect among evident units.  A two-derivative ledger
+   is feasible.  Effective residual bases exist with exchange signatures
+   four fixed and five fixed plus one pair; their first separate-monomial
+   supports have normal degrees two and three.  The next calculation should
+   construct explicit Riemann--Roch representatives and solve the full
+   Jacobian and inverse-adjugate system on those finite supports.
+9. Audit the natural \(\operatorname{PSL}_2(q)\) actions first at
+   \(q=7,11,13\).  Keep the rigid quotient genus, the field of the Nielsen
+   component, and the affine-completion ledger separate from essential
+   dimension; the latter constrains a versal Keller family, not one rigid
+   cover.
 
 The program succeeds when explicit Galois covers can be transported into
 constant-Jacobian geometry without forgetting their generic monodromy, while

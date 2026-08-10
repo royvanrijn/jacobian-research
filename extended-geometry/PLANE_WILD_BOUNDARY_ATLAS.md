@@ -1693,15 +1693,24 @@ unimodular, so their vertical packet class group is zero.  This supplies the
 lower-right block of `[[V,A],[0,R]]`; it does not supply the source-fill
 matrix `V`, the relation-lift corrections `A`, or the jet map `Phi`.  Those
 are precisely the data that must come from an actual characteristic-zero
-Case-1 boundary presentation before (9.8) can be evaluated.
-The construction then has the following remaining proof obligations:
+Case-1 boundary presentation before (9.8) can be evaluated.  The remaining
+proof obligations now use the common `P0`--`P4`
+[support-saturation gate](../plane-jc/CONDUCTOR_JET_TRUNCATION.md#42-integrated-support-saturation-gate):
 
-1. compile the branchwise conductor/contact-loss ledger from
-   [`CONDUCTOR_JET_TRUNCATION.md`](../plane-jc/CONDUCTOR_JET_TRUNCATION.md);
-   if its exact bound fails, restore only the displayed lower-jet deficit;
-2. build (9.5) functorially from the compiled conductor square;
-3. verify that the archived residue represents the resulting section;
-4. prove (9.8) vanishes, or exhibit its nonzero associated prime.
+1. `P0`: compile the branchwise conductor/contact-loss ledger and build
+   (9.5) functorially from the conductor square; if the bound fails, restore
+   only the displayed lower-jet deficit;
+2. `P1`: verify that the archived residue represents the resulting section
+   and is zero away from `Z`, after the divisorial-different, boundary-class,
+   and retained-Euler gates above pass;
+3. `P2`: prove that `Z` contains no minimal Fitting component of `M`;
+4. `P3`: prove that `M` is `S_1`, or directly exclude associated primes over
+   `I_Z`; and
+5. `P4`: apply
+   [`SST1`](../verified/SUPPORT_SATURATION_PRINCIPLE.md#plane-jc-conductor-residue)
+   to prove (9.8) vanishes, or retain an explicit nonzero torsion witness.
+
+<!-- status-consumer: SST1 12c5cb15e8b6de26 -->
 
 The specific `(72,108)` Case-1 coefficient systems are already empty by the
 [determinantal closure](../plane-jc/JC2_72_108_DETERMINANTAL_CLOSURE.md).

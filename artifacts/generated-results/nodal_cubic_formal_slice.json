@@ -225,6 +225,43 @@
     "degree_five_gauge_action_rank": 39,
     "degree_six_gauge_action_rank": 60,
     "degree_six_quotient_dimension": 4,
+    "quartic_lift_counterexample": {
+      "branch": "plus",
+      "common_zero_locus": "branch_p=branch_q=0",
+      "degree_five_correction": [
+        [
+          "-49*branch_p**2*x**2/4 + 263*branch_p**2*x*z/8 - 133*branch_p**2*y**2/72 - 63*branch_p**2*y*z/8 - 21*branch_p**2*z**2/4 + 3*branch_p*branch_q*x*y/2 - 165*branch_p*branch_q*y**2/8 - 61*branch_p*branch_q*y*z/4 - 27*branch_q**2*x*z/16 - 27*branch_q**2*y**2/4 - 9*branch_q**2*z**2/8",
+          "7*branch_p**2*x*y/16 - 147*branch_p**2*x*z/16 - 3*branch_p**2*y*z/4 + 7*branch_p**2*z**2/2 - 63*branch_p*branch_q*x**2/4 - 249*branch_p*branch_q*x*y/16 + 189*branch_p*branch_q*x*z/4 + 179*branch_p*branch_q*y**2/8 - 5*branch_p*branch_q*y*z - 209*branch_p*branch_q*z**2/8 + 135*branch_q**2*x*y/16 - 27*branch_q**2*y*z/4",
+          "49*branch_p**2*x*z/4 + 91*branch_p**2*y**2/8 + 147*branch_p**2*y*z/8 - 235*branch_p**2*z**2/4 - 63*branch_p*branch_q*x*y/4 + 249*branch_p*branch_q*y**2/8 - 105*branch_p*branch_q*y*z/2 - 27*branch_q**2*y**2 + 81*branch_q**2*z**2/8"
+        ],
+        [
+          "-77*branch_p**2*x*y/24 - 131*branch_p**2*y*z/24 + 49*branch_p**2*z**2/8 + 63*branch_p*branch_q*x*z/8 + 19*branch_p*branch_q*y**2/4 + 83*branch_p*branch_q*y*z/8 - 197*branch_p*branch_q*z**2/8 - 81*branch_q**2*x*y/16 - 27*branch_q**2*y*z/4",
+          "-147*branch_p**2*x**2/32 + 149*branch_p**2*x*z/8 + 35*branch_p**2*y**2/18 - 21*branch_p**2*y*z/4 - 677*branch_p**2*z**2/32 - 21*branch_p*branch_q*y**2/4 - 199*branch_p*branch_q*y*z/4 - 675*branch_q**2*y**2/32 + 9*branch_q**2*z**2/4",
+          "199*branch_p**2*y*z/3 - 21*branch_p*branch_q*z**2/2 - 81*branch_q**2*y*z/8"
+        ],
+        [
+          "7*branch_p**2*y**2/4 + 13*branch_p**2*y*z/4 - 27*branch_p**2*z**2/8 + 13*branch_p*branch_q*y**2/4 - 49*branch_p*branch_q*y*z/8 + 9*branch_p*branch_q*z**2/4 - 27*branch_q**2*y**2/4 + 9*branch_q**2*y*z/4 + 9*branch_q**2*z**2/4",
+          "-7*branch_p**2*y**2/4 - 7*branch_p**2*y*z/4 + 39*branch_p**2*z**2/8 - 7*branch_p*branch_q*y**2/4 + 61*branch_p*branch_q*y*z/8 - 9*branch_p*branch_q*z**2/4 + 27*branch_q**2*y**2/4 - 9*branch_q**2*y*z/4 - 9*branch_q**2*z**2/4",
+          "0"
+        ]
+      ],
+      "degree_six_obstruction": [
+        [
+          "-9*branch_q**2*(4*branch_p - 3*branch_q)/8"
+        ],
+        [
+          "-9*branch_p*branch_q*(8*branch_p - 5*branch_q)/8"
+        ],
+        [
+          "-9*branch_p**2*(4*branch_p - branch_q)/8"
+        ],
+        [
+          "-9*branch_p**3/8"
+        ]
+      ],
+      "lift_change": "branch_p*quartic_lift_kernel_basis[0]",
+      "literal_independence": false
+    },
     "scope": "the two reduced pure-curvature planes for the stored row-reduced quartic gauge lift"
   },
   "dense_slice_cotangent_result": [
@@ -363,6 +400,43 @@
         "-(97*dense_minus**2 - 14*dense_minus*dense_plus + 55*dense_plus**2)/6"
       ]
     ],
+    "degree_six_quartic_lift_counterexample": {
+      "branch": "plus",
+      "common_zero_locus": "branch_p=branch_q=0",
+      "degree_five_correction": [
+        [
+          "-49*branch_p**2*x**2/4 + 263*branch_p**2*x*z/8 - 133*branch_p**2*y**2/72 - 63*branch_p**2*y*z/8 - 21*branch_p**2*z**2/4 + 3*branch_p*branch_q*x*y/2 - 165*branch_p*branch_q*y**2/8 - 61*branch_p*branch_q*y*z/4 - 27*branch_q**2*x*z/16 - 27*branch_q**2*y**2/4 - 9*branch_q**2*z**2/8",
+          "7*branch_p**2*x*y/16 - 147*branch_p**2*x*z/16 - 3*branch_p**2*y*z/4 + 7*branch_p**2*z**2/2 - 63*branch_p*branch_q*x**2/4 - 249*branch_p*branch_q*x*y/16 + 189*branch_p*branch_q*x*z/4 + 179*branch_p*branch_q*y**2/8 - 5*branch_p*branch_q*y*z - 209*branch_p*branch_q*z**2/8 + 135*branch_q**2*x*y/16 - 27*branch_q**2*y*z/4",
+          "49*branch_p**2*x*z/4 + 91*branch_p**2*y**2/8 + 147*branch_p**2*y*z/8 - 235*branch_p**2*z**2/4 - 63*branch_p*branch_q*x*y/4 + 249*branch_p*branch_q*y**2/8 - 105*branch_p*branch_q*y*z/2 - 27*branch_q**2*y**2 + 81*branch_q**2*z**2/8"
+        ],
+        [
+          "-77*branch_p**2*x*y/24 - 131*branch_p**2*y*z/24 + 49*branch_p**2*z**2/8 + 63*branch_p*branch_q*x*z/8 + 19*branch_p*branch_q*y**2/4 + 83*branch_p*branch_q*y*z/8 - 197*branch_p*branch_q*z**2/8 - 81*branch_q**2*x*y/16 - 27*branch_q**2*y*z/4",
+          "-147*branch_p**2*x**2/32 + 149*branch_p**2*x*z/8 + 35*branch_p**2*y**2/18 - 21*branch_p**2*y*z/4 - 677*branch_p**2*z**2/32 - 21*branch_p*branch_q*y**2/4 - 199*branch_p*branch_q*y*z/4 - 675*branch_q**2*y**2/32 + 9*branch_q**2*z**2/4",
+          "199*branch_p**2*y*z/3 - 21*branch_p*branch_q*z**2/2 - 81*branch_q**2*y*z/8"
+        ],
+        [
+          "7*branch_p**2*y**2/4 + 13*branch_p**2*y*z/4 - 27*branch_p**2*z**2/8 + 13*branch_p*branch_q*y**2/4 - 49*branch_p*branch_q*y*z/8 + 9*branch_p*branch_q*z**2/4 - 27*branch_q**2*y**2/4 + 9*branch_q**2*y*z/4 + 9*branch_q**2*z**2/4",
+          "-7*branch_p**2*y**2/4 - 7*branch_p**2*y*z/4 + 39*branch_p**2*z**2/8 - 7*branch_p*branch_q*y**2/4 + 61*branch_p*branch_q*y*z/8 - 9*branch_p*branch_q*z**2/4 + 27*branch_q**2*y**2/4 - 9*branch_q**2*y*z/4 - 9*branch_q**2*z**2/4",
+          "0"
+        ]
+      ],
+      "degree_six_obstruction": [
+        [
+          "-9*branch_q**2*(4*branch_p - 3*branch_q)/8"
+        ],
+        [
+          "-9*branch_p*branch_q*(8*branch_p - 5*branch_q)/8"
+        ],
+        [
+          "-9*branch_p**2*(4*branch_p - branch_q)/8"
+        ],
+        [
+          "-9*branch_p**3/8"
+        ]
+      ],
+      "lift_change": "branch_p*quartic_lift_kernel_basis[0]",
+      "literal_independence": false
+    },
     "degree_six_reduced_plane_continuation": {
       "minus": {
         "compact_form": "27/8*(branch_q*y-branch_p*z)^3*eta",
@@ -1044,7 +1118,7 @@
       ]
     ]
   },
-  "exact_data_sha256": "4fcea246b9840aecb90730fcfdcc3568c9d446957a23fd7d42a1241b2a4ec517",
+  "exact_data_sha256": "6b6fd8868dc9fd15c6de27e800bcae2c7087a8a91943bd1f9c0ba1defcf10225",
   "mathematical_status": "exact first-stage slice, intrinsic degree-five curvature, and relative degree-six continuation theorem",
   "module_certificate": {
     "annihilator_singular_syntax": "x",
@@ -1056,10 +1130,9 @@
     "kernel_generator_count": 10
   },
   "not_proved": [
-    "independence of the degree-six class from the earlier five-dimensional quartic gauge-lift ambiguity",
+    "classification of the full five-dimensional quartic-stabilizer action on the degree-six quotient",
     "degree-six continuation over the embedded quadratic socle or the full slice--gauge curvature locus",
     "an all-order formal slice for the universal nodal family",
-    "universal 24-parameter nodal cotangent saturation",
     "normality or Keller-open compatibility"
   ],
   "proved": [
@@ -1072,7 +1145,8 @@
     "the displayed two cross forms and three pure-gauge quadrics are invariant under every quartic lift choice",
     "the reduced pure-curvature zero scheme is the union of the two recorded planes, and the unreduced ideal has one embedded degree-two socle generator",
     "for the stored row-reduced quartic lift, both reduced pure-curvature planes admit exact degree-five gauge corrections and have degree-six classes 27/8*(q*y+p*z)^3*eta and 27/8*(q*y-p*z)^3*eta",
-    "the 15-dimensional ambiguity in the degree-five correction acts trivially on the degree-six quotient"
+    "the 15-dimensional ambiguity in the degree-five correction acts trivially on the degree-six quotient",
+    "literal degree-six independence from the earlier quartic lift is false: adding branch_p times the first quartic stabilizer gives the recorded different class, whose zero locus is nevertheless still only the origin"
   ],
   "quartic_dimensions": {
     "compatible_space": 24,
@@ -1080,5 +1154,5 @@
     "slice": 2
   },
   "reproduce": ".venv/bin/python scripts/verify_nodal_cubic_formal_slice.py",
-  "schema": "nodal-cubic-formal-slice.v3"
+  "schema": "nodal-cubic-formal-slice.v4"
 }

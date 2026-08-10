@@ -561,7 +561,91 @@ The corresponding change-of-slice matrix is
 Both the coordinate slice
 \(\phi_{\mathrm{nod}}+u\psi_1+v\psi_2\) and the dense slice
 \(\phi_{\mathrm{nod}}+u\psi_++v\psi_-\) have exact saturated cotangent
-presentations and the central length-six Ext block.
+presentations and the central length-six Ext block.  The full-complement
+certificate further gives a six-dimensional Nakayama quotient for the
+Kähler different on every fiber, so the nodal quartic family is nowhere
+Cartier-different at its collision.  This statement is quartic-order only.
+
+<!-- status-consumer: KDSQ6 cd423f625f1f3cd2 -->
+
+The non-Cartier calculation now continues through the next two complete
+normal-form quotients.  In degrees five and six the compatible nodal spaces
+decompose as
+
+\[
+ 42=39+3,
+ \qquad
+ 64=60+4,
+\]
+
+and the complementary spaces are
+
+\[
+ \langle y^2\eta,yz\eta,z^2\eta\rangle,
+ \qquad
+ \langle y^3\eta,y^2z\eta,yz^2\eta,z^3\eta\rangle.
+\]
+
+On the exact nine-parameter family formed with the two quartic slice
+directions, strict Rees packets commute the annihilator with every fiber and
+give
+
+\[
+ J/\mathfrak nJ\simeq
+ \mathbb Q[p_0,\ldots,p_8]^{\oplus6}.
+\]
+
+Thus the Kähler different is non-Cartier throughout the complete nodal
+order-six normal-form family.  This finite-jet calculation is retained as
+an independent regression for the all-orders result below.
+
+<!-- status-consumer: NSDP6 c5f68253995b7b6a -->
+
+The cyclic presentation (5.17) also closes the formal tail.  Successive
+homogeneous determinant-twisted gauge transformations put every compatible
+tensor with fixed nodal leading symbol in the form
+
+\[
+ \phi_{\mathrm{nod}}+f(y,z)\eta,
+ \qquad f\in(y,z)\mathbb Q[[y,z]].
+\tag{5.21a}
+\]
+
+For the universal coefficient family `phi_nod+u*eta`, the multiplication
+table is affine-linear in `u` and exact annihilator reduction gives
+
+\[
+ J/\mathfrak nJ\simeq\mathbb Q[u]^{\oplus6}.
+\tag{5.21b}
+\]
+
+Assigning `u` collision weight one, the weighted Rees presentations of
+`Omega` and `coker(B -> Omega^3)` are strict and have the central
+presentations tensored with `Q[u]` as associated graded.  For every graph
+`u -> f`, the initial form of `u-f` is monic in `u`, hence regular on both
+packets.  The annihilator therefore commutes with the graph specialization,
+and (5.21b) gives six minimal generators after every formal correction.
+Thus the nodal Kähler different is non-Cartier to all formal orders.  This
+does not prove normality or compatibility with a Keller open.
+
+<!-- status-consumer: NADPALL 60218641ccdf6fac -->
+
+The same construction now covers every singular squarefree symbol, not
+only the cyclic nodal row.  Minimal degree-three tensor generators give
+normal-coefficient counts `1,2,2,3,3,4` for nodal, cuspidal, transverse
+line--conic, tangent line--conic, triangle, and concurrent lines.  The exact
+small presentations retain annihilators
+`(x),(x^2),(yz),(y^3),(xyz),(x^3)`.  On each universal coefficient family,
+`J/nJ` is free of rank six and the weight-one Rees packets for `Omega` and
+`coker(B -> Omega^3)` are strict with central initial modules.  Successive
+monic graph equations therefore preserve the intrinsic annihilator and its
+six generators after every compatible formal tail.  Thus all six singular
+Kähler differents are non-Cartier to all formal orders.  The smooth quotient
+has no positive-order normal coefficients, and its central different also
+has six minimal generators.  Consequently every squarefree cubic formal
+collision is non-Cartier.
+
+<!-- status-consumer: SSADPALL 584a6e05374612ee -->
 
 The next collision layer is also computable.  Fix the deterministic
 rational lift in (5.19) obtained by setting all free row-reduction
@@ -741,15 +825,36 @@ Equivalently,
 Hence, for the declared quartic splitting, the common zero locus on each
 reduced plane is only \(p=q=0\).
 
-Equation (5.38) is not yet the fully intrinsic degree-six obstruction.
-The calculation proves independence from the quadratic correction
-\(E_\epsilon\), but it has not yet quotiented changes in the earlier
-five-dimensional quartic gauge lift.  It also does not continue the
-embedded socle class (5.33), or the full slice--gauge curvature locus.
-Those are the next invariant tasks, followed by the effect on cotangent
-boundary depth.  Transversality at degree four alone does not identify
-the full universal family with either two-parameter slice.  The exact
-certificate is
+Equation (5.38) is independent from the quadratic correction
+\(E_\epsilon\), but it is **not** independent from the earlier
+five-dimensional quartic gauge lift.  On the plus branch, add
+$pK_1$ to the stored quartic lift, where $K_1$ is the first recorded
+basis vector of that kernel.  The quartic perturbation is unchanged, while
+the exact degree-six quotient becomes
+
+\[
+ -\frac98
+ \begin{pmatrix}
+ q^2(4p-3q) & pq(8p-5q) & p^2(4p-q) & p^3
+ \end{pmatrix}^{\mathsf T}.
+\tag{5.39}
+\]
+
+This differs literally from (5.37).  Its zero scheme is nevertheless still
+the origin: the last coordinate forces $p=0$, and the first then forces
+$q=0$.  Thus the proposed literal lift-invariance statement is false and
+is replaced by a concrete stabilizer-action problem.  The correct intrinsic
+object is the orbit, or an invariant quotient, of the degree-six class under
+the five-dimensional quartic stabilizer.
+
+The calculation does not yet classify that full action, continue the
+embedded socle class (5.33), or treat the full slice--gauge curvature locus.
+Transversality at degree four alone does not identify the full universal
+family with either two-parameter slice.  Exact computation 1.8f of the
+frontend now proves cotangent saturation on every geometric fiber of the
+full nodal quartic complement, so the former universal quartic cotangent
+gap is closed; higher formal orders, normality, and Keller-open compatibility
+remain open.  The exact certificate is
 [`verify_nodal_cubic_formal_slice.py`](../scripts/verify_nodal_cubic_formal_slice.py).
 
 ## 6. Canonical-different complex and the Fitting reduction

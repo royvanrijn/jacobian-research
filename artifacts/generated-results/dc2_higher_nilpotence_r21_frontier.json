@@ -1,0 +1,448 @@
+{
+  "conclusion": "N^2 != 0 is achieved by an exact regular-index-four family, but triangular rigidity makes N^2 constant and the family is an automorphism/Moyal-flat control. For R21, affine contact is excluded and exact tame shears normalize the graph through degree four, but the whole fiber-preserving stabilization subgroup is excluded by the reducible factorization of R. The stable-mixed U_2 chart survives and is normalized through degree six with an explicit septic remainder. Euler homotopy then eliminates every homogeneous defect to all formal orders. The exact straight-line Moser Pfaffian has nonzero Delta, so its canonical geometric series does not terminate. Source dilation gives a constant-Pfaffian path with a polynomial trivializing field, but its time-one map is the nonpolynomial inverse of the generic-degree-four graph map. The exact fiber-kernel derivation also excludes every polynomial normalizer whose target-b component has a polynomial Poisson mate on its zero fiber. In particular, that component cannot be an elementary coordinate; this includes the complete twenty-six-factor correction subgroup. An explicit infinite tame family F_k=a+c^k*(b+a*d) has no polynomial Poisson mate, showing that the necessary condition is attainable and already sharp in degree three. Its curve pole order and transverse weight are both k, whereas R21 requires the split signature (2,3). The complete polynomial constant rings are Danielewski surfaces with exponents k and 3, while the generic time-form divisors have pole orders k and 2. These two intrinsic requirements exclude every F_k. For k=2 there is an exact polynomial conjugacy on I!=0, but its Jacobian is -I/5184, locating the global obstruction on the affine-modification divisor I=0. A new degree-seven Bezout coordinate F=A*(Q+G^2/2)-B*P now crosses that divisor: its zero hypersurface carries exactly the R21 b=0 two-form. The first transverse automorphism equation has a polynomial solution because the apparent pole -2/C cancels against the constant-ring invariant I^2*L/144. The resulting normal jet is divergence-free but not locally nilpotent, so a single finite exponential does not finish the construction. At the next order its formal-flow jet leaves only three q-independent normal defects. Bezout solves the form equation polynomially, but the required volume correction D(lambda)=-div(Z) has a nonterminating coefficient recurrence, beginning with the nonzero tail p_5=-17/5388768. Thus the canonical minimal first jet has no polynomial second completion. More generally, the obstruction is affine-linear in every invariant shift. Grading reduces the only relevant freedom to I^2*U*K[S], and the top J^(m+2) coefficient for I^2*U*S^m is nonzero for every m>=0. Hence no polynomial invariant shift works: this degree-seven target-b coordinate is excluded at second order. Replacing Q+G^2/2 by Q+H(G,C) forces H=G^2/2+k(C), an ambient symplectic shear, while every other Bezout companion is W->W-T*F. Thus the whole reciprocal-compatible Bezout ansatz is excluded, not only one companion choice. Whether that formal normalizer resums to a finite polynomial automorphism remains the coupled graph-Darboux problem.",
+  "format": "dc2-higher-nilpotence-r21-frontier-v13",
+  "higher_nilpotence_family": {
+    "cayley_map": [
+      "c*p1/4 + c*p2/2 - g1*p2 - 2*g2*p1*p2 - 3*g3*p1**2*p2 - 4*g4*p1**3*p2 - h1 - 2*h2*p1 - 3*h3*p1**2 - 4*h4*p1**3 - 5*h5*p1**4 + q1 - q2",
+      "-c*p1/2 - c*p2 - g0 - g1*p1 - g2*p1**2 - g3*p1**3 - g4*p1**4 + q2",
+      "p1",
+      "p1 + p2"
+    ],
+    "coefficient_base": "Q[c,g_0,...,g_4,h_0,...,h_5]",
+    "nilpotence": {
+      "N_cubed": "[[0, 0, c, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]",
+      "N_fourth_power_zero": true,
+      "N_squared": "[[0, 0, 0, c], [0, 0, -c, 0], [0, 0, 0, 0], [0, 0, 0, 0]]",
+      "regular_index_four_open": "c != 0"
+    },
+    "polynomial_inverse": [
+      "-3*P1**4*g4 + 5*P1**4*h5 + 4*P1**3*P2*g4 - 2*P1**3*g3 + 4*P1**3*h4 + 3*P1**2*P2*g3 - P1**2*g2 + 3*P1**2*h3 + 2*P1*P2*g2 - P1*c/4 + 2*P1*h2 + P2*c/2 + P2*g1 + Q1 + Q2 + g0 + h1",
+      "P1**4*g4 + P1**3*g3 + P1**2*g2 - P1*c/2 + P1*g1 + P2*c + Q2 + g0",
+      "P1",
+      "-P1 + P2"
+    ],
+    "potential": "p1*q2+(c/2)*p2^2+g(p1)*p2+h(p1)",
+    "status": "exact symplectic polynomial automorphism; all higher odd Moyal brackets vanish",
+    "triangular_rigidity": {
+      "ansatz": "p1*q2+p2^2+f(p1,p2)",
+      "conclusion": "row closure forces f_222=f_122=0, hence f_22 is constant and N^2 has no nonconstant part",
+      "nonzero_row_curls": [
+        "f_222/4-f_122/2",
+        "-f_222/2"
+      ]
+    }
+  },
+  "r21_frontier": {
+    "affine_contact_screen": {
+      "coefficient_dimension_over_Q": 6,
+      "coefficient_rank_over_Q": 6,
+      "conclusion": "no nonzero constant target two-form has constant pullback; affine-contact symplectization with constant unit multiplier is excluded",
+      "kernel_dimension_over_K": 0,
+      "positive_degree_equations": 262
+    },
+    "coefficient_base": "Q[q]/(q^2-4q+6)",
+    "fiber_preserving_stabilization_no_go": {
+      "cofactor_source_term_count": 14,
+      "conclusion": "a Darboux trivialization in this subgroup would force R after a base automorphism to be affine-linear in d, hence R would be a coordinate; the displayed nontrivial factorization excludes this. Stable-variable mixing or a different target polarization is necessary",
+      "factorization": "R=x*S with S nonconstant and S|_(x=0)=1",
+      "subgroup": "source changes (a,b,c,d)->(h(a,b,d),lambda*c+G(a,b,d)) with h a polynomial base automorphism and lambda a unit"
+    },
+    "formal_darboux_recurrence": {
+      "checks": [
+        {
+          "closed_form_defect": true,
+          "defect_degree": 6,
+          "linearized_cancellation": true,
+          "radial_denominator": 8,
+          "radial_vector": [
+            "-25*q*u0*u1**4*u3**2/4 - 27*u0**3*u1**4/32 - 9*u0**3*u1**3*u2/8 - 27*u0**2*u1**4*u3/32 + 27*u0**2*u1**3*u2*u3/8 + 231*u0*u1**4*u3**2/32 + 9*u0*u1**3*u2*u3**2/8 + 27*u1**4*u3**3/32 + u1**3*u2*u3**3/8",
+            "5*q*u1**5*u3**2/4 - u0**3*u3**4/24 - 27*u0**2*u1**5/32 + 27*u0**2*u1**4*u2/32 - 9*u0*u1**5*u3/16 - 27*u0*u1**4*u2*u3/16 - 51*u1**5*u3**2/32 - 9*u1**4*u2*u3**2/32",
+            "15*q*u0*u1**5*u3/2 - u0**4*u3**3/24 + 9*u0**2*u1**5/32 + 27*u0**2*u1**4*u2/32 - 141*u0*u1**5*u3/16 + 9*u0*u1**4*u2*u3/16 - 27*u1**5*u3**2/32 + 3*u1**4*u2*u3**2/32",
+            "-63*u0**3*u1**4/32 + 189*u0**2*u1**4*u3/32 + 63*u0*u1**4*u3**2/32 + 7*u1**4*u3**3/32"
+          ],
+          "vector_component_term_counts": [
+            9,
+            8,
+            8,
+            4
+          ]
+        },
+        {
+          "closed_form_defect": true,
+          "defect_degree": 7,
+          "linearized_cancellation": true,
+          "radial_denominator": 9,
+          "radial_vector": [
+            "91*q*u1**6*u3**2/9 - 26*u0**2*u1**3*u3**3/9 + u0*u1**2*u2*u3**4/6 - 14*u1**6*u3**2",
+            "17*u0*u1**4*u3**3/18 - u1**3*u2*u3**4/18",
+            "-91*q*u1**7*u3/9 + 23*u0**2*u1**4*u3**2/6 + 2*u0*u1**3*u2*u3**3/9 + 14*u1**7*u3",
+            "4*u0*u1**3*u3**4/9"
+          ],
+          "vector_component_term_counts": [
+            4,
+            2,
+            4,
+            1
+          ]
+        }
+      ],
+      "conclusion": "induction kills every fixed homogeneous order in the formal power-series topology",
+      "constant_pfaffian_dilation_path": {
+        "degree_proof": "the quartic incidence is irreducible over K(P,Q,R), and x,y,z are rationally reconstructed from P,Q,T",
+        "field_component_parameter_degrees": [
+          52,
+          38,
+          51,
+          41
+        ],
+        "field_component_source_degrees": [
+          54,
+          40,
+          53,
+          43
+        ],
+        "field_component_term_counts": [
+          301,
+          142,
+          303,
+          149
+        ],
+        "formal_flow_identity": "K_s composed with H_s = id",
+        "graph_generic_degree": 4,
+        "jacobian_determinant": "1",
+        "path": "K_s(u)=K(s*u)/s",
+        "time_one_scope": "H_1 is the formal inverse of the generically degree-four U_2 graph map, so this path has no polynomial time-one automorphism",
+        "trivializing_field": "V_s=-(Jac K_s)^(-1)*partial_s(K_s), polynomial because det(Jac K_s)=1"
+      },
+      "correction_vector": "V_(m+1)=Pi*alpha_m",
+      "form_defect": "E_m=(-Pi)*D_m*(-Pi)",
+      "polynomial_scope": "the infinite formal composition need not terminate or resum to a polynomial automorphism; formal elimination is not R21 admission",
+      "radial_primitive": "alpha_m=i_Euler(E_m)/(m+2), with d(alpha_m)=E_m",
+      "straight_line_moser_path": {
+        "conclusion": "the canonical geometric series in s*(1-s)*Delta is genuinely infinite; a special resummation is still possible",
+        "delta_leading_part": "-u0*u3",
+        "delta_maximum_source_degree": 27,
+        "delta_minimum_source_degree": 2,
+        "delta_nonzero": true,
+        "delta_term_count": 124,
+        "pfaffian": "1+s*(1-s)*Delta"
+      },
+      "target_b_component_obstruction": {
+        "conclusion": "the target-b component H_1 cannot be any elementary coordinate lambda*u_i+F(other variables), nor any coordinate having a polynomial Poisson mate modulo H_1; this includes all b-fibration-preserving normalizers, elementary b-shears, and the twenty-six explicit tame factors",
+        "degree_seven_fiber_admission": {
+          "bezout_ansatz_classification": {
+            "all_bezout_pairs": "(R_T,S_T)=(R+B*T,S-A*T), so W_T=W-T*F",
+            "c_shift": "k(C) is the ambient symplectic shear Q->Q+k(C); the full source form in (F,G,C,W) is unchanged",
+            "conclusion": "the second-order exclusion applies to the complete reciprocal-compatible Bezout ansatz, not only the displayed companion choice",
+            "fiber_condition": "R21 requires H_G=G, hence H=G^2/2+k(C)",
+            "general_shift": "Q'=Q+H(G,C) gives {F,W}|_(F=0)=-H_G"
+          },
+          "bezout_data": "A=G*C^4/6, B=G^2*C^3/3-1, R=2*G^3*C^2/3, S=-(B+2), R*A+S*B=1",
+          "companion": "W=R*P+S*(Q+G^2/2)",
+          "coordinate": "F=A*(Q+G^2/2)-B*P",
+          "coordinate_degree": 7,
+          "coordinate_jacobian": "1 for (G,P,C,Q)->(F,G,C,W)",
+          "coordinate_term_count": 4,
+          "fiber_bracket_row": [
+            "-C**3*G**2/3 + 1",
+            "C**4*G/6",
+            "-G"
+          ],
+          "fiber_map": "(G,C,W)->(a,c,d)=(G+C*W,W,C)",
+          "fiber_map_jacobian": "-1",
+          "inverse": [
+            "P=A*W+(B+2)*F",
+            "Q=B*W+R*F-G^2/2"
+          ],
+          "normal_jet": {
+            "canonical_second_order_test": {
+              "all_invariant_shifts": {
+                "affine_linearity": "the second-order divergence has zero quadratic variation for arbitrary h",
+                "conclusion": "descending on deg(K) excludes every nonzero I^2*U*K[S] shift; K=0 leaves p_5=-17/5388768. No polynomial invariant first-jet shift admits a volume-compatible second completion",
+                "general_first_jet": "s=s_min+h with h in ker(D)",
+                "grading": "wt(C)=2, wt(G)=-3, wt(W)=-6; a weight-w shift changes the divergence in weight w+4",
+                "nonvanishing_range": "every integer r>=2",
+                "relevant_kernel_piece": "ker(D)_(-2)=I^2*U*K[S]",
+                "top_monomial": "for I^2*U*S^m put r=m+2",
+                "top_p_5_coefficient": "(-1728)**r*(r - 1)*(3*r - 4)*(3*r - 2)*(3*r - 1)*(9*r**2 - 24*r - 5)/716636160"
+              },
+              "bezout_correction_degrees": [
+                26,
+                26,
+                22
+              ],
+              "bezout_correction_divergence": "C*(C**15*G**8*W - 2*C**12*G**8 - 42*C**12*G**6*W - 24*C**9*G**6 + 594*C**9*G**4*W - 432*C**6*G**4 - 1728*C**6*G**2*W - 2592*C**3*G**2 - 12960*C**3*W + 46656)/15552",
+              "coefficient_base": "Q (independent of q)",
+              "coefficient_recurrence_p_0_through_p_5": [
+                "-(5*J - 18)/6",
+                "(J - 3)/18",
+                "(25*J - 24)/4320",
+                "-(35*J - 19)/90720",
+                "-17/408240",
+                "-17/5388768"
+              ],
+              "conclusion": "the canonical minimal first jet has no polynomial volume-compatible second jet",
+              "flow_choice": "the F^2/2 formal-flow jet of the displayed divergence-free normal vector",
+              "grading": "wt(C)=2, wt(G)=-3, wt(W)=-6; the required weight forces lambda=G*C*p(N,J), N=C^3*G^2, J=C^3*W",
+              "nontermination_witness": "p_5=-17/5388768",
+              "normal_residual_degrees": [
+                22,
+                22,
+                21
+              ],
+              "normal_residual_term_counts": [
+                9,
+                11,
+                7
+              ],
+              "tangent_tangent_residual_zero": true,
+              "volume_equation": "D(lambda)=-div(Z), with every solution of the form equation equal to Z+lambda*D"
+            },
+            "component_degrees": [
+              19,
+              14,
+              18
+            ],
+            "full_form_match_on_fiber": true,
+            "invariants": "I=C^4*G^2-12*C, L=W-2/C^3",
+            "locally_nilpotent": false,
+            "non_lnd_witness": "C divides the nonzero C-component",
+            "pole_cancellation": "s=-2/C-I^2*L/144 is polynomial",
+            "s_polynomial": "-C**8*G**4*W/144 + C**5*G**4/72 + C**5*G**2*W/6 - C**2*G**2/3 - C**2*W",
+            "source_fiber_vector_divergence": "0",
+            "transport_equation": "D(s)=-C^2*G/3"
+          },
+          "result": "the pullback of the complete R21 b=0 two-form equals the restricted standard source form exactly",
+          "scope": "exact polynomial hypersurface admission and volume-compatible first transverse jet, followed by an all-invariant second-order obstruction. No polynomial R21 normalizer can have this displayed F as its target-b component",
+          "source_coordinates": "(G,P,C,Q)"
+        },
+        "fiber": "b=0",
+        "necessary_condition": "for H^*Omega=omega, the Hamiltonian kernel of the source hypersurface H_1=0 must have no polynomial slice",
+        "no_slice_curve": {
+          "conclusion": "delta has no polynomial slice because a rational derivative has zero residue at every pole",
+          "coordinate": "y=d^2*(a-c*d)",
+          "equations": [
+            "d^3*c-2=0",
+            "d^4*(a-c*d)^2-12*d=1"
+          ],
+          "induced_derivation": "delta(y)=(y^2-1)^2/144 on K[y,1/(y^2-1)]",
+          "time_form_residues_at_1_and_minus_1": [
+            "-36",
+            "36"
+          ]
+        },
+        "non_lnd_witness": "d divides delta(d)=d^4*(a-c*d)/6, which is nonzero",
+        "primitive_kernel_at_b_zero": [
+          "-u0**2*u3**3/3 + 5*u0*u2*u3**4/6 - u0*u3 - u2**2*u3**5/2 + u2*u3**2 + 1",
+          "-u0 + u2*u3",
+          "u0*u3**4/6 - u2*u3**5/6"
+        ],
+        "sharp_tame_no_slice_family": {
+          "all_degree_conclusion": "the residues are nonzero for every k>=1, so this is an infinite tame family of no-slice coordinates; the degree-three row shows the target-coordinate obstruction is sharp in degree",
+          "bounded_semi_invariant_census": {
+            "degree_bound": 7,
+            "first_extra_irreducible_weights": {
+              "r21": 3,
+              "tame_k_2": 2
+            },
+            "r21_dimensions": [
+              1,
+              1,
+              2,
+              2
+            ],
+            "status": "exact bounded experiment only; a new irreducible weight-one Darboux polynomial appears in degree eight for the tame k=2 row",
+            "tame_k_2_dimensions": [
+              2,
+              2,
+              2,
+              3
+            ],
+            "weights": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          "coordinates": "G=b+a*d, F_k=a+c^k*G; (F_k,G,c,d) is a tame determinant-one automorphism",
+          "curve": "I=1, J=0",
+          "curve_coordinate_ring": "K[t,1/(t^2-1)]",
+          "degree_eight_correction": {
+            "conclusion": "the degree-seven weight census does not classify all Darboux primes",
+            "irreducibility_check": "primitive and linear in d over K[G,c]",
+            "polynomial": "G_cal**2*c_cal**5*d_cal + G_cal**2*c_cal**3 - 2*c_cal**2*d_cal + c_cal - 2",
+            "weight": 1
+          },
+          "dense_open_k_2_conjugacy": {
+            "constant_field_map": "I_2 maps to I, L_2 maps to I*L_R21/864",
+            "expanded_jacobian": "-u0**2*u3**4/5184 + u0*u2*u3**5/2592 - u2**2*u3**6/5184 + u3/432",
+            "intertwining": "delta_0 composed with Psi=(-1/36)*D_2",
+            "jacobian": "-I/5184",
+            "map": "G=t/36, C=6*d, W=-1/(36*d^2)+I*(c-2/d^3)/864",
+            "scope": "an exact isomorphism after localizing I; the Jacobian factor I prevents a global polynomial fiber isomorphism",
+            "target_coordinates": "t=a-c*d, I=d^4*t^2-12*d",
+            "w_polynomial": "u0**2*u2*u3**4/864 - u0**2*u3/432 - u0*u2**2*u3**5/432 + u0*u2*u3**2/216 + u2**3*u3**6/864 - u2**2*u3**3/432 - u2*u3/72"
+          },
+          "fiber_invariant_data": "t=G*c^k, I=t^2-2*c, J=1+c^k*d; D_k(t)=-c^k, D_k(I)=0, D_k(J)=-k*t*c^(k-1)*J",
+          "polynomial_constant_ring_obstruction": {
+            "all_k_formula": "ker(D_k)=K[I,S,U]/(I^k*U-S*(S-(-2)^k))",
+            "conclusion": "the constant rings force k=3, while the generic time-form divisor forces k=2; the entire tame no-slice family is excluded",
+            "intrinsic_exponent": "for k>=2 the Makar-Limanov invariant is K[I] and the canonical plinth ideal is (I^k), so the Danielewski exponent k is preserved by ring isomorphism",
+            "r21": {
+              "generators": "I=d*(d^3*(a-c*d)^2-12), S=(d^3*(a-c*d)^2-12)^3*(d^3*c-2), U=S*(S-3456)/I^3",
+              "relation": "I^3*U=S*(S-3456)",
+              "u_term_count": 47,
+              "u_total_degree": 26
+            },
+            "tame_k_2": {
+              "generators": "I=c*(G^2*c^3-2), S=(G^2*c^3-2)^2*(1+c^2*d), U=S*(S-4)/I^2",
+              "relation": "I^2*U=S*(S-4)",
+              "u_term_count": 8,
+              "u_total_degree": 14
+            }
+          },
+          "r21_comparison": "the R21 invariant curve has pole order 2 but transverse logarithmic weight 3; this family ties both values to k. The complete constant ring has intrinsic Danielewski exponent k, whereas R21 has exponent 3; hence k=3 is forced globally, but the generic time-form divisor forces k=2. No member of the family can be the target coordinate",
+          "time_form": "-2^k*dt/(t^2-1)^k",
+          "verified_rows": [
+            {
+              "constant_ring_danielewski_exponent": 1,
+              "constant_ring_special_value": -2,
+              "coordinate_degree": 3,
+              "exponent": 1,
+              "time_form_pole_order": 1,
+              "time_form_residues_at_1_and_minus_1": [
+                "-1",
+                "1"
+              ],
+              "transverse_weight": 1
+            },
+            {
+              "constant_ring_danielewski_exponent": 2,
+              "constant_ring_special_value": 4,
+              "coordinate_degree": 4,
+              "exponent": 2,
+              "time_form_pole_order": 2,
+              "time_form_residues_at_1_and_minus_1": [
+                "1",
+                "-1"
+              ],
+              "transverse_weight": 2
+            },
+            {
+              "constant_ring_danielewski_exponent": 3,
+              "constant_ring_special_value": -8,
+              "coordinate_degree": 5,
+              "exponent": 3,
+              "time_form_pole_order": 3,
+              "time_form_residues_at_1_and_minus_1": [
+                "-3/2",
+                "3/2"
+              ],
+              "transverse_weight": 3
+            }
+          ]
+        }
+      }
+    },
+    "graph_form_determinant": "1",
+    "inverse_incidence_degree": 4,
+    "inverse_incidence_derivative": "1-T*(Q-P*T)^2",
+    "jacobian_determinant": "-1",
+    "map_term_counts": {
+      "P": 10,
+      "Q": 8,
+      "R": 14
+    },
+    "natural_chart_test": [
+      {
+        "nonzero_symplectic_pair_defects": 6,
+        "stable_coordinate": "B+x*e"
+      },
+      {
+        "nonzero_symplectic_pair_defects": 6,
+        "stable_coordinate": "P+x*e"
+      }
+    ],
+    "rank_two_status": "not admitted: the exact graph form is polynomial and the isolated reciprocal powers are stably unimodular; affine contact and every fiber-preserving stabilization are excluded, the stable-mixed chart is formally Darboux-trivial to all orders, but no finite polynomial automorphism trivializing the coupled graph form is certified. A new degree-seven coordinate does pass the complete b=0 two-form gate and has a polynomial, volume-compatible first transverse jet, but its canonical normal vector is not locally nilpotent",
+    "stable_mixed_u2_jet": {
+      "additional_factors": "u2 -> u2+2*u0*u1^2, three cubic Hamiltonian shears, five quintic Hamiltonian shears, seven septic Hamiltonian shears, five quartic Hamiltonian shears, and three further u2-shears",
+      "conclusion": "the U_2 chart escapes the fiber-preserving no-go and has an explicit exact tame correction through sextic order; the nonzero septic row is the next coefficient of an all-order formal normalization rather than finite closure",
+      "corrected_through_degree": 6,
+      "correction_factor_count": 26,
+      "first_remaining_degree": 7,
+      "septic_defects": {
+        "D_01": "-2*u0*u1**3*u3**3",
+        "D_02": "24*u0**2*u1**3*u3**2 + u1**6*u3*(126 - 91*q)",
+        "D_03": "3*u0*u1**2*u3**4/2",
+        "D_12": "-21*u0*u1**4*u3**2/2",
+        "D_13": "-u1**3*u3**4/2",
+        "D_23": "2*u0*u1**3*u3**3"
+      },
+      "stable_coordinate": "B+x*e",
+      "stable_mixing_factors": [
+        "u0 -> u0+u2*u3",
+        "u2 -> u2-u0^2/2"
+      ],
+      "unique_linear_defects": {
+        "D_02": "-u2",
+        "D_03": "u3",
+        "D_12": "u0"
+      }
+    },
+    "stable_unimodular_charts": [
+      {
+        "inverse": "[[1, -x], [-y**2, x*y**2 + 1]]",
+        "matrix": "[[x*y**2 + 1, x], [y**2, 1]]",
+        "power": 1
+      },
+      {
+        "inverse": "[[1, -x], [-y**2*(x*y**2 + 2), (x*y**2 + 1)**2]]",
+        "matrix": "[[(x*y**2 + 1)**2, x], [y**2*(x*y**2 + 2), 1]]",
+        "power": 2
+      },
+      {
+        "inverse": "[[1, -x], [-y**2*(x*y**2 + (x*y**2 + 1)**2 + 2), (x*y**2 + 1)**3]]",
+        "matrix": "[[(x*y**2 + 1)**3, x], [y**2*(x*y**2 + (x*y**2 + 1)**2 + 2), 1]]",
+        "power": 3
+      },
+      {
+        "inverse": "[[1, -x], [-y**2*(x*y**2 + (x*y**2 + 1)**3 + (x*y**2 + 1)**2 + 2), (x*y**2 + 1)**4]]",
+        "matrix": "[[(x*y**2 + 1)**4, x], [y**2*(x*y**2 + (x*y**2 + 1)**3 + (x*y**2 + 1)**2 + 2), 1]]",
+        "power": 4
+      }
+    ],
+    "tangent_normalization": {
+      "corrected_defect_order": 3,
+      "cubic_defects": {
+        "D_01": "-3*u1**2*u3",
+        "D_02": "u0*u1**2*(21 - 15*q)",
+        "D_03": "3*u1*u3**2",
+        "D_12": "u1**3*(5*q - 6)",
+        "D_13": "0",
+        "D_23": "3*u1**2*u3"
+      },
+      "degree_four_coordinate_shear_screen": "the paired cubic D_01 cannot be removed by one layer of coordinate shears; a coupled or commutator correction is required",
+      "linear_coordinates": "(u0,u1,u2,u3)=(z,y,e,x)",
+      "polynomial_shear": "u1 -> u1-u0*u3",
+      "shear_inverse": "u1 -> u1+u0*u3",
+      "tame_jet_correction": {
+        "corrected_through_degree": 4,
+        "cubic_layer_factor_count": 4,
+        "factor_type": "linear-Hamiltonian polynomial shears with displayed polynomial inverses, plus elementary u2-shears",
+        "first_remaining_degree": 5,
+        "quartic_layer_factor_count": 6,
+        "quintic_defects": {
+          "D_01": "-5*u0**2*u3**3",
+          "D_02": "u0**3*u3**2*(27 - 15*q) + u1**5*(330 - 111*q)",
+          "D_03": "0",
+          "D_12": "u0**2*u1*u3**2*(45*q - 66)",
+          "D_13": "-5*u0*u3**4/2",
+          "D_23": "5*u0**2*u3**3"
+        },
+        "scope": "finite tame jet normalization, not a finite global Darboux trivialization"
+      },
+      "unique_linear_defect": "D_12=u0"
+    }
+  }
+}

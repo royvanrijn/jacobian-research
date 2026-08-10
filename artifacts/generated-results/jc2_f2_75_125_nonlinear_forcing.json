@@ -1,0 +1,1247 @@
+{
+  "arithmetic_circuit": {
+    "maximum_total_degree": 7,
+    "reachable_node_count": 710439,
+    "reachable_nodes_by_operation": {
+      "add": 334345,
+      "const": 135,
+      "mul": 305391,
+      "scale": 69614,
+      "var": 954
+    },
+    "reachable_variable_count": 954,
+    "reachable_variable_name_digest_sha256": "81ec4c917b3cc88bd1cab23946440b9fba57754a36e0bbd17d474ad2c6d204a2"
+  },
+  "coupled_Laurent_forcing": {
+    "coefficient_algebra": "QQ(rho)[y]/(27*y^2-9*y+1), the quartic compositum presented relatively over QQ(rho)",
+    "divisibility_coordinate_count": 294,
+    "divisibility_equation_digest_sha256": "9d997a6b80553952ea598c5d342942854f31e1e104bf2d805d09ee438d256943",
+    "full_Laurent_cokernel_coordinate_count": 347,
+    "pinned_quotient_cokernel_coordinate_count": 53,
+    "projection_order": [
+      [
+        12,
+        35
+      ],
+      [
+        37,
+        37
+      ]
+    ],
+    "quotient_equation_digest_sha256": "aa7b4b9ae2bd3d4785e95a3f4c10ee2528dcc3d4b0021044c81aaed584af5db5",
+    "rows": [
+      {
+        "Kummer_shift": 0,
+        "Laurent_layer": 28,
+        "descent": 12,
+        "divisibility_coordinate_count": 16,
+        "equation_digest_sha256": "89b02d632ffd27c1d836c4c956be58a0b2c763a0f0b1d9b35a54179808823c0c",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**11",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 18,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 5,
+        "new_Q_band": 13,
+        "quotient_cokernel_basis_digest_sha256": "8302f20d0fc9dd9fb77957a830545d773dafd013876d176fb4860bbb869d5a69",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "e29b772ffbb2e1014b66c580b0314d0a72a8192671a727ff266a55c2f4b1c894",
+        "quotient_operator_rank": 15,
+        "quotient_operator_shape": [
+          17,
+          15
+        ]
+      },
+      {
+        "Kummer_shift": 0,
+        "Laurent_layer": 27,
+        "descent": 13,
+        "divisibility_coordinate_count": 15,
+        "equation_digest_sha256": "5db9a18e6de69a579b944cdc5f197d9e1e4c3738be8c4ed720db7fbb93c881d5",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**10",
+        "forcing_support": [
+          0,
+          31
+        ],
+        "full_Laurent_cokernel_coordinate_count": 17,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 6,
+        "new_Q_band": 12,
+        "quotient_cokernel_basis_digest_sha256": "2376aec15dbdf9fdd42431b86904840404e7bb451c090b1cbf547a29cec242fe",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "4dd040a887a1ac91d4de195a9d4ab56d936a676930efa5105a5b08c19ec57e4c",
+        "quotient_operator_rank": 15,
+        "quotient_operator_shape": [
+          17,
+          15
+        ]
+      },
+      {
+        "Kummer_shift": 0,
+        "Laurent_layer": 26,
+        "descent": 14,
+        "divisibility_coordinate_count": 15,
+        "equation_digest_sha256": "753d49b2e91c1973793948ed21fb72c50c1ba9932a805252a1a6356dd73f390c",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**10",
+        "forcing_support": [
+          0,
+          31
+        ],
+        "full_Laurent_cokernel_coordinate_count": 17,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 6,
+        "new_Q_band": 11,
+        "quotient_cokernel_basis_digest_sha256": "e653aaf3e37c31f9284c140e7b791000b13a46111ab1920f484b33db60c5989b",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "2304b5ead1e1e9b7a2a95f7a4d7f677585c5149b2644746e9cbbc6e52314cf8c",
+        "quotient_operator_rank": 15,
+        "quotient_operator_shape": [
+          17,
+          15
+        ]
+      },
+      {
+        "Kummer_shift": -1,
+        "Laurent_layer": 25,
+        "descent": 15,
+        "divisibility_coordinate_count": 13,
+        "equation_digest_sha256": "c4e8d0670d4154002651efd742a7a7ed7d68118750b8402627f0c7bc28b3acd5",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**9",
+        "forcing_support": [
+          0,
+          31
+        ],
+        "full_Laurent_cokernel_coordinate_count": 16,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 6,
+        "new_Q_band": 10,
+        "quotient_cokernel_basis_digest_sha256": "b07e708293a8b0fe6cdfb69f9008cb046ba68e88b85b9ab874eb17c8edd3a308",
+        "quotient_cokernel_coordinate_count": 3,
+        "quotient_operator_digest_sha256": "15fe34fdc4efd51a53c94f7b0503929e5a3448d3b4e491284c6ba24ca80a3f2a",
+        "quotient_operator_rank": 16,
+        "quotient_operator_shape": [
+          19,
+          17
+        ]
+      },
+      {
+        "Kummer_shift": 0,
+        "Laurent_layer": 24,
+        "descent": 16,
+        "divisibility_coordinate_count": 14,
+        "equation_digest_sha256": "683851b3093ac7bc1882b40715c2c4dd0010a22a8e81be019f770e64d6c93bcd",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**9",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 16,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 6,
+        "new_Q_band": 9,
+        "quotient_cokernel_basis_digest_sha256": "50509928d9bc27ec7d94ce43909b0d1e9d6403fcb57fe8bbb25222dfddf7ec8c",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "34a8be06c6af9b77726e895cb44cfc69882d832e6eeef050bea8662192463c1a",
+        "quotient_operator_rank": 17,
+        "quotient_operator_shape": [
+          19,
+          17
+        ]
+      },
+      {
+        "Kummer_shift": 0,
+        "Laurent_layer": 23,
+        "descent": 17,
+        "divisibility_coordinate_count": 13,
+        "equation_digest_sha256": "342fa42ce2f6833645b4b18e395d900c9c533f9fef821e30de31ddbd7cf5f364",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**8",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 15,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": 8,
+        "quotient_cokernel_basis_digest_sha256": "1b3b3e2100940ceabe5ad461d753846e5d4dcd7305e1b08f0b81653db61d2187",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "5143f71b5773a9376c26f8fc540d3814761d397e2bf4e35b1f1401f4c3b22fae",
+        "quotient_operator_rank": 18,
+        "quotient_operator_shape": [
+          20,
+          18
+        ]
+      },
+      {
+        "Kummer_shift": 0,
+        "Laurent_layer": 22,
+        "descent": 18,
+        "divisibility_coordinate_count": 13,
+        "equation_digest_sha256": "b102ac2a827fe4ce58561daf2a13183390f590dd5f32d334e4ab008422205d10",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**8",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 15,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": 7,
+        "quotient_cokernel_basis_digest_sha256": "48fd4838cccbcda1fb5ed8d621727fe58ab309e34cb71e1487fa01075e64b86f",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "e772af740b3c02281482d728cd0de828c6956805e568980167b1f6210e87deb7",
+        "quotient_operator_rank": 18,
+        "quotient_operator_shape": [
+          20,
+          18
+        ]
+      },
+      {
+        "Kummer_shift": 0,
+        "Laurent_layer": 21,
+        "descent": 19,
+        "divisibility_coordinate_count": 13,
+        "equation_digest_sha256": "de187b30613b474a0c200759f426f9c73330cc280ecf7d1a18b978099825b077",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**8",
+        "forcing_support": [
+          0,
+          31
+        ],
+        "full_Laurent_cokernel_coordinate_count": 15,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": 6,
+        "quotient_cokernel_basis_digest_sha256": "3c175e961fa977462e6e5b8a5becbe16ee55198864b28858f264b6d282d613e6",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "54a7c8f80610085a75a0700eded9112a047f3a5111c2e42ccc9b13d4d5ec4bb4",
+        "quotient_operator_rank": 17,
+        "quotient_operator_shape": [
+          19,
+          17
+        ]
+      },
+      {
+        "Kummer_shift": -1,
+        "Laurent_layer": 20,
+        "descent": 20,
+        "divisibility_coordinate_count": 11,
+        "equation_digest_sha256": "339cd242eca6858b786416e9fbcc9691caebd1c121e96d4bff9757152c9ecf54",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**7",
+        "forcing_support": [
+          0,
+          31
+        ],
+        "full_Laurent_cokernel_coordinate_count": 14,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": 5,
+        "quotient_cokernel_basis_digest_sha256": "c7232e9fb114159571c27cdae8d04b4977ea55d926427400666f963dfe637a80",
+        "quotient_cokernel_coordinate_count": 3,
+        "quotient_operator_digest_sha256": "39d369146689ea758363ed1fa924d6382f6e6b4409eddeb729d0f5bd2af16bb1",
+        "quotient_operator_rank": 18,
+        "quotient_operator_shape": [
+          21,
+          19
+        ]
+      },
+      {
+        "Kummer_shift": 0,
+        "Laurent_layer": 19,
+        "descent": 21,
+        "divisibility_coordinate_count": 12,
+        "equation_digest_sha256": "2b4f194706f7ec635c784f13ec34a1da51c7c99738be9ef6edd1aa76a5b1ea2c",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**7",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 14,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": 4,
+        "quotient_cokernel_basis_digest_sha256": "1d681918cf82d9cbe5c587de3707390e81809eb6adf5dbf2eb7878d4b3e831ef",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "4a6a3bc2baf02f1d28ab4ba9019bd7e3f73cb29786b2e4915194627b1e87ec7e",
+        "quotient_operator_rank": 19,
+        "quotient_operator_shape": [
+          21,
+          19
+        ]
+      },
+      {
+        "Kummer_shift": 0,
+        "Laurent_layer": 18,
+        "descent": 22,
+        "divisibility_coordinate_count": 11,
+        "equation_digest_sha256": "cd626cc257ae7d4090585c81226f0d050839380047d6fd54c9a34b99775e9218",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**6",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 13,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": 3,
+        "quotient_cokernel_basis_digest_sha256": "4ef5945702015ec4081f08ec629d685f9524beeb7d571924b39e98ca89f3a170",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "910aca750f5845d62898b4f80bffe2c1424af7767039c5c6ba9c3ee9b187d3ef",
+        "quotient_operator_rank": 20,
+        "quotient_operator_shape": [
+          22,
+          20
+        ]
+      },
+      {
+        "Kummer_shift": 0,
+        "Laurent_layer": 17,
+        "descent": 23,
+        "divisibility_coordinate_count": 11,
+        "equation_digest_sha256": "86549e62b985f85a8fa84c410c37aa30487cd2da591812e98fa108f291763fc2",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**6",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 13,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": 2,
+        "quotient_cokernel_basis_digest_sha256": "2ec61b4aea90c094d2d0fcaf232425eebb0b6b07a6a8695dbd8546001dfbcc2f",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "a6932fb9095a47101ec02d0911c8187d5f7412aaa2b6b20a6d311efc3c295303",
+        "quotient_operator_rank": 20,
+        "quotient_operator_shape": [
+          22,
+          20
+        ]
+      },
+      {
+        "Kummer_shift": 0,
+        "Laurent_layer": 16,
+        "descent": 24,
+        "divisibility_coordinate_count": 11,
+        "equation_digest_sha256": "844b03289bfd9f34faa7b3d382231936e1c36077bcb4619ead4474371c039871",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**6",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 13,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": 1,
+        "quotient_cokernel_basis_digest_sha256": "b86c11931d701e6716af2c9ce42c60975bcb6775541b346d984ce94f440a4eec",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "4073c4dc3f5de1be617813605084b3a0de0454903c1bac868b214b1ace97a3a0",
+        "quotient_operator_rank": 20,
+        "quotient_operator_shape": [
+          22,
+          20
+        ]
+      },
+      {
+        "Kummer_shift": -1,
+        "Laurent_layer": 15,
+        "descent": 25,
+        "divisibility_coordinate_count": 9,
+        "equation_digest_sha256": "774f274813ac99265d68d107d04a54104538ffb0203882dade0f2a315b3552f9",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**5",
+        "forcing_support": [
+          0,
+          31
+        ],
+        "full_Laurent_cokernel_coordinate_count": 12,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": 0,
+        "quotient_cokernel_basis_digest_sha256": "e04897a435fea2a285847c4b926f87c5f0454a836dceea260613279a53addcf8",
+        "quotient_cokernel_coordinate_count": 3,
+        "quotient_operator_digest_sha256": "6e77b4405fe112b01909093f50cbf25dbf267ec31159bfbef69ab51b7d8b4942",
+        "quotient_operator_rank": 20,
+        "quotient_operator_shape": [
+          23,
+          21
+        ]
+      },
+      {
+        "Kummer_shift": 0,
+        "Laurent_layer": 14,
+        "descent": 26,
+        "divisibility_coordinate_count": 10,
+        "equation_digest_sha256": "f065703a164a3b73d9a4c75d1be394de2c237c3c98feff1809c791c7c8a73eb5",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**5",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 12,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": -1,
+        "quotient_cokernel_basis_digest_sha256": "7805632e9043ba526f4dea99528e792a1db6147c8132155936aea1525821fa2b",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "ba427be244df0098c1d4fc9962da689083a53ed4e845ab2b1b4f2459d5158a49",
+        "quotient_operator_rank": 21,
+        "quotient_operator_shape": [
+          23,
+          21
+        ]
+      },
+      {
+        "Kummer_shift": 0,
+        "Laurent_layer": 13,
+        "descent": 27,
+        "divisibility_coordinate_count": 10,
+        "equation_digest_sha256": "d5b67760843632f329229cded6bf283e7d8f613b7735f86e59bd18f5e8dafb25",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**5",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 12,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": -2,
+        "quotient_cokernel_basis_digest_sha256": "2e539c19cef41112b244d81ba9247e1c4d9b399b819c706a712a29ece55ccaf2",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "0ce5ebfc3ce40af958cded3dae4879afb408aa3998f98cbfd1f82ae23067a657",
+        "quotient_operator_rank": 21,
+        "quotient_operator_shape": [
+          23,
+          21
+        ]
+      },
+      {
+        "Kummer_shift": 0,
+        "Laurent_layer": 12,
+        "descent": 28,
+        "divisibility_coordinate_count": 10,
+        "equation_digest_sha256": "54d8f2cafe3fefd6a5725126902a0b5d019cd6aee2af3aef3fa6a30e94307695",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**5",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 12,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": -3,
+        "quotient_cokernel_basis_digest_sha256": "9e1d89f5cf2a9d432dfe12cd527d1d30b5d93371b36cf2910d67f0227e4a163a",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "48fdb0ae9bcc00f771ff38b5c6976b0ad7e8d98d380b10d089c5087d00b0010a",
+        "quotient_operator_rank": 21,
+        "quotient_operator_shape": [
+          23,
+          21
+        ]
+      },
+      {
+        "Kummer_shift": 0,
+        "Laurent_layer": 11,
+        "descent": 29,
+        "divisibility_coordinate_count": 10,
+        "equation_digest_sha256": "29fceb48feaacabe5abfb7fe834c10f21c348e0560970e2859b566fcf4745ed4",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**5",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 12,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": -4,
+        "quotient_cokernel_basis_digest_sha256": "387cd53867e78229be85e977cd4a3e1eff9d38e912b075c6166af55412873179",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "9a78822cfd68b821fee3009cfef5369f8c39973353947f3731e34ab8f9be28d5",
+        "quotient_operator_rank": 21,
+        "quotient_operator_shape": [
+          23,
+          21
+        ]
+      },
+      {
+        "Kummer_shift": 0,
+        "Laurent_layer": 10,
+        "descent": 30,
+        "divisibility_coordinate_count": 10,
+        "equation_digest_sha256": "b33120cc3fb15fc24971ad8d2945c5ae40a59610d191b10e40c70990fee28419",
+        "forced_divisor": "(-rho + w)**5*(w - 1)**5",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 12,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": -5,
+        "quotient_cokernel_basis_digest_sha256": "5e2bb8f544a295a1c2c6c5501e93f439f72ae21446deef7cb93c4c05e52d2e7a",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "903bcba45f25bacae99af6a3a7a39f04e93a942b046d4ca3056f2b0a837986ab",
+        "quotient_operator_rank": 21,
+        "quotient_operator_shape": [
+          23,
+          21
+        ]
+      },
+      {
+        "Kummer_shift": 1,
+        "Laurent_layer": 9,
+        "descent": 31,
+        "divisibility_coordinate_count": 11,
+        "equation_digest_sha256": "e4f39ca602bf4ed82b1d66ee1ec2e57c50c94a7112094c6e522d247a9cc8860b",
+        "forced_divisor": "w*(-rho + w)**5*(w - 1)**5",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 13,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": -6,
+        "quotient_cokernel_basis_digest_sha256": "38e1919aedcf6c4b82206a409ed56d56a8018821f158ca1efd9c85261f2a3bf5",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "d2678309aeb877dc3927de0d039bff246c057ab6dadf23ee38c47ea000d91633",
+        "quotient_operator_rank": 20,
+        "quotient_operator_shape": [
+          22,
+          20
+        ]
+      },
+      {
+        "Kummer_shift": 1,
+        "Laurent_layer": 8,
+        "descent": 32,
+        "divisibility_coordinate_count": 11,
+        "equation_digest_sha256": "43b23eec2052d31518ec4c6708750909e510caaf26583d5c08bcda29486929a5",
+        "forced_divisor": "w*(-rho + w)**5*(w - 1)**5",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 13,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": -7,
+        "quotient_cokernel_basis_digest_sha256": "af6dc52d2919fc826fd15aa19c2725930eda1abd7bd6619aad218dd4ab331577",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "7afde4722ffc9b72ac2a0baf47026659be9f8769685401de35fa80366bea577c",
+        "quotient_operator_rank": 20,
+        "quotient_operator_shape": [
+          22,
+          20
+        ]
+      },
+      {
+        "Kummer_shift": 1,
+        "Laurent_layer": 7,
+        "descent": 33,
+        "divisibility_coordinate_count": 11,
+        "equation_digest_sha256": "41e8008aa1ae8e7a6dca846a8cb7efe7a4a0538cd3d3847ae45d4be29331d35f",
+        "forced_divisor": "w*(-rho + w)**5*(w - 1)**5",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 13,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": -8,
+        "quotient_cokernel_basis_digest_sha256": "c2eba4522778ff2ec654752fb15cbfc85a383a3290042f283709c86eef756c23",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "8ee1664c2c4eb231716d073bf3f8f9c5d33e119bbaa32337aa5e9adfcb9b2f86",
+        "quotient_operator_rank": 20,
+        "quotient_operator_shape": [
+          22,
+          20
+        ]
+      },
+      {
+        "Kummer_shift": 1,
+        "Laurent_layer": 6,
+        "descent": 34,
+        "divisibility_coordinate_count": 11,
+        "equation_digest_sha256": "3bd21d9911aa9afed824c28a3c14d2455c61b106925fd8c7c9a5e5fcae0548e2",
+        "forced_divisor": "w*(-rho + w)**5*(w - 1)**5",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 13,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": -9,
+        "quotient_cokernel_basis_digest_sha256": "a513adab8eff3208ba81442806c29fc5d8bb533a20b258da02b172ffc8adc302",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "385471985423b93d598b705158f4426a697cea50cd523caeeeffbe325b703926",
+        "quotient_operator_rank": 20,
+        "quotient_operator_shape": [
+          22,
+          20
+        ]
+      },
+      {
+        "Kummer_shift": 1,
+        "Laurent_layer": 5,
+        "descent": 35,
+        "divisibility_coordinate_count": 11,
+        "equation_digest_sha256": "15e1a183ef8574829186f4326d1b28a13127e5323bfdc4c08567a70e4fbbe14e",
+        "forced_divisor": "w*(-rho + w)**5*(w - 1)**5",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 13,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": -10,
+        "quotient_cokernel_basis_digest_sha256": "cf93bf763cf99be9fd543767f4fbc4c453d93f0e24304474e1e98a139e0ae435",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "364f747a4f216bfb44a5fcf9f474fe36b6a558e0203076d2b936b895c58d986c",
+        "quotient_operator_rank": 20,
+        "quotient_operator_shape": [
+          22,
+          20
+        ]
+      },
+      {
+        "Kummer_shift": 2,
+        "Laurent_layer": 3,
+        "descent": 37,
+        "divisibility_coordinate_count": 12,
+        "equation_digest_sha256": "ae8677f1912564491a90412bb5e4417061d8872f42931b2333eec6dccfa5126f",
+        "forced_divisor": "w**2*(-rho + w)**5*(w - 1)**5",
+        "forcing_support": [
+          0,
+          32
+        ],
+        "full_Laurent_cokernel_coordinate_count": 14,
+        "identically_zero_coordinates_after_substitution": 0,
+        "maximum_circuit_total_degree": 7,
+        "new_Q_band": -12,
+        "quotient_cokernel_basis_digest_sha256": "02acdda8be5e875c3910c545321c72deb4570cbb20c26c9f280b8967804426f5",
+        "quotient_cokernel_coordinate_count": 2,
+        "quotient_operator_digest_sha256": "3247482fb889e88fd7090d821f9c952c8c1abccae69a2e87335a131a3553342b",
+        "quotient_operator_rank": 19,
+        "quotient_operator_shape": [
+          21,
+          19
+        ]
+      }
+    ],
+    "upper_tangent_substitution": "Q_(25-delta)=-3*C0^2*P_(15-delta), delta=1..11, with C0^4 and C0^3 resonant parameters"
+  },
+  "decision": {
+    "counterexample_obtained": false,
+    "next_exact_operation": "base-change the circuit ideal to each quartic embedding or a finite field of good reduction and run modular ideal/Jacobian tests before any characteristic-zero Groebner lift",
+    "unit_ideal_obtained": false,
+    "what_is_now_exact": "the ten endpoint circuits, upper tangent substitutions, 294 divisibility coordinates, 53 pinned quotient cokernel coordinates, final 7+6 functionals, and five incidence rows"
+  },
+  "descent_eight_incidence": {
+    "defect_relation": "27*y^2-9*y+1",
+    "equation_digest_sha256": "64a2bde7bea36a0590606f057a1402c71ddc4c1dee684ab38e4c83003b3a8c0a",
+    "incidence_equation_count": 5,
+    "incidence_rows": [
+      "K_P7(rho)",
+      "K_P7'(rho)",
+      "K_P7''(rho)",
+      "K_Q1(rho)",
+      "K_P-1(rho)-25^3*rho*(rho-1)^6*y*(K_P7'''(rho)/6)^2"
+    ],
+    "quartic_compositum_presentation": "QQ(rho)[y]/(27*y^2-9*y+1)",
+    "relative_base": "QQ(rho), rho^2-3*rho+1=0"
+  },
+  "double_carrier": {
+    "R": "(w-rho)^2/(25*(1-rho)^2)",
+    "quartic_primitive_polynomial": "729*theta^4-4860*theta^3+10341*theta^2-7470*theta+1756",
+    "rho_polynomial": "rho**2 - 3*rho + 1"
+  },
+  "endpoint_circuits": {
+    "H_at_zero_is_zero_after_full_band_specialization": true,
+    "pivot_count": 10,
+    "resonant_upper_centralizers": [
+      "C0^4",
+      "C0^3"
+    ],
+    "upper_tangent_descents": [
+      1,
+      11
+    ]
+  },
+  "equation_ledger": {
+    "all_equation_digest_sha256": "72efde05c379b575e4383060f6f0a78d1206a70ffb777a9e9e5c1641c7168e1e",
+    "coupled_full_Laurent": 347,
+    "incidence_and_relative_field_relation": 6,
+    "target_and_layer_zero": 13,
+    "total": 366
+  },
+  "final_thirteen_functionals": {
+    "combined_equation_count": 13,
+    "layer_zero": {
+      "Hermite_profile": "H(rho)-H(0), H^(1..5)(rho)",
+      "equation_count": 6,
+      "equation_digest_sha256": "7a86ac1e1eb02cf8513b73133a1e20f9cdd75fcd866736821e4e1570148acc8f"
+    },
+    "target": {
+      "equation_count": 7,
+      "equation_digest_sha256": "fdf5ddcc0fda2326140df8b7c825d31e8a34ecda5aa838938b02a68d759ef313",
+      "movable_rho_jet_orders": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "quotient_cokernel_basis_digest_sha256": "27d8e7a0d9f6f5db5c0b34c9d0e0f95890f3aead015acdabca7ec42e7ec1d4a0",
+      "quotient_operator_digest_sha256": "c3b4ae77718fe47ee53fef7406272616f272d591629a9389a7a5d0567b2b955f",
+      "quotient_residue_count": 2
+    }
+  },
+  "reproduction_command": ".venv/bin/python plane-jc/cas/compile_f2_75_125_nonlinear_forcing.py",
+  "schema": "plane-jc.f2-75-125-nonlinear-forcing.v1",
+  "software": {
+    "sympy": "1.14.0"
+  },
+  "squarefree_carrier_later_first_defect": {
+    "carrier": "R=(w^2-3*w+3)/25",
+    "carrier_discriminant": "-3/625",
+    "carrier_root_profile": "two simple roots; no movable double prime",
+    "descent_eight_route": "incompatible with the movable-double-root incidence prime",
+    "exact_rows": [
+      {
+        "P_band": 6,
+        "multiple_on_target": [
+          4
+        ],
+        "primitive_zero_multiples_before_target": [
+          2,
+          3
+        ],
+        "spacing": 9
+      },
+      {
+        "P_band": 5,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [
+          2,
+          3
+        ],
+        "spacing": 10
+      },
+      {
+        "P_band": 4,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [
+          2,
+          3
+        ],
+        "spacing": 11
+      },
+      {
+        "P_band": 3,
+        "multiple_on_target": [
+          3
+        ],
+        "primitive_zero_multiples_before_target": [
+          2
+        ],
+        "spacing": 12
+      },
+      {
+        "P_band": 2,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [
+          2
+        ],
+        "spacing": 13
+      },
+      {
+        "P_band": 1,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [
+          2
+        ],
+        "spacing": 14
+      },
+      {
+        "P_band": 0,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [
+          2
+        ],
+        "spacing": 15
+      },
+      {
+        "P_band": -1,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [
+          2
+        ],
+        "spacing": 16
+      },
+      {
+        "P_band": -2,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [
+          2
+        ],
+        "spacing": 17
+      },
+      {
+        "P_band": -3,
+        "multiple_on_target": [
+          2
+        ],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 18
+      },
+      {
+        "P_band": -4,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 19
+      },
+      {
+        "P_band": -5,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 20
+      },
+      {
+        "P_band": -6,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 21
+      },
+      {
+        "P_band": -7,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 22
+      },
+      {
+        "P_band": -8,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 23
+      },
+      {
+        "P_band": -9,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 24
+      },
+      {
+        "P_band": -10,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 25
+      },
+      {
+        "P_band": -11,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 26
+      },
+      {
+        "P_band": -12,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 27
+      },
+      {
+        "P_band": -13,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 28
+      },
+      {
+        "P_band": -14,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 29
+      },
+      {
+        "P_band": -15,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 30
+      },
+      {
+        "P_band": -16,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 31
+      },
+      {
+        "P_band": -17,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 32
+      },
+      {
+        "P_band": -18,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 33
+      },
+      {
+        "P_band": -19,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 34
+      },
+      {
+        "P_band": -20,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 35
+      },
+      {
+        "P_band": -21,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 36
+      },
+      {
+        "P_band": -22,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 37
+      },
+      {
+        "P_band": -23,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 38
+      },
+      {
+        "P_band": -24,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 39
+      },
+      {
+        "P_band": -25,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 40
+      },
+      {
+        "P_band": -26,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 41
+      },
+      {
+        "P_band": -27,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 42
+      },
+      {
+        "P_band": -28,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 43
+      },
+      {
+        "P_band": -29,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 44
+      },
+      {
+        "P_band": -30,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 45
+      },
+      {
+        "P_band": -31,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 46
+      },
+      {
+        "P_band": -32,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 47
+      },
+      {
+        "P_band": -33,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 48
+      },
+      {
+        "P_band": -34,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 49
+      },
+      {
+        "P_band": -35,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 50
+      },
+      {
+        "P_band": -36,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 51
+      },
+      {
+        "P_band": -37,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 52
+      },
+      {
+        "P_band": -38,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 53
+      },
+      {
+        "P_band": -39,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 54
+      },
+      {
+        "P_band": -40,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 55
+      },
+      {
+        "P_band": -41,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 56
+      },
+      {
+        "P_band": -42,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 57
+      },
+      {
+        "P_band": -43,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 58
+      },
+      {
+        "P_band": -44,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 59
+      },
+      {
+        "P_band": -45,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 60
+      },
+      {
+        "P_band": -46,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 61
+      },
+      {
+        "P_band": -47,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 62
+      },
+      {
+        "P_band": -48,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 63
+      },
+      {
+        "P_band": -49,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 64
+      },
+      {
+        "P_band": -50,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 65
+      },
+      {
+        "P_band": -51,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 66
+      },
+      {
+        "P_band": -52,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 67
+      },
+      {
+        "P_band": -53,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 68
+      },
+      {
+        "P_band": -54,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 69
+      },
+      {
+        "P_band": -55,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 70
+      },
+      {
+        "P_band": -56,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 71
+      },
+      {
+        "P_band": -57,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 72
+      },
+      {
+        "P_band": -58,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 73
+      },
+      {
+        "P_band": -59,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 74
+      },
+      {
+        "P_band": -60,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 75
+      },
+      {
+        "P_band": -61,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 76
+      },
+      {
+        "P_band": -62,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 77
+      },
+      {
+        "P_band": -63,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 78
+      },
+      {
+        "P_band": -64,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 79
+      },
+      {
+        "P_band": -65,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 80
+      },
+      {
+        "P_band": -66,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 81
+      },
+      {
+        "P_band": -67,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 82
+      },
+      {
+        "P_band": -68,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 83
+      },
+      {
+        "P_band": -69,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 84
+      },
+      {
+        "P_band": -70,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 85
+      },
+      {
+        "P_band": -71,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 86
+      },
+      {
+        "P_band": -72,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 87
+      },
+      {
+        "P_band": -73,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 88
+      },
+      {
+        "P_band": -74,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 89
+      },
+      {
+        "P_band": -75,
+        "multiple_on_target": [],
+        "primitive_zero_multiples_before_target": [],
+        "spacing": 90
+      }
+    ],
+    "later_spacing_count": 82,
+    "later_spacing_interval": [
+      9,
+      90
+    ],
+    "ledger_digest_sha256": "6c553027a4ef1521059b363c98a108927c4064daa4c000eccd16f353cc186237",
+    "regime_counts": {
+      "spacings_12_to_17_with_multiple_2": 6,
+      "spacings_18_to_90_with_no_pre_target_multiple": 73,
+      "spacings_9_to_11_with_multiples_2_3": 3
+    },
+    "status": "routed but not eliminated; each spacing still requires its own target-and-tail Fitting compiler"
+  },
+  "status": "exact-arithmetic-circuit-presentation;ideal-test-open"
+}

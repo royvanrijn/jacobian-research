@@ -1,0 +1,68 @@
+// Separate the two degree-four node branches and compute their (t,w)-ideals.
+LIB "primdec.lib";
+ring R=(0,r),(x,y,m,t,w),lp;
+minpoly=r^2+11;
+poly f=x6+(1/2*r-1/2)*x5*y+(-1/2*r-3/2)*x4*y2+2*x3*y3
+ +(1/2*r-3/2)*x2*y4+(-1/2*r-1/2)*x*y5+y6
+ +(1/2*r+11/2)*x5+(3/2*r-11/2)*x4*y-2*r*x3*y2
+ +2*r*x2*y3+(-3/2*r-11/2)*x*y4+(-1/2*r+11/2)*y5
+ +(67/2*r-77/2)*x4+(-35*r-110)*x3*y+198*x2*y2
+ +(35*r-110)*x*y3+(-67/2*r-77/2)*y4
+ +(66*r-583)*x3+(-242*r+385)*x2*y+(242*r+385)*x*y2
+ +(-66*r-583)*y3+(-902*r-3212)*x2+4048*x*y
+ +(902*r-3212)*y2+(-5588*r+8712)*x+(5588*r+8712)*y+43560;
+poly A=4*x2*y+(r-1)*x*y2-2*y3+4*x2+2*r*x*y+(r-7)*y2
+ +(-8*r-44)*x+(20*r+44)*y-44*r+220;
+poly BB=x3+3*x2-1/2*x*y2+(11+3*r)/4*x*y+(-55+33*r)/2*x
+ +(1+r)/4*y3+(1+3*r)/4*y2+(44-12*r)*y-198-44*r;
+poly qa=(128*r+320)*t6+(64*r-736)*t5+(-110*r-50)*t4
+ +(-10*r+138)*t3+(79/8*r-181/8)*t2+(-15/16*r+69/16)*t
+ +(-1/64*r-9/32);
+poly qb=(544*r-1760)*t6+(-2320*r-3344)*t5+(128*r+6908)*t4
+ +(508*r-1056)*t3+(-781/8*r-1859/8)*t2+(87/16*r+1353/16)*t
+ +(-97/128*r-957/128);
+poly sq=t3+(r/40-7/40)*t2+(7*r/160-19/160)*t-r/320+1/160;
+poly tangent=diff(diff(f,x),x)+2*diff(diff(f,x),y)*m
+ +diff(diff(f,y),y)*m2;
+poly tangentmap=t*(diff(A,x)+m*diff(A,y))
+ -(diff(BB,x)+m*diff(BB,y));
+
+proc shownode(ideal I,string label)
+{
+  // Kill the unused canonical variables before primary decomposition; the
+  // branch factorization itself lives only in (x,y,m).
+  ideal T=std(I+ideal(tangent,t,w));
+  list L=minAssGTZ(T);
+  int i;
+  for(i=1;i<=size(L);i++)
+  {
+    print(label+"_"+string(i));
+    print(std(L[i]));
+  }
+}
+
+ideal I=ideal(2*x2+(3*r-11)*x+(-6*r-22),
+  2*y2+(-3*r-11)*y+(6*r-22));
+shownode(I,"p2_node");
+I=ideal(2*y3+(3*r+15)*y2+(-12*r-12)*y+(-96*r+56),
+  18*x+(r+1)*y2+(8*r-10)*y+(-20*r+88));
+shownode(I,"q2_node");
+
+proc showcanonical(ideal branch,string label)
+{
+  ideal M=std(branch+ideal(tangentmap,3*r*sq*w-2*(2*qa*x+qb)));
+  ideal E=eliminate(M,x*y*m);
+  print("CANONICAL "+label);
+  print(std(E));
+}
+
+I=ideal(
+  36*m4+(-45*r-45)*m3+(36*r-180)*m2+(30*r+120)*m+(-10*r+14),
+  44*y+(-2*r-154)*m3+(149*r+187)*m2+(-138*r+264)*m+(-42*r-418),
+  10*x+(-3*r+1)*y+(-8*r-4)*m2+(15*r-105)*m+(33*r-1));
+showcanonical(I,"p2_node_a");
+I=ideal(
+  36*m4+(18*r+72)*m3+(18*r-90)*m2+(-27*r-27)*m+(-10*r+14),
+  188*y+(-40*r+52)*m3+(-88*r+622)*m2+(117*r+567)*m+(-114*r-1102),
+  94*x+(-85*r+7)*y+(-184*r-164)*m2+(-330*r+276)*m+(497*r-637));
+showcanonical(I,"p2_node_b");

@@ -1,0 +1,392 @@
+{
+  "scope": "direct HC4 rank-three top cone with repeated linear Hessian factors",
+  "status": "exact degree and normal-form identities verified",
+  "notation": {
+    "m": "D-2",
+    "delta_degree": "3*m",
+    "radical_ell_R_degree": "3*m-1",
+    "adjugate_motion_degree": "3*m-j",
+    "quotient_degree": "1-j"
+  },
+  "first_motion_gate": {
+    "conclusion": "j=1",
+    "constant_vector_identity": "Hess(f)*B=ell*grad(a)",
+    "curl_consequence": "a=c*ell^m"
+  },
+  "general_multiplicity_budget": {
+    "kappa": "sum_i floor(e_i/2)*deg(pi_i)",
+    "half_radical_degree": "3*m-kappa",
+    "quotient_degree": "kappa-j",
+    "conclusion": "the first off-diagonal order satisfies j<=kappa",
+    "extremal_order": "j=kappa gives a constant B with Hess(f)*B=G*grad(a) and dG wedge da=0"
+  },
+  "lower_rank_quadruple_gate": {
+    "hypothesis": "Delta=ell^4*R, R squarefree and coprime to ell, with generic rank(Hess(f) mod ell)<=1",
+    "divisibility": "ell^2*R divides adj(Hess(f))*b_j",
+    "quotient_degree": "2-j",
+    "first_motion_orders": [
+      1,
+      2
+    ],
+    "order_two": "the only exact-multiplicity candidate is D=6 split, whose boundary Hessian rank is two, contradicting the hypothesis",
+    "order_one_boundary_jets": [
+      "f=ell^2*g_(D-2)",
+      "f=y^D+ell^3*g_(D-3)"
+    ],
+    "ell_squared_jet_bordered_coefficient": "2*(g0*gyy*gzz - g0*gyz**2 - 2*gy**2*gzz + 4*gy*gyz*gz - 2*gyy*gz**2)",
+    "pure_power_jet_leading_coefficient": "y_hessian*(6*g0*gzz - 9*gz**2)",
+    "residual_tangent_determinant": "-C**2*hyy*x**(2*m + 2)*(m + 1)**2",
+    "weight_compatibility": "m=2 only",
+    "conclusion": "no completion for D>=5"
+  },
+  "rank_two_quadruple_residual": {
+    "order_two": {
+      "candidate": "D=6 and f=C*ell^6+h_6(y,z)",
+      "constant_w2_entry": "q=3*alpha^2/(10*C)",
+      "descended_ternary_top": "Q_6=-(2/3)*C*ell^6+h_6(y,z)",
+      "conclusion": "impossible because det Hess(Q) is constant but its top Hessian determinant is nonzero"
+    },
+    "order_one": "Hess(f)*L=ell^2*grad(a), L(a)=ell^2*c, and rank(Hess(f) mod ell)=2"
+  },
+  "order_one_rank_collapse": {
+    "system": "L(f)=ell^2*F, M^T*grad(f)=2*ell*F*dell-ell^2*grad(F)/m, and L(F) in (ell^2)",
+    "rank_three": "forces boundary Hessian rank at most one",
+    "rank_two": "both boundary-gradient orientations contradict L(F) in (ell^2)",
+    "rank_one_integration": "F=C*ell^(2m)/lambda^m",
+    "polynomiality": "lambda is proportional to ell",
+    "exact_quadruple_consequence": "m=4, D=6, L=ell*partial_ell, and f=C*ell^6+h_6(y,z)"
+  },
+  "degree_six_order_one_terminal_face": {
+    "packet": "h_6=C*ell^6+H_6(y,z), h_5=alpha*w*ell^4+r_5",
+    "forced_w2_coefficient": "4*alpha**2/(15*C)",
+    "forced_w3_coefficient": "8*alpha**3/(675*C**2)",
+    "intermediate_channel": "0",
+    "terminal_channel_multiplier": "128*alpha**5/(3375*C**3)",
+    "full_terminal_channel": "(128/3375)*(alpha^5/C^3)*w^3*det Hess_(y,z)(H_6)",
+    "conclusion": "nonzero in characteristic zero; the D=6 packet is empty"
+  },
+  "degree_five_triple_terminal_face": {
+    "packet": "h_5=C*ell^5+H_5(y,z), h_4=alpha*w*ell^3+r_4",
+    "forced_w2_coefficient": "9*alpha**2/(40*C)",
+    "terminal_channel_multiplier": "-81*alpha**4/(400*C**2)",
+    "full_terminal_channel": "-(81/400)*(alpha^4/C^2)*w^2*det Hess_(y,z)(H_5)",
+    "conclusion": "nonzero in characteristic zero; the D=5 exact triple packet is empty"
+  },
+  "generic_corank_one_quintuple_gate": {
+    "hypothesis": "Delta=ell^5*R, R squarefree and coprime to ell, with generic rank(Hess(f) mod ell)=2",
+    "divisibility": "ell^3*R divides adj(Hess(f))*b_j",
+    "quotient_degree": "2-j",
+    "first_motion_orders": [
+      1,
+      2
+    ],
+    "order_two": {
+      "candidate": "D=7 and f=C*ell^7+h_7(y,z)",
+      "forced_w2_coefficient": "4*alpha**2/(21*C)",
+      "terminal_channel_multiplier": "32*alpha**3/(21*C)",
+      "full_terminal_channel": "(32/21)*(alpha^3/C)*w*ell^3*det Hess_(y,z)(h_7)"
+    },
+    "order_one": {
+      "candidate": "D=7, f=C*ell^7+h_7(y,z), and L=ell*partial_ell",
+      "forced_w2_coefficient": "25*alpha**2/(84*C)",
+      "forced_w3_coefficient": "125*alpha**3/(5292*C**2)",
+      "forced_lower_w3_coefficient": "0",
+      "intermediate_channel": "0",
+      "terminal_channel_multiplier": "-15625*alpha**6/(3111696*C**4)",
+      "full_terminal_channel": "-9*gamma^2*w^4*det Hess_(y,z)(h_7)"
+    },
+    "conclusion": "both possible motion orders have a nonzero immutable terminal channel; the generic corank-one quintuple component is empty"
+  },
+  "lower_rank_quintuple_gate": {
+    "hypothesis": "Delta=ell^5*R, R squarefree and coprime to ell, with generic rank(Hess(f) mod ell)<=1",
+    "rank_zero": "Hessian integrability gives ell^3|f and determinant order at least seven",
+    "rank_one_divisibility": "ell^3*R divides adj(Hess(f))*b_j for invariant factors (0,1,4) or (0,2,3)",
+    "first_motion_orders": [
+      1,
+      2
+    ],
+    "order_two": "the only exact-multiplicity candidate is the D=7 split top, whose boundary Hessian has rank two",
+    "order_one_x2_jet": {
+      "form": "f=ell^2*(y^m+ell*g1+...)",
+      "order_five_coefficient": "-2*g1zz*m*y**(2*m - 2)*(m + 1)",
+      "field_weight_solution": "2"
+    },
+    "order_one_pure_power_jet": {
+      "form": "f=y^(m+2)+ell^3*(y^(m-1)+ell*g1+...)",
+      "order_five_coefficient": "g1zz*y**(2*m - 1)*(m + 1)*(6*m + 12)",
+      "field_weight_solution": "3",
+      "degree_obstruction": "deg(g1)=1 implies d_z^2(g1)=0"
+    },
+    "conclusion": "no lower-rank exact quintuple completion for D>=5"
+  },
+  "generic_corank_one_sextuple_high_order_gate": {
+    "hypothesis": "Delta=ell^6*R, R squarefree and coprime to ell, with generic rank(Hess(f) mod ell)=2",
+    "divisibility": "ell^3*R divides adj(Hess(f))*b_j",
+    "quotient_degree": "3-j",
+    "first_motion_orders": [
+      1,
+      2,
+      3
+    ],
+    "order_three": {
+      "candidate": "D=8 and f=C*ell^8+h_8(y,z)",
+      "forced_constant_w2_hessian": "2*alpha**2/(7*C)",
+      "terminal_channel_multiplier": "24*alpha**3/(7*C)",
+      "full_terminal_channel": "(24/7)*(alpha^3/C)*w*ell^2*det Hess_(y,z)(h_8)"
+    },
+    "order_two": {
+      "linear_field_system": "L(f)=ell^3*F, M^T*grad(f)=3*ell^2*F*dell-2*ell^3*grad(F)/(m-1), and L(F) in (ell^3)",
+      "matrix_rank": "one",
+      "rank_one_log_residues": [
+        "3*m/2 - 3/2",
+        "1/2 - m/2"
+      ],
+      "candidate": "D=8, f=C*ell^8+h_8(y,z), and L=ell*partial_ell",
+      "forced_w2_coefficient": "25*alpha**2/(112*C)",
+      "terminal_channel_multiplier": "-1875*alpha**4/(3136*C**2)",
+      "full_terminal_channel": "-(1875/3136)*(alpha^4/C^2)*w^2*ell^2*det Hess_(y,z)(h_8)"
+    },
+    "surviving_order_one_system": "Q(f)=ell^3*F, Jac(Q)^T*grad(f)=3*ell^2*F*dell-ell^3*grad(F)/m, Q(F) in (ell^3), deg(Q)=2, and rank(Jac(Q) mod ell)<=2",
+    "order_one_boundary_rank_zero": {
+      "reduction": "Jac(Q) mod ell=0 forces Q=ell^2*u and D=8 split",
+      "forced_w2_coefficient": "9*alpha**2/(28*C)",
+      "forced_w3_coefficient": "27*alpha**3/(784*C**2)",
+      "forced_w4_coefficient": "27*alpha**4/(43904*C**3)",
+      "reduced_channels": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "2187*alpha**7/(4302592*C**5)"
+      ],
+      "terminal_channel_multiplier": "2187*alpha**7/(4302592*C**5)"
+    },
+    "order_one_boundary_rank_one": {
+      "field_normal_form": "Q=u*q+ell^2*v when Q mod ell is nonzero",
+      "axial_orientation": "Q mod ell=0 gives Q=ell*L and reduces to the excluded rank-zero packet through the HC4-DIR5 linear system",
+      "normal_orientation": "the dx component has order s-2 on the right and at least s-1 on the left, so no packet survives",
+      "tangent_orientation": "u=partial_z and 3<=t=ord_ell(partial_z f)<=6",
+      "leading_logarithmic_exponent": "e=(m+3-t)/2",
+      "leading_relations": "dlog(F_(t-3))=e*dlog(q0), U_t=-(e/m)*F_(t-3)/q0, and V_(t-2)=(3-(t-3)/m)*F_(t-3)/2",
+      "tangent_packets_below_six": [
+        {
+          "t": 3,
+          "minimum_m": 3,
+          "q0": "y^2",
+          "F_leading": "y**m",
+          "U_leading_up_to_scalar": "y**(m - 2)"
+        },
+        {
+          "t": 4,
+          "minimum_m": 3,
+          "q0": "y^2",
+          "F_leading": "y**(m - 1)",
+          "U_leading_up_to_scalar": "y**(m - 3)"
+        },
+        {
+          "t": 5,
+          "minimum_m": 4,
+          "q0": "y^2",
+          "F_leading": "y**(m - 2)",
+          "U_leading_up_to_scalar": "y**(m - 4)"
+        }
+      ],
+      "t6_packet": {
+        "minimum_m": 5,
+        "q0": "arbitrary nonzero binary quadratic",
+        "nonsquare_q0": "m must be odd",
+        "square_q0": "every m>=5 is allowed"
+      },
+      "conclusion": "reduction only; boundary rank one is narrowed to four tangent packets t=3,4,5,6"
+    },
+    "order_one_boundary_rank_one_functional_split": {
+      "rational_invariants": "S=q/ell^2 and T=F/ell^m",
+      "one_form_identity": "U*dS=-(ell^(m+1)/m)*dT",
+      "composite_quadratic": {
+        "normal_form": "q,F,U are binary in ell,l for a linear l",
+        "invariant_orientation": "D_u(l)=0 gives f=z*G(ell,l)+h(ell,l), with G=U; this is automatic for t<6",
+        "transverse_orientation": "only at t=6, D_u(l)!=0 gives f=P(ell,l)+h(ell,r) with D_u(P)=U",
+        "boundary_quadratic": "a square"
+      },
+      "primitive_quadratic": {
+        "F_form": "sum_k c_k*ell^(m-2k)*q^k",
+        "largest_index": "k_max=(m+3-t)/2",
+        "packets": [
+          {
+            "t": 3,
+            "m_parity": "even",
+            "minimum_m": 4,
+            "k_max": "m/2"
+          },
+          {
+            "t": 4,
+            "m_parity": "odd",
+            "minimum_m": 3,
+            "k_max": "(m-1)/2"
+          },
+          {
+            "t": 5,
+            "m_parity": "even",
+            "minimum_m": 4,
+            "k_max": "(m-2)/2"
+          },
+          {
+            "t": 6,
+            "m_parity": "odd",
+            "minimum_m": 5,
+            "k_max": "(m-3)/2"
+          }
+        ],
+        "normal_form_for_t_below_six": "q=y^2+ell*z",
+        "sample_identity_count": 24
+      },
+      "conclusion": "each tangent row splits into a binary-composite pencil and a parity-restricted primitive conic packet"
+    },
+    "order_one_boundary_rank_one_invariant_composite_gate": {
+      "top_form": "f=z*G(ell,y)+h(ell,y)",
+      "determinant_z_coefficient": "-((m+1)/m)*G*det Hess_(ell,y)(G)",
+      "valuation_bound": "ord_ell(det Hess(f))>=2*t-2",
+      "eliminated_by_bound": [
+        5,
+        6
+      ],
+      "t3_order_four": "-9*composite_a0*composite_c0**2*y**(3*m - 4)*(m + 1)*(m + 2)",
+      "t3_order_five_after_order_four_vanishes": "-3*composite_a1*composite_c0**2*y**(3*m - 5)*(m + 1)*(m + 4)",
+      "t3_conclusion": "order four forces a0=0; boundary rank two forces a1!=0, so order five is nonzero",
+      "t4_order_six": "-16*composite_a0*composite_c0**2*y**(3*m - 6)*(m + 1)*(m + 2)",
+      "survivor": "t=4, ord_ell(G)=4, and h mod ell=a0*y^(m+2) with a0!=0"
+    },
+    "order_one_boundary_rank_one_invariant_composite_closure": {
+      "field_z_coefficient": "v_x*G_x+v_y*G_y=0",
+      "zero_binary_v": "F=ell^-3*q*G integrates to G*q^(m+1)=C*ell^(3*(m+1)), impossible since q mod ell!=0",
+      "nonzero_binary_v": "G is a linear-form power; ord_ell(G)=4 forces m=3, G=C*ell^4, v_x=0, and v_y!=0",
+      "terminal_conflict": "the ell^2 coefficient is v_y*h_y mod ell, nonzero because h mod ell=a0*y^5 with a0!=0",
+      "conclusion": "the invariant composite orientation is empty"
+    },
+    "order_one_boundary_rank_one_transverse_composite_closure": {
+      "top_form": "f=P(ell,y)+h(ell,z), with U=P_y and ord_ell(U)=6",
+      "active_direction_equation": "D_(v_ell,v_z)(h) is a homogeneous polynomial in ell alone",
+      "boundary_consequence": "Hess_(ell,z)(h) mod ell is invertible and kills (v_ell,v_z), so that active direction is zero",
+      "terminal_reduction": "after absorbing v_y, Q=q*partial_y gives U*q^(m+1)=C*ell^(3*(m+1)), impossible since q mod ell!=0",
+      "conclusion": "the transverse composite orientation is empty"
+    },
+    "order_one_boundary_rank_one_closure": {
+      "t_at_least_four": "ord_ell(V)=t-2>=2 puts both u and v in the one-dimensional kernel of Hess(f) mod ell; absorbing v into q gives the impossible pure-q logarithmic identity",
+      "t3_composite": "excluded by the invariant composite order-four/five gate",
+      "t3_primitive": {
+        "parity": "m is even",
+        "normal_form": "q=y^2+ell*z and F=c*q^(m/2)+O(ell^2)",
+        "scalar_obstruction": "[ell]Q(F)=c*(m/2)*y^m!=0"
+      },
+      "conclusion": "Jac(Q) boundary rank one is empty; the surviving generic sextuple system has boundary rank two"
+    },
+    "order_one_boundary_rank_two_root_gate": {
+      "kernel_generator_degree": "k<=2",
+      "boundary_gradient": "grad(f) mod ell=H*chi with deg(H)=m+1-k",
+      "normal_packet": "chi has zero tangent components, so f mod ell=0 and the normal component of Q lies in (ell^2)",
+      "root_count_formula": "r=1+k-s<=3, where s=deg gcd(chi_y,chi_z)",
+      "nonzero_boundary_profiles": [
+        "y^D",
+        "y^a*z^(D-a)",
+        "y^a*z^b*(y-z)^c with a+b+c=D"
+      ],
+      "profile_check_count": 15,
+      "scope": "valid for any homogeneous system with a linear rank-two boundary matrix and a polynomial gradient in its left kernel",
+      "conclusion": "the remaining rank-two sextuple branch is reduced to one normal packet and three root profiles"
+    },
+    "order_one_boundary_rank_two_one_root_gate": {
+      "normalized_top": "f=y^(m+2)+ell^2*g_m(y,z)+O(ell^3)",
+      "field_normal_form": "Q_ell=ell*lambda*y+alpha*ell^2, Q_y=beta*ell^2, and Q_z=q2+ell*r1+gamma*ell^2",
+      "order_two_hessian_coefficient": "2*y**m*(m + 1)*(m + 2)*(one_g*one_gzz - 2*one_gz**2)",
+      "polynomial_consequence": "g_m=C*y^m",
+      "forced_beta": "-2*one_C*one_lambda/(m + 2)",
+      "conclusion": "the arbitrary degree-m second boundary jet collapses to one monomial, with lambda and beta linked"
+    },
+    "order_one_boundary_rank_two_one_root_closure": {
+      "field_beta": "-2*one_C*one_lambda/(m + 2)",
+      "middle_dx_order_one_after_field": "-2*one_C*one_lambda*y**(m + 1)",
+      "conclusion": "nonzero because C*lambda!=0; the one-root profile is empty"
+    },
+    "order_one_boundary_rank_two_remaining_root_first_jets": {
+      "two_root_boundary": "f0=y^a*z^b",
+      "two_root_kernel_cases": [
+        "(k,s)=(1,0)",
+        "(k,s)=(2,1)"
+      ],
+      "two_root_normalized_f1": [
+        "0",
+        "kappa*y^(a-2)*z^(b+1) when a>=2",
+        "kappa*y^(a+1)*z^(b-2) when b>=2"
+      ],
+      "three_root_boundary": "f0=y^a*z^b*(y-z)^c",
+      "three_root_kernel_case": "(k,s)=(2,0)",
+      "three_root_normalized_f1": "kappa*y^a*z^b*(y-z)^(c-1)",
+      "conclusion": "boundary shears reduce both arbitrary degree-(D-1) first jets to finite monomial representatives"
+    },
+    "order_one_boundary_rank_two_remaining_root_schur_gate": {
+      "schur_identity": "2*f2=grad(f1)^T*Hess(f0)^(-1)*grad(f1)",
+      "two_root_outer_y_f2": "kappa^2*(a*b-a-4*b)/(2*a*b)*y^(a-4)*z^(b+2), requiring a>=4",
+      "two_root_outer_z_f2": "kappa^2*(a*b-4*a-b)/(2*a*b)*y^(a+2)*z^(b-4), requiring b>=4",
+      "three_root_denominator": "R2=a*b*(y-z)^2+a*c*z^2+b*c*y^2",
+      "three_root_numerator": "P2=a*b*(y-z)^2+a*(c-1)*z^2+b*(c-1)*y^2",
+      "three_root_schur_check_count": 27,
+      "three_root_conclusion": "polynomiality forces kappa=0 and f2=0",
+      "zero_first_jet_conclusion": "f1=f2=0 forces the first positive ell-jet to order eight and D>=8"
+    },
+    "conclusion": "orders three and two are empty; at j=1 boundary rank zero and rank one are empty; boundary rank two is reduced to one normal packet, two explicit outer second-jet families, and order-eight two-/three-root packets"
+  },
+  "lower_rank_sextuple_reduction": {
+    "hypothesis": "Delta=ell^6*R, R squarefree and coprime to ell, with generic rank(Hess(f) mod ell)<=1",
+    "rank_zero": "determinant order is at least seven",
+    "rank_one_invariant_factors": [
+      "(0,1,5)",
+      "(0,2,4)",
+      "(0,3,3)"
+    ],
+    "divisibility": "ell^4*R divides adj(Hess(f))*b_j",
+    "quotient_degree": "2-j",
+    "order_two_packet": "D=5, f=C*z*ell^4+h_5(ell,y), and B=partial_z",
+    "order_one_x2_jet": {
+      "form": "f=ell^2*(y^m+ell*(u*y^(m-1)+v*y^(m-2)*z)+ell^2*g2+...)",
+      "order_six_coefficient": "-(m + 1)*(2*g2zz*m*y**(2*m - 2) - jet_v**2*m*y**(3*m - 6) + 8*jet_v**2*y**(3*m - 6))"
+    },
+    "order_one_pure_power_jet": {
+      "form": "f=y^(m+2)+ell^3*(c*y^(m-1)+ell*(u*y^(m-2)+v*y^(m-3)*z)+ell^2*g2+...)",
+      "order_six_coefficient": "2*(m + 1)*(m + 2)*(3*g2zz*jet_c*y**(2*m - 1) - 8*jet_v**2*y**(3*m - 6))"
+    },
+    "conclusion": "reduction only; these residual packets remain open"
+  },
+  "normal_forms": {
+    "B_ell_nonzero": {
+      "form": "f=C*x^(m+2)+h(y,z)",
+      "hessian_determinant": "C*x**m*(m + 1)*(m + 2)*(hyy*hzz - hyz**2)",
+      "ell_multiplicity": "m",
+      "double_factor_consequence": "m=2, hence D=4",
+      "triple_factor_consequence": "m=3, hence D=5"
+    },
+    "B_ell_zero": {
+      "form": "f=C*z*x^(m+1)+h(x,y)",
+      "hessian_determinant": "-C**2*hyy*x**(2*m)*(m + 1)**2",
+      "ell_multiplicity": "at least 2*m",
+      "double_factor_consequence": "impossible for D>=4",
+      "triple_factor_consequence": "impossible for D>=4"
+    }
+  },
+  "split_top_controls": {
+    "D4": {
+      "form": "x**4 - 2*y**4 + y**3*z + 3*y**2*z**2 + 3*y*z**3 + 3*z**4",
+      "hessian_determinant": "-108*x**2*(17*y**4 + 52*y**3*z + 102*y**2*z**2 - 12*y*z**3 - 15*z**4)",
+      "binary_cofactor_squarefree": true,
+      "ell_multiplicity": 2
+    },
+    "D5": {
+      "form": "x**5 - 2*y**5 + y**4*z + 3*y**3*z**2 + 3*y**2*z**3 + 3*y*z**4 - 3*z**5",
+      "hessian_determinant": "-160*x**3*(32*y**6 + 99*y**5*z + 198*y**4*z**2 - 306*y**3*z**3 + 90*y**2*z**4 + 162*y*z**5 + 63*z**6)",
+      "binary_cofactor_squarefree": true,
+      "ell_multiplicity": 3
+    }
+  },
+  "conclusion": "for D>=5, Delta=ell^2*R with R squarefree and gcd(ell,R)=1 is incompatible with a four-variable constant-Hessian completion; Delta=ell^3*R is incompatible for every D>=5, because its sole D=5 split top has a nonzero terminal passive-Hessian channel; the generic rank-at-most-one boundary of Delta=ell^4*R is incompatible for every D>=5; its generic rank-two order-one system first reduces to the D=6 additive top, whose terminal passive-Hessian channel is nonzero; on Delta=ell^5*R, the generic corank-one boundary has j<=2, and both the order-two and order-one degree-seven packets have nonzero terminal passive-Hessian channels; the complementary lower-rank boundary has two jets whose order-five coefficient is incompatible with the order-one field equations; on Delta=ell^6*R, generic corank-one orders j=3 and j=2 are excluded, leaving the quadratic-vector j=1 system; Jacobian boundary rank zero is empty and rank one is empty, while rank two is reduced to a normal packet and two explicit outer second-jet families plus order-eight packets in the two- and three-root boundary profiles; the complementary lower-rank Hessian boundary is reduced to one degree-five tangent packet and two explicit order-six jets",
+  "proof_boundary": "the checker verifies the all-degree and weighted binary identities; UFD/DVR divisibility and maximal-passive-channel uniqueness are proved in HC4_DIRECT_DOUBLE_LINEAR_HESSIAN_GATE.md"
+}

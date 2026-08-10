@@ -40,6 +40,22 @@ The attempted Newton/boundary bridge is replayed by:
 .venv/bin/python plane-jc/cas/verify_f2_kummer_orbit_transfer.py
 .venv/bin/python plane-jc/cas/verify_f2_terminal_residue_cover.py
 .venv/bin/python plane-jc/cas/verify_f2_a6_simple_spectator_gluing.py
+.venv/bin/python plane-jc/cas/verify_f2_75_125_global_attachment.py
+.venv/bin/python plane-jc/cas/test_f2_75_125_global_attachment.py
+.venv/bin/python plane-jc/cas/verify_f2_75_125_carrier_wronskian.py
+.venv/bin/python plane-jc/cas/test_f2_75_125_carrier_wronskian.py
+.venv/bin/python plane-jc/cas/verify_f2_75_125_carrier_specializations.py
+.venv/bin/python plane-jc/cas/test_f2_75_125_carrier_specializations.py
+.venv/bin/python plane-jc/cas/compile_f2_75_125_nonlinear_forcing.py
+.venv/bin/python plane-jc/cas/test_f2_75_125_nonlinear_forcing.py
+.venv/bin/python plane-jc/cas/test_sparse_circuit_modp.py
+.venv/bin/python plane-jc/cas/probe_f2_75_125_nonlinear_modular.py
+.venv/bin/python plane-jc/cas/compile_f2_75_125_tangent_obstruction.py
+.venv/bin/python plane-jc/cas/compile_f2_75_125_formal_homotopy.py
+.venv/bin/python plane-jc/cas/compile_f2_75_125_formal_homotopy.py --regular-gauge --artifact artifacts/generated-results/jc2_f2_75_125_formal_homotopy_regular_gauge.json
+.venv/bin/python plane-jc/cas/compile_f2_75_125_formal_homotopy.py --prime 61 --rho 19 --y 19 --maximum-order 8 --artifact artifacts/generated-results/jc2_f2_75_125_formal_homotopy_mod61.json
+.venv/bin/python plane-jc/cas/verify_common_power_carrier_wronskian.py
+.venv/bin/python plane-jc/cas/test_common_power_carrier_wronskian.py
 ```
 
 The first command certifies that fixed geometric degree, trivial
@@ -65,6 +81,59 @@ do not determine toroidal scales and that even the strongest naive
 contact-to-ramification surrogate survives the finite-flat packet budget.
 The retained contact-only warning is
 [`../F2_BOUNDARY_HANDOFF.md`](../F2_BOUNDARY_HANDOFF.md).
+
+The final attachment compiler tracks the translated terminal normal to the
+original nonmonomial orders `(-25,5,12)`, constructs the six-blowup carrier,
+the six-blowup principal arms and the target extraction fan, orients all five
+endpoint/interior attachment slots, and emits the two live global
+normalization cases plus an audited rejection of the distinct-target double
+case by target-valuation uniqueness.  Its optional `--candidate FILE.json` mode
+rejects incomplete geometry and checks declared source class/unit/canonical,
+purity, spectator, and meridian data.  Passing remains a necessary-gate
+result, not a constructed Keller map; see
+[`../F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md`](../F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md).
+<!-- status-consumer: PF2GA1 cbca9b6c44a2bc7e -->
+The carrier-Wronskian commands continue from that skeleton at the generic
+carrier.  They remove the seven rational target shears before descent 36,
+solve the resulting low-degree Wronskian, extract target ray `(5,36)`, and
+reduce the two live cofactor strata to one rational squarefree point and two
+`Q(sqrt(5))` double-root points.  Their residue maps are respectively a
+cyclic cubic and the already certified terminal Belyi map; see
+[`../F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md`](../F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md).
+<!-- status-consumer: PF2CW1 a7774b0fa736b64c -->
+The carrier-specialization commands perform the next exact handoff.  They
+prove that the squarefree carrier is outside the descent-eight double-root
+component, and specialize every exposed zero-row, target, and Hermite linear
+map for the two double carriers over `QQ(rho)`.  The result pins the 53 raw
+successive forcing cokernels through layer `3`, the final `7+6` global
+cokernel, and the quartic compositum needed by the nonlinear forcing; see
+[`../F2_75_125_CARRIER_SPECIALIZATIONS.md`](../F2_75_125_CARRIER_SPECIALIZATIONS.md).
+<!-- status-consumer: PF2CS1 666da98d2d24669e -->
+<!-- status-consumer: PF2NF1 cfd1da5136c0b6d0 -->
+The nonlinear-forcing compiler presents all `366` geometric equations as an
+exact degree-at-most-seven arithmetic circuit.  The separate modular probe
+adds the `a!=0` localization equation over `F_31`, differentiates the circuit
+sparsely, and identifies a consistent `169`-coordinate spacing-four
+staircase tangent chart of rank `57` and affine dimension `112`.  Exact
+univariate interpolation proves that the pinned particular tangent line and
+six selected coordinate lines have unit raw common gcd.  After corrected
+descending-column back-substitution, their projected remainders vanish.
+The complete `112`-coordinate census and eight dense mixed lines are also
+identically zero in the `153`-dimensional full-Jacobian cokernel.  A
+fixed-Jacobian homotopy then lifts through order `16` over `F_31` and order
+`8` over `F_61`; a seven-coordinate regular gauge removes a repeated
+`(1-lambda)^(-2)` pivot mode.  Neither order-16 truncation specializes to a
+modular point at `lambda=1`.  This is a localized good-reduction and formal
+deformation experiment, not an F2 exclusion; see
+[`../F2_75_125_NONLINEAR_FORCING.md`](../F2_75_125_NONLINEAR_FORCING.md).
+The final command pair proves the reusable primitive common-power theorem.
+For arbitrary coprime top powers `(m,n)` and degree-`k` carrier polynomial it
+forces descent `k*(m+n-1)+1`, reduces the first Jacobian row to the fixed-`c`
+linear kernel `k*c*D'-(k-1)*c'*D-kappa*c=0`, and computes the complete
+three-point passport from the root-multiplicity partition.  It explicitly
+defers the resonant `k=2` and imprimitive-multiplicity loci; see
+[`../COMMON_POWER_CARRIER_WRONSKIAN.md`](../COMMON_POWER_CARRIER_WRONSKIAN.md).
+<!-- status-consumer: PCW1 94b10929118f151d -->
 The fourth command checks the forced chain, terminal normalization, and live
 character profile `P={1,4}`, `Q={0,1,3}` modulo five.  The coarse-bridge
 obstruction is in

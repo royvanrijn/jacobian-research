@@ -9,6 +9,12 @@ The problems below are useful filters for proposed extensions.  A new family
 is most valuable when it supplies one of the missing modules, obstruction
 classes, support reductions, or saturation certificates described here,
 rather than only adding another bounded coefficient calculation.
+The cubic, plane-JC, and restricted-Weyl targets share the checked
+[`G0`--`G4` support-saturation ledger](verified/SUPPORT_SATURATION_PATHS.json);
+their stage labels below are machine-validated and remain open until every
+upstream gate for the same module and ideal has passed.
+
+<!-- status-consumer: SST1 12c5cb15e8b6de26 -->
 
 ## 1. Resolved GMC(2) module and retained design lesson
 
@@ -83,6 +89,70 @@ support-saturation principle, it is enough to prove any one of:
 - \(\operatorname{grade}(I,\Omega_{B/A})\geq1\);
 - \(I\) contains an \(\Omega_{B/A}\)-regular element; or
 - the displayed presentation is already \(I\)-saturated.
+
+The extracted
+[`S_1` boundary theorem](verified/SUPPORT_SATURATION_PRINCIPLE.md#cubic-keller-normalization)
+packages the intended structural route. Once \(C/T=0\), the collision set
+has relative height two on the pure ramification support, so it is enough to
+prove that \(\Omega_{B/A}\) is \(S_1\), for example by a certified
+Cohen--Macaulay/perfect presentation. Normality of \(B\) and generic
+conormal generation do not imply this module condition.
+
+Operationally, Proposition 1.17 supplies `C0`; the active targets are `C1`
+(the support-hull/relative-height certificate) and `C2` (the `S_1` or
+associated-prime certificate).  `C3` is then a formal consequence of
+`SST1`, not an additional search.
+
+The first quartic nongauge layer is now completely stratified for all six
+singular squarefree symbols.  On deterministic quotient complements of
+dimensions $2,4,4,6,6,8$, strict Rees certificates for the cotangent
+presentation and the cokernel of $B\to\Omega^{\oplus3}$ prove flat base
+change of the cotangent module, its annihilator, and the intrinsic support
+module.  Consequently every geometric parameter fiber passes `C2` and
+fails `C1` by the same square-zero multiplicity-six `Ext^2` support-hull
+module.  The intrinsic Kähler different also has
+`dim_k J/nJ=6` on every geometric fiber, so it is not locally principal
+anywhere on these quartic families.  This does not settle the global gates:
+a Keller-compatible
+normalization must exclude these models, or higher formal terms must change
+the support defect.  Repeating quartic cotangent-saturation or specialization
+searches inside the same complements is therefore no longer an active route.
+
+Proposition 1.15a of the cubic frontend supplies the precise
+different/conductor bridge under a restrictive but natural hypothesis.  If
+the Kähler different is Cartier, $J=dB$, then
+
+\[
+ T^{[2]}/T\simeq (0:_{H^2_{\mathfrak n}(B)}d).
+\]
+
+Thus `C1` vanishes exactly when the local threefold normalization is
+Cohen--Macaulay; normality/`S_2` and a codimension-one Cartier different do
+not suffice.  The geometric programme must now prove this CM condition from
+minimal-boundary geometry, or lift the certified six-generator different
+through every compatible higher correction.  For the nodal symbol this
+persistence is now exact to all formal orders.  Recursive gauge elimination
+gives `h_nod+f(y,z)*eta`; a universal weight-one coefficient and monic graph
+specialization prove that `J/nJ` remains six-dimensional for every such
+formal tail.  The same multi-coefficient graph argument now closes all five
+remaining singular-squarefree symbols.  Thus the entire higher-order
+filtered Nakayama queue is closed.  Formal rigidity adds the smooth row, so
+every compatible formal tail with any squarefree cubic symbol has a
+six-generated non-Cartier intrinsic different.  A Cartier-different theorem
+from boundary-minimal geometry would therefore force the leading symbol
+into the double-line, triple-line, or zero rows, where generic étaleness is
+the next gate.  Otherwise the active problem remains global normality and
+Keller-open compatibility for the formal models.
+
+<!-- status-consumer: NSDP6 c5f68253995b7b6a -->
+
+<!-- status-consumer: NADPALL 60218641ccdf6fac -->
+
+<!-- status-consumer: SSADPALL 584a6e05374612ee -->
+
+<!-- status-consumer: KDCD3 c6e56b39bbb498d8 -->
+
+<!-- status-consumer: KDSQ6 cd423f625f1f3cd2 -->
 
 A useful extension of the cubic maps should preserve a primitive conormal
 generator in codimension one while making one of these depth or
@@ -180,6 +250,18 @@ over the central parameter, followed by a Hamiltonian connection.  Therefore:
    on the boundary; and
 6. use the normalization conductor to glue the localized solutions.
 
+The [restricted-Weyl specialization of the support-saturation theorem](verified/SUPPORT_SATURATION_PRINCIPLE.md#restricted-weyl-deformation)
+separates the inputs: localized solvability and conductor-compatible
+primitives first put the class in boundary local cohomology; \(S_1\) plus
+positive relative boundary height on \(E_k\), or on its Rees module, then
+kills it. A Fitting component contained in the boundary fails the height
+hypothesis and remains an exceptional component to analyze.
+
+This is the `W0`--`W5` path.  The currently certified all-pole obstruction
+stops at `W1` because it remains nonzero on the localized easy chart.
+Support saturation applies only to a future locally soluble incidence family
+that also passes Rees strictness `W2`, relative height `W3`, and `S_1` `W4`.
+
 This is organized by the
 [`gauge -> corrections -> defects` complex](extended-geometry/UNIFIED_DEFORMATION_COMPLEX.md).
 The relative obstruction module and its Fitting/Kuranishi loci retain the
@@ -245,6 +327,18 @@ The construction target is:
 This would place the plane-JC residue problem in the same
 support-saturation architecture as the degree-forty-two synchronization
 defect and the cubic cotangent defect.
+
+The [plane specialization of the general theorem](verified/SUPPORT_SATURATION_PRINCIPLE.md#plane-jc-conductor-residue)
+shows exactly what must follow construction: \(M\) must be \(S_1\) and
+\(Z\) must have positive relative height on its support. If the entire
+nonzero matching cokernel is already supported on \(Z\), support saturation
+cannot annihilate it; one must prove componentwise surjectivity or enlarge
+the family.
+
+The order is `P0` (construct the truncation-independent matching module),
+`P1` (construct and localize the residue), `P2` (positive relative height),
+`P3` (`S_1`/associated-prime exclusion), then conditional conclusion `P4`.
+No finite-support wording may skip `P1`'s divisorial-different check.
 
 The characteristic-divisible wild-boundary atlas now supplies an explicit
 candidate.  If

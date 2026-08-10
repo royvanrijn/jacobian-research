@@ -13,8 +13,26 @@
 > global realization has geometric degree at least six; two distinct packets
 > over the same target divisor force at least twelve.  The row is centered at
 > target infinity, so no affine-sheet `+1` applies, and purity forces a
-> separate affine ramification row.  What remains is global gluing and the
-> spectator ledger; the degree pair is not excluded.
+> separate affine ramification row.  The later carrier Wronskian calculation
+> classifies the spectator ledger exactly; lower-band realization, purity,
+> and global gluing remain open, so the degree pair is not excluded.
+
+The first global compiler is now implemented in
+[`F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md`](F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md).
+It tracks the translated terminal chart back to the nonmonomial original
+valuation `nu(x),nu(y_old),nu(x*y_old^5-c)=(-25,5,12)`.  Six blowups extract
+the carrier `(-5,1)` and six more at `v=xy_old^5=c` extract each principal
+arm.  The compiler completes these source class/unit/canonical skeletons,
+the four-blowup target ledger, and the five marked neighbors per terminal
+component.  The target valuation `(5,2)` is unique, so the two double-root
+arms necessarily share it and force degree at least twelve.  The subsequent
+[`carrier Wronskian classifier`](F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md)
+extracts `(5,36)`, forces `R=(v^2-3v+3)/25` in the squarefree case and
+`rho^2-3rho+1=0` in the double case, and identifies the carrier residue maps
+as a cyclic cubic and the terminal degree-six Belyi map.  The purity row,
+lower-band realization, and global meridians remain missing.
+<!-- status-consumer: PF2CW1 a7774b0fa736b64c -->
+<!-- status-consumer: PF2GA1 cbca9b6c44a2bc7e -->
 
 The three exact replays are:
 
@@ -246,27 +264,26 @@ from contact multiplicities.
 The F2 route is reopened, but only at the global level.  The immediate tasks
 are:
 
-1. attach the source ray `(12,-17)` and target ray `(5,2)` to the original
-   `A^2` and target completions;
+1. determine the first normal order and inertia of the two squarefree
+   spectator points `v=rho_1,rho_2` on the compiled carrier; both principal
+   proximity chains and the target `(5,2)` completion are now explicit;
 2. determine how the one-chain row sits with the simple `R` spectator orbits;
-3. on `Delta=0`, decide whether the two identical `A_6` residue covers land
-   on the same target boundary component or on distinct components;
-4. complete the source class-group/unit ledger and target canonical pullback;
-5. identify which descendants, if any, map to affine nonproperness curves;
-6. then run finite-normalization and global meridian filters.
+3. add any spectator/purity resolution branches to the compiled source
+   class-group/unit/canonical skeleton and submit the result to candidate mode;
+4. identify which descendants, if any, map to affine nonproperness curves;
+5. then run finite-normalization and global meridian filters.
 
-Thus the first global ledger has exactly one squarefree case with one
-principal packet, and two double-root attachment cases: two identical packets
-on one target component or on distinct target components.  The five local
-branch-cycle triples form one centralizer orbit and do not add further
-monodromy cases.
+Thus the live global ledger has one squarefree case with one principal packet
+and one double-root case with two identical packets over the unique target
+component `(5,2)`.  The five local branch-cycle triples form one centralizer
+orbit and do not add further monodromy cases.
 
 Several consequences can already be entered before that gluing:
 
 - the valuation equality over the extracted target divisor gives geometric
   degree `d>=6`;
-- two distinct double-root packets over that same divisor give `d>=12`, while
-  packets over distinct target divisors do not add;
+- the two distinct double-root packets necessarily lie over that same divisor
+  and give `d>=12`;
 - the target pole orders `(3,5)` center this row at infinity, so the affine
   companion theorem does not strengthen these to `7` or `13`;
 - the target toric nodes `h=0,infinity` have three distinct preimages in the

@@ -1,10 +1,21 @@
-# Affine-plane / Schubert reduction of the final HC4 bridge
+# Affine-plane and second-order flatness obstruction for HC4
 
 ## Status
 
-This note continues `HC4-MR` after the Frobenius closure of the regular `[4]`
-stratum.  It does **not** assume that the moving Jordan frame is affine
-parallel.
+This note continues `HC4-MR` on the regular `[4]` stratum.  It does **not**
+assume that the moving Jordan frame is affine parallel.
+
+The identifiers `HC4RSD77--80`, like their prerequisite `HC4RSD41--76` note
+chain, have not yet been promoted to `MATH_STATUS.json`.  The arguments and
+exact certificates below are therefore a proof package awaiting registry
+audit, not a change to the repository's authoritative theorem status.
+
+The middle Jordan distribution is an affine-plane foliation.  Its first-order
+Grassmann motion is not automatically Schubert: one extra scalar survives.
+However, the complete second-order flatness prolongation, together with the
+constant maximal-motion determinant from `HC4RSD72`, excludes that surviving
+Gauss-rank-two motion altogether.  The lower-motion split is then closed by a
+degree-one incidence argument for affine-hyperplane foliations.
 
 > **Theorem HC4RSD77 — affine-plane middle foliation.**  Let
 > \[
@@ -18,140 +29,411 @@ parallel.
 > \[
 > E_2=\ker N^2=\operatorname{im}N^2.
 > \]
-> Then `E_2` is autoparallel for the ambient flat affine connection:
+> Then `E_2` is autoparallel for the ambient flat affine connection.  Hence
+> every connected leaf of `E_2` is an open subset of an affine two-plane.
+
+> **Theorem HC4RSD78 — exact first-order Grassmann normal form.**  In an
+> `S`-adapted Jordan frame, the two transverse derivatives of the direction
+> plane `E2` have the form
 > \[
-> \nabla_XY\in E_2\qquad(X,Y\in E_2).
+> A_3=\begin{pmatrix}0&-(a+q)/2\\0&0\end{pmatrix},
+> \qquad
+> A_4=\begin{pmatrix}a&r\\0&q\end{pmatrix}.
 > \tag{0.1}
 > \]
-> Hence every connected leaf of `E_2` is an open subset of an affine
-> two-plane in `A^4`.
+> Thus first order alone does not force the rank-one Schubert condition
+> `q=0`.
 
-> **Theorem HC4RSD78 — Schubert dichotomy.**  The direction map of these
-> affine two-planes
-> \[
-> \sigma:B\dashrightarrow \operatorname{Gr}(2,4)
-> \]
-> from the two-dimensional leaf space has rank two in the genuinely moving
-> branch.  Its differential is of common-image/upper-triangular type.  Thus
-> its image is locally contained in one of the two standard two-dimensional
-> Schubert leaves of `Gr(2,4)`:
->
-> 1. all plane directions contain one fixed line; or
-> 2. all plane directions lie in one fixed three-space.
->
-> Case 1 gives a constant affine invariant and returns to the already-closed
-> fixed-direction branch.  In Case 2, on any affine Grassmann chart the
-> moving plane direction is represented by a row `(P,Q)` and the HC4
-> transverse determinant identity gives
-> \[
-> J(P,Q)=c\ne0
-> \tag{0.2}
-> \]
-> in local quotient coordinates.  Thus the only nonparallel middle-foliation
-> geometry is a **rational plane-Keller quotient**.
+> **Theorem HC4RSD79 — second-order maximal-motion obstruction.**  On the
+> smooth Gauss-rank-two locus of the linearly-independent regular `[4]`
+> packet, `HC4RSD72` makes the determinant of the selected
+> Gauss-kernel-line differential a nonzero constant.  The zero-curvature
+> prolongation of the full Hessian/Codazzi, Frobenius, quasi-translation, and
+> unit-volume system is then inconsistent.  Consequently the final regular
+> `[4]` packet has no Gauss-rank-two maximal-motion locus.
 
-The remaining globalization problem has therefore become very precise:
-prove that the rational pair `(P,Q)` supplied by Case 2 extends polynomially
-across the Grassmann-chart boundary, or show that failure of such extension
-forces Case 1.  No local differential twisting remains beyond this pole
-problem.
+> **Theorem HC4RSD80 — lower-motion hyperplane-pencil closure.**  In the
+> linearly-independent regular `[4]` packet, the projective source-kernel line
+> cannot have rank at most one.  Rank zero is the fixed-kernel branch.  In
+> rank one, flatness gives the exact split `pr=0`: the component `r=0` has a
+> constant middle plane, while `p=0` has an affine-hyperplane foliation whose
+> leaf hyperplanes form a pencil.  The pencil either gives a constant linear
+> invariant or forces the middle plane to be constant.  Both alternatives
+> return to the already closed linearly-dependent packet.
+
+Together `HC4RSD79--80` close the final linearly-independent regular `[4]`
+packet in the relative-nilpotent reduction.  Thus the complete `HC4-MR`
+branch ends in `HC2` or the exact `JC2` cotangent packet.  This is not by
+itself a proof of unrestricted `HC4` or `JC2`, because `HC4-MR` is one
+structural branch of the full problem.
 
 ## 1. Why `E_2` is affine
 
-Choose at a generic point an `S`-adapted Jordan frame
+Choose an `S`-adapted Jordan frame
 
 \[
 Ne_1=0,\quad Ne_2=e_1,\quad Ne_3=e_2,\quad Ne_4=e_3
 \]
 
-with anti-diagonal `S`.  The exact linear Codazzi system for both `S` and
-`T=SN`, together with Frobenius of `E_2=<e_1,e_2>`, forces
+with anti-diagonal `S`.  Let
 
 \[
-\Gamma^3_{i j}=\Gamma^4_{i j}=0
+\nabla_{e_i}e_j=\Gamma^k_{ij}e_k.
+\]
+
+The exact linear Codazzi system for both `S` and `T=SN`, together with
+Frobenius of `E_2=<e_1,e_2>`, forces
+
+\[
+\Gamma^3_{ij}=\Gamma^4_{ij}=0
 \qquad(i,j\in\{1,2\}).
 \tag{1.1}
 \]
 
-Equation (1.1) is tensorial as the vanishing of the affine second fundamental
-form of the leaf.  Hence (0.1) holds on the generic locus.  Integral leaves
-of an autoparallel distribution in affine space are affine subspaces.
+Equation (1.1) is the vanishing of the affine second fundamental form of each
+leaf.  Thus `E2` is autoparallel and its leaves are affine two-planes.
 
-The same first-order system also sharpens the previous twist count: the three
-entries that were individually allowed are not independent.  In fact
+The same system gives
 
 \[
 \Gamma^3_{4,1}=\Gamma^2_{3,1}.
 \tag{1.2}
 \]
 
-Thus there are only two independent projective kernel-motion modes before the
-Grassmann reduction.
+## 2. First-order Grassmann motion
 
-## 2. Grassmann tangent geometry
-
-For a two-plane `L` in a four-space,
+For `L=E2`,
 
 \[
 T_L\operatorname{Gr}(2,4)=\operatorname{Hom}(L,V/L).
 \]
 
-The HC4 Krylov calculation says that the two independent first derivatives of
-`L=E_2` have a common one-dimensional image (equivalently, after dualizing,
-a common one-dimensional kernel).  The rank-two integral manifolds of this
-rank-one tangent cone are exactly the classical alpha/beta Schubert planes:
-
-- planes containing a fixed line;
-- planes contained in a fixed three-space.
-
-This gives the two cases in HC4RSD78.
-
-## 3. Keller pair in the moving Schubert chart
-
-In the second Schubert case choose constant ambient coordinates so the fixed
-three-space is `W`, and choose an affine Grassmann chart.  The direction plane
-is represented by
+Put
 
 \[
-L(u)=\operatorname{graph} B(u),
+a=\Gamma^3_{4,1}=\Gamma^2_{3,1},\qquad
+r=\Gamma^3_{4,2},\qquad
+q=\Gamma^4_{4,2}.
+\tag{2.1}
 \]
 
-where only one row of the `2 x 2` matrix `B` moves.  Write that row as
+Reading every remaining coefficient from the exact `47`-rank linear system
+gives (0.1).  In particular, `q` is not forced to vanish.  For example,
+`a=q=1,r=0` gives
 
 \[
-(P(u_1,u_2),Q(u_1,u_2)).
+A_3=\begin{pmatrix}0&-1\\0&0\end{pmatrix},\qquad
+A_4=I_2.
+\tag{2.2}
 \]
 
-The transverse projective derivative computed in `HC4RSD72` has determinant a
-nonzero constant, while `HC4RSD74` kills its lower-left entry.  In these
-coordinates this derivative is exactly
+This is an exact formal first-order jet with rank-two projective motion, but
+it is not yet required to satisfy flatness at the next order.  Hence it is not
+a polynomial `HC4` counterexample.
+
+## 3. Flatness forces two non-Schubert signs
+
+Parameterize the `17`-dimensional first-order solution space and introduce all
+`68` directional derivatives of those parameters.  For the row convention
 
 \[
-D(P,Q).
+(\Gamma_i)_{jk}=\Gamma^k_{ij},
 \]
 
-Therefore
+the flatness equations are
 
 \[
-\det D(P,Q)=c\in K^*.
+e_i\Gamma_j-e_j\Gamma_i
++\Gamma_j\Gamma_i-\Gamma_i\Gamma_j
+-\sum_s(\Gamma^s_{ij}-\Gamma^s_{ji})\Gamma_s=0.
+\tag{3.1}
 \]
 
-So a nonparallel affine-plane foliation does not leave an arbitrary surface
-problem: it produces a plane Keller pair on every Grassmann chart.
-
-## 4. Exact remaining bridge
-
-The previous master theorem asked for an abstract `affine-or-Keller` bridge.
-HC4RSD77--78 identify it concretely:
+There are `96` scalar equations.  Eliminating the `68` derivative variables
+has constant linear rank `48` and leaves four quadratic compatibility
+equations, generated up to nonzero scalar multiples by
 
 \[
-\boxed{
-\text{parallel affine }2\text{-planes}
-\quad\text{or}\quad
-\text{a rational plane Keller pair from their direction map}.}
+a(p-q)=0,
+\tag{3.2}
 \]
 
-The only unresolved issue is **polynomialization across Schubert-chart
-boundaries**.  This is the global algebraic problem to attack next; trying to
-force the whole Jordan frame affine-parallel is unnecessarily strong and is
-formally false.
+\[
+4pa-3a^2-4aq+3q^2=0,
+\tag{3.3}
+\]
+
+where
+
+\[
+p=\Gamma^4_{3,3}.
+\]
+
+On the maximal-motion open `a!=0`, equations (3.2)--(3.3) give
+
+\[
+p=q,\qquad q^2=a^2.
+\tag{3.4}
+\]
+
+Thus flatness does not send the branch to the Schubert value `q=0`.  It forces
+the two non-Schubert signs `q=+a` and `q=-a`.
+
+## 4. The constant HC4 motion determinant eliminates both signs
+
+Let `theta^1,...,theta^4` be the dual moving coframe.  The HC4-selected
+Gauss-kernel line is represented by
+
+\[
+\ell=S e_1=\theta^4.
+\]
+
+Because the components of `S` are fixed in the adapted frame,
+
+\[
+\nabla_{e_i}\ell=-\sum_j\Gamma^4_{ij}\theta^j.
+\tag{4.1}
+\]
+
+On the transverse directions `(e3,e4)` and the projective target directions
+`(theta^3,theta^2)`, the first-order solution therefore gives
+
+\[
+D[\ell]=
+\begin{pmatrix}
+-p&-s\\0&-q
+\end{pmatrix},
+\qquad
+\det D[\ell]=pq,
+\tag{4.2}
+\]
+
+where `s=Gamma^4_{4,3}` is irrelevant to the determinant.  The maximal-motion
+identity of `HC4RSD72` identifies `pq`, up to the fixed nonzero factor of the
+chosen canonical frame, with the constant nonzero HC4 determinant.  The frame
+factor is constant: `S` has fixed anti-diagonal components and `det S` is a
+unit.  Moreover the residual gauge of an
+`S`-adapted regular-nilpotent frame is only a sign.  Indeed every centralizer
+element is
+
+\[
+G=c_0I+c_1N+c_2N^2+c_3N^3,
+\]
+
+and `S`-orthogonality gives `G^2=I`, hence `G=+I` or `G=-I` in characteristic
+zero.  Therefore
+
+\[
+pq\in K^*,\qquad e_i(pq)=0\quad(1\le i\le4).
+\tag{4.3}
+\]
+
+Add the four equations `d(pq)=0` before eliminating the derivative variables
+from (3.1).  The derivative rank becomes `50`, and one new compatibility
+generator is
+
+\[
+p(2pa-aq+3q^2)=0.
+\tag{4.4}
+\]
+
+On `a!=0`, equations (3.4) make `p=q!=0`.  Equation (4.4) gives
+
+\[
+a=-3q.
+\tag{4.5}
+\]
+
+Together with `q^2=a^2`, this gives
+
+\[
+8q^2=0,
+\]
+
+contradicting characteristic zero and `q!=0`.  Equivalently, the three
+polynomials (3.2), (3.3), and (4.4), saturated by `a`, have Gröbner basis
+`[1]`.  This proves `HC4RSD79`.
+
+## 5. Lower-motion closure
+
+The previously proposed Schubert split is not the correct route:
+
+1. first-order geometry allows both `q=0` and `q!=0`;
+2. flatness plus maximal motion forces `q=+/-a`, so `q=0` is impossible;
+3. constancy of the HC4 motion determinant `pq` eliminates both signs.
+
+Hence no rational plane-Keller quotient arises from a surviving
+Gauss-rank-two maximal-motion chart: that chart is empty.  The already closed
+fixed and linearly-dependent packets still end in `HC2` or the exact `JC2`
+cotangent packet.
+
+It remains to close projective source-kernel motion of rank at most one.  The
+exact projective derivative of the line `[e1]`, with columns indexed by
+`e1,...,e4` and rows by `e2,e3,e4`, is
+
+\[
+D[e_1]=
+\begin{pmatrix}
+0&0&a&b\\
+0&0&0&a\\
+0&0&0&0
+\end{pmatrix}.
+\tag{5.1}
+\]
+
+If its rank is zero, then `a=b=0`; flatness gives `q=0`, and `[e1]` is a
+constant affine line.  This is the fixed-kernel theorem `HC4RSD65`.
+
+Assume henceforth that its rank is one.  Then
+
+\[
+a=q=0,\qquad b\ne0.
+\tag{5.2}
+\]
+
+After adjoining `d(a)=d(q)=0`, the curvature compatibility ideal is generated
+by
+
+\[
+pr=0.
+\tag{5.3}
+\]
+
+Because the generic coordinate ring is a domain, (5.3) gives two components.
+
+### 5.1 The component `r=0`
+
+Under (5.2), the two transverse derivatives of `E2` are
+
+\[
+A_3=0,\qquad
+A_4=\begin{pmatrix}0&r\\0&0\end{pmatrix}.
+\tag{5.4}
+\]
+
+The derivatives along `E2` already preserve `E2` by `HC4RSD77`.  Thus `r=0`
+makes `E2` parallel in every ambient direction.  It is a constant two-plane,
+so the associated source-kernel field `e1` has two constant linear invariants.
+This is inside the linearly-dependent branch closed by `HC4RSD70`.
+
+### 5.2 The component `p=0`
+
+The exact affine second fundamental form of
+
+\[
+E_3=\ker N^3=\langle e_1,e_2,e_3\rangle
+\]
+
+along `E3` is
+
+\[
+\operatorname{II}_{E_3}=
+\begin{pmatrix}0&0&0\\0&0&0\\0&0&p\end{pmatrix}e_4.
+\tag{5.5}
+\]
+
+Hence `p=0` makes every generic `E3` leaf an open subset of an affine
+hyperplane.  We use the following elementary global lemma.
+
+> **Affine-hyperplane pencil lemma.**  Let a codimension-one algebraic
+> foliation of a dense open subset of `A4` have generic leaves which are open
+> subsets of affine hyperplanes.  Then the projective closures of the generic
+> leaves form a line in the dual projective space `(P4)*`.
+
+Indeed, the affine tangent hyperplane through a point is determined
+algebraically by the distribution, so it defines a rational leaf-hyperplane
+map
+
+\[
+h:\mathbb P^4\dashrightarrow C\subset (\mathbb P^4)^*.
+\]
+
+The image cannot be a point because one affine hyperplane cannot contain a
+dense open subset of `A4`; hence its closure `C` is an irreducible curve.  Let
+
+\[
+I_C=\{(x,H):x\in H,\ H\in C\}.
+\]
+
+The closure of the graph of `h` is a dimension-four irreducible subvariety of
+the irreducible dimension-four incidence variety `I_C`; hence it equals
+`I_C`.  The projection `I_C -> P4` is therefore birational.  On the other
+hand, its fiber over a general point `x` is the hyperplane section
+
+\[
+C\cap x^\perp,
+\]
+
+whose length is `deg C`.  Therefore `deg C=1`, proving the lemma.  This
+argument is unchanged after extending the constant field to its algebraic
+closure; the resulting line and its span descend because the foliation is
+defined over `K`.
+
+Apply the lemma to `E3`.  Write an affine hyperplane in the pencil as
+`H(t)` and let `lambda(t)` denote its linear direction conormal.  Either this
+direction is constant, or, after a rational parameter `t` on the dual line,
+
+\[
+\lambda(t)=\lambda_0+t\lambda_1.
+\tag{5.6}
+\]
+
+If the direction is constant, then `E3` is a constant three-plane direction,
+so `e1` has a constant linear invariant and `HC4RSD70` applies.
+
+Suppose the direction moves, so `lambda0,lambda1` are linearly independent.
+Equations (5.1)--(5.2) and the middle-plane
+matrices show that `[e1]` and `E2` are constant along every `E3` leaf and vary
+only transversely.  Choose a representative `v(t)` of `[e1]`.  Since `b!=0`,
+
+\[
+E_2(t)=\langle v(t),v'(t)\rangle.
+\tag{5.7}
+\]
+
+Both vectors lie in `E3(t)=ker lambda(t)`, so
+
+\[
+\lambda v=0,\qquad \lambda v'=0.
+\tag{5.8}
+\]
+
+Differentiate the first identity and use the second:
+
+\[
+0=(\lambda v)'=\lambda_1v+\lambda v'
+\quad\Longrightarrow\quad
+\lambda_1v=0.
+\]
+
+Equation (5.6) then also gives `lambda_0v=0`.  Hence `v(t)` takes values in a
+fixed space, and differentiating once more gives
+
+\[
+v(t),v'(t)\in
+W:=\ker\lambda_0\cap\ker\lambda_1.
+\]
+
+The fixed space `W` has dimension two, and `b!=0` makes `v,v'` independent.
+Thus `E2(t)=W` is constant, contradicting `r!=0`.  Therefore the component
+`p=0,r!=0` is empty.  This proves `HC4RSD80`.
+
+Combining rank zero, the `r=0` component, and the contradiction on
+`p=0,r!=0` closes every lower-motion boundary of the final regular `[4]`
+packet.
+
+## 6. Verification
+
+Run
+
+```bash
+.venv/bin/python scripts/verify_hc4_affine_plane_bridge.py
+.venv/bin/python scripts/verify_hc4_affine_plane_prolongation.py
+```
+
+The first checker proves `HC4RSD77--78`.  The second constructs all curvature
+equations, performs both derivative eliminations, verifies the residual frame
+gauge, checks the saturated unit ideal proving `HC4RSD79`, and certifies the
+complete local flag tensors and the split `pr=0` used in `HC4RSD80`.  The
+degree-one incidence argument in Section 5.2 is the global proof step and is
+not replaced by a bounded computation.

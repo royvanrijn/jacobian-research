@@ -1,0 +1,1112 @@
+{
+  "carrier_routing": {
+    "claim_boundary": "the existing endpoint reduction is a component presentation, not a family into which the squarefree carrier can be substituted",
+    "double_carrier": {
+      "R": "(w-rho)^2/(25*(1-rho)^2)",
+      "carrier_points": 2,
+      "descent_eight_component_membership": true,
+      "field": "K=QQ[rho]/(rho^2-3*rho+1)",
+      "localized_units": {
+        "rho_inverse": "3-rho",
+        "rho_minus_one_inverse": "rho-2"
+      }
+    },
+    "squarefree_carrier": {
+      "R": "(w^2-3*w+3)/25",
+      "descent_eight_component_membership": false,
+      "discriminant": "-3/625",
+      "routing": "branch before the movable-double-root specialization and compile the later first-defect strata"
+    }
+  },
+  "combined_residual_coordinate_count": 13,
+  "decision": {
+    "counterexample_obtained": false,
+    "double_branch_progress": "all currently exposed kernel/cokernel maps are now fixed over QQ(rho), including the 53-dimensional factor-quotient target, the full 347-dimensional coupled Laurent cokernel, and the final 7+6 coordinates",
+    "next_exact_operation": "use compile_f2_75_125_nonlinear_forcing.py to build the 294+53 coupled equations and final 13 functionals, then test the localized circuit ideal by good-reduction methods",
+    "squarefree_branch_progress": "proved that the rational carrier is outside the existing descent-eight component; it must be compiled from the later first-defect ledger rather than falsely specialized at w0",
+    "unit_ideal_obtained": false
+  },
+  "double_branch_coefficient_field": {
+    "carrier_discriminant_square_class": 5,
+    "carrier_polynomial": "rho^2-3*rho+1",
+    "compositum_degree": 4,
+    "descent_eight_discriminant_square_class": -3,
+    "descent_eight_polynomial": "27*y^2-9*y+1",
+    "geometric_branch_count": 4,
+    "linear_map_field": "QQ(rho); y enters only the nonlinear forcing/incidence rows",
+    "linearly_disjoint": true,
+    "primitive_element": "theta=rho+y",
+    "primitive_element_polynomial": "729*theta**4 - 4860*theta**3 + 10341*theta**2 - 7470*theta + 1756"
+  },
+  "reproduction_command": ".venv/bin/python plane-jc/cas/verify_f2_75_125_carrier_specializations.py",
+  "schema": "plane-jc.f2-75-125-carrier-specializations.v1",
+  "software": {
+    "sympy": "1.14.0"
+  },
+  "specialized_layer_zero_cokernel": {
+    "after_prior_control_and_fixed_endpoint_elimination": {
+      "matrix_digest_sha256": "8ac8021cb786d561eae585ff31c42d63bafabb7d8f2eca2fe4a877e10a2e25fa",
+      "matrix_shape": [
+        6,
+        34
+      ],
+      "rank": 6,
+      "remaining_layer_zero_coordinates": 6
+    },
+    "ambient": "H_red in K[w]_(<=33)",
+    "cokernel_basis_digest_sha256": "fcce076f5054ee5e4d57fa5ada3b904e1cd9c039c9bdc03d91575b57b066b842",
+    "cokernel_dimension": 14,
+    "complete_Hermite_map": {
+      "matrix_digest_sha256": "d71191fc9bd3538c329e2fdcec3e9525d2d3ecfdccb7e9e9fd9e0c7f87f21520",
+      "matrix_shape": [
+        14,
+        34
+      ],
+      "profile": "H'(0),H''(0); H(1)-H(0),H^(1..5)(1); H(rho)-H(0),H^(1..5)(rho)",
+      "rank": 14,
+      "same_row_space_as_cokernel": true
+    },
+    "image": "K*1 + w^3*(w-1)^6*(w-rho)^6*K[w]_(<=18)",
+    "image_matrix_digest_sha256": "8e2e6399b4f2362d86ddb6f19c306a4d78b8fb4c493709d0ebd18f3019babcc8",
+    "image_matrix_shape": [
+      34,
+      20
+    ],
+    "image_rank": 20
+  },
+  "specialized_target_cokernel": {
+    "after_prior_control_and_fixed_endpoint_elimination": {
+      "movable_rho_jets": 5,
+      "quotient_fitting_coordinates": 2,
+      "remaining_target_coordinates": 7
+    },
+    "ambient": "G_red in K[w]_(<=33)",
+    "complete_image": {
+      "cokernel_basis_digest_sha256": "e5e090364df552f3ed38ccaafc18cfd590ff523c560b8249f79ce285585f6917",
+      "cokernel_dimension": 14,
+      "formula": "D*N(K[w]_(<=19)) in K[w]_(<=33)",
+      "matrix_digest_sha256": "27331ea1d707c1ff5a41fe46869503b640f1e7489d5dd7c9a62356ffce51cda6",
+      "matrix_shape": [
+        34,
+        20
+      ],
+      "rank": 20
+    },
+    "local_jet_block": {
+      "contained_in_complete_cokernel": true,
+      "profile": "orders 0..1 at 0, 0..4 at 1, and 0..4 at rho",
+      "rank": 12
+    },
+    "local_modulus": "D=w^2*(w-1)^5*(w-rho)^5",
+    "quotient_operator": {
+      "cokernel_basis_digest_sha256": "27d8e7a0d9f6f5db5c0b34c9d0e0f95890f3aead015acdabca7ec42e7ec1d4a0",
+      "cokernel_dimension": 2,
+      "formula": "N(S)=5*w*E*S'+(11*E+22*w*E')*S, E=(w-1)*(w-rho)",
+      "matrix_digest_sha256": "c3b4ae77718fe47ee53fef7406272616f272d591629a9389a7a5d0567b2b955f",
+      "matrix_shape": [
+        22,
+        20
+      ],
+      "rank": 20
+    }
+  },
+  "specialized_zero_row_maps": {
+    "arbitrary_P_follow": "q_follow=-3*C0^2*p",
+    "coupled_descents": [
+      [
+        12,
+        35
+      ],
+      [
+        37,
+        37
+      ]
+    ],
+    "coupled_full_Laurent_forcing_cokernel_dimension": 347,
+    "coupled_quotient_cokernel_after_common_factor": 53,
+    "endpoint_disjoint_descents_1_through_11": {
+      "Q_kernel_dimension": 2,
+      "agreement_with_parametric_reducer": true,
+      "full_Laurent_forcing_cokernel_dimension": 219,
+      "rank": 134
+    },
+    "field": "QQ(rho)",
+    "operator": "the normalized form of T_delta(q)=5*C0*q'-(25-delta)*C0'*q",
+    "rows": [
+      {
+        "Laurent_layer": 39,
+        "P_band": 14,
+        "P_follow_dimension": 6,
+        "Q_band": 24,
+        "Q_kernel_dimension": 0,
+        "descent": 1,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "9ba7f381fa7f64d168dfe783e8c1a67f7fe8fb83b7f75bbbb7a1b7b39016fe68",
+        "full_Laurent_forcing_cokernel_dimension": 21,
+        "full_Laurent_matrix_digest_sha256": "79be97b358b2c850c132a77e3ce17edcf0b206a96fbde7eb031d49252b342a25",
+        "full_Laurent_matrix_shape": [
+          31,
+          10
+        ],
+        "full_Laurent_rank": 10,
+        "full_tangent_kernel_dimension": 6,
+        "kernel_basis_digest_sha256": "d6d5a009c475be12587ead527cd3e75a46615000a7a2676b02cb64865e201292",
+        "quotient_cokernel_basis_digest_sha256": "0d6ef191d3b862878c965739a19f85068720540b6ac7e4a2e47b27cac7320c72",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "92b65d2d5532e50fcea1a96868b3ec03f82fd7a633d7f2af249e756a8a07ee02",
+        "quotient_matrix_shape": [
+          12,
+          10
+        ],
+        "quotient_rank": 10
+      },
+      {
+        "Laurent_layer": 38,
+        "P_band": 13,
+        "P_follow_dimension": 6,
+        "Q_band": 23,
+        "Q_kernel_dimension": 0,
+        "descent": 2,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "896c08b4ea08ddf0ba71db9ba76dc4afe638f942005e032ffbeec58c84dc1cae",
+        "full_Laurent_forcing_cokernel_dimension": 22,
+        "full_Laurent_matrix_digest_sha256": "794bffea217fb38c1d6f94d9f7a7aaf8593c25d1f04206a5bab2ac136d9a047d",
+        "full_Laurent_matrix_shape": [
+          32,
+          10
+        ],
+        "full_Laurent_rank": 10,
+        "full_tangent_kernel_dimension": 6,
+        "kernel_basis_digest_sha256": "d6d5a009c475be12587ead527cd3e75a46615000a7a2676b02cb64865e201292",
+        "quotient_cokernel_basis_digest_sha256": "8a5cfde7cefc8a2cc5688d43bb8b2f7fa50515c96e3b697729b9684adc34ac43",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "d1a544f04f790fdaef1c0037501b3f7a9dd0f4804d1047a32fa646d062f7a82d",
+        "quotient_matrix_shape": [
+          12,
+          10
+        ],
+        "quotient_rank": 10
+      },
+      {
+        "Laurent_layer": 37,
+        "P_band": 12,
+        "P_follow_dimension": 7,
+        "Q_band": 22,
+        "Q_kernel_dimension": 0,
+        "descent": 3,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "00cc263e1f60ab01639729e33d74988477cca38552f009fd47df4a071f5da1cf",
+        "full_Laurent_forcing_cokernel_dimension": 21,
+        "full_Laurent_matrix_digest_sha256": "1e5b8e814d9841db95e69413e9a5ae68b505099fba19c0146f1366150bd545c6",
+        "full_Laurent_matrix_shape": [
+          32,
+          11
+        ],
+        "full_Laurent_rank": 11,
+        "full_tangent_kernel_dimension": 7,
+        "kernel_basis_digest_sha256": "6bbe15324af1c041f8ce7e140a546993aaacd0f9a5bae8873124832ffebabb6f",
+        "quotient_cokernel_basis_digest_sha256": "ff1e90b679a637c082fe3da9f9ec94de24c77bc9a99146fb2e9a2063dc8762e0",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "cc7096104c27ca836a6606b89e7762a19731829f5b03fbbae6b8e3df12ba33d7",
+        "quotient_matrix_shape": [
+          13,
+          11
+        ],
+        "quotient_rank": 11
+      },
+      {
+        "Laurent_layer": 36,
+        "P_band": 11,
+        "P_follow_dimension": 7,
+        "Q_band": 21,
+        "Q_kernel_dimension": 0,
+        "descent": 4,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "66fcfdc7c76ffe29631738aa1e332056979ccc820be263097b1e7bed43d04d23",
+        "full_Laurent_forcing_cokernel_dimension": 21,
+        "full_Laurent_matrix_digest_sha256": "f42e6c37e88445eda52d31eaac36e8a2c12e1dbaefbe94946c561eed8d5c00a0",
+        "full_Laurent_matrix_shape": [
+          32,
+          11
+        ],
+        "full_Laurent_rank": 11,
+        "full_tangent_kernel_dimension": 7,
+        "kernel_basis_digest_sha256": "6bbe15324af1c041f8ce7e140a546993aaacd0f9a5bae8873124832ffebabb6f",
+        "quotient_cokernel_basis_digest_sha256": "cb76d6e7752cbd6636f3ea5fed29aa42fb78210c0d0f6e36fcc39fa78311d707",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "97eaa1a7765587a84cb55596147d86604368823781076da2048c39462b7ab5cd",
+        "quotient_matrix_shape": [
+          13,
+          11
+        ],
+        "quotient_rank": 11
+      },
+      {
+        "Laurent_layer": 35,
+        "P_band": 10,
+        "P_follow_dimension": 9,
+        "Q_band": 20,
+        "Q_kernel_dimension": 1,
+        "descent": 5,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "5b95525769a6a9ca19738184656ee4688c259601ad9c061146fd77e1abe4277c",
+        "full_Laurent_forcing_cokernel_dimension": 20,
+        "full_Laurent_matrix_digest_sha256": "964c0ed1390fc7e3a643ab5f4cfbb26fc752d7b09c77afffeaeec45d0d8adaf6",
+        "full_Laurent_matrix_shape": [
+          32,
+          13
+        ],
+        "full_Laurent_rank": 12,
+        "full_tangent_kernel_dimension": 10,
+        "kernel_basis_digest_sha256": "5018280c925422672146847f306895f437ab7da73356d2f348a531006ec79e2b",
+        "quotient_cokernel_basis_digest_sha256": "57ba9fff840b2b366410d89cb0583e092600a52087ce7a47d0273f150616cd7f",
+        "quotient_forcing_cokernel_dimension": 3,
+        "quotient_matrix_digest_sha256": "89a603e79250462d3c4b5e9e54d8d4c04b1c8b65e49f9803495d3340917a65c1",
+        "quotient_matrix_shape": [
+          15,
+          13
+        ],
+        "quotient_rank": 12
+      },
+      {
+        "Laurent_layer": 34,
+        "P_band": 9,
+        "P_follow_dimension": 9,
+        "Q_band": 19,
+        "Q_kernel_dimension": 0,
+        "descent": 6,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "c03ef1ed2d66cdea25bd160dd234581880b313e65e002f6927e20da4d68dbdbf",
+        "full_Laurent_forcing_cokernel_dimension": 20,
+        "full_Laurent_matrix_digest_sha256": "f98f838fc23758f73f6e6dae470ff32315ee60334d52c21859dc09921784cec0",
+        "full_Laurent_matrix_shape": [
+          33,
+          13
+        ],
+        "full_Laurent_rank": 13,
+        "full_tangent_kernel_dimension": 9,
+        "kernel_basis_digest_sha256": "c3251ab65e321d1c2dcd2e583434d2afe4357250f3b8f66507500ccf9ef196f7",
+        "quotient_cokernel_basis_digest_sha256": "23d000175b12f61526b4967e8167dd489aaf13e2381112456253228307b355fe",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "e0d5e6971e865f3f4b65048849500ac568fb666028358dcaf3f51d8a8266956d",
+        "quotient_matrix_shape": [
+          15,
+          13
+        ],
+        "quotient_rank": 13
+      },
+      {
+        "Laurent_layer": 33,
+        "P_band": 8,
+        "P_follow_dimension": 8,
+        "Q_band": 18,
+        "Q_kernel_dimension": 0,
+        "descent": 7,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "f119a7b294bbdf3508fd5046d9032569a46c8c29a00a9c4cf116be58c2b0672a",
+        "full_Laurent_forcing_cokernel_dimension": 20,
+        "full_Laurent_matrix_digest_sha256": "1513b7946a577d0877263d2408b74709b6fb3abc29ae90516000be63483653bb",
+        "full_Laurent_matrix_shape": [
+          32,
+          12
+        ],
+        "full_Laurent_rank": 12,
+        "full_tangent_kernel_dimension": 8,
+        "kernel_basis_digest_sha256": "d811362091c9f39b9eeff14318d97095412a2ba374c10d9a5270bca9ab0f6f44",
+        "quotient_cokernel_basis_digest_sha256": "ac88bdb268d4e35c2421a522684eeea67accde22fc2d23f935a3204fdbf63957",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "6ed6d1c7f29df031121bbeb82a478b6fdd0824bada04956061889228d1a08cdb",
+        "quotient_matrix_shape": [
+          14,
+          12
+        ],
+        "quotient_rank": 12
+      },
+      {
+        "Laurent_layer": 32,
+        "P_band": 7,
+        "P_follow_dimension": 9,
+        "Q_band": 17,
+        "Q_kernel_dimension": 0,
+        "descent": 8,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "2ddb0de6efc2f264f141ed4cb01636796fee89017cd7ff7076589da8507e7849",
+        "full_Laurent_forcing_cokernel_dimension": 19,
+        "full_Laurent_matrix_digest_sha256": "4c0f7ca2e3d6aae031bb9713dabb71e272e924c982c191e1ba878e77d8a29b09",
+        "full_Laurent_matrix_shape": [
+          32,
+          13
+        ],
+        "full_Laurent_rank": 13,
+        "full_tangent_kernel_dimension": 9,
+        "kernel_basis_digest_sha256": "c3251ab65e321d1c2dcd2e583434d2afe4357250f3b8f66507500ccf9ef196f7",
+        "quotient_cokernel_basis_digest_sha256": "84db5354bdbb3090becf87089e5d6071b4746e509fa65bd1a6364bbe16bd96f8",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "4df815bc99cb299baf87de7411a29ad3bc4bf0e0b632bfdaabc429cde894ab87",
+        "quotient_matrix_shape": [
+          15,
+          13
+        ],
+        "quotient_rank": 13
+      },
+      {
+        "Laurent_layer": 31,
+        "P_band": 6,
+        "P_follow_dimension": 9,
+        "Q_band": 16,
+        "Q_kernel_dimension": 0,
+        "descent": 9,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "ad28a968ee56fd86ea0bb75ea022a1ddb4429f0c89cdfbdbae7f54f86cc54fac",
+        "full_Laurent_forcing_cokernel_dimension": 19,
+        "full_Laurent_matrix_digest_sha256": "a79c9417af55ab8f4f570fb4a920bf2be5a693707b7f507954378a60287d2ef9",
+        "full_Laurent_matrix_shape": [
+          32,
+          13
+        ],
+        "full_Laurent_rank": 13,
+        "full_tangent_kernel_dimension": 9,
+        "kernel_basis_digest_sha256": "c3251ab65e321d1c2dcd2e583434d2afe4357250f3b8f66507500ccf9ef196f7",
+        "quotient_cokernel_basis_digest_sha256": "1dc66affdd6ec21d0d9c16f9a6e03b18b20beb414ecfc1c573d02d554245c888",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "a97b49428a2c24927b9ca34692f1bba4d774a4dfe1ac26b8939ae6122be0a35d",
+        "quotient_matrix_shape": [
+          15,
+          13
+        ],
+        "quotient_rank": 13
+      },
+      {
+        "Laurent_layer": 30,
+        "P_band": 5,
+        "P_follow_dimension": 11,
+        "Q_band": 15,
+        "Q_kernel_dimension": 1,
+        "descent": 10,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "920b30df2bfc1fa6a416a9644629bd2a0081087324d11cacf8698b9d40021fc7",
+        "full_Laurent_forcing_cokernel_dimension": 18,
+        "full_Laurent_matrix_digest_sha256": "1201d0cc60e7ab5b89318e3670470c06dd38746a118a39727b57e43cba565a67",
+        "full_Laurent_matrix_shape": [
+          32,
+          15
+        ],
+        "full_Laurent_rank": 14,
+        "full_tangent_kernel_dimension": 12,
+        "kernel_basis_digest_sha256": "4c41be3cd4b783683f8e3fe2a65a8d5a15c156d92e160f4294a3081bd9093117",
+        "quotient_cokernel_basis_digest_sha256": "1fed99684ac13fa6d34e9383031de05e7293f7f169d725111bd2b559dbc19b56",
+        "quotient_forcing_cokernel_dimension": 3,
+        "quotient_matrix_digest_sha256": "e646ef555164a751f011219a6ce0ed18a4181acb37e73d18c9f9b476f3146fb7",
+        "quotient_matrix_shape": [
+          17,
+          15
+        ],
+        "quotient_rank": 14
+      },
+      {
+        "Laurent_layer": 29,
+        "P_band": 4,
+        "P_follow_dimension": 11,
+        "Q_band": 14,
+        "Q_kernel_dimension": 0,
+        "descent": 11,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "b00100f55ece2c584e640cce62801e8f5dff42556379ce696e141a56b6a4cd25",
+        "full_Laurent_forcing_cokernel_dimension": 18,
+        "full_Laurent_matrix_digest_sha256": "a10d4050ba30d32dd1ca593fb11717a0d68af91d45ee1445778ace7d15b4a5cb",
+        "full_Laurent_matrix_shape": [
+          33,
+          15
+        ],
+        "full_Laurent_rank": 15,
+        "full_tangent_kernel_dimension": 11,
+        "kernel_basis_digest_sha256": "d1a846cb1880165648808e6863670ce18623bfd19b9df7457d85b61609d785c1",
+        "quotient_cokernel_basis_digest_sha256": "e8c6e113a0e213e5e58bc3827005910fb3cf955295569c60dc530093e1396996",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "db24376acf0cc843643203e3d40bc4069687aad1301e8054f045f03a896b7283",
+        "quotient_matrix_shape": [
+          17,
+          15
+        ],
+        "quotient_rank": 15
+      },
+      {
+        "Laurent_layer": 28,
+        "P_band": 3,
+        "P_follow_dimension": 12,
+        "Q_band": 13,
+        "Q_kernel_dimension": 0,
+        "descent": 12,
+        "endpoint_fixed_Q_coordinate": true,
+        "full_Laurent_cokernel_basis_digest_sha256": "8d189e8b14f218dcd6e8ccf88645168a73180573b00c3afa0964497110e94f74",
+        "full_Laurent_forcing_cokernel_dimension": 18,
+        "full_Laurent_matrix_digest_sha256": "b8dcec271baf3c56142852eae0c6321d51e388e5ba230416e0212e8e4d016791",
+        "full_Laurent_matrix_shape": [
+          33,
+          15
+        ],
+        "full_Laurent_rank": 15,
+        "full_tangent_kernel_dimension": 12,
+        "kernel_basis_digest_sha256": "b8a26c1977d7ad24473b9df9116f3b2d92bb012b2d7cb2360c84154d8b6cf96e",
+        "quotient_cokernel_basis_digest_sha256": "edc27329ea47c1cf35a19bae3f387522dfba570cbb788666751fb63f8e950999",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "22142be0dc7f056c11fa9ce44a6e6788b48983fced3efd7d0fcf069177822b21",
+        "quotient_matrix_shape": [
+          18,
+          16
+        ],
+        "quotient_rank": 16
+      },
+      {
+        "Laurent_layer": 27,
+        "P_band": 2,
+        "P_follow_dimension": 11,
+        "Q_band": 12,
+        "Q_kernel_dimension": 0,
+        "descent": 13,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "bfe0cb75b909184fa8280f3810c994fb0981a759b264ed02fb6243d92180a1b9",
+        "full_Laurent_forcing_cokernel_dimension": 17,
+        "full_Laurent_matrix_digest_sha256": "356acacb0f559262b367383a171258d7fa465a47bc48a6d2a1b2e1cdbc159300",
+        "full_Laurent_matrix_shape": [
+          32,
+          15
+        ],
+        "full_Laurent_rank": 15,
+        "full_tangent_kernel_dimension": 11,
+        "kernel_basis_digest_sha256": "d1a846cb1880165648808e6863670ce18623bfd19b9df7457d85b61609d785c1",
+        "quotient_cokernel_basis_digest_sha256": "2376aec15dbdf9fdd42431b86904840404e7bb451c090b1cbf547a29cec242fe",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "584deceab722d212cf2af16efa4c1c9567bbc578e852a16f4b950c0e5ca8398a",
+        "quotient_matrix_shape": [
+          17,
+          15
+        ],
+        "quotient_rank": 15
+      },
+      {
+        "Laurent_layer": 26,
+        "P_band": 1,
+        "P_follow_dimension": 11,
+        "Q_band": 11,
+        "Q_kernel_dimension": 0,
+        "descent": 14,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "82385b3fda5281b048a8c76fbcba339a7721eaba707a1a4ce4145ab18e17f5b0",
+        "full_Laurent_forcing_cokernel_dimension": 17,
+        "full_Laurent_matrix_digest_sha256": "dc579a0a3491d6b79a818c1a58322d5eb88550fdc12ccd089db6fdf2c28f29fd",
+        "full_Laurent_matrix_shape": [
+          32,
+          15
+        ],
+        "full_Laurent_rank": 15,
+        "full_tangent_kernel_dimension": 11,
+        "kernel_basis_digest_sha256": "d1a846cb1880165648808e6863670ce18623bfd19b9df7457d85b61609d785c1",
+        "quotient_cokernel_basis_digest_sha256": "e653aaf3e37c31f9284c140e7b791000b13a46111ab1920f484b33db60c5989b",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "e480387bf1891e6f8d2e900d269b178bf1c7e3b685685bd2f32c5f110ee0826d",
+        "quotient_matrix_shape": [
+          17,
+          15
+        ],
+        "quotient_rank": 15
+      },
+      {
+        "Laurent_layer": 25,
+        "P_band": 0,
+        "P_follow_dimension": 13,
+        "Q_band": 10,
+        "Q_kernel_dimension": 1,
+        "descent": 15,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "845e715658d29a98779dfce301c178399fe4d183157b4712dd08974cc94166dc",
+        "full_Laurent_forcing_cokernel_dimension": 16,
+        "full_Laurent_matrix_digest_sha256": "c5e656de421bd94f6a897551479abd713ebc77870678dce4a8c58d864673594b",
+        "full_Laurent_matrix_shape": [
+          32,
+          17
+        ],
+        "full_Laurent_rank": 16,
+        "full_tangent_kernel_dimension": 14,
+        "kernel_basis_digest_sha256": "0f071d1f8b42fb64d781e2aa7da0f764ff7ee92c80dcd94ac97d3253389b1ddd",
+        "quotient_cokernel_basis_digest_sha256": "b07e708293a8b0fe6cdfb69f9008cb046ba68e88b85b9ab874eb17c8edd3a308",
+        "quotient_forcing_cokernel_dimension": 3,
+        "quotient_matrix_digest_sha256": "92ff696f0d7f86fe73fc015a94272d67dd48abf3e48cdb0634cb1ede8a8a2c0e",
+        "quotient_matrix_shape": [
+          19,
+          17
+        ],
+        "quotient_rank": 16
+      },
+      {
+        "Laurent_layer": 24,
+        "P_band": -1,
+        "P_follow_dimension": 13,
+        "Q_band": 9,
+        "Q_kernel_dimension": 0,
+        "descent": 16,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "401d9dd3b2ffdd21bd0f8bfdb7ff69df90774f5eec46850e8a978cc6e829256c",
+        "full_Laurent_forcing_cokernel_dimension": 16,
+        "full_Laurent_matrix_digest_sha256": "5112052281ae05d3dc63d5711a48883e07eedd7c812966db5dac39fd4fde021d",
+        "full_Laurent_matrix_shape": [
+          33,
+          17
+        ],
+        "full_Laurent_rank": 17,
+        "full_tangent_kernel_dimension": 13,
+        "kernel_basis_digest_sha256": "3c0d7bce8d0b3f0f8310a98d259b8d909cb8fb29d06fc8f915c8754cc69fcbd2",
+        "quotient_cokernel_basis_digest_sha256": "50509928d9bc27ec7d94ce43909b0d1e9d6403fcb57fe8bbb25222dfddf7ec8c",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "59dccea4599543b896eee1a49838982a71d1036e8000e79bc2bfd1033789cd9c",
+        "quotient_matrix_shape": [
+          19,
+          17
+        ],
+        "quotient_rank": 17
+      },
+      {
+        "Laurent_layer": 23,
+        "P_band": -2,
+        "P_follow_dimension": 13,
+        "Q_band": 8,
+        "Q_kernel_dimension": 0,
+        "descent": 17,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "1b5a9d5efd6f8489ee15cb6a1e53c82ab2801e1f9e2276e5842f5f6988b33650",
+        "full_Laurent_forcing_cokernel_dimension": 15,
+        "full_Laurent_matrix_digest_sha256": "04069d29c38f36db9abd566cfd43723386b5ae16df9c625290769a1d47338613",
+        "full_Laurent_matrix_shape": [
+          33,
+          18
+        ],
+        "full_Laurent_rank": 18,
+        "full_tangent_kernel_dimension": 13,
+        "kernel_basis_digest_sha256": "f785dde87b6316cb8681ecd52bc857207237c0e6479c56a21c9c4f5a7468b0f4",
+        "quotient_cokernel_basis_digest_sha256": "1b3b3e2100940ceabe5ad461d753846e5d4dcd7305e1b08f0b81653db61d2187",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "2ac565e4a556b63b617d8890cbab523ee8d694f2c20a7120c86a2ede6e25e3df",
+        "quotient_matrix_shape": [
+          20,
+          18
+        ],
+        "quotient_rank": 18
+      },
+      {
+        "Laurent_layer": 22,
+        "P_band": -3,
+        "P_follow_dimension": 13,
+        "Q_band": 7,
+        "Q_kernel_dimension": 0,
+        "descent": 18,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "5701a231f937c4333573eda1b416800abd3edd34375a5a92052f239189ae9403",
+        "full_Laurent_forcing_cokernel_dimension": 15,
+        "full_Laurent_matrix_digest_sha256": "5c0aaa1036417b82e122294d1cdb4d402d48cc7104d8580e0cbf03b61c7ff8ad",
+        "full_Laurent_matrix_shape": [
+          33,
+          18
+        ],
+        "full_Laurent_rank": 18,
+        "full_tangent_kernel_dimension": 13,
+        "kernel_basis_digest_sha256": "f785dde87b6316cb8681ecd52bc857207237c0e6479c56a21c9c4f5a7468b0f4",
+        "quotient_cokernel_basis_digest_sha256": "48fd4838cccbcda1fb5ed8d621727fe58ab309e34cb71e1487fa01075e64b86f",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "6d08df9370e41960a767a0020f38a49e32d1990c655ee05082fe5ed1fbed37d4",
+        "quotient_matrix_shape": [
+          20,
+          18
+        ],
+        "quotient_rank": 18
+      },
+      {
+        "Laurent_layer": 21,
+        "P_band": -4,
+        "P_follow_dimension": 12,
+        "Q_band": 6,
+        "Q_kernel_dimension": 0,
+        "descent": 19,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "da3c6733195d74832b11fe7e608aa5983fbb8ba5a8908dbf6a80632433d66009",
+        "full_Laurent_forcing_cokernel_dimension": 15,
+        "full_Laurent_matrix_digest_sha256": "4a364fd7020602f6e96e461081aa7d45bdceb56145b8bb3aae3505dcb14c9515",
+        "full_Laurent_matrix_shape": [
+          32,
+          17
+        ],
+        "full_Laurent_rank": 17,
+        "full_tangent_kernel_dimension": 12,
+        "kernel_basis_digest_sha256": "3c0d7bce8d0b3f0f8310a98d259b8d909cb8fb29d06fc8f915c8754cc69fcbd2",
+        "quotient_cokernel_basis_digest_sha256": "3c175e961fa977462e6e5b8a5becbe16ee55198864b28858f264b6d282d613e6",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "1ca05694a9e0c57808c73daa26a136ea3d86a4df64188a74d4fc8c3aa70fe95a",
+        "quotient_matrix_shape": [
+          19,
+          17
+        ],
+        "quotient_rank": 17
+      },
+      {
+        "Laurent_layer": 20,
+        "P_band": -5,
+        "P_follow_dimension": 12,
+        "Q_band": 5,
+        "Q_kernel_dimension": 1,
+        "descent": 20,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "a8577102b20ddac6bef56dc1ae65d68ba64f8be7dae9a8e6f4deadb4feee2280",
+        "full_Laurent_forcing_cokernel_dimension": 14,
+        "full_Laurent_matrix_digest_sha256": "2e3a999769e8cd9d1cae99f5bb6287d9b250027704e711a4c9bb9861ca2958d1",
+        "full_Laurent_matrix_shape": [
+          32,
+          19
+        ],
+        "full_Laurent_rank": 18,
+        "full_tangent_kernel_dimension": 13,
+        "kernel_basis_digest_sha256": "7c950ada87f2fade59797f54e8c194b69f4871f666d54eb3a0ef2c15af9098d9",
+        "quotient_cokernel_basis_digest_sha256": "c7232e9fb114159571c27cdae8d04b4977ea55d926427400666f963dfe637a80",
+        "quotient_forcing_cokernel_dimension": 3,
+        "quotient_matrix_digest_sha256": "3272c3f3055eb6e81e958ded9a1367cbbcad1fdc4dd7cf768d1abaa0439f844d",
+        "quotient_matrix_shape": [
+          21,
+          19
+        ],
+        "quotient_rank": 18
+      },
+      {
+        "Laurent_layer": 19,
+        "P_band": -6,
+        "P_follow_dimension": 12,
+        "Q_band": 4,
+        "Q_kernel_dimension": 0,
+        "descent": 21,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "b433f012b33375993d1693cc7e6fda4482f8bf7724112d7620d500dc7fcbf17b",
+        "full_Laurent_forcing_cokernel_dimension": 14,
+        "full_Laurent_matrix_digest_sha256": "292cf7efa6d2d680062ee2088999ccd5ced958ef072462f8ed5982348c3ee355",
+        "full_Laurent_matrix_shape": [
+          33,
+          19
+        ],
+        "full_Laurent_rank": 19,
+        "full_tangent_kernel_dimension": 12,
+        "kernel_basis_digest_sha256": "f2767c607ecb12f30c3ac2c4ef210efa2e8d5cff1594a3c3ed8ee5441133a157",
+        "quotient_cokernel_basis_digest_sha256": "1d681918cf82d9cbe5c587de3707390e81809eb6adf5dbf2eb7878d4b3e831ef",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "6facfa7b6bad746d0e08da86acecb1aca31abc1958d2978efef990e56738aaba",
+        "quotient_matrix_shape": [
+          21,
+          19
+        ],
+        "quotient_rank": 19
+      },
+      {
+        "Laurent_layer": 18,
+        "P_band": -7,
+        "P_follow_dimension": 12,
+        "Q_band": 3,
+        "Q_kernel_dimension": 0,
+        "descent": 22,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "7b4217096bee649a9e4ab248a87fa3906047ef704646c102975a5daf4d0d8e1d",
+        "full_Laurent_forcing_cokernel_dimension": 13,
+        "full_Laurent_matrix_digest_sha256": "920f9ce719976057e2023951c5699465a2c7d934bdf67741225f99ddb29fcf62",
+        "full_Laurent_matrix_shape": [
+          33,
+          20
+        ],
+        "full_Laurent_rank": 20,
+        "full_tangent_kernel_dimension": 12,
+        "kernel_basis_digest_sha256": "15a1deb07f4b9ab7ea2d13d024b3ead08fd6463259af02dd3e775591f0126a11",
+        "quotient_cokernel_basis_digest_sha256": "4ef5945702015ec4081f08ec629d685f9524beeb7d571924b39e98ca89f3a170",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "3904311daa667b5dfe53c34f65d632eefeb1f083ef7c2d85829402d735edbd40",
+        "quotient_matrix_shape": [
+          22,
+          20
+        ],
+        "quotient_rank": 20
+      },
+      {
+        "Laurent_layer": 17,
+        "P_band": -8,
+        "P_follow_dimension": 12,
+        "Q_band": 2,
+        "Q_kernel_dimension": 0,
+        "descent": 23,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "afb009f678c063e674e7ae796a827f30279992b3464a0473f8ea50e75afb2dd5",
+        "full_Laurent_forcing_cokernel_dimension": 13,
+        "full_Laurent_matrix_digest_sha256": "e1d5168094d44da8f705f57d99d772d6f38fb6d7813463007c55256a0fc43954",
+        "full_Laurent_matrix_shape": [
+          33,
+          20
+        ],
+        "full_Laurent_rank": 20,
+        "full_tangent_kernel_dimension": 12,
+        "kernel_basis_digest_sha256": "15a1deb07f4b9ab7ea2d13d024b3ead08fd6463259af02dd3e775591f0126a11",
+        "quotient_cokernel_basis_digest_sha256": "2ec61b4aea90c094d2d0fcaf232425eebb0b6b07a6a8695dbd8546001dfbcc2f",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "cb887b536208aee6b5ec8ae8c00fcf25dbc721937be60aaae30c42857fa67dda",
+        "quotient_matrix_shape": [
+          22,
+          20
+        ],
+        "quotient_rank": 20
+      },
+      {
+        "Laurent_layer": 16,
+        "P_band": -9,
+        "P_follow_dimension": 12,
+        "Q_band": 1,
+        "Q_kernel_dimension": 0,
+        "descent": 24,
+        "endpoint_fixed_Q_coordinate": true,
+        "full_Laurent_cokernel_basis_digest_sha256": "5e79b821ea383ef83a83326d071ba38dc7ffac06ed35d992d5cbc21b589364e5",
+        "full_Laurent_forcing_cokernel_dimension": 13,
+        "full_Laurent_matrix_digest_sha256": "431dcd33d8fc67f7e639c7332f018a7be41b718fd550b484e8d8596c0f213b46",
+        "full_Laurent_matrix_shape": [
+          33,
+          20
+        ],
+        "full_Laurent_rank": 20,
+        "full_tangent_kernel_dimension": 12,
+        "kernel_basis_digest_sha256": "44c9396368598b497bdb3d12a1d50f540aeb087db3d4b041caad97131e658d1f",
+        "quotient_cokernel_basis_digest_sha256": "e74156edf7247d5d08d7d5cf54dbe529b5f519d96f0e15a9ab37c35614819404",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "9dc66776955a0945f6f14d43a2fd03262cbba49b0b416169ea2bc9a18cb8680f",
+        "quotient_matrix_shape": [
+          23,
+          21
+        ],
+        "quotient_rank": 21
+      },
+      {
+        "Laurent_layer": 15,
+        "P_band": -10,
+        "P_follow_dimension": 11,
+        "Q_band": 0,
+        "Q_kernel_dimension": 1,
+        "descent": 25,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "f7f2208bea0aa40a2075108f6e7f702264f9cca6bbdef96a1af9ab6041eb2ba2",
+        "full_Laurent_forcing_cokernel_dimension": 12,
+        "full_Laurent_matrix_digest_sha256": "b1361bf152d8c9fc85672056fc15d99ef97c2ad6615fff5ca6e64f093845b126",
+        "full_Laurent_matrix_shape": [
+          32,
+          21
+        ],
+        "full_Laurent_rank": 20,
+        "full_tangent_kernel_dimension": 12,
+        "kernel_basis_digest_sha256": "8b432a619b164269a34db1e21cd88fcff115622f6bb034f8e4f2858c4db51106",
+        "quotient_cokernel_basis_digest_sha256": "e04897a435fea2a285847c4b926f87c5f0454a836dceea260613279a53addcf8",
+        "quotient_forcing_cokernel_dimension": 3,
+        "quotient_matrix_digest_sha256": "bf33fbfc5a270618d044f175a18afc6d27f11f7f73702e55d9c322c1b049bcc0",
+        "quotient_matrix_shape": [
+          23,
+          21
+        ],
+        "quotient_rank": 20
+      },
+      {
+        "Laurent_layer": 14,
+        "P_band": -11,
+        "P_follow_dimension": 11,
+        "Q_band": -1,
+        "Q_kernel_dimension": 0,
+        "descent": 26,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "67a3caf0a43be161b7cee5d11151f38a642cc88c46aa17855e8d58b9564db2f8",
+        "full_Laurent_forcing_cokernel_dimension": 12,
+        "full_Laurent_matrix_digest_sha256": "90b7b765440f015c2b050c2fcba338551f5cca633281f6b96d9a0f6fdfcd93cb",
+        "full_Laurent_matrix_shape": [
+          33,
+          21
+        ],
+        "full_Laurent_rank": 21,
+        "full_tangent_kernel_dimension": 11,
+        "kernel_basis_digest_sha256": "44c9396368598b497bdb3d12a1d50f540aeb087db3d4b041caad97131e658d1f",
+        "quotient_cokernel_basis_digest_sha256": "7805632e9043ba526f4dea99528e792a1db6147c8132155936aea1525821fa2b",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "8fb8893eb61aca912e6c8c547e5c87b5f14c62d8c043c0030b31892c547e0661",
+        "quotient_matrix_shape": [
+          23,
+          21
+        ],
+        "quotient_rank": 21
+      },
+      {
+        "Laurent_layer": 13,
+        "P_band": -12,
+        "P_follow_dimension": 11,
+        "Q_band": -2,
+        "Q_kernel_dimension": 0,
+        "descent": 27,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "a3e95db54870737dad4e0e6dd94cc7ee014170e54f17310b78c290fe16ebda31",
+        "full_Laurent_forcing_cokernel_dimension": 12,
+        "full_Laurent_matrix_digest_sha256": "08c57b7b1e8104fed0a4a4f1516d82e628a51a3a111aa2b1e02072231398b058",
+        "full_Laurent_matrix_shape": [
+          33,
+          21
+        ],
+        "full_Laurent_rank": 21,
+        "full_tangent_kernel_dimension": 11,
+        "kernel_basis_digest_sha256": "44c9396368598b497bdb3d12a1d50f540aeb087db3d4b041caad97131e658d1f",
+        "quotient_cokernel_basis_digest_sha256": "2e539c19cef41112b244d81ba9247e1c4d9b399b819c706a712a29ece55ccaf2",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "36faa86fa9cabe10d7fd233ae390ee808f21cb6d2dd167a8456b6c5c6ad27979",
+        "quotient_matrix_shape": [
+          23,
+          21
+        ],
+        "quotient_rank": 21
+      },
+      {
+        "Laurent_layer": 12,
+        "P_band": -13,
+        "P_follow_dimension": 11,
+        "Q_band": -3,
+        "Q_kernel_dimension": 0,
+        "descent": 28,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "d6f8e2253026a2b949991d17b9d59a0a87dc63511f8e0e89411e31d9ba8e2e8f",
+        "full_Laurent_forcing_cokernel_dimension": 12,
+        "full_Laurent_matrix_digest_sha256": "65396089ddd0244a69f29d1c788566b90768b13ea9ed224336f7e3708205ffcf",
+        "full_Laurent_matrix_shape": [
+          33,
+          21
+        ],
+        "full_Laurent_rank": 21,
+        "full_tangent_kernel_dimension": 11,
+        "kernel_basis_digest_sha256": "44c9396368598b497bdb3d12a1d50f540aeb087db3d4b041caad97131e658d1f",
+        "quotient_cokernel_basis_digest_sha256": "9e1d89f5cf2a9d432dfe12cd527d1d30b5d93371b36cf2910d67f0227e4a163a",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "3eec93b9e43a3dbacb64bffab9576ef4b3bfb3dfe47b255c9f121df86f62a9fd",
+        "quotient_matrix_shape": [
+          23,
+          21
+        ],
+        "quotient_rank": 21
+      },
+      {
+        "Laurent_layer": 11,
+        "P_band": -14,
+        "P_follow_dimension": 11,
+        "Q_band": -4,
+        "Q_kernel_dimension": 0,
+        "descent": 29,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "27f573220510a6312a2a4d9f23d1faf66b1305e0f6052f9af15ac1e220431101",
+        "full_Laurent_forcing_cokernel_dimension": 12,
+        "full_Laurent_matrix_digest_sha256": "29d0a801d85dfca810e4a17d6546aa3f857dd142467694bf3b43ea84c4125ea4",
+        "full_Laurent_matrix_shape": [
+          33,
+          21
+        ],
+        "full_Laurent_rank": 21,
+        "full_tangent_kernel_dimension": 11,
+        "kernel_basis_digest_sha256": "44c9396368598b497bdb3d12a1d50f540aeb087db3d4b041caad97131e658d1f",
+        "quotient_cokernel_basis_digest_sha256": "387cd53867e78229be85e977cd4a3e1eff9d38e912b075c6166af55412873179",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "63d4220c456d53f50b5acea8d87ce47a8e5443ab35347b3d7a3c57b60949150f",
+        "quotient_matrix_shape": [
+          23,
+          21
+        ],
+        "quotient_rank": 21
+      },
+      {
+        "Laurent_layer": 10,
+        "P_band": -15,
+        "P_follow_dimension": 11,
+        "Q_band": -5,
+        "Q_kernel_dimension": 0,
+        "descent": 30,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "35069d745c63b2fcb500e6a6d676ffa34c341551c64c9703abf4af75a61a87d8",
+        "full_Laurent_forcing_cokernel_dimension": 12,
+        "full_Laurent_matrix_digest_sha256": "e50cc8999ce14ef064a427ab4ecfc1fdcb3c32db22b41f3c0f2862ad4a7d3aad",
+        "full_Laurent_matrix_shape": [
+          33,
+          21
+        ],
+        "full_Laurent_rank": 21,
+        "full_tangent_kernel_dimension": 11,
+        "kernel_basis_digest_sha256": "44c9396368598b497bdb3d12a1d50f540aeb087db3d4b041caad97131e658d1f",
+        "quotient_cokernel_basis_digest_sha256": "5e2bb8f544a295a1c2c6c5501e93f439f72ae21446deef7cb93c4c05e52d2e7a",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "b46679139f860ae9300037bde82a2f914ee496a8bbd3dbed10365f1a4d2bfb02",
+        "quotient_matrix_shape": [
+          23,
+          21
+        ],
+        "quotient_rank": 21
+      },
+      {
+        "Laurent_layer": 9,
+        "P_band": -16,
+        "P_follow_dimension": 10,
+        "Q_band": -6,
+        "Q_kernel_dimension": 0,
+        "descent": 31,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "1b1fae8aa9f2b789ababd545aa2010f6455c81c35950f529cfc3604d010b15bd",
+        "full_Laurent_forcing_cokernel_dimension": 13,
+        "full_Laurent_matrix_digest_sha256": "92d68df8ee0aa0ad4720dc4facaa9fcaa05548f673aaba84c8c1b10a683c3679",
+        "full_Laurent_matrix_shape": [
+          33,
+          20
+        ],
+        "full_Laurent_rank": 20,
+        "full_tangent_kernel_dimension": 10,
+        "kernel_basis_digest_sha256": "15a1deb07f4b9ab7ea2d13d024b3ead08fd6463259af02dd3e775591f0126a11",
+        "quotient_cokernel_basis_digest_sha256": "38e1919aedcf6c4b82206a409ed56d56a8018821f158ca1efd9c85261f2a3bf5",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "ec45ddec6a0e0fa3480a6a0e4955b865424041c8aa461d2684b3e3130dde91b6",
+        "quotient_matrix_shape": [
+          22,
+          20
+        ],
+        "quotient_rank": 20
+      },
+      {
+        "Laurent_layer": 8,
+        "P_band": -17,
+        "P_follow_dimension": 10,
+        "Q_band": -7,
+        "Q_kernel_dimension": 0,
+        "descent": 32,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "cc5ed383495f0cbddf7b7cf7f42b5b82006ebe6cff376d4e9a6c58a676e9acde",
+        "full_Laurent_forcing_cokernel_dimension": 13,
+        "full_Laurent_matrix_digest_sha256": "511f2762adbce31c8fd465203765f8c5ddadae52f0c17bb2587bfbfd84ca0db4",
+        "full_Laurent_matrix_shape": [
+          33,
+          20
+        ],
+        "full_Laurent_rank": 20,
+        "full_tangent_kernel_dimension": 10,
+        "kernel_basis_digest_sha256": "15a1deb07f4b9ab7ea2d13d024b3ead08fd6463259af02dd3e775591f0126a11",
+        "quotient_cokernel_basis_digest_sha256": "af6dc52d2919fc826fd15aa19c2725930eda1abd7bd6619aad218dd4ab331577",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "59040d4eed060bb59f2070cbd96aa295b6b1d08700c055bd6a03bf3ac40a2642",
+        "quotient_matrix_shape": [
+          22,
+          20
+        ],
+        "quotient_rank": 20
+      },
+      {
+        "Laurent_layer": 7,
+        "P_band": -18,
+        "P_follow_dimension": 10,
+        "Q_band": -8,
+        "Q_kernel_dimension": 0,
+        "descent": 33,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "73ceba524993f093f660a4d3e3953605171430ead06c6dbe7f46dfe6a756de68",
+        "full_Laurent_forcing_cokernel_dimension": 13,
+        "full_Laurent_matrix_digest_sha256": "739e8c13a4c0fe93536eb3fc30659af0a03ddb479d39dc0d9f5aa78d0b0a6c9d",
+        "full_Laurent_matrix_shape": [
+          33,
+          20
+        ],
+        "full_Laurent_rank": 20,
+        "full_tangent_kernel_dimension": 10,
+        "kernel_basis_digest_sha256": "15a1deb07f4b9ab7ea2d13d024b3ead08fd6463259af02dd3e775591f0126a11",
+        "quotient_cokernel_basis_digest_sha256": "c2eba4522778ff2ec654752fb15cbfc85a383a3290042f283709c86eef756c23",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "f46bb59b0c57d8fb98f89716170635df35744801cb4937927b52ddde538a1782",
+        "quotient_matrix_shape": [
+          22,
+          20
+        ],
+        "quotient_rank": 20
+      },
+      {
+        "Laurent_layer": 6,
+        "P_band": -19,
+        "P_follow_dimension": 10,
+        "Q_band": -9,
+        "Q_kernel_dimension": 0,
+        "descent": 34,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "75035145d80c43ad702fbfb74d4027421e6a2ef98507345b98fdde78a0ccdf89",
+        "full_Laurent_forcing_cokernel_dimension": 13,
+        "full_Laurent_matrix_digest_sha256": "6c76e3a2ad4ab740dd15dc15daa2481c402d2d39871bdbf97d553b6b6fb4cb39",
+        "full_Laurent_matrix_shape": [
+          33,
+          20
+        ],
+        "full_Laurent_rank": 20,
+        "full_tangent_kernel_dimension": 10,
+        "kernel_basis_digest_sha256": "15a1deb07f4b9ab7ea2d13d024b3ead08fd6463259af02dd3e775591f0126a11",
+        "quotient_cokernel_basis_digest_sha256": "a513adab8eff3208ba81442806c29fc5d8bb533a20b258da02b172ffc8adc302",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "d3d82c00bb10754fcd7ec4e452ce1d82a0be3d11b7238dbad8317749d774144a",
+        "quotient_matrix_shape": [
+          22,
+          20
+        ],
+        "quotient_rank": 20
+      },
+      {
+        "Laurent_layer": 5,
+        "P_band": -20,
+        "P_follow_dimension": 10,
+        "Q_band": -10,
+        "Q_kernel_dimension": 0,
+        "descent": 35,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "bf1d325a52687bc7ba92fc38edde94ec432e09b805172e1ed001327cfcce7938",
+        "full_Laurent_forcing_cokernel_dimension": 13,
+        "full_Laurent_matrix_digest_sha256": "2c41fdf33855acf8f9c425012cc665d9adc33747fb1a76ccf6ba84dd3f295399",
+        "full_Laurent_matrix_shape": [
+          33,
+          20
+        ],
+        "full_Laurent_rank": 20,
+        "full_tangent_kernel_dimension": 10,
+        "kernel_basis_digest_sha256": "15a1deb07f4b9ab7ea2d13d024b3ead08fd6463259af02dd3e775591f0126a11",
+        "quotient_cokernel_basis_digest_sha256": "cf93bf763cf99be9fd543767f4fbc4c453d93f0e24304474e1e98a139e0ae435",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "20fcd26b0e5dcda057b32612f9b52561f2f3b035317df60a678ca793b906e961",
+        "quotient_matrix_shape": [
+          22,
+          20
+        ],
+        "quotient_rank": 20
+      },
+      {
+        "Laurent_layer": 3,
+        "P_band": -22,
+        "P_follow_dimension": 9,
+        "Q_band": -12,
+        "Q_kernel_dimension": 0,
+        "descent": 37,
+        "endpoint_fixed_Q_coordinate": false,
+        "full_Laurent_cokernel_basis_digest_sha256": "1ac0058da036f5c4228d5ae962dd14cd2d2ae403f3a9528120d5d414e82e1d21",
+        "full_Laurent_forcing_cokernel_dimension": 14,
+        "full_Laurent_matrix_digest_sha256": "dede8a6486db9202d9c6354dee7ef5afec285c73c3581500ed6b93e9566aa5f7",
+        "full_Laurent_matrix_shape": [
+          33,
+          19
+        ],
+        "full_Laurent_rank": 19,
+        "full_tangent_kernel_dimension": 9,
+        "kernel_basis_digest_sha256": "f2767c607ecb12f30c3ac2c4ef210efa2e8d5cff1594a3c3ed8ee5441133a157",
+        "quotient_cokernel_basis_digest_sha256": "02acdda8be5e875c3910c545321c72deb4570cbb20c26c9f280b8967804426f5",
+        "quotient_forcing_cokernel_dimension": 2,
+        "quotient_matrix_digest_sha256": "17899f5470251833aa7fa0b22eedf73de6739065951eaec8bf3db6c0a5f2e471",
+        "quotient_matrix_shape": [
+          21,
+          19
+        ],
+        "quotient_rank": 19
+      }
+    ],
+    "warning": "the 53 quotient coordinates do not include divisibility/local-jet conditions.  Nonlinear forcing must be projected into the full 347-dimensional coupled Laurent-row cokernel"
+  },
+  "status": "exact-number-field-linear-maps;nonlinear-forcing-open"
+}

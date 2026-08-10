@@ -1,0 +1,127 @@
+{
+  "case": "complete-formal-nodal-normal-slice",
+  "exact_data": {
+    "affine_scalar_correction": {
+      "00": "6*u*y**2*(y - z)*(y + z)",
+      "01": "-3*u*y*(3*x*y**2 - 2*y**2*z + 2*z**3)",
+      "02": "-9*u*y**4",
+      "11": "-6*u*z*(3*x*y**2 - y**2*z + z**3)",
+      "12": "-9*u*y**3*z",
+      "22": "0"
+    },
+    "affine_trace_free_correction": {
+      "00": [
+        "0",
+        "0",
+        "-3*u*y**2"
+      ],
+      "01": [
+        "0",
+        "0",
+        "-3*u*y*z"
+      ],
+      "02": [
+        "0",
+        "0",
+        "0"
+      ],
+      "11": [
+        "0",
+        "0",
+        "-3*u*z**2"
+      ],
+      "12": [
+        "0",
+        "0",
+        "0"
+      ],
+      "22": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "eta_components": [
+      "y**3",
+      "y**2*z",
+      "0",
+      "y*z**2",
+      "0",
+      "0",
+      "z**3",
+      "0",
+      "0",
+      "0"
+    ],
+    "expected_nakayama_presentation_difference": 0,
+    "module_certificate": {
+      "annihilator_singular_syntax": "x",
+      "generation_difference_size": 0,
+      "hilbert_numerator_over_one_minus_t_cubed": [
+        1,
+        -1
+      ],
+      "kernel_generator_count": 10
+    },
+    "universal_coefficient_family": {
+      "cotangent_saturation_generators": 0,
+      "different_generator_central_pruned_presentation_difference": 0,
+      "different_generator_module_dimension": 1,
+      "different_generator_module_multiplicity": 6,
+      "different_generator_parameter_axis_radical_difference": 0,
+      "different_generator_pruned_presentation_rank": 6,
+      "parameter_count": 1,
+      "support_ext2_central_pruned_presentation_difference": 0,
+      "support_ext2_collision_square_action_generators": 0,
+      "support_ext2_dimension": 1,
+      "support_ext2_multiplicity": 6,
+      "support_ext2_parameter_axis_radical_difference": 0,
+      "support_ext2_pruned_presentation_rank": 3,
+      "support_ext3_vector_dimension": 0,
+      "support_module_dimension": 3
+    },
+    "weighted_rees_certificate": {
+      "annihilator_cokernel_initial_presentation_difference": 0,
+      "annihilator_cokernel_rees_torsion_generators": 0,
+      "cotangent_initial_presentation_difference": 0,
+      "cotangent_rees_torsion_generators": 0,
+      "parameter_count": 1
+    }
+  },
+  "exact_data_sha256": "731e935e84fe6cd51c148c27978975fe4e04247416a5e84b4b92a4458efbfef0",
+  "graph_specialization_lemma": {
+    "consequence": "Tor_1 vanishes for the annihilator-control cokernel, so Ann(Omega) commutes with the graph specialization",
+    "regularity_reason": "in(u-f) is monic in u on each central associated-graded packet, which is obtained from the central packet by polynomial extension in u",
+    "specialization": "u -> f, ord_(x,y,z)(f)>=1",
+    "universal_ring": "Q[u,x,y,z]",
+    "weights": {
+      "u": 1,
+      "x": 1,
+      "y": 1,
+      "z": 1
+    }
+  },
+  "mathematical_scope": "Exact characteristic-zero theorem for every compatible formal tensor with fixed nodal cubic symbol. The exact graded gauge cokernel is Q[y,z](-3), so recursive filtered gauge elimination gives h_nod+f(y,z)*eta with f in (y,z)Q[[y,z]]. The universal coefficient multiplication is affine-linear, its intrinsic different Nakayama module is Q[u]^6, and weight-one strict Rees packets make u-f regular under every graph specialization. Hence the intrinsic Kahler different has six minimal local generators and is non-Cartier to all formal orders. Normality, algebraization of an arbitrary formal gauge, and Keller-open compatibility are not asserted.",
+  "normal_form": {
+    "coefficient_ideal": "(y,z)",
+    "coefficient_ring": "Q[[y,z]]",
+    "gauge_cokernel": "Q[y,z](-3)",
+    "generator": "eta(Z^3)",
+    "tensor": "h_nod+f(y,z)*eta"
+  },
+  "not_proved": [
+    "normality of the normal-form algebra",
+    "algebraization of the infinite formal gauge transformation",
+    "existence or compatibility of a Keller open",
+    "the analogous all-orders statement for the other five singular-squarefree symbols"
+  ],
+  "proved": [
+    "every compatible formal nodal tensor has a recursive normal form h_nod+f(y,z)*eta",
+    "the universal normal coefficient changes multiplication only affine-linearly",
+    "the cotangent and annihilator-control Rees packets are strict with literal central initial presentations",
+    "after every polynomial or formal graph specialization, the intrinsic Kahler different has six minimal generators",
+    "the Kahler different is non-Cartier for every compatible formal correction with fixed nodal leading symbol"
+  ],
+  "reproduce": ".venv/bin/python scripts/verify_nodal_all_orders_different_persistence.py",
+  "schema": "nodal-all-orders-different-persistence.v1"
+}

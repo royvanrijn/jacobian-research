@@ -1,0 +1,20 @@
+{
+  "scope": "HC4RSD77 affine-plane middle foliation",
+  "status": "verified",
+  "autoparallel_E2": true,
+  "independent_kernel_twists": 2,
+  "twist_relation": "Gamma^3_{4,1}=Gamma^2_{3,1}",
+  "grassmann_derivative_normal_form": {
+    "A3": "[[0,-(a+q)/2],[0,0]]",
+    "A4": "[[a,r],[0,q]]"
+  },
+  "schubert_gate": "q=0",
+  "schubert_gate_forced": false,
+  "formal_non_schubert_witness": {
+    "parameters": "a=1, q=1, r=0",
+    "A3": "[[0,-1],[0,0]]",
+    "A4": "[[1,0],[0,1]]",
+    "kernel_line_motion_rank": 2
+  },
+  "conclusion": "HC4RSD77 and the exact first-order normal form HC4RSD78 are verified; the Schubert gate q=0 is not forced"
+}

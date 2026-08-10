@@ -21,15 +21,16 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: check verify verify-logged verify-minimal verify-core verify-geometry \
 	verify-theorems verify-regressions verify-derived verify-family \
 	verify-external-consequences verify-restricted-minima verify-two-real-gmc verify-sic2c4 verify-factorial-moments verify-factorial-frontier verify-counterexample-scoreboard verify-plane-jc verify-plane-case2-residue-strata verify-plane-case2-j1-endpoint verify-plane-case2-maximal-gcd verify-plane-case2-gcd6 verify-plane-poisson-radical verify-plane-poisson-primary-charts verify-plane-poisson-separators verify-plane-poisson-primary-filtration verify-plane-poisson-filtered-modules verify-weighted-boundary verify-quartic-degree-drop-quantization \
-	verify-plane-72-108-exact-fast \
+	verify-plane-72-108-exact-fast verify-plane-72-108-belyi-deformations refresh-plane-72-108-belyi-deformations \
 	verify-lr-rees-sagbi \
 	verify-lr-rooted-trees \
 	verify-lr-mixed-bch \
 	verify-plane-sparse-supports verify-plane-support-bridge \
-	verify-plane-f2-modified-chart-bridge \
+	verify-plane-f2-modified-chart-bridge verify-plane-f2-global-attachment verify-plane-f2-carrier-wronskian verify-plane-f2-carrier-specializations verify-plane-f2-nonlinear-forcing probe-plane-f2-nonlinear-modular verify-plane-f2-formal-frontier verify-plane-common-power-carrier \
 	verify-linear-torus-free verify-algebraic-torus-free \
 	verify-master \
 	verify-quartic verify-normal-forms verify-formal verify-lean-local \
+	verify-lean-support-saturation \
 	verify-gvc-lean \
 	verify-lean-foundational \
 	verify-foundations verify-foundations-formal \
@@ -41,7 +42,14 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 	verify-boundary-obstruction-theory \
 	verify-universal-cubic-cotangent-saturation \
 	verify-cubic-formal-gauge-cokernel-atlas \
+	verify-cubic-double-saturation-stratification \
 	verify-nodal-cubic-formal-slice \
+	verify-nodal-sextic-different-persistence \
+	refresh-nodal-sextic-different-persistence \
+	verify-nodal-all-orders-different-persistence \
+	refresh-nodal-all-orders-different-persistence \
+	verify-singular-squarefree-all-orders-different-persistence \
+	refresh-singular-squarefree-all-orders-different-persistence \
 	verify-universal-cubic-filtered-syzygy-frontier \
 	verify-marked-root-ore-bridge \
 	verify-degree-five-relative-quantization-family \
@@ -75,8 +83,8 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 	verify-k12-cubic-graph-bilinear-obstruction \
 	search-k12-schur-cubic-completions \
 	verify-k12-graph-cubic-completion-obstruction \
-	verify-support-saturation-compiler verify-degree42-c6-macaulay \
-	refresh-support-saturation-cases refresh-degree42-c6-macaulay \
+	verify-support-saturation-paths verify-support-saturation-compiler verify-degree42-c6-macaulay \
+	refresh-support-saturation-cases refresh-cubic-double-saturation-stratification refresh-degree42-c6-macaulay \
 	verify-degree30-hessian-pairs refresh-degree30-hessian-pairs \
 	verify-contact-r6 verify-contact-branch-schema verify-contact-r7-asymptotic \
 	verify-contact-r8-asymptotic verify-contact-r8 \
@@ -326,7 +334,10 @@ search-k12-schur-cubic-completions:
 verify-k12-graph-cubic-completion-obstruction:
 	$(PYTHON) scripts/verify_k12_graph_cubic_completion_obstruction.py
 
-verify-support-saturation-compiler:
+verify-support-saturation-paths:
+	$(SYSTEM_PYTHON) scripts/verify_support_saturation_paths.py
+
+verify-support-saturation-compiler: verify-support-saturation-paths
 	$(PYTHON) scripts/verify_support_saturation_compiler.py
 	$(SYSTEM_PYTHON) scripts/verify_degree42_c6_macaulay.py
 
@@ -335,6 +346,9 @@ verify-degree42-c6-macaulay:
 
 refresh-support-saturation-cases:
 	$(PYTHON) scripts/compile_support_saturation_cases.py
+
+refresh-cubic-double-saturation-stratification:
+	$(PYTHON) scripts/compile_support_saturation_cases.py --case cubic-double-strata
 
 refresh-degree42-c6-macaulay:
 	$(PYTHON) scripts/compile_degree42_c6_macaulay.py
@@ -407,6 +421,12 @@ verify-plane-jc:
 verify-plane-72-108-exact-fast:
 	$(PYTHON) plane-jc/cas/verify_72_108_exact_fast.py --jobs $(JC2_REPLAY_JOBS)
 
+verify-plane-72-108-belyi-deformations:
+	$(PYTHON) scripts/verify_jc2_degree108_belyi_deformations.py
+
+refresh-plane-72-108-belyi-deformations:
+	$(PYTHON) plane-jc/cas/jc2_degree108_belyi_deformations.py
+
 verify-plane-sparse-supports:
 	$(PYTHON) plane-jc/cas/verify_sparse_support_exclusions.py
 
@@ -420,9 +440,51 @@ verify-plane-support-bridge:
 	$(PYTHON) plane-jc/cas/verify_f2_kummer_orbit_transfer.py
 	$(PYTHON) plane-jc/cas/verify_f2_terminal_residue_cover.py
 	$(PYTHON) plane-jc/cas/verify_f2_a6_simple_spectator_gluing.py
+	$(PYTHON) plane-jc/cas/verify_f2_75_125_global_attachment.py
+	$(PYTHON) plane-jc/cas/test_f2_75_125_global_attachment.py
+	$(PYTHON) plane-jc/cas/verify_f2_75_125_carrier_wronskian.py
+	$(PYTHON) plane-jc/cas/test_f2_75_125_carrier_wronskian.py
+	$(PYTHON) plane-jc/cas/verify_f2_75_125_carrier_specializations.py
+	$(PYTHON) plane-jc/cas/test_f2_75_125_carrier_specializations.py
+	$(PYTHON) plane-jc/cas/compile_f2_75_125_nonlinear_forcing.py
+	$(PYTHON) plane-jc/cas/test_f2_75_125_nonlinear_forcing.py
+	$(PYTHON) plane-jc/cas/test_sparse_circuit_modp.py
+	$(PYTHON) plane-jc/cas/verify_common_power_carrier_wronskian.py
+	$(PYTHON) plane-jc/cas/test_common_power_carrier_wronskian.py
 
 verify-plane-f2-modified-chart-bridge:
 	$(PYTHON) plane-jc/cas/verify_f2_modified_chart_bridge.py
+
+verify-plane-f2-global-attachment:
+	$(PYTHON) plane-jc/cas/verify_f2_75_125_global_attachment.py
+	$(PYTHON) plane-jc/cas/test_f2_75_125_global_attachment.py
+
+verify-plane-f2-carrier-wronskian:
+	$(PYTHON) plane-jc/cas/verify_f2_75_125_carrier_wronskian.py
+	$(PYTHON) plane-jc/cas/test_f2_75_125_carrier_wronskian.py
+
+verify-plane-f2-carrier-specializations:
+	$(PYTHON) plane-jc/cas/verify_f2_75_125_carrier_specializations.py
+	$(PYTHON) plane-jc/cas/test_f2_75_125_carrier_specializations.py
+
+verify-plane-f2-nonlinear-forcing:
+	$(PYTHON) plane-jc/cas/compile_f2_75_125_nonlinear_forcing.py
+	$(PYTHON) plane-jc/cas/test_f2_75_125_nonlinear_forcing.py
+	$(PYTHON) plane-jc/cas/test_sparse_circuit_modp.py
+
+probe-plane-f2-nonlinear-modular:
+	$(PYTHON) plane-jc/cas/probe_f2_75_125_nonlinear_modular.py
+
+verify-plane-f2-formal-frontier:
+	$(PYTHON) plane-jc/cas/test_sparse_circuit_modp.py
+	$(PYTHON) plane-jc/cas/compile_f2_75_125_tangent_obstruction.py
+	$(PYTHON) plane-jc/cas/compile_f2_75_125_formal_homotopy.py
+	$(PYTHON) plane-jc/cas/compile_f2_75_125_formal_homotopy.py --regular-gauge --artifact artifacts/generated-results/jc2_f2_75_125_formal_homotopy_regular_gauge.json
+	$(PYTHON) plane-jc/cas/compile_f2_75_125_formal_homotopy.py --prime 61 --rho 19 --y 19 --maximum-order 8 --artifact artifacts/generated-results/jc2_f2_75_125_formal_homotopy_mod61.json
+
+verify-plane-common-power-carrier:
+	$(PYTHON) plane-jc/cas/verify_common_power_carrier_wronskian.py
+	$(PYTHON) plane-jc/cas/test_common_power_carrier_wronskian.py
 
 verify-plane-case2-residue-strata:
 	$(PYTHON) plane-jc/cas/audit_case2_residue_strata.py
@@ -493,8 +555,29 @@ verify-universal-cubic-cotangent-saturation:
 verify-cubic-formal-gauge-cokernel-atlas:
 	PYTHONPATH=scripts $(PYTHON) scripts/verify_cubic_formal_gauge_cokernel_atlas.py
 
+verify-cubic-double-saturation-stratification:
+	PYTHONPATH=scripts $(PYTHON) scripts/verify_cubic_double_saturation_stratification.py
+
 verify-nodal-cubic-formal-slice:
 	PYTHONPATH=scripts $(PYTHON) scripts/verify_nodal_cubic_formal_slice.py
+
+verify-nodal-sextic-different-persistence:
+	PYTHONPATH=scripts $(PYTHON) scripts/verify_nodal_sextic_different_persistence.py
+
+refresh-nodal-sextic-different-persistence:
+	PYTHONPATH=scripts $(PYTHON) scripts/verify_nodal_sextic_different_persistence.py --refresh
+
+verify-nodal-all-orders-different-persistence:
+	PYTHONPATH=scripts $(PYTHON) scripts/verify_nodal_all_orders_different_persistence.py
+
+refresh-nodal-all-orders-different-persistence:
+	PYTHONPATH=scripts $(PYTHON) scripts/verify_nodal_all_orders_different_persistence.py --refresh
+
+verify-singular-squarefree-all-orders-different-persistence:
+	PYTHONPATH=scripts $(PYTHON) scripts/verify_singular_squarefree_all_orders_different_persistence.py
+
+refresh-singular-squarefree-all-orders-different-persistence:
+	PYTHONPATH=scripts $(PYTHON) scripts/verify_singular_squarefree_all_orders_different_persistence.py --refresh
 
 verify-universal-cubic-filtered-syzygy-frontier:
 	$(PYTHON) scripts/verify_universal_cubic_filtered_syzygy_frontier.py
@@ -970,6 +1053,10 @@ verify-gvc-lean:
 	cd formal/gvc && lake exe cache get
 	cd formal/gvc && lake build
 
+verify-lean-support-saturation:
+	cd formal/support-saturation && lake exe cache get
+	cd formal/support-saturation && lake build
+
 verify-lean-local:
 	$(SYSTEM_PYTHON) scripts/check_lean_placeholders.py
 	$(SYSTEM_PYTHON) scripts/check_paper_certificate_imports.py
@@ -979,6 +1066,7 @@ verify-lean-local:
 	cd formal/finite-etale-keller && lake build
 	cd formal/gmc2 && lake exe cache get
 	cd formal/gmc2 && lake build
+	$(MAKE) verify-lean-support-saturation
 	$(MAKE) verify-gvc-lean
 
 # Optional formal replication. This fetches Dean Cureton's separately authored

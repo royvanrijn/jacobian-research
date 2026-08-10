@@ -1,0 +1,236 @@
+{
+  "basis_conventions": {
+    "eta_source_cubic": "Z^3",
+    "quartic_basis_indices_zero_based": [
+      0,
+      1
+    ],
+    "quartic_quotient_basis": [
+      "y*eta",
+      "z*eta"
+    ],
+    "quintic_quotient_basis": [
+      "y^2*eta",
+      "y*z*eta",
+      "z^2*eta"
+    ],
+    "sextic_quotient_basis": [
+      "y^3*eta",
+      "y^2*z*eta",
+      "y*z^2*eta",
+      "z^3*eta"
+    ],
+    "tensor_component_order": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        2,
+        2,
+        2
+      ]
+    ]
+  },
+  "case": "nodal-complete-sextic-normal-form-quotient",
+  "exact_computation": {
+    "cotangent_saturation_generators": 0,
+    "different_generator_central_pruned_presentation_difference": 0,
+    "different_generator_module_dimension": 9,
+    "different_generator_module_multiplicity": 6,
+    "different_generator_parameter_axis_radical_difference": 0,
+    "different_generator_pruned_presentation_rank": 6,
+    "parameter_count": 9,
+    "support_ext2_central_pruned_presentation_difference": 0,
+    "support_ext2_collision_square_action_generators": 0,
+    "support_ext2_dimension": 9,
+    "support_ext2_multiplicity": 6,
+    "support_ext2_parameter_axis_radical_difference": 0,
+    "support_ext2_pruned_presentation_rank": 3,
+    "support_ext3_vector_dimension": 0,
+    "support_module_dimension": 11
+  },
+  "fiberwise_base_change_certificate": {
+    "annihilator_cokernel_initial_presentation_difference": 0,
+    "annihilator_cokernel_rees_torsion_generators": 0,
+    "cotangent_initial_presentation_difference": 0,
+    "cotangent_rees_torsion_generators": 0,
+    "parameter_count": 9
+  },
+  "graded_dimensions": {
+    "quartic_compatible": 24,
+    "quartic_gauge_image": 22,
+    "quartic_quotient": 2,
+    "quintic_compatible": 42,
+    "quintic_gauge_image": 39,
+    "quintic_quotient": 3,
+    "sextic_compatible": 64,
+    "sextic_gauge_image": 60,
+    "sextic_quotient": 4
+  },
+  "mathematical_scope": "Exact characteristic-zero calculation on the nine-parameter nodal normal-form tensor family consisting of the complete two-dimensional quartic, three-dimensional quintic, and four-dimensional sextic gauge cokernel pieces. Strict Rees packets make the annihilator intrinsic after every geometric specialization. Every fiber has saturated cotangent module, the same length-six C1 defect, and a six-dimensional collision Nakayama quotient J/nJ, so the Kahler different is not Cartier. Gauge directions are removed only through sextic order; corrections of order seven and above, normality, and Keller-open compatibility remain outside the claim.",
+  "not_proved": [
+    "persistence after compatible corrections of order seven and above",
+    "normality or Keller-open compatibility"
+  ],
+  "proved": [
+    "the displayed quintic and sextic directions complement the complete degree-five and degree-six gauge images",
+    "C2 passes on every geometric parameter fiber",
+    "C1 fails on every geometric parameter fiber by the constant multiplicity-six support-hull defect",
+    "the intrinsic Kahler different has six minimal local generators at every collision and is not Cartier"
+  ],
+  "representative_sha256": "7fc6749514d92a587c8b9053d074a78ba542a902c4f07b6e0c05b94f748d0010",
+  "representative_tensor_components": [
+    [
+      "y**3*z",
+      "y**2*z**2",
+      "0",
+      "y*z**3",
+      "0",
+      "0",
+      "z**4",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "y**4",
+      "y**3*z",
+      "0",
+      "y**2*z**2",
+      "0",
+      "0",
+      "y*z**3",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "y**5",
+      "y**4*z",
+      "0",
+      "y**3*z**2",
+      "0",
+      "0",
+      "y**2*z**3",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "y**4*z",
+      "y**3*z**2",
+      "0",
+      "y**2*z**3",
+      "0",
+      "0",
+      "y*z**4",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "y**3*z**2",
+      "y**2*z**3",
+      "0",
+      "y*z**4",
+      "0",
+      "0",
+      "z**5",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "y**6",
+      "y**5*z",
+      "0",
+      "y**4*z**2",
+      "0",
+      "0",
+      "y**3*z**3",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "y**5*z",
+      "y**4*z**2",
+      "0",
+      "y**3*z**3",
+      "0",
+      "0",
+      "y**2*z**4",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "y**4*z**2",
+      "y**3*z**3",
+      "0",
+      "y**2*z**4",
+      "0",
+      "0",
+      "y*z**5",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "y**3*z**3",
+      "y**2*z**4",
+      "0",
+      "y*z**5",
+      "0",
+      "0",
+      "z**6",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "reproduce": ".venv/bin/python scripts/verify_nodal_sextic_different_persistence.py",
+  "schema": "nodal-sextic-different-persistence.v1"
+}

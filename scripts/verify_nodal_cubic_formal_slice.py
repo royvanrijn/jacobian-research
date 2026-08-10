@@ -1197,6 +1197,112 @@ def main() -> None:
             ),
         }
 
+    # Literal degree-six lift-independence is false.  On the plus branch,
+    # add branch_p times the first quartic stabilizer to the stored lift.
+    # This does not change the quartic perturbation because the stabilizer
+    # lies in ker(G_nod), but it changes the degree-six quotient class.
+    plus_substitution = {
+        parameter: sp.Integer(0) for parameter in parameters
+    }
+    plus_substitution.update(
+        {
+            parameters[2]: 3 * branch_p,
+            parameters[3]: branch_p,
+            parameters[4]: branch_p + branch_q,
+            parameters[5]: branch_q,
+        }
+    )
+    plus_parameter_vector = sp.Matrix(
+        [plus_substitution[parameter] for parameter in parameters]
+    )
+    plus_perturbation = directions * plus_parameter_vector
+    stored_plus_derivation = sp.Matrix(
+        3,
+        3,
+        list(gauge_lift * plus_parameter_vector),
+    )
+    alternative_plus_derivation = (
+        stored_plus_derivation + branch_p * lift_kernel[0]
+    )
+    alternative_expansion = finite_inverse_gauge_coefficients(
+        nodal_tensor,
+        plus_perturbation,
+        alternative_plus_derivation,
+        3,
+    )
+    assert alternative_expansion[0] == nodal_tensor
+    assert alternative_expansion[1] == sp.zeros(10, 1)
+    alternative_degree_five_coefficients = coefficient_column(
+        alternative_expansion[2], 5
+    )
+    assert (
+        curvature_projection
+        * alternative_degree_five_coefficients[
+            list(curvature_coefficient_rows), :
+        ]
+    ) == sp.zeros(3, 1)
+    alternative_correction_solution = rational_solution_preserving(
+        action_degree_five,
+        alternative_degree_five_coefficients,
+        (branch_p, branch_q),
+    )
+    alternative_degree_five_correction = homogeneous_polynomial_lift(
+        alternative_correction_solution, 2
+    )
+    alternative_degree_six_remainder = (
+        alternative_expansion[3]
+        - smooth.gauge_matrix(plus_perturbation)
+        * sp.Matrix(list(alternative_degree_five_correction))
+    ).applyfunc(sp.expand)
+    alternative_degree_six_obstruction = project_degree_six(
+        alternative_degree_six_remainder
+    )
+    expected_alternative_degree_six_obstruction = sp.Matrix(
+        (
+            -sp.Rational(9, 8)
+            * branch_q**2
+            * (4 * branch_p - 3 * branch_q),
+            -sp.Rational(9, 8)
+            * branch_p
+            * branch_q
+            * (8 * branch_p - 5 * branch_q),
+            -sp.Rational(9, 8)
+            * branch_p**2
+            * (4 * branch_p - branch_q),
+            -sp.Rational(9, 8) * branch_p**3,
+        )
+    )
+    assert (
+        alternative_degree_six_obstruction
+        - expected_alternative_degree_six_obstruction
+    ).applyfunc(sp.expand) == sp.zeros(4, 1)
+    assert (
+        alternative_degree_six_obstruction
+        - sp.Matrix(
+            [
+                sp.sympify(entry[0])
+                for entry in branch_records["plus"][
+                    "degree_six_obstruction"
+                ]
+            ]
+        )
+    ).applyfunc(sp.expand) != sp.zeros(4, 1)
+    # The last coordinate forces branch_p=0; the first then forces
+    # branch_q=0.  Thus this counterexample to literal invariance does not
+    # enlarge the zero locus.
+    alternative_lift_record = {
+        "branch": "plus",
+        "lift_change": "branch_p*quartic_lift_kernel_basis[0]",
+        "degree_five_correction": matrix_record(
+            alternative_degree_five_correction
+        ),
+        "degree_six_obstruction": matrix_record(
+            alternative_degree_six_obstruction
+        ),
+        "literal_independence": False,
+        "common_zero_locus": "branch_p=branch_q=0",
+    }
+
     dense_parameter_matrix = sp.Matrix(
         24,
         2,
@@ -1270,6 +1376,9 @@ def main() -> None:
             "u3*u5-3*u5^2+3*u4*u6+3*u6^2"
         ),
         "degree_six_reduced_plane_continuation": branch_records,
+        "degree_six_quartic_lift_counterexample": (
+            alternative_lift_record
+        ),
     }
     exact_sha256 = hashlib.sha256(
         json.dumps(
@@ -1279,7 +1388,7 @@ def main() -> None:
         ).encode()
     ).hexdigest()
     artifact = {
-        "schema": "nodal-cubic-formal-slice.v3",
+        "schema": "nodal-cubic-formal-slice.v4",
         "mathematical_status": (
             "exact first-stage slice, intrinsic degree-five curvature, "
             "and relative degree-six continuation theorem"
@@ -1348,6 +1457,7 @@ def main() -> None:
             "common_zero_locus_on_each_reduced_plane": (
                 "branch_p=branch_q=0"
             ),
+            "quartic_lift_counterexample": alternative_lift_record,
         },
         "exact_data": exact_data,
         "exact_data_sha256": exact_sha256,
@@ -1397,18 +1507,23 @@ def main() -> None:
                 "the 15-dimensional ambiguity in the degree-five "
                 "correction acts trivially on the degree-six quotient"
             ),
+            (
+                "literal degree-six independence from the earlier "
+                "quartic lift is false: adding branch_p times the first "
+                "quartic stabilizer gives the recorded different class, "
+                "whose zero locus is nevertheless still only the origin"
+            ),
         ],
         "not_proved": [
             (
-                "independence of the degree-six class from the earlier "
-                "five-dimensional quartic gauge-lift ambiguity"
+                "classification of the full five-dimensional quartic-"
+                "stabilizer action on the degree-six quotient"
             ),
             (
                 "degree-six continuation over the embedded quadratic "
                 "socle or the full slice--gauge curvature locus"
             ),
             "an all-order formal slice for the universal nodal family",
-            "universal 24-parameter nodal cotangent saturation",
             "normality or Keller-open compatibility",
         ],
         "reproduce": (
@@ -1428,6 +1543,7 @@ def main() -> None:
     print("PASS: intrinsic zero scheme is two planes plus one embedded socle")
     print("PASS: reduced curvature planes have exact degree-six Veronese classes")
     print("PASS: degree-five correction ambiguity acts trivially on Q6")
+    print("PASS: literal quartic-lift independence at degree six is false")
     print("PASS: coordinate and dense transverse slices are cotangent-saturated")
     print(f"PASS: wrote {OUTPUT.relative_to(ROOT)}")
 

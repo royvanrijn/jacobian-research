@@ -798,6 +798,76 @@ Hence after `C=T`, the conormal defect is exactly `P`.  If
 The entire normalization gap is therefore one canonical-bidual
 surjectivity test and one module-saturation equality.
 
+When the local Kähler different is Cartier, `Ann_B(Omega)=dB`, Proposition
+1.15a of the frontend makes the first test completely explicit:
+
+\[
+ C/T\simeq (0:_{H^2_{\mathfrak n}(B)}d).
+\]
+
+It follows that `C=T` exactly when the normal local threefold $B$ is
+Cohen--Macaulay.  Thus the codimension-one different ledger does not alone
+close the collision: boundary minimality must still force local CM, or the
+degree-two normalization deficiency retains a nonzero Cartier-torsion
+class.
+
+This gives a precise warning and a precise next test.  Proposition 2.5
+proves only that the unique boundary prime has different order one at its
+generic point.  Neither local principality of the Kähler different nor
+`S_2` for its scheme-theoretic support at the closed collision follows from
+that numerical statement.  Under local principality, `S_2` of the support,
+local Cohen--Macaulayness of the normalization, and vanishing of `C/T` are
+equivalent by Corollary 1.15b of the frontend.
+
+At the first nongauge formal layer there is now an exact alternative.  On
+all six singular-squarefree quartic complement families, including every
+geometric parameter fiber, the local Kähler different satisfies
+
+\[
+ \dim_k J/\mathfrak nJ=6.
+\]
+
+It is therefore not locally principal.  Thus a closed-point Cartier
+extension of the codimension-one different ledger would exclude the entire
+certified quartic length-six stratification.  To turn this into the global
+cubic theorem one must prove one of the following two lifting statements:
+
+1. boundary-minimal Keller intersections make the ramification support
+   `S_2` at every collision;
+2. the six-generator initial different remains noncyclic after every
+   compatible higher formal correction.
+
+The first statement closes by the CM criterion; the second contradicts a
+Cartier-different extension.  Proposition 1.15c of the frontend reduces the
+second to base change for the annihilator and local freeness of its relative
+Nakayama quotient.  Neither is presently a consequence of the height-one
+boundary ledger.
+
+The entire formal higher-order queue is now closed for the nodal symbol.
+Its exact cyclic gauge cokernel gives the normal form
+`h_nod+f(y,z)*eta`, and a universal weight-one coefficient calculation
+shows that the relative Nakayama module remains rank six after every graph
+specialization `u -> f`.  Hence no compatible nodal higher tail can turn
+the different Cartier.  The generalized calculation gives minimal
+multi-coefficient normal forms for the other five symbols and proves the
+same strict Rees and graph-specialization statement in each.  Therefore the
+whole singular-squarefree higher-order queue is closed: every intrinsic
+different remains six-generated and non-Cartier.  Formal rigidity supplies
+the smooth row with coefficient count zero and the same six-generator
+central different.  Thus a Cartier-different boundary theorem excludes
+every squarefree leading cubic symbol and leaves only the three
+non-squarefree rows to face generic étaleness.
+
+<!-- status-consumer: NSDP6 c5f68253995b7b6a -->
+
+<!-- status-consumer: NADPALL 60218641ccdf6fac -->
+
+<!-- status-consumer: SSADPALL 584a6e05374612ee -->
+
+<!-- status-consumer: KDCD3 c6e56b39bbb498d8 -->
+
+<!-- status-consumer: KDSQ6 cd423f625f1f3cd2 -->
+
 The extra-boundary condition likewise has a single intrinsic detector.
 Proposition 2.1a writes the reduced nonproperness equation as
 

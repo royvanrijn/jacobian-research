@@ -1,0 +1,402 @@
+{
+  "conductor_cocycle": {
+    "characters": {
+      "D_d": 1,
+      "D_q": 1,
+      "D_r": -1
+    },
+    "collision_extension": {
+      "q_node": "all three chosen frames are units generically",
+      "q_r_tangency_orbit": "all three chosen frames are units generically",
+      "q_r_transverse": "D_r carries the simple w zero",
+      "r_cusp": "off the q conductor and handled only by cusp charts",
+      "triple_orbit": "D_q carries the simple A_minus*A_plus zero"
+    },
+    "cover_ring": "QQ[w,1/((w - 1)*(w + 1)*(w**2 + 3))]",
+    "degree_3_1_1_product": "(3*w**7 + 23*w**5 + 105*w**3 + 125*w)/(32*w**2 - 32)",
+    "involution": "w -> -w",
+    "product_equals_total_derivative_residue": true,
+    "residue_frames": {
+      "D_d": "1",
+      "D_q": "(3*w**6 + 23*w**4 + 105*w**2 + 125)/(8*w**2 - 8)",
+      "D_r": "w/4"
+    },
+    "uniqueness": "only up to invariant units and redistribution of even factors",
+    "unit_selector_completion_determinant": -1
+  },
+  "controlled_transform_charts": [
+    {
+      "base_ring": "residue-field controlled chart",
+      "compact_local_coefficients": {
+        "Z_d": "tau^0*T_d",
+        "Z_q": "tau^1*T_q",
+        "Z_r": "tau^0*T_r"
+      },
+      "compact_section_orders": {
+        "D_d": 0,
+        "D_q": 1,
+        "D_r": 0
+      },
+      "degree_3_1_1_order": 1,
+      "derivative_order": 1,
+      "exceptional_residual": "(20*Y**2*a + 20*Y**2 - 140*Y*a*z - 30*Y*a + 60*Y*z + 10*Y + 420*a*z**2 + 11*a - 160*z**2 - 4)/4",
+      "exceptional_residual_degree": 2,
+      "exceptional_residual_discriminant_nonzero": true,
+      "geometric_colors": 4,
+      "literal_degree_3_1_1_quotient": "dF/dY",
+      "literal_polynomiality_verified": true,
+      "local_multi_rees_algebra": "A_chart[Z_d,Z_q,Z_r]",
+      "name": "q_node_slopes",
+      "primitive_exceptional_rees_variable": "e=tau*T_E",
+      "residue_modulus": "a**2 - 3*a + 1",
+      "root_coordinate_weight": 1,
+      "strict_transform_order": 2
+    },
+    {
+      "base_ring": "rational controlled chart",
+      "compact_local_coefficients": {
+        "Z_d": "tau^0*T_d",
+        "Z_q": "tau^0*T_q",
+        "Z_r": "tau^4*T_r"
+      },
+      "compact_section_orders": {
+        "D_d": 0,
+        "D_q": 0,
+        "D_r": 4
+      },
+      "degree_3_1_1_order": 4,
+      "derivative_order": 4,
+      "exceptional_residual": "(2*Y**5 + 25*z)/2",
+      "exceptional_residual_degree": 5,
+      "exceptional_residual_discriminant_nonzero": true,
+      "geometric_colors": 1,
+      "literal_degree_3_1_1_quotient": "dF/dY",
+      "literal_polynomiality_verified": true,
+      "local_multi_rees_algebra": "A_chart[Z_d,Z_q,Z_r]",
+      "name": "r_cusp_E1",
+      "primitive_exceptional_rees_variable": "e=tau*T_E",
+      "residue_modulus": null,
+      "root_coordinate_weight": 1,
+      "strict_transform_order": 5
+    },
+    {
+      "base_ring": "rational controlled chart",
+      "compact_local_coefficients": {
+        "Z_d": "tau^0*T_d",
+        "Z_q": "tau^0*T_q",
+        "Z_r": "tau^8*T_r"
+      },
+      "compact_section_orders": {
+        "D_d": 0,
+        "D_q": 0,
+        "D_r": 8
+      },
+      "degree_3_1_1_order": 8,
+      "derivative_order": 8,
+      "exceptional_residual": "(2*Y**5 + 25*z - 4500)/2",
+      "exceptional_residual_degree": 5,
+      "exceptional_residual_discriminant_nonzero": true,
+      "geometric_colors": 1,
+      "literal_degree_3_1_1_quotient": "dF/dY",
+      "literal_polynomiality_verified": true,
+      "local_multi_rees_algebra": "A_chart[Z_d,Z_q,Z_r]",
+      "name": "r_cusp_E2",
+      "primitive_exceptional_rees_variable": "e=tau*T_E",
+      "residue_modulus": null,
+      "root_coordinate_weight": 2,
+      "strict_transform_order": 10
+    },
+    {
+      "base_ring": "rational controlled chart",
+      "compact_local_coefficients": {
+        "Z_d": "tau^0*T_d",
+        "Z_q": "tau^0*T_q",
+        "Z_r": "tau^2*T_r"
+      },
+      "compact_section_orders": {
+        "D_d": 0,
+        "D_q": 0,
+        "D_r": 2
+      },
+      "degree_3_1_1_order": 2,
+      "derivative_order": 2,
+      "exceptional_residual": "25*(40*Y + z - 696)/2",
+      "exceptional_residual_degree": 1,
+      "exceptional_residual_discriminant_nonzero": true,
+      "geometric_colors": 1,
+      "literal_degree_3_1_1_quotient": "dF/dY",
+      "literal_polynomiality_verified": true,
+      "local_multi_rees_algebra": "A_chart[Z_d,Z_q,Z_r]",
+      "name": "r_cusp_E3_unramified",
+      "primitive_exceptional_rees_variable": "e=tau*T_E",
+      "residue_modulus": null,
+      "root_coordinate_weight": 1,
+      "strict_transform_order": 3
+    },
+    {
+      "base_ring": "rational controlled chart",
+      "compact_local_coefficients": {
+        "Z_d": "tau^0*T_d",
+        "Z_q": "tau^0*T_q",
+        "Z_r": "tau^4*T_r"
+      },
+      "compact_section_orders": {
+        "D_d": 0,
+        "D_q": 0,
+        "D_r": 4
+      },
+      "degree_3_1_1_order": 4,
+      "derivative_order": 4,
+      "exceptional_residual": "Y*(Y**4 - 50*Y**2 + 500)",
+      "exceptional_residual_degree": 5,
+      "exceptional_residual_discriminant_nonzero": true,
+      "geometric_colors": 2,
+      "literal_degree_3_1_1_quotient": "dF/dY",
+      "literal_polynomiality_verified": true,
+      "local_multi_rees_algebra": "A_chart[Z_d,Z_q,Z_r]",
+      "name": "r_cusp_E3_ramified",
+      "primitive_exceptional_rees_variable": "e=tau*T_E",
+      "residue_modulus": null,
+      "root_coordinate_weight": 1,
+      "strict_transform_order": 5
+    },
+    {
+      "base_ring": "rational controlled chart",
+      "compact_local_coefficients": {
+        "Z_d": "tau^0*T_d",
+        "Z_q": "tau^0*T_q",
+        "Z_r": "tau^4*T_r"
+      },
+      "compact_section_orders": {
+        "D_d": 0,
+        "D_q": 0,
+        "D_r": 4
+      },
+      "degree_3_1_1_order": 4,
+      "derivative_order": 4,
+      "exceptional_residual": "(2*Y**5 - 100*Y**3*z + 1000*Y*z**2 + 25*z**2)/2",
+      "exceptional_residual_degree": 5,
+      "exceptional_residual_discriminant_nonzero": true,
+      "geometric_colors": 5,
+      "literal_degree_3_1_1_quotient": "dF/dY",
+      "literal_polynomiality_verified": true,
+      "local_multi_rees_algebra": "A_chart[Z_d,Z_q,Z_r]",
+      "name": "r_cusp_E4",
+      "primitive_exceptional_rees_variable": "e=tau*T_E",
+      "residue_modulus": null,
+      "root_coordinate_weight": 1,
+      "strict_transform_order": 5
+    },
+    {
+      "base_ring": "residue-field controlled chart",
+      "compact_local_coefficients": {
+        "Z_d": "tau^1*T_d",
+        "Z_q": "tau^2*T_q",
+        "Z_r": "tau^2*T_r"
+      },
+      "compact_section_orders": {
+        "D_d": 1,
+        "D_q": 2,
+        "D_r": 2
+      },
+      "degree_3_1_1_order": 7,
+      "derivative_order": 7,
+      "exceptional_residual": "I*(Y**2*(-3 - 4*I) + b*z*(8 - 16*I) + 2*b)",
+      "exceptional_residual_degree": 2,
+      "exceptional_residual_discriminant_nonzero": true,
+      "geometric_colors": 2,
+      "literal_degree_3_1_1_quotient": "dF/dY",
+      "literal_polynomiality_verified": true,
+      "local_multi_rees_algebra": "A_chart[Z_d,Z_q,Z_r]",
+      "name": "triple_E1_ramified",
+      "primitive_exceptional_rees_variable": "e=tau*T_E",
+      "residue_modulus": "b**2 + I",
+      "root_coordinate_weight": 3,
+      "strict_transform_order": 10
+    },
+    {
+      "base_ring": "rational controlled chart",
+      "compact_local_coefficients": {
+        "Z_d": "tau^1*T_d",
+        "Z_q": "tau^0*T_q",
+        "Z_r": "tau^0*T_r"
+      },
+      "compact_section_orders": {
+        "D_d": 1,
+        "D_q": 0,
+        "D_r": 0
+      },
+      "degree_3_1_1_order": 3,
+      "derivative_order": 3,
+      "exceptional_residual": "-I*(Y**4*(-4 + 3*I) + Y**2*z*(-6 - 8*I) + Y*z*(-32 + 64*I) + z**2*(4 - 3*I) + 64*z)/4",
+      "exceptional_residual_degree": 4,
+      "exceptional_residual_discriminant_nonzero": true,
+      "geometric_colors": 8,
+      "literal_degree_3_1_1_quotient": "dF/dY",
+      "literal_polynomiality_verified": true,
+      "local_multi_rees_algebra": "A_chart[Z_d,Z_q,Z_r]",
+      "name": "triple_E2_cluster",
+      "primitive_exceptional_rees_variable": "e=tau*T_E",
+      "residue_modulus": null,
+      "root_coordinate_weight": 1,
+      "strict_transform_order": 4
+    },
+    {
+      "base_ring": "residue-field controlled chart",
+      "compact_local_coefficients": {
+        "Z_d": "tau^0*T_d",
+        "Z_q": "tau^1*T_q",
+        "Z_r": "tau^1*T_r"
+      },
+      "compact_section_orders": {
+        "D_d": 0,
+        "D_q": 1,
+        "D_r": 1
+      },
+      "degree_3_1_1_order": 2,
+      "derivative_order": 2,
+      "exceptional_residual": "Y*(48*Y**2*alpha**2 + 42*Y**2*alpha - 26*Y**2 + 34*alpha**2*z - 200*alpha**2 + 90*alpha*z - 504*alpha + 59*z - 317)",
+      "exceptional_residual_degree": 3,
+      "exceptional_residual_discriminant_nonzero": true,
+      "geometric_colors": 3,
+      "literal_degree_3_1_1_quotient": "dF/dY",
+      "literal_polynomiality_verified": true,
+      "local_multi_rees_algebra": "A_chart[Z_d,Z_q,Z_r]",
+      "name": "qr_E1_A_ramified",
+      "primitive_exceptional_rees_variable": "e=tau*T_E",
+      "residue_modulus": "8*alpha**3 + 16*alpha**2 + 2*alpha - 7",
+      "root_coordinate_weight": 1,
+      "strict_transform_order": 3
+    },
+    {
+      "base_ring": "residue-field controlled chart",
+      "compact_local_coefficients": {
+        "Z_d": "tau^0*T_d",
+        "Z_q": "tau^1*T_q",
+        "Z_r": "tau^0*T_r"
+      },
+      "compact_section_orders": {
+        "D_d": 0,
+        "D_q": 1,
+        "D_r": 0
+      },
+      "degree_3_1_1_order": 1,
+      "derivative_order": 1,
+      "exceptional_residual": "-(-136*Y*alpha**2*z + 800*Y*alpha**2 - 360*Y*alpha*z + 2016*Y*alpha - 236*Y*z + 1268*Y + 68*alpha**2*z**2 - 2064*alpha**2 + 172*alpha*z**2 - 5216*alpha + 109*z**2 - 3312)/4",
+      "exceptional_residual_degree": 1,
+      "exceptional_residual_discriminant_nonzero": true,
+      "geometric_colors": 3,
+      "literal_degree_3_1_1_quotient": "dF/dY",
+      "literal_polynomiality_verified": true,
+      "local_multi_rees_algebra": "A_chart[Z_d,Z_q,Z_r]",
+      "name": "qr_E1_A_unramified",
+      "primitive_exceptional_rees_variable": "e=tau*T_E",
+      "residue_modulus": "8*alpha**3 + 16*alpha**2 + 2*alpha - 7",
+      "root_coordinate_weight": 1,
+      "strict_transform_order": 2
+    },
+    {
+      "base_ring": "residue-field controlled chart",
+      "compact_local_coefficients": {
+        "Z_d": "tau^0*T_d",
+        "Z_q": "tau^0*T_q",
+        "Z_r": "tau^1*T_r"
+      },
+      "compact_section_orders": {
+        "D_d": 0,
+        "D_q": 0,
+        "D_r": 1
+      },
+      "degree_3_1_1_order": 1,
+      "derivative_order": 1,
+      "exceptional_residual": "-(72*Y**2*alpha**2 + 36*Y**2*alpha - 110*Y**2 + 2364*alpha**2*z - 6288*alpha**2 + 1786*alpha*z - 4404*alpha - 1653*z + 4210)/2",
+      "exceptional_residual_degree": 2,
+      "exceptional_residual_discriminant_nonzero": true,
+      "geometric_colors": 3,
+      "literal_degree_3_1_1_quotient": "dF/dY",
+      "literal_polynomiality_verified": true,
+      "local_multi_rees_algebra": "A_chart[Z_d,Z_q,Z_r]",
+      "name": "qr_E1_B_ramified",
+      "primitive_exceptional_rees_variable": "e=tau*T_E",
+      "residue_modulus": "8*alpha**3 + 16*alpha**2 + 2*alpha - 7",
+      "root_coordinate_weight": 1,
+      "strict_transform_order": 2
+    },
+    {
+      "base_ring": "residue-field controlled chart",
+      "compact_local_coefficients": {
+        "Z_d": "tau^0*T_d",
+        "Z_q": "tau^1*T_q",
+        "Z_r": "tau^1*T_r"
+      },
+      "compact_section_orders": {
+        "D_d": 0,
+        "D_q": 1,
+        "D_r": 1
+      },
+      "degree_3_1_1_order": 2,
+      "derivative_order": 2,
+      "exceptional_residual": "48*Y**3*alpha**2 + 42*Y**3*alpha - 26*Y**3 - 40*Y**2*alpha**2 - 48*Y**2*alpha + 6*Y**2 + 34*Y*alpha**2*z + 200*Y*alpha**2 + 90*Y*alpha*z + 480*Y*alpha + 59*Y*z + 290*Y - 188*alpha**2*z - 1152*alpha**2 - 474*alpha*z - 2936*alpha - 300*z - 1880",
+      "exceptional_residual_degree": 3,
+      "exceptional_residual_discriminant_nonzero": true,
+      "geometric_colors": 9,
+      "literal_degree_3_1_1_quotient": "dF/dY",
+      "literal_polynomiality_verified": true,
+      "local_multi_rees_algebra": "A_chart[Z_d,Z_q,Z_r]",
+      "name": "qr_E2_A",
+      "primitive_exceptional_rees_variable": "e=tau*T_E",
+      "residue_modulus": "8*alpha**3 + 16*alpha**2 + 2*alpha - 7",
+      "root_coordinate_weight": 1,
+      "strict_transform_order": 3
+    },
+    {
+      "base_ring": "residue-field controlled chart",
+      "compact_local_coefficients": {
+        "Z_d": "tau^0*T_d",
+        "Z_q": "tau^0*T_q",
+        "Z_r": "tau^1*T_r"
+      },
+      "compact_section_orders": {
+        "D_d": 0,
+        "D_q": 0,
+        "D_r": 1
+      },
+      "degree_3_1_1_order": 1,
+      "derivative_order": 1,
+      "exceptional_residual": "-(72*Y**2*alpha**2 + 36*Y**2*alpha - 110*Y**2 + 432*Y*alpha**2 + 264*Y*alpha - 256*Y + 2364*alpha**2*z - 8016*alpha**2 + 1786*alpha*z - 5664*alpha - 1653*z + 5392)/2",
+      "exceptional_residual_degree": 2,
+      "exceptional_residual_discriminant_nonzero": true,
+      "geometric_colors": 6,
+      "literal_degree_3_1_1_quotient": "dF/dY",
+      "literal_polynomiality_verified": true,
+      "local_multi_rees_algebra": "A_chart[Z_d,Z_q,Z_r]",
+      "name": "qr_E2_B",
+      "primitive_exceptional_rees_variable": "e=tau*T_E",
+      "residue_modulus": "8*alpha**3 + 16*alpha**2 + 2*alpha - 7",
+      "root_coordinate_weight": 1,
+      "strict_transform_order": 2
+    }
+  ],
+  "degree_3_1_1_gate": {
+    "global_H0_membership": "uncertified_without_global_overlap_gluing",
+    "literal_on_every_controlled_chart": true,
+    "literal_on_punctured_conductor": true
+  },
+  "downstream": {
+    "affine_space_recognition": "not_reached",
+    "entrywise_inverse_adjugate_polynomiality": "not_reached_globally",
+    "global_regular_SNC_source": "not_constructed",
+    "local_derivative_denominator_cancellation": "passed_on_all_13_chart_types"
+  },
+  "general_local_theorem": {
+    "degree_gate": "3*a_d+a_q+a_r=N-r",
+    "hypothesis": "X=X_0+tau^r*Y and tau is a regular exceptional parameter",
+    "principal_multi_rees": "for D_j=a_j*E, the local algebra is A[tau^a_j*T_j] isomorphic to A[Z_j]",
+    "strict_transform_identity": "P=tau^N*F implies P_X=tau^(N-r)*dF/dY"
+  },
+  "positive_colors_total": 53,
+  "positive_exceptional_colors_covered": 48,
+  "positive_generic_colors": 5,
+  "schema": "f20-exceptional-cox-atlas-v1",
+  "status": "controlled_transform_atlas_and_punctured_conductor_cocycle_certified_global_gluing_open"
+}

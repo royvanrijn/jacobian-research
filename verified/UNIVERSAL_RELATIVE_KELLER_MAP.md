@@ -731,12 +731,23 @@ For Lecacheux's generic `F_{20}` polynomial, put `d=s^2+4` and
 
 \[
 \begin{aligned}
- a_4&=td-2s-\frac{17}{4},&
+ a_4&=t^2d-2s-\frac{17}{4},&
  a_3&=3td+d+\frac{13}{2}s+1,\\
  a_2&=-td-\frac{11}{2}s+8,&
  a_1&=s-6,&a_0&=1.
 \end{aligned}
 \]
+
+The square on `t` in `a_4` is essential.  It is present in Lecacheux's
+Theorem 3.1; the transcription in Jensen--Ledet--Yui, Theorem 2.3.6, drops
+it.  For example, `(s,t)=(3,-1/2)` gives
+
+\[
+ T^5-7T^4+14T^3-2T^2-3T+1,
+\]
+
+the sign-normalized reciprocal of Lecacheux's first displayed `F_{20}`
+example.
 
 Then (3.21), on `(s-6)a_3\ne0`, is an explicit rational `F_{20}` target
 surface, and its inverse polynomial is Lecacheux's polynomial divided by
@@ -810,9 +821,12 @@ and (3.21) gives, on `QR_1R_3\ne0`,
 }                                                        \tag{3.23}
 \]
 
-Its inverse polynomial is `Q^2P_{C_5}(S)/R_1`.  The generic-polynomial
+Its inverse polynomial is `Q^2P_{C_5}(S)/R_1`.  The `F_{20}` formula is
+taken from
+[Lecacheux, Theorem 3.1](https://doi.org/10.4064/aa-86-3-207-216), with the
+sign-normalized reciprocal described above.  The remaining generic-polynomial
 claims and formulas are recorded in
-[Jensen--Ledet--Yui, Theorems 2.3.6--2.3.7](https://library.slmath.org/books/Book45/files/book45.pdf),
+[Jensen--Ledet--Yui, Theorem 2.3.7](https://library.slmath.org/books/Book45/files/book45.pdf),
 [Hashimoto--Tsunogai](https://doi.org/10.3792/pjaa.79.142), and
 [Kida--Renault--Yokoyama](https://doi.org/10.1142/S1793042109002250).
 
@@ -1228,7 +1242,10 @@ The checker verifies the vertical determinant-one identities in the compact
 chart, the unchanged-coordinate block promotion in every tested rank, the
 normalized inverse equation and coefficientwise compiler through degree
 twelve, the `U_N=V_N x A^1` reconstruction, and the compressed
-specialization formulas.  It also verifies the adversarial witness cards and
+specialization formulas.  The Lecacheux specialization includes the primary
+`t^2d` quartic coefficient and its first exact `F_{20}` example, guarding
+against the missing-square secondary transcription.  It also verifies the
+adversarial witness cards and
 the all-rank `T^N-T-1` target formula through rank twelve, as well as the
 degree-drop, bad-translation, and repeated-root boundaries.  On the Osada
 `S_N` witnesses in ranks three through eight, it additionally verifies the

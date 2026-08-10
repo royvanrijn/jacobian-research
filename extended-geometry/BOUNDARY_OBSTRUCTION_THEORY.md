@@ -815,6 +815,16 @@ saturations, and identities.
 
 ## 7. Five repository prototypes
 
+The cubic, plane-JC, and restricted-Weyl prototypes below are synchronized
+by the checked
+[`G0`--`G4` programme ledger](../verified/SUPPORT_SATURATION_PATHS.json).
+The ledger records which upstream construction, localization, conductor,
+depth, height, Rees, and effectivity obligations are proved, open, or known
+to fail for the current case.  It is a routing certificate, not a new
+vanishing theorem.
+
+<!-- status-consumer: SST1 12c5cb15e8b6de26 -->
+
 ### 7.1 Cubic normalization
 
 Take
@@ -838,6 +848,9 @@ is consequential: cotangent saturation implies the required
 annihilator/Fitting equality.  The smooth-symbol 24-parameter family is now
 closed by a formal-gauge argument; singular leading symbols remain
 separate.
+In the programme ledger this is the `C0`--`C3` route: the finite presentation
+is available, while the support-hull and `S_1` certificates remain the two
+general cubic gates.
 
 For the smooth central symbol, the globally unit-pruned presentation has a
 minimal cokernel resolution of ranks
@@ -1018,6 +1031,10 @@ Ore localization solves the easy chartwise problem.  The required order is:
 
 A fixed-symbol obstruction can terminate one branch but cannot replace the
 relative Kuranishi section over the classical-symbol base.
+These are precisely `W0`--`W5`: the already certified all-pole class stops at
+localized-solvability gate `W1`, while any future locally soluble family must
+still pass Rees strictness, relative height, and `S_1` on one and the same
+obstruction module.
 
 ### 7.5 Plane Jacobian boundary
 
@@ -1040,6 +1057,9 @@ ledger.  Its dependency-sensitive form isolates the exact input-to-output
 deficit, and its normal-valuation adapter derives available orders from a
 certified frontier of omitted Newton support.  It still does not manufacture
 the ambient module or residue class.
+This is the `P0`--`P4` route.  In particular, construction/truncation of the
+matching cokernel, localized vanishing of the residue, relative height, and
+`S_1` are four distinct certificates before saturation can be invoked.
 
 <!-- status-consumer: CJT1 afb70f90ff10f3d7 -->
 

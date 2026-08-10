@@ -1,0 +1,463 @@
+{
+  "claim_boundary": "This is a necessary carrier reduction.  It assigns an explicit Hurwitz passport to every solution of the universal operator, but it neither proves that a coefficient polynomial c,N exists for every partition nor realizes the lower Laurent system.",
+  "excluded_or_deferred_loci": [
+    {
+      "locus": "k=2",
+      "reason": "a double root makes the local and infinity indicial coefficient resonant"
+    },
+    {
+      "locus": "gcd(mu_1,...,mu_r)>1",
+      "reason": "rational homogeneous coefficients can occur at descents smaller than k and are not ordinary target shears"
+    }
+  ],
+  "f2_k5_specializations": [
+    {
+      "branch_cycle_parity": {
+        "over_0": "even",
+        "over_infinity": "even",
+        "over_third_value": "even"
+      },
+      "distinct_roots": 4,
+      "geometric_monodromy_constraint": "contained_in_alternating_group",
+      "k": 5,
+      "local_orders_at_c_roots": [
+        -3,
+        1,
+        1,
+        1
+      ],
+      "numerator_degree": 0,
+      "passport": {
+        "over_0": [
+          1,
+          1,
+          1
+        ],
+        "over_infinity": [
+          3
+        ],
+        "over_third_value": [
+          3
+        ]
+      },
+      "ramification_check": {
+        "over_0": 0,
+        "over_infinity": 2,
+        "over_third_value": 2,
+        "total": 4,
+        "two_degree_minus_two": 4
+      },
+      "residue_degree": 3,
+      "root_multiplicity_partition": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "simple_roots": 3
+    },
+    {
+      "branch_cycle_parity": {
+        "over_0": "even",
+        "over_infinity": "even",
+        "over_third_value": "even"
+      },
+      "distinct_roots": 3,
+      "geometric_monodromy_constraint": "contained_in_alternating_group",
+      "k": 5,
+      "local_orders_at_c_roots": [
+        -3,
+        -3,
+        1
+      ],
+      "numerator_degree": 1,
+      "passport": {
+        "over_0": [
+          5,
+          1
+        ],
+        "over_infinity": [
+          3,
+          3
+        ],
+        "over_third_value": [
+          3,
+          1,
+          1,
+          1
+        ]
+      },
+      "ramification_check": {
+        "over_0": 4,
+        "over_infinity": 4,
+        "over_third_value": 2,
+        "total": 10,
+        "two_degree_minus_two": 10
+      },
+      "residue_degree": 6,
+      "root_multiplicity_partition": [
+        2,
+        2,
+        1
+      ],
+      "simple_roots": 1
+    }
+  ],
+  "fixed_carrier_linear_reconstruction": {
+    "forced_k5_example": {
+      "A_up_to_scale": "v*(v-1)*(v^2-3*v+3)",
+      "c": "v*(v-1)^2*(v^2-3*v+3)",
+      "kernel_dimension": 1,
+      "matrix_shape": [
+        9,
+        6
+      ],
+      "rank": 5
+    },
+    "generic_k5_comparison": {
+      "c": "v*(v-1)^2*(v-2)*(v-3)",
+      "kernel_dimension": 0,
+      "matrix_shape": [
+        9,
+        6
+      ],
+      "rank": 6
+    },
+    "linear_system": "Phi_c(A,kappa)=k*c*A'-(k-1)*c'*A-kappa*c=0, deg(A)<=k-1",
+    "uniqueness": "for primitive c, ker(k*c*d/dv-(k-1)*c')=0; hence any nonzero projective solution (A,kappa) is unique",
+    "unknown_count": "k coefficients of A plus kappa"
+  },
+  "hypotheses": {
+    "carrier_chart": "q=y, v=x*y^k, x=v*q^-k",
+    "carrier_degree": "deg(c)=k>=3",
+    "coprime_common_powers": "gcd(m,n)=1",
+    "leading_edge": [
+      "P=a*q^(-k*m)*c(v)^m+lower",
+      "R=b*q^(-k*n)*c(v)^n+lower"
+    ],
+    "nonvanishing": "a*b*Jacobian!=0",
+    "primitive_root_partition": "gcd(mu_1,...,mu_r)=1",
+    "two_form": "dx wedge dy=-q^-k*dq wedge dv"
+  },
+  "partition_regression_census": {
+    "admitted_profiles_checked": 6970,
+    "logical_role": "bounded regression census; the theorem follows from the symbolic divisor and derivative identities",
+    "maximum_k": 24,
+    "rows": [
+      {
+        "admitted_passports": 1,
+        "all_partitions": 3,
+        "imprimitive_deferred": 1,
+        "k": 3,
+        "primitive_partitions": 2,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 2,
+        "all_partitions": 5,
+        "imprimitive_deferred": 2,
+        "k": 4,
+        "primitive_partitions": 3,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 5,
+        "all_partitions": 7,
+        "imprimitive_deferred": 1,
+        "k": 5,
+        "primitive_partitions": 6,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 6,
+        "all_partitions": 11,
+        "imprimitive_deferred": 4,
+        "k": 6,
+        "primitive_partitions": 7,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 13,
+        "all_partitions": 15,
+        "imprimitive_deferred": 1,
+        "k": 7,
+        "primitive_partitions": 14,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 16,
+        "all_partitions": 22,
+        "imprimitive_deferred": 5,
+        "k": 8,
+        "primitive_partitions": 17,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 26,
+        "all_partitions": 30,
+        "imprimitive_deferred": 3,
+        "k": 9,
+        "primitive_partitions": 27,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 33,
+        "all_partitions": 42,
+        "imprimitive_deferred": 8,
+        "k": 10,
+        "primitive_partitions": 34,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 54,
+        "all_partitions": 56,
+        "imprimitive_deferred": 1,
+        "k": 11,
+        "primitive_partitions": 55,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 62,
+        "all_partitions": 77,
+        "imprimitive_deferred": 14,
+        "k": 12,
+        "primitive_partitions": 63,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 99,
+        "all_partitions": 101,
+        "imprimitive_deferred": 1,
+        "k": 13,
+        "primitive_partitions": 100,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 118,
+        "all_partitions": 135,
+        "imprimitive_deferred": 16,
+        "k": 14,
+        "primitive_partitions": 119,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 166,
+        "all_partitions": 176,
+        "imprimitive_deferred": 9,
+        "k": 15,
+        "primitive_partitions": 167,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 208,
+        "all_partitions": 231,
+        "imprimitive_deferred": 22,
+        "k": 16,
+        "primitive_partitions": 209,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 295,
+        "all_partitions": 297,
+        "imprimitive_deferred": 1,
+        "k": 17,
+        "primitive_partitions": 296,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 346,
+        "all_partitions": 385,
+        "imprimitive_deferred": 38,
+        "k": 18,
+        "primitive_partitions": 347,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 488,
+        "all_partitions": 490,
+        "imprimitive_deferred": 1,
+        "k": 19,
+        "primitive_partitions": 489,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 581,
+        "all_partitions": 627,
+        "imprimitive_deferred": 45,
+        "k": 20,
+        "primitive_partitions": 582,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 774,
+        "all_partitions": 792,
+        "imprimitive_deferred": 17,
+        "k": 21,
+        "primitive_partitions": 775,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 944,
+        "all_partitions": 1002,
+        "imprimitive_deferred": 57,
+        "k": 22,
+        "primitive_partitions": 945,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 1253,
+        "all_partitions": 1255,
+        "imprimitive_deferred": 1,
+        "k": 23,
+        "primitive_partitions": 1254,
+        "squarefree_obstructed": 1
+      },
+      {
+        "admitted_passports": 1480,
+        "all_partitions": 1575,
+        "imprimitive_deferred": 94,
+        "k": 24,
+        "primitive_partitions": 1481,
+        "squarefree_obstructed": 1
+      }
+    ]
+  },
+  "reproduction_command": ".venv/bin/python plane-jc/cas/verify_common_power_carrier_wronskian.py",
+  "schema": "plane-jc.common-power-carrier-wronskian.v1",
+  "software": {
+    "python": "sympy exact symbolic arithmetic"
+  },
+  "status": "proved-general-reduction-to-three-point-hurwitz-data",
+  "symbolic_reduction": {
+    "coefficient_shape": "H=rad(c)*N/c^(m+n)",
+    "derivative_identity": "rad(c)*N*g'/g=k*(rad(c)*N)'-(k-1)*(c'/c)*rad(c)*N",
+    "exceptional_resonance": "k=2 and mu_alpha=2",
+    "finite_indicial_coefficient": "k-mu_alpha*(k-1)",
+    "finite_root_order": "ord_alpha(H)=1-mu_alpha*(m+n)",
+    "forced_descent": "delta=k*(m+n-1)+1",
+    "residue_map": "g=rad(c)^k*N^k/c^(k-1)",
+    "universal_operator": "k*(rad(c)*N)'-(k-1)*(c'/c)*rad(c)*N=constant_nonzero"
+  },
+  "target_monomial_and_descent": {
+    "bounded_power_pairs_checked": 127,
+    "forced_descent": "k*(m+n-1)+1",
+    "leading_target_orders": {
+      "h": "0",
+      "pi": "k"
+    },
+    "maximum_m_or_n": 14,
+    "removable_shears": "k,2k,...,k*(m+n-1)",
+    "sample_target_monomials": [
+      {
+        "A": 1,
+        "B": 1,
+        "determinant": 1,
+        "h": "P^3/R^2",
+        "identity": "1*3-1*2=1",
+        "m": 2,
+        "n": 3,
+        "pi": "P^1/R^1",
+        "target_exponent_matrix": [
+          [
+            1,
+            -1
+          ],
+          [
+            3,
+            -2
+          ]
+        ]
+      },
+      {
+        "A": 3,
+        "B": 2,
+        "determinant": 1,
+        "h": "P^5/R^3",
+        "identity": "2*5-3*3=1",
+        "m": 3,
+        "n": 5,
+        "pi": "P^3/R^2",
+        "target_exponent_matrix": [
+          [
+            3,
+            -2
+          ],
+          [
+            5,
+            -3
+          ]
+        ]
+      },
+      {
+        "A": 5,
+        "B": 3,
+        "determinant": 1,
+        "h": "P^7/R^4",
+        "identity": "3*7-5*4=1",
+        "m": 4,
+        "n": 7,
+        "pi": "P^5/R^3",
+        "target_exponent_matrix": [
+          [
+            5,
+            -3
+          ],
+          [
+            7,
+            -4
+          ]
+        ]
+      },
+      {
+        "A": 3,
+        "B": 2,
+        "determinant": 1,
+        "h": "P^8/R^5",
+        "identity": "2*8-3*5=1",
+        "m": 5,
+        "n": 8,
+        "pi": "P^3/R^2",
+        "target_exponent_matrix": [
+          [
+            3,
+            -2
+          ],
+          [
+            8,
+            -5
+          ]
+        ]
+      }
+    ],
+    "target_two_form_order": "k*(m+n)",
+    "transverse_index": 1
+  },
+  "universal_passport": {
+    "coefficient_polynomial": "N is squarefree, coprime to c, and has degree L=k-r-1",
+    "monodromy_parity": {
+      "arithmetic_boundary": "this constrains geometric monodromy only; Galois action on constants may enlarge the arithmetic group",
+      "even_k": "the branch permutation at the third value is odd, so geometric monodromy is not contained in A_f",
+      "odd_k": "all three branch permutations are even, so geometric monodromy is contained in A_f"
+    },
+    "notation": {
+      "L": "k-r-1",
+      "f": "k*L+s",
+      "partition": "mu_1+...+mu_r=k",
+      "pole_parts": "p_i=(k-1)*mu_i-k for mu_i>=2",
+      "s": "number of mu_i equal to one"
+    },
+    "passport": {
+      "over_0": "(k^L,1^s)",
+      "over_infinity": "(p_i : mu_i>=2)",
+      "over_third_value": "(k-2,1^(f-k+2))"
+    },
+    "simple_double_corollary": {
+      "hypothesis": "t double roots and s=k-2*t>=1 simple roots",
+      "numerator_degree": "t-1",
+      "passport": "(k^(t-1),1^(k-2*t)) | ((k-2)^t) | (k-2,1^((t-1)*(k-2)))",
+      "residue_degree": "t*(k-2)"
+    },
+    "squarefree_gate": "r=k would force deg(N)=-1 and is impossible",
+    "third_source_point": "v=infinity"
+  }
+}

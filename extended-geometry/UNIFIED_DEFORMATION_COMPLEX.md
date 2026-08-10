@@ -327,6 +327,32 @@ forces the obstruction to vanish globally.  This is precisely the
 It proves existence of a global correction; it does not say that a
 particular localized formula is already pole-free.
 
+The structural version is explicit: if the coherent module \(E_m\) is
+`S_1` and the boundary contains no irreducible component of its Fitting
+support, then (18) follows automatically. For a filtered presentation the
+same hypotheses must hold on the actual Rees obstruction module; generic
+local freeness or associated-graded exactness alone is insufficient. See
+the [restricted-Weyl specialization](../verified/SUPPORT_SATURATION_PRINCIPLE.md#restricted-weyl-deformation).
+
+The operational path is the `W0`--`W5` row of
+[`SUPPORT_SATURATION_PATHS.json`](../verified/SUPPORT_SATURATION_PATHS.json):
+
+| Stage | Required certificate | Current boundary |
+|---|---|---|
+| `W0` / `G0` | Construct the relative coherent module \(E_m\), not only a fixed-symbol fiber matrix | available for the normalized degree-five family |
+| `W1` / `G1` | Solve on the easy open and give conductor-compatible primitives/null-homotopies | fails for the already certified all-pole obstruction; open for future locally soluble incidence families |
+| `W2` / Rees adapter | Prove strictness of the actual correction, gauge, and mismatch maps and exclude unwanted \(t\)-torsion | open |
+| `W3` / `G2` | Exclude boundary-containing minimal Fitting components on the same ordinary or Rees module | open |
+| `W4` / `G3` | Prove \(S_1\) or direct associated-prime avoidance on that module | open |
+| `W5` / `G4` | Apply `SST1`; then separately prove finite-tail effectivity if a bounded algebraic correction is required | conditional |
+
+Thus support saturation is not an alternate proof against the known
+all-pole class: that class stops at `W1`.  Nor can a non-strict Rees
+presentation be repaired at `W5`; it must return to `W2`.  A boundary
+Fitting component stops at `W3` and remains an exceptional component.
+
+<!-- status-consumer: SST1 12c5cb15e8b6de26 -->
+
 Apparent denominators must therefore be treated in the quotient torsor:
 
 1. solve the localized correction equation;

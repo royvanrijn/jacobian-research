@@ -347,14 +347,24 @@ This agrees with, rather than contradicts, the approximate-root structure in
 the degree-108 reduction.  Its value here is that it follows from the
 Wronskian hierarchy alone and is independent of the five dessins.
 
-## 8. Next obstruction
+## 8. Exact terminal cokernel
 
-The frontier is now the normal-form class of `R` in (6.1).  A useful next
-calculation is to quotient `R` by the deficit-1 and deficit-2 source/target
-modes above and extract a root- or residue-level invariant.  Because deficit
-3 has no regular homogeneous mode, one nonzero scalar invariant is enough to
-remove the entire no-vertical-edge `(72,108)` residue.
+The normal-form calculation has now been completed over the intrinsic
+quintic first-block field.  The two `phi` modes above give the full
+two-dimensional `(B,E)` kernel, and the three `f` modes give the full
+three-dimensional homogeneous `(C,F)` kernel.  The derivative-`G` map is
+injective; its declared 20-dimensional target has an eight-dimensional
+cokernel, seven coordinates of which give nonzero parameter equations for the
+inhomogeneous forcing.  Together with the eighteen nonzero coefficients of
+`-BG'+FC'`, this leaves 25 sparse degree-three/four equations in five
+parameters.
 
-The second Newton polygon, with the additional vertical vertices, must then be
-handled separately; the same graded source-symmetry calculation applies, but
-the regularity window at `X=0` is different.
+The Newton condition `deg(B)=8` is a principal open.  After adjoining its
+inverse, the exact five-parameter ideal is `(1)`.  Thus the normal-form class
+does not vanish for any of the five conjugate top dessins, and the
+no-vertical-edge residue is empty.  See
+[`plane-jc/JC2_72_108_BELYI_DEFORMATION_CLOSURE.md`](plane-jc/JC2_72_108_BELYI_DEFORMATION_CLOSURE.md)
+for the coefficient-field reconstruction, arithmetic-monodromy audit, linear
+maps, certificate, and reproduction commands.  The second Newton polygon is
+handled by the separate certified `(72,108)` closure recorded in
+`MATH_STATUS.json`.

@@ -1,0 +1,187 @@
+{
+  "schema": "support-saturation-paths.v1",
+  "theorem_status_id": "SST1",
+  "formal_core_status_id": "SST1F",
+  "canonical_theorem": "verified/SUPPORT_SATURATION_PRINCIPLE.md",
+  "common_gate": [
+    {
+      "id": "G0",
+      "name": "finite obstruction module",
+      "requirement": "Construct a finite module E over a commutative Noetherian coefficient ring A, its boundary ideal I, and a finite presentation when a colon certificate is intended."
+    },
+    {
+      "id": "G1",
+      "name": "localized vanishing",
+      "requirement": "Prove that the distinguished defect vanishes outside V(I), using localized corrections and conductor compatibility when corrections are constructed on normalization charts."
+    },
+    {
+      "id": "G2",
+      "name": "positive relative height",
+      "requirement": "Prove that no minimal component of Supp(E) is contained in V(I)."
+    },
+    {
+      "id": "G3",
+      "name": "no embedded boundary support",
+      "requirement": "Prove that E is S1, or directly that no associated prime of E contains I."
+    },
+    {
+      "id": "G4",
+      "name": "support saturation",
+      "requirement": "Conclude H_I^0(E)=0, equivalently N:I^infinity=N for a presentation E=F/N, and only then kill the defect."
+    }
+  ],
+  "programmes": {
+    "cubic-keller": {
+      "module": "Q=Omega_{B/A}",
+      "support_ideal": "I=Fitt_3^A(B)",
+      "target": "H_I^0(Q)=0 and N:I^infinity=N; together with T=T^[2], obtain cotangent cyclicity and point-flatness.",
+      "canonical_source": "cancellation/CUBIC_NORMALIZATION_FRONTEND.md",
+      "claim_status": "open",
+      "not_applicable_gates": [
+        {
+          "gate": "G1",
+          "reason": "The cubic path proves the entire module H_I^0(Q) vanishes rather than killing one preconstructed defect class, so no separate localized-vanishing certificate is needed."
+        }
+      ],
+      "model_frontiers": [
+        {
+          "status_id": "KDSQ6",
+          "scope": "The complete deterministic quartic nongauge complements for the six singular squarefree cubic symbols.",
+          "C1": "fails on every geometric fiber of every displayed full complement family by a parameter-independent multiplicity-six Ext^2 support-hull obstruction",
+          "C2": "passes on every geometric fiber by strict Rees base change from the saturated central cotangent presentation",
+          "programme_effect": "Fiberwise base change is closed on the complete quartic complement families. The global Keller-compatible C1 and C2 gates remain open because higher formal orders, normality, and Keller-open compatibility are not supplied."
+        }
+      ],
+      "stages": [
+        {
+          "id": "C0",
+          "gate": "G0",
+          "status": "proved",
+          "requirement": "Use Proposition 1.17's finite presentation of Q and the collision ideal I."
+        },
+        {
+          "id": "C1",
+          "gate": "G2",
+          "status": "open",
+          "requirement": "Prove T -> T^[2] is onto; then Q has pure two-dimensional full support and the finite collision locus has relative height at least two. Under a Cartier Kähler different, Proposition 1.15a identifies this with Cohen--Macaulayness of the local normalization."
+        },
+        {
+          "id": "C2",
+          "gate": "G3",
+          "status": "open",
+          "requirement": "Prove Q is S1, or give an equivalent associated-prime, regular-element, Cohen--Macaulay/perfect, or direct-colon certificate."
+        },
+        {
+          "id": "C3",
+          "gate": "G4",
+          "status": "conditional",
+          "requirement": "Apply SST1 after C1 and C2; Proposition 1.16 then identifies the primitive-conormal defect with H_I^0(Q)."
+        }
+      ],
+      "failure_routes": [
+        "If T -> T^[2] is not onto, retain the nonzero support-hull defect L=C/T.",
+        "If a minimal component of Supp(Q) lies in V(I), support saturation cannot remove it.",
+        "If an embedded associated prime contains I, extract its I-supported torsion class instead of invoking SST1."
+      ]
+    },
+    "plane-jc": {
+      "module": "M=coker(Phi) for the conductor/gauge-jet matching map",
+      "support_ideal": "I_Z defining the finite surviving Case-1 stratum Z",
+      "target": "rho in H_Z^0(M), followed by H_Z^0(M)=0.",
+      "canonical_source": "plane-jc/CONDUCTOR_JET_TRUNCATION.md",
+      "claim_status": "open",
+      "not_applicable_gates": [],
+      "model_frontiers": [],
+      "stages": [
+        {
+          "id": "P0",
+          "gate": "G0",
+          "status": "open",
+          "requirement": "Compile the actual finite matching map Phi and prove its conductor/contact-loss truncation is independent of omitted Newton bands."
+        },
+        {
+          "id": "P1",
+          "gate": "G1",
+          "status": "open",
+          "requirement": "Construct rho in coker(Phi) and prove rho vanishes away from Z, including vanishing of any divisorial relative-different defect before forming a finite-support class."
+        },
+        {
+          "id": "P2",
+          "gate": "G2",
+          "status": "open",
+          "requirement": "Prove Z contains no minimal component of Supp(M); a nonzero module supported entirely on Z fails this gate."
+        },
+        {
+          "id": "P3",
+          "gate": "G3",
+          "status": "open",
+          "requirement": "Prove M is S1 or certify associated-prime avoidance/direct presentation saturation."
+        },
+        {
+          "id": "P4",
+          "gate": "G4",
+          "status": "conditional",
+          "requirement": "Apply SST1 after P0--P3 to conclude rho=0."
+        }
+      ],
+      "failure_routes": [
+        "A surviving divisorial different defect means localized vanishing has not been reached.",
+        "If M is nonzero and supported entirely on Z, prove componentwise surjectivity of Phi or enlarge the coefficient family.",
+        "A nonzero associated prime over I_Z is an obstruction class, not a removable presentation artifact."
+      ]
+    },
+    "restricted-weyl": {
+      "module": "E_m=coker(d_{1,m}) or its strict Rees obstruction module",
+      "support_ideal": "the boundary ideal b, or its homogeneous Rees lift J",
+      "target": "vanishing of the global order-m obstruction after localized solution and conductor descent.",
+      "canonical_source": "extended-geometry/UNIFIED_DEFORMATION_COMPLEX.md",
+      "claim_status": "open",
+      "not_applicable_gates": [],
+      "model_frontiers": [],
+      "stages": [
+        {
+          "id": "W0",
+          "gate": "G0",
+          "status": "proved",
+          "requirement": "Use the relative finite coherent obstruction module rather than only a fixed-symbol fiber matrix."
+        },
+        {
+          "id": "W1",
+          "gate": "G1",
+          "status": "fails_for_current_case",
+          "requirement": "Solve the localized correction equation and supply conductor-compatible primitives. The certified all-pole degree-five obstruction does not satisfy this hypothesis."
+        },
+        {
+          "id": "W2",
+          "gate": "G0",
+          "status": "open",
+          "requirement": "For a filtered claim, prove strictness of the actual Rees correction, gauge, and mismatch maps and exclude unwanted t-torsion."
+        },
+        {
+          "id": "W3",
+          "gate": "G2",
+          "status": "open",
+          "requirement": "Prove that the boundary contains no minimal Fitting component of E_m or of the Rees obstruction module."
+        },
+        {
+          "id": "W4",
+          "gate": "G3",
+          "status": "open",
+          "requirement": "Prove S1 or direct associated-prime avoidance for the same module used in W2--W3."
+        },
+        {
+          "id": "W5",
+          "gate": "G4",
+          "status": "conditional",
+          "requirement": "Apply SST1 after W1--W4; for a bounded algebraic solution also supply the separate finite-tail effectivity hypothesis."
+        }
+      ],
+      "failure_routes": [
+        "A class nonzero on the localized easy open is a genuine obstruction and is outside support saturation.",
+        "A Fitting component contained in the boundary fails relative height and must be analyzed as an exceptional component.",
+        "Failure of Rees strictness is a presentation/gauge mismatch; it cannot be removed by specializing to the associated graded module.",
+        "Boundary vanishing gives existence of a global correction but not finite filtration effectivity."
+      ]
+    }
+  }
+}

@@ -314,9 +314,12 @@ The resulting atomic-spectrum programme has the following present boundary:
   established marked-root mechanisms;
 - (7) is an explicit non-quasi-torus atom and proves non-generation by all
   positive-dimensional quasi-torus generators;
-- exact counts of all stable atomic classes and recognition of the full
-  quadratic-gauge-generated submonoid remain open.  Unrestricted cubic
-  uniqueness is false.
+- the remaining degreewise classification problem is the geometry of the
+  [candidate stable Keller-moduli object](../extended-geometry/STABLE_KELLER_MODULI_PROBLEM.md):
+  its dimension, irreducible components, and componentwise generic
+  monodromy.  The positive-dimensional weighted loci and the infinite cubic
+  set do not determine those invariants;
+- recognition of the full quadratic-gauge-generated submonoid remains open.
 
 ## 5. Reproduction
 

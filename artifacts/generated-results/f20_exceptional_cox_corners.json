@@ -1,0 +1,344 @@
+{
+  "corner_charts": [
+    {
+      "compact_local_generators": {
+        "Z_d": "u^0*v^0*T_d",
+        "Z_q": "u^0*v^0*T_q",
+        "Z_r": "u^4*v^8*T_r"
+      },
+      "compact_orders": {
+        "D_d": [
+          0,
+          0
+        ],
+        "D_q": [
+          0,
+          0
+        ],
+        "D_r": [
+          4,
+          8
+        ]
+      },
+      "corner_residual": "(2*Y**5 + 25)/2",
+      "corner_residual_degree": 5,
+      "corner_residual_generically_separable": true,
+      "degree_3_1_1_orders": [
+        4,
+        8
+      ],
+      "derivative_orders": [
+        4,
+        8
+      ],
+      "equation_orders": [
+        5,
+        10
+      ],
+      "literal_polynomiality_verified": true,
+      "literal_quotient": "dF/dY",
+      "name": "r_cusp_E1_E2",
+      "root_weights": [
+        1,
+        2
+      ]
+    },
+    {
+      "compact_local_generators": {
+        "Z_d": "u^0*v^0*T_d",
+        "Z_q": "u^0*v^0*T_q",
+        "Z_r": "u^8*v^4*T_r"
+      },
+      "compact_orders": {
+        "D_d": [
+          0,
+          0
+        ],
+        "D_q": [
+          0,
+          0
+        ],
+        "D_r": [
+          8,
+          4
+        ]
+      },
+      "corner_residual": "(2*Y**5 + 25)/2",
+      "corner_residual_degree": 5,
+      "corner_residual_generically_separable": true,
+      "degree_3_1_1_orders": [
+        8,
+        4
+      ],
+      "derivative_orders": [
+        8,
+        4
+      ],
+      "equation_orders": [
+        10,
+        5
+      ],
+      "literal_polynomiality_verified": true,
+      "literal_quotient": "dF/dY",
+      "name": "r_cusp_E2_E4",
+      "root_weights": [
+        2,
+        1
+      ]
+    },
+    {
+      "compact_local_generators": {
+        "Z_d": "u^0*v^0*T_d",
+        "Z_q": "u^0*v^0*T_q",
+        "Z_r": "u^4*v^2*T_r"
+      },
+      "compact_orders": {
+        "D_d": [
+          0,
+          0
+        ],
+        "D_q": [
+          0,
+          0
+        ],
+        "D_r": [
+          4,
+          2
+        ]
+      },
+      "corner_residual": "25*(40*Y + 1)/2",
+      "corner_residual_degree": 1,
+      "corner_residual_generically_separable": true,
+      "degree_3_1_1_orders": [
+        4,
+        2
+      ],
+      "derivative_orders": [
+        4,
+        2
+      ],
+      "equation_orders": [
+        5,
+        3
+      ],
+      "literal_polynomiality_verified": true,
+      "literal_quotient": "dF/dY",
+      "name": "r_cusp_E4_E3_unramified",
+      "root_weights": [
+        1,
+        1
+      ]
+    },
+    {
+      "compact_local_generators": {
+        "Z_d": "u^0*v^0*T_d",
+        "Z_q": "u^0*v^0*T_q",
+        "Z_r": "u^4*v^4*T_r"
+      },
+      "compact_orders": {
+        "D_d": [
+          0,
+          0
+        ],
+        "D_q": [
+          0,
+          0
+        ],
+        "D_r": [
+          4,
+          4
+        ]
+      },
+      "corner_residual": "Y*(Y**4 - 50*Y**2 + 500)",
+      "corner_residual_degree": 5,
+      "corner_residual_generically_separable": true,
+      "degree_3_1_1_orders": [
+        4,
+        4
+      ],
+      "derivative_orders": [
+        4,
+        4
+      ],
+      "equation_orders": [
+        5,
+        5
+      ],
+      "literal_polynomiality_verified": true,
+      "literal_quotient": "dF/dY",
+      "name": "r_cusp_E4_E3_ramified",
+      "root_weights": [
+        1,
+        1
+      ]
+    },
+    {
+      "compact_local_generators": {
+        "Z_d": "u^0*v^0*T_d",
+        "Z_q": "u^1*v^1*T_q",
+        "Z_r": "u^1*v^1*T_r"
+      },
+      "compact_orders": {
+        "D_d": [
+          0,
+          0
+        ],
+        "D_q": [
+          1,
+          1
+        ],
+        "D_r": [
+          1,
+          1
+        ]
+      },
+      "corner_residual": "Y*(48*Y**2*alpha**2 + 42*Y**2*alpha - 26*Y**2 + 34*alpha**2 + 90*alpha + 59)",
+      "corner_residual_degree": 3,
+      "corner_residual_generically_separable": true,
+      "degree_3_1_1_orders": [
+        2,
+        2
+      ],
+      "derivative_orders": [
+        2,
+        2
+      ],
+      "equation_orders": [
+        3,
+        3
+      ],
+      "literal_polynomiality_verified": true,
+      "literal_quotient": "dF/dY",
+      "name": "qr_E1_A_ramified_E2_A",
+      "root_weights": [
+        1,
+        1
+      ]
+    },
+    {
+      "compact_local_generators": {
+        "Z_d": "u^0*v^0*T_d",
+        "Z_q": "u^1*v^1*T_q",
+        "Z_r": "u^0*v^1*T_r"
+      },
+      "compact_orders": {
+        "D_d": [
+          0,
+          0
+        ],
+        "D_q": [
+          1,
+          1
+        ],
+        "D_r": [
+          0,
+          1
+        ]
+      },
+      "corner_residual": "34*Y*alpha**2 + 90*Y*alpha + 59*Y - 188*alpha**2 - 474*alpha - 300",
+      "corner_residual_degree": 1,
+      "corner_residual_generically_separable": true,
+      "degree_3_1_1_orders": [
+        1,
+        2
+      ],
+      "derivative_orders": [
+        1,
+        2
+      ],
+      "equation_orders": [
+        2,
+        3
+      ],
+      "literal_polynomiality_verified": true,
+      "literal_quotient": "dF/dY",
+      "name": "qr_E1_A_unramified_E2_A",
+      "root_weights": [
+        1,
+        1
+      ]
+    },
+    {
+      "compact_local_generators": {
+        "Z_d": "u^0*v^0*T_d",
+        "Z_q": "u^0*v^0*T_q",
+        "Z_r": "u^1*v^1*T_r"
+      },
+      "compact_orders": {
+        "D_d": [
+          0,
+          0
+        ],
+        "D_q": [
+          0,
+          0
+        ],
+        "D_r": [
+          1,
+          1
+        ]
+      },
+      "corner_residual": "-(72*Y**2*alpha**2 + 36*Y**2*alpha - 110*Y**2 + 2364*alpha**2 + 1786*alpha - 1653)/2",
+      "corner_residual_degree": 2,
+      "corner_residual_generically_separable": true,
+      "degree_3_1_1_orders": [
+        1,
+        1
+      ],
+      "derivative_orders": [
+        1,
+        1
+      ],
+      "equation_orders": [
+        2,
+        2
+      ],
+      "literal_polynomiality_verified": true,
+      "literal_quotient": "dF/dY",
+      "name": "qr_E1_B_ramified_E2_B",
+      "root_weights": [
+        1,
+        1
+      ]
+    }
+  ],
+  "corner_graph": {
+    "q_r_tangency": "E1_A_ram--E2_A, E1_A_unram--E2_A, E1_B_ram--E2_B",
+    "r_cusp": "E1--E2--E4--E3, with unramified and ramified E3 colors",
+    "triple_positive_colors": "E1 and E2 are root-center separated"
+  },
+  "degree_3_1_1_gate": {
+    "global_Cech_class": "not_yet_defined_without_boundary_attachments",
+    "literal_on_all_seven_corners": true,
+    "q_node_transition_compatible": true
+  },
+  "downstream": {
+    "affine_space_recognition": "not_reached",
+    "entrywise_inverse_adjugate_polynomiality": "not_reached_globally"
+  },
+  "general_corner_theorem": {
+    "derivative_identity": "P_X=u^(N-r)*v^(M-s)*dF/dY",
+    "exact_degree_gate": "sum n_j*(a_j,b_j)=(N-r,M-s) gives quotient dF/dY",
+    "hypothesis": "P=u^N*v^M*F and X=xi+u^r*v^s*Y",
+    "local_multi_rees": "D_j=a_j*E_u+b_j*E_v has generator u^a_j*v^b_j*T_j"
+  },
+  "q_node_complementary_transition": {
+    "D_q_frame_transition": "Z_q_right=z*Z_q_left",
+    "P_X_invariant_on_overlap": true,
+    "derivative_quotient_transition": "G_right=G_left/z",
+    "left_chart": "s-1=u, t+1/2=z*u, X-a=u*Y_left",
+    "overlap": "v=z*u, zeta=1/z, Y_right=Y_left/z",
+    "right_chart": "t+1/2=v, s-1=zeta*v, X-a=v*Y_right",
+    "strict_transform_transition": "F_right=F_left/z^2"
+  },
+  "remaining_global_edges": "strict d/q/r boundary attachments, generic ramification charts, and conductor-to-corner transitions",
+  "schema": "f20-exceptional-cox-corners-v1",
+  "status": "seven_exceptional_corners_and_q_node_transition_certified_strict_boundary_attachments_open",
+  "triple_root_center_separation": {
+    "E1_root_center": "(X-X0)/tau^2 = b + O(tau), b^2+i=0",
+    "E2_root_center": "X-X0=0 along the cluster center",
+    "base_ray_adjacency": true,
+    "certificate": "b is a unit modulo b^2+i, so the centers are disjoint",
+    "positive_colored_prime_adjacency": false
+  }
+}

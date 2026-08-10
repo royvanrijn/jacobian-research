@@ -1,0 +1,547 @@
+// Exact normalization-module Riemann--Roch masks for the PSL2(11)
+// degree-five and degree-six correspondences.
+LIB "normal.lib";
+printlevel=-1;
+
+// -------------------------------------------------------------------------
+// C5: the normalization module gives a five-dimensional pole-one space.
+
+ring C5base=(0,r),(x,y),dp;
+minpoly=r^2+11;
+
+poly f5=x5+(-1/2*r+1/2)*x4*y-x3*y2+x2*y3
+ +(-1/2*r-1/2)*x*y4-y5+(-1/2*r+11/2)*x4-2*r*x3*y
+ -2*r*x*y3+(-1/2*r-11/2)*y4+(16*r+11)*x3
+ +(3/2*r+99/2)*x2*y+(3/2*r-99/2)*x*y2+(16*r-11)*y3
+ +(165/2*r-473/2)*x2+176*r*x*y+(165/2*r+473/2)*y2
+ +(605*r-1430)*x+(605*r+1430)*y-550*r;
+
+poly c5=4*x2-2*r*x*y-4*y2+(-5*r+11)*x+(-5*r-11)*y+10*r;
+poly u51=2*y3-6*x*y+(-9*r-33)*x+(-18*r-66)*y-550;
+poly u52=2*x*y2+16*x*y+(-3*r+11)*y2+(-9*r+77)*x
+ +(-24*r+88)*y-165*r+275;
+
+poly f5top=x5+(-1/2*r+1/2)*x4*y-x3*y2+x2*y3
+ +(-1/2*r-1/2)*x*y4-y5;
+poly c5top=4*x2-2*r*x*y-4*y2;
+if(gcd(subst(f5top,y,1),subst(c5top,y,1))!=1
+   || subst(subst(f5top,x,1),y,0)!=1)
+{
+  print("FAIL C5 normalization denominator at infinity");
+  exit(1);
+}
+
+// Under tau:(r,x,y)->(-r,y,x), c5 goes to -c5.  These two identities
+// certify the induced action on the normalization generators T1=u51/c5
+// and T2=u52/c5 without relying on the presentation returned by normal.lib.
+poly tauu51=2*x3-6*x*y+(9*r-33)*y+(18*r-66)*x-550;
+poly tauu52=2*x2*y+16*x*y+(3*r+11)*x2+(9*r+77)*y
+ +(24*r+88)*x+165*r+275;
+poly tauT1numer=(11-5*r)/8*c5-1/2*x*c5-r/4*y*c5-r/2*u51+7/4*u52;
+poly tauT2numer=-(11+3*r)/4*c5-1/2*y*c5-u51-r/2*u52;
+if(-tauu51-tauT1numer!=0 || -tauu52-tauT2numer!=0)
+{
+  print("FAIL C5 normalization exchange formulas");
+  exit(1);
+}
+
+list c5normal=normal(ideal(f5),list("isPrim","withRing","withDelta"));
+ideal c5module=c5normal[2][1];
+if(c5normal[3][1][1]!=5 || c5normal[3][2]!=5
+   || size(c5module)!=3 || c5module[1]!=u51
+   || c5module[2]!=u52 || c5module[3]!=c5)
+{
+  print("FAIL C5 normalization module");
+  exit(1);
+}
+
+def C5=c5normal[1][1];
+setring C5;
+
+poly p1x=2*x+11-3*r;
+poly p3x=x2+11*x+55+9*r;
+poly p1y=2*y+11+3*r;
+poly p2y=2*y2-(11+3*r)*y-(22-6*r);
+poly q1x=2*x+5+3*r;
+poly q1y=2*y+5-3*r;
+poly q2y=2*y3+(15+3*r)*y2-(12+12*r)*y+56-96*r;
+poly q3x=2*x3-18*x2+(21+45*r)*x-(175+279*r);
+poly q3y=2*y3-18*y2+(21-45*r)*y-(175-279*r);
+
+ideal P11=std(norid+ideal(p1x,p1y));
+ideal P32=std(norid+ideal(p3x,p2y));
+ideal Q11n=std(norid+ideal(q1x,q1y));
+ideal Q32=std(norid+ideal(q3x,q2y));
+ideal Q33=std(norid+ideal(q3x,q3y));
+ideal Q11n2=std(norid+Q11n*Q11n);
+
+ideal D1=std(intersect(Q11n,Q33));
+ideal D2=std(intersect(P32,Q33));
+ideal D3=std(intersect(P11,Q11n2));
+ideal D4=std(intersect(Q11n2,Q32));
+
+poly M1=(-5*r+39)+(-2*r-2)*x+2*y+(-4*r+8)*T(1)+14*T(2);
+poly M2=(-101*r+259)+(-16*r-20)*x+(2*r+36)*y
+ +(-40*r+84)*T(1)+134*T(2);
+poly M3=(-15*r+121)+(-4*r+8)*x+(-2*r+20)*y
+ +(-12*r+24)*T(1)+42*T(2);
+poly M4=(101*r-2105)+(6*r+84)*x+(-17*r-445)*y
+ +(24*r-768)*T(1)+(-167*r-475)*T(2)+(-2*r+18)*x2
+ +(-5*r+45)*x*y+(-6*r-38)*y2+(25*r+51)*T(2)*x
+ +92*T(2)*y;
+
+proc sameIdeal(ideal A,ideal B,string label,int expectedLength)
+{
+  A=std(A);
+  B=std(B);
+  if(vdim(A)!=expectedLength || vdim(B)!=expectedLength
+     || size(reduce(A,B))!=0 || size(reduce(B,A))!=0)
+  {
+    print("FAIL "+label+" divisor");
+    exit(1);
+  }
+}
+
+sameIdeal(norid+ideal(M1),D1,"C5 M1",5);
+sameIdeal(norid+ideal(M2),D2,"C5 M2",5);
+sameIdeal(norid+ideal(M3),D3,"C5 M3",5);
+sameIdeal(norid+ideal(M4),D4,"C5 M4",10);
+print("PASS C5 explicit normalization masks M1--M4");
+
+// -------------------------------------------------------------------------
+// C6: u1/c and u2/c have pole weight one, while u3/c has weight two.
+// The filtered normalization module therefore computes L(m D_infinity)
+// by constant linear algebra.  The uniform-pole masks N2--N5 need no
+// separate infinity-jet conditions.
+
+ring C6base=(0,r),(x,y),dp;
+minpoly=r^2+11;
+
+poly f6=x6+(1/2*r-1/2)*x5*y+(-1/2*r-3/2)*x4*y2+2*x3*y3
+ +(1/2*r-3/2)*x2*y4+(-1/2*r-1/2)*x*y5+y6
+ +(1/2*r+11/2)*x5+(3/2*r-11/2)*x4*y-2*r*x3*y2
+ +2*r*x2*y3+(-3/2*r-11/2)*x*y4+(-1/2*r+11/2)*y5
+ +(67/2*r-77/2)*x4+(-35*r-110)*x3*y+198*x2*y2
+ +(35*r-110)*x*y3+(-67/2*r-77/2)*y4
+ +(66*r-583)*x3+(-242*r+385)*x2*y+(242*r+385)*x*y2
+ +(-66*r-583)*y3+(-902*r-3212)*x2+4048*x*y
+ +(902*r-3212)*y2+(-5588*r+8712)*x+(5588*r+8712)*y+43560;
+
+poly c6=4*x2*y+(r-1)*x*y2-2*y3+4*x2+2*r*x*y+(r-7)*y2
+ +(-8*r-44)*x+(20*r+44)*y-44*r+220;
+poly c6top=4*x2*y+(r-1)*x*y2-2*y3;
+poly f6top=x6+(1/2*r-1/2)*x5*y+(-1/2*r-3/2)*x4*y2
+ +2*x3*y3+(1/2*r-3/2)*x2*y4+(-1/2*r-1/2)*x*y5+y6;
+if(gcd(subst(f6top,y,1),subst(c6top,y,1))!=1
+   || subst(subst(f6top,x,1),y,0)!=1)
+{
+  print("FAIL C6 normalization denominator at infinity");
+  exit(1);
+}
+
+list c6normal=normal(ideal(f6),list("isPrim","withRing","withDelta"));
+ideal c6module=c6normal[2][1];
+if(c6normal[3][1][1]!=8 || c6normal[3][2]!=8
+   || size(c6module)!=4 || c6module[4]!=c6
+   || deg(c6module[1])!=4 || deg(c6module[2])!=4
+   || deg(c6module[3])!=5)
+{
+  print("FAIL C6 normalization module");
+  exit(1);
+}
+
+def C6=c6normal[1][1];
+setring C6;
+
+poly u61=18*x*y3+(4*r-2)*y4+108*x3+(9*r+9)*x*y2
+ +(31*r-11)*y3+(-306*r-198)*x*y+(-3*r+825)*y2
+ +(1386*r-4158)*x+(-1298*r+4510)*y-3212*r-14036;
+poly u62=72*x4+(-r+5)*y4-36*x3+(-9*r+369)*x*y2
+ +(26*r+32)*y3+(1620*r-2808)*x2+(-504*r-2178)*x*y
+ +(-6*r+30)*y2+(-5274*r-12870)*x+(-1390*r+2090)*y
+ -4840*r+35288;
+poly u63=92*y5+(57*r+881)*y4+(-1782*r+1350)*x3
+ +(345*r-1587)*x*y2+(-2535*r+3267)*y3
+ +(-7830*r+6534)*x2+(483*r+14421)*x*y
+ +(-16386*r-12694)*y2+(91938*r+341682)*x
+ +(-35244*r-445720)*y+454344*r-926376;
+poly c6den=4*x2*y+(r-1)*x*y2-2*y3+4*x2+2*r*x*y+(r-7)*y2
+ +(-8*r-44)*x+(20*r+44)*y-44*r+220;
+poly f6plane=x6+(1/2*r-1/2)*x5*y+(-1/2*r-3/2)*x4*y2
+ +2*x3*y3+(1/2*r-3/2)*x2*y4+(-1/2*r-1/2)*x*y5+y6
+ +(1/2*r+11/2)*x5+(3/2*r-11/2)*x4*y-2*r*x3*y2
+ +2*r*x2*y3+(-3/2*r-11/2)*x*y4+(-1/2*r+11/2)*y5
+ +(67/2*r-77/2)*x4+(-35*r-110)*x3*y+198*x2*y2
+ +(35*r-110)*x*y3+(-67/2*r-77/2)*y4
+ +(66*r-583)*x3+(-242*r+385)*x2*y+(242*r+385)*x*y2
+ +(-66*r-583)*y3+(-902*r-3212)*x2+4048*x*y
+ +(902*r-3212)*y2+(-5588*r+8712)*x+(5588*r+8712)*y+43560;
+
+poly p1x=2*x+11-3*r;
+poly p2x=2*x2-(11-3*r)*x-(22+6*r);
+poly p3x=x2+11*x+55+9*r;
+poly q1x=2*x+5+3*r;
+poly q2x=2*x3+(15-3*r)*x2-(12-12*r)*x+56+96*r;
+poly q3x=2*x3-18*x2+(21+45*r)*x-(175+279*r);
+poly p1y=2*y+11+3*r;
+poly p2y=2*y2-(11+3*r)*y-(22-6*r);
+poly p3y=y2+11*y+55-9*r;
+poly q1y=2*y+5-3*r;
+poly q2y=2*y3+(15+3*r)*y2-(12+12*r)*y+56-96*r;
+poly q3y=2*y3-18*y2+(21-45*r)*y-(175-279*r);
+poly q2nodeLine=18*x+(r+1)*y2+(8*r-10)*y+88-20*r;
+poly q2aLine=6*x+2*y2+(3*r-5)*y-42*r-10;
+
+ideal p1nRaw=ideal(p1x,p1y);
+ideal p1aRaw=ideal(p1x,p2y);
+ideal p1bRaw=ideal(p1x,p3y);
+ideal p2aRaw=ideal(p2x,p1y);
+ideal p2bRaw=ideal(p2x,p3y);
+ideal p3aRaw=ideal(p3x,p1y);
+ideal p3bRaw=ideal(p3x,p2y);
+ideal q1bRaw=ideal(q1x,q3y);
+ideal q2aRaw=ideal(q3y,q2aLine);
+ideal q2bRaw=ideal(q1y,q2x);
+ideal q2nRaw=ideal(q2y,q2nodeLine);
+ideal q3bRaw=ideal(q1y,q3x);
+
+proc xyPolynomialsThrough(int d)
+{
+  ideal P=1;
+  int k,i;
+  if(d<0)
+  {
+    ideal Z=0;
+    return(Z);
+  }
+  for(k=1;k<=d;k++)
+  {
+    for(i=0;i<=k;i++)
+    {
+      P=P,x^i*y^(k-i);
+    }
+  }
+  return(P);
+}
+
+proc filteredGenerators(int m)
+{
+  ideal P=xyPolynomialsThrough(m);
+  ideal Q=xyPolynomialsThrough(m-1);
+  ideal W=xyPolynomialsThrough(m-2);
+  ideal V=P;
+  int i;
+  for(i=1;i<=size(Q);i++)
+  {
+    V=V,Q[i]*T(1),Q[i]*T(2);
+  }
+  for(i=1;i<=size(W);i++)
+  {
+    V=V,W[i]*T(3);
+  }
+  return(V);
+}
+
+proc filteredBasis(int m,int expectedDimension)
+{
+  ideal V=filteredGenerators(m);
+  ideal R=reduce(V,std(norid));
+  int cutoff=deg(R)+1;
+  ideal monomials=kbase(std(maxideal(cutoff)));
+  matrix A=coeffs(R,monomials,product(maxideal(1)));
+  list G=gauss_col(A,1);
+  module columns=module(G[1]);
+  matrix transformed=matrix(V,1,size(V))*G[2];
+  ideal E;
+  int j;
+  for(j=1;j<=ncols(G[1]);j++)
+  {
+    if(columns[j]!=[0])
+    {
+      E=E,transformed[1,j];
+    }
+  }
+  E=simplify(E,2);
+  if(rank(A)!=expectedDimension || size(E)!=expectedDimension)
+  {
+    print("FAIL C6 filtered basis in pole degree "+string(m));
+    exit(1);
+  }
+  return(E);
+}
+
+proc boundaryPower(ideal P,int exponent)
+{
+  return(std(norid+P^exponent));
+}
+
+proc evaluationMatrix(ideal E,ideal K)
+{
+  K=std(K);
+  ideal B=kbase(K);
+  return(coeffs(reduce(E,K),B,product(maxideal(1))));
+}
+
+proc maskKernel(ideal E,list conditions,string label,int expectedZeroDegree)
+{
+  matrix A=evaluationMatrix(E,conditions[1]);
+  int i;
+  for(i=2;i<=size(conditions);i++)
+  {
+    A=transpose(concat(transpose(A),
+      transpose(evaluationMatrix(E,conditions[i]))));
+  }
+  if(nrows(A)!=expectedZeroDegree || rank(A)!=size(E)-1)
+  {
+    print("FAIL "+label+" evaluation rank");
+    exit(1);
+  }
+  module Z=syz(module(A));
+  if(size(Z)!=1)
+  {
+    print("FAIL "+label+" kernel dimension");
+    exit(1);
+  }
+  vector z=Z[1];
+  poly F;
+  ideal K;
+  for(i=1;i<=size(E);i++)
+  {
+    F=F+E[i]*z[i];
+  }
+  for(i=1;i<=size(conditions);i++)
+  {
+    K=std(conditions[i]);
+    if(size(reduce(F,K))!=0)
+    {
+      print("FAIL "+label+" prescribed zero");
+      exit(1);
+    }
+  }
+  ideal principal=std(norid+ideal(F));
+  if(vdim(principal)!=expectedZeroDegree)
+  {
+    print("FAIL "+label+" extra affine zero");
+    exit(1);
+  }
+  print("PASS "+label+" explicit kernel representative");
+  return(F);
+}
+
+proc maskKernelWithExtra(ideal E,list conditions,matrix extra,
+  string label,int expectedZeroDegree)
+{
+  matrix A=evaluationMatrix(E,conditions[1]);
+  int i;
+  for(i=2;i<=size(conditions);i++)
+  {
+    A=transpose(concat(transpose(A),
+      transpose(evaluationMatrix(E,conditions[i]))));
+  }
+  A=transpose(concat(transpose(A),transpose(extra)));
+  if(nrows(A)!=expectedZeroDegree+nrows(extra) || rank(A)!=size(E)-1)
+  {
+    print("FAIL "+label+" evaluation rank");
+    exit(1);
+  }
+  module Z=syz(module(A));
+  if(size(Z)!=1)
+  {
+    print("FAIL "+label+" kernel dimension");
+    exit(1);
+  }
+  vector z=Z[1];
+  poly F;
+  ideal K;
+  for(i=1;i<=size(E);i++)
+  {
+    F=F+E[i]*z[i];
+  }
+  for(i=1;i<=size(conditions);i++)
+  {
+    K=std(conditions[i]);
+    if(size(reduce(F,K))!=0)
+    {
+      print("FAIL "+label+" prescribed zero");
+      exit(1);
+    }
+  }
+  ideal principal=std(norid+ideal(F));
+  if(vdim(principal)!=expectedZeroDegree)
+  {
+    print("FAIL "+label+" extra affine zero");
+    exit(1);
+  }
+  print("PASS "+label+" explicit kernel representative");
+  return(F);
+}
+
+// For F in L(7 D_infinity), write F=h/c6den.  In the infinity chart
+// x=w/z,y=1/z, the first two coefficients of z^7 F are H0/c0 and
+// (H1-H0' f1/f0')/c0.  Vanishing at the degree-five infinity prime to
+// order two is therefore the pair of linear congruences
+//   H0=0,  f0' H1-f1 H0'=0 mod g5.
+proc infinityFiveTwoJet(ideal E)
+{
+  ideal fractionRelations=std(ideal(
+    c6den*T(1)-u61,
+    c6den*T(2)-u62,
+    c6den*T(3)-u63
+  ));
+  poly f0=subst(jet(f6plane,6)-jet(f6plane,5),y,1);
+  poly f1=subst(jet(f6plane,5)-jet(f6plane,4),y,1);
+  poly g5=x5+(1/2*r+1/2)*x4-x3+x2+(1/2*r-1/2)*x-1;
+  ideal g5ideal=std(ideal(g5));
+  ideal residueBasis=1,x,x2,x3,x4;
+  matrix C0[5][size(E)];
+  matrix C1[5][size(E)];
+  matrix column0;
+  matrix column1;
+  poly h,h0,h1,a0,a1;
+  int j;
+  for(j=1;j<=size(E);j++)
+  {
+    h=reduce(c6den*E[j],fractionRelations);
+    if(h!=subst(subst(subst(h,T(1),0),T(2),0),T(3),0))
+    {
+      print("FAIL C6 fraction numerator extraction");
+      exit(1);
+    }
+    h0=subst(jet(h,10)-jet(h,9),y,1);
+    h1=subst(jet(h,9)-jet(h,8),y,1);
+    a0=reduce(h0,g5ideal);
+    a1=reduce(diff(f0,x)*h1-f1*diff(h0,x),g5ideal);
+    column0=coeffs(ideal(a0),residueBasis,x);
+    column1=coeffs(ideal(a1),residueBasis,x);
+    C0[1..5,j]=column0[1..5,1];
+    C1[1..5,j]=column1[1..5,1];
+  }
+  matrix C=transpose(concat(transpose(C0),transpose(C1)));
+  if(nrows(C)!=10 || ncols(C)!=size(E) || rank(C)!=10)
+  {
+    print("FAIL C6 infinity-five two-jet matrix");
+    exit(1);
+  }
+  return(C);
+}
+
+ideal L4=filteredBasis(4,23);
+ideal L5=filteredBasis(5,29);
+ideal L7=filteredBasis(7,41);
+print("PASS C6 filtered Riemann--Roch dimensions 23, 29, and 41");
+
+// N2: 8p1n+p2a+5p2b+4p3b+q2a+q2b, pole pair (7,7).
+list N2conditions=list(
+  boundaryPower(p1nRaw,8),
+  boundaryPower(p2aRaw,1),
+  boundaryPower(p2bRaw,5),
+  boundaryPower(p3bRaw,4),
+  boundaryPower(q2aRaw,1),
+  boundaryPower(q2bRaw,1)
+);
+poly N2=maskKernel(L7,N2conditions,"C6 N2",42);
+
+// N3: 5p1n+p1a+p2b+2p3b+q2n, pole pair (4,4).
+list N3conditions=list(
+  boundaryPower(p1nRaw,5),
+  boundaryPower(p1aRaw,1),
+  boundaryPower(p2bRaw,1),
+  boundaryPower(p3bRaw,2),
+  boundaryPower(q2nRaw,1)
+);
+poly N3=maskKernel(L4,N3conditions,"C6 N3",24);
+
+// N4: 5p1n+5p2b+5p3b, pole pair (5,5).
+list N4conditions=list(
+  boundaryPower(p1nRaw,5),
+  boundaryPower(p2bRaw,5),
+  boundaryPower(p3bRaw,5)
+);
+poly N4=maskKernel(L5,N4conditions,"C6 N4",30);
+
+// The p2/p2 node splits into two degree-four K-primes on the normalization.
+// Exactly one choice completes the declared N5 divisor to a principal row;
+// this intrinsic kernel test labels it p2n,b without tangent-coordinate
+// conventions.
+ideal p2node=std(norid+ideal(p2x,p2y));
+list p2branches=minAssGTZ(p2node);
+if(size(p2branches)!=2 || vdim(std(p2branches[1]))!=4
+   || vdim(std(p2branches[2]))!=4)
+{
+  print("FAIL C6 p2 node branches");
+  exit(1);
+}
+
+list N5base=list(
+  boundaryPower(p1nRaw,2),
+  boundaryPower(p1aRaw,1),
+  boundaryPower(p2aRaw,1),
+  boundaryPower(p2bRaw,3),
+  boundaryPower(p3bRaw,3)
+);
+matrix N5eval1=evaluationMatrix(L4,N5base[1]);
+int branchIndex,i;
+for(i=2;i<=size(N5base);i++)
+{
+  N5eval1=transpose(concat(transpose(N5eval1),
+    transpose(evaluationMatrix(L4,N5base[i]))));
+}
+matrix N5eval2=N5eval1;
+N5eval1=transpose(concat(transpose(N5eval1),
+  transpose(evaluationMatrix(L4,p2branches[1]))));
+N5eval2=transpose(concat(transpose(N5eval2),
+  transpose(evaluationMatrix(L4,p2branches[2]))));
+if(rank(N5eval1)==size(L4)-1 && rank(N5eval2)==size(L4))
+{
+  branchIndex=1;
+}
+if(rank(N5eval2)==size(L4)-1 && rank(N5eval1)==size(L4))
+{
+  branchIndex=2;
+}
+if(branchIndex==0)
+{
+  print("FAIL C6 intrinsic p2n,b selection");
+  exit(1);
+}
+list N5conditions=N5base+list(p2branches[branchIndex]);
+poly N5=maskKernel(L4,N5conditions,"C6 N5",24);
+
+print("PASS C6 uniform-pole masks N2--N5");
+
+// N6 and N7 have 41 finite zeros.  A nonzero section in L(7D_infinity)
+// with exactly those affine zeros has total pole degree 41.  Since the two
+// infinity primes have degrees one and five and both pole orders are at most
+// seven, the pole pair is forced to be (6,7).
+list N6conditions=list(
+  boundaryPower(p1aRaw,5),
+  boundaryPower(p1bRaw,10),
+  boundaryPower(p3aRaw,4),
+  boundaryPower(q1bRaw,1)
+);
+poly N6=maskKernel(L7,N6conditions,"C6 N6",41);
+
+list N7conditions=list(
+  boundaryPower(p1bRaw,4),
+  boundaryPower(p2aRaw,5),
+  boundaryPower(p3aRaw,10),
+  boundaryPower(q3bRaw,1)
+);
+poly N7=maskKernel(L7,N7conditions,"C6 N7",41);
+print("PASS C6 exchanged masks N6--N7 with forced pole pair (6,7)");
+
+// N1 is intrinsically asymmetric at infinity.  Its 32 finite zeros leave a
+// nine-dimensional subspace of L(7D_infinity); the ten infinity-five jet
+// rows select the unique section with pole pair (7,5).
+list N1conditions=list(
+  boundaryPower(p1aRaw,4),
+  boundaryPower(p1bRaw,8),
+  boundaryPower(p3aRaw,4)
+);
+matrix infinityN1=infinityFiveTwoJet(L7);
+poly N1=maskKernelWithExtra(
+  L7,N1conditions,infinityN1,"C6 N1",32
+);
+print("PASS C6 asymmetric mask N1 with pole pair (7,5)");
+
+print("PASS explicit normalization representatives for all C5/C6 masks");

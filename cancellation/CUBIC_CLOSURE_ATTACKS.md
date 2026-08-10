@@ -539,6 +539,74 @@ the support conductor quotient is `L` and the primitive-generation quotient
 is `K`.  Principal generation eliminates the latter by Proposition 1.12 of
 the frontend.
 
+Proposition 1.15a now closes the local algebra under the precise additional
+hypothesis that was previously hidden.  If the Kähler different is Cartier,
+`Ann_B(Q)=dB`, then at a closed collision
+
+\[
+ L\simeq (0:_{H^2_{\mathfrak n}(B)}d).
+\]
+
+Consequently `L=0` if and only if the normal threefold $B$ is
+Cohen--Macaulay there.  Codimension-one principality plus normality/`S_2`
+does **not** suffice: the remaining support-hull class is exactly the
+Cartier equation's torsion in the degree-two normalization deficiency.
+Thus this route has one sharply stated geometric obligation—derive local
+CM from the saturated minimal-boundary intersection—or else it must retain
+the nonzero deficiency class.
+
+The quartic double-saturation stratification supplies the complementary
+attack.  For each of the six singular-squarefree nongauge families, exact
+annihilator reduction gives at every geometric collision
+
+\[
+ \mu(J_{\mathfrak n})
+ =\dim_k J/\mathfrak nJ
+ =6.
+\]
+
+Hence none of these persistent length-six quartic models has a Cartier
+Kähler different.  This creates a genuine fork:
+
+- prove the boundary-minimal support is `S_2`, hence `B` is locally CM under
+  a Cartier different;
+- or prove that the six-generator initial different cannot become cyclic
+  under compatible higher corrections.
+
+The second route is now a filtered Nakayama problem, not another `Ext`
+calculation.  Proposition 1.15c of the frontend supplies the lifting lemma:
+flatness of the cotangent and annihilator-cokernel packets commutes `J` with
+base change, and local freeness of `J/nJ` of rank six preserves the exact
+generator count.  Upper semicontinuity alone is insufficient because the
+number of generators can drop under deformation.
+
+For the nodal symbol, the filtered Nakayama route is now closed to all
+formal orders.  The cyclic gauge cokernel gives the recursive normal form
+`h_nod+f(y,z)*eta`.  The universal family `h_nod+u*eta` has
+`J/nJ=Q[u]^6`; after assigning `u` collision weight one, the cotangent and
+annihilator-control Rees packets are strict with central initial form.
+Because the initial form of every graph equation `u-f` is monic in `u`, the
+annihilator commutes with every polynomial or formal graph specialization.
+Thus the nodal different remains six-generated and non-Cartier after every
+compatible higher correction.  Minimal multi-coefficient normal forms and
+the same successive monic-graph argument now close the other five
+singular-squarefree rows.  The entire higher-order filtered Nakayama queue
+is therefore closed.  The formally rigid smooth row has the same
+six-generator central different, so no squarefree cubic formal collision
+can acquire a Cartier Kähler different from compatible higher terms.  A
+boundary-geometric Cartier theorem would force the leading symbol into the
+three non-squarefree rows before their generic-étaleness gate.
+
+<!-- status-consumer: NSDP6 c5f68253995b7b6a -->
+
+<!-- status-consumer: NADPALL 60218641ccdf6fac -->
+
+<!-- status-consumer: SSADPALL 584a6e05374612ee -->
+
+<!-- status-consumer: KDCD3 c6e56b39bbb498d8 -->
+
+<!-- status-consumer: KDSQ6 cd423f625f1f3cd2 -->
+
 ### E6. Class-group/Cartier fallback
 
 Because the Keller open is `A^3`, the localization sequence for the class

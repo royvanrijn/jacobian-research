@@ -332,7 +332,154 @@ Run
 .venv/bin/python scripts/verify_hc4_direct_homogeneous_filtration.py
 ```
 
-The next research task is to classify the homogeneous solutions of (5.3) by
-the factorization type of the Hessian discriminant, starting with squarefree
-`Delta_f` and then the repeated-component cases.  This is the direct HC4
-attack that was missing from the relative-nilpotent programme.
+`HC4-DIR2` now excludes squarefree `Delta_f` in every degree.  `HC4-DIR3`
+closes the first repeated-component stratum
+
+\[
+\Delta_f=\ell^2R,
+\qquad R\text{ squarefree},
+\qquad \gcd(\ell,R)=1,
+\]
+
+for every `D>=5`: radical divisibility forces a constant vector, and the two
+resulting normal forms have `ell`-multiplicity `m=D-2` or at least `2m`, never
+two.  `HC4-DIR3a` applies the same gate to exact multiplicity three: it is
+impossible for `D>=6`, while `D=5` has only the additive split top
+`f=c*ell^5+h(y,z)`.  `HC4-DIR3b` closes that terminal packet: the first
+weighted channel fixes its `w^2*ell` coefficient, and the next is the nonzero
+immutable square `-4*B^2*det Hess_(y,z)(h_5)`.  Thus exact linear
+multiplicity three is impossible for every `D>=5`.
+
+`HC4-DIR4` closes the generic rank-at-most-one boundary of
+
+\[
+\Delta_f=\ell^4R,
+\qquad R\text{ squarefree},
+\qquad \gcd(\ell,R)=1,
+\]
+
+for every `D>=5`.  `HC4-DIR4a` then eliminates the apparent order-two
+degree-six split by a quadratic-suspension descent.  The exact rank-two
+order-one linear field initially satisfies
+
+\[
+\operatorname{Hess}(f)L=\ell^2\nabla a,
+\qquad L(a)=\ell^2c.
+\]
+
+`HC4-DIR5` proves that its matrix has rank one and reduces the entire exact
+quadruple-linear frontier to
+
+\[
+D=6,
+\qquad f=C\ell^6+h_6(y,z),
+\qquad L=\ell\partial_\ell,
+\]
+
+up to constant coordinates and rescaling.
+
+`HC4-DIR6` closes this last packet.  The order-one Schur coefficient fixes
+the `w^2*ell^2` term; the next passive-top determinant channel fixes the
+`w^3` coefficient; and the following channel is the nonzero immutable term
+
+\[
+\frac{128}{3375}\frac{\alpha^5}{C^3}
+\det\operatorname{Hess}_{y,z}(h_6).
+\]
+
+Thus exact linear multiplicity four is impossible for every `D>=5`.
+
+`HC4-DIR7` also closes exact linear multiplicity five on the generic
+corank-one boundary.  The multiplicity budget gives `j<=2`; both orders force
+the degree-seven split top `f=C*ell^7+h_7(y,z)`.  The order-two weighted
+channel dies immediately, while the order-one ladder terminates in the
+nonzero square `-9*gamma^2*det Hess_(y,z)(h_7)`.
+
+`HC4-DIR8` closes the complementary lower-rank boundary.  Its two rank-one
+jets would need a nonzero second derivative in the first unused transverse
+coefficient.  The order-one field equations instead make that coefficient
+linear in the transverse variable, or force `m=3` where it has degree one.
+Thus exact linear multiplicity five is impossible in every boundary rank.
+
+`HC4-DIR9` begins exact multiplicity six on the generic corank-one boundary.
+The half-radical budget gives `j<=3`.  The orders `j=3` and `j=2` both reduce
+to `D=8`, `f=C*ell^8+h_8(y,z)` and end respectively in the nonzero channel
+multipliers `(24/7)*(alpha^3/C)` and
+`-(1875/3136)*(alpha^4/C^2)`.  Only `j=1` survives there, as the exact
+quadratic-vector system
+
+\[
+\operatorname{Hess}(f)Q=\ell^3\nabla a,
+\qquad \ell^3\mid Q(a),
+\qquad \deg Q=2.
+\]
+
+With `N=Jac(Q)` this is an order-one linear-matrix system, and its boundary
+matrix satisfies `rank(N mod ell)<=2`.  `HC4-DIR11` closes rank zero: Hessian
+integrability forces `Q=ell^2*u`, and the resulting degree-eight split ladder
+ends in the nonzero multiplier
+`2187*alpha^7/(4302592*C^5)`.  `HC4-DIR12` then treats rank one.  The axial
+case reduces to the earlier linear-field system and the normal image case has
+an immediate valuation conflict.  Every survivor is tangent and has
+`t=ord_ell(partial_z f)` in `{3,4,5,6}`.  For `t<6` its boundary quadratic is
+a square; at `t=6` it is arbitrary, with odd `m` required in the nonsquare
+case.  Thus rank one is reduced to four explicit tangent packets, while rank
+two remains.  `HC4-DIR13` globally eliminates the auxiliary field from those
+rows: `q/ell^2` and `F/ell^m` are functionally dependent.  The quadratic
+centralizer split leaves a binary-composite pencil
+in `ell` and one linear form, and four primitive conic packets.  Below `t=6`
+the composite form is `f=z*G(ell,y)+h(ell,y)`; at `t=6` there is also a
+transverse composite orientation.  The primitive parities are
+`(t,m)=(3,even),(4,odd),(5,even),(6,odd)`; for `t<6` their quadratic is
+`q=y^2+ell*z`.  `HC4-DIR14` closes the invariant composite rows
+`t=3,5,6` by the exact binary Hessian valuation and the first two boundary
+coefficients.  Only its `t=4` pencil survives, with
+`ord_ell(G)=4` and nonzero pure-power boundary value for the binary remainder.
+`HC4-DIR15` closes that last pencil: the binary part of the constant field
+must annihilate `G`; its zero and nonzero cases respectively contradict
+`q mod ell!=0` and the required boundary derivative.  Hence the invariant
+composite orientation is empty.
+`HC4-DIR16` closes the transverse `t=6` composite orientation as well.  Its
+active constant direction would lie in the kernel of the invertible boundary
+binary Hessian; after it vanishes, the same impossible logarithmic identity
+as in `HC4-DIR15` remains.  Thus all composite rank-one packets are empty.
+`HC4-DIR17` closes the primitive rows.  For `t>=4`, both constant vectors lie
+in the one-dimensional boundary-Hessian kernel, reducing again to the
+impossible pure-quadratic identity.  The sole primitive `t=3` row has
+`q=y^2+ell*z` and a nonzero `ell^1` coefficient in `Q(F)`, contradicting
+`ell^3|Q(F)`.  Therefore boundary Jacobian rank one is empty, and the generic
+sextuple system has boundary Jacobian rank exactly two.
+The kernel-locking step is degree-free: on any corank-one Hessian boundary,
+two constant directions with directional derivatives in `(ell^2)` must be
+parallel.  It can therefore be reused at higher linear multiplicities.
+`HC4-DIR18` reduces the remaining rank-two system using the primitive left
+kernel of its linear boundary matrix.  That generator has degree at most two,
+so either the top vanishes on `ell=0` and the normal component of `Q` lies in
+`(ell^2)`, or the boundary binary form has at most three distinct roots.
+Over the algebraic closure the latter are the pure-power, two-root monomial,
+and three-root `y^a*z^b*(y-z)^c` profiles.  This root-count lemma applies to
+any linear rank-two boundary matrix, independently of sextuple multiplicity.
+`HC4-DIR19--20` treat the pure-power boundary: exact order first collapses
+its second jet to `C*ell^2*y^m`, after which the scalar and matrix field
+equations give incompatible coefficients.  Hence the one-root profile is
+empty.  `HC4-DIR21` reduces the remaining first jets to two outer monomials
+in the two-root case and one scalar class in the three-root case.
+`HC4-DIR22` applies the boundary Schur complement.  The three-root scalar
+class is nonpolynomial unless it vanishes, while a zero first jet pushes the
+first `ell`-dependent term to order eight.  The only other survivors are two
+explicit outer second-jet families, requiring the shifted root exponent to
+be at least four.
+
+`HC4-DIR10` reduces the lower-rank sextuple boundary to one degree-five
+tangent packet at `j=2` and two explicit order-six rank-one jets at `j=1`.
+
+See `HC4_DIRECT_DOUBLE_LINEAR_HESSIAN_GATE.md`.
+
+The next research task is therefore the normal rank-two packet, the two
+outer second-jet families, and the order-eight two-/three-root packets,
+together with the three lower-rank Hessian packets.
+After those come nonlinear repeated factors, linear
+multiplicity at least seven, or several distinct repeated factors.
+Rank-at-most-two top Hessians remain a separate synchronization problem.  This
+is the direct HC4 attack that was missing from the relative-nilpotent
+programme.

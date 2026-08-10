@@ -1,0 +1,369 @@
+{
+  "carrier_cases": [
+    {
+      "R_discriminant": "-3/625",
+      "branch_profiles": [
+        [
+          3
+        ],
+        [
+          3
+        ]
+      ],
+      "case": "squarefree_R",
+      "divisor_shape": {
+        "finite_H_orders": [
+          -7,
+          -15,
+          -7,
+          -7
+        ],
+        "finite_nonresonance_coefficients": [
+          1,
+          -3,
+          1,
+          1
+        ],
+        "finite_root_multiplicities": [
+          1,
+          2,
+          1,
+          1
+        ],
+        "forced_denominator_degree": 36,
+        "forced_numerator_degree": 0,
+        "infinity_homogeneous_resonance_order": 36,
+        "infinity_particular_order": 39,
+        "other_finite_poles_possible": false
+      },
+      "forced_H": "-95367431640625/(19683*v**7*(v - 1)**15*(v**2 - 3*v + 3)**7)",
+      "forced_R": "(v^2-3*v+3)/25",
+      "normalized_carrier_residue_map": "1+1/(v-1)^3",
+      "residue_degree": 3,
+      "simple_R_root_behavior": "the two simple R roots are unramified simple points over residue value 0",
+      "status": "unique necessary squarefree carrier row"
+    },
+    {
+      "case": "double_root_R",
+      "divisor_shape": {
+        "finite_H_orders": [
+          -7,
+          -15,
+          -15
+        ],
+        "finite_nonresonance_coefficients": [
+          1,
+          -3,
+          -3
+        ],
+        "finite_root_multiplicities": [
+          1,
+          2,
+          2
+        ],
+        "forced_denominator_degree": 37,
+        "forced_numerator_degree": 1,
+        "infinity_homogeneous_resonance_order": 36,
+        "infinity_particular_order": 39,
+        "other_finite_poles_possible": false
+      },
+      "double_root_field": "Q(sqrt(5))",
+      "fivefold_zero": "alpha=3*(rho+1)/5",
+      "forced_H_numerator": {
+        "constant": "625*(3-rho)/3^8",
+        "linear": "625*(4*rho-11)/3^9",
+        "representation": "H=v*(v-1)*(v-rho)*(n0+n1*v)/c(v)^8"
+      },
+      "forced_double_root_equation": "rho^2-3*rho+1=0",
+      "map_identity": "g(v)=(729/125)*h(s)",
+      "normalized_carrier_residue_map": "v*(v-alpha)^5/((v-1)^3*(v-rho)^3)",
+      "passport": [
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          1,
+          1,
+          1
+        ]
+      ],
+      "residue_degree": 6,
+      "source_change_to_terminal_map": "s=-v/alpha",
+      "status": "two conjugate necessary double-root carrier rows"
+    }
+  ],
+  "carrier_chart": {
+    "carrier_polynomial": "c(v)=v*(v-1)^2*R(v)",
+    "carrier_polynomial_degree": 5,
+    "cofactor_conditions": [
+      "deg(R)=2",
+      "R(0)!=0",
+      "R(1)=1/25"
+    ],
+    "common_root": "C_R=q^-5*c(v)",
+    "coordinates": {
+      "q": "y",
+      "v": "x*y^5",
+      "x": "v*q^-5"
+    },
+    "fixed_root_multiplicities": {
+      "roots_of_R_total": 2,
+      "v=0": 1,
+      "v=1": 2
+    },
+    "two_form": "dx wedge dy=-q^-5*dq wedge dv"
+  },
+  "carrier_target_completion": {
+    "adjacent_rays": [
+      [
+        1,
+        7
+      ],
+      [
+        4,
+        29
+      ]
+    ],
+    "blowup_count": 12,
+    "boundary_rays": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        5,
+        36
+      ],
+      [
+        4,
+        29
+      ],
+      [
+        3,
+        22
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        1,
+        8
+      ]
+    ],
+    "boundary_self_intersections": [
+      0,
+      -2,
+      -2,
+      -2,
+      -2,
+      -2,
+      -2,
+      -6,
+      -1,
+      -2,
+      -2,
+      -2,
+      -2
+    ],
+    "carrier_target_ray": [
+      5,
+      36
+    ],
+    "insertion_order": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        3,
+        22
+      ],
+      [
+        4,
+        29
+      ],
+      [
+        5,
+        36
+      ]
+    ],
+    "local_coordinates": [
+      "pi=P^3/(-Q)^2",
+      "w=h-target_shears"
+    ],
+    "residue_coordinate": "zeta=w^5/pi^36",
+    "residue_orders_on_left_carrier_right": [
+      -1,
+      0,
+      1
+    ],
+    "transverse_index": 1
+  },
+  "certified_input": {
+    "cofactor_strata": [
+      "squarefree_R",
+      "double_root_R"
+    ],
+    "degree_pair": [
+      75,
+      125
+    ],
+    "jacobian": "nonzero constant, normalized to one",
+    "normal_form_branch": "F2",
+    "top_common_power": "P_top=C_R^3, Q_top=(-9/5)*C_R^5"
+  },
+  "forced_wronskian_equation": {
+    "U": "(25/81)/c(v)",
+    "equation": "5*U*H'-36*U'*H=(5^6/3^12)*c(v)^-9",
+    "right_side": "nonzero for every nonzero constant Jacobian"
+  },
+  "global_result": {
+    "claim_boundary": "the carrier Wronskian is necessary but does not supply the remaining lower Laurent coefficients or a global Keller map",
+    "reason": "the squarefree cofactor is unique over Q and the double-root parameter has two conjugate values over Q(sqrt(5))",
+    "verdict": "the certified F2 (75,125) row remains possible only on three exact carrier points"
+  },
+  "pre_target_shear_normalization": {
+    "divisibility_gate": "ord_(v=0)(U)=-1 forces 5|d",
+    "forbidden_nonshear_descents": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      26,
+      27,
+      28,
+      29,
+      31,
+      32,
+      33,
+      34
+    ],
+    "homogeneous_equation": "5*U*H_d'-d*U'*H_d=0",
+    "normalized_first_coefficient_descent": 36,
+    "rationality_identity": "H_d^5/U^d is constant",
+    "removable_target_shear_descents": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35
+    ]
+  },
+  "reproduction_command": ".venv/bin/python plane-jc/cas/verify_f2_75_125_carrier_wronskian.py",
+  "schema": "plane-jc.f2-75-125-carrier-wronskian.v1",
+  "software": {
+    "python": "sympy exact arithmetic"
+  },
+  "status": "exact-finite-carrier-classification-row-still-live",
+  "target_monomial_change": {
+    "forced_first_nonshear_descent": 36,
+    "leading_h": "125/729",
+    "leading_pair": {
+      "P": "q^-15*c(v)^3",
+      "minus_Q": "q^-25*(9/5)*c(v)^5"
+    },
+    "leading_pi": "q^5*(25/81)/c(v)",
+    "normalized_rhs_scalar_for_Jacobian_one": "15625/531441",
+    "target_coordinates": {
+      "h": "P^5/(-Q)^3",
+      "pi": "P^3/(-Q)^2"
+    },
+    "target_exponent_determinant": 1,
+    "target_exponent_matrix": [
+      [
+        3,
+        -2
+      ],
+      [
+        5,
+        -3
+      ]
+    ],
+    "target_two_form_q_order": 40
+  }
+}

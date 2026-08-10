@@ -1,5 +1,12 @@
 # Conditional simple-spectator gluing for the F2 `A_6` packet
 
+> **Subsequent resolution.**  The carrier Wronskian theorem in
+> [`F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md`](F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md)
+> proves that the actual squarefree simple-`R` points are unramified points
+> of a cyclic cubic carrier cover.  Consequently neither conditional
+> transposition model below describes their actual carrier inertia.  The
+> enumeration remains a correct conditional calculation and calibration.
+
 ## Result and claim boundary
 
 The terminal F2 residue cover has the certified branch-cycle passport

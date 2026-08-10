@@ -12,6 +12,9 @@ script then asks Singular for:
 1. the (x,y,z)-saturation of an A-presentation of Omega_{B/A};
 2. Ext_A^2(T,A), where T=B/Ann_B(Omega_{B/A}).
 
+On polynomial quartic complement families it also computes the relative
+Nakayama module J/nJ of the Kähler different J=Ann_B(Omega) at the collision.
+
 This is a leading-model computation.  It does not assert normality of the
 homogeneous algebra, existence of a Keller open, or invariance under
 higher-order tensor perturbations.
@@ -133,6 +136,140 @@ def multiplication_table(
     higher_tensor: dict[tuple[int, int, int], sp.Expr] | None = None,
 ) -> tuple[dict[tuple[int, int], sp.Matrix], dict[tuple[int, int], sp.Expr]]:
     """Recover trace-free and scalar multiplication from the cubic tensor."""
+
+    # A full quartic complement can carry eight coefficient parameters.
+    # Solving the cross-product systems over that symbolic field is much
+    # slower than using the intrinsic degree bounds: the trace-free table is
+    # linear and the scalar table is quadratic in the tensor.  Interpolate
+    # those two exact polynomials from parameter-free evaluations.
+    parameter_symbols = tuple(
+        sorted(
+            set().union(
+                *(
+                    sp.sympify(value).free_symbols
+                    for value in (higher_tensor or {}).values()
+                )
+            ).difference(BASE_VARIABLES),
+            key=str,
+        )
+    )
+    if parameter_symbols:
+        for value in (higher_tensor or {}).values():
+            parameter_polynomial = sp.Poly(
+                sp.expand(value), *parameter_symbols
+            )
+            assert parameter_polynomial.total_degree() <= 1
+
+        zero_substitution = {
+            parameter: sp.Integer(0) for parameter in parameter_symbols
+        }
+
+        def evaluated_table(
+            values: dict[sp.Symbol, int]
+        ) -> tuple[
+            dict[tuple[int, int], sp.Matrix],
+            dict[tuple[int, int], sp.Expr],
+        ]:
+            substitution = {**zero_substitution, **values}
+            evaluated_tensor = {
+                triple: sp.expand(sp.sympify(value).subs(substitution))
+                for triple, value in (higher_tensor or {}).items()
+            }
+            return multiplication_table(cubic, evaluated_tensor)
+
+        central_trace_free, central_scalar = evaluated_table({})
+        positive_tables = {
+            parameter: evaluated_table({parameter: 1})
+            for parameter in parameter_symbols
+        }
+        negative_tables = {
+            parameter: evaluated_table({parameter: -1})
+            for parameter in parameter_symbols
+        }
+
+        trace_free_linear: dict[
+            sp.Symbol, dict[tuple[int, int], sp.Matrix]
+        ] = {}
+        scalar_linear: dict[
+            sp.Symbol, dict[tuple[int, int], sp.Expr]
+        ] = {}
+        scalar_diagonal: dict[
+            sp.Symbol, dict[tuple[int, int], sp.Expr]
+        ] = {}
+        for parameter in parameter_symbols:
+            positive_trace_free, positive_scalar = positive_tables[
+                parameter
+            ]
+            negative_trace_free, negative_scalar = negative_tables[
+                parameter
+            ]
+            trace_free_linear[parameter] = {
+                pair: (
+                    (positive_trace_free[pair] - negative_trace_free[pair])
+                    / 2
+                ).applyfunc(sp.expand)
+                for pair in central_trace_free
+            }
+            scalar_linear[parameter] = {
+                pair: sp.expand(
+                    (positive_scalar[pair] - negative_scalar[pair]) / 2
+                )
+                for pair in central_scalar
+            }
+            scalar_diagonal[parameter] = {
+                pair: sp.expand(
+                    (positive_scalar[pair] + negative_scalar[pair]) / 2
+                    - central_scalar[pair]
+                )
+                for pair in central_scalar
+            }
+
+        trace_free_products = {
+            pair: (
+                central_trace_free[pair]
+                + sum(
+                    (
+                        parameter * trace_free_linear[parameter][pair]
+                        for parameter in parameter_symbols
+                    ),
+                    sp.zeros(3, 1),
+                )
+            ).applyfunc(sp.expand)
+            for pair in central_trace_free
+        }
+        scalar_products = {
+            pair: sp.expand(
+                central_scalar[pair]
+                + sum(
+                    parameter * scalar_linear[parameter][pair]
+                    + parameter**2
+                    * scalar_diagonal[parameter][pair]
+                    for parameter in parameter_symbols
+                )
+            )
+            for pair in central_scalar
+        }
+        for first_index, first_parameter in enumerate(parameter_symbols):
+            for second_parameter in parameter_symbols[first_index + 1 :]:
+                _pair_trace_free, pair_scalar = evaluated_table(
+                    {first_parameter: 1, second_parameter: 1}
+                )
+                for pair in scalar_products:
+                    cross_coefficient = sp.expand(
+                        pair_scalar[pair]
+                        - central_scalar[pair]
+                        - scalar_linear[first_parameter][pair]
+                        - scalar_linear[second_parameter][pair]
+                        - scalar_diagonal[first_parameter][pair]
+                        - scalar_diagonal[second_parameter][pair]
+                    )
+                    scalar_products[pair] = sp.expand(
+                        scalar_products[pair]
+                        + first_parameter
+                        * second_parameter
+                        * cross_coefficient
+                    )
+        return trace_free_products, scalar_products
 
     trace_free_products: dict[tuple[int, int], sp.Matrix] = {}
     tensor_values = {
@@ -265,6 +402,46 @@ def multiplication_table(
     return trace_free_products, scalar_products
 
 
+def trace_free_generator_action_matrices(
+    cubic: sp.Expr,
+    higher_tensor: dict[tuple[int, int, int], sp.Expr] | None = None,
+) -> tuple[sp.Matrix, ...]:
+    """Matrices for multiplication by e_1,e_2,e_3 on B=A plus M.
+
+    The coefficient module is presented on ``1,e_1,e_2,e_3`` with the
+    single relation ``z e_1-y e_2+x e_3``.  These matrices let the Singular
+    certificate form ``n Ann_B(Omega)`` inside that fixed presentation.
+    """
+
+    trace_free_products, scalar_products = multiplication_table(
+        cubic, higher_tensor
+    )
+    actions = []
+    for generator in range(3):
+        columns = [
+            sp.Matrix(
+                [
+                    0,
+                    *(sp.Integer(index == generator) for index in range(3)),
+                ]
+            )
+        ]
+        for second in range(3):
+            pair = tuple(sorted((generator, second)))
+            columns.append(
+                sp.Matrix(
+                    [
+                        scalar_products[pair],
+                        *trace_free_products[pair],
+                    ]
+                )
+            )
+        actions.append(
+            sp.Matrix.hstack(*columns).applyfunc(sp.expand)
+        )
+    return tuple(actions)
+
+
 def differential_relations(
     cubic: sp.Expr,
     higher_tensor: dict[tuple[int, int, int], sp.Expr] | None = None,
@@ -338,6 +515,43 @@ def differential_relations(
     return relations
 
 
+@cache
+def _cached_differential_relations(
+    cubic: sp.Expr,
+    higher_items: tuple[
+        tuple[tuple[int, int, int], sp.Expr], ...
+    ],
+) -> tuple[tuple[sp.Expr, ...], ...]:
+    higher_tensor = dict(higher_items) if higher_items else None
+    return tuple(
+        tuple(relation)
+        for relation in differential_relations(cubic, higher_tensor)
+    )
+
+
+def cached_differential_relations(
+    cubic: sp.Expr,
+    higher_tensor: dict[tuple[int, int, int], sp.Expr] | None = None,
+) -> list[list[sp.Expr]]:
+    """Memoize the expensive symbolic family presentation in one replay."""
+
+    higher_items = tuple(
+        sorted(
+            (
+                (triple, sp.expand(value))
+                for triple, value in (higher_tensor or {}).items()
+            ),
+            key=lambda item: item[0],
+        )
+    )
+    return [
+        list(relation)
+        for relation in _cached_differential_relations(
+            cubic, higher_items
+        )
+    ]
+
+
 def singular_polynomial(expression: sp.Expr) -> str:
     normalized = (
         sp.factor(expression)
@@ -351,11 +565,275 @@ def singular_vector(vector: list[sp.Expr]) -> str:
     return "[" + ",".join(map(singular_polynomial, vector)) + "]"
 
 
+def filtered_rees_vector(
+    vector: list[sp.Expr],
+    component_weights: tuple[int, ...],
+    parameters: tuple[sp.Symbol, ...],
+    rees_parameter: sp.Symbol,
+    parameter_collision_weights: tuple[int, ...] | None = None,
+) -> list[sp.Expr]:
+    """Return the weighted Rees transform of one filtered relation.
+
+    The collision variables ``x,y,z`` have weight one.  Deformation
+    parameters have weight zero by default, but callers may give them
+    positive collision weights.  The latter realizes a universal filtered
+    coefficient such as the nodal normal-form variable ``u`` of weight one.
+    The returned vector is normalized by its least filtered degree, so
+    specialization at the Rees parameter zero is its initial relation and
+    specialization at one is the original relation.
+    """
+
+    assert len(vector) == len(component_weights)
+    parameter_collision_weights = parameter_collision_weights or (
+        0,
+    ) * len(parameters)
+    assert len(parameters) == len(parameter_collision_weights)
+    least_degree: int | None = None
+    for raw_entry, component_weight in zip(vector, component_weights):
+        entry = sp.sympify(raw_entry)
+        if entry == 0:
+            continue
+        polynomial = sp.Poly(
+            sp.expand(entry), *BASE_VARIABLES, *parameters
+        )
+        for monomial, _coefficient in polynomial.terms():
+            filtered_degree = (
+                sum(monomial[:3])
+                + sum(
+                    exponent * weight
+                    for exponent, weight in zip(
+                        monomial[3:], parameter_collision_weights
+                    )
+                )
+                + component_weight
+            )
+            least_degree = (
+                filtered_degree
+                if least_degree is None
+                else min(least_degree, filtered_degree)
+            )
+    assert least_degree is not None
+
+    substitution = {
+        variable: rees_parameter * variable for variable in BASE_VARIABLES
+    }
+    substitution.update(
+        {
+            parameter: rees_parameter**weight * parameter
+            for parameter, weight in zip(
+                parameters, parameter_collision_weights
+            )
+            if weight
+        }
+    )
+    return [
+        sp.expand(
+            sp.sympify(raw_entry).subs(
+                substitution, simultaneous=True
+            )
+            * rees_parameter ** (component_weight - least_degree)
+        )
+        for raw_entry, component_weight in zip(
+            vector, component_weights
+        )
+    ]
+
+
+def singular_rees_base_change_program(
+    cubic: sp.Expr,
+    tensors: tuple[dict[tuple[int, int, int], sp.Expr], ...],
+    parameter_collision_weights: tuple[int, ...] | None = None,
+) -> tuple[str, tuple[sp.Symbol, ...]]:
+    """Build the strict-Rees certificate for cotangent and annihilator base change.
+
+    The second module is the cokernel of ``B -> Omega^3``.  Its flatness,
+    together with flatness of ``Omega``, forces the annihilator kernel and
+    hence ``T=B/Ann(Omega)`` to commute with every parameter base change.
+    """
+
+    assert tensors
+    parameters = sp.symbols(f"p0:{len(tensors)}")
+    parameter_collision_weights = parameter_collision_weights or (
+        0,
+    ) * len(parameters)
+    assert len(parameters) == len(parameter_collision_weights)
+    rees_parameter = sp.Symbol("rees_t")
+    family_tensor = {
+        triple: sp.expand(
+            sum(
+                parameter * tensor[triple]
+                for parameter, tensor in zip(parameters, tensors)
+            )
+        )
+        for triple in tensors[0]
+    }
+    family_relations = cached_differential_relations(cubic, family_tensor)
+    central_relations = cached_differential_relations(cubic)
+
+    # deg(de_i)=2 and deg(e_j de_i)=4 in the central graded algebra.
+    cotangent_weights = tuple(
+        2 if component % 4 == 0 else 4 for component in range(12)
+    )
+    cotangent_rees = tuple(
+        filtered_rees_vector(
+            relation,
+            cotangent_weights,
+            parameters,
+            rees_parameter,
+            parameter_collision_weights,
+        )
+        for relation in family_relations
+    )
+
+    annihilator_cokernel_relations: list[list[sp.Expr]] = []
+    central_annihilator_cokernel_relations: list[list[sp.Expr]] = []
+    for block in range(3):
+        for family_relation, central_relation in zip(
+            family_relations, central_relations
+        ):
+            family_block = [sp.Integer(0)] * 36
+            central_block = [sp.Integer(0)] * 36
+            family_block[12 * block : 12 * (block + 1)] = (
+                family_relation
+            )
+            central_block[12 * block : 12 * (block + 1)] = (
+                central_relation
+            )
+            annihilator_cokernel_relations.append(family_block)
+            central_annihilator_cokernel_relations.append(central_block)
+    for algebra_generator in range(4):
+        action = [sp.Integer(0)] * 36
+        for block in range(3):
+            action[
+                12 * block + 4 * block + algebra_generator
+            ] = 1
+        annihilator_cokernel_relations.append(action)
+        central_annihilator_cokernel_relations.append(action)
+
+    annihilator_cokernel_weights = cotangent_weights * 3
+    annihilator_cokernel_rees = tuple(
+        filtered_rees_vector(
+            relation,
+            annihilator_cokernel_weights,
+            parameters,
+            rees_parameter,
+            parameter_collision_weights,
+        )
+        for relation in annihilator_cokernel_relations
+    )
+
+    variable_names = ",".join(
+        map(str, (*parameters, *BASE_VARIABLES, rees_parameter))
+    )
+    program = f'''\
+LIB "primdec.lib";
+ring rees_ring=0,({variable_names}),dp;
+'''
+    packets = (
+        (
+            "COTANGENT",
+            cotangent_rees,
+            central_relations,
+        ),
+        (
+            "ANNIHILATOR_COKERNEL",
+            annihilator_cokernel_rees,
+            central_annihilator_cokernel_relations,
+        ),
+    )
+    for label, rees_relations, central in packets:
+        program += (
+            f"module {label}_REES="
+            + ",".join(map(singular_vector, rees_relations))
+            + ";\n"
+            + f"module {label}_CENTRAL="
+            + ",".join(map(singular_vector, central))
+            + ";\n"
+            + f"{label}_REES=std({label}_REES);\n"
+            + f"{label}_CENTRAL=std({label}_CENTRAL);\n"
+            + f"list {label}_SATURATION_DATA="
+            + f"sat({label}_REES,ideal({rees_parameter}));\n"
+            + f"module {label}_SATURATED="
+            + f"{label}_SATURATION_DATA[1];\n"
+            + f"module {label}_SATURATION_QUOTIENT=simplify("
+            + f"reduce({label}_SATURATED,{label}_REES),2);\n"
+            + f"module {label}_INITIAL=std(subst("
+            + f"{label}_SATURATED,{rees_parameter},0));\n"
+            + f"module {label}_INITIAL_MINUS_CENTRAL=simplify("
+            + f"reduce({label}_INITIAL,{label}_CENTRAL),2);\n"
+            + f"module {label}_CENTRAL_MINUS_INITIAL=simplify("
+            + f"reduce({label}_CENTRAL,{label}_INITIAL),2);\n"
+            + f'print("{label}_REES_TORSION_GENERATORS="'
+            + f"+string(size({label}_SATURATION_QUOTIENT)));\n"
+            + f'print("{label}_INITIAL_PRESENTATION_DIFFERENCE="'
+            + f"+string(size({label}_INITIAL_MINUS_CENTRAL)"
+            + f"+size({label}_CENTRAL_MINUS_INITIAL)));\n"
+        )
+    program += "quit;\n"
+    return program, parameters
+
+
+def run_singular_rees_base_change_certificate(
+    cubic: sp.Expr,
+    tensors: tuple[dict[tuple[int, int, int], sp.Expr], ...],
+    timeout: int | None = None,
+    parameter_collision_weights: tuple[int, ...] | None = None,
+) -> dict[str, int]:
+    """Verify strict filtered base change on a full quartic subspace."""
+
+    program, parameters = singular_rees_base_change_program(
+        cubic,
+        tensors,
+        parameter_collision_weights,
+    )
+    singular = shutil.which("Singular")
+    assert singular is not None, "Singular is required for this checker"
+    result = subprocess.run(
+        [singular, "-q"],
+        input=program,
+        text=True,
+        capture_output=True,
+        check=True,
+        timeout=timeout,
+    )
+    wanted = {
+        "COTANGENT_REES_TORSION_GENERATORS",
+        "COTANGENT_INITIAL_PRESENTATION_DIFFERENCE",
+        "ANNIHILATOR_COKERNEL_REES_TORSION_GENERATORS",
+        "ANNIHILATOR_COKERNEL_INITIAL_PRESENTATION_DIFFERENCE",
+    }
+    values: dict[str, int] = {}
+    for line in result.stdout.splitlines():
+        if "=" in line:
+            key, value = line.split("=", 1)
+            if key in wanted:
+                values[key] = int(value)
+    assert set(values) == wanted, result.stdout + result.stderr
+    return {
+        "parameter_count": len(parameters),
+        "cotangent_rees_torsion_generators": values[
+            "COTANGENT_REES_TORSION_GENERATORS"
+        ],
+        "cotangent_initial_presentation_difference": values[
+            "COTANGENT_INITIAL_PRESENTATION_DIFFERENCE"
+        ],
+        "annihilator_cokernel_rees_torsion_generators": values[
+            "ANNIHILATOR_COKERNEL_REES_TORSION_GENERATORS"
+        ],
+        "annihilator_cokernel_initial_presentation_difference": values[
+            "ANNIHILATOR_COKERNEL_INITIAL_PRESENTATION_DIFFERENCE"
+        ],
+    }
+
+
 def singular_program(
     cubic: sp.Expr,
     higher_tensor: dict[tuple[int, int, int], sp.Expr] | None = None,
 ) -> str:
-    relations = differential_relations(cubic, higher_tensor)
+    relations = cached_differential_relations(cubic, higher_tensor)
+    generator_actions = trace_free_generator_action_matrices(
+        cubic, higher_tensor
+    )
 
     # To compute Ann_B(Q), take the kernel of
     # B -> Q^3, b |-> (b de_1,b de_2,b de_3).  Singular's modulo(H1,H2)
@@ -402,6 +880,32 @@ module support_presentation=std(
   modulo(annihilator_action,annihilator_relations)
 );
 print("SUPPORT_DIMENSION="+string(dim(support_presentation)));
+module coefficient_relation=[0,z,-y,x];
+matrix e1_action[4][4]=
+{",".join(singular_polynomial(entry) for entry in generator_actions[0])};
+matrix e2_action[4][4]=
+{",".join(singular_polynomial(entry) for entry in generator_actions[1])};
+matrix e3_action[4][4]=
+{",".join(singular_polynomial(entry) for entry in generator_actions[2])};
+module maximal_times_annihilator=
+  x*support_presentation+y*support_presentation+z*support_presentation;
+module trace_free_times_annihilator=
+  e1_action*support_presentation+
+  e2_action*support_presentation+
+  e3_action*support_presentation;
+module different_nakayama_denominator=std(
+  coefficient_relation+maximal_times_annihilator+
+  trace_free_times_annihilator
+);
+module different_generator_presentation=std(
+  modulo(support_presentation,different_nakayama_denominator)
+);
+print("DIFFERENT_GENERATOR_DIMENSION="+
+  string(dim(different_generator_presentation)));
+print("DIFFERENT_GENERATOR_MULTIPLICITY="+
+  string(mult(different_generator_presentation)));
+print("DIFFERENT_MINIMAL_GENERATORS="+
+  string(vdim(different_generator_presentation)));
 module support_ext3=std(Ext_R(3,support_presentation));
 print("EXT3_VECTOR_DIMENSION="+string(vdim(support_ext3)));
 module support_ext2=Ext_R(2,support_presentation);
@@ -568,12 +1072,11 @@ def run_singular_family(
     )
 
 
-def run_singular_subspace(
+def singular_subspace_program(
     cubic: sp.Expr,
     tensors: tuple[dict[tuple[int, int, int], sp.Expr], ...],
-    timeout: int | None = None,
-) -> tuple[int, int, int, int, int]:
-    """Audit a full polynomial parameter subspace of quartic tensors."""
+) -> tuple[str, tuple[sp.Symbol, ...]]:
+    """Build the exact programme for a polynomial quartic subspace."""
 
     assert tensors
     parameters = sp.symbols(f"p0:{len(tensors)}")
@@ -627,6 +1130,56 @@ def run_singular_subspace(
         + 'print("PRUNED_PRESENTATION_RANK="'
         + "+string(nrows(pruned_ext2_presentation)));",
     )
+    different_anchor = (
+        "module support_ext3=std(Ext_R(3,support_presentation));"
+    )
+    program = program.replace(
+        different_anchor,
+        "module pruned_different_generator_presentation=std("
+        + "prune(different_generator_presentation));"
+        + "ideal different_generator_fitting=fitting("
+        + "pruned_different_generator_presentation,0);"
+        + "ideal different_generator_support=std(radical("
+        + "different_generator_fitting));"
+        + "ideal different_parameter_space=std(ideal(x,y,z));"
+        + "ideal first_different_support_difference=simplify("
+        + "reduce(different_generator_support,"
+        + "different_parameter_space),2);"
+        + "ideal second_different_support_difference=simplify("
+        + "reduce(different_parameter_space,"
+        + "different_generator_support),2);"
+        + 'print("DIFFERENT_PARAMETER_SPACE_DIFFERENCE="'
+        + "+string(size(first_different_support_difference)"
+        + "+size(second_different_support_difference)));"
+        + "module central_different_generator_presentation=std(prune("
+        + "".join(f"subst(" for _ in parameters)
+        + "different_generator_presentation"
+        + "".join(f",{parameter},0)" for parameter in parameters)
+        + "));"
+        + "module first_different_presentation_difference=simplify("
+        + "reduce(pruned_different_generator_presentation,"
+        + "central_different_generator_presentation),2);"
+        + "module second_different_presentation_difference=simplify("
+        + "reduce(central_different_generator_presentation,"
+        + "pruned_different_generator_presentation),2);"
+        + 'print("DIFFERENT_PRUNED_PRESENTATION_DIFFERENCE="'
+        + "+string(size(first_different_presentation_difference)"
+        + "+size(second_different_presentation_difference)));"
+        + 'print("DIFFERENT_PRUNED_PRESENTATION_RANK="'
+        + "+string(nrows(pruned_different_generator_presentation)));"
+        + different_anchor,
+    )
+    return program, parameters
+
+
+def run_singular_subspace_certificate(
+    cubic: sp.Expr,
+    tensors: tuple[dict[tuple[int, int, int], sp.Expr], ...],
+    timeout: int | None = None,
+) -> dict[str, int]:
+    """Audit both saturation layers on a full quartic parameter space."""
+
+    program, parameters = singular_subspace_program(cubic, tensors)
     singular = shutil.which("Singular")
     assert singular is not None, "Singular is required for this checker"
     result = subprocess.run(
@@ -643,6 +1196,15 @@ def run_singular_subspace(
         "PARAMETER_SPACE_DIFFERENCE",
         "PRUNED_PRESENTATION_DIFFERENCE",
         "PRUNED_PRESENTATION_RANK",
+        "SUPPORT_DIMENSION",
+        "EXT3_VECTOR_DIMENSION",
+        "EXT2_DIMENSION",
+        "EXT2_SQUARE_ACTION_GENERATORS",
+        "DIFFERENT_GENERATOR_DIMENSION",
+        "DIFFERENT_GENERATOR_MULTIPLICITY",
+        "DIFFERENT_PARAMETER_SPACE_DIFFERENCE",
+        "DIFFERENT_PRUNED_PRESENTATION_DIFFERENCE",
+        "DIFFERENT_PRUNED_PRESENTATION_RANK",
     }
     values: dict[str, int] = {}
     for line in result.stdout.splitlines():
@@ -651,12 +1213,67 @@ def run_singular_subspace(
             if key in wanted:
                 values[key] = int(value)
     assert set(values) == wanted, result.stdout + result.stderr
+    return {
+        "parameter_count": len(parameters),
+        "cotangent_saturation_generators": values[
+            "SATURATION_GENERATORS"
+        ],
+        "support_module_dimension": values["SUPPORT_DIMENSION"],
+        "support_ext3_vector_dimension": values[
+            "EXT3_VECTOR_DIMENSION"
+        ],
+        "support_ext2_dimension": values["EXT2_DIMENSION"],
+        "support_ext2_multiplicity": values["EXT2_MULTIPLICITY"],
+        "support_ext2_parameter_axis_radical_difference": values[
+            "PARAMETER_SPACE_DIFFERENCE"
+        ],
+        "support_ext2_central_pruned_presentation_difference": values[
+            "PRUNED_PRESENTATION_DIFFERENCE"
+        ],
+        "support_ext2_pruned_presentation_rank": values[
+            "PRUNED_PRESENTATION_RANK"
+        ],
+        "support_ext2_collision_square_action_generators": values[
+            "EXT2_SQUARE_ACTION_GENERATORS"
+        ],
+        "different_generator_module_dimension": values[
+            "DIFFERENT_GENERATOR_DIMENSION"
+        ],
+        "different_generator_module_multiplicity": values[
+            "DIFFERENT_GENERATOR_MULTIPLICITY"
+        ],
+        "different_generator_parameter_axis_radical_difference": values[
+            "DIFFERENT_PARAMETER_SPACE_DIFFERENCE"
+        ],
+        "different_generator_central_pruned_presentation_difference": values[
+            "DIFFERENT_PRUNED_PRESENTATION_DIFFERENCE"
+        ],
+        "different_generator_pruned_presentation_rank": values[
+            "DIFFERENT_PRUNED_PRESENTATION_RANK"
+        ],
+    }
+
+
+def run_singular_subspace(
+    cubic: sp.Expr,
+    tensors: tuple[dict[tuple[int, int, int], sp.Expr], ...],
+    timeout: int | None = None,
+) -> tuple[int, int, int, int, int]:
+    """Audit a full polynomial parameter subspace of quartic tensors."""
+
+    certificate = run_singular_subspace_certificate(
+        cubic,
+        tensors,
+        timeout,
+    )
     return (
-        values["SATURATION_GENERATORS"],
-        values["EXT2_MULTIPLICITY"],
-        values["PARAMETER_SPACE_DIFFERENCE"],
-        values["PRUNED_PRESENTATION_DIFFERENCE"],
-        values["PRUNED_PRESENTATION_RANK"],
+        certificate["cotangent_saturation_generators"],
+        certificate["support_ext2_multiplicity"],
+        certificate["support_ext2_parameter_axis_radical_difference"],
+        certificate[
+            "support_ext2_central_pruned_presentation_difference"
+        ],
+        certificate["support_ext2_pruned_presentation_rank"],
     )
 
 

@@ -1,0 +1,90 @@
+{
+  "scope": "second-order flatness and lower flag geometry after HC4RSD77",
+  "status": "Gauss-rank-two maximal motion excluded; local lower-motion split and flag tensors certified",
+  "first_order_unknowns": 64,
+  "first_order_rank": 47,
+  "first_order_parameters": 17,
+  "curvature_equations": 96,
+  "derivative_unknowns": 68,
+  "derivative_rank": 48,
+  "compatibility_equations": 4,
+  "distinguished_parameters": {
+    "a": "p4",
+    "b": "p3",
+    "q": "p8",
+    "r": "p7",
+    "p0": "p0",
+    "s": "p12"
+  },
+  "compatibility_involving_a_and_q": [
+    "p4*(p0 - p8)",
+    "-2*p4*(p0 - p8)",
+    "-(4*p0*p4 - 3*p4**2 - 4*p4*p8 + 3*p8**2)/4",
+    "3*p4*(p0 - p8)"
+  ],
+  "first_order_witness_survives_flatness": true,
+  "first_order_witness_obstructions": [],
+  "compatibility_generators": [
+    "p4*(p0 - p8)",
+    "-2*p4*(p0 - p8)",
+    "-(4*p0*p4 - 3*p4**2 - 4*p4*p8 + 3*p8**2)/4",
+    "3*p4*(p0 - p8)"
+  ],
+  "maximal_motion": {
+    "selected_line_derivative": "Matrix([[-p0, -p12], [0, -p8]])",
+    "selected_line_determinant": "p0*p8",
+    "additional_equations": "d(p0*q)=0 from p0*q=delta up to a fixed nonzero frame factor",
+    "derivative_rank": 50,
+    "compatibility_equations": 5,
+    "compatibility_generators": [
+      "p4*(p0 - p8)",
+      "-2*p4*(p0 - p8)",
+      "-(4*p0*p4 - 3*p4**2 - 4*p4*p8 + 3*p8**2)/4",
+      "3*p4*(p0 - p8)",
+      "3*p0*(2*p0*p4 - p4*p8 + 3*p8**2)/2"
+    ],
+    "flat_witness_survives": false,
+    "flat_witness_obstructions": [
+      "6"
+    ],
+    "contradiction_generators": [
+      "p0*p4 - p4*p8",
+      "4*p0*p4 - 3*p4**2 - 4*p4*p8 + 3*p8**2",
+      "2*p0**2*p4 - p0*p4*p8 + 3*p0*p8**2"
+    ],
+    "saturation_by_a": "unit ideal",
+    "conclusion": "a!=0 gives p0=q and q^2=a^2 from flatness, while d(p0*q)=0 gives a=-3q; characteristic zero forces q=0, a contradiction"
+  },
+  "canonical_frame_gauge": {
+    "centralizer_form": "c0 I+c1 N+c2 N^2+c3 N^3",
+    "orthogonality_equations": [
+      "(c0 - 1)*(c0 + 1)",
+      "2*c0*c1",
+      "2*c0*c2 + c1**2",
+      "2*(c0*c3 + c1*c2)"
+    ],
+    "residual_group": "+/- I"
+  },
+  "source_kernel_motion_rank_one": {
+    "stratum": "a=0, q=0, b!=0",
+    "derivative_rank": 50,
+    "compatibility_equations": 1,
+    "compatibility_generators": [
+      "p0*p7"
+    ],
+    "compatibility_involving_b": [],
+    "conclusion": "flatness leaves p0*r=0 and no equation involving b"
+  },
+  "lower_motion_flag_geometry": {
+    "source_kernel_projective_derivative": "Matrix([[0, 0, p4, p3], [0, 0, 0, p4], [0, 0, 0, 0]])",
+    "middle_plane_A3": "Matrix([[0, -p4/2 - p8/2], [0, 0]])",
+    "middle_plane_A4": "Matrix([[p4, p7], [0, p8]])",
+    "top_hyperplane_second_fundamental": "Matrix([[0, 0, 0], [0, 0, 0], [0, 0, p0]])",
+    "top_hyperplane_transverse_derivative": "Matrix([[0, p8, p12]])",
+    "rank_zero": "a=b=q=0 fixes the projective source-kernel line",
+    "r_zero": "a=q=r=0 makes E2 parallel in every ambient direction",
+    "p0_zero": "p0=0 makes E3 autoparallel with affine-hyperplane leaves",
+    "moving_p0_zero_flag": "for a=q=p0=0, the e4 derivatives have e1->b*e2 and E2/E1->r*(E3/E2)"
+  },
+  "proof_boundary": "The checker supplies the local rank-one split and flag tensors. HC4RSD80 closes p0=0 globally by the degree-one hyperplane-incidence lemma; that projective argument is proved in the companion note."
+}

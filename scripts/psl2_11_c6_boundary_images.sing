@@ -1,0 +1,140 @@
+// Exact smooth-boundary and rational-node images for the C6 normalization.
+LIB "primdec.lib";
+
+ring R=(0,r),(x,y,m,t,w,X,Y),lp;
+minpoly=r^2+11;
+
+poly f=x6+(1/2*r-1/2)*x5*y+(-1/2*r-3/2)*x4*y2+2*x3*y3
+ +(1/2*r-3/2)*x2*y4+(-1/2*r-1/2)*x*y5+y6
+ +(1/2*r+11/2)*x5+(3/2*r-11/2)*x4*y-2*r*x3*y2
+ +2*r*x2*y3+(-3/2*r-11/2)*x*y4+(-1/2*r+11/2)*y5
+ +(67/2*r-77/2)*x4+(-35*r-110)*x3*y+198*x2*y2
+ +(35*r-110)*x*y3+(-67/2*r-77/2)*y4
+ +(66*r-583)*x3+(-242*r+385)*x2*y+(242*r+385)*x*y2
+ +(-66*r-583)*y3+(-902*r-3212)*x2+4048*x*y
+ +(902*r-3212)*y2+(-5588*r+8712)*x+(5588*r+8712)*y+43560;
+
+poly p1x=2*x+11-3*r;
+poly p2x=2*x2-(11-3*r)*x-(22+6*r);
+poly p3x=x2+11*x+55+9*r;
+poly q1x=2*x+5+3*r;
+poly q2x=2*x3+(15-3*r)*x2-(12-12*r)*x+56+96*r;
+poly q3x=2*x3-18*x2+(21+45*r)*x-(175+279*r);
+
+proc showfiber(poly s,string label)
+{
+  ideal J=std(radical(ideal(f,s)));
+  list L=minAssGTZ(J);
+  int i;
+  for(i=1;i<=size(L);i++)
+  {
+    print(label+"_"+string(i)+" degree="+string(vdim(std(L[i]))));
+    print(std(L[i]));
+  }
+}
+
+showfiber(p1x,"p1");
+showfiber(p2x,"p2");
+showfiber(p3x,"p3");
+showfiber(q1x,"q1");
+showfiber(q2x,"q2");
+showfiber(q3x,"q3");
+
+poly A=4*x2*y+(r-1)*x*y2-2*y3+4*x2+2*r*x*y+(r-7)*y2
+ +(-8*r-44)*x+(20*r+44)*y-44*r+220;
+poly BB=x3+3*x2-1/2*x*y2+(11+3*r)/4*x*y+(-55+33*r)/2*x
+ +(1+r)/4*y3+(1+3*r)/4*y2+(44-12*r)*y-198-44*r;
+poly qa=(128*r+320)*t6+(64*r-736)*t5+(-110*r-50)*t4
+ +(-10*r+138)*t3+(79/8*r-181/8)*t2+(-15/16*r+69/16)*t
+ +(-1/64*r-9/32);
+poly qb=(544*r-1760)*t6+(-2320*r-3344)*t5+(128*r+6908)*t4
+ +(508*r-1056)*t3+(-781/8*r-1859/8)*t2+(87/16*r+1353/16)*t
+ +(-97/128*r-957/128);
+poly sq=t3+(r/40-7/40)*t2+(7*r/160-19/160)*t-r/320+1/160;
+poly znum=8*t-3+r;
+poly zden=8*t+5+r;
+number dd=2*(1+3*r);
+
+proc mapplus(ideal I,string label)
+{
+  number uu=-22-6*r;
+  number rr0=110+330*r;
+  number tt0=7744-3168*r;
+  ideal K=std(I+ideal(BB-t*A,
+    3*r*sq*w-2*(2*qa*x+qb),
+    X*(zden^2*uu^2)+121*dd*znum^2+rr0*zden^2,
+    Y*(zden^3*uu^3)-3872*dd*w+tt0*zden^3));
+  ideal E=eliminate(K,x*y*m*t*w);
+  print("PLUS "+label);
+  print(std(E));
+}
+
+proc mapminus(ideal I,string label)
+{
+  number uu=6-2*r;
+  number rr0=2+6*r;
+  number tt0=-288-64*r;
+  ideal K=std(I+ideal(BB-t*A,
+    3*r*sq*w-2*(2*qa*x+qb),
+    X*(znum^2*uu^2)-dd*zden^2+rr0*znum^2,
+    Y*(znum^3*uu^3)+32*dd*w+tt0*znum^3));
+  ideal E=eliminate(K,x*y*m*t*w);
+  print("MINUS "+label);
+  print(std(E));
+}
+
+proc mapnode(ideal I,string label,int which)
+{
+  poly tangent=diff(diff(f,x),x)+2*diff(diff(f,x),y)*m
+    +diff(diff(f,y),y)*m2;
+  poly tangentmap=t*(diff(A,x)+m*diff(A,y))
+    -(diff(BB,x)+m*diff(BB,y));
+  ideal T=std(I+ideal(tangent,tangentmap));
+  list L=minAssGTZ(T);
+  int i;
+  for(i=1;i<=size(L);i++)
+  {
+    if(which==1){mapplus(L[i],label+"_"+string(i));}
+    if(which==2){mapminus(L[i],label+"_"+string(i));}
+  }
+}
+
+ideal I;
+// The smooth normalized boundary primes, in the block order used by checker.
+I=ideal(2*y2+(-3*r-11)*y+(6*r-22),2*x+(-3*r+11));
+mapplus(I,"p1_a");mapminus(I,"p1_a");
+I=ideal(y2+11*y+(-9*r+55),2*x+(-3*r+11));
+mapplus(I,"p1_b");mapminus(I,"p1_b");
+I=ideal(2*y+(3*r+11),2*x2+(3*r-11)*x+(-6*r-22));
+mapplus(I,"p2_a");mapminus(I,"p2_a");
+I=ideal(y2+11*y+(-9*r+55),6*x+(r-1)*y+(10*r-22));
+mapplus(I,"p2_b");mapminus(I,"p2_b");
+I=ideal(2*y+(3*r+11),x2+11*x+(9*r+55));
+mapplus(I,"p3_a");mapminus(I,"p3_a");
+I=ideal(2*y2+(-3*r-11)*y+(6*r-22),2*x+(r-1)*y+(-2*r+22));
+mapplus(I,"p3_b");mapminus(I,"p3_b");
+I=ideal(2*y3+(3*r+15)*y2+(-12*r-12)*y+(-96*r+56),2*x+(3*r+5));
+mapplus(I,"q1_a");mapminus(I,"q1_a");
+I=ideal(2*y3-18*y2+(-45*r+21)*y+(279*r-175),2*x+(3*r+5));
+mapplus(I,"q1_b");mapminus(I,"q1_b");
+I=ideal(2*y3-18*y2+(-45*r+21)*y+(279*r-175),6*x+2*y2+(3*r-5)*y+(-42*r-10));
+mapplus(I,"q2_a");mapminus(I,"q2_a");
+I=ideal(2*y+(-3*r+5),2*x3+(-3*r+15)*x2+(12*r-12)*x+(96*r+56));
+mapplus(I,"q2_b");mapminus(I,"q2_b");
+I=ideal(2*y3+(3*r+15)*y2+(-12*r-12)*y+(-96*r+56),
+  18*x2+(-r-1)*x*y2+(-8*r+10)*x*y+(-7*r+47)*x
+  +(-r-1)*y2+(-35*r-17)*y+(-34*r+2));
+mapplus(I,"q2_c");mapminus(I,"q2_c");
+I=ideal(2*y3+(3*r+15)*y2+(-12*r-12)*y+(-96*r+56),18*x+(-r-1)*y2+(r+1)*y+(29*r-169));
+mapplus(I,"q3_a");mapminus(I,"q3_a");
+I=ideal(2*y+(-3*r+5),2*x3-18*x2+(45*r+21)*x+(-279*r-175));
+mapplus(I,"q3_b");mapminus(I,"q3_b");
+I=ideal(2*y3-18*y2+(-45*r+21)*y+(279*r-175),
+  6*x2-4*x*y2+(-3*r+7)*x*y+(69*r+23)*x
+  +(-3*r+29)*y2+(27*r-35)*y+(-411*r-949));
+mapplus(I,"q3_c");mapminus(I,"q3_c");
+
+// Node orbits: p1/p1 (one degree-two branch prime), p2/p2 (two
+// degree-four branch primes), and q2/q2 (one degree-six branch prime).
+I=ideal(2*x+(-3*r+11),2*y+(3*r+11));
+mapnode(I,"p1_node",1);mapnode(I,"p1_node",2);

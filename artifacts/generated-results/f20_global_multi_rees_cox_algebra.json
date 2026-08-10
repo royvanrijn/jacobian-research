@@ -1,0 +1,94 @@
+{
+  "degree_3_1_1_natural_incidence_piece": {
+    "P_X_in_product_ideal": false,
+    "P_X_normal_form": "P_X",
+    "base_elimination_groebner_size": 8,
+    "base_residue_length": 33,
+    "colon_groebner_size": 28,
+    "product_generator_count": 16,
+    "product_groebner_size": 34,
+    "reduced_base_support": {
+      "centers": [
+        "q node (s,t)=(1,-1/2)",
+        "r cusp (s,t)=(11,-1/2)",
+        "two triple centers (s=4t+3, 16t^2+24t+13=0)",
+        "transverse q-r center (s,t)=(7/12,2)",
+        "three q-r tangencies (s=4t^2-5, 8t^3+16t^2+2t-7=0)"
+      ],
+      "degree": 8,
+      "equals_known_collision_centers": true
+    },
+    "residue_length": 57,
+    "squarefree_boundary_annihilators": {
+      "1": false,
+      "d": false,
+      "d*q": false,
+      "d*q*r": true,
+      "d*r": false,
+      "q": false,
+      "q*r": false,
+      "r": false
+    }
+  },
+  "downstream": {
+    "abstract_colored_packet_identity": "still passes",
+    "affine_space_recognition": "not_reached",
+    "inverse_adjugate_polynomiality": "not_reached",
+    "no_go_scope": "natural ideals on the nonnormal root-incidence ring only",
+    "normalized_Cox_realization": "open",
+    "ordinary_incidence_multi_rees_realization": "fails"
+  },
+  "general_multi_rees_theorem": {
+    "graded_piece": "degree alpha is product_i I_i^(alpha_i)",
+    "hypotheses": "A is a domain and I_i=(a_i,b_i) with every a_i nonzero",
+    "kernel": "(b_i*U_i-a_i*V_i for all i) : (product_i a_i)^infinity",
+    "map": "A[U_i,V_i] -> A[T_i], U_i |-> a_i*T_i, V_i |-> b_i*T_i",
+    "reason": "localize at the pivot product, solve V_i=(b_i/a_i)U_i, then contract"
+  },
+  "normalized_divisorial_cox_frontier": {
+    "algebra": "direct_sum_{a,b,c>=0} H^0(X_tilde, O(-a*D_d-b*D_q-c*D_r))*U^a*V^b*W^c",
+    "remaining": "construct simultaneous global divisorial ideals on the normalized regular cover, compute their multiplication/residue cocycle, then retest the (3,1,1) section",
+    "required_local_extension": "adjoin the triple-E1 normalized uniformizer tau of value one"
+  },
+  "r_incidence_generator": {
+    "X_degree": 2,
+    "definition": "h_r=Sres_2(P,P_X)/(s^2+4)",
+    "polynomial": true,
+    "primitive_in_QQ[s,t][X]": true,
+    "sample_s_2_t_7_over_4": "-35721/64*(X^2+8*X-2)",
+    "term_count": 115
+  },
+  "root_incidence_ring": {
+    "P_irreducible_over_QQ": true,
+    "multi_rees_kernel": "(P, h_d*U_d-d*V_d, h_q*U_q-q*V_q, h_r*U_r-r*V_r) : (d*q*r)^infinity",
+    "natural_ideals": {
+      "I_d": "(d, 2*X-s-2)",
+      "I_q": "(q, 2*(s-1)*X-(2*s^2*t+2*s^2+3*s-4))",
+      "I_r": "(r, Sres_2(P,P_X)/(s^2+4))"
+    },
+    "ring": "R=QQ[s,t,X]/(P)"
+  },
+  "schema": "f20-global-multi-rees-cox-algebra-v1",
+  "software_assumptions": {
+    "python": ".venv Python with pinned SymPy",
+    "singular": "Singular 4.4-compatible quotient, elimination, and radical routines"
+  },
+  "status": "normalization_first_obstruction_and_finite_residue",
+  "triple_E1_value_semigroup_gate": {
+    "conclusion": "value one is a gap in the original local incidence ring; the normalized uniformizer tau must be adjoined before the Cox fill",
+    "desired_D_d_coefficient": 1,
+    "maximal_ideal_positive_order_floor": 2,
+    "natural_I_d_order": 2,
+    "orders": {
+      "P_X": 7,
+      "X_minus_root": 2,
+      "d": 4,
+      "h_d": 2,
+      "q": 4,
+      "r": 4,
+      "s_minus_s0": 4,
+      "t_minus_t0": 4
+    },
+    "ordinary_incidence_ideal_can_realize_D_d": false
+  }
+}

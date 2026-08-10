@@ -232,6 +232,35 @@ constructed. The theorem does not manufacture \(\Phi\), prove that \(\rho\)
 is supported on \(Z\), or show that (4.2) vanishes. Those are separate module
 and saturation calculations.
 
+Once those inputs exist, the
+[`S_1` boundary support-saturation theorem](../verified/SUPPORT_SATURATION_PRINCIPLE.md#plane-jc-conductor-residue)
+gives a precise restrictive vanishing criterion: it is enough that \(M\) be
+`S_1` and that \(Z\) contain no irreducible component of
+`Supp(M)`. If \(M\) is itself a nonzero finite module supported on \(Z\),
+then \(H_Z^0(M)=M\), so conductor truncation alone cannot kill the residue.
+
+### 4.2 Integrated support-saturation gate
+
+The Case-1 module path is the `P0`--`P4` row of
+[`SUPPORT_SATURATION_PATHS.json`](../verified/SUPPORT_SATURATION_PATHS.json):
+
+| Stage | Exact obligation | Current status |
+|---|---|---|
+| `P0` / `G0` | Compile the actual fixed-basis map \(\Phi\), prove the conductor/contact-loss ledger for every input-to-output path, and obtain the finite presented cokernel \(M\) independently of omitted bands | open for the proposed alternate-chart module |
+| `P1` / `G1` | Construct \([\rho]\in M\) and prove it vanishes off \(Z\); any divisorial relative-different defect must be removed first | open |
+| `P2` / `G2` | Prove no minimal component of \(\operatorname{Supp}M\) is contained in \(Z\) | open |
+| `P3` / `G3` | Prove \(M\) is \(S_1\), or directly certify associated-prime avoidance/presentation saturation | open |
+| `P4` / `G4` | Apply `SST1` to conclude \([\rho]=0\) | conditional on `P0`--`P3` |
+
+This order is mandatory.  In particular, a finite-support residue is not
+obtained merely by naming a finite set `Z`; `P1` must first exclude a
+remaining divisorial defect.  If `P2` fails because the nonzero matching
+cokernel is supported entirely on `Z`, the repair is componentwise
+surjectivity of \(\Phi\) or enlargement of the coefficient family, not a
+deeper power of \(I_Z\).
+
+<!-- status-consumer: SST1 12c5cb15e8b6de26 -->
+
 ## 5. Generality and base change
 
 The proof uses only the finite conductor quotient and filtered contact

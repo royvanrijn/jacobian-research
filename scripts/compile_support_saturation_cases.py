@@ -9,6 +9,14 @@ The cases have intentionally different theorem scopes:
 * ``cubic-frontier`` imports the proved formal-gauge cokernel atlas and
   compiles the remaining cubic work by annihilator type.  It is a routing
   certificate, not a new saturation computation.
+* ``cubic-double-strata`` chooses exact complements to the quartic formal
+  gauge images on the six singular squarefree symbols and computes both the
+  cotangent-saturation and support-hull layers on the full complement
+  families, together with the collision Nakayama quotient of the Kähler
+  different.  Strict weighted-Rees packets promote both saturation layers,
+  the annihilator quotient, and the six-generator non-Cartier conclusion to
+  every geometric parameter fiber.  The case does not control higher formal
+  orders or Keller compatibility.
 * ``degree42`` uses the full unit-pivot-reduced core on the base fiber
   ``(e1,e2,t)=(1,2,3)``.  It certifies an untruncated characteristic-zero
   support class and computes the complete order-six/order-seven support
@@ -25,10 +33,13 @@ The cases have intentionally different theorem scopes:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
 from pathlib import Path
 from typing import Any
+
+import sympy as sp
 
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
@@ -48,8 +59,16 @@ from jcsearch.support_saturation import (  # noqa: E402
 from verify_cubic_symbol_double_saturation import (  # noqa: E402
     CUBIC_STRATA,
     differential_relations,
+    homogeneous_monomials,
+    quartic_kernel_basis_tensors,
+    run_singular_rees_base_change_certificate,
+    run_singular_subspace_certificate,
     singular_polynomial,
 )
+from verify_cubic_formal_gauge_cokernel_atlas import (  # noqa: E402
+    symbol_tensor,
+)
+import verify_universal_cubic_cotangent_saturation as cubic_formal  # noqa: E402
 from verify_degree42_order7_known_witness import C6  # noqa: E402
 from verify_degree42_transported_27_normal_jets import (  # noqa: E402
     serialize,
@@ -77,6 +96,15 @@ EXPECTED_SINGULAR_ANNIHILATORS = {
     "line-tangent-conic": "(y^3)",
     "triangle": "(xyz)",
     "concurrent-lines": "(x^3)",
+}
+
+EXPECTED_NONGAUGE_COMPLEMENT_INDICES = {
+    "nodal": (0, 1),
+    "cuspidal": (0, 1, 2, 5),
+    "line-transverse-conic": (15, 19, 20, 23),
+    "line-tangent-conic": (8, 12, 15, 16, 20, 21),
+    "triangle": (0, 1, 15, 19, 20, 23),
+    "concurrent-lines": (0, 1, 2, 3, 4, 5, 6, 7),
 }
 
 
@@ -215,6 +243,234 @@ def cubic_frontier_case() -> dict[str, Any]:
                 "search_key": "compatibility_before_saturation",
                 "queue": degenerate_queue,
             },
+        },
+    }
+
+
+def _quartic_tensor_column(
+    tensor: dict[tuple[int, int, int], sp.Expr],
+) -> sp.Matrix:
+    monomials = homogeneous_monomials(4)
+    return sp.Matrix(
+        [
+            sp.Poly(
+                sp.expand(tensor[triple]),
+                *cubic_formal.cubic_audit.BASE_VARIABLES,
+            ).coeff_monomial(monomial)
+            for triple in cubic_formal.TRIPLES
+            for monomial in monomials
+        ]
+    )
+
+
+def _tensor_record(
+    tensor: dict[tuple[int, int, int], sp.Expr],
+) -> list[str]:
+    return [
+        sp.sstr(sp.expand(tensor[triple]))
+        for triple in cubic_formal.TRIPLES
+    ]
+
+
+def _canonical_sha256(value: Any) -> str:
+    return hashlib.sha256(
+        json.dumps(
+            value,
+            sort_keys=True,
+            separators=(",", ":"),
+        ).encode()
+    ).hexdigest()
+
+
+def _nongauge_complement(
+    name: str,
+) -> tuple[
+    tuple[int, ...],
+    tuple[dict[tuple[int, int, int], sp.Expr], ...],
+    dict[str, int],
+]:
+    """Choose a deterministic complement of the quartic gauge image."""
+
+    basis = quartic_kernel_basis_tensors()
+    compatible_matrix = sp.Matrix.hstack(
+        *(_quartic_tensor_column(tensor) for tensor in basis)
+    )
+    gauge = cubic_formal.gauge_matrix(symbol_tensor(CUBIC_STRATA[name]))
+    variables = cubic_formal.cubic_audit.BASE_VARIABLES
+    action_matrix = sp.Matrix.hstack(
+        *(
+            _quartic_tensor_column(
+                {
+                    triple: sp.expand(gauge[row, column] * variable)
+                    for row, triple in enumerate(cubic_formal.TRIPLES)
+                }
+            )
+            for column in range(gauge.cols)
+            for variable in variables
+        )
+    )
+    compatible_rank = compatible_matrix.rank()
+    action_rank = action_matrix.rank()
+    selected: list[int] = []
+    span = action_matrix
+    span_rank = action_rank
+    for index in range(compatible_matrix.cols):
+        enlarged = span.row_join(compatible_matrix[:, index])
+        enlarged_rank = enlarged.rank()
+        if enlarged_rank > span_rank:
+            selected.append(index)
+            span = enlarged
+            span_rank = enlarged_rank
+    selected_indices = tuple(selected)
+    assert compatible_rank == 24
+    assert span_rank == compatible_rank
+    assert selected_indices == EXPECTED_NONGAUGE_COMPLEMENT_INDICES[name]
+    return (
+        selected_indices,
+        tuple(basis[index] for index in selected_indices),
+        {
+            "compatible_quartic_dimension": compatible_rank,
+            "linear_gauge_image_dimension": action_rank,
+            "nongauge_quotient_dimension": compatible_rank - action_rank,
+        },
+    )
+
+
+def cubic_double_stratification_case() -> dict[str, Any]:
+    """Compute both cubic saturation layers on every nongauge quartic row."""
+
+    # Expanded serialization is dramatically faster for the eight-parameter
+    # concurrent-lines row and leaves the exact polynomial input unchanged.
+    cubic_formal.cubic_audit.FACTOR_SINGULAR_EXPRESSIONS = False
+    atlas = json.loads(FORMAL_GAUGE_ATLAS.read_text())
+    basis = quartic_kernel_basis_tensors()
+    basis_record = [_tensor_record(tensor) for tensor in basis]
+    rows: dict[str, Any] = {}
+    for name in SINGULAR_SQUAREFREE_SYMBOLS:
+        indices, representatives, quotient = _nongauge_complement(name)
+        assert quotient["nongauge_quotient_dimension"] == atlas["rows"][name][
+            "quartic_nongauge_dimension"
+        ]
+        computation = run_singular_subspace_certificate(
+            CUBIC_STRATA[name],
+            representatives,
+            timeout=1800,
+        )
+        base_change = run_singular_rees_base_change_certificate(
+            CUBIC_STRATA[name],
+            representatives,
+            timeout=1800,
+        )
+        parameter_count = len(indices)
+        expected = {
+            "parameter_count": parameter_count,
+            "cotangent_saturation_generators": 0,
+            "support_module_dimension": parameter_count + 2,
+            "support_ext3_vector_dimension": 0,
+            "support_ext2_dimension": parameter_count,
+            "support_ext2_multiplicity": 6,
+            "support_ext2_parameter_axis_radical_difference": 0,
+            "support_ext2_central_pruned_presentation_difference": 0,
+            "support_ext2_pruned_presentation_rank": 3,
+            "support_ext2_collision_square_action_generators": 0,
+            "different_generator_module_dimension": parameter_count,
+            "different_generator_module_multiplicity": 6,
+            "different_generator_parameter_axis_radical_difference": 0,
+            "different_generator_central_pruned_presentation_difference": 0,
+            "different_generator_pruned_presentation_rank": 6,
+        }
+        assert computation == expected, (name, computation)
+        expected_base_change = {
+            "parameter_count": parameter_count,
+            "cotangent_rees_torsion_generators": 0,
+            "cotangent_initial_presentation_difference": 0,
+            "annihilator_cokernel_rees_torsion_generators": 0,
+            "annihilator_cokernel_initial_presentation_difference": 0,
+        }
+        assert base_change == expected_base_change, (name, base_change)
+        representative_record = [
+            _tensor_record(tensor) for tensor in representatives
+        ]
+        rows[name] = {
+            "formal_gauge_cokernel_annihilator": atlas["rows"][name][
+                "annihilator"
+            ],
+            **quotient,
+            "compatible_basis_indices": list(indices),
+            "representative_tensor_components": representative_record,
+            "representative_sha256": _canonical_sha256(
+                representative_record
+            ),
+            "exact_computation": computation,
+            "fiberwise_base_change_certificate": base_change,
+            "quartic_model_gate_results": {
+                "C1_support_hull": (
+                    "fails_on_every_geometric_parameter_fiber: strict Rees "
+                    "base change identifies the intrinsic support module, "
+                    "and Ext^2 is the parameter-independent nonzero "
+                    "multiplicity-six central module"
+                ),
+                "C2_cotangent_torsion": (
+                    "passes_on_every_geometric_parameter_fiber: the strict "
+                    "Rees initial module is the saturated central cotangent "
+                    "module"
+                ),
+                "Cartier_Kahler_different": (
+                    "fails_on_every_geometric_parameter_fiber: the local "
+                    "Kahler different has six minimal generators at the "
+                    "collision"
+                ),
+            },
+            "base_change_status": (
+                "certified for every geometric specialization by the "
+                "t-saturated cotangent and annihilator-cokernel Rees modules"
+            ),
+            "programme_status": (
+                "C1 remains open for Keller-compatible cubic "
+                "normalizations; this quartic model family supplies an "
+                "obstruction that the geometric hypotheses must exclude"
+            ),
+        }
+    return {
+        "schema": "cubic-double-saturation-stratification.v3",
+        "case": "singular-squarefree-cubic-quartic-double-saturation",
+        "source_artifact": str(FORMAL_GAUGE_ATLAS.relative_to(ROOT)),
+        "source_exact_matrix_sha256": atlas["exact_matrix_sha256"],
+        "compatible_quartic_basis_sha256": _canonical_sha256(basis_record),
+        "tensor_component_order": [
+            list(triple) for triple in cubic_formal.TRIPLES
+        ],
+        "mathematical_scope": (
+            "Exact characteristic-zero calculation on a deterministic "
+            "linear complement of the formal gauge image in the complete "
+            "quartic compatible-tensor space for each singular squarefree "
+            "cubic symbol. It proves universal cotangent saturation on "
+            "each displayed quartic nongauge family and a nonzero, "
+            "parameter-independent multiplicity-six Ext^2 support-hull "
+            "obstruction. The same exact presentations compute the "
+            "collision Nakayama module J/nJ for the Kahler different "
+            "J=Ann_B(Omega): it is the scalar extension of a six-dimensional "
+            "central module, so J is not locally principal on any geometric "
+            "parameter fiber. Strict Rees certificates for Omega and for the "
+            "cokernel of B -> Omega^3 prove flatness over the parameter "
+            "ring, commute the annihilator and support module with every "
+            "geometric base change, and promote both gate results to all "
+            "parameter fibers. It does not classify higher-order formal "
+            "deformations or prove Keller-open compatibility."
+        ),
+        "rows": rows,
+        "uniform_conclusion": {
+            "C2_on_quartic_models": (
+                "proved on every geometric fiber of all six families"
+            ),
+            "C1_on_quartic_models": (
+                "fails on every geometric fiber of all six families"
+            ),
+            "fiberwise_base_change": "proved for all six quartic families",
+            "Cartier_Kahler_different_on_quartic_models": (
+                "fails on every geometric fiber of all six families"
+            ),
+            "global_cubic_programme": "open",
         },
     }
 
@@ -481,6 +737,10 @@ CASES = {
     "cubic-frontier": (
         cubic_frontier_case,
         "support_saturation_cubic_annihilator_frontier.json",
+    ),
+    "cubic-double-strata": (
+        cubic_double_stratification_case,
+        "cubic_double_saturation_stratification.json",
     ),
     "degree42": (
         degree42_case,

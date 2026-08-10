@@ -1,0 +1,3146 @@
+{
+  "claim_boundary": "coordinate lines plus finitely many deterministic dense lines do not reconstruct or prove the complete 112-parameter multivariate obstruction map",
+  "combined_obstruction_coordinate_union": [],
+  "combined_obstruction_coordinate_union_count": 0,
+  "combined_obstruction_functional_ledger": [],
+  "coordinate_line_audit": {
+    "complete_free_coordinate_census": true,
+    "degree_histogram": {
+      "0": 112
+    },
+    "line_count": 112,
+    "nonzero_coordinate_union": [],
+    "nonzero_coordinate_union_count": 0,
+    "profiles": [
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-13_d10",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          62,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-13_d9",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-17_d0",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-17_d1",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-17_d2",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-17_d3",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-17_d4",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-17_d5",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-17_d6",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-17_d7",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-17_d8",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-17_d9",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-5_d10",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          60,
+          63,
+          63,
+          63,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-5_d11",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          62,
+          63,
+          63,
+          63,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-5_d8",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          62,
+          63,
+          63,
+          63,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-5_d9",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          62,
+          63,
+          63,
+          63,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-9_d10",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          62,
+          63,
+          63,
+          62,
+          63,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-9_d11",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          63,
+          62,
+          63,
+          63,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-9_d8",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_-9_d9",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_3_d10",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          61,
+          63,
+          63,
+          62,
+          62,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_3_d11",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          62,
+          61,
+          60,
+          63,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "P_7_d8",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          63,
+          63,
+          61,
+          58,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d0",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          62,
+          63,
+          64,
+          65,
+          63,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d1",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          60,
+          60,
+          63,
+          62,
+          63,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d10",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          64,
+          63,
+          64,
+          63,
+          64,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d11",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          64,
+          64,
+          64,
+          64,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d12",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          64,
+          63,
+          62,
+          64,
+          64,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d13",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          64,
+          63,
+          64,
+          64,
+          63,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d14",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          64,
+          64,
+          63,
+          64,
+          64,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d15",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          64,
+          64,
+          64,
+          63,
+          64,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d16",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          63,
+          64,
+          64,
+          63,
+          63,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d17",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          64,
+          63,
+          63,
+          64,
+          63,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d18",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          64,
+          63,
+          63,
+          63,
+          64,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d19",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          64,
+          64,
+          64,
+          63,
+          64,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d2",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          62,
+          64,
+          63,
+          63,
+          62,
+          61
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d20",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          63,
+          64,
+          63,
+          63,
+          64,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d3",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          63,
+          62,
+          62,
+          64,
+          64,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d4",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          64,
+          64,
+          64,
+          64,
+          63,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d5",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          63,
+          63,
+          64,
+          64,
+          64,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d6",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          63,
+          64,
+          64,
+          64,
+          62,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d7",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          62,
+          63,
+          64,
+          64,
+          64,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d8",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          64,
+          63,
+          63,
+          64,
+          63,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_-3_d9",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          64,
+          63,
+          62,
+          64,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_13_d10",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          63,
+          60,
+          62,
+          61,
+          61,
+          61
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_13_d11",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          56,
+          62,
+          62,
+          62,
+          61,
+          59
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_13_d12",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          60,
+          62,
+          59,
+          63,
+          61,
+          60,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_13_d13",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          61,
+          59,
+          59,
+          63,
+          60,
+          60
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_13_d14",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          60,
+          62,
+          60,
+          60,
+          63,
+          61,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_13_d15",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          61,
+          63,
+          61,
+          61,
+          62,
+          61
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_13_d2",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          61,
+          60,
+          60,
+          61,
+          59,
+          63,
+          61
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_13_d3",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          61,
+          61,
+          60,
+          62,
+          62,
+          61,
+          61
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_13_d4",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          59,
+          61,
+          63,
+          60,
+          62,
+          60,
+          61
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_13_d5",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          61,
+          58,
+          60,
+          62,
+          61,
+          63,
+          61
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_13_d6",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          62,
+          62,
+          62,
+          60,
+          58,
+          60
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_13_d7",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          61,
+          61,
+          59,
+          61,
+          62,
+          61,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_13_d8",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          62,
+          61,
+          58,
+          59,
+          62,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_13_d9",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          60,
+          58,
+          60,
+          63,
+          61,
+          60,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d10",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          61,
+          62,
+          61,
+          63,
+          61,
+          60,
+          58
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d11",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          61,
+          62,
+          63,
+          62,
+          62,
+          62,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d12",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          62,
+          62,
+          60,
+          62,
+          62,
+          58
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d13",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          61,
+          63,
+          62,
+          60,
+          59,
+          60,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d14",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          59,
+          62,
+          63,
+          63,
+          62,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d15",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          62,
+          60,
+          61,
+          63,
+          62,
+          61
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d16",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          63,
+          62,
+          63,
+          59,
+          61,
+          60
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d17",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          63,
+          63,
+          63,
+          61,
+          63,
+          61
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d18",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          60,
+          62,
+          63,
+          63,
+          61,
+          60,
+          59
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d19",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          60,
+          61,
+          63,
+          62,
+          62,
+          61
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d2",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          61,
+          61,
+          62,
+          61,
+          62,
+          62,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d20",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          59,
+          63,
+          62,
+          62,
+          62,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d3",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          61,
+          63,
+          60,
+          62,
+          63,
+          62,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d4",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          61,
+          62,
+          62,
+          63,
+          63,
+          62,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d5",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          62,
+          62,
+          62,
+          63,
+          63,
+          61
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d6",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          62,
+          62,
+          61,
+          62,
+          62,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d7",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          61,
+          63,
+          62,
+          62,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d8",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          63,
+          63,
+          57,
+          60,
+          60,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_1_d9",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          61,
+          60,
+          62,
+          62,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_5_d10",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          64,
+          62,
+          62,
+          62,
+          64,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_5_d11",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          65,
+          64,
+          65,
+          65,
+          61,
+          65,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_5_d12",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          65,
+          63,
+          62,
+          64,
+          64,
+          61
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_5_d13",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          64,
+          64,
+          65,
+          63,
+          65,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_5_d14",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          63,
+          62,
+          61,
+          64,
+          64,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_5_d15",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          62,
+          63,
+          63,
+          64,
+          64,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_5_d16",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          61,
+          62,
+          62,
+          63,
+          64,
+          61
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_5_d17",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          64,
+          65,
+          63,
+          63,
+          64,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_5_d18",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          64,
+          64,
+          61,
+          65,
+          65,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_5_d2",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          63,
+          62,
+          62,
+          64,
+          62,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_5_d3",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          65,
+          62,
+          65,
+          64,
+          61,
+          64,
+          61
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_5_d4",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          65,
+          63,
+          62,
+          64,
+          65,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_5_d5",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          65,
+          63,
+          62,
+          63,
+          63,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_5_d6",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          65,
+          61,
+          62,
+          63,
+          62,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_5_d7",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          61,
+          65,
+          63,
+          64,
+          65,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_5_d8",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          62,
+          63,
+          61,
+          64,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_5_d9",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          65,
+          61,
+          64,
+          64,
+          65,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_9_d0",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          66,
+          64,
+          66,
+          64,
+          63,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_9_d1",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          64,
+          66,
+          63,
+          66,
+          63,
+          65
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_9_d10",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          65,
+          65,
+          63,
+          64,
+          62,
+          64,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_9_d11",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          61,
+          64,
+          64,
+          65,
+          63,
+          61,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_9_d12",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          61,
+          62,
+          64,
+          64,
+          63,
+          64,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_9_d13",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          65,
+          65,
+          62,
+          63,
+          65,
+          65,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_9_d14",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          62,
+          64,
+          63,
+          64,
+          64,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_9_d15",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          64,
+          59,
+          63,
+          65,
+          64,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_9_d16",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          64,
+          63,
+          64,
+          62,
+          62,
+          65
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_9_d2",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          64,
+          63,
+          63,
+          64,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_9_d3",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          62,
+          64,
+          64,
+          63,
+          64,
+          61
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_9_d4",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          63,
+          63,
+          65,
+          65,
+          63,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_9_d5",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          64,
+          63,
+          64,
+          65,
+          64,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_9_d6",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          63,
+          62,
+          62,
+          63,
+          65
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_9_d7",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          63,
+          61,
+          63,
+          64,
+          62,
+          61
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_9_d8",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          60,
+          63,
+          64,
+          64,
+          64,
+          64,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [],
+        "free_variable": "Q_9_d9",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          65,
+          63,
+          64,
+          65,
+          65,
+          64,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1,
+          30
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [
+          1
+        ],
+        "free_variable": "localize_a_inverse",
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          9,
+          62,
+          62,
+          64,
+          59,
+          63,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      }
+    ]
+  },
+  "field": {
+    "prime": 31,
+    "rho": 14,
+    "y": 3
+  },
+  "full_Jacobian_cokernel": {
+    "Jacobian_rank": 214,
+    "basis_digest_sha256": "2c237165cf2ffef143f54e6261fb8a20cd351a64ff4a752b1125b11630cfd8d7",
+    "dimension": 153
+  },
+  "mixed_line_audit": {
+    "degree_histogram": {
+      "0": 8
+    },
+    "line_count": 8,
+    "nonzero_coordinate_union": [],
+    "nonzero_coordinate_union_count": 0,
+    "profiles": [
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1,
+          23
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [
+          4
+        ],
+        "free_assignment_digest_sha256": "6152e190dfc2878f64402f397f04ec2b853c5af778f2412ba80ac698244eb9e7",
+        "free_assignment_support_size": 108,
+        "line": 0,
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          65,
+          63,
+          64,
+          63,
+          64,
+          63,
+          65
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1,
+          18
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [
+          12
+        ],
+        "free_assignment_digest_sha256": "a3b119cde563b7b946b060dcfbaead78c631eba532ad73a9a6cb7e6ffb47fd1c",
+        "free_assignment_support_size": 110,
+        "line": 1,
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          65,
+          65,
+          63,
+          66,
+          65,
+          62
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1,
+          23
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [
+          4
+        ],
+        "free_assignment_digest_sha256": "f62e6e53d847b0452f864f1eaec1bb30db502b113a40fc108deeca74261d735d",
+        "free_assignment_support_size": 105,
+        "line": 2,
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          66,
+          64,
+          64,
+          61,
+          64,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1,
+          17
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [
+          20
+        ],
+        "free_assignment_digest_sha256": "51897e927cfe81bce0ffa5ed0ff4317eba7f709a05d34337f477505106c55604",
+        "free_assignment_support_size": 108,
+        "line": 3,
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          63,
+          63,
+          62,
+          61,
+          65,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1,
+          25
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [
+          26
+        ],
+        "free_assignment_digest_sha256": "a6780665ab9b7b62d1786542830c1de29fd037cd0ee6ba88ed9d31819635c0fa",
+        "free_assignment_support_size": 107,
+        "line": 4,
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          63,
+          66,
+          66,
+          62,
+          63,
+          63,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1,
+          29
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [
+          16
+        ],
+        "free_assignment_digest_sha256": "7b474c6be4a7b7f36bb2e3393d70ea879e89766ef3f7096c15cc3cd5a1c72007",
+        "free_assignment_support_size": 110,
+        "line": 5,
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          64,
+          63,
+          65,
+          65,
+          65,
+          61,
+          64
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1,
+          11
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [
+          14
+        ],
+        "free_assignment_digest_sha256": "bed2466285761a622b9cd2d6080d49f87c0545c7fce44513ba67166aa86bab0f",
+        "free_assignment_support_size": 111,
+        "line": 6,
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          65,
+          62,
+          62,
+          64,
+          64,
+          64,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      },
+      {
+        "a_polynomial_coefficients_low_to_high": [
+          1,
+          26
+        ],
+        "common_gcd_coefficients_low_to_high": [
+          0
+        ],
+        "excluded_localization_parameters": [
+          25
+        ],
+        "free_assignment_digest_sha256": "c05ca6ec145315dcbc7ee1a4239d3274725f5ea15ad5ea8e08a3f965b35e4187",
+        "free_assignment_support_size": 106,
+        "line": 7,
+        "maximum_obstruction_degree": 0,
+        "nonzero_obstruction_coordinate_count": 0,
+        "nonzero_obstruction_coordinates": [],
+        "raw_nonzero_counts_at_parameters_0_through_degree_bound": [
+          63,
+          62,
+          66,
+          63,
+          65,
+          66,
+          65,
+          63
+        ],
+        "restriction_digest_sha256": "e6cd320d448d1ceda6437cc23eceefa6aebc9ca15c8587a1b9dc6fcffd9e393c"
+      }
+    ],
+    "random_seed": 75125112
+  },
+  "presentation": {
+    "equation_count_with_localization": 367,
+    "geometric_equation_count": 366,
+    "initial_residual": {
+      "nonzero_by_group": {
+        "a_localization": 0,
+        "coupled_Laurent": 35,
+        "incidence_and_defect": 1,
+        "target_and_Hermite": 5
+      },
+      "nonzero_indices": [
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        311,
+        312,
+        313,
+        320,
+        321,
+        347,
+        348,
+        349,
+        350,
+        351,
+        364
+      ],
+      "nonzero_total": 41,
+      "residual_digest_sha256": "23a0666e88a6321f34e5fe8143727916f538c4acaae585a44b3235946bcd5508"
+    },
+    "maximum_degree": 7
+  },
+  "schema": "plane-jc.f2-75-125-tangent-obstruction.v1",
+  "software": {
+    "sympy": "1.14.0"
+  },
+  "source_modular_probe_artifact": "artifacts/generated-results/jc2_f2_75_125_modular_probe.json",
+  "status": "exact-finite-field-directional-obstruction-audit",
+  "tangent_fiber": {
+    "dimension": 112,
+    "free_variables": [
+      "P_-13_d10",
+      "P_-13_d9",
+      "P_-17_d0",
+      "P_-17_d1",
+      "P_-17_d2",
+      "P_-17_d3",
+      "P_-17_d4",
+      "P_-17_d5",
+      "P_-17_d6",
+      "P_-17_d7",
+      "P_-17_d8",
+      "P_-17_d9",
+      "P_-5_d10",
+      "P_-5_d11",
+      "P_-5_d8",
+      "P_-5_d9",
+      "P_-9_d10",
+      "P_-9_d11",
+      "P_-9_d8",
+      "P_-9_d9",
+      "P_3_d10",
+      "P_3_d11",
+      "P_7_d8",
+      "Q_-3_d0",
+      "Q_-3_d1",
+      "Q_-3_d10",
+      "Q_-3_d11",
+      "Q_-3_d12",
+      "Q_-3_d13",
+      "Q_-3_d14",
+      "Q_-3_d15",
+      "Q_-3_d16",
+      "Q_-3_d17",
+      "Q_-3_d18",
+      "Q_-3_d19",
+      "Q_-3_d2",
+      "Q_-3_d20",
+      "Q_-3_d3",
+      "Q_-3_d4",
+      "Q_-3_d5",
+      "Q_-3_d6",
+      "Q_-3_d7",
+      "Q_-3_d8",
+      "Q_-3_d9",
+      "Q_13_d10",
+      "Q_13_d11",
+      "Q_13_d12",
+      "Q_13_d13",
+      "Q_13_d14",
+      "Q_13_d15",
+      "Q_13_d2",
+      "Q_13_d3",
+      "Q_13_d4",
+      "Q_13_d5",
+      "Q_13_d6",
+      "Q_13_d7",
+      "Q_13_d8",
+      "Q_13_d9",
+      "Q_1_d10",
+      "Q_1_d11",
+      "Q_1_d12",
+      "Q_1_d13",
+      "Q_1_d14",
+      "Q_1_d15",
+      "Q_1_d16",
+      "Q_1_d17",
+      "Q_1_d18",
+      "Q_1_d19",
+      "Q_1_d2",
+      "Q_1_d20",
+      "Q_1_d3",
+      "Q_1_d4",
+      "Q_1_d5",
+      "Q_1_d6",
+      "Q_1_d7",
+      "Q_1_d8",
+      "Q_1_d9",
+      "Q_5_d10",
+      "Q_5_d11",
+      "Q_5_d12",
+      "Q_5_d13",
+      "Q_5_d14",
+      "Q_5_d15",
+      "Q_5_d16",
+      "Q_5_d17",
+      "Q_5_d18",
+      "Q_5_d2",
+      "Q_5_d3",
+      "Q_5_d4",
+      "Q_5_d5",
+      "Q_5_d6",
+      "Q_5_d7",
+      "Q_5_d8",
+      "Q_5_d9",
+      "Q_9_d0",
+      "Q_9_d1",
+      "Q_9_d10",
+      "Q_9_d11",
+      "Q_9_d12",
+      "Q_9_d13",
+      "Q_9_d14",
+      "Q_9_d15",
+      "Q_9_d16",
+      "Q_9_d2",
+      "Q_9_d3",
+      "Q_9_d4",
+      "Q_9_d5",
+      "Q_9_d6",
+      "Q_9_d7",
+      "Q_9_d8",
+      "Q_9_d9",
+      "localize_a_inverse"
+    ],
+    "particular_correction_support_size": 45,
+    "particular_projected_obstruction_is_zero": true,
+    "restricted_Jacobian_rank": 57,
+    "staircase_variable_count": 169
+  }
+}

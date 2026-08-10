@@ -690,7 +690,7 @@ assert sp.cancel(inverse_d5 - generic_d5 / r_param) == 0
 
 
 f20_d = s_param**2 + 4
-f20_a4 = r_param * f20_d - 2 * s_param - sp.Rational(17, 4)
+f20_a4 = r_param**2 * f20_d - 2 * s_param - sp.Rational(17, 4)
 f20_a3 = (
     3 * r_param * f20_d
     + f20_d
@@ -712,6 +712,14 @@ target_f20 = assert_compiled_quintic(
     generic_f20,
     (f20_a4, f20_a3, f20_a2, f20_a1, f20_a0),
 )
+
+# Lecacheux's primary Theorem 3.1 has r^2*d in the quartic coefficient.
+# The sign-normalized reciprocal of its first displayed example is a small
+# exact guard against the missing-square transcription in JLY Theorem 2.3.6.
+assert sp.Poly(
+    generic_f20.subs({s_param: 3, r_param: -sp.Rational(1, 2)}),
+    S,
+) == sp.Poly(S**5 - 7 * S**4 + 14 * S**3 - 2 * S**2 - 3 * S + 1, S)
 
 
 a5_A, a5_B = sp.symbols("a5_A a5_B", nonzero=True)

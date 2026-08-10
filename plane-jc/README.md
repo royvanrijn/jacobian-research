@@ -6,6 +6,8 @@ programme based on the canonical finite normalization of an arbitrary
 hypothetical counterexample.  It is separate from the repository's
 three-dimensional counterexample construction.
 
+<!-- status-consumer: SST1 12c5cb15e8b6de26 -->
+
 | Document | Purpose |
 | --- | --- |
 | [PROVENANCE.md](PROVENANCE.md) | Exact Zenodo/arXiv versions, files, licenses, and hashes |
@@ -24,7 +26,7 @@ three-dimensional counterexample construction.
 | [INTRINSIC_A2_BOUNDARY_GATE.md](INTRINSIC_A2_BOUNDARY_GATE.md) | Adjunction/Noether reconstruction, pole-vector ramification gate, and intrinsic dicritical depth obstruction |
 | [PLANE_BOUNDARY_EXCLUSION.md](PLANE_BOUNDARY_EXCLUSION.md) | Conditional smooth-target residue calculation and finite-flat conductor-packet inequality; the former residue-immersion claim for singular target curves is corrected by the cubic cusp audit |
 | [LOG_BOUNDARY_COMPILER.md](LOG_BOUNDARY_COMPILER.md) | Certified branch scales to regular toroidal proximity graphs, complete boundary matrices, differents, and conductors |
-| [CONDUCTOR_JET_TRUNCATION.md](CONDUCTOR_JET_TRUNCATION.md) | Sharp conductor-plus-contact-loss finite-determinacy theorem for node, cusp, multibranch, and matching-cokernel boundary residues |
+| [CONDUCTOR_JET_TRUNCATION.md](CONDUCTOR_JET_TRUNCATION.md) | Sharp conductor-plus-contact-loss finite-determinacy theorem for node, cusp, multibranch, and matching-cokernel boundary residues; canonical `P0`--`P4` support-saturation gate from finite presentation through localized vanishing, relative height, and `S1` |
 | [CASE1_FULL_BAND_CONTINUATION.md](CASE1_FULL_BAND_CONTINUATION.md) | Exact continuation of bracket layers `-4,...,-11`, reconstructing all eleven formerly omitted Case-1 bands with a hash-pinned 66-equation ledger |
 | [FRONTIER_LOG_SCALE_AUDIT.md](FRONTIER_LOG_SCALE_AUDIT.md) | Fixed-completion replay of the `(72,108)` rays, the Wronskian-forced `E3∩E4` cluster, all five plane-return root-partition fans, the two 23-component terminal packages, their corrected `X^2` ramification, and the finite residue-cover split |
 | [FRONTIER_CLOSING_ATTACKS.md](FRONTIER_CLOSING_ATTACKS.md) | Map-decorated boundary package, completed Case-2 composition sieve, and finite harmonic-cover, Pluecker, and log-Chern closure attacks |
@@ -46,6 +48,16 @@ three-dimensional counterexample construction.
 <!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 | [F2_TERMINAL_RESIDUE_COVER.md](F2_TERMINAL_RESIDUE_COVER.md) | Target ray `(5,2)`, degree floors `6`/same-target `12`, three forced node attachments, genus-25 `A_6` Galois closure, purity/different ledger, geometric `A_6` versus arithmetic `S_6`, and trivial target-fixed deck group |
 | [F2_A6_SIMPLE_SPECTATOR_GLUING.md](F2_A6_SIMPLE_SPECTATOR_GLUING.md) | Conditional spectator gluing: six genus-zero `S_7` one-cycle classes, exact Kummer/terminal order-five comparison, and one inertia-supported degree-11 `S_11` class in the rational-source fivefold model |
+<!-- status-consumer: PF2GA1 cbca9b6c44a2bc7e -->
+| [F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md](F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md) | Original-coordinate proximity chains, exact 16/25-component principal source trees, target completion, and same-target uniqueness for the double packet |
+| [F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md](F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md) | Descent-36 carrier Wronskian, target ray `(5,36)`, unique cyclic-cubic squarefree row with unramified spectators, and two conjugate double rows identified with the terminal Belyi map |
+<!-- status-consumer: PF2CW1 a7774b0fa736b64c -->
+| [F2_75_125_CARRIER_SPECIALIZATIONS.md](F2_75_125_CARRIER_SPECIALIZATIONS.md) | Exact quadratic-field specialization of all exposed lower-Laurent kernels/cokernels, quartic defect compositum, the `294+53=347` full/quotient distinction, and final `7+6` cokernel |
+<!-- status-consumer: PF2CS1 666da98d2d24669e -->
+| [F2_75_125_NONLINEAR_FORCING.md](F2_75_125_NONLINEAR_FORCING.md) | Exact endpoint-circuit and upper-tangent substitution, `294+53` Laurent projections, squarefree spacing-`9..90` ledger, corrected zero first-obstruction census on the spacing-four chart, and fixed-Jacobian formal jets through order 16 |
+<!-- status-consumer: PF2NF1 cfd1da5136c0b6d0 -->
+| [COMMON_POWER_CARRIER_WRONSKIAN.md](COMMON_POWER_CARRIER_WRONSKIAN.md) | General primitive common-power theorem: forced first nonshear descent, unique fixed-carrier linear kernel, and universal three-point passport for every root-multiplicity partition |
+<!-- status-consumer: PCW1 94b10929118f151d -->
 | [UNIBRANCH_SPECTATOR_COUNTERMODELS.md](UNIBRANCH_SPECTATOR_COUNTERMODELS.md) | Universal finite-free unibranch packets with an étale spectator; exact refutation of a purely local exclusion and isolation of the global \(\mathbb A^2\)-open obstruction |
 | [cas/README.md](cas/README.md) | Replay commands, hashes, and independent checker |
 | [AUDIT_COMPLETION.md](AUDIT_COMPLETION.md) | Objective-by-objective completion and residual limitations |

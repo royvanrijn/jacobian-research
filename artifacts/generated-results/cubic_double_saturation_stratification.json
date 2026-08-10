@@ -1,0 +1,711 @@
+{
+  "case": "singular-squarefree-cubic-quartic-double-saturation",
+  "compatible_quartic_basis_sha256": "6be710531217f16db5760397964fead5bba99e50579e69961721b81e2707d8eb",
+  "mathematical_scope": "Exact characteristic-zero calculation on a deterministic linear complement of the formal gauge image in the complete quartic compatible-tensor space for each singular squarefree cubic symbol. It proves universal cotangent saturation on each displayed quartic nongauge family and a nonzero, parameter-independent multiplicity-six Ext^2 support-hull obstruction. The same exact presentations compute the collision Nakayama module J/nJ for the Kahler different J=Ann_B(Omega): it is the scalar extension of a six-dimensional central module, so J is not locally principal on any geometric parameter fiber. Strict Rees certificates for Omega and for the cokernel of B -> Omega^3 prove flatness over the parameter ring, commute the annihilator and support module with every geometric base change, and promote both gate results to all parameter fibers. It does not classify higher-order formal deformations or prove Keller-open compatibility.",
+  "rows": {
+    "concurrent-lines": {
+      "base_change_status": "certified for every geometric specialization by the t-saturated cotangent and annihilator-cokernel Rees modules",
+      "compatible_basis_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "compatible_quartic_dimension": 24,
+      "exact_computation": {
+        "cotangent_saturation_generators": 0,
+        "different_generator_central_pruned_presentation_difference": 0,
+        "different_generator_module_dimension": 8,
+        "different_generator_module_multiplicity": 6,
+        "different_generator_parameter_axis_radical_difference": 0,
+        "different_generator_pruned_presentation_rank": 6,
+        "parameter_count": 8,
+        "support_ext2_central_pruned_presentation_difference": 0,
+        "support_ext2_collision_square_action_generators": 0,
+        "support_ext2_dimension": 8,
+        "support_ext2_multiplicity": 6,
+        "support_ext2_parameter_axis_radical_difference": 0,
+        "support_ext2_pruned_presentation_rank": 3,
+        "support_ext3_vector_dimension": 0,
+        "support_module_dimension": 10
+      },
+      "fiberwise_base_change_certificate": {
+        "annihilator_cokernel_initial_presentation_difference": 0,
+        "annihilator_cokernel_rees_torsion_generators": 0,
+        "cotangent_initial_presentation_difference": 0,
+        "cotangent_rees_torsion_generators": 0,
+        "parameter_count": 8
+      },
+      "formal_gauge_cokernel_annihilator": "(x^3)",
+      "linear_gauge_image_dimension": 16,
+      "nongauge_quotient_dimension": 8,
+      "programme_status": "C1 remains open for Keller-compatible cubic normalizations; this quartic model family supplies an obstruction that the geometric hypotheses must exclude",
+      "quartic_model_gate_results": {
+        "C1_support_hull": "fails_on_every_geometric_parameter_fiber: strict Rees base change identifies the intrinsic support module, and Ext^2 is the parameter-independent nonzero multiplicity-six central module",
+        "C2_cotangent_torsion": "passes_on_every_geometric_parameter_fiber: the strict Rees initial module is the saturated central cotangent module",
+        "Cartier_Kahler_different": "fails_on_every_geometric_parameter_fiber: the local Kahler different has six minimal generators at the collision"
+      },
+      "representative_sha256": "b786fad03b1f6f098f252b29454e6126617db03545e9622f6f17527612f79f74",
+      "representative_tensor_components": [
+        [
+          "y**3*z",
+          "y**2*z**2",
+          "0",
+          "y*z**3",
+          "0",
+          "0",
+          "z**4",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "y**4",
+          "y**3*z",
+          "0",
+          "y**2*z**2",
+          "0",
+          "0",
+          "y*z**3",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "x*y**3",
+          "x*y**2*z",
+          "0",
+          "x*y*z**2",
+          "0",
+          "0",
+          "x*z**3",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-3*x*y**2*z",
+          "-2*x*y*z**2",
+          "y**2*z**2",
+          "-x*z**3",
+          "y*z**3",
+          "0",
+          "0",
+          "z**4",
+          "0",
+          "0"
+        ],
+        [
+          "-3*x*y**3",
+          "-2*x*y**2*z",
+          "y**3*z",
+          "-x*y*z**2",
+          "y**2*z**2",
+          "0",
+          "0",
+          "y*z**3",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "x*y**3",
+          "y**4",
+          "2*x*y**2*z",
+          "y**3*z",
+          "0",
+          "3*x*y*z**2",
+          "y**2*z**2",
+          "0",
+          "0"
+        ],
+        [
+          "-3*x**2*y**2",
+          "-2*x**2*y*z",
+          "x*y**2*z",
+          "-x**2*z**2",
+          "x*y*z**2",
+          "0",
+          "0",
+          "x*z**3",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "x**2*y**2",
+          "x*y**3",
+          "2*x**2*y*z",
+          "x*y**2*z",
+          "0",
+          "3*x**2*z**2",
+          "x*y*z**2",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    "cuspidal": {
+      "base_change_status": "certified for every geometric specialization by the t-saturated cotangent and annihilator-cokernel Rees modules",
+      "compatible_basis_indices": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "compatible_quartic_dimension": 24,
+      "exact_computation": {
+        "cotangent_saturation_generators": 0,
+        "different_generator_central_pruned_presentation_difference": 0,
+        "different_generator_module_dimension": 4,
+        "different_generator_module_multiplicity": 6,
+        "different_generator_parameter_axis_radical_difference": 0,
+        "different_generator_pruned_presentation_rank": 6,
+        "parameter_count": 4,
+        "support_ext2_central_pruned_presentation_difference": 0,
+        "support_ext2_collision_square_action_generators": 0,
+        "support_ext2_dimension": 4,
+        "support_ext2_multiplicity": 6,
+        "support_ext2_parameter_axis_radical_difference": 0,
+        "support_ext2_pruned_presentation_rank": 3,
+        "support_ext3_vector_dimension": 0,
+        "support_module_dimension": 6
+      },
+      "fiberwise_base_change_certificate": {
+        "annihilator_cokernel_initial_presentation_difference": 0,
+        "annihilator_cokernel_rees_torsion_generators": 0,
+        "cotangent_initial_presentation_difference": 0,
+        "cotangent_rees_torsion_generators": 0,
+        "parameter_count": 4
+      },
+      "formal_gauge_cokernel_annihilator": "(x^2)",
+      "linear_gauge_image_dimension": 20,
+      "nongauge_quotient_dimension": 4,
+      "programme_status": "C1 remains open for Keller-compatible cubic normalizations; this quartic model family supplies an obstruction that the geometric hypotheses must exclude",
+      "quartic_model_gate_results": {
+        "C1_support_hull": "fails_on_every_geometric_parameter_fiber: strict Rees base change identifies the intrinsic support module, and Ext^2 is the parameter-independent nonzero multiplicity-six central module",
+        "C2_cotangent_torsion": "passes_on_every_geometric_parameter_fiber: the strict Rees initial module is the saturated central cotangent module",
+        "Cartier_Kahler_different": "fails_on_every_geometric_parameter_fiber: the local Kahler different has six minimal generators at the collision"
+      },
+      "representative_sha256": "1f8686e4b5cad783bb6b02b25a29490f28b6929473c44c83635aad2fc8d29471",
+      "representative_tensor_components": [
+        [
+          "y**3*z",
+          "y**2*z**2",
+          "0",
+          "y*z**3",
+          "0",
+          "0",
+          "z**4",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "y**4",
+          "y**3*z",
+          "0",
+          "y**2*z**2",
+          "0",
+          "0",
+          "y*z**3",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "x*y**3",
+          "x*y**2*z",
+          "0",
+          "x*y*z**2",
+          "0",
+          "0",
+          "x*z**3",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "x*y**3",
+          "y**4",
+          "2*x*y**2*z",
+          "y**3*z",
+          "0",
+          "3*x*y*z**2",
+          "y**2*z**2",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    "line-tangent-conic": {
+      "base_change_status": "certified for every geometric specialization by the t-saturated cotangent and annihilator-cokernel Rees modules",
+      "compatible_basis_indices": [
+        8,
+        12,
+        15,
+        16,
+        20,
+        21
+      ],
+      "compatible_quartic_dimension": 24,
+      "exact_computation": {
+        "cotangent_saturation_generators": 0,
+        "different_generator_central_pruned_presentation_difference": 0,
+        "different_generator_module_dimension": 6,
+        "different_generator_module_multiplicity": 6,
+        "different_generator_parameter_axis_radical_difference": 0,
+        "different_generator_pruned_presentation_rank": 6,
+        "parameter_count": 6,
+        "support_ext2_central_pruned_presentation_difference": 0,
+        "support_ext2_collision_square_action_generators": 0,
+        "support_ext2_dimension": 6,
+        "support_ext2_multiplicity": 6,
+        "support_ext2_parameter_axis_radical_difference": 0,
+        "support_ext2_pruned_presentation_rank": 3,
+        "support_ext3_vector_dimension": 0,
+        "support_module_dimension": 8
+      },
+      "fiberwise_base_change_certificate": {
+        "annihilator_cokernel_initial_presentation_difference": 0,
+        "annihilator_cokernel_rees_torsion_generators": 0,
+        "cotangent_initial_presentation_difference": 0,
+        "cotangent_rees_torsion_generators": 0,
+        "parameter_count": 6
+      },
+      "formal_gauge_cokernel_annihilator": "(y^3)",
+      "linear_gauge_image_dimension": 18,
+      "nongauge_quotient_dimension": 6,
+      "programme_status": "C1 remains open for Keller-compatible cubic normalizations; this quartic model family supplies an obstruction that the geometric hypotheses must exclude",
+      "quartic_model_gate_results": {
+        "C1_support_hull": "fails_on_every_geometric_parameter_fiber: strict Rees base change identifies the intrinsic support module, and Ext^2 is the parameter-independent nonzero multiplicity-six central module",
+        "C2_cotangent_torsion": "passes_on_every_geometric_parameter_fiber: the strict Rees initial module is the saturated central cotangent module",
+        "Cartier_Kahler_different": "fails_on_every_geometric_parameter_fiber: the local Kahler different has six minimal generators at the collision"
+      },
+      "representative_sha256": "21b9b6af253297444c85b90543bc22b167ea044449acb47af5fcd2edae1cbb1d",
+      "representative_tensor_components": [
+        [
+          "3*x**2*y*z",
+          "x**2*z**2",
+          "-2*x*y*z**2",
+          "0",
+          "-x*z**3",
+          "y*z**3",
+          "0",
+          "0",
+          "z**4",
+          "0"
+        ],
+        [
+          "3*x**3*y",
+          "x**3*z",
+          "-2*x**2*y*z",
+          "0",
+          "-x**2*z**2",
+          "x*y*z**2",
+          "0",
+          "0",
+          "x*z**3",
+          "0"
+        ],
+        [
+          "-x**3*z",
+          "0",
+          "x**2*z**2",
+          "0",
+          "0",
+          "-x*z**3",
+          "0",
+          "0",
+          "0",
+          "z**4"
+        ],
+        [
+          "-x**3*y",
+          "0",
+          "x**2*y*z",
+          "0",
+          "0",
+          "-x*y*z**2",
+          "0",
+          "0",
+          "0",
+          "y*z**3"
+        ],
+        [
+          "-x**4",
+          "0",
+          "x**3*z",
+          "0",
+          "0",
+          "-x**2*z**2",
+          "0",
+          "0",
+          "0",
+          "x*z**3"
+        ],
+        [
+          "0",
+          "x**4",
+          "x**3*y",
+          "0",
+          "-x**3*z",
+          "-2*x**2*y*z",
+          "0",
+          "0",
+          "x**2*z**2",
+          "3*x*y*z**2"
+        ]
+      ]
+    },
+    "line-transverse-conic": {
+      "base_change_status": "certified for every geometric specialization by the t-saturated cotangent and annihilator-cokernel Rees modules",
+      "compatible_basis_indices": [
+        15,
+        19,
+        20,
+        23
+      ],
+      "compatible_quartic_dimension": 24,
+      "exact_computation": {
+        "cotangent_saturation_generators": 0,
+        "different_generator_central_pruned_presentation_difference": 0,
+        "different_generator_module_dimension": 4,
+        "different_generator_module_multiplicity": 6,
+        "different_generator_parameter_axis_radical_difference": 0,
+        "different_generator_pruned_presentation_rank": 6,
+        "parameter_count": 4,
+        "support_ext2_central_pruned_presentation_difference": 0,
+        "support_ext2_collision_square_action_generators": 0,
+        "support_ext2_dimension": 4,
+        "support_ext2_multiplicity": 6,
+        "support_ext2_parameter_axis_radical_difference": 0,
+        "support_ext2_pruned_presentation_rank": 3,
+        "support_ext3_vector_dimension": 0,
+        "support_module_dimension": 6
+      },
+      "fiberwise_base_change_certificate": {
+        "annihilator_cokernel_initial_presentation_difference": 0,
+        "annihilator_cokernel_rees_torsion_generators": 0,
+        "cotangent_initial_presentation_difference": 0,
+        "cotangent_rees_torsion_generators": 0,
+        "parameter_count": 4
+      },
+      "formal_gauge_cokernel_annihilator": "(yz)",
+      "linear_gauge_image_dimension": 20,
+      "nongauge_quotient_dimension": 4,
+      "programme_status": "C1 remains open for Keller-compatible cubic normalizations; this quartic model family supplies an obstruction that the geometric hypotheses must exclude",
+      "quartic_model_gate_results": {
+        "C1_support_hull": "fails_on_every_geometric_parameter_fiber: strict Rees base change identifies the intrinsic support module, and Ext^2 is the parameter-independent nonzero multiplicity-six central module",
+        "C2_cotangent_torsion": "passes_on_every_geometric_parameter_fiber: the strict Rees initial module is the saturated central cotangent module",
+        "Cartier_Kahler_different": "fails_on_every_geometric_parameter_fiber: the local Kahler different has six minimal generators at the collision"
+      },
+      "representative_sha256": "781808fcb84b3d97f12dce4141358f342bc0b6a2b87ad7c3641b67d5d0c0c945",
+      "representative_tensor_components": [
+        [
+          "-x**3*z",
+          "0",
+          "x**2*z**2",
+          "0",
+          "0",
+          "-x*z**3",
+          "0",
+          "0",
+          "0",
+          "z**4"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "x**3*y",
+          "x**2*y**2",
+          "x*y**3",
+          "y**4"
+        ],
+        [
+          "-x**4",
+          "0",
+          "x**3*z",
+          "0",
+          "0",
+          "-x**2*z**2",
+          "0",
+          "0",
+          "0",
+          "x*z**3"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "x**4",
+          "x**3*y",
+          "x**2*y**2",
+          "x*y**3"
+        ]
+      ]
+    },
+    "nodal": {
+      "base_change_status": "certified for every geometric specialization by the t-saturated cotangent and annihilator-cokernel Rees modules",
+      "compatible_basis_indices": [
+        0,
+        1
+      ],
+      "compatible_quartic_dimension": 24,
+      "exact_computation": {
+        "cotangent_saturation_generators": 0,
+        "different_generator_central_pruned_presentation_difference": 0,
+        "different_generator_module_dimension": 2,
+        "different_generator_module_multiplicity": 6,
+        "different_generator_parameter_axis_radical_difference": 0,
+        "different_generator_pruned_presentation_rank": 6,
+        "parameter_count": 2,
+        "support_ext2_central_pruned_presentation_difference": 0,
+        "support_ext2_collision_square_action_generators": 0,
+        "support_ext2_dimension": 2,
+        "support_ext2_multiplicity": 6,
+        "support_ext2_parameter_axis_radical_difference": 0,
+        "support_ext2_pruned_presentation_rank": 3,
+        "support_ext3_vector_dimension": 0,
+        "support_module_dimension": 4
+      },
+      "fiberwise_base_change_certificate": {
+        "annihilator_cokernel_initial_presentation_difference": 0,
+        "annihilator_cokernel_rees_torsion_generators": 0,
+        "cotangent_initial_presentation_difference": 0,
+        "cotangent_rees_torsion_generators": 0,
+        "parameter_count": 2
+      },
+      "formal_gauge_cokernel_annihilator": "(x)",
+      "linear_gauge_image_dimension": 22,
+      "nongauge_quotient_dimension": 2,
+      "programme_status": "C1 remains open for Keller-compatible cubic normalizations; this quartic model family supplies an obstruction that the geometric hypotheses must exclude",
+      "quartic_model_gate_results": {
+        "C1_support_hull": "fails_on_every_geometric_parameter_fiber: strict Rees base change identifies the intrinsic support module, and Ext^2 is the parameter-independent nonzero multiplicity-six central module",
+        "C2_cotangent_torsion": "passes_on_every_geometric_parameter_fiber: the strict Rees initial module is the saturated central cotangent module",
+        "Cartier_Kahler_different": "fails_on_every_geometric_parameter_fiber: the local Kahler different has six minimal generators at the collision"
+      },
+      "representative_sha256": "ac3e2e9f88565a9a5443427f5d9a3d72420d1119ebd416beb2922ca8b40a130b",
+      "representative_tensor_components": [
+        [
+          "y**3*z",
+          "y**2*z**2",
+          "0",
+          "y*z**3",
+          "0",
+          "0",
+          "z**4",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "y**4",
+          "y**3*z",
+          "0",
+          "y**2*z**2",
+          "0",
+          "0",
+          "y*z**3",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    "triangle": {
+      "base_change_status": "certified for every geometric specialization by the t-saturated cotangent and annihilator-cokernel Rees modules",
+      "compatible_basis_indices": [
+        0,
+        1,
+        15,
+        19,
+        20,
+        23
+      ],
+      "compatible_quartic_dimension": 24,
+      "exact_computation": {
+        "cotangent_saturation_generators": 0,
+        "different_generator_central_pruned_presentation_difference": 0,
+        "different_generator_module_dimension": 6,
+        "different_generator_module_multiplicity": 6,
+        "different_generator_parameter_axis_radical_difference": 0,
+        "different_generator_pruned_presentation_rank": 6,
+        "parameter_count": 6,
+        "support_ext2_central_pruned_presentation_difference": 0,
+        "support_ext2_collision_square_action_generators": 0,
+        "support_ext2_dimension": 6,
+        "support_ext2_multiplicity": 6,
+        "support_ext2_parameter_axis_radical_difference": 0,
+        "support_ext2_pruned_presentation_rank": 3,
+        "support_ext3_vector_dimension": 0,
+        "support_module_dimension": 8
+      },
+      "fiberwise_base_change_certificate": {
+        "annihilator_cokernel_initial_presentation_difference": 0,
+        "annihilator_cokernel_rees_torsion_generators": 0,
+        "cotangent_initial_presentation_difference": 0,
+        "cotangent_rees_torsion_generators": 0,
+        "parameter_count": 6
+      },
+      "formal_gauge_cokernel_annihilator": "(xyz)",
+      "linear_gauge_image_dimension": 18,
+      "nongauge_quotient_dimension": 6,
+      "programme_status": "C1 remains open for Keller-compatible cubic normalizations; this quartic model family supplies an obstruction that the geometric hypotheses must exclude",
+      "quartic_model_gate_results": {
+        "C1_support_hull": "fails_on_every_geometric_parameter_fiber: strict Rees base change identifies the intrinsic support module, and Ext^2 is the parameter-independent nonzero multiplicity-six central module",
+        "C2_cotangent_torsion": "passes_on_every_geometric_parameter_fiber: the strict Rees initial module is the saturated central cotangent module",
+        "Cartier_Kahler_different": "fails_on_every_geometric_parameter_fiber: the local Kahler different has six minimal generators at the collision"
+      },
+      "representative_sha256": "8ad586008237d901fee1ba0a39bf98fac6bcd8af5466fd9e684151a01c0ce3e5",
+      "representative_tensor_components": [
+        [
+          "y**3*z",
+          "y**2*z**2",
+          "0",
+          "y*z**3",
+          "0",
+          "0",
+          "z**4",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "y**4",
+          "y**3*z",
+          "0",
+          "y**2*z**2",
+          "0",
+          "0",
+          "y*z**3",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-x**3*z",
+          "0",
+          "x**2*z**2",
+          "0",
+          "0",
+          "-x*z**3",
+          "0",
+          "0",
+          "0",
+          "z**4"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "x**3*y",
+          "x**2*y**2",
+          "x*y**3",
+          "y**4"
+        ],
+        [
+          "-x**4",
+          "0",
+          "x**3*z",
+          "0",
+          "0",
+          "-x**2*z**2",
+          "0",
+          "0",
+          "0",
+          "x*z**3"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "x**4",
+          "x**3*y",
+          "x**2*y**2",
+          "x*y**3"
+        ]
+      ]
+    }
+  },
+  "schema": "cubic-double-saturation-stratification.v3",
+  "source_artifact": "artifacts/generated-results/cubic_formal_gauge_cokernel_atlas.json",
+  "source_exact_matrix_sha256": "8c74782d4d25273f79fa941d57e808c855f7256ada8d1dbf0680ef9eb1af4152",
+  "tensor_component_order": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      2,
+      2
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      2
+    ],
+    [
+      1,
+      2,
+      2
+    ],
+    [
+      2,
+      2,
+      2
+    ]
+  ],
+  "uniform_conclusion": {
+    "C1_on_quartic_models": "fails on every geometric fiber of all six families",
+    "C2_on_quartic_models": "proved on every geometric fiber of all six families",
+    "Cartier_Kahler_different_on_quartic_models": "fails on every geometric fiber of all six families",
+    "fiberwise_base_change": "proved for all six quartic families",
+    "global_cubic_programme": "open"
+  }
+}

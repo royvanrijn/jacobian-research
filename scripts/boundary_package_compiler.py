@@ -13,10 +13,10 @@ and adjunction certificates can be replayed with ``python3``.
 
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, replace
 from enum import Enum
 from fractions import Fraction
-from itertools import combinations
+from itertools import combinations, product
 from math import gcd
 from typing import Sequence
 
@@ -53,6 +53,181 @@ class SheetColor(str, Enum):
 
     AFFINE = "affine"
     BOUNDARY = "boundary"
+
+
+class TropicalFeasibilityStatus(str, Enum):
+    """Outcome of the optional toroidal necessary-condition front end."""
+
+    NOT_DECLARED = "not_declared"
+    UNCERTIFIED = "uncertified"
+    OBSTRUCTED = "obstructed"
+    FEASIBLE = "feasible"
+
+
+@dataclass(frozen=True)
+class TropicalRay:
+    """A primitive ray of a source or target valuation fan."""
+
+    name: str
+    vector: tuple[int, ...]
+
+
+@dataclass(frozen=True)
+class ToroidalFanDatum:
+    """Finite fan skeleton used by the boundary compiler.
+
+    The incidence certificate is theorem-bearing input.  The compiler checks
+    ray primitivity, cone ranks, and smoothness, but deliberately does not
+    infer a global toroidal embedding from a list of cones.
+    """
+
+    lattice_basis: tuple[str, ...]
+    rays: tuple[TropicalRay, ...]
+    maximal_cones: tuple[tuple[str, ...], ...]
+    incidence_certificate: str
+    require_smooth_cones: bool = True
+
+
+@dataclass(frozen=True)
+class BoundaryColor:
+    """A height-one valuation carried by a ray of the fan.
+
+    Several colors may lie over one ray.  This is how a toroidal extraction
+    records distinct residue branches with the same monomial scale.
+    """
+
+    name: str
+    color: SheetColor
+    carrier_ray: str
+    residual_label: str = ""
+
+
+@dataclass(frozen=True)
+class ValuationIdentity:
+    """A coefficientwise divisor identity in the valuation matrix."""
+
+    name: str
+    function_coefficients: tuple[int, ...]
+    expected_orders: tuple[int, ...]
+
+
+@dataclass(frozen=True)
+class TropicalRegularityRequirement:
+    """Require a named function to have no unlisted boundary poles."""
+
+    function: str
+    allowed_pole_colors: tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
+class UnimodularBlockRequirement:
+    """Require a named valuation submatrix to be square unimodular."""
+
+    name: str
+    boundary_colors: tuple[str, ...]
+    functions: tuple[str, ...]
+
+
+@dataclass(frozen=True)
+class ToroidalAffineScreen:
+    """Unit/class necessary conditions for one proposed affine completion."""
+
+    boundary_colors: tuple[str, ...]
+    unit_functions: tuple[str, ...]
+    normal_core_certificate: str
+    require_constant_units: bool = True
+    require_trivial_class_group: bool = True
+    affine_toric_sufficiency_certificate: str = ""
+
+
+@dataclass(frozen=True)
+class IntegralVariable:
+    name: str
+    lower_bound: int
+    upper_bound: int
+
+    def __post_init__(self) -> None:
+        if self.upper_bound < self.lower_bound:
+            raise ValueError(
+                f"integral variable {self.name!r} has an empty interval"
+            )
+
+
+@dataclass(frozen=True)
+class LinearConstraint:
+    name: str
+    coefficients: tuple[int, ...]
+    relation: str
+    right_hand_side: int
+
+    def __post_init__(self) -> None:
+        if self.relation not in {"==", "<=", ">="}:
+            raise ValueError(
+                f"linear constraint {self.name!r} has invalid relation "
+                f"{self.relation!r}"
+            )
+
+
+@dataclass(frozen=True)
+class ValuationFeasibilityProblem:
+    """A finite integral problem whose equations include all boundary rows.
+
+    If ``x_i`` is an integral variable and ``c_i`` its row of function
+    coefficients, the valuation equation is
+
+        V * (fixed + sum_i x_i*c_i) = target.
+
+    Extra scalar inequalities can encode support-function positivity,
+    deletion choices, or bounded ansatz restrictions.  Infeasibility is an
+    obstruction only when the input explicitly marks the finite search as
+    exhaustive and supplies its scope certificate.
+    """
+
+    name: str
+    variables: tuple[IntegralVariable, ...]
+    fixed_function_coefficients: tuple[int, ...]
+    variable_function_coefficients: tuple[tuple[int, ...], ...]
+    target_orders: tuple[int, ...]
+    constraints: tuple[LinearConstraint, ...] = ()
+    infeasibility_is_obstruction: bool = False
+    exhaustive_scope_certificate: str = ""
+
+
+@dataclass(frozen=True)
+class ColoredDivisorSpanProblem:
+    """Unbounded integral-span gate for a proposed divisor architecture.
+
+    The named generator functions define an integer column lattice in the
+    group of colored boundary divisors.  A target outside that lattice cannot
+    be realized by any Laurent monomial in those generators, independently
+    of exponent bounds or signs.  A conclusive obstruction therefore needs
+    an explicit certificate that the named generators exhaust the proposed
+    architecture.
+    """
+
+    name: str
+    generator_functions: tuple[str, ...]
+    target_orders: tuple[int, ...]
+    infeasibility_is_obstruction: bool = False
+    exhaustive_scope_certificate: str = ""
+
+
+@dataclass(frozen=True)
+class ToroidalBoundaryDatum:
+    """Colored fan, valuation matrix, and integral affine-completion screens."""
+
+    fan: ToroidalFanDatum
+    boundary_colors: tuple[BoundaryColor, ...]
+    valuation_functions: tuple[str, ...]
+    valuation_matrix: tuple[tuple[int, ...], ...]
+    valuation_certificate: str
+    identities: tuple[ValuationIdentity, ...] = ()
+    regularity_requirements: tuple[TropicalRegularityRequirement, ...] = ()
+    unimodular_blocks: tuple[UnimodularBlockRequirement, ...] = ()
+    affine_screen: ToroidalAffineScreen | None = None
+    divisor_span_problems: tuple[ColoredDivisorSpanProblem, ...] = ()
+    feasibility_problems: tuple[ValuationFeasibilityProblem, ...] = ()
+    nonlinear_residue: tuple[str, ...] = ()
 
 
 def identity(size: int) -> Permutation:
@@ -785,6 +960,7 @@ class BoundaryPackage:
     conductor_jet_sensitivity: (
         tuple[ConductorBranchSensitivityDatum, ...] | None
     ) = None
+    toroidal_boundary: ToroidalBoundaryDatum | None = None
     stage_two_realization: StageTwoRealizationCertificate | None = None
 
 
@@ -809,6 +985,802 @@ class Compilation:
             "diagnostics": [asdict(item) for item in self.diagnostics],
             "invariants": dict(self.invariants),
         }
+
+
+@dataclass(frozen=True)
+class ToroidalAudit:
+    status: TropicalFeasibilityStatus
+    diagnostics: tuple[Diagnostic, ...]
+    invariants: tuple[tuple[str, object], ...]
+
+    def to_dict(self) -> dict[str, object]:
+        return {
+            "status": self.status.value,
+            "diagnostics": [asdict(item) for item in self.diagnostics],
+            "invariants": dict(self.invariants),
+        }
+
+
+def _submatrix(
+    matrix: Sequence[Sequence[int]],
+    row_indices: Sequence[int],
+    column_indices: Sequence[int],
+) -> tuple[tuple[int, ...], ...]:
+    return tuple(
+        tuple(int(matrix[row][column]) for column in column_indices)
+        for row in row_indices
+    )
+
+
+def _primitive_row_with_scale(
+    row: Sequence[int],
+) -> tuple[tuple[int, ...], int] | None:
+    """Return ``(primitive_row, signed_scale)`` for a nonzero integer row."""
+
+    values = tuple(int(value) for value in row)
+    divisor = gcd(*(abs(value) for value in values))
+    if divisor == 0:
+        return None
+    primitive = tuple(value // divisor for value in values)
+    first = next(value for value in primitive if value)
+    if first < 0:
+        primitive = tuple(-value for value in primitive)
+        divisor = -divisor
+    return primitive, divisor
+
+
+def colored_proportionality_witnesses(
+    generator_matrix: Sequence[Sequence[int]],
+    target_orders: Sequence[int],
+    row_names: Sequence[str] | None = None,
+) -> tuple[dict[str, object], ...]:
+    """Return exact row relations violated by a colored target divisor.
+
+    If rows ``A_i=a*p`` and ``A_j=b*p`` are proportional, every divisor in
+    the column span of ``A`` satisfies ``b*t_i=a*t_j``.  A nonzero mismatch
+    is therefore an obstruction over the rationals, hence also over the
+    integers and every nonnegative semigroup.  One witness is returned per
+    proportionality class; zero generator rows with a nonzero target are
+    recorded separately.
+    """
+
+    rows = tuple(tuple(int(value) for value in row) for row in generator_matrix)
+    targets = tuple(int(value) for value in target_orders)
+    if len(rows) != len(targets):
+        raise ValueError("a colored target needs one order per generator row")
+    if not rows:
+        raise ValueError("a colored divisor-span matrix needs at least one row")
+    width = len(rows[0])
+    if any(len(row) != width for row in rows):
+        raise ValueError("colored divisor-span rows have inconsistent widths")
+    names = (
+        tuple(row_names)
+        if row_names is not None
+        else tuple(f"row_{index}" for index in range(len(rows)))
+    )
+    if len(names) != len(rows):
+        raise ValueError("colored divisor-span row names have the wrong length")
+
+    decompositions = tuple(_primitive_row_with_scale(row) for row in rows)
+    witnesses: list[dict[str, object]] = []
+    for index, decomposition in enumerate(decompositions):
+        if decomposition is None and targets[index] != 0:
+            witnesses.append(
+                {
+                    "kind": "zero_generator_row",
+                    "colors": (names[index],),
+                    "generator_rows": (rows[index],),
+                    "target_orders": (targets[index],),
+                    "mismatch": targets[index],
+                }
+            )
+    proportional_classes: dict[tuple[int, ...], list[int]] = {}
+    for index, decomposition in enumerate(decompositions):
+        if decomposition is None:
+            continue
+        proportional_classes.setdefault(decomposition[0], []).append(index)
+    for indices in proportional_classes.values():
+        witness_found = False
+        for left_offset, left in enumerate(indices):
+            _left_primitive, left_scale = decompositions[left]  # type: ignore[misc]
+            for right in indices[left_offset + 1 :]:
+                _right_primitive, right_scale = decompositions[right]  # type: ignore[misc]
+                mismatch = (
+                    right_scale * targets[left]
+                    - left_scale * targets[right]
+                )
+                if mismatch == 0:
+                    continue
+                witnesses.append(
+                    {
+                        "kind": "proportional_generator_rows",
+                        "colors": (names[left], names[right]),
+                        "generator_rows": (rows[left], rows[right]),
+                        "row_scales": (left_scale, right_scale),
+                        "target_orders": (targets[left], targets[right]),
+                        "mismatch": mismatch,
+                    }
+                )
+                witness_found = True
+                break
+            if witness_found:
+                break
+    return tuple(witnesses)
+
+
+def _constraint_holds(
+    constraint: LinearConstraint, values: tuple[int, ...]
+) -> bool:
+    left = sum(
+        coefficient * value
+        for coefficient, value in zip(constraint.coefficients, values)
+    )
+    if constraint.relation == "==":
+        return left == constraint.right_hand_side
+    if constraint.relation == "<=":
+        return left <= constraint.right_hand_side
+    return left >= constraint.right_hand_side
+
+
+def _pareto_minimal_models(
+    models: Sequence[tuple[int, ...]],
+) -> tuple[tuple[int, ...], ...]:
+    return tuple(
+        model
+        for model in models
+        if not any(
+            other != model
+            and all(left <= right for left, right in zip(other, model))
+            for other in models
+        )
+    )
+
+
+def audit_toroidal_boundary(
+    datum: ToroidalBoundaryDatum | None,
+) -> ToroidalAudit:
+    """Compile the colored fan and valuation matrix before nonlinear algebra.
+
+    A feasible audit is only a tropical necessary-condition result.  It does
+    not certify a global toroidal embedding, affineness outside the separately
+    certified affine-toric case, polynomial adjugate division, or a Keller
+    realization.
+    """
+
+    if datum is None:
+        return ToroidalAudit(
+            status=TropicalFeasibilityStatus.NOT_DECLARED,
+            diagnostics=(),
+            invariants=(),
+        )
+
+    diagnostics: list[Diagnostic] = []
+    invariants: dict[str, object] = {}
+    uncertified = False
+    fan = datum.fan
+    lattice_rank = len(fan.lattice_basis)
+    ray_names = tuple(ray.name for ray in fan.rays)
+    ray_index = {name: index for index, name in enumerate(ray_names)}
+    color_names = tuple(color.name for color in datum.boundary_colors)
+    color_index = {name: index for index, name in enumerate(color_names)}
+    function_names = datum.valuation_functions
+    function_index = {
+        name: index for index, name in enumerate(function_names)
+    }
+
+    malformed = False
+    if lattice_rank == 0 or len(set(fan.lattice_basis)) != lattice_rank:
+        diagnostics.append(
+            Diagnostic(
+                "toroidal.fan_lattice",
+                "the fan needs a nonempty named lattice basis",
+                True,
+            )
+        )
+        malformed = True
+    if not fan.rays or len(ray_index) != len(ray_names):
+        diagnostics.append(
+            Diagnostic(
+                "toroidal.fan_ray_names",
+                "fan ray names must be nonempty and distinct",
+                True,
+            )
+        )
+        malformed = True
+
+    ray_profiles: dict[str, object] = {}
+    for ray in fan.rays:
+        primitive = bool(ray.vector) and gcd(
+            *(abs(value) for value in ray.vector)
+        ) == 1
+        well_formed = (
+            len(ray.vector) == lattice_rank
+            and any(ray.vector)
+            and primitive
+        )
+        ray_profiles[ray.name] = {
+            "vector": ray.vector,
+            "primitive": primitive,
+        }
+        if not well_formed:
+            diagnostics.append(
+                Diagnostic(
+                    "toroidal.fan_ray",
+                    f"ray {ray.name} is not a primitive nonzero vector of "
+                    f"rank {lattice_rank}",
+                    True,
+                )
+            )
+            malformed = True
+
+    cone_profiles: list[dict[str, object]] = []
+    used_rays: set[str] = set()
+    for cone in fan.maximal_cones:
+        if not cone or len(set(cone)) != len(cone):
+            diagnostics.append(
+                Diagnostic(
+                    "toroidal.fan_cone",
+                    f"fan cone {cone} is empty or repeats a ray",
+                    True,
+                )
+            )
+            malformed = True
+            continue
+        unknown = tuple(name for name in cone if name not in ray_index)
+        if unknown:
+            diagnostics.append(
+                Diagnostic(
+                    "toroidal.fan_cone_ray",
+                    f"fan cone {cone} contains unknown rays {unknown}",
+                    True,
+                )
+            )
+            malformed = True
+            continue
+        used_rays.update(cone)
+        vectors = tuple(fan.rays[ray_index[name]].vector for name in cone)
+        rank = matrix_rank(vectors)
+        smith = smith_invariant_factors(vectors) if rank else ()
+        smooth = rank == len(vectors) and all(value == 1 for value in smith)
+        cone_profiles.append(
+            {
+                "rays": cone,
+                "rank": rank,
+                "smith_diagonal": smith,
+                "smooth": smooth,
+            }
+        )
+        if rank != len(vectors):
+            diagnostics.append(
+                Diagnostic(
+                    "toroidal.fan_cone_rank",
+                    f"fan cone {cone} is not simplicial of its declared size",
+                    True,
+                )
+            )
+        elif fan.require_smooth_cones and not smooth:
+            diagnostics.append(
+                Diagnostic(
+                    "toroidal.fan_cone_singular",
+                    f"fan cone {cone} has Smith diagonal {smith}",
+                    True,
+                )
+            )
+    unused_rays = tuple(name for name in ray_names if name not in used_rays)
+    if unused_rays:
+        diagnostics.append(
+            Diagnostic(
+                "toroidal.fan_unused_ray",
+                f"fan rays {unused_rays} occur in no maximal cone",
+                True,
+            )
+        )
+    if not fan.incidence_certificate.strip():
+        diagnostics.append(
+            Diagnostic(
+                "toroidal.fan_uncertified",
+                "the cone list needs a certificate that it is the relevant "
+                "toroidal fan or cone complex",
+                False,
+            )
+        )
+        uncertified = True
+    invariants["fan"] = {
+        "lattice_basis": fan.lattice_basis,
+        "rays": ray_profiles,
+        "maximal_cones": tuple(cone_profiles),
+        "incidence_certified": bool(fan.incidence_certificate.strip()),
+    }
+
+    if not datum.boundary_colors or len(color_index) != len(color_names):
+        diagnostics.append(
+            Diagnostic(
+                "toroidal.boundary_colors",
+                "boundary color names must be nonempty and distinct",
+                True,
+            )
+        )
+        malformed = True
+    for color in datum.boundary_colors:
+        if color.carrier_ray not in ray_index:
+            diagnostics.append(
+                Diagnostic(
+                    "toroidal.boundary_carrier",
+                    f"boundary color {color.name} has unknown carrier ray "
+                    f"{color.carrier_ray}",
+                    True,
+                )
+            )
+            malformed = True
+    invariants["boundary_colors"] = tuple(
+        {
+            "name": color.name,
+            "color": color.color.value,
+            "carrier_ray": color.carrier_ray,
+            "residual_label": color.residual_label,
+        }
+        for color in datum.boundary_colors
+    )
+
+    if not function_names or len(function_index) != len(function_names):
+        diagnostics.append(
+            Diagnostic(
+                "toroidal.valuation_functions",
+                "valuation function names must be nonempty and distinct",
+                True,
+            )
+        )
+        malformed = True
+    if len(datum.valuation_matrix) != len(color_names) or any(
+        len(row) != len(function_names) for row in datum.valuation_matrix
+    ):
+        diagnostics.append(
+            Diagnostic(
+                "toroidal.valuation_shape",
+                "the valuation matrix must have boundary-color rows and "
+                "named-function columns",
+                True,
+            )
+        )
+        malformed = True
+    if not datum.valuation_certificate.strip():
+        diagnostics.append(
+            Diagnostic(
+                "toroidal.valuation_uncertified",
+                "the valuation matrix needs exact divisor-order certificates",
+                False,
+            )
+        )
+        uncertified = True
+    invariants["valuation_matrix"] = {
+        "rows": color_names,
+        "columns": function_names,
+        "matrix": datum.valuation_matrix,
+        "certified": bool(datum.valuation_certificate.strip()),
+    }
+
+    identity_profiles: dict[str, object] = {}
+    if not malformed:
+        for identity_datum in datum.identities:
+            if (
+                len(identity_datum.function_coefficients)
+                != len(function_names)
+                or len(identity_datum.expected_orders) != len(color_names)
+            ):
+                diagnostics.append(
+                    Diagnostic(
+                        "toroidal.valuation_identity_shape",
+                        f"identity {identity_datum.name} has incompatible width",
+                        True,
+                    )
+                )
+                continue
+            actual = tuple(
+                sum(
+                    order * coefficient
+                    for order, coefficient in zip(
+                        row, identity_datum.function_coefficients
+                    )
+                )
+                for row in datum.valuation_matrix
+            )
+            balanced = actual == identity_datum.expected_orders
+            identity_profiles[identity_datum.name] = {
+                "actual_orders": actual,
+                "expected_orders": identity_datum.expected_orders,
+                "balanced": balanced,
+            }
+            if not balanced:
+                diagnostics.append(
+                    Diagnostic(
+                        "toroidal.valuation_identity",
+                        f"identity {identity_datum.name} has orders {actual}, "
+                        f"not {identity_datum.expected_orders}",
+                        True,
+                    )
+                )
+    invariants["valuation_identities"] = identity_profiles
+
+    if not malformed:
+        for requirement in datum.regularity_requirements:
+            if requirement.function not in function_index:
+                diagnostics.append(
+                    Diagnostic(
+                        "toroidal.regularity_function",
+                        f"regularity requirement names unknown function "
+                        f"{requirement.function}",
+                        True,
+                    )
+                )
+                continue
+            unknown = tuple(
+                name
+                for name in requirement.allowed_pole_colors
+                if name not in color_index
+            )
+            if unknown:
+                diagnostics.append(
+                    Diagnostic(
+                        "toroidal.regularity_color",
+                        f"regularity requirement for {requirement.function} "
+                        f"names unknown colors {unknown}",
+                        True,
+                    )
+                )
+                continue
+            column = function_index[requirement.function]
+            allowed = set(requirement.allowed_pole_colors)
+            for row, boundary in enumerate(datum.boundary_colors):
+                order = datum.valuation_matrix[row][column]
+                if order >= 0:
+                    continue
+                if boundary.color is SheetColor.AFFINE:
+                    diagnostics.append(
+                        Diagnostic(
+                            "toroidal.affine_pole",
+                            f"{requirement.function} has order {order} on "
+                            f"affine color {boundary.name}",
+                            True,
+                        )
+                    )
+                elif boundary.name not in allowed:
+                    diagnostics.append(
+                        Diagnostic(
+                            "toroidal.unlisted_pole",
+                            f"{requirement.function} has unlisted pole order "
+                            f"{order} on {boundary.name}",
+                            True,
+                        )
+                    )
+
+    block_profiles: dict[str, object] = {}
+    if not malformed:
+        for block in datum.unimodular_blocks:
+            unknown_rows = tuple(
+                name for name in block.boundary_colors if name not in color_index
+            )
+            unknown_columns = tuple(
+                name for name in block.functions if name not in function_index
+            )
+            if unknown_rows or unknown_columns:
+                diagnostics.append(
+                    Diagnostic(
+                        "toroidal.unimodular_block_names",
+                        f"block {block.name} has unknown rows {unknown_rows} "
+                        f"or columns {unknown_columns}",
+                        True,
+                    )
+                )
+                continue
+            rows = tuple(color_index[name] for name in block.boundary_colors)
+            columns = tuple(function_index[name] for name in block.functions)
+            matrix = _submatrix(datum.valuation_matrix, rows, columns)
+            square = len(rows) == len(columns)
+            block_determinant = determinant(matrix) if square else None
+            unimodular = square and abs(block_determinant) == 1
+            block_profiles[block.name] = {
+                "matrix": matrix,
+                "determinant": block_determinant,
+                "unimodular": unimodular,
+            }
+            if not unimodular:
+                diagnostics.append(
+                    Diagnostic(
+                        "toroidal.unimodular_block",
+                        f"block {block.name} has determinant "
+                        f"{block_determinant}, not a unit",
+                        True,
+                    )
+                )
+    invariants["unimodular_blocks"] = block_profiles
+
+    if datum.affine_screen is not None and not malformed:
+        screen = datum.affine_screen
+        unknown_rows = tuple(
+            name for name in screen.boundary_colors if name not in color_index
+        )
+        unknown_columns = tuple(
+            name for name in screen.unit_functions if name not in function_index
+        )
+        if not screen.boundary_colors or not screen.unit_functions:
+            diagnostics.append(
+                Diagnostic(
+                    "toroidal.affine_screen_shape",
+                    "the affine screen needs at least one boundary row and "
+                    "one unit-function column",
+                    True,
+                )
+            )
+        elif unknown_rows or unknown_columns:
+            diagnostics.append(
+                Diagnostic(
+                    "toroidal.affine_screen_names",
+                    f"affine screen has unknown rows {unknown_rows} or "
+                    f"columns {unknown_columns}",
+                    True,
+                )
+            )
+        elif not screen.normal_core_certificate.strip():
+            diagnostics.append(
+                Diagnostic(
+                    "toroidal.affine_screen_uncertified",
+                    "the affine unit/class screen needs normal-core and "
+                    "complete-boundary certificates",
+                    False,
+                )
+            )
+            uncertified = True
+        else:
+            rows = tuple(color_index[name] for name in screen.boundary_colors)
+            columns = tuple(
+                function_index[name] for name in screen.unit_functions
+            )
+            matrix = _submatrix(datum.valuation_matrix, rows, columns)
+            profile = factorial_core_invariants(matrix)
+            affine_space_certified = bool(
+                screen.affine_toric_sufficiency_certificate.strip()
+                and profile["unit_rank"] == 0
+                and profile["class_group_free_rank"] == 0
+                and not profile["class_group_torsion"]
+            )
+            invariants["affine_screen"] = {
+                **profile,
+                "affine_space_certified": affine_space_certified,
+            }
+            if screen.require_constant_units and profile["unit_rank"] != 0:
+                diagnostics.append(
+                    Diagnostic(
+                        "toroidal.affine_units",
+                        "the toroidal affine screen leaves nonconstant units",
+                        True,
+                    )
+                )
+            if screen.require_trivial_class_group and (
+                profile["class_group_free_rank"] != 0
+                or profile["class_group_torsion"]
+            ):
+                diagnostics.append(
+                    Diagnostic(
+                        "toroidal.affine_class_group",
+                        "the toroidal affine screen has nontrivial class group",
+                        True,
+                    )
+                )
+
+    span_profiles: dict[str, object] = {}
+    if not malformed:
+        for problem in datum.divisor_span_problems:
+            unknown_columns = tuple(
+                name
+                for name in problem.generator_functions
+                if name not in function_index
+            )
+            bad_shape = (
+                not problem.generator_functions
+                or len(set(problem.generator_functions))
+                != len(problem.generator_functions)
+                or bool(unknown_columns)
+                or len(problem.target_orders) != len(color_names)
+            )
+            if bad_shape:
+                diagnostics.append(
+                    Diagnostic(
+                        "toroidal.divisor_span_shape",
+                        f"divisor-span problem {problem.name} has unknown "
+                        f"generators {unknown_columns} or incompatible widths",
+                        True,
+                    )
+                )
+                continue
+            columns = tuple(
+                function_index[name] for name in problem.generator_functions
+            )
+            matrix = _submatrix(
+                datum.valuation_matrix,
+                tuple(range(len(color_names))),
+                columns,
+            )
+            matrix_rank_value = matrix_rank(matrix)
+            augmented = tuple(
+                row + (problem.target_orders[index],)
+                for index, row in enumerate(matrix)
+            )
+            augmented_rank = matrix_rank(augmented)
+            target_class_order = core_class_order(
+                matrix, problem.target_orders
+            )
+            integral_span = target_class_order == 1
+            witnesses = colored_proportionality_witnesses(
+                matrix,
+                problem.target_orders,
+                color_names,
+            )
+            span_profiles[problem.name] = {
+                "generator_functions": problem.generator_functions,
+                "matrix_rank": matrix_rank_value,
+                "augmented_rank": augmented_rank,
+                "target_class_order": target_class_order,
+                "in_integral_span": integral_span,
+                "proportionality_witnesses": witnesses,
+            }
+            if integral_span:
+                continue
+            if (
+                problem.infeasibility_is_obstruction
+                and problem.exhaustive_scope_certificate.strip()
+            ):
+                diagnostics.append(
+                    Diagnostic(
+                        "toroidal.divisor_span_obstruction",
+                        f"target of exact divisor-span problem {problem.name} "
+                        "is outside the generator lattice",
+                        True,
+                    )
+                )
+            else:
+                diagnostics.append(
+                    Diagnostic(
+                        "toroidal.divisor_span_uncertified",
+                        f"target of divisor-span problem {problem.name} is "
+                        "outside the named generator lattice, but the input "
+                        "does not certify that the generators are exhaustive",
+                        False,
+                    )
+                )
+                uncertified = True
+    invariants["divisor_span_problems"] = span_profiles
+
+    problem_profiles: dict[str, object] = {}
+    if not malformed:
+        for problem in datum.feasibility_problems:
+            variable_count = len(problem.variables)
+            variable_names = tuple(variable.name for variable in problem.variables)
+            bad_shape = (
+                len(set(variable_names)) != variable_count
+                or len(problem.fixed_function_coefficients)
+                != len(function_names)
+                or len(problem.variable_function_coefficients)
+                != variable_count
+                or any(
+                    len(row) != len(function_names)
+                    for row in problem.variable_function_coefficients
+                )
+                or len(problem.target_orders) != len(color_names)
+                or any(
+                    len(constraint.coefficients) != variable_count
+                    for constraint in problem.constraints
+                )
+            )
+            if bad_shape:
+                diagnostics.append(
+                    Diagnostic(
+                        "toroidal.feasibility_shape",
+                        f"feasibility problem {problem.name} has incompatible "
+                        "variable, function, or boundary widths",
+                        True,
+                    )
+                )
+                continue
+            search_size = 1
+            for variable in problem.variables:
+                search_size *= variable.upper_bound - variable.lower_bound + 1
+            if search_size > 1_000_000:
+                diagnostics.append(
+                    Diagnostic(
+                        "toroidal.feasibility_too_large",
+                        f"problem {problem.name} has {search_size} bounded "
+                        "assignments; split or tighten it before exact replay",
+                        False,
+                    )
+                )
+                uncertified = True
+                continue
+
+            models: list[tuple[int, ...]] = []
+            domains = tuple(
+                range(variable.lower_bound, variable.upper_bound + 1)
+                for variable in problem.variables
+            )
+            for values in product(*domains):
+                if not all(
+                    _constraint_holds(constraint, values)
+                    for constraint in problem.constraints
+                ):
+                    continue
+                coefficients = tuple(
+                    fixed
+                    + sum(
+                        value * variable_row[column]
+                        for value, variable_row in zip(
+                            values, problem.variable_function_coefficients
+                        )
+                    )
+                    for column, fixed in enumerate(
+                        problem.fixed_function_coefficients
+                    )
+                )
+                orders = tuple(
+                    sum(order * coefficient for order, coefficient in zip(row, coefficients))
+                    for row in datum.valuation_matrix
+                )
+                if orders == problem.target_orders:
+                    models.append(values)
+
+            minimal = _pareto_minimal_models(models)
+            problem_profiles[problem.name] = {
+                "variables": variable_names,
+                "search_size": search_size,
+                "model_count": len(models),
+                "minimal_models": tuple(
+                    dict(zip(variable_names, model)) for model in minimal
+                ),
+            }
+            if not models:
+                if (
+                    problem.infeasibility_is_obstruction
+                    and problem.exhaustive_scope_certificate.strip()
+                ):
+                    diagnostics.append(
+                        Diagnostic(
+                            "toroidal.feasibility_infeasible",
+                            f"exact exhaustive problem {problem.name} has no "
+                            "integral model",
+                            True,
+                        )
+                    )
+                else:
+                    diagnostics.append(
+                        Diagnostic(
+                            "toroidal.feasibility_bounded_empty",
+                            f"bounded problem {problem.name} has no model, but "
+                            "its input does not certify a global obstruction",
+                            False,
+                        )
+                    )
+                    uncertified = True
+    invariants["feasibility_problems"] = problem_profiles
+    invariants["nonlinear_residue"] = datum.nonlinear_residue
+
+    if any(diagnostic.obstruction for diagnostic in diagnostics):
+        status = TropicalFeasibilityStatus.OBSTRUCTED
+    elif uncertified:
+        status = TropicalFeasibilityStatus.UNCERTIFIED
+    else:
+        status = TropicalFeasibilityStatus.FEASIBLE
+        if datum.nonlinear_residue:
+            diagnostics.append(
+                Diagnostic(
+                    "toroidal.nonlinear_residue",
+                    "all declared tropical gates pass; the listed nonlinear "
+                    "residue remains",
+                    False,
+                )
+            )
+    return ToroidalAudit(
+        status=status,
+        diagnostics=tuple(diagnostics),
+        invariants=tuple(sorted(invariants.items())),
+    )
 
 
 def _validate_cover(
@@ -1073,6 +2045,10 @@ def compile_boundary_package(package: BoundaryPackage) -> Compilation:
 
     for curve in package.selected_curves:
         _validate_selected_curve(curve, diagnostics, invariants)
+
+    toroidal = audit_toroidal_boundary(package.toroidal_boundary)
+    invariants["toroidal_boundary"] = toroidal.to_dict()
+    diagnostics.extend(toroidal.diagnostics)
 
     for row in package.determinant_ledger:
         if row.left_order != row.target_jacobian_order:
@@ -2072,6 +3048,698 @@ def retained_root_euler_obstruction_package(
     )
 
 
+def a4_toroidal_ledger_datum() -> ToroidalBoundaryDatum:
+    """Colored-orthant encoding of the exact pure-target A4 ledger."""
+
+    return ToroidalBoundaryDatum(
+        fan=ToroidalFanDatum(
+            lattice_basis=("ord_W", "ord_K", "ord_L"),
+            rays=(
+                TropicalRay("W_ray", (1, 0, 0)),
+                TropicalRay("K_ray", (0, 1, 0)),
+                TropicalRay("L_ray", (0, 0, 1)),
+            ),
+            maximal_cones=(("W_ray", "K_ray", "L_ray"),),
+            incidence_certificate=(
+                "A4_PURE_TARGET_LEDGER_LIFT: divisorial valuation orthant"
+            ),
+        ),
+        boundary_colors=(
+            BoundaryColor("W", SheetColor.BOUNDARY, "W_ray"),
+            BoundaryColor("K", SheetColor.BOUNDARY, "K_ray"),
+            BoundaryColor("L", SheetColor.BOUNDARY, "L_ray"),
+        ),
+        valuation_functions=(
+            "det_DPhi",
+            "auxiliary_mask",
+            "pullback_target_boundary",
+        ),
+        valuation_matrix=(
+            (2, 1, 3),
+            (3, 0, 3),
+            (1, 1, 2),
+        ),
+        valuation_certificate=(
+            "A4_PURE_TARGET_LEDGER_LIFT, valuation table (W,K,L)"
+        ),
+        identities=(
+            ValuationIdentity(
+                "pure_target_log_keller_balance",
+                (1, 1, -1),
+                (0, 0, 0),
+            ),
+        ),
+        nonlinear_residue=(
+            "realize two source-dependent masks with entrywise polynomial inverse",
+            "certify smooth affine-space source and target rather than chart opens",
+            "preserve the oriented quartic field and complete regular fibres",
+        ),
+    )
+
+
+def d5_toroidal_ledger_datum() -> ToroidalBoundaryDatum:
+    """Newton-fan and colored-branch encoding of the D5 valuation gate."""
+
+    return ToroidalBoundaryDatum(
+        fan=ToroidalFanDatum(
+            lattice_basis=("ord_a", "ord_u"),
+            rays=(
+                TropicalRay("a_axis", (1, 0)),
+                TropicalRay("first_blowup", (1, 1)),
+                TropicalRay("parabolic_scale", (1, 2)),
+                TropicalRay("u_axis", (0, 1)),
+            ),
+            maximal_cones=(
+                ("a_axis", "first_blowup"),
+                ("first_blowup", "parabolic_scale"),
+                ("parabolic_scale", "u_axis"),
+            ),
+            incidence_certificate=(
+                "D5-N3: two toric blowups separate C,R_plus,R_minus at "
+                "their distinct parabolic residues"
+            ),
+        ),
+        boundary_colors=(
+            BoundaryColor(
+                "C", SheetColor.BOUNDARY, "parabolic_scale", "u/a^2=1/4"
+            ),
+            BoundaryColor(
+                "R_plus",
+                SheetColor.BOUNDARY,
+                "parabolic_scale",
+                "u/a^2=2/(3+sqrt(5))",
+            ),
+            BoundaryColor(
+                "R_minus",
+                SheetColor.BOUNDARY,
+                "parabolic_scale",
+                "u/a^2=2/(3-sqrt(5))",
+            ),
+            BoundaryColor(
+                "E_11", SheetColor.BOUNDARY, "first_blowup"
+            ),
+            BoundaryColor(
+                "E_12", SheetColor.BOUNDARY, "parabolic_scale"
+            ),
+        ),
+        valuation_functions=(
+            "derivative_Q",
+            "pullback_Delta",
+            "source_C",
+            "source_R_plus",
+            "source_R_minus",
+        ),
+        valuation_matrix=(
+            (0, 1, 1, 0, 0),
+            (1, 2, 0, 1, 0),
+            (1, 2, 0, 0, 1),
+            (2, 5, 1, 1, 1),
+            (4, 10, 2, 2, 2),
+        ),
+        valuation_certificate=(
+            "D5-N3 and Delta=C*R_plus^2*R_minus^2; exceptional rows use "
+            "weights (1,1) and (1,2)"
+        ),
+        feasibility_problems=(
+            ValuationFeasibilityProblem(
+                name="branch_supported_log_balance_m_le_4",
+                variables=(
+                    IntegralVariable("m", 0, 4),
+                    IntegralVariable("s_C", 0, 8),
+                    IntegralVariable("s_plus", 0, 8),
+                    IntegralVariable("s_minus", 0, 8),
+                ),
+                fixed_function_coefficients=(1, 0, 0, 0, 0),
+                variable_function_coefficients=(
+                    (0, -1, 0, 0, 0),
+                    (0, 0, 1, 0, 0),
+                    (0, 0, 0, 1, 0),
+                    (0, 0, 0, 0, 1),
+                ),
+                target_orders=(0, 0, 0, 0, 0),
+                exhaustive_scope_certificate=(
+                    "D5-N3 proves s=(m,2m-1,2m-1); this finite replay "
+                    "contains its primitive model and first three translates"
+                ),
+            ),
+        ),
+        nonlinear_residue=(
+            "move both ramification colors and the old incidence graph",
+            "clear every inverse-adjugate entry, not only its determinant",
+            "recognize smooth factorial affine spaces with constant units",
+            "prove finite flat rank five and the natural D5 normal closure",
+        ),
+    )
+
+
+def davenport_toroidal_ledger_datum() -> ToroidalBoundaryDatum:
+    """One-ray colored fan for the Davenport three-column Cox ledger."""
+
+    return ToroidalBoundaryDatum(
+        fan=ToroidalFanDatum(
+            lattice_basis=("ord_Delta",),
+            rays=(TropicalRay("Delta_ray", (1,)),),
+            maximal_cones=(("Delta_ray",),),
+            incidence_certificate=(
+                "DAVENPORT_COX_BOUNDARY_OBSTRUCTION: generic Delta-normal fan"
+            ),
+        ),
+        boundary_colors=(
+            BoundaryColor(
+                "E3", SheetColor.BOUNDARY, "Delta_ray", "unramified degree 3"
+            ),
+            BoundaryColor(
+                "E6", SheetColor.BOUNDARY, "Delta_ray", "unramified degree 6"
+            ),
+            BoundaryColor(
+                "J", SheetColor.BOUNDARY, "Delta_ray", "ramification color"
+            ),
+        ),
+        valuation_functions=(
+            "pullback_Delta",
+            "jacobian_J",
+            "primitive_E3_character",
+        ),
+        valuation_matrix=(
+            (1, 0, 1),
+            (1, 0, 0),
+            (2, 1, 0),
+        ),
+        valuation_certificate=(
+            "DAVENPORT_COX_BOUNDARY_OBSTRUCTION, equations (2.5)-(2.8)"
+        ),
+        unimodular_blocks=(
+            UnimodularBlockRequirement(
+                "cox_lattice_completion",
+                ("E3", "E6", "J"),
+                (
+                    "pullback_Delta",
+                    "jacobian_J",
+                    "primitive_E3_character",
+                ),
+            ),
+        ),
+        nonlinear_residue=(
+            "realize the primitive E3 character without the new divisor L(Y)",
+            "fill Delta while controlling all three source colors",
+            "preserve the GL3(F2) Gassmann closure on the common open",
+            "prove that the modified source and target are affine spaces",
+        ),
+    )
+
+
+def f20_toroidal_ledger_datum() -> ToroidalBoundaryDatum:
+    """Finite toroidal colors of the corrected Lecacheux root cover."""
+
+    # The three q-r tangencies form one cubic Galois orbit.  Their root-cover
+    # calculation is identical over the residue field, so retain one template
+    # instead of three independent family ledgers.
+    qr_tangent_templates = (
+        (
+            "E1_A_ramified_2",
+            "first exceptional, index-two part of the triple cluster",
+            (0, 2, 2, 2),
+        ),
+        (
+            "E1_A_unramified",
+            "first exceptional, unramified part of the triple cluster",
+            (0, 1, 1, 1),
+        ),
+        (
+            "E1_B_ramified_2",
+            "first exceptional, index-two double cluster",
+            (0, 2, 2, 1),
+        ),
+        (
+            "E2_A_sheet_1",
+            "second exceptional, first triple-cluster sheet",
+            (0, 2, 2, 2),
+        ),
+        (
+            "E2_A_sheet_2",
+            "second exceptional, second triple-cluster sheet",
+            (0, 2, 2, 2),
+        ),
+        (
+            "E2_A_sheet_3",
+            "second exceptional, third triple-cluster sheet",
+            (0, 2, 2, 2),
+        ),
+        (
+            "E2_B_sheet_1",
+            "second exceptional, first double-cluster sheet",
+            (0, 2, 2, 1),
+        ),
+        (
+            "E2_B_sheet_2",
+            "second exceptional, second double-cluster sheet",
+            (0, 2, 2, 1),
+        ),
+    )
+    qr_tangent_colors = tuple(
+        BoundaryColor(
+            f"qr_tangent_{center}_{suffix}",
+            SheetColor.BOUNDARY,
+            "qr_tangent_ray",
+            f"cubic-orbit center {center}: {label}",
+        )
+        for center in range(1, 4)
+        for suffix, label, _row in qr_tangent_templates
+    )
+    qr_tangent_rows = tuple(
+        row
+        for _center in range(1, 4)
+        for _suffix, _label, row in qr_tangent_templates
+    )
+
+    base = ToroidalBoundaryDatum(
+        fan=ToroidalFanDatum(
+            lattice_basis=("ord_d", "ord_q", "ord_r"),
+            rays=(
+                TropicalRay("d_ray", (1, 0, 0)),
+                TropicalRay("q_ray", (0, 1, 0)),
+                TropicalRay("r_ray", (0, 0, 1)),
+                TropicalRay("qr_tangent_ray", (0, 1, 1)),
+                TropicalRay("triple_E1_ray", (1, 1, 1)),
+                TropicalRay("triple_E2_ray", (2, 2, 1)),
+            ),
+            maximal_cones=(
+                ("triple_E1_ray", "q_ray", "qr_tangent_ray"),
+                ("triple_E1_ray", "qr_tangent_ray", "r_ray"),
+                ("d_ray", "triple_E1_ray", "r_ray"),
+                ("triple_E2_ray", "q_ray", "triple_E1_ray"),
+                ("d_ray", "triple_E2_ray", "triple_E1_ray"),
+                ("d_ray", "q_ray", "triple_E2_ray"),
+            ),
+            incidence_certificate=(
+                "corrected Lecacheux F20 discriminant: generic "
+                "divisorial valuation orthant with the two smooth star "
+                "subdivisions forced by the conjugate triple tangencies and "
+                "the cubic orbit of q-r tangencies"
+            ),
+        ),
+        boundary_colors=(
+            BoundaryColor(
+                "d_unramified",
+                SheetColor.BOUNDARY,
+                "d_ray",
+                "X=1/4, e=1",
+            ),
+            BoundaryColor(
+                "d_ramified_4",
+                SheetColor.BOUNDARY,
+                "d_ray",
+                "X=1+s/2, e=4",
+            ),
+            BoundaryColor(
+                "q_collision_plus",
+                SheetColor.BOUNDARY,
+                "q_ray",
+                "first normalization branch through X=a_q, e=1",
+            ),
+            BoundaryColor(
+                "q_collision_minus",
+                SheetColor.BOUNDARY,
+                "q_ray",
+                "second normalization branch through X=a_q, e=1",
+            ),
+            BoundaryColor(
+                "q_residual_1",
+                SheetColor.BOUNDARY,
+                "q_ray",
+                "first geometric residual-cubic sheet, e=1",
+            ),
+            BoundaryColor(
+                "q_residual_2",
+                SheetColor.BOUNDARY,
+                "q_ray",
+                "second geometric residual-cubic sheet, e=1",
+            ),
+            BoundaryColor(
+                "q_residual_3",
+                SheetColor.BOUNDARY,
+                "q_ray",
+                "third geometric residual-cubic sheet, e=1",
+            ),
+            BoundaryColor(
+                "q_node_slope_1",
+                SheetColor.BOUNDARY,
+                "q_ray",
+                "first geometric slope over the q-node blowup, e=1",
+            ),
+            BoundaryColor(
+                "q_node_slope_2",
+                SheetColor.BOUNDARY,
+                "q_ray",
+                "second geometric slope over the q-node blowup, e=1",
+            ),
+            BoundaryColor(
+                "q_node_slope_3",
+                SheetColor.BOUNDARY,
+                "q_ray",
+                "third geometric slope over the q-node blowup, e=1",
+            ),
+            BoundaryColor(
+                "q_node_slope_4",
+                SheetColor.BOUNDARY,
+                "q_ray",
+                "fourth geometric slope over the q-node blowup, e=1",
+            ),
+            BoundaryColor(
+                "q_node_simple",
+                SheetColor.BOUNDARY,
+                "q_ray",
+                "simple X=-1 sheet over the q-node blowup, e=1",
+            ),
+            BoundaryColor(
+                "r_ramified_2_plus",
+                SheetColor.BOUNDARY,
+                "r_ray",
+                "first geometric root of the repeated quadratic, e=2",
+            ),
+            BoundaryColor(
+                "r_ramified_2_minus",
+                SheetColor.BOUNDARY,
+                "r_ray",
+                "second geometric root of the repeated quadratic, e=2",
+            ),
+            BoundaryColor(
+                "r_unramified",
+                SheetColor.BOUNDARY,
+                "r_ray",
+                "simple residual root, e=1",
+            ),
+            BoundaryColor(
+                "r_cusp_E1_total_5",
+                SheetColor.BOUNDARY,
+                "r_ray",
+                "first cusp exceptional, total index five",
+            ),
+            BoundaryColor(
+                "r_cusp_E2_total_5",
+                SheetColor.BOUNDARY,
+                "r_ray",
+                "second cusp exceptional, total index five",
+            ),
+            BoundaryColor(
+                "r_cusp_E3_unramified",
+                SheetColor.BOUNDARY,
+                "r_ray",
+                "third cusp exceptional, one unramified sheet",
+            ),
+            BoundaryColor(
+                "r_cusp_E3_ramified_plus",
+                SheetColor.BOUNDARY,
+                "r_ray",
+                "third cusp exceptional, first index-two color",
+            ),
+            BoundaryColor(
+                "r_cusp_E3_ramified_minus",
+                SheetColor.BOUNDARY,
+                "r_ray",
+                "third cusp exceptional, second index-two color",
+            ),
+            BoundaryColor(
+                "r_cusp_E4_sheet_1",
+                SheetColor.BOUNDARY,
+                "r_ray",
+                "fourth cusp exceptional, first unramified sheet",
+            ),
+            BoundaryColor(
+                "r_cusp_E4_sheet_2",
+                SheetColor.BOUNDARY,
+                "r_ray",
+                "fourth cusp exceptional, second unramified sheet",
+            ),
+            BoundaryColor(
+                "r_cusp_E4_sheet_3",
+                SheetColor.BOUNDARY,
+                "r_ray",
+                "fourth cusp exceptional, third unramified sheet",
+            ),
+            BoundaryColor(
+                "r_cusp_E4_sheet_4",
+                SheetColor.BOUNDARY,
+                "r_ray",
+                "fourth cusp exceptional, fourth unramified sheet",
+            ),
+            BoundaryColor(
+                "r_cusp_E4_sheet_5",
+                SheetColor.BOUNDARY,
+                "r_ray",
+                "fourth cusp exceptional, fifth unramified sheet",
+            ),
+            BoundaryColor(
+                "triple_plus_E1_ramified_4",
+                SheetColor.BOUNDARY,
+                "triple_E1_ray",
+                "positive conjugate center, index-four cluster",
+            ),
+            BoundaryColor(
+                "triple_plus_E1_simple",
+                SheetColor.BOUNDARY,
+                "triple_E1_ray",
+                "positive conjugate center, simple sheet",
+            ),
+            BoundaryColor(
+                "triple_minus_E1_ramified_4",
+                SheetColor.BOUNDARY,
+                "triple_E1_ray",
+                "negative conjugate center, index-four cluster",
+            ),
+            BoundaryColor(
+                "triple_minus_E1_simple",
+                SheetColor.BOUNDARY,
+                "triple_E1_ray",
+                "negative conjugate center, simple sheet",
+            ),
+            BoundaryColor(
+                "triple_plus_E2_cluster_1",
+                SheetColor.BOUNDARY,
+                "triple_E2_ray",
+                "positive conjugate center, first cluster sheet",
+            ),
+            BoundaryColor(
+                "triple_plus_E2_cluster_2",
+                SheetColor.BOUNDARY,
+                "triple_E2_ray",
+                "positive conjugate center, second cluster sheet",
+            ),
+            BoundaryColor(
+                "triple_plus_E2_cluster_3",
+                SheetColor.BOUNDARY,
+                "triple_E2_ray",
+                "positive conjugate center, third cluster sheet",
+            ),
+            BoundaryColor(
+                "triple_plus_E2_cluster_4",
+                SheetColor.BOUNDARY,
+                "triple_E2_ray",
+                "positive conjugate center, fourth cluster sheet",
+            ),
+            BoundaryColor(
+                "triple_plus_E2_simple",
+                SheetColor.BOUNDARY,
+                "triple_E2_ray",
+                "positive conjugate center, simple sheet",
+            ),
+            BoundaryColor(
+                "triple_minus_E2_cluster_1",
+                SheetColor.BOUNDARY,
+                "triple_E2_ray",
+                "negative conjugate center, first cluster sheet",
+            ),
+            BoundaryColor(
+                "triple_minus_E2_cluster_2",
+                SheetColor.BOUNDARY,
+                "triple_E2_ray",
+                "negative conjugate center, second cluster sheet",
+            ),
+            BoundaryColor(
+                "triple_minus_E2_cluster_3",
+                SheetColor.BOUNDARY,
+                "triple_E2_ray",
+                "negative conjugate center, third cluster sheet",
+            ),
+            BoundaryColor(
+                "triple_minus_E2_cluster_4",
+                SheetColor.BOUNDARY,
+                "triple_E2_ray",
+                "negative conjugate center, fourth cluster sheet",
+            ),
+            BoundaryColor(
+                "triple_minus_E2_simple",
+                SheetColor.BOUNDARY,
+                "triple_E2_ray",
+                "negative conjugate center, simple sheet",
+            ),
+        )
+        + qr_tangent_colors,
+        valuation_functions=(
+            "pullback_d",
+            "pullback_q",
+            "pullback_r",
+            "derivative_P_X",
+        ),
+        valuation_matrix=(
+            (1, 0, 0, 0),
+            (4, 0, 0, 3),
+            (0, 1, 0, 1),
+            (0, 1, 0, 1),
+            (0, 1, 0, 0),
+            (0, 1, 0, 0),
+            (0, 1, 0, 0),
+            (0, 2, 0, 1),
+            (0, 2, 0, 1),
+            (0, 2, 0, 1),
+            (0, 2, 0, 1),
+            (0, 2, 0, 0),
+            (0, 0, 2, 1),
+            (0, 0, 2, 1),
+            (0, 0, 1, 0),
+            (0, 0, 10, 4),
+            (0, 0, 20, 8),
+            (0, 0, 5, 2),
+            (0, 0, 10, 4),
+            (0, 0, 10, 4),
+            (0, 0, 10, 4),
+            (0, 0, 10, 4),
+            (0, 0, 10, 4),
+            (0, 0, 10, 4),
+            (0, 0, 10, 4),
+            (4, 4, 4, 7),
+            (1, 1, 1, 0),
+            (4, 4, 4, 7),
+            (1, 1, 1, 0),
+            (2, 2, 1, 3),
+            (2, 2, 1, 3),
+            (2, 2, 1, 3),
+            (2, 2, 1, 3),
+            (2, 2, 1, 0),
+            (2, 2, 1, 3),
+            (2, 2, 1, 3),
+            (2, 2, 1, 3),
+            (2, 2, 1, 3),
+            (2, 2, 1, 0),
+        )
+        + qr_tangent_rows,
+        valuation_certificate=(
+            "Disc_X(P)=d^3*q^2*r^2/256; modulo d the root profile is "
+            "(4,1), q is a transverse unramified double-root collision, "
+            "the q-node blowup has four simple slope colors plus X=-1, "
+            "modulo r the generic profile is (2,2,1), and the four cusp "
+            "exceptionals have profiles 5, 5, (1,2,2), and (1,1,1,1,1); "
+            "the conjugate triple centers have E1 profile (4,1) and E2 "
+            "profile (1,1,1,1,1); at each cubic-orbit q-r tangency the "
+            "center profile is (3,2), E1 has colors (2,1,2), and E2 has "
+            "five unramified colors"
+        ),
+        nonlinear_residue=(),
+    )
+
+    # These four proposed mask columns are deliberately separated from the
+    # proved divisor columns.  The first three are the base-factor monomials;
+    # the last is the conductor selector w-1.  Its divisor is supported over
+    # the boundary at infinity, so its orders on the complete finite atlas
+    # are zero.  The q-normalization calculation in the exact verifier proves
+    # that this selector completes the conductor unit lattice unimodularly.
+    return replace(
+        base,
+        valuation_functions=base.valuation_functions
+        + (
+            "mask_d",
+            "mask_q",
+            "mask_r",
+            "q_selector_w_minus_1",
+        ),
+        valuation_matrix=tuple(
+            row + row[:3] + (0,) for row in base.valuation_matrix
+        ),
+        valuation_certificate=(
+            base.valuation_certificate
+            + "; the candidate mask columns are d, q, r, and the q-conductor "
+            "selector w-1, whose finite orders vanish"
+        ),
+        nonlinear_residue=(
+            "realize a non-base-factor Cox or mask divisor after the minimal "
+            "base-factor-plus-selector ansatz fails",
+            "clear every inverse-adjugate entry for each surviving mask model",
+            "recognize affine-space source and target while preserving F20",
+        ),
+    )
+
+
+def f20_base_factor_mask_datum() -> ToroidalBoundaryDatum:
+    """Minimal F20 mask ansatz using d, q, r and one q selector.
+
+    The q-conductor unit computation reduces selector powers modulo pullback
+    units to exponent zero or one.  Nonnegative base-factor exponents above
+    eight cannot meet a derivative target whose largest order is eight, so
+    the finite box is exhaustive for this Laurent-monomial architecture.
+    """
+
+    base = f20_toroidal_ledger_datum()
+    function_count = len(base.valuation_functions)
+
+    def coefficient(column: int) -> tuple[int, ...]:
+        return tuple(
+            1 if index == column else 0
+            for index in range(function_count)
+        )
+
+    scope_certificate = (
+        "all Laurent-monomial divisors generated by d, q, r, and w-1; "
+        "Norm(w-1)=8/(y+3) reduces selector powers modulo pullback units"
+    )
+    span_problem = ColoredDivisorSpanProblem(
+        name="uncolored_base_factor_plus_q_selector_span",
+        generator_functions=(
+            "mask_d",
+            "mask_q",
+            "mask_r",
+            "q_selector_w_minus_1",
+        ),
+        target_orders=tuple(row[3] for row in base.valuation_matrix),
+        infeasibility_is_obstruction=True,
+        exhaustive_scope_certificate=scope_certificate,
+    )
+    problem = ValuationFeasibilityProblem(
+        name="base_factor_plus_q_selector_derivative_principalization",
+        variables=(
+            IntegralVariable("exponent_d", 0, 8),
+            IntegralVariable("exponent_q", 0, 8),
+            IntegralVariable("exponent_r", 0, 8),
+            IntegralVariable("selector_parity", 0, 1),
+        ),
+        fixed_function_coefficients=(0,) * function_count,
+        variable_function_coefficients=(
+            coefficient(4),
+            coefficient(5),
+            coefficient(6),
+            coefficient(7),
+        ),
+        target_orders=tuple(row[3] for row in base.valuation_matrix),
+        infeasibility_is_obstruction=True,
+        exhaustive_scope_certificate=(
+            "nonnegative part of the Laurent-monomial architecture: "
+            "d^a*q^b*r^c*(w-1)^e "
+            "with a,b,c nonnegative; Norm(w-1)=8/(y+3) reduces e modulo "
+            "pullback units, and any exponent above eight overshoots a "
+            "positive factor row of the derivative target"
+        ),
+    )
+    return replace(
+        base,
+        divisor_span_problems=base.divisor_span_problems + (span_problem,),
+        feasibility_problems=base.feasibility_problems + (problem,),
+        nonlinear_residue=(
+            "no model survives to inverse-adjugate or affine-space tests "
+            "inside the certified base-factor-plus-selector architecture",
+            "a broader construction must add a genuinely colored Cox divisor",
+        ),
+    )
+
+
 def all_benchmark_packages() -> tuple[BoundaryPackage, ...]:
     return (
         a4_three_puncture_package(),
@@ -2090,6 +3758,8 @@ def all_benchmark_packages() -> tuple[BoundaryPackage, ...]:
 
 
 __all__ = [
+    "BoundaryColor",
+    "ColoredDivisorSpanProblem",
     "BoundaryOutputExpressionDatum",
     "BoundaryPackage",
     "Compilation",
@@ -2098,18 +3768,36 @@ __all__ = [
     "ContactExpression",
     "NormalJetInputDatum",
     "PackageStatus",
+    "IntegralVariable",
+    "LinearConstraint",
     "StageTwoRealizationCertificate",
+    "ToroidalAffineScreen",
+    "ToroidalBoundaryDatum",
+    "ToroidalFanDatum",
+    "TropicalFeasibilityStatus",
+    "TropicalRay",
+    "TropicalRegularityRequirement",
+    "UnimodularBlockRequirement",
+    "ValuationFeasibilityProblem",
+    "ValuationIdentity",
     "CoreClassQuery",
     "FactorialCoreDatum",
     "PresentedCoreDatum",
     "RetainedRootEulerDatum",
     "a4_cone_branch_obstruction_package",
+    "a4_toroidal_ledger_datum",
     "a4_three_puncture_package",
     "affine_ramification_obstruction_package",
     "all_benchmark_packages",
     "compile_boundary_package",
+    "colored_proportionality_witnesses",
+    "audit_toroidal_boundary",
+    "d5_toroidal_ledger_datum",
+    "davenport_toroidal_ledger_datum",
     "determinant_ledger_obstruction_package",
     "elliptic_selected_boundary_package",
+    "f20_base_factor_mask_datum",
+    "f20_toroidal_ledger_datum",
     "gl3f2_triangle_package",
     "nodal_rational_package",
     "presented_core_extension_obstruction_package",

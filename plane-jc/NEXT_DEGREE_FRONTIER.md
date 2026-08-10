@@ -166,19 +166,62 @@ Open work, in dependency order:
    force boundary-attachment points; the last `2` occurs at the source
    endpoint over the smooth third branch value.  The rescaled cover is Belyi
    and its regular `A_6` closure has genus `25`.  The target valuation equality
-   forces geometric degree at least six; two distinct double-root packets on
-   the same target divisor force at least twelve, while packets on distinct
-   target divisors do not add.  Since this divisor is centered at infinity,
+   forces geometric degree at least six.  The global target coordinates have
+   orders `(5,2)`, a uniformizer of order one, and a nonconstant residue
+   coordinate, so both double-root packets necessarily dominate the unique
+   extracted target divisor and force degree at least twelve.  Since this
+   divisor is centered at infinity,
    no affine-sheet `+1` applies.  Purity instead forces a separate affine
    ramification row, and the global geometric monodromy has `A_6` as a simple
-   composition factor.  The global case split is therefore one
-   squarefree packet, or two identical double-root packets on the same versus
-   distinct target components.  The next task is not a sequential descent
-   through the remaining thirty layers: attach
-   these rays to the original completions, classify the simple spectator
-   orbits, decide whether the two packets share a target component, and then
-   run the class-group, unit, canonical, finite-normalization, and global
-   meridian filters.  The degree pair `(75,125)` remains unexcluded.
+   composition factor.  The live global split is therefore one squarefree
+   packet or two identical double-root packets over the same target component.  The
+   [`global attachment compiler`](F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md)
+   now tracks the translated chart to the original nonmonomial valuation
+   `nu(x),nu(y_old),nu(x*y_old^5-c)=(-25,5,12)`: six blowups extract the
+   shared carrier `(-5,1)`, and six further blowups at each marked carrier
+   point extract a principal arm.  It also completes the four-blowup target
+   boundary with weights `(-2,-2,-1,-3,-2)`.  Each terminal source component
+   has five forced boundary neighbors.  The one/two-packet minimal principal
+   source graphs have `(components,leaves)=(16,6)/(25,10)`, while the two live
+   normalization equations are `d=6+rho_T` and `d=12+rho_T`.  Candidate mode
+   rejects the former distinct-target row and runs the class-group, unit,
+   canonical, purity, spectator, finite-normalization, and meridian gates once
+   the missing global geometry is supplied.  The
+   [`carrier Wronskian classifier`](F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md)
+   now extracts the deeper target ray `(5,36)`.  It forces the unique
+   squarefree value `R=(v^2-3v+3)/25`, whose carrier map is the cyclic cubic
+   `1+1/(v-1)^3`, so both simple spectators are unramified.  On the double
+   row it forces `rho^2-3rho+1=0`; the degree-six carrier map is exactly the
+   terminal Belyi map after a linear source change.  The next task is to
+   impose these three exact carrier points on the lower Laurent system and
+   supply the affine purity row and global branch cycles.  The degree pair
+   `(75,125)` remains unexcluded.
+   The
+   [`common-power carrier theorem`](COMMON_POWER_CARRIER_WRONSKIAN.md)
+   now makes this reusable: for every primitive degree-`k` common edge with
+   coprime powers it forces the first nonshear descent, turns fixed-carrier
+   reconstruction into one unique projective linear kernel, and assigns an
+   explicit three-point passport to every root-multiplicity partition.  This
+   supplies a dessin-first entry point for later frontier rows; the resonant
+   `k=2` and imprimitive partitions remain separate cases.
+   The next lower-system handoff is also exact: the
+   [`carrier specialization compiler`](F2_75_125_CARRIER_SPECIALIZATIONS.md)
+   routes the rational squarefree carrier outside the descent-eight
+   double-root component and specializes every exposed linear map for the two
+   double carriers over `Q(sqrt(5))`.  It pins the factor-quotient block of
+   `53` coordinates and distinguishes it from the full `347`-coordinate
+   Laurent cokernel.  The downstream
+   [`nonlinear forcing compiler`](F2_75_125_NONLINEAR_FORCING.md) now carries
+   all ten endpoint circuits and the upper tangent solutions into those
+   rows, appends the final `7+6` functionals and five incidence rows, and
+   routes the squarefree carrier through all later spacings `9..90`.  The
+   remaining tasks are a localized ideal test for the double component and
+   separate target-and-tail compilers for the squarefree ledger.
+   <!-- status-consumer: PF2CS1 666da98d2d24669e -->
+   <!-- status-consumer: PF2NF1 cfd1da5136c0b6d0 -->
+   <!-- status-consumer: PCW1 94b10929118f151d -->
+   <!-- status-consumer: PF2CW1 a7774b0fa736b64c -->
+   <!-- status-consumer: PF2GA1 cbca9b6c44a2bc7e -->
    <!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
 3. **Retire the excluded `(96,144)` repeated-tail branch.**  The source
    statements are now reconciled in

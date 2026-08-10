@@ -1,0 +1,148 @@
+{
+  "conductor_equalizer": {
+    "base_conductor_parameter": "y",
+    "boundary_restrictions": {
+      "d": "(w**2 - 2*w + 5)**2*(w**2 + 2*w + 5)**2/(16*(w**2 + 3)**2)",
+      "r": "4*w**2*(w**2 - 2*w + 5)*(w**2 + 2*w + 5)*(w**3 - 3*w**2 - w - 5)**2*(w**3 + 3*w**2 - w + 5)**2/((w - 1)**6*(w + 1)**6*(w**2 + 3)**2)"
+    },
+    "collision_packets_on_w_line": {
+      "q_node": "w**4 + 10*w**2 + 5",
+      "q_r_tangency_orbit": [
+        "w**3 - 3*w**2 - w - 5",
+        "w**3 + 3*w**2 - w + 5"
+      ],
+      "q_r_transverse": "w",
+      "r_cusp": "off the q conductor",
+      "triple_orbit": [
+        "w**2 - 2*w + 5",
+        "w**2 + 2*w + 5"
+      ]
+    },
+    "cover": "y=(5+3*w^2)/(1-w^2)",
+    "derivative_residue_parity": "anti_invariant",
+    "derivative_slope_residue": "w*(3*w**2 + 5)*(w**2 - 2*w + 5)*(w**2 + 2*w + 5)/((w + 1)*(32*w - 32))",
+    "individual_D_d_D_q_D_r_residue_cocycle": "not_yet_distributed",
+    "involution": "w -> -w",
+    "normal_conductor_parameter": "w",
+    "selector": "w-1",
+    "square": "R = Rbar fiber_product_(Rbar/c) R/c",
+    "unit_completion_determinant": -1
+  },
+  "downstream": {
+    "abstract_divisorial_degree_3_1_1_contains_P_X": "formal_on_a_certified_regular_resolution",
+    "affine_space_recognition": "not_reached",
+    "inverse_adjugate_polynomiality": "not_reached",
+    "natural_normalized_degree_3_1_1_contains_P_X": false
+  },
+  "exceptional_cox_gate": {
+    "normalization_alone_suffices": false,
+    "reason": "both integral normalization generators have triple-E1 order two; the desired D_d coefficient is one",
+    "required_algebra": "normalized multi-Rees/total-coordinate algebra of the resolved exceptional divisors, with a primitive exceptional Cox variable"
+  },
+  "global_normalization": {
+    "c3_equals_minus_h_q": true,
+    "conductor": [
+      "4*X*t + 2*X - 2*s*t - 2*s + 1",
+      "X**2 - X*s - 2*X + s",
+      "-2*X*s + 2*X + 2*s**2*t + 2*s**2 + 3*s - 4"
+    ],
+    "module": "R + R*(d*c1/c2) + R*(d*c3/c2)",
+    "module_generator_orders_at_triple_E1": [
+      2,
+      2
+    ],
+    "ring": "R=QQ[s,t,X]/(P)",
+    "singular_gate": {
+      "P_X_in_natural_normalized_degree_3_1_1_piece": false,
+      "base_residue_packets": {
+        "q_node": [
+          {
+            "primary_length": 3,
+            "prime_degree": 1
+          }
+        ],
+        "q_r_tangency_orbit": [
+          {
+            "primary_length": 9,
+            "prime_degree": 3
+          }
+        ],
+        "q_r_transverse": [
+          {
+            "primary_length": 1,
+            "prime_degree": 1
+          }
+        ],
+        "r_cusp": [
+          {
+            "primary_length": 6,
+            "prime_degree": 1
+          }
+        ],
+        "triple_orbit": [
+          {
+            "primary_length": 14,
+            "prime_degree": 2
+          }
+        ]
+      },
+      "conductor_verified": true,
+      "natural_normalized_product_groebner_size": 43,
+      "normalization_module_generators": [
+        "d*c1/c2",
+        "d*c3/c2",
+        "1"
+      ],
+      "normalization_relation_count": 12,
+      "normalization_variable_count": 5,
+      "normalization_verified": true,
+      "root_residue_packets": {
+        "q_node": [
+          {
+            "primary_length": 2,
+            "prime_degree": 1
+          },
+          {
+            "primary_length": 4,
+            "prime_degree": 2
+          }
+        ],
+        "q_r_tangency_orbit": [
+          {
+            "primary_length": 6,
+            "prime_degree": 3
+          },
+          {
+            "primary_length": 12,
+            "prime_degree": 3
+          }
+        ],
+        "q_r_transverse": [
+          {
+            "primary_length": 1,
+            "prime_degree": 1
+          }
+        ],
+        "r_cusp": [
+          {
+            "primary_length": 12,
+            "prime_degree": 1
+          }
+        ],
+        "triple_orbit": [
+          {
+            "primary_length": 20,
+            "prime_degree": 2
+          }
+        ]
+      }
+    },
+    "triple_E1_value_one_present": false
+  },
+  "schema": "f20-normalized-cox-conductor-v1",
+  "software_assumptions": {
+    "python": ".venv Python with pinned SymPy",
+    "singular": "Singular 4.4-compatible normal.lib and primdec.lib exact routines"
+  },
+  "status": "global_normalization_certified_exceptional_cox_fill_required"
+}

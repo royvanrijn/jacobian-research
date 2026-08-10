@@ -1,0 +1,17 @@
+name = "support-saturation"
+version = "0.1.0"
+keywords = ["commutative-algebra", "local-cohomology", "saturation"]
+defaultTargets = ["SupportSaturation"]
+
+[leanOptions]
+pp.unicode.fun = true
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.32.1"
+
+[[lean_lib]]
+name = "SupportSaturation"

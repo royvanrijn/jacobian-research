@@ -1,0 +1,549 @@
+{
+  "cartier_gate": {
+    "compact_different_factor_columns": {
+      "D_d": {
+        "d_ramification": 1,
+        "triple_E1_ramification": 1,
+        "triple_E2_cluster": 1
+      },
+      "D_q": {
+        "q_crossing": 1,
+        "q_node_slopes": 1,
+        "qr_E1_A_ramification": 1,
+        "qr_E1_A_unramified": 1,
+        "qr_E2_A": 1,
+        "triple_E1_ramification": 2
+      },
+      "D_r": {
+        "qr_E1_A_ramification": 1,
+        "qr_E1_B_ramification": 1,
+        "qr_E2_A": 1,
+        "qr_E2_B": 1,
+        "r_cusp_E1": 4,
+        "r_cusp_E2": 8,
+        "r_cusp_E3_ramification": 4,
+        "r_cusp_E3_unramified": 2,
+        "r_cusp_E4": 4,
+        "r_ramification": 1,
+        "triple_E1_ramification": 2
+      }
+    },
+    "different_identity": "div(P_X)=3*D_d+D_q+D_r",
+    "global_cox_sections_constructed": false,
+    "global_regular_snc_resolution_certified": false,
+    "local_statement": "on a regular resolved colored surface, every packet orbit sum is an effective Cartier divisor",
+    "status": "conditional"
+  },
+  "color_count": 63,
+  "compact_three_column_gate": {
+    "augmented_rank": 6,
+    "broken_relations": [
+      {
+        "breakers": [
+          {
+            "column": "D_d",
+            "mismatch": -1
+          }
+        ],
+        "colors": [
+          "d_unramified",
+          "d_ramified_4"
+        ]
+      },
+      {
+        "breakers": [
+          {
+            "column": "D_q",
+            "mismatch": 1
+          }
+        ],
+        "colors": [
+          "q_collision_plus",
+          "q_residual_1"
+        ]
+      },
+      {
+        "breakers": [
+          {
+            "column": "D_r",
+            "mismatch": 1
+          }
+        ],
+        "colors": [
+          "r_ramified_2_plus",
+          "r_unramified"
+        ]
+      },
+      {
+        "breakers": [
+          {
+            "column": "D_d",
+            "mismatch": 1
+          },
+          {
+            "column": "D_q",
+            "mismatch": 2
+          },
+          {
+            "column": "D_r",
+            "mismatch": 2
+          }
+        ],
+        "colors": [
+          "triple_plus_E1_ramified_4",
+          "triple_plus_E1_simple"
+        ]
+      },
+      {
+        "breakers": [
+          {
+            "column": "D_d",
+            "mismatch": 1
+          }
+        ],
+        "colors": [
+          "triple_plus_E2_cluster_1",
+          "triple_plus_E2_simple"
+        ]
+      },
+      {
+        "breakers": [
+          {
+            "column": "D_q",
+            "mismatch": 2
+          }
+        ],
+        "colors": [
+          "qr_tangent_1_E1_A_ramified_2",
+          "qr_tangent_1_E1_B_ramified_2"
+        ]
+      }
+    ],
+    "columns": [
+      "D_d",
+      "D_q",
+      "D_r"
+    ],
+    "generator_rank": 6,
+    "scope": "Cartier on a global regular colored resolution; the individual Cox sections and their descent data are not constructed",
+    "status": "passes_combinatorially",
+    "unique_nonnegative_model": {
+      "D_d": 3,
+      "D_q": 1,
+      "D_r": 1
+    }
+  },
+  "conductor_gluing_gate": {
+    "integral_unit_lattice_obstruction": false,
+    "packet_orders_are_galois_orbit_constant": true,
+    "q_crossing_orders_match": true,
+    "q_pullback_smith_diagonal": [
+      1,
+      1,
+      1
+    ],
+    "q_selector_completion_determinant": -1,
+    "reason": "equal valuations and a unimodular unit lattice do not determine the conductor fiber identifications of the individual Cox sections",
+    "residue_cocycle_certificate": null,
+    "status": "uncertified"
+  },
+  "full_geometric_color_basis": {
+    "class_group_free_rank": 0,
+    "class_group_torsion": [],
+    "column_count": 63,
+    "status": "lattice_neutral_only",
+    "unit_rank": 0,
+    "unresolved": "Galois/conductor descent, Cox relations and irrelevant locus, dimension-preserving quotient, and affine-space recognition of the resulting source",
+    "valuation_matrix": "I_63"
+  },
+  "independent_compact_affine_screen": {
+    "boundary_count": 63,
+    "character_count": 7,
+    "class_group_free_rank": 57,
+    "conditional_on_factorial_core_and_complete_boundary": true,
+    "matrix_rank": 6,
+    "passes_affine_space_necessary_conditions": false,
+    "unit_rank": 1
+  },
+  "independent_packet_affine_screen": {
+    "boundary_count": 63,
+    "character_count": 20,
+    "class_group_free_rank": 44,
+    "class_group_torsion": [],
+    "conditional_on_factorial_core_and_complete_boundary": true,
+    "matrix_rank": 19,
+    "passes_affine_space_necessary_conditions": false,
+    "saturated_minor_determinant": 1,
+    "unit_rank": 1
+  },
+  "integral_span_gate": {
+    "augmented_rank": 19,
+    "generator_rank": 19,
+    "saturated_minor_determinant": 1,
+    "status": "passes",
+    "target_class_order": 1
+  },
+  "nonlinear_pipeline": {
+    "affine_space_recognition": "not_reached",
+    "conductor_certified_survivor": false,
+    "divisorial_inverse_adjugate_cancellation": "passes_formally",
+    "entrywise_inverse_adjugate_polynomiality": "not_reached",
+    "reason": "the pipeline stops at the missing conductor residue cocycle and global Cox algebra",
+    "tropical_packet_survivor": true
+  },
+  "nonnegative_semigroup_gate": {
+    "model": {
+      "cox_d_ramification": 3,
+      "cox_q_crossing": 1,
+      "cox_q_node_slopes": 1,
+      "cox_qr_E1_A_ramification": 2,
+      "cox_qr_E1_A_unramified": 1,
+      "cox_qr_E1_B_ramification": 1,
+      "cox_qr_E2_A": 2,
+      "cox_qr_E2_B": 1,
+      "cox_r_cusp_E1": 4,
+      "cox_r_cusp_E2": 8,
+      "cox_r_cusp_E3_ramification": 4,
+      "cox_r_cusp_E3_unramified": 2,
+      "cox_r_cusp_E4": 4,
+      "cox_r_ramification": 1,
+      "cox_triple_E1_ramification": 7,
+      "cox_triple_E2_cluster": 3,
+      "mask_d": 0,
+      "mask_q": 0,
+      "mask_r": 0,
+      "q_selector_w_minus_1": 0
+    },
+    "model_is_unique_after_selector_normalization": true,
+    "proof": "target-zero d/q/r rows force base exponents zero; the sixteen packet columns have pairwise disjoint support",
+    "status": "passes"
+  },
+  "packet_count": 16,
+  "packets": {
+    "d_ramification": {
+      "colors": [
+        "d_ramified_4"
+      ],
+      "primitive_column": {
+        "d_ramified_4": 1
+      },
+      "target_exponent": 3
+    },
+    "q_crossing": {
+      "colors": [
+        "q_collision_plus",
+        "q_collision_minus"
+      ],
+      "primitive_column": {
+        "q_collision_minus": 1,
+        "q_collision_plus": 1
+      },
+      "target_exponent": 1
+    },
+    "q_node_slopes": {
+      "colors": [
+        "q_node_slope_1",
+        "q_node_slope_2",
+        "q_node_slope_3",
+        "q_node_slope_4"
+      ],
+      "primitive_column": {
+        "q_node_slope_1": 1,
+        "q_node_slope_2": 1,
+        "q_node_slope_3": 1,
+        "q_node_slope_4": 1
+      },
+      "target_exponent": 1
+    },
+    "qr_E1_A_ramification": {
+      "colors": [
+        "qr_tangent_1_E1_A_ramified_2",
+        "qr_tangent_2_E1_A_ramified_2",
+        "qr_tangent_3_E1_A_ramified_2"
+      ],
+      "primitive_column": {
+        "qr_tangent_1_E1_A_ramified_2": 1,
+        "qr_tangent_2_E1_A_ramified_2": 1,
+        "qr_tangent_3_E1_A_ramified_2": 1
+      },
+      "target_exponent": 2
+    },
+    "qr_E1_A_unramified": {
+      "colors": [
+        "qr_tangent_1_E1_A_unramified",
+        "qr_tangent_2_E1_A_unramified",
+        "qr_tangent_3_E1_A_unramified"
+      ],
+      "primitive_column": {
+        "qr_tangent_1_E1_A_unramified": 1,
+        "qr_tangent_2_E1_A_unramified": 1,
+        "qr_tangent_3_E1_A_unramified": 1
+      },
+      "target_exponent": 1
+    },
+    "qr_E1_B_ramification": {
+      "colors": [
+        "qr_tangent_1_E1_B_ramified_2",
+        "qr_tangent_2_E1_B_ramified_2",
+        "qr_tangent_3_E1_B_ramified_2"
+      ],
+      "primitive_column": {
+        "qr_tangent_1_E1_B_ramified_2": 1,
+        "qr_tangent_2_E1_B_ramified_2": 1,
+        "qr_tangent_3_E1_B_ramified_2": 1
+      },
+      "target_exponent": 1
+    },
+    "qr_E2_A": {
+      "colors": [
+        "qr_tangent_1_E2_A_sheet_1",
+        "qr_tangent_1_E2_A_sheet_2",
+        "qr_tangent_1_E2_A_sheet_3",
+        "qr_tangent_2_E2_A_sheet_1",
+        "qr_tangent_2_E2_A_sheet_2",
+        "qr_tangent_2_E2_A_sheet_3",
+        "qr_tangent_3_E2_A_sheet_1",
+        "qr_tangent_3_E2_A_sheet_2",
+        "qr_tangent_3_E2_A_sheet_3"
+      ],
+      "primitive_column": {
+        "qr_tangent_1_E2_A_sheet_1": 1,
+        "qr_tangent_1_E2_A_sheet_2": 1,
+        "qr_tangent_1_E2_A_sheet_3": 1,
+        "qr_tangent_2_E2_A_sheet_1": 1,
+        "qr_tangent_2_E2_A_sheet_2": 1,
+        "qr_tangent_2_E2_A_sheet_3": 1,
+        "qr_tangent_3_E2_A_sheet_1": 1,
+        "qr_tangent_3_E2_A_sheet_2": 1,
+        "qr_tangent_3_E2_A_sheet_3": 1
+      },
+      "target_exponent": 2
+    },
+    "qr_E2_B": {
+      "colors": [
+        "qr_tangent_1_E2_B_sheet_1",
+        "qr_tangent_1_E2_B_sheet_2",
+        "qr_tangent_2_E2_B_sheet_1",
+        "qr_tangent_2_E2_B_sheet_2",
+        "qr_tangent_3_E2_B_sheet_1",
+        "qr_tangent_3_E2_B_sheet_2"
+      ],
+      "primitive_column": {
+        "qr_tangent_1_E2_B_sheet_1": 1,
+        "qr_tangent_1_E2_B_sheet_2": 1,
+        "qr_tangent_2_E2_B_sheet_1": 1,
+        "qr_tangent_2_E2_B_sheet_2": 1,
+        "qr_tangent_3_E2_B_sheet_1": 1,
+        "qr_tangent_3_E2_B_sheet_2": 1
+      },
+      "target_exponent": 1
+    },
+    "r_cusp_E1": {
+      "colors": [
+        "r_cusp_E1_total_5"
+      ],
+      "primitive_column": {
+        "r_cusp_E1_total_5": 1
+      },
+      "target_exponent": 4
+    },
+    "r_cusp_E2": {
+      "colors": [
+        "r_cusp_E2_total_5"
+      ],
+      "primitive_column": {
+        "r_cusp_E2_total_5": 1
+      },
+      "target_exponent": 8
+    },
+    "r_cusp_E3_ramification": {
+      "colors": [
+        "r_cusp_E3_ramified_plus",
+        "r_cusp_E3_ramified_minus"
+      ],
+      "primitive_column": {
+        "r_cusp_E3_ramified_minus": 1,
+        "r_cusp_E3_ramified_plus": 1
+      },
+      "target_exponent": 4
+    },
+    "r_cusp_E3_unramified": {
+      "colors": [
+        "r_cusp_E3_unramified"
+      ],
+      "primitive_column": {
+        "r_cusp_E3_unramified": 1
+      },
+      "target_exponent": 2
+    },
+    "r_cusp_E4": {
+      "colors": [
+        "r_cusp_E4_sheet_1",
+        "r_cusp_E4_sheet_2",
+        "r_cusp_E4_sheet_3",
+        "r_cusp_E4_sheet_4",
+        "r_cusp_E4_sheet_5"
+      ],
+      "primitive_column": {
+        "r_cusp_E4_sheet_1": 1,
+        "r_cusp_E4_sheet_2": 1,
+        "r_cusp_E4_sheet_3": 1,
+        "r_cusp_E4_sheet_4": 1,
+        "r_cusp_E4_sheet_5": 1
+      },
+      "target_exponent": 4
+    },
+    "r_ramification": {
+      "colors": [
+        "r_ramified_2_plus",
+        "r_ramified_2_minus"
+      ],
+      "primitive_column": {
+        "r_ramified_2_minus": 1,
+        "r_ramified_2_plus": 1
+      },
+      "target_exponent": 1
+    },
+    "triple_E1_ramification": {
+      "colors": [
+        "triple_plus_E1_ramified_4",
+        "triple_minus_E1_ramified_4"
+      ],
+      "primitive_column": {
+        "triple_minus_E1_ramified_4": 1,
+        "triple_plus_E1_ramified_4": 1
+      },
+      "target_exponent": 7
+    },
+    "triple_E2_cluster": {
+      "colors": [
+        "triple_plus_E2_cluster_1",
+        "triple_plus_E2_cluster_2",
+        "triple_plus_E2_cluster_3",
+        "triple_plus_E2_cluster_4",
+        "triple_minus_E2_cluster_1",
+        "triple_minus_E2_cluster_2",
+        "triple_minus_E2_cluster_3",
+        "triple_minus_E2_cluster_4"
+      ],
+      "primitive_column": {
+        "triple_minus_E2_cluster_1": 1,
+        "triple_minus_E2_cluster_2": 1,
+        "triple_minus_E2_cluster_3": 1,
+        "triple_minus_E2_cluster_4": 1,
+        "triple_plus_E2_cluster_1": 1,
+        "triple_plus_E2_cluster_2": 1,
+        "triple_plus_E2_cluster_3": 1,
+        "triple_plus_E2_cluster_4": 1
+      },
+      "target_exponent": 3
+    }
+  },
+  "principal_selector_screen": {
+    "conclusion": "the primitive packet columns are not supplied by these obvious principal boundary units",
+    "d_interior_factor": "(t - 2)^2",
+    "d_simple_selector_norm": "-4*(s**2 + 4)*(t - 2)**2",
+    "q_collision_selector_has_nonconstant_cofactor": true,
+    "status": "fails_for_tested_natural_selectors"
+  },
+  "scope": "the sixteen Galois-stable positive-derivative packets on the certified finite F20 color atlas; global regular SNC resolution and Cox-ring realization remain assumptions",
+  "six_witness_gate": {
+    "full_target_spanned_by_six_breakers": false,
+    "old_witnesses": [
+      {
+        "colors": [
+          "d_unramified",
+          "d_ramified_4"
+        ],
+        "old_mismatch": -3,
+        "packet_breakers": [
+          {
+            "mismatch": -1,
+            "packet": "d_ramification"
+          }
+        ]
+      },
+      {
+        "colors": [
+          "q_collision_plus",
+          "q_residual_1"
+        ],
+        "old_mismatch": 1,
+        "packet_breakers": [
+          {
+            "mismatch": 1,
+            "packet": "q_crossing"
+          }
+        ]
+      },
+      {
+        "colors": [
+          "r_ramified_2_plus",
+          "r_unramified"
+        ],
+        "old_mismatch": 1,
+        "packet_breakers": [
+          {
+            "mismatch": 1,
+            "packet": "r_ramification"
+          }
+        ]
+      },
+      {
+        "colors": [
+          "triple_plus_E1_ramified_4",
+          "triple_plus_E1_simple"
+        ],
+        "old_mismatch": 7,
+        "packet_breakers": [
+          {
+            "mismatch": 1,
+            "packet": "triple_E1_ramification"
+          }
+        ]
+      },
+      {
+        "colors": [
+          "triple_plus_E2_cluster_1",
+          "triple_plus_E2_simple"
+        ],
+        "old_mismatch": 3,
+        "packet_breakers": [
+          {
+            "mismatch": 1,
+            "packet": "triple_E2_cluster"
+          }
+        ]
+      },
+      {
+        "colors": [
+          "qr_tangent_1_E1_A_ramified_2",
+          "qr_tangent_1_E1_B_ramified_2"
+        ],
+        "old_mismatch": 2,
+        "packet_breakers": [
+          {
+            "mismatch": 2,
+            "packet": "qr_E1_A_ramification"
+          },
+          {
+            "mismatch": -2,
+            "packet": "qr_E1_B_ramification"
+          }
+        ]
+      }
+    ],
+    "primary_breaker_packets": [
+      "d_ramification",
+      "q_crossing",
+      "r_ramification",
+      "triple_E1_ramification",
+      "triple_E2_cluster",
+      "qr_E1_A_ramification"
+    ],
+    "six_breaker_augmented_rank": 10,
+    "six_breaker_generator_rank": 9,
+    "status": "passes"
+  },
+  "status": "conductor_residue_uncertified"
+}

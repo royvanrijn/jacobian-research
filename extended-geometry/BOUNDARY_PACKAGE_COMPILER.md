@@ -54,6 +54,13 @@ Its first benchmark suite establishes the following computational facts.
     certify invariance of the conductor matching cokernel and distinguished
     residue class.  Short or incomplete data remain non-obstructing
     `insufficient` or `uncertified` rows.
+11. An optional colored-fan front end compiles masks, target pullbacks,
+    derivative and conductor divisors, boundary colors, unit lattices, class
+    groups, and bounded affine-modification choices into one valuation
+    matrix.  It exactly replays the \(A_4\), \(D_5\), and Davenport ledgers,
+    including both exceptional \(D_5\) rows.  Its feasible output carries an
+    explicit nonlinear residue and never asserts affine completion.  See
+    [`TOROIDAL_BOUNDARY_FEASIBILITY.md`](TOROIDAL_BOUNDARY_FEASIBILITY.md).
 
 Passing has status `unknown`, never `realized`.  The four surviving packages
 still need a root equation, reconstruction functions, and a proof that the
@@ -81,9 +88,45 @@ prime of a threefold normalization.
 
 ## 2. Package schema
 
-The current `BoundaryPackage` has six stage-one proof blocks; the
-retained-root block is optional.  A separate optional stage-two block carries
-realization references.
+The current `BoundaryPackage` has the original stage-one proof blocks plus
+optional retained-root, conductor-jet, and toroidal blocks.  A separate
+optional stage-two block carries realization references.
+
+### Toroidal feasibility
+
+`ToroidalBoundaryDatum` records a certified fan skeleton, boundary colors
+carried by its rays, and a valuation matrix with one row per color.  Fixed
+divisor identities are checked coefficientwise.  A
+`ColoredDivisorSpanProblem` asks whether a target colored divisor lies in the
+integral column span of named generator functions.  The compiler computes
+the rational-span rank jump, the exact order of the target class in the
+cokernel, and primitive proportional-row witnesses.  A nonzero witness
+
+\[
+ b\tau_i-a\tau_j
+ \quad\text{when}\quad A_i=a p,\ A_j=b p
+\]
+
+rules out rational, integral, and nonnegative generator exponents at once;
+this is an unbounded obstruction, not a box search.  It is theorem-bearing
+only when the input marks the declared generator architecture exhaustive and
+supplies its scope certificate.  See
+[`COLORED_DIVISOR_SPAN_OBSTRUCTION.md`](COLORED_DIVISOR_SPAN_OBSTRUCTION.md).
+
+Separately, bounded integral variables can encode modification exponents,
+deletion choices, or support-function inequalities; the compiler enumerates
+the declared box exactly and returns its Pareto-minimal models.  An empty
+bounded problem is an obstruction only when its input marks the search
+conclusive and supplies an exhaustive-scope certificate.  Such a search can
+serve as a regression for a span obstruction, but it cannot replace the
+unbounded theorem.
+
+Selected submatrices use the existing Smith implementation for unit and
+class-group screens.  Primitive rays and smooth cones are checked, while the
+fan-incidence certificate remains theorem-bearing input.  Outside a
+separately certified normal affine toric model, trivial units and class group
+are necessary rather than sufficient for affine space.  Every feasible audit
+therefore carries its unresolved nonlinear residue forward.
 
 ### Cover data
 

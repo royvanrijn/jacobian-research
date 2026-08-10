@@ -1,0 +1,3372 @@
+{
+  "attachment_slots": [
+    {
+      "forces_new_interior_branch": false,
+      "name": "endpoint_s=0",
+      "residue_different": 0,
+      "source_location": "toric endpoint s=0",
+      "tangential_index": 1,
+      "target_location": "target node h=0"
+    },
+    {
+      "forces_new_interior_branch": false,
+      "name": "endpoint_s=infinity",
+      "residue_different": 2,
+      "source_location": "toric endpoint s=infinity",
+      "tangential_index": 3,
+      "target_location": "smooth target point h=125/729"
+    },
+    {
+      "forces_new_interior_branch": true,
+      "name": "interior_s=-1",
+      "residue_different": 4,
+      "source_location": "interior point s=-1",
+      "tangential_index": 5,
+      "target_location": "target node h=0"
+    },
+    {
+      "forces_new_interior_branch": true,
+      "name": "interior_denominator_root_1",
+      "residue_different": 2,
+      "source_location": "first root of 9*s^2+15*s+5",
+      "tangential_index": 3,
+      "target_location": "target node h=infinity"
+    },
+    {
+      "forces_new_interior_branch": true,
+      "name": "interior_denominator_root_2",
+      "residue_different": 2,
+      "source_location": "second root of 9*s^2+15*s+5",
+      "tangential_index": 3,
+      "target_location": "target node h=infinity"
+    }
+  ],
+  "attachment_summary": {
+    "new_interior_branch_count_per_packet": 3,
+    "node_h=0": [
+      "endpoint_s=0",
+      "interior_s=-1"
+    ],
+    "node_h=infinity": [
+      "interior_denominator_root_1",
+      "interior_denominator_root_2"
+    ],
+    "smooth_h=125/729": [
+      "endpoint_s=infinity"
+    ],
+    "terminal_valency_lower_bound": 5,
+    "toric_endpoint_neighbor_count_per_packet": 2
+  },
+  "candidate_mode": {
+    "behavior": "audit a supplied global completion against the source-tree, class/unit/canonical, finite-normalization, purity, spectator, and meridian gates",
+    "command": ".venv/bin/python plane-jc/cas/verify_f2_75_125_global_attachment.py --candidate FILE.json"
+  },
+  "cases": [
+    {
+      "case": "squarefree_one_packet",
+      "geometric_degree_floor": 6,
+      "minimal_source_principal_boundary": {
+        "attachment_neighbors": {
+          "packet_1": {
+            "endpoint_s=0": "packet_1_arm_5",
+            "endpoint_s=infinity": "packet_1_arm_3",
+            "interior_denominator_root_1": "packet_1_attachment_2",
+            "interior_denominator_root_2": "packet_1_attachment_3",
+            "interior_s=-1": "packet_1_attachment_1"
+          }
+        },
+        "canonical_coefficients_in_component_order": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -2,
+          -3,
+          -4,
+          -3,
+          -6,
+          -9,
+          -4,
+          -2,
+          -8,
+          -8,
+          -8
+        ],
+        "carrier_component": "carrier_chain_4",
+        "carrier_valency": 3,
+        "case": "squarefree_one_packet",
+        "component_count": 16,
+        "component_order": [
+          "carrier_chain_0",
+          "carrier_chain_1",
+          "carrier_chain_2",
+          "carrier_chain_3",
+          "carrier_chain_4",
+          "carrier_chain_5",
+          "carrier_chain_6",
+          "packet_1_arm_1",
+          "packet_1_arm_2",
+          "packet_1_arm_3",
+          "packet_1_arm_4",
+          "packet_1_arm_5",
+          "packet_1_arm_6",
+          "packet_1_attachment_1",
+          "packet_1_attachment_2",
+          "packet_1_attachment_3"
+        ],
+        "edges": [
+          [
+            "carrier_chain_0",
+            "carrier_chain_1"
+          ],
+          [
+            "carrier_chain_1",
+            "carrier_chain_2"
+          ],
+          [
+            "carrier_chain_2",
+            "carrier_chain_3"
+          ],
+          [
+            "carrier_chain_3",
+            "carrier_chain_4"
+          ],
+          [
+            "carrier_chain_4",
+            "carrier_chain_5"
+          ],
+          [
+            "carrier_chain_5",
+            "carrier_chain_6"
+          ],
+          [
+            "carrier_chain_4",
+            "packet_1_arm_1"
+          ],
+          [
+            "packet_1_arm_1",
+            "packet_1_arm_2"
+          ],
+          [
+            "packet_1_arm_2",
+            "packet_1_arm_3"
+          ],
+          [
+            "packet_1_arm_3",
+            "packet_1_arm_4"
+          ],
+          [
+            "packet_1_arm_4",
+            "packet_1_arm_5"
+          ],
+          [
+            "packet_1_arm_5",
+            "packet_1_arm_6"
+          ],
+          [
+            "packet_1_arm_4",
+            "packet_1_attachment_1"
+          ],
+          [
+            "packet_1_arm_4",
+            "packet_1_attachment_2"
+          ],
+          [
+            "packet_1_arm_4",
+            "packet_1_attachment_3"
+          ]
+        ],
+        "intersection_determinant": -1,
+        "intersection_inertia_positive_negative_zero": [
+          1,
+          15,
+          0
+        ],
+        "intersection_matrix": [
+          [
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            -2,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            -6,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -4,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -4,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -3,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            -1
+          ]
+        ],
+        "leaf_count": 6,
+        "packet_centers_on_carrier_v": {
+          "packet_1": "1"
+        },
+        "self_intersections_in_component_order": [
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -6,
+          0,
+          -2,
+          -4,
+          -2,
+          -4,
+          -3,
+          -2,
+          -1,
+          -1,
+          -1
+        ],
+        "terminal_components": [
+          "packet_1_arm_4"
+        ],
+        "terminal_valencies": [
+          5
+        ],
+        "unresolved_additions": [
+          "two spectator branches at v=rho_1,rho_2",
+          "purity/other map-resolution branches"
+        ]
+      },
+      "packet_placement": "one terminal target component",
+      "principal_packet_count": 1,
+      "purity_obligation": {
+        "does_not_raise_current_degree_floor": true,
+        "required_elsewhere": "a separate row over an affine nonproperness curve with e>1, together with its positive affine companion",
+        "terminal_rows_have_transverse_different": 0
+      },
+      "simple_R_spectator_orbit_count": 2,
+      "source_topology": {
+        "minimum_source_boundary_components": 16,
+        "minimum_source_boundary_leaves": 6,
+        "proof": "six blowups extract the shared (-5,1) carrier; each principal center contributes a six-blowup (5,12) arm and three interior attachment blowups; the leaf count follows from the compiled tree",
+        "terminal_vertex_valency_lower_bound": 5
+      },
+      "status": "global_completion_input_required",
+      "target_component_equations": [
+        {
+          "equation": "d=6+rho_T",
+          "known_boundary_rows": [
+            [
+              1,
+              6
+            ]
+          ],
+          "known_contribution": 6,
+          "remainder_constraint": "rho_T>=0",
+          "target_component": "T_terminal"
+        }
+      ]
+    },
+    {
+      "case": "double_same_target",
+      "geometric_degree_floor": 12,
+      "minimal_source_principal_boundary": {
+        "attachment_neighbors": {
+          "packet_1": {
+            "endpoint_s=0": "packet_1_arm_5",
+            "endpoint_s=infinity": "packet_1_arm_3",
+            "interior_denominator_root_1": "packet_1_attachment_2",
+            "interior_denominator_root_2": "packet_1_attachment_3",
+            "interior_s=-1": "packet_1_attachment_1"
+          },
+          "packet_2": {
+            "endpoint_s=0": "packet_2_arm_5",
+            "endpoint_s=infinity": "packet_2_arm_3",
+            "interior_denominator_root_1": "packet_2_attachment_2",
+            "interior_denominator_root_2": "packet_2_attachment_3",
+            "interior_s=-1": "packet_2_attachment_1"
+          }
+        },
+        "canonical_coefficients_in_component_order": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -2,
+          -3,
+          -4,
+          -3,
+          -6,
+          -9,
+          -4,
+          -2,
+          -8,
+          -8,
+          -8,
+          -4,
+          -3,
+          -6,
+          -9,
+          -4,
+          -2,
+          -8,
+          -8,
+          -8
+        ],
+        "carrier_component": "carrier_chain_4",
+        "carrier_valency": 4,
+        "case": "double_same_target",
+        "component_count": 25,
+        "component_order": [
+          "carrier_chain_0",
+          "carrier_chain_1",
+          "carrier_chain_2",
+          "carrier_chain_3",
+          "carrier_chain_4",
+          "carrier_chain_5",
+          "carrier_chain_6",
+          "packet_1_arm_1",
+          "packet_1_arm_2",
+          "packet_1_arm_3",
+          "packet_1_arm_4",
+          "packet_1_arm_5",
+          "packet_1_arm_6",
+          "packet_1_attachment_1",
+          "packet_1_attachment_2",
+          "packet_1_attachment_3",
+          "packet_2_arm_1",
+          "packet_2_arm_2",
+          "packet_2_arm_3",
+          "packet_2_arm_4",
+          "packet_2_arm_5",
+          "packet_2_arm_6",
+          "packet_2_attachment_1",
+          "packet_2_attachment_2",
+          "packet_2_attachment_3"
+        ],
+        "edges": [
+          [
+            "carrier_chain_0",
+            "carrier_chain_1"
+          ],
+          [
+            "carrier_chain_1",
+            "carrier_chain_2"
+          ],
+          [
+            "carrier_chain_2",
+            "carrier_chain_3"
+          ],
+          [
+            "carrier_chain_3",
+            "carrier_chain_4"
+          ],
+          [
+            "carrier_chain_4",
+            "carrier_chain_5"
+          ],
+          [
+            "carrier_chain_5",
+            "carrier_chain_6"
+          ],
+          [
+            "carrier_chain_4",
+            "packet_1_arm_1"
+          ],
+          [
+            "packet_1_arm_1",
+            "packet_1_arm_2"
+          ],
+          [
+            "packet_1_arm_2",
+            "packet_1_arm_3"
+          ],
+          [
+            "packet_1_arm_3",
+            "packet_1_arm_4"
+          ],
+          [
+            "packet_1_arm_4",
+            "packet_1_arm_5"
+          ],
+          [
+            "packet_1_arm_5",
+            "packet_1_arm_6"
+          ],
+          [
+            "packet_1_arm_4",
+            "packet_1_attachment_1"
+          ],
+          [
+            "packet_1_arm_4",
+            "packet_1_attachment_2"
+          ],
+          [
+            "packet_1_arm_4",
+            "packet_1_attachment_3"
+          ],
+          [
+            "carrier_chain_4",
+            "packet_2_arm_1"
+          ],
+          [
+            "packet_2_arm_1",
+            "packet_2_arm_2"
+          ],
+          [
+            "packet_2_arm_2",
+            "packet_2_arm_3"
+          ],
+          [
+            "packet_2_arm_3",
+            "packet_2_arm_4"
+          ],
+          [
+            "packet_2_arm_4",
+            "packet_2_arm_5"
+          ],
+          [
+            "packet_2_arm_5",
+            "packet_2_arm_6"
+          ],
+          [
+            "packet_2_arm_4",
+            "packet_2_attachment_1"
+          ],
+          [
+            "packet_2_arm_4",
+            "packet_2_attachment_2"
+          ],
+          [
+            "packet_2_arm_4",
+            "packet_2_attachment_3"
+          ]
+        ],
+        "intersection_determinant": 1,
+        "intersection_inertia_positive_negative_zero": [
+          1,
+          24,
+          0
+        ],
+        "intersection_matrix": [
+          [
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            -3,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            -6,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -4,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -4,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -4,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -4,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -3,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            -1
+          ]
+        ],
+        "leaf_count": 10,
+        "packet_centers_on_carrier_v": {
+          "packet_1": "1",
+          "packet_2": "rho_double"
+        },
+        "self_intersections_in_component_order": [
+          -2,
+          -2,
+          -2,
+          -2,
+          -3,
+          -6,
+          0,
+          -2,
+          -4,
+          -2,
+          -4,
+          -3,
+          -2,
+          -1,
+          -1,
+          -1,
+          -2,
+          -4,
+          -2,
+          -4,
+          -3,
+          -2,
+          -1,
+          -1,
+          -1
+        ],
+        "terminal_components": [
+          "packet_1_arm_4",
+          "packet_2_arm_4"
+        ],
+        "terminal_valencies": [
+          5,
+          5
+        ],
+        "unresolved_additions": [
+          "purity/other map-resolution branches"
+        ]
+      },
+      "packet_placement": "two distinct source valuations over one target divisor",
+      "principal_packet_count": 2,
+      "purity_obligation": {
+        "does_not_raise_current_degree_floor": true,
+        "required_elsewhere": "a separate row over an affine nonproperness curve with e>1, together with its positive affine companion",
+        "terminal_rows_have_transverse_different": 0
+      },
+      "simple_R_spectator_orbit_count": 0,
+      "source_topology": {
+        "minimum_source_boundary_components": 25,
+        "minimum_source_boundary_leaves": 10,
+        "proof": "six blowups extract the shared (-5,1) carrier; each principal center contributes a six-blowup (5,12) arm and three interior attachment blowups; the leaf count follows from the compiled tree",
+        "terminal_vertex_valency_lower_bound": 5
+      },
+      "status": "global_completion_input_required",
+      "target_component_equations": [
+        {
+          "equation": "d=12+rho_T",
+          "known_boundary_rows": [
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          "known_contribution": 12,
+          "remainder_constraint": "rho_T>=0",
+          "target_component": "T_terminal"
+        }
+      ]
+    },
+    {
+      "case": "double_distinct_targets",
+      "exclusion_reason": "both packets have global target orders (a,b)=(5,2), uniformizer b^3/a, and nonconstant residue a^2/b^5; both therefore dominate the same extracted target divisor",
+      "geometric_degree_floor": 12,
+      "minimal_source_principal_boundary": {
+        "attachment_neighbors": {
+          "packet_1": {
+            "endpoint_s=0": "packet_1_arm_5",
+            "endpoint_s=infinity": "packet_1_arm_3",
+            "interior_denominator_root_1": "packet_1_attachment_2",
+            "interior_denominator_root_2": "packet_1_attachment_3",
+            "interior_s=-1": "packet_1_attachment_1"
+          },
+          "packet_2": {
+            "endpoint_s=0": "packet_2_arm_5",
+            "endpoint_s=infinity": "packet_2_arm_3",
+            "interior_denominator_root_1": "packet_2_attachment_2",
+            "interior_denominator_root_2": "packet_2_attachment_3",
+            "interior_s=-1": "packet_2_attachment_1"
+          }
+        },
+        "canonical_coefficients_in_component_order": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -2,
+          -3,
+          -4,
+          -3,
+          -6,
+          -9,
+          -4,
+          -2,
+          -8,
+          -8,
+          -8,
+          -4,
+          -3,
+          -6,
+          -9,
+          -4,
+          -2,
+          -8,
+          -8,
+          -8
+        ],
+        "carrier_component": "carrier_chain_4",
+        "carrier_valency": 4,
+        "case": "double_distinct_targets",
+        "component_count": 25,
+        "component_order": [
+          "carrier_chain_0",
+          "carrier_chain_1",
+          "carrier_chain_2",
+          "carrier_chain_3",
+          "carrier_chain_4",
+          "carrier_chain_5",
+          "carrier_chain_6",
+          "packet_1_arm_1",
+          "packet_1_arm_2",
+          "packet_1_arm_3",
+          "packet_1_arm_4",
+          "packet_1_arm_5",
+          "packet_1_arm_6",
+          "packet_1_attachment_1",
+          "packet_1_attachment_2",
+          "packet_1_attachment_3",
+          "packet_2_arm_1",
+          "packet_2_arm_2",
+          "packet_2_arm_3",
+          "packet_2_arm_4",
+          "packet_2_arm_5",
+          "packet_2_arm_6",
+          "packet_2_attachment_1",
+          "packet_2_attachment_2",
+          "packet_2_attachment_3"
+        ],
+        "edges": [
+          [
+            "carrier_chain_0",
+            "carrier_chain_1"
+          ],
+          [
+            "carrier_chain_1",
+            "carrier_chain_2"
+          ],
+          [
+            "carrier_chain_2",
+            "carrier_chain_3"
+          ],
+          [
+            "carrier_chain_3",
+            "carrier_chain_4"
+          ],
+          [
+            "carrier_chain_4",
+            "carrier_chain_5"
+          ],
+          [
+            "carrier_chain_5",
+            "carrier_chain_6"
+          ],
+          [
+            "carrier_chain_4",
+            "packet_1_arm_1"
+          ],
+          [
+            "packet_1_arm_1",
+            "packet_1_arm_2"
+          ],
+          [
+            "packet_1_arm_2",
+            "packet_1_arm_3"
+          ],
+          [
+            "packet_1_arm_3",
+            "packet_1_arm_4"
+          ],
+          [
+            "packet_1_arm_4",
+            "packet_1_arm_5"
+          ],
+          [
+            "packet_1_arm_5",
+            "packet_1_arm_6"
+          ],
+          [
+            "packet_1_arm_4",
+            "packet_1_attachment_1"
+          ],
+          [
+            "packet_1_arm_4",
+            "packet_1_attachment_2"
+          ],
+          [
+            "packet_1_arm_4",
+            "packet_1_attachment_3"
+          ],
+          [
+            "carrier_chain_4",
+            "packet_2_arm_1"
+          ],
+          [
+            "packet_2_arm_1",
+            "packet_2_arm_2"
+          ],
+          [
+            "packet_2_arm_2",
+            "packet_2_arm_3"
+          ],
+          [
+            "packet_2_arm_3",
+            "packet_2_arm_4"
+          ],
+          [
+            "packet_2_arm_4",
+            "packet_2_arm_5"
+          ],
+          [
+            "packet_2_arm_5",
+            "packet_2_arm_6"
+          ],
+          [
+            "packet_2_arm_4",
+            "packet_2_attachment_1"
+          ],
+          [
+            "packet_2_arm_4",
+            "packet_2_attachment_2"
+          ],
+          [
+            "packet_2_arm_4",
+            "packet_2_attachment_3"
+          ]
+        ],
+        "intersection_determinant": 1,
+        "intersection_inertia_positive_negative_zero": [
+          1,
+          24,
+          0
+        ],
+        "intersection_matrix": [
+          [
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            -3,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            -6,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -4,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -4,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -4,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -4,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -3,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            -1
+          ]
+        ],
+        "leaf_count": 10,
+        "packet_centers_on_carrier_v": {
+          "packet_1": "1",
+          "packet_2": "rho_double"
+        },
+        "self_intersections_in_component_order": [
+          -2,
+          -2,
+          -2,
+          -2,
+          -3,
+          -6,
+          0,
+          -2,
+          -4,
+          -2,
+          -4,
+          -3,
+          -2,
+          -1,
+          -1,
+          -1,
+          -2,
+          -4,
+          -2,
+          -4,
+          -3,
+          -2,
+          -1,
+          -1,
+          -1
+        ],
+        "terminal_components": [
+          "packet_1_arm_4",
+          "packet_2_arm_4"
+        ],
+        "terminal_valencies": [
+          5,
+          5
+        ],
+        "unresolved_additions": [
+          "purity/other map-resolution branches"
+        ]
+      },
+      "packet_placement": "one source valuation over each of two target divisors",
+      "principal_packet_count": 2,
+      "purity_obligation": {
+        "does_not_raise_current_degree_floor": true,
+        "required_elsewhere": "a separate row over an affine nonproperness curve with e>1, together with its positive affine companion",
+        "terminal_rows_have_transverse_different": 0
+      },
+      "simple_R_spectator_orbit_count": 0,
+      "source_topology": {
+        "minimum_source_boundary_components": 25,
+        "minimum_source_boundary_leaves": 10,
+        "proof": "six blowups extract the shared (-5,1) carrier; each principal center contributes a six-blowup (5,12) arm and three interior attachment blowups; the leaf count follows from the compiled tree",
+        "terminal_vertex_valency_lower_bound": 5
+      },
+      "status": "excluded_by_target_valuation_uniqueness",
+      "target_component_equations": [
+        {
+          "equation": "d=6+rho_1",
+          "known_boundary_rows": [
+            [
+              1,
+              6
+            ]
+          ],
+          "known_contribution": 6,
+          "remainder_constraint": "rho_1>=0",
+          "target_component": "T_terminal_1"
+        },
+        {
+          "equation": "d=6+rho_2",
+          "known_boundary_rows": [
+            [
+              1,
+              6
+            ]
+          ],
+          "known_contribution": 6,
+          "remainder_constraint": "rho_2>=0 and rho_1=rho_2",
+          "target_component": "T_terminal_2"
+        }
+      ]
+    }
+  ],
+  "certified_input": {
+    "geometric_monodromy": "A6",
+    "original_source_valuation_orders_x_y_v_minus_center": [
+      -25,
+      5,
+      12
+    ],
+    "passport": [
+      [
+        5,
+        1
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        1,
+        1,
+        1
+      ]
+    ],
+    "residue_degree": 6,
+    "residue_map": "125*s*(s+1)^5/(9*s^2+15*s+5)^3",
+    "source_pole_orders_P_Q": [
+      3,
+      5
+    ],
+    "source_ray": [
+      12,
+      -17
+    ],
+    "source_ray_coordinates": [
+      "t=X*y_translated",
+      "z=y_translated^-1"
+    ],
+    "target_fixed_deck_group": "trivial",
+    "target_ray": [
+      5,
+      2
+    ],
+    "transverse_index": 1
+  },
+  "global_result": {
+    "new_exact_gates": [
+      "the translated terminal chart restricts to the original nonmonomial valuation nu(x),nu(y_old),nu(x*y_old^5-center)=(-25,5,12)",
+      "six blowups extract the shared carrier ray (-5,1), and six further blowups at each marked carrier center extract a principal terminal arm",
+      "the target ray (5,2) is extracted by four blowups and gives the unimodular boundary chain (-2,-2,-1,-3,-2)",
+      "one terminal packet forces a 16-component, 6-leaf minimal principal boundary; two packets sharing the carrier force 25 components and 10 leaves",
+      "squarefree spectator centers are the two simple R roots on the carrier; the double R root is the second principal center",
+      "both double-root packets restrict to the unique target divisor (5,2), excluding the distinct-target case and forcing d>=12",
+      "a declared complete A2 source boundary must have a unimodular intersection matrix and integral adjunction solution"
+    ],
+    "not_resolved": [
+      "additional source blowups required by spectators, purity, or other map-resolution rows beyond the compiled minimal principal graph",
+      "the two squarefree simple-R spectator orbit profiles",
+      "the purity-forced affine ramification row",
+      "the global sheet degree and global meridian systems"
+    ],
+    "verdict": "(75,125) remains unexcluded"
+  },
+  "ledger_contract": {
+    "canonical": {
+      "candidate_gate": "the solved canonical coefficient vector is integral",
+      "equation": "M*kappa=(-2-E_i^2)_i for rational boundary components",
+      "required_input": "all source self-intersections and genera"
+    },
+    "class_group_and_units": {
+      "candidate_gate": "for a declared complete smooth A2 boundary, its component classes form the Picard basis and the intersection matrix must be unimodular",
+      "forced_affine_output": "Cl(A2)=0 and O(A2)^*=k^*",
+      "required_input": "the complete source boundary intersection/valuation matrix; a partial local fan cannot certify either exact sequence"
+    },
+    "finite_normalization": {
+      "already_compiled": "the three symbolic target-component equations in cases[]",
+      "required_input": [
+        "one common geometric field degree d",
+        "an exhaustive boundary/affine pullback ledger over every target curve used",
+        "finite-flatness and source-to-target transfer certificates for every ledger",
+        "certified placement of each principal packet and spectator orbit"
+      ]
+    },
+    "global_meridians": {
+      "already_certified": "the local A6 triple has passport (5,1)|(3,3)|(3,1,1,1) and product one",
+      "hard_gates": [
+        "every listed permutation has the declared degree",
+        "the ordered product is the identity",
+        "the generated action is transitive for a connected cover",
+        "one product-one meridian system is supplied for every target ledger"
+      ],
+      "required_input": "global sheet degree and every additional branch cycle on each compact target component"
+    },
+    "refusal": "without these declarations the compiler reports incomplete; it does not promote cover contacts to ramification rows or infer a global completion from the local toric fan",
+    "source_boundary": {
+      "hard_gates": [
+        "the dual graph is a connected tree",
+        "each terminal component has valency at least five",
+        "the complete boundary intersection matrix has determinant plus or minus one",
+        "the intersection form has Hodge inertia (1,n-1,0)"
+      ],
+      "required": [
+        "a complete geometric SNC boundary component list",
+        "the dual-tree edges and every self-intersection",
+        "one terminal-component label for each principal packet",
+        "the original orders nu(x),nu(y_old),nu(x*y_old^5-center)=(-25,5,12) and the carrier center for every terminal component",
+        "a certified translated/Kummer identification and complete proximity chain for every terminal component",
+        "five distinct neighboring components for each terminal packet, indexed by the compiled slots"
+      ]
+    },
+    "spectators": {
+      "missing_for_each": [
+        "target component and target branch value",
+        "residue degree and transverse index",
+        "actual inertia permutation on global sheets",
+        "node/endpoint incidence and Kummer-torsor identification"
+      ],
+      "squarefree_required_count": 2
+    }
+  },
+  "reproduction_command": ".venv/bin/python plane-jc/cas/verify_f2_75_125_global_attachment.py",
+  "schema": "plane-jc.f2-75-125-global-attachment.v1",
+  "software": {
+    "python": "standard library"
+  },
+  "source_original_proximity_resolution": {
+    "carrier_center_coordinate": "v=x*y_old^5",
+    "cofactor_centers": {
+      "double_root": "the nonzero double root rho != 1 marks a second principal center v=rho with the same local (5,12) arm",
+      "squarefree": "the two simple roots rho_1,rho_2 of R mark two distinct spectator points v=rho_i on the carrier"
+    },
+    "exact_consequence": "six blowups extract the carrier ray (-5,1), and six further blowups at v=1 extract the terminal valuation with nu(x),nu(y_old),nu(v-1)=(-25,5,12)",
+    "fixed_principal_center": "v=1",
+    "monomial_carrier_ray": [
+      -5,
+      1
+    ],
+    "orders_on_kummer_chart": {
+      "X": -5,
+      "t": 12,
+      "y_translated": 17,
+      "z": -17
+    },
+    "orders_on_original_source": {
+      "v_minus_1_where_v=x*y_old^5": 12,
+      "x": -25,
+      "y_old": 5
+    },
+    "principal_arm_fan": {
+      "ambient_basis": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "boundary_component_ambient_rays": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "boundary_component_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "boundary_intersection_determinant": 1,
+      "boundary_intersection_inertia_positive_negative_zero": [
+        1,
+        6,
+        0
+      ],
+      "boundary_intersection_matrix": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          -2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -4,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          -2,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          -3,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -2
+        ]
+      ],
+      "boundary_self_intersections": [
+        0,
+        -2,
+        -4,
+        -2,
+        -1,
+        -3,
+        -2
+      ],
+      "canonical_coefficients": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "insertion_order_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          12
+        ]
+      ],
+      "ordered_fan_ambient_rays": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "ordered_fan_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "target_ambient_ray": [
+        5,
+        12
+      ],
+      "target_boundary_component_index": 4,
+      "target_coordinates_in_basis": [
+        5,
+        12
+      ],
+      "target_self_intersection": -1
+    },
+    "principal_center_local_coordinates": [
+      "q=y_old (carrier transverse)",
+      "r=v-center (carrier tangential)"
+    ],
+    "principal_center_local_orders_q_r": [
+      5,
+      12
+    ],
+    "standard_P2_carrier_fan": {
+      "ambient_basis": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "boundary_component_ambient_rays": [
+        [
+          -1,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          -4,
+          1
+        ],
+        [
+          -5,
+          1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "boundary_component_coordinates": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "boundary_intersection_determinant": 1,
+      "boundary_intersection_inertia_positive_negative_zero": [
+        1,
+        6,
+        0
+      ],
+      "boundary_intersection_matrix": [
+        [
+          -2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          -2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -2,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          -2,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          -6,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "boundary_self_intersections": [
+        -2,
+        -2,
+        -2,
+        -2,
+        -1,
+        -6,
+        0
+      ],
+      "canonical_coefficients": [
+        -1,
+        -2,
+        -3,
+        -4,
+        -5,
+        -2,
+        -3
+      ],
+      "insertion_order_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "ordered_fan_ambient_rays": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -2,
+          1
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          -4,
+          1
+        ],
+        [
+          -5,
+          1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "ordered_fan_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "target_ambient_ray": [
+        -5,
+        1
+      ],
+      "target_boundary_component_index": 4,
+      "target_coordinates_in_basis": [
+        6,
+        5
+      ],
+      "target_self_intersection": -1
+    },
+    "terminal_chart_coordinates": {
+      "t": "X*y_translated=X*y_old-1",
+      "y_translated": "y_old-X^-1",
+      "z": "y_translated^-1=X/t"
+    },
+    "terminal_endpoint_orientation": {
+      "s=0": "adjacent local ray (2,5)",
+      "s=infinity": "adjacent local ray (3,7)"
+    },
+    "terminal_residue_initial_monomial": "s_terminal=unit*r^5/q^12; its orders on adjacent rays (3,7),(2,5) are -1,+1",
+    "value_group_gcd": 1
+  },
+  "status": "exact-obligation-compiler-global-completion-still-missing",
+  "target_local_fan": {
+    "adjacent_determinants": [
+      1,
+      1
+    ],
+    "eta_orders_on_left_terminal_right": [
+      1,
+      0,
+      -1
+    ],
+    "node_orientation": {
+      "h=0": "intersection of rays (5,2) and (2,1)",
+      "h=infinity": "intersection of rays (3,1) and (5,2)"
+    },
+    "ray_relation": "(3,1)+(2,1)=(5,2)",
+    "regular_fan_rays_left_terminal_right": [
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "residue_coordinate": "eta=a^2/b^5",
+    "residue_map": "h=eta^-1",
+    "terminal_self_intersection_in_this_local_fan": -1,
+    "warning": "the self-intersection is local-fan data before any further global blowups at the marked attachment points"
+  },
+  "target_minimal_completion": {
+    "exact_consequence": "four point blowups extract (5,2); together with the transformed line at infinity the target boundary chain has weights (-2,-2,-1,-3,-2), determinant one, and integral canonical coefficients (-3,-6,-9,-4,-2)",
+    "fan": {
+      "ambient_basis": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "boundary_component_ambient_rays": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "boundary_component_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "boundary_intersection_determinant": 1,
+      "boundary_intersection_inertia_positive_negative_zero": [
+        1,
+        4,
+        0
+      ],
+      "boundary_intersection_matrix": [
+        [
+          -2,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          -2,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          -3,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          -2
+        ]
+      ],
+      "boundary_self_intersections": [
+        -2,
+        -2,
+        -1,
+        -3,
+        -2
+      ],
+      "canonical_coefficients": [
+        -3,
+        -6,
+        -9,
+        -4,
+        -2
+      ],
+      "insertion_order_coordinates": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "ordered_fan_ambient_rays": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "ordered_fan_coordinates": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "target_ambient_ray": [
+        5,
+        2
+      ],
+      "target_boundary_component_index": 2,
+      "target_coordinates_in_basis": [
+        5,
+        2
+      ],
+      "target_self_intersection": -1
+    },
+    "local_coordinates": [
+      "a=(-Q)^-1",
+      "b=P/(-Q)"
+    ]
+  },
+  "target_valuation_uniqueness": {
+    "conclusion": "every principal source valuation is centered at the generic point of the unique target divisor for ray (5,2)",
+    "double_root_consequence": "the two principal packets necessarily lie over the same target divisor; the distinct-target case is excluded",
+    "global_target_coordinates": {
+      "a": "(-Q)^-1",
+      "b": "P/(-Q)"
+    },
+    "orders_a_b": [
+      5,
+      2
+    ],
+    "residue_coordinate": "eta=a^2/b^5",
+    "residue_coordinate_order": 0,
+    "residue_pullback": "eta^-1=h(s) is nonconstant of degree 6",
+    "uniformizer": "pi=b^3/a",
+    "uniformizer_order": 1
+  }
+}

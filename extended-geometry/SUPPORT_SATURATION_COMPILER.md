@@ -129,8 +129,8 @@ Run all current adapters with:
 .venv/bin/python scripts/compile_support_saturation_cases.py
 ```
 
-or select `--case cubic`, `--case cubic-frontier`, `--case degree42`, or
-`--case plane`.
+or select `--case cubic`, `--case cubic-frontier`,
+`--case cubic-double-strata`, `--case degree42`, or `--case plane`.
 
 The adapters deliberately preserve three different mathematical scopes.
 They share the compiler contract used by the cubic-normalization,
@@ -178,6 +178,63 @@ deformation-dependent cotangent adapters.  For double-line, triple-line,
 and zero symbols the adapter records the prior generically-étale/Keller
 compatibility gate.  This routing artifact is not itself a singular-symbol
 saturation theorem.
+
+### Cubic double-saturation stratification
+
+The `cubic-double-strata` adapter constructs a deterministic complement of
+the degree-four formal-gauge image inside the full 24-dimensional compatible
+quartic tensor space for each singular squarefree symbol.  The exact
+complement dimensions and primitive-basis indices are
+
+\[
+ 2:(0,1),\quad
+ 4:(0,1,2,5),\quad
+ 4:(15,19,20,23),\quad
+ 6:(8,12,15,16,20,21),
+\]
+
+\[
+ 6:(0,1,15,19,20,23),\qquad
+ 8:(0,1,2,3,4,5,6,7).
+\]
+
+For each complete complement family it rebuilds the generalized cubic
+algebra, its relative cotangent presentation, and
+`T=B/Ann_B(Omega)`.  Exact Singular replay proves
+
+\[
+ H^0_{(x,y,z)}(\Omega)=0,
+\]
+
+while `Ext^2(T,A)` has radical equal to the parameter axis, multiplicity
+six, zero `(x,y,z)^2` action, and the same pruned rank-three presentation as
+the central fiber.  The adapter then forms weighted Rees modules for
+`Omega` and for the cokernel of `B -> Omega^3`.  Both relation modules are
+already `t`-saturated and both initial presentations equal their literal
+central presentations.  The resulting parameter flatness commutes the
+cotangent annihilator and intrinsic support module with arbitrary geometric
+base change; cohomology and base change then commutes the constant `Ext^2`
+presentation.  Hence the quartic-model `C2` gate passes and `C1` fails on
+every geometric fiber of all six families.  Reducing the intrinsic
+annihilator by the collision maximal ideal gives the scalar extension of a
+six-dimensional central Nakayama module.  Thus
+
+\[
+ \dim_k\operatorname{Ann}_B(\Omega)/
+ \mathfrak n\operatorname{Ann}_B(\Omega)=6
+\]
+
+on every geometric fiber, and the Kähler different is not Cartier on any
+of these quartic models.  This is not a higher-order formal classification
+or a Keller-compatibility theorem.
+
+Replay the pinned artifact with:
+
+```bash
+make verify-cubic-double-saturation-stratification
+```
+
+<!-- status-consumer: KDSQ6 cd423f625f1f3cd2 -->
 
 ### Degree-42 Ritt synchronization
 
@@ -319,6 +376,36 @@ the Case-1 conductor/residue matching cokernel proposed in
 That module and its distinguished residue class cannot be compiled until
 the omitted lower Newton bands are recovered or a truncation-independence
 lemma is proved.
+
+## Programme gate ledger
+
+The algebra compiler begins only after a finite presentation exists.  The
+checked ledger
+[`SUPPORT_SATURATION_PATHS.json`](../verified/SUPPORT_SATURATION_PATHS.json)
+therefore records the upstream and downstream gates that the Singular output
+cannot certify by itself:
+
+- `G0`: construction of the actual finite obstruction module;
+- `G1`: localized vanishing and conductor-compatible corrections;
+- `G2`: positive relative height of the boundary on that module;
+- `G3`: `S_1` or direct associated-prime avoidance; and
+- `G4`: the saturation conclusion computed by this compiler or deduced from
+  `G2`--`G3`.
+
+The cubic `C0`--`C3`, plane `P0`--`P4`, and restricted-Weyl `W0`--`W5`
+rows are validated with:
+
+```bash
+python3 scripts/verify_support_saturation_paths.py
+```
+
+This check prevents an open upstream gate from being summarized as a proved
+programme closure.  It also records the failure route: retain a support-hull
+defect, a boundary minimal component, an embedded associated prime, a
+non-strict Rees mismatch, or a genuinely localized obstruction according to
+the first failed gate.
+
+<!-- status-consumer: SST1 12c5cb15e8b6de26 -->
 
 ## Fast regression
 

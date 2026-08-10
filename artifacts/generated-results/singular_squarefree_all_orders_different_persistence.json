@@ -1,0 +1,556 @@
+{
+  "case": "seven-complete-formal-squarefree-cubic-slices",
+  "exact_data": {
+    "singular_cases": {
+      "concurrent-lines": {
+        "expected_nakayama_presentation_difference": 0,
+        "gauge_presentation_columns": [
+          [
+            "3*x",
+            "-y",
+            "-z",
+            "0"
+          ],
+          [
+            "0",
+            "2*x",
+            "0",
+            "-2*y + z"
+          ],
+          [
+            "0",
+            "0",
+            "2*x",
+            "y - 2*z"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "x"
+          ]
+        ],
+        "gauge_quotient": {
+          "annihilator_singular_syntax": "x3",
+          "generation_difference": 0,
+          "minimal_generator_count": 4,
+          "presentation_difference": 0
+        },
+        "source_cubics": [
+          "Z**3",
+          "Y*Z**2",
+          "Y**2*Z",
+          "X*Z**2"
+        ],
+        "tensor_components": [
+          [
+            "y**3",
+            "y**2*z",
+            "0",
+            "y*z**2",
+            "0",
+            "0",
+            "z**3",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "x*y**2",
+            "2*x*y*z/3",
+            "-y**2*z/3",
+            "x*z**2/3",
+            "-y*z**2/3",
+            "0",
+            "0",
+            "-z**3/3",
+            "0",
+            "0"
+          ],
+          [
+            "x**2*y",
+            "x**2*z/3",
+            "-2*x*y*z/3",
+            "0",
+            "-x*z**2/3",
+            "y*z**2/3",
+            "0",
+            "0",
+            "z**3/3",
+            "0"
+          ],
+          [
+            "0",
+            "-x*y**2/3",
+            "-y**3/3",
+            "-2*x*y*z/3",
+            "-y**2*z/3",
+            "0",
+            "-x*z**2",
+            "-y*z**2/3",
+            "0",
+            "0"
+          ]
+        ],
+        "universal_coefficient_family": {
+          "cotangent_saturation_generators": 0,
+          "different_generator_central_pruned_presentation_difference": 0,
+          "different_generator_module_dimension": 4,
+          "different_generator_module_multiplicity": 6,
+          "different_generator_parameter_axis_radical_difference": 0,
+          "different_generator_pruned_presentation_rank": 6,
+          "parameter_count": 4,
+          "support_ext2_central_pruned_presentation_difference": 0,
+          "support_ext2_collision_square_action_generators": 0,
+          "support_ext2_dimension": 4,
+          "support_ext2_multiplicity": 6,
+          "support_ext2_parameter_axis_radical_difference": 0,
+          "support_ext2_pruned_presentation_rank": 3,
+          "support_ext3_vector_dimension": 0,
+          "support_module_dimension": 6
+        },
+        "weighted_rees_certificate": {
+          "annihilator_cokernel_initial_presentation_difference": 0,
+          "annihilator_cokernel_rees_torsion_generators": 0,
+          "cotangent_initial_presentation_difference": 0,
+          "cotangent_rees_torsion_generators": 0,
+          "parameter_count": 4
+        }
+      },
+      "cuspidal": {
+        "expected_nakayama_presentation_difference": 0,
+        "gauge_presentation_columns": [
+          [
+            "3*x",
+            "-z"
+          ],
+          [
+            "0",
+            "x"
+          ]
+        ],
+        "gauge_quotient": {
+          "annihilator_singular_syntax": "x2",
+          "generation_difference": 0,
+          "minimal_generator_count": 2,
+          "presentation_difference": 0
+        },
+        "source_cubics": [
+          "Z**3",
+          "X*Z**2"
+        ],
+        "tensor_components": [
+          [
+            "y**3",
+            "y**2*z",
+            "0",
+            "y*z**2",
+            "0",
+            "0",
+            "z**3",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-x*y**2/3",
+            "-y**3/3",
+            "-2*x*y*z/3",
+            "-y**2*z/3",
+            "0",
+            "-x*z**2",
+            "-y*z**2/3",
+            "0",
+            "0"
+          ]
+        ],
+        "universal_coefficient_family": {
+          "cotangent_saturation_generators": 0,
+          "different_generator_central_pruned_presentation_difference": 0,
+          "different_generator_module_dimension": 2,
+          "different_generator_module_multiplicity": 6,
+          "different_generator_parameter_axis_radical_difference": 0,
+          "different_generator_pruned_presentation_rank": 6,
+          "parameter_count": 2,
+          "support_ext2_central_pruned_presentation_difference": 0,
+          "support_ext2_collision_square_action_generators": 0,
+          "support_ext2_dimension": 2,
+          "support_ext2_multiplicity": 6,
+          "support_ext2_parameter_axis_radical_difference": 0,
+          "support_ext2_pruned_presentation_rank": 3,
+          "support_ext3_vector_dimension": 0,
+          "support_module_dimension": 4
+        },
+        "weighted_rees_certificate": {
+          "annihilator_cokernel_initial_presentation_difference": 0,
+          "annihilator_cokernel_rees_torsion_generators": 0,
+          "cotangent_initial_presentation_difference": 0,
+          "cotangent_rees_torsion_generators": 0,
+          "parameter_count": 2
+        }
+      },
+      "line-tangent-conic": {
+        "expected_nakayama_presentation_difference": 0,
+        "gauge_presentation_columns": [
+          [
+            "0",
+            "y",
+            "z"
+          ],
+          [
+            "0",
+            "0",
+            "y"
+          ],
+          [
+            "-6*y",
+            "-2*z",
+            "x"
+          ],
+          [
+            "3*y**2",
+            "0",
+            "-z**2"
+          ]
+        ],
+        "gauge_quotient": {
+          "annihilator_singular_syntax": "y3",
+          "generation_difference": 0,
+          "minimal_generator_count": 3,
+          "presentation_difference": 0
+        },
+        "source_cubics": [
+          "Y**2*Z",
+          "Y**3",
+          "X*Y**2"
+        ],
+        "tensor_components": [
+          [
+            "x**2*y",
+            "x**2*z/3",
+            "-2*x*y*z/3",
+            "0",
+            "-x*z**2/3",
+            "y*z**2/3",
+            "0",
+            "0",
+            "z**3/3",
+            "0"
+          ],
+          [
+            "x**3",
+            "0",
+            "-x**2*z",
+            "0",
+            "0",
+            "x*z**2",
+            "0",
+            "0",
+            "0",
+            "-z**3"
+          ],
+          [
+            "0",
+            "-x**3/3",
+            "-x**2*y/3",
+            "0",
+            "x**2*z/3",
+            "2*x*y*z/3",
+            "0",
+            "0",
+            "-x*z**2/3",
+            "-y*z**2"
+          ]
+        ],
+        "universal_coefficient_family": {
+          "cotangent_saturation_generators": 0,
+          "different_generator_central_pruned_presentation_difference": 0,
+          "different_generator_module_dimension": 3,
+          "different_generator_module_multiplicity": 6,
+          "different_generator_parameter_axis_radical_difference": 0,
+          "different_generator_pruned_presentation_rank": 6,
+          "parameter_count": 3,
+          "support_ext2_central_pruned_presentation_difference": 4,
+          "support_ext2_collision_square_action_generators": 0,
+          "support_ext2_dimension": 3,
+          "support_ext2_multiplicity": 6,
+          "support_ext2_parameter_axis_radical_difference": 0,
+          "support_ext2_pruned_presentation_rank": 3,
+          "support_ext3_vector_dimension": 0,
+          "support_module_dimension": 5
+        },
+        "weighted_rees_certificate": {
+          "annihilator_cokernel_initial_presentation_difference": 0,
+          "annihilator_cokernel_rees_torsion_generators": 0,
+          "cotangent_initial_presentation_difference": 0,
+          "cotangent_rees_torsion_generators": 0,
+          "parameter_count": 3
+        }
+      },
+      "line-transverse-conic": {
+        "expected_nakayama_presentation_difference": 0,
+        "gauge_presentation_columns": [
+          [
+            "0",
+            "z"
+          ],
+          [
+            "y",
+            "0"
+          ]
+        ],
+        "gauge_quotient": {
+          "annihilator_singular_syntax": "yz",
+          "generation_difference": 0,
+          "minimal_generator_count": 2,
+          "presentation_difference": 0
+        },
+        "source_cubics": [
+          "Y**3",
+          "X**3"
+        ],
+        "tensor_components": [
+          [
+            "x**3",
+            "0",
+            "-x**2*z",
+            "0",
+            "0",
+            "x*z**2",
+            "0",
+            "0",
+            "0",
+            "-z**3"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-x**3",
+            "-x**2*y",
+            "-x*y**2",
+            "-y**3"
+          ]
+        ],
+        "universal_coefficient_family": {
+          "cotangent_saturation_generators": 0,
+          "different_generator_central_pruned_presentation_difference": 0,
+          "different_generator_module_dimension": 2,
+          "different_generator_module_multiplicity": 6,
+          "different_generator_parameter_axis_radical_difference": 0,
+          "different_generator_pruned_presentation_rank": 6,
+          "parameter_count": 2,
+          "support_ext2_central_pruned_presentation_difference": 0,
+          "support_ext2_collision_square_action_generators": 0,
+          "support_ext2_dimension": 2,
+          "support_ext2_multiplicity": 6,
+          "support_ext2_parameter_axis_radical_difference": 0,
+          "support_ext2_pruned_presentation_rank": 3,
+          "support_ext3_vector_dimension": 0,
+          "support_module_dimension": 4
+        },
+        "weighted_rees_certificate": {
+          "annihilator_cokernel_initial_presentation_difference": 0,
+          "annihilator_cokernel_rees_torsion_generators": 0,
+          "cotangent_initial_presentation_difference": 0,
+          "cotangent_rees_torsion_generators": 0,
+          "parameter_count": 2
+        }
+      },
+      "nodal": {
+        "expected_nakayama_presentation_difference": 0,
+        "gauge_presentation_columns": [
+          [
+            "x"
+          ]
+        ],
+        "gauge_quotient": {
+          "annihilator_singular_syntax": "x",
+          "generation_difference": 0,
+          "minimal_generator_count": 1,
+          "presentation_difference": 0
+        },
+        "source_cubics": [
+          "Z**3"
+        ],
+        "tensor_components": [
+          [
+            "y**3",
+            "y**2*z",
+            "0",
+            "y*z**2",
+            "0",
+            "0",
+            "z**3",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "universal_coefficient_family": {
+          "cotangent_saturation_generators": 0,
+          "different_generator_central_pruned_presentation_difference": 0,
+          "different_generator_module_dimension": 1,
+          "different_generator_module_multiplicity": 6,
+          "different_generator_parameter_axis_radical_difference": 0,
+          "different_generator_pruned_presentation_rank": 6,
+          "parameter_count": 1,
+          "support_ext2_central_pruned_presentation_difference": 0,
+          "support_ext2_collision_square_action_generators": 0,
+          "support_ext2_dimension": 1,
+          "support_ext2_multiplicity": 6,
+          "support_ext2_parameter_axis_radical_difference": 0,
+          "support_ext2_pruned_presentation_rank": 3,
+          "support_ext3_vector_dimension": 0,
+          "support_module_dimension": 3
+        },
+        "weighted_rees_certificate": {
+          "annihilator_cokernel_initial_presentation_difference": 0,
+          "annihilator_cokernel_rees_torsion_generators": 0,
+          "cotangent_initial_presentation_difference": 0,
+          "cotangent_rees_torsion_generators": 0,
+          "parameter_count": 1
+        }
+      },
+      "triangle": {
+        "expected_nakayama_presentation_difference": 0,
+        "gauge_presentation_columns": [
+          [
+            "0",
+            "0",
+            "z"
+          ],
+          [
+            "0",
+            "y",
+            "0"
+          ],
+          [
+            "x",
+            "0",
+            "0"
+          ]
+        ],
+        "gauge_quotient": {
+          "annihilator_singular_syntax": "xyz",
+          "generation_difference": 0,
+          "minimal_generator_count": 3,
+          "presentation_difference": 0
+        },
+        "source_cubics": [
+          "Z**3",
+          "Y**3",
+          "X**3"
+        ],
+        "tensor_components": [
+          [
+            "y**3",
+            "y**2*z",
+            "0",
+            "y*z**2",
+            "0",
+            "0",
+            "z**3",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "x**3",
+            "0",
+            "-x**2*z",
+            "0",
+            "0",
+            "x*z**2",
+            "0",
+            "0",
+            "0",
+            "-z**3"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-x**3",
+            "-x**2*y",
+            "-x*y**2",
+            "-y**3"
+          ]
+        ],
+        "universal_coefficient_family": {
+          "cotangent_saturation_generators": 0,
+          "different_generator_central_pruned_presentation_difference": 0,
+          "different_generator_module_dimension": 3,
+          "different_generator_module_multiplicity": 6,
+          "different_generator_parameter_axis_radical_difference": 0,
+          "different_generator_pruned_presentation_rank": 6,
+          "parameter_count": 3,
+          "support_ext2_central_pruned_presentation_difference": 0,
+          "support_ext2_collision_square_action_generators": 0,
+          "support_ext2_dimension": 3,
+          "support_ext2_multiplicity": 6,
+          "support_ext2_parameter_axis_radical_difference": 0,
+          "support_ext2_pruned_presentation_rank": 3,
+          "support_ext3_vector_dimension": 0,
+          "support_module_dimension": 5
+        },
+        "weighted_rees_certificate": {
+          "annihilator_cokernel_initial_presentation_difference": 0,
+          "annihilator_cokernel_rees_torsion_generators": 0,
+          "cotangent_initial_presentation_difference": 0,
+          "cotangent_rees_torsion_generators": 0,
+          "parameter_count": 3
+        }
+      }
+    },
+    "smooth_formally_rigid_central": {
+      "cotangent_saturation_generators": 0,
+      "different_dimension": 0,
+      "different_minimal_generators": 6,
+      "different_multiplicity": 6,
+      "support_dimension": 2,
+      "support_ext2_collision_square_action_generators": 0,
+      "support_ext2_top_dimension": 3,
+      "support_ext2_vector_dimension": 6
+    }
+  },
+  "exact_data_sha256": "b85722c088f2b8302d2def85a2409fe2f69fa7a7ae78f486c3d54ac0d437c7c9",
+  "formal_graph_lemma": {
+    "coefficient_counts": {
+      "concurrent-lines": 4,
+      "cuspidal": 2,
+      "line-tangent-conic": 3,
+      "line-transverse-conic": 2,
+      "nodal": 1,
+      "smooth": 0,
+      "triangle": 3
+    },
+    "coefficient_weights": 1,
+    "normal_form": "h+sum_i f_i*eta_i with ord(f_i)>=1",
+    "regular_sequence": "u_1-f_1,...,u_r-f_r",
+    "regularity_reason": "after each preceding graph quotient, the next initial equation is monic in the unused coefficient u_i on a central associated-graded packet polynomial in u_i"
+  },
+  "mathematical_scope": "Exact characteristic-zero theorem for every compatible formal tensor with any squarefree ternary-cubic leading symbol. The smooth row is formally rigid and its central intrinsic different has six generators. In the six singular rows, minimal degree-three generators give a recursive formal normal form sum(f_i*eta_i). On every universal coefficient family the intrinsic different Nakayama module is Q[u_1,...,u_r]^6, and weight-one Rees packets are strict with central associated graded. The graph equations u_i-f_i have successively monic initial forms, so the intrinsic annihilator commutes with every polynomial or formal graph specialization. Every specialized Kahler different is six-generated and non-Cartier. Normality, algebraization of infinite gauges, and Keller-open compatibility are not asserted.",
+  "not_proved": [
+    "normality of the normal-form algebras",
+    "algebraization of arbitrary infinite formal gauges",
+    "existence or compatibility of a Keller open"
+  ],
+  "proved": [
+    "the smooth formally rigid central different has six minimal generators",
+    "the displayed tensors generate each complete graded gauge cokernel",
+    "every compatible higher tail has a recursive multi-coefficient formal normal form",
+    "C2 passes after every polynomial or formal graph specialization",
+    "the intrinsic Kahler different has six minimal generators after every such specialization",
+    "the Kahler different is non-Cartier to all formal orders for every squarefree cubic symbol"
+  ],
+  "reproduce": ".venv/bin/python scripts/verify_singular_squarefree_all_orders_different_persistence.py",
+  "schema": "singular-squarefree-all-orders-different-persistence.v1"
+}
