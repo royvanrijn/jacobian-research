@@ -117,6 +117,7 @@ def validate_index(index: dict) -> None:
         "consumers",
         "invalidates_assumptions",
     )
+    hash_mismatches: list[str] = []
     for item in entries:
         item_id = item.get("id", "?")
         assert REQUIRED_FIELDS <= set(item) <= REQUIRED_FIELDS | OPTIONAL_FIELDS, (
@@ -219,10 +220,19 @@ def validate_index(index: dict) -> None:
             for target in item[field]:
                 assert target in known, f"{item_id}: unresolved {field} target {target}"
                 assert target != item_id, f"{item_id}: self-referential {field} edge"
-        assert (ROOT / item["canonical_source"]).is_file(), (
+        canonical_source = Path(item["canonical_source"])
+        assert not canonical_source.parts or canonical_source.parts[0] != "archive", (
+            f"{item_id}: archived note cannot be a canonical source"
+        )
+        assert (ROOT / canonical_source).is_file(), (
             f"{item_id}: missing canonical source {item['canonical_source']}"
         )
         checker = item["checker"]
+        if checker is not None:
+            checker_path = Path(checker)
+            assert not checker_path.parts or checker_path.parts[0] != "archive", (
+                f"{item_id}: archived script cannot be an active checker"
+            )
         assert checker is None or (ROOT / checker).is_file(), (
             f"{item_id}: missing checker {checker}"
         )
@@ -244,13 +254,17 @@ def validate_index(index: dict) -> None:
             actual_hash = "sha256:" + hashlib.sha256(
                 (ROOT / checker).read_bytes()
             ).hexdigest()
-            assert artifact_hash == actual_hash, (
-                f"{item_id}: stale artifact hash for {checker}"
-            )
+            if artifact_hash != actual_hash:
+                hash_mismatches.append(
+                    f"{item_id}: stale checker-source hash for {checker}; "
+                    f"recorded {artifact_hash}, actual {actual_hash}"
+                )
         for lock in item["software_lock"]:
             assert isinstance(lock, str) and (ROOT / lock).is_file(), (
                 f"{item_id}: missing software lock {lock}"
             )
+
+    assert not hash_mismatches, "\n" + "\n".join(hash_mismatches)
 
     for item in entries:
         item_id = item["id"]
@@ -282,8 +296,11 @@ def validate_index(index: dict) -> None:
                 f"{item_id}: only a proved entry may narrow a problem"
             )
             target = by_id[target_id]
-            assert target["kind"] == "open_problem" and target["state"] == "open", (
-                f"{item_id}: narrowed target {target_id} is not an active problem"
+            assert target["kind"] == "open_problem" and target["state"] in {
+                "open",
+                "parked",
+            }, (
+                f"{item_id}: narrowed target {target_id} is not an unresolved problem"
             )
             assert item_id in target["dependencies"], (
                 f"{item_id}: narrowed problem {target_id} does not consume the result"
@@ -445,8 +462,10 @@ def render(index: dict) -> str:
         "",
         "[`MATH_STATUS.json`](MATH_STATUS.json) is the sole status authority. Canonical "
         "sources contain the proofs; this page records their scope, dependency role, "
-        "proof classification, and separate assurance signals. A checker establishes "
-        "reproducibility, not independent replay, formal verification, or external review. "
+        "proof classification, and separate assurance signals. The `artifact_hash` field "
+        "pins the checker source, not its generated output; output hashes belong in the "
+        "artifact documentation. A checker establishes reproducibility, not independent "
+        "replay, formal verification, or external review. "
         "External review includes identified refereeing by a formal-proof archive as well "
         "as conventional publication review.",
         "",

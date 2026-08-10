@@ -8354,6 +8354,12 @@ obstructions, and external
 Jones--Zvonkin monodromy input are in
 [`extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md`](extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md).
 
+<!-- status-consumer: KAS1 f40f8588d37ade00 -->
+<!-- status-consumer: KAS2 f56459cc921661ea -->
+<!-- status-consumer: KAS3 b95d888270f98c59 -->
+<!-- status-consumer: KAS4 45a513f714702919 -->
+<!-- status-consumer: KAS5 2baa200b6712564f -->
+
 ## Absolute \(D_5\) affine-modification frontier
 
 The degree-five precomputation checks the split derivative and branch
@@ -11942,6 +11948,7 @@ prolongation are replayed by
 ```bash
 .venv/bin/python scripts/verify_hc4_affine_plane_bridge.py
 .venv/bin/python scripts/verify_hc4_affine_plane_prolongation.py
+# or: make verify-hc4-relative-nilpotent-final-packet
 ```
 
 The first command certifies the affine middle foliation and its two transverse
@@ -11956,11 +11963,23 @@ symbolic computation.
 
 ## HC4 direct repeated-linear Hessian-factor gates
 
-Replay the exact all-degree normal-form and boundary-jet identities for
-`HC4-DIR3--27` with
+Replay the direct homogeneous filtration and its all-degree squarefree
+top-Hessian obstruction with
+
+```bash
+.venv/bin/python scripts/verify_hc4_direct_homogeneous_filtration.py
+# or: make verify-hc4-direct-filtration
+```
+
+This regenerates
+`artifacts/generated-results/hc4_direct_homogeneous_filtration.json` and
+checks the determinant-face identities used by `HC4DIR2`.  Then replay the
+exact all-degree normal-form and boundary-jet identities for `HC4-DIR3--27`
+with
 
 ```bash
 .venv/bin/python scripts/verify_hc4_direct_double_linear_hessian_gate.py
+# or: make verify-hc4-direct-repeated-linear
 ```
 
 The command regenerates

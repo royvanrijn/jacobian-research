@@ -1,5 +1,8 @@
 # Degree-six sparse equivariant search
 
+> **Archived bounded search.** The exact exclusions remain scoped to the box
+> below and are not part of the active theorem chain.
+
 ## Result
 
 No new Keller map is claimed here.
@@ -77,8 +80,8 @@ specialization with fewer than its sixteen expanded nonconstant terms.
 Run
 
 ```bash
-.venv/bin/python scripts/search_degree6_sparse_equivariant.py
-.venv/bin/python scripts/search_degree6_sparse_equivariant.py --full-exact
+.venv/bin/python archive/tooling/search_degree6_sparse_equivariant.py
+.venv/bin/python archive/tooling/search_degree6_sparse_equivariant.py --full-exact
 ```
 
 All four `[1]` calculations are characteristic zero.  The first command

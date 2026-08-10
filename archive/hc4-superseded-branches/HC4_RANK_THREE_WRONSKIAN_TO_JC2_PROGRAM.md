@@ -1,5 +1,8 @@
 # Nonlinear Wronskian-to-`JC2` programme for the final `[4]` branch
 
+> **Archived programme.** Its proof obligation was superseded by the completed
+> Wronskian reduction and relative-nilpotent master theorem.
+
 ## Status
 
 This note records the remaining global reduction after `HC4RSD69`.  The local

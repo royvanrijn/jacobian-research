@@ -9,9 +9,9 @@ affine-plane/flatness calculation and the affine-hyperplane pencil argument;
 it does not identify local smooth triangularization with a constant affine
 flag.
 
-Repository-status caveat: the `HC4RSD41--80` continuation is not yet
-registered in `MATH_STATUS.json`.  This document summarizes that proof-note
-chain; it does not itself promote the authoritative status entries.
+The consolidated result is registered as `HC4MR1` in `MATH_STATUS.json`.
+The labels `HC4RSD41--80` below are local proof-map identifiers rather than
+forty additional headline status entries.
 
 Throughout let `K` be a characteristic-zero field and let
 
@@ -34,6 +34,20 @@ Put
 N=S^{-1}T.
 \tag{0.2}
 \]
+
+## Canonical proof map
+
+The master statement consolidates the following active proof notes.  Earlier
+parallel routes with conflicting local identifiers are preserved only in the
+[HC4 archive](archive/hc4-superseded-branches/README.md).
+
+| Stage | Canonical proof notes |
+|---|---|
+| Scalar partitions and all-degree tail closure | [degree eight](HC4_DEGREE_EIGHT_CONSTANT_JORDAN_CLOSURE.md), [degree nine](HC4_DEGREE_NINE_SCALAR_CLOSURE.md), [general scalar patterns](HC4_GENERAL_SCALAR_PATTERNS.md), [tail descent](HC4_MINIMAL_EXCESS_TAIL_DESCENT.md), [two-tail closure](HC4_MINIMAL_EXCESS_TWO_TAIL_CLOSURE.md), [minimal-excess completion](HC4_MINIMAL_EXCESS_COMPLETE.md), and [global developable obstruction](HC4_GLOBAL_SMOOTH_DEVELOPABLE_OBSTRUCTION.md) |
+| Moving nilpotent frames | [constant-metric closure](HC4_CONSTANT_METRIC_MOVING_NILPOTENT_CLOSURE.md) and [homogeneous cone-pencil classification](HC4_HOMOGENEOUS_CONE_PENCIL_CLASSIFICATION.md) |
+| Rank-two Jordan packets | [apex reduction](HC4_RANK_TWO_APEX_REDUCTION.md), [quasi-translation](HC4_RANK_TWO_QUASITRANSLATION.md), [kernel synchronization](HC4_RANK_TWO_KERNEL_SYNCHRONIZATION.md), [complete square-zero closure](HC4_RANK_TWO_COMPLETE_CLOSURE.md), [length-three reduction](HC4_RANK_TWO_LENGTH_THREE_REDUCTION.md), [split metric](HC4_RANK_TWO_LENGTH_THREE_SPLIT_METRIC.md), and [length-three closure](HC4_RANK_TWO_LENGTH_THREE_COMPLETE_CLOSURE.md) |
+| Rank-three reduction to the plane endpoint | [cofactor flag](HC4_RANK_THREE_COFACTOR_FLAG.md), [fixed-kernel closure](HC4_RANK_THREE_FIXED_KERNEL_CLOSURE.md), [null-fiber reduction](HC4_RANK_THREE_NULL_FIBER_REDUCTION.md), [one-active-direction obstruction](HC4_RANK_THREE_ONE_ACTIVE_DIRECTION_OBSTRUCTION.md), [affine-generator Wronskian](HC4_RANK_THREE_AFFINE_GENERATOR_WRONSKIAN.md), and [Wronskian-to-JC2 theorem](HC4_RANK_THREE_WRONSKIAN_TO_JC2.md) |
+| Final regular `[4]` packet | [developable-image reduction](HC4_FINAL_RANK_THREE_DEVELOPABLE_IMAGE.md), [smooth-chart obstruction](HC4_FINAL_RANK_THREE_SMOOTH_CHART_OBSTRUCTION.md), [Krylov flag](HC4_FINAL_RANK_THREE_KRYLOV_FLAG.md), [Frobenius closure](HC4_FINAL_FROBENIUS_CLOSURE.md), [dimension-four trace/focal identity](HC4_TRACE_FOCAL_DIMENSION_FOUR_MIRACLE.md), and [affine-plane flatness closure](HC4_AFFINE_PLANE_SCHUBERT_BRIDGE.md) |
 
 Then `N` is polynomial, nilpotent, `S`-self-adjoint and Hessian-integrable:
 

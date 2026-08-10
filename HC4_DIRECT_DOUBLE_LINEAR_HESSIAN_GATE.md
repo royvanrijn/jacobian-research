@@ -9,10 +9,9 @@ three and four, and closes both boundary ranks of exact linear multiplicity
 five.  At exact multiplicity six it closes the complete generic-corank-one
 boundary and reduces the lower-rank boundary to three explicit packets.
 
-The identifiers `HC4-DIR1--27` have not yet been promoted to
-`MATH_STATUS.json`.  The proof and exact identity checker below form a proof
-package awaiting registry audit; they do not change authoritative repository
-status.
+The consolidated repeated-linear-factor result is registered as `HC4DIR27`
+in `MATH_STATUS.json`.  The labels `HC4-DIR3--27` below remain local proof-map
+identifiers for its component gates.
 
 Let `K` be a characteristic-zero field and let
 

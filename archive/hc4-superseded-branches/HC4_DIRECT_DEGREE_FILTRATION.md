@@ -1,5 +1,8 @@
 # Direct degree-filtration reduction for unrestricted HC4
 
+> **Archived route.** Superseded by the active direct homogeneous-filtration
+> chain; `HC4DF1` is retained for provenance only.
+
 ## Status
 
 This note attacks `HC4` without assuming a pre-existing relative-nilpotent pencil.

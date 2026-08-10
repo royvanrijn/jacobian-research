@@ -1,5 +1,8 @@
 # Lower-coordinate-degree surjective search
 
+> **Archived bounded search.** This first pass does not establish a global
+> lower bound and has no active status entry.
+
 ## Result of the first exact pass
 
 No degree below \(17\) is produced in the tested classes.  The search does
@@ -164,7 +167,7 @@ exclude them.
 Run
 
 ```bash
-.venv/bin/python scripts/search_lower_coordinate_degree_surjective.py
+.venv/bin/python archive/tooling/search_lower_coordinate_degree_surjective.py
 .venv/bin/python scripts/explore_root_changing_incidence_degree_four.py
 .venv/bin/python scripts/verify_fourth_suspension_valuation_fan.py
 .venv/bin/python scripts/verify_fourth_suspension_primitive_root.py

@@ -1,5 +1,8 @@
 # JC2 dual-Schur curvature obstruction
 
+> **Archived side calculation.** This scoped curvature identity does not give
+> a general JC2-to-HC3 descent and has no active status entry.
+
 ## Scope
 
 Let `K` be a characteristic-zero field and let

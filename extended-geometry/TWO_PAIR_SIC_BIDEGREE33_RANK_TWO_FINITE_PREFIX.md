@@ -686,6 +686,33 @@ from \(\mu_2\), the exact value of \(\mu_3\) is nonzero.  The scout is
 therefore a guide to an evaluation--interpolation eliminant, not an exact
 exclusion or counterexample.
 
+The two scout artifacts were intentionally refreshed on 2026-08-10 after
+the checker began recording each fibre's quotient length.  The commands were
+
+```bash
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_hurwitz_base_fibres.py \
+  --prime 29 --through 9 --workers 4 --timeout 60 \
+  --output artifacts/generated-results/two_pair_sic_bidegree33_rank_two_hurwitz_base_fibres_p29.json
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/research_two_pair_sic_bidegree33_rank_two_hurwitz_base_fibres.py \
+  --prime 31 --through 9 --workers 4 --timeout 60 \
+  --output artifacts/generated-results/two_pair_sic_bidegree33_rank_two_hurwitz_base_fibres_p31.json
+```
+
+The whole-file hashes changed from
+`2861c20edc1af1d57c36af78dd7c4084d105fd54c3682f0bf39cc963a66fa1fc`
+to `364e905ff2ee551686f419112c9cb730fa21b1a2efca228d8f6b8def193eafdd`
+at \(p=29\), and from
+`a83048d66327a7cd409b148a56cafe54e0013bf93bc3bce28b4c5927ed724820`
+to `fb9f4f0245941c4f3fb33bb0fdf1a7fcde35f1858963a5cf246a1742c12cce27`
+at \(p=31\).  The unit/survivor counts and every survivor basis are
+unchanged; only `quotient_length` and the hashes of the regenerated Singular
+sources were added or updated.  The checker-source hash is
+`b3b472c066d233db237c7c1fb2aa6f5e54dc7ca4e96a7cfb7c09e244c7d8512b`.
+The replay used Python 3.14.6, python-flint 0.9.0, Singular 4.4.1 with FLINT
+3.6.0, and the repository locks `.python-version` and `requirements.txt`.
+
 The reusable pattern is:
 
 1. quotient by the lowest-degree monic or constant-leading pivot and keep

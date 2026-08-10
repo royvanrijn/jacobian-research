@@ -112,7 +112,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "b8f6943992dc7192caf1b188f8efd79f1e00632b6fb94ba15057774ac88af9b9",
+      "quotient_length": 0,
+      "source_sha256": "67191cf48d74459d480ed8578ba9417f7996d64e871c7422ef8ee13db4baa012",
       "specialized_terms": {
         "H": 98,
         "K": 1660,
@@ -129,7 +130,8 @@
       "status": "survivor",
       "basis_size": 4,
       "first_degree": 1,
-      "source_sha256": "3b8e7e695e3ecc3be5584fa3053af53965ca1251713ebf44b5f998374856c74f",
+      "quotient_length": 3,
+      "source_sha256": "7f868948465652c7eb25d5ad214a3448f76babfbc35de64c8d86b7a5702ac999",
       "specialized_terms": {
         "H": 96,
         "K": 1648,
@@ -146,7 +148,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "4553aa02f8a2f5a282ed1a67c3bb6d3758d10820c7e7a7fea2c935aa7f677367",
+      "quotient_length": 0,
+      "source_sha256": "55232f06d060eab06ce8492ed0937d0aae9abb1438c50ce7440b7f08196612d3",
       "specialized_terms": {
         "H": 94,
         "K": 1643,
@@ -163,7 +166,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "24c80df1bb0504181d88e36ec0a889783d2649c70981b6884870346e16515836",
+      "quotient_length": 0,
+      "source_sha256": "f169f8ae49abe4d4fc18031a22485c3fc1af51cc77b52d8c8db58b3eeaa12afc",
       "specialized_terms": {
         "H": 96,
         "K": 1663,
@@ -180,7 +184,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "c62ba87355d0655020ffd09ae79fb7db169d95441c0f95b132ff9c568fcdeb77",
+      "quotient_length": 0,
+      "source_sha256": "2422676d05b89890777362df02d1baad64c4f805d270a3430096d7da576a478d",
       "specialized_terms": {
         "H": 98,
         "K": 1644,
@@ -197,7 +202,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "8b44d6361ca0f114bbacc89242612888ac838e495286c5e7439289d0a4bed842",
+      "quotient_length": 0,
+      "source_sha256": "ae978de0e86998e0a5014b94fcd80ab88976290898687ab6c66d6fb86a6a138f",
       "specialized_terms": {
         "H": 96,
         "K": 1640,
@@ -214,7 +220,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "bff3d5617d3bc683edd91208d1d72381de6556cdbc23c067b73026c6845aef93",
+      "quotient_length": 0,
+      "source_sha256": "f9fd7d0c01985d1161b9fc15dd7c0fc630e1b7c60135759ee0500d306e3f4ec9",
       "specialized_terms": {
         "H": 95,
         "K": 1661,
@@ -231,7 +238,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "e231b651442ca69d5d9f1bc453820c4335ebb9f2f844116cb9f4dfbb12bd347a",
+      "quotient_length": 0,
+      "source_sha256": "291de55b789e9ab9ed1dd114064be78c2bf78d89f19e2b0c66d0d8dcade7b587",
       "specialized_terms": {
         "H": 95,
         "K": 1650,
@@ -248,7 +256,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "598f4bad6e952004e4c08f2bf614b365843a48d65cadf1933e0aa299674e2c1c",
+      "quotient_length": 0,
+      "source_sha256": "89971d7c884650489bc19ef1626d33b7e15e4bcd4600bf241c7a7fb707c9b3d9",
       "specialized_terms": {
         "H": 97,
         "K": 1651,
@@ -265,7 +274,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "107d302455e48bea995a336e17304a7a45469b89a43da067a81861e74c34a3a7",
+      "quotient_length": 0,
+      "source_sha256": "03ebf795903d26d5b7e03cfa44462f70d3262499826936abaf3a32517a442285",
       "specialized_terms": {
         "H": 98,
         "K": 1649,
@@ -282,7 +292,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "0be3ad50738d991d7b55b83c5f8bfeac319ad194cf43bae4b538052444cbd2b6",
+      "quotient_length": 0,
+      "source_sha256": "5c31b9dfc5b4e33c3cfa419808478f602642af5bd30cc30aca2d485790a791f8",
       "specialized_terms": {
         "H": 97,
         "K": 1663,
@@ -299,7 +310,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "8c841dc0231e19d5b802d521e1cff913b2113efdbb93c48bfd0db4c7dff7d091",
+      "quotient_length": 0,
+      "source_sha256": "3e9a3c87593997741ee2eb822e3b03be34705ee25a1eae9128ad8767706fe027",
       "specialized_terms": {
         "H": 95,
         "K": 1642,
@@ -316,7 +328,8 @@
       "status": "survivor",
       "basis_size": 4,
       "first_degree": 1,
-      "source_sha256": "ceaebdef7be0d29cdcf390afb7a97d9453b2d3f2cc77c0a1cc3dee6603282746",
+      "quotient_length": 3,
+      "source_sha256": "5b6689a8fc27d7a1e4c848e80f8cbf0bcff8bdfdbf4bec73e5a157016f7beaf1",
       "specialized_terms": {
         "H": 97,
         "K": 1657,
@@ -333,7 +346,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "59c6cd0cbb5f3fd324181255d44920e27ae2fa8a076e6db83aeda2dfd9e17f0d",
+      "quotient_length": 0,
+      "source_sha256": "9e62608b5ca5170cf342c6ed320f1b209e3518f49f0ea97aa53e2212c678913c",
       "specialized_terms": {
         "H": 93,
         "K": 1661,
@@ -350,7 +364,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "2e055f8167b68e90130736ee6385ef1df3239a6231599eb5686f8da0e11be5b7",
+      "quotient_length": 0,
+      "source_sha256": "de7ad79def2236a93786e638cd954ea23bc1f22ea1b2c47e950a9d2b139fa2a1",
       "specialized_terms": {
         "H": 96,
         "K": 1663,
@@ -367,7 +382,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "07f4cd072e72344ebc73202a62e0bcd9c064c98aa7f326f7476eaadce005aa84",
+      "quotient_length": 0,
+      "source_sha256": "cee2d8984d3adeba525233c16ae0515d62a6fa30769a4d226702e7026a7fe0fb",
       "specialized_terms": {
         "H": 95,
         "K": 1642,
@@ -384,7 +400,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "c71dca6a259c5122bb7b16cfe29eb3e8b6efd7aa6ff0b720621435dbda1d23cf",
+      "quotient_length": 0,
+      "source_sha256": "23b20d895ad180b657710495d0b7d600b5787e8b834ff592b54583381bc66954",
       "specialized_terms": {
         "H": 97,
         "K": 1654,
@@ -401,7 +418,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "43695e93dc20adf86b68ed9875558141bf0ef3480f1a3a06019f3c52e3a6376c",
+      "quotient_length": 0,
+      "source_sha256": "58b4d50f3d6d458762ba209b6b7fc857beb1eaf491f3bbcb56ad7ec09e9b535d",
       "specialized_terms": {
         "H": 95,
         "K": 1645,
@@ -418,7 +436,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "62c6192ff43afbcbd073108f3e9a64b32bf6bb139aebc54750a3675bc94a9d3b",
+      "quotient_length": 0,
+      "source_sha256": "57c5512fe9de01788d1a5be9869cec8b5a605a3ba10ce38cf6b8de0f61d83921",
       "specialized_terms": {
         "H": 94,
         "K": 1652,
@@ -435,7 +454,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "9ed41823cf466b8ff717aca795c544962a30425b0b5e1d05435de343253af367",
+      "quotient_length": 0,
+      "source_sha256": "a1d9f60677de9cac129e6dec707974a14710773243454f8766725bab608b1323",
       "specialized_terms": {
         "H": 97,
         "K": 1667,
@@ -452,7 +472,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "fe647579dae227a23de60f39376449e7248e713d4ec11901e1d9838eab6ed564",
+      "quotient_length": 0,
+      "source_sha256": "30a376fb71e0a873f60e788166237a3cc96b9c570ca7796e901b4c41e6cc3064",
       "specialized_terms": {
         "H": 97,
         "K": 1649,
@@ -469,7 +490,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "e975d437feb9f2e59998233e647b72408c9f220f5cc547d93338a1c3f2634b85",
+      "quotient_length": 0,
+      "source_sha256": "05663970dcd401f5d12848319e6a2b626ecf2d3215bfa0182f80e6042c9cb1b0",
       "specialized_terms": {
         "H": 98,
         "K": 1654,
@@ -486,7 +508,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "cade2863b03b242e32979116e13955b95533a5755b91574d485afaa7880c2ebf",
+      "quotient_length": 0,
+      "source_sha256": "4288692e192a8989a0224d6a2b122cb1ff9e86b6f26aca12ccf147b39540f7cc",
       "specialized_terms": {
         "H": 98,
         "K": 1662,
@@ -503,7 +526,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "446c966c05fc464b80ec616c3effbcef21520586639054402093290b614879a3",
+      "quotient_length": 0,
+      "source_sha256": "412b67735d8b77c309d3546f8143b2bf2ad419d365fdfc743d9ad21cc60ef575",
       "specialized_terms": {
         "H": 97,
         "K": 1653,
@@ -520,7 +544,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "316c987bedbc1fa4da38f0c58e272dc289d83d06e60a90cffb1e038cd183f3dd",
+      "quotient_length": 0,
+      "source_sha256": "9ac05f66354e9584f5ec3fa417fb0e9268a957aa8ff5a8741119c5adff63d4bd",
       "specialized_terms": {
         "H": 97,
         "K": 1653,
@@ -537,7 +562,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "b874bb97300f0d49697d5d326606d2d4be2e520b827253e503a0988b4ecf8940",
+      "quotient_length": 0,
+      "source_sha256": "4151d5c40da59ccf716eec480c3c36786244a9d5bfb1e6a5a303dd7b24f0bcfc",
       "specialized_terms": {
         "H": 91,
         "K": 1658,
@@ -554,7 +580,8 @@
       "status": "survivor",
       "basis_size": 4,
       "first_degree": 1,
-      "source_sha256": "9362dd67766abe74528f1781686816144d6c6484df770406d9592af5b290ed6b",
+      "quotient_length": 3,
+      "source_sha256": "7fa847538b4be27e3ff637075cd156be79e8094e9fa9cc901c3a1cf019aa4733",
       "specialized_terms": {
         "H": 96,
         "K": 1633,
@@ -571,7 +598,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "787b8c9c05c65ce4b7496c0a65ea602d861878ee6c394ded19c24d0b77765749",
+      "quotient_length": 0,
+      "source_sha256": "849eb7b6ca8a301d2c9498822d7c647c7f01d784dbc426c9d043d68c4cdb4a17",
       "specialized_terms": {
         "H": 97,
         "K": 1661,
@@ -588,7 +616,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "cac3f08ed6171f3c6f2ab182240f2c9f355ca519c1c48d4306f0a65ed9fcf970",
+      "quotient_length": 0,
+      "source_sha256": "6a803550c5592f3b98569176165d1dbbc7e89a6696b86dad6bb72c3ea2275e9f",
       "specialized_terms": {
         "H": 99,
         "K": 1665,
@@ -605,7 +634,8 @@
       "status": "survivor",
       "basis_size": 4,
       "first_degree": 1,
-      "source_sha256": "fb78d43ea84ab0a9a24fec2838d36ebb20c79e664da3c158f92f0600a26ada10",
+      "quotient_length": 3,
+      "source_sha256": "b8545e2d066a7a7b4381d91fcb1f4292fb2ea3e0d32894b3ad68fd232d88db76",
       "specialized_terms": {
         "H": 96,
         "K": 1659,
@@ -622,7 +652,8 @@
       "status": "unit",
       "basis_size": 1,
       "first_degree": 0,
-      "source_sha256": "05e34cff313a0db3fa3952b7c7184520f153a2c8260d9a4db3e18dbcf448a63a",
+      "quotient_length": 0,
+      "source_sha256": "65bdb409c6b22ea52c3c40d949a76b679371b5ae99bdf08d69fe60136fda1a2b",
       "specialized_terms": {
         "H": 95,
         "K": 1659,

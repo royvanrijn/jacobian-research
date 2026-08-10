@@ -147,6 +147,8 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: verify-hc4-pure-septic-moving-closure verify-hc4-pure-septic-kzero
 .PHONY: verify-hc4-pure-septic-kzero-wronskian verify-hc4-pure-septic-passive-affine
 .PHONY: verify-hc4-pure-septic-quartic-packets
+.PHONY: verify-hc4-relative-nilpotent-final-packet
+.PHONY: verify-hc4-direct-filtration verify-hc4-direct-repeated-linear
 .PHONY: verify-s4-collision-frame-keller
 .PHONY: verify-global-low-degree-census
 
@@ -154,6 +156,7 @@ check:
 	$(PYTHON) -m compileall -q jcsearch scripts
 	$(PYTHON) scripts/check_markdown_links.py
 	$(PYTHON) scripts/audit_status.py
+	$(PYTHON) scripts/audit_repository_hygiene.py
 
 verify-global-low-degree-census:
 	$(PYTHON) scripts/verify_global_low_degree_census.py
@@ -238,6 +241,16 @@ verify-hc4-pure-septic-passive-affine: verify-hc4-pure-septic-kzero-wronskian
 
 verify-hc4-pure-septic-quartic-packets: verify-hc4-pure-septic-passive-affine
 	$(PYTHON) scripts/verify_hc4_pure_septic_quartic_packets.py
+
+verify-hc4-relative-nilpotent-final-packet:
+	$(PYTHON) scripts/verify_hc4_affine_plane_bridge.py
+	$(PYTHON) scripts/verify_hc4_affine_plane_prolongation.py
+
+verify-hc4-direct-filtration:
+	$(PYTHON) scripts/verify_hc4_direct_homogeneous_filtration.py
+
+verify-hc4-direct-repeated-linear: verify-hc4-direct-filtration
+	$(PYTHON) scripts/verify_hc4_direct_double_linear_hessian_gate.py
 
 verify-hc4-meng-yang-quintic: verify-hc4-meng-yang-graphs
 	$(PYTHON) scripts/verify_hc4_meng_yang_quintic_graph_normal_slice.py

@@ -28,11 +28,12 @@ from functools import reduce
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_OUTPUT_TEMPLATE = (
     ROOT
+    / "archive"
+    / "tooling"
     / "artifacts"
-    / "generated-results"
     / "fixed_quintic_malle_census_h{bound}.json"
 )
 
@@ -601,8 +602,9 @@ def main() -> None:
     elif args.exceptional_only:
         output = (
             ROOT
+            / "archive"
+            / "tooling"
             / "artifacts"
-            / "generated-results"
             / f"fixed_quintic_malle_exceptional_census_h{args.bound}.json"
         )
     else:
@@ -673,7 +675,7 @@ def main() -> None:
         "command": " ".join(
             [
                 ".venv/bin/python",
-                "scripts/census_fixed_quintic_malle.py",
+                "archive/tooling/census_fixed_quintic_malle.py",
                 "--bound",
                 str(args.bound),
                 *(["--exceptional-only"] if args.exceptional_only else []),

@@ -10,6 +10,13 @@ the constant-Hessian locus.  This note starts a direct attack that applies to
 It also records why the obvious cotangent use of the relative-nilpotent theorem
 cannot by itself prove `JC2`.
 
+The active continuation is the
+[squarefree-Hessian obstruction](HC4_DIRECT_SQUAREFREE_HESSIAN_OBSTRUCTION.md)
+followed by the
+[repeated-linear-factor gates](HC4_DIRECT_DOUBLE_LINEAR_HESSIAN_GATE.md).
+The earlier parallel numbering is preserved only in the
+[HC4 archive](archive/hc4-superseded-branches/README.md).
+
 Throughout let `K` have characteristic zero and let
 
 \[

@@ -210,6 +210,12 @@ Hence the natural genera at \(p=7,11,13\) are \(0,1,0\).  The obstruction at
 phenomenon; the next comparison for \(7\) and \(13\) must use boundary and
 affine-completion data.
 
+<!-- status-consumer: KAS1 f40f8588d37ade00 -->
+<!-- status-consumer: KAS2 f56459cc921661ea -->
+<!-- status-consumer: KAS3 b95d888270f98c59 -->
+<!-- status-consumer: KAS4 45a513f714702919 -->
+<!-- status-consumer: KAS5 2baa200b6712564f -->
+
 ## 5. The proposed construction pipeline
 
 ### Step A: choose an explicit \(G\)-cover

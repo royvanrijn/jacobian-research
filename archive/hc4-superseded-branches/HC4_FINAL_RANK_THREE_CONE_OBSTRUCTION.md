@@ -1,5 +1,9 @@
 # Cone obstruction in the final rank-three `[4]` HC4 stratum
 
+> **Archived route.** The identifier `HC4RSD75` is assigned in the active
+> chain to the final Frobenius closure.  This cone-only argument is retained
+> for provenance.
+
 ## Status
 
 This note continues `HC4RSD71--74` and removes every cone-type gradient-image

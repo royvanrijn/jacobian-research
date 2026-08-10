@@ -1,5 +1,8 @@
 # Degree-108 JC2 residue as a Laurent normal-form problem
 
+> **Archived derivation.** The terminal obstruction is closed by `PJ72B1` and
+> this note is no longer an active frontier.
+
 ## Scope
 
 This note continues `JC2_DEGREE108_BELYI_REDUCTION.md`.  For the
@@ -363,7 +366,7 @@ The Newton condition `deg(B)=8` is a principal open.  After adjoining its
 inverse, the exact five-parameter ideal is `(1)`.  Thus the normal-form class
 does not vanish for any of the five conjugate top dessins, and the
 no-vertical-edge residue is empty.  See
-[`plane-jc/JC2_72_108_BELYI_DEFORMATION_CLOSURE.md`](plane-jc/JC2_72_108_BELYI_DEFORMATION_CLOSURE.md)
+[`plane-jc/JC2_72_108_BELYI_DEFORMATION_CLOSURE.md`](../../plane-jc/JC2_72_108_BELYI_DEFORMATION_CLOSURE.md)
 for the coefficient-field reconstruction, arithmetic-monodromy audit, linear
 maps, certificate, and reproduction commands.  The second Newton polygon is
 handled by the separate certified `(72,108)` closure recorded in

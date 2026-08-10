@@ -1,5 +1,8 @@
 # Normal coverings and component complexity
 
+> **Archived synthesis.** The active theorem is
+> `verified/NORMAL_COVERING_HASSE_FIBERS.md`; this memo is not a proof source.
+
 ## Status and purpose
 
 This is a standalone research memo.  It is not part of the
@@ -48,11 +51,11 @@ The main external sources are:
 
 The relevant internal inputs are:
 
-- [`verified/FINITE_ETALE_KELLER_FIBERS.md`](verified/FINITE_ETALE_KELLER_FIBERS.md),
+- [`verified/FINITE_ETALE_KELLER_FIBERS.md`](../../verified/FINITE_ETALE_KELLER_FIBERS.md),
   for the determinant-one realization of a squarefree polynomial quotient;
-- [`verified/MINIMAL_HASSE_PRINCIPLE_KELLER_FIBER.md`](verified/MINIMAL_HASSE_PRINCIPLE_KELLER_FIBER.md),
+- [`verified/MINIMAL_HASSE_PRINCIPLE_KELLER_FIBER.md`](../../verified/MINIMAL_HASSE_PRINCIPLE_KELLER_FIBER.md),
   for the explicit quintic Hasse failure;
-- [`papers/common-arithmetic-fibers/sections/01-keller-fibers.tex`](papers/common-arithmetic-fibers/sections/01-keller-fibers.tex),
+- [`papers/common-arithmetic-fibers/sections/01-keller-fibers.tex`](../../papers/common-arithmetic-fibers/sections/01-keller-fibers.tex),
   for the current manuscript statement of the realization theorem.
 
 ## 2. Normal coverings
@@ -511,4 +514,3 @@ The strongest conceptual summary is
 \end{array}}
 \tag{11.1}
 \]
-

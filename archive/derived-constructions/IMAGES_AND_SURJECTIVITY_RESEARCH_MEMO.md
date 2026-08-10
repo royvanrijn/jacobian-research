@@ -1,5 +1,8 @@
 # Images and surjectivity of weighted Keller maps
 
+> **Archived synthesis.** Its proved conclusions now live in the canonical
+> omitted-value, contact-atom, and component-normalization notes.
+
 **Research memo — 24 July 2026**
 
 ## Executive conclusion
@@ -201,11 +204,11 @@ a period-six quasipolynomial.
 
 The local sources for a paper-ready proof are:
 
-- [fixed-seed omitted-value classifier](extended-geometry/OMITTED_VALUE_CLASSIFICATION.md);
-- [unique omitted-value lemma](extended-geometry/UNIQUE_OMITTED_VALUE.md);
-- [contact-atom theorem and phase diagram](extended-geometry/CONTACT_ATOM_PRINCIPLE.md);
-- [collision closure and irreducibility](extended-geometry/COINCIDENT_ROOT_REBUILD.md);
-- [explicit component normalizations](extended-geometry/COMPONENT_NORMALIZATION.md).
+- [fixed-seed omitted-value classifier](../../extended-geometry/OMITTED_VALUE_CLASSIFICATION.md);
+- [unique omitted-value lemma](../../extended-geometry/UNIQUE_OMITTED_VALUE.md);
+- [contact-atom theorem and phase diagram](../../extended-geometry/CONTACT_ATOM_PRINCIPLE.md);
+- [collision closure and irreducibility](../../extended-geometry/COINCIDENT_ROOT_REBUILD.md);
+- [explicit component normalizations](../../extended-geometry/COMPONENT_NORMALIZATION.md).
 
 The corresponding symbolic checks all pass in the current workspace.
 
@@ -420,4 +423,3 @@ The four load-bearing checks used in this memo are:
 ```
 
 All four pass in the current workspace.
-

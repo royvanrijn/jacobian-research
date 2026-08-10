@@ -7,6 +7,11 @@ recorded separately only in
 [STATUS.md](../STATUS.md).
 
 <!-- status-consumer: SST1 12c5cb15e8b6de26 -->
+<!-- status-consumer: KAS1 f40f8588d37ade00 -->
+<!-- status-consumer: KAS2 f56459cc921661ea -->
+<!-- status-consumer: KAS3 b95d888270f98c59 -->
+<!-- status-consumer: KAS4 45a513f714702919 -->
+<!-- status-consumer: KAS5 2baa200b6712564f -->
 
 | Results | Primary document |
 |---|---|

@@ -1,5 +1,9 @@
 # Direct projective form of `HC4`: all ramification is at infinity
 
+> **Archived route.** The identifier `HC4-DIR4` now belongs to the active
+> repeated-linear-factor chain.  This projective reformulation is retained as
+> an exploratory side route.
+
 ## Statement
 
 Let

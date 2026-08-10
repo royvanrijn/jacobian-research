@@ -1,5 +1,9 @@
 # Squarefree top-Hessian obstruction for direct `HC4`
 
+The all-degree result is registered as `HC4DIR2` in `MATH_STATUS.json`.  It
+supersedes the degree-five-only squarefree obstruction `HC4PPG5` without
+changing the open nonsquarefree frontier.
+
 ## Statement
 
 Continue `HC4_DIRECT_HOMOGENEOUS_FILTRATION.md`.  Let

@@ -5,10 +5,9 @@
 This note continues `HC4-MR` on the regular `[4]` stratum.  It does **not**
 assume that the moving Jordan frame is affine parallel.
 
-The identifiers `HC4RSD77--80`, like their prerequisite `HC4RSD41--76` note
-chain, have not yet been promoted to `MATH_STATUS.json`.  The arguments and
-exact certificates below are therefore a proof package awaiting registry
-audit, not a change to the repository's authoritative theorem status.
+The combined relative-nilpotent result is registered as `HC4MR1` in
+`MATH_STATUS.json`.  The labels `HC4RSD77--80` are retained as local proof-map
+identifiers for the final packet.
 
 The middle Jordan distribution is an affine-plane foliation.  Its first-order
 Grassmann motion is not automatically Schubert: one extra scalar survives.

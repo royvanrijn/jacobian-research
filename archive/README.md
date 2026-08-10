@@ -33,3 +33,9 @@ The [high-dimensional GMC archive](high-dimensional-gmc/) preserves the
 former three-real weighted-family searches.  Explicit five-term witnesses
 settle every real Gaussian dimension `n>=3`; active Gaussian work is now
 restricted to GMC(2).
+
+The [HC4 superseded-branch archive](hc4-superseded-branches/) preserves
+parallel reductions whose local theorem identifiers were reassigned in the
+current relative-nilpotent and direct-filtration proof chains.  The
+[closed plane-JC branch archive](plane-jc-closed-branches/) preserves the
+Laurent/Belyi derivations absorbed by the registered `(72,108)` closure.

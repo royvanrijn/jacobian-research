@@ -258,6 +258,8 @@ The two-pencil words remain permanent zero-pole calibration rows.  Continuing
 the old quintic support, or automatically extending the marked-root degree
 ladder, is not selected by this experiment.
 
+<!-- status-consumer: DC2HN1 ba39713cacc80bb5 -->
+
 ## Reproduction
 
 Run:

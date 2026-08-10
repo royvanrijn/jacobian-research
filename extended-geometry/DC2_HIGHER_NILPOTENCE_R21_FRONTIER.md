@@ -1840,6 +1840,15 @@ Run:
   artifacts/generated-results/dc2_higher_nilpotence_r21_frontier.json
 ```
 
+The 2026-08-10 repository audit replayed this command under Python 3.14.6
+and SymPy 1.14.0.  It reproduced the generated JSON byte-for-byte at SHA-256
+`8399cd9c656dac7042349473a3ec93e78d6fb0b6447105ad1136b0c156d50060`.
+The status registry had incorrectly stored that output hash in its
+checker-source field; it now pins the checker itself at SHA-256
+`bcd2184106a20d98279dd36d41973c699b00a9e38e39317cdca61ed0d898e520`.
+The replay used the repository's `.python-version` and `requirements.txt`
+locks; no generated result changed.
+
 The output records the exact higher-index matrices, the triangular inverse,
 the two row-curl generators, the `R21` map and graph checks, the affine-contact
 rank screen, the tame graph jet through degree four, and the four unimodular

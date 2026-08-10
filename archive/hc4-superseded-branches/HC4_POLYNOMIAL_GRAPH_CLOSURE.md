@@ -1,5 +1,9 @@
 # Polynomial-graph closure for the final rank-three `[4]` HC4 stratum
 
+> **Archived route.** The identifier `HC4RSD72` is assigned in the active
+> chain to the smooth-chart maximal-motion theorem.  This narrower graph
+> argument is not an active dependency.
+
 ## Status
 
 This note continues `HC4RSD71`.  It treats the case where the smooth generic

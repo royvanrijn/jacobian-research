@@ -30,7 +30,7 @@ import sys
 
 import sympy as sp
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 
 from jcsearch.msolve import run as run_msolve  # noqa: E402

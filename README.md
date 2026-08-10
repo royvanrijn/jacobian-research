@@ -880,7 +880,7 @@ all 98 later child faces have origin radical, and the marked \(x\)-gap
 strictly decreases along every branch.  Thus the independent exact
 degree-by-degree program proves binary GVC through polynomial degree seven.
 
-<!-- status-consumer: GVC2ENV a3ef23e17eb633f0 -->
+<!-- status-consumer: GVC2ENV fca2e7df96a1ea80 -->
 The all-degree gap is now closed by the
 [Hall-envelope theorem](extended-geometry/BINARY_GVC_ENVELOPE_CLOSURE.md).
 At every rational weight \(w_s=(s,1)\), the global minimum operator face and
@@ -1422,7 +1422,7 @@ the all-order result is the quadric coefficient extraction and
 Reynolds--apolar proof in the canonical note.  This is a counterexample for
 \(\Delta^6\), not for the ordinary Laplacian operator \(\Delta\).
 
-<!-- status-consumer: GVC3CPS 10d538b9c5b3f10f -->
+<!-- status-consumer: GVC3CPS 04f1c551e83e3906 -->
 The
 [cusp-profile suspension theorem](extended-geometry/CUSP_PROFILE_SUSPENSION_THEOREM.md)
 packages the witness into the homogeneous family
@@ -2999,8 +2999,15 @@ stable-birational obstructions show why the
 action, Hurwitz component, and affine completion must be recorded
 separately.  For the natural modular triples, the exact prime formula gives
 quotient genera \(0,1,0\) at \(p=7,11,13\); the elliptic obstruction at
-\(11\) is therefore arithmetic rather than monotone in \(p\).  The inverse
-Galois programme's
+\(11\) is therefore arithmetic rather than monotone in \(p\).
+
+<!-- status-consumer: KAS1 f40f8588d37ade00 -->
+<!-- status-consumer: KAS2 f56459cc921661ea -->
+<!-- status-consumer: KAS3 b95d888270f98c59 -->
+<!-- status-consumer: KAS4 45a513f714702919 -->
+<!-- status-consumer: KAS5 2baa200b6712564f -->
+
+The inverse Galois programme's
 [toroidal boundary-feasibility compiler](extended-geometry/TOROIDAL_BOUNDARY_FEASIBILITY.md)
 now places fan rays, residue colors, masks, derivative and conductor
 divisors, unit lattices, class groups, and affine-modification exponents in
@@ -3686,8 +3693,16 @@ development:
     rank-two packet: on its active-unit stratum, a root partition with
     \(q\) distinct roots forces \(\sigma_2=5-q\); in particular the
     generic double-root packet falls from \(260,249\) rows to \(51,50\).
-    The zero kernel restriction, higher-torsion failure locus, and
-    worse/nonsquarefree singular strata remain open.
+    The zero kernel restriction and higher-torsion failure locus remain open.
+    The direct homogeneous filtration now treats part of the
+    nonsquarefree rank-three locus independently of this Segre census:
+    `HC4DIR2` excludes every squarefree top Hessian in all degrees, while
+    `HC4DIR27` closes repeated linear factors of exact multiplicities two
+    through five and the generic-corank-one multiplicity-six stratum under
+    its stated squarefree-cofactor hypotheses.  The lower-rank
+    multiplicity-six branch is reduced to one degree-five order-one
+    resonance.  Nonlinear repeated factors, several repeated factors, that
+    resonance, and top-Hessian rank at most two remain outside these gates.
     See
     [`PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`](PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md).
 
@@ -3868,9 +3883,27 @@ development:
     resonant direction charts have immutable lower coefficients, three
     transverse charts die by (12/7) or (-12/2401), and the only remaining
     zero strata obey an affine-transverse identity forcing a fixed cylinder.
-    Hence every scalar degree-seven leading direction is fixed; repeated-root
-    tops in degree at least eight are now the next degree-based frontier. See
-    [HC4_HIGHER_DEGREE_PENCIL_OBSTRUCTIONS.md](HC4_HIGHER_DEGREE_PENCIL_OBSTRUCTIONS.md).
+    Hence every scalar degree-seven leading direction is fixed.  That was the
+    degree-based frontier at `HC4RSD40`; it is no longer the end of the
+    relative-pencil chain.  `HC4MR1` consolidates `HC4RSD41--80`: the scalar
+    tails, both moving rank-two Jordan types, the rank-three cofactor and
+    Wronskian packets, and the last regular `[4]` affine-plane packet all
+    reduce globally to `HC2` or the exact cotangent lift of `JC2`.  Thus the
+    entire relative-nilpotent constant-Hessian-pencil branch has no residual
+    obstruction beyond the plane Keller endpoint.  This does not prove
+    unrestricted `HC4`, because an arbitrary constant-Hessian polynomial need
+    not lie in such an auxiliary pencil.
+
+    The unrestricted direct filtration supplies the complementary progress.
+    `HC4DIR2` eliminates squarefree rank-three top Hessians in every degree,
+    and `HC4DIR27` eliminates the repeated-linear strata stated above.  Its
+    next exact packet is the degree-five lower-rank order-one resonance with a
+    pure-cube pivot; nonlinear repeated factors and top-Hessian rank at most
+    two remain separate.  See the
+    [registered pencil chain](HC4_HIGHER_DEGREE_PENCIL_OBSTRUCTIONS.md), the
+    [relative-nilpotent master theorem](HC4_RELATIVE_NILPOTENT_MASTER_REDUCTION.md),
+    the [direct filtration](HC4_DIRECT_HOMOGENEOUS_FILTRATION.md), and the
+    [repeated-linear gate](HC4_DIRECT_DOUBLE_LINEAR_HESSIAN_GATE.md).
 
 12. The Meng--Yang route now has a degree-five normal form rather than a
     generic graph search.  HC4MYA1 and HC4MYG4 exclude all affine descents
@@ -4409,6 +4442,8 @@ form. In
 general, the new obstruction is the well-defined class
 `[div(Z)] in A/D(A)`, because all solutions of the second form equation
 differ by `lambda*D` and change the divergence by `D(lambda)`.
+
+<!-- status-consumer: DC2HN1 ba39713cacc80bb5 -->
 
 Other questions—arithmetic Galois theory, wider quantization,
 coefficient-scheme gluing, quadratic--cubic flexibility, and the two plane

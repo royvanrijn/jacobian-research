@@ -1,5 +1,8 @@
 # Minimal repeated-Hessian obstruction for direct `HC4`
 
+> **Archived route.** The identifier `HC4-DIR3` now belongs to the active
+> repeated-linear-factor chain.  This earlier use is not authoritative.
+
 ## Scope
 
 Continue `HC4-DIR1--2`.  Let the top homogeneous form of a hypothetical
