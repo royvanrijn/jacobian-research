@@ -1381,13 +1381,15 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Keller generic-monodromy action spectrum",
-      "scope": "Over characteristic-zero fields, classify faithful transitive permutation actions (G,Omega) that occur as the generic monodromy action of a noninvertible polynomial Keller self-map of affine space. Keep separate the existential, smooth-affine chart, absolute affine-space, and field-versal spectra. Determine action-level invariants forced by the étale locus and its affine completion, including regular-action exclusion, primitivity and block systems, inertia passports and quotient genera, boundary-unit lattices, Gassmann equivalence, essential dimension, and Hurwitz-space geometry. Symmetric actions occur abundantly; imprimitive actions arise from composition; nontrivial regular actions are impossible absolutely; AS1 and KAS1 give genuinely different relative Gassmann charts. The first primitive proper-simple test family is PSL2(F_q) on the projective line and on low-index subgroup cosets. No classification or absolute PSL2(F_q) realization is known.",
+      "scope": "Over characteristic-zero fields, classify faithful transitive permutation actions (G,Omega) that occur as the generic monodromy action of a noninvertible polynomial Keller self-map of affine space. Keep separate the existential, smooth-affine chart, absolute affine-space, and field-versal spectra. Determine action-level invariants forced by the étale locus and its affine completion, including regular-action exclusion, primitivity and block systems, inertia passports and quotient genera, boundary-unit lattices, Gassmann equivalence, essential dimension, and Hurwitz-space geometry. Symmetric actions occur abundantly; imprimitive actions arise from composition; nontrivial regular actions are impossible absolutely; AS1 and KAS1 give genuinely different relative Gassmann charts. KAS4 adds normalization-module mask interpolation and a descended infinity-imbalance invariant; KAS5 gives the natural prime-triangle genus formula. The first primitive proper-simple test family is PSL2(F_q) on the projective line and on low-index subgroup cosets. No classification or absolute PSL2(F_q) realization is known.",
       "canonical_source": "extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md",
       "dependencies": [
         "KBB1",
         "KAS1",
         "KAS2",
         "KAS3",
+        "KAS4",
+        "KAS5",
         "AS1",
         "AMS1",
         "KRP1"
@@ -6678,7 +6680,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:f98e9d8c4e1629589269c797e730c696c03ac85a4a1511fea2ac16db4df57386",
+      "artifact_hash": "sha256:39c4fd14220db79a33be68149ccaa94a5cdbe84ddfbb0bdae2ce68620c9c5136",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -6715,7 +6717,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:f98e9d8c4e1629589269c797e730c696c03ac85a4a1511fea2ac16db4df57386",
+      "artifact_hash": "sha256:39c4fd14220db79a33be68149ccaa94a5cdbe84ddfbb0bdae2ce68620c9c5136",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -6751,7 +6753,79 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:f98e9d8c4e1629589269c797e730c696c03ac85a4a1511fea2ac16db4df57386",
+      "artifact_hash": "sha256:39c4fd14220db79a33be68149ccaa94a5cdbe84ddfbb0bdae2ce68620c9c5136",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-KMON"
+      ],
+      "consumers": [
+        "KELLER_INVERSE_GALOIS_PROGRAM.md",
+        "README.md",
+        "extended-geometry/README.md",
+        "REPRODUCE.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "KAS4",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "PSL2(11) exact normalization-module mask interpolation",
+      "scope": "For the normalized degree-five and degree-six PSL2(11) correspondences over K=Q(sqrt(-11)), the conductor-denominator normalization modules give exact Riemann--Roch filtrations and explicit representatives for every residual effective mask in KAS3. On C5, the normalization generators T1,T2 have pole weight one; formulas for M1--M4 have exactly the prescribed finite principal ideals, and projection exchange is explicit on T1,T2. On C6, the normalization denominator is the canonical adjoint A, the three generator weights are 1,1,2, and exact reduction gives dimensions 23,29,41 for L(4D_infinity), L(5D_infinity), L(7D_infinity). Prime-power evaluation kernels construct N2--N7 and intrinsically select the required degree-four branch over the p2 node. Ten exact infinity-five two-jet rows select N1 and certify pole pair (7,5); zero-degree and pole-degree arguments certify the displayed pairs for N2--N7. The infinity-coefficient difference annihilates both projection images, hence descends to L6/I6 with values (-2,0,0,0,0,1,1) on N1,...,N7; therefore N1,N6,N7 cannot acquire uniform infinity orders after multiplication by projection units. These are explicit rational functions in the normalization algebras, not ambient polynomial outputs. Constant-Jacobian completion, inverse-adjugate divisibility, polynomial descent, affine-space recognition, and absolute Keller realization remain open.",
+      "canonical_source": "extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md",
+      "dependencies": [
+        "KAS3",
+        "external: Singular 4.4.1 normal.lib exact normalization-module and quotient-ring linear algebra"
+      ],
+      "checker": "scripts/verify_psl2_11_normalization_masks.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:25377ca2754e4782cf2c52991fd8f07f29d4a44e9ed10536c0ca44c2c35ce5be",
+      "software_lock": [
+        ".python-version"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-KMON"
+      ],
+      "consumers": [
+        "KELLER_INVERSE_GALOIS_PROGRAM.md",
+        "README.md",
+        "extended-geometry/README.md",
+        "REPRODUCE.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "KAS5",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Natural PSL2(p) modular-triangle genus formula",
+      "scope": "For every prime p>3, the standard order-(2,3,p) modular generators of PSL2(F_p) act on P1(F_p) with fixed-point counts f2=1+(-1|p) and f3=1+(-3|p). Their natural passport is 3^((p+1-f3)/3) 1^f3 | 2^((p+1-f2)/2) 1^f2 | p 1, and Riemann--Hurwitz gives g_nat(p)=[p-6-3(-1|p)-4(-3|p)]/12. In particular the natural quotient genera at p=7,11,13 are 0,1,0. Thus the genus-one obstruction at p=11 is controlled by split/nonsplit arithmetic and is not monotone in p. This is a quotient-genus audit, not a boundary-unit calculation or an absolute Keller realization for the degree-eight or degree-fourteen actions.",
+      "canonical_source": "extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md",
+      "dependencies": [
+        "KAS1"
+      ],
+      "checker": "scripts/verify_psl2_11_keller_action_spectrum.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:39c4fd14220db79a33be68149ccaa94a5cdbe84ddfbb0bdae2ce68620c9c5136",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -17103,6 +17177,42 @@
       "priority": "reference"
     },
     {
+      "id": "F20SB1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Weighted Taylor-Cox strict-boundary attachment theorem",
+      "scope": "Let A be a regular local domain of characteristic zero, let lambda be a boundary scale on a finite normalized root-cover chart, let F lie in A[Y], and let c be a Cartier-compatible root centre in a finite local incidence algebra. If partial_Y^k F(c) lies in (lambda^(m-k)) for 0<=k<m, then after Y=c+lambda*W one has F=lambda^m*Phi and F_Y=lambda^(m-1)*Phi_W. Consequently, if P=e^N*F and X=xi+e^r*Y, then P_X=e^(N-r)*lambda^(m-1)*Phi_W, so any compact Cox monomial with that exceptional/boundary order divides P_X literally. For the corrected F20 cover, exact controlled-transform calculations certify three exceptional-to-strict-boundary families: the cusp E4-to-r corner has r=e^10*z^4*R with R=lambda^2, a separable quadratic two-color incidence residual, and F,F_A in the incidence ideal saturated by lc_A(H); the triple E2-to-d corner has d=e^2*D with D=lambda^4 and partial_Z^k F(Z_c) in (D) exactly for k=0,1,2,3; and the q-r E2-A-to-q corner has q=e^2*Q with Q=lambda and exact incidence pseudo-remainders F in (Q^2), F_Y in (Q). The generic q centre on s!=1 likewise satisfies P(A_q) in (q^2) and P_X(A_q) in (q). Exact residual calculations additionally locate Cartier-compatible multiplicity-two strict-r centres for two triple-E1 colors and the three conjugates of each q-r A/B packet; full family saturation for those eight candidate colors remains open. At the q-node, the exact scaled incidence residual is 2*a-2*z-5 and has zero root-coordinate coefficient, proving that this edge is conductor-degenerate and is not certified by the present theorem. The remaining strict-r family memberships, conductor-to-corner transitions, global Cech class, global Cox ring, inverse-adjugate polynomiality, affine-space recognition, and a polynomial Keller map remain open.",
+      "canonical_source": "extended-geometry/F20_STRICT_BOUNDARY_ATTACHMENTS.md",
+      "dependencies": [
+        "F20CC1",
+        "F20EC1",
+        "F20NC1",
+        "TBF1",
+        "external: Singular 4.4.1 exact quotient, saturation, and Groebner routines"
+      ],
+      "checker": "scripts/verify_f20_strict_boundary_attachments.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:0ef8aaa14cbdb6b8d007537b56ceb3bc102c2978f3da4a4402041b2d2596099e",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [
+        "all strict-boundary attachments as wholly unconstructed",
+        "separate d, q, and r derivative-order ledgers as necessary for the certified attachment families"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "CF1",
       "kind": "corollary",
       "state": "proved",
@@ -26834,7 +26944,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Reciprocal degree-seven fiber admission and all-invariant second-order exclusion",
-      "scope": "For arbitrary characteristic-zero polynomials g,h in K[p1], the potential A=p1*q2+(c/2)*p2^2+g(p1)*p2+h(p1) has N=Pi*Hess(A) with N^4=0, N^3 nonzero and N^2 nonzero on c!=0. Its Cayley matrix is row-integrable, and the resulting four-tuple is an explicitly invertible triangular polynomial symplectic map whose odd Moyal bidifferentials of orders at least three vanish. In the surrounding ansatz p1*q2+p2^2+f(p1,p2), the only row curls are f_222/4-f_122/2 and -f_222/2, so integrability forces f_22 and therefore N^2 to be constant. For reciprocal R21 over Q[q]/(q^2-4q+6), the exact polynomial Keller triple, quartic incidence, determinant-one cotangent graph form, and the SL2 stable charts generated by A^n-x*y^2*(1+A+...+A^(n-1))=1 are verified for n=1,...,4. The natural B+x*e and P+x*e charts each retain all six symplectic-pair defects. A 262-by-6 coefficient screen has rank six, so no nonzero constant target two-form has constant pullback and the affine-contact route is excluded. In tangent-identity graph coordinates, one elementary shear and ten exact polynomial Hamiltonian/elementary shears, each with a polynomial inverse, remove every bracket defect through degree four; the explicit first remaining defect has degree five. Nevertheless R=x*S with S nonconstant and S|_(x=0)=1. Comparing the stable differential in the graph form proves that any Darboux source change whose three base coordinates are independent of the stable variable would force R to be a polynomial coordinate, contradicting this reducible factorization. Thus the entire fiber-preserving stabilization subgroup is excluded. On the necessary stable-mixed U_2 chart Z=B+x*e, twenty-six exact elementary/Hamiltonian shears remove every defect through degree six and leave an explicit nonzero degree-seven six-tuple. The quintic and sextic correction vectors and their polynomial integrations are exact. For a homogeneous degree-m Poisson defect D_m, the closed form defect E_m=(-Pi)D_m(-Pi) has radial primitive alpha_m=i_Euler(E_m)/(m+2), and V_(m+1)=Pi*alpha_m cancels D_m. Induction therefore gives a formal Darboux trivialization to every order; the checker verifies the recurrence exactly on the degree-six and degree-seven rows. The straight-line Moser series has nonzero Pfaffian correction Delta. Source dilation K_s(u)=K(su)/s gives a constant-Pfaffian path and an exact polynomial trivializing field, but its time-one map is the nonpolynomial inverse of the irreducible generic-degree-four graph map. On the b=0 fiber, the primitive kernel derivation has delta(d)=d^4*(a-c*d)/6 nonzero, so it is not locally nilpotent. The invariant curve d^3*c=2, d^4*(a-c*d)^2-12*d=1 has coordinate y=d^2*(a-c*d), induced derivation ((y^2-1)^2/144)*partial_y, and time-form residues -36 and 36 at y=1 and y=-1. Therefore the fiber kernel has no polynomial slice. For any Darboux normalizer H, its target-b component H_1 cannot have a polynomial Poisson mate modulo H_1; in particular H_1 cannot be an elementary coordinate lambda*u_i+F(other variables). This excludes all twenty-six explicit corrections and every elementary b-moving repair. Every coordinate of degree at most two has a linear Poisson mate. Conversely, for every k>=1 the tame coordinate F_k=a+c^k*(b+a*d) has no polynomial Poisson mate on F_k=0; the cubic k=1 row shows that the necessary condition is sharp in degree. On the invariant curve I=1,J=0 its time form is -2^k*dt/(t^2-1)^k with nonzero residues, and its pole order and transverse logarithmic weight are both k. The R21 target instead has split signature (2,3). The bounded degree-seven Darboux-polynomial census is not an all-degree classification: the k=2 row acquires a new primitive irreducible weight-one Darboux polynomial in degree eight. The complete polynomial constant rings are instead computed exactly. For F_k they are K[I,S,U]/(I^k*U-S*(S-(-2)^k)); for R21 the relation is I^3*U=S*(S-3456). These Danielewski rings have intrinsic exponent k and 3, detected for k>=2 by the Makar-Limanov invariant K[I] and canonical plinth ideal (I^k), with k=1 separated by its trivial Makar-Limanov invariant. Thus a fiber conjugacy would force k=3. The generic time differential has puncture pole order k for F_k and order two for R21, forcing k=2. Hence every coordinate F_k=a+c^k*(b+a*d) is globally excluded. For the closest row k=2, the explicit polynomial map G=(a-c*d)/36, C=6*d, W=-1/(36*d^2)+I*(c-2/d^3)/864 intertwines the fiber derivations after localization at I; W is polynomial and the Jacobian is exactly -I/5184. This is an exact dense-open conjugacy but not a polynomial automorphism, locating the failure of that family on the affine-modification divisor I=0. The degree-seven Bezout coordinate F=A*(Q+G^2/2)-B*P, where A=G*C^4/6 and B=G^2*C^3/3-1, belongs to an explicit determinant-one polynomial coordinate system (F,G,C,W). Under (a,c,d)=(G+C*W,W,C), its zero hypersurface pulls the complete R21 b=0 two-form back to the restricted standard form exactly. The first transverse normal equation D(s)=-C^2*G/3 has the polynomial solution s=-2/C-I^2*L/144 because the apparent pole cancels against a constant-ring invariant. The resulting full normal--tangent form jet is polynomial and its source-fiber vector is divergence-free. That vector is not locally nilpotent because C divides its nonzero C-component, so a single finite exponential does not give a four-dimensional polynomial normalizer. For the canonical minimal first jet, the order-F residual of the formal-flow second jet has no tangent--tangent terms and only three q-independent normal coefficients. Bezout gives a polynomial form correction Z, but fiber-volume compatibility requires D(lambda)=-div(Z). The grading wt(C)=2, wt(G)=-3, wt(W)=-6 forces lambda=G*C*p(N,J); its coefficient recurrence reaches p_5=-17/5388768 and then has a nonzero constant tail at every order. Hence the canonical minimal first jet has no polynomial volume-compatible second completion. The divergence obstruction is affine-linear in an arbitrary first-jet shift h. The grading shows that only ker(D)_{-2}=I^2*U*K[S] can change its weight-two class. For the leading monomial I^2*U*S^m, r=m+2, the top J^r coefficient of p_5 is (-1728)^r*(r-1)*(3r-4)*(3r-2)*(3r-1)*(9r^2-24r-5)/716636160, which is nonzero for every integer r>=2. Descending on deg(K) excludes every nonzero K, while K=0 leaves p_5=-17/5388768. Thus no polynomial invariant first-jet shift admits a second completion, and no polynomial R21 normalizer can have this degree-seven F as target-b component. In the full reciprocal Bezout ansatz Q_H=Q+H(G,C), the fiber bracket is {F_H,W_H}|_(F_H=0)=-H_G, so R21 compatibility forces H=G^2/2+k(C); this is only the ambient symplectic shear Q->Q+k(C), and the complete source form is unchanged. Every other Bezout pair is (R+B*T,S-A*T) and changes only the companion W->W-T*F. Hence the all-invariant second-order no-go excludes the complete compatible Bezout ansatz. Abstractly, after a fiber and first-jet admission, the class [div(Z)] in A/D(A) is a well-defined second-order obstruction because all form corrections differ by lambda*D. R21 remains exactly fiber-admitted, but global admission through a genuinely different coordinate or polarization is open.",
+      "scope": "For arbitrary characteristic-zero polynomials g,h in K[p1], the potential A=p1*q2+(c/2)*p2^2+g(p1)*p2+h(p1) has N=Pi*Hess(A) with N^4=0, N^3 nonzero and N^2 nonzero on c!=0. Its Cayley matrix is row-integrable, and the resulting four-tuple is an explicitly invertible triangular polynomial symplectic map whose odd Moyal bidifferentials of orders at least three vanish. In the surrounding ansatz p1*q2+p2^2+f(p1,p2), the only row curls are f_222/4-f_122/2 and -f_222/2, so integrability forces f_22 and therefore N^2 to be constant. For reciprocal R21 over Q[q]/(q^2-4q+6), the exact polynomial Keller triple, quartic incidence, determinant-one cotangent graph form, and the SL2 stable charts generated by A^n-x*y^2*(1+A+...+A^(n-1))=1 are verified for n=1,...,4. The natural B+x*e and P+x*e charts each retain all six symplectic-pair defects. A 262-by-6 coefficient screen has rank six, so no nonzero constant target two-form has constant pullback and the affine-contact route is excluded. In tangent-identity graph coordinates, one elementary shear and ten exact polynomial Hamiltonian/elementary shears, each with a polynomial inverse, remove every bracket defect through degree four; the explicit first remaining defect has degree five. Nevertheless R=x*S with S nonconstant and S|_(x=0)=1. Comparing the stable differential in the graph form proves that any Darboux source change whose three base coordinates are independent of the stable variable would force R to be a polynomial coordinate, contradicting this reducible factorization. Thus the entire fiber-preserving stabilization subgroup is excluded. On the necessary stable-mixed U_2 chart Z=B+x*e, twenty-six exact elementary/Hamiltonian shears remove every defect through degree six and leave an explicit nonzero degree-seven six-tuple. The quintic and sextic correction vectors and their polynomial integrations are exact. For a homogeneous degree-m Poisson defect D_m, the closed form defect E_m=(-Pi)D_m(-Pi) has radial primitive alpha_m=i_Euler(E_m)/(m+2), and V_(m+1)=Pi*alpha_m cancels D_m. Induction therefore gives a formal Darboux trivialization to every order; the checker verifies the recurrence exactly on the degree-six and degree-seven rows. The straight-line Moser series has nonzero Pfaffian correction Delta. Source dilation K_s(u)=K(su)/s gives a constant-Pfaffian path and an exact polynomial trivializing field, but its time-one map is the nonpolynomial inverse of the irreducible generic-degree-four graph map. On the b=0 fiber, the primitive kernel derivation has delta(d)=d^4*(a-c*d)/6 nonzero, so it is not locally nilpotent. The invariant curve d^3*c=2, d^4*(a-c*d)^2-12*d=1 has coordinate y=d^2*(a-c*d), induced derivation ((y^2-1)^2/144)*partial_y, and time-form residues -36 and 36 at y=1 and y=-1. Therefore the fiber kernel has no polynomial slice. For any Darboux normalizer H, its target-b component H_1 cannot have a polynomial Poisson mate modulo H_1; in particular H_1 cannot be an elementary coordinate lambda*u_i+F(other variables). This excludes all twenty-six explicit corrections and every elementary b-moving repair. Every coordinate of degree at most two has a linear Poisson mate. Conversely, for every k>=1 the tame coordinate F_k=a+c^k*(b+a*d) has no polynomial Poisson mate on F_k=0; the cubic k=1 row shows that the necessary condition is sharp in degree. On the invariant curve I=1,J=0 its time form is -2^k*dt/(t^2-1)^k with nonzero residues, and its pole order and transverse logarithmic weight are both k. The R21 target instead has split signature (2,3). The bounded degree-seven Darboux-polynomial census is not an all-degree classification: the k=2 row acquires a new primitive irreducible weight-one Darboux polynomial in degree eight. The complete polynomial constant rings are instead computed exactly. For F_k they are K[I,S,U]/(I^k*U-S*(S-(-2)^k)); for R21 the relation is I^3*U=S*(S-3456). These Danielewski rings have intrinsic exponent k and 3, detected for k>=2 by the Makar-Limanov invariant K[I] and canonical plinth ideal (I^k), with k=1 separated by its trivial Makar-Limanov invariant. Thus a fiber conjugacy would force k=3. The generic time differential has puncture pole order k for F_k and order two for R21, forcing k=2. Hence every coordinate F_k=a+c^k*(b+a*d) is globally excluded. For the closest row k=2, the explicit polynomial map G=(a-c*d)/36, C=6*d, W=-1/(36*d^2)+I*(c-2/d^3)/864 intertwines the fiber derivations after localization at I; W is polynomial and the Jacobian is exactly -I/5184. This is an exact dense-open conjugacy but not a polynomial automorphism, locating the failure of that family on the affine-modification divisor I=0. The degree-seven Bezout coordinate F=A*(Q+G^2/2)-B*P, where A=G*C^4/6 and B=G^2*C^3/3-1, belongs to an explicit determinant-one polynomial coordinate system (F,G,C,W). Under (a,c,d)=(G+C*W,W,C), its zero hypersurface pulls the complete R21 b=0 two-form back to the restricted standard form exactly. The first transverse normal equation D(s)=-C^2*G/3 has the polynomial solution s=-2/C-I^2*L/144 because the apparent pole cancels against a constant-ring invariant. The resulting full normal--tangent form jet is polynomial and its source-fiber vector is divergence-free. That vector is not locally nilpotent because C divides its nonzero C-component, so a single finite exponential does not give a four-dimensional polynomial normalizer. For the canonical minimal first jet, the order-F residual of the formal-flow second jet has no tangent--tangent terms and only three q-independent normal coefficients. Bezout gives a polynomial form correction Z, but fiber-volume compatibility requires D(lambda)=-div(Z). The grading wt(C)=2, wt(G)=-3, wt(W)=-6 forces lambda=G*C*p(N,J); its coefficient recurrence reaches p_5=-17/5388768 and then has a nonzero constant tail at every order. Hence the canonical minimal first jet has no polynomial volume-compatible second completion. The divergence obstruction is affine-linear in an arbitrary first-jet shift h. The grading shows that only ker(D)_{-2}=I^2*U*K[S] can change its weight-two class. For the leading monomial I^2*U*S^m, r=m+2, the top J^r coefficient of p_5 is (-1728)^r*(r-1)*(3r-4)*(3r-2)*(3r-1)*(9r^2-24r-5)/716636160, which is nonzero for every integer r>=2. Descending on deg(K) excludes every nonzero K, while K=0 leaves p_5=-17/5388768. Thus no polynomial invariant first-jet shift admits a second completion, and no polynomial R21 normalizer can have this degree-seven F as target-b component. In the full reciprocal Bezout ansatz Q_H=Q+H(G,C), the fiber bracket is {F_H,W_H}|_(F_H=0)=-H_G, so R21 compatibility forces H=G^2/2+k(C); this is only the ambient symplectic shear Q->Q+k(C), and the complete source form is unchanged. Every other Bezout pair is (R+B*T,S-A*T) and changes only the companion W->W-T*F. Hence the all-invariant second-order no-go excludes the complete compatible Bezout ansatz. More generally, for independent base translations F=-B*P+A*Q+K(G,C), W=R*P+S*Q+L(G,C), the complete source form differs from the canonical form in exactly one dG^dC coefficient, and that coefficient is the fiber-admission PDE. Every admitted affine-momentum row therefore has the same excluded full form. Abstractly, after a fiber and first-jet admission, the class [div(Z)] in A/D(A) is a well-defined second-order obstruction because all form corrections differ by lambda*D. R21 remains exactly fiber-admitted, but global admission through a genuinely different coordinate or polarization is open.",
       "canonical_source": "extended-geometry/DC2_HIGHER_NILPOTENCE_R21_FRONTIER.md",
       "dependencies": [],
       "checker": "scripts/verify_dc2_higher_nilpotence_r21_frontier.py",
@@ -26842,7 +26952,7 @@
       "independent_replay": true,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:cba3e427e858fd341f120c77875f3d635f0f00a77512e95cf6b6b240eedba795",
+      "artifact_hash": "sha256:8399cd9c656dac7042349473a3ec93e78d6fb0b6447105ad1136b0c156d50060",
       "software_lock": [
         ".python-version",
         "requirements.txt"

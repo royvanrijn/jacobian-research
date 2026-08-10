@@ -221,9 +221,13 @@ remaining edges are of three kinds:
 3. conductor frames attaching to the node, triple, and \(q\)-\(r\) corner
    charts.
 
-Until those edges are computed, the compact multidegree-\((3,1,1)\) Čech
-class is not defined globally.  Full inverse-adjugate polynomiality and
-affine-space recognition therefore remain gated.
+The subsequent
+[`F20_STRICT_BOUNDARY_ATTACHMENTS.md`](F20_STRICT_BOUNDARY_ATTACHMENTS.md)
+certifies the cusp \(E_4\)-to-\(r\), triple \(E_2\)-to-\(d\), and
+\(q\)-\(r\) \(A\)-packet-to-\(q\) families.  The remaining strict-\(r\)
+and conductor edges still prevent the compact multidegree-\((3,1,1)\)
+Čech class from being defined globally.  Full inverse-adjugate
+polynomiality and affine-space recognition therefore remain gated.
 
 ## 7. Reproduction
 

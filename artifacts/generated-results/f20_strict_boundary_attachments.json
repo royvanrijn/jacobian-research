@@ -1,0 +1,161 @@
+{
+  "attachment_families_certified": 3,
+  "exact_negative_gate": {
+    "incidence_residual": "2*a - 2*z - 5",
+    "name": "q_node_to_strict_q",
+    "q_strict_transform": "4*e**2*z**2 + 8*e*z**2 + 4*z**2 + 8*z - 1",
+    "reason": "the scaled h_q incidence fixes the base slope, not the moving root centre; a conductor-normalized saturation is still required",
+    "root_coordinate_coefficient_at_exceptional": 0,
+    "status": "conductor_degenerate_open"
+  },
+  "exceptional_strict_attachments": [
+    {
+      "R_transverse_derivative": 2560,
+      "compact_degree_3_1_1_equals_derivative_order": true,
+      "compact_local_section": "Z_r=e^4*lambda*T_r",
+      "controlled_equations": {
+        "P": "e^5*F",
+        "P_X": "e^4*F_A",
+        "h_r": "e^8*H",
+        "r": "e^10*z^4*R"
+      },
+      "geometric_attachment_colors": 2,
+      "incidence_residual": "-(256*A**2 - 16*A - 1)/1073741824",
+      "incidence_residual_degree": 2,
+      "incidence_residual_separable": true,
+      "name": "r_cusp_E4_to_strict_r",
+      "normalized_boundary_scale": "R=lambda^2",
+      "result": "P=e^5*lambda^2*Phi; P_X=e^4*lambda*Phi_Y",
+      "root_shift": "A=A_0+lambda*Y",
+      "saturated_incidence_membership": {
+        "F": true,
+        "F_A": true,
+        "groebner_size": 8,
+        "saturation_pivot": "lc_A(H)"
+      },
+      "strict_boundary_corner": "e=0, z=1/2560"
+    },
+    {
+      "D_transverse_derivative": "4*I",
+      "compact_degree_3_1_1_equals_derivative_order": true,
+      "compact_local_section": "Z_d=e*lambda*T_d",
+      "controlled_equations": {
+        "P": "e^4*F",
+        "P_X": "e^3*F_Z",
+        "d": "e^2*D",
+        "root_centre": "Z_c=e*z/2"
+      },
+      "derivative_4_not_in_D": true,
+      "derivatives_0_through_3_in_D": true,
+      "name": "triple_E2_to_strict_d",
+      "normalized_boundary_scale": "D=lambda^4",
+      "quotient_term_counts": [
+        13,
+        11,
+        9,
+        6
+      ],
+      "result": "P=e^4*lambda^4*Phi; P_X=e^3*lambda^3*Phi_Y",
+      "root_shift": "Z=Z_c+lambda*Y",
+      "strict_boundary_corner": "e=0, z=0"
+    },
+    {
+      "compact_degree_3_1_1_equals_derivative_order": true,
+      "compact_local_sections": {
+        "Z_q": "e*lambda*T_q",
+        "Z_r": "e*T_r"
+      },
+      "controlled_equations": {
+        "P": "e^3*F",
+        "P_X": "e^2*F_Y",
+        "h_q": "e*H",
+        "q": "e^2*Q"
+      },
+      "incidence_pivot_nonzero": true,
+      "name": "q_r_E2_A_to_strict_q",
+      "normalized_boundary_scale": "Q=lambda",
+      "residue_modulus": "8*alpha**3 + 16*alpha**2 + 2*alpha - 7",
+      "result": "P=e^3*lambda^2*Phi; P_X=e^2*lambda*Phi_W",
+      "root_shift": "Y=A_q+lambda*W",
+      "saturated_incidence_membership": {
+        "F": {
+          "groebner_size": 2,
+          "in_Q_power": 2,
+          "pseudo_remainder_terms": 428
+        },
+        "F_Y": {
+          "groebner_size": 2,
+          "in_Q_power": 1,
+          "pseudo_remainder_terms": 306
+        }
+      },
+      "strict_q_corner_z": "-8*(166*alpha**2 + 139*alpha - 93)/25"
+    }
+  ],
+  "generic_attachment": {
+    "P_X_at_centre_in_q": true,
+    "P_at_centre_in_q_squared": true,
+    "name": "generic_strict_q_open",
+    "normalized_boundary_scale": "q=lambda (unramified coloured branches)",
+    "open_set": "s-1 is invertible",
+    "result": "P=lambda^2*Phi; P_X=lambda*Phi_Y",
+    "root_centre": "(2*s**2*t + 2*s**2 + 3*s - 4)/(2*s - 2)",
+    "root_shift": "X=A_q+lambda*Y"
+  },
+  "geometric_attachment_colors_certified_at_least": 5,
+  "remaining_frontier": {
+    "affine_space_recognition": "not_reached",
+    "conductor_to_triple_and_transverse_packets": "open",
+    "entrywise_inverse_adjugate_polynomiality": "not_reached_globally",
+    "global_Cech_class": "undefined until all colored overlap edges are certified",
+    "q_node_conductor_to_strict_q": "open after exact degeneracy diagnosis",
+    "q_r_A_and_B_to_strict_r": "Cartier centres and double-root fibres certified; saturated family membership open",
+    "triple_E1_to_strict_r": "Cartier centre and double-root fibre certified; saturated family membership open"
+  },
+  "schema": "f20-strict-boundary-attachments-v1",
+  "status": "three_attachment_families_certified_conductor_edges_open",
+  "strict_r_cartier_frontier": {
+    "candidate_geometric_colors": 8,
+    "q_r_tangency": {
+      "packets": [
+        {
+          "full_family_incidence_membership": "open",
+          "geometric_colors": 3,
+          "incidence_pivot_nonzero": true,
+          "packet": "A",
+          "residual_root_multiplicity": 2,
+          "root_centre": "(8*alpha**2 + 2*alpha - 9)/5",
+          "saturation_correction": null
+        },
+        {
+          "full_family_incidence_membership": "open",
+          "geometric_colors": 3,
+          "incidence_pivot_nonzero": true,
+          "packet": "B",
+          "residual_root_multiplicity": 2,
+          "root_centre": "(36*alpha**2 + 24*alpha - 23)/5",
+          "saturation_correction": "-3*(434*alpha**2 + 353*alpha - 317)/2"
+        }
+      ],
+      "residue_modulus": "8*alpha**3 + 16*alpha**2 + 2*alpha - 7",
+      "strict_r_corner_z": "-6*(52*alpha**2 + 58*alpha - 21)/25"
+    },
+    "status": "cartier_centres_and_double_root_fibres_certified_family_saturation_open",
+    "triple_E1": {
+      "full_family_incidence_membership": "open",
+      "geometric_colors": 2,
+      "incidence_pivot": "b*(-527/32 - 21*I/2)",
+      "residual_root_multiplicity": 2,
+      "residue_modulus": "b**2 + I",
+      "root_centre": "Y=0",
+      "strict_r_corner_z": "-1/20 - I/10"
+    }
+  },
+  "weighted_taylor_cox_theorem": {
+    "conclusion": "under Y=c+lambda*W, F=lambda^m*Phi and F_Y=lambda^(m-1)*Phi_W",
+    "controlled_transform": "if P=e^N*F and X=xi+e^r*Y then P_X=e^(N-r)*lambda^(m-1)*Phi_W",
+    "cox_gate": "a compact Cox monomial is a literal derivative divisor when its (exceptional,boundary) order equals (N-r,m-1)",
+    "hypothesis": "partial_Y^k F(c) belongs to (lambda^(m-k)) for 0<=k<m",
+    "setup": "A is a regular local chart, lambda is the normalized boundary scale, F is polynomial in Y, and c is a Cartier-compatible root centre"
+  }
+}

@@ -507,6 +507,8 @@ python3 scripts/verify_boundary_package_compiler.py
   --output artifacts/generated-results/f20_exceptional_cox_atlas.json
 .venv/bin/python scripts/verify_f20_exceptional_cox_corners.py \
   --output artifacts/generated-results/f20_exceptional_cox_corners.json
+.venv/bin/python scripts/verify_f20_strict_boundary_attachments.py \
+  --output artifacts/generated-results/f20_strict_boundary_attachments.json
 ```
 
 Besides the class-trivial-core and balanced-wild rows, these commands check
@@ -612,6 +614,17 @@ also proves the complementary `q`-node transition law and certifies that the
 positive triple-`E1` and triple-`E2` colors are root-center separated despite
 base-ray adjacency.  Strict-boundary attachments and the global Čech class
 remain outside the certificate.
+The strict-boundary command requires Singular for one saturated incidence
+calculation and otherwise uses exact SymPy arithmetic.  It proves the
+weighted Taylor--Cox attachment theorem and instantiates it on the cusp
+`E4`-to-`r`, triple-`E2`-to-`d`, and `q-r` `A`-packet-to-`q` families.  It
+also proves that the `q`-node scaled incidence loses its root-coordinate
+coefficient, so that edge remains a conductor-normalization problem.  It
+locates Cartier-compatible double-root fibres for the remaining two triple
+and six `q-r` strict-`r` candidate colours, without claiming their full
+family saturation.  Those saturations, conductor transitions, global Čech class,
+inverse-adjugate polynomiality, and affine-space recognition are not
+claimed.
 The boundary-package compiler command also verifies the sharp scalar
 conductor/contact-loss bound
 `n_i >= c_i+d_i+ell_i+epsilon_i`, its stronger per-input/output dependency
@@ -8310,6 +8323,7 @@ three:
   --pari-mordell-weil
 .venv/bin/python scripts/verify_psl2_11_keller_action_spectrum.py \
   --singular-normalization
+.venv/bin/python scripts/verify_psl2_11_normalization_masks.py
 Singular -q scripts/psl2_11_c5_boundary_pullbacks.sing
 .venv/bin/python scripts/verify_psl2_11_c6_boundary_images.py
 ```
@@ -8322,14 +8336,21 @@ conductor ideals equal their reduced singular ideals, verifies five/eight
 ordinary nodes and all fifteen/twenty normalized boundary primes, and
 replays the canonical elimination for the genus-two sextic and both
 quadratic Cremona transformations from the nodal quintic to the sparse
-cubic.  The fourth labels the \(C_5\) boundary primes by both projection
-colors and separates all three normalized node branches.  The fifth
-requires Singular and SymPy; it replays the nineteen direct \(C_6\) residue
+cubic.  It then runs the exact normalization-module mask replay.  The fourth
+is that robust standalone replay: it pins the Singular source hash, rejects
+silent procedure failures, verifies the small \(C_5\) formulas, constructs
+the \(C_6\) filtered Riemann--Roch spaces of dimensions \(23,29,41\), solves
+all seven prime-power evaluation kernels, and imposes the two infinity-five
+jets selecting the asymmetric mask.  The fifth labels the \(C_5\) boundary
+primes by both projection colors and separates all three normalized node
+branches.  The sixth requires Singular and SymPy; it replays the nineteen
+direct \(C_6\) residue
 traces through both elliptic quotients and recovers the remaining
 \(q_2\)-node class from its principal fiber relation.
 
 The action-level classification problem, determinant-one common-target
-Keller charts, affine-completion obstructions, and external
+Keller charts, the natural prime-triangle genus formula, affine-completion
+obstructions, and external
 Jones--Zvonkin monodromy input are in
 [`extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md`](extended-geometry/PSL2_11_KELLER_ACTION_SPECTRUM.md).
 
@@ -11900,7 +11921,10 @@ no polynomial second completion. Finally, it checks the general identity
 `{F_H,W_H}|_(F_H=0)=-H_G`, proving that compatible shifts are only the
 ambient symplectic shears `H=G^2/2+k(C)`, and verifies that every other
 Bezout pair changes the companion by `W->W-T*F`. Thus the no-go covers the
-complete reciprocal-compatible Bezout ansatz.
+complete reciprocal-compatible Bezout ansatz. The same run allows independent
+base translations `K(G,C),L(G,C)` and proves that their only full-form
+difference is their fiber-admission PDE; every admitted affine-momentum pair
+therefore reduces to the already-excluded canonical form.
 
 ```bash
 .venv/bin/python scripts/verify_dc2_higher_nilpotence_r21_frontier.py \
@@ -11933,7 +11957,7 @@ symbolic computation.
 ## HC4 direct repeated-linear Hessian-factor gates
 
 Replay the exact all-degree normal-form and boundary-jet identities for
-`HC4-DIR3--22` with
+`HC4-DIR3--27` with
 
 ```bash
 .venv/bin/python scripts/verify_hc4_direct_double_linear_hessian_gate.py
@@ -12036,6 +12060,28 @@ three-root cases, and proves in the written all-degree argument that
 polynomiality kills the three-root parameter.  If the first jet vanishes,
 exact sextuple order forces the first positive `ell`-jet to be `ell^8` and
 therefore `D>=8`.
+`HC4-DIR23` checks the normal-packet square boundary field, the scalar
+coefficient that kills its diagonal tangent weight, and the immutable next
+matrix coefficient.  `HC4-DIR24` checks the product-rule identity behind the
+delayed-jet rank collapse; the written argument applies it to every
+invertible binary boundary Hessian with two missing normal jets.
+`HC4-DIR25` checks the polynomial boundary kernel of both outer jets, the
+order-one scalar relations, and their shared tangent factor with nonzero
+coefficient `-(2a+4b)*kappa^2`.  Thus every generic-corank-one exact-sextuple
+packet is closed; the lower-rank boundary is handled next.
+`HC4-DIR26` checks the lower-rank order-one recurrence weights and the sole
+`m=3` resonance.  The first order-one jet is empty; the second is already a
+subfamily of the order-two tangent top, with exact Hessian determinant
+`-32*v^2*ell^6*(c*ell^3+10*y^3)`.  Hence the lower-rank handoff is one common
+degree-five top geometry with two synchronized motion orders.
+`HC4-DIR27` checks the bordered determinant split for the order-two family.
+Its complete potential is affine in the kernel variable with quadratic pivot
+`P=2*C*ell^2+linear`; a missing tangent linear part is polynomially
+impossible, while a nonzero one invokes the registered fiber reduction
+`HC4RSD12`.  Only the order-one degree-five resonance remains.
+For that resonance the checker also verifies the forced pure-cube pivot top
+`a_3=(4v/3)*ell^3`; its complete scalar-parent form is the next uniform
+classification target.
 The UFD/DVR argument showing that the required half radical divides the
 adjugate motion vector is the written proof in
 `HC4_DIRECT_DOUBLE_LINEAR_HESSIAN_GATE.md`, not a bounded search.

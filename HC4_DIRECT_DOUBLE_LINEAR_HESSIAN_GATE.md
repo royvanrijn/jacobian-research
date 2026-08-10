@@ -6,9 +6,10 @@ This note continues `HC4-DIR1--2` in the direct homogeneous filtration of an
 arbitrary four-variable constant-Hessian polynomial.  It treats the first
 non-squarefree Hessian-discriminant strata, closes exact linear multiplicities
 three and four, and closes both boundary ranks of exact linear multiplicity
-five.
+five.  At exact multiplicity six it closes the complete generic-corank-one
+boundary and reduces the lower-rank boundary to three explicit packets.
 
-The identifiers `HC4-DIR1--22` have not yet been promoted to
+The identifiers `HC4-DIR1--27` have not yet been promoted to
 `MATH_STATUS.json`.  The proof and exact identity checker below form a proof
 package awaiting registry audit; they do not change authoritative repository
 status.
@@ -322,18 +323,117 @@ A_0=\operatorname{Hess}f,
 > respectively, and their second jets are the explicit monomials
 > (5.64au)--(5.64av) below.
 
+> **Theorem HC4-DIR23 — normal rank-two closure.**  The normal packet
+> (0.5) is empty.  More precisely, its scalar and matrix equations force,
+> after boundary-preserving coordinates,
+>
+> \[
+> f=xCy^{m+1}+x^2\frac{\alpha C}{\rho}y^{m-1}z+O(x^3),
+> \qquad
+> Q^x=\alpha x^2,
+> \qquad
+> Q_{\rm tan}\bmod x=\rho y^2\partial_z,
+> \tag{0.11}
+> \]
+>
+> with `alpha*C*rho!=0`.  The boundary value of `Q(F) in (x^3)` then
+> kills the remaining diagonal tangent weight, while the next tangent
+> matrix coefficient is a nonzero immutable multiple of `m+3`.  Hence no
+> normal rank-two packet survives.
+
+> **Theorem HC4-DIR24 — delayed-jet rank-collapse gate.**  In any rank-two
+> quadratic-field packet with invertible binary boundary Hessian, the
+> simultaneous conditions
+>
+> \[
+> f_1=f_2=0
+> \tag{0.12}
+> \]
+>
+> force `rank(Jac(Q) mod x)<=1`.  Indeed the first tangent field `l`
+> satisfies both `l(f_0)=0` and
+> `Jac(l)^T*grad(f_0)=0`, and differentiation gives
+> `Hess(f_0)l=0`.  Thus every order-eight two- and three-root packet in
+> (0.10) is empty.  This gate depends only on the two missing jets and the
+> invertible boundary Hessian, not on root multiplicities or exact sextuple
+> order.
+
+> **Theorem HC4-DIR25 — outer-jet closure.**  Both exceptional two-root
+> outer jets in (0.8) are empty.  For the first orientation, polynomiality
+> of the boundary Hessian kernel fixes
+>
+> \[
+> Q_0=\left(y^2,-\frac{2\kappa}{a}yz,
+>                 \frac{\kappa}{b}z^2\right)
+> \tag{0.13}
+> \]
+>
+> after rescaling.  The coefficient of `x` in `Q(f)=x^3F` fixes the four
+> possible entries of `Q_1`; the two tangent components of the matrix
+> equation at the same order then contain the unavoidable coefficient
+> `-(2a+4b)*kappa^2`.  The mirrored orientation is symmetric.  Consequently
+> the complete generic-corank-one exact-sextuple system is empty.
+
+> **Theorem HC4-DIR26 — lower-rank sextuple synchronization.**  The
+> `x^2g` order-one packet in (5.68) is empty.  The pure-power order-one
+> packet (5.69) either has zero exact-sextuple coefficient or is the unique
+> resonance `m=3`, where
+>
+> \[
+> f=y^5+cx^3y^2+x^4(uy+vz)+dx^5,
+> \qquad
+> L=x\partial_z,
+> \qquad cv\ne0,
+> \tag{0.14}
+> \]
+>
+> and
+>
+> \[
+> \det\operatorname{Hess}f
+> =-32v^2x^6(cx^3+10y^3).
+> \tag{0.15}
+> \]
+>
+> In particular this is already a subfamily of the degree-five tangent top
+> (5.67).  Thus all lower-rank exact-sextuple survivors have the single top
+> geometry `f=C*z*x^4+h_5(x,y)`, with either the order-two constant direction
+> `partial_z` or the resonant order-one direction `x*partial_z`.
+
+> **Theorem HC4-DIR27 — lower-rank order-two scalar-pivot closure.**  No
+> order-two completion of the common top family (5.67) can be an HC4
+> counterexample.  Every such completion is affine in the top-kernel
+> variable and has quadratic pivot
+>
+> \[
+> P=2Cx^2+\ell(x,y,z).
+> \tag{0.16}
+> \]
+>
+> If the tangent part of `ell` vanishes, its bordered Hessian determinant is
+> a nonconstant square times a polynomial and cannot be a unit.  Otherwise
+> `P` has a constant unit direction, and the registered quadratic
+> zero-corner scalar-parent theorem `HC4RSD12` reduces every collision fiber
+> to `HC3`.  Thus the sole exact-sextuple lower-rank counterexample frontier
+> is the order-one resonance (0.14).
+
 Consequently a genuinely ternary rank-three top cone of degree at least five
-can survive `HC4-DIR2--22` only if its Hessian determinant has a repeated
+can survive `HC4-DIR2--27` only if its Hessian determinant has a repeated
 nonlinear factor, a linear factor of multiplicity at least six, or at least
 two distinct repeated factors.  Exact linear multiplicities three, four, and
 five are completely closed by `HC4-DIR3b--8`; at exact multiplicity six the
 generic rank-one quadratic-Jacobian branch is empty.  The only generic
 sextuple order-one branch has quadratic-Jacobian boundary rank two and is
 reduced by `HC4-DIR18` to the normal packet (0.5) and the three root profiles
-(0.6); `HC4-DIR20` closes the one-root profile, and `HC4-DIR21` gives the
-finite first jets (0.8)--(0.9) for the other two.  `HC4-DIR22` pushes the
-zero and three-root rows to order eight and leaves only two explicit outer
-second-jet families.
+(0.6); `HC4-DIR20` closes the one-root profile, `HC4-DIR23` closes the normal
+packet, `HC4-DIR24` closes every delayed two-/three-root row, and `HC4-DIR25`
+closes the two outer jets.  Thus the complete generic-corank-one exact
+sextuple stratum is empty.  `HC4-DIR26` further synchronizes the three
+lower-rank Hessian handoffs of `HC4-DIR10` to the single degree-five tangent
+top family (5.67), with order two or one along its same tangent direction;
+`HC4-DIR27` closes the complete order-two counterexample branch.  Only the
+degree-five order-one resonance (0.14) remains at exact linear multiplicity
+six.
 
 ## 1. The first moving off-diagonal block
 
@@ -2501,11 +2601,220 @@ f=f_0+x^8h_{D-8}+O(x^9),
 
 This proves `HC4-DIR22`.
 
-Thus the sole generic-corank-one sextuple target is boundary Jacobian rank
-two, reduced to the normal packet (0.5), the two exceptional outer jets
-(5.64au)--(5.64av), and the order-eight packets (5.64ay).  The three
-lower-rank Hessian packets in `HC4-DIR10` remain separate.  This proves the
-reduction asserted in `HC4-DIR9`.
+We next close the normal packet.  To avoid confusing a vector component with
+a derivative, write `Q^x,Q^y,Q^z` for the components of `Q`.  Since `f_0=0`,
+put
+
+\[
+f=xp_n(y,z)+x^2g_{n-1}(y,z)+x^3h_{n-2}(y,z)+O(x^4),
+\qquad n=m+1.
+\tag{5.64az}
+\]
+
+Boundary Hessian rank two makes `p_n` nonconstant.  Equation (5.64ag) and
+homogeneity give
+
+\[
+Q^x=\alpha x^2,
+\qquad
+(Q^y,Q^z)=q(y,z)+x l(y,z)+x^2c,
+\tag{5.64ba}
+\]
+
+where `q` is quadratic, `l` is linear, and `c` is constant.  The coefficients
+of order `x` and `x^2` in the first equation of (5.64b), and the order-`x`
+normal and tangent components of its middle equation, give
+
+\[
+q(p)=0,
+\qquad
+\alpha p+q(g)+l(p)=0,
+\qquad
+2\alpha p+l(p)=0,
+\qquad
+\operatorname{Jac}(q)^{\mathsf T}\nabla p=0.
+\tag{5.64bb}
+\]
+
+The last identity and `rank(N mod x)=2` force `Jac(q)` to have rank one.
+Indeed rank two would kill `grad(p)`, while rank zero would leave only the
+single `x`-column of `N mod x`.  A homogeneous binary quadratic map of
+Jacobian rank one has constant image line: Euler contraction of
+`dq_1 wedge dq_2=0` makes its two components proportional.  Thus
+`q=q_2u` for a constant tangent vector `u`.  Now `q(p)=0` says `D_u p=0`, so
+
+\[
+p=CM^n
+\tag{5.64bc}
+\]
+
+for a linear form `M` with `D_uM=0`.  The third identity in (5.64bb) gives
+`l(M)=-(2*alpha/n)M`.  If `alpha=0`, both `q` and `l` take values in the line
+`Ku`, again making `rank(N mod x)<=1`.  Hence `alpha!=0`.  The other two
+identities in (5.64bb) reduce to
+
+\[
+q_2D_ug=\alpha CM^n.
+\tag{5.64bd}
+\]
+
+Unique factorization forces `q_2=rho*M^2`, with `rho!=0`.  Normalize
+`M=y`, `u=partial_z`.  Then, for constants `A,r,s`,
+
+\[
+\begin{aligned}
+p&=Cy^n,\\
+q&=\rho y^2\partial_z,\\
+g&=B y^{n-2}z+A y^{n-1},
+\qquad B=\frac{\alpha C}{\rho},\\
+l&=-\frac{2\alpha}{n}y\partial_y+(ry+sz)\partial_z.
+\end{aligned}
+\tag{5.64be}
+\]
+
+Let `F_0=F mod x`.  The coefficient of `x^3` in `Q(f)=x^3F` is
+
+\[
+F_0=\rho y^2h_z+U y^{n-1}
+       +B\left(s+\frac{4\alpha}{n}\right)y^{n-2}z
+\tag{5.64bf}
+\]
+
+for a scalar `U` whose value is irrelevant.  The `z`-component at order
+`x^3` in the middle equation of (5.64b) gives
+
+\[
+\rho y^2h_{zz}
+=-B\left(ns+\frac{4\alpha}{n}\right)y^{n-2}.
+\tag{5.64bg}
+\]
+
+Substitution into (5.64bf) leaves
+
+\[
+F_0=V y^{n-1}-B(n-1)s y^{n-2}z.
+\tag{5.64bh}
+\]
+
+The boundary value of the scalar condition `Q(F) in (x^3)` is therefore
+
+\[
+q(F_0)=-\rho B(n-1)s y^n,
+\tag{5.64bi}
+\]
+
+so `s=0`.  Return to the `y`-component of the same order-`x^3` middle
+equation.  Its coefficient of `y^(n-3)z` is now
+
+\[
+-\frac{2\alpha B(n+2)}{n},
+\tag{5.64bj}
+\]
+
+whereas the right side `-(1/(n-1))*partial_y(F_0)` has no such monomial.
+This is nonzero because `alpha*B!=0`.  The contradiction proves
+`HC4-DIR23`.
+
+There is also a short closure that applies simultaneously to all the delayed
+root packets.  Suppose the binary boundary Hessian
+`B_0=Hess_(y,z)(f_0)` is invertible and `f_1=f_2=0`.  The boundary value of
+`Hess(f)Q=x^3*grad(a)` first forces
+
+\[
+Q_0=(q_2(y,z),0,0).
+\tag{5.64bk}
+\]
+
+Write the first tangent coefficient of `Q` as `x*l(y,z)`.  The coefficient
+of `x` in `Q(f)=x^3F` and the tangent part at order `x` of the middle equation
+in (5.64b) say respectively
+
+\[
+l(f_0)=0,
+\qquad
+\operatorname{Jac}(l)^{\mathsf T}\nabla f_0=0.
+\tag{5.64bl}
+\]
+
+Differentiating the first identity and using the second gives
+
+\[
+B_0l=0.
+\tag{5.64bm}
+\]
+
+Thus `l=0` over `K(y/z)`.  But then `N mod x` has only its normal row and has
+rank at most one, contradicting the rank-two packet.  This proves
+`HC4-DIR24`.  Notice that neither the value eight in (5.64ay) nor the number
+of boundary roots entered the argument.  The reusable statement is that two
+missing normal jets plus an invertible tangent Hessian collapse a quadratic
+boundary Jacobian from rank two to rank at most one.
+
+It remains only to close the two outer jets.  Treat
+
+\[
+f_0=y^az^b,
+\qquad
+f_1=\kappa y^{a-2}z^{b+1},
+\qquad
+f_2=\frac{\kappa^2(ab-a-4b)}{2ab}y^{a-4}z^{b+2},
+\tag{5.64bn}
+\]
+
+where `kappa!=0`; the zero value is already covered by `HC4-DIR24`.
+The kernel of the boundary Hessian is generated over `K(y/z)` by
+
+\[
+\left(1,-\frac{2\kappa z}{ay},
+          \frac{\kappa z^2}{by^2}\right).
+\tag{5.64bo}
+\]
+
+Since `Q_0` is a nonzero homogeneous quadratic vector, polynomiality fixes,
+after rescaling `Q` and `F`,
+
+\[
+Q_0=\left(y^2,-\frac{2\kappa}{a}yz,
+                 \frac{\kappa}{b}z^2\right).
+\tag{5.64bp}
+\]
+
+Write
+
+\[
+Q_1=(Ay+Bz,\ Cy+Dz,\ Ey+Gz).
+\tag{5.64bq}
+\]
+
+The coefficient of `x` in `Q(f)=x^3F` is zero.  Its four monomial
+coefficients give
+
+\[
+B=E=0,
+\qquad
+\kappa A+aD=0,
+\qquad
+aC+bG=0.
+\tag{5.64br}
+\]
+
+After these substitutions, the two tangent components at order `x` of the
+middle equation in (5.64b) are a monomial multiple of the same polynomial
+
+\[
+a^2bC y^2-a^2bD yz-(2a+4b)\kappa^2z^2.
+\tag{5.64bs}
+\]
+
+The right side has no tangent term before order `x^3`, so this polynomial
+must vanish.  Its first two coefficients give `C=D=0`, while its last is
+nonzero for positive `a,b` and `kappa!=0`.  This contradiction closes the
+first outer jet.  Interchanging `y,a` with `z,b` closes the second and proves
+`HC4-DIR25`.
+
+Thus every generic-corank-one sextuple packet is empty.  The three lower-rank
+Hessian packets in `HC4-DIR10` remain separate.  This strengthens the
+reduction asserted in `HC4-DIR9` to a complete generic-boundary closure.
 
 ### 5.9 The lower-rank sextuple reduction
 
@@ -2579,7 +2888,198 @@ g_1&=u y^{m-2}+v y^{m-3}z,\\
 \]
 
 Equations (5.67)--(5.69) are the complete lower-rank sextuple handoff.  This
-proves `HC4-DIR10`; no nonexistence claim is made for these residual packets.
+proves `HC4-DIR10`; no nonexistence claim is made there for the residual
+packets.  We now synchronize them.
+
+First take (5.68) and use the order-one system (5.24).  The same boundary
+argument as in (5.12)--(5.14) first gives
+
+\[
+L=\alpha x\partial_y+(\beta x+ry+sz)\partial_z.
+\tag{5.70}
+\]
+
+Indeed divisibility makes `L(x)=lambda*x`; the normal component of (5.24)
+and `L(F) in (x^2)` then force `lambda=0`, while
+`L mod x` must annihilate `g_0=y^m`.  Write
+
+\[
+F=xF_1+x^2F_2+O(x^3),
+\qquad
+P=m\alpha+rv.
+\]
+
+The normal coefficient at order `x^2` and the two tangent coefficients at
+order `x^3` give
+
+\[
+F_1=P y^{m-1}+svy^{m-2}z,
+\qquad
+m\alpha=\left(2-\frac1m\right)P,
+\qquad
+sv=0,
+\qquad
+rv=-\frac{m-1}{m}P.
+\tag{5.71}
+\]
+
+Put `H=alpha*(g_1)_y+beta*(g_1)_z`.  At the next order, the normal equation,
+the definition of `F`, and the `z`-tangent equation are
+
+\[
+F_2=\frac{m}{2(m-1)}H,
+\qquad
+F_2=H+(ry+sz)(g_2)_z,
+\qquad
+s(g_2)_z=-\frac1m(F_2)_z.
+\tag{5.72}
+\]
+
+If `v!=0`, (5.71) gives `s=0`; the last equation in (5.72) then gives
+`alpha=0`, after which (5.71) gives `r=0`.  The two formulas for `F_2` force
+`beta=0` because `m>=3`, contradicting `L!=0`.  Hence `v=0`.  Equations
+(5.71) then give `alpha=0`, and (5.72) gives
+
+\[
+(ry+sz)(g_2)_z=0.
+\tag{5.73}
+\]
+
+If the boundary field is nonzero, `(g_2)_z=0`.  Otherwise
+`L=beta*x*partial_z`; comparison of the next normal coefficient gives either
+`(g_2)_z=0` or the sole weight resonance `m=3`, where `g_2` is linear and
+still `(g_2)_{zz}=0`.  Thus `v=(g_2)_{zz}=0` in (5.68), making its displayed
+exact-sextuple coefficient zero.  The first order-one packet is empty.
+
+Now take (5.69).  The boundary value of the middle equation in (5.24) kills
+the complete `y`-component of `L`.  Writing its other components generally,
+the normal coefficients of orders `x` and `x^2` successively kill the
+boundary part and then the `x`-coefficient of `L(x)`.  Hence
+
+\[
+L=(\delta x+ey+sz)\partial_z.
+\tag{5.74}
+\]
+
+If `v!=0`, then `F` starts at order two with
+`v(ey+sz)y^(m-3)`.  The next normal equation kills `e=s=0`.  Thus
+`L=delta*x*partial_z`, and the following normal coefficient reads
+
+\[
+1=2-\frac3m.
+\tag{5.75}
+\]
+
+It forces `m=3`.  If `v=0`, the identical comparison one order later makes
+`(g_2)_{zz}=0`; its only apparent resonance is `m=4`, where `g_2` is linear
+and the same conclusion holds.  Thus the exact coefficient in (5.69) is
+nonzero only at `m=3`, with `v!=0`.  After rescaling `L`, that packet is
+
+\[
+f=y^5+cx^3y^2+x^4(uy+vz)+dx^5,
+\qquad
+L=x\partial_z,
+\qquad
+F=vx^3.
+\tag{5.76}
+\]
+
+Direct differentiation gives
+
+\[
+\det\operatorname{Hess}f
+=-32v^2x^6(cx^3+10y^3).
+\tag{5.77}
+\]
+
+Squarefreeness of the cofactor requires `c!=0`.  Formula (5.76) already has
+the form (5.67), with its `z*x^4` coefficient equal to `v`.  Therefore all
+three lower-rank handoffs have one top geometry,
+
+\[
+\boxed{f=Czx^4+h_5(x,y),}
+\tag{5.78}
+\]
+
+carrying either the order-two direction `partial_z` or the resonant order-one
+direction `x*partial_z`.  This proves `HC4-DIR26`.  It is a synchronization
+theorem, not yet a nonexistence theorem for the common family (5.78).
+
+The order-two side of (5.78) nevertheless closes at the level relevant to
+`HC4`.  Here `D=5`, so `m=3`, and the first motion occurs at `j=2`.  Since
+every bottom-right coefficient below order `2j=4` vanishes in (1.4), while
+the scaled Hessian polynomial stops at order three, its bottom-right block is
+identically zero.  The complete four-variable potential is therefore
+
+\[
+\Psi=wP(x,y,z)+H(x,y,z).
+\tag{5.79}
+\]
+
+Moreover (5.66), (5.67), and `B=partial_z` give
+
+\[
+\nabla f_z=4Cx^3dx=x^2\nabla a,
+\qquad
+a=2Cx^2.
+\tag{5.80}
+\]
+
+The only later `w`-linear layer has degree one, hence
+
+\[
+P=2Cx^2+\ell(x,y,z)
+\tag{5.81}
+\]
+
+for an affine-linear `ell`.  Put `g=grad(P)`.  If the `(y,z)` part of
+`ell` is zero, then `g=(4Cx+ell_x,0,0)`.  The bordered determinant of
+`Hess(Psi)` is exactly
+
+\[
+\det\operatorname{Hess}\Psi
+=-(4Cx+\ell_x)^2
+  \det\operatorname{Hess}_{y,z}H.
+\tag{5.82}
+\]
+
+This cannot be a nonzero constant because its first factor is nonconstant.
+If the tangent part of `ell` is nonzero, a constant tangent vector `u`
+satisfies `D_uP in K^times`.  Thus (5.79) is precisely a quadratic
+zero-corner scalar parent with a unit pivot direction.  The registered
+theorem `HC4RSD12` puts `P` in a graph coordinate, factors the bordered unit
+into the Hessian determinant on each ternary fiber, and uses `HC3` to exclude
+a gradient collision on that fiber.  Therefore no order-two member of
+(5.78) is an HC4 counterexample.  This proves `HC4-DIR27` and leaves only the
+order-one resonance (5.76) on the exact-sextuple lower-rank frontier.
+
+That last resonance already identifies the broader next target.  Its first
+`w`-linear coefficient is fixed by
+
+\[
+\operatorname{Hess}(f)(x\partial_z)
+=4vx^4dx=x^2\nabla a_3,
+\qquad
+a_3=\frac{4v}{3}x^3.
+\tag{5.83}
+\]
+
+The scalar norm is zero, so the complete potential has the scalar-parent
+form
+
+\[
+\Psi=H(x,y,z)+wP(x,y,z)+\frac{\eta}{2}w^2,
+\qquad
+P=\frac{4v}{3}x^3+P_{\le2}.
+\tag{5.84}
+\]
+
+Thus the next problem is no longer a list of sextuple boundary jets: it is
+the classification of scalar parents whose pivot has pure-cube leading form.
+The zero-corner case `eta=0` and the nonzero-corner reverse-Schur pencil
+`eta!=0` are the two natural branches.  A uniform closure of (5.84) would
+also provide the right template for higher repeated-factor packets whose
+extremal motion is forced to a one-polynomial composite by (6.4)--(6.5).
 
 ## 6. Verification and next boundary
 
@@ -2663,7 +3163,10 @@ the incompatible weights in (5.18), and the rank-one integration
 in (5.39), both quintuple-linear channel ladders (5.43)--(5.46), and the two
 order-five boundary coefficients (5.51) and (5.55).  It further verifies the
 two sextuple high-order channel pairs (5.59) and (5.63), the logarithmic
-residues (5.61), and the lower-rank order-six coefficients (5.68)--(5.69).
+residues (5.61), the lower-rank order-six coefficients (5.68)--(5.69), the
+normal and outer rank-two contradictions (5.64az)--(5.64bs), the delayed-jet
+product-rule gate, the lower-rank recurrence synchronization (5.70)--(5.77),
+and the bordered scalar-pivot determinant (5.82).
 The UFD
 and DVR divisibility arguments, the two rank-two boundary-gradient
 exclusions, and the determinant-channel uniqueness are written proof steps
@@ -2672,8 +3175,8 @@ and are not replaced by a bounded search.
 The next repeated-factor strata are now explicit:
 
 1. one nonlinear repeated Hessian factor;
-2. the residual exact-sextuple systems (5.64a)--(5.64c) and (5.67)--(5.69), or a linear
-   factor of multiplicity at least seven;
+2. the sole exact-sextuple order-one resonance (5.76), or a linear factor of
+   multiplicity at least seven;
 3. two or more distinct repeated factors.
 
 These are the remaining rank-three top-cone inputs to the ternary Schur

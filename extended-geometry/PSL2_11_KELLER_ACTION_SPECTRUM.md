@@ -34,6 +34,15 @@ six and two, and the derivative represents a nonzero class modulo the target
 pullback lattice.  Thus the two actions of the same group teach different
 affine-completion lessons.
 
+The neighboring natural actions sharpen that point.  For every prime
+\(p>3\), the standard modular \((2,3,p)\) triple has natural quotient genus
+\[
+ \bigl[p-6-3(-1\mid p)-4(-3\mid p)\bigr]/12.
+\]
+The values at \(p=7,11,13\) are \(0,1,0\): the elliptic obstruction at
+\(11\) is a split/nonsplit arithmetic effect, not a monotone consequence of
+larger degree.
+
 Normalizing the two direct correspondences gives a further separation.  The
 bidegree-\((5,5)\), total-degree-five component normalizes to the quotient by
 an \(A_4\) intersection subgroup and has genus one.  The bidegree-\((6,6)\),
@@ -70,12 +79,12 @@ nonlinear modifications of two polynomial outputs.
 The residual symmetry is now explicit.  Projection exchange acts trivially
 on the rank-four quotient and as five fixed characters plus one exchanged
 pair on the rank-seven quotient.  Effective regular-mask bases exist.  On
-(C_5), simple-pole masks have index two, so one double-pole mask is
-unavoidable; on (C_6), five fixed mask classes and one exchanged pair give
+\(C_5\), simple-pole masks have index two, so one double-pole mask is
+unavoidable; on \(C_6\), five fixed mask classes and one exchanged pair give
 an integral basis.  Every one of these masks is now constructed exactly in
 the normalization algebra.  A new infinity-imbalance character on the
 rank-seven quotient proves that the asymmetric pole profiles on three of
-the (C_6) classes are intrinsic, not artifacts of the chosen lift.
+the \(C_6\) classes are intrinsic, not artifacts of the chosen lift.
 Assigning one zero-section-preserving normal monomial to each class pins the
 first factor-rich supports in normal degrees two and three.  These are
 coefficient supports with explicit rational functions on the normalized
@@ -189,6 +198,58 @@ The action also has a uniform cycle dictionary.
 Thus a single group-theoretic triangle triple can give quotient curves of
 different genera in different actions.  This is exactly what happens at
 \(q=11\).
+
+For prime \(q=p>3\), the modular generators make this comparison uniform.
+Let
+
+\[
+ S=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+ R=\begin{pmatrix}0&-1\\1&1\end{pmatrix},\qquad
+ T=S^{-1}R
+                                                        \tag{4.2}
+\]
+
+in \(\operatorname{PSL}_2(\mathbb F_p)\).  Their orders are \(2,3,p\);
+the branch triple \((R^{-1},S,T)\) has product one.  It generates because
+\(T\) and its \(S\)-conjugate are the upper and lower elementary
+unipotents.  Put
+
+\[
+ f_2=1+\left(\frac{-1}{p}\right),\qquad
+ f_3=1+\left(\frac{-3}{p}\right).                    \tag{4.3}
+\]
+
+These are exactly the numbers of fixed projective points of \(S\) and
+\(R\), since their fixed-point discriminants are \(-4\) and \(-3\).
+The natural passport is therefore
+
+\[
+ 3^{(p+1-f_3)/3}1^{f_3}\mid
+ 2^{(p+1-f_2)/2}1^{f_2}\mid p\,1,
+\]
+
+and Riemann--Hurwitz gives the closed formula
+
+\[
+ \boxed{\quad
+ g_{\mathrm{nat}}(p)
+ ={p-6-3\left(\frac{-1}{p}\right)
+        -4\left(\frac{-3}{p}\right)\over12}.
+ \quad}                                               \tag{4.4}
+\]
+
+In particular
+
+\[
+ g_{\mathrm{nat}}(7)=0,\qquad
+ g_{\mathrm{nat}}(11)=1,\qquad
+ g_{\mathrm{nat}}(13)=0.                             \tag{4.5}
+\]
+
+Thus the elliptic obstruction at \(11\) is arithmetic, not monotone in
+\(p\): both adjacent prime natural actions return to genus zero.  This
+closes the first genus comparison, but it does not construct absolute Keller
+maps for the degree-eight or degree-fourteen actions.
 
 ## 5. The exact \(\operatorname{PSL}_2(11)\) action calculation
 
@@ -1088,24 +1149,24 @@ The divisor rows above can be lifted without first finding a smooth plane
 model.  Suppose an affine plane curve has normalization module
 
 \[
- \overline R=R[,T_1,\ldots,T_s,],\qquad T_i=u_i/c,
+ \overline R=R+RT_1+\cdots+RT_s,\qquad T_i=u_i/c,
                                                         \tag{6.54}
 \]
 
-and the top homogeneous part of (c) is nonzero at every point of the
-infinity divisor (D_\infty).  Give (T_i) pole weight
-\(\deg u_i-\deg c\).  Products of (T_i) with plane polynomials of the
+and the top homogeneous part of \(c\) is nonzero at every point of the
+infinity divisor \(D_\infty\).  Give \(T_i\) pole weight
+\(\deg u_i-\deg c\).  Multiples of \(T_i\) by plane polynomials of the
 remaining degree then give a filtered subspace of
 \(L(mD_\infty)\).  Once exact reduction modulo the normalization relations
 shows that its dimension is
 \(m\deg D_\infty-g+1\), Riemann--Roch proves equality.  Vanishing at a
-finite prime to order (e) is ordinary linear evaluation in
+finite prime to order \(e\) is ordinary linear evaluation in
 \(\overline R/\mathfrak p^e\).  Thus a prescribed divisor becomes a kernel
-calculation over (K), followed by a principal-ideal check which excludes
+calculation over \(K\), followed by a principal-ideal check which excludes
 unintended affine zeros.  This is a reusable normalization-module
 interpolation test, rather than a curve-specific search for a parametrization.
 
-For (C_5), Singular returns
+For \(C_5\), Singular returns
 
 \[
 \begin{aligned}
@@ -1118,7 +1179,7 @@ u_{52}={}&2xy^2+16xy+(11-3r)y^2+(77-9r)x\\
 \]
 
 The top denominator is coprime to the quintic at infinity, and
-\(1,x,y,T_1,T_2\) is (L(D_\infty)).  Exact representatives of (6.51) are
+\(1,x,y,T_1,T_2\) is \(L(D_\infty)\).  Exact representatives of (6.51) are
 
 \[
 \begin{aligned}
@@ -1135,7 +1196,7 @@ M_4={}&101r-2105+(6r+84)x-(17r+445)y
 \]
 
 Reduction in the normalization ring proves that the four principal ideals
-have exactly the finite parts in (6.51), of lengths (5,5,5,10).  The
+have exactly the finite parts in (6.51), of lengths \(5,5,5,10\).  The
 exchange is also explicit:
 
 \[
@@ -1147,9 +1208,9 @@ exchange is also explicit:
 \end{aligned}
 \]
 
-For (C_6), the normalization denominator is exactly the canonical adjoint
-(A) in (6.23).  Its three numerator degrees are (4,4,5), against
-\(\deg A=3\), so (T_1,T_2,T_3) have pole weights (1,1,2).  Consequently
+For \(C_6\), the normalization denominator is exactly the canonical adjoint
+\(A\) in (6.23).  Its three numerator degrees are \(4,4,5\), against
+\(\deg A=3\), so \(T_1,T_2,T_3\) have pole weights \(1,1,2\).  Consequently
 
 \[
  V_m=K[x,y]_{\le m}+K[x,y]_{\le m-1}T_1
@@ -1163,16 +1224,16 @@ Exact normalization reduction gives
                                                         \tag{6.59}
 \]
 
-which equals (6m-1=\ell(mD_\infty)).  Evaluation modulo the boundary
+which equals \(6m-1=\ell(mD_\infty)\).  Evaluation modulo the boundary
 prime powers in the table gives a one-dimensional kernel for each of
-(N_2,\ldots,N_7), and the associated principal ideals have finite lengths
-(42,24,30,24,41,41).  At the degree-eight (p_2)-node the rank test itself
+\(N_2,\ldots,N_7\), and the associated principal ideals have finite lengths
+\(42,24,30,24,41,41\).  At the degree-eight \(p_2\)-node the rank test itself
 separates the two degree-four normalized branches and selects
-(p_{2n,b}).
+\(p_{2n,b}\).
 
-The (32) finite conditions for (N_1) leave dimension nine in (V_7).
-In the chart (x=w/z, y=1/z), write a candidate numerator and denominator
-as (H_0(w)+zH_1(w)+\cdots) and (f_0(w)+zf_1(w)+\cdots).  Along the
+The \(32\) finite conditions for \(N_1\) leave dimension nine in \(V_7\).
+In the chart \(x=w/z,\ y=1/z\), write a candidate numerator and denominator
+as \(H_0(w)+zH_1(w)+\cdots\) and \(f_0(w)+zf_1(w)+\cdots\).  Along the
 degree-five infinity factor
 
 \[
@@ -1185,23 +1246,23 @@ the two cancellation conditions are
  H_0=0,\qquad f_0'H_1-f_1H_0'=0\pmod {g_5}.       \tag{6.60}
 \]
 
-Their ten exact rows raise the combined rank to (40) and select (N_1)
-uniquely, with pole pair ((7,5)).  Finally define
+Their ten exact rows raise the combined rank to \(40\) and select \(N_1\)
+uniquely, with pole pair \((7,5)\).  Finally define
 
 \[
  \delta_\infty(D)=\operatorname{coeff}_{\infty_1}(D)
                   -\operatorname{coeff}_{\infty_5}(D). \tag{6.61}
 \]
 
-Both projection images lie in its kernel, so it descends to (L_6/I_6).
-On the ordered basis (N_1,\ldots,N_7),
+Both projection images lie in its kernel, so it descends to \(L_6/I_6\).
+On the ordered basis \(N_1,\ldots,N_7\),
 
 \[
  \delta_\infty=(-2,0,0,0,0,1,1).                 \tag{6.62}
 \]
 
 Hence no change by projection units can give equal infinity orders to the
-(N_1,N_6,N_7) classes.  This is an action-presentation invariant that the
+\(N_1,N_6,N_7\) classes.  This is an action-presentation invariant that the
 divisor-class rank alone did not see.
 
 Equations (6.52)--(6.53) are still a finite coefficient-support ansatz, not
@@ -1529,8 +1590,8 @@ The action spectrum changes the next targets.
 
 1. **Pullback/cokernel ledger -- completed.**  Equations (6.40)--(6.48)
    compute both compact pullback matrices, prove that their rank-ten sums
-   are primitive, and separate the index-six saturation on (X_0(11)) from
-   the order-five divisor-class gate on (C_6).
+   are primitive, and separate the index-six saturation on \(X_0(11)\) from
+   the order-five divisor-class gate on \(C_6\).
 2. **Normalization-module masks -- completed.**  Equations
    (6.49)--(6.62) determine the integral exchange modules, give effective
    divisor bases for every residual class, construct exact representatives
@@ -1541,11 +1602,12 @@ The action spectrum changes the next targets.
    denominators compatibly with the output block, then impose the
    constant-Jacobian and inverse-adjugate equations.  Any ansatz retaining
    \(P_r\) plus only one triangular normal coordinate is already closed.
-3. **Compare \(q=7,11,13\) in the natural action.**  The same
-   \((3,2,q)\) construction gives different quotient genera according to the
-   split/nonsplit status of the order-two and order-three classes.  The
-   genus-zero natural actions at the adjacent small values should be audited
-   before a uniform \(q\)-ansatz is attempted.
+3. **Compare \(q=7,11,13\) in the natural action -- genus audit
+   completed.**  Formula (4.4) gives genera \(0,1,0\), controlled by the
+   two Legendre symbols for the order-two and order-three fixed points.
+   The next useful comparison is the boundary-unit and affine-completion
+   ledger for explicit degree-eight and degree-fourteen rational Belyi
+   presentations; genus zero alone supplies no Keller realization.
 4. **Test Gassmann saturation.**  Ask whether
    \((G,G/H_1)\in\mathfrak K_{\mathrm{abs}}\) and
    \(\mathbf1_{H_1}^G=\mathbf1_{H_2}^G\) force
@@ -1569,7 +1631,7 @@ Run
   --pari-mordell-weil
 .venv/bin/python scripts/verify_psl2_11_keller_action_spectrum.py \
   --singular-normalization
-Singular -q scripts/verify_psl2_11_normalization_masks.sing
+.venv/bin/python scripts/verify_psl2_11_normalization_masks.py
 Singular -q scripts/psl2_11_c5_boundary_pullbacks.sing
 .venv/bin/python scripts/verify_psl2_11_c6_boundary_images.py
 ```
@@ -1580,7 +1642,8 @@ quadratic rank decompositions.  The third requires Singular \(4.4.1\) and
 verifies normalization, conductor, all normalized boundary degrees, the
 canonical elimination for \(C_6\), and the two quadratic Cremona
 transformations for \(C_5\), followed by every normalization-module mask.
-The fourth is the standalone mask replay.  It constructs the filtered
+The fourth is the robust standalone mask replay.  It pins the Singular source
+hash, rejects interpreter diagnostics, and constructs the filtered
 Riemann--Roch spaces, the prime-power evaluation kernels, and the infinity
 jets in (6.54)--(6.62).  The fifth labels every affine \(C_5\) boundary
 component by both projection colors and separates its node branches.  The
@@ -1598,8 +1661,9 @@ the class rows (6.36).  Together they verify:
 7. equality of the two degree-eleven cycle partitions for every group
    element and the cross-subdegrees \(5+6\);
 8. the two rigid \((2,3,11)\) Nielsen orbits;
-9. genus zero in the exceptional degree-eleven actions versus genus one in
-   the natural degree-twelve action;
+9. the natural prime-triangle genus formula (4.4), including genera
+   \(0,1,0\) at \(p=7,11,13\), and genus zero in the exceptional
+   degree-eleven actions versus genus one in the natural degree-twelve action;
 10. the \(A_4\) and \(D_{10}\) intersection subgroups, degree-\(55/66\)
     passports, genera \(1/2\), and both boundary-projection profiles;
 11. the degree-two/degree-five divisor argument giving

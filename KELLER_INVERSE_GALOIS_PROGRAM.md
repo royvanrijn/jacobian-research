@@ -189,9 +189,26 @@ saturation on \(X_0(11)\) and quotient
 \(\mathbb Z^3\oplus\mathbb Z/5\) in genus two.  Along both correspondence
 projections, the two rank-six unit images meet in the two common base units;
 their rank-ten sum is primitive and has free cokernel of rank four/seven in
-the genus-one/genus-two unit lattice.  Thus even the geometry between two
-Gassmann actions carries new obstructions.  The action and its quotient
-geometry, not the abstract group, are the correct unit of classification.
+the genus-one/genus-two unit lattice.  Exact normalization-module
+interpolation now constructs all four/seven residual masks.  On the
+genus-two quotient, the difference of the two infinity coefficients
+descends through both projection images and has values
+\((-2,0,0,0,0,1,1)\), proving that three asymmetric pole profiles are
+intrinsic.  Thus even the geometry between two Gassmann actions carries new
+obstructions.  The action and its quotient geometry, not the abstract group,
+are the correct unit of classification.
+
+For the natural prime actions the adjacent genus comparison is now uniform:
+the standard \((2,3,p)\) modular triple has
+\[
+ g_{\mathrm{nat}}(p)
+ ={p-6-3\left(\frac{-1}{p}\right)
+        -4\left(\frac{-3}{p}\right)\over12}.
+\]
+Hence the natural genera at \(p=7,11,13\) are \(0,1,0\).  The obstruction at
+\(11\) is a split/nonsplit arithmetic event, not a monotone group-size
+phenomenon; the next comparison for \(7\) and \(13\) must use boundary and
+affine-completion data.
 
 ## 5. The proposed construction pipeline
 
@@ -286,8 +303,8 @@ The systematic queue is:
 |---:|---|---|---|
 | 1 | cyclic and dihedral | Kummer and Dickson/Chebyshev incidence | cyclic absolute no-go; uniform dihedral ledger; canonical one-normal completion excluded in every degree |
 | 2 | \(A_4,S_4,A_5\) | oriented discriminants and low-dimensional generic polynomials | \(A_4\) has the advanced frontier below; \(S_4\) has a six-edge collision core and a decomposable absolute group-only checkpoint, but its ordinary collision-frame algebraization is open; \(A_5\) absolute descent is queued |
-| 3 | Frobenius groups | semidirect-product generic polynomials | \(F_{20}\) has a universal smooth-affine chart, a complete finite exceptional-color audit, and a rational connected \(q\)-conductor cover; the complete packet closure compresses to \(3D_d+D_q+D_r=\operatorname{div}(P_X)\), while the natural incidence algebra and its finite normalization fail the value-one gate; thirteen controlled-transform chart types supply primitive exceptional variables for every positive exceptional color and verify literal local \((3,1,1)\) cancellation; seven bivariate corner charts now close the cusp and \(q\)-\(r\) exceptional intersections, the \(q\)-node transition is exact, and the apparent positive triple \(E_1\)-\(E_2\) edge is deleted by root-center separation; a compact residue product passes on the punctured conductor; strict-boundary/conductor attachments, the global Cox ring, affine completion, and absolute descent remain open |
-| 4 | \(\operatorname{PSL}_2(\mathbb F_q)\) | natural projective-line and low-index subgroup torsors | \(q=11\): the natural degree-12 quotient is explicit \(X_0(11)\); the two exceptional degree-11 \(A_5\)-coset actions form a Gassmann pair with Shabat and determinant-one chart outputs; their degree-5/6 correspondences normalize to genus 1/2, so none of these rigid bridges stably straightens; absolute descent is open |
+| 3 | Frobenius groups | semidirect-product generic polynomials | \(F_{20}\) has a universal smooth-affine chart, a complete finite exceptional-color audit, and a rational connected \(q\)-conductor cover; the complete packet closure compresses to \(3D_d+D_q+D_r=\operatorname{div}(P_X)\), while the natural incidence algebra and its finite normalization fail the value-one gate; thirteen controlled-transform chart types supply primitive exceptional variables for every positive exceptional color and verify literal local \((3,1,1)\) cancellation; seven bivariate corner charts close the exceptional cusp and \(q\)-\(r\) intersections, and weighted Taylor--Cox charts now attach cusp \(E_4\) to strict \(r\), triple \(E_2\) to strict \(d\), and the \(q\)-\(r\) \(A\)-packet to strict \(q\); the \(q\)-node incidence is proved conductor-degenerate, the apparent positive triple \(E_1\)-\(E_2\) edge is deleted by root-center separation, and a compact residue product passes on the punctured conductor; the remaining strict-\(r\)/conductor attachments, global Cox ring, affine completion, and absolute descent remain open |
+| 4 | \(\operatorname{PSL}_2(\mathbb F_q)\) | natural projective-line and low-index subgroup torsors | the natural prime-triangle genus is explicit and gives \(0,1,0\) at \(q=7,11,13\); at \(q=11\), the degree-12 quotient is \(X_0(11)\), the two exceptional degree-11 \(A_5\)-coset actions form a Gassmann pair with Shabat and determinant-one chart outputs, their degree-5/6 correspondences normalize to genus 1/2, all residual masks are explicit in the normalization algebras, and a descended infinity imbalance obstructs uniform poles on three genus-two classes; boundary audits at \(7,13\), ambient polynomial assembly, and absolute descent are open |
 | 5 | affine linear groups | natural affine actions and additive-polynomial invariants | \(F_{20}\) is the first overlap with stage 3; its \((4,1)\), unramified-crossing, and \((2,2,1)\) boundary colors are compiled, while higher-rank audits are queued |
 | 6 | selected Gassmann pairs | common-closure point/subspace actions | the degree-seven \(\operatorname{GL}_3(\mathbb F_2)\) pair has relative and Cox outputs; absolute descent is open |
 
@@ -392,7 +409,11 @@ The current concrete checkpoints are:
    Effective divisor bases realize every class; the \(C_5\) simple-pole
    lattice has index two, so one double pole is unavoidable.  The first
    one-class-per-monomial supports occur in normal degrees two and three.
-   None has an absolute realization.
+   Normalization-module interpolation constructs exact formulas for all
+   masks and proves an intrinsic infinity imbalance on \(C_6\).  Turning
+   those rational normalization functions into an ambient polynomial output
+   block satisfying the Jacobian and inverse-adjugate equations remains
+   open; none has an absolute realization.
 6. **Gassmann pairs inside a fixed \(G\).** Once one \(G\)-closure has been
    Kellerized, nonconjugate almost-conjugate subgroups should produce
    arithmetically indistinguishable inverse covers. This is the strongest

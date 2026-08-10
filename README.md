@@ -2989,11 +2989,17 @@ residual genus-one classes and as five fixed classes plus one exchanged pair
 on the seven genus-two classes.  Exact effective divisor bases realize all
 of them; simple-pole genus-one masks have index two, forcing one double pole.
 The first zero-section-preserving, one-class-per-monomial supports therefore
-have sharp normal degrees two and three.  These are finite coefficient
-supports, not polynomial Keller maps.  These unit-lattice, conductor, and
+have sharp normal degrees two and three.  Exact normalization-module
+interpolation now constructs every one of the four/seven masks; the
+genus-two infinity-coefficient difference descends to the residual quotient
+with values \((-2,0,0,0,0,1,1)\), so three asymmetric pole profiles cannot
+be removed by projection units.  These are explicit rational functions on
+the normalizations, not polynomial Keller maps.  These unit-lattice, conductor, and
 stable-birational obstructions show why the
 action, Hurwitz component, and affine completion must be recorded
-separately.  The inverse
+separately.  For the natural modular triples, the exact prime formula gives
+quotient genera \(0,1,0\) at \(p=7,11,13\); the elliptic obstruction at
+\(11\) is therefore arithmetic rather than monotone in \(p\).  The inverse
 Galois programme's
 [toroidal boundary-feasibility compiler](extended-geometry/TOROIDAL_BOUNDARY_FEASIBILITY.md)
 now places fan rays, residue colors, masks, derivative and conductor
@@ -3099,6 +3105,19 @@ the positive triple \(E_1\) and \(E_2\) colors are root-center separated,
 so their adjacent base rays do not create a colored overlap edge.  The
 remaining global data are the strict-boundary and conductor attachment
 transitions.
+The first
+[strict-boundary attachment theorem](extended-geometry/F20_STRICT_BOUNDARY_ATTACHMENTS.md)
+now supplies a single weighted Taylor--Cox criterion and certifies three
+families exactly: cusp `E4`-to-`r`, triple `E2`-to-`d`, and the
+`q-r` `A`-packet-to-`q` edge.  Their normalized boundary scales are
+respectively `R=lambda^2`, `D=lambda^4`, and `Q=lambda`, yet the
+same Taylor criterion gives the literal compact-degree divisor of `P_X`.
+At the `q`-node the scaled incidence loses its root-coordinate term and
+only fixes the base slope, isolating the remaining edge as a
+conductor-normalization problem.  Exact residual calculations locate
+Cartier-compatible double-root centres for the remaining two triple and six
+`q-r` strict-`r` candidate colours, but their full family saturations and
+the conductor transitions still prevent formation of a global Čech class.
 Its
 [cyclic/dihedral opening audit](extended-geometry/ABSOLUTE_INVERSE_GALOIS_CYCLIC_DIHEDRAL_AUDIT.md)
 proves that cyclic generic inverse monodromy is absolutely impossible because
@@ -4382,6 +4401,11 @@ The surrounding Bezout freedom is also classified: replacing `Q+G^2/2` by
 `Q+H(G,C)` forces `H=G^2/2+k(C)`, which is only an ambient symplectic shear,
 and every other Bezout companion has the form `W->W-T*F`. Hence the
 second-order no-go covers this entire reciprocal-compatible ansatz. In
+fact, independent translations
+`F=-B*P+A*Q+K(G,C)`, `W=R*P+S*Q+L(G,C)` do not enlarge it: their full form
+differs in one coefficient, and that coefficient is exactly their fiber
+admission PDE. Every admitted pair therefore has the same excluded complete
+form. In
 general, the new obstruction is the well-defined class
 `[div(Z)] in A/D(A)`, because all solutions of the second form equation
 differ by `lambda*D` and change the divergence by `D(lambda)`.

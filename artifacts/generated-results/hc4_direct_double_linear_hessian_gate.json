@@ -334,7 +334,36 @@
       "three_root_conclusion": "polynomiality forces kappa=0 and f2=0",
       "zero_first_jet_conclusion": "f1=f2=0 forces the first positive ell-jet to order eight and D>=8"
     },
-    "conclusion": "orders three and two are empty; at j=1 boundary rank zero and rank one are empty; boundary rank two is reduced to one normal packet, two explicit outer second-jet families, and order-eight two-/three-root packets"
+    "order_one_boundary_rank_two_normal_closure": {
+      "forced_top": "f=ell*C*y^(m+1)+ell^2*(alpha*C/rho)*y^(m-1)*z+...",
+      "boundary_field": "Q_ell=alpha*ell^2 and Q_tan mod ell=rho*y^2*partial_z",
+      "scalar_obstruction": "Q(F) mod ell kills the diagonal tangent weight s",
+      "terminal_matrix_coefficient": "-2*normal_C*normal_alpha**2*(normal_n + 2)/(normal_n*normal_rho)",
+      "conclusion": "the normal rank-two packet is empty"
+    },
+    "order_one_boundary_rank_two_delayed_jet_closure": {
+      "hypothesis": "f1=f2=0 and Hess_(y,z)(f0) is invertible",
+      "first_field_equations": [
+        "l(f0)=0",
+        "Jac(l)^T*grad(f0)=0"
+      ],
+      "product_rule_consequence": "Hess(f0)*l=0, hence l=0",
+      "rank_consequence": "rank(Jac(Q) mod ell)<=1",
+      "scope": "independent of root multiplicities, the order-eight value, and exact sextuple order",
+      "conclusion": "all delayed two-/three-root packets are empty"
+    },
+    "order_one_boundary_rank_two_outer_jet_closure": {
+      "boundary_field": "Q0=(y^2,-2*kappa*y*z/a,kappa*z^2/b)",
+      "scalar_x1_relations": [
+        "B=E=0",
+        "kappa*A+a*D=0",
+        "a*C+b*G=0"
+      ],
+      "shared_tangent_factor": "outer_C*root_a**2*root_b*y**2 - outer_D*root_a**2*root_b*y*z - outer_kappa**2*z**2*(2*root_a + 4*root_b)",
+      "immutable_coefficient": "-2*outer_kappa**2*root_a - 4*outer_kappa**2*root_b",
+      "conclusion": "both mirrored outer jets are empty"
+    },
+    "conclusion": "orders three and two are empty; at j=1 boundary rank zero and rank one are empty; the normal, delayed, and outer gates also close every boundary-rank-two packet, so the complete generic-corank-one exact-sextuple stratum is empty"
   },
   "lower_rank_sextuple_reduction": {
     "hypothesis": "Delta=ell^6*R, R squarefree and coprime to ell, with generic rank(Hess(f) mod ell)<=1",
@@ -355,7 +384,23 @@
       "form": "f=y^(m+2)+ell^3*(c*y^(m-1)+ell*(u*y^(m-2)+v*y^(m-3)*z)+ell^2*g2+...)",
       "order_six_coefficient": "2*(m + 1)*(m + 2)*(3*g2zz*jet_c*y**(2*m - 1) - 8*jet_v**2*y**(3*m - 6))"
     },
-    "conclusion": "reduction only; these residual packets remain open"
+    "order_one_synchronization": {
+      "x2_packet": "field recurrences force v=0 and d_z^2(g2)=0, so its exact order-six coefficient vanishes",
+      "pure_power_resonance": "the only nonzero order-six row has m=3, v!=0, and L=ell*partial_z",
+      "resonant_top": "sync_c*x**3*y**2 + sync_d*x**5 + x**4*(sync_u*y + sync_v*z) + y**5",
+      "resonant_hessian_determinant": "-32*sync_v**2*x**6*(sync_c*x**3 + 10*y**3)",
+      "pure_cube_pivot_top": "4*sync_v*x**3/3",
+      "complete_scalar_parent": "Psi=H+w*P+eta*w^2/2 with P=(4*v/3)*ell^3+P_le2",
+      "common_top_geometry": "f=C*z*ell^4+h5(ell,y)"
+    },
+    "order_two_scalar_pivot_closure": {
+      "complete_parent": "Psi=w*P+H",
+      "quadratic_pivot": "P=2*C*ell^2+linear",
+      "no_tangent_linear_part": "-(4*pivot_C*x + pivot_lx)**2*(pivot_hyy*pivot_hzz - pivot_hyz**2)",
+      "tangent_linear_part": "a constant tangent direction has unit derivative on P, so HC4RSD12 reduces every collision fiber to HC3",
+      "conclusion": "no order-two member of the synchronized tangent family is an HC4 counterexample"
+    },
+    "conclusion": "the x2 order-one packet is empty; the pure-power order-one packet reduces to a degree-five resonance already contained in the order-two tangent top family; the order-two scalar parent is HC4-safe, leaving only the degree-five order-one resonance"
   },
   "normal_forms": {
     "B_ell_nonzero": {
@@ -387,6 +432,6 @@
       "ell_multiplicity": 3
     }
   },
-  "conclusion": "for D>=5, Delta=ell^2*R with R squarefree and gcd(ell,R)=1 is incompatible with a four-variable constant-Hessian completion; Delta=ell^3*R is incompatible for every D>=5, because its sole D=5 split top has a nonzero terminal passive-Hessian channel; the generic rank-at-most-one boundary of Delta=ell^4*R is incompatible for every D>=5; its generic rank-two order-one system first reduces to the D=6 additive top, whose terminal passive-Hessian channel is nonzero; on Delta=ell^5*R, the generic corank-one boundary has j<=2, and both the order-two and order-one degree-seven packets have nonzero terminal passive-Hessian channels; the complementary lower-rank boundary has two jets whose order-five coefficient is incompatible with the order-one field equations; on Delta=ell^6*R, generic corank-one orders j=3 and j=2 are excluded, leaving the quadratic-vector j=1 system; Jacobian boundary rank zero is empty and rank one is empty, while rank two is reduced to a normal packet and two explicit outer second-jet families plus order-eight packets in the two- and three-root boundary profiles; the complementary lower-rank Hessian boundary is reduced to one degree-five tangent packet and two explicit order-six jets",
+  "conclusion": "for D>=5, Delta=ell^2*R with R squarefree and gcd(ell,R)=1 is incompatible with a four-variable constant-Hessian completion; Delta=ell^3*R is incompatible for every D>=5, because its sole D=5 split top has a nonzero terminal passive-Hessian channel; the generic rank-at-most-one boundary of Delta=ell^4*R is incompatible for every D>=5; its generic rank-two order-one system first reduces to the D=6 additive top, whose terminal passive-Hessian channel is nonzero; on Delta=ell^5*R, the generic corank-one boundary has j<=2, and both the order-two and order-one degree-seven packets have nonzero terminal passive-Hessian channels; the complementary lower-rank boundary has two jets whose order-five coefficient is incompatible with the order-one field equations; on Delta=ell^6*R every generic-corank-one packet is empty, including the normal, delayed two-/three-root, and outer boundary-rank-two rows; on the complementary lower-rank boundary the x2 order-one packet is empty and the sole pure-power resonance is already contained in the degree-five tangent order-two family; that quadratic scalar parent is HC4-safe by the bordered determinant split and HC4RSD12, leaving only the degree-five order-one resonance",
   "proof_boundary": "the checker verifies the all-degree and weighted binary identities; UFD/DVR divisibility and maximal-passive-channel uniqueness are proved in HC4_DIRECT_DOUBLE_LINEAR_HESSIAN_GATE.md"
 }

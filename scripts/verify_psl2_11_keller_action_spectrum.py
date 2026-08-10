@@ -8,7 +8,8 @@ SL_2(F_11)/{+/-I}; it verifies the natural degree-twelve action, the two
 degree-eleven A_5-coset actions, their Gassmann equivalence, and the
 (2,3,11) Riemann--Hurwitz genera.  It also identifies the normalized
 degree-five/six correspondence components as the A_4 and D_10 quotients,
-checks both boundary-projection profiles, and verifies an exact X_0(11)
+checks both boundary-projection profiles, proves the natural prime-triangle
+genus formula (including p=7,11,13), and verifies an exact X_0(11)
 Weierstrass model and degree-twelve j-map.  It also proves that the
 degree-five normalization has a K-point, reduces it to a sparse cubic with
 j=-121, descends it to a conductor-121 Weierstrass model, and separates it
@@ -34,13 +35,19 @@ the external Jones--Zvonkin input recorded in the accompanying note.
 import argparse
 from collections import Counter
 from itertools import product
-from pathlib import Path
 import shutil
 import subprocess
 
 import sympy as sp
 from sympy.matrices.normalforms import smith_normal_form
 from sympy.polys.domains import ZZ
+
+try:
+    from verify_psl2_11_normalization_masks import run_normalization_mask_check
+except ModuleNotFoundError:
+    from scripts.verify_psl2_11_normalization_masks import (
+        run_normalization_mask_check,
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -2827,41 +2834,10 @@ def run_singular_normalization_check():
         if line.startswith("PASS Singular"):
             print(line)
 
-    # Replay the actual Riemann--Roch representatives separately.  Singular
-    # does not reliably return a nonzero status for errors raised inside a
-    # procedure, so require every terminal marker and reject both explicit
-    # failures and interpreter diagnostics.
-    mask_script = Path(__file__).with_name(
-        "verify_psl2_11_normalization_masks.sing"
-    )
-    mask_result = subprocess.run(
-        [singular, "-q", str(mask_script)],
-        text=True,
-        capture_output=True,
-        check=False,
-    )
-    mask_output = mask_result.stdout + mask_result.stderr
-    required_mask_markers = (
-        "PASS C5 explicit normalization masks M1--M4",
-        "PASS C6 filtered Riemann--Roch dimensions 23, 29, and 41",
-        "PASS C6 uniform-pole masks N2--N5",
-        "PASS C6 exchanged masks N6--N7 with forced pole pair (6,7)",
-        "PASS C6 asymmetric mask N1 with pole pair (7,5)",
-        "PASS explicit normalization representatives for all C5/C6 masks",
-    )
-    if (
-        mask_result.returncode != 0
-        or "FAIL" in mask_output
-        or "   ?" in mask_output
-        or any(marker not in mask_output for marker in required_mask_markers)
-    ):
-        raise RuntimeError(
-            "Singular normalization-mask replay failed:\n" + mask_output
-        )
-    for line in mask_result.stdout.splitlines():
-        if line.startswith("PASS C5") or line.startswith("PASS C6"):
-            print(line)
-    print("PASS Singular normalization-module representatives: all C5/C6 masks")
+    # Singular procedures do not reliably propagate a failing shell status.
+    # The dedicated driver pins the source hash, rejects diagnostics and
+    # explicit failures, and requires every terminal marker.
+    run_normalization_mask_check(singular)
 
 
 def run_pari_mordell_weil_check():
@@ -3368,12 +3344,52 @@ def riemann_hurwitz_genus(degree, passport):
     return 1 - degree + total_index // 2, total_index
 
 
+def quadratic_character(value, prime):
+    """Return the Legendre symbol at an odd prime."""
+
+    residue = pow(value % prime, (prime - 1) // 2, prime)
+    assert residue in (1, prime - 1)
+    return 1 if residue == 1 else -1
+
+
+def natural_prime_triangle_passport(prime):
+    """Passport and genus of the modular (3,2,p) triple on P^1(F_p)."""
+
+    assert prime > 3
+    fixed_two = 1 + quadratic_character(-1, prime)
+    fixed_three = 1 + quadratic_character(-3, prime)
+    degree = prime + 1
+    passport = (
+        (3,) * ((degree - fixed_three) // 3) + (1,) * fixed_three,
+        (2,) * ((degree - fixed_two) // 2) + (1,) * fixed_two,
+        (prime, 1),
+    )
+    genus, total_index = riemann_hurwitz_genus(degree, passport)
+    closed_numerator = (
+        prime
+        - 6
+        - 3 * quadratic_character(-1, prime)
+        - 4 * quadratic_character(-3, prime)
+    )
+    assert closed_numerator % 12 == 0
+    assert genus == closed_numerator // 12
+    return passport, genus, total_index
+
+
 natural_genus, natural_index = riemann_hurwitz_genus(12, natural_passport)
 exceptional_genus, exceptional_index = riemann_hurwitz_genus(
     11, exceptional_passport
 )
 assert (natural_genus, natural_index) == (1, 24)
 assert (exceptional_genus, exceptional_index) == (0, 20)
+prime_triangle_audit = {
+    prime: natural_prime_triangle_passport(prime)
+    for prime in (7, 11, 13)
+}
+assert prime_triangle_audit[11][0] == natural_passport
+assert tuple(
+    prime_triangle_audit[prime][1] for prime in (7, 11, 13)
+) == (0, 1, 0)
 
 component_five_genus, component_five_index = riemann_hurwitz_genus(
     component_five["degree"], component_five["passport"]
@@ -3397,6 +3413,7 @@ print("PASS exact degree-5/6 correspondence and cross-action subdegrees 5+6")
 print("PASS two rigid (2,3,11) Nielsen orbits")
 print("PASS Riemann-Hurwitz: exceptional degree 11 has genus 0")
 print("PASS Riemann-Hurwitz: natural degree 12 has genus 1")
+print("PASS natural PSL2(p) triangle formula: genera at p=7,11,13 are 0,1,0")
 print("PASS normalized C5/A4 and C6/D10 quotients have genera 1 and 2")
 print("PASS normalized C5 has a K-point and elliptic j-invariant -121")
 print("PASS C5 trace 2 versus X_0(11) trace -1 above 23: not isogenous")

@@ -469,15 +469,41 @@ class is nonpolynomial unless it vanishes, while a zero first jet pushes the
 first `ell`-dependent term to order eight.  The only other survivors are two
 explicit outer second-jet families, requiring the shifted root exponent to
 be at least four.
+`HC4-DIR23` closes the normal packet.  Its first two field coefficients force
+the boundary quadratic to be `rho*y^2*partial_z` and fix the first transverse
+jet; the scalar equation kills its remaining diagonal weight, after which
+the next tangent matrix coefficient is a nonzero multiple of `m+3`.
+`HC4-DIR24` closes all delayed two-/three-root rows at once: two missing
+normal jets make the first tangent field annihilate both the boundary form
+and its gradient covector, so the invertible binary Hessian kills that field
+and drops the boundary Jacobian rank to at most one.  This delayed-jet gate
+is independent of root multiplicities and exact sextuple order.
+`HC4-DIR25` closes both outer jets.  Polynomiality fixes their quadratic
+boundary field, and the scalar order-one relations leave the immutable
+tangent coefficient `-(2a+4b)*kappa^2`.  Hence the complete generic-corank-one
+exact-sextuple stratum is empty.
 
 `HC4-DIR10` reduces the lower-rank sextuple boundary to one degree-five
 tangent packet at `j=2` and two explicit order-six rank-one jets at `j=1`.
+`HC4-DIR26` closes the first order-one jet and proves that the second has
+only the resonance `m=3`, `L=ell*partial_z`.  Its top is already a subfamily
+of the order-two tangent packet.  Thus every lower-rank survivor has the
+single top geometry `f=C*z*ell^4+h_5(ell,y)`, with motion along the same
+tangent direction at order two or, on the resonant subfamily, order one.
+`HC4-DIR27` closes the order-two counterexample branch.  Degree five makes
+its complete potential affine in the kernel variable with quadratic pivot
+`P=2*C*ell^2+linear`.  Without a tangent linear part its bordered determinant
+has a nonconstant square factor; with one, `HC4RSD12` reduces every collision
+fiber to `HC3`.  Only the order-one degree-five resonance remains.
 
 See `HC4_DIRECT_DOUBLE_LINEAR_HESSIAN_GATE.md`.
 
-The next research task is therefore the normal rank-two packet, the two
-outer second-jet families, and the order-eight two-/three-root packets,
-together with the three lower-rank Hessian packets.
+The next research task is therefore the degree-five lower-rank order-one
+resonance (0.14).  Its complete four-variable potential is a scalar parent
+`H+w*P+eta*w^2/2` with pure-cube leading pivot
+`P_3=(4v/3)*ell^3`.  Classifying that scalar-parent geometry, in its zero-
+and nonzero-corner branches, is the broader next method: the same composite
+pivot pattern is what the general extremal multiplicity identities predict.
 After those come nonlinear repeated factors, linear
 multiplicity at least seven, or several distinct repeated factors.
 Rank-at-most-two top Hessians remain a separate synchronization problem.  This

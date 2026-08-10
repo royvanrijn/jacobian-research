@@ -101,6 +101,25 @@ path below are treated as reference artifacts.
   `extended-geometry/F20_EXCEPTIONAL_COX_CORNERS.md`.  Its whole-file SHA-256
   is `e895b87e2327051c534b64a0bbfff5c755b1a30e549c843dbce60429c6b86a9d`.
 
+- `f20_strict_boundary_attachments.json` records the weighted Taylor--Cox
+  attachment theorem and three exact exceptional-to-strict-boundary
+  families: cusp `E4`-to-`r`, triple-`E2`-to-`d`, and the `q-r`
+  `A`-packet-to-`q` edge.  It includes saturated cusp incidence membership,
+  the index-four Taylor divisibilities at the triple packet, and exact
+  cubic-field pseudo-remainder gates for the strict `q` edge.  It also
+  locates the Cartier centres and exact double-root fibres for the remaining
+  triple-`E1` and `q-r` `A/B` strict-`r` candidates, while leaving their
+  full family saturation open.  The vanishing root-coordinate coefficient
+  at the `q`-node is recorded as a conductor-degenerate open gate.  Remaining
+  strict-`r` and conductor
+  transitions, the global Čech class, inverse-adjugate polynomiality, and
+  affine-space recognition are not claimed.  Regenerate it with
+  `.venv/bin/python scripts/verify_f20_strict_boundary_attachments.py
+  --output artifacts/generated-results/f20_strict_boundary_attachments.json`.
+  The canonical source is
+  `extended-geometry/F20_STRICT_BOUNDARY_ATTACHMENTS.md`.  Its whole-file
+  SHA-256 is `6b23dc2a59fd25ad740631e469e187d6b42e48bd0ce29c92786a7cdc1709437c`.
+
 - `dc2_hessian_symbol_optimization.json` records the exact 1,540-row sparse
   Hamiltonian-Hessian Cayley screen, the 238 noncommuting two-pencil control
   words, their native-support score components, and the factorwise `hbar^5`
@@ -156,13 +175,15 @@ path below are treated as reference artifacts.
   that entire module.  Thus the coordinate is fiber-admitted but excluded as
   a target-`b` component at second order.  The artifact also classifies the
   full compatible Bezout ansatz: Hamiltonian shifts reduce to ambient
-  symplectic shears and every companion change is `W->W-T*F`.
+  symplectic shears and every companion change is `W->W-T*F`.  Independent
+  affine-momentum translations are also covered: their sole full-form
+  difference is exactly the fiber-admission equation.
   Generate it with
   `.venv/bin/python scripts/verify_dc2_higher_nilpotence_r21_frontier.py
   --output
   artifacts/generated-results/dc2_higher_nilpotence_r21_frontier.json`.
   Its whole-file SHA-256 is
-  `cba3e427e858fd341f120c77875f3d635f0f00a77512e95cf6b6b240eedba795`.
+  `8399cd9c656dac7042349473a3ec93e78d6fb0b6447105ad1136b0c156d50060`.
   The canonical source is
   `extended-geometry/DC2_HIGHER_NILPOTENCE_R21_FRONTIER.md`.
 
@@ -2178,7 +2199,7 @@ Run `make verify-normal-forms` for the original normal-form artifacts and
   whole-file SHA-256 is
   `d258b2b9be7a0906bae70a317044ba2011ed5dea6d2b8d765f8d0571a0217cf0`.
 - `hc4_direct_double_linear_hessian_gate.json` verifies the all-degree
-  identities in `HC4-DIR3--22`.  For a rank-three top cone with
+  identities in `HC4-DIR3--27`.  For a rank-three top cone with
   `Delta=ell^2*R`, where `R` is squarefree and coprime to the linear `ell`,
   radical divisibility and degree force the first transverse motion to order
   one and produce a constant vector `B` with
@@ -2251,13 +2272,26 @@ Run `make verify-normal-forms` for the original normal-form artifacts and
   coefficients.  Boundary shears reduce the other first jets to finite
   monomials, and the Schur calculation kills the three-root parameter by a
   coprime residual quadratic denominator.  A zero first jet starts only at
-  `ell^8`; the other survivors are two explicit outer second-jet families.
-  On the lower-rank Hessian boundary, it records the stronger
-  `ell^4*R` divisibility and verifies the two exact order-six jet
-  coefficients.  Those lower-rank packets are reductions, not exclusions.
+  `ell^8`.  The normal-packet calculation then forces a square tangent
+  boundary field and ends in a nonzero matrix coefficient.  The delayed-jet
+  product-rule gate kills every zero-first-jet two-/three-root row without
+  using the value eight, while the outer-jet calculation leaves the nonzero
+  coefficient `-(2a+4b)*kappa^2`.  Thus every generic-corank-one sextuple
+  packet is empty.  On the lower-rank Hessian boundary, the order-one
+  recurrences close the `ell^2*g` jet and leave only the `m=3` pure-power
+  resonance.  Its determinant is
+  `-32*v^2*ell^6*(c*ell^3+10*y^3)`, and its top is already a subfamily of the
+  order-two tangent packet.  Thus every lower-rank survivor shares the one
+  degree-five top geometry `f=C*z*ell^4+h_5(ell,y)`.  The order-two
+  completion is affine in the kernel variable with quadratic scalar pivot;
+  its no-tangent-linear case has a nonconstant square determinant factor,
+  while its unit-direction case is collision-free by `HC4RSD12`.  Only the
+  order-one degree-five resonance remains; its forced pivot top is the pure
+  cube `(4v/3)*ell^3`, placing the next frontier in the cubic scalar-parent
+  classification rather than another unsynchronized jet list.
   The global UFD/DVR divisibility steps are proved in the canonical note
   rather than by a bounded calculation.
   Generate the artifact with
   `.venv/bin/python scripts/verify_hc4_direct_double_linear_hessian_gate.py`.
   Its whole-file SHA-256 is
-  `78746edf9ac832acfced4a29c11f98c378bbfe78f3009007bea5fe5ac03653b2`.
+  `0bdaeb66d2165c0211051c822f89ce389f1dd737acded2b328f9f32c7f48b68c`.

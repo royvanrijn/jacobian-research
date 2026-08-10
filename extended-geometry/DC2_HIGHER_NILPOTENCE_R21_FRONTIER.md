@@ -1729,6 +1729,63 @@ target-\(b\) component \(F\). We obtain the stronger conclusion:
 > and every Bezout companion (16.5), is excluded by the all-invariant
 > second-order obstruction of Section 15.
 
+The same conclusion holds for independent translations of both momenta.
+Take arbitrary \(K,L\in K[G,C]\) and define
+
+\[
+ F=-BP+AQ+K(G,C),\qquad
+ W=RP+SQ+L(G,C).
+\tag{16.7}
+\]
+
+The inverse is
+
+\[
+\begin{aligned}
+ P&=A(W-L)+(B+2)(F-K),\\
+ Q&=B(W-L)+R(F-K).
+\end{aligned}
+\tag{16.8}
+\]
+
+Let \(\Omega_{K,L}\) be the standard source form in coordinates
+\((F,G,C,W)\), and let \(\Omega_0\) denote the canonical form from
+(14.5). Exact differentiation gives
+
+\[
+ \Omega_{K,L}-\Omega_0=-\frac{\mathcal E(K,L)}6\,dG\wedge dC,
+\tag{16.9}
+\]
+
+where
+
+\[
+\begin{aligned}
+\mathcal E(K,L)={}&
+ C^4G L_C+2C^3G^2K_C-2C^3G^2L_G-4C^2G^3K_G\\
+ &-6C^2G^2K+6G+6K_C+6L_G.
+\end{aligned}
+\tag{16.10}
+\]
+
+There are no other differing coefficients, including away from \(F=0\).
+But the restricted fiber form agrees with R21 if and only if
+\(\mathcal E(K,L)=0\). Hence fiber admission itself forces
+
+\[
+ \Omega_{K,L}=\Omega_0
+\tag{16.11}
+\]
+
+as complete four-dimensional polynomial forms. Section 15 then excludes
+every solution of the PDE (16.10), without needing to classify that
+solution space.
+
+> **Affine-momentum exclusion.** No R21 Darboux normalizer whose
+> target-\(b\) coordinate and companion are affine-linear in the symplectic
+> momenta \((P,Q)\), with coefficient row \((-B,A)\), can arise from any
+> polynomial base translations \(K(G,C),L(G,C)\).
+
 The mechanism is not special to the displayed formulas. Let
 \(A=K[x_1,x_2,x_3]\), let \(\mu\) be its standard volume form, and suppose
 a fiber-admission problem has restricted closed form
@@ -1743,7 +1800,7 @@ one-form \(\rho\). Compatibility gives \(\rho(D)=0\). If
 
 \[
  \iota_Z\beta=\rho
-\tag{16.7}
+\tag{16.12}
 \]
 
 has one polynomial solution, every solution is \(Z+\lambda D\). Since
@@ -1752,19 +1809,19 @@ has one polynomial solution, every solution is \(Z+\lambda D\). Since
 \[
  \operatorname{div}(Z+\lambda D)
  =\operatorname{div}Z+D(\lambda).
-\tag{16.8}
+\tag{16.13}
 \]
 
 Therefore
 
 \[
  \mathfrak o_2=[\operatorname{div}Z]\in A/D(A)
-\tag{16.9}
+\tag{16.14}
 \]
 
 is independent of the chosen solution of the form equation. Its vanishing
 is necessary and sufficient for a polynomial volume-compatible second
-correction, once (16.7) is solvable. The remaining first-jet freedom acts
+correction, once (16.12) is solvable. The remaining first-jet freedom acts
 through \(\ker D\); grading \(\mathfrak o_2\) before solving is what reduced
 the R21 calculation to (15.15)--(15.16).
 
@@ -1801,4 +1858,5 @@ affine-linearity in arbitrary invariant shifts and the leading coefficient
 (15.16), excluding the complete \(I^2U K[S]\) freedom.
 It also checks the general bracket formula (16.3), invariance under
 \(Q\mapsto Q+k(C)\), and the complete Bezout-companion classification
-(16.5)--(16.6).
+(16.5)--(16.6), together with the affine-momentum identity
+(16.9)--(16.11).

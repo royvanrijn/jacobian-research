@@ -1138,7 +1138,7 @@ assert one_middle_after_field == -2 * one_C * one_lambda * y ** (m + 1)
 # three-root profile has (k,s)=(2,0), and its two residual gradients together
 # with y*z form a basis of the binary quadratics.
 root_a, root_b, root_c = sp.symbols(
-    "root_a root_b root_c", nonzero=True
+    "root_a root_b root_c", integer=True, positive=True
 )
 two_root_linear_shear = sp.Matrix([
     [0, root_b],
@@ -1251,6 +1251,199 @@ for test_a in range(1, 4):
 for first_positive_order in range(3, 12):
     determinant_order = first_positive_order - 2
     assert (determinant_order == 6) == (first_positive_order == 8)
+
+# HC4-DIR23.  In the normal rank-two packet the first two scalar/matrix
+# coefficients force a square tangent field and the displayed first jets.
+# The z component of the next matrix coefficient determines h_zz.  The
+# boundary scalar equation kills s, after which the y component retains the
+# nonzero coefficient -2*alpha*B*(n+2)/n.
+normal_n = sp.symbols("normal_n", integer=True, positive=True)
+normal_alpha, normal_C, normal_rho = sp.symbols(
+    "normal_alpha normal_C normal_rho", nonzero=True
+)
+normal_A, normal_r, normal_s = sp.symbols(
+    "normal_A normal_r normal_s"
+)
+normal_h0, normal_h1, normal_U = sp.symbols(
+    "normal_h0 normal_h1 normal_U"
+)
+normal_B = normal_alpha * normal_C / normal_rho
+normal_p = normal_C * y**normal_n
+normal_g = (
+    normal_B * y ** (normal_n - 2) * z
+    + normal_A * y ** (normal_n - 1)
+)
+normal_h = (
+    normal_h0 * y ** (normal_n - 2)
+    + normal_h1 * y ** (normal_n - 3) * z
+    - normal_B
+    * (normal_n * normal_s + 4 * normal_alpha / normal_n)
+    * y ** (normal_n - 4)
+    * z**2
+    / (2 * normal_rho)
+)
+normal_F0 = sp.factor(
+    normal_rho * y**2 * sp.diff(normal_h, z)
+    + normal_U * y ** (normal_n - 1)
+    + normal_B
+    * (normal_s + 4 * normal_alpha / normal_n)
+    * y ** (normal_n - 2)
+    * z
+)
+normal_V = normal_rho * normal_h1 + normal_U
+normal_expected_F0 = (
+    normal_V * y ** (normal_n - 1)
+    - normal_B
+    * (normal_n - 1)
+    * normal_s
+    * y ** (normal_n - 2)
+    * z
+)
+assert sp.simplify(normal_F0 - normal_expected_F0) == 0
+normal_boundary_scalar = sp.powsimp(
+    normal_rho * y**2 * sp.diff(normal_F0, z), force=True
+)
+assert sp.simplify(sp.powsimp(
+    normal_boundary_scalar
+    + normal_rho
+    * normal_B
+    * (normal_n - 1)
+    * normal_s
+    * y**normal_n,
+    force=True,
+)) == 0
+normal_l_y = -2 * normal_alpha * y / normal_n
+normal_l_z = normal_r * y + normal_s * z
+normal_middle_y = sp.factor(
+    2 * normal_rho * y * sp.diff(normal_h, z)
+    + normal_l_y.diff(y) * sp.diff(normal_g, y)
+    + normal_l_z.diff(y) * sp.diff(normal_g, z)
+    + sp.diff(normal_F0, y) / (normal_n - 1)
+)
+normal_terminal_z_coefficient = sp.factor(
+    sp.powsimp(
+        sp.expand(normal_middle_y.subs(normal_s, 0)).coeff(z, 1),
+        force=True,
+    )
+    / y ** (normal_n - 3)
+)
+assert normal_terminal_z_coefficient == sp.factor(
+    -2 * normal_alpha * normal_B * (normal_n + 2) / normal_n
+)
+
+# HC4-DIR24.  The delayed-jet gate is the universal product-rule identity
+# grad(l(f0))=Hess(f0)*l+Jac(l)^T*grad(f0).  Thus the first two field
+# equations kill l whenever the binary Hessian is invertible.
+delay_c0, delay_c1, delay_c2, delay_c3 = sp.symbols(
+    "delay_c0 delay_c1 delay_c2 delay_c3"
+)
+delay_f0 = (
+    delay_c0 * y**3
+    + delay_c1 * y**2 * z
+    + delay_c2 * y * z**2
+    + delay_c3 * z**3
+)
+delay_l = sp.Matrix([
+    sp.symbols("delay_a") * y + sp.symbols("delay_b") * z,
+    sp.symbols("delay_c") * y + sp.symbols("delay_d") * z,
+])
+delay_grad = sp.Matrix([sp.diff(delay_f0, y), sp.diff(delay_f0, z)])
+delay_product_rule = sp.Matrix([
+    sp.diff((delay_l.T * delay_grad)[0], y),
+    sp.diff((delay_l.T * delay_grad)[0], z),
+])
+delay_expected = (
+    sp.hessian(delay_f0, (y, z)) * delay_l
+    + delay_l.jacobian((y, z)).T * delay_grad
+)
+assert all(
+    sp.expand(entry) == 0
+    for entry in delay_product_rule - delay_expected
+)
+
+# HC4-DIR25.  For the first outer two-root jet, the x coefficient of the
+# scalar field equation fixes Q1.  The tangent matrix coefficient then has a
+# shared three-term factor whose z^2 coefficient is
+# -(2*a+4*b)*kappa^2 and cannot vanish for positive root multiplicities.
+outer_kappa = sp.symbols("outer_kappa", nonzero=True)
+outer_A, outer_B, outer_C, outer_D = sp.symbols(
+    "outer_A outer_B outer_C outer_D"
+)
+outer_E, outer_G = sp.symbols("outer_E outer_G")
+outer_u, outer_v, outer_w = sp.symbols("outer_u outer_v outer_w")
+outer_f0 = y**root_a * z**root_b
+outer_f1 = (
+    outer_kappa * y ** (root_a - 2) * z ** (root_b + 1)
+)
+outer_f2 = (
+    outer_kappa**2
+    * (root_a * root_b - root_a - 4 * root_b)
+    / (2 * root_a * root_b)
+    * y ** (root_a - 4)
+    * z ** (root_b + 2)
+)
+outer_f = outer_f0 + x * outer_f1 + x**2 * outer_f2
+outer_Q0 = sp.Matrix([
+    y**2,
+    -2 * outer_kappa * y * z / root_a,
+    outer_kappa * z**2 / root_b,
+])
+outer_Q1 = sp.Matrix([
+    outer_A * y + outer_B * z,
+    outer_C * y + outer_D * z,
+    outer_E * y + outer_G * z,
+])
+outer_Q2 = sp.Matrix([outer_u, outer_v, outer_w])
+outer_Q = outer_Q0 + x * outer_Q1 + x**2 * outer_Q2
+outer_grad = sp.Matrix([
+    sp.diff(outer_f, x),
+    sp.diff(outer_f, y),
+    sp.diff(outer_f, z),
+])
+outer_scalar_x1 = sp.factor(
+    sp.expand((outer_Q.T * outer_grad)[0]).coeff(x, 1)
+)
+outer_q1_substitution = {
+    outer_B: 0,
+    outer_E: 0,
+    outer_A: -root_a * outer_D / outer_kappa,
+    outer_G: -root_a * outer_C / root_b,
+}
+assert sp.simplify(outer_scalar_x1.subs(outer_q1_substitution)) == 0
+outer_N = outer_Q.jacobian((x, y, z))
+outer_middle = sp.expand(outer_N.T * outer_grad)
+outer_common_factor = (
+    root_a**2 * root_b * outer_C * y**2
+    - root_a**2 * root_b * outer_D * y * z
+    - (2 * root_a + 4 * root_b) * outer_kappa**2 * z**2
+)
+outer_middle_y_x1 = sp.factor(
+    outer_middle[1].coeff(x, 1).subs(outer_q1_substitution)
+)
+outer_middle_z_x1 = sp.factor(
+    outer_middle[2].coeff(x, 1).subs(outer_q1_substitution)
+)
+assert sp.simplify(sp.powsimp(
+    outer_middle_y_x1
+    - y ** (root_a - 3)
+    * z**root_b
+    * outer_common_factor
+    / (root_a * root_b),
+    force=True,
+)) == 0
+assert sp.simplify(sp.powsimp(
+    outer_middle_z_x1
+    + y ** (root_a - 2)
+    * z ** (root_b - 1)
+    * outer_common_factor
+    / (root_a * root_b),
+    force=True,
+)) == 0
+outer_terminal_coefficient = sp.expand(outer_common_factor).coeff(z, 2)
+assert sp.simplify(
+    outer_terminal_coefficient
+    + (2 * root_a + 4 * root_b) * outer_kappa**2
+) == 0
 
 # The rank-one integration in the j=2 system has logarithmic residues
 #   (3(m-1)/2, -(m-1)/2)
@@ -1372,6 +1565,120 @@ assert sp.simplify(
     sp.powsimp(sp.expand(rank_one_x3_order_six), force=True)
     - expected_rank_one_x3_order_six
 ) == 0
+
+# HC4-DIR26.  The low-order recurrences in the x^2*g packet use
+# F1=P*y^(m-1)+s*v*y^(m-2)*z and
+# F2=m*(alpha*g1_y+beta*g1_z)/(2*(m-1)).  Their nonzero-v branch forces all
+# four coefficients of L to vanish; their zero-v branch forces g2_zz=0.
+# In the pure-power packet the sole nonzero-v weight resonance is m=3.
+lower_alpha, lower_beta, lower_r, lower_s = sp.symbols(
+    "lower_alpha lower_beta lower_r lower_s"
+)
+lower_P = m * lower_alpha + lower_r * jet_v
+lower_F1 = (
+    lower_P * y ** (m - 1)
+    + lower_s * jet_v * y ** (m - 2) * z
+)
+lower_g1 = jet_u * y ** (m - 1) + jet_v * y ** (m - 2) * z
+lower_H = (
+    lower_alpha * sp.diff(lower_g1, y)
+    + lower_beta * sp.diff(lower_g1, z)
+)
+lower_F2 = sp.factor(m * lower_H / (2 * (m - 1)))
+assert sp.factor(lower_F1.coeff(z, 1)) == (
+    lower_s * jet_v * y ** (m - 2)
+)
+assert sp.simplify(
+    sp.expand(lower_F2).coeff(z, 1)
+    - m
+    * lower_alpha
+    * jet_v
+    * (m - 2)
+    * y ** (m - 3)
+    / (2 * (m - 1))
+) == 0
+for test_m in range(3, 12):
+    assert sp.Rational(test_m, 2 * (test_m - 1)) != 1
+    assert (2 - sp.Rational(3, test_m) == 1) == (test_m == 3)
+    assert (2 - sp.Rational(4, test_m) == 1) == (test_m == 4)
+
+sync_c, sync_u, sync_v, sync_d = sp.symbols(
+    "sync_c sync_u sync_v sync_d", nonzero=True
+)
+sync_f = (
+    y**5
+    + sync_c * x**3 * y**2
+    + x**4 * (sync_u * y + sync_v * z)
+    + sync_d * x**5
+)
+sync_delta = sp.factor(sp.hessian(sync_f, (x, y, z)).det())
+sync_expected_delta = (
+    -32 * sync_v**2 * x**6 * (sync_c * x**3 + 10 * y**3)
+)
+assert sp.simplify(sync_delta - sync_expected_delta) == 0
+sync_L = sp.Matrix([0, 0, x])
+sync_grad = sp.Matrix([
+    sp.diff(sync_f, x),
+    sp.diff(sync_f, y),
+    sp.diff(sync_f, z),
+])
+sync_F = sync_v * x**3
+sync_M = sync_L.jacobian((x, y, z))
+sync_grad_F = sp.Matrix([
+    sp.diff(sync_F, x),
+    sp.diff(sync_F, y),
+    sp.diff(sync_F, z),
+])
+assert sp.simplify((sync_L.T * sync_grad)[0] - x**2 * sync_F) == 0
+sync_middle = (
+    sync_M.T * sync_grad
+    - sp.Matrix([2 * x * sync_F, 0, 0])
+    + x**2 * sync_grad_F / 3
+)
+assert all(sp.expand(entry) == 0 for entry in sync_middle)
+assert sp.expand((sync_L.T * sync_grad_F)[0]) == 0
+sync_a3 = sp.Rational(4, 3) * sync_v * x**3
+sync_hessian_field = sp.hessian(sync_f, (x, y, z)) * sync_L
+sync_grad_a3 = sp.Matrix([
+    sp.diff(sync_a3, x),
+    sp.diff(sync_a3, y),
+    sp.diff(sync_a3, z),
+])
+assert all(
+    sp.expand(entry) == 0
+    for entry in sync_hessian_field - x**2 * sync_grad_a3
+)
+
+# HC4-DIR27.  An order-two D=5 completion has no bottom-right Hessian
+# coefficient and is Psi=w*P+H with P=2*C*x^2+linear.  If the tangent linear
+# part vanishes, the bordered determinant has the displayed nonconstant
+# square factor.  The complementary unit-direction case is the registered
+# quadratic scalar-parent theorem HC4RSD12.
+pivot_w = sp.symbols("pivot_w")
+pivot_C, pivot_lx = sp.symbols("pivot_C pivot_lx", nonzero=True)
+pivot_hxx, pivot_hxy, pivot_hxz = sp.symbols(
+    "pivot_hxx pivot_hxy pivot_hxz"
+)
+pivot_hyy, pivot_hyz, pivot_hzz = sp.symbols(
+    "pivot_hyy pivot_hyz pivot_hzz"
+)
+pivot_p_x = 4 * pivot_C * x + pivot_lx
+pivot_bordered_hessian = sp.Matrix([
+    [
+        pivot_hxx + 4 * pivot_C * pivot_w,
+        pivot_hxy,
+        pivot_hxz,
+        pivot_p_x,
+    ],
+    [pivot_hxy, pivot_hyy, pivot_hyz, 0],
+    [pivot_hxz, pivot_hyz, pivot_hzz, 0],
+    [pivot_p_x, 0, 0, 0],
+])
+pivot_bordered_delta = sp.factor(pivot_bordered_hessian.det())
+pivot_expected_delta = sp.factor(
+    -pivot_p_x**2 * (pivot_hyy * pivot_hzz - pivot_hyz**2)
+)
+assert sp.simplify(pivot_bordered_delta - pivot_expected_delta) == 0
 
 # General multiplicity budget.  If
 #   Delta=prod pi_i^e_i,
@@ -1837,11 +2144,57 @@ result = {
                 "and D>=8"
             ),
         },
+        "order_one_boundary_rank_two_normal_closure": {
+            "forced_top": (
+                "f=ell*C*y^(m+1)+ell^2*(alpha*C/rho)*"
+                "y^(m-1)*z+..."
+            ),
+            "boundary_field": (
+                "Q_ell=alpha*ell^2 and "
+                "Q_tan mod ell=rho*y^2*partial_z"
+            ),
+            "scalar_obstruction": (
+                "Q(F) mod ell kills the diagonal tangent weight s"
+            ),
+            "terminal_matrix_coefficient": str(
+                normal_terminal_z_coefficient
+            ),
+            "conclusion": "the normal rank-two packet is empty",
+        },
+        "order_one_boundary_rank_two_delayed_jet_closure": {
+            "hypothesis": (
+                "f1=f2=0 and Hess_(y,z)(f0) is invertible"
+            ),
+            "first_field_equations": [
+                "l(f0)=0",
+                "Jac(l)^T*grad(f0)=0",
+            ],
+            "product_rule_consequence": "Hess(f0)*l=0, hence l=0",
+            "rank_consequence": "rank(Jac(Q) mod ell)<=1",
+            "scope": (
+                "independent of root multiplicities, the order-eight "
+                "value, and exact sextuple order"
+            ),
+            "conclusion": "all delayed two-/three-root packets are empty",
+        },
+        "order_one_boundary_rank_two_outer_jet_closure": {
+            "boundary_field": (
+                "Q0=(y^2,-2*kappa*y*z/a,kappa*z^2/b)"
+            ),
+            "scalar_x1_relations": [
+                "B=E=0",
+                "kappa*A+a*D=0",
+                "a*C+b*G=0",
+            ],
+            "shared_tangent_factor": str(outer_common_factor),
+            "immutable_coefficient": str(outer_terminal_coefficient),
+            "conclusion": "both mirrored outer jets are empty",
+        },
         "conclusion": (
             "orders three and two are empty; at j=1 boundary rank zero "
-            "and rank one are empty; boundary rank two is reduced to one "
-            "normal packet, two explicit outer second-jet families, and "
-            "order-eight two-/three-root packets"
+            "and rank one are empty; the normal, delayed, and outer gates "
+            "also close every boundary-rank-two packet, so the complete "
+            "generic-corank-one exact-sextuple stratum is empty"
         ),
     },
     "lower_rank_sextuple_reduction": {
@@ -1870,7 +2223,44 @@ result = {
             ),
             "order_six_coefficient": str(expected_rank_one_x3_order_six),
         },
-        "conclusion": "reduction only; these residual packets remain open",
+        "order_one_synchronization": {
+            "x2_packet": (
+                "field recurrences force v=0 and d_z^2(g2)=0, so its "
+                "exact order-six coefficient vanishes"
+            ),
+            "pure_power_resonance": (
+                "the only nonzero order-six row has m=3, v!=0, and "
+                "L=ell*partial_z"
+            ),
+            "resonant_top": str(sync_f),
+            "resonant_hessian_determinant": str(sync_delta),
+            "pure_cube_pivot_top": str(sync_a3),
+            "complete_scalar_parent": (
+                "Psi=H+w*P+eta*w^2/2 with "
+                "P=(4*v/3)*ell^3+P_le2"
+            ),
+            "common_top_geometry": "f=C*z*ell^4+h5(ell,y)",
+        },
+        "order_two_scalar_pivot_closure": {
+            "complete_parent": "Psi=w*P+H",
+            "quadratic_pivot": "P=2*C*ell^2+linear",
+            "no_tangent_linear_part": str(pivot_bordered_delta),
+            "tangent_linear_part": (
+                "a constant tangent direction has unit derivative on P, "
+                "so HC4RSD12 reduces every collision fiber to HC3"
+            ),
+            "conclusion": (
+                "no order-two member of the synchronized tangent family "
+                "is an HC4 counterexample"
+            ),
+        },
+        "conclusion": (
+            "the x2 order-one packet is empty; the pure-power order-one "
+            "packet reduces to a degree-five resonance already contained "
+            "in the order-two tangent top family; the order-two scalar "
+            "parent is HC4-safe, leaving only the degree-five order-one "
+            "resonance"
+        ),
     },
     "normal_forms": {
         "B_ell_nonzero": {
@@ -1915,14 +2305,14 @@ result = {
         "the order-two and order-one degree-seven packets have nonzero "
         "terminal passive-Hessian channels; the complementary lower-rank "
         "boundary has two jets whose order-five coefficient is incompatible "
-        "with the order-one field equations; on Delta=ell^6*R, generic "
-        "corank-one orders j=3 and j=2 are excluded, leaving the quadratic-"
-        "vector j=1 system; Jacobian boundary rank zero is empty and rank "
-        "one is empty, while rank two is reduced to a normal packet and "
-        "two explicit outer second-jet families plus order-eight packets in "
-        "the two- and three-root boundary profiles; "
-        "the complementary lower-rank Hessian boundary is reduced to one "
-        "degree-five tangent packet and two explicit order-six jets"
+        "with the order-one field equations; on Delta=ell^6*R every "
+        "generic-corank-one packet is empty, including the normal, delayed "
+        "two-/three-root, and outer boundary-rank-two rows; on the "
+        "complementary lower-rank boundary the x2 order-one packet is "
+        "empty and the sole pure-power resonance is already contained in "
+        "the degree-five tangent order-two family; that quadratic scalar "
+        "parent is HC4-safe by the bordered determinant split and "
+        "HC4RSD12, leaving only the degree-five order-one resonance"
     ),
     "proof_boundary": (
         "the checker verifies the all-degree and weighted binary identities; "

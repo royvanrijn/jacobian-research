@@ -146,6 +146,8 @@ For a common correction lattice, take the componentwise monomial support at
 - dimension and relative size of the restricted obstruction cokernel;
 - rank jump after adjoining the Moyal section;
 - Hamiltonian gauge-image rank for Hamiltonians of degree at most four; and
+- after fiber admission, the graded second-order class
+  `[div(Z)] in A/D(A)` for the characteristic derivation `D`; and
 - parameter-base complexity, counted as parameters plus relations plus
   localization divisors.
 
@@ -242,7 +244,15 @@ three, so the constant ring forces `k=3` while the generic time divisor
 forces `k=2`; every row in this family is excluded. For `k=2` an exact
 conjugacy exists on `I!=0`, with Jacobian `-I/5184`. Any surviving resummation
 must correct that affine modification over `I=0` or change the target
-polarization.
+polarization. The same frontier now constructs a degree-seven coordinate that
+does cross `I=0` and admits the complete R21 fiber form, but its second-order
+class `[div(Z)] in A/D(A)` is nonzero. Grading excludes every invariant shift
+of the first jet, and the no-go extends to all affine-linear-in-momenta
+Bezout coordinates with independent polynomial base translations. Thus the
+next R21 queue must leave that affine-momentum ansatz. More generally, the
+optimizer should treat the leading graded second-order class as a hard gate:
+once nonzero, it rejects the whole invariant family without an unbounded jet
+calculation.
 
 The two-pencil words remain permanent zero-pole calibration rows.  Continuing
 the old quintic support, or automatically extending the marked-root degree

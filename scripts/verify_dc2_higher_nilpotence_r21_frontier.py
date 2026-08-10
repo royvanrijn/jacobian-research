@@ -1511,6 +1511,77 @@ def verify_r21_frontier() -> dict[str, object]:
         * old_source_coordinates.jacobian(new_variables)
     ).applyfunc(sp.expand)
     assert general_source_form == source_form_in_new_coordinates
+
+    # Allow independent polynomial base translations in both Bezout
+    # coordinates:
+    #
+    #   F=-B*P+A*Q+K(G,C),  W=R*P+S*Q+L(G,C).
+    #
+    # The complete source form differs from the canonical form in exactly
+    # one dG^dC coefficient.  That coefficient is also exactly the fiber
+    # admission equation.  Hence every affine-momentum pair (K,L) that
+    # passes the fiber gate has the same full source form and the same
+    # all-invariant second-order obstruction.
+    affine_k = sp.Function("K")(symbol_g, symbol_c)
+    affine_l = sp.Function("L")(symbol_g, symbol_c)
+    affine_inverse_p = sp.expand(
+        symbol_a * (capital_w - affine_l)
+        + (symbol_b + 2) * (capital_f - affine_k)
+    )
+    affine_inverse_q = sp.expand(
+        symbol_b * (capital_w - affine_l)
+        + symbol_r * (capital_f - affine_k)
+    )
+    affine_inverse_source = sp.Matrix(
+        (symbol_g, affine_inverse_p, symbol_c, affine_inverse_q)
+    )
+    affine_source_form = (
+        affine_inverse_source.jacobian(new_variables).T
+        * mixed_standard_form
+        * affine_inverse_source.jacobian(new_variables)
+    ).applyfunc(sp.expand)
+    affine_admission_equation = sp.expand(
+        symbol_c**4 * symbol_g * sp.diff(affine_l, symbol_c)
+        + 2
+        * symbol_c**3
+        * symbol_g**2
+        * sp.diff(affine_k, symbol_c)
+        - 2
+        * symbol_c**3
+        * symbol_g**2
+        * sp.diff(affine_l, symbol_g)
+        - 4
+        * symbol_c**2
+        * symbol_g**3
+        * sp.diff(affine_k, symbol_g)
+        - 6 * symbol_c**2 * symbol_g**2 * affine_k
+        + 6 * symbol_g
+        + 6 * sp.diff(affine_k, symbol_c)
+        + 6 * sp.diff(affine_l, symbol_g)
+    )
+    expected_affine_form_difference = sp.zeros(4)
+    expected_affine_form_difference[1, 2] = (
+        -affine_admission_equation / 6
+    )
+    expected_affine_form_difference[2, 1] = (
+        affine_admission_equation / 6
+    )
+    assert (
+        affine_source_form
+        - source_form_in_new_coordinates
+        - expected_affine_form_difference
+    ).applyfunc(sp.expand) == sp.zeros(4)
+    affine_fiber_difference = (
+        affine_source_form.subs(capital_f, 0).extract(
+            (1, 2, 3), (1, 2, 3)
+        )
+        - source_form_in_new_coordinates.subs(capital_f, 0).extract(
+            (1, 2, 3), (1, 2, 3)
+        )
+    ).applyfunc(sp.expand)
+    assert affine_fiber_difference == expected_affine_form_difference.extract(
+        (1, 2, 3), (1, 2, 3)
+    )
     general_fiber_bracket = sp.expand(
         symbol_bracket(general_admission_f, general_admission_w)
         .subs(
@@ -2656,10 +2727,29 @@ def verify_r21_frontier() -> dict[str, object]:
                             "(R_T,S_T)=(R+B*T,S-A*T), so "
                             "W_T=W-T*F"
                         ),
+                        "independent_base_translations": {
+                            "coordinates": (
+                                "F=-B*P+A*Q+K(G,C), "
+                                "W=R*P+S*Q+L(G,C)"
+                            ),
+                            "fiber_admission_equation": str(
+                                affine_admission_equation
+                            ),
+                            "full_form_difference": (
+                                "the sole nonzero coefficient is "
+                                "-(fiber admission equation)/6 in dG^dC"
+                            ),
+                            "conclusion": (
+                                "whenever the fiber equation vanishes, the "
+                                "complete four-dimensional source form is "
+                                "the canonical excluded form"
+                            ),
+                        },
                         "conclusion": (
                             "the second-order exclusion applies to the "
-                            "complete reciprocal-compatible Bezout ansatz, "
-                            "not only the displayed companion choice"
+                            "complete affine-linear-in-(P,Q) reciprocal "
+                            "Bezout ansatz, not only the displayed companion "
+                            "choice"
                         ),
                     },
                     "fiber_map": "(G,C,W)->(a,c,d)=(G+C*W,W,C)",
@@ -2935,7 +3025,7 @@ def main() -> None:
     args = parser.parse_args()
 
     certificate = {
-        "format": "dc2-higher-nilpotence-r21-frontier-v13",
+        "format": "dc2-higher-nilpotence-r21-frontier-v14",
         "higher_nilpotence_family": verify_higher_nilpotence_family(),
         "r21_frontier": verify_r21_frontier(),
         "conclusion": (
@@ -2990,7 +3080,10 @@ def main() -> None:
             "Q+G^2/2 by Q+H(G,C) forces H=G^2/2+k(C), an ambient "
             "symplectic shear, while every other Bezout companion is "
             "W->W-T*F. Thus the whole reciprocal-compatible Bezout ansatz "
-            "is excluded, not only one companion choice. "
+            "is excluded, not only one companion choice. Even independent "
+            "base translations K(G,C),L(G,C) do not escape: their sole "
+            "full-form difference is exactly their fiber-admission PDE, so "
+            "every admitted affine-momentum row has the same excluded form. "
             "Whether that formal normalizer resums to a finite polynomial "
             "automorphism remains the coupled graph-Darboux problem."
         ),
@@ -3027,6 +3120,7 @@ def main() -> None:
     print("PASS: its canonical second volume equation has no polynomial solution")
     print("PASS: grading excludes every invariant shift of that first jet")
     print("PASS: classified and excluded the full reciprocal Bezout ansatz")
+    print("PASS: excluded all admitted affine-momentum base translations")
     print("PASS: verified four reciprocal-power stable unimodular charts")
     print("OPEN: no polynomial Darboux trivialization of the R21 graph is certified")
     print(f"SHA256: {digest}")
