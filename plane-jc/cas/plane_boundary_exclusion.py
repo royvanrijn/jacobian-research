@@ -85,6 +85,32 @@ class OrevkovMultiplicityBudget:
 
 
 @dataclass(frozen=True)
+class OrevkovResidueDegreeBudget:
+    """Residue-normalized form of Orevkov's Euler budget.
+
+    A row ``(e,f)`` records generic transverse multiplicity ``e`` and
+    residue degree ``f`` on one dicritical component.  Riemann--Hurwitz on
+    its one-puncture normalization forces ``e*(f-1)`` units of Orevkov jump,
+    in addition to the generic cost ``e``.  Thus the moved-sheet cost is
+    ``e*f`` before any singular-image or other exceptional-value excess.
+    """
+
+    generic_degree: int
+    component_rows: tuple[tuple[int, int], ...]
+    generic_component_cost: int
+    forced_residue_ramification_cost: int
+    moved_sheet_cost: int
+    declared_local_excess: int
+    minimum_total_cost: int
+    available_budget: int
+    unexplained_budget: int
+    status: str
+
+    def as_dict(self) -> dict[str, object]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
 class QuarticOrevkovPacket:
     """One global degree-four boundary packet allowed by Orevkov's budget."""
 
@@ -224,6 +250,65 @@ def orevkov_multiplicity_budget(
         exceptional_multiplicity_jumps=tuple(component_jumps),
         total_cost=total_cost,
         available_budget=available,
+        status=status,
+    )
+
+
+def orevkov_residue_degree_budget(
+    generic_degree: int,
+    components: Sequence[tuple[int, int]],
+    *,
+    local_excess_lower_bound: int = 0,
+) -> OrevkovResidueDegreeBudget:
+    """Evaluate the residue-normalized lower part of Orevkov's identity.
+
+    For a dicritical row ``(e,f)``, the map between the affine
+    normalizations is a degree-``f`` polynomial map ``A1 -> A1``.  Its
+    extension to ``P1`` is totally ramified at infinity, so finite
+    Riemann--Hurwitz ramification has degree ``f-1``.  Local-degree
+    conservation gives ``mu_x >= e*q_x`` at a point of residue index
+    ``q_x``.  Consequently this row costs at least
+
+        e + e * sum_x(q_x-1) = e*f.
+
+    ``local_excess_lower_bound`` may record separately proved lower bounds
+    for ``sum_x(mu_x-e*q_x)``.  It defaults to zero; no cusp or conductor
+    positivity is silently assumed.
+    """
+
+    if generic_degree <= 0:
+        raise ValueError("the generic degree must be positive")
+    if local_excess_lower_bound < 0:
+        raise ValueError("the local excess lower bound must be nonnegative")
+
+    rows = tuple((int(e), int(f)) for e, f in components)
+    if any(e <= 0 or f <= 0 for e, f in rows):
+        raise ValueError("transverse and residue degrees must be positive")
+
+    generic_cost = sum(e for e, _ in rows)
+    residue_cost = sum(e * (f - 1) for e, f in rows)
+    moved_cost = sum(e * f for e, f in rows)
+    assert generic_cost + residue_cost == moved_cost
+    minimum_cost = moved_cost + local_excess_lower_bound
+    available = generic_degree - 1
+    unexplained = available - minimum_cost
+    if unexplained < 0:
+        status = "excluded_by_orevkov_residue_budget"
+    elif unexplained == 0:
+        status = "saturates_orevkov_residue_budget"
+    else:
+        status = "positive_orevkov_excess_budget"
+
+    return OrevkovResidueDegreeBudget(
+        generic_degree=generic_degree,
+        component_rows=rows,
+        generic_component_cost=generic_cost,
+        forced_residue_ramification_cost=residue_cost,
+        moved_sheet_cost=moved_cost,
+        declared_local_excess=local_excess_lower_bound,
+        minimum_total_cost=minimum_cost,
+        available_budget=available,
+        unexplained_budget=unexplained,
         status=status,
     )
 

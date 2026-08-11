@@ -174,7 +174,7 @@ priority: Kummer transfer plus the terminal residue calculation bypassed it
 for the selected principal chain and produced `(e,f)=(1,6)`.  The live
 programme is to attach that row globally, with the coefficient frontend kept
 as an independent possible exclusion.
-<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
+<!-- status-consumer: PF2GC1 6ba3fd9eb6a0bcdf -->
 
 There is now an exact pre-polygon envelope.  In the F2 chart
 `t=X*y,z=y^-1`, one has `[t,z]_(X,y)=-z`, so the constant-`J` compiler above

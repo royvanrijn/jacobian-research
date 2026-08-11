@@ -223,6 +223,12 @@ terminal outwards, they are `(-16,-8)`.  These are still lower bounds: simple
 spectators, the purity row, and other global resolution centers may add
 components.
 
+The later affine-purity frontier proves that at least one such additional
+component is unavoidable and raises the current global source floors to
+`28/49`; this table remains the terminal-local `19/31` subgraph.
+
+<!-- status-consumer: PF2APF1 192055eb737d3140 -->
+
 ## 4. The two nodes in each interior chain
 
 The terminal--inner node maps to the original target node.  Its exponent

@@ -341,7 +341,7 @@ valuation is centered at infinity.  Purity instead requires a separate
 ramified row over an affine nonproperness curve.  The target-node fibers also
 fix three interior source-boundary attachment points, so the global route now
 starts from an incidence skeleton rather than an undecorated `(1,6)` row.
-<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
+<!-- status-consumer: PF2GC1 6ba3fd9eb6a0bcdf -->
 
 ## 5. Reproduction and claim boundary
 

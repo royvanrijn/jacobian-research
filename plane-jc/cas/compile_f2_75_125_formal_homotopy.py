@@ -98,9 +98,19 @@ def build_payload(
     y: int = 3,
     maximum_order: int = 16,
     regular_gauge: bool = False,
+    additional_gauge_variables: tuple[str, ...] = (),
 ) -> dict[str, object]:
     if maximum_order < 2:
         raise ValueError("the formal lift must include order two")
+    gauge_variables = (
+        tuple(
+            dict.fromkeys(
+                (*REGULAR_GAUGE_VARIABLES, *additional_gauge_variables)
+            )
+        )
+        if regular_gauge or additional_gauge_variables
+        else ()
+    )
     dag, roots, groups, a_node, equation_labels = build_modular_presentation()
     bad_constant_keys = sorted(
         {
@@ -223,8 +233,8 @@ def build_payload(
             prime,
             right_hand_side=[-value % prime for value in forcing],
             prescribed_values=(
-                {name: 0 for name in REGULAR_GAUGE_VARIABLES}
-                if regular_gauge
+                {name: 0 for name in gauge_variables}
+                if gauge_variables
                 else None
             ),
         )
@@ -232,7 +242,7 @@ def build_payload(
             obstruction = {
                 "order": order,
                 "type": "gauge-incompatible fixed-Jacobian solve",
-                "gauge_variables": list(REGULAR_GAUGE_VARIABLES),
+                "gauge_variables": list(gauge_variables),
                 "inconsistent_rows": correction.inconsistent_rows,
             }
             record["gauge_inconsistent_rows"] = correction.inconsistent_rows
@@ -327,10 +337,10 @@ def build_payload(
         },
         "higher_order_gauge": {
             "name": (
-                "seven-pole-coordinate-zero" if regular_gauge else "pivot-default"
+                "selected-coordinate-zero" if gauge_variables else "pivot-default"
             ),
             "variables_prescribed_zero_from_order_two": (
-                list(REGULAR_GAUGE_VARIABLES) if regular_gauge else []
+                list(gauge_variables)
             ),
         },
         "requested_order": maximum_order,
@@ -382,6 +392,15 @@ def main() -> None:
     parser.add_argument("--rho", type=int, default=14)
     parser.add_argument("--y", type=int, default=3)
     parser.add_argument("--regular-gauge", action="store_true")
+    parser.add_argument(
+        "--additional-gauge-variable",
+        action="append",
+        default=[],
+        help=(
+            "prescribe one additional variable coefficient to zero from "
+            "formal order two onward (repeatable)"
+        ),
+    )
     args = parser.parse_args()
 
     payload = build_payload(
@@ -390,6 +409,7 @@ def main() -> None:
         y=args.y,
         maximum_order=args.maximum_order,
         regular_gauge=args.regular_gauge,
+        additional_gauge_variables=tuple(args.additional_gauge_variable),
     )
     artifact = args.artifact.resolve()
     if args.refresh:

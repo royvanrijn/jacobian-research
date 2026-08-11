@@ -21,6 +21,7 @@ from plane_boundary_exclusion import (
     first_free_depth_package,
     one_puncture_budget,
     orevkov_multiplicity_budget,
+    orevkov_residue_degree_budget,
     puncture_profile_budgets,
     quartic_completed_deletion_atlas,
     quartic_cox_boundary_lattice_atlas,
@@ -44,6 +45,42 @@ assert orevkov_cubic_cusp.exceptional_multiplicity_jumps == ((1,),)
 assert orevkov_cubic_cusp.total_cost == 3
 assert orevkov_cubic_cusp.available_budget == 2
 assert orevkov_cubic_cusp.status == "excluded_by_orevkov_budget"
+
+# Riemann--Hurwitz on each one-puncture residue cover converts Orevkov's
+# generic component cost e into the complete moved-sheet cost e*f.  Any
+# further singular-image defect is a genuinely local nonnegative excess.
+orevkov_residue = orevkov_residue_degree_budget(
+    12,
+    ((2, 2), (2, 2)),
+)
+assert orevkov_residue.generic_component_cost == 4
+assert orevkov_residue.forced_residue_ramification_cost == 4
+assert orevkov_residue.moved_sheet_cost == 8
+assert orevkov_residue.unexplained_budget == 3
+assert orevkov_residue.status == "positive_orevkov_excess_budget"
+
+# The degree-six cubic-inertia E8 row has moved degree three and exactly two
+# further units.  This is the same equality row seen by the logarithmic ch2
+# calculation, now without imposing positivity on a contracted cokernel.
+orevkov_cubic_residue = orevkov_residue_degree_budget(
+    6,
+    ((3, 1),),
+    local_excess_lower_bound=2,
+)
+assert orevkov_cubic_residue.moved_sheet_cost == 3
+assert orevkov_cubic_residue.minimum_total_cost == 5
+assert orevkov_cubic_residue.unexplained_budget == 0
+assert orevkov_cubic_residue.status == "saturates_orevkov_residue_budget"
+
+# Two simple E8 rows already move four sheets.  A separately certified unit
+# of singular-image excess on each row would overrun the degree-six budget.
+orevkov_simple_e8 = orevkov_residue_degree_budget(
+    6,
+    ((2, 1), (2, 1)),
+    local_excess_lower_bound=2,
+)
+assert orevkov_simple_e8.minimum_total_cost == 6
+assert orevkov_simple_e8.status == "excluded_by_orevkov_residue_budget"
 
 # In degree four Orevkov's maximal-component remark removes generic
 # multiplicity three.  The remaining global budget has exactly two
@@ -735,6 +772,7 @@ assert any("ramification" in reason for reason in case2_preview.reasons)
 
 print("PASS: one-puncture residue immersion forces degree one")
 print("PASS: Orevkov's Euler budget excludes the clean cubic cusp")
+print("PASS: residue Riemann--Hurwitz converts every (e,f) row into cost e*f")
 print("PASS: Orevkov's quartic budget has exactly two global packets")
 print("PASS: every quartic Cox ledger needs only the primitive E character")
 print("PASS: quartic completed deletion charts have conductor (r,s)")

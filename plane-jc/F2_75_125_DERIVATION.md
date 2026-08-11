@@ -1479,7 +1479,7 @@ earliest movable-double-`R` Fitting branch and the later-spacing regimes in
 the table above.  The earliest coefficient escape lies on the boundary
 two-principal-packet stratum, which gives a precise first meeting point for
 the coefficient and gluing routes.
-<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
+<!-- status-consumer: PF2GC1 6ba3fd9eb6a0bcdf -->
 
 ## 5. Why the older `(50,75)` calculation does not fill the gap
 

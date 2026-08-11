@@ -3076,8 +3076,10 @@ P=\frac{4v}{3}x^3+P_{\le2}.
 Thus the next problem is no longer a list of sextuple boundary jets: it is
 the classification of scalar parents whose pivot has pure-cube leading form.
 The zero-corner case `eta=0` and the nonzero-corner reverse-Schur pencil
-`eta!=0` are the two natural branches.  A uniform closure of (5.84) would
-also provide the right template for higher repeated-factor packets whose
+`eta!=0` are the two natural branches.  The subsequent theorem `HC4DIR28`
+closes both in
+[`HC4_EXACT_SEXTUPLE_PURE_CUBE_SCALAR_PARENT.md`](HC4_EXACT_SEXTUPLE_PURE_CUBE_SCALAR_PARENT.md).
+Its pure-cube gradient lemma also provides the right template for higher repeated-factor packets whose
 extremal motion is forced to a one-polynomial composite by (6.4)--(6.5).
 
 ## 6. Verification and next boundary
@@ -3174,8 +3176,8 @@ and are not replaced by a bounded search.
 The next repeated-factor strata are now explicit:
 
 1. one nonlinear repeated Hessian factor;
-2. the sole exact-sextuple order-one resonance (5.76), or a linear factor of
-   multiplicity at least seven;
+2. a linear factor of multiplicity at least seven (the sole exact-sextuple
+   order-one resonance (5.76) is subsequently closed by `HC4DIR28`);
 3. two or more distinct repeated factors.
 
 These are the remaining rank-three top-cone inputs to the ternary Schur

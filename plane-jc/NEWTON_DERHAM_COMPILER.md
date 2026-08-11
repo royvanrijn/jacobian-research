@@ -259,7 +259,7 @@ certify the selected principal target row `(e,f)=(1,6)` without manufacturing
 the missing lower bands.  Their live continuation is global attachment,
 spectator incidence, purity/different placement, and the same-target versus
 distinct-target double-packet split.
-<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
+<!-- status-consumer: PF2GC1 6ba3fd9eb6a0bcdf -->
 
 ## 6. Reproduction
 

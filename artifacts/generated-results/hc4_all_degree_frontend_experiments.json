@@ -1,0 +1,314 @@
+{
+  "command": ".venv/bin/python scripts/research_hc4_all_degree_frontends.py --minimum-degree 4 --maximum-degree 8 --maximum-normal-order 12 --output artifacts/generated-results/hc4_all_degree_frontend_experiments.json",
+  "diagonal_rank_two_recognition": {
+    "all_tested_rank_two_schemes_are_empty": true,
+    "model": "minimal three-layer diagonal Schur tower; constant symmetric quadratic directions supported on the active ternary block",
+    "results": [
+      {
+        "active_channel_count": 1,
+        "channels": [
+          1,
+          0,
+          0
+        ],
+        "coefficient_equation_count": 7,
+        "potential_degree": 5,
+        "rank_two_chart_count": 6,
+        "rank_two_scheme_empty": true,
+        "surviving_rank_two_charts": []
+      },
+      {
+        "active_channel_count": 2,
+        "channels": [
+          1,
+          1,
+          0
+        ],
+        "coefficient_equation_count": 14,
+        "potential_degree": 5,
+        "rank_two_chart_count": 6,
+        "rank_two_scheme_empty": true,
+        "surviving_rank_two_charts": []
+      },
+      {
+        "active_channel_count": 3,
+        "channels": [
+          1,
+          1,
+          1
+        ],
+        "coefficient_equation_count": 33,
+        "potential_degree": 5,
+        "rank_two_chart_count": 6,
+        "rank_two_scheme_empty": true,
+        "surviving_rank_two_charts": []
+      },
+      {
+        "active_channel_count": 1,
+        "channels": [
+          1,
+          0,
+          0
+        ],
+        "coefficient_equation_count": 10,
+        "potential_degree": 6,
+        "rank_two_chart_count": 6,
+        "rank_two_scheme_empty": true,
+        "surviving_rank_two_charts": []
+      },
+      {
+        "active_channel_count": 2,
+        "channels": [
+          1,
+          1,
+          0
+        ],
+        "coefficient_equation_count": 27,
+        "potential_degree": 6,
+        "rank_two_chart_count": 6,
+        "rank_two_scheme_empty": true,
+        "surviving_rank_two_charts": []
+      },
+      {
+        "active_channel_count": 3,
+        "channels": [
+          1,
+          1,
+          1
+        ],
+        "coefficient_equation_count": 65,
+        "potential_degree": 6,
+        "rank_two_chart_count": 6,
+        "rank_two_scheme_empty": true,
+        "surviving_rank_two_charts": []
+      },
+      {
+        "active_channel_count": 1,
+        "channels": [
+          1,
+          0,
+          0
+        ],
+        "coefficient_equation_count": 10,
+        "potential_degree": 7,
+        "rank_two_chart_count": 6,
+        "rank_two_scheme_empty": true,
+        "surviving_rank_two_charts": []
+      },
+      {
+        "active_channel_count": 2,
+        "channels": [
+          1,
+          1,
+          0
+        ],
+        "coefficient_equation_count": 31,
+        "potential_degree": 7,
+        "rank_two_chart_count": 6,
+        "rank_two_scheme_empty": true,
+        "surviving_rank_two_charts": []
+      },
+      {
+        "active_channel_count": 3,
+        "channels": [
+          1,
+          1,
+          1
+        ],
+        "coefficient_equation_count": 77,
+        "potential_degree": 7,
+        "rank_two_chart_count": 6,
+        "rank_two_scheme_empty": true,
+        "surviving_rank_two_charts": []
+      },
+      {
+        "active_channel_count": 1,
+        "channels": [
+          1,
+          0,
+          0
+        ],
+        "coefficient_equation_count": 10,
+        "potential_degree": 8,
+        "rank_two_chart_count": 6,
+        "rank_two_scheme_empty": true,
+        "surviving_rank_two_charts": []
+      },
+      {
+        "active_channel_count": 2,
+        "channels": [
+          1,
+          1,
+          0
+        ],
+        "coefficient_equation_count": 32,
+        "potential_degree": 8,
+        "rank_two_chart_count": 6,
+        "rank_two_scheme_empty": true,
+        "surviving_rank_two_charts": []
+      },
+      {
+        "active_channel_count": 3,
+        "channels": [
+          1,
+          1,
+          1
+        ],
+        "coefficient_equation_count": 86,
+        "potential_degree": 8,
+        "rank_two_chart_count": 6,
+        "rank_two_scheme_empty": true,
+        "surviving_rank_two_charts": []
+      }
+    ]
+  },
+  "fermat_ternary_schur": {
+    "all_tested_radicals_are_pure_power_locus": true,
+    "model": "Hess(f)=diag(x^(D-2),y^(D-2),z^(D-2)); require grad(a)^T*adj(Hess(f))*grad(a) divisible by det(Hess(f))",
+    "results": [
+      {
+        "coefficient_count": 6,
+        "divisibility_equation_count": 12,
+        "mixed_coefficient_count": 3,
+        "potential_degree": 4,
+        "radical_basis_size": 3,
+        "radical_dimension": 3,
+        "radical_equals_pure_power_locus": true,
+        "ternary_form_degree": 2
+      },
+      {
+        "coefficient_count": 10,
+        "divisibility_equation_count": 33,
+        "mixed_coefficient_count": 7,
+        "potential_degree": 5,
+        "radical_basis_size": 7,
+        "radical_dimension": 3,
+        "radical_equals_pure_power_locus": true,
+        "ternary_form_degree": 3
+      },
+      {
+        "coefficient_count": 15,
+        "divisibility_equation_count": 63,
+        "mixed_coefficient_count": 12,
+        "potential_degree": 6,
+        "radical_basis_size": 12,
+        "radical_dimension": 3,
+        "radical_equals_pure_power_locus": true,
+        "ternary_form_degree": 4
+      },
+      {
+        "coefficient_count": 21,
+        "divisibility_equation_count": 102,
+        "mixed_coefficient_count": 18,
+        "potential_degree": 7,
+        "radical_basis_size": 18,
+        "radical_dimension": 3,
+        "radical_equals_pure_power_locus": true,
+        "ternary_form_degree": 5
+      },
+      {
+        "coefficient_count": 28,
+        "divisibility_equation_count": 150,
+        "mixed_coefficient_count": 25,
+        "potential_degree": 8,
+        "radical_basis_size": 25,
+        "radical_dimension": 3,
+        "radical_equals_pure_power_locus": true,
+        "ternary_form_degree": 6
+      }
+    ]
+  },
+  "meng_yang_normal_symbol": {
+    "formula": "[x^(k-1)](D_(R+x^k*U)-D_R)=-4*L*N^3*k*(k+1)*U",
+    "interpretation": "unit-triangular normal recursion; formal solvability is favored, while polynomial termination remains a separate obstruction",
+    "omitted_gradient_x_on_plane": "2*N",
+    "transverse_cofactor": "-2*L*N^2",
+    "verified_orders": [
+      {
+        "first_changed_determinant_order": 0,
+        "graph_jet_order": 1,
+        "unit_multiplier": "-8*L*N^3"
+      },
+      {
+        "first_changed_determinant_order": 1,
+        "graph_jet_order": 2,
+        "unit_multiplier": "-24*L*N^3"
+      },
+      {
+        "first_changed_determinant_order": 2,
+        "graph_jet_order": 3,
+        "unit_multiplier": "-48*L*N^3"
+      },
+      {
+        "first_changed_determinant_order": 3,
+        "graph_jet_order": 4,
+        "unit_multiplier": "-80*L*N^3"
+      },
+      {
+        "first_changed_determinant_order": 4,
+        "graph_jet_order": 5,
+        "unit_multiplier": "-120*L*N^3"
+      },
+      {
+        "first_changed_determinant_order": 5,
+        "graph_jet_order": 6,
+        "unit_multiplier": "-168*L*N^3"
+      },
+      {
+        "first_changed_determinant_order": 6,
+        "graph_jet_order": 7,
+        "unit_multiplier": "-224*L*N^3"
+      },
+      {
+        "first_changed_determinant_order": 7,
+        "graph_jet_order": 8,
+        "unit_multiplier": "-288*L*N^3"
+      },
+      {
+        "first_changed_determinant_order": 8,
+        "graph_jet_order": 9,
+        "unit_multiplier": "-360*L*N^3"
+      },
+      {
+        "first_changed_determinant_order": 9,
+        "graph_jet_order": 10,
+        "unit_multiplier": "-440*L*N^3"
+      },
+      {
+        "first_changed_determinant_order": 10,
+        "graph_jet_order": 11,
+        "unit_multiplier": "-528*L*N^3"
+      },
+      {
+        "first_changed_determinant_order": 11,
+        "graph_jet_order": 12,
+        "unit_multiplier": "-624*L*N^3"
+      }
+    ]
+  },
+  "route_assessment": [
+    {
+      "next_target": "prove degree growth or nontermination, then impose the marked collision on the unique formal branch",
+      "route": "Meng--Yang all-normal recursion",
+      "signal": "strongest constructive all-order identity"
+    },
+    {
+      "next_target": "extend the uniform theorem from the diagonal Hessian to nonsquarefree factor strata",
+      "route": "ternary Schur dichotomy",
+      "signal": "all-degree split rigidity on the diagonal Hessian"
+    },
+    {
+      "next_target": "control arbitrary lower layers before promoting beyond the minimal tower",
+      "route": "constant rank-two pencil recognition",
+      "signal": "all-degree obstruction on the minimal diagonal tower"
+    }
+  ],
+  "schema_version": 1,
+  "scope_warning": "The finite tables are regressions for the written all-degree proofs HC4FSD1, HC4FSD2, and HC4MYGJ2.  HC4FSD2 concerns only the minimal tower, and HC4MYGJ2 proves formal solvability rather than polynomial termination.",
+  "software": {
+    "singular": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34",
+    "sympy": "1.14.0"
+  },
+  "source_sha256": "0b6e0a1272d1201645dce96d8a039fde3c9d4c883476f40d1fed57dac446333f",
+  "status": "exact_bounded_regression"
+}

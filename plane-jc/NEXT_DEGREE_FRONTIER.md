@@ -201,11 +201,93 @@ Open work, in dependency order:
    the two squarefree spectator branches, the double-row fivefold point, and
    the common fan on every principal arm.  All marked exponent determinants
    are `1`, `3`, or `5`; the refined lower bounds are
-   `(components,leaves)=(27,8)/(48,11)`.  The live geometric support is the
-   upstream carrier-extraction chain, outgoing terminal tail, affine purity
-   row, and uncompiled global centers.  The independent coefficient route
-   still must impose the exact carrier points on the lower Laurent system.
+   `(components,leaves)=(27,8)/(48,11)` before global purity.  The
+   [`upstream extraction theorem`](F2_UPSTREAM_CARRIER_EXTRACTION_PROFILE.md)
+   then proves that the carrier-zero ladder is unimodular and forces
+   `coker(theta_log)=R/(W^3U^18)` at the extraction root, with branchwise
+   quotient length `54`.  The cyclic blowup theorem combines this raw length
+   with component self-intersections to give the stable Cartier charge `27`.
+   The kernel-line theorem identifies the actual cyclic contribution as
+   `deg(K_root)+27`, reducing the old twist ambiguity to the zero/pole divisor
+   of one logarithmic kernel direction.  Since this packet is contracted, the
+   kernel is the tautological line of a map to `P^1`; its nonnegative degree
+   `e_root` changes the contribution to `27-e_root<=27`.  Full logarithmic
+   divisibility of the fixed tangential coordinate proves `e_root=0`, so the
+   cyclic root contribution is exactly `27`.  The outgoing-terminal theorem
+   then closes the remaining terminal fan as unimodular log-etale.  The
+   affine-purity frontier proves that a new component with `e>1` over an
+   affine nonproperness curve is unavoidable, strengthening the component
+   floors to `28/49`.  It bounds the geometric degrees by `6..9375` and
+   `12..9375` and the target parametrization degree by `124`, but its coarse
+   ledger survives at every remaining degree.  The target-curve theorem
+   sharpens the curve input to 24 singular normalization charts `(3k,5k)`,
+   `1<=k<=24`, with curve degree `5k<=120` and a proper
+   divided-difference collision/critical ideal.  The live geometric work is
+   now to compile the solved `k=1` collision quartic and its four generic
+   nodal conductor points against the source pullback, extend the
+   stratification to `k=2..24`, and compile possible cancellation centers.
+   The `k=1` puncture is transverse on `(5,2)`; `lambda=125/729` decides
+   whether it follows the special carrier centers, but the resolved terminal
+   neighborhood supplies no affine-divisor slot and does not determine `e`.
+   Exact complement monodromy now rules out a one-row completion on every
+   immersed, distinct-image `k=1` collision partition and on the generic
+   one- and two-cusp faces.  Each complement group is `Z`, so the fixed
+   affine-sheet remainder forces a second ramified affine component.  The
+   conditional component floors on those seven strata are `29/50`, and
+   their Chern compiler must contain two affine packets.  The first escape
+   is `E_6+A_1`: its noncyclic group admits a transitive degree-six
+   fixed-sheet action, so its multiplicity-three boundary packet is now the
+   sharp `k=1` target.  Severe image mergers and the other 23 charts retain
+   the unconditional `28/49` floors.
+   Locate the row at another unresolved boundary locus, then prove the global
+   localized-Chern/descent identity.  The independent coefficient
+   route still must impose the exact carrier points on the lower Laurent system.
    The degree pair `(75,125)` remains unexcluded.
+   <!-- status-consumer: LCCT1 2fc6ecea7a7c8b49 -->
+   <!-- status-consumer: LKGD1 8a357250b5005186 -->
+   <!-- status-consumer: LTKT1 32ac27318f16c20c -->
+   <!-- status-consumer: PF2OTT1 af25012e34020e11 -->
+   <!-- status-consumer: PF2APF1 192055eb737d3140 -->
+   <!-- status-consumer: PF2ATC1 9ab722c45c586b73 -->
+   <!-- status-consumer: PF2K1C1 358a6ba820e8b2f1 -->
+   <!-- status-consumer: PF2PPA1 b24c4d80c2f8230e -->
+   <!-- status-consumer: PF2K1M1 fafcbb3c2e6ceb2b -->
+   At the concentrated `E_8` endpoint, exact degree-six enumeration leaves
+   one fixed-sheet permutation class, the exceptional `A_5` action.  Its
+   peripheral action forces two distinct `(2,1)` source rows and excludes a
+   single `(2,2)` row.  With total negativity `N=n_1+n_2`, maximal carrier
+   contact must pass four scale-free equations and forces
+   `4N>=36+s_X`; the minimal `N=2` packet instead leaves by `b<=4`, before
+   the first transport-independent carrier equation at `b>=5`.  The next E8
+   input must therefore fix a target transport globally or bound `N`.
+   Exhausting the `A_5` coset actions gives the broader fixed-sheet list
+   `d=6,10,15,30`, with `r=2,4,6,14` distinct `(2,1)` rows.  The uniform
+   squarefree doubled residual `7d-62+4N-4r(b-6)-s_X` excludes only the
+   minimal maximal-contact degree-six and degree-ten cases; degrees 15 and
+   30 remain.  Thus the immediate global target is to bound `N` or couple
+   these rows to the already compiled terminal/carrier filtration.
+   <!-- status-consumer: PF2K1E8M1 bbb282c6bcfa62fc -->
+   The universal simple-inertia quotient has order `240`, and its full
+   subgroup atlas gives `13` fixed-sheet actions in degrees
+   `6,10,12,15,20,24,30,40,60,120`.  Its central order-four action produces
+   `(2,f)` rows with `f=1,2,4`; only the minimal maximal-contact degrees
+   `6,10,12` fail the squarefree Chern ledger.  This reduces the remaining
+   simple-inertia endpoint to a finite stable-charge/contact problem, while
+   inertia greater than two remains a separate branch.
+   <!-- status-consumer: PF2K1E8O1 4251750ed4e43c89 -->
+   The complete-chain identity further removes raw negativity and contact:
+   after the full determinant cycle is subtracted, only `u-1` point units
+   remain, while the E8 cusp costs at least `2R`.  All simple-inertia rows
+   fail.  The immediate endpoint is therefore the sign of the unresolved
+   normalization/`Fitt_1` correction, with required deficits explicitly
+   ranging from `3` to `113`.
+   <!-- status-consumer: PF2K1CB1 5cc386dba344a867 -->
+   Cyclic-submodule positivity proves that every isolated `Fitt_1` correction
+   is an effective quotient, so the negative escape cannot occur.  This
+   excludes the complete one-component simple-inertia E8 atlas.  Continue
+   with E8 inertia greater than two, multiple affine components, and then
+   the remaining `k=1`/higher-`k` cusp strata.
+   <!-- status-consumer: LCSP1 8658eebeb1d65671 -->
    The
    [`common-power carrier theorem`](COMMON_POWER_CARRIER_WRONSKIAN.md)
    now makes this reusable: for every primitive degree-`k` common edge with
@@ -234,7 +316,9 @@ Open work, in dependency order:
    <!-- status-consumer: PF2GA1 57dea3062b1147fb -->
    <!-- status-consumer: PF2LNP1 e4f0f231bf7494d5 -->
    <!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
-   <!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
+   <!-- status-consumer: PF2UCE1 7f15bc756cc73fff -->
+   <!-- status-consumer: LCBBC1 b3eb4679f781c55f -->
+   <!-- status-consumer: PF2GC1 6ba3fd9eb6a0bcdf -->
 3. **Retire the excluded `(96,144)` repeated-tail branch.**  The source
    statements are now reconciled in
    [`FRONTIER_CLOSING_ATTACKS.md`](FRONTIER_CLOSING_ATTACKS.md).  The 2017

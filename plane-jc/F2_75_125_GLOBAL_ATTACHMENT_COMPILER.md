@@ -4,6 +4,18 @@
 
 <!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
 
+<!-- status-consumer: PF2UCE1 7f15bc756cc73fff -->
+
+<!-- status-consumer: LCBBC1 b3eb4679f781c55f -->
+
+<!-- status-consumer: LCCT1 2fc6ecea7a7c8b49 -->
+
+<!-- status-consumer: LKGD1 8a357250b5005186 -->
+
+<!-- status-consumer: LTKT1 32ac27318f16c20c -->
+
+<!-- status-consumer: LCHB1 176bf85520516fa6 -->
+
 ## Result and claim boundary
 
 The exact checker
@@ -68,8 +80,53 @@ spectator branches, and the five-component double-row attachment.  It gives:
 | double root | 48 | 11 | 5 | `(-9,-9)` |
 
 Both refined intersection forms remain unimodular with integral canonical
-vectors.  All marked new nodes are log-etale; the upstream carrier-extraction
-chain and outgoing terminal tail are not yet compiled by that theorem.
+vectors.  All marked new nodes are log-etale.  The subsequent upstream
+extraction theorem makes the carrier-zero ladder unimodular and finds the
+distinct extraction-root cokernel `R/(W^3U^18)`, with length-`54` branchwise
+matching quotient.  The blowup-conservation theorem replaces that raw length
+by the stable Cartier charge `D_root^2/2=27`.  The kernel-line theorem further
+identifies the exact cyclic contribution as `deg(K_root)+27`; since the packet
+is contracted, the Gauss-degree theorem makes this `27-e_root<=27` for a
+nonnegative kernel-direction degree.  The tangential-coordinate theorem
+computes `e_root=0` from full divisibility of `d(f^*z)`, so the cyclic root
+contribution is exactly `27`.  The outgoing terminal-tail theorem maps the
+remaining source rays to the existing target fan unimodularly, so that tail
+is also closed with zero defect.
+
+The subsequent complete-chain theorem shows that the missing affine-row
+self-intersections are not independent repair parameters.  For a sole
+rational one-puncture `k=1` affine component, the full Cartier determinant
+cycle leaves point budget exactly `u-1`.  Every simple-inertia E8 action has
+cusp lower `2R>u-1`, so it requires a negative normalization/`Fitt_1` class
+at the still-unresolved global attachment.
+
+<!-- status-consumer: PF2K1CB1 5cc386dba344a867 -->
+
+For the unique degree-six cubic-inertia equality row, the contracted-divisor
+Smith theorem now replaces that unspecified attachment by one exact packet.
+If `T^2=-n`, `v` is its boundary valency, and
+`I=(D_log-2T).T`, its remaining isolated point budget is
+
+\[
+ P_{\rm other}=2I-v-3n\ge0.
+\]
+
+When `I=3`, only a `(-1)` vertex of valency one, two, or three survives,
+leaving respectively two, one, or zero point units.  Thus every future
+candidate declaration for the cubic row must include `(T,I,v,n)`; the gate
+is independent of carrier contact and lower Laurent coefficients.
+
+<!-- status-consumer: LCDSC1 07dcd994b4faf092 -->
+
+The global logarithmic `ch_2` theorem now supplies an exact ledger on the
+same partial model.  Combining the `(5,2)` and `(5,36)` target clusters gives
+`L_Y^2=-5`; adjunction on the refined squarefree/double source graphs gives
+`L_X^2=-6/-11`.  Hence the global budgets are `(7*d-8)/2` and
+`(7*d-13)/2`, and subtracting the root class gives `(7*d-62)/2` and
+`(7*d-67)/2`.  Their values `-10` and `17/2` at the degree floors are virtual
+remainders, not exclusions: the affine purity row changes the common model
+and contributes a new divisorial module, and no effective finite-length
+filtration has yet been constructed.
 
 The target side remains completely explicit: four blowups extract `(5,2)`,
 with boundary weights
@@ -88,7 +145,9 @@ This is genuine global-attachment progress.  Target-valuation uniqueness also
 proves that both double-root packets land on the same extracted target
 divisor, so every double-root realization has geometric degree at least
 twelve.  This compiler by itself does not determine the simple spectator
-inertia, supply the purity-forced affine row, or exclude `(75,125)`.  The
+inertia or exclude `(75,125)`.  The later affine-purity theorem forces at
+least one additional branch-boundary component, raising the source floors to
+`28/49`, but does not construct its target curve or pullback factorization. The
 subsequent
 [`carrier Wronskian classifier`](F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md)
 does determine the spectator inertia and reduces both cofactor strata to
@@ -345,8 +404,22 @@ valuation argument above.  Thus the live global split has only the squarefree
 row and the same-target double row.
 
 The principal rows have `e=1`, so none supplies the purity branch component.
-A separate row with `e>1` over an affine nonproperness curve and its positive
-affine companion are still required.
+A separate component with `e>1` over an affine nonproperness curve and its
+positive affine companion are required.  The affine-purity frontier proves
+that this component is new and gives the exact finite generic bounds, but its
+target equation and the factorization of its pullback remain unknown.  The
+subsequent target-curve theorem reduces the target equation to 24 singular
+normalization charts `(3k,5k)`, `1<=k<=24`, each on a nonunit
+divided-difference collision/critical locus.
+On the first chart, the collision equations reduce further to one quartic;
+its generic target conductor consists of four ordinary affine nodes and the
+fixed `(2,5)` infinity cusp.
+The puncture theorem places this chart transversely on `(5,2)`.  A direct
+comparison with a principal terminal packet is numerically compatible only
+at `lambda=125/729,e=3`, but the terminal neighborhood is already a resolved
+morphism and has no extraction slot for a divisor dominating the affine
+curve.  Candidate mode must locate that divisor outside the certified
+terminal neighborhood and must not copy the terminal index into it.
 
 ## 7. Candidate mode
 
@@ -400,11 +473,20 @@ the unresolved global rows.  Thus the remaining inputs are:
 
 1. impose the three exact carrier parameter points on the complete lower
    Laurent coefficient system;
-2. compile the upstream carrier-extraction chain and outgoing terminal tail;
-3. construct the purity-forced affine ramification row and affine companion;
-4. determine the common global field degree and all remaining pullback rows;
+2. retain the exact cyclic root contribution `27`, then compile noncyclic
+   attachments and all possible cancellation centers;
+3. solve or further stratify the 24 affine target collision charts, form the
+   implicit equation, and factor its pullback into every boundary and affine
+   row;
+4. determine the common global field degree and global localized-Chern row;
 5. supply the corresponding global branch cycles and run candidate mode.
 
 Until one of those declarations fails a hard compiled gate, `(75,125)`
 remains unexcluded.
+
+<!-- status-consumer: PF2OTT1 af25012e34020e11 -->
+<!-- status-consumer: PF2APF1 192055eb737d3140 -->
+<!-- status-consumer: PF2ATC1 9ab722c45c586b73 -->
+<!-- status-consumer: PF2K1C1 358a6ba820e8b2f1 -->
+<!-- status-consumer: PF2PPA1 b24c4d80c2f8230e -->
 <!-- status-consumer: PF2CW1 a7774b0fa736b64c -->

@@ -26,6 +26,18 @@ five-variable Meng--Yang potential:
 > \(R=R_{\le4}+x_1^2S\), with \(S\) of arbitrary degree, can have constant
 > Hessian determinant.
 
+> **Theorem `HC4MYGJ2` -- all-normal triangularity.**  Let \(R\) be an
+> arbitrary polynomial or \(x_1\)-adic formal graph and let
+> \(U\in K[x_2,y_1,y_2]\).  For every \(k\ge1\),
+> \[
+> D_{R+x_1^kU}-D_R
+> \equiv-4LN^3k(k+1)x_1^{k-1}U\pmod{x_1^k}.
+> \]
+> Consequently every plane trace and target constant determine a unique
+> formal graph solution in \(K[x_2,y_1,y_2][[x_1]]\).  This is formal local
+> solvability, not polynomial termination or preservation of the marked
+> collision.
+
 > **Theorem `HC4MYG5J` -- quintic leading-jet rigidity.**  If a graph of
 > degree at most five has constant Hessian determinant, its quintic trace on
 > \(x_1=0\) is \(\kappa x_2^5\), its quartic trace is independent of
@@ -626,6 +638,69 @@ For \(\deg R\le5\), this remaining normal jet has degree at most three.
 Therefore every homogeneous component of \([x]D_R\) above degree three is
 an invariant obstruction: the \(x^2U\) freedom cannot cancel it.
 
+### 5.3 All normal orders
+
+The same coefficient is unit-triangular at every normal order.  Let
+\(U\in K[y,p,q]\) and put \(\widetilde R=R+x^kU\), with \(k\ge1\).  Along
+\(x=0\),
+
+\[
+ \Psi_r=0,\qquad \frac{d}{dx}\Psi_r(x,y,p,q,R)=\Psi_{xr}+\Psi_{rr}R_x=2N.
+                                                               \tag{5.19}
+\]
+
+There is no hidden analytic expansion here.  From (1.1)--(1.2), exactly
+
+\[
+ \Psi_r=-2Lx^3A-Mx^3+N(2x-3x^2y),
+ \qquad \Psi_{rr}=2Lx^6,
+\]
+
+and hence, with \(\delta=x^kU\),
+
+\[
+ \Psi(r+\delta)-\Psi(r)=\Psi_r(r)\delta+Lx^6\delta^2.
+\]
+
+Thus in the \(x\)-adic polynomial ring
+
+\[
+ \Psi(x,y,p,q,\widetilde R)-\Psi(x,y,p,q,R)
+ =2Nx^{k+1}U+O(x^{k+2}).                            \tag{5.20}
+\]
+
+Its Hessian difference first appears in the \((x,x)\)-entry, where it is
+
+\[
+ 2Nk(k+1)x^{k-1}U+O(x^k).                           \tag{5.21}
+\]
+
+Every other entry has \(x\)-order at least \(k\).  Multiplication by the
+universal complementary cofactor (5.4) now gives
+
+\[
+ \boxed{
+ D_{R+x^kU}-D_R
+ \equiv-4LN^3k(k+1)x^{k-1}U\pmod{x^k}.
+ }                                                   \tag{5.22}
+\]
+
+This proves `HC4MYGJ2`.  In characteristic zero with \(LN\ne0\), (5.22)
+recursively solves the complete normal jet.  Equation (5.6) is the \(k=1\)
+step; after coefficients through \(x^{k-2}\) have been killed, there is a
+unique \(U\) that kills the coefficient of \(x^{k-1}\).  Therefore every
+trace \(T\in K[y,p,q]\) and target constant \(C\) determine a unique
+
+\[
+ R=T+xS+x^2U_2+x^3U_3+\cdots\in K[y,p,q][[x]]       \tag{5.23}
+\]
+
+with \(D_R=C\).  The theorem supplies formal local existence and uniqueness;
+it does not say that (5.23) terminates, converges away from the plane, or
+contains the two marked points.  The all-degree graph problem is therefore a
+polynomial-termination and global-collision problem, not a failure of normal
+jet solvability.
+
 ## 6. A sparse degree-five trace is impossible
 
 Now specialize to the v2 parameters \((L,M,N)=(1,13,2)\), and assume the
@@ -857,6 +932,7 @@ Run
 
 ```bash
 .venv/bin/python scripts/verify_hc4_meng_yang_graph_obstructions.py
+.venv/bin/python scripts/verify_hc4_all_degree_frontends.py
 ```
 
 The checker constructs all affine-normal parameters symbolically, extracts
@@ -869,4 +945,8 @@ two-slope determinant only through degree eight, and verifies
 unit normal coefficient (5.5), verifies the degree-five leading faces
 (5.8)--(5.17), constructs the sparse plane-flat quotient, reproduces the
 resultants (6.8), and checks the transverse contradiction (6.11)--(6.12) and
-the collision-containing near miss (6.13)--(6.17).
+the collision-containing near miss (6.13)--(6.17).  The all-degree frontend
+checker separately verifies the exact Taylor identity, cofactor, and symbolic
+all-order multiplier behind (5.22).  The bounded discovery regressions and
+the three diagonal all-degree theorems are described in
+[`HC4_ALL_DEGREE_FRONTEND_EXPERIMENTS.md`](HC4_ALL_DEGREE_FRONTEND_EXPERIMENTS.md).

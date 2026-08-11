@@ -14,8 +14,18 @@
 > over the same target divisor force at least twelve.  The row is centered at
 > target infinity, so no affine-sheet `+1` applies, and purity forces a
 > separate affine ramification row.  The later carrier Wronskian calculation
-> classifies the spectator ledger exactly; lower-band realization, purity,
-> and global gluing remain open, so the degree pair is not excluded.
+> classifies the spectator ledger exactly.  The affine-purity frontier then
+> proves that this row requires a new boundary component, raising the source
+> floors to `28/49`; it does not determine the target curve or pullback
+> factorization.  The target-curve atlas reduces the former to 24 singular
+> normalization charts `(3k,5k)`, `1<=k<=24`, with a forced nonunit
+> collision/critical ideal.  Its `k=1` chart is controlled by one exact
+> quartic and generically has four affine nodes plus the fixed infinity cusp.
+> Its puncture is transverse to `(5,2)`.  The apparent terminal
+> `lambda=125/729,e=3` slot is only a formal compatibility: that neighborhood
+> is already resolved, so the actual affine divisor must occur elsewhere.
+> Lower-band realization and global gluing remain open, so the degree pair is
+> not excluded.
 
 The first global compiler is now implemented in
 [`F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md`](F2_75_125_GLOBAL_ATTACHMENT_COMPILER.md).
@@ -37,12 +47,21 @@ arms necessarily share it and force degree at least twelve.  The subsequent
 [`carrier Wronskian classifier`](F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md)
 extracts `(5,36)`, forces `R=(v^2-3v+3)/25` in the squarefree case and
 `rho^2-3rho+1=0` in the double case, and identifies the carrier residue maps
-as a cyclic cubic and the terminal degree-six Belyi map.  The purity row,
-lower-band realization, and global meridians remain missing.
+as a cyclic cubic and the terminal degree-six Belyi map.  Finally, the
+[`upstream extraction profile`](F2_UPSTREAM_CARRIER_EXTRACTION_PROFILE.md)
+finds the first forced nonzero matching class: the extraction-root cokernel is
+`R/(W^3U^18)` and its branchwise quotient has length `54`.  The purity row,
+global cancellation/Chern ledger, lower-band realization, and global
+meridians were still missing at that stage.  The subsequent outgoing-tail
+theorem closes the terminal continuation as unimodular log-etale, and the
+affine-purity frontier forces one new component without determining its
+target curve or pullback factorization.
 <!-- status-consumer: PF2CW1 a7774b0fa736b64c -->
 <!-- status-consumer: PF2GA1 57dea3062b1147fb -->
 <!-- status-consumer: PF2LNP1 e4f0f231bf7494d5 -->
 <!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
+<!-- status-consumer: PF2UCE1 7f15bc756cc73fff -->
+<!-- status-consumer: LCBBC1 b3eb4679f781c55f -->
 
 The three exact replays are:
 
@@ -56,7 +75,7 @@ The three exact replays are:
 The mathematical refinements are documented in
 [`F2_KUMMER_ORBIT_TRANSFER.md`](F2_KUMMER_ORBIT_TRANSFER.md) and
 [`F2_TERMINAL_RESIDUE_COVER.md`](F2_TERMINAL_RESIDUE_COVER.md).
-<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
+<!-- status-consumer: PF2GC1 6ba3fd9eb6a0bcdf -->
 
 ## 1. Common edge and cover-level contact census
 
@@ -274,15 +293,35 @@ from contact multiplicities.
 The F2 route is open only at the unresolved global support.  The immediate
 tasks are:
 
-1. transport the full logarithmic matrix through the upstream six-blowup
-   carrier-extraction chain;
-2. resolve the outgoing tail beyond the terminal `s=0` node and its transition
-   to the target `(5,2)` fan;
-3. construct the purity-forced affine ramification row and its companion;
-4. add any remaining global resolution centers to the source
+1. retain the upstream extraction theorem's forced cyclic cokernel
+   `R/(W^3U^18)`, and use the blowup-stable Cartier charge `27` rather than
+   its model-dependent raw length `54`; the kernel-line theorem makes the
+   actual cyclic contribution `deg(K_root)+27`, and contraction makes this
+   `27-e_root<=27`; full tangential divisibility proves `e_root=0`, so the
+   cyclic root term is exactly `27`;
+2. solve or stratify the 24 purity-target collision charts, factor the chosen
+   implicit equation, and locate the new component's proximity chain;
+3. add any remaining global resolution centers to the source
    class-group/unit/canonical skeleton; and
-5. run the localized-second-Chern, finite-normalization, and global meridian
-   filters.
+4. run the localized-second-Chern, finite-normalization, and global meridian
+   filters with the exact root term `27`, including every possible noncyclic
+   or remaining-component cancellation.
+
+<!-- status-consumer: LCCT1 2fc6ecea7a7c8b49 -->
+
+<!-- status-consumer: LKGD1 8a357250b5005186 -->
+
+<!-- status-consumer: LTKT1 32ac27318f16c20c -->
+
+<!-- status-consumer: PF2OTT1 af25012e34020e11 -->
+
+<!-- status-consumer: PF2APF1 192055eb737d3140 -->
+
+<!-- status-consumer: PF2ATC1 9ab722c45c586b73 -->
+
+<!-- status-consumer: PF2K1C1 358a6ba820e8b2f1 -->
+
+<!-- status-consumer: PF2PPA1 b24c4d80c2f8230e -->
 
 Thus the live global ledger has one squarefree case with one principal packet
 and one double-root case with two identical packets over the unique target
@@ -305,10 +344,11 @@ Several consequences can already be entered before that gluing:
 - `e=1` makes this row unramified in the normal direction, so purity requires
   a separate missing-boundary row with `e>1` over an affine nonproperness
   curve;
-- the global geometric Galois group has a decomposition-group quotient
-  `A_6`, hence has `A_6` as a nonabelian simple composition factor, is
-  nonsolvable, and has order divisible by `360`; if `d=6`, it is `A_6` or
-  `S_6`;
+- the global geometric Galois group has a decomposition subgroup with
+  quotient `A_6`; hence `A_6` is a section of the global group, the global
+  group is nonsolvable, and its order is divisible by `360`; this section
+  statement does not in general make `A_6` a composition factor; if `d=6`,
+  the global group is `A_6` or `S_6`;
 - a same-target isomorphism between the two identical local covers, if one
   exists, is unique because their deck group is trivial.
 

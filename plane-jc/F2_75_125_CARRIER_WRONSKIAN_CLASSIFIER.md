@@ -313,12 +313,27 @@ The global F2 problem is now finite at the carrier level:
    marked carrier-local points and the common fans along the principal arms.
    Their logarithmic exponent determinants are `1`, `3`, or `5`, so none
    supplies a normalization defect;
-4. the remaining geometric support is the upstream carrier-extraction chain,
-   the outgoing terminal tail, the purity-forced affine row, and uncompiled
-   global centers.  The independent coefficient route still has to impose
-   these rows on the lower Laurent system.
+4. the subsequent
+   [`upstream extraction profile`](F2_UPSTREAM_CARRIER_EXTRACTION_PROFILE.md)
+   proves that the carrier-zero ladder is unimodular and identifies the
+   extraction-root cokernel `R/(W^3U^18)`, whose branchwise matching quotient
+   has length `54`;
+5. the subsequent outgoing-tail theorem closes the terminal continuation as
+   unimodular log-etale; the affine-purity frontier then forces a new
+   affine-branch component and raises the source floors to `28/49`, while
+   proving that coarse purity data do not determine its target curve or raise
+   the degree floors.  The remaining geometric work is to recover that curve,
+   factor its pullback, compile possible cancellation centers, and prove a
+   global localized-Chern/descent identity.  The independent coefficient
+   route still has to impose these rows on the lower Laurent system.
 
 <!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
+
+<!-- status-consumer: PF2UCE1 7f15bc756cc73fff -->
+
+<!-- status-consumer: PF2OTT1 af25012e34020e11 -->
+
+<!-- status-consumer: PF2APF1 192055eb737d3140 -->
 
 Until those steps are completed, the F2 row and `(75,125)` remain
 unexcluded.

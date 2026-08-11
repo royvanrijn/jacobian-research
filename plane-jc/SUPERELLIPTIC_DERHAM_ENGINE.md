@@ -388,7 +388,7 @@ derive its Laurent bands first, then feed the leading identity to the engine.
 The expected diagnostic is not necessarily genus three or six conditions: it
 is the character dimension determined by the derived
 `(a,b,deg A)` and formulae (10)--(11).
-<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
+<!-- status-consumer: PF2GC1 6ba3fd9eb6a0bcdf -->
 
 ## 9. Reproduction
 

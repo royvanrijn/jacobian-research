@@ -367,10 +367,140 @@ fan-alignment ray; and every principal arm requires six further common-fan
 components.  All resulting exponent determinants are `1`, `3`, or `5`, so
 these nodes are log-etale in characteristic zero.  Together with the
 terminal audit this strengthens the source-boundary lower bounds to `27/48`
-components, but still produces no normalization defect.  The remaining
-candidate support is the upstream carrier-extraction chain, the outgoing
-terminal tail, the affine purity row, uncompiled global centers, and any
-positive remainder forced by a global localized-`c_2` identity.
+components, but still produces no normalization defect.
+
+The upstream carrier-extraction audit changes the problem qualitatively.  Its
+carrier-zero ladder is unimodular, but at the node between the first
+exceptional and the strict line at infinity the exact model is
+`R/(W^3 U^18)`.  Its canonical branchwise splitting has quotient
+`R/(W^3,U^18)` of length `54`.  This is a forced nonzero degree-one matching
+class, while `H_Z^0` remains zero.  The main target is no longer to find a
+local class: it is to prove a global Keller/localized-`c_2` identity that
+cannot accommodate this class after the affine purity row and other possible
+cancellation centers are compiled.  The outgoing terminal-tail theorem now
+maps the remaining source rays unimodularly to the existing target fan and
+proves that they contribute no defect or correction.
+
+The affine-purity frontier is now typed exactly.  Purity forces a new
+boundary divisor with `e>1` over an affine nonproperness curve, because none
+of the certified components has that generic profile.  The source-component
+floors therefore rise from `27/48` to `28/49`.  The possible degrees remain
+`6..9375` and `12..9375`, every ramified row obeys
+`2<=e<=d-1` and `f<=floor((d-1)/e)`, and the target curve has a polynomial
+parametrization of degree at most `124`.  A coarse row `(e,f)=(2,1)` with
+affine degree `d-2` survives at every such `d`, so generic purity cannot
+select the row or raise the degree floor.  The live input is the actual
+nonproperness curve and the complete factorization of its pullback.
+
+The target-curve theorem makes that input finite and collision-theoretic.
+Every F2 nonproperness component has normalization degrees `(3k,5k)` for
+`1<=k<=24`, projective degree `5k<=120`, unique infinity point `[0:1:0]`,
+and top implicit form `P^(5k)`.  It must be singular, so its two normalization
+divided differences generate a proper collision/critical ideal.  The next
+computation is therefore a 24-chart collision stratification followed by
+implicitization and pullback factorization, not an unrestricted
+degree-124 curve search.
+
+The first chart is already explicit.  For `k=1`, target and parameter
+normalization give `p=t^3+a*t` and
+`q=t^5+b*t^4+c*t^2+d*t`; every collision is indexed by a root of
+`u^4+b*u^3+a*u^2+(2*a*b-c)u-(a^2+d)`.  A nonempty open subchart has four
+ordinary affine nodes, and with the `(2,5)` infinity cusp its conductor
+ledger exhausts the genus-six quintic budget.  The unresolved step is now
+the source pullback over these marked quartic roots and the degenerate
+quartic strata, followed by the remaining `k=2..24` charts.
+
+The generic `k=1` target equation is now explicit: one twelve-support
+quintic `F(P,Q)`.  Its normalization pullback satisfies
+`(F_P,F_Q)=C(t)*(q',-p')`, with one degree-eight polynomial `C` cutting out
+the eight preimages of the four nodes.  The remaining operation is no longer
+target implicitization but factorization of this fixed equation after the
+F2 Laurent substitution.
+
+<!-- status-consumer: PF2K1I1 a7582c1e36140840 -->
+
+The fixed-coordinate pullback interface is explicit too.  Every inverse
+target normalization is encoded by five scalars, gives a denominator-free
+quintic, and computes the carrier residue and all eight relevant infinity
+jets.  Because a Keller map is étale on the affine plane, the source
+pullback is automatically reduced and its affine singular/conductor scheme
+is exactly the base change of the four target nodes.  Each affine node has
+normalization-defect length one and conductor-divisor degree two; only four
+finite fiber counts remain.  At geometric
+degree `d`, each count is at most `d-1`, so the total affine nodal conductor
+is at most `4(d-1)` (`20/44` at the two degree floors).  The unresolved
+factorization is therefore confined to the source boundary, where the
+purity divisor and its logarithmic point corrections live.
+
+<!-- status-consumer: PF2K1PB1 6f837229017243c4 -->
+
+The conductor calculation now includes every degenerate `k=1` stratum.
+Coprimality of degrees `3,5` forces birationality, the fixed `(2,5)` infinity
+cusp leaves affine delta invariant `4`, and the same monic degree-eight
+resultant is the exact conductor divisor even when nodes coalesce into
+cusps, tacnodes, or higher multiple fibers.  Under a degree-`d` Keller
+pullback, the affine normalization defect is at most `4(d-1)` and the affine
+conductor-divisor degree at most `8(d-1)`.  Degenerations can change only the
+distribution and finite fiber counts, not the total target conductor.
+
+<!-- status-consumer: PF2K1CC1 f152c82ef2d54c32 -->
+
+The conductor length is not itself a logarithmic point correction.  For an
+fs tame Kummer toroidal packet over a resolved target node, both the split
+model and the collided cyclic model `z^e=x*y` (including its full `(-2)`
+resolution chain) are log-étale.  Their logarithmic cokernel and localized
+`ch_2` vanish.  The remaining boundary calculation must therefore test the
+actual completed source map against the toroidal chart criterion; only a
+failure of that test can survive.  Even then, the general SNC matrix gives a
+second gate: full-rank exponent data force zero cokernel, while rank one can
+have singular determinant support only if two explicit logarithmic-unit
+first jets vanish simultaneously.
+
+<!-- status-consumer: PF2K1TN1 521fb57f7e6abc1f -->
+
+This separation is now complete on the affine plane.  Any embedded
+resolution of any reduced target curve pulls back through a Keller map to a
+strict étale log resolution, so nodes, cusps, tacnodes, and higher multiple
+points all have zero relative logarithmic cokernel.  Their ordinary
+conductor lengths remain finite-fiber and boundary-escape data, but neither
+those lengths nor carrier-parameter corank can be inserted into the source
+`Fitt_1/ch_2` module.  Only compactification-boundary attachments remain;
+under the minimal transverse unibranch SNC hypotheses their exact point
+length is locally `q_p*m_C` and totals `m_C*f` over a complete
+residue-degree-`f` fiber.
+
+<!-- status-consumer: PAER1 60eb24b2232d159e -->
+
+The puncture is now located as well.  Every chart meets the extracted target
+divisor `(5,2)` with contact `k` and residue
+`lambda=p_lead^5/(-q_lead)^3`.  A formal direct comparison with the terminal
+cover would force `lambda=125/729,e=3`, but that source neighborhood is
+already a resolved morphism: every further exceptional divisor over it maps
+to one point and cannot dominate the affine target curve.  Thus the terminal
+passport does not determine the affine index, and the former conditional
+`29/50` count is unavailable.  The unconditional floors stay `28/49`.
+
+The blowup-conservation theorem identifies the correct birational quantity.
+Raw matching length changes under further boundary blowups, but
+
+\[
+\mathcal Q(D)=\frac12\sum m_i^2C_i^2+\sum_{i\text{--}j}m_im_j
+=\frac12D^2
+\]
+
+is conserved.  For the extraction-root cycle `D=3E+18L` it equals `27`.
+The kernel-line theorem identifies the remaining cyclic twist exactly.  If
+`K` is the kernel of the restricted logarithmic differential, then the
+cokernel line is `K tensor O_D(D)` and
+`ch_2(coker)=deg_D(K)+D^2/2`.  On a packet contracted to a target point, the
+kernel line is tautological for a Gauss map `gamma:D->P^1`, so
+`deg_D(K)=-deg(gamma^*O(1))`.  Thus the F2 root contribution is
+`27-e_root<=27` for a nonnegative Gauss degree.  The tangential-coordinate
+theorem now computes it: `f^*z=W^3U^18*unit` makes the fixed target covector
+`dz` generate the kernel modulo the full thickened Cartier ideal, so
+`e_root=0` and the cyclic root contribution is exactly `27`.  Noncyclic
+nodal terms, the outgoing and affine rows, and the global cancellation
+identity are now the central gaps.
 
 <!-- status-consumer: UCBS1 824720a8f727bdf8 -->
 
@@ -379,6 +509,26 @@ positive remainder forced by a global localized-`c_2` identity.
 <!-- status-consumer: PF2LNP1 e4f0f231bf7494d5 -->
 
 <!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
+
+<!-- status-consumer: PF2UCE1 7f15bc756cc73fff -->
+
+<!-- status-consumer: LCBBC1 b3eb4679f781c55f -->
+
+<!-- status-consumer: LCCT1 2fc6ecea7a7c8b49 -->
+
+<!-- status-consumer: LKGD1 8a357250b5005186 -->
+
+<!-- status-consumer: LTKT1 32ac27318f16c20c -->
+
+<!-- status-consumer: PF2OTT1 af25012e34020e11 -->
+
+<!-- status-consumer: PF2APF1 192055eb737d3140 -->
+
+<!-- status-consumer: PF2ATC1 9ab722c45c586b73 -->
+
+<!-- status-consumer: PF2K1C1 358a6ba820e8b2f1 -->
+
+<!-- status-consumer: PF2PPA1 b24c4d80c2f8230e -->
 
 An alternative route may retain the original matching cokernel `M`.  The
 [plane specialization of the general theorem](verified/SUPPORT_SATURATION_PRINCIPLE.md#plane-jc-conductor-residue)

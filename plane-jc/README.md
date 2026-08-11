@@ -14,6 +14,8 @@ three-dimensional counterexample construction.
 | [DEGREE_FRONTIER_125.md](DEGREE_FRONTIER_125.md) | Theorem scope, reduction chain, and historical frontier |
 | [UNIVERSAL_COMPLETE_CHAIN_BOUNDARY_SATURATION.md](UNIVERSAL_COMPLETE_CHAIN_BOUNDARY_SATURATION.md) | Degree-independent logarithmic-cotangent `S1` theorem and exact nodal-tree no-go models for automatic matching-cokernel depth/height |
 | [LOG_CONDUCTOR_DEGREE_SHIFT.md](LOG_CONDUCTOR_DEGREE_SHIFT.md) | Normalization mismatches live in `H_Z^1`, not `H_Z^0`; normalized determinant descent; integrable same-determinant/different-node-cokernel models; reduction to nodal `Fitt_1` and localized `c_2` |
+| [LOGARITHMIC_CH2_BUDGET.md](LOGARITHMIC_CH2_BUDGET.md) | Global logarithmic `ch_2` identity, exact boundary-blowup covariance, conditional effective-residual criterion, and provisional `(75,125)` budgets |
+<!-- status-consumer: LCHB1 176bf85520516fa6 -->
 | [FINITE_NORMALIZATION_PROGRAM.md](FINITE_NORMALIZATION_PROGRAM.md) | Unconditional surface finite-flatness theorem; canonical branch/missing-boundary cover; arbitrary-puncture rigidity, bounded Pareto signature atlas, residual-different identity, and log-surface programme |
 | [JC2_FINITE_NORMALIZATION_FRONTIER.md](JC2_FINITE_NORMALIZATION_FRONTIER.md) | Cubic cusp countermodel to automatic residue immersion; clean-packet classification; Orevkov Euler-budget closure of the cusp and all geometric degree three |
 | [JC2_QUARTIC_PACKET_FRONTIER.md](JC2_QUARTIC_PACKET_FRONTIER.md) | Orevkov's exact quartic jump/two-boundary dichotomy; \(3+1\) cusp and \(2+2\) collision atlas; monodromy exclusion of the lone-cusp packet |
@@ -47,7 +49,7 @@ three-dimensional counterexample construction.
 <!-- status-consumer: PF2KO1 c3a129906d2f75d2 -->
 | [F2_KUMMER_ORBIT_TRANSFER.md](F2_KUMMER_ORBIT_TRANSFER.md) | Exact transfer around nonzero fifth-root orbits, exclusion of zero-root strata, and reduction to one principal chain or two copies |
 <!-- status-consumer: PF2TR1 bb41ccb3d135dbf2 -->
-<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
+<!-- status-consumer: PF2GC1 6ba3fd9eb6a0bcdf -->
 | [F2_TERMINAL_RESIDUE_COVER.md](F2_TERMINAL_RESIDUE_COVER.md) | Target ray `(5,2)`, degree floors `6`/same-target `12`, three forced node attachments, genus-25 `A_6` Galois closure, purity/different ledger, geometric `A_6` versus arithmetic `S_6`, and trivial target-fixed deck group |
 | [F2_A6_SIMPLE_SPECTATOR_GLUING.md](F2_A6_SIMPLE_SPECTATOR_GLUING.md) | Conditional spectator gluing: six genus-zero `S_7` one-cycle classes, exact Kummer/terminal order-five comparison, and one inertia-supported degree-11 `S_11` class in the rational-source fivefold model |
 <!-- status-consumer: PF2GA1 57dea3062b1147fb -->
@@ -56,6 +58,60 @@ three-dimensional counterexample construction.
 | [F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md](F2_75_125_CARRIER_WRONSKIAN_CLASSIFIER.md) | Descent-36 carrier Wronskian, target ray `(5,36)`, unique cyclic-cubic squarefree row with unramified spectators, and two conjugate double rows identified with the terminal Belyi map |
 | [F2_CARRIER_LOG_NODE_PROFILE.md](F2_CARRIER_LOG_NODE_PROFILE.md) | Exact carrier normal orders and common fan refinements; log-etaleness of all marked carrier/arm/spectator nodes and strengthened `27/48` source-boundary lower bounds |
 <!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
+| [F2_UPSTREAM_CARRIER_EXTRACTION_PROFILE.md](F2_UPSTREAM_CARRIER_EXTRACTION_PROFILE.md) | Unimodular carrier-zero ladder and the extraction-root model `R/(W^3 U^18)`, with a forced length-54 degree-one branch-matching quotient |
+<!-- status-consumer: PF2UCE1 7f15bc756cc73fff -->
+| [LOG_CYCLIC_BOUNDARY_BLOWUP_CONSERVATION.md](LOG_CYCLIC_BOUNDARY_BLOWUP_CONSERVATION.md) | Universal correction of raw cyclic node lengths by component self-intersections; conserved Cartier charge `D^2/2` and F2 root value `27` |
+<!-- status-consumer: LCBBC1 b3eb4679f781c55f -->
+| [LOG_CYCLIC_COKERNEL_TWIST.md](LOG_CYCLIC_COKERNEL_TWIST.md) | Kernel-line identity `L=K tensor O_D(D)` and exact reduction of the F2 root contribution to `deg(K_root)+27` |
+<!-- status-consumer: LCCT1 2fc6ecea7a7c8b49 -->
+| [LOG_KERNEL_GAUSS_DEGREE.md](LOG_KERNEL_GAUSS_DEGREE.md) | Contracted-packet identity `K=gamma^*O(-1)`, nonnegative Gauss degree, and F2 root contribution `27-e_root<=27` |
+<!-- status-consumer: LKGD1 8a357250b5005186 -->
+| [LOG_TANGENTIAL_KERNEL_TRIVIALIZATION.md](LOG_TANGENTIAL_KERNEL_TRIVIALIZATION.md) | Full-thickness divisibility of `d(f^*z)`, fixed kernel generator `dz`, and exact F2 cyclic root contribution `ch_2=27` |
+<!-- status-consumer: LTKT1 32ac27318f16c20c -->
+| [F2_OUTGOING_TERMINAL_TAIL.md](F2_OUTGOING_TERMINAL_TAIL.md) | Complete unimodular map from the outgoing source tail to the extracted `(5,2)` target fan; zero log defect through the final boundary/affine endpoint |
+<!-- status-consumer: PF2OTT1 af25012e34020e11 -->
+| [F2_AFFINE_PURITY_FRONTIER.md](F2_AFFINE_PURITY_FRONTIER.md) | Purity-forced new affine-branch divisor, strengthened `28/49` source-component floors, finite degree/row bounds, and proof that coarse purity ledgers survive at every remaining degree |
+<!-- status-consumer: PF2APF1 192055eb737d3140 -->
+| [F2_AFFINE_TARGET_CURVE_ATLAS.md](F2_AFFINE_TARGET_CURVE_ATLAS.md) | Exact 24-chart normalization atlas `(3k,5k)`, curve degrees `5..120`, pure infinity form, forced affine singularity, and nonunit divided-difference collision ideal |
+<!-- status-consumer: PF2ATC1 9ab722c45c586b73 -->
+| [F2_AFFINE_TARGET_K1_COLLISION.md](F2_AFFINE_TARGET_K1_COLLISION.md) | Four-parameter `k=1` target normal form, exact collision quartic, and nonempty generic packet with four affine nodes plus the `(2,5)` infinity cusp |
+<!-- status-consumer: PF2K1C1 358a6ba820e8b2f1 -->
+| [F2_AFFINE_TARGET_K1_IMPLICIT_CONDUCTOR.md](F2_AFFINE_TARGET_K1_IMPLICIT_CONDUCTOR.md) | Exact twelve-support implicit quintic and degree-eight conductor-gradient factorization for the generic `k=1` target |
+<!-- status-consumer: PF2K1I1 a7582c1e36140840 -->
+| [F2_AFFINE_K1_KELLER_PULLBACK.md](F2_AFFINE_K1_KELLER_PULLBACK.md) | Fixed-coordinate quintic and carrier jets; reduced Keller pullback with affine node/conductor scheme given by four explicit fibers |
+<!-- status-consumer: PF2K1PB1 6f837229017243c4 -->
+| [F2_AFFINE_TARGET_K1_CONDUCTOR_CONSERVATION.md](F2_AFFINE_TARGET_K1_CONDUCTOR_CONSERVATION.md) | All-stratum affine delta `4`, exact degree-eight conductor divisor, and uniform étale source bounds through every `k=1` degeneration |
+<!-- status-consumer: PF2K1CC1 f152c82ef2d54c32 -->
+| [F2_AFFINE_K1_TAME_NODE_PACKET.md](F2_AFFINE_K1_TAME_NODE_PACKET.md) | Universal vanishing for fs tame Kummer node packets, plus the general SNC exponent-rank and first-unit-jet gates for every remaining point defect |
+<!-- status-consumer: PF2K1TN1 521fb57f7e6abc1f -->
+| [AFFINE_KELLER_STRICT_LOG_ETALE_RESOLUTION.md](AFFINE_KELLER_STRICT_LOG_ETALE_RESOLUTION.md) | Strict étale pullback of every affine embedded curve resolution; zero relative logarithmic correction for all affine singularities and separation from carrier-parameter ramification |
+<!-- status-consumer: PAER1 60eb24b2232d159e -->
+| [F2_AFFINE_K1_CARRIER_JET_FACTORIZATION.md](F2_AFFINE_K1_CARRIER_JET_FACTORIZATION.md) | Irreducible `k=1` quintic, exact fixed-coordinate transport, generic dominance, invariant terminal factor, and finite raw carrier gates of codimension three for `E_6+A_1` and four for `E_8` |
+<!-- status-consumer: PF2K1JF1 7bc57f390f0531b5 -->
+| [COPRIME_CARRIER_JET_DISCRIMINANT_PATTERN.md](COPRIME_CARRIER_JET_DISCRIMINANT_PATTERN.md) | Universal primitive carrier transport and saturation count; exact low-bidegree determinant pattern; generic `(3,5)` cusp-plus-three-node discriminant and conductor split; explicit separation of proved facts from the all-bidegree conjecture |
+<!-- status-consumer: PCJDP1 d4c16bb71dfc6b80 -->
+| [LOG_UNIBRANCH_ATTACHMENT_FITTING.md](LOG_UNIBRANCH_ATTACHMENT_FITTING.md) | Minimal transverse SNC attachment theorem: local `diag(r,t^(q_p*m_C))`, nonunit `Fitt_1`, point correction `q_p*m_C`, and residue-degree-`f` fiber total `m_C*f`; ordinary-cusp total `2f` |
+<!-- status-consumer: LUAF1 b0279670ffbd3fa5 -->
+| [LOG_CUSP_ATTACHMENT_DICHOTOMY.md](LOG_CUSP_ATTACHMENT_DICHOTOMY.md) | Smooth-fold versus SNC-node cusp theorem: isolated local bound `q_p*m_C-1+epsilon_p`, exact ordinary-cusp fold of charge one, and complete-fiber range `f..2f` |
+<!-- status-consumer: LCAD1 7b9c15d3dfae0337 -->
+| [F2_AFFINE_PURITY_PUNCTURE_ATTACHMENT.md](F2_AFFINE_PURITY_PUNCTURE_ATTACHMENT.md) | Target puncture on `(5,2)` with contact `k`, formal terminal compatibility, and proof that the resolved terminal neighborhood has no affine-curve extraction slot |
+<!-- status-consumer: PF2PPA1 b24c4d80c2f8230e -->
+| [F2_AFFINE_K1_LOG_CH2.md](F2_AFFINE_K1_LOG_CH2.md) | Exact conormal/cyclic `ch_2`, carrier-contact and all-signature degree-floor sieves, plus the incidence-sensitive cusp ledger `2f-h+c` and its fold/node endpoint bounds |
+<!-- status-consumer: PF2K1L1 5221f5659fc19729 -->
+| [F2_AFFINE_K1_COMPLEMENT_MONODROMY.md](F2_AFFINE_K1_COMPLEMENT_MONODROMY.md) | Cyclic complements on all immersed collision partitions and the generic one-/two-cusp strata; first noncyclic `E_6+A_1` escape and its degree-six fixed-sheet action |
+<!-- status-consumer: PF2K1M1 fafcbb3c2e6ceb2b -->
+| [F2_AFFINE_K1_E8_MONODROMY.md](F2_AFFINE_K1_E8_MONODROMY.md) | Exact E8 degree-six packet and exhaustive `A_5` coset atlas: fixed-sheet F2 degrees `6,10,15,30`, with every ramified peripheral orbit a distinct `(2,1)` row |
+<!-- status-consumer: PF2K1E8M1 bbb282c6bcfa62fc -->
+| [F2_AFFINE_K1_E8_ORBIFOLD_ATLAS.md](F2_AFFINE_K1_E8_ORBIFOLD_ATLAS.md) | Complete simple-inertia E8 atlas: order-240 universal quotient, 13 fixed-sheet F2 actions in ten degrees, and normalization-sensitive `(2,f)` rows for `f=1,2,4` |
+<!-- status-consumer: PF2K1E8O1 4251750ed4e43c89 -->
+| [F2_AFFINE_K1_COMPLETE_CHAIN_BUDGET.md](F2_AFFINE_K1_COMPLETE_CHAIN_BUDGET.md) | Stable complete-chain identity `ell_point=u-1`; all simple-inertia E8 rows fail the effective cusp budget and require explicitly quantified negative `Fitt_1` defects |
+<!-- status-consumer: PF2K1CB1 5cc386dba344a867 -->
+| [F2_AFFINE_GLOBAL_RAMIFICATION_BUDGET.md](F2_AFFINE_GLOBAL_RAMIFICATION_BUDGET.md) | Multi-component/genus-puncture `ch_2` cancellation; unique degree-six cubic-inertia `A_6` equality row, terminal-passport match, and exact generically split contracted packet |
+<!-- status-consumer: PF2GRB1 aa3a0efd2e0ff277 -->
+| [LOG_CONTRACTED_DIVISOR_SMITH_CLASSIFICATION.md](LOG_CONTRACTED_DIVISOR_SMITH_CLASSIFICATION.md) | Generic Smith classification for divisors contracted to points; cubic E8 saturated normal form, length-four cyclic quotient, and exact attachment gate `2I-v-3n>=0` |
+<!-- status-consumer: LCDSC1 07dcd994b4faf092 -->
+| [LOG_COKERNEL_CYCLIC_SUBMODULE_POSITIVITY.md](LOG_COKERNEL_CYCLIC_SUBMODULE_POSITIVITY.md) | Isolated `Fitt_1` positivity theorem: every generically cyclic rank-two cokernel contains its cyclic determinant packet with effective quotient, excluding all one-component simple-inertia E8 completions |
+<!-- status-consumer: LCSP1 8658eebeb1d65671 -->
 <!-- status-consumer: PF2CW1 a7774b0fa736b64c -->
 | [F2_75_125_CARRIER_SPECIALIZATIONS.md](F2_75_125_CARRIER_SPECIALIZATIONS.md) | Exact quadratic-field specialization of all exposed lower-Laurent kernels/cokernels, quartic defect compositum, the `294+53=347` full/quotient distinction, and final `7+6` cokernel |
 <!-- status-consumer: PF2CS1 666da98d2d24669e -->

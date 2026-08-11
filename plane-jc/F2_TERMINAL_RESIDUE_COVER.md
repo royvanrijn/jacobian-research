@@ -473,8 +473,11 @@ may not reuse ten as a transverse surface-different coefficient.
 Finally, in the geometric Galois closure of a global realization, the
 decomposition group at `T` has the residue `A_6` Galois group as a quotient.
 Consequently the global geometric monodromy is nonsolvable and its order is
-divisible by `360`; equivalently, `A_6` is a nonabelian simple composition
-factor.  If equality holds in (30), the global monodromy is a
+divisible by `360`; equivalently, `A_6` is a section (a quotient of a
+subgroup) of the global group.  This does **not** imply that `A_6` is a
+composition factor of the global group: for example, `A_7` contains an
+`A_6` subgroup but its only nonabelian composition factor is `A_7`.  If
+equality holds in (30), the global monodromy is a
 transitive subgroup of `S_6` of order divisible by `360`, hence is `A_6` or
 `S_6`.  This is a global group-theoretic restriction, not an exclusion.
 

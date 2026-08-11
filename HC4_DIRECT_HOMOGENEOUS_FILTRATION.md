@@ -254,6 +254,75 @@ Equivalently,
 
 in the fraction field, and the left side is forced to be polynomial.
 
+### 5.1 The diagonal model in every degree
+
+The diagonal reverse-Schur equation has a complete degree-free solution.
+
+> **Theorem `HC4FSD1` -- all-degree diagonal ternary-Schur rigidity.**
+> Let \(m\ge2\), let \(K\) have characteristic zero, and normalize
+> \[
+> \operatorname{Hess}f=\operatorname{diag}(x^m,y^m,z^m).
+> \]
+> For \(a\in K[x,y,z]_m\) and \(q\in K[x,y,z]_{m-2}\),
+> \[
+> qx^my^mz^m
+> =a_x^2y^mz^m+a_y^2x^mz^m+a_z^2x^my^m             \tag{5.6}
+> \]
+> holds if and only if
+> \[
+> a=\alpha x^m+\beta y^m+\gamma z^m,
+> \qquad
+> q=m^2(\alpha^2x^{m-2}+\beta^2y^{m-2}+\gamma^2z^{m-2}). \tag{5.7}
+> \]
+> Equivalently, over an algebraic closure the radical of the coefficient
+> ideal of the divisibility condition is the ideal of every mixed
+> coefficient of \(a\), in every degree \(D=m+2\ge4\).
+
+To prove the forward implication, reduce (5.6) modulo \(x^m\).  The last two
+terms vanish, so
+
+\[
+ x^m\mid a_x^2y^mz^m.
+\]
+
+Since \(x\) is coprime to \(yz\), the \(x\)-adic valuation gives
+
+\[
+ x^{\lceil m/2\rceil}\mid a_x.                     \tag{5.8}
+\]
+
+The same argument gives the analogous divisibilities for \(a_y\) and
+\(a_z\).  Differentiation is injective on the monomials containing the
+differentiated variable in characteristic zero.  Therefore every monomial
+of \(a\) with positive \(x\)-exponent has that exponent at least
+\(\lceil m/2\rceil+1\), and likewise for \(y,z\).  A mixed monomial would
+contain two positive exponents and hence have degree at least
+
+\[
+ 2(\lceil m/2\rceil+1)>m,                           \tag{5.9}
+\]
+
+contradicting homogeneity of degree \(m\).  Thus only \(x^m,y^m,z^m\)
+occur.  Direct substitution gives (5.7) and proves the converse.  Equality
+of radicals follows from this zero-set classification and the
+Nullstellensatz.
+
+The theorem proves the proposed ternary Schur dichotomy on the completely
+split diagonal Hessian stratum: all solutions remain in the same three
+coordinate directions.  It does not classify a general ternary Hessian or
+the remaining nonsquarefree factor strata.
+
+For this diagonal stratum, the subsequent constant-direction question is now
+also complete.  The all-lower-layer theorem `HC4FSD3` proves that no
+compatible completion in degree \(D\ge5\) admits a constant symmetric
+determinant-preserving direction of rank at least two.  In degree five,
+`HC4MR4` excludes rank one, so no nonzero constant symmetric direction
+survives.  This closes constant quadratic pencil admission on the diagonal
+packet, not nonlinear or polynomially moving pivots.  See
+[*All-degree diagonal Schur and Meng--Yang frontend theorems*](HC4_ALL_DEGREE_FRONTEND_EXPERIMENTS.md#21-propagation-through-every-lower-layer).
+
+<!-- status-consumer: HC4FSD3 1107bc6ff58456f5 -->
+
 ---
 
 ## 6. What the new problem really is
@@ -505,13 +574,12 @@ fiber to `HC3`.  Only the order-one degree-five resonance remains.
 
 See `HC4_DIRECT_DOUBLE_LINEAR_HESSIAN_GATE.md`.
 
-The next research task is therefore the degree-five lower-rank order-one
-resonance (0.14).  Its complete four-variable potential is a scalar parent
-`H+w*P+eta*w^2/2` with pure-cube leading pivot
-`P_3=(4v/3)*ell^3`.  Classifying that scalar-parent geometry, in its zero-
-and nonzero-corner branches, is the broader next method: the same composite
-pivot pattern is what the general extremal multiplicity identities predict.
-After those come nonlinear repeated factors, linear
+The degree-five lower-rank order-one resonance (0.14) has complete
+four-variable potential `H+w*P+eta*w^2/2` with pure-cube leading pivot
+`P_3=(4v/3)*ell^3`.  The subsequent theorem `HC4DIR28` closes both its zero-
+and nonzero-corner branches: the nonzero corner reduces to `HC3`, while a
+pure-cube gradient lemma gives a constant unit pivot direction in the zero
+corner and reduces it to `HC2`.  After this come nonlinear repeated factors, linear
 multiplicity at least seven, or several distinct repeated factors.
 Rank-at-most-two top Hessians remain a separate synchronization problem.  This
 is the direct HC4 attack that was missing from the relative-nilpotent

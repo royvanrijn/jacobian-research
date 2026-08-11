@@ -111,29 +111,82 @@ This policy applies only to searches for two-dimensional Keller maps.
     [`F2_LOG_NODE_PROFILE.md`](F2_LOG_NODE_PROFILE.md) for the terminal
     profiles.  The
     [`F2 carrier profile`](F2_CARRIER_LOG_NODE_PROFILE.md) closes the marked
-    carrier, aligned principal-arm, and spectator nodes as tame log-etale and
-    moves the live support to the upstream carrier-extraction chain, outgoing
-    terminal tail, affine purity row, and uncompiled global centers.  Use
+    carrier, aligned principal-arm, and spectator nodes as tame log-etale.
+    The subsequent
+    [`upstream extraction profile`](F2_UPSTREAM_CARRIER_EXTRACTION_PROFILE.md)
+    proves that its carrier-zero ladder is also unimodular but forces
+    `coker(theta_log)=R/(W^3*U^18)` at the extraction root, with length-`54`
+    branchwise matching quotient.  Treat this as a degree-one class: the live
+    target is a global localized-Chern/descent identity.  Raw node lengths are
+    not invariant; use the
+    [`cyclic boundary charge`](LOG_CYCLIC_BOUNDARY_BLOWUP_CONSERVATION.md)
+    `D^2/2`, which has stable F2 root value `27`, and separately compile the
+    kernel line from
+    [`LOG_CYCLIC_COKERNEL_TWIST.md`](LOG_CYCLIC_COKERNEL_TWIST.md).  The actual
+    contracted-packet theorem
+    [`LOG_KERNEL_GAUSS_DEGREE.md`](LOG_KERNEL_GAUSS_DEGREE.md) makes this
+    `27-e_root<=27`, where `e_root` is the nonnegative degree of the
+    logarithmic kernel-direction map to `P^1`.  The
+    [`tangential-kernel theorem`](LOG_TANGENTIAL_KERNEL_TRIVIALIZATION.md)
+    proves `e_root=0`: the fixed covector `dz` pulls back into the full ideal
+    of `3E+18L`.  Retain the exact cyclic contribution `27`; do not reopen an
+    independent root twist or nilpotent-jet variable.  The
+    [`outgoing-tail theorem`](F2_OUTGOING_TERMINAL_TAIL.md) also closes the
+    remaining terminal rays as unimodular log-etale.  Compile noncyclic
+    corrections and possible cancellation centers.  The
+    [`affine-purity frontier`](F2_AFFINE_PURITY_FRONTIER.md) already proves
+    that a new affine-branch component is necessary, raising the source
+    floors to `28/49`, but also proves that generic ledgers survive for every
+    `d` in `6..9375` or `12..9375`.  Do not rerun a free row enumeration;
+    recover the actual nonproperness curve, factor its pullback, and locate
+    the resulting proximity chain.
+    The
+    [`target-curve atlas`](F2_AFFINE_TARGET_CURVE_ATLAS.md) reduces the first
+    operation to the 24 charts `(deg p,deg q)=(3k,5k)`, `1<=k<=24`, on the
+    proper divided-difference collision/critical locus.  Start there; reject
+    any unit collision ideal before implicitization.
+    On `k=1`, use the exact quartic in
+    [`F2_AFFINE_TARGET_K1_COLLISION.md`](F2_AFFINE_TARGET_K1_COLLISION.md):
+    compile its four generic nodal roots and all discriminant, diagonal,
+    tangent, and merged-image degenerations before attempting a generic
+    two-variable elimination.
+    Compare the leading residue with `125/729` to determine whether the
+    target curve follows the special carrier cluster.  Do not use the
+    terminal index `3` as the affine-row index: the terminal neighborhood is
+    already resolved and admits no divisor dominating the affine curve.
+    Locate the affine divisor at a different unresolved source-boundary locus.
+    Use
     [`UNIVERSAL_COMPLETE_CHAIN_BOUNDARY_SATURATION.md`](UNIVERSAL_COMPLETE_CHAIN_BOUNDARY_SATURATION.md)
     as the claim boundary.
     <!-- status-consumer: UCBS1 824720a8f727bdf8 -->
     <!-- status-consumer: LCDS1 5b4d92acd50d6c41 -->
     <!-- status-consumer: PF2LNP1 e4f0f231bf7494d5 -->
     <!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
+    <!-- status-consumer: PF2UCE1 7f15bc756cc73fff -->
+    <!-- status-consumer: LCBBC1 b3eb4679f781c55f -->
+    <!-- status-consumer: LCCT1 2fc6ecea7a7c8b49 -->
+    <!-- status-consumer: LKGD1 8a357250b5005186 -->
+    <!-- status-consumer: LTKT1 32ac27318f16c20c -->
+    <!-- status-consumer: PF2OTT1 af25012e34020e11 -->
+    <!-- status-consumer: PF2APF1 192055eb737d3140 -->
+    <!-- status-consumer: PF2ATC1 9ab722c45c586b73 -->
+    <!-- status-consumer: PF2K1C1 358a6ba820e8b2f1 -->
+    <!-- status-consumer: PF2PPA1 b24c4d80c2f8230e -->
 12. Rank residual degree-frontier regression work by the tables in
     [FRONTIER_CLOSING_ATTACKS.md](FRONTIER_CLOSING_ATTACKS.md) and
    [NEXT_DEGREE_FRONTIER.md](NEXT_DEGREE_FRONTIER.md).
    The pair \((75,125)\) is the first numerical maximum.  Its selected F2
    chain now has a certified `(e,f)=(1,6)` terminal row, so its live priority
-   is the finite global attachment ledger: one packet, or two packets on the
-   same versus distinct target divisors, together with spectators, the
-   purity-forced affine ramification row, three forced target-node attachment
-   points, and the source-endpoint-over-smooth branch incidence.
+   is the finite global attachment ledger: one packet or two packets on the
+   same target divisor, together with spectators, the target equation and
+   full pullback factorization of the purity-forced affine branch component,
+   three forced target-node attachment points, and the
+   source-endpoint-over-smooth branch incidence.
    Exhaustive lower Laurent masks are an optional independent coefficient
    route, not a prerequisite for that gluing.  Multiple chains at
    \((84,126)\), \((90,135)\), and \((96,144)\) may still offer reusable
    structural tests.
-    <!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
+    <!-- status-consumer: PF2GC1 6ba3fd9eb6a0bcdf -->
     <!-- status-consumer: PWB7 19f4f4ffc96227a3 -->
     <!-- status-consumer: CJT1 afb70f90ff10f3d7 -->
 

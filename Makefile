@@ -3,6 +3,7 @@ SHELL := /bin/bash
 PYTHON ?= .venv/bin/python
 SYSTEM_PYTHON ?= python3
 JC2_REPLAY_JOBS ?= 4
+HC4_SYMBOLIC_JOBS ?= 4
 
 FINALIZED_PAPERS := \
 	papers/gaussian-moments-two-variables \
@@ -25,7 +26,7 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 	verify-lr-rees-sagbi \
 	verify-lr-rooted-trees \
 	verify-lr-mixed-bch \
-	verify-plane-sparse-supports verify-plane-support-bridge verify-plane-universal-boundary-saturation verify-plane-log-conductor-degree-shift verify-plane-f2-log-node-profiles verify-plane-f2-carrier-log-node-profiles \
+	verify-plane-sparse-supports verify-plane-support-bridge verify-plane-universal-boundary-saturation verify-plane-log-conductor-degree-shift verify-plane-log-cyclic-boundary-charge verify-plane-log-cyclic-cokernel-twist verify-plane-log-kernel-gauss-degree verify-plane-log-tangential-kernel verify-plane-logarithmic-ch2-budget verify-plane-log-unibranch-attachment-fitting verify-plane-log-cusp-attachment-dichotomy verify-plane-f2-log-node-profiles verify-plane-f2-carrier-log-node-profiles verify-plane-f2-upstream-carrier-extraction verify-plane-f2-outgoing-terminal-tail verify-plane-f2-affine-purity-frontier verify-plane-f2-affine-target-curve-atlas verify-plane-f2-affine-target-k1-collision verify-plane-f2-affine-target-k1-implicit-conductor verify-plane-f2-affine-k1-keller-pullback verify-plane-f2-affine-k1-carrier-jet-factorization verify-plane-coprime-carrier-jet-discriminant-pattern verify-plane-f2-affine-target-k1-conductor-conservation verify-plane-f2-affine-k1-tame-node-packet verify-plane-affine-keller-strict-log-etale verify-plane-f2-affine-purity-puncture-attachment verify-plane-f2-affine-k1-log-ch2 \
 	verify-plane-f2-modified-chart-bridge verify-plane-f2-global-attachment verify-plane-f2-carrier-wronskian verify-plane-f2-carrier-specializations verify-plane-f2-nonlinear-forcing probe-plane-f2-nonlinear-modular verify-plane-f2-formal-frontier verify-plane-common-power-carrier \
 	verify-linear-torus-free verify-algebraic-torus-free \
 	verify-master \
@@ -125,8 +126,9 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: verify-factorial-trace-independence
 .PHONY: verify-factorial-trace-independence-sympy
 .PHONY: verify-projective-gradient-segre verify-hc4-quintic-infinity-rees
-.PHONY: verify-hc4-meng-yang-graphs verify-hc4-meng-yang-quintic
+.PHONY: verify-hc4-meng-yang-graphs verify-hc4-meng-yang-quintic verify-hc4-all-degree-frontends research-hc4-all-degree-frontends
 .PHONY: verify-hc4-reverse-schur verify-hc4-affine-moving-kernel
+.PHONY: verify-hc4-symbolic-unit-schur
 .PHONY: verify-hc4-parameter-moving-affine verify-hc4-univariate-shear-kernel
 .PHONY: verify-hc4-two-component-quasitranslation
 .PHONY: verify-hc4-affine-pivot-coverage
@@ -148,7 +150,7 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: verify-hc4-pure-septic-kzero-wronskian verify-hc4-pure-septic-passive-affine
 .PHONY: verify-hc4-pure-septic-quartic-packets
 .PHONY: verify-hc4-relative-nilpotent-final-packet
-.PHONY: verify-hc4-direct-filtration verify-hc4-direct-repeated-linear
+.PHONY: verify-hc4-direct-filtration verify-hc4-direct-repeated-linear verify-hc4-exact-sextuple-pure-cube verify-hc4-nonreduced-hessian-schur verify-hc4-direct-septuple-linear verify-hc4-octuple-nonuple-linear verify-hc4-two-line-quartic-denominator verify-hc4-two-line-quartic-prolongation verify-hc4-remaining-three-one-quartic verify-hc4-two-two-quartic verify-hc4-two-one-one-quartic verify-hc4-squarefree-quartic-frontend verify-hc4-squarefree-quartic-concurrence verify-hc4-squarefree-quartic-general-position verify-hc4-squarefree-quartic-tangent-fourth verify-hc4-smooth-conic-divisible-top verify-hc4-smooth-quartic-reciprocal verify-hc4-smooth-quartic-squarefree-line-generic verify-hc4-smooth-quartic-squarefree-line-exceptional-slices verify-hc4-double-conic-normal-layers
 .PHONY: verify-s4-collision-frame-keller
 .PHONY: verify-global-low-degree-census
 .PHONY: verify-collision-axis-unimodular-frontend
@@ -171,8 +173,23 @@ verify-s4-collision-frame-keller:
 verify-hc4-meng-yang-graphs:
 	$(PYTHON) scripts/verify_hc4_meng_yang_graph_obstructions.py
 
+verify-hc4-all-degree-frontends:
+	$(PYTHON) scripts/verify_hc4_all_degree_frontends.py
+
+research-hc4-all-degree-frontends:
+	$(PYTHON) scripts/research_hc4_all_degree_frontends.py \
+		--minimum-degree 4 --maximum-degree 8 \
+		--maximum-normal-order 12 \
+		--output artifacts/generated-results/hc4_all_degree_frontend_experiments.json
+
 verify-hc4-reverse-schur:
 	$(PYTHON) scripts/verify_hc4_reverse_schur_descent.py
+
+verify-hc4-symbolic-unit-schur:
+	PYTHONHASHSEED=0 PYTHONPATH=scripts $(PYTHON) \
+		scripts/search_hc4_nonlinear_unit_schur_blocks.py \
+		--symbolic-classification --jobs $(HC4_SYMBOLIC_JOBS) \
+		--output artifacts/generated-results/hc4_symbolic_unit_schur_classification.json
 
 verify-hc4-affine-moving-kernel: verify-hc4-reverse-schur
 	$(PYTHON) scripts/verify_hc4_affine_moving_kernel_pencils.py
@@ -255,6 +272,75 @@ verify-hc4-direct-filtration:
 
 verify-hc4-direct-repeated-linear: verify-hc4-direct-filtration
 	$(PYTHON) scripts/verify_hc4_direct_double_linear_hessian_gate.py
+
+verify-hc4-exact-sextuple-pure-cube: verify-hc4-direct-repeated-linear
+	$(PYTHON) scripts/verify_hc4_exact_sextuple_pure_cube_scalar_parent.py
+
+verify-hc4-nonreduced-hessian-schur:
+	$(PYTHON) scripts/verify_hc4_nonreduced_hessian_schur_module.py
+
+verify-hc4-direct-septuple-linear: verify-hc4-nonreduced-hessian-schur
+	$(PYTHON) scripts/verify_hc4_direct_septuple_linear_hessian_gate.py
+
+verify-hc4-octuple-nonuple-linear: verify-hc4-direct-septuple-linear
+	$(PYTHON) scripts/verify_hc4_octuple_nonuple_linear_hessian_gate.py
+
+verify-hc4-two-line-quartic-denominator: verify-hc4-octuple-nonuple-linear
+	$(PYTHON) scripts/verify_hc4_two_line_quartic_denominator_packet.py
+
+verify-hc4-two-line-quartic-prolongation: verify-hc4-two-line-quartic-denominator
+	$(PYTHON) scripts/verify_hc4_two_line_quartic_denominator_prolongation.py
+
+verify-hc4-remaining-three-one-quartic: verify-hc4-two-line-quartic-prolongation
+	$(PYTHON) scripts/verify_hc4_remaining_three_one_quartic_denominator_gate.py
+
+verify-hc4-two-two-quartic: verify-hc4-remaining-three-one-quartic
+	$(PYTHON) scripts/verify_hc4_two_two_quartic_denominator_gate.py
+
+verify-hc4-two-one-one-quartic: verify-hc4-two-two-quartic
+	$(PYTHON) scripts/verify_hc4_two_one_one_quartic_denominator_gate.py
+
+verify-hc4-squarefree-quartic-frontend: verify-hc4-two-one-one-quartic
+	$(PYTHON) scripts/verify_hc4_squarefree_quartic_denominator_frontend.py
+
+verify-hc4-squarefree-quartic-concurrence: verify-hc4-squarefree-quartic-frontend
+	$(PYTHON) scripts/verify_hc4_squarefree_quartic_concurrence_closure.py
+
+verify-hc4-squarefree-quartic-general-position: verify-hc4-squarefree-quartic-concurrence
+	$(PYTHON) scripts/verify_hc4_squarefree_quartic_general_position_closure.py
+
+verify-hc4-squarefree-quartic-tangent-fourth: verify-hc4-squarefree-quartic-general-position
+	$(PYTHON) scripts/verify_hc4_squarefree_quartic_tangent_fourth_closure.py
+
+verify-hc4-smooth-conic-divisible-top: verify-hc4-squarefree-quartic-tangent-fourth
+	$(PYTHON) scripts/verify_hc4_smooth_conic_divisible_top_gate.py
+
+verify-hc4-smooth-quartic-reciprocal: verify-hc4-smooth-conic-divisible-top
+	$(PYTHON) scripts/verify_hc4_smooth_quartic_reciprocal_frontend.py
+
+verify-hc4-smooth-quartic-squarefree-line-generic: verify-hc4-smooth-quartic-reciprocal
+	$(PYTHON) scripts/verify_hc4_smooth_quartic_squarefree_line_generic.py
+
+verify-hc4-smooth-quartic-squarefree-line-exceptional-slices: verify-hc4-smooth-quartic-squarefree-line-generic
+	$(PYTHON) scripts/verify_hc4_smooth_quartic_squarefree_line_exceptional_slices.py
+
+verify-hc4-double-conic-normal-layers: verify-hc4-smooth-quartic-reciprocal
+	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group layer-18
+	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group layer-14
+	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group layer-10
+	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group layer-6
+	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group support-one-two
+	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group support-three
+	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group harmonic-four
+	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-7111
+	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-6211
+	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-5311
+	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-5221
+	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-4411
+	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-4321
+	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-3331
+	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-4222-root-chart
+	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group balanced-function-fields
 
 verify-hc4-meng-yang-quintic: verify-hc4-meng-yang-graphs
 	$(PYTHON) scripts/verify_hc4_meng_yang_quintic_graph_normal_slice.py
@@ -428,6 +514,27 @@ verify-plane-jc:
 	$(PYTHON) scripts/verify_log_conductor_degree_shift.py
 	$(PYTHON) scripts/verify_f2_log_node_profiles.py
 	$(PYTHON) scripts/verify_f2_carrier_log_node_profiles.py
+	$(PYTHON) scripts/verify_f2_upstream_carrier_extraction.py
+	$(PYTHON) scripts/verify_log_cyclic_boundary_blowup_conservation.py
+	$(PYTHON) scripts/verify_log_cyclic_cokernel_twist.py
+	$(PYTHON) scripts/verify_log_kernel_gauss_degree.py
+	$(PYTHON) scripts/verify_log_tangential_kernel_trivialization.py
+	$(PYTHON) scripts/verify_logarithmic_ch2_budget.py
+	$(PYTHON) scripts/verify_log_unibranch_attachment_fitting.py
+	$(PYTHON) scripts/verify_log_cusp_attachment_dichotomy.py
+	$(PYTHON) scripts/verify_f2_outgoing_terminal_tail.py
+	$(PYTHON) scripts/verify_f2_affine_purity_frontier.py
+	$(PYTHON) scripts/verify_f2_affine_target_curve_atlas.py
+	$(PYTHON) scripts/verify_f2_affine_target_k1_collision.py
+	$(PYTHON) scripts/verify_f2_affine_target_k1_implicit_conductor.py
+	$(PYTHON) scripts/verify_f2_affine_k1_keller_pullback.py
+	$(PYTHON) scripts/verify_f2_affine_k1_carrier_jet_factorization.py
+	$(PYTHON) scripts/verify_coprime_carrier_jet_discriminant_pattern.py
+	$(PYTHON) scripts/verify_f2_affine_target_k1_conductor_conservation.py
+	$(PYTHON) scripts/verify_f2_affine_k1_tame_node_packet.py
+	$(PYTHON) scripts/verify_affine_keller_strict_log_etale.py
+	$(PYTHON) scripts/verify_f2_affine_purity_puncture_attachment.py
+	$(PYTHON) scripts/verify_f2_affine_k1_log_ch2.py
 	$(PYTHON) plane-jc/cas/boundary_lattice_prefilter.py
 	$(PYTHON) plane-jc/cas/test_intrinsic_a2_boundary.py
 	$(PYTHON) plane-jc/cas/test_plane_boundary_exclusion.py
@@ -457,11 +564,74 @@ verify-plane-universal-boundary-saturation:
 verify-plane-log-conductor-degree-shift:
 	$(PYTHON) scripts/verify_log_conductor_degree_shift.py
 
+verify-plane-log-cyclic-boundary-charge:
+	$(PYTHON) scripts/verify_log_cyclic_boundary_blowup_conservation.py
+
+verify-plane-log-cyclic-cokernel-twist:
+	$(PYTHON) scripts/verify_log_cyclic_cokernel_twist.py
+
+verify-plane-log-kernel-gauss-degree:
+	$(PYTHON) scripts/verify_log_kernel_gauss_degree.py
+
+verify-plane-log-tangential-kernel:
+	$(PYTHON) scripts/verify_log_tangential_kernel_trivialization.py
+
+verify-plane-logarithmic-ch2-budget:
+	$(PYTHON) scripts/verify_logarithmic_ch2_budget.py
+
+verify-plane-log-unibranch-attachment-fitting:
+	$(PYTHON) scripts/verify_log_unibranch_attachment_fitting.py
+
+verify-plane-log-cusp-attachment-dichotomy:
+	$(PYTHON) scripts/verify_log_cusp_attachment_dichotomy.py
+
 verify-plane-f2-log-node-profiles:
 	$(PYTHON) scripts/verify_f2_log_node_profiles.py
 
 verify-plane-f2-carrier-log-node-profiles:
 	$(PYTHON) scripts/verify_f2_carrier_log_node_profiles.py
+
+verify-plane-f2-upstream-carrier-extraction:
+	$(PYTHON) scripts/verify_f2_upstream_carrier_extraction.py
+
+verify-plane-f2-outgoing-terminal-tail:
+	$(PYTHON) scripts/verify_f2_outgoing_terminal_tail.py
+
+verify-plane-f2-affine-purity-frontier:
+	$(PYTHON) scripts/verify_f2_affine_purity_frontier.py
+
+verify-plane-f2-affine-target-curve-atlas:
+	$(PYTHON) scripts/verify_f2_affine_target_curve_atlas.py
+
+verify-plane-f2-affine-target-k1-collision:
+	$(PYTHON) scripts/verify_f2_affine_target_k1_collision.py
+
+verify-plane-f2-affine-target-k1-implicit-conductor:
+	$(PYTHON) scripts/verify_f2_affine_target_k1_implicit_conductor.py
+
+verify-plane-f2-affine-k1-keller-pullback:
+	$(PYTHON) scripts/verify_f2_affine_k1_keller_pullback.py
+
+verify-plane-f2-affine-k1-carrier-jet-factorization:
+	$(PYTHON) scripts/verify_f2_affine_k1_carrier_jet_factorization.py
+
+verify-plane-coprime-carrier-jet-discriminant-pattern:
+	$(PYTHON) scripts/verify_coprime_carrier_jet_discriminant_pattern.py
+
+verify-plane-f2-affine-target-k1-conductor-conservation:
+	$(PYTHON) scripts/verify_f2_affine_target_k1_conductor_conservation.py
+
+verify-plane-f2-affine-k1-tame-node-packet:
+	$(PYTHON) scripts/verify_f2_affine_k1_tame_node_packet.py
+
+verify-plane-affine-keller-strict-log-etale:
+	$(PYTHON) scripts/verify_affine_keller_strict_log_etale.py
+
+verify-plane-f2-affine-purity-puncture-attachment:
+	$(PYTHON) scripts/verify_f2_affine_purity_puncture_attachment.py
+
+verify-plane-f2-affine-k1-log-ch2:
+	$(PYTHON) scripts/verify_f2_affine_k1_log_ch2.py
 
 verify-plane-support-bridge:
 	$(PYTHON) plane-jc/cas/verify_affine_support_newton_bridge.py

@@ -3713,8 +3713,11 @@ development:
     through five and the generic-corank-one multiplicity-six stratum under
     its stated squarefree-cofactor hypotheses.  The lower-rank
     multiplicity-six branch is reduced to one degree-five order-one
-    resonance.  Nonlinear repeated factors, several repeated factors, that
-    resonance, and top-Hessian rank at most two remain outside these gates.
+    resonance. `HC4DIR28` closes that last resonance: its nonzero scalar
+    corner reduces to `HC3`, while its zero corner has a constant unit pivot
+    direction by the pure-cube gradient lemma and reduces to `HC2`.
+    Nonlinear repeated factors, several repeated factors, and top-Hessian
+    rank at most two remain outside these gates.
     See
     [`PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`](PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md).
 
@@ -3935,21 +3938,133 @@ development:
 
     The unrestricted direct filtration supplies the complementary progress.
     `HC4DIR2` eliminates squarefree rank-three top Hessians in every degree,
-    and `HC4DIR27` eliminates the repeated-linear strata stated above.  Its
-    next exact packet is the degree-five lower-rank order-one resonance with a
-    pure-cube pivot; nonlinear repeated factors and top-Hessian rank at most
-    two remain separate.  See the
+    and `HC4DIR27` eliminates the repeated-linear strata stated above.
+    `HC4DIR28` closes its last lower-rank order-one resonance with a pure-cube
+    pivot. Nonlinear repeated factors and top-Hessian rank at most two remain
+    separate.  `HC4NHM1` gives the complementary module-theoretic
+    split of the minimal nonaligned rank-three quintic packet.  The symmetric
+    cokernel of the ternary Hessian carries the adjugate self-duality, and a
+    nonzero Schur section has a minimal denominator `P`.  On the normalization
+    of every essential repeated component `Q`, its kernel line and corank-two
+    defect divisor satisfy
+    `deg(B_Q) >= 2*deg(Q)*(4-deg(P))`.  Since `P^2` divides the degree-nine
+    Hessian determinant, any packet with a defect-free essential component is
+    forced to `det(Hess(h5))=P^2*ell` with `deg(P)=4`; all smaller-denominator
+    packets require quantified corank-two defect.  The first continuation is
+    the [septuple-line pole--defect ladder](HC4_DIRECT_SEPTUPLE_LINEAR_HESSIAN_GATE.md):
+    its six possible pole/kernel/defect rows are explicit, and on the
+    extremal pole-three/defect-two row Hessian integrability excludes the
+    quadratic-pencil kernel.  The remaining conic branch has a complete
+    binary square-Hessian classification: four automatic repeated-root
+    partitions, one exceptional `2+1+1+1` orbit, and the squarefree Fermat
+    orbit.  Exact boundary-kernel and first-normal equations exclude all of
+    them, so the extremal defect-two row is empty.  The same moving-line-image
+    argument closes both defect-four rows.  Direct determinant faces then
+    close all three constant-kernel defect-six rows: a transverse kernel
+    kills every normal jet, while a tangent kernel either raises the line
+    multiplicity or makes the residual quadratic a square.  Thus the complete
+    exact-septuple generic-corank-one packet with squarefree cofactor is empty.
+    `HC4NHM3` continues the same ladder through multiplicities eight and nine.
+    The only new numerical row has a defect-free primitive cubic kernel;
+    its binary quintic Hessian must be a perfect square, and the two remaining
+    root types force a common kernel factor.  Every constant-kernel row is a
+    zero-determinant cylinder.  Thus the one-component quartic-denominator
+    partition `P=x^4` is closed.  The next clean partition is `P=x^3*y`,
+    with residual-line incidence types `x^7*y^2`, `x^6*y^3`, and
+    `x^6*y^2*z`.  `HC4NHM4` completely classifies the first incidence type:
+    after normalization,
+    `h5=A*x*y^4+x^4*(B*y+Gamma*z)/24+D*x^5/120`, and its complete Schur
+    space is spanned by `x*y^2` and `x^3`.  The coefficient of `x*y^2`
+    is nonzero exactly when the minimal denominator is `x^3*y`.  `HC4NHM5`
+    then retains every lower quartic, cubic, and quadratic repair and finds
+    the immutable next-face coefficient
+    `-[Gamma^2*a^3/(54*A)]*x^8*t`.  It is nonzero on the genuine two-line
+    channel, so this explicit module packet has no four-variable
+    constant-Hessian prolongation.  `HC4NHM6` closes the other two incidences
+    already at the ternary Hessian boundary: exact multiplicity six with a
+    constant tangent kernel forces the residual cubic to be a cube, excluding
+    `x^6*y^2*z`, while matching `x^6*y^3` destroys generic boundary rank.
+    Thus the complete quartic-denominator partition `3+1` is closed.
+    `HC4NHM7` closes `2+2`: its two residual incidences have immutable
+    tangent-kernel coefficients `j1^3*x^7*y*z/18` and
+    `-9*h1^4*x^5*y^2*z^2/(2*beta)`. `HC4NHM8` closes `2+1+1`, including
+    every concurrency boundary, by the same transverse-tail witnesses.
+    Only the squarefree clean partition remains. `HC4NHM9` reduces it to
+    four constant polar directions: tangent flags satisfy
+    `D_v(h5) in (L^2)`, while transverse flags sharpen to
+    `D_v(h5) in (L^3)`. `HC4NHM10` then closes all sixteen all-concurrent
+    patterns by an order-eight pencil-point Hessian ladder, and closes the
+    eight exactly-three-concurrent patterns whose fourth flag is transverse
+    by polar syzygies and mixed-partial compatibility. `HC4NHM11` closes all
+    sixteen no-three-concurrent patterns: zero/one tangent has no polar
+    syzygy, exactly two tangent has only binary cone components, and three or
+    four tangent forces a pure fifth power. `HC4NHM12` closes the final eight
+    tangent-fourth triple-concurrent rows: exact double saturation excludes
+    every relation of common rank at least two, while the remaining repeated
+    tangent pairs are blocked by an unused polar flag. Thus all forty-eight
+    split-squarefree rows, and hence every clean quartic-denominator packet
+    whose denominator splits into four lines, are closed. Clean conic,
+    cubic, and quartic denominator components, positive-defect packets, and
+    lower-Smith boundaries remain open. See the
+    [squarefree tangent-fourth closure](HC4_SQUAREFREE_QUARTIC_TANGENT_FOURTH_CLOSURE.md),
+    [squarefree general-position closure](HC4_SQUAREFREE_QUARTIC_GENERAL_POSITION_CLOSURE.md),
+    [squarefree concurrence closure](HC4_SQUAREFREE_QUARTIC_CONCURRENCE_CLOSURE.md),
+    the [squarefree synchronization frontend](HC4_SQUAREFREE_QUARTIC_DENOMINATOR_FRONTEND.md),
+    the [two-plus-one-plus-one gate](HC4_TWO_ONE_ONE_QUARTIC_DENOMINATOR_GATE.md),
+    the [two-plus-two gate](HC4_TWO_TWO_QUARTIC_DENOMINATOR_GATE.md),
+    the [remaining three-plus-one gate](HC4_REMAINING_THREE_ONE_QUARTIC_DENOMINATOR_GATE.md),
+    the
+    [two-line prolongation obstruction](HC4_TWO_LINE_QUARTIC_DENOMINATOR_PROLONGATION.md),
+    [two-line packet](HC4_TWO_LINE_QUARTIC_DENOMINATOR_PACKET.md), the
+    [octuple/nonuple line gate](HC4_OCTUPLE_NONUPLE_LINEAR_HESSIAN_GATE.md)
+    and the first nonlinear continuation,
+    [smooth-conic divisible-top gate](HC4_SMOOTH_CONIC_DIVISIBLE_TOP_GATE.md).
+    `HC4NHM13` closes the complete `P=q^2`, `h5 in (q)` subrow for a smooth
+    conic: exact saturated ideals for the tangent and secant residual-line
+    orbits are both units. Any double-conic survivor must therefore have a
+    nonzero binary-decic restriction to `q=0`. Independently, the
+    [smooth-quartic reciprocal frontend](HC4_SMOOTH_QUARTIC_RECIPROCAL_FRONTEND.md)
+    `HC4NHM14` converts the clean irreducible-quartic denominator row to the
+    quadratic identities `det(A)=Q*ell*mu` and
+    `adj(A)=mu*C+lambda*d*d^T`. Its residual line has nine simple-line and
+    ten doubled-line gradient-kernel rows; every basepoint on a simple line
+    forces squared contact with `Q` and the residual determinant line. The
+    [generic squarefree-line gate](HC4_SMOOTH_QUARTIC_SQUAREFREE_LINE_GENERIC_GATE.md)
+    `HC4NHM16` attacks the first basepoint-free simple-line type. Its exact
+    81-equation function-field basis forces every active deformation to
+    vanish and leaves `det(A)=0`, excluding the generic incidence point.
+    The [exceptional-slice refinement](HC4_SMOOTH_QUARTIC_SQUAREFREE_LINE_EXCEPTIONAL_SLICES.md)
+    `HC4NHM17` closes nine exact generic or algebraic slices inside the first
+    visible denominator divisor, including both split components at
+    `tau=-1` and the `tau=0`, `m^3=48` algebraic slice. The arbitrary-`tau`
+    divisor, further hidden specializations,
+    the complementary residual-line chart, and the other three
+    basepoint-free types remain open. The
+    [double-conic normal-layer frontend](HC4_DOUBLE_CONIC_NORMAL_LAYERS.md)
+    `HC4NHM15` computes the four double-conic `SL2`-covariant divisibility
+    layers. It excludes every decic supported on at most three points and
+    every four-point decic at harmonic cross-ratio. Exact generic-cross-ratio
+    reconstruction excludes eight of the nine complete four-point
+    partitions. The last row `(3,3,2,2)` is empty over the cross-ratio
+    function field, leaving only a finite exceptional parameter locus.
+    The support-at-least-five families remain separate; none has yet passed
+    the Schur equations.
+    For the surrounding direct and pencil context, see the
     [registered pencil chain](HC4_HIGHER_DEGREE_PENCIL_OBSTRUCTIONS.md), the
     [relative-nilpotent master theorem](HC4_RELATIVE_NILPOTENT_MASTER_REDUCTION.md),
     the [direct filtration](HC4_DIRECT_HOMOGENEOUS_FILTRATION.md), and the
-    [repeated-linear gate](HC4_DIRECT_DOUBLE_LINEAR_HESSIAN_GATE.md).
+    [repeated-linear gate](HC4_DIRECT_DOUBLE_LINEAR_HESSIAN_GATE.md), followed
+    by the [nonreduced Hessian--Schur module](HC4_NONREDUCED_HESSIAN_SCHUR_MODULE.md).
 
 12. The Meng--Yang route now has a degree-five normal form rather than a
     generic graph search.  HC4MYA1 and HC4MYG4 exclude all affine descents
     and all graphs through degree four.  HC4MYGJ1 makes the determinant on
     \(x_1=0\) a unit-affine equation for the first normal jet and excludes
     every higher graph with only an \(x_1^2\)-divisible tail over a quartic
-    1-jet.  HC4MYG5J forces the quintic trace to
+    1-jet.  HC4MYGJ2 gives the all-normal multiplier
+    \(-4LN^3k(k+1)\), so every trace has a unique constant-determinant formal
+    graph above it; the all-degree issue is polynomial termination and global
+    collision, not formal normal solvability.  HC4MYG5J forces the quintic trace to
     \(\kappa x_2^5\); HC4MYG5N leaves two rational constant-kernel top
     charts; HC4MYG5K closes the first \(\partial_{y_2}\)-kernel transverse
     slice with the complete degree-at-most-two lower trace: the generic
@@ -3960,7 +4075,20 @@ development:
     \(\kappa x_2^5+d x_2^3y_1+\rho x_2^2y_2\) by immutable
     first-transverse coefficients.  An exact graph can already preserve the
     marked collision and flatten the determinant on the whole plane, so the
-    live gate is transverse compatibility, not collision containment.
+    live gate is transverse compatibility, not collision containment.  The
+    [all-degree frontend theorem note](HC4_ALL_DEGREE_FRONTEND_EXPERIMENTS.md)
+    also proves HC4FSD1, the pure-power classification of the diagonal
+    ternary Schur equation for every degree, and HC4FSD2, the absence of a
+    constant rank-two direction on every minimal diagonal tower.  HC4FSD3
+    propagates the obstruction through every compatible lower layer and
+    excludes ranks three and four as well.  Together with quintic rank-one
+    theorem HC4MR4, this closes every nonzero constant symmetric
+    determinant-preserving direction on the completed nonaligned diagonal
+    quintic packet.  Nonlinear or polynomially moving directions and
+    collision-preserving recharts remain open.
+
+    <!-- status-consumer: HC4FSD3 1107bc6ff58456f5 -->
+
     The complementary nonlinear-canonical route now reaches direct oblique
     unit blocks.  `HC4MCP6` supplies 54 exact nonlinear parent-preserving
     cubic--quadratic resonance families.  `HC4MCP9` tests 216 small

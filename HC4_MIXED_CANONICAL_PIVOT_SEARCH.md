@@ -692,6 +692,74 @@ parent-preserving resonance.  It does not cover larger direction
 coefficients, other nonzero values of \(b\), coefficient-dependent or
 nonlinear pivot directions, other Hamiltonian supports, or longer words.
 
+### 11.1 Symbolic closure of every constant unit block
+
+The coefficient and direction bounds in HC4MCP9 can be removed on the
+entire HC4MCP6 resonance family.  Fix one of the 54 support/sign patterns,
+specialize \(a\) to its parent-preserving value, and retain \(b\) as an
+indeterminate.  For an indeterminate constant direction
+\(c=(c_0,\ldots,c_5)\), write
+
+\[
+ D_c^2\Phi=\sum_{\alpha}q_{\alpha}(b,c)X^\alpha,
+ \qquad
+ I_c=(q_{\alpha}:\alpha\ne0)\subset
+ \mathbb Q[b,c_0,\ldots,c_5].
+\]
+
+In every pattern, an exact Singular saturation by \(b\) gives
+
+\[
+ q_0\equiv0\pmod{I_c:b^\infty}.
+\]
+
+Thus, for every \(b\ne0\), constancy of \(D_c^2\Phi\) forces its constant
+value to be zero.  This excludes a scalar unit pivot for every constant
+complex direction, not merely for the 364 small rational directions used
+in HC4MCP9.
+
+The same conclusion holds for constant two-planes.  Cover
+\(\operatorname{Gr}(2,6)\) by its 15 standard affine Pluecker charts.  On
+the chart where the \((i,j)\)-minor is one, normalize a basis \(c,d\) by the
+corresponding \(2\)-by-\(2\) identity block and use the remaining eight
+entries as indeterminates.  Impose the exact coefficient equations
+
+\[
+ D_c^3\Phi=D_c^2D_d\Phi=D_cD_d^2\Phi=D_d^3\Phi=0.
+\]
+
+Put
+
+\[
+ \Delta=(D_c^2\Phi)(D_d^2\Phi)-(D_cD_d\Phi)^2.
+\]
+
+If \(\Delta\) were a nonzero constant, then
+\(b\Delta(0)\ne0\) and its value at every fixed rational probe would equal
+\(\Delta(0)\).  The checker adjoins a localization equation
+\(z b\Delta(0)-1\).  On 654 of the \(54\cdot15=810\) affine charts, the
+joint-cubic coefficient ideal is already the unit ideal after this
+localization.  On the other 156, adjoining the exact determinant
+differences at the signed axes, positive two-axis points, all sign corners,
+and all positive \(1\)-\(2\) magnitude corners makes it the unit ideal over
+\(\mathbb Q\).  No interpolation claim is involved: full constancy implies
+all sampled equalities, so a unit sampled ideal is an exact exclusion.  The
+implemented full coefficient-ideal fallback is not reached.
+
+Because \(b\) and the direction/chart coordinates occur in the same
+localized ideals, this also excludes constant directions or planes chosen
+algebraically as functions of \(b\); no uniformity assumption on that
+choice is needed.
+
+Consequently the 54 nonlinear parent-preserving families have neither a
+nonzero constant scalar Hessian block nor a unimodular constant two-plane
+Schur block for arbitrary \(b\ne0\), even after complexifying the constant
+direction parameters.  This is HC4MCP10.  It supersedes the bounded
+coefficient/direction conclusion of HC4MCP9, but only for these direct
+constant blocks on the displayed short-word family.  Polynomially moving
+or spatially nonlinear pivot distributions, other Hamiltonian supports,
+longer words, and general nonlinear canonical transformations remain open.
+
 ## 12. The first quadratic--cubic commutator box
 
 The next canonical family is the unit-coefficient group commutator
@@ -833,6 +901,23 @@ The exact finite-box census is
 [`artifacts/generated-results/hc4_nonlinear_unit_schur_blocks.json`](artifacts/generated-results/hc4_nonlinear_unit_schur_blocks.json).
 Its pinned SHA-256 is
 `7f235d427e0cf63e3aeddf198d6ade72c5478ae90774d526fb3a5610dae9286e`.
+
+Classify arbitrary constant scalar directions and two-planes on the same
+nonlinear parent-preserving family with:
+
+```bash
+PYTHONHASHSEED=0 PYTHONPATH=scripts .venv/bin/python \
+  scripts/search_hc4_nonlinear_unit_schur_blocks.py \
+  --symbolic-classification \
+  --jobs 4 \
+  --output \
+  artifacts/generated-results/hc4_symbolic_unit_schur_classification.json
+```
+
+The exact saturated-ideal and Grassmann-chart census is
+[`artifacts/generated-results/hc4_symbolic_unit_schur_classification.json`](artifacts/generated-results/hc4_symbolic_unit_schur_classification.json).
+Its pinned SHA-256 is
+`e92465e4991e7635f07fcc70895995f5d0465a1c3b816a6c9a88643500865e30`.
 
 Replay the unit quadratic--cubic commutator box with:
 

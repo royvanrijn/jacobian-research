@@ -45,7 +45,7 @@ additional F2 continuations of the published above-bisectrix chain.
 
 The exact checker is
 [`cas/verify_f2_kummer_orbit_transfer.py`](cas/verify_f2_kummer_orbit_transfer.py).
-<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
+<!-- status-consumer: PF2GC1 6ba3fd9eb6a0bcdf -->
 
 ## 1. One Kummer character on every Laurent band
 

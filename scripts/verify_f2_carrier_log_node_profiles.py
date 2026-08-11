@@ -193,6 +193,14 @@ def refined_source_graph(case: str) -> dict[str, object]:
     canonical = solve_linear_system(
         matrix, [-2 - weights[name] for name in names]
     )
+    log_canonical = [value + 1 for value in canonical]
+    log_canonical_square = sum(
+        log_canonical[left]
+        * matrix[left][right]
+        * log_canonical[right]
+        for left in range(len(names))
+        for right in range(len(names))
+    )
     adjacency = {name: set() for name in names}
     for left, right in edges:
         adjacency[left].add(right)
@@ -219,6 +227,7 @@ def refined_source_graph(case: str) -> dict[str, object]:
         "intersection_determinant": matrix_determinant,
         "inertia": inertia,
         "canonical_integral": True,
+        "log_canonical_square": log_canonical_square,
     }
 
 

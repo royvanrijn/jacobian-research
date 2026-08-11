@@ -8724,6 +8724,26 @@ profiles.  It is an exact local regression for the new full-matrix/localized-
 
 <!-- status-consumer: LCDS1 5b4d92acd50d6c41 -->
 
+The global logarithmic second-Chern-character identity, boundary-blowup law,
+and current F2 budget specialization are checked by:
+
+```bash
+.venv/bin/python scripts/verify_logarithmic_ch2_budget.py
+```
+
+The command proves the bundle and logarithmic-ramification forms over exact
+rationals, verifies that node blowups are log crepant while a smooth boundary
+blowup lowers `(K+D)^2` by one, and replays both compiled F2 source and target
+intersection calculations.  On the current lower-bound model it obtains
+`B_sq(d)=(7*d-8)/2` and `B_dbl(d)=(7*d-13)/2`; after the exact cyclic root
+class `27`, their degree-floor virtual residuals are `-10` and `17/2`.
+These are diagnostics, not effective lengths or exclusions: an exact
+divisorial/finite-length filtration and the target curve, pullback
+factorization, and Chern module of the purity-forced affine component are
+still required.
+
+<!-- status-consumer: LCHB1 176bf85520516fa6 -->
+
 The exact F2 terminal logarithmic node profiles and the corrected two-blowup
 interior attachment count are checked by:
 
@@ -8763,7 +8783,453 @@ adjunction.  The resulting `27/48`-component graphs are lower bounds; the
 upstream carrier-extraction chain, outgoing terminal tail, affine purity row,
 and uncompiled global centers are outside this theorem.
 
+The checker source hash changed from
+`f353a8a116306b43b5a11de02f59498a243ffe0023098b46429dbbe6a035eb1c` to
+`537dac833c311ba8210dd84c90f352fdd3c73c318024f45a6821fa5d118925da`
+when its returned graph record gained the exact `log_canonical_square` used by
+the downstream Chern-budget replay.  The carrier classifications and printed
+`27/48` result are unchanged.  Reproduce under `.python-version` and
+`requirements.txt` with the command above.
+
 <!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
+
+The upstream carrier-extraction logarithmic profile is checked by:
+
+```bash
+.venv/bin/python scripts/verify_f2_upstream_carrier_extraction.py
+```
+
+The command enumerates the certified degree/edge support, verifies that the
+carrier-zero source ladder maps unimodularly to the target rays through
+`(5,36)`, and evaluates the exact Keller two-form at the extraction-root
+node.  It forces the primitive local model
+`(T,z)=(W*U^5,W^3*U^18)` up to units and target shears, hence logarithmic
+cokernel `R/(W^3*U^18)`.  It independently counts the branchwise matching
+quotient `R/(W^3,U^18)` as length `54`.  This is a degree-one local class,
+not an exclusion of `(75,125)`.
+
+<!-- status-consumer: PF2UCE1 7f15bc756cc73fff -->
+
+The cyclic boundary matching/Chern charge and its blowup conservation are
+checked by:
+
+```bash
+.venv/bin/python scripts/verify_log_cyclic_boundary_blowup_conservation.py
+```
+
+The command verifies the symbolic node and smooth-point blowup identities,
+replays repeated exact graph blowups, and applies the conserved charge
+`D^2/2` to `D_root=3E+18L`.  The raw F2 matching length changes from `54` to
+`441` after a root blowup, while the self-intersection correction changes to
+`-414`; their sum remains `27`.  This is the untwisted Cartier contribution,
+not by itself the actual cokernel contribution.  The following kernel-line
+check proves that the latter is `deg(K_root)+27`.
+
+<!-- status-consumer: LCBBC1 b3eb4679f781c55f -->
+
+The cyclic cokernel kernel-line/twist formula is checked by:
+
+```bash
+.venv/bin/python scripts/verify_log_cyclic_cokernel_twist.py
+```
+
+The command verifies `L=K tensor O_D(D)` from the rank-one restriction of a
+rank-two bundle map and the GRR identity
+`ch_2(i_*L)=deg_D(K)+D^2/2`.  For the F2 root it reduces the unknown global
+contribution to the single formula `deg(K_root)+27`; it does not compute that
+kernel-line degree.
+
+<!-- status-consumer: LCCT1 2fc6ecea7a7c8b49 -->
+
+The contracted-packet kernel/Gauss-degree formula is checked by:
+
+```bash
+.venv/bin/python scripts/verify_log_kernel_gauss_degree.py
+```
+
+The command checks the basepoint-free pencil model and exact Chern arithmetic.
+For a cyclic determinant packet contracted to a target point, the kernel line
+is `gamma^*O(-1)` for a morphism to `P^1`; consequently its degree is the
+negative of the nonnegative Gauss degree.  The F2 root contribution is reduced
+to `27-e_root<=27`.  The checker does not calculate `e_root`.
+
+<!-- status-consumer: LKGD1 8a357250b5005186 -->
+
+Tangential-coordinate trivialization of the cyclic root kernel is checked by:
+
+```bash
+.venv/bin/python scripts/verify_log_tangential_kernel_trivialization.py
+```
+
+The command keeps a nonconstant unit `b` and verifies directly that
+`d(W^3*U^18*b)` is divisible by `W^3*U^18` in the logarithmic basis.  Thus
+the fixed target covector `dz` spans the kernel on the full nonreduced root
+packet, not only on its reduced components.  It checks `e_root=0` and the
+exact cyclic contribution `ch_2=27`.  Noncyclic attachments and the global
+Chern cancellation ledger remain outside the claim.
+
+<!-- status-consumer: LTKT1 32ac27318f16c20c -->
+
+The F2 outgoing terminal tail is checked by:
+
+```bash
+.venv/bin/python scripts/verify_f2_outgoing_terminal_tail.py
+```
+
+The command derives the complete exponent map from the terminal support
+halfspaces and verifies that the source rays
+`(5,12),(2,5),(1,3),(0,1)` map to the target rays
+`(5,2),(2,1),(1,1),(0,1)` with determinant one on every cone.  It also
+checks exact middle-node coordinates and the invertible final endpoint after
+the harmless target translation `P->P-c0`.  Thus the outgoing tail requires
+no further fan refinement and has zero logarithmic cokernel.
+
+<!-- status-consumer: PF2OTT1 af25012e34020e11 -->
+
+The F2 affine-purity frontier is checked by:
+
+```bash
+.venv/bin/python scripts/verify_f2_affine_purity_frontier.py
+```
+
+The command verifies that none of the certified `27/48` source components
+can be the purity-forced affine branch divisor, so the rigorous component
+floors are `28/49`.  It checks the degree intervals `6..9375` and
+`12..9375`, the parametrization bound `124`, and an explicit coarse purity
+ledger at every remaining degree.  The latter is a numerical signature, not
+a constructed cover; it proves that generic purity alone does not improve
+the degree floors or determine the target curve.
+
+<!-- status-consumer: PF2APF1 192055eb737d3140 -->
+
+The F2 affine target-curve atlas is checked by:
+
+```bash
+.venv/bin/python scripts/verify_f2_affine_target_curve_atlas.py
+```
+
+The command enumerates the 24 normalization-degree rows `(3k,5k)`,
+`1<=k<=24`, verifies the exact curve degrees `5k<=120` and the maximum 194
+raw parametrization coefficients, and checks both diagonal cusp and
+off-diagonal collision models for the divided-difference ideal.  The
+degree-ratio, one-point-at-infinity, and affine-line obstructions used to
+prove that every actual candidate lies on this atlas are the external
+theorems cited in the canonical note.
+
+<!-- status-consumer: PF2ATC1 9ab722c45c586b73 -->
+
+The first target chart's exact collision and conductor packet is checked by:
+
+```bash
+.venv/bin/python scripts/verify_f2_affine_target_k1_collision.py
+```
+
+The command derives the collision quartic from the degree-`(3,5)` normal
+form, verifies the diagonal criterion and target-value formulas, and checks
+the exact witness `(a,b,c,d)=(1,0,0,0)`: quartic discriminant `-400`,
+diagonal resultant `25`, tangent resultant `-10000`, and four distinct
+collision images.  The genus ledger is `6=2+4`, from the `(2,5)` infinity
+cusp and four ordinary affine nodes.
+
+<!-- status-consumer: PF2K1C1 358a6ba820e8b2f1 -->
+
+The exact `k=1` implicit quintic and conductor-gradient bridge are checked by:
+
+```bash
+.venv/bin/python scripts/verify_f2_affine_target_k1_implicit_conductor.py
+```
+
+The command derives the twelve-support resultant, verifies its degree-five
+top form, and proves
+`(F_P(p,q),F_Q(p,q))=C(t)*(q'(t),-p'(t))`, where `C` is the degree-eight
+resultant packaging the four collision pairs.
+
+<!-- status-consumer: PF2K1I1 a7582c1e36140840 -->
+
+The fixed-coordinate `k=1` Keller-pullback interface is checked by:
+
+```bash
+.venv/bin/python scripts/verify_f2_affine_k1_keller_pullback.py
+```
+
+The command undoes every target normalization in one triangular formula,
+checks that the cleared expression is a genuine quintic, computes the
+carrier residue and eight-jet interface, transports the four node fibers,
+and verifies the invertible-Jacobian identity equating the source gradient
+ideal with the pulled-back target Jacobian ideal.  Étale reducedness and
+normalization base change then identify every affine source singularity as
+an ordinary node with normalization defect one over one of those fibers.
+The finite-flat fiber
+split also checks the per-node bound `N_r<=d-1` and total bound `4(d-1)`.
+
+<!-- status-consumer: PF2K1PB1 6f837229017243c4 -->
+
+The normalized `k=1` carrier-jet factorization and fixed-coordinate terminal
+factor audit are checked by:
+
+```bash
+.venv/bin/python scripts/verify_f2_affine_k1_carrier_jet_factorization.py
+```
+
+The command proves the first four normalized carrier jets recover the four
+target parameters, verifies the three forced weighted equations on jets
+five through seven, compiles the exact weighted transport from raw fixed
+carrier centers through `P0,Q0,Gamma,A,B`, separates the
+translation-dependent `C^3` and `s^2`
+factors from the invariant terminal leading cubic, and runs a bounded
+625-specialization irreducibility regression.  It also factors the raw
+seven-jet Jacobian as `3*Res(p',q')`, proving that free target translations
+absorb the three normalized residuals on the immersed locus.  On the
+`E_6+A_1` subfamily it verifies the closed Lagrange-inversion formula for
+all carrier coefficients, the six monomial seven-jet equations, and rank
+four after the three target transports; this is a codimension-three fixed
+carrier gate.  At its `E_8` endpoint the checker verifies the four
+scale-free raw-center equations forming a prime codimension-four complete
+intersection.  The general target irreducibility statement uses the coprime
+parametrization degrees `(3,5)`, not the bounded scan.
+
+<!-- status-consumer: PF2K1JF1 7bc57f390f0531b5 -->
+
+The primitive coprime carrier saturation and nonimmersion pattern is checked
+by:
+
+```bash
+.venv/bin/python scripts/verify_coprime_carrier_jet_discriminant_pattern.py
+```
+
+The command verifies the universal three-parameter carrier transport and
+normal-form count `N_*=m+n-1`, recomputes the exact determinant rows for
+`(2,3)`, `(2,5)`, and `(3,4)` (with `(3,5)` supplied by the preceding
+theorem), and proves that the generic `(3,5)` nonimmersion packet is one
+ordinary cusp plus three nodes.  It factors the conductor as a double cusp
+point times a squarefree sextic at an exact witness and checks raw seven-jet
+corank one. The all-coprime-bidegree determinant law remains a conjecture.
+
+<!-- status-consumer: PCJDP1 d4c16bb71dfc6b80 -->
+
+The unibranch boundary-attachment `Fitt_1` class is checked by:
+
+```bash
+.venv/bin/python scripts/verify_log_unibranch_attachment_fitting.py
+```
+
+The command verifies that a minimal transverse SNC attachment over a target
+branch of multiplicity `m_C` and local residue index `q_p` has logarithmic
+matrix `diag(r,t^(q_p*m_C))`, determinant module
+`R/(r*t^(q_p*m_C))`, and actual split cokernel
+`R/(r) direct-sum R/(t^(q_p*m_C))`.  Their finite difference has length
+`q_p*m_C`.  Over a complete residue-degree-`f` fiber the total is `m_C*f`;
+the ordinary-cusp total is `2f`.
+
+<!-- status-consumer: LUAF1 b0279670ffbd3fa5 -->
+
+The complementary smooth-fold versus boundary-node cusp dichotomy is
+checked by:
+
+```bash
+.venv/bin/python scripts/verify_log_cusp_attachment_dichotomy.py
+```
+
+The command verifies the universal monomial fold, including cancellation of
+the linear transverse branch term, the factor
+`J=const*r*t^((n-m)*q-1)`, and the exact Fitting ideal
+`(r,t^(m*q-1+epsilon))`.  For the ordinary cusp it checks
+`y^2-x^3=-r^2*(r+3*t^2/4)`, `J=3*r/2`, the reduced log matrix
+`[[r,0],[t,r]]`, and the point quotient of length one.  It also replays the
+complete-fiber ledger `m_C*f-h+c`; the ordinary-cusp range is `f..2f`, with
+`2f` only at the node-saturated endpoint.
+
+<!-- status-consumer: LCAD1 7b9c15d3dfae0337 -->
+
+The `k=1` target-complement monodromy obstruction is checked by:
+
+```bash
+sage -python scripts/verify_f2_affine_k1_complement_monodromy.py
+```
+
+This optional SageMath/`sirocco` replay computes certified three-strand
+braid monodromy on all five immersed collision partitions and on the generic
+one-cusp and two-cusp strata.  Every van Kampen presentation reduces to
+`Z`, so each stratum requires a second ramified affine component and has
+conditional source floors `29/50`.  The replay separately certifies the
+first escape: the noncyclic `E_6+A_1` complement admits a transitive
+degree-six action whose meridians have cycle type `2+2+1+1`.  Thus the
+remaining cusp attack must combine boundary attachment data with the
+logarithmic Chern budget.
+
+<!-- status-consumer: PF2K1M1 fafcbb3c2e6ceb2b -->
+
+The concentrated `E_8` endpoint has a dependency-free icosahedral
+permutation audit:
+
+```bash
+.venv/bin/python scripts/verify_f2_affine_k1_e8_monodromy.py
+```
+
+The command enumerates all transitive `S_6` images of the torus-knot group
+`<a,b | a^3=b^5>` whose meridian `a^-1*b^2` has cycle type
+`2+2+1+1`.  The `720` labeled actions form one conjugacy class, represented
+by the exceptional six-point `A_5` action.  Thus E8 complement monodromy
+allows, but rigidifies, the two-fixed-sheet packet.  The preferred longitude
+has the same permutation as the meridian, so its peripheral orbits force
+two distinct `(e,f)=(2,1)` source-boundary rows and exclude one `(2,2)` row.
+The same command enumerates all `59` subgroups of `A_5`: the complete
+fixed-sheet coset-action degrees in the F2 range are `6,10,15,30`, with
+respectively `2,4,6,14` separate `(2,1)` rows.  It also checks the uniform
+squarefree/double doubled residual ledgers
+`7d-62+4N-4r(b-6)-s_X` and `7d-67+4N-4r(b-6)-s_X`.
+
+<!-- status-consumer: PF2K1E8M1 bbb282c6bcfa62fc -->
+
+The full simple-inertia closure, including nontrivial central normalization,
+is replayed by:
+
+```bash
+.venv/bin/python scripts/verify_f2_affine_k1_e8_orbifold_atlas.py
+```
+
+This exact SymPy computation proves that the universal `M^2=1` cusp
+quotient has order `240`, enumerates all `30` subgroup classes, and finds
+exactly `13` fixed-sheet F2 actions in degrees
+`6,10,12,15,20,24,30,40,60,120`.  The order-four center glues meridian
+transpositions into peripheral rows `(2,f)` with `f=1,2,4`; the checker also
+verifies the resulting Chern ledgers.  Runtime is about forty seconds.
+
+<!-- status-consumer: PF2K1E8O1 4251750ed4e43c89 -->
+
+The stable complete-chain cancellation is checked independently by:
+
+```bash
+.venv/bin/python scripts/verify_f2_affine_k1_complete_chain_budget.py
+```
+
+After the full Cartier determinant cycle and conormal kernel are subtracted,
+the point budget is exactly `u-1`.  Every simple-inertia E8 row has cusp
+lower `2R>u-1`; the checker records the required negative `Fitt_1` deficits
+`3,7,5,10,13,17,23,27,33,53,113`.
+
+<!-- status-consumer: PF2K1CB1 5cc386dba344a867 -->
+
+The multi-component affine-ramification identity, complete degree-six
+cubic-inertia cusp-group enumeration, terminal `A_6` passport match, and
+generic split contracted local packet are checked by:
+
+```bash
+.venv/bin/python scripts/verify_f2_affine_global_ramification_budget.py
+```
+
+<!-- status-consumer: PF2GRB1 aa3a0efd2e0ff277 -->
+
+The generic contracted-divisor Smith theorem, forced cubic E8 jets,
+saturated normal form, length-four cyclic quotient, and global incidence
+gate are checked by:
+
+```bash
+.venv/bin/python scripts/verify_log_contracted_divisor_smith_classification.py
+```
+
+<!-- status-consumer: LCDSC1 07dcd994b4faf092 -->
+
+The remaining isolated-`Fitt_1` sign is closed by:
+
+```bash
+.venv/bin/python scripts/verify_log_cokernel_cyclic_submodule_positivity.py
+```
+
+The local theorem embeds the cyclic determinant module into every
+generically cyclic `2 x 2` cokernel with an effective finite quotient.  Thus
+isolated `Fitt_1` corrections cannot repair the E8 deficit, excluding every
+one-component simple-inertia E8 completion.
+
+<!-- status-consumer: LCSP1 8658eebeb1d65671 -->
+
+The all-stratum `k=1` conductor conservation is checked by:
+
+```bash
+.venv/bin/python scripts/verify_f2_affine_target_k1_conductor_conservation.py
+```
+
+The command proves that the collision resultant stays monic of degree eight,
+replays the affine delta ledger `6-2=4`, and verifies both the concentrated
+`(3,5)` cusp `C=t^8` and the cusp-plus-triple degeneration
+`C=t^2*(t^3+1)^2`.  It also checks the étale source bounds `4(d-1)` for the
+normalization quotient and `8(d-1)` for the conductor divisor.
+
+<!-- status-consumer: PF2K1CC1 f152c82ef2d54c32 -->
+
+The tame-node packet theorem is checked by:
+
+```bash
+.venv/bin/python scripts/verify_f2_affine_k1_tame_node_packet.py
+```
+
+The command verifies the split and collided logarithmic matrices, their
+Smith type `(1,e)`, and the complete regular fan of the cyclic model
+`z^e=x*y`, including all `e-1` exceptional `(-2)` curves and their target
+orders `(j,e-j)`.  Kato's chart criterion and log-étaleness of log blowups
+then give zero logarithmic cokernel and localized `ch_2` for every fs tame
+Kummer toroidal packet.  This is a conditional local classification: it
+does not assert that the unresolved F2 source packet is toroidal.  The same
+check verifies the general SNC residue-rank gate and the two first-jet
+equations necessary for a rank-one packet to have singular determinant
+support.
+
+<!-- status-consumer: PF2K1TN1 521fb57f7e6abc1f -->
+
+The affine strict-log-étale resolution theorem is checked by:
+
+```bash
+.venv/bin/python scripts/verify_affine_keller_strict_log_etale.py
+```
+
+The command verifies the Keller chain rule for node, cusp, tacnode, and
+ordinary-triple target curves, checks both point-blowup charts under a
+nonlinear determinant-one automorphism, and replays the identity logarithmic
+matrix after strict étale base change.  The general theorem uses flat base
+change of blowups: every affine conductor packet has zero relative log
+cokernel, although its ordinary normalization length remains.
+
+<!-- status-consumer: PAER1 60eb24b2232d159e -->
+
+The affine-purity target puncture and terminal-attachment dichotomy are
+checked by:
+
+```bash
+.venv/bin/python scripts/verify_f2_affine_purity_puncture_attachment.py
+```
+
+The command verifies contact `k` with the target `(5,2)` divisor and the
+leading residue formula, replays the terminal third branch fiber, and checks
+the direct-SNC exponent matrix.  It then audits the resolved terminal node:
+every exceptional valuation above it has positive orders on both target
+parameters and therefore maps to one point.  The formal
+`lambda=125/729,e=3` comparison is not an available affine-row slot, and no
+conditional `29/50` component count follows.
+
+<!-- status-consumer: PF2PPA1 b24c4d80c2f8230e -->
+
+The generic `k=1` affine-row logarithmic Chern packet is checked by:
+
+```bash
+.venv/bin/python scripts/verify_f2_affine_k1_log_ch2.py
+```
+
+The command verifies the cyclic local Smith profile `R/(u^e)`, computes the
+kernel from the logarithmic conormal sequence, and tracks the target quintic
+through the mandatory `(5,2)` center and up to eight carrier centers.  It
+also checks `b=min(ord_u(w|_C),8)` in the carrier-normalized coordinate and
+the explicit first-jet equation separating `b=1` from `b>=2`, then combines
+the packet with the global budget for every signature
+`(e,f,n,b)`.  The conditional degree-floor residuals are
+`(e^2*n-2*e*f*(b-7)-20-s_X)/2` and
+`(e^2*n-2*e*f*(b-7)+17-s_X)/2`, with exact opposite parity gates.  No
+terminal `e=3` attachment is assumed.  On the generic cusp face, exact
+minimal packets have incidence-sensitive boundary length `2f-h+c`, ranging
+from `f` for smooth unramified folds to `2f` for an all-node fiber.  Booking
+it subtracts `2(2f-h+c)` from the two doubled unidentified residual
+numerators, without changing parity.
+
+<!-- status-consumer: PF2K1L1 5221f5659fc19729 -->
 
 The fixed-coordinate normalized sparse-support exclusions are replayed by:
 
@@ -9094,7 +9560,7 @@ The expanded terminal checker is pinned in `MATH_STATUS.json` at SHA-256
 The software assumptions remain `.python-version` and `requirements.txt`;
 the command above both recomputes the assertions and emits the final pass
 marker.
-<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
+<!-- status-consumer: PF2GC1 6ba3fd9eb6a0bcdf -->
 
 The small deterministic regression of the published candidate tables is:
 
@@ -9557,6 +10023,36 @@ At degree four the same truncated determinant then forces
 These results are `HC4MYA1`, `HC4MYG3`, and `HC4MYG4`; degree five is the
 first not fully classified single-graph degree.  See
 [`HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md`](HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md).
+
+Verify the four exact all-degree frontend statements with
+
+```bash
+.venv/bin/python scripts/verify_hc4_all_degree_frontends.py
+```
+
+This checks the degree-free support and parity identities behind `HC4FSD1`,
+the top-face and complementary-minor proof of `HC4FSD2`, the exact
+all-lower-layer coefficient identities and unrestricted binary regressions
+behind `HC4FSD3`, and the exact Taylor/cofactor proof of `HC4MYGJ2`.  The
+original discovery regressions are
+replayed with
+
+```bash
+.venv/bin/python scripts/research_hc4_all_degree_frontends.py \
+  --minimum-degree 4 \
+  --maximum-degree 8 \
+  --maximum-normal-order 12 \
+  --output artifacts/generated-results/hc4_all_degree_frontend_experiments.json
+```
+
+The finite Singular tables cover degrees four through eight and normal orders
+through twelve.  They are regressions for the all-degree proofs, not their
+logical basis.  `HC4FSD2` remains scoped to the minimal tower; arbitrary
+lower layers can change its later faces, while `HC4FSD3` proves that they
+cannot remove the exact binary obstruction.  See
+[`HC4_ALL_DEGREE_FRONTEND_EXPERIMENTS.md`](HC4_ALL_DEGREE_FRONTEND_EXPERIMENTS.md).
+
+<!-- status-consumer: HC4FSD3 1107bc6ff58456f5 -->
 
 The reverse scalar-pivot classifier and simultaneous matrix-pivot equation
 builder are:
@@ -10284,6 +10780,26 @@ block.  This is `HC4MCP9`, not a classification of arbitrary coefficients,
 directions, longer words, or polynomial symplectomorphisms.  The generated
 artifact hash is
 `7f235d427e0cf63e3aeddf198d6ade72c5478ae90774d526fb3a5610dae9286e`.
+
+To remove the finite coefficient and direction boxes on the same HC4MCP6
+resonance family, run the exact saturated scalar scheme and all 15 affine
+Pluecker charts for each of the 54 patterns:
+
+```bash
+PYTHONHASHSEED=0 PYTHONPATH=scripts .venv/bin/python \
+  scripts/search_hc4_nonlinear_unit_schur_blocks.py \
+  --symbolic-classification \
+  --jobs 4 \
+  --output \
+  artifacts/generated-results/hc4_symbolic_unit_schur_classification.json
+```
+
+This requires Singular.  The number of parallel pattern workers does not
+change the sorted artifact.  Every sampled determinant certificate is exact:
+a constant determinant would satisfy all sampled equalities, so a unit
+sampled ideal excludes the complete constant locus without interpolation.
+The generated artifact SHA-256 is
+`e92465e4991e7635f07fcc70895995f5d0465a1c3b816a6c9a88643500865e30`.
 
 The direct one-variable calculation for the `PC(2)` graph is:
 
@@ -12115,6 +12631,320 @@ determinant, and certifies the lower-rank split `p*r=0` together with the exact
 `HC4_AFFINE_PLANE_SCHUBERT_BRIDGE.md`; it is not represented as a bounded
 symbolic computation.
 
+## HC4 nonreduced Hessian--Schur module
+
+Replay the Fermat, radial, defect-degree, and quartic-denominator
+calibrations for `HC4NHM1` with
+
+```bash
+.venv/bin/python scripts/verify_hc4_nonreduced_hessian_schur_module.py
+# or: make verify-hc4-nonreduced-hessian-schur
+```
+
+The written normalization argument defines the minimal denominator
+`P` clearing `C^(-1)*d` and the normalized corank-two defect divisor `B_Q`.
+It proves
+`deg(B_Q) >= 2*deg(Q)*(r+1-deg(P))`.  For the ternary-quintic packet
+`r=3`, `P^2 | det(C)` and `deg(det(C))=9`; hence any survivor with one
+defect-free essential component has `deg(P)=4` and
+`det(C)=P^2*ell`.  The checker confirms the exact polynomial identities and
+the Fermat/radial calibrations.  The duality, DVR, and line-bundle steps are
+written proofs in
+[`HC4_NONREDUCED_HESSIAN_SCHUR_MODULE.md`](HC4_NONREDUCED_HESSIAN_SCHUR_MODULE.md),
+not bounded CAS claims.
+
+Continue with the exact septuple-line pole/defect ladder and its extremal
+kernel gate using
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_direct_septuple_linear_hessian_gate.py
+# or: make verify-hc4-direct-septuple-linear
+~~~
+
+For a squarefree residual cofactor, the written proof leaves exactly six
+`(pole order, primitive kernel degree, defect length)` rows. On the extremal
+`(3,2,2)` row it proves that a quadratic-pencil kernel is incompatible with
+a repeated Hessian line: a transverse pencil drops the boundary Hessian to
+rank at most one, while a tangent pencil makes the determinant line simple.
+Thus only the nondegenerate-conic kernel remains there. The checker verifies
+the pole/defect arithmetic, the general tangent-pencil determinant identity,
+the conic adjugate calibration, the first-normal divisibility obstruction,
+and the repeated-root binary-quintic sieve.  The latter leaves four automatic
+root partitions and one exceptional `2+1+1+1` orbit with anharmonic invariant
+`25/4`.  An exact saturated Singular elimination then proves that the
+squarefree stratum is one projective orbit, represented by `u^5+v^5`.
+The complete boundary-kernel solutions then have a common quadratic factor
+in every case except the `4+1` family; its primitive locus is killed by an
+exact first-normal remainder.  Hence the extremal `(3,2,2)` row is empty,
+and the same moving-line-image argument closes both defect-four rows.  The
+checker finally verifies the constant-kernel coefficient ladders.  A
+transverse kernel kills every normal jet and forces determinant zero.  A
+tangent kernel either makes the septuple coefficient vanish or makes its
+residual quadratic a square.  Thus the exact septuple-line packet with
+squarefree coprime cofactor is empty. See
+[`HC4_DIRECT_SEPTUPLE_LINEAR_HESSIAN_GATE.md`](HC4_DIRECT_SEPTUPLE_LINEAR_HESSIAN_GATE.md).
+
+Continue through the octuple and nonuple line packets with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_octuple_nonuple_linear_hessian_gate.py
+# or: make verify-hc4-octuple-nonuple-linear
+~~~
+
+For either multiplicity, the pole/defect arithmetic gives ten rows.  The
+degree-one and degree-two kernel rows are already excluded by the preceding
+moving-line and conic gates.  On the sole new `(4,3,0)` row, the binary
+quintic Hessian must be a perfect square.  The complete classification leaves
+only root types `4+1` and `3+2`; the checker verifies that their boundary
+kernel equations force a common factor.  Once these moving rows are removed,
+the constant-kernel coefficient ladder makes the whole quintic independent
+of one variable, so its Hessian determinant is zero.  Thus `HC4NHM3` closes
+`det(C)=x^8*ell` and `det(C)=x^9`, equivalently the clean quartic-denominator
+partition `P=x^4`.  The next clean partition is `P=x^3*y`, whose residual
+line gives incidence types `x^7*y^2`, `x^6*y^3`, and `x^6*y^2*z`;
+generic lower-Smith boundaries remain separate. See
+[`HC4_OCTUPLE_NONUPLE_LINEAR_HESSIAN_GATE.md`](HC4_OCTUPLE_NONUPLE_LINEAR_HESSIAN_GATE.md).
+
+Classify the first two-line incidence packet with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_two_line_quartic_denominator_packet.py
+# or: make verify-hc4-two-line-quartic-denominator
+~~~
+
+`HC4NHM4` proves that every clean `P=x^3*y`, `det(C)=x^7*y^2` packet is,
+after linear normalization,
+`h5=A*x*y^4+x^4*(B*y+Gamma*z)/24+D*x^5/120`, with `A*Gamma!=0`.  The checker
+verifies the determinant, the complete Schur space
+`s3=a*x*y^2+b*x^3`, the primitive cleared vector, and the quotient
+`d^T*adj(C)*d/det(C)=a^2*x/(3*A)`.  The minimal denominator is exactly
+`x^3*y` when `a!=0`.  It also verifies the forced first prolongation term
+`a^2*x*t^2/(6*A)` in `h3`. See
+[`HC4_TWO_LINE_QUARTIC_DENOMINATOR_PACKET.md`](HC4_TWO_LINE_QUARTIC_DENOMINATOR_PACKET.md).
+
+Exclude its full first prolongation with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_two_line_quartic_denominator_prolongation.py
+# or: make verify-hc4-two-line-quartic-prolongation
+~~~
+
+The checker retains the complete ternary quartic `r4`, quadratic `Q2`,
+cubic `r3`, and arbitrary four-variable quadratic `h2`.  The degree-ten
+Schur face cancels, but the next determinant face has immutable coefficient
+`[x^8*t][lambda^9]det(Hess(psi))=-Gamma^2*a^3/(54*A)`.  It is nonzero for
+the genuinely two-component channel `A*Gamma*a!=0`, proving `HC4NHM5` and
+closing this incidence before collision equations. See
+[`HC4_TWO_LINE_QUARTIC_DENOMINATOR_PROLONGATION.md`](HC4_TWO_LINE_QUARTIC_DENOMINATOR_PROLONGATION.md).
+
+Close the other two residual-line incidences in the `3+1` partition with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_remaining_three_one_quartic_denominator_gate.py
+# or: make verify-hc4-remaining-three-one-quartic
+~~~
+
+After the moving-kernel exclusions, the essential multiplicity-six line has
+a constant kernel.  The transverse case has zero determinant.  In the
+tangent case, the exact residual cubic is forced to be a cube, immediately
+excluding `x^6*y^2*z`.  For `x^6*y^3`, matching all higher coefficients
+forces the induced boundary rank-two determinant to vanish.  The other
+tangent branch has multiplicity at least seven.  Thus `HC4NHM6` closes both
+packets before the Schur gradient or collision equations, completing the
+clean `3+1` partition. See
+[`HC4_REMAINING_THREE_ONE_QUARTIC_DENOMINATOR_GATE.md`](HC4_REMAINING_THREE_ONE_QUARTIC_DENOMINATOR_GATE.md).
+
+Close the `2+2` and `2+1+1` quartic-denominator partitions with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_two_two_quartic_denominator_gate.py
+.venv/bin/python scripts/verify_hc4_two_one_one_quartic_denominator_gate.py
+# or: make verify-hc4-two-one-one-quartic
+~~~
+
+`HC4NHM7` excludes both residual-line incidences for `P=x^2*y^2`.  The
+coincident incidence has immutable coefficient `j1^3*x^7*y*z/18`; after
+normalizing the distinct residual line, the other incidence has immutable
+coefficient `-9*h1^4*x^5*y^2*z^2/(2*beta)`.  `HC4NHM8` compares the local
+residual root partitions on the double line and uses the same coefficients
+to exclude every power and `4+1` concurrency degeneration.  See
+[`HC4_TWO_TWO_QUARTIC_DENOMINATOR_GATE.md`](HC4_TWO_TWO_QUARTIC_DENOMINATOR_GATE.md)
+and
+[`HC4_TWO_ONE_ONE_QUARTIC_DENOMINATOR_GATE.md`](HC4_TWO_ONE_ONE_QUARTIC_DENOMINATOR_GATE.md).
+
+Replay the exact frontend for the last squarefree clean partition with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_squarefree_quartic_denominator_frontend.py
+# or: make verify-hc4-squarefree-quartic-frontend
+~~~
+
+`HC4NHM9` proves that pole order one forces a constant kernel on each of the
+four denominator lines.  A tangent direction is equivalent to
+`D_v(h5) in (L^2)` and automatically supplies the double determinant factor;
+a transverse direction sharpens to `D_v(h5) in (L^3)` on the
+generic-corank-one locus.  Thus the open squarefree partition is reduced to
+three line arrangements and sixteen tangent/transverse flag patterns.  The
+finite-field commands in
+[`HC4_SQUAREFREE_QUARTIC_DENOMINATOR_FRONTEND.md`](HC4_SQUAREFREE_QUARTIC_DENOMINATOR_FRONTEND.md)
+are explicitly experimental and do not close this partition.
+
+Close the all-four-concurrent arrangement and the transverse-fourth half of
+the exactly-three-concurrent arrangement with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_squarefree_quartic_concurrence_closure.py
+# or: make verify-hc4-squarefree-quartic-concurrence
+~~~
+
+`HC4NHM10` uses the order-eight local Hessian ladder at a four-line pencil
+point to show that every nonzero rank-at-most-one determinant has a single
+repeated tangent direction; the only apparent rank-zero order-eight face is
+`F4*Hess_2(F4)`, whose root multiplicities cannot be the square of a
+squarefree quartic.  For `(x,y,x+y,z)`, exact quartic polar syzygies and
+mixed-partial compatibility exclude all eight patterns in which the fourth
+flag is transverse.  See
+[`HC4_SQUAREFREE_QUARTIC_CONCURRENCE_CLOSURE.md`](HC4_SQUAREFREE_QUARTIC_CONCURRENCE_CLOSURE.md).
+
+Close all sixteen no-three-concurrent flag patterns with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_squarefree_quartic_general_position_closure.py
+# or: make verify-hc4-squarefree-quartic-general-position
+~~~
+
+`HC4NHM11` computes the quartic polar-syzygy ranks for zero/one tangent
+flags, the four direction charts for exactly two tangent flags, and the eight
+direction charts for three tangent flags.  Every rank-drop nullspace is a
+binary cone or a pure fifth power.  Together with `HC4NHM10`, this leaves
+exactly eight clean squarefree rows: the triple-concurrent arrangement with
+a tangent fourth flag.  See
+[`HC4_SQUAREFREE_QUARTIC_GENERAL_POSITION_CLOSURE.md`](HC4_SQUAREFREE_QUARTIC_GENERAL_POSITION_CLOSURE.md).
+
+Close those final eight rows with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_squarefree_quartic_tangent_fourth_closure.py
+# or: make verify-hc4-squarefree-quartic-tangent-fourth
+~~~
+
+`HC4NHM12` computes the four exact quartic-syzygy spaces for the symmetry
+representatives `RRRT`, `TRRT`, `TTRT`, and `TTTT`.  For each, Singular
+verifies that the mixed-partial ideal, saturated first by the quartic
+rank-two minors and then by the direction rank-two minors, is the unit ideal.
+Polar injectivity forces the two ranks to agree.  The only remaining
+rank-one relations are repeated tangent pairs, and the unused flag gives an
+elementary incompatible monomial polar.  This closes all forty-eight
+split-squarefree flag rows and completes the clean generic-corank-one packet
+whose quartic denominator splits into lines.  Clean nonlinear denominator
+components remain separate.  See
+[`HC4_SQUAREFREE_QUARTIC_TANGENT_FOURTH_CLOSURE.md`](HC4_SQUAREFREE_QUARTIC_TANGENT_FOURTH_CLOSURE.md).
+
+Start the next nonlinear clean denominator partition with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_smooth_conic_divisible_top_gate.py
+# or: make verify-hc4-smooth-conic-divisible-top
+~~~
+
+`HC4NHM13` normalizes a smooth conic to `q=x*z-y^2` and the residual line
+to its tangent or secant orbit. For a general conic-divisible quintic
+`h5=q*G3`, Singular proves
+`I(det(Hess(h5))-k*q^4*ell):(k)^infinity=(1)` in both orbits. Thus the
+complete divisible-top subrow of the double-conic denominator `P=q^2` is
+empty. The checker also verifies that `h5=q^2*L` has exact conic Hessian
+multiplicity three. See
+[`HC4_SMOOTH_CONIC_DIVISIBLE_TOP_GATE.md`](HC4_SMOOTH_CONIC_DIVISIBLE_TOP_GATE.md).
+
+Replay the complementary clean smooth-quartic reciprocal frontend with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_smooth_quartic_reciprocal_frontend.py
+# or: make verify-hc4-smooth-quartic-reciprocal
+~~~
+
+`HC4NHM14` verifies the reciprocal identities
+`det(A)=Q*ell*mu` and `adj(A)=mu*C+lambda*d*d^T`, the ten residual-line
+gradient representatives, their common-factor degrees, and the four
+basepoint-free quadratic boundary-matrix families. The written binary-cubic
+classification splits the clean irreducible-quartic packet into one
+scalar-degenerate, nine simple residual-line, and ten doubled residual-line
+rows. This is a finite frontend, not an exclusion. See
+[`HC4_SMOOTH_QUARTIC_RECIPROCAL_FRONTEND.md`](HC4_SMOOTH_QUARTIC_RECIPROCAL_FRONTEND.md).
+
+Replay the first generic basepoint-free simple-line gate with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_smooth_quartic_squarefree_line_generic.py
+# or: make verify-hc4-smooth-quartic-squarefree-line-generic
+~~~
+
+`HC4NHM16` constructs the 81 exact reciprocal/Hessian coefficient equations
+for the squarefree-line type `d0=(x^2,y^2,0)`.  Over the total parameter
+function field, a staged Singular basis is the maximal ideal in the 18 active
+deformation variables; the three surviving bottom-right coefficients leave
+`det(A)=0`.  This excludes the generic incidence point only.  Exceptional
+specializations, the complementary line chart, and the other three
+basepoint-free types remain.  See
+[`HC4_SMOOTH_QUARTIC_SQUAREFREE_LINE_GENERIC_GATE.md`](HC4_SMOOTH_QUARTIC_SQUAREFREE_LINE_GENERIC_GATE.md).
+
+Replay the first exceptional-divisor slices with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_smooth_quartic_squarefree_line_exceptional_slices.py
+# or one slice: add --group NAME
+# or: make verify-hc4-smooth-quartic-squarefree-line-exceptional-slices
+~~~
+
+`HC4NHM17` verifies nine exact strata inside the first visible generic-basis
+divisor.  They comprise the central `H2=0` locus and its first algebraic
+pivot, both generic charts and the first algebraic `m^3=48` slice at
+residual-line slope `tau=0`, and both
+components at `tau=-1` together with their first secondary pivots.  Every
+staged basis has only `det(A)=0` support.  The arbitrary-`tau` divisor,
+further hidden denominator factors, and the complementary line chart remain.
+See
+[`HC4_SMOOTH_QUARTIC_SQUAREFREE_LINE_EXCEPTIONAL_SLICES.md`](HC4_SMOOTH_QUARTIC_SQUAREFREE_LINE_EXCEPTIONAL_SLICES.md).
+
+Continue the nonzero-restriction double-conic row with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_double_conic_normal_layers.py --group layer-18
+.venv/bin/python scripts/verify_hc4_double_conic_normal_layers.py --group layer-14
+.venv/bin/python scripts/verify_hc4_double_conic_normal_layers.py --group layer-10
+.venv/bin/python scripts/verify_hc4_double_conic_normal_layers.py --group layer-6
+.venv/bin/python scripts/verify_hc4_double_conic_normal_layers.py --group support-one-two
+.venv/bin/python scripts/verify_hc4_double_conic_normal_layers.py --group support-three
+.venv/bin/python scripts/verify_hc4_double_conic_normal_layers.py --group harmonic-four
+# long generic-cross-ratio replays
+.venv/bin/python scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-7111
+.venv/bin/python scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-6211
+.venv/bin/python scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-5311
+.venv/bin/python scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-5221
+.venv/bin/python scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-4411
+.venv/bin/python scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-4321
+.venv/bin/python scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-3331
+# long one-chart polynomial replay and function-field replay
+.venv/bin/python scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-4222-root-chart
+.venv/bin/python scripts/verify_hc4_double_conic_normal_layers.py --group balanced-function-fields
+# or: make verify-hc4-double-conic-normal-layers
+~~~
+
+`HC4NHM15` uses the harmonic splitting
+`h5=H5(f10)+q*H3(g6)+q^2*H1(k2)` and verifies the four binary-covariant
+normal layers `Phi18`, `Phi14`, `Phi10`, and `Phi6`. Exact rational
+Rabinowitsch charts exclude all fourteen decic partitions supported on at
+most three points and all nine four-point partitions at harmonic
+cross-ratio. Further characteristic-zero unit certificates close the seven
+complete arbitrary-cross-ratio partitions `(7,1,1,1)`, `(6,2,1,1)`,
+`(5,3,1,1)`, `(5,2,2,1)`, `(4,4,1,1)`, `(4,3,2,1)`, and `(3,3,3,1)`.
+The exact double-root value chart and root permutation close `(4,2,2,2)`.
+All three `(3,3,2,2)` charts are unit over the function field in the
+cross-ratio, so only a finite exceptional cross-ratio locus in that last
+four-point row remains. The support-at-least-five families remain separate;
+no Schur solution is claimed. See
+[`HC4_DOUBLE_CONIC_NORMAL_LAYERS.md`](HC4_DOUBLE_CONIC_NORMAL_LAYERS.md).
+
 ## HC4 direct repeated-linear Hessian-factor gates
 
 Replay the direct homogeneous filtration and its all-degree squarefree
@@ -12252,6 +13082,24 @@ Its complete potential is affine in the kernel variable with quadratic pivot
 `P=2*C*ell^2+linear`; a missing tangent linear part is polynomially
 impossible, while a nonzero one invokes the registered fiber reduction
 `HC4RSD12`.  Only the order-one degree-five resonance remains.
+
+Close that last exact-sextuple resonance with
+
+```bash
+.venv/bin/python scripts/verify_hc4_exact_sextuple_pure_cube_scalar_parent.py
+# or: make verify-hc4-exact-sextuple-pure-cube
+```
+
+`HC4DIR28` starts from the forced scalar parent
+`H+w*P+eta*w^2/2`, where `P_3` is a pure cube.  For a nonzero corner, exact
+Schur completion gives a ternary constant-Hessian pencil and `HC3` excludes
+collisions.  For the zero corner, the bordered unit makes `grad(P)` nowhere
+zero.  The written pure-cube gradient lemma then supplies a constant unit
+direction of `P`; graph coordinates factor the determinant into a binary
+constant-Hessian determinant, and `HC2` excludes collisions.  The checker
+replays both universal block identities and the two scalar alternatives in
+the critical-point lemma.  See
+[`HC4_EXACT_SEXTUPLE_PURE_CUBE_SCALAR_PARENT.md`](HC4_EXACT_SEXTUPLE_PURE_CUBE_SCALAR_PARENT.md).
 For that resonance the checker also verifies the forced pure-cube pivot top
 `a_3=(4v/3)*ell^3`; its complete scalar-parent form is the next uniform
 classification target.

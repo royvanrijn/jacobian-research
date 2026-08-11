@@ -43,6 +43,12 @@ The attempted Newton/boundary bridge is replayed by:
 .venv/bin/python plane-jc/cas/verify_f2_75_125_global_attachment.py
 .venv/bin/python plane-jc/cas/test_f2_75_125_global_attachment.py
 .venv/bin/python scripts/verify_f2_carrier_log_node_profiles.py
+.venv/bin/python scripts/verify_f2_upstream_carrier_extraction.py
+.venv/bin/python scripts/verify_log_cyclic_boundary_blowup_conservation.py
+.venv/bin/python scripts/verify_log_cyclic_cokernel_twist.py
+.venv/bin/python scripts/verify_log_kernel_gauss_degree.py
+.venv/bin/python scripts/verify_log_tangential_kernel_trivialization.py
+.venv/bin/python scripts/verify_f2_outgoing_terminal_tail.py
 .venv/bin/python plane-jc/cas/verify_f2_75_125_carrier_wronskian.py
 .venv/bin/python plane-jc/cas/test_f2_75_125_carrier_wronskian.py
 .venv/bin/python plane-jc/cas/verify_f2_75_125_carrier_specializations.py
@@ -105,6 +111,87 @@ upstream carrier-extraction chain, outgoing terminal tail, affine purity row,
 or other global centers; see
 [`../F2_CARRIER_LOG_NODE_PROFILE.md`](../F2_CARRIER_LOG_NODE_PROFILE.md).
 <!-- status-consumer: PF2CLP1 41625dd5d3f8f898 -->
+The upstream extraction command verifies the unimodular carrier-zero ladder
+and uses the exact Keller two-form at the extraction root to force
+`coker(theta_log)=R/(W^3*U^18)`.  Its branchwise splitting quotient has
+length `54`; see
+[`../F2_UPSTREAM_CARRIER_EXTRACTION_PROFILE.md`](../F2_UPSTREAM_CARRIER_EXTRACTION_PROFILE.md).
+<!-- status-consumer: PF2UCE1 7f15bc756cc73fff -->
+The cyclic-boundary command proves that raw node matching length is
+model-dependent but `D^2/2` is conserved under boundary blowups.  It computes
+the F2 extraction-root Cartier charge as `27`; see
+[`../LOG_CYCLIC_BOUNDARY_BLOWUP_CONSERVATION.md`](../LOG_CYCLIC_BOUNDARY_BLOWUP_CONSERVATION.md).
+<!-- status-consumer: LCBBC1 b3eb4679f781c55f -->
+The cyclic-cokernel-twist command proves `L=K tensor O_D(D)` for an
+invertible cyclic cokernel on its Cartier determinant divisor and therefore
+`ch_2(i_*L)=deg_D(K)+D^2/2`.  At the F2 root this is
+`deg(K_root)+27`; see
+[`../LOG_CYCLIC_COKERNEL_TWIST.md`](../LOG_CYCLIC_COKERNEL_TWIST.md).
+<!-- status-consumer: LCCT1 2fc6ecea7a7c8b49 -->
+The kernel-Gauss command proves that a cyclic determinant packet contracted
+to a target point has `K=gamma^*O(-1)` and nonnegative Gauss degree.  It turns
+the F2 root contribution into `27-e_root<=27`; see
+[`../LOG_KERNEL_GAUSS_DEGREE.md`](../LOG_KERNEL_GAUSS_DEGREE.md).
+<!-- status-consumer: LKGD1 8a357250b5005186 -->
+The tangential-kernel command verifies divisibility of `d(f^*z)` by the full
+ideal `(W^3U^18)`, proving that `dz` generates the thickened F2 root kernel.
+It computes `e_root=0` and the exact cyclic contribution `ch_2=27`; see
+[`../LOG_TANGENTIAL_KERNEL_TRIVIALIZATION.md`](../LOG_TANGENTIAL_KERNEL_TRIVIALIZATION.md).
+<!-- status-consumer: LTKT1 32ac27318f16c20c -->
+The outgoing-tail command verifies the support inequalities and unimodular
+fan map from `(5,12),(2,5),(1,3),(0,1)` to
+`(5,2),(2,1),(1,1),(0,1)`.  It closes the remaining outgoing nodes and final
+boundary/affine endpoint with zero log cokernel; see
+[`../F2_OUTGOING_TERMINAL_TAIL.md`](../F2_OUTGOING_TERMINAL_TAIL.md).
+<!-- status-consumer: PF2OTT1 af25012e34020e11 -->
+The affine-purity-frontier command verifies that purity requires an
+additional boundary component beyond the certified `27/48` graphs, raising
+the source floors to `28/49`.  It also checks the finite degree intervals,
+row bounds, target parametrization bound, and a coarse surviving ledger at
+every degree, showing that the next missing datum is the actual affine
+nonproperness curve and pullback factorization; see
+[`../F2_AFFINE_PURITY_FRONTIER.md`](../F2_AFFINE_PURITY_FRONTIER.md).
+
+```bash
+.venv/bin/python scripts/verify_f2_affine_purity_frontier.py
+```
+
+<!-- status-consumer: PF2APF1 192055eb737d3140 -->
+The affine-target-curve command combines the F2 coordinate-degree ratio with
+the degree bound to enumerate exactly 24 normalization charts `(3k,5k)`.
+It checks curve degree `5k<=120`, the coefficient counts, and explicit cusp
+and multibranch witnesses for the divided-difference collision/critical
+ideal; see
+[`../F2_AFFINE_TARGET_CURVE_ATLAS.md`](../F2_AFFINE_TARGET_CURVE_ATLAS.md).
+
+```bash
+.venv/bin/python scripts/verify_f2_affine_target_curve_atlas.py
+```
+
+<!-- status-consumer: PF2ATC1 9ab722c45c586b73 -->
+The `k=1` target-collision command reduces the four-parameter degree-`(3,5)`
+normalization chart to one quartic, checks its diagonal and tangent tests, and
+certifies a nonempty packet with four ordinary affine nodes and the fixed
+delta-2 infinity cusp; see
+[`../F2_AFFINE_TARGET_K1_COLLISION.md`](../F2_AFFINE_TARGET_K1_COLLISION.md).
+
+```bash
+.venv/bin/python scripts/verify_f2_affine_target_k1_collision.py
+```
+
+<!-- status-consumer: PF2K1C1 358a6ba820e8b2f1 -->
+The purity-puncture command verifies that every target chart meets `(5,2)`
+with contact `k`.  It compares the `k=1` leading residue with the terminal
+Belyi cover, then proves that its formal `lambda=125/729,e=3` compatibility
+is not an available source slot because that terminal neighborhood is
+already resolved.  See
+[`../F2_AFFINE_PURITY_PUNCTURE_ATTACHMENT.md`](../F2_AFFINE_PURITY_PUNCTURE_ATTACHMENT.md).
+
+```bash
+.venv/bin/python scripts/verify_f2_affine_purity_puncture_attachment.py
+```
+
+<!-- status-consumer: PF2PPA1 b24c4d80c2f8230e -->
 The carrier-Wronskian commands continue from that skeleton at the generic
 carrier.  They remove the seven rational target shears before descent 36,
 solve the resulting low-degree Wronskian, extract target ray `(5,36)`, and
@@ -197,7 +284,7 @@ conditional, so neither supplies an F2
 contradiction.  The
 consolidated theorem and claim boundary are in
 [`../F2_MODIFIED_LAURENT_FAMILY.md`](../F2_MODIFIED_LAURENT_FAMILY.md).
-<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
+<!-- status-consumer: PF2GC1 6ba3fd9eb6a0bcdf -->
 
 The log-boundary and Poisson-square prefilters are:
 

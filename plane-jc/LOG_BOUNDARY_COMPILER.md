@@ -653,7 +653,7 @@ selected principal chain lacks local target data: the Kummer-orbit and
 terminal-residue theorems give its source ray `(12,-17)`, target ray `(5,2)`,
 and complete row `(e,f)=(1,6)`.  The current task for that row is global
 attachment, not another local branch-scale derivation.
-<!-- status-consumer: PF2GC1 33dbc5ff48b5d064 -->
+<!-- status-consumer: PF2GC1 6ba3fd9eb6a0bcdf -->
 
 ## 6. From compiled experiments to a finite theorem
 

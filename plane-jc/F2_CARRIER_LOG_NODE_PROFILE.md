@@ -13,6 +13,19 @@
 > affine purity row, or any uncompiled global resolution center, and it does
 > not exclude `(75,125)`.
 
+The upstream item left outside this theorem is subsequently compiled in
+[`F2_UPSTREAM_CARRIER_EXTRACTION_PROFILE.md`](F2_UPSTREAM_CARRIER_EXTRACTION_PROFILE.md).
+The outgoing item is subsequently closed as a unimodular log-etale fan map in
+[`F2_OUTGOING_TERMINAL_TAIL.md`](F2_OUTGOING_TERMINAL_TAIL.md).
+Its carrier-zero ladder is unimodular, while its extraction-root node has the
+nonzero length-`54` degree-one branch-matching quotient.
+The later
+[`affine-purity frontier`](F2_AFFINE_PURITY_FRONTIER.md) proves that a
+different component with `e>1` over an affine target curve must be added,
+raising the global component floors to `28/49` without changing this note's
+carrier-local count.
+<!-- status-consumer: PF2UCE1 7f15bc756cc73fff -->
+
 The rational orders, common regular fans, exponent matrices, intersection
 forms, and canonical integrality are checked by
 [`verify_f2_carrier_log_node_profiles.py`](../scripts/verify_f2_carrier_log_node_profiles.py).
@@ -259,17 +272,20 @@ supplies a nonzero normalization-defect class.  Residue indices `1`, `3`,
 and `5` become invertible log exponent determinants after the necessary
 common fan refinement.
 
-The next candidate support is therefore restricted to:
+After the subsequent outgoing-tail and affine-purity frontier the remaining
+candidate support is restricted to:
 
-1. the upstream six-blowup carrier-extraction chain;
-2. the outgoing tail beyond the terminal `s=0` node and its transition to
-   the target `(5,2)` fan;
-3. the purity-forced affine ramification row;
-4. uncompiled global resolution centers; and
-5. the global localized-second-Chern remainder, which must first prove that
-   some non-log-etale node exists at all.
+1. the actual target nonproperness curve, its pullback factorization, and the
+   proximity chain of the purity-forced new component;
+2. uncompiled global resolution centers; and
+3. the global localized-second-Chern remainder and possible cancellation of
+   the extraction-root length-`54` matching class.
 
-This makes the central logical gap sharper: a universal contradiction now
-needs a global theorem forcing a defect outside two large, exact, tame
-log-etale packets.  More coefficient layers on either packet cannot create
-the missing conductor class.
+<!-- status-consumer: PF2OTT1 af25012e34020e11 -->
+
+<!-- status-consumer: PF2APF1 192055eb737d3140 -->
+
+The subsequent extraction theorem supplies such a class, but in degree-one
+local cohomology.  The central logical gap is now global: prove that Keller
+geometry cannot absorb or cancel that exact class.  More coefficient layers
+on either tame packet cannot change this target.
