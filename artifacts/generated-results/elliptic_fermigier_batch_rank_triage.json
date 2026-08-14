@@ -1,0 +1,2951 @@
+{
+  "experiment_wall_seconds": 24.414863957998023,
+  "parameters": {
+    "candidate_ids": [
+      "primary-1666-9",
+      "staged-1547-492",
+      "staged-833-3464",
+      "score-714-617",
+      "score-3332-2571",
+      "score-2975-1493",
+      "low-conductor-644-87",
+      "low-conductor-154-103",
+      "low-conductor-847-184",
+      "low-conductor-70-223",
+      "low-conductor-1057-218"
+    ],
+    "height_precisions": [
+      72,
+      120
+    ],
+    "max_escalations": 2,
+    "minimum_new_x": 20,
+    "minimum_rank_gain": 3,
+    "output": "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic_fermigier_batch_rank_triage.json",
+    "pari_stack_bytes": 512000000,
+    "stage_one_quartic_height": 50000,
+    "stage_two_quartic_height": 1000000,
+    "timeout_seconds_per_pari_call": 300.0
+  },
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/batch_rank_triage.py",
+  "results": [
+    {
+      "candidate_id": "primary-1666-9",
+      "known_global_root_number": null,
+      "known_log_conductor": "128.959882907388234115945927583952120187586146367640134572484",
+      "provenance": "record residue-class scan",
+      "seed_height_matrix_runs": [
+        {
+          "decimal_precision": 72,
+          "numerical_rank": 12,
+          "subset_height_determinant": "2956073612741108606.75780350854226664842957198696660923399888971377265928",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "124.779955931423828575313207996849685965788394590371364476576396660853655",
+          "subset_smallest_eigenvalue": "2.87388634125580468263604797088940811708850164442625117170000402858371538"
+        },
+        {
+          "decimal_precision": 120,
+          "numerical_rank": 12,
+          "subset_height_determinant": "2956073612741108606.75780350854226664842957198696660923399888971377265927951526100268762008729406724626416472895909721548",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "124.779955931423828575313207996849685965788394590371364476576396660853655166420286620974379153396649139267179687920433699",
+          "subset_smallest_eigenvalue": "2.87388634125580468263604797088940811708850164442625117170000402858371537692277792100272761191181497541872308164753847031"
+        }
+      ],
+      "selection_metadata": "top score at numerical prime cutoff 500",
+      "stages": [
+        {
+          "distinct_quartic_x_values": 26,
+          "exact_seed_count": 12,
+          "explicit_numerical_basis": [
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "-2064417298863620981155950263/1254712165282827",
+              "jacobian_y": "-1130343371915387326119365411799719449060/950367927759659200053",
+              "pool_index_one_based": 1,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "1666/9",
+              "quartic_z": "-148458044/27"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "1600376556729299092443527591302/1715751956751406227",
+              "jacobian_y": "-434338646610511778949596174144927566466620/16019026065521158579584651",
+              "pool_index_one_based": 2,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "-1171/9",
+              "quartic_z": "-23331779387/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "12413010488920102082542267222/14437599218672787",
+              "jacobian_y": "485059471692193816554014404756544073760/4121692346099745178407",
+              "pool_index_one_based": 3,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "2161/9",
+              "quartic_z": "-2140267717/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "1746129530649437601134047721497/2067485086884488067",
+              "jacobian_y": "-3005377184438917600867278670368950053465940/21189364518405258742190931",
+              "pool_index_one_based": 4,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "1160/9",
+              "quartic_z": "-3013164742/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "6901174471957147487038465946953/6230800919647165203",
+              "jacobian_y": "11388166444879253147499925195175170800624380/36952932782984340432802329",
+              "pool_index_one_based": 5,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "4492/9",
+              "quartic_z": "-5230866326/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "-23876587289294496359619023/19542445536267",
+              "jacobian_y": "9514690807293859017597398705502285220/5541983502293349729",
+              "pool_index_one_based": 6,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "1736/9",
+              "quartic_z": "-157485314/27"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "1571637462601113778159177/980978939667",
+              "jacobian_y": "-26009428022943420937568190212885540/20776152963207393",
+              "pool_index_one_based": 7,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "5068/9",
+              "quartic_z": "1305515918/27"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "330901639049721730956909191878/70845436080553203",
+              "jacobian_y": "1284986913547750803649819607183006145335060/134407087571647209908763",
+              "pool_index_one_based": 8,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "7397/9",
+              "quartic_z": "4741071979/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "5075364017564499353303551558/4150731918203883",
+              "jacobian_y": "-327717858559395006476089843605149660680/635360374990869422589",
+              "pool_index_one_based": 9,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "10729/9",
+              "quartic_z": "-42460458187/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "6131849894332816108410463753/2097793688157963",
+              "jacobian_y": "-2985733050144349051399883571687366796940/684854817875363952153",
+              "pool_index_one_based": 10,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "7658/9",
+              "quartic_z": "-7102558036/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "36864397998170027566509488426467/30589427324188924812",
+              "jacobian_y": "194355891420894624505008040213100282043732695/401966739152038514274874632",
+              "pool_index_one_based": 11,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "10990/9",
+              "quartic_z": "46360418608/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "37904236527271159128594031159177/64253040455323613547",
+              "jacobian_y": "1952057662598782003872709167509356247781240340/3671088706583732584221864759",
+              "pool_index_one_based": 12,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "7258/45",
+              "quartic_z": "33595299836/2025"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "5961634423937882573837738902873/6268021086838845123",
+              "jacobian_y": "1683168918580707960954695152431417155249180/37284538539531440505448431",
+              "pool_index_one_based": 13,
+              "provenance": "bounded search",
+              "quartic_residual": "0",
+              "quartic_x": "-5336/9",
+              "quartic_z": "89189931418/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "5682523599611645647543131337/6328321845751827",
+              "jacobian_y": "-209652131623673446217039515712514968180/3588287162418816196149",
+              "pool_index_one_based": 14,
+              "provenance": "bounded search",
+              "quartic_residual": "0",
+              "quartic_x": "2348/9",
+              "quartic_z": "2833967626/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "263034312753856091088491810073457/281658823616736126027",
+              "jacobian_y": "-11468911080984400431919519150500163169156540/415962688458714053518598679",
+              "pool_index_one_based": 16,
+              "provenance": "bounded search",
+              "quartic_residual": "0",
+              "quartic_x": "7640/23",
+              "quartic_z": "22121471382262/385641"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "-464523123578703591368697557/250085271692268",
+              "jacobian_y": "34436360779373555637900920073962335/348017840760962808",
+              "pool_index_one_based": 17,
+              "provenance": "bounded search",
+              "quartic_residual": "0",
+              "quartic_x": "5066/27",
+              "quartic_z": "34332505424/6561"
+            }
+          ],
+          "height_matrix_runs": [
+            {
+              "decimal_precision": 72,
+              "numerical_rank": 16,
+              "subset_height_determinant": "347900827798258775585486.601362344667088334218586111707402378512249697225",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                16,
+                17
+              ],
+              "subset_largest_eigenvalue": "129.244376273119139541673506733238184522829972127529562134236156855500203",
+              "subset_smallest_eigenvalue": "1.43321814399657378668398902963960660255459824105530990885994887451198863"
+            },
+            {
+              "decimal_precision": 120,
+              "numerical_rank": 16,
+              "subset_height_determinant": "347900827798258775585486.601362344667088334218586111707402378512249697224950635845856507035394006369254881851079793722854",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                16,
+                17
+              ],
+              "subset_largest_eigenvalue": "129.244376273119139541673506733238184522829972127529562134236156855500203253597302736814402487231964651875034470616268786",
+              "subset_smallest_eigenvalue": "1.43321814399657378668398902963960660255459824105530990885994887451198862767655848380878802671878973849539913300929480565"
+            }
+          ],
+          "height_replay_wall_seconds": 0.0679562920013268,
+          "new_x_values_beyond_visible_sections": 13,
+          "numerical_rank_gain_over_seed": 4,
+          "pari_reported_search_milliseconds": 63,
+          "quartic_height_bound": 50000,
+          "search_wall_seconds": 0.07986108400291414,
+          "signed_quartic_points_found": 52,
+          "stable_pool_numerical_rank": 16,
+          "stable_seed_numerical_rank": 12,
+          "status": "bounded enumeration and exact membership with numerical height-rank evidence; no exact independence or rank claim",
+          "total_stage_wall_seconds": 0.1581313329988916,
+          "unique_new_jacobian_images": 13,
+          "visible_section_x_values_found_within_bound": 13
+        },
+        {
+          "distinct_quartic_x_values": 57,
+          "exact_seed_count": 12,
+          "explicit_numerical_basis": [
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "-2064417298863620981155950263/1254712165282827",
+              "jacobian_y": "-1130343371915387326119365411799719449060/950367927759659200053",
+              "pool_index_one_based": 1,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "1666/9",
+              "quartic_z": "-148458044/27"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "1600376556729299092443527591302/1715751956751406227",
+              "jacobian_y": "-434338646610511778949596174144927566466620/16019026065521158579584651",
+              "pool_index_one_based": 2,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "-1171/9",
+              "quartic_z": "-23331779387/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "12413010488920102082542267222/14437599218672787",
+              "jacobian_y": "485059471692193816554014404756544073760/4121692346099745178407",
+              "pool_index_one_based": 3,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "2161/9",
+              "quartic_z": "-2140267717/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "1746129530649437601134047721497/2067485086884488067",
+              "jacobian_y": "-3005377184438917600867278670368950053465940/21189364518405258742190931",
+              "pool_index_one_based": 4,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "1160/9",
+              "quartic_z": "-3013164742/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "6901174471957147487038465946953/6230800919647165203",
+              "jacobian_y": "11388166444879253147499925195175170800624380/36952932782984340432802329",
+              "pool_index_one_based": 5,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "4492/9",
+              "quartic_z": "-5230866326/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "-23876587289294496359619023/19542445536267",
+              "jacobian_y": "9514690807293859017597398705502285220/5541983502293349729",
+              "pool_index_one_based": 6,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "1736/9",
+              "quartic_z": "-157485314/27"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "1571637462601113778159177/980978939667",
+              "jacobian_y": "-26009428022943420937568190212885540/20776152963207393",
+              "pool_index_one_based": 7,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "5068/9",
+              "quartic_z": "1305515918/27"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "330901639049721730956909191878/70845436080553203",
+              "jacobian_y": "1284986913547750803649819607183006145335060/134407087571647209908763",
+              "pool_index_one_based": 8,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "7397/9",
+              "quartic_z": "4741071979/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "5075364017564499353303551558/4150731918203883",
+              "jacobian_y": "-327717858559395006476089843605149660680/635360374990869422589",
+              "pool_index_one_based": 9,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "10729/9",
+              "quartic_z": "-42460458187/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "6131849894332816108410463753/2097793688157963",
+              "jacobian_y": "-2985733050144349051399883571687366796940/684854817875363952153",
+              "pool_index_one_based": 10,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "7658/9",
+              "quartic_z": "-7102558036/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "36864397998170027566509488426467/30589427324188924812",
+              "jacobian_y": "194355891420894624505008040213100282043732695/401966739152038514274874632",
+              "pool_index_one_based": 11,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "10990/9",
+              "quartic_z": "46360418608/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "37904236527271159128594031159177/64253040455323613547",
+              "jacobian_y": "1952057662598782003872709167509356247781240340/3671088706583732584221864759",
+              "pool_index_one_based": 12,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "7258/45",
+              "quartic_z": "33595299836/2025"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "5961634423937882573837738902873/6268021086838845123",
+              "jacobian_y": "1683168918580707960954695152431417155249180/37284538539531440505448431",
+              "pool_index_one_based": 13,
+              "provenance": "bounded search",
+              "quartic_residual": "0",
+              "quartic_x": "-5336/9",
+              "quartic_z": "89189931418/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "5682523599611645647543131337/6328321845751827",
+              "jacobian_y": "-209652131623673446217039515712514968180/3588287162418816196149",
+              "pool_index_one_based": 14,
+              "provenance": "bounded search",
+              "quartic_residual": "0",
+              "quartic_x": "2348/9",
+              "quartic_z": "2833967626/81"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "263034312753856091088491810073457/281658823616736126027",
+              "jacobian_y": "-11468911080984400431919519150500163169156540/415962688458714053518598679",
+              "pool_index_one_based": 16,
+              "provenance": "bounded search",
+              "quartic_residual": "0",
+              "quartic_x": "7640/23",
+              "quartic_z": "22121471382262/385641"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "-464523123578703591368697557/250085271692268",
+              "jacobian_y": "34436360779373555637900920073962335/348017840760962808",
+              "pool_index_one_based": 17,
+              "provenance": "bounded search",
+              "quartic_residual": "0",
+              "quartic_x": "5066/27",
+              "quartic_z": "34332505424/6561"
+            }
+          ],
+          "height_matrix_runs": [
+            {
+              "decimal_precision": 72,
+              "numerical_rank": 16,
+              "subset_height_determinant": "347900827798258775585486.601362344667088334218586111707402378512249697225",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                16,
+                17
+              ],
+              "subset_largest_eigenvalue": "129.244376273119139541673506733238184522829972127529562134236156855500203",
+              "subset_smallest_eigenvalue": "1.43321814399657378668398902963960660255459824105530990885994887451198863"
+            },
+            {
+              "decimal_precision": 120,
+              "numerical_rank": 16,
+              "subset_height_determinant": "347900827798258775585486.601362344667088334218586111707402378512249697224950635845856507035394006369254881851079793722854",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                16,
+                17
+              ],
+              "subset_largest_eigenvalue": "129.244376273119139541673506733238184522829972127529562134236156855500203253597302736814402487231964651875034470616268786",
+              "subset_smallest_eigenvalue": "1.43321814399657378668398902963960660255459824105530990885994887451198862767655848380878802671878973849539913300929480565"
+            }
+          ],
+          "height_replay_wall_seconds": 0.19279583300158265,
+          "new_x_values_beyond_visible_sections": 44,
+          "numerical_rank_gain_over_seed": 4,
+          "pari_reported_search_milliseconds": 21866,
+          "quartic_height_bound": 1000000,
+          "search_wall_seconds": 22.247753374998865,
+          "signed_quartic_points_found": 114,
+          "stable_pool_numerical_rank": 16,
+          "stable_seed_numerical_rank": 12,
+          "status": "bounded enumeration and exact membership with numerical height-rank evidence; no exact independence or rank claim",
+          "total_stage_wall_seconds": 22.455526166002528,
+          "unique_new_jacobian_images": 44,
+          "visible_section_x_values_found_within_bound": 13
+        }
+      ],
+      "t": "1666/9"
+    },
+    {
+      "candidate_id": "low-conductor-154-103",
+      "known_global_root_number": 1,
+      "known_log_conductor": "162.234032455648408902235970522085591159150828298194308496774",
+      "provenance": "automatic local-condition discovery",
+      "seed_height_matrix_runs": [
+        {
+          "decimal_precision": 72,
+          "numerical_rank": 12,
+          "subset_height_determinant": "62540841768711581787.0267558375186197280559931870426336169099518340353439",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "142.038065148640512530434827602414942402247523664675754049422050272736077",
+          "subset_smallest_eigenvalue": "3.59194886152520662170983815958366385158106766657047199084642805660897469"
+        },
+        {
+          "decimal_precision": 120,
+          "numerical_rank": 12,
+          "subset_height_determinant": "62540841768711581787.0267558375186197280559931870426336169099518340353438730453578061318362693825296768280200968655171033",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "142.038065148640512530434827602414942402247523664675754049422050272736077163990256495062806762141591788793975602463978174",
+          "subset_smallest_eigenvalue": "3.59194886152520662170983815958366385158106766657047199084642805660897468542492538301211082363343094971555445832737404045"
+        }
+      ],
+      "selection_metadata": "lowest-height conductor-only candidate forcing p=7,11,13,17,19",
+      "stages": [
+        {
+          "distinct_quartic_x_values": 9,
+          "exact_seed_count": 12,
+          "explicit_numerical_basis": [
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "451526470397069149101337204316374/412897274783584488769",
+              "jacobian_y": "2405874646385796889886818059526356845636111250130/8390020551888422029595447875103",
+              "pool_index_one_based": 1,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "154/103",
+              "quartic_z": "-1412281991736/10609"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "152045790533213450929483429803961026/124472595910087505109241",
+              "jacobian_y": "23292550590559536433485312306861689598351086038680360/43914770803660119692949624458020211",
+              "pool_index_one_based": 2,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "5511/103",
+              "quartic_z": "-914158212891/10609"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "41820470145683446135843299219952055634/33883110765448595559631129",
+              "jacobian_y": "-109370900432296069561692549151913462342929104014123466780/197230880373761294972183382397103012867",
+              "pool_index_one_based": 3,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "5819/103",
+              "quartic_z": "887211593499/10609"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "24869450644964259235836703156899/24209094729472179409",
+              "jacobian_y": "17721394619040923708346141488360530324367228220/119115375656967504460194616423",
+              "pool_index_one_based": 4,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "32188/103",
+              "quartic_z": "541454594142/10609"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "3328320723978691190217468407812090371/3257406409227660008200561",
+              "jacobian_y": "-797112142963616218057811765727836629416128192376283140/5879060369985271754447467792929602441",
+              "pool_index_one_based": 5,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "32496/103",
+              "quartic_z": "-550175870706/10609"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "227265754971186979294109858489663491/228780294432205180662001",
+              "jacobian_y": "4863125239848438648404510612469797186336514951154820/109427863966227081214198371612493001",
+              "pool_index_one_based": 6,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "38780/103",
+              "quartic_z": "-676008823266/10609"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "66490424462460891419602682375875007251/66832129798362289837694241",
+              "jacobian_y": "-28516331106551727756108109817826394820569397477164808540/546358812068789579748928543099342521039",
+              "pool_index_one_based": 7,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "39088/103",
+              "quartic_z": "679652292942/10609"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "2189607292953606843517474206708188994/945940129642193892694489",
+              "jacobian_y": "2628609039160851603963122480548468648911339483552281520/920016200590567274131063416828145763",
+              "pool_index_one_based": 8,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "103567/103",
+              "quartic_z": "2520091542507/10609"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "1790441003972582454535227460569510594/781447346288061569254609",
+              "jacobian_y": "-1935034413664640427079699688233351675934781370459423860/690795629209737260399378588635821977",
+              "pool_index_one_based": 9,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "103875/103",
+              "quartic_z": "-2559994497291/10609"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "11224767407120597604428446006398726/5302934088767038705081",
+              "jacobian_y": "-924648147377829258919383341752682166626877645560910/386166275802017902183686356893229",
+              "pool_index_one_based": 10,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "106554/103",
+              "quartic_z": "-2914057982136/10609"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "35328970465820855878090853949369121899/16826565110841200497213369",
+              "jacobian_y": "162568357165000462421658858651459322459077964507339829220/69022900525378834048165728332537316653",
+              "pool_index_one_based": 11,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "106862/103",
+              "quartic_z": "2955588473292/10609"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "12707364620517322834790219913100825055348646/8168081290104983439806826598681",
+              "jacobian_y": "2602869927753065363578348512167030852297397161713732348577670/2200420222035787338521988844865145597237581",
+              "pool_index_one_based": 12,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "128994/515",
+              "quartic_z": "769385113949256/27318175"
+            }
+          ],
+          "height_matrix_runs": [
+            {
+              "decimal_precision": 72,
+              "numerical_rank": 12,
+              "subset_height_determinant": "62540841768711581787.0267558375186197280559931870426336169099518340353439",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "142.038065148640512530434827602414942402247523664675754049422050272736077",
+              "subset_smallest_eigenvalue": "3.59194886152520662170983815958366385158106766657047199084642805660897469"
+            },
+            {
+              "decimal_precision": 120,
+              "numerical_rank": 12,
+              "subset_height_determinant": "62540841768711581787.0267558375186197280559931870426336169099518340353438730453578061318362693825296768280200968655171033",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "142.038065148640512530434827602414942402247523664675754049422050272736077163990256495062806762141591788793975602463978174",
+              "subset_smallest_eigenvalue": "3.59194886152520662170983815958366385158106766657047199084642805660897468542492538301211082363343094971555445832737404045"
+            }
+          ],
+          "height_replay_wall_seconds": 0.03831199999694945,
+          "new_x_values_beyond_visible_sections": 1,
+          "numerical_rank_gain_over_seed": 0,
+          "pari_reported_search_milliseconds": 58,
+          "quartic_height_bound": 50000,
+          "search_wall_seconds": 0.07439037500080303,
+          "signed_quartic_points_found": 18,
+          "stable_pool_numerical_rank": 12,
+          "stable_seed_numerical_rank": 12,
+          "status": "bounded enumeration and exact membership with numerical height-rank evidence; no exact independence or rank claim",
+          "total_stage_wall_seconds": 0.12103779199969722,
+          "unique_new_jacobian_images": 1,
+          "visible_section_x_values_found_within_bound": 8
+        }
+      ],
+      "t": "154/103"
+    },
+    {
+      "candidate_id": "low-conductor-644-87",
+      "known_global_root_number": -1,
+      "known_log_conductor": "153.964400023010213083969770128430120323448601004558877669472",
+      "provenance": "expanded multiple-root CRT scan",
+      "seed_height_matrix_runs": [
+        {
+          "decimal_precision": 72,
+          "numerical_rank": 12,
+          "subset_height_determinant": "13894501114432828938.4042891072593304471232400403326037729401176365506245",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "117.994915209603715055836407225366304955943096041275911217115396508424656",
+          "subset_smallest_eigenvalue": "3.42731967388324485849424879827997167134788703026889552054365206694344980"
+        },
+        {
+          "decimal_precision": 120,
+          "numerical_rank": 12,
+          "subset_height_determinant": "13894501114432828938.4042891072593304471232400403326037729401176365506245344936936750572916521306370682629605111758341596",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "117.994915209603715055836407225366304955943096041275911217115396508424655724185243212580403014828025284826759296846412709",
+          "subset_smallest_eigenvalue": "3.42731967388324485849424879827997167134788703026889552054365206694344980177787771522845524426721993839853122056663799753"
+        }
+      ],
+      "selection_metadata": "verified low-conductor candidate; height rank 4 and short-score rank 376",
+      "stages": [
+        {
+          "distinct_quartic_x_values": 9,
+          "exact_seed_count": 12,
+          "explicit_numerical_basis": [
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "458901382302247384333565202162433/416569558366575670923",
+              "jacobian_y": "164982489788368294571039225408250405536809541420/545416356647409975061112526687",
+              "pool_index_one_based": 1,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "644/87",
+              "quartic_z": "-321771287138/2523"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "37554681835139701285675966385072070802/31360278407271285220802667",
+              "jacobian_y": "1821294448298721061539443165550960181286670719303982110/3755307225204125649911340156316391643",
+              "pool_index_one_based": 2,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "4141/87",
+              "quartic_z": "-690718108619/7569"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "12305266761852547878794061481341535138/9760746320408625110890803",
+              "jacobian_y": "-131433812649219951791446914194921914120035186701745670/217359633094960056462898902919863163",
+              "pool_index_one_based": 3,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "5429/87",
+              "quartic_z": "595536845771/7569"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "553370304999607857086407073582017/532324012887695962827",
+              "jacobian_y": "46397306636833466289229165446534597069717917980/262627194658727536377551980053",
+              "pool_index_one_based": 4,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "26674/87",
+              "quartic_z": "12881766604/261"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "679959381369907937315949588470088793/671785152823765567139283",
+              "jacobian_y": "-436205653692034866038843999123577998680865377927780/3924641172431599019291872415519083",
+              "pool_index_one_based": 5,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "27962/87",
+              "quartic_z": "-13944022708/261"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "9086746621032642105334536340181713/9169696342521376913403",
+              "jacobian_y": "57366490426663884589602897540530252576493658820/1942367024520514198082151003123",
+              "pool_index_one_based": 6,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "32242/87",
+              "quartic_z": "-158912256524/2523"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "45742404731296999976988358187916937/45813897141114913325667",
+              "jacobian_y": "-1473605531777316044488992951048208582727889803020/21691756466149740863841141446601",
+              "pool_index_one_based": 7,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "33530/87",
+              "quartic_z": "163202096372/2523"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "14829985131033512989416499257924802/6278664077014879502307",
+              "jacobian_y": "31595945784335621095546394265623157163636139139710/10638404035970846237273068235817",
+              "pool_index_one_based": 8,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "86965/87",
+              "quartic_z": "1742326009291/7569"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "5017396190219429648603410608382402/2234596969262447949267",
+              "jacobian_y": "-2027513622308767761968159491653596019412182400370/752927503856351259169632468331",
+              "pool_index_one_based": 9,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "88253/87",
+              "quartic_z": "-1883271838987/7569"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "134039322654523051883701154518735417/62326877593032772784307",
+              "jacobian_y": "-822582051816284075871720062197826398025602732761940/332727474942577990749262478048817",
+              "pool_index_one_based": 10,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "89488/87",
+              "quartic_z": "-2021124585382/7569"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "14101020055619012760518283999495982777/6825685639579871005216467",
+              "jacobian_y": "289611286988823396561198694169010498004487751458068220/127108261239183912065964361954602731",
+              "pool_index_one_based": 11,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "90776/87",
+              "quartic_z": "2167819224046/7569"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "3633900102004247971725997576048766833/2216104471752237012319803",
+              "jacobian_y": "113639366609486431186484508980933278506025600487620/83881262379902231501655039380379",
+              "pool_index_one_based": 12,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "107708/435",
+              "quartic_z": "146991424373878/5487525"
+            }
+          ],
+          "height_matrix_runs": [
+            {
+              "decimal_precision": 72,
+              "numerical_rank": 12,
+              "subset_height_determinant": "13894501114432828938.4042891072593304471232400403326037729401176365506245",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "117.994915209603715055836407225366304955943096041275911217115396508424656",
+              "subset_smallest_eigenvalue": "3.42731967388324485849424879827997167134788703026889552054365206694344980"
+            },
+            {
+              "decimal_precision": 120,
+              "numerical_rank": 12,
+              "subset_height_determinant": "13894501114432828938.4042891072593304471232400403326037729401176365506245344936936750572916521306370682629605111758341596",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "117.994915209603715055836407225366304955943096041275911217115396508424655724185243212580403014828025284826759296846412709",
+              "subset_smallest_eigenvalue": "3.42731967388324485849424879827997167134788703026889552054365206694344980177787771522845524426721993839853122056663799753"
+            }
+          ],
+          "height_replay_wall_seconds": 0.03929979200256639,
+          "new_x_values_beyond_visible_sections": 1,
+          "numerical_rank_gain_over_seed": 0,
+          "pari_reported_search_milliseconds": 52,
+          "quartic_height_bound": 50000,
+          "search_wall_seconds": 0.06769070800146437,
+          "signed_quartic_points_found": 18,
+          "stable_pool_numerical_rank": 12,
+          "stable_seed_numerical_rank": 12,
+          "status": "bounded enumeration and exact membership with numerical height-rank evidence; no exact independence or rank claim",
+          "total_stage_wall_seconds": 0.11548216700248304,
+          "unique_new_jacobian_images": 1,
+          "visible_section_x_values_found_within_bound": 8
+        }
+      ],
+      "t": "644/87"
+    },
+    {
+      "candidate_id": "low-conductor-1057-218",
+      "known_global_root_number": 1,
+      "known_log_conductor": "169.606323764358951772312077715131200953848832572805084059891",
+      "provenance": "height-first multiple-root frontier screen",
+      "seed_height_matrix_runs": [
+        {
+          "decimal_precision": 72,
+          "numerical_rank": 12,
+          "subset_height_determinant": "51045474079716648466.0182411634060326633741568535678124140934767640482610",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "134.589215702297298262623674845811261679053982242113813906834782287828219",
+          "subset_smallest_eigenvalue": "2.90031446686593124777292966715804098058959744248437956192774605944537998"
+        },
+        {
+          "decimal_precision": 120,
+          "numerical_rank": 12,
+          "subset_height_determinant": "51045474079716648466.0182411634060326633741568535678124140934767640482610214930941821733911291938177670057488520788104228",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "134.589215702297298262623674845811261679053982242113813906834782287828219116750861181965093997177480259802517616606793909",
+          "subset_smallest_eigenvalue": "2.90031446686593124777292966715804098058959744248437956192774605944537998015869432768067539399900636631453920133217772046"
+        }
+      ],
+      "selection_metadata": "below-target conductor candidate from the height-first frontier",
+      "stages": [
+        {
+          "distinct_quartic_x_values": 4,
+          "exact_seed_count": 12,
+          "explicit_numerical_basis": [
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "5550516820191914963898009417933307099/5054325560501052906896004",
+              "jacobian_y": "420101454988562226095482007859573570132425351019678680/1420380925825024072526822345406086001",
+              "pool_index_one_based": 1,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "1057/218",
+              "quartic_z": "-1543792505157/11881"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "72975452362536559678234601368484759931/60424428733178206502444356",
+              "jacobian_y": "29606885062307206162146652703657459850694333776855172410/58712266064273255901904139525605230937",
+              "pool_index_one_based": 2,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "10933/218",
+              "quartic_z": "-1057945512162/11881"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "26023731468691982430940566840465714099/20834867311772017605616804",
+              "jacobian_y": "-6925507259721981536750006074565469505499994247501488120/11887653051854368689354146401484315051",
+              "pool_index_one_based": 3,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "13047/218",
+              "quartic_z": "960082668258/11881"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "9569630267715699069185140005945805085259/9254926087439324715668157124",
+              "jacobian_y": "18284743138036748096267559218025709400872539859011523691040/111293408917317535324534793087964985389929",
+              "pool_index_one_based": 4,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "67395/218",
+              "quartic_z": "595142302083/11881"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "165384643270308102810928621347219/162761308716028345444",
+              "jacobian_y": "-31526388429653363232409881016969913773339073970/259559406744302982568058457859",
+              "pool_index_one_based": 5,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "69509/218",
+              "quartic_z": "-626815623126/11881"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "1190260851729694055738164447560612139/1199962993414370341432644",
+              "jacobian_y": "5900934062457658240526947675306699006366056113666080/164309166307004525845151836410410841",
+              "pool_index_one_based": 6,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "81347/218",
+              "quartic_z": "-752213716317/11881"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "1466802446426511221222029987582895059/1471498673629241749995364",
+              "jacobian_y": "-13623638455020750784371657222684432567455771564846030/223125817920847267432504829712968861",
+              "pool_index_one_based": 7,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "83461/218",
+              "quartic_z": "765445814154/11881"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "237897982582456343346314281454394771/101603412223593783492196",
+              "jacobian_y": "11824356738892976014808381240348112609364611463235010/4048297806249191627078823821948093",
+              "pool_index_one_based": 8,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "218469/218",
+              "quartic_z": "2772514400754/11881"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "3601352241832650720187335393516306579/1589971509184412268314404",
+              "jacobian_y": "-686492023961152356709583281166860095059877713820532680/250607478221023545148254598502553349",
+              "pool_index_one_based": 9,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "220583/218",
+              "quartic_z": "-2917431155562/11881"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "143920926754552731529257198560223408911979/67380889873347874865264412484",
+              "jacobian_y": "-5331420390427038521027700340676460306928792423725428078434920/2186327041520606347753750186492230627174169",
+              "pool_index_one_based": 10,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "224791/218",
+              "quartic_z": "-3211683274086/11881"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "3445049068189711505557618037980491/1655925667195996097476",
+              "jacobian_y": "19470672682739140487489001963148727469390027290280/8423086677100254637604382670903",
+              "pool_index_one_based": 11,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "226905/218",
+              "quartic_z": "3362510801433/11881"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "2822220260949765157552941423751857922011/1761485860789165553785862596",
+              "jacobian_y": "993645036265459673083815473689006636272866217570763530/777814006393630601815866731944046497",
+              "pool_index_one_based": 12,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "271241/1090",
+              "quartic_z": "886564068864726/32375725"
+            }
+          ],
+          "height_matrix_runs": [
+            {
+              "decimal_precision": 72,
+              "numerical_rank": 12,
+              "subset_height_determinant": "51045474079716648466.0182411634060326633741568535678124140934767640482610",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "134.589215702297298262623674845811261679053982242113813906834782287828219",
+              "subset_smallest_eigenvalue": "2.90031446686593124777292966715804098058959744248437956192774605944537998"
+            },
+            {
+              "decimal_precision": 120,
+              "numerical_rank": 12,
+              "subset_height_determinant": "51045474079716648466.0182411634060326633741568535678124140934767640482610214930941821733911291938177670057488520788104228",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "134.589215702297298262623674845811261679053982242113813906834782287828219116750861181965093997177480259802517616606793909",
+              "subset_smallest_eigenvalue": "2.90031446686593124777292966715804098058959744248437956192774605944537998015869432768067539399900636631453920133217772046"
+            }
+          ],
+          "height_replay_wall_seconds": 0.03543191700009629,
+          "new_x_values_beyond_visible_sections": 0,
+          "numerical_rank_gain_over_seed": 0,
+          "pari_reported_search_milliseconds": 94,
+          "quartic_height_bound": 50000,
+          "search_wall_seconds": 0.10900537500128848,
+          "signed_quartic_points_found": 8,
+          "stable_pool_numerical_rank": 12,
+          "stable_seed_numerical_rank": 12,
+          "status": "bounded enumeration and exact membership with numerical height-rank evidence; no exact independence or rank claim",
+          "total_stage_wall_seconds": 0.15477383300094516,
+          "unique_new_jacobian_images": 0,
+          "visible_section_x_values_found_within_bound": 4
+        }
+      ],
+      "t": "1057/218"
+    },
+    {
+      "candidate_id": "low-conductor-70-223",
+      "known_global_root_number": null,
+      "known_log_conductor": "165.979271710943517295247782698287404041467326409598207233727",
+      "provenance": "multiple-root CRT scan",
+      "seed_height_matrix_runs": [
+        {
+          "decimal_precision": 72,
+          "numerical_rank": 12,
+          "subset_height_determinant": "30830296177935036525.3655794534791842886321687269497865562675827228397954",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "140.630263591149207609094685912677632176939049406442616325063607890334638",
+          "subset_smallest_eigenvalue": "3.49969863178025007906764894647701341912453262459404084614343227244522939"
+        },
+        {
+          "decimal_precision": 120,
+          "numerical_rank": 12,
+          "subset_height_determinant": "30830296177935036525.3655794534791842886321687269497865562675827228397954329853378380055796536697548828618138770231928008",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "140.630263591149207609094685912677632176939049406442616325063607890334638097980730411780647443873963034626817474663144592",
+          "subset_smallest_eigenvalue": "3.49969863178025007906764894647701341912453262459404084614343227244522939221695630193025038781423194860026238323495258729"
+        }
+      ],
+      "selection_metadata": "lowest-height conductor-engineered control with a low short-prime score",
+      "stages": [
+        {
+          "distinct_quartic_x_values": 4,
+          "exact_seed_count": 12,
+          "explicit_numerical_basis": [
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "4285578541426421940029349876861533731/3924846953681327534927889",
+              "jacobian_y": "2204650642994476770467002203590006713729476496198471300/7775603197066129420249525316252892537",
+              "pool_index_one_based": 1,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "70/223",
+              "quartic_z": "-6676115217660/49729"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "35551312854684550360029585376235586/28985931633786771565009",
+              "jacobian_y": "2664068181506441139669068336252035080438905305967100/4934928847329650894578562250167527",
+              "pool_index_one_based": 2,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "12195/223",
+              "quartic_z": "-4235018977035/49729"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "99658348096622919393425519389299752855106/81077347466474477416403095225",
+              "jacobian_y": "-12579685017565452799530966562848647931021964062237977141795496/23086032236497179668188558658984809704734125",
+              "pool_index_one_based": 3,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "12335/223",
+              "quartic_z": "4208500459275/49729"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "1468243389782301780015490776465935403/1432365818047452099240361",
+              "jacobian_y": "245989263200716703038594667330130175302569542272228300/1714276701339403724644102538830246891",
+              "pool_index_one_based": 4,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "69952/223",
+              "quartic_z": "2554299277026/49729"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "19632051110822036860766514078641248083/19173951452957287513319521",
+              "jacobian_y": "-11815189503150246116379737198467430930080999780048916700/83959034393707393060541734583347662319",
+              "pool_index_one_based": 5,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "70092/223",
+              "quartic_z": "-2562881998446/49729"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "110256410447705523811360821970677418147/110927252380956769523755089",
+              "jacobian_y": "55479154767365892750458885826433302133966707932770531900/1168308089366953931357521637910400827687",
+              "pool_index_one_based": 6,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "84224/223",
+              "quartic_z": "-3175608153438/49729"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "23335474415212612327729520684258299147/23469985582685761292006089",
+              "jacobian_y": "-5584400928816767118036537710659607126928011023608598900/113702295922622348987116316599238658437",
+              "pool_index_one_based": 7,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "84364/223",
+              "quartic_z": "3179193739218/49729"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "153372069121815310774959830766734200242/66527056473570292464766729",
+              "jacobian_y": "1538297463903608940348204762222455343645268089364961426100/542622080766228563842757509657587448933",
+              "pool_index_one_based": 8,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "224491/223",
+              "quartic_z": "11886491443323/49729"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "858912104278361325728519657487058/373364822770248561121",
+              "jacobian_y": "-20367570732365173148453335091943069239638362659200/7214397983490967795141705382831",
+              "pool_index_one_based": 9,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "224631/223",
+              "quartic_z": "-11925760458843/49729"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "234298688105364600841133614443/111044918083572841",
+              "jacobian_y": "-88030359575958885570075912401312689498341300/37003945452963936521406389",
+              "pool_index_one_based": 10,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "230958/223",
+              "quartic_z": "-13736192781276/49729"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "714906261876566394849549017106411123404898/339404915256670799325292456801",
+              "jacobian_y": "468768647889903394142396070798076604310155213348586080091375300/197732105659772205995952675052672458163474799",
+              "pool_index_one_based": 11,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "231098/223",
+              "quartic_z": "13777063476456/49729"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "68169571335611791446858384229675502957667/44262642904844040914319466609",
+              "jacobian_y": "215595572596825119122078519100152543394569160670123672860/187260546623112228552993822759528545737",
+              "pool_index_one_based": 12,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "279918/1115",
+              "quartic_z": "1576803806335044/55447835"
+            }
+          ],
+          "height_matrix_runs": [
+            {
+              "decimal_precision": 72,
+              "numerical_rank": 12,
+              "subset_height_determinant": "30830296177935036525.3655794534791842886321687269497865562675827228397954",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "140.630263591149207609094685912677632176939049406442616325063607890334638",
+              "subset_smallest_eigenvalue": "3.49969863178025007906764894647701341912453262459404084614343227244522939"
+            },
+            {
+              "decimal_precision": 120,
+              "numerical_rank": 12,
+              "subset_height_determinant": "30830296177935036525.3655794534791842886321687269497865562675827228397954329853378380055796536697548828618138770231928008",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "140.630263591149207609094685912677632176939049406442616325063607890334638097980730411780647443873963034626817474663144592",
+              "subset_smallest_eigenvalue": "3.49969863178025007906764894647701341912453262459404084614343227244522939221695630193025038781423194860026238323495258729"
+            }
+          ],
+          "height_replay_wall_seconds": 0.036809791999985464,
+          "new_x_values_beyond_visible_sections": 0,
+          "numerical_rank_gain_over_seed": 0,
+          "pari_reported_search_milliseconds": 45,
+          "quartic_height_bound": 50000,
+          "search_wall_seconds": 0.0605076249994454,
+          "signed_quartic_points_found": 8,
+          "stable_pool_numerical_rank": 12,
+          "stable_seed_numerical_rank": 12,
+          "status": "bounded enumeration and exact membership with numerical height-rank evidence; no exact independence or rank claim",
+          "total_stage_wall_seconds": 0.10570312500203727,
+          "unique_new_jacobian_images": 0,
+          "visible_section_x_values_found_within_bound": 4
+        }
+      ],
+      "t": "70/223"
+    },
+    {
+      "candidate_id": "low-conductor-847-184",
+      "known_global_root_number": 1,
+      "known_log_conductor": "162.852739805513698244891454752320221986022685402317389213062",
+      "provenance": "height-first multiple-root frontier screen",
+      "seed_height_matrix_runs": [
+        {
+          "decimal_precision": 72,
+          "numerical_rank": 12,
+          "subset_height_determinant": "33304126202605303089.9562889399805572706211768510696011559271956281787450",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "132.331381280610401448708527431747717402351820896321164406444955677792206",
+          "subset_smallest_eigenvalue": "3.64138141938929819981878735097233036657291889481744804591601594178620966"
+        },
+        {
+          "decimal_precision": 120,
+          "numerical_rank": 12,
+          "subset_height_determinant": "33304126202605303089.9562889399805572706211768510696011559271956281787449519963734384256461882174606055719804563152902392",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "132.331381280610401448708527431747717402351820896321164406444955677792206093192659161191860370897987882073479094890864855",
+          "subset_smallest_eigenvalue": "3.64138141938929819981878735097233036657291889481744804591601594178620965724522894560970237840286555375441993610172888045"
+        }
+      ],
+      "selection_metadata": "below-target conductor candidate from the height-first frontier",
+      "stages": [
+        {
+          "distinct_quartic_x_values": 4,
+          "exact_seed_count": 12,
+          "explicit_numerical_basis": [
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "47414884300922484923109108229269259/43189361204487893607424",
+              "jacobian_y": "20694040666499759509615579689227398892614691223025/70122146425544403325538995737344",
+              "pool_index_one_based": 1,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "847/184",
+              "quartic_z": "-2203513616997/16928"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "259131966115126401968217000660612819/214387572287876419585024",
+              "jacobian_y": "3140215767004400424586256398487054667076169578286835/6204109108331061889409334666754048",
+              "pool_index_one_based": 2,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "9273/184",
+              "quartic_z": "-751887896991/8464"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "64306322440029656890142130010338629571/51529724659513316549395456",
+              "jacobian_y": "-6710147694105803215259982823150921490201567400850852275/11559438919977056480732251857583766528",
+              "pool_index_one_based": 3,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "10967/184",
+              "quartic_z": "685698627999/8464"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "81669174023737064286646222630717475451/79022598524437203815965696",
+              "jacobian_y": "1790530175404031655217656446818783311857100393783967695/10976072978618361359385999013326293504",
+              "pool_index_one_based": 4,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "56929/184",
+              "quartic_z": "849141414429/16928"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "680151488305158657307960174141659/669102548198547825664",
+              "jacobian_y": "-16560186223888380648653274313486490758432580295/135216302552398102249476379904",
+              "pool_index_one_based": 5,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "58623/184",
+              "quartic_z": "-891985743957/16928"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "4247751254134558184096949094133731/4281947183095877272576",
+              "jacobian_y": "159938141456452496016828917184251280385104578845/4378062781917490641785902153216",
+              "pool_index_one_based": 6,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "68705/184",
+              "quartic_z": "-1072270202787/16928"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "1745294639136895661671750058264654408539/1751144278566117294952326144",
+              "jacobian_y": "-34580645330944563163944965501283666818548236796926385145/572496616938429525044133150602589432576",
+              "pool_index_one_based": 7,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "70399/184",
+              "quartic_z": "1090169189739/16928"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "8348967766916885106029501379/3568737606943744",
+              "jacobian_y": "38856044187431799515076450604094602823475/13324531365768931985408",
+              "pool_index_one_based": 8,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "184441/184",
+              "quartic_z": "1977715979547/8464"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "1070468786269655571474489414815062336971/472207628878523696146441216",
+              "jacobian_y": "-879838251418614237007661791150638942365213079518733985185/320663494016851419752642130073869028352",
+              "pool_index_one_based": 9,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "186135/184",
+              "quartic_z": "-2075730033531/8464"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "706435006040753513689015575054305865939/330956761134349155105915904",
+              "jacobian_y": "-229101800295073465955578710928600608895517035961869279875/94075581752744801528461413390631465472",
+              "pool_index_one_based": 10,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "189777/184",
+              "quartic_z": "-4581369404367/16928"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "3543568243030937813531607161882019/1702134976703170806784",
+              "jacobian_y": "1269958545521097541032047847427143471682002535875/548631860157823672485716041984",
+              "pool_index_one_based": 11,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "191471/184",
+              "quartic_z": "4785392982279/16928"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "50365592607912222059878840515469251/31504609376078594999296",
+              "jacobian_y": "26226704860401346943817777041785506005884586085/20645980640682423822990833728",
+              "pool_index_one_based": 12,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "229047/920",
+              "quartic_z": "534196426251369/19467200"
+            }
+          ],
+          "height_matrix_runs": [
+            {
+              "decimal_precision": 72,
+              "numerical_rank": 12,
+              "subset_height_determinant": "33304126202605303089.9562889399805572706211768510696011559271956281787450",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "132.331381280610401448708527431747717402351820896321164406444955677792206",
+              "subset_smallest_eigenvalue": "3.64138141938929819981878735097233036657291889481744804591601594178620966"
+            },
+            {
+              "decimal_precision": 120,
+              "numerical_rank": 12,
+              "subset_height_determinant": "33304126202605303089.9562889399805572706211768510696011559271956281787449519963734384256461882174606055719804563152902392",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "132.331381280610401448708527431747717402351820896321164406444955677792206093192659161191860370897987882073479094890864855",
+              "subset_smallest_eigenvalue": "3.64138141938929819981878735097233036657291889481744804591601594178620965724522894560970237840286555375441993610172888045"
+            }
+          ],
+          "height_replay_wall_seconds": 0.03634783400048036,
+          "new_x_values_beyond_visible_sections": 0,
+          "numerical_rank_gain_over_seed": 0,
+          "pari_reported_search_milliseconds": 98,
+          "quartic_height_bound": 50000,
+          "search_wall_seconds": 0.11510741699748905,
+          "signed_quartic_points_found": 8,
+          "stable_pool_numerical_rank": 12,
+          "stable_seed_numerical_rank": 12,
+          "status": "bounded enumeration and exact membership with numerical height-rank evidence; no exact independence or rank claim",
+          "total_stage_wall_seconds": 0.15978575000190176,
+          "unique_new_jacobian_images": 0,
+          "visible_section_x_values_found_within_bound": 4
+        }
+      ],
+      "t": "847/184"
+    },
+    {
+      "candidate_id": "score-2975-1493",
+      "known_global_root_number": null,
+      "known_log_conductor": null,
+      "provenance": "record residue-class score comparison",
+      "seed_height_matrix_runs": [
+        {
+          "decimal_precision": 72,
+          "numerical_rank": 12,
+          "subset_height_determinant": "4146860607253847566839.02139858213430478092699332598330703240115771407749",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "193.845177074543542001976429179056813562951801271461127249601636105288697",
+          "subset_smallest_eigenvalue": "5.43478325296042951313537084763955729251121122012210583981225271554345490"
+        },
+        {
+          "decimal_precision": 120,
+          "numerical_rank": 12,
+          "subset_height_determinant": "4146860607253847566839.02139858213430478092699332598330703240115771407748534582812134564312743860443977443454911390324993",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "193.845177074543542001976429179056813562951801271461127249601636105288697509894932838684428248474650064931148370435314926",
+          "subset_smallest_eigenvalue": "5.43478325296042951313537084763955729251121122012210583981225271554345489749572834145780849209230052644342413991950076767"
+        }
+      ],
+      "selection_metadata": "fourth candidate at numerical prime cutoff 500; sign normalized",
+      "stages": [
+        {
+          "distinct_quartic_x_values": 2,
+          "exact_seed_count": 12,
+          "explicit_numerical_basis": [
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "71411357533638420446942366480243132899792515/65260740391760069835018812630929",
+              "jacobian_y": "151889140191156578326945058490351665728747895464962186540602239686/527203148107783858766056445656736249619635987783",
+              "pool_index_one_based": 1,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "2975/1493",
+              "quartic_z": "-295676426479455/2229049"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "1445882425877740928086469407847440274470412235/1185692980843415431822599004153681",
+              "jacobian_y": "21494578594448868438907861251535404787029455976955434227540911734918/40828025124883611845562576157927176421195259416921",
+              "pool_index_one_based": 2,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "79140/1493",
+              "quartic_z": "-193020203635455/2229049"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "416630258980662039451821027180759480021675/336965901405330495707080291489",
+              "jacobian_y": "-109269703850671449093118005749192850938074074854073276802386186/195604541219191290175506715319794686040730737",
+              "pool_index_one_based": 3,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "85090/1493",
+              "quartic_z": "185474615078655/2229049"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "37571984526210163976128352009617056198746839747/36540177282646601775073180532709889",
+              "jacobian_y": "1054899616303727046146536906639788103081353855569301161834710621744150/6984832165178345509398950238683678304861403618220287",
+              "pool_index_one_based": 4,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "465827/1493",
+              "quartic_z": "113455499919741/2229049"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "3153085409190110933926706431118402435606025176907/3088543168215194657493911910128114809",
+              "jacobian_y": "-724331423663899224829133447864659425617957425463868458106345644828642850/5427883449787874061531561410872091978407547643332103373",
+              "pool_index_one_based": 5,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "471777/1493",
+              "quartic_z": "-115897630551591/2229049"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "1291412698612577300394529118075876138953587/1300322905887900607001306625169",
+              "jacobian_y": "64004708246910479701406272186676343505552986825800937730309350/1482780340957942906002706967720489597256533447",
+              "pool_index_one_based": 6,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "561379/1493",
+              "quartic_z": "-141904192251843/2229049"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "4978074534856631492613362856692295494268123/5002302860533070713716261906601",
+              "jacobian_y": "-598526963351241288644928180020087668884882460514921491175623950/11188064805840743711955513624424456375866805099",
+              "pool_index_one_based": 7,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "567329/1493",
+              "quartic_z": "142924436115993/2229049"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "115674208829050680777084252767899978398507/49887882523310144818626776209",
+              "jacobian_y": "31940924253571902090145136129436101484890832030239542707958650/11142755631564368992481192586724166247702073",
+              "pool_index_one_based": 8,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "1500476/1493",
+              "quartic_z": "528105579430023/2229049"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "529243004699936390276631544859324650676470672467/231384390273175495562250158949988729",
+              "jacobian_y": "-310746186617874932804940870416407744346833306394416950971443702657528350/111301517508626001272878870949093775219970236523466317",
+              "pool_index_one_based": 9,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "1506426/1493",
+              "quartic_z": "-539279199193623/2229049"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "181837463889595568090478919234857966801100229659827/85790252318650957097137467984584146849",
+              "jacobian_y": "-1907838969008065920592850024498762962761928580724842049906744325595751436650/794615290372483064139792721472030585825913209723194442993",
+              "pool_index_one_based": 10,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "1543773/1493",
+              "quartic_z": "-610824842761371/2229049"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "15160731370428982635123965917604549847874015587/7230584639190484079019915762379969",
+              "jacobian_y": "1444120305034924686075769681182735399447718900883489071284223005964650/614837179074043390281310490317318619607403423217953",
+              "pool_index_one_based": 11,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "1549723/1493",
+              "quartic_z": "622454205030021/2229049"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "2800987834520818778706463013033333907443787853431693291/1792717926041327978199910209904425046125625",
+              "jacobian_y": "1288388494788128415224031773947632642404288825969516652672043736326703188914/1076832925836811258849698233917785667840072990991820296875",
+              "pool_index_one_based": 12,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "1867983/7465",
+              "quartic_z": "93344208949011615/3327970157"
+            }
+          ],
+          "height_matrix_runs": [
+            {
+              "decimal_precision": 72,
+              "numerical_rank": 12,
+              "subset_height_determinant": "4146860607253847566839.02139858213430478092699332598330703240115771407749",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "193.845177074543542001976429179056813562951801271461127249601636105288697",
+              "subset_smallest_eigenvalue": "5.43478325296042951313537084763955729251121122012210583981225271554345490"
+            },
+            {
+              "decimal_precision": 120,
+              "numerical_rank": 12,
+              "subset_height_determinant": "4146860607253847566839.02139858213430478092699332598330703240115771407748534582812134564312743860443977443454911390324993",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "193.845177074543542001976429179056813562951801271461127249601636105288697509894932838684428248474650064931148370435314926",
+              "subset_smallest_eigenvalue": "5.43478325296042951313537084763955729251121122012210583981225271554345489749572834145780849209230052644342413991950076767"
+            }
+          ],
+          "height_replay_wall_seconds": 0.037000959000579314,
+          "new_x_values_beyond_visible_sections": 0,
+          "numerical_rank_gain_over_seed": 0,
+          "pari_reported_search_milliseconds": 79,
+          "quartic_height_bound": 50000,
+          "search_wall_seconds": 0.09408979100044235,
+          "signed_quartic_points_found": 4,
+          "stable_pool_numerical_rank": 12,
+          "stable_seed_numerical_rank": 12,
+          "status": "bounded enumeration and exact membership with numerical height-rank evidence; no exact independence or rank claim",
+          "total_stage_wall_seconds": 0.13976141700186417,
+          "unique_new_jacobian_images": 0,
+          "visible_section_x_values_found_within_bound": 2
+        }
+      ],
+      "t": "2975/1493"
+    },
+    {
+      "candidate_id": "score-3332-2571",
+      "known_global_root_number": null,
+      "known_log_conductor": null,
+      "provenance": "record residue-class score comparison",
+      "seed_height_matrix_runs": [
+        {
+          "decimal_precision": 72,
+          "numerical_rank": 12,
+          "subset_height_determinant": "16406309236575907873967.9698019215295715690324962533688914195789379241488",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "211.371785457579268650693504586331592864385578321582235190428606619378089",
+          "subset_smallest_eigenvalue": "5.98532313729715678398703551263869653900508327361580868481018192200912425"
+        },
+        {
+          "decimal_precision": 120,
+          "numerical_rank": 12,
+          "subset_height_determinant": "16406309236575907873967.9698019215295715690324962533688914195789379241487964390631507568565633436017847841929143680605661",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "211.371785457579268650693504586331592864385578321582235190428606619378089171137376312746477647469278105012373455977347785",
+          "subset_smallest_eigenvalue": "5.98532313729715678398703551263869653900508327361580868481018192200912425156213029796991158699472362779395858311092579174"
+        }
+      ],
+      "selection_metadata": "third candidate at numerical prime cutoff 500",
+      "stages": [
+        {
+          "distinct_quartic_x_values": 2,
+          "exact_seed_count": 12,
+          "explicit_numerical_basis": [
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "143042445898433769038962483081786655185789031222257/130837943993232175317751667087172424347",
+              "jacobian_y": "9159369329853277922723615079738509382422146103798474805472667810491242940/32001930292806150224650347066317647952657298179556611523",
+              "pool_index_one_based": 1,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "3332/2571",
+              "quartic_z": "-293730743938562/2203347"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "8290532551059792150510532502746410203359403182018/6782422140193257012335172708707506323",
+              "jacobian_y": "200933724532139200829578650954139383904380229975601638970828278324637450/377705086853006212073249451613859663379382950528482721",
+              "pool_index_one_based": 2,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "138073/2571",
+              "quartic_z": "-568452111422531/6610041"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "7942566079541245368274169891160729468687272914978/6439591812573898768260747726055766163",
+              "jacobian_y": "-64400403507478056425449288680730106709992527742172322227301629647451510/116477452374670648022106981550351965564135575549912203",
+              "pool_index_one_based": 3,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "144737/2571",
+              "quartic_z": "553899081843779/6610041"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "44404467283138674899946555391954761557548004672137/43241432745720254751711826835359638627",
+              "jacobian_y": "899145255593697669206455523270166672572928854811814861910268607612409740/6080309991299959365429152431561979777381101699248949353",
+              "pool_index_one_based": 4,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "803962/2571",
+              "quartic_z": "337724512196204/6610041"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "45439480803483707860630584193151234661180195749833/44455980551588975106944728693663892643",
+              "jacobian_y": "-288276076554519716325371543538813923773816897456784527043777515587958140/2112757462888629367849382376066751789693589340122504573",
+              "pool_index_one_based": 5,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "810626/2571",
+              "quartic_z": "-342434601946388/6610041"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "25708410311388821738771458885465339047904419073/25877275656844733834102193610454283",
+              "jacobian_y": "12004279439132508583493535220605053845832005365766761288497150726740/267038999034663935321684185627616553244952479049247",
+              "pool_index_one_based": 6,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "968506/2571",
+              "quartic_z": "-140449676391836/2203347"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "18979702265548949302398202317998712471438313/19079281803099610519402606984323",
+              "jacobian_y": "-92083098639763141506034737893621930328451721200735484670192820/1782044900835695038570720974561504670379310471",
+              "pool_index_one_based": 7,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "975170/2571",
+              "quartic_z": "141105584543588/2203347"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "119952213013359767228818682622356160945853236557218/51856294999233295071855355041740634003",
+              "jacobian_y": "22784409271603659723779882681972947929329923607637547919395865515443964670/7985053585861025425798908111954457153317196824050201889",
+              "pool_index_one_based": 8,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "2585665/2571",
+              "quartic_z": "1571817854335939/6610041"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "89244630129343669297329105080609875154660553298/38924755208228973466057706237891403",
+              "jacobian_y": "-153534543108509870844524251151659367494568465272731335582606002927050/54738537378431390282218900874133827866356587717063",
+              "pool_index_one_based": 9,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "2592329/2571",
+              "quartic_z": "-1593368196989443/6610041"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "7739904062521758187024550141745421672442058174433/3658546179950263989967308788280110763",
+              "jacobian_y": "-357903939177862401182846161132055130230545342597792130412149912926968100/149636802829832978396862497891613828393438109603578309",
+              "pool_index_one_based": 10,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "2660224/2571",
+              "quartic_z": "-1817349870936838/6610041"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "10782943681769977193243170860358635302012916017252833/5132941413483855477989418193671030953163",
+              "jacobian_y": "6180536120306208033145093012699612857578036025393276050748018137426341118700/2621222062792633503298614086246379443244285388778781757703",
+              "pool_index_one_based": 11,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "2666888/2571",
+              "quartic_z": "1839779195276974/6610041"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "37591087739214585046444624173712708233830602539451433537713/24204300199344266885457626126729385074447572923",
+              "jacobian_y": "129097455865017336704313886755639596569837267246686010454804989546308509834469020/109635893602122599059646925278721144835709391344113788852904029",
+              "pool_index_one_based": 12,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "3221084/12855",
+              "quartic_z": "3995110677056131486/141620128425"
+            }
+          ],
+          "height_matrix_runs": [
+            {
+              "decimal_precision": 72,
+              "numerical_rank": 12,
+              "subset_height_determinant": "16406309236575907873967.9698019215295715690324962533688914195789379241488",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "211.371785457579268650693504586331592864385578321582235190428606619378089",
+              "subset_smallest_eigenvalue": "5.98532313729715678398703551263869653900508327361580868481018192200912425"
+            },
+            {
+              "decimal_precision": 120,
+              "numerical_rank": 12,
+              "subset_height_determinant": "16406309236575907873967.9698019215295715690324962533688914195789379241487964390631507568565633436017847841929143680605661",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "211.371785457579268650693504586331592864385578321582235190428606619378089171137376312746477647469278105012373455977347785",
+              "subset_smallest_eigenvalue": "5.98532313729715678398703551263869653900508327361580868481018192200912425156213029796991158699472362779395858311092579174"
+            }
+          ],
+          "height_replay_wall_seconds": 0.037900958999671275,
+          "new_x_values_beyond_visible_sections": 0,
+          "numerical_rank_gain_over_seed": 0,
+          "pari_reported_search_milliseconds": 58,
+          "quartic_height_bound": 50000,
+          "search_wall_seconds": 0.07353887499994016,
+          "signed_quartic_points_found": 4,
+          "stable_pool_numerical_rank": 12,
+          "stable_seed_numerical_rank": 12,
+          "status": "bounded enumeration and exact membership with numerical height-rank evidence; no exact independence or rank claim",
+          "total_stage_wall_seconds": 0.12053866599671892,
+          "unique_new_jacobian_images": 0,
+          "visible_section_x_values_found_within_bound": 2
+        }
+      ],
+      "t": "3332/2571"
+    },
+    {
+      "candidate_id": "score-714-617",
+      "known_global_root_number": null,
+      "known_log_conductor": null,
+      "provenance": "record residue-class score comparison",
+      "seed_height_matrix_runs": [
+        {
+          "decimal_precision": 72,
+          "numerical_rank": 12,
+          "subset_height_determinant": "2075999752664301601944.10122639281917975560948348359053701410954290772224",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "177.996506224544863144572815306245081208348366411028484979884087242942619",
+          "subset_smallest_eigenvalue": "4.84348322442842127850976604389472806745001395046015216385356395838136883"
+        },
+        {
+          "decimal_precision": 120,
+          "numerical_rank": 12,
+          "subset_height_determinant": "2075999752664301601944.10122639281917975560948348359053701410954290772224103965043062382680296663786370399718325924482432",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "177.996506224544863144572815306245081208348366411028484979884087242942619301577324913674972587000948774430527026645959448",
+          "subset_smallest_eigenvalue": "4.84348322442842127850976604389472806745001395046015216385356395838136882589958125959733510073881298431806222900225705809"
+        }
+      ],
+      "selection_metadata": "best retained candidate at numerical prime cutoff 2000",
+      "stages": [
+        {
+          "distinct_quartic_x_values": 4,
+          "exact_seed_count": 12,
+          "explicit_numerical_basis": [
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "1182434270521804658101062004942009058205907419/1081739083124703624264676424229049",
+              "jacobian_y": "10169505867955941051624319204359622787658644476864735474520873893140/35578184383389140453032122017981034255851263186093",
+              "pool_index_one_based": 1,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "714/617",
+              "quartic_z": "-50800531781244/380689"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "273010612157920541313756188915943162208448274/223241392094628235232802215362489",
+              "jacobian_y": "1778127615700560979452689467056121783714081299477952175737757995500/3335508740689065406571784310573702146315928279763",
+              "pool_index_one_based": 2,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "33221/617",
+              "quartic_z": "-32693546517499/380689"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "262755689975304244694399350158784556348863554/213137865582222700935749087047609",
+              "jacobian_y": "-1716900088520042351683449913432554911978893854604372109010610828440/3111651268834776372833701736553642604125206934227",
+              "pool_index_one_based": 3,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "34649/617",
+              "quartic_z": "31945153514491/380689"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "5869695720292203196872690729545989287680220339/5717428676786088752586687574195969",
+              "jacobian_y": "63660581421037497414118208044142811879724093712298444965645622978660/432315825173561927965416798654406824958064335175297",
+              "pool_index_one_based": 4,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "193024/617",
+              "quartic_z": "19465076972866/380689"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "5991707923339497503343715771685269254875624451/5860605874346899415936348568775921",
+              "jacobian_y": "-61486787969184867086882884989638948000613000468876260217103706454780/448656303757924079097408066077254634499456212767031",
+              "pool_index_one_based": 5,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "194452/617",
+              "quartic_z": "-19707294457102/380689"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "3396036073283305104131193531739066439923131/3418114755257814552195818141401",
+              "jacobian_y": "286337089011647031164179915124940780290532659266665760603547220/6319459844721529622800974872690770754790947101",
+              "pool_index_one_based": 6,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "232512/617",
+              "quartic_z": "-24272764553982/380689"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "2504332323302735146484296873864789598211/2517657932582141235477354481",
+              "jacobian_y": "-6481851850712696388480937024340385938359849315946224029180/126326680717405081697821688080771172893879",
+              "pool_index_one_based": 7,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "233940/617",
+              "quartic_z": "24373955251506/380689"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "3962995583152872944341843782341545504559777874/1714047861207451623240767438474329",
+              "jacobian_y": "202300335505296052512497604006892823508769452897995785222198970233260/70963400250905986947848490121137574646731536463267",
+              "pool_index_one_based": 8,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "620605/617",
+              "quartic_z": "90591227764331/380689"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "2942680841205421601236204305850178631924114/1282864403166754326245903281729",
+              "jacobian_y": "-4079282345032874605565552801030181156654267583569595186611220800/1453018459758935168968757898087950430450193567",
+              "pool_index_one_based": 9,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "622033/617",
+              "quartic_z": "-91699459254347/380689"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "63924959485097314745307250252087160847475611/30227804956604657124798121320121",
+              "jacobian_y": "-397198283634274466979719328294968702381956233094252840099792800300/166191924483820838804370011011565745644938062419",
+              "pool_index_one_based": 10,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "638498/617",
+              "quartic_z": "-104734743394652/380689"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "131495790936806753951306915199818276495214786/62571527640891260595250748467921",
+              "jacobian_y": "1167942341114982875920445911191532345646172066597547679902895445300/494954340516157177891558936162780196409070114969",
+              "pool_index_one_based": 11,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "639926/617",
+              "quartic_z": "105888176726696/380689"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "7886587207141656555273630504329711165663430335799684219/5084093714742110586621065358024214415022649",
+              "jacobian_y": "35345480625350551746113910506911794165932928708692994446057817943662735858060/30112720480097375825097871637226979401470982481341576100637",
+              "pool_index_one_based": 12,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "773218/3085",
+              "quartic_z": "165841981039386764/5872127825"
+            }
+          ],
+          "height_matrix_runs": [
+            {
+              "decimal_precision": 72,
+              "numerical_rank": 12,
+              "subset_height_determinant": "2075999752664301601944.10122639281917975560948348359053701410954290772224",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "177.996506224544863144572815306245081208348366411028484979884087242942619",
+              "subset_smallest_eigenvalue": "4.84348322442842127850976604389472806745001395046015216385356395838136883"
+            },
+            {
+              "decimal_precision": 120,
+              "numerical_rank": 12,
+              "subset_height_determinant": "2075999752664301601944.10122639281917975560948348359053701410954290772224103965043062382680296663786370399718325924482432",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "177.996506224544863144572815306245081208348366411028484979884087242942619301577324913674972587000948774430527026645959448",
+              "subset_smallest_eigenvalue": "4.84348322442842127850976604389472806745001395046015216385356395838136882589958125959733510073881298431806222900225705809"
+            }
+          ],
+          "height_replay_wall_seconds": 0.03752212499966845,
+          "new_x_values_beyond_visible_sections": 0,
+          "numerical_rank_gain_over_seed": 0,
+          "pari_reported_search_milliseconds": 40,
+          "quartic_height_bound": 50000,
+          "search_wall_seconds": 0.05545958299990161,
+          "signed_quartic_points_found": 8,
+          "stable_pool_numerical_rank": 12,
+          "stable_seed_numerical_rank": 12,
+          "status": "bounded enumeration and exact membership with numerical height-rank evidence; no exact independence or rank claim",
+          "total_stage_wall_seconds": 0.10144045800188906,
+          "unique_new_jacobian_images": 0,
+          "visible_section_x_values_found_within_bound": 4
+        }
+      ],
+      "t": "714/617"
+    },
+    {
+      "candidate_id": "staged-1547-492",
+      "known_global_root_number": null,
+      "known_log_conductor": null,
+      "provenance": "leakage-free staged record-class rescore",
+      "seed_height_matrix_runs": [
+        {
+          "decimal_precision": 72,
+          "numerical_rank": 12,
+          "subset_height_determinant": "549112615942121478327.071076210689308746114506671314818963456299048116193",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "172.644155487878349828735792651727785516774690269771528771969580728149330",
+          "subset_smallest_eigenvalue": "4.43420298450788432580597141207902467024791382482561261667580912484801114"
+        },
+        {
+          "decimal_precision": 120,
+          "numerical_rank": 12,
+          "subset_height_determinant": "549112615942121478327.071076210689308746114506671314818963456299048116193356762333217174857632373241439090366295758367047",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "172.644155487878349828735792651727785516774690269771528771969580728149329831448627581267108003716905831207176213942732097",
+          "subset_smallest_eigenvalue": "4.43420298450788432580597141207902467024791382482561261667580912484801114380950711257905936234037516311090403317639450775"
+        }
+      ],
+      "selection_metadata": "top finalist at numerical prime cutoffs 10000 and 100000",
+      "stages": [
+        {
+          "distinct_quartic_x_values": 4,
+          "exact_seed_count": 12,
+          "explicit_numerical_basis": [
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "62774648322637317168020069742151074659803777/57284627048495820555022311037632",
+              "jacobian_y": "31638951204802449440446202325070438460126127721034706827198615/108646072854969538589426312168192616535699746",
+              "pool_index_one_based": 1,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "1547/492",
+              "quartic_z": "-5307323283577/40344"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "1984287825888275616073278438062955997993/1633603320149378238325971648",
+              "jacobian_y": "2227286231814735703667256490162137430612883033398566275/4304489729015300506946466055791114432",
+              "pool_index_one_based": 2,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "25513/492",
+              "quartic_z": "-5299945549283/60516"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "216373575384541664023850671551833812470073/174289365559400608667455743168",
+              "jacobian_y": "-112302905281368148540932657906884479850147654417359341395/197650017242064069418772522651843532952",
+              "pool_index_one_based": 3,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "28607/492",
+              "quartic_z": "4976693141987/60516"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "78527178235525004152218461621014547551231417/76202201054003041360257659796672",
+              "jacobian_y": "69479149166351979263894499499475857563185013174186318611037485/444505259416419872333306360357338914861067536",
+              "pool_index_one_based": 4,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "152941/492",
+              "quartic_z": "6121251950947/121032"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "686306433559763650534583634836848066668313/673560705423060568536286166208",
+              "jacobian_y": "-1978637687674310301518636881213116759044087139352781256155/15391448840082617540079537072367526831818",
+              "pool_index_one_based": 5,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "156035/492",
+              "quartic_z": "-6330493310911/121032"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "45876712173796012203087308277280401503377/46217332392949250095450836672",
+              "jacobian_y": "267079136267293923318665911718050602598527670226107908025/6639462809175204273443190393506717152464",
+              "pool_index_one_based": 6,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "184429/492",
+              "quartic_z": "-2562759525151/40344"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "34386977564653494419844327411117843217/34531973978565111920862912",
+              "jacobian_y": "-2874531545424341115513392746733559304111608827046025/50849771459200481534970346462410606",
+              "pool_index_one_based": 7,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "187523/492",
+              "quartic_z": "2591897635243/40344"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "3326516275123594058114940872675255683229353/1429018465818817260990614432448",
+              "jacobian_y": "13188313610045051507596700570592234344426269428371969710618595/4566068081610584148687208853954605250695488",
+              "pool_index_one_based": 8,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "493897/492",
+              "quartic_z": "14250310893847/60516"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "20996926162388286506981252305570885393/9216078229874742051780288",
+              "jacobian_y": "-8633205711194766418654455380298617404886081003054855/3115972445990496955923342857036552",
+              "pool_index_one_based": 9,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "496991/492",
+              "quartic_z": "-14728987866439/60516"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "3436457712707347485855416408557707034721617/1616275622817578939546737467072",
+              "jacobian_y": "-3317509341043801942193983616022607418218031795472328534418215/1373089241588020914544980043727279771279664",
+              "pool_index_one_based": 10,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "508165/492",
+              "quartic_z": "-804511166221/2952"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "4908511731300680834106534206220705071840026417/2348380739452570692515769848594112",
+              "jacobian_y": "7394760591626105863713446210519010911362143467458355505409601375/3168598068571675503196645169061407251061476834",
+              "pool_index_one_based": 11,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "511259/492",
+              "quartic_z": "828813651337/2952"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "186798667489133219801073725168549714710414656313/118363526928283316383578599144319168",
+              "jacobian_y": "39772377521527337934540267524042836799431309588812857435459086225/32375371361760619657934054540944594345665167136",
+              "pool_index_one_based": 12,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "122839/492",
+              "quartic_z": "34464136862477/1240578"
+            }
+          ],
+          "height_matrix_runs": [
+            {
+              "decimal_precision": 72,
+              "numerical_rank": 12,
+              "subset_height_determinant": "549112615942121478327.071076210689308746114506671314818963456299048116193",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "172.644155487878349828735792651727785516774690269771528771969580728149330",
+              "subset_smallest_eigenvalue": "4.43420298450788432580597141207902467024791382482561261667580912484801114"
+            },
+            {
+              "decimal_precision": 120,
+              "numerical_rank": 12,
+              "subset_height_determinant": "549112615942121478327.071076210689308746114506671314818963456299048116193356762333217174857632373241439090366295758367047",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "172.644155487878349828735792651727785516774690269771528771969580728149329831448627581267108003716905831207176213942732097",
+              "subset_smallest_eigenvalue": "4.43420298450788432580597141207902467024791382482561261667580912484801114380950711257905936234037516311090403317639450775"
+            }
+          ],
+          "height_replay_wall_seconds": 0.038187541998922825,
+          "new_x_values_beyond_visible_sections": 0,
+          "numerical_rank_gain_over_seed": 0,
+          "pari_reported_search_milliseconds": 113,
+          "quartic_height_bound": 50000,
+          "search_wall_seconds": 0.1296002499984752,
+          "signed_quartic_points_found": 8,
+          "stable_pool_numerical_rank": 12,
+          "stable_seed_numerical_rank": 12,
+          "status": "bounded enumeration and exact membership with numerical height-rank evidence; no exact independence or rank claim",
+          "total_stage_wall_seconds": 0.17627874999743653,
+          "unique_new_jacobian_images": 0,
+          "visible_section_x_values_found_within_bound": 4
+        }
+      ],
+      "t": "1547/492"
+    },
+    {
+      "candidate_id": "staged-833-3464",
+      "known_global_root_number": null,
+      "known_log_conductor": null,
+      "provenance": "leakage-free staged record-class rescore",
+      "seed_height_matrix_runs": [
+        {
+          "decimal_precision": 72,
+          "numerical_rank": 12,
+          "subset_height_determinant": "6205991078912786778008.75487181325766932185718298401858829622701838430370",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "206.734278173906382823676411509229915244838272301983628720341640309499712",
+          "subset_smallest_eigenvalue": "5.87426587423578318367334996799490769622905283592570719928386964132112328"
+        },
+        {
+          "decimal_precision": 120,
+          "numerical_rank": 12,
+          "subset_height_determinant": "6205991078912786778008.75487181325766932185718298401858829622701838430369582499279259131689468129612836924055813413903666",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "subset_largest_eigenvalue": "206.734278173906382823676411509229915244838272301983628720341640309499711479945569038224276377751328408841828164453914876",
+          "subset_smallest_eigenvalue": "5.87426587423578318367334996799490769622905283592570719928386964132112328427667184778141882794105894865833509237123555745"
+        }
+      ],
+      "selection_metadata": "second finalist at numerical prime cutoff 100000",
+      "stages": [
+        {
+          "distinct_quartic_x_values": 2,
+          "exact_seed_count": 12,
+          "explicit_numerical_basis": [
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "776547432695550152503259252188460530857396445059/711249713888493251190677736441447424",
+              "jacobian_y": "1327764531312428958908096020335145483049523059786980960981129674496125/4686225548539425126571498825812056467452623598297344",
+              "pool_index_one_based": 1,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "833/3464",
+              "quartic_z": "-805874146202853/5999648"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "460833137780020965433763484611884248176997943419/375634029974270145673351732785439744",
+              "jacobian_y": "7776187773559548143343363507401789204737737752420041824607552033665885/14388893950382516875483587752791908792778473546606592",
+              "pool_index_one_based": 2,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "189687/3464",
+              "quartic_z": "-255283620142719/2999824"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "50797931532673108275001133217081259429675172211/41337358401783324043618384235447296",
+              "jacobian_y": "-142958725353073201940219550289973069710747458177189782124698970284925/262641954790587714150533712422272326558973552417792",
+              "pool_index_one_based": 3,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "191353/3464",
+              "quartic_z": "254058131654271/2999824"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "18029282407372012256534084138007127417842912269451/17591062008799486657570749817359655936",
+              "jacobian_y": "165047159385550262475213431988346273550390516800601847093112150312067475/1152811009174647780738759768477758512427049749065644544",
+              "pool_index_one_based": 4,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "1086863/3464",
+              "quartic_z": "308289581496477/5999648"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "162958727625490080793934483713039999099776353822451/159135349437574275510760659025828135936",
+              "jacobian_y": "-2212113763587659904455224927994128261467307739074185599231984431610846475/15683392935865658955266992245096592756047580217546262272",
+              "pool_index_one_based": 5,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "1088529/3464",
+              "quartic_z": "-309082840485909/5999648"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "93467212520450309289744345351756417729497414571/94032443069623581041434382769120256",
+              "jacobian_y": "21480456916871911009296757923192141358694860119843215330129283736125/450543372500152378038935215045819694214057200920064",
+              "pool_index_one_based": 6,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "1308559/3464",
+              "quartic_z": "-383178029457699/5999648"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "68408901770837458717465905099975599607818931/68805817812676286358432045024256",
+              "jacobian_y": "-218145277803991022906019028139468425512621471305615895184712235/4458900406348488254877194845596529010768307968",
+              "pool_index_one_based": 7,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "1310225/3464",
+              "quartic_z": "383509427625387/5999648"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "759504243818504972655440067157867699630242203691/329527235254013321363668980357538816",
+              "jacobian_y": "33500323787437120667566326258763697323723284569831143285165392903411645/11822708704289595839431555428507577105011043813218304",
+              "pool_index_one_based": 8,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "3487415/3464",
+              "quartic_z": "717310845268731/2999824"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "5010135272303965894840833286355083441918870539/2177333930203652366873682055128064",
+              "jacobian_y": "-8967838958734657334837851708098595062362612362455221845536320882745/3174955058829241194898412769646508939620252201984",
+              "pool_index_one_based": 9,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "3489081/3464",
+              "quartic_z": "-719125566849627/2999824"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "41742478518551937235187264053307333991180401451/19787621036795542918092082870936576",
+              "jacobian_y": "-103423503264849932214976125765445674172829266480301094565373649192795/43492102468368243483588730161441701150101641910784",
+              "pool_index_one_based": 10,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "3587871/3464",
+              "quartic_z": "-1657804950870159/5999648"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "119617090651641128822906073053320380546729138139819/56777417617464628512832512343627654144",
+              "jacobian_y": "7927036339691373386363347959171663596198580597159715224192763957902303905/3342361992224064061496950159409194462683061139449400576",
+              "pool_index_one_based": 11,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "3589537/3464",
+              "quartic_z": "1661582429454087/5999648"
+            },
+            {
+              "jacobian_residual": "0",
+              "jacobian_x": "35024519539114267273220406793807125386800054342544712531771/22755656654314295379583149534739035714577540096",
+              "jacobian_y": "41100906958143032120193765657916558977254055442501702330622708073157789226363535/35759242041191887969445344798790171929910032885281057124662592",
+              "pool_index_one_based": 12,
+              "provenance": "exact generic-section image",
+              "quartic_residual": "0",
+              "quartic_x": "4348761/17320",
+              "quartic_z": "3696036487039257879/129892379200"
+            }
+          ],
+          "height_matrix_runs": [
+            {
+              "decimal_precision": 72,
+              "numerical_rank": 12,
+              "subset_height_determinant": "6205991078912786778008.75487181325766932185718298401858829622701838430370",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "206.734278173906382823676411509229915244838272301983628720341640309499712",
+              "subset_smallest_eigenvalue": "5.87426587423578318367334996799490769622905283592570719928386964132112328"
+            },
+            {
+              "decimal_precision": 120,
+              "numerical_rank": 12,
+              "subset_height_determinant": "6205991078912786778008.75487181325766932185718298401858829622701838430369582499279259131689468129612836924055813413903666",
+              "subset_indices_one_based": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "subset_largest_eigenvalue": "206.734278173906382823676411509229915244838272301983628720341640309499711479945569038224276377751328408841828164453914876",
+              "subset_smallest_eigenvalue": "5.87426587423578318367334996799490769622905283592570719928386964132112328427667184778141882794105894865833509237123555745"
+            }
+          ],
+          "height_replay_wall_seconds": 0.03772899999967194,
+          "new_x_values_beyond_visible_sections": 0,
+          "numerical_rank_gain_over_seed": 0,
+          "pari_reported_search_milliseconds": 94,
+          "quartic_height_bound": 50000,
+          "search_wall_seconds": 0.11061237499961862,
+          "signed_quartic_points_found": 4,
+          "stable_pool_numerical_rank": 12,
+          "stable_seed_numerical_rank": 12,
+          "status": "bounded enumeration and exact membership with numerical height-rank evidence; no exact independence or rank claim",
+          "total_stage_wall_seconds": 0.1571883339966007,
+          "unique_new_jacobian_images": 0,
+          "visible_section_x_values_found_within_bound": 2
+        }
+      ],
+      "t": "833/3464"
+    }
+  ],
+  "schema_version": 1,
+  "script_sha256": "fb9c6fa7341fa1277dddc68010e758947effa10b9f251e0afe9cf84872eb7dfc",
+  "selection_protocol": {
+    "baseline": "exact Jacobian images of generic sections 2--13",
+    "escalated_candidate_ids": [
+      "primary-1666-9"
+    ],
+    "escalation_eligibility": "rank gain >= 3 or new x-values >= 20",
+    "escalation_order": "descending stable numerical rank, rank gain, and new-x yield; then candidate id",
+    "stage_one": "all pinned candidates searched at the same quartic-height bound"
+  },
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6",
+    "python_implementation": "CPython"
+  },
+  "sources": {
+    "candidate_score_artifacts": [
+      "artifacts/generated-results/elliptic_fermigier_score_cutoffs.json",
+      "artifacts/generated-results/elliptic_fermigier_record_rescore_h5000.json",
+      "artifacts/generated-results/elliptic_fermigier_multiple_root_crt.json",
+      "artifacts/generated-results/elliptic_fermigier_discovered_local_conditions.json"
+    ],
+    "family": "https://matwbn.icm.edu.pl/ksiazki/aa/aa82/aa8243.pdf"
+  },
+  "status": "bounded two-stage experiment; rational point membership is exact, while every height rank is numerical evidence and no rank is claimed",
+  "target": {
+    "hit": false,
+    "log_conductor_strict_upper_bound": "182.72",
+    "rank_at_least": 21,
+    "reason": "maximum stable numerical rank was 16; no exact independence certificate was generated"
+  }
+}

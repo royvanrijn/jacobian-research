@@ -23,6 +23,16 @@ The separate dense-plane tail checker verifies that coker(d1) equals the
 actual ramification-support module on seven full-support planes.  Extending
 that annihilator/different equality universally is the remaining step; this
 checker does not silently identify the two modules.
+
+The fixed tail also has an intrinsic interpretation.  On the exceptional
+plane it is the tautological symmetric-multiplication map
+
+    O(-1) tensor V -> Sym^2(V) tensor O,
+
+whose cokernel is Sym^2(Q) for the universal rank-two quotient Q.  The
+transpose has vertex cokernel with Hilbert function (3,3), while
+c_2(Sym^2(Q))=6.  The checker verifies both descriptions, giving the
+localized length-six charge without a cubic-orbit calculation.
 """
 
 from __future__ import annotations
@@ -212,9 +222,38 @@ def audit_stratum(
 
 
 def audit_linear_tail() -> None:
-    """Check length six, square annihilation, and constant Fittings."""
+    """Check the intrinsic charge, length six, and constant Fittings."""
 
     linear_tail = fixed_linear_tail()
+
+    # The rows are indexed by Sym^2(V), the columns by V, and the entry in
+    # row (i,j), column j is r_i (with the symmetric companion when i != j).
+    # Thus the 6-by-3 matrix is tautological multiplication
+    # O(-1) tensor V -> Sym^2(V) tensor O on P(V).  Its cokernel is Sym^2(Q).
+    r0, r1, r2 = RELATION_COEFFICIENTS
+    expected_tail = sp.Matrix(
+        (
+            (r0, 0, 0),
+            (r1, r0, 0),
+            (r2, 0, r0),
+            (0, r1, 0),
+            (0, r2, r1),
+            (0, 0, r2),
+        )
+    )
+    assert linear_tail == expected_tail
+
+    # If a,b are the Chern roots of the universal rank-two quotient Q, the
+    # roots of Sym^2(Q) are 2a,a+b,2b.  Hence
+    # c_2(Sym^2(Q))=2*c_1(Q)^2+4*c_2(Q).  On P^2, c_1(Q)=H and c_2(Q)=H^2.
+    hyperplane = sp.Symbol("H")
+    c1_quotient = hyperplane
+    c2_quotient = hyperplane**2
+    c2_symmetric_square = sp.expand(
+        2 * c1_quotient**2 + 4 * c2_quotient
+    )
+    assert c2_symmetric_square == 6 * hyperplane**2
+
     coefficient_matrix = sp.zeros(9, 6)
     for relation in range(6):
         for generator in range(3):
@@ -229,6 +268,14 @@ def audit_linear_tail() -> None:
                     3 * generator + variable_index, relation
                 ] = polynomial.coeff_monomial(variable)
     assert coefficient_matrix.rank() == 6
+
+    # The transpose cokernel has three degree-zero generators.  In degree
+    # one the six symmetric relations cut V tensor V down to wedge^2(V),
+    # again of dimension three.  The Singular check below proves that its
+    # maximal-ideal square is zero, so no higher layer remains.
+    degree_zero_dimension = 3
+    degree_one_dimension = coefficient_matrix.rows - coefficient_matrix.rank()
+    assert degree_one_dimension == 3
 
     singular = shutil.which("Singular")
     assert singular is not None, "Singular is required"
@@ -259,6 +306,7 @@ quit;
     )
     assert "LENGTH=6" in result.stdout
     assert "SQUARE_ACTION=0" in result.stdout
+    assert degree_zero_dimension + degree_one_dimension == 6
 
 
 def main() -> None:
@@ -289,6 +337,10 @@ def main() -> None:
     print(
         "PASS: its Ext^2 is the constant six-dimensional two-layer "
         "module, so the parameter Fittings are Fitt_6=(1), Fitt_5=(0)"
+    )
+    print(
+        "PASS: the fixed tail is tautological symmetric multiplication; "
+        "its vertex charge is 3+3=6 and c2(Sym^2(Q))=6 on P^2"
     )
     print(
         "OPEN: identify the universal annihilator Ann(Omega) with the "

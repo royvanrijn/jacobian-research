@@ -1,0 +1,2764 @@
+{
+  "benchmarks": [
+    {
+      "candidate_id": "published-e22",
+      "parameter": "39508/39",
+      "provenance": "published Fermigier rank-at-least-22 benchmark",
+      "scores": {
+        "1000": {
+          "bad_primes_skipped": 5,
+          "good_primes_used": 161,
+          "last_numerical_prime": 997,
+          "score": "50.584896906638965797487744998216749303751735106360524367438179464358688462885870"
+        },
+        "10000": {
+          "bad_primes_skipped": 5,
+          "good_primes_used": 1222,
+          "last_numerical_prime": 9973,
+          "score": "106.74618120367013425111836395978645329645795900513534359696370450216815268315944"
+        },
+        "200": {
+          "bad_primes_skipped": 5,
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "score": "26.753348316948761949662441465208343127504805033654310744402009764664521693377897"
+        }
+      }
+    },
+    {
+      "candidate_id": "fermigier-1666-9",
+      "parameter": "1666/9",
+      "provenance": "best Fermigier conductor-only candidate",
+      "scores": {
+        "1000": {
+          "bad_primes_skipped": 6,
+          "good_primes_used": 160,
+          "last_numerical_prime": 997,
+          "score": "49.815886439841732895711027076324616396180796900182341386803603296577846611636226"
+        },
+        "10000": {
+          "bad_primes_skipped": 6,
+          "good_primes_used": 1221,
+          "last_numerical_prime": 9973,
+          "score": "81.634377820972578918307742677915901184236704730689785177505167105938933777791699"
+        },
+        "200": {
+          "bad_primes_skipped": 6,
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "score": "24.373350996930399302192535279033603117743370158296783880284022589602146637433090"
+        }
+      }
+    }
+  ],
+  "conductor_errors": [],
+  "family": {
+    "base_change": "T=(-u^2+23550)/(2u)",
+    "published_generic_rank_lower_bound": 13,
+    "root_tuple": [
+      148,
+      116,
+      104,
+      57,
+      25,
+      0
+    ],
+    "source": "https://doi.org/10.24546/E0003610",
+    "status": "cited theorem; not reproved by this search"
+  },
+  "final_conductor_candidates": [
+    {
+      "bad_primes_skipped": 6,
+      "below_strict_log_conductor_target": true,
+      "candidate_id": "nagao-u-84",
+      "good_primes_used": 1221,
+      "last_numerical_prime": 9973,
+      "parameter_t": "2749/28",
+      "parameter_u": 84,
+      "pari": {
+        "conductor": 5044764109933659898084489033651596146069024770647700164165510,
+        "log_conductor": "139.773456475156679754700319334488269268530931873742074386684",
+        "minimal_discriminant": 9057852576287469984895089912083682270561368834104941372849377394337277363251200,
+        "minimal_model": [
+          1,
+          -1,
+          1,
+          -84904193852190227038478873,
+          264020704844932006498157824380466341497
+        ],
+        "root_number": 1
+      },
+      "rank_status": "generic rank-at-least-13 is cited; specialization independence was not checked in this artifact",
+      "score": "85.584581873949915655277634366764124842615669304627574336623969804073622351499308"
+    },
+    {
+      "bad_primes_skipped": 6,
+      "below_strict_log_conductor_target": true,
+      "candidate_id": "nagao-u-50",
+      "good_primes_used": 1221,
+      "last_numerical_prime": 9973,
+      "parameter_t": "421/2",
+      "parameter_u": 50,
+      "pari": {
+        "conductor": 503810398287421173153633821720284401990,
+        "log_conductor": "89.1152633512041818651901402943129494079456665427787675614990",
+        "minimal_discriminant": 78816716348662736327780817998589412668605555304961528627200,
+        "minimal_model": [
+          1,
+          1,
+          1,
+          -24408169227164721151,
+          44405319300732709173009051749
+        ],
+        "root_number": -1
+      },
+      "rank_status": "generic rank-at-least-13 is cited; specialization independence was not checked in this artifact",
+      "score": "83.263031952971749629939389462887306938500982294897826014152668222551106199541014"
+    },
+    {
+      "bad_primes_skipped": 5,
+      "below_strict_log_conductor_target": true,
+      "candidate_id": "nagao-u-128",
+      "good_primes_used": 1222,
+      "last_numerical_prime": 9973,
+      "parameter_t": "3583/128",
+      "parameter_u": 128,
+      "pari": {
+        "conductor": 51486894594461387368418910937196156956430588347130822849014264745670,
+        "log_conductor": "155.911943438998776577175926460018177957960134106053558167597",
+        "minimal_discriminant": 2158473554619973156344303975493946183176850246771010033924866942719982568684039278533017600,
+        "minimal_model": [
+          1,
+          -1,
+          1,
+          -1159388891002606039163210055083,
+          475270562366291314615075595817412031081429627
+        ],
+        "root_number": -1
+      },
+      "rank_status": "generic rank-at-least-13 is cited; specialization independence was not checked in this artifact",
+      "score": "82.087800232309807708179906126745580413853560922749701749162799314485331037871234"
+    },
+    {
+      "bad_primes_skipped": 5,
+      "below_strict_log_conductor_target": true,
+      "candidate_id": "nagao-u-42",
+      "good_primes_used": 1222,
+      "last_numerical_prime": 9973,
+      "parameter_t": "3631/14",
+      "parameter_u": 42,
+      "pari": {
+        "conductor": 35099706739705220620788795400601975081892764398635177048274264110,
+        "log_conductor": "148.621053634067641802626624489353405764687593285311697405542",
+        "minimal_discriminant": 1052557316038565446781083830536617682853155088592786025369364459750626886615859200,
+        "minimal_model": [
+          1,
+          1,
+          1,
+          -713297808023681194679243421,
+          7164472716086503658294244200686835329779
+        ],
+        "root_number": -1
+      },
+      "rank_status": "generic rank-at-least-13 is cited; specialization independence was not checked in this artifact",
+      "score": "80.352353412249335968322444083403237619759530049993149887483780924813237400380205"
+    },
+    {
+      "bad_primes_skipped": 7,
+      "below_strict_log_conductor_target": true,
+      "candidate_id": "nagao-u-2",
+      "good_primes_used": 1220,
+      "last_numerical_prime": 9973,
+      "parameter_t": "11773/2",
+      "parameter_u": 2,
+      "pari": {
+        "conductor": 10272314055877906670710470757287384093596661028403074840993178307767670,
+        "log_conductor": "161.207823737045035997641204455272512131877042418404076038073",
+        "minimal_discriminant": 7661303529780170650585096991453113509133374069755424274283438328388821764529674921164800,
+        "minimal_model": [
+          1,
+          -1,
+          1,
+          -7691030616159090431618861985998,
+          8209654241451370639064047771689324902787583197
+        ],
+        "root_number": 1
+      },
+      "rank_status": "generic rank-at-least-13 is cited; specialization independence was not checked in this artifact",
+      "score": "79.858700397645197650617831288948406471883777542931185941784186150632091770674883"
+    },
+    {
+      "bad_primes_skipped": 5,
+      "below_strict_log_conductor_target": true,
+      "candidate_id": "nagao-u-11",
+      "good_primes_used": 1222,
+      "last_numerical_prime": 9973,
+      "parameter_t": "23429/22",
+      "parameter_u": 11,
+      "pari": {
+        "conductor": 1174721023696275041611502626988500712050367878506188993272794908017186434149070,
+        "log_conductor": "179.762667946300050395505746727282013746869624971147888051464",
+        "minimal_discriminant": 106462897153904786070969313693372175946170512275893288359420760774974059565787069878985261921894400,
+        "minimal_model": [
+          1,
+          -1,
+          1,
+          -1908415072527392367480657749807738,
+          32085247527875592490946156228114684031098874693817
+        ],
+        "root_number": 1
+      },
+      "rank_status": "generic rank-at-least-13 is cited; specialization independence was not checked in this artifact",
+      "score": "77.764804225679624270824544816072196636613330048875288767962015664893452172666102"
+    },
+    {
+      "bad_primes_skipped": 5,
+      "below_strict_log_conductor_target": true,
+      "candidate_id": "nagao-u-189",
+      "good_primes_used": 1222,
+      "last_numerical_prime": 9973,
+      "parameter_t": "-4057/126",
+      "parameter_u": 189,
+      "pari": {
+        "conductor": 4361692975927127778594947055515497266007400286928271603156973457382417610,
+        "log_conductor": "167.258986974795364468448916966835439922745165216647905615544",
+        "minimal_discriminant": 1927937795433592275360696165920076630391210444095684203408474831491923535540970667095654400,
+        "minimal_model": [
+          1,
+          0,
+          0,
+          -992289900129025236153811852441,
+          374546352948354523484232445880489149404030521
+        ],
+        "root_number": 1
+      },
+      "rank_status": "generic rank-at-least-13 is cited; specialization independence was not checked in this artifact",
+      "score": "75.009923193460550851032526181112916042626228875704855798240716890014910443079127"
+    },
+    {
+      "bad_primes_skipped": 7,
+      "below_strict_log_conductor_target": true,
+      "candidate_id": "nagao-u-182",
+      "good_primes_used": 1220,
+      "last_numerical_prime": 9973,
+      "parameter_t": "-4787/182",
+      "parameter_u": 182,
+      "pari": {
+        "conductor": 771104973055232330973610288279963439207359744977025320708534696658576761090,
+        "log_conductor": "172.433951211689410576911011380948110531101840754569322853836",
+        "minimal_discriminant": 8421517049964419467434696948586473819194440986303648927645671294443119407649263909523647692800,
+        "minimal_model": [
+          1,
+          -1,
+          1,
+          -19528018512125405171140804958438,
+          32920323252232984657494537200885376820985273717
+        ],
+        "root_number": -1
+      },
+      "rank_status": "generic rank-at-least-13 is cited; specialization independence was not checked in this artifact",
+      "score": "74.887883463453965363789382129956593815276128820387189761758468746397499188341412"
+    },
+    {
+      "bad_primes_skipped": 5,
+      "below_strict_log_conductor_target": true,
+      "candidate_id": "nagao-u-171",
+      "good_primes_used": 1222,
+      "last_numerical_prime": 9973,
+      "parameter_t": "-1897/114",
+      "parameter_u": 171,
+      "pari": {
+        "conductor": 2072948024334739675404729216501085046648454024347896279593238471402330730,
+        "log_conductor": "166.515098456030790047287457810840881689365593928986074165073",
+        "minimal_discriminant": 8034649676274176385636647805143314172752410801838365633321055248892710909185366926131200,
+        "minimal_model": [
+          1,
+          0,
+          0,
+          -471123808826345323362214122801,
+          124391251854836130041833795065651864848584681
+        ],
+        "root_number": 1
+      },
+      "rank_status": "generic rank-at-least-13 is cited; specialization independence was not checked in this artifact",
+      "score": "74.505364429535670110300003960721909367382009692924665480656868165624955009295844"
+    },
+    {
+      "bad_primes_skipped": 9,
+      "below_strict_log_conductor_target": true,
+      "candidate_id": "nagao-u-131",
+      "good_primes_used": 1218,
+      "last_numerical_prime": 9973,
+      "parameter_t": "6389/262",
+      "parameter_u": 131,
+      "pari": {
+        "conductor": 464570589238406590089656541140232322196877863847119192425420695741105710265870,
+        "log_conductor": "178.834995489481785515165287269340486213088881860204598277801",
+        "minimal_discriminant": 40722311311852498449397446841366703769245148851986991572899024191036815584603143123509304876236800,
+        "minimal_model": [
+          1,
+          1,
+          1,
+          -362706380471123283096117457778391,
+          2640984241070146378431511541834480582570706060909
+        ],
+        "root_number": -1
+      },
+      "rank_status": "generic rank-at-least-13 is cited; specialization independence was not checked in this artifact",
+      "score": "74.378423749129219941110090379988760959114995318220847922640181729643284002678165"
+    },
+    {
+      "bad_primes_skipped": 7,
+      "below_strict_log_conductor_target": true,
+      "candidate_id": "nagao-u-62",
+      "good_primes_used": 1220,
+      "last_numerical_prime": 9973,
+      "parameter_t": "9853/62",
+      "parameter_u": 62,
+      "pari": {
+        "conductor": 339200803623960752469874566806236782471772724929955700777432974594190,
+        "log_conductor": "157.797208410696369258276230827990277655659911833968978780635",
+        "minimal_discriminant": 140725095790260056916781088995142222796186696617479578533076574409808137597095877108609433600,
+        "minimal_model": [
+          1,
+          0,
+          0,
+          -2353881398492507882008395107811,
+          1267453364841167206837806150956288398407155841
+        ],
+        "root_number": -1
+      },
+      "rank_status": "generic rank-at-least-13 is cited; specialization independence was not checked in this artifact",
+      "score": "71.178948812548715247333180264917791659200144588683505115162927592681952394124033"
+    },
+    {
+      "bad_primes_skipped": 5,
+      "below_strict_log_conductor_target": false,
+      "candidate_id": "nagao-u-17",
+      "good_primes_used": 1222,
+      "last_numerical_prime": 9973,
+      "parameter_t": "23261/34",
+      "parameter_u": 17,
+      "pari": {
+        "conductor": 8827267611442547076372333276839534851682735882190624732299031766008047673581815590,
+        "log_conductor": "188.687238055468223002615732220633188260258914861644944075814",
+        "minimal_discriminant": 525459681381040276500050168686500649857505441301265287219491611673669906357392122192322991950643200,
+        "minimal_model": [
+          1,
+          0,
+          0,
+          -1824050541045363797569925831843891,
+          29964666543042133135542605654783136836312804580321
+        ],
+        "root_number": 1
+      },
+      "rank_status": "generic rank-at-least-13 is cited; specialization independence was not checked in this artifact",
+      "score": "83.303710996788426775379897177444509465279652645869940228323446920809990886473378"
+    }
+  ],
+  "parameters": {
+    "conductor_timeout_seconds_per_candidate": 45.0,
+    "output": "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic_nagao_rank13_integer_u.json",
+    "pari_stack_bytes": 256000000,
+    "score_timeout_seconds_per_stage": 120.0,
+    "u_bound": 200
+  },
+  "reproducing_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/search_nagao_rank13_integer_u.py",
+  "schema_version": 1,
+  "script_sha256": "156bbc770b53432395c51b66588ed0560e6fb527298269d2f8b091364a3cb9af",
+  "selection_protocol": {
+    "keep_counts": [
+      40,
+      12,
+      12
+    ],
+    "leakage_control": "each cutoff scores only survivors selected at the preceding cutoff; conductor work occurs only after the final cutoff",
+    "population": "every positive integer 1<=u<=200",
+    "score": "sum ((2-a_p)/(p+1-a_p))*log(p) over good numerical primes",
+    "stages": [
+      200,
+      1000,
+      10000
+    ]
+  },
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6",
+    "python_implementation": "CPython"
+  },
+  "stages": [
+    {
+      "cutoff": 200,
+      "keep_count": 40,
+      "population_scored": 200,
+      "ranked_population": [
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-171",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "-1897/114",
+          "parameter_u": 171,
+          "score": "24.709419008201166226706413148987390503060474190907119484991031209906046848560242"
+        },
+        {
+          "bad_primes_skipped": 4,
+          "candidate_id": "nagao-u-17",
+          "good_primes_used": 40,
+          "last_numerical_prime": 199,
+          "parameter_t": "23261/34",
+          "parameter_u": 17,
+          "score": "24.594027072809930068426987716709931431785407320665905765939115871044127786486915"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-42",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "3631/14",
+          "parameter_u": 42,
+          "score": "24.472908516785097598627373988527332033654656806706860694155439634967647256683201"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-128",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "3583/128",
+          "parameter_u": 128,
+          "score": "24.328306464606860917032353151254405368930098340030645751758050406738006694135754"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-11",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "23429/22",
+          "parameter_u": 11,
+          "score": "24.155027254356641511862253265677743081851729466459186644355187519298651381548200"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-131",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "6389/262",
+          "parameter_u": 131,
+          "score": "23.802194821180084517406490311977993059981746935619854885410512061355244802538728"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-198",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "-2609/66",
+          "parameter_u": 198,
+          "score": "23.676994558084889632765947623330199954069474552519356945371246839489966415656256"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-62",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "9853/62",
+          "parameter_u": 62,
+          "score": "23.573133681379303610614384467072683243134855616697255713416908373453231119049510"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-36",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "3709/12",
+          "parameter_u": 36,
+          "score": "23.499000646432697349307736728518540298171302320108236513950123221521564818614206"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-14",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "11677/14",
+          "parameter_u": 14,
+          "score": "23.465417017035480322833269971571973783866229588811831444249490194670132765543821"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-121",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "8909/242",
+          "parameter_u": 121,
+          "score": "23.459821059148649299978640573294753509800703698842395650715574583228266937086582"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-151",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "749/302",
+          "parameter_u": 151,
+          "score": "23.358751491206931675058047605443164060501886177136343166968915359826220207575453"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-31",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "22589/62",
+          "parameter_u": 31,
+          "score": "23.346181861821962172325613647970181006038636361923809998111770685668373628514915"
+        },
+        {
+          "bad_primes_skipped": 4,
+          "candidate_id": "nagao-u-40",
+          "good_primes_used": 40,
+          "last_numerical_prime": 199,
+          "parameter_t": "2195/8",
+          "parameter_u": 40,
+          "score": "23.336761487593557551936248885019520437587263271839928654398623082667534977711975"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-175",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "-283/14",
+          "parameter_u": 175,
+          "score": "23.328574329898203714479003064661838973354741728252406436218209632649602126591953"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-132",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "1021/44",
+          "parameter_u": 132,
+          "score": "23.307387440685949641725991460062917351855131900161749139526678399948921108321661"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-189",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "-4057/126",
+          "parameter_u": 189,
+          "score": "23.242325933583046077170618539802005848018881042228576909732796442321443943894382"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-182",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "-4787/182",
+          "parameter_u": 182,
+          "score": "23.139248780049433749487872246828698892814399019058908813130513230898076823223062"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-97",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "14141/194",
+          "parameter_u": 97,
+          "score": "23.034578607246856058327196807720195659910716686343584982171233861518292880596962"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-116",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "5047/116",
+          "parameter_u": 116,
+          "score": "22.997657308126123709693273389928590853186739235407610014005865435287800609097123"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-28",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "11383/28",
+          "parameter_u": 28,
+          "score": "22.942445075741030484346325123395646686818941339728221618776267337431577981902333"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-144",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "469/48",
+          "parameter_u": 144,
+          "score": "22.881176950845583209424464769272129858614502660103779389820178081216557715704792"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-100",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "271/4",
+          "parameter_u": 100,
+          "score": "22.856643451943846630573996323208837615512716075658215351097201706485592948464926"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-34",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "11197/34",
+          "parameter_u": 34,
+          "score": "22.827137018846311409110921853154567719440094364651024046406645530859087316419922"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-21",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "7703/14",
+          "parameter_u": 21,
+          "score": "22.812799686755303718689225331445563766121816905898047511401309862483814007174576"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-54",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "3439/18",
+          "parameter_u": 54,
+          "score": "22.807634967236457611119799270189702194055878004373951951555947656035296953015467"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-78",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "2911/26",
+          "parameter_u": 78,
+          "score": "22.799879075457785908427723627204416553252396672613922020239045512593986264011063"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-53",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "20741/106",
+          "parameter_u": 53,
+          "score": "22.715514018767085372118606337089538600239246972809828053751622206088446799229988"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-166",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "-2003/166",
+          "parameter_u": 166,
+          "score": "22.672469299640136932739326735011179204090793285497646509406750486606754222972285"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-173",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "-6379/346",
+          "parameter_u": 173,
+          "score": "22.631238165107641240760942570752096397510142298023675048652671836462074516076733"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-141",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "1223/94",
+          "parameter_u": 141,
+          "score": "22.583539836929997843764182319043093967333131581943846651061926823621209946970886"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-50",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "421/2",
+          "parameter_u": 50,
+          "score": "22.577172558175398553433265896217833373866613468036118892111675384889383806993477"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-2",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "11773/2",
+          "parameter_u": 2,
+          "score": "22.445892178675386063939681090996949908765617650831331251462559734868034372655943"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-74",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "9037/74",
+          "parameter_u": 74,
+          "score": "22.385104768941102228464777028568883505479803199851821987819706872928191406056452"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-84",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "2749/28",
+          "parameter_u": 84,
+          "score": "22.355346466870988809891080381413288503611460958987753331451572450229124866922613"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-148",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "823/148",
+          "parameter_u": 148,
+          "score": "22.298927447599311547596468850130953164947592873059675918112385701352384692411147"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-105",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "835/14",
+          "parameter_u": 105,
+          "score": "22.280255335314525292708105001902136989526543798896288769184837497250959386931827"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-107",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "12101/214",
+          "parameter_u": 107,
+          "score": "22.263946742126093837776905757554265199313625109034537802149307883556930711426141"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-155",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "-95/62",
+          "parameter_u": 155,
+          "score": "22.216442374693659417002193287088091631688871945644364382805608148407184051209397"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-147",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "647/98",
+          "parameter_u": 147,
+          "score": "22.200326400826046576348483924250183179265273095178249820386664943336649966898918"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-13",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "23381/26",
+          "parameter_u": 13,
+          "score": "22.097262435333998414599114290038529332377332809293979352506287615665152855274955"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-169",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "-5011/338",
+          "parameter_u": 169,
+          "score": "22.052040376622027432950138892746423602677678347991971058507871917965463901552662"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-108",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "1981/36",
+          "parameter_u": 108,
+          "score": "21.965980508389632090857783790698022341957270144282128836410623405398403826448102"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-119",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "9389/238",
+          "parameter_u": 119,
+          "score": "21.950815668243039322710385128494180855707494682584619033054556251355023490669361"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-65",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "3865/26",
+          "parameter_u": 65,
+          "score": "21.932182847426508895704521062181264941237067292275019257433784796582836796079616"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-25",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "917/2",
+          "parameter_u": 25,
+          "score": "21.917649716371239314530920596862963073703145013341729825641793562031228441067038"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-27",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "7607/18",
+          "parameter_u": 27,
+          "score": "21.913388029434559050396706664905215062630205476905132822292479611250760850822333"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-193",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "-13699/386",
+          "parameter_u": 193,
+          "score": "21.907199235301288174066966892229022254550071953837617135004814233282663854038534"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-142",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "1693/142",
+          "parameter_u": 142,
+          "score": "21.830364817702830813959352991450062824568536863134461941251651006092837240208933"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-8",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "11743/8",
+          "parameter_u": 8,
+          "score": "21.809831036583572751638612157839884935422464383113360165282493126479258440257861"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-117",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "3287/78",
+          "parameter_u": 117,
+          "score": "21.805365696515116371377085374644109427869108247068479037145128793578025524603512"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-33",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "7487/22",
+          "parameter_u": 33,
+          "score": "21.733474194228345571792110672203861893236140435919556501749814663298440787898823"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-60",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "665/4",
+          "parameter_u": 60,
+          "score": "21.669635337245603278149430113115061455496644723912852137447029260513563936801961"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-45",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "1435/6",
+          "parameter_u": 45,
+          "score": "21.622775888155462773479290896039385795815978225769208198479300418840474805712977"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-75",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "239/2",
+          "parameter_u": 75,
+          "score": "21.614727923324501379464465998913724346773142410664463320646646647179191584343563"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-16",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "11647/16",
+          "parameter_u": 16,
+          "score": "21.536728182673227551028717559130055953317938593292384902722889611948671871486021"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-9",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "7823/6",
+          "parameter_u": 9,
+          "score": "21.499438146715742689527196814795805679455881068333047518561761847787389483470360"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-4",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "11767/4",
+          "parameter_u": 4,
+          "score": "21.493312105897680990308530575650356101024743629260754000345984429262038208087057"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-130",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "665/26",
+          "parameter_u": 130,
+          "score": "21.470892085065117885134686344349631510219644565742411146736776940382957460656922"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-112",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "5503/112",
+          "parameter_u": 112,
+          "score": "21.459034273010697675992095174704074190431599115429915815712560445578428477750981"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-15",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "1555/2",
+          "parameter_u": 15,
+          "score": "21.456654252484357705765388465907434693164126399042444968490600327735373791123305"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-111",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "3743/74",
+          "parameter_u": 111,
+          "score": "21.327982184462316224984038668046158952806541320491058268316418320978918735625060"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-135",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "355/18",
+          "parameter_u": 135,
+          "score": "21.324091118646636973764892364753573566976859149009499664239810515840300759175714"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-126",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "1279/42",
+          "parameter_u": 126,
+          "score": "21.319082395075046988776597648083017953846424292927422236164000525424753184530347"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-80",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "1715/16",
+          "parameter_u": 80,
+          "score": "21.297924604911778319671368497264679739920903427923686792203629612450869847153087"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-127",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "7421/254",
+          "parameter_u": 127,
+          "score": "21.286561282728404056724911656325858161466940371387741943447488932882536463468948"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-67",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "19061/134",
+          "parameter_u": 67,
+          "score": "21.230475011044858828849710852083732724202677192189414161308774146654820604156252"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-92",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "7543/92",
+          "parameter_u": 92,
+          "score": "21.173074033596420563125183311271928800583497500762759727902919496849115468651993"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-120",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "305/8",
+          "parameter_u": 120,
+          "score": "21.165495555998634720994372534692259255175295903142174190295599330116208951470430"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-38",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "11053/38",
+          "parameter_u": 38,
+          "score": "21.143900832134014117171662122691656201705292731125601243124507153694454246504367"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-55",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "4105/22",
+          "parameter_u": 55,
+          "score": "21.073150333219756581596770631217527523984349920940336332835346910057717638008294"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-199",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "-16051/398",
+          "parameter_u": 199,
+          "score": "21.039453540356137560051375134607810464594526752835808569715584328796470429027197"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-12",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "3901/4",
+          "parameter_u": 12,
+          "score": "21.030207759225116782629572785546493715061090900922062519810960105340672707391192"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-35",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "4465/14",
+          "parameter_u": 35,
+          "score": "21.017139910377052527428981483212882058073626535920278761341273165641444741756202"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-77",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "17621/154",
+          "parameter_u": 77,
+          "score": "20.975539497092737401620161043872305355543897793549385738050276470301344302502958"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-158",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "-707/158",
+          "parameter_u": 158,
+          "score": "20.962872875219142002900247811331595705436697767568484860943851212692350669592906"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-149",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "1349/298",
+          "parameter_u": 149,
+          "score": "20.953221730920962565736962255783753301251526288383851452548636111154337421711096"
+        },
+        {
+          "bad_primes_skipped": 4,
+          "candidate_id": "nagao-u-138",
+          "good_primes_used": 40,
+          "last_numerical_prime": 199,
+          "parameter_t": "751/46",
+          "parameter_u": 138,
+          "score": "20.942056931965787739639475172206274153926369385018267240348139605677714117965991"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-49",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "21149/98",
+          "parameter_u": 49,
+          "score": "20.938227698120497756301244016218843576695767538867172857957950878745321969721786"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-u-68",
+          "good_primes_used": 34,
+          "last_numerical_prime": 199,
+          "parameter_t": "9463/68",
+          "parameter_u": 68,
+          "score": "20.933607849536775673726981659117568575797430822116326141667480108593313781174677"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-71",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "18509/142",
+          "parameter_u": 71,
+          "score": "20.923243666394728351342928319703119737941924886857964983008076049087546795259188"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-72",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "3061/24",
+          "parameter_u": 72,
+          "score": "20.892756443326802130362698649348238830383528041773868944149350950675757492221194"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-181",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "-9211/362",
+          "parameter_u": 181,
+          "score": "20.876752560585928497587181252121684077749094124208535449738381565607479524905821"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-70",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "1865/14",
+          "parameter_u": 70,
+          "score": "20.863280867965319584034865816528280491228415244060506382770594181194410221341784"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-152",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "223/152",
+          "parameter_u": 152,
+          "score": "20.859399577521608578270489352595875839841043138339910876238669146949739673541866"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-101",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "13349/202",
+          "parameter_u": 101,
+          "score": "20.818517155703271786709847635507300660046163178614031382625430650825033812443955"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-123",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "2807/82",
+          "parameter_u": 123,
+          "score": "20.796511385913700886046660084180219598459477678928043823004900144341587427260181"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-188",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "-5897/188",
+          "parameter_u": 188,
+          "score": "20.789837071958637162864626531966310599166462373691484043660215801181791308465448"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-93",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "4967/62",
+          "parameter_u": 93,
+          "score": "20.744782515878388143428346517717902461220972295237887226430548892117536813863233"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-89",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "15629/178",
+          "parameter_u": 89,
+          "score": "20.723432045213976721137076615650107098635596041181850891752738873590195780903135"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-156",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "-131/52",
+          "parameter_u": 156,
+          "score": "20.721642639666936964888402073161728379149356701999116663743137435356190068402414"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-185",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "-2135/74",
+          "parameter_u": 185,
+          "score": "20.714806586401795823940078325409900178842941544567983799037890663634972631623467"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-96",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "2389/32",
+          "parameter_u": 96,
+          "score": "20.672107049752620093561750451185333966054667038416402311335207540375221561340490"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-172",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "-3017/172",
+          "parameter_u": 172,
+          "score": "20.646347611962830988144626104856832941541813269807888987930251124714888746265057"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-1",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "23549/2",
+          "parameter_u": 1,
+          "score": "20.633780574276667438061712644429794166388442982452616037892811569697413623237031"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-159",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "-577/106",
+          "parameter_u": 159,
+          "score": "20.619974892863518209178157776194368254165344985907386102473081700009880888076147"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-164",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "-1673/164",
+          "parameter_u": 164,
+          "score": "20.616435754758585537727878752586484617236749909345217038919047589085004071368995"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-90",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "515/6",
+          "parameter_u": 90,
+          "score": "20.606709956916189355374929673693876416248244930419447203109976196464160961894241"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-179",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "-8491/358",
+          "parameter_u": 179,
+          "score": "20.584175691317410091537746205150405650694921293753203067210327340796130996919971"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-140",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "395/28",
+          "parameter_u": 140,
+          "score": "20.471628092074391219463083957717674601931590161700838362097034690905337654864058"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-10",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "2345/2",
+          "parameter_u": 10,
+          "score": "20.461463340461481725336015135559914343684487237684858447764745772021598412064586"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-109",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "11669/218",
+          "parameter_u": 109,
+          "score": "20.437593288317196313076858551915683123340194406347844156921101466771940600964247"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-73",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "18221/146",
+          "parameter_u": 73,
+          "score": "20.413242169262905142053984074437508051641082331728200540702433671173309228086931"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-85",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "3265/34",
+          "parameter_u": 85,
+          "score": "20.408785433557811440369048678933764267384846916435725313461623310333989577803545"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-154",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "-83/154",
+          "parameter_u": 154,
+          "score": "20.401578987640497553121085355762792822008510998653304572370626061193518324625436"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-170",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "-535/34",
+          "parameter_u": 170,
+          "score": "20.388717849848287879349804048013336033745743591965391435184883205000357341433225"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-174",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "-1121/58",
+          "parameter_u": 174,
+          "score": "20.366636648924815482364596954918076066204136948252040550426708383697951169676550"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-58",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "10093/58",
+          "parameter_u": 58,
+          "score": "20.353749673423870162291093747152375548312056862709263176338077564111511944322966"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-86",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "8077/86",
+          "parameter_u": 86,
+          "score": "20.297896200899727914957181685234649479243871017520825122997036829646442945308888"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-23",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "23021/46",
+          "parameter_u": 23,
+          "score": "20.271753198625376700864271163216771710193205156392937065475474352353571044554484"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-59",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "20069/118",
+          "parameter_u": 59,
+          "score": "20.264357234850893476604603710147729225401189250386738473112391311591942592234542"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-52",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "10423/52",
+          "parameter_u": 52,
+          "score": "20.093595436572001791213755878183446132956291194574972088973814484062267600780401"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-162",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "-449/54",
+          "parameter_u": 162,
+          "score": "20.079787995855263035106036821748142591205948670823759129764191305833930551141703"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-184",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "-5153/184",
+          "parameter_u": 184,
+          "score": "20.075136431681601552091817249251809259779605768957140822852481547723123055650502"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-163",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "-3019/326",
+          "parameter_u": 163,
+          "score": "20.042676358349720373830329395662384387689417380849615051873721146108908201896278"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-81",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "5663/54",
+          "parameter_u": 81,
+          "score": "20.036784498903776116035373466240909174434221100455199630812456379730406489787538"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-22",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "11533/22",
+          "parameter_u": 22,
+          "score": "20.035130809156098907732393463537624808588410680707862518651824733740327355168278"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-110",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "1145/22",
+          "parameter_u": 110,
+          "score": "20.025055035974444799606043595637126941209077201604860403626760502625320450306507"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-91",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "15269/182",
+          "parameter_u": 91,
+          "score": "20.009499783971974487619362628091195450438140410880077871655321494883326821670026"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-57",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "6767/38",
+          "parameter_u": 57,
+          "score": "20.004888088383956347357418397095112134149064077493615253838717392406645419525149"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-137",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "4781/274",
+          "parameter_u": 137,
+          "score": "19.972543034139977554722855098685839624179622006649000166091555495068182200926009"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-134",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "2797/134",
+          "parameter_u": 134,
+          "score": "19.951056798431550501856970512943148475515747333984991346923459505133020920657088"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-178",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "-4067/178",
+          "parameter_u": 178,
+          "score": "19.923591858795241305146233251509164826434699646686242232868978471305076595209588"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-69",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "6263/46",
+          "parameter_u": 69,
+          "score": "19.888336085099221871901055253840819731361097068232891062979773211483890928947173"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-186",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "-1841/62",
+          "parameter_u": 186,
+          "score": "19.872463061043618666555553686482879461020922362347776360487122229718239631421455"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-196",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "-7433/196",
+          "parameter_u": 196,
+          "score": "19.871398149220131476570096110619457337114502863666964196220641515313899300367799"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-104",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "6367/104",
+          "parameter_u": 104,
+          "score": "19.847346732652406543251171489104516826159886963940727507202193914888405034285331"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-83",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "16661/166",
+          "parameter_u": 83,
+          "score": "19.842606538336274546397066811736077459200677934355962519263402962980365573702582"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-153",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "47/102",
+          "parameter_u": 153,
+          "score": "19.837394369462527195779517147399738540281957397549468659092316068332926525403528"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-194",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "-7043/194",
+          "parameter_u": 194,
+          "score": "19.837301836053767180387564397803532499113008478304113379961727716222916461519238"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-145",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "505/58",
+          "parameter_u": 145,
+          "score": "19.799659168809062333894922569469134157817724578683323720193283165206288809005256"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-88",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "7903/88",
+          "parameter_u": 88,
+          "score": "19.757315584419332723918059401180990238457628409396796351834978879415250290648769"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-24",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "3829/8",
+          "parameter_u": 24,
+          "score": "19.739288712897917857549131134438229636787381385248380254268966922121449401127817"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-44",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "10807/44",
+          "parameter_u": 44,
+          "score": "19.738976581451262705313905095389385644992965884471926944744212937730119185068377"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-39",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "7343/26",
+          "parameter_u": 39,
+          "score": "19.711094834167807488786114961033967411093969026467853176327397086083563044229484"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-139",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "4229/278",
+          "parameter_u": 139,
+          "score": "19.664138156931404350067409261703971042532511234031121548600477616851512588531671"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-82",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "8413/82",
+          "parameter_u": 82,
+          "score": "19.650444906919833127254045686542725712247751041985539681871363467664592329178791"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-51",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "6983/34",
+          "parameter_u": 51,
+          "score": "19.649986854789579808110896077558362351310001005790155066177899769731479776180099"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-79",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "17309/158",
+          "parameter_u": 79,
+          "score": "19.584865201390307109681731413574942883072794592592332841758907187370605736480994"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-122",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "4333/122",
+          "parameter_u": 122,
+          "score": "19.572756798083020513506013999467224924010047043632823223327918441459437631383198"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-102",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "2191/34",
+          "parameter_u": 102,
+          "score": "19.529749500864743608544581622299465184586065332657926633005067868466492950763944"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-192",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "-2219/64",
+          "parameter_u": 192,
+          "score": "19.512532988058571077366367795906506335315093140639680463704154437468635203391467"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-43",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "21701/86",
+          "parameter_u": 43,
+          "score": "19.432955571341416885620147972649131726347805217092298176483549589638228703888128"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-56",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "10207/56",
+          "parameter_u": 56,
+          "score": "19.424692963462034389486108902846690534843609045020977464429107428768146430159942"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-64",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "9727/64",
+          "parameter_u": 64,
+          "score": "19.416652725429050406103200461993486568150547094524689509949267353064506766646637"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-176",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "-3713/176",
+          "parameter_u": 176,
+          "score": "19.316929930867481076077160802973233759877746835741346321171970362723100855665628"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-191",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "-12931/382",
+          "parameter_u": 191,
+          "score": "19.306768464153049398509428957770797673231422480056822484806566011024412114667979"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-6",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "3919/2",
+          "parameter_u": 6,
+          "score": "19.274961072864549665550209062215445924365156748466909407548683393430379854688125"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-129",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "2303/86",
+          "parameter_u": 129,
+          "score": "19.242720524806729955364799904626149097307672311452522341791897425459672564315488"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-98",
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "parameter_t": "6973/98",
+          "parameter_u": 98,
+          "score": "19.202921489050636420761384603899687973842978877916542794955792225103548978378042"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-177",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "-2593/118",
+          "parameter_u": 177,
+          "score": "19.134647028216620649368561543032660827191660902634687262227415549138071835720389"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-180",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "-295/12",
+          "parameter_u": 180,
+          "score": "19.112294360687919918138284410072903600231076835177168055889639373806722699063836"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-125",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "317/10",
+          "parameter_u": 125,
+          "score": "19.078549205186010178760661209742928872560699339549764583847742693466052889532481"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-146",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "1117/146",
+          "parameter_u": 146,
+          "score": "19.048731478318540246431315260466444368506428297707824192557776529590334979596197"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-u-18",
+          "good_primes_used": 34,
+          "last_numerical_prime": 199,
+          "parameter_t": "3871/6",
+          "parameter_u": 18,
+          "score": "19.021077846226198516584696320534088686637275357358704717050689302822559133927588"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-32",
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "parameter_t": "11263/32",
+          "parameter_u": 32,
+          "score": "19.020703535269308037718399465540585309906637264825316372559974163118986939757861"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-114",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "1759/38",
+          "parameter_u": 114,
+          "score": "18.979955044565358691214903541918820519611927096025458459473101137406134681035114"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-183",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "-3313/122",
+          "parameter_u": 183,
+          "score": "18.977724956813365449677579669601303821410476643033605242483292205770978204796723"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-66",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "3199/22",
+          "parameter_u": 66,
+          "score": "18.969404742161354824485643495504504747516608198249276978919149426883135524291999"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-150",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "7/2",
+          "parameter_u": 150,
+          "score": "18.959220857325589632939936197497168125402504794842305779691489285280990822127195"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-157",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "-7/2",
+          "parameter_u": 157,
+          "score": "18.959220857325589632939936197497168125402504794842305779691489285280990822127195"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-118",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "4813/118",
+          "parameter_u": 118,
+          "score": "18.952525805108273997598225683942207990053167326216967570925257732884748820068989"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-195",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "-965/26",
+          "parameter_u": 195,
+          "score": "18.947612109517574537410555449670888258355554484550651755368296450168165872411793"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-5",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "4705/2",
+          "parameter_u": 5,
+          "score": "18.940539750244017784937565636357584352952278397814146727864947682866906418249266"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-47",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "21341/94",
+          "parameter_u": 47,
+          "score": "18.915505614102828928360126418908826150483279596655788867916548612732758702581751"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-136",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "2527/136",
+          "parameter_u": 136,
+          "score": "18.761658583233744982931384511652472453598592000474148116890094980020792068230805"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-46",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "10717/46",
+          "parameter_u": 46,
+          "score": "18.739475090518261649072367468209328497361068902501729720738483028627618492890701"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-143",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "3101/286",
+          "parameter_u": 143,
+          "score": "18.721980879416161583963566175735695953773573120520146425826796464155095228669548"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-115",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "2065/46",
+          "parameter_u": 115,
+          "score": "18.588087911533268106267089131077308023917190738823202198935292230502418999063314"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-200",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "-329/8",
+          "parameter_u": 200,
+          "score": "18.536326459435540138783674101526143896345780864460742816397627370501557413847410"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-190",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "-1255/38",
+          "parameter_u": 190,
+          "score": "18.355835477292071681165888963441241927405193233599231409931390483105542766746947"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-u-48",
+          "good_primes_used": 34,
+          "last_numerical_prime": 199,
+          "parameter_t": "3541/16",
+          "parameter_u": 48,
+          "score": "18.295555508505104638630917466022826341219967869101347488053467522318205107168773"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-99",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "4583/66",
+          "parameter_u": 99,
+          "score": "18.253864057041912918140373015497836682171844205430278820379824842953233334464668"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-165",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "-245/22",
+          "parameter_u": 165,
+          "score": "18.231265301961068768098666980922341161488548098713397023662802465100139283286023"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-133",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "5861/266",
+          "parameter_u": 133,
+          "score": "18.173292449961759527301136040664941033561595423221434807683460135328238032843475"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-63",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "6527/42",
+          "parameter_u": 63,
+          "score": "18.155435426692312440391098608312296333178066857509640111980056911737069755063590"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-37",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "22181/74",
+          "parameter_u": 37,
+          "score": "18.119252537386995002051723759894180766329236485638459627579479582236387405339392"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-87",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "5327/58",
+          "parameter_u": 87,
+          "score": "18.072140711076110749353784977995388037884958427110003989781072186627204682174607"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-19",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "23189/38",
+          "parameter_u": 19,
+          "score": "18.066413596139639416291973602137705382243728020191307633485642327852154699058781"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-20",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "2315/4",
+          "parameter_u": 20,
+          "score": "18.005871438894421177030828316820532850343975414230885408900648407379402293881242"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-30",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "755/2",
+          "parameter_u": 30,
+          "score": "17.876817907740867963176498966972502779033010041150594250441922972117163970231004"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-76",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "8887/76",
+          "parameter_u": 76,
+          "score": "17.860332659551210650522248401692243857334188399582826766498591029053639303578178"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-113",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "10781/226",
+          "parameter_u": 113,
+          "score": "17.589696330839292946100227806676897104201238731697806616856260204450271590305822"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-u-61",
+          "good_primes_used": 34,
+          "last_numerical_prime": 199,
+          "parameter_t": "19829/122",
+          "parameter_u": 61,
+          "score": "17.545738361673337814794919911266749060745655086443056170758178359643339421524660"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-187",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "-11419/374",
+          "parameter_u": 187,
+          "score": "17.536637824005659449596192632344159408557325528588798688930332962925494078686412"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-161",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "-2371/322",
+          "parameter_u": 161,
+          "score": "17.530909368275867410647346724653899592870608145399564465336055272498150602661717"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-103",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "12941/206",
+          "parameter_u": 103,
+          "score": "17.514844797827837198185397501579499240776787714105700586908423759532878280669953"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-3",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "7847/2",
+          "parameter_u": 3,
+          "score": "17.506955984910561810657993321140015284612899136585444770458710453406382938543437"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-95",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "2905/38",
+          "parameter_u": 95,
+          "score": "17.438651192534898236072958112116003689069373711173967621463321440209131235082366"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-160",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "-205/32",
+          "parameter_u": 160,
+          "score": "17.431020933388242833150163625090963406545975867691747913487811384349207411524357"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-7",
+          "good_primes_used": 37,
+          "last_numerical_prime": 199,
+          "parameter_t": "23501/14",
+          "parameter_u": 7,
+          "score": "17.347191741719771803654212907242648992768229302058401675771082901803880480453706"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-29",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "22709/58",
+          "parameter_u": 29,
+          "score": "17.007257120875778389978566008689408359733142693602129574959357251358069886116826"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-u-167",
+          "good_primes_used": 34,
+          "last_numerical_prime": 199,
+          "parameter_t": "-4339/334",
+          "parameter_u": 167,
+          "score": "16.820368194448286362304278055409514076318388595013911275107459717003592738784956"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-197",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "-15259/394",
+          "parameter_u": 197,
+          "score": "16.620793777444684455136378387687850682074830256050979421902887344079866103775393"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-u-168",
+          "good_primes_used": 34,
+          "last_numerical_prime": 199,
+          "parameter_t": "-779/56",
+          "parameter_u": 168,
+          "score": "16.587759666450219518803766982855165498155970409602635439287024253807612709599958"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-26",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "11437/26",
+          "parameter_u": 26,
+          "score": "16.050018374091769917912819312479032009812794228881133025113346145416466696520737"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-124",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "4087/124",
+          "parameter_u": 124,
+          "score": "15.876568681202055537302073020452468283848405151208805517416004683397610824967857"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-94",
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "parameter_t": "7357/94",
+          "parameter_u": 94,
+          "score": "15.802595993226289160330936890880135423403825221809774651443870469267264472306005"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-106",
+          "good_primes_used": 35,
+          "last_numerical_prime": 199,
+          "parameter_t": "6157/106",
+          "parameter_u": 106,
+          "score": "15.791925975270866304483729825218379220131156402353918587578116052187898963435237"
+        },
+        {
+          "bad_primes_skipped": 12,
+          "candidate_id": "nagao-u-41",
+          "good_primes_used": 32,
+          "last_numerical_prime": 199,
+          "parameter_t": "21869/82",
+          "parameter_u": 41,
+          "score": "15.656625712404502880790855342259104797582105387881171284137934057655706301119896"
+        }
+      ],
+      "retained_candidate_ids": [
+        "nagao-u-171",
+        "nagao-u-17",
+        "nagao-u-42",
+        "nagao-u-128",
+        "nagao-u-11",
+        "nagao-u-131",
+        "nagao-u-198",
+        "nagao-u-62",
+        "nagao-u-36",
+        "nagao-u-14",
+        "nagao-u-121",
+        "nagao-u-151",
+        "nagao-u-31",
+        "nagao-u-40",
+        "nagao-u-175",
+        "nagao-u-132",
+        "nagao-u-189",
+        "nagao-u-182",
+        "nagao-u-97",
+        "nagao-u-116",
+        "nagao-u-28",
+        "nagao-u-144",
+        "nagao-u-100",
+        "nagao-u-34",
+        "nagao-u-21",
+        "nagao-u-54",
+        "nagao-u-78",
+        "nagao-u-53",
+        "nagao-u-166",
+        "nagao-u-173",
+        "nagao-u-141",
+        "nagao-u-50",
+        "nagao-u-2",
+        "nagao-u-74",
+        "nagao-u-84",
+        "nagao-u-148",
+        "nagao-u-105",
+        "nagao-u-107",
+        "nagao-u-155",
+        "nagao-u-147"
+      ]
+    },
+    {
+      "cutoff": 1000,
+      "keep_count": 12,
+      "population_scored": 40,
+      "ranked_population": [
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-128",
+          "good_primes_used": 161,
+          "last_numerical_prime": 997,
+          "parameter_t": "3583/128",
+          "parameter_u": 128,
+          "score": "49.264575836799182144533573558894598339221115950708993903494440753297844299591669"
+        },
+        {
+          "bad_primes_skipped": 4,
+          "candidate_id": "nagao-u-17",
+          "good_primes_used": 162,
+          "last_numerical_prime": 997,
+          "parameter_t": "23261/34",
+          "parameter_u": 17,
+          "score": "48.508396976423975445355705362517123605593199043201015586019804309624551807678960"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-189",
+          "good_primes_used": 161,
+          "last_numerical_prime": 997,
+          "parameter_t": "-4057/126",
+          "parameter_u": 189,
+          "score": "46.150792232879856694673571079623502577771263647474959203454796867831055462673681"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-62",
+          "good_primes_used": 159,
+          "last_numerical_prime": 997,
+          "parameter_t": "9853/62",
+          "parameter_u": 62,
+          "score": "45.688442989218355387782676207184134435973560676300040013593053520648009493525508"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-2",
+          "good_primes_used": 159,
+          "last_numerical_prime": 997,
+          "parameter_t": "11773/2",
+          "parameter_u": 2,
+          "score": "45.595824101510550461375432548867602987770091702041797635967942048704122770941495"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-182",
+          "good_primes_used": 160,
+          "last_numerical_prime": 997,
+          "parameter_t": "-4787/182",
+          "parameter_u": 182,
+          "score": "45.551694317104997131166423753242768056336053144067141471635589327642979344322070"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-84",
+          "good_primes_used": 160,
+          "last_numerical_prime": 997,
+          "parameter_t": "2749/28",
+          "parameter_u": 84,
+          "score": "45.349577543283368625578468268844314554083817126972800516433038293392850990625627"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-11",
+          "good_primes_used": 161,
+          "last_numerical_prime": 997,
+          "parameter_t": "23429/22",
+          "parameter_u": 11,
+          "score": "45.228008329849412213679791353006581564259515955631178546669273286027180244767588"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-131",
+          "good_primes_used": 158,
+          "last_numerical_prime": 997,
+          "parameter_t": "6389/262",
+          "parameter_u": 131,
+          "score": "45.097600151611285516539562922664484908849766055223834657163668714339120123329229"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-50",
+          "good_primes_used": 160,
+          "last_numerical_prime": 997,
+          "parameter_t": "421/2",
+          "parameter_u": 50,
+          "score": "45.047595012248205405764988926681184181920707319054357433656455776054823491953704"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-171",
+          "good_primes_used": 161,
+          "last_numerical_prime": 997,
+          "parameter_t": "-1897/114",
+          "parameter_u": 171,
+          "score": "44.595743243486356395146121027092405614423056615334353167105250875417317497603905"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-42",
+          "good_primes_used": 161,
+          "last_numerical_prime": 997,
+          "parameter_t": "3631/14",
+          "parameter_u": 42,
+          "score": "44.466709854060631436608941699535609231891096803976502153929847814249469203970433"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-155",
+          "good_primes_used": 161,
+          "last_numerical_prime": 997,
+          "parameter_t": "-95/62",
+          "parameter_u": 155,
+          "score": "44.433861592890402282779327137521755641555203961731910804368605465751572852445893"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-78",
+          "good_primes_used": 161,
+          "last_numerical_prime": 997,
+          "parameter_t": "2911/26",
+          "parameter_u": 78,
+          "score": "44.423802974408245892279857831652851431020040879362697926040047010399972964365305"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-54",
+          "good_primes_used": 161,
+          "last_numerical_prime": 997,
+          "parameter_t": "3439/18",
+          "parameter_u": 54,
+          "score": "44.379314127954718634316649492546620273248392995644521836596537671348378282958878"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-132",
+          "good_primes_used": 160,
+          "last_numerical_prime": 997,
+          "parameter_t": "1021/44",
+          "parameter_u": 132,
+          "score": "43.796897836496364093437887418557687543361156522388226413559986847730450915575959"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-173",
+          "good_primes_used": 160,
+          "last_numerical_prime": 997,
+          "parameter_t": "-6379/346",
+          "parameter_u": 173,
+          "score": "43.789797494231031186664235941542438153240792341757281738543334574007552729435333"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-141",
+          "good_primes_used": 159,
+          "last_numerical_prime": 997,
+          "parameter_t": "1223/94",
+          "parameter_u": 141,
+          "score": "43.258114163201115602686670854585154629578003629671395919345548926915452271178823"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-14",
+          "good_primes_used": 161,
+          "last_numerical_prime": 997,
+          "parameter_t": "11677/14",
+          "parameter_u": 14,
+          "score": "43.196969680239442849267780590669342891704509541900036231973177444543705875471872"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-74",
+          "good_primes_used": 159,
+          "last_numerical_prime": 997,
+          "parameter_t": "9037/74",
+          "parameter_u": 74,
+          "score": "43.138509999365945794736312281381142247862199467365292631828190946524803319105178"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-147",
+          "good_primes_used": 159,
+          "last_numerical_prime": 997,
+          "parameter_t": "647/98",
+          "parameter_u": 147,
+          "score": "43.103837000414577843652978074924415092196473751016188197835424391238057614570571"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-144",
+          "good_primes_used": 161,
+          "last_numerical_prime": 997,
+          "parameter_t": "469/48",
+          "parameter_u": 144,
+          "score": "42.846425174978136683520576221103755424591509052651908931122745528719008890759552"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-148",
+          "good_primes_used": 159,
+          "last_numerical_prime": 997,
+          "parameter_t": "823/148",
+          "parameter_u": 148,
+          "score": "42.765383795992505669336369540416727579804874513399828162669103280651760327955093"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-34",
+          "good_primes_used": 160,
+          "last_numerical_prime": 997,
+          "parameter_t": "11197/34",
+          "parameter_u": 34,
+          "score": "42.654292988529049906388972302869249975319275730114320764086282884618666690085364"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-100",
+          "good_primes_used": 161,
+          "last_numerical_prime": 997,
+          "parameter_t": "271/4",
+          "parameter_u": 100,
+          "score": "42.565015717335056367359085602570272127107199427749139077077326093053752163592988"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-105",
+          "good_primes_used": 160,
+          "last_numerical_prime": 997,
+          "parameter_t": "835/14",
+          "parameter_u": 105,
+          "score": "42.226249518545154060130869230963857811886639446177816260790452657155087168408315"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-36",
+          "good_primes_used": 159,
+          "last_numerical_prime": 997,
+          "parameter_t": "3709/12",
+          "parameter_u": 36,
+          "score": "42.223424930479050695110110699234333192515312848354365538537669478349460335640753"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-175",
+          "good_primes_used": 160,
+          "last_numerical_prime": 997,
+          "parameter_t": "-283/14",
+          "parameter_u": 175,
+          "score": "42.161828538819697927623630220023704403510427382932944651741597405394308623941406"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-166",
+          "good_primes_used": 160,
+          "last_numerical_prime": 997,
+          "parameter_t": "-2003/166",
+          "parameter_u": 166,
+          "score": "41.256172626453607626828996507982810283679263634354890328067369145637353058123755"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-107",
+          "good_primes_used": 159,
+          "last_numerical_prime": 997,
+          "parameter_t": "12101/214",
+          "parameter_u": 107,
+          "score": "40.988849357760724393692150053642632144974402517331409607487681656500410521782056"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-116",
+          "good_primes_used": 160,
+          "last_numerical_prime": 997,
+          "parameter_t": "5047/116",
+          "parameter_u": 116,
+          "score": "40.848159679732769673129998609841002337126369869379472895748813561464028104690656"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-53",
+          "good_primes_used": 160,
+          "last_numerical_prime": 997,
+          "parameter_t": "20741/106",
+          "parameter_u": 53,
+          "score": "40.743930251455623363145702372162551254174765913711680453510953277517607884470453"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-28",
+          "good_primes_used": 160,
+          "last_numerical_prime": 997,
+          "parameter_t": "11383/28",
+          "parameter_u": 28,
+          "score": "40.612343620232086507390817858811031493277277394129291156775990666334587895197450"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-121",
+          "good_primes_used": 160,
+          "last_numerical_prime": 997,
+          "parameter_t": "8909/242",
+          "parameter_u": 121,
+          "score": "40.432668037150022399175080230742151418532731470923177654615124748716865682290167"
+        },
+        {
+          "bad_primes_skipped": 4,
+          "candidate_id": "nagao-u-40",
+          "good_primes_used": 162,
+          "last_numerical_prime": 997,
+          "parameter_t": "2195/8",
+          "parameter_u": 40,
+          "score": "40.384673467271892310540186931220390188562790136401237876186888861311676879868816"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-198",
+          "good_primes_used": 160,
+          "last_numerical_prime": 997,
+          "parameter_t": "-2609/66",
+          "parameter_u": 198,
+          "score": "39.964118790694204882216802068874858468432719752059258518097990016542476615884222"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-97",
+          "good_primes_used": 159,
+          "last_numerical_prime": 997,
+          "parameter_t": "14141/194",
+          "parameter_u": 97,
+          "score": "39.918690525599231988875868709766364313137642903254822669445803588056378647468141"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-151",
+          "good_primes_used": 160,
+          "last_numerical_prime": 997,
+          "parameter_t": "749/302",
+          "parameter_u": 151,
+          "score": "39.805281592219701796263608098060789508662908618747464628915682887265302701624262"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-u-21",
+          "good_primes_used": 158,
+          "last_numerical_prime": 997,
+          "parameter_t": "7703/14",
+          "parameter_u": 21,
+          "score": "39.625091380283063548592854330293698634256126450533509434782612615866139018120629"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-31",
+          "good_primes_used": 160,
+          "last_numerical_prime": 997,
+          "parameter_t": "22589/62",
+          "parameter_u": 31,
+          "score": "38.804151705397445116758480962407027123416593238535747908818032863662325359095063"
+        }
+      ],
+      "retained_candidate_ids": [
+        "nagao-u-128",
+        "nagao-u-17",
+        "nagao-u-189",
+        "nagao-u-62",
+        "nagao-u-2",
+        "nagao-u-182",
+        "nagao-u-84",
+        "nagao-u-11",
+        "nagao-u-131",
+        "nagao-u-50",
+        "nagao-u-171",
+        "nagao-u-42"
+      ]
+    },
+    {
+      "cutoff": 10000,
+      "keep_count": 12,
+      "population_scored": 12,
+      "ranked_population": [
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-84",
+          "good_primes_used": 1221,
+          "last_numerical_prime": 9973,
+          "parameter_t": "2749/28",
+          "parameter_u": 84,
+          "score": "85.584581873949915655277634366764124842615669304627574336623969804073622351499308"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-17",
+          "good_primes_used": 1222,
+          "last_numerical_prime": 9973,
+          "parameter_t": "23261/34",
+          "parameter_u": 17,
+          "score": "83.303710996788426775379897177444509465279652645869940228323446920809990886473378"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-u-50",
+          "good_primes_used": 1221,
+          "last_numerical_prime": 9973,
+          "parameter_t": "421/2",
+          "parameter_u": 50,
+          "score": "83.263031952971749629939389462887306938500982294897826014152668222551106199541014"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-128",
+          "good_primes_used": 1222,
+          "last_numerical_prime": 9973,
+          "parameter_t": "3583/128",
+          "parameter_u": 128,
+          "score": "82.087800232309807708179906126745580413853560922749701749162799314485331037871234"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-42",
+          "good_primes_used": 1222,
+          "last_numerical_prime": 9973,
+          "parameter_t": "3631/14",
+          "parameter_u": 42,
+          "score": "80.352353412249335968322444083403237619759530049993149887483780924813237400380205"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-2",
+          "good_primes_used": 1220,
+          "last_numerical_prime": 9973,
+          "parameter_t": "11773/2",
+          "parameter_u": 2,
+          "score": "79.858700397645197650617831288948406471883777542931185941784186150632091770674883"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-11",
+          "good_primes_used": 1222,
+          "last_numerical_prime": 9973,
+          "parameter_t": "23429/22",
+          "parameter_u": 11,
+          "score": "77.764804225679624270824544816072196636613330048875288767962015664893452172666102"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-189",
+          "good_primes_used": 1222,
+          "last_numerical_prime": 9973,
+          "parameter_t": "-4057/126",
+          "parameter_u": 189,
+          "score": "75.009923193460550851032526181112916042626228875704855798240716890014910443079127"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-182",
+          "good_primes_used": 1220,
+          "last_numerical_prime": 9973,
+          "parameter_t": "-4787/182",
+          "parameter_u": 182,
+          "score": "74.887883463453965363789382129956593815276128820387189761758468746397499188341412"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-u-171",
+          "good_primes_used": 1222,
+          "last_numerical_prime": 9973,
+          "parameter_t": "-1897/114",
+          "parameter_u": 171,
+          "score": "74.505364429535670110300003960721909367382009692924665480656868165624955009295844"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-u-131",
+          "good_primes_used": 1218,
+          "last_numerical_prime": 9973,
+          "parameter_t": "6389/262",
+          "parameter_u": 131,
+          "score": "74.378423749129219941110090379988760959114995318220847922640181729643284002678165"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-u-62",
+          "good_primes_used": 1220,
+          "last_numerical_prime": 9973,
+          "parameter_t": "9853/62",
+          "parameter_u": 62,
+          "score": "71.178948812548715247333180264917791659200144588683505115162927592681952394124033"
+        }
+      ],
+      "retained_candidate_ids": [
+        "nagao-u-84",
+        "nagao-u-17",
+        "nagao-u-50",
+        "nagao-u-128",
+        "nagao-u-42",
+        "nagao-u-2",
+        "nagao-u-11",
+        "nagao-u-189",
+        "nagao-u-182",
+        "nagao-u-171",
+        "nagao-u-131",
+        "nagao-u-62"
+      ]
+    }
+  ],
+  "status": "bounded leakage-free score/conductor experiment; Nagao's generic rank-at-least-13 theorem is cited, specialization independence and extra rank are not certified, and no target hit is claimed",
+  "summary": {
+    "below_strict_log_conductor_target": 11,
+    "best_below_target_candidate": "nagao-u-84",
+    "conductor_calls_completed": 12,
+    "finalists": 12,
+    "population": 200
+  },
+  "target": {
+    "alternative_rank_at_least": 30,
+    "hits": [],
+    "log_conductor_strict_upper_bound": "182.72",
+    "rank_at_least": 21
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "benchmark": {
+    "id": "published-e22",
+    "parameter": "39508/39",
+    "published_rank_lower_bound": 22,
+    "rank_source": "published metadata; not recomputed here",
+    "scores": {
+      "10000": {
+        "position_among_stage_input": null,
+        "score": "106.74618120367013425111836395978645329645795900513534359696370450216815268315944",
+        "source": "separate comparison; not in stage population"
+      },
+      "100000": {
+        "position_among_stage_input": null,
+        "score": "163.16576537259417463170053972131381071549235976098167883252114748790250170306290",
+        "source": "separate comparison; not in stage population"
+      },
+      "2000": {
+        "position_among_stage_input": null,
+        "score": "69.525177909308467309212452796603003240670157757980395674449127022665157417833185",
+        "source": "separate comparison; not in stage population"
+      }
+    }
+  },
+  "conductor_errors": [],
+  "family": "normalized Fermigier--Mestre family",
+  "finalists": [
+    {
+      "denominator": 492,
+      "height": 1547,
+      "numerator": 1547,
+      "stages": {
+        "10000": {
+          "position_among_stage_input": 1,
+          "primes_used": 1220,
+          "score": "88.019945130336157504820443894601050570542734588221069009937072243440762139734296",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "100000": {
+          "position_among_stage_input": 1,
+          "primes_used": 9583,
+          "score": "124.53654303861366149628318907956069867112702527061747093574167342274079803182893",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "position_among_stage_input": 4,
+          "primes_used": 295,
+          "score": "60.393286203351207421723927818092460202277564125342456958062665232833959928476802",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        }
+      },
+      "t": "1547/492"
+    },
+    {
+      "denominator": 3464,
+      "height": 3464,
+      "numerator": 833,
+      "stages": {
+        "10000": {
+          "position_among_stage_input": 8,
+          "primes_used": 1221,
+          "score": "83.036532132832065157535246719844687388537879157364196969774511749527202038003211",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        },
+        "100000": {
+          "position_among_stage_input": 2,
+          "primes_used": 9584,
+          "score": "123.62226722882951856181216326207755423891673693109469592723763728230555688717494",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "position_among_stage_input": 38,
+          "primes_used": 295,
+          "score": "57.526880272782939313555256992867709794823001689326037502625241691257140957940243",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        }
+      },
+      "t": "833/3464"
+    },
+    {
+      "denominator": 3061,
+      "height": 4998,
+      "numerator": 4998,
+      "stages": {
+        "10000": {
+          "position_among_stage_input": 4,
+          "primes_used": 1220,
+          "score": "84.722859604762718541504829497208975710568482271871612397025727284951797196408161",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "100000": {
+          "position_among_stage_input": 3,
+          "primes_used": 9583,
+          "score": "114.86173226822008322464874328599772684691800632862434237349206266359888542598867",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "position_among_stage_input": 26,
+          "primes_used": 295,
+          "score": "57.983854381776224350692092028652968526978300561003246424648162877012056071238537",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 0
+        }
+      },
+      "t": "4998/3061"
+    },
+    {
+      "denominator": 2797,
+      "height": 3094,
+      "numerator": 3094,
+      "stages": {
+        "10000": {
+          "position_among_stage_input": 6,
+          "primes_used": 1222,
+          "score": "83.696101534644474457420784873082748885495591768392409274283836254977611137019781",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        },
+        "100000": {
+          "position_among_stage_input": 4,
+          "primes_used": 9585,
+          "score": "114.41038963102825485075839706091360424451443611820747443804052773666869658349784",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "position_among_stage_input": 27,
+          "primes_used": 297,
+          "score": "57.964049165740657302429940520663949691208732653627976739788613009152115786732724",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 0
+        }
+      },
+      "t": "3094/2797"
+    },
+    {
+      "denominator": 2103,
+      "height": 4046,
+      "numerator": -4046,
+      "stages": {
+        "10000": {
+          "position_among_stage_input": 9,
+          "primes_used": 1221,
+          "score": "82.877182585802223708526799299418431764931809303594313187391184545768282682186545",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        },
+        "100000": {
+          "position_among_stage_input": 5,
+          "primes_used": 9584,
+          "score": "111.71473431930092836114897284047354147059301209899276227194165741576205679302379",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "position_among_stage_input": 8,
+          "primes_used": 296,
+          "score": "59.152490645743402948031995160595017835871810824913456700435982216211330275802660",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        }
+      },
+      "t": "-4046/2103"
+    },
+    {
+      "denominator": 4530,
+      "height": 4530,
+      "numerator": 3451,
+      "stages": {
+        "10000": {
+          "position_among_stage_input": 5,
+          "primes_used": 1219,
+          "score": "84.452109830938116551085529115791093879949245743718032664149268408863146016812757",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 2
+        },
+        "100000": {
+          "position_among_stage_input": 6,
+          "primes_used": 9581,
+          "score": "109.85826108938658427364353410592800822729573121438974499562627524202453558397757",
+          "skipped_bad_primes": 7,
+          "skipped_denominator_primes": 2
+        },
+        "2000": {
+          "position_among_stage_input": 50,
+          "primes_used": 294,
+          "score": "57.118312680236123434014467973788941782877979597690486439601044973679996285252137",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 2
+        }
+      },
+      "t": "3451/4530"
+    },
+    {
+      "denominator": 1153,
+      "height": 4760,
+      "numerator": -4760,
+      "stages": {
+        "10000": {
+          "position_among_stage_input": 3,
+          "primes_used": 1219,
+          "score": "85.122449154638819672551373994217951822593247606783357598462794440355348792426180",
+          "skipped_bad_primes": 7,
+          "skipped_denominator_primes": 1
+        },
+        "100000": {
+          "position_among_stage_input": 7,
+          "primes_used": 9582,
+          "score": "107.61271177047045469600291924765363087882535409737014290017661766979220743402203",
+          "skipped_bad_primes": 7,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "position_among_stage_input": 12,
+          "primes_used": 294,
+          "score": "58.974703311365384459021980130045327195417619385610232929798752066436908133564194",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        }
+      },
+      "t": "-4760/1153"
+    },
+    {
+      "denominator": 2430,
+      "height": 3689,
+      "numerator": -3689,
+      "stages": {
+        "10000": {
+          "position_among_stage_input": 7,
+          "primes_used": 1222,
+          "score": "83.462333713185258595629484556735945200980449802791194340935209259606315219373885",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        },
+        "100000": {
+          "position_among_stage_input": 8,
+          "primes_used": 9584,
+          "score": "107.52280974215046404042678127460562759930647119480555804894948075406489083702802",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "position_among_stage_input": 5,
+          "primes_used": 297,
+          "score": "60.325168066211812100767103086171868151606026448072971982536897079092733356275382",
+          "skipped_bad_primes": 3,
+          "skipped_denominator_primes": 1
+        }
+      },
+      "t": "-3689/2430"
+    },
+    {
+      "denominator": 2559,
+      "height": 4046,
+      "numerator": 4046,
+      "stages": {
+        "10000": {
+          "position_among_stage_input": 10,
+          "primes_used": 1221,
+          "score": "82.445041184829082815911701551449829687705334472009401281186385811777226952168108",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        },
+        "100000": {
+          "position_among_stage_input": 9,
+          "primes_used": 9584,
+          "score": "106.21452996925014212219964538522669459398783339359500447226205438317040879617747",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "position_among_stage_input": 16,
+          "primes_used": 295,
+          "score": "58.651708644659152181037930308307748612990146597948738591222251457473522013458117",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        }
+      },
+      "t": "4046/2559"
+    },
+    {
+      "denominator": 3410,
+      "height": 3410,
+      "numerator": -357,
+      "stages": {
+        "10000": {
+          "position_among_stage_input": 2,
+          "primes_used": 1218,
+          "score": "85.830848342803744306179578542814090377429987695155265680675666883624648718654300",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 3
+        },
+        "100000": {
+          "position_among_stage_input": 10,
+          "primes_used": 9581,
+          "score": "102.81721806279251067325982198207980435810381353436644342832738299551352413943333",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 3
+        },
+        "2000": {
+          "position_among_stage_input": 23,
+          "primes_used": 293,
+          "score": "58.295460182056341191261415813758305307613050295350792825253804720258914208988942",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 3
+        }
+      },
+      "t": "-357/3410"
+    }
+  ],
+  "parameters": {
+    "conductor_count": 0,
+    "conductor_timeout": 60.0,
+    "height": 5000,
+    "keep_counts": [
+      50,
+      10,
+      10
+    ],
+    "output": "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic_fermigier_record_rescore_h5000.json",
+    "pari_stack_bytes": 256000000,
+    "score_timeout": 300.0,
+    "stage_cutoffs": [
+      2000,
+      10000,
+      100000
+    ]
+  },
+  "population": {
+    "benchmark_in_population": false,
+    "primitive_candidates": 5520
+  },
+  "reproducing_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/staged_record_rescore.py --conductor-count 0",
+  "residue_class": {
+    "condition": "a=2142*b mod 4403 for primitive T=a/b with b>0",
+    "crt_modulus": 4403,
+    "crt_residue": 2142
+  },
+  "schema_version": 1,
+  "score_definition": {
+    "approximation": "real logarithms and their cumulative sums only",
+    "formula": "sum_{5<=p<=B, p not dividing b, good reduction} ((2-a_p)/(p+1-a_p))*log(p)",
+    "prime_bound_semantics": "numerical prime cutoff p<=B",
+    "rank_inference": "none",
+    "trace_source": "exact PARI/GP ellap on exact minimal models"
+  },
+  "selection_protocol": "The full declared height-box population is scored at the first cutoff. Each later stage sees only the explicitly retained leaders from its immediate predecessor.",
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6"
+  },
+  "stages": [
+    {
+      "benchmark": {
+        "position_among_stage_input": null,
+        "score": "69.525177909308467309212452796603003240670157757980395674449127022665157417833185",
+        "source": "separate comparison; not in stage population"
+      },
+      "benchmark_survived": false,
+      "best": {
+        "denominator": 617,
+        "height": 714,
+        "numerator": 714,
+        "primes_used": 294,
+        "score": "60.638849464653293541835142524405522264344389976032178668738084391304853637055553",
+        "skipped_bad_primes": 6,
+        "skipped_denominator_primes": 1,
+        "t": "714/617"
+      },
+      "elapsed_seconds": 16.520676,
+      "input_count": 5520,
+      "numeric_prime_cutoff": 2000,
+      "requested_keep_count": 50,
+      "retained_count": 50,
+      "worst_retained_score": "57.118312680236123434014467973788941782877979597690486439601044973679996285252137"
+    },
+    {
+      "benchmark": {
+        "position_among_stage_input": null,
+        "score": "106.74618120367013425111836395978645329645795900513534359696370450216815268315944",
+        "source": "separate comparison; not in stage population"
+      },
+      "benchmark_survived": false,
+      "best": {
+        "denominator": 492,
+        "height": 1547,
+        "numerator": 1547,
+        "primes_used": 1220,
+        "score": "88.019945130336157504820443894601050570542734588221069009937072243440762139734296",
+        "skipped_bad_primes": 6,
+        "skipped_denominator_primes": 1,
+        "t": "1547/492"
+      },
+      "elapsed_seconds": 0.622724,
+      "input_count": 50,
+      "numeric_prime_cutoff": 10000,
+      "requested_keep_count": 10,
+      "retained_count": 10,
+      "worst_retained_score": "82.445041184829082815911701551449829687705334472009401281186385811777226952168108"
+    },
+    {
+      "benchmark": {
+        "position_among_stage_input": null,
+        "score": "163.16576537259417463170053972131381071549235976098167883252114748790250170306290",
+        "source": "separate comparison; not in stage population"
+      },
+      "benchmark_survived": false,
+      "best": {
+        "denominator": 492,
+        "height": 1547,
+        "numerator": 1547,
+        "primes_used": 9583,
+        "score": "124.53654303861366149628318907956069867112702527061747093574167342274079803182893",
+        "skipped_bad_primes": 6,
+        "skipped_denominator_primes": 1,
+        "t": "1547/492"
+      },
+      "elapsed_seconds": 1.113482,
+      "input_count": 10,
+      "numeric_prime_cutoff": 100000,
+      "requested_keep_count": 10,
+      "retained_count": 10,
+      "worst_retained_score": "102.81721806279251067325982198207980435810381353436644342832738299551352413943333"
+    }
+  ],
+  "status": "bounded exhaustive first-stage and staged computational rank-triage experiment; scores and numerical height determinants imply no rank",
+  "target": {
+    "alternative_rank_at_least": 30,
+    "hits": [],
+    "log_conductor_strict_upper_bound": "182.72",
+    "rank_at_least": 21
+  }
+}

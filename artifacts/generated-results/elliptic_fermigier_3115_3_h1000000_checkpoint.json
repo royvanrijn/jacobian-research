@@ -1,0 +1,234 @@
+{
+  "family": "normalized Fermigier--Mestre family",
+  "methods_not_used": {
+    "ellsaturation": "requires independent finite-index input and would not itself establish the missing exact-rank premise",
+    "ellsearch": "PARI curve-database lookup, not a rational-point search"
+  },
+  "parameters": {
+    "output": "artifacts/generated-results/elliptic_fermigier_3115_3_h1000000_checkpoint.json",
+    "precisions": [
+      72,
+      120
+    ],
+    "quartic_height_bound": 1000000,
+    "specializations": [
+      "3115/3"
+    ],
+    "stack_bytes": 1000000000,
+    "timeout_seconds_per_pari_call": 120.0
+  },
+  "prior_ellrank_attempt": {
+    "effort": 0,
+    "elapsed_seconds_approx": 300,
+    "error": "ellrank: the PARI stack overflows; current stack size: 1000000000 (953.674 Mbytes)",
+    "parameter": "1666/9",
+    "result": "failed before returning rank bounds",
+    "seed_count": 12,
+    "stack_bytes": 1000000000,
+    "timeout_seconds": 300
+  },
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/search_extra_points.py --parameters 3115/3 --height-bound 1000000 --precisions 72,120 --timeout 120.0 --stack-bytes 1000000000 --output artifacts/generated-results/elliptic_fermigier_3115_3_h1000000_checkpoint.json",
+  "results": [
+    {
+      "all_mapped_jacobian_points_checked_exactly": true,
+      "distinct_quartic_x_values": 67,
+      "explicit_numerically_independent_subset": [
+        {
+          "jacobian_residual": "0",
+          "jacobian_x": "16844511437016392639386902402009241/1355456684946377667267",
+          "jacobian_y": "-1674905765760929338608373400889806789949386233650/355699143519803103410891870669",
+          "quartic_residual": "0",
+          "quartic_x": "-54860/3",
+          "quartic_z": "4711753752685/9"
+        },
+        {
+          "jacobian_residual": "0",
+          "jacobian_x": "249692371059820589872669221769/28421110051105203",
+          "jacobian_y": "10717395174372753405556986557928559077807950/307367834663314468827117",
+          "quartic_residual": "0",
+          "quartic_x": "-3115/3",
+          "quartic_z": "7948857665/3"
+        },
+        {
+          "jacobian_residual": "0",
+          "jacobian_x": "1749434646470621052173256758089/211892214300127443",
+          "jacobian_y": "79538068916525177031798578194049455261865350/2085682069841688004357569",
+          "quartic_residual": "0",
+          "quartic_x": "-2950/3",
+          "quartic_z": "21704096015/9"
+        },
+        {
+          "jacobian_residual": "0",
+          "jacobian_x": "18238477804212635967181619281/5102845523694747",
+          "jacobian_y": "497111186353715926273437525087342650121550/7794607310117609398077",
+          "quartic_residual": "0",
+          "quartic_x": "-2173/3",
+          "quartic_z": "12798940189/9"
+        },
+        {
+          "jacobian_residual": "0",
+          "jacobian_x": "198609197952646259152046625841/148981664956407867",
+          "jacobian_y": "274132570734057611835013211529300673251747850/3688893340779982386053529",
+          "quartic_residual": "0",
+          "quartic_x": "-1981/3",
+          "quartic_z": "3639825889/3"
+        },
+        {
+          "jacobian_residual": "0",
+          "jacobian_x": "717543155139504444343763825809/293705301734524683",
+          "jacobian_y": "-235627893841854374791224300443980154117883650/3403637404188859439706549",
+          "quartic_residual": "0",
+          "quartic_x": "-94/3",
+          "quartic_z": "5110578823/9"
+        },
+        {
+          "jacobian_residual": "0",
+          "jacobian_x": "4106825750227763984231794921/899485127087427",
+          "jacobian_y": "-33902225637656305191791332114268154474550/576854903362743624153",
+          "quartic_residual": "0",
+          "quartic_x": "-7/3",
+          "quartic_z": "5373593281/9"
+        },
+        {
+          "jacobian_residual": "0",
+          "jacobian_x": "1147135272365698991362679579881/91519544622199347",
+          "jacobian_y": "-154330143003870591570223472697161303109150/197344546550035075566341",
+          "quartic_residual": "0",
+          "quartic_x": "1114/3",
+          "quartic_z": "7743310673/9"
+        },
+        {
+          "jacobian_residual": "0",
+          "jacobian_x": "-24585829301750358731690264279/1762514210457027",
+          "jacobian_y": "180563367586131193672537757838187264272950/1582247977874815465497",
+          "quartic_residual": "0",
+          "quartic_x": "3115/3",
+          "quartic_z": "1979477255/3"
+        },
+        {
+          "jacobian_residual": "0",
+          "jacobian_x": "-858100760945202157133405039/42331329881307",
+          "jacobian_y": "211744817848735007597907691775275349850/1963121694553742689",
+          "quartic_residual": "0",
+          "quartic_x": "3280/3",
+          "quartic_z": "5828660495/9"
+        },
+        {
+          "jacobian_residual": "0",
+          "jacobian_x": "-16810783114622854559888980088879/659972637385840827",
+          "jacobian_y": "-317770115262756037852928444843291511451225350/3821582580770098753714351",
+          "quartic_residual": "0",
+          "quartic_x": "4057/3",
+          "quartic_z": "7660853599/9"
+        },
+        {
+          "jacobian_residual": "0",
+          "jacobian_x": "26954104217872754764267555878049/9210545774313475563",
+          "jacobian_y": "-13335680672696260793749303940065009094697067050/199242692320904365995949303",
+          "quartic_residual": "0",
+          "quartic_x": "6136/3",
+          "quartic_z": "28619159863/9"
+        },
+        {
+          "jacobian_residual": "0",
+          "jacobian_x": "-661457851724428099572756832037255/22458044455591731507",
+          "jacobian_y": "-53492553156461794317453066299691743588358589114/2275796966797892353489066383",
+          "quartic_residual": "0",
+          "quartic_x": "-4162/15",
+          "quartic_z": "6384135947/15"
+        },
+        {
+          "jacobian_residual": "0",
+          "jacobian_x": "3553606384264208885103275733393361/428266179269350717707",
+          "jacobian_y": "21538348668105845082193741836411786247439829494650/568548517758001551714431390751",
+          "quartic_residual": "0",
+          "quartic_x": "28300/39",
+          "quartic_z": "139393669765/169"
+        },
+        {
+          "jacobian_residual": "0",
+          "jacobian_x": "-38882945430631697406885603447182759/1349553259077767427267",
+          "jacobian_y": "-44432963500565016506547678817582958315940203369450/1060133726112665462133645583257",
+          "quartic_residual": "0",
+          "quartic_x": "-29420/111",
+          "quartic_z": "1732124946055/4107"
+        }
+      ],
+      "height_matrix_runs": [
+        {
+          "decimal_precision": 72,
+          "numerical_rank": 15,
+          "subset_height_determinant": "55962715419529559014328.7417555904044829083040495456090650499959548277812",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            13,
+            15,
+            24,
+            29
+          ],
+          "subset_largest_eigenvalue": "152.873139588598352716842083352744663092531713466288668935226190700645239",
+          "subset_smallest_eigenvalue": "0.919580874532989476040969421467636150600600685390738502565141888623241236"
+        },
+        {
+          "decimal_precision": 120,
+          "numerical_rank": 15,
+          "subset_height_determinant": "55962715419529559014328.7417555904044829083040495456090650499959548277812394431320735406926871151551789117610368624533684",
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            13,
+            15,
+            24,
+            29
+          ],
+          "subset_largest_eigenvalue": "152.873139588598352716842083352744663092531713466288668935226190700645238832396398921621758990498440864808424838696868131",
+          "subset_smallest_eigenvalue": "0.919580874532989476040969421467636150600600685390738502565141888623241236316605431166611269117582090960557347367333869832"
+        }
+      ],
+      "new_x_values_beyond_visible_sections": 54,
+      "pari_reported_milliseconds": 26542,
+      "quartic_height_bound": 1000000,
+      "search_scope": "PARI hyperellratpoints affine rational points of naive height at most 1000000 on the implemented quartic model",
+      "search_wall_seconds": 26.934753000001365,
+      "signed_quartic_points_found": 134,
+      "stable_numerical_rank": 15,
+      "status": "bounded point enumeration plus high-precision numerical independence evidence; not an exact rank certificate",
+      "t": "3115/3",
+      "visible_section_x_values_found": 13
+    }
+  ],
+  "schema_version": 1,
+  "script_sha256": "7120c2dc02566aed21d5190af63d06899f96814e1b30147a4bbffcea28aa5da5",
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6",
+    "python_implementation": "CPython"
+  },
+  "source": "https://matwbn.icm.edu.pl/ksiazki/aa/aa82/aa8243.pdf",
+  "status": "bounded experiment; exact curve membership is verified, but numerical height rank is not promoted to an exact Mordell--Weil rank claim",
+  "target": {
+    "hit": false,
+    "log_conductor_strict_upper_bound": "182.72",
+    "rank_at_least": 21,
+    "reason": "largest numerical rank found is 15, below 21, and no exact independence certificate was generated"
+  }
+}

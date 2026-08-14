@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "artifact_kind": "exact_denominator_normalized_x_residue_sieve",
+  "status": "bounded_search_no_certified_30th_point",
+  "claim_scope": {
+    "exact": "every primitive pair in the completed declared boxes is either excluded by a necessary modular square condition or receives an exact integer square test; all returned points and relations are checked with exact arithmetic",
+    "bounded": "the completed denominator prefix and pinned offset radius only; this is not a rank upper bound",
+    "new_region": "For each of the 29 public x-coordinates, every primitive offset x=x_i+k/b^2 with 50001<=b<=500000 and 0<|k|<=16384; this is disjoint from the completed b<=50000 denominator-sieve region."
+  },
+  "reproduction": {
+    "bounded_execution_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python -u elliptic-curves/cas/search_elkies_klagsbrun_rank30_denominator_sieve.py --denominator-min 50001 --denominator-max 500000 --offset-radius 16384 --wall-cap-seconds 900 --progress-every 10000 --output artifacts/generated-results/elliptic_elkies_klagsbrun_rank30_denominator_sieve_b500000_raw.json",
+    "normalization_command": "python3 elliptic-curves/cas/normalize_elkies_klagsbrun_rank30_denominator_sieve_b500000.py",
+    "bounded_execution_engine": "elliptic-curves/cas/search_elkies_klagsbrun_rank30_denominator_sieve.py",
+    "bounded_execution_engine_sha256": "73d46aa761e912feee18667a7ffea240db9a211ce9401ec73b8722fe54f09878",
+    "raw_execution_artifact": "artifacts/generated-results/elliptic_elkies_klagsbrun_rank30_denominator_sieve_b500000_raw.json",
+    "raw_execution_artifact_sha256": "39b2ce7834d73cfd04f6dca82b40e64a40d9595069f7e56865d2015dee216457",
+    "normalizer": "elliptic-curves/cas/normalize_elkies_klagsbrun_rank30_denominator_sieve_b500000.py",
+    "normalizer_sha256": "ef64f98658079c698290f05ac0a6fad5187b597a6ed4e7dd017a73788e94a0f5",
+    "metadata_normalization_reran_bounded_search": false,
+    "python": "3.14.6"
+  },
+  "parameters": {
+    "anchor_count": 29,
+    "denominator_interval": [
+      50001,
+      500000
+    ],
+    "nonzero_offset_interval": [
+      -16384,
+      16384
+    ],
+    "primitivity": "gcd(b,s)=gcd(k,b)=1",
+    "sieve_primes": [
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43,
+      47,
+      53,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79,
+      83,
+      89,
+      97
+    ],
+    "wall_cap_seconds": 900.0,
+    "relation_timeout_seconds_each": 60.0,
+    "stack_bytes_each": 500000000,
+    "certificate_prime_bound": 1000,
+    "previous_deep_x_offset_height": 10000000,
+    "previous_deep_x_pair_height": 50000,
+    "overlap_stop_fraction": 0.5
+  },
+  "anchor_manifest": [
+    {
+      "index": 1,
+      "x_numerator": 2891195474228537189458255536634,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 2,
+      "x_numerator": 3402542165322127811451484642234,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 3,
+      "x_numerator": 4298760026558467240422107564794,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 4,
+      "x_numerator": 3728756667770947009884455714554,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 5,
+      "x_numerator": 5991744132052078230511185130234,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 6,
+      "x_numerator": 3236493534632768520540227223034,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 7,
+      "x_numerator": 78226686134991174232380689386234,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 8,
+      "x_numerator": 11492605643548859374635605140234,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 9,
+      "x_numerator": -5143303362384229804906088118566,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 10,
+      "x_numerator": 443985655575065435281568435002,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 11,
+      "x_numerator": -979565018904269680752629749766,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 12,
+      "x_numerator": 5184894285212178249566461261834,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 13,
+      "x_numerator": -4469171023687146502067179612166,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 14,
+      "x_numerator": 3606405835110925482450522970234,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 15,
+      "x_numerator": 16151744576785317732688993162234,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 16,
+      "x_numerator": 3573684355943766387962362869754,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 17,
+      "x_numerator": -759376049938858166436491644166,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 18,
+      "x_numerator": -5328058719935886182106003119366,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 19,
+      "x_numerator": 5380268474895377355583039694554,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 20,
+      "x_numerator": 17069233487425098088940203248484,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 21,
+      "x_numerator": 5215432542403430758248050783794,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 22,
+      "x_numerator": 2838942178046024039763692432122,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 23,
+      "x_numerator": 243146882395382015946366404808154,
+      "x_denominator_root": 9
+    },
+    {
+      "index": 24,
+      "x_numerator": 2558229016839511149831260080762,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 25,
+      "x_numerator": 2361253942905600810977556672634,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 26,
+      "x_numerator": 2678312077644931683114439906234,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 27,
+      "x_numerator": 3379397084927230910084852603902,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 28,
+      "x_numerator": 3632407730870998917912491355514,
+      "x_denominator_root": 1
+    },
+    {
+      "index": 29,
+      "x_numerator": 2428778263277521959543043930234,
+      "x_denominator_root": 1
+    }
+  ],
+  "overlap_calibration": {
+    "denominator_samples": [
+      50001,
+      275000,
+      500000
+    ],
+    "offset_samples": [
+      -16384,
+      -1,
+      1,
+      16384
+    ],
+    "tested_primitive_sample_count": 228,
+    "prior_direct_x_chart_overlap_count": 0,
+    "overlap_fraction": 0.0,
+    "overlap_records": []
+  },
+  "search_result": {
+    "declared_primitive_candidate_count": 257729687722,
+    "processed_primitive_candidate_count": 257729687722,
+    "completed_denominator_interval": [
+      50001,
+      500000
+    ],
+    "search_complete": true,
+    "wall_cap_reached": false,
+    "stopped_at_overlap_gate": false,
+    "modular_survivor_count_before_primitivity": 1585712,
+    "modular_survivor_count_after_primitivity": 858583,
+    "modular_survivor_manifest_sha256": "bfda86a2212043454ef884f7b9a6a198ef1645e499fd9c68d5c2e8874d8f19f9",
+    "negative_homogeneous_value_count_after_sieve": 0,
+    "exact_nonsquare_count_after_sieve": 858583,
+    "exact_square_abscissa_count": 0,
+    "candidate_records": [],
+    "certified_independent_30th_point_count": 0,
+    "rank30_target_hit": false,
+    "allowed_mask_cache_entry_count": 30681,
+    "wall_seconds": 258.7019586249953
+  }
+}

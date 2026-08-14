@@ -330,9 +330,12 @@ impose Hessian curl equations, and require
 \(\det A/(z\ell)\) to be a smooth irreducible quartic.  `HC4NHM16` carries
 this out at the generic point of the squarefree-line row (4.2) and excludes
 that generic stratum.  `HC4NHM17` further excludes nine exact slices of its
-first visible exceptional divisor.  The rest of that divisor and the
-complementary residual-line chart remain, as do the other three
-basepoint-free families.
+first visible exceptional divisor.  `HC4NHM20`, `HC4NHM22`, and `HC4NHM23`
+identify its polar geometry, exclude its generic conic, and reduce the
+fifteen split fibers to three Fermat-symmetry types; the `tau^3=-1` type is
+covered by transport of the `HC4NHM17` certificates.  Lower denominator
+strata, two six-point line-fiber types, and the complementary residual-line
+chart remain, as do the other three basepoint-free families.
 The five basepointed simple-line rows should then be treated on their forced
 tangent/bitangent/flex incidence strata.  The doubled-line and \(\mu=0\)
 branches remain separate.  See

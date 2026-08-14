@@ -2673,6 +2673,16 @@ canonical-different support has constant length-six `Ext^2` and
 seven generators with the complete annihilator `Ann(Omega)` is conditional
 at this stage; the eighth command verifies that equality on the seven
 full-support planes, and the final command closes it universally.
+The same ninth command now checks the intrinsic form of the fixed tail.
+On the exceptional plane it presents `Sym^2(Q)`, whose second Chern number
+is six; its transpose vertex quotient has Hilbert layers `3+3` and is
+killed by `(x,y,z)^2`.  This is the localized-Chern explanation of the
+length-six block, independent of the squarefree cubic orbit.  The adjacent
+binary-cubic discriminant class is `6H`, so branch multiplicity and support
+length are the first- and second-Chern forms of the same universal quotient.
+
+<!-- status-consumer: KLC6 88e899a9645c4a70 -->
+
 The tenth command computes the universal Deligne--Faddeev locally free
 cubic algebra and proves that the Kähler different `Fitt_0(Omega)` equals
 the full annihilator `Ann(Omega)`.  On the punctured Koszul base this
@@ -2809,6 +2819,36 @@ discriminant transformation, and the exact equivalence
 from the 24-dimensional Koszul order-four tensor kernel by their intrinsic
 third Fitting ideals.  It does not construct a Keller open for an arbitrary
 Koszul-kernel combination.
+
+The diagonal one-parameter orbit boundary of the displayed foundational
+map is checked by:
+
+```bash
+.venv/bin/python scripts/verify_foundational_toric_degenerations.py
+```
+
+This exact weight-cone calculation leaves four faces: the foundational map
+itself and three triangular automorphisms.  Its scope is diagonal source and
+target weights in the displayed coordinates; it does not cover constant-
+conjugate or nonlinear polynomial degenerations.
+
+<!-- status-consumer: FTD3 f4b5bf44c04dba69 -->
+
+The split one-coordinate foundational base-change calculation is checked
+by:
+
+```bash
+.venv/bin/python scripts/verify_foundational_split_base_changes.py
+```
+
+For a coefficient map `(w,u,v) -> (f(w),u,v)`, it verifies the global
+factor-space pullback equation, its smoothness and Laurent-UFD chart, and
+the divisor-valuation presentation
+`Cl(U_f)=Z^r/Z(m_1,...,m_r)`.  The written localization proof applies in
+every degree and shows that the source is affine three-space only when `f`
+is affine-linear.
+
+<!-- status-consumer: SBC3 f5cbae00b4e87623 -->
 
 The written no-global-monogenicity proposition then shows why these local
 generators cannot be patched into one root coordinate: the derivative would
@@ -9130,6 +9170,32 @@ generic split contracted local packet are checked by:
 
 <!-- status-consumer: PF2GRB1 aa3a0efd2e0ff277 -->
 
+The geometric-degree-six terminal cubic classification, the exact
+conic/line/constant high-contact factorization, the complete `r=6` cusp
+surface, the four-point `r=8` cusp field, and the `r=10` SNC exclusion are
+checked symbolically by:
+
+```bash
+.venv/bin/python scripts/verify_f2_geometric_degree_six_stein_reduction.py
+```
+
+The final `r=6` and `r=8` monodromy exclusions require SageMath with its
+optional SIROCCO package.  They certify every continued root path before
+enumerating all transposition-valued degree-six representations:
+
+```bash
+sage -python scripts/verify_f2_r6_cusp_braid.sage
+sage -python scripts/verify_f2_r8_cusp_braid.sage
+```
+
+The first Sage command checks the generic `A_2` point and both exceptional
+`E_6` scale classes.  The second checks all four complex embeddings of the
+exact `r=8` quartic field.  Each row has seven equal/disjoint assignments and
+no transitive assignment.  These commands exclude all three normal even
+terminal rows; the odd normal and nonnormal conductor regimes remain.
+
+<!-- status-consumer: PF2D6E1 d23d615295a1bf58 -->
+
 The generic contracted-divisor Smith theorem, forced cubic E8 jets,
 saturated normal form, length-four cyclic quotient, and global incidence
 gate are checked by:
@@ -10063,6 +10129,71 @@ cannot remove the exact binary obstruction.  See
 [`HC4_ALL_DEGREE_FRONTEND_EXPERIMENTS.md`](HC4_ALL_DEGREE_FRONTEND_EXPERIMENTS.md).
 
 <!-- status-consumer: HC4FSD3 1107bc6ff58456f5 -->
+
+The first polynomial-termination and \(x=\infty\) frontends are checked by:
+
+```bash
+.venv/bin/python scripts/verify_hc4_meng_yang_polynomial_termination.py
+```
+
+This proves `HC4MYPT1`, the degree-free backward terminal equation
+
+\[
+ (d-1)U\det H_U-(d+1)\nabla U^{\mathsf T}
+ \operatorname{adj}(H_U)\nabla U=0,
+ \qquad d=2n+6,
+\]
+
+for a last normal coefficient \(R_n=U\ne0\).  Its highest tangential form
+has zero ternary Hessian, so it is a cone after scalar extension.  It also
+proves `HC4MYPT2`: the pure weight-five ansatz
+\(R=(N/L)y^5f(xy)\) has no polynomial constant-determinant member, because
+the dominant quartic coefficient is
+\(-144a^4(m^2-m-21)\) for \(f\sim az^m\), and the resonance discriminant is
+85.  The same checker proves `HC4MYPT3` for the coupled packet
+
+\[
+R=y^5f(xy)+y^3p\,g(xy)+y^3h(xy)+y^2q\,j(xy)
+  +yp^2\ell(xy).
+\]
+
+If \(A,B,C,D,E\) are the five leading coefficients at a common maximal
+degree, its terminal equation holds exactly when \(D=0\) or \(B=E=0\).
+For `HC4MYPT4`, the checker extracts the complete 2,348-term weight-six
+equation, verifies the cancellation of \(M,P,Q,h\), and compares all 396
+Newton sectors.  Its upper envelope is
+
+\[
+\max\{5a+e+2d+22,\ 4a+2b+2d+22\}.
+\]
+
+The strict \(g^2\)-dominant chamber is empty by a negative-discriminant
+calculation.  The other strict chamber first reduces to the explicit
+resonance recorded in the note.  When \(j\) is constant, both strict
+chambers first force \(j=3\); the checker substitutes this value, reduces
+the remaining 512 terms to 121 Newton sectors, and excludes both chambers
+at the next face.  For `HC4MYPT5`, reduction modulo \(a\) writes
+\(30(d-2)=ka\); positivity leaves \(0\le k\le12\), and the thirteen exact
+quadratic discriminants are nonsquares.  Hence there is no positive-\(a\)
+integral resonance.  The endpoint \(a=0,d=2\) survives one further face
+only on \(e=2b+2\), \(b\ge1\), with
+\(360AE+B^2D(b+5)^2=0\).
+
+For `HC4MYPT6`, the checker verifies that the full coupled equation is
+affine in \(\ell\), contains no \(\ell'\) or \(\ell''\), and that its
+coefficient factors as
+\(2z(2Lz^5f-3Nz+2N)\mathscr Q\), where the nonzero 311-term factor
+\(\mathscr Q\) is independent of \(g,h,\ell\).  It also checks the exact
+axis remainder and the nonzero wall multiplier
+\(-32L^4A^5D^2P_F(a,d)\).  Thus the balanced wall is unit-triangular in the
+lower \(\ell\)-coefficients, while the resulting four-function divisibility
+remainder and the exceptional ridge remain open.  Finally, exact truncated
+recursion keeps the formal branch above the
+collision-containing plane-flat near miss nonzero through normal order five,
+and the complete terminal bracket is nonzero at every order one through
+five.  The higher corrections are not asserted to retain the marks.  This
+is a bounded computation, not an all-order nontermination theorem.  See
+[`HC4_MENG_YANG_POLYNOMIAL_TERMINATION.md`](HC4_MENG_YANG_POLYNOMIAL_TERMINATION.md).
 
 The reverse scalar-pivot classifier and simultaneous matrix-pivot equation
 builder are:
@@ -12611,6 +12742,47 @@ complete reciprocal-compatible Bezout ansatz. The same run allows independent
 base translations `K(G,C),L(G,C)` and proves that their only full-form
 difference is their fiber-admission PDE; every admitted affine-momentum pair
 therefore reduces to the already-excluded canonical form.
+The same certificate performs the global boundary audit. It computes the
+fixed-`P^4` coefficient-degree profile `(16,13,11,16,11,11)`, pole order
+nineteen, and rank-two leading form, then verifies the elementary
+standard-orbit control `omega_std+a^N*da^dc` with arbitrary pole order `N+3`.
+It checks that the Pfaffian is one and that `P*dQ+e*dR` is a polynomial
+primitive, realizes the Danielewski exponent crossing `2 -> 3` as the
+`I`-chart of the Rees algebra of `(I,U)`, and certifies
+`x|X_P(x) != 0`, `x|X_Q(x) != 0`, `A|X_e(A) != 0`, and
+`X_R=partial_e`. These last identities exclude the first three canonical
+Hamiltonians from the locally nilpotent locus. The quartic-root cancellation
+test further proves that the Hamiltonian-LND locus in `K[P,Q,R]` is exactly
+`K[R]`; the same holds in `K[e,R]`. It does not classify arbitrary
+Hamiltonian locally nilpotent derivations in the full source ring. The new
+generic-fiber block then computes
+`disc_z(S-c)=-x^3*(6*c*(1+x*y^2)^2-5*x*y^2-6)/18`. Its branch quadratic in
+`u=x*y^2` has discriminant `24*c+25`, giving four simple branch points and
+genus one. Together with factorial closure of LND kernels and the analogous
+geometrically integral generic `R`-fiber, this proves the complete
+stable-independent classification
+`{f in K[x,y,z]: X_f is LND}=K[R]`. The final associated-graded block filters
+`f=sum(e^j*f_j)` by `e`-degree. Its top layer either induces a forbidden
+nonzero LND of `K[x,y,z]` fixing `R`, or puts `f_m` in `K[R]`. The next layer
+uses `e|delta(e)` to make `f_m` constant; a nonzero constant would give an
+LND with slice `R`, contradicting the verified factorization `R=x*S`.
+Therefore every Hamiltonian LND has Hamiltonian in `K[R]`. This computes the
+Hamiltonian LND-generator algebra as `K[R]`, computes its kernel intersection
+as `K[x,y,z]`, and proves that `Omega_21` is not polynomially
+symplectomorphic to the standard form. The checker certifies the
+`R21`-specific identities; the written proof invokes the standard filtered
+LND lemma, Rentschler's two-variable theorem, factorial closure, and the
+slice theorem. The quantization block then identifies the commuting
+inverse-Jacobian frame `(delta_P,delta_Q,delta_R)`, checks the graph-normal
+Weyl pair `(delta_P,P-delta_Q)`, and verifies that
+`R,delta_R,delta_Q,Q-delta_P` form two commuting Weyl pairs in its
+centralizer. The written PBW recurrence, using the certified common constant
+ring `K[R]`, proves that these four operators exhaust the centralizer. Hence
+the natural ambient-`A_3` reduction is only a transported `A_2`, not a
+non-surjective endomorphism. The Hamiltonian-LND classification separately
+excludes any strict filtered PBW Weyl frame for the `R21` Poisson algebra.
+Only an essentially filtration-collapsing or non-PBW identification remains
+open; `(DC_2)` is not settled.
 
 ```bash
 .venv/bin/python scripts/verify_dc2_higher_nilpotence_r21_frontier.py \
@@ -12850,6 +13022,24 @@ whose quartic denominator splits into lines.  Clean nonlinear denominator
 components remain separate.  See
 [`HC4_SQUAREFREE_QUARTIC_TANGENT_FOURTH_CLOSURE.md`](HC4_SQUAREFREE_QUARTIC_TANGENT_FOURTH_CLOSURE.md).
 
+Reduce the clean smooth-cubic component invariantly with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_smooth_cubic_orthogonal_normal_form.py
+# or: make verify-hc4-smooth-cubic-orthogonal
+~~~
+
+`HC4NHM19` uses `K_Q(3)=O_Q` on the smooth cubic to make the restricted
+rank-two quotient an orthogonal bundle.  Its symmetric form splits the
+quotient into two isotropic line bundles whose degrees add to nine.  Global
+generation leaves exactly `(0,9)`, `(2,7)`, `(3,6)`, and `(4,5)`; Hessian
+integrability excludes `(0,9)`.  The checker verifies the universal
+hyperbolic matrix, cross-product kernel, rank-one adjugate, trace-free
+splitting identity, and degree ledger.  The elliptic bundle argument and
+the exclusion of the trivial summand are written in
+[`HC4_SMOOTH_CUBIC_ORTHOGONAL_NORMAL_FORM.md`](HC4_SMOOTH_CUBIC_ORTHOGONAL_NORMAL_FORM.md).
+The other three degree packets remain open.
+
 Start the next nonlinear clean denominator partition with
 
 ~~~bash
@@ -12916,6 +13106,85 @@ further hidden denominator factors, and the complementary line chart remain.
 See
 [`HC4_SMOOTH_QUARTIC_SQUAREFREE_LINE_EXCEPTIONAL_SLICES.md`](HC4_SMOOTH_QUARTIC_SQUAREFREE_LINE_EXCEPTIONAL_SLICES.md).
 
+Identify the visible pivot invariantly with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_smooth_quartic_pivot_polar_geometry.py
+# or: make verify-hc4-smooth-quartic-pivot-polar
+~~~
+
+`HC4NHM20` verifies that the displayed pivot is the first variation of
+`Res(s^3+t^3,H)` in the explicit quadratic direction `K_tau`.  In root-value
+coordinates it is `k1*h2*h3+k2*h1*h3+k3*h1*h2`, hence a smooth conic when
+`K_tau` is coprime to the cubic.  The degeneration resultant is a squarefree
+degree-fifteen product of factors of degrees `1,2,4,8`; every exceptional
+fiber is one resultant line plus one residual polar line.  This identifies
+the divisor but does not eliminate the full reciprocal-Hessian ideal on it.
+See
+[`HC4_SMOOTH_QUARTIC_PIVOT_POLAR_GEOMETRY.md`](HC4_SMOOTH_QUARTIC_PIVOT_POLAR_GEOMETRY.md).
+
+Exclude the generic point of that polar conic with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_smooth_quartic_polar_conic_generic_gate.py
+# or: make verify-hc4-smooth-quartic-polar-conic-generic
+~~~
+
+`HC4NHM22` uses the universal polar point `[p:q:r]=[1:3:1]` to give a
+rational parametrization over `Q(tau,m,c)`.  It specializes the same 81
+reciprocal-Hessian equations, verifies the ten linear pivots, and computes a
+standard basis from eight selected nonlinear coefficients.  The sixth power
+of each of the 18 active deformation coordinates reduces to zero.  Hence the
+generic set-theoretic support is the determinant-zero boundary matrix.  The
+lower parametrization and basis-denominator strata and the non-generic
+two-line fibers remain.  See
+[`HC4_SMOOTH_QUARTIC_POLAR_CONIC_GENERIC_GATE.md`](HC4_SMOOTH_QUARTIC_POLAR_CONIC_GENERIC_GATE.md).
+
+Reduce the fifteen exceptional line fibers by Fermat symmetry with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_smooth_quartic_fermat_symmetry_orbits.py
+# or: make verify-hc4-smooth-quartic-fermat-symmetry
+~~~
+
+`HC4NHM23` verifies covariance of the complete normalized reciprocal packet
+under `tau -> lambda*tau`, `lambda^2+lambda+1=0`, and the normalized
+reflection `tau -> 1/tau`.  The degree-fifteen degeneration polynomial has
+three geometric orbits of sizes `3,6,6`.  The first is `tau^3=-1`, so the
+two generic line-component and first-secondary certificates at `tau=-1`
+transport exactly to both roots of `tau^2-tau+1`.  Only the two six-point
+line-fiber normal forms remain genuinely new.  See
+[`HC4_SMOOTH_QUARTIC_FERMAT_SYMMETRY_ORBITS.md`](HC4_SMOOTH_QUARTIC_FERMAT_SYMMETRY_ORBITS.md).
+
+Close the generic points of those final two normal forms with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_smooth_quartic_final_line_orbits.py
+# or: make verify-hc4-smooth-quartic-final-line-orbits
+~~~
+
+`HC4NHM24` fixes one Fermat root and works over the exact quartic field
+`Q[tau]/(tau^4-4*tau^3+10*tau^2-4*tau+1)`, whose four embeddings meet both
+six-point orbit types.  Modulo this quartic, the polar conic is the union of
+the resultant and residual-polar lines.  On a generic parameterization of
+each component, the checker rebuilds all 81 reciprocal-Hessian equations,
+solves ten linear pivots, and reduces rows
+`28,34,46,49,52,56,62,64,67,71,76`.  Their eleven-monomial coefficient
+matrix has exact rank eleven on both components, so all active variables lie
+in the ideal and the surviving boundary matrix has determinant zero.  After
+denominator clearing, the witness determinant factors with profiles
+`c^10*linear^17*cubic` on the resultant line and
+`c^10*quadratic^17*septic` on the residual-polar line.  This is a
+characteristic-zero function-field certificate, not a finite-field
+inference.  Those finite lower linear-pivot and witness-determinant strata
+remain open.
+The checker hash is
+`sha256:ce8b2830aa93bf7c96fd1ab3164890d0321e824c1941f6ca278daf2076381684`;
+the imported 81-equation builder hash is
+`sha256:99f3f94c9ee4bac0a489f25916ff290b076d33e7165e88b0a952754548c419ec`.
+See
+[`HC4_SMOOTH_QUARTIC_FINAL_LINE_ORBITS.md`](HC4_SMOOTH_QUARTIC_FINAL_LINE_ORBITS.md).
+
 Continue the nonzero-restriction double-conic row with
 
 ~~~bash
@@ -12938,6 +13207,8 @@ Continue the nonzero-restriction double-conic row with
 .venv/bin/python scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-4222-root-chart
 .venv/bin/python scripts/verify_hc4_double_conic_normal_layers.py --group balanced-function-fields
 # or: make verify-hc4-double-conic-normal-layers
+.venv/bin/python scripts/verify_hc4_double_conic_balanced_four_root_closure.py
+# or: make verify-hc4-double-conic-balanced-four-root
 ~~~
 
 `HC4NHM15` uses the harmonic splitting
@@ -12950,10 +13221,32 @@ complete arbitrary-cross-ratio partitions `(7,1,1,1)`, `(6,2,1,1)`,
 `(5,3,1,1)`, `(5,2,2,1)`, `(4,4,1,1)`, `(4,3,2,1)`, and `(3,3,3,1)`.
 The exact double-root value chart and root permutation close `(4,2,2,2)`.
 All three `(3,3,2,2)` charts are unit over the function field in the
-cross-ratio, so only a finite exceptional cross-ratio locus in that last
-four-point row remains. The support-at-least-five families remain separate;
-no Schur solution is claimed. See
-[`HC4_DOUBLE_CONIC_NORMAL_LAYERS.md`](HC4_DOUBLE_CONIC_NORMAL_LAYERS.md).
+cross-ratio. `HC4NHM18` then closes every exceptional fiber exactly. Its
+endpoint coefficients force `A=C=0`; in the remaining coordinates the
+middle coefficient is `B=16*u^3`, while two normal layers give
+`3*u-v^2=0` and `v*(2*u-v^2)=0`. These contradict `B!=0`. Hence every
+four-point partition is empty. The support-at-least-five families remain
+separate; no Schur solution is claimed. See
+[`HC4_DOUBLE_CONIC_NORMAL_LAYERS.md`](HC4_DOUBLE_CONIC_NORMAL_LAYERS.md) and
+[`HC4_DOUBLE_CONIC_BALANCED_FOUR_ROOT_CLOSURE.md`](HC4_DOUBLE_CONIC_BALANCED_FOUR_ROOT_CLOSURE.md).
+
+Audit the invariant-ring target and its required clean saturation with
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_double_conic_invariant_saturation_gate.py
+# or: make verify-hc4-double-conic-invariant-saturation
+~~~
+
+`HC4NHM21` defines the clean elimination ideal as the four-layer ideal
+saturated by the three coefficients of `Phi2`.  The checker harmonically
+decomposes `h5=x^5+z^5`, verifies all four normal layers vanish, and checks
+that its restriction `s^10+t^10` has nonzero discriminant.  Thus no power of
+the discriminant can belong to the unsaturated ideal.  It also records a
+GIT-stable repeated-root decic with zero discriminant, showing that even a
+correct post-saturation discriminant certificate closes only the squarefree
+open.  The all-stable target is nullcone containment for the contraction to
+the binary-decic invariant ring.  See
+[`HC4_DOUBLE_CONIC_INVARIANT_SATURATION_GATE.md`](HC4_DOUBLE_CONIC_INVARIANT_SATURATION_GATE.md).
 
 ## HC4 direct repeated-linear Hessian-factor gates
 

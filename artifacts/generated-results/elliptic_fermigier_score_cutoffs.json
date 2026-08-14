@@ -1,0 +1,650 @@
+{
+  "curves": [
+    {
+      "id": "published-e22",
+      "parameter": "39508/39",
+      "provenance": "Fermigier's published E22 specialization",
+      "record_scan_position_at_numeric_cutoff_500": null,
+      "scores": {
+        "1000": {
+          "primes_used": 161,
+          "score": "50.584896906638965797487744998216749303751735106360524367438179464358688462885870",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        },
+        "10000": {
+          "primes_used": 1222,
+          "score": "106.74618120367013425111836395978645329645795900513534359696370450216815268315944",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        },
+        "100000": {
+          "primes_used": 9584,
+          "score": "163.16576537259417463170053972131381071549235976098167883252114748790250170306290",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "primes_used": 296,
+          "score": "69.525177909308467309212452796603003240670157757980395674449127022665157417833185",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        },
+        "500": {
+          "primes_used": 88,
+          "score": "40.913184615904211753033737127138448943563906951723491605311136583080390816870057",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        },
+        "5000": {
+          "primes_used": 662,
+          "score": "93.199629289012841526203828644161027969210993957920213109756065116506010364802366",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        }
+      }
+    },
+    {
+      "id": "record-top-1",
+      "parameter": "1666/9",
+      "provenance": "record scan",
+      "record_scan_position_at_numeric_cutoff_500": 1,
+      "scores": {
+        "1000": {
+          "primes_used": 160,
+          "score": "49.815886439841732895711027076324616396180796900182341386803603296577846611636226",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 0
+        },
+        "10000": {
+          "primes_used": 1221,
+          "score": "81.634377820972578918307742677915901184236704730689785177505167105938933777791699",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 0
+        },
+        "100000": {
+          "primes_used": 9584,
+          "score": "122.70744392931963867288393697479808596764959275051308263687510268581194208893839",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 0
+        },
+        "2000": {
+          "primes_used": 295,
+          "score": "60.519323014617419856255016154895330563996071246630039496610052238786540506443815",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 0
+        },
+        "500": {
+          "primes_used": 87,
+          "score": "40.048807038898490447744152400140265421596477066465980090163890116723067757820399",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 0
+        },
+        "5000": {
+          "primes_used": 661,
+          "score": "75.817253497102838759003660155874897590029226712247326332037823195369175331506850",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 0
+        }
+      }
+    },
+    {
+      "id": "record-top-2",
+      "parameter": "1666/4227",
+      "provenance": "record scan",
+      "record_scan_position_at_numeric_cutoff_500": 2,
+      "scores": {
+        "1000": {
+          "primes_used": 162,
+          "score": "47.358328619351154524697431290432621121630461820456330170116637958718017106111920",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 0
+        },
+        "10000": {
+          "primes_used": 1222,
+          "score": "78.218604552042212226236541987681187805868831801197246440082523107877012918599856",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        },
+        "100000": {
+          "primes_used": 9585,
+          "score": "104.73992927607678697988953558305924204916531385905220915527391925254287609973580",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "primes_used": 296,
+          "score": "58.814392562097532470903911927045682669756028807119494564444353629215839161976045",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        },
+        "500": {
+          "primes_used": 89,
+          "score": "39.381532635680724860807658319419208102377796892151132657380293637935888873722565",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 0
+        },
+        "5000": {
+          "primes_used": 662,
+          "score": "67.863281653143641887446057818611118512171737795354172679900491054862879217297485",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        }
+      }
+    },
+    {
+      "id": "record-top-3",
+      "parameter": "3332/2571",
+      "provenance": "record scan",
+      "record_scan_position_at_numeric_cutoff_500": 3,
+      "scores": {
+        "1000": {
+          "primes_used": 161,
+          "score": "48.098180915635780297245485759726370005340153592412894026571637022420044481623599",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        },
+        "10000": {
+          "primes_used": 1221,
+          "score": "78.566750550129691943253396561381545821617319756683112757999855203652975811569540",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        },
+        "100000": {
+          "primes_used": 9584,
+          "score": "114.34469797435774345189101160230803444154984983182351883491418436091548018562535",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "primes_used": 296,
+          "score": "54.092196602663863114968593029838355595625952898325035396519886012799537572757363",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        },
+        "500": {
+          "primes_used": 89,
+          "score": "38.935284784006955895213440365163328146071838376684407450160058236497793548997726",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 0
+        },
+        "5000": {
+          "primes_used": 661,
+          "score": "69.595804689450496871442723810694639463456565784282606084288930407927349928332343",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        }
+      }
+    },
+    {
+      "id": "record-top-4",
+      "parameter": "-2975/1493",
+      "provenance": "record scan",
+      "record_scan_position_at_numeric_cutoff_500": 4,
+      "scores": {
+        "1000": {
+          "primes_used": 161,
+          "score": "47.126870273203575804107810157863706991598190364639861989686898096293485572245275",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 0
+        },
+        "10000": {
+          "primes_used": 1219,
+          "score": "81.568406557977875577654293724241396300705535531656170902573009500543092179477243",
+          "skipped_bad_primes": 7,
+          "skipped_denominator_primes": 1
+        },
+        "100000": {
+          "primes_used": 9581,
+          "score": "113.73563589036235624834237718963047479664653614326868819620410157898367673155231",
+          "skipped_bad_primes": 8,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "primes_used": 295,
+          "score": "57.154832870923807324276631997377437717080152285414756399916686311808062298097412",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        },
+        "500": {
+          "primes_used": 88,
+          "score": "38.934893391233315932848042496734776580568122251655776877670007183306743720463708",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 0
+        },
+        "5000": {
+          "primes_used": 661,
+          "score": "69.970808022855397333111316292094443161591945648399770170159803184428004737359291",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        }
+      }
+    },
+    {
+      "id": "record-top-5",
+      "parameter": "4760/1289",
+      "provenance": "record scan",
+      "record_scan_position_at_numeric_cutoff_500": 5,
+      "scores": {
+        "1000": {
+          "primes_used": 161,
+          "score": "45.748115859781284046242144690930358568126279192288570900701061701082127475785970",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 0
+        },
+        "10000": {
+          "primes_used": 1220,
+          "score": "66.489876888489207207229525639788161054538049034438677471273645131107396616792861",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "100000": {
+          "primes_used": 9583,
+          "score": "101.91786035030164933895909803879060422130178862039458838435859454797818821375229",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "primes_used": 295,
+          "score": "50.404968899057814795357618237440162008815568052283429285781379661376501573362230",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        },
+        "500": {
+          "primes_used": 88,
+          "score": "38.807844523699517363676975645332455602882609039642715714551341519728156355072229",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 0
+        },
+        "5000": {
+          "primes_used": 660,
+          "score": "60.185451867367685880744399478259588516595401417000656224246372518322740372338323",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        }
+      }
+    },
+    {
+      "id": "record-top-6",
+      "parameter": "595/471",
+      "provenance": "record scan",
+      "record_scan_position_at_numeric_cutoff_500": 6,
+      "scores": {
+        "1000": {
+          "primes_used": 159,
+          "score": "48.637040434599263689160227374499979443952728166552562272922696448784790578257913",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "10000": {
+          "primes_used": 1220,
+          "score": "78.116988383406854545167770787574080394252293799501143517480023602351485596855645",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "100000": {
+          "primes_used": 9583,
+          "score": "109.71463124504195185254170827069477564054832309379569550169843482351970036121722",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "primes_used": 294,
+          "score": "59.004916973656538951152503274468806785909226411364377838369446406092839745938129",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "500": {
+          "primes_used": 86,
+          "score": "38.555220711195845360987898107597667322238176774854564597952887160441732703045010",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "5000": {
+          "primes_used": 660,
+          "score": "64.364170585212325492964117536598114040845397444234872311903915799991404641718629",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        }
+      }
+    },
+    {
+      "id": "record-top-7",
+      "parameter": "4879/1213",
+      "provenance": "record scan",
+      "record_scan_position_at_numeric_cutoff_500": 7,
+      "scores": {
+        "1000": {
+          "primes_used": 161,
+          "score": "47.216335094786403380551908359966003059247097858093214744580740855403746662529157",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 0
+        },
+        "10000": {
+          "primes_used": 1221,
+          "score": "80.582941068730639734827642340498561152669302783553791335072269400218417659115170",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        },
+        "100000": {
+          "primes_used": 9583,
+          "score": "112.47048980719425800167761951594797370244709425736853467700329341996026663969956",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "primes_used": 295,
+          "score": "57.110511357507243986858491730705685602821990645650898759529375418852635437622764",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        },
+        "500": {
+          "primes_used": 88,
+          "score": "38.357166659220016873878165733968511297502266121283265772332973601812155611730536",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 0
+        },
+        "5000": {
+          "primes_used": 661,
+          "score": "71.168764780459509885514008545188438974586339905830672811420006429333805802284152",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        }
+      }
+    },
+    {
+      "id": "record-top-8",
+      "parameter": "714/617",
+      "provenance": "record scan",
+      "record_scan_position_at_numeric_cutoff_500": 8,
+      "scores": {
+        "1000": {
+          "primes_used": 159,
+          "score": "50.263673238097304554527187958221003968997340919313871749926640696403030632986971",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "10000": {
+          "primes_used": 1218,
+          "score": "80.213076901606939898445802632503498616442605301075471546658989206020528866126855",
+          "skipped_bad_primes": 8,
+          "skipped_denominator_primes": 1
+        },
+        "100000": {
+          "primes_used": 9581,
+          "score": "106.65820159694072745095352785537607494257011140885546309809668005320848842389667",
+          "skipped_bad_primes": 8,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "primes_used": 294,
+          "score": "60.638849464653293541835142524405522264344389976032178668738084391304853637055553",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "500": {
+          "primes_used": 87,
+          "score": "38.315161980258883166100474489763978570978815057343055385996963135279994737640542",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 0
+        },
+        "5000": {
+          "primes_used": 660,
+          "score": "72.383908387688176326632977580107743581580360309818549335678468343328314158070566",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        }
+      }
+    },
+    {
+      "id": "record-top-9",
+      "parameter": "-2023/2217",
+      "provenance": "record scan",
+      "record_scan_position_at_numeric_cutoff_500": 9,
+      "scores": {
+        "1000": {
+          "primes_used": 159,
+          "score": "45.920727239099951165815129460724733994654149898282079866032380412081246675648495",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "10000": {
+          "primes_used": 1220,
+          "score": "76.154003669730604233478728182202768063438334680524108998361973807888579851041229",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "100000": {
+          "primes_used": 9583,
+          "score": "102.60574611420496217086674612365215942317691996839785272813261569399031739978614",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "primes_used": 294,
+          "score": "57.603188677546021741624564355386168442337075449165268158721264106451525534267028",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "500": {
+          "primes_used": 88,
+          "score": "38.299054633785565437613140696485215194429476022501404213862467213184666678954676",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 0
+        },
+        "5000": {
+          "primes_used": 660,
+          "score": "69.633404330344031013661062129824915634875545903865010965125538658751389123261774",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        }
+      }
+    },
+    {
+      "id": "record-top-10",
+      "parameter": "1547/3156",
+      "provenance": "record scan",
+      "record_scan_position_at_numeric_cutoff_500": 10,
+      "scores": {
+        "1000": {
+          "primes_used": 161,
+          "score": "43.267202284267456474904631106033375055671701075777082039189018377923587409255731",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        },
+        "10000": {
+          "primes_used": 1222,
+          "score": "74.967661554486520216097137584951026636602313669493077446993633902971595226454282",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        },
+        "100000": {
+          "primes_used": 9585,
+          "score": "100.88776940278904733583413655015563861511199148341391268863317776760714839466319",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "primes_used": 296,
+          "score": "51.575535915153346801373141943850574740692561925665425536387393684387079355542337",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        },
+        "500": {
+          "primes_used": 88,
+          "score": "38.026848516438978895628514188565987085264584101112230938449895511846728767821657",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        },
+        "5000": {
+          "primes_used": 662,
+          "score": "66.257904514276157511258430475389337974521965024989433719046812427266629118003942",
+          "skipped_bad_primes": 4,
+          "skipped_denominator_primes": 1
+        }
+      }
+    }
+  ],
+  "family": "normalized Fermigier--Mestre family",
+  "parameters": {
+    "cutoffs": [
+      500,
+      1000,
+      2000,
+      5000,
+      10000,
+      100000
+    ],
+    "output": "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic_fermigier_score_cutoffs.json",
+    "pari_stack_bytes": 256000000,
+    "pari_timeout": 30.0,
+    "record_candidate_count": 10
+  },
+  "primary_candidate": {
+    "comparison_to_benchmark": [
+      {
+        "benchmark_score": "40.913184615904211753033737127138448943563906951723491605311136583080390816870057",
+        "candidate_minus_benchmark": "-0.8643775770057213052895847270",
+        "candidate_rank_among_compared": 2,
+        "candidate_score": "40.048807038898490447744152400140265421596477066465980090163890116723067757820399",
+        "curves_compared": 11,
+        "numeric_prime_cutoff": 500,
+        "ranking": [
+          "published-e22",
+          "record-top-1",
+          "record-top-2",
+          "record-top-3",
+          "record-top-4",
+          "record-top-5",
+          "record-top-6",
+          "record-top-7",
+          "record-top-8",
+          "record-top-9",
+          "record-top-10"
+        ]
+      },
+      {
+        "benchmark_score": "50.584896906638965797487744998216749303751735106360524367438179464358688462885870",
+        "candidate_minus_benchmark": "-0.7690104667972329017767179219",
+        "candidate_rank_among_compared": 3,
+        "candidate_score": "49.815886439841732895711027076324616396180796900182341386803603296577846611636226",
+        "curves_compared": 11,
+        "numeric_prime_cutoff": 1000,
+        "ranking": [
+          "published-e22",
+          "record-top-8",
+          "record-top-1",
+          "record-top-6",
+          "record-top-3",
+          "record-top-2",
+          "record-top-7",
+          "record-top-4",
+          "record-top-9",
+          "record-top-5",
+          "record-top-10"
+        ]
+      },
+      {
+        "benchmark_score": "69.525177909308467309212452796603003240670157757980395674449127022665157417833185",
+        "candidate_minus_benchmark": "-9.005854894691047452957436642",
+        "candidate_rank_among_compared": 3,
+        "candidate_score": "60.519323014617419856255016154895330563996071246630039496610052238786540506443815",
+        "curves_compared": 11,
+        "numeric_prime_cutoff": 2000,
+        "ranking": [
+          "published-e22",
+          "record-top-8",
+          "record-top-1",
+          "record-top-6",
+          "record-top-2",
+          "record-top-9",
+          "record-top-4",
+          "record-top-7",
+          "record-top-3",
+          "record-top-10",
+          "record-top-5"
+        ]
+      },
+      {
+        "benchmark_score": "93.199629289012841526203828644161027969210993957920213109756065116506010364802366",
+        "candidate_minus_benchmark": "-17.38237579191000276720016849",
+        "candidate_rank_among_compared": 2,
+        "candidate_score": "75.817253497102838759003660155874897590029226712247326332037823195369175331506850",
+        "curves_compared": 11,
+        "numeric_prime_cutoff": 5000,
+        "ranking": [
+          "published-e22",
+          "record-top-1",
+          "record-top-8",
+          "record-top-7",
+          "record-top-4",
+          "record-top-9",
+          "record-top-3",
+          "record-top-2",
+          "record-top-10",
+          "record-top-6",
+          "record-top-5"
+        ]
+      },
+      {
+        "benchmark_score": "106.74618120367013425111836395978645329645795900513534359696370450216815268315944",
+        "candidate_minus_benchmark": "-25.11180338269755533281062128",
+        "candidate_rank_among_compared": 2,
+        "candidate_score": "81.634377820972578918307742677915901184236704730689785177505167105938933777791699",
+        "curves_compared": 11,
+        "numeric_prime_cutoff": 10000,
+        "ranking": [
+          "published-e22",
+          "record-top-1",
+          "record-top-4",
+          "record-top-7",
+          "record-top-8",
+          "record-top-3",
+          "record-top-2",
+          "record-top-6",
+          "record-top-9",
+          "record-top-10",
+          "record-top-5"
+        ]
+      },
+      {
+        "benchmark_score": "163.16576537259417463170053972131381071549235976098167883252114748790250170306290",
+        "candidate_minus_benchmark": "-40.45832144327453595881660275",
+        "candidate_rank_among_compared": 2,
+        "candidate_score": "122.70744392931963867288393697479808596764959275051308263687510268581194208893839",
+        "curves_compared": 11,
+        "numeric_prime_cutoff": 100000,
+        "ranking": [
+          "published-e22",
+          "record-top-1",
+          "record-top-3",
+          "record-top-4",
+          "record-top-7",
+          "record-top-6",
+          "record-top-8",
+          "record-top-2",
+          "record-top-9",
+          "record-top-5",
+          "record-top-10"
+        ]
+      }
+    ],
+    "id": "record-top-1",
+    "parameter": "1666/9"
+  },
+  "reproducing_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/compare_score_cutoffs.py",
+  "schema_version": 1,
+  "score_definition": {
+    "approximation": "PARI real logarithms and their cumulative sums only",
+    "exclusions": "p=2,3; primes dividing the parameter denominator; and all primes dividing the minimal discriminant",
+    "formula": "sum_{5<=p<=B, p not dividing b, good reduction} ((2-a_p)/(p+1-a_p))*log(p), for T=a/b in lowest terms",
+    "prime_bound_semantics": "numerical prime cutoff p<=B",
+    "trace_source": "exact PARI/GP ellap on an exact minimal model"
+  },
+  "selection_warning": "record-top-1 through record-top-10 were selected by their scores at numerical cutoff 500 in an earlier bounded height-5000 scan, so comparisons involving that cutoff are selection-biased",
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6"
+  },
+  "status": "bounded computational comparison of rank-triage heuristics; no score is a rank or point-independence inference"
+}

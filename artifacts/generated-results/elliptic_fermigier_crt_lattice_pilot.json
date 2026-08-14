@@ -1,0 +1,6731 @@
+{
+  "candidates": [
+    {
+      "below_log_conductor_target": false,
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 4 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 4
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 2 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 2
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 1111
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 510
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 1389320748,
+      "denominator": 174037,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 174037,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": 19339,
+      "pari": {
+        "conductor": 1237714787443386675963764266500147304962463511454106909970836165075849095388028102686262427980888353964291162745024390110080278566082747193231398160283640965241840,
+        "log_conductor": "373.232051831046158674589784990775336182353286593454649090625",
+        "minimal_discriminant": 51337321442577424776125888131238595150686848710900941840429869906227556396192319156741924758787307372058982149234351199522507489604957669757668203289738193319020714703687896745580884198400,
+        "minimal_model": [
+          0,
+          -1,
+          0,
+          -316578853608122139479050872993126742381959914263856540625249496,
+          2140476728203726056379772082132383523563384936567022614093142626103038722699323851370253025920
+        ],
+        "root_number": 1
+      },
+      "score": {
+        "primes_used": 38,
+        "skipped_bad_primes": 5,
+        "skipped_denominator_primes": 1,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -6
+          },
+          {
+            "prime": 17,
+            "trace": -7
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 29,
+            "trace": -10
+          },
+          {
+            "prime": 31,
+            "trace": -10
+          },
+          {
+            "prime": 41,
+            "trace": -9
+          },
+          {
+            "prime": 43,
+            "trace": -11
+          },
+          {
+            "prime": 47,
+            "trace": -10
+          },
+          {
+            "prime": 53,
+            "trace": -9
+          },
+          {
+            "prime": 59,
+            "trace": -12
+          },
+          {
+            "prime": 61,
+            "trace": -15
+          },
+          {
+            "prime": 67,
+            "trace": -12
+          },
+          {
+            "prime": 71,
+            "trace": -14
+          },
+          {
+            "prime": 73,
+            "trace": -16
+          },
+          {
+            "prime": 83,
+            "trace": -16
+          },
+          {
+            "prime": 97,
+            "trace": -16
+          },
+          {
+            "prime": 101,
+            "trace": -15
+          },
+          {
+            "prime": 103,
+            "trace": -8
+          },
+          {
+            "prime": 107,
+            "trace": -13
+          },
+          {
+            "prime": 109,
+            "trace": -12
+          },
+          {
+            "prime": 113,
+            "trace": -16
+          },
+          {
+            "prime": 127,
+            "trace": -19
+          },
+          {
+            "prime": 137,
+            "trace": -18
+          },
+          {
+            "prime": 139,
+            "trace": -8
+          },
+          {
+            "prime": 149,
+            "trace": -20
+          },
+          {
+            "prime": 151,
+            "trace": -24
+          },
+          {
+            "prime": 157,
+            "trace": -10
+          },
+          {
+            "prime": 163,
+            "trace": -25
+          },
+          {
+            "prime": 167,
+            "trace": -8
+          },
+          {
+            "prime": 173,
+            "trace": -18
+          },
+          {
+            "prime": 179,
+            "trace": -12
+          },
+          {
+            "prime": 181,
+            "trace": -18
+          },
+          {
+            "prime": 191,
+            "trace": -24
+          },
+          {
+            "prime": 193,
+            "trace": -14
+          },
+          {
+            "prime": 197,
+            "trace": 4
+          },
+          {
+            "prime": 199,
+            "trace": -8
+          }
+        ],
+        "value": 25.79384385283549
+      },
+      "state_index": 15,
+      "t": "19339/174037"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 4 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 4
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 1 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 1
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 1111
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 16651
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 908262576,
+      "denominator": 251499,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 251499,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": -140464,
+      "score": {
+        "primes_used": 41,
+        "skipped_bad_primes": 3,
+        "skipped_denominator_primes": 0,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -7
+          },
+          {
+            "prime": 17,
+            "trace": -5
+          },
+          {
+            "prime": 19,
+            "trace": -8
+          },
+          {
+            "prime": 23,
+            "trace": -6
+          },
+          {
+            "prime": 29,
+            "trace": -10
+          },
+          {
+            "prime": 31,
+            "trace": -10
+          },
+          {
+            "prime": 37,
+            "trace": -5
+          },
+          {
+            "prime": 41,
+            "trace": -8
+          },
+          {
+            "prime": 43,
+            "trace": -8
+          },
+          {
+            "prime": 47,
+            "trace": -12
+          },
+          {
+            "prime": 53,
+            "trace": -12
+          },
+          {
+            "prime": 59,
+            "trace": -9
+          },
+          {
+            "prime": 61,
+            "trace": -12
+          },
+          {
+            "prime": 67,
+            "trace": -11
+          },
+          {
+            "prime": 71,
+            "trace": -16
+          },
+          {
+            "prime": 73,
+            "trace": -12
+          },
+          {
+            "prime": 79,
+            "trace": -11
+          },
+          {
+            "prime": 83,
+            "trace": -12
+          },
+          {
+            "prime": 97,
+            "trace": -5
+          },
+          {
+            "prime": 101,
+            "trace": -3
+          },
+          {
+            "prime": 103,
+            "trace": -12
+          },
+          {
+            "prime": 107,
+            "trace": -4
+          },
+          {
+            "prime": 109,
+            "trace": 1
+          },
+          {
+            "prime": 113,
+            "trace": -20
+          },
+          {
+            "prime": 127,
+            "trace": -17
+          },
+          {
+            "prime": 137,
+            "trace": -6
+          },
+          {
+            "prime": 139,
+            "trace": -16
+          },
+          {
+            "prime": 149,
+            "trace": -8
+          },
+          {
+            "prime": 151,
+            "trace": -2
+          },
+          {
+            "prime": 157,
+            "trace": -24
+          },
+          {
+            "prime": 163,
+            "trace": -17
+          },
+          {
+            "prime": 167,
+            "trace": -24
+          },
+          {
+            "prime": 173,
+            "trace": 1
+          },
+          {
+            "prime": 179,
+            "trace": -15
+          },
+          {
+            "prime": 181,
+            "trace": -16
+          },
+          {
+            "prime": 191,
+            "trace": -15
+          },
+          {
+            "prime": 193,
+            "trace": -21
+          },
+          {
+            "prime": 197,
+            "trace": -15
+          },
+          {
+            "prime": 199,
+            "trace": -14
+          }
+        ],
+        "value": 25.432812499261043
+      },
+      "state_index": 9,
+      "t": "-140464/251499"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 3 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 3
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 1 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 1
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 6810
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 510
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 3849367259,
+      "denominator": 141662,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 257605,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": -257605,
+      "score": {
+        "primes_used": 40,
+        "skipped_bad_primes": 3,
+        "skipped_denominator_primes": 1,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -6
+          },
+          {
+            "prime": 17,
+            "trace": -4
+          },
+          {
+            "prime": 19,
+            "trace": -6
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 29,
+            "trace": -10
+          },
+          {
+            "prime": 31,
+            "trace": -8
+          },
+          {
+            "prime": 37,
+            "trace": -8
+          },
+          {
+            "prime": 41,
+            "trace": -10
+          },
+          {
+            "prime": 43,
+            "trace": -7
+          },
+          {
+            "prime": 47,
+            "trace": -12
+          },
+          {
+            "prime": 53,
+            "trace": -11
+          },
+          {
+            "prime": 59,
+            "trace": -13
+          },
+          {
+            "prime": 61,
+            "trace": -11
+          },
+          {
+            "prime": 67,
+            "trace": -4
+          },
+          {
+            "prime": 71,
+            "trace": -15
+          },
+          {
+            "prime": 73,
+            "trace": -14
+          },
+          {
+            "prime": 79,
+            "trace": -16
+          },
+          {
+            "prime": 83,
+            "trace": -9
+          },
+          {
+            "prime": 97,
+            "trace": -18
+          },
+          {
+            "prime": 101,
+            "trace": -20
+          },
+          {
+            "prime": 103,
+            "trace": -16
+          },
+          {
+            "prime": 107,
+            "trace": -12
+          },
+          {
+            "prime": 109,
+            "trace": -18
+          },
+          {
+            "prime": 113,
+            "trace": -8
+          },
+          {
+            "prime": 127,
+            "trace": -16
+          },
+          {
+            "prime": 137,
+            "trace": -10
+          },
+          {
+            "prime": 139,
+            "trace": -12
+          },
+          {
+            "prime": 149,
+            "trace": -6
+          },
+          {
+            "prime": 151,
+            "trace": -8
+          },
+          {
+            "prime": 157,
+            "trace": 3
+          },
+          {
+            "prime": 163,
+            "trace": 9
+          },
+          {
+            "prime": 167,
+            "trace": -14
+          },
+          {
+            "prime": 173,
+            "trace": 0
+          },
+          {
+            "prime": 179,
+            "trace": -25
+          },
+          {
+            "prime": 181,
+            "trace": -17
+          },
+          {
+            "prime": 191,
+            "trace": -21
+          },
+          {
+            "prime": 197,
+            "trace": -22
+          },
+          {
+            "prime": 199,
+            "trace": -8
+          }
+        ],
+        "value": 25.300295063600302
+      },
+      "state_index": 2,
+      "t": "-257605/141662"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 4 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 4
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 1 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 1
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 1111
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 16651
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 908262576,
+      "denominator": 237313,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 237313,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": 75547,
+      "score": {
+        "primes_used": 39,
+        "skipped_bad_primes": 5,
+        "skipped_denominator_primes": 0,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 17,
+            "trace": -7
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 29,
+            "trace": -9
+          },
+          {
+            "prime": 31,
+            "trace": -7
+          },
+          {
+            "prime": 37,
+            "trace": -4
+          },
+          {
+            "prime": 41,
+            "trace": -12
+          },
+          {
+            "prime": 43,
+            "trace": -12
+          },
+          {
+            "prime": 47,
+            "trace": -10
+          },
+          {
+            "prime": 53,
+            "trace": -11
+          },
+          {
+            "prime": 59,
+            "trace": -13
+          },
+          {
+            "prime": 61,
+            "trace": -13
+          },
+          {
+            "prime": 67,
+            "trace": -12
+          },
+          {
+            "prime": 71,
+            "trace": -12
+          },
+          {
+            "prime": 73,
+            "trace": -14
+          },
+          {
+            "prime": 79,
+            "trace": 1
+          },
+          {
+            "prime": 83,
+            "trace": -6
+          },
+          {
+            "prime": 97,
+            "trace": -18
+          },
+          {
+            "prime": 101,
+            "trace": -18
+          },
+          {
+            "prime": 103,
+            "trace": -8
+          },
+          {
+            "prime": 107,
+            "trace": -12
+          },
+          {
+            "prime": 109,
+            "trace": -16
+          },
+          {
+            "prime": 113,
+            "trace": -20
+          },
+          {
+            "prime": 127,
+            "trace": -12
+          },
+          {
+            "prime": 137,
+            "trace": -3
+          },
+          {
+            "prime": 139,
+            "trace": 5
+          },
+          {
+            "prime": 149,
+            "trace": -23
+          },
+          {
+            "prime": 151,
+            "trace": -22
+          },
+          {
+            "prime": 157,
+            "trace": -18
+          },
+          {
+            "prime": 163,
+            "trace": -14
+          },
+          {
+            "prime": 167,
+            "trace": -12
+          },
+          {
+            "prime": 173,
+            "trace": -18
+          },
+          {
+            "prime": 179,
+            "trace": -26
+          },
+          {
+            "prime": 181,
+            "trace": -25
+          },
+          {
+            "prime": 191,
+            "trace": -24
+          },
+          {
+            "prime": 193,
+            "trace": -14
+          },
+          {
+            "prime": 197,
+            "trace": -12
+          },
+          {
+            "prime": 199,
+            "trace": -12
+          }
+        ],
+        "value": 25.14161632646487
+      },
+      "state_index": 9,
+      "t": "75547/237313"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 3 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 3
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 2 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 2
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 6810
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 510
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 994789358,
+      "denominator": 109793,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 139201,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": -139201,
+      "score": {
+        "primes_used": 40,
+        "skipped_bad_primes": 4,
+        "skipped_denominator_primes": 0,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 17,
+            "trace": -8
+          },
+          {
+            "prime": 19,
+            "trace": -6
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 29,
+            "trace": -10
+          },
+          {
+            "prime": 31,
+            "trace": -8
+          },
+          {
+            "prime": 37,
+            "trace": -8
+          },
+          {
+            "prime": 41,
+            "trace": -9
+          },
+          {
+            "prime": 43,
+            "trace": -12
+          },
+          {
+            "prime": 47,
+            "trace": -4
+          },
+          {
+            "prime": 53,
+            "trace": -12
+          },
+          {
+            "prime": 59,
+            "trace": -14
+          },
+          {
+            "prime": 61,
+            "trace": -9
+          },
+          {
+            "prime": 67,
+            "trace": -2
+          },
+          {
+            "prime": 71,
+            "trace": -10
+          },
+          {
+            "prime": 73,
+            "trace": -14
+          },
+          {
+            "prime": 79,
+            "trace": -12
+          },
+          {
+            "prime": 83,
+            "trace": -15
+          },
+          {
+            "prime": 97,
+            "trace": -14
+          },
+          {
+            "prime": 101,
+            "trace": -8
+          },
+          {
+            "prime": 103,
+            "trace": -7
+          },
+          {
+            "prime": 107,
+            "trace": -20
+          },
+          {
+            "prime": 109,
+            "trace": -9
+          },
+          {
+            "prime": 113,
+            "trace": -15
+          },
+          {
+            "prime": 127,
+            "trace": -12
+          },
+          {
+            "prime": 137,
+            "trace": 6
+          },
+          {
+            "prime": 139,
+            "trace": -17
+          },
+          {
+            "prime": 149,
+            "trace": -14
+          },
+          {
+            "prime": 151,
+            "trace": -17
+          },
+          {
+            "prime": 157,
+            "trace": -7
+          },
+          {
+            "prime": 163,
+            "trace": -20
+          },
+          {
+            "prime": 167,
+            "trace": -14
+          },
+          {
+            "prime": 173,
+            "trace": 6
+          },
+          {
+            "prime": 179,
+            "trace": -12
+          },
+          {
+            "prime": 181,
+            "trace": -25
+          },
+          {
+            "prime": 191,
+            "trace": -18
+          },
+          {
+            "prime": 193,
+            "trace": -21
+          },
+          {
+            "prime": 197,
+            "trace": -18
+          },
+          {
+            "prime": 199,
+            "trace": -19
+          }
+        ],
+        "value": 24.903723852404248
+      },
+      "state_index": 4,
+      "t": "-139201/109793"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 4 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 4
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 1 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 1
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 1111
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 510
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 4243898649,
+      "denominator": 387633,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 387633,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": -345110,
+      "score": {
+        "primes_used": 39,
+        "skipped_bad_primes": 4,
+        "skipped_denominator_primes": 1,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -7
+          },
+          {
+            "prime": 17,
+            "trace": -5
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 29,
+            "trace": -10
+          },
+          {
+            "prime": 31,
+            "trace": -9
+          },
+          {
+            "prime": 37,
+            "trace": -2
+          },
+          {
+            "prime": 41,
+            "trace": -12
+          },
+          {
+            "prime": 43,
+            "trace": -10
+          },
+          {
+            "prime": 47,
+            "trace": -6
+          },
+          {
+            "prime": 53,
+            "trace": -12
+          },
+          {
+            "prime": 59,
+            "trace": -12
+          },
+          {
+            "prime": 61,
+            "trace": -13
+          },
+          {
+            "prime": 67,
+            "trace": -10
+          },
+          {
+            "prime": 71,
+            "trace": -14
+          },
+          {
+            "prime": 73,
+            "trace": -15
+          },
+          {
+            "prime": 79,
+            "trace": 10
+          },
+          {
+            "prime": 83,
+            "trace": -15
+          },
+          {
+            "prime": 97,
+            "trace": -17
+          },
+          {
+            "prime": 101,
+            "trace": -15
+          },
+          {
+            "prime": 103,
+            "trace": -13
+          },
+          {
+            "prime": 107,
+            "trace": -20
+          },
+          {
+            "prime": 109,
+            "trace": -10
+          },
+          {
+            "prime": 113,
+            "trace": -19
+          },
+          {
+            "prime": 127,
+            "trace": -12
+          },
+          {
+            "prime": 137,
+            "trace": -18
+          },
+          {
+            "prime": 139,
+            "trace": -10
+          },
+          {
+            "prime": 149,
+            "trace": -21
+          },
+          {
+            "prime": 151,
+            "trace": -22
+          },
+          {
+            "prime": 163,
+            "trace": -5
+          },
+          {
+            "prime": 167,
+            "trace": -17
+          },
+          {
+            "prime": 173,
+            "trace": -18
+          },
+          {
+            "prime": 179,
+            "trace": -14
+          },
+          {
+            "prime": 181,
+            "trace": -12
+          },
+          {
+            "prime": 191,
+            "trace": 9
+          },
+          {
+            "prime": 193,
+            "trace": -19
+          },
+          {
+            "prime": 197,
+            "trace": -18
+          },
+          {
+            "prime": 199,
+            "trace": -16
+          }
+        ],
+        "value": 24.856718688326996
+      },
+      "state_index": 0,
+      "t": "-345110/387633"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 4 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 4
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 1 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 1
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 1111
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 16651
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 908262576,
+      "denominator": 131039,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 218137,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": 218137,
+      "score": {
+        "primes_used": 40,
+        "skipped_bad_primes": 3,
+        "skipped_denominator_primes": 1,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -6
+          },
+          {
+            "prime": 17,
+            "trace": -8
+          },
+          {
+            "prime": 19,
+            "trace": -8
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 29,
+            "trace": -10
+          },
+          {
+            "prime": 31,
+            "trace": -5
+          },
+          {
+            "prime": 37,
+            "trace": -8
+          },
+          {
+            "prime": 41,
+            "trace": -9
+          },
+          {
+            "prime": 43,
+            "trace": -12
+          },
+          {
+            "prime": 47,
+            "trace": -8
+          },
+          {
+            "prime": 53,
+            "trace": -9
+          },
+          {
+            "prime": 61,
+            "trace": -14
+          },
+          {
+            "prime": 67,
+            "trace": -12
+          },
+          {
+            "prime": 71,
+            "trace": -10
+          },
+          {
+            "prime": 73,
+            "trace": -16
+          },
+          {
+            "prime": 79,
+            "trace": -17
+          },
+          {
+            "prime": 83,
+            "trace": -6
+          },
+          {
+            "prime": 97,
+            "trace": -15
+          },
+          {
+            "prime": 101,
+            "trace": -5
+          },
+          {
+            "prime": 103,
+            "trace": -10
+          },
+          {
+            "prime": 107,
+            "trace": -11
+          },
+          {
+            "prime": 109,
+            "trace": -19
+          },
+          {
+            "prime": 113,
+            "trace": 0
+          },
+          {
+            "prime": 127,
+            "trace": -14
+          },
+          {
+            "prime": 137,
+            "trace": -17
+          },
+          {
+            "prime": 139,
+            "trace": -8
+          },
+          {
+            "prime": 149,
+            "trace": -11
+          },
+          {
+            "prime": 151,
+            "trace": -20
+          },
+          {
+            "prime": 157,
+            "trace": -18
+          },
+          {
+            "prime": 163,
+            "trace": -16
+          },
+          {
+            "prime": 167,
+            "trace": -3
+          },
+          {
+            "prime": 173,
+            "trace": 9
+          },
+          {
+            "prime": 179,
+            "trace": -11
+          },
+          {
+            "prime": 181,
+            "trace": -22
+          },
+          {
+            "prime": 191,
+            "trace": -10
+          },
+          {
+            "prime": 193,
+            "trace": -16
+          },
+          {
+            "prime": 197,
+            "trace": 0
+          },
+          {
+            "prime": 199,
+            "trace": -16
+          }
+        ],
+        "value": 24.68494635443688
+      },
+      "state_index": 9,
+      "t": "218137/131039"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 4 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 4
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 1 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 1
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 6810
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 510
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 5344622350,
+      "denominator": 181144,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 181144,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": -97189,
+      "score": {
+        "primes_used": 39,
+        "skipped_bad_primes": 5,
+        "skipped_denominator_primes": 0,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 19,
+            "trace": -6
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 29,
+            "trace": -10
+          },
+          {
+            "prime": 31,
+            "trace": -9
+          },
+          {
+            "prime": 37,
+            "trace": -6
+          },
+          {
+            "prime": 41,
+            "trace": -9
+          },
+          {
+            "prime": 43,
+            "trace": -8
+          },
+          {
+            "prime": 47,
+            "trace": -6
+          },
+          {
+            "prime": 53,
+            "trace": -11
+          },
+          {
+            "prime": 59,
+            "trace": -10
+          },
+          {
+            "prime": 61,
+            "trace": -13
+          },
+          {
+            "prime": 67,
+            "trace": -8
+          },
+          {
+            "prime": 71,
+            "trace": -14
+          },
+          {
+            "prime": 73,
+            "trace": -14
+          },
+          {
+            "prime": 79,
+            "trace": -8
+          },
+          {
+            "prime": 83,
+            "trace": -14
+          },
+          {
+            "prime": 97,
+            "trace": -7
+          },
+          {
+            "prime": 101,
+            "trace": -10
+          },
+          {
+            "prime": 103,
+            "trace": -19
+          },
+          {
+            "prime": 107,
+            "trace": -20
+          },
+          {
+            "prime": 109,
+            "trace": -11
+          },
+          {
+            "prime": 113,
+            "trace": -2
+          },
+          {
+            "prime": 127,
+            "trace": -21
+          },
+          {
+            "prime": 137,
+            "trace": -15
+          },
+          {
+            "prime": 139,
+            "trace": -19
+          },
+          {
+            "prime": 149,
+            "trace": -20
+          },
+          {
+            "prime": 151,
+            "trace": -16
+          },
+          {
+            "prime": 157,
+            "trace": -18
+          },
+          {
+            "prime": 163,
+            "trace": -25
+          },
+          {
+            "prime": 167,
+            "trace": -15
+          },
+          {
+            "prime": 173,
+            "trace": -4
+          },
+          {
+            "prime": 179,
+            "trace": -2
+          },
+          {
+            "prime": 181,
+            "trace": -17
+          },
+          {
+            "prime": 191,
+            "trace": -24
+          },
+          {
+            "prime": 193,
+            "trace": -10
+          },
+          {
+            "prime": 197,
+            "trace": 0
+          },
+          {
+            "prime": 199,
+            "trace": -18
+          }
+        ],
+        "value": 24.58869381845953
+      },
+      "state_index": 6,
+      "t": "-97189/181144"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 4 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 4
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 2 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 2
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 6810
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 16651
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 9621194013,
+      "denominator": 192516,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 192516,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": -73723,
+      "score": {
+        "primes_used": 39,
+        "skipped_bad_primes": 4,
+        "skipped_denominator_primes": 1,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -5
+          },
+          {
+            "prime": 17,
+            "trace": -7
+          },
+          {
+            "prime": 19,
+            "trace": -6
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 29,
+            "trace": -9
+          },
+          {
+            "prime": 31,
+            "trace": -9
+          },
+          {
+            "prime": 37,
+            "trace": -11
+          },
+          {
+            "prime": 41,
+            "trace": -9
+          },
+          {
+            "prime": 43,
+            "trace": -12
+          },
+          {
+            "prime": 47,
+            "trace": -12
+          },
+          {
+            "prime": 59,
+            "trace": -4
+          },
+          {
+            "prime": 67,
+            "trace": -12
+          },
+          {
+            "prime": 71,
+            "trace": -3
+          },
+          {
+            "prime": 73,
+            "trace": -10
+          },
+          {
+            "prime": 79,
+            "trace": -17
+          },
+          {
+            "prime": 83,
+            "trace": -16
+          },
+          {
+            "prime": 97,
+            "trace": -18
+          },
+          {
+            "prime": 101,
+            "trace": -18
+          },
+          {
+            "prime": 103,
+            "trace": -12
+          },
+          {
+            "prime": 107,
+            "trace": -15
+          },
+          {
+            "prime": 109,
+            "trace": -10
+          },
+          {
+            "prime": 113,
+            "trace": -16
+          },
+          {
+            "prime": 127,
+            "trace": -7
+          },
+          {
+            "prime": 137,
+            "trace": -13
+          },
+          {
+            "prime": 139,
+            "trace": -5
+          },
+          {
+            "prime": 149,
+            "trace": -17
+          },
+          {
+            "prime": 151,
+            "trace": -6
+          },
+          {
+            "prime": 157,
+            "trace": -15
+          },
+          {
+            "prime": 163,
+            "trace": -25
+          },
+          {
+            "prime": 167,
+            "trace": 1
+          },
+          {
+            "prime": 173,
+            "trace": -1
+          },
+          {
+            "prime": 179,
+            "trace": -11
+          },
+          {
+            "prime": 181,
+            "trace": -16
+          },
+          {
+            "prime": 191,
+            "trace": -24
+          },
+          {
+            "prime": 193,
+            "trace": -21
+          },
+          {
+            "prime": 197,
+            "trace": 2
+          },
+          {
+            "prime": 199,
+            "trace": -15
+          }
+        ],
+        "value": 24.567605836415584
+      },
+      "state_index": 14,
+      "t": "-73723/192516"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 4 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 4
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 2 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 2
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 6810
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 510
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 2490044449,
+      "denominator": 212039,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 248683,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": 248683,
+      "score": {
+        "primes_used": 39,
+        "skipped_bad_primes": 5,
+        "skipped_denominator_primes": 0,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -4
+          },
+          {
+            "prime": 17,
+            "trace": -7
+          },
+          {
+            "prime": 19,
+            "trace": -6
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 29,
+            "trace": -10
+          },
+          {
+            "prime": 37,
+            "trace": -5
+          },
+          {
+            "prime": 41,
+            "trace": -6
+          },
+          {
+            "prime": 43,
+            "trace": -11
+          },
+          {
+            "prime": 53,
+            "trace": -13
+          },
+          {
+            "prime": 59,
+            "trace": -9
+          },
+          {
+            "prime": 61,
+            "trace": -14
+          },
+          {
+            "prime": 67,
+            "trace": -16
+          },
+          {
+            "prime": 71,
+            "trace": 6
+          },
+          {
+            "prime": 73,
+            "trace": -16
+          },
+          {
+            "prime": 79,
+            "trace": -16
+          },
+          {
+            "prime": 83,
+            "trace": -16
+          },
+          {
+            "prime": 97,
+            "trace": -18
+          },
+          {
+            "prime": 101,
+            "trace": -18
+          },
+          {
+            "prime": 103,
+            "trace": -19
+          },
+          {
+            "prime": 107,
+            "trace": -17
+          },
+          {
+            "prime": 109,
+            "trace": -11
+          },
+          {
+            "prime": 113,
+            "trace": 0
+          },
+          {
+            "prime": 127,
+            "trace": -2
+          },
+          {
+            "prime": 137,
+            "trace": -13
+          },
+          {
+            "prime": 139,
+            "trace": -19
+          },
+          {
+            "prime": 149,
+            "trace": -16
+          },
+          {
+            "prime": 151,
+            "trace": -8
+          },
+          {
+            "prime": 157,
+            "trace": -14
+          },
+          {
+            "prime": 163,
+            "trace": -21
+          },
+          {
+            "prime": 167,
+            "trace": -12
+          },
+          {
+            "prime": 173,
+            "trace": -18
+          },
+          {
+            "prime": 179,
+            "trace": 2
+          },
+          {
+            "prime": 181,
+            "trace": -5
+          },
+          {
+            "prime": 191,
+            "trace": -17
+          },
+          {
+            "prime": 193,
+            "trace": -17
+          },
+          {
+            "prime": 197,
+            "trace": -15
+          },
+          {
+            "prime": 199,
+            "trace": -24
+          }
+        ],
+        "value": 24.437856058571267
+      },
+      "state_index": 1,
+      "t": "248683/212039"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 3 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 3
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 1 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 1
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 1111
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 16651
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 9879793122,
+      "denominator": 130043,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 130043,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": 22496,
+      "score": {
+        "primes_used": 40,
+        "skipped_bad_primes": 4,
+        "skipped_denominator_primes": 0,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -4
+          },
+          {
+            "prime": 17,
+            "trace": -8
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 29,
+            "trace": -2
+          },
+          {
+            "prime": 31,
+            "trace": -5
+          },
+          {
+            "prime": 37,
+            "trace": -11
+          },
+          {
+            "prime": 41,
+            "trace": -9
+          },
+          {
+            "prime": 43,
+            "trace": -10
+          },
+          {
+            "prime": 47,
+            "trace": -12
+          },
+          {
+            "prime": 53,
+            "trace": -9
+          },
+          {
+            "prime": 59,
+            "trace": -15
+          },
+          {
+            "prime": 61,
+            "trace": -11
+          },
+          {
+            "prime": 67,
+            "trace": -12
+          },
+          {
+            "prime": 71,
+            "trace": -13
+          },
+          {
+            "prime": 73,
+            "trace": -16
+          },
+          {
+            "prime": 79,
+            "trace": -4
+          },
+          {
+            "prime": 83,
+            "trace": -12
+          },
+          {
+            "prime": 97,
+            "trace": -18
+          },
+          {
+            "prime": 101,
+            "trace": -12
+          },
+          {
+            "prime": 103,
+            "trace": -19
+          },
+          {
+            "prime": 107,
+            "trace": -17
+          },
+          {
+            "prime": 109,
+            "trace": -9
+          },
+          {
+            "prime": 113,
+            "trace": 6
+          },
+          {
+            "prime": 127,
+            "trace": -8
+          },
+          {
+            "prime": 137,
+            "trace": -22
+          },
+          {
+            "prime": 139,
+            "trace": -12
+          },
+          {
+            "prime": 149,
+            "trace": 0
+          },
+          {
+            "prime": 151,
+            "trace": -8
+          },
+          {
+            "prime": 157,
+            "trace": -16
+          },
+          {
+            "prime": 163,
+            "trace": -16
+          },
+          {
+            "prime": 167,
+            "trace": -21
+          },
+          {
+            "prime": 173,
+            "trace": -4
+          },
+          {
+            "prime": 179,
+            "trace": -18
+          },
+          {
+            "prime": 181,
+            "trace": -19
+          },
+          {
+            "prime": 191,
+            "trace": -18
+          },
+          {
+            "prime": 193,
+            "trace": -22
+          },
+          {
+            "prime": 197,
+            "trace": 18
+          },
+          {
+            "prime": 199,
+            "trace": -21
+          }
+        ],
+        "value": 24.28607893868183
+      },
+      "state_index": 10,
+      "t": "22496/130043"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 3 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 3
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 2 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 2
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 1111
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 510
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 10360851294,
+      "denominator": 132892,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 132892,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": -28191,
+      "score": {
+        "primes_used": 39,
+        "skipped_bad_primes": 5,
+        "skipped_denominator_primes": 0,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -7
+          },
+          {
+            "prime": 17,
+            "trace": -4
+          },
+          {
+            "prime": 19,
+            "trace": -8
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 29,
+            "trace": -9
+          },
+          {
+            "prime": 31,
+            "trace": -9
+          },
+          {
+            "prime": 41,
+            "trace": -10
+          },
+          {
+            "prime": 43,
+            "trace": -7
+          },
+          {
+            "prime": 47,
+            "trace": -10
+          },
+          {
+            "prime": 53,
+            "trace": -12
+          },
+          {
+            "prime": 59,
+            "trace": -4
+          },
+          {
+            "prime": 61,
+            "trace": -12
+          },
+          {
+            "prime": 67,
+            "trace": -16
+          },
+          {
+            "prime": 71,
+            "trace": -8
+          },
+          {
+            "prime": 79,
+            "trace": -4
+          },
+          {
+            "prime": 83,
+            "trace": -16
+          },
+          {
+            "prime": 97,
+            "trace": -5
+          },
+          {
+            "prime": 101,
+            "trace": -17
+          },
+          {
+            "prime": 103,
+            "trace": -14
+          },
+          {
+            "prime": 107,
+            "trace": -20
+          },
+          {
+            "prime": 109,
+            "trace": 0
+          },
+          {
+            "prime": 113,
+            "trace": -21
+          },
+          {
+            "prime": 127,
+            "trace": -21
+          },
+          {
+            "prime": 137,
+            "trace": -21
+          },
+          {
+            "prime": 139,
+            "trace": -1
+          },
+          {
+            "prime": 149,
+            "trace": -8
+          },
+          {
+            "prime": 151,
+            "trace": -19
+          },
+          {
+            "prime": 157,
+            "trace": 2
+          },
+          {
+            "prime": 163,
+            "trace": -21
+          },
+          {
+            "prime": 167,
+            "trace": -12
+          },
+          {
+            "prime": 173,
+            "trace": -18
+          },
+          {
+            "prime": 179,
+            "trace": -12
+          },
+          {
+            "prime": 181,
+            "trace": 2
+          },
+          {
+            "prime": 191,
+            "trace": -8
+          },
+          {
+            "prime": 193,
+            "trace": -10
+          },
+          {
+            "prime": 197,
+            "trace": -20
+          },
+          {
+            "prime": 199,
+            "trace": -26
+          }
+        ],
+        "value": 24.24887022448843
+      },
+      "state_index": 11,
+      "t": "-28191/132892"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 4 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 4
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 1 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 1
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 6810
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 16651
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 2008986277,
+      "denominator": 73268,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 130105,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": 130105,
+      "score": {
+        "primes_used": 40,
+        "skipped_bad_primes": 3,
+        "skipped_denominator_primes": 1,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 17,
+            "trace": -7
+          },
+          {
+            "prime": 19,
+            "trace": -4
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 29,
+            "trace": -3
+          },
+          {
+            "prime": 31,
+            "trace": -11
+          },
+          {
+            "prime": 37,
+            "trace": -2
+          },
+          {
+            "prime": 41,
+            "trace": -10
+          },
+          {
+            "prime": 43,
+            "trace": -8
+          },
+          {
+            "prime": 47,
+            "trace": -10
+          },
+          {
+            "prime": 53,
+            "trace": -8
+          },
+          {
+            "prime": 59,
+            "trace": -12
+          },
+          {
+            "prime": 61,
+            "trace": -14
+          },
+          {
+            "prime": 67,
+            "trace": -16
+          },
+          {
+            "prime": 71,
+            "trace": -8
+          },
+          {
+            "prime": 73,
+            "trace": -8
+          },
+          {
+            "prime": 79,
+            "trace": -3
+          },
+          {
+            "prime": 83,
+            "trace": -12
+          },
+          {
+            "prime": 97,
+            "trace": -13
+          },
+          {
+            "prime": 101,
+            "trace": -9
+          },
+          {
+            "prime": 103,
+            "trace": -15
+          },
+          {
+            "prime": 107,
+            "trace": -20
+          },
+          {
+            "prime": 109,
+            "trace": 4
+          },
+          {
+            "prime": 113,
+            "trace": -19
+          },
+          {
+            "prime": 127,
+            "trace": -12
+          },
+          {
+            "prime": 137,
+            "trace": -4
+          },
+          {
+            "prime": 139,
+            "trace": -20
+          },
+          {
+            "prime": 149,
+            "trace": -10
+          },
+          {
+            "prime": 151,
+            "trace": -22
+          },
+          {
+            "prime": 157,
+            "trace": -20
+          },
+          {
+            "prime": 163,
+            "trace": -16
+          },
+          {
+            "prime": 167,
+            "trace": -8
+          },
+          {
+            "prime": 173,
+            "trace": -16
+          },
+          {
+            "prime": 179,
+            "trace": 5
+          },
+          {
+            "prime": 181,
+            "trace": -23
+          },
+          {
+            "prime": 191,
+            "trace": -16
+          },
+          {
+            "prime": 193,
+            "trace": -19
+          },
+          {
+            "prime": 197,
+            "trace": -12
+          },
+          {
+            "prime": 199,
+            "trace": -18
+          }
+        ],
+        "value": 24.13071525972266
+      },
+      "state_index": 12,
+      "t": "130105/73268"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 4 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 4
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 2 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 2
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 6810
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 510
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 2490044449,
+      "denominator": 341064,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 341064,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": 153193,
+      "score": {
+        "primes_used": 40,
+        "skipped_bad_primes": 4,
+        "skipped_denominator_primes": 0,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -6
+          },
+          {
+            "prime": 17,
+            "trace": -4
+          },
+          {
+            "prime": 19,
+            "trace": -4
+          },
+          {
+            "prime": 23,
+            "trace": -6
+          },
+          {
+            "prime": 29,
+            "trace": -2
+          },
+          {
+            "prime": 31,
+            "trace": -8
+          },
+          {
+            "prime": 37,
+            "trace": -10
+          },
+          {
+            "prime": 41,
+            "trace": -10
+          },
+          {
+            "prime": 43,
+            "trace": -12
+          },
+          {
+            "prime": 47,
+            "trace": -10
+          },
+          {
+            "prime": 53,
+            "trace": -6
+          },
+          {
+            "prime": 59,
+            "trace": -4
+          },
+          {
+            "prime": 61,
+            "trace": -14
+          },
+          {
+            "prime": 71,
+            "trace": -14
+          },
+          {
+            "prime": 73,
+            "trace": -14
+          },
+          {
+            "prime": 79,
+            "trace": -16
+          },
+          {
+            "prime": 83,
+            "trace": -12
+          },
+          {
+            "prime": 97,
+            "trace": -4
+          },
+          {
+            "prime": 101,
+            "trace": -2
+          },
+          {
+            "prime": 103,
+            "trace": -7
+          },
+          {
+            "prime": 107,
+            "trace": -2
+          },
+          {
+            "prime": 109,
+            "trace": -13
+          },
+          {
+            "prime": 113,
+            "trace": -16
+          },
+          {
+            "prime": 127,
+            "trace": -16
+          },
+          {
+            "prime": 137,
+            "trace": -4
+          },
+          {
+            "prime": 139,
+            "trace": -8
+          },
+          {
+            "prime": 149,
+            "trace": -3
+          },
+          {
+            "prime": 151,
+            "trace": -20
+          },
+          {
+            "prime": 157,
+            "trace": -19
+          },
+          {
+            "prime": 163,
+            "trace": -11
+          },
+          {
+            "prime": 167,
+            "trace": -15
+          },
+          {
+            "prime": 173,
+            "trace": -19
+          },
+          {
+            "prime": 179,
+            "trace": -18
+          },
+          {
+            "prime": 181,
+            "trace": -12
+          },
+          {
+            "prime": 191,
+            "trace": -20
+          },
+          {
+            "prime": 193,
+            "trace": -26
+          },
+          {
+            "prime": 197,
+            "trace": -12
+          },
+          {
+            "prime": 199,
+            "trace": -16
+          }
+        ],
+        "value": 24.09234403027836
+      },
+      "state_index": 1,
+      "t": "153193/341064"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 3 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 3
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 2 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 2
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 6810
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 510
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 994789358,
+      "denominator": 31891,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 150231,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": 150231,
+      "score": {
+        "primes_used": 41,
+        "skipped_bad_primes": 3,
+        "skipped_denominator_primes": 0,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -4
+          },
+          {
+            "prime": 17,
+            "trace": -7
+          },
+          {
+            "prime": 19,
+            "trace": -8
+          },
+          {
+            "prime": 23,
+            "trace": -6
+          },
+          {
+            "prime": 29,
+            "trace": -9
+          },
+          {
+            "prime": 31,
+            "trace": -8
+          },
+          {
+            "prime": 37,
+            "trace": -5
+          },
+          {
+            "prime": 41,
+            "trace": -3
+          },
+          {
+            "prime": 43,
+            "trace": -12
+          },
+          {
+            "prime": 47,
+            "trace": -10
+          },
+          {
+            "prime": 53,
+            "trace": -13
+          },
+          {
+            "prime": 59,
+            "trace": -6
+          },
+          {
+            "prime": 61,
+            "trace": -14
+          },
+          {
+            "prime": 67,
+            "trace": -12
+          },
+          {
+            "prime": 71,
+            "trace": -12
+          },
+          {
+            "prime": 73,
+            "trace": -10
+          },
+          {
+            "prime": 79,
+            "trace": -6
+          },
+          {
+            "prime": 83,
+            "trace": -9
+          },
+          {
+            "prime": 97,
+            "trace": -19
+          },
+          {
+            "prime": 101,
+            "trace": -14
+          },
+          {
+            "prime": 103,
+            "trace": -12
+          },
+          {
+            "prime": 107,
+            "trace": -3
+          },
+          {
+            "prime": 109,
+            "trace": -15
+          },
+          {
+            "prime": 113,
+            "trace": -8
+          },
+          {
+            "prime": 127,
+            "trace": -12
+          },
+          {
+            "prime": 137,
+            "trace": -3
+          },
+          {
+            "prime": 139,
+            "trace": -10
+          },
+          {
+            "prime": 149,
+            "trace": 0
+          },
+          {
+            "prime": 151,
+            "trace": -7
+          },
+          {
+            "prime": 157,
+            "trace": -13
+          },
+          {
+            "prime": 163,
+            "trace": -7
+          },
+          {
+            "prime": 167,
+            "trace": -12
+          },
+          {
+            "prime": 173,
+            "trace": -12
+          },
+          {
+            "prime": 179,
+            "trace": -18
+          },
+          {
+            "prime": 181,
+            "trace": 10
+          },
+          {
+            "prime": 191,
+            "trace": -24
+          },
+          {
+            "prime": 193,
+            "trace": -22
+          },
+          {
+            "prime": 197,
+            "trace": -18
+          },
+          {
+            "prime": 199,
+            "trace": -11
+          }
+        ],
+        "value": 24.053220135374968
+      },
+      "state_index": 4,
+      "t": "150231/31891"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 4 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 4
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 2 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 2
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 1111
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 16651
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 8520470312,
+      "denominator": 123957,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 191825,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": 191825,
+      "score": {
+        "primes_used": 40,
+        "skipped_bad_primes": 4,
+        "skipped_denominator_primes": 0,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -4
+          },
+          {
+            "prime": 17,
+            "trace": -7
+          },
+          {
+            "prime": 23,
+            "trace": -6
+          },
+          {
+            "prime": 29,
+            "trace": -3
+          },
+          {
+            "prime": 31,
+            "trace": -11
+          },
+          {
+            "prime": 37,
+            "trace": -7
+          },
+          {
+            "prime": 41,
+            "trace": -3
+          },
+          {
+            "prime": 43,
+            "trace": -11
+          },
+          {
+            "prime": 47,
+            "trace": -8
+          },
+          {
+            "prime": 53,
+            "trace": -4
+          },
+          {
+            "prime": 59,
+            "trace": -5
+          },
+          {
+            "prime": 61,
+            "trace": -10
+          },
+          {
+            "prime": 67,
+            "trace": -10
+          },
+          {
+            "prime": 71,
+            "trace": -8
+          },
+          {
+            "prime": 73,
+            "trace": -14
+          },
+          {
+            "prime": 79,
+            "trace": -8
+          },
+          {
+            "prime": 83,
+            "trace": -6
+          },
+          {
+            "prime": 97,
+            "trace": -6
+          },
+          {
+            "prime": 101,
+            "trace": -14
+          },
+          {
+            "prime": 103,
+            "trace": -16
+          },
+          {
+            "prime": 107,
+            "trace": -10
+          },
+          {
+            "prime": 109,
+            "trace": -18
+          },
+          {
+            "prime": 113,
+            "trace": -21
+          },
+          {
+            "prime": 127,
+            "trace": -13
+          },
+          {
+            "prime": 137,
+            "trace": -12
+          },
+          {
+            "prime": 139,
+            "trace": -23
+          },
+          {
+            "prime": 149,
+            "trace": -2
+          },
+          {
+            "prime": 151,
+            "trace": 2
+          },
+          {
+            "prime": 157,
+            "trace": -18
+          },
+          {
+            "prime": 163,
+            "trace": -16
+          },
+          {
+            "prime": 167,
+            "trace": -15
+          },
+          {
+            "prime": 173,
+            "trace": -21
+          },
+          {
+            "prime": 179,
+            "trace": -14
+          },
+          {
+            "prime": 181,
+            "trace": -14
+          },
+          {
+            "prime": 191,
+            "trace": -24
+          },
+          {
+            "prime": 193,
+            "trace": -24
+          },
+          {
+            "prime": 197,
+            "trace": -24
+          },
+          {
+            "prime": 199,
+            "trace": -4
+          }
+        ],
+        "value": 24.007647118028288
+      },
+      "state_index": 7,
+      "t": "191825/123957"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 3 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 3
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 1 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 1
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 6810
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 510
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 3849367259,
+      "denominator": 63760,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 63760,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": 31827,
+      "score": {
+        "primes_used": 38,
+        "skipped_bad_primes": 5,
+        "skipped_denominator_primes": 1,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 17,
+            "trace": -7
+          },
+          {
+            "prime": 19,
+            "trace": -8
+          },
+          {
+            "prime": 23,
+            "trace": -4
+          },
+          {
+            "prime": 29,
+            "trace": -8
+          },
+          {
+            "prime": 31,
+            "trace": -9
+          },
+          {
+            "prime": 41,
+            "trace": -9
+          },
+          {
+            "prime": 43,
+            "trace": -4
+          },
+          {
+            "prime": 47,
+            "trace": -12
+          },
+          {
+            "prime": 53,
+            "trace": -13
+          },
+          {
+            "prime": 59,
+            "trace": -14
+          },
+          {
+            "prime": 61,
+            "trace": -14
+          },
+          {
+            "prime": 67,
+            "trace": -16
+          },
+          {
+            "prime": 71,
+            "trace": -8
+          },
+          {
+            "prime": 73,
+            "trace": -14
+          },
+          {
+            "prime": 83,
+            "trace": -12
+          },
+          {
+            "prime": 97,
+            "trace": 7
+          },
+          {
+            "prime": 101,
+            "trace": -14
+          },
+          {
+            "prime": 103,
+            "trace": -13
+          },
+          {
+            "prime": 107,
+            "trace": -16
+          },
+          {
+            "prime": 109,
+            "trace": -10
+          },
+          {
+            "prime": 113,
+            "trace": -21
+          },
+          {
+            "prime": 127,
+            "trace": -22
+          },
+          {
+            "prime": 137,
+            "trace": -22
+          },
+          {
+            "prime": 139,
+            "trace": -18
+          },
+          {
+            "prime": 149,
+            "trace": -14
+          },
+          {
+            "prime": 151,
+            "trace": -14
+          },
+          {
+            "prime": 157,
+            "trace": 8
+          },
+          {
+            "prime": 163,
+            "trace": 10
+          },
+          {
+            "prime": 167,
+            "trace": -24
+          },
+          {
+            "prime": 173,
+            "trace": -18
+          },
+          {
+            "prime": 179,
+            "trace": -21
+          },
+          {
+            "prime": 181,
+            "trace": -12
+          },
+          {
+            "prime": 191,
+            "trace": -10
+          },
+          {
+            "prime": 193,
+            "trace": -19
+          },
+          {
+            "prime": 197,
+            "trace": -14
+          },
+          {
+            "prime": 199,
+            "trace": -26
+          }
+        ],
+        "value": 23.91221068126027
+      },
+      "state_index": 2,
+      "t": "31827/63760"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 3 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 3
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 2 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 2
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 6810
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 16651
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 8125938922,
+      "denominator": 11478,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 135409,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": 135409,
+      "score": {
+        "primes_used": 39,
+        "skipped_bad_primes": 5,
+        "skipped_denominator_primes": 0,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -7
+          },
+          {
+            "prime": 17,
+            "trace": -5
+          },
+          {
+            "prime": 19,
+            "trace": -6
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 31,
+            "trace": -11
+          },
+          {
+            "prime": 37,
+            "trace": -4
+          },
+          {
+            "prime": 41,
+            "trace": -9
+          },
+          {
+            "prime": 43,
+            "trace": -10
+          },
+          {
+            "prime": 47,
+            "trace": -8
+          },
+          {
+            "prime": 53,
+            "trace": -6
+          },
+          {
+            "prime": 59,
+            "trace": -12
+          },
+          {
+            "prime": 61,
+            "trace": -15
+          },
+          {
+            "prime": 67,
+            "trace": -16
+          },
+          {
+            "prime": 71,
+            "trace": -4
+          },
+          {
+            "prime": 73,
+            "trace": -2
+          },
+          {
+            "prime": 79,
+            "trace": -3
+          },
+          {
+            "prime": 83,
+            "trace": -12
+          },
+          {
+            "prime": 97,
+            "trace": -8
+          },
+          {
+            "prime": 101,
+            "trace": -14
+          },
+          {
+            "prime": 103,
+            "trace": -9
+          },
+          {
+            "prime": 107,
+            "trace": -17
+          },
+          {
+            "prime": 109,
+            "trace": -16
+          },
+          {
+            "prime": 113,
+            "trace": -8
+          },
+          {
+            "prime": 127,
+            "trace": -7
+          },
+          {
+            "prime": 137,
+            "trace": -18
+          },
+          {
+            "prime": 139,
+            "trace": -20
+          },
+          {
+            "prime": 149,
+            "trace": -9
+          },
+          {
+            "prime": 151,
+            "trace": -13
+          },
+          {
+            "prime": 163,
+            "trace": -24
+          },
+          {
+            "prime": 167,
+            "trace": -12
+          },
+          {
+            "prime": 173,
+            "trace": 0
+          },
+          {
+            "prime": 179,
+            "trace": 6
+          },
+          {
+            "prime": 181,
+            "trace": -18
+          },
+          {
+            "prime": 191,
+            "trace": -18
+          },
+          {
+            "prime": 193,
+            "trace": -22
+          },
+          {
+            "prime": 197,
+            "trace": -22
+          },
+          {
+            "prime": 199,
+            "trace": -20
+          }
+        ],
+        "value": 23.83996551574305
+      },
+      "state_index": 13,
+      "t": "135409/11478"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 4 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 4
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 1 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 1
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 6810
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 16651
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 2008986277,
+      "denominator": 41435,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 216434,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": 216434,
+      "score": {
+        "primes_used": 39,
+        "skipped_bad_primes": 4,
+        "skipped_denominator_primes": 1,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 17,
+            "trace": -4
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 29,
+            "trace": -9
+          },
+          {
+            "prime": 31,
+            "trace": -8
+          },
+          {
+            "prime": 37,
+            "trace": -8
+          },
+          {
+            "prime": 41,
+            "trace": -9
+          },
+          {
+            "prime": 43,
+            "trace": 0
+          },
+          {
+            "prime": 47,
+            "trace": -12
+          },
+          {
+            "prime": 53,
+            "trace": -11
+          },
+          {
+            "prime": 59,
+            "trace": -14
+          },
+          {
+            "prime": 61,
+            "trace": -13
+          },
+          {
+            "prime": 67,
+            "trace": -12
+          },
+          {
+            "prime": 71,
+            "trace": -9
+          },
+          {
+            "prime": 73,
+            "trace": -14
+          },
+          {
+            "prime": 79,
+            "trace": -9
+          },
+          {
+            "prime": 83,
+            "trace": -12
+          },
+          {
+            "prime": 97,
+            "trace": -12
+          },
+          {
+            "prime": 101,
+            "trace": 6
+          },
+          {
+            "prime": 103,
+            "trace": -13
+          },
+          {
+            "prime": 107,
+            "trace": 8
+          },
+          {
+            "prime": 109,
+            "trace": -14
+          },
+          {
+            "prime": 113,
+            "trace": -18
+          },
+          {
+            "prime": 127,
+            "trace": -15
+          },
+          {
+            "prime": 137,
+            "trace": -22
+          },
+          {
+            "prime": 139,
+            "trace": -22
+          },
+          {
+            "prime": 149,
+            "trace": -18
+          },
+          {
+            "prime": 151,
+            "trace": -19
+          },
+          {
+            "prime": 157,
+            "trace": -11
+          },
+          {
+            "prime": 163,
+            "trace": -11
+          },
+          {
+            "prime": 167,
+            "trace": -17
+          },
+          {
+            "prime": 173,
+            "trace": -18
+          },
+          {
+            "prime": 179,
+            "trace": -12
+          },
+          {
+            "prime": 181,
+            "trace": -7
+          },
+          {
+            "prime": 191,
+            "trace": -12
+          },
+          {
+            "prime": 193,
+            "trace": -22
+          },
+          {
+            "prime": 197,
+            "trace": -18
+          },
+          {
+            "prime": 199,
+            "trace": -18
+          }
+        ],
+        "value": 23.689573181216982
+      },
+      "state_index": 12,
+      "t": "216434/41435"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 3 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 3
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 2 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 2
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 1111
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 16651
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 7025215221,
+      "denominator": 180126,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 180126,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": 170183,
+      "score": {
+        "primes_used": 37,
+        "skipped_bad_primes": 7,
+        "skipped_denominator_primes": 0,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -5
+          },
+          {
+            "prime": 17,
+            "trace": -7
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 29,
+            "trace": -10
+          },
+          {
+            "prime": 37,
+            "trace": -11
+          },
+          {
+            "prime": 41,
+            "trace": -10
+          },
+          {
+            "prime": 43,
+            "trace": 0
+          },
+          {
+            "prime": 47,
+            "trace": -4
+          },
+          {
+            "prime": 59,
+            "trace": -4
+          },
+          {
+            "prime": 61,
+            "trace": -14
+          },
+          {
+            "prime": 67,
+            "trace": -16
+          },
+          {
+            "prime": 71,
+            "trace": -9
+          },
+          {
+            "prime": 79,
+            "trace": -16
+          },
+          {
+            "prime": 83,
+            "trace": -8
+          },
+          {
+            "prime": 97,
+            "trace": -13
+          },
+          {
+            "prime": 101,
+            "trace": -17
+          },
+          {
+            "prime": 103,
+            "trace": -18
+          },
+          {
+            "prime": 107,
+            "trace": -4
+          },
+          {
+            "prime": 109,
+            "trace": -16
+          },
+          {
+            "prime": 113,
+            "trace": -9
+          },
+          {
+            "prime": 127,
+            "trace": -8
+          },
+          {
+            "prime": 137,
+            "trace": -23
+          },
+          {
+            "prime": 139,
+            "trace": -14
+          },
+          {
+            "prime": 149,
+            "trace": -12
+          },
+          {
+            "prime": 151,
+            "trace": -17
+          },
+          {
+            "prime": 157,
+            "trace": -18
+          },
+          {
+            "prime": 163,
+            "trace": -20
+          },
+          {
+            "prime": 167,
+            "trace": -24
+          },
+          {
+            "prime": 173,
+            "trace": -9
+          },
+          {
+            "prime": 179,
+            "trace": -20
+          },
+          {
+            "prime": 181,
+            "trace": -10
+          },
+          {
+            "prime": 191,
+            "trace": -21
+          },
+          {
+            "prime": 193,
+            "trace": -20
+          },
+          {
+            "prime": 197,
+            "trace": -12
+          },
+          {
+            "prime": 199,
+            "trace": -22
+          }
+        ],
+        "value": 23.653120088803508
+      },
+      "state_index": 8,
+      "t": "170183/180126"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 4 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 4
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 1 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 1
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 6810
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 16651
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 2008986277,
+      "denominator": 242035,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 242035,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": 1223,
+      "score": {
+        "primes_used": 39,
+        "skipped_bad_primes": 4,
+        "skipped_denominator_primes": 1,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -7
+          },
+          {
+            "prime": 17,
+            "trace": -7
+          },
+          {
+            "prime": 19,
+            "trace": -6
+          },
+          {
+            "prime": 23,
+            "trace": -4
+          },
+          {
+            "prime": 29,
+            "trace": -10
+          },
+          {
+            "prime": 41,
+            "trace": -6
+          },
+          {
+            "prime": 43,
+            "trace": -11
+          },
+          {
+            "prime": 47,
+            "trace": -6
+          },
+          {
+            "prime": 53,
+            "trace": -13
+          },
+          {
+            "prime": 59,
+            "trace": -15
+          },
+          {
+            "prime": 61,
+            "trace": -14
+          },
+          {
+            "prime": 67,
+            "trace": -16
+          },
+          {
+            "prime": 71,
+            "trace": -9
+          },
+          {
+            "prime": 73,
+            "trace": -11
+          },
+          {
+            "prime": 79,
+            "trace": -7
+          },
+          {
+            "prime": 83,
+            "trace": -12
+          },
+          {
+            "prime": 97,
+            "trace": -2
+          },
+          {
+            "prime": 101,
+            "trace": -12
+          },
+          {
+            "prime": 103,
+            "trace": -14
+          },
+          {
+            "prime": 107,
+            "trace": -6
+          },
+          {
+            "prime": 109,
+            "trace": -5
+          },
+          {
+            "prime": 113,
+            "trace": -20
+          },
+          {
+            "prime": 127,
+            "trace": -16
+          },
+          {
+            "prime": 137,
+            "trace": -6
+          },
+          {
+            "prime": 139,
+            "trace": -19
+          },
+          {
+            "prime": 149,
+            "trace": -22
+          },
+          {
+            "prime": 151,
+            "trace": -5
+          },
+          {
+            "prime": 157,
+            "trace": -18
+          },
+          {
+            "prime": 163,
+            "trace": -12
+          },
+          {
+            "prime": 167,
+            "trace": 7
+          },
+          {
+            "prime": 173,
+            "trace": -6
+          },
+          {
+            "prime": 179,
+            "trace": -12
+          },
+          {
+            "prime": 181,
+            "trace": -9
+          },
+          {
+            "prime": 191,
+            "trace": -7
+          },
+          {
+            "prime": 193,
+            "trace": -21
+          },
+          {
+            "prime": 197,
+            "trace": -18
+          },
+          {
+            "prime": 199,
+            "trace": -26
+          }
+        ],
+        "value": 23.628683586260767
+      },
+      "state_index": 12,
+      "t": "1223/242035"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 3 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 3
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 1 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 1
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 6810
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 16651
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 513731186,
+      "denominator": 190640,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 190640,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": 93631,
+      "score": {
+        "primes_used": 39,
+        "skipped_bad_primes": 4,
+        "skipped_denominator_primes": 1,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -7
+          },
+          {
+            "prime": 17,
+            "trace": -6
+          },
+          {
+            "prime": 19,
+            "trace": -4
+          },
+          {
+            "prime": 29,
+            "trace": -8
+          },
+          {
+            "prime": 31,
+            "trace": -9
+          },
+          {
+            "prime": 37,
+            "trace": -8
+          },
+          {
+            "prime": 41,
+            "trace": -12
+          },
+          {
+            "prime": 43,
+            "trace": -8
+          },
+          {
+            "prime": 47,
+            "trace": -12
+          },
+          {
+            "prime": 53,
+            "trace": -2
+          },
+          {
+            "prime": 59,
+            "trace": -4
+          },
+          {
+            "prime": 61,
+            "trace": -10
+          },
+          {
+            "prime": 67,
+            "trace": -4
+          },
+          {
+            "prime": 71,
+            "trace": -14
+          },
+          {
+            "prime": 73,
+            "trace": -16
+          },
+          {
+            "prime": 79,
+            "trace": -7
+          },
+          {
+            "prime": 83,
+            "trace": -12
+          },
+          {
+            "prime": 97,
+            "trace": -18
+          },
+          {
+            "prime": 101,
+            "trace": -10
+          },
+          {
+            "prime": 103,
+            "trace": -11
+          },
+          {
+            "prime": 107,
+            "trace": -20
+          },
+          {
+            "prime": 113,
+            "trace": -16
+          },
+          {
+            "prime": 127,
+            "trace": -8
+          },
+          {
+            "prime": 137,
+            "trace": -22
+          },
+          {
+            "prime": 139,
+            "trace": -16
+          },
+          {
+            "prime": 149,
+            "trace": -6
+          },
+          {
+            "prime": 151,
+            "trace": -16
+          },
+          {
+            "prime": 157,
+            "trace": -18
+          },
+          {
+            "prime": 163,
+            "trace": 4
+          },
+          {
+            "prime": 167,
+            "trace": -18
+          },
+          {
+            "prime": 173,
+            "trace": -21
+          },
+          {
+            "prime": 179,
+            "trace": 0
+          },
+          {
+            "prime": 181,
+            "trace": -18
+          },
+          {
+            "prime": 191,
+            "trace": -12
+          },
+          {
+            "prime": 193,
+            "trace": -25
+          },
+          {
+            "prime": 197,
+            "trace": -11
+          },
+          {
+            "prime": 199,
+            "trace": 9
+          }
+        ],
+        "value": 23.557330015911404
+      },
+      "state_index": 3,
+      "t": "93631/190640"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 4 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 4
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 2 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 2
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 1111
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 510
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 1389320748,
+      "denominator": 1228,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 180287,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": -180287,
+      "score": {
+        "primes_used": 38,
+        "skipped_bad_primes": 6,
+        "skipped_denominator_primes": 0,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 17,
+            "trace": -8
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 31,
+            "trace": -10
+          },
+          {
+            "prime": 37,
+            "trace": -11
+          },
+          {
+            "prime": 41,
+            "trace": -12
+          },
+          {
+            "prime": 43,
+            "trace": -11
+          },
+          {
+            "prime": 47,
+            "trace": -12
+          },
+          {
+            "prime": 53,
+            "trace": -11
+          },
+          {
+            "prime": 59,
+            "trace": -14
+          },
+          {
+            "prime": 61,
+            "trace": -10
+          },
+          {
+            "prime": 67,
+            "trace": -7
+          },
+          {
+            "prime": 71,
+            "trace": -16
+          },
+          {
+            "prime": 73,
+            "trace": -15
+          },
+          {
+            "prime": 79,
+            "trace": -8
+          },
+          {
+            "prime": 83,
+            "trace": -12
+          },
+          {
+            "prime": 97,
+            "trace": -7
+          },
+          {
+            "prime": 101,
+            "trace": -11
+          },
+          {
+            "prime": 103,
+            "trace": -14
+          },
+          {
+            "prime": 107,
+            "trace": -6
+          },
+          {
+            "prime": 109,
+            "trace": -13
+          },
+          {
+            "prime": 113,
+            "trace": -12
+          },
+          {
+            "prime": 127,
+            "trace": -18
+          },
+          {
+            "prime": 137,
+            "trace": -23
+          },
+          {
+            "prime": 139,
+            "trace": 0
+          },
+          {
+            "prime": 149,
+            "trace": -9
+          },
+          {
+            "prime": 151,
+            "trace": -17
+          },
+          {
+            "prime": 157,
+            "trace": 8
+          },
+          {
+            "prime": 163,
+            "trace": -20
+          },
+          {
+            "prime": 167,
+            "trace": -12
+          },
+          {
+            "prime": 173,
+            "trace": -14
+          },
+          {
+            "prime": 179,
+            "trace": -12
+          },
+          {
+            "prime": 181,
+            "trace": -18
+          },
+          {
+            "prime": 191,
+            "trace": -8
+          },
+          {
+            "prime": 193,
+            "trace": -19
+          },
+          {
+            "prime": 197,
+            "trace": -16
+          },
+          {
+            "prime": 199,
+            "trace": -8
+          }
+        ],
+        "value": 23.502268882888156
+      },
+      "state_index": 15,
+      "t": "-180287/1228"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 4 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 4
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 1 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 1
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 6810
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 510
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 5344622350,
+      "denominator": 54155,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 144289,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": 144289,
+      "score": {
+        "primes_used": 40,
+        "skipped_bad_primes": 3,
+        "skipped_denominator_primes": 1,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -4
+          },
+          {
+            "prime": 19,
+            "trace": -8
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 29,
+            "trace": -9
+          },
+          {
+            "prime": 31,
+            "trace": -11
+          },
+          {
+            "prime": 37,
+            "trace": -11
+          },
+          {
+            "prime": 41,
+            "trace": -10
+          },
+          {
+            "prime": 43,
+            "trace": -12
+          },
+          {
+            "prime": 47,
+            "trace": -10
+          },
+          {
+            "prime": 53,
+            "trace": -9
+          },
+          {
+            "prime": 59,
+            "trace": -4
+          },
+          {
+            "prime": 61,
+            "trace": -15
+          },
+          {
+            "prime": 67,
+            "trace": -4
+          },
+          {
+            "prime": 71,
+            "trace": -8
+          },
+          {
+            "prime": 73,
+            "trace": -16
+          },
+          {
+            "prime": 79,
+            "trace": -17
+          },
+          {
+            "prime": 83,
+            "trace": -12
+          },
+          {
+            "prime": 97,
+            "trace": -13
+          },
+          {
+            "prime": 101,
+            "trace": -14
+          },
+          {
+            "prime": 103,
+            "trace": -8
+          },
+          {
+            "prime": 107,
+            "trace": 3
+          },
+          {
+            "prime": 109,
+            "trace": -15
+          },
+          {
+            "prime": 113,
+            "trace": 0
+          },
+          {
+            "prime": 127,
+            "trace": -16
+          },
+          {
+            "prime": 137,
+            "trace": -14
+          },
+          {
+            "prime": 139,
+            "trace": -21
+          },
+          {
+            "prime": 149,
+            "trace": -21
+          },
+          {
+            "prime": 151,
+            "trace": -7
+          },
+          {
+            "prime": 157,
+            "trace": -13
+          },
+          {
+            "prime": 163,
+            "trace": -16
+          },
+          {
+            "prime": 167,
+            "trace": -19
+          },
+          {
+            "prime": 173,
+            "trace": -18
+          },
+          {
+            "prime": 179,
+            "trace": -2
+          },
+          {
+            "prime": 181,
+            "trace": 13
+          },
+          {
+            "prime": 191,
+            "trace": 5
+          },
+          {
+            "prime": 193,
+            "trace": 4
+          },
+          {
+            "prime": 197,
+            "trace": -27
+          },
+          {
+            "prime": 199,
+            "trace": -6
+          }
+        ],
+        "value": 23.40696249296617
+      },
+      "state_index": 6,
+      "t": "144289/54155"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 4 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 4
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 1 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 1
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 6810
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 510
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 5344622350,
+      "denominator": 126989,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 241478,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": -241478,
+      "score": {
+        "primes_used": 39,
+        "skipped_bad_primes": 5,
+        "skipped_denominator_primes": 0,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 17,
+            "trace": -5
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 29,
+            "trace": -10
+          },
+          {
+            "prime": 31,
+            "trace": -8
+          },
+          {
+            "prime": 37,
+            "trace": -8
+          },
+          {
+            "prime": 41,
+            "trace": -3
+          },
+          {
+            "prime": 43,
+            "trace": -12
+          },
+          {
+            "prime": 47,
+            "trace": -8
+          },
+          {
+            "prime": 53,
+            "trace": -11
+          },
+          {
+            "prime": 59,
+            "trace": -5
+          },
+          {
+            "prime": 61,
+            "trace": -14
+          },
+          {
+            "prime": 67,
+            "trace": -4
+          },
+          {
+            "prime": 71,
+            "trace": -16
+          },
+          {
+            "prime": 73,
+            "trace": -15
+          },
+          {
+            "prime": 79,
+            "trace": -7
+          },
+          {
+            "prime": 83,
+            "trace": -16
+          },
+          {
+            "prime": 97,
+            "trace": -10
+          },
+          {
+            "prime": 101,
+            "trace": -10
+          },
+          {
+            "prime": 103,
+            "trace": -18
+          },
+          {
+            "prime": 107,
+            "trace": -2
+          },
+          {
+            "prime": 109,
+            "trace": -18
+          },
+          {
+            "prime": 113,
+            "trace": 0
+          },
+          {
+            "prime": 127,
+            "trace": -15
+          },
+          {
+            "prime": 137,
+            "trace": -18
+          },
+          {
+            "prime": 139,
+            "trace": -19
+          },
+          {
+            "prime": 149,
+            "trace": -11
+          },
+          {
+            "prime": 151,
+            "trace": -16
+          },
+          {
+            "prime": 157,
+            "trace": -14
+          },
+          {
+            "prime": 163,
+            "trace": -11
+          },
+          {
+            "prime": 167,
+            "trace": -16
+          },
+          {
+            "prime": 173,
+            "trace": -21
+          },
+          {
+            "prime": 179,
+            "trace": -12
+          },
+          {
+            "prime": 181,
+            "trace": -2
+          },
+          {
+            "prime": 191,
+            "trace": 11
+          },
+          {
+            "prime": 193,
+            "trace": -17
+          },
+          {
+            "prime": 197,
+            "trace": -18
+          },
+          {
+            "prime": 199,
+            "trace": -27
+          }
+        ],
+        "value": 23.337862627686576
+      },
+      "state_index": 6,
+      "t": "-241478/126989"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 3 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 3
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 1 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 1
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 6810
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 510
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 3849367259,
+      "denominator": 269182,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 269182,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": -193951,
+      "score": {
+        "primes_used": 39,
+        "skipped_bad_primes": 5,
+        "skipped_denominator_primes": 0,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -7
+          },
+          {
+            "prime": 17,
+            "trace": -8
+          },
+          {
+            "prime": 19,
+            "trace": -6
+          },
+          {
+            "prime": 29,
+            "trace": -3
+          },
+          {
+            "prime": 31,
+            "trace": -10
+          },
+          {
+            "prime": 37,
+            "trace": -11
+          },
+          {
+            "prime": 41,
+            "trace": -9
+          },
+          {
+            "prime": 43,
+            "trace": 0
+          },
+          {
+            "prime": 47,
+            "trace": -12
+          },
+          {
+            "prime": 53,
+            "trace": -13
+          },
+          {
+            "prime": 59,
+            "trace": -14
+          },
+          {
+            "prime": 61,
+            "trace": -10
+          },
+          {
+            "prime": 71,
+            "trace": -15
+          },
+          {
+            "prime": 73,
+            "trace": -14
+          },
+          {
+            "prime": 79,
+            "trace": -16
+          },
+          {
+            "prime": 83,
+            "trace": -6
+          },
+          {
+            "prime": 97,
+            "trace": -16
+          },
+          {
+            "prime": 101,
+            "trace": -20
+          },
+          {
+            "prime": 103,
+            "trace": -15
+          },
+          {
+            "prime": 107,
+            "trace": 3
+          },
+          {
+            "prime": 109,
+            "trace": -16
+          },
+          {
+            "prime": 113,
+            "trace": -16
+          },
+          {
+            "prime": 127,
+            "trace": -7
+          },
+          {
+            "prime": 137,
+            "trace": 3
+          },
+          {
+            "prime": 139,
+            "trace": -15
+          },
+          {
+            "prime": 149,
+            "trace": -20
+          },
+          {
+            "prime": 151,
+            "trace": -24
+          },
+          {
+            "prime": 157,
+            "trace": 3
+          },
+          {
+            "prime": 163,
+            "trace": -21
+          },
+          {
+            "prime": 167,
+            "trace": -12
+          },
+          {
+            "prime": 173,
+            "trace": -13
+          },
+          {
+            "prime": 179,
+            "trace": -13
+          },
+          {
+            "prime": 181,
+            "trace": -5
+          },
+          {
+            "prime": 191,
+            "trace": -5
+          },
+          {
+            "prime": 193,
+            "trace": -18
+          },
+          {
+            "prime": 197,
+            "trace": 4
+          },
+          {
+            "prime": 199,
+            "trace": -6
+          }
+        ],
+        "value": 23.291416315572597
+      },
+      "state_index": 2,
+      "t": "-193951/269182"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 4 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 4
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 2 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 2
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 1111
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 510
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 1389320748,
+      "denominator": 234096,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 274693,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": -274693,
+      "score": {
+        "primes_used": 40,
+        "skipped_bad_primes": 4,
+        "skipped_denominator_primes": 0,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 17,
+            "trace": -4
+          },
+          {
+            "prime": 19,
+            "trace": -4
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 29,
+            "trace": -2
+          },
+          {
+            "prime": 31,
+            "trace": -11
+          },
+          {
+            "prime": 37,
+            "trace": -10
+          },
+          {
+            "prime": 41,
+            "trace": -10
+          },
+          {
+            "prime": 43,
+            "trace": -12
+          },
+          {
+            "prime": 47,
+            "trace": 2
+          },
+          {
+            "prime": 53,
+            "trace": -2
+          },
+          {
+            "prime": 59,
+            "trace": -4
+          },
+          {
+            "prime": 61,
+            "trace": -11
+          },
+          {
+            "prime": 67,
+            "trace": -7
+          },
+          {
+            "prime": 71,
+            "trace": -12
+          },
+          {
+            "prime": 73,
+            "trace": -16
+          },
+          {
+            "prime": 79,
+            "trace": -15
+          },
+          {
+            "prime": 83,
+            "trace": -16
+          },
+          {
+            "prime": 97,
+            "trace": -8
+          },
+          {
+            "prime": 101,
+            "trace": -15
+          },
+          {
+            "prime": 103,
+            "trace": -12
+          },
+          {
+            "prime": 107,
+            "trace": -4
+          },
+          {
+            "prime": 109,
+            "trace": -14
+          },
+          {
+            "prime": 113,
+            "trace": -18
+          },
+          {
+            "prime": 127,
+            "trace": -8
+          },
+          {
+            "prime": 137,
+            "trace": -17
+          },
+          {
+            "prime": 139,
+            "trace": -20
+          },
+          {
+            "prime": 149,
+            "trace": 3
+          },
+          {
+            "prime": 151,
+            "trace": -8
+          },
+          {
+            "prime": 157,
+            "trace": -18
+          },
+          {
+            "prime": 163,
+            "trace": -22
+          },
+          {
+            "prime": 167,
+            "trace": -16
+          },
+          {
+            "prime": 173,
+            "trace": -24
+          },
+          {
+            "prime": 179,
+            "trace": -2
+          },
+          {
+            "prime": 181,
+            "trace": -26
+          },
+          {
+            "prime": 191,
+            "trace": -4
+          },
+          {
+            "prime": 193,
+            "trace": -23
+          },
+          {
+            "prime": 197,
+            "trace": 0
+          },
+          {
+            "prime": 199,
+            "trace": -11
+          }
+        ],
+        "value": 23.255111235158758
+      },
+      "state_index": 15,
+      "t": "-274693/234096"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 4 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 4
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 1 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 1
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 1111
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 510
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 4243898649,
+      "denominator": 423508,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 423508,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": -188037,
+      "score": {
+        "primes_used": 39,
+        "skipped_bad_primes": 5,
+        "skipped_denominator_primes": 0,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -6
+          },
+          {
+            "prime": 19,
+            "trace": -4
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 31,
+            "trace": -9
+          },
+          {
+            "prime": 37,
+            "trace": -8
+          },
+          {
+            "prime": 41,
+            "trace": -10
+          },
+          {
+            "prime": 43,
+            "trace": -11
+          },
+          {
+            "prime": 47,
+            "trace": -6
+          },
+          {
+            "prime": 53,
+            "trace": -11
+          },
+          {
+            "prime": 59,
+            "trace": -8
+          },
+          {
+            "prime": 61,
+            "trace": -14
+          },
+          {
+            "prime": 67,
+            "trace": -16
+          },
+          {
+            "prime": 71,
+            "trace": -8
+          },
+          {
+            "prime": 73,
+            "trace": -16
+          },
+          {
+            "prime": 79,
+            "trace": -8
+          },
+          {
+            "prime": 83,
+            "trace": -16
+          },
+          {
+            "prime": 97,
+            "trace": -7
+          },
+          {
+            "prime": 101,
+            "trace": -8
+          },
+          {
+            "prime": 103,
+            "trace": -19
+          },
+          {
+            "prime": 107,
+            "trace": -15
+          },
+          {
+            "prime": 109,
+            "trace": -19
+          },
+          {
+            "prime": 113,
+            "trace": -19
+          },
+          {
+            "prime": 127,
+            "trace": -16
+          },
+          {
+            "prime": 137,
+            "trace": -18
+          },
+          {
+            "prime": 139,
+            "trace": 15
+          },
+          {
+            "prime": 149,
+            "trace": -8
+          },
+          {
+            "prime": 151,
+            "trace": -23
+          },
+          {
+            "prime": 157,
+            "trace": 14
+          },
+          {
+            "prime": 163,
+            "trace": -24
+          },
+          {
+            "prime": 167,
+            "trace": -2
+          },
+          {
+            "prime": 173,
+            "trace": -26
+          },
+          {
+            "prime": 179,
+            "trace": -14
+          },
+          {
+            "prime": 181,
+            "trace": -2
+          },
+          {
+            "prime": 191,
+            "trace": 9
+          },
+          {
+            "prime": 193,
+            "trace": -26
+          },
+          {
+            "prime": 197,
+            "trace": -12
+          },
+          {
+            "prime": 199,
+            "trace": -18
+          }
+        ],
+        "value": 23.134349852248615
+      },
+      "state_index": 0,
+      "t": "-188037/423508"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 3 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 3
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 1 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 1
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 6810
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 16651
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 513731186,
+      "denominator": 217493,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 217493,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": 161723,
+      "score": {
+        "primes_used": 39,
+        "skipped_bad_primes": 4,
+        "skipped_denominator_primes": 1,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -7
+          },
+          {
+            "prime": 17,
+            "trace": -7
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 31,
+            "trace": -6
+          },
+          {
+            "prime": 37,
+            "trace": -5
+          },
+          {
+            "prime": 41,
+            "trace": -12
+          },
+          {
+            "prime": 43,
+            "trace": -7
+          },
+          {
+            "prime": 47,
+            "trace": -8
+          },
+          {
+            "prime": 53,
+            "trace": -6
+          },
+          {
+            "prime": 59,
+            "trace": -15
+          },
+          {
+            "prime": 61,
+            "trace": -14
+          },
+          {
+            "prime": 67,
+            "trace": -11
+          },
+          {
+            "prime": 71,
+            "trace": -16
+          },
+          {
+            "prime": 73,
+            "trace": -16
+          },
+          {
+            "prime": 79,
+            "trace": -11
+          },
+          {
+            "prime": 83,
+            "trace": 6
+          },
+          {
+            "prime": 97,
+            "trace": -4
+          },
+          {
+            "prime": 101,
+            "trace": -10
+          },
+          {
+            "prime": 103,
+            "trace": -10
+          },
+          {
+            "prime": 107,
+            "trace": -18
+          },
+          {
+            "prime": 109,
+            "trace": 1
+          },
+          {
+            "prime": 113,
+            "trace": -21
+          },
+          {
+            "prime": 127,
+            "trace": -18
+          },
+          {
+            "prime": 137,
+            "trace": -23
+          },
+          {
+            "prime": 139,
+            "trace": -21
+          },
+          {
+            "prime": 149,
+            "trace": 4
+          },
+          {
+            "prime": 151,
+            "trace": -16
+          },
+          {
+            "prime": 157,
+            "trace": 1
+          },
+          {
+            "prime": 163,
+            "trace": -17
+          },
+          {
+            "prime": 167,
+            "trace": -13
+          },
+          {
+            "prime": 173,
+            "trace": -20
+          },
+          {
+            "prime": 179,
+            "trace": -25
+          },
+          {
+            "prime": 181,
+            "trace": 2
+          },
+          {
+            "prime": 191,
+            "trace": -24
+          },
+          {
+            "prime": 193,
+            "trace": 18
+          },
+          {
+            "prime": 197,
+            "trace": -23
+          },
+          {
+            "prime": 199,
+            "trace": -25
+          }
+        ],
+        "value": 22.98954937256912
+      },
+      "state_index": 3,
+      "t": "161723/217493"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "rank",
+          "label": "good residue 3 mod 7, a_p=-4",
+          "local_score": 0.9729550745276566,
+          "modulus": 7,
+          "prime": 7,
+          "residue": 3
+        },
+        {
+          "kind": "rank",
+          "label": "good residue 1 mod 11, a_p=-6",
+          "local_score": 1.0657312323548314,
+          "modulus": 11,
+          "prime": 11,
+          "residue": 1
+        },
+        {
+          "kind": "power",
+          "label": "v_89(H(T))>=2; split multiplicative",
+          "local_score": 0.011299555253933394,
+          "modulus": 7921,
+          "prime": 89,
+          "residue": 6810
+        },
+        {
+          "kind": "power",
+          "label": "v_131(H(T))>=2; split multiplicative",
+          "local_score": 0.007662872745569137,
+          "modulus": 17161,
+          "prime": 131,
+          "residue": 16651
+        }
+      ],
+      "crt_modulus": 10466785637,
+      "crt_residue": 513731186,
+      "denominator": 26853,
+      "forced_valuations": [
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 89
+        },
+        {
+          "actual": 2,
+          "forced": 2,
+          "prime": 131
+        }
+      ],
+      "height": 68092,
+      "local_constraint_score": 2.0576487348819903,
+      "numerator": 68092,
+      "score": {
+        "primes_used": 37,
+        "skipped_bad_primes": 7,
+        "skipped_denominator_primes": 0,
+        "traces": [
+          {
+            "prime": 7,
+            "trace": -4
+          },
+          {
+            "prime": 11,
+            "trace": -6
+          },
+          {
+            "prime": 13,
+            "trace": -6
+          },
+          {
+            "prime": 19,
+            "trace": -8
+          },
+          {
+            "prime": 23,
+            "trace": -8
+          },
+          {
+            "prime": 31,
+            "trace": -8
+          },
+          {
+            "prime": 37,
+            "trace": -11
+          },
+          {
+            "prime": 41,
+            "trace": -8
+          },
+          {
+            "prime": 43,
+            "trace": -8
+          },
+          {
+            "prime": 47,
+            "trace": -12
+          },
+          {
+            "prime": 53,
+            "trace": -8
+          },
+          {
+            "prime": 59,
+            "trace": -14
+          },
+          {
+            "prime": 61,
+            "trace": -12
+          },
+          {
+            "prime": 71,
+            "trace": -8
+          },
+          {
+            "prime": 73,
+            "trace": -2
+          },
+          {
+            "prime": 79,
+            "trace": -4
+          },
+          {
+            "prime": 83,
+            "trace": -16
+          },
+          {
+            "prime": 97,
+            "trace": -18
+          },
+          {
+            "prime": 101,
+            "trace": -14
+          },
+          {
+            "prime": 103,
+            "trace": -16
+          },
+          {
+            "prime": 107,
+            "trace": -2
+          },
+          {
+            "prime": 109,
+            "trace": -20
+          },
+          {
+            "prime": 113,
+            "trace": 0
+          },
+          {
+            "prime": 127,
+            "trace": -9
+          },
+          {
+            "prime": 139,
+            "trace": -22
+          },
+          {
+            "prime": 149,
+            "trace": -20
+          },
+          {
+            "prime": 151,
+            "trace": -18
+          },
+          {
+            "prime": 157,
+            "trace": -12
+          },
+          {
+            "prime": 163,
+            "trace": -20
+          },
+          {
+            "prime": 167,
+            "trace": 12
+          },
+          {
+            "prime": 173,
+            "trace": 0
+          },
+          {
+            "prime": 179,
+            "trace": -15
+          },
+          {
+            "prime": 181,
+            "trace": -14
+          },
+          {
+            "prime": 191,
+            "trace": -24
+          },
+          {
+            "prime": 193,
+            "trace": -25
+          },
+          {
+            "prime": 197,
+            "trace": -16
+          },
+          {
+            "prime": 199,
+            "trace": -26
+          }
+        ],
+        "value": 22.982395340362466
+      },
+      "state_index": 3,
+      "t": "68092/26853"
+    }
+  ],
+  "candidates_retained": 30,
+  "family": {
+    "name": "normalized Fermigier--Mestre rank-at-least-12 family",
+    "root_tuple": [
+      0,
+      55,
+      314,
+      378,
+      1007,
+      1036
+    ],
+    "source": "https://matwbn.icm.edu.pl/ksiazki/aa/aa82/aa8243.pdf"
+  },
+  "method": {
+    "globalization": "CRT followed by exact two-dimensional Gauss reduction",
+    "group_summary": [
+      {
+        "choices": 2,
+        "exponent": 2,
+        "kind": "power",
+        "prime": 89
+      },
+      {
+        "choices": 2,
+        "exponent": 2,
+        "kind": "power",
+        "prime": 131
+      },
+      {
+        "choices": 2,
+        "kind": "rank",
+        "prime": 7
+      },
+      {
+        "choices": 2,
+        "kind": "rank",
+        "prime": 11
+      }
+    ],
+    "power_constraints": "simple roots of H(T)=disc_X(R_T)/16, Hensel lifted",
+    "score": "fermigier-good",
+    "score_bound": 200,
+    "score_scope": "good reduction at primes p <= score_bound; the historical Fermigier table instead uses prime ordinal M and includes bad-prime ellap"
+  },
+  "parameters": {
+    "beam_width": 128,
+    "coefficient_radius": 12,
+    "height_weight": 0.08,
+    "keep": 30,
+    "output": "artifacts/generated-results/elliptic_fermigier_crt_lattice_pilot.json",
+    "pari_count": 1,
+    "pari_rank_count": 0,
+    "pari_rank_effort": 0,
+    "pari_timeout": 60.0,
+    "power_primes": [
+      [
+        89,
+        2
+      ],
+      [
+        131,
+        2
+      ]
+    ],
+    "rank_options": 2,
+    "rank_primes": [
+      7,
+      11
+    ],
+    "representatives_per_state": 8,
+    "score": "fermigier-good",
+    "score_bound": 200,
+    "split_only": true
+  },
+  "pari_errors": [],
+  "reproducing_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/search_crt_lattice.py --split-only --power-primes 89:2,131:2 --rank-primes 7,11 --beam-width 128 --coefficient-radius 12 --score-bound 200 --keep 30 --pari-count 1 --pari-timeout 60 --output artifacts/generated-results/elliptic_fermigier_crt_lattice_pilot.json",
+  "schema_version": 1,
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6"
+  },
+  "states_retained": 16,
+  "status": "bounded experiment; scores are heuristics and no rank follows from them",
+  "target": {
+    "alternative_rank_at_least": 30,
+    "log_conductor_strict_upper_bound": "182.72",
+    "rank_at_least": 21
+  },
+  "target_hits": []
+}

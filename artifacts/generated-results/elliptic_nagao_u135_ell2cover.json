@@ -1,0 +1,47 @@
+{
+  "candidate": {
+    "certified_rank_lower_bound": 17,
+    "parameter_u": "135/2",
+    "short_weierstrass_coefficients": [
+      "0",
+      "0",
+      "0",
+      "-564322920496764715904305097281/80621568",
+      "376721622053639793561558541510664719787672929/1880739938304"
+    ]
+  },
+  "declared_budget": {
+    "heartbeat_seconds": 30.0,
+    "observed_rss_limit_bytes": 1000000000,
+    "one_attempt_no_retry": true,
+    "pari_stack_bytes": 1000000000,
+    "timeout_seconds": 240.0
+  },
+  "input": {
+    "actual_sha256": "7378ce59c72974fe39e0e2a40c740f6a96e8dc555a1361b5aaeef67f4d9e0213",
+    "expected_sha256": "7378ce59c72974fe39e0e2a40c740f6a96e8dc555a1361b5aaeef67f4d9e0213",
+    "path": "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic_nagao_rank17_frontier_certificate.json"
+  },
+  "interpretation": "ell2cover returns a basis of everywhere locally soluble 2-covers; a timeout supplies no Selmer dimension, cover, rank bound, or evidence of rank",
+  "prior_strict_probe": {
+    "maximum_observed_rss_bytes": 177143808,
+    "pari_version": "2.17.4",
+    "status": "strict_timeout_no_cover_output",
+    "timeout_seconds": 90
+  },
+  "result": {
+    "cover_count": null,
+    "elapsed_seconds": 240.11835483300092,
+    "maximum_observed_rss_bytes": 232177664,
+    "raw_stderr": "  ***   Warning: new maximum stack size = 1000013824 (953.688 Mbytes).\n",
+    "raw_stdout": "PARI_VERSION=[2, 17, 4]\nCERTIFICATE_SHA256=7378ce59c72974fe39e0e2a40c740f6a96e8dc555a1361b5aaeef67f4d9e0213\n",
+    "return_code": -15
+  },
+  "schema_version": 1,
+  "script_sha256": "2c5e5a12d72876ff64c7b83978fa02e451eab1d6e16cea03cd2444afe7ae5e8c",
+  "software": {
+    "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+    "python": "3.14.6"
+  },
+  "status": "strict_timeout_no_cover_output"
+}

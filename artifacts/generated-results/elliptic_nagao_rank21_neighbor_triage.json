@@ -1,0 +1,473 @@
+{
+  "bounds": {
+    "ellrank_effort": 0,
+    "ellrank_timeout_seconds": 20.0,
+    "height_decimal_precisions": [
+      72,
+      120
+    ],
+    "height_timeout_seconds_per_replay": 30.0,
+    "pari_rank_stack_bytes": 1000000000,
+    "pari_stack_bytes": 512000000,
+    "process_policy": "every PARI invocation is a synchronous foreground subprocess; Python subprocess timeouts kill and wait for that child",
+    "quartic_naive_height_bound": 50000,
+    "search_timeout_seconds": 30.0
+  },
+  "candidate": {
+    "augmented_height_matrix_runs": [
+      {
+        "decimal_precision": 72,
+        "gp_process_wall_seconds": 0.03426570800002082,
+        "numerical_rank": 11,
+        "subset_height_determinant": "3286515880686393352.56709756586586153157373249902585865650986380043878727",
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "subset_largest_eigenvalue": "121.688205907249288941877044740246312995395546375055595791061949364904640",
+        "subset_smallest_eigenvalue": "4.63351840127585230193228930620456909155445506275443928353684919792455007"
+      },
+      {
+        "decimal_precision": 120,
+        "gp_process_wall_seconds": 0.03426570800002082,
+        "numerical_rank": 11,
+        "subset_height_determinant": "3286515880686393352.56709756586586153157373249902585865650986380043878727453353366106150249713184793782677570365659534797",
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "subset_largest_eigenvalue": "121.688205907249288941877044740246312995395546375055595791061949364904640775379614599924276398520826413094068765113522865",
+        "subset_smallest_eigenvalue": "4.63351840127585230193228930620456909155445506275443928353684919792455007291456994414396482446400051490482831309686315894"
+      }
+    ],
+    "augmented_pool_point_count": 12,
+    "baseline_height_matrix_runs": [
+      {
+        "decimal_precision": 72,
+        "gp_process_wall_seconds": 0.03467658299996401,
+        "numerical_rank": 11,
+        "subset_height_determinant": "3286515880686393352.56709756586586153157373249902585865650986380043878727",
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "subset_largest_eigenvalue": "121.688205907249288941877044740246312995395546375055595791061949364904640",
+        "subset_smallest_eigenvalue": "4.63351840127585230193228930620456909155445506275443928353684919792455007"
+      },
+      {
+        "decimal_precision": 120,
+        "gp_process_wall_seconds": 0.03467658299996401,
+        "numerical_rank": 11,
+        "subset_height_determinant": "3286515880686393352.56709756586586153157373249902585865650986380043878727453353366106150249713184793782677570365659534797",
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "subset_largest_eigenvalue": "121.688205907249288941877044740246312995395546375055595791061949364904640775379614599924276398520826413094068765113522865",
+        "subset_smallest_eigenvalue": "4.63351840127585230193228930620456909155445506275443928353684919792455007291456994414396482446400051490482831309686315894"
+      }
+    ],
+    "below_strict_log_conductor_target": true,
+    "bounded_quartic_search": {
+      "distinct_quartic_abscissas": 6,
+      "exact_mapping_and_sign_pair_deduplication_checked": true,
+      "mapped_nonzero_signless_points": 6,
+      "mapped_point_records": [
+        {
+          "duplicate_seed_or_prior_sign_pair": true,
+          "exact_quartic_and_jacobian_membership_checked": true,
+          "jacobian_x": "20310904330610646247473295541357159881/281848545131038272239542668",
+          "jacobian_y": "-26313466916175000361175470564909129849688291122731110/1405292757818038825929860860088254623",
+          "quartic_x": "-6041/198",
+          "quartic_z": "10384035907/9801",
+          "visible_section_abscissa": true
+        },
+        {
+          "duplicate_seed_or_prior_sign_pair": true,
+          "exact_quartic_and_jacobian_membership_checked": true,
+          "jacobian_x": "117648588670048555790082169715535769/502452870476698242864972",
+          "jacobian_y": "-11945879844604947030503039412383477449953307162630/105775749068233411282742708730759",
+          "quartic_x": "-5249/198",
+          "quartic_z": "5323862545/9801",
+          "visible_section_abscissa": true
+        },
+        {
+          "duplicate_seed_or_prior_sign_pair": true,
+          "exact_quartic_and_jacobian_membership_checked": true,
+          "jacobian_x": "891900148979750337103557487151399401/4156004877641772230988",
+          "jacobian_y": "2251437909733849683904387186212064635817098471213860/716142906240928476687461672577",
+          "quartic_x": "3265/198",
+          "quartic_z": "45570968/3267",
+          "visible_section_abscissa": true
+        },
+        {
+          "duplicate_seed_or_prior_sign_pair": true,
+          "exact_quartic_and_jacobian_membership_checked": true,
+          "jacobian_x": "292423164303723025026986484917929/11205490728949621448652",
+          "jacobian_y": "3494056657694511766794551178620044911578818240/1056843517087112090537865732453",
+          "quartic_x": "6041/198",
+          "quartic_z": "15059188130/9801",
+          "visible_section_abscissa": true
+        },
+        {
+          "duplicate_seed_or_prior_sign_pair": true,
+          "exact_quartic_and_jacobian_membership_checked": true,
+          "jacobian_x": "53051348936004373553453867550418708129/2443748214971414455277935212",
+          "jacobian_y": "240459132847737990509668373595092893238391603891349360/107633894120384626608022412167980398913",
+          "quartic_x": "6833/198",
+          "quartic_z": "17472235012/9801",
+          "visible_section_abscissa": true
+        },
+        {
+          "duplicate_seed_or_prior_sign_pair": true,
+          "exact_quartic_and_jacobian_membership_checked": true,
+          "jacobian_x": "44414072284555181317630719538326023/3575135687680113907900374",
+          "jacobian_y": "79511358974286260953435288244351111547201543279835/306634247791713814859884335940982622",
+          "quartic_x": "15347/198",
+          "quartic_z": "12286405612/3267",
+          "visible_section_abscissa": true
+        }
+      ],
+      "naive_height_bound": 50000,
+      "new_distinct_jacobian_sign_pairs": 0,
+      "pari_reported_milliseconds": 11,
+      "scope": "PARI hyperellratpoints affine rational points on the exact primitive quartic up to the declared naive height",
+      "signed_points_found": 12,
+      "visible_seed_abscissas_returned": 6,
+      "wall_seconds": 0.02715558400086593,
+      "zero_ordinate_points_not_mapped": []
+    },
+    "candidate_id": "nagao-rank21-neighbor-0030",
+    "conductor": 145328460619869332675274134603679094700304710569323416593094244808470369810,
+    "constructor_parameter": "6041/198",
+    "exact_visible_seeds": {
+      "all_points_checked_exactly": true,
+      "distinct_jacobian_sign_pairs": 12,
+      "distinct_quartic_abscissas": 12,
+      "jacobian_image_count": 12,
+      "jacobian_point_sha256": "b509ac12143f6cd5f6d0ea94add9441b1faaccc223cedb5eea67b1402710f5e3",
+      "quartic_point_count": 12,
+      "quartic_point_sha256": "606bf3ae9e9db97ead69709756f3fd0d59f5baaff045d6bef67a8cb25b1e136e"
+    },
+    "explicit_numerically_independent_subset": [
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "20310904330610646247473295541357159881/281848545131038272239542668",
+        "jacobian_y": "-26313466916175000361175470564909129849688291122731110/1405292757818038825929860860088254623",
+        "pool_index_one_based": 1,
+        "provenance": "visible-section-1"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "292423164303723025026986484917929/11205490728949621448652",
+        "jacobian_y": "3494056657694511766794551178620044911578818240/1056843517087112090537865732453",
+        "pool_index_one_based": 2,
+        "provenance": "visible-section-2"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "117648588670048555790082169715535769/502452870476698242864972",
+        "jacobian_y": "11945879844604947030503039412383477449953307162630/105775749068233411282742708730759",
+        "pool_index_one_based": 3,
+        "provenance": "visible-section-3"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "53051348936004373553453867550418708129/2443748214971414455277935212",
+        "jacobian_y": "240459132847737990509668373595092893238391603891349360/107633894120384626608022412167980398913",
+        "pool_index_one_based": 4,
+        "provenance": "visible-section-4"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "891900148979750337103557487151399401/4156004877641772230988",
+        "jacobian_y": "-2251437909733849683904387186212064635817098471213860/716142906240928476687461672577",
+        "pool_index_one_based": 5,
+        "provenance": "visible-section-5"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "44414072284555181317630719538326023/3575135687680113907900374",
+        "jacobian_y": "-79511358974286260953435288244351111547201543279835/306634247791713814859884335940982622",
+        "pool_index_one_based": 6,
+        "provenance": "visible-section-6"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "110018548854311360390073320190963841/11285774207120458192939308",
+        "jacobian_y": "-2587432627363807788832658709884413861719481429010/11260045560868324728775690668257133",
+        "pool_index_one_based": 7,
+        "provenance": "visible-section-7"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-579571700216916311743473835720604159/58184022499198297531344108",
+        "jacobian_y": "913213290674905214196804858681842293209150925481920/395430333038117478797799652649679249",
+        "pool_index_one_based": 8,
+        "provenance": "visible-section-8"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "572939100092857103085338043823681/116951347113614425460268",
+        "jacobian_y": "107669360837031695326332574506901630534671623390/106903879146274034253453282877707",
+        "pool_index_one_based": 9,
+        "provenance": "visible-section-9"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "18310438271058840931890680641/2493137462643555948",
+        "jacobian_y": "19969542955937176037869379111292656802980/31566484142788890119542839",
+        "pool_index_one_based": 10,
+        "provenance": "visible-section-10"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-9591586401299924663100225074639/542880243539659425708",
+        "jacobian_y": "7147655051602900227038890883653863592676140/3756636447131898200395796733",
+        "pool_index_one_based": 11,
+        "provenance": "visible-section-11"
+      }
+    ],
+    "interpretation": "all stored points satisfy exact equations, but height-matrix rank is numerical and the H-bounded search supplies no upper bound on rational points or Mordell-Weil rank",
+    "log_conductor": "170.765123121845207336365931373408971283865412698311457441216",
+    "numerical_rank_gain_over_visible_seed_pool": 0,
+    "pari_ellrank_effort_zero": {
+      "effort": 0,
+      "interpretation": "strict bounded probe timed out without rank bounds",
+      "pari_stack_bytes": 1000000000,
+      "status": "timeout",
+      "supplied_numerically_independent_points": 11,
+      "timeout_seconds": 20.0,
+      "wall_seconds": 20.005121709000377
+    },
+    "rank_claim": null,
+    "root_number": 1,
+    "source_local_checks": [
+      {
+        "forced_lower_bound": 4,
+        "label": "p5-record-lift",
+        "observed_discriminant_valuation": 4,
+        "prime": 5,
+        "proved_reduction_on_ball": "split multiplicative"
+      },
+      {
+        "forced_lower_bound": 4,
+        "label": "p7-record",
+        "observed_discriminant_valuation": 5,
+        "prime": 7,
+        "proved_reduction_on_ball": "split multiplicative"
+      },
+      {
+        "forced_lower_bound": 4,
+        "label": "p13-record",
+        "observed_discriminant_valuation": 4,
+        "prime": 13,
+        "proved_reduction_on_ball": "split multiplicative"
+      },
+      {
+        "forced_lower_bound": 3,
+        "label": "p17-record",
+        "observed_discriminant_valuation": 3,
+        "prime": 17,
+        "proved_reduction_on_ball": "split multiplicative"
+      },
+      {
+        "forced_lower_bound": 3,
+        "label": "p23-record",
+        "observed_discriminant_valuation": 3,
+        "prime": 23,
+        "proved_reduction_on_ball": "split multiplicative"
+      }
+    ],
+    "source_score": "75.206437560210640776614233822695722837151144935943775157957985818824096815530144",
+    "source_score_last_numerical_prime": 9973,
+    "stable_augmented_numerical_rank": 11,
+    "stable_baseline_numerical_rank": 11
+  },
+  "input": {
+    "path": "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic_nagao_rank21_neighborhood.json",
+    "sha256": "7d59fe9a91c0f3e46604794e8931ae27e26eeea1ebf252176dffd6be8d6010fe"
+  },
+  "invocation": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/triage_nagao_rank21_neighbor.py",
+  "primary_source": "https://da.lib.kobe-u.ac.jp/da/kernel/E0003610/E0003610.pdf",
+  "published_record_calibration": {
+    "all_printed_points_checked_exactly_on_printed_model": true,
+    "calibration_lesson": "the published rank-21 specialization has only numerical rank 11 inside the same twelve visible seeds, so failure to find new low-height points at the neighbor cannot exclude hidden high rank",
+    "constructor_parameter": "14721/188",
+    "independence_status": "Nagao's published independence result is cited; the numerical height replay is calibration and not a replacement proof",
+    "printed_point_count": 21,
+    "printed_point_height_matrix_runs": [
+      {
+        "decimal_precision": 72,
+        "gp_process_wall_seconds": 0.08817570799874375,
+        "numerical_rank": 21,
+        "subset_height_determinant": "1057662683061657998079887.56445993174463505248285086903543879290452943972",
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "subset_largest_eigenvalue": "461.663642198424244739032810334769975834836124884750004563423289087241064",
+        "subset_smallest_eigenvalue": "0.469340128026065457180007791979754281363746320931585327131365740882071984"
+      },
+      {
+        "decimal_precision": 120,
+        "gp_process_wall_seconds": 0.08817570799874375,
+        "numerical_rank": 21,
+        "subset_height_determinant": "1057662683061657998079887.56445993174463505248285086903543879290452943971583785459425338496648528217991598072959137219186",
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "subset_largest_eigenvalue": "461.663642198424244739032810334769975834836124884750004563423289087241063941270258254746683086975403175057482339594389216",
+        "subset_smallest_eigenvalue": "0.469340128026065457180007791979754281363746320931585327131365740882071984144252337438869861441655634206126704962591735507"
+      }
+    ],
+    "stable_printed_point_numerical_rank": 21,
+    "stable_visible_seed_numerical_rank": 11,
+    "visible_jacobian_point_count": 12,
+    "visible_quartic_point_count": 12,
+    "visible_seed_height_matrix_runs": [
+      {
+        "decimal_precision": 72,
+        "gp_process_wall_seconds": 0.03566608300025109,
+        "numerical_rank": 11,
+        "subset_height_determinant": "22476104834423698956.3957863151324234743741748711277881582812200320336018",
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "subset_largest_eigenvalue": "135.271130846333810014120170647006895486723162668908848194435450469716442",
+        "subset_smallest_eigenvalue": "5.18719116053739694952899255050716679765006700478356149472729759464189214"
+      },
+      {
+        "decimal_precision": 120,
+        "gp_process_wall_seconds": 0.03566608300025109,
+        "numerical_rank": 11,
+        "subset_height_determinant": "22476104834423698956.3957863151324234743741748711277881582812200320336017544632506231258913734040735822375195384552542659",
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "subset_largest_eigenvalue": "135.271130846333810014120170647006895486723162668908848194435450469716442462733599180507114536655673258867796154210462846",
+        "subset_smallest_eigenvalue": "5.18719116053739694952899255050716679765006700478356149472729759464189214015735886524894252027854270709132642696137512867"
+      }
+    ]
+  },
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/triage_nagao_rank21_neighbor.py",
+  "schema_version": 1,
+  "script_sha256": "38dfa29cbec4ec7ba0c9092891c5e20cf0003b9808e1fa4096c184962a3de0f6",
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6",
+    "python_implementation": "CPython"
+  },
+  "status": "bounded exact-point and precision-stable numerical-height triage; the effort-zero rank probe is strictly time bounded, no algebraic rank is inferred from the neighborhood, and no target hit is claimed",
+  "summary": {
+    "candidate_new_jacobian_sign_pairs_at_height_bound": 0,
+    "candidate_signed_points_found_at_height_bound": 12,
+    "candidate_stable_augmented_numerical_rank": 11,
+    "candidate_stable_visible_seed_numerical_rank": 11,
+    "ellrank_probe_status": "timeout",
+    "published_printed_point_numerical_rank": 21,
+    "published_visible_seed_numerical_rank": 11,
+    "target_hit": false
+  },
+  "target": {
+    "alternative_rank_at_least": 30,
+    "certified_hits": [],
+    "log_conductor_strict_upper_bound": "182.72",
+    "rank_at_least": 21
+  }
+}

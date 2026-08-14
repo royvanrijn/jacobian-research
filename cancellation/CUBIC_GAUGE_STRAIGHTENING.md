@@ -807,6 +807,124 @@ scheme intersections, and the absence of the phantom unramified divisor.
 This is much narrower than classifying arbitrary nonlinear coefficient
 morphisms or arbitrary polynomial gauges.
 
+### Proposition 2.11 -- split one-coordinate base changes are rigid
+
+Normalize `q=1` and consider the split coefficient map
+
+\[
+ G_f:\mathbb A^3_{w,u,v}\longrightarrow H_1,
+ \qquad (w,u,v)\longmapsto(f(w),u,v),
+\tag{9ab}
+\]
+
+where `f` is nonconstant.  Let `U_f` be the pullback of `V_1` in (9aa).
+Then
+
+\[
+ \boxed{U_f\simeq\mathbb A^3\quad\Longleftrightarrow\quad
+        \deg f=1.}
+\tag{9ac}
+\]
+
+More precisely, over an algebraic closure write
+
+\[
+ f(w)=\lambda\prod_{i=1}^r(w-\alpha_i)^{m_i}.
+\tag{9ad}
+\]
+
+After scalar extension to the algebraic closure, the pullback source is
+smooth and
+
+\[
+ \operatorname{Cl}(U_f\mathbin{\times}_k\bar k)
+ \simeq
+ \mathbb Z^r/\mathbb Z(m_1,\ldots,m_r)
+ \simeq
+ \mathbb Z^{r-1}\oplus\mathbb Z/\gcd(m_1,\ldots,m_r).
+\tag{9ae}
+\]
+
+Here `Z/1` is zero.  Thus the class group vanishes only for one simple
+root, equivalently `deg(f)=1`.  The same conclusion holds whenever
+`w,u,v` are merely a polynomial coordinate system on the base.
+
+#### Proof
+
+Use the global factor-space coordinates of the normalized factorization
+model.  On `V_1\simeq A^3_{a,y,z}` one has
+
+\[
+ C_0=ac,\qquad
+ c=1-\frac32ay+a^2z.
+\tag{9af}
+\]
+
+Eliminating `u,v` from the fiber product gives
+
+\[
+ R_f=\mathcal O(U_f)
+ =k[a,y,z,w]/(H),
+ \qquad
+ H=f(w)-a\left(1-\frac32ay+a^2z\right).
+\tag{9ag}
+\]
+
+As a polynomial in `z`, its two coefficients are coprime, so `H` is
+primitive linear and irreducible.  This hypersurface is smooth:
+`partial_z H=-a^3`, while on `a=0` one has
+`partial_a H=-1`.  It is consequently normal.  Localizing at `a` and
+solving first for `c=f(w)/a` and then for `z` gives
+
+\[
+ (R_f)_a\simeq k[a^{\pm1},y,w],
+\tag{9ah}
+\]
+
+a UFD whose units are `k^*a^Z`.  The height-one components of `V(a)` are
+
+\[
+ D_i=V(a,w-\alpha_i).
+\tag{9ai}
+\]
+
+At the generic point of `D_i`, the factor `c` is a unit and the equation
+`ac=f(w)` gives
+
+\[
+ \operatorname{ord}_{D_i}(a)=m_i.
+\tag{9aj}
+\]
+
+After replacing `k` by its algebraic closure, the divisor-localization
+sequence is therefore
+
+\[
+ (R_f)_a^*\longrightarrow
+ \bigoplus_{i=1}^r\mathbb Z[D_i]
+ \longrightarrow\operatorname{Cl}(R_f)\longrightarrow0,
+\tag{9ak}
+\]
+
+and its first map sends `a` to `(m_1,...,m_r)`.  This proves (9ae).
+For `deg(f)>1` the group is nonzero, so `U_f` cannot be affine space.
+If the original field is not algebraically closed, the same contradiction
+is obtained after scalar extension.  If `deg(f)=1`, then `G_f` itself is a
+polynomial automorphism and its pullback is foundational.  QED
+
+The calculation also shows why smoothness is too weak for foundational
+base-change rigidity: every `U_f` is smooth, including the excluded ones.
+What detects the nonlinear base change is its boundary divisor lattice.
+The checker is
+[`verify_foundational_split_base_changes.py`](../scripts/verify_foundational_split_base_changes.py).
+
+This proposition settles all split one-coordinate coefficient maps but not
+general dominant maps `G:A^3->A^3`, where the pullback of `C_0=0` need not
+be a union of coordinate fibers and the localized ring need not be a
+Laurent polynomial UFD.
+
+<!-- status-consumer: SBC3 f5cbae00b4e87623 -->
+
 ## 3. The quadratic-shear stress test
 
 Take

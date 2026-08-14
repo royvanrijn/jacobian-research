@@ -1,0 +1,45 @@
+{
+  "candidate": {
+    "certified_rank_lower_bound": 20,
+    "conductor": "4739512365768104141634183882739432010081578062727282562384233196211945306960",
+    "constructor_parameter_T": "5081/47",
+    "minimal_model": [
+      0,
+      -1,
+      0,
+      -47433564031723813622493745045480,
+      124574716166660957649866283198474133374724238272
+    ],
+    "root_number": 1
+  },
+  "declared_budget": {
+    "heartbeat_seconds": 30.0,
+    "observed_rss_limit_bytes": 1000000000,
+    "one_attempt_no_retry": true,
+    "pari_stack_bytes": 1000000000,
+    "timeout_seconds": 240.0
+  },
+  "input": {
+    "actual_sha256": "466946076dc0c3fa02d0c5edd90b947d5ee3d10a4fb8cb16567049ab4380f88d",
+    "expected_sha256": "466946076dc0c3fa02d0c5edd90b947d5ee3d10a4fb8cb16567049ab4380f88d",
+    "path": "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic_nagao_rank20_t5081_rank20_certificate.json"
+  },
+  "interpretation": "ell2cover returns a basis of everywhere locally soluble 2-covers; completion alone is not a rank certificate, while a timeout or memory stop supplies no Selmer dimension, cover, or rank evidence",
+  "reproducing_command": ".venv/bin/python elliptic-curves/tools/run_nagao_rank20_t5081_ell2cover.py --timeout 240 --stack-bytes 1000000000 --rss-limit-bytes 1000000000",
+  "result": {
+    "cover_count": null,
+    "elapsed_seconds": 240.0493334999992,
+    "maximum_observed_rss_bytes": 328171520,
+    "raw_stderr": "  ***   Warning: new maximum stack size = 1000013824 (953.688 Mbytes).\n",
+    "raw_stdout": "PARI_VERSION=[2, 17, 4]\nCERTIFICATE_SHA256=466946076dc0c3fa02d0c5edd90b947d5ee3d10a4fb8cb16567049ab4380f88d\nCONDUCTOR=4739512365768104141634183882739432010081578062727282562384233196211945306960\n",
+    "replayed_conductor": 4739512365768104141634183882739432010081578062727282562384233196211945306960,
+    "return_code": -15
+  },
+  "schema_version": 1,
+  "script_sha256": "1a2ca4dd7f92fb0b67398c79849daac580d37b5624dd3954eca49beed505fede",
+  "software": {
+    "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+    "python": "3.14.6"
+  },
+  "status": "strict_timeout_no_cover_output"
+}

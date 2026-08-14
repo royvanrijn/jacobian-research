@@ -626,6 +626,13 @@ The exact concurrence, general-position, and tangent-fourth closures
 complete split-linear clean quartic-denominator packet is empty.  Clean
 denominators with irreducible conic, cubic, or quartic components remain,
 followed by the positive-defect and lower-Smith strata in item 4.  The first
+smooth-cubic continuation `HC4NHM19` gives an orthogonal normal form on the
+elliptic component.  The rank-two quotient splits into isotropic line bundles
+of degrees `(0,9)`, `(2,7)`, `(3,6)`, or `(4,5)`, and Hessian integrability
+excludes `(0,9)`.  Thus the cubic-plus-line packet is reduced invariantly to
+the last three degree types; see
+[`HC4_SMOOTH_CUBIC_ORTHOGONAL_NORMAL_FORM.md`](HC4_SMOOTH_CUBIC_ORTHOGONAL_NORMAL_FORM.md).
+The first
 smooth-quartic continuation `HC4NHM14` converts the irreducible-quartic row
 to a reciprocal quadratic factorization and a finite residual-line atlas;
 see
@@ -637,6 +644,23 @@ exceptional parameter locus and the other residual-line types open; see
 The follow-up `HC4NHM17` enters the first visible exceptional divisor and
 closes nine generic or algebraic slices; see
 [`HC4_SMOOTH_QUARTIC_SQUAREFREE_LINE_EXCEPTIONAL_SLICES.md`](HC4_SMOOTH_QUARTIC_SQUAREFREE_LINE_EXCEPTIONAL_SLICES.md).
+The visible pivot in those two calculations is identified invariantly by
+`HC4NHM20` as a first polar of the binary resultant
+`Res(s^3+t^3,H)`.  Its generic coefficient-space fiber is a smooth conic,
+and its squarefree degree-fifteen degeneration locus has only two-line
+fibers; see
+[`HC4_SMOOTH_QUARTIC_PIVOT_POLAR_GEOMETRY.md`](HC4_SMOOTH_QUARTIC_PIVOT_POLAR_GEOMETRY.md).
+The follow-up `HC4NHM22` uses the universal point `[1:3:1]` to parametrize
+the generic polar conic.  Ten linear pivots and eight selected reciprocal
+coefficients put the sixth power of every active deformation coordinate in
+the exact ideal, leaving only the determinant-zero boundary matrix.  Thus
+the generic polar-conic component is empty; see
+[`HC4_SMOOTH_QUARTIC_POLAR_CONIC_GENERIC_GATE.md`](HC4_SMOOTH_QUARTIC_POLAR_CONIC_GENERIC_GATE.md).
+The symmetry continuation `HC4NHM23` proves that the fifteen non-generic
+line-fiber slopes have only three Fermat-automorphism normal forms of sizes
+`3+6+6`.  It transports the exact `tau=-1` certificates across the complete
+size-three orbit `tau^3=-1`, leaving only two genuine line-fiber types; see
+[`HC4_SMOOTH_QUARTIC_FERMAT_SYMMETRY_ORBITS.md`](HC4_SMOOTH_QUARTIC_FERMAT_SYMMETRY_ORBITS.md).
 The conic continuation `HC4NHM13` excludes the complete conic-divisible top
 subrow for the double-conic denominator `P=q^2`; see
 [`HC4_SMOOTH_CONIC_DIVISIBLE_TOP_GATE.md`](HC4_SMOOTH_CONIC_DIVISIBLE_TOP_GATE.md).
@@ -647,6 +671,18 @@ harmonic-cross-ratio four-root locus before any Schur equation is imposed.
 It also closes eight complete arbitrary-cross-ratio partitions and confines
 the last row \((3,3,2,2)\) to a finite exceptional cross-ratio locus; see
 [`HC4_DOUBLE_CONIC_NORMAL_LAYERS.md`](HC4_DOUBLE_CONIC_NORMAL_LAYERS.md).
+The follow-up `HC4NHM18` removes that locus by endpoint normal-layer chains
+and a two-equation middle contradiction. Thus every restriction supported
+on at most four points is empty before the Schur equations; see
+[`HC4_DOUBLE_CONIC_BALANCED_FOUR_ROOT_CLOSURE.md`](HC4_DOUBLE_CONIC_BALANCED_FOUR_ROOT_CLOSURE.md).
+For the remaining many-root row, `HC4NHM21` shows that invariant elimination
+must first saturate the four normal-layer ideal by the three coefficients of
+the nonzero residual line `Phi_2`.  Without that saturation the proposed
+discriminant membership is false, even for the squarefree decic
+`s^10+t^10`; after saturation, discriminant membership closes only the
+squarefree open, while nullcone containment is the correct all-stable target.
+See
+[`HC4_DOUBLE_CONIC_INVARIANT_SATURATION_GATE.md`](HC4_DOUBLE_CONIC_INVARIANT_SATURATION_GATE.md).
 
 This is the precise self-dual matrix-factorization version of the surviving
 minimal rank-three packet.

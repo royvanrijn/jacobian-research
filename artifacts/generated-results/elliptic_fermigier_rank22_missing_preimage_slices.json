@@ -1,0 +1,953 @@
+{
+  "all_signless_parameter_incidences": [
+    {
+      "classification": "record source fiber",
+      "normalized_parameter_t": "39508/39",
+      "prior_source_slice_ids": [],
+      "quartic_x": "1185892/741",
+      "quartic_z": "268505415144218/183027",
+      "raw_parameter_t": "39508/39",
+      "slice_id": "p14_m1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "111776/171",
+      "prior_source_slice_ids": [],
+      "quartic_x": "-11336/171",
+      "quartic_z": "357245712866/185193",
+      "raw_parameter_t": "-111776/171",
+      "slice_id": "p14_p1"
+    },
+    {
+      "classification": "previously searched Fermigier fiber",
+      "normalized_parameter_t": "31331/104",
+      "prior_source_slice_ids": [],
+      "quartic_x": "565351/1976",
+      "quartic_z": "25874418335949/1952288",
+      "raw_parameter_t": "-31331/104",
+      "slice_id": "p14_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "5580/19",
+      "prior_source_slice_ids": [],
+      "quartic_x": "5580/19",
+      "quartic_z": "9109785570/361",
+      "raw_parameter_t": "-5580/19",
+      "slice_id": "p14_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "10115/38",
+      "prior_source_slice_ids": [],
+      "quartic_x": "12205/38",
+      "quartic_z": "16699642470/361",
+      "raw_parameter_t": "-10115/38",
+      "slice_id": "p14_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "55888/247",
+      "prior_source_slice_ids": [],
+      "quartic_x": "89192/247",
+      "quartic_z": "71148481064262/1159171",
+      "raw_parameter_t": "-55888/247",
+      "slice_id": "p14_p1"
+    },
+    {
+      "classification": "previously searched Fermigier fiber",
+      "normalized_parameter_t": "22253/114",
+      "prior_source_slice_ids": [],
+      "quartic_x": "2353/6",
+      "quartic_z": "1383921506548/20577",
+      "raw_parameter_t": "-22253/114",
+      "slice_id": "p14_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "2597/19",
+      "prior_source_slice_ids": [],
+      "quartic_x": "8563/19",
+      "quartic_z": "1300333041/19",
+      "raw_parameter_t": "-2597/19",
+      "slice_id": "p14_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "1989/19",
+      "prior_source_slice_ids": [],
+      "quartic_x": "9171/19",
+      "quartic_z": "23157274557/361",
+      "raw_parameter_t": "-1989/19",
+      "slice_id": "p14_p1"
+    },
+    {
+      "classification": "genuinely new fiber incidence",
+      "normalized_parameter_t": "100380/19589",
+      "prior_source_slice_ids": [],
+      "quartic_x": "11405580/19589",
+      "quartic_z": "130378677077525730/7290849499",
+      "raw_parameter_t": "-100380/19589",
+      "slice_id": "p14_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "7973/38",
+      "prior_source_slice_ids": [],
+      "quartic_x": "30293/38",
+      "quartic_z": "15251791842/361",
+      "raw_parameter_t": "7973/38",
+      "slice_id": "p14_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "4262/19",
+      "prior_source_slice_ids": [],
+      "quartic_x": "15422/19",
+      "quartic_z": "1166038956/19",
+      "raw_parameter_t": "4262/19",
+      "slice_id": "p14_p1"
+    },
+    {
+      "classification": "record source fiber",
+      "normalized_parameter_t": "39508/39",
+      "prior_source_slice_ids": [],
+      "quartic_x": "1185892/741",
+      "quartic_z": "268505415144218/183027",
+      "raw_parameter_t": "39508/39",
+      "slice_id": "p14_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "189921/325",
+      "prior_source_slice_ids": [],
+      "quartic_x": "526621/325",
+      "quartic_z": "166220754199403/105625",
+      "raw_parameter_t": "189921/325",
+      "slice_id": "p15_m1"
+    },
+    {
+      "classification": "record source fiber",
+      "normalized_parameter_t": "39508/39",
+      "prior_source_slice_ids": [],
+      "quartic_x": "1161926/975",
+      "quartic_z": "604806062069272/950625",
+      "raw_parameter_t": "39508/39",
+      "slice_id": "p15_m1"
+    },
+    {
+      "classification": "genuinely new fiber incidence",
+      "normalized_parameter_t": "184079/75",
+      "prior_source_slice_ids": [],
+      "quartic_x": "-170677/75",
+      "quartic_z": "1224111203277109/140625",
+      "raw_parameter_t": "-184079/75",
+      "slice_id": "p15_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "6701/75",
+      "prior_source_slice_ids": [],
+      "quartic_x": "6701/75",
+      "quartic_z": "22573998109/375",
+      "raw_parameter_t": "-6701/75",
+      "slice_id": "p15_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "9277/150",
+      "prior_source_slice_ids": [],
+      "quartic_x": "17527/150",
+      "quartic_z": "42173612098/1125",
+      "raw_parameter_t": "-9277/150",
+      "slice_id": "p15_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "19033/390",
+      "prior_source_slice_ids": [],
+      "quartic_x": "443617/1950",
+      "quartic_z": "79912622232499/4753125",
+      "raw_parameter_t": "19033/390",
+      "slice_id": "p15_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "5074/75",
+      "prior_source_slice_ids": [],
+      "quartic_x": "18476/75",
+      "quartic_z": "156421764398/5625",
+      "raw_parameter_t": "5074/75",
+      "slice_id": "p15_p1"
+    },
+    {
+      "classification": "genuinely new fiber incidence",
+      "normalized_parameter_t": "56441/810",
+      "prior_source_slice_ids": [],
+      "quartic_x": "1005913/4050",
+      "quartic_z": "1773101016015056/61509375",
+      "raw_parameter_t": "56441/810",
+      "slice_id": "p15_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "7474/75",
+      "prior_source_slice_ids": [],
+      "quartic_x": "20876/75",
+      "quartic_z": "78344402342/1875",
+      "raw_parameter_t": "7474/75",
+      "slice_id": "p15_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "19033/135",
+      "prior_source_slice_ids": [],
+      "quartic_x": "215783/675",
+      "quartic_z": "374943708577543/6834375",
+      "raw_parameter_t": "19033/135",
+      "slice_id": "p15_p1"
+    },
+    {
+      "classification": "genuinely new fiber incidence",
+      "normalized_parameter_t": "56441/240",
+      "prior_source_slice_ids": [],
+      "quartic_x": "496637/1200",
+      "quartic_z": "81107265211483/1200000",
+      "raw_parameter_t": "56441/240",
+      "slice_id": "p15_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "62123/150",
+      "prior_source_slice_ids": [],
+      "quartic_x": "88927/150",
+      "quartic_z": "120823982534/5625",
+      "raw_parameter_t": "62123/150",
+      "slice_id": "p15_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "32149/75",
+      "prior_source_slice_ids": [],
+      "quartic_x": "45551/75",
+      "quartic_z": "9822288583/5625",
+      "raw_parameter_t": "32149/75",
+      "slice_id": "p15_p1"
+    },
+    {
+      "classification": "record source fiber",
+      "normalized_parameter_t": "39508/39",
+      "prior_source_slice_ids": [],
+      "quartic_x": "1161926/975",
+      "quartic_z": "604806062069272/950625",
+      "raw_parameter_t": "39508/39",
+      "slice_id": "p15_p1"
+    },
+    {
+      "classification": "record source fiber",
+      "normalized_parameter_t": "39508/39",
+      "prior_source_slice_ids": [],
+      "quartic_x": "-1717790/6747",
+      "quartic_z": "5764334787490468/15174003",
+      "raw_parameter_t": "39508/39",
+      "slice_id": "p20_m1"
+    },
+    {
+      "classification": "record source fiber",
+      "normalized_parameter_t": "39508/39",
+      "prior_source_slice_ids": [],
+      "quartic_x": "-1717790/6747",
+      "quartic_z": "5764334787490468/15174003",
+      "raw_parameter_t": "39508/39",
+      "slice_id": "p20_p1"
+    },
+    {
+      "classification": "record source fiber",
+      "normalized_parameter_t": "39508/39",
+      "prior_source_slice_ids": [],
+      "quartic_x": "1756342/8229",
+      "quartic_z": "16008317533894028/22572147",
+      "raw_parameter_t": "39508/39",
+      "slice_id": "p21_m1"
+    },
+    {
+      "classification": "previously searched Fermigier fiber",
+      "normalized_parameter_t": "38633/138",
+      "prior_source_slice_ids": [],
+      "quartic_x": "-15130969/29118",
+      "quartic_z": "68112765506986018/70654827",
+      "raw_parameter_t": "38633/138",
+      "slice_id": "p21_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "84357/211",
+      "prior_source_slice_ids": [],
+      "quartic_x": "-84357/211",
+      "quartic_z": "33078759543669/44521",
+      "raw_parameter_t": "84357/211",
+      "slice_id": "p21_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "180319/422",
+      "prior_source_slice_ids": [],
+      "quartic_x": "-157109/422",
+      "quartic_z": "30830968788066/44521",
+      "raw_parameter_t": "180319/422",
+      "slice_id": "p21_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "117484/211",
+      "prior_source_slice_ids": [],
+      "quartic_x": "-51230/211",
+      "quartic_z": "19734506775612/44521",
+      "raw_parameter_t": "117484/211",
+      "slice_id": "p21_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "124236/211",
+      "prior_source_slice_ids": [],
+      "quartic_x": "-44478/211",
+      "quartic_z": "16742727139236/44521",
+      "raw_parameter_t": "124236/211",
+      "slice_id": "p21_p1"
+    },
+    {
+      "classification": "generic-or-T-sign-conjugate collision",
+      "normalized_parameter_t": "193655/211",
+      "prior_source_slice_ids": [],
+      "quartic_x": "24941/211",
+      "quartic_z": "17252262052389/44521",
+      "raw_parameter_t": "193655/211",
+      "slice_id": "p21_p1"
+    },
+    {
+      "classification": "record source fiber",
+      "normalized_parameter_t": "39508/39",
+      "prior_source_slice_ids": [],
+      "quartic_x": "1756342/8229",
+      "quartic_z": "16008317533894028/22572147",
+      "raw_parameter_t": "39508/39",
+      "slice_id": "p21_p1"
+    },
+    {
+      "classification": "record source fiber",
+      "normalized_parameter_t": "39508/39",
+      "prior_source_slice_ids": [],
+      "quartic_x": "1038854/12831",
+      "quartic_z": "184678541689140728/305749899",
+      "raw_parameter_t": "39508/39",
+      "slice_id": "p22_m1"
+    },
+    {
+      "classification": "record source fiber",
+      "normalized_parameter_t": "39508/39",
+      "prior_source_slice_ids": [],
+      "quartic_x": "1038854/12831",
+      "quartic_z": "184678541689140728/305749899",
+      "raw_parameter_t": "39508/39",
+      "slice_id": "p22_p1"
+    }
+  ],
+  "candidate_conductor_screen": [
+    {
+      "conductor_probe": {
+        "below_strict_log_conductor_target": false,
+        "conductor": 205324489817999635200033917118001502282360700671098611446433153940315350446455187190,
+        "log_conductor": "191.833984137387427948468579526685529131307477217422589730449",
+        "minimal_discriminant": 703522287954258804212375894350187400069011619614355797372428558477739958258367861256349293732487830469844428864000000000,
+        "minimal_model": [
+          1,
+          0,
+          0,
+          -9316327659340797385212117641564828624915,
+          343750220320968842077582486920710599274226771036963379459617
+        ],
+        "root_number": -1,
+        "status": "completed"
+      },
+      "finite_reduction_certificate": null,
+      "forced_points": [
+        {
+          "basepoint_group_pullback": {
+            "exact_membership_checked": true,
+            "jacobian_x": "27180550739711037750361/35872267500",
+            "jacobian_y": "-45571665531538404948053056/199290375"
+          },
+          "exact_group_pullback_checked": true,
+          "quartic_x": "1005913/4050",
+          "quartic_z": "1773101016015056/61509375",
+          "raw_parameters": [
+            "56441/810"
+          ],
+          "slice_ids": [
+            "p15_p1"
+          ]
+        }
+      ],
+      "height_1000000_escalation": null,
+      "parameter_t": "56441/810",
+      "projective_height": 56441,
+      "specialized_quartic_height_50000_screen": null
+    },
+    {
+      "conductor_probe": {
+        "below_strict_log_conductor_target": false,
+        "conductor": 509771091949978227205613061706679059738395266790154398549649651623554830618069410,
+        "log_conductor": "185.835599039181651118568562036204934865404329463914876189602",
+        "minimal_discriminant": 66474950860149530598093545570083344799812173796218058911291215882278563609921198208117781478502912000000000,
+        "minimal_model": [
+          1,
+          0,
+          0,
+          -560281342149393461047307865872034290,
+          160942662247770326995554870009040510156268132526831492
+        ],
+        "root_number": 1,
+        "status": "completed"
+      },
+      "finite_reduction_certificate": null,
+      "forced_points": [
+        {
+          "basepoint_group_pullback": {
+            "exact_membership_checked": true,
+            "jacobian_x": "50148489674609412946539933169/57514179409920000",
+            "jacobian_y": "-581724232160512294219151437155652841/15361611289431040000"
+          },
+          "exact_group_pullback_checked": true,
+          "quartic_x": "496637/1200",
+          "quartic_z": "81107265211483/1200000",
+          "raw_parameters": [
+            "56441/240"
+          ],
+          "slice_ids": [
+            "p15_p1"
+          ]
+        }
+      ],
+      "height_1000000_escalation": null,
+      "parameter_t": "56441/240",
+      "projective_height": 56441,
+      "specialized_quartic_height_50000_screen": null
+    },
+    {
+      "conductor_probe": {
+        "status": "timeout",
+        "timeout_seconds": 8.0
+      },
+      "finite_reduction_certificate": null,
+      "forced_points": [
+        {
+          "basepoint_group_pullback": {
+            "exact_membership_checked": true,
+            "jacobian_x": "387767963296674709990290348427905/566020869216652382404",
+            "jacobian_y": "228758551077570559949877959563504232204125463859/708753252594487594935890051432"
+          },
+          "exact_group_pullback_checked": true,
+          "quartic_x": "11405580/19589",
+          "quartic_z": "130378677077525730/7290849499",
+          "raw_parameters": [
+            "-100380/19589"
+          ],
+          "slice_ids": [
+            "p14_p1"
+          ]
+        }
+      ],
+      "height_1000000_escalation": null,
+      "parameter_t": "100380/19589",
+      "projective_height": 100380,
+      "specialized_quartic_height_50000_screen": null
+    },
+    {
+      "conductor_probe": {
+        "status": "timeout",
+        "timeout_seconds": 8.0
+      },
+      "finite_reduction_certificate": null,
+      "forced_points": [
+        {
+          "basepoint_group_pullback": {
+            "exact_membership_checked": true,
+            "jacobian_x": "50946561236800408210592889995674/473590557421875",
+            "jacobian_y": "20735062719133059415045155051850620211078916/587690800978515625"
+          },
+          "exact_group_pullback_checked": true,
+          "quartic_x": "-170677/75",
+          "quartic_z": "1224111203277109/140625",
+          "raw_parameters": [
+            "-184079/75"
+          ],
+          "slice_ids": [
+            "p15_p1"
+          ]
+        }
+      ],
+      "height_1000000_escalation": null,
+      "parameter_t": "184079/75",
+      "projective_height": 184079,
+      "specialized_quartic_height_50000_screen": null
+    }
+  ],
+  "missing_published_preimages": [
+    {
+      "basepoint_group_pullback": {
+        "exact_membership_checked": true,
+        "jacobian_x": "5626262967238180127443177/529963835427",
+        "jacobian_y": "192146486409956675646506132138820/16271852576629"
+      },
+      "exact_quartic_membership_checked": true,
+      "label": "P14",
+      "quartic_x": "1185892/741",
+      "quartic_z": "-268505415144218/183027"
+    },
+    {
+      "basepoint_group_pullback": {
+        "exact_membership_checked": true,
+        "jacobian_x": "1014824889201632109755917/136678865427",
+        "jacobian_y": "635276867884504640936098586645800/19180600781589"
+      },
+      "exact_quartic_membership_checked": true,
+      "label": "P15",
+      "quartic_x": "1161926/975",
+      "quartic_z": "-604806062069272/950625"
+    },
+    {
+      "basepoint_group_pullback": {
+        "exact_membership_checked": true,
+        "jacobian_x": "-1484112348520063873289/187388721",
+        "jacobian_y": "-1405945415590721250341542600000/15178486401"
+      },
+      "exact_quartic_membership_checked": true,
+      "label": "P20",
+      "quartic_x": "-1717790/6747",
+      "quartic_z": "-5764334787490468/15174003"
+    },
+    {
+      "basepoint_group_pullback": {
+        "exact_membership_checked": true,
+        "jacobian_x": "-4566312582648387410583923/176932738827",
+        "jacobian_y": "128128398171342340186641272599680/3138917848079"
+      },
+      "exact_quartic_membership_checked": true,
+      "label": "P21",
+      "quartic_x": "1756342/8229",
+      "quartic_z": "-16008317533894028/22572147"
+    },
+    {
+      "basepoint_group_pullback": {
+        "exact_membership_checked": true,
+        "jacobian_x": "-884287024660548691712631059/32993278399107",
+        "jacobian_y": "-96641894017769821417194466772381480/7992927185502181"
+      },
+      "exact_quartic_membership_checked": true,
+      "label": "P22",
+      "quartic_x": "1038854/12831",
+      "quartic_z": "-184678541689140728/305749899"
+    }
+  ],
+  "parameters": {
+    "certificate_prime_bound": 500,
+    "conductor_timeout_seconds_per_candidate": 8.0,
+    "escalation_height_bound": 1000000,
+    "escalation_minimum_stable_numerical_rank": 16,
+    "escalation_timeout_seconds_per_process": 60.0,
+    "generated_dir": "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results",
+    "height_precisions": [
+      72,
+      120
+    ],
+    "height_timeout_seconds_per_candidate": 20.0,
+    "output": "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic_fermigier_rank22_missing_preimage_slices.json",
+    "pari_stack_bytes": 512000000,
+    "retries": 0,
+    "saturation_timeout_seconds_per_candidate": 30.0,
+    "slice_height_bound": 200000,
+    "slice_timeout_seconds_per_process": 10.0,
+    "specialization_height_bound": 50000,
+    "specialization_timeout_seconds_per_process": 15.0,
+    "temporary_directory_dependency": null
+  },
+  "prior_decontamination": {
+    "baseline30_parameter_sha256": "fb76dd2e8726aff4d6c2742750189ee8a794e0e8939b7ede40bd62d69fd4cbbd",
+    "baseline_Fermigier_only_parameters": 30,
+    "batch_rank_triage_parameters": 11,
+    "canonicalization": "T -> abs(T), because the family is exactly even",
+    "current15_parameter_sha256": "e8410fbcba4491165fd114e86cff11a1eabc1373f74cebda8dbc856bbcf0045f",
+    "current_slice_parameters_including_record": 15,
+    "deep48_parameter_sha256": "d452648e2a645f8d80e9bda4070e6950cbbda525a2a4159ed9937ff4e2940df9",
+    "deep_tranche_parameters": 48,
+    "extended78_parameter_sha256": "285f8dca1ab945c3d116f8f286ad50b77eaff9bff2f979048ac6ae683c14c867",
+    "legacy_superseded_slice_parameters": [
+      "19033/135",
+      "22253/114",
+      "31331/104",
+      "38633/138"
+    ],
+    "source_sha256": {
+      "elliptic_fermigier_batch_rank_triage.json": "d1fb509ecab0f1dcdb97bb9db852e807f7fc7b7c001211c6fcf11b2fe52f33f6",
+      "elliptic_fermigier_rank22_accidental_slices.json": "bef5d2d10e2a64a0d9e9b916089bcb5c7dcceda52a71e280594efedd0d3302fe",
+      "elliptic_fermigier_record_residue_deep_tranche.json": "fd17b69198950c1c26aca1b8b87cd37ccea894831b6952c00df08d1be251b74b"
+    },
+    "total_unique_prior_Fermigier_parameters": 78
+  },
+  "record_parameter_normalized_T": "39508/39",
+  "reproducing_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/search_fermigier_rank22_missing_preimage_slices.py",
+  "schema_version": 1,
+  "script_sha256": "b75d3034848a664e6ba08d045137dde18a8805a4008f84d259d1143aa67ea1d3",
+  "slices": [
+    {
+      "auxiliary_coefficients_ascending": [
+        "7384592293050302221843339907876/301489944561",
+        "-18715217305566345554619748/406869021",
+        "16819430052834829146126505/301489944561",
+        "-20986058884855236116/406869021",
+        "10754316324964/549081"
+      ],
+      "auxiliary_degree": 4,
+      "auxiliary_genus": 1,
+      "intercept": "1936544/741",
+      "search": {
+        "distinct_parameter_count": 1,
+        "height_bound": 200000,
+        "pari_milliseconds": 1425,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "signed_point_count": 2,
+        "status": "completed",
+        "timeout_seconds": 10.0,
+        "wall_seconds": 1.4544074579971493
+      },
+      "slice_id": "p14_m1",
+      "slope": -1,
+      "source_label": "P14",
+      "source_parameter_replay": true,
+      "source_quartic_point": {
+        "x": "1185892/741",
+        "z": "-268505415144218/183027"
+      }
+    },
+    {
+      "auxiliary_coefficients_ascending": [
+        "11241990828926871300/130321",
+        "-312233704780454100/6859",
+        "1853589325080969/130321",
+        "6186398562540/6859",
+        "427097700/361"
+      ],
+      "auxiliary_degree": 4,
+      "auxiliary_genus": 1,
+      "intercept": "11160/19",
+      "search": {
+        "distinct_parameter_count": 12,
+        "height_bound": 200000,
+        "pari_milliseconds": 1062,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "signed_point_count": 24,
+        "status": "completed",
+        "timeout_seconds": 10.0,
+        "wall_seconds": 1.0869794169993838
+      },
+      "slice_id": "p14_p1",
+      "slope": 1,
+      "source_label": "P14",
+      "source_parameter_replay": true,
+      "source_quartic_point": {
+        "x": "1185892/741",
+        "z": "-268505415144218/183027"
+      }
+    },
+    {
+      "auxiliary_coefficients_ascending": [
+        "4652534225138585868516346192/446265625",
+        "-33444243231205483448184/1373125",
+        "355403506001390937514321/11156640625",
+        "-1055716533667341852/34328125",
+        "1397423535556/105625"
+      ],
+      "auxiliary_degree": 4,
+      "auxiliary_genus": 1,
+      "intercept": "716542/325",
+      "search": {
+        "distinct_parameter_count": 2,
+        "height_bound": 200000,
+        "pari_milliseconds": 1027,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "signed_point_count": 4,
+        "status": "completed",
+        "timeout_seconds": 10.0,
+        "wall_seconds": 1.0734680419991491
+      },
+      "slice_id": "p15_m1",
+      "slope": -1,
+      "source_label": "P15",
+      "source_parameter_replay": true,
+      "source_quartic_point": {
+        "x": "1161926/975",
+        "z": "-604806062069272/950625"
+      }
+    },
+    {
+      "auxiliary_coefficients_ascending": [
+        "-429608838629215323568/1265625",
+        "-16349157366726856/16875",
+        "10979069326405543441/31640625",
+        "-599858507878268/421875",
+        "8162358916/5625"
+      ],
+      "auxiliary_degree": 4,
+      "auxiliary_genus": 1,
+      "intercept": "13402/75",
+      "search": {
+        "distinct_parameter_count": 12,
+        "height_bound": 200000,
+        "pari_milliseconds": 44,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "signed_point_count": 24,
+        "status": "completed",
+        "timeout_seconds": 10.0,
+        "wall_seconds": 0.059011208002630156
+      },
+      "slice_id": "p15_p1",
+      "slope": 1,
+      "source_label": "P15",
+      "source_parameter_replay": true,
+      "source_quartic_point": {
+        "x": "1161926/975",
+        "z": "-604806062069272/950625"
+      }
+    },
+    {
+      "auxiliary_coefficients_ascending": [
+        "-119423685190847866394701415616/25583374116001",
+        "-232145881693361837346096/11375444249",
+        "15613564719723221534204385/25583374116001",
+        "-21908784402288771228/11375444249",
+        "7423087393476/5058001"
+      ],
+      "auxiliary_degree": 4,
+      "auxiliary_genus": 1,
+      "intercept": "1705698/2249",
+      "search": {
+        "distinct_parameter_count": 1,
+        "height_bound": 200000,
+        "pari_milliseconds": 29,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "signed_point_count": 2,
+        "status": "completed",
+        "timeout_seconds": 10.0,
+        "wall_seconds": 0.043907667000894435
+      },
+      "slice_id": "p20_m1",
+      "slope": -1,
+      "source_label": "P20",
+      "source_parameter_replay": true,
+      "source_quartic_point": {
+        "x": "-1717790/6747",
+        "z": "-5764334787490468/15174003"
+      }
+    },
+    {
+      "auxiliary_coefficients_ascending": [
+        "682803556683385904630825206784/72555348321",
+        "-3150881428748342482483136/139798359",
+        "2186368589948681885750305/72555348321",
+        "-4193852235570346108/139798359",
+        "3537026228356/269361"
+      ],
+      "auxiliary_degree": 4,
+      "auxiliary_genus": 1,
+      "intercept": "-657898/519",
+      "search": {
+        "distinct_parameter_count": 1,
+        "height_bound": 200000,
+        "pari_milliseconds": 1051,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "signed_point_count": 2,
+        "status": "completed",
+        "timeout_seconds": 10.0,
+        "wall_seconds": 1.0809463340046932
+      },
+      "slice_id": "p20_p1",
+      "slope": 1,
+      "source_label": "P20",
+      "source_parameter_replay": true,
+      "source_quartic_point": {
+        "x": "-1717790/6747",
+        "z": "-5764334787490468/15174003"
+      }
+    },
+    {
+      "auxiliary_coefficients_ascending": [
+        "1445422000772048929583522701395200/4585516381706481",
+        "-1056732769359669781176243040/557238592989",
+        "21728657769290030585624626609/4585516381706481",
+        "-3419439933213756799340/557238592989",
+        "233112386299300/67716441"
+      ],
+      "auxiliary_degree": 4,
+      "auxiliary_genus": 1,
+      "intercept": "10092530/8229",
+      "search": {
+        "distinct_parameter_count": 1,
+        "height_bound": 200000,
+        "pari_milliseconds": 1373,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "signed_point_count": 2,
+        "status": "completed",
+        "timeout_seconds": 10.0,
+        "wall_seconds": 1.4053342919942224
+      },
+      "slice_id": "p21_m1",
+      "slope": -1,
+      "source_label": "P21",
+      "source_parameter_replay": true,
+      "source_quartic_point": {
+        "x": "1756342/8229",
+        "z": "-16008317533894028/22572147"
+      }
+    },
+    {
+      "auxiliary_coefficients_ascending": [
+        "4968770031423863089641711936/1982119441",
+        "-79410632312095251250608/9393931",
+        "26966185061352152949585/1982119441",
+        "-138446158936673196/9393931",
+        "334796848164/44521"
+      ],
+      "auxiliary_degree": 4,
+      "auxiliary_genus": 1,
+      "intercept": "-168714/211",
+      "search": {
+        "distinct_parameter_count": 7,
+        "height_bound": 200000,
+        "pari_milliseconds": 1299,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "signed_point_count": 14,
+        "status": "completed",
+        "timeout_seconds": 10.0,
+        "wall_seconds": 1.3312055420028628
+      },
+      "slice_id": "p21_p1",
+      "slope": 1,
+      "source_label": "P21",
+      "source_parameter_replay": true,
+      "source_quartic_point": {
+        "x": "1756342/8229",
+        "z": "-16008317533894028/22572147"
+      }
+    },
+    {
+      "auxiliary_coefficients_ascending": [
+        "9998761184125653960570304640432/79021978646247",
+        "-6219804643830534011214104/6158676537",
+        "85604604233116711906142231905/27104538675662721",
+        "-9812867738329208257204/2112426052191",
+        "445454003979364/164634561"
+      ],
+      "auxiliary_degree": 4,
+      "auxiliary_genus": 1,
+      "intercept": "14036986/12831",
+      "search": {
+        "distinct_parameter_count": 1,
+        "height_bound": 200000,
+        "pari_milliseconds": 1267,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "signed_point_count": 2,
+        "status": "completed",
+        "timeout_seconds": 10.0,
+        "wall_seconds": 1.3178677090036217
+      },
+      "slice_id": "p22_m1",
+      "slope": -1,
+      "source_label": "P22",
+      "source_parameter_replay": true,
+      "source_quartic_point": {
+        "x": "1038854/12831",
+        "z": "-184678541689140728/305749899"
+      }
+    },
+    {
+      "auxiliary_coefficients_ascending": [
+        "3731538710897056747455290477488/975579983287",
+        "-2635383595113603571330056/228099131",
+        "5816761777529710937419532305/334623934267441",
+        "-1429876672551426356484/78238001933",
+        "163359935226244/18292729"
+      ],
+      "auxiliary_degree": 4,
+      "auxiliary_genus": 1,
+      "intercept": "-3986426/4277",
+      "search": {
+        "distinct_parameter_count": 1,
+        "height_bound": 200000,
+        "pari_milliseconds": 1060,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "signed_point_count": 2,
+        "status": "completed",
+        "timeout_seconds": 10.0,
+        "wall_seconds": 1.0886647909937892
+      },
+      "slice_id": "p22_p1",
+      "slope": 1,
+      "source_label": "P22",
+      "source_parameter_replay": true,
+      "source_quartic_point": {
+        "x": "1038854/12831",
+        "z": "-184678541689140728/305749899"
+      }
+    }
+  ],
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6",
+    "python_implementation": "CPython",
+    "sympy": "1.14.0"
+  },
+  "status": "exact five-preimage construction plus bounded ten-slice, conductor, and specialization triage; no target claim without finite reductions",
+  "summary": {
+    "alternative_rank_hits": [],
+    "completed_conductors_below_strict_target": 0,
+    "conductor_calls_completed": 2,
+    "genuinely_new_parameters": 4,
+    "genus_one_slices": 10,
+    "height_1000000_escalations": 0,
+    "incidence_classification_counts": {
+      "generic-or-T-sign-conjugate collision": 22,
+      "genuinely new fiber incidence": 4,
+      "previously searched Fermigier fiber": 3,
+      "record source fiber": 10
+    },
+    "missing_published_preimages": 5,
+    "new_parameters": [
+      "56441/810",
+      "56441/240",
+      "100380/19589",
+      "184079/75"
+    ],
+    "slice_search_timeouts": 0,
+    "slice_searches_completed": 10,
+    "specialized_height_50000_ranks": {},
+    "specialized_height_50000_screens": 0,
+    "target_hits": []
+  },
+  "target": {
+    "alternative_rank_at_least": 30,
+    "alternative_rank_certified_hits": [],
+    "low_conductor_certified_hits": [],
+    "rank_at_least": 21,
+    "strict_log_conductor_upper_bound": "182.72"
+  }
+}

@@ -1,5 +1,6 @@
 name = "support-saturation"
 version = "0.1.0"
+packagesDir = "../.lake/packages"
 keywords = ["commutative-algebra", "local-cohomology", "saturation"]
 defaultTargets = ["SupportSaturation"]
 

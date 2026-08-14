@@ -1,5 +1,6 @@
 name = "finiteEtaleKeller"
 version = "0.1.0"
+packagesDir = "../.lake/packages"
 defaultTargets = ["FiniteEtaleKeller"]
 
 [leanOptions]

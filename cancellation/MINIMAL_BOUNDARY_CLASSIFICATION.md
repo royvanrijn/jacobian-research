@@ -858,6 +858,38 @@ central different.  Thus a Cartier-different boundary theorem excludes
 every squarefree leading cubic symbol and leaves only the three
 non-squarefree rows to face generic étaleness.
 
+The coefficient six itself is now intrinsic: the fixed different tail is
+tautological symmetric multiplication on the exceptional plane, and its
+transpose vertex class is
+\(c_2(\operatorname{Sym}^2\mathcal Q)=6H^2\), of length \(3+3\).
+This removes orbit enumeration from the charge calculation but does not
+supply the still-missing boundary theorem that would force the class to
+vanish.
+
+<!-- status-consumer: KLC6 88e899a9645c4a70 -->
+
+The one-boundary class group does not make this local charge vanish.  In
+fact divisor localization is exact enough to give
+
+\[
+ \operatorname{Cl}(\bar X_F)=\mathbb Z[D_*].
+\]
+
+The boundary class is primitive and nonprincipal because both
+\(\mathcal O(\bar X_F)^*\) and \(\mathcal O(U)^*\) equal \(k^*\).  Moreover
+the point class \(6[p]\) dies after forgetting support in ordinary
+\(K_0(\mathbb A^3)\), by the three-parameter Koszul resolution.  Under the
+standing \(S_1\)-purity hypothesis, the annihilator different equals the
+prime ideal of \(D_*\), so a squarefree six-generator collision is exactly
+a failure of \([D_*]\) to be Cartier.  Thus one clean next theorem is
+surjectivity of
+\(\operatorname{Pic}(\bar X_F)\to\operatorname{Cl}(\bar X_F)\); a Chern
+alternative must be a compactified or relative/logarithmic conservation
+identity with an explicitly computed boundary term.  Neither ordinary
+affine Chern theory nor a rational boundary function can close the gap.
+
+<!-- status-consumer: OBCL3 b4b3a3f27b8a97b1 -->
+
 <!-- status-consumer: NSDP6 c5f68253995b7b6a -->
 
 <!-- status-consumer: NADPALL 60218641ccdf6fac -->
@@ -907,6 +939,26 @@ the minimal-boundary pullback with total simple-root space `A^3` forces
 `G` to be a polynomial automorphism.  The ranked closure route through
 these three certificates is recorded in
 [`CUBIC_CLOSURE_ATTACKS.md`](CUBIC_CLOSURE_ATTACKS.md).
+
+Two direct counterexample strata inside this last problem are now closed.
+The displayed diagonal one-parameter orbit boundary of the foundational map
+has only four faces: the map itself and three triangular automorphisms.
+Separately, for every split coefficient map
+`(w,u,v) -> (f(w),u,v)`, the pullback source has geometric class group
+
+\[
+ \mathbb Z^r/\mathbb Z(m_1,\ldots,m_r),
+\]
+
+where the roots of `f` have multiplicities `m_i`; it is affine three-space
+only when `f` is affine-linear.  Hence neither diagonal toric degeneration
+nor a nonlinear split one-coordinate base change supplies a counterexample.
+Oblique/nonlinear orbit limits and genuinely coupled dominant coefficient
+maps remain open.
+
+<!-- status-consumer: FTD3 f4b5bf44c04dba69 -->
+
+<!-- status-consumer: SBC3 f5cbae00b4e87623 -->
 
 ## 4. Cubic collapse inside the two branches
 

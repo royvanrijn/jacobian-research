@@ -1,0 +1,60 @@
+{
+  "actual_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/explicit_formula_rank20_t5081.py",
+  "comparison": {
+    "calibrated_upper_value": "22.21286889812721519886805605804265033167070017424910157338777937331709",
+    "calibrated_upper_value_less_than_23": true,
+    "candidate_root_number": 1,
+    "even_functional_equation_forces_even_analytic_order": true,
+    "log_conductor_term_difference": "0.3312134835131478236095369499706538745451146685192683679694635505436199",
+    "prime_term_difference": "0.1816554146140680858012548681721823282498530838548332054183158227734709",
+    "total_difference": "0.5128688981272159094107918181428362027949677523741015733877793733170908"
+  },
+  "curves": {
+    "E20": {
+      "conductor": "73813242020125452593092920037241715783942979322145629022774016712292126930",
+      "log_conductor": "170.08766484224888113543147761107035486432595000236933336900322799816664271645869",
+      "prime_limit": 286751,
+      "prime_sum": "-53.527198246590105182372104818094548896473885897316421806879335611566122869000060"
+    },
+    "T5081": {
+      "conductor": "4739512365768104141634183882739432010081578062727282562384233196211945306960",
+      "log_conductor": "174.24981622854803835390497369034823078953183716689817596287856833994057397289772",
+      "prime_limit": 286751,
+      "prime_sum": "-54.668572878662833710501107466725526467455483571867413627273354533015500004716607"
+    }
+  },
+  "declared_budget": {
+    "pari_stack_bytes": 512000000,
+    "timeout_seconds": 60.0
+  },
+  "input": {
+    "certified_algebraic_rank_lower_bound": 20,
+    "constructor_parameter_T": "5081/47",
+    "rank20_certificate_path": "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic_nagao_rank20_t5081_rank20_certificate.json",
+    "rank20_certificate_sha256": "466946076dc0c3fa02d0c5edd90b947d5ee3d10a4fb8cb16567049ab4380f88d"
+  },
+  "interpretation": {
+    "unconditional": "this computation supplies no algebraic-rank upper bound and does not weaken or strengthen the exact rank-at-least-20 certificate",
+    "under_bsd_and_grh": "the exact algebraic lower bound 20 and conditional analytic upper bound 22 leave ranks 20 and 22 as the parity-compatible cases",
+    "under_grh": "the calibrated value below 23 bounds analytic rank; the even functional-equation sign restricts the analytic rank to at most 22"
+  },
+  "method": {
+    "bober_source": "https://antsmath.org/ANTSX/bober/paper.pdf",
+    "common_archimedean_term_cancels_in_difference": true,
+    "delta": 2,
+    "nagao_source": "https://da.lib.kobe-u.ac.jp/da/kernel/E0003610/E0003610.pdf",
+    "prime_limit": 286751,
+    "prime_limit_definition": "floor(exp(2*pi*Delta))",
+    "reference_curve": "Bober E20",
+    "reference_published_upper_value": "21.699999999999999289457264239899814128875732421875"
+  },
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/explicit_formula_rank20_t5081.py",
+  "schema_version": 1,
+  "script_sha256": "e44d1a1925e8c16149abcb417468880df120ed111dd2308f0d6c590c2022278e",
+  "software": {
+    "mpmath": "1.3.0",
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6"
+  },
+  "status": "conditional explicit-formula diagnostic complete"
+}

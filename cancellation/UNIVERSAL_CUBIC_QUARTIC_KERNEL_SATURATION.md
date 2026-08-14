@@ -1028,6 +1028,126 @@ unconditional, so
  \operatorname{Fitt}_5^S(E)=(0).                     \tag{6.14}
 \]
 
+### 6.1 The intrinsic localized six-charge
+
+The repeated coefficient six in (6.4)--(6.9) is not a cubic-orbit
+coincidence.  It is the second Chern number of the universal quotient on the
+exceptional plane, equivalently the length of the transpose vertex defect of
+the same tautological presentation.
+
+Let \(V\) be the three-dimensional collision tangent space, put
+\(E=\mathbb P(V)\), and write
+
+\[
+ 0\longrightarrow\mathcal O_E(-1)
+ \longrightarrow V\otimes\mathcal O_E
+ \longrightarrow\mathcal Q\longrightarrow0           \tag{6.15}
+\]
+
+for the universal rank-two quotient.  Up to the orientation and harmless
+diagonal conventions used for \(r=(z,-y,x)\), the fixed lower \(6\)-by-
+\(3\) block of \(d_2\) is the matrix of tautological symmetric
+multiplication
+
+\[
+ \sigma:\mathcal O_E(-1)\otimes V
+ \longrightarrow \operatorname{Sym}^2(V)\otimes\mathcal O_E.
+                                                               \tag{6.16}
+\]
+
+Indeed, the row indexed by \(i\leq j\) is the relation
+\(r_i e_j+r_j e_i\), with the diagonal factor absorbed into the chosen
+basis.  Fiberwise the image is the degree-two part of the ideal generated
+by the tautological line.  Therefore (6.16) is injective and
+
+\[
+ \operatorname{coker}(\sigma)\simeq
+ \operatorname{Sym}^2(\mathcal Q).                    \tag{6.17}
+\]
+
+Put \(H=c_1(\mathcal O_E(1))\).  From (6.15),
+
+\[
+ c_1(\mathcal Q)=H,\qquad c_2(\mathcal Q)=H^2.
+\]
+
+If \(a,b\) are the formal Chern roots of \(\mathcal Q\), the roots of its
+symmetric square are \(2a,a+b,2b\).  Hence
+
+\[
+ \boxed{
+ c_2\!\left(\operatorname{Sym}^2\mathcal Q\right)
+ =2c_1(\mathcal Q)^2+4c_2(\mathcal Q)
+ =6H^2.}                                               \tag{6.18}
+\]
+
+The affine transpose gives the same integer without intersection theory.
+Let \(R_0=\operatorname{Sym}(V^\vee)\), let \(\mathfrak m=R_{0,+}\), and
+let \(D\) be the fixed matrix in (6.16).  Then
+
+\[
+ E_0=\operatorname{coker}
+ \left(D^{\mathsf T}:R_0(-1)^6\longrightarrow R_0^3\right)
+                                                               \tag{6.19}
+\]
+
+has three generators in degree zero.  Its six linear relations kill the
+symmetric part of \(V^\vee\otimes V^\vee\), so the degree-one layer is
+\(\bigwedge^2V^\vee\), of dimension three.  Commutativity of \(R_0\) and
+alternation of this first layer give
+\(\mathfrak m^2E_0=0\).  Thus
+
+\[
+ \operatorname{gr}_{\mathfrak m}E_0
+ \simeq V^\vee\oplus\bigwedge^2V^\vee(1),\qquad
+ \boxed{\operatorname{length}_{R_0}(E_0)=3+3=6.}       \tag{6.20}
+\]
+
+Equations (6.18) and (6.20) are the projective and vertex forms of one
+localized charge.  In \(K_0^{\{\mathfrak m\}}(R_0)\simeq\mathbb Z\), the
+class is \(6[k]\); its localized top Chern character is the zero-cycle
+\(6[0]\).  The relevant complex is Buchsbaum--Rim-type, but the integer in
+(6.20) is a colength/localized-Chern charge.  It should not be silently
+identified with the classical Buchsbaum--Rim multiplicity, which is defined
+from the leading coefficient of a different Rees Hilbert polynomial.
+
+Now return to the canonical-different complex.  Its only nonfixed row is in
+\(\mathfrak m^2R_0^3\), so it maps to zero in \(E_0\) by (6.20).  Whenever
+the Buchsbaum--Eisenbud grade conditions identify (6.3) and cotangent
+saturation identifies the canonical different with the actual annihilator,
+
+\[
+ \boxed{
+ \operatorname{Ext}_{R_0}^2(T,R_0)\simeq E_0,
+ \qquad [\operatorname{Ext}_{R_0}^2(T,R_0)]_{\rm loc}=6[0].}
+                                                               \tag{6.21}
+\]
+
+Consequently the length-six support-hull defect for a squarefree leading
+symbol is forced by the primitive Koszul conormal and is insensitive to the
+cubic orbit and to every compatible higher correction for which the current
+cotangent-saturation theorem applies.  No orbit-by-orbit Ext calculation is
+needed for the coefficient six.
+
+There is a parallel first-Chern statement.  The discriminant of the binary
+cubic on \(\mathcal Q\) is a section of
+\((\det\mathcal Q)^{\otimes6}\simeq\mathcal O_E(6)\).  If the leading
+ternary cubic is squarefree, this section is nonzero, so its divisor has
+class \(6H\).  Thus the branch multiplicity six and the support-defect
+length six are respectively
+
+\[
+ c_1\!\left((\det\mathcal Q)^{\otimes6}\right)=6H,
+ \qquad
+ c_2\!\left(\operatorname{Sym}^2\mathcal Q\right)=6H^2. \tag{6.22}
+\]
+
+This explains the persistent six intrinsically but does not make it vanish.
+To classify boundary-minimal cubics one still needs a global
+boundary-intersection or localized-Chern conservation theorem forcing the
+local class (6.21) to be zero (equivalently \(T=T^{[2]}\)), followed by the
+coefficient base-change rigidity theorem.
+
 ## 7. Superseded universal elimination bottleneck
 
 The complete smooth universal input has 27 variables and approximately
@@ -1106,8 +1226,15 @@ only for the three-variable exact module identity (5.5) and the independent
 central saturation check; it does not compute the 24-parameter
 saturation.  The formal-gauge argument proves universal cotangent
 saturation, and the canonical-different complex then identifies the actual
-annihilator and closes the universal Fittings.  The atlas checker computes
-the exact three-variable graded cokernel for all ten symbols and marks the
+annihilator and closes the universal Fittings.
+
+The canonical-different checker also verifies the tautological
+symmetric-multiplication matrix, the `3+3` vertex layers, square
+annihilation, and the Chern-root identity (6.18); this is the exact replay
+of the localized charge in Section 6.1.
+
+The atlas checker computes the exact three-variable graded cokernel for all
+ten symbols and marks the
 limit of that formal-rigidity argument.  The nodal checker resolves the
 first singular row cyclically and splits the complete quartic space into
 22 gauge directions and a certified saturated two-parameter slice.

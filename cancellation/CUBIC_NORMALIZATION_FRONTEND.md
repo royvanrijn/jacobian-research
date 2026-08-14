@@ -1097,8 +1097,17 @@ fails support saturation by a length-six canonical dual of \(C/T\).  The
 length-six module has three-dimensional top, is annihilated by
 \(\mathfrak m^2\), and therefore has Hilbert function
 \(3+3t\).  The repeated coefficient six is consequently a uniform
-two-layer invariant, not only an equality of total lengths.  The
-double- and triple-line homogeneous models have the wrong support
+two-layer invariant, not only an equality of total lengths.  [Section 6.1
+of the universal quartic-kernel note](UNIVERSAL_CUBIC_QUARTIC_KERNEL_SATURATION.md#61-the-intrinsic-localized-six-charge)
+now identifies it intrinsically as the transpose vertex charge of
+tautological symmetric multiplication on the exceptional plane, with
+projective avatar
+\(c_2(\operatorname{Sym}^2\mathcal Q)=6H^2\).  Thus the coefficient no
+longer depends on the orbit audit.
+
+<!-- status-consumer: KLC6 88e899a9645c4a70 -->
+
+The double- and triple-line homogeneous models have the wrong support
 dimension, so in particular they fail the purity hypothesis: their support
 obstruction is not finite length.  The zero homogeneous
 tensor passes both displayed module tests only because its square-zero

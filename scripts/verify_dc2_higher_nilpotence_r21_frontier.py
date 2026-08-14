@@ -19,7 +19,8 @@ The necessary stable-mixed U_2 chart is then normalized through degree six
 by twenty-six exact factors, leaving the first defect in degree seven.  An
 Euler-homotopy recurrence proves that every subsequent homogeneous defect
 can be removed in the completed local ring.  This is formal Darboux
-triviality, not polynomial R21 rank-two admission.
+triviality, but the later Hamiltonian-LND filtration proves that no global
+polynomial Darboux chart exists.
 """
 
 from __future__ import annotations
@@ -2488,6 +2489,646 @@ def verify_r21_frontier() -> dict[str, object]:
         radial_form_correction(mixed_septic_defects, 7),
     ]
 
+    # A fixed projective compactification gives striking but nonintrinsic
+    # boundary data.  The coefficient degree of a closed polynomial two-form
+    # is three less than its generic pole order on P^4: in a chart transverse
+    # to infinity, the top polar coefficient is the radial contraction of the
+    # highest homogeneous part.  For the exact R21 graph form the degree
+    # matrix and highest homogeneous part are especially sparse.
+    def source_degree(expression: sp.Expr) -> int:
+        return max(
+            sum(monomial[:4])
+            for monomial, _ in sp.Poly(
+                red(expression), *variables, q
+            ).terms()
+        )
+
+    graph_form_degree_profile = {
+        f"{left}{right}": source_degree(graph_form[left, right])
+        for left in range(4)
+        for right in range(left + 1, 4)
+    }
+    assert graph_form_degree_profile == {
+        "01": 16,
+        "02": 13,
+        "03": 11,
+        "12": 16,
+        "13": 11,
+        "23": 11,
+    }
+    graph_form_top_degree = max(graph_form_degree_profile.values())
+
+    def homogeneous_source_part(
+        expression: sp.Expr, degree: int
+    ) -> sp.Expr:
+        return red(
+            sum(
+                coefficient
+                * sp.prod(
+                    variable**power
+                    for variable, power in zip(
+                        (*variables, q), monomial, strict=True
+                    )
+                )
+                for monomial, coefficient in sp.Poly(
+                    red(expression), *variables, q
+                ).terms()
+                if sum(monomial[:4]) == degree
+            )
+        )
+
+    graph_form_leading = graph_form.applyfunc(
+        lambda entry: homogeneous_source_part(
+            entry, graph_form_top_degree
+        )
+    )
+    expected_graph_form_leading = sp.zeros(4)
+    expected_graph_form_leading[0, 1] = -6 * x**5 * y**9 * z**2
+    expected_graph_form_leading[1, 0] = 6 * x**5 * y**9 * z**2
+    expected_graph_form_leading[1, 2] = 2 * x**6 * y**9 * z
+    expected_graph_form_leading[2, 1] = -2 * x**6 * y**9 * z
+    assert graph_form_leading == expected_graph_form_leading
+    graph_form_pfaffian = red(
+        graph_form[0, 1] * graph_form[2, 3]
+        - graph_form[0, 2] * graph_form[1, 3]
+        + graph_form[0, 3] * graph_form[1, 2]
+    )
+    leading_graph_form_pfaffian = red(
+        graph_form_leading[0, 1] * graph_form_leading[2, 3]
+        - graph_form_leading[0, 2] * graph_form_leading[1, 3]
+        + graph_form_leading[0, 3] * graph_form_leading[1, 2]
+    )
+    assert graph_form_pfaffian == 1
+    assert leading_graph_form_pfaffian == 0
+    for left, middle, right in itertools.combinations(range(4), 3):
+        closed_coefficient = red(
+            sp.diff(graph_form[middle, right], variables[left])
+            - sp.diff(graph_form[left, right], variables[middle])
+            + sp.diff(graph_form[left, middle], variables[right])
+        )
+        assert closed_coefficient == 0
+
+    # The graph form has the polynomial primitive P*dQ+e*dR.  Its top
+    # exterior derivative is the graph form itself, so I=0 is not an affine
+    # pole or residue divisor of the symplectic form or this primitive.
+    graph_primitive = sp.Matrix(
+        [
+            red(P * sp.diff(Q, variable) + e * sp.diff(R, variable))
+            for variable in variables
+        ]
+    )
+    primitive_derivative = sp.zeros(4)
+    for left in range(4):
+        for right in range(left + 1, 4):
+            coefficient = red(
+                sp.diff(graph_primitive[right], variables[left])
+                - sp.diff(graph_primitive[left], variables[right])
+            )
+            primitive_derivative[left, right] = coefficient
+            primitive_derivative[right, left] = -coefficient
+    assert (
+        primitive_derivative - graph_form
+    ).applyfunc(red) == sp.zeros(4)
+
+    # High pole order and degenerate leading contact data already occur in
+    # the standard Darboux orbit.  The elementary automorphism
+    # (a,b,c,d)->(a,b+a^N*c,c,d) pulls the standard form back to
+    # omega+a^N da^dc.  At N=16 it has the same pole order nineteen as the
+    # R21 form and a decomposable highest homogeneous two-form.
+    boundary_variables = sp.symbols("boundary_a boundary_b boundary_c boundary_d")
+    boundary_a, boundary_b, boundary_c, boundary_d = boundary_variables
+    boundary_exponent = graph_form_top_degree
+    standard_form = sp.Matrix(
+        (
+            (0, 1, 0, 0),
+            (-1, 0, 0, 0),
+            (0, 0, 0, 1),
+            (0, 0, -1, 0),
+        )
+    )
+    elementary_boundary_map = sp.Matrix(
+        (
+            boundary_a,
+            boundary_b + boundary_a**boundary_exponent * boundary_c,
+            boundary_c,
+            boundary_d,
+        )
+    )
+    elementary_boundary_jacobian = elementary_boundary_map.jacobian(
+        boundary_variables
+    )
+    assert elementary_boundary_jacobian.det() == 1
+    elementary_boundary_form = sp.expand(
+        elementary_boundary_jacobian.T
+        * standard_form
+        * elementary_boundary_jacobian
+    )
+    expected_elementary_boundary_form = standard_form.copy()
+    expected_elementary_boundary_form[0, 2] = boundary_a**boundary_exponent
+    expected_elementary_boundary_form[2, 0] = -boundary_a**boundary_exponent
+    assert elementary_boundary_form == expected_elementary_boundary_form
+    elementary_boundary_leading = sp.zeros(4)
+    elementary_boundary_leading[0, 2] = boundary_a**boundary_exponent
+    elementary_boundary_leading[2, 0] = -boundary_a**boundary_exponent
+    assert elementary_boundary_leading.rank() == 2
+    assert standard_form.rank() == 4
+
+    # The exponent-three constant ring is the I-chart of the blowup of the
+    # exponent-two ring in the complete-intersection center (I,U).  This is
+    # the exact Rees-algebra form of the affine modification singled out by
+    # the dense-open k=2 conjugacy.
+    rees_i, rees_s, rees_u, rees_v, rees_sigma = sp.symbols(
+        "rees_I rees_S rees_U rees_V rees_sigma"
+    )
+    danielewski_two_relation = (
+        rees_i**2 * rees_u - rees_s * (rees_s - rees_sigma)
+    )
+    affine_rees_chart_relation = rees_i * rees_v - rees_u
+    danielewski_three_relation = (
+        rees_i**3 * rees_v - rees_s * (rees_s - rees_sigma)
+    )
+    assert sp.expand(
+        danielewski_two_relation.subs(rees_u, rees_i * rees_v)
+        - danielewski_three_relation
+    ) == 0
+    rees_center_polynomial = danielewski_two_relation.subs(
+        {rees_i: 0, rees_u: 0}
+    )
+    assert sp.expand(
+        rees_center_polynomial
+        + rees_s * (rees_s - rees_sigma)
+    ) == 0
+    assert sp.discriminant(rees_center_polynomial, rees_s) == rees_sigma**2
+
+    # Hamiltonian locally nilpotent derivations give an Aut-invariant global
+    # replacement for the raw compactification profile.  In target graph
+    # coordinates, solve J_graph*X for the four canonical Hamiltonians.  The
+    # divisibility lemma f|D(f) => D(f)=0 for an LND excludes P,Q,e, while R
+    # has Hamiltonian vector field partial_e.
+    inverse_graph_jacobian = graph_jacobian.adjugate().applyfunc(red)
+    canonical_target_velocities = {
+        "P": sp.Matrix((0, -1, 0, 0)),
+        "Q": sp.Matrix((1, 0, 0, 0)),
+        "e": sp.Matrix((0, 0, 0, -1)),
+        "R": sp.Matrix((0, 0, 1, 0)),
+    }
+    canonical_hamiltonian_fields = {
+        name: (inverse_graph_jacobian * velocity).applyfunc(red)
+        for name, velocity in canonical_target_velocities.items()
+    }
+    assert canonical_hamiltonian_fields["R"] == sp.Matrix((0, 0, 0, 1))
+    assert canonical_hamiltonian_fields["e"][3] == 0
+    assert red(
+        sum(
+            component * sp.diff(R, variable)
+            for component, variable in zip(
+                canonical_hamiltonian_fields["e"], variables, strict=True
+            )
+        )
+    ) == -1
+    assert not any(coordinate.has(e) for coordinate in (P, Q, R))
+
+    # Quantization bridge audit.  The inverse-Jacobian derivations on
+    # C=K[x,y,z] are delta_P=X_Q, delta_Q=-X_P, and delta_R=-X_e.  They
+    # commute and differentiate the target coordinates Kronecker-wise.
+    # In D(C)=A_3 the graph-normal pair
+    #
+    #     a'=delta_P,  b'=P-delta_Q
+    #
+    # has commutator one.  Its four displayed centralizer generators form
+    # two Weyl pairs.  The written PBW exhaustion combines these identities
+    # with ker(delta_P) intersect ker(delta_Q)=K[R], proved by the generic-R
+    # fiber calculation below.
+    source_coordinates = (x, y, z)
+    delta_fields = {
+        "delta_P": canonical_hamiltonian_fields["Q"][:3, :],
+        "delta_Q": -canonical_hamiltonian_fields["P"][:3, :],
+        "delta_R": -canonical_hamiltonian_fields["e"][:3, :],
+    }
+    assert all(
+        canonical_hamiltonian_fields[name][3] == 0
+        for name in ("P", "Q", "e")
+    )
+
+    def directional(field: sp.MatrixBase, expression: sp.Expr) -> sp.Expr:
+        return red(
+            sum(
+                field[index] * sp.diff(expression, variable)
+                for index, variable in enumerate(source_coordinates)
+            )
+        )
+
+    def lie_bracket(
+        left: sp.MatrixBase, right: sp.MatrixBase
+    ) -> sp.Matrix:
+        return sp.Matrix(
+            [
+                red(
+                    directional(left, right[index])
+                    - directional(right, left[index])
+                )
+                for index in range(3)
+            ]
+        )
+
+    target_coordinates = (P, Q, R)
+    ordered_delta_fields = tuple(delta_fields.values())
+    for row, field in enumerate(ordered_delta_fields):
+        assert tuple(
+            directional(field, coordinate)
+            for coordinate in target_coordinates
+        ) == tuple(
+            sp.Integer(row == column) for column in range(3)
+        )
+    for left, right in itertools.combinations(ordered_delta_fields, 2):
+        assert lie_bracket(left, right) == sp.zeros(3, 1)
+
+    zero_field = sp.zeros(3, 1)
+
+    def first_order_commutator(
+        left: tuple[sp.Expr, sp.MatrixBase],
+        right: tuple[sp.Expr, sp.MatrixBase],
+    ) -> tuple[sp.Expr, sp.Matrix]:
+        left_scalar, left_field = left
+        right_scalar, right_field = right
+        return (
+            red(
+                directional(left_field, right_scalar)
+                - directional(right_field, left_scalar)
+            ),
+            lie_bracket(left_field, right_field),
+        )
+
+    delta_p = delta_fields["delta_P"]
+    delta_q = delta_fields["delta_Q"]
+    delta_r = delta_fields["delta_R"]
+    graph_normal_pair = {
+        "a_prime": (sp.Integer(0), delta_p),
+        "b_prime": (P, -delta_q),
+    }
+    transported_centralizer = {
+        "R": (R, zero_field),
+        "delta_R": (sp.Integer(0), delta_r),
+        "delta_Q": (sp.Integer(0), delta_q),
+        "Q-delta_P": (Q, -delta_p),
+    }
+    assert first_order_commutator(
+        graph_normal_pair["a_prime"], graph_normal_pair["b_prime"]
+    ) == (sp.Integer(1), zero_field)
+    for operator in transported_centralizer.values():
+        for normal_operator in graph_normal_pair.values():
+            assert first_order_commutator(
+                normal_operator, operator
+            ) == (sp.Integer(0), zero_field)
+    assert first_order_commutator(
+        transported_centralizer["delta_R"],
+        transported_centralizer["R"],
+    ) == (sp.Integer(1), zero_field)
+    assert first_order_commutator(
+        transported_centralizer["delta_Q"],
+        transported_centralizer["Q-delta_P"],
+    ) == (sp.Integer(1), zero_field)
+    for left_name, right_name in (
+        ("R", "delta_Q"),
+        ("R", "Q-delta_P"),
+        ("delta_R", "delta_Q"),
+        ("delta_R", "Q-delta_P"),
+    ):
+        assert first_order_commutator(
+            transported_centralizer[left_name],
+            transported_centralizer[right_name],
+        ) == (sp.Integer(0), zero_field)
+
+    p_x_derivative = canonical_hamiltonian_fields["P"][0]
+    q_x_derivative = canonical_hamiltonian_fields["Q"][0]
+    e_a_derivative = red(
+        sum(
+            component * sp.diff(A, variable)
+            for component, variable in zip(
+                canonical_hamiltonian_fields["e"], variables, strict=True
+            )
+        )
+    )
+    p_x_quotient = red(sp.cancel(p_x_derivative / x))
+    q_x_quotient = red(sp.cancel(q_x_derivative / x))
+    e_a_quotient = red(sp.cancel(e_a_derivative / A))
+    assert sp.denom(p_x_quotient) == 1 and p_x_quotient != 0
+    assert sp.denom(q_x_quotient) == 1 and q_x_quotient != 0
+    assert sp.denom(e_a_quotient) == 1 and e_a_quotient != 0
+
+    # This extends the separate K[P,R] and K[Q,R] screens to the full target
+    # algebra K[P,Q,R].  If X_f is locally nilpotent there, x|X_f(x) forces
+    # X_f(x)=0.  A nontrivial cancellation between the P and Q directions
+    # would put -X_Q(x)/X_P(x) in K(P,Q,R).  Write the ratio in the quartic
+    # root T and specialize P=1,Q=0.  The resulting element is not in K(R):
+    # modulo the irreducible T^4-4*T+4*R, equality to a base scalar would
+    # leave the nonzero coefficient -9 of T.
+    abstract_p, abstract_q, abstract_r, abstract_t = sp.symbols(
+        "abstract_P abstract_Q abstract_R abstract_T"
+    )
+    abstract_incidence = (
+        abstract_t
+        - abstract_q**2 * abstract_t**2 / 2
+        + 2 * abstract_p * abstract_q * abstract_t**3 / 3
+        - abstract_p**2 * abstract_t**4 / 4
+        - abstract_r
+    )
+    abstract_incidence_derivative = sp.diff(
+        abstract_incidence, abstract_t
+    )
+    abstract_x = abstract_t / abstract_incidence_derivative
+
+    def total_target_derivative(
+        expression: sp.Expr, target_variable: sp.Symbol
+    ) -> sp.Expr:
+        root_derivative = -sp.diff(
+            abstract_incidence, target_variable
+        ) / abstract_incidence_derivative
+        return sp.factor(
+            sp.diff(expression, target_variable)
+            + sp.diff(expression, abstract_t) * root_derivative
+        )
+
+    abstract_x_p = total_target_derivative(abstract_x, abstract_p)
+    abstract_x_q = total_target_derivative(abstract_x, abstract_q)
+    cancellation_ratio = sp.factor(abstract_x_p / abstract_x_q)
+    specialized_cancellation_ratio = sp.factor(
+        cancellation_ratio.subs({abstract_p: 1, abstract_q: 0})
+    )
+    expected_specialized_ratio = sp.factor(
+        -3
+        * abstract_t
+        * (2 * abstract_t**3 - 5)
+        / (4 * (abstract_t**3 - 4))
+    )
+    assert specialized_cancellation_ratio == expected_specialized_ratio
+    specialized_minimal_polynomial = (
+        abstract_t**4 - 4 * abstract_t + 4 * abstract_r
+    )
+    assert sp.Poly(
+        specialized_minimal_polynomial,
+        abstract_t,
+        domain=sp.QQ.frac_field(abstract_r),
+    ).is_irreducible
+    abstract_base_scalar = sp.symbols("abstract_base_scalar")
+    cancellation_numerator, cancellation_denominator = sp.fraction(
+        specialized_cancellation_ratio
+    )
+    cancellation_remainder = sp.rem(
+        cancellation_numerator
+        - abstract_base_scalar * cancellation_denominator,
+        specialized_minimal_polynomial,
+        abstract_t,
+    )
+    assert sp.Poly(
+        cancellation_remainder, abstract_t
+    ).coeff_monomial(abstract_t) == -9
+
+    # Classify every e-independent Hamiltonian LND, not only Hamiltonians in
+    # the displayed target algebra.  Such a field restricts to an LND of
+    # K[x,y,z] preserving R.  Since R=x*S and S|_(x=0)=1, factorial closure
+    # of an LND kernel forces both x and S to be fixed.  Over K(x), a nonzero
+    # LND of K(x)[y,z] would make the generic S-level a union of affine lines.
+    # Its exact quadratic-in-z model instead has a squarefree quartic branch
+    # polynomial and hence geometric genus one.
+    generic_s_level, generic_r_level = sp.symbols(
+        "generic_s_level generic_r_level"
+    )
+    s_level_discriminant = red(
+        sp.discriminant(r_cofactor - generic_s_level, z)
+    )
+    expected_s_level_discriminant = red(
+        -x**3
+        * (
+            6 * generic_s_level * (1 + x * y**2) ** 2
+            - 5 * x * y**2
+            - 6
+        )
+        / 18
+    )
+    assert red(
+        s_level_discriminant - expected_s_level_discriminant
+    ) == 0
+    branch_u = sp.symbols("branch_u")
+    s_branch_quadratic = (
+        6 * generic_s_level * branch_u**2
+        + (12 * generic_s_level - 5) * branch_u
+        + 6 * (generic_s_level - 1)
+    )
+    assert sp.discriminant(
+        s_branch_quadratic, branch_u
+    ) == 24 * generic_s_level + 25
+    assert s_branch_quadratic.subs(branch_u, 0) == 6 * (
+        generic_s_level - 1
+    )
+
+    # The same branch calculation makes the generic R-fibre geometrically
+    # integral.  This is the relative-algebraic-closure input used after the
+    # restricted LND vanishes: df=h*dR then forces f in K(R), and the section
+    # y=z=0, on which R=x, cuts this intersection down to K[R].
+    r_level_discriminant = red(
+        sp.discriminant(R - generic_r_level, z)
+    )
+    expected_r_level_discriminant = red(
+        -x**4
+        * (
+            6 * generic_r_level * (1 + x * y**2) ** 2
+            - 5 * x**2 * y**2
+            - 6 * x
+        )
+        / 18
+    )
+    assert red(
+        r_level_discriminant - expected_r_level_discriminant
+    ) == 0
+    r_branch_quadratic = (
+        6 * generic_r_level * branch_u**2
+        + (12 * generic_r_level - 5 * x) * branch_u
+        + 6 * (generic_r_level - x)
+    )
+    assert red(
+        sp.discriminant(r_branch_quadratic, branch_u)
+        - x * (24 * generic_r_level + 25 * x)
+    ) == 0
+    assert red(R.subs({y: 0, z: 0}) - x) == 0
+
+    global_boundary_audit = {
+        "fixed_P4_profile": {
+            "coefficient_degree_profile": graph_form_degree_profile,
+            "maximum_coefficient_degree": graph_form_top_degree,
+            "generic_pole_order": graph_form_top_degree + 3,
+            "leading_two_form": (
+                "2*x^5*y^9*z*dy^(3*z*dx+x*dz)"
+            ),
+            "leading_rank": graph_form_leading.rank(),
+            "leading_contact_integrable": True,
+            "standard_generic_pole_order": 3,
+        },
+        "fixed_compactification_not_invariant": {
+            "elementary_automorphism": "(a,b,c,d)->(a,b+a^N*c,c,d)",
+            "pulled_form": "omega_std+a^N*da^dc",
+            "arbitrary_generic_pole_order": "N+3",
+            "checked_exponent": boundary_exponent,
+            "checked_generic_pole_order": boundary_exponent + 3,
+            "leading_rank": elementary_boundary_leading.rank(),
+            "conclusion": (
+                "pole order and leading contact degeneration on a fixed "
+                "P4 compactification do not descend to the polynomial-"
+                "automorphism orbit"
+            ),
+        },
+        "volume_and_primitive": {
+            "graph_pfaffian": str(graph_form_pfaffian),
+            "top_volume_equals_standard": True,
+            "polynomial_primitive": "P*dQ+e*dR",
+            "affine_I_pole_or_residue": False,
+            "conclusion": (
+                "canonical-discrepancy data from the top wedge alone and "
+                "the pole divisor of an unnormalized primitive cannot "
+                "distinguish R21 from the standard Darboux orbit"
+            ),
+        },
+        "rees_affine_modification": {
+            "source": "R_2=K[I,S,U]/(I^2*U-S*(S-sigma))",
+            "center": "(I,U), two reduced points on I=0",
+            "rees_algebra": "R_2[X,Y]/(I*Y-U*X)",
+            "I_chart": "U=I*V",
+            "target": "R_3=K[I,S,V]/(I^3*V-S*(S-sigma))",
+            "conclusion": (
+                "the ordinary Rees algebra realizes, rather than "
+                "obstructs, the exponent-two to exponent-three crossing"
+            ),
+        },
+        "hamiltonian_derksen_screen": {
+            "definition": (
+                "HD(Omega)=K[f : the Hamiltonian derivation X_f is "
+                "locally nilpotent]"
+            ),
+            "darboux_necessary_condition": "HD(Omega)=K[x,y,z,e]",
+            "canonical_fields": {
+                "X_P": "not LND because x divides nonzero X_P(x)",
+                "X_Q": "not LND because x divides nonzero X_Q(x)",
+                "X_e": "not LND because A divides nonzero X_e(A)",
+                "X_R": "partial_e, hence LND",
+            },
+            "target_subalgebra_slices": (
+                "on K[P,Q,R], and separately on K[e,R], the "
+                "Hamiltonian-LND polynomials are exactly K[R]"
+            ),
+            "three_coordinate_cancellation_gate": {
+                "ratio": "-X_Q(x)/X_P(x)",
+                "specialization": (
+                    "P=1,Q=0 gives -3*T*(2*T^3-5)/(4*(T^3-4))"
+                ),
+                "minimal_polynomial": "T^4-4*T+4*R",
+                "nonconstant_remainder_witness": "coefficient of T is -9",
+            },
+            "known_subalgebra": "K[R] is contained in HD(Omega_21)",
+            "e_independent_classification": {
+                "domain": "K[x,y,z]",
+                "factorial_closure": (
+                    "D(R)=0 and R=x*S with S|_(x=0)=1 force "
+                    "D(x)=D(S)=0"
+                ),
+                "generic_S_level_z_discriminant": (
+                    "-x^3*(6*c*(1+x*y^2)^2-5*x*y^2-6)/18"
+                ),
+                "branch_quadratic_in_u=x*y^2": str(
+                    s_branch_quadratic
+                ),
+                "branch_quadratic_discriminant": str(
+                    24 * generic_s_level + 25
+                ),
+                "generic_curve_genus": 1,
+                "generic_R_fiber_geometrically_integral": True,
+                "polynomial_section": "R(x,0,0)=x",
+                "conclusion": (
+                    "for every f in K[x,y,z], X_f is locally nilpotent "
+                    "if and only if f is in K[R]"
+                ),
+            },
+            "positive_e_degree_descent": {
+                "filtration": "deg(e)=1 and deg(K[x,y,z])=0",
+                "hamiltonian_decomposition": (
+                    "X_(e^j*f_j)=e^j*Y_(f_j)+e^j*H_(f_j)*partial_e"
+                    "+j*e^(j-1)*f_j*Z, where Z=X_e|_C"
+                ),
+                "top_layer": (
+                    "e^m*Y_(f_m); genus-one rigidity forces "
+                    "Y_(f_m)=0 and hence f_m=h(R)"
+                ),
+                "next_layer": (
+                    "e^(m-1)*(Y_(f_(m-1))+m*h(R)*Z)"
+                    "+e^m*h'(R)*partial_e"
+                ),
+                "divisibility_step": (
+                    "e divides delta(e), so local nilpotence forces "
+                    "h'(R)=0"
+                ),
+                "slice_step": (
+                    "if h=c is nonzero, the induced LND E on C has "
+                    "E(R)=-m*c, making R a slice and therefore prime; "
+                    "this contradicts R=x*S"
+                ),
+                "conclusion": "a Hamiltonian LND has e-degree zero",
+            },
+            "complete_classification": {
+                "locally_nilpotent_hamiltonians": "K[R]",
+                "HD(Omega_21)": "K[R]",
+                "HML(Omega_21)": "K[x,y,z]",
+                "polynomial_darboux_admission": False,
+                "obstruction": (
+                    "a standard Darboux chart supplies four LND "
+                    "Hamiltonians generating the full coordinate ring"
+                ),
+            },
+            "quantization_bridge_audit": {
+                "ambient_quantization": (
+                    "the inverse-Jacobian lift of (P,Q,R) is an "
+                    "endomorphism of D(K[x,y,z])=A_3"
+                ),
+                "inverse_jacobian_frame": {
+                    "delta_P": "X_Q|_C",
+                    "delta_Q": "-X_P|_C",
+                    "delta_R": "-X_e|_C",
+                    "relations": "delta_i(target_j)=Kronecker(i,j)",
+                    "pairwise_commuting": True,
+                },
+                "graph_normal_pair": {
+                    "a_prime": "delta_P",
+                    "b_prime": "P-delta_Q",
+                    "commutator": 1,
+                },
+                "common_polynomial_constants": (
+                    "ker(delta_P) intersect ker(delta_Q)=K[R]"
+                ),
+                "centralizer": (
+                    "K<R,delta_R,delta_Q,Q-delta_P> is exactly "
+                    "Cent_A3(delta_P,P-delta_Q) and is isomorphic to A_2"
+                ),
+                "pbw_recurrence": (
+                    "delta_Q(c_beta)=-(beta_P+1)*c_(beta+e_P)"
+                ),
+                "centralizer_reduction": (
+                    "the restricted inverse-Jacobian map is an isomorphism "
+                    "onto the transported centralizer, so identifying that "
+                    "centralizer with a fixed A_2 gives an automorphism"
+                ),
+                "strict_filtered_weyl_frame": False,
+                "filtered_obstruction": (
+                    "in any strict PBW quantization with gr=(A,Pi_21), "
+                    "principal symbols of ad-locally-nilpotent Weyl "
+                    "generators would lie in K[R] and could not generate A"
+                ),
+                "remaining_bridge": (
+                    "an essentially filtration-collapsing or non-PBW "
+                    "identification not induced by the graph centralizer"
+                ),
+                "DC2_conclusion": "not settled",
+            },
+        },
+    }
+
     return {
         "coefficient_base": "Q[q]/(q^2-4q+6)",
         "map_term_counts": {
@@ -2515,6 +3156,7 @@ def verify_r21_frontier() -> dict[str, object]:
             ),
         },
         "graph_form_determinant": "1",
+        "global_symplectic_boundary_audit": global_boundary_audit,
         "affine_contact_screen": {
             "positive_degree_equations": len(contact_equations),
             "coefficient_dimension_over_Q": 6,
@@ -3006,12 +3648,13 @@ def verify_r21_frontier() -> dict[str, object]:
             },
         },
         "rank_two_status": (
-            "not admitted: the exact graph form is polynomial and the "
+            "globally not admitted: the exact graph form is polynomial and the "
             "isolated reciprocal powers are stably unimodular; affine "
             "contact and every fiber-preserving stabilization are excluded, "
             "the stable-mixed chart is formally Darboux-trivial to all "
-            "orders, but no finite polynomial automorphism trivializing the "
-            "coupled graph form is certified. A new degree-seven coordinate "
+            "orders, but the Hamiltonian LND-generator algebra is exactly "
+            "K[R], whereas a standard Darboux chart would generate the full "
+            "coordinate ring. A new degree-seven coordinate "
             "does pass the complete b=0 two-form gate and has a polynomial, "
             "volume-compatible first transverse jet, but its canonical "
             "normal vector is not locally nilpotent"
@@ -3025,7 +3668,7 @@ def main() -> None:
     args = parser.parse_args()
 
     certificate = {
-        "format": "dc2-higher-nilpotence-r21-frontier-v14",
+        "format": "dc2-higher-nilpotence-r21-frontier-v17",
         "higher_nilpotence_family": verify_higher_nilpotence_family(),
         "r21_frontier": verify_r21_frontier(),
         "conclusion": (
@@ -3084,8 +3727,35 @@ def main() -> None:
             "base translations K(G,C),L(G,C) do not escape: their sole "
             "full-form difference is exactly their fiber-admission PDE, so "
             "every admitted affine-momentum row has the same excluded form. "
-            "Whether that formal normalizer resums to a finite polynomial "
-            "automorphism remains the coupled graph-Darboux problem."
+            "On the fixed P4 compactification the R21 form has pole order "
+            "nineteen and a rank-two integrable leading form, but elementary "
+            "pullbacks of the standard form have arbitrary pole order and "
+            "the same leading degeneration. The top volume forms agree, and "
+            "the polynomial primitive has no affine pole on I=0, so raw "
+            "pole, residue, contact, and crepant-volume data are not global "
+            "orbit invariants. The exponent-two to exponent-three constant-"
+            "ring crossing is the I-chart of the Rees algebra of (I,U), so "
+            "the ordinary affine modification exists. The Hamiltonian "
+            "Derksen algebra is a genuine global replacement: X_P, X_Q, "
+            "and X_e fail the LND divisibility test, while X_R=partial_e. "
+            "The genus-one generic fiber classifies every e-independent "
+            "Hamiltonian LND. Filtering an arbitrary Hamiltonian by e-degree "
+            "then eliminates every positive top degree: its leading layer "
+            "would either induce a forbidden R-preserving LND on K[x,y,z], "
+            "or its next layer would make the reducible polynomial R=x*S a "
+            "slice. Consequently the full Hamiltonian LND-generator algebra "
+            "is exactly K[R], which is proper. Since a standard Darboux chart "
+            "has four locally nilpotent coordinate Hamiltonians generating "
+            "the whole ring, Omega_21 is not polynomially symplectomorphic "
+            "to the standard form. The ambient inverse-Jacobian A_3 lift "
+            "does not descend through the natural graph centralizer to a "
+            "counterexample: the complete centralizer of delta_P and "
+            "P-delta_Q is exactly the transported A_2 generated by R, "
+            "delta_R, delta_Q, and Q-delta_P, so restriction is an "
+            "isomorphism onto that copy. The Hamiltonian-LND classification "
+            "also excludes every strict filtered PBW Weyl frame for the "
+            "R21 source Poisson algebra. Any surviving DC2 bridge must be "
+            "essentially filtration-collapsing or non-PBW."
         ),
     }
     rendered = json.dumps(certificate, indent=2, sort_keys=True) + "\n"
@@ -3121,8 +3791,15 @@ def main() -> None:
     print("PASS: grading excludes every invariant shift of that first jet")
     print("PASS: classified and excluded the full reciprocal Bezout ansatz")
     print("PASS: excluded all admitted affine-momentum base translations")
+    print("PASS: audited the fixed P4 pole and leading-contact profile")
+    print("PASS: realized the exponent-three fiber as one Rees modification")
+    print("PASS: screened the four canonical Hamiltonians for local nilpotence")
+    print("PASS: classified every R21 Hamiltonian LND as X_(h(R))")
+    print("PASS: obstructed global polynomial Darboux admission for Omega_21")
+    print("PASS: exhausted the natural R21 graph-centralizer A2 reduction")
+    print("PASS: excluded every strict filtered PBW Weyl frame for Pi_21")
     print("PASS: verified four reciprocal-power stable unimodular charts")
-    print("OPEN: no polynomial Darboux trivialization of the R21 graph is certified")
+    print("OPEN: an unfiltered, non-PBW R21 identification with a fixed A2")
     print(f"SHA256: {digest}")
 
 

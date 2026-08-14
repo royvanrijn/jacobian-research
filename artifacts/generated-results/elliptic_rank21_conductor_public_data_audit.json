@@ -1,0 +1,1499 @@
+{
+  "artifact_kind": "bounded_elliptic_rank21_conductor_public_data_audit",
+  "assessment": {
+    "breakthrough_result_found": false,
+    "closest_public_certified_near_miss": {
+      "curve": "Fermigier E22",
+      "exact_local_rank_certificate_artifact": "artifacts/generated-results/elliptic_fermigier_rank22_points.json",
+      "excess_over_strict_target": "0.004910950637428796108330351524",
+      "log_conductor": "182.724910950637428796108330351524078685943544318334397594996",
+      "rank_lower_bound": 22
+    },
+    "epistemic_status": "bounded negative public-source audit; not a theorem excluding unpublished curves or models outside the pinned catalogues",
+    "finite_reduction_certificate_triggered_for_new_curve": false,
+    "new_public_model_meeting_both_rank_and_conductor_gates": false,
+    "public_table_frontier": "Dujella rank pages give exact models and printed point sets through rank 29; no audited table contains a rank>=21 curve with log conductor below 182.72",
+    "reason_no_new_certificate_was_built": "every newly recovered rank-23 through rank-28 record model is already above the conductor cutoff; the rank-21, rank-22, and rank-29 models were already present locally"
+  },
+  "audit_date": "2026-08-14",
+  "candidate_inventory": [
+    {
+      "author_and_year": "Nagao - Kouya (1994)",
+      "below_strict_log_conductor_target": false,
+      "conductor_evidence": {
+        "all_factor_bases_proved_prime_by_gp": true,
+        "below_strict_log_conductor_target": false,
+        "complete_discriminant_factorization": [
+          {
+            "exponent": 13,
+            "prime": "2"
+          },
+          {
+            "exponent": 2,
+            "prime": "3"
+          },
+          {
+            "exponent": 4,
+            "prime": "5"
+          },
+          {
+            "exponent": 4,
+            "prime": "7"
+          },
+          {
+            "exponent": 4,
+            "prime": "13"
+          },
+          {
+            "exponent": 3,
+            "prime": "17"
+          },
+          {
+            "exponent": 3,
+            "prime": "23"
+          },
+          {
+            "exponent": 4,
+            "prime": "47"
+          },
+          {
+            "exponent": 1,
+            "prime": "4507"
+          },
+          {
+            "exponent": 1,
+            "prime": "115482611374267602141168398241396608699381902319617225736297616061235976719"
+          }
+        ],
+        "conductor": "26112076915897777815571388664430310998157918697219343275140810790098571234096793308930",
+        "factor_product_verified_before_gp": true,
+        "log_conductor": "196.679545735892153436755123293766307415183592453755792339164",
+        "margin_above_strict_target": "13.95954573589215343675512329",
+        "minimal_discriminant": "479737754043767746536923774462246533556793859277365678757052823009411494064048885744243744500948985175040000",
+        "minimal_model": [
+          "1",
+          "1",
+          "1",
+          "-215843772422443922015169952702159835",
+          "-19474361277787151947255961435459054151501792241320535"
+        ],
+        "root_number": -1,
+        "status": "exact_local_pari_gp_replay"
+      },
+      "excluded_as_already_local": true,
+      "independence_status": "printed independent-point claim; membership replay only in this audit",
+      "local_artifact_isomorphism_matches": [
+        {
+          "coefficient_vector_paths_with_same_j_invariant": [
+            "rank21_record.curve.minimal_model"
+          ],
+          "path": "artifacts/generated-results/elliptic_nagao_1994.json",
+          "sha256": "7f4225cee27b86a677924ffd3391a301ddc167a1c080ed0d469969a7b3306be5"
+        },
+        {
+          "coefficient_vector_paths_with_same_j_invariant": [
+            "final_conductor_records[1].curve.minimal_model",
+            "published_record_calibration.pari_replay.minimal_model",
+            "published_record_calibration.printed_model"
+          ],
+          "path": "artifacts/generated-results/elliptic_nagao_rank21_neighborhood.json",
+          "sha256": "7d59fe9a91c0f3e46604794e8931ae27e26eeea1ebf252176dffd6be8d6010fe"
+        }
+      ],
+      "new_to_local_artifacts_at_audit_time": false,
+      "plausible_target_candidate_after_conductor_gate": false,
+      "printed_points_exactly_checked_on_curve": 21,
+      "rank_lower_bound_printed_by_source": 21,
+      "weierstrass_coefficients": [
+        "1",
+        "1",
+        "1",
+        "-215843772422443922015169952702159835",
+        "-19474361277787151947255961435459054151501792241320535"
+      ]
+    },
+    {
+      "author_and_year": "Fermigier (1997)",
+      "below_strict_log_conductor_target": false,
+      "conductor_evidence": {
+        "all_factor_bases_proved_prime_by_gp": true,
+        "below_strict_log_conductor_target": false,
+        "complete_discriminant_factorization": [
+          {
+            "exponent": 2,
+            "prime": "2"
+          },
+          {
+            "exponent": 9,
+            "prime": "3"
+          },
+          {
+            "exponent": 2,
+            "prime": "5"
+          },
+          {
+            "exponent": 6,
+            "prime": "7"
+          },
+          {
+            "exponent": 6,
+            "prime": "13"
+          },
+          {
+            "exponent": 4,
+            "prime": "17"
+          },
+          {
+            "exponent": 3,
+            "prime": "37"
+          },
+          {
+            "exponent": 1,
+            "prime": "47293"
+          },
+          {
+            "exponent": 1,
+            "prime": "270704849145149791"
+          },
+          {
+            "exponent": 1,
+            "prime": "60794657878864337775664712674231370427122734380997"
+          }
+        ],
+        "conductor": "22720638514787473197194583889675055980109503436060704437972911338086049759883790",
+        "factor_product_verified_before_gp": true,
+        "log_conductor": "182.724910950637428796108330351524078685943544318334397594996",
+        "margin_above_strict_target": "0.004910950637428796108330351524",
+        "minimal_discriminant": "3680432205940761304587473756368167508478483727616134375685404923405185646725374901862332174937532900",
+        "minimal_model": [
+          "1",
+          "0",
+          "1",
+          "-940299517776391362903023121165864",
+          "10707363070719743033425295515449274534651125011362"
+        ],
+        "root_number": 1,
+        "status": "exact_local_pari_gp_replay"
+      },
+      "excluded_as_already_local": true,
+      "independence_status": "exact finite-reduction certificate already local",
+      "local_artifact_isomorphism_matches": [
+        {
+          "coefficient_vector_paths_with_same_j_invariant": [
+            "curve.minimal_model"
+          ],
+          "path": "artifacts/generated-results/elliptic_fermigier_benchmark.json",
+          "sha256": "665396f279d156306d8cbc64d97935af85c4e30af6edf8bd60d1f72178cc9660"
+        },
+        {
+          "coefficient_vector_paths_with_same_j_invariant": [
+            "published_model",
+            "record_fiber_height_1000000_replay.exact_rank_certificate.conductor.minimal_model"
+          ],
+          "path": "artifacts/generated-results/elliptic_fermigier_rank22_accidental_slices.json",
+          "sha256": "3794f23d37685edcc1ad5c8279d48fcd247b1d31b7c88aa4939ca5efd40f79a7"
+        },
+        {
+          "coefficient_vector_paths_with_same_j_invariant": [
+            "curve.model",
+            "exact_independence_certificate.short_weierstrass_coefficients"
+          ],
+          "path": "artifacts/generated-results/elliptic_fermigier_rank22_points.json",
+          "sha256": "4cbff7722073953aa21eb2022605881cba2acad944c093ac60fa095fa1f066e3"
+        },
+        {
+          "coefficient_vector_paths_with_same_j_invariant": [
+            "pointed_quartic_map.generalized_weierstrass_coefficients_a1_a2_a3_a4_a6"
+          ],
+          "path": "artifacts/generated-results/elliptic_fermigier_rank22_record_group_directions.json",
+          "sha256": "4928c44e27cada74b7a558dd97edfba20a554a508ac0e98ca051df7dea66a3c1"
+        },
+        {
+          "coefficient_vector_paths_with_same_j_invariant": [
+            "benchmarks[4].curve.minimal_model"
+          ],
+          "path": "artifacts/generated-results/elliptic_nagao_rank13_local_crt.json",
+          "sha256": "272fbf6eb8b227dc05b5ea82ebf0a8a3057bd786937ca1b917060d9212e16894"
+        }
+      ],
+      "new_to_local_artifacts_at_audit_time": false,
+      "plausible_target_candidate_after_conductor_gate": false,
+      "printed_points_exactly_checked_on_curve": 22,
+      "rank_lower_bound_printed_by_source": 22,
+      "weierstrass_coefficients": [
+        "1",
+        "0",
+        "1",
+        "-940299517776391362903023121165864",
+        "10707363070719743033425295515449274534651125011362"
+      ]
+    },
+    {
+      "author_and_year": "Martin - McMillen (1998)",
+      "below_strict_log_conductor_target": false,
+      "conductor_evidence": {
+        "all_factor_bases_proved_prime_by_gp": true,
+        "below_strict_log_conductor_target": false,
+        "complete_discriminant_factorization": [
+          {
+            "exponent": 4,
+            "prime": "2"
+          },
+          {
+            "exponent": 8,
+            "prime": "3"
+          },
+          {
+            "exponent": 6,
+            "prime": "5"
+          },
+          {
+            "exponent": 2,
+            "prime": "11"
+          },
+          {
+            "exponent": 2,
+            "prime": "13"
+          },
+          {
+            "exponent": 2,
+            "prime": "17"
+          },
+          {
+            "exponent": 5,
+            "prime": "19"
+          },
+          {
+            "exponent": 4,
+            "prime": "23"
+          },
+          {
+            "exponent": 2,
+            "prime": "199"
+          },
+          {
+            "exponent": 1,
+            "prime": "17858193374841750901974789649"
+          },
+          {
+            "exponent": 1,
+            "prime": "1006218106634655545344494448610726356220703995276273"
+          }
+        ],
+        "conductor": "113964706497998622564257410134352232583764612126645513242486361984405434455972952111271430",
+        "factor_product_verified_before_gp": true,
+        "log_conductor": "205.060791898820116129124012663790011743857890656861765841760",
+        "margin_above_strict_target": "22.34079189882011612912401266",
+        "minimal_discriminant": "-4779639209650129827198370598581502977994781114856713955972654268540889198350896060545934759063721850651300750000",
+        "minimal_model": [
+          "1",
+          "0",
+          "1",
+          "-19252966408674012828065964616418441723",
+          "32685500727716376257923347071452044295907443056345614006"
+        ],
+        "root_number": -1,
+        "status": "exact_local_pari_gp_replay"
+      },
+      "excluded_as_already_local": false,
+      "independence_status": "printed independent-point claim; membership replay only in this audit",
+      "local_artifact_isomorphism_matches": [],
+      "new_to_local_artifacts_at_audit_time": true,
+      "plausible_target_candidate_after_conductor_gate": false,
+      "printed_points_exactly_checked_on_curve": 23,
+      "rank_lower_bound_printed_by_source": 23,
+      "weierstrass_coefficients": [
+        "1",
+        "0",
+        "1",
+        "-19252966408674012828065964616418441723",
+        "32685500727716376257923347071452044295907443056345614006"
+      ]
+    },
+    {
+      "author_and_year": "Martin - McMillen (2000)",
+      "below_strict_log_conductor_target": false,
+      "conductor_evidence": {
+        "all_factor_bases_proved_prime_by_gp": true,
+        "below_strict_log_conductor_target": false,
+        "complete_discriminant_factorization": [
+          {
+            "exponent": 2,
+            "prime": "2"
+          },
+          {
+            "exponent": 9,
+            "prime": "3"
+          },
+          {
+            "exponent": 2,
+            "prime": "5"
+          },
+          {
+            "exponent": 6,
+            "prime": "11"
+          },
+          {
+            "exponent": 2,
+            "prime": "13"
+          },
+          {
+            "exponent": 2,
+            "prime": "17"
+          },
+          {
+            "exponent": 2,
+            "prime": "29"
+          },
+          {
+            "exponent": 3,
+            "prime": "31"
+          },
+          {
+            "exponent": 2,
+            "prime": "41"
+          },
+          {
+            "exponent": 1,
+            "prime": "458619970494582607679296750333015081"
+          },
+          {
+            "exponent": 1,
+            "prime": "264240973182971699094661154229360236070105974082503"
+          }
+        ],
+        "conductor": "325763846420202806803685538805031963849862314963649942610049440603050996133862755155678267754410",
+        "factor_product_verified_before_gp": true,
+        "log_conductor": "219.926586369826279856801263388122382382882553724474848252038",
+        "margin_above_strict_target": "37.20658636982627985680126339",
+        "minimal_discriminant": "869228312577660772590804276974894693796770087691229179004716529760427780748163030521421801352204521776094281605900",
+        "minimal_model": [
+          "1",
+          "0",
+          "1",
+          "-120039822036992245303534619191166796374",
+          "504224992484910670010801799168082726759443756222911415116"
+        ],
+        "root_number": 1,
+        "status": "exact_local_pari_gp_replay"
+      },
+      "excluded_as_already_local": false,
+      "independence_status": "printed independent-point claim; membership replay only in this audit",
+      "local_artifact_isomorphism_matches": [],
+      "new_to_local_artifacts_at_audit_time": true,
+      "plausible_target_candidate_after_conductor_gate": false,
+      "printed_points_exactly_checked_on_curve": 24,
+      "rank_lower_bound_printed_by_source": 24,
+      "weierstrass_coefficients": [
+        "1",
+        "0",
+        "1",
+        "-120039822036992245303534619191166796374",
+        "504224992484910670010801799168082726759443756222911415116"
+      ]
+    },
+    {
+      "author_and_year": "Elkies (2006)",
+      "below_strict_log_conductor_target": false,
+      "conductor_evidence": {
+        "all_factor_bases_proved_prime_by_gp": true,
+        "below_strict_log_conductor_target": false,
+        "complete_discriminant_factorization": [
+          {
+            "exponent": 16,
+            "prime": "2"
+          },
+          {
+            "exponent": 13,
+            "prime": "3"
+          },
+          {
+            "exponent": 6,
+            "prime": "5"
+          },
+          {
+            "exponent": 7,
+            "prime": "7"
+          },
+          {
+            "exponent": 3,
+            "prime": "11"
+          },
+          {
+            "exponent": 4,
+            "prime": "13"
+          },
+          {
+            "exponent": 1,
+            "prime": "157"
+          },
+          {
+            "exponent": 2,
+            "prime": "283"
+          },
+          {
+            "exponent": 1,
+            "prime": "72551"
+          },
+          {
+            "exponent": 1,
+            "prime": "895613"
+          },
+          {
+            "exponent": 1,
+            "prime": "39466373175449369221626360280383658386480681928740709773906484427935361743867171"
+          }
+        ],
+        "conductor": "3421625153333343825198002959770328244842456471613462044687992344664286334910845403447307652180335890",
+        "factor_product_verified_before_gp": true,
+        "log_conductor": "229.186039835650673317510293638399118369019509952775809335048",
+        "margin_above_strict_target": "46.46603983565067331751029364",
+        "minimal_discriminant": "-1648077180048519919196851388268507997232089165506048976474499224670899793965899322864689351309245989194390271909250018304000000",
+        "minimal_model": [
+          "1",
+          "0",
+          "0",
+          "-1222583105876029916237789137035775062690200",
+          "523967447200209449943328506898413682821590945806099349816040000"
+        ],
+        "root_number": -1,
+        "status": "exact_local_pari_gp_replay"
+      },
+      "excluded_as_already_local": false,
+      "independence_status": "printed independent-point claim; membership replay only in this audit",
+      "local_artifact_isomorphism_matches": [],
+      "new_to_local_artifacts_at_audit_time": true,
+      "plausible_target_candidate_after_conductor_gate": false,
+      "printed_points_exactly_checked_on_curve": 25,
+      "rank_lower_bound_printed_by_source": 25,
+      "weierstrass_coefficients": [
+        "1",
+        "0",
+        "0",
+        "-1222583105876029916237789137035775062690200",
+        "523967447200209449943328506898413682821590945806099349816040000"
+      ]
+    },
+    {
+      "author_and_year": "Elkies (2006)",
+      "below_strict_log_conductor_target": false,
+      "conductor_evidence": {
+        "exact_local_conductor_replayed_here": false,
+        "margin_above_strict_target": "65.13992586658363498",
+        "reason_not_promoted": "the pinned page/table supplies no complete factorization; the source value is already more than 65 natural-log units above the target",
+        "source_reported_log_conductor": "247.85992586658363498",
+        "status": "dujella_machine_table_log_only"
+      },
+      "excluded_as_already_local": false,
+      "independence_status": "printed independent-point claim; membership replay only in this audit",
+      "local_artifact_isomorphism_matches": [],
+      "new_to_local_artifacts_at_audit_time": true,
+      "plausible_target_candidate_after_conductor_gate": false,
+      "printed_points_exactly_checked_on_curve": 26,
+      "rank_lower_bound_printed_by_source": 26,
+      "weierstrass_coefficients": [
+        "1",
+        "0",
+        "0",
+        "-271568164801421919805097494520335727505515190",
+        "1673523352045742769296938739782713519216640490554763586630258973092"
+      ]
+    },
+    {
+      "author_and_year": "Elkies (2016)",
+      "below_strict_log_conductor_target": false,
+      "conductor_evidence": {
+        "exact_local_conductor_replayed_here": false,
+        "margin_above_strict_target": "104.29285903012496589",
+        "reason_not_promoted": "the pinned page/table supplies no complete factorization; the source value is already more than 65 natural-log units above the target",
+        "source_reported_log_conductor": "287.01285903012496589",
+        "status": "dujella_machine_table_log_only"
+      },
+      "excluded_as_already_local": false,
+      "independence_status": "printed independent-point claim; membership replay only in this audit",
+      "local_artifact_isomorphism_matches": [],
+      "new_to_local_artifacts_at_audit_time": true,
+      "plausible_target_candidate_after_conductor_gate": false,
+      "printed_points_exactly_checked_on_curve": 27,
+      "rank_lower_bound_printed_by_source": 27,
+      "weierstrass_coefficients": [
+        "1",
+        "0",
+        "0",
+        "-55671146865244401916117773020296610079754015500970",
+        "161981895322788558220906653027519611838007321625214218991719656790551905956"
+      ]
+    },
+    {
+      "author_and_year": "Elkies (2006)",
+      "below_strict_log_conductor_target": false,
+      "conductor_evidence": {
+        "exact_local_conductor_replayed_here": false,
+        "margin_above_strict_target": "143.18449453640541386",
+        "reason_not_promoted": "the pinned page/table supplies no complete factorization; the source value is already more than 65 natural-log units above the target",
+        "source_reported_log_conductor": "325.90449453640541386",
+        "status": "dujella_machine_table_log_only"
+      },
+      "excluded_as_already_local": false,
+      "independence_status": "printed independent-point claim; membership replay only in this audit",
+      "local_artifact_isomorphism_matches": [],
+      "new_to_local_artifacts_at_audit_time": true,
+      "plausible_target_candidate_after_conductor_gate": false,
+      "printed_points_exactly_checked_on_curve": 28,
+      "rank_lower_bound_printed_by_source": 28,
+      "weierstrass_coefficients": [
+        "1",
+        "-1",
+        "1",
+        "-20067762415575526585033208209338542750930230312178956502",
+        "34481611795030556467032985690390720374855944359319180361266008296291939448732243429"
+      ]
+    },
+    {
+      "author_and_year": "Elkies - Klagsbrun (2024)",
+      "below_strict_log_conductor_target": false,
+      "conductor_evidence": {
+        "all_factor_bases_proved_prime_by_gp": true,
+        "below_strict_log_conductor_target": false,
+        "complete_discriminant_factorization": [
+          {
+            "exponent": 19,
+            "prime": "2"
+          },
+          {
+            "exponent": 7,
+            "prime": "3"
+          },
+          {
+            "exponent": 7,
+            "prime": "5"
+          },
+          {
+            "exponent": 4,
+            "prime": "7"
+          },
+          {
+            "exponent": 5,
+            "prime": "11"
+          },
+          {
+            "exponent": 3,
+            "prime": "13"
+          },
+          {
+            "exponent": 4,
+            "prime": "17"
+          },
+          {
+            "exponent": 3,
+            "prime": "31"
+          },
+          {
+            "exponent": 2,
+            "prime": "41"
+          },
+          {
+            "exponent": 2,
+            "prime": "43"
+          },
+          {
+            "exponent": 2,
+            "prime": "61"
+          },
+          {
+            "exponent": 1,
+            "prime": "233"
+          },
+          {
+            "exponent": 2,
+            "prime": "241"
+          },
+          {
+            "exponent": 1,
+            "prime": "4139"
+          },
+          {
+            "exponent": 1,
+            "prime": "678146849364709860535420504397393"
+          },
+          {
+            "exponent": 1,
+            "prime": "159788990966780131363155786084695062643236502969"
+          },
+          {
+            "exponent": 1,
+            "prime": "4402149008473369392540402625019227412319473055901"
+          }
+        ],
+        "conductor": "188691278153039213628440510802703336227022485808859170041743892297765880547867276243424847942033952274950770795963060482541371967126966027206485174370",
+        "factor_product_verified_before_gp": true,
+        "log_conductor": "343.720120900726395739215536960571296116733896546061252831156",
+        "margin_above_strict_target": "161.0001209007263957392155370",
+        "minimal_discriminant": "-58514056884179895803252795545068205623215359270190478217393508483140281138663769634024489915971980794469429246265449489823479442097938729025702174957426421151737866434992604323840000000",
+        "minimal_model": [
+          "1",
+          "0",
+          "0",
+          "-27006183241630922218434652145297453784768054621836357954737385",
+          "55258058551342376475736699591118191821521067032535079608372404779149413277716173425636721497"
+        ],
+        "root_number": -1,
+        "status": "exact_local_pari_gp_replay"
+      },
+      "excluded_as_already_local": true,
+      "independence_status": "exact finite-reduction certificate already local",
+      "local_artifact_isomorphism_matches": [
+        {
+          "coefficient_vector_paths_with_same_j_invariant": [
+            "general_weierstrass_coefficients",
+            "integral_short_weierstrass_coefficients"
+          ],
+          "path": "artifacts/generated-results/elliptic_elkies_klagsbrun_rank29_certificate.json",
+          "sha256": "ce4cf7d53f89e554ad0674ce77d0ad5f6924fefedefd715650801e062e5f3f2f"
+        }
+      ],
+      "new_to_local_artifacts_at_audit_time": false,
+      "plausible_target_candidate_after_conductor_gate": false,
+      "printed_points_exactly_checked_on_curve": 29,
+      "rank_lower_bound_printed_by_source": 29,
+      "weierstrass_coefficients": [
+        "1",
+        "0",
+        "0",
+        "-27006183241630922218434652145297453784768054621836357954737385",
+        "55258058551342376475736699591118191821521067032535079608372404779149413277716173425636721497"
+      ]
+    }
+  ],
+  "fermigier_adjacent_specialization_result": {
+    "E19_E20_E21_comparison_data_type": "eight Nagao-score values each; no model or parameter",
+    "archive_blocker": "the paper does not publish the screened parameter list or exact neighboring fibers, so there is no adjacent specialization dataset to replay",
+    "exact_new_adjacent_specializations_recovered": [],
+    "only_exact_rational_parameter_printed_in_primary_paper": "19754/39",
+    "repository_normalization_of_that_parameter": "39508/39"
+  },
+  "local_duplicate_policy": {
+    "method": "recursive scan of every length-5 numeric vector in local JSON artifacts, compared by exact j-invariant",
+    "ranks_already_local": [
+      21,
+      22,
+      29
+    ],
+    "ranks_new_to_local_artifacts_but_conductor_disqualified": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ]
+  },
+  "record_page_replays": {
+    "21": {
+      "author_and_year": "Nagao - Kouya (1994)",
+      "equation": "y^2 + xy + y = x^3 + x^2 - 215843772422443922015169952702159835x - 19474361277787151947255961435459054151501792241320535",
+      "exact_membership_checks_passed": 21,
+      "independence_reproved_from_this_page_alone": false,
+      "printed_point_count": 21,
+      "printed_point_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "rank_lower_bound_printed_by_source": 21,
+      "source_claim": "21 independent points of infinite order",
+      "weierstrass_coefficients": [
+        "1",
+        "1",
+        "1",
+        "-215843772422443922015169952702159835",
+        "-19474361277787151947255961435459054151501792241320535"
+      ]
+    },
+    "22": {
+      "author_and_year": "Fermigier (1997)",
+      "equation": "y^2 + xy + y = x^3 - 940299517776391362903023121165864x + 10707363070719743033425295515449274534651125011362",
+      "exact_membership_checks_passed": 22,
+      "independence_reproved_from_this_page_alone": false,
+      "printed_point_count": 22,
+      "printed_point_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "rank_lower_bound_printed_by_source": 22,
+      "source_claim": "22 independent points of infinite order",
+      "weierstrass_coefficients": [
+        "1",
+        "0",
+        "1",
+        "-940299517776391362903023121165864",
+        "10707363070719743033425295515449274534651125011362"
+      ]
+    },
+    "23": {
+      "author_and_year": "Martin - McMillen (1998)",
+      "equation": "y^2 + xy + y = x^3 - 19252966408674012828065964616418441723x + 32685500727716376257923347071452044295907443056345614006",
+      "exact_membership_checks_passed": 23,
+      "independence_reproved_from_this_page_alone": false,
+      "printed_point_count": 23,
+      "printed_point_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "rank_lower_bound_printed_by_source": 23,
+      "source_claim": "23 independent points of infinite order",
+      "weierstrass_coefficients": [
+        "1",
+        "0",
+        "1",
+        "-19252966408674012828065964616418441723",
+        "32685500727716376257923347071452044295907443056345614006"
+      ]
+    },
+    "24": {
+      "author_and_year": "Martin - McMillen (2000)",
+      "equation": "y^2 + xy + y = x^3 - 120039822036992245303534619191166796374x + 504224992484910670010801799168082726759443756222911415116",
+      "exact_membership_checks_passed": 24,
+      "independence_reproved_from_this_page_alone": false,
+      "printed_point_count": 24,
+      "printed_point_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "rank_lower_bound_printed_by_source": 24,
+      "source_claim": "24 independent points of infinite order",
+      "weierstrass_coefficients": [
+        "1",
+        "0",
+        "1",
+        "-120039822036992245303534619191166796374",
+        "504224992484910670010801799168082726759443756222911415116"
+      ]
+    },
+    "25": {
+      "author_and_year": "Elkies (2006)",
+      "equation": "y^2 + xy = x^3 - 1222583105876029916237789137035775062690200x + 523967447200209449943328506898413682821590945806099349816040000",
+      "exact_membership_checks_passed": 25,
+      "independence_reproved_from_this_page_alone": false,
+      "printed_point_count": 25,
+      "printed_point_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "rank_lower_bound_printed_by_source": 25,
+      "source_claim": "25 independent points of infinite order",
+      "weierstrass_coefficients": [
+        "1",
+        "0",
+        "0",
+        "-1222583105876029916237789137035775062690200",
+        "523967447200209449943328506898413682821590945806099349816040000"
+      ]
+    },
+    "26": {
+      "author_and_year": "Elkies (2006)",
+      "equation": "y^2 + xy = x^3 - 271568164801421919805097494520335727505515190x + 1673523352045742769296938739782713519216640490554763586630258973092",
+      "exact_membership_checks_passed": 26,
+      "independence_reproved_from_this_page_alone": false,
+      "printed_point_count": 26,
+      "printed_point_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "rank_lower_bound_printed_by_source": 26,
+      "source_claim": "26 independent points of infinite order",
+      "weierstrass_coefficients": [
+        "1",
+        "0",
+        "0",
+        "-271568164801421919805097494520335727505515190",
+        "1673523352045742769296938739782713519216640490554763586630258973092"
+      ]
+    },
+    "27": {
+      "author_and_year": "Elkies (2016)",
+      "equation": "y^2 + xy = x^3 - 55671146865244401916117773020296610079754015500970x + 161981895322788558220906653027519611838007321625214218991719656790551905956",
+      "exact_membership_checks_passed": 27,
+      "independence_reproved_from_this_page_alone": false,
+      "printed_point_count": 27,
+      "printed_point_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "rank_lower_bound_printed_by_source": 27,
+      "source_claim": "27 independent points of infinite order",
+      "weierstrass_coefficients": [
+        "1",
+        "0",
+        "0",
+        "-55671146865244401916117773020296610079754015500970",
+        "161981895322788558220906653027519611838007321625214218991719656790551905956"
+      ]
+    },
+    "28": {
+      "author_and_year": "Elkies (2006)",
+      "equation": "y^2 + xy + y = x^3 - x^2 - 20067762415575526585033208209338542750930230312178956502x + 34481611795030556467032985690390720374855944359319180361266008296291939448732243429",
+      "exact_membership_checks_passed": 28,
+      "independence_reproved_from_this_page_alone": false,
+      "printed_point_count": 28,
+      "printed_point_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "rank_lower_bound_printed_by_source": 28,
+      "source_claim": "28 independent points of infinite order",
+      "weierstrass_coefficients": [
+        "1",
+        "-1",
+        "1",
+        "-20067762415575526585033208209338542750930230312178956502",
+        "34481611795030556467032985690390720374855944359319180361266008296291939448732243429"
+      ]
+    },
+    "29": {
+      "author_and_year": "Elkies - Klagsbrun (2024)",
+      "equation": "y^2 + xy = x^3 - 27006183241630922218434652145297453784768054621836357954737385x + 55258058551342376475736699591118191821521067032535079608372404779149413277716173425636721497",
+      "exact_membership_checks_passed": 29,
+      "independence_reproved_from_this_page_alone": false,
+      "printed_point_count": 29,
+      "printed_point_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "rank_lower_bound_printed_by_source": 29,
+      "source_claim": "29 independent points of infinite order",
+      "weierstrass_coefficients": [
+        "1",
+        "0",
+        "0",
+        "-27006183241630922218434652145297453784768054621836357954737385",
+        "55258058551342376475736699591118191821521067032535079608372404779149413277716173425636721497"
+      ]
+    }
+  },
+  "reproduction": {
+    "all_source_hashes_verified_before_write": true,
+    "command": ".venv/bin/python elliptic-curves/cas/audit_rank21_conductor_public_data.py --source-dir /private/tmp/rank21-public-source-audit --artifact-dir artifacts/generated-results --output artifacts/generated-results/elliptic_rank21_conductor_public_data_audit.json",
+    "script_sha256": "43a917e8fe68ec57bf7dabae002e20da9dc752ab91d943a5464a50770ef7b3a6",
+    "source_mode": "offline pinned files supported; network refresh hash-guarded"
+  },
+  "schema_version": 1,
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "pypdf": "6.15.0",
+    "python": "3.14.6"
+  },
+  "source_inventories": {
+    "dujella_coefficients": {
+      "authority": "Andrej Dujella's downloadable machine table",
+      "bytes": 117946,
+      "matches_pinned_revision": true,
+      "role": "machine-readable Weierstrass models by torsion group",
+      "sha256": "170a2168984f7cd5cf38598d78b7dda100e8ffbb6115d786b5b98bc29e04ced3",
+      "url": "https://web.math.pmf.unizg.hr/~duje/tors/coeff.txt"
+    },
+    "dujella_conductors": {
+      "authority": "Andrej Dujella's downloadable machine table",
+      "bytes": 27285,
+      "matches_pinned_revision": true,
+      "role": "source-reported natural logarithms of conductors",
+      "sha256": "0d3c0f501a014943b3e6c958cbde9250833879ace4448dde31cc6478d5c97e08",
+      "url": "https://web.math.pmf.unizg.hr/~duje/tors/conductor.txt"
+    },
+    "dujella_rank21": {
+      "authority": "Andrej Dujella's author-maintained rank-record catalogue",
+      "bytes": 2797,
+      "matches_pinned_revision": true,
+      "role": "printed rank-21 model and 21 claimed independent points",
+      "sha256": "ec81b94ad1b2a36295c9c2eec312b746477549cb4972100645880d877b3ddd56",
+      "url": "https://web.math.pmf.unizg.hr/~duje/tors/rk21.html"
+    },
+    "dujella_rank22": {
+      "authority": "Andrej Dujella's author-maintained rank-record catalogue",
+      "bytes": 2556,
+      "matches_pinned_revision": true,
+      "role": "printed rank-22 model and 22 claimed independent points",
+      "sha256": "711624e3c11a7e6a9413cd25872697fb51d3ca6060380beab045380cb5bb4c4c",
+      "url": "https://web.math.pmf.unizg.hr/~duje/tors/rk22.html"
+    },
+    "dujella_rank23": {
+      "authority": "Andrej Dujella's author-maintained rank-record catalogue",
+      "bytes": 3349,
+      "matches_pinned_revision": true,
+      "role": "printed rank-23 model and 23 claimed independent points",
+      "sha256": "c9aaa9d28391f8c15aeebbf44f86206bfe560bf09a380a4bfb5b9fefd3c5ed46",
+      "url": "https://web.math.pmf.unizg.hr/~duje/tors/rk23.html"
+    },
+    "dujella_rank24": {
+      "authority": "Andrej Dujella's author-maintained rank-record catalogue",
+      "bytes": 3038,
+      "matches_pinned_revision": true,
+      "role": "printed rank-24 model and 24 claimed independent points",
+      "sha256": "2407b9d77ccc3cdfe7c964fbc255aaff8b135ca953aec2c6d3afd72201e434cc",
+      "url": "https://web.math.pmf.unizg.hr/~duje/tors/rk24.html"
+    },
+    "dujella_rank25": {
+      "authority": "Andrej Dujella's author-maintained rank-record catalogue",
+      "bytes": 2402,
+      "matches_pinned_revision": true,
+      "role": "printed rank-25 model and 25 claimed independent points",
+      "sha256": "3c24b0da3dbb0a96aee924932d8ff00c19e0fa09424009df7e2e8b88d5a4105c",
+      "url": "https://web.math.pmf.unizg.hr/~duje/tors/rk25.html"
+    },
+    "dujella_rank26": {
+      "authority": "Andrej Dujella's author-maintained rank-record catalogue",
+      "bytes": 2560,
+      "matches_pinned_revision": true,
+      "role": "printed rank-26 model and 26 claimed independent points",
+      "sha256": "5f2d8c4c58b8db74142fbd29391c59a5370ccc9bc05768fd5402babef8404c77",
+      "url": "https://web.math.pmf.unizg.hr/~duje/tors/rk26.html"
+    },
+    "dujella_rank27": {
+      "authority": "Andrej Dujella's author-maintained rank-record catalogue",
+      "bytes": 2956,
+      "matches_pinned_revision": true,
+      "role": "printed rank-27 model and 27 claimed independent points",
+      "sha256": "a6045f181da0489fa1d02f08b1f000971fb4eb85d74a52f94912ca715a4560bb",
+      "url": "https://web.math.pmf.unizg.hr/~duje/tors/rk27.html"
+    },
+    "dujella_rank28": {
+      "authority": "Andrej Dujella's author-maintained rank-record catalogue",
+      "bytes": 3254,
+      "matches_pinned_revision": true,
+      "role": "printed rank-28 model and 28 claimed independent points",
+      "sha256": "9b8e9aa08b93f8da5054d371ddb7b230f60016e75635a618baacc99b6e8e6137",
+      "url": "https://web.math.pmf.unizg.hr/~duje/tors/rk28.html"
+    },
+    "dujella_rank29": {
+      "authority": "Andrej Dujella's author-maintained rank-record catalogue",
+      "bytes": 3657,
+      "matches_pinned_revision": true,
+      "role": "printed rank-29 model and 29 claimed independent points",
+      "sha256": "94b673dd0655dfa2d8eae9247488c5475ae904c3a230f382d39e4116b76956aa",
+      "url": "https://web.math.pmf.unizg.hr/~duje/tors/rk29.html"
+    },
+    "dujella_rank_history": {
+      "authority": "Andrej Dujella's author-maintained rank-record catalogue",
+      "bytes": 11200,
+      "matches_pinned_revision": true,
+      "role": "historical E/Q rank-record index and primary references",
+      "sha256": "7cc15035e97d6c9d7c46f2031b1fa338017b3895351002fbe174b3d7715e4835",
+      "url": "https://web.math.pmf.unizg.hr/~duje/tors/rankhist.html"
+    },
+    "dujella_torsion_frontier": {
+      "authority": "Andrej Dujella's author-maintained high-rank catalogue",
+      "bytes": 19544,
+      "matches_pinned_revision": true,
+      "role": "current rank lower bounds for every Mazur torsion group",
+      "sha256": "186d212466787027a130cde6f259bb6bf850cedf9561d9759f38f8304ae354d8",
+      "url": "https://web.math.pmf.unizg.hr/~duje/tors/tors.html"
+    },
+    "elkies_small_conductor_table": {
+      "authority": "Noam Elkies's Harvard author site",
+      "bytes": 8482,
+      "matches_pinned_revision": true,
+      "role": "author-hosted best-conductor table, whose displayed scope ends at rank 11",
+      "sha256": "cbc48c2d7bc10edbe8a7c604806c022a5d49fadd589d90a72d750098caa9f919",
+      "url": "https://people.math.harvard.edu/~elkies/womack2001.html"
+    },
+    "elkies_watkins_paper": {
+      "authority": "Mark Watkins's University of Sydney author directory",
+      "bytes": 255186,
+      "matches_pinned_revision": true,
+      "role": "primary small-conductor paper and model/conductor tables for ranks 5 through 11",
+      "sha256": "e55dec449c92ac1b952d4c7c6ea8c585ecec2c34249d2c19be93e3b1149374dc",
+      "url": "https://magma.maths.usyd.edu.au/users/watkins/papers/antsVI.pdf"
+    },
+    "fermigier_1997": {
+      "authority": "Acta Arithmetica official archive",
+      "bytes": 127225,
+      "matches_pinned_revision": true,
+      "role": "primary rank-22 construction, specialization, model, and points",
+      "sha256": "9e0455228382c74b0e558b80b28346d5440531eb797b2539d3d379f1c86d77e4",
+      "url": "https://matwbn.icm.edu.pl/ksiazki/aa/aa82/aa8243.pdf"
+    },
+    "lmfdb_stats": {
+      "authority": "official LMFDB statistics page",
+      "bytes": 27467,
+      "matches_pinned_revision": true,
+      "role": "current E/Q database size, conductor ceiling, and rank distribution",
+      "sha256": "2eb81a54a5539c0723bb81e34d8aaae5e6067eaf83ed78b32bea4e8075976880",
+      "url": "https://www.lmfdb.org/EllipticCurve/Q/stats"
+    }
+  },
+  "source_results": {
+    "dujella_machine_tables": {
+      "coefficient_sections": {
+        "Z1": 6,
+        "Z10": 163,
+        "Z12": 95,
+        "Z2": 68,
+        "Z2*Z2": 96,
+        "Z2*Z4": 106,
+        "Z2*Z6": 112,
+        "Z2*Z8": 34,
+        "Z3": 73,
+        "Z4": 51,
+        "Z5": 34,
+        "Z6": 165,
+        "Z7": 32,
+        "Z8": 68,
+        "Z9": 76
+      },
+      "coefficient_vector_count": 1179,
+      "conductor_log_count": 1180,
+      "conductor_sections": {
+        "Z1": 6,
+        "Z10": 163,
+        "Z12": 95,
+        "Z2": 68,
+        "Z2*Z2": 96,
+        "Z2*Z4": 106,
+        "Z2*Z6": 112,
+        "Z2*Z8": 34,
+        "Z3": 73,
+        "Z4": 51,
+        "Z5": 34,
+        "Z6": 166,
+        "Z7": 32,
+        "Z8": 68,
+        "Z9": 76
+      },
+      "known_z6_row_count_mismatch_in_pinned_download": true,
+      "z1_current_and_predecessor_records": [
+        {
+          "margin_above_strict_target": "161.00012090072639574",
+          "rank": 29,
+          "source_reported_log_conductor": "343.72012090072639574",
+          "weierstrass_coefficients": [
+            "1",
+            "0",
+            "0",
+            "-27006183241630922218434652145297453784768054621836357954737385",
+            "55258058551342376475736699591118191821521067032535079608372404779149413277716173425636721497"
+          ]
+        },
+        {
+          "margin_above_strict_target": "143.18449453640541386",
+          "rank": 28,
+          "source_reported_log_conductor": "325.90449453640541386",
+          "weierstrass_coefficients": [
+            "1",
+            "-1",
+            "1",
+            "-20067762415575526585033208209338542750930230312178956502",
+            "34481611795030556467032985690390720374855944359319180361266008296291939448732243429"
+          ]
+        },
+        {
+          "margin_above_strict_target": "104.29285903012496589",
+          "rank": 27,
+          "source_reported_log_conductor": "287.01285903012496589",
+          "weierstrass_coefficients": [
+            "1",
+            "0",
+            "0",
+            "-55671146865244401916117773020296610079754015500970",
+            "161981895322788558220906653027519611838007321625214218991719656790551905956"
+          ]
+        },
+        {
+          "margin_above_strict_target": "65.13992586658363498",
+          "rank": 26,
+          "source_reported_log_conductor": "247.85992586658363498",
+          "weierstrass_coefficients": [
+            "1",
+            "0",
+            "0",
+            "-271568164801421919805097494520335727505515190",
+            "1673523352045742769296938739782713519216640490554763586630258973092"
+          ]
+        },
+        {
+          "margin_above_strict_target": "46.46603983565067331",
+          "rank": 25,
+          "source_reported_log_conductor": "229.18603983565067331",
+          "weierstrass_coefficients": [
+            "1",
+            "0",
+            "0",
+            "-1222583105876029916237789137035775062690200",
+            "523967447200209449943328506898413682821590945806099349816040000"
+          ]
+        },
+        {
+          "margin_above_strict_target": "37.20658636982627985",
+          "rank": 24,
+          "source_reported_log_conductor": "219.92658636982627985",
+          "weierstrass_coefficients": [
+            "1",
+            "0",
+            "1",
+            "-120039822036992245303534619191166796374",
+            "504224992484910670010801799168082726759443756222911415116"
+          ]
+        }
+      ]
+    },
+    "dujella_rank_history": {
+      "current_record_rank29_marker": true,
+      "highest_linked_record_rank": 29,
+      "linked_record_ranks": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        12,
+        14,
+        15,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        28,
+        29
+      ],
+      "rank30_page_linked": false
+    },
+    "dujella_torsion_frontier": {
+      "any_nontrivial_torsion_frontier_at_least_21": false,
+      "largest_nontrivial_torsion_frontier": 20,
+      "nontrivial_torsion_page_attaining_that_frontier": [
+        "z2"
+      ],
+      "rank_lower_bounds_by_page": {
+        "z1": 29,
+        "z10": 4,
+        "z12": 4,
+        "z2": 20,
+        "z2z2": 15,
+        "z2z4": 9,
+        "z2z6": 6,
+        "z2z8": 3,
+        "z3": 15,
+        "z4": 13,
+        "z5": 9,
+        "z6": 9,
+        "z7": 6,
+        "z8": 6,
+        "z9": 4
+      },
+      "trivial_torsion_frontier": 29
+    },
+    "elkies_author_small_conductor_table": {
+      "displayed_rank_range": [
+        0,
+        11
+      ],
+      "highest_displayed_rank": 11,
+      "rank11_row": {
+        "conductor": "1803406168183626767102437",
+        "log_conductor": "55.852",
+        "model": "[0 0 1 -56874727 151924164456]",
+        "rank": 11,
+        "source": "Mestre (1986)"
+      },
+      "rank21_in_scope": false,
+      "row_count": 12
+    },
+    "lmfdb": {
+      "curve_count": 3824372,
+      "isogeny_class_count": 2917287,
+      "largest_conductor_in_database": 299996953,
+      "largest_rank_displayed": 5,
+      "rank_at_least_21_entry_present": false,
+      "rank_counts": {
+        "0": 1404510,
+        "1": 1887132,
+        "2": 493291,
+        "3": 37334,
+        "4": 2086,
+        "5": 19
+      },
+      "scope_note": "absence here is database-bounded, not a global nonexistence theorem"
+    },
+    "primary_pdfs": {
+      "elkies_watkins": {
+        "abstract_search_rank_range": [
+          5,
+          11
+        ],
+        "page_count": 16,
+        "rank21_in_scope": false,
+        "table2_title": "Low conductor records for ranks 5-11"
+      },
+      "fermigier": {
+        "adjacent_E19_E20_E21_exact_models_or_parameters_printed": false,
+        "adjacent_rows_are_score_only": true,
+        "comparison_score_rows": {
+          "E19": [
+            "27.85",
+            "42.84",
+            "61.69",
+            "76.47",
+            "99.73",
+            "113.65",
+            "131.22",
+            "155.42"
+          ],
+          "E20": [
+            "26.26",
+            "42.78",
+            "57.03",
+            "76.47",
+            "100.06",
+            "111.81",
+            "128.12",
+            "148.81"
+          ],
+          "E21": [
+            "28.01",
+            "43.74",
+            "60.95",
+            "74.75",
+            "99.98",
+            "113.77",
+            "126.56",
+            "154.71"
+          ],
+          "E22": [
+            "29.49",
+            "44.12",
+            "57.54",
+            "81.51",
+            "105.17",
+            "122.76",
+            "143.84",
+            "166.47"
+          ]
+        },
+        "only_printed_specialization_is_record_fiber": true,
+        "page_count": 5,
+        "printed_rank22_model_coefficients_a4_a6": [
+          "-940299517776391362903023121165864",
+          "10707363070719743033425295515449274534651125011362"
+        ],
+        "rational_t_specializations_printed": [
+          "19754/39"
+        ],
+        "record_specialization_normalized_repository_parameter": "39508/39"
+      }
+    }
+  },
+  "status": "no_new_public_rank21_subtarget_conductor_curve_recovered",
+  "strict_target": {
+    "natural_log_conductor_strictly_less_than": "182.72",
+    "rank_at_least": 21
+  }
+}

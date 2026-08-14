@@ -1,0 +1,5034 @@
+{
+  "schema_version": 1,
+  "status": "bounded_auxiliary_group_orbit_complete",
+  "goal": "find E/Q with rank>=21 and log conductor<182.72, or rank>=30",
+  "target_hit": false,
+  "rank21_subthreshold_parameters_requiring_rank_triage": [],
+  "source": {
+    "primary_source": "https://da.lib.kobe-u.ac.jp/da/kernel/E0003610/E0003610.pdf",
+    "root_tuple": [
+      0,
+      4,
+      47,
+      352,
+      380,
+      399
+    ],
+    "constructor_parameter": "14721/188",
+    "published_parameter": "14721/376",
+    "published_point_count": 21,
+    "model_change_short_to_published_u_r_s_t": [
+      "3/8836",
+      "15/312299584",
+      "3/17672",
+      "27/1379739562112"
+    ],
+    "all_published_points_exactly_round_tripped": true
+  },
+  "published_point_reconstruction": {
+    "selected_base_index_one_based": 1,
+    "selected_sign": 1,
+    "exact_oriented_generic_matches": 6,
+    "generic_abscissa_matches": 10,
+    "accidental_preimage_count": 11,
+    "all_convention_trials": [
+      {
+        "base_index_one_based": 1,
+        "sign": 1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 6,
+        "generic_abscissa_matches": 10
+      },
+      {
+        "base_index_one_based": 1,
+        "sign": -1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 0,
+        "generic_abscissa_matches": 0
+      },
+      {
+        "base_index_one_based": 2,
+        "sign": 1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 0,
+        "generic_abscissa_matches": 0
+      },
+      {
+        "base_index_one_based": 2,
+        "sign": -1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 1,
+        "generic_abscissa_matches": 1
+      },
+      {
+        "base_index_one_based": 3,
+        "sign": 1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 0,
+        "generic_abscissa_matches": 1
+      },
+      {
+        "base_index_one_based": 3,
+        "sign": -1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 0,
+        "generic_abscissa_matches": 0
+      },
+      {
+        "base_index_one_based": 4,
+        "sign": 1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 0,
+        "generic_abscissa_matches": 0
+      },
+      {
+        "base_index_one_based": 4,
+        "sign": -1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 1,
+        "generic_abscissa_matches": 1
+      },
+      {
+        "base_index_one_based": 5,
+        "sign": 1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 0,
+        "generic_abscissa_matches": 1
+      },
+      {
+        "base_index_one_based": 5,
+        "sign": -1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 0,
+        "generic_abscissa_matches": 0
+      },
+      {
+        "base_index_one_based": 6,
+        "sign": 1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 0,
+        "generic_abscissa_matches": 0
+      },
+      {
+        "base_index_one_based": 6,
+        "sign": -1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 1,
+        "generic_abscissa_matches": 1
+      },
+      {
+        "base_index_one_based": 7,
+        "sign": 1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 0,
+        "generic_abscissa_matches": 0
+      },
+      {
+        "base_index_one_based": 7,
+        "sign": -1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 1,
+        "generic_abscissa_matches": 1
+      },
+      {
+        "base_index_one_based": 8,
+        "sign": 1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 0,
+        "generic_abscissa_matches": 1
+      },
+      {
+        "base_index_one_based": 8,
+        "sign": -1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 0,
+        "generic_abscissa_matches": 0
+      },
+      {
+        "base_index_one_based": 9,
+        "sign": 1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 0,
+        "generic_abscissa_matches": 0
+      },
+      {
+        "base_index_one_based": 9,
+        "sign": -1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 1,
+        "generic_abscissa_matches": 1
+      },
+      {
+        "base_index_one_based": 10,
+        "sign": 1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 0,
+        "generic_abscissa_matches": 1
+      },
+      {
+        "base_index_one_based": 10,
+        "sign": -1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 0,
+        "generic_abscissa_matches": 0
+      },
+      {
+        "base_index_one_based": 11,
+        "sign": 1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 0,
+        "generic_abscissa_matches": 0
+      },
+      {
+        "base_index_one_based": 11,
+        "sign": -1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 1,
+        "generic_abscissa_matches": 1
+      },
+      {
+        "base_index_one_based": 12,
+        "sign": 1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 0,
+        "generic_abscissa_matches": 0
+      },
+      {
+        "base_index_one_based": 12,
+        "sign": -1,
+        "status": "completed",
+        "exact_oriented_generic_matches": 0,
+        "generic_abscissa_matches": 0
+      }
+    ],
+    "accidental_preimages": [
+      {
+        "index_zero_based": 0,
+        "x": "167932/611",
+        "y": "2082072791669835/1122949568"
+      },
+      {
+        "index_zero_based": 1,
+        "x": "2092191271035190499270205560191178106149403079/4333089509731453750099066747181691611380348",
+        "y": "533296772953812337619473354223970645382921550049621817099908842943910106435820131591369437697/441228120434602100247102847977024649898207170018004308648952823314814635967349134125944"
+      },
+      {
+        "index_zero_based": 2,
+        "x": "6382713/17672",
+        "y": "604694566571019127/58712321792"
+      },
+      {
+        "index_zero_based": 3,
+        "x": "5794713/13724",
+        "y": "50034401324429795/4426182136"
+      },
+      {
+        "index_zero_based": 4,
+        "x": "2575213/25004",
+        "y": "73233022398688815/14692200376"
+      },
+      {
+        "index_zero_based": 5,
+        "x": "8737649/26132",
+        "y": "1483060942564315/170720356"
+      },
+      {
+        "index_zero_based": 6,
+        "x": "11839545/29516",
+        "y": "58715975227889921/5118266254"
+      },
+      {
+        "index_zero_based": 7,
+        "x": "435641/16826",
+        "y": "47442608634088577/4529828416"
+      },
+      {
+        "index_zero_based": 8,
+        "x": "2265669/33652",
+        "y": "219148653664079965/26612741944"
+      },
+      {
+        "index_zero_based": 9,
+        "x": "15275827/122764",
+        "y": "415763944187769163/354168492856"
+      },
+      {
+        "index_zero_based": 10,
+        "x": "3009723/48739",
+        "y": "1311073768052939765/152031367744"
+      }
+    ],
+    "accidental_preimage_sha256": "f5a019f38f3f8bfc99be4ff80356025bee4c2df58ea7a784746c0475cd89135b"
+  },
+  "slice_search": {
+    "height_bound": 200000,
+    "timeout_seconds_per_slice": 20.0,
+    "slice_count": 22,
+    "completed_slice_count": 22,
+    "run_records": [
+      {
+        "slice_id": "a01_sm01",
+        "accidental_index_zero_based": 0,
+        "source_x": "167932/611",
+        "slope": -1,
+        "intercept": "863101/2444",
+        "normalized_coefficients_ascending": [
+          17639349723327103413496726,
+          1014845160559233258894912,
+          -8048342805147255997663,
+          -650300301015033540144,
+          7397058740607674944
+        ],
+        "status": "completed",
+        "wall_seconds": 0.44044299999950454,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 424,
+        "signed_point_count": 10,
+        "distinct_abscissa_count": 5,
+        "exact_forced_nonvisible_signless_incidence_count": 1
+      },
+      {
+        "slice_id": "a01_sp01",
+        "accidental_index_zero_based": 0,
+        "source_x": "167932/611",
+        "slope": 1,
+        "intercept": "480355/2444",
+        "normalized_coefficients_ascending": [
+          2086851029000791850537048694,
+          -1436452452587459956451712,
+          -1206580334598893733348087,
+          72302736530186779344,
+          146608239326694889536
+        ],
+        "status": "completed",
+        "wall_seconds": 0.44477520800137427,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 428,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a02_sm01",
+        "accidental_index_zero_based": 1,
+        "source_x": "2092191271035190499270205560191178106149403079/4333089509731453750099066747181691611380348",
+        "slope": -1,
+        "intercept": "607871502164059234731392296411174423094704630/1083272377432863437524766686795422902845087",
+        "normalized_coefficients_ascending": [
+          690433671229877570289517181877625772497818257411879770846793312016026473492279580567821913922090903882214675101677583134266198351555670976320691837400242084218595000381535362579606964,
+          -9945936869031528257073624184915851217804063593692946020532681740419322138628726748003339977781131182741473044260848437726052769095624902793120586299178637909430173131669980476142908,
+          -267130303341925684384717748413647585608364356822298770118347811138231070213171942883455679262771953249988651691307806726209447472801306105435551998815726660741091381296040296489127,
+          4472063225984570777185732132929658057450581303298451681532814732045068292503290126332786552838910528915645092163881783575266125703981883883342031050187829833833513193229028944356,
+          -11140464430553148779792480672064300273599803527990982143865888690755585713390333167632611048509637668216822273032625957202160482006552544927166737003348816128383839306614199164
+        ],
+        "status": "completed",
+        "wall_seconds": 0.9639683330024127,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 943,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a02_sp01",
+        "accidental_index_zero_based": 1,
+        "source_x": "2092191271035190499270205560191178106149403079/4333089509731453750099066747181691611380348",
+        "slope": 1,
+        "intercept": "876448266707072029807420967368829259959993819/2166544754865726875049533373590845805690174",
+        "normalized_coefficients_ascending": [
+          154789827822926130442130655115256885320837695239688924878752263289108019505979308624317831990469838273814242999727041106458195326851890923474183364167572381757516719907080763893689678,
+          9929372457416256396083118613716679370928989481126116090033534932620402793198948328374670377892902957870265384790929921515291197212624558413592502861776507413256052202441249221270408,
+          74866429659657652505007404004587853796465948137403236690283106070643029596277726587580890460239866383442350228386261759110748726311141020860608926723880241145281226997700339610505,
+          -3083798469048156113696944624712910188687783529252240181181177233925392115634213176726210357085838151501792017813036683543874358541431031974897556042276747317870052748865915605224,
+          3229640529266146577493312695503902442324574473159156197024951777796568809099139741547196044332968992100204960003615673688700499169823510760228624508978219640895797946468668432
+        ],
+        "status": "completed",
+        "wall_seconds": 0.35061824999866076,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 333,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a03_sm01",
+        "accidental_index_zero_based": 2,
+        "source_x": "6382713/17672",
+        "slope": -1,
+        "intercept": "7766487/17672",
+        "normalized_coefficients_ascending": [
+          3558820648893146267465818040638,
+          -125755112384130816853612210368,
+          -442011074581868994088731095,
+          50219687997005389504851744,
+          -126799082766863524706048
+        ],
+        "status": "completed",
+        "wall_seconds": 0.32928295800229535,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 312,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a03_sp01",
+        "accidental_index_zero_based": 2,
+        "source_x": "6382713/17672",
+        "slope": 1,
+        "intercept": "4998939/17672",
+        "normalized_coefficients_ascending": [
+          3300461862413928637973911712734,
+          -44934687904192275039881110080,
+          -2055973398480421598239718663,
+          22058693556344963866589280,
+          334604932641645715919104
+        ],
+        "status": "completed",
+        "wall_seconds": 0.5596180420106975,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 532,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a04_sm01",
+        "accidental_index_zero_based": 3,
+        "source_x": "5794713/13724",
+        "slope": -1,
+        "intercept": "3434673/6862",
+        "normalized_coefficients_ascending": [
+          399447399593122231167834388294,
+          -8013967139315343403883049672,
+          -130908566807669345935321847,
+          3495171501072331450146264,
+          -9682717013765292430064
+        ],
+        "status": "completed",
+        "wall_seconds": 0.5113516249984968,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 493,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a04_sp01",
+        "accidental_index_zero_based": 3,
+        "source_x": "5794713/13724",
+        "slope": 1,
+        "intercept": "1180020/3431",
+        "normalized_coefficients_ascending": [
+          990471661031182507290476944,
+          -45253231025214807868628712,
+          -586529933351283572453087,
+          26653676573541829577844,
+          294204319593442216036
+        ],
+        "status": "completed",
+        "wall_seconds": 1.417916916005197,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 1375,
+        "signed_point_count": 8,
+        "distinct_abscissa_count": 4,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a05_sm01",
+        "accidental_index_zero_based": 4,
+        "source_x": "2575213/25004",
+        "slope": -1,
+        "intercept": "2266553/12502",
+        "normalized_coefficients_ascending": [
+          158345996541789232644082755526,
+          -164457435084543441055330248,
+          -90834398479855904667211903,
+          128939148967529563277496,
+          11092418429036883295504
+        ],
+        "status": "completed",
+        "wall_seconds": 0.6827270419889828,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 664,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a05_sp01",
+        "accidental_index_zero_based": 4,
+        "source_x": "2575213/25004",
+        "slope": 1,
+        "intercept": "154330/6251",
+        "normalized_coefficients_ascending": [
+          4539761240801050645054280244,
+          369754899431745157324437828,
+          -1474808113420971147049527,
+          -136615765977432620831316,
+          2103396128137292693796
+        ],
+        "status": "completed",
+        "wall_seconds": 1.3275622090004617,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 1305,
+        "signed_point_count": 8,
+        "distinct_abscissa_count": 4,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a06_sm01",
+        "accidental_index_zero_based": 5,
+        "source_x": "8737649/26132",
+        "slope": -1,
+        "intercept": "57361/139",
+        "normalized_coefficients_ascending": [
+          4239687950187868058329,
+          -230514202948783942032,
+          984650398674293128,
+          79837193272671744,
+          -63470653224944
+        ],
+        "status": "completed",
+        "wall_seconds": 1.2995005830016453,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 1276,
+        "signed_point_count": 22,
+        "distinct_abscissa_count": 11,
+        "exact_forced_nonvisible_signless_incidence_count": 4
+      },
+      {
+        "slice_id": "a06_sp01",
+        "accidental_index_zero_based": 5,
+        "source_x": "8737649/26132",
+        "slope": 1,
+        "intercept": "3345715/13066",
+        "normalized_coefficients_ascending": [
+          1319028211948416108188523104614,
+          -11078554230627384369240036792,
+          -797593567069884773631116327,
+          5181191803599579142709544,
+          110410246862563927249936
+        ],
+        "status": "completed",
+        "wall_seconds": 0.5224558750051074,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 503,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a07_sm01",
+        "accidental_index_zero_based": 6,
+        "source_x": "11839545/29516",
+        "slope": -1,
+        "intercept": "7075371/14758",
+        "normalized_coefficients_ascending": [
+          5409817862578217404066630423294,
+          -126890970726432046750902478920,
+          -1557935858050065379709866583,
+          54320801707107001145379720,
+          -153178763474989773543536
+        ],
+        "status": "completed",
+        "wall_seconds": 0.41526858300494496,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 397,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a07_sp01",
+        "accidental_index_zero_based": 6,
+        "source_x": "11839545/29516",
+        "slope": 1,
+        "intercept": "2382087/7379",
+        "normalized_coefficients_ascending": [
+          45354568278072316133838293173,
+          -1285365505778494452502657068,
+          -29395081676445471441886880,
+          687406889351364300353424,
+          7864828669468979016832
+        ],
+        "status": "completed",
+        "wall_seconds": 0.7508074159995886,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 732,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a08_sm01",
+        "accidental_index_zero_based": 7,
+        "source_x": "435641/16826",
+        "slope": -1,
+        "intercept": "74603/716",
+        "normalized_coefficients_ascending": [
+          9601568207244990906929398,
+          -118718527513631110837632,
+          -5354764297000856994455,
+          59537618473329691056,
+          871707256015838272
+        ],
+        "status": "completed",
+        "wall_seconds": 0.397646541998256,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 381,
+        "signed_point_count": 12,
+        "distinct_abscissa_count": 6,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a08_sp01",
+        "accidental_index_zero_based": 7,
+        "source_x": "435641/16826",
+        "slope": 1,
+        "intercept": "-1763777/33652",
+        "normalized_coefficients_ascending": [
+          34370086020394222547704349386054,
+          -1397581645735197523943953695168,
+          -13883725500372072401749923047,
+          788725211698533253264828656,
+          -2069646886546820446084544
+        ],
+        "status": "completed",
+        "wall_seconds": 0.3599626250070287,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 342,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a09_sm01",
+        "accidental_index_zero_based": 8,
+        "source_x": "2265669/33652",
+        "slope": -1,
+        "intercept": "1225182/8413",
+        "normalized_coefficients_ascending": [
+          261201709661645331429287644564,
+          -1404762954665460394326069972,
+          -147663701773635786070090967,
+          761749176175879331144244,
+          19369158721809648310756
+        ],
+        "status": "completed",
+        "wall_seconds": 1.3717027500097174,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 1345,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a09_sp01",
+        "accidental_index_zero_based": 8,
+        "source_x": "2265669/33652",
+        "slope": 1,
+        "intercept": "-184695/16826",
+        "normalized_coefficients_ascending": [
+          120099332168884726673312084494,
+          -16318082690109329589898129272,
+          65069390066087519030862073,
+          12086653059871508517754584,
+          10402771862784121658896
+        ],
+        "status": "completed",
+        "wall_seconds": 0.4091993339970941,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 392,
+        "signed_point_count": 4,
+        "distinct_abscissa_count": 2,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a10_sm01",
+        "accidental_index_zero_based": 9,
+        "source_x": "15275827/122764",
+        "slope": -1,
+        "intercept": "6222160/30691",
+        "normalized_coefficients_ascending": [
+          51562558006364956886727030145024,
+          71814750582666396232737892992,
+          -29918424066784173356269892687,
+          -19751589315399489120586884,
+          3643172630914473851836996
+        ],
+        "status": "completed",
+        "wall_seconds": 1.124148040995351,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 1102,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a10_sp01",
+        "accidental_index_zero_based": 9,
+        "source_x": "15275827/122764",
+        "slope": 1,
+        "intercept": "2831507/61382",
+        "normalized_coefficients_ascending": [
+          140739643905621721255559756142238,
+          5562283608711194061466695424968,
+          -72685753953221198509477104695,
+          -2471255632258010953096321224,
+          28605984518441665111725712
+        ],
+        "status": "completed",
+        "wall_seconds": 0.41830691701034084,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 400,
+        "signed_point_count": 4,
+        "distinct_abscissa_count": 2,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a11_sm01",
+        "accidental_index_zero_based": 10,
+        "source_x": "3009723/48739",
+        "slope": -1,
+        "intercept": "27304569/194956",
+        "normalized_coefficients_ascending": [
+          72941917655814744679712269129471174,
+          -448234100981045892302378015875392,
+          -41156743863327345469601115577607,
+          239480612677637673912621746064,
+          5505143050996831637866716736
+        ],
+        "status": "completed",
+        "wall_seconds": 0.5705460000026505,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 552,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      },
+      {
+        "slice_id": "a11_sp01",
+        "accidental_index_zero_based": 10,
+        "source_x": "3009723/48739",
+        "slope": 1,
+        "intercept": "-68655/4148",
+        "normalized_coefficients_ascending": [
+          856643028017018100055713334,
+          -88280105816624565444260352,
+          78000485506550921069113,
+          59477384613139639077264,
+          -25578268118059688384
+        ],
+        "status": "completed",
+        "wall_seconds": 0.437242249987321,
+        "height_specification": "200000",
+        "timeout_seconds": 20.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 419,
+        "signed_point_count": 6,
+        "distinct_abscissa_count": 3,
+        "exact_forced_nonvisible_signless_incidence_count": 0
+      }
+    ],
+    "distinct_forced_nonvisible_parameter_count": 5,
+    "forced_nonvisible_parameters": [
+      {
+        "constructor_parameter": "36449/16393",
+        "incidences": [
+          {
+            "slice_id": "a06_sm01",
+            "signed_parameter_before_T_symmetry": "-36449/16393",
+            "forced_quartic_x": "945385284/2278627"
+          }
+        ]
+      },
+      {
+        "constructor_parameter": "4745/248",
+        "incidences": [
+          {
+            "slice_id": "a01_sm01",
+            "signed_parameter_before_T_symmetry": "-4745/248",
+            "forced_quartic_x": "56411457/151528"
+          }
+        ]
+      },
+      {
+        "constructor_parameter": "50221/2085",
+        "incidences": [
+          {
+            "slice_id": "a06_sm01",
+            "signed_parameter_before_T_symmetry": "-50221/2085",
+            "forced_quartic_x": "910636/2085"
+          }
+        ]
+      },
+      {
+        "constructor_parameter": "12122/417",
+        "incidences": [
+          {
+            "slice_id": "a06_sm01",
+            "signed_parameter_before_T_symmetry": "12122/417",
+            "forced_quartic_x": "159961/417"
+          }
+        ]
+      },
+      {
+        "constructor_parameter": "112537/2180",
+        "incidences": [
+          {
+            "slice_id": "a06_sm01",
+            "signed_parameter_before_T_symmetry": "-112537/2180",
+            "forced_quartic_x": "140689623/303020"
+          }
+        ]
+      }
+    ]
+  },
+  "productive_auxiliary_curve": {
+    "slice_id": "a06_sm01",
+    "source_x": "8737649/26132",
+    "source_y": "1483060942564315/170720356",
+    "slope": -1,
+    "intercept": "57361/139",
+    "normalized_quartic_coefficients_ascending": [
+      4239687950187868058329,
+      -230514202948783942032,
+      984650398674293128,
+      79837193272671744,
+      -63470653224944
+    ],
+    "pointed_base_ordinate": "1483060942564315/8836",
+    "generalized_weierstrass_coefficients": [
+      "105512098285050794711342532/13940772860104561",
+      "599219470752764278309167207222481232673690854695690/194345147937027901902039853002721",
+      "2089630345157450674271069702494680/103823",
+      "34900445593768500369197645618942862552787100/4879681",
+      "237705320211144843302289914678590677371861955438839226276483071000/10779215329"
+    ],
+    "H200000_signed_point_count": 22,
+    "mapped_nonexceptional_auxiliary_point_count": 20,
+    "height_selection": {
+      "stable_numerical_rank": 8,
+      "precision_runs": [
+        {
+          "decimal_precision": 72,
+          "numerical_rank": 8,
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            14
+          ],
+          "subset_height_determinant": "1613797196.24432574903298641381808270824331759648225905255799219183984774",
+          "subset_smallest_eigenvalue": "1.54274290623632702418472598717930012138794282697901255454457165611530733",
+          "subset_largest_eigenvalue": "158.771260041550413305037847661932636851770176042089226695798652839193506",
+          "gp_process_wall_seconds": 0.058185292000416666
+        },
+        {
+          "decimal_precision": 120,
+          "numerical_rank": 8,
+          "subset_indices_one_based": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            14
+          ],
+          "subset_height_determinant": "1613797196.24432574903298641381808270824331759648225905255799219183984774112133444087807271183953568832223672617330553418",
+          "subset_smallest_eigenvalue": "1.54274290623632702418472598717930012138794282697901255454457165611530733043946385121424113212892784111512766988947144773",
+          "subset_largest_eigenvalue": "158.771260041550413305037847661932636851770176042089226695798652839193505564181903444177887235752885961761311152297314453",
+          "gp_process_wall_seconds": 0.058185292000416666
+        }
+      ],
+      "selected_indices_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        14
+      ],
+      "selected_point_sha256": "67cb98648881f029aac435db682a0cde7fa93ff8679c1aca877349bc445fdd01",
+      "scope_warning": "numerical generator selection only"
+    },
+    "small_prime_saturation": {
+      "status": "completed",
+      "prime_bound_strict_upper_limit": 20,
+      "input_point_count": 8,
+      "returned_point_count": 8,
+      "exact_returned_points_on_curve": 8,
+      "pari_milliseconds": 5,
+      "wall_seconds": 0.029003707997617312,
+      "original_height_determinant": "1613797196.244325749032986413818082708243317596482259052557992191839847741121334440878072711839535688",
+      "saturated_height_determinant": "1613797196.244325749032986413818082708243317596482259052557992191839847741121334440878072711839535688",
+      "height_determinant_ratio": "1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "saturated_basis_sha256": "e1bf5edf32c0fb013d48715284e3b16e4cf5f083d5681ac09ec83cbcbc6793b1",
+      "saturated_basis": [
+        {
+          "jacobian_x": "-4442443870499349038170/2209",
+          "jacobian_y": "24985849914324448250392315120106317033591200/13940772860104561",
+          "exact_jacobian_membership_checked": true
+        },
+        {
+          "jacobian_x": "159289979785120953847190/2209",
+          "jacobian_y": "-13517906765730969776919840560885027442451202880/13940772860104561",
+          "exact_jacobian_membership_checked": true
+        },
+        {
+          "jacobian_x": "-17314907340157481191690/2209",
+          "jacobian_y": "167085893185244455549454237389807603413720960/13940772860104561",
+          "exact_jacobian_membership_checked": true
+        },
+        {
+          "jacobian_x": "-4111662606957437515690/2209",
+          "jacobian_y": "23427590627658824343523587902636263231392960/13940772860104561",
+          "exact_jacobian_membership_checked": true
+        },
+        {
+          "jacobian_x": "-7547823267359164148170/2209",
+          "jacobian_y": "20554433570204840595253591402189042419571200/13940772860104561",
+          "exact_jacobian_membership_checked": true
+        },
+        {
+          "jacobian_x": "-14826584712811084820170/2209",
+          "jacobian_y": "308130624414860773326396017386018119701155200/13940772860104561",
+          "exact_jacobian_membership_checked": true
+        },
+        {
+          "jacobian_x": "90449200657485234020913095/13097161",
+          "jacobian_y": "-504724922983914245131797486574631273231758656370275/6364422856142115547013",
+          "exact_jacobian_membership_checked": true
+        },
+        {
+          "jacobian_x": "49792049701667872575190/2209",
+          "jacobian_y": "752187675430919262612080368551787898930973120/13940772860104561",
+          "exact_jacobian_membership_checked": true
+        }
+      ],
+      "scope_warning": "PARI documents ellsaturation under a finite-index hypothesis; the full rank was unknown when this search was run"
+    },
+    "saturated_basis": [
+      {
+        "x": "-4442443870499349038170/2209",
+        "y": "24985849914324448250392315120106317033591200/13940772860104561"
+      },
+      {
+        "x": "159289979785120953847190/2209",
+        "y": "-13517906765730969776919840560885027442451202880/13940772860104561"
+      },
+      {
+        "x": "-17314907340157481191690/2209",
+        "y": "167085893185244455549454237389807603413720960/13940772860104561"
+      },
+      {
+        "x": "-4111662606957437515690/2209",
+        "y": "23427590627658824343523587902636263231392960/13940772860104561"
+      },
+      {
+        "x": "-7547823267359164148170/2209",
+        "y": "20554433570204840595253591402189042419571200/13940772860104561"
+      },
+      {
+        "x": "-14826584712811084820170/2209",
+        "y": "308130624414860773326396017386018119701155200/13940772860104561"
+      },
+      {
+        "x": "90449200657485234020913095/13097161",
+        "y": "-504724922983914245131797486574631273231758656370275/6364422856142115547013"
+      },
+      {
+        "x": "49792049701667872575190/2209",
+        "y": "752187675430919262612080368551787898930973120/13940772860104561"
+      }
+    ]
+  },
+  "orbit": {
+    "coefficient_range": [
+      -2,
+      2
+    ],
+    "maximum_l1_norm": 8,
+    "enumerated_nonzero_coefficient_vector_count": 116448,
+    "distinct_nonzero_canonical_parameter_count": 105938,
+    "parameter_sha256": "f8b41e15ccbc1c339ebe693287738c4ef20b93bf5a8ec16225dba7ae11204ddd",
+    "parameter_and_vector_sha256": "1fd8a219e716fbe4db93ba658ba616d51e924edc49fe6473e1cac6089f20c88c",
+    "proxy_prime_bound": 1000,
+    "exact_conductor_gate": 190.0,
+    "nonvisible_proxy_below_gate_count": 1,
+    "nonvisible_proxy_below_gate_parameters": [
+      "12122/417"
+    ],
+    "top_64_proxy_records": [
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "generic_visible_intersection": true,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 235.69366312800722,
+        "known_repeated_prime_log_savings": 61.00336984721116,
+        "log_radical_upper_proxy": 174.69029328079606,
+        "small_prime_valuations": [
+          [
+            2,
+            30
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            347,
+            2
+          ],
+          [
+            571,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 63,
+        "parameter": "4541/278",
+        "forced_quartic_x": "110181/278"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 242.74366515307926,
+        "known_repeated_prime_log_savings": 65.00972720980162,
+        "log_radical_upper_proxy": 177.73393794327762,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            29,
+            2
+          ],
+          [
+            367,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 67,
+        "parameter": "12122/417",
+        "forced_quartic_x": "159961/417"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "generic_visible_intersection": true,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 221.14257786344155,
+        "known_repeated_prime_log_savings": 38.43317072433713,
+        "log_radical_upper_proxy": 182.70940713910443,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 73,
+        "parameter": "950/139",
+        "forced_quartic_x": "56411/139"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          0
+        ],
+        "generic_visible_intersection": true,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 234.77598913395423,
+        "known_repeated_prime_log_savings": 42.95054232685244,
+        "log_radical_upper_proxy": 191.8254468071018,
+        "small_prime_valuations": [
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            23,
+            3
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 80,
+        "parameter": "8433/278",
+        "forced_quartic_x": "106289/278"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0
+        ],
+        "generic_visible_intersection": true,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 251.29331829417853,
+        "known_repeated_prime_log_savings": 44.423844556380224,
+        "log_radical_upper_proxy": 206.8694737377983,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            37,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 84,
+        "parameter": "25414/139",
+        "forced_quartic_x": "31947/139"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "generic_visible_intersection": true,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 267.350617472299,
+        "known_repeated_prime_log_savings": 58.52140333474103,
+        "log_radical_upper_proxy": 208.82921413755798,
+        "small_prime_valuations": [
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            79,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 82,
+        "parameter": "57361/278",
+        "forced_quartic_x": "57361/278"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          -1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 278.4441172121129,
+        "known_repeated_prime_log_savings": 64.18759151916706,
+        "log_radical_upper_proxy": 214.25652569294581,
+        "small_prime_valuations": [
+          [
+            2,
+            24
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            11,
+            7
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            47,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 86,
+        "parameter": "112537/2180",
+        "forced_quartic_x": "140689623/303020"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "generic_visible_intersection": true,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 267.1782680970705,
+        "known_repeated_prime_log_savings": 42.514390312338804,
+        "log_radical_upper_proxy": 224.66387778473168,
+        "small_prime_valuations": [
+          [
+            2,
+            32
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            37,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 91,
+        "parameter": "56805/278",
+        "forced_quartic_x": "57917/278"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          2,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 270.81563176674223,
+        "known_repeated_prime_log_savings": 34.34896138400907,
+        "log_radical_upper_proxy": 236.46667038273316,
+        "small_prime_valuations": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            257,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 94,
+        "parameter": "50221/2085",
+        "forced_quartic_x": "910636/2085"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 311.61589582235496,
+        "known_repeated_prime_log_savings": 61.7884354679902,
+        "log_radical_upper_proxy": 249.82746035436475,
+        "small_prime_valuations": [
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            17,
+            3
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            3
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 101,
+        "parameter": "280387/13504",
+        "forced_quartic_x": "813576737/1877056"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 316.9100828347785,
+        "known_repeated_prime_log_savings": 54.16546891278476,
+        "log_radical_upper_proxy": 262.74461392199373,
+        "small_prime_valuations": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 108,
+        "parameter": "36449/16393",
+        "forced_quartic_x": "945385284/2278627"
+      },
+      {
+        "coefficient_vector": [
+          -2,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 355.21501778653476,
+        "known_repeated_prime_log_savings": 65.03792164687741,
+        "log_radical_upper_proxy": 290.17709613965735,
+        "small_prime_valuations": [
+          [
+            2,
+            23
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 121,
+        "parameter": "6241253/128252",
+        "forced_quartic_x": "8224197139/17827028"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          -1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 358.1290223760602,
+        "known_repeated_prime_log_savings": 64.53875879708725,
+        "log_radical_upper_proxy": 293.59026357897295,
+        "small_prime_valuations": [
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            17,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            43,
+            2
+          ],
+          [
+            89,
+            1
+          ],
+          [
+            797,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 116,
+        "parameter": "4157111/174096",
+        "forced_quartic_x": "9408482227/24199344"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          2,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 384.36263123792764,
+        "known_repeated_prime_log_savings": 70.74777876169507,
+        "log_radical_upper_proxy": 313.61485247623256,
+        "small_prime_valuations": [
+          [
+            2,
+            30
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 130,
+        "parameter": "22208207/426962",
+        "forced_quartic_x": "21404026509/59347718"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          1,
+          -1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 401.05819849321,
+        "known_repeated_prime_log_savings": 73.50153665546425,
+        "log_radical_upper_proxy": 327.55666183774576,
+        "small_prime_valuations": [
+          [
+            2,
+            23
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            83,
+            2
+          ],
+          [
+            89,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 131,
+        "parameter": "44246851/613596",
+        "forced_quartic_x": "29046167867/85289844"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 376.84167623330245,
+        "known_repeated_prime_log_savings": 46.74436672506892,
+        "log_radical_upper_proxy": 330.09730950823354,
+        "small_prime_valuations": [
+          [
+            2,
+            32
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 139,
+        "parameter": "13551607/14570",
+        "forced_quartic_x": "-1047923603/2025230"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 374.8785333943272,
+        "known_repeated_prime_log_savings": 33.99422825132185,
+        "log_radical_upper_proxy": 340.88430514300535,
+        "small_prime_valuations": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            29,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 142,
+        "parameter": "12135191/189457",
+        "forced_quartic_x": "90318234/189457"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 390.49476856292443,
+        "known_repeated_prime_log_savings": 34.69672732496561,
+        "log_radical_upper_proxy": 355.79804123795884,
+        "small_prime_valuations": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 149,
+        "parameter": "28962913/283699",
+        "forced_quartic_x": "88110888/283699"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 435.9706947531529,
+        "known_repeated_prime_log_savings": 79.90652448927045,
+        "log_radical_upper_proxy": 356.06417026388243,
+        "small_prime_valuations": [
+          [
+            2,
+            25
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            79,
+            2
+          ],
+          [
+            107,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 143,
+        "parameter": "80133571/6097096",
+        "forced_quartic_x": "2596216475/6097096"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 422.9077213935666,
+        "known_repeated_prime_log_savings": 64.26147976165635,
+        "log_radical_upper_proxy": 358.64624163191024,
+        "small_prime_valuations": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            29,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            89,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 145,
+        "parameter": "43883293/3178513",
+        "forced_quartic_x": "1267790694/3178513"
+      },
+      {
+        "coefficient_vector": [
+          -2,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 449.44140908924004,
+        "known_repeated_prime_log_savings": 83.21152639526906,
+        "log_radical_upper_proxy": 366.229882693971,
+        "small_prime_valuations": [
+          [
+            2,
+            32
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            43,
+            2
+          ],
+          [
+            277,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 148,
+        "parameter": "503349271/7754254",
+        "forced_quartic_x": "3703290017/7754254"
+      },
+      {
+        "coefficient_vector": [
+          -2,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          2,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 402.6193943296953,
+        "known_repeated_prime_log_savings": 35.3402831676826,
+        "log_radical_upper_proxy": 367.27911116201267,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            929,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 152,
+        "parameter": "49489814/71585",
+        "forced_quartic_x": "-19948899/71585"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 457.0292955940196,
+        "known_repeated_prime_log_savings": 84.59348287065525,
+        "log_radical_upper_proxy": 372.43581272336434,
+        "small_prime_valuations": [
+          [
+            2,
+            30
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            17,
+            5
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            71,
+            1
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 148,
+        "parameter": "756895897/8063390",
+        "forced_quartic_x": "2570615713/8063390"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 448.18407140821927,
+        "known_repeated_prime_log_savings": 63.332510800483625,
+        "log_radical_upper_proxy": 384.8515606077356,
+        "small_prime_valuations": [
+          [
+            2,
+            23
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            29,
+            2
+          ],
+          [
+            53,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 160,
+        "parameter": "460558147/12786332",
+        "forced_quartic_x": "4815965521/12786332"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 479.05855143874055,
+        "known_repeated_prime_log_savings": 66.14574713639284,
+        "log_radical_upper_proxy": 412.9128043023477,
+        "small_prime_valuations": [
+          [
+            2,
+            23
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 172,
+        "parameter": "1561013989/61732124",
+        "forced_quartic_x": "23913923887/61732124"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 466.9141877634952,
+        "known_repeated_prime_log_savings": 48.651180777398665,
+        "log_radical_upper_proxy": 418.2630069860965,
+        "small_prime_valuations": [
+          [
+            2,
+            16
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            29,
+            2
+          ],
+          [
+            31,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 174,
+        "parameter": "869453408/35389003",
+        "forced_quartic_x": "1909094577371/4919071417"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 486.08453445873545,
+        "known_repeated_prime_log_savings": 58.72220341362496,
+        "log_radical_upper_proxy": 427.36233104511047,
+        "small_prime_valuations": [
+          [
+            2,
+            38
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            43,
+            2
+          ],
+          [
+            89,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 176,
+        "parameter": "2293325149/80765254",
+        "forced_quartic_x": "4314003538983/11226370306"
+      },
+      {
+        "coefficient_vector": [
+          -2,
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          2,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 513.7961018716937,
+        "known_repeated_prime_log_savings": 79.80713526790518,
+        "log_radical_upper_proxy": 433.9889666037885,
+        "small_prime_valuations": [
+          [
+            2,
+            33
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 183,
+        "parameter": "17320152563/381446302",
+        "forced_quartic_x": "174731241261/381446302"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 508.9096914934836,
+        "known_repeated_prime_log_savings": 71.41794794852109,
+        "log_radical_upper_proxy": 437.4917435449625,
+        "small_prime_valuations": [
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            4
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 182,
+        "parameter": "9093346867/259168002",
+        "forced_quartic_x": "97857270131/259168002"
+      },
+      {
+        "coefficient_vector": [
+          -2,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 489.875004548626,
+        "known_repeated_prime_log_savings": 51.261604061293234,
+        "log_radical_upper_proxy": 438.6134004873328,
+        "small_prime_valuations": [
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            17,
+            3
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            79,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 183,
+        "parameter": "3805233388/44443999",
+        "forced_quartic_x": "14535430113/44443999"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          -1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 503.1327966476761,
+        "known_repeated_prime_log_savings": 62.835488575144666,
+        "log_radical_upper_proxy": 440.29730807253145,
+        "small_prime_valuations": [
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            457,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 180,
+        "parameter": "9003112041/239351606",
+        "forced_quartic_x": "89769891353/239351606"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 495.94502752005246,
+        "known_repeated_prime_log_savings": 53.48030504519375,
+        "log_radical_upper_proxy": 442.4647224748587,
+        "small_prime_valuations": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            37,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 185,
+        "parameter": "5223762509/5347709",
+        "forced_quartic_x": "-419353052802/743331551"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -2,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 486.3443420402655,
+        "known_repeated_prime_log_savings": 43.36412312703875,
+        "log_radical_upper_proxy": 442.98021891322674,
+        "small_prime_valuations": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 188,
+        "parameter": "2975329421/84293631",
+        "forced_quartic_x": "31810044448/84293631"
+      },
+      {
+        "coefficient_vector": [
+          -2,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          -1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 507.8567181519437,
+        "known_repeated_prime_log_savings": 52.02474034408538,
+        "log_radical_upper_proxy": 455.8319778078583,
+        "small_prime_valuations": [
+          [
+            2,
+            26
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            23,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 193,
+        "parameter": "8838251711/248719048",
+        "forced_quartic_x": "13038256324499/34571947672"
+      },
+      {
+        "coefficient_vector": [
+          -2,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 524.7792132837681,
+        "known_repeated_prime_log_savings": 55.88462947144082,
+        "log_radical_upper_proxy": 468.89458381232726,
+        "small_prime_valuations": [
+          [
+            2,
+            25
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            29,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 196,
+        "parameter": "27324813463/550704296",
+        "forced_quartic_x": "27790800051499/76547897144"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 519.0974762721767,
+        "known_repeated_prime_log_savings": 44.55364265089327,
+        "log_radical_upper_proxy": 474.5438336212834,
+        "small_prime_valuations": [
+          [
+            2,
+            26
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            37,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 199,
+        "parameter": "17800061801/175539208",
+        "forced_quartic_x": "54639538991/175539208"
+      },
+      {
+        "coefficient_vector": [
+          -2,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          -1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 528.8939218127738,
+        "known_repeated_prime_log_savings": 50.22828853146282,
+        "log_radical_upper_proxy": 478.665633281311,
+        "small_prime_valuations": [
+          [
+            2,
+            24
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            3
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 202,
+        "parameter": "27506288833/47522588",
+        "forced_quartic_x": "-1097430977519/6605639732"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 540.8670603533221,
+        "known_repeated_prime_log_savings": 55.58013375977089,
+        "log_radical_upper_proxy": 485.28692659355124,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            89,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 202,
+        "parameter": "48583909822/742827815",
+        "forced_quartic_x": "355125969507/742827815"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          -1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 559.6295234478722,
+        "known_repeated_prime_log_savings": 71.38899900852745,
+        "log_radical_upper_proxy": 488.24052443934477,
+        "small_prime_valuations": [
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            17,
+            3
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 204,
+        "parameter": "125943481877/112342096",
+        "forced_quartic_x": "-11062089012247/15615551344"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 536.6710424471302,
+        "known_repeated_prime_log_savings": 43.53994463935948,
+        "log_radical_upper_proxy": 493.1310978077707,
+        "small_prime_valuations": [
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            41,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 208,
+        "parameter": "40019275301/40488320",
+        "forced_quartic_x": "-3240228743319/5627876480"
+      },
+      {
+        "coefficient_vector": [
+          -2,
+          -1,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          -1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 533.241841565851,
+        "known_repeated_prime_log_savings": 39.59287435596394,
+        "log_radical_upper_proxy": 493.6489672098871,
+        "small_prime_valuations": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 208,
+        "parameter": "21923893683/973457063",
+        "forced_quartic_x": "52791049368806/135310531757"
+      },
+      {
+        "coefficient_vector": [
+          -2,
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          2,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 529.2911718459338,
+        "known_repeated_prime_log_savings": 30.585877715441562,
+        "log_radical_upper_proxy": 498.7052941304923,
+        "small_prime_valuations": [
+          [
+            2,
+            23
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            461,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 211,
+        "parameter": "20467091875/885344932",
+        "forced_quartic_x": "385821556943/885344932"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          0,
+          -1,
+          -1,
+          0,
+          2,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 556.5871537440725,
+        "known_repeated_prime_log_savings": 54.608247234774055,
+        "log_radical_upper_proxy": 501.9789065092984,
+        "small_prime_valuations": [
+          [
+            2,
+            33
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            89,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 211,
+        "parameter": "53541295229/2725158158",
+        "forced_quartic_x": "148875557064207/378796983962"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          0,
+          -1,
+          -1,
+          1,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 557.0469011989333,
+        "known_repeated_prime_log_savings": 52.849144384606724,
+        "log_radical_upper_proxy": 504.1977568143265,
+        "small_prime_valuations": [
+          [
+            2,
+            25
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            257,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 211,
+        "parameter": "133599192591/3215958488",
+        "forced_quartic_x": "1193527388921/3215958488"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 548.5911165089235,
+        "known_repeated_prime_log_savings": 44.08017112612431,
+        "log_radical_upper_proxy": 504.5109453827992,
+        "small_prime_valuations": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            41,
+            3
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 212,
+        "parameter": "69420457283/1931374003",
+        "forced_quartic_x": "727597846214/1931374003"
+      },
+      {
+        "coefficient_vector": [
+          -2,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 557.3065385347121,
+        "known_repeated_prime_log_savings": 52.59789692979452,
+        "log_radical_upper_proxy": 504.7086416049176,
+        "small_prime_valuations": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            17,
+            4
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 212,
+        "parameter": "112798322409/146907571",
+        "forced_quartic_x": "-52174112480/146907571"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 583.054874150913,
+        "known_repeated_prime_log_savings": 69.42920277716922,
+        "log_radical_upper_proxy": 513.6256713737437,
+        "small_prime_valuations": [
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            29,
+            3
+          ],
+          [
+            31,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 215,
+        "parameter": "401165475623/6185142214",
+        "forced_quartic_x": "2953582328409/6185142214"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 593.5429237604382,
+        "known_repeated_prime_log_savings": 77.73460521476905,
+        "log_radical_upper_proxy": 515.8083185456691,
+        "small_prime_valuations": [
+          [
+            2,
+            32
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            41,
+            2
+          ],
+          [
+            79,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 210,
+        "parameter": "335140695989/17217376738",
+        "forced_quartic_x": "1034190503810889/2393215366582"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 568.130403355216,
+        "known_repeated_prime_log_savings": 51.78456319170124,
+        "log_radical_upper_proxy": 516.3458401635148,
+        "small_prime_valuations": [
+          [
+            2,
+            19
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 216,
+        "parameter": "187816701712/2590796105",
+        "forced_quartic_x": "122504133840937/360120658595"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          2,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 594.4774317287901,
+        "known_repeated_prime_log_savings": 75.66454556071818,
+        "log_radical_upper_proxy": 518.8128861680718,
+        "small_prime_valuations": [
+          [
+            2,
+            30
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            29,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 218,
+        "parameter": "550508165071/23735358386",
+        "forced_quartic_x": "9244339981543/23735358386"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          1,
+          -1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 586.6751185161877,
+        "known_repeated_prime_log_savings": 67.51970184963463,
+        "log_radical_upper_proxy": 519.155416666553,
+        "small_prime_valuations": [
+          [
+            2,
+            16
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 218,
+        "parameter": "610897792220/12358882057",
+        "forced_quartic_x": "624003040552997/1717884605923"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          2,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 584.6128512408258,
+        "known_repeated_prime_log_savings": 63.90442566531894,
+        "log_radical_upper_proxy": 520.7084255755068,
+        "small_prime_valuations": [
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            4
+          ],
+          [
+            811,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 217,
+        "parameter": "538580593456/10815483631",
+        "forced_quartic_x": "545524254067407/1503352224709"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 567.3655872452038,
+        "known_repeated_prime_log_savings": 43.818976501574205,
+        "log_radical_upper_proxy": 523.5466107436296,
+        "small_prime_valuations": [
+          [
+            2,
+            26
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            53,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 220,
+        "parameter": "60597154941/4357522676",
+        "forced_quartic_x": "1737617652383/4357522676"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          -1,
+          0,
+          -1,
+          0,
+          2,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 561.2653996888278,
+        "known_repeated_prime_log_savings": 37.31017103236576,
+        "log_radical_upper_proxy": 523.9552286564619,
+        "small_prime_valuations": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 221,
+        "parameter": "95348872189/3788521603",
+        "forced_quartic_x": "204059894435412/526604502817"
+      },
+      {
+        "coefficient_vector": [
+          -2,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          -1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 588.6524201622511,
+        "known_repeated_prime_log_savings": 62.846673665680804,
+        "log_radical_upper_proxy": 525.8057464965704,
+        "small_prime_valuations": [
+          [
+            2,
+            25
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            659,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 217,
+        "parameter": "584860859101/2088535048",
+        "forced_quartic_x": "277012945851/2088535048"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          -2,
+          -1,
+          0,
+          0,
+          2,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 573.0186759332452,
+        "known_repeated_prime_log_savings": 46.81832577486882,
+        "log_radical_upper_proxy": 526.2003501583763,
+        "small_prime_valuations": [
+          [
+            2,
+            25
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 221,
+        "parameter": "174651648027/7094947912",
+        "forced_quartic_x": "382696728104479/986197759768"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          2,
+          1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 590.7714918429365,
+        "known_repeated_prime_log_savings": 61.37816928866428,
+        "log_radical_upper_proxy": 529.3933225542722,
+        "small_prime_valuations": [
+          [
+            2,
+            30
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            4
+          ],
+          [
+            37,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 223,
+        "parameter": "80445556863/16297519538",
+        "forced_quartic_x": "6645036588599/16297519538"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          -1,
+          2,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 577.5345665651821,
+        "known_repeated_prime_log_savings": 43.49744878421548,
+        "log_radical_upper_proxy": 534.0371177809666,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 223,
+        "parameter": "434070756586/8945690137",
+        "forced_quartic_x": "4125680338949/8945690137"
+      },
+      {
+        "coefficient_vector": [
+          -2,
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          1,
+          -1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 591.4939241324547,
+        "known_repeated_prime_log_savings": 55.27039048225694,
+        "log_radical_upper_proxy": 536.2235336501977,
+        "small_prime_valuations": [
+          [
+            2,
+            30
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            43,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 225,
+        "parameter": "37243639579/15083757082",
+        "forced_quartic_x": "6187356288339/15083757082"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          -1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 624.3384942365906,
+        "known_repeated_prime_log_savings": 87.19941637557542,
+        "log_radical_upper_proxy": 537.1390778610152,
+        "small_prime_valuations": [
+          [
+            2,
+            25
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            89,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 223,
+        "parameter": "2292691169567/81405832132",
+        "forced_quartic_x": "4350835864353839/11315410666348"
+      },
+      {
+        "coefficient_vector": [
+          -2,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 601.7862406721241,
+        "known_repeated_prime_log_savings": 62.899519128338866,
+        "log_radical_upper_proxy": 538.8867215437853,
+        "small_prime_valuations": [
+          [
+            2,
+            30
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            89,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 228,
+        "parameter": "780148143707/25938739718",
+        "forced_quartic_x": "1596312640939471/3605484820802"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          2,
+          0
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 599.3019472983938,
+        "known_repeated_prime_log_savings": 58.50082610967904,
+        "log_radical_upper_proxy": 540.8011211887148,
+        "small_prime_valuations": [
+          [
+            2,
+            14
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            43,
+            2
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            53,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 226,
+        "parameter": "1246038608408/27184089193",
+        "forced_quartic_x": "9971994054899/27184089193"
+      },
+      {
+        "coefficient_vector": [
+          -2,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          2,
+          -1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 593.7837569588459,
+        "known_repeated_prime_log_savings": 52.339974675061285,
+        "log_radical_upper_proxy": 541.4437822837846,
+        "small_prime_valuations": [
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 227,
+        "parameter": "702700215647/1102999472",
+        "forced_quartic_x": "-247526455119/1102999472"
+      },
+      {
+        "coefficient_vector": [
+          -1,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          -1
+        ],
+        "generic_visible_intersection": false,
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 613.9533177197435,
+        "known_repeated_prime_log_savings": 72.26430635691095,
+        "log_radical_upper_proxy": 541.6890113628325,
+        "small_prime_valuations": [
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 229,
+        "parameter": "1866192144607/27491704762",
+        "forced_quartic_x": "1317550968752709/3821346961918"
+      }
+    ]
+  },
+  "exact_conductors": {
+    "36449/16393": {
+      "status": "completed",
+      "minimal_model": [
+        0,
+        1,
+        0,
+        -945492222807692741969568233681176706082098209702960,
+        11190031576914000087273024142176132876585662580663836529895870506182465220900
+      ],
+      "conductor": 4317375224448398790532867809823167046351130204439136077045297052809852862429193306343819988735024708150857023881012880,
+      "log_conductor": "270.865103510970382165434637878865848478345418447332373122916",
+      "minimal_discriminant": 932392810683359497316851258671544952353807895878224442569274909772502456450553524461518326575424902005510343684776996913694195425375648263726812800000,
+      "root_number": -1,
+      "local_reduction": {
+        "2": {
+          "conductor_exponent": 4,
+          "kodaira_code": -6,
+          "tamagawa_number": 4,
+          "minimal_c4_valuation": 4,
+          "minimal_discriminant_valuation": 10,
+          "ellap": 0
+        },
+        "3": {
+          "conductor_exponent": 0,
+          "kodaira_code": 1,
+          "tamagawa_number": 1,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 0,
+          "ellap": -2
+        },
+        "5": {
+          "conductor_exponent": 1,
+          "kodaira_code": 9,
+          "tamagawa_number": 5,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 5,
+          "ellap": 1
+        },
+        "7": {
+          "conductor_exponent": 1,
+          "kodaira_code": 9,
+          "tamagawa_number": 5,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 5,
+          "ellap": 1
+        },
+        "11": {
+          "conductor_exponent": 1,
+          "kodaira_code": 9,
+          "tamagawa_number": 5,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 5,
+          "ellap": 1
+        },
+        "13": {
+          "conductor_exponent": 1,
+          "kodaira_code": 12,
+          "tamagawa_number": 8,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 8,
+          "ellap": 1
+        },
+        "17": {
+          "conductor_exponent": 1,
+          "kodaira_code": 6,
+          "tamagawa_number": 2,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 2,
+          "ellap": -1
+        },
+        "19": {
+          "conductor_exponent": 1,
+          "kodaira_code": 8,
+          "tamagawa_number": 4,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 4,
+          "ellap": 1
+        },
+        "23": {
+          "conductor_exponent": 1,
+          "kodaira_code": 6,
+          "tamagawa_number": 2,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 2,
+          "ellap": -1
+        }
+      },
+      "below_strict_log_conductor_target": false,
+      "retried": false
+    },
+    "4745/248": {
+      "status": "completed",
+      "minimal_model": [
+        1,
+        -1,
+        1,
+        -556379992509363804269573377325766770,
+        159739598526181396296205287984166875381472967561707889
+      ],
+      "conductor": 10595296704430612639142372288168474169237229494900628774189561967952808903857860866122,
+      "log_conductor": "195.777558007021535060104194153879852648839999691895027758078",
+      "minimal_discriminant": -366433863405201446383620447132865255808419687679398195214565281974821584874723109509392031091069707091968,
+      "root_number": -1,
+      "local_reduction": {
+        "2": {
+          "conductor_exponent": 1,
+          "kodaira_code": 22,
+          "tamagawa_number": 18,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 18,
+          "ellap": 1
+        },
+        "3": {
+          "conductor_exponent": 2,
+          "kodaira_code": -6,
+          "tamagawa_number": 4,
+          "minimal_c4_valuation": 2,
+          "minimal_discriminant_valuation": 8,
+          "ellap": 0
+        },
+        "5": {
+          "conductor_exponent": 0,
+          "kodaira_code": 1,
+          "tamagawa_number": 1,
+          "minimal_c4_valuation": 1,
+          "minimal_discriminant_valuation": 0,
+          "ellap": 0
+        },
+        "7": {
+          "conductor_exponent": 1,
+          "kodaira_code": 6,
+          "tamagawa_number": 2,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 2,
+          "ellap": 1
+        },
+        "11": {
+          "conductor_exponent": 0,
+          "kodaira_code": 1,
+          "tamagawa_number": 1,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 0,
+          "ellap": -5
+        },
+        "13": {
+          "conductor_exponent": 0,
+          "kodaira_code": 1,
+          "tamagawa_number": 1,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 0,
+          "ellap": -6
+        },
+        "17": {
+          "conductor_exponent": 1,
+          "kodaira_code": 6,
+          "tamagawa_number": 2,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 2,
+          "ellap": -1
+        },
+        "19": {
+          "conductor_exponent": 0,
+          "kodaira_code": 1,
+          "tamagawa_number": 1,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 0,
+          "ellap": -7
+        },
+        "23": {
+          "conductor_exponent": 1,
+          "kodaira_code": 7,
+          "tamagawa_number": 3,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 3,
+          "ellap": 1
+        }
+      },
+      "below_strict_log_conductor_target": false,
+      "retried": false
+    },
+    "50221/2085": {
+      "status": "completed",
+      "minimal_model": [
+        0,
+        1,
+        0,
+        -2720340039830324222170439149877407603790939776,
+        54611375302451503750925178297154640197900990870530716305569977182724
+      ],
+      "conductor": 27621349480480782985316125378265675018056666854919206023973995308557595261207083546281174711739742865654640,
+      "log_conductor": "245.090023769977769381657330028055811005133966185473062864253",
+      "minimal_discriminant": -1242449396131335356834222044740509182381490186399763061602871294381385104830372955507061336809355504215947800952948835707748295040000,
+      "root_number": 1,
+      "local_reduction": {
+        "2": {
+          "conductor_exponent": 4,
+          "kodaira_code": -6,
+          "tamagawa_number": 4,
+          "minimal_c4_valuation": 4,
+          "minimal_discriminant_valuation": 10,
+          "ellap": 0
+        },
+        "3": {
+          "conductor_exponent": 1,
+          "kodaira_code": 14,
+          "tamagawa_number": 10,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 10,
+          "ellap": 1
+        },
+        "5": {
+          "conductor_exponent": 1,
+          "kodaira_code": 8,
+          "tamagawa_number": 2,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 4,
+          "ellap": -1
+        },
+        "7": {
+          "conductor_exponent": 1,
+          "kodaira_code": 8,
+          "tamagawa_number": 4,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 4,
+          "ellap": 1
+        },
+        "11": {
+          "conductor_exponent": 0,
+          "kodaira_code": 1,
+          "tamagawa_number": 1,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 0,
+          "ellap": -2
+        },
+        "13": {
+          "conductor_exponent": 1,
+          "kodaira_code": 8,
+          "tamagawa_number": 4,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 4,
+          "ellap": 1
+        },
+        "17": {
+          "conductor_exponent": 1,
+          "kodaira_code": 6,
+          "tamagawa_number": 2,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 2,
+          "ellap": 1
+        },
+        "19": {
+          "conductor_exponent": 1,
+          "kodaira_code": 7,
+          "tamagawa_number": 3,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 3,
+          "ellap": 1
+        },
+        "23": {
+          "conductor_exponent": 1,
+          "kodaira_code": 6,
+          "tamagawa_number": 2,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 2,
+          "ellap": -1
+        }
+      },
+      "below_strict_log_conductor_target": false,
+      "retried": false
+    },
+    "12122/417": {
+      "status": "completed",
+      "minimal_model": [
+        1,
+        0,
+        0,
+        -296442046913075996444188353146844129130,
+        1964710140350373156036611013039206014455517678135384511525
+      ],
+      "conductor": 203989071530281445240246711919711723572183020113646291605384180033064418751636855,
+      "log_conductor": "184.919703675014813309434588107747671757372855900775692755238",
+      "minimal_discriminant": -312275956688361193150649498336191028005640033374914006911194346447826928089224079955446133858338076495429842890625,
+      "root_number": -1,
+      "local_reduction": {
+        "2": {
+          "conductor_exponent": 0,
+          "kodaira_code": 1,
+          "tamagawa_number": 1,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 0,
+          "ellap": -1
+        },
+        "3": {
+          "conductor_exponent": 1,
+          "kodaira_code": 13,
+          "tamagawa_number": 9,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 9,
+          "ellap": 1
+        },
+        "5": {
+          "conductor_exponent": 1,
+          "kodaira_code": 11,
+          "tamagawa_number": 7,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 7,
+          "ellap": 1
+        },
+        "7": {
+          "conductor_exponent": 1,
+          "kodaira_code": 9,
+          "tamagawa_number": 5,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 5,
+          "ellap": 1
+        },
+        "11": {
+          "conductor_exponent": 1,
+          "kodaira_code": 9,
+          "tamagawa_number": 5,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 5,
+          "ellap": 1
+        },
+        "13": {
+          "conductor_exponent": 1,
+          "kodaira_code": 9,
+          "tamagawa_number": 5,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 5,
+          "ellap": 1
+        },
+        "17": {
+          "conductor_exponent": 0,
+          "kodaira_code": 1,
+          "tamagawa_number": 1,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 0,
+          "ellap": -3
+        },
+        "19": {
+          "conductor_exponent": 2,
+          "kodaira_code": 4,
+          "tamagawa_number": 3,
+          "minimal_c4_valuation": 2,
+          "minimal_discriminant_valuation": 4,
+          "ellap": 0
+        },
+        "23": {
+          "conductor_exponent": 1,
+          "kodaira_code": 7,
+          "tamagawa_number": 3,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 3,
+          "ellap": 1
+        }
+      },
+      "below_strict_log_conductor_target": false,
+      "retried": false
+    },
+    "112537/2180": {
+      "status": "completed",
+      "minimal_model": [
+        1,
+        -1,
+        1,
+        -1551816453687574406872664992325872117350938,
+        -363908476658524650191219291561286257816023940041479952552631719
+      ],
+      "conductor": 34889775756289169488957614862319837977382023334719628776730717015048195832850619975367888825326370,
+      "log_conductor": "224.600362755443592947580287319923143255094491720211325907862",
+      "minimal_discriminant": 181957384179114925133568605951651736277219223149099309111787323193477307440608890902848298931541374680001818471466360909365760000,
+      "root_number": -1,
+      "local_reduction": {
+        "2": {
+          "conductor_exponent": 1,
+          "kodaira_code": 16,
+          "tamagawa_number": 12,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 12,
+          "ellap": 1
+        },
+        "3": {
+          "conductor_exponent": 2,
+          "kodaira_code": -6,
+          "tamagawa_number": 4,
+          "minimal_c4_valuation": 2,
+          "minimal_discriminant_valuation": 8,
+          "ellap": 0
+        },
+        "5": {
+          "conductor_exponent": 1,
+          "kodaira_code": 8,
+          "tamagawa_number": 2,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 4,
+          "ellap": -1
+        },
+        "7": {
+          "conductor_exponent": 1,
+          "kodaira_code": 9,
+          "tamagawa_number": 5,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 5,
+          "ellap": 1
+        },
+        "11": {
+          "conductor_exponent": 1,
+          "kodaira_code": 11,
+          "tamagawa_number": 7,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 7,
+          "ellap": 1
+        },
+        "13": {
+          "conductor_exponent": 1,
+          "kodaira_code": 6,
+          "tamagawa_number": 2,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 2,
+          "ellap": -1
+        },
+        "17": {
+          "conductor_exponent": 0,
+          "kodaira_code": 1,
+          "tamagawa_number": 1,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 0,
+          "ellap": -6
+        },
+        "19": {
+          "conductor_exponent": 2,
+          "kodaira_code": 4,
+          "tamagawa_number": 3,
+          "minimal_c4_valuation": 2,
+          "minimal_discriminant_valuation": 4,
+          "ellap": 0
+        },
+        "23": {
+          "conductor_exponent": 1,
+          "kodaira_code": 6,
+          "tamagawa_number": 2,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 2,
+          "ellap": -1
+        }
+      },
+      "below_strict_log_conductor_target": false,
+      "retried": false
+    }
+  },
+  "conclusion": {
+    "target_hit": false,
+    "strict_subtarget_parameter_count": 0,
+    "statement": "The complete declared slice and coefficient-box orbit produced no certified rank-21/subthreshold hit.",
+    "scope_warning": "This is exhaustive only for the 22 H=200000 slice boxes and the declared rank-8 coefficient box; it is not an upper-rank proof."
+  },
+  "reproduction": {
+    "command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/search_nagao_rank21_productive_auxiliary_orbit.py",
+    "python": "3.14.6",
+    "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+    "pari": "[2, 17, 4]",
+    "script_sha256": "84f443c5f54612c607309e12fbb4a55cf1fd933f44a529083af166581b7b0165",
+    "wall_seconds": 111.97258562500065,
+    "all_subprocesses_foreground": true,
+    "one_attempt_no_retries": true
+  }
+}

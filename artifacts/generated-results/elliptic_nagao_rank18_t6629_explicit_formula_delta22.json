@@ -1,0 +1,71 @@
+{
+  "actual_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/explicit_formula_rank18_t6629_delta22.py",
+  "candidate": {
+    "conductor": 16852483164717580988499792436861320283505875689469771069679157006330,
+    "constructor_parameter": "6629/174",
+    "log_conductor": "154.795114152373636353692290456048113196833306511053393251152",
+    "minimal_model": [
+      1,
+      0,
+      0,
+      -4751339758046035040105522274590290,
+      126030772739843045380135878034588546248304692575492
+    ],
+    "root_number": 1,
+    "unconditional_certified_algebraic_rank_lower_bound": 18
+  },
+  "declared_budget": {
+    "all_prime_powers_in_support_included": true,
+    "pari_stack_bytes": 512000000,
+    "timeout_seconds": 120.0
+  },
+  "explicit_formula": {
+    "closed_form_archimedean_contribution": "-0.066297585261396751831176694018569436575148494852651124157803347375818166686070166",
+    "closed_form_full_archimedean_integral": "-0.20828000680794698758446140408735281809843846560115201199286146199612915120840803",
+    "conservative_upper_value": "19.912867602261525223769033055281271153738533184527014919605868197082190078609046",
+    "conservative_upper_value_less_than_20": true,
+    "numerical_allowance": "0.0010000000000000000208",
+    "unpadded_explicit_formula_value": "19.911867602261525223748216373569549468605590090750312038746493197082190078609046"
+  },
+  "input": {
+    "rank18_artifact_path": "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic_nagao_rank21_historical_finalists.json",
+    "rank18_artifact_sha256": "90fc658cdb7c39c96317ee888be1364b8c9f368859230e25161dc45cd6a3cec7",
+    "saturated_basis_sha256": "6202fd81999b345317193bffbf965a0b43789493eade80dd6e6a99a8d19ccda1"
+  },
+  "interpretation": {
+    "unconditional": "the finite-reduction certificate proves algebraic rank at least 18; this computation supplies no unconditional rank upper bound",
+    "under_bsd_and_grh": "the exact algebraic lower bound 18 and analytic upper bound 18 identify algebraic and analytic rank exactly 18",
+    "under_grh": "the explicit-formula value is below 20, hence analytic rank is at most 19; root number +1 forces even analytic order, hence at most 18"
+  },
+  "method": {
+    "closed_archimedean_identity": "A_D=(pi*D)^-1[-EulerGamma+(pi^2/6-Li_2(exp(-2*pi*D)))/(2*pi*D)]",
+    "delta": "11/5",
+    "formula_helper_path": "/Users/royvanrijn/Documents/jacobian-research/elliptic-curves/cas/explicit_formula_rank20_t5081_delta22.py",
+    "formula_helper_sha256": "c33da285159adb34bd14dcd2caf5ebdd77bddf5454d0eb226ca44da8543a80b7",
+    "prime_limit": 1007525,
+    "prime_limit_definition": "floor(exp(2*pi*Delta))",
+    "source": "https://antsmath.org/ANTSX/bober/paper.pdf",
+    "test_function": "sinc-squared"
+  },
+  "prime_power_sum": {
+    "bad_reduction_prime_sum": "2.1149832825396652298946184361369120930014435362770495989384981577653617449210828",
+    "conductor": "16852483164717580988499792436861320283505875689469771069679157006330",
+    "good_reduction_prime_sum": "-64.634468640477997059148291403054392823693775569711582097058055660976757397817637",
+    "log_conductor": "154.79511415237363635369229045604811319683330651105339325115154737902725107265389",
+    "maximum_prime": 1007519,
+    "pari_milliseconds_after_curve_setup": 1688,
+    "prime_count": 79057,
+    "prime_limit": 1007525,
+    "prime_power_term_count": 79293,
+    "prime_sum": "-62.519485357938331829253672966917480730692332033434532498119557503211395652896555"
+  },
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/explicit_formula_rank18_t6629_delta22.py",
+  "schema_version": 1,
+  "script_sha256": "088d30a64a0fdd04dddc5d753b3fa16ceffa75ff245f29a6802a2b54488a24f2",
+  "software": {
+    "mpmath": "1.3.0",
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6"
+  },
+  "status": "conditional explicit-formula diagnostic complete"
+}

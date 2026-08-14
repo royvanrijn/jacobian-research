@@ -19,7 +19,7 @@ rank-two admission status have been recorded.
 | key | classical base and incidence | selected boundary | degree | rank-two status |
 |---|---|---|---:|---|
 | `W6` | normalized degree-six weighted seeds \(H=\sum_{j=3}^6h_j(W^j-W^2)\), \(\sum(j-2)h_j=-1\) | weighted \(\mathbb A^1\) normalization, controlled exponent one | 6 | polynomial exact-symplectic completion is proved |
-| `R21` | cancellation type \((m,r)=(2,1)\), \(q^2-4q+6=0\) | reciprocal \(\mathbb G_m\) normalization, controlled exponent one | 4 | localized canonical rank-two candidate; polynomial four-dimensional descent is open |
+| `R21` | cancellation type \((m,r)=(2,1)\), \(q^2-4q+6=0\) | reciprocal \(\mathbb G_m\) normalization, controlled exponent one | 4 | globally not polynomial-Darboux admitted; natural centralizer and strict filtered PBW bridges excluded |
 | `C3` | \(H=W^2(1-W)\), selected from \(\mathbb Q[u^2,u^3]\subset\mathbb Q[u]\) | cusp conductor \(u^2\mathbb Q[u]\), quotient length one | 3 | the polynomial `c=-9` exact-symplectic completion is proved |
 | `I3,6` | the tower \(F_6\circ F_3\), with the outer degree-six seed varying | imprimitive two-stage incidence, six blocks of size three | 18 | compose the two polynomial exact-symplectic completions |
 
@@ -35,11 +35,12 @@ are pairwise distinct. The degrees already separate all four selected
 packets; the remaining entries retain the boundary information needed when
 the census is enlarged to same-degree comparisons.
 
-The reciprocal row is intentionally marked as a candidate. The
-three-dimensional cancellation map is polynomial and Keller, but the
-repository does not yet prove a polynomial rank-two completion for its
-quartic reciprocal incidence. Treating its formal-local Darboux chart as a
-global polynomial symbol would overstate the current result.
+The reciprocal row was initially marked as a candidate. The later
+[global Hamiltonian-LND theorem](DC2_HIGHER_NILPOTENCE_R21_FRONTIER.md#20-global-polynomial-darboux-obstruction)
+proves that its quartic reciprocal incidence has no polynomial Darboux
+completion. The same note exhausts the natural ambient graph centralizer and
+excludes strict filtered PBW Weyl frames. Its formal-local Darboux chart must
+not be treated as a global filtered `A_2` symbol.
 
 ## 2. Exact defining data
 
@@ -193,8 +194,9 @@ The next computation is family-specific and should preserve this order:
    component; and
 5. after local lifting, prove support saturation and conductor descent.
 
-For `R21`, step 1 also includes the missing polynomial rank-two admission
-test. For `C3`, the conductor square must be kept even though the canonical
+For `R21`, steps 1--3 have been superseded by the global non-admission and
+quantization no-go theorem; only a filtration-collapsing non-PBW bridge is
+still open. For `C3`, the conductor square must be kept even though the canonical
 linear obstruction module is zero. For `I3,6`, corrections must respect the
 intermediate block algebra; treating the degree-18 composite as a primitive
 single incidence would discard its defining feature.

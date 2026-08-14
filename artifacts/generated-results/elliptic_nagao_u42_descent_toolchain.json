@@ -1,0 +1,99 @@
+{
+  "candidate": {
+    "parameter_t": "3631/14",
+    "parameter_u": 42,
+    "rank_lower_bound_available_elsewhere": 17
+  },
+  "eclib_mwrank": {
+    "build": {
+      "boost": "1.87.0",
+      "flint": "3.6.0",
+      "ntl": "11.6.0",
+      "pari": "2.17.4",
+      "repository": "https://github.com/JohnCremona/eclib.git",
+      "source_commit": "538457c5fba5c89b5040e24c0c1e51bab0ad5997",
+      "source_tag": "20260707",
+      "system_install_performed": false
+    },
+    "command": "mwrank -v 2 -s -x 20 -p 200 -S 0",
+    "input_minimal_model": [
+      "1",
+      "1",
+      "1",
+      "-713297808023681194679243421",
+      "7164472716086503658294244200686835329779"
+    ],
+    "original_result": {
+      "diagnostic": "2-descent lower bound on c too large for a machine long",
+      "failed_c_bound_prefix": "-1350421929966662860890122071.024",
+      "result": "Failed to compute rank",
+      "status": "implementation range failure"
+    },
+    "zz_patch_experiment": {
+      "change": "replace the c-loop machine-long bounds and loop variable by NTL ZZ",
+      "result": "the cast failure disappears, but enumeration does not progress within a strict 15-second probe",
+      "search_range_for_a": [
+        "-5088330546968",
+        "58976860768917"
+      ],
+      "status": "algorithmically infeasible search region; patch not retained in the repository"
+    }
+  },
+  "magma": {
+    "artifact": "artifacts/generated-results/elliptic_nagao_u42_magma_probe.json",
+    "artifact_sha256": "5fefc8e6f0a4b9353e58542087849d73620748f71e2ed3620520741ae03bd8e3",
+    "result": "exact verification of 17 independent points; no upper bound because the anonymous service reaches its 311.34MB memory limit",
+    "version": "V2.29-9"
+  },
+  "pari_ellrank": {
+    "cubic_field": {
+      "defining_polynomial": "x^3 + 5*x^2 - 11412764928378899114867894728*x + 458526253829536234130831628843957461105872",
+      "discriminant": "550583635132630911698647770989834903245376696449179247816066888",
+      "discriminant_factorization": [
+        ["2", 3],
+        ["7", 1],
+        ["13", 2],
+        ["19", 1],
+        ["5472853", 1],
+        ["21221383", 1],
+        ["5776951033043", 1],
+        ["4563613047869634535978169346949", 1]
+      ],
+      "polynomial_index": "22122347520"
+    },
+    "exact_points_on_curve_before_descent": 17,
+    "maximum_pari_stack_bytes": 8000000000,
+    "observed_checkpoints": {
+      "largest_recorded_rss_kibibytes": 1895056,
+      "largest_reported_allocated_stack_bytes": 1024000000,
+      "swapins": 0,
+      "swapouts": 0
+    },
+    "process_cleanup": {
+      "child_pid": 72542,
+      "child_process_group": 72542,
+      "post_timeout_child_absent": true,
+      "post_timeout_supervisor_absent": true,
+      "supervisor_pid": 72541
+    },
+    "rank_result": "no ellrank interval emitted",
+    "runner": "elliptic-curves/tools/run_u42_pari_rank.py",
+    "runner_sha256": "c561e3d918b8de775cb71baacb8a2bcd5daf09b7f13fbf6df11c9bb527e60784",
+    "status": "strict timeout",
+    "timeout_seconds": 600,
+    "version": "2.17.4"
+  },
+  "sage": {
+    "launcher": "/usr/local/bin/sage",
+    "launcher_result": "Could not find SageMath-10-9.app",
+    "status": "installed launcher is unusable; no installation or system mutation attempted"
+  },
+  "schema_version": 1,
+  "status": "no rigorous upper bound obtained",
+  "summary": {
+    "certified_rank_upper_bound": null,
+    "explicit_two_covers_returned": 0,
+    "interpretation": "all upper-bound attempts ended in recorded resource or algorithm limits; none supplies mathematical evidence for an upper bound",
+    "new_rank_claim": null
+  }
+}

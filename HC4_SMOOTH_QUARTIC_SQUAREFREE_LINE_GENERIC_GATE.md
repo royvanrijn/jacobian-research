@@ -181,6 +181,14 @@ specializations where coefficients inverted during the calculation vanish.
 Equation (3.3) records the first visible exceptional divisor, but is not
 claimed to be the complete denominator of the certificate.
 
+The subsequent invariant identification `HC4NHM20` proves that (3.3) is the
+first polar of the binary resultant `Res(s^3+t^3,H)` in an explicit
+quadratic direction `K_tau`.  Its generic `(p,q,r)`-fiber is a smooth conic;
+at the fifteen squarefree roots of `Res(s^3+t^3,K_tau)` it splits into one
+resultant line and one residual polar line.  This is not itself the
+tangent/bitangent/flex discriminant of the prospective quartic `Q`; see
+[`HC4_SMOOTH_QUARTIC_PIVOT_POLAR_GEOMETRY.md`](HC4_SMOOTH_QUARTIC_PIVOT_POLAR_GEOMETRY.md).
+
 `HC4NHM17` enters nine exact pieces of that first visible divisor.  It
 closes the central quadratic-zero locus generically and at its first
 algebraic pivot, the generic charts and first algebraic pivot of the fiber
@@ -189,11 +197,17 @@ components of the fiber \(\tau=-1\) together with their first displayed
 secondary pivots.  See
 [`HC4_SMOOTH_QUARTIC_SQUAREFREE_LINE_EXCEPTIONAL_SLICES.md`](HC4_SMOOTH_QUARTIC_SQUAREFREE_LINE_EXCEPTIONAL_SLICES.md).
 
+The generic point of the complete polar conic is subsequently excluded by
+`HC4NHM22`.  Its universal point `[1:3:1]` gives a rational parametrization,
+and an eight-coefficient radical certificate puts the sixth power of every
+active deformation coordinate in the necessary ideal.  See
+[`HC4_SMOOTH_QUARTIC_POLAR_CONIC_GENERIC_GATE.md`](HC4_SMOOTH_QUARTIC_POLAR_CONIC_GENERIC_GATE.md).
+
 The exact remaining work inside action 1 is therefore:
 
-1. continue the exceptional specialization locus of this squarefree-line
-   calculation beyond the slices of `HC4NHM17`, including the complementary
-   residual-line chart;
+1. continue the lower denominator strata left by the generic polar-conic
+   exclusion `HC4NHM22`, the non-generic two-line fibers, and the
+   complementary residual-line chart;
 2. perform the corresponding generic and exceptional eliminations for
    \((x^2,y^2,xy)\), \((2xy,x^2,y^2)\), and \((x^2,0,y^2)\);
 3. only afterward move to the five basepointed simple-line rows with their

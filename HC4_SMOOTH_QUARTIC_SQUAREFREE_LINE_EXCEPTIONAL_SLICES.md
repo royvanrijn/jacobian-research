@@ -71,6 +71,11 @@ nonzero pivot
 
 This note enters selected pieces of \(\Delta=0\).
 
+The later theorem `HC4NHM20` identifies this pivot as the first polar of
+`Res(s^3+t^3,H)` and gives its complete coefficient-space fiber geometry.
+In particular, the split fiber at `tau=-1` is one member of a squarefree
+degree-fifteen degeneration locus, not an isolated factorization accident.
+
 ## 2. The central quadratic vanishes
 
 First set
@@ -261,11 +266,20 @@ can carry a nonzero smooth quartic quotient.
 
 What remains in this first approach is precise:
 
-1. the generic divisor \(\Delta=0\) for arbitrary \(\tau\), not merely its
-   fibers at \(0\) and \(-1\);
-2. any additional factors hidden in nonlinear membership certificates,
-   including further lower strata inside the displayed fibers;
+1. the two universal line components at the fifteen degeneration parameters
+   identified by `HC4NHM20`, beyond the rational `tau=-1` fiber treated
+   here;
+2. the rational-parametrization and secondary-basis denominator strata left
+   after `HC4NHM22` excludes the generic polar conic, including further
+   lower strata inside the displayed fibers;
 3. the complementary residual-line chart and the other three
    basepoint-free boundary types.
 
 The basepointed, doubled-line, and \(\mu=0\) rows remain separate.
+
+The generic polar-conic calculation cited above is
+[`HC4_SMOOTH_QUARTIC_POLAR_CONIC_GENERIC_GATE.md`](HC4_SMOOTH_QUARTIC_POLAR_CONIC_GENERIC_GATE.md).
+The invariant follow-up `HC4NHM23` transports both `tau=-1` component
+certificates and their first secondary strata to the two roots of
+`tau^2-tau+1`; see
+[`HC4_SMOOTH_QUARTIC_FERMAT_SYMMETRY_ORBITS.md`](HC4_SMOOTH_QUARTIC_FERMAT_SYMMETRY_ORBITS.md).

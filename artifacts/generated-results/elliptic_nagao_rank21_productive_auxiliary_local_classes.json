@@ -1,0 +1,2249 @@
+{
+  "schema_version": 1,
+  "status": "complete_finite_group_shortest_class_screen",
+  "target_hit": false,
+  "source": {
+    "input_artifact": "artifacts/generated-results/elliptic_nagao_rank21_productive_auxiliary_orbit.json",
+    "input_artifact_sha256": "afc9c6185067f78eeb7c27c94bf93cebe854cb9b1115772ec62288d0ba4779df",
+    "input_script_sha256": "84f443c5f54612c607309e12fbb4a55cf1fd933f44a529083af166581b7b0165",
+    "auxiliary_basis_count": 8
+  },
+  "finite_screen": {
+    "primes": [
+      13,
+      37,
+      83
+    ],
+    "group_orders": [
+      20,
+      48,
+      90
+    ],
+    "target_residue_unions": [
+      [
+        3,
+        10
+      ],
+      [
+        0,
+        17,
+        20
+      ],
+      [
+        12,
+        31,
+        40,
+        43,
+        52,
+        71
+      ]
+    ],
+    "coefficient_range_per_coordinate": [
+      -8,
+      8
+    ],
+    "state_counts_after_each_basis_coordinate": [
+      17,
+      289,
+      4905,
+      10800,
+      21600,
+      86400,
+      86400,
+      86400
+    ],
+    "complete_product_state_count": 86400,
+    "complete_product_expected_count": 86400,
+    "selected_target_state_count": 192
+  },
+  "exact_lifts": {
+    "distinct_nonsingular_parameter_count": 182,
+    "minimum_log_radical_upper_proxy": 1239.138185968238,
+    "proxy_below_190_count": 0,
+    "top_32": [
+      {
+        "parameter": "2309718972916158367254318553/10832437319995625889619024",
+        "coefficient_vector": [
+          -1,
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          -2
+        ],
+        "finite_parameter_residues": [
+          10,
+          17,
+          43
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 1308.264733232828,
+        "known_repeated_prime_log_savings": 69.12654726458992,
+        "log_radical_upper_proxy": 1239.138185968238,
+        "small_prime_valuations": [
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ],
+          [
+            149,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 526
+      },
+      {
+        "parameter": "288548342985068411460697289220664/2073092563210538798462541210837",
+        "coefficient_vector": [
+          -1,
+          0,
+          -1,
+          -2,
+          -1,
+          0,
+          2,
+          0
+        ],
+        "finite_parameter_residues": [
+          3,
+          20,
+          71
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 1543.321337421009,
+        "known_repeated_prime_log_savings": 54.476676919725826,
+        "log_radical_upper_proxy": 1488.8446605012832,
+        "small_prime_valuations": [
+          [
+            2,
+            14
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 635
+      },
+      {
+        "parameter": "4664079343669519869696711126660232443/18958956562954209995689394354127088",
+        "coefficient_vector": [
+          1,
+          0,
+          -1,
+          -1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "finite_parameter_residues": [
+          10,
+          20,
+          71
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 1736.2855603867465,
+        "known_repeated_prime_log_savings": 62.86527615938146,
+        "log_radical_upper_proxy": 1673.420284227365,
+        "small_prime_valuations": [
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ],
+          [
+            577,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 714
+      },
+      {
+        "parameter": "9757197974665550024651410931008549377/149296706894478739158041666614774588",
+        "coefficient_vector": [
+          -1,
+          1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          1
+        ],
+        "finite_parameter_residues": [
+          10,
+          17,
+          12
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 1752.154312317362,
+        "known_repeated_prime_log_savings": 70.5731651411085,
+        "log_radical_upper_proxy": 1681.5811471762534,
+        "small_prime_valuations": [
+          [
+            2,
+            25
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            4
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 719
+      },
+      {
+        "parameter": "142525670088498684443630660697155826959/2518700398426059700654509450620760952",
+        "coefficient_vector": [
+          1,
+          1,
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          0
+        ],
+        "finite_parameter_residues": [
+          3,
+          20,
+          31
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 1804.6841417078645,
+        "known_repeated_prime_log_savings": 93.87504444853477,
+        "log_radical_upper_proxy": 1710.8090972593297,
+        "small_prime_valuations": [
+          [
+            2,
+            27
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            4
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            79,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 728
+      },
+      {
+        "parameter": "772940924200727468506574275886122932313/16805196302756311856546674756866263684",
+        "coefficient_vector": [
+          0,
+          1,
+          0,
+          -1,
+          0,
+          -1,
+          1,
+          -1
+        ],
+        "finite_parameter_residues": [
+          10,
+          17,
+          43
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 1833.1750145087065,
+        "known_repeated_prime_log_savings": 64.00117100536752,
+        "log_radical_upper_proxy": 1769.173843503339,
+        "small_prime_valuations": [
+          [
+            2,
+            24
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 758
+      },
+      {
+        "parameter": "161985177178008753982794065724796499713830/127761908504709696023499863642802788489",
+        "coefficient_vector": [
+          -2,
+          0,
+          1,
+          2,
+          0,
+          -1,
+          0,
+          -1
+        ],
+        "finite_parameter_residues": [
+          3,
+          20,
+          40
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 1946.2357455064684,
+        "known_repeated_prime_log_savings": 38.105258423923445,
+        "log_radical_upper_proxy": 1908.130487082545,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            71,
+            1
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 817
+      },
+      {
+        "parameter": "147317182273553193527920544130231549200391591/2563192196057902094878995366594561806154982",
+        "coefficient_vector": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          1,
+          -1,
+          -1
+        ],
+        "finite_parameter_residues": [
+          10,
+          20,
+          40
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2081.842907381691,
+        "known_repeated_prime_log_savings": 65.41360708170264,
+        "log_radical_upper_proxy": 2016.4293002999884,
+        "small_prime_valuations": [
+          [
+            2,
+            32
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            53,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 864
+      },
+      {
+        "parameter": "489907545425428575433834895566216665162569521/34157134643283513029866965105776468209789888",
+        "coefficient_vector": [
+          0,
+          -1,
+          -2,
+          -1,
+          -1,
+          2,
+          0,
+          0
+        ],
+        "finite_parameter_residues": [
+          10,
+          17,
+          71
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2128.216929150746,
+        "known_repeated_prime_log_savings": 79.18306187554121,
+        "log_radical_upper_proxy": 2049.033867275205,
+        "small_prime_valuations": [
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 879
+      },
+      {
+        "parameter": "98776546036845404679526730375697111285759690137/898195306702636367386364878121218421539570011",
+        "coefficient_vector": [
+          -1,
+          0,
+          -2,
+          -2,
+          1,
+          0,
+          1,
+          0
+        ],
+        "finite_parameter_residues": [
+          10,
+          17,
+          52
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2211.12455837402,
+        "known_repeated_prime_log_savings": 54.181046027282854,
+        "log_radical_upper_proxy": 2156.9435123467374,
+        "small_prime_valuations": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ],
+          [
+            107,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 924
+      },
+      {
+        "parameter": "1301237588617355160990749410719891082862466227029/41001675964813892450401063504532956367726498064",
+        "coefficient_vector": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          -1,
+          1,
+          1
+        ],
+        "finite_parameter_residues": [
+          3,
+          20,
+          52
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2268.820111363463,
+        "known_repeated_prime_log_savings": 71.82852785587112,
+        "log_radical_upper_proxy": 2196.991583507592,
+        "small_prime_valuations": [
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 944
+      },
+      {
+        "parameter": "237050870436077784179289513063926913697339181501278/3280466336768899913833108997185520811312566539475",
+        "coefficient_vector": [
+          1,
+          -1,
+          -2,
+          -1,
+          0,
+          1,
+          0,
+          -1
+        ],
+        "finite_parameter_residues": [
+          3,
+          17,
+          52
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2368.800940539798,
+        "known_repeated_prime_log_savings": 61.47449775886053,
+        "log_radical_upper_proxy": 2307.326442780937,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            79,
+            2
+          ],
+          [
+            83,
+            2
+          ],
+          [
+            89,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 986
+      },
+      {
+        "parameter": "2706291245215695399918619342564947823508361187236359/66271713672985601793488509014820491828812130602184",
+        "coefficient_vector": [
+          -2,
+          0,
+          0,
+          -1,
+          1,
+          -2,
+          2,
+          0
+        ],
+        "finite_parameter_residues": [
+          10,
+          17,
+          43
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2414.08712727282,
+        "known_repeated_prime_log_savings": 83.89079579707924,
+        "log_radical_upper_proxy": 2330.196331475741,
+        "small_prime_valuations": [
+          [
+            2,
+            27
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1000
+      },
+      {
+        "parameter": "128439941957292676175619725734038759701654440820697313/1113510034170510697536085370268085109969520318972003",
+        "coefficient_vector": [
+          -2,
+          0,
+          0,
+          0,
+          -2,
+          0,
+          2,
+          0
+        ],
+        "finite_parameter_residues": [
+          3,
+          20,
+          43
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2493.4123598955116,
+        "known_repeated_prime_log_savings": 66.0753006440646,
+        "log_radical_upper_proxy": 2427.337059251447,
+        "small_prime_valuations": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            3
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ],
+          [
+            89,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1041
+      },
+      {
+        "parameter": "2396203667914117420825949846094050622973546779854245591/145111877517248074719895846164031820034175092647402818",
+        "coefficient_vector": [
+          -1,
+          -2,
+          -1,
+          0,
+          0,
+          -1,
+          1,
+          -1
+        ],
+        "finite_parameter_residues": [
+          3,
+          17,
+          31
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2571.2921558447124,
+        "known_repeated_prime_log_savings": 91.24695538270738,
+        "log_radical_upper_proxy": 2480.045200462005,
+        "small_prime_valuations": [
+          [
+            2,
+            30
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            29,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1063
+      },
+      {
+        "parameter": "4824769198138223490972105060199538038115075987955231779/281675052258961652074950459512802996162266786605490432",
+        "coefficient_vector": [
+          -1,
+          0,
+          0,
+          0,
+          2,
+          -2,
+          1,
+          0
+        ],
+        "finite_parameter_residues": [
+          3,
+          20,
+          52
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2584.4175790396157,
+        "known_repeated_prime_log_savings": 62.020669411542585,
+        "log_radical_upper_proxy": 2522.396909628073,
+        "small_prime_valuations": [
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1085
+      },
+      {
+        "parameter": "10134270846560576167813720322354244344153033426680989857/400413893596554924854653406145581896844345832356935576",
+        "coefficient_vector": [
+          -2,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          2,
+          1
+        ],
+        "finite_parameter_residues": [
+          10,
+          20,
+          12
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2588.802849969947,
+        "known_repeated_prime_log_savings": 62.174354154139685,
+        "log_radical_upper_proxy": 2526.6284958158076,
+        "small_prime_valuations": [
+          [
+            2,
+            25
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            79,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1085
+      },
+      {
+        "parameter": "160589617224658265220670173394929679513054397345084651221/2533644886838599584096825962013780388765413007435554272",
+        "coefficient_vector": [
+          2,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          0,
+          1
+        ],
+        "finite_parameter_residues": [
+          10,
+          20,
+          71
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2636.9629575136128,
+        "known_repeated_prime_log_savings": 66.06169677128004,
+        "log_radical_upper_proxy": 2570.901260742333,
+        "small_prime_valuations": [
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1108
+      },
+      {
+        "parameter": "114592062780130979358463779542920325668727349053342387131/15103725057428221722798437131195236475609064401427243414",
+        "coefficient_vector": [
+          2,
+          1,
+          0,
+          -1,
+          -1,
+          0,
+          0,
+          2
+        ],
+        "finite_parameter_residues": [
+          3,
+          17,
+          52
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2663.904375153898,
+        "known_repeated_prime_log_savings": 83.23317405832566,
+        "log_radical_upper_proxy": 2580.671201095572,
+        "small_prime_valuations": [
+          [
+            2,
+            32
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            29,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1109
+      },
+      {
+        "parameter": "331789073350458715539144404376543389284944401889832769323/4822746728930638916966601573550622458645834289650937429",
+        "coefficient_vector": [
+          -1,
+          0,
+          -2,
+          0,
+          1,
+          0,
+          1,
+          -2
+        ],
+        "finite_parameter_residues": [
+          3,
+          20,
+          71
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2651.7680123578057,
+        "known_repeated_prime_log_savings": 59.343813409813734,
+        "log_radical_upper_proxy": 2592.424198947992,
+        "small_prime_valuations": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1114
+      },
+      {
+        "parameter": "18988025705162688462828754913512578283487717414516272644067/295957990096798418126596862933239346076276057304815280568",
+        "coefficient_vector": [
+          1,
+          2,
+          0,
+          1,
+          -1,
+          0,
+          -1,
+          0
+        ],
+        "finite_parameter_residues": [
+          10,
+          17,
+          12
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2732.4770245939603,
+        "known_repeated_prime_log_savings": 76.39538751085568,
+        "log_radical_upper_proxy": 2656.081637083105,
+        "small_prime_valuations": [
+          [
+            2,
+            25
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            79,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1140
+      },
+      {
+        "parameter": "146734021861304726183512830806989820473146308665041867417131/134276626887699481038322964853136308031282287148833270658",
+        "coefficient_vector": [
+          -1,
+          0,
+          1,
+          2,
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "finite_parameter_residues": [
+          3,
+          17,
+          31
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2773.161703888801,
+        "known_repeated_prime_log_savings": 77.62222342325548,
+        "log_radical_upper_proxy": 2695.5394804655457,
+        "small_prime_valuations": [
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1159
+      },
+      {
+        "parameter": "105377293806700970342907086104142810131020088109042648960641/6702912069660028265055822690315994567128935475017038188886",
+        "coefficient_vector": [
+          0,
+          0,
+          0,
+          -1,
+          -2,
+          1,
+          -1,
+          -1
+        ],
+        "finite_parameter_residues": [
+          10,
+          20,
+          12
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2786.248938326005,
+        "known_repeated_prime_log_savings": 73.0081608682171,
+        "log_radical_upper_proxy": 2713.2407774577878,
+        "small_prime_valuations": [
+          [
+            2,
+            32
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1171
+      },
+      {
+        "parameter": "1001672607773481756911622555306196813830644420638180039274161/288074158725960089639610408658233407956155740723479482861480",
+        "coefficient_vector": [
+          0,
+          0,
+          0,
+          -2,
+          0,
+          2,
+          0,
+          0
+        ],
+        "finite_parameter_residues": [
+          3,
+          17,
+          31
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2860.5866173836703,
+        "known_repeated_prime_log_savings": 69.58841490395831,
+        "log_radical_upper_proxy": 2790.998202479712,
+        "small_prime_valuations": [
+          [
+            2,
+            25
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            3
+          ],
+          [
+            23,
+            4
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ],
+          [
+            107,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1202
+      },
+      {
+        "parameter": "24493237266195303254205100718423017573714094890933185150145819/3498224131109806159664550445088519201238064768951012927549558",
+        "coefficient_vector": [
+          0,
+          1,
+          1,
+          -1,
+          -1,
+          0,
+          -1,
+          0
+        ],
+        "finite_parameter_residues": [
+          3,
+          17,
+          40
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2910.694347453294,
+        "known_repeated_prime_log_savings": 64.94231823629741,
+        "log_radical_upper_proxy": 2845.7520292169966,
+        "small_prime_valuations": [
+          [
+            2,
+            41
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1228
+      },
+      {
+        "parameter": "351532909075609133322922752887927293709021095582534687433421422/1200017535518394743225704801937115069403727016092282477002399",
+        "coefficient_vector": [
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          0,
+          -1,
+          -2
+        ],
+        "finite_parameter_residues": [
+          10,
+          20,
+          52
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2926.501124675039,
+        "known_repeated_prime_log_savings": 60.11160885833806,
+        "log_radical_upper_proxy": 2866.389515816701,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            79,
+            2
+          ],
+          [
+            83,
+            2
+          ],
+          [
+            137,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1232
+      },
+      {
+        "parameter": "4760267375590700611112432698191218049112739766996578581049589173/157709659779038216238807377478607889982690135487737150155041346",
+        "coefficient_vector": [
+          -1,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          -1,
+          -1
+        ],
+        "finite_parameter_residues": [
+          10,
+          20,
+          31
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 2986.531312570546,
+        "known_repeated_prime_log_savings": 79.35173281444852,
+        "log_radical_upper_proxy": 2907.1795797560976,
+        "small_prime_valuations": [
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1252
+      },
+      {
+        "parameter": "93787039620981131546533042651901379352064388283042471393409988803/5611581687436233695914700866758059313036419365205450881561913154",
+        "coefficient_vector": [
+          -2,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          -2
+        ],
+        "finite_parameter_residues": [
+          3,
+          17,
+          31
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 3058.8164010175497,
+        "known_repeated_prime_log_savings": 75.98473278828266,
+        "log_radical_upper_proxy": 2982.831668229267,
+        "small_prime_valuations": [
+          [
+            2,
+            33
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            4
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ],
+          [
+            677,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1283
+      },
+      {
+        "parameter": "1265739472924916822747255477270841490155297690973750419991586334229/24782676570416006940524514066011530444497908334927135109636154422",
+        "coefficient_vector": [
+          1,
+          1,
+          0,
+          -1,
+          1,
+          -1,
+          0,
+          -1
+        ],
+        "finite_parameter_residues": [
+          10,
+          20,
+          71
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 3089.599897603504,
+        "known_repeated_prime_log_savings": 66.78098446657575,
+        "log_radical_upper_proxy": 3022.818913136928,
+        "small_prime_valuations": [
+          [
+            2,
+            32
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1304
+      },
+      {
+        "parameter": "6333192262547503019237117814253839817753195254678493452180725767373/99603829266274783754536607581351881926460341774973038296810652428",
+        "coefficient_vector": [
+          0,
+          1,
+          -4,
+          0,
+          1,
+          0,
+          2,
+          0
+        ],
+        "finite_parameter_residues": [
+          3,
+          20,
+          52
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 3124.938636980876,
+        "known_repeated_prime_log_savings": 85.28750918827761,
+        "log_radical_upper_proxy": 3039.6511277925983,
+        "small_prime_valuations": [
+          [
+            2,
+            25
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            3
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            29,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1309
+      },
+      {
+        "parameter": "48717511601856479089103376976027506637442972832783637176562941437263/817075313876105477854356297424122977274867894201939557561612529564",
+        "coefficient_vector": [
+          -2,
+          0,
+          -2,
+          0,
+          0,
+          0,
+          2,
+          -2
+        ],
+        "finite_parameter_residues": [
+          3,
+          17,
+          43
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 3165.3145125155424,
+        "known_repeated_prime_log_savings": 72.45067048102842,
+        "log_radical_upper_proxy": 3092.863842034514,
+        "small_prime_valuations": [
+          [
+            2,
+            24
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            3
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1332
+      },
+      {
+        "parameter": "289467996154521911287915129749462838708432916989421981659361298873161/5105268790047157529449471233701291195329034249357851303805392396598",
+        "coefficient_vector": [
+          -1,
+          -2,
+          1,
+          0,
+          -3,
+          0,
+          0,
+          0
+        ],
+        "finite_parameter_residues": [
+          3,
+          20,
+          40
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 3200.4309367251803,
+        "known_repeated_prime_log_savings": 83.21847342816211,
+        "log_radical_upper_proxy": 3117.212463297018,
+        "small_prime_valuations": [
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ],
+          [
+            919,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 1341
+      }
+    ],
+    "parameter_sha256": "5e2e62624c29449539ad0c1c966959dcee10a910d517798f86270e0852c8285a"
+  },
+  "conclusion": {
+    "target_hit": false,
+    "exact_conductor_call_count": 0,
+    "reason": "The best exact radical proxy is far above 182.72, so the declared conductor gate rejects every shortest finite-class lift.",
+    "scope_warning": "Alternative kernel lifts of the same finite classes are not excluded."
+  },
+  "reproduction": {
+    "command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/search_nagao_rank21_productive_auxiliary_local_classes.py",
+    "python": "3.14.6",
+    "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+    "script_sha256": "25e6798a801d5f56700f3be68ff82c41a2968cc9829783c9fdaf42ef0a7d0136",
+    "wall_seconds": 6.039746334005031,
+    "no_subprocesses": true
+  }
+}

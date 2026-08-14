@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "artifact_kind": "exact_public_center_offset_annulus_sieve",
+  "status": "bounded_search_no_certified_30th_point",
+  "target_hit": false,
+  "claim_scope": {
+    "bounded": "the completed public-center offset annulus only",
+    "not_a_rank_upper_bound": true,
+    "one_pass_no_retries": true
+  },
+  "source": {
+    "engine": "elliptic-curves/cas/search_elkies_klagsbrun_rank30_denominator_sieve.py",
+    "engine_sha256": "73d46aa761e912feee18667a7ffea240db9a211ce9401ec73b8722fe54f09878",
+    "prior_base_artifact": "artifacts/generated-results/elliptic_elkies_klagsbrun_rank30_denominator_sieve.json",
+    "prior_base_artifact_sha256": "6f1d16c429b8d2df330eaa70e37161cc77e41a6bd1e641d0f2a90133406b70a9",
+    "prior_extension_artifact": "artifacts/generated-results/elliptic_elkies_klagsbrun_rank30_denominator_sieve_b500000.json",
+    "prior_extension_artifact_sha256": "0e1de93ee3f99d2b5beae97a056b47f0388987861ccde993e776d4b55c3c5314"
+  },
+  "parameters": {
+    "anchor_count": 29,
+    "denominator_interval": [
+      3163,
+      50000
+    ],
+    "absolute_offset_interval": [
+      16385,
+      65536
+    ],
+    "primitivity": "gcd(b,s)=gcd(k,b)=1",
+    "sieve_primes": [
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43,
+      47,
+      53,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79,
+      83,
+      89,
+      97
+    ],
+    "wall_cap_seconds": 600.0
+  },
+  "nonoverlap": {
+    "minimum_public_center_gap": "23145080394896901366632038332",
+    "minimum_gap_center_indices": [
+      27,
+      2
+    ],
+    "twice_maximum_annulus_shift": "131072/10004569",
+    "pairwise_center_boxes_disjoint": true,
+    "disjoint_from_prior_base_by_offset_magnitude": true,
+    "disjoint_from_prior_extension_by_denominator": true,
+    "reduced_offset_denominator_is_exactly_b_squared": true
+  },
+  "search_result": {
+    "declared_primitive_candidate_count": 80474692618,
+    "processed_primitive_candidate_count": 80474692618,
+    "completed_denominator_interval": [
+      3163,
+      50000
+    ],
+    "search_complete": true,
+    "wall_cap_reached": false,
+    "modular_survivor_count_before_primitivity": 500069,
+    "modular_survivor_count_after_primitivity": 269139,
+    "modular_survivor_manifest_sha256": "8bf8fbe73b7fdf201a43e67c03b0857e12c506df73f8b0d918b2330ebd94da49",
+    "negative_homogeneous_value_count_after_sieve": 0,
+    "exact_nonsquare_count_after_sieve": 269139,
+    "exact_square_abscissa_count": 0,
+    "candidate_records": [],
+    "certified_independent_30th_point_count": 0,
+    "rank30_target_hit": false,
+    "allowed_mask_cache_entry_count": 30681,
+    "wall_seconds": 87.98729054200521
+  },
+  "reproduction": {
+    "command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/search_elkies_klagsbrun_rank30_offset_annulus.py",
+    "script": "elliptic-curves/cas/search_elkies_klagsbrun_rank30_offset_annulus.py",
+    "script_sha256": "2d4f7570b2b712d72cd509b832ecd39d3e203a97e6b51493c03b56d54144a243",
+    "python": "3.14.6",
+    "pari_gp": "[2, 17, 4]"
+  }
+}

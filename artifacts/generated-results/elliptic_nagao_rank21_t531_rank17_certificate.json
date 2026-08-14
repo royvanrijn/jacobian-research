@@ -1,0 +1,1471 @@
+{
+  "actual_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/verify_nagao_rank21_t531.py",
+  "candidate": {
+    "below_strict_log_conductor_target": true,
+    "conductor": "17363106716312881727260568367360064041745970511465978238830",
+    "exact_log_conductor_bound": {
+      "conductor_less_than_power_of_ten": "10^59",
+      "decimal_digit_count": 59,
+      "deduced_log_10_upper_bound": "231/100",
+      "deduced_log_conductor_upper_bound": "13629/100",
+      "exp_231_over_100_degree_7_partial_sum": "80381233705038797/8000000000000000",
+      "partial_sum_greater_than_10": true,
+      "strict_target_as_rational": "4568/25",
+      "strict_target_proved_exactly": true
+    },
+    "log_conductor": "134.101697952194633417051508476732477176827185877235544931213",
+    "minimal_discriminant": "-15316939098358949657540978405817658509933023826998371506189702967296000",
+    "minimal_model": [
+      1,
+      1,
+      1,
+      -22193317898044251109470,
+      6088949854883010585125116290941595
+    ],
+    "parameter_t": "531/2",
+    "root_number": -1,
+    "short_weierstrass_coefficients": [
+      "0",
+      "0",
+      "0",
+      "-28762539995865349437873147/16",
+      "142043022214926589979767702955869580907/32"
+    ],
+    "target_rank": 21
+  },
+  "exact_rank_certificate": {
+    "certified_algebraic_rank_lower_bound": 17,
+    "combined_exact_rank_over_F2": 17,
+    "finite_reduction_signatures": [
+      {
+        "doubled_subgroup_order": 8,
+        "group_order": 16,
+        "prime": 11,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 19,
+        "group_order": 38,
+        "prime": 29,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 26,
+        "group_order": 52,
+        "prime": 41,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 15,
+        "group_order": 60,
+        "prime": 47,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 15,
+        "group_order": 60,
+        "prime": 53,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 20,
+        "group_order": 80,
+        "prime": 73,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 24,
+        "group_order": 96,
+        "prime": 79,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 51,
+        "group_order": 102,
+        "prime": 89,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 27,
+        "group_order": 108,
+        "prime": 97,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 59,
+        "group_order": 118,
+        "prime": 101,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 77,
+        "group_order": 154,
+        "prime": 149,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 90,
+        "group_order": 180,
+        "prime": 167,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      }
+    ],
+    "saturated_basis": [
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "3452979117363/4",
+        "jacobian_y": "1878911287900494120"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "1984057682739/4",
+        "jacobian_y": "1915519344810041880"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-7889830023405/4",
+        "jacobian_y": "557341212739077396"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "1261644593523/4",
+        "jacobian_y": "-1975657170911271120"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "3611523745923/4",
+        "jacobian_y": "1884620847221764470"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-7988529829197/4",
+        "jacobian_y": "-251730569567451240"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "404202842763/4",
+        "jacobian_y": "2063545881160438395"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "2988467043603/4",
+        "jacobian_y": "-1874249630214294060"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-7981208624397/4",
+        "jacobian_y": "-286284186730261440"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "866396110803/4",
+        "jacobian_y": "-2014853612631301260"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "4278584473683/4",
+        "jacobian_y": "-1933859784265906140"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-7962299885037/4",
+        "jacobian_y": "-360259841561567220"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-7414021270461/4",
+        "jacobian_y": "-1184538057720593310"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "5224884761683/4",
+        "jacobian_y": "2078315931443520860"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-4201670048997/4",
+        "jacobian_y": "-2273352195560342085"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "2423713286216787/1156",
+        "jacobian_y": "15447767645785957634880/4913"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "32781522610995/4",
+        "jacobian_y": "23240977965742456296"
+      }
+    ],
+    "saturated_basis_sha256": "3601c3e17bde06c2694af3bee7ba00c98912fac9b131c1fc0a5fd8ba5a7393fe",
+    "small_prime_saturation": {
+      "exact_returned_points_on_curve": 17,
+      "height_determinant_ratio": "4294967296.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "input_point_count": 17,
+      "original_height_determinant": "42031267661179885721436785.30069121807183295527388811874652484351377030097556265299320307161920580403",
+      "pari_milliseconds": 30,
+      "prime_bound_strict_upper_limit": 20,
+      "returned_point_count": 17,
+      "saturated_basis": [
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "3452979117363/4",
+          "jacobian_y": "1878911287900494120"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "1984057682739/4",
+          "jacobian_y": "1915519344810041880"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "-7889830023405/4",
+          "jacobian_y": "557341212739077396"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "1261644593523/4",
+          "jacobian_y": "-1975657170911271120"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "3611523745923/4",
+          "jacobian_y": "1884620847221764470"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "-7988529829197/4",
+          "jacobian_y": "-251730569567451240"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "404202842763/4",
+          "jacobian_y": "2063545881160438395"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "2988467043603/4",
+          "jacobian_y": "-1874249630214294060"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "-7981208624397/4",
+          "jacobian_y": "-286284186730261440"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "866396110803/4",
+          "jacobian_y": "-2014853612631301260"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "4278584473683/4",
+          "jacobian_y": "-1933859784265906140"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "-7962299885037/4",
+          "jacobian_y": "-360259841561567220"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "-7414021270461/4",
+          "jacobian_y": "-1184538057720593310"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "5224884761683/4",
+          "jacobian_y": "2078315931443520860"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "-4201670048997/4",
+          "jacobian_y": "-2273352195560342085"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "2423713286216787/1156",
+          "jacobian_y": "15447767645785957634880/4913"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "32781522610995/4",
+          "jacobian_y": "23240977965742456296"
+        }
+      ],
+      "saturated_basis_sha256": "3601c3e17bde06c2694af3bee7ba00c98912fac9b131c1fc0a5fd8ba5a7393fe",
+      "saturated_height_determinant": "9786167103140588.319263603841115538513249008747257319918490211366156651865589118793886870057137171744",
+      "scope_warning": "PARI documents ellsaturation under a finite-index hypothesis; the full rank was unknown when this search was run",
+      "status": "completed",
+      "wall_seconds": 0.058828667002671864
+    },
+    "two_torsion_certificate_prime": 17
+  },
+  "height_selection": {
+    "runs": [
+      {
+        "decimal_precision": 72,
+        "gp_process_wall_seconds": 0.666074207998463,
+        "numerical_rank": 17,
+        "subset_height_determinant": "42031267661179885721436785.3006912180718329552738881187465248435137703010",
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15,
+          16,
+          17,
+          19
+        ],
+        "subset_largest_eigenvalue": "150.344882822027354297593434078726677445333022280389435227222828267932745",
+        "subset_smallest_eigenvalue": "1.78782234435835347822623133244183239580813223005477489878437464473049993"
+      },
+      {
+        "decimal_precision": 120,
+        "gp_process_wall_seconds": 0.666074207998463,
+        "numerical_rank": 17,
+        "subset_height_determinant": "42031267661179885721436785.3006912180718329552738881187465248435137703009755626529932030716192058040282932794009057731062",
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15,
+          16,
+          17,
+          19
+        ],
+        "subset_largest_eigenvalue": "150.344882822027354297593434078726677445333022280389435227222828267932744873785669926826199683323364089760689192287231723",
+        "subset_smallest_eigenvalue": "1.78782234435835347822623133244183239580813223005477489878437464473049992582351710782176493739434845766823683558301266635"
+      }
+    ],
+    "selected_pool_indices_one_based": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19
+    ],
+    "selection_is_not_certification": true,
+    "stable_numerical_rank": 17
+  },
+  "primary_source": "https://da.lib.kobe-u.ac.jp/da/kernel/E0003610/E0003610.pdf",
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/verify_nagao_rank21_t531.py",
+  "schema_version": 1,
+  "script_sha256": "debd3241531cd0b98e5f106e7be5f831063770a43c3ba8fb7ae683da555d2a56",
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+    "python": "3.14.6"
+  },
+  "status": "exact_rank17_certificate_complete",
+  "theorem": "the Nagao rank-21-family specialization T=531/2 has Mordell-Weil rank at least 17 and log conductor below 182.72",
+  "uniform_search": {
+    "all_memberships_checked_exactly": true,
+    "exact_pool_point_count": 114,
+    "exact_pool_sha256": "0da80569fdbeb2265c3bc593c275fd2ff561d9f71c9e82bdff172c716d20854a",
+    "height_bound": 1000000,
+    "new_distinct_jacobian_images": 102,
+    "new_image_sha256": "93223e04b6a6d24a0aa44f2698046f1f871e145be779baafc708b50c342d08ce",
+    "new_points": [
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-24842672119446683380828012533/12451059130850596",
+        "jacobian_y": "-49953344632393761478061205390195686443080/173667861461174998893893",
+        "quartic_x": "201",
+        "quartic_z": "390545099/8"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-67727019148472652023234849597/36866051356536964",
+        "jacobian_y": "1098425827277520531176916554954822483090410/884809849862680463557711",
+        "quartic_x": "3911/22",
+        "quartic_z": "6048168273/121"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "4922330163318643909129319649139/384586521100761604",
+        "jacobian_y": "-1359046649868442609996076396893715066177268640/29812685708052348903345601",
+        "quartic_x": "13469/22",
+        "quartic_z": "13953384045/121"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-7658390999949932974348578382661/5058704052833064804",
+        "jacobian_y": "2732232416430269881064163153454919223424312760/1422227010018451555819841949",
+        "quartic_x": "4708/29",
+        "quartic_z": "354242116935/6728"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "20938764317416751098167732890261403/6684381765177724524004",
+        "jacobian_y": "371317794832711607385981618069936310628334397476360/68312767781365009979750546915251",
+        "quartic_x": "-3207/32",
+        "quartic_z": "286153239757/2048"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "857703931654907349592943216247514203/787363029725360397170404",
+        "jacobian_y": "-169640945349820418483370388644708428814401408264868360/87331826089428431841187973508317651",
+        "quartic_x": "22495/61",
+        "quartic_z": "3105671765357/29768"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "255363331791299663026715951274245083/66772805515912642380004",
+        "jacobian_y": "-15775330238404820429962912634238511513060357697821960/2156797884160667380307000000267501",
+        "quartic_x": "33137/64",
+        "quartic_z": "1162819552509/8192"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "20527464856279390778243227125651/3231624152189296900",
+        "jacobian_y": "11466138469419419227152472540678195983791931372/726174979100412244026025375",
+        "quartic_x": "-14823/86",
+        "quartic_z": "251674061800/1849"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "33853117992880297280971774313558693283/6432393033454340394911044",
+        "jacobian_y": "-24193301056797829000938507912805238345614226943667128360/2039242493651873950997667644353965991",
+        "quartic_x": "48990/89",
+        "quartic_z": "8876756990017/63368"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-1355224512348335390677421536488837/1318942534107413439844",
+        "jacobian_y": "13655198040854040983654571399974461500072283740960/5987545460828027809049339495459",
+        "quartic_x": "13497/94",
+        "quartic_z": "127110369533/2209"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "14348221640952919798851773277209043/5639946747652943738884",
+        "jacobian_y": "-213957017058564762785421582811931168546015591187060/52944703205385226210901899211519",
+        "quartic_x": "44037/94",
+        "quartic_z": "300398315512/2209"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "24542118656891872243835887852939/6359542269620624100",
+        "jacobian_y": "14863691015863386175804435212866101758936474686/2004697276730756639184286125",
+        "quartic_x": "-13183/106",
+        "quartic_z": "397185593175/2809"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-1315262929331108330925497120397/676417255137026404",
+        "jacobian_y": "-53074262425242410457285416165591510526403635/69539574602983349235936349",
+        "quartic_x": "22055/106",
+        "quartic_z": "138170910864/2809"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "105393151179405348403088621145629/746372697931639202",
+        "jacobian_y": "-382520183631816874515079912244678763780020292790/227975734455646091856789401",
+        "quartic_x": "80557/122",
+        "quartic_z": "153944229852/3721"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "15412065332332167710571949931336083/153466446927251844",
+        "jacobian_y": "239167010462525972486192513387133913468233992964560/7515020516992168236712209",
+        "quartic_x": "-36239/134",
+        "quartic_z": "7051462884/4489"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "171717876175763698391834339993179323/41476190519132967450724",
+        "jacobian_y": "8704463385665001315016210752452110988296840831515360/1055864781301990209195167942760829",
+        "quartic_x": "-18743/142",
+        "quartic_z": "712799644963/5041"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-93439781282004221921314733809437/87808126031107356484",
+        "jacobian_y": "233335127991137261579669343379031990165839494960/102851842488843417030746969831",
+        "quartic_x": "24065/166",
+        "quartic_z": "393565158924/6889"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-521768157820471156629690406183773/279978099858717607876",
+        "jacobian_y": "-671938492657999890494576141469484305098621349780/585593308769478307124193861047",
+        "quartic_x": "41579/194",
+        "quartic_z": "468511291528/9409"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "141779746820276863244432068127493723/106397183831367708465124",
+        "jacobian_y": "-9109689889946842091276750760461509379897461504577760/4338156472897957449870852835004429",
+        "quartic_x": "78451/202",
+        "quartic_z": "1141650341363/10201"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "353231848196889402652916945447956083/551558417569809252998404",
+        "jacobian_y": "-96477596074576801661204300637574591005087546583262760/51203221796102849807145706463565599",
+        "quartic_x": "69509/208",
+        "quartic_z": "7798032799179/86528"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "467435867844577614152573116762678379427/102329611896902279888561476",
+        "jacobian_y": "1238007359368471675066493007170266840798505308268552367720/129393363877923325938646624197703640153",
+        "quartic_x": "-32989/232",
+        "quartic_z": "15173714995611/107648"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "340840722801099782739979987032837/266249669819353392050",
+        "jacobian_y": "-3161110594881243847653496252739275055386904654496/1535990831357832277820058420125",
+        "quartic_x": "92969/242",
+        "quartic_z": "1615316304700/14641"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "185669603492785318314518544991891563/27155896147990872750244",
+        "jacobian_y": "9876883470315201448334679734063599543583983622954640/559379081784279130290745201508309",
+        "quartic_x": "-46703/262",
+        "quartic_z": "2307066458732/17161"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "333176274605877274727215367752871187/71394048410657164682116",
+        "jacobian_y": "23567446413563115215313125650413775069398613150215120/2384531297937021431003321103841583",
+        "quartic_x": "-47055/326",
+        "quartic_z": "3740753064356/26569"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "14839449284418762835073093203545045819387/166165531369551086891552356",
+        "jacobian_y": "-225937902141429340315397219929152622816050959840574681657480/267745033722312890769213597943155317437",
+        "quartic_x": "217561/331",
+        "quartic_z": "45116823461731/876488"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "38980457756321601113234248910054019/31590141302509430344900",
+        "jacobian_y": "-1421021407629203075169382558924217851089896970962784/701838787023577507916416906588375",
+        "quartic_x": "128591/338",
+        "quartic_z": "3110382737525/28561"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "308423711272229617816350962329439591347/3431242682463748339448836",
+        "jacobian_y": "-676993750595429672137162123098069744359723121626830802920/794487678840748435773218329532733823",
+        "quartic_x": "247816/377",
+        "quartic_z": "58349383472961/1137032"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "8275363559159556509408929414001041707/2122537664718716949955876",
+        "jacobian_y": "2910477602760933843756432869872387560468172696653130980/386538824336367997377329370091792453",
+        "quartic_x": "-50951/406",
+        "quartic_z": "5827572619496/41209"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "260835556467543794290551910460718664707/5501600159372168252571076",
+        "jacobian_y": "526375324679207625190626305163471970487547244648998583320/1613034101059324137798703411439477897",
+        "quartic_x": "-108169/424",
+        "quartic_z": "24628264607373/359552"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "247304692060457836007546607863847139/97053562755433400832004",
+        "jacobian_y": "-15306969545937113959611885195222902601909452619902650/3779438100848293668806971749312001",
+        "quartic_x": "212783/454",
+        "quartic_z": "7009519680045/51529"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "781353414038044797524077398150942579667/156644747959928079594436996",
+        "jacobian_y": "2679850746302972916494555164530592214871823138380493584280/245066399632585843372114390488036498193",
+        "quartic_x": "-89456/593",
+        "quartic_z": "394247068680591/2813192"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "173375738300197003753983799099727242380987/1782205613441679591747315556",
+        "jacobian_y": "9023027763832013629640557288150912008001636788682112932204920/9404738487590030044244863913491536932963",
+        "quartic_x": "-161141/613",
+        "quartic_z": "147756620036669/3006152"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "26836052786827502589360595671382927707/49781256178418315222338276",
+        "jacobian_y": "-83608042856202312373804326976890432777402766225635671880/43904475177725513231115509236676238253",
+        "quartic_x": "213245/652",
+        "quartic_z": "74083625003577/850208"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "1606198013532321056110271070842203662115443/859518711760177579414113895684",
+        "jacobian_y": "-274695088125755570021773400239831838378259014019458757792249240/99607723970159504428334623412527919747584031",
+        "quartic_x": "290974/679",
+        "quartic_z": "463551160002911/3688328"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-45546205948826820649170727090144188693/22737239176076635008883876",
+        "jacobian_y": "593462822280723649738348810992691325256643709158651680/13552412386074735398398538848264787797",
+        "quartic_x": "150329/766",
+        "quartic_z": "7152537182439/146689"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "6644454088435072886598323619880559859/1067175176025321660276100",
+        "jacobian_y": "2110747033688179979438821692176965104047957844959806956/137804558680887520336141670215188625",
+        "quartic_x": "-132809/778",
+        "quartic_z": "20660834213800/151321"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-36533071385523309381904894452858237/21550185900710752484644",
+        "jacobian_y": "-639394440317168818381975560667139991730458480378915/395445414917998003497633109315909",
+        "quartic_x": "179227/802",
+        "quartic_z": "8220789681328/160801"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "666949874890480653765181066113807362571/71203046466103404658512100",
+        "jacobian_y": "-2136724756008822599252226061665001389942908719501897209282/75103102217656652168072529523742489875",
+        "quartic_x": "486701/818",
+        "quartic_z": "21095474405975/167281"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-3599427974754512187625283427197593677/1797999089020201355460964",
+        "jacobian_y": "36511944961890605460704529854265563732506270317040965/301365972411116610217820403217565789",
+        "quartic_x": "183047/938",
+        "quartic_z": "10727159069264/219961"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "2893397558775361230607774587206301765867/45465153108135409392184996",
+        "jacobian_y": "-19450443819638021084042574004475772628168612853243243595120/38320220546890454119729630802987169557",
+        "quartic_x": "618691/946",
+        "quartic_z": "13485570526772/223729"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "801961978921818119727086808115811725803/2564311394333645313699364",
+        "jacobian_y": "2838812583314697103922097402698986507357657156691464401060/513293962721194113983997963509531611",
+        "quartic_x": "-256811/958",
+        "quartic_z": "6405386975768/229441"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "2540844822995604932705904941437144443/1168551150342239477649124",
+        "jacobian_y": "519153157659044251307555172796573087109177507194744260/157899808726699528182241307440399571",
+        "quartic_x": "-51925/962",
+        "quartic_z": "818050606408/6253"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "11750364006416758634851781029077235530243/7328770967901613831753721284",
+        "jacobian_y": "186879217025313155484000994897353909795522501604469613725160/78425399124974887339145534319442054464631",
+        "quartic_x": "-14969/971",
+        "quartic_z": "898886533001331/7542728"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "702141366498976784677874096803397379/145782707458708200328900",
+        "jacobian_y": "-72141884304436224695021200946013824669999572137042624/6957753371845123970999008149979625",
+        "quartic_x": "577727/1066",
+        "quartic_z": "40090576819650/284089"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-17130506667559004438627414916843942933/18445784262073498962910756",
+        "jacobian_y": "22813629336415726919668069185083105101672964882071594980/9902747381914872763504912188407591387",
+        "quartic_x": "151295/1082",
+        "quartic_z": "17179422231064/292681"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "34856679728604513678773749432201718761459/1883231154330663085229002500",
+        "jacobian_y": "811613650585898427501416693511500554431242908294157401803944/10215637135167276916264700460024959390625",
+        "quartic_x": "-255757/1099",
+        "quartic_z": "976414754026125/9662408"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "39938146294394729062440371933524942467/16104472295251766021299396",
+        "jacobian_y": "31529545786036393298277993576413511340241067234155261280/8078481986420489711883625394130461993",
+        "quartic_x": "-79367/1118",
+        "quartic_z": "42136896783597/312481"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "3990557040496647774678327918767362399851/815404563757569942880009636",
+        "jacobian_y": "-30919419072413520153933146811687023933776428473104734406200/2910514181725094470175120001141475137077",
+        "quartic_x": "626681/1153",
+        "quartic_z": "1499152703648565/10635272"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-2227135533959089330312526712131937357/4102334723749767295960324",
+        "jacobian_y": "2380858967504573019252877536960622171580915412841150560/1038619931522170351702556215461365729",
+        "quartic_x": "143671/1154",
+        "quartic_z": "21266932155189/332929"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-108197411706115835726388305182208984013/607628453425690498887251716",
+        "jacobian_y": "-4081922196246814278108545552606598871613509920461370457920/1872264344181762906087769198525166959967",
+        "quartic_x": "338755/1186",
+        "quartic_z": "24650120758846/351649"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "3661540491413319867250831517835729939/1557986529637494185215204",
+        "jacobian_y": "-882992454577434170642001830853763107501559406695580355/243083544680021522683470706362129299",
+        "quartic_x": "559969/1222",
+        "quartic_z": "49927732247920/373321"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "153994753245569690036503112850646747611/80227882928654713567396",
+        "jacobian_y": "-238873951368247096809523376157927499035911415459110665170/2840521044344449643663179731265493",
+        "quartic_x": "876711/1318",
+        "quartic_z": "4956792223495/434281"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "725634503186698635041543347607182302003/244379651731304212702968964",
+        "jacobian_y": "2401041231055658060161576422627066346742430488843478090060/477537603203369395508888541065909209039",
+        "quartic_x": "-125739/1342",
+        "quartic_z": "62530587936632/450241"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-118748576030045031513306478869545837541/121996940253836482575901924",
+        "jacobian_y": "386536695616044918790013743511389613361515509343829888480/168435418801650198706106806788657727379",
+        "quartic_x": "195031/1378",
+        "quartic_z": "27613056270295/474721"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "73655505188083035939623038088640466792243/3801742142429382407338104324",
+        "jacobian_y": "-2493495070638083594744780257751757376891465143896728606141160/29301104985300665708649666652562451820479",
+        "quartic_x": "980956/1559",
+        "quartic_z": "1942235475122817/19443848"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-4379239601275082292979097078029722531/2700219455085679065700322",
+        "jacobian_y": "-2756948786797076775287935728930442072511900742947225535/1568749496925604624566955969806911159",
+        "quartic_x": "359753/1586",
+        "quartic_z": "32534382219332/628849"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "826890429913105504509626384616834093547/3376586410420072498869168036",
+        "jacobian_y": "-49133509917552298797715802149246794660306700339821286504520/24526005165160086871763593867446114185973",
+        "quartic_x": "523709/1699",
+        "quartic_z": "1830414670433811/23092808"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "648460900745854878219836727760429796547/291549698607903348831955396",
+        "jacobian_y": "-2105037538184499436113031153139851816307672459900052959280/622270063491097105153857303541021366007",
+        "quartic_x": "794795/1762",
+        "quartic_z": "102448958754516/776161"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-116093870673334168988192073436589997/69458529284775093765604",
+        "jacobian_y": "3811235641717235071786029143714180345005312102111635/2288223218134230156011857496259149",
+        "quartic_x": "314315/1858",
+        "quartic_z": "44276376664464/863041"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-287498019297730042865397304921612550105037/193611844076308561321000481284",
+        "jacobian_y": "-20851328063203575083050751384923575535755533447413270952283240/10648977151240134569330681361604540721650369",
+        "quartic_x": "443570/1907",
+        "quartic_z": "1540047106401223/29093192"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-335987478499088253223830819301528458693/193370946121670500254058276",
+        "jacobian_y": "-511603849475347133066221448708956758856963157949562408830/336121928172428148150675999940964853253",
+        "quartic_x": "433535/1958",
+        "quartic_z": "48670258782859/958441"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "7786856815080945753191768548655964153697707/98306457863882457393186071716",
+        "jacobian_y": "2715770157082291523507995600741674484514509912464567187607721480/3852858727992952374016485596602410199592533",
+        "quartic_x": "-544283/2084",
+        "quartic_z": "470307909984231/8686112"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-176072898386153381721945082023247829/122738867757309209253156",
+        "jacobian_y": "10837833787574816118726868134686445982695527237306500/5375058335762140542179786648544837",
+        "quartic_x": "345973/2174",
+        "quartic_z": "63061393223880/1181569"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-107947028844010278788838531135070335717/875692351673396210111958244",
+        "jacobian_y": "-6991391786257643907137597804236586250595735973336873711040/3239196898146749181986979823143528684691",
+        "quartic_x": "644071/2234",
+        "quartic_z": "88776298441986/1247689"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "150281833995985471561925364046581961341027/122260254589197535987741879876",
+        "jacobian_y": "-10802092015021381343266432445980136754956326838850984009679320/5343649407856822181439796487124541543712953",
+        "quartic_x": "901511/2372",
+        "quartic_z": "1223800685862559/11252768"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "1146236995366537721002016901086559254163/410592368200727032313801284",
+        "jacobian_y": "4785839672172371556024635653480902728081062756810949746710/1039983196217863856478422366577412205369",
+        "quartic_x": "-213881/2486",
+        "quartic_z": "212762328888669/1545049"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "533424115642541771199408187742481579/554413751858003014542244",
+        "jacobian_y": "-97905464358401764006217257293174943689209173614484080/51601342912721302249871054089576309",
+        "quartic_x": "895771/2498",
+        "quartic_z": "156363827200980/1560001"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "249796122859625555027898198216535478091/60191765138029155046608676",
+        "jacobian_y": "482957906859406670979635478203536268609912763311382027120/58373486307854562333758388731730216197",
+        "quartic_x": "-339343/2566",
+        "quartic_z": "232750056120780/1646089"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-112985117011793546919882350098875052683/77075043725898968068761362",
+        "jacobian_y": "-473901701524068459630927083685418588167250485708898430730/239235528315121474593489170350964752421",
+        "quartic_x": "713641/3058",
+        "quartic_z": "124157193690820/2337841"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-9393172870534364887767136512564486357/5761673080460937131066884",
+        "jacobian_y": "-3012456817019800384851780800291032150943015592206966415/1728752940876615690272232258033916481",
+        "quartic_x": "730543/3226",
+        "quartic_z": "134419517854832/2601769"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "4785729431553117802757436790802346416509467/947188463293057591151508276196",
+        "jacobian_y": "1284901481923266598921723798476832293791651673746705888052032520/115229748128918502974580947192316651232150157",
+        "quartic_x": "-530457/3488",
+        "quartic_z": "3406326272590451/24332288"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-2932267763180292029294314508460153683157/2509988723604943757539037284",
+        "jacobian_y": "-34952714065247741567759138893554323822332047958472997551310/15718737760287486105513808306727370975619",
+        "quartic_x": "866349/3538",
+        "quartic_z": "175349256810973/3129361"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "6264438433844047322907612325221508085589/285211007595735386875034882",
+        "jacobian_y": "350016762920467645783639148071413060193816753301304942650595/3405919872331220342682558605098354660478",
+        "quartic_x": "-895641/3758",
+        "quartic_z": "334369129821412/3530641"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-4982591690961929515702096461877300985037/3404375917235407188317077444",
+        "jacobian_y": "49252146191221141558687554559430470741793761886587844392890/24829402998814882163531933633585223329609",
+        "quartic_x": "628701/3922",
+        "quartic_z": "5519313654659/103933"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-336154144848916263471615891211856658073893/170515387524229260282930570916",
+        "jacobian_y": "4987090492590852424406699578955694169130086623499208887158270/8801473335153888261181174259045384103479317",
+        "quartic_x": "774681/4106",
+        "quartic_z": "206467544376973/4214809"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-84532939180487970331419005553013665621/42499670571772438714062244",
+        "jacobian_y": "13206145466871035612990573141844001117494251119458325440/34632860101676860975952534247439749941",
+        "quartic_x": "827219/4322",
+        "quartic_z": "228171199870670/4669921"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-877777185521165229846167508439496946080229/662212117220253155649352592356",
+        "jacobian_y": "142777773219493129284581033045615470415414607684930299010323640/67360561377777842129787085979409644369468813",
+        "quartic_x": "669723/4324",
+        "quartic_z": "2034410414008585/37393952"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "2460391963567924804890198996330180451/2363552097711212602124100",
+        "jacobian_y": "873167393556808665082049500827364726180288850423742272/454211140781366166207812018888057625",
+        "quartic_x": "126247/4346",
+        "quartic_z": "484276219626150/4721929"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "7461564830182353628349430347040969976179/9847303532198417341064080900",
+        "jacobian_y": "228901349326426599865367227453882675338561235034792817658176/122147898678123550212797311683457495453375",
+        "quartic_x": "235357/4606",
+        "quartic_z": "496167903340150/5303809"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "24608235764128062839743717625013717266827/21101264327934261382546851876",
+        "jacobian_y": "759423905488173814759664988420181361178447921482285025602080/383153440533038502779776630682017019218203",
+        "quartic_x": "94019/4954",
+        "quartic_z": "653682340774683/6135529"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "29240139413513976274505551284943793227/11470611444904676818867876",
+        "jacobian_y": "19678322715642977026348687303805043201240294805057789220/4856125099086844715563534728235659797",
+        "quartic_x": "-373937/5018",
+        "quartic_z": "853480936633752/6295081"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "98500868675119918914409239442822599825809283/78427763687828841118341914312644",
+        "jacobian_y": "177123637019161100316517671265259985060140430159933796262787786840/86818996232643775854379120391711832637919359159",
+        "quartic_x": "69942/5953",
+        "quartic_z": "30995807864546833/283505672"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-1352264246698555641258019875976960277/990106435025731320523524",
+        "jacobian_y": "256742421526549033803193836939752394952806132161250065/123149552409405045818691219439154721",
+        "quartic_x": "953357/6094",
+        "quartic_z": "501500624326128/9284209"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "699168037562694172075645253121989826929019/311544225714213452322408859684",
+        "jacobian_y": "74373528816529080820745526892210934407103062447617477183185550/21736497843690916209642723259877848960714469",
+        "quartic_x": "-377863/6506",
+        "quartic_z": "1395403673032945/10582009"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "1159252614570636368354960949889330604851205067/536630175561362155731949998031396",
+        "jacobian_y": "5067850241623524031431264682087856637812330045664137155148102977080/1553898502433870009802808282662165988730462716507",
+        "quartic_x": "-468033/8809",
+        "quartic_z": "81078478344297301/620787848"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "1804926328785960915672229179631906600945323/710809206305837920339458556324",
+        "jacobian_y": "301941900895633439688334157572277455930017944598561413896558560/74909962411323721963129252454189581563997771",
+        "quartic_x": "-690923/9334",
+        "quartic_z": "2950832556626437/21780889"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "24845149634050628052592472568557966834043/17100201288644084625739903684",
+        "jacobian_y": "618366650814668630968833638779072637536072756911620031719535/279519330126396029246415368132129982098281",
+        "quartic_x": "-40649/10442",
+        "quartic_z": "3138425710807728/27258841"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "86860007554043257220932052109930809730974787/69645874957729072064823689257156",
+        "jacobian_y": "147768585629109773306304218335762602179673591386681998926566142120/72652926259921698171772041216737812211207480663",
+        "quartic_x": "144127/11572",
+        "quartic_z": "29208936444728369/267822368"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "12667617640530719173606344382967059519965799971/5496502718158389631778070619013956",
+        "jacobian_y": "180359019286379833857683224835489089854002449148790468665658476365800/50937741324777005939487148033876586732226973231513",
+        "quartic_x": "-812949/13213",
+        "quartic_z": "185346006130399085/1396666952"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "18226551714588701112849347832527100357643/22446034262119410700283688484",
+        "jacobian_y": "788049385117549369525094202275355787514938170934076296624160/420358124080262980726418329077658540620581",
+        "quartic_x": "661609/14078",
+        "quartic_z": "4719330195757443/49547521"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "181111506591390895361636478384998126107/127931309158943552526103876",
+        "jacobian_y": "393425162596909492153989414635669395110788900704820306345/180873640256379681156866967817374110297",
+        "quartic_x": "-13793/14138",
+        "quartic_z": "5700578867739504/49970761"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "3157200584399598028272458226131880282963/2861302977351433842023347684",
+        "jacobian_y": "37288424531981055562398886659694266850343695842623462337165/19131797839893042173238186018521607748531",
+        "quartic_x": "445693/18542",
+        "quartic_z": "8986512962922096/85951441"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "2211789009494568516831623892428697922483/1953745407615925527312128644",
+        "jacobian_y": "21193511707313920477393296054368592047171858734837928927860/10794734577400069895278987646328498601841",
+        "quartic_x": "446615/20554",
+        "quartic_z": "11138700479196024/105616729"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "969247932600139306200181252047405077823376158027/731331743335467616875040211381785636",
+        "jacobian_y": "163692831267405476348350892719793082509763148017375851290688369116309320/78177476824130235996416898971868662659959294478371173",
+        "quartic_x": "135565/21901",
+        "quartic_z": "427589681626985597/3837230408"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "33491177633554776431205397767864462908323/22420833822538384720166402724",
+        "jacobian_y": "946457491218103191301514353165230466798352820619672386657235/419650410935063287254352635840074306217579",
+        "quartic_x": "-360041/50954",
+        "quartic_z": "75466883626302672/649077529"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "116243692684170804905701201737920668676562907/77230703487946219634862160008676",
+        "jacobian_y": "192398710615365369913816472776156214894792347070057941528067103680/84838894196776238705992905609627174683854458803",
+        "quartic_x": "-413939/52094",
+        "quartic_z": "79092900961613766/678446209"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "130791493595302892967728549625288588821952871971/101243493343296853251368219341144900",
+        "jacobian_y": "8323398768252829501468546105037463824019440997249483549030111451070232/4026805894934916666955076948928481088162728385161625",
+        "quartic_x": "703971/79393",
+        "quartic_z": "5568286975038612475/50425987592"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "344843688230060245517975883111897828740166770547/240089894345180374468819537830527236",
+        "jacobian_y": "32284321723650289910047218339950457160325198416955243050744721523506280/14705196552733055552487095631088012760482802570251873",
+        "quartic_x": "-224339/86476",
+        "quartic_z": "1714963907995867879/14956197152"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "1796310147059632194624357701890731297256584453/1331509189988418068678827879080050",
+        "jacobian_y": "36314200547786061335238850240781390781088452136717021520040564265413/17177947017142690880338455512364587004371583449875",
+        "quartic_x": "582893/135674",
+        "quartic_z": "516044414752919900/4601858569"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "100352625397812329748601827023422457826804323379/75065805739193963504232274870434244",
+        "jacobian_y": "5407831314734224049991438093306306879804668165490828178978763787675210/2570829287630282173083319029017808829386590429325559",
+        "quartic_x": "824949/156562",
+        "quartic_z": "684953491756894595/6127914961"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "160475963620226612977718960789251569121955896627/110507705142841090026591034991119876",
+        "jacobian_y": "10155073313174178719119404961366970878720702185044552821378126541820520/4591968004438705174021991371403545581888919297082047",
+        "quartic_x": "-817801/213268",
+        "quartic_z": "283012169034753837/2458553504"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "377284063095337155757653496842830824868036427/278049936845023631214939792707236",
+        "jacobian_y": "1229129530355531400472789853963789284450155766577691351154377831420/579554409078285268981923859626626188451339481877",
+        "quartic_x": "820565/223294",
+        "quartic_z": "1400685672939680904/12465052609"
+      }
+    ],
+    "pari_reported_milliseconds": 36853,
+    "raw_point_sha256": "2b687569f86c401c78c1dc0f8311e42d63f89ab6c9dbaa8b55afc04e8e8b6428",
+    "signed_point_count": 228,
+    "signless_point_count": 114,
+    "visible_point_count": 12,
+    "wall_seconds": 37.319290958002966
+  }
+}

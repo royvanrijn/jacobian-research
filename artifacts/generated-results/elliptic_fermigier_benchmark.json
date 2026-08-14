@@ -1,0 +1,97 @@
+{
+  "curve": {
+    "conductor": 22720638514787473197194583889675055980109503436060704437972911338086049759883790,
+    "log_conductor": "182.724910950637428796108330351524078685943544318334397594996",
+    "minimal_discriminant": 3680432205940761304587473756368167508478483727616134375685404923405185646725374901862332174937532900,
+    "minimal_model": [
+      1,
+      0,
+      1,
+      -940299517776391362903023121165864,
+      10707363070719743033425295515449274534651125011362
+    ],
+    "root_number": 1,
+    "supplied_points": {
+      "all_on_curve": true,
+      "count": 12,
+      "height_pairing_determinant_approx": "250979829361163866490.455309331357047773819953633254915866668",
+      "on_curve_count": 12
+    }
+  },
+  "family": {
+    "internal_normalized_parameter": "39508/39",
+    "jacobian_images_checked": 13,
+    "numerical_rank_seed": "Jacobian images 2--13; the recorded height determinant is numerical evidence, not an independence certificate",
+    "published_parameter": "19754/39",
+    "root_tuple": [
+      0,
+      55,
+      314,
+      378,
+      1007,
+      1036
+    ],
+    "visible_quartic_points_checked": 13
+  },
+  "published_rank_lower_bound": 22,
+  "rank_certificate_in_this_artifact": null,
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/verify_fermigier_benchmark.py",
+  "schema_version": 1,
+  "score_definition": "sum over 2 < p <= p_M of ((2-a_p)/(p+1-a_p))*log(p); M is the ordinal of p_M, not a numerical prime cutoff",
+  "score_table": {
+    "100": {
+      "last_prime": 541,
+      "rounded_to_two_decimals": "44.12",
+      "value": "44.1174580645372169723301463301362413200900161375940305141723"
+    },
+    "1000": {
+      "last_prime": 7919,
+      "rounded_to_two_decimals": "105.17",
+      "value": "105.170797710727487401869810188433705725798400617268331774405"
+    },
+    "10000": {
+      "last_prime": 104729,
+      "rounded_to_two_decimals": "166.47",
+      "value": "166.468215011032810300689966829873142363865675654822650732538"
+    },
+    "200": {
+      "last_prime": 1223,
+      "rounded_to_two_decimals": "57.54",
+      "value": "57.5440213357221657569188189424236164460237997326788493210797"
+    },
+    "2000": {
+      "last_prime": 17389,
+      "rounded_to_two_decimals": "122.76",
+      "value": "122.762489287886251123856679582686961943350081033553013644319"
+    },
+    "400": {
+      "last_prime": 2741,
+      "rounded_to_two_decimals": "81.51",
+      "value": "81.5073467632143275543834438695447681203205146181177646793487"
+    },
+    "4000": {
+      "last_prime": 37813,
+      "rounded_to_two_decimals": "143.84",
+      "value": "143.844304576100086924311634414267690365705502978233090188494"
+    },
+    "50": {
+      "last_prime": 229,
+      "rounded_to_two_decimals": "29.49",
+      "value": "29.4869226232911786601251270220352688536561079448582713321490"
+    }
+  },
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6"
+  },
+  "sources": [
+    "https://matwbn.icm.edu.pl/ksiazki/aa/aa82/aa8243.pdf",
+    "https://pari.math.u-bordeaux.fr/dochtml/html/Elliptic_curves.html"
+  ],
+  "status": "verified computation: exact family/model/conductor and PARI score replay; the published rank lower bound is cited, not independently certified here",
+  "strict_target": {
+    "log_conductor_less_than": "182.72",
+    "rank_at_least": 21
+  },
+  "strict_target_met_by_benchmark": false
+}

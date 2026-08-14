@@ -1,0 +1,1794 @@
+{
+  "schema_version": 1,
+  "status": "complete_partial_finite_class_representative_screen",
+  "target_hit": false,
+  "source": {
+    "productive_orbit_artifact_sha256": "afc9c6185067f78eeb7c27c94bf93cebe854cb9b1115772ec62288d0ba4779df",
+    "productive_orbit_script_sha256": "84f443c5f54612c607309e12fbb4a55cf1fd933f44a529083af166581b7b0165",
+    "finite_class_engine_sha256": "25e6798a801d5f56700f3be68ff82c41a2968cc9829783c9fdaf42ef0a7d0136",
+    "auxiliary_basis_count": 8
+  },
+  "finite_product": {
+    "primes": [
+      13,
+      37,
+      83
+    ],
+    "group_orders": [
+      20,
+      48,
+      90
+    ],
+    "target_residue_unions": [
+      [
+        3,
+        10
+      ],
+      [
+        0,
+        17,
+        20
+      ],
+      [
+        12,
+        31,
+        40,
+        43,
+        52,
+        71
+      ]
+    ],
+    "coefficient_range_per_coordinate": [
+      -8,
+      8
+    ],
+    "state_counts_after_each_basis_coordinate": [
+      17,
+      289,
+      4905,
+      10800,
+      21600,
+      86400,
+      86400,
+      86400
+    ],
+    "complete_state_count": 86400
+  },
+  "selection": {
+    "single_representatives_per_target_finite_point": 32,
+    "pair_representatives_per_target_finite_pair": 8,
+    "single_target_finite_point_counts": {
+      "p13": 4,
+      "p37": 4,
+      "p83": 12
+    },
+    "pair_target_finite_point_counts": {
+      "p13_p37": 16,
+      "p13_p83": 48,
+      "p37_p83": 48
+    },
+    "unique_selected_vector_count": 1315,
+    "selected_vector_sha256": "ad2660669bffa922c6bd6b392fb10f25b33025d9371b07a69b72623edd9a8f94"
+  },
+  "exact_lifts": {
+    "exceptional_vector_count": 0,
+    "distinct_parameter_x_incidence_count": 1274,
+    "generic_visible_incidence_count": 4,
+    "published_fiber_incidence_count": 1,
+    "decontaminated_distinct_parameter_count": 1269,
+    "parameter_sha256": "f830c815ba9edd4d284f323c2f1c2e487a75acaefd135e32ac1e7c8010cf4806",
+    "proxy_prime_bound": 1000,
+    "strict_proxy_gate": 190.0,
+    "proxy_below_gate_count": 0,
+    "minimum_log_radical_upper_proxy": 327.55666183774576,
+    "top_32": [
+      {
+        "parameter": "44246851/613596",
+        "selection_labels": [
+          "p13",
+          "p13_p83",
+          "p83"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "29046167867/85289844"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 401.05819849321,
+        "known_repeated_prime_log_savings": 73.50153665546425,
+        "log_radical_upper_proxy": 327.55666183774576,
+        "small_prime_valuations": [
+          [
+            2,
+            23
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            83,
+            2
+          ],
+          [
+            89,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 131
+      },
+      {
+        "parameter": "13551607/14570",
+        "selection_labels": [
+          "p13"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "-1047923603/2025230"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 376.84167623330245,
+        "known_repeated_prime_log_savings": 46.74436672506892,
+        "log_radical_upper_proxy": 330.09730950823354,
+        "small_prime_valuations": [
+          [
+            2,
+            32
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 139
+      },
+      {
+        "parameter": "756895897/8063390",
+        "selection_labels": [
+          "p13",
+          "p13_p83",
+          "p83"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "2570615713/8063390"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 457.0292955940196,
+        "known_repeated_prime_log_savings": 84.59348287065525,
+        "log_radical_upper_proxy": 372.43581272336434,
+        "small_prime_valuations": [
+          [
+            2,
+            30
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            17,
+            5
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            71,
+            1
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 148
+      },
+      {
+        "parameter": "9093346867/259168002",
+        "selection_labels": [
+          "p13"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "97857270131/259168002"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 508.9096914934836,
+        "known_repeated_prime_log_savings": 71.41794794852109,
+        "log_radical_upper_proxy": 437.4917435449625,
+        "small_prime_valuations": [
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            4
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 182
+      },
+      {
+        "parameter": "5223762509/5347709",
+        "selection_labels": [
+          "p13",
+          "p13_p37",
+          "p37"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "-419353052802/743331551"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 495.94502752005246,
+        "known_repeated_prime_log_savings": 53.48030504519375,
+        "log_radical_upper_proxy": 442.4647224748587,
+        "small_prime_valuations": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            37,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 185
+      },
+      {
+        "parameter": "17800061801/175539208",
+        "selection_labels": [
+          "p37"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "54639538991/175539208"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 519.0974762721767,
+        "known_repeated_prime_log_savings": 44.55364265089327,
+        "log_radical_upper_proxy": 474.5438336212834,
+        "small_prime_valuations": [
+          [
+            2,
+            26
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            37,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 199
+      },
+      {
+        "parameter": "40019275301/40488320",
+        "selection_labels": [
+          "p83"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "-3240228743319/5627876480"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 536.6710424471302,
+        "known_repeated_prime_log_savings": 43.53994463935948,
+        "log_radical_upper_proxy": 493.1310978077707,
+        "small_prime_valuations": [
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            41,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 208
+      },
+      {
+        "parameter": "53541295229/2725158158",
+        "selection_labels": [
+          "p37"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "148875557064207/378796983962"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 556.5871537440725,
+        "known_repeated_prime_log_savings": 54.608247234774055,
+        "log_radical_upper_proxy": 501.9789065092984,
+        "small_prime_valuations": [
+          [
+            2,
+            33
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            89,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 211
+      },
+      {
+        "parameter": "133599192591/3215958488",
+        "selection_labels": [
+          "p13"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "1193527388921/3215958488"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 557.0469011989333,
+        "known_repeated_prime_log_savings": 52.849144384606724,
+        "log_radical_upper_proxy": 504.1977568143265,
+        "small_prime_valuations": [
+          [
+            2,
+            25
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            257,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 211
+      },
+      {
+        "parameter": "335140695989/17217376738",
+        "selection_labels": [
+          "p37"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "1034190503810889/2393215366582"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 593.5429237604382,
+        "known_repeated_prime_log_savings": 77.73460521476905,
+        "log_radical_upper_proxy": 515.8083185456691,
+        "small_prime_valuations": [
+          [
+            2,
+            32
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            41,
+            2
+          ],
+          [
+            79,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 210
+      },
+      {
+        "parameter": "187816701712/2590796105",
+        "selection_labels": [
+          "p13_p83",
+          "p83"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "122504133840937/360120658595"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 568.130403355216,
+        "known_repeated_prime_log_savings": 51.78456319170124,
+        "log_radical_upper_proxy": 516.3458401635148,
+        "small_prime_valuations": [
+          [
+            2,
+            19
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 216
+      },
+      {
+        "parameter": "95348872189/3788521603",
+        "selection_labels": [
+          "p13"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "204059894435412/526604502817"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 561.2653996888278,
+        "known_repeated_prime_log_savings": 37.31017103236576,
+        "log_radical_upper_proxy": 523.9552286564619,
+        "small_prime_valuations": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 221
+      },
+      {
+        "parameter": "174651648027/7094947912",
+        "selection_labels": [
+          "p37",
+          "p37_p83",
+          "p83"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "382696728104479/986197759768"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 573.0186759332452,
+        "known_repeated_prime_log_savings": 46.81832577486882,
+        "log_radical_upper_proxy": 526.2003501583763,
+        "small_prime_valuations": [
+          [
+            2,
+            25
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 221
+      },
+      {
+        "parameter": "434070756586/8945690137",
+        "selection_labels": [
+          "p83"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "4125680338949/8945690137"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 577.5345665651821,
+        "known_repeated_prime_log_savings": 43.49744878421548,
+        "log_radical_upper_proxy": 534.0371177809666,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 223
+      },
+      {
+        "parameter": "702700215647/1102999472",
+        "selection_labels": [
+          "p37_p83"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "-247526455119/1102999472"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 593.7837569588459,
+        "known_repeated_prime_log_savings": 52.339974675061285,
+        "log_radical_upper_proxy": 541.4437822837846,
+        "small_prime_valuations": [
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 227
+      },
+      {
+        "parameter": "2800652592437/106283202484",
+        "selection_labels": [
+          "p83"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "46660442359953/106283202484"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 628.9257626267405,
+        "known_repeated_prime_log_savings": 72.98312081005744,
+        "log_radical_upper_proxy": 555.942641816683,
+        "small_prime_valuations": [
+          [
+            2,
+            24
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 231
+      },
+      {
+        "parameter": "9591963459083/241645123168",
+        "selection_labels": [
+          "p13"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "12527722989227111/33588672120352"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 644.2446457252837,
+        "known_repeated_prime_log_savings": 76.2382270418533,
+        "log_radical_upper_proxy": 568.0064186834304,
+        "small_prime_valuations": [
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            17,
+            3
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            79,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 237
+      },
+      {
+        "parameter": "9103590961106/174156678543",
+        "selection_labels": [
+          "p83"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "8724402094311289/24207778317477"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 642.9705404257371,
+        "known_repeated_prime_log_savings": 50.83276884367895,
+        "log_radical_upper_proxy": 592.1377715820581,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            71,
+            1
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 245
+      },
+      {
+        "parameter": "33596794530205/739673106862",
+        "selection_labels": [
+          "p13"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "271643414697933/739673106862"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 665.1996701563822,
+        "known_repeated_prime_log_savings": 57.73994175448169,
+        "log_radical_upper_proxy": 607.4597284019005,
+        "small_prime_valuations": [
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 259
+      },
+      {
+        "parameter": "83236460391559/591098191946",
+        "selection_labels": [
+          "p13"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "22336115393787805/82162648680494"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 689.542972298023,
+        "known_repeated_prime_log_savings": 79.11129790968405,
+        "log_radical_upper_proxy": 610.4316743883389,
+        "small_prime_valuations": [
+          [
+            2,
+            32
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            29,
+            4
+          ],
+          [
+            43,
+            2
+          ],
+          [
+            107,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 255
+      },
+      {
+        "parameter": "71374704708737/2509781180542",
+        "selection_labels": [
+          "p83"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "134042474342555219/348859584095338"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 692.978186346764,
+        "known_repeated_prime_log_savings": 64.60563691150394,
+        "log_radical_upper_proxy": 628.3725494352601,
+        "small_prime_valuations": [
+          [
+            2,
+            35
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 265
+      },
+      {
+        "parameter": "26522151484325/1231338011177",
+        "selection_labels": [
+          "p13"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "481612953976998/1231338011177"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 677.5136391844115,
+        "known_repeated_prime_log_savings": 46.891529269806576,
+        "log_radical_upper_proxy": 630.622109914605,
+        "small_prime_valuations": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            23,
+            3
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 269
+      },
+      {
+        "parameter": "199161721450105/3819083869284",
+        "selection_labels": [
+          "p13",
+          "p13_p83",
+          "p83"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "246749949107564119/530852657830476"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 704.6166596086344,
+        "known_repeated_prime_log_savings": 67.2412932002419,
+        "log_radical_upper_proxy": 637.3753664083926,
+        "small_prime_valuations": [
+          [
+            2,
+            27
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            29,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 268
+      },
+      {
+        "parameter": "167124681125663/3368937380924",
+        "selection_labels": [
+          "p83"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "170015286430714407/468282295948436"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 699.1403091829749,
+        "known_repeated_prime_log_savings": 59.863802083941366,
+        "log_radical_upper_proxy": 639.2765070990336,
+        "small_prime_valuations": [
+          [
+            2,
+            25
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 269
+      },
+      {
+        "parameter": "102087961735192/2536833409707",
+        "selection_labels": [
+          "p83"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "131325074533011539/352619843949273"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 691.19251707734,
+        "known_repeated_prime_log_savings": 45.0833263422696,
+        "log_radical_upper_proxy": 646.1091907350703,
+        "small_prime_valuations": [
+          [
+            2,
+            14
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 273
+      },
+      {
+        "parameter": "98185021424011/5977232468044",
+        "selection_labels": [
+          "p37"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "356507749577409413/830835313058116"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 711.5024908177428,
+        "known_repeated_prime_log_savings": 59.92548697777975,
+        "log_radical_upper_proxy": 651.577003839963,
+        "small_prime_valuations": [
+          [
+            2,
+            24
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            17,
+            4
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            37,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 276
+      },
+      {
+        "parameter": "964524851337551/2991783648418",
+        "selection_labels": [
+          "p37",
+          "p37_p83",
+          "p83"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "37542747520985309/415857927130102"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 735.7977700925861,
+        "known_repeated_prime_log_savings": 69.18241637056293,
+        "log_radical_upper_proxy": 666.6153537220232,
+        "small_prime_valuations": [
+          [
+            2,
+            35
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            83,
+            2
+          ],
+          [
+            457,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 278
+      },
+      {
+        "parameter": "1030499468783087/54284584500182",
+        "selection_labels": [
+          "p13"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "23432068184717905/54284584500182"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 754.8760001187289,
+        "known_repeated_prime_log_savings": 85.36511830855902,
+        "log_radical_upper_proxy": 669.51088181017,
+        "small_prime_valuations": [
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            4
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            41,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 281
+      },
+      {
+        "parameter": "5657682974642957/134761928320808",
+        "selection_labels": [
+          "p37"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "8516496903885238711/18731908036592312"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 769.3496081196895,
+        "known_repeated_prime_log_savings": 82.78712695572709,
+        "log_radical_upper_proxy": 686.5624811639624,
+        "small_prime_valuations": [
+          [
+            2,
+            26
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            79,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 287
+      },
+      {
+        "parameter": "944713737550913/54296555888248",
+        "selection_labels": [
+          "p37"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "21461795199900839/54296555888248"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 755.4061206850713,
+        "known_repeated_prime_log_savings": 68.14548893817012,
+        "log_radical_upper_proxy": 687.2606317469011,
+        "small_prime_valuations": [
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            31,
+            2
+          ],
+          [
+            37,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 291
+      },
+      {
+        "parameter": "1837918223502313/1909253955256",
+        "selection_labels": [
+          "p83"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "-145953916939382091/265386299780584"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 751.3595314233064,
+        "known_repeated_prime_log_savings": 56.82678858423965,
+        "log_radical_upper_proxy": 694.5327428390667,
+        "small_prime_valuations": [
+          [
+            2,
+            27
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            29,
+            2
+          ],
+          [
+            83,
+            2
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 294
+      },
+      {
+        "parameter": "1940768834094893/89610871758883",
+        "selection_labels": [
+          "p83"
+        ],
+        "forced_incidence_count": 1,
+        "forced_quartic_x": [
+          "4870402347022097636/12455911174484737"
+        ],
+        "trial_prime_bound": 997,
+        "raw_log_absolute_homogenized_discriminant": 763.1350897466453,
+        "known_repeated_prime_log_savings": 65.00897221034063,
+        "log_radical_upper_proxy": 698.1261175363047,
+        "small_prime_valuations": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            23,
+            2
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            79,
+            2
+          ],
+          [
+            83,
+            2
+          ],
+          [
+            137,
+            2
+          ],
+          [
+            599,
+            1
+          ]
+        ],
+        "unfactored_cofactor_decimal_digits_upper_bound": 285
+      }
+    ]
+  },
+  "conclusion": {
+    "target_hit": false,
+    "exact_conductor_call_count": 0,
+    "reason": "After exact published-fiber and generic-section decontamination, no declared one- or two-prime representative has radical upper proxy below 190.",
+    "scope_warning": "This closes only the stated top-32/top-8 representative policy; other kernel lifts of the same finite classes remain open."
+  },
+  "reproduction": {
+    "command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/search_nagao_rank21_productive_auxiliary_partial_classes.py",
+    "python": "3.14.6",
+    "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+    "script_sha256": "1b66d59a1d3fc44e9f59c6f6fd72317e7a93b5e6c22487cb82b8acbfe7542cf1",
+    "wall_seconds": 7.222044917012681,
+    "no_subprocesses": true
+  }
+}

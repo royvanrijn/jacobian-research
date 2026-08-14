@@ -1,0 +1,1604 @@
+{
+  "actual_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/certify_nagao_rank20_t5081.py",
+  "candidate": {
+    "below_strict_log_conductor_target": true,
+    "conductor": "4739512365768104141634183882739432010081578062727282562384233196211945306960",
+    "constructor_parameter_T": "5081/47",
+    "exact_log_conductor_bound": {
+      "conductor_less_than_power_of_ten": "10^76",
+      "decimal_digit_count": 76,
+      "deduced_log_10_upper_bound": "231/100",
+      "deduced_log_conductor_upper_bound": "4389/25",
+      "exp_231_over_100_degree_7_partial_sum": "80381233705038797/8000000000000000",
+      "partial_sum_greater_than_10": true,
+      "strict_target_as_rational": "4568/25",
+      "strict_target_proved_exactly": true
+    },
+    "factor_two_convention_checked": true,
+    "log_conductor": "174.249816228548038353904973690348230789531837166898175962879",
+    "minimal_discriminant": "126112692807661787461041931534709893261155274569961052591643175490028008470229912366239440000000",
+    "minimal_model": [
+      0,
+      -1,
+      0,
+      -47433564031723813622493745045480,
+      124574716166660957649866283198474133374724238272
+    ],
+    "paper_parameter_t": "5081/94",
+    "primitive_quartic_square_scale": "7800",
+    "root_number": 1,
+    "roots": [
+      346,
+      260,
+      255,
+      146,
+      55,
+      0
+    ],
+    "short_weierstrass_coefficients": [
+      "0",
+      "0",
+      "0",
+      "-311211613612139941177181461243396467/23811286661761",
+      "66204111734326457591689019881501880130897370339825026/116191483108948578241"
+    ],
+    "strict_log_conductor_target": "182.72"
+  },
+  "exact_rank_certificate": {
+    "certified_algebraic_rank_lower_bound": 20,
+    "combined_exact_rank_over_F2": 20,
+    "finite_reduction_signatures": [
+      {
+        "doubled_subgroup_order": 9,
+        "group_order": 18,
+        "prime": 11,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 13,
+        "group_order": 26,
+        "prime": 19,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 11,
+        "group_order": 44,
+        "prime": 41,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 33,
+        "group_order": 66,
+        "prime": 53,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 35,
+        "group_order": 70,
+        "prime": 59,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 19,
+        "group_order": 76,
+        "prime": 67,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 42,
+        "group_order": 84,
+        "prime": 71,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 47,
+        "group_order": 94,
+        "prime": 79,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 56,
+        "group_order": 112,
+        "prime": 97,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 28,
+        "group_order": 112,
+        "prime": 101,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 30,
+        "group_order": 120,
+        "prime": 103,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 65,
+        "group_order": 130,
+        "prime": 109,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 29,
+        "group_order": 116,
+        "prime": 113,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 75,
+        "group_order": 150,
+        "prime": 131,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 46,
+        "group_order": 184,
+        "prime": 173,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ]
+        ]
+      }
+    ],
+    "height_matrices_not_used_in_certificate": true,
+    "saturated_basis": [
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-242903017639473183/4879681",
+        "jacobian_y": "-161622758865760575538500/4879681"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "292755125251600002/4879681",
+        "jacobian_y": "-6174908099653374007290/4879681"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-244276938838551663/4879681",
+        "jacobian_y": "-161738742253720999667580/4879681"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-398683937689784658/4879681",
+        "jacobian_y": "-161268736041012613185900/4879681"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "240255425624245155/4879681",
+        "jacobian_y": "32962858492396985791506/4879681"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "50921479681850097/4879681",
+        "jacobian_y": "-224697118637079612001582020/10779215329"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "347542133111657937/4879681",
+        "jacobian_y": "102096462114511778064060/229345007"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "283944122088163857/4879681",
+        "jacobian_y": "-260270030867518308420/103823"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-640741901437987533/4879681",
+        "jacobian_y": "-1075200317662353946204050/229345007"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "30762195539283297/4879681",
+        "jacobian_y": "-238032917634988113114842820/10779215329"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "2591200092739523445/4879681",
+        "jacobian_y": "39311262506794282876872/103823"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "416006293039637067/4879681",
+        "jacobian_y": "1988273134743889303847250/229345007"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "204611862204596341/4879681",
+        "jacobian_y": "47678766763057650146360/4879681"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "285039936862663617/4879681",
+        "jacobian_y": "-11587813806848551026300/4879681"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "3019611172288447917/4879681",
+        "jacobian_y": "-2337382390919801917091400/4879681"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "1230398531365740462/4879681",
+        "jacobian_y": "-562865048120398984358580/4879681"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-616986200374313373/4879681",
+        "jacobian_y": "-3251077021379746572615630/229345007"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "292991247718361442/4879681",
+        "jacobian_y": "5960027928806010186750/4879681"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "470883434018304942/4879681",
+        "jacobian_y": "-155142744806720308550503500/10779215329"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-303434156287106658/4879681",
+        "jacobian_y": "-7750595951122806970750800/229345007"
+      }
+    ],
+    "saturated_basis_sha256": "cae79a6eb2ab158e601c7536d24b8bded78e572c5e925d9ee9e0f53dc531eeac",
+    "small_prime_saturation": {
+      "exact_returned_points_on_curve": 20,
+      "height_determinant_ratio": "274877906944.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "input_point_count": 20,
+      "original_height_determinant": "59437314789804965455330499044254.33950577902617445672248135969029050981122639620232048621641484833467",
+      "pari_milliseconds": 48,
+      "prime_bound_strict_upper_limit": 20,
+      "returned_point_count": 20,
+      "saturated_basis": [
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "-242903017639473183/4879681",
+          "jacobian_y": "-161622758865760575538500/4879681"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "292755125251600002/4879681",
+          "jacobian_y": "-6174908099653374007290/4879681"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "-244276938838551663/4879681",
+          "jacobian_y": "-161738742253720999667580/4879681"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "-398683937689784658/4879681",
+          "jacobian_y": "-161268736041012613185900/4879681"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "240255425624245155/4879681",
+          "jacobian_y": "32962858492396985791506/4879681"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "50921479681850097/4879681",
+          "jacobian_y": "-224697118637079612001582020/10779215329"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "347542133111657937/4879681",
+          "jacobian_y": "102096462114511778064060/229345007"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "283944122088163857/4879681",
+          "jacobian_y": "-260270030867518308420/103823"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "-640741901437987533/4879681",
+          "jacobian_y": "-1075200317662353946204050/229345007"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "30762195539283297/4879681",
+          "jacobian_y": "-238032917634988113114842820/10779215329"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "2591200092739523445/4879681",
+          "jacobian_y": "39311262506794282876872/103823"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "416006293039637067/4879681",
+          "jacobian_y": "1988273134743889303847250/229345007"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "204611862204596341/4879681",
+          "jacobian_y": "47678766763057650146360/4879681"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "285039936862663617/4879681",
+          "jacobian_y": "-11587813806848551026300/4879681"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "3019611172288447917/4879681",
+          "jacobian_y": "-2337382390919801917091400/4879681"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "1230398531365740462/4879681",
+          "jacobian_y": "-562865048120398984358580/4879681"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "-616986200374313373/4879681",
+          "jacobian_y": "-3251077021379746572615630/229345007"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "292991247718361442/4879681",
+          "jacobian_y": "5960027928806010186750/4879681"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "470883434018304942/4879681",
+          "jacobian_y": "-155142744806720308550503500/10779215329"
+        },
+        {
+          "exact_jacobian_membership_checked": true,
+          "jacobian_x": "-303434156287106658/4879681",
+          "jacobian_y": "-7750595951122806970750800/229345007"
+        }
+      ],
+      "saturated_basis_sha256": "cae79a6eb2ab158e601c7536d24b8bded78e572c5e925d9ee9e0f53dc531eeac",
+      "saturated_height_determinant": "216231691555749295567.9863336417996452138287210780862459845946079094931018567738731525831696302642183",
+      "scope_warning": "PARI documents ellsaturation under a finite-index hypothesis; the full rank was unknown when this search was run",
+      "status": "completed",
+      "wall_seconds": 0.08698754199576797
+    },
+    "two_torsion_certificate_prime": 29
+  },
+  "height_selection": {
+    "runs": [
+      {
+        "decimal_precision": 72,
+        "gp_process_wall_seconds": 0.11065204199985601,
+        "numerical_rank": 20,
+        "subset_height_determinant": "59437314789804965455330499044254.3395057790261744567224813596902905098112",
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          23,
+          25
+        ],
+        "subset_largest_eigenvalue": "218.989108938546786004167419179587820735679254382222886892337587773438894",
+        "subset_smallest_eigenvalue": "0.428093777381905327528175288683921410141486444115333123372431311216633246"
+      },
+      {
+        "decimal_precision": 120,
+        "gp_process_wall_seconds": 0.11065204199985601,
+        "numerical_rank": 20,
+        "subset_height_determinant": "59437314789804965455330499044254.3395057790261744567224813596902905098112263962023204862164148483346744197672915826075278",
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          23,
+          25
+        ],
+        "subset_largest_eigenvalue": "218.989108938546786004167419179587820735679254382222886892337587773438893522933260892566411476885091483223404406080395339",
+        "subset_smallest_eigenvalue": "0.428093777381905327528175288683921410141486444115333123372431311216633245990207614344869599814548377533508788515221201226"
+      }
+    ],
+    "selected_point_sha256": "e951f0eee8e59502cfb949e4b91c92fea28061bcddcb37c662e69e9ffe48074c",
+    "selected_pool_indices_one_based": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19,
+      20,
+      23,
+      25
+    ],
+    "selection_is_not_certification": true,
+    "stable_numerical_rank": 20
+  },
+  "interpretation": {
+    "rank_upper_bound_not_claimed": true,
+    "root_number_parity_is_not_used_in_the_rank_certificate": true,
+    "target_rank": 21,
+    "target_reached": false
+  },
+  "point_search": {
+    "all_memberships_checked_exactly": true,
+    "chart_records": [
+      {
+        "chart_id": "cross_08_13_21_rot_0",
+        "mapped_distinct_abscissas": 16,
+        "matrix": [
+          187726,
+          203240,
+          517,
+          1880
+        ],
+        "new_global_abscissas": 3,
+        "pari_milliseconds": 235,
+        "raw_signed_points": 32
+      },
+      {
+        "chart_id": "cross_08_13_21_rot_1",
+        "mapped_distinct_abscissas": 16,
+        "matrix": [
+          203240,
+          -390966,
+          1880,
+          -2397
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 235,
+        "raw_signed_points": 32
+      },
+      {
+        "chart_id": "cross_08_13_21_rot_2",
+        "mapped_distinct_abscissas": 15,
+        "matrix": [
+          390966,
+          -187726,
+          2397,
+          -517
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 234,
+        "raw_signed_points": 30
+      },
+      {
+        "chart_id": "cross_08_13_22_rot_0",
+        "mapped_distinct_abscissas": 9,
+        "matrix": [
+          190311,
+          208321,
+          517,
+          1927
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 244,
+        "raw_signed_points": 18
+      },
+      {
+        "chart_id": "cross_08_13_22_rot_1",
+        "mapped_distinct_abscissas": 10,
+        "matrix": [
+          208321,
+          -398632,
+          1927,
+          -2444
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 241,
+        "raw_signed_points": 20
+      },
+      {
+        "chart_id": "cross_08_13_22_rot_2",
+        "mapped_distinct_abscissas": 9,
+        "matrix": [
+          398632,
+          -190311,
+          2444,
+          -517
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 241,
+        "raw_signed_points": 18
+      },
+      {
+        "chart_id": "cross_06_08_13_rot_0",
+        "mapped_distinct_abscissas": 11,
+        "matrix": [
+          459960,
+          83707,
+          2820,
+          2209
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 233,
+        "raw_signed_points": 22
+      },
+      {
+        "chart_id": "cross_08_21_22_rot_0",
+        "mapped_distinct_abscissas": 12,
+        "matrix": [
+          882351,
+          5081,
+          2397,
+          47
+        ],
+        "new_global_abscissas": 2,
+        "pari_milliseconds": 237,
+        "raw_signed_points": 24
+      },
+      {
+        "chart_id": "cross_08_21_22_rot_1",
+        "mapped_distinct_abscissas": 12,
+        "matrix": [
+          5081,
+          -887432,
+          47,
+          -2444
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 237,
+        "raw_signed_points": 24
+      },
+      {
+        "chart_id": "cross_08_21_22_rot_2",
+        "mapped_distinct_abscissas": 12,
+        "matrix": [
+          887432,
+          -882351,
+          2444,
+          -2397
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 234,
+        "raw_signed_points": 24
+      },
+      {
+        "chart_id": "cross_08_13_16_rot_0",
+        "mapped_distinct_abscissas": 9,
+        "matrix": [
+          538667,
+          350589,
+          2209,
+          3243
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 226,
+        "raw_signed_points": 18
+      },
+      {
+        "chart_id": "cross_08_13_16_rot_1",
+        "mapped_distinct_abscissas": 10,
+        "matrix": [
+          350589,
+          -889256,
+          3243,
+          -5452
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 226,
+        "raw_signed_points": 20
+      },
+      {
+        "chart_id": "cross_06_08_13_rot_2",
+        "mapped_distinct_abscissas": 11,
+        "matrix": [
+          543667,
+          -459960,
+          5029,
+          -2820
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 233,
+        "raw_signed_points": 22
+      },
+      {
+        "chart_id": "cross_06_08_16_rot_0",
+        "mapped_distinct_abscissas": 9,
+        "matrix": [
+          171915,
+          51649,
+          705,
+          1363
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 245,
+        "raw_signed_points": 18
+      },
+      {
+        "chart_id": "cross_06_08_13_rot_1",
+        "mapped_distinct_abscissas": 11,
+        "matrix": [
+          83707,
+          -543667,
+          2209,
+          -5029
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 232,
+        "raw_signed_points": 22
+      },
+      {
+        "chart_id": "cross_08_13_16_rot_2",
+        "mapped_distinct_abscissas": 9,
+        "matrix": [
+          889256,
+          -538667,
+          5452,
+          -2209
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 225,
+        "raw_signed_points": 18
+      },
+      {
+        "chart_id": "cross_06_08_16_rot_2",
+        "mapped_distinct_abscissas": 9,
+        "matrix": [
+          223564,
+          -171915,
+          2068,
+          -705
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 248,
+        "raw_signed_points": 18
+      },
+      {
+        "chart_id": "cross_06_08_15_rot_0",
+        "mapped_distinct_abscissas": 10,
+        "matrix": [
+          368973,
+          108641,
+          1551,
+          2867
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 230,
+        "raw_signed_points": 20
+      },
+      {
+        "chart_id": "cross_06_08_15_rot_2",
+        "mapped_distinct_abscissas": 10,
+        "matrix": [
+          477614,
+          -368973,
+          4418,
+          -1551
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 226,
+        "raw_signed_points": 20
+      },
+      {
+        "chart_id": "cross_06_08_16_rot_1",
+        "mapped_distinct_abscissas": 9,
+        "matrix": [
+          51649,
+          -223564,
+          1363,
+          -2068
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 246,
+        "raw_signed_points": 18
+      },
+      {
+        "chart_id": "cross_08_13_17_rot_0",
+        "mapped_distinct_abscissas": 8,
+        "matrix": [
+          656865,
+          462371,
+          2585,
+          4277
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 230,
+        "raw_signed_points": 16
+      },
+      {
+        "chart_id": "cross_08_17_22_rot_0",
+        "mapped_distinct_abscissas": 10,
+        "matrix": [
+          1262973,
+          289617,
+          3431,
+          2679
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 232,
+        "raw_signed_points": 20
+      },
+      {
+        "chart_id": "cross_06_08_15_rot_1",
+        "mapped_distinct_abscissas": 10,
+        "matrix": [
+          108641,
+          -477614,
+          2867,
+          -4418
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 232,
+        "raw_signed_points": 20
+      },
+      {
+        "chart_id": "cross_08_17_22_rot_1",
+        "mapped_distinct_abscissas": 9,
+        "matrix": [
+          289617,
+          -1552590,
+          2679,
+          -6110
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 229,
+        "raw_signed_points": 18
+      },
+      {
+        "chart_id": "cross_06_12_15_rot_0",
+        "mapped_distinct_abscissas": 11,
+        "matrix": [
+          637317,
+          76583,
+          2679,
+          2021
+        ],
+        "new_global_abscissas": 1,
+        "pari_milliseconds": 227,
+        "raw_signed_points": 22
+      },
+      {
+        "chart_id": "cross_08_17_22_rot_2",
+        "mapped_distinct_abscissas": 9,
+        "matrix": [
+          1552590,
+          -1262973,
+          6110,
+          -3431
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 228,
+        "raw_signed_points": 18
+      },
+      {
+        "chart_id": "cross_13_21_22_rot_0",
+        "mapped_distinct_abscissas": 8,
+        "matrix": [
+          692040,
+          7666,
+          1880,
+          47
+        ],
+        "new_global_abscissas": 1,
+        "pari_milliseconds": 241,
+        "raw_signed_points": 16
+      },
+      {
+        "chart_id": "cross_13_21_22_rot_1",
+        "mapped_distinct_abscissas": 8,
+        "matrix": [
+          7666,
+          -699706,
+          47,
+          -1927
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 238,
+        "raw_signed_points": 16
+      },
+      {
+        "chart_id": "cross_13_21_22_rot_2",
+        "mapped_distinct_abscissas": 8,
+        "matrix": [
+          699706,
+          -692040,
+          1927,
+          -1880
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 240,
+        "raw_signed_points": 16
+      },
+      {
+        "chart_id": "cross_08_13_17_rot_1",
+        "mapped_distinct_abscissas": 8,
+        "matrix": [
+          462371,
+          -1119236,
+          4277,
+          -6862
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 231,
+        "raw_signed_points": 16
+      },
+      {
+        "chart_id": "cross_06_12_15_rot_1",
+        "mapped_distinct_abscissas": 10,
+        "matrix": [
+          76583,
+          -713900,
+          2021,
+          -4700
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 229,
+        "raw_signed_points": 20
+      },
+      {
+        "chart_id": "cross_13_17_22_rot_0",
+        "mapped_distinct_abscissas": 7,
+        "matrix": [
+          1574391,
+          873924,
+          4277,
+          5358
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 240,
+        "raw_signed_points": 14
+      },
+      {
+        "chart_id": "cross_06_12_15_rot_2",
+        "mapped_distinct_abscissas": 11,
+        "matrix": [
+          713900,
+          -637317,
+          4700,
+          -2679
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 226,
+        "raw_signed_points": 22
+      },
+      {
+        "chart_id": "cross_08_13_17_rot_2",
+        "mapped_distinct_abscissas": 8,
+        "matrix": [
+          1119236,
+          -656865,
+          6862,
+          -2585
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 228,
+        "raw_signed_points": 16
+      },
+      {
+        "chart_id": "cross_01_11_12_rot_1",
+        "mapped_distinct_abscissas": 9,
+        "matrix": [
+          5081,
+          359008,
+          -47,
+          2444
+        ],
+        "new_global_abscissas": 1,
+        "pari_milliseconds": 234,
+        "raw_signed_points": 18
+      },
+      {
+        "chart_id": "cross_01_11_12_rot_0",
+        "mapped_distinct_abscissas": 8,
+        "matrix": [
+          364089,
+          -5081,
+          2397,
+          47
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 233,
+        "raw_signed_points": 16
+      },
+      {
+        "chart_id": "cross_01_11_12_rot_2",
+        "mapped_distinct_abscissas": 8,
+        "matrix": [
+          359008,
+          -364089,
+          2444,
+          -2397
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 234,
+        "raw_signed_points": 16
+      },
+      {
+        "chart_id": "cross_13_17_22_rot_2",
+        "mapped_distinct_abscissas": 8,
+        "matrix": [
+          2448315,
+          -1574391,
+          9635,
+          -4277
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 240,
+        "raw_signed_points": 16
+      },
+      {
+        "chart_id": "cross_13_17_22_rot_1",
+        "mapped_distinct_abscissas": 8,
+        "matrix": [
+          873924,
+          -2448315,
+          5358,
+          -9635
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 248,
+        "raw_signed_points": 16
+      },
+      {
+        "chart_id": "cross_06_15_16_rot_0",
+        "mapped_distinct_abscissas": 11,
+        "matrix": [
+          2693335,
+          12467,
+          11045,
+          329
+        ],
+        "new_global_abscissas": 1,
+        "pari_milliseconds": 234,
+        "raw_signed_points": 22
+      },
+      {
+        "chart_id": "cross_06_15_16_rot_1",
+        "mapped_distinct_abscissas": 11,
+        "matrix": [
+          12467,
+          -2705802,
+          329,
+          -11374
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 232,
+        "raw_signed_points": 22
+      },
+      {
+        "chart_id": "cross_17_21_22_rot_0",
+        "mapped_distinct_abscissas": 6,
+        "matrix": [
+          1885809,
+          59715,
+          5123,
+          235
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 252,
+        "raw_signed_points": 12
+      },
+      {
+        "chart_id": "cross_21_22_24_rot_0",
+        "mapped_distinct_abscissas": 6,
+        "matrix": [
+          106715,
+          1467676,
+          235,
+          4042
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 231,
+        "raw_signed_points": 12
+      },
+      {
+        "chart_id": "cross_06_15_16_rot_2",
+        "mapped_distinct_abscissas": 11,
+        "matrix": [
+          2705802,
+          -2693335,
+          11374,
+          -11045
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 228,
+        "raw_signed_points": 22
+      },
+      {
+        "chart_id": "cross_13_17_21_rot_0",
+        "mapped_distinct_abscissas": 6,
+        "matrix": [
+          1553006,
+          835594,
+          4277,
+          5123
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 229,
+        "raw_signed_points": 12
+      },
+      {
+        "chart_id": "cross_17_21_22_rot_1",
+        "mapped_distinct_abscissas": 6,
+        "matrix": [
+          59715,
+          -1945524,
+          235,
+          -5358
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 227,
+        "raw_signed_points": 12
+      },
+      {
+        "chart_id": "cross_17_21_22_rot_2",
+        "mapped_distinct_abscissas": 6,
+        "matrix": [
+          1945524,
+          -1885809,
+          5358,
+          -5123
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 228,
+        "raw_signed_points": 12
+      },
+      {
+        "chart_id": "cross_02_11_12_rot_0",
+        "mapped_distinct_abscissas": 7,
+        "matrix": [
+          285560,
+          -2496,
+          1880,
+          47
+        ],
+        "new_global_abscissas": 0,
+        "pari_milliseconds": 240,
+        "raw_signed_points": 14
+      }
+    ],
+    "cross_ratio_chart_count": 48,
+    "cross_ratio_height": 50000,
+    "cross_ratio_wall_seconds": 11.43001895800262,
+    "exact_jacobian_pool_count": 34,
+    "exact_jacobian_pool_sha256": "ebc619800df687d7efaa3c5540492fdf22d874c78c1f86d835058bbfc281758d",
+    "new_jacobian_sign_pairs": 22,
+    "total_distinct_quartic_abscissas": 34,
+    "uniform_distinct_abscissas": 25,
+    "uniform_height": 1000000,
+    "uniform_pari_milliseconds": 19688,
+    "uniform_signed_points": 50,
+    "uniform_wall_seconds": 20.006288833006693,
+    "visible_jacobian_points": 12
+  },
+  "primary_source": "https://da.lib.kobe-u.ac.jp/da/kernel/E0003610/E0003610.pdf",
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/certify_nagao_rank20_t5081.py",
+  "schema_version": 1,
+  "script_sha256": "8e05a04a9eac70ed998b430b49f78237a4d9ca9ef9ceb263895dfa0eba0f8dfd",
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+    "python": "3.14.6"
+  },
+  "status": "exact_rank_at_least_20_certificate_complete",
+  "theorem": "Nagao's section-7 specialization with roots (346,260,255,146,55,0) and constructor T=5081/47 has Mordell-Weil rank at least 20 over Q and log conductor below 182.72."
+}

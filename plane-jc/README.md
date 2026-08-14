@@ -108,6 +108,8 @@ three-dimensional counterexample construction.
 <!-- status-consumer: PF2K1CB1 5cc386dba344a867 -->
 | [F2_AFFINE_GLOBAL_RAMIFICATION_BUDGET.md](F2_AFFINE_GLOBAL_RAMIFICATION_BUDGET.md) | Multi-component/genus-puncture `ch_2` cancellation; unique degree-six cubic-inertia `A_6` equality row, terminal-passport match, and exact generically split contracted packet |
 <!-- status-consumer: PF2GRB1 aa3a0efd2e0ff277 -->
+| [F2_GEOMETRIC_DEGREE_SIX_STEIN_REDUCTION.md](F2_GEOMETRIC_DEGREE_SIX_STEIN_REDUCTION.md) | Terminal cubic normal form and six-row classification; exact conic/line/constant pair factorization; certified exclusion of every normal even row `r=6,8,10` |
+<!-- status-consumer: PF2D6E1 d23d615295a1bf58 -->
 | [LOG_CONTRACTED_DIVISOR_SMITH_CLASSIFICATION.md](LOG_CONTRACTED_DIVISOR_SMITH_CLASSIFICATION.md) | Generic Smith classification for divisors contracted to points; cubic E8 saturated normal form, length-four cyclic quotient, and exact attachment gate `2I-v-3n>=0` |
 <!-- status-consumer: LCDSC1 07dcd994b4faf092 -->
 | [LOG_COKERNEL_CYCLIC_SUBMODULE_POSITIVITY.md](LOG_COKERNEL_CYCLIC_SUBMODULE_POSITIVITY.md) | Isolated `Fitt_1` positivity theorem: every generically cyclic rank-two cokernel contains its cyclic determinant packet with effective quotient, excluding all one-component simple-inertia E8 completions |

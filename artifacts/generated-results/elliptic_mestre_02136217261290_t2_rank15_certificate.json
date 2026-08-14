@@ -1,0 +1,612 @@
+{
+  "curve": {
+    "below_strict_log_conductor_182_72": true,
+    "conductor": "27535464408096664363840114552671696329422686810",
+    "family_roots": [
+      0,
+      2,
+      136,
+      217,
+      261,
+      290
+    ],
+    "log_conductor": "106.931803973405473954774824140429339998614531372730705726131",
+    "minimal_discriminant": "381552631565512125977759238930167772386274815686562212500",
+    "minimal_model": [
+      1,
+      -1,
+      0,
+      -26132638263172325109,
+      51410336506082459645986038865
+    ],
+    "parameter_T": "2",
+    "root_number": -1,
+    "short_weierstrass_coefficients": [
+      "0",
+      "0",
+      "0",
+      "-541886387025141333464112",
+      "153510442222270217250654888269606784"
+    ],
+    "sign_equivalent_parameter": "-2"
+  },
+  "exact_finite_reduction_certificate": {
+    "certificate_prime_bound": 499,
+    "certificate_primes": [
+      17,
+      23,
+      29,
+      37,
+      41,
+      43,
+      83,
+      101,
+      103,
+      107,
+      131,
+      149,
+      173,
+      193,
+      199
+    ],
+    "certified_algebraic_rank_lower_bound": 15,
+    "combined_exact_rank_over_F3": 15,
+    "descent_modulus": 3,
+    "independent_subset_indices_one_based": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "independent_subset_sha256": "43063eff53a2764cda3b950ee257e87cac9f498be3025be582b742ca7303583c",
+    "point_count": 15,
+    "point_sha256": "43063eff53a2764cda3b950ee257e87cac9f498be3025be582b742ca7303583c",
+    "rational_3_torsion_exclusion": {
+      "group_order": 20,
+      "prime": 13,
+      "reason": "rational prime-to-p torsion injects at good reduction"
+    },
+    "signatures": [
+      {
+        "group_order": 24,
+        "multiple_subgroup_order": 8,
+        "prime": 17,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            1,
+            0,
+            0,
+            2,
+            1,
+            1,
+            2,
+            0,
+            1,
+            1,
+            2,
+            1,
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "group_order": 30,
+        "multiple_subgroup_order": 10,
+        "prime": 23,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            2,
+            2,
+            1
+          ]
+        ]
+      },
+      {
+        "group_order": 36,
+        "multiple_subgroup_order": 12,
+        "prime": 29,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            1,
+            0,
+            0,
+            2,
+            2,
+            0,
+            2,
+            1,
+            1,
+            1,
+            1,
+            0,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "group_order": 48,
+        "multiple_subgroup_order": 16,
+        "prime": 37,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            2,
+            1,
+            2,
+            2,
+            1,
+            2,
+            2,
+            1,
+            1,
+            0,
+            1,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "group_order": 48,
+        "multiple_subgroup_order": 16,
+        "prime": 41,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            2,
+            1,
+            2,
+            1,
+            0,
+            2,
+            2,
+            0,
+            1,
+            1,
+            1,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "group_order": 57,
+        "multiple_subgroup_order": 19,
+        "prime": 43,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            2,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            1,
+            0,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "group_order": 96,
+        "multiple_subgroup_order": 32,
+        "prime": 83,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            0,
+            2,
+            1,
+            0,
+            0,
+            2,
+            1,
+            1,
+            1,
+            2,
+            2,
+            1,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "group_order": 117,
+        "multiple_subgroup_order": 39,
+        "prime": 101,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            1,
+            1,
+            2,
+            0,
+            1,
+            1,
+            1,
+            2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "group_order": 123,
+        "multiple_subgroup_order": 41,
+        "prime": 103,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            1,
+            2,
+            0,
+            0,
+            2,
+            0,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "group_order": 120,
+        "multiple_subgroup_order": 40,
+        "prime": 107,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            0,
+            1,
+            2,
+            2,
+            2,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "group_order": 144,
+        "multiple_subgroup_order": 48,
+        "prime": 131,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            2,
+            1,
+            2,
+            2,
+            0,
+            2,
+            0,
+            2,
+            1,
+            2,
+            2,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "group_order": 168,
+        "multiple_subgroup_order": 56,
+        "prime": 149,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            1,
+            0,
+            2,
+            0,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "group_order": 189,
+        "multiple_subgroup_order": 63,
+        "prime": 173,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            2,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "group_order": 210,
+        "multiple_subgroup_order": 70,
+        "prime": 193,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            1,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "group_order": 192,
+        "multiple_subgroup_order": 64,
+        "prime": 199,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            2,
+            2
+          ]
+        ]
+      }
+    ],
+    "status": "certified exact algebraic rank lower bound"
+  },
+  "generated_at_utc": "2026-08-14T19:19:24.138501+00:00",
+  "input_selection": {
+    "exact_curve_membership_replayed": true,
+    "no_new_parameter_or_point_search": true,
+    "numerical_height_rank_used_only_to_select_exact_points": true,
+    "point_count": 15,
+    "point_sha256": "43063eff53a2764cda3b950ee257e87cac9f498be3025be582b742ca7303583c",
+    "source_height_bound": 5000,
+    "source_height_matrix_runs": [
+      {
+        "decimal_precision": 72,
+        "numerical_rank": 15,
+        "subset_height_determinant": "1975446448221453299110.41010781352862042168012845732229418486340405377587",
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15,
+          20
+        ],
+        "subset_largest_eigenvalue": "103.593245649439487277184177598872998818308371383542066788251880541132999",
+        "subset_smallest_eigenvalue": "1.30934819969157090486403784817020840671650586177818719285612204150116153"
+      },
+      {
+        "decimal_precision": 120,
+        "numerical_rank": 15,
+        "subset_height_determinant": "1975446448221453299110.41010781352862042168012845732229418486340405377586541271276596395480629809577044718262835311530368",
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15,
+          20
+        ],
+        "subset_largest_eigenvalue": "103.593245649439487277184177598872998818308371383542066788251880541132999298301142750778433372487676213348597505802529594",
+        "subset_smallest_eigenvalue": "1.30934819969157090486403784817020840671650586177818719285612204150116152697475808135782435510934234410747595320592984800"
+      }
+    ],
+    "source_stable_numerical_rank": 15
+  },
+  "points": [
+    {
+      "x": "-1051237951206485220/1635841",
+      "y": "1017171002985353206272130752/2092240639"
+    },
+    {
+      "x": "-65447978082101451579492/77000145121",
+      "y": "124880591552068248136559159198400/21366693269481169"
+    },
+    {
+      "x": "-66001583551299419867652/83434900201",
+      "y": "-7114909625643929954301475214817600/24100254357959051"
+    },
+    {
+      "x": "-2464244737953246142308/3139697089",
+      "y": "-54317861374165483911973159993920/175926646987937"
+    },
+    {
+      "x": "6622260706305852724252/15783650689",
+      "y": "6846895789422503636337514626880/1982947387011137"
+    },
+    {
+      "x": "133103221553891600380/317588041",
+      "y": "-24343263818562451844106815552/5659736478661"
+    },
+    {
+      "x": "7307201692277002507708/25908443521",
+      "y": "-633991718326233327239657339590400/4170248977583681"
+    },
+    {
+      "x": "9537938162068173531868/40840772281",
+      "y": "1644424406741974289105505595178240/8253552511039571"
+    },
+    {
+      "x": "-22648781939698741011012/272401530241",
+      "y": "-63261097982051247278129792041263360/142172079064912961"
+    },
+    {
+      "x": "16491016162490242149180/385254834721",
+      "y": "86347460561460344861567858442254592/239123438108142769"
+    },
+    {
+      "x": "36806476783910087229660/117834979441",
+      "y": "4908282340383691448741869245962688/40449331227691511"
+    },
+    {
+      "x": "-3047672904789443285634660/8240683094281",
+      "y": "-13028815737710375948716647215772225792/23656191090745601179"
+    },
+    {
+      "x": "588740876458335073551807900/4780925786889121",
+      "y": "98424301543242013991615954082159228340032/330573475249924448923919"
+    },
+    {
+      "x": "20339018348580911394512380/53608359863529",
+      "y": "19747586950141803905096212286049101504/392508241823070316917"
+    },
+    {
+      "x": "2079036554560546849452879663708/5380472433567842521",
+      "y": "-531936281169633826641060277411010102976902400/12480460669419672119298382819"
+    }
+  ],
+  "provenance": {
+    "certificate_prime_bound": 499,
+    "external_process_calls": 0,
+    "owned_processes_remaining": 0,
+    "reproducing_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/certify_mestre_02136217261290_t2_rank15.py",
+    "same_stage_retries": 0,
+    "script_path": "elliptic-curves/cas/certify_mestre_02136217261290_t2_rank15.py",
+    "script_sha256": "bacc7f735c86d81adaac1bb0d5c1916f8120f79b2f12f33c2b720418358bc06e",
+    "source_artifact": "artifacts/generated-results/elliptic_mestre_root_tuple_scale_max300.json",
+    "source_artifact_sha256": "e4a7be774ac0cae3c636c70bde7490e7ced7e313971dfba3c9017e48d730fca7",
+    "source_result_sha256": "a567485ccc11cf56a11ddf83a32c809b5fd2670a820bdcf3f13a754d75b669ce",
+    "source_script": "elliptic-curves/cas/search_mestre_root_tuple_scale_max300.py",
+    "source_script_sha256": "922cd33621e882dbb5483b041c547f568d3f4fdfea2bffc8cab0d3741a3445b4"
+  },
+  "result_sha256": "c1de5071cf9ac8bb993345804bb0ab6f96656c72912c294f8e5fe097d002a77b",
+  "schema_version": 1,
+  "software": {
+    "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+    "python": "3.14.6"
+  },
+  "status": "certified exact algebraic rank lower bound 15",
+  "target_assessment": {
+    "rank21_log_conductor_target_hit": false,
+    "rank30_target_hit": false,
+    "reason": "the exact lower bound 15 is below both target ranks"
+  },
+  "theorem": {
+    "certified_algebraic_rank_lower_bound": 15,
+    "proof_method": "fifteen exact rational points have full combined rank in E(F_p)/3E(F_p); rational 3-torsion is excluded at good reduction p=13",
+    "statement": "The displayed elliptic curve over Q has Mordell-Weil rank at least 15."
+  }
+}

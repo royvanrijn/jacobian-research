@@ -39,8 +39,26 @@
 > degree-seven coordinate is excluded at second order. The only compatible
 > Hamiltonian shifts are ambient symplectic shears, and all other Bezout
 > companions are triangular changes \(W\mapsto W-TF\), so the exclusion
-> covers the full reciprocal Bezout ansatz. R21 itself is
-> **fiber-admitted, but not yet globally admitted**, by this note.
+> covers the full reciprocal Bezout ansatz. A direct
+> compactification audit further shows that raw pole order, leading contact
+> degeneration on a fixed projective boundary, the pole divisor of an
+> unnormalized primitive, and discrepancy data from the top wedge cannot be
+> polynomial-Darboux invariants. The exponent-two to exponent-three
+> constant-ring change is exactly one ordinary Rees modification, so that
+> algebra realizes the required crossing rather than obstructing it. The
+> viable global replacement is the Hamiltonian Derksen algebra. Exact
+> calculation excludes the Hamiltonians of \(P,Q,e\) from its locally
+> nilpotent locus and retains \(R\). More strongly, factorial closure and a
+> genus-one generic-fiber calculation prove that every locally nilpotent
+> Hamiltonian in the full stable-independent ring \(K[x,y,z]\) lies in
+> \(K[R]\). The \(e\)-degree filtration eliminates the remaining sector and
+> proves that the complete Hamiltonian-LND locus is \(K[R]\). Thus `R21` is
+> **not globally polynomial-Darboux admitted**. On the quantum side, the
+> natural graph-normal centralizer in the ambient inverse-Jacobian \(A_3\)
+> is exactly a transported \(A_2\), so its restriction is an isomorphism, not
+> a `DC_2` counterexample. The same Hamiltonian-LND theorem excludes every
+> strict filtered PBW Weyl frame. Any surviving bridge must therefore be
+> essentially filtration-collapsing or non-PBW.
 
 ## 1. A regular-index-four Hessian--Cayley family
 
@@ -1830,6 +1848,554 @@ bounded jet count: prefer fiber-admitted coordinates for which the leading
 class \(\mathfrak o_2\) vanishes, and reject a whole invariant family as soon
 as a graded component survives.
 
+## 17. Fixed projective boundary data are not orbit invariants
+
+There is a useful compactification calculation, but its first conclusion is
+negative. Compactify the displayed affine coordinates
+\((x,y,z,e)\) by \(\mathbb P^4\), with hyperplane at infinity
+\(H_\infty\). If a closed polynomial two-form \(\eta\) has highest
+coefficient degree \(m\), then its generic pole order along \(H_\infty\) is
+
+\[
+ m+3.                                                     \tag{17.1}
+\]
+
+Indeed, in a transverse coordinate \(t\), a degree-\(m\) coefficient
+contributes at order at most \(t^{-m-3}\). Its top coefficient is the
+radial contraction \(\iota_E\eta_m\) of the highest homogeneous part.
+Since \(d\eta_m=0\), Cartan's formula gives
+
+\[
+ d(\iota_E\eta_m)=(m+2)\eta_m,
+\tag{17.2}
+\]
+
+so this contraction cannot vanish when \(\eta_m\ne0\).
+
+For \(\Omega_{21}\), in the order \((x,y,z,e)\), the six coefficient
+degrees are
+
+\[
+\begin{array}{c|rrrrrr}
+ij&01&02&03&12&13&23\\ \hline
+\deg \Omega_{ij}&16&13&11&16&11&11.
+\end{array}                                                \tag{17.3}
+\]
+
+The degree-sixteen part is
+
+\[
+ (\Omega_{21})_{16}
+ =2x^5y^9z\,dy\wedge(3z\,dx+x\,dz).                       \tag{17.4}
+\]
+
+Thus this \(\mathbb P^4\) model has generic pole order nineteen. Its
+highest homogeneous two-form has rank two, and its radial one-form satisfies
+\(\alpha\wedge d\alpha=0\); the leading boundary distribution is therefore
+integrable rather than contact. On the same compactification the standard
+form has pole order three and its radial form gives the usual contact
+structure on \(\mathbb P^3\).
+
+Neither difference is invariant under polynomial changes of affine
+coordinates. In standard Darboux coordinates \((a,b,c,d)\), for every
+\(N\ge1\) the elementary automorphism
+
+\[
+ \phi_N(a,b,c,d)=(a,b+a^Nc,c,d)                            \tag{17.5}
+\]
+
+has Jacobian one and
+
+\[
+ \phi_N^*\omega_{\rm std}
+ =\omega_{\rm std}+a^N\,da\wedge dc.                     \tag{17.6}
+\]
+
+This standard-orbit form has pole order \(N+3\) on the fixed \(\mathbb P^4\)
+and a decomposable highest part. Taking \(N=16\) reproduces the coarse pole
+order and leading-rank degeneration of (17.3)--(17.4) inside the standard
+Darboux orbit itself.
+
+> **Fixed-boundary no-go.** Pole order and leading contact degeneration on
+> the coordinate \(\mathbb P^4\) compactification can exclude bounded-degree
+> normalizers, but cannot obstruct the full
+> \(\operatorname{Aut}(\mathbb A^4)\)-orbit.
+
+The same warning applies more strongly to a primitive. There is already a
+polynomial primitive
+
+\[
+ \lambda_{21}=P\,dQ+e\,dR,
+ \qquad d\lambda_{21}=\Omega_{21}.                         \tag{17.7}
+\]
+
+Every other polynomial primitive is \(\lambda_{21}+df\), because polynomial
+de Rham cohomology in degree one on affine space vanishes. Taking \(f\) of
+arbitrarily high degree changes the projective pole profile without changing
+the symplectic form. In particular, \(I=0\) is not an affine pole or residue
+divisor of either \(\Omega_{21}\) or (17.7). It appears as the failure
+divisor of the localized fiber conjugacy, which is different data. A useful
+primitive invariant would first need a functorial minimization modulo exact
+polynomial one-forms; no such minimization is proved here.
+
+## 18. The top volume is blind, and the Rees crossing exists
+
+The exact Pfaffian calculation gives
+
+\[
+ \frac12\Omega_{21}^{\wedge2}
+ =dx\wedge dy\wedge dz\wedge de
+ =\frac12\omega_{\rm std}^{\wedge2}.                      \tag{18.1}
+\]
+
+Consequently any compactification invariant which remembers only the
+rational top form, its canonical divisor, or its discrepancies sees the same
+volume section on both sides. This does not rule out a compactification
+decorated by the complete meromorphic two-form, but it does rule out a
+crepant-birational obstruction based only on \(K_X+D\) or on the top wedge.
+
+The ordinary Rees algebra at the distinguished affine modification is also
+explicit. Normalize the nonzero constant \(\sigma\), and write
+
+\[
+ R_n=K[I,S,U_n]/(I^nU_n-S(S-\sigma)).                      \tag{18.2}
+\]
+
+In \(R_2\), the center \(J=(I,U_2)\) is a complete intersection supported
+at the two reduced points \(I=U_2=0\), \(S\in\{0,\sigma\}\). Hence its Rees
+algebra is
+
+\[
+ \mathcal R_{R_2}(J)
+ =R_2[X,Y]/(IY-U_2X).                                     \tag{18.3}
+\]
+
+On the \(X\ne0\) affine chart put \(V=Y/X=U_2/I\). Substitution gives
+
+\[
+ I^3V=S(S-\sigma),                                       \tag{18.4}
+\]
+
+so this chart is exactly \(R_3\). Thus the exponent-three `R21` constant
+ring is obtained from the exponent-two tame ring by one standard affine
+modification over \(I=0\).
+
+> **Rees conclusion.** The unadorned Rees algebra does not obstruct the
+> required crossing. It constructs it. The degree-seven coordinate of
+> Section 14 realizes the resulting exponent-three fiber globally, and the
+> failure occurs only when its symplectic normal neighborhood is extended to
+> second order.
+
+Accordingly the relevant object is a *decorated* Rees chart: (18.3) together
+with the characteristic derivation, transverse volume, and the class
+\(\mathfrak o_2\) of (16.14). Forgetting any of these last two layers loses
+the known obstruction.
+
+## 19. A global Hamiltonian Derksen invariant
+
+There is an affine invariant which does not require choosing a projective
+boundary. For a polynomial symplectic algebra \((A,\omega)\), define
+
+\[
+ \operatorname{HD}(A,\omega)
+ =K[\,f\in A:X_f\text{ is locally nilpotent}\,],          \tag{19.1}
+\]
+
+where \(\iota_{X_f}\omega=df\). Also define the Hamiltonian
+Makar--Limanov intersection
+
+\[
+ \operatorname{HML}(A,\omega)
+ =\bigcap_{X_f\ {\rm LND}}\ker X_f.                       \tag{19.2}
+\]
+
+A polynomial symplectomorphism conjugates Hamiltonian derivations and
+preserves local nilpotence. Therefore (19.1)--(19.2) are invariants of the
+polynomial symplectic isomorphism class. For the standard form, the four
+coordinate Hamiltonians are constant partial derivatives. They generate the
+coordinate ring and their kernels intersect in \(K\), so
+
+\[
+ \operatorname{HD}(A,\omega_{\rm std})=A,
+ \qquad
+ \operatorname{HML}(A,\omega_{\rm std})=K.                \tag{19.3}
+\]
+
+Either a proper Hamiltonian Derksen algebra or a nontrivial Hamiltonian
+Makar--Limanov intersection would therefore prove global non-admission.
+
+The first exact `R21` screen is asymmetric. With the convention above,
+
+\[
+ X_R=\partial_e,                                          \tag{19.4}
+\]
+
+so every \(h(R)\) has locally nilpotent Hamiltonian
+\(h'(R)\partial_e\). On the other hand the inverse-Jacobian calculation gives
+
+\[
+ x\mid X_P(x)\ne0,qquad
+ x\mid X_Q(x)\ne0,qquad
+ A\mid X_e(A)\ne0,qquad A=1+xy^2.                       \tag{19.5}
+\]
+
+For a locally nilpotent derivation on a domain,
+\(g\mid D(g)\) forces \(D(g)=0\). Hence \(X_P,X_Q,X_e\) are not locally
+nilpotent. The same calculation, together with the quartic inverse incidence,
+proves the stronger target-subalgebra statement
+
+\[
+\begin{aligned}
+ \{f\in K[P,Q,R]:X_f\text{ is LND}\}&=K[R],\\
+ \{f\in K[e,R]:X_f\text{ is LND}\}&=K[R].                \tag{19.6}
+\end{aligned}
+\]
+
+For the first row, \(x\mid X_f(x)\), so local nilpotence forces
+\(X_f(x)=0\). If \(f_P,f_Q\) are not both zero, cancellation would require
+\(-X_Q(x)/X_P(x)\in K(P,Q,R)\). In the quartic root coordinate \(T\), its
+specialization at \(P=1,Q=0\) is
+
+\[
+ -\frac{3T(2T^3-5)}{4(T^3-4)}.                            \tag{19.7}
+\]
+
+But \(T^4-4T+4R\) is irreducible over \(K(R)\). If (19.7) equaled a base
+scalar \(c(R)\), cross-multiplication and reduction by this quartic would
+leave
+
+\[
+ -4cT^3-9T+24R+16c,                                      \tag{19.8}
+\]
+
+whose \(T\)-coefficient is nonzero. Thus \(f_P=f_Q=0\). The second row of
+(19.6) follows directly because \(X_R(A)=0\) and every nonzero
+\(e\)-derivative retains the last divisibility in (19.5).
+
+This is not yet a Darboux obstruction. It proves only
+
+\[
+ K[R]\subseteq\operatorname{HD}(A,\Omega_{21}),           \tag{19.9}
+\]
+
+and excludes new Hamiltonian \(\mathbb G_a\)-directions in the full
+three-coordinate target algebra \(K[P,Q,R]\) and in \(K[e,R]\). A
+polynomial Darboux chart could use Hamiltonians far outside
+\(K[P,Q,e,R]\), just as the degree-seven fiber coordinate lies outside the
+elementary families.
+
+There is nevertheless an all-source strengthening in the complete
+\(e\)-independent sector. Put
+
+\[
+ C=K[x,y,z],\qquad R=x\Sigma,qquad \Sigma|_{x=0}=1.       \tag{19.10}
+\]
+
+If \(f\in C\), then \(X_f\) preserves \(C\) and \(X_f(R)=0\). If \(X_f\)
+is locally nilpotent on \(C[e]\), its restriction \(D\) to \(C\) is locally
+nilpotent. The kernel of an LND on a domain is factorially closed. Therefore
+\(R=x\Sigma\in\ker D\) forces
+
+\[
+ D(x)=D(\Sigma)=0.                                       \tag{19.11}
+\]
+
+Extend scalars to \(K(x)\). A nonzero LND on the two-variable polynomial
+ring \(K(x)[y,z]\), after algebraic closure, has kernel generated by a
+coordinate. Hence \(\Sigma\in\ker D\) would make the normalization of every
+generic irreducible component of \(\Sigma=c\) an affine line.
+
+The exact generic fiber has different geometry. Since \(\Sigma-c\) is
+quadratic in \(z\), its \(z\)-discriminant is
+
+\[
+ -\frac{x^3}{18}
+ \left(6c(1+xy^2)^2-5xy^2-6\right).                     \tag{19.12}
+\]
+
+Writing \(u=xy^2\), the branch polynomial is
+
+\[
+ 6cu^2+(12c-5)u+6(c-1),                                 \tag{19.13}
+\]
+
+whose discriminant is \(24c+25\) and whose constant term is
+\(6(c-1)\). Over \(\overline{K(x,c)}\), (19.12) therefore has four distinct
+roots in \(y\). The smooth projective normalization of the quadratic cover
+has genus one. This contradicts the affine-line fibers forced by a nonzero
+LND, so
+
+\[
+ D=0.                                                     \tag{19.14}
+\]
+
+It remains to recover \(f\). Since \(X_f\) vanishes on \(C\), it has the
+form \(h\partial_e\), and contraction with \(\Omega_{21}\) gives
+
+\[
+ df=h\,dR.                                                \tag{19.15}
+\]
+
+The generic \(R\)-fiber is geometrically integral: the analogous branch
+quadratic is
+
+\[
+ 6ru^2+(12r-5x)u+6(r-x),                                 \tag{19.16}
+\]
+
+with discriminant \(x(24r+25x)\). Thus \(K(R)\) is relatively algebraically
+closed in \(K(x,y,z)\), and (19.15) forces \(f\in K(R)\). Finally
+\(R(x,0,0)=x\), so a rational function of \(R\) which is polynomial on
+\(\mathbb A^3\) restricts to a polynomial in \(x\). Hence it belongs to
+\(K[R]\).
+
+> **Complete stable-independent classification.** For the exact `R21` form,
+> \[
+> \boxed{\{f\in K[x,y,z]:X_f\text{ is locally nilpotent}\}=K[R].}
+> \tag{19.17}
+> \]
+> The forward inclusion is the genus-one rigidity argument above; the
+> reverse inclusion is \(X_{h(R)}=h'(R)\partial_e\).
+
+The positive-\(e\)-degree sector now descends to (19.17). Give
+\(A=C[e]\) the filtration \(\deg_e(e)=1\), \(\deg_e(C)=0\). Since the form
+is independent of \(e\), write, for \(g\in C\),
+
+\[
+ X_g=Y_g+H_g\partial_e,
+ \qquad Z=X_e|_C,
+ \qquad Z(R)=-1.                                        \tag{19.18}
+\]
+
+The Hamiltonian product rule gives the exact decomposition
+
+\[
+ X_{e^jg}
+ =e^jY_g+e^jH_g\partial_e+j e^{j-1}gZ.                 \tag{19.19}
+\]
+
+The highest homogeneous component of a filtered locally nilpotent
+derivation is locally nilpotent on the associated graded ring. This follows
+directly by taking the highest \(e\)-degree term in every iterate. Let
+
+\[
+ f=\sum_{j=0}^m e^jf_j,
+ \qquad f_m\ne0.                                        \tag{19.20}
+\]
+
+If \(m>0\) and \(Y_{f_m}\ne0\), the highest derivation component is
+\(e^mY_{f_m}\). It fixes \(e\), so its local nilpotence would make
+\(Y_{f_m}\) a nonzero LND of \(C\). Moreover \(Y_{f_m}(R)=0\). The proof of
+(19.14) applies to every LND of \(C\) fixing \(R\), not merely to one already
+known to be Hamiltonian. It excludes this possibility. Thus
+\(Y_{f_m}=0\), and the differential argument (19.15)--(19.17) gives
+
+\[
+ f_m=h(R).                                               \tag{19.21}
+\]
+
+The derivation degree now drops to at most \(m-1\). Its homogeneous
+degree-\(m-1\) component is
+
+\[
+ \delta=e^{m-1}\bigl(Y_{f_{m-1}}+m h(R)Z\bigr)
+       +e^m h'(R)\partial_e.                             \tag{19.22}
+\]
+
+Again \(\delta\) is locally nilpotent. Since
+\(\delta(e)=e^m h'(R)\) is divisible by \(e\), the LND divisibility lemma
+forces \(h'(R)=0\). Hence \(h=c\in K\), and
+
+\[
+ \delta=e^{m-1}E,
+ \qquad E=Y_{f_{m-1}}+mcZ.                              \tag{19.23}
+\]
+
+The variable \(e\) is fixed by (19.23), so local nilpotence of \(\delta\)
+implies local nilpotence of \(E\) on \(C\). But
+
+\[
+ E(R)=-mc.                                               \tag{19.24}
+\]
+
+If \(c\ne0\), a scalar multiple of \(R\) is a slice for \(E\). The slice
+theorem gives \(C=(\ker E)[R]\), so \((R)\) is prime. This contradicts the
+nontrivial factorization \(R=x\Sigma\). Therefore \(c=0\), contradicting
+\(f_m\ne0\). No \(m>0\) can occur.
+
+Combining this descent with (19.17) gives the complete invariant:
+
+> **Global Hamiltonian-LND classification.** For the exact `R21` form,
+> \[
+> \boxed{
+> \{f\in K[x,y,z,e]:X_f\text{ is locally nilpotent}\}=K[R].
+> }                                                       \tag{19.25}
+> \]
+> Consequently
+> \[
+> \operatorname{HD}(A,\Omega_{21})=K[R],
+> \qquad
+> \operatorname{HML}(A,\Omega_{21})=K[x,y,z].            \tag{19.26}
+> \]
+
+## 20. Global polynomial-Darboux obstruction
+
+A polynomial symplectomorphism from \(\Omega_{21}\) to the standard form
+would pull the four standard coordinate Hamiltonians back to locally
+nilpotent Hamiltonians which generate \(A\). Equation (19.25) says that all
+such Hamiltonians lie in the proper subalgebra \(K[R]\). Therefore
+
+\[
+ \boxed{
+ (\mathbb A^4,\Omega_{21})
+ \not\simeq_{\operatorname{Aut}(\mathbb A^4)}
+ (\mathbb A^4,\omega_{\rm std}).
+ }                                                       \tag{20.1}
+\]
+
+This settles polynomial Darboux admission for the reciprocal `R21` form. It
+does **not** by itself prove \((DC_2)\): that conclusion still depends on a
+separate quantization bridge which transfers the classical obstruction to
+the proposed Weyl-algebra endomorphism. The compactification and Rees audit
+remains useful diagnostically: it identifies why raw boundary profiles fail
+and why the obstruction is instead detected by global additive-group
+actions.
+
+The proof uses two standard external facts about locally nilpotent
+derivations: Rentschler's two-variable kernel theorem (after extending the
+field \(K(x)\)) and the slice theorem. Every `R21`-specific polynomial,
+discriminant, Hamiltonian field, factorization, and filtration coefficient
+used above is included in the exact symbolic certificate.
+
+## 21. Quantization bridge audit
+
+The non-admission theorem removes `R21` from the standard pipeline which
+first chooses a polynomial Darboux frame and then quantizes its four
+coordinates in \(A_2\). There is nevertheless a canonical ambient
+quantization. Let
+
+\[
+ C=K[x,y,z],
+ \qquad
+ \delta_i(P_j)=\delta_{ij},
+ \qquad (P_1,P_2,P_3)=(P,Q,R),                          \tag{21.1}
+\]
+
+be the inverse-Jacobian derivations. Since the Jacobian determinant is a
+unit, they are a polynomial frame of \(\operatorname{Der}_K(C)\), and
+
+\[
+ D(C)=C\langle\delta_P,\delta_Q,\delta_R\rangle\simeq A_3. \tag{21.2}
+\]
+
+The inverse-Jacobian endomorphism sends the target position generators to
+\(P,Q,R\) and their target derivatives to (21.1). In the target \(A_3\),
+take the graph-normal Weyl pair
+
+\[
+ a=\partial_P,
+ \qquad b=P-\partial_Q,
+ \qquad [a,b]=1.                                       \tag{21.3}
+\]
+
+Its transported pair is
+
+\[
+ a'=\delta_P,
+ \qquad b'=P-\delta_Q.                                 \tag{21.4}
+\]
+
+The four operators
+
+\[
+ R,\qquad \delta_R,\qquad \delta_Q,\qquad Q-\delta_P  \tag{21.5}
+\]
+
+centralize (21.4). They form two commuting Weyl pairs:
+
+\[
+ [\delta_R,R]=1,
+ \qquad
+ [\delta_Q,Q-\delta_P]=1.                              \tag{21.6}
+\]
+
+These generators exhaust the centralizer. The geometric input is
+
+\[
+ \ker_C\delta_P\cap\ker_C\delta_Q=K[R].                \tag{21.7}
+\]
+
+Indeed an element of the source function field killed by both derivations is
+algebraic over \(K(R)\). The geometric integrality of the generic \(R\)-fiber
+from (19.16) makes \(K(R)\) relatively algebraically closed, and the section
+\(R(x,0,0)=x\) cuts the polynomial intersection down to \(K[R]\).
+
+For completeness, write an arbitrary differential operator uniquely as
+
+\[
+ T=\sum_\alpha c_\alpha
+ \delta_P^{\alpha_P}\delta_Q^{\alpha_Q}\delta_R^{\alpha_R}.
+                                                               \tag{21.8}
+\]
+
+Commutation with \(a'\) first gives \(\delta_P(c_\alpha)=0\). Comparing the
+coefficient indexed by \(\beta\) in \([b',T]=0\) gives the triangular
+recurrence
+
+\[
+ \delta_Q(c_\beta)
+ =-(\beta_P+1)c_{\beta+e_P}.                            \tag{21.9}
+\]
+
+At maximal \(\delta_P\)-order, (21.7) puts the coefficient in \(K[R]\).
+Descending in that order, (21.9) integrates only powers of the slice \(Q\),
+with integration constants again in \(K[R]\). This is precisely the normal
+ordering expansion in \(Q-\delta_P\). Therefore
+
+\[
+ \boxed{
+ \operatorname{Cent}_{A_3}(\delta_P,P-\delta_Q)
+ =K\langle R,\delta_R,\delta_Q,Q-\delta_P\rangle
+ \simeq A_2.}                                          \tag{21.10}
+\]
+
+The right side is exactly the image of the target centralizer under the
+inverse-Jacobian endomorphism. Consequently its restriction is an
+isomorphism *onto* the transported copy (21.10). Composing it with any
+identification of that copy with a fixed \(A_2\) gives an automorphism, not a
+non-surjective endomorphism. The natural graph-centralizer reduction cannot
+prove \((DC_2)\).
+
+There is a second, filtration-level no-go. Let \(\mathcal B\) be a filtered
+PBW quantization with
+
+\[
+ \operatorname{gr}\mathcal B\simeq(A,\Pi_{21})          \tag{21.11}
+\]
+
+as a Poisson algebra. Suppose four Weyl generators in \(\mathcal B\) form a
+**strict filtered Weyl frame**, meaning that they satisfy the two-pair Weyl
+relations and their principal symbols generate \(A\). Their inner
+derivations are locally nilpotent. The highest-symbol component of a
+filtered locally nilpotent derivation is locally nilpotent on the associated
+graded ring, so every one of the four principal symbols has locally
+nilpotent Hamiltonian field. Equation (19.25) puts all four in \(K[R]\),
+which cannot generate \(A\). Hence
+
+\[
+ \boxed{
+ \text{no strict filtered PBW Weyl frame quantizes }(A,\Pi_{21}).}
+                                                               \tag{21.12}
+\]
+
+This is the exact scope of the bridge obstruction. It does not rule out an
+abstract, unfiltered identification of a global `R21` quantization with
+\(A_2\), because leading symbols of a filtration-collapsing generating set
+need not generate the associated graded algebra. Such an identification
+would have to be essentially non-PBW and cannot be the graph centralizer
+(21.10). Constructing or excluding that exotic possibility is the remaining
+`R21` route to \((DC_2)\).
+
 ## Reproduction
 
 Run:
@@ -1840,14 +2406,15 @@ Run:
   artifacts/generated-results/dc2_higher_nilpotence_r21_frontier.json
 ```
 
-The 2026-08-10 repository audit replayed this command under Python 3.14.6
-and SymPy 1.14.0.  It reproduced the generated JSON byte-for-byte at SHA-256
-`8399cd9c656dac7042349473a3ec93e78d6fb0b6447105ad1136b0c156d50060`.
-The status registry had incorrectly stored that output hash in its
-checker-source field; it now pins the checker itself at SHA-256
-`bcd2184106a20d98279dd36d41973c699b00a9e38e39317cdca61ed0d898e520`.
+The 2026-08-11 repository audit replayed this command under Python 3.14.6
+and SymPy 1.14.0. The extended generated JSON has SHA-256
+`c1e95fbda0ce35ebe091cd17efd6615ecee39c0f2cb91313de5386aea5083aad`.
+The status registry's checker-source field pins the checker itself at
+SHA-256
+`c92d33333a07def8714b60b3cd0eb591c3d0dd266059f205811629ee531a8028`.
 The replay used the repository's `.python-version` and `requirements.txt`
-locks; no generated result changed.
+locks; the generated result changed only by adding the audited boundary,
+Rees, Hamiltonian-LND, and quantization-bridge certificate data.
 
 The output records the exact higher-index matrices, the triangular inverse,
 the two row-curl generators, the `R21` map and graph checks, the affine-contact
@@ -1869,3 +2436,21 @@ It also checks the general bracket formula (16.3), invariance under
 \(Q\mapsto Q+k(C)\), and the complete Bezout-companion classification
 (16.5)--(16.6), together with the affine-momentum identity
 (16.9)--(16.11).
+It finally computes the exact \(\mathbb P^4\) pole-degree profile and leading
+rank-two form, verifies the arbitrary-pole elementary standard-orbit control,
+checks equality of the top volume forms and the polynomial primitive, realizes
+the exponent-two to exponent-three crossing as the \(I\)-chart of the Rees
+algebra of \((I,U)\), and certifies the divisibility witnesses excluding the
+Hamiltonians of \(P,Q,e\) from the locally nilpotent locus while retaining
+\(X_R=\partial_e\). The quartic-root cancellation test strengthens this to
+the exact Hamiltonian-LND locus \(K[R]\) inside \(K[P,Q,R]\), and separately
+inside \(K[e,R]\). Finally, the quadratic-in-\(z\) discriminants (19.12) and
+(19.16) certify the genus-one generic \(\Sigma\)-fiber and geometric
+integrality of the generic \(R\)-fiber used to prove the complete
+\(e\)-independent classification (19.17). The last certificate block records
+the exact Hamiltonian decomposition (19.19), the two associated-graded
+layers (19.21)--(19.24), the resulting complete locus (19.25), and the global
+polynomial-Darboux obstruction (20.1). It also verifies the inverse-Jacobian
+frame, graph-normal commutator, and two transported Weyl-pair relations used
+in the centralizer exhaustion (21.1)--(21.10); the PBW exhaustion and strict
+filtered no-go are the written algebraic arguments of Section 21.

@@ -1,0 +1,312 @@
+{
+  "elkies_rank18": {
+    "assessment": {
+      "explicit_rank18_family_reproducible": false,
+      "pinned_source_revisions_verified": true,
+      "reason": "The official sources assert and describe the construction, but do not publish the curve coefficients, section coordinates, or quadratic base-change data needed to instantiate it; the printed Shimura-curve equation alone does not determine those missing maps and models.",
+      "specialization_screen_performed": false,
+      "specialization_screen_reason": "No exact rank-18 model can be constructed from the audited data.",
+      "status": "source-blocked-before-instantiation"
+    },
+    "audit_date": "2026-08-14",
+    "published_claim_recovered": true,
+    "required_rank18_reproduction_objects": {
+      "eighteenth_section_coordinates": false,
+      "quadratic_base_change_map": false,
+      "rank17_section_coordinates_1_through_17": false,
+      "rank17_weierstrass_coefficients_a4_a6": false
+    },
+    "scope": "official primary arXiv source bundles and their bundled files",
+    "source_bundle_has_ancillary_data": false,
+    "sources": {
+      "arxiv_0709_2908": {
+        "abstract_url": "https://arxiv.org/abs/0709.2908",
+        "evidence_locations_in_pinned_source": {
+          "existence_and_rank_claims": "mfo07_arxiv.tex lines 745-763",
+          "schematic_reconstruction_method": "mfo07_arxiv.tex lines 792-814"
+        },
+        "inventory": {
+          "compressed_bytes": 23193,
+          "http_token_count_in_tex": 3,
+          "matches_pinned_revision": true,
+          "members": [
+            {
+              "bytes": 53620,
+              "name": "mfo07_arxiv.tex",
+              "sha256": "984c19da906eceb8312c6fcffb9a068b930068eec7773fdaa973554a321a6a61"
+            },
+            {
+              "bytes": 9618,
+              "name": "owrart.cls",
+              "sha256": "5b6ff9009eb36fc31eb373747090fcc54cfe2596edf0fe43d88aec3c5c99a4b2"
+            }
+          ],
+          "non_tex_data_members": [],
+          "source_sha256": "daa77bdb1da8ea01ebdd7e7add7ed37af5f7057c90e7221b7ddac39fd65f785c",
+          "tex_member_count": 1
+        },
+        "rank18_or_rank17_model_data_links_in_tex": [],
+        "semantic_markers": {
+          "quadratic_base_change_method_discussed": true,
+          "rank17_k3_claim": true,
+          "rank18_base_change_claim": true,
+          "schematic_17_section_identity": true,
+          "shimura_curve_equation": true
+        },
+        "source_url": "https://export.arxiv.org/e-print/0709.2908"
+      },
+      "arxiv_0802_1301": {
+        "abstract_url": "https://arxiv.org/abs/0802.1301",
+        "evidence_locations_in_pinned_source": {
+          "online_availability_statement_without_data_link": "ants8+.tex lines 134-142",
+          "reference_to_x_6_79_construction": "ants8+.tex lines 104-110"
+        },
+        "inventory": {
+          "compressed_bytes": 21345,
+          "http_token_count_in_tex": 10,
+          "matches_pinned_revision": true,
+          "members": [
+            {
+              "bytes": 56843,
+              "name": "ants8+.tex",
+              "sha256": "ef44d1a80a05fe6c1938706176b98d754fd7b88b78fba13ea153efe2eb1def14"
+            }
+          ],
+          "non_tex_data_members": [],
+          "source_sha256": "b8a9cab6c5c723c12d56b11a2060a0e9462bd1c4b5e8742f2cfcc2a7f77fc994",
+          "tex_member_count": 1
+        },
+        "semantic_markers": {
+          "mentions_primary_rank_paper": true,
+          "mentions_x_6_79": true,
+          "references_rank17_x_6_79_construction": true,
+          "says_full_results_could_be_available_online": true
+        },
+        "source_url": "https://export.arxiv.org/e-print/0802.1301",
+        "x_6_79_model_data_links_in_tex": []
+      }
+    }
+  },
+  "explicit_fallback": {
+    "author": "Shoichi Kihara",
+    "exact_t2_verification": {
+      "all_points_exact": true,
+      "displayed_point_count": 15,
+      "distinct_abscissa_count": 15,
+      "distinct_point_count": 15,
+      "parameter_t": "2",
+      "quartic_coefficient_numerator_digits": [
+        123,
+        114,
+        104,
+        94,
+        83
+      ],
+      "quartic_discriminant_nonzero": true,
+      "remainder_degree": 4
+    },
+    "local_status": "generic point identities verified exactly; published numerical height independence not independently certified",
+    "primary_source_doi": "https://doi.org/10.3792/pjaa.77.50",
+    "primary_source_pdf": "https://projecteuclid.org/download/pdf_1/euclid.pja/1148393079",
+    "published_generic_rank_lower_bound": 14,
+    "published_group_origin": "P15",
+    "published_height_determinant_approx": "221792776617402574.10",
+    "published_independence_specialization_t": "2",
+    "published_independent_points": "P1,...,P14",
+    "ready_for_bounded_specialization_screen": true,
+    "symbolic_verification": {
+      "all_fifteen_sections_exact": true,
+      "coefficient_domain": "QQ(t)[x]",
+      "discriminant_nonzero_witness_t": 2,
+      "extra_section_square_signatures": {
+        "P13": {
+          "denominator_degree": 36,
+          "denominator_factor_degree_exponents": [
+            [
+              1,
+              4
+            ],
+            [
+              8,
+              4
+            ]
+          ],
+          "is_square": true,
+          "numerator_degree": 236,
+          "numerator_factor_degree_exponents": [
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              8,
+              4
+            ],
+            [
+              68,
+              2
+            ]
+          ]
+        },
+        "P14": {
+          "denominator_degree": 34,
+          "denominator_factor_degree_exponents": [
+            [
+              1,
+              2
+            ],
+            [
+              8,
+              4
+            ]
+          ],
+          "is_square": true,
+          "numerator_degree": 232,
+          "numerator_factor_degree_exponents": [
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              58,
+              2
+            ]
+          ]
+        },
+        "P15": {
+          "denominator_degree": 2,
+          "denominator_factor_degree_exponents": [
+            [
+              1,
+              2
+            ]
+          ],
+          "is_square": true,
+          "numerator_degree": 200,
+          "numerator_factor_degree_exponents": [
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              44,
+              2
+            ]
+          ]
+        }
+      },
+      "generic_quartic_discriminant_nonzero": true,
+      "product_degree": 12,
+      "remainder_degree": 4,
+      "scope": "point-on-curve identities only; the published numerical height determinant and independence are not recomputed",
+      "visible_section_count": 12,
+      "visible_section_identities_exact": true
+    },
+    "t2_short_jacobian_coefficient_numerator_digits": [
+      1,
+      1,
+      1,
+      208,
+      311
+    ],
+    "title": "On an elliptic curve over Q(t) of rank >= 14",
+    "year": 2001
+  },
+  "reproduce_command": ".venv/bin/python elliptic-curves/cas/audit_elkies_rank18_sources.py --output artifacts/generated-results/elliptic_elkies_rank18_source_audit.json",
+  "result": {
+    "best_new_certified_rank": null,
+    "breakthrough_curve_found": false,
+    "rank18_screen_result": "not-run-source-blocked"
+  },
+  "schema": "elliptic-elkies-rank18-source-audit-v1",
+  "script_sha256": "af7d62fa9c040aa8b85db1df46de549b81b7608b3338877c5f8d753e3b5970d1",
+  "software": {
+    "python": "3.14.6",
+    "sympy": "1.14.0"
+  },
+  "target": {
+    "alternate_desired_rank": 30,
+    "desired_rank": 21,
+    "log_conductor_upper_bound": 182.72
+  }
+}

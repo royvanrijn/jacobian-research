@@ -1,0 +1,550 @@
+{
+  "claim": {
+    "certified_algebraic_rank_lower_bound": 15,
+    "does_not_claim_exact_mordell_weil_rank": true,
+    "does_not_hit_rank21_or_rank30_target": true
+  },
+  "curve": {
+    "below_strict_log_conductor_target_numerically": true,
+    "conductor": "1468617013201344525723305189723172651230013579564220710",
+    "log_conductor": "124.723916172286085248539123900737052397933789893725888007165",
+    "minimal_discriminant": "-958822205743259378035224196644623595216762788705899907205677755170816000",
+    "minimal_model": [
+      1,
+      1,
+      1,
+      -1810583368399820921920335,
+      938908583466928681240876910771146965
+    ],
+    "parameter": "490/9",
+    "root_number": -1,
+    "roots": [
+      0,
+      7,
+      121,
+      128,
+      183,
+      194
+    ],
+    "sign_equivalent_parameter": "-490/9",
+    "strict_log_conductor_target": "182.72",
+    "weierstrass_coefficients": [
+      "0",
+      "0",
+      "0",
+      "-1390528026931062468034817296/19683",
+      "103835778062858008397406923064084774210688/14348907"
+    ]
+  },
+  "finite_reduction_certificate": {
+    "certificate_prime_bound": 499,
+    "certificate_primes": [
+      37,
+      47,
+      59,
+      61,
+      67,
+      71,
+      83,
+      89,
+      97,
+      101,
+      113,
+      131,
+      149,
+      181,
+      191
+    ],
+    "certified_algebraic_rank_lower_bound": 15,
+    "combined_exact_rank_over_F3": 15,
+    "descent_modulus": 3,
+    "independent_subset_indices_one_based": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "independent_subset_sha256": "fcbc9e86472490b3e5db4980d8d579c42657c41e3685be61953e1b95f5f9ed8e",
+    "point_count": 15,
+    "point_sha256": "fcbc9e86472490b3e5db4980d8d579c42657c41e3685be61953e1b95f5f9ed8e",
+    "rational_3_torsion_exclusion": {
+      "group_order": 28,
+      "prime": 19,
+      "reason": "rational prime-to-p torsion injects at good reduction"
+    },
+    "signatures": [
+      {
+        "group_order": 48,
+        "multiple_subgroup_order": 16,
+        "prime": 37,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            1,
+            1,
+            0,
+            2,
+            2,
+            1,
+            2,
+            0,
+            2,
+            0,
+            1,
+            2,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "group_order": 54,
+        "multiple_subgroup_order": 18,
+        "prime": 47,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            2,
+            0,
+            0,
+            2,
+            1,
+            1,
+            2,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "group_order": 75,
+        "multiple_subgroup_order": 25,
+        "prime": 59,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            0,
+            2,
+            0,
+            2,
+            2,
+            0,
+            1,
+            1,
+            0,
+            0,
+            2,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "group_order": 66,
+        "multiple_subgroup_order": 22,
+        "prime": 61,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            0,
+            0,
+            2,
+            2,
+            2,
+            1,
+            0,
+            2,
+            0,
+            1,
+            0,
+            2,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "group_order": 78,
+        "multiple_subgroup_order": 26,
+        "prime": 67,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            0,
+            0,
+            2,
+            2,
+            0,
+            2,
+            2,
+            0,
+            2,
+            0,
+            0,
+            2,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "group_order": 84,
+        "multiple_subgroup_order": 28,
+        "prime": 71,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "group_order": 96,
+        "multiple_subgroup_order": 32,
+        "prime": 83,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            1,
+            2,
+            0,
+            2,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "group_order": 96,
+        "multiple_subgroup_order": 32,
+        "prime": 89,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            2,
+            1,
+            2,
+            0,
+            0,
+            1,
+            2,
+            1,
+            0,
+            0,
+            1,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "group_order": 99,
+        "multiple_subgroup_order": 33,
+        "prime": 97,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            1,
+            1,
+            2,
+            2,
+            0,
+            1,
+            1,
+            2,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "group_order": 120,
+        "multiple_subgroup_order": 40,
+        "prime": 101,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            1,
+            2,
+            0,
+            2,
+            1,
+            0,
+            0,
+            2,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "group_order": 135,
+        "multiple_subgroup_order": 45,
+        "prime": 113,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            1,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "group_order": 135,
+        "multiple_subgroup_order": 45,
+        "prime": 131,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            2,
+            0,
+            1,
+            1,
+            1,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "group_order": 165,
+        "multiple_subgroup_order": 55,
+        "prime": 149,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            0,
+            1,
+            2,
+            1,
+            0,
+            2,
+            0,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "group_order": 201,
+        "multiple_subgroup_order": 67,
+        "prime": 181,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            2,
+            0,
+            1,
+            1,
+            1,
+            1,
+            2,
+            0,
+            2,
+            2,
+            2,
+            0,
+            2,
+            2
+          ]
+        ]
+      },
+      {
+        "group_order": 219,
+        "multiple_subgroup_order": 73,
+        "prime": 191,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            2,
+            1,
+            1,
+            1,
+            2,
+            1,
+            2,
+            0,
+            2,
+            2,
+            0,
+            2,
+            1,
+            0
+          ]
+        ]
+      }
+    ],
+    "status": "certified exact algebraic rank lower bound"
+  },
+  "generated_at_utc": "2026-08-14T18:32:57.325841+00:00",
+  "point_source": {
+    "exact_curve_membership_replayed": true,
+    "frontier_stage": "H1000000",
+    "height_bound": 1000000,
+    "mapping_truncated": false,
+    "point_count": 15,
+    "point_sha256": "fcbc9e86472490b3e5db4980d8d579c42657c41e3685be61953e1b95f5f9ed8e",
+    "selection_statement": "the finite certificate replays the fixed H=10^6 subset and performs no new parameter or point search"
+  },
+  "points": [
+    {
+      "x": "299195003120974574251634760836/1899823767200871867",
+      "y": "76176362161770880958237867746810087045120/18664842454207820512732719"
+    },
+    {
+      "x": "21371199344312727969694916/180273674800827",
+      "y": "-3566363352672620418611119606206062720/155272780758423909159"
+    },
+    {
+      "x": "854678438151654121295366756/5438102112381987",
+      "y": "-101280418161367448033640748136158891520/25725741443633509655589"
+    },
+    {
+      "x": "-332667394673882157244/3242691387",
+      "y": "-457148063218856027665391546240/3948517212237"
+    },
+    {
+      "x": "-33766051382250759753887836/1354607048694483",
+      "y": "303112003753304457170432527700408535040/3198282780856670836803"
+    },
+    {
+      "x": "106545012460656287267604356/8836408320507",
+      "y": "7836991818402140983082442369881466880/187226801318049039"
+    },
+    {
+      "x": "11325206585945446141432868/84950840246067",
+      "y": "688144258814964259843690044717885440/50228288656410312621"
+    },
+    {
+      "x": "29392516004257394953022372/33675238944675",
+      "y": "-9795096860619639374648593315458313856/12536112825739438875"
+    },
+    {
+      "x": "167829437843468281526948/609810693075",
+      "y": "946477118807203485281681373627904/10182822223197375"
+    },
+    {
+      "x": "63585202154742763372337089508/272673912211594227",
+      "y": "-535954360376224263801008533590010053971840/9134026075807475818944141"
+    },
+    {
+      "x": "1155655735707853525159872356/391011266225187",
+      "y": "-2510369403284303379392783634242322964480/495998964240448385061"
+    },
+    {
+      "x": "267597911126949681329836964/2124167572931283",
+      "y": "115114156537976739089537068782859018240/6280294728620474936253"
+    },
+    {
+      "x": "15506524367470948360918861580105074731628/100528115869378971945836339481",
+      "y": "97757678062175389848140204524329651278493039163949869588480/31873614405769813562094532911040582419941379"
+    },
+    {
+      "x": "7060053616016681303377606961048036/41744026608437381823747",
+      "y": "-227486792457756800156519732004792470293635850240/20263973410356855631702412452047"
+    },
+    {
+      "x": "193166445413870541132043137735425799812/1251692167335950064687471675",
+      "y": "35963108929294133809241030971047752853613531716558848/11690602430978989238819184257214455875"
+    }
+  ],
+  "provenance": {
+    "certificate_prime_bound": 499,
+    "external_process_calls": 0,
+    "frontier_path": "artifacts/generated-results/elliptic_mestre_rank14_pair_rational_frontier.json",
+    "frontier_result_sha256": "d33c0cf0a5e2364bd49e18363e0a1f3ca51512fdf60be7052dd05f1cbfa9d610",
+    "frontier_script_sha256": "2f6251c67e2eb3cee2eca37d7e866913e9d5de73d30e3bfcb253641454d40d5f",
+    "frontier_sha256": "87e2d278cc1ee0653d1a4f871c1e34ed3d03babe1c1cd2ffe6712b7608efaee7",
+    "script_path": "elliptic-curves/cas/certify_mestre_rank15_490_9.py",
+    "script_sha256": "622f0d563f7b34d9a06635d79da992066b86b3797dff3f496c7b7959c8f7bd12"
+  },
+  "result_sha256": "31ff386e802c368efdcdd027168883e8edd459921eff431de71bfcfa5e517648",
+  "schema_version": 1,
+  "status": "certified exact algebraic rank lower bound 15"
+}

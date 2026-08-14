@@ -1,0 +1,124 @@
+{
+  "good_reduction": {
+    "finite_discriminant_degree_mod_p": 20,
+    "finite_discriminant_squarefree_mod_p": true,
+    "finite_fibers": "20 geometrically simple I1 fibers",
+    "good_reduction_of_resolved_k3": true,
+    "infinity_fiber": "split I4",
+    "prime": 29,
+    "short_coefficient_degrees_mod_p": [
+      8,
+      12
+    ]
+  },
+  "inference": "smooth proper specialization injects the characteristic-zero Neron--Severi group; a geometric divisor class has Frobenius eigenvalue p times a root of unity. The exact residual factor has only the eigenvalue -p of that form, so rho<=18. It has no further +p eigenvalue, so the 17 explicit Q-defined divisor classes exhaust NS over Q. Shioda--Tate for 20 I1 plus split I4 therefore gives arithmetic generic rank exactly 12 and geometric generic rank at most 13.",
+  "point_counts": {
+    "1": {
+      "field_size": 29,
+      "finite_affine_character_sum": 226,
+      "h2_frobenius_trace": 370,
+      "surface_point_count": 1212
+    },
+    "2": {
+      "field_size": 841,
+      "finite_affine_character_sum": 12114,
+      "h2_frobenius_trace": 16318,
+      "surface_point_count": 723600
+    }
+  },
+  "proved_arithmetic_generic_rank_over_Q_of_T": 12,
+  "proved_generic_rank_interval": [
+    12,
+    13
+  ],
+  "rank12_certificate_verifier_sha256": "037f712f59df3b29a4527a502d801db4b1ccd25bd122c8d75783a2267479ee08",
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/verify_nagao_section7_picard_bound.py",
+  "residual_frobenius": {
+    "arithmetic_generic_Mordell_Weil_rank_over_Q_of_T": 12,
+    "cyclotomic_gcd_checks": [
+      {
+        "gcd_degree": 0,
+        "order": 1
+      },
+      {
+        "gcd_degree": 0,
+        "order": 2
+      },
+      {
+        "gcd_degree": 0,
+        "order": 3
+      },
+      {
+        "gcd_degree": 0,
+        "order": 4
+      },
+      {
+        "gcd_degree": 0,
+        "order": 5
+      },
+      {
+        "gcd_degree": 0,
+        "order": 6
+      },
+      {
+        "gcd_degree": 0,
+        "order": 8
+      },
+      {
+        "gcd_degree": 0,
+        "order": 10
+      },
+      {
+        "gcd_degree": 0,
+        "order": 12
+      }
+    ],
+    "geometric_Picard_rank_upper_bound": 18,
+    "geometric_generic_Mordell_Weil_rank_upper_bound": 13,
+    "known_rational_Neron_Severi_rank": 17,
+    "normalized_residual_quartic": "Z**4 + 94*Z**3/29 + 132*Z**2/29 + 94*Z/29 + 1",
+    "pair_sums_U_V": [
+      "-47+3*sqrt(7)",
+      "-47-3*sqrt(7)"
+    ],
+    "rational_Neron_Severi_rank": 17,
+    "reciprocal_pair_reconstruction": [
+      {
+        "pair_product_U_times_V": 2146,
+        "pair_sum_U_plus_V": -94,
+        "pair_sum_discriminant": 252,
+        "real_eigenvalue_sign": -1,
+        "satisfies_exact_Weil_interval": true
+      },
+      {
+        "pair_product_U_times_V": 9280,
+        "pair_sum_U_plus_V": -152,
+        "pair_sum_discriminant": -14016,
+        "real_eigenvalue_sign": 1,
+        "satisfies_exact_Weil_interval": false
+      }
+    ],
+    "residual_characteristic_polynomial": "X**5 + 123*X**4 + 6554*X**3 + 190066*X**2 + 2999847*X + 20511149",
+    "residual_characteristic_polynomial_at_positive_p": 534704436,
+    "residual_p_times_root_of_unity_multiplicity_upper_bound": 1,
+    "residual_positive_p_eigenvalue_multiplicity": 0,
+    "residual_quartic": "X**4 + 94*X**3 + 3828*X**2 + 79054*X + 707281",
+    "residual_traces": {
+      "degree_1": -123,
+      "degree_2": 2021
+    },
+    "unique_real_eigenvalue": "-29"
+  },
+  "schema_version": 1,
+  "scope_limits": [
+    "does not determine whether the geometric generic rank over Qbar(T) is 12 or 13",
+    "does not imply rank 21 at any specialization"
+  ],
+  "script_sha256": "678b4860791d945516873dafcc5cecf14b8b0feb452ddfe33776dcf47ea6fdc3",
+  "software": {
+    "python": "3.14.6",
+    "sympy": "1.14.0"
+  },
+  "status": "exact finite-field computation and arithmetic generic-rank theorem",
+  "target_hit": false
+}

@@ -1,0 +1,67 @@
+{
+  "conclusion": {
+    "fixed_fiber_conditionally_closed": false,
+    "next_action": "run the declared fixed-fiber cover search",
+    "unconditional": "The exact finite-reduction certificate proves algebraic rank at least 15; this diagnostic proves no rank upper bound.",
+    "under_bsd_and_grh": "No exact algebraic rank conclusion.",
+    "under_grh": "The Delta=11/5 value does not bound analytic rank below 17."
+  },
+  "curve": {
+    "conductor": "35180263184668233005022967592240992011410114878725318553939716560010",
+    "log_conductor": "155.531101357976227827850416757408218989142703287223761321481",
+    "minimal_model": [
+      1,
+      0,
+      0,
+      -150914082444004377521455444331,
+      17870270256881467440119488580471368375460145
+    ],
+    "parameter": "2731/36",
+    "root_number": -1,
+    "roots": [
+      0,
+      7,
+      93,
+      154,
+      161,
+      191
+    ],
+    "unconditional_algebraic_rank_lower_bound": 15
+  },
+  "explicit_formula": {
+    "archimedean_closed_form_contribution": "-0.066297585261396751831176694018569436575148494852651",
+    "bad_reduction_prime_sum": "0.91025710811628286377400618341477836837756195891335844745810585312803821917767279",
+    "conductor": "35180263184668233005022967592240992011410114878725318553939716560010",
+    "conservative_explicit_formula_upper": "17.29353427454249672697639450150174350015763449977",
+    "delta": "11/5",
+    "explicit_formula_value_before_allowance": "17.292534274542496726955577819790021815024691405993",
+    "good_reduction_prime_sum": "-44.958216515990305184410779791745280477419300501489602577892655437970896621423638",
+    "log_conductor": "155.53110135797622782785041675740821898914270328722376132148083377730186048365884",
+    "maximum_prime": 1007519,
+    "numerical_allowance": "0.001",
+    "pari_milliseconds_after_curve_setup": 1768,
+    "prime_count": 79057,
+    "prime_limit": 1007525,
+    "prime_power_term_count": 79293,
+    "prime_sum": "-44.047959407874022320636773608330502109041738542576244130434549584842858402245966",
+    "signed_margin_below_17": "-0.29353427454249672697639450150174350015763449976999",
+    "strictly_below_17": false,
+    "support_prime_limit": 1007525
+  },
+  "provenance": {
+    "audited_formula_engine": "elliptic-curves/cas/explicit_formula_rank20_t5081_delta22.py",
+    "audited_formula_engine_sha256": "c33da285159adb34bd14dcd2caf5ebdd77bddf5454d0eb226ca44da8543a80b7",
+    "command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/explicit_formula_mestre_rank15_2731_36_delta22.py",
+    "no_retry": true,
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6",
+    "rank15_certificate": "artifacts/generated-results/elliptic_mestre_rank15_2731_36.json",
+    "rank15_certificate_sha256": "5f91987e9fd21887afbe0cd376e7b56844a37e0e70ade6fc713aaa3121e87c1a",
+    "script": "elliptic-curves/cas/explicit_formula_mestre_rank15_2731_36_delta22.py",
+    "script_sha256": "dff0f8f1ccc3346fd310ae997944cae3b0b8f54a8d4a6b3cc903a8f043ef2139",
+    "single_foreground_pari_call": true
+  },
+  "schema_version": 1,
+  "status": "explicit_formula_does_not_close_below_17",
+  "target_hit": false
+}

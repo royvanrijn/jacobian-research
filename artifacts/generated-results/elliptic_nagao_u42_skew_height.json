@@ -1,0 +1,2733 @@
+{
+  "actual_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/search_nagao_u42_skew_height.py",
+  "candidate": {
+    "id": "nagao-u-42",
+    "log_conductor": "148.621053634067641802626624489353405764687593285311697405542",
+    "parameter_t": "3631/14",
+    "parameter_u": 42,
+    "root_number": -1
+  },
+  "generic_companion_sections": {
+    "classification": "generic companion sections, already present in the height-10^6 checkpoint; excluded from specialization-only discoveries",
+    "count": 5,
+    "quartic_x_values": [
+      "6211/210",
+      "1829/10",
+      "-355/6",
+      "47189/70",
+      "-39983/210"
+    ]
+  },
+  "height_matrix_runs": [
+    {
+      "decimal_precision": 72,
+      "gp_process_wall_seconds": 0.22315458400407806,
+      "numerical_rank": 17,
+      "subset_height_determinant": "45721443319073251.1627052144711051028247430865792763089820509289602430078",
+      "subset_indices_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "subset_largest_eigenvalue": "76.4484552280371974962610495687630203782598410729805008662695245043047630",
+      "subset_smallest_eigenvalue": "0.304222579855686612258278125408090126552941511308632174398767148539379589"
+    },
+    {
+      "decimal_precision": 120,
+      "gp_process_wall_seconds": 0.22315458400407806,
+      "numerical_rank": 17,
+      "subset_height_determinant": "45721443319073251.1627052144711051028247430865792763089820509289602430077580157608682495583019751650854797371749743556679",
+      "subset_indices_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "subset_largest_eigenvalue": "76.4484552280371974962610495687630203782598410729805008662695245043047630240047177295366525608889930571769179805263603822",
+      "subset_smallest_eigenvalue": "0.304222579855686612258278125408090126552941511308632174398767148539379588736478576810202434103294654170827168155762904418"
+    }
+  ],
+  "inputs": {
+    "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic_nagao_rank13_finalist_triage.json": "ba936299554ab578e61b732996983a8106f9bf76f0a66399f01ba073170b259b",
+    "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic_nagao_u42_height_10000000.json": "4fea0207fd637988bcc1147143657cbec5c2404cb81b4c4a487e2dde20cc43b8"
+  },
+  "interpretation": {
+    "exact": "all points returned outside the prior uniform box lie on the quartic and Jacobian and have displayed, exactly replayed integral relations in the pinned 17-point subgroup",
+    "not_claimed": "this bounded result neither proves the full Mordell-Weil rank is 17 nor excludes independent points outside the declared boxes/charts",
+    "numerical": "the augmented pool has stable height-matrix rank 17 at 72 and 120 decimal digits"
+  },
+  "mobius_search": {
+    "batch_wall_seconds": 11.887274290995265,
+    "charts": [
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 15,
+        "id": "checkpoint_00_shift_0",
+        "matrix_a_b_c_d": [
+          296,
+          -355,
+          -5,
+          6
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 156,
+        "signed_points_found": 32,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 9,
+        "id": "checkpoint_00_shift_-1",
+        "matrix_a_b_c_d": [
+          651,
+          -355,
+          -11,
+          6
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 156,
+        "signed_points_found": 20,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 12,
+        "id": "checkpoint_01_shift_0",
+        "matrix_a_b_c_d": [
+          183,
+          1829,
+          1,
+          10
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 165,
+        "signed_points_found": 26,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 12,
+        "id": "checkpoint_01_shift_-1",
+        "matrix_a_b_c_d": [
+          -1646,
+          1829,
+          -9,
+          10
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 158,
+        "signed_points_found": 26,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_02_shift_0",
+        "matrix_a_b_c_d": [
+          1745,
+          6211,
+          59,
+          210
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 170,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_02_shift_-1",
+        "matrix_a_b_c_d": [
+          -4466,
+          6211,
+          -151,
+          210
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 156,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_03_shift_0",
+        "matrix_a_b_c_d": [
+          650,
+          -7531,
+          -29,
+          336
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 125,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_03_shift_-1",
+        "matrix_a_b_c_d": [
+          8181,
+          -7531,
+          -365,
+          336
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 138,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_04_shift_0",
+        "matrix_a_b_c_d": [
+          3100,
+          7939,
+          41,
+          105
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 160,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_04_shift_-1",
+        "matrix_a_b_c_d": [
+          -4839,
+          7939,
+          -64,
+          105
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 145,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 4,
+        "id": "checkpoint_05_shift_0",
+        "matrix_a_b_c_d": [
+          12015,
+          17401,
+          29,
+          42
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 154,
+        "signed_points_found": 10,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 4,
+        "id": "checkpoint_05_shift_-1",
+        "matrix_a_b_c_d": [
+          -5386,
+          17401,
+          -13,
+          42
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 166,
+        "signed_points_found": 10,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 2,
+        "id": "checkpoint_06_shift_0",
+        "matrix_a_b_c_d": [
+          8187,
+          -39983,
+          -43,
+          210
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 147,
+        "signed_points_found": 6,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 2,
+        "id": "checkpoint_06_shift_-1",
+        "matrix_a_b_c_d": [
+          48170,
+          -39983,
+          -253,
+          210
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 177,
+        "signed_points_found": 6,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_07_shift_0",
+        "matrix_a_b_c_d": [
+          20898,
+          47189,
+          31,
+          70
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 168,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_07_shift_-1",
+        "matrix_a_b_c_d": [
+          -26291,
+          47189,
+          -39,
+          70
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 145,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_08_shift_0",
+        "matrix_a_b_c_d": [
+          18361,
+          59695,
+          211,
+          686
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 165,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_08_shift_-1",
+        "matrix_a_b_c_d": [
+          -41334,
+          59695,
+          -475,
+          686
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 149,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_09_shift_0",
+        "matrix_a_b_c_d": [
+          1122,
+          70133,
+          631,
+          39442
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 135,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_09_shift_-1",
+        "matrix_a_b_c_d": [
+          -69011,
+          70133,
+          -38811,
+          39442
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 147,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_10_shift_0",
+        "matrix_a_b_c_d": [
+          129409,
+          153787,
+          2203,
+          2618
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 148,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_10_shift_-1",
+        "matrix_a_b_c_d": [
+          -24378,
+          153787,
+          -415,
+          2618
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 132,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_11_shift_0",
+        "matrix_a_b_c_d": [
+          21374,
+          -161127,
+          -13,
+          98
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 168,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_11_shift_-1",
+        "matrix_a_b_c_d": [
+          182501,
+          -161127,
+          -111,
+          98
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 134,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_12_shift_0",
+        "matrix_a_b_c_d": [
+          14812,
+          183387,
+          16925,
+          209548
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 156,
+        "signed_points_found": 2,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_12_shift_-1",
+        "matrix_a_b_c_d": [
+          -168575,
+          183387,
+          -192623,
+          209548
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 150,
+        "signed_points_found": 2,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_13_shift_0",
+        "matrix_a_b_c_d": [
+          95222,
+          -193291,
+          -1873,
+          3802
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 153,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_13_shift_-1",
+        "matrix_a_b_c_d": [
+          288513,
+          -193291,
+          -5675,
+          3802
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 147,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 2,
+        "id": "checkpoint_14_shift_0",
+        "matrix_a_b_c_d": [
+          8009,
+          216607,
+          22,
+          595
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 167,
+        "signed_points_found": 6,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 2,
+        "id": "checkpoint_14_shift_-1",
+        "matrix_a_b_c_d": [
+          -208598,
+          216607,
+          -573,
+          595
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 153,
+        "signed_points_found": 6,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 2,
+        "id": "checkpoint_15_shift_0",
+        "matrix_a_b_c_d": [
+          140446,
+          244207,
+          781,
+          1358
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 163,
+        "signed_points_found": 6,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 2,
+        "id": "checkpoint_15_shift_-1",
+        "matrix_a_b_c_d": [
+          -103761,
+          244207,
+          -577,
+          1358
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 156,
+        "signed_points_found": 6,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_16_shift_0",
+        "matrix_a_b_c_d": [
+          164635,
+          252823,
+          82633,
+          126896
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 161,
+        "signed_points_found": 2,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_16_shift_-1",
+        "matrix_a_b_c_d": [
+          -88188,
+          252823,
+          -44263,
+          126896
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 152,
+        "signed_points_found": 2,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_17_shift_0",
+        "matrix_a_b_c_d": [
+          60764,
+          -352405,
+          -15307,
+          88774
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 135,
+        "signed_points_found": 2,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_17_shift_-1",
+        "matrix_a_b_c_d": [
+          413169,
+          -352405,
+          -104081,
+          88774
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 176,
+        "signed_points_found": 2,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_18_shift_0",
+        "matrix_a_b_c_d": [
+          279587,
+          354726,
+          160,
+          203
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 145,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_18_shift_-1",
+        "matrix_a_b_c_d": [
+          -75139,
+          354726,
+          -43,
+          203
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 172,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_19_shift_0",
+        "matrix_a_b_c_d": [
+          354889,
+          393922,
+          1482,
+          1645
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 168,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_19_shift_-1",
+        "matrix_a_b_c_d": [
+          -39033,
+          393922,
+          -163,
+          1645
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 135,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_20_shift_0",
+        "matrix_a_b_c_d": [
+          57794,
+          455309,
+          279,
+          2198
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 141,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_20_shift_-1",
+        "matrix_a_b_c_d": [
+          -397515,
+          455309,
+          -1919,
+          2198
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 151,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_21_shift_0",
+        "matrix_a_b_c_d": [
+          467366,
+          -476569,
+          -4469,
+          4557
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 167,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_21_shift_-1",
+        "matrix_a_b_c_d": [
+          943935,
+          -476569,
+          -9026,
+          4557
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 163,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_22_shift_0",
+        "matrix_a_b_c_d": [
+          317987,
+          -490481,
+          -1425,
+          2198
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 155,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_22_shift_-1",
+        "matrix_a_b_c_d": [
+          808468,
+          -490481,
+          -3623,
+          2198
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 160,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_23_shift_0",
+        "matrix_a_b_c_d": [
+          348826,
+          507251,
+          51305,
+          74606
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 162,
+        "signed_points_found": 2,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_23_shift_-1",
+        "matrix_a_b_c_d": [
+          -158425,
+          507251,
+          -23301,
+          74606
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 152,
+        "signed_points_found": 2,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_24_shift_0",
+        "matrix_a_b_c_d": [
+          304265,
+          -589629,
+          -1481,
+          2870
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 161,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_24_shift_-1",
+        "matrix_a_b_c_d": [
+          893894,
+          -589629,
+          -4351,
+          2870
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 143,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_25_shift_0",
+        "matrix_a_b_c_d": [
+          35296,
+          -621403,
+          -365,
+          6426
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 175,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_25_shift_-1",
+        "matrix_a_b_c_d": [
+          656699,
+          -621403,
+          -6791,
+          6426
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 143,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_26_shift_0",
+        "matrix_a_b_c_d": [
+          255062,
+          -631399,
+          -8093,
+          20034
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 148,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_26_shift_-1",
+        "matrix_a_b_c_d": [
+          886461,
+          -631399,
+          -28127,
+          20034
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 160,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_27_shift_0",
+        "matrix_a_b_c_d": [
+          399891,
+          670771,
+          5567,
+          9338
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 157,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_27_shift_-1",
+        "matrix_a_b_c_d": [
+          -270880,
+          670771,
+          -3771,
+          9338
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 142,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_28_shift_0",
+        "matrix_a_b_c_d": [
+          522873,
+          -696415,
+          -26993,
+          35952
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 154,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_28_shift_-1",
+        "matrix_a_b_c_d": [
+          1219288,
+          -696415,
+          -62945,
+          35952
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 165,
+        "signed_points_found": 2,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_29_shift_0",
+        "matrix_a_b_c_d": [
+          310269,
+          733255,
+          5219,
+          12334
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 153,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_29_shift_-1",
+        "matrix_a_b_c_d": [
+          -422986,
+          733255,
+          -7115,
+          12334
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 170,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_30_shift_0",
+        "matrix_a_b_c_d": [
+          342323,
+          734071,
+          18091,
+          38794
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 178,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_30_shift_-1",
+        "matrix_a_b_c_d": [
+          -391748,
+          734071,
+          -20703,
+          38794
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 161,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_31_shift_0",
+        "matrix_a_b_c_d": [
+          496515,
+          -767267,
+          -607,
+          938
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 149,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_31_shift_-1",
+        "matrix_a_b_c_d": [
+          1263782,
+          -767267,
+          -1545,
+          938
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 165,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_32_shift_0",
+        "matrix_a_b_c_d": [
+          78761,
+          800875,
+          95,
+          966
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 155,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_32_shift_-1",
+        "matrix_a_b_c_d": [
+          -722114,
+          800875,
+          -871,
+          966
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 166,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_33_shift_0",
+        "matrix_a_b_c_d": [
+          92674,
+          825641,
+          11,
+          98
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 144,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_33_shift_-1",
+        "matrix_a_b_c_d": [
+          -732967,
+          825641,
+          -87,
+          98
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 169,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 2,
+        "id": "checkpoint_34_shift_0",
+        "matrix_a_b_c_d": [
+          748423,
+          -850803,
+          -12771,
+          14518
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 142,
+        "signed_points_found": 6,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_34_shift_-1",
+        "matrix_a_b_c_d": [
+          1599226,
+          -850803,
+          -27289,
+          14518
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 164,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_35_shift_0",
+        "matrix_a_b_c_d": [
+          353469,
+          -873809,
+          -1093,
+          2702
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 142,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_35_shift_-1",
+        "matrix_a_b_c_d": [
+          1227278,
+          -873809,
+          -3795,
+          2702
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 144,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_36_shift_0",
+        "matrix_a_b_c_d": [
+          563754,
+          943847,
+          14479,
+          24241
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 164,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_36_shift_-1",
+        "matrix_a_b_c_d": [
+          -380093,
+          943847,
+          -9762,
+          24241
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 137,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_37_shift_0",
+        "matrix_a_b_c_d": [
+          122889,
+          948253,
+          557,
+          4298
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 140,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      },
+      {
+        "determinant": 1,
+        "distinct_finite_original_x_values": 1,
+        "id": "checkpoint_37_shift_-1",
+        "matrix_a_b_c_d": [
+          -825364,
+          948253,
+          -3741,
+          4298
+        ],
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 162,
+        "signed_points_found": 4,
+        "transformed_naive_height_bound": 50000
+      }
+    ],
+    "scope": "76 explicit determinant-one charts x=(aX+b)/(cX+d), each searched to transformed naive height 50000"
+  },
+  "outside_uniform_checkpoint": {
+    "all_exactly_in_saturated_17_point_span": true,
+    "all_mapped_and_checked_exactly": true,
+    "distinct_jacobian_image_count": 40,
+    "distinct_quartic_x_count": 40,
+    "points": [
+      {
+        "discovered_in": [
+          "skew:d001001_002000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "122599380904522509402893876001272831624092371/294223500164819327305593746136004",
+        "jacobian_y": "-8624526088893852540902761291592128750160488411392238530549978720/90121416558604941413759861287266003124215181393",
+        "quartic_x": "1708027/1806",
+        "quartic_z": "175030044474199/271803",
+        "saturated_basis_relation": [
+          1,
+          0,
+          0,
+          1,
+          2,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d002001_004000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "48538985103236529504448425045224611406811/163265748524985319420468181284",
+        "jacobian_y": "-288573729625004151391924004774105133669884911768134458502720/1178025248272951982082418132310042777270483",
+        "quartic_x": "1519417/2674",
+        "quartic_z": "321600021333942/1787569",
+        "saturated_basis_relation": [
+          -1,
+          2,
+          -2,
+          -5,
+          -2,
+          1,
+          1,
+          3,
+          3,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d002001_004000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "52401533711791695310762210326983222600596611/117803074122504774881817079021924",
+        "jacobian_y": "-1017194894652062246362749051280786294444962225194489123209609635/22832155235760632390595310651526459807204391803",
+        "quartic_x": "5118809/3010",
+        "quartic_z": "5316104061096432/2265025",
+        "saturated_basis_relation": [
+          -1,
+          -2,
+          -2,
+          -1,
+          -2,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d002001_004000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "789056545875074397923376308716701876543446691/1917873571454979640474682013436804",
+        "jacobian_y": "-155322037510231531928037944099062131709732599529641161796317524320/1499829649851004655120974184708221827984888143207",
+        "quartic_x": "2752313/3066",
+        "quartic_z": "446872790238401/783363",
+        "saturated_basis_relation": [
+          -3,
+          -4,
+          -4,
+          -1,
+          -6,
+          5,
+          3,
+          1,
+          3,
+          0,
+          0,
+          -2,
+          2,
+          2,
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d002001_004000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "-49677474311092495955763062513865281740067611857909/59173784395651154867847838473622262884",
+        "jacobian_y": "-100210881054422436890192271311351538049889006944227216715656214804723080/165886066963483913329849419945552764572838974669210933",
+        "quartic_x": "1080271/3208",
+        "quartic_z": "235483158078304833/7059807104",
+        "saturated_basis_relation": [
+          -3,
+          -2,
+          -2,
+          -1,
+          0,
+          -1,
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -2,
+          -2,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d002001_004000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "304573576238197970108727960489948359633882811/950911449075942141004386268121764",
+        "jacobian_y": "114625737864582297818019529155487383724995774954314768701728570120/523627066796735477392437969611757182479935863677",
+        "quartic_x": "-1473016/3241",
+        "quartic_z": "17935720114433547/84032648",
+        "saturated_basis_relation": [
+          -3,
+          0,
+          -2,
+          -1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          2,
+          0,
+          0,
+          0,
+          2,
+          0,
+          -2,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d004001_008000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "2173833714251319876778092874484382481715451/6505711739197400476531943329444",
+        "jacobian_y": "8584727169817821177698804800570350357512193410811551987758560/42330768926674691022410969290856682574971941",
+        "quartic_x": "-1981517/4158",
+        "quartic_z": "338348834444153/1440747",
+        "saturated_basis_relation": [
+          -1,
+          0,
+          -2,
+          -1,
+          2,
+          -1,
+          -1,
+          1,
+          -1,
+          2,
+          0,
+          2,
+          -2,
+          0,
+          -2,
+          -2,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d004001_008000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "34181290718463363364640948366472646167296151651/84908241894147446844785649197815684",
+        "jacobian_y": "-7336872735621831084891686587161333544208475914778995365253148266520/63115889290840434916132366846176162858537385341919",
+        "quartic_x": "4584999/5495",
+        "quartic_z": "115961401505002521/241560200",
+        "saturated_basis_relation": [
+          1,
+          4,
+          0,
+          -1,
+          0,
+          -1,
+          -1,
+          1,
+          1,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d004001_008000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "95139055452340228064718092733248953245851711259/263595822640042092003073806072583396",
+        "jacobian_y": "-8412474563424020733539028264493007205901059250937444029581355825710/49320069298933074348000826202607017276869398694949",
+        "quartic_x": "3794971/5642",
+        "quartic_z": "15716811365283921/55706287",
+        "saturated_basis_relation": [
+          3,
+          2,
+          2,
+          1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          -2,
+          0,
+          0,
+          2,
+          0,
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d004001_008000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "-58535257802527625576724340622462387537545878981/63253824910895377859473786284342436",
+        "jacobian_y": "137376055179108301766773445074526195703901190515998818170847955155640/284080982389885580064780291048198259261008027030211",
+        "quartic_x": "1749807/5999",
+        "quartic_z": "7699075439267991/287904008",
+        "saturated_basis_relation": [
+          -1,
+          -2,
+          0,
+          1,
+          2,
+          -1,
+          -1,
+          -3,
+          -3,
+          0,
+          -2,
+          2,
+          -2,
+          -2,
+          -2,
+          -2,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d004001_008000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "5623198453141546914377279470164708147825704331/17016231683284626412142934855366244",
+        "jacobian_y": "1172801244564836839472749925300877956423675454819923832067940186040/5662510470085646923252001634431660600657147310259",
+        "quartic_x": "1222637/6888",
+        "quartic_z": "1331084478744619/31629696",
+        "saturated_basis_relation": [
+          -1,
+          0,
+          -2,
+          -3,
+          -2,
+          1,
+          1,
+          3,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d004001_008000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "3141273372235676833199120775057171739815382556365173/7026183337219369940928107980343737605602",
+        "jacobian_y": "-47006426348507675339388181518111814414939451094068156219155037444254836915/1214143722832244688148124587705123414930066541136087067714",
+        "quartic_x": "14339177/7478",
+        "quartic_z": "14515430045449197588/4795181503",
+        "saturated_basis_relation": [
+          3,
+          2,
+          2,
+          1,
+          2,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          -2,
+          -2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d004001_008000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "-1239202172075666469598445283343455854094296120709/1219177693096533332173139168310909604",
+        "jacobian_y": "-109855191411464674285349022852600400647822284636586110854614101476080/490587416983399041212216618339135184578092414705907",
+        "quartic_x": "-1149089/7566",
+        "quartic_z": "45067910127674996/1636234509",
+        "saturated_basis_relation": [
+          -3,
+          -2,
+          -2,
+          1,
+          -2,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          -2,
+          2,
+          2,
+          0,
+          -2,
+          2
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d008001_016000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "-400782317360493232399890976219396216438751694429/771298358785681040899570889794258564",
+        "jacobian_y": "184173801125761247696528239561352395165570254073884434343815810987160/246859306066163767334940283720678431943995226971127",
+        "quartic_x": "2202429/8260",
+        "quartic_z": "26884773542373987/955186400",
+        "saturated_basis_relation": [
+          1,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d008001_016000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "441761815454381154950284304994558258165301011/1003727017969914323758952689202884",
+        "jacobian_y": "638978524539635488393856197344202408711714177813596565728589920/11588822597479744251046235100852749246778181567",
+        "quartic_x": "-11788017/8806",
+        "quartic_z": "239552076359188749/135704863",
+        "saturated_basis_relation": [
+          1,
+          0,
+          2,
+          3,
+          0,
+          -1,
+          -1,
+          -3,
+          -1,
+          -2,
+          -2,
+          0,
+          0,
+          -2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d008001_016000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "-117117849519246666905127863369231636735351498709/190345077797131651387517443856179684",
+        "jacobian_y": "-22273364370389401324084804493464342748821754149389573237367284961080/30264142211207371899866956689960481200872963862917",
+        "quartic_x": "3153858/8897",
+        "quartic_z": "173623839802473021/4432770104",
+        "saturated_basis_relation": [
+          -1,
+          2,
+          -2,
+          -3,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d008001_016000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "9795595534336627225120599491276279629356277251/34664346649087501343458196786503684",
+        "jacobian_y": "614421369782445035504938733215133320789936030950402417517848555360/2352016811176614175127408744112843006835667687833",
+        "quartic_x": "1711825/9002",
+        "quartic_z": "5699499088757133/141813007",
+        "saturated_basis_relation": [
+          -1,
+          -2,
+          0,
+          1,
+          -2,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          -2,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d008001_016000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "-66313137237774407442225543732657055503429069/99065124390007521494657274968644",
+        "jacobian_y": "-1811318997755315679944587532942640589047895058211435164084214960/2515330846460081736524381445093123284745717641",
+        "quartic_x": "3986099/11382",
+        "quartic_z": "406250875786724/10795827",
+        "saturated_basis_relation": [
+          1,
+          2,
+          2,
+          -1,
+          4,
+          -3,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          2,
+          -2,
+          -2,
+          -2,
+          0,
+          -2
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d008001_016000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "-47509808305379770034333669582051327152920189/293954201961656250910397026206724",
+        "jacobian_y": "8152361635161560774776015507580840340999366943729199006417833680/12856816396319267557837294401789941387096232529",
+        "quartic_x": "-2950819/11690",
+        "quartic_z": "2099399099944908/34164025",
+        "saturated_basis_relation": [
+          3,
+          0,
+          2,
+          3,
+          2,
+          -3,
+          -1,
+          -3,
+          -3,
+          -2,
+          -2,
+          2,
+          0,
+          -2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d008001_016000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "4346179304856068118690651152506852591299/10828419904810744584023968516",
+        "jacobian_y": "16609067892237324555208471480706213824893249938216613741360/140850257656066198184615865227880200742367",
+        "quartic_x": "-9272825/13342",
+        "quartic_z": "449610689308404/908209",
+        "saturated_basis_relation": [
+          1,
+          2,
+          0,
+          -1,
+          0,
+          -1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d008001_016000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "-868079570971627116040546232966400776102311389/2108789644290325060526997038175364",
+        "jacobian_y": "-181452540985441449752099717239436318512008018128182138540497216360/247038034495614719323503575667051169638811388161",
+        "quartic_x": "5228497/14056",
+        "quartic_z": "18274906406933319/395142272",
+        "saturated_basis_relation": [
+          1,
+          -2,
+          2,
+          3,
+          2,
+          -1,
+          -1,
+          -3,
+          -3,
+          -2,
+          -2,
+          2,
+          -2,
+          -2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d008001_016000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "-13205613322319996316595738414852305790697709/12726256657553767511185766389444",
+        "jacobian_y": "-10410655094835872282728471672540761113147187549141507778739040/810705257500058509837408183727363642986188913",
+        "quartic_x": "4423945/14266",
+        "quartic_z": "1419674789275041/50879689",
+        "saturated_basis_relation": [
+          1,
+          2,
+          2,
+          -1,
+          2,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          -2,
+          -2,
+          0,
+          0,
+          -2
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d008001_016000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "3346268578295199238699664937603319087150526379/9375286389286305174158642098014436",
+        "jacobian_y": "-58055521258969911274941675194374007360947019534398480365806882880/330820723895821413339913571692296181198528676261",
+        "quartic_x": "10201165/15386",
+        "quartic_z": "112634399294958342/414275743",
+        "saturated_basis_relation": [
+          -1,
+          -2,
+          -2,
+          -3,
+          -2,
+          1,
+          3,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d008001_016000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "-10571755173823813186057989433813257490810761913461/10316309803254498642140306882878619236",
+        "jacobian_y": "2121279147358896106368772847613478444624765879865150632958246522826360/12075425880115897909915808430419673756688573022092789",
+        "quartic_x": "-2576407/15512",
+        "quartic_z": "98323508432224641/3368710016",
+        "saturated_basis_relation": [
+          1,
+          0,
+          0,
+          -1,
+          2,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          2,
+          -2,
+          -2,
+          -2,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d008001_016000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "8089164421463818120863602202036107397028719579/28665753756745015352181491257104676",
+        "jacobian_y": "3239689692212383989841334598022166211344095882051114336804852399680/12381092886784183086980834029658187053935824867797",
+        "quartic_x": "-6347277/15526",
+        "quartic_z": "10365896246942478/60264169",
+        "saturated_basis_relation": [
+          -1,
+          -4,
+          0,
+          3,
+          -2,
+          1,
+          1,
+          -1,
+          -1,
+          -2,
+          -2,
+          -2,
+          2,
+          0,
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d008001_016000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "-6321136789698328635433648965066056375008013301/287217178051949279142621805818706276",
+        "jacobian_y": "30361246901261953914115137458067830805377856422013207442361562248640/56095950255348906747234862264372554896454822219371",
+        "quartic_x": "-4371761/15806",
+        "quartic_z": "32811824511394878/437201863",
+        "saturated_basis_relation": [
+          -1,
+          -2,
+          2,
+          5,
+          2,
+          -1,
+          -1,
+          -3,
+          -3,
+          -2,
+          -2,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d016001_032000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "1181710420015394330664567299528903919071448888803931/4594053505363656511718879829068788976164",
+        "jacobian_y": "32748068872880712023855983439621257986681270664450587467129441976640377720/113477554098162014878601689957744418910739220392552370077",
+        "quartic_x": "-6191793/16012",
+        "quartic_z": "26973453602688035781/175879522784",
+        "saturated_basis_relation": [
+          3,
+          0,
+          2,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          -2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d016001_032000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "36676347735437241361211050034340888267318459/442808804471134226875440699022756",
+        "jacobian_y": "-75962012890780417857411846140253782126727307710279687621187956720/166393495098069378920118412406479706864023130909",
+        "quartic_x": "-1212485/17094",
+        "quartic_z": "858898885829132/24350403",
+        "saturated_basis_relation": [
+          -1,
+          2,
+          -2,
+          -3,
+          -2,
+          1,
+          -1,
+          3,
+          3,
+          2,
+          2,
+          -2,
+          0,
+          2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d016001_032000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "343309899012461593185022200559089747042318507671739/760538133686993197419713886635555850916",
+        "jacobian_y": "188297104965003523917657152035800692218557518437481185020010765374213960/7643590023620018742812428594427341827547375417256294131",
+        "quartic_x": "1653101/17451",
+        "quartic_z": "281406692421609373/5684698152",
+        "saturated_basis_relation": [
+          1,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d016001_032000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "847564032556842406200847829294088409927611/2176882283686948908939588235684",
+        "jacobian_y": "7700478880640307077719279193839811936361284211279370461989520/57354089589417627685690093660065628925859683",
+        "quartic_x": "2700609/17458",
+        "quartic_z": "3432624072215892/76195441",
+        "saturated_basis_relation": [
+          3,
+          2,
+          2,
+          1,
+          2,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          2,
+          -2,
+          -2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d016001_032000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "-2292816662070881545921176248165094337576183701/3699623544389338462705777330121956",
+        "jacobian_y": "-421904480937124342649137526945648050977917070156172812662615773320/574050678937493219191074940334184788245051228163",
+        "quartic_x": "-2534431/20804",
+        "quartic_z": "24205680615818013/865612832",
+        "saturated_basis_relation": [
+          -3,
+          0,
+          0,
+          1,
+          2,
+          -1,
+          -3,
+          -1,
+          -1,
+          2,
+          0,
+          0,
+          -2,
+          0,
+          -2,
+          -2,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d016001_032000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "1846546522894930405710234270287993995351516491/4620077510245611934539056240051044",
+        "jacobian_y": "96343932947443832404408143275618502048473790458982929083986854280/801102017617112797634233711351435139100501214291",
+        "quartic_x": "3103215/20804",
+        "quartic_z": "39534241495223667/865612832",
+        "saturated_basis_relation": [
+          -1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          -2,
+          2,
+          2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d016001_032000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "-208518089734230129381176596574233716288873895461/1313356266101930396537525773851642916",
+        "jacobian_y": "16998064145944598063420420565564773720407154543898209202809491707341640/26877309892138661428867244942281140340482031337754419",
+        "quartic_x": "5777999/23688",
+        "quartic_z": "11694056816047373/374080896",
+        "saturated_basis_relation": [
+          -1,
+          -2,
+          0,
+          3,
+          2,
+          -1,
+          -1,
+          -1,
+          -3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -2,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d016001_032000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "-1097116006657316277683573584119642130135428254949/1257685016399563606037429771063051044",
+        "jacobian_y": "-14235334348865934015140560362252390507003547783716929369828574663908280/25186614984736331479846850597138554628756378569874963",
+        "quartic_x": "-3454751/25144",
+        "quartic_z": "34330578560244807/1264441472",
+        "saturated_basis_relation": [
+          3,
+          2,
+          2,
+          1,
+          2,
+          -1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          2,
+          -2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d016001_032000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "-163520164975862960422117633693010092540776741/160266089355503196837315148668196",
+        "jacobian_y": "-51491676859988003325909067287080859984033329713182070675042428480/253613561442538529428585939308646021920933214907",
+        "quartic_x": "-4279963/28042",
+        "quartic_z": "775079043462642/28084063",
+        "saturated_basis_relation": [
+          -3,
+          -2,
+          -2,
+          -1,
+          -4,
+          3,
+          1,
+          1,
+          3,
+          0,
+          0,
+          -2,
+          2,
+          2,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d032001_064000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "185836699942997316912773472740601976390287459/1163852791581734140700657084176516",
+        "jacobian_y": "-39167179479107396250463189781975145438397608478297880067543293280/101288703433640731947926402088789136191683302783",
+        "quartic_x": "-2341063/38346",
+        "quartic_z": "4525497224946451/122534643",
+        "saturated_basis_relation": [
+          -3,
+          0,
+          -2,
+          -3,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          2,
+          0,
+          0,
+          -2,
+          0,
+          -2,
+          -2,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d032001_064000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "265011030293477184978410109961030905899302562037/587541802399106635756993605883714658",
+        "jacobian_y": "-24173081319700675973254746118712767266823621987775082454327225896585/928429730076901870944058610274772293177541746071038",
+        "quartic_x": "2190959/39130",
+        "quartic_z": "132736252991721324/2679524575",
+        "saturated_basis_relation": [
+          -1,
+          0,
+          -2,
+          -1,
+          0,
+          1,
+          -1,
+          1,
+          -1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d032001_064000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "344572126131978479826070809922151844843086811/2484960339401952498709214162107684",
+        "jacobian_y": "-899020937671609780535423802803494835556974275656015908435763835680/2212030778488354806136866336907601673072296505683",
+        "quartic_x": "-2984833/46662",
+        "quartic_z": "6612672395469257/181445187",
+        "saturated_basis_relation": [
+          -1,
+          -2,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          -2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d032001_064000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "260076064934485510207139587568317934427000478899/605618426734594554225759815473186756",
+        "jacobian_y": "-12914962135524299556316223433986460953255895897746434490834510936460/171757026932347602585451210861350599517106068136609",
+        "quartic_x": "1148033/47698",
+        "quartic_z": "190583240210951208/3981423607",
+        "saturated_basis_relation": [
+          -5,
+          -6,
+          -4,
+          1,
+          -4,
+          3,
+          1,
+          1,
+          1,
+          0,
+          0,
+          -2,
+          2,
+          2,
+          0,
+          -2,
+          2
+        ]
+      },
+      {
+        "discovered_in": [
+          "skew:d064001_128000"
+        ],
+        "exact_jacobian_membership_checked": true,
+        "exact_quartic_membership_checked": true,
+        "exact_relation_replayed_with_fraction_group_law": true,
+        "jacobian_x": "595719467401936370883387090733280347928179238979/1415900348276227695127442300141486596",
+        "jacobian_y": "-2691171205326046967156542610622446758738223400380527977544244291591640/30085761325616812278101680133341036788654616058402551",
+        "quartic_x": "1169081/70784",
+        "quartic_z": "473538043681648023/10020749312",
+        "saturated_basis_relation": [
+          -1,
+          -2,
+          -2,
+          -3,
+          -2,
+          3,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          -2,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "parameters": {
+    "box_timeout_seconds_each": 20.0,
+    "chart_batch_timeout_seconds": 25.0,
+    "height_and_relation_timeout_seconds_each": 30.0,
+    "mobius_center_count": 38,
+    "mobius_chart_height": 50000,
+    "mobius_shifts": [
+      0,
+      -1
+    ],
+    "skew_boxes": [
+      {
+        "denominator_lower_bound": 1,
+        "denominator_upper_bound": 10,
+        "id": "d000001_000010",
+        "numerator_absolute_bound": 10000000000
+      },
+      {
+        "denominator_lower_bound": 11,
+        "denominator_upper_bound": 100,
+        "id": "d000011_000100",
+        "numerator_absolute_bound": 1000000000
+      },
+      {
+        "denominator_lower_bound": 101,
+        "denominator_upper_bound": 1000,
+        "id": "d000101_001000",
+        "numerator_absolute_bound": 100000000
+      },
+      {
+        "denominator_lower_bound": 1001,
+        "denominator_upper_bound": 2000,
+        "id": "d001001_002000",
+        "numerator_absolute_bound": 100000000
+      },
+      {
+        "denominator_lower_bound": 2001,
+        "denominator_upper_bound": 4000,
+        "id": "d002001_004000",
+        "numerator_absolute_bound": 50000000
+      },
+      {
+        "denominator_lower_bound": 4001,
+        "denominator_upper_bound": 8000,
+        "id": "d004001_008000",
+        "numerator_absolute_bound": 25000000
+      },
+      {
+        "denominator_lower_bound": 8001,
+        "denominator_upper_bound": 16000,
+        "id": "d008001_016000",
+        "numerator_absolute_bound": 12500000
+      },
+      {
+        "denominator_lower_bound": 16001,
+        "denominator_upper_bound": 32000,
+        "id": "d016001_032000",
+        "numerator_absolute_bound": 6250000
+      },
+      {
+        "denominator_lower_bound": 32001,
+        "denominator_upper_bound": 64000,
+        "id": "d032001_064000",
+        "numerator_absolute_bound": 3125000
+      },
+      {
+        "denominator_lower_bound": 64001,
+        "denominator_upper_bound": 128000,
+        "id": "d064001_128000",
+        "numerator_absolute_bound": 1562500
+      }
+    ],
+    "stack_bytes": 256000000,
+    "uniform_checkpoint_height": 1000000
+  },
+  "primary_source": "https://da.lib.kobe-u.ac.jp/da/kernel/E0003610/E0003610.pdf",
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/search_nagao_u42_skew_height.py",
+  "saturated_basis": {
+    "point_count": 17,
+    "provenance": "elliptic_nagao_u42_height_10000000.json",
+    "sha256": "0e9d8fc871134feda97738bb38064526ecac277e4159e36d1234448d2d74b407"
+  },
+  "schema_version": 1,
+  "script_sha256": "84c7bd9d4e34395fdf626d8c73623921d4084bd279f78784c88acd90e70fdf6f",
+  "skew_search": {
+    "boxes": [
+      {
+        "denominator_lower_bound": 1,
+        "denominator_upper_bound": 10,
+        "distinct_quartic_x_values": 2,
+        "id": "d000001_000010",
+        "numerator_absolute_bound": 10000000000,
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 10690,
+        "signed_points_found": 4,
+        "wall_seconds": 10.803528500000539
+      },
+      {
+        "denominator_lower_bound": 11,
+        "denominator_upper_bound": 100,
+        "distinct_quartic_x_values": 17,
+        "id": "d000011_000100",
+        "numerator_absolute_bound": 1000000000,
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 10056,
+        "signed_points_found": 34,
+        "wall_seconds": 10.18675529200118
+      },
+      {
+        "denominator_lower_bound": 101,
+        "denominator_upper_bound": 1000,
+        "distinct_quartic_x_values": 9,
+        "id": "d000101_001000",
+        "numerator_absolute_bound": 100000000,
+        "outside_uniform_checkpoint_x_values": [],
+        "pari_reported_milliseconds": 10347,
+        "signed_points_found": 18,
+        "wall_seconds": 10.464811041994835
+      },
+      {
+        "denominator_lower_bound": 1001,
+        "denominator_upper_bound": 2000,
+        "distinct_quartic_x_values": 3,
+        "id": "d001001_002000",
+        "numerator_absolute_bound": 100000000,
+        "outside_uniform_checkpoint_x_values": [
+          "1708027/1806"
+        ],
+        "pari_reported_milliseconds": 11547,
+        "signed_points_found": 6,
+        "wall_seconds": 11.691584542000783
+      },
+      {
+        "denominator_lower_bound": 2001,
+        "denominator_upper_bound": 4000,
+        "distinct_quartic_x_values": 11,
+        "id": "d002001_004000",
+        "numerator_absolute_bound": 50000000,
+        "outside_uniform_checkpoint_x_values": [
+          "1519417/2674",
+          "5118809/3010",
+          "2752313/3066",
+          "1080271/3208",
+          "-1473016/3241"
+        ],
+        "pari_reported_milliseconds": 11672,
+        "signed_points_found": 22,
+        "wall_seconds": 11.795360834003077
+      },
+      {
+        "denominator_lower_bound": 4001,
+        "denominator_upper_bound": 8000,
+        "distinct_quartic_x_values": 10,
+        "id": "d004001_008000",
+        "numerator_absolute_bound": 25000000,
+        "outside_uniform_checkpoint_x_values": [
+          "-1981517/4158",
+          "4584999/5495",
+          "3794971/5642",
+          "1749807/5999",
+          "1222637/6888",
+          "14339177/7478",
+          "-1149089/7566"
+        ],
+        "pari_reported_milliseconds": 11811,
+        "signed_points_found": 20,
+        "wall_seconds": 11.917312165998737
+      },
+      {
+        "denominator_lower_bound": 8001,
+        "denominator_upper_bound": 16000,
+        "distinct_quartic_x_values": 16,
+        "id": "d008001_016000",
+        "numerator_absolute_bound": 12500000,
+        "outside_uniform_checkpoint_x_values": [
+          "2202429/8260",
+          "-11788017/8806",
+          "3153858/8897",
+          "1711825/9002",
+          "3986099/11382",
+          "-2950819/11690",
+          "-9272825/13342",
+          "5228497/14056",
+          "4423945/14266",
+          "10201165/15386",
+          "-2576407/15512",
+          "-6347277/15526",
+          "-4371761/15806"
+        ],
+        "pari_reported_milliseconds": 11798,
+        "signed_points_found": 32,
+        "wall_seconds": 11.905709541999386
+      },
+      {
+        "denominator_lower_bound": 16001,
+        "denominator_upper_bound": 32000,
+        "distinct_quartic_x_values": 11,
+        "id": "d016001_032000",
+        "numerator_absolute_bound": 6250000,
+        "outside_uniform_checkpoint_x_values": [
+          "-6191793/16012",
+          "-1212485/17094",
+          "1653101/17451",
+          "2700609/17458",
+          "-2534431/20804",
+          "3103215/20804",
+          "5777999/23688",
+          "-3454751/25144",
+          "-4279963/28042"
+        ],
+        "pari_reported_milliseconds": 11671,
+        "signed_points_found": 22,
+        "wall_seconds": 11.813574374995369
+      },
+      {
+        "denominator_lower_bound": 32001,
+        "denominator_upper_bound": 64000,
+        "distinct_quartic_x_values": 7,
+        "id": "d032001_064000",
+        "numerator_absolute_bound": 3125000,
+        "outside_uniform_checkpoint_x_values": [
+          "-2341063/38346",
+          "2190959/39130",
+          "-2984833/46662",
+          "1148033/47698"
+        ],
+        "pari_reported_milliseconds": 11650,
+        "signed_points_found": 14,
+        "wall_seconds": 11.788343207997968
+      },
+      {
+        "denominator_lower_bound": 64001,
+        "denominator_upper_bound": 128000,
+        "distinct_quartic_x_values": 4,
+        "id": "d064001_128000",
+        "numerator_absolute_bound": 1562500,
+        "outside_uniform_checkpoint_x_values": [
+          "1169081/70784"
+        ],
+        "pari_reported_milliseconds": 11568,
+        "signed_points_found": 8,
+        "wall_seconds": 11.7061289580015
+      }
+    ],
+    "scope": "union of the ten explicit reduced n/d boxes; each record gives |n| and denominator bounds"
+  },
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+    "python": "3.14.6"
+  },
+  "stable_pool_numerical_rank": 17,
+  "status": "bounded_search_complete"
+}

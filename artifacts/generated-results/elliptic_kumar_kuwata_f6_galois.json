@@ -1,0 +1,862 @@
+{
+  "audit_scope": "Kumar--Kuwata Example 9.1 geometric rank-18 basis",
+  "basis_field": "Q(i, sqrt(2), 3^(1/4))",
+  "checks": {
+    "all_source_point_specializations_on_curve": true,
+    "galois_group_relations": {
+      "complex_conjugation_squared": true,
+      "dihedral_relation": true,
+      "quartic_rotation_fourth_power": true,
+      "sqrt2_flip_commutes_with_complex_conjugation": true,
+      "sqrt2_flip_commutes_with_quartic_rotation": true,
+      "sqrt2_flip_squared": true
+    },
+    "height_isometries": {
+      "complex_conjugation": true,
+      "quartic_rotation": true,
+      "sqrt2_flip": true
+    },
+    "source_point_specialization_count": 72
+  },
+  "conclusion": {
+    "competitive_for_specialization_search": false,
+    "competitive_rank_threshold": 12,
+    "largest_quadratic_twist_rank_over_Q_t": 3,
+    "limitation": "The Galois action was identified in the published height lattices by exact matching at four rational fibres. Group relations and all height isometries were then checked exactly. This artifact does not claim a formal symbolic proof of all 54 section identities over K(t).",
+    "mathematical_status": "exact finite-fibre computational audit",
+    "rank_over_Q_t": 5,
+    "specialization_search_performed": false
+  },
+  "curve": "Y^2 = X^3 - 33 X + t^6 + 8/t^6",
+  "exact_method": {
+    "finite_index_note": "The published P(10)+Q(8) lattice has finite index in the saturated rank-18 Mordell-Weil lattice. Tensoring with Q therefore preserves every Galois-character dimension.",
+    "floating_point_matching": false,
+    "matching_fibres": [
+      2,
+      3,
+      5,
+      7
+    ],
+    "p_minimal_vector_count": 84,
+    "point_matching": "exact degree-16 number-field arithmetic at all four fibres",
+    "q_minimal_vector_count": 240
+  },
+  "field_generators": {
+    "complex_conjugation": "i -> -i; sqrt(2), 3^(1/4) fixed",
+    "quartic_rotation": "3^(1/4) -> i*3^(1/4); i, sqrt(2) fixed",
+    "sqrt2_flip": "sqrt(2) -> -sqrt(2); i, 3^(1/4) fixed"
+  },
+  "generator_actions": {
+    "complex_conjugation": {
+      "p_basis_order": [
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P6s",
+        "P5s",
+        "P4s",
+        "P3s",
+        "P7",
+        "P8"
+      ],
+      "p_matrix_rows": [
+        [
+          -1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -2,
+          1,
+          -1,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1
+        ]
+      ],
+      "q_basis_order": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ],
+      "q_matrix_rows": [
+        [
+          2,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          -2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          -4,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          -5,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          -6,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          -4,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          -2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          -3,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1
+        ]
+      ]
+    },
+    "quartic_rotation": {
+      "p_basis_order": [
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P6s",
+        "P5s",
+        "P4s",
+        "P3s",
+        "P7",
+        "P8"
+      ],
+      "p_matrix_rows": [
+        [
+          -1,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          -1,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -2,
+          1,
+          -1,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "q_basis_order": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ],
+      "q_matrix_rows": [
+        [
+          2,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          -2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          -4,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          -5,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          -6,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          -4,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          -2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          3,
+          -3,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1
+        ]
+      ]
+    },
+    "sqrt2_flip": {
+      "p_basis_order": [
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P6s",
+        "P5s",
+        "P4s",
+        "P3s",
+        "P7",
+        "P8"
+      ],
+      "p_matrix_rows": [
+        [
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "q_basis_order": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8"
+      ],
+      "q_matrix_rows": [
+        [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -2,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -2,
+          0,
+          1,
+          -2,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          -2,
+          0,
+          2,
+          -3,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          -2,
+          0,
+          2,
+          -2,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          1,
+          -2,
+          1,
+          0,
+          1
+        ]
+      ]
+    }
+  },
+  "geometric_rank": 18,
+  "polynomial_model_after_X_t2_Y_t3_scaling": "Y^2 = X^3 - 33*t^4*X + t^12 + 8",
+  "quadratic_character_eigenspaces": [
+    {
+      "base_curve_over_Q_t": true,
+      "full_rank": 5,
+      "p_subspace_rank": 2,
+      "q_subspace_rank": 3,
+      "quadratic_character_squareclass": 1,
+      "quadratic_subfield": "Q",
+      "signs": {
+        "complex_conjugation": 1,
+        "quartic_rotation": 1,
+        "sqrt2_flip": 1
+      }
+    },
+    {
+      "base_curve_over_Q_t": false,
+      "full_rank": 3,
+      "p_subspace_rank": 0,
+      "q_subspace_rank": 3,
+      "quadratic_character_squareclass": 2,
+      "quadratic_subfield": "Q(sqrt(2))",
+      "signs": {
+        "complex_conjugation": 1,
+        "quartic_rotation": 1,
+        "sqrt2_flip": -1
+      }
+    },
+    {
+      "base_curve_over_Q_t": false,
+      "full_rank": 2,
+      "p_subspace_rank": 1,
+      "q_subspace_rank": 1,
+      "quadratic_character_squareclass": -3,
+      "quadratic_subfield": "Q(sqrt(-3))",
+      "signs": {
+        "complex_conjugation": -1,
+        "quartic_rotation": -1,
+        "sqrt2_flip": 1
+      }
+    },
+    {
+      "base_curve_over_Q_t": false,
+      "full_rank": 2,
+      "p_subspace_rank": 2,
+      "q_subspace_rank": 0,
+      "quadratic_character_squareclass": -1,
+      "quadratic_subfield": "Q(sqrt(-1))",
+      "signs": {
+        "complex_conjugation": -1,
+        "quartic_rotation": 1,
+        "sqrt2_flip": 1
+      }
+    },
+    {
+      "base_curve_over_Q_t": false,
+      "full_rank": 1,
+      "p_subspace_rank": 0,
+      "q_subspace_rank": 1,
+      "quadratic_character_squareclass": -6,
+      "quadratic_subfield": "Q(sqrt(-6))",
+      "signs": {
+        "complex_conjugation": -1,
+        "quartic_rotation": -1,
+        "sqrt2_flip": -1
+      }
+    },
+    {
+      "base_curve_over_Q_t": false,
+      "full_rank": 1,
+      "p_subspace_rank": 1,
+      "q_subspace_rank": 0,
+      "quadratic_character_squareclass": 3,
+      "quadratic_subfield": "Q(sqrt(3))",
+      "signs": {
+        "complex_conjugation": 1,
+        "quartic_rotation": -1,
+        "sqrt2_flip": 1
+      }
+    },
+    {
+      "base_curve_over_Q_t": false,
+      "full_rank": 0,
+      "p_subspace_rank": 0,
+      "q_subspace_rank": 0,
+      "quadratic_character_squareclass": -2,
+      "quadratic_subfield": "Q(sqrt(-2))",
+      "signs": {
+        "complex_conjugation": -1,
+        "quartic_rotation": 1,
+        "sqrt2_flip": -1
+      }
+    },
+    {
+      "base_curve_over_Q_t": false,
+      "full_rank": 0,
+      "p_subspace_rank": 0,
+      "q_subspace_rank": 0,
+      "quadratic_character_squareclass": 6,
+      "quadratic_subfield": "Q(sqrt(6))",
+      "signs": {
+        "complex_conjugation": 1,
+        "quartic_rotation": -1,
+        "sqrt2_flip": -1
+      }
+    }
+  ],
+  "reproduce": ".venv/bin/python elliptic-curves/cas/audit_kumar_kuwata_f6_galois.py --output artifacts/generated-results/elliptic_kumar_kuwata_f6_galois.json",
+  "script_sha256": "9fa338fda3675fbabee693813e1a1c80b629093905e6ff695489e6a267e1d4ed",
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6",
+    "sympy": "1.14.0"
+  },
+  "source": {
+    "ancillary_file": "auxfiles/Example9.1.txt",
+    "ancillary_file_sha256": "53848ce6b2205353a03b134bf4086bf2ab4d6671d6134a6858800262b4444b2f",
+    "arxiv": "https://arxiv.org/abs/1409.2931",
+    "authors": [
+      "Abhinav Kumar",
+      "Masato Kuwata"
+    ],
+    "bundle_sha256": "d3903ffa610826528ee87fa1872a46b7fccb1bcc2b0b2b6240bcdd14d71a73dd",
+    "bundle_url": "https://export.arxiv.org/e-print/1409.2931",
+    "title": "Elliptic K3 surfaces associated with the product of two elliptic curves: Mordell-Weil lattices and their fields of definition"
+  }
+}

@@ -1,0 +1,442 @@
+{
+  "artifact_kind": "bounded_primary_source_recovery_audit",
+  "assessment": {
+    "all_pinned_source_hashes_verified_before_write": true,
+    "breakthrough_result_found": false,
+    "epistemic_status": "bounded negative source-recovery result; not evidence that a rank-30 curve does not exist",
+    "public_rank30_or_higher_curve_reproducible": false,
+    "public_record_k3_search_family_reproducible": false,
+    "reason": "The declared official/author-controlled source scope still ends at a fully reproducible rank-29 lower bound.  The primary announcement identifies a rank-17 K3 fibration and explicitly defers its writeup/computation; no audited source supplies that model, its 17 sections, a specialization map, a 30th point, or a rank-30 independence certificate."
+  },
+  "audit_date": "2026-08-14",
+  "declared_scope": {
+    "excluded_or_not_proved": [
+      "private, unindexed, access-controlled, or unpublished data",
+      "all conceivable keyword variants and every repository on the web",
+      "a mathematical nonexistence theorem for rank >=30"
+    ],
+    "included": [
+      "official NMBRTHRY full-index snapshot and primary announcement",
+      "Dujella's author-maintained current rank catalogue",
+      "official arXiv exact-phrase query and both authors' feeds",
+      "Zev Klagsbrun's public GitHub owner repos, branches, tags, and gists",
+      "official Zenodo metadata queries",
+      "two explicit K3 pages located on Noam Elkies's author site",
+      "the existing exact local rank-29 and rank-18 source audits"
+    ]
+  },
+  "local_existing_work": {
+    "existing_rank30_bounded_searches": [
+      {
+        "path": "artifacts/generated-results/elliptic_elkies_klagsbrun_rank30_alternate_covers.json",
+        "sha256": "81d0b502d9cb550b2dcf5b15aa7bdfa2febf16ed9a5cad6af2060e2e294f36cb",
+        "status": "bounded_search_no_certified_30th_point"
+      },
+      {
+        "path": "artifacts/generated-results/elliptic_elkies_klagsbrun_rank30_higher_weight_covers.json",
+        "sha256": "c63af8aa2c6a972c34ecabc9acf0b8f564912a8e8b4956d065b33ab222d769e0",
+        "status": "bounded_search_no_certified_30th_point"
+      },
+      {
+        "path": "artifacts/generated-results/elliptic_elkies_klagsbrun_rank30_search.json",
+        "sha256": "bca9853e5f05ea90d29d2a8eeb2707a3744c73063e834fd0c99cfdd9cbd08005",
+        "status": "bounded_search_no_certified_30th_point"
+      },
+      {
+        "path": "artifacts/generated-results/elliptic_elkies_klagsbrun_rank30_search_deep.json",
+        "sha256": "5f07458bdf57fb84d09abb830f3f21edecd470f0e7d1965c2e9f9a9d21efbe54",
+        "status": "bounded_search_no_certified_30th_point"
+      }
+    ],
+    "rank18_source_audit": {
+      "explicit_rank18_family_reproducible": false,
+      "path": "artifacts/generated-results/elliptic_elkies_rank18_source_audit.json",
+      "sha256": "89de077b012b69d5c2236fde420ec851bd3838e6c137500248a7032e0e0cd42a",
+      "status": "source-blocked-before-instantiation"
+    },
+    "rank29_exact_certificate": {
+      "certified_algebraic_rank_lower_bound": 29,
+      "path": "artifacts/generated-results/elliptic_elkies_klagsbrun_rank29_certificate.json",
+      "sha256": "ce4cf7d53f89e554ad0674ce77d0ad5f6924fefedefd715650801e062e5f3f2f",
+      "status": "exact_unconditional_rank_at_least_29"
+    }
+  },
+  "recovered_frontier": {
+    "explicit_record_rank17_k3_family_recovered": false,
+    "highest_publicly_reproducible_algebraic_rank_lower_bound": 29,
+    "mechanism_replayable_from_public_data": false,
+    "published_search_mechanism_recovered": "rank-17 fibration of the same K3 used for rank 28, then sieve specializations and search for points outside generic Z^17",
+    "rank29_exact_local_certificate_available": true,
+    "rank30_curve_recovered": false
+  },
+  "reproduce_command": ".venv/bin/python elliptic-curves/cas/audit_rank30_public_sources.py --source-dir /private/tmp/rank30-public-source-audit --output artifacts/generated-results/elliptic_rank30_public_source_audit.json",
+  "required_rank30_reproduction_objects": {
+    "exact_point_membership_checks_for_thirty_points": false,
+    "independence_certificate_for_thirty_points": false,
+    "public_record_search_data_beyond_the_rank29_announcement": false,
+    "rank30_weierstrass_model": false,
+    "record_rank17_k3_section_coordinates_1_through_17": false,
+    "record_rank17_k3_weierstrass_coefficients": false,
+    "record_rank17_specialization_parameter_or_map": false,
+    "thirty_rational_points_on_one_curve": false
+  },
+  "schema": "elliptic-rank30-public-source-audit-v1",
+  "script_sha256": "fa62ba70225122acdef4dca10fb2714ce7b85201729072fb0790ea0c56701f71",
+  "software": {
+    "python": "3.14.6"
+  },
+  "source_inventories": {
+    "arxiv_elkies": {
+      "authority": "official arXiv API",
+      "bytes": 94612,
+      "matches_pinned_revision": true,
+      "role": "Noam Elkies author feed",
+      "sha256": "49e6be35fa090d8e4009d8a6475bcab757672b44cf5c34f56de2a1d676738337",
+      "url": "https://export.arxiv.org/api/query?search_query=au:Elkies&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+    },
+    "arxiv_klagsbrun": {
+      "authority": "official arXiv API",
+      "bytes": 30900,
+      "matches_pinned_revision": true,
+      "role": "Zev Klagsbrun author feed",
+      "sha256": "873ecbcc30109756790f9b69519575efa887c33dcdd099662a6f3a13a3c3fb83",
+      "url": "https://export.arxiv.org/api/query?search_query=au:Klagsbrun&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+    },
+    "arxiv_rank30": {
+      "authority": "official arXiv API",
+      "bytes": 761,
+      "matches_pinned_revision": true,
+      "role": "exact-phrase rank-30 metadata query",
+      "sha256": "f1ff392e51a9e9229b04ae7c163797884311d0b401c89bea02aa4bfa0cae4d5a",
+      "url": "https://export.arxiv.org/api/query?search_query=all:%22rank%2030%22%20AND%20all:%22elliptic%20curve%22&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending"
+    },
+    "dujella_rank29": {
+      "authority": "Andrej Dujella's author-maintained rank-record catalogue",
+      "bytes": 3657,
+      "matches_pinned_revision": true,
+      "role": "public rank-29 model and 29 point coordinates",
+      "sha256": "94b673dd0655dfa2d8eae9247488c5475ae904c3a230f382d39e4116b76956aa",
+      "url": "https://web.math.pmf.unizg.hr/~duje/tors/rk29.html"
+    },
+    "dujella_rank_history": {
+      "authority": "Andrej Dujella's author-maintained rank-record catalogue",
+      "bytes": 11200,
+      "matches_pinned_revision": true,
+      "role": "current public record index",
+      "sha256": "7cc15035e97d6c9d7c46f2031b1fa338017b3895351002fbe174b3d7715e4835",
+      "url": "https://web.math.pmf.unizg.hr/~duje/tors/rankhist.html"
+    },
+    "elkies_k3_20si": {
+      "authority": "Noam Elkies's Harvard author site",
+      "bytes": 29171,
+      "matches_pinned_revision": true,
+      "role": "candidate explicit K3 data page found in the author archive",
+      "sha256": "36ff78e6c487d4a8ab1f85d55c82fdad2667df063595302dd33566f73057d412",
+      "url": "https://people.math.harvard.edu/~elkies/K3_20SI.html"
+    },
+    "elkies_k3_i18": {
+      "authority": "Noam Elkies's Harvard author site",
+      "bytes": 6149,
+      "matches_pinned_revision": true,
+      "role": "candidate explicit K3 page found in the author archive",
+      "sha256": "d340e3f919b59425728e2dd351ca6cc12cda2f736bd78830ff88e943c7c1193f",
+      "url": "https://people.math.harvard.edu/~elkies/M263.21/K3_I18.html"
+    },
+    "github_elkiescurve_branches": {
+      "authority": "official GitHub API; author's public repository",
+      "bytes": 255,
+      "matches_pinned_revision": true,
+      "role": "public branch inventory",
+      "sha256": "be6fff488590aec408fed7ca74d3619deb4ea089e84ddb27fbec589a5e966849",
+      "url": "https://api.github.com/repos/zevklagsbrun/ElkiesCurve/branches?per_page=100"
+    },
+    "github_elkiescurve_tags": {
+      "authority": "official GitHub API; author's public repository",
+      "bytes": 5,
+      "matches_pinned_revision": true,
+      "role": "public tag inventory",
+      "sha256": "2ba33ca0557f1bb5b7ba88d67f9d0093c7185a36ec51fe2b7bd9372d3e001d6d",
+      "url": "https://api.github.com/repos/zevklagsbrun/ElkiesCurve/tags?per_page=100"
+    },
+    "github_elkiescurve_tree": {
+      "authority": "official GitHub API; author's public repository",
+      "bytes": 5102,
+      "matches_pinned_revision": true,
+      "role": "recursive default-branch file inventory",
+      "sha256": "a429c3dc5518325889f8f6b7abcdadb767738c9162cda51af29b2f3d9ec0ba59",
+      "url": "https://api.github.com/repos/zevklagsbrun/ElkiesCurve/git/trees/HEAD?recursive=1"
+    },
+    "github_owner_gists": {
+      "authority": "official GitHub API; author's public account",
+      "bytes": 5,
+      "matches_pinned_revision": true,
+      "role": "public gist inventory",
+      "sha256": "2ba33ca0557f1bb5b7ba88d67f9d0093c7185a36ec51fe2b7bd9372d3e001d6d",
+      "url": "https://api.github.com/users/zevklagsbrun/gists?per_page=100"
+    },
+    "github_owner_repos": {
+      "authority": "official GitHub API; author's public account",
+      "bytes": 11558,
+      "matches_pinned_revision": true,
+      "role": "public owner-repository inventory",
+      "sha256": "463661ab1e803026a6ef0e256153fd6ce92179258cfa800b5afdb4f323c0ccc3",
+      "url": "https://api.github.com/users/zevklagsbrun/repos?per_page=100&type=owner&sort=updated"
+    },
+    "nmbrthry_index": {
+      "authority": "official NMBRTHRY LISTSERV archive",
+      "bytes": 546133,
+      "matches_pinned_revision": true,
+      "role": "complete archive index snapshot through the audit date",
+      "sha256": "d08ac1964de817faddbc08e6e3269d7315aa67a9bd67d4cb8ef8e0473fc7b4c0",
+      "url": "https://listserv.nodak.edu/cgi-bin/wa.exe?A0=NMBRTHRY&TOC=&S=b"
+    },
+    "nmbrthry_rank29": {
+      "authority": "official NMBRTHRY LISTSERV archive; author announcement",
+      "bytes": 87743,
+      "matches_pinned_revision": true,
+      "role": "primary announcement of the rank-29 curve and search method",
+      "sha256": "93151103437b6e1c190882963e1dcb2785258bf42c7a9eb60e2bb5a1fa42266a",
+      "url": "https://listserv.nodak.edu/cgi-bin/wa.exe?A2=NMBRTHRY;b9d018b1.2409&S=b"
+    },
+    "zenodo_elkies_klagsbrun": {
+      "authority": "official Zenodo API",
+      "bytes": 446,
+      "matches_pinned_revision": true,
+      "role": "author-pair data-deposit query",
+      "sha256": "26fab1997e59f86d17722dd62f2bd6c91268be8b2267fa5bd962bfbca2426b0f",
+      "url": "https://zenodo.org/api/records?page=1&q=Elkies+AND+Klagsbrun&size=25&sort=bestmatch"
+    },
+    "zenodo_rank29": {
+      "authority": "official Zenodo API",
+      "bytes": 464,
+      "matches_pinned_revision": true,
+      "role": "rank-29 data-deposit query",
+      "sha256": "a22dceaf5456db7a2327ad0d064261a1a161bb043538c9b9dd5c7c687d416c32",
+      "url": "https://zenodo.org/api/records?page=1&q=%22elliptic+curve%22+AND+%22rank+29%22&size=25&sort=bestmatch"
+    },
+    "zenodo_rank30": {
+      "authority": "official Zenodo API",
+      "bytes": 464,
+      "matches_pinned_revision": true,
+      "role": "rank-30 data-deposit query",
+      "sha256": "e23329b42f281ef222f8a497e07ac5bf3c5c3ff162589f8ac0ba301ec621f878",
+      "url": "https://zenodo.org/api/records?page=1&q=%22elliptic+curve%22+AND+%22rank+30%22&size=25&sort=bestmatch"
+    }
+  },
+  "source_results": {
+    "arxiv": {
+      "author_feeds": {
+        "elkies": {
+          "post_announcement_record_related_titles": [],
+          "published_or_updated_after_rank29_announcement": [
+            {
+              "id": "http://arxiv.org/abs/2505.22382v2",
+              "published": "2025-05-28T14:09:57Z",
+              "title": "Fast evaluation of Riemann theta functions in any dimension",
+              "updated": "2025-11-25T13:47:39Z"
+            },
+            {
+              "id": "http://arxiv.org/abs/2411.07857v4",
+              "published": "2024-11-12T15:15:11Z",
+              "title": "The constructive inverse Galois problem via Hilbert modular forms: realizing the transitive group 17T7",
+              "updated": "2026-06-01T01:49:13Z"
+            }
+          ],
+          "total_results": 58
+        },
+        "klagsbrun": {
+          "post_announcement_record_related_titles": [],
+          "published_or_updated_after_rank29_announcement": [
+            {
+              "id": "http://arxiv.org/abs/2311.07740v4",
+              "published": "2023-11-13T20:44:09Z",
+              "title": "Towards a classification of isolated $j$-invariants",
+              "updated": "2025-01-20T17:33:06Z"
+            },
+            {
+              "id": "http://arxiv.org/abs/1703.00108v3",
+              "published": "2017-03-01T02:38:52Z",
+              "title": "Statistics of $K$-groups modulo $p$ for the ring of integers of a varying quadratic number field",
+              "updated": "2025-08-22T03:22:27Z"
+            }
+          ],
+          "total_results": 18
+        }
+      },
+      "exact_phrase_query": {
+        "entry_count_in_snapshot": 0,
+        "feed_title": "arXiv Query: search_query=all:\"rank 30\" AND all:\"elliptic curve\"&id_list=&start=0&max_results=100",
+        "feed_updated": "2026-08-14T15:30:52Z",
+        "total_results": 0
+      },
+      "scope_limit": "The exact-phrase query and two author feeds are metadata checks, not an exhaustive search of every arXiv paper or every wording."
+    },
+    "author_k3_pages": {
+      "K3_20SI": {
+        "classification": "Explicit singular Shioda-Inose rank-one fibrations; not the record rank-17 Mordell-Weil fibration.",
+        "explicitly_infinite_cyclic_mordell_weil": true,
+        "page_title": "Mordell-Weil generators for singular Shioda-Inose surfaces over Q",
+        "record_rank17_markers_present": {
+          "mordell_weil_rank17": false,
+          "record_lattice_discriminant_948": false
+        }
+      },
+      "K3_I18": {
+        "classification": "An explicit I18 reducible-fibre construction, where 17 is the fibre root-lattice contribution; not the record rank-17 Mordell-Weil fibration.",
+        "i18_fibre_marker": true,
+        "record_rank17_markers_present": {
+          "mordell_weil_rank17": false,
+          "record_lattice_discriminant_948": false
+        },
+        "root_lattice_parameter_count_marker": true
+      }
+    },
+    "dujella": {
+      "bounded_result": "The pinned current catalogue identifies rank >=29 as the record and publishes exactly P1,...,P29; it has no rk30.html link.",
+      "rank29_page": {
+        "point_count": 29,
+        "point_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "weierstrass_model_present": true
+      },
+      "rank_history_markers": {
+        "attributes_record_to_elkies_klagsbrun_2024": true,
+        "current_record_rank_at_least_29": true,
+        "rank29_page_linked": true,
+        "rank30_page_linked": false
+      }
+    },
+    "github": {
+      "bounded_result": "The author's public GitHub account has one relevant repository; its sole public branch contains rank-labelled files up to 28, but no rank-29/rank-30 or K3/fibration-named file.",
+      "elkiescurve_repository": {
+        "branches": [
+          "master"
+        ],
+        "candidate_term_hits": {
+          "e29": [],
+          "e30": [],
+          "fibration": [],
+          "k3": [],
+          "rank29": [],
+          "rank30": []
+        },
+        "largest_rank_number_in_path_names": 28,
+        "path_count": 17,
+        "paths": [
+          "ExtraRels28.mag",
+          "Points27.mag",
+          "README.md",
+          "Rels20.mag",
+          "Rels21.mag",
+          "Rels22.mag",
+          "Rels23.mag",
+          "Rels24.mag",
+          "Rels27.mag",
+          "Rels28.mag",
+          "VerifyRank20.mag",
+          "VerifyRank21.mag",
+          "VerifyRank22.mag",
+          "VerifyRank23.mag",
+          "VerifyRank24.mag",
+          "VerifyRank27.mag",
+          "VerifyRank28.mag"
+        ],
+        "rank_numbers_in_path_names": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          27,
+          28
+        ],
+        "tags": [],
+        "tree_truncated": false
+      },
+      "owner_repositories": [
+        {
+          "default_branch": "master",
+          "full_name": "zevklagsbrun/ElkiesCurve",
+          "html_url": "https://github.com/zevklagsbrun/ElkiesCurve",
+          "updated_at": "2022-11-16T21:06:54Z"
+        },
+        {
+          "default_branch": "master",
+          "full_name": "zevklagsbrun/Test",
+          "html_url": "https://github.com/zevklagsbrun/Test",
+          "updated_at": "2016-06-22T18:18:00Z"
+        }
+      ],
+      "owner_repository_count": 2,
+      "public_gist_count": 0
+    },
+    "nmbrthry": {
+      "announcement_rank30_phrase_present": false,
+      "announcement_semantic_markers": {
+        "gp_height_determinant_code_supplied": true,
+        "rank17_fibration_named": true,
+        "twelve_extra_points_named": true,
+        "twenty_nine_x_coordinates_supplied": true,
+        "unconditional_rank_at_least_29": true,
+        "writeup_and_k3_computation_deferred": true
+      },
+      "archive_subject_count": 252,
+      "bounded_result": "The pinned full-index snapshot contains the rank-29 announcement and its Cremona reply, but no subject or indexed excerpt matching the declared rank-30 patterns.",
+      "latest_message_date_in_snapshot": "Thu, 16 Jul 2026 10:09:54 +0000",
+      "rank29_subject_matches": [
+        "Z^29 in E(Q)",
+        "Re: Z^29 in E(Q)"
+      ],
+      "rank30_phrase_occurrences_in_archive_text": 0,
+      "rank30_subject_matches": []
+    },
+    "zenodo": {
+      "data_deposit_recovered": false,
+      "queries": {
+        "author_pair_query": {
+          "self_url": "https://zenodo.org/api/records?page=1&q=Elkies+AND+Klagsbrun&size=25&sort=bestmatch",
+          "total_results": 0
+        },
+        "rank29_query": {
+          "self_url": "https://zenodo.org/api/records?page=1&q=%22elliptic+curve%22+AND+%22rank+29%22&size=25&sort=bestmatch",
+          "total_results": 0
+        },
+        "rank30_query": {
+          "self_url": "https://zenodo.org/api/records?page=1&q=%22elliptic+curve%22+AND+%22rank+30%22&size=25&sort=bestmatch",
+          "total_results": 0
+        }
+      },
+      "scope_limit": "Three declared metadata queries, not all possible keywords."
+    }
+  },
+  "status": "source_audit_no_public_rank30_data_recovered"
+}

@@ -1,0 +1,109 @@
+{
+  "candidate": {
+    "parameter_t": "3631/14",
+    "parameter_u": 42,
+    "known_minimal_model_a1_a2_a3_a4_a6": [
+      "1",
+      "1",
+      "1",
+      "-713297808023681194679243421",
+      "7164472716086503658294244200686835329779"
+    ]
+  },
+  "generator": {
+    "path": "elliptic-curves/tools/generate_u42_magma.py",
+    "sha256": "f50958b327811b89d3c989195df9d09ad6729b10a4e1e620c788364e9fecae8c",
+    "emitted_byte_counts": {
+      "rankbounds": 3123,
+      "twodescent": 3599,
+      "twoselmer": 3486,
+      "verify": 2945
+    }
+  },
+  "input": {
+    "path": "artifacts/generated-results/elliptic_nagao_u42_height_10000000.json",
+    "sha256": "4fea0207fd637988bcc1147143657cbec5c2404cb81b4c4a487e2dde20cc43b8",
+    "stored_basis_curve": "rational short Jacobian",
+    "stored_point_count": 17
+  },
+  "model_transport": {
+    "issue": "the stored point coordinates are not coordinates on the integral minimal model",
+    "method": "verify on Eshort, then use the forward map returned as the second value of MinimalModel(Eshort)",
+    "magma_code": "Emin, short_to_min, min_to_short := MinimalModel(Eshort); Pmin := [ short_to_min(P) : P in Pshort ];",
+    "resulting_minimal_a_invariants": [
+      "1",
+      "1",
+      "1",
+      "-713297808023681194679243421",
+      "7164472716086503658294244200686835329779"
+    ]
+  },
+  "official_calculator": {
+    "date": "2026-08-14",
+    "endpoint": "https://magma.maths.usyd.edu.au/xml/calculator.xml",
+    "input_limit_bytes": 50000,
+    "memory_limit_observed_megabytes": "311.34",
+    "time_limit_seconds": 60,
+    "version": "V2.29-9"
+  },
+  "primary_documentation": {
+    "class_group_rigour": "https://magma.maths.usyd.edu.au/magma/handbook/text/415",
+    "elliptic_rank_and_descent": "https://magma.maths.usyd.edu.au/magma/handbook/text/1570",
+    "elliptic_models": "https://magma.maths.usyd.edu.au/magma/handbook/text/1544"
+  },
+  "reproducing_commands": {
+    "emit_rankbounds": "python3 elliptic-curves/tools/generate_u42_magma.py --mode rankbounds",
+    "emit_twodescent": "python3 elliptic-curves/tools/generate_u42_magma.py --mode twodescent",
+    "emit_twoselmer": "python3 elliptic-curves/tools/generate_u42_magma.py --mode twoselmer",
+    "emit_verification": "python3 elliptic-curves/tools/generate_u42_magma.py --mode verify",
+    "official_calculator_submission_shape": "python3 elliptic-curves/tools/generate_u42_magma.py --mode MODE | curl --max-time 75 -sS -A 'Mozilla/5.0' --data-urlencode input@- https://magma.maths.usyd.edu.au/xml/calculator.xml"
+  },
+  "schema_version": 1,
+  "status": "exact Magma lower-bound verification completed; rigorous upper-bound probes blocked by anonymous calculator memory",
+  "upper_bound_probes": {
+    "rankbounds": {
+      "result": "no rank interval returned",
+      "status": "same pSelmerGroup memory-limit path observed; the initial submitted script also contained an irrelevant unknown verbose flag that is removed in the pinned generator"
+    },
+    "twodescent_quotient": {
+      "calculator_cpu_seconds": "2.339",
+      "failed_memory_request_megabytes": "279.5",
+      "magma_options": {
+        "RemoveGens": "all 17 transported points",
+        "RemoveTorsion": true,
+        "WithMaps": false
+      },
+      "result": "no covers or upper bound returned",
+      "status": "anonymous calculator memory limit"
+    },
+    "twoselmer": {
+      "calculator_cpu_seconds": "2.209",
+      "failed_memory_request_megabytes": "279.5",
+      "magma_options": {
+        "Bound": -1,
+        "class_group_assumption": "default unconditional; SetClassGroupBounds(\"GRH\") was not called"
+      },
+      "result": "no Selmer group or upper bound returned",
+      "status": "anonymous calculator memory limit"
+    }
+  },
+  "verification": {
+    "calculator_cpu_seconds": "0.060",
+    "calculator_memory_megabytes": "32.09",
+    "calculator_seed": "4226764212",
+    "exact_short_curve_membership_count": 17,
+    "known_minimal_model_isomorphic": true,
+    "magma_IsLinearlyIndependent_mod_torsion": true,
+    "no_BSD_assumption": true,
+    "no_GRH_setting": true,
+    "rigorous_rank_lower_bound": 17,
+    "stdout": [
+      "EXACT_SHORT_POINTS_VERIFIED 17",
+      "MAGMA_MINIMAL_A_INVARIANTS [ 1, 1, 1, -713297808023681194679243421, 7164472716086503658294244200686835329779 ]",
+      "KNOWN_MINIMAL_MODEL_ISOMORPHIC true",
+      "POINTS_INDEPENDENT_MOD_TORSION true",
+      "RIGOROUS_RANK_LOWER_BOUND 17",
+      "PROBE verification only"
+    ]
+  }
+}

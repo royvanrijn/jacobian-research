@@ -1,0 +1,899 @@
+{
+  "H5000_reconstruction": {
+    "all_points_checked_exactly": true,
+    "displayed_point_count": 12,
+    "displayed_points_span_stable_numerical_rank": 10,
+    "first_three_accidental_directions": [
+      {
+        "jacobian_point": {
+          "x": "399480254898167796300/6661561",
+          "y": "7984411556059488615285912263712/17193488941"
+        },
+        "pool_index_one_based": 13,
+        "quartic_point": {
+          "x": "75/2",
+          "y": "54201/4"
+        },
+        "source": "H=5000 accidental point"
+      },
+      {
+        "jacobian_point": {
+          "x": "10292967752256000315106922700/174346475105445241",
+          "y": "-913312040400549418712150593228140819454752/72798051800575692520204211"
+        },
+        "pool_index_one_based": 14,
+        "quartic_point": {
+          "x": "175/37",
+          "y": "3757933539/1369"
+        },
+        "source": "H=5000 accidental point"
+      },
+      {
+        "jacobian_point": {
+          "x": "-7574594566483890941076/1232191021681",
+          "y": "6016266265950926446792914238225248/1367782553897798921"
+        },
+        "pool_index_one_based": 15,
+        "quartic_point": {
+          "x": "243/4",
+          "y": "3330123/16"
+        },
+        "source": "H=5000 accidental point"
+      }
+    ],
+    "first_three_accidental_points_raise_stable_rank_successively": [
+      11,
+      12,
+      13
+    ],
+    "height_bound": 5000,
+    "pool_point_count_modulo_inverse": 61,
+    "pool_point_sha256": "5cbb40eac95c97f6da9fcd6e6c7be57da78fd9b5c2f9b7daed29924f05596681",
+    "prefix_rank_replay": [
+      {
+        "height_matrix_runs": [
+          {
+            "decimal_precision": 72,
+            "numerical_rank": 10,
+            "subset_height_determinant": "57840775400140.9752761191326009887906213305927528209544656483965272640717",
+            "subset_indices_one_based": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "subset_largest_eigenvalue": "68.4534673386346751748383652682949641814415582121528947946760114196366240",
+            "subset_smallest_eigenvalue": "5.43516841123509500953169870267990075508520253830255894595769327947709988"
+          },
+          {
+            "decimal_precision": 120,
+            "numerical_rank": 10,
+            "subset_height_determinant": "57840775400140.9752761191326009887906213305927528209544656483965272640716713262811572225328049477486215354246196861344709",
+            "subset_indices_one_based": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "subset_largest_eigenvalue": "68.4534673386346751748383652682949641814415582121528947946760114196366240482685439282147106492119656241050249493883419599",
+            "subset_smallest_eigenvalue": "5.43516841123509500953169870267990075508520253830255894595769327947709987643716358662972512373198107579492838465973066082"
+          }
+        ],
+        "pool_prefix_count": 12,
+        "stable_numerical_rank": 10,
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "height_matrix_runs": [
+          {
+            "decimal_precision": 72,
+            "numerical_rank": 11,
+            "subset_height_determinant": "969908885426487.633799433428112626605552303796989481194099935090499456905",
+            "subset_indices_one_based": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              13
+            ],
+            "subset_largest_eigenvalue": "69.3953644017471574096430024995228202109934593850509978796936149764409555",
+            "subset_smallest_eigenvalue": "3.55604788305502141655886933408057035485070722423488616676286631129493546"
+          },
+          {
+            "decimal_precision": 120,
+            "numerical_rank": 11,
+            "subset_height_determinant": "969908885426487.633799433428112626605552303796989481194099935090499456904987026225169118087897043190135995250462130790068",
+            "subset_indices_one_based": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              13
+            ],
+            "subset_largest_eigenvalue": "69.3953644017471574096430024995228202109934593850509978796936149764409554662435357501945987917426611233429386939902748754",
+            "subset_smallest_eigenvalue": "3.55604788305502141655886933408057035485070722423488616676286631129493545549969067818957626494325987120299560646344265841"
+          }
+        ],
+        "pool_prefix_count": 13,
+        "stable_numerical_rank": 11,
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          13
+        ]
+      },
+      {
+        "height_matrix_runs": [
+          {
+            "decimal_precision": 72,
+            "numerical_rank": 12,
+            "subset_height_determinant": "15583578349262136.5460713301042020607173269627121383779747147278753299654",
+            "subset_indices_one_based": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              13,
+              14
+            ],
+            "subset_largest_eigenvalue": "76.1718704866354497949009890147732120809437192714163456807898964177333550",
+            "subset_smallest_eigenvalue": "3.11841677147214186199312944365285137101772717193305624509089741121923106"
+          },
+          {
+            "decimal_precision": 120,
+            "numerical_rank": 12,
+            "subset_height_determinant": "15583578349262136.5460713301042020607173269627121383779747147278753299653740872940830020719113915997419366097600552139401",
+            "subset_indices_one_based": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              13,
+              14
+            ],
+            "subset_largest_eigenvalue": "76.1718704866354497949009890147732120809437192714163456807898964177333550042339801961798168517391537285835992250737473515",
+            "subset_smallest_eigenvalue": "3.11841677147214186199312944365285137101772717193305624509089741121923106105152417964811836329181981943318575873437399663"
+          }
+        ],
+        "pool_prefix_count": 14,
+        "stable_numerical_rank": 12,
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          13,
+          14
+        ]
+      },
+      {
+        "height_matrix_runs": [
+          {
+            "decimal_precision": 72,
+            "numerical_rank": 13,
+            "subset_height_determinant": "130670705296492175.962099213119478277510892670664517980057478934392400764",
+            "subset_indices_one_based": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              13,
+              14,
+              15
+            ],
+            "subset_largest_eigenvalue": "86.7214579528193043185552601317103310165322166945456706101540848176429273",
+            "subset_smallest_eigenvalue": "2.33091347576857566950351035407450548444887835530948205850453255961195455"
+          },
+          {
+            "decimal_precision": 120,
+            "numerical_rank": 13,
+            "subset_height_determinant": "130670705296492175.962099213119478277510892670664517980057478934392400763813282469120881225357333406089145651587729332630",
+            "subset_indices_one_based": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              13,
+              14,
+              15
+            ],
+            "subset_largest_eigenvalue": "86.7214579528193043185552601317103310165322166945456706101540848176429273169136817546418943528855737627175847904826192511",
+            "subset_smallest_eigenvalue": "2.33091347576857566950351035407450548444887835530948205850453255961195455384047984876391184693346472746318670778412926418"
+          }
+        ],
+        "pool_prefix_count": 15,
+        "stable_numerical_rank": 13,
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "height_matrix_runs": [
+          {
+            "decimal_precision": 72,
+            "numerical_rank": 13,
+            "subset_height_determinant": "130670705296492175.962099213119478277510892670664517980057478934392400764",
+            "subset_indices_one_based": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              13,
+              14,
+              15
+            ],
+            "subset_largest_eigenvalue": "86.7214579528193043185552601317103310165322166945456706101540848176429273",
+            "subset_smallest_eigenvalue": "2.33091347576857566950351035407450548444887835530948205850453255961195455"
+          },
+          {
+            "decimal_precision": 120,
+            "numerical_rank": 13,
+            "subset_height_determinant": "130670705296492175.962099213119478277510892670664517980057478934392400763813282469120881225357333406089145651587729332630",
+            "subset_indices_one_based": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              13,
+              14,
+              15
+            ],
+            "subset_largest_eigenvalue": "86.7214579528193043185552601317103310165322166945456706101540848176429273169136817546418943528855737627175847904826192511",
+            "subset_smallest_eigenvalue": "2.33091347576857566950351035407450548444887835530948205850453255961195455384047984876391184693346472746318670778412926418"
+          }
+        ],
+        "pool_prefix_count": 61,
+        "stable_numerical_rank": 13,
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          13,
+          14,
+          15
+        ]
+      }
+    ],
+    "signed_points_returned": 122,
+    "signless_quartic_point_count": 61
+  },
+  "basis_proposal": {
+    "point_count": 13,
+    "point_sha256": "9477e4e3b11cf9cc564fca5ce6590ae797bd2f5181853bd5b2a4629d668ebb0a",
+    "points": [
+      {
+        "x": "4939956650002895496/123054649",
+        "y": "-8192372675798345159642632416/1365045221357"
+      },
+      {
+        "x": "563901377494801591944/7766720641",
+        "y": "12248398100123070168458110303872/684473323370689"
+      },
+      {
+        "x": "195663680042004009/4268356",
+        "y": "69274892834709560920260693/8818423496"
+      },
+      {
+        "x": "18514982354699942865/109579024",
+        "y": "-78310878499411412063708690919/1147073223232"
+      },
+      {
+        "x": "1166009650892191671660/11109370801",
+        "y": "38122502550102718499482213519008/1170938791796201"
+      },
+      {
+        "x": "982803204598458060/57350329",
+        "y": "-253116326536460542535464224/434314041517"
+      },
+      {
+        "x": "19910909075173587756/870427009",
+        "y": "-29222875807851560334621427296/25680208046527"
+      },
+      {
+        "x": "-105853141331674797204/2856581809",
+        "y": "146239792829491669784540122464/152675727945623"
+      },
+      {
+        "x": "-1689817375582911/59536",
+        "y": "-64793190601810940804577/14526784"
+      },
+      {
+        "x": "5867271458433490689/342472036",
+        "y": "3697780243511082300708346623/6337787498216"
+      },
+      {
+        "x": "399480254898167796300/6661561",
+        "y": "7984411556059488615285912263712/17193488941"
+      },
+      {
+        "x": "10292967752256000315106922700/174346475105445241",
+        "y": "-913312040400549418712150593228140819454752/72798051800575692520204211"
+      },
+      {
+        "x": "-7574594566483890941076/1232191021681",
+        "y": "6016266265950926446792914238225248/1367782553897798921"
+      }
+    ],
+    "source": "precision-stable numerical height subset; not itself a proof"
+  },
+  "conclusion": {
+    "certified_algebraic_rank_lower_bound": 13,
+    "depends_on_PARIs_finite_index_saturation_hypothesis": false,
+    "reason": "PARI saturation only proposed exact rational points; exact curve membership and the full finite-reduction rank prove independence"
+  },
+  "exact_finite_reduction_certificate": {
+    "certificate_prime_bound": 100,
+    "certificate_primes": [
+      5,
+      13,
+      19,
+      23,
+      29,
+      31,
+      41,
+      47,
+      67,
+      71,
+      73
+    ],
+    "certified_algebraic_rank_lower_bound": 13,
+    "combined_exact_rank_over_F2": 13,
+    "point_count": 13,
+    "point_sha256": "1a038326d2caff9bac0310cc484f21921270666c20f9bfdbb2d48cf8abd7975f",
+    "signatures": [
+      {
+        "doubled_subgroup_order": 4,
+        "group_order": 8,
+        "prime": 5,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 5,
+        "group_order": 20,
+        "prime": 13,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 14,
+        "group_order": 28,
+        "prime": 19,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 14,
+        "group_order": 28,
+        "prime": 23,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 17,
+        "group_order": 34,
+        "prime": 29,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 10,
+        "group_order": 40,
+        "prime": 31,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 13,
+        "group_order": 52,
+        "prime": 41,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 30,
+        "group_order": 60,
+        "prime": 47,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 40,
+        "group_order": 80,
+        "prime": 67,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 43,
+        "group_order": 86,
+        "prime": 71,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 45,
+        "group_order": 90,
+        "prime": 73,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    ],
+    "status": "certified",
+    "two_torsion_certificate_prime": 11
+  },
+  "generated_at_utc": "2026-08-14T17:07:11.019622+00:00",
+  "input": {
+    "conductor_phase": {
+      "below_strict_log_conductor_target_numerically": true,
+      "conductor": "581863561133867566935518764040599206",
+      "log_conductor": "82.3515440580102287639528785405710145305597823305329922776592",
+      "minimal_discriminant": "-515789694167447432783880635607673010721947988",
+      "minimal_model": [
+        1,
+        -1,
+        0,
+        -620648350785888,
+        6050842450216760182724
+      ],
+      "root_number": -1,
+      "status": "completed exact PARI minimal-model/conductor computation"
+    },
+    "max100_artifact": "elliptic_mestre_root_tuple_scale_max100.json",
+    "max100_artifact_sha256": "63dcd39555ad8b39c7b584a16663164bf73e6c6c59906b6a230bfa9b9f65a3bb",
+    "parameter": 8,
+    "roots": [
+      0,
+      6,
+      47,
+      55,
+      70,
+      80
+    ]
+  },
+  "parameters": {
+    "finite_reduction_prime_bound": 100,
+    "height_timeout_seconds": 15.0,
+    "no_retries": true,
+    "point_timeout_seconds": 15.0,
+    "saturation_prime_bound_strict_upper_limit": 50,
+    "saturation_timeout_seconds": 30.0,
+    "stack_bytes": 512000000
+  },
+  "provenance": {
+    "owned_processes_remaining": 0,
+    "reproducing_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/certify_mestre_0647557080_t8_rank13.py",
+    "script": "elliptic-curves/cas/certify_mestre_0647557080_t8_rank13.py",
+    "script_sha256": "b4eb1e0c911310bf7d97e5835532c0c83d5b7ff363f526488a331fa8c4734747"
+  },
+  "schema_version": 1,
+  "small_prime_saturation": {
+    "exact_returned_points_on_curve": 13,
+    "height_determinant_ratio": "16777216.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "input_point_count": 13,
+    "original_height_determinant": "130670705296492175.9620992131194782775108926706645179800574789343924007638132824691208812253573334061",
+    "pari_milliseconds": 19,
+    "prime_bound_strict_upper_limit": 50,
+    "returned_point_count": 13,
+    "saturated_basis": [
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "3833891676",
+        "jacobian_y": "3038268605174208"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "17154898956",
+        "jacobian_y": "-580302983883168"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-37350883620",
+        "jacobian_y": "-6357093357888"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "17498201580",
+        "jacobian_y": "-536724795009312"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-25000834356",
+        "jacobian_y": "4858697813209632"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-6151005540",
+        "jacobian_y": "4398950488387392"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "29910248892",
+        "jacobian_y": "2958005577663360"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "26416857564",
+        "jacobian_y": "-2016953972889408"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "23401107036",
+        "jacobian_y": "1261580008868928"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "31524076044",
+        "jacobian_y": "-3411255388611168"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "4835912220",
+        "jacobian_y": "-2871107529941952"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "16932761964",
+        "jacobian_y": "-612150764426208"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "21614467356",
+        "jacobian_y": "-858664605460032"
+      }
+    ],
+    "saturated_basis_sha256": "1a038326d2caff9bac0310cc484f21921270666c20f9bfdbb2d48cf8abd7975f",
+    "saturated_height_determinant": "7788580971.747170446044159717528717369490425030262349847404893302464530695276407547049595436890924340",
+    "scope_warning": "PARI documents ellsaturation under a finite-index hypothesis; the full rank was unknown when this search was run",
+    "status": "completed",
+    "wall_seconds": 0.04177329200319946
+  },
+  "software": {
+    "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+    "python": "3.14.6"
+  },
+  "status": "exact algebraic rank lower bound 13 certified",
+  "symmetry": {
+    "exact_quotient": "T is identified with -T",
+    "quartic_and_jacobian_coefficients_replayed_equal_on_panel": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "1/2",
+      "3/2",
+      "7/3"
+    ],
+    "structural_reason": "the root multiset of q(X-T)q(X+T) is unchanged by T -> -T; the unique square approximant and remainder are therefore even, and division by T^2 preserves equality",
+    "visible_point_sets_are_exchanged_up_to_ordinate_sign": true
+  }
+}

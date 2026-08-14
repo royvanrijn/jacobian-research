@@ -1,0 +1,4840 @@
+{
+  "schema_version": 1,
+  "artifact_kind": "bounded_section7_accidental_linear_slice_construction",
+  "status": "bounded_constructive_slice_search_complete",
+  "claim_scope": {
+    "exact": "rank-20 point reconstruction, generic-section decontamination, slice equations and normalizations, all returned point maps, and forced-vs-generic classification",
+    "bounded": "only m=+/-1 auxiliary curves receive the declared PARI boxes; conductor values are proxies, not exact conductors",
+    "rank_certificate": false
+  },
+  "input_fiber": {
+    "constructor_T0": "5081/47",
+    "roots": [
+      346,
+      260,
+      255,
+      146,
+      55,
+      0
+    ],
+    "certified_rank_lower_bound_from_separate_input": 20
+  },
+  "reconstruction": {
+    "uniform": {
+      "status": "completed",
+      "wall_seconds": 20.45412954100175,
+      "height_specification": "1000000",
+      "timeout_seconds": 40.0,
+      "pari_stack_bytes": 512000000,
+      "retried": false,
+      "pari_milliseconds": 20206,
+      "signed_point_count": 50,
+      "distinct_abscissa_count": 25
+    },
+    "uniform_signed_point_count": 50,
+    "uniform_signless_point_count": 25,
+    "chart_records": [
+      {
+        "id": "cross_08_13_21_rot_0",
+        "matrix": [
+          187726,
+          203240,
+          517,
+          1880
+        ],
+        "status": "completed",
+        "wall_seconds": 0.2533168750014738,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 235,
+        "signed_point_count": 32,
+        "distinct_abscissa_count": 16,
+        "new_global_abscissas": 3
+      },
+      {
+        "id": "cross_08_13_21_rot_1",
+        "matrix": [
+          203240,
+          -390966,
+          1880,
+          -2397
+        ],
+        "status": "completed",
+        "wall_seconds": 0.2536938339981134,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 236,
+        "signed_point_count": 32,
+        "distinct_abscissa_count": 16,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_08_13_21_rot_2",
+        "matrix": [
+          390966,
+          -187726,
+          2397,
+          -517
+        ],
+        "status": "completed",
+        "wall_seconds": 0.25883945799432695,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 239,
+        "signed_point_count": 30,
+        "distinct_abscissa_count": 15,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_08_13_22_rot_0",
+        "matrix": [
+          190311,
+          208321,
+          517,
+          1927
+        ],
+        "status": "completed",
+        "wall_seconds": 0.2599038330008625,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 241,
+        "signed_point_count": 18,
+        "distinct_abscissa_count": 9,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_08_13_22_rot_1",
+        "matrix": [
+          208321,
+          -398632,
+          1927,
+          -2444
+        ],
+        "status": "completed",
+        "wall_seconds": 0.26027320800494635,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 241,
+        "signed_point_count": 20,
+        "distinct_abscissa_count": 10,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_08_13_22_rot_2",
+        "matrix": [
+          398632,
+          -190311,
+          2444,
+          -517
+        ],
+        "status": "completed",
+        "wall_seconds": 0.2611192500044126,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 242,
+        "signed_point_count": 18,
+        "distinct_abscissa_count": 9,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_06_08_13_rot_0",
+        "matrix": [
+          459960,
+          83707,
+          2820,
+          2209
+        ],
+        "status": "completed",
+        "wall_seconds": 0.2519043749998673,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 233,
+        "signed_point_count": 22,
+        "distinct_abscissa_count": 11,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_08_21_22_rot_0",
+        "matrix": [
+          882351,
+          5081,
+          2397,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.2531485840008827,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 234,
+        "signed_point_count": 24,
+        "distinct_abscissa_count": 12,
+        "new_global_abscissas": 2
+      },
+      {
+        "id": "cross_08_21_22_rot_1",
+        "matrix": [
+          5081,
+          -887432,
+          47,
+          -2444
+        ],
+        "status": "completed",
+        "wall_seconds": 0.25456233300064923,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 236,
+        "signed_point_count": 24,
+        "distinct_abscissa_count": 12,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_08_21_22_rot_2",
+        "matrix": [
+          887432,
+          -882351,
+          2444,
+          -2397
+        ],
+        "status": "completed",
+        "wall_seconds": 0.2528954590015928,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 234,
+        "signed_point_count": 24,
+        "distinct_abscissa_count": 12,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_08_13_16_rot_0",
+        "matrix": [
+          538667,
+          350589,
+          2209,
+          3243
+        ],
+        "status": "completed",
+        "wall_seconds": 0.24549912500515347,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 227,
+        "signed_point_count": 18,
+        "distinct_abscissa_count": 9,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_08_13_16_rot_1",
+        "matrix": [
+          350589,
+          -889256,
+          3243,
+          -5452
+        ],
+        "status": "completed",
+        "wall_seconds": 0.24603679199935868,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 228,
+        "signed_point_count": 20,
+        "distinct_abscissa_count": 10,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_06_08_13_rot_2",
+        "matrix": [
+          543667,
+          -459960,
+          5029,
+          -2820
+        ],
+        "status": "completed",
+        "wall_seconds": 0.28673574999993434,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 258,
+        "signed_point_count": 22,
+        "distinct_abscissa_count": 11,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_06_08_16_rot_0",
+        "matrix": [
+          171915,
+          51649,
+          705,
+          1363
+        ],
+        "status": "completed",
+        "wall_seconds": 0.26446162500360515,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 246,
+        "signed_point_count": 18,
+        "distinct_abscissa_count": 9,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_06_08_13_rot_1",
+        "matrix": [
+          83707,
+          -543667,
+          2209,
+          -5029
+        ],
+        "status": "completed",
+        "wall_seconds": 0.25033704200177453,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 231,
+        "signed_point_count": 22,
+        "distinct_abscissa_count": 11,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_08_13_16_rot_2",
+        "matrix": [
+          889256,
+          -538667,
+          5452,
+          -2209
+        ],
+        "status": "completed",
+        "wall_seconds": 0.24523558300279547,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 227,
+        "signed_point_count": 18,
+        "distinct_abscissa_count": 9,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_06_08_16_rot_2",
+        "matrix": [
+          223564,
+          -171915,
+          2068,
+          -705
+        ],
+        "status": "completed",
+        "wall_seconds": 0.26379954099684255,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 245,
+        "signed_point_count": 18,
+        "distinct_abscissa_count": 9,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_06_08_15_rot_0",
+        "matrix": [
+          368973,
+          108641,
+          1551,
+          2867
+        ],
+        "status": "completed",
+        "wall_seconds": 0.24697862500033807,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 229,
+        "signed_point_count": 20,
+        "distinct_abscissa_count": 10,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_06_08_15_rot_2",
+        "matrix": [
+          477614,
+          -368973,
+          4418,
+          -1551
+        ],
+        "status": "completed",
+        "wall_seconds": 0.24605637499917066,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 228,
+        "signed_point_count": 20,
+        "distinct_abscissa_count": 10,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_06_08_16_rot_1",
+        "matrix": [
+          51649,
+          -223564,
+          1363,
+          -2068
+        ],
+        "status": "completed",
+        "wall_seconds": 0.2641961659974186,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 246,
+        "signed_point_count": 18,
+        "distinct_abscissa_count": 9,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_08_13_17_rot_0",
+        "matrix": [
+          656865,
+          462371,
+          2585,
+          4277
+        ],
+        "status": "completed",
+        "wall_seconds": 0.2482032500047353,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 229,
+        "signed_point_count": 16,
+        "distinct_abscissa_count": 8,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_08_17_22_rot_0",
+        "matrix": [
+          1262973,
+          289617,
+          3431,
+          2679
+        ],
+        "status": "completed",
+        "wall_seconds": 0.24802179100515787,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 229,
+        "signed_point_count": 20,
+        "distinct_abscissa_count": 10,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_06_08_15_rot_1",
+        "matrix": [
+          108641,
+          -477614,
+          2867,
+          -4418
+        ],
+        "status": "completed",
+        "wall_seconds": 0.2468419169963454,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 227,
+        "signed_point_count": 20,
+        "distinct_abscissa_count": 10,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_08_17_22_rot_1",
+        "matrix": [
+          289617,
+          -1552590,
+          2679,
+          -6110
+        ],
+        "status": "completed",
+        "wall_seconds": 0.24901716600288637,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 230,
+        "signed_point_count": 18,
+        "distinct_abscissa_count": 9,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_06_12_15_rot_0",
+        "matrix": [
+          637317,
+          76583,
+          2679,
+          2021
+        ],
+        "status": "completed",
+        "wall_seconds": 0.25304058299661847,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 236,
+        "signed_point_count": 22,
+        "distinct_abscissa_count": 11,
+        "new_global_abscissas": 1
+      },
+      {
+        "id": "cross_08_17_22_rot_2",
+        "matrix": [
+          1552590,
+          -1262973,
+          6110,
+          -3431
+        ],
+        "status": "completed",
+        "wall_seconds": 0.25102424999931827,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 232,
+        "signed_point_count": 18,
+        "distinct_abscissa_count": 9,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_13_21_22_rot_0",
+        "matrix": [
+          692040,
+          7666,
+          1880,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.260358958003053,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 241,
+        "signed_point_count": 16,
+        "distinct_abscissa_count": 8,
+        "new_global_abscissas": 1
+      },
+      {
+        "id": "cross_13_21_22_rot_1",
+        "matrix": [
+          7666,
+          -699706,
+          47,
+          -1927
+        ],
+        "status": "completed",
+        "wall_seconds": 0.2602577500001644,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 241,
+        "signed_point_count": 16,
+        "distinct_abscissa_count": 8,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_13_21_22_rot_2",
+        "matrix": [
+          699706,
+          -692040,
+          1927,
+          -1880
+        ],
+        "status": "completed",
+        "wall_seconds": 0.2612461250027991,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 242,
+        "signed_point_count": 16,
+        "distinct_abscissa_count": 8,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_08_13_17_rot_1",
+        "matrix": [
+          462371,
+          -1119236,
+          4277,
+          -6862
+        ],
+        "status": "completed",
+        "wall_seconds": 0.2484067910045269,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 230,
+        "signed_point_count": 16,
+        "distinct_abscissa_count": 8,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_06_12_15_rot_1",
+        "matrix": [
+          76583,
+          -713900,
+          2021,
+          -4700
+        ],
+        "status": "completed",
+        "wall_seconds": 0.24727516699931584,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 229,
+        "signed_point_count": 20,
+        "distinct_abscissa_count": 10,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_13_17_22_rot_0",
+        "matrix": [
+          1574391,
+          873924,
+          4277,
+          5358
+        ],
+        "status": "completed",
+        "wall_seconds": 0.263373000001593,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 246,
+        "signed_point_count": 14,
+        "distinct_abscissa_count": 7,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_06_12_15_rot_2",
+        "matrix": [
+          713900,
+          -637317,
+          4700,
+          -2679
+        ],
+        "status": "completed",
+        "wall_seconds": 0.24559733400383266,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 227,
+        "signed_point_count": 22,
+        "distinct_abscissa_count": 11,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_08_13_17_rot_2",
+        "matrix": [
+          1119236,
+          -656865,
+          6862,
+          -2585
+        ],
+        "status": "completed",
+        "wall_seconds": 0.24848966599529376,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 230,
+        "signed_point_count": 16,
+        "distinct_abscissa_count": 8,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_01_11_12_rot_1",
+        "matrix": [
+          5081,
+          359008,
+          -47,
+          2444
+        ],
+        "status": "completed",
+        "wall_seconds": 0.2530334999974002,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 234,
+        "signed_point_count": 18,
+        "distinct_abscissa_count": 9,
+        "new_global_abscissas": 1
+      },
+      {
+        "id": "cross_01_11_12_rot_0",
+        "matrix": [
+          364089,
+          -5081,
+          2397,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.25303091600653715,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 234,
+        "signed_point_count": 16,
+        "distinct_abscissa_count": 8,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_01_11_12_rot_2",
+        "matrix": [
+          359008,
+          -364089,
+          2444,
+          -2397
+        ],
+        "status": "completed",
+        "wall_seconds": 0.2550939169959747,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 236,
+        "signed_point_count": 16,
+        "distinct_abscissa_count": 8,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_13_17_22_rot_2",
+        "matrix": [
+          2448315,
+          -1574391,
+          9635,
+          -4277
+        ],
+        "status": "completed",
+        "wall_seconds": 0.26131520799390273,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 242,
+        "signed_point_count": 16,
+        "distinct_abscissa_count": 8,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_13_17_22_rot_1",
+        "matrix": [
+          873924,
+          -2448315,
+          5358,
+          -9635
+        ],
+        "status": "completed",
+        "wall_seconds": 0.2591420829994604,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 240,
+        "signed_point_count": 16,
+        "distinct_abscissa_count": 8,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_06_15_16_rot_0",
+        "matrix": [
+          2693335,
+          12467,
+          11045,
+          329
+        ],
+        "status": "completed",
+        "wall_seconds": 0.24609412499557948,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 227,
+        "signed_point_count": 22,
+        "distinct_abscissa_count": 11,
+        "new_global_abscissas": 1
+      },
+      {
+        "id": "cross_06_15_16_rot_1",
+        "matrix": [
+          12467,
+          -2705802,
+          329,
+          -11374
+        ],
+        "status": "completed",
+        "wall_seconds": 0.24632091599778505,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 228,
+        "signed_point_count": 22,
+        "distinct_abscissa_count": 11,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_17_21_22_rot_0",
+        "matrix": [
+          1885809,
+          59715,
+          5123,
+          235
+        ],
+        "status": "completed",
+        "wall_seconds": 0.24444658299762523,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 226,
+        "signed_point_count": 12,
+        "distinct_abscissa_count": 6,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_21_22_24_rot_0",
+        "matrix": [
+          106715,
+          1467676,
+          235,
+          4042
+        ],
+        "status": "completed",
+        "wall_seconds": 0.24521241700131213,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 227,
+        "signed_point_count": 12,
+        "distinct_abscissa_count": 6,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_06_15_16_rot_2",
+        "matrix": [
+          2705802,
+          -2693335,
+          11374,
+          -11045
+        ],
+        "status": "completed",
+        "wall_seconds": 0.24598941700241994,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 228,
+        "signed_point_count": 22,
+        "distinct_abscissa_count": 11,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_13_17_21_rot_0",
+        "matrix": [
+          1553006,
+          835594,
+          4277,
+          5123
+        ],
+        "status": "completed",
+        "wall_seconds": 0.24761258299986366,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 229,
+        "signed_point_count": 12,
+        "distinct_abscissa_count": 6,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_17_21_22_rot_1",
+        "matrix": [
+          59715,
+          -1945524,
+          235,
+          -5358
+        ],
+        "status": "completed",
+        "wall_seconds": 0.24544545899698278,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 227,
+        "signed_point_count": 12,
+        "distinct_abscissa_count": 6,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_17_21_22_rot_2",
+        "matrix": [
+          1945524,
+          -1885809,
+          5358,
+          -5123
+        ],
+        "status": "completed",
+        "wall_seconds": 0.2663468329992611,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 243,
+        "signed_point_count": 12,
+        "distinct_abscissa_count": 6,
+        "new_global_abscissas": 0
+      },
+      {
+        "id": "cross_02_11_12_rot_0",
+        "matrix": [
+          285560,
+          -2496,
+          1880,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.2753285840008175,
+        "height_specification": "50000",
+        "timeout_seconds": 3.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 252,
+        "signed_point_count": 14,
+        "distinct_abscissa_count": 7,
+        "new_global_abscissas": 0
+      }
+    ],
+    "completed_chart_count": 48,
+    "timed_out_chart_count": 0,
+    "reconstructed_point_count": 34,
+    "reconstructed_point_sha256": "2079000c17c3a45043eff926cc594935355d897f85d633ba937e9eef7fbb9306"
+  },
+  "decontamination_at_T0": {
+    "declared_generic_section_count": 21,
+    "generic_abscissas_present_in_reconstruction": 18,
+    "generic_labels_present": [
+      "visible-00",
+      "visible-01",
+      "visible-02",
+      "visible-03",
+      "visible-04",
+      "visible-05",
+      "visible-06",
+      "visible-07",
+      "visible-08",
+      "visible-09",
+      "visible-10",
+      "visible-11",
+      "linear-plus-7/27",
+      "linear-minus-7/27",
+      "linear-plus-17/27",
+      "linear-minus-17/27",
+      "linear-plus-43/27",
+      "linear-minus-43/27"
+    ],
+    "generic_labels_absent": [
+      "quadratic-quadratic-plus-56/5373",
+      "quadratic-quadratic-minus-22/5373",
+      "quadratic-quadratic-minus-34/5373"
+    ],
+    "accidental_point_count": 16,
+    "accidental_points": [
+      {
+        "x": "-145339/4277",
+        "y": "731165923457085/18292729"
+      },
+      {
+        "x": "550151/38587",
+        "y": "32980097245230975/1488956569"
+      },
+      {
+        "x": "734734/9353",
+        "y": "25578392757615705/4111494623"
+      },
+      {
+        "x": "1512322/15933",
+        "y": "351536935858073/84620163"
+      },
+      {
+        "x": "20496908/192371",
+        "y": "132185741835307125/37006601641"
+      },
+      {
+        "x": "13811827/124879",
+        "y": "55453160509936095/15594764641"
+      },
+      {
+        "x": "249027/1739",
+        "y": "702393128344005/142133687"
+      },
+      {
+        "x": "3659033/23077",
+        "y": "2939536938886401/532547929"
+      },
+      {
+        "x": "4999082/21009",
+        "y": "371251108195375/147126027"
+      },
+      {
+        "x": "11461/47",
+        "y": "214287355335/103823"
+      },
+      {
+        "x": "24116668/96491",
+        "y": "16605868517812875/9310513081"
+      },
+      {
+        "x": "66485651/251967",
+        "y": "55476247930814245/21162456363"
+      },
+      {
+        "x": "487864409/1847523",
+        "y": "3010900914063729085/1137780411843"
+      },
+      {
+        "x": "462942/1739",
+        "y": "416667587214405/142133687"
+      },
+      {
+        "x": "1003529977/2679799",
+        "y": "235225839029170118325/7181322680401"
+      },
+      {
+        "x": "439298/1081",
+        "y": "2531640040946085/54922367"
+      }
+    ]
+  },
+  "known_section_slice_validation": {
+    "count": 18,
+    "records": [
+      {
+        "label": "visible-00",
+        "slope": "-1",
+        "intercept": "0",
+        "normalized_degree": 0,
+        "genus": 0
+      },
+      {
+        "label": "visible-01",
+        "slope": "1",
+        "intercept": "0",
+        "normalized_degree": 0,
+        "genus": 0
+      },
+      {
+        "label": "visible-02",
+        "slope": "-1",
+        "intercept": "55",
+        "normalized_degree": 0,
+        "genus": 0
+      },
+      {
+        "label": "visible-03",
+        "slope": "1",
+        "intercept": "55",
+        "normalized_degree": 0,
+        "genus": 0
+      },
+      {
+        "label": "visible-04",
+        "slope": "-1",
+        "intercept": "146",
+        "normalized_degree": 0,
+        "genus": 0
+      },
+      {
+        "label": "visible-05",
+        "slope": "1",
+        "intercept": "146",
+        "normalized_degree": 0,
+        "genus": 0
+      },
+      {
+        "label": "visible-06",
+        "slope": "-1",
+        "intercept": "255",
+        "normalized_degree": 0,
+        "genus": 0
+      },
+      {
+        "label": "visible-07",
+        "slope": "1",
+        "intercept": "255",
+        "normalized_degree": 0,
+        "genus": 0
+      },
+      {
+        "label": "visible-08",
+        "slope": "-1",
+        "intercept": "260",
+        "normalized_degree": 0,
+        "genus": 0
+      },
+      {
+        "label": "visible-09",
+        "slope": "1",
+        "intercept": "260",
+        "normalized_degree": 0,
+        "genus": 0
+      },
+      {
+        "label": "visible-10",
+        "slope": "-1",
+        "intercept": "346",
+        "normalized_degree": 0,
+        "genus": 0
+      },
+      {
+        "label": "visible-11",
+        "slope": "1",
+        "intercept": "346",
+        "normalized_degree": 0,
+        "genus": 0
+      },
+      {
+        "label": "linear-plus-7/27",
+        "slope": "7/27",
+        "intercept": "6920/27",
+        "normalized_degree": 0,
+        "genus": 0
+      },
+      {
+        "label": "linear-minus-7/27",
+        "slope": "-7/27",
+        "intercept": "6920/27",
+        "normalized_degree": 0,
+        "genus": 0
+      },
+      {
+        "label": "linear-plus-17/27",
+        "slope": "17/27",
+        "intercept": "5462/27",
+        "normalized_degree": 0,
+        "genus": 0
+      },
+      {
+        "label": "linear-minus-17/27",
+        "slope": "-17/27",
+        "intercept": "5462/27",
+        "normalized_degree": 0,
+        "genus": 0
+      },
+      {
+        "label": "linear-plus-43/27",
+        "slope": "43/27",
+        "intercept": "-4015/27",
+        "normalized_degree": 0,
+        "genus": 0
+      },
+      {
+        "label": "linear-minus-43/27",
+        "slope": "-43/27",
+        "intercept": "-4015/27",
+        "normalized_degree": 0,
+        "genus": 0
+      }
+    ],
+    "all_normalized_to_genus_zero_constant": true
+  },
+  "complete_slice_classification": {
+    "slope_range": [
+      -8,
+      8
+    ],
+    "accidental_point_count": 16,
+    "slice_count": 272,
+    "classification_counts": [
+      {
+        "raw_degree": 4,
+        "normalized_degree": 4,
+        "genus": 1,
+        "count": 32
+      },
+      {
+        "raw_degree": 6,
+        "normalized_degree": 6,
+        "genus": 2,
+        "count": 240
+      }
+    ],
+    "manifest_sha256": "f269dadbb734586beb596618b7b0dca9b2ad582ef67177880a98952bf0c099f5",
+    "manifest_stored_inline": false,
+    "m_plus_minus_one_genus_one_slice_count": 32,
+    "priority_minimum_intercept_slice_count": 16,
+    "priority_selection": "for each accidental point choose m in {-1,+1} minimizing projective height of n=x0-m*T0",
+    "all_m_plus_minus_one_slices_genus_one": true
+  },
+  "auxiliary_search_budget": {
+    "identity_height": 200000,
+    "identity_enumeration_rerun": false,
+    "pinned_identity_pilot_replayed_exactly": true,
+    "centered_chart_height": 50000,
+    "centered_chart_shifts": [
+      0,
+      -1
+    ],
+    "per_call_timeout_seconds": 30.0,
+    "stack_bytes": 512000000,
+    "declared_call_count": 32,
+    "one_pass_no_retry": true
+  },
+  "auxiliary_search": {
+    "pinned_identity_pilot": {
+      "height": 200000,
+      "signless_parameter_count_excluding_T0": 81,
+      "parameters_excluding_T0": [
+        "-3251/1274",
+        "16255/1456",
+        "6465/91",
+        "17935/182",
+        "13108/91",
+        "36135/182",
+        "18295/91",
+        "22208/91",
+        "97883/182",
+        "6115/6",
+        "38525/821",
+        "122205/1642",
+        "98458/821",
+        "145255/821",
+        "180558/821",
+        "4471/678",
+        "11558/339",
+        "53965/678",
+        "45458/339",
+        "92611/678",
+        "121765/678",
+        "25841/113",
+        "131489/226",
+        "6375/8186",
+        "115745/4093",
+        "-34484/307",
+        "-19477/491",
+        "1636/491",
+        "5727/982",
+        "68722/8347",
+        "34361/2455",
+        "29623/491",
+        "103927/982",
+        "65466/491",
+        "-30515/1739",
+        "34615/3478",
+        "96432/1739",
+        "195555/1739",
+        "-14527/5009",
+        "25/894",
+        "38467/894",
+        "20351/447",
+        "89425/894",
+        "65051/447",
+        "154687/894",
+        "115669/298",
+        "-3315/2657",
+        "139505/5314",
+        "190646/2657",
+        "24725/4106",
+        "105774/2053",
+        "-72193/658",
+        "-1529/17",
+        "-3754/47",
+        "-3190/47",
+        "-128873/2162",
+        "-3795/94",
+        "-44617/16685",
+        "241/47",
+        "42227/1034",
+        "5605/94",
+        "2920/47",
+        "76490/799",
+        "43765/446",
+        "4941/47",
+        "115945/1026",
+        "7649/47",
+        "42227/235",
+        "154055/752",
+        "-195713/39309",
+        "-26162/5361",
+        "-89650/1739",
+        "-21051/3478",
+        "84250/1739",
+        "177195/3478",
+        "-131490/1081",
+        "-164609/2162",
+        "-23390/1081",
+        "-41375/2162",
+        "51591/2162",
+        "-181690/57017"
+      ],
+      "association_records": [
+        {
+          "T": "-3251/1274",
+          "matching_priority_slice_indices_zero_based": [
+            0
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "16255/1456",
+          "matching_priority_slice_indices_zero_based": [
+            0
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "6465/91",
+          "matching_priority_slice_indices_zero_based": [
+            0
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "17935/182",
+          "matching_priority_slice_indices_zero_based": [
+            0
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "13108/91",
+          "matching_priority_slice_indices_zero_based": [
+            0
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "36135/182",
+          "matching_priority_slice_indices_zero_based": [
+            0
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "18295/91",
+          "matching_priority_slice_indices_zero_based": [
+            0
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "22208/91",
+          "matching_priority_slice_indices_zero_based": [
+            0
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "97883/182",
+          "matching_priority_slice_indices_zero_based": [
+            0
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "6115/6",
+          "matching_priority_slice_indices_zero_based": [
+            0
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "38525/821",
+          "matching_priority_slice_indices_zero_based": [
+            1
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "122205/1642",
+          "matching_priority_slice_indices_zero_based": [
+            1
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "98458/821",
+          "matching_priority_slice_indices_zero_based": [
+            1
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "145255/821",
+          "matching_priority_slice_indices_zero_based": [
+            1
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "180558/821",
+          "matching_priority_slice_indices_zero_based": [
+            1
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "4471/678",
+          "matching_priority_slice_indices_zero_based": [
+            3
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "11558/339",
+          "matching_priority_slice_indices_zero_based": [
+            3
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "53965/678",
+          "matching_priority_slice_indices_zero_based": [
+            3
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "45458/339",
+          "matching_priority_slice_indices_zero_based": [
+            3
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "92611/678",
+          "matching_priority_slice_indices_zero_based": [
+            3
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "121765/678",
+          "matching_priority_slice_indices_zero_based": [
+            3
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "25841/113",
+          "matching_priority_slice_indices_zero_based": [
+            3
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "131489/226",
+          "matching_priority_slice_indices_zero_based": [
+            3
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "6375/8186",
+          "matching_priority_slice_indices_zero_based": [
+            4
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "115745/4093",
+          "matching_priority_slice_indices_zero_based": [
+            4
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-34484/307",
+          "matching_priority_slice_indices_zero_based": [
+            7
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-19477/491",
+          "matching_priority_slice_indices_zero_based": [
+            7
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "1636/491",
+          "matching_priority_slice_indices_zero_based": [
+            7
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "5727/982",
+          "matching_priority_slice_indices_zero_based": [
+            7
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "68722/8347",
+          "matching_priority_slice_indices_zero_based": [
+            7
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "34361/2455",
+          "matching_priority_slice_indices_zero_based": [
+            7
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "29623/491",
+          "matching_priority_slice_indices_zero_based": [
+            7
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "103927/982",
+          "matching_priority_slice_indices_zero_based": [
+            7
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "65466/491",
+          "matching_priority_slice_indices_zero_based": [
+            7
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-30515/1739",
+          "matching_priority_slice_indices_zero_based": [
+            6
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "34615/3478",
+          "matching_priority_slice_indices_zero_based": [
+            6
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "96432/1739",
+          "matching_priority_slice_indices_zero_based": [
+            6
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "195555/1739",
+          "matching_priority_slice_indices_zero_based": [
+            6
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-14527/5009",
+          "matching_priority_slice_indices_zero_based": [
+            8
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "25/894",
+          "matching_priority_slice_indices_zero_based": [
+            8
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "38467/894",
+          "matching_priority_slice_indices_zero_based": [
+            8
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "20351/447",
+          "matching_priority_slice_indices_zero_based": [
+            8
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "89425/894",
+          "matching_priority_slice_indices_zero_based": [
+            8
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "65051/447",
+          "matching_priority_slice_indices_zero_based": [
+            8
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "154687/894",
+          "matching_priority_slice_indices_zero_based": [
+            8
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "115669/298",
+          "matching_priority_slice_indices_zero_based": [
+            8
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-3315/2657",
+          "matching_priority_slice_indices_zero_based": [
+            5
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "139505/5314",
+          "matching_priority_slice_indices_zero_based": [
+            5
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "190646/2657",
+          "matching_priority_slice_indices_zero_based": [
+            5
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "24725/4106",
+          "matching_priority_slice_indices_zero_based": [
+            10
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "105774/2053",
+          "matching_priority_slice_indices_zero_based": [
+            10
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-72193/658",
+          "matching_priority_slice_indices_zero_based": [
+            9
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-1529/17",
+          "matching_priority_slice_indices_zero_based": [
+            9
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-3754/47",
+          "matching_priority_slice_indices_zero_based": [
+            9
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-3190/47",
+          "matching_priority_slice_indices_zero_based": [
+            9
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-128873/2162",
+          "matching_priority_slice_indices_zero_based": [
+            9
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-3795/94",
+          "matching_priority_slice_indices_zero_based": [
+            9
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-44617/16685",
+          "matching_priority_slice_indices_zero_based": [
+            9
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "241/47",
+          "matching_priority_slice_indices_zero_based": [
+            9
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "42227/1034",
+          "matching_priority_slice_indices_zero_based": [
+            9
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "5605/94",
+          "matching_priority_slice_indices_zero_based": [
+            9
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "2920/47",
+          "matching_priority_slice_indices_zero_based": [
+            9
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "76490/799",
+          "matching_priority_slice_indices_zero_based": [
+            9
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "43765/446",
+          "matching_priority_slice_indices_zero_based": [
+            9
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "4941/47",
+          "matching_priority_slice_indices_zero_based": [
+            9
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "115945/1026",
+          "matching_priority_slice_indices_zero_based": [
+            9
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "7649/47",
+          "matching_priority_slice_indices_zero_based": [
+            9
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "42227/235",
+          "matching_priority_slice_indices_zero_based": [
+            9
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "154055/752",
+          "matching_priority_slice_indices_zero_based": [
+            9
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-195713/39309",
+          "matching_priority_slice_indices_zero_based": [
+            12
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-26162/5361",
+          "matching_priority_slice_indices_zero_based": [
+            11
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-89650/1739",
+          "matching_priority_slice_indices_zero_based": [
+            13
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-21051/3478",
+          "matching_priority_slice_indices_zero_based": [
+            13
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "84250/1739",
+          "matching_priority_slice_indices_zero_based": [
+            13
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "177195/3478",
+          "matching_priority_slice_indices_zero_based": [
+            13
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-131490/1081",
+          "matching_priority_slice_indices_zero_based": [
+            15
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-164609/2162",
+          "matching_priority_slice_indices_zero_based": [
+            15
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-23390/1081",
+          "matching_priority_slice_indices_zero_based": [
+            15
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-41375/2162",
+          "matching_priority_slice_indices_zero_based": [
+            15
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "51591/2162",
+          "matching_priority_slice_indices_zero_based": [
+            15
+          ],
+          "exact_square_replay": true
+        },
+        {
+          "T": "-181690/57017",
+          "matching_priority_slice_indices_zero_based": [
+            14
+          ],
+          "exact_square_replay": true
+        }
+      ],
+      "T0_replayed_separately_on_every_priority_slice": true,
+      "all_values_verified_by_exact_rational_square_tests": true,
+      "enumeration_stdout_was_temporary_and_is_not_a_portable_input": true
+    },
+    "completed_call_count": 32,
+    "timed_out_call_count": 0,
+    "other_noncompleted_call_count": 0,
+    "run_records": [
+      {
+        "id": "a01_sp01_centered_0",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 0,
+        "height_specification": "50000",
+        "matrix": [
+          3027,
+          5081,
+          28,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.10621029100002488,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 90,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a01_sp01_centered_-1",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 0,
+        "height_specification": "50000",
+        "matrix": [
+          -2054,
+          5081,
+          -19,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.09987587499927031,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 83,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a02_sp01_centered_0",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 1,
+        "height_specification": "50000",
+        "matrix": [
+          3027,
+          5081,
+          28,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.12441870800103061,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 108,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a02_sp01_centered_-1",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 1,
+        "height_specification": "50000",
+        "matrix": [
+          -2054,
+          5081,
+          -19,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.1239362079941202,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 108,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a03_sp01_centered_0",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 2,
+        "height_specification": "50000",
+        "matrix": [
+          3027,
+          5081,
+          28,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.1370939999978873,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 120,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a03_sp01_centered_-1",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 2,
+        "height_specification": "50000",
+        "matrix": [
+          -2054,
+          5081,
+          -19,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.11877137500414392,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 103,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a04_sp01_centered_0",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 3,
+        "height_specification": "50000",
+        "matrix": [
+          3027,
+          5081,
+          28,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.1257770000011078,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 108,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a04_sp01_centered_-1",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 3,
+        "height_specification": "50000",
+        "matrix": [
+          -2054,
+          5081,
+          -19,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.17349729200213915,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 139,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a05_sp01_centered_0",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 4,
+        "height_specification": "50000",
+        "matrix": [
+          3027,
+          5081,
+          28,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.0863824170010048,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 70,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a05_sp01_centered_-1",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 4,
+        "height_specification": "50000",
+        "matrix": [
+          -2054,
+          5081,
+          -19,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.08595570900070015,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 70,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a06_sp01_centered_0",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 5,
+        "height_specification": "50000",
+        "matrix": [
+          3027,
+          5081,
+          28,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.11399829199945088,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 99,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a06_sp01_centered_-1",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 5,
+        "height_specification": "50000",
+        "matrix": [
+          -2054,
+          5081,
+          -19,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.11154633299884154,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 95,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a07_sp01_centered_0",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 6,
+        "height_specification": "50000",
+        "matrix": [
+          3027,
+          5081,
+          28,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.11060333399655065,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 95,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a07_sp01_centered_-1",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 6,
+        "height_specification": "50000",
+        "matrix": [
+          -2054,
+          5081,
+          -19,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.09631049999734387,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 80,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a08_sm01_centered_0",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 7,
+        "height_specification": "50000",
+        "matrix": [
+          3027,
+          5081,
+          28,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.07973345900245477,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 64,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a08_sm01_centered_-1",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 7,
+        "height_specification": "50000",
+        "matrix": [
+          -2054,
+          5081,
+          -19,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.10303741700045066,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 86,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a09_sm01_centered_0",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 8,
+        "height_specification": "50000",
+        "matrix": [
+          3027,
+          5081,
+          28,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.07646416599891381,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 60,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a09_sm01_centered_-1",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 8,
+        "height_specification": "50000",
+        "matrix": [
+          -2054,
+          5081,
+          -19,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.06812591599737061,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 52,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a10_sp01_centered_0",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 9,
+        "height_specification": "50000",
+        "matrix": [
+          3027,
+          5081,
+          28,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.13733604099979857,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 120,
+        "signed_point_count": 4,
+        "distinct_abscissa_count": 2,
+        "mapped_exact_point_count_including_signs": 4,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a10_sp01_centered_-1",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 9,
+        "height_specification": "50000",
+        "matrix": [
+          -2054,
+          5081,
+          -19,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.13264183300634613,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 116,
+        "signed_point_count": 4,
+        "distinct_abscissa_count": 2,
+        "mapped_exact_point_count_including_signs": 4,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a11_sm01_centered_0",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 10,
+        "height_specification": "50000",
+        "matrix": [
+          3027,
+          5081,
+          28,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.15640254199388437,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 139,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a11_sm01_centered_-1",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 10,
+        "height_specification": "50000",
+        "matrix": [
+          -2054,
+          5081,
+          -19,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.12644712499604793,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 110,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a12_sp01_centered_0",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 11,
+        "height_specification": "50000",
+        "matrix": [
+          3027,
+          5081,
+          28,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.15257000000565313,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 136,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a12_sp01_centered_-1",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 11,
+        "height_specification": "50000",
+        "matrix": [
+          -2054,
+          5081,
+          -19,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.1438508749997709,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 127,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a13_sp01_centered_0",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 12,
+        "height_specification": "50000",
+        "matrix": [
+          3027,
+          5081,
+          28,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.12125266599468887,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 105,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a13_sp01_centered_-1",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 12,
+        "height_specification": "50000",
+        "matrix": [
+          -2054,
+          5081,
+          -19,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.14325958299741615,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 127,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a14_sp01_centered_0",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 13,
+        "height_specification": "50000",
+        "matrix": [
+          3027,
+          5081,
+          28,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.10676358299679123,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 90,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a14_sp01_centered_-1",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 13,
+        "height_specification": "50000",
+        "matrix": [
+          -2054,
+          5081,
+          -19,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.11696445899724495,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 100,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a15_sp01_centered_0",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 14,
+        "height_specification": "50000",
+        "matrix": [
+          3027,
+          5081,
+          28,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.10692079099680996,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 91,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a15_sp01_centered_-1",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 14,
+        "height_specification": "50000",
+        "matrix": [
+          -2054,
+          5081,
+          -19,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.12837470800150186,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 112,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a16_sp01_centered_0",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 15,
+        "height_specification": "50000",
+        "matrix": [
+          3027,
+          5081,
+          28,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.09582816700276453,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 80,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      },
+      {
+        "id": "a16_sp01_centered_-1",
+        "kind": "centered_mobius",
+        "slice_index_zero_based": 15,
+        "height_specification": "50000",
+        "matrix": [
+          -2054,
+          5081,
+          -19,
+          47
+        ],
+        "status": "completed",
+        "wall_seconds": 0.08508433300448814,
+        "timeout_seconds": 30.0,
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "pari_milliseconds": 69,
+        "signed_point_count": 2,
+        "distinct_abscissa_count": 1,
+        "mapped_exact_point_count_including_signs": 2,
+        "chart_pole_count": 0
+      }
+    ],
+    "slice_point_records": [
+      {
+        "slice_index_zero_based": 0,
+        "id": "a01_sp01",
+        "slope": 1,
+        "intercept": "-12930/91",
+        "normalized_integer_coefficients_ascending": [
+          556495058162479230019600,
+          -7407905488411292930520,
+          45200868346732501321,
+          -171386754779229444,
+          308805080384164
+        ],
+        "exact_distinct_affine_auxiliary_point_count": 22,
+        "exact_distinct_parameter_count": 11,
+        "positive_rank_certified_by_point_count": true,
+        "positive_rank_argument": "a rational base point identifies the genus-one slice with its Jacobian; more than 16 rational affine points exceed Mazur's maximum rational torsion cardinality"
+      },
+      {
+        "slice_index_zero_based": 1,
+        "id": "a02_sp01",
+        "slope": 1,
+        "intercept": "-77050/821",
+        "normalized_integer_coefficients_ascending": [
+          1821905246580189069613350400,
+          -29338880930988592917218160,
+          206801601054332961801961,
+          -839014255722309339444,
+          1580477562747899524
+        ],
+        "exact_distinct_affine_auxiliary_point_count": 12,
+        "exact_distinct_parameter_count": 6,
+        "positive_rank_certified_by_point_count": false,
+        "positive_rank_argument": null
+      },
+      {
+        "slice_index_zero_based": 2,
+        "id": "a03_sp01",
+        "slope": 1,
+        "intercept": "-276385/9353",
+        "normalized_integer_coefficients_ascending": [
+          9040496025067295579033126655625,
+          -205659357895385229803643404400,
+          1921699718667087552868475656,
+          -9063434527691434114582464,
+          18164224948324951797904
+        ],
+        "exact_distinct_affine_auxiliary_point_count": 2,
+        "exact_distinct_parameter_count": 1,
+        "positive_rank_certified_by_point_count": false,
+        "positive_rank_argument": null
+      },
+      {
+        "slice_index_zero_based": 3,
+        "id": "a04_sp01",
+        "slope": 1,
+        "intercept": "-4471/339",
+        "normalized_integer_coefficients_ascending": [
+          1168595207736118032132129,
+          -29899908013820942677608,
+          308236804344177057976,
+          -1537208192800455072,
+          3140209905972624
+        ],
+        "exact_distinct_affine_auxiliary_point_count": 18,
+        "exact_distinct_parameter_count": 9,
+        "positive_rank_certified_by_point_count": true,
+        "positive_rank_argument": "a rational base point identifies the genus-one slice with its Jacobian; more than 16 rational affine points exceed Mazur's maximum rational torsion cardinality"
+      },
+      {
+        "slice_index_zero_based": 4,
+        "id": "a05_sp01",
+        "slope": 1,
+        "intercept": "-6375/4093",
+        "normalized_integer_coefficients_ascending": [
+          163594136705483828740867723525,
+          -4606755502183391511153172260,
+          51445652691040684888046656,
+          -268592597990172189024624,
+          557244445011791667904
+        ],
+        "exact_distinct_affine_auxiliary_point_count": 6,
+        "exact_distinct_parameter_count": 3,
+        "positive_rank_certified_by_point_count": false,
+        "positive_rank_argument": null
+      },
+      {
+        "slice_index_zero_based": 5,
+        "id": "a06_sp01",
+        "slope": 1,
+        "intercept": "6630/2657",
+        "normalized_integer_coefficients_ascending": [
+          25864017999302058147224017600,
+          -755343918768764294052655680,
+          8694535572635758283632441,
+          -46187223438930882129684,
+          96389338407332231044
+        ],
+        "exact_distinct_affine_auxiliary_point_count": 8,
+        "exact_distinct_parameter_count": 4,
+        "positive_rank_certified_by_point_count": false,
+        "positive_rank_argument": null
+      },
+      {
+        "slice_index_zero_based": 6,
+        "id": "a07_sp01",
+        "slope": 1,
+        "intercept": "61030/1739",
+        "normalized_integer_coefficients_ascending": [
+          1514575913587358504290147600,
+          -65065128106098443163366120,
+          1020689924350191743089801,
+          -6441204991260690352164,
+          14291319942872112484
+        ],
+        "exact_distinct_affine_auxiliary_point_count": 10,
+        "exact_distinct_parameter_count": 5,
+        "positive_rank_certified_by_point_count": false,
+        "positive_rank_argument": null
+      },
+      {
+        "slice_index_zero_based": 7,
+        "id": "a08_sm01",
+        "slope": -1,
+        "intercept": "130932/491",
+        "normalized_integer_coefficients_ascending": [
+          114101850986335320690052,
+          -26627541166528034539284,
+          1986517458064294877665,
+          -21868215981676734132,
+          65512132297985860
+        ],
+        "exact_distinct_affine_auxiliary_point_count": 20,
+        "exact_distinct_parameter_count": 10,
+        "positive_rank_certified_by_point_count": true,
+        "positive_rank_argument": "a rational base point identifies the genus-one slice with its Jacobian; more than 16 rational affine points exceed Mazur's maximum rational torsion cardinality"
+      },
+      {
+        "slice_index_zero_based": 8,
+        "id": "a09_sm01",
+        "slope": -1,
+        "intercept": "154687/447",
+        "normalized_integer_coefficients_ascending": [
+          1813945487508855087708909,
+          -55846364273803089446292,
+          674906638961445179536,
+          -3773000709248695728,
+          8280324781951104
+        ],
+        "exact_distinct_affine_auxiliary_point_count": 18,
+        "exact_distinct_parameter_count": 9,
+        "positive_rank_certified_by_point_count": true,
+        "positive_rank_argument": "a rational base point identifies the genus-one slice with its Jacobian; more than 16 rational affine points exceed Mazur's maximum rational torsion cardinality"
+      },
+      {
+        "slice_index_zero_based": 9,
+        "id": "a10_sp01",
+        "slope": 1,
+        "intercept": "6380/47",
+        "normalized_integer_coefficients_ascending": [
+          52032672305349792100,
+          3592913862587594820,
+          13209177485311921,
+          -928607382309804,
+          4386989607364
+        ],
+        "exact_distinct_affine_auxiliary_point_count": 38,
+        "exact_distinct_parameter_count": 19,
+        "positive_rank_certified_by_point_count": true,
+        "positive_rank_argument": "a rational base point identifies the genus-one slice with its Jacobian; more than 16 rational affine points exceed Mazur's maximum rational torsion cardinality"
+      },
+      {
+        "slice_index_zero_based": 10,
+        "id": "a11_sm01",
+        "slope": -1,
+        "intercept": "735063/2053",
+        "normalized_integer_coefficients_ascending": [
+          10307233679560746526286668681,
+          -285582787996159124409985128,
+          3149956051493016080756824,
+          -16689925481512771995552,
+          35844036916256545936
+        ],
+        "exact_distinct_affine_auxiliary_point_count": 6,
+        "exact_distinct_parameter_count": 3,
+        "positive_rank_certified_by_point_count": false,
+        "positive_rank_argument": null
+      },
+      {
+        "slice_index_zero_based": 11,
+        "id": "a12_sp01",
+        "slope": 1,
+        "intercept": "835030/5361",
+        "normalized_integer_coefficients_ascending": [
+          2183618462931064175847960000,
+          48576491202582820274709600,
+          -447961949099314104897551,
+          -9715121488022516443956,
+          78378867176560850916
+        ],
+        "exact_distinct_affine_auxiliary_point_count": 4,
+        "exact_distinct_parameter_count": 2,
+        "positive_rank_certified_by_point_count": false,
+        "positive_rank_argument": null
+      },
+      {
+        "slice_index_zero_based": 12,
+        "id": "a13_sp01",
+        "slope": 1,
+        "intercept": "6130540/39309",
+        "normalized_integer_coefficients_ascending": [
+          6339573064886588314524006608100,
+          139542278265730135760639117940,
+          -1308826388928872476094992391,
+          -27864390741225970751470956,
+          226480487014199400577956
+        ],
+        "exact_distinct_affine_auxiliary_point_count": 4,
+        "exact_distinct_parameter_count": 2,
+        "positive_rank_certified_by_point_count": false,
+        "positive_rank_argument": null
+      },
+      {
+        "slice_index_zero_based": 13,
+        "id": "a14_sp01",
+        "slope": 1,
+        "intercept": "274945/1739",
+        "normalized_integer_coefficients_ascending": [
+          228512617801150171866375625,
+          4472880163161569455870200,
+          -50092979827771728317384,
+          -878987343569756803104,
+          7779112602168822544
+        ],
+        "exact_distinct_affine_auxiliary_point_count": 10,
+        "exact_distinct_parameter_count": 5,
+        "positive_rank_certified_by_point_count": false,
+        "positive_rank_argument": null
+      },
+      {
+        "slice_index_zero_based": 14,
+        "id": "a15_sp01",
+        "slope": 1,
+        "intercept": "15187800/57017",
+        "normalized_integer_coefficients_ascending": [
+          19366396470903381552275812816900,
+          4664162495576561239956431567340,
+          358202463229995969307998550801,
+          3961245720570501990742666596,
+          11892976312857982305946084
+        ],
+        "exact_distinct_affine_auxiliary_point_count": 4,
+        "exact_distinct_parameter_count": 2,
+        "positive_rank_certified_by_point_count": false,
+        "positive_rank_argument": null
+      },
+      {
+        "slice_index_zero_based": 15,
+        "id": "a16_sp01",
+        "slope": 1,
+        "intercept": "322435/1081",
+        "normalized_integer_coefficients_ascending": [
+          76473487233026854605372025,
+          4534953431847131247453960,
+          97575151857547922968216,
+          743453200241870401056,
+          1867003301609075344
+        ],
+        "exact_distinct_affine_auxiliary_point_count": 12,
+        "exact_distinct_parameter_count": 6,
+        "positive_rank_certified_by_point_count": false,
+        "positive_rank_argument": null
+      }
+    ],
+    "positive_rank_slice_count_by_point_cardinality": 5
+  },
+  "new_parameter_decontamination": {
+    "distinct_new_parameter_count_before_generic_filter": 81,
+    "generic_only_parameter_count": 71,
+    "forced_non_generic_parameter_count": 10,
+    "records": [
+      {
+        "T": "-131490/1081",
+        "parameter_height": 131490,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a16_sp01:jacobian-sign-pair:visible-02,quartic-x:visible-02"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "-34484/307",
+        "parameter_height": 34484,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a08_sm01"
+        ],
+        "forced_points": [
+          {
+            "x": "57127768/150737",
+            "y": "-786231611372180574/22721643169",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 249.8458736153766,
+          "known_repeated_prime_log_savings": 48.03256588068538,
+          "log_radical_upper_proxy": 201.81330773469122,
+          "small_prime_valuations": [
+            [
+              2,
+              12
+            ],
+            [
+              3,
+              21
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              17,
+              2
+            ],
+            [
+              23,
+              2
+            ],
+            [
+              31,
+              2
+            ],
+            [
+              67,
+              2
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 81
+        }
+      },
+      {
+        "T": "-72193/658",
+        "parameter_height": 72193,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a10_sp01:jacobian-sign-pair:linear-minus-43/27,quartic-x:linear-minus-43/27"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "-1529/17",
+        "parameter_height": 1529,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a10_sp01"
+        ],
+        "forced_points": [
+          {
+            "x": "36597/799",
+            "y": "-8166197109015/638401",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 194.95101478183565,
+          "known_repeated_prime_log_savings": 41.71548756389522,
+          "log_radical_upper_proxy": 153.23552721794044,
+          "small_prime_valuations": [
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              18
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              17,
+              2
+            ],
+            [
+              19,
+              2
+            ],
+            [
+              23,
+              2
+            ],
+            [
+              31,
+              2
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 59
+        }
+      },
+      {
+        "T": "-3754/47",
+        "parameter_height": 3754,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a10_sp01"
+        ],
+        "forced_points": [
+          {
+            "x": "2626/47",
+            "y": "-22384119060/2209",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 215.3083235832465,
+          "known_repeated_prime_log_savings": 31.352485182133776,
+          "log_radical_upper_proxy": 183.95583840111271,
+          "small_prime_valuations": [
+            [
+              2,
+              10
+            ],
+            [
+              3,
+              18
+            ],
+            [
+              5,
+              5
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 79
+        }
+      },
+      {
+        "T": "-164609/2162",
+        "parameter_height": 164609,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a16_sp01:jacobian-sign-pair:visible-04,quartic-x:visible-04"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "-3190/47",
+        "parameter_height": 3190,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a10_sp01:jacobian-sign-pair:visible-00,quartic-x:visible-00"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "-128873/2162",
+        "parameter_height": 128873,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a10_sp01"
+        ],
+        "forced_points": [
+          {
+            "x": "164607/2162",
+            "y": "-290865444466032/54922367",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 291.05414885421305,
+          "known_repeated_prime_log_savings": 69.79491073286259,
+          "log_radical_upper_proxy": 221.25923812135045,
+          "small_prime_valuations": [
+            [
+              2,
+              36
+            ],
+            [
+              3,
+              18
+            ],
+            [
+              7,
+              6
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              17,
+              2
+            ],
+            [
+              19,
+              3
+            ],
+            [
+              37,
+              2
+            ],
+            [
+              167,
+              1
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 88
+        }
+      },
+      {
+        "T": "-89650/1739",
+        "parameter_height": 89650,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a14_sp01:jacobian-sign-pair:visible-02,quartic-x:visible-02"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "-3795/94",
+        "parameter_height": 3795,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a10_sp01:jacobian-sign-pair:visible-02,quartic-x:visible-02"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "-19477/491",
+        "parameter_height": 19477,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a08_sm01:jacobian-sign-pair:visible-11,quartic-x:visible-11"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "-23390/1081",
+        "parameter_height": 23390,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a16_sp01:jacobian-sign-pair:visible-06,quartic-x:visible-06"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "-41375/2162",
+        "parameter_height": 41375,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a16_sp01:jacobian-sign-pair:visible-08,quartic-x:visible-08"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "-30515/1739",
+        "parameter_height": 30515,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a07_sp01:jacobian-sign-pair:visible-00,quartic-x:visible-00"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "-21051/3478",
+        "parameter_height": 21051,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a14_sp01:jacobian-sign-pair:visible-04,quartic-x:visible-04"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "-195713/39309",
+        "parameter_height": 195713,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a13_sp01:jacobian-sign-pair:visible-04,quartic-x:visible-04"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "-26162/5361",
+        "parameter_height": 26162,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a12_sp01:jacobian-sign-pair:visible-04,quartic-x:visible-04"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "-181690/57017",
+        "parameter_height": 181690,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a15_sp01:jacobian-sign-pair:visible-08,quartic-x:visible-08"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "-14527/5009",
+        "parameter_height": 14527,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a09_sm01"
+        ],
+        "forced_points": [
+          {
+            "x": "781320752/2239023",
+            "y": "-35319841536185092523/1671074664843",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 301.27733264063875,
+          "known_repeated_prime_log_savings": 46.81791410852736,
+          "log_radical_upper_proxy": 254.45941853211139,
+          "small_prime_valuations": [
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              14
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              13,
+              3
+            ],
+            [
+              17,
+              2
+            ],
+            [
+              67,
+              2
+            ],
+            [
+              73,
+              2
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 103
+        }
+      },
+      {
+        "T": "-44617/16685",
+        "parameter_height": 44617,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a10_sp01"
+        ],
+        "forced_points": [
+          {
+            "x": "2220283/16685",
+            "y": "-38631351516746139/13084293575",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 324.85555657024975,
+          "known_repeated_prime_log_savings": 45.336711690212944,
+          "log_radical_upper_proxy": 279.5188448800368,
+          "small_prime_valuations": [
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              20
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              19,
+              2
+            ],
+            [
+              23,
+              2
+            ],
+            [
+              199,
+              2
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 114
+        }
+      },
+      {
+        "T": "-3251/1274",
+        "parameter_height": 3251,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a01_sp01:jacobian-sign-pair:linear-minus-43/27,quartic-x:linear-minus-43/27"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "-3315/2657",
+        "parameter_height": 3315,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a06_sp01:jacobian-sign-pair:visible-00,quartic-x:visible-00"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "25/894",
+        "parameter_height": 894,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a09_sm01:jacobian-sign-pair:visible-11,quartic-x:visible-11"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "6375/8186",
+        "parameter_height": 8186,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a05_sp01:jacobian-sign-pair:visible-00,quartic-x:visible-00"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "1636/491",
+        "parameter_height": 1636,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a08_sm01:jacobian-sign-pair:visible-09,quartic-x:visible-09"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "241/47",
+        "parameter_height": 241,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a10_sp01:jacobian-sign-pair:visible-04,quartic-x:visible-04"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "5727/982",
+        "parameter_height": 5727,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a08_sm01:jacobian-sign-pair:visible-07,quartic-x:visible-07"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "24725/4106",
+        "parameter_height": 24725,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a11_sm01:jacobian-sign-pair:visible-11,quartic-x:visible-11"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "4471/678",
+        "parameter_height": 4471,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a04_sp01:jacobian-sign-pair:visible-00,quartic-x:visible-00"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "68722/8347",
+        "parameter_height": 68722,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a08_sm01:jacobian-sign-pair:linear-plus-7/27,quartic-x:linear-plus-7/27"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "34615/3478",
+        "parameter_height": 34615,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a07_sp01:jacobian-sign-pair:visible-02,quartic-x:visible-02"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "16255/1456",
+        "parameter_height": 16255,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a01_sp01:jacobian-sign-pair:linear-plus-43/27,quartic-x:linear-plus-43/27"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "34361/2455",
+        "parameter_height": 34361,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a08_sm01:jacobian-sign-pair:linear-minus-7/27,quartic-x:linear-minus-7/27"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "51591/2162",
+        "parameter_height": 51591,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a16_sp01:jacobian-sign-pair:visible-10,quartic-x:visible-10"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "139505/5314",
+        "parameter_height": 139505,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a06_sp01:jacobian-sign-pair:visible-02,quartic-x:visible-02"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "115745/4093",
+        "parameter_height": 115745,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a05_sp01:jacobian-sign-pair:visible-02,quartic-x:visible-02"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "11558/339",
+        "parameter_height": 11558,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a04_sp01:jacobian-sign-pair:visible-02,quartic-x:visible-02"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "42227/1034",
+        "parameter_height": 42227,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a10_sp01:jacobian-sign-pair:linear-minus-17/27,quartic-x:linear-minus-17/27"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "38467/894",
+        "parameter_height": 38467,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a09_sm01:jacobian-sign-pair:visible-09,quartic-x:visible-09"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "20351/447",
+        "parameter_height": 20351,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a09_sm01:jacobian-sign-pair:visible-07,quartic-x:visible-07"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "38525/821",
+        "parameter_height": 38525,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a02_sp01:jacobian-sign-pair:visible-00,quartic-x:visible-00"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "84250/1739",
+        "parameter_height": 84250,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a14_sp01:jacobian-sign-pair:visible-06,quartic-x:visible-06"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "177195/3478",
+        "parameter_height": 177195,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a14_sp01:jacobian-sign-pair:visible-08,quartic-x:visible-08"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "105774/2053",
+        "parameter_height": 105774,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a11_sm01:jacobian-sign-pair:visible-07,quartic-x:visible-07"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "96432/1739",
+        "parameter_height": 96432,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a07_sp01:jacobian-sign-pair:visible-04,quartic-x:visible-04"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "5605/94",
+        "parameter_height": 5605,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a10_sp01:jacobian-sign-pair:visible-06,quartic-x:visible-06"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "29623/491",
+        "parameter_height": 29623,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a08_sm01:jacobian-sign-pair:visible-05,quartic-x:visible-05"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "2920/47",
+        "parameter_height": 2920,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a10_sp01:jacobian-sign-pair:visible-08,quartic-x:visible-08"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "6465/91",
+        "parameter_height": 6465,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a01_sp01:jacobian-sign-pair:visible-00,quartic-x:visible-00"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "190646/2657",
+        "parameter_height": 190646,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a06_sp01:jacobian-sign-pair:visible-04,quartic-x:visible-04"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "122205/1642",
+        "parameter_height": 122205,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a02_sp01:jacobian-sign-pair:visible-02,quartic-x:visible-02"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "53965/678",
+        "parameter_height": 53965,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a04_sp01:jacobian-sign-pair:visible-04,quartic-x:visible-04"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "76490/799",
+        "parameter_height": 76490,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a10_sp01:jacobian-sign-pair:linear-minus-7/27,quartic-x:linear-minus-7/27"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "43765/446",
+        "parameter_height": 43765,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a10_sp01"
+        ],
+        "forced_points": [
+          {
+            "x": "4902435/20962",
+            "y": "-388792570850850/109851361",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 260.01709491973395,
+          "known_repeated_prime_log_savings": 64.75793497817747,
+          "log_radical_upper_proxy": 195.25915994155648,
+          "small_prime_valuations": [
+            [
+              2,
+              29
+            ],
+            [
+              3,
+              18
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              7,
+              6
+            ],
+            [
+              13,
+              3
+            ],
+            [
+              23,
+              2
+            ],
+            [
+              47,
+              2
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 79
+        }
+      },
+      {
+        "T": "17935/182",
+        "parameter_height": 17935,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a01_sp01:jacobian-sign-pair:visible-02,quartic-x:visible-02"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "89425/894",
+        "parameter_height": 89425,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a09_sm01:jacobian-sign-pair:visible-05,quartic-x:visible-05"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "4941/47",
+        "parameter_height": 4941,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a10_sp01:jacobian-sign-pair:visible-10,quartic-x:visible-10"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "103927/982",
+        "parameter_height": 103927,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a08_sm01:jacobian-sign-pair:visible-03,quartic-x:visible-03"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "195555/1739",
+        "parameter_height": 195555,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a07_sp01:jacobian-sign-pair:visible-08,quartic-x:visible-08"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "115945/1026",
+        "parameter_height": 115945,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a10_sp01"
+        ],
+        "forced_points": [
+          {
+            "x": "11995295/48222",
+            "y": "-8069916173665/12368943",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 272.8534418597537,
+          "known_repeated_prime_log_savings": 55.58098203027913,
+          "log_radical_upper_proxy": 217.27245982947454,
+          "small_prime_valuations": [
+            [
+              2,
+              33
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              37,
+              2
+            ],
+            [
+              47,
+              4
+            ],
+            [
+              61,
+              2
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 88
+        }
+      },
+      {
+        "T": "98458/821",
+        "parameter_height": 98458,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a02_sp01:jacobian-sign-pair:visible-04,quartic-x:visible-04"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "65466/491",
+        "parameter_height": 65466,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a08_sm01:jacobian-sign-pair:visible-01,quartic-x:visible-01"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "45458/339",
+        "parameter_height": 45458,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a04_sp01:jacobian-sign-pair:visible-06,quartic-x:visible-06"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "92611/678",
+        "parameter_height": 92611,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a04_sp01:jacobian-sign-pair:visible-08,quartic-x:visible-08"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "13108/91",
+        "parameter_height": 13108,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a01_sp01:jacobian-sign-pair:visible-04,quartic-x:visible-04"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "65051/447",
+        "parameter_height": 65051,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a09_sm01:jacobian-sign-pair:visible-03,quartic-x:visible-03"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "7649/47",
+        "parameter_height": 7649,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a10_sp01:jacobian-sign-pair:linear-plus-7/27,quartic-x:linear-plus-7/27"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "154687/894",
+        "parameter_height": 154687,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a09_sm01:jacobian-sign-pair:visible-01,quartic-x:visible-01"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "145255/821",
+        "parameter_height": 145255,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a02_sp01:jacobian-sign-pair:visible-08,quartic-x:visible-08"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "121765/678",
+        "parameter_height": 121765,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a04_sp01:jacobian-sign-pair:visible-10,quartic-x:visible-10"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "42227/235",
+        "parameter_height": 42227,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a10_sp01:jacobian-sign-pair:linear-plus-17/27,quartic-x:linear-plus-17/27"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "36135/182",
+        "parameter_height": 36135,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a01_sp01:jacobian-sign-pair:visible-06,quartic-x:visible-06"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "18295/91",
+        "parameter_height": 18295,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a01_sp01:jacobian-sign-pair:visible-08,quartic-x:visible-08"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "154055/752",
+        "parameter_height": 154055,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a10_sp01"
+        ],
+        "forced_points": [
+          {
+            "x": "256135/752",
+            "y": "-198207171431775/13289344",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 275.5047106798759,
+          "known_repeated_prime_log_savings": 51.449393647606335,
+          "log_radical_upper_proxy": 224.05531703226958,
+          "small_prime_valuations": [
+            [
+              2,
+              22
+            ],
+            [
+              3,
+              21
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              13,
+              4
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 94
+        }
+      },
+      {
+        "T": "180558/821",
+        "parameter_height": 180558,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a02_sp01:jacobian-sign-pair:visible-10,quartic-x:visible-10"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "25841/113",
+        "parameter_height": 25841,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a04_sp01:jacobian-sign-pair:linear-plus-43/27,quartic-x:linear-plus-43/27"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "22208/91",
+        "parameter_height": 22208,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a01_sp01:jacobian-sign-pair:visible-10,quartic-x:visible-10"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "115669/298",
+        "parameter_height": 115669,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a09_sm01:jacobian-sign-pair:linear-minus-17/27,quartic-x:linear-minus-17/27"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "97883/182",
+        "parameter_height": 97883,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a01_sp01:jacobian-sign-pair:linear-plus-7/27,quartic-x:linear-plus-7/27"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "131489/226",
+        "parameter_height": 131489,
+        "classification": "only_intersections_with_21_generic_sections",
+        "generic_intersection_sources": [
+          "a04_sp01:jacobian-sign-pair:linear-plus-17/27,quartic-x:linear-plus-17/27"
+        ],
+        "forced_non_generic_sources": [],
+        "forced_points": [],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true
+      },
+      {
+        "T": "6115/6",
+        "parameter_height": 6115,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a01_sp01"
+        ],
+        "forced_points": [
+          {
+            "x": "478885/546",
+            "y": "-124608479048720/74529",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 215.92868728929545,
+          "known_repeated_prime_log_savings": 55.62860807212593,
+          "log_radical_upper_proxy": 160.30007921716953,
+          "small_prime_valuations": [
+            [
+              2,
+              36
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              7,
+              6
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              19,
+              2
+            ],
+            [
+              37,
+              2
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 64
+        }
+      }
+    ]
+  },
+  "conductor_proxy_frontier": {
+    "trial_prime_bound": 251,
+    "retained_count": 10,
+    "selection": "smallest log radical upper proxy, then parameter height and T",
+    "records": [
+      {
+        "T": "-1529/17",
+        "parameter_height": 1529,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a10_sp01"
+        ],
+        "forced_points": [
+          {
+            "x": "36597/799",
+            "y": "-8166197109015/638401",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 194.95101478183565,
+          "known_repeated_prime_log_savings": 41.71548756389522,
+          "log_radical_upper_proxy": 153.23552721794044,
+          "small_prime_valuations": [
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              18
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              17,
+              2
+            ],
+            [
+              19,
+              2
+            ],
+            [
+              23,
+              2
+            ],
+            [
+              31,
+              2
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 59
+        }
+      },
+      {
+        "T": "6115/6",
+        "parameter_height": 6115,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a01_sp01"
+        ],
+        "forced_points": [
+          {
+            "x": "478885/546",
+            "y": "-124608479048720/74529",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 215.92868728929545,
+          "known_repeated_prime_log_savings": 55.62860807212593,
+          "log_radical_upper_proxy": 160.30007921716953,
+          "small_prime_valuations": [
+            [
+              2,
+              36
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              7,
+              6
+            ],
+            [
+              13,
+              2
+            ],
+            [
+              19,
+              2
+            ],
+            [
+              37,
+              2
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 64
+        }
+      },
+      {
+        "T": "-3754/47",
+        "parameter_height": 3754,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a10_sp01"
+        ],
+        "forced_points": [
+          {
+            "x": "2626/47",
+            "y": "-22384119060/2209",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 215.3083235832465,
+          "known_repeated_prime_log_savings": 31.352485182133776,
+          "log_radical_upper_proxy": 183.95583840111271,
+          "small_prime_valuations": [
+            [
+              2,
+              10
+            ],
+            [
+              3,
+              18
+            ],
+            [
+              5,
+              5
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 79
+        }
+      },
+      {
+        "T": "43765/446",
+        "parameter_height": 43765,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a10_sp01"
+        ],
+        "forced_points": [
+          {
+            "x": "4902435/20962",
+            "y": "-388792570850850/109851361",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 260.01709491973395,
+          "known_repeated_prime_log_savings": 64.75793497817747,
+          "log_radical_upper_proxy": 195.25915994155648,
+          "small_prime_valuations": [
+            [
+              2,
+              29
+            ],
+            [
+              3,
+              18
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              7,
+              6
+            ],
+            [
+              13,
+              3
+            ],
+            [
+              23,
+              2
+            ],
+            [
+              47,
+              2
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 79
+        }
+      },
+      {
+        "T": "-34484/307",
+        "parameter_height": 34484,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a08_sm01"
+        ],
+        "forced_points": [
+          {
+            "x": "57127768/150737",
+            "y": "-786231611372180574/22721643169",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 249.8458736153766,
+          "known_repeated_prime_log_savings": 48.03256588068538,
+          "log_radical_upper_proxy": 201.81330773469122,
+          "small_prime_valuations": [
+            [
+              2,
+              12
+            ],
+            [
+              3,
+              21
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              17,
+              2
+            ],
+            [
+              23,
+              2
+            ],
+            [
+              31,
+              2
+            ],
+            [
+              67,
+              2
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 81
+        }
+      },
+      {
+        "T": "115945/1026",
+        "parameter_height": 115945,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a10_sp01"
+        ],
+        "forced_points": [
+          {
+            "x": "11995295/48222",
+            "y": "-8069916173665/12368943",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 272.8534418597537,
+          "known_repeated_prime_log_savings": 55.58098203027913,
+          "log_radical_upper_proxy": 217.27245982947454,
+          "small_prime_valuations": [
+            [
+              2,
+              33
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              37,
+              2
+            ],
+            [
+              47,
+              4
+            ],
+            [
+              61,
+              2
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 88
+        }
+      },
+      {
+        "T": "-128873/2162",
+        "parameter_height": 128873,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a10_sp01"
+        ],
+        "forced_points": [
+          {
+            "x": "164607/2162",
+            "y": "-290865444466032/54922367",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 291.05414885421305,
+          "known_repeated_prime_log_savings": 69.79491073286259,
+          "log_radical_upper_proxy": 221.25923812135045,
+          "small_prime_valuations": [
+            [
+              2,
+              36
+            ],
+            [
+              3,
+              18
+            ],
+            [
+              7,
+              6
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              17,
+              2
+            ],
+            [
+              19,
+              3
+            ],
+            [
+              37,
+              2
+            ],
+            [
+              167,
+              1
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 88
+        }
+      },
+      {
+        "T": "154055/752",
+        "parameter_height": 154055,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a10_sp01"
+        ],
+        "forced_points": [
+          {
+            "x": "256135/752",
+            "y": "-198207171431775/13289344",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 275.5047106798759,
+          "known_repeated_prime_log_savings": 51.449393647606335,
+          "log_radical_upper_proxy": 224.05531703226958,
+          "small_prime_valuations": [
+            [
+              2,
+              22
+            ],
+            [
+              3,
+              21
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              13,
+              4
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 94
+        }
+      },
+      {
+        "T": "-14527/5009",
+        "parameter_height": 14527,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a09_sm01"
+        ],
+        "forced_points": [
+          {
+            "x": "781320752/2239023",
+            "y": "-35319841536185092523/1671074664843",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 301.27733264063875,
+          "known_repeated_prime_log_savings": 46.81791410852736,
+          "log_radical_upper_proxy": 254.45941853211139,
+          "small_prime_valuations": [
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              14
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              7,
+              5
+            ],
+            [
+              13,
+              3
+            ],
+            [
+              17,
+              2
+            ],
+            [
+              67,
+              2
+            ],
+            [
+              73,
+              2
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 103
+        }
+      },
+      {
+        "T": "-44617/16685",
+        "parameter_height": 44617,
+        "classification": "forced_non_generic_quartic_point",
+        "generic_intersection_sources": [],
+        "forced_non_generic_sources": [
+          "a10_sp01"
+        ],
+        "forced_points": [
+          {
+            "x": "2220283/16685",
+            "y": "-38631351516746139/13084293575",
+            "exact_quartic_membership_checked": true
+          }
+        ],
+        "exact_all_21_generic_abscissas_checked": true,
+        "exact_all_21_generic_jacobian_sign_pairs_checked": true,
+        "conductor_radical_proxy": {
+          "status": "completed",
+          "trial_prime_bound": 251,
+          "raw_log_absolute_homogenized_discriminant": 324.85555657024975,
+          "known_repeated_prime_log_savings": 45.336711690212944,
+          "log_radical_upper_proxy": 279.5188448800368,
+          "small_prime_valuations": [
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              20
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              19,
+              2
+            ],
+            [
+              23,
+              2
+            ],
+            [
+              199,
+              2
+            ]
+          ],
+          "unfactored_cofactor_decimal_digits": 114
+        }
+      }
+    ],
+    "exact_conductor_not_claimed": true
+  },
+  "target": {
+    "rank": 21,
+    "strict_log_conductor_bound": "182.72",
+    "hit": false,
+    "reason": "this artifact constructs and decontaminates candidates; exact conductor and rank certification are separate gated passes"
+  },
+  "reproduction": {
+    "command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/search_nagao_rank21_accidental_slices.py",
+    "actual_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/search_nagao_rank21_accidental_slices.py",
+    "python": "3.14.6",
+    "sympy": "1.14.0",
+    "pari_gp": "[2, 17, 4]",
+    "script_sha256": "edbc3c179e498cdf76426f4251ac0177cc7c3f1e59e405aba9a0a76c58da3258"
+  },
+  "wall_seconds": 51.963930124999024
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "status": "conditional_fixed_fiber_rank15_closure",
+  "target_hit": false,
+  "curve": {
+    "roots": [
+      0,
+      7,
+      121,
+      128,
+      183,
+      194
+    ],
+    "parameter": "490/9",
+    "minimal_model": [
+      1,
+      1,
+      1,
+      -1810583368399820921920335,
+      938908583466928681240876910771146965
+    ],
+    "conductor": "1468617013201344525723305189723172651230013579564220710",
+    "log_conductor": "124.723916172286085248539123900737052397933789893725888007165",
+    "root_number": -1,
+    "unconditional_algebraic_rank_lower_bound": 15
+  },
+  "explicit_formula": {
+    "delta": "11/5",
+    "support_prime_limit": 1007525,
+    "conductor": "1468617013201344525723305189723172651230013579564220710",
+    "log_conductor": "124.72391617228608524853912390073705239793378989372588800716525382625544612711258",
+    "prime_sum": "-51.889633296082293022285985330486907743290287080511075954657719978563197245617298",
+    "good_reduction_prime_sum": "-52.987248902669599488790078715379078072297910669092415670967924317263084490256368",
+    "bad_reduction_prime_sum": "1.0976156065873064665040933848921703290076235885813397163102043386998872446390697",
+    "prime_limit": 1007525,
+    "prime_count": 79057,
+    "prime_power_term_count": 79293,
+    "maximum_prime": 1007519,
+    "pari_milliseconds_after_curve_setup": 1741,
+    "archimedean_closed_form_contribution": "-0.066297585261396751831176694018569436575148494852651",
+    "explicit_formula_value_before_allowance": "16.198428146267943189040912406520595292878181947368",
+    "numerical_allowance": "0.001",
+    "conservative_explicit_formula_upper": "16.199428146267943189061729088232316978011125041145",
+    "strict_margin_below_17": "0.80057185373205681093827091176768302198887495885484"
+  },
+  "conclusion": {
+    "unconditional": "The exact finite-reduction certificate proves algebraic rank at least 15; this diagnostic proves no rank upper bound.",
+    "under_grh": "The conservative explicit-formula value is below 17. Root number -1 forces odd analytic rank, hence analytic rank is at most 15.",
+    "under_bsd_and_grh": "The algebraic rank is exactly 15.",
+    "search_priority": "Deprioritize hidden-point searches on this fixed fiber and search nearby specializations instead."
+  },
+  "provenance": {
+    "rank15_certificate": "artifacts/generated-results/elliptic_mestre_rank15_490_9.json",
+    "rank15_certificate_sha256": "50b2b9c8bd24bcb5533534446af6404f3a9a761b5f33e0e28e04dc572227f950",
+    "audited_formula_engine": "elliptic-curves/cas/explicit_formula_rank20_t5081_delta22.py",
+    "audited_formula_engine_sha256": "c33da285159adb34bd14dcd2caf5ebdd77bddf5454d0eb226ca44da8543a80b7",
+    "script": "elliptic-curves/cas/explicit_formula_mestre_rank15_490_9_delta22.py",
+    "script_sha256": "4b7149b8013de293c617c1054f11269a4cfafd9419647d112d42529f7b4101da",
+    "command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/explicit_formula_mestre_rank15_490_9_delta22.py",
+    "python": "3.14.6",
+    "pari_gp": "[2, 17, 4]",
+    "single_foreground_pari_call": true,
+    "no_retry": true
+  }
+}

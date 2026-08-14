@@ -1,0 +1,2479 @@
+{
+  "bounds": {
+    "calibration_timeout_seconds": 60.0,
+    "conductor_timeout_seconds_per_candidate": 45.0,
+    "pari_stack_bytes": 256000000,
+    "score_timeout_seconds_per_batch": 180.0
+  },
+  "conductor_errors": [],
+  "family": {
+    "constructor_parameter_convention": "q(X-T)q(X+T) uses T=2t=14721/188",
+    "discriminant_polynomial_degree": 20,
+    "discriminant_polynomial_fixed_23_valuation": 2,
+    "published_parameter_convention": "Nagao E_t uses t=14721/376",
+    "root_tuple": [
+      399,
+      380,
+      352,
+      47,
+      4,
+      0
+    ]
+  },
+  "final_conductor_records": [
+    {
+      "bad_primes_skipped": 6,
+      "below_strict_log_conductor_target": true,
+      "candidate_id": "nagao-rank21-neighbor-0030",
+      "constructor_parameter": "6041/198",
+      "curve": {
+        "conductor": 145328460619869332675274134603679094700304710569323416593094244808470369810,
+        "local_reduction": {
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "23": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "5": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          }
+        },
+        "log_conductor": "170.765123121845207336365931373408971283865412698311457441216",
+        "minimal_discriminant": -1528030345120708270774594828014399414508238741857656925396486942482604770951723470173406625983754240000,
+        "minimal_model": [
+          1,
+          0,
+          0,
+          -41588654762888705980260027671136780,
+          3264994735305925260508122808029618824104663574432400
+        ],
+        "root_number": 1
+      },
+      "good_primes_used": 1221,
+      "height": 6041,
+      "last_numerical_prime": 9973,
+      "local_checks": [
+        {
+          "forced_lower_bound": 4,
+          "label": "p5-record-lift",
+          "observed_discriminant_valuation": 4,
+          "prime": 5,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 4,
+          "label": "p7-record",
+          "observed_discriminant_valuation": 5,
+          "prime": 7,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 4,
+          "label": "p13-record",
+          "observed_discriminant_valuation": 4,
+          "prime": 13,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 3,
+          "label": "p17-record",
+          "observed_discriminant_valuation": 3,
+          "prime": 17,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 3,
+          "label": "p23-record",
+          "observed_discriminant_valuation": 3,
+          "prime": 23,
+          "proved_reduction_on_ball": "split multiplicative"
+        }
+      ],
+      "rank_claim": null,
+      "score": "75.206437560210640776614233822695722837151144935943775157957985818824096815530144",
+      "score_exceeds_published_rank21_at_final_cutoff": false
+    },
+    {
+      "bad_primes_skipped": 7,
+      "below_strict_log_conductor_target": false,
+      "candidate_id": "nagao-rank21-neighbor-0099",
+      "constructor_parameter": "14721/188",
+      "curve": {
+        "conductor": 26112076915897777815571388664430310998157918697219343275140810790098571234096793308930,
+        "local_reduction": {
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "23": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "5": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          }
+        },
+        "log_conductor": "196.679545735892153436755123293766307415183592453755792339164",
+        "minimal_discriminant": 479737754043767746536923774462246533556793859277365678757052823009411494064048885744243744500948985175040000,
+        "minimal_model": [
+          1,
+          1,
+          1,
+          -215843772422443922015169952702159835,
+          -19474361277787151947255961435459054151501792241320535
+        ],
+        "root_number": -1
+      },
+      "good_primes_used": 1220,
+      "height": 14721,
+      "last_numerical_prime": 9973,
+      "local_checks": [
+        {
+          "forced_lower_bound": 4,
+          "label": "p5-record-lift",
+          "observed_discriminant_valuation": 4,
+          "prime": 5,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 4,
+          "label": "p7-record",
+          "observed_discriminant_valuation": 4,
+          "prime": 7,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 4,
+          "label": "p13-record",
+          "observed_discriminant_valuation": 4,
+          "prime": 13,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 3,
+          "label": "p17-record",
+          "observed_discriminant_valuation": 3,
+          "prime": 17,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 3,
+          "label": "p23-record",
+          "observed_discriminant_valuation": 3,
+          "prime": 23,
+          "proved_reduction_on_ball": "split multiplicative"
+        }
+      ],
+      "rank_claim": null,
+      "score": "102.75159358685960476180398157575526326695950318408809646156209807845965541930736",
+      "score_exceeds_published_rank21_at_final_cutoff": false
+    },
+    {
+      "bad_primes_skipped": 7,
+      "below_strict_log_conductor_target": false,
+      "candidate_id": "nagao-rank21-neighbor-0107",
+      "constructor_parameter": "-16597/634",
+      "curve": {
+        "conductor": 169418614504135526252980143923327989413773487927418355724847147549983346815814230,
+        "local_reduction": {
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "23": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "5": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          }
+        },
+        "log_conductor": "184.734009914628864861899648777625454316645496073657108912089",
+        "minimal_discriminant": -1167021953275919993285892793364827310907137099837593069240051429867564063982585951490930016985582110894080000,
+        "minimal_model": [
+          1,
+          1,
+          1,
+          -8299244312978570718791638312226209875,
+          9202649144356408056382978847928941286394192127222833617
+        ],
+        "root_number": 1
+      },
+      "good_primes_used": 1220,
+      "height": 16597,
+      "last_numerical_prime": 9973,
+      "local_checks": [
+        {
+          "forced_lower_bound": 4,
+          "label": "p5-record-lift",
+          "observed_discriminant_valuation": 4,
+          "prime": 5,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 4,
+          "label": "p7-record",
+          "observed_discriminant_valuation": 4,
+          "prime": 7,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 4,
+          "label": "p13-record",
+          "observed_discriminant_valuation": 5,
+          "prime": 13,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 3,
+          "label": "p17-record",
+          "observed_discriminant_valuation": 3,
+          "prime": 17,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 3,
+          "label": "p23-record",
+          "observed_discriminant_valuation": 3,
+          "prime": 23,
+          "proved_reduction_on_ball": "split multiplicative"
+        }
+      ],
+      "rank_claim": null,
+      "score": "88.736665902717335476387047981817101358240684865868319484834494159099809380011160",
+      "score_exceeds_published_rank21_at_final_cutoff": false
+    },
+    {
+      "bad_primes_skipped": 10,
+      "below_strict_log_conductor_target": false,
+      "candidate_id": "nagao-rank21-neighbor-0092",
+      "constructor_parameter": "13083/4699",
+      "curve": {
+        "conductor": 10471344663004133109543782994432644123708720090586833842090567196276475635232831085427327399063087496316727280,
+        "local_reduction": {
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "23": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "5": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          }
+        },
+        "log_conductor": "251.027832490079296515613008760873701989683862451984714441884",
+        "minimal_discriminant": 40155888649085771014838924408921515476564873720623843320458492263485872133732802270862917551958264816022233558911826379024005697720533658240000,
+        "minimal_model": [
+          0,
+          -1,
+          0,
+          -3481073709043347060492829756118026270261913929600,
+          2499854388033176841963646618178130415535320439215441497719538117054370000
+        ],
+        "root_number": -1
+      },
+      "good_primes_used": 1217,
+      "height": 13083,
+      "last_numerical_prime": 9973,
+      "local_checks": [
+        {
+          "forced_lower_bound": 4,
+          "label": "p5-record-lift",
+          "observed_discriminant_valuation": 4,
+          "prime": 5,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 4,
+          "label": "p7-record",
+          "observed_discriminant_valuation": 4,
+          "prime": 7,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 4,
+          "label": "p13-record",
+          "observed_discriminant_valuation": 4,
+          "prime": 13,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 3,
+          "label": "p17-record",
+          "observed_discriminant_valuation": 3,
+          "prime": 17,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 3,
+          "label": "p23-record",
+          "observed_discriminant_valuation": 3,
+          "prime": 23,
+          "proved_reduction_on_ball": "split multiplicative"
+        }
+      ],
+      "rank_claim": null,
+      "score": "81.609811466105141815539059402267551540760832239733482254269292526253000753589469",
+      "score_exceeds_published_rank21_at_final_cutoff": false
+    },
+    {
+      "bad_primes_skipped": 6,
+      "below_strict_log_conductor_target": false,
+      "candidate_id": "nagao-rank21-neighbor-0058",
+      "constructor_parameter": "-8617/4724",
+      "curve": {
+        "conductor": 27811432375050933196491078663235720194371480613164815511996983395610730986595444029672989384164487785521710,
+        "local_reduction": {
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "23": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "5": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          }
+        },
+        "log_conductor": "245.096881937049452047671152172234555600180273590064805037588",
+        "minimal_discriminant": 3447357153201239127883532299632518448107739450099240499401957595530905389279353545740231037056455194022932450719565311380688734570240000,
+        "minimal_model": [
+          1,
+          -1,
+          1,
+          -14249776009046622382977131200034019970391003762,
+          654720784106325345148316965975798546534619858204560668490458938401649
+        ],
+        "root_number": -1
+      },
+      "good_primes_used": 1221,
+      "height": 8617,
+      "last_numerical_prime": 9973,
+      "local_checks": [
+        {
+          "forced_lower_bound": 4,
+          "label": "p5-record-lift",
+          "observed_discriminant_valuation": 4,
+          "prime": 5,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 4,
+          "label": "p7-record",
+          "observed_discriminant_valuation": 5,
+          "prime": 7,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 4,
+          "label": "p13-record",
+          "observed_discriminant_valuation": 4,
+          "prime": 13,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 3,
+          "label": "p17-record",
+          "observed_discriminant_valuation": 3,
+          "prime": 17,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 3,
+          "label": "p23-record",
+          "observed_discriminant_valuation": 3,
+          "prime": 23,
+          "proved_reduction_on_ball": "split multiplicative"
+        }
+      ],
+      "rank_claim": null,
+      "score": "76.548711663681777588749081515426012500004008075123944059722085851493261852568430",
+      "score_exceeds_published_rank21_at_final_cutoff": false
+    },
+    {
+      "bad_primes_skipped": 7,
+      "below_strict_log_conductor_target": false,
+      "candidate_id": "nagao-rank21-neighbor-0081",
+      "constructor_parameter": "10794/2857",
+      "curve": {
+        "conductor": 1215159887249844472695921709563357666263069891582423595727208232545810966665256395429034602388176690506105,
+        "local_reduction": {
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "23": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "5": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          }
+        },
+        "log_conductor": "241.966310426953835688692575866188350784152736518711985393387",
+        "minimal_discriminant": 40218113904361183588659663273738169988053034376069544050412000419990618072583568358044281196122275617842863084006377293963702208349375,
+        "minimal_model": [
+          1,
+          1,
+          1,
+          -4036688060977867584657629053046015819516038950,
+          98715153302121959928213517269995490107492617613358208721210454581892
+        ],
+        "root_number": -1
+      },
+      "good_primes_used": 1220,
+      "height": 10794,
+      "last_numerical_prime": 9973,
+      "local_checks": [
+        {
+          "forced_lower_bound": 4,
+          "label": "p5-record-lift",
+          "observed_discriminant_valuation": 4,
+          "prime": 5,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 4,
+          "label": "p7-record",
+          "observed_discriminant_valuation": 5,
+          "prime": 7,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 4,
+          "label": "p13-record",
+          "observed_discriminant_valuation": 5,
+          "prime": 13,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 3,
+          "label": "p17-record",
+          "observed_discriminant_valuation": 3,
+          "prime": 17,
+          "proved_reduction_on_ball": "split multiplicative"
+        },
+        {
+          "forced_lower_bound": 3,
+          "label": "p23-record",
+          "observed_discriminant_valuation": 3,
+          "prime": 23,
+          "proved_reduction_on_ball": "split multiplicative"
+        }
+      ],
+      "rank_claim": null,
+      "score": "74.527182873456660252610554499316866381738529666737564755532496577881216484767476",
+      "score_exceeds_published_rank21_at_final_cutoff": false
+    }
+  ],
+  "invocation": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/search_nagao_rank21_neighborhood.py",
+  "local_verification": [
+    {
+      "classification": {
+        "c4_mod_prime": 1,
+        "conductor_exponent": 1,
+        "double_root_mod_prime": 2,
+        "proof": "D vanishes on the ball, c4 is a unit modulo p, and the nodal tangent symbol depends only on T modulo p",
+        "reduction": "split multiplicative",
+        "split_multiplicative": true,
+        "tangent_legendre_symbol": 1,
+        "tangent_value_mod_prime": 1
+      },
+      "exponent": 1,
+      "forced_discriminant_valuation": 3,
+      "label": "p5-broad",
+      "modulus": 5,
+      "observed_exact_forced_discriminant_valuation": 3,
+      "prime": 5,
+      "residue": 2,
+      "use_in_search": false
+    },
+    {
+      "classification": {
+        "c4_mod_prime": 1,
+        "conductor_exponent": 1,
+        "double_root_mod_prime": 2,
+        "proof": "D vanishes on the ball, c4 is a unit modulo p, and the nodal tangent symbol depends only on T modulo p",
+        "reduction": "split multiplicative",
+        "split_multiplicative": true,
+        "tangent_legendre_symbol": 1,
+        "tangent_value_mod_prime": 1
+      },
+      "exponent": 2,
+      "forced_discriminant_valuation": 4,
+      "label": "p5-record-lift",
+      "modulus": 25,
+      "observed_exact_forced_discriminant_valuation": 4,
+      "prime": 5,
+      "residue": 17,
+      "use_in_search": true
+    },
+    {
+      "classification": {
+        "c4_mod_prime": 2,
+        "conductor_exponent": 1,
+        "double_root_mod_prime": 5,
+        "proof": "D vanishes on the ball, c4 is a unit modulo p, and the nodal tangent symbol depends only on T modulo p",
+        "reduction": "split multiplicative",
+        "split_multiplicative": true,
+        "tangent_legendre_symbol": 1,
+        "tangent_value_mod_prime": 1
+      },
+      "exponent": 1,
+      "forced_discriminant_valuation": 4,
+      "label": "p7-record",
+      "modulus": 7,
+      "observed_exact_forced_discriminant_valuation": 4,
+      "prime": 7,
+      "residue": 0,
+      "use_in_search": true
+    },
+    {
+      "classification": {
+        "c4_mod_prime": 3,
+        "conductor_exponent": 1,
+        "double_root_mod_prime": 9,
+        "proof": "D vanishes on the ball, c4 is a unit modulo p, and the nodal tangent symbol depends only on T modulo p",
+        "reduction": "split multiplicative",
+        "split_multiplicative": true,
+        "tangent_legendre_symbol": 1,
+        "tangent_value_mod_prime": 1
+      },
+      "exponent": 1,
+      "forced_discriminant_valuation": 4,
+      "label": "p13-record",
+      "modulus": 13,
+      "observed_exact_forced_discriminant_valuation": 4,
+      "prime": 13,
+      "residue": 3,
+      "use_in_search": true
+    },
+    {
+      "classification": {
+        "c4_mod_prime": 13,
+        "conductor_exponent": 1,
+        "double_root_mod_prime": 5,
+        "proof": "D vanishes on the ball, c4 is a unit modulo p, and the nodal tangent symbol depends only on T modulo p",
+        "reduction": "split multiplicative",
+        "split_multiplicative": true,
+        "tangent_legendre_symbol": 1,
+        "tangent_value_mod_prime": 15
+      },
+      "exponent": 1,
+      "forced_discriminant_valuation": 3,
+      "label": "p17-record",
+      "modulus": 17,
+      "observed_exact_forced_discriminant_valuation": 3,
+      "prime": 17,
+      "residue": 16,
+      "use_in_search": true
+    },
+    {
+      "classification": {
+        "c4_mod_prime": 13,
+        "conductor_exponent": 1,
+        "double_root_mod_prime": 12,
+        "proof": "D vanishes on the ball, c4 is a unit modulo p, and the nodal tangent symbol depends only on T modulo p",
+        "reduction": "split multiplicative",
+        "split_multiplicative": true,
+        "tangent_legendre_symbol": 1,
+        "tangent_value_mod_prime": 13
+      },
+      "exponent": 1,
+      "forced_discriminant_valuation": 3,
+      "label": "p23-record",
+      "modulus": 23,
+      "observed_exact_forced_discriminant_valuation": 3,
+      "prime": 23,
+      "residue": 6,
+      "use_in_search": true
+    }
+  ],
+  "neighborhood": {
+    "coefficient_radius": 12,
+    "definition": "every nonzero integer coefficient pair (i,j) in [-R,R]^2 in the exact Gauss-reduced basis, quotiented by primitive normalization and simultaneous sign; zero-denominator, nonunit-denominator, T=0, and singular specializations removed",
+    "distinct_primitive_nonsingular_parameters": 110,
+    "maximum_height": 19649,
+    "minimum_height": 763,
+    "published_parameter_in_neighborhood": true,
+    "raw_nonzero_coefficient_pairs": 624
+  },
+  "primary_source": "https://da.lib.kobe-u.ac.jp/da/kernel/E0003610/E0003610.pdf",
+  "published_record_calibration": {
+    "all_printed_points_on_printed_model": true,
+    "constructor_parameter": "14721/188",
+    "factor_two_identity_checked": true,
+    "factorization_product_checked": true,
+    "pari_replay": {
+      "conductor": 26112076915897777815571388664430310998157918697219343275140810790098571234096793308930,
+      "local_reduction": {
+        "13": {
+          "conductor_exponent": 1,
+          "ellap": 1,
+          "kodaira_code": 8,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 4,
+          "tamagawa_number": 4
+        },
+        "17": {
+          "conductor_exponent": 1,
+          "ellap": 1,
+          "kodaira_code": 7,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 3,
+          "tamagawa_number": 3
+        },
+        "23": {
+          "conductor_exponent": 1,
+          "ellap": 1,
+          "kodaira_code": 7,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 3,
+          "tamagawa_number": 3
+        },
+        "5": {
+          "conductor_exponent": 1,
+          "ellap": 1,
+          "kodaira_code": 8,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 4,
+          "tamagawa_number": 4
+        },
+        "7": {
+          "conductor_exponent": 1,
+          "ellap": 1,
+          "kodaira_code": 8,
+          "minimal_c4_valuation": 0,
+          "minimal_discriminant_valuation": 4,
+          "tamagawa_number": 4
+        }
+      },
+      "log_conductor": "196.679545735892153436755123293766307415183592453755792339164",
+      "minimal_discriminant": 479737754043767746536923774462246533556793859277365678757052823009411494064048885744243744500948985175040000,
+      "minimal_model": [
+        1,
+        1,
+        1,
+        -215843772422443922015169952702159835,
+        -19474361277787151947255961435459054151501792241320535
+      ],
+      "root_number": -1
+    },
+    "pari_replay_matches_printed_model_and_conductor": true,
+    "printed_conductor": 26112076915897777815571388664430310998157918697219343275140810790098571234096793308930,
+    "printed_conductor_factorization": [
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        17,
+        1
+      ],
+      [
+        23,
+        1
+      ],
+      [
+        47,
+        1
+      ],
+      [
+        4507,
+        1
+      ],
+      [
+        115482611374267602141168398241396608699381902319617225736297616061235976719,
+        1
+      ]
+    ],
+    "printed_model": [
+      1,
+      1,
+      1,
+      -215843772422443922015169952702159835,
+      -19474361277787151947255961435459054151501792241320535
+    ],
+    "printed_points_checked_exactly": 21,
+    "published_independence_status": "Nagao's independence result is cited; this neighborhood search does not provide a new independence proof",
+    "published_parameter_notation": "14721/376",
+    "scores": {
+      "10000": {
+        "bad_primes_skipped": 7,
+        "good_primes_used": 1220,
+        "last_numerical_prime": 9973,
+        "score": "102.75159358685960476180398157575526326695950318408809646156209807845965541930736"
+      },
+      "200": {
+        "bad_primes_skipped": 6,
+        "good_primes_used": 38,
+        "last_numerical_prime": 199,
+        "score": "24.275266318349118370224806960045943141677139079511638171799232050745960227088422"
+      },
+      "2000": {
+        "bad_primes_skipped": 6,
+        "good_primes_used": 295,
+        "last_numerical_prime": 1999,
+        "score": "69.051056159370374085129336541704872079789171217391447583377798690975190567451235"
+      }
+    }
+  },
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/search_nagao_rank21_neighborhood.py",
+  "schema_version": 1,
+  "script_sha256": "cbb8b665a55dc272e38fb75a4c82ad291a2f5305884db06f0b577e8867d3b8b5",
+  "search_profile": {
+    "conditions": [
+      {
+        "exponent": 2,
+        "forced_discriminant_valuation": 4,
+        "label": "p5-record-lift",
+        "prime": 5,
+        "residue": 17,
+        "use_in_search": true
+      },
+      {
+        "exponent": 1,
+        "forced_discriminant_valuation": 4,
+        "label": "p7-record",
+        "prime": 7,
+        "residue": 0,
+        "use_in_search": true
+      },
+      {
+        "exponent": 1,
+        "forced_discriminant_valuation": 4,
+        "label": "p13-record",
+        "prime": 13,
+        "residue": 3,
+        "use_in_search": true
+      },
+      {
+        "exponent": 1,
+        "forced_discriminant_valuation": 3,
+        "label": "p17-record",
+        "prime": 17,
+        "residue": 16,
+        "use_in_search": true
+      },
+      {
+        "exponent": 1,
+        "forced_discriminant_valuation": 3,
+        "label": "p23-record",
+        "prime": 23,
+        "residue": 6,
+        "use_in_search": true
+      }
+    ],
+    "crt_modulus": 889525,
+    "crt_residue": 354942,
+    "gauss_reduced_basis": [
+      [
+        -763,
+        -614
+      ],
+      [
+        -938,
+        411
+      ]
+    ],
+    "local_power_savings_proxy": 30.298307376823583,
+    "published_constructor_parameter_satisfies_profile": true
+  },
+  "selection_protocol": {
+    "keep_counts": [
+      32,
+      12,
+      6
+    ],
+    "leakage_control": "each score cutoff sees only survivors retained at the prior cutoff; conductor and root-number work is final-stage only",
+    "rank_work": "none",
+    "score": "sum over good numerical primes 5<=p<=cutoff of ((2-a_p)/(p+1-a_p))*log(p)",
+    "stages": [
+      200,
+      2000,
+      10000
+    ]
+  },
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6",
+    "python_implementation": "CPython"
+  },
+  "stages": [
+    {
+      "cutoff": 200,
+      "keep_count": 32,
+      "population_scored": 110,
+      "ranked_population": [
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0099",
+          "constructor_parameter": "14721/188",
+          "good_primes_used": 38,
+          "height": 14721,
+          "last_numerical_prime": 199,
+          "score": "24.275266318349118370224806960045943141677139079511638171799232050745960227088422"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0107",
+          "constructor_parameter": "-16597/634",
+          "good_primes_used": 38,
+          "height": 16597,
+          "last_numerical_prime": 199,
+          "score": "23.868955912519630805065735258302472714212581466757993014419194730699884619053162"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-rank21-neighbor-0073",
+          "constructor_parameter": "10031/2243",
+          "good_primes_used": 39,
+          "height": 10031,
+          "last_numerical_prime": 199,
+          "score": "22.779896717625316488712446699797306546310365554195394729823098536255307212775246"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0086",
+          "constructor_parameter": "-11319/218",
+          "good_primes_used": 37,
+          "height": 11319,
+          "last_numerical_prime": 199,
+          "score": "22.396618604930910093108035394083699687257068669916884945795992655450467550862641"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0055",
+          "constructor_parameter": "301/8403",
+          "good_primes_used": 38,
+          "height": 8403,
+          "last_numerical_prime": 199,
+          "score": "22.138977075468664333419313188982317567627434341956845811715792673392639685639569"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-rank21-neighbor-0032",
+          "constructor_parameter": "651/6353",
+          "good_primes_used": 39,
+          "height": 6353,
+          "last_numerical_prime": 199,
+          "score": "22.115663147106752087275336879787473640433148299650390921036346995599260469813247"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0021",
+          "constructor_parameter": "2527/5531",
+          "good_primes_used": 37,
+          "height": 5531,
+          "last_numerical_prime": 199,
+          "score": "21.677682060983387940593143641284227321766593970170139468346162646660609670132853"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0050",
+          "constructor_parameter": "7742/401",
+          "good_primes_used": 36,
+          "height": 7742,
+          "last_numerical_prime": 199,
+          "score": "21.454586586355247379977917623278331574432112929938436270128405403503867418131792"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-rank21-neighbor-0006",
+          "constructor_parameter": "1351/2253",
+          "good_primes_used": 39,
+          "height": 2253,
+          "last_numerical_prime": 199,
+          "score": "21.435061612632974854101753904611806441782101780520693192025899909865266448938657"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0061",
+          "constructor_parameter": "1064/9017",
+          "good_primes_used": 36,
+          "height": 9017,
+          "last_numerical_prime": 199,
+          "score": "21.224259847781579166606779927234732108568337586061092284167960377207831671487957"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-rank21-neighbor-0092",
+          "constructor_parameter": "13083/4699",
+          "good_primes_used": 35,
+          "height": 13083,
+          "last_numerical_prime": 199,
+          "score": "21.200610685607171844248234254482746674087842258315992716108012885221991182315601"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-rank21-neighbor-0071",
+          "constructor_parameter": "-9793/1446",
+          "good_primes_used": 39,
+          "height": 9793,
+          "last_numerical_prime": 199,
+          "score": "21.175931810143481626855096674271973687085790751428057345452611431962071724845812"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0083",
+          "constructor_parameter": "-11081/3907",
+          "good_primes_used": 38,
+          "height": 11081,
+          "last_numerical_prime": 199,
+          "score": "21.127046253138726940423007011380899175164720972308916840079975418725536729006974"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0067",
+          "constructor_parameter": "9443/604",
+          "good_primes_used": 36,
+          "height": 9443,
+          "last_numerical_prime": 199,
+          "score": "20.997966133594244288220146820951486085700544551343186192050056308395056593212418"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0057",
+          "constructor_parameter": "-2338/8611",
+          "good_primes_used": 36,
+          "height": 8611,
+          "last_numerical_prime": 199,
+          "score": "20.981685435029230757672738128621316860032894738667318020702724160792828919298081"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0008",
+          "constructor_parameter": "413/2664",
+          "good_primes_used": 37,
+          "height": 2664,
+          "last_numerical_prime": 199,
+          "score": "20.894372696393827993428646653456706871655952410890170772933370419855389421384364"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0002",
+          "constructor_parameter": "-938/411",
+          "good_primes_used": 36,
+          "height": 938,
+          "last_numerical_prime": 199,
+          "score": "20.883505189077842098283028946558076985488464469228920632401832300164610783112171"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0041",
+          "constructor_parameter": "-7091/5952",
+          "good_primes_used": 36,
+          "height": 7091,
+          "last_numerical_prime": 199,
+          "score": "20.880392692761847018034830123302910602435537906966986469117744955827186247949305"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0030",
+          "constructor_parameter": "6041/198",
+          "good_primes_used": 38,
+          "height": 6041,
+          "last_numerical_prime": 199,
+          "score": "20.825983888550263122423544785283833633441735861549947931499868725446346668746581"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-rank21-neighbor-0058",
+          "constructor_parameter": "-8617/4724",
+          "good_primes_used": 39,
+          "height": 8617,
+          "last_numerical_prime": 199,
+          "score": "20.768427833626071964872886987876892764458328407937677799878309060748635943697171"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0081",
+          "constructor_parameter": "10794/2857",
+          "good_primes_used": 38,
+          "height": 10794,
+          "last_numerical_prime": 199,
+          "score": "20.704037168214234134140657940403207251568531030486485564208929033484320821432532"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0051",
+          "constructor_parameter": "-462/7789",
+          "good_primes_used": 38,
+          "height": 7789,
+          "last_numerical_prime": 199,
+          "score": "20.619518109446733002287410799722866481102844810220198543463318595041519282812395"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0062",
+          "constructor_parameter": "9093/2654",
+          "good_primes_used": 37,
+          "height": 9093,
+          "last_numerical_prime": 199,
+          "score": "20.519978952592762118593794815417671107025792272368639787348216297201289581857345"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0074",
+          "constructor_parameter": "889/10042",
+          "good_primes_used": 36,
+          "height": 10042,
+          "last_numerical_prime": 199,
+          "score": "20.418089032698425624785861567724800814605173149806974480652174024607240058370878"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-rank21-neighbor-0082",
+          "constructor_parameter": "10969/1832",
+          "good_primes_used": 39,
+          "height": 10969,
+          "last_numerical_prime": 199,
+          "score": "20.315538739846386510795274481567002468426997465293384730200988895572900153357118"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-rank21-neighbor-0028",
+          "constructor_parameter": "1589/5942",
+          "good_primes_used": 39,
+          "height": 5942,
+          "last_numerical_prime": 199,
+          "score": "20.161039830832301144907506571365528030306868410797043652850587977238848951860626"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0012",
+          "constructor_parameter": "2877/3481",
+          "good_primes_used": 38,
+          "height": 3481,
+          "last_numerical_prime": 199,
+          "score": "20.117445189948021741512066486195973645975409429783244168060978077205452889914631"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0029",
+          "constructor_parameter": "-2751/5947",
+          "good_primes_used": 38,
+          "height": 5947,
+          "last_numerical_prime": 199,
+          "score": "20.000890543892729432773092316838458980713823278122613582276642176367902663129914"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-rank21-neighbor-0036",
+          "constructor_parameter": "6692/6551",
+          "good_primes_used": 39,
+          "height": 6692,
+          "last_numerical_prime": 199,
+          "score": "19.826441420262363090660902445823204878790257753378574330232595436656475229885312"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0085",
+          "constructor_parameter": "11207/5521",
+          "good_primes_used": 37,
+          "height": 11207,
+          "last_numerical_prime": 199,
+          "score": "19.736038403128742079173101389259062207510268665656749023905357646110247240312169"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0003",
+          "constructor_parameter": "-1113/1436",
+          "good_primes_used": 38,
+          "height": 1436,
+          "last_numerical_prime": 199,
+          "score": "19.729870994011613715082284673750521129448849035829190964612520545545932506697055"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0017",
+          "constructor_parameter": "5166/5323",
+          "good_primes_used": 38,
+          "height": 5323,
+          "last_numerical_prime": 199,
+          "score": "19.662961423304805067984313146757941486307054417338464622480620205161474029069628"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-rank21-neighbor-0039",
+          "constructor_parameter": "1414/6967",
+          "good_primes_used": 39,
+          "height": 6967,
+          "last_numerical_prime": 199,
+          "score": "19.642731165838516491025119524229169536946826345678678822596713462164278457629223"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0108",
+          "constructor_parameter": "17773/2644",
+          "good_primes_used": 37,
+          "height": 17773,
+          "last_numerical_prime": 199,
+          "score": "19.640580428104290775749377303608626463193934202161051872862104429011153939872204"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0056",
+          "constructor_parameter": "-4039/8408",
+          "good_primes_used": 37,
+          "height": 8408,
+          "last_numerical_prime": 199,
+          "score": "19.605666797529981502527305167514378525856391989961100016228120510678529576287585"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-rank21-neighbor-0045",
+          "constructor_parameter": "4816/7373",
+          "good_primes_used": 34,
+          "height": 7373,
+          "last_numerical_prime": 199,
+          "score": "19.580937158790174805744086265525268803530960782509483535117276223007708730275443"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0059",
+          "constructor_parameter": "-8792/5749",
+          "good_primes_used": 37,
+          "height": 8792,
+          "last_numerical_prime": 199,
+          "score": "19.570101619002092544379633822182961219125992583684530706584440132543901268574184"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0043",
+          "constructor_parameter": "-7266/6977",
+          "good_primes_used": 37,
+          "height": 7266,
+          "last_numerical_prime": 199,
+          "score": "19.540697278239050237998020346271285673552769206163566611167107557838536179219076"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0095",
+          "constructor_parameter": "14021/4288",
+          "good_primes_used": 36,
+          "height": 14021,
+          "last_numerical_prime": 199,
+          "score": "19.475185119008415581756951653539051923239963547925956950218801229898432005240573"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0093",
+          "constructor_parameter": "13433/2649",
+          "good_primes_used": 38,
+          "height": 13433,
+          "last_numerical_prime": 199,
+          "score": "19.416848390658075317182224339111617853819526341960580499165587630462641288162476"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0023",
+          "constructor_parameter": "5691/2248",
+          "good_primes_used": 38,
+          "height": 5691,
+          "last_numerical_prime": 199,
+          "score": "19.355217640892438010032000553078117980839852687491382005394066447041552188873749"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0015",
+          "constructor_parameter": "63/4714",
+          "good_primes_used": 36,
+          "height": 4714,
+          "last_numerical_prime": 199,
+          "score": "19.343841593828106919251803389820703997636831465003943729158476211567633768268857"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0013",
+          "constructor_parameter": "-3577/619",
+          "good_primes_used": 38,
+          "height": 3577,
+          "last_numerical_prime": 199,
+          "score": "19.342368973100374048125010390999127098054085189689488088698717912760695031657066"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0005",
+          "constructor_parameter": "-2051/1847",
+          "good_primes_used": 38,
+          "height": 2051,
+          "last_numerical_prime": 199,
+          "score": "19.329494863810150412888831983049372810158348959559560102838926194100122277370637"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0004",
+          "constructor_parameter": "588/1639",
+          "good_primes_used": 36,
+          "height": 1639,
+          "last_numerical_prime": 199,
+          "score": "19.290283090272704997708863540419569388230352578650896329825221786141755150276942"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-rank21-neighbor-0020",
+          "constructor_parameter": "5516/3273",
+          "good_primes_used": 39,
+          "height": 5516,
+          "last_numerical_prime": 199,
+          "score": "19.246545069638955936385027634569336711577713293363462507780070079215957122106493"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-rank21-neighbor-0094",
+          "constructor_parameter": "13783/599",
+          "good_primes_used": 35,
+          "height": 13783,
+          "last_numerical_prime": 199,
+          "score": "19.243370804017413146670920876947654241883619879222249151503791440063762341496213"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0063",
+          "constructor_parameter": "9268/1629",
+          "good_primes_used": 37,
+          "height": 9268,
+          "last_numerical_prime": 199,
+          "score": "19.226842268490948321550459304149184987930140540402254307552223929919167960809519"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0035",
+          "constructor_parameter": "6629/1837",
+          "good_primes_used": 37,
+          "height": 6629,
+          "last_numerical_prime": 199,
+          "score": "19.224971320836992416982589145927512403091763704834951409107061660971267078331989"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0066",
+          "constructor_parameter": "-4214/9433",
+          "good_primes_used": 36,
+          "height": 9433,
+          "last_numerical_prime": 199,
+          "score": "19.146883842906983557093288346026416625398918248131390125971166018913185077200214"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0098",
+          "constructor_parameter": "14546/1213",
+          "good_primes_used": 38,
+          "height": 14546,
+          "last_numerical_prime": 199,
+          "score": "19.113294674405113898159414853810472264619788795813862293068695760697680622137941"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0025",
+          "constructor_parameter": "-5803/3491",
+          "good_primes_used": 37,
+          "height": 5803,
+          "last_numerical_prime": 199,
+          "score": "19.087724626625723595574133879762141812022286194658344261458594417386173338146503"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0078",
+          "constructor_parameter": "-49/10453",
+          "good_primes_used": 37,
+          "height": 10453,
+          "last_numerical_prime": 199,
+          "score": "19.084995161641912614912264814100499265878624582601512905194380137468104762292983"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0075",
+          "constructor_parameter": "10094/6957",
+          "good_primes_used": 38,
+          "height": 10094,
+          "last_numerical_prime": 199,
+          "score": "19.067087327295942437362545440834435859695265622655938456876088537112276664845796"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0033",
+          "constructor_parameter": "-6391/1852",
+          "good_primes_used": 38,
+          "height": 6391,
+          "last_numerical_prime": 199,
+          "score": "19.059934957476991225824920816671726656439893197626586551135276463902937897535355"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0010",
+          "constructor_parameter": "-2989/2258",
+          "good_primes_used": 36,
+          "height": 2989,
+          "last_numerical_prime": 199,
+          "score": "18.937583856631562998332824658936450104644782169175298348372682849567366637499351"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-rank21-neighbor-0109",
+          "constructor_parameter": "17948/1619",
+          "good_primes_used": 34,
+          "height": 17948,
+          "last_numerical_prime": 199,
+          "score": "18.873813787362689970320461871785041122049004772629383474784505441057850012512109"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0060",
+          "constructor_parameter": "-4977/8819",
+          "good_primes_used": 36,
+          "height": 8819,
+          "last_numerical_prime": 199,
+          "score": "18.852919720278249303613830253697290434137340333926903944984454901332537024588632"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0105",
+          "constructor_parameter": "16072/2441",
+          "good_primes_used": 38,
+          "height": 16072,
+          "last_numerical_prime": 199,
+          "score": "18.823295670036966289177242283717252640742679720224004314861520196240635662503383"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0024",
+          "constructor_parameter": "-112/5739",
+          "good_primes_used": 38,
+          "height": 5739,
+          "last_numerical_prime": 199,
+          "score": "18.788598364935621989933088934143978558692178086435879547968935489613378591423704"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0011",
+          "constructor_parameter": "3227/1431",
+          "good_primes_used": 38,
+          "height": 3227,
+          "last_numerical_prime": 199,
+          "score": "18.715227718124803033429029014225222853735887015719443519239855360398573069503249"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0014",
+          "constructor_parameter": "-2401/3897",
+          "good_primes_used": 38,
+          "height": 3897,
+          "last_numerical_prime": 199,
+          "score": "18.680723455230541650456533394351422066699639042401180182764865388818357773159201"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0027",
+          "constructor_parameter": "5929/5937",
+          "good_primes_used": 36,
+          "height": 5937,
+          "last_numerical_prime": 199,
+          "score": "18.602901662555577949495972020130693750269093662460690986761976881678783058699803"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0047",
+          "constructor_parameter": "-2163/7586",
+          "good_primes_used": 37,
+          "height": 7586,
+          "last_numerical_prime": 199,
+          "score": "18.579176691457053229859536716783440091101773568210936796192254541223746078514740"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0016",
+          "constructor_parameter": "4753/2659",
+          "good_primes_used": 38,
+          "height": 4753,
+          "last_numerical_prime": 199,
+          "score": "18.422101304798138840082981061281997513847947315048986843054611109848147794721358"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0084",
+          "constructor_parameter": "11144/807",
+          "good_primes_used": 37,
+          "height": 11144,
+          "last_numerical_prime": 199,
+          "score": "18.383625578789457335178507819801027901046590916409771028580900694663574764554814"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0088",
+          "constructor_parameter": "-2863/11686",
+          "good_primes_used": 38,
+          "height": 11686,
+          "last_numerical_prime": 199,
+          "score": "18.365763146917401240654084347168339320388500421660528008437439486946825208026444"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0053",
+          "constructor_parameter": "-7441/8002",
+          "good_primes_used": 38,
+          "height": 8002,
+          "last_numerical_prime": 199,
+          "score": "18.353638466846467016626929557430202723179508242175047653066483898994385781252659"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-rank21-neighbor-0070",
+          "constructor_parameter": "-2513/9636",
+          "good_primes_used": 35,
+          "height": 9636,
+          "last_numerical_prime": 199,
+          "score": "18.347955660090716283976679870965232479079283024750625113298512941563693607090389"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0026",
+          "constructor_parameter": "5866/1223",
+          "good_primes_used": 38,
+          "height": 5866,
+          "last_numerical_prime": 199,
+          "score": "18.267366906076450169604275350464450937002496636176290197503952281546910475209809"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0076",
+          "constructor_parameter": "10269/5932",
+          "good_primes_used": 38,
+          "height": 10269,
+          "last_numerical_prime": 199,
+          "score": "18.231026548760748586832690067907528596481997104791347639006364144666535283247003"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0072",
+          "constructor_parameter": "-812/9839",
+          "good_primes_used": 36,
+          "height": 9839,
+          "last_numerical_prime": 199,
+          "score": "18.219834285787275723990428092961197612904127487706222358463074095619713936323398"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0080",
+          "constructor_parameter": "10619/3882",
+          "good_primes_used": 38,
+          "height": 10619,
+          "last_numerical_prime": 199,
+          "score": "18.211208990795160757287864928300563162049885596739189812868471470816548279301037"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0007",
+          "constructor_parameter": "2464/817",
+          "good_primes_used": 36,
+          "height": 2464,
+          "last_numerical_prime": 199,
+          "score": "18.195459711648468507731399217237957698028849397100611347977689878253684225039179"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0031",
+          "constructor_parameter": "-6216/827",
+          "good_primes_used": 38,
+          "height": 6216,
+          "last_numerical_prime": 199,
+          "score": "17.968600488758870357096639557218466190395947231616232977378181191924018359773075"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0034",
+          "constructor_parameter": "-1988/6561",
+          "good_primes_used": 38,
+          "height": 6561,
+          "last_numerical_prime": 199,
+          "score": "17.844653953200240180198137862779099477037035811657428194474547593625651364466912"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0110",
+          "constructor_parameter": "19649/1822",
+          "good_primes_used": 37,
+          "height": 19649,
+          "last_numerical_prime": 199,
+          "score": "17.723623710770423069540361762518160917777140591838407626353118987690043847225852"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0090",
+          "constructor_parameter": "-1162/11889",
+          "good_primes_used": 38,
+          "height": 11889,
+          "last_numerical_prime": 199,
+          "score": "17.648311135738222358684491635952413561459981661011875307906282132623146639320030"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0101",
+          "constructor_parameter": "14959/3877",
+          "good_primes_used": 37,
+          "height": 14959,
+          "last_numerical_prime": 199,
+          "score": "17.639931924044830023729076615825496941624423232382443073461609094019223746466418"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0040",
+          "constructor_parameter": "-6979/213",
+          "good_primes_used": 37,
+          "height": 6979,
+          "last_numerical_prime": 199,
+          "score": "17.610694903204915970000081875257837840212952268742915351709692548998638353696480"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0097",
+          "constructor_parameter": "14371/2238",
+          "good_primes_used": 36,
+          "height": 14371,
+          "last_numerical_prime": 199,
+          "score": "17.539779518139863044670521247857173409074240870106095238721971220737566339209489"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-rank21-neighbor-0009",
+          "constructor_parameter": "2114/2867",
+          "good_primes_used": 35,
+          "height": 2867,
+          "last_numerical_prime": 199,
+          "score": "17.461617716163773052911821099761309154705165481987435652120608498764155326113081"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-rank21-neighbor-0100",
+          "constructor_parameter": "-14896/837",
+          "good_primes_used": 35,
+          "height": 14896,
+          "last_numerical_prime": 199,
+          "score": "17.456168961442815699907297209682006946784806437531991277213032498367919629350016"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0052",
+          "constructor_parameter": "-3101/7997",
+          "good_primes_used": 38,
+          "height": 7997,
+          "last_numerical_prime": 199,
+          "score": "17.308045228165201475005322731441525451927671682149119866578036403297786434145287"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0103",
+          "constructor_parameter": "15722/4491",
+          "good_primes_used": 38,
+          "height": 15722,
+          "last_numerical_prime": 199,
+          "score": "17.276121917516425653139684783098370766957721909143564430719212738917647771633313"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0054",
+          "constructor_parameter": "8218/7779",
+          "good_primes_used": 37,
+          "height": 8218,
+          "last_numerical_prime": 199,
+          "score": "17.268700095402778298519493486850040074742294210691829027488983405581758608118740"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0087",
+          "constructor_parameter": "-11494/1243",
+          "good_primes_used": 37,
+          "height": 11494,
+          "last_numerical_prime": 199,
+          "score": "17.223989193936979739240648784419743187303504511484849540610788570006892609556292"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-rank21-neighbor-0069",
+          "constructor_parameter": "1827/9631",
+          "good_primes_used": 34,
+          "height": 9631,
+          "last_numerical_prime": 199,
+          "score": "17.177210200086037972570665172212726290987870572126167664381320187405546981463255"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-rank21-neighbor-0068",
+          "constructor_parameter": "-9618/421",
+          "good_primes_used": 39,
+          "height": 9618,
+          "last_numerical_prime": 199,
+          "score": "17.119708955540842873179261308712317060719901054713046522960456387584344486038472"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0065",
+          "constructor_parameter": "4466/9423",
+          "good_primes_used": 36,
+          "height": 9423,
+          "last_numerical_prime": 199,
+          "score": "17.094603066550907589944148322198383277232510018732219658834146606020191678032120"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0102",
+          "constructor_parameter": "-15659/223",
+          "good_primes_used": 37,
+          "height": 15659,
+          "last_numerical_prime": 199,
+          "score": "16.993349978321360573141598748343141054905332526150679575253761538543400794320742"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0044",
+          "constructor_parameter": "-7329/2263",
+          "good_primes_used": 37,
+          "height": 7329,
+          "last_numerical_prime": 199,
+          "score": "16.887777454630643256762912284013928156681689640782020555932752451293037098588165"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-rank21-neighbor-0048",
+          "constructor_parameter": "-6503/7591",
+          "good_primes_used": 35,
+          "height": 7591,
+          "last_numerical_prime": 199,
+          "score": "16.887732743504135234916258879393334290243466022168511856809876137713512395493361"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0077",
+          "constructor_parameter": "10381/193",
+          "good_primes_used": 36,
+          "height": 10381,
+          "last_numerical_prime": 199,
+          "score": "16.884349048128204829863440741951025954503314395631001528588282918096105308027468"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0042",
+          "constructor_parameter": "7217/3476",
+          "good_primes_used": 36,
+          "height": 7217,
+          "last_numerical_prime": 199,
+          "score": "16.783244940037829478413051960901378096667416722356002845288794626363510198099955"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0049",
+          "constructor_parameter": "-7679/4313",
+          "good_primes_used": 38,
+          "height": 7679,
+          "last_numerical_prime": 199,
+          "score": "16.730167898537661233118627780151430213537123192223132295302301869283643703217722"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0037",
+          "constructor_parameter": "-6741/3902",
+          "good_primes_used": 38,
+          "height": 6741,
+          "last_numerical_prime": 199,
+          "score": "16.718596521430383560111031540395457034626426780581755543816701880339373988567950"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0018",
+          "constructor_parameter": "-3514/5333",
+          "good_primes_used": 38,
+          "height": 5333,
+          "last_numerical_prime": 199,
+          "score": "16.693128370215321587331212970854186812598891389314417338768715731810946358967404"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-rank21-neighbor-0046",
+          "constructor_parameter": "6517/7576",
+          "good_primes_used": 35,
+          "height": 7576,
+          "last_numerical_prime": 199,
+          "score": "16.551041854174835446397697453098138131316482884624891036415654796112246047378060"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-rank21-neighbor-0089",
+          "constructor_parameter": "-11844/3293",
+          "good_primes_used": 35,
+          "height": 11844,
+          "last_numerical_prime": 199,
+          "score": "16.518093701138970578777596614434422580848341830849543128837297237973607565575324"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0079",
+          "constructor_parameter": "-10493/5546",
+          "good_primes_used": 37,
+          "height": 10493,
+          "last_numerical_prime": 199,
+          "score": "16.419714076452752322857825673582221475382484069459217828551193291781758287615073"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0106",
+          "constructor_parameter": "16247/1416",
+          "good_primes_used": 36,
+          "height": 16247,
+          "last_numerical_prime": 199,
+          "score": "16.191239635214379673281040859365522547093802756357795046857630676268767322225138"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0064",
+          "constructor_parameter": "9331/6343",
+          "good_primes_used": 36,
+          "height": 9331,
+          "last_numerical_prime": 199,
+          "score": "16.085951849340109060533280703857981814194859319841904260107853702922666560291761"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0001",
+          "constructor_parameter": "763/614",
+          "good_primes_used": 37,
+          "height": 763,
+          "last_numerical_prime": 199,
+          "score": "15.984517143418038711108263465067786750766643857890662750784127927908095771917554"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0091",
+          "constructor_parameter": "-12607/2679",
+          "good_primes_used": 36,
+          "height": 12607,
+          "last_numerical_prime": 199,
+          "score": "15.853675115010185450961719076119397535700835063967141380258243503632951215942668"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0104",
+          "constructor_parameter": "15897/3466",
+          "good_primes_used": 36,
+          "height": 15897,
+          "last_numerical_prime": 199,
+          "score": "15.740087747285342304273248435119056019199985290243367308082008268559661471429186"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-rank21-neighbor-0022",
+          "constructor_parameter": "-1813/5536",
+          "good_primes_used": 34,
+          "height": 5536,
+          "last_numerical_prime": 199,
+          "score": "15.585345227355900317140575241008913746513385042073109905424628823394216645154824"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-rank21-neighbor-0019",
+          "constructor_parameter": "-5453/1441",
+          "good_primes_used": 35,
+          "height": 5453,
+          "last_numerical_prime": 199,
+          "score": "15.161252899125092544244419802893225424961576738477578134537760078006479464532028"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0038",
+          "constructor_parameter": "-287/6764",
+          "good_primes_used": 36,
+          "height": 6764,
+          "last_numerical_prime": 199,
+          "score": "15.018866477860310845857203628349395927741334497002641371072365964572424134695193"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0096",
+          "constructor_parameter": "-14133/1451",
+          "good_primes_used": 36,
+          "height": 14133,
+          "last_numerical_prime": 199,
+          "score": "14.185533028644833220733122677889680986407651738392449898474693493014853803214778"
+        }
+      ],
+      "retained_candidate_ids": [
+        "nagao-rank21-neighbor-0099",
+        "nagao-rank21-neighbor-0107",
+        "nagao-rank21-neighbor-0073",
+        "nagao-rank21-neighbor-0086",
+        "nagao-rank21-neighbor-0055",
+        "nagao-rank21-neighbor-0032",
+        "nagao-rank21-neighbor-0021",
+        "nagao-rank21-neighbor-0050",
+        "nagao-rank21-neighbor-0006",
+        "nagao-rank21-neighbor-0061",
+        "nagao-rank21-neighbor-0092",
+        "nagao-rank21-neighbor-0071",
+        "nagao-rank21-neighbor-0083",
+        "nagao-rank21-neighbor-0067",
+        "nagao-rank21-neighbor-0057",
+        "nagao-rank21-neighbor-0008",
+        "nagao-rank21-neighbor-0002",
+        "nagao-rank21-neighbor-0041",
+        "nagao-rank21-neighbor-0030",
+        "nagao-rank21-neighbor-0058",
+        "nagao-rank21-neighbor-0081",
+        "nagao-rank21-neighbor-0051",
+        "nagao-rank21-neighbor-0062",
+        "nagao-rank21-neighbor-0074",
+        "nagao-rank21-neighbor-0082",
+        "nagao-rank21-neighbor-0028",
+        "nagao-rank21-neighbor-0012",
+        "nagao-rank21-neighbor-0029",
+        "nagao-rank21-neighbor-0036",
+        "nagao-rank21-neighbor-0085",
+        "nagao-rank21-neighbor-0003",
+        "nagao-rank21-neighbor-0017"
+      ]
+    },
+    {
+      "cutoff": 2000,
+      "keep_count": 12,
+      "population_scored": 32,
+      "ranked_population": [
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0099",
+          "constructor_parameter": "14721/188",
+          "good_primes_used": 295,
+          "height": 14721,
+          "last_numerical_prime": 1999,
+          "score": "69.051056159370374085129336541704872079789171217391447583377798690975190567451235"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0107",
+          "constructor_parameter": "-16597/634",
+          "good_primes_used": 294,
+          "height": 16597,
+          "last_numerical_prime": 1999,
+          "score": "62.621267727307572560505319901859356109294335554915397831644662021531925442548179"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-rank21-neighbor-0062",
+          "constructor_parameter": "9093/2654",
+          "good_primes_used": 292,
+          "height": 9093,
+          "last_numerical_prime": 1999,
+          "score": "57.910566698087000837646317421526037003550138728183440486651639528300442978006840"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-rank21-neighbor-0092",
+          "constructor_parameter": "13083/4699",
+          "good_primes_used": 291,
+          "height": 13083,
+          "last_numerical_prime": 1999,
+          "score": "54.889097922069903969962288345254321732821805121866519427814346994492815171181947"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0058",
+          "constructor_parameter": "-8617/4724",
+          "good_primes_used": 295,
+          "height": 8617,
+          "last_numerical_prime": 1999,
+          "score": "53.867922564577314775816389388335064784769722231154680794072704074008885803138774"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0030",
+          "constructor_parameter": "6041/198",
+          "good_primes_used": 295,
+          "height": 6041,
+          "last_numerical_prime": 1999,
+          "score": "53.669728179426136268549823341171081949369436361702399475246711624852969972132721"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0081",
+          "constructor_parameter": "10794/2857",
+          "good_primes_used": 295,
+          "height": 10794,
+          "last_numerical_prime": 1999,
+          "score": "53.587822007352569140653721843302598486693394409558547545761172152614139368542291"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0002",
+          "constructor_parameter": "-938/411",
+          "good_primes_used": 293,
+          "height": 938,
+          "last_numerical_prime": 1999,
+          "score": "53.184665646707379618546414477794082212652543436278776205939443880853946870496013"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0074",
+          "constructor_parameter": "889/10042",
+          "good_primes_used": 293,
+          "height": 10042,
+          "last_numerical_prime": 1999,
+          "score": "52.465509144745876617665450622734821836928407974448596840486923679416987000175961"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0051",
+          "constructor_parameter": "-462/7789",
+          "good_primes_used": 295,
+          "height": 7789,
+          "last_numerical_prime": 1999,
+          "score": "51.961310647299826059925448768498166469852939809244211752759977162312047921550347"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0086",
+          "constructor_parameter": "-11319/218",
+          "good_primes_used": 294,
+          "height": 11319,
+          "last_numerical_prime": 1999,
+          "score": "50.876933468196528903698850431871619912499378647670747299619470240340636766381355"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-rank21-neighbor-0028",
+          "constructor_parameter": "1589/5942",
+          "good_primes_used": 296,
+          "height": 5942,
+          "last_numerical_prime": 1999,
+          "score": "50.771227371988414094491091939816070374153295471226279391322259532608915381071238"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0008",
+          "constructor_parameter": "413/2664",
+          "good_primes_used": 294,
+          "height": 2664,
+          "last_numerical_prime": 1999,
+          "score": "50.584588330299393910997131739834296405529427680722826191913066921394306181435084"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0082",
+          "constructor_parameter": "10969/1832",
+          "good_primes_used": 295,
+          "height": 10969,
+          "last_numerical_prime": 1999,
+          "score": "50.533428897400167909255553351415915229617946383028991403465806685019069114887040"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-rank21-neighbor-0073",
+          "constructor_parameter": "10031/2243",
+          "good_primes_used": 296,
+          "height": 10031,
+          "last_numerical_prime": 1999,
+          "score": "50.503127377273351260485060303005062125890227563047452149932662319532836496584721"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-rank21-neighbor-0041",
+          "constructor_parameter": "-7091/5952",
+          "good_primes_used": 292,
+          "height": 7091,
+          "last_numerical_prime": 1999,
+          "score": "49.802607850280048821660416499570943221859097101308121848470503965684086733231650"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0061",
+          "constructor_parameter": "1064/9017",
+          "good_primes_used": 293,
+          "height": 9017,
+          "last_numerical_prime": 1999,
+          "score": "49.671833977965614051278824031614211880725385683180011475153055673186828376652272"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0067",
+          "constructor_parameter": "9443/604",
+          "good_primes_used": 293,
+          "height": 9443,
+          "last_numerical_prime": 1999,
+          "score": "49.126325954558359698419238829495994208993906399292577779895292456184609682831066"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0055",
+          "constructor_parameter": "301/8403",
+          "good_primes_used": 294,
+          "height": 8403,
+          "last_numerical_prime": 1999,
+          "score": "49.082063588777199520060010595444117107643064760351921674596106325509390162295683"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0017",
+          "constructor_parameter": "5166/5323",
+          "good_primes_used": 295,
+          "height": 5323,
+          "last_numerical_prime": 1999,
+          "score": "48.657113824693937789715529260530644257515890858958421246853460713545304292120915"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0083",
+          "constructor_parameter": "-11081/3907",
+          "good_primes_used": 294,
+          "height": 11081,
+          "last_numerical_prime": 1999,
+          "score": "48.162827301521314117104633833945676694131605784612530975161723043363539496901032"
+        },
+        {
+          "bad_primes_skipped": 5,
+          "candidate_id": "nagao-rank21-neighbor-0032",
+          "constructor_parameter": "651/6353",
+          "good_primes_used": 296,
+          "height": 6353,
+          "last_numerical_prime": 1999,
+          "score": "48.010582949435775431733702721827211990354062274365307872430461128535872439171484"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0003",
+          "constructor_parameter": "-1113/1436",
+          "good_primes_used": 293,
+          "height": 1436,
+          "last_numerical_prime": 1999,
+          "score": "47.765517306662497337489481859026274413850542785471974080493264289394963119187686"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0006",
+          "constructor_parameter": "1351/2253",
+          "good_primes_used": 295,
+          "height": 2253,
+          "last_numerical_prime": 1999,
+          "score": "47.694694725046120428087740589778556968930926717168742354490035705294910700565316"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0021",
+          "constructor_parameter": "2527/5531",
+          "good_primes_used": 294,
+          "height": 5531,
+          "last_numerical_prime": 1999,
+          "score": "47.208109892410296178704888198083018070656573590088724787883526423435251347338758"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0057",
+          "constructor_parameter": "-2338/8611",
+          "good_primes_used": 293,
+          "height": 8611,
+          "last_numerical_prime": 1999,
+          "score": "46.515111713125617912631884003820699025146007496782362210787828720358526831615220"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0029",
+          "constructor_parameter": "-2751/5947",
+          "good_primes_used": 294,
+          "height": 5947,
+          "last_numerical_prime": 1999,
+          "score": "44.283394527750012181584138920044875092918312463719702569535000733831129210270483"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0071",
+          "constructor_parameter": "-9793/1446",
+          "good_primes_used": 295,
+          "height": 9793,
+          "last_numerical_prime": 1999,
+          "score": "43.995699624423448226949328902341008865584285278894578534236047163004349193222533"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0012",
+          "constructor_parameter": "2877/3481",
+          "good_primes_used": 295,
+          "height": 3481,
+          "last_numerical_prime": 1999,
+          "score": "43.465725963892545974586527732756979493759675924423480717391960878356663630169199"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0085",
+          "constructor_parameter": "11207/5521",
+          "good_primes_used": 294,
+          "height": 11207,
+          "last_numerical_prime": 1999,
+          "score": "42.954997575412307947653478266398356982328791016677858792271384466035494330853810"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-rank21-neighbor-0050",
+          "constructor_parameter": "7742/401",
+          "good_primes_used": 292,
+          "height": 7742,
+          "last_numerical_prime": 1999,
+          "score": "42.704386112240499732410378070820989625133162190708051642481642255434372212185394"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0036",
+          "constructor_parameter": "6692/6551",
+          "good_primes_used": 295,
+          "height": 6692,
+          "last_numerical_prime": 1999,
+          "score": "38.289943397660056354589514009105188561361929391720590070816792237147875383674900"
+        }
+      ],
+      "retained_candidate_ids": [
+        "nagao-rank21-neighbor-0099",
+        "nagao-rank21-neighbor-0107",
+        "nagao-rank21-neighbor-0062",
+        "nagao-rank21-neighbor-0092",
+        "nagao-rank21-neighbor-0058",
+        "nagao-rank21-neighbor-0030",
+        "nagao-rank21-neighbor-0081",
+        "nagao-rank21-neighbor-0002",
+        "nagao-rank21-neighbor-0074",
+        "nagao-rank21-neighbor-0051",
+        "nagao-rank21-neighbor-0086",
+        "nagao-rank21-neighbor-0028"
+      ]
+    },
+    {
+      "cutoff": 10000,
+      "keep_count": 6,
+      "population_scored": 12,
+      "ranked_population": [
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0099",
+          "constructor_parameter": "14721/188",
+          "good_primes_used": 1220,
+          "height": 14721,
+          "last_numerical_prime": 9973,
+          "score": "102.75159358685960476180398157575526326695950318408809646156209807845965541930736"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0107",
+          "constructor_parameter": "-16597/634",
+          "good_primes_used": 1220,
+          "height": 16597,
+          "last_numerical_prime": 9973,
+          "score": "88.736665902717335476387047981817101358240684865868319484834494159099809380011160"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-rank21-neighbor-0092",
+          "constructor_parameter": "13083/4699",
+          "good_primes_used": 1217,
+          "height": 13083,
+          "last_numerical_prime": 9973,
+          "score": "81.609811466105141815539059402267551540760832239733482254269292526253000753589469"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0058",
+          "constructor_parameter": "-8617/4724",
+          "good_primes_used": 1221,
+          "height": 8617,
+          "last_numerical_prime": 9973,
+          "score": "76.548711663681777588749081515426012500004008075123944059722085851493261852568430"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0030",
+          "constructor_parameter": "6041/198",
+          "good_primes_used": 1221,
+          "height": 6041,
+          "last_numerical_prime": 9973,
+          "score": "75.206437560210640776614233822695722837151144935943775157957985818824096815530144"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0081",
+          "constructor_parameter": "10794/2857",
+          "good_primes_used": 1220,
+          "height": 10794,
+          "last_numerical_prime": 9973,
+          "score": "74.527182873456660252610554499316866381738529666737564755532496577881216484767476"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-rank21-neighbor-0062",
+          "constructor_parameter": "9093/2654",
+          "good_primes_used": 1218,
+          "height": 9093,
+          "last_numerical_prime": 9973,
+          "score": "74.216231176397996912887552817876949943456691104598828151846411866233625085582641"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0086",
+          "constructor_parameter": "-11319/218",
+          "good_primes_used": 1220,
+          "height": 11319,
+          "last_numerical_prime": 9973,
+          "score": "72.135167797269867338944869824591079474986678420374503832133742846355902076197426"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-rank21-neighbor-0002",
+          "constructor_parameter": "-938/411",
+          "good_primes_used": 1219,
+          "height": 938,
+          "last_numerical_prime": 9973,
+          "score": "71.678886305633430010150535906293553678072868660259273248670974464744720936740323"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-rank21-neighbor-0028",
+          "constructor_parameter": "1589/5942",
+          "good_primes_used": 1221,
+          "height": 5942,
+          "last_numerical_prime": 9973,
+          "score": "68.477091057497607127446480516599711293417958050964619617896416184682559237730395"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-rank21-neighbor-0051",
+          "constructor_parameter": "-462/7789",
+          "good_primes_used": 1220,
+          "height": 7789,
+          "last_numerical_prime": 9973,
+          "score": "68.357808144724784714538712898192741638984474197034948133209073649285495619372367"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-rank21-neighbor-0074",
+          "constructor_parameter": "889/10042",
+          "good_primes_used": 1218,
+          "height": 10042,
+          "last_numerical_prime": 9973,
+          "score": "67.994973175826959607105142813624493158974210658562791417927052883740555191216648"
+        }
+      ],
+      "retained_candidate_ids": [
+        "nagao-rank21-neighbor-0099",
+        "nagao-rank21-neighbor-0107",
+        "nagao-rank21-neighbor-0092",
+        "nagao-rank21-neighbor-0058",
+        "nagao-rank21-neighbor-0030",
+        "nagao-rank21-neighbor-0081"
+      ]
+    }
+  ],
+  "status": "bounded exact CRT/Gauss and staged score/conductor experiment; published rank 21 is calibration only, no searched specialization has a rank claim, and no target hit is claimed",
+  "strict_target": {
+    "alternative_rank_at_least": 30,
+    "log_conductor_less_than": "182.72",
+    "rank_at_least": 21
+  },
+  "summary": {
+    "below_strict_log_conductor_target_without_rank_claim": 1,
+    "conductor_calls_completed": 6,
+    "conductor_timeouts_or_errors": 0,
+    "finalists": 6,
+    "finalists_beating_published_rank21_score": 0,
+    "population": 110,
+    "target_hits": 0
+  },
+  "target_hits": []
+}

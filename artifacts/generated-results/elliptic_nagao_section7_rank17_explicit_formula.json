@@ -1,0 +1,87 @@
+{
+  "actual_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/explicit_formula_section7_rank17.py",
+  "comparisons": {
+    "T426": {
+      "calibrated_upper_value": "18.73187140500268809720436198286909965060654886742938464191258674950683",
+      "log_conductor_term_difference": "-2.487738384162856896076448383744632560597953549698601451765634019416981",
+      "prime_term_difference": "-0.4803902108344550067191896333862677887954975828720139063217792310761847"
+    },
+    "T599": {
+      "calibrated_upper_value": "17.95350174637757684891053791073570335952736938731773001430697081933588",
+      "log_conductor_term_difference": "-3.662684636461972088006115687127935423112305126430121886828864600037736",
+      "prime_term_difference": "-0.08381361716045106308334640213636121736032548625214809886416458062638802"
+    }
+  },
+  "curves": {
+    "E20": {
+      "conductor": "73813242020125452593092920037241715783942979322145629022774016712292126930",
+      "log_conductor": "170.08766484224888113543147761107035486432595000236933336900322799816664271645869",
+      "prime_limit": 286751,
+      "prime_sum": "-53.527198246590105182372104818094548896473885897316421806879335611566122869000060"
+    },
+    "T426": {
+      "conductor": "1955638494265111447802893216591876355280173625627107228500878",
+      "log_conductor": "138.82582231529138490244191857292312262754621648387078812725193055396073131185165",
+      "prime_limit": 286751,
+      "prime_sum": "-50.508817532162153689288350739748366949034724291297842467969371837403463855314968"
+    },
+    "T599": {
+      "conductor": "756855624206125019617445466192515119979543579877522270",
+      "log_conductor": "124.06101225694834490032204298907619738966855278829534493564035687250673645297190",
+      "prime_limit": 286751,
+      "prime_sum": "-53.000581758705984209090082423994450647739569027124709436561781141485661810812871"
+    }
+  },
+  "declared_budget": {
+    "pari_stack_bytes": 512000000,
+    "timeout_seconds": 60.0
+  },
+  "exact_inputs": {
+    "T426": {
+      "certified_algebraic_rank_lower_bound": 17,
+      "conductor": "1955638494265111447802893216591876355280173625627107228500878",
+      "constructor_parameter_T": "426",
+      "identifier": "section7-global-426-1",
+      "log_conductor": "138.825822315291384902441918572923122627546216483870788127252",
+      "root_number": -1,
+      "saturated_basis_sha256": "cf9e796bf7d676a77451b1071f7569ed74a064bb7192fad16c57662ff62f85a7"
+    },
+    "T599": {
+      "certified_algebraic_rank_lower_bound": 17,
+      "conductor": "756855624206125019617445466192515119979543579877522270",
+      "constructor_parameter_T": "599/2",
+      "identifier": "section7-global-599-2",
+      "log_conductor": "124.061012256948344900322042989076197389668552788295344935640",
+      "root_number": -1,
+      "saturated_basis_sha256": "f379987fe1cf197bedf57cfc00ad3739ebb39f4f51727418aaa64bf287fbfe88"
+    }
+  },
+  "input": {
+    "global_artifact": "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic_nagao_section7_global.json",
+    "global_artifact_sha256": "c86c2b39acfe278802d3b654e134d3031772013e984d81e2b78073eca1f53568"
+  },
+  "interpretation": {
+    "unconditional": "the global artifact certifies rank at least 17 for both curves; this diagnostic supplies no algebraic-rank upper bound",
+    "under_bsd_and_grh": "the exact algebraic lower bounds and analytic upper bounds force algebraic rank exactly 17 for both curves",
+    "under_grh": "both calibrated values are below 19; root number -1 forces odd analytic order, hence analytic rank at most 17"
+  },
+  "method": {
+    "bober_source": "https://antsmath.org/ANTSX/bober/paper.pdf",
+    "common_archimedean_term_cancels_in_difference": true,
+    "delta": 2,
+    "nagao_source": "https://da.lib.kobe-u.ac.jp/da/kernel/E0003610/E0003610.pdf",
+    "prime_limit": 286751,
+    "prime_limit_definition": "floor(exp(2*pi*Delta))",
+    "reference_curve": "Bober E20",
+    "reference_published_upper_value": "21.70"
+  },
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/explicit_formula_section7_rank17.py",
+  "schema_version": 1,
+  "script_sha256": "ee72dfe7bfaa37906f12feeec0a842db6f3bbfb8ded5f5b577cb4038cbb779f6",
+  "software": {
+    "mpmath": "1.3.0",
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6"
+  },
+  "status": "conditional explicit-formula diagnostics complete"
+}

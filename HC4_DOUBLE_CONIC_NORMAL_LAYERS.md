@@ -4,6 +4,10 @@
 
 This note proves `HC4NHM15`.  It continues the nonzero-restriction row left
 by `HC4NHM13`; it does not close the complete double-conic packet.
+The subsequent theorem `HC4NHM18` removes the finite exceptional locus left
+here in \((3,3,2,2)\).  Therefore the current double-conic frontier starts
+with restrictions supported on at least five points; see
+[`HC4_DOUBLE_CONIC_BALANCED_FOUR_ROOT_CLOSURE.md`](HC4_DOUBLE_CONIC_BALANCED_FOUR_ROOT_CLOSURE.md).
 
 Let
 
@@ -430,3 +434,18 @@ survivor of the four layers should be passed to
 
 The forms with at least five distinct roots remain a separate higher-moduli
 frontier.
+
+The exceptional-locus target stated above was subsequently completed by
+`HC4NHM18`: the endpoint normal layers force the endpoint residual-line
+coefficients to vanish, and two middle coefficients exclude the remaining
+line direction for every cross-ratio.
+
+For the many-root invariant continuation, `HC4NHM21` identifies the exact
+clean saturation.  The ideal of the four displayed layers must first be
+saturated by the three coefficients of `Phi_2`.  An unsaturated
+`Disc(f)^N` certificate is impossible because the lower-Smith quintic
+`x^5+z^5` has squarefree restriction `s^10+t^10` and all Hessian layers
+zero.  After clean saturation, discriminant membership addresses only the
+squarefree open; nullcone containment in the binary-decic invariant ring is
+the correct target for all stable decics.  See
+[`HC4_DOUBLE_CONIC_INVARIANT_SATURATION_GATE.md`](HC4_DOUBLE_CONIC_INVARIANT_SATURATION_GATE.md).

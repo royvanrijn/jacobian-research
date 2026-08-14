@@ -1,5 +1,6 @@
 name = "gmc2-lower-face"
 version = "0.1.0"
+packagesDir = "../.lake/packages"
 keywords = ["math", "gaussian-moments"]
 defaultTargets = ["GMC2"]
 

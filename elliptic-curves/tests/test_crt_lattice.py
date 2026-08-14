@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import itertools
 import sys
 import unittest
 from fractions import Fraction
@@ -9,6 +10,10 @@ from pathlib import Path
 
 PROGRAM_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROGRAM_ROOT))
+
+CAS_DIRECTORY = PROGRAM_ROOT / "cas"
+if str(CAS_DIRECTORY) not in sys.path:
+    sys.path.insert(0, str(CAS_DIRECTORY))
 
 from ecsearch.calibration import (  # noqa: E402
     binary_discriminant_factor,
@@ -42,6 +47,17 @@ from ecsearch.fermigier import (  # noqa: E402
     twelve_visible_points,
     weierstrass_discriminant,
     weierstrass_c_invariants,
+)
+
+from crt_lattice import (
+    ConstraintChoice,
+    beam_combine,
+    crt_pair,
+    gauss_reduce,
+    lattice_determinant,
+    nearest_integer,
+    norm_squared,
+    short_rational_representatives,
 )
 
 
@@ -424,6 +440,110 @@ class FermigierFamilyTests(unittest.TestCase):
                 self.assertEqual(local.reduction, "split_multiplicative")
                 self.assertEqual(local.local_euler_coefficient, 1)
 
+
+def choice(prime: int, residue: int) -> ConstraintChoice:
+    return ConstraintChoice(prime, prime, residue, "power", f"r={residue}")
+
+
+class ExactArithmeticTests(unittest.TestCase):
+    def test_nearest_integer_uses_ties_toward_zero(self) -> None:
+        self.assertEqual(nearest_integer(3, 2), 1)
+        self.assertEqual(nearest_integer(-3, 2), -1)
+        self.assertEqual(nearest_integer(5, 2), 2)
+        self.assertEqual(nearest_integer(-5, 2), -2)
+        self.assertEqual(nearest_integer(8, 3), 3)
+        with self.assertRaises(ValueError):
+            nearest_integer(1, 0)
+
+    def test_gauss_half_tie_terminates_and_preserves_lattice(self) -> None:
+        first, second = gauss_reduce((2, 0), (1, 1))
+        self.assertEqual(abs(lattice_determinant((first, second))), 2)
+        self.assertLessEqual(norm_squared(first), norm_squared(second))
+        self.assertLessEqual(2 * abs(first[0] * second[0] + first[1] * second[1]),
+                             norm_squared(first))
+
+    def test_gauss_rejects_singular_basis(self) -> None:
+        with self.assertRaises(ValueError):
+            gauss_reduce((1, 2), (2, 4))
+
+    def test_crt_pair(self) -> None:
+        residue, modulus = crt_pair(5, 121, 109, 289)
+        residue, modulus = crt_pair(residue, modulus, 102, 361)
+        self.assertEqual((residue, modulus), (7_814_669, 12_623_809))
+        self.assertEqual(residue % 121, 5)
+        self.assertEqual(residue % 289, 109)
+        self.assertEqual(residue % 361, 102)
+        with self.assertRaises(ValueError):
+            crt_pair(0, 4, 0, 6)
+
+    def test_exact_crt_gauss_fixture(self) -> None:
+        representatives = short_rational_representatives(7_814_669, 12_623_809)
+        self.assertTrue(representatives)
+        shortest = representatives[0]
+        self.assertEqual((shortest.numerator, shortest.denominator, shortest.height),
+                         (-1468, 21, 1468))
+        self.assertEqual(
+            (shortest.numerator - 7_814_669 * shortest.denominator) % 12_623_809,
+            0,
+        )
+
+    def test_singular_shortest_vector_must_be_rejected_downstream(self) -> None:
+        # The lattice does not know that -28/67 is the exact root of B_5.
+        # It must therefore retain alternatives that an arithmetic filter can
+        # use after rejecting this singular first vector.
+        representatives = short_rational_representatives(
+            8959, 14_641, coefficient_radius=8, limit=3
+        )
+        self.assertEqual(
+            [(r.numerator, r.denominator) for r in representatives],
+            [(-28, 67), (155, 152), (183, 85)],
+        )
+        for representative in representatives:
+            self.assertEqual(
+                (representative.numerator - 8959 * representative.denominator)
+                % 14_641,
+                0,
+            )
+
+
+class BeamSearchTests(unittest.TestCase):
+    GROUPS = (
+        tuple(choice(19, residue) for residue in (7, 14)),
+        tuple(choice(23, residue) for residue in (5, 6, 8, 20)),
+        tuple(choice(29, residue) for residue in (2, 5, 9, 12, 18)),
+        tuple(choice(37, residue) for residue in (2, 3, 13, 34)),
+    )
+
+    def test_beam_width_one_counterexample(self) -> None:
+        greedy = beam_combine(self.GROUPS, beam_width=1, height_weight=1.0)[0]
+        exhaustive_width = sum(1 for _ in itertools.product(*self.GROUPS))
+        exhaustive = beam_combine(
+            self.GROUPS,
+            beam_width=exhaustive_width,
+            height_weight=1.0,
+        )[0]
+        self.assertEqual(greedy.representative.height, 1409)
+        self.assertEqual(exhaustive.representative.height, 53)
+        self.assertEqual(
+            [(item.prime, item.residue) for item in exhaustive.choices],
+            [(19, 7), (23, 20), (29, 2), (37, 3)],
+        )
+        self.assertEqual(
+            (exhaustive.representative.numerator,
+             exhaustive.representative.denominator),
+            (48, 53),
+        )
+        self.assertGreater(greedy.representative.height,
+                           exhaustive.representative.height)
+
+    def test_beam_validates_group_structure(self) -> None:
+        with self.assertRaises(ValueError):
+            beam_combine((), beam_width=0, height_weight=1.0)
+        with self.assertRaises(ValueError):
+            beam_combine(((),), beam_width=1, height_weight=1.0)
+        with self.assertRaises(ValueError):
+            beam_combine(((choice(5, 1), choice(7, 1)),),
+                         beam_width=1, height_weight=1.0)
 
 if __name__ == "__main__":
     unittest.main()

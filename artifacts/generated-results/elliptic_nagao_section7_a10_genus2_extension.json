@@ -1,0 +1,534 @@
+{
+  "schema_version": 1,
+  "artifact_kind": "bounded_section7_a10_genus2_final_extension",
+  "status": "bounded_final_a10_extension_complete",
+  "claim_scope": {
+    "exact": "seven declared sextic searches and mappings, prior and generic decontamination, and completed exact conductor outputs",
+    "bounded": "the one direct and six centered H=1000000 boxes only, followed by H=50000/H=250000 rank triage only on exact subtarget conductors",
+    "rank_certificate": false,
+    "numerical_rank_warning": "stable two-precision height ranks are triage evidence only"
+  },
+  "inputs": {
+    "previous_artifact": "artifacts/generated-results/elliptic_nagao_section7_accidental_genus2_slices.json",
+    "previous_artifact_sha256": "112fb09a12aca5982311a64d161449887074eb13dad52b5b2cb752d93cf7c320",
+    "previous_script": "elliptic-curves/cas/search_nagao_section7_accidental_genus2_slices.py",
+    "previous_script_sha256": "abb63f29b1e95eaa23e983e4f8003e682eb2cc4c1b3158ec93aa1f2a694d1e09",
+    "previous_candidate_parameters": [
+      "163",
+      "1049/10"
+    ],
+    "base_prior_artifact_records": [
+      {
+        "path": "artifacts/generated-results/elliptic_nagao_rank20_t5081_neighborhood.json",
+        "sha256": "070062f8962fbf0c4cdf1ea9a7c324667bc71f4a27439ca110c40f4e05197ccc",
+        "parameter_keys": [
+          "constructor_parameter_T"
+        ],
+        "canonical_parameter_count": 401,
+        "new_union_parameter_count": 401,
+        "parameter_stream_sha256": "305bd3bf869108a7c6f7bd26f4ba888b11127206a31f13b6a0c8b9441c04b8d8"
+      },
+      {
+        "path": "artifacts/generated-results/elliptic_nagao_section7_global.json",
+        "sha256": "c86c2b39acfe278802d3b654e134d3031772013e984d81e2b78073eca1f53568",
+        "parameter_keys": [
+          "constructor_parameter_T"
+        ],
+        "canonical_parameter_count": 801,
+        "new_union_parameter_count": 800,
+        "parameter_stream_sha256": "c76eb2a806892472fec67a988fbe6a99843754c4e13798396cfd43017e1b4d1d"
+      },
+      {
+        "path": "artifacts/generated-results/elliptic_nagao_rank21_accidental_slices.json",
+        "sha256": "125a6b0df7941099547039302b6f1878b5009dcde774328527952699877b1670",
+        "parameter_keys": [
+          "T",
+          "constructor_T0"
+        ],
+        "canonical_parameter_count": 82,
+        "new_union_parameter_count": 81,
+        "parameter_stream_sha256": "fbb8abcf3518b5c091240c3b8f9b71ac36a87fa3fa3c6698c7055052e5aab4bc"
+      },
+      {
+        "path": "artifacts/generated-results/elliptic_nagao_section7_remaining_auxiliary_slices.json",
+        "sha256": "2360f9f57874e0fbdabacc8910cf10c8fe869ff556f113782dbf3567bd21d9b2",
+        "parameter_keys": [
+          "T",
+          "constructor_T0",
+          "constructor_parameter_T",
+          "signed_T"
+        ],
+        "canonical_parameter_count": 2125,
+        "new_union_parameter_count": 2096,
+        "parameter_stream_sha256": "3cbd7f3c126da51b8a8cb7824a8792458ecd1c3850a52b0f73213098dbcb80f9"
+      },
+      {
+        "path": "artifacts/generated-results/elliptic_nagao_section7_auxiliary_group_orbit_stream.json",
+        "sha256": "2d51802ddf76c8fa9b14ac7d68f668d4c40c5fb322c8ef0617803df2e9eb6139",
+        "parameter_keys": [
+          "parameters"
+        ],
+        "canonical_parameter_count": 4251,
+        "new_union_parameter_count": 4251,
+        "parameter_stream_sha256": "b3209a0bf363b66367bbd1765b7e869f9e95260a5002f8911870313a81242b35"
+      }
+    ],
+    "canonical_prior_union_count": 7631,
+    "canonical_prior_union_sha256": "dac7e9cd950f6d96d17d95322be66593d672e583222f7f58720cfe642d3ff0b3",
+    "slice_manifest_sha256": "f79641ff400960ab2e4fd4310a8140619934f3ca795e721d340b67c47803ed7b"
+  },
+  "slice": {
+    "id": "a10_sp08",
+    "slope": 8,
+    "intercept": "-621",
+    "normalized_sextic_coefficients_ascending": [
+      349336075007518873,
+      -14116402581049152,
+      217046451547825,
+      -1576492630416,
+      5774356462,
+      -14478912,
+      35721
+    ]
+  },
+  "search_budget": {
+    "direct_height": 1000000,
+    "chart_height": 1000000,
+    "chart_centers": [
+      "163",
+      "1049/10"
+    ],
+    "chart_shifts": [
+      -1,
+      0,
+      1
+    ],
+    "declared_auxiliary_call_cap": 7,
+    "actual_auxiliary_call_count": 7,
+    "per_call_timeout_seconds": 30.0,
+    "one_call_per_plan_no_retry": true,
+    "stack_bytes": 512000000,
+    "plan_manifest_sha256": "08afa494cd96d7c9c22ca192f195ae77cf5bc986f62cab12db48f462cfe321fc",
+    "plans": [
+      {
+        "id": "direct_H1000000",
+        "kind": "direct",
+        "height": 1000000,
+        "matrix": null,
+        "center": null,
+        "shift": null,
+        "polynomial": [
+          "349336075007518873",
+          "-14116402581049152",
+          "217046451547825",
+          "-1576492630416",
+          "5774356462",
+          "-14478912",
+          "35721"
+        ]
+      },
+      {
+        "id": "center_163_shift_-1",
+        "kind": "centered_unimodular",
+        "height": 1000000,
+        "matrix": [
+          -162,
+          163,
+          -1,
+          1
+        ],
+        "center": "163",
+        "shift": -1,
+        "polynomial": [
+          "67829605635380625",
+          "-402408330132423750",
+          "994715414010864619",
+          "-1311369031968908208",
+          "972453836845176952",
+          "-384598216956796530",
+          "63376722566742013"
+        ]
+      },
+      {
+        "id": "center_163_shift_+0",
+        "kind": "centered_unimodular",
+        "height": 1000000,
+        "matrix": [
+          1,
+          163,
+          0,
+          1
+        ],
+        "center": "163",
+        "shift": 0,
+        "polynomial": [
+          "67829605635380625",
+          "4569303679860000",
+          "117847879455244",
+          "1435457925268",
+          "8210111917",
+          "20456226",
+          "35721"
+        ]
+      },
+      {
+        "id": "center_163_shift_+1",
+        "kind": "centered_unimodular",
+        "height": 1000000,
+        "matrix": [
+          164,
+          163,
+          1,
+          1
+        ],
+        "center": "163",
+        "shift": 1,
+        "polynomial": [
+          "67829605635380625",
+          "411546937492143750",
+          "1040408450809464619",
+          "1402757976481958744",
+          "1063848523189928560",
+          "430299866543860590",
+          "72518200883225001"
+        ]
+      },
+      {
+        "id": "center_1049_10_shift_-1",
+        "kind": "centered_unimodular",
+        "height": 1000000,
+        "matrix": [
+          -944,
+          1049,
+          -9,
+          10
+        ],
+        "center": "1049/10",
+        "shift": -1,
+        "polynomial": [
+          "18677840029633262241",
+          "-100912043701793035224",
+          "227168432148075832822",
+          "-272741709302766201592",
+          "184194870812296436029",
+          "-66344069191057660764",
+          "9956697365639227401"
+        ]
+      },
+      {
+        "id": "center_1049_10_shift_+0",
+        "kind": "centered_unimodular",
+        "height": 1000000,
+        "matrix": [
+          105,
+          1049,
+          1,
+          10
+        ],
+        "center": "1049/10",
+        "shift": 0,
+        "polynomial": [
+          "18677840029633262241",
+          "11154996476006538222",
+          "2775814083609590317",
+          "368382864272022276",
+          "27499219021409560",
+          "1094786374335132",
+          "18160027860913"
+        ]
+      },
+      {
+        "id": "center_1049_10_shift_+1",
+        "kind": "centered_unimodular",
+        "height": 1000000,
+        "matrix": [
+          1154,
+          1049,
+          11,
+          10
+        ],
+        "center": "1049/10",
+        "shift": 1,
+        "polynomial": [
+          "18677840029633262241",
+          "123222036653806111668",
+          "338718396908141215042",
+          "496578404551441010584",
+          "409505097518059334125",
+          "180106520709503846904",
+          "33005645618945018661"
+        ]
+      }
+    ]
+  },
+  "search_runs": {
+    "status_counts": {
+      "timeout": 7
+    },
+    "records": [
+      {
+        "id": "direct_H1000000",
+        "kind": "direct",
+        "height": 1000000,
+        "matrix": null,
+        "center": null,
+        "shift": null,
+        "transformed_sextic_coefficients_ascending": [
+          "349336075007518873",
+          "-14116402581049152",
+          "217046451547825",
+          "-1576492630416",
+          "5774356462",
+          "-14478912",
+          "35721"
+        ],
+        "status": "timeout",
+        "timeout_seconds": 30.0,
+        "wall_seconds": 30.002755000001343,
+        "height_specification": "1000000",
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "mapped_signless_point_count": 0,
+        "chart_pole_count": 0,
+        "one_call_no_retry": true
+      },
+      {
+        "id": "center_163_shift_-1",
+        "kind": "centered_unimodular",
+        "height": 1000000,
+        "matrix": [
+          -162,
+          163,
+          -1,
+          1
+        ],
+        "center": "163",
+        "shift": -1,
+        "transformed_sextic_coefficients_ascending": [
+          "67829605635380625",
+          "-402408330132423750",
+          "994715414010864619",
+          "-1311369031968908208",
+          "972453836845176952",
+          "-384598216956796530",
+          "63376722566742013"
+        ],
+        "status": "timeout",
+        "timeout_seconds": 30.0,
+        "wall_seconds": 30.002601250002044,
+        "height_specification": "1000000",
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "mapped_signless_point_count": 0,
+        "chart_pole_count": 0,
+        "one_call_no_retry": true
+      },
+      {
+        "id": "center_163_shift_+0",
+        "kind": "centered_unimodular",
+        "height": 1000000,
+        "matrix": [
+          1,
+          163,
+          0,
+          1
+        ],
+        "center": "163",
+        "shift": 0,
+        "transformed_sextic_coefficients_ascending": [
+          "67829605635380625",
+          "4569303679860000",
+          "117847879455244",
+          "1435457925268",
+          "8210111917",
+          "20456226",
+          "35721"
+        ],
+        "status": "timeout",
+        "timeout_seconds": 30.0,
+        "wall_seconds": 30.002593666002213,
+        "height_specification": "1000000",
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "mapped_signless_point_count": 0,
+        "chart_pole_count": 0,
+        "one_call_no_retry": true
+      },
+      {
+        "id": "center_163_shift_+1",
+        "kind": "centered_unimodular",
+        "height": 1000000,
+        "matrix": [
+          164,
+          163,
+          1,
+          1
+        ],
+        "center": "163",
+        "shift": 1,
+        "transformed_sextic_coefficients_ascending": [
+          "67829605635380625",
+          "411546937492143750",
+          "1040408450809464619",
+          "1402757976481958744",
+          "1063848523189928560",
+          "430299866543860590",
+          "72518200883225001"
+        ],
+        "status": "timeout",
+        "timeout_seconds": 30.0,
+        "wall_seconds": 30.002535750005336,
+        "height_specification": "1000000",
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "mapped_signless_point_count": 0,
+        "chart_pole_count": 0,
+        "one_call_no_retry": true
+      },
+      {
+        "id": "center_1049_10_shift_-1",
+        "kind": "centered_unimodular",
+        "height": 1000000,
+        "matrix": [
+          -944,
+          1049,
+          -9,
+          10
+        ],
+        "center": "1049/10",
+        "shift": -1,
+        "transformed_sextic_coefficients_ascending": [
+          "18677840029633262241",
+          "-100912043701793035224",
+          "227168432148075832822",
+          "-272741709302766201592",
+          "184194870812296436029",
+          "-66344069191057660764",
+          "9956697365639227401"
+        ],
+        "status": "timeout",
+        "timeout_seconds": 30.0,
+        "wall_seconds": 30.00267258299573,
+        "height_specification": "1000000",
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "mapped_signless_point_count": 0,
+        "chart_pole_count": 0,
+        "one_call_no_retry": true
+      },
+      {
+        "id": "center_1049_10_shift_+0",
+        "kind": "centered_unimodular",
+        "height": 1000000,
+        "matrix": [
+          105,
+          1049,
+          1,
+          10
+        ],
+        "center": "1049/10",
+        "shift": 0,
+        "transformed_sextic_coefficients_ascending": [
+          "18677840029633262241",
+          "11154996476006538222",
+          "2775814083609590317",
+          "368382864272022276",
+          "27499219021409560",
+          "1094786374335132",
+          "18160027860913"
+        ],
+        "status": "timeout",
+        "timeout_seconds": 30.0,
+        "wall_seconds": 30.002646000000823,
+        "height_specification": "1000000",
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "mapped_signless_point_count": 0,
+        "chart_pole_count": 0,
+        "one_call_no_retry": true
+      },
+      {
+        "id": "center_1049_10_shift_+1",
+        "kind": "centered_unimodular",
+        "height": 1000000,
+        "matrix": [
+          1154,
+          1049,
+          11,
+          10
+        ],
+        "center": "1049/10",
+        "shift": 1,
+        "transformed_sextic_coefficients_ascending": [
+          "18677840029633262241",
+          "123222036653806111668",
+          "338718396908141215042",
+          "496578404551441010584",
+          "409505097518059334125",
+          "180106520709503846904",
+          "33005645618945018661"
+        ],
+        "status": "timeout",
+        "timeout_seconds": 30.0,
+        "wall_seconds": 30.002601874999527,
+        "height_specification": "1000000",
+        "pari_stack_bytes": 512000000,
+        "retried": false,
+        "mapped_signless_point_count": 0,
+        "chart_pole_count": 0,
+        "one_call_no_retry": true
+      }
+    ]
+  },
+  "returned_point_population": {
+    "mapped_signless_incidence_count": 0,
+    "classification_counts": {},
+    "records": [],
+    "all_nonsingular_points_checked_against_all_21_generic_sections": true
+  },
+  "new_candidate_population": {
+    "unique_parameter_count": 0,
+    "parameter_stream_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "records_sorted_by_radical_proxy": []
+  },
+  "proxy_filter": {
+    "strict_log_radical_upper_proxy_threshold": 190.0,
+    "trial_prime_bound": 2000,
+    "plausible_parameter_cap": 16,
+    "below_threshold_count": 0
+  },
+  "exact_conductors": {
+    "attempted": 0,
+    "completed": 0,
+    "failures": [],
+    "records": [],
+    "sub_182_72_count": 0
+  },
+  "rank_triage": {
+    "gate": "genuinely new exact conductor with log N strictly below 182.72",
+    "heights": [
+      50000,
+      250000
+    ],
+    "parameter_cap": 16,
+    "parameter_count": 0,
+    "records": [],
+    "maximum_stable_numerical_rank": null,
+    "rank_certificate_claimed": false
+  },
+  "outcome": {
+    "rank21_certified": false,
+    "rank30_certified": false,
+    "breakthrough_curve_found": false,
+    "new_subtarget_conductor_parameters": [],
+    "bounded_lane_stopped_after_this_tranche": true
+  },
+  "reproduction": {
+    "command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/extend_nagao_section7_a10_genus2.py",
+    "actual_command": "elliptic-curves/cas/extend_nagao_section7_a10_genus2.py",
+    "script_sha256": "ddfae9a45b7dc203501fff70cfa8eb67cd23b52bd31ce8ed6f12f258169d06c2",
+    "python": "3.14.6",
+    "pari_gp": "[2, 17, 4]",
+    "wall_seconds": 210.75820137499977
+  }
+}

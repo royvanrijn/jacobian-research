@@ -151,10 +151,12 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: verify-hc4-pure-septic-kzero-wronskian verify-hc4-pure-septic-passive-affine
 .PHONY: verify-hc4-pure-septic-quartic-packets
 .PHONY: verify-hc4-relative-nilpotent-final-packet
-.PHONY: verify-hc4-direct-filtration verify-hc4-direct-repeated-linear verify-hc4-exact-sextuple-pure-cube verify-hc4-nonreduced-hessian-schur verify-hc4-direct-septuple-linear verify-hc4-octuple-nonuple-linear verify-hc4-two-line-quartic-denominator verify-hc4-two-line-quartic-prolongation verify-hc4-remaining-three-one-quartic verify-hc4-two-two-quartic verify-hc4-two-one-one-quartic verify-hc4-squarefree-quartic-frontend verify-hc4-squarefree-quartic-concurrence verify-hc4-squarefree-quartic-general-position verify-hc4-squarefree-quartic-tangent-fourth verify-hc4-smooth-conic-divisible-top verify-hc4-smooth-quartic-reciprocal verify-hc4-smooth-quartic-squarefree-line-generic verify-hc4-smooth-quartic-squarefree-line-exceptional-slices verify-hc4-double-conic-normal-layers
+.PHONY: verify-hc4-direct-filtration verify-hc4-direct-repeated-linear verify-hc4-exact-sextuple-pure-cube verify-hc4-nonreduced-hessian-schur verify-hc4-direct-septuple-linear verify-hc4-octuple-nonuple-linear verify-hc4-two-line-quartic-denominator verify-hc4-two-line-quartic-prolongation verify-hc4-remaining-three-one-quartic verify-hc4-two-two-quartic verify-hc4-two-one-one-quartic verify-hc4-squarefree-quartic-frontend verify-hc4-squarefree-quartic-concurrence verify-hc4-squarefree-quartic-general-position verify-hc4-squarefree-quartic-tangent-fourth verify-hc4-smooth-conic-divisible-top verify-hc4-smooth-cubic-orthogonal verify-hc4-smooth-quartic-reciprocal verify-hc4-smooth-quartic-squarefree-line-generic verify-hc4-smooth-quartic-squarefree-line-exceptional-slices verify-hc4-smooth-quartic-pivot-polar verify-hc4-smooth-quartic-polar-conic-generic verify-hc4-smooth-quartic-fermat-symmetry verify-hc4-double-conic-normal-layers verify-hc4-double-conic-balanced-four-root verify-hc4-double-conic-invariant-saturation
 .PHONY: verify-s4-collision-frame-keller
 .PHONY: verify-global-low-degree-census
 .PHONY: verify-collision-axis-unimodular-frontend
+.PHONY: verify-hc4-meng-yang-termination
+.PHONY: verify-hc4-smooth-quartic-final-line-orbits
 
 check:
 	$(PYTHON) -m compileall -q jcsearch scripts elliptic-curves/ecsearch elliptic-curves/scripts elliptic-curves/tests
@@ -187,6 +189,9 @@ verify-hc4-meng-yang-graphs:
 
 verify-hc4-all-degree-frontends:
 	$(PYTHON) scripts/verify_hc4_all_degree_frontends.py
+
+verify-hc4-meng-yang-termination: verify-hc4-all-degree-frontends
+	$(PYTHON) scripts/verify_hc4_meng_yang_polynomial_termination.py
 
 research-hc4-all-degree-frontends:
 	$(PYTHON) scripts/research_hc4_all_degree_frontends.py \
@@ -327,6 +332,9 @@ verify-hc4-squarefree-quartic-tangent-fourth: verify-hc4-squarefree-quartic-gene
 verify-hc4-smooth-conic-divisible-top: verify-hc4-squarefree-quartic-tangent-fourth
 	$(PYTHON) scripts/verify_hc4_smooth_conic_divisible_top_gate.py
 
+verify-hc4-smooth-cubic-orthogonal:
+	$(PYTHON) scripts/verify_hc4_smooth_cubic_orthogonal_normal_form.py
+
 verify-hc4-smooth-quartic-reciprocal: verify-hc4-smooth-conic-divisible-top
 	$(PYTHON) scripts/verify_hc4_smooth_quartic_reciprocal_frontend.py
 
@@ -335,6 +343,18 @@ verify-hc4-smooth-quartic-squarefree-line-generic: verify-hc4-smooth-quartic-rec
 
 verify-hc4-smooth-quartic-squarefree-line-exceptional-slices: verify-hc4-smooth-quartic-squarefree-line-generic
 	$(PYTHON) scripts/verify_hc4_smooth_quartic_squarefree_line_exceptional_slices.py
+
+verify-hc4-smooth-quartic-pivot-polar:
+	$(PYTHON) scripts/verify_hc4_smooth_quartic_pivot_polar_geometry.py
+
+verify-hc4-smooth-quartic-polar-conic-generic:
+	$(PYTHON) scripts/verify_hc4_smooth_quartic_polar_conic_generic_gate.py
+
+verify-hc4-smooth-quartic-fermat-symmetry:
+	$(PYTHON) scripts/verify_hc4_smooth_quartic_fermat_symmetry_orbits.py
+
+verify-hc4-smooth-quartic-final-line-orbits:
+	$(PYTHON) scripts/verify_hc4_smooth_quartic_final_line_orbits.py
 
 verify-hc4-double-conic-normal-layers: verify-hc4-smooth-quartic-reciprocal
 	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group layer-18
@@ -353,6 +373,12 @@ verify-hc4-double-conic-normal-layers: verify-hc4-smooth-quartic-reciprocal
 	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-3331
 	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group generic-four-4222-root-chart
 	$(PYTHON) scripts/verify_hc4_double_conic_normal_layers.py --group balanced-function-fields
+
+verify-hc4-double-conic-balanced-four-root: verify-hc4-double-conic-normal-layers
+	$(PYTHON) scripts/verify_hc4_double_conic_balanced_four_root_closure.py
+
+verify-hc4-double-conic-invariant-saturation:
+	$(PYTHON) scripts/verify_hc4_double_conic_invariant_saturation_gate.py
 
 verify-hc4-meng-yang-quintic: verify-hc4-meng-yang-graphs
 	$(PYTHON) scripts/verify_hc4_meng_yang_quintic_graph_normal_slice.py
@@ -882,6 +908,8 @@ verify-minimal-boundary:
 	Singular -q scripts/verify_cubic_double_saturation.sing
 	$(PYTHON) scripts/verify_cubic_gauge_straightening.py
 	$(PYTHON) scripts/verify_cubic_gauge_first_obstruction.py
+	$(PYTHON) scripts/verify_foundational_toric_degenerations.py
+	$(PYTHON) scripts/verify_foundational_split_base_changes.py
 
 verify-cubic-quartic-tangent-saturation:
 	$(PYTHON) scripts/verify_cubic_symbol_quartic_tangent_saturation.py

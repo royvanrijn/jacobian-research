@@ -1,0 +1,1764 @@
+{
+  "candidates": [
+    {
+      "below_strict_log_conductor_target": true,
+      "denominator": 87,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 4,
+        "17": 5,
+        "19": 4,
+        "37": 3,
+        "7": 20
+      },
+      "height": 644,
+      "height_rank": 4,
+      "numerator": 644,
+      "odd_rank_parity_heuristic": true,
+      "pari": {
+        "conductor": 7343267340980842238081038695187297842707854511761048301724287672190,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 12,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 8,
+            "tamagawa_number": 8
+          }
+        },
+        "log_conductor": "153.964400023010213083969770128430120323448601004558877669472",
+        "minimal_discriminant": 28374576108917887100792908892848850701632442290783309875238665804294786384072887206571501944779837700,
+        "minimal_model": [
+          1,
+          0,
+          1,
+          -2603467774829332122503933030067424,
+          50483686491768350295343073468088979811251064040122
+        ],
+        "root_number": -1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 376,
+      "t": "644/87"
+    },
+    {
+      "below_strict_log_conductor_target": true,
+      "denominator": 184,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 4,
+        "17": 6,
+        "19": 4,
+        "37": 3,
+        "7": 18
+      },
+      "height": 847,
+      "height_rank": 7,
+      "numerator": 847,
+      "odd_rank_parity_heuristic": false,
+      "pari": {
+        "conductor": 53216494161495327742584131392334810666169082226834796470763090249809430,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "162.852739805513698244891454752320221986022685402317389213062",
+        "minimal_discriminant": 445924247691669342757202444632745316563042646384090053215618640943971988173209563532303036345731622502400,
+        "minimal_model": [
+          1,
+          -1,
+          1,
+          -65128955760700459509246317882010113,
+          6316295126110742561332282649201067407441355708254481
+        ],
+        "root_number": 1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 341,
+      "t": "847/184"
+    },
+    {
+      "below_strict_log_conductor_target": true,
+      "denominator": 223,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 5,
+        "17": 5,
+        "19": 4,
+        "37": 3,
+        "7": 18
+      },
+      "height": 223,
+      "height_rank": 1,
+      "numerator": 70,
+      "odd_rank_parity_heuristic": false,
+      "pari": {
+        "conductor": 1213058692922641176845648864181908290532577516861412500200522619260886330,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "165.979271710943517295247782698287404041467326409598207233727",
+        "minimal_discriminant": 184614801525876053663998032760559780102665355914274251008861617607054150193464085997794285438065511041944962500,
+        "minimal_model": [
+          1,
+          -1,
+          0,
+          -4850216168008258445737223420413972974,
+          4059096302307481351169747973065349643245262580071253280
+        ],
+        "root_number": 1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 499,
+      "t": "70/223"
+    },
+    {
+      "below_strict_log_conductor_target": true,
+      "denominator": 218,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 4,
+        "37": 3,
+        "7": 18
+      },
+      "height": 1057,
+      "height_rank": 12,
+      "numerator": 1057,
+      "odd_rank_parity_heuristic": false,
+      "pari": {
+        "conductor": 45613196372497968467107604661255075393333613301173525965611178744695095170,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "169.606323764358951772312077715131200953848832572805084059891",
+        "minimal_discriminant": 26090592899339826534223988166953887014291048380942320117161731897043886571411584070943161293898386918195200,
+        "minimal_model": [
+          1,
+          -1,
+          1,
+          -252863824725184177658178654323689418,
+          48320651560173586286682661308777820737167827170243081
+        ],
+        "root_number": 1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 66,
+      "t": "1057/218"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "denominator": 384,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 5,
+        "37": 3,
+        "7": 18
+      },
+      "height": 721,
+      "height_rank": 5,
+      "numerator": 721,
+      "odd_rank_parity_heuristic": true,
+      "pari": {
+        "conductor": 60275539596847109729399841501210261853988574216574953795283646262867480799070370,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "183.700563629812367926967035172482294450196546585347589928349",
+        "minimal_discriminant": 20815358492303031814297062151852130126982723258818353121816082035444093974904492253068589830670526014257155276800,
+        "minimal_model": [
+          1,
+          0,
+          0,
+          -23434558109724199675038425298520479046,
+          43109706422310101824057143170704291523319315465725712740
+        ],
+        "root_number": -1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 474,
+      "t": "721/384"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "denominator": 239,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 5,
+        "37": 3,
+        "7": 18
+      },
+      "height": 239,
+      "height_rank": 2,
+      "numerator": 154,
+      "odd_rank_parity_heuristic": true,
+      "pari": {
+        "conductor": 1497104879072478754033487962292274922654631765344830093082544623761216553413486570,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "186.912925695001793323574490395916135746127935934830007161325",
+        "minimal_discriminant": 973834315193632983778299820809322345341806663523970570731017083035781212338165708787623963492960698776315020100,
+        "minimal_model": [
+          1,
+          -1,
+          0,
+          -8443175927231610808815982056030341910,
+          9322806575019646357117899650019660281632287427225114816
+        ],
+        "root_number": -1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 43,
+      "t": "154/239"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "denominator": 974,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 5,
+        "17": 4,
+        "19": 4,
+        "37": 3,
+        "7": 18
+      },
+      "height": 974,
+      "height_rank": 10,
+      "numerator": 63,
+      "odd_rank_parity_heuristic": true,
+      "pari": {
+        "conductor": 5225219480513177396725218911630291169106181823430441131075600083673456328340354084370,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "195.070644614308334137781363508914261950552464377692664170871",
+        "minimal_discriminant": 104715048550080451920061684647639850537662145418089006778091223442359911369955239391904143870213560782562295640290374451200,
+        "minimal_model": [
+          1,
+          1,
+          1,
+          -40148907467896531630162629901008238014831,
+          3057019786368506301700528025443403863281519931254816843328053
+        ],
+        "root_number": -1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 339,
+      "t": "63/974"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "denominator": 761,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 4,
+        "37": 3,
+        "7": 18
+      },
+      "height": 1211,
+      "height_rank": 17,
+      "numerator": 1211,
+      "odd_rank_parity_heuristic": true,
+      "pari": {
+        "conductor": 39315347854495112296486977594880735830365587346918934896430469972111289765004036889680,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "197.088762784786537811067990380105825220517239262999094299350",
+        "minimal_discriminant": 4703608745626527607544554805161976160698029556014931900205460997564112457563385759933563553302228777730322327357735537753011200,
+        "minimal_model": [
+          0,
+          0,
+          0,
+          -1427324801411178429602524378221193020624243,
+          647997742978523843784281215781962376141588728094782493325712642
+        ],
+        "root_number": -1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 480,
+      "t": "1211/761"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "denominator": 1532,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 4,
+        "37": 3,
+        "7": 18
+      },
+      "height": 1532,
+      "height_rank": 23,
+      "numerator": 763,
+      "odd_rank_parity_heuristic": true,
+      "pari": {
+        "conductor": 1539624165801307503079600537548649793004039353774372310719928037266860384000603175154530,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "200.756441428941939811683856085675098241216610566993686272300",
+        "minimal_discriminant": 5505457908102536935447261419484174097329892342161776772274226594314286327000261261350141726295525091345925465067856683830937600,
+        "minimal_model": [
+          1,
+          -1,
+          1,
+          -1504085547661198713626241497641229231264723,
+          700965455665186006883986030132330823841467742297272102770038131
+        ],
+        "root_number": -1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 265,
+      "t": "763/1532"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "denominator": 963,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 4,
+        "37": 3,
+        "7": 18
+      },
+      "height": 963,
+      "height_rank": 9,
+      "numerator": 448,
+      "odd_rank_parity_heuristic": true,
+      "pari": {
+        "conductor": 29640105212079828619184647523812085755191271262477743125240057753277435879693522497561930,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "203.714031440568871957741432767457061612199372121269199068750",
+        "minimal_discriminant": 326569297373539000526618355743461583251913158870921058569716609717109884780104752757181129776304263282527697961982511891116800,
+        "minimal_model": [
+          1,
+          0,
+          1,
+          -586587294025698486648008370916233490488834,
+          170720929111699103411434001798032834114350907077894908031067732
+        ],
+        "root_number": -1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 327,
+      "t": "448/963"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "denominator": 1079,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 5,
+        "17": 4,
+        "19": 5,
+        "37": 3,
+        "7": 18
+      },
+      "height": 1079,
+      "height_rank": 14,
+      "numerator": 875,
+      "odd_rank_parity_heuristic": true,
+      "pari": {
+        "conductor": 3155029077425381294410181946298143815498129804725025626591202598038648436406595350824629040,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "208.381656081714463631007167921177333878387415298212865801300",
+        "minimal_discriminant": 20502134689616045938208416316084609277150445154330987292448620157163935014647130523815435076335614251969540482400813842822817920000,
+        "minimal_model": [
+          0,
+          0,
+          0,
+          -23313877398314789489999088602094439097493747,
+          42776951758758538731763925398338326767733293837416745552673834114
+        ],
+        "root_number": -1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 269,
+      "t": "875/1079"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "denominator": 887,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 4,
+        "37": 3,
+        "7": 21
+      },
+      "height": 887,
+      "height_rank": 8,
+      "numerator": 847,
+      "odd_rank_parity_heuristic": true,
+      "pari": {
+        "conductor": 420931496914115842640555173313253922848644036498929683610043972464176104700639033927463334640,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 13,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 9,
+            "tamagawa_number": 9
+          }
+        },
+        "log_conductor": "213.275128474738572846997251174166371000532532278904257835272",
+        "minimal_discriminant": 185968660071101510862099298419582944719908139536217684143642653617895336590958797215936438353182441492844758593601340880071500800,
+        "minimal_model": [
+          0,
+          0,
+          0,
+          -4862193776017439809828080745249075648980723,
+          4074146385513400356926971314102522216899412590086440230223808322
+        ],
+        "root_number": -1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 85,
+      "t": "847/887"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "denominator": 1075,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 5,
+        "17": 4,
+        "19": 4,
+        "37": 3,
+        "7": 18
+      },
+      "height": 1075,
+      "height_rank": 13,
+      "numerator": 378,
+      "odd_rank_parity_heuristic": true,
+      "pari": {
+        "conductor": 558587861586617525928962523708363449482893038896105853284738917896910963439786269648579519210,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "213.558070292675745359118349746081979334356140642105945273647",
+        "minimal_discriminant": 4578801416494420866343646366794621721397331248084237271329597075829977021329639615597429615142698305476077392958587081054687500,
+        "minimal_model": [
+          1,
+          1,
+          0,
+          -1414457619636156205169381277608195911401337,
+          639252798648523599117667420718887840495013056696504637714350729
+        ],
+        "root_number": -1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 473,
+      "t": "378/1075"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "denominator": 402,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 4,
+        "37": 3,
+        "7": 18
+      },
+      "height": 402,
+      "height_rank": 3,
+      "numerator": 91,
+      "odd_rank_parity_heuristic": false,
+      "pari": {
+        "conductor": 499680441615659283350609732827188657672637480597412486940697731547991265175101270,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "185.815606030866889863701427524940385716635246836643256808515",
+        "minimal_discriminant": 62519755981288126404797701276199571502188869783246358478476402613883673766949662461184828793730963296345119334400,
+        "minimal_model": [
+          1,
+          0,
+          0,
+          -33807306178632825748258227286299453001,
+          74697064088362393212993221414648179586575127872296820505
+        ],
+        "root_number": 1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 32,
+      "t": "91/402"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "denominator": 365,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 5,
+        "37": 3,
+        "7": 18
+      },
+      "height": 1386,
+      "height_rank": 20,
+      "numerator": 1386,
+      "odd_rank_parity_heuristic": false,
+      "pari": {
+        "conductor": 32775400483255581835251166996982469060713699986461208873472924827354930082445860310,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "189.999070781261554426198971335434792759518366044071671166829",
+        "minimal_discriminant": 25195860762622296066046677789404954194609730441918737918233320312515161748633789051791959648059214814656103960937500,
+        "minimal_model": [
+          1,
+          1,
+          0,
+          -249853258882583182661974992613921732777,
+          1500805554687721645487866954833613819571985424604412973849
+        ],
+        "root_number": 1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 433,
+      "t": "1386/365"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "denominator": 745,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 5,
+        "37": 3,
+        "7": 18
+      },
+      "height": 745,
+      "height_rank": 6,
+      "numerator": 609,
+      "odd_rank_parity_heuristic": false,
+      "pari": {
+        "conductor": 108559062303658280891624384136963802416836213910220749616827435515852076533394419760,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "191.196686910420958738183455319371002343462686301406969031044",
+        "minimal_discriminant": 2825104227896036810406028954248933205479582798118188394294888977766569105615393882664442106507212553005465460483670026000000000,
+        "minimal_model": [
+          0,
+          -1,
+          0,
+          -1204184818335313103718792837135509004885320,
+          502143447214979173652177131320387011352706130131412145053960832
+        ],
+        "root_number": 1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 11,
+      "t": "609/745"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "denominator": 691,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 4,
+        "37": 3,
+        "7": 18
+      },
+      "height": 1099,
+      "height_rank": 15,
+      "numerator": 1099,
+      "odd_rank_parity_heuristic": false,
+      "pari": {
+        "conductor": 25515700840728453798745036752630006173127859878364094134339014937539675460029088476240,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "196.656441793431149704072266790000643106531781387490509613400",
+        "minimal_discriminant": 873408941682004104998416538159805653012378672476069637866844533655857410835339218083020144761090976244292248197111833600,
+        "minimal_model": [
+          0,
+          0,
+          0,
+          -8143008990500498229607144084799549780643,
+          279232937124816614705420025117212311569367197332523967342258
+        ],
+        "root_number": 1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 71,
+      "t": "1099/691"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "denominator": 1181,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 4,
+        "17": 5,
+        "19": 4,
+        "37": 4,
+        "7": 18
+      },
+      "height": 1505,
+      "height_rank": 22,
+      "numerator": 1505,
+      "odd_rank_parity_heuristic": false,
+      "pari": {
+        "conductor": 1915357139441887602287341595814661734690363506975482127794993026459575143503644509181195099280,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "214.790317749482787945453033603798000766903357801830342156894",
+        "minimal_discriminant": 179158801352888219252939902893943480641336095724057714631327631860135922219608682895643933069398636170703237757421461248833385600000,
+        "minimal_model": [
+          0,
+          0,
+          0,
+          -48022357409128285137934239107754680151173907,
+          126460211942623952016775129350452650286512235042270037799776418594
+        ],
+        "root_number": 1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 49,
+      "t": "1505/1181"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "denominator": 1103,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 4,
+        "17": 5,
+        "19": 4,
+        "37": 3,
+        "7": 18
+      },
+      "height": 1103,
+      "height_rank": 16,
+      "numerator": 546,
+      "odd_rank_parity_heuristic": false,
+      "pari": {
+        "conductor": 152108115897601419141047285651130690815237183493342181074941678682063722003136230777032711985910,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "219.165005205246546404462116222224456485463377499403527911329",
+        "minimal_discriminant": 8487024625772747713947765691421577092072305978179549993294142638864848323712091803536647028654787604702769053325327225383312300,
+        "minimal_model": [
+          1,
+          1,
+          0,
+          -1737506723756400764667095593211895350595163,
+          870317161856962455992106894313670127927378080282736969550178593
+        ],
+        "root_number": 1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 103,
+      "t": "546/1103"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "denominator": 1553,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 4,
+        "17": 5,
+        "19": 5,
+        "37": 3,
+        "7": 18
+      },
+      "height": 1553,
+      "height_rank": 24,
+      "numerator": 329,
+      "odd_rank_parity_heuristic": false,
+      "pari": {
+        "conductor": 1039472700187428541866034350905120978881333044103433488603159782180917042507024275015544231019120,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "221.086882492953495967131162893666959740309453088379715318038",
+        "minimal_discriminant": 128064017535000507744900389835933610218961602197014766774572260889582478609603207859316832882648130134806168198624998969257228354380800,
+        "minimal_model": [
+          0,
+          0,
+          0,
+          -429352251310361604337804711335483930435004083,
+          3380712931872618872263767642504290308549577752118052037782052359682
+        ],
+        "root_number": 1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 152,
+      "t": "329/1553"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "denominator": 1237,
+      "engineered_local_checks": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 4,
+        "37": 3,
+        "7": 18
+      },
+      "height": 1237,
+      "height_rank": 18,
+      "numerator": 693,
+      "odd_rank_parity_heuristic": false,
+      "pari": {
+        "conductor": 55445305720047116662320931549672585044778882576322708295098642485121727285935625716429545550245680,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "225.063565979751939082412712743983089667179232454888846814307",
+        "minimal_discriminant": 544719325648494708315085567951571517215263672630643578857978325843627614383320792224424330918266856832001877998781503764729793561600,
+        "minimal_model": [
+          0,
+          -1,
+          0,
+          -69566486527545092079988737170885783304162216,
+          220489521761695203104077933292305570331199966723676895940464618880
+        ],
+        "root_number": 1
+      },
+      "rank_status": "not computed or inferred",
+      "score_rank_within_height_pool": 100,
+      "t": "693/1237"
+    }
+  ],
+  "errors": [
+    {
+      "error": "Command '['/opt/homebrew/bin/gp', '-q', '-s', '256000000']' timed out after 30.0 seconds",
+      "t": "154/1053"
+    },
+    {
+      "error": "Command '['/opt/homebrew/bin/gp', '-q', '-s', '256000000']' timed out after 30.0 seconds",
+      "t": "1169/1271"
+    },
+    {
+      "error": "Command '['/opt/homebrew/bin/gp', '-q', '-s', '256000000']' timed out after 30.0 seconds",
+      "t": "308/1409"
+    }
+  ],
+  "method": {
+    "engineered_local_replay": "all source CRT primes must remain split multiplicative with conductor exponent one and the predicted minimal discriminant valuation",
+    "frontier_priority": "below conductor target, then root number -1, then increasing log conductor; this is resource triage, not rank inference"
+  },
+  "parameters": {
+    "output": "artifacts/generated-results/elliptic_fermigier_multiple_root_frontier.json",
+    "pari_stack_bytes": 256000000,
+    "timeout_seconds_per_candidate": 30.0
+  },
+  "reproducing_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/screen_multiple_root_frontier.py --height-count 24 --score-count 0 --timeout 30 --output artifacts/generated-results/elliptic_fermigier_multiple_root_frontier.json",
+  "schema_version": 1,
+  "script_sha256": "f228a71ceb40087224fcaa99874631972d212773f8cd76f84d9908704acf631d",
+  "selection": {
+    "completed": 21,
+    "definition": "union of the declared prefixes in the source artifact",
+    "errors": 3,
+    "height_rank_at_most": 24,
+    "score_rank_at_most": 0,
+    "selected": 24
+  },
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6",
+    "python_implementation": "CPython"
+  },
+  "source": {
+    "path": "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic_fermigier_multiple_root_crt.json",
+    "reproducing_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/search_multiple_root_crt.py",
+    "sha256": "3334a46dc8e4e226d92fa4a0040011779c9dd56d87613b0c6def148deaa71943"
+  },
+  "status": "bounded conductor screen of a pinned finite candidate union; local and conductor data are PARI computations, root number is used only for heuristic triage, and no Mordell--Weil rank is claimed",
+  "summary": {
+    "below_strict_log_conductor_target": 4,
+    "below_target_and_root_number_minus_one": 1,
+    "best_log_conductor": "153.964400023010213083969770128430120323448601004558877669472",
+    "frontier_order": [
+      "644/87",
+      "847/184",
+      "70/223",
+      "1057/218",
+      "721/384",
+      "154/239",
+      "63/974",
+      "1211/761",
+      "763/1532",
+      "448/963",
+      "875/1079",
+      "847/887",
+      "378/1075",
+      "91/402",
+      "1386/365",
+      "609/745",
+      "1099/691",
+      "1505/1181",
+      "546/1103",
+      "329/1553",
+      "693/1237"
+    ]
+  },
+  "target": {
+    "alternative_rank_at_least": 30,
+    "hits": [],
+    "log_conductor_strict_upper_bound": "182.72",
+    "rank_at_least": 21,
+    "reason": "no rank computation or independence certificate was made"
+  }
+}

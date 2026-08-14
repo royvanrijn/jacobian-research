@@ -1,0 +1,3131 @@
+{
+  "benchmarks": [
+    {
+      "candidate_id": "nagao-u-1",
+      "curve": {
+        "conductor": 683806043817733548135842157722731703695131359344925852223201804394372410,
+        "log_conductor": "165.406045732330510373158271658893231703442066953480903374786",
+        "minimal_discriminant": 8053908295590688998941682257187752691189334312206080727425919948593794604704964087206887014400,
+        "minimal_model": [
+          1,
+          0,
+          0,
+          -1970473859866423938027563293202211,
+          33666977357380599346718366106269137257495662819841
+        ],
+        "root_number": -1
+      },
+      "provenance": "Nagao base-changed generic-rank-13 family",
+      "scores": {
+        "1000": {
+          "bad_primes_skipped": 8,
+          "good_primes_used": 158,
+          "last_numerical_prime": 997,
+          "score": "35.280478526726036841044501930701566795749523862045655923381209208455933821707540"
+        },
+        "200": {
+          "bad_primes_skipped": 8,
+          "good_primes_used": 36,
+          "last_numerical_prime": 199,
+          "score": "20.633780574276667438061712644429794166388442982452616037892811569697413623237031"
+        }
+      }
+    },
+    {
+      "candidate_id": "nagao-u-42",
+      "curve": {
+        "conductor": 35099706739705220620788795400601975081892764398635177048274264110,
+        "log_conductor": "148.621053634067641802626624489353405764687593285311697405542",
+        "minimal_discriminant": 1052557316038565446781083830536617682853155088592786025369364459750626886615859200,
+        "minimal_model": [
+          1,
+          1,
+          1,
+          -713297808023681194679243421,
+          7164472716086503658294244200686835329779
+        ],
+        "root_number": -1
+      },
+      "provenance": "Nagao base-changed generic-rank-13 family",
+      "scores": {
+        "1000": {
+          "bad_primes_skipped": 5,
+          "good_primes_used": 161,
+          "last_numerical_prime": 997,
+          "score": "44.466709854060631436608941699535609231891096803976502153929847814249469203970433"
+        },
+        "200": {
+          "bad_primes_skipped": 5,
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "score": "24.472908516785097598627373988527332033654656806706860694155439634967647256683201"
+        }
+      }
+    },
+    {
+      "candidate_id": "nagao-u-128",
+      "curve": {
+        "conductor": 51486894594461387368418910937196156956430588347130822849014264745670,
+        "log_conductor": "155.911943438998776577175926460018177957960134106053558167597",
+        "minimal_discriminant": 2158473554619973156344303975493946183176850246771010033924866942719982568684039278533017600,
+        "minimal_model": [
+          1,
+          -1,
+          1,
+          -1159388891002606039163210055083,
+          475270562366291314615075595817412031081429627
+        ],
+        "root_number": -1
+      },
+      "provenance": "Nagao base-changed generic-rank-13 family",
+      "scores": {
+        "1000": {
+          "bad_primes_skipped": 5,
+          "good_primes_used": 161,
+          "last_numerical_prime": 997,
+          "score": "49.264575836799182144533573558894598339221115950708993903494440753297844299591669"
+        },
+        "200": {
+          "bad_primes_skipped": 5,
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "score": "24.328306464606860917032353151254405368930098340030645751758050406738006694135754"
+        }
+      }
+    },
+    {
+      "candidate_id": "fermigier-1666-9",
+      "curve": {
+        "conductor": 101523255017246417712694892860237179024105368632978033830,
+        "log_conductor": "128.959882907388234115945927583952120187586146367640134572484",
+        "minimal_discriminant": -2578507259649968205788921034197730786223615384053775609005819111033566871300,
+        "minimal_model": [
+          1,
+          0,
+          1,
+          -35841792875182741121324144,
+          82627122352018241034203681114802552242
+        ],
+        "root_number": 1
+      },
+      "provenance": "Fermigier conductor-only candidate",
+      "scores": {
+        "1000": {
+          "bad_primes_skipped": 6,
+          "good_primes_used": 160,
+          "last_numerical_prime": 997,
+          "score": "49.815886439841732895711027076324616396180796900182341386803603296577846611636226"
+        },
+        "200": {
+          "bad_primes_skipped": 6,
+          "good_primes_used": 38,
+          "last_numerical_prime": 199,
+          "score": "24.373350996930399302192535279033603117743370158296783880284022589602146637433090"
+        }
+      }
+    },
+    {
+      "candidate_id": "published-e22",
+      "curve": {
+        "conductor": 22720638514787473197194583889675055980109503436060704437972911338086049759883790,
+        "log_conductor": "182.724910950637428796108330351524078685943544318334397594996",
+        "minimal_discriminant": 3680432205940761304587473756368167508478483727616134375685404923405185646725374901862332174937532900,
+        "minimal_model": [
+          1,
+          0,
+          1,
+          -940299517776391362903023121165864,
+          10707363070719743033425295515449274534651125011362
+        ],
+        "root_number": 1
+      },
+      "provenance": "published rank-at-least-22 benchmark",
+      "scores": {
+        "1000": {
+          "bad_primes_skipped": 5,
+          "good_primes_used": 161,
+          "last_numerical_prime": 997,
+          "score": "50.584896906638965797487744998216749303751735106360524367438179464358688462885870"
+        },
+        "200": {
+          "bad_primes_skipped": 5,
+          "good_primes_used": 39,
+          "last_numerical_prime": 199,
+          "score": "26.753348316948761949662441465208343127504805033654310744402009764664521693377897"
+        }
+      }
+    }
+  ],
+  "conductor_errors": [
+    {
+      "candidate_id": "nagao-crt-01759",
+      "error": "Command '['/opt/homebrew/bin/gp', '-q', '-s', '256000000']' timed out after 45.0 seconds"
+    },
+    {
+      "candidate_id": "nagao-crt-00193",
+      "error": "Command '['/opt/homebrew/bin/gp', '-q', '-s', '256000000']' timed out after 45.0 seconds"
+    },
+    {
+      "candidate_id": "nagao-crt-01301",
+      "error": "Command '['/opt/homebrew/bin/gp', '-q', '-s', '256000000']' timed out after 45.0 seconds"
+    }
+  ],
+  "crt_search": {
+    "ball_choice_combinations": 2048,
+    "certified_reduction_required": "split multiplicative",
+    "coefficient_radius": 6,
+    "distinct_curves": 1024,
+    "height_maximum": 4386,
+    "height_minimum": 23,
+    "height_proxy_keep": 8,
+    "local_power_savings_proxy": 30.46618222404424,
+    "primes": [
+      7,
+      11,
+      13,
+      19,
+      31
+    ],
+    "representatives_per_class": 1,
+    "sign_pairs_identified_via_even_T_family": true
+  },
+  "final_conductor_records": [
+    {
+      "bad_primes_skipped": 9,
+      "below_strict_log_conductor_target": true,
+      "candidate_id": "nagao-crt-01924",
+      "crt_modulus": 589589,
+      "crt_residue": 118,
+      "curve": {
+        "conductor": 39951290420847784070371655775988962021455042106946985910,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "31": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "128.027255994266404107377275321358377520949743153338147189499",
+        "minimal_discriminant": 313603723746137491798108932295356298916711237679313921280122618269202285363552845221068800,
+        "minimal_model": [
+          1,
+          0,
+          0,
+          -524056157039934013164305429371,
+          143513596671800340187156320891088388549558801
+        ],
+        "root_number": -1
+      },
+      "generic_family_context": "Nagao cites generic rank at least 13 after base change; specialized independence and extra rank were not checked",
+      "good_primes_used": 157,
+      "height": 118,
+      "last_numerical_prime": 997,
+      "local_checks": [
+        {
+          "ball_exponent": 1,
+          "ball_residue": 6,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 5,
+          "observed_discriminant_valuation": 6,
+          "prime": 7,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 8,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 4,
+          "prime": 11,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 1,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 4,
+          "prime": 13,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 4,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 19,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 25,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 31,
+          "reduction_proved_on_ball": "split multiplicative"
+        }
+      ],
+      "parameter_t": "4813/118",
+      "parameter_u": "118",
+      "rank_claim": null,
+      "score": "43.567147750322383081000284860812079291706756895750969261528361210644378228500669"
+    },
+    {
+      "bad_primes_skipped": 9,
+      "below_strict_log_conductor_target": true,
+      "candidate_id": "nagao-crt-00409",
+      "crt_modulus": 589589,
+      "crt_residue": 316,
+      "curve": {
+        "conductor": 82546333662982248718158931611371261457316565721806729170827278873636578271070,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "31": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 12,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 8,
+            "tamagawa_number": 8
+          }
+        },
+        "log_conductor": "177.107241730401844974195019723141946262378936867871452581053",
+        "minimal_discriminant": 30174800915453683520624290530645825544879882017355884636933487647075820794390496567435809738510846800179200,
+        "minimal_model": [
+          1,
+          0,
+          0,
+          -123287779901414191854283474597859436,
+          14414384715933929042731653924558499974021402588694416
+        ],
+        "root_number": -1
+      },
+      "generic_family_context": "Nagao cites generic rank at least 13 after base change; specialized independence and extra rank were not checked",
+      "good_primes_used": 157,
+      "height": 316,
+      "last_numerical_prime": 997,
+      "local_checks": [
+        {
+          "ball_exponent": 1,
+          "ball_residue": 1,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 5,
+          "observed_discriminant_valuation": 8,
+          "prime": 7,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 8,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 11,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 4,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 13,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 12,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 19,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 6,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 31,
+          "reduction_proved_on_ball": "split multiplicative"
+        }
+      ],
+      "parameter_t": "-38153/316",
+      "parameter_u": "316",
+      "rank_claim": null,
+      "score": "38.354595071975462352022591185551127724896538524872884866665008772098922615313394"
+    },
+    {
+      "bad_primes_skipped": 10,
+      "below_strict_log_conductor_target": false,
+      "candidate_id": "nagao-crt-00628",
+      "crt_modulus": 589589,
+      "crt_residue": 26623,
+      "curve": {
+        "conductor": 377595056644077334435354553485201559813834148716383782651183471856180762228339044049862492026076668756397095823948870917637076540102902281053790558296483871810694421529652558170728210,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "31": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "420.399139081599248417530432850265134512200566406214552848874",
+        "minimal_discriminant": 158547452241530800446041991173150899267004028512150470813490161990388851592453934626433177528221357634980083515304886780574747325257324848737871031267626745442461762846901793222481776436424468626940689743652979507200000,
+        "minimal_model": [
+          1,
+          1,
+          1,
+          -1077108720788506563132976014086946994268804225893621408976652329959030427390,
+          13606218044221432422588094491640608848033862152678944950949639828220987789693823901553262649689350719252671621947
+        ],
+        "root_number": 1
+      },
+      "generic_family_context": "Nagao cites generic rank at least 13 after base change; specialized independence and extra rank were not checked",
+      "good_primes_used": 156,
+      "height": 908,
+      "last_numerical_prime": 997,
+      "local_checks": [
+        {
+          "ball_exponent": 1,
+          "ball_residue": 2,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 5,
+          "observed_discriminant_valuation": 6,
+          "prime": 7,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 3,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 11,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 12,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 13,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 4,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 19,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 25,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 31,
+          "reduction_proved_on_ball": "split multiplicative"
+        }
+      ],
+      "parameter_t": "3883168195/194312",
+      "parameter_u": "535/908",
+      "rank_claim": null,
+      "score": "47.861145934554095567188834132661069818669009323426148533608208193814727816689863"
+    },
+    {
+      "bad_primes_skipped": 9,
+      "below_strict_log_conductor_target": false,
+      "candidate_id": "nagao-crt-00861",
+      "crt_modulus": 589589,
+      "crt_residue": 412771,
+      "curve": {
+        "conductor": 63364583880735217899962681173763769380359266113714705317478227071049493570055654118929746444110834277132037690,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "31": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          }
+        },
+        "log_conductor": "252.828095134848727965059706063985677779702477564553498088930",
+        "minimal_discriminant": 3079204100459385243078810336614501363166042481952271628856096648851655594849422541720322107418917948859047064236081603371650095554365839102400000000,
+        "minimal_model": [
+          1,
+          -1,
+          1,
+          -6948055590112060049444161814690431623656902092347,
+          6524121966470683298147614830103747464714024704227881019719473269311714219
+        ],
+        "root_number": 1
+      },
+      "generic_family_context": "Nagao cites generic rank at least 13 after base change; specialized independence and extra rank were not checked",
+      "good_primes_used": 157,
+      "height": 587,
+      "last_numerical_prime": 997,
+      "local_checks": [
+        {
+          "ball_exponent": 1,
+          "ball_residue": 2,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 5,
+          "observed_discriminant_valuation": 5,
+          "prime": 7,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 7,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 4,
+          "prime": 11,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 8,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 4,
+          "prime": 13,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 15,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 19,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 6,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 31,
+          "reduction_proved_on_ball": "split multiplicative"
+        }
+      ],
+      "parameter_t": "2010431/11740",
+      "parameter_u": "587/10",
+      "rank_claim": null,
+      "score": "46.987043655949679078299564447999140751707865638569132819211353121243929546423549"
+    },
+    {
+      "bad_primes_skipped": 8,
+      "below_strict_log_conductor_target": false,
+      "candidate_id": "nagao-crt-01009",
+      "crt_modulus": 589589,
+      "crt_residue": 268683,
+      "curve": {
+        "conductor": 475015626577911667347876983293588207798982943876499442171697558775813385032876598993579202184056679477031442584920817488208551723194617006704470,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "31": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 12,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 8,
+            "tamagawa_number": 8
+          }
+        },
+        "log_conductor": "330.827845813712714793591562413923925255162842064383209901950",
+        "minimal_discriminant": 2658768240742417673072408415458691922872858704097075868954481616387560331478646073973116799727098514373427264659965997212289114026027770377077368310285009818790188751632835788800,
+        "minimal_model": [
+          1,
+          1,
+          1,
+          -674897341236513558195659631811074486257974080874748894093941,
+          213390628205100423045720120815550052623921903405470319711142880879378857478093930330824859
+        ],
+        "root_number": -1
+      },
+      "generic_family_context": "Nagao cites generic rank at least 13 after base change; specialized independence and extra rank were not checked",
+      "good_primes_used": 158,
+      "height": 753,
+      "last_numerical_prime": 997,
+      "local_checks": [
+        {
+          "ball_exponent": 1,
+          "ball_residue": 2,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 5,
+          "observed_discriminant_valuation": 8,
+          "prime": 7,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 8,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 11,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 12,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 13,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 4,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 19,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 6,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 31,
+          "reduction_proved_on_ball": "split multiplicative"
+        }
+      ],
+      "parameter_t": "48802847/39658",
+      "parameter_u": "753/79",
+      "rank_claim": null,
+      "score": "46.419654589446847013340010495795759064187145186226579330703978173666150276858875"
+    },
+    {
+      "bad_primes_skipped": 9,
+      "below_strict_log_conductor_target": false,
+      "candidate_id": "nagao-crt-01140",
+      "crt_modulus": 589589,
+      "crt_residue": 110850,
+      "curve": {
+        "conductor": 11837615702875964465397753510136497902223847795540662618850488476678660118051333777364254573911269500696918005897389426183081799257726860097914212659146039154215788180730,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "31": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "389.305577855730288678376249737508950157270406163427410742916",
+        "minimal_discriminant": 18211446050860854586280214801759595266658340686653958511360776461130060537442057032808413817850206956401987197273268778102846786188454359684146623437426200576256449710410928395479553822933547367685655756800,
+        "minimal_model": [
+          1,
+          0,
+          0,
+          -32530538690005699790477682950843199752833002448258080457284443768232881,
+          2258317470957402543310271892538701303354875600737470475437637128039474704739027145803999746180058168905961
+        ],
+        "root_number": 1
+      },
+      "generic_family_context": "Nagao cites generic rank at least 13 after base change; specialized independence and extra rank were not checked",
+      "good_primes_used": 157,
+      "height": 367,
+      "last_numerical_prime": 997,
+      "local_checks": [
+        {
+          "ball_exponent": 1,
+          "ball_residue": 5,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 5,
+          "observed_discriminant_valuation": 6,
+          "prime": 7,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 3,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 11,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 12,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 13,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 4,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 19,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 25,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 31,
+          "reduction_proved_on_ball": "split multiplicative"
+        }
+      ],
+      "parameter_t": "1057276823/75602",
+      "parameter_u": "309/367",
+      "rank_claim": null,
+      "score": "44.947055707956991819779305852945972264808206268129629199719158753700866019722479"
+    },
+    {
+      "bad_primes_skipped": 8,
+      "below_strict_log_conductor_target": false,
+      "candidate_id": "nagao-crt-01378",
+      "crt_modulus": 589589,
+      "crt_residue": 333758,
+      "curve": {
+        "conductor": 148764659717247812592407101884633310432805044520686084545669917987564092396592476559706187020831983655061074231508231021527331550759236690949996757911141670,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "31": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "357.297884820379722131755685109686953457736850115266158071792",
+        "minimal_discriminant": 6991152157410859080523200550693069462534494380757383196159272821765279872928509732331237740014245459533194521167077395055683509828792398987452042434947404529117549884271262858539359180800000,
+        "minimal_model": [
+          1,
+          -1,
+          1,
+          -343731464615935102850529057685970728605234179301833808991602344582,
+          77567009100695961593189943241525563499850385486807279428527885007202596042667212874449271838300181
+        ],
+        "root_number": -1
+      },
+      "generic_family_context": "Nagao cites generic rank at least 13 after base change; specialized independence and extra rank were not checked",
+      "good_primes_used": 158,
+      "height": 401,
+      "last_numerical_prime": 997,
+      "local_checks": [
+        {
+          "ball_exponent": 1,
+          "ball_residue": 5,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 5,
+          "observed_discriminant_valuation": 6,
+          "prime": 7,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 7,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 11,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 9,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 13,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 4,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 19,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 12,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 31,
+          "reduction_proved_on_ball": "split multiplicative"
+        }
+      ],
+      "parameter_t": "252453235/13634",
+      "parameter_u": "255/401",
+      "rank_claim": null,
+      "score": "44.705000397414390239381704661524020589447818082202416326026540846828420401548845"
+    },
+    {
+      "bad_primes_skipped": 8,
+      "below_strict_log_conductor_target": false,
+      "candidate_id": "nagao-crt-00691",
+      "crt_modulus": 589589,
+      "crt_residue": 422,
+      "curve": {
+        "conductor": 325630120407268823543942671305184175092655063008807488721999125960839933059685190,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "31": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 11,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 7,
+            "tamagawa_number": 7
+          }
+        },
+        "log_conductor": "185.387399390778735305854728777867593507018126791255267027049",
+        "minimal_discriminant": 269564422552012538349773581974786730217813030131562769335869045784521656963295794799305699755424794850642631065600,
+        "minimal_model": [
+          1,
+          0,
+          0,
+          -32529305449479790816997415351456639691,
+          66898625684544282771828866786435510199682697657691191921
+        ],
+        "root_number": -1
+      },
+      "generic_family_context": "Nagao cites generic rank at least 13 after base change; specialized independence and extra rank were not checked",
+      "good_primes_used": 158,
+      "height": 422,
+      "last_numerical_prime": 997,
+      "local_checks": [
+        {
+          "ball_exponent": 1,
+          "ball_residue": 2,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 5,
+          "observed_discriminant_valuation": 7,
+          "prime": 7,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 4,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 11,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 6,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 4,
+          "prime": 13,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 4,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 19,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 19,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 31,
+          "reduction_proved_on_ball": "split multiplicative"
+        }
+      ],
+      "parameter_t": "-77267/422",
+      "parameter_u": "422",
+      "rank_claim": null,
+      "score": "43.231183747767310072934154743999150823342834723222662930785690225344562431597492"
+    },
+    {
+      "bad_primes_skipped": 10,
+      "below_strict_log_conductor_target": false,
+      "candidate_id": "nagao-crt-00726",
+      "crt_modulus": 589589,
+      "crt_residue": 471739,
+      "curve": {
+        "conductor": 147565886214928346728239616092061647367274831012405199618616346479238142094594764718110,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "31": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "198.411422573748033022673555492539463327150771200585606002910",
+        "minimal_discriminant": 15840224676996314872602068383081804796116521709730584882492089226673361209907543048657623141909913633500281139942400000000,
+        "minimal_model": [
+          1,
+          -1,
+          1,
+          -10521977220258514412102756649579084337292,
+          368662382953014784136495291391770623688754494825551022831759
+        ],
+        "root_number": -1
+      },
+      "generic_family_context": "Nagao cites generic rank at least 13 after base change; specialized independence and extra rank were not checked",
+      "good_primes_used": 156,
+      "height": 339,
+      "last_numerical_prime": 997,
+      "local_checks": [
+        {
+          "ball_exponent": 1,
+          "ball_residue": 2,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 5,
+          "observed_discriminant_valuation": 6,
+          "prime": 7,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 4,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 11,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 8,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 13,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 7,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 19,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 12,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 31,
+          "reduction_proved_on_ball": "split multiplicative"
+        }
+      ],
+      "parameter_t": "157943/1130",
+      "parameter_u": "339/5",
+      "rank_claim": null,
+      "score": "40.789017722189099110656324025536656063159424077195553204535527532277249518967282"
+    },
+    {
+      "bad_primes_skipped": 10,
+      "below_strict_log_conductor_target": false,
+      "candidate_id": "nagao-crt-00650",
+      "crt_modulus": 589589,
+      "crt_residue": 295101,
+      "curve": {
+        "conductor": 49281968003852881185410760343005549472715014325173096041856026703069807892093976593042361690809610,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "31": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "224.945727180999381935055884573009496571160454928424845885093",
+        "minimal_discriminant": 20852324718537444088652418505884405138378874722094297665713121060478015018639688297385223029173643459175753465092557602337740800,
+        "minimal_model": [
+          1,
+          1,
+          1,
+          -1080784488794484506929238360392442370610496,
+          372507321114185432663414130710228842371742362509192921854018529
+        ],
+        "root_number": 1
+      },
+      "generic_family_context": "Nagao cites generic rank at least 13 after base change; specialized independence and extra rank were not checked",
+      "good_primes_used": 156,
+      "height": 613,
+      "last_numerical_prime": 997,
+      "local_checks": [
+        {
+          "ball_exponent": 1,
+          "ball_residue": 2,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 5,
+          "observed_discriminant_valuation": 6,
+          "prime": 7,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 4,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 11,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 1,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 13,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 12,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 19,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 12,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 31,
+          "reduction_proved_on_ball": "split multiplicative"
+        }
+      ],
+      "parameter_t": "-281569/2452",
+      "parameter_u": "613/2",
+      "rank_claim": null,
+      "score": "40.379520191196031824620380803028600635805971031407385477351708174570666262877896"
+    },
+    {
+      "bad_primes_skipped": 7,
+      "below_strict_log_conductor_target": false,
+      "candidate_id": "nagao-crt-01436",
+      "crt_modulus": 589589,
+      "crt_residue": 49222,
+      "curve": {
+        "conductor": 2448970685342979514475325878019414114050647995230330592000407578827822482756120548915920370,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "31": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "208.128326177310634341086436978006065664845433919145041687193",
+        "minimal_discriminant": 7607321186094016347908290386949867271384033229699148816881053406145306971944153364962881769256565293232558496153600,
+        "minimal_model": [
+          1,
+          0,
+          0,
+          -97413933958904631742349051018165848136,
+          345455716532593924783853799418458871951385592748402148416
+        ],
+        "root_number": -1
+      },
+      "generic_family_context": "Nagao cites generic rank at least 13 after base change; specialized independence and extra rank were not checked",
+      "good_primes_used": 159,
+      "height": 1075,
+      "last_numerical_prime": 997,
+      "local_checks": [
+        {
+          "ball_exponent": 1,
+          "ball_residue": 5,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 5,
+          "observed_discriminant_valuation": 6,
+          "prime": 7,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 8,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 11,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 4,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 13,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 12,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 19,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 25,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 31,
+          "reduction_proved_on_ball": "split multiplicative"
+        }
+      ],
+      "parameter_t": "89423/1032",
+      "parameter_u": "1075/12",
+      "rank_claim": null,
+      "score": "39.246123484442694700070786113342671945038456779397867785001208256567764520700714"
+    },
+    {
+      "bad_primes_skipped": 10,
+      "below_strict_log_conductor_target": false,
+      "candidate_id": "nagao-crt-00802",
+      "crt_modulus": 589589,
+      "crt_residue": 294884,
+      "curve": {
+        "conductor": 37010342546362343046851018219877901146320240006617063165380431507009205815346722130,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "31": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          }
+        },
+        "log_conductor": "190.120589934381237384626598119892831999258251759664962140188",
+        "minimal_discriminant": 1258482870612700753426057767069980538552397728572442371195572990295710333821018959026919015191487325338216908800,
+        "minimal_model": [
+          1,
+          1,
+          1,
+          -5318024364888490256106329406921326776,
+          4400964368853474103844450800211488780836393428505075449
+        ],
+        "root_number": 1
+      },
+      "generic_family_context": "Nagao cites generic rank at least 13 after base change; specialized independence and extra rank were not checked",
+      "good_primes_used": 156,
+      "height": 179,
+      "last_numerical_prime": 997,
+      "local_checks": [
+        {
+          "ball_exponent": 1,
+          "ball_residue": 2,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 5,
+          "observed_discriminant_valuation": 5,
+          "prime": 7,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 7,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 11,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 5,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 13,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 4,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 19,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 12,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 4,
+          "prime": 31,
+          "reduction_proved_on_ball": "split multiplicative"
+        }
+      ],
+      "parameter_t": "62159/716",
+      "parameter_u": "179/2",
+      "rank_claim": null,
+      "score": "35.968579284104978074412919431283454009613746758794965443466779140535610359396093"
+    },
+    {
+      "bad_primes_skipped": 10,
+      "below_strict_log_conductor_target": false,
+      "candidate_id": "nagao-crt-01951",
+      "crt_modulus": 589589,
+      "crt_residue": 118005,
+      "curve": {
+        "conductor": 15501601535405120470329883673365447771834445893199903112372651672222614420873941005270,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "13": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "31": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "196.158091154952238699422309419599877151426438867609949470867",
+        "minimal_discriminant": 2789726592667930060318409204625173928404552309199751228167109059284924447306193105384783157351082424548710033294358400000000,
+        "minimal_model": [
+          1,
+          0,
+          0,
+          -61976294399487017260469801499356690524160,
+          5367463757435626581372476222974837225337059292214693383577600
+        ],
+        "root_number": 1
+      },
+      "generic_family_context": "Nagao cites generic rank at least 13 after base change; specialized independence and extra rank were not checked",
+      "good_primes_used": 156,
+      "height": 436,
+      "last_numerical_prime": 997,
+      "local_checks": [
+        {
+          "ball_exponent": 1,
+          "ball_residue": 6,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 5,
+          "observed_discriminant_valuation": 6,
+          "prime": 7,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 8,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 11,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 4,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 5,
+          "prime": 13,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 15,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 19,
+          "reduction_proved_on_ball": "split multiplicative"
+        },
+        {
+          "ball_exponent": 1,
+          "ball_residue": 19,
+          "conductor_exponent_proved_on_ball": 1,
+          "forced_discriminant_valuation": 3,
+          "observed_discriminant_valuation": 3,
+          "prime": 31,
+          "reduction_proved_on_ball": "split multiplicative"
+        }
+      ],
+      "parameter_t": "199327/2180",
+      "parameter_u": "436/5",
+      "rank_claim": null,
+      "score": "35.913313977522775873249363765136047728279369570832165395030752226309272312926145"
+    }
+  ],
+  "invocation": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/search_nagao_rank13_local_crt.py",
+  "local_discoveries": [
+    {
+      "fixed_divisor_valuation": 2,
+      "level_counts": [
+        7,
+        49,
+        308,
+        2072,
+        12362
+      ],
+      "prime": 7,
+      "requested_discriminant_exponent": 5,
+      "unit_balls": [
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 5,
+          "modulus": 7,
+          "prime": 7,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 5,
+          "residue": 1,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 5,
+          "modulus": 7,
+          "prime": 7,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 5,
+          "residue": 2,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 5,
+          "modulus": 7,
+          "prime": 7,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 5,
+          "residue": 5,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 5,
+          "modulus": 7,
+          "prime": 7,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 5,
+          "residue": 6,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 2,
+          "forced_discriminant_valuation": 5,
+          "modulus": 49,
+          "prime": 7,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 5,
+          "residue": 4,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 2,
+          "forced_discriminant_valuation": 5,
+          "modulus": 49,
+          "prime": 7,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 5,
+          "residue": 11,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 2,
+          "forced_discriminant_valuation": 5,
+          "modulus": 49,
+          "prime": 7,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 5,
+          "residue": 17,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 2,
+          "forced_discriminant_valuation": 5,
+          "modulus": 49,
+          "prime": 7,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 5,
+          "residue": 24,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 2,
+          "forced_discriminant_valuation": 5,
+          "modulus": 49,
+          "prime": 7,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 5,
+          "residue": 25,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 2,
+          "forced_discriminant_valuation": 5,
+          "modulus": 49,
+          "prime": 7,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 5,
+          "residue": 32,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 2,
+          "forced_discriminant_valuation": 5,
+          "modulus": 49,
+          "prime": 7,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 5,
+          "residue": 38,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 2,
+          "forced_discriminant_valuation": 5,
+          "modulus": 49,
+          "prime": 7,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 5,
+          "residue": 45,
+          "split_multiplicative": true
+        }
+      ]
+    },
+    {
+      "fixed_divisor_valuation": 0,
+      "level_counts": [
+        5,
+        55,
+        506
+      ],
+      "prime": 11,
+      "requested_discriminant_exponent": 3,
+      "unit_balls": [
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 11,
+          "prime": 11,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 3,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 11,
+          "prime": 11,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 4,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 11,
+          "prime": 11,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 7,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 11,
+          "prime": 11,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 8,
+          "split_multiplicative": true
+        }
+      ]
+    },
+    {
+      "fixed_divisor_valuation": 0,
+      "level_counts": [
+        12,
+        156,
+        2028
+      ],
+      "prime": 13,
+      "requested_discriminant_exponent": 3,
+      "unit_balls": [
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 13,
+          "prime": 13,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 1,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": null,
+          "exponent": 1,
+          "forced_discriminant_valuation": 4,
+          "modulus": 13,
+          "prime": 13,
+          "proof": "the presented c4 is divisible by p; this coarse ball is retained as an exact discriminant condition but is not used by default CRT",
+          "reduction": "additive or unresolved after minimalization",
+          "requested_discriminant_exponent": 3,
+          "residue": 2,
+          "split_multiplicative": null
+        },
+        {
+          "conductor_exponent": null,
+          "exponent": 1,
+          "forced_discriminant_valuation": 4,
+          "modulus": 13,
+          "prime": 13,
+          "proof": "the presented c4 is divisible by p; this coarse ball is retained as an exact discriminant condition but is not used by default CRT",
+          "reduction": "additive or unresolved after minimalization",
+          "requested_discriminant_exponent": 3,
+          "residue": 3,
+          "split_multiplicative": null
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 13,
+          "prime": 13,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 4,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 13,
+          "prime": 13,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 5,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 13,
+          "prime": 13,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 6,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 13,
+          "prime": 13,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 7,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 13,
+          "prime": 13,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 8,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 13,
+          "prime": 13,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 9,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": null,
+          "exponent": 1,
+          "forced_discriminant_valuation": 4,
+          "modulus": 13,
+          "prime": 13,
+          "proof": "the presented c4 is divisible by p; this coarse ball is retained as an exact discriminant condition but is not used by default CRT",
+          "reduction": "additive or unresolved after minimalization",
+          "requested_discriminant_exponent": 3,
+          "residue": 10,
+          "split_multiplicative": null
+        },
+        {
+          "conductor_exponent": null,
+          "exponent": 1,
+          "forced_discriminant_valuation": 4,
+          "modulus": 13,
+          "prime": 13,
+          "proof": "the presented c4 is divisible by p; this coarse ball is retained as an exact discriminant condition but is not used by default CRT",
+          "reduction": "additive or unresolved after minimalization",
+          "requested_discriminant_exponent": 3,
+          "residue": 11,
+          "split_multiplicative": null
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 13,
+          "prime": 13,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 12,
+          "split_multiplicative": true
+        }
+      ]
+    },
+    {
+      "fixed_divisor_valuation": 0,
+      "level_counts": [
+        12,
+        204,
+        1156
+      ],
+      "prime": 17,
+      "requested_discriminant_exponent": 3,
+      "unit_balls": [
+        {
+          "conductor_exponent": null,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 17,
+          "prime": 17,
+          "proof": "the presented c4 is divisible by p; this coarse ball is retained as an exact discriminant condition but is not used by default CRT",
+          "reduction": "additive or unresolved after minimalization",
+          "requested_discriminant_exponent": 3,
+          "residue": 1,
+          "split_multiplicative": null
+        },
+        {
+          "conductor_exponent": null,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 17,
+          "prime": 17,
+          "proof": "the presented c4 is divisible by p; this coarse ball is retained as an exact discriminant condition but is not used by default CRT",
+          "reduction": "additive or unresolved after minimalization",
+          "requested_discriminant_exponent": 3,
+          "residue": 5,
+          "split_multiplicative": null
+        },
+        {
+          "conductor_exponent": null,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 17,
+          "prime": 17,
+          "proof": "the presented c4 is divisible by p; this coarse ball is retained as an exact discriminant condition but is not used by default CRT",
+          "reduction": "additive or unresolved after minimalization",
+          "requested_discriminant_exponent": 3,
+          "residue": 12,
+          "split_multiplicative": null
+        },
+        {
+          "conductor_exponent": null,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 17,
+          "prime": 17,
+          "proof": "the presented c4 is divisible by p; this coarse ball is retained as an exact discriminant condition but is not used by default CRT",
+          "reduction": "additive or unresolved after minimalization",
+          "requested_discriminant_exponent": 3,
+          "residue": 16,
+          "split_multiplicative": null
+        }
+      ]
+    },
+    {
+      "fixed_divisor_valuation": 0,
+      "level_counts": [
+        14,
+        266,
+        1444
+      ],
+      "prime": 19,
+      "requested_discriminant_exponent": 3,
+      "unit_balls": [
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 19,
+          "prime": 19,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 4,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 19,
+          "prime": 19,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 7,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 19,
+          "prime": 19,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 12,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 19,
+          "prime": 19,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 15,
+          "split_multiplicative": true
+        }
+      ]
+    },
+    {
+      "fixed_divisor_valuation": 0,
+      "level_counts": [
+        10,
+        230,
+        1058
+      ],
+      "prime": 23,
+      "requested_discriminant_exponent": 3,
+      "unit_balls": [
+        {
+          "conductor_exponent": null,
+          "exponent": 1,
+          "forced_discriminant_valuation": 4,
+          "modulus": 23,
+          "prime": 23,
+          "proof": "the presented c4 is divisible by p; this coarse ball is retained as an exact discriminant condition but is not used by default CRT",
+          "reduction": "additive or unresolved after minimalization",
+          "requested_discriminant_exponent": 3,
+          "residue": 5,
+          "split_multiplicative": null
+        },
+        {
+          "conductor_exponent": null,
+          "exponent": 1,
+          "forced_discriminant_valuation": 4,
+          "modulus": 23,
+          "prime": 23,
+          "proof": "the presented c4 is divisible by p; this coarse ball is retained as an exact discriminant condition but is not used by default CRT",
+          "reduction": "additive or unresolved after minimalization",
+          "requested_discriminant_exponent": 3,
+          "residue": 18,
+          "split_multiplicative": null
+        }
+      ]
+    },
+    {
+      "fixed_divisor_valuation": 0,
+      "level_counts": [
+        12,
+        372,
+        3844
+      ],
+      "prime": 31,
+      "requested_discriminant_exponent": 3,
+      "unit_balls": [
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 31,
+          "prime": 31,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 6,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 31,
+          "prime": 31,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 12,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 31,
+          "prime": 31,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 19,
+          "split_multiplicative": true
+        },
+        {
+          "conductor_exponent": 1,
+          "exponent": 1,
+          "forced_discriminant_valuation": 3,
+          "modulus": 31,
+          "prime": 31,
+          "proof": "u is a unit, the short-model c4 is a unit modulo p throughout the ball, and the tangent symbol is fixed by u modulo p",
+          "reduction": "split multiplicative",
+          "requested_discriminant_exponent": 3,
+          "residue": 25,
+          "split_multiplicative": true
+        }
+      ]
+    }
+  ],
+  "primary_source": "https://da.lib.kobe-u.ac.jp/da/kernel/E0003610/E0003610.pdf",
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/search_nagao_rank13_local_crt.py",
+  "schema_version": 1,
+  "score_definition": "sum over good numerical primes 5<=p<=cutoff of ((2-a_p)/(p+1-a_p))*log(p)",
+  "script_sha256": "49ffb340e8bbd0c7b40f23badad57e438c2a4c97756a1621fb683f07553ba532",
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6"
+  },
+  "stages": [
+    {
+      "cutoff": 200,
+      "keep_count": 72,
+      "population_scored": 1024,
+      "retained": [
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-crt-00480",
+          "good_primes_used": 38,
+          "height": 439,
+          "last_numerical_prime": 199,
+          "parameter_u": "439/180",
+          "score": "22.991126184431688415325480171647478888150168748093500222907543238000540132751894"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-00051",
+          "good_primes_used": 37,
+          "height": 617,
+          "last_numerical_prime": 199,
+          "parameter_u": "36/617",
+          "score": "22.952686430891227397466398367398540949093046242228049167297821528844997728775544"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-01592",
+          "good_primes_used": 36,
+          "height": 573,
+          "last_numerical_prime": 199,
+          "parameter_u": "344/573",
+          "score": "22.811764740171610353180612935952165331107237925314914368632506353160905904261104"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-00443",
+          "good_primes_used": 36,
+          "height": 431,
+          "last_numerical_prime": 199,
+          "parameter_u": "431/256",
+          "score": "22.739900813220055506363381339970083375890194090223549333350330756231375023838544"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-01301",
+          "good_primes_used": 37,
+          "height": 993,
+          "last_numerical_prime": 199,
+          "parameter_u": "993/739",
+          "score": "22.679150866444644697848559145978885267092443518791887473431693714718878502442686"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-00861",
+          "good_primes_used": 36,
+          "height": 587,
+          "last_numerical_prime": 199,
+          "parameter_u": "587/10",
+          "score": "22.664520677277981024399337347707108990371171351949293897563537472979635327440278"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-01140",
+          "good_primes_used": 37,
+          "height": 367,
+          "last_numerical_prime": 199,
+          "parameter_u": "309/367",
+          "score": "22.571849876437300007136805401874698588135705582336867973809714654146781716206155"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-01378",
+          "good_primes_used": 37,
+          "height": 401,
+          "last_numerical_prime": 199,
+          "parameter_u": "255/401",
+          "score": "22.489485383195343415490816716754551655376864604863559914942658565225364637938227"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-00473",
+          "good_primes_used": 36,
+          "height": 151,
+          "last_numerical_prime": 199,
+          "parameter_u": "151/144",
+          "score": "22.473749433099003750628592103549352168759716118197090899550522202340681922018367"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-crt-01287",
+          "good_primes_used": 35,
+          "height": 590,
+          "last_numerical_prime": 199,
+          "parameter_u": "577/590",
+          "score": "22.466327441225004765036750211084132800206976571167934202008664783992696491373166"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-crt-00816",
+          "good_primes_used": 35,
+          "height": 566,
+          "last_numerical_prime": 199,
+          "parameter_u": "566/381",
+          "score": "22.435446874633037118285977223493006231613304842378032353260494550430346024789049"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-crt-01133",
+          "good_primes_used": 35,
+          "height": 164,
+          "last_numerical_prime": 199,
+          "parameter_u": "85/164",
+          "score": "22.431090145308117666935913296898108574481996920738338322761339273408249129619926"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-00604",
+          "good_primes_used": 37,
+          "height": 673,
+          "last_numerical_prime": 199,
+          "parameter_u": "457/673",
+          "score": "22.397014620050068081930980247593928031398725148636229329249332454972612177965782"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-00037",
+          "good_primes_used": 37,
+          "height": 283,
+          "last_numerical_prime": 199,
+          "parameter_u": "24/283",
+          "score": "22.396571437447629718332625150323189166699892663765635966378551002647392049325953"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-00602",
+          "good_primes_used": 36,
+          "height": 765,
+          "last_numerical_prime": 199,
+          "parameter_u": "765/211",
+          "score": "22.370938324909632623663425008856609728608601940855941493620216564451614556773861"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-01363",
+          "good_primes_used": 36,
+          "height": 765,
+          "last_numerical_prime": 199,
+          "parameter_u": "647/765",
+          "score": "22.332725671711102814773049574775908945040213231182373695841161643701289767808460"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-00772",
+          "good_primes_used": 37,
+          "height": 849,
+          "last_numerical_prime": 199,
+          "parameter_u": "641/849",
+          "score": "22.250555372875356419664078433183505184470914845692915783926830827701246493318603"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-01836",
+          "good_primes_used": 36,
+          "height": 395,
+          "last_numerical_prime": 199,
+          "parameter_u": "389/395",
+          "score": "22.231520263514136152255630098328742832795968222888848010396160363326136028869705"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-01828",
+          "good_primes_used": 37,
+          "height": 639,
+          "last_numerical_prime": 199,
+          "parameter_u": "639/250",
+          "score": "22.188621171527783314600945216337538679586014318658197941095418474688666970720559"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-crt-00155",
+          "good_primes_used": 35,
+          "height": 587,
+          "last_numerical_prime": 199,
+          "parameter_u": "489/587",
+          "score": "22.185318425449706710524290459237968782776302099421569889065536467782900506137215"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-01325",
+          "good_primes_used": 36,
+          "height": 1315,
+          "last_numerical_prime": 199,
+          "parameter_u": "1315/1082",
+          "score": "22.176433870353782264342991938118165679424698269868081112339886475418674764315648"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-01384",
+          "good_primes_used": 36,
+          "height": 317,
+          "last_numerical_prime": 199,
+          "parameter_u": "317/314",
+          "score": "22.169368751043237321084373426995979635401913323675857025141575703460754863959431"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-01649",
+          "good_primes_used": 37,
+          "height": 421,
+          "last_numerical_prime": 199,
+          "parameter_u": "421/34",
+          "score": "22.091342859839918226304361811017182421713740913863303129790299780514885971875530"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-crt-01851",
+          "good_primes_used": 35,
+          "height": 505,
+          "last_numerical_prime": 199,
+          "parameter_u": "505/69",
+          "score": "22.056477028306282017013670704101037803769476811748199076632383609988503326981993"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-crt-00435",
+          "good_primes_used": 38,
+          "height": 491,
+          "last_numerical_prime": 199,
+          "parameter_u": "463/491",
+          "score": "22.032121620573770547743386595535604979686715137086634870168687793649090200056884"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-01318",
+          "good_primes_used": 36,
+          "height": 548,
+          "last_numerical_prime": 199,
+          "parameter_u": "283/548",
+          "score": "22.010487422486182150370596216092253695038613333140344081486817007740235789705134"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-00953",
+          "good_primes_used": 37,
+          "height": 1055,
+          "last_numerical_prime": 199,
+          "parameter_u": "1055/1049",
+          "score": "22.000043649569930875225791904454641193548052498745998228320299421028135534237422"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-01970",
+          "good_primes_used": 37,
+          "height": 503,
+          "last_numerical_prime": 199,
+          "parameter_u": "503/463",
+          "score": "21.988230373631767539240388633819260882930299374759239615964112421042903901972647"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-00296",
+          "good_primes_used": 37,
+          "height": 541,
+          "last_numerical_prime": 199,
+          "parameter_u": "443/541",
+          "score": "21.982224271551224074289407626547346909926726808311741592252431739065263749104044"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-00831",
+          "good_primes_used": 36,
+          "height": 1553,
+          "last_numerical_prime": 199,
+          "parameter_u": "894/1553",
+          "score": "21.975055897857821338983637653876019973388508275358232534258119106466499086329835"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-crt-02039",
+          "good_primes_used": 35,
+          "height": 424,
+          "last_numerical_prime": 199,
+          "parameter_u": "213/424",
+          "score": "21.931522829588142395716820060416148557387097762707005563976915604229626429821152"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-01793",
+          "good_primes_used": 36,
+          "height": 191,
+          "last_numerical_prime": 199,
+          "parameter_u": "61/191",
+          "score": "21.896345286067178455151753136029859507486033336469420646059617545203981554492833"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-00536",
+          "good_primes_used": 37,
+          "height": 491,
+          "last_numerical_prime": 199,
+          "parameter_u": "491/347",
+          "score": "21.894241193546719756327392310528394285756879494208222744405593724121388168287012"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-01901",
+          "good_primes_used": 37,
+          "height": 849,
+          "last_numerical_prime": 199,
+          "parameter_u": "849/467",
+          "score": "21.894162385859007583425216230874591722925844231328301522043297162377687040515330"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-00461",
+          "good_primes_used": 37,
+          "height": 409,
+          "last_numerical_prime": 199,
+          "parameter_u": "409/311",
+          "score": "21.817135068408796351946337672071516186038029314333622369202712527041682581144643"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-crt-01880",
+          "good_primes_used": 38,
+          "height": 421,
+          "last_numerical_prime": 199,
+          "parameter_u": "421/90",
+          "score": "21.812442702681107600921103887511897246241569774153691917103899083235252293582209"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-01950",
+          "good_primes_used": 37,
+          "height": 1327,
+          "last_numerical_prime": 199,
+          "parameter_u": "1327/1193",
+          "score": "21.784503913315954724150080469987592330771749851068221345193636121317641343023491"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-01847",
+          "good_primes_used": 36,
+          "height": 557,
+          "last_numerical_prime": 199,
+          "parameter_u": "557/199",
+          "score": "21.749025039087284476957390361402716164622909138443498209735244266287600157479470"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-01764",
+          "good_primes_used": 37,
+          "height": 526,
+          "last_numerical_prime": 199,
+          "parameter_u": "223/526",
+          "score": "21.723006096545230541322199631234821969345071365299931863557003260342054702600491"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-00628",
+          "good_primes_used": 36,
+          "height": 908,
+          "last_numerical_prime": 199,
+          "parameter_u": "535/908",
+          "score": "21.699413899543595409527195277009493374024380143143979005154617096021798836192331"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-crt-01965",
+          "good_primes_used": 38,
+          "height": 1321,
+          "last_numerical_prime": 199,
+          "parameter_u": "1321/1052",
+          "score": "21.694192684720247941151559933391779964852868628535775355170162320892805533077082"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-01487",
+          "good_primes_used": 37,
+          "height": 821,
+          "last_numerical_prime": 199,
+          "parameter_u": "821/797",
+          "score": "21.647328286037565737241118234490739586914648607191587492084799593229742665543096"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-00499",
+          "good_primes_used": 37,
+          "height": 443,
+          "last_numerical_prime": 199,
+          "parameter_u": "233/443",
+          "score": "21.601770125900805893151978209834928573168058469146715076235774239378656608022780"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-01590",
+          "good_primes_used": 36,
+          "height": 412,
+          "last_numerical_prime": 199,
+          "parameter_u": "15/412",
+          "score": "21.597500943572981394089498524883281288677710440968090454777747484083498605458538"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-00522",
+          "good_primes_used": 37,
+          "height": 613,
+          "last_numerical_prime": 199,
+          "parameter_u": "288/613",
+          "score": "21.588458170133586739368827911435443200655560008488566862750419597077242712896038"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-00981",
+          "good_primes_used": 36,
+          "height": 683,
+          "last_numerical_prime": 199,
+          "parameter_u": "316/683",
+          "score": "21.574622959636669505961394913840715322459417476366322636244947507542677744304606"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-crt-00193",
+          "good_primes_used": 35,
+          "height": 647,
+          "last_numerical_prime": 199,
+          "parameter_u": "647/423",
+          "score": "21.554978933588678310475770974624831506493830805208953981540514995603992493146237"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-01019",
+          "good_primes_used": 37,
+          "height": 633,
+          "last_numerical_prime": 199,
+          "parameter_u": "433/633",
+          "score": "21.524089474479539092994134082186120274377471920107846957542773373137933918535283"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-01517",
+          "good_primes_used": 36,
+          "height": 431,
+          "last_numerical_prime": 199,
+          "parameter_u": "431/201",
+          "score": "21.504318117830567705395668570877993227082167900096533351807550015797637333131787"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-crt-01316",
+          "good_primes_used": 34,
+          "height": 629,
+          "last_numerical_prime": 199,
+          "parameter_u": "597/629",
+          "score": "21.498175795445268451020543855605577269868348870933940473010644968995759138955771"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-00310",
+          "good_primes_used": 36,
+          "height": 753,
+          "last_numerical_prime": 199,
+          "parameter_u": "46/753",
+          "score": "21.498103848548660785888327617197286522022002949312171452105307471719868500314011"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-01759",
+          "good_primes_used": 37,
+          "height": 467,
+          "last_numerical_prime": 199,
+          "parameter_u": "317/467",
+          "score": "21.497255950275693183341180470627330740364224348570573830876738129585461262798885"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-crt-00549",
+          "good_primes_used": 38,
+          "height": 634,
+          "last_numerical_prime": 199,
+          "parameter_u": "634/457",
+          "score": "21.455652483483604900477774473788311937095432037064191036425667064079236715027319"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-crt-01015",
+          "good_primes_used": 35,
+          "height": 547,
+          "last_numerical_prime": 199,
+          "parameter_u": "547/298",
+          "score": "21.415060798527123281138904336420453055601328284109495249456799768880862445435747"
+        },
+        {
+          "bad_primes_skipped": 6,
+          "candidate_id": "nagao-crt-00248",
+          "good_primes_used": 38,
+          "height": 1977,
+          "last_numerical_prime": 199,
+          "parameter_u": "1977/1949",
+          "score": "21.408349552435455619102519887078867920907836337702846968830684440099626301558713"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-crt-00485",
+          "good_primes_used": 35,
+          "height": 824,
+          "last_numerical_prime": 199,
+          "parameter_u": "201/824",
+          "score": "21.394964742586522538606646086573091884712912181185447496456180236033149761432465"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-00017",
+          "good_primes_used": 37,
+          "height": 449,
+          "last_numerical_prime": 199,
+          "parameter_u": "449/421",
+          "score": "21.394861412348037058306392793220233913247994384332006660800213114952897616575957"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-00504",
+          "good_primes_used": 37,
+          "height": 557,
+          "last_numerical_prime": 199,
+          "parameter_u": "557/522",
+          "score": "21.376850572101604590090743338566531827282665620357511278958495739368476412260571"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-00895",
+          "good_primes_used": 36,
+          "height": 362,
+          "last_numerical_prime": 199,
+          "parameter_u": "362/223",
+          "score": "21.336968871683849841529320098808007103760189346075926137164309537792122639969181"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-01093",
+          "good_primes_used": 36,
+          "height": 397,
+          "last_numerical_prime": 199,
+          "parameter_u": "397/92",
+          "score": "21.332088661779073298241481180327364834532852315335945244418657076766447999957672"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-00088",
+          "good_primes_used": 37,
+          "height": 512,
+          "last_numerical_prime": 199,
+          "parameter_u": "183/512",
+          "score": "21.325389879088666391551870517111992741919930413069839545702542895423931666558794"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-crt-01939",
+          "good_primes_used": 34,
+          "height": 573,
+          "last_numerical_prime": 199,
+          "parameter_u": "316/573",
+          "score": "21.296282835367777469444658897769762894995715772609884069478536891029489110225952"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-01749",
+          "good_primes_used": 37,
+          "height": 2165,
+          "last_numerical_prime": 199,
+          "parameter_u": "2165/1699",
+          "score": "21.292588160148933539617984801082037434416148178880964735577224501015477052028062"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-01009",
+          "good_primes_used": 37,
+          "height": 753,
+          "last_numerical_prime": 199,
+          "parameter_u": "753/79",
+          "score": "21.291384839282059259567640471782289153239602353173988369601984169335037870059807"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-00691",
+          "good_primes_used": 37,
+          "height": 422,
+          "last_numerical_prime": 199,
+          "parameter_u": "422",
+          "score": "20.979822265100614860076460462470605232186298918356405317600943793812309160786779"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-crt-00726",
+          "good_primes_used": 35,
+          "height": 339,
+          "last_numerical_prime": 199,
+          "parameter_u": "339/5",
+          "score": "20.284340298665419643971089191746463226938789639858103190973082515282900655391285"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-01436",
+          "good_primes_used": 37,
+          "height": 1075,
+          "last_numerical_prime": 199,
+          "parameter_u": "1075/12",
+          "score": "19.791837221527438976272242161378588155820104156679336002920594164096607219821923"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-crt-00650",
+          "good_primes_used": 35,
+          "height": 613,
+          "last_numerical_prime": 199,
+          "parameter_u": "613/2",
+          "score": "19.580733875339260285338793970898324289409974414803842578036557081061826318479310"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-crt-00802",
+          "good_primes_used": 34,
+          "height": 179,
+          "last_numerical_prime": 199,
+          "parameter_u": "179/2",
+          "score": "19.283914550047867039143361558883604723240758976347135578241282638030714871786931"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-crt-01924",
+          "good_primes_used": 35,
+          "height": 118,
+          "last_numerical_prime": 199,
+          "parameter_u": "118",
+          "score": "18.952525805108273997598225683942207990053167326216967570925257732884748820068989"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-00409",
+          "good_primes_used": 36,
+          "height": 316,
+          "last_numerical_prime": 199,
+          "parameter_u": "316",
+          "score": "18.947131836020152704789163952395859973088278748209357036131149265609640947746691"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-crt-01951",
+          "good_primes_used": 34,
+          "height": 436,
+          "last_numerical_prime": 199,
+          "parameter_u": "436/5",
+          "score": "17.680142760603389232780977083891121549632500132170823980245022528720156051783263"
+        }
+      ]
+    },
+    {
+      "cutoff": 1000,
+      "keep_count": 16,
+      "population_scored": 72,
+      "retained": [
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-crt-00628",
+          "good_primes_used": 156,
+          "height": 908,
+          "last_numerical_prime": 997,
+          "parameter_u": "535/908",
+          "score": "47.861145934554095567188834132661069818669009323426148533608208193814727816689863"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-crt-01759",
+          "good_primes_used": 157,
+          "height": 467,
+          "last_numerical_prime": 997,
+          "parameter_u": "317/467",
+          "score": "47.819400693060432845655826491741410394302361374250883002361024174439257921340183"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-crt-00861",
+          "good_primes_used": 157,
+          "height": 587,
+          "last_numerical_prime": 997,
+          "parameter_u": "587/10",
+          "score": "46.987043655949679078299564447999140751707865638569132819211353121243929546423549"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-01009",
+          "good_primes_used": 158,
+          "height": 753,
+          "last_numerical_prime": 997,
+          "parameter_u": "753/79",
+          "score": "46.419654589446847013340010495795759064187145186226579330703978173666150276858875"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-crt-01140",
+          "good_primes_used": 157,
+          "height": 367,
+          "last_numerical_prime": 997,
+          "parameter_u": "309/367",
+          "score": "44.947055707956991819779305852945972264808206268129629199719158753700866019722479"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-crt-00193",
+          "good_primes_used": 156,
+          "height": 647,
+          "last_numerical_prime": 997,
+          "parameter_u": "647/423",
+          "score": "44.796249855128135872091005667669583974989775001731604033722245724713431603041938"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-01378",
+          "good_primes_used": 158,
+          "height": 401,
+          "last_numerical_prime": 997,
+          "parameter_u": "255/401",
+          "score": "44.705000397414390239381704661524020589447818082202416326026540846828420401548845"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-crt-01301",
+          "good_primes_used": 157,
+          "height": 993,
+          "last_numerical_prime": 997,
+          "parameter_u": "993/739",
+          "score": "44.661018825932834321167522978867113875187524252132186283349832630060174190733076"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-crt-01924",
+          "good_primes_used": 157,
+          "height": 118,
+          "last_numerical_prime": 997,
+          "parameter_u": "118",
+          "score": "43.567147750322383081000284860812079291706756895750969261528361210644378228500669"
+        },
+        {
+          "bad_primes_skipped": 8,
+          "candidate_id": "nagao-crt-00691",
+          "good_primes_used": 158,
+          "height": 422,
+          "last_numerical_prime": 997,
+          "parameter_u": "422",
+          "score": "43.231183747767310072934154743999150823342834723222662930785690225344562431597492"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-crt-00726",
+          "good_primes_used": 156,
+          "height": 339,
+          "last_numerical_prime": 997,
+          "parameter_u": "339/5",
+          "score": "40.789017722189099110656324025536656063159424077195553204535527532277249518967282"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-crt-00650",
+          "good_primes_used": 156,
+          "height": 613,
+          "last_numerical_prime": 997,
+          "parameter_u": "613/2",
+          "score": "40.379520191196031824620380803028600635805971031407385477351708174570666262877896"
+        },
+        {
+          "bad_primes_skipped": 7,
+          "candidate_id": "nagao-crt-01436",
+          "good_primes_used": 159,
+          "height": 1075,
+          "last_numerical_prime": 997,
+          "parameter_u": "1075/12",
+          "score": "39.246123484442694700070786113342671945038456779397867785001208256567764520700714"
+        },
+        {
+          "bad_primes_skipped": 9,
+          "candidate_id": "nagao-crt-00409",
+          "good_primes_used": 157,
+          "height": 316,
+          "last_numerical_prime": 997,
+          "parameter_u": "316",
+          "score": "38.354595071975462352022591185551127724896538524872884866665008772098922615313394"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-crt-00802",
+          "good_primes_used": 156,
+          "height": 179,
+          "last_numerical_prime": 997,
+          "parameter_u": "179/2",
+          "score": "35.968579284104978074412919431283454009613746758794965443466779140535610359396093"
+        },
+        {
+          "bad_primes_skipped": 10,
+          "candidate_id": "nagao-crt-01951",
+          "good_primes_used": 156,
+          "height": 436,
+          "last_numerical_prime": 997,
+          "parameter_u": "436/5",
+          "score": "35.913313977522775873249363765136047728279369570832165395030752226309272312926145"
+        }
+      ]
+    }
+  ],
+  "status": "bounded experiment: exact local root balls and CRT/lattice replay; scores and conductors are computational triage, with no rank claim",
+  "strict_target": {
+    "log_conductor_less_than": "182.72",
+    "rank_at_least": 21
+  },
+  "target_hits": []
+}

@@ -1,0 +1,3246 @@
+{
+  "benchmark": {
+    "parameter": "39508/39",
+    "role": "separate score comparison only; absent from selection",
+    "scores": {
+      "10000": {
+        "score": "106.74618120367013425111836395978645329645795900513534359696370450216815268315944",
+        "source": "separate comparison; never part of survivor selection"
+      },
+      "200": {
+        "score": "26.753348316948763",
+        "source": "separate comparison; never part of survivor selection"
+      },
+      "2000": {
+        "score": "69.525177909308467309212452796603003240670157757980395674449127022665157417833185",
+        "source": "separate comparison; never part of survivor selection"
+      }
+    }
+  },
+  "completed_at_utc": "2026-08-14T06:22:58.679764+00:00",
+  "conductor_errors": [
+    {
+      "error": "Command '['/opt/homebrew/bin/gp', '-q', '-s', '256000000']' timed out after 60.0 seconds",
+      "t": "12418/22585"
+    }
+  ],
+  "conductor_summary": {
+    "below_strict_log_conductor_target": 0,
+    "best_log_conductor": "192.051614237933927168075777620519539899419980217908289300879",
+    "completed": 5,
+    "errors": 1,
+    "requested": 6,
+    "root_number_use": "parity triage only; no rank inference"
+  },
+  "constraint_groups": [
+    {
+      "expected_minimal_discriminant_valuation_at_least": 6,
+      "forced_h_valuation": 18,
+      "modulus": 49,
+      "presented_model_scaling": 1,
+      "prime": 7,
+      "reciprocal_union_density": "49/6",
+      "reduction": "split multiplicative after one minimalizing 7-scaling",
+      "residue_certificates": [
+        {
+          "fixed_divisor_valuation": 18,
+          "minimal_c4_valuation": 0,
+          "minimal_trace": 1,
+          "modulus": 49,
+          "presented_c4_valuation": 4,
+          "presented_c6_valuation": 6,
+          "residue": 7
+        },
+        {
+          "fixed_divisor_valuation": 18,
+          "minimal_c4_valuation": 0,
+          "minimal_trace": 1,
+          "modulus": 49,
+          "presented_c4_valuation": 4,
+          "presented_c6_valuation": 6,
+          "residue": 14
+        },
+        {
+          "fixed_divisor_valuation": 18,
+          "minimal_c4_valuation": 0,
+          "minimal_trace": 1,
+          "modulus": 49,
+          "presented_c4_valuation": 4,
+          "presented_c6_valuation": 6,
+          "residue": 21
+        },
+        {
+          "fixed_divisor_valuation": 18,
+          "minimal_c4_valuation": 0,
+          "minimal_trace": 1,
+          "modulus": 49,
+          "presented_c4_valuation": 4,
+          "presented_c6_valuation": 6,
+          "residue": 28
+        },
+        {
+          "fixed_divisor_valuation": 18,
+          "minimal_c4_valuation": 0,
+          "minimal_trace": 1,
+          "modulus": 49,
+          "presented_c4_valuation": 4,
+          "presented_c6_valuation": 6,
+          "residue": 35
+        },
+        {
+          "fixed_divisor_valuation": 18,
+          "minimal_c4_valuation": 0,
+          "minimal_trace": 1,
+          "modulus": 49,
+          "presented_c4_valuation": 4,
+          "presented_c6_valuation": 6,
+          "residue": 42
+        }
+      ],
+      "residues": [
+        7,
+        14,
+        21,
+        28,
+        35,
+        42
+      ],
+      "union_density": "6/49"
+    },
+    {
+      "expected_minimal_discriminant_valuation_at_least": 4,
+      "forced_h_valuation": 4,
+      "modulus": 11,
+      "presented_model_scaling": 0,
+      "prime": 11,
+      "reciprocal_union_density": "11/3",
+      "reduction": "split multiplicative",
+      "residue_certificates": [
+        {
+          "fixed_divisor_valuation": 4,
+          "minimal_c4_valuation": 0,
+          "minimal_trace": 1,
+          "modulus": 11,
+          "presented_c4_valuation": 0,
+          "presented_c6_valuation": 0,
+          "residue": 0
+        },
+        {
+          "fixed_divisor_valuation": 4,
+          "minimal_c4_valuation": 0,
+          "minimal_trace": 1,
+          "modulus": 11,
+          "presented_c4_valuation": 0,
+          "presented_c6_valuation": 0,
+          "residue": 5
+        },
+        {
+          "fixed_divisor_valuation": 4,
+          "minimal_c4_valuation": 0,
+          "minimal_trace": 1,
+          "modulus": 11,
+          "presented_c4_valuation": 0,
+          "presented_c6_valuation": 0,
+          "residue": 6
+        }
+      ],
+      "residues": [
+        0,
+        5,
+        6
+      ],
+      "union_density": "3/11"
+    },
+    {
+      "expected_minimal_discriminant_valuation_at_least": 4,
+      "forced_h_valuation": 4,
+      "modulus": 17,
+      "presented_model_scaling": 0,
+      "prime": 17,
+      "reciprocal_union_density": "17/2",
+      "reduction": "split multiplicative",
+      "residue_certificates": [
+        {
+          "fixed_divisor_valuation": 4,
+          "minimal_c4_valuation": 0,
+          "minimal_trace": 1,
+          "modulus": 17,
+          "presented_c4_valuation": 0,
+          "presented_c6_valuation": 0,
+          "residue": 1
+        },
+        {
+          "fixed_divisor_valuation": 4,
+          "minimal_c4_valuation": 0,
+          "minimal_trace": 1,
+          "modulus": 17,
+          "presented_c4_valuation": 0,
+          "presented_c6_valuation": 0,
+          "residue": 16
+        }
+      ],
+      "residues": [
+        1,
+        16
+      ],
+      "union_density": "2/17"
+    },
+    {
+      "expected_minimal_discriminant_valuation_at_least": 4,
+      "forced_h_valuation": 4,
+      "modulus": 19,
+      "presented_model_scaling": 0,
+      "prime": 19,
+      "reciprocal_union_density": "19/2",
+      "reduction": "split multiplicative",
+      "residue_certificates": [
+        {
+          "fixed_divisor_valuation": 4,
+          "minimal_c4_valuation": 0,
+          "minimal_trace": 1,
+          "modulus": 19,
+          "presented_c4_valuation": 0,
+          "presented_c6_valuation": 0,
+          "residue": 5
+        },
+        {
+          "fixed_divisor_valuation": 4,
+          "minimal_c4_valuation": 0,
+          "minimal_trace": 1,
+          "modulus": 19,
+          "presented_c4_valuation": 0,
+          "presented_c6_valuation": 0,
+          "residue": 14
+        }
+      ],
+      "residues": [
+        5,
+        14
+      ],
+      "union_density": "2/19"
+    },
+    {
+      "expected_minimal_discriminant_valuation_at_least": 3,
+      "forced_h_valuation": 3,
+      "modulus": 37,
+      "presented_model_scaling": 0,
+      "prime": 37,
+      "reciprocal_union_density": "37/2",
+      "reduction": "split multiplicative",
+      "residue_certificates": [
+        {
+          "fixed_divisor_valuation": 3,
+          "minimal_c4_valuation": 0,
+          "minimal_trace": 1,
+          "modulus": 37,
+          "presented_c4_valuation": 0,
+          "presented_c6_valuation": 0,
+          "residue": 4
+        },
+        {
+          "fixed_divisor_valuation": 3,
+          "minimal_c4_valuation": 0,
+          "minimal_trace": 1,
+          "modulus": 37,
+          "presented_c4_valuation": 0,
+          "presented_c6_valuation": 0,
+          "residue": 33
+        }
+      ],
+      "residues": [
+        4,
+        33
+      ],
+      "union_density": "2/37"
+    }
+  ],
+  "enumeration": {
+    "candidates_checked_exactly": 23769,
+    "class_population_counts": {
+      "1": 167,
+      "10": 160,
+      "100": 168,
+      "101": 170,
+      "102": 165,
+      "103": 174,
+      "104": 170,
+      "105": 171,
+      "106": 162,
+      "107": 162,
+      "108": 185,
+      "109": 142,
+      "11": 172,
+      "110": 161,
+      "111": 169,
+      "112": 171,
+      "113": 168,
+      "114": 165,
+      "115": 170,
+      "116": 160,
+      "117": 174,
+      "118": 160,
+      "119": 167,
+      "12": 173,
+      "120": 167,
+      "121": 159,
+      "122": 170,
+      "123": 167,
+      "124": 167,
+      "125": 184,
+      "126": 168,
+      "127": 165,
+      "128": 158,
+      "129": 164,
+      "13": 163,
+      "130": 167,
+      "131": 167,
+      "132": 162,
+      "133": 164,
+      "134": 169,
+      "135": 162,
+      "136": 170,
+      "137": 164,
+      "138": 170,
+      "139": 167,
+      "14": 161,
+      "140": 184,
+      "141": 170,
+      "142": 164,
+      "143": 164,
+      "144": 180,
+      "15": 157,
+      "16": 163,
+      "17": 165,
+      "18": 159,
+      "19": 169,
+      "2": 167,
+      "20": 165,
+      "21": 166,
+      "22": 158,
+      "23": 155,
+      "24": 161,
+      "25": 161,
+      "26": 164,
+      "27": 171,
+      "28": 166,
+      "29": 167,
+      "3": 158,
+      "30": 161,
+      "31": 163,
+      "32": 163,
+      "33": 167,
+      "34": 161,
+      "35": 162,
+      "36": 161,
+      "37": 173,
+      "38": 164,
+      "39": 161,
+      "4": 124,
+      "40": 153,
+      "41": 163,
+      "42": 165,
+      "43": 166,
+      "44": 180,
+      "45": 140,
+      "46": 164,
+      "47": 166,
+      "48": 154,
+      "49": 164,
+      "5": 163,
+      "50": 166,
+      "51": 163,
+      "52": 166,
+      "53": 159,
+      "54": 177,
+      "55": 161,
+      "56": 160,
+      "57": 162,
+      "58": 164,
+      "59": 165,
+      "6": 162,
+      "60": 173,
+      "61": 167,
+      "62": 174,
+      "63": 162,
+      "64": 173,
+      "65": 162,
+      "66": 172,
+      "67": 171,
+      "68": 164,
+      "69": 165,
+      "7": 159,
+      "70": 170,
+      "71": 188,
+      "72": 158,
+      "73": 166,
+      "74": 161,
+      "75": 168,
+      "76": 172,
+      "77": 161,
+      "78": 162,
+      "79": 169,
+      "8": 164,
+      "80": 163,
+      "81": 172,
+      "82": 152,
+      "83": 164,
+      "84": 165,
+      "85": 166,
+      "86": 155,
+      "87": 159,
+      "88": 165,
+      "89": 164,
+      "9": 164,
+      "90": 167,
+      "91": 170,
+      "92": 162,
+      "93": 162,
+      "94": 169,
+      "95": 166,
+      "96": 171,
+      "97": 159,
+      "98": 170,
+      "99": 165
+    },
+    "crt_classes": 144,
+    "crt_modulus": 6441589,
+    "definition": "every primitive T=a/b with b>0 and max(abs(a),b)<=height in the 144-class union; T and -T are one identical curve",
+    "elapsed_seconds_including_exact_local_checks": 0.900304,
+    "height": 50000,
+    "local_residue_population_counts": {
+      "11": {
+        "0": 7897,
+        "5": 7901,
+        "6": 7971
+      },
+      "17": {
+        "1": 11918,
+        "16": 11851
+      },
+      "19": {
+        "14": 11925,
+        "5": 11844
+      },
+      "37": {
+        "33": 11887,
+        "4": 11882
+      },
+      "7": {
+        "14": 3916,
+        "21": 4006,
+        "28": 3951,
+        "35": 3995,
+        "42": 4026,
+        "7": 3875
+      }
+    },
+    "maximum_observed_h_valuations": {
+      "11": 8,
+      "17": 7,
+      "19": 8,
+      "37": 6,
+      "7": 24
+    },
+    "minimum_observed_h_valuations": {
+      "11": 4,
+      "17": 4,
+      "19": 4,
+      "37": 3,
+      "7": 18
+    },
+    "negation_orbits_enumerated": 72,
+    "nonsingular_candidates": 23769,
+    "population_and_valuation_sha256": "b3c6751977ca35febe9d4f1d974183226bd0d77ec34321ed9d59244cffe4f086",
+    "primitive_sign_quotiented_candidates": 23769,
+    "sign_normalization": "a>0; no a=0 member occurs in this locus",
+    "singular_candidates": []
+  },
+  "family": "normalized Fermigier--Mestre family, exactly even in T",
+  "finalists": [
+    {
+      "below_strict_log_conductor_target": false,
+      "class_index": 115,
+      "crt_residue": 2506532,
+      "denominator": 17550,
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 4,
+        "37": 3,
+        "7": 19
+      },
+      "height": 25319,
+      "numerator": 25319,
+      "pari": {
+        "conductor": 259104818914626265869419179587314690227809809936260775718739439332258327807453982472037272280893619530045030,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 11,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 7,
+            "tamagawa_number": 7
+          }
+        },
+        "log_conductor": "247.328667450436933387665597448826716083485770234050806018163",
+        "minimal_discriminant": 143598821370385958852197438501133357531110903632793483886772317839244627030006937548999884231948755138851624323636922978525868646067738845584000000000000,
+        "minimal_model": [
+          1,
+          0,
+          0,
+          -446089429086046490908265844299065449638069211054755,
+          3580320319743393722990677404843204446069732053093257481439552855914889874177
+        ],
+        "root_number": 1
+      },
+      "pari_local_constraints_verified": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "rank_status": "not computed or inferred",
+      "residues": {
+        "11": 6,
+        "17": 1,
+        "19": 14,
+        "37": 4,
+        "7": 35
+      },
+      "root_number_role": "parity triage only; no rank inference",
+      "scores": {
+        "10000": {
+          "position_among_stage_input": 1,
+          "primes_used": 1220,
+          "score": "87.148627968948936596735388449648097478958576994673549492834220793187850677930615",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 2
+        },
+        "200": {
+          "position_among_stage_input": 21,
+          "primes_used": 37,
+          "score": "23.662416731171174",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 2
+        },
+        "2000": {
+          "position_among_stage_input": 6,
+          "primes_used": 294,
+          "score": "59.278342240035369097003639663376557078056449430919916170561226836582960454221434",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 2
+        }
+      },
+      "t": "25319/17550"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "class_index": 132,
+      "crt_residue": 5262691,
+      "denominator": 44789,
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 4,
+        "37": 3,
+        "7": 18
+      },
+      "height": 44789,
+      "numerator": 42511,
+      "pari": {
+        "conductor": 1677275214245564257562229106561504887968271958330036210349130199377521234742265883978983859521862216819302989512566668215461326480,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "297.550647576666992508390598213399587679434730661383136188022",
+        "minimal_discriminant": 14040616259308237342100473650986764013055944988632994632005181737643464141085639275303277711257012123257491841419862040942655153851706894558423956611387649033700195251200,
+        "minimal_model": [
+          0,
+          0,
+          0,
+          -205501131719165279343221919146561751664706746252407036243,
+          1119462511577683663038475289638849095513248629561350108173234504625099685970320924642
+        ],
+        "root_number": 1
+      },
+      "pari_local_constraints_verified": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "rank_status": "not computed or inferred",
+      "residues": {
+        "11": 5,
+        "17": 1,
+        "19": 14,
+        "37": 33,
+        "7": 42
+      },
+      "root_number_role": "parity triage only; no rank inference",
+      "scores": {
+        "10000": {
+          "position_among_stage_input": 2,
+          "primes_used": 1219,
+          "score": "83.757835465012161365843716418187451437639891062916384127167104317149448253520042",
+          "skipped_bad_primes": 8,
+          "skipped_denominator_primes": 0
+        },
+        "200": {
+          "position_among_stage_input": 158,
+          "primes_used": 37,
+          "score": "22.787879222057118",
+          "skipped_bad_primes": 7,
+          "skipped_denominator_primes": 0
+        },
+        "2000": {
+          "position_among_stage_input": 16,
+          "primes_used": 293,
+          "score": "56.349987522460457158518185960733973952629491196012608104074208170618375201097350",
+          "skipped_bad_primes": 8,
+          "skipped_denominator_primes": 0
+        }
+      },
+      "t": "42511/44789"
+    },
+    {
+      "class_index": 15,
+      "crt_residue": 5956153,
+      "denominator": 22585,
+      "h_valuations": {
+        "11": 5,
+        "17": 4,
+        "19": 4,
+        "37": 3,
+        "7": 18
+      },
+      "height": 22585,
+      "numerator": 12418,
+      "residues": {
+        "11": 5,
+        "17": 16,
+        "19": 14,
+        "37": 4,
+        "7": 7
+      },
+      "scores": {
+        "10000": {
+          "position_among_stage_input": 3,
+          "primes_used": 1218,
+          "score": "82.765700327878746736012853591465563014896208520368503893731616799829625351583462",
+          "skipped_bad_primes": 7,
+          "skipped_denominator_primes": 2
+        },
+        "200": {
+          "position_among_stage_input": 42,
+          "primes_used": 37,
+          "score": "23.467208401899867",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "position_among_stage_input": 1,
+          "primes_used": 294,
+          "score": "61.532314790524686461217390734835861963933886193704633377736681571658483733005765",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        }
+      },
+      "t": "12418/22585"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "class_index": 47,
+      "crt_residue": 2777187,
+      "denominator": 24867,
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 5,
+        "37": 3,
+        "7": 19
+      },
+      "height": 33460,
+      "numerator": 33460,
+      "pari": {
+        "conductor": 1129699166833471360568163289867796033349479115141667367464488801873500328928456861518303492631806104946433280727228210,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 11,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 7,
+            "tamagawa_number": 7
+          }
+        },
+        "log_conductor": "269.524407253542507573187722696764837022979079787757099576619",
+        "minimal_discriminant": 2522514458696810013325056725246658564665905267173205114264437973168590677045165209764216116422012867547498371975993245880328371990675474821694214894884015762500,
+        "minimal_model": [
+          1,
+          0,
+          1,
+          -115960939807206568774729311253705353236160123617244978,
+          15005704893429659414443779200332855317630864866380993683602593817398047987085648
+        ],
+        "root_number": 1
+      },
+      "pari_local_constraints_verified": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "rank_status": "not computed or inferred",
+      "residues": {
+        "11": 6,
+        "17": 16,
+        "19": 14,
+        "37": 4,
+        "7": 14
+      },
+      "root_number_role": "parity triage only; no rank inference",
+      "scores": {
+        "10000": {
+          "position_among_stage_input": 4,
+          "primes_used": 1219,
+          "score": "82.500803895901793897423243356581384009504401618222861820618023252857996984561089",
+          "skipped_bad_primes": 7,
+          "skipped_denominator_primes": 1
+        },
+        "200": {
+          "position_among_stage_input": 130,
+          "primes_used": 37,
+          "score": "22.905835563155748",
+          "skipped_bad_primes": 7,
+          "skipped_denominator_primes": 0
+        },
+        "2000": {
+          "position_among_stage_input": 17,
+          "primes_used": 293,
+          "score": "56.264549720157288415922540244797228666415352487553430720587805919081675105959433",
+          "skipped_bad_primes": 7,
+          "skipped_denominator_primes": 1
+        }
+      },
+      "t": "33460/24867"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "class_index": 29,
+      "crt_residue": 927927,
+      "denominator": 479,
+      "h_valuations": {
+        "11": 5,
+        "17": 5,
+        "19": 4,
+        "37": 3,
+        "7": 18
+      },
+      "height": 7392,
+      "numerator": 7392,
+      "pari": {
+        "conductor": 255244447957196283809239176043145510379353794637841819373391624115811169718767870910,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 9,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 5,
+            "tamagawa_number": 5
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 10,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 6,
+            "tamagawa_number": 6
+          }
+        },
+        "log_conductor": "192.051614237933927168075777620519539899419980217908289300879",
+        "minimal_discriminant": 16755214335438204106966160978239890526596396207898672178379099140731151153258476424497454839507604407361145763990963200,
+        "minimal_model": [
+          1,
+          1,
+          0,
+          -2199560632830212924403495574942336870083,
+          39214172492259909690569518103040312113416696688010252781773
+        ],
+        "root_number": -1
+      },
+      "pari_local_constraints_verified": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "rank_status": "not computed or inferred",
+      "residues": {
+        "11": 0,
+        "17": 16,
+        "19": 5,
+        "37": 4,
+        "7": 14
+      },
+      "root_number_role": "parity triage only; no rank inference",
+      "scores": {
+        "10000": {
+          "position_among_stage_input": 5,
+          "primes_used": 1217,
+          "score": "81.282076897329380732210921616661338514519879208038293282167731585682163913036072",
+          "skipped_bad_primes": 9,
+          "skipped_denominator_primes": 1
+        },
+        "200": {
+          "position_among_stage_input": 15,
+          "primes_used": 36,
+          "score": "23.897952444426789",
+          "skipped_bad_primes": 8,
+          "skipped_denominator_primes": 0
+        },
+        "2000": {
+          "position_among_stage_input": 2,
+          "primes_used": 291,
+          "score": "61.467543570396925813183280893255771696623378956912694471486784056044887351621437",
+          "skipped_bad_primes": 9,
+          "skipped_denominator_primes": 1
+        }
+      },
+      "t": "7392/479"
+    },
+    {
+      "below_strict_log_conductor_target": false,
+      "class_index": 12,
+      "crt_residue": 661556,
+      "denominator": 47137,
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 4,
+        "37": 3,
+        "7": 19
+      },
+      "height": 47137,
+      "numerator": 32823,
+      "pari": {
+        "conductor": 389904012626453608040408029566227686983816839861386061491786391628060324293268447769049619147292075344097261929721532156346857662320,
+        "local_reduction": {
+          "11": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "17": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "19": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 8,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 4,
+            "tamagawa_number": 4
+          },
+          "37": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 7,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 3,
+            "tamagawa_number": 3
+          },
+          "7": {
+            "conductor_exponent": 1,
+            "ellap": 1,
+            "kodaira_code": 11,
+            "minimal_c4_valuation": 0,
+            "minimal_discriminant_valuation": 7,
+            "tamagawa_number": 7
+          }
+        },
+        "log_conductor": "302.999377583592093838474599847459897509385525312788141710954",
+        "minimal_discriminant": 47860669466231447402288513514511590132930305735882464135482150790914463627244179324395169738685962963809899357672304656186815954255590003480428396598240349394707016524800,
+        "minimal_model": [
+          0,
+          -1,
+          0,
+          -309270303323309934447331874454203149117593185423815020936,
+          2066784953045072735174231329477839345907022295798471611322236603873858837641730202240
+        ],
+        "root_number": 1
+      },
+      "pari_local_constraints_verified": {
+        "11": true,
+        "17": true,
+        "19": true,
+        "37": true,
+        "7": true
+      },
+      "rank_status": "not computed or inferred",
+      "residues": {
+        "11": 5,
+        "17": 1,
+        "19": 14,
+        "37": 33,
+        "7": 7
+      },
+      "root_number_role": "parity triage only; no rank inference",
+      "scores": {
+        "10000": {
+          "position_among_stage_input": 6,
+          "primes_used": 1220,
+          "score": "81.159473816515069285576294561700596308586268716014614474697908326299870840419929",
+          "skipped_bad_primes": 7,
+          "skipped_denominator_primes": 0
+        },
+        "200": {
+          "position_among_stage_input": 217,
+          "primes_used": 37,
+          "score": "22.612438348250691",
+          "skipped_bad_primes": 7,
+          "skipped_denominator_primes": 0
+        },
+        "2000": {
+          "position_among_stage_input": 11,
+          "primes_used": 294,
+          "score": "57.015595141695282257868919614359490813693652931837507903444852424235620732188242",
+          "skipped_bad_primes": 7,
+          "skipped_denominator_primes": 0
+        }
+      },
+      "t": "32823/47137"
+    },
+    {
+      "class_index": 117,
+      "crt_residue": 4859806,
+      "denominator": 38215,
+      "h_valuations": {
+        "11": 4,
+        "17": 6,
+        "19": 4,
+        "37": 3,
+        "7": 18
+      },
+      "height": 38215,
+      "numerator": 33831,
+      "residues": {
+        "11": 6,
+        "17": 16,
+        "19": 5,
+        "37": 4,
+        "7": 35
+      },
+      "scores": {
+        "10000": {
+          "position_among_stage_input": 7,
+          "primes_used": 1220,
+          "score": "80.640519521390553281135911090934234642703290603823588065060539783821241432782331",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 2
+        },
+        "200": {
+          "position_among_stage_input": 161,
+          "primes_used": 38,
+          "score": "22.776958366016114",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "position_among_stage_input": 21,
+          "primes_used": 295,
+          "score": "55.720081203033615452889581342192374088345391057957537430210503296004646594093789",
+          "skipped_bad_primes": 5,
+          "skipped_denominator_primes": 1
+        }
+      },
+      "t": "33831/38215"
+    },
+    {
+      "class_index": 6,
+      "crt_residue": 4186028,
+      "denominator": 16307,
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 4,
+        "37": 4,
+        "7": 18
+      },
+      "height": 39963,
+      "numerator": 39963,
+      "residues": {
+        "11": 0,
+        "17": 16,
+        "19": 5,
+        "37": 33,
+        "7": 7
+      },
+      "scores": {
+        "10000": {
+          "position_among_stage_input": 8,
+          "primes_used": 1219,
+          "score": "80.597932524077778862837991480396747950205835965503170154445787944621528781579705",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 2
+        },
+        "200": {
+          "position_among_stage_input": 153,
+          "primes_used": 37,
+          "score": "22.814874897557264",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "position_among_stage_input": 28,
+          "primes_used": 293,
+          "score": "55.293296771840023178027512445273602015258729050958338304856863193285825779770091",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 2
+        }
+      },
+      "t": "39963/16307"
+    },
+    {
+      "class_index": 23,
+      "crt_residue": 1856960,
+      "denominator": 2064,
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 5,
+        "37": 3,
+        "7": 18
+      },
+      "height": 19985,
+      "numerator": 19985,
+      "residues": {
+        "11": 6,
+        "17": 16,
+        "19": 14,
+        "37": 4,
+        "7": 7
+      },
+      "scores": {
+        "10000": {
+          "position_among_stage_input": 9,
+          "primes_used": 1218,
+          "score": "80.404243881368177885879962247011725308238182560188529321091111904101685972657293",
+          "skipped_bad_primes": 8,
+          "skipped_denominator_primes": 1
+        },
+        "200": {
+          "position_among_stage_input": 85,
+          "primes_used": 36,
+          "score": "23.164994929040898",
+          "skipped_bad_primes": 7,
+          "skipped_denominator_primes": 1
+        },
+        "2000": {
+          "position_among_stage_input": 19,
+          "primes_used": 293,
+          "score": "56.099465150091591416783244277119520168188203139695396499611583377785574617229641",
+          "skipped_bad_primes": 7,
+          "skipped_denominator_primes": 1
+        }
+      },
+      "t": "19985/2064"
+    },
+    {
+      "class_index": 6,
+      "crt_residue": 4186028,
+      "denominator": 11512,
+      "h_valuations": {
+        "11": 4,
+        "17": 4,
+        "19": 4,
+        "37": 3,
+        "7": 19
+      },
+      "height": 27027,
+      "numerator": 27027,
+      "residues": {
+        "11": 0,
+        "17": 16,
+        "19": 5,
+        "37": 33,
+        "7": 7
+      },
+      "scores": {
+        "10000": {
+          "position_among_stage_input": 10,
+          "primes_used": 1220,
+          "score": "80.116896113077013212734229153229146025826112303021690357730790296801599573424701",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        },
+        "200": {
+          "position_among_stage_input": 79,
+          "primes_used": 38,
+          "score": "23.233713119367341",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 0
+        },
+        "2000": {
+          "position_among_stage_input": 24,
+          "primes_used": 294,
+          "score": "55.325366884255136128112008573460923054738579769227296081430024681872197907879541",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 1
+        }
+      },
+      "t": "27027/11512"
+    },
+    {
+      "class_index": 132,
+      "crt_residue": 5262691,
+      "denominator": 38937,
+      "h_valuations": {
+        "11": 5,
+        "17": 5,
+        "19": 5,
+        "37": 3,
+        "7": 18
+      },
+      "height": 38937,
+      "numerator": 11788,
+      "residues": {
+        "11": 5,
+        "17": 1,
+        "19": 14,
+        "37": 33,
+        "7": 42
+      },
+      "scores": {
+        "10000": {
+          "position_among_stage_input": 11,
+          "primes_used": 1221,
+          "score": "79.531765578744335427523731349031383653581311199257207276667796656023227830168051",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 0
+        },
+        "200": {
+          "position_among_stage_input": 146,
+          "primes_used": 38,
+          "score": "22.845966318384921",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 0
+        },
+        "2000": {
+          "position_among_stage_input": 9,
+          "primes_used": 295,
+          "score": "57.704356901744629775679658717839112312988195687555853027277034821018784481286182",
+          "skipped_bad_primes": 6,
+          "skipped_denominator_primes": 0
+        }
+      },
+      "t": "11788/38937"
+    },
+    {
+      "class_index": 75,
+      "crt_residue": 415107,
+      "denominator": 23339,
+      "h_valuations": {
+        "11": 5,
+        "17": 5,
+        "19": 5,
+        "37": 3,
+        "7": 18
+      },
+      "height": 32417,
+      "numerator": 32417,
+      "residues": {
+        "11": 0,
+        "17": 1,
+        "19": 14,
+        "37": 4,
+        "7": 28
+      },
+      "scores": {
+        "10000": {
+          "position_among_stage_input": 12,
+          "primes_used": 1220,
+          "score": "79.380933004481150300007624191905897883361497848946123871282956604443321376166956",
+          "skipped_bad_primes": 7,
+          "skipped_denominator_primes": 0
+        },
+        "200": {
+          "position_among_stage_input": 43,
+          "primes_used": 37,
+          "score": "23.46203182557749",
+          "skipped_bad_primes": 7,
+          "skipped_denominator_primes": 0
+        },
+        "2000": {
+          "position_among_stage_input": 30,
+          "primes_used": 294,
+          "score": "55.003040856936445511894028515603862330698675133882515220813018179847952920712378",
+          "skipped_bad_primes": 7,
+          "skipped_denominator_primes": 0
+        }
+      },
+      "t": "32417/23339"
+    }
+  ],
+  "parameters": {
+    "conductor_count": 6,
+    "conductor_timeout_seconds_per_candidate": 60.0,
+    "height": 50000,
+    "keep_counts": [
+      256,
+      32,
+      12
+    ],
+    "output": "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic_fermigier_multiple_root_height_h50000.json",
+    "pari_stack_bytes": 256000000,
+    "score_timeout_seconds_per_batch": 300.0,
+    "stage_cutoffs": [
+      200,
+      2000,
+      10000
+    ]
+  },
+  "reproducing_command": "/opt/homebrew/opt/python@3.14/bin/python3.14 elliptic-curves/cas/exhaustive_multiple_root_height.py",
+  "schema_version": 1,
+  "score_definition": {
+    "formula": "sum_{5<=p<=B, p not dividing b, good reduction} ((2-a_p)/(p+1-a_p))*log(p)",
+    "prime_bound_semantics": "numerical prime cutoff p<=B",
+    "rank_inference": "none",
+    "selection_protocol": "the complete nonsingular height-box population enters stage one; each later stage receives only the retained prefix of its immediate predecessor"
+  },
+  "script_sha256": "16108f104a2bc5f53c85b4e2aedcee3dc12d2bef124045ee07a5fd1d4697639c",
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6",
+    "python_implementation": "CPython"
+  },
+  "stages": [
+    {
+      "benchmark": {
+        "score": "26.753348316948763",
+        "source": "separate comparison; never part of survivor selection"
+      },
+      "best": {
+        "height": 39459,
+        "position": 1,
+        "score": "25.03108751790662",
+        "t": "39459/3436"
+      },
+      "elapsed_seconds": 1.110656,
+      "engine": "dependency-light exact finite-field tables",
+      "input_count": 23769,
+      "numeric_prime_cutoff": 200,
+      "requested_keep_count": 256,
+      "retained": [
+        {
+          "height": 39459,
+          "position": 1,
+          "score": "25.03108751790662",
+          "t": "39459/3436"
+        },
+        {
+          "height": 4319,
+          "position": 2,
+          "score": "24.869763346961761",
+          "t": "4319/613"
+        },
+        {
+          "height": 29789,
+          "position": 3,
+          "score": "24.679998590855003",
+          "t": "12194/29789"
+        },
+        {
+          "height": 45556,
+          "position": 4,
+          "score": "24.431004668162043",
+          "t": "45556/40855"
+        },
+        {
+          "height": 38395,
+          "position": 5,
+          "score": "24.423028716565089",
+          "t": "38395/28687"
+        },
+        {
+          "height": 14938,
+          "position": 6,
+          "score": "24.22605570576475",
+          "t": "14938/719"
+        },
+        {
+          "height": 47698,
+          "position": 7,
+          "score": "24.208175866700259",
+          "t": "47698/36733"
+        },
+        {
+          "height": 49778,
+          "position": 8,
+          "score": "24.157920642731192",
+          "t": "40271/49778"
+        },
+        {
+          "height": 33033,
+          "position": 9,
+          "score": "24.149723329572268",
+          "t": "33033/10691"
+        },
+        {
+          "height": 20960,
+          "position": 10,
+          "score": "24.093155223173284",
+          "t": "17647/20960"
+        },
+        {
+          "height": 40271,
+          "position": 11,
+          "score": "24.052553472340197",
+          "t": "40271/13925"
+        },
+        {
+          "height": 20020,
+          "position": 12,
+          "score": "24.045934001854132",
+          "t": "20020/19119"
+        },
+        {
+          "height": 12677,
+          "position": 13,
+          "score": "24.037636854482969",
+          "t": "12677/947"
+        },
+        {
+          "height": 39515,
+          "position": 14,
+          "score": "23.923418135814405",
+          "t": "39515/36251"
+        },
+        {
+          "height": 7392,
+          "position": 15,
+          "score": "23.897952444426789",
+          "t": "7392/479"
+        },
+        {
+          "height": 17192,
+          "position": 16,
+          "score": "23.761075366538638",
+          "t": "17192/11735"
+        },
+        {
+          "height": 28119,
+          "position": 17,
+          "score": "23.748794225069251",
+          "t": "28119/7243"
+        },
+        {
+          "height": 12069,
+          "position": 18,
+          "score": "23.70772987805351",
+          "t": "11627/12069"
+        },
+        {
+          "height": 48458,
+          "position": 19,
+          "score": "23.693048078553513",
+          "t": "13013/48458"
+        },
+        {
+          "height": 25179,
+          "position": 20,
+          "score": "23.681453612903557",
+          "t": "25179/9199"
+        },
+        {
+          "height": 25319,
+          "position": 21,
+          "score": "23.662416731171174",
+          "t": "25319/17550"
+        },
+        {
+          "height": 11909,
+          "position": 22,
+          "score": "23.657912026052593",
+          "t": "1386/11909"
+        },
+        {
+          "height": 18942,
+          "position": 23,
+          "score": "23.649828656629964",
+          "t": "18942/10009"
+        },
+        {
+          "height": 10325,
+          "position": 24,
+          "score": "23.641587845890442",
+          "t": "10325/1609"
+        },
+        {
+          "height": 13809,
+          "position": 25,
+          "score": "23.636105431347278",
+          "t": "13510/13809"
+        },
+        {
+          "height": 8421,
+          "position": 26,
+          "score": "23.584478742643011",
+          "t": "8421/6007"
+        },
+        {
+          "height": 37795,
+          "position": 27,
+          "score": "23.572472047609711",
+          "t": "21203/37795"
+        },
+        {
+          "height": 16447,
+          "position": 28,
+          "score": "23.569030959952027",
+          "t": "7217/16447"
+        },
+        {
+          "height": 25683,
+          "position": 29,
+          "score": "23.56629007670313",
+          "t": "25683/10204"
+        },
+        {
+          "height": 46471,
+          "position": 30,
+          "score": "23.560579377385874",
+          "t": "3815/46471"
+        },
+        {
+          "height": 27806,
+          "position": 31,
+          "score": "23.559794914302099",
+          "t": "21273/27806"
+        },
+        {
+          "height": 48587,
+          "position": 32,
+          "score": "23.557614348118218",
+          "t": "48587/14228"
+        },
+        {
+          "height": 45318,
+          "position": 33,
+          "score": "23.554480736669486",
+          "t": "45318/44315"
+        },
+        {
+          "height": 47019,
+          "position": 34,
+          "score": "23.551621522309624",
+          "t": "47019/38774"
+        },
+        {
+          "height": 37243,
+          "position": 35,
+          "score": "23.547151610832458",
+          "t": "21322/37243"
+        },
+        {
+          "height": 19250,
+          "position": 36,
+          "score": "23.530850289552141",
+          "t": "19250/13521"
+        },
+        {
+          "height": 28185,
+          "position": 37,
+          "score": "23.51230274730306",
+          "t": "18242/28185"
+        },
+        {
+          "height": 40089,
+          "position": 38,
+          "score": "23.504618938849195",
+          "t": "40089/6304"
+        },
+        {
+          "height": 1820,
+          "position": 39,
+          "score": "23.496246906395839",
+          "t": "1820/307"
+        },
+        {
+          "height": 19327,
+          "position": 40,
+          "score": "23.492803588158434",
+          "t": "19327/15349"
+        },
+        {
+          "height": 44516,
+          "position": 41,
+          "score": "23.46743637382351",
+          "t": "21665/44516"
+        },
+        {
+          "height": 22585,
+          "position": 42,
+          "score": "23.467208401899867",
+          "t": "12418/22585"
+        },
+        {
+          "height": 32417,
+          "position": 43,
+          "score": "23.46203182557749",
+          "t": "32417/23339"
+        },
+        {
+          "height": 43671,
+          "position": 44,
+          "score": "23.454530400885496",
+          "t": "4928/43671"
+        },
+        {
+          "height": 38521,
+          "position": 45,
+          "score": "23.448623422830003",
+          "t": "38521/3331"
+        },
+        {
+          "height": 41041,
+          "position": 46,
+          "score": "23.446794268970248",
+          "t": "41041/11727"
+        },
+        {
+          "height": 46135,
+          "position": 47,
+          "score": "23.418892751602613",
+          "t": "31878/46135"
+        },
+        {
+          "height": 25219,
+          "position": 48,
+          "score": "23.41834463580842",
+          "t": "18403/25219"
+        },
+        {
+          "height": 28098,
+          "position": 49,
+          "score": "23.415368298382703",
+          "t": "28098/12889"
+        },
+        {
+          "height": 31375,
+          "position": 50,
+          "score": "23.397485482237268",
+          "t": "9394/31375"
+        },
+        {
+          "height": 14347,
+          "position": 51,
+          "score": "23.384878786529523",
+          "t": "1701/14347"
+        },
+        {
+          "height": 19846,
+          "position": 52,
+          "score": "23.381790132711302",
+          "t": "2387/19846"
+        },
+        {
+          "height": 22467,
+          "position": 53,
+          "score": "23.374994860842822",
+          "t": "6776/22467"
+        },
+        {
+          "height": 45268,
+          "position": 54,
+          "score": "23.367287001026238",
+          "t": "35119/45268"
+        },
+        {
+          "height": 26873,
+          "position": 55,
+          "score": "23.366600768767107",
+          "t": "26873/25394"
+        },
+        {
+          "height": 17318,
+          "position": 56,
+          "score": "23.358907427641487",
+          "t": "17318/5717"
+        },
+        {
+          "height": 49126,
+          "position": 57,
+          "score": "23.35797960420517",
+          "t": "49126/49083"
+        },
+        {
+          "height": 25829,
+          "position": 58,
+          "score": "23.356565689244572",
+          "t": "17045/25829"
+        },
+        {
+          "height": 25487,
+          "position": 59,
+          "score": "23.345705127711863",
+          "t": "25487/21628"
+        },
+        {
+          "height": 16940,
+          "position": 60,
+          "score": "23.344086586239019",
+          "t": "16940/4497"
+        },
+        {
+          "height": 13776,
+          "position": 61,
+          "score": "23.334141440478746",
+          "t": "13776/3253"
+        },
+        {
+          "height": 34121,
+          "position": 62,
+          "score": "23.332216578579672",
+          "t": "22302/34121"
+        },
+        {
+          "height": 45052,
+          "position": 63,
+          "score": "23.330222685858637",
+          "t": "45052/13483"
+        },
+        {
+          "height": 29379,
+          "position": 64,
+          "score": "23.326763020188029",
+          "t": "29379/27815"
+        },
+        {
+          "height": 39487,
+          "position": 65,
+          "score": "23.324454800124371",
+          "t": "39487/37923"
+        },
+        {
+          "height": 18661,
+          "position": 66,
+          "score": "23.32367471621011",
+          "t": "6608/18661"
+        },
+        {
+          "height": 43204,
+          "position": 67,
+          "score": "23.321137781968666",
+          "t": "43204/39889"
+        },
+        {
+          "height": 9874,
+          "position": 68,
+          "score": "23.314214087870074",
+          "t": "8197/9874"
+        },
+        {
+          "height": 36491,
+          "position": 69,
+          "score": "23.309010725623406",
+          "t": "36491/29741"
+        },
+        {
+          "height": 20796,
+          "position": 70,
+          "score": "23.305736956794664",
+          "t": "14105/20796"
+        },
+        {
+          "height": 46067,
+          "position": 71,
+          "score": "23.295364876479113",
+          "t": "46067/43789"
+        },
+        {
+          "height": 15757,
+          "position": 72,
+          "score": "23.290301062638232",
+          "t": "15757/4707"
+        },
+        {
+          "height": 47534,
+          "position": 73,
+          "score": "23.282356825373093",
+          "t": "22799/47534"
+        },
+        {
+          "height": 39828,
+          "position": 74,
+          "score": "23.258723626691538",
+          "t": "35567/39828"
+        },
+        {
+          "height": 17338,
+          "position": 75,
+          "score": "23.256996311239636",
+          "t": "9569/17338"
+        },
+        {
+          "height": 47248,
+          "position": 76,
+          "score": "23.250004548907803",
+          "t": "10171/47248"
+        },
+        {
+          "height": 45038,
+          "position": 77,
+          "score": "23.244291600330754",
+          "t": "45038/36341"
+        },
+        {
+          "height": 10805,
+          "position": 78,
+          "score": "23.243283119613508",
+          "t": "9394/10805"
+        },
+        {
+          "height": 27027,
+          "position": 79,
+          "score": "23.233713119367341",
+          "t": "27027/11512"
+        },
+        {
+          "height": 46304,
+          "position": 80,
+          "score": "23.225826057548979",
+          "t": "10255/46304"
+        },
+        {
+          "height": 20209,
+          "position": 81,
+          "score": "23.201765755543246",
+          "t": "20209/8521"
+        },
+        {
+          "height": 42447,
+          "position": 82,
+          "score": "23.195561805249881",
+          "t": "42175/42447"
+        },
+        {
+          "height": 39893,
+          "position": 83,
+          "score": "23.181719280321175",
+          "t": "39893/35065"
+        },
+        {
+          "height": 18165,
+          "position": 84,
+          "score": "23.170765873899573",
+          "t": "18165/536"
+        },
+        {
+          "height": 19985,
+          "position": 85,
+          "score": "23.164994929040898",
+          "t": "19985/2064"
+        },
+        {
+          "height": 37541,
+          "position": 86,
+          "score": "23.163067401496157",
+          "t": "37541/36164"
+        },
+        {
+          "height": 49889,
+          "position": 87,
+          "score": "23.153793893566448",
+          "t": "49889/26276"
+        },
+        {
+          "height": 40619,
+          "position": 88,
+          "score": "23.149063009359306",
+          "t": "21987/40619"
+        },
+        {
+          "height": 10122,
+          "position": 89,
+          "score": "23.146101680955127",
+          "t": "10122/1217"
+        },
+        {
+          "height": 28019,
+          "position": 90,
+          "score": "23.139439362763209",
+          "t": "5103/28019"
+        },
+        {
+          "height": 31353,
+          "position": 91,
+          "score": "23.125564083336453",
+          "t": "31353/8828"
+        },
+        {
+          "height": 36883,
+          "position": 92,
+          "score": "23.124450118536981",
+          "t": "36883/20441"
+        },
+        {
+          "height": 40502,
+          "position": 93,
+          "score": "23.121267016133988",
+          "t": "40502/8849"
+        },
+        {
+          "height": 32877,
+          "position": 94,
+          "score": "23.117966845937055",
+          "t": "4487/32877"
+        },
+        {
+          "height": 7000,
+          "position": 95,
+          "score": "23.116810620807534",
+          "t": "7000/3319"
+        },
+        {
+          "height": 45691,
+          "position": 96,
+          "score": "23.114649425471402",
+          "t": "25879/45691"
+        },
+        {
+          "height": 35461,
+          "position": 97,
+          "score": "23.110593733475405",
+          "t": "9079/35461"
+        },
+        {
+          "height": 18635,
+          "position": 98,
+          "score": "23.089473894342177",
+          "t": "17479/18635"
+        },
+        {
+          "height": 45360,
+          "position": 99,
+          "score": "23.086645156533727",
+          "t": "45360/28471"
+        },
+        {
+          "height": 41045,
+          "position": 100,
+          "score": "23.084904781611169",
+          "t": "34384/41045"
+        },
+        {
+          "height": 32434,
+          "position": 101,
+          "score": "23.055979206156131",
+          "t": "25655/32434"
+        },
+        {
+          "height": 7555,
+          "position": 102,
+          "score": "23.055372838545072",
+          "t": "231/7555"
+        },
+        {
+          "height": 12628,
+          "position": 103,
+          "score": "23.048630961845959",
+          "t": "12628/9965"
+        },
+        {
+          "height": 27337,
+          "position": 104,
+          "score": "23.044479245998232",
+          "t": "5796/27337"
+        },
+        {
+          "height": 40446,
+          "position": 105,
+          "score": "23.040724292067708",
+          "t": "40446/6763"
+        },
+        {
+          "height": 41811,
+          "position": 106,
+          "score": "23.039337191174177",
+          "t": "41811/35011"
+        },
+        {
+          "height": 7322,
+          "position": 107,
+          "score": "23.035558838005283",
+          "t": "7322/3847"
+        },
+        {
+          "height": 14084,
+          "position": 108,
+          "score": "23.035371889143203",
+          "t": "14084/8627"
+        },
+        {
+          "height": 40789,
+          "position": 109,
+          "score": "23.03208932777579",
+          "t": "40789/28503"
+        },
+        {
+          "height": 49917,
+          "position": 110,
+          "score": "23.026020086539884",
+          "t": "49917/33893"
+        },
+        {
+          "height": 43715,
+          "position": 111,
+          "score": "23.025839529746385",
+          "t": "43715/9902"
+        },
+        {
+          "height": 26891,
+          "position": 112,
+          "score": "23.012451282105488",
+          "t": "14980/26891"
+        },
+        {
+          "height": 37117,
+          "position": 113,
+          "score": "23.001963566512281",
+          "t": "1456/37117"
+        },
+        {
+          "height": 34660,
+          "position": 114,
+          "score": "22.996950882418805",
+          "t": "32263/34660"
+        },
+        {
+          "height": 38227,
+          "position": 115,
+          "score": "22.996241906876229",
+          "t": "38227/22587"
+        },
+        {
+          "height": 15581,
+          "position": 116,
+          "score": "22.99568518864498",
+          "t": "9562/15581"
+        },
+        {
+          "height": 39424,
+          "position": 117,
+          "score": "22.972416067252116",
+          "t": "39424/2789"
+        },
+        {
+          "height": 31878,
+          "position": 118,
+          "score": "22.968494563427992",
+          "t": "31878/1669"
+        },
+        {
+          "height": 47251,
+          "position": 119,
+          "score": "22.956535330762744",
+          "t": "8407/47251"
+        },
+        {
+          "height": 46431,
+          "position": 120,
+          "score": "22.955267169487357",
+          "t": "46431/24680"
+        },
+        {
+          "height": 46249,
+          "position": 121,
+          "score": "22.954137113568795",
+          "t": "46249/11331"
+        },
+        {
+          "height": 49293,
+          "position": 122,
+          "score": "22.952605923682416",
+          "t": "4291/49293"
+        },
+        {
+          "height": 41048,
+          "position": 123,
+          "score": "22.944706176876466",
+          "t": "41048/38937"
+        },
+        {
+          "height": 45122,
+          "position": 124,
+          "score": "22.940989290546494",
+          "t": "45122/25581"
+        },
+        {
+          "height": 43043,
+          "position": 125,
+          "score": "22.939880289677387",
+          "t": "43043/1514"
+        },
+        {
+          "height": 39487,
+          "position": 126,
+          "score": "22.926984754739546",
+          "t": "39487/30893"
+        },
+        {
+          "height": 25814,
+          "position": 127,
+          "score": "22.917494670601624",
+          "t": "20783/25814"
+        },
+        {
+          "height": 48839,
+          "position": 128,
+          "score": "22.913454500869566",
+          "t": "48839/24873"
+        },
+        {
+          "height": 21078,
+          "position": 129,
+          "score": "22.912873863706743",
+          "t": "15995/21078"
+        },
+        {
+          "height": 33460,
+          "position": 130,
+          "score": "22.905835563155748",
+          "t": "33460/24867"
+        },
+        {
+          "height": 46655,
+          "position": 131,
+          "score": "22.903172728445803",
+          "t": "46655/5569"
+        },
+        {
+          "height": 42763,
+          "position": 132,
+          "score": "22.894823820120745",
+          "t": "42763/37511"
+        },
+        {
+          "height": 6489,
+          "position": 133,
+          "score": "22.892708767376835",
+          "t": "6489/6268"
+        },
+        {
+          "height": 17793,
+          "position": 134,
+          "score": "22.882193395068352",
+          "t": "10381/17793"
+        },
+        {
+          "height": 42817,
+          "position": 135,
+          "score": "22.880321502808485",
+          "t": "33110/42817"
+        },
+        {
+          "height": 48041,
+          "position": 136,
+          "score": "22.879279031352922",
+          "t": "48041/4353"
+        },
+        {
+          "height": 23723,
+          "position": 137,
+          "score": "22.875209737349635",
+          "t": "23723/16448"
+        },
+        {
+          "height": 17409,
+          "position": 138,
+          "score": "22.872896850851149",
+          "t": "17409/10337"
+        },
+        {
+          "height": 30425,
+          "position": 139,
+          "score": "22.866018111709995",
+          "t": "2079/30425"
+        },
+        {
+          "height": 32865,
+          "position": 140,
+          "score": "22.865568979947177",
+          "t": "32865/10774"
+        },
+        {
+          "height": 36787,
+          "position": 141,
+          "score": "22.864576611859409",
+          "t": "2702/36787"
+        },
+        {
+          "height": 38577,
+          "position": 142,
+          "score": "22.855365148614126",
+          "t": "38577/35653"
+        },
+        {
+          "height": 31220,
+          "position": 143,
+          "score": "22.853805041292045",
+          "t": "31220/29861"
+        },
+        {
+          "height": 43591,
+          "position": 144,
+          "score": "22.852207965438044",
+          "t": "3794/43591"
+        },
+        {
+          "height": 47881,
+          "position": 145,
+          "score": "22.849165381908922",
+          "t": "2541/47881"
+        },
+        {
+          "height": 38937,
+          "position": 146,
+          "score": "22.845966318384921",
+          "t": "11788/38937"
+        },
+        {
+          "height": 39949,
+          "position": 147,
+          "score": "22.845076208981077",
+          "t": "39949/6561"
+        },
+        {
+          "height": 43337,
+          "position": 148,
+          "score": "22.83526940776807",
+          "t": "43337/39759"
+        },
+        {
+          "height": 41349,
+          "position": 149,
+          "score": "22.834154346446912",
+          "t": "41349/1882"
+        },
+        {
+          "height": 8812,
+          "position": 150,
+          "score": "22.832217086129493",
+          "t": "6573/8812"
+        },
+        {
+          "height": 26488,
+          "position": 151,
+          "score": "22.816984934910625",
+          "t": "26488/3181"
+        },
+        {
+          "height": 40146,
+          "position": 152,
+          "score": "22.815985284955737",
+          "t": "11585/40146"
+        },
+        {
+          "height": 39963,
+          "position": 153,
+          "score": "22.814874897557264",
+          "t": "39963/16307"
+        },
+        {
+          "height": 47147,
+          "position": 154,
+          "score": "22.814360293618275",
+          "t": "9730/47147"
+        },
+        {
+          "height": 40972,
+          "position": 155,
+          "score": "22.811592029390258",
+          "t": "13853/40972"
+        },
+        {
+          "height": 47845,
+          "position": 156,
+          "score": "22.809598736081497",
+          "t": "47845/44771"
+        },
+        {
+          "height": 41741,
+          "position": 157,
+          "score": "22.799572151041755",
+          "t": "41741/4210"
+        },
+        {
+          "height": 44789,
+          "position": 158,
+          "score": "22.787879222057118",
+          "t": "42511/44789"
+        },
+        {
+          "height": 27951,
+          "position": 159,
+          "score": "22.787555650866057",
+          "t": "27951/17320"
+        },
+        {
+          "height": 24063,
+          "position": 160,
+          "score": "22.777523555412415",
+          "t": "9716/24063"
+        },
+        {
+          "height": 38215,
+          "position": 161,
+          "score": "22.776958366016114",
+          "t": "33831/38215"
+        },
+        {
+          "height": 49273,
+          "position": 162,
+          "score": "22.773689074622805",
+          "t": "49273/20325"
+        },
+        {
+          "height": 46431,
+          "position": 163,
+          "score": "22.769894422894925",
+          "t": "46431/5623"
+        },
+        {
+          "height": 21329,
+          "position": 164,
+          "score": "22.764288335991569",
+          "t": "21329/16904"
+        },
+        {
+          "height": 38689,
+          "position": 165,
+          "score": "22.763234329775884",
+          "t": "38689/27152"
+        },
+        {
+          "height": 43864,
+          "position": 166,
+          "score": "22.760732364159026",
+          "t": "32151/43864"
+        },
+        {
+          "height": 21193,
+          "position": 167,
+          "score": "22.751329154061221",
+          "t": "7469/21193"
+        },
+        {
+          "height": 41678,
+          "position": 168,
+          "score": "22.744647020838926",
+          "t": "41678/24979"
+        },
+        {
+          "height": 45045,
+          "position": 169,
+          "score": "22.74315848210955",
+          "t": "45045/8699"
+        },
+        {
+          "height": 36901,
+          "position": 170,
+          "score": "22.741394218489415",
+          "t": "18711/36901"
+        },
+        {
+          "height": 3227,
+          "position": 171,
+          "score": "22.735388176657413",
+          "t": "3227/2995"
+        },
+        {
+          "height": 42175,
+          "position": 172,
+          "score": "22.732796196530892",
+          "t": "42175/14401"
+        },
+        {
+          "height": 45673,
+          "position": 173,
+          "score": "22.729364445545194",
+          "t": "3899/45673"
+        },
+        {
+          "height": 27365,
+          "position": 174,
+          "score": "22.729222983153413",
+          "t": "21483/27365"
+        },
+        {
+          "height": 40285,
+          "position": 175,
+          "score": "22.727151064963593",
+          "t": "40285/14173"
+        },
+        {
+          "height": 29251,
+          "position": 176,
+          "score": "22.725853158719154",
+          "t": "21154/29251"
+        },
+        {
+          "height": 19512,
+          "position": 177,
+          "score": "22.725472661543726",
+          "t": "10493/19512"
+        },
+        {
+          "height": 39893,
+          "position": 178,
+          "score": "22.718922920090638",
+          "t": "39893/18230"
+        },
+        {
+          "height": 39905,
+          "position": 179,
+          "score": "22.716882598366148",
+          "t": "38108/39905"
+        },
+        {
+          "height": 40297,
+          "position": 180,
+          "score": "22.71302832889776",
+          "t": "32613/40297"
+        },
+        {
+          "height": 23415,
+          "position": 181,
+          "score": "22.710977925598961",
+          "t": "23415/1796"
+        },
+        {
+          "height": 38149,
+          "position": 182,
+          "score": "22.708551378676599",
+          "t": "1155/38149"
+        },
+        {
+          "height": 40502,
+          "position": 183,
+          "score": "22.702395713953113",
+          "t": "40502/5211"
+        },
+        {
+          "height": 45454,
+          "position": 184,
+          "score": "22.699907740591513",
+          "t": "30009/45454"
+        },
+        {
+          "height": 27803,
+          "position": 185,
+          "score": "22.698305392326045",
+          "t": "4837/27803"
+        },
+        {
+          "height": 34174,
+          "position": 186,
+          "score": "22.697978971587936",
+          "t": "34174/5121"
+        },
+        {
+          "height": 36904,
+          "position": 187,
+          "score": "22.696158134470231",
+          "t": "36904/36247"
+        },
+        {
+          "height": 44765,
+          "position": 188,
+          "score": "22.695919558997907",
+          "t": "44765/29074"
+        },
+        {
+          "height": 41559,
+          "position": 189,
+          "score": "22.691564638864591",
+          "t": "41559/2000"
+        },
+        {
+          "height": 32355,
+          "position": 190,
+          "score": "22.690119701832316",
+          "t": "9737/32355"
+        },
+        {
+          "height": 11793,
+          "position": 191,
+          "score": "22.682262715332609",
+          "t": "182/11793"
+        },
+        {
+          "height": 5844,
+          "position": 192,
+          "score": "22.679679676403953",
+          "t": "4543/5844"
+        },
+        {
+          "height": 33607,
+          "position": 193,
+          "score": "22.678738865087706",
+          "t": "33607/5969"
+        },
+        {
+          "height": 45608,
+          "position": 194,
+          "score": "22.677553150999099",
+          "t": "23695/45608"
+        },
+        {
+          "height": 47445,
+          "position": 195,
+          "score": "22.677056997244435",
+          "t": "13993/47445"
+        },
+        {
+          "height": 32559,
+          "position": 196,
+          "score": "22.676994311701588",
+          "t": "10808/32559"
+        },
+        {
+          "height": 44565,
+          "position": 197,
+          "score": "22.675818163912268",
+          "t": "10514/44565"
+        },
+        {
+          "height": 20963,
+          "position": 198,
+          "score": "22.674551838992713",
+          "t": "9926/20963"
+        },
+        {
+          "height": 41759,
+          "position": 199,
+          "score": "22.672870347803812",
+          "t": "30100/41759"
+        },
+        {
+          "height": 38149,
+          "position": 200,
+          "score": "22.668568119259554",
+          "t": "18529/38149"
+        },
+        {
+          "height": 49307,
+          "position": 201,
+          "score": "22.666848659363275",
+          "t": "46046/49307"
+        },
+        {
+          "height": 21637,
+          "position": 202,
+          "score": "22.655941264243022",
+          "t": "21637/18313"
+        },
+        {
+          "height": 37405,
+          "position": 203,
+          "score": "22.654457077809941",
+          "t": "12551/37405"
+        },
+        {
+          "height": 41041,
+          "position": 204,
+          "score": "22.648205741284304",
+          "t": "41041/21865"
+        },
+        {
+          "height": 42703,
+          "position": 205,
+          "score": "22.646880551205282",
+          "t": "18480/42703"
+        },
+        {
+          "height": 29281,
+          "position": 206,
+          "score": "22.646373127615878",
+          "t": "29281/163"
+        },
+        {
+          "height": 49550,
+          "position": 207,
+          "score": "22.645605389480295",
+          "t": "24577/49550"
+        },
+        {
+          "height": 34461,
+          "position": 208,
+          "score": "22.645476122717454",
+          "t": "34461/31805"
+        },
+        {
+          "height": 39809,
+          "position": 209,
+          "score": "22.642862659233423",
+          "t": "39809/19953"
+        },
+        {
+          "height": 47049,
+          "position": 210,
+          "score": "22.641131525973421",
+          "t": "26663/47049"
+        },
+        {
+          "height": 24028,
+          "position": 211,
+          "score": "22.635771688404347",
+          "t": "11669/24028"
+        },
+        {
+          "height": 27706,
+          "position": 212,
+          "score": "22.628551879736122",
+          "t": "27706/4747"
+        },
+        {
+          "height": 11627,
+          "position": 213,
+          "score": "22.622532313986145",
+          "t": "11627/7615"
+        },
+        {
+          "height": 29566,
+          "position": 214,
+          "score": "22.620406061624745",
+          "t": "13937/29566"
+        },
+        {
+          "height": 44674,
+          "position": 215,
+          "score": "22.619985614569149",
+          "t": "44674/8893"
+        },
+        {
+          "height": 18839,
+          "position": 216,
+          "score": "22.615329571246129",
+          "t": "3465/18839"
+        },
+        {
+          "height": 47137,
+          "position": 217,
+          "score": "22.612438348250691",
+          "t": "32823/47137"
+        },
+        {
+          "height": 32176,
+          "position": 218,
+          "score": "22.612313969451161",
+          "t": "22071/32176"
+        },
+        {
+          "height": 41011,
+          "position": 219,
+          "score": "22.610380123489172",
+          "t": "24878/41011"
+        },
+        {
+          "height": 43533,
+          "position": 220,
+          "score": "22.609217490885236",
+          "t": "43533/32075"
+        },
+        {
+          "height": 39375,
+          "position": 221,
+          "score": "22.607541128557965",
+          "t": "39375/29611"
+        },
+        {
+          "height": 15209,
+          "position": 222,
+          "score": "22.606601409566025",
+          "t": "14903/15209"
+        },
+        {
+          "height": 46639,
+          "position": 223,
+          "score": "22.603933035654947",
+          "t": "19201/46639"
+        },
+        {
+          "height": 26002,
+          "position": 224,
+          "score": "22.603798014133716",
+          "t": "24199/26002"
+        },
+        {
+          "height": 40509,
+          "position": 225,
+          "score": "22.600122298951526",
+          "t": "40509/38167"
+        },
+        {
+          "height": 15889,
+          "position": 226,
+          "score": "22.598957843224103",
+          "t": "861/15889"
+        },
+        {
+          "height": 42683,
+          "position": 227,
+          "score": "22.596863283419516",
+          "t": "38577/42683"
+        },
+        {
+          "height": 49658,
+          "position": 228,
+          "score": "22.587720759066698",
+          "t": "49658/20127"
+        },
+        {
+          "height": 41473,
+          "position": 229,
+          "score": "22.58618537927077",
+          "t": "23331/41473"
+        },
+        {
+          "height": 47221,
+          "position": 230,
+          "score": "22.585948609723019",
+          "t": "2443/47221"
+        },
+        {
+          "height": 18655,
+          "position": 231,
+          "score": "22.585829039202302",
+          "t": "18655/6301"
+        },
+        {
+          "height": 45661,
+          "position": 232,
+          "score": "22.582269915061573",
+          "t": "45661/32607"
+        },
+        {
+          "height": 40991,
+          "position": 233,
+          "score": "22.58130329646395",
+          "t": "7161/40991"
+        },
+        {
+          "height": 48496,
+          "position": 234,
+          "score": "22.580834966661097",
+          "t": "48496/1875"
+        },
+        {
+          "height": 40887,
+          "position": 235,
+          "score": "22.572842155900101",
+          "t": "40887/13190"
+        },
+        {
+          "height": 19718,
+          "position": 236,
+          "score": "22.570551958224264",
+          "t": "4711/19718"
+        },
+        {
+          "height": 25858,
+          "position": 237,
+          "score": "22.568210276364557",
+          "t": "25858/5373"
+        },
+        {
+          "height": 35203,
+          "position": 238,
+          "score": "22.568161551504584",
+          "t": "35203/3778"
+        },
+        {
+          "height": 32909,
+          "position": 239,
+          "score": "22.564937650671062",
+          "t": "13552/32909"
+        },
+        {
+          "height": 5631,
+          "position": 240,
+          "score": "22.56493274496054",
+          "t": "2359/5631"
+        },
+        {
+          "height": 38059,
+          "position": 241,
+          "score": "22.563112916905894",
+          "t": "38059/23362"
+        },
+        {
+          "height": 25933,
+          "position": 242,
+          "score": "22.562933798837655",
+          "t": "5159/25933"
+        },
+        {
+          "height": 36316,
+          "position": 243,
+          "score": "22.5629044186934",
+          "t": "36316/10383"
+        },
+        {
+          "height": 43613,
+          "position": 244,
+          "score": "22.561964926222331",
+          "t": "17535/43613"
+        },
+        {
+          "height": 25855,
+          "position": 245,
+          "score": "22.560716105879262",
+          "t": "16016/25855"
+        },
+        {
+          "height": 47817,
+          "position": 246,
+          "score": "22.559748511011026",
+          "t": "47817/25351"
+        },
+        {
+          "height": 19674,
+          "position": 247,
+          "score": "22.559311140737346",
+          "t": "13027/19674"
+        },
+        {
+          "height": 45801,
+          "position": 248,
+          "score": "22.558636243433924",
+          "t": "45801/23117"
+        },
+        {
+          "height": 43764,
+          "position": 249,
+          "score": "22.556531417611556",
+          "t": "43764/28775"
+        },
+        {
+          "height": 36965,
+          "position": 250,
+          "score": "22.555084094650667",
+          "t": "33789/36965"
+        },
+        {
+          "height": 29092,
+          "position": 251,
+          "score": "22.553237585578525",
+          "t": "29092/5275"
+        },
+        {
+          "height": 9767,
+          "position": 252,
+          "score": "22.550177442515821",
+          "t": "1743/9767"
+        },
+        {
+          "height": 36616,
+          "position": 253,
+          "score": "22.549246830051345",
+          "t": "25179/36616"
+        },
+        {
+          "height": 36681,
+          "position": 254,
+          "score": "22.54561979298051",
+          "t": "17668/36681"
+        },
+        {
+          "height": 39424,
+          "position": 255,
+          "score": "22.545410288420545",
+          "t": "39424/1087"
+        },
+        {
+          "height": 35257,
+          "position": 256,
+          "score": "22.544323442804977",
+          "t": "11935/35257"
+        }
+      ],
+      "retained_count": 256,
+      "worst_retained": {
+        "height": 35257,
+        "position": 256,
+        "score": "22.544323442804977",
+        "t": "11935/35257"
+      }
+    },
+    {
+      "benchmark": {
+        "score": "69.525177909308467309212452796603003240670157757980395674449127022665157417833185",
+        "source": "separate comparison; never part of survivor selection"
+      },
+      "best": {
+        "height": 22585,
+        "position": 1,
+        "score": "61.532314790524686461217390734835861963933886193704633377736681571658483733005765",
+        "t": "12418/22585"
+      },
+      "elapsed_seconds": 0.797176,
+      "engine": "PARI/GP ellap batch on exact minimal models",
+      "input_count": 256,
+      "numeric_prime_cutoff": 2000,
+      "requested_keep_count": 32,
+      "retained": [
+        {
+          "height": 22585,
+          "position": 1,
+          "score": "61.532314790524686461217390734835861963933886193704633377736681571658483733005765",
+          "t": "12418/22585"
+        },
+        {
+          "height": 7392,
+          "position": 2,
+          "score": "61.467543570396925813183280893255771696623378956912694471486784056044887351621437",
+          "t": "7392/479"
+        },
+        {
+          "height": 35257,
+          "position": 3,
+          "score": "60.376588141700715986695181158146560212107768788541106622737603486620700195206201",
+          "t": "11935/35257"
+        },
+        {
+          "height": 42683,
+          "position": 4,
+          "score": "60.054787553452029961556017140991985422859538564023866670688941036081969610598181",
+          "t": "38577/42683"
+        },
+        {
+          "height": 26873,
+          "position": 5,
+          "score": "59.460159165370885473502526047248424386312289602476424074361497102618802160082153",
+          "t": "26873/25394"
+        },
+        {
+          "height": 25319,
+          "position": 6,
+          "score": "59.278342240035369097003639663376557078056449430919916170561226836582960454221434",
+          "t": "25319/17550"
+        },
+        {
+          "height": 43764,
+          "position": 7,
+          "score": "58.364900872286118405344050190380451760081565291220339674482867269039361476285270",
+          "t": "43764/28775"
+        },
+        {
+          "height": 36681,
+          "position": 8,
+          "score": "57.826371859717437078346529263029876012711883202868537990319035875964400495142629",
+          "t": "17668/36681"
+        },
+        {
+          "height": 38937,
+          "position": 9,
+          "score": "57.704356901744629775679658717839112312988195687555853027277034821018784481286182",
+          "t": "11788/38937"
+        },
+        {
+          "height": 49889,
+          "position": 10,
+          "score": "57.436512527005446163053475797807793821933365080185073320704711768983263100172582",
+          "t": "49889/26276"
+        },
+        {
+          "height": 47137,
+          "position": 11,
+          "score": "57.015595141695282257868919614359490813693652931837507903444852424235620732188242",
+          "t": "32823/47137"
+        },
+        {
+          "height": 48458,
+          "position": 12,
+          "score": "56.912323852875577087652995736548323063083200682502085912604247115294938921871956",
+          "t": "13013/48458"
+        },
+        {
+          "height": 17192,
+          "position": 13,
+          "score": "56.853646698488737190786729557332873997143123186860368670044051272349099372597640",
+          "t": "17192/11735"
+        },
+        {
+          "height": 11627,
+          "position": 14,
+          "score": "56.631034775961965131937274942337909275393020483805187234706071772223273590935144",
+          "t": "11627/7615"
+        },
+        {
+          "height": 19718,
+          "position": 15,
+          "score": "56.548010030019984309264915309023610508571000298330483393240074878110291553183719",
+          "t": "4711/19718"
+        },
+        {
+          "height": 44789,
+          "position": 16,
+          "score": "56.349987522460457158518185960733973952629491196012608104074208170618375201097350",
+          "t": "42511/44789"
+        },
+        {
+          "height": 33460,
+          "position": 17,
+          "score": "56.264549720157288415922540244797228666415352487553430720587805919081675105959433",
+          "t": "33460/24867"
+        },
+        {
+          "height": 49917,
+          "position": 18,
+          "score": "56.107181644438042509037704040934521106665112802552107884200753397789483767289243",
+          "t": "49917/33893"
+        },
+        {
+          "height": 19985,
+          "position": 19,
+          "score": "56.099465150091591416783244277119520168188203139695396499611583377785574617229641",
+          "t": "19985/2064"
+        },
+        {
+          "height": 5844,
+          "position": 20,
+          "score": "55.898106164143127063083057163307426572511710004300898282044496740036763595456885",
+          "t": "4543/5844"
+        },
+        {
+          "height": 38215,
+          "position": 21,
+          "score": "55.720081203033615452889581342192374088345391057957537430210503296004646594093789",
+          "t": "33831/38215"
+        },
+        {
+          "height": 13809,
+          "position": 22,
+          "score": "55.475860817807339706675035414714036782559946788423053932732625281076332633042749",
+          "t": "13510/13809"
+        },
+        {
+          "height": 43671,
+          "position": 23,
+          "score": "55.334263698977887787235029255318108667268532351841737892430039401266522400124042",
+          "t": "4928/43671"
+        },
+        {
+          "height": 27027,
+          "position": 24,
+          "score": "55.325366884255136128112008573460923054738579769227296081430024681872197907879541",
+          "t": "27027/11512"
+        },
+        {
+          "height": 40089,
+          "position": 25,
+          "score": "55.317217780879288780657307961126007437680792413577051932467802286607535307239840",
+          "t": "40089/6304"
+        },
+        {
+          "height": 43204,
+          "position": 26,
+          "score": "55.305635430416783332052296861406806643602185944056996225320088891428484438138478",
+          "t": "43204/39889"
+        },
+        {
+          "height": 28098,
+          "position": 27,
+          "score": "55.299099118055513173228564953044273482696129446008208662786295006336841705987572",
+          "t": "28098/12889"
+        },
+        {
+          "height": 39963,
+          "position": 28,
+          "score": "55.293296771840023178027512445273602015258729050958338304856863193285825779770091",
+          "t": "39963/16307"
+        },
+        {
+          "height": 18635,
+          "position": 29,
+          "score": "55.237793701696537325081406647754393981779133468954556802237647021850033215510026",
+          "t": "17479/18635"
+        },
+        {
+          "height": 32417,
+          "position": 30,
+          "score": "55.003040856936445511894028515603862330698675133882515220813018179847952920712378",
+          "t": "32417/23339"
+        },
+        {
+          "height": 36491,
+          "position": 31,
+          "score": "54.946348808426636013703955373312342073222269979849627190277985672772828859063452",
+          "t": "36491/29741"
+        },
+        {
+          "height": 14347,
+          "position": 32,
+          "score": "54.945655223313490728970274667578234490643482441910149653035384649037602278056101",
+          "t": "1701/14347"
+        }
+      ],
+      "retained_count": 32,
+      "worst_retained": {
+        "height": 14347,
+        "position": 32,
+        "score": "54.945655223313490728970274667578234490643482441910149653035384649037602278056101",
+        "t": "1701/14347"
+      }
+    },
+    {
+      "benchmark": {
+        "score": "106.74618120367013425111836395978645329645795900513534359696370450216815268315944",
+        "source": "separate comparison; never part of survivor selection"
+      },
+      "best": {
+        "height": 25319,
+        "position": 1,
+        "score": "87.148627968948936596735388449648097478958576994673549492834220793187850677930615",
+        "t": "25319/17550"
+      },
+      "elapsed_seconds": 0.420043,
+      "engine": "PARI/GP ellap batch on exact minimal models",
+      "input_count": 32,
+      "numeric_prime_cutoff": 10000,
+      "requested_keep_count": 12,
+      "retained": [
+        {
+          "height": 25319,
+          "position": 1,
+          "score": "87.148627968948936596735388449648097478958576994673549492834220793187850677930615",
+          "t": "25319/17550"
+        },
+        {
+          "height": 44789,
+          "position": 2,
+          "score": "83.757835465012161365843716418187451437639891062916384127167104317149448253520042",
+          "t": "42511/44789"
+        },
+        {
+          "height": 22585,
+          "position": 3,
+          "score": "82.765700327878746736012853591465563014896208520368503893731616799829625351583462",
+          "t": "12418/22585"
+        },
+        {
+          "height": 33460,
+          "position": 4,
+          "score": "82.500803895901793897423243356581384009504401618222861820618023252857996984561089",
+          "t": "33460/24867"
+        },
+        {
+          "height": 7392,
+          "position": 5,
+          "score": "81.282076897329380732210921616661338514519879208038293282167731585682163913036072",
+          "t": "7392/479"
+        },
+        {
+          "height": 47137,
+          "position": 6,
+          "score": "81.159473816515069285576294561700596308586268716014614474697908326299870840419929",
+          "t": "32823/47137"
+        },
+        {
+          "height": 38215,
+          "position": 7,
+          "score": "80.640519521390553281135911090934234642703290603823588065060539783821241432782331",
+          "t": "33831/38215"
+        },
+        {
+          "height": 39963,
+          "position": 8,
+          "score": "80.597932524077778862837991480396747950205835965503170154445787944621528781579705",
+          "t": "39963/16307"
+        },
+        {
+          "height": 19985,
+          "position": 9,
+          "score": "80.404243881368177885879962247011725308238182560188529321091111904101685972657293",
+          "t": "19985/2064"
+        },
+        {
+          "height": 27027,
+          "position": 10,
+          "score": "80.116896113077013212734229153229146025826112303021690357730790296801599573424701",
+          "t": "27027/11512"
+        },
+        {
+          "height": 38937,
+          "position": 11,
+          "score": "79.531765578744335427523731349031383653581311199257207276667796656023227830168051",
+          "t": "11788/38937"
+        },
+        {
+          "height": 32417,
+          "position": 12,
+          "score": "79.380933004481150300007624191905897883361497848946123871282956604443321376166956",
+          "t": "32417/23339"
+        }
+      ],
+      "retained_count": 12,
+      "worst_retained": {
+        "height": 32417,
+        "position": 12,
+        "score": "79.380933004481150300007624191905897883361497848946123871282956604443321376166956",
+        "t": "32417/23339"
+      }
+    }
+  ],
+  "status": "bounded exhaustive projective-height experiment; all local constraints are exact, score and root number are triage only, conductor/local reduction are PARI computations, and no Mordell--Weil rank is claimed",
+  "target": {
+    "alternative_rank_at_least": 30,
+    "hits": [],
+    "log_conductor_strict_upper_bound": "182.72",
+    "rank_at_least": 21,
+    "reason": "no rank computation or independence certificate was made"
+  }
+}

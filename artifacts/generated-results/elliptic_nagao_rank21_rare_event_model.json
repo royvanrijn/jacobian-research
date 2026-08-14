@@ -1,0 +1,2076 @@
+{
+  "actual_command": "elliptic-curves/cas/search_nagao_rank21_rare_event_model.py",
+  "expensive_search": {
+    "broad_rational_population_scanned": 0,
+    "conductors_computed": 0,
+    "finite_reduction_certificates_triggered": 0,
+    "point_searches_launched": 0
+  },
+  "feature_protocol": {
+    "finite_field_source": "exact projective residue lookup on the short Jacobian for every prime 5 <= p <= 199",
+    "paper_multi_value_cutoffs": [
+      43,
+      97,
+      199
+    ],
+    "primary_low_cardinality_projection": "prime-range x Hasse-normalized trace bin, with a bad-reduction bin",
+    "prime_cutoff": 199,
+    "raw_local_symbol": "(T mod p in P1(Fp), good/bad, exact a_p if good)",
+    "raw_residue_policy": "projective residues are pinned in the symbol digest but are not separate high-cardinality predictors with only four positives"
+  },
+  "interpretation": {
+    "frontier": "with four positives, neither a smoothed local Naive Bayes model nor a six-feature S0/S5 discriminator passes the declared tail recovery gate",
+    "not_proved": "the control curves have rank exactly 17, or any probabilistic independence assumption between primes",
+    "proved": "the pinned local data and the declared cross-fitted scores replay exactly for this finite labelled population"
+  },
+  "label_audit": {
+    "controls": [
+      {
+        "constructor_parameter": "421/54",
+        "label": "stable_numerical_rank_17_after_bounded_H1m_search",
+        "negative_crossfit_fold": 0,
+        "precision_run_ranks": [
+          17,
+          17
+        ],
+        "scope_warning": "empirical control label only; it is not an algebraic-rank upper bound",
+        "source_artifact": "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json",
+        "stable_numerical_rank": 17
+      },
+      {
+        "constructor_parameter": "743/4",
+        "label": "stable_numerical_rank_17_after_bounded_H1m_search",
+        "negative_crossfit_fold": 1,
+        "precision_run_ranks": [
+          17,
+          17
+        ],
+        "scope_warning": "empirical control label only; it is not an algebraic-rank upper bound",
+        "source_artifact": "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json",
+        "stable_numerical_rank": 17
+      },
+      {
+        "constructor_parameter": "2543/54",
+        "label": "stable_numerical_rank_17_after_bounded_H1m_search",
+        "negative_crossfit_fold": 2,
+        "precision_run_ranks": [
+          17,
+          17
+        ],
+        "scope_warning": "empirical control label only; it is not an algebraic-rank upper bound",
+        "source_artifact": "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json",
+        "stable_numerical_rank": 17
+      },
+      {
+        "constructor_parameter": "313/28",
+        "label": "stable_numerical_rank_17_after_bounded_H1m_search",
+        "negative_crossfit_fold": 0,
+        "precision_run_ranks": [
+          17,
+          17
+        ],
+        "scope_warning": "empirical control label only; it is not an algebraic-rank upper bound",
+        "source_artifact": "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json",
+        "stable_numerical_rank": 17
+      },
+      {
+        "constructor_parameter": "2197/48",
+        "label": "stable_numerical_rank_17_after_bounded_H1m_search",
+        "negative_crossfit_fold": 1,
+        "precision_run_ranks": [
+          17,
+          17
+        ],
+        "scope_warning": "empirical control label only; it is not an algebraic-rank upper bound",
+        "source_artifact": "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json",
+        "stable_numerical_rank": 17
+      },
+      {
+        "constructor_parameter": "1573/36",
+        "label": "stable_numerical_rank_17_after_bounded_H1m_search",
+        "negative_crossfit_fold": 2,
+        "precision_run_ranks": [
+          17,
+          17
+        ],
+        "scope_warning": "empirical control label only; it is not an algebraic-rank upper bound",
+        "source_artifact": "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json",
+        "stable_numerical_rank": 17
+      },
+      {
+        "constructor_parameter": "419/28",
+        "label": "stable_numerical_rank_17_after_bounded_H1m_search",
+        "negative_crossfit_fold": 0,
+        "precision_run_ranks": [
+          17,
+          17
+        ],
+        "scope_warning": "empirical control label only; it is not an algebraic-rank upper bound",
+        "source_artifact": "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json",
+        "stable_numerical_rank": 17
+      },
+      {
+        "constructor_parameter": "4487/16",
+        "label": "stable_numerical_rank_17_after_bounded_H1m_search",
+        "negative_crossfit_fold": 1,
+        "precision_run_ranks": [
+          17,
+          17
+        ],
+        "scope_warning": "empirical control label only; it is not an algebraic-rank upper bound",
+        "source_artifact": "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json",
+        "stable_numerical_rank": 17
+      },
+      {
+        "constructor_parameter": "1251/16",
+        "label": "stable_numerical_rank_17_after_bounded_H1m_search",
+        "negative_crossfit_fold": 2,
+        "precision_run_ranks": [
+          17,
+          17
+        ],
+        "scope_warning": "empirical control label only; it is not an algebraic-rank upper bound",
+        "source_artifact": "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json",
+        "stable_numerical_rank": 17
+      },
+      {
+        "constructor_parameter": "683",
+        "label": "stable_numerical_rank_17_after_bounded_H1m_search",
+        "negative_crossfit_fold": 0,
+        "precision_run_ranks": [
+          17,
+          17
+        ],
+        "scope_warning": "empirical control label only; it is not an algebraic-rank upper bound",
+        "source_artifact": "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json",
+        "stable_numerical_rank": 17
+      },
+      {
+        "constructor_parameter": "2911/16",
+        "label": "stable_numerical_rank_17_after_bounded_H1m_search",
+        "negative_crossfit_fold": 1,
+        "precision_run_ranks": [
+          17,
+          17
+        ],
+        "scope_warning": "empirical control label only; it is not an algebraic-rank upper bound",
+        "source_artifact": "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json",
+        "stable_numerical_rank": 17
+      },
+      {
+        "constructor_parameter": "1/48",
+        "label": "stable_numerical_rank_17_after_bounded_H1m_search",
+        "negative_crossfit_fold": 2,
+        "precision_run_ranks": [
+          17,
+          17
+        ],
+        "scope_warning": "empirical control label only; it is not an algebraic-rank upper bound",
+        "source_artifact": "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json",
+        "stable_numerical_rank": 17
+      },
+      {
+        "constructor_parameter": "2579/54",
+        "label": "stable_numerical_rank_17_after_bounded_H1m_search",
+        "negative_crossfit_fold": 0,
+        "precision_run_ranks": [
+          17,
+          17
+        ],
+        "scope_warning": "empirical control label only; it is not an algebraic-rank upper bound",
+        "source_artifact": "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json",
+        "stable_numerical_rank": 17
+      }
+    ],
+    "pinned_inputs": [
+      {
+        "path": "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json",
+        "sha256": "5bf7406855af5ec39b269fa4105c9225adb4a10d13fab5480b15264cc3e8fe1d"
+      },
+      {
+        "path": "artifacts/generated-results/elliptic_nagao_rank21_historical_finalists.json",
+        "sha256": "90fc658cdb7c39c96317ee888be1364b8c9f368859230e25161dc45cd6a3cec7"
+      },
+      {
+        "path": "artifacts/generated-results/elliptic_nagao_rank21_neighborhood.json",
+        "sha256": "7d59fe9a91c0f3e46604794e8931ae27e26eeea1ebf252176dffd6be8d6010fe"
+      }
+    ],
+    "positives": [
+      {
+        "certificate_basis_sha256": "cdb7328683b523f49aac5efe3588631e82e9f18dd603b1329bc4e9f7c89e44dd",
+        "certified_algebraic_rank_lower_bound": 19,
+        "constructor_parameter": "6793/64",
+        "label": "exact_algebraic_rank_lower_bound_at_least_18",
+        "source_artifact": "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json"
+      },
+      {
+        "certificate_basis_sha256": "0385f3dab1295ba8aa39d87aa246df8e6890e6da3329a239a7a434ee704d8220",
+        "certified_algebraic_rank_lower_bound": 18,
+        "constructor_parameter": "3137/72",
+        "label": "exact_algebraic_rank_lower_bound_at_least_18",
+        "source_artifact": "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json"
+      },
+      {
+        "certificate_basis_sha256": "27a5cabcfc0cf64838dcdef444ee723a58de60e2e2dfea15ffa76fa612709c2b",
+        "certified_algebraic_rank_lower_bound": 18,
+        "constructor_parameter": "5783/16",
+        "label": "exact_algebraic_rank_lower_bound_at_least_18",
+        "source_artifact": "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json"
+      },
+      {
+        "certificate_basis_sha256": "6202fd81999b345317193bffbf965a0b43789493eade80dd6e6a99a8d19ccda1",
+        "certified_algebraic_rank_lower_bound": 18,
+        "constructor_parameter": "6629/174",
+        "label": "exact_algebraic_rank_lower_bound_at_least_18",
+        "source_artifact": "artifacts/generated-results/elliptic_nagao_rank21_historical_finalists.json"
+      }
+    ],
+    "published_calibration": {
+      "constructor_parameter": "14721/188",
+      "independence_status": "Nagao's independence result is cited; this neighborhood search does not provide a new independence proof",
+      "printed_points_checked_exactly": 21,
+      "source_artifact": "artifacts/generated-results/elliptic_nagao_rank21_neighborhood.json",
+      "training_role": "held_out_calibration_only"
+    }
+  },
+  "leakage_control": {
+    "candidate_data_used": false,
+    "control_label_warning": "rank-17 controls are clean stable numerical H=1m labels, not certified rank upper bounds",
+    "control_protocol": "fixed index-mod-3 folds; each control is evaluated only by a model trained on the other two folds",
+    "positive_protocol": "leave exactly one of four certified positives out",
+    "published_protocol": "14721/188 is never used for training or model selection"
+  },
+  "local_population": {
+    "complete_symbol_stream_sha256": "3103231a174e9fa7d7a29b2cf577b64f963e6eaf1f39552d2e48b9100fc2066c",
+    "curve_count": 18,
+    "curves": [
+      {
+        "bad_primes_at_most_199": [
+          5,
+          7,
+          13,
+          23,
+          37,
+          83
+        ],
+        "constructor_parameter": "6793/64",
+        "full_binned_log_likelihood_ratio": -3.582333059829865,
+        "full_multi_value_linear_score": -1.259641357556835,
+        "local_symbol_sha256": "8ca75d3c3f3fb982c6e6d0dc0ceda7b1547b02165c035b95154bc6ae99b01dc8",
+        "multi_value_features": [
+          -1.611076760932857,
+          3.454482694122426,
+          -2.9729682032424543,
+          5.62567844081006,
+          -4.71316469401538,
+          7.910941277101965
+        ],
+        "role": "positive"
+      },
+      {
+        "bad_primes_at_most_199": [
+          5,
+          7,
+          23
+        ],
+        "constructor_parameter": "3137/72",
+        "full_binned_log_likelihood_ratio": -1.963856072186133,
+        "full_multi_value_linear_score": 3.067665142074461,
+        "local_symbol_sha256": "505216babc2aa82e2c153305f014f45407ae0da1696926833550d284dc3c61a2",
+        "multi_value_features": [
+          -2.1250171211675393,
+          3.355293538237674,
+          -3.2351843704030205,
+          4.983136045865081,
+          -4.70893158584936,
+          7.029794556980617
+        ],
+        "role": "positive"
+      },
+      {
+        "bad_primes_at_most_199": [
+          5,
+          7,
+          23
+        ],
+        "constructor_parameter": "5783/16",
+        "full_binned_log_likelihood_ratio": -2.9689105602205093,
+        "full_multi_value_linear_score": 1.008345337653434,
+        "local_symbol_sha256": "c268b45568194d3e3c679b137febd542dab09823f0d5ce7cfa7da8289b2fe9a3",
+        "multi_value_features": [
+          -2.2972430771940946,
+          3.5367216894219218,
+          -3.415313509452687,
+          5.2054507316304495,
+          -4.677977916068708,
+          7.05241821147035
+        ],
+        "role": "positive"
+      },
+      {
+        "bad_primes_at_most_199": [
+          5,
+          7,
+          11,
+          23,
+          29
+        ],
+        "constructor_parameter": "6629/174",
+        "full_binned_log_likelihood_ratio": -0.4023922764820024,
+        "full_multi_value_linear_score": 8.067422487377822,
+        "local_symbol_sha256": "30dec04d46f54ed6a62374cfff4d197403802a48460567ecfcfe1c49911c2b0a",
+        "multi_value_features": [
+          -1.3615142876905255,
+          3.1362908771645164,
+          -2.453068236941675,
+          4.6372895086949715,
+          -4.5699166864812435,
+          7.2127710029179655
+        ],
+        "role": "positive"
+      },
+      {
+        "bad_primes_at_most_199": [
+          5,
+          7,
+          17,
+          23,
+          53,
+          107
+        ],
+        "constructor_parameter": "421/54",
+        "full_binned_log_likelihood_ratio": -3.372026867807602,
+        "full_multi_value_linear_score": -6.7125729236388,
+        "local_symbol_sha256": "4367ccb85ca47daa0d819b354da36f503565b24862925a11b672f31516238f4f",
+        "multi_value_features": [
+          -2.0218282154234797,
+          3.5364805908881674,
+          -3.5111261509071836,
+          5.857546228704368,
+          -4.946617484967295,
+          8.301407053085907
+        ],
+        "role": "control"
+      },
+      {
+        "bad_primes_at_most_199": [
+          5,
+          7,
+          13,
+          23,
+          47
+        ],
+        "constructor_parameter": "743/4",
+        "full_binned_log_likelihood_ratio": -4.668989912729424,
+        "full_multi_value_linear_score": 1.9993121974373453,
+        "local_symbol_sha256": "cb27758527934c48629d4c42bf1efbddf6c87a1e7b53a838e16eed204e0192d1",
+        "multi_value_features": [
+          -1.882659510379261,
+          3.3306200367881416,
+          -2.9773906156285768,
+          5.259869106389173,
+          -4.657790747565775,
+          7.484797033891859
+        ],
+        "role": "control"
+      },
+      {
+        "bad_primes_at_most_199": [
+          5,
+          11,
+          17,
+          23,
+          79
+        ],
+        "constructor_parameter": "2543/54",
+        "full_binned_log_likelihood_ratio": -6.903841844244197,
+        "full_multi_value_linear_score": -10.448419902212052,
+        "local_symbol_sha256": "9b8b32323ed829e562d16deecc26eb688d0820b68849a1e237c49390d248204e",
+        "multi_value_features": [
+          -2.1939175473771058,
+          3.839397686516357,
+          -3.554589885190831,
+          6.098880383091796,
+          -5.153431424304152,
+          8.321624383357593
+        ],
+        "role": "control"
+      },
+      {
+        "bad_primes_at_most_199": [
+          5,
+          7,
+          13,
+          23,
+          47
+        ],
+        "constructor_parameter": "313/28",
+        "full_binned_log_likelihood_ratio": -2.5231112482467477,
+        "full_multi_value_linear_score": 2.088716135795097,
+        "local_symbol_sha256": "d6f46b9ee3c4a42ea346b95626ecc77e0a4aef9cd5e8a3d125184f059517d5cc",
+        "multi_value_features": [
+          -1.825929456292112,
+          3.2517007286753445,
+          -3.074242655405738,
+          5.31187766551736,
+          -4.653243121869331,
+          7.456710781920982
+        ],
+        "role": "control"
+      },
+      {
+        "bad_primes_at_most_199": [
+          5,
+          11,
+          17,
+          23,
+          47
+        ],
+        "constructor_parameter": "2197/48",
+        "full_binned_log_likelihood_ratio": -4.567579475760327,
+        "full_multi_value_linear_score": -3.5692422533644907,
+        "local_symbol_sha256": "92dd805b2843d2fef59138057873ca0bf74c4315585d78198663512ff4258bc3",
+        "multi_value_features": [
+          -1.9625701462330127,
+          3.635441469350004,
+          -3.2267103346210044,
+          5.726164876407864,
+          -4.778005569416939,
+          7.860774576596127
+        ],
+        "role": "control"
+      },
+      {
+        "bad_primes_at_most_199": [
+          5,
+          7,
+          11,
+          23,
+          43,
+          47
+        ],
+        "constructor_parameter": "1573/36",
+        "full_binned_log_likelihood_ratio": -5.737305030140072,
+        "full_multi_value_linear_score": -3.6197303918032593,
+        "local_symbol_sha256": "6a7d5244adb724e624abf72594856e41284a2622167614f568e6e6bb399e6e70",
+        "multi_value_features": [
+          -1.8613858633218145,
+          3.636458795642759,
+          -3.1657695402991903,
+          5.747961280366569,
+          -4.771300081306568,
+          7.938174761469857
+        ],
+        "role": "control"
+      },
+      {
+        "bad_primes_at_most_199": [
+          5,
+          7,
+          11,
+          17,
+          23,
+          83
+        ],
+        "constructor_parameter": "419/28",
+        "full_binned_log_likelihood_ratio": -5.04130478059772,
+        "full_multi_value_linear_score": -2.6223815422738395,
+        "local_symbol_sha256": "b0c2bb7c4086d4970057c74fdfed0266cf4089c542eac441547c93bdbd56a9ee",
+        "multi_value_features": [
+          -1.9323865804698936,
+          3.56978255168281,
+          -3.1626938217911804,
+          5.669841597356638,
+          -4.747877684773125,
+          7.8337065865796705
+        ],
+        "role": "control"
+      },
+      {
+        "bad_primes_at_most_199": [
+          5,
+          7,
+          11,
+          17,
+          23,
+          31
+        ],
+        "constructor_parameter": "4487/16",
+        "full_binned_log_likelihood_ratio": -4.055231382233334,
+        "full_multi_value_linear_score": -1.3641538347246662,
+        "local_symbol_sha256": "45e2d7ebb65552bd38fc8abdb9244f1f875c4f340dd50c3035eb97f452df98a8",
+        "multi_value_features": [
+          -1.4294486680063054,
+          3.4765548382703817,
+          -2.9782271805346516,
+          5.407656254442496,
+          -4.881091177032207,
+          7.8542355825143115
+        ],
+        "role": "control"
+      },
+      {
+        "bad_primes_at_most_199": [
+          5,
+          13,
+          17,
+          23,
+          31
+        ],
+        "constructor_parameter": "1251/16",
+        "full_binned_log_likelihood_ratio": -5.6065244764295095,
+        "full_multi_value_linear_score": -3.8533910025497065,
+        "local_symbol_sha256": "4aeb7139420eab38ba75c34959e8b298ff09a44d8c2aa5f626b3a2d09d351e12",
+        "multi_value_features": [
+          -1.8349821097565444,
+          3.89151616816888,
+          -3.215456621819735,
+          5.730958883374529,
+          -4.686515832468547,
+          7.773489289846141
+        ],
+        "role": "control"
+      },
+      {
+        "bad_primes_at_most_199": [
+          5,
+          7,
+          13,
+          23,
+          37
+        ],
+        "constructor_parameter": "683",
+        "full_binned_log_likelihood_ratio": -4.206357185650601,
+        "full_multi_value_linear_score": 2.353604917384671,
+        "local_symbol_sha256": "36cc5d6ef9b325e0b37f26d0e37a8db0139f3242602598d69069d00597ab01d7",
+        "multi_value_features": [
+          -1.6082182870232333,
+          3.4077049771519254,
+          -2.895368116677865,
+          5.1069864016363375,
+          -4.706405491609347,
+          7.45118842315227
+        ],
+        "role": "control"
+      },
+      {
+        "bad_primes_at_most_199": [
+          5,
+          7,
+          23,
+          31
+        ],
+        "constructor_parameter": "2911/16",
+        "full_binned_log_likelihood_ratio": -3.4301986951209,
+        "full_multi_value_linear_score": -0.5073370418424499,
+        "local_symbol_sha256": "f12d476bb8ffd0b292e2070b8ea429c7015982493d7f337ae96eb6579e23aff9",
+        "multi_value_features": [
+          -1.887119201202922,
+          3.5018674106656142,
+          -3.3624223262582995,
+          5.428006805525927,
+          -4.721241056584163,
+          7.402144455207761
+        ],
+        "role": "control"
+      },
+      {
+        "bad_primes_at_most_199": [
+          5,
+          13,
+          23,
+          29
+        ],
+        "constructor_parameter": "1/48",
+        "full_binned_log_likelihood_ratio": -5.000937375510334,
+        "full_multi_value_linear_score": -8.566810401038,
+        "local_symbol_sha256": "c3a02acbf6b6755ee1817b5af0476a4673d6a988c74c67456ca66e485a6863f2",
+        "multi_value_features": [
+          -2.124210233769224,
+          3.8985117340274247,
+          -3.5420570583324538,
+          5.826335556911084,
+          -5.118786907181158,
+          8.009158723702622
+        ],
+        "role": "control"
+      },
+      {
+        "bad_primes_at_most_199": [
+          5,
+          7,
+          19,
+          23
+        ],
+        "constructor_parameter": "2579/54",
+        "full_binned_log_likelihood_ratio": -3.161003866981819,
+        "full_multi_value_linear_score": -0.5499166882037735,
+        "local_symbol_sha256": "e3224b37e18199e07389f3cc924941415fbabc7e2d8a80f5024c8dabb98ef6d5",
+        "multi_value_features": [
+          -2.0222282149908164,
+          3.553998522909024,
+          -3.233329759286493,
+          5.23449387936118,
+          -4.835351242341078,
+          7.407438581410187
+        ],
+        "role": "control"
+      },
+      {
+        "bad_primes_at_most_199": [
+          5,
+          7,
+          13,
+          17,
+          23,
+          47
+        ],
+        "constructor_parameter": "14721/188",
+        "full_binned_log_likelihood_ratio": -4.3043242268108255,
+        "full_multi_value_linear_score": 2.209979356000076,
+        "local_symbol_sha256": "2cd15fd9cedb48212e96eb549261d9a0e609950abf1c38bb51ce124456689e8a",
+        "multi_value_features": [
+          -1.5179458495413736,
+          3.2641627785443617,
+          -2.816125340058943,
+          5.312514990546321,
+          -4.65520041232781,
+          7.67906680088234
+        ],
+        "role": "held_out_published_calibration"
+      }
+    ],
+    "prime_count": 44
+  },
+  "method_source": {
+    "authors": "Zvonimir Bujanovic; Matija Kazalicki; Domagoj Vlah",
+    "pdf_sha256": "bdd4bdf9a36115e5b1219b53a3ddea520480e74677df218346c75b8c19677e93",
+    "source_role": "motivates simultaneous S0/S5 cutoff features; its neural models and large low-rank training sets are not transferred to this 17-curve tail",
+    "title": "Improving elliptic curve rank classification using multi-value and learned Mestre-Nagao sums",
+    "url": "https://web.math.pmf.unizg.hr/~mkazal/reprints/nagao.pdf"
+  },
+  "models": [
+    {
+      "cross_validation": {
+        "median_positive_percentile": {
+          "decimal": 0.7307692307692307,
+          "exact": "19/26"
+        },
+        "minimum_positive_percentile": {
+          "decimal": 0.46153846153846156,
+          "exact": "6/13"
+        },
+        "passes_all_predeclared_thresholds": false,
+        "positive_leave_one_out": [
+          {
+            "controls_at_or_below": 6,
+            "controls_compared": 13,
+            "folds": [
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "421/54",
+                    "score": -4.211520720426723
+                  },
+                  {
+                    "constructor_parameter": "313/28",
+                    "score": -3.168018646025802
+                  },
+                  {
+                    "constructor_parameter": "419/28",
+                    "score": -6.158332718333181
+                  },
+                  {
+                    "constructor_parameter": "683",
+                    "score": -5.072153150316247
+                  },
+                  {
+                    "constructor_parameter": "2579/54",
+                    "score": -3.970991881341548
+                  }
+                ],
+                "held_out_positive_score": -5.734692709866042,
+                "negative_crossfit_fold": 0,
+                "training_control_parameters": [
+                  "743/4",
+                  "2543/54",
+                  "2197/48",
+                  "1573/36",
+                  "4487/16",
+                  "1251/16",
+                  "2911/16",
+                  "1/48"
+                ],
+                "training_positive_parameters": [
+                  "3137/72",
+                  "5783/16",
+                  "6629/174"
+                ]
+              },
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "743/4",
+                    "score": -5.590735099519253
+                  },
+                  {
+                    "constructor_parameter": "2197/48",
+                    "score": -5.129186730884042
+                  },
+                  {
+                    "constructor_parameter": "4487/16",
+                    "score": -6.11816187634159
+                  },
+                  {
+                    "constructor_parameter": "2911/16",
+                    "score": -3.7209228215218566
+                  }
+                ],
+                "held_out_positive_score": -5.6477200349941885,
+                "negative_crossfit_fold": 1,
+                "training_control_parameters": [
+                  "421/54",
+                  "2543/54",
+                  "313/28",
+                  "1573/36",
+                  "419/28",
+                  "1251/16",
+                  "683",
+                  "1/48",
+                  "2579/54"
+                ],
+                "training_positive_parameters": [
+                  "3137/72",
+                  "5783/16",
+                  "6629/174"
+                ]
+              },
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "2543/54",
+                    "score": -7.460536066125967
+                  },
+                  {
+                    "constructor_parameter": "1573/36",
+                    "score": -6.031070472108445
+                  },
+                  {
+                    "constructor_parameter": "1251/16",
+                    "score": -5.875230602690342
+                  },
+                  {
+                    "constructor_parameter": "1/48",
+                    "score": -5.754352946627608
+                  }
+                ],
+                "held_out_positive_score": -5.528727773043966,
+                "negative_crossfit_fold": 2,
+                "training_control_parameters": [
+                  "421/54",
+                  "743/4",
+                  "313/28",
+                  "2197/48",
+                  "419/28",
+                  "4487/16",
+                  "683",
+                  "2911/16",
+                  "2579/54"
+                ],
+                "training_positive_parameters": [
+                  "3137/72",
+                  "5783/16",
+                  "6629/174"
+                ]
+              }
+            ],
+            "held_out_positive_parameter": "6793/64",
+            "passes_80_percent_threshold": false,
+            "percentile": {
+              "decimal": 0.46153846153846156,
+              "exact": "6/13"
+            }
+          },
+          {
+            "controls_at_or_below": 12,
+            "controls_compared": 13,
+            "folds": [
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "421/54",
+                    "score": -3.727559291364428
+                  },
+                  {
+                    "constructor_parameter": "313/28",
+                    "score": -2.6481151573480206
+                  },
+                  {
+                    "constructor_parameter": "419/28",
+                    "score": -5.887538899033173
+                  },
+                  {
+                    "constructor_parameter": "683",
+                    "score": -4.402665988318888
+                  },
+                  {
+                    "constructor_parameter": "2579/54",
+                    "score": -3.7635482884368425
+                  }
+                ],
+                "held_out_positive_score": -3.095353654774544,
+                "negative_crossfit_fold": 0,
+                "training_control_parameters": [
+                  "743/4",
+                  "2543/54",
+                  "2197/48",
+                  "1573/36",
+                  "4487/16",
+                  "1251/16",
+                  "2911/16",
+                  "1/48"
+                ],
+                "training_positive_parameters": [
+                  "6793/64",
+                  "5783/16",
+                  "6629/174"
+                ]
+              },
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "743/4",
+                    "score": -5.3271162803476555
+                  },
+                  {
+                    "constructor_parameter": "2197/48",
+                    "score": -4.931774930892809
+                  },
+                  {
+                    "constructor_parameter": "4487/16",
+                    "score": -4.622147860581026
+                  },
+                  {
+                    "constructor_parameter": "2911/16",
+                    "score": -3.84094318334997
+                  }
+                ],
+                "held_out_positive_score": -3.032771336020112,
+                "negative_crossfit_fold": 1,
+                "training_control_parameters": [
+                  "421/54",
+                  "2543/54",
+                  "313/28",
+                  "1573/36",
+                  "419/28",
+                  "1251/16",
+                  "683",
+                  "1/48",
+                  "2579/54"
+                ],
+                "training_positive_parameters": [
+                  "6793/64",
+                  "5783/16",
+                  "6629/174"
+                ]
+              },
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "2543/54",
+                    "score": -6.809591222899428
+                  },
+                  {
+                    "constructor_parameter": "1573/36",
+                    "score": -5.648428352671869
+                  },
+                  {
+                    "constructor_parameter": "1251/16",
+                    "score": -5.738058883076464
+                  },
+                  {
+                    "constructor_parameter": "1/48",
+                    "score": -5.213330670766737
+                  }
+                ],
+                "held_out_positive_score": -3.0347413495709263,
+                "negative_crossfit_fold": 2,
+                "training_control_parameters": [
+                  "421/54",
+                  "743/4",
+                  "313/28",
+                  "2197/48",
+                  "419/28",
+                  "4487/16",
+                  "683",
+                  "2911/16",
+                  "2579/54"
+                ],
+                "training_positive_parameters": [
+                  "6793/64",
+                  "5783/16",
+                  "6629/174"
+                ]
+              }
+            ],
+            "held_out_positive_parameter": "3137/72",
+            "passes_80_percent_threshold": true,
+            "percentile": {
+              "decimal": 0.9230769230769231,
+              "exact": "12/13"
+            }
+          },
+          {
+            "controls_at_or_below": 7,
+            "controls_compared": 13,
+            "folds": [
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "421/54",
+                    "score": -4.249719901190042
+                  },
+                  {
+                    "constructor_parameter": "313/28",
+                    "score": -2.9224782094883603
+                  },
+                  {
+                    "constructor_parameter": "419/28",
+                    "score": -7.032124314883417
+                  },
+                  {
+                    "constructor_parameter": "683",
+                    "score": -4.058805921288299
+                  },
+                  {
+                    "constructor_parameter": "2579/54",
+                    "score": -3.7791768441602698
+                  }
+                ],
+                "held_out_positive_score": -6.179710580690578,
+                "negative_crossfit_fold": 0,
+                "training_control_parameters": [
+                  "743/4",
+                  "2543/54",
+                  "2197/48",
+                  "1573/36",
+                  "4487/16",
+                  "1251/16",
+                  "2911/16",
+                  "1/48"
+                ],
+                "training_positive_parameters": [
+                  "6793/64",
+                  "3137/72",
+                  "6629/174"
+                ]
+              },
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "743/4",
+                    "score": -6.181029840018811
+                  },
+                  {
+                    "constructor_parameter": "2197/48",
+                    "score": -5.8480776288213905
+                  },
+                  {
+                    "constructor_parameter": "4487/16",
+                    "score": -3.8043859142100827
+                  },
+                  {
+                    "constructor_parameter": "2911/16",
+                    "score": -4.896053155255422
+                  }
+                ],
+                "held_out_positive_score": -5.329440638104485,
+                "negative_crossfit_fold": 1,
+                "training_control_parameters": [
+                  "421/54",
+                  "2543/54",
+                  "313/28",
+                  "1573/36",
+                  "419/28",
+                  "1251/16",
+                  "683",
+                  "1/48",
+                  "2579/54"
+                ],
+                "training_positive_parameters": [
+                  "6793/64",
+                  "3137/72",
+                  "6629/174"
+                ]
+              },
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "2543/54",
+                    "score": -7.312876977284698
+                  },
+                  {
+                    "constructor_parameter": "1573/36",
+                    "score": -6.712971060848573
+                  },
+                  {
+                    "constructor_parameter": "1251/16",
+                    "score": -6.772144616661429
+                  },
+                  {
+                    "constructor_parameter": "1/48",
+                    "score": -5.427453967529792
+                  }
+                ],
+                "held_out_positive_score": -5.105835964646862,
+                "negative_crossfit_fold": 2,
+                "training_control_parameters": [
+                  "421/54",
+                  "743/4",
+                  "313/28",
+                  "2197/48",
+                  "419/28",
+                  "4487/16",
+                  "683",
+                  "2911/16",
+                  "2579/54"
+                ],
+                "training_positive_parameters": [
+                  "6793/64",
+                  "3137/72",
+                  "6629/174"
+                ]
+              }
+            ],
+            "held_out_positive_parameter": "5783/16",
+            "passes_80_percent_threshold": false,
+            "percentile": {
+              "decimal": 0.5384615384615384,
+              "exact": "7/13"
+            }
+          },
+          {
+            "controls_at_or_below": 12,
+            "controls_compared": 13,
+            "folds": [
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "421/54",
+                    "score": -3.523381251423833
+                  },
+                  {
+                    "constructor_parameter": "313/28",
+                    "score": -3.2626241081160106
+                  },
+                  {
+                    "constructor_parameter": "419/28",
+                    "score": -5.332532463363758
+                  },
+                  {
+                    "constructor_parameter": "683",
+                    "score": -4.555717520388204
+                  },
+                  {
+                    "constructor_parameter": "2579/54",
+                    "score": -3.478426252571853
+                  }
+                ],
+                "held_out_positive_score": -2.0681844902221638,
+                "negative_crossfit_fold": 0,
+                "training_control_parameters": [
+                  "743/4",
+                  "2543/54",
+                  "2197/48",
+                  "1573/36",
+                  "4487/16",
+                  "1251/16",
+                  "2911/16",
+                  "1/48"
+                ],
+                "training_positive_parameters": [
+                  "6793/64",
+                  "3137/72",
+                  "5783/16"
+                ]
+              },
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "743/4",
+                    "score": -4.599178304630571
+                  },
+                  {
+                    "constructor_parameter": "2197/48",
+                    "score": -5.0169374496564245
+                  },
+                  {
+                    "constructor_parameter": "4487/16",
+                    "score": -4.958261012943563
+                  },
+                  {
+                    "constructor_parameter": "2911/16",
+                    "score": -3.6811946392375208
+                  }
+                ],
+                "held_out_positive_score": -2.319265523602885,
+                "negative_crossfit_fold": 1,
+                "training_control_parameters": [
+                  "421/54",
+                  "2543/54",
+                  "313/28",
+                  "1573/36",
+                  "419/28",
+                  "1251/16",
+                  "683",
+                  "1/48",
+                  "2579/54"
+                ],
+                "training_positive_parameters": [
+                  "6793/64",
+                  "3137/72",
+                  "5783/16"
+                ]
+              },
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "2543/54",
+                    "score": -5.5578335867686945
+                  },
+                  {
+                    "constructor_parameter": "1573/36",
+                    "score": -4.759598688552816
+                  },
+                  {
+                    "constructor_parameter": "1251/16",
+                    "score": -5.589243508360162
+                  },
+                  {
+                    "constructor_parameter": "1/48",
+                    "score": -3.8276089836456504
+                  }
+                ],
+                "held_out_positive_score": -3.8905218857641644,
+                "negative_crossfit_fold": 2,
+                "training_control_parameters": [
+                  "421/54",
+                  "743/4",
+                  "313/28",
+                  "2197/48",
+                  "419/28",
+                  "4487/16",
+                  "683",
+                  "2911/16",
+                  "2579/54"
+                ],
+                "training_positive_parameters": [
+                  "6793/64",
+                  "3137/72",
+                  "5783/16"
+                ]
+              }
+            ],
+            "held_out_positive_parameter": "6629/174",
+            "passes_80_percent_threshold": true,
+            "percentile": {
+              "decimal": 0.9230769230769231,
+              "exact": "12/13"
+            }
+          }
+        ],
+        "published_rank21_calibration": {
+          "constructor_parameter": "14721/188",
+          "controls_at_or_below": 6,
+          "controls_compared": 13,
+          "folds": [
+            {
+              "calibration_control_scores": [
+                {
+                  "constructor_parameter": "421/54",
+                  "score": -2.7809173331476558
+                },
+                {
+                  "constructor_parameter": "313/28",
+                  "score": -1.61430408550804
+                },
+                {
+                  "constructor_parameter": "419/28",
+                  "score": -4.624222081141563
+                },
+                {
+                  "constructor_parameter": "683",
+                  "score": -2.98572082495111
+                },
+                {
+                  "constructor_parameter": "2579/54",
+                  "score": -2.410144056000779
+                }
+              ],
+              "negative_crossfit_fold": 0,
+              "published_score": -3.3903151977679555
+            },
+            {
+              "calibration_control_scores": [
+                {
+                  "constructor_parameter": "743/4",
+                  "score": -3.871650177130931
+                },
+                {
+                  "constructor_parameter": "2197/48",
+                  "score": -3.7664604631040155
+                },
+                {
+                  "constructor_parameter": "4487/16",
+                  "score": -3.01871737598329
+                },
+                {
+                  "constructor_parameter": "2911/16",
+                  "score": -2.6067049122972668
+                }
+              ],
+              "negative_crossfit_fold": 1,
+              "published_score": -3.458679431591519
+            },
+            {
+              "calibration_control_scores": [
+                {
+                  "constructor_parameter": "2543/54",
+                  "score": -5.058160520410894
+                },
+                {
+                  "constructor_parameter": "1573/36",
+                  "score": -4.268701182935847
+                },
+                {
+                  "constructor_parameter": "1251/16",
+                  "score": -4.268497325961194
+                },
+                {
+                  "constructor_parameter": "1/48",
+                  "score": -3.216326111425306
+                }
+              ],
+              "negative_crossfit_fold": 2,
+              "published_score": -3.5707875220956407
+            }
+          ],
+          "passes_80_percent_threshold": false,
+          "percentile": {
+            "decimal": 0.46153846153846156,
+            "exact": "6/13"
+          },
+          "training_role": "never_used_for_training_or_model_selection"
+        }
+      },
+      "full_fit": {
+        "categories": [
+          "good_trace_lt_minus_half",
+          "good_trace_minus_half_to_zero",
+          "good_trace_zero_to_half",
+          "good_trace_ge_half",
+          "bad_reduction"
+        ],
+        "dirichlet_alpha_per_category": 4.0,
+        "log_positive_to_control_likelihood_ratios": [
+          [
+            -0.12589601216965887,
+            0.4401506660960544,
+            0.950976289862045,
+            0.950976289862045,
+            -0.18042582162905557
+          ],
+          [
+            -0.27195875586125196,
+            0.4240414936810998,
+            0.7525455606531357,
+            0.9348671174470905,
+            0.14640975708282034
+          ],
+          [
+            -0.048231779371262426,
+            -0.36601683778016114,
+            0.7946196530588066,
+            0.8126381585614849,
+            0.8126381585614849
+          ]
+        ],
+        "model_name": "dirichlet_smoothed_binned_local_naive_bayes",
+        "prime_ranges": [
+          [
+            5,
+            43
+          ],
+          [
+            47,
+            97
+          ],
+          [
+            101,
+            199
+          ]
+        ],
+        "smoothed_counts": {
+          "control": [
+            [
+              91.0,
+              15.0,
+              4.0,
+              4.0,
+              62.0
+            ],
+            [
+              117.0,
+              25.0,
+              6.0,
+              4.0,
+              11.0
+            ],
+            [
+              204.0,
+              65.0,
+              14.0,
+              5.0,
+              5.0
+            ]
+          ],
+          "positive": [
+            [
+              31.0,
+              9.0,
+              4.0,
+              4.0,
+              20.0
+            ],
+            [
+              35.0,
+              15.0,
+              5.0,
+              4.0,
+              5.0
+            ],
+            [
+              69.0,
+              16.0,
+              11.0,
+              4.0,
+              4.0
+            ]
+          ]
+        },
+        "trace_bin_boundaries_after_Hasse_normalization": [
+          -0.5,
+          0.0,
+          0.5
+        ],
+        "training_control_count": 13,
+        "training_positive_count": 4
+      },
+      "role": "primary_graphical_model"
+    },
+    {
+      "cross_validation": {
+        "median_positive_percentile": {
+          "decimal": 0.8076923076923077,
+          "exact": "21/26"
+        },
+        "minimum_positive_percentile": {
+          "decimal": 0.6153846153846154,
+          "exact": "8/13"
+        },
+        "passes_all_predeclared_thresholds": false,
+        "positive_leave_one_out": [
+          {
+            "controls_at_or_below": 8,
+            "controls_compared": 13,
+            "folds": [
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "421/54",
+                    "score": -7.755641294737582
+                  },
+                  {
+                    "constructor_parameter": "313/28",
+                    "score": 1.8960114643865305
+                  },
+                  {
+                    "constructor_parameter": "419/28",
+                    "score": -3.406154376823339
+                  },
+                  {
+                    "constructor_parameter": "683",
+                    "score": 1.960105924372031
+                  },
+                  {
+                    "constructor_parameter": "2579/54",
+                    "score": -0.44738066934487014
+                  }
+                ],
+                "held_out_positive_score": -2.450091324424226,
+                "negative_crossfit_fold": 0,
+                "training_control_parameters": [
+                  "743/4",
+                  "2543/54",
+                  "2197/48",
+                  "1573/36",
+                  "4487/16",
+                  "1251/16",
+                  "2911/16",
+                  "1/48"
+                ],
+                "training_positive_parameters": [
+                  "3137/72",
+                  "5783/16",
+                  "6629/174"
+                ]
+              },
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "743/4",
+                    "score": 1.6542956719257027
+                  },
+                  {
+                    "constructor_parameter": "2197/48",
+                    "score": -4.133572299452544
+                  },
+                  {
+                    "constructor_parameter": "4487/16",
+                    "score": -2.1509481094228535
+                  },
+                  {
+                    "constructor_parameter": "2911/16",
+                    "score": -0.7324577755811587
+                  }
+                ],
+                "held_out_positive_score": -2.0868593521328087,
+                "negative_crossfit_fold": 1,
+                "training_control_parameters": [
+                  "421/54",
+                  "2543/54",
+                  "313/28",
+                  "1573/36",
+                  "419/28",
+                  "1251/16",
+                  "683",
+                  "1/48",
+                  "2579/54"
+                ],
+                "training_positive_parameters": [
+                  "3137/72",
+                  "5783/16",
+                  "6629/174"
+                ]
+              },
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "2543/54",
+                    "score": -15.505342289630875
+                  },
+                  {
+                    "constructor_parameter": "1573/36",
+                    "score": -6.89366754699612
+                  },
+                  {
+                    "constructor_parameter": "1251/16",
+                    "score": -6.884424735563185
+                  },
+                  {
+                    "constructor_parameter": "1/48",
+                    "score": -13.052154051781633
+                  }
+                ],
+                "held_out_positive_score": -4.519759238644372,
+                "negative_crossfit_fold": 2,
+                "training_control_parameters": [
+                  "421/54",
+                  "743/4",
+                  "313/28",
+                  "2197/48",
+                  "419/28",
+                  "4487/16",
+                  "683",
+                  "2911/16",
+                  "2579/54"
+                ],
+                "training_positive_parameters": [
+                  "3137/72",
+                  "5783/16",
+                  "6629/174"
+                ]
+              }
+            ],
+            "held_out_positive_parameter": "6793/64",
+            "passes_80_percent_threshold": false,
+            "percentile": {
+              "decimal": 0.6153846153846154,
+              "exact": "8/13"
+            }
+          },
+          {
+            "controls_at_or_below": 13,
+            "controls_compared": 13,
+            "folds": [
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "421/54",
+                    "score": -6.320099040692105
+                  },
+                  {
+                    "constructor_parameter": "313/28",
+                    "score": 2.6605815370442047
+                  },
+                  {
+                    "constructor_parameter": "419/28",
+                    "score": -2.1553917970427405
+                  },
+                  {
+                    "constructor_parameter": "683",
+                    "score": 3.1686204246706065
+                  },
+                  {
+                    "constructor_parameter": "2579/54",
+                    "score": -0.20875480007218303
+                  }
+                ],
+                "held_out_positive_score": 3.254639796529443,
+                "negative_crossfit_fold": 0,
+                "training_control_parameters": [
+                  "743/4",
+                  "2543/54",
+                  "2197/48",
+                  "1573/36",
+                  "4487/16",
+                  "1251/16",
+                  "2911/16",
+                  "1/48"
+                ],
+                "training_positive_parameters": [
+                  "6793/64",
+                  "5783/16",
+                  "6629/174"
+                ]
+              },
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "743/4",
+                    "score": 2.2593832404987007
+                  },
+                  {
+                    "constructor_parameter": "2197/48",
+                    "score": -3.0242982747266334
+                  },
+                  {
+                    "constructor_parameter": "4487/16",
+                    "score": 0.08210459489694655
+                  },
+                  {
+                    "constructor_parameter": "2911/16",
+                    "score": -0.31245873418368614
+                  }
+                ],
+                "held_out_positive_score": 2.424018816984437,
+                "negative_crossfit_fold": 1,
+                "training_control_parameters": [
+                  "421/54",
+                  "2543/54",
+                  "313/28",
+                  "1573/36",
+                  "419/28",
+                  "1251/16",
+                  "683",
+                  "1/48",
+                  "2579/54"
+                ],
+                "training_positive_parameters": [
+                  "6793/64",
+                  "5783/16",
+                  "6629/174"
+                ]
+              },
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "2543/54",
+                    "score": -12.232837863275355
+                  },
+                  {
+                    "constructor_parameter": "1573/36",
+                    "score": -4.090208852585656
+                  },
+                  {
+                    "constructor_parameter": "1251/16",
+                    "score": -4.072886369177978
+                  },
+                  {
+                    "constructor_parameter": "1/48",
+                    "score": -10.59655444233718
+                  }
+                ],
+                "held_out_positive_score": 1.4797573345045003,
+                "negative_crossfit_fold": 2,
+                "training_control_parameters": [
+                  "421/54",
+                  "743/4",
+                  "313/28",
+                  "2197/48",
+                  "419/28",
+                  "4487/16",
+                  "683",
+                  "2911/16",
+                  "2579/54"
+                ],
+                "training_positive_parameters": [
+                  "6793/64",
+                  "5783/16",
+                  "6629/174"
+                ]
+              }
+            ],
+            "held_out_positive_parameter": "3137/72",
+            "passes_80_percent_threshold": true,
+            "percentile": {
+              "decimal": 1.0,
+              "exact": "1"
+            }
+          },
+          {
+            "controls_at_or_below": 8,
+            "controls_compared": 13,
+            "folds": [
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "421/54",
+                    "score": -7.322881637418008
+                  },
+                  {
+                    "constructor_parameter": "313/28",
+                    "score": 2.3735481653566874
+                  },
+                  {
+                    "constructor_parameter": "419/28",
+                    "score": -2.833731549717281
+                  },
+                  {
+                    "constructor_parameter": "683",
+                    "score": 3.178015936735489
+                  },
+                  {
+                    "constructor_parameter": "2579/54",
+                    "score": -0.9759487671656174
+                  }
+                ],
+                "held_out_positive_score": -0.2777643781979518,
+                "negative_crossfit_fold": 0,
+                "training_control_parameters": [
+                  "743/4",
+                  "2543/54",
+                  "2197/48",
+                  "1573/36",
+                  "4487/16",
+                  "1251/16",
+                  "2911/16",
+                  "1/48"
+                ],
+                "training_positive_parameters": [
+                  "6793/64",
+                  "3137/72",
+                  "6629/174"
+                ]
+              },
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "743/4",
+                    "score": 1.9672086116241125
+                  },
+                  {
+                    "constructor_parameter": "2197/48",
+                    "score": -3.900645768820286
+                  },
+                  {
+                    "constructor_parameter": "4487/16",
+                    "score": 0.3076202639146303
+                  },
+                  {
+                    "constructor_parameter": "2911/16",
+                    "score": -1.0579109662247101
+                  }
+                ],
+                "held_out_positive_score": -1.1930889154221482,
+                "negative_crossfit_fold": 1,
+                "training_control_parameters": [
+                  "421/54",
+                  "2543/54",
+                  "313/28",
+                  "1573/36",
+                  "419/28",
+                  "1251/16",
+                  "683",
+                  "1/48",
+                  "2579/54"
+                ],
+                "training_positive_parameters": [
+                  "6793/64",
+                  "3137/72",
+                  "6629/174"
+                ]
+              },
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "2543/54",
+                    "score": -14.95598943619658
+                  },
+                  {
+                    "constructor_parameter": "1573/36",
+                    "score": -5.522063074227993
+                  },
+                  {
+                    "constructor_parameter": "1251/16",
+                    "score": -6.321684677881706
+                  },
+                  {
+                    "constructor_parameter": "1/48",
+                    "score": -13.310642572973014
+                  }
+                ],
+                "held_out_positive_score": -2.133612691686651,
+                "negative_crossfit_fold": 2,
+                "training_control_parameters": [
+                  "421/54",
+                  "743/4",
+                  "313/28",
+                  "2197/48",
+                  "419/28",
+                  "4487/16",
+                  "683",
+                  "2911/16",
+                  "2579/54"
+                ],
+                "training_positive_parameters": [
+                  "6793/64",
+                  "3137/72",
+                  "6629/174"
+                ]
+              }
+            ],
+            "held_out_positive_parameter": "5783/16",
+            "passes_80_percent_threshold": false,
+            "percentile": {
+              "decimal": 0.6153846153846154,
+              "exact": "8/13"
+            }
+          },
+          {
+            "controls_at_or_below": 13,
+            "controls_compared": 13,
+            "folds": [
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "421/54",
+                    "score": -4.564944887614275
+                  },
+                  {
+                    "constructor_parameter": "313/28",
+                    "score": 2.884455432342488
+                  },
+                  {
+                    "constructor_parameter": "419/28",
+                    "score": -1.4729309129997832
+                  },
+                  {
+                    "constructor_parameter": "683",
+                    "score": 2.4326039120748435
+                  },
+                  {
+                    "constructor_parameter": "2579/54",
+                    "score": 1.1573326819463083
+                  }
+                ],
+                "held_out_positive_score": 6.857763078685639,
+                "negative_crossfit_fold": 0,
+                "training_control_parameters": [
+                  "743/4",
+                  "2543/54",
+                  "2197/48",
+                  "1573/36",
+                  "4487/16",
+                  "1251/16",
+                  "2911/16",
+                  "1/48"
+                ],
+                "training_positive_parameters": [
+                  "6793/64",
+                  "3137/72",
+                  "5783/16"
+                ]
+              },
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "743/4",
+                    "score": 2.3171819829239673
+                  },
+                  {
+                    "constructor_parameter": "2197/48",
+                    "score": -1.978903054495288
+                  },
+                  {
+                    "constructor_parameter": "4487/16",
+                    "score": -1.5042469242513583
+                  },
+                  {
+                    "constructor_parameter": "2911/16",
+                    "score": 0.6425015714991111
+                  }
+                ],
+                "held_out_positive_score": 5.788757708210795,
+                "negative_crossfit_fold": 1,
+                "training_control_parameters": [
+                  "421/54",
+                  "2543/54",
+                  "313/28",
+                  "1573/36",
+                  "419/28",
+                  "1251/16",
+                  "683",
+                  "1/48",
+                  "2579/54"
+                ],
+                "training_positive_parameters": [
+                  "6793/64",
+                  "3137/72",
+                  "5783/16"
+                ]
+              },
+              {
+                "calibration_control_scores": [
+                  {
+                    "constructor_parameter": "2543/54",
+                    "score": -6.7365141521960625
+                  },
+                  {
+                    "constructor_parameter": "1573/36",
+                    "score": -2.8692110763342487
+                  },
+                  {
+                    "constructor_parameter": "1251/16",
+                    "score": -2.241070609703797
+                  },
+                  {
+                    "constructor_parameter": "1/48",
+                    "score": -5.36588022652882
+                  }
+                ],
+                "held_out_positive_score": 1.845566586308594,
+                "negative_crossfit_fold": 2,
+                "training_control_parameters": [
+                  "421/54",
+                  "743/4",
+                  "313/28",
+                  "2197/48",
+                  "419/28",
+                  "4487/16",
+                  "683",
+                  "2911/16",
+                  "2579/54"
+                ],
+                "training_positive_parameters": [
+                  "6793/64",
+                  "3137/72",
+                  "5783/16"
+                ]
+              }
+            ],
+            "held_out_positive_parameter": "6629/174",
+            "passes_80_percent_threshold": true,
+            "percentile": {
+              "decimal": 1.0,
+              "exact": "1"
+            }
+          }
+        ],
+        "published_rank21_calibration": {
+          "constructor_parameter": "14721/188",
+          "controls_at_or_below": 12,
+          "controls_compared": 13,
+          "folds": [
+            {
+              "calibration_control_scores": [
+                {
+                  "constructor_parameter": "421/54",
+                  "score": -6.0766100283043425
+                },
+                {
+                  "constructor_parameter": "313/28",
+                  "score": 2.6432953796553984
+                },
+                {
+                  "constructor_parameter": "419/28",
+                  "score": -2.132278305995874
+                },
+                {
+                  "constructor_parameter": "683",
+                  "score": 2.8245287792824256
+                },
+                {
+                  "constructor_parameter": "2579/54",
+                  "score": 0.004759466279101177
+                }
+              ],
+              "negative_crossfit_fold": 0,
+              "published_score": 2.6933228615763083
+            },
+            {
+              "calibration_control_scores": [
+                {
+                  "constructor_parameter": "743/4",
+                  "score": 2.299055428001633
+                },
+                {
+                  "constructor_parameter": "2197/48",
+                  "score": -2.941809006843853
+                },
+                {
+                  "constructor_parameter": "4487/16",
+                  "score": -0.5415059964358084
+                },
+                {
+                  "constructor_parameter": "2911/16",
+                  "score": -0.11731970741357028
+                }
+              ],
+              "negative_crossfit_fold": 1,
+              "published_score": 2.79509859569759
+            },
+            {
+              "calibration_control_scores": [
+                {
+                  "constructor_parameter": "2543/54",
+                  "score": -11.9957070896575
+                },
+                {
+                  "constructor_parameter": "1573/36",
+                  "score": -4.383097299956573
+                },
+                {
+                  "constructor_parameter": "1251/16",
+                  "score": -4.457841889767444
+                },
+                {
+                  "constructor_parameter": "1/48",
+                  "score": -10.28687133389204
+                }
+              ],
+              "negative_crossfit_fold": 2,
+              "published_score": 1.303213803899387
+            }
+          ],
+          "passes_80_percent_threshold": true,
+          "percentile": {
+            "decimal": 0.9230769230769231,
+            "exact": "12/13"
+          },
+          "training_role": "never_used_for_training_or_model_selection"
+        }
+      },
+      "full_fit": {
+        "control_mean": [
+          -1.8912987718650558,
+          3.57923350082591,
+          -3.2230295435964,
+          5.56973683992964,
+          -4.819819832416899,
+          7.776526940979637
+        ],
+        "feature_order": [
+          "S0(43)",
+          "S5(43)",
+          "S0(97)",
+          "S5(97)",
+          "S0(199)",
+          "S5(199)"
+        ],
+        "midpoint": [
+          -1.870005791805655,
+          3.4749653502812725,
+          -3.1210815618031793,
+          5.341312760839891,
+          -4.743658776510285,
+          7.539004101548681
+        ],
+        "model_name": "paper_multi_value_diagonal_linear_discriminant",
+        "positive_mean": [
+          -1.8487128117462541,
+          3.3706971997366346,
+          -3.0191335800099592,
+          5.112888681750141,
+          -4.667497720603673,
+          7.301481262117724
+        ],
+        "sample_variance": [
+          0.06659687262438779,
+          0.04462232967577985,
+          0.07652293980594706,
+          0.13807931900904497,
+          0.025549132885805393,
+          0.1527720108773032
+        ],
+        "training_control_count": 13,
+        "training_positive_count": 4,
+        "variance_floor": 1e-08,
+        "weights": [
+          0.6394588580606513,
+          -4.673362027587387,
+          2.664507716293913,
+          -3.308592202352718,
+          5.961928825296976,
+          -3.109507272529388
+        ]
+      },
+      "role": "paper_informed_comparator"
+    }
+  ],
+  "objective": {
+    "alternative": "algebraic rank at least 30",
+    "primary": "algebraic rank at least 21 with log conductor < 182.72"
+  },
+  "predeclared_acceptance_thresholds": {
+    "all_three_conditions_required": true,
+    "each_positive_percentile_at_least": {
+      "decimal": 0.8,
+      "exact": "4/5"
+    },
+    "median_positive_percentile_at_least": {
+      "decimal": 0.9,
+      "exact": "9/10"
+    },
+    "published_percentile_at_least": {
+      "decimal": 0.8,
+      "exact": "4/5"
+    }
+  },
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/search_nagao_rank21_rare_event_model.py",
+  "schema_version": 1,
+  "script_sha256": "3639fa90cf9d4be1bc1e5601b10d3e8f82f12037e84661ba731f342b261d0bf5",
+  "selection_decision": {
+    "accepted_models": [],
+    "decision": "reject_model_and_stop_before_population_or_point_search",
+    "scan_authorized": false,
+    "scientific_reason": "a model that cannot reliably recover already-known tail events must not allocate an expensive rare-event search"
+  },
+  "software": {
+    "external_subprocesses": 0,
+    "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+    "python": "3.14.6"
+  },
+  "status": "model_rejected_no_candidate_scan"
+}

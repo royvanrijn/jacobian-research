@@ -1,0 +1,985 @@
+{
+  "candidate": {
+    "below_strict_log_conductor_target": true,
+    "conductor": "12400235007146416845634325990684947757229111277274936405942010",
+    "exact_log_conductor_bound": {
+      "conductor_less_than_power_of_ten": "10^62",
+      "decimal_digit_count": 62,
+      "deduced_log_10_upper_bound": "231/100",
+      "deduced_log_conductor_upper_bound": "7161/50",
+      "exp_231_over_100_degree_7_partial_sum": "80381233705038797/8000000000000000",
+      "partial_sum_greater_than_10": true,
+      "strict_target_as_rational": "4568/25",
+      "strict_target_proved_exactly": true
+    },
+    "log_conductor": "140.67282100426336891762928695079859897394982878516348824377825587863726449325682",
+    "minimal_discriminant": "-343493040898609151420022528496372496487577508118603743111725402682369613480000000",
+    "minimal_model": [
+      1,
+      0,
+      0,
+      -352137172433169386444535290,
+      2695188999793051959644355772470294512100
+    ],
+    "parameter_t": "956/9",
+    "root_number": -1,
+    "short_weierstrass_coefficients": [
+      "0",
+      "0",
+      "0",
+      "-16902584276792130549337693921/1594323",
+      "4657286591642444494018277151220316929990562/10460353203"
+    ],
+    "target_rank": 21,
+    "timeout_seconds": 30.0,
+    "wall_seconds": 0.014976375001424458
+  },
+  "exact_rank_certificate": {
+    "certified_algebraic_rank_lower_bound": 17,
+    "combined_exact_rank_over_F2": 17,
+    "finite_reduction_signatures": [
+      {
+        "doubled_subgroup_order": 5,
+        "group_order": 20,
+        "prime": 13,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 10,
+        "group_order": 40,
+        "prime": 31,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 11,
+        "group_order": 44,
+        "prime": 37,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 25,
+        "group_order": 50,
+        "prime": 41,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 15,
+        "group_order": 60,
+        "prime": 47,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 34,
+        "group_order": 68,
+        "prime": 53,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 36,
+        "group_order": 72,
+        "prime": 59,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 18,
+        "group_order": 72,
+        "prime": 71,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 48,
+        "group_order": 96,
+        "prime": 79,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 24,
+        "group_order": 96,
+        "prime": 83,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "doubled_subgroup_order": 29,
+        "group_order": 116,
+        "prime": 97,
+        "quotient_dimension": 2,
+        "rows": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    ],
+    "saturated_basis": [
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "296753579866561/2187",
+        "jacobian_y": "1047435768355538800/27"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "378661778823361/2187",
+        "jacobian_y": "-14979748042032623600/243"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "480545566790161/2187",
+        "jacobian_y": "840636416222356000/9"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "31838033468161/2187",
+        "jacobian_y": "112493701934034694000/6561"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "563227236302161/2187",
+        "jacobian_y": "1094733823708252000/9"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "197251850107786/2187",
+        "jacobian_y": "-402950672258845250/27"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-155507091093014/2187",
+        "jacobian_y": "-782332232119697350/27"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "74230880041644601/789507",
+        "jacobian_y": "250829514463912946400160/15000633"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "2029490421625921/2187",
+        "jacobian_y": "-1943518322024434023920/2187"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-48040451352239/2187",
+        "jacobian_y": "18834665021552693600/729"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "370266257008561/2187",
+        "jacobian_y": "129443159027011883200/2187"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "2883557504958289/107163",
+        "jacobian_y": "-372169978053900881200/27783"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-140384514645959/2187",
+        "jacobian_y": "-7131422564422888760/243"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "101943732324361/2187",
+        "jacobian_y": "-65106211775294200/9"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "-1913725324247/2187",
+        "jacobian_y": "-1726855755866072360/81"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "55560678332161/2187",
+        "jacobian_y": "-3369668220890894000/243"
+      },
+      {
+        "exact_jacobian_membership_checked": true,
+        "jacobian_x": "138026249256361/2187",
+        "jacobian_y": "-141637891598348600/27"
+      }
+    ],
+    "saturated_basis_sha256": "1b28f46874c081b34b59741bcbb640723c2d0650029ab346915c186edc6f1ce6",
+    "small_prime_saturation": {
+      "exact_returned_points_on_curve": 17,
+      "height_determinant_ratio": "4294967296.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "input_point_count": 17,
+      "pari_milliseconds": 32,
+      "prime_bound_strict_upper_limit": 20,
+      "returned_point_count": 17,
+      "scope_warning": "PARI documents ellsaturation under a finite-index hypothesis; exact finite reductions below certify independence of the returned basis",
+      "status": "completed",
+      "timeout_seconds": 20.0,
+      "wall_seconds": 0.06228608300443739
+    },
+    "two_torsion_certificate_prime": 11
+  },
+  "height_selection": {
+    "runs": [
+      {
+        "decimal_precision": 72,
+        "gp_process_wall_seconds": 0.1937599169978057,
+        "numerical_rank": 17,
+        "subset_height_determinant": "91759387245783627516549553.3041817191927600705403128419419990019414853692",
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15,
+          16,
+          17,
+          23
+        ]
+      },
+      {
+        "decimal_precision": 120,
+        "gp_process_wall_seconds": 0.1937599169978057,
+        "numerical_rank": 17,
+        "subset_height_determinant": "91759387245783627516549553.3041817191927600705403128419419990019414853691596775939723583788968616162582030860315796837158",
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15,
+          16,
+          17,
+          23
+        ]
+      }
+    ],
+    "selected_pool_indices_one_based": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      23
+    ],
+    "selection_is_not_certification": true,
+    "stable_numerical_rank": 17
+  },
+  "primary_source": "https://da.lib.kobe-u.ac.jp/da/kernel/E0003610/E0003610.pdf",
+  "process_safety": {
+    "all_pari_processes_foreground": true,
+    "fresh_process_group_per_call": true,
+    "timeout_cleanup": "SIGTERM then SIGKILL after two seconds"
+  },
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/certify_nagao_rank21_t956.py --output artifacts/generated-results/elliptic_nagao_rank21_t956_rank17_certificate.json",
+  "schema_version": 1,
+  "script_sha256": "95ddf8bf99b25a864f45e97b4a6d6a3ad84b0b69acd74ed80de399aed431c888",
+  "software": {
+    "pari_gp": "/opt/homebrew/bin/gp",
+    "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+    "python": "3.14.6"
+  },
+  "status": "exact_rank17_certificate_complete",
+  "theorem": "the Nagao rank-21-family specialization T=956/9 has Mordell-Weil rank at least 17 and log conductor below 182.72",
+  "uniform_search": {
+    "all_memberships_checked_exactly": true,
+    "exact_pool_point_count": 55,
+    "exact_pool_sha256": "5e94b41399cb98cb84b9b38a050d127401be5d7c4db4801a17539e2fc007a3b0",
+    "height_bound": 1000000,
+    "new_distinct_jacobian_images": 43,
+    "new_image_sha256": "e6ea7f77fde0cbe5aaf1be54fac8ce9309afb1c94faa23fb4c5825f25db86ee7",
+    "new_points": [
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "502115003238739682856810824350523161/33010255256209626989187",
+        "jacobian_y": "-31308640482748751093578219600735657449937731992000/527767519405251376642638867741",
+        "quartic_x": "13624/27",
+        "quartic_z": "31080645992/6561"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "3060321796851029708389802545453369/66075974978326373249523",
+        "jacobian_y": "10938591453853772026592913456943908492875925200/1494633475404867376889094287403",
+        "quartic_x": "40124/243",
+        "quartic_z": "2528455008580/531441"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-1591260633644757333966721014974894519/18818767297733771964702627",
+        "jacobian_y": "1755352613742181579300767722128176731426302864162000/64654476912524225432723754439791189",
+        "quartic_x": "53708/279",
+        "quartic_z": "371048931956/233523"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "7841085176256806028047191085141497181763601/1894490592542304890302727396667",
+        "jacobian_y": "1931525855720302468570934244443499159132695789910932622118000/229460541665955456522570167374931298347199",
+        "quartic_x": "-41380/411",
+        "quartic_z": "117728558472284/13682601"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-1141780335635261272287311890655/30792162385909800027",
+        "jacobian_y": "34174511478696146856931831987054815301070528/1217908429472221246055318751",
+        "quartic_x": "99928/531",
+        "quartic_z": "545825139400/281961"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-1198897019331340247074003549503546134/17766110036397150428843547",
+        "jacobian_y": "-577489903121957692252775919716964237652336147435250/19768745529652251501398985657784083",
+        "quartic_x": "130301/639",
+        "quartic_z": "2073001509407/1224963"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "44447509562820710013077479898800537851769/2052566233896896377021463043123",
+        "jacobian_y": "3888543386512107310566940320541828099402359122898314386000/258770702701055743418074263382708267528053",
+        "quartic_x": "125756/705",
+        "quartic_z": "122541781537492/40259025"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "372462106054277076385712668162719827035441/2224288908849765629168038258947",
+        "jacobian_y": "-16934455694342806206284798919297422729477928148414532233000/291914810196558605748995275372725281354589",
+        "quartic_x": "297632/771",
+        "quartic_z": "1020519211806112/48149721"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "28510384950679424762615347415932656097321/664398055065205802146334512707",
+        "jacobian_y": "396751029500520611326762414670244309349032581522682635600/47655371948346770351160412973625027520131",
+        "quartic_x": "166924/993",
+        "quartic_z": "348593897744380/79869969"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "404152633489570827178823755706184001/155011831552836431956467",
+        "jacobian_y": "-16469541813401545047696244130192549441241247341857000/3915111498060500765649590074494579",
+        "quartic_x": "647264/1305",
+        "quartic_z": "6196348656544/567675"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "861834713404328401473897032628662420393851249/827951234359293636181652804247243",
+        "jacobian_y": "-2215933487227985881653092068256287304736242863802686205045407040/2096411202771097251309049189043120143252993833",
+        "quartic_x": "701272/1457",
+        "quartic_z": "24611494065473320/1547556921"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "1430130433116521462290612685992035481/51351886228030035976855827",
+        "jacobian_y": "424165247242411624683553478034068272147151857960400/32382019919859288434950517899215579",
+        "quartic_x": "271292/1539",
+        "quartic_z": "70487424173060/21316689"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "34755977667762635751070230221619237377761/204241617254688435185948307387",
+        "jacobian_y": "-1455719233712171526439259167738736731823116220351087956000/24367274216878316950015680931650564226173",
+        "quartic_x": "603344/1557",
+        "quartic_z": "154620727203184/7272747"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "518440253388695134119345324020185/18861127764602722950627",
+        "jacobian_y": "-731870355196450748725574318059115343351366957664/55389455252653457297013312729897",
+        "quartic_x": "391408/1791",
+        "quartic_z": "1174679604400/356409"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "290496658447069169366978463878582345641/1687361668992390489638314347",
+        "jacobian_y": "271293517199773843933520518394155477109391167933978077000/4446406169498959685690119503049816401681",
+        "quartic_x": "16160/2007",
+        "quartic_z": "28107982625312/1342683"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "7291143994190341213617335233455882618826/113711909318567373505540022667",
+        "jacobian_y": "1473610518581142759474253750063805993371471527814087070650/273314883087411317403242106622166353153881",
+        "quartic_x": "267701/2007",
+        "quartic_z": "36053596064645/4028049"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "762183696135606029131919972626321795834/8178623366269291812284654403",
+        "jacobian_y": "-3188091660666825493923374524164102760104851568648464350/195258929078862192610576883851209404919",
+        "quartic_x": "689153/2151",
+        "quartic_z": "222389128697495/13880403"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "94447915665017963818968086409583600225/367327628047594797820365483",
+        "jacobian_y": "-75157867267408726142413432179566770260042899909947664/619512004895051122940671387662839193",
+        "quartic_x": "919556/2187",
+        "quartic_z": "942606090851900/43046721"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-37947707671730849342270896808103599/11005753383847143062275707",
+        "jacobian_y": "17136190788148853059556160658987915950489407789375440/780737921046401089741195235378743917",
+        "quartic_x": "425348/2313",
+        "quartic_z": "1418781420620/594441"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "149202754599453344222826532301060333548787209/698504166194862754212598092833163",
+        "jacobian_y": "-144632667946145692730387264047278440415513577315406067654047240/1624511671984891956034361849165438122522164087",
+        "quartic_x": "969248/2383",
+        "quartic_z": "90423245649121120/4139764281"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "25448679834032582815150679388332867128252441/397376694981823829758643134492947",
+        "jacobian_y": "3749668417951164448138236172737444020179172705620224181298000/697064434735261453983807685529255239814085339",
+        "quartic_x": "327932/2455",
+        "quartic_z": "39216120874059572/4393701225"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "242956969276336512781224357529600933681/3469460251114574786046493827",
+        "jacobian_y": "366786329263768442061137683954553768469274424342721800/53949008068474611149942111124646617513",
+        "quartic_x": "296224/2493",
+        "quartic_z": "201523895350240/18645147"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "2448027910213970974307112776839233841/63873890096771102966568747",
+        "jacobian_y": "-319533375384557135066468181454699396707197764939132000/32747783703815336489366488058500502769",
+        "quartic_x": "557680/2493",
+        "quartic_z": "2734369961744/690561"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "579883422659609881086573821116036680852961/3641319797413566162111444185787",
+        "jacobian_y": "96988225770509325413553826402629693563992637035413740396000/1834335719839272251798911620063076382616573",
+        "quartic_x": "49168/3249",
+        "quartic_z": "652867428617584/31668003"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "23488489813278058955332506147846735160489/51914098094848714666515802563",
+        "jacobian_y": "309244898960476664237132710204578840523084431308075418800/1040871949776191435784946239061002110013",
+        "quartic_x": "-194804/3537",
+        "quartic_z": "2241176690258780/112593321"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "114716202199149538089321556146403793975327434/765612372076513014483445630806603",
+        "jacobian_y": "87846093887833761713234379473206718677988482834104073855908550/1864158129886166266934091522701536642228695273",
+        "quartic_x": "84169/4023",
+        "quartic_z": "2958353613942565/145660761"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "778260788348951030966199481976971270226401/1351701687164593097908456295067",
+        "jacobian_y": "178543052898424226333065410609416047912207813592311458059200/414869849127874921290841022059252103473197",
+        "quartic_x": "-273496/4203",
+        "quartic_z": "994434144706840/52995627"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "1849350284486604163568502824409177130/141791230236352687072529067",
+        "jacobian_y": "7837307360030317872293063683534061022893947057036346/445722590113957332528063245573785803",
+        "quartic_x": "759389/4203",
+        "quartic_z": "146409122764175/52995627"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-739568137969212873208172409185642739119/56780310834606668613827606667",
+        "jacobian_y": "28700899045279042214046337480407628991913317463523830880/1190600288329450869865021253687336097801",
+        "quartic_x": "835664/4509",
+        "quartic_z": "407628441354320/182979729"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "141810509627663770080898211626233465857474809/88660968935085497524443048970803",
+        "jacobian_y": "1334739326576153482205292694386688934342496947268319827891346000/661166063835310644198088471644058453497624093",
+        "quartic_x": "-411380/4527",
+        "quartic_z": "805381846734548/61481187"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "277731503393929485772743577480492574590906/948050649613610325692019754227",
+        "jacobian_y": "328837987532442515449853607832114509928839401163134392537750/2193210968926764595720852765732083532190217",
+        "quartic_x": "-150679/4743",
+        "quartic_z": "478871746728797/22496049"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "11391618664613420939866422506571618578486809/185536546452091981262156072442003",
+        "jacobian_y": "1128725952226947033495089824181847583346558994305722079342800/222389120627519795777406520851995456161403877",
+        "quartic_x": "667892/4769",
+        "quartic_z": "133982530014177020/16579910169"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "-965237447503147792617662398640706911972351/15299913160803258854998812866043",
+        "jacobian_y": "154704420385264044542117330490942598607848712718747616479040/5266265903671394173609792362450474341231967",
+        "quartic_x": "933944/4899",
+        "quartic_z": "3345646739670680/1944016281"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "292364827482980162306604978979582291825/921921229224674075165334723",
+        "jacobian_y": "11321223910157228130576978390086976363008096058515955512/66507989956423754545155119418143006481",
+        "quartic_x": "-181408/4959",
+        "quartic_z": "519412627138400/24591681"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "7429698968934482241278987018074959873289/103640825307618862506219870963",
+        "jacobian_y": "5224739404590327337345294263045567587937876909141268868000/713463734110428486516400527562373125705041",
+        "quartic_x": "621616/5409",
+        "quartic_z": "110144045185712/9752427"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "37714672873464774449139604325208693623401/390828483241302351616832782467",
+        "jacobian_y": "93575463284479038880591847347466306594250140713441964537200/5224622534852689276393344068285157022979193",
+        "quartic_x": "494828/7011",
+        "quartic_z": "267361400659580/16384707"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "7513443587839293695120727461592924927265/10437793128194042916650680443",
+        "jacobian_y": "13791439347443725388094400046287588732267506618964724426272/22802824047762786338048826850294100124819",
+        "quartic_x": "-888656/12213",
+        "quartic_z": "873856140573200/49719123"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "242057899495475800768333142589124637450449/2497532264195388185902700674683",
+        "jacobian_y": "169866807339639011302062350443717354398278946637043807518000/9377773952795507512777928394754986565290939",
+        "quartic_x": "964636/13779",
+        "quartic_z": "3108987597169724/189860841"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "18306621341550304204284524639046036765632161/131751114996121443981438766146027",
+        "jacobian_y": "438485294730767328108115624295416368617817876690819035235314320/10779181948096799474325164592174541443854634249",
+        "quartic_x": "446708/15723",
+        "quartic_z": "4908883821627220/247212729"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "7035235964356240630835864735810720239152289/48790954843124684517468731763963",
+        "jacobian_y": "956596957236254854962765800757151796017955305598897831726204000/21862802888257869741819219901068380968971280377",
+        "quartic_x": "466384/18891",
+        "quartic_z": "2389820321798288/118956627"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "84444391259851818765631425492006969528841/393933672626345317525681663947",
+        "jacobian_y": "1420672505948205191334291447235054831093161552391867589323400/15861034897809379046238463582538006807842881",
+        "quartic_x": "-837152/83151",
+        "quartic_z": "49389539813302880/2304696267"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "19844090741204004880262802713519930374910183449/102396896259471005516668375309652643",
+        "jacobian_y": "651290314183378221916889488041303416092042443559283436623305985120/8650093046875624116002533185071483765422729818951",
+        "quartic_x": "-189776/92619",
+        "quartic_z": "547405292458457360/25734837483"
+      },
+      {
+        "exact_quartic_and_jacobian_membership_checked": true,
+        "jacobian_x": "17201984757962993885067530241752242390920238711957201/92196194807437349569150831926059983681827",
+        "jacobian_y": "173534425474788565134246278264946485352162857218929578337994715355567766120/2463422082631655142391603899766536740705102745367350581421",
+        "quartic_x": "860192/778137",
+        "quartic_z": "1038848195120873630240/49045272452289"
+      }
+    ],
+    "pari_milliseconds": 26299,
+    "pari_stack_bytes": 512000000,
+    "raw_point_sha256": "5b0156c04c50e7a4caefaee86d181fd78d0f9ca192c81edc1c40b6c2d0cb1f98",
+    "signed_point_count": 110,
+    "signless_point_count": 55,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "visible_point_count": 12,
+    "wall_seconds": 26.487503708005534
+  }
+}

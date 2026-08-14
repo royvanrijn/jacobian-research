@@ -1,0 +1,137 @@
+{
+  "candidates": [],
+  "completed_at_utc": "2026-08-14T15:33:29.017454+00:00",
+  "execution": {
+    "last_pair_id": "p6_m1__p13_p1",
+    "owned_processes_remaining": 0,
+    "pairs_completed_or_attempted": 2,
+    "phase": "stopped-computationally-disproportionate",
+    "stopping_rule": "two consecutive first-pair-order timeouts",
+    "wall_seconds_so_far": 40.01135649999924
+  },
+  "outcome": {
+    "conductor_calls": 0,
+    "declared_pair_count": 220,
+    "pairs_attempted": 2,
+    "pairs_completed": 0,
+    "pairs_timed_out": 2,
+    "rank_triage_calls": 0,
+    "stopped_as_computationally_disproportionate": true
+  },
+  "pair_searches": [
+    {
+      "distinct_source_labels": true,
+      "factor_polynomials_coprime": true,
+      "left_slice_id": "p6_m1",
+      "left_source_label": "P6",
+      "pair_id": "p6_m1__p13_m1",
+      "record_T0_positive_calibration_count": 0,
+      "right_slice_id": "p13_m1",
+      "right_source_label": "P13",
+      "search": {
+        "height_bound": 1000000,
+        "incidences": [],
+        "product_degree": 8,
+        "product_polynomial_sha256": "e25e1e1c84eb62027e102431a94d526ca86377ccd8d3579b131c34bbcaa34661",
+        "qualifying_new_parameter_count": 0,
+        "search": {
+          "height_bound": 1000000,
+          "pari_stack_bytes": 512000000,
+          "retried": false,
+          "status": "timeout",
+          "timeout_seconds": 20.0,
+          "wall_seconds": 20.002588666997326
+        }
+      }
+    },
+    {
+      "distinct_source_labels": true,
+      "factor_polynomials_coprime": true,
+      "left_slice_id": "p6_m1",
+      "left_source_label": "P6",
+      "pair_id": "p6_m1__p13_p1",
+      "record_T0_positive_calibration_count": 0,
+      "right_slice_id": "p13_p1",
+      "right_source_label": "P13",
+      "search": {
+        "height_bound": 1000000,
+        "incidences": [],
+        "product_degree": 8,
+        "product_polynomial_sha256": "81eb90ddae449500fc61aecd677a66ef564a64f415cec6a5150c49d4fea0a14e",
+        "qualifying_new_parameter_count": 0,
+        "search": {
+          "height_bound": 1000000,
+          "pari_stack_bytes": 512000000,
+          "retried": false,
+          "status": "timeout",
+          "timeout_seconds": 20.0,
+          "wall_seconds": 20.002616708996356
+        }
+      }
+    }
+  ],
+  "parameters": {
+    "checkpoint_after_every_pair": true,
+    "conductor_timeout_seconds": 20.0,
+    "height_precisions": [
+      72,
+      120
+    ],
+    "height_timeout_seconds": 30.0,
+    "no_retries": true,
+    "pair_height": 1000000,
+    "pair_timeout_seconds": 20.0,
+    "specialization_height": 50000,
+    "specialization_timeout_seconds": 30.0,
+    "stack_bytes": 512000000,
+    "terminal_bound": true
+  },
+  "prior_decontamination": {
+    "H50000_seen_parameters": [
+      "39508/39",
+      "42058/25",
+      "48363/26",
+      "23317/6"
+    ],
+    "base_prior_parameter_count": 590,
+    "base_prior_parameter_sha256": "64c09a13b427938a44251a91f74a116f7f9e685aed07c6159550e7ec3ea51291",
+    "terminal_prior_parameter_count": 593,
+    "terminal_prior_parameter_sha256": "a4d06e4662d2e30c1a0f8873f91d8d348dae10f2abaffce88dcc0f480cfeede0"
+  },
+  "reproducing_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/search_fermigier_published_pair_fiber_products_h1000000.py",
+  "schema_version": 1,
+  "script_sha256": "9aeac3f4b2640ebf46819b4349ff4304ee9bd602eca2c0c744dce2e4b4c5a9f0",
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6",
+    "sympy": "1.14.0"
+  },
+  "source": {
+    "H50000_artifact": "artifacts/generated-results/elliptic_fermigier_published_pair_fiber_products_h50000.json",
+    "H50000_artifact_sha256_observed": "cdca612edcce38150f77785f1fa24cd0208b38e19be6be6a872703c7625f1e52",
+    "H50000_exact_pair_result_sha256": "dea8b716c5aec56817a172afd6e894e7748aaddc482a2d29c0a3360abe55bf4b",
+    "primary_artifact_sha256_observed": "3794f23d37685edcc1ad5c8279d48fcd247b1d31b7c88aa4939ca5efd40f79a7",
+    "published_accidental_labels": [
+      "P6",
+      "P13",
+      "P14",
+      "P15",
+      "P16",
+      "P17",
+      "P18",
+      "P19",
+      "P20",
+      "P21",
+      "P22"
+    ],
+    "published_preimage_sha256": "6224da9ce4db3150a197a2cf1d9bc6c1a7d0cc6f01245b3f834945f76775ab15",
+    "record_parameter_t": "39508/39"
+  },
+  "status": "stopped as computationally disproportionate after two consecutive 20-second direct H=1000000 pair timeouts; no retry",
+  "target": {
+    "hit": false,
+    "rank_at_least": 21,
+    "reason": "direct H=1000000 was disproportionate; deterministic transformed charts are the declared fallback",
+    "strict_log_conductor_upper_bound": "182.72"
+  }
+}

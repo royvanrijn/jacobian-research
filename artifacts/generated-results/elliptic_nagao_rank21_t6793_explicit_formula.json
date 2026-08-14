@@ -1,0 +1,58 @@
+{
+  "actual_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/explicit_formula_rank_diagnostic.py",
+  "comparison": {
+    "calibrated_upper_value": "20.45100010430122015807491889656667057765436487315002802895267617914019",
+    "calibrated_upper_value_less_than_21": true,
+    "candidate_root_number": -1,
+    "log_conductor_term_difference": "-0.9163358861776587910900404642039082374637357209061588079331105039406881",
+    "odd_functional_equation_forces_odd_analytic_order": true,
+    "prime_term_difference": "-0.3326640095211203402923048791292353137576318278188131631142133169191212",
+    "total_difference": "-1.248999895698779131382345343333143551221367548724971971047323820859809"
+  },
+  "curves": {
+    "E20": {
+      "conductor": "73813242020125452593092920037241715783942979322145629022774016712292126930",
+      "log_conductor": "170.08766484224888113543147761107035486432595000236933336900322799816664271645869",
+      "prime_limit": 286751,
+      "prime_sum": "-53.527198246590105182372104818094548896473885897316421806879335611566122869000060"
+    },
+    "T6793": {
+      "conductor": "736590680363874295586257187445083659346347463739287340897386953172230",
+      "log_conductor": "158.57264848930317785280111545077626825294311412593586436889662464231853880247186",
+      "prime_limit": 286751,
+      "prime_sum": "-51.437008629739551796598916661179959027140591528834193827786225159679616081537592"
+    }
+  },
+  "declared_budget": {
+    "pari_stack_bytes": 512000000,
+    "timeout_seconds": 60.0
+  },
+  "input": {
+    "certified_algebraic_rank_lower_bound": 19,
+    "rank19_certificate_path": "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic_nagao_rank21_t6793_rank19_certificate.json",
+    "rank19_certificate_sha256": "0df1ea176d66c0446de16774ac5129253ade2379d6b6af9a591c444c8822bb6e"
+  },
+  "interpretation": {
+    "unconditional": "this computation supplies no algebraic-rank upper bound and does not weaken the exact rank-at-least-19 certificate",
+    "under_bsd_and_grh": "the independent algebraic lower bound 19 and the analytic upper bound 19 predict algebraic rank exactly 19",
+    "under_grh": "the explicit-formula value bounds analytic rank; being below 21 and odd forces analytic rank at most 19"
+  },
+  "method": {
+    "common_archimedean_term_cancels_in_difference": true,
+    "delta": 2,
+    "prime_limit": 286751,
+    "prime_limit_definition": "floor(exp(2*pi*Delta))",
+    "reference_curve": "Bober E20",
+    "reference_published_upper_value": "21.699999999999999289457264239899814128875732421875",
+    "source": "https://antsmath.org/ANTSX/bober/paper.pdf"
+  },
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/explicit_formula_rank_diagnostic.py",
+  "schema_version": 1,
+  "script_sha256": "ec2b28e934f00f0cd8ddeb51b0680118afcc4fa75b6ef1261eb6c76b88adc0be",
+  "software": {
+    "mpmath": "1.3.0",
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6"
+  },
+  "status": "conditional explicit-formula diagnostic complete"
+}

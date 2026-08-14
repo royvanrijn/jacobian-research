@@ -1,0 +1,220 @@
+{
+  "candidates": [],
+  "completed_at_utc": "2026-08-14T16:41:48.793447+00:00",
+  "execution": {
+    "directions_completed": 5761,
+    "last_direction_id": "p18_m19_m22",
+    "owned_processes_remaining": 0,
+    "phase": "complete",
+    "slice_calls_completed_or_attempted": 11522,
+    "wall_cap_triggered": false,
+    "wall_seconds": 1334.0475222920068,
+    "wall_seconds_so_far": 1333.9732322500058
+  },
+  "execution_provenance": {
+    "bounded_execution_artifact_sha256_before_metadata_normalization": "f8aad4a0ed562c71ed6f6f8a15b8d229dac2d2cb60601d501aeeffd49c3df891",
+    "bounded_execution_auxiliary_orbit_artifact_sha256": "1008336232ac65bb2bace6ff7008ffb18c1b491c6f0295e16fda14949d5b94d6",
+    "bounded_execution_script_sha256": "bb11ad0b5460d1b10518cf2d8620da255447a3b3f616e7c184a27f73703f3c71",
+    "bounded_slice_searches_rerun_during_normalization": 0,
+    "metadata_normalization_only": true,
+    "normalization_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/search_fermigier_rank22_record_group_triples_remainder.py --finalize-provenance-metadata",
+    "stable_replay_auxiliary_orbit_artifact_sha256_observed": "ef840dce82dcc7b70bd0aa72995aa9c16a562a8b84cafad68cad59a55589d4b1",
+    "stable_replay_auxiliary_parameter_count": 666,
+    "stable_replay_auxiliary_parameter_sha256": "22e296780827d722bed88acb678323349b8f68abf7b298603901dbfdb49a8be1",
+    "stable_replay_script_sha256": "c3cfe703bf2659e8ff5deea574aabdcf025a72d4e91276b8eb06837a88968f82"
+  },
+  "metadata_normalized_at_utc": "2026-08-14T16:44:51.305756+00:00",
+  "outcome": {
+    "completed_conductors": 0,
+    "completed_direction_count": 5761,
+    "declared_remainder_direction_count": 5761,
+    "full_remainder_exhausted": true,
+    "genuinely_new_forced_fibres": 0,
+    "incidence_classification_counts": {
+      "record-source-calibration-excluded": 11522
+    },
+    "maximum_stable_numerical_rank": null,
+    "open_remainder_claimed_negative": false,
+    "open_remainder_direction_count": 0,
+    "rank_triage_count": 0,
+    "record_T0_calibrated_slices": 11522,
+    "slice_calls_attempted": 11522,
+    "slice_calls_completed": 11522,
+    "slice_calls_timed_out_or_errored": 0,
+    "slice_phase_wall_seconds": 1333.973257250007,
+    "subtarget_conductors": 0
+  },
+  "parameters": {
+    "H1000000_timeout_seconds": 60.0,
+    "H250000_timeout_seconds": 45.0,
+    "H50000_timeout_seconds": 30.0,
+    "append_only_checkpoint_after_each_direction": true,
+    "certificate_prime_bound": 2000,
+    "conductor_timeout_seconds": 15.0,
+    "height_precisions": [
+      72,
+      120
+    ],
+    "height_timeout_seconds": 20.0,
+    "no_retries": true,
+    "saturation_timeout_seconds": 30.0,
+    "slice_height": 50000,
+    "slice_timeout_seconds": 15.0,
+    "slice_wall_cap_seconds": 1800.0,
+    "stack_bytes": 512000000,
+    "wall_cap_checked_only_between_two_slope_directions": true
+  },
+  "population": {
+    "declared_remainder_direction_count": 5761,
+    "declared_remainder_slice_call_count": 11522,
+    "full_exact_weight3_direction_count": 6160,
+    "order": "ascending projective height, rational x, direction id",
+    "previously_searched_direction_count": 399,
+    "remainder_direction_sha256": "68a5922267e96f8da52f61235174c2423ce3b98e3c83d8785b00cf15d5336047",
+    "score_used_for_pruning": false
+  },
+  "prior_parameter_decontamination": {
+    "predecessor_parameter_manifest": {
+      "H50000_exact_pair_result_sha256": "dea8b716c5aec56817a172afd6e894e7748aaddc482a2d29c0a3360abe55bf4b",
+      "H50000_pair_artifact": "elliptic_fermigier_published_pair_fiber_products_h50000.json",
+      "H50000_seen_parameters": [
+        "39508/39",
+        "42058/25",
+        "48363/26",
+        "23317/6"
+      ],
+      "auxiliary_orbit_artifact": "elliptic_fermigier_rank22_auxiliary_orbits.json",
+      "auxiliary_orbit_artifact_sha256_observed": "ef840dce82dcc7b70bd0aa72995aa9c16a562a8b84cafad68cad59a55589d4b1",
+      "auxiliary_orbit_artifact_sha256_used_as_replay_gate": false,
+      "auxiliary_orbit_extracted_parameter_count": 666,
+      "auxiliary_orbit_extracted_parameter_sha256": "22e296780827d722bed88acb678323349b8f68abf7b298603901dbfdb49a8be1",
+      "base_manifest": {
+        "manifest_artifact": "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic_fermigier_published_pair_fiber_products_h50000.json",
+        "manifest_artifact_sha256": "cdca612edcce38150f77785f1fa24cd0208b38e19be6be6a872703c7625f1e52",
+        "parameter_sha256": "64c09a13b427938a44251a91f74a116f7f9e685aed07c6159550e7ec3ea51291",
+        "source_artifacts": {
+          "elliptic_fermigier_1666_9.json": {
+            "extracted_parameter_count": 1,
+            "sha256": "8fad6172a675ca3aebc76427184c1b241cc1de5b908902f196051d1605b9cee9"
+          },
+          "elliptic_fermigier_3115_3_h1000000_checkpoint.json": {
+            "extracted_parameter_count": 2,
+            "sha256": "fe4acebc95c02b61229107ef7220974e83696ded87f97629a8980cef3ba46471"
+          },
+          "elliptic_fermigier_batch_rank_triage.json": {
+            "extracted_parameter_count": 11,
+            "sha256": "d1fb509ecab0f1dcdb97bb9db852e807f7fc7b7c001211c6fcf11b2fe52f33f6"
+          },
+          "elliptic_fermigier_benchmark.json": {
+            "extracted_parameter_count": 1,
+            "sha256": "665396f279d156306d8cbc64d97935af85c4e30af6edf8bd60d1f72178cc9660"
+          },
+          "elliptic_fermigier_crt_lattice_pilot.json": {
+            "extracted_parameter_count": 30,
+            "sha256": "c06389a9fc15335f406f83a2e6c9b32b2029a637555cabf80d323ff53167c050"
+          },
+          "elliptic_fermigier_discovered_local_conditions.json": {
+            "extracted_parameter_count": 48,
+            "sha256": "7f9eda8297d5060f6cc57b4e977224f5a94d9edf3f3b4a02aa2e4ff9d46e6d19"
+          },
+          "elliptic_fermigier_extra_points.json": {
+            "extracted_parameter_count": 1,
+            "sha256": "24e956f61ccc523c6af97120869143a032887f48daf25a219debc5eb0d184128"
+          },
+          "elliptic_fermigier_multiple_root_crt.json": {
+            "extracted_parameter_count": 47,
+            "sha256": "3334a46dc8e4e226d92fa4a0040011779c9dd56d87613b0c6def148deaa71943"
+          },
+          "elliptic_fermigier_multiple_root_frontier.json": {
+            "extracted_parameter_count": 24,
+            "sha256": "9e85adaf27af8dd774e27695fd5f57b224dbdb4556e4eff637efbf61de5034db"
+          },
+          "elliptic_fermigier_multiple_root_height_h50000.json": {
+            "extracted_parameter_count": 257,
+            "sha256": "34769e4f16833717fc20da13ab737f324d4cb0086b1e0f97f0830940dcc4a08d"
+          },
+          "elliptic_fermigier_power_pairs.json": {
+            "extracted_parameter_count": 72,
+            "sha256": "4259e84a849a9d5d22d2e76e0096740ddc8ec2bacdf8c9a8ede3cc30de8d9e61"
+          },
+          "elliptic_fermigier_published_pair_fiber_products.json": {
+            "extracted_parameter_count": 0,
+            "sha256": "f6c65ee07f10a915c2073986bc48c2f48f2a7ad55697dbce062e6198da33f849"
+          },
+          "elliptic_fermigier_rank22_accidental_slices.json": {
+            "extracted_parameter_count": 15,
+            "sha256": "3794f23d37685edcc1ad5c8279d48fcd247b1d31b7c88aa4939ca5efd40f79a7"
+          },
+          "elliptic_fermigier_rank22_missing_preimage_slices.json": {
+            "extracted_parameter_count": 30,
+            "sha256": "e5a162ebf8aec6628c1ece498a4fecbfdb68db2b9791af5fb78f87642268a7c3"
+          },
+          "elliptic_fermigier_rank22_points.json": {
+            "extracted_parameter_count": 1,
+            "sha256": "4cbff7722073953aa21eb2022605881cba2acad944c093ac60fa095fa1f066e3"
+          },
+          "elliptic_fermigier_record_rescore_h5000.json": {
+            "extracted_parameter_count": 12,
+            "sha256": "5bcb6ce807e542996cf89a81aff5fc16aba2a6e6986e17e5dc40205b6c34d43a"
+          },
+          "elliptic_fermigier_record_residue_class.json": {
+            "extracted_parameter_count": 51,
+            "sha256": "8a82a417ddd9b6888e9c5fff5b13439fb264458db99af00c093cd0339a85e6c1"
+          },
+          "elliptic_fermigier_record_residue_deep_tranche.json": {
+            "extracted_parameter_count": 48,
+            "sha256": "fd17b69198950c1c26aca1b8b87cd37ccea894831b6952c00df08d1be251b74b"
+          },
+          "elliptic_fermigier_score_cutoffs.json": {
+            "extracted_parameter_count": 11,
+            "sha256": "1e6e166b1f91f23de446c8f30a149d791d90926a91eaa9c574d6e6aa440a88df"
+          }
+        },
+        "unique_parameter_count": 590
+      },
+      "base_manifest_parameter_count": 590,
+      "base_manifest_parameter_sha256": "64c09a13b427938a44251a91f74a116f7f9e685aed07c6159550e7ec3ea51291",
+      "terminal_prior_parameter_count": 1239,
+      "terminal_prior_parameter_sha256": "9482e61650aa8bb1fd45c3765e5db92c1474090faee8d831e0d73cee4fc864c4"
+    },
+    "previous_weight3_candidate_parameters": [
+      "29771/78"
+    ],
+    "terminal_prior_parameter_count": 1240,
+    "terminal_prior_parameter_sha256": "ca5be373dbe7934de0f7ee680203d6ae799f57fb55f712e73ad3777947b20cdd"
+  },
+  "reproducing_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/search_fermigier_rank22_record_group_triples_remainder.py",
+  "schema_version": 1,
+  "script_sha256": "c3cfe703bf2659e8ff5deea574aabdcf025a72d4e91276b8eb06837a88968f82",
+  "software": {
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6",
+    "sympy": "1.14.0"
+  },
+  "source": {
+    "certified_published_rank22_basis_point_sha256": "4b2b89f3f432be8599b6ab5109c1221af52d1aa96c05eba1229983d929c9e727",
+    "full_new_direction_sha256": "4673b556e0a60943d86b23c7f293bfc3a9952f6acd25ef5e152297e84a106455",
+    "full_vector_direction_sha256": "76bf3cfc5de64af12865209492bf45616470a3e0f5d19e5527551989e1fb24d3",
+    "previously_searched_selection_sha256": "f22867994c80eecd7f33b48b3bf1d788cf128a9d86d77352187cbc6a9df9815e",
+    "primary_artifact": "elliptic_fermigier_rank22_accidental_slices.json",
+    "published_accidental_preimage_sha256": "6224da9ce4db3150a197a2cf1d9bc6c1a7d0cc6f01245b3f834945f76775ab15",
+    "selected_triple_artifact": "elliptic_fermigier_rank22_record_group_triples.json",
+    "selected_triple_artifact_sha256": "2803b1fa276c80eccceac5ce83215f8678d9fb771abdccb8e5043a9962b1ed36",
+    "transport_source_sha256": "8650d548b7c101514d3403a46aa8ea49cef071b231d86df2e3950be84a868011"
+  },
+  "status": "completed full exact weight3 remainder exhaustion",
+  "stream": {
+    "completed_direction_line_count": 5761,
+    "created_exclusive": true,
+    "exact_slice_result_sha256": "6818781aed81ca1bfd6822e3f276190d79b42da48b6762f3be9d5638500cb37e",
+    "format": "one canonical JSON direction record per line",
+    "path": "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic_fermigier_rank22_record_group_triples_remainder_stream.jsonl",
+    "sha256": "66e69019bb53b28310bc1a4fa0d40989fe2fd95e677b53bca55feaafa2f3b5de"
+  },
+  "target": {
+    "hit": false,
+    "rank_at_least": 21,
+    "reason": "no completed remainder direction produced a certified subtarget rank21 fibre",
+    "strict_log_conductor_upper_bound": "182.72"
+  }
+}

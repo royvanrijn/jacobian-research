@@ -213,11 +213,12 @@ structurally narrow lattice from a genuinely hostile classical symbol.
 The experiment leaves two genuinely different next gates.
 
 1. **Reciprocal `R21` admission.**  The
-   [classical-symbol census](DC2_CLASSICAL_SYMBOL_CENSUS.md) already supplies
-   a simple quadratic coefficient base and controlled localization exponent
-   one, but its polynomial rank-two completion is open.  Proving or refuting
-   that admission should precede PBW work.  If admitted, it is the smallest
-   currently recorded non-marked-root family on which to run the score.
+   [global Hamiltonian-LND theorem](DC2_HIGHER_NILPOTENCE_R21_FRONTIER.md#20-global-polynomial-darboux-obstruction)
+   now excludes polynomial rank-two admission. Its quantization audit also
+   proves that the natural graph centralizer is only a transported `A_2` and
+   that no strict filtered PBW Weyl frame exists. `R21` is therefore removed
+   from the ordinary filtered score queue; only an essentially
+   filtration-collapsing, non-PBW bridge remains logically open.
 2. **Higher-nilpotence Cayley integrability.**  Search beyond two-monomial
    supports, or solve the coefficient scheme defined by (3) and (5), with the
    explicit objective `N^2 != 0`.  A survivor would be a genuinely new
@@ -260,13 +261,16 @@ Bezout coordinates with independent polynomial base translations. Thus the
 next R21 queue must leave that affine-momentum ansatz. More generally, the
 optimizer should treat the leading graded second-order class as a hard gate:
 once nonzero, it rejects the whole invariant family without an unbounded jet
-calculation.
+calculation. The subsequent Hamiltonian-LND classification closes the
+remaining global sector and proves non-admission; the graph-centralizer/PBW
+audit then closes the natural filtered quantization route as described in
+the first queue item above.
 
 The two-pencil words remain permanent zero-pole calibration rows.  Continuing
 the old quintic support, or automatically extending the marked-root degree
 ladder, is not selected by this experiment.
 
-<!-- status-consumer: DC2HN1 ba39713cacc80bb5 -->
+<!-- status-consumer: DC2HN1 31081c9451b633f2 -->
 
 ## Reproduction
 

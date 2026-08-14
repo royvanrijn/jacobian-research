@@ -1,5 +1,6 @@
 name = "discriminant-pencils"
 version = "0.1.0"
+packagesDir = "../.lake/packages"
 keywords = ["math", "algebraic-geometry", "discriminants"]
 defaultTargets = ["DiscriminantPencils"]
 

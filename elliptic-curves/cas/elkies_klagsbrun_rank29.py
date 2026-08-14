@@ -1,0 +1,140 @@
+#!/usr/bin/env python3
+"""Exact public data for the 2024 Elkies--Klagsbrun rank-29 curve.
+
+The model and point coordinates are transcribed from Andrej Dujella's public
+rank-record table, which reproduces the Elkies--Klagsbrun announcement:
+
+https://web.math.pmf.unizg.hr/~duje/tors/rk29.html
+
+The curve is ``y^2 + x*y = x^3 + A*x + B``.  For finite-reduction
+certificates we use the integral short model
+
+``Y^2 = X^3 - 27*c4*X - 54*c6``
+
+under ``X=36*x+3`` and ``Y=108*(2*y+x)``.  This is an isomorphism over Q,
+not merely an isogeny, so it preserves rational-point independence.
+"""
+
+from __future__ import annotations
+
+from fractions import Fraction
+
+
+Q = Fraction
+
+COEFFICIENT_A = -27006183241630922218434652145297453784768054621836357954737385
+COEFFICIENT_B = 55258058551342376475736699591118191821521067032535079608372404779149413277716173425636721497
+
+GENERAL_WEIERSTRASS_COEFFICIENTS = (
+    Q(1),
+    Q(0),
+    Q(0),
+    Q(COEFFICIENT_A),
+    Q(COEFFICIENT_B),
+)
+
+PUBLISHED_POINTS = (
+    (Q(2891195474228537189458255536634), Q(1159930748096124706459835910727318679593425283)),
+    (Q(3402542165322127811451484642234), Q(1661508223164691055862657623730465560755290883)),
+    (Q(4298760026558467240422107564794), Q(4313142249890236204790986787384907722927474563)),
+    (Q(3728756667770947009884455714554), Q(2530180219584734091116528693531660545660397443)),
+    (Q(5991744132052078230511185130234), Q(10418901628842034362301273055728300669218858883)),
+    (Q(3236493534632768520540227223034), Q(1324626796262167243658687198416201825373745283)),
+    (Q(78226686134991174232380689386234), Q(690394210062759896503429654125516779999512554883)),
+    (Q(11492605643548859374635605140234), Q(35536316911450952155461624238308456029618940883)),
+    (Q(-5143303362384229804906088118566), Q(7622356511107986864120352355674305680222368483)),
+    (Q(443985655575065435281568435002), Q(6584468124388858623214803939643557365635620355)),
+    (Q(-979565018904269680752629749766), Q(8987348422104537684966706438714038633832170883)),
+    (Q(5184894285212178249566461261834), Q(7390536788003150201273204464695859875505480483)),
+    (Q(-4469171023687146502067179612166), Q(9310658892841458934133221137392081403414455683)),
+    (Q(3606405835110925482450522970234), Q(2183644666981703632482662193390480040127898883)),
+    (Q(16151744576785317732688993162234), Q(61908882092472338946519909276455831463747210883)),
+    (Q(3573684355943766387962362869754), Q(2094467155115749424853047283659077805560259203)),
+    (Q(-759376049938858166436491644166), Q(8679171135458197195914024161800061810952119683)),
+    (Q(-5328058719935886182106003119366), Q(6920588147379497633202935557367499676224350083)),
+    (Q(5380268474895377355583039694554), Q(8105660240030025092450118297303424395856037443)),
+    (Q(17069233487425098088940203248484), Q(67583677272795299213867443505411893525786510633)),
+    (Q(5215432542403430758248050783794), Q(7501515746204716855921710958364078294243814643)),
+    (Q(2838942178046024039763692432122), Q(1212346280964590308944175800544505700108208003)),
+    (
+        Q(243146882395382015946366404808154, 81),
+        Q(811625272160726332199288136187427505366582108107, 729),
+    ),
+    (Q(2558229016839511149831260080762), Q(1706598395830079994387505244133382709649637123)),
+    (Q(2361253942905600810977556672634), Q(2157503396243552448798851089310708763298766083)),
+    (Q(2678312077644931683114439906234), Q(1462722361020796436741527433473386115047618883)),
+    (Q(3379397084927230910084852603902), Q(1608494167359575995485655188349208450365853755)),
+    (Q(3632407730870998917912491355514), Q(2255654937037700801978158381185619053396712963)),
+    (Q(2428778263277521959543043930234), Q(1998325023610603606161737305486867803334410883)),
+)
+
+
+def point_on_general_curve(point: tuple[Fraction, Fraction]) -> bool:
+    """Check exact membership on ``y^2+x*y=x^3+A*x+B``."""
+
+    x, y = (Q(value) for value in point)
+    return y * y + x * y == x**3 + COEFFICIENT_A * x + COEFFICIENT_B
+
+
+def short_weierstrass_coefficients() -> tuple[Fraction, ...]:
+    """Return coefficients ``[0,0,0,A_short,B_short]``."""
+
+    # b2=1, b4=2*A, b6=4*B.
+    c4 = 1 - 48 * COEFFICIENT_A
+    c6 = -1 + 72 * COEFFICIENT_A - 864 * COEFFICIENT_B
+    return Q(0), Q(0), Q(0), Q(-27 * c4), Q(-54 * c6)
+
+
+def to_short_point(
+    point: tuple[Fraction, Fraction],
+) -> tuple[Fraction, Fraction]:
+    """Transport a point to the integral short model over Q."""
+
+    x, y = (Q(value) for value in point)
+    return 36 * x + 3, 108 * (2 * y + x)
+
+
+def from_short_point(
+    point: tuple[Fraction, Fraction],
+) -> tuple[Fraction, Fraction]:
+    """Apply the inverse Q-isomorphism from the integral short model."""
+
+    short_x, short_y = (Q(value) for value in point)
+    x = (short_x - 3) / 36
+    y = short_y / 216 - (short_x - 3) / 72
+    return x, y
+
+
+def point_on_short_curve(point: tuple[Fraction, Fraction]) -> bool:
+    x, y = (Q(value) for value in point)
+    coefficients = short_weierstrass_coefficients()
+    return y * y == x**3 + coefficients[3] * x + coefficients[4]
+
+
+def published_short_points() -> tuple[tuple[Fraction, Fraction], ...]:
+    return tuple(to_short_point(point) for point in PUBLISHED_POINTS)
+
+
+def curve_discriminant() -> int:
+    """Return the discriminant of the published integral model exactly."""
+
+    b2 = 1
+    b4 = 2 * COEFFICIENT_A
+    b6 = 4 * COEFFICIENT_B
+    b8 = COEFFICIENT_B - COEFFICIENT_A**2
+    return -(b2 * b2 * b8 + 8 * b4**3 + 27 * b6**2 - 9 * b2 * b4 * b6)
+
+
+__all__ = [
+    "COEFFICIENT_A",
+    "COEFFICIENT_B",
+    "GENERAL_WEIERSTRASS_COEFFICIENTS",
+    "PUBLISHED_POINTS",
+    "curve_discriminant",
+    "from_short_point",
+    "point_on_general_curve",
+    "point_on_short_curve",
+    "published_short_points",
+    "short_weierstrass_coefficients",
+    "to_short_point",
+]

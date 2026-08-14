@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "artifact_kind": "strictly_bounded_pari_ellrank_probe",
+  "status": "bounded_probe_no_rank_interval",
+  "claim_scope": {
+    "exact_input": "all 29 public points checked exactly before PARI launch",
+    "software_probe": "PARI ellrank effort zero with supplied points; timeout or failure is not a rank bound"
+  },
+  "reproduction": {
+    "command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/tools/probe_elkies_klagsbrun_rank29_descent.py",
+    "python": "3.14.6",
+    "script_sha256": "193fd4bfa83b8bc8aa41349c1fbee35ecd3a36eac2bafe821bb2cfa6e983d947"
+  },
+  "resource_contract": {
+    "wall_timeout_seconds": 120.0,
+    "pari_stack_max_bytes": 2000000000,
+    "observed_rss_limit_bytes": 2000000000,
+    "peak_observed_rss_bytes": 11829248
+  },
+  "result": {
+    "outcome": "strict_wall_timeout",
+    "elapsed_wall_seconds": 120.91911962500308,
+    "process_returncode": -15,
+    "exact_points_on_curve_marker": 29,
+    "ellrank_completed": false,
+    "rank_lower": null,
+    "rank_upper": null,
+    "sha_pairing_rank": null,
+    "returned_points": null,
+    "pari_stdout": "PARI_VERSION=[2, 17, 4]\nEXACT_POINTS_ON_CURVE=29\n",
+    "pari_stderr": "  ***   Warning: new maximum stack size = 2000011264 (1907.359 Mbytes).\n",
+    "rank30_target_hit": false
+  }
+}

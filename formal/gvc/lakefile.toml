@@ -1,5 +1,6 @@
 name = "generalized-vanishing"
 version = "0.1.0"
+packagesDir = "../.lake/packages"
 keywords = ["math", "generalized-vanishing-conjecture"]
 defaultTargets = ["GVC"]
 
