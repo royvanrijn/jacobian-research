@@ -1,0 +1,68 @@
+{
+  "schema": "elliptic-curves.family.v1",
+  "id": "calibration-rank-at-least-two",
+  "purpose": "mechanism calibration only; not a record-search family",
+  "parameter": "t",
+  "generic_model": {
+    "a1": "0",
+    "a2": "0",
+    "a3": "0",
+    "a4": "-t^2",
+    "a6": "t^2"
+  },
+  "generic_rank_lower_bound": 2,
+  "known_independent_sections": [
+    {
+      "label": "Q",
+      "x": "t",
+      "y": "t"
+    },
+    {
+      "label": "R",
+      "x": "-t",
+      "y": "t"
+    }
+  ],
+  "dependent_sections": [
+    {
+      "label": "P",
+      "x": "0",
+      "y": "t",
+      "relation": "P=-(Q+R)"
+    },
+    {
+      "label": "S",
+      "x": "1",
+      "y": "-1",
+      "relation": "S=Q-R"
+    }
+  ],
+  "independence_witness": {
+    "specialization": "t=5",
+    "specialized_model": [0, 0, 0, -25, 25],
+    "specialized_points": [[5, 5], [-5, 5]],
+    "pari_gp_command": "E=ellinit([0,0,0,-25,25]); ellrank(E,2)",
+    "pari_gp_result": "[2,2,0,[[5,5],[-5,5]]]",
+    "pari_gp_setrand_seed": 1,
+    "logic": "a generic integral relation would specialize to a relation between these two points"
+  },
+  "rational_specialization": {
+    "parameter": "t=a/b with gcd(a,b)=1 and b>0",
+    "integral_model": [
+      "0",
+      "0",
+      "0",
+      "-a^2*b^2",
+      "a^2*b^4"
+    ],
+    "known_points": [
+      ["a*b", "a*b^2"],
+      ["-a*b", "a*b^2"],
+      ["0", "a*b^2"],
+      ["b^2", "-b^3"]
+    ]
+  },
+  "discriminant": "-16*a^4*b^6*(27*b^2-4*a^2)",
+  "shaped_squarefree_base_factor": "27*b^2-4*a^2",
+  "provenance": "section identities are direct algebra; independence is certified by specialization and the recorded exact PARI 2-descent bounds"
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "elliptic-curves.family.v1",
+  "id": "kihara-rank14",
+  "purpose": "strongest fully public arithmetic high-generic-rank fallback currently reproduced in this repository",
+  "published_generic_rank_lower_bound": 14,
+  "generic_independence_reproduced_here": true,
+  "construction": {
+    "parameters": "p=t^2(8+3t^2), q=-6(2+t^2)(4+t^2), and the displayed rational u(t)",
+    "roots": "b_i=u+a_i and b_(i+6)=-u+a_i for the six displayed a_i(p,q)",
+    "degree_twelve_product": "F(x)=product_(i=1)^12 (x-b_i)",
+    "square_remainder": "F(x)=G(x)^2-r(x), with deg(G)=6 and deg(r)=4",
+    "quartic": "y^2=r(x)",
+    "points": "P1,...,P12 have (x,y)=(b_i,G(b_i)); the source gives the abscissas of P13,P14,P15 and uses P15 as origin"
+  },
+  "certificate_specialization": {
+    "t": "2",
+    "p": "80",
+    "q": "-288",
+    "u": "18050187264",
+    "claim": "P1,...,P14 are independent with P15 as origin",
+    "paper_method": "nonzero 14 by 14 canonical-height determinant 221792776617402574.10",
+    "repository_method": "exact full-rank finite-reduction certificate modulo 5, followed by infinite descent",
+    "artifact": "../../artifacts/generated-results/elliptic-curves/kihara_rank14_t2_v1.json",
+    "artifact_sha256": "851ff6da6ccf4f4dca947048edd43846ff7da41161e83fde419747e715a0df46"
+  },
+  "generic_implication": "The source supplies the points over Q(t). Their exact independence after the defined t=2 specialization rules out any relation over Q(t).",
+  "source": {
+    "citation": "S. Kihara, On an elliptic curve over Q(t) of rank >= 14, Proc. Japan Acad. Ser. A Math. Sci. 77 (2001), 50-51",
+    "doi": "10.3792/pjaa.77.50",
+    "url": "https://projecteuclid.org/journals/proceedings-of-the-japan-academy-series-a-mathematical-sciences/volume-77/issue-4/On-an-elliptic-curve-over-mathbf-Qt-of-rank-geq/10.3792/pjaa.77.50.pdf"
+  },
+  "caution": "This is a reproduced rank-at-least-14 family baseline. It supplies no rank-30 candidate, no fifteenth point independent of the displayed fourteen, and no conductor-optimized specialization."
+}

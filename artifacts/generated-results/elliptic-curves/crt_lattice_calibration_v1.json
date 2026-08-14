@@ -1,0 +1,405 @@
+{
+  "best_candidate": {
+    "binary_discriminant_factor": 143227016087,
+    "crt_modulus": 143227016087,
+    "crt_residue": 3249333373,
+    "denominator": 84367,
+    "discriminant": -123772768729938058267237792633013643295805269705381051104365168,
+    "factor_identity": "27*b^2 - 4*a^2 = 23^3*47^2*73^2",
+    "height": 110627,
+    "known_integral_point": [
+      0,
+      -787419830552003
+    ],
+    "numerator": -110627,
+    "pari_gp": {
+      "conductor": 27496412132883675938709412,
+      "conductor_factorization": [
+        [
+          2,
+          2
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          47,
+          1
+        ],
+        [
+          73,
+          1
+        ],
+        [
+          89,
+          2
+        ],
+        [
+          113,
+          2
+        ],
+        [
+          239,
+          2
+        ],
+        [
+          353,
+          2
+        ]
+      ],
+      "discriminant": -123772768729938058267237792633013643295805269705381051104365168,
+      "global_minimal_change": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "known_point_order": 0,
+      "rank_bounds": [
+        3,
+        3
+      ],
+      "tamagawa_product": 15552,
+      "torsion_order": 1,
+      "version": "2.15.4"
+    },
+    "weierstrass_coefficients": [
+      0,
+      0,
+      0,
+      -87109893594476435881,
+      620029989546545117143687312009
+    ]
+  },
+  "claim_level": "exact_computation",
+  "canonical_pinned_command": "python3 elliptic-curves/scripts/run_crt_lattice_calibration.py --output artifacts/generated-results/elliptic-curves/crt_lattice_calibration_v1.json",
+  "family": {
+    "dependent_section": {
+      "point": [
+        0,
+        "t"
+      ],
+      "relation": "P=-(Q+R)"
+    },
+    "discriminant": "-16*a^4*b^6*(27*b^2 - 4*a^2)",
+    "generic_model": "y^2 = x^3 - t^2*x + t^2",
+    "generic_rank_lower_bound": 2,
+    "integral_specialization": "Y^2 = X^3 - a^2*b^2*X + a^2*b^4 for t=a/b",
+    "known_independent_sections": [
+      [
+        "t",
+        "t"
+      ],
+      [
+        "-t",
+        "t"
+      ]
+    ]
+  },
+  "generator": "elliptic-curves/scripts/run_crt_lattice_calibration.py",
+  "interpretation": {
+    "limitation": "This calibration family has generic rank at least two but is not a candidate for either record target.",
+    "result": "The selected multiplicative primes occur to exponents 3,2,2 in the minimal discriminant factor and only to exponent one in the conductor."
+  },
+  "randomness": {
+    "pari_gp_setrand_seed": 1,
+    "search": "deterministic exhaustive enumeration"
+  },
+  "schema": "elliptic-curves.crt-lattice-calibration.v1",
+  "search": {
+    "combinations": [
+      {
+        "binary_discriminant_factor": 143227016087,
+        "crt_modulus": 143227016087,
+        "crt_residue": 3249333373,
+        "denominator": 84367,
+        "exhaustive_height_checked": 131072,
+        "forced_valuations": {
+          "23": 3,
+          "47": 2,
+          "73": 2
+        },
+        "height": 110627,
+        "numerator": -110627,
+        "reduced_basis": [
+          [
+            -110627,
+            84367
+          ],
+          [
+            -618504,
+            -822997
+          ]
+        ],
+        "roots": [
+          2186,
+          405,
+          2268
+        ],
+        "weighted_norm": 19356123818
+      },
+      {
+        "binary_discriminant_factor": 143227016087,
+        "crt_modulus": 143227016087,
+        "crt_residue": 139977682714,
+        "denominator": 84367,
+        "exhaustive_height_checked": 131072,
+        "forced_valuations": {
+          "23": 3,
+          "47": 2,
+          "73": 2
+        },
+        "height": 110627,
+        "numerator": 110627,
+        "reduced_basis": [
+          [
+            -110627,
+            -84367
+          ],
+          [
+            -618504,
+            822997
+          ]
+        ],
+        "roots": [
+          9981,
+          1804,
+          3061
+        ],
+        "weighted_norm": 19356123818
+      },
+      {
+        "binary_discriminant_factor": 1289043144783,
+        "crt_modulus": 143227016087,
+        "crt_residue": 131872939839,
+        "denominator": 218573,
+        "exhaustive_height_checked": 262144,
+        "forced_valuations": {
+          "23": 3,
+          "47": 2,
+          "73": 2
+        },
+        "height": 218573,
+        "numerator": -14655,
+        "reduced_basis": [
+          [
+            14655,
+            -218573
+          ],
+          [
+            645949,
+            139202
+          ]
+        ],
+        "roots": [
+          9981,
+          405,
+          3061
+        ],
+        "weighted_norm": 47988925354
+      },
+      {
+        "binary_discriminant_factor": 1289043144783,
+        "crt_modulus": 143227016087,
+        "crt_residue": 11354076248,
+        "denominator": 218573,
+        "exhaustive_height_checked": 262144,
+        "forced_valuations": {
+          "23": 3,
+          "47": 2,
+          "73": 2
+        },
+        "height": 218573,
+        "numerator": 14655,
+        "reduced_basis": [
+          [
+            14655,
+            218573
+          ],
+          [
+            645949,
+            -139202
+          ]
+        ],
+        "roots": [
+          2186,
+          1804,
+          2268
+        ],
+        "weighted_norm": 47988925354
+      },
+      {
+        "binary_discriminant_factor": 1289043144783,
+        "crt_modulus": 143227016087,
+        "crt_residue": 51224605228,
+        "denominator": 224051,
+        "exhaustive_height_checked": 262144,
+        "forced_valuations": {
+          "23": 3,
+          "47": 2,
+          "73": 2
+        },
+        "height": 224051,
+        "numerator": -128769,
+        "reduced_basis": [
+          [
+            -128769,
+            224051
+          ],
+          [
+            -500461,
+            -241504
+          ]
+        ],
+        "roots": [
+          2186,
+          405,
+          3061
+        ],
+        "weighted_norm": 66780305962
+      },
+      {
+        "binary_discriminant_factor": 1289043144783,
+        "crt_modulus": 143227016087,
+        "crt_residue": 92002410859,
+        "denominator": 224051,
+        "exhaustive_height_checked": 262144,
+        "forced_valuations": {
+          "23": 3,
+          "47": 2,
+          "73": 2
+        },
+        "height": 224051,
+        "numerator": 128769,
+        "reduced_basis": [
+          [
+            128769,
+            224051
+          ],
+          [
+            500461,
+            -241504
+          ]
+        ],
+        "roots": [
+          9981,
+          1804,
+          2268
+        ],
+        "weighted_norm": 66780305962
+      },
+      {
+        "binary_discriminant_factor": 1289043144783,
+        "crt_modulus": 143227016087,
+        "crt_residue": 83897667984,
+        "denominator": 232531,
+        "exhaustive_height_checked": 262144,
+        "forced_valuations": {
+          "23": 3,
+          "47": 2,
+          "73": 2
+        },
+        "height": 232531,
+        "numerator": -206679,
+        "reduced_basis": [
+          [
+            206679,
+            -232531
+          ],
+          [
+            -422021,
+            -218184
+          ]
+        ],
+        "roots": [
+          9981,
+          405,
+          2268
+        ],
+        "weighted_norm": 96786875002
+      },
+      {
+        "binary_discriminant_factor": 1289043144783,
+        "crt_modulus": 143227016087,
+        "crt_residue": 59329348103,
+        "denominator": 232531,
+        "exhaustive_height_checked": 262144,
+        "forced_valuations": {
+          "23": 3,
+          "47": 2,
+          "73": 2
+        },
+        "height": 232531,
+        "numerator": 206679,
+        "reduced_basis": [
+          [
+            206679,
+            232531
+          ],
+          [
+            422021,
+            -218184
+          ]
+        ],
+        "roots": [
+          2186,
+          1804,
+          3061
+        ],
+        "weighted_norm": 96786875002
+      }
+    ],
+    "constraints": [
+      {
+        "exponent": 3,
+        "modulus": 12167,
+        "prime": 23,
+        "reduction_goal": "split_multiplicative",
+        "roots": [
+          2186,
+          9981
+        ],
+        "split_test_legendre_6": 1
+      },
+      {
+        "exponent": 2,
+        "modulus": 2209,
+        "prime": 47,
+        "reduction_goal": "split_multiplicative",
+        "roots": [
+          405,
+          1804
+        ],
+        "split_test_legendre_6": 1
+      },
+      {
+        "exponent": 2,
+        "modulus": 5329,
+        "prime": 73,
+        "reduction_goal": "split_multiplicative",
+        "roots": [
+          2268,
+          3061
+        ],
+        "split_test_legendre_6": 1
+      }
+    ],
+    "lattice_weights": [
+      1,
+      1
+    ],
+    "maximum_height": 262144,
+    "polynomial_coefficients_low_to_high": [
+      27,
+      0,
+      -4
+    ],
+    "representative_count_per_residue": 1,
+    "root_combinations_tested": 8
+  }
+}

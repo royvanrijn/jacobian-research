@@ -15,9 +15,59 @@ Do not move a local cache file into this directory merely to preserve it.
 Promote only a compact manifest or independently checkable reference artifact,
 and document the exact command and whole-file SHA-256.
 
-This directory contains reproducible outputs from the retained
-three-dimensional work.  Only outputs with a named generator and verification
-path below are treated as reference artifacts.
+This directory contains reproducible outputs from retained research
+computations.  Only outputs with a named generator and verification path below
+are treated as reference artifacts.
+
+- `elliptic-curves/crt_lattice_calibration_v1.json` is the first exact
+  mechanism calibration for the separate elliptic-curve programme.  It lifts
+  the factor `27-4*t^2` at `23^3,47^2,73^2`, tests all eight root choices,
+  exhausts the relevant rational-height boxes, and obtains
+  `t=-110627/84367` with the homogeneous factor exactly
+  `23^3*47^2*73^2`.  PARI/GP 2.15.4 then verifies the minimal model,
+  conductor exponents, trivial torsion, and rank bounds `[3,3]`.  This is a
+  low-rank pipeline calibration, not a record candidate.  Regenerate and
+  verify it with the commands in `elliptic-curves/REPRODUCE.md`.  Its
+  whole-file SHA-256 is
+  `eb1543031e68026042c921ee2b93e765070b65340b8129b74f0629a9b3d5c8fa`.
+
+- `elliptic-curves/fermigier_crt_seed_v1.json` applies the same exact engine
+  to the canonical adapter for Fermigier's high-generic-rank family.  It tests
+  all eight CRT combinations from the two roots at each of
+  `89^2,131^2,137^2` and finds
+  `u=673709/29965` at height `673709`.  PARI/GP 2.15.4 verifies split `I_2`
+  reduction and conductor exponent one at the three shaped primes.  The
+  global discriminant cofactor remains unfactored, and neither global
+  conductor nor rank is claimed.  Its whole-file SHA-256 is
+  `a4f2e27d63bbf2160cb8afaed1b171295bf941e99ac8db8f3d2bb85424edaf0c`.
+
+- `elliptic-curves/fermigier_rank_certificates_v1.json` records the recovered
+  thirteenth Fermigier quartic point, twelve independent generic section
+  differences, and an exact certificate for all 22 published E22 points.
+  The generic replay uses relation prime 5; the E22 replay uses relation prime
+  2 and a separate no-2-torsion witness.  It is a lower-bound replay, not an
+  unconditional rank upper bound.  Its whole-file SHA-256 is
+  `94fc64d7f1744f6a20a0396d32914cd36330107db2538e03ee95cc3e32927051`.
+
+- `elliptic-curves/fermigier_rank20_near_miss_v1.json` records a bounded
+  `ratpoints` search at `u=28917/20`, twenty exactly independent points, the
+  global minimal model, and exact conductor.  Its natural-log conductor is
+  `159.9348252255...`, but it is explicitly one point short of the target and
+  supplies no upper bound.  Its whole-file SHA-256 is
+  `8416e835887236e9e4eafcb01384a710ce4f1be0628701a97f4a7d7a07fe63b1`.
+
+- `elliptic-curves/kihara_rank14_t2_v1.json` reconstructs Kihara's public
+  rank-at-least-14 family at `t=2` and proves the fourteen displayed
+  differences independent with an exact finite-reduction certificate modulo
+  5.  It is a family baseline, not a rank-30 candidate.  Its whole-file
+  SHA-256 is
+  `851ff6da6ccf4f4dca947048edd43846ff7da41161e83fde419747e715a0df46`.
+
+- `elliptic-curves/elkies_klagsbrun_e29_independence_v1.json` replays the 29
+  public points on the current record curve.  A full-rank matrix modulo 2 and
+  a separate torsion witness prove the unconditional lower bound 29.  No
+  thirtieth point or exact-rank claim is present.  Its whole-file SHA-256 is
+  `a585a8bc081c67fc6314b7be8ea29721b465fcd8f147d170b534ecb52395891e`.
 
 - `f20_colored_cox_packets.json` records the sixteen Galois-stable positive
   derivative packets in the corrected sixty-three-color \(F_{20}\) atlas.

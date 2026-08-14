@@ -1,0 +1,1022 @@
+{
+  "canonical_pinned_command": "python3 elliptic-curves/scripts/run_fermigier_rank_certificates.py --output artifacts/generated-results/elliptic-curves/fermigier_rank_certificates_v1.json",
+  "claim_level": "exact_rank_lower_bound_replay",
+  "generator": "elliptic-curves/scripts/run_fermigier_rank_certificates.py",
+  "generic_sections": {
+    "adapter_parameter": "19754/39",
+    "certificate": {
+      "relation_prime": 5,
+      "rows": [
+        {
+          "generator": [
+            0,
+            38
+          ],
+          "group_order": 75,
+          "logs": [
+            56,
+            70,
+            27,
+            49,
+            3,
+            64,
+            65,
+            59,
+            70,
+            54,
+            29,
+            53
+          ],
+          "prime": 61
+        },
+        {
+          "generator": [
+            1,
+            4
+          ],
+          "group_order": 80,
+          "logs": [
+            34,
+            68,
+            54,
+            72,
+            46,
+            50,
+            56,
+            18,
+            32,
+            76,
+            42,
+            24
+          ],
+          "prime": 67
+        },
+        {
+          "generator": [
+            0,
+            12
+          ],
+          "group_order": 90,
+          "logs": [
+            16,
+            84,
+            18,
+            74,
+            26,
+            10,
+            34,
+            66,
+            50,
+            76,
+            14,
+            52
+          ],
+          "prime": 73
+        },
+        {
+          "generator": [
+            1,
+            21
+          ],
+          "group_order": 115,
+          "logs": [
+            61,
+            106,
+            91,
+            89,
+            86,
+            99,
+            71,
+            66,
+            76,
+            20,
+            21,
+            95
+          ],
+          "prime": 97
+        },
+        {
+          "generator": [
+            2,
+            69
+          ],
+          "group_order": 150,
+          "logs": [
+            22,
+            10,
+            108,
+            116,
+            94,
+            20,
+            80,
+            138,
+            62,
+            48,
+            148,
+            4
+          ],
+          "prime": 131
+        },
+        {
+          "generator": [
+            7,
+            125
+          ],
+          "group_order": 220,
+          "logs": [
+            36,
+            110,
+            96,
+            162,
+            60,
+            44,
+            152,
+            214,
+            98,
+            210,
+            2,
+            168
+          ],
+          "prime": 193
+        },
+        {
+          "generator": [
+            1,
+            39
+          ],
+          "group_order": 225,
+          "logs": [
+            210,
+            32,
+            71,
+            54,
+            130,
+            197,
+            151,
+            95,
+            33,
+            14,
+            123,
+            68
+          ],
+          "prime": 199
+        },
+        {
+          "generator": [
+            12,
+            218
+          ],
+          "group_order": 230,
+          "logs": [
+            132,
+            8,
+            6,
+            120,
+            152,
+            218,
+            124,
+            186,
+            48,
+            160,
+            168,
+            214
+          ],
+          "prime": 223
+        },
+        {
+          "generator": [
+            0,
+            6
+          ],
+          "group_order": 230,
+          "logs": [
+            112,
+            74,
+            18,
+            52,
+            142,
+            104,
+            116,
+            142,
+            124,
+            4,
+            164,
+            218
+          ],
+          "prime": 227
+        },
+        {
+          "generator": [
+            1,
+            139
+          ],
+          "group_order": 265,
+          "logs": [
+            242,
+            20,
+            170,
+            46,
+            29,
+            8,
+            57,
+            152,
+            97,
+            107,
+            254,
+            262
+          ],
+          "prime": 241
+        },
+        {
+          "generator": [
+            3,
+            134
+          ],
+          "group_order": 290,
+          "logs": [
+            10,
+            202,
+            170,
+            228,
+            192,
+            16,
+            132,
+            138,
+            208,
+            254,
+            152,
+            22
+          ],
+          "prime": 263
+        },
+        {
+          "generator": [
+            7,
+            143
+          ],
+          "group_order": 300,
+          "logs": [
+            100,
+            32,
+            216,
+            172,
+            214,
+            50,
+            282,
+            102,
+            152,
+            146,
+            106,
+            94
+          ],
+          "prime": 281
+        }
+      ],
+      "torsion_witness": {
+        "group_order": 18,
+        "prime": 11
+      }
+    },
+    "conclusion": "the twelve specialized section differences are independent; because the thirteen points and covariant map are rational in the family parameter, the generic Mordell-Weil rank is at least twelve",
+    "literal_shift": "39508/39",
+    "quartic_point_count": 13,
+    "section_difference_count": 12,
+    "thirteenth_quartic_point": [
+      "-46964/195",
+      "3170976819397626546496/164775"
+    ]
+  },
+  "input": {
+    "published_points": "elliptic-curves/data/fermigier_e22_points.json",
+    "published_points_sha256": "4783ea13e74edf6a23deea00c7d2fc4a504653251866ae93b54691b950c37a94",
+    "source": "https://matwbn.icm.edu.pl/ksiazki/aa/aa82/aa8243.pdf"
+  },
+  "limitations": {
+    "normalization": "the unresolved factor-two discrepancy in the printed E22 family parameter is unchanged",
+    "saturation": "the certificates prove independence of the displayed points, not that they form a saturated Mordell-Weil basis",
+    "upper_bound": "no unconditional rank upper bound is supplied; exact rank 22 remains conditional as recorded in the benchmark metadata"
+  },
+  "published_e22_points": {
+    "certificate": {
+      "relation_prime": 2,
+      "rows": [
+        {
+          "generator": [
+            2,
+            1
+          ],
+          "group_order": 56,
+          "logs": [
+            6,
+            27,
+            38,
+            54,
+            16,
+            35,
+            28,
+            32,
+            1,
+            25,
+            5,
+            23,
+            9,
+            33,
+            14,
+            29,
+            1,
+            44,
+            32,
+            40,
+            15,
+            26
+          ],
+          "prime": 43
+        },
+        {
+          "generator": [
+            4,
+            41
+          ],
+          "group_order": 80,
+          "logs": [
+            6,
+            44,
+            46,
+            30,
+            42,
+            29,
+            43,
+            48,
+            4,
+            52,
+            24,
+            2,
+            60,
+            57,
+            9,
+            19,
+            18,
+            48,
+            62,
+            5,
+            18,
+            61
+          ],
+          "prime": 67
+        },
+        {
+          "generator": [
+            1,
+            7
+          ],
+          "group_order": 90,
+          "logs": [
+            21,
+            11,
+            77,
+            48,
+            4,
+            68,
+            79,
+            60,
+            43,
+            61,
+            5,
+            46,
+            12,
+            87,
+            82,
+            72,
+            71,
+            16,
+            13,
+            22,
+            80,
+            3
+          ],
+          "prime": 73
+        },
+        {
+          "generator": [
+            0,
+            46
+          ],
+          "group_order": 106,
+          "logs": [
+            50,
+            63,
+            1,
+            58,
+            59,
+            24,
+            97,
+            47,
+            37,
+            3,
+            21,
+            93,
+            16,
+            7,
+            55,
+            80,
+            3,
+            102,
+            11,
+            64,
+            55,
+            51
+          ],
+          "prime": 89
+        },
+        {
+          "generator": [
+            1,
+            59
+          ],
+          "group_order": 114,
+          "logs": [
+            10,
+            18,
+            49,
+            88,
+            95,
+            94,
+            63,
+            81,
+            37,
+            90,
+            57,
+            75,
+            106,
+            99,
+            27,
+            48,
+            106,
+            28,
+            53,
+            35,
+            33,
+            69
+          ],
+          "prime": 101
+        },
+        {
+          "generator": [
+            15,
+            9
+          ],
+          "group_order": 118,
+          "logs": [
+            31,
+            40,
+            34,
+            86,
+            36,
+            107,
+            49,
+            114,
+            18,
+            36,
+            68,
+            83,
+            113,
+            34,
+            34,
+            106,
+            69,
+            16,
+            71,
+            3,
+            112,
+            114
+          ],
+          "prime": 103
+        },
+        {
+          "generator": [
+            13,
+            73
+          ],
+          "group_order": 114,
+          "logs": [
+            64,
+            99,
+            65,
+            55,
+            39,
+            11,
+            73,
+            45,
+            17,
+            68,
+            5,
+            109,
+            80,
+            18,
+            19,
+            50,
+            83,
+            26,
+            55,
+            5,
+            91,
+            95
+          ],
+          "prime": 107
+        },
+        {
+          "generator": [
+            0,
+            81
+          ],
+          "group_order": 128,
+          "logs": [
+            46,
+            105,
+            50,
+            67,
+            46,
+            126,
+            65,
+            104,
+            79,
+            57,
+            97,
+            104,
+            113,
+            101,
+            25,
+            36,
+            92,
+            51,
+            97,
+            49,
+            70,
+            8
+          ],
+          "prime": 109
+        },
+        {
+          "generator": [
+            9,
+            130
+          ],
+          "group_order": 150,
+          "logs": [
+            35,
+            136,
+            91,
+            38,
+            33,
+            84,
+            62,
+            143,
+            87,
+            55,
+            127,
+            78,
+            22,
+            41,
+            70,
+            79,
+            65,
+            51,
+            8,
+            10,
+            3,
+            55
+          ],
+          "prime": 131
+        },
+        {
+          "generator": [
+            2,
+            68
+          ],
+          "group_order": 146,
+          "logs": [
+            55,
+            35,
+            82,
+            76,
+            131,
+            18,
+            136,
+            99,
+            41,
+            11,
+            58,
+            145,
+            5,
+            123,
+            40,
+            126,
+            14,
+            132,
+            124,
+            42,
+            26,
+            139
+          ],
+          "prime": 137
+        },
+        {
+          "generator": [
+            3,
+            96
+          ],
+          "group_order": 152,
+          "logs": [
+            113,
+            14,
+            77,
+            34,
+            74,
+            18,
+            16,
+            130,
+            51,
+            133,
+            46,
+            3,
+            111,
+            72,
+            63,
+            112,
+            37,
+            53,
+            126,
+            123,
+            65,
+            144
+          ],
+          "prime": 149
+        },
+        {
+          "generator": [
+            7,
+            1
+          ],
+          "group_order": 168,
+          "logs": [
+            24,
+            44,
+            85,
+            26,
+            103,
+            126,
+            145,
+            147,
+            14,
+            45,
+            130,
+            9,
+            82,
+            158,
+            55,
+            93,
+            143,
+            42,
+            35,
+            89,
+            12,
+            91
+          ],
+          "prime": 151
+        },
+        {
+          "generator": [
+            7,
+            97
+          ],
+          "group_order": 198,
+          "logs": [
+            37,
+            184,
+            118,
+            121,
+            16,
+            70,
+            156,
+            99,
+            31,
+            104,
+            50,
+            133,
+            106,
+            21,
+            120,
+            76,
+            146,
+            67,
+            36,
+            61,
+            81,
+            145
+          ],
+          "prime": 173
+        },
+        {
+          "generator": [
+            1,
+            109
+          ],
+          "group_order": 220,
+          "logs": [
+            55,
+            37,
+            40,
+            175,
+            105,
+            170,
+            106,
+            58,
+            54,
+            142,
+            203,
+            127,
+            137,
+            171,
+            138,
+            109,
+            6,
+            23,
+            188,
+            36,
+            154,
+            43
+          ],
+          "prime": 193
+        },
+        {
+          "generator": [
+            0,
+            20
+          ],
+          "group_order": 212,
+          "logs": [
+            90,
+            161,
+            62,
+            73,
+            200,
+            75,
+            200,
+            81,
+            209,
+            59,
+            52,
+            10,
+            171,
+            145,
+            199,
+            66,
+            31,
+            142,
+            102,
+            18,
+            46,
+            45
+          ],
+          "prime": 197
+        },
+        {
+          "generator": [
+            8,
+            140
+          ],
+          "group_order": 230,
+          "logs": [
+            77,
+            5,
+            56,
+            19,
+            160,
+            113,
+            63,
+            84,
+            30,
+            101,
+            117,
+            106,
+            97,
+            23,
+            8,
+            75,
+            224,
+            72,
+            51,
+            24,
+            114,
+            201
+          ],
+          "prime": 223
+        },
+        {
+          "generator": [
+            7,
+            127
+          ],
+          "group_order": 230,
+          "logs": [
+            153,
+            179,
+            191,
+            215,
+            58,
+            103,
+            14,
+            173,
+            100,
+            187,
+            188,
+            126,
+            13,
+            130,
+            49,
+            141,
+            34,
+            179,
+            87,
+            175,
+            77,
+            135
+          ],
+          "prime": 227
+        },
+        {
+          "generator": [
+            3,
+            0
+          ],
+          "group_order": 228,
+          "logs": [
+            148,
+            87,
+            133,
+            108,
+            2,
+            155,
+            174,
+            77,
+            149,
+            130,
+            49,
+            86,
+            49,
+            56,
+            79,
+            147,
+            149,
+            76,
+            175,
+            210,
+            95,
+            36
+          ],
+          "prime": 229
+        },
+        {
+          "generator": [
+            12,
+            126
+          ],
+          "group_order": 252,
+          "logs": [
+            106,
+            222,
+            168,
+            91,
+            150,
+            174,
+            29,
+            166,
+            231,
+            76,
+            98,
+            143,
+            202,
+            247,
+            162,
+            58,
+            241,
+            121,
+            122,
+            168,
+            79,
+            75
+          ],
+          "prime": 233
+        },
+        {
+          "generator": [
+            0,
+            13
+          ],
+          "group_order": 258,
+          "logs": [
+            23,
+            185,
+            83,
+            202,
+            114,
+            144,
+            63,
+            147,
+            229,
+            31,
+            12,
+            134,
+            32,
+            238,
+            61,
+            117,
+            236,
+            223,
+            187,
+            131,
+            175,
+            113
+          ],
+          "prime": 239
+        },
+        {
+          "generator": [
+            1,
+            165
+          ],
+          "group_order": 290,
+          "logs": [
+            267,
+            198,
+            76,
+            54,
+            274,
+            221,
+            85,
+            72,
+            175,
+            107,
+            28,
+            80,
+            95,
+            121,
+            161,
+            234,
+            169,
+            79,
+            158,
+            196,
+            112,
+            188
+          ],
+          "prime": 263
+        },
+        {
+          "generator": [
+            9,
+            184
+          ],
+          "group_order": 294,
+          "logs": [
+            254,
+            40,
+            48,
+            111,
+            223,
+            174,
+            123,
+            128,
+            137,
+            202,
+            15,
+            165,
+            105,
+            5,
+            183,
+            16,
+            3,
+            255,
+            205,
+            152,
+            207,
+            104
+          ],
+          "prime": 269
+        }
+      ],
+      "torsion_witness": {
+        "group_order": 41,
+        "prime": 31
+      }
+    },
+    "conclusion": "the displayed E22 curve has Mordell-Weil rank at least 22",
+    "point_count": 22
+  },
+  "randomness": "none; reduction primes and generators are scanned deterministically",
+  "schema": "elliptic-curves.fermigier-rank-certificates.v1",
+  "search_bound": {
+    "interpretation": "certificate-construction bound only; the replay checks every stored row",
+    "maximum_reduction_prime": 1000
+  }
+}

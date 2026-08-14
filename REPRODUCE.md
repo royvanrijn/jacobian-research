@@ -4,6 +4,16 @@ The Makefile is the public verification interface.  Run commands from the
 repository root after creating the Python environment described in the main
 [README](README.md).
 
+## Separate elliptic-curve programme
+
+The elliptic-curve rank/conductor work has its own
+[reproduction catalogue](elliptic-curves/REPRODUCE.md).  Its combined
+dependency-light gate is:
+
+```bash
+make verify-elliptic-curves PYTHON=python3
+```
+
 ## Fast structural check
 
 ```bash

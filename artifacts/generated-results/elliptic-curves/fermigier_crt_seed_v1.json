@@ -1,0 +1,393 @@
+{
+  "best_seed": {
+    "crt_modulus": 2551312982089,
+    "crt_residue": 688722533382,
+    "denominator": 29965,
+    "forced_prime_power_product": 2551312982089,
+    "height": 673709,
+    "homogenized_discriminant_factor": 3048022924357739511980243914730008252493146468228474253468030706191757862591657272616383113806238808706704696487206257014506947070086362660076871799387500,
+    "numerator": 673709,
+    "pari_gp": {
+      "local_data": {
+        "131": {
+          "conductor_exponent": 1,
+          "kodaira_code": 6,
+          "kodaira_symbol": "I_2",
+          "local_euler_coefficient": 1,
+          "minimal_discriminant_valuation": 2,
+          "tamagawa_number": 2
+        },
+        "137": {
+          "conductor_exponent": 1,
+          "kodaira_code": 6,
+          "kodaira_symbol": "I_2",
+          "local_euler_coefficient": 1,
+          "minimal_discriminant_valuation": 2,
+          "tamagawa_number": 2
+        },
+        "89": {
+          "conductor_exponent": 1,
+          "kodaira_code": 6,
+          "kodaira_symbol": "I_2",
+          "local_euler_coefficient": 1,
+          "minimal_discriminant_valuation": 2,
+          "tamagawa_number": 2
+        }
+      },
+      "setrand_seed": 1,
+      "version": "2.15.4"
+    },
+    "uncontrolled_cofactor": 1194687968805001864234859582121275683488194210269583055315648377894180744994568912639925759050320003487218651316706151204509529522272079487500,
+    "weierstrass_coefficients": [
+      "1",
+      "241602120410042508321240065162/806226609856500625",
+      "1",
+      "18211713970921340477953990375207870138682213922870983584381/650001346440706070733854570625390625",
+      "438767786271386585543436240419144125157169688379794182259079053792110538393357336318472/524048381943051234450775986999300341293894336181640625"
+    ]
+  },
+  "canonical_pinned_command": "python3 elliptic-curves/scripts/run_fermigier_crt_seed.py --output artifacts/generated-results/elliptic-curves/fermigier_crt_seed_v1.json",
+  "claim_level": "exact_local_constraint_seed",
+  "family": {
+    "adapter_parameter": "u=s/2",
+    "discriminant_factor_coordinate": "canonical adapter u",
+    "generic_independence_reproduced_here": false,
+    "normalization_warning": "the paper's printed E22 shift and the exact reconstruction differ by a still-unexplained factor two",
+    "published_generic_rank_lower_bound": 12,
+    "weierstrass_model": "[1,a2(u),1,a4(u),a6(u)]"
+  },
+  "generator": "elliptic-curves/scripts/run_fermigier_crt_seed.py",
+  "limitations": {
+    "global_conductor": "not computed; the uncontrolled cofactor is not factored",
+    "rank": "no specialization points or independence certificate computed",
+    "record_status": "not a target candidate"
+  },
+  "randomness": "none; all root combinations and height boxes are exhaustive",
+  "schema": "elliptic-curves.fermigier-crt-seed.v1",
+  "search": {
+    "combinations": [
+      {
+        "crt_modulus": 2551312982089,
+        "crt_residue": 688722533382,
+        "denominator": 29965,
+        "exhaustive_height_checked": 1048576,
+        "forced_valuations": {
+          "131": 2,
+          "137": 2,
+          "89": 2
+        },
+        "height": 673709,
+        "numerator": 673709,
+        "reduced_basis": [
+          [
+            -673709,
+            -29965
+          ],
+          [
+            399186,
+            -3769211
+          ]
+        ],
+        "roots": [
+          3405,
+          255,
+          9386
+        ],
+        "weighted_norm": 454781717906
+      },
+      {
+        "crt_modulus": 2551312982089,
+        "crt_residue": 1862590448707,
+        "denominator": 29965,
+        "exhaustive_height_checked": 1048576,
+        "forced_valuations": {
+          "131": 2,
+          "137": 2,
+          "89": 2
+        },
+        "height": 673709,
+        "numerator": -673709,
+        "reduced_basis": [
+          [
+            -673709,
+            29965
+          ],
+          [
+            399186,
+            3769211
+          ]
+        ],
+        "roots": [
+          4516,
+          16906,
+          9383
+        ],
+        "weighted_norm": 454781717906
+      },
+      {
+        "crt_modulus": 2551312982089,
+        "crt_residue": 212415820758,
+        "denominator": 169126,
+        "exhaustive_height_checked": 1048576,
+        "forced_valuations": {
+          "131": 2,
+          "137": 2,
+          "89": 2
+        },
+        "height": 722299,
+        "numerator": 722299,
+        "reduced_basis": [
+          [
+            -722299,
+            -169126
+          ],
+          [
+            -747175,
+            3357261
+          ]
+        ],
+        "roots": [
+          3405,
+          255,
+          9383
+        ],
+        "weighted_norm": 550319449277
+      },
+      {
+        "crt_modulus": 2551312982089,
+        "crt_residue": 2338897161331,
+        "denominator": 169126,
+        "exhaustive_height_checked": 1048576,
+        "forced_valuations": {
+          "131": 2,
+          "137": 2,
+          "89": 2
+        },
+        "height": 722299,
+        "numerator": -722299,
+        "reduced_basis": [
+          [
+            -722299,
+            169126
+          ],
+          [
+            -747175,
+            -3357261
+          ]
+        ],
+        "roots": [
+          4516,
+          16906,
+          9386
+        ],
+        "weighted_norm": 550319449277
+      },
+      {
+        "crt_modulus": 2551312982089,
+        "crt_residue": 2161172336650,
+        "denominator": 111753,
+        "exhaustive_height_checked": 2097152,
+        "forced_valuations": {
+          "131": 3,
+          "137": 2,
+          "89": 2
+        },
+        "height": 1174354,
+        "numerator": 1174354,
+        "reduced_basis": [
+          [
+            1174354,
+            111753
+          ],
+          [
+            -281287,
+            2145757
+          ]
+        ],
+        "roots": [
+          3405,
+          16906,
+          9383
+        ],
+        "weighted_norm": 1391596050325
+      },
+      {
+        "crt_modulus": 2551312982089,
+        "crt_residue": 390140645439,
+        "denominator": 111753,
+        "exhaustive_height_checked": 2097152,
+        "forced_valuations": {
+          "131": 3,
+          "137": 2,
+          "89": 2
+        },
+        "height": 1174354,
+        "numerator": -1174354,
+        "reduced_basis": [
+          [
+            1174354,
+            -111753
+          ],
+          [
+            -281287,
+            -2145757
+          ]
+        ],
+        "roots": [
+          4516,
+          255,
+          9386
+        ],
+        "weighted_norm": 1391596050325
+      },
+      {
+        "crt_modulus": 2551312982089,
+        "crt_residue": 86166067185,
+        "denominator": 1297744,
+        "exhaustive_height_checked": 2097152,
+        "forced_valuations": {
+          "131": 2,
+          "137": 2,
+          "89": 2
+        },
+        "height": 1297744,
+        "numerator": 951859,
+        "reduced_basis": [
+          [
+            951859,
+            1297744
+          ],
+          [
+            -856866,
+            1512115
+          ]
+        ],
+        "roots": [
+          3405,
+          16906,
+          9386
+        ],
+        "weighted_norm": 2590175045417
+      },
+      {
+        "crt_modulus": 2551312982089,
+        "crt_residue": 2465146914904,
+        "denominator": 1297744,
+        "exhaustive_height_checked": 2097152,
+        "forced_valuations": {
+          "131": 2,
+          "137": 2,
+          "89": 2
+        },
+        "height": 1297744,
+        "numerator": -951859,
+        "reduced_basis": [
+          [
+            951859,
+            -1297744
+          ],
+          [
+            -856866,
+            -1512115
+          ]
+        ],
+        "roots": [
+          4516,
+          255,
+          9383
+        ],
+        "weighted_norm": 2590175045417
+      }
+    ],
+    "constraints": [
+      {
+        "exponent": 2,
+        "modulus": 7921,
+        "prime": 89,
+        "root_reductions": [
+          {
+            "derivative_mod_prime": 22,
+            "local_euler_coefficient": 1,
+            "reduction": "split_multiplicative",
+            "root": 23
+          },
+          {
+            "derivative_mod_prime": 67,
+            "local_euler_coefficient": 1,
+            "reduction": "split_multiplicative",
+            "root": 66
+          }
+        ],
+        "roots_mod_prime": [
+          23,
+          66
+        ],
+        "roots_mod_prime_power": [
+          3405,
+          4516
+        ]
+      },
+      {
+        "exponent": 2,
+        "modulus": 17161,
+        "prime": 131,
+        "root_reductions": [
+          {
+            "derivative_mod_prime": 18,
+            "local_euler_coefficient": 1,
+            "reduction": "split_multiplicative",
+            "root": 7
+          },
+          {
+            "derivative_mod_prime": 113,
+            "local_euler_coefficient": 1,
+            "reduction": "split_multiplicative",
+            "root": 124
+          }
+        ],
+        "roots_mod_prime": [
+          7,
+          124
+        ],
+        "roots_mod_prime_power": [
+          255,
+          16906
+        ]
+      },
+      {
+        "exponent": 2,
+        "modulus": 18769,
+        "prime": 137,
+        "root_reductions": [
+          {
+            "derivative_mod_prime": 60,
+            "local_euler_coefficient": 1,
+            "reduction": "split_multiplicative",
+            "root": 67
+          },
+          {
+            "derivative_mod_prime": 77,
+            "local_euler_coefficient": 1,
+            "reduction": "split_multiplicative",
+            "root": 70
+          }
+        ],
+        "roots_mod_prime": [
+          67,
+          70
+        ],
+        "roots_mod_prime_power": [
+          9383,
+          9386
+        ]
+      }
+    ],
+    "lattice_weights": [
+      1,
+      1
+    ],
+    "maximum_height": 8388608,
+    "representative_count_per_residue": 1,
+    "root_combinations_tested": 8
+  }
+}

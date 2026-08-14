@@ -1,5 +1,9 @@
 # From one collision to marked-root Keller maps
 
+A separate [elliptic-curve rank/conductor research programme](elliptic-curves/README.md)
+develops a reproducible Hensel--CRT--rational-lattice search without changing
+the mathematical scope of the Keller-map results below.
+
 This repository verifies a three-dimensional polynomial Keller map with a
 three-point collision, explains it through a tangent-map normal form, and
 develops weighted, cancellation, decorated-normalization, Hurwitz, and

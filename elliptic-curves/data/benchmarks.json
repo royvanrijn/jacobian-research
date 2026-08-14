@@ -1,0 +1,53 @@
+{
+  "schema": "elliptic-curves.benchmarks.v1",
+  "checked_on": "2026-08-14",
+  "logarithm": "natural",
+  "targets": {
+    "rank_conductor": {
+      "rank_lower_bound": 21,
+      "strict_log_conductor_bound": "182.72",
+      "maximum_integer_conductor": "22609332114411420624526008180120083289443726642551045721326266745468787166869234"
+    },
+    "rank_record": {
+      "rank_lower_bound": 30
+    }
+  },
+  "curves": {
+    "fermigier_e22": {
+      "weierstrass_coefficients": [
+        1,
+        0,
+        1,
+        "-940299517776391362903023121165864",
+        "10707363070719743033425295515449274534651125011362"
+      ],
+      "published_rank_lower_bound": 22,
+      "rank_lower_bound_reproduced_here": true,
+      "rank_lower_bound_checker": "elliptic-curves/scripts/verify_fermigier_rank_certificates.py",
+      "exact_rank_status": "22 conditional on GRH for associated number-field zeta functions",
+      "conductor": "22720638514787473197194583889675055980109503436060704437972911338086049759883790",
+      "log_conductor": "182.72491095063742879610833035152407869",
+      "sources": [
+        "https://matwbn.icm.edu.pl/ksiazki/aa/aa82/aa8243.pdf",
+        "https://arxiv.org/abs/1112.1503",
+        "https://arxiv.org/abs/1606.07178"
+      ]
+    },
+    "elkies_klagsbrun_e29": {
+      "weierstrass_coefficients": [
+        1,
+        0,
+        0,
+        "-27006183241630922218434652145297453784768054621836357954737385",
+        "55258058551342376475736699591118191821521067032535079608372404779149413277716173425636721497"
+      ],
+      "published_rank_lower_bound": 29,
+      "rank_lower_bound_reproduced_here": false,
+      "exact_rank_status": "29 conditional on GRH for associated number-field zeta functions",
+      "sources": [
+        "https://web.math.pmf.unizg.hr/~duje/tors/rk29.html",
+        "https://listserv.nodak.edu/cgi-bin/wa.exe?A2=NMBRTHRY%3Bb9d018b1.2409&S=b"
+      ]
+    }
+  }
+}

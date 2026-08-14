@@ -1,0 +1,100 @@
+{
+  "schema": "elliptic-curves.family.v1",
+  "id": "fermigier-mestre-rank12",
+  "purpose": "exact executable adapter to a high-generic-rank family",
+  "published_generic_rank_lower_bound": 12,
+  "generic_independence_reproduced_here": true,
+  "fixed_roots": [0, 55, 314, 378, 1007, 1036],
+  "construction": {
+    "p6": "product_i (x-a_i)",
+    "degree_twelve_product": "p6(x-s)*p6(x+s)",
+    "square_remainder": "q=g^2-r with deg(g)=6 and deg(r)=4",
+    "quartic": "y^2=r(x)",
+    "visible_points_implemented": "x=a_i +/- s, y=g(x)",
+    "source_parameters_for_fixed_roots": "(u,v)=(3,5), with affine root change X=x_source/2+465",
+    "thirteenth_point": "x=1256/5-(17/35)*s; y=(50616/1225)*s*(936*s^3-254422*s^2-283436139*s+34925066050)"
+  },
+  "parameter_normalization": {
+    "paper_formula": "q=p6(x-t)*p6(x+t)",
+    "paper_reported_e22_parameter": "t=19754/39",
+    "literal_api": "fermigier_quartic(s) uses the displayed shift s",
+    "canonical_adapter_parameter": "u=s/2",
+    "empirical_e22_bridge": "u=19754/39, equivalently s=39508/39",
+    "status": "unresolved factor-two discrepancy: the literal printed shift s=19754/39 does not produce the displayed E22 curve, while s=39508/39 does; no derivation or erratum has been found"
+  },
+  "source_discrepancy_replay": {
+    "literal_printed_shift": "19754/39",
+    "literal_minimal_model": [1, 0, 1, -1223348097402005168062873899944, -213263015130965060475376699543914227367884158],
+    "literal_conductor": "3336936695055698757544757721801363002721636124100955091377369358240007970",
+    "reconstruction_shift": "39508/39",
+    "result": "the reconstruction shift yields the displayed E22 model and conductor; exact j-invariants of the two specializations differ"
+  },
+  "canonical_weierstrass_model": {
+    "coordinates": "[1,a2(u),1,a4(u),a6(u)] with u=s/2",
+    "coefficients_low_to_high": {
+      "a1": [1],
+      "a2": [298803565660, 0, 1718550, 0, -8],
+      "a3": [1],
+      "a4": [27856983036916830925012, 0, 317946481466562025, 0, 1028009011008, 0, -18151200, 0, -64],
+      "a6": [829998138277457737118423455411406, 0, 14321756340366264921294086000, 0, 109667821527431621677482, 0, 573566223236700400, 0, -31029122010320, 0, 35222400, 0, 512]
+    },
+    "discriminant_coefficients_low_to_high": [
+      11171995474595122022220700685075985836488003522712201657965920000,
+      0,
+      -4664162594803449347416664703336966455393619942319163513192875,
+      0,
+      529759946663021294253196844469955118570259147664813128103,
+      0,
+      -11178342899135258144721848403972282536465795686989600,
+      0,
+      -1187127782267318113277179802891701283011852180720,
+      0,
+      76618729972862587046938284976473208236236800,
+      0,
+      -1818332159161271307780059093768516542464,
+      0,
+      19537670799436008202409817217433600,
+      0,
+      -72028136935950346381656326144,
+      0,
+      -195366581179867201536000,
+      0,
+      1322860664586240000
+    ],
+    "derivation": "For the quartic at literal shift s=2u, the exact binary-quartic invariants satisfy I=101232^4*u^4*c4 and J=2*101232^6*u^6*c6; hence the raw Jacobian discriminant differs by (202464*u)^12 and the canonical discriminant is the primitive polynomial above.",
+    "warning": "the u^12 and 202464^12 factors in the raw quartic-to-Weierstrass conversion are nonminimal coordinate artifacts, not shaping factors"
+  },
+  "benchmark_specialization": {
+    "adapter_parameter_u": "19754/39",
+    "literal_shift_s": "39508/39",
+    "paper_reported_parameter_for_unresolved_comparison": "19754/39",
+    "minimal_model": [
+      "1",
+      "0",
+      "1",
+      "-940299517776391362903023121165864",
+      "10707363070719743033425295515449274534651125011362"
+    ],
+    "rank_lower_bound_reproduced_here": 22,
+    "generic_section_difference_rank_reproduced_here": 12,
+    "certificate": "../../artifacts/generated-results/elliptic-curves/fermigier_rank_certificates_v1.json"
+  },
+  "rank20_near_miss": {
+    "adapter_parameter_u": "28917/20",
+    "literal_shift_s": "28917/10",
+    "rank_lower_bound_reproduced_here": 20,
+    "minimal_model": [
+      "1",
+      "1",
+      "1",
+      "-4437412060110743641525245114305",
+      "3586842216822165612930264910099076801587288127"
+    ],
+    "conductor": "2876153493562761211278364526603564191699143885403233935132057708367930",
+    "log_conductor": "159.93482522552545339840138409496203860",
+    "certificate": "../../artifacts/generated-results/elliptic-curves/fermigier_rank20_near_miss_v1.json",
+    "target_status": "one independent point short; not a solution"
+  },
+  "source": "https://matwbn.icm.edu.pl/ksiazki/aa/aa82/aa8243.pdf",
+  "caution": "The repository now replays generic rank at least 12 and E22 rank at least 22 with exact finite-reduction independence certificates. It does not prove saturation or an unconditional upper bound. It reproduces the E22 model/conductor only through the explicitly unresolved doubled-shift bridge."
+}

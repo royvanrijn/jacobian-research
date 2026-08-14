@@ -20,6 +20,7 @@ VERIFIED_PAPERS := $(FINALIZED_PAPERS) $(ACTIVE_PAPERS)
 ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 
 .PHONY: check verify verify-logged verify-minimal verify-core verify-geometry \
+	verify-elliptic-curves \
 	verify-theorems verify-regressions verify-derived verify-family \
 	verify-external-consequences verify-restricted-minima verify-two-real-gmc verify-sic2c4 verify-factorial-moments verify-factorial-frontier verify-counterexample-scoreboard verify-plane-jc verify-plane-case2-residue-strata verify-plane-case2-j1-endpoint verify-plane-case2-maximal-gcd verify-plane-case2-gcd6 verify-plane-poisson-radical verify-plane-poisson-primary-charts verify-plane-poisson-separators verify-plane-poisson-primary-filtration verify-plane-poisson-filtered-modules verify-weighted-boundary verify-quartic-degree-drop-quantization \
 	verify-plane-72-108-exact-fast verify-plane-72-108-belyi-deformations refresh-plane-72-108-belyi-deformations \
@@ -156,10 +157,21 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: verify-collision-axis-unimodular-frontend
 
 check:
-	$(PYTHON) -m compileall -q jcsearch scripts
+	$(PYTHON) -m compileall -q jcsearch scripts elliptic-curves/ecsearch elliptic-curves/scripts elliptic-curves/tests
 	$(PYTHON) scripts/check_markdown_links.py
 	$(PYTHON) scripts/audit_status.py
 	$(PYTHON) scripts/audit_repository_hygiene.py
+
+verify-elliptic-curves:
+	$(PYTHON) -m unittest discover -s elliptic-curves/tests -v
+	$(PYTHON) elliptic-curves/scripts/verify_family_data.py
+	$(PYTHON) elliptic-curves/scripts/verify_benchmarks.py
+	$(PYTHON) elliptic-curves/scripts/verify_fermigier_rank_certificates.py
+	$(PYTHON) elliptic-curves/scripts/verify_fermigier_rank20_near_miss.py
+	$(PYTHON) elliptic-curves/scripts/verify_crt_lattice_calibration.py
+	$(PYTHON) elliptic-curves/scripts/verify_fermigier_crt_seed.py
+	$(PYTHON) elliptic-curves/scripts/verify_kihara_rank14.py
+	$(PYTHON) elliptic-curves/scripts/verify_e29_independence.py
 
 verify-global-low-degree-census:
 	$(PYTHON) scripts/verify_global_low_degree_census.py
