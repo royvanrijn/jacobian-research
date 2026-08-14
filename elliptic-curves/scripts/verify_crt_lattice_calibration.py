@@ -41,16 +41,22 @@ def main() -> None:
         check=True,
     )
     assert "***" not in rank_two.stdout + rank_two.stderr
-    assert ast.literal_eval(rank_two.stdout.strip()) == [
-        2,
-        2,
-        0,
-        [[5, 5], [-5, 5]],
-    ]
+    rank_two_result = ast.literal_eval(rank_two.stdout.strip())
+    assert rank_two_result[:3] == [2, 2, 0]
+    # Generator order changed between PARI 2.15.4 and 2.17.4.
+    assert {tuple(point) for point in rank_two_result[3]} == {
+        (5, 5),
+        (-5, 5),
+    }
     expected = json.loads(ARTIFACT.read_text())
     actual = build_calibration(
         maximum_height=expected["search"]["maximum_height"]
     )
+    # The remaining manifest is exact mathematical output; the PARI release
+    # string is provenance and may differ on an independent replay host.
+    actual["best_candidate"]["pari_gp"]["version"] = expected[
+        "best_candidate"
+    ]["pari_gp"]["version"]
     assert actual == expected, "pinned calibration is stale"
     best = actual["best_candidate"]
     assert (best["numerator"], best["denominator"]) == (-110627, 84367)

@@ -374,7 +374,7 @@ def main() -> None:
         "status": "bounded fixed-fiber alternate-cover search complete",
         "curve": {
             "roots": list(ROOTS),
-            "parameter": rational_string(PARAMETER),
+            "parameter": rational_to_string(PARAMETER),
             "short_weierstrass_coefficients": [
                 rational_to_string(value) for value in coefficients
             ],

@@ -1,0 +1,680 @@
+{
+  "claim_level": "bounded computation; no rank claim",
+  "coordinate_normalization": {
+    "legacy_CAS_coordinate": "literal symmetric shift T=s=2u",
+    "search_coordinate": "canonical adapter u=s/2",
+    "sign_quotient": "u and -u give the same canonical coefficients"
+  },
+  "generated_at_utc": "2026-08-14T20:17:18.290685+00:00",
+  "outcome": {
+    "completed_conductors": 3,
+    "conductor_timeouts_or_errors": 5,
+    "interpretation": "No completed exact conductor passed ln(N)<182.72; incomplete factorizations were not promoted.",
+    "point_search_calls": 0,
+    "rank_calls": 0,
+    "seed_strict_target_feasible": false,
+    "strict_target_feasible_fresh_fibres": 0,
+    "target_met": false
+  },
+  "parameters": {
+    "conductor_keep": 8,
+    "conductor_timeout_seconds": 25.0,
+    "stack_bytes": 512000000,
+    "workers": 4
+  },
+  "population": {
+    "broad_neighbourhood_intersection_count": 0,
+    "exponent_profiles": [
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        3,
+        2,
+        2
+      ],
+      [
+        2,
+        3,
+        2
+      ],
+      [
+        2,
+        2,
+        3
+      ],
+      [
+        3,
+        3,
+        2
+      ],
+      [
+        3,
+        2,
+        3
+      ],
+      [
+        2,
+        3,
+        3
+      ],
+      [
+        3,
+        3,
+        3
+      ],
+      [
+        4,
+        2,
+        2
+      ],
+      [
+        2,
+        4,
+        2
+      ],
+      [
+        2,
+        2,
+        4
+      ]
+    ],
+    "fresh_count": 31520,
+    "fresh_parameter_sha256": "3185367a55b78b6b490eba416198e9f30e19bb38db5f69a73fbb3b4778724aff",
+    "primes": [
+      89,
+      131,
+      137
+    ],
+    "profile_replay": [
+      {
+        "coefficient_radius": 64,
+        "profile": [
+          2,
+          2,
+          2
+        ],
+        "root_combinations": 8,
+        "root_counts": [
+          2,
+          2,
+          2
+        ],
+        "signed_representatives_before_sign_quotient": 39290
+      },
+      {
+        "coefficient_radius": 16,
+        "profile": [
+          3,
+          2,
+          2
+        ],
+        "root_combinations": 8,
+        "root_counts": [
+          2,
+          2,
+          2
+        ],
+        "signed_representatives_before_sign_quotient": 2492
+      },
+      {
+        "coefficient_radius": 16,
+        "profile": [
+          2,
+          3,
+          2
+        ],
+        "root_combinations": 8,
+        "root_counts": [
+          2,
+          2,
+          2
+        ],
+        "signed_representatives_before_sign_quotient": 2492
+      },
+      {
+        "coefficient_radius": 16,
+        "profile": [
+          2,
+          2,
+          3
+        ],
+        "root_combinations": 8,
+        "root_counts": [
+          2,
+          2,
+          2
+        ],
+        "signed_representatives_before_sign_quotient": 2482
+      },
+      {
+        "coefficient_radius": 16,
+        "profile": [
+          3,
+          3,
+          2
+        ],
+        "root_combinations": 8,
+        "root_counts": [
+          2,
+          2,
+          2
+        ],
+        "signed_representatives_before_sign_quotient": 2486
+      },
+      {
+        "coefficient_radius": 16,
+        "profile": [
+          3,
+          2,
+          3
+        ],
+        "root_combinations": 8,
+        "root_counts": [
+          2,
+          2,
+          2
+        ],
+        "signed_representatives_before_sign_quotient": 2490
+      },
+      {
+        "coefficient_radius": 16,
+        "profile": [
+          2,
+          3,
+          3
+        ],
+        "root_combinations": 8,
+        "root_counts": [
+          2,
+          2,
+          2
+        ],
+        "signed_representatives_before_sign_quotient": 2492
+      },
+      {
+        "coefficient_radius": 16,
+        "profile": [
+          3,
+          3,
+          3
+        ],
+        "root_combinations": 8,
+        "root_counts": [
+          2,
+          2,
+          2
+        ],
+        "signed_representatives_before_sign_quotient": 2498
+      },
+      {
+        "coefficient_radius": 16,
+        "profile": [
+          4,
+          2,
+          2
+        ],
+        "root_combinations": 8,
+        "root_counts": [
+          2,
+          2,
+          2
+        ],
+        "signed_representatives_before_sign_quotient": 2498
+      },
+      {
+        "coefficient_radius": 16,
+        "profile": [
+          2,
+          4,
+          2
+        ],
+        "root_combinations": 8,
+        "root_counts": [
+          2,
+          2,
+          2
+        ],
+        "signed_representatives_before_sign_quotient": 2488
+      },
+      {
+        "coefficient_radius": 16,
+        "profile": [
+          2,
+          2,
+          4
+        ],
+        "root_combinations": 8,
+        "root_counts": [
+          2,
+          2,
+          2
+        ],
+        "signed_representatives_before_sign_quotient": 2502
+      }
+    ],
+    "raw_sign_quotiented_count": 31524,
+    "selection": "first 8 by exact trial-radical upper integer",
+    "trial_prime_bound": 2000
+  },
+  "prior_exclusion": {
+    "audit_path": "artifacts/generated-results/elliptic_fermigier_rank20_adapter_neighborhood_audit.json",
+    "audit_sha256": "0eef1ad22211d9b8f6b8cdcec3e1c8829322f2889195a2f1527b03465e799615",
+    "canonical_adapter_parameter_count": 1798,
+    "canonical_adapter_parameter_sha256": "7c6884a10a434b4d0b3c463ccab97f1d24cf4dbeebfc33e4e250d1ced158bf91",
+    "imported_seed_role": "excluded from discovery; replayed only as calibration",
+    "intersection": [
+      "951859/1297744",
+      "722299/169126",
+      "1174354/111753",
+      "673709/29965"
+    ],
+    "intersection_count": 4
+  },
+  "reproducing_command": "PYTHONPATH=elliptic-curves:elliptic-curves/cas .venv/bin/python elliptic-curves/cas/search_fermigier_high_power_crt_gauss.py",
+  "result_sha256": "d86ad0f62737fa6bd2b05e2e40ef0c17280a378713015966a318c93ce7a4af90",
+  "schema_version": "elliptic-curves.fermigier-high-power-crt-gauss.v1",
+  "seed_calibration": {
+    "adapter_u": "673709/29965",
+    "conductor": {
+      "error_type": "CappedProcessTimeout",
+      "status": "timeout",
+      "timeout_seconds": 25.0,
+      "wall_seconds": 25.00270433399419
+    },
+    "literal_shift_T": "1347418/29965",
+    "point_search": "not run unless the exact conductor gate completes below target",
+    "radical": {
+      "exact_radical_upper_integer": "1000211952742681085588361497846610238093738235158176382021201161947729515828141846442466023447957230273636394204065424641691051472970110",
+      "exact_repeated_prime_divisor": "3047377024439426250",
+      "exact_trial_factorization": {
+        "11": 6,
+        "13": 2,
+        "131": 2,
+        "137": 2,
+        "2": 2,
+        "3": 7,
+        "5": 5,
+        "89": 2
+      },
+      "explanation": "rad(H) divides this integer because the unfactored cofactor is charged in full; this is an exact integer upper proxy, not a conductor bound",
+      "homogenized_discriminant_factor": "3048022924357739511980243914730008252493146468228474253468030706191757862591657272616383113806238808706704696487206257014506947070086362660076871799387500",
+      "singular": false,
+      "trial_prime_bound": 1999,
+      "unfactored_cofactor": "145966393766138057569599171900107204933995416718497671997547718287258963607199871159193852834064888144712849219794858409917973",
+      "unfactored_cofactor_bits": 416
+    }
+  },
+  "selected": [
+    {
+      "adapter_u": "8186759/440260",
+      "conductor": {
+        "below_strict_log_conductor_target": false,
+        "conductor": "310921487860024616296015430093828244889699662887009793695471172692282542450508963747587446703901241646391369308848219079940444328270330",
+        "log_conductor": "309.680772704911391622239797588586886507306024165524443132925",
+        "minimal_discriminant": "28446797751506150881915998342098872701331130379835780006023782413470405468026577960937914876075302138156527290182516388469460446088533044870014101932904570629225705455616000000000",
+        "minimal_model": [
+          1,
+          -1,
+          1,
+          -274480200960033466515634896626211386923562994229019619028382,
+          54751542707986098727684824459168322231994790891846408118441769379298148547313514204135981
+        ],
+        "root_number": 1,
+        "status": "completed",
+        "wall_seconds": 20.629223832991556
+      },
+      "height": 8186759,
+      "literal_shift_T": "8186759/220130",
+      "point_search": "not run; exact completed conductor below target required",
+      "profiles": [
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "radical": {
+        "exact_radical_upper_integer": "4708149545874780300973900726749772784107870544481439659829361024429239425952981779669399093019295289849806467524466134858802288470",
+        "exact_repeated_prime_divisor": "152968688482743120239423872028078233438126080000",
+        "exact_trial_factorization": {
+          "13": 2,
+          "131": 2,
+          "137": 2,
+          "19": 4,
+          "2": 51,
+          "3": 9,
+          "5": 5,
+          "7": 18,
+          "89": 2
+        },
+        "explanation": "rad(H) divides this integer because the unfactored cofactor is charged in full; this is an exact integer upper proxy, not a conductor bound",
+        "homogenized_discriminant_factor": "720199461213087757257640682580417171303717038398988859057123815346804204929630853735467874007644324648768828107042169227686439724386951004334833298264880355032273652390297600000",
+        "singular": false,
+        "trial_prime_bound": 1999,
+        "unfactored_cofactor": "56826660063265830495054642237486373461707924583601637020193635041553610699057166454513630205199077718091967488375472407",
+        "unfactored_cofactor_bits": 395
+      }
+    },
+    {
+      "adapter_u": "31108609/219644",
+      "conductor": {
+        "error_type": "CappedProcessTimeout",
+        "status": "timeout",
+        "timeout_seconds": 25.0,
+        "wall_seconds": 25.006270375000895
+      },
+      "height": 31108609,
+      "literal_shift_T": "31108609/109822",
+      "point_search": "not run; exact completed conductor below target required",
+      "profiles": [
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "radical": {
+        "exact_radical_upper_integer": "143573807038519058969474684908473303059662439062272701941682334494755514858135359234503748048857359609691269125015720230468503271090",
+        "exact_repeated_prime_divisor": "1084119829764625797488262688313557647360",
+        "exact_trial_factorization": {
+          "1049": 1,
+          "13": 2,
+          "131": 2,
+          "137": 2,
+          "2": 44,
+          "3": 7,
+          "5": 2,
+          "7": 19,
+          "89": 2
+        },
+        "explanation": "rad(H) divides this integer because the unfactored cofactor is charged in full; this is an exact integer upper proxy, not a conductor bound",
+        "homogenized_discriminant_factor": "155651211245258515328481389783066838012754556269484730182466410504214965645875921618819731535255285261781628723890113324136386003438900245421364173690856966183444702822400",
+        "singular": false,
+        "trial_prime_bound": 1999,
+        "unfactored_cofactor": "31387390578538741066403143488894450259752526479101016032561883787467719964630235393068334112813602975521213362888568799",
+        "unfactored_cofactor_bits": 394
+      }
+    },
+    {
+      "adapter_u": "23768367/89303",
+      "conductor": {
+        "error_type": "CappedProcessTimeout",
+        "status": "timeout",
+        "timeout_seconds": 25.0,
+        "wall_seconds": 25.006451416003983
+      },
+      "height": 23768367,
+      "literal_shift_T": "47536734/89303",
+      "point_search": "not run; exact completed conductor below target required",
+      "profiles": [
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "radical": {
+        "exact_radical_upper_integer": "5526494933736016083720604914299321585729128033241662182534989670017976095418906210628796138165067671131360942501113078740490727319190",
+        "exact_repeated_prime_divisor": "4754343071276364870355328487210",
+        "exact_trial_factorization": {
+          "11": 4,
+          "13": 2,
+          "131": 2,
+          "137": 2,
+          "157": 3,
+          "2": 2,
+          "3": 2,
+          "5": 2,
+          "7": 18,
+          "89": 2,
+          "983": 1
+        },
+        "explanation": "rad(H) divides this integer because the unfactored cofactor is charged in full; this is an exact integer upper proxy, not a conductor bound",
+        "homogenized_discriminant_factor": "26274852896651761266662947657901030283094376751346648226364582389250902200970397208515901622490410554525587347891301336345111360318557169434267575166660401502559900",
+        "singular": false,
+        "trial_prime_bound": 1999,
+        "unfactored_cofactor": "746550867291798918858796055459479240927414998273130677485689532938237542693235855824738883898981953771929341839377101",
+        "unfactored_cofactor_bits": 389
+      }
+    },
+    {
+      "adapter_u": "11804209/11518",
+      "conductor": {
+        "below_strict_log_conductor_target": false,
+        "conductor": "253798874559438159851013109697636089654285221148709803965885069986951017367599648205593329264128003672824250306189972658134952157762857840",
+        "log_conductor": "316.385529675106647096064982317157101182608218968736290122188",
+        "minimal_discriminant": "12885782473225967314295082672210983926011677900497403250579444295365001507463239690398535747509418993442414337914903433568184525579597850640666074269797337170472284380595200",
+        "minimal_model": [
+          0,
+          0,
+          0,
+          -2177580296335541101130791011417134568703298073674118542163,
+          38728746576919810735578330648514151171119471359674974803957981749387080893606823803938
+        ],
+        "root_number": -1,
+        "status": "completed",
+        "wall_seconds": 0.6901563330029603
+      },
+      "height": 11804209,
+      "literal_shift_T": "11804209/5759",
+      "point_search": "not run; exact completed conductor below target required",
+      "profiles": [
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "radical": {
+        "exact_radical_upper_integer": "23871225974364010520223204448611370358755193862745466889191598004792232634273857054702156627551542858617781255284986141660548547569870",
+        "exact_repeated_prime_divisor": "125628369403626227715932160",
+        "exact_trial_factorization": {
+          "13": 2,
+          "131": 2,
+          "137": 2,
+          "17": 5,
+          "2": 18,
+          "3": 7,
+          "31": 2,
+          "5": 2,
+          "67": 2,
+          "73": 2,
+          "89": 2
+        },
+        "explanation": "rad(H) divides this integer because the unfactored cofactor is charged in full; this is an exact integer upper proxy, not a conductor bound",
+        "homogenized_discriminant_factor": "2998903194824839344941605355373120660474105125475465564409733701057639792674836351622196986706777393807576096574206512449223180285947950617089155427049780019200",
+        "singular": false,
+        "trial_prime_bound": 1999,
+        "unfactored_cofactor": "14866884570282643816708627907752185992071846474636098949831685862097487003687511036579346195272288871073410201038172243",
+        "unfactored_cofactor_bits": 393
+      }
+    },
+    {
+      "adapter_u": "85960229/36344",
+      "conductor": {
+        "error_type": "CappedProcessTimeout",
+        "status": "timeout",
+        "timeout_seconds": 25.0,
+        "wall_seconds": 25.003826041996945
+      },
+      "height": 85960229,
+      "literal_shift_T": "85960229/18172",
+      "point_search": "not run; exact completed conductor below target required",
+      "profiles": [
+        [
+          2,
+          2,
+          3
+        ]
+      ],
+      "radical": {
+        "exact_radical_upper_integer": "15636210014529383459478365430918947239414048616714971514579633332982170352522558856137119651072802311449105141389105445776858336417541930",
+        "exact_repeated_prime_divisor": "39900159811784801633831339400041657794560",
+        "exact_trial_factorization": {
+          "13": 3,
+          "131": 2,
+          "137": 3,
+          "17": 4,
+          "19": 2,
+          "2": 35,
+          "23": 2,
+          "29": 2,
+          "3": 12,
+          "373": 2,
+          "43": 2,
+          "5": 2,
+          "71": 2,
+          "89": 2
+        },
+        "explanation": "rad(H) divides this integer because the unfactored cofactor is charged in full; this is an exact integer upper proxy, not a conductor bound",
+        "homogenized_discriminant_factor": "623887278430352355154819434708609904910908704591143147464111346116663397789542633487760330188377785287121842493324031687711150391895569652528218557474678731741747328100125900800",
+        "singular": false,
+        "trial_prime_bound": 1999,
+        "unfactored_cofactor": "102310692937403715959149629848525676657392220484644218952907193179038999202496522959097670049031267252401945714594541",
+        "unfactored_cofactor_bits": 386
+      }
+    },
+    {
+      "adapter_u": "37221352/179817",
+      "conductor": {
+        "error_type": "CappedProcessTimeout",
+        "status": "timeout",
+        "timeout_seconds": 25.0,
+        "wall_seconds": 25.003812625000137
+      },
+      "height": 37221352,
+      "literal_shift_T": "74442704/179817",
+      "point_search": "not run; exact completed conductor below target required",
+      "profiles": [
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "radical": {
+        "exact_radical_upper_integer": "1260758548547778690249802325788576302181549204662856243816091247306787690178808167127839953153717681484240136310378863489556642280567060790",
+        "exact_repeated_prime_divisor": "11025121561852021253565182563680",
+        "exact_trial_factorization": {
+          "13": 3,
+          "131": 2,
+          "137": 2,
+          "19": 2,
+          "2": 6,
+          "23": 2,
+          "233": 1,
+          "3": 5,
+          "31": 2,
+          "5": 2,
+          "7": 18,
+          "89": 2
+        },
+        "explanation": "rad(H) divides this integer because the unfactored cofactor is charged in full; this is an exact integer upper proxy, not a conductor bound",
+        "homogenized_discriminant_factor": "13900016257883373155506134576722623678420802364884102428502523105125925812683701589464822801675902723012552736147743436973654939069984698251700591865526543131454606107200",
+        "singular": false,
+        "trial_prime_bound": 1999,
+        "unfactored_cofactor": "91598498193972836190124828480822798183300035059066892634784297452788817483154469123316375008727774089424538361371283007031",
+        "unfactored_cofactor_bits": 406
+      }
+    },
+    {
+      "adapter_u": "44134867/262475",
+      "conductor": {
+        "error_type": "CappedProcessTimeout",
+        "status": "timeout",
+        "timeout_seconds": 25.0,
+        "wall_seconds": 25.00474841700634
+      },
+      "height": 44134867,
+      "literal_shift_T": "88269734/262475",
+      "point_search": "not run; exact completed conductor below target required",
+      "profiles": [
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "radical": {
+        "exact_radical_upper_integer": "8689470972747435026824967703070377633050328758203905285524672595545733478928046927426716041531538867789915200981679993586490812499397087730",
+        "exact_repeated_prime_divisor": "575251611673130152656408751943250",
+        "exact_trial_factorization": {
+          "13": 2,
+          "131": 2,
+          "137": 2,
+          "17": 4,
+          "19": 2,
+          "2": 2,
+          "3": 7,
+          "5": 4,
+          "7": 19,
+          "89": 2
+        },
+        "explanation": "rad(H) divides this integer because the unfactored cofactor is charged in full; this is an exact integer upper proxy, not a conductor bound",
+        "homogenized_discriminant_factor": "4998632181659844017687804479699261326609269259709410235779285225360789944889310026405394014682996185402666384936065182589563715540346748807479593258214124459943028231322500",
+        "singular": false,
+        "trial_prime_bound": 1999,
+        "unfactored_cofactor": "6169447856400022593536366010696892740410131848211620602526165172017219458196854450089122215978800506943082618874963420421478989",
+        "unfactored_cofactor_bits": 422
+      }
+    },
+    {
+      "adapter_u": "62638495/371152",
+      "conductor": {
+        "below_strict_log_conductor_target": false,
+        "conductor": "2088439862298432200661334719689675897227886502934890920319769977626287777055864584121070883054895379066603003923923161327131024547235183735115790",
+        "log_conductor": "332.308670700997165111835412408355856210459811166704708606799",
+        "minimal_discriminant": "-2695044565033834614654496686272370421478031560926276079239764259525834335980869983737968099240600243600260911315317578296391654253135285818366718955839261634951256008245230796800000",
+        "minimal_model": [
+          1,
+          1,
+          1,
+          -1665587916868715488079848725203263893536936733199685281080745,
+          831130950733996633037285929906680759659807643489528754662270172205549606940450940195654295
+        ],
+        "root_number": -1,
+        "status": "completed",
+        "wall_seconds": 0.018578333998448215
+      },
+      "height": 62638495,
+      "literal_shift_T": "62638495/185576",
+      "point_search": "not run; exact completed conductor below target required",
+      "profiles": [
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "radical": {
+        "exact_radical_upper_integer": "90030601469950088402006066288299172187260701941410135807206534363335249258777625732684005822084553134741690905027510511149330712904047236070",
+        "exact_repeated_prime_divisor": "57610743414005584914400558448640000",
+        "exact_trial_factorization": {
+          "131": 2,
+          "137": 2,
+          "2": 38,
+          "29": 2,
+          "293": 1,
+          "3": 14,
+          "5": 5,
+          "53": 4,
+          "61": 2,
+          "89": 2
+        },
+        "explanation": "rad(H) divides this integer because the unfactored cofactor is charged in full; this is an exact integer upper proxy, not a conductor bound",
+        "homogenized_discriminant_factor": "5186729880693888587517229230689625871645118315731358157639317214298381143556735119026709267281960228086371214143458229879491019348831846359421052870780539038037479050444800000",
+        "singular": false,
+        "trial_prime_bound": 1999,
+        "unfactored_cofactor": "68393637864716514364015696140539713673255697988543545496792612838072444381931979092122950082883399038334022431499757947046543",
+        "unfactored_cofactor_bits": 415
+      }
+    }
+  ],
+  "software": {
+    "python": "3.14.6"
+  },
+  "status": "complete bounded exact population and conductor-first gate"
+}

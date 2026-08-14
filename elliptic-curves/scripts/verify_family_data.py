@@ -68,10 +68,16 @@ def verify_calibration_family() -> None:
     )
     assert "***" not in completed.stdout + completed.stderr
     rank = ast.literal_eval(completed.stdout.strip())
-    assert rank == [2, 2, 0, [[5, 5], [-5, 5]]]
+    # PARI 2.15.4 returned Q,R while 2.17.4 returns R,Q for the same seeded
+    # calculation.  Generator order is not mathematical output: retain the
+    # exact rank bounds and require precisely the two pinned points.
+    assert rank[:3] == [2, 2, 0]
+    assert {tuple(point) for point in rank[3]} == {(5, 5), (-5, 5)}
     witness = family["independence_witness"]
     assert witness["specialized_model"] == [0, 0, 0, -25, 25]
-    assert witness["specialized_points"] == rank[3]
+    assert {tuple(point) for point in witness["specialized_points"]} == {
+        tuple(point) for point in rank[3]
+    }
     assert witness["pari_gp_setrand_seed"] == 1
 
 

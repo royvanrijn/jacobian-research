@@ -1,0 +1,99 @@
+{
+  "actual_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/explicit_formula_fermigier_rank20_28917_20_delta22.py",
+  "declared_budget": {
+    "pari_stack_bytes": 512000000,
+    "pari_timeout_seconds": 60.0
+  },
+  "delta_11_over_5": {
+    "conservative_explicit_formula_upper": "21.0335328229846198389492435263820719143863449128464108167618",
+    "explicit_formula_value_before_allowance": "21.0325328229846198389492435263820719143863449128464108167618",
+    "prime_sum": {
+      "bad_reduction_prime_sum": "0.71280069733366610570203594187076755963550584191787001962023388837132071992374797",
+      "conductor": "2876153493562761211278364526603564191699143885403233935132057708367930",
+      "good_reduction_prime_sum": "-68.407912492722057365265861388437127561873781371969886958299559404996631706680452",
+      "log_conductor": "159.93482522552545339840138409496203860033602762598444576466041725048663568492918",
+      "maximum_prime": 1007519,
+      "pari_milliseconds_after_curve_setup": 1764,
+      "prime_count": 79057,
+      "prime_limit": 1007525,
+      "prime_power_term_count": 79293,
+      "prime_sum": "-67.695111795388391259563825446566360002238275530052016938679325516625310986756704"
+    },
+    "quadrature": {
+      "analytic_absolute_tail_bound": "0.009768042335133851598918012013480056867",
+      "closed_form_contribution_to_explicit_formula": "-0.066297585261396751831176694018569436575",
+      "closed_form_distance_from_truncated_integral": "0.002924493153658850455752967685352695921",
+      "closed_form_full_integral": "-0.2082800068079469875844614040873528181",
+      "closed_form_inside_tail_enclosure": true,
+      "delta": "11/5",
+      "finite_interval": "[-32,32]",
+      "gauss_legendre_value": "-0.21120449996160583804021437177270551402",
+      "quadrature_disagreement": "0.0",
+      "tanh_sinh_value": "-0.21120449996160583804021437177270551402"
+    },
+    "strictly_less_than_22": true
+  },
+  "direct_delta2_calibration": {
+    "curve": "Bober E20",
+    "direct_conservative_upper": "21.69172384305754685872393638540013928511109350781927712",
+    "direct_value_before_allowance": "21.69072384305754685872393638540013928511109350781927712",
+    "passes_published_value": true,
+    "published_upper_value_rounded_up": "21.70",
+    "quadrature": {
+      "analytic_absolute_tail_bound": "0.011819331225511960434690794536310868809",
+      "closed_form_contribution_to_explicit_formula": "-0.071033437133566076229081950572093510417",
+      "closed_form_distance_from_truncated_integral": "0.0035349428095409112709462546806910906927",
+      "closed_form_full_integral": "-0.22315812425804360569746032511974807546",
+      "closed_form_inside_tail_enclosure": true,
+      "delta": "2",
+      "finite_interval": "[-32,32]",
+      "gauss_legendre_value": "-0.22669306706758451696840657980043916616",
+      "quadrature_disagreement": "0.0",
+      "tanh_sinh_value": "-0.22669306706758451696840657980043916616"
+    }
+  },
+  "input": {
+    "adapter_parameter": "28917/20",
+    "bounded_search_limitations": {
+      "normalization": "the Fermigier factor-two source discrepancy remains unresolved",
+      "rank": "no twenty-first independent point and no upper bound",
+      "saturation": "the selected subgroup is not claimed saturated",
+      "target_status": "near miss, not a solution"
+    },
+    "certified_algebraic_rank_lower_bound": 20,
+    "conductor": "2876153493562761211278364526603564191699143885403233935132057708367930",
+    "imported_certificate_path": "/Users/royvanrijn/Documents/jacobian-research/artifacts/generated-results/elliptic-curves/fermigier_rank20_near_miss_v1.json",
+    "imported_certificate_sha256": "8416e835887236e9e4eafcb01384a710ce4f1be0628701a97f4a7d7a07fe63b1",
+    "minimal_model": [
+      1,
+      1,
+      1,
+      -4437412060110743641525245114305,
+      3586842216822165612930264910099076801587288127
+    ],
+    "root_number": 1
+  },
+  "interpretation": {
+    "search_priority": "deprioritize additional fixed-fiber point searches and use the fiber as an anchor for parameter-neighborhood searches",
+    "unconditional": "this supplies no algebraic-rank upper bound; the imported unconditional statement remains rank at least 20",
+    "under_bsd_and_grh": "the exact algebraic lower bound 20 and conditional analytic upper bound 20 force algebraic and analytic rank exactly 20",
+    "under_grh": "the analytic rank is at most 21; root number +1 forces even analytic order, hence analytic rank at most 20"
+  },
+  "method": {
+    "bober_source": "https://antsmath.org/ANTSX/bober/paper.pdf",
+    "declared_final_numerical_allowance": "0.001",
+    "delta": "11/5",
+    "formula": "Bober equation (3), sinc-squared test function",
+    "prime_limit": 1007525,
+    "prime_limit_definition": "floor(exp(2*pi*Delta))"
+  },
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/explicit_formula_fermigier_rank20_28917_20_delta22.py",
+  "schema_version": 1,
+  "script_sha256": "d7c7f4904bbdbe46b148dd5f048255139532e41523b46ba0eda8193eea4f69f1",
+  "software": {
+    "mpmath": "1.3.0",
+    "pari_gp": "[2, 17, 4]",
+    "python": "3.14.6"
+  },
+  "status": "imported Fermigier rank-20 conditional closure complete"
+}

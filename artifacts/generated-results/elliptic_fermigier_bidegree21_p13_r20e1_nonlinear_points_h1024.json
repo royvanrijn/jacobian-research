@@ -1,0 +1,219 @@
+{
+  "claim_level": "bounded exact computation; not a global rational-point theorem",
+  "classified_points": [],
+  "family_id": "fermigier-mestre-v1",
+  "generated_at_utc": "2026-08-14T21:12:37.664880+00:00",
+  "known_linear_component_intersections": {
+    "distinct_rational_intersection_points": 0,
+    "lines": [
+      {
+        "factor_signature_over_QQ": [
+          [
+            2,
+            2
+          ],
+          [
+            28,
+            1
+          ]
+        ],
+        "line": "k-c=0",
+        "rational_affine_intersection_count": 0,
+        "rational_affine_intersections": [],
+        "rational_intersection_at_infinity": false,
+        "restriction_degree": 32
+      },
+      {
+        "factor_signature_over_QQ": [
+          [
+            2,
+            2
+          ],
+          [
+            28,
+            1
+          ]
+        ],
+        "line": "k+c=0",
+        "rational_affine_intersection_count": 0,
+        "rational_affine_intersections": [],
+        "rational_intersection_at_infinity": false,
+        "restriction_degree": 32
+      },
+      {
+        "factor_signature_over_QQ": [
+          [
+            6,
+            2
+          ],
+          [
+            20,
+            1
+          ]
+        ],
+        "line": "5899690*c+732683*k=0",
+        "rational_affine_intersection_count": 0,
+        "rational_affine_intersections": [],
+        "rational_intersection_at_infinity": false,
+        "restriction_degree": 32
+      },
+      {
+        "factor_signature_over_QQ": [
+          [
+            4,
+            2
+          ],
+          [
+            24,
+            1
+          ]
+        ],
+        "line": "28917*c+10=0",
+        "rational_affine_intersection_count": 0,
+        "rational_affine_intersections": [],
+        "rational_intersection_at_infinity": false,
+        "restriction_degree": 32
+      },
+      {
+        "factor_signature_over_QQ": [
+          [
+            4,
+            2
+          ],
+          [
+            24,
+            1
+          ]
+        ],
+        "line": "39508*c+39=0",
+        "rational_affine_intersection_count": 0,
+        "rational_affine_intersections": [],
+        "rational_intersection_at_infinity": false,
+        "restriction_degree": 32
+      }
+    ],
+    "method": "exact QQ factorization of all five line restrictions"
+  },
+  "nonlinear_factor": {
+    "degree_in_c": 32,
+    "degree_in_k": 32,
+    "primitive_coefficient_sha256": "5c60ea4247ddc7eb99f1cc6726c592e569be3ee7c1de0b74892e0bad252d6eda",
+    "term_count": 561,
+    "total_degree": 32,
+    "upstream_singular_factor_text_sha256": "8c8c84159171629f514bd52f00091b61c0e8a3b806273765c35fc35b032d8799"
+  },
+  "outcome": {
+    "affine_degree32_hits_in_box": 0,
+    "distinct_rational_known_line_intersections": 0,
+    "new_sections": 0,
+    "new_specializations": 0,
+    "rational_points_at_projective_infinity": 0,
+    "target_met": false,
+    "valid_genus_at_most_one_points_found": 0
+  },
+  "projective_boundary": {
+    "C_equals_0_point_present": false,
+    "factor_signature_over_QQ_after_C_equals_1": [
+      [
+        32,
+        1
+      ]
+    ],
+    "rational_K_over_C_roots": [],
+    "rational_projective_point_count": 0,
+    "top_binary_form_degree": 32
+  },
+  "representative_pair": {
+    "left": "P13 at literal_shift_T=39508/39",
+    "right": "R20E1 at literal_shift_T=28917/10"
+  },
+  "reproducing_command": "PYTHONPATH=elliptic-curves:elliptic-curves/cas .venv/bin/python elliptic-curves/cas/search_fermigier_bidegree21_nonlinear_points.py --height 1024",
+  "result_sha256": "5d1006d956cd118f1f97cbbdfcd0ca37b5ab92d83cad56dd891e2451345da1f2",
+  "schema_version": "elliptic-curves.fermigier-bidegree21-nonlinear-points.v1",
+  "scope": {
+    "affine_box_complete": true,
+    "all_rational_points_on_degree32_component_classified": false,
+    "bounded_projective_points_classified": 0,
+    "known_line_rational_intersections_globally_classified": true,
+    "not_claimed": "No claim is made outside projective height H, except for the exact boundary and known-line intersection factorizations; no claim is made for the other 79 exceptional pairs.",
+    "other_exceptional_pairs_classified": false,
+    "projective_boundary_globally_classified": true
+  },
+  "search_region": {
+    "C_D_pairs_reaching_crt": 36968,
+    "C_D_pairs_scanned": 2098176,
+    "centered_K_candidates": 26411,
+    "crt_modulus": 6678671,
+    "crt_modulus_exceeds_twice_height": true,
+    "crt_root_combinations_tested": 86367157,
+    "definition": "D>0, gcd(C,K,D)=1, max(|C|,|K|,D)<=H; c=C/D and k=K/D",
+    "exact_hits": 0,
+    "exact_homogeneous_evaluations": 21819,
+    "first_empty_root_list_rejections": [
+      1975236,
+      0,
+      45257,
+      0,
+      40715
+    ],
+    "height": 1024,
+    "integer_parameter_exact_evaluations": 0,
+    "integer_parameter_hits": 0,
+    "modular_root_tables": [
+      {
+        "affine_Fp_point_count": 0,
+        "affine_vertical_fibers_without_points": 17,
+        "k_power_32_coefficient_nonzero": false,
+        "maximum_roots_in_one_affine_vertical_fiber": 0,
+        "prime": 17,
+        "projective_points_at_infinity": 17
+      },
+      {
+        "affine_Fp_point_count": 141,
+        "affine_vertical_fibers_without_points": 0,
+        "k_power_32_coefficient_nonzero": true,
+        "maximum_roots_in_one_affine_vertical_fiber": 10,
+        "prime": 19,
+        "projective_points_at_infinity": 8
+      },
+      {
+        "affine_Fp_point_count": 20,
+        "affine_vertical_fibers_without_points": 8,
+        "k_power_32_coefficient_nonzero": true,
+        "maximum_roots_in_one_affine_vertical_fiber": 4,
+        "prime": 23,
+        "projective_points_at_infinity": 0
+      },
+      {
+        "affine_Fp_point_count": 106,
+        "affine_vertical_fibers_without_points": 0,
+        "k_power_32_coefficient_nonzero": true,
+        "maximum_roots_in_one_affine_vertical_fiber": 6,
+        "prime": 29,
+        "projective_points_at_infinity": 3
+      },
+      {
+        "affine_Fp_point_count": 57,
+        "affine_vertical_fibers_without_points": 16,
+        "k_power_32_coefficient_nonzero": false,
+        "maximum_roots_in_one_affine_vertical_fiber": 31,
+        "prime": 31,
+        "projective_points_at_infinity": 0
+      }
+    ],
+    "primitive_exact_candidates": 21819,
+    "sieve_primes": [
+      17,
+      19,
+      23,
+      29,
+      31
+    ]
+  },
+  "software": {
+    "python": "3.14.6",
+    "singular": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34",
+    "sympy": "1.14.0"
+  },
+  "status": "complete exact bounded rational-point sieve"
+}

@@ -66,6 +66,212 @@ proves these twelve differences independent.  A relation between the generic
 sections would survive this defined specialization, so this also replays the
 generic rank-at-least-twelve claim.
 
+## Exact arithmetic generic rank
+
+The arithmetic generic Mordell--Weil rank of the canonical adapter is
+unconditionally **exactly twelve** over \(\mathbf Q(u)\).  This is distinct
+from the geometric rank over \(\overline{\mathbf Q}(u)\), which the present
+calculation bounds to the interval \([12,13]\).
+
+Indeed, the canonical coefficient degrees are \((0,4,0,8,12)\), and its
+degree-twenty discriminant is squarefree and coprime to \(c_4\).  Thus there
+are twenty geometric \(I_1\) fibers at finite \(u\).  With \(v=1/u\) and the
+K3 scaling \(x=v^{-4}X, y=v^{-6}Y\), the fiber at infinity is
+
+\[
+Y^2=X^3-8X^2-64X+512=(X-8)^2(X+8).
+\]
+
+The scaled discriminant has order four, the scaled \(c_4\) is \(4096\), and
+the node has rational tangent slopes \(\pm4\).  Hence this is a split
+\(I_4\) fiber.  The trivial lattice therefore has rank
+\(2+\operatorname{rank}(A_3)=5\).  The twelve independently certified
+sections give seventeen independent divisor classes defined over
+\(\mathbf Q\).
+
+At the good prime \(p=41\), exact character sums on the generalized
+Weierstrass equation give
+
+\[
+\#S(\mathbf F_{41})=2244,
+\qquad
+\#S(\mathbf F_{41^2})=2856000.
+\]
+
+The corresponding \(H^2\) traces, using
+\(\#S(\mathbf F_q)-1-q^2\), are \(562\) and \(30238\).  After removing the
+seventeen known \(+41\) eigenvalues, the residual traces are \(-135\) and
+\(1661\).  Reciprocity and the exact Weil interval uniquely reconstruct the
+residual factor as
+
+\[
+(X+41)
+\left(X^4+94X^3+4428X^2+158014X+41^4\right).
+\]
+
+Its value at \(X=41\) is \(2136275316\ne0\), so there is no additional
+\(+41\) eigenvalue.  After normalizing the quartic by \(X=41Z\), its gcd with
+every cyclotomic polynomial of degree at most four is one.  Thus the only
+residual eigenvalue of the form \(41\zeta\) is \(-41\).
+
+Smooth proper specialization injects characteristic-zero divisor classes,
+and a divisor defined over \(\mathbf Q\) contributes a \(+41\) eigenvector.
+Consequently an additional \(\mathbf Q(u)\)-section is impossible, and
+Shioda--Tate gives arithmetic generic rank exactly twelve.  A geometric
+divisor need only contribute \(41\) times a root of unity, so the single
+possible \(-41\) class leaves geometric generic rank at most thirteen.  This
+argument uses the cycle-class eigenvalue condition, not the Tate conjecture;
+it does not decide whether the geometric rank is twelve or thirteen.
+
+The complete replay is
+[`verify_fermigier_generic_rank_exact.py`](../cas/verify_fermigier_generic_rank_exact.py),
+with its pinned output in
+[`elliptic_fermigier_generic_rank_exact.json`](../../artifacts/generated-results/elliptic_fermigier_generic_rank_exact.json).
+
+## Exceptional quotients and two-anchor transport
+
+The exact generic-rank theorem turns the two record-neighborhood fibers into
+well-defined exceptional quotients.  At E22, the reconstructed accidental
+representatives \(P_{13},\ldots,P_{22}\) give ten independent directions
+modulo the generic subgroup.  The remaining representative \(P_6\) satisfies
+the exact group-law relation
+
+\[
+3P_6-(G_1+G_2+G_3+G_4+G_7+G_8+G_{11})
++2(G_5+G_6+G_9+G_{10})-3G_{12}=O.
+\]
+
+At the low-conductor rank-20 anchor, the twenty-point certificate decomposes
+as the twelve generic directions plus eight independent exceptional
+directions.  This makes the comparison intrinsic rather than dependent on a
+raw parameter string or a numerically selected point count.
+
+Every one of the \(11\cdot8=88\) affine abscissa interpolants between the
+published E22 accidental representatives and the eight rank-20 directions
+gives an irreducible squarefree sextic, hence a genus-two square condition.
+For the complete one-parameter quadratic interpolation through each pair,
+the branch discriminant has signature \(k^{16}\) times an irreducible
+degree-32 factor; its only rational collision is \(k=0\), which returns the
+same genus-two affine member.
+
+The complete projective Möbius pencil
+
+\[
+x(T)=\frac{aT+b}{cT+d}
+\]
+
+through each pair was also classified exactly.  In the finite chart \(d=1\),
+the degree-72 branch discriminant has factor signature
+
+\[
+(1,12),(1,12),(1,16),(32,1).
+\]
+
+The two multiplicity-12 rational roots put a pole at one of the prescribed
+anchors and are invalid interpolants; the multiplicity-16 root is \(c=0\),
+the affine genus-two limit.  The degree-32 factor is irreducible over
+\(\mathbf Q\), and the missing \(d=0\) chart is an irreducible degree-ten
+genus-four member.  Thus none of these 88 complete Möbius pencils contains a
+genus-zero or genus-one transport.
+
+Finally, the calculation constructs the actual covers
+
+\[
+y_1^2=f_1(T),\qquad y_2^2=f_2(T),
+\]
+
+for all \(\binom{80}{2}=3160\) unordered pairs of independent affine
+transports, including pairs sharing one anchor endpoint.  Every pair has
+disjoint branch loci; its third character quotient has genus five and the
+connected fiber product has genus nine.  This avoids the weaker
+product-is-a-square surrogate, which can accept points for which neither
+factor is a square.
+
+These are exact finite classifications of the stated affine, quadratic,
+Möbius, and pair-product ansatzes.  They do not exclude higher-degree
+multisections, higher-support representatives beyond the finite ball below,
+or rational points on the resulting higher-genus curves.  The replay and its
+machine-readable manifest are
+[`analyze_fermigier_exceptional_transport.py`](../cas/analyze_fermigier_exceptional_transport.py)
+and
+[`elliptic_fermigier_exceptional_transport.json`](../../artifacts/generated-results/elliptic_fermigier_exceptional_transport.json).
+
+The representative choice has also been enlarged exactly.  In the E22
+exceptional quotient, all 200 signed vectors of support at most two in the ten
+element basis were enumerated; the analogous eight-element rank-20 quotient
+gives 128 vectors.  Every one of the 328 transported representatives
+round-trips through the pointed quartic, agrees with the canonical group law,
+and has a mod-5 certificate column independent of the twelve generic columns.
+All 25,600 cross-anchor affine interpolants are irreducible squarefree
+sextics, hence genus two.  Thus the affine negative result is independent of
+the original representative choice throughout this complete signed
+support-at-most-two ball.  The exact replay is
+[`classify_fermigier_exceptional_quotient_ball.py`](../cas/classify_fermigier_exceptional_quotient_ball.py),
+with artifact
+[`elliptic_fermigier_exceptional_quotient_ball.json`](../../artifacts/generated-results/elliptic_fermigier_exceptional_quotient_ball.json).
+
+A first genuinely nonlinear interpolation was classified for the independent
+pair \(P_{13}\times R20E1\).  In the finite denominator chart the complete
+bidegree-\((2,1)\) pencil is
+
+\[
+x(T)=\frac{a(c)T+b(c)+k(T-T_{22})(T-T_{20})}{cT+1},
+\]
+
+where \(a(c),b(c)\) enforce both endpoint values.  Its generic squareclass
+kernel has degree ten and genus four.  The exact branch discriminant has one
+irreducible total-degree-32 factor and five rational lines.  Two lines are
+invalid anchor poles; the cancellation line returns the known affine
+genus-two sextic; and the two valid degree-drop lines have squarefree
+degree-eight kernels of genus three.  The nonlinear component generically has
+kernel degree eight and genus three.  Hence this complete rational-component
+classification contains no genus-at-most-one member.  Rational special points
+on the degree-32 component were outside this pilot; the other 79 independent
+pairs are handled by the complete replay below.
+The bounded exact pilot is
+[`analyze_fermigier_bidegree21_pilot.py`](../cas/analyze_fermigier_bidegree21_pilot.py),
+with artifact
+[`elliptic_fermigier_bidegree21_p13_r20e1_pilot.json`](../../artifacts/generated-results/elliptic_fermigier_bidegree21_p13_r20e1_pilot.json).
+
+The same classification has now been completed for all
+\(10\cdot8=80\) independent cross-anchor pairs.  Across their 400 rational
+discriminant components, every valid kernel has genus two or three.  The 80
+residual total-degree-32 factors are all irreducible over \(\mathbf Q\): 79
+have an irreducibility witness modulo 101, while the one collision at that
+prime is witnessed modulo 103.  There are no unresolved pairs or
+characteristic-zero fallback assumptions.  This exhausts the rational
+components in the declared finite bidegree-\((2,1)\) charts; it does not
+classify rational points on the irreducible degree-32 curves or their
+intersections.  The complete replay is
+[`analyze_fermigier_bidegree21_all80.py`](../cas/analyze_fermigier_bidegree21_all80.py),
+with artifact
+[`elliptic_fermigier_bidegree21_all80.json`](../../artifacts/generated-results/elliptic_fermigier_bidegree21_all80.json).
+
+For the pilot pair's irreducible degree-32 component, a separate exact
+projective sieve covers every primitive \((C:K:D)\) with \(D\ge0\) and
+\(\max(|C|,|K|,D)\le1024\).  Five fixed residue primes reduce
+2,098,176 \((C,D)\) pairs to 21,819 primitive exact evaluations, with no
+affine point.  The top binary form is irreducible of degree 32, so there is
+no rational point at infinity; exact restrictions to the five known lines
+also have no rational intersection.  This is bounded negative coverage of
+one nonlinear component, not a rational-point theorem for that curve or the
+other 79 components.  The replay is
+[`search_fermigier_bidegree21_nonlinear_points.py`](../cas/search_fermigier_bidegree21_nonlinear_points.py),
+with artifact
+[`elliptic_fermigier_bidegree21_p13_r20e1_nonlinear_points_h1024.json`](../../artifacts/generated-results/elliptic_fermigier_bidegree21_p13_r20e1_nonlinear_points_h1024.json).
+
+The 3,160 genuine pair covers were also searched directly, testing the two
+square conditions separately rather than using their product.  In the exact
+projective box \(T=a/b\), \(b>0\),
+\(\max(|a|,b)\le200000\), every simultaneous intersection contains only the
+two prescribed anchors.  Two isolated parameters occurred on one cover each,
+but failed the second square test.  This is a complete bounded negative result
+for that box, not a global rational-point theorem on the genus-nine covers.
+The replay and manifest are
+[`search_fermigier_exceptional_pair_simultaneous_h200000.py`](../cas/search_fermigier_exceptional_pair_simultaneous_h200000.py)
+and
+[`elliptic_fermigier_exceptional_pair_simultaneous_h200000.json`](../../artifacts/generated-results/elliptic_fermigier_exceptional_pair_simultaneous_h200000.json).
+
 ## Exact independence certificates
 
 For points \(P_1,\ldots,P_n\), the checker uses cyclic good reductions
@@ -149,3 +355,26 @@ whose natural logarithm is
 records the bounded `ratpoints` box, all retained abscissas, the exact minimal
 model and conductor, and the twenty finite-reduction rows.  It proves rank at
 least 20, not rank 21; it supplies no upper bound or saturation theorem.
+
+The specialization now also has a canonical candidate record at
+[`elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json`](../../artifacts/generated-results/elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json).
+Its stable identity is `fermigier-mestre-v1:u=28917/20`; the literal shift
+`T=28917/10` and their negatives are aliases, not separate candidates.  The
+record joins the generalized, quartic-Jacobian, short, and global-minimal
+models and their exact transformations; the complete discovered point pool;
+the selected basis and certificate hashes; bounded saturation evidence; and a
+promotion/rejection ledger covering every recorded search region.  The
+bounded saturation result is labeled as such and is not a global saturation
+theorem.  Final rank claims retain both the imported cyclic-log verifier and
+an independent quotient-enumeration implementation.
+
+A separate sinc-squared explicit-formula diagnostic uses
+\(\Delta=11/5\) and every prime through
+\(\lfloor\exp(22\pi/5)\rfloor=1007525\).  Its conservative value, including
+the declared `0.001` numerical allowance, is
+`21.0335328229846198389...<22`.  Since the exact root number is `+1`, GRH
+would force analytic rank at most 20; BSD together with GRH would therefore
+make the algebraic rank exactly 20.  This is a conditional fixed-fiber
+closure, not an unconditional rank upper bound.  It redirects the search to
+nearby parameters rather than promoting more bounded point searches on this
+one curve.

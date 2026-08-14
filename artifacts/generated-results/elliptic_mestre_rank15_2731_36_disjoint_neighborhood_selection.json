@@ -1,0 +1,3145 @@
+{
+  "conductor_selection": {
+    "discovery_population_closed_before_held_scores": true,
+    "quota_rule": {
+      "held_per_denominator_quartile": 2,
+      "held_per_source_category": 4,
+      "highest_held": 16,
+      "largest_known_powerful": 8,
+      "lowest_projective_height": 8,
+      "smallest_radical_upper": 16
+    },
+    "selected_population": 46,
+    "selected_population_sha256": "42fa8afe79fe912e3e24f79f33c3ae78922273d85b31fd8335ffe8cb95f72744",
+    "selection_uses_conductor_or_point_or_rank_data": false
+  },
+  "exact_discriminant_feature_screen": {
+    "admissible_feature_pool_count": 2048,
+    "exact_feature_population_sha256": "8291e275848a225661eb952cb3186e49d3ecb3c0042e3e1a2d68e9946c07203e",
+    "exact_singular_rejections": 0,
+    "retained_before_singular_rejection": 2048,
+    "trial_division_prime_bound": 997
+  },
+  "family": {
+    "A_coefficients_ascending": [
+      -263554701878029789659312,
+      0,
+      168728259690206654940,
+      0,
+      -35038592903700864,
+      0,
+      2920367001600,
+      0,
+      -176394672
+    ],
+    "B_coefficients_ascending": [
+      52069163763573027817820961608352384,
+      0,
+      -49397329872768656779861657995360,
+      0,
+      17081683151662146184761731904,
+      0,
+      -2330562037698781114355280,
+      0,
+      9380388864362254848,
+      0,
+      22393374168268800,
+      0,
+      -901729563264
+    ],
+    "content_free_discriminant_coefficients_ascending": [
+      49677217849705044755597876869008987031559061150336000,
+      0,
+      -3496995557918057765684757456718431512016976833867440,
+      0,
+      10665636539298152217143652972456279813957429907192,
+      0,
+      -13853322785183531260102428091272902073696373535,
+      0,
+      9992045921964057226589159570080578374652220,
+      0,
+      -4414656425985971747268157459422488825480,
+      0,
+      1239542272360773297598455617328467689,
+      0,
+      -220934806690234050331038308829920,
+      0,
+      24035117316592354332457556224,
+      0,
+      -1441390748667494254592000,
+      0,
+      36107907941007360000
+    ]
+  },
+  "generated_at_utc": "2026-08-14T19:43:41.784031+00:00",
+  "generator": {
+    "canonical_parameter_source_manifest_sha256": "c3c9dcbb3b5be8f11ff933ff5f96b0ad5c8cc51aaa4c0d3affcfa4cf6b2e2bf2",
+    "favorable_trace_residues_top_two_per_prime": {
+      "919": [
+        72,
+        226
+      ],
+      "929": [
+        160,
+        769
+      ],
+      "937": [
+        365,
+        572
+      ],
+      "941": [
+        89,
+        96
+      ],
+      "947": [
+        418,
+        529
+      ],
+      "953": [
+        409,
+        544
+      ],
+      "967": [
+        205,
+        762
+      ],
+      "971": [
+        75,
+        199
+      ]
+    },
+    "gauss_coefficient_interval": [
+      -4,
+      4
+    ],
+    "gauss_multiplier_interval": [
+      8,
+      56
+    ],
+    "nonprimitive_or_reduced_outside_annulus_rejections": 16610,
+    "ordinary_offset_range": [
+      -24,
+      24
+    ],
+    "ordinary_zero_offset_excluded": true,
+    "parameters_by_source_category_after_dedup": {
+      "discriminant-power": 0,
+      "gauss-farey": 2789,
+      "local-trace": 3504,
+      "ordinary-annulus": 52607
+    },
+    "power_and_trace_integer_offset_cap": 96,
+    "power_primes": [
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37
+    ],
+    "raw_attempt_count": 95584,
+    "raw_attempts_by_exact_source": {
+      "gauss_c-1_d-1": 49,
+      "gauss_c-1_d-2": 49,
+      "gauss_c-1_d-3": 49,
+      "gauss_c-1_d-4": 49,
+      "gauss_c-1_d0": 49,
+      "gauss_c-1_d1": 49,
+      "gauss_c-1_d2": 49,
+      "gauss_c-1_d3": 49,
+      "gauss_c-1_d4": 49,
+      "gauss_c-2_d-1": 49,
+      "gauss_c-2_d-2": 49,
+      "gauss_c-2_d-3": 49,
+      "gauss_c-2_d-4": 49,
+      "gauss_c-2_d0": 49,
+      "gauss_c-2_d1": 49,
+      "gauss_c-2_d2": 49,
+      "gauss_c-2_d3": 49,
+      "gauss_c-2_d4": 49,
+      "gauss_c-3_d-1": 49,
+      "gauss_c-3_d-2": 49,
+      "gauss_c-3_d-3": 49,
+      "gauss_c-3_d-4": 49,
+      "gauss_c-3_d0": 49,
+      "gauss_c-3_d1": 49,
+      "gauss_c-3_d2": 49,
+      "gauss_c-3_d3": 49,
+      "gauss_c-3_d4": 49,
+      "gauss_c-4_d-1": 49,
+      "gauss_c-4_d-2": 49,
+      "gauss_c-4_d-3": 49,
+      "gauss_c-4_d-4": 49,
+      "gauss_c-4_d0": 49,
+      "gauss_c-4_d1": 49,
+      "gauss_c-4_d2": 49,
+      "gauss_c-4_d3": 49,
+      "gauss_c-4_d4": 49,
+      "gauss_c0_d-1": 49,
+      "gauss_c0_d-2": 49,
+      "gauss_c0_d-3": 49,
+      "gauss_c0_d-4": 49,
+      "gauss_c0_d1": 49,
+      "gauss_c0_d2": 49,
+      "gauss_c0_d3": 49,
+      "gauss_c0_d4": 49,
+      "gauss_c1_d-1": 49,
+      "gauss_c1_d-2": 49,
+      "gauss_c1_d-3": 49,
+      "gauss_c1_d-4": 49,
+      "gauss_c1_d0": 49,
+      "gauss_c1_d1": 49,
+      "gauss_c1_d2": 49,
+      "gauss_c1_d3": 49,
+      "gauss_c1_d4": 49,
+      "gauss_c2_d-1": 49,
+      "gauss_c2_d-2": 49,
+      "gauss_c2_d-3": 49,
+      "gauss_c2_d-4": 49,
+      "gauss_c2_d0": 49,
+      "gauss_c2_d1": 49,
+      "gauss_c2_d2": 49,
+      "gauss_c2_d3": 49,
+      "gauss_c2_d4": 49,
+      "gauss_c3_d-1": 49,
+      "gauss_c3_d-2": 49,
+      "gauss_c3_d-3": 49,
+      "gauss_c3_d-4": 49,
+      "gauss_c3_d0": 49,
+      "gauss_c3_d1": 49,
+      "gauss_c3_d2": 49,
+      "gauss_c3_d3": 49,
+      "gauss_c3_d4": 49,
+      "gauss_c4_d-1": 49,
+      "gauss_c4_d-2": 49,
+      "gauss_c4_d-3": 49,
+      "gauss_c4_d-4": 49,
+      "gauss_c4_d0": 49,
+      "gauss_c4_d1": 49,
+      "gauss_c4_d2": 49,
+      "gauss_c4_d3": 49,
+      "gauss_c4_d4": 49,
+      "ordinary": 86016,
+      "trace_p919_r226": 374,
+      "trace_p919_r72": 349,
+      "trace_p929_r160": 369,
+      "trace_p929_r769": 371,
+      "trace_p937_r365": 367,
+      "trace_p937_r572": 369,
+      "trace_p941_r89": 365,
+      "trace_p941_r96": 363,
+      "trace_p947_r418": 364,
+      "trace_p947_r529": 366,
+      "trace_p953_r409": 360,
+      "trace_p953_r544": 345,
+      "trace_p967_r205": 355,
+      "trace_p967_r762": 354,
+      "trace_p971_r199": 354,
+      "trace_p971_r75": 223
+    },
+    "simple_hensel_roots_mod_p2": {
+      "11": [],
+      "13": [],
+      "17": [],
+      "19": [],
+      "23": [],
+      "29": [],
+      "31": [],
+      "37": [],
+      "5": [],
+      "7": []
+    },
+    "unique_reduced_parameter_count": 57755
+  },
+  "local_trace_screen": {
+    "bands_disjoint": true,
+    "complete_population_scored_on_discovery_band": 57755,
+    "discovery_primes": [
+      919,
+      929,
+      937,
+      941,
+      947,
+      953,
+      967,
+      971
+    ],
+    "discovery_survivors_retained": 2048,
+    "discovery_table_digest": "962b74b72b6e01a70f3e0ee27081f7c2516ab98575ff5fc6d3f21680d93daf8d",
+    "fresh_relative_to_prior_multifamily_bands_through_911": true,
+    "held_primes": [
+      977,
+      983,
+      991,
+      997,
+      1009,
+      1013,
+      1019,
+      1021
+    ],
+    "held_scores_computed_only_after_discovery_survivors_closed": true,
+    "held_table_digest": "9a8ee6ba995a4498105316161578d7e19feb00b069bb4c57f35d26f24db2461a"
+  },
+  "provenance": {
+    "certificate_path": "artifacts/generated-results/elliptic_mestre_rank15_2731_36.json",
+    "certificate_sha256": "5f91987e9fd21887afbe0cd376e7b56844a37e0e70ade6fc713aaa3121e87c1a",
+    "external_conductor_point_height_rank_calls": 0,
+    "frontier_path": "artifacts/generated-results/elliptic_mestre_rank13_multifamily_rational.json",
+    "frontier_sha256": "0f664e937b9983bd7fa1cfb80269b5c734faddbf6d02dbe4dfca0e3b573ac41f",
+    "script_path": "elliptic-curves/cas/select_mestre_rank15_2731_36_disjoint_neighborhood.py",
+    "script_sha256": "31e1e73818855679239ea0b336ce8a9838d252b0c69339a3eadee870933e1995"
+  },
+  "result_sha256": "fb7dd7cef970e4e7d84c5120e37326d7c3258baa3067605e46adf64a96ba0a1a",
+  "schema_version": 1,
+  "scope": {
+    "center": "2731/36",
+    "center_excluded": true,
+    "exactly_disjoint_from_prior_common_box": true,
+    "positive_T_only_under_exact_sign_quotient": true,
+    "prior_common_box_reduced_denominator_maximum": 256,
+    "reduced_denominator_interval": [
+      257,
+      2048
+    ],
+    "roots": [
+      0,
+      7,
+      93,
+      154,
+      161,
+      191
+    ]
+  },
+  "selected_records": [
+    {
+      "conductor_selection_strata": [
+        "lowest-projective-height"
+      ],
+      "denominator": 257,
+      "discovery_good": 8,
+      "discovery_score": "2.070993470212",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "3341549645967394147161027815356437149457832740305957050996138877281323870659929946668540710270757632000",
+        "combined_radical_upper_bound": "3713103866515152177867097172382893294527523114400034883764522302426691870094920943603960129070",
+        "denominator_radical": 257,
+        "known_discriminant_radical": "4680033870",
+        "known_powerful_part": "231283123200",
+        "residual_cofactor": "3087130428606284409100645647505567589576423029834625042058039388105369784474166673",
+        "residual_cofactor_bit_length": 271,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            11
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            71,
+            1
+          ],
+          [
+            307,
+            1
+          ],
+          [
+            421,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "0.247340393038",
+      "numerator": 19480,
+      "parameter": "19480/257",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "lowest-projective-height",
+        "smallest-radical-upper-bound"
+      ],
+      "denominator": 257,
+      "discovery_good": 8,
+      "discovery_score": "1.990236102592",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "3470111175264672311138775808453582944007121500592646457603741329117775086362653298110847967120348055950",
+        "combined_radical_upper_bound": "242024208561109714788860652658244577125621392447277346199340591524044034825530",
+        "denominator_radical": 257,
+        "known_discriminant_radical": "531990690",
+        "known_powerful_part": "3684832097355425275353957555",
+        "residual_cofactor": "1770197215257604701456230697885875835436035847306750253367874822541",
+        "residual_cofactor_bit_length": 221,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            17,
+            4
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            23,
+            5
+          ],
+          [
+            31,
+            3
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "-0.636749532164",
+      "numerator": 19507,
+      "parameter": "19507/257",
+      "source_categories": [
+        "gauss-farey",
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "gauss_c-1_d-1",
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "lowest-projective-height"
+      ],
+      "denominator": 258,
+      "discovery_good": 8,
+      "discovery_score": "2.103046720236",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "3607403576436713722444711597644290701348672117482461062498652381526090800074789215752686005849992352000",
+        "combined_radical_upper_bound": "672545279698918790934182273600041648987710543382888857266370310867696399003198652174109706620",
+        "denominator_radical": 258,
+        "known_discriminant_radical": "14963910",
+        "known_powerful_part": "1383862396800",
+        "residual_cofactor": "174203443484744914075716373491271588327228630789267830406772729001920843514145849429",
+        "residual_cofactor_bit_length": 277,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            17,
+            4
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            61,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "0.764071566164",
+      "numerator": 19555,
+      "parameter": "19555/258",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "lowest-projective-height"
+      ],
+      "denominator": 259,
+      "discovery_good": 8,
+      "discovery_score": "2.158810336357",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "3603139602567854503175886397332159579724855671890720394681381570189581918990952496687608511030583004750",
+        "combined_radical_upper_bound": "231780779272422851475012158113648305480558982935764840261154001323581155539215949392947725715933710",
+        "denominator_radical": 259,
+        "known_discriminant_radical": "218130",
+        "known_powerful_part": "4026275",
+        "residual_cofactor": "4102629091263504822139681821874991578656540986871468915425801682210002209712991268055547013",
+        "residual_cofactor_bit_length": 302,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            661,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "0.375657609689",
+      "numerator": 19575,
+      "parameter": "19575/259",
+      "source_categories": [
+        "local-trace"
+      ],
+      "sources": [
+        "trace_p937_r365"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "lowest-projective-height",
+        "smallest-radical-upper-bound"
+      ],
+      "denominator": 259,
+      "discovery_good": 8,
+      "discovery_score": "2.276522960849",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "3893271279682419645135034902637370140648986945326293381375415544038664777240476475083733637912615200000",
+        "combined_radical_upper_bound": "4526555975401158984499936832516005513374678238322704943302630841071352314763964030",
+        "denominator_radical": 259,
+        "known_discriminant_radical": "4374021630",
+        "known_powerful_part": "222764783406524116560000",
+        "residual_cofactor": "3995647844584155134396802065542948584064142671511506993486870590810859",
+        "residual_cofactor_bit_length": 232,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            16
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            53,
+            2
+          ],
+          [
+            313,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "1.279960104607",
+      "numerator": 19630,
+      "parameter": "19630/259",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "lowest-projective-height"
+      ],
+      "denominator": 259,
+      "discovery_good": 8,
+      "discovery_score": "2.108737899356",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "3909587178608381385475646001872417924037131539185452053864383003917124219650603929902261535493052419550",
+        "combined_radical_upper_bound": "1747173399003667950131035560878529634505123877197215246095496023698415461672328627731079427651733790",
+        "denominator_radical": 259,
+        "known_discriminant_radical": "1590",
+        "known_powerful_part": "579555",
+        "residual_cofactor": "4242668704022893931985710791089409277349078160309888652765828959224922808266745896726838657759",
+        "residual_cofactor_bit_length": 312,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            53,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "-0.949479606852",
+      "numerator": 19633,
+      "parameter": "19633/259",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "lowest-projective-height"
+      ],
+      "denominator": 259,
+      "discovery_good": 8,
+      "discovery_score": "1.709834047165",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "4019676263512203249953013177833096086184607914298736494985895502709788942256586699751338570770961035350",
+        "combined_radical_upper_bound": "901729369540351600173080029153025959197971036289629123083219885758439689789101389916978134285225830",
+        "denominator_radical": 259,
+        "known_discriminant_radical": "23970",
+        "known_powerful_part": "1154555",
+        "residual_cofactor": "145247416661488314732714482091196034811527768186685919027358826228802684467086655925598461121",
+        "residual_cofactor_bit_length": 307,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            17,
+            4
+          ],
+          [
+            47,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "1.057880476532",
+      "numerator": 19653,
+      "parameter": "19653/259",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "lowest-projective-height",
+        "smallest-radical-upper-bound"
+      ],
+      "denominator": 260,
+      "discovery_good": 8,
+      "discovery_score": "2.148471488236",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "4154067412913811640515577638304365701319663986017745440682822627698817686017517521769804850764185600000",
+        "combined_radical_upper_bound": "12246436811195336063659204188319783588903690016011463280989192372724215436471300",
+        "denominator_radical": 130,
+        "known_discriminant_radical": "441210",
+        "known_powerful_part": "44096807259489301954560000",
+        "residual_cofactor": "213511389329611680878618836457081898710429012802406376886450240383076181",
+        "residual_cofactor_bit_length": 237,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            23
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            191,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "1.211016005151",
+      "numerator": 19697,
+      "parameter": "19697/260",
+      "source_categories": [
+        "local-trace"
+      ],
+      "sources": [
+        "trace_p971_r199"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "smallest-radical-upper-bound"
+      ],
+      "denominator": 266,
+      "discovery_good": 8,
+      "discovery_score": "2.058807750189",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "6676982981195799669720532550795643636426713186867334652756276387443648061376024675643116744132467872000",
+        "combined_radical_upper_bound": "738365472803213252833500783742304388114455001798737537394650001095113804696754482740",
+        "denominator_radical": 266,
+        "known_discriminant_radical": "93491970",
+        "known_powerful_part": "2405417829540679324800",
+        "residual_cofactor": "29690357879210167993572099789956726303031794123692246454072251632148085737",
+        "residual_cofactor_bit_length": 245,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            31,
+            3
+          ],
+          [
+            37,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "0.259530810847",
+      "numerator": 20165,
+      "parameter": "20165/266",
+      "source_categories": [
+        "local-trace",
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary",
+        "trace_p953_r409"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "smallest-radical-upper-bound"
+      ],
+      "denominator": 271,
+      "discovery_good": 8,
+      "discovery_score": "2.037806921038",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "9976546890317166952461747209562374712858597832115539248147727554376705816657782966843108456993000940800",
+        "combined_radical_upper_bound": "2018308099432691756209590763178348360018909725763416566460480787798371257837911490",
+        "denominator_radical": 271,
+        "known_discriminant_radical": "27678006510",
+        "known_powerful_part": "1339559707477711410472320",
+        "residual_cofactor": "269081205704950344816622435584989273938775457859795403549734958256169",
+        "residual_cofactor_bit_length": 228,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            17,
+            4
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            43,
+            3
+          ],
+          [
+            443,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "0.578196638749",
+      "numerator": 20566,
+      "parameter": "20566/271",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "smallest-radical-upper-bound"
+      ],
+      "denominator": 284,
+      "discovery_good": 8,
+      "discovery_score": "1.780144023146",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "36463452097666423166860647549513910781613781132755599063784265504463037122240473491886607787666859622400",
+        "combined_radical_upper_bound": "1276252491422332559473865038062364335828194503521761526062450994187182112033377118620",
+        "denominator_radical": 142,
+        "known_discriminant_radical": "6700568910",
+        "known_powerful_part": "4057042186141528227840",
+        "residual_cofactor": "1341332911023777867514827330127431131675622492526871762004672754948124471",
+        "residual_cofactor_bit_length": 240,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            27
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            41,
+            2
+          ],
+          [
+            71,
+            2
+          ],
+          [
+            97,
+            1
+          ],
+          [
+            113,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "0.149856366073",
+      "numerator": 21851,
+      "parameter": "21851/284",
+      "source_categories": [
+        "gauss-farey"
+      ],
+      "sources": [
+        "gauss_c3_d-4"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "smallest-radical-upper-bound"
+      ],
+      "denominator": 296,
+      "discovery_good": 8,
+      "discovery_score": "1.964163705759",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "56716396869446661191153193354569554945353255120705637831816691067954008702352228830032930413410569420800",
+        "combined_radical_upper_bound": "1056063950241548143372921146242470546270961342420203620267295442906879175300767220",
+        "denominator_radical": 74,
+        "known_discriminant_radical": "17779407690",
+        "known_powerful_part": "3974203804020666909327360",
+        "residual_cofactor": "802677721977791238730154176653374722387146056969414376349573129895237",
+        "residual_cofactor_bit_length": 229,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            23
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            41,
+            2
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            73,
+            1
+          ],
+          [
+            383,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "0.327938308086",
+      "numerator": 22441,
+      "parameter": "22441/296",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "smallest-radical-upper-bound"
+      ],
+      "denominator": 312,
+      "discovery_good": 8,
+      "discovery_score": "1.759375032800",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "165753519787090067615709480192983129081167759930226929460849749583286823654014908877578245778741762457600",
+        "combined_radical_upper_bound": "6753795483244004632071450354950933694979985101706753705971397518968985817802527198940",
+        "denominator_radical": 78,
+        "known_discriminant_radical": "1231567890",
+        "known_powerful_part": "1914297608725195653120",
+        "residual_cofactor": "70306413704932938318823387064041215422582550460845043442033935097165158057",
+        "residual_cofactor_bit_length": 246,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            25
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            17,
+            4
+          ],
+          [
+            23,
+            4
+          ],
+          [
+            53,
+            2
+          ],
+          [
+            283,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "0.578864215259",
+      "numerator": 23671,
+      "parameter": "23671/312",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "smallest-radical-upper-bound"
+      ],
+      "denominator": 316,
+      "discovery_good": 8,
+      "discovery_score": "2.025634316700",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "209640629710057179982233127483419305930189828911159565726435935501412035722773343097194665011463376076800",
+        "combined_radical_upper_bound": "10555994862269943475214775101974245744906135519489097932468180511337827894519936988820",
+        "denominator_radical": 158,
+        "known_discriminant_radical": "1072793670",
+        "known_powerful_part": "3137858622173132881920",
+        "residual_cofactor": "62276741495873705377283573202309514807721160961325749917427145143211962937",
+        "residual_cofactor_bit_length": 246,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            23
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            43,
+            3
+          ],
+          [
+            53,
+            2
+          ],
+          [
+            71,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "0.730732493470",
+      "numerator": 23957,
+      "parameter": "23957/316",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "smallest-radical-upper-bound"
+      ],
+      "denominator": 331,
+      "discovery_good": 8,
+      "discovery_score": "2.080840569924",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "540373294613633168969666402609807145795410176251410250604611706698715734698215603685864731246131719116800",
+        "combined_radical_upper_bound": "250455384588265121799739294968264650473643023097396680223022771596941192878172278030",
+        "denominator_radical": 331,
+        "known_discriminant_radical": "52044705570",
+        "known_powerful_part": "714153384288999957519360",
+        "residual_cofactor": "14538708309153789608253844208467608323013175700905017160879767245265509",
+        "residual_cofactor_bit_length": 234,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            11
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            31,
+            3
+          ],
+          [
+            43,
+            2
+          ],
+          [
+            479,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "1.186480178531",
+      "numerator": 25112,
+      "parameter": "25112/331",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "smallest-radical-upper-bound"
+      ],
+      "denominator": 344,
+      "discovery_good": 8,
+      "discovery_score": "1.713689870874",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "1146730701608310905304367643895409222452846618217153565617743361668677630758253461099421073745106907955200",
+        "combined_radical_upper_bound": "10426135396185280450587141551373795115405122250093309118496601581756106868214607359180",
+        "denominator_radical": 86,
+        "known_discriminant_radical": "30030",
+        "known_powerful_part": "9458810632211571671040",
+        "residual_cofactor": "4037100649809601425933423766688271075980268665479214242539089430629876661406271",
+        "residual_cofactor_bit_length": 262,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            23
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            3
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "0.503441627381",
+      "numerator": 26081,
+      "parameter": "26081/344",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "smallest-radical-upper-bound"
+      ],
+      "denominator": 368,
+      "discovery_good": 8,
+      "discovery_score": "1.848766463841",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "4419947530285811502346591876125639606834654596033484053229094343887680022028235781077169145569057387315200",
+        "combined_radical_upper_bound": "14331103171267281907980774142489281108966877872830738639372795908243228697866373263140",
+        "denominator_radical": 46,
+        "known_discriminant_radical": "5787210",
+        "known_powerful_part": "14187155305725721313280",
+        "residual_cofactor": "53833491633188726248808088054780474713116915588260629302911810505382178593779",
+        "residual_cofactor_bit_length": 255,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            28
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            71,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "0.394498747186",
+      "numerator": 27901,
+      "parameter": "27901/368",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "smallest-radical-upper-bound"
+      ],
+      "denominator": 389,
+      "discovery_good": 8,
+      "discovery_score": "1.814645633064",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "13608417384766469023828096653984430945341617756817147759322586049747085977794629153132600629176713978614150",
+        "combined_radical_upper_bound": "35042362205800405301991364220643737328822372288928193145050207677191593590384754490",
+        "denominator_radical": 389,
+        "known_discriminant_radical": "358298060581230",
+        "known_powerful_part": "151064997604468520595876315",
+        "residual_cofactor": "251419706779807192350941074183439081222075767230643062585741473167",
+        "residual_cofactor_bit_length": 218,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            7
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            23,
+            4
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            79,
+            2
+          ],
+          [
+            109,
+            2
+          ],
+          [
+            877,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "0.640741926093",
+      "numerator": 29509,
+      "parameter": "29509/389",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "held-score-denominator-257-704",
+        "highest-held-score"
+      ],
+      "denominator": 416,
+      "discovery_good": 8,
+      "discovery_score": "1.813271141725",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "53160319178254992648906083277325730323972268710478576545543973963662096367533695460358350394115816633139200",
+        "combined_radical_upper_bound": "6888421121124245517315447946238208777706850695753890744399479319958414181632530310523460",
+        "denominator_radical": 26,
+        "known_discriminant_radical": "96823578390",
+        "known_powerful_part": "200650958228443627520",
+        "residual_cofactor": "2736309464025729016007362826726242601578667414343024192437449326111407577439",
+        "residual_cofactor_bit_length": 251,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            109,
+            2
+          ],
+          [
+            547,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "2.008140511804",
+      "numerator": 31581,
+      "parameter": "31581/416",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "smallest-radical-upper-bound"
+      ],
+      "denominator": 428,
+      "discovery_good": 8,
+      "discovery_score": "2.078295160705",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "91941998938993916400970421627377025494507312246187294180216493754631913353930727128534131545639628465766400",
+        "combined_radical_upper_bound": "2269172282710540381630317921352366578037917869841543743334683556555560104222395888540",
+        "denominator_radical": 214,
+        "known_discriminant_radical": "14347605090",
+        "known_powerful_part": "8670821480968420054794240",
+        "residual_cofactor": "739050784517571742116927727098996581728248033058670157556595396741745029",
+        "residual_cofactor_bit_length": 239,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            27
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            53,
+            2
+          ],
+          [
+            307,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "1.958466567080",
+      "numerator": 32467,
+      "parameter": "32467/428",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "held-score-denominator-257-704",
+        "held-score-source-ordinary-annulus",
+        "highest-held-score"
+      ],
+      "denominator": 515,
+      "discovery_good": 8,
+      "discovery_score": "1.728977217107",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "3772663075934103835198998043733742018145147931095638304174886339373798359057942160623255322779447767898400000",
+        "combined_radical_upper_bound": "26014369204175925693548486182555191124511878898791555606968373101602281826924140534186983150",
+        "denominator_radical": 515,
+        "known_discriminant_radical": "95746890",
+        "known_powerful_part": "74686473035609040000",
+        "residual_cofactor": "527571582330619595536995675665879923568992130092762172516453833149314718788176889",
+        "residual_cofactor_bit_length": 269,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            16
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            17,
+            5
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            41,
+            2
+          ],
+          [
+            241,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "2.195472587343",
+      "numerator": 39086,
+      "parameter": "39086/515",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "largest-known-powerful-part",
+        "smallest-radical-upper-bound"
+      ],
+      "denominator": 590,
+      "discovery_good": 8,
+      "discovery_score": "1.855015428176",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "55941325729129306236066256341326668241200014656206966444817987706045436914224545449389631705592351052042400000",
+        "combined_radical_upper_bound": "2295384857151417682933110697578577554207572024666588148374216066572591663813119569700",
+        "denominator_radical": 590,
+        "known_discriminant_radical": "36579875970",
+        "known_powerful_part": "14379018872306280514415280000",
+        "residual_cofactor": "106355822855219386129346547389117811476774607252076491676108135097945039",
+        "residual_cofactor_bit_length": 236,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            17,
+            4
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            23,
+            4
+          ],
+          [
+            43,
+            3
+          ],
+          [
+            347,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "0.854967379892",
+      "numerator": 44741,
+      "parameter": "44741/590",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "held-score-denominator-705-1152",
+        "held-score-source-gauss-farey",
+        "highest-held-score"
+      ],
+      "denominator": 719,
+      "discovery_good": 8,
+      "discovery_score": "1.901680633124",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "3069121863948301157610265395667809692958946361245185686956217854507968096034300195866696143035775845785947980800",
+        "combined_radical_upper_bound": "1038172664127842079928261372269668248811439250867878691356790400279597363319551355206026111196281097833110",
+        "denominator_radical": 719,
+        "known_discriminant_radical": "6630",
+        "known_powerful_part": "2125560320",
+        "residual_cofactor": "217784601985714632130737422780019225799918868981319096062444361990865762385656162133603968809596263",
+        "residual_cofactor_bit_length": 327,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            17,
+            4
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "2.122010839159",
+      "numerator": 54624,
+      "parameter": "54624/719",
+      "source_categories": [
+        "gauss-farey"
+      ],
+      "sources": [
+        "gauss_c4_d-1"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "held-score-denominator-705-1152",
+        "held-score-source-local-trace",
+        "highest-held-score"
+      ],
+      "denominator": 746,
+      "discovery_good": 8,
+      "discovery_score": "1.787206008309",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "6055504290470316924528495482324340637445433696309757128216351222719949018195146472937462533276907173109499040000",
+        "combined_radical_upper_bound": "11303586092648803736470540408395543046046317428741311253145147104831341257487068551141951011556647926620",
+        "denominator_radical": 746,
+        "known_discriminant_radical": "1410",
+        "known_powerful_part": "399643632000",
+        "residual_cofactor": "10746283814052063712348164592622157935510730923070856628396504387305669250173092000020868757778267",
+        "residual_cofactor_bit_length": 323,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            47,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "2.135744590564",
+      "numerator": 56555,
+      "parameter": "56555/746",
+      "source_categories": [
+        "local-trace"
+      ],
+      "sources": [
+        "trace_p947_r529"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "largest-known-powerful-part",
+        "smallest-radical-upper-bound"
+      ],
+      "denominator": 760,
+      "discovery_good": 8,
+      "discovery_score": "1.778504751922",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "7736194371640416354441214230948807902322355833177930848893261319779779120561408540745447972204128602790297600000",
+        "combined_radical_upper_bound": "647458966906778121464814816959290019949671069389942814177185503713618458837076100",
+        "denominator_radical": 190,
+        "known_discriminant_radical": "234495548430",
+        "known_powerful_part": "2270224069386181904231474135040000",
+        "residual_cofactor": "14531955066988429057664267983371587926540402598750805817323968722633",
+        "residual_cofactor_bit_length": 224,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            24
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            31,
+            3
+          ],
+          [
+            53,
+            3
+          ],
+          [
+            103,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "0.423342113794",
+      "numerator": 57353,
+      "parameter": "57353/760",
+      "source_categories": [
+        "gauss-farey"
+      ],
+      "sources": [
+        "gauss_c2_d4"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "largest-known-powerful-part"
+      ],
+      "denominator": 1004,
+      "discovery_good": 8,
+      "discovery_score": "1.965530374625",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "2333910544324876261810616950325430730149819209221293813235638756484457825851874235672540803288490320472278512435200",
+        "combined_radical_upper_bound": "3158895218117528720842091515524390199559576229228628800487212642363660605438423475792780",
+        "denominator_radical": 502,
+        "known_discriminant_radical": "86812135410",
+        "known_powerful_part": "370896472453837782047187271680",
+        "residual_cofactor": "72485487503450639547326951731984610915537542605081435194128534578851281729",
+        "residual_cofactor_bit_length": 246,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            23
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            23,
+            4
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            43,
+            2
+          ],
+          [
+            79,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "0.289721297166",
+      "numerator": 76153,
+      "parameter": "76153/1004",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "highest-held-score"
+      ],
+      "denominator": 1092,
+      "discovery_good": 8,
+      "discovery_score": "1.919157236080",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "12606938036538294485360861900992610495856318612595304193972876881705823415408536710268283160702338935619953308467200",
+        "combined_radical_upper_bound": "109408508427141647164138644503624682915012835859887378850129298804781907158105548919144989740744861902371955020",
+        "denominator_radical": 546,
+        "known_discriminant_radical": "30",
+        "known_powerful_part": "62914560",
+        "residual_cofactor": "6679396118873116432487096734043020934982468611714736193536587228619164051166394927908729532402006221146029",
+        "residual_cofactor_bit_length": 352,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            23
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "2.008246848640",
+      "numerator": 82847,
+      "parameter": "82847/1092",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "held-score-source-gauss-farey"
+      ],
+      "denominator": 1223,
+      "discovery_good": 8,
+      "discovery_score": "1.827416372059",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "123842912944449071741505296232947682330570844654103257671866095423887966409855321807190797030389974461293294843936000",
+        "combined_radical_upper_bound": "308649345834752317311294735582225539631409122722427482233188061086909809660094622193870998927633511169350910",
+        "denominator_radical": 1223,
+        "known_discriminant_radical": "46410",
+        "known_powerful_part": "490718300800",
+        "residual_cofactor": "5437851399049502740096134432326496929786101141650426761389042509533830936288377494169180326998236437",
+        "residual_cofactor_bit_length": 332,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            17,
+            4
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "1.568372814823",
+      "numerator": 92850,
+      "parameter": "92850/1223",
+      "source_categories": [
+        "gauss-farey",
+        "local-trace"
+      ],
+      "sources": [
+        "gauss_c-4_d-1",
+        "trace_p941_r89"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "held-score-source-local-trace",
+        "highest-held-score"
+      ],
+      "denominator": 1238,
+      "discovery_good": 8,
+      "discovery_score": "1.766837004168",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "150524116789194322598915978165487575308905852073575845683069473960759852962686479128800170554667954945661223582265600",
+        "combined_radical_upper_bound": "307545184502882015516723830426302568228629175161157078640467701785727875887537352207593598272451411940",
+        "denominator_radical": 1238,
+        "known_discriminant_radical": "54080670",
+        "known_powerful_part": "605923506447477120",
+        "residual_cofactor": "4593526468840770372668303837774607947872366627134313907781772368537054377981477086713055589",
+        "residual_cofactor_bit_length": 302,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            43,
+            3
+          ],
+          [
+            53,
+            3
+          ],
+          [
+            113,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "2.139761752334",
+      "numerator": 93821,
+      "parameter": "93821/1238",
+      "source_categories": [
+        "local-trace"
+      ],
+      "sources": [
+        "trace_p971_r75"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "largest-known-powerful-part"
+      ],
+      "denominator": 1240,
+      "discovery_good": 8,
+      "discovery_score": "1.731412929504",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "159048002228568765091026835003682667049452181005631921521117508925032745972276969088134879326998648563909158502400000",
+        "combined_radical_upper_bound": "4682945250963461992632388664259861734638261272387797493317415332800933447435809131226900",
+        "denominator_radical": 310,
+        "known_discriminant_radical": "2575451948080830",
+        "known_powerful_part": "10528604980105715830106357760000",
+        "residual_cofactor": "5865485090632269389885575319283956137943866767674465880755332915020353",
+        "residual_cofactor_bit_length": 232,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            24
+          ],
+          [
+            3,
+            17
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            61,
+            2
+          ],
+          [
+            71,
+            1
+          ],
+          [
+            383,
+            2
+          ],
+          [
+            809,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "0.613523031265",
+      "numerator": 94051,
+      "parameter": "94051/1240",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "held-score-source-gauss-farey"
+      ],
+      "denominator": 1258,
+      "discovery_good": 8,
+      "discovery_score": "1.757297644154",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "222723112297586543335104947806176625265787852819393722308520554308914055678297695586111798344804548194278878549766400",
+        "combined_radical_upper_bound": "9085834976583757501786399231470369621566195103021881719659518131338363446445676957695881448362953407847860",
+        "denominator_radical": 1258,
+        "known_discriminant_radical": "2849494830",
+        "known_powerful_part": "30837636385920",
+        "residual_cofactor": "2534640267273957976670864741015486253144742566608559330104269770724943648546177596560048219599",
+        "residual_cofactor_bit_length": 311,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            61,
+            2
+          ],
+          [
+            71,
+            1
+          ],
+          [
+            241,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "1.553807204006",
+      "numerator": 95587,
+      "parameter": "95587/1258",
+      "source_categories": [
+        "gauss-farey"
+      ],
+      "sources": [
+        "gauss_c2_d-2"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "highest-held-score"
+      ],
+      "denominator": 1282,
+      "discovery_good": 8,
+      "discovery_score": "1.722822474587",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "311064849924620585979958715634602041915918727370772194882662622097558600428173323701209266862397295470694818702700800",
+        "combined_radical_upper_bound": "2798381832597933221454539048188317523521799436771811972910706238776990857997296796186127729610760400404927340",
+        "denominator_radical": 1282,
+        "known_discriminant_radical": "7724830259490",
+        "known_powerful_part": "142505619840",
+        "residual_cofactor": "282572570413501513889998655467791249952348514157594095540962258801198151306506734326543013163",
+        "residual_cofactor_bit_length": 308,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            53,
+            2
+          ],
+          [
+            71,
+            1
+          ],
+          [
+            113,
+            2
+          ],
+          [
+            179,
+            1
+          ],
+          [
+            199,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "2.136631071651",
+      "numerator": 97253,
+      "parameter": "97253/1282",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "highest-held-score"
+      ],
+      "denominator": 1327,
+      "discovery_good": 8,
+      "discovery_score": "2.017851088073",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "622230822114313599055960330916868637922031202809313632883576977900859299311052056486433031358552588054732136238130550",
+        "combined_radical_upper_bound": "7606179308251026098946256799599899501780494701012116225442556648767834351072982679681640832856508808430",
+        "denominator_radical": 1327,
+        "known_discriminant_radical": "33374840070",
+        "known_powerful_part": "108556512735637395",
+        "residual_cofactor": "171741971139389103068852704150113419988942785434666900923041801416543371531153030661130387",
+        "residual_cofactor_bit_length": 297,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            71,
+            1
+          ],
+          [
+            73,
+            1
+          ],
+          [
+            79,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "2.179586285365",
+      "numerator": 100679,
+      "parameter": "100679/1327",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "highest-held-score"
+      ],
+      "denominator": 1394,
+      "discovery_good": 8,
+      "discovery_score": "1.908821352501",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "1653921445614069310529322571635786703166881502796020938065976153648689730370773465262654062449755447379837975086035200",
+        "combined_radical_upper_bound": "20335922418828118551240950884543333575140215602169853882509747891107680733875487329874163151356633664833215292860",
+        "denominator_radical": 1394,
+        "known_discriminant_radical": "2130",
+        "known_powerful_part": "113374080",
+        "residual_cofactor": "6848910629332996056621250996741007259529511320201889345521634601379379343354647796348590926693419034235663",
+        "residual_cofactor_bit_length": 352,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            71,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "2.061138794393",
+      "numerator": 105733,
+      "parameter": "105733/1394",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "held-score-denominator-1153-1600",
+        "held-score-source-ordinary-annulus",
+        "highest-held-score"
+      ],
+      "denominator": 1431,
+      "discovery_good": 8,
+      "discovery_score": "1.967459505181",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "2821465973513713417779374931452764010536777098946240865211117471855379182335255010383893691213041044083750780848800000",
+        "combined_radical_upper_bound": "602539043987004085314530716334299362194915438302279626997362434812993004688653459429333375696426782530",
+        "denominator_radical": 159,
+        "known_discriminant_radical": "111424095092310",
+        "known_powerful_part": "744537792638640000",
+        "residual_cofactor": "34010181842875559414420317409442615936189560558122575202102790725972330949001651431357",
+        "residual_cofactor_bit_length": 285,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            41,
+            2
+          ],
+          [
+            61,
+            2
+          ],
+          [
+            113,
+            1
+          ],
+          [
+            691,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "2.200565078737",
+      "numerator": 108580,
+      "parameter": "108580/1431",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "held-score-source-gauss-farey"
+      ],
+      "denominator": 1437,
+      "discovery_good": 8,
+      "discovery_score": "1.706393253827",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "3228231400725141732190430635287673409550793225052784053483704284509546637183358020713188759287580426117428301746403950",
+        "combined_radical_upper_bound": "305598436979801236642325839165658305299153548136911102681155439908436763983723012953270681311401478288882630",
+        "denominator_radical": 1437,
+        "known_discriminant_radical": "1874730",
+        "known_powerful_part": "15179948460105",
+        "residual_cofactor": "113437234791938078662942713731072632491703643417683406974243517198116246293156036024565196886900163",
+        "residual_cofactor_bit_length": 326,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            23,
+            5
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "1.811699990349",
+      "numerator": 109241,
+      "parameter": "109241/1437",
+      "source_categories": [
+        "gauss-farey"
+      ],
+      "sources": [
+        "gauss_c1_d-3"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "largest-known-powerful-part"
+      ],
+      "denominator": 1516,
+      "discovery_good": 8,
+      "discovery_score": "1.770953880525",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "8941383256931201203595302942558554975331300691746560759789504492203702993741169569414159398791558868667409217722777600",
+        "combined_radical_upper_bound": "698276179425055790420243215253363142914360902498881063332761354100452565636321755646970685620",
+        "denominator_radical": 758,
+        "known_discriminant_radical": "77008470",
+        "known_powerful_part": "9706143082718848114061475840",
+        "residual_cofactor": "11962433222998518006288389852919953998055466314476251311303112208841836458681073637",
+        "residual_cofactor_bit_length": 273,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            24
+          ],
+          [
+            3,
+            15
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            17,
+            4
+          ],
+          [
+            37,
+            2
+          ],
+          [
+            53,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "0.252389880092",
+      "numerator": 115027,
+      "parameter": "115027/1516",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "largest-known-powerful-part"
+      ],
+      "denominator": 1544,
+      "discovery_good": 8,
+      "discovery_score": "2.057592175667",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "12778465141146755135630206501464378913837774586966117925424599763255641063545843753113597428231296429213220812410060800",
+        "combined_radical_upper_bound": "230288386428006689452949265011569066248507796647342360831983945283757451305150564456063260",
+        "denominator_radical": 386,
+        "known_discriminant_radical": "1346645126689170",
+        "known_powerful_part": "21418742043358116236608017530880",
+        "residual_cofactor": "443028401138648452617781424471915853077223579597396877974156571963532623",
+        "residual_cofactor_bit_length": 239,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            24
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            31,
+            3
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            71,
+            1
+          ],
+          [
+            73,
+            2
+          ],
+          [
+            239,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "-0.027424883009",
+      "numerator": 117113,
+      "parameter": "117113/1544",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "highest-held-score"
+      ],
+      "denominator": 1565,
+      "discovery_good": 8,
+      "discovery_score": "1.741608465109",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "16827753139173740023541349538555975619599713412646961137726316443178746392880763314320220880822807933642630477638400000",
+        "combined_radical_upper_bound": "3052378540029358812500256382575488400882903657322399833624833705026372545719252395374873163907501114549031588150",
+        "denominator_radical": 1565,
+        "known_discriminant_radical": "28714530",
+        "known_powerful_part": "8627840000",
+        "residual_cofactor": "67923856772928357621723794134429278378926428042841358655514345144786764576271187129803616814977408167",
+        "residual_cofactor_bit_length": 335,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            11
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            61,
+            2
+          ],
+          [
+            71,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "2.028284389485",
+      "numerator": 118728,
+      "parameter": "118728/1565",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "held-score-denominator-1153-1600",
+        "held-score-source-ordinary-annulus",
+        "highest-held-score"
+      ],
+      "denominator": 1581,
+      "discovery_good": 8,
+      "discovery_score": "1.803671017139",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "20526823252974199695488701087728102203724771485641068252170760636027657229814059826675594842910401912169091340942525950",
+        "combined_radical_upper_bound": "272381615367428005527446694529339288967970655241919752458617420500732100216845260698930844321132615075238855260649910",
+        "denominator_radical": 1581,
+        "known_discriminant_radical": "2071290",
+        "known_powerful_part": "119145",
+        "residual_cofactor": "83177337165083308054738832582471090883842235190737408727702871896808196020113301928022581423286074477171059",
+        "residual_cofactor_bit_length": 356,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            47,
+            2
+          ],
+          [
+            113,
+            1
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "2.435046953515",
+      "numerator": 119921,
+      "parameter": "119921/1581",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "held-score-source-local-trace",
+        "highest-held-score"
+      ],
+      "denominator": 1642,
+      "discovery_good": 8,
+      "discovery_score": "1.855855609298",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "44743053721591284967880244481163001773349760685429934582212251170125659487687786758915891559172502910459895076620345600",
+        "combined_radical_upper_bound": "20216902351807078042019505341344370112360958934172153130387268814879259012025493573083302394503683868166340",
+        "denominator_radical": 1642,
+        "known_discriminant_radical": "108570",
+        "known_powerful_part": "3633993622385280",
+        "residual_cofactor": "113404848524154042649782715896536325976824838133091237636092751416062780334501849102462801462213761",
+        "residual_cofactor_bit_length": 326,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            47,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "2.033261299029",
+      "numerator": 124649,
+      "parameter": "124649/1642",
+      "source_categories": [
+        "local-trace"
+      ],
+      "sources": [
+        "trace_p967_r762"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "largest-known-powerful-part"
+      ],
+      "denominator": 1744,
+      "discovery_good": 8,
+      "discovery_score": "1.832765564988",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "143820599277737176989279076151261745062908703162711926990637635851023055457221127071737979556795197056609296478266982400",
+        "combined_radical_upper_bound": "53171915753750588330291722468081148183682704227635968424531439573353555463849003676363940",
+        "denominator_radical": 218,
+        "known_discriminant_radical": "186850233570",
+        "known_powerful_part": "589651326232968485822375688929280",
+        "residual_cofactor": "1305365616996528811577225441786106814420426034635883320664399602293009945469",
+        "residual_cofactor_bit_length": 250,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            30
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            41,
+            3
+          ],
+          [
+            79,
+            2
+          ],
+          [
+            113,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "1.600484134151",
+      "numerator": 132209,
+      "parameter": "132209/1744",
+      "source_categories": [
+        "local-trace"
+      ],
+      "sources": [
+        "trace_p967_r205"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "held-score-denominator-1601-2048",
+        "highest-held-score"
+      ],
+      "denominator": 1811,
+      "discovery_good": 8,
+      "discovery_score": "1.716798792087",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "311060440327966671644817540328156099415533772143338692629808557132756467174865404065262062280040590165033140613373363200",
+        "combined_radical_upper_bound": "228981227820120497182607865152791158315528933626913035067874974378667225730717208133694391742469395807132470103903470",
+        "denominator_radical": 1811,
+        "known_discriminant_radical": "930",
+        "known_powerful_part": "2460160",
+        "residual_cofactor": "135956032026576237914422534423915473727180333818369839670279578429708071778033408818091585913129083205460340989",
+        "residual_cofactor_bit_length": 366,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            31,
+            3
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "2.175247568433",
+      "numerator": 137376,
+      "parameter": "137376/1811",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "held-score-source-local-trace",
+        "highest-held-score"
+      ],
+      "denominator": 1849,
+      "discovery_good": 8,
+      "discovery_score": "2.123936204953",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "468967032470636501245792764001599621327737602986485678951509991044534563778845816105128187300834844288393587667501651200",
+        "combined_radical_upper_bound": "1905445924594612286270429766831548343502479514968588555203858054093149273282857216204045740686320311035661910",
+        "denominator_radical": 43,
+        "known_discriminant_radical": "9690",
+        "known_powerful_part": "10583130245760",
+        "residual_cofactor": "4573033634757991423117646499223722234628073811334121859514383214757840193157312060393226631834114073573",
+        "residual_cofactor_bit_length": 342,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            17,
+            4
+          ],
+          [
+            19,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "2.156028964531",
+      "numerator": 140234,
+      "parameter": "140234/1849",
+      "source_categories": [
+        "local-trace"
+      ],
+      "sources": [
+        "trace_p967_r762"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "largest-known-powerful-part"
+      ],
+      "denominator": 2014,
+      "discovery_good": 8,
+      "discovery_score": "1.694059783630",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "2591233101265867926793135120829110133913914406024176756270503170356103939866674516199008373749884992950809938304359788800",
+        "combined_radical_upper_bound": "293592189711298396831390811557338803388892288957069216716814059540408437040676199614302479544780",
+        "denominator_radical": 2014,
+        "known_discriminant_radical": "17160990",
+        "known_powerful_part": "17775484664906341426925773440",
+        "residual_cofactor": "8494595311765487742446252042035653403477442038148086783323850223505444362521196123123",
+        "residual_cofactor_bit_length": 283,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            17,
+            5
+          ],
+          [
+            19,
+            2
+          ],
+          [
+            23,
+            4
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "0.408624839818",
+      "numerator": 152747,
+      "parameter": "152747/2014",
+      "source_categories": [
+        "local-trace"
+      ],
+      "sources": [
+        "trace_p967_r205"
+      ]
+    },
+    {
+      "conductor_selection_strata": [
+        "held-score-denominator-1601-2048",
+        "held-score-source-ordinary-annulus",
+        "highest-held-score"
+      ],
+      "denominator": 2041,
+      "discovery_good": 8,
+      "discovery_score": "2.006823237405",
+      "discriminant_feature": {
+        "absolute_homogeneous_discriminant": "3404278434194429994167884406260857605541644641885366585116951329209430961517642195852999091840442832782485305697810764800",
+        "combined_radical_upper_bound": "13294712952364346378944172318826568413750951287270295644576039419628279746107106400646212102915241141057385714770",
+        "denominator_radical": 2041,
+        "known_discriminant_radical": "9690",
+        "known_powerful_part": "522623715840",
+        "residual_cofactor": "672221166416852176357032349671090852879790471155061974849741264835995211988452735468115808733918607709013",
+        "residual_cofactor_bit_length": 349,
+        "singular": false,
+        "small_prime_valuations": [
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            17,
+            4
+          ],
+          [
+            19,
+            2
+          ]
+        ],
+        "upper_bound_semantics": "rad(residual)<=residual exactly"
+      },
+      "held_good": 8,
+      "held_score": "2.390181343125",
+      "numerator": 154832,
+      "parameter": "154832/2041",
+      "source_categories": [
+        "ordinary-annulus"
+      ],
+      "sources": [
+        "ordinary"
+      ]
+    }
+  ],
+  "software": {
+    "python": "3.14.6"
+  },
+  "status": "closed rank-blind selection for disjoint T=2731/36 neighborhood"
+}

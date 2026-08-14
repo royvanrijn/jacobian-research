@@ -121,6 +121,7 @@ canonical-height matrix.
 | Family/search | Parameter | `ln N` | Current rank evidence |
 | --- | ---: | ---: | --- |
 | Fermigier benchmark | normalized `T=39508/39` | `182.724910950637...` | **exact unconditional rank at least 22**; misses the strict conductor bound by `0.004910950637...` |
+| Fermigier--Mestre adapter | `u=28917/20` | `159.934825225525...` | **exact unconditional rank at least 20**; imported 58-abscissa search and finite-reduction certificate, one point short of the target |
 | Nagao section-7 family | constructor `T=5081/47` | `174.249816228548...` | **exact unconditional rank at least 20**; full mod-2-cover and skew searches found no 21st direction |
 | Nagao rank-21 family | constructor `T=6793/64` | `158.572648489303...` | **exact unconditional rank at least 19**; alternate-cover and skew searches remained in that subgroup |
 | Nagao rank-21 family | constructor `T=6629/174` | `154.795114152374...` | **exact unconditional rank at least 18**; historical-specialization replay |
@@ -159,15 +160,31 @@ rank >= 17.
 Its 17 exact points and finite-reduction matrices are stored in the section-7
 global-search artifact.
 
-The strongest conductor-qualified result is now the section-7 specialization
-`T=5081/47`.  Twenty exact rational points have full rank in products of
-finite reduction quotients, proving `rank >= 20` without a height or GRH
-assumption.  All `2^20-1` nonzero classes of the certified subgroup were
-scored for alternate-cover search; 220 completed bounded chart/skew calls
-found 224 decontaminated points, every one exactly dependent in the same
-rank-20 subgroup.  A sharpened explicit-formula calculation gives analytic
-rank at most 20 under GRH after parity, so BSD+GRH predicts exact rank 20; this
-conditional statement is not an unconditional upper bound.
+The strongest conductor-qualified rank frontier now has two exact rank-at-
+least-20 fibers.  The imported Fermigier--Mestre adapter specialization
+`u=28917/20` has the smaller conductor, with `ln N=159.934825225525...`.
+Twenty exact rational points have full rank in finite-reduction quotients.
+The canonical record
+[`elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json`](../artifacts/generated-results/elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json)
+uses `fermigier-mestre-v1:u=28917/20` as the stable identity and records
+`T=28917/10` only as an alias.  It unifies all exact model transformations,
+the full discovered pool and selected basis, certificate provenance, bounded
+saturation status, and the experiment-level promotion/rejection ledger.
+A `Delta=11/5` explicit-formula replay has conservative value
+`21.033532822984...<22`; its root number is `+1`, so under GRH parity bounds
+the analytic rank by 20 and BSD+GRH predicts exact rank 20.  Unconditionally,
+this remains only a rank-at-least-20 statement.  The fixed fiber is therefore
+deprioritized; the structural priority is to preserve one or more exceptional
+quotient directions under a base change.
+
+The independent section-7 specialization `T=5081/47` has
+`ln N=174.249816228548...` and the same exact rank lower bound.  All
+`2^20-1` nonzero classes of its certified subgroup were scored for
+alternate-cover search; 220 completed bounded chart/skew calls found 224
+decontaminated points, every one exactly dependent in the same rank-20
+subgroup.  Its sharpened explicit-formula calculation also conditionally
+closes the fixed fiber at rank 20.  Neither conditional statement is an
+unconditional algebraic-rank upper bound.
 
 At the generic level, exact counts of the section-7 elliptic K3 surface over
 `F_29` and `F_(29^2)` prove that its Mordell--Weil rank over `Q(T)` is exactly
@@ -176,6 +193,27 @@ audit classifies every polynomial quartic abscissa through degree five: the
 extra six linear and three quadratic formulas are all dependent on the
 rank-12 basis.  Exceptional specialization rank, rather than a missing
 `Q(T)`-rational section, is therefore the relevant mechanism for this family.
+
+The same question is now settled for the Fermigier--Mestre adapter.  Exact
+counts over `F_41` and `F_(41^2)` prove unconditionally that its arithmetic
+generic rank over `Q(u)` is exactly 12, while its geometric rank is 12 or 13.
+Thus E22 and the low-conductor rank-20 anchor have exceptional quotient ranks
+10 and 8.  Exact comparison of those quotients found no low-genus shortcut:
+all 88 affine transports are genus 2; the complete quadratic and projective
+Möbius pencils contain no genus-0/1 member; and all 3,160 genuine two-direction
+fiber products are connected genus-9 covers with genus-5 third quotient.
+An independent quotient-ball audit then enumerated every signed support-at-
+most-two representative at both anchors and found all 25,600 additional
+affine interpolants irreducible of genus 2.  This closes those finite ansatzes
+and that representative ball, not arbitrary higher-degree base changes.  A
+complete bidegree-(2,1) classification of all 80 independent pairs likewise
+found only genus-2/3/4 rational components; all 80 residual degree-32 factors
+are irreducible over `Q`.  A genuine simultaneous-square search on all 3,160
+pair covers through projective height 200,000 returned only the two prescribed
+anchors.  A separate projective-height-1,024 rational-point sieve on the
+pilot's irreducible degree-32 discriminant curve found no point or known-line
+intersection.  Rational points beyond those boxes on the discriminant and
+genus-9 cover curves remain open.
 
 The smallest-conductor member is `u=135/2`.  It produced 66 unexpected
 quartic abscissas by height `10^6`; a subsequent ten-box search through
@@ -697,6 +735,22 @@ These are **open problems**, in descending order of leverage:
    weight-one/two/three record-direction tranches.  The global 60.8-million
    box and all 6,160 weight-three directions are closed within their stated
    bounds, so another score-only or shallow-height extension has low leverage.
+1. Generalize Fermigier exceptional-direction transport beyond the now-closed
+   affine, quadratic, Möbius, and direct pair-product ansatzes.  The arithmetic
+   generic rank is exactly 12, so a successful base change must genuinely
+   preserve exceptional quotient classes; current priorities are other
+   higher-support representatives of those classes and rational points on the
+   nonlinear discriminant or genus-9 cover curves beyond the completed height
+   1,024 and 200,000 boxes respectively.
+2. Generalize the new root-tuple census using certified specialization rank,
+   not visible-point count or radical smoothness, as the family objective.  The
+   maximum-root-100 search found very small conductors and an exact rank-13
+   fiber, but the two broad rational scans did not approach rank 21.
+3. Revisit the rank-20 section-7 frontier only through a mechanism that
+   transports several exceptional directions at once.  Its complete
+   mod-2-cover tranche plateaued and its explicit-formula calculation is
+   conditionally closed at rank 20, so another fixed-fiber depth extension has
+   low leverage.
 4. Treat rank 30 as structurally blocked until a new cover model, a tractable
    Selmer computation, or the unpublished rank-17 K3 fibration becomes
    available.  Direct and alternate-cover charts plus 55.27 billion disjoint

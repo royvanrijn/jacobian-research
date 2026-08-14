@@ -47,6 +47,14 @@ def main() -> None:
             "maximum_reduction_prime"
         ],
     )
+    # PARI's version string is provenance, not mathematical output.  Permit an
+    # independent replay under a newer PARI release while requiring every
+    # model, conductor, discriminant, root number, point, and certificate byte
+    # represented in the manifest to agree.
+    replay_pari_version = actual["global_curve"]["version"]
+    pinned_pari_version = expected["global_curve"]["version"]
+    assert replay_pari_version.startswith("[") and pinned_pari_version.startswith("[")
+    actual["global_curve"]["version"] = pinned_pari_version
     assert actual == expected, "pinned Fermigier rank-20 near miss is stale"
 
     specialization = specialize_fermigier_rank_sections(Fraction(28917, 20))
@@ -67,7 +75,8 @@ def main() -> None:
     print(
         "PASS Fermigier near miss: u=28917/20 has 20 exactly independent "
         f"points and log(N)={expected['global_curve']['log_conductor'][:20]}... "
-        "<182.72; no twenty-first point claimed"
+        "<182.72; no twenty-first point claimed; "
+        f"PARI replay {replay_pari_version} (pinned {pinned_pari_version})"
     )
 
 

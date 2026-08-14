@@ -1358,6 +1358,126 @@ pinned artifact SHA-256 is
 `8416e835887236e9e4eafcb01384a710ce4f1be0628701a97f4a7d7a07fe63b1`.
 It is a rank-at-least-20 near miss, not a target solution.
 
+Build the canonical record that identifies this curve by adapter coordinate
+and treats the literal shift only as an alias:
+
+```bash
+PYTHONPATH=elliptic-curves/cas:elliptic-curves .venv/bin/python \
+  elliptic-curves/cas/build_fermigier_rank20_candidate_record.py
+```
+
+The output
+`artifacts/generated-results/elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json`
+contains the exact model transformations, full point pool, selected basis,
+certificate provenance, bounded saturation status, and the complete recorded
+promotion/rejection ledger.
+
+Replay the separate high-support conditional explicit-formula diagnostic:
+
+```bash
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/explicit_formula_fermigier_rank20_28917_20_delta22.py
+```
+
+The generated artifact is
+`artifacts/generated-results/elliptic_fermigier_rank20_28917_20_explicit_formula_delta22.json`.
+Its `Delta=11/5` conservative value is `21.033532822984...<22`; the GRH and
+BSD+GRH interpretations are conditional and do not weaken the unconditional
+rank-at-least-20 certificate.
+
+Prove the exact arithmetic generic rank of the canonical Fermigier adapter:
+
+```bash
+PYTHONPATH=elliptic-curves/cas:elliptic-curves .venv/bin/python \
+  elliptic-curves/cas/verify_fermigier_generic_rank_exact.py
+```
+
+This counts the resolved K3 surface over `F_41` and `F_(41^2)`, replays the
+twelve-section certificate, and proves unconditionally that the rank over
+`Q(u)` is exactly 12; the geometric rank over `Qbar(u)` is 12 or 13.
+
+Replay the exact exceptional-quotient and two-anchor structural audit:
+
+```bash
+PYTHONPATH=elliptic-curves:elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/analyze_fermigier_exceptional_transport.py --workers 4
+```
+
+Its artifact,
+`artifacts/generated-results/elliptic_fermigier_exceptional_transport.json`,
+classifies all 88 affine, quadratic, and projective Möbius transport pencils
+and all 3,160 genuine pair fiber products.  It finds no genus-zero or
+genus-one transport and no new specialization.  The result is exhaustive only
+for those declared ansatzes.
+
+Replay the complete signed support-at-most-two exceptional-quotient ball:
+
+```bash
+PYTHONPATH=elliptic-curves:elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/classify_fermigier_exceptional_quotient_ball.py
+```
+
+The artifact
+`artifacts/generated-results/elliptic_fermigier_exceptional_quotient_ball.json`
+contains 200 E22 and 128 rank-20 representatives and the exact classification
+of all 25,600 cross-anchor affine interpolants.  The scope is exhaustive only
+for signed quotient vectors of support at most two.
+
+Replay the exact bidegree-`(2,1)` pilot for the independent pair
+`P13 x R20E1`:
+
+```bash
+PYTHONPATH=elliptic-curves:elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/analyze_fermigier_bidegree21_pilot.py
+```
+
+Its artifact is
+`artifacts/generated-results/elliptic_fermigier_bidegree21_p13_r20e1_pilot.json`.
+It exactly factors the branch discriminant and classifies every rational
+component for that pilot pair.  The next replay supersedes its one-pair scope;
+rational special points on the irreducible component remain outside both
+calculations.
+
+Classify the corresponding finite bidegree-`(2,1)` pencils for all 80
+independent exceptional pairs:
+
+```bash
+PYTHONPATH=elliptic-curves:elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/analyze_fermigier_bidegree21_all80.py --workers 4
+```
+
+The output
+`artifacts/generated-results/elliptic_fermigier_bidegree21_all80.json`
+contains all 400 rational-component classifications and the exact modular
+irreducibility witness for every residual degree-32 factor.
+
+Search the pilot pair's irreducible degree-32 discriminant component through
+projective height 1,024:
+
+```bash
+PYTHONPATH=elliptic-curves:elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/search_fermigier_bidegree21_nonlinear_points.py \
+  --height 1024
+```
+
+The artifact
+`artifacts/generated-results/elliptic_fermigier_bidegree21_p13_r20e1_nonlinear_points_h1024.json`
+records no affine, infinite, or known-line intersection in that exact bounded
+box.  It does not cover the other 79 nonlinear components.
+
+Search the two square conditions separately on all 3,160 genuine pair covers
+through projective height 200,000:
+
+```bash
+PYTHONPATH=elliptic-curves:elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/search_fermigier_exceptional_pair_simultaneous_h200000.py
+```
+
+The artifact
+`artifacts/generated-results/elliptic_fermigier_exceptional_pair_simultaneous_h200000.json`
+records only the two anchor intersections in that complete bounded box.  It is
+not a global rational-point theorem on the genus-nine covers.
+
 ### Staged Fermigier score sweep
 
 Build and run the dependency-light C++ ranking pass with:

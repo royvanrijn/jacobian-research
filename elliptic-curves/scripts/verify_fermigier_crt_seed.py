@@ -29,6 +29,11 @@ def main() -> None:
     actual = build_fermigier_seed(
         maximum_height=expected["search"]["maximum_height"]
     )
+    # Compare all exact local arithmetic while treating the PARI release
+    # string as replay-host provenance.
+    actual["best_seed"]["pari_gp"]["version"] = expected["best_seed"][
+        "pari_gp"
+    ]["version"]
     assert actual == expected, "pinned Fermigier CRT seed is stale"
     best = actual["best_seed"]
     assert (best["numerator"], best["denominator"]) == (673709, 29965)
