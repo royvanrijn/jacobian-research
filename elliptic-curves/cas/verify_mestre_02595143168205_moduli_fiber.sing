@@ -1,0 +1,250 @@
+// Independent Singular calibration of the universal affine-section equations
+// at the six-root tuple (0,25,95,143,168,205).
+//
+// We normalize X and T by 25, so the labelled roots become
+//
+//   0, 1, 19/5, 143/25, 168/25, 41/5.
+//
+// The script reconstructs q(X-T)q(X+T), its monic square approximant, and R.
+// It then verifies the Mestre obstruction and the universal D-square lift,
+// derives the open-chart ordinate-eliminated equations from scratch, and
+// computes their exact zero-dimensional fiber in (x0,x1).  Finally it
+// reconstructs and checks a rational cubic ordinate for every rational fiber
+// point.  No Mordell-Weil, rank, or conductor assertion is made.
+
+option(redSB);
+ring SeedModuli = 0,(T,X,x0,x1),dp;
+
+proc coefficientIn(poly f, poly variable, int exponent)
+{
+  int index;
+  int factorial = 1;
+  for (index=1; index<=exponent; index=index+1)
+  {
+    f = diff(f,variable);
+    factorial = factorial*index;
+  }
+  return(subst(f,variable,0)/factorial);
+}
+
+poly q =
+  X*(X-1)*(X-19/5)*(X-143/25)*(X-168/25)*(X-41/5);
+poly productShifted = subst(q,X,X-T)*subst(q,X,X+T);
+poly g = X^6;
+int lowerDegree;
+int targetDegree;
+poly correction;
+for (lowerDegree=5; lowerDegree>=0; lowerDegree=lowerDegree-1)
+{
+  targetDegree = 6+lowerDegree;
+  correction =
+    (coefficientIn(productShifted,X,targetDegree)
+     -coefficientIn(g*g,X,targetDegree))/2;
+  g = g+correction*X^lowerDegree;
+}
+poly numeratorR = g*g-productShifted;
+poly R = numeratorR/T^2;
+if (numeratorR-T^2*R != 0)
+{
+  "ERROR: the normalized remainder was not divisible by T^2";
+  exit(2);
+}
+
+poly a1 = coefficientIn(q,X,5);
+poly a2 = coefficientIn(q,X,4);
+poly a3 = coefficientIn(q,X,3);
+poly a4 = coefficientIn(q,X,2);
+poly a5 = coefficientIn(q,X,1);
+poly mestreObstruction =
+  a1^5-6*a1^3*a2+7*a1^2*a3+8*a1*a2^2
+  -8*a1*a4-12*a2*a3+24*a5;
+if (mestreObstruction != 0 || coefficientIn(R,X,5) != 0)
+{
+  "ERROR: the normalized root tuple missed the Mestre hypersurface";
+  exit(2);
+}
+
+poly leadingInvariant =
+  5*a1^4-24*a1^2*a2+32*a1*a3+16*a2^2-64*a4;
+number squareRootD = 528/25;
+if (leadingInvariant-squareRootD^2 != 0)
+{
+  "ERROR: the exact D-square identity failed";
+  exit(2);
+}
+
+poly sectionValue = subst(R,X,x0+x1*T);
+poly f0 = coefficientIn(sectionValue,T,0);
+poly f1 = coefficientIn(sectionValue,T,1);
+poly f2 = coefficientIn(sectionValue,T,2);
+poly f3 = coefficientIn(sectionValue,T,3);
+poly f4 = coefficientIn(sectionValue,T,4);
+poly f5 = coefficientIn(sectionValue,T,5);
+poly f6 = coefficientIn(sectionValue,T,6);
+if (4*f6-(1-x1^2)^2*leadingInvariant != 0)
+{
+  "ERROR: the specialized leading-coefficient identity failed";
+  exit(2);
+}
+
+// Use the rational lift w=sqrt(D).  On x1 != +/-1, the top three square
+// equations recursively determine all four ordinate coefficients.
+poly s = (1-x1^2)*squareRootD/2;
+poly N1 = 4*s^2*f4-f5^2;
+poly N0 = 8*s^4*f3-N1*f5;
+poly residual2 = 64*s^6*f2-N1^2-4*N0*f5;
+poly residual1 = 64*s^8*f1-N0*N1;
+poly residual0 = 256*s^10*f0-N0^2;
+
+poly excluded2 = (x1-1)^4*(x1+1)^4;
+poly excluded1 = (x1-1)^5*(x1+1)^5;
+poly excluded0 = (x1-1)^6*(x1+1)^6;
+poly openResidual2 = residual2/excluded2;
+poly openResidual1 = residual1/excluded1;
+poly openResidual0 = residual0/excluded0;
+if (residual2-excluded2*openResidual2 != 0
+    || residual1-excluded1*openResidual1 != 0
+    || residual0-excluded0*openResidual0 != 0)
+{
+  "ERROR: exact removal of the visible-section factors failed";
+  exit(2);
+}
+
+// Reconstruct a cubic square root at a proposed rational fiber point.  This
+// does not import any ordinate formula.
+proc verifyRationalLift(number intercept, number slope)
+{
+  poly specializedValue = subst(subst(sectionValue,x0,intercept),x1,slope);
+  poly sf3 = coefficientIn(specializedValue,T,3);
+  poly sf4 = coefficientIn(specializedValue,T,4);
+  poly sf5 = coefficientIn(specializedValue,T,5);
+  poly sf6 = coefficientIn(specializedValue,T,6);
+  number z3 = (1-slope^2)*squareRootD/2;
+  poly z2 = sf5/(2*z3);
+  poly z1 = (sf4-z2^2)/(2*z3);
+  poly z0 = (sf3-2*z2*z1)/(2*z3);
+  poly ordinate = z0+z1*T+z2*T^2+z3*T^3;
+  if (sf6-z3^2 != 0 || specializedValue-ordinate^2 != 0)
+  {
+    "ERROR: a rational cubic lift failed",intercept,slope;
+    exit(2);
+  }
+  return(ordinate);
+}
+
+poly ordinate37 = verifyRationalLift(-95/23,37/23);
+poly ordinateMinus37 = verifyRationalLift(-95/23,-37/23);
+poly ordinate13 = verifyRationalLift(583/115,13/23);
+poly ordinateMinus13 = verifyRationalLift(583/115,-13/23);
+poly ordinate7 = verifyRationalLift(3444/575,7/23);
+poly ordinateMinus7 = verifyRationalLift(3444/575,-7/23);
+
+if (ordinate37 !=
+      -44352/2645*T^3+94026768/330625*T^2
+      -18751906008/8265625*T+87599424/15625
+    || ordinateMinus37 !=
+      -44352/2645*T^3-94026768/330625*T^2
+      -18751906008/8265625*T-87599424/15625
+    || ordinate13 !=
+      19008/2645*T^3-3274128/330625*T^2
+      -585453528/8265625*T+19541808/78125
+    || ordinateMinus13 !=
+      19008/2645*T^3+3274128/330625*T^2
+      -585453528/8265625*T-19541808/78125
+    || ordinate7 !=
+      25344/2645*T^3-3718176/330625*T^2
+      -1206783072/8265625*T+16441656/390625
+    || ordinateMinus7 !=
+      25344/2645*T^3+3718176/330625*T^2
+      -1206783072/8265625*T-16441656/390625)
+{
+  "ERROR: the pinned cubic ordinate formulas changed";
+  exit(2);
+}
+
+// In the original integral-root coordinate, write U=25*T.  Dividing the raw
+// quartic by its fixed square content 6600^2 converts the six ordinates to
+// the following unusually small cubics.  Checking them at U=25*T pins the
+// coordinate conversion without constructing a second square approximant.
+poly primitiveOrdinate37At25T =
+  8295400-71029947/529*(25*T)+356162/529*(25*T)^2
+  -840/529*(25*T)^3;
+poly primitiveOrdinateMinus37At25T =
+  -8295400-71029947/529*(25*T)-356162/529*(25*T)^2
+  -840/529*(25*T)^3;
+poly primitiveOrdinate13At25T =
+  370110-2217627/529*(25*T)-12402/529*(25*T)^2
+  +360/529*(25*T)^3;
+poly primitiveOrdinateMinus13At25T =
+  -370110-2217627/529*(25*T)+12402/529*(25*T)^2
+  +360/529*(25*T)^3;
+poly primitiveOrdinate7At25T =
+  62279-4571148/529*(25*T)-14084/529*(25*T)^2
+  +480/529*(25*T)^3;
+poly primitiveOrdinateMinus7At25T =
+  -62279-4571148/529*(25*T)+14084/529*(25*T)^2
+  +480/529*(25*T)^3;
+if (primitiveOrdinate37At25T-9765625/6600*ordinate37 != 0
+    || primitiveOrdinateMinus37At25T-9765625/6600*ordinateMinus37 != 0
+    || primitiveOrdinate13At25T-9765625/6600*ordinate13 != 0
+    || primitiveOrdinateMinus13At25T-9765625/6600*ordinateMinus13 != 0
+    || primitiveOrdinate7At25T-9765625/6600*ordinate7 != 0
+    || primitiveOrdinateMinus7At25T-9765625/6600*ordinateMinus7 != 0)
+{
+  "ERROR: the integral-root primitive ordinate conversion changed";
+  exit(2);
+}
+
+// Compute the exact abscissa fiber in a two-variable lexicographic ring.
+def ConstructionRing = basering;
+ring SectionFiber = 0,(x1,x0),lp;
+poly fiberResidual2 = imap(ConstructionRing,openResidual2);
+poly fiberResidual1 = imap(ConstructionRing,openResidual1);
+poly fiberResidual0 = imap(ConstructionRing,openResidual0);
+ideal fiberBasis =
+  std(ideal(fiberResidual2,fiberResidual1,fiberResidual0));
+
+poly interceptPolynomial =
+  (23*x0+95)*(115*x0-583)*(575*x0-3444);
+poly slopeRelation = 279841*x1^2+69000*x0-439201;
+ideal expectedBasis = std(ideal(interceptPolynomial,slopeRelation));
+if (size(reduce(fiberBasis,expectedBasis)) != 0
+    || size(reduce(expectedBasis,fiberBasis)) != 0)
+{
+  "ERROR: the exact affine-section fiber changed";
+  fiberBasis;
+  exit(2);
+}
+if (vdim(fiberBasis) != 6)
+{
+  "ERROR: expected a reduced degree-six affine-section fiber";
+  exit(2);
+}
+
+ideal slopeElimination = eliminate(fiberBasis,x0);
+poly expectedSlopes =
+  (23*x1-37)*(23*x1+37)
+  *(23*x1-13)*(23*x1+13)
+  *(23*x1-7)*(23*x1+7);
+ideal expectedSlopeIdeal = std(ideal(expectedSlopes));
+ideal actualSlopeIdeal = std(slopeElimination);
+if (size(reduce(actualSlopeIdeal,expectedSlopeIdeal)) != 0
+    || size(reduce(expectedSlopeIdeal,actualSlopeIdeal)) != 0)
+{
+  "ERROR: the six rational slope branches changed";
+  exit(2);
+}
+
+"MESTRE_02595143168205_MODULI_FIBER_V1";
+"normalized_moduli_point_c1_c2_c3_c4";
+-636/25,152074/625,-667356/625,31978621/15625;
+"mestre_obstruction",0;
+"D_and_square_root";
+278784/625,528/25;
+"open_fiber_groebner_basis";
+fiberBasis;
+"fiber_degree",vdim(fiberBasis);
+"slope_factorization";
+factorize(slopeElimination[1]);
+"independently_reconstructed_rational_cubic_lifts",6;
+"DONE";

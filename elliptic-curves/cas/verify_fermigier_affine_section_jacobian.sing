@@ -1,0 +1,94 @@
+// Exact regular-point check for the Fermigier two-parameter affine-section
+// locus.  This independently rebuilds the universal eight equations:
+// one Mestre obstruction and seven coefficients of
+// R(x0+x1*T,T)-(z0+z1*T+z2*T^2+z3*T^3)^2.
+//
+// At (u,v)=(3,5), after alpha_2 -> 0 and alpha_4 -> 1, the script checks
+// exact membership and Jacobian rank eight in the ten genuine variables.
+// Hence the solution scheme is smooth of local dimension 10-8=2 there.
+
+ring FermigierJacobian = 0,
+  (T,X,z0,z1,z2,z3,x0,x1,c1,c2,c3,c4),dp;
+
+proc coefficientIn(poly f, poly variable, int exponent)
+{
+  int index;
+  int factorial = 1;
+  for (index=1; index<=exponent; index=index+1)
+  {
+    f = diff(f,variable);
+    factorial = factorial*index;
+  }
+  return(subst(f,variable,0)/factorial);
+}
+
+poly q = X*(X-1)*(X^4+c1*X^3+c2*X^2+c3*X+c4);
+poly productShifted = subst(q,X,X-T)*subst(q,X,X+T);
+poly g = X^6;
+int lowerDegree;
+int targetDegree;
+poly correction;
+for (lowerDegree=5; lowerDegree>=0; lowerDegree=lowerDegree-1)
+{
+  targetDegree = 6+lowerDegree;
+  correction =
+    (coefficientIn(productShifted,X,targetDegree)
+     -coefficientIn(g*g,X,targetDegree))/2;
+  g = g+correction*X^lowerDegree;
+}
+poly R = (g*g-productShifted)/T^2;
+poly mestreObstruction = coefficientIn(R,X,5);
+poly sectionDifference =
+  subst(R,X,x0+x1*T)-(z0+z1*T+z2*T^2+z3*T^3)^2;
+ideal equations = mestreObstruction;
+int tDegree;
+for (tDegree=0; tDegree<=6; tDegree=tDegree+1)
+{
+  equations[tDegree+2] = coefficientIn(sectionDifference,T,tDegree);
+}
+
+number z0Value = 49747491/41141582272;
+number z1Value = -989134281/97294282400;
+number z2Value = -3107583/328696900;
+number z3Value = 80028/2220925;
+number x0Value = 314/1295;
+number x1Value = -17/35;
+number c1Value = -877/518;
+number c2Value = 908981/1073296;
+number c3Value = -41094331/277983664;
+number c4Value = 234777015/41141582272;
+
+ideal evaluatedEquations =
+  subst(subst(subst(subst(subst(subst(subst(subst(subst(subst(
+    equations,
+    z0,z0Value),z1,z1Value),z2,z2Value),z3,z3Value),
+    x0,x0Value),x1,x1Value),c1,c1Value),c2,c2Value),
+    c3,c3Value),c4,c4Value);
+if (size(evaluatedEquations) != 0)
+{
+  "ERROR: the Fermigier point failed the universal equations";
+  evaluatedEquations;
+  exit(2);
+}
+
+matrix equationJacobian = jacob(equations);
+matrix evaluatedJacobian =
+  subst(subst(subst(subst(subst(subst(subst(subst(subst(subst(
+    equationJacobian,
+    z0,z0Value),z1,z1Value),z2,z2Value),z3,z3Value),
+    x0,x0Value),x1,x1Value),c1,c1Value),c2,c2Value),
+    c3,c3Value),c4,c4Value);
+int exactJacobianRank = rank(evaluatedJacobian);
+if (exactJacobianRank != 8)
+{
+  "ERROR: expected exact Jacobian rank eight";
+  exactJacobianRank;
+  exit(2);
+}
+
+"FERMIGIER_AFFINE_SECTION_JACOBIAN_V1";
+"equation_count",size(equations);
+"genuine_variable_count",10;
+"exact_jacobian_rank",exactJacobianRank;
+"smooth_local_dimension",10-exactJacobianRank;
+"DONE";

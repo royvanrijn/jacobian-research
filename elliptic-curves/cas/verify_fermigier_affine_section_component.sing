@@ -1,0 +1,220 @@
+// Exact two-parameter calibration component for the universal affine-section
+// equations in mestre_affine_section_elimination.sing.
+//
+// The six labelled roots alpha_i(u,v), and the extra abscissa A(u,v)+B(u,v)T,
+// are transcribed from Fermigier, Acta Arith. 82 (1997), pp. 359-360.
+// We normalize alpha_2 -> 0 and alpha_4 -> 1.  The induced section slope is
+// still B and its intercept is (A-alpha_2)/(alpha_4-alpha_2).
+//
+// The script constructs q, g, R independently over Q(u,v), verifies the
+// Mestre obstruction, factors R(x0+B*T,T), and checks that it is the square
+// of a cubic in T.  It also checks that the parameterization has differential
+// rank two at (u,v)=(3,5).  This proves a positive-dimensional identity
+// component; it does not prove generic Mordell-Weil independence.
+
+ring FermigierSource = (0,u,v),(T,X),dp;
+
+proc coefficientIn(poly f, poly variable, int exponent)
+{
+  int index;
+  int factorial = 1;
+  for (index=1; index<=exponent; index=index+1)
+  {
+    f = diff(f,variable);
+    factorial = factorial*index;
+  }
+  return(subst(f,variable,0)/factorial);
+}
+
+proc evaluateParameterNumber(number value, int uValue, int vValue)
+{
+  poly valueNumerator = numerator(value);
+  poly valueDenominator = denominator(value);
+  valueNumerator =
+    subst(subst(valueNumerator,u,uValue),v,vValue);
+  valueDenominator =
+    subst(subst(valueDenominator,u,uValue),v,vValue);
+  return(leadcoef(valueNumerator)/leadcoef(valueDenominator));
+}
+
+number alpha1 =
+  -v+v^2-v^3+v^4+2*u*v+v^2*u-2*v^3*u+v^4*u+u^2+u^2*v
+  -2*v^2*u^2-2*v^3*u^2+u^3*v^2-u^4;
+number alpha2 =
+  v^3*u^2-2*v^2*u^2+v^2*u-2*u^3*v^2-2*u^3*v+u^2*v+u^4*v
+  +2*u*v-v^4-u+v^2-u^3+u^2+u^4;
+number alpha3 =
+  -v^4*u+2*v^3*u+v^3*u^2+v^2*u^2+v^2*u-u^3*v^2-2*u^3*v
+  -2*u^2*v+u^4*v-v+v^3-2*u^3+u^2+u^4;
+number alpha4 =
+  v-v^2+v^3-v^4+u-2*u*v+v^2*u+2*v^3*u-2*u^2-2*u^2*v
+  +v^2*u^2+v^3*u^2+u^3-u^4*v;
+number alpha5 =
+  v^4*u-2*v^3*u-v^3*u^2+v^2*u^2-2*v^2*u+u^3*v^2+2*u^3*v
+  +u^2*v+v^4-u-2*v^3+v^2+u^3-u^4*v;
+number alpha6 =
+  v-2*v^2+v^3+u-2*u*v-2*v^2*u-v^4*u-u^2+u^2*v+v^2*u^2
+  +u^3+2*u^3*v+u^3*v^2-u^4;
+
+number commonDenominator = u^2+v^2+1;
+number extraANumerator =
+  3*u^2*v+3*u^3*v^2+2*u^4*v+u*v-4*v^3*u-3*v^2*u^2
+  +3*v^3*u^2-4*u^3*v+v^3+2*v^4*u-3*u^4+u^3-3*v^4+u
+  +3*v^2*u+v-u^4*v^3-2*u^4*v^2-u^3*v^4-4*u^3*v^3
+  +u^2*v^5-2*u^2*v^4+u*v^5+u^5*v^2+u^5*v-v^6-u^6
+  +2*v^5+2*u^5;
+number extraA = extraANumerator/commonDenominator;
+number extraB = (-u^2-v^2+2*u+2*v+1)/commonDenominator;
+
+number affineScale = alpha4-alpha2;
+number rho1 = (alpha1-alpha2)/affineScale;
+number rho3 = (alpha3-alpha2)/affineScale;
+number rho5 = (alpha5-alpha2)/affineScale;
+number rho6 = (alpha6-alpha2)/affineScale;
+number normalizedA = (extraA-alpha2)/affineScale;
+
+poly q = X*(X-1)*(X-rho1)*(X-rho3)*(X-rho5)*(X-rho6);
+poly productShifted = subst(q,X,X-T)*subst(q,X,X+T);
+poly g = X^6;
+int lowerDegree;
+int targetDegree;
+poly correction;
+for (lowerDegree=5; lowerDegree>=0; lowerDegree=lowerDegree-1)
+{
+  targetDegree = 6+lowerDegree;
+  correction =
+    (coefficientIn(productShifted,X,targetDegree)
+     -coefficientIn(g*g,X,targetDegree))/2;
+  g = g+correction*X^lowerDegree;
+}
+poly numeratorR = g*g-productShifted;
+poly R = numeratorR/T^2;
+if (numeratorR-T^2*R != 0)
+{
+  "ERROR: T^2 divisibility failed";
+  exit(2);
+}
+if (coefficientIn(R,X,5) != 0)
+{
+  "ERROR: Fermigier root formulas do not satisfy the Mestre obstruction";
+  exit(2);
+}
+
+poly sectionValue = subst(R,X,normalizedA+extraB*T);
+list squareFactorization = factorize(sectionValue);
+ideal squareFactors = squareFactorization[1];
+intvec squareExponents = squareFactorization[2];
+int factorIndex;
+poly cubicFactor = 1;
+for (factorIndex=2; factorIndex<=size(squareExponents); factorIndex=factorIndex+1)
+{
+  if (squareExponents[factorIndex] % 2 != 0)
+  {
+    "ERROR: a nonconstant section-value factor has odd multiplicity";
+    squareFactorization;
+    exit(2);
+  }
+  cubicFactor =
+    cubicFactor
+    *squareFactors[factorIndex]^(squareExponents[factorIndex] div 2);
+}
+
+// The nonconstant part must have total degree six and hence a cubic square
+// root.  The coefficient-field unit is printed for the companion exact
+// square-unit check.
+int nonconstantDegree = deg(sectionValue);
+if (nonconstantDegree != 6)
+{
+  "ERROR: expected a degree-six section value";
+  exit(2);
+}
+
+// Differential-rank witness for the two-parameter source map.  B and rho1
+// suffice: their 2x2 Jacobian determinant is nonzero at (3,5).
+number mapJacobian =
+  diff(extraB,u)*diff(rho1,v)-diff(extraB,v)*diff(rho1,u);
+number mapJacobianAt35 = evaluateParameterNumber(mapJacobian,3,5);
+if (mapJacobianAt35 == 0)
+{
+  "ERROR: the two-parameter map lost differential rank at (3,5)";
+  exit(2);
+}
+
+number squareUnit = leadcoef(squareFactors[1]);
+number squareUnitRoot =
+  (u-1)*(v-1)*(-u+v)*(u+v+1)
+  *(-u^2+u*v+u+2*v)*(-u*v+v^2-2*u-v)
+  /((u^2+v^2+1)^2*(2*u*v+u+v-1)^4
+    *(-u^3+u^2*v+u^2+u*v+v^2-2*u-v)^4);
+if (squareUnit != squareUnitRoot^2)
+{
+  "ERROR: explicit square-unit root failed";
+  exit(2);
+}
+if (deg(cubicFactor) != 3
+    || sectionValue-squareUnitRoot^2*cubicFactor^2 != 0)
+{
+  "ERROR: the reconstructed cubic square identity failed";
+  exit(2);
+}
+poly squareUnitNumeratorSource = numerator(squareUnit);
+poly squareUnitDenominatorSource = denominator(squareUnit);
+def SourceRing = basering;
+ring ParameterRing = 0,(u,v),dp;
+poly squareUnitNumerator = imap(SourceRing,squareUnitNumeratorSource);
+poly squareUnitDenominator = imap(SourceRing,squareUnitDenominatorSource);
+list numeratorFactorization = factorize(squareUnitNumerator);
+list denominatorFactorization = factorize(squareUnitDenominator);
+intvec numeratorExponents = numeratorFactorization[2];
+intvec denominatorExponents = denominatorFactorization[2];
+ideal numeratorFactors = numeratorFactorization[1];
+ideal denominatorFactors = denominatorFactorization[1];
+if (numeratorFactors[1] != 1 || denominatorFactors[1] != 1)
+{
+  "ERROR: square-unit factorization left a non-square rational unit";
+  exit(2);
+}
+for (factorIndex=2; factorIndex<=size(numeratorExponents); factorIndex=factorIndex+1)
+{
+  if (numeratorExponents[factorIndex] % 2 != 0)
+  {
+    "ERROR: square-unit numerator has an odd nonconstant factor";
+    exit(2);
+  }
+}
+for (factorIndex=2; factorIndex<=size(denominatorExponents); factorIndex=factorIndex+1)
+{
+  if (denominatorExponents[factorIndex] % 2 != 0)
+  {
+    "ERROR: square-unit denominator has an odd nonconstant factor";
+    exit(2);
+  }
+}
+"square_unit_numerator_factorization";
+numeratorFactorization;
+"square_unit_denominator_factorization";
+denominatorFactorization;
+setring SourceRing;
+
+"FERMIGIER_AFFINE_SECTION_COMPONENT_V1";
+"source", "Fermigier 1997, pp. 359-360";
+"normalization", "alpha2 -> 0; alpha4 -> 1";
+"specialization_u3_v5_normalized_roots";
+evaluateParameterNumber(rho1,3,5),
+evaluateParameterNumber(rho3,3,5),
+evaluateParameterNumber(rho5,3,5),
+evaluateParameterNumber(rho6,3,5);
+"specialization_u3_v5_section_x0_x1";
+evaluateParameterNumber(normalizedA,3,5),
+evaluateParameterNumber(extraB,3,5);
+"section_value_factor_degrees_and_exponents";
+deg(cubicFactor),squareExponents;
+"cubic_factor_C_for_y=sqrt(square_unit)*C";
+cubicFactor;
+"square_unit_root";
+squareUnitRoot;
+"square_unit_parameter_factor_counts";
+size(numeratorExponents),size(denominatorExponents);
+"map_jacobian_minor_at_u3_v5";
+mapJacobianAt35;
+"DONE";

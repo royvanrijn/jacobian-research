@@ -330,6 +330,82 @@ nonreflection probes return `[9,9]` and `[4,4]`, and the maximum lower bound
 among all 59 probes is 9.  These are bounded software probes, not generic-rank
 claims.
 
+## Algebraic Mestre family design, two rank-13 families, and rank 17
+
+Extract Kihara's centered six-root obstruction and its three extra-square
+identities:
+
+```sh
+PYTHONPATH=elliptic-curves/cas \
+  .venv/bin/python elliptic-curves/cas/derive_kihara_rank14_identities.py
+```
+
+Derive the affine-normalized linear-section equations, verify Fermigier's
+two-parameter locus, and replay the isolated six-section fiber of the new
+root tuple:
+
+```sh
+Singular -q elliptic-curves/cas/mestre_affine_section_elimination.sing
+Singular -q elliptic-curves/cas/verify_fermigier_affine_section_component.sing
+Singular -q elliptic-curves/cas/verify_fermigier_affine_section_jacobian.sing
+Singular -q elliptic-curves/cas/verify_mestre_02393128133175_moduli_fiber.sing
+```
+
+The universal ansatz is `x=x0+x1*T` with a cubic ordinate.  After the
+leading-square condition, exact triangular elimination leaves three residual
+equations.  The last command checks that the normalized roots
+`(0,23,93,128,133,175)` have exactly the displayed reduced six-point
+nonvisible affine-section fiber on the declared open chart.
+
+Replay the generic-rank certificate and degree-40 discriminant geometry with:
+
+```sh
+PYTHONPATH=elliptic-curves/cas \
+  .venv/bin/python \
+  elliptic-curves/cas/verify_mestre_rank13_02393128133175.py
+
+PYTHONPATH=elliptic-curves/cas \
+  .venv/bin/python -m unittest \
+  elliptic-curves/tests/test_mestre_rank13_02393128133175.py
+```
+
+At `u=1`, the exact mod-3 dimensions are 11 for the twelve paired-root
+images, 12 after one chosen nonvisible companion, and 13 after split infinity.
+The specialization proves generic rank at least 13.  The verifier also proves
+that the primitive base-changed discriminant frontier is irreducible,
+squarefree, and degree 40; it does not identify every specialized conductor
+or claim a rank-17 specialization.
+
+Replay the second D-square family and its conductor-qualified specialization:
+
+```sh
+Singular -q elliptic-curves/cas/verify_mestre_02595143168205_moduli_fiber.sing
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/verify_mestre_02595143168205_rank13_section.py
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/verify_mestre_02595143168205_discriminants.py
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/verify_mestre_dsquare_four_u197.py
+```
+
+For centers `(0,25,95,143,168,205)`, the first two commands prove generic
+rank at least 13 after `T=(39146-u^2)/(2u)`.  At `u=197`, the last command
+checks 17 independent points, proves the strict cutoff exactly, and replays
+the minimal model and conductor with PARI/GP.  The pinned artifact is
+[`elliptic_mestre_dsquare_four_u197_rank17.json`](../artifacts/generated-results/elliptic_mestre_dsquare_four_u197_rank17.json),
+SHA-256 `f1235d845653219c53d906a06042d4904686feeb42c379ed7f3d83e01d7f0563`.
+The bounded discovery command is:
+
+```sh
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/search_mestre_dsquare_four.py --workers 8
+```
+
+The archival discovery replay expects the locally installed `ratpoints`
+bundle at `tmp/ratpoints/root/usr/bin/ratpoints`; the tracked certificate does
+not.  Its 102 capped conductor calls and finite ratpoints box are not negative
+upper-bound evidence.
+
 ## Nagao 1994 replay and rank-13 searches
 
 Replay the exact rank-13 base change and Nagao's printed rank-21 curve:

@@ -1,0 +1,161 @@
+// Exact affine-normalized six-root Mestre extra-section elimination.
+//
+// Two roots are labelled 0 and 1, fixing translation and scale.  To keep the
+// elimination sparse, the remaining root quartic is represented by
+//
+//   h(X)=X^4+c1*X^3+c2*X^2+c3*X+c4.
+//
+// The rational six-root locus is the pullback
+// h(X)=product_{i=2}^5 (X-r_i); this substitution is recorded by the
+// companion verifier rather than expanded during elimination.
+// For q(X)=product(X-r_i), write
+//
+//   q(X-T)q(X+T) = g(X,T)^2 - T^2 R(X,T),  deg_X(g)=6.
+//
+// The Mestre obstruction M=0 is equivalent to deg_X(R)<=4.  We seek a
+// nonvisible affine section with the smallest possible ordinate degree:
+//
+//   x(T)=x0+x1*T,
+//   y(T)=z0+z1*T+z2*T^2+z3*T^3.
+//
+// Put F(T)=R(x(T),T)=sum(f_i*T^i,0<=i<=6).  The leading identity is
+//
+//   4*f6 = (1-x1^2)^2 D  modulo M,
+//   D=5*a1^4-24*a1^2*a2+32*a1*a3+16*a2^2-64*a4,
+//
+// where q=X^6+a1*X^5+... .  Write D=w^2 and
+// z3=(1-x1^2)w/2.  On the open chart z3 != 0, the T^5,T^4,T^3 equations
+// recursively determine z2,z1,z0.  Clearing only powers of z3 leaves three
+// residual equations.  They are even in w, so reduction by w^2-D eliminates
+// every ordinate coefficient exactly.
+//
+// Output equations are valid on the explicitly declared open chart
+// (1-x1^2)*D != 0.  The excluded x1=+/-1 locus contains the twelve displayed
+// branches.  This script proves polynomial identities only; it makes no
+// nonsingularity or Mordell-Weil independence claim.
+
+option(redSB);
+ring MestreSection = 0,
+  (w,T,X,x0,x1,c1,c2,c3,c4),
+  (dp(1),dp(2),dp(6));
+
+proc coefficientIn(poly f, poly variable, int exponent)
+{
+  int index;
+  int factorial = 1;
+  for (index=1; index<=exponent; index=index+1)
+  {
+    f = diff(f,variable);
+    factorial = factorial*index;
+  }
+  return(subst(f,variable,0)/factorial);
+}
+
+poly rootQuartic = X^4+c1*X^3+c2*X^2+c3*X+c4;
+poly q = X*(X-1)*rootQuartic;
+poly productShifted = subst(q,X,X-T)*subst(q,X,X+T);
+"CHECKPOINT product-built";
+
+// Unique monic square approximant through X-degree six.
+poly g = X^6;
+int lowerDegree;
+int targetDegree;
+poly correction;
+for (lowerDegree=5; lowerDegree>=0; lowerDegree=lowerDegree-1)
+{
+  targetDegree = 6+lowerDegree;
+  correction =
+    (coefficientIn(productShifted,X,targetDegree)
+     -coefficientIn(g*g,X,targetDegree))/2;
+  g = g+correction*X^lowerDegree;
+}
+"CHECKPOINT square-approximant-built";
+
+poly numeratorR = g*g-productShifted;
+poly R = numeratorR/T^2;
+if (numeratorR-T^2*R != 0)
+{
+  "ERROR: the remainder was not exactly divisible by T^2";
+  exit(2);
+}
+
+poly a1 = coefficientIn(q,X,5);
+poly a2 = coefficientIn(q,X,4);
+poly a3 = coefficientIn(q,X,3);
+poly a4 = coefficientIn(q,X,2);
+poly a5 = coefficientIn(q,X,1);
+poly mestreObstruction =
+  a1^5-6*a1^3*a2+7*a1^2*a3+8*a1*a2^2
+  -8*a1*a4-12*a2*a3+24*a5;
+poly remainderObstruction = coefficientIn(R,X,5);
+if (reduce(remainderObstruction,std(ideal(mestreObstruction))) != 0
+    || reduce(mestreObstruction,std(ideal(remainderObstruction))) != 0)
+{
+  "ERROR: explicit and remainder Mestre obstructions disagree";
+  exit(2);
+}
+"CHECKPOINT obstruction-verified";
+
+poly sectionValue = subst(R,X,x0+x1*T);
+poly f0 = coefficientIn(sectionValue,T,0);
+poly f1 = coefficientIn(sectionValue,T,1);
+poly f2 = coefficientIn(sectionValue,T,2);
+poly f3 = coefficientIn(sectionValue,T,3);
+poly f4 = coefficientIn(sectionValue,T,4);
+poly f5 = coefficientIn(sectionValue,T,5);
+poly f6 = coefficientIn(sectionValue,T,6);
+"CHECKPOINT section-coefficients-built";
+
+poly leadingInvariant =
+  5*a1^4-24*a1^2*a2+32*a1*a3+16*a2^2-64*a4;
+poly leadingIdentity =
+  reduce(4*f6-(1-x1^2)^2*leadingInvariant,
+         std(ideal(mestreObstruction)));
+if (leadingIdentity != 0)
+{
+  "ERROR: universal leading-square identity failed modulo M";
+  leadingIdentity;
+  exit(2);
+}
+"CHECKPOINT leading-identity-verified";
+
+// Recursion from the top.  If s=z3, then
+// z2=f5/(2s), z1=N1/(8s^3), z0=N0/(16s^5).
+poly s = (1-x1^2)*w/2;
+poly N1 = 4*s^2*f4-f5^2;
+poly N0 = 8*s^4*f3-N1*f5;
+poly residual2Raw = 64*s^6*f2-N1^2-4*N0*f5;
+poly residual1Raw = 64*s^8*f1-N0*N1;
+poly residual0Raw = 256*s^10*f0-N0^2;
+
+ideal squareLeading = w^2-leadingInvariant;
+ideal squareLeadingBasis = std(squareLeading);
+poly eliminated2 = reduce(residual2Raw,squareLeadingBasis);
+poly eliminated1 = reduce(residual1Raw,squareLeadingBasis);
+poly eliminated0 = reduce(residual0Raw,squareLeadingBasis);
+"CHECKPOINT ordinate-recursion-eliminated";
+if (diff(eliminated2,w) != 0 || diff(eliminated1,w) != 0
+    || diff(eliminated0,w) != 0)
+{
+  "ERROR: an odd power of the leading square root survived elimination";
+  exit(2);
+}
+
+ideal eliminatedOrdinate =
+  mestreObstruction,eliminated2,eliminated1,eliminated0;
+
+"MESTRE_AFFINE_SECTION_ELIMINATION_V2";
+"root_normalization", "q=X*(X-1)*(X^4+c1*X^3+c2*X^2+c3*X+c4)";
+"section_ansatz", "x=x0+x1*T; y=z0+z1*T+z2*T^2+z3*T^3";
+"open_chart", "(1-x1^2)*D != 0";
+"mestre_obstruction";
+mestreObstruction;
+"leading_square_invariant_D";
+leadingInvariant;
+"ordinate_eliminated_equation_degrees";
+deg(eliminated2),deg(eliminated1),deg(eliminated0);
+"ordinate_eliminated_equation_sizes";
+size(eliminated2),size(eliminated1),size(eliminated0);
+"ordinate_eliminated_equation_names";
+"M, eliminated2, eliminated1, eliminated0 (defined exactly in this script)";
+"DONE";

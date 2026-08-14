@@ -29,6 +29,19 @@ generic-rank-13 base change.  It also contains the rank-nine
 Elkies--Klagsbrun K3 family as a smaller local-arithmetic test bed and an exact
 replay of Nagao's published rank-21 curve.
 
+The family-design branch now also contains a new six-root Mestre family with
+centers `(0,23,93,128,133,175)`.  Six nonvisible linear-abscissa square
+identities are verified symbolically.  After
+`T=(14406-u^2)/(2u)`, one chosen companion and split infinity raise the exact
+generic lower bound to 13.  Its primitive base-changed discriminant frontier
+has degree 40, versus degree 398 for the reproduced Kihara rank-14 template.
+This is a proved generic construction and materially better conductor
+geometry, although its own bounded specialization scans have not produced the
+strongest six-root fiber.  A second split-infinity family, with centers
+`(0,25,95,143,168,205)`, also has generic rank at least 13.  Its specialization
+`u=197`, `T=337/394` has an exact rank lower bound of 17 and exact
+`ln(N)=173.594891144976...<182.72`.
+
 Evidence is classified as follows throughout this directory:
 
 | Label | Meaning |
@@ -118,6 +131,7 @@ canonical-height matrix.
 | Nagao rank-gain search | `u=471/11`, `T=5579/22` | `146.678928806750...` | **exact unconditional rank at least 17**; 17-point reduction certificate |
 | Nagao rank-13, integer scan | `u=42`, `T=3631/14` | `148.621053634068...` | **exact unconditional rank at least 17**; broad skew/chart search found no 18th direction |
 | Nagao mutation search | `u=74`, `T=9037/74` | `151.423206831026...` | **exact unconditional rank at least 17**; 17-point reduction certificate |
+| Mestre roots `(0,25,95,143,168,205)` | `u=197`, `T=337/394` | `173.594891144976...` | **exact unconditional rank at least 17**; the split-infinity family has generic rank at least 13 and the pinned certificate is four points short of the target |
 | Nagao rank-13, integer scan | `u=84`, `T=2749/28` | `139.773456475157...` | stable numerical rank 16 through height `10^6`; effort-zero `ellrank` timed out |
 | Nagao rank-13, local CRT | `u=118`, `T=4813/118` | `128.027255994266...` | 43 nonvisible images at height `10^6`; stable numerical rank remains 15 |
 | Nagao rank-13, integer scan | `u=50`, `T=421/2` | `89.115263351204...` | PARI effort zero returned computational bounds `[13,13]`; eliminated as a target |
@@ -356,6 +370,57 @@ validates the local-to-global mechanism and lands below the conductor
 threshold, but its rank is far too small.  The full machine record is
 [`elliptic_ek_k3_crt_fixture.json`](../artifacts/generated-results/elliptic_ek_k3_crt_fixture.json).
 
+### Algebraic six-root family design
+
+The Kihara replay has now been separated into its essential square identities
+and its high-height parameterization.  For a mean-centered center polynomial
+
+```text
+B(z)=z^6+c4*z^4+c3*z^3+c2*z^2+c1*z+c0,
+```
+
+the degree-five obstruction in the paired-root Mestre remainder is exactly
+`2*c1=c3*c4`.  On the general affine-normalized Mestre moduli, the smallest
+nonvisible section ansatz is
+
+```text
+x=x0+x1*T,  y=z0+z1*T+z2*T^2+z3*T^3.
+```
+
+Exact coefficient elimination gives the Mestre equation, a leading-square
+condition `D=w^2`, and three residual equations after eliminating all four
+ordinate coefficients.  The executable equations and a verified
+two-dimensional Fermigier component are documented in
+[`notes/MESTRE_AFFINE_SECTION_MODULI.md`](notes/MESTRE_AFFINE_SECTION_MODULI.md).
+
+A targeted search on this section locus produced the explicit centers
+`(0,23,93,128,133,175)`.  Their primitive quartic has fixed square content
+`2400^2`, twelve paired-root sections, and six verified nonvisible companion
+identities.  Its leading coefficient is `9*(T^2+14406)`, so
+`T=(14406-u^2)/(2u)` splits quartic infinity.  At `u=1`, exact good-reduction
+quotients modulo 3 give dimensions 11 for the twelve visible images, 12 after
+one chosen companion, and 13 after split infinity.  This proves generic rank
+at least 13 by specialization.
+
+The base-changed discriminant frontier is primitive, irreducible, squarefree,
+and degree 40, versus degree 398 for Kihara's rank-at-least-14 template.  See
+[`notes/MESTRE_RANK13_02393128133175.md`](notes/MESTRE_RANK13_02393128133175.md).
+This is a new proved family with materially leaner conductor geometry.  It
+does not prove generic rank equality, independence of all six companions, or
+a high-rank specialization in that particular family.
+
+A second exact D-square family has centers `(0,25,95,143,168,205)`, leading
+coefficient `T^2+39146`, and the split-infinity base change
+`T=(39146-u^2)/(2u)`.  Six nonvisible companions are classified exactly; at
+`u=197` one raises the visible-plus-infinity mod-3 dimension from 12 to 13,
+proving the generic lower bound.  The same specialization has 17 rigorously
+independent rational points and exact conductor
+`2462086522751621334987931952469307556796057284118717977320345864383117775914`.
+The tracked certificate is
+[`elliptic_mestre_dsquare_four_u197_rank17.json`](../artifacts/generated-results/elliptic_mestre_dsquare_four_u197_rank17.json),
+and the complete bounded four-family screen is documented in
+[`notes/MESTRE_DSQUARE_FOUR_SCREEN.md`](notes/MESTRE_DSQUARE_FOUR_SCREEN.md).
+
 ## Pilot family
 
 [`cas/fermigier_mestre.py`](cas/fermigier_mestre.py) implements the normalized
@@ -507,6 +572,10 @@ for either target: the required claim is a rank lower bound.
 - [`cas/certify_mestre_0647557080_t8_rank13.py`](cas/certify_mestre_0647557080_t8_rank13.py):
   exact rank-at-least-13 certificate for the strongest new tuple-family
   specialization.
+- [`cas/verify_mestre_02595143168205_rank13_section.py`](cas/verify_mestre_02595143168205_rank13_section.py)
+  and [`cas/verify_mestre_dsquare_four_u197.py`](cas/verify_mestre_dsquare_four_u197.py):
+  the generic-rank-at-least-13 companion replay and the standalone pinned
+  rank-at-least-17 specialization certificate for the second D-square family.
 - [`cas/search_mestre_0430313946_frontier.py`](cas/search_mestre_0430313946_frontier.py)
   and [`cas/search_mestre_0430313946_power_crt.py`](cas/search_mestre_0430313946_power_crt.py):
   global-box and prime-power searches in the new exact rank-12 family.
@@ -619,10 +688,11 @@ These are **open problems**, in descending order of leverage:
    tranche plateaued and its explicit-formula calculation is conditionally
    closed at rank 20; a successful lane must transport several exceptional
    directions to a new specialization at once.
-2. Generalize the new root-tuple census using certified specialization rank,
-   not visible-point count or radical smoothness, as the family objective.  The
-   maximum-root-100 search found very small conductors and an exact rank-13
-   fiber, but the two broad rational scans did not approach rank 21.
+2. Preserve and deliberately amplify the four extra directions in the new
+   `(0,25,95,143,168,205)` rank-at-least-17 fiber, while comparing against the
+   degree-40 `(0,23,93,128,133,175)` family.  The next family-design score must
+   use certified extra-point yield and conductor growth, not visible-point
+   count or radical smoothness alone.
 3. Revisit Fermigier only with auxiliary constructions beyond the now-complete
    weight-one/two/three record-direction tranches.  The global 60.8-million
    box and all 6,160 weight-three directions are closed within their stated

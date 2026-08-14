@@ -30795,6 +30795,71 @@
       "priority": "reference"
     },
     {
+      "id": "EC-MR13",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "A low-height six-root Mestre family of generic rank at least 13",
+      "scope": "For the six centers (0,23,93,128,133,175), exact square approximation gives a primitive Mestre quartic with fixed square content 2400^2, twelve paired-root sections, and six verified nonvisible linear-companion identities.  The leading coefficient is 9*(T^2+14406), so the base change T=(14406-u^2)/(2u) supplies a rational split-infinity section.  At u=1, the twelve paired-root images, one chosen companion, and split infinity have stacked good-reduction images of rank thirteen over F_3; reduction at p=7 excludes rational 3-torsion.  Infinite descent proves the selected specialized points independent, and specialization therefore proves generic rank at least thirteen over Q(u).  The primitive discriminant frontier is irreducible and squarefree of degree 20 in T and degree 40 after base change, compared with degree 398 for the reproduced Kihara rank-at-least-14 family.  The degree comparison is conductor geometry, not an exact conductor formula, and neither generic rank equality nor independence of all six companions is claimed.",
+      "canonical_source": "elliptic-curves/notes/MESTRE_RANK13_02393128133175.md",
+      "dependencies": [
+        "external: good-reduction specialization homomorphism for elliptic curves",
+        "external: finite-reduction and infinite-descent independence criterion"
+      ],
+      "checker": "elliptic-curves/cas/verify_mestre_rank13_02393128133175.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:918756aa04d2f6716548ef9228125fbe07a30177cb8b8f161f53796d54701bde",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-RANK-CONDUCTOR"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-MD17",
+      "kind": "example",
+      "state": "proved",
+      "title": "Split-infinity Mestre family specialization of rank at least 17 below the conductor cutoff",
+      "scope": "For the six-root Mestre family with centers (0,25,95,143,168,205), the primitive quartic has leading coefficient T^2+39146, so T=(39146-u^2)/(2u) supplies split infinity. An exact companion-section certificate proves this base-changed family has generic rank at least 13. Its primitive discriminant core is irreducible and squarefree of degree 20 in T and degree 40 after base change, compared with degree 398 for the reproduced Kihara family; this is conductor geometry, not an exact conductor formula. At u=197, hence T=337/394, seventeen pinned rational points on the specialized short Jacobian have full F_3 column rank in the stacked good-reduction quotients at p=37,41,61,67,79,83,101,103,137,139,149,163,167,173,181,193. The good-reduction order 20 at p=13 excludes rational 3-torsion, so infinite descent proves rank E(Q)>=17. PARI/GP independently reconstructs the minimal model [1,1,1,-1163348683373499147707371416562962,15227131493689013260364706485730874765958430844575], root number -1, and conductor 2462086522751621334987931952469307556796057284118717977320345864383117775914. The exact inequalities N<10^76 and log(10)<231/100 give log(N)<4389/25<182.72. This is a rank lower bound only, four points short of the operational rank-21 target; no saturation or upper bound is claimed. The bounded four-family discovery screen and its conductor timeouts are not upper-bound evidence.",
+      "canonical_source": "elliptic-curves/notes/MESTRE_DSQUARE_FOUR_SCREEN.md",
+      "dependencies": [
+        "EC-MR13",
+        "external: finite-reduction and infinite-descent independence criterion",
+        "external: good-reduction specialization homomorphism for elliptic curves",
+        "external: PARI/GP 2.15.4 global minimization, conductor, and root-number routines"
+      ],
+      "checker": "elliptic-curves/cas/verify_mestre_dsquare_four_u197.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:68bb4137f8fdd642df33833f790947560ed23c035d6e024c99ffa0266166e188",
+      "software_lock": [
+        ".python-version"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-RANK-CONDUCTOR"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "EC-E29",
       "kind": "reproduction",
       "state": "proved",
@@ -30858,7 +30923,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Exceptional elliptic rank with record conductor",
-      "scope": "Find either an elliptic curve over Q with at least 21 rigorously independent rational points and natural-log conductor below the literal cutoff 182.72, or a curve with at least 30 rigorously independent rational points. EC-CRT1 establishes the exact one-parameter Hensel--CRT--Gauss mechanism; EC-FERM1 and EC-FRANK1 supply the canonical Fermigier adapter, all thirteen quartic points, generic rank-at-least-12 replay, and E22 lower-bound replay while retaining the unresolved source normalization. EC-R20 is the strongest new conductor-qualified survivor: rank at least 20 with log conductor 159.9348252255..., explicitly one point short. EC-E29 locally replays the public lower bound 29 but supplies no thirtieth point, while EC-KIH14 is the strongest fully public higher-generic-rank fallback reproduced here. No target curve has been found. Immediate gates are a twenty-first independent point on EC-R20 or two further dimensions on the odd-root-number rank-19 survivors, broader good-prime and rational-parameter sweeps, and access to or reconstruction of the unpublished rank-17 fibration behind E29. Exact rank 21 would additionally require a rigorous upper bound; the operational lower-bound targets do not.",
+      "scope": "Find either an elliptic curve over Q with at least 21 rigorously independent rational points and natural-log conductor below the literal cutoff 182.72, or a curve with at least 30 rigorously independent rational points. EC-CRT1 establishes the exact one-parameter Hensel--CRT--Gauss mechanism; EC-FERM1 and EC-FRANK1 supply the canonical Fermigier adapter, all thirteen quartic points, generic rank-at-least-12 replay, and E22 lower-bound replay while retaining the unresolved source normalization. EC-R20 is the strongest new conductor-qualified survivor: rank at least 20 with log conductor 159.9348252255..., explicitly one point short. EC-MR13 supplies a new generic-rank-at-least-13 family with degree-40 discriminant geometry, and EC-MD17 supplies a second generic-rank-at-least-13 family together with a conductor-qualified rank-at-least-17 specialization at u=197. EC-E29 locally replays the public lower bound 29 but supplies no thirtieth point, while EC-KIH14 remains the strongest fully public higher-generic-rank fallback reproduced here. No target curve has been found. Immediate gates are a twenty-first independent point on EC-R20, four further independent directions on EC-MD17 or comparable new-family fibers, two further dimensions on the odd-root-number rank-19 survivors, and access to or reconstruction of the unpublished rank-17 fibration behind E29. Exact rank 21 would additionally require a rigorous upper bound; the operational lower-bound targets do not.",
       "canonical_source": "elliptic-curves/README.md",
       "dependencies": [
         "EC-CRT1",
@@ -30866,6 +30931,8 @@
         "EC-FRANK1",
         "EC-R20",
         "EC-KIH14",
+        "EC-MR13",
+        "EC-MD17",
         "EC-E29",
         "EC-FSEED1",
         "external: Fermigier's rank-at-least-22 curve and independence certificate",

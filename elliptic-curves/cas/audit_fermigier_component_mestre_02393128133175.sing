@@ -1,0 +1,501 @@
+// Exact component-membership audit for the six-root tuple
+// (0,23,93,128,133,175) against Fermigier's two-parameter root family.
+//
+// Two unordered sextuples define the same affine root-moduli point exactly
+// when their centered root polynomials differ by X -> lambda*X.  The script
+// constructs the centered Fermigier sextic and tests exact weighted invariant
+// equations against the centered target sextic.  It then audits every base
+// point of the resulting rational map, including the three directions at
+// parameter infinity.  This last step distinguishes absence from the direct
+// parameter image from absence from its Zariski closure.
+//
+// This is independent of the rank-family verifier: no specialized points or
+// pre-expanded quartic coefficients are imported here.
+
+option(redSB);
+ring FermigierRoots = (0,u,v),(X),dp;
+
+number alpha1 =
+  -v+v^2-v^3+v^4+2*u*v+v^2*u-2*v^3*u+v^4*u+u^2+u^2*v
+  -2*v^2*u^2-2*v^3*u^2+u^3*v^2-u^4;
+number alpha2 =
+  v^3*u^2-2*v^2*u^2+v^2*u-2*u^3*v^2-2*u^3*v+u^2*v+u^4*v
+  +2*u*v-v^4-u+v^2-u^3+u^2+u^4;
+number alpha3 =
+  -v^4*u+2*v^3*u+v^3*u^2+v^2*u^2+v^2*u-u^3*v^2-2*u^3*v
+  -2*u^2*v+u^4*v-v+v^3-2*u^3+u^2+u^4;
+number alpha4 =
+  v-v^2+v^3-v^4+u-2*u*v+v^2*u+2*v^3*u-2*u^2-2*u^2*v
+  +v^2*u^2+v^3*u^2+u^3-u^4*v;
+number alpha5 =
+  v^4*u-2*v^3*u-v^3*u^2+v^2*u^2-2*v^2*u+u^3*v^2+2*u^3*v
+  +u^2*v+v^4-u-2*v^3+v^2+u^3-u^4*v;
+number alpha6 =
+  v-2*v^2+v^3+u-2*u*v-2*v^2*u-v^4*u-u^2+u^2*v+v^2*u^2
+  +u^3+2*u^3*v+u^3*v^2-u^4;
+
+proc coefficientIn(poly f, poly variable, int exponent)
+{
+  int index;
+  int factorial = 1;
+  for (index=1; index<=exponent; index=index+1)
+  {
+    f = diff(f,variable);
+    factorial = factorial*index;
+  }
+  return(subst(f,variable,0)/factorial);
+}
+
+number meanAlpha =
+  (alpha1+alpha2+alpha3+alpha4+alpha5+alpha6)/6;
+poly centeredFermigier =
+  (X-(alpha1-meanAlpha))*(X-(alpha2-meanAlpha))
+  *(X-(alpha3-meanAlpha))*(X-(alpha4-meanAlpha))
+  *(X-(alpha5-meanAlpha))*(X-(alpha6-meanAlpha));
+
+number fermigier4 = leadcoef(coefficientIn(centeredFermigier,X,4));
+number fermigier3 = leadcoef(coefficientIn(centeredFermigier,X,3));
+number fermigier2 = leadcoef(coefficientIn(centeredFermigier,X,2));
+number fermigier1 = leadcoef(coefficientIn(centeredFermigier,X,1));
+number fermigier0 = leadcoef(coefficientIn(centeredFermigier,X,0));
+
+poly numerator4Source = numerator(fermigier4);
+poly numerator3Source = numerator(fermigier3);
+poly numerator2Source = numerator(fermigier2);
+poly numerator1Source = numerator(fermigier1);
+poly numerator0Source = numerator(fermigier0);
+poly alpha1Source = numerator(alpha1);
+poly alpha2Source = numerator(alpha2);
+poly alpha3Source = numerator(alpha3);
+poly alpha4Source = numerator(alpha4);
+poly alpha5Source = numerator(alpha5);
+poly alpha6Source = numerator(alpha6);
+def SourceRing = basering;
+
+// The centered target is
+// X^6-11546 X^4+139944 X^3+30087529 X^2
+//     -807896712 X+777680784.
+// The three equations below are invariant under a common affine scale.  They
+// are sufficient here: their only common parameter zeros are base points,
+// and the subsequent local audit excludes the target on every exceptional
+// direction above those base points.
+ring ParameterPlane = 0,(u,v),dp;
+poly K4 = imap(SourceRing,numerator4Source);
+poly K3 = imap(SourceRing,numerator3Source);
+poly K2 = imap(SourceRing,numerator2Source);
+poly K1 = imap(SourceRing,numerator1Source);
+poly K0 = imap(SourceRing,numerator0Source);
+poly A1 = imap(SourceRing,alpha1Source);
+poly A2 = imap(SourceRing,alpha2Source);
+poly A3 = imap(SourceRing,alpha3Source);
+poly A4 = imap(SourceRing,alpha4Source);
+poly A5 = imap(SourceRing,alpha5Source);
+poly A6 = imap(SourceRing,alpha6Source);
+poly E2 = (-11546)^2*K2-30087529*K4^2;
+poly E3 = (-11546)^3*K3^2-139944^2*K4^3;
+poly E0 = (-11546)^3*K0-777680784*K4^3;
+
+list E2Factorization = factorize(E2,1);
+ideal E2Factors = E2Factorization[1];
+"FERMIGIER_COMPONENT_AUDIT_02393128133175_V2";
+"centered_target_coefficients",-11546,139944,30087529,-807896712,777680784;
+"weighted_equation_degrees",deg(E2),deg(E3),deg(E0);
+"weighted_equation_sizes",size(E2),size(E3),size(E0);
+if (size(E2Factors) != 2)
+{
+  "ERROR: the first weighted equation no longer has two irreducible factors";
+  exit(2);
+}
+poly F1=E2Factors[1];
+poly F2=E2Factors[2];
+poly resultant13F1=resultant(F1,E3,v);
+poly resultant10F1=resultant(F1,E0,v);
+poly resultant13F2=resultant(F2,E3,v);
+poly resultant10F2=resultant(F2,E0,v);
+poly commonF1=gcd(resultant13F1,resultant10F1);
+poly commonF2=gcd(resultant13F2,resultant10F2);
+poly expectedCommonU=u^24*(u-1)^24*(u^2+u+1)^48;
+poly commonQuotient1=commonF1/expectedCommonU;
+poly commonQuotient2=commonF2/expectedCommonU;
+if (commonF1-commonQuotient1*expectedCommonU != 0
+    || commonF2-commonQuotient2*expectedCommonU != 0
+    || deg(commonQuotient1) != 0 || deg(commonQuotient2) != 0)
+{
+  "ERROR: the direct-image resultant gcd changed";
+  exit(2);
+}
+
+// For u=0 and u=1, every common v-root is v=0 or v=1 and K4
+// vanishes there.  We perform the check separately on both E2 factors.
+proc commonVAt(number uValue, poly branch)
+{
+  poly branchAt=subst(branch,u,uValue);
+  poly E3At=subst(E3,u,uValue);
+  poly E0At=subst(E0,u,uValue);
+  return(gcd(gcd(branchAt,E3At),E0At));
+}
+poly commonF1U0=commonVAt(0,F1);
+poly commonF2U0=commonVAt(0,F2);
+poly commonF1U1=commonVAt(1,F1);
+poly commonF2U1=commonVAt(1,F2);
+poly expectedRationalV=v^2*(v-1)^2;
+poly rationalQuotient10=commonF1U0/expectedRationalV;
+poly rationalQuotient20=commonF2U0/expectedRationalV;
+poly rationalQuotient11=commonF1U1/expectedRationalV;
+poly rationalQuotient21=commonF2U1/expectedRationalV;
+if (commonF1U0-rationalQuotient10*expectedRationalV != 0
+    || commonF2U0-rationalQuotient20*expectedRationalV != 0
+    || commonF1U1-rationalQuotient11*expectedRationalV != 0
+    || commonF2U1-rationalQuotient21*expectedRationalV != 0
+    || deg(rationalQuotient10) != 0
+    || deg(rationalQuotient20) != 0
+    || deg(rationalQuotient11) != 0
+    || deg(rationalQuotient21) != 0)
+{
+  "ERROR: a rational finite base-point fiber changed";
+  exit(2);
+}
+if (subst(subst(K4,u,0),v,0) != 0
+    || subst(subst(K4,u,0),v,1) != 0
+    || subst(subst(K4,u,1),v,0) != 0
+    || subst(subst(K4,u,1),v,1) != 0)
+{
+  "ERROR: a rational common solution is no longer a base point";
+  exit(2);
+}
+
+"direct_resultant_candidate_u_factor";
+factorize(expectedCommonU,1);
+"rational_base_point_common_v_factor",expectedRationalV;
+
+// The remaining candidate has u^2+u+1=0.  Work exactly over that quadratic
+// field.  Its common v-factor again divides K4, so it too is a collapsed
+// root configuration rather than a direct point of the Fermigier image.
+def ParameterRing=basering;
+ring CubeDirect=(0,w),(v),dp;
+minpoly=w^2+w+1;
+map toCube=ParameterRing,w,v;
+poly cubeF1=toCube(F1);
+poly cubeF2=toCube(F2);
+poly cubeE3=toCube(E3);
+poly cubeE0=toCube(E0);
+poly cubeK4=toCube(K4);
+poly cubeCommon1=gcd(gcd(cubeF1,cubeE3),cubeE0);
+poly cubeCommon2=gcd(gcd(cubeF2,cubeE3),cubeE0);
+poly expectedCubeV=(v+w+1)^4;
+poly cubeQuotient1=cubeCommon1/expectedCubeV;
+poly cubeQuotient2=cubeCommon2/expectedCubeV;
+poly cubeK4Quotient=cubeK4/expectedCubeV;
+if (cubeCommon1-cubeQuotient1*expectedCubeV != 0
+    || cubeCommon2-cubeQuotient2*expectedCubeV != 0
+    || deg(cubeQuotient1) != 0 || deg(cubeQuotient2) != 0
+    || cubeK4-cubeK4Quotient*expectedCubeV != 0)
+{
+  "ERROR: the quadratic finite base-point fiber changed";
+  exit(2);
+}
+"quadratic_base_point_common_v_factor",expectedCubeV;
+"direct_nondegenerate_match",0;
+
+// Resolve the four rational finite base points.  The finite tangent chart is
+// (u,v)=(u0+L*e,v0+e); the missing vertical direction is checked separately.
+// Every leading centered sextuple below consists of repeated pairs and is
+// noncollapsed for every L.  It therefore cannot approach the target, whose
+// six roots are distinct, and no further blow-up is needed on these charts.
+ring RationalBoundary=0,(L,e,Z),dp;
+map at00=ParameterRing,L*e,e;
+map at01=ParameterRing,L*e,1+e;
+map at10=ParameterRing,1+L*e,e;
+map at11=ParameterRing,1+L*e,1+e;
+map vertical00=ParameterRing,e,0;
+map vertical01=ParameterRing,e,1;
+map vertical10=ParameterRing,1+e,0;
+map vertical11=ParameterRing,1+e,1;
+
+proc centeredTangent(map parameterMap, int eDegree)
+{
+  poly p1=parameterMap(A1);
+  poly p2=parameterMap(A2);
+  poly p3=parameterMap(A3);
+  poly p4=parameterMap(A4);
+  poly p5=parameterMap(A5);
+  poly p6=parameterMap(A6);
+  poly average=(p1+p2+p3+p4+p5+p6)/6;
+  list answer=coefficientIn(p1-average,e,eDegree),
+    coefficientIn(p2-average,e,eDegree),
+    coefficientIn(p3-average,e,eDegree),
+    coefficientIn(p4-average,e,eDegree),
+    coefficientIn(p5-average,e,eDegree),
+    coefficientIn(p6-average,e,eDegree);
+  return(answer);
+}
+
+list lead00=centeredTangent(at00,1);
+list lead01=centeredTangent(at01,1);
+list lead10=centeredTangent(at10,1);
+list lead11=centeredTangent(at11,1);
+list leadV00=centeredTangent(vertical00,1);
+list leadV01=centeredTangent(vertical01,1);
+list leadV10=centeredTangent(vertical10,1);
+list leadV11=centeredTangent(vertical11,1);
+list expected00=-1,-L,-1,L+1,-L,L+1;
+list expected01=2*L+2,2*L-2,2*L+2,2*L-2,-4*L,-4*L;
+list expected10=-2*L+2,2*L+2,-4,-4,2*L+2,-2*L+2;
+list expected11=-3*L-3,-3*L-3,-3*L+6,-3*L+6,6*L-3,6*L-3;
+list expectedV00=0,-1,0,1,-1,1;
+list expectedV01=2,2,2,2,-4,-4;
+list expectedV10=-2,2,0,0,2,-2;
+list expectedV11=-3,-3,-3,-3,6,6;
+
+proc equalSixLists(list first,list second)
+{
+  int index;
+  for (index=1;index<=6;index=index+1)
+  {
+    if (first[index]-second[index] != 0) { return(0); }
+  }
+  return(1);
+}
+if (!equalSixLists(lead00,expected00)
+    || !equalSixLists(lead01,expected01)
+    || !equalSixLists(lead10,expected10)
+    || !equalSixLists(lead11,expected11)
+    || !equalSixLists(leadV00,expectedV00)
+    || !equalSixLists(leadV01,expectedV01)
+    || !equalSixLists(leadV10,expectedV10)
+    || !equalSixLists(leadV11,expectedV11))
+{
+  "ERROR: a rational base-point tangent expansion changed";
+  exit(2);
+}
+
+// The pair-group differences generate the unit ideal in Q[L], so none of
+// these paired leading sextuples can collapse to a single root and expose a
+// deeper tangent scale.
+if (deg(gcd(expected00[1]-expected00[2],expected00[1]-expected00[4])) != 0
+    || deg(gcd(expected01[1]-expected01[2],expected01[1]-expected01[5])) != 0
+    || deg(gcd(expected10[1]-expected10[2],expected10[1]-expected10[3])) != 0
+    || deg(gcd(expected11[1]-expected11[3],expected11[1]-expected11[5])) != 0)
+{
+  "ERROR: a rational tangent chart unexpectedly collapsed identically";
+  exit(2);
+}
+poly targetCentered =
+  Z^6-11546*Z^4+139944*Z^3+30087529*Z^2
+  -807896712*Z+777680784;
+if (resultant(targetCentered,diff(targetCentered,Z),Z) == 0)
+{
+  "ERROR: the target sextuple is no longer squarefree";
+  exit(2);
+}
+"rational_finite_base_points_resolved",4;
+
+// Resolve the conjugate quadratic base points.  At
+// (u,v)=(w^2,w), w^2+w+1=0, all first-order centered differences vanish on
+// the finite tangent chart (u,v)=(w^2+L*e,w+e), so the first nonzero scale is
+// e^2.  The three exact target-invariant residuals have no common L-root.
+ring CubeBoundary=(0,w),(L,e,Z),dp;
+minpoly=w^2+w+1;
+map cubeTangent=ParameterRing,w^2+L*e,w+e;
+map cubeVertical=ParameterRing,w^2+e,w;
+
+proc cubeCenteredTangent(map parameterMap, int eDegree)
+{
+  poly p1=parameterMap(A1);
+  poly p2=parameterMap(A2);
+  poly p3=parameterMap(A3);
+  poly p4=parameterMap(A4);
+  poly p5=parameterMap(A5);
+  poly p6=parameterMap(A6);
+  poly average=(p1+p2+p3+p4+p5+p6)/6;
+  list answer=coefficientIn(p1-average,e,eDegree),
+    coefficientIn(p2-average,e,eDegree),
+    coefficientIn(p3-average,e,eDegree),
+    coefficientIn(p4-average,e,eDegree),
+    coefficientIn(p5-average,e,eDegree),
+    coefficientIn(p6-average,e,eDegree);
+  return(answer);
+}
+
+proc centeredSix(list rawRoots)
+{
+  poly average=(rawRoots[1]+rawRoots[2]+rawRoots[3]
+    +rawRoots[4]+rawRoots[5]+rawRoots[6])/6;
+  list answer=rawRoots[1]-average,rawRoots[2]-average,
+    rawRoots[3]-average,rawRoots[4]-average,
+    rawRoots[5]-average,rawRoots[6]-average;
+  return(answer);
+}
+
+proc targetResiduals(list centeredRoots)
+{
+  poly rootPolynomial=(Z-centeredRoots[1])*(Z-centeredRoots[2])
+    *(Z-centeredRoots[3])*(Z-centeredRoots[4])
+    *(Z-centeredRoots[5])*(Z-centeredRoots[6]);
+  poly localK4=coefficientIn(rootPolynomial,Z,4);
+  poly localK3=coefficientIn(rootPolynomial,Z,3);
+  poly localK2=coefficientIn(rootPolynomial,Z,2);
+  poly localK0=coefficientIn(rootPolynomial,Z,0);
+  list answer=
+    (-11546)^2*localK2-30087529*localK4^2,
+    (-11546)^3*localK3^2-139944^2*localK4^3,
+    (-11546)^3*localK0-777680784*localK4^3;
+  return(answer);
+}
+
+list cubeFirst=cubeCenteredTangent(cubeTangent,1);
+list cubeSecond=cubeCenteredTangent(cubeTangent,2);
+list zeroSix=0,0,0,0,0,0;
+list cubeRawExpected=
+  -24*w*L+6*L^2-12*L-6,
+  0,
+  -6*w*L-6*w,
+  -6*w*L+6*L^2+6*w-12*L+6,
+  6*w*L^2-18*w*L+12*L^2-6*L-6,
+  -6*w*L^2-18*w*L+6*L^2-18*L;
+list cubeExpected=centeredSix(cubeRawExpected);
+if (!equalSixLists(cubeFirst,zeroSix)
+    || !equalSixLists(cubeSecond,cubeExpected))
+{
+  "ERROR: the quadratic-base tangent expansion changed";
+  exit(2);
+}
+list cubeResiduals=targetResiduals(cubeExpected);
+poly cubeResidualGcd=gcd(gcd(cubeResiduals[1],cubeResiduals[2]),cubeResiduals[3]);
+poly cubeDifferenceGcd=cubeExpected[1]-cubeExpected[2];
+int cubeDifferenceIndex;
+for (cubeDifferenceIndex=3;cubeDifferenceIndex<=6;
+     cubeDifferenceIndex=cubeDifferenceIndex+1)
+{
+  cubeDifferenceGcd=gcd(cubeDifferenceGcd,
+    cubeExpected[cubeDifferenceIndex]-cubeExpected[2]);
+}
+if (deg(cubeResidualGcd) != 0 || deg(cubeDifferenceGcd) != 0)
+{
+  "ERROR: an unresolved finite tangent direction remains above the quadratic base point";
+  exit(2);
+}
+
+list cubeVerticalFirst=cubeCenteredTangent(cubeVertical,1);
+list cubeVerticalLead=cubeCenteredTangent(cubeVertical,2);
+list cubeVerticalRaw=6,0,0,6,6*w+12,6-6*w;
+list cubeVerticalExpected=centeredSix(cubeVerticalRaw);
+if (!equalSixLists(cubeVerticalFirst,zeroSix)
+    || !equalSixLists(cubeVerticalLead,cubeVerticalExpected))
+{
+  "ERROR: the vertical quadratic-base tangent expansion changed";
+  exit(2);
+}
+list cubeVerticalResiduals=targetResiduals(cubeVerticalExpected);
+"quadratic_base_finite_tangent_residual_gcd",cubeResidualGcd;
+"quadratic_base_vertical_residuals",
+  cubeVerticalResiduals[1],cubeVerticalResiduals[2],cubeVerticalResiduals[3];
+
+// Finally compactify the (u,v)-plane.  For a generic point [L:1:0] on the
+// line at infinity, the centered roots have order t^5 under (u,v)=(L*t,t).
+// The target residuals have common factor only at L=0 and L=1.  Together
+// with the missing point L=infinity these are the three charts resolved next.
+ring InfinityBoundary=0,(L,M,t,Z),dp;
+map genericInfinity=ParameterRing,L*t,t;
+map infinity0=ParameterRing,M,t;
+map infinity1=ParameterRing,t+M,t;
+map infinityVertical=ParameterRing,t,M;
+
+proc infinityCentered(map parameterMap, int tDegree)
+{
+  poly p1=parameterMap(A1);
+  poly p2=parameterMap(A2);
+  poly p3=parameterMap(A3);
+  poly p4=parameterMap(A4);
+  poly p5=parameterMap(A5);
+  poly p6=parameterMap(A6);
+  poly average=(p1+p2+p3+p4+p5+p6)/6;
+  list answer=coefficientIn(p1-average,t,tDegree),
+    coefficientIn(p2-average,t,tDegree),
+    coefficientIn(p3-average,t,tDegree),
+    coefficientIn(p4-average,t,tDegree),
+    coefficientIn(p5-average,t,tDegree),
+    coefficientIn(p6-average,t,tDegree);
+  return(answer);
+}
+
+proc infinityResiduals(list centeredRoots)
+{
+  poly rootPolynomial=(Z-centeredRoots[1])*(Z-centeredRoots[2])
+    *(Z-centeredRoots[3])*(Z-centeredRoots[4])
+    *(Z-centeredRoots[5])*(Z-centeredRoots[6]);
+  poly localK4=coefficientIn(rootPolynomial,Z,4);
+  poly localK3=coefficientIn(rootPolynomial,Z,3);
+  poly localK2=coefficientIn(rootPolynomial,Z,2);
+  poly localK0=coefficientIn(rootPolynomial,Z,0);
+  list answer=
+    (-11546)^2*localK2-30087529*localK4^2,
+    (-11546)^3*localK3^2-139944^2*localK4^3,
+    (-11546)^3*localK0-777680784*localK4^3;
+  return(answer);
+}
+
+list infinityLead=infinityCentered(genericInfinity,5);
+list infinityExpected=
+  L^3-2*L^2+L,
+  L^4-2*L^3+L^2,
+  L^4-L^3+L^2-L,
+  -L^4+L^2,
+  -L^4+L^3-L^2+L,
+  L^3-L;
+if (!equalSixLists(infinityLead,infinityExpected))
+{
+  "ERROR: the generic parameter-infinity expansion changed";
+  exit(2);
+}
+list infinityResidualList=infinityResiduals(infinityExpected);
+poly infinityResidualGcd=gcd(
+  gcd(infinityResidualList[1],infinityResidualList[2]),
+  infinityResidualList[3]);
+poly expectedInfinityGcd=L^4*(L-1)^4;
+poly infinityGcdQuotient=infinityResidualGcd/expectedInfinityGcd;
+if (infinityResidualGcd-infinityGcdQuotient*expectedInfinityGcd != 0
+    || deg(infinityGcdQuotient) != 0)
+{
+  "ERROR: the generic parameter-infinity target directions changed";
+  exit(2);
+}
+
+// Blow up [0:1:0], [1:1:0], and [1:0:0].  At the next nonzero scale t^4,
+// every sextuple consists of three repeated pairs.  The three pair values
+// never all coincide, so these charts have no deeper collapsed direction.
+list infinity0Lead=infinityCentered(infinity0,4);
+list infinity1Lead=infinityCentered(infinity1,4);
+list infinityVerticalLead=infinityCentered(infinityVertical,4);
+list infinity0Expected=M+1,-1,-M,-1,M+1,-M;
+list infinity1Expected=-4,-4,2*(M+1),-2*(M-1),-2*(M-1),2*(M+1);
+list infinityVerticalExpected=-1,M+1,M+1,-M,-M,-1;
+if (!equalSixLists(infinity0Lead,infinity0Expected)
+    || !equalSixLists(infinity1Lead,infinity1Expected)
+    || !equalSixLists(infinityVerticalLead,infinityVerticalExpected))
+{
+  "ERROR: a special parameter-infinity expansion changed";
+  exit(2);
+}
+poly infinity0CollapseGcd=gcd(
+  infinity0Expected[1]-infinity0Expected[2],
+  infinity0Expected[1]-infinity0Expected[3]);
+poly infinity1CollapseGcd=gcd(
+  infinity1Expected[1]-infinity1Expected[3],
+  infinity1Expected[1]-infinity1Expected[4]);
+poly infinityVerticalCollapseGcd=gcd(
+  infinityVerticalExpected[1]-infinityVerticalExpected[2],
+  infinityVerticalExpected[1]-infinityVerticalExpected[4]);
+if (deg(infinity0CollapseGcd) != 0
+    || deg(infinity1CollapseGcd) != 0
+    || deg(infinityVerticalCollapseGcd) != 0)
+{
+  "ERROR: a special parameter-infinity chart still requires a deeper blow-up";
+  exit(2);
+}
+
+"generic_infinity_target_direction_gcd",expectedInfinityGcd;
+"resolved_parameter_infinity_charts",3;
+"target_in_fermigier_component_closure",0;
+"CONCLUSION: the six-root point and its affine-section lifts lie on a component distinct from Fermigier's two-parameter component";
+"DONE";

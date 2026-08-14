@@ -1,0 +1,310 @@
+// Independent Singular calibration of the universal affine-section equations
+// at the six-root tuple (0,23,93,128,133,175).
+//
+// We normalize X and T by 23, so the labelled roots become
+//
+//   0, 1, 93/23, 128/23, 133/23, 175/23.
+//
+// The script reconstructs q(X-T)q(X+T), its monic square approximant, and R.
+// It then verifies the Mestre obstruction and the universal D-square lift,
+// derives the open-chart ordinate-eliminated equations from scratch, and
+// computes their exact zero-dimensional fiber in (x0,x1).  Finally it
+// reconstructs and checks a rational cubic ordinate for every fiber point.
+// No specialization, Mordell-Weil, rank, or conductor assertion is made.
+
+option(redSB);
+ring SeedModuli = 0,(T,X,x0,x1),dp;
+
+proc coefficientIn(poly f, poly variable, int exponent)
+{
+  int index;
+  int factorial = 1;
+  for (index=1; index<=exponent; index=index+1)
+  {
+    f = diff(f,variable);
+    factorial = factorial*index;
+  }
+  return(subst(f,variable,0)/factorial);
+}
+
+poly q =
+  X*(X-1)*(X-93/23)*(X-128/23)*(X-133/23)*(X-175/23);
+poly productShifted = subst(q,X,X-T)*subst(q,X,X+T);
+poly g = X^6;
+int lowerDegree;
+int targetDegree;
+poly correction;
+for (lowerDegree=5; lowerDegree>=0; lowerDegree=lowerDegree-1)
+{
+  targetDegree = 6+lowerDegree;
+  correction =
+    (coefficientIn(productShifted,X,targetDegree)
+     -coefficientIn(g*g,X,targetDegree))/2;
+  g = g+correction*X^lowerDegree;
+}
+poly numeratorR = g*g-productShifted;
+poly R = numeratorR/T^2;
+if (numeratorR-T^2*R != 0)
+{
+  "ERROR: the normalized remainder was not divisible by T^2";
+  exit(2);
+}
+
+poly a1 = coefficientIn(q,X,5);
+poly a2 = coefficientIn(q,X,4);
+poly a3 = coefficientIn(q,X,3);
+poly a4 = coefficientIn(q,X,2);
+poly a5 = coefficientIn(q,X,1);
+poly mestreObstruction =
+  a1^5-6*a1^3*a2+7*a1^2*a3+8*a1*a2^2
+  -8*a1*a4-12*a2*a3+24*a5;
+if (mestreObstruction != 0 || coefficientIn(R,X,5) != 0)
+{
+  "ERROR: the normalized root tuple missed the Mestre hypersurface";
+  exit(2);
+}
+
+poly leadingInvariant =
+  5*a1^4-24*a1^2*a2+32*a1*a3+16*a2^2-64*a4;
+number squareRootD = 14400/529;
+if (leadingInvariant-squareRootD^2 != 0)
+{
+  "ERROR: the exact D-square identity failed";
+  exit(2);
+}
+
+poly sectionValue = subst(R,X,x0+x1*T);
+poly f0 = coefficientIn(sectionValue,T,0);
+poly f1 = coefficientIn(sectionValue,T,1);
+poly f2 = coefficientIn(sectionValue,T,2);
+poly f3 = coefficientIn(sectionValue,T,3);
+poly f4 = coefficientIn(sectionValue,T,4);
+poly f5 = coefficientIn(sectionValue,T,5);
+poly f6 = coefficientIn(sectionValue,T,6);
+if (4*f6-(1-x1^2)^2*leadingInvariant != 0)
+{
+  "ERROR: the specialized leading-coefficient identity failed";
+  exit(2);
+}
+
+// Use the rational lift w=sqrt(D).  On x1 != +/-1, the top three square
+// equations recursively determine all four ordinate coefficients.
+poly s = (1-x1^2)*squareRootD/2;
+poly N1 = 4*s^2*f4-f5^2;
+poly N0 = 8*s^4*f3-N1*f5;
+poly residual2 = 64*s^6*f2-N1^2-4*N0*f5;
+poly residual1 = 64*s^8*f1-N0*N1;
+poly residual0 = 256*s^10*f0-N0^2;
+
+poly excluded2 = (x1-1)^4*(x1+1)^4;
+poly excluded1 = (x1-1)^5*(x1+1)^5;
+poly excluded0 = (x1-1)^6*(x1+1)^6;
+poly openResidual2 = residual2/excluded2;
+poly openResidual1 = residual1/excluded1;
+poly openResidual0 = residual0/excluded0;
+if (residual2-excluded2*openResidual2 != 0
+    || residual1-excluded1*openResidual1 != 0
+    || residual0-excluded0*openResidual0 != 0)
+{
+  "ERROR: exact removal of the visible-section factors failed";
+  exit(2);
+}
+
+// Reconstruct a cubic square root at a proposed rational fiber point.  This
+// does not import the previously published ordinate formulas.
+proc verifyRationalLift(number intercept, number slope)
+{
+  poly specializedValue = subst(subst(sectionValue,x0,intercept),x1,slope);
+  poly sf0 = coefficientIn(specializedValue,T,0);
+  poly sf1 = coefficientIn(specializedValue,T,1);
+  poly sf2 = coefficientIn(specializedValue,T,2);
+  poly sf3 = coefficientIn(specializedValue,T,3);
+  poly sf4 = coefficientIn(specializedValue,T,4);
+  poly sf5 = coefficientIn(specializedValue,T,5);
+  poly sf6 = coefficientIn(specializedValue,T,6);
+  number z3 = (1-slope^2)*squareRootD/2;
+  poly z2 = sf5/(2*z3);
+  poly z1 = (sf4-z2^2)/(2*z3);
+  poly z0 = (sf3-2*z2*z1)/(2*z3);
+  poly ordinate = z0+z1*T+z2*T^2+z3*T^3;
+  if (sf6-z3^2 != 0 || specializedValue-ordinate^2 != 0)
+  {
+    "ERROR: a rational cubic lift failed",intercept,slope;
+    exit(2);
+  }
+  return(ordinate);
+}
+
+poly ordinate31 = verifyRationalLift(619/69,31/21);
+poly ordinateMinus31 = verifyRationalLift(619/69,-31/21);
+poly ordinate19 = verifyRationalLift(304/69,19/21);
+poly ordinateMinus19 = verifyRationalLift(304/69,-19/21);
+poly ordinate1 = verifyRationalLift(115/69,1/21);
+poly ordinateMinus1 = verifyRationalLift(115/69,-1/21);
+
+// Compute the exact abscissa fiber in a two-variable lexicographic ring.
+def ConstructionRing = basering;
+ring SectionFiber = 0,(x1,x0),lp;
+poly fiberResidual2 = imap(ConstructionRing,openResidual2);
+poly fiberResidual1 = imap(ConstructionRing,openResidual1);
+poly fiberResidual0 = imap(ConstructionRing,openResidual0);
+ideal fiberBasis =
+  std(ideal(fiberResidual2,fiberResidual1,fiberResidual0));
+
+poly interceptPolynomial =
+  (69*x0-619)*(69*x0-304)*(69*x0-115);
+poly slopeRelation = 9261*x1^2-2760*x0+4579;
+ideal expectedBasis = std(ideal(interceptPolynomial,slopeRelation));
+if (size(reduce(fiberBasis,expectedBasis)) != 0
+    || size(reduce(expectedBasis,fiberBasis)) != 0)
+{
+  "ERROR: the exact affine-section fiber changed";
+  fiberBasis;
+  exit(2);
+}
+if (vdim(fiberBasis) != 6)
+{
+  "ERROR: expected a reduced degree-six affine-section fiber";
+  exit(2);
+}
+
+ideal slopeElimination = eliminate(fiberBasis,x0);
+poly expectedSlopes =
+  (21*x1-31)*(21*x1+31)
+  *(21*x1-19)*(21*x1+19)
+  *(21*x1-1)*(21*x1+1);
+ideal expectedSlopeIdeal = std(ideal(expectedSlopes));
+ideal actualSlopeIdeal = std(slopeElimination);
+if (size(reduce(actualSlopeIdeal,expectedSlopeIdeal)) != 0
+    || size(reduce(expectedSlopeIdeal,actualSlopeIdeal)) != 0)
+{
+  "ERROR: the six rational slope branches changed";
+  exit(2);
+}
+
+"MESTRE_02393128133175_MODULI_FIBER_V1";
+"normalized_moduli_point_c1_c2_c3_c4";
+-23,4489/23,-8810207/12167,277065600/279841;
+"mestre_obstruction",0;
+"D_and_square_root";
+207360000/279841,14400/529;
+"open_fiber_groebner_basis";
+fiberBasis;
+"fiber_degree",vdim(fiberBasis);
+"slope_factorization";
+factorize(slopeElimination[1]);
+"independently_reconstructed_rational_cubic_lifts",6;
+
+// A separate reconstruction of the original eight-equation scheme determines
+// the local geometry before fixing the root-moduli coefficients.  Each of the
+// six rational lifts is a smooth point of the expected local dimension two.
+ring UniversalJacobian = 0,
+  (T,X,z0,z1,z2,z3,x0,x1,c1,c2,c3,c4),dp;
+
+proc universalCoefficientIn(poly f, poly variable, int exponent)
+{
+  int index;
+  int factorial = 1;
+  for (index=1; index<=exponent; index=index+1)
+  {
+    f = diff(f,variable);
+    factorial = factorial*index;
+  }
+  return(subst(f,variable,0)/factorial);
+}
+
+poly universalQ = X*(X-1)*(X^4+c1*X^3+c2*X^2+c3*X+c4);
+poly universalProduct =
+  subst(universalQ,X,X-T)*subst(universalQ,X,X+T);
+poly universalG = X^6;
+int universalLowerDegree;
+int universalTargetDegree;
+poly universalCorrection;
+for (universalLowerDegree=5;
+     universalLowerDegree>=0;
+     universalLowerDegree=universalLowerDegree-1)
+{
+  universalTargetDegree = 6+universalLowerDegree;
+  universalCorrection =
+    (universalCoefficientIn(universalProduct,X,universalTargetDegree)
+     -universalCoefficientIn(universalG*universalG,X,universalTargetDegree))/2;
+  universalG = universalG+universalCorrection*X^universalLowerDegree;
+}
+poly universalR = (universalG*universalG-universalProduct)/T^2;
+ideal universalEquations = universalCoefficientIn(universalR,X,5);
+poly universalSectionDifference =
+  subst(universalR,X,x0+x1*T)
+  -(z0+z1*T+z2*T^2+z3*T^3)^2;
+int universalTDegree;
+for (universalTDegree=0;
+     universalTDegree<=6;
+     universalTDegree=universalTDegree+1)
+{
+  universalEquations[universalTDegree+2] =
+    universalCoefficientIn(universalSectionDifference,T,universalTDegree);
+}
+matrix universalJacobian = jacob(universalEquations);
+
+proc rankAtSeedLift(number zv0, number zv1, number zv2, number zv3, number xv0, number xv1)
+{
+  ideal evaluatedEquations = universalEquations;
+  evaluatedEquations = subst(evaluatedEquations,z0,zv0);
+  evaluatedEquations = subst(evaluatedEquations,z1,zv1);
+  evaluatedEquations = subst(evaluatedEquations,z2,zv2);
+  evaluatedEquations = subst(evaluatedEquations,z3,zv3);
+  evaluatedEquations = subst(evaluatedEquations,x0,xv0);
+  evaluatedEquations = subst(evaluatedEquations,x1,xv1);
+  evaluatedEquations = subst(evaluatedEquations,c1,-23);
+  evaluatedEquations = subst(evaluatedEquations,c2,4489/23);
+  evaluatedEquations = subst(evaluatedEquations,c3,-8810207/12167);
+  evaluatedEquations = subst(evaluatedEquations,c4,277065600/279841);
+  if (size(evaluatedEquations) != 0)
+  {
+    "ERROR: a seed lift failed the original universal equations";
+    exit(2);
+  }
+  matrix evaluatedJacobian = universalJacobian;
+  evaluatedJacobian = subst(evaluatedJacobian,z0,zv0);
+  evaluatedJacobian = subst(evaluatedJacobian,z1,zv1);
+  evaluatedJacobian = subst(evaluatedJacobian,z2,zv2);
+  evaluatedJacobian = subst(evaluatedJacobian,z3,zv3);
+  evaluatedJacobian = subst(evaluatedJacobian,x0,xv0);
+  evaluatedJacobian = subst(evaluatedJacobian,x1,xv1);
+  evaluatedJacobian = subst(evaluatedJacobian,c1,-23);
+  evaluatedJacobian = subst(evaluatedJacobian,c2,4489/23);
+  evaluatedJacobian = subst(evaluatedJacobian,c3,-8810207/12167);
+  evaluatedJacobian = subst(evaluatedJacobian,c4,277065600/279841);
+  return(rank(evaluatedJacobian));
+}
+
+int rank31 = rankAtSeedLift(
+  -9423876000/6436343,-281381600/279841,
+  -2430400/12167,-416000/25921,619/69,31/21);
+int rankMinus31 = rankAtSeedLift(
+  9423876000/6436343,-281381600/279841,
+  2430400/12167,-416000/25921,619/69,-31/21);
+int rank19 = rankAtSeedLift(
+  -849072000/6436343,-905600/279841,
+  -121600/12167,64000/25921,304/69,19/21);
+int rankMinus19 = rankAtSeedLift(
+  849072000/6436343,-905600/279841,
+  121600/12167,64000/25921,304/69,-19/21);
+int rank1 = rankAtSeedLift(
+  4821600/279841,-61234400/279841,
+  1600/529,352000/25921,115/69,1/21);
+int rankMinus1 = rankAtSeedLift(
+  -4821600/279841,-61234400/279841,
+  -1600/529,352000/25921,115/69,-1/21);
+if (rank31 != 8 || rankMinus31 != 8
+    || rank19 != 8 || rankMinus19 != 8
+    || rank1 != 8 || rankMinus1 != 8)
+{
+  "ERROR: a seed lift was not a smooth expected-dimensional point";
+  exit(2);
+}
+"original_eight_equation_jacobian_ranks";
+rank31,rankMinus31,rank19,rankMinus19,rank1,rankMinus1;
+"smooth_local_dimensions";
+10-rank31,10-rankMinus31,10-rank19,10-rankMinus19,
+10-rank1,10-rankMinus1;
+"DONE";
