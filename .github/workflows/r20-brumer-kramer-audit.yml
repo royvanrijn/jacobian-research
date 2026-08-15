@@ -1,0 +1,67 @@
+name: R20 Brumer-Kramer exact audit
+
+on:
+  push:
+    branches:
+      - agent/r20-classgroup-probe
+    paths:
+      - .github/workflows/r20-brumer-kramer-audit.yml
+      - elliptic-curves/cas/audit_r20_brumer_kramer.py
+      - elliptic-curves/tests/test_r20_brumer_kramer.py
+      - elliptic-curves/notes/R20_BRUMER_KRAMER.md
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: r20-brumer-kramer-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: agent/r20-classgroup-probe
+          persist-credentials: true
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version-file: .python-version
+          cache: pip
+      - name: Install pinned dependencies
+        run: python -m pip install --requirement requirements.txt
+      - name: Build and test exact audit
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m py_compile \
+            elliptic-curves/cas/audit_r20_brumer_kramer.py \
+            elliptic-curves/tests/test_r20_brumer_kramer.py
+          PYTHONPATH=elliptic-curves/cas python \
+            elliptic-curves/cas/audit_r20_brumer_kramer.py
+          python -m json.tool \
+            artifacts/generated-results/elliptic_r20_brumer_kramer.json \
+            >/dev/null
+          PYTHONPATH=elliptic-curves/cas python -m unittest \
+            elliptic-curves/tests/test_r20_brumer_kramer.py \
+            elliptic-curves/tests/test_structural_search_groundwork.py
+          PYTHONPATH=elliptic-curves/cas python \
+            elliptic-curves/cas/audit_r20_brumer_kramer.py --check
+          python scripts/check_markdown_links.py
+      - name: Pin generated artifact on the research branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add artifacts/generated-results/elliptic_r20_brumer_kramer.json
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo R20_BRUMER_KRAMER_ARTIFACT_ALREADY_PINNED
+            exit 0
+          fi
+          git config user.name 'OpenAI research audit'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Pin R20 Brumer-Kramer audit artifact'
+          git push origin HEAD:agent/r20-classgroup-probe
