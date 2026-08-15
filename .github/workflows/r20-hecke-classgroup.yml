@@ -1,0 +1,79 @@
+name: R20 Hecke class-group probe
+
+on:
+  push:
+    branches:
+      - agent/r20-classgroup-probe
+    paths:
+      - .github/workflows/r20-hecke-classgroup.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  classgroup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: agent/r20-classgroup-probe
+      - name: Install Julia 1.12.7
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 \
+            https://julialang-s3.julialang.org/bin/linux/x64/1.12/julia-1.12.7-linux-x86_64.tar.gz \
+            --output /tmp/julia.tar.gz
+          sha256sum /tmp/julia.tar.gz
+          tar -xzf /tmp/julia.tar.gz -C /opt
+          echo /opt/julia-1.12.7/bin >> "$GITHUB_PATH"
+      - name: Install Hecke 0.39.22
+        shell: bash
+        run: |
+          set -euo pipefail
+          julia --version
+          julia --project=/tmp/r20-hecke -e \
+            'using Pkg; Pkg.add(PackageSpec(name="Hecke", version="0.39.22")); Pkg.precompile()'
+      - name: Compute R20 cubic class group
+        shell: bash
+        run: |
+          cat > /tmp/r20-classgroup.jl <<'JULIA'
+          using Hecke
+          set_verbose_level(:ClassGroup, 2)
+          Qx, x = polynomial_ring(QQ, "x")
+          f = x^3 - x^2 - ZZ(31661356037666199203225532714011)*x + ZZ(65747207544394807527879739063713393606454431095)
+          K, a = number_field(f, "a")
+          O = maximal_order(K)
+          println("HECKE_VERSION=", pkgversion(Hecke))
+          println("FIELD_POLYNOMIAL=", f)
+          println("FIELD_DISCRIMINANT=", discriminant(O))
+          println("CLASS_GROUP_GRH_BEGIN")
+          flush(stdout)
+          t = time()
+          C, mC = class_group(O; bound = 100000, GRH = true)
+          println("CLASS_GROUP_GRH_SECONDS=", time() - t)
+          println("CLASS_GROUP_GRH=", C)
+          invs = elementary_divisors(C)
+          println("CLASS_GROUP_INVARIANTS=", invs)
+          println("CLASS_GROUP_ORDER=", order(C))
+          println("CLASS_GROUP_2RANK=", count(e -> iszero(mod(e, 2)), invs))
+          flush(stdout)
+          println("CLASS_GROUP_UNCONDITIONAL_BEGIN")
+          flush(stdout)
+          t0 = time()
+          C0, mC0 = class_group(O; redo = true, GRH = false)
+          println("CLASS_GROUP_UNCONDITIONAL_SECONDS=", time() - t0)
+          println("CLASS_GROUP_UNCONDITIONAL=", C0)
+          invs0 = elementary_divisors(C0)
+          println("CLASS_GROUP_UNCONDITIONAL_INVARIANTS=", invs0)
+          println("CLASS_GROUP_UNCONDITIONAL_2RANK=", count(e -> iszero(mod(e, 2)), invs0))
+          JULIA
+          set +e
+          timeout --signal=TERM --kill-after=15s 2500 \
+            julia --project=/tmp/r20-hecke /tmp/r20-classgroup.jl \
+            2>&1 | tee /tmp/r20-hecke.log
+          status=${PIPESTATUS[0]}
+          echo "R20_HECKE_EXIT_STATUS=${status}"
+          exit 0
