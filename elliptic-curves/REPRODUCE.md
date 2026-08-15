@@ -38,6 +38,32 @@ counterexample, the arbitrary six-root constructor, and the Nagao replay and
 search regressions.  Tests requiring PARI/GP are skipped if `gp` is
 unavailable.
 
+## Structural-search groundwork
+
+Regenerate and check the deterministic task manifest for quotient escape,
+relative Selmer, K3 lattice, `V4` cover, twist, isogeny and projective p-adic
+searches:
+
+```sh
+PYTHONPATH=elliptic-curves/cas \
+  .venv/bin/python elliptic-curves/cas/build_structural_search_groundwork.py
+
+PYTHONPATH=elliptic-curves/cas \
+  .venv/bin/python elliptic-curves/cas/build_structural_search_groundwork.py --check
+
+PYTHONPATH=elliptic-curves/cas \
+  .venv/bin/python -m unittest \
+  elliptic-curves/tests/test_finite_quotient_escape.py \
+  elliptic-curves/tests/test_structural_search_groundwork.py
+```
+
+The pinned artifact is
+[`elliptic_structural_search_groundwork.json`](../artifacts/generated-results/elliptic_structural_search_groundwork.json).
+It calibrates the quotient filter on the real rank-20 mod-5 certificate, but
+claims no new rank or Selmer result. The mathematical boundaries and external
+CAS output contracts are in
+[`notes/STRUCTURAL_SEARCH_GROUNDWORK.md`](notes/STRUCTURAL_SEARCH_GROUNDWORK.md).
+
 ## Pinned verified computations
 
 Reproduce the Fermigier family normalization, published minimal model,

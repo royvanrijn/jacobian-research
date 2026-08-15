@@ -70,6 +70,21 @@ theorem.
   evaluated in rational arithmetic rather than trusted from an unchecked
   formula transcription.
 
+- John Cremona, Tom Fisher and Michael Stoll,
+  [*Minimisation and reduction of 2-, 3- and 4-coverings of elliptic
+  curves*](https://arxiv.org/abs/0908.1741), Algebra & Number Theory 4 (2010),
+  763--820. Algorithmic basis for converting residual Selmer classes into
+  smaller explicit covering models before rational-point search.
+- Nils Bruin and Michael Stoll, [*The Mordell--Weil sieve: proving
+  non-existence of rational points on curves*](https://arxiv.org/abs/0906.1934),
+  LMS Journal of Computation and Mathematics 13 (2010), 272--306. Reference
+  for replacing unbounded height searches on higher-genus transport covers by
+  exact local sieving against a known Jacobian subgroup.
+- Noam D. Elkies, [*Three lectures on elliptic surfaces and curves of high
+  rank*](https://arxiv.org/abs/0709.2908), 2007. Reference for the
+  Néron--Severi/Mordell--Weil lattice viewpoint, alternate elliptic fibrations
+  and K3 constructions used in the structural-search queue.
+
 ## Rank records and calibration data
 
 - Andrej Dujella's current [history of elliptic-curve rank
