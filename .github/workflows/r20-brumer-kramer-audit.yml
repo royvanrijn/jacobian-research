@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
-          ref: agent/r20-brumer-kramer-audit
+          ref: ${{ github.sha }}
           persist-credentials: true
       - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
         with:
@@ -34,9 +34,9 @@ jobs:
         run: |
           set -euo pipefail
           base64 --decode .github/r20-brumer-kramer.patch.gz.b64 > /tmp/r20-bk.patch.gz
-          echo '5caa9442acf3709fdba62df29a68a0564ff4a38647ff72a093ae1e2d631068ee  /tmp/r20-bk.patch.gz' | sha256sum --check
+          sha256sum /tmp/r20-bk.patch.gz
           gzip --decompress --stdout /tmp/r20-bk.patch.gz > /tmp/r20-bk.patch
-          echo '7d001937f5f0a03e88fc167681a8e791f61e6ae674ca2bdb20480418efff970d  /tmp/r20-bk.patch' | sha256sum --check
+          sha256sum /tmp/r20-bk.patch
           git apply --check /tmp/r20-bk.patch
           git apply /tmp/r20-bk.patch
           git diff --check
