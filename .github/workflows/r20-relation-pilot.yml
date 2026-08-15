@@ -29,7 +29,7 @@ jobs:
         run: |
           set -euo pipefail
           cat .github/r20relation.tar.gz.b64.* | base64 --decode > /tmp/r20relation.tar.gz
-          echo '2defd800fe91426aa7f77ef273a241592727e5dc3d9d360aa374bf6b1ed6e152  /tmp/r20relation.tar.gz' | sha256sum --check
+          echo 'f8698fe337ba870f2b07423dbd876d39d6b399df2f2a98a52e0a25ff196ca4a4  /tmp/r20relation.tar.gz' | sha256sum --check
           tar -xzf /tmp/r20relation.tar.gz -C .
           git diff --check
       - name: Install exact Python dependencies
