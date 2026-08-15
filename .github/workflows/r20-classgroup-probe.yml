@@ -15,7 +15,7 @@ permissions:
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
@@ -28,7 +28,7 @@ jobs:
         shell: bash
         run: |
           set +e
-          timeout --signal=TERM --kill-after=15s 2100 \
+          timeout --signal=TERM --kill-after=15s 2700 \
             gp -fq -s 1000000000 elliptic-curves/tools/probe_r20_classgroup.gp \
             2>&1 | tee /tmp/r20-classgroup-probe.log
           status=${PIPESTATUS[0]}
