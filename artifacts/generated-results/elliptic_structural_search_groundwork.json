@@ -1,0 +1,511 @@
+{
+  "claim_level": "exact reusable arithmetic and deterministic task manifests only; no new rank, Selmer, Picard, class-group or rational-point theorem",
+  "exact_calibrations": {
+    "K3_lattice_enumerator_fixture": {
+      "fixture_only": true,
+      "gram": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "isotropic_candidates": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "multisection_candidates": [
+        {
+          "arithmetic_genus": 0,
+          "claim_boundary": "a lattice class is only a candidate until effectiveness, nefness and geometric realization are checked",
+          "fiber_degree": 1,
+          "self_intersection": -2,
+          "vector": [
+            -1,
+            1
+          ]
+        },
+        {
+          "arithmetic_genus": 1,
+          "claim_boundary": "a lattice class is only a candidate until effectiveness, nefness and geometric realization are checked",
+          "fiber_degree": 1,
+          "self_intersection": 0,
+          "vector": [
+            0,
+            1
+          ]
+        },
+        {
+          "arithmetic_genus": 2,
+          "claim_boundary": "a lattice class is only a candidate until effectiveness, nefness and geometric realization are checked",
+          "fiber_degree": 1,
+          "self_intersection": 2,
+          "vector": [
+            1,
+            1
+          ]
+        },
+        {
+          "arithmetic_genus": 3,
+          "claim_boundary": "a lattice class is only a candidate until effectiveness, nefness and geometric realization are checked",
+          "fiber_degree": 1,
+          "self_intersection": 4,
+          "vector": [
+            2,
+            1
+          ]
+        },
+        {
+          "arithmetic_genus": 3,
+          "claim_boundary": "a lattice class is only a candidate until effectiveness, nefness and geometric realization are checked",
+          "fiber_degree": 2,
+          "self_intersection": 4,
+          "vector": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    "R20_quotient_escape": {
+      "baseline_rank": 12,
+      "candidate_labels": [
+        "basis-column-13",
+        "basis-column-14",
+        "basis-column-15",
+        "basis-column-16",
+        "basis-column-17",
+        "basis-column-18",
+        "basis-column-19",
+        "basis-column-20"
+      ],
+      "claim_boundary": "escape proves the point image is outside the known subgroup image; non-escape is not a dependence proof",
+      "combined_rank": 20,
+      "independent_escape_basis_labels": [
+        "basis-column-13",
+        "basis-column-14",
+        "basis-column-15",
+        "basis-column-16",
+        "basis-column-17",
+        "basis-column-18",
+        "basis-column-19",
+        "basis-column-20"
+      ],
+      "individually_escaping_labels": [
+        "basis-column-13",
+        "basis-column-14",
+        "basis-column-15",
+        "basis-column-16",
+        "basis-column-17",
+        "basis-column-18",
+        "basis-column-19",
+        "basis-column-20"
+      ],
+      "known_column_count": 12,
+      "marginal_dimension": 8,
+      "modulus": 5,
+      "source_labels": [
+        "R20 pinned cyclic-log certificate at good reduction primes"
+      ]
+    },
+    "R20_two_division_cubic_coefficients_ascending": [
+      14347368867288662451721059640396307206349152509,
+      -17749648240442974566100980457218,
+      5,
+      4
+    ],
+    "V4_pair_cover": {
+      "claim_boundary": "the decomposition organizes downstream Selmer/Chabauty work; it does not determine the rational points",
+      "cover_genus": 9,
+      "first_character": {
+        "branch_count": 6,
+        "genus": 2,
+        "places": [
+          "f1:root:1",
+          "f1:root:2",
+          "f1:root:3",
+          "f1:root:4",
+          "f1:root:5",
+          "f1:root:6"
+        ]
+      },
+      "jacobian_dimension_identity": "dim J(C)=dim J(C1)+dim J(C2)+dim J(C3)",
+      "product_character": {
+        "branch_count": 12,
+        "genus": 5,
+        "places": [
+          "f1:root:1",
+          "f1:root:2",
+          "f1:root:3",
+          "f1:root:4",
+          "f1:root:5",
+          "f1:root:6",
+          "f2:root:1",
+          "f2:root:2",
+          "f2:root:3",
+          "f2:root:4",
+          "f2:root:5",
+          "f2:root:6"
+        ]
+      },
+      "quotient_genera": [
+        2,
+        2,
+        5
+      ],
+      "second_character": {
+        "branch_count": 6,
+        "genus": 2,
+        "places": [
+          "f2:root:1",
+          "f2:root:2",
+          "f2:root:3",
+          "f2:root:4",
+          "f2:root:5",
+          "f2:root:6"
+        ]
+      }
+    },
+    "projective_padic_infinity_fixture": {
+      "ball": {
+        "chart": "infinity",
+        "exponent": 2,
+        "interpretation": "a projective local condition; exact local reduction must still be recomputed after specialization",
+        "linear_form_A_a_plus_B_b": [
+          0,
+          1
+        ],
+        "modulus": 49,
+        "prime": 7,
+        "residue": 0
+      },
+      "matches": true,
+      "mixed_chart_congruence_lattice": {
+        "balls": [
+          {
+            "chart": "infinity",
+            "exponent": 1,
+            "interpretation": "a projective local condition; exact local reduction must still be recomputed after specialization",
+            "linear_form_A_a_plus_B_b": [
+              0,
+              1
+            ],
+            "modulus": 5,
+            "prime": 5,
+            "residue": 0
+          },
+          {
+            "chart": "affine",
+            "exponent": 1,
+            "interpretation": "a projective local condition; exact local reduction must still be recomputed after specialization",
+            "linear_form_A_a_plus_B_b": [
+              1,
+              -3
+            ],
+            "modulus": 7,
+            "prime": 7,
+            "residue": 3
+          }
+        ],
+        "basis": [
+          [
+            7,
+            0
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "claim_boundary": "lattice membership encodes the homogeneous congruences; primitive-vector and chart-unit checks remain separate",
+        "combined_linear_form": [
+          15,
+          11
+        ],
+        "index": 35,
+        "modulus": 35
+      },
+      "mixed_chart_example_point": {
+        "denominator": 5,
+        "numerator": 1
+      },
+      "point": {
+        "denominator": 49,
+        "numerator": 1
+      }
+    },
+    "residual_selmer_schema_fixture": {
+      "claim_boundary": "unexplained Selmer classes can be Mordell--Weil or Sha; a positive residual dimension is not a rank lower bound",
+      "ell": 2,
+      "known_free_rank": 20,
+      "rank_upper_bound": 22,
+      "rational_ell_torsion_dimension": 0,
+      "selmer_dimension": 22,
+      "unexplained_selmer_dimension": 2
+    },
+    "twist_character_fixture": {
+      "base_change_genus": 2,
+      "branch_divisor": {
+        "branch_count": 6,
+        "genus": 2,
+        "places": [
+          "twist:root:1",
+          "twist:root:2",
+          "twist:root:3",
+          "twist:root:4",
+          "twist:root:5",
+          "twist:root:6"
+        ]
+      },
+      "name": "degree-six-test-character",
+      "search_principle": "seek a new non-torsion section on the quadratic twist; division of an old section does not increase rank"
+    }
+  },
+  "integration_rule": "every point-producing lane must run finite-quotient escape before expensive height escalation, while every family-producing lane must run Frobenius/Picard and conductor-geometry filters before large specialization scans",
+  "pinned_inputs": {
+    "artifacts/generated-results/elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json": "88cb75f4a44d9427870b47d952a6812cbc60a9b04887eb2ee6dd0649533471be",
+    "artifacts/generated-results/elliptic_fermigier_exceptional_transport.json": "a767e849119d4eb974eb8e85536031413c6d52a59151933239fa141235de5777",
+    "artifacts/generated-results/elliptic_fermigier_generic_rank_exact.json": "61bf11ae14db1aedcf7809697c96e78f2c2978c22f4e7b8fd894de74628b3de7"
+  },
+  "priority_order": [
+    "R20-RESIDUAL-2SELMER",
+    "FERMIGIER-NS-LATTICE",
+    "FERMIGIER-V4-PILOT",
+    "TWIST-CHARACTER-ENGINE",
+    "MESTRE-MODULI-COMPONENTS",
+    "ISOGENY-HOPPING",
+    "PROJECTIVE-PADIC-INFINITY"
+  ],
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/build_structural_search_groundwork.py",
+  "result_sha256": "4aeada4776a6da36837cf0af284ec001238a1b475a6d1bbfc2d84b54ec511002",
+  "schema_version": 1,
+  "status": "groundwork implemented; structural computations pending",
+  "tasks": [
+    {
+      "claim_boundary": "a residual Selmer class may lie in Sha; only a rational point on a residual cover creates a new Mordell--Weil direction",
+      "engine_options": [
+        "Magma",
+        "SageMath",
+        "PARI/GP plus class-group tooling"
+      ],
+      "exact_inputs": {
+        "candidate": "fermigier-mestre-v1:u=28917/20",
+        "known_basis_sha256": "7d78290e8be8ed6b9e69c6f2a97964f4ccc649ee88f69953dd915535c4403d92",
+        "known_rank_lower_bound": 20,
+        "minimal_model": [
+          "1",
+          "1",
+          "1",
+          "-4437412060110743641525245114305",
+          "3586842216822165612930264910099076801587288127"
+        ],
+        "two_division_cubic_coefficients_ascending": [
+          14347368867288662451721059640396307206349152509,
+          -17749648240442974566100980457218,
+          5,
+          4
+        ]
+      },
+      "lane": "residual Selmer and cubic class group",
+      "required_outputs": [
+        "2-Selmer dimension and rational 2-torsion dimension",
+        "2-division cubic field and class-group 2-primary data",
+        "Kummer images of all twenty pinned generators",
+        "explicit residual locally soluble 2-cover representatives",
+        "minimized and reduced cover equations"
+      ],
+      "success_gate": "either certify rank upper bound 20, or emit at least one residual cover class not explained by the pinned subgroup",
+      "task_id": "R20-RESIDUAL-2SELMER"
+    },
+    {
+      "claim_boundary": "lattice enumeration alone does not prove effectiveness, irreducibility or existence of a rational curve",
+      "engine_options": [
+        "SageMath",
+        "Magma",
+        "PARI/GP for auxiliary forms"
+      ],
+      "exact_inputs": {
+        "family": "fermigier-mestre-v1",
+        "generic_rank_artifact": "artifacts/generated-results/elliptic_fermigier_generic_rank_exact.json",
+        "initial_fiber_degrees": [
+          2,
+          3,
+          4
+        ],
+        "initial_self_intersections": [
+          -2,
+          0,
+          2,
+          4,
+          6
+        ],
+        "known_MW_rank": 12,
+        "known_arithmetic_NS_rank": 17,
+        "trivial_lattice_rank": 5
+      },
+      "lane": "Neron--Severi and alternate K3 fibrations",
+      "required_outputs": [
+        "saturated Gram matrix for the known NS sublattice",
+        "discriminant form and possible finite-index overlattices",
+        "bounded primitive divisor classes by fiber degree and square",
+        "effectiveness/nefness checks for retained multisections",
+        "primitive isotropic classes defining alternate elliptic fibrations"
+      ],
+      "success_gate": "produce a geometrically realized low-genus multisection or an alternate fibration in which it becomes a section",
+      "task_id": "FERMIGIER-NS-LATTICE"
+    },
+    {
+      "claim_boundary": "the V4 isogeny decomposition reduces the problem but is not a rational-point theorem",
+      "engine_options": [
+        "Magma",
+        "SageMath"
+      ],
+      "exact_inputs": {
+        "calibration_cover_genus": 9,
+        "calibration_quotient_genera": [
+          2,
+          2,
+          5
+        ],
+        "known_pair_cover_count": 3160,
+        "transport_artifact": "artifacts/generated-results/elliptic_fermigier_exceptional_transport.json"
+      },
+      "lane": "V4 pair-cover Jacobian decomposition",
+      "required_outputs": [
+        "one pinned pair cover with exact quotient equations",
+        "Jacobian models for both genus-2 quotients and the genus-5 quotient",
+        "Selmer/rank bounds for quotient Jacobians",
+        "known-anchor divisor classes in each Jacobian",
+        "Mordell--Weil sieve or Chabauty plan with explicit local data"
+      ],
+      "success_gate": "determine all rational points on one pair cover, or find a third rational point beyond the prescribed anchors",
+      "task_id": "FERMIGIER-V4-PILOT"
+    },
+    {
+      "claim_boundary": "making an old section divisible is saturation, not rank gain",
+      "engine_options": [
+        "Singular",
+        "SageMath",
+        "Magma"
+      ],
+      "exact_inputs": {
+        "initial_base_change_genus_cap": 3,
+        "initial_branch_count_cap": 8,
+        "starting_families": [
+          "fermigier-mestre-v1",
+          "mestre-(0,23,93,128,133,175)",
+          "mestre-(0,25,95,143,168,205)"
+        ]
+      },
+      "lane": "quadratic anti-invariant rank gain",
+      "required_outputs": [
+        "normalized squareclass d(T) with full branch divisor",
+        "twisted surface model and singular-fiber inventory",
+        "Frobenius/Picard upper filter",
+        "exact section identity on E^(d) when found",
+        "specialization independence test against the old subgroup"
+      ],
+      "success_gate": "certify a non-torsion twist section whose specialization escapes the old Mordell--Weil image",
+      "task_id": "TWIST-CHARACTER-ENGINE"
+    },
+    {
+      "claim_boundary": "a finite-field component is a search lead until lifted and verified over Q",
+      "engine_options": [
+        "Singular",
+        "Macaulay2",
+        "SageMath"
+      ],
+      "exact_inputs": {
+        "constraints": [
+          "Mestre quartic obstruction",
+          "one or more affine companion-section equations",
+          "split-infinity squareclass condition",
+          "bounded discriminant-frontier complexity"
+        ],
+        "finite_field_primes": [
+          101,
+          103,
+          107
+        ]
+      },
+      "lane": "algebraic family design in root moduli",
+      "required_outputs": [
+        "primary decompositions modulo several good primes",
+        "component dimensions/degrees and singular loci",
+        "characteristic-zero lifted candidate components",
+        "rational parametrizations or low-genus component models",
+        "deduplication modulo affine root normalization and reflection"
+      ],
+      "success_gate": "produce a positive-dimensional component with provable extra sections and better conductor geometry than current templates",
+      "task_id": "MESTRE-MODULI-COMPONENTS"
+    },
+    {
+      "claim_boundary": "rank and conductor are isogeny invariants; easier coordinates do not themselves change either",
+      "engine_options": [
+        "PARI/GP",
+        "SageMath",
+        "Magma"
+      ],
+      "exact_inputs": {
+        "candidate_ids": [
+          "fermigier-mestre-v1:u=28917/20",
+          "nagao-section7:T=5081/47",
+          "mestre-dsquare-four:u=197"
+        ]
+      },
+      "lane": "isogeny-class point and descent transfer",
+      "required_outputs": [
+        "complete Q-rational isogeny graph",
+        "explicit maps in both directions",
+        "minimal models and exact conductors for every vertex",
+        "point-search and descent complexity metrics per vertex",
+        "transported relations for every newly found point"
+      ],
+      "success_gate": "find a generator or complete a descent on an isogenous model that was inaccessible on the original model",
+      "task_id": "ISOGENY-HOPPING"
+    },
+    {
+      "claim_boundary": "a raw valuation at infinity is not conductor data until the specialized global model is minimized",
+      "engine_options": [
+        "exact Python local tables",
+        "PARI/GP verification"
+      ],
+      "exact_inputs": {
+        "charts": [
+          "affine T",
+          "infinity S=1/T"
+        ],
+        "families": [
+          "fermigier-mestre-v1"
+        ],
+        "initial_primes": [
+          5,
+          7,
+          11,
+          13,
+          17,
+          19
+        ],
+        "known_infinity_fiber": "split I4 for Fermigier"
+      },
+      "lane": "local conductor shaping on P1(Q_p)",
+      "required_outputs": [
+        "compressed p-adic balls in both projective charts",
+        "minimal-model scaling and Kodaira type on each ball",
+        "homogeneous CRT/lattice reconstruction constraints",
+        "exact conductor replay after specialization"
+      ],
+      "success_gate": "identify denominator-divisible residue balls with favorable discriminant valuation per conductor cost",
+      "task_id": "PROJECTIVE-PADIC-INFINITY"
+    }
+  ]
+}

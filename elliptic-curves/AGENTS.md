@@ -38,6 +38,23 @@ This directory is a separate research programme on elliptic curves over
   infer anything about conductor.  Treat 2 and 3 separately from clean
   semistable primes.
 
+## Structural-search discipline
+
+- Once a certified subgroup is available, score newly found points by exact
+  finite-quotient escape before spending more search height. Escape is strong
+  positive evidence; non-escape at a finite set of quotients is not a
+  dependence proof.
+- A residual Selmer class can represent a new Mordell--Weil direction or a
+  Tate--Shafarevich class. Do not promote Selmer dimension to rank.
+- Néron--Severi vector enumeration produces divisor-class candidates only.
+  Effectiveness, nefness, irreducibility and field of definition remain
+  separate gates.
+- Search local conditions on both charts of `P^1(Q_p)`. A homogeneous
+  congruence near infinity still needs chart-unit checks and global
+  minimalization after specialization.
+- Every external CAS task must pin exact inputs, required outputs, resource
+  limits and the interpretation of timeout/failure.
+
 ## Candidate promotion gate
 
 A target candidate is not promoted until a replay checks nonsingularity, a

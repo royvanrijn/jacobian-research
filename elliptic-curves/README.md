@@ -717,51 +717,69 @@ Generated runs belong in `../artifacts/generated-results/`.  Do not silently
 replace a pinned run: record the full command, parameters, software versions,
 and changed hash.
 
+## Structural-search groundwork
+
+The next search layer is now implemented as reusable exact infrastructure, not
+just a list of suggestions. See
+[`notes/STRUCTURAL_SEARCH_GROUNDWORK.md`](notes/STRUCTURAL_SEARCH_GROUNDWORK.md)
+and the pinned
+[`elliptic_structural_search_groundwork.json`](../artifacts/generated-results/elliptic_structural_search_groundwork.json).
+
+The new layer provides:
+
+- finite-quotient **escape scoring** over arbitrary prime moduli, so a point
+  that adds a certified direction is promoted before another dependent point;
+- the exact generalized-Weierstrass 2-division cubic and residual-Selmer
+  dimension bookkeeping for a relative rank-20 descent;
+- bounded integral Néron--Severi lattice enumeration for low-degree K3
+  multisections and alternate isotropic fibrations;
+- exact branch/genus bookkeeping for the genus-9 Fermigier `V4` pair covers,
+  exposing their genus-`2,2,5` quotient-Jacobian work queue;
+- quadratic-twist character and projective `p`-adic chart primitives, including
+  exact mixed affine/infinity congruence lattices; and
+- strict CAS task schemas for Selmer/class groups, moduli components, isogeny
+  hopping and Frobenius/Picard filters.
+
+The real rank-20 mod-5 certificate is the first quotient calibration: its
+20-column matrix has rank 12 on the first twelve columns and all eight
+remaining columns individually escape that prefix image. This is an exact
+filter calibration, not a new rank result.
+
 ## Near-term research queue
 
 These are **open problems**, in descending order of leverage:
 
-1. Search for *preservation mechanisms* near the exact rank-20 section-7
-   frontier, rather than deepening that fixed fiber.  Its complete mod-2-cover
-   tranche plateaued and its explicit-formula calculation is conditionally
-   closed at rank 20; a successful lane must transport several exceptional
-   directions to a new specialization at once.
-2. Preserve and deliberately amplify the four extra directions in the new
-   `(0,25,95,143,168,205)` rank-at-least-17 fiber, while comparing against the
-   degree-40 `(0,23,93,128,133,175)` family.  The next family-design score must
-   use certified extra-point yield and conductor growth, not visible-point
-   count or radical smoothness alone.
-3. Revisit Fermigier only with auxiliary constructions beyond the now-complete
-   weight-one/two/three record-direction tranches.  The global 60.8-million
-   box and all 6,160 weight-three directions are closed within their stated
-   bounds, so another score-only or shallow-height extension has low leverage.
-1. Generalize Fermigier exceptional-direction transport beyond the now-closed
-   affine, quadratic, Möbius, and direct pair-product ansatzes.  The arithmetic
-   generic rank is exactly 12, so a successful base change must genuinely
-   preserve exceptional quotient classes; current priorities are other
-   higher-support representatives of those classes and rational points on the
-   nonlinear discriminant or genus-9 cover curves beyond the completed height
-   1,024 and 200,000 boxes respectively.
-2. Generalize the new root-tuple census using certified specialization rank,
-   not visible-point count or radical smoothness, as the family objective.  The
-   maximum-root-100 search found very small conductors and an exact rank-13
-   fiber, but the two broad rational scans did not approach rank 21.
-3. Revisit the rank-20 section-7 frontier only through a mechanism that
-   transports several exceptional directions at once.  Its complete
-   mod-2-cover tranche plateaued and its explicit-formula calculation is
-   conditionally closed at rank 20, so another fixed-fiber depth extension has
-   low leverage.
-4. Treat rank 30 as structurally blocked until a new cover model, a tractable
-   Selmer computation, or the unpublished rank-17 K3 fibration becomes
-   available.  Direct and alternate-cover charts plus 55.27 billion disjoint
-   denominator-normalized abscissas found no thirtieth point.
-5. Revisit statistical rare-event scoring only after the certified positive
-   label set grows.  The current leave-one-positive-out model failed its
-   predeclared calibration gate, so using it for a broad scan would be
-   selection leakage rather than evidence.
-6. Keep immediate finite-reduction certification as the promotion gate for
-   every numerical rank signal, and compare families by certified extra-point
-   yield per unit of logarithmic conductor growth.
+1. Run a **relative 2-Selmer/cubic-class-group computation** on the canonical
+   rank-20 Fermigier--Mestre fiber. Quotient the Selmer data by the twenty
+   pinned Kummer images and minimize only the residual covers. This can either
+   close the fixed fiber at rank 20 or expose the precise classes in which a
+   twenty-first generator could live.
+2. Export and saturate the known rank-17 Néron--Severi sublattice of the
+   Fermigier K3, then enumerate and geometrically realize low-degree, low-genus
+   multisections and alternate elliptic fibrations. Do not restrict the search
+   to simple rational formulas for `x(T)`.
+3. Choose one of the 3,160 exact Fermigier `V4` pair covers and replace another
+   projective-height extension by quotient-Jacobian arithmetic: the two
+   genus-2 factors and genus-5 product quotient, followed by Selmer, Chabauty
+   or a Mordell--Weil sieve.
+4. Turn quadratic base changes into a **twist-section engine**. Search
+   low-branch squareclasses `d(T)`, reject twists by an early Picard/Frobenius
+   bound, and require a specialization that escapes the old subgroup. Making
+   an old section divisible is saturation, not rank gain.
+5. Replace larger integer root-tuple boxes by algebraic component searches in
+   Mestre moduli: combine the quartic obstruction, companion-section and
+   split-infinity equations, decompose over several finite fields, then lift
+   and parameterize surviving components over `Q`.
+6. Run complete rational isogeny graphs for every rank-18/19/20 finalist and
+   move point/descent work to the easiest model. Rank and conductor remain
+   invariant, but cover and coordinate complexity need not.
+7. Extend local-condition discovery from affine `T` to all of
+   `P^1(Q_p)`, especially denominator-divisible neighborhoods of multiplicative
+   infinity fibers. Re-minimize every resulting specialization.
+8. Keep quotient escape and finite-reduction certification in the inner loop.
+   Point count, score and numerical height rank remain secondary filters;
+   statistical rare-event models stay gated until the certified positive label
+   set grows.
 
 ## Complementary certified pipeline
 
