@@ -1,0 +1,252 @@
+{
+  "brumer_kramer": {
+    "additive_data": [
+      {
+        "conductor_exponent": 2,
+        "contribution_np_minus_one": 0,
+        "minimal_discriminant_valuation": 4,
+        "number_of_cubic_primes": 1,
+        "prime": 17,
+        "prime_decomposition": [
+          {
+            "alpha": "[1627979292600796, 557769159835139, 3]/118810590080000",
+            "prime": 17,
+            "ramification_index": 3,
+            "residue_degree": 1
+          }
+        ]
+      }
+    ],
+    "additive_primes": [
+      17
+    ],
+    "additive_term": 0,
+    "class_group_two_rank_lower_bound": 13,
+    "conclusion": "dim_F2 Cl(K)[2] >= 13 unconditionally",
+    "hypothesis_rational_two_torsion_trivial": true,
+    "inequality": "dim Sel_2(E/Q) <= dim Cl(K)[2] + u(E) + n(E)",
+    "lower_chain": "20 <= rank(E(Q)) <= dim Sel_2(E/Q) <= dim Cl(K)[2] + 2 + 5",
+    "multiplicative_primes": [
+      2,
+      3,
+      5,
+      7,
+      13,
+      31,
+      79,
+      1049,
+      71889448247,
+      40200713707633,
+      491007790268548705232623905732119
+    ],
+    "n_term": 5,
+    "phi_m_count": 5,
+    "phi_m_even_discriminant_valuation": [
+      3,
+      7,
+      13,
+      31,
+      79
+    ],
+    "primary_source": "https://arxiv.org/abs/1606.07178",
+    "u_term": 2
+  },
+  "claim_level": "unconditional exact lower bound on the 2-rank of the ideal class group of the R20 2-division cubic field; no class-group upper bound and no new elliptic-curve rank claim",
+  "next_gate": {
+    "conditional_closure_condition": "a GRH-conditional class-group upper bound 13 would close the fixed fibre subject to that GRH assumption",
+    "exact_closure_condition": "an unconditional upper certificate dim_F2 Cl(K)[2] <= 13 would force dim Sel_2(E/Q)=rank(E(Q))=20 and close this fixed fibre",
+    "residual_cover_condition": "if the class-group 2-rank exceeds 13, compute the relative 2-Selmer quotient and explicit covers not explained by the twenty pinned generators",
+    "target_class_group_two_rank": 13
+  },
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/audit_r20_brumer_kramer.py",
+  "result_sha256": "d2eb50cbdabbc1f9b77fbbe72a79ea432114319f71745bfb34a311d21a098554",
+  "schema_version": 1,
+  "software": {
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "source": {
+    "candidate": "fermigier-mestre-v1:u=28917/20",
+    "conductor": "2876153493562761211278364526603564191699143885403233935132057708367930",
+    "minimal_discriminant": "34158080673335280296970759332689207611899474944643988972429089096818399452131514624000000000",
+    "minimal_model": [
+      1,
+      1,
+      1,
+      -4437412060110743641525245114305,
+      3586842216822165612930264910099076801587288127
+    ],
+    "path": "artifacts/generated-results/elliptic-curves/fermigier_rank20_near_miss_v1.json",
+    "rank_lower_bound": 20,
+    "sha256": "8416e835887236e9e4eafcb01384a710ce4f1be0628701a97f4a7d7a07fe63b1"
+  },
+  "two_division_field": {
+    "coordinate_change": "z=4*x, where x is a nonzero 2-torsion abscissa",
+    "field_discriminant": "17207612547621358265560224336784329653572551167050221201938192360",
+    "field_discriminant_factorization": [
+      {
+        "exponent": 3,
+        "prime": 2
+      },
+      {
+        "exponent": 1,
+        "prime": 5
+      },
+      {
+        "exponent": 2,
+        "prime": 17
+      },
+      {
+        "exponent": 1,
+        "prime": 1049
+      },
+      {
+        "exponent": 1,
+        "prime": 71889448247
+      },
+      {
+        "exponent": 1,
+        "prime": 40200713707633
+      },
+      {
+        "exponent": 1,
+        "prime": 491007790268548705232623905732119
+      }
+    ],
+    "irreducibility_witness": {
+      "coefficients_descending_mod_prime": [
+        1,
+        5,
+        7,
+        33
+      ],
+      "prime": 37,
+      "proof": "a cubic over a field is irreducible iff it has no root; the listed exhaustive residue test has no root",
+      "root_residues": []
+    },
+    "maximal_order_basis": {
+      "basis_interpretation": "columns are numerator coefficient vectors in the power basis (1,z,z^2), divided by the common denominator",
+      "basis_matrix_columns": [
+        [
+          712863540480000,
+          0,
+          107020933906932
+        ],
+        [
+          0,
+          712863540480000,
+          146319523251713
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "denominator": 712863540480000
+    },
+    "monic_defining_polynomial_coefficients_ascending": [
+      229557901876618599227536954246340915301586440144,
+      -70998592961771898264403921828872,
+      5,
+      1
+    ],
+    "polynomial_discriminant": "8744468652373831756024514389168437148646265585828861176941846808785510259745667743744000000000",
+    "polynomial_discriminant_factorization": [
+      {
+        "exponent": 25,
+        "prime": 2
+      },
+      {
+        "exponent": 2,
+        "prime": 3
+      },
+      {
+        "exponent": 9,
+        "prime": 5
+      },
+      {
+        "exponent": 6,
+        "prime": 7
+      },
+      {
+        "exponent": 2,
+        "prime": 13
+      },
+      {
+        "exponent": 4,
+        "prime": 17
+      },
+      {
+        "exponent": 2,
+        "prime": 31
+      },
+      {
+        "exponent": 2,
+        "prime": 79
+      },
+      {
+        "exponent": 1,
+        "prime": 1049
+      },
+      {
+        "exponent": 1,
+        "prime": 71889448247
+      },
+      {
+        "exponent": 1,
+        "prime": 40200713707633
+      },
+      {
+        "exponent": 1,
+        "prime": 491007790268548705232623905732119
+      }
+    ],
+    "power_order_index": "712863540480000",
+    "power_order_index_factorization": [
+      {
+        "exponent": 11,
+        "prime": 2
+      },
+      {
+        "exponent": 1,
+        "prime": 3
+      },
+      {
+        "exponent": 4,
+        "prime": 5
+      },
+      {
+        "exponent": 3,
+        "prime": 7
+      },
+      {
+        "exponent": 1,
+        "prime": 13
+      },
+      {
+        "exponent": 1,
+        "prime": 17
+      },
+      {
+        "exponent": 1,
+        "prime": 31
+      },
+      {
+        "exponent": 1,
+        "prime": 79
+      }
+    ],
+    "primitive_two_division_cubic_coefficients_ascending": [
+      14347368867288662451721059640396307206349152509,
+      -17749648240442974566100980457218,
+      5,
+      4
+    ],
+    "rational_two_torsion_dimension": 0,
+    "signature": {
+      "complex_place_pairs": 0,
+      "real_places": 3
+    }
+  }
+}
