@@ -1,0 +1,62 @@
+name: R20 Hecke class-group 2-quotient probe
+
+on:
+  push:
+    branches:
+      - agent/r20-classgroup-probe
+    paths:
+      - .github/workflows/r20-hecke-2quotient.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  twoquotient:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: agent/r20-classgroup-probe
+      - name: Install Julia and Hecke
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 \
+            https://julialang-s3.julialang.org/bin/linux/x64/1.12/julia-1.12.7-linux-x86_64.tar.gz \
+            --output /tmp/julia.tar.gz
+          sha256sum /tmp/julia.tar.gz
+          tar -xzf /tmp/julia.tar.gz -C /opt
+          /opt/julia-1.12.7/bin/julia --project=/tmp/r20-hecke -e \
+            'using Pkg; Pkg.add(PackageSpec(name="Hecke", version="0.39.22")); Pkg.precompile()'
+      - name: Compute only Cl(K)/2Cl(K)
+        shell: bash
+        run: |
+          cat > /tmp/r20-2quotient.jl <<'JULIA'
+          using Hecke
+          set_verbose_level(:ClassGroup, 2)
+          Qx, x = polynomial_ring(QQ, "x")
+          f = x^3 - x^2 - ZZ(31661356037666199203225532714011)*x + ZZ(65747207544394807527879739063713393606454431095)
+          K, a = number_field(f, "a")
+          O = maximal_order(K)
+          println("HECKE_VERSION=", pkgversion(Hecke))
+          println("FIELD_DISCRIMINANT=", discriminant(O))
+          println("CLASS_2QUOTIENT_BEGIN")
+          flush(stdout)
+          t = time()
+          C2, mC2 = ray_class_group(ideal(O, 1), n_quo = 2)
+          println("CLASS_2QUOTIENT_SECONDS=", time() - t)
+          println("CLASS_2QUOTIENT=", C2)
+          invs = elementary_divisors(C2)
+          println("CLASS_2QUOTIENT_INVARIANTS=", invs)
+          println("CLASS_2QUOTIENT_ORDER=", order(C2))
+          println("CLASS_2QUOTIENT_DIMENSION=", length(invs))
+          JULIA
+          set +e
+          timeout --signal=TERM --kill-after=15s 2500 \
+            /opt/julia-1.12.7/bin/julia --project=/tmp/r20-hecke /tmp/r20-2quotient.jl \
+            2>&1 | tee /tmp/r20-hecke-2quotient.log
+          status=${PIPESTATUS[0]}
+          echo "R20_HECKE_2QUOTIENT_EXIT_STATUS=${status}"
+          exit 0
