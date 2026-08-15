@@ -1,0 +1,111 @@
+name: R20 PARI 2.17 class-group strategies
+
+on:
+  push:
+    branches:
+      - agent/r20-pari217-classgroup
+    paths:
+      - .github/workflows/r20-pari217-classgroup.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  class-group:
+    name: ${{ matrix.name }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: default
+            bnf_call: bnfinit(nf,0)
+          - name: threaded-auto
+            bnf_call: bnfinit(nf,0,[0,0,8,20000,0,4])
+          - name: threaded-idex4
+            bnf_call: bnfinit(nf,0,[0,0,8,50000,4,4])
+          - name: threaded-idex8
+            bnf_call: bnfinit(nf,0,[0,0,8,50000,8,4])
+          - name: threaded-no-small-relations
+            bnf_call: bnfinit(nf,0,[0,0,-1,20000,4,4])
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: agent/r20-pari217-classgroup
+      - name: Build pinned PARI 2.17.4 with pthread support
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends \
+            build-essential curl libgmp-dev libreadline-dev
+          curl --fail --location --retry 3 \
+            https://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.17.4.tar.gz \
+            --output /tmp/pari-2.17.4.tar.gz
+          echo '02651d99c391007d384b3fadbc20abc6916b77036f9e496c99e9ce8688ca4b53  /tmp/pari-2.17.4.tar.gz' \
+            | sha256sum --check
+          tar --extract --gzip --file /tmp/pari-2.17.4.tar.gz --directory /tmp
+          cd /tmp/pari-2.17.4
+          ./Configure --prefix=/tmp/pari-install --mt=pthread
+          make --jobs=4 gp
+          make install
+          /tmp/pari-install/bin/gp -fq <<'GP'
+          print("BUILT_PARI_VERSION=",version());
+          print("BUILT_PARI_THREADS=",default(nbthreads));
+          quit;
+          GP
+      - name: Run class-group strategy
+        shell: bash
+        env:
+          STRATEGY_NAME: ${{ matrix.name }}
+          BNF_CALL: ${{ matrix.bnf_call }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+
+          strategy = os.environ["STRATEGY_NAME"]
+          bnf_call = os.environ["BNF_CALL"]
+          template = r'''default(parisizemax,5500000000);
+          default(nbthreads,4);
+          setdebug("bnf",1);
+          x='x;
+          f0=x^3+5*x^2-70998592961771898264403921828872*x+229557901876618599227536954246340915301586440144;
+          fred=polredabs(f0);
+          nf=nfinit(fred);
+          print("R20_PARI217_BEGIN");
+          print("STRATEGY=__STRATEGY__");
+          print("PARI_VERSION=",version());
+          print("NBTHREADS=",default(nbthreads));
+          print("FIELD_POLYNOMIAL=",nf.pol);
+          print("FIELD_DISCRIMINANT=",nf.disc);
+          print("BNF_CALL=__BNF_CALL__");
+          print("BNFINIT_BEGIN");
+          gettime();
+          bnf=__BNF_CALL__;
+          print("BNFINIT_MS=",gettime());
+          print("CLASS_NUMBER=",bnf.no);
+          print("CLASS_GROUP_CYCLIC_FACTORS=",bnf.cyc);
+          class2=sum(i=1,#bnf.cyc,if(bnf.cyc[i]%2==0,1,0));
+          print("CLASS_GROUP_2RANK=",class2);
+          print("BNFCERTIFY_QUOTIENT_BEGIN");
+          gettime();
+          certq=bnfcertify(bnf,1);
+          print("BNFCERTIFY_QUOTIENT_MS=",gettime());
+          print("BNFCERTIFY_QUOTIENT=",certq);
+          print("R20_PARI217_END");
+          quit;
+          '''
+          text = template.replace("__STRATEGY__", strategy).replace("__BNF_CALL__", bnf_call)
+          Path("/tmp/r20-pari217.gp").write_text(text)
+          PY
+          set +e
+          timeout --signal=TERM --kill-after=15s 2400 \
+            /tmp/pari-install/bin/gp -fq -s 1000000000 /tmp/r20-pari217.gp \
+            2>&1 | tee /tmp/r20-pari217.log
+          status=${PIPESTATUS[0]}
+          echo "R20_PARI217_EXIT_STATUS=${status}"
+          exit 0
