@@ -1,0 +1,55 @@
+name: R20 cubic class-group probe
+
+on:
+  push:
+    branches: [agent/r20-classgroup]
+    paths: [.github/workflows/r20-classgroup-probe.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - name: Install PARI/GP
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends pari-gp
+      - name: Exact local and cubic-field probe
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat >/tmp/r20.gp <<'GP'
+          default(parisizemax,8000000000);
+          default(realprecision,80);
+          E=ellinit([1,1,1,-4437412060110743641525245114305,3586842216822165612930264910099076801587288127]);
+          N=2876153493562761211278364526603564191699143885403233935132057708367930;
+          D=34158080673335280296970759332689207611899474944643988972429089096818399452131514624000000000;
+          P=x^3+5*x^2-70998592961771898264403921828872*x+229557901876618599227536954246340915301586440144;
+          print("PARI_VERSION=",version());
+          print("ELLGLOBALRED=",ellglobalred(E));
+          print("N_FACTOR=",factor(N));
+          print("D_FACTOR=",factor(D));
+          bad=vector(matsize(factor(N))[1],i,factor(N)[i,1]);
+          for(i=1,#bad,print("LOCAL_",bad[i],"=",elllocalred(E,bad[i])));
+          print("P_IRRED=",polisirreducible(P));
+          NF=nfinit(P);
+          print("NF_DISC=",NF.disc);
+          print("NF_SIGNATURE=",NF.sign);
+          print("NF_INDEX=",NF.index);
+          for(i=1,#bad,print("PRIMEDEC_",bad[i],"=",idealprimedec(NF,bad[i])));
+          gettime();
+          B=bnfinit(NF,1);
+          print("BNFINIT_MS=",gettime());
+          print("CLASS_GROUP=",B.clgp);
+          print("CLASS_CYC=",B.cyc);
+          r2=sum(i=1,#B.cyc,B.cyc[i]%2==0);
+          print("CLASS_2RANK=",r2);
+          print("CLASS_NO=",B.no);
+          print("REGULATOR=",B.reg);
+          GP
+          timeout 3600 gp -fq /tmp/r20.gp
