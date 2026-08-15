@@ -1,0 +1,39 @@
+name: R20 mwrank 2-Selmer probe
+
+on:
+  push:
+    branches:
+      - agent/r20-classgroup-probe
+    paths:
+      - .github/workflows/r20-mwrank-selmer.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  selmer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: agent/r20-classgroup-probe
+      - name: Install eclib mwrank
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends eclib-tools
+          mwrank -h | head -80
+      - name: Compute the exact 2-Selmer rank only
+        shell: bash
+        run: |
+          set +e
+          printf '%s\n' \
+            '[1,1,1,-4437412060110743641525245114305,3586842216822165612930264910099076801587288127]' \
+            '[0,0,0,0,0]' > /tmp/r20.curves
+          timeout --signal=TERM --kill-after=15s 2500 \
+            mwrank -s -S 0 -x 22 -q -v 2 -o < /tmp/r20.curves \
+            2>&1 | tee /tmp/r20-mwrank-selmer.log
+          status=${PIPESTATUS[0]}
+          echo "R20_MWRANK_EXIT_STATUS=${status}"
+          exit 0
