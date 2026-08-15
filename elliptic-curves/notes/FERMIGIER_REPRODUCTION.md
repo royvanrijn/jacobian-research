@@ -314,6 +314,42 @@ specializations have different exact \(j\)-invariants.  No intervening change
 of parameter or published erratum was found, so this remains an explicit
 reproduction discrepancy rather than a resolved normalization.
 
+## Constructive rank-gain bridge
+
+A cover that merely makes an existing Mordell--Weil section divisible does
+**not** increase rank. If a new section \(S\) satisfies \([n]S=R\) for an old
+section \(R\), then \(S=R/n\) after tensoring the Mordell--Weil group with
+\(\mathbf Q\); such a cover can improve saturation, but supplies no new
+rational direction.
+
+For a quadratic base change \(K=\mathbf Q(u)(\sqrt{d(u)})\), the useful
+rank-gain test is instead the anti-invariant summand. Over \(\mathbf Q\),
+
+\[
+\operatorname{rank} E(K)=\operatorname{rank} E(\mathbf Q(u))
++\operatorname{rank} E^{(d)}(\mathbf Q(u)),
+\]
+
+where \(E^{(d)}\) is the quadratic twist. Thus a productive low-degree cover
+must create a genuinely new non-torsion point on the twist, not a half of a
+known section. The practical search order is: force low-height squareclass
+conditions to genus zero or one; parameterize/solve them; reject candidates
+whose good specialization lies in the old twelve-dimensional span; then
+certify survivors by exact finite reductions and score conductor geometry
+before expensive point searches.
+
+This matches explicit high-rank constructions based on quadratic sections and
+conic conditions, and the elliptic-surface/K3 strategy of treating the
+Mordell--Weil/Neron--Severi lattice plus good specializations as primary search
+objects. For the present target, conductor should remain part of the search
+objective rather than a final filter.
+
+References: N. D. Elkies, *Three lectures on elliptic surfaces and curves of
+high rank*, arXiv:0709.2908; N. D. Elkies and M. Watkins, *Elliptic curves of
+large rank and small conductor*, arXiv:math/0403374; A. Dujella,
+M. Kazalicki, and J. C. Peral, *Elliptic curves with torsion groups Z/8Z and
+Z/2Z x Z/6Z* (quadratic-section construction in Sec. 1).
+
 ## Search and evidence boundary
 
 `verify_benchmarks.py` checks the invariant bridge, both literal

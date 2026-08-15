@@ -30662,7 +30662,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:8149ce20130b09e34e79b967849476cf63c06cecc7c9a70c5fd0803192bafbce",
+      "artifact_hash": "sha256:49087d4c6243d285771bb4419a92533f94b4eb28edb4af89b8b46849ac7bf7df",
       "software_lock": [
         ".python-version"
       ],
@@ -30736,11 +30736,245 @@
       "priority": "reference"
     },
     {
+      "id": "EC-FG12",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Exact arithmetic generic rank of the Fermigier--Mestre K3 family",
+      "scope": "The canonical Fermigier--Mestre adapter over Q(u) is an elliptic K3 surface with twenty I1 fibers, a split I4 fiber at infinity, and trivial-lattice rank five. Twelve independently certified Q(u)-sections give seventeen Q-defined Neron--Severi classes. Exact good-reduction counts at p=41 are #S(F_41)=2244 and #S(F_41^2)=2856000. After removing the seventeen forced +41 eigenvalues, the residual H^2 factor is (X+41)(X^4+94X^3+4428X^2+158014X+41^4); it is nonzero at X=41 and its normalized quartic has no cyclotomic factor. Smooth proper specialization, the cycle-class eigenvalue condition, and Shioda--Tate therefore prove unconditionally that the arithmetic generic Mordell--Weil rank over Q(u) is exactly twelve. The geometric generic rank over Qbar(u) lies in [12,13]. No Tate-conjecture assumption is used.",
+      "canonical_source": "elliptic-curves/notes/FERMIGIER_REPRODUCTION.md",
+      "dependencies": [
+        "EC-FERM1",
+        "EC-FRANK1",
+        "external: smooth proper specialization injectivity for Neron--Severi groups",
+        "external: cycle classes of base-field divisors under geometric Frobenius",
+        "external: Shioda--Tate formula for elliptic surfaces",
+        "external: Weil bounds and Frobenius reciprocity for K3 surfaces"
+      ],
+      "checker": "elliptic-curves/cas/verify_fermigier_generic_rank_exact.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:74de70ce1c362a8e73bafbded149abad576e363fcbc97b086213bc6d5af719d5",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-FXPT1",
+      "kind": "example",
+      "state": "proved",
+      "title": "Exact exceptional-quotient transport classification at Fermigier's rank-22 and rank-20 anchors",
+      "scope": "Modulo the exact rank-twelve generic subgroup, Fermigier's E22 anchor has ten independent exceptional directions P13 through P22; the apparent extra representative P6 satisfies a pinned exact relation with the generic basis. The low-conductor u=28917/20 anchor has eight independently certified exceptional directions. All 88 cross-anchor affine abscissa interpolants are irreducible genus-two sextics. In each complete quadratic pencil, the branch discriminant is k^16 times an irreducible degree-32 factor, so k=0 is the only rational collision and returns the affine genus-two case. In each complete projective Mobius pencil, the only finite rational discriminant roots are the affine limit and two invalid anchor poles; the d=0 chart is irreducible genus four. All 3160 actual biquadratic fiber products of the 80 independent affine transports have disjoint branch loci, genus-five third quotient, and connected genus nine. Thus these declared finite ansatzes contain no genus-zero or genus-one transport, new section, or target specialization; higher-degree multisections, other quotient representatives, and rational points on the higher-genus curves remain open.",
+      "canonical_source": "elliptic-curves/notes/FERMIGIER_REPRODUCTION.md",
+      "dependencies": [
+        "EC-FG12",
+        "EC-R20",
+        "ECR22",
+        "external: Riemann--Hurwitz for hyperelliptic and biquadratic covers"
+      ],
+      "checker": "elliptic-curves/cas/analyze_fermigier_exceptional_transport.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1b952dc40e085967309e123b2083d77703830cf0e0979d37ca06209781631a48",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "EC-FXPT2",
+      "kind": "example",
+      "state": "proved",
+      "title": "Signed support-two Fermigier exceptional-quotient transport classification",
+      "scope": "The ten-dimensional E22 exceptional quotient and eight-dimensional low-conductor rank-20 exceptional quotient were exhaustively enumerated through every signed vector of support at most two, giving 200 and 128 representatives. All 328 representatives round-trip through exact pointed-quartic and canonical group laws, and finite reduction mod 5 separates each from the rank-twelve generic span. Every one of the 25,600 cross-anchor affine interpolants is an irreducible squarefree sextic and hence has genus two. Thus this complete representative ball contains no genus-zero or genus-one affine transport, new section, or target specialization; higher-support representatives and higher-degree interpolation remain open.",
+      "canonical_source": "elliptic-curves/notes/FERMIGIER_REPRODUCTION.md",
+      "dependencies": [
+        "EC-FG12",
+        "EC-FXPT1",
+        "EC-R20",
+        "ECR22",
+        "external: genus formula for squarefree hyperelliptic covers"
+      ],
+      "checker": "elliptic-curves/cas/classify_fermigier_exceptional_quotient_ball.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b5ed9a18d832289f06cf67c12329e64f82c8618ccdbd220fb10dd48e1d514f9c",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "EC-FXPT3",
+      "kind": "example",
+      "state": "proved",
+      "title": "Exact Fermigier bidegree-(2,1) transport pilot",
+      "scope": "For the independent exceptional pair P13 at E22 and R20E1 at the low-conductor rank-20 anchor, the complete finite-chart bidegree-(2,1) abscissa pencil has generic squareclass genus four. Its branch discriminant factors into one irreducible total-degree-32 component and five rational lines. The two valid degree-drop lines have squarefree degree-eight kernels of genus three; one cancellation line returns the known affine genus-two sextic; and two lines are invalid anchor poles. The nonlinear component generically also has genus three. Thus no rational discriminant component yields genus at most one, a new section, or a target specialization. This result classifies exactly one of 80 independent pairs and does not classify rational special points on the nonlinear component.",
+      "canonical_source": "elliptic-curves/notes/FERMIGIER_REPRODUCTION.md",
+      "dependencies": [
+        "EC-FG12",
+        "EC-FXPT1",
+        "EC-R20",
+        "ECR22",
+        "external: genus formula for squarefree hyperelliptic covers"
+      ],
+      "checker": "elliptic-curves/cas/analyze_fermigier_bidegree21_pilot.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e35f3a78097a2ea9dbc43048d122b306cfcb261c716fed83ad60d734c44a9089",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [
+        "EC-FXPT4"
+      ],
+      "priority": "reference"
+    },
+    {
+      "id": "EC-FXPT4",
+      "kind": "example",
+      "state": "proved",
+      "title": "Exact all-pair Fermigier bidegree-(2,1) transport classification",
+      "scope": "For all 80 independent pairs between the ten-dimensional E22 exceptional quotient and the eight-dimensional low-conductor rank-20 exceptional quotient, every rational discriminant component of the complete finite-chart bidegree-(2,1) abscissa pencil has squareclass genus two or three. All 80 residual total-degree-32 factors are irreducible over Q: 79 have exact irreducibility witnesses modulo 101 and the remaining collision has one modulo 103. Across 400 rational components there is no genus-at-most-one component, new base change, section, specialization, or target result, and no pair is unresolved. Rational points on the irreducible degree-32 curves and their intersections remain open.",
+      "canonical_source": "elliptic-curves/notes/FERMIGIER_REPRODUCTION.md",
+      "dependencies": [
+        "EC-FG12",
+        "EC-FXPT1",
+        "EC-FXPT3",
+        "EC-R20",
+        "ECR22",
+        "external: genus formula for squarefree hyperelliptic covers",
+        "external: good-reduction irreducibility criterion"
+      ],
+      "checker": "elliptic-curves/cas/analyze_fermigier_bidegree21_all80.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:403238fc23d3a793906b37d75ce4d7eace5026e5ab41a632aa06e4e358ce859a",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [
+        "EC-FXPT3"
+      ],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "EC-FXPT5",
+      "kind": "example",
+      "state": "proved",
+      "title": "Bounded genuine Fermigier simultaneous-square pair-cover search",
+      "scope": "All 3160 genuine two-direction fiber products from the 80 independent affine exceptional transports were searched with the two square conditions tested separately over every reduced T=a/b with b>0 and max(|a|,b)<=200000. Exact projective residue filters at 13, 23, 37, 41, and 43 preceded exact checks. Every pair contains only the two prescribed anchor parameters in this box. Two additional parameters occur on one cover each but fail the second square condition. Thus there is no third simultaneous-square parameter, new two-direction specialization, or target in the declared box; this is not a global rational-point theorem on the genus-nine covers.",
+      "canonical_source": "elliptic-curves/notes/FERMIGIER_REPRODUCTION.md",
+      "dependencies": [
+        "EC-FG12",
+        "EC-FXPT1",
+        "EC-FXPT4",
+        "EC-R20",
+        "ECR22"
+      ],
+      "checker": "elliptic-curves/cas/search_fermigier_exceptional_pair_simultaneous_h200000.py",
+      "proof_type": "exact_modular",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:cf1b6740e6127e7cbf92cf49dccd30c71c8ca6113c2d00fa1ec535a4fc0e0f01",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "EC-FXPT6",
+      "kind": "example",
+      "state": "proved",
+      "title": "Bounded rational-point sieve on a Fermigier nonlinear transport component",
+      "scope": "For the irreducible degree-32 discriminant component of the P13 by R20E1 bidegree-(2,1) pencil, every primitive projective point (C:K:D) with D>=0 and max(|C|,|K|,D)<=1024 was subjected to fixed exact residue sieves and exact homogeneous evaluation. Among 2098176 (C,D) pairs, 21819 primitive candidates reached exact evaluation and none lies on the component. The top binary form is irreducible of degree 32, excluding rational points at infinity, and exact restrictions to all five known rational lines have no rational intersection. Thus this component yields no specialized kernel, genus-at-most-one curve, section, specialization, or target in the declared box; the other 79 nonlinear components and larger heights remain open.",
+      "canonical_source": "elliptic-curves/notes/FERMIGIER_REPRODUCTION.md",
+      "dependencies": [
+        "EC-FXPT3",
+        "EC-FXPT4"
+      ],
+      "checker": "elliptic-curves/cas/search_fermigier_bidegree21_nonlinear_points.py",
+      "proof_type": "exact_modular",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1dbe3cb7b95991d671f4df64109012afe36ac568556224298e8d8892941b3044",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
       "id": "EC-R20",
       "kind": "example",
       "state": "proved",
       "title": "Low-conductor rank-at-least-20 Fermigier near miss",
-      "scope": "At adapter parameter u=28917/20, a bounded ratpoints search supplies a rational point cloud from which exact finite-reduction arithmetic selects 20 independent points. PARI/GP gives global minimal model [1,1,1,-4437412060110743641525245114305,3586842216822165612930264910099076801587288127] and exact conductor 2876153493562761211278364526603564191699143885403233935132057708367930, whose natural logarithm is 159.9348252255254533984...<182.72. The stored points and conductor are exact, but the search is bounded: no twenty-first point, saturation, or rank upper bound is proved. This is one point short and is not a target solution.",
+      "scope": "At canonical identity fermigier-mestre-v1:u=28917/20 (whose legacy literal-shift alias is T=28917/10), a bounded ratpoints search supplies a rational point cloud from which exact finite-reduction arithmetic selects 20 independent points. PARI/GP gives global minimal model [1,1,1,-4437412060110743641525245114305,3586842216822165612930264910099076801587288127] and exact conductor 2876153493562761211278364526603564191699143885403233935132057708367930, whose natural logarithm is 159.9348252255254533984...<182.72. The stored points and conductor are exact, but the search is bounded: no twenty-first point, global saturation, or unconditional rank upper bound is proved. This is one point short and is not a target solution.",
       "canonical_source": "elliptic-curves/notes/FERMIGIER_REPRODUCTION.md",
       "dependencies": [
         "EC-FRANK1",
@@ -30752,7 +30986,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:3db4285ed24fe3eb271bb25cc20c83d7d37971d51079b7aba2ae9042e02fc6e3",
+      "artifact_hash": "sha256:ee653adeef24d3050b9dfe87718b4878f6aa1bba51054287095368b32acd60ca",
       "software_lock": [
         ".python-version"
       ],
@@ -30789,6 +31023,71 @@
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "EC-MR13",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "A low-height six-root Mestre family of generic rank at least 13",
+      "scope": "For the six centers (0,23,93,128,133,175), exact square approximation gives a primitive Mestre quartic with fixed square content 2400^2, twelve paired-root sections, and six verified nonvisible linear-companion identities. The leading coefficient is 9*(T^2+14406), so the base change T=(14406-u^2)/(2u) supplies a rational split-infinity section. At u=1, the twelve paired-root images, one chosen companion, and split infinity have stacked good-reduction images of rank thirteen over F_3; reduction at p=7 excludes rational 3-torsion. Infinite descent proves the selected specialized points independent, and specialization therefore proves generic rank at least thirteen over Q(u). The primitive discriminant frontier is irreducible and squarefree of degree 20 in T and degree 40 after base change, compared with degree 398 for the reproduced Kihara rank-at-least-14 family. The degree comparison is conductor geometry, not an exact conductor formula, and neither generic rank equality nor independence of all six companions is claimed.",
+      "canonical_source": "elliptic-curves/notes/MESTRE_RANK13_02393128133175.md",
+      "dependencies": [
+        "external: good-reduction specialization homomorphism for elliptic curves",
+        "external: finite-reduction and infinite-descent independence criterion"
+      ],
+      "checker": "elliptic-curves/cas/verify_mestre_rank13_02393128133175.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:918756aa04d2f6716548ef9228125fbe07a30177cb8b8f161f53796d54701bde",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-RANK-CONDUCTOR"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-MD17",
+      "kind": "example",
+      "state": "proved",
+      "title": "Split-infinity Mestre family specialization of rank at least 17 below the conductor cutoff",
+      "scope": "For the six-root Mestre family with centers (0,25,95,143,168,205), the primitive quartic has leading coefficient T^2+39146, so T=(39146-u^2)/(2u) supplies split infinity. An exact companion-section certificate proves this base-changed family has generic rank at least 13. Its primitive discriminant core is irreducible and squarefree of degree 20 in T and degree 40 after base change, compared with degree 398 for the reproduced Kihara family; this is conductor geometry, not an exact conductor formula. At u=197, hence T=337/394, seventeen pinned rational points on the specialized short Jacobian have full F_3 column rank in the stacked good-reduction quotients at p=37,41,61,67,79,83,101,103,137,139,149,163,167,173,181,193. The good-reduction order 20 at p=13 excludes rational 3-torsion, so infinite descent proves rank E(Q)>=17. PARI/GP independently reconstructs the minimal model [1,1,1,-1163348683373499147707371416562962,15227131493689013260364706485730874765958430844575], root number -1, and conductor 2462086522751621334987931952469307556796057284118717977320345864383117775914. The exact inequalities N<10^76 and log(10)<231/100 give log(N)<4389/25<182.72. This is a rank lower bound only, four points short of the operational rank-21 target; no saturation or upper bound is claimed. The bounded four-family discovery screen and its conductor timeouts are not upper-bound evidence.",
+      "canonical_source": "elliptic-curves/notes/MESTRE_DSQUARE_FOUR_SCREEN.md",
+      "dependencies": [
+        "external: finite-reduction and infinite-descent independence criterion",
+        "external: good-reduction specialization homomorphism for elliptic curves",
+        "external: PARI/GP 2.15.4 global minimization, conductor, and root-number routines"
+      ],
+      "checker": "elliptic-curves/cas/verify_mestre_dsquare_four_u197.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:68bb4137f8fdd642df33833f790947560ed23c035d6e024c99ffa0266166e188",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-RANK-CONDUCTOR"
+      ],
       "consumers": [],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -30840,7 +31139,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:111f5b38006eee4c6ac1de73c7bce98b2aa757a378d8150b8b17041b48d47cc1",
+      "artifact_hash": "sha256:847b7c8ee28d53082baa319362399fb60254bb40b52445928a77a031a82463f5",
       "software_lock": [
         ".python-version"
       ],
@@ -30858,7 +31157,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Exceptional elliptic rank with record conductor",
-      "scope": "Find either an elliptic curve over Q with at least 21 rigorously independent rational points and natural-log conductor below the literal cutoff 182.72, or a curve with at least 30 rigorously independent rational points. EC-CRT1 establishes the exact one-parameter Hensel--CRT--Gauss mechanism; EC-FERM1 and EC-FRANK1 supply the canonical Fermigier adapter, all thirteen quartic points, generic rank-at-least-12 replay, and E22 lower-bound replay while retaining the unresolved source normalization. EC-R20 is the strongest new conductor-qualified survivor: rank at least 20 with log conductor 159.9348252255..., explicitly one point short. EC-E29 locally replays the public lower bound 29 but supplies no thirtieth point, while EC-KIH14 is the strongest fully public higher-generic-rank fallback reproduced here. No target curve has been found. Immediate gates are a twenty-first independent point on EC-R20 or two further dimensions on the odd-root-number rank-19 survivors, broader good-prime and rational-parameter sweeps, and access to or reconstruction of the unpublished rank-17 fibration behind E29. Exact rank 21 would additionally require a rigorous upper bound; the operational lower-bound targets do not.",
+      "scope": "Find either an elliptic curve over Q with at least 21 rigorously independent rational points and natural-log conductor below the literal cutoff 182.72, or a curve with at least 30 rigorously independent rational points. EC-CRT1 establishes the exact one-parameter Hensel--CRT--Gauss mechanism; EC-FERM1 and EC-FRANK1 supply the canonical Fermigier adapter, all thirteen quartic points, and E22 lower-bound replay while retaining the unresolved source normalization. EC-FG12 proves that this adapter has arithmetic generic rank exactly twelve; EC-FXPT1 closes the declared affine, quadratic, Mobius, and direct pair-product transports between its rank-22 and rank-20 anchors; EC-FXPT2 closes every affine transport between signed support-at-most-two quotient representatives; EC-FXPT4 closes every rational discriminant component across all 80 bidegree-(2,1) pencils; EC-FXPT5 finds no third simultaneous-square parameter on any genuine pair cover through projective height 200000; and EC-FXPT6 finds no point through projective height 1024 on the pilot nonlinear discriminant component. EC-R20 remains the strongest new conductor-qualified survivor: rank at least 20 with log conductor 159.9348252255..., explicitly one point short. EC-MR13 supplies a new generic-rank-at-least-13 Mestre family with degree-40 discriminant geometry, and EC-MD17 supplies a distinct generic-rank-at-least-13 family together with a conductor-qualified rank-at-least-17 specialization at u=197. EC-E29 locally replays the public lower bound 29 but supplies no thirtieth point, while EC-KIH14 remains the strongest fully public higher-generic-rank fallback reproduced here. No target curve has been found. Immediate gates are rational points beyond the completed boxes on the nonlinear discriminant or genus-nine Fermigier cover curves, higher-support exceptional transport, four further independent directions on EC-MD17 or comparable low-frontier Mestre fibers, two further dimensions on the odd-root-number rank-19 survivors, and access to or reconstruction of the unpublished rank-17 fibration behind E29. Exact rank 21 would additionally require a rigorous upper bound; the operational lower-bound targets do not.",
       "canonical_source": "elliptic-curves/README.md",
       "dependencies": [
         "EC-CRT1",
@@ -30869,7 +31168,16 @@
         "EC-E29",
         "EC-FSEED1",
         "external: Fermigier's rank-at-least-22 curve and independence certificate",
-        "external: Elkies--Klagsbrun public rank-at-least-29 record"
+        "external: Elkies--Klagsbrun public rank-at-least-29 record",
+        "EC-FG12",
+        "EC-FXPT1",
+        "EC-FXPT2",
+        "EC-FXPT3",
+        "EC-FXPT4",
+        "EC-FXPT5",
+        "EC-FXPT6",
+        "EC-MR13",
+        "EC-MD17"
       ],
       "checker": null,
       "proof_type": "not-applicable",
