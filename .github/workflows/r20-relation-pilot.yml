@@ -1,0 +1,60 @@
+name: R20 relation-sieve pilot
+
+on:
+  push:
+    branches:
+      - agent/r20-classgroup-probe
+    paths:
+      - .github/workflows/r20-relation-pilot.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  verify-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: agent/r20-classgroup-probe
+          persist-credentials: true
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version-file: .python-version
+          cache: pip
+      - name: Extract pinned relation-sieve payload
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .github/r20relation.tar.gz.b64.* | base64 --decode > /tmp/r20relation.tar.gz
+          echo '2defd800fe91426aa7f77ef273a241592727e5dc3d9d360aa374bf6b1ed6e152  /tmp/r20relation.tar.gz' | sha256sum --check
+          tar -xzf /tmp/r20relation.tar.gz -C .
+          git diff --check
+      - name: Install exact Python dependencies
+        run: python -m pip install --requirement requirements.txt
+      - name: Replay the bounded relation collection
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m py_compile \
+            elliptic-curves/cas/collect_r20_linear_relations.py \
+            elliptic-curves/tests/test_r20_linear_relations.py
+          python elliptic-curves/cas/collect_r20_linear_relations.py --check
+          python -m unittest elliptic-curves/tests/test_r20_linear_relations.py
+      - name: Publish clean relation-sieve files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git rm .github/r20relation.tar.gz.b64.* .github/workflows/r20-relation-pilot.yml
+          git add \
+            artifacts/generated-results/elliptic_r20_linear_relations_b1000_w1000000.json \
+            elliptic-curves/cas/collect_r20_linear_relations.cpp \
+            elliptic-curves/cas/collect_r20_linear_relations.py \
+            elliptic-curves/tests/test_r20_linear_relations.py
+          git diff --cached --check
+          git config user.name 'OpenAI research groundwork'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Add R20 smooth-relation sieve pilot'
+          git push origin HEAD:agent/r20-classgroup-probe
