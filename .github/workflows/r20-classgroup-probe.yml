@@ -1,0 +1,36 @@
+name: R20 cubic class-group probe
+
+on:
+  push:
+    branches:
+      - agent/r20-classgroup-probe
+    paths:
+      - .github/workflows/r20-classgroup-probe.yml
+      - elliptic-curves/tools/probe_r20_classgroup.gp
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: agent/r20-classgroup-probe
+      - name: Install PARI/GP
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends pari-gp
+      - name: Probe cubic field, local terms, and class group
+        shell: bash
+        run: |
+          set +e
+          timeout --signal=TERM --kill-after=15s 2100 \
+            gp -fq -s 1000000000 elliptic-curves/tools/probe_r20_classgroup.gp \
+            2>&1 | tee /tmp/r20-classgroup-probe.log
+          status=${PIPESTATUS[0]}
+          echo "R20_PROBE_EXIT_STATUS=${status}"
+          exit 0
