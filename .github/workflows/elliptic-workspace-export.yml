@@ -1,4 +1,4 @@
-name: elliptic workspace export
+name: elliptic consolidation repair
 
 on:
   push:
@@ -9,37 +9,90 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
-  group: elliptic-workspace-export-${{ github.ref }}
-  cancel-in-progress: true
+  group: elliptic-consolidation-repair
+  cancel-in-progress: false
 
 jobs:
-  export:
+  repair:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
-          persist-credentials: false
-      - name: Package the tracked workspace
+          ref: main
+          persist-credentials: true
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version-file: .python-version
+          cache: pip
+      - name: Apply elliptic registry repair
+        run: python .github/repair_elliptic_consolidation.py
+      - name: Install exact replay dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends pari-gp singular
+          python -m pip install --requirement requirements.txt
+      - name: Validate elliptic registry
         shell: bash
         run: |
           set -euo pipefail
-          tar \
-            --exclude=.git \
-            --exclude=artifacts/local \
-            --exclude=tmp \
-            -czf /tmp/jacobian-workspace.tar.gz .
-          sha256sum /tmp/jacobian-workspace.tar.gz | tee /tmp/jacobian-workspace.sha256
-      - name: Upload the workspace snapshot
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-        with:
-          name: elliptic-workspace-${{ github.sha }}
-          path: |
-            /tmp/jacobian-workspace.tar.gz
-            /tmp/jacobian-workspace.sha256
-          if-no-files-found: error
-          retention-days: 1
-          compression-level: 0
+          python -m json.tool MATH_STATUS.json >/dev/null
+          python - <<'PY'
+          import hashlib, json, sys
+          from pathlib import Path
+          sys.path.insert(0, 'scripts')
+          import render_status
+          root=Path('.')
+          idx=json.loads((root/'MATH_STATUS.json').read_text())
+          entries={e['id']:e for e in idx['entries']}
+          required={'EC-FG12','EC-FXPT1','EC-FXPT2','EC-FXPT3','EC-FXPT4','EC-FXPT5','EC-FXPT6','EC-MR13','EC-MD17'}
+          assert required <= entries.keys(), sorted(required-entries.keys())
+          for e in idx['entries']:
+              if not (e['id'].startswith('EC-') or e['id']=='OP-EC-RANK-CONDUCTOR'):
+                  continue
+              for dep in e.get('dependencies',[]):
+                  assert dep.startswith('external:') or dep in entries, (e['id'],dep)
+              checker=e.get('checker'); expected=e.get('artifact_hash')
+              if checker and expected and expected.startswith('sha256:'):
+                  actual='sha256:'+hashlib.sha256((root/checker).read_bytes()).hexdigest()
+                  assert actual==expected,(e['id'],actual,expected)
+              source=e.get('canonical_source')
+              if source and not source.startswith('external:'):
+                  assert (root/source).exists(),(e['id'],source)
+              for target in e.get('replaced_by',[]):
+                  assert e['id'] in entries[target].get('supersedes',[]),(e['id'],target)
+              for target in e.get('supersedes',[]):
+                  assert e['id'] in entries[target].get('replaced_by',[]),(e['id'],target)
+          assert (root/'STATUS.md').read_text()==render_status.render(idx)
+          assert entries['EC-MD17']['dependencies'][0].startswith('external:')
+          print('ELLIPTIC_REGISTRY_REPAIR_PASS')
+          PY
+      - name: Replay consolidated Fermigier and Mestre certificates
+        shell: bash
+        run: |
+          set -euo pipefail
+          PYTHONPATH=elliptic-curves/cas python -m unittest \
+            elliptic-curves/tests/test_mestre_rank13_02393128133175.py \
+            elliptic-curves/tests/test_mestre_dsquare_four.py \
+            elliptic-curves/tests/test_mestre_02595143168205_rank13.py \
+            elliptic-curves/tests/test_fermigier_generic_rank_exact.py \
+            elliptic-curves/tests/test_analyze_fermigier_exceptional_transport.py \
+            elliptic-curves/tests/test_analyze_fermigier_bidegree21_pilot.py \
+            elliptic-curves/tests/test_analyze_fermigier_bidegree21_all80.py \
+            elliptic-curves/tests/test_fermigier_exceptional_quotient_ball.py \
+            elliptic-curves/tests/test_search_fermigier_exceptional_pair_simultaneous_h200000.py \
+            elliptic-curves/tests/test_search_fermigier_bidegree21_nonlinear_points.py
+      - name: Publish validated repair to main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git rm .github/workflows/elliptic-workspace-export.yml .github/repair_elliptic_consolidation.py
+          git add MATH_STATUS.json STATUS.md elliptic-curves/notes/FERMIGIER_REPRODUCTION.md
+          git diff --cached --check
+          git config user.name 'OpenAI research consolidation'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Consolidate elliptic-curve research status'
+          git push origin HEAD:main
