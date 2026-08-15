@@ -1,0 +1,393 @@
+name: R20 Brumer-Kramer audit
+
+on:
+  push:
+    branches:
+      - agent/r20-brumer-kramer-audit
+    paths:
+      - .github/r20-brumer-kramer.patch.gz.b64
+      - .github/workflows/r20-brumer-kramer-audit.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: r20-brumer-kramer-audit
+  cancel-in-progress: false
+
+jobs:
+  verify-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: agent/r20-brumer-kramer-audit
+          persist-credentials: true
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version-file: .python-version
+          cache: pip
+      - name: Apply pinned exact-audit patch
+        shell: bash
+        run: |
+          set -euo pipefail
+          base64 --decode .github/r20-brumer-kramer.patch.gz.b64 > /tmp/r20-bk.patch.gz
+          echo 'cadb2a27a12ea12d8c4c6f70f0e1fa64dfc1da7fc98542c69c79064f8ac6e444  /tmp/r20-bk.patch.gz' | sha256sum --check
+          gzip --decompress --stdout /tmp/r20-bk.patch.gz > /tmp/r20-bk.patch
+          echo 'd1b4b3bc20871d25ed332299ecb531dde5d823b37fd4b7e77531a88e451af793  /tmp/r20-bk.patch' | sha256sum --check
+          git apply --check /tmp/r20-bk.patch
+          git apply /tmp/r20-bk.patch
+          git diff --check
+      - name: Install exact Python dependencies
+        run: python -m pip install --requirement requirements.txt
+      - name: Generate exact cubic-field audit
+        shell: bash
+        run: |
+          set -euo pipefail
+          PYTHONPATH=elliptic-curves/cas python \
+            elliptic-curves/cas/verify_fermigier_rank20_brumer_kramer.py
+          python -m json.tool \
+            artifacts/generated-results/elliptic_fermigier_rank20_brumer_kramer.json \
+            >/dev/null
+      - name: Register theorem and update documentation
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from __future__ import annotations
+
+          import hashlib
+          import json
+          from pathlib import Path
+          import sys
+
+          root = Path('.')
+          checker = root / 'elliptic-curves/cas/verify_fermigier_rank20_brumer_kramer.py'
+          artifact_path = root / 'artifacts/generated-results/elliptic_fermigier_rank20_brumer_kramer.json'
+          artifact = json.loads(artifact_path.read_text())
+          exact_rank = artifact['class_group_and_rank_upper']['exact_rank'] == 20
+
+          index_path = root / 'MATH_STATUS.json'
+          index = json.loads(index_path.read_text())
+          entries = index['entries']
+          by_id = {entry['id']: entry for entry in entries}
+          if 'EC-R20' not in by_id or 'OP-EC-RANK-CONDUCTOR' not in by_id:
+              raise SystemExit('R20/open-problem registry anchors are missing')
+
+          if exact_rank:
+              title = 'Exact rank 20 of the low-conductor Fermigier near miss'
+              scope = (
+                  'For the Fermigier--Mestre specialization u=28917/20, the existing '
+                  'finite-reduction certificate proves rank at least 20. Exact maximal-order '
+                  'arithmetic for the irreducible cubic 2-division field gives discriminant '
+                  '17207612547621358265560224336784329653572551167050221201938192360. '
+                  'The Brumer--Kramer local correction is u(E)=2 and n(E)=5. A pinned '
+                  'class-group computation has 2-rank 13 and a successful quotient '
+                  'certificate, so the true 2-class rank is exactly 13 and the '
+                  'Brumer--Kramer upper bound is 20. Hence the algebraic rank is exactly 20 '
+                  'unconditionally. The fixed fiber is closed and is not a target hit.'
+              )
+          else:
+              title = 'Cubic 2-class-rank lower bound for the Fermigier rank-20 near miss'
+              scope = (
+                  'For the Fermigier--Mestre specialization u=28917/20, the existing '
+                  'finite-reduction certificate proves rank at least 20. Exact Round-2 '
+                  'maximal-order arithmetic for the irreducible cubic 2-division field gives '
+                  'power-order index 712863540480000 and field discriminant '
+                  '17207612547621358265560224336784329653572551167050221201938192360. '
+                  'The exact bad-prime data give Brumer--Kramer terms u(E)=2 and n(E)=5: '
+                  'the multiplicative-even set is {3,7,13,31,79}, while the sole additive '
+                  'prime 17 is totally ramified and contributes zero. Therefore the rank-20 '
+                  'lower bound forces dim_F2 Cl(K)[2]>=13 unconditionally. No matching '
+                  'class-group upper certificate, exact rank, global saturation, or target '
+                  'result is claimed.'
+              )
+
+          entry = {
+              'id': 'EC-R20BK',
+              'kind': 'theorem',
+              'state': 'proved',
+              'title': title,
+              'scope': scope,
+              'canonical_source': 'elliptic-curves/notes/FERMIGIER_RANK20_BRUMER_KRAMER.md',
+              'dependencies': [
+                  'EC-R20',
+                  'external: Brumer--Kramer 2-Selmer/class-group rank bound',
+                  'external: SymPy 1.14.0 exact Round-2 maximal-order algorithm',
+              ],
+              'checker': 'elliptic-curves/cas/verify_fermigier_rank20_brumer_kramer.py',
+              'proof_type': 'hybrid',
+              'independent_replay': False,
+              'formal_verification': False,
+              'external_review': False,
+              'artifact_hash': 'sha256:' + hashlib.sha256(checker.read_bytes()).hexdigest(),
+              'software_lock': ['.python-version', 'requirements.txt'],
+              'supersedes_notes': [],
+              'supersedes': [],
+              'closes_problems': [],
+              'narrows_problems': ['OP-EC-RANK-CONDUCTOR'],
+              'consumers': [],
+              'invalidates_assumptions': [],
+              'replaced_by': [],
+              'priority': 'primary',
+          }
+
+          rebuilt = []
+          for current in entries:
+              if current['id'] == 'EC-R20BK':
+                  continue
+              if current['id'] == 'EC-R20':
+                  suffix = (
+                      ' EC-R20BK independently proves that the associated cubic '
+                      '2-division field has 2-class rank at least 13; without a matching '
+                      'upper certificate this does not close the fixed fiber.'
+                  )
+                  if exact_rank:
+                      suffix = (
+                          ' EC-R20BK supplies a matching Brumer--Kramer/class-group upper '
+                          'bound and proves the algebraic rank is exactly 20, closing this '
+                          'fixed fiber.'
+                      )
+                  if 'EC-R20BK' not in current['scope']:
+                      current['scope'] += suffix
+                  if 'EC-R20BK' not in current['consumers']:
+                      current['consumers'].append('EC-R20BK')
+                  rebuilt.append(current)
+                  rebuilt.append(entry)
+              else:
+                  rebuilt.append(current)
+          index['entries'] = rebuilt
+          by_id = {current['id']: current for current in rebuilt}
+          open_problem = by_id['OP-EC-RANK-CONDUCTOR']
+          if 'EC-R20BK' not in open_problem['dependencies']:
+              open_problem['dependencies'].append('EC-R20BK')
+          old = (
+              'EC-R20 remains the strongest new conductor-qualified survivor: rank at '
+              'least 20 with log conductor 159.9348252255..., explicitly one point short.'
+          )
+          replacement = (
+              'EC-R20 remains the strongest new conductor-qualified survivor: rank at '
+              'least 20 with log conductor 159.9348252255..., explicitly one point short. '
+              'EC-R20BK proves that its cubic 2-division field has 2-class rank at least '
+              '13, but no matching class-group upper certificate yet closes the fixed fiber.'
+          )
+          if exact_rank:
+              replacement = (
+                  'EC-R20BK proves that the strongest new conductor-qualified survivor '
+                  'EC-R20 has exact algebraic rank 20 and log conductor '
+                  '159.9348252255..., so that fixed fiber is closed and cannot meet the '
+                  'rank-at-least-21 target.'
+              )
+          if old in open_problem['scope']:
+              open_problem['scope'] = open_problem['scope'].replace(old, replacement)
+          elif 'EC-R20BK' not in open_problem['scope']:
+              raise SystemExit('open-problem R20 scope marker changed')
+          index_path.write_text(json.dumps(index, indent=2, ensure_ascii=False) + '\n')
+
+          sys.path.insert(0, str(root / 'scripts'))
+          import render_status
+          (root / 'STATUS.md').write_text(render_status.render(index))
+
+          readme_path = root / 'elliptic-curves/README.md'
+          lines = readme_path.read_text().splitlines()
+          row_found = False
+          for position, line in enumerate(lines):
+              if line.startswith('| Fermigier--Mestre adapter |'):
+                  row_found = True
+                  evidence = (
+                      '**exact unconditional rank at least 20**; the cubic 2-division '
+                      'field has unconditional 2-class rank at least 13, but no matching '
+                      'upper certificate; one point short of the target'
+                  )
+                  if exact_rank:
+                      evidence = (
+                          '**exact unconditional algebraic rank 20** by finite reductions '
+                          'and Brumer--Kramer/class-group bounds; fixed fiber closed'
+                      )
+                  lines[position] = (
+                      '| Fermigier--Mestre adapter | `u=28917/20` | '
+                      '`159.934825225525...` | ' + evidence + ' |'
+                  )
+                  break
+          if not row_found:
+              raise SystemExit('README R20 frontier row changed')
+          readme = '\n'.join(lines) + '\n'
+          marker = (
+              'The fixed fiber is therefore deprioritized; the structural priority is to '
+              'preserve one or more exceptional quotient directions under a base change.\n'
+          )
+          paragraph = (
+              '\nAn independent Brumer--Kramer audit now reconstructs the irreducible '
+              'cubic 2-division field and its maximal order exactly. Its field '
+              'discriminant is '
+              '`17207612547621358265560224336784329653572551167050221201938192360`; '
+              'the local correction is `u(E)+n(E)=7`. The certified rank-20 lower '
+              'bound therefore forces the cubic class group to have 2-rank at least '
+              '13. This is structural information, not a rank upper bound; without a '
+              'matching class-group upper certificate the fixed fiber remains open.\n'
+          )
+          if exact_rank:
+              paragraph = (
+                  '\nThe independent Brumer--Kramer audit reconstructs the cubic 2-division '
+                  'field, proves its true 2-class rank is 13 using a quotient-certified '
+                  'class-group computation, and combines this with local correction '
+                  '`u(E)+n(E)=7`. Together with the existing lower certificate this proves '
+                  'the fixed fiber has exact algebraic rank 20 unconditionally.\n'
+              )
+          if 'An independent Brumer--Kramer audit now reconstructs' not in readme and 'The independent Brumer--Kramer audit reconstructs' not in readme:
+              if marker not in readme:
+                  raise SystemExit('README Brumer--Kramer insertion marker changed')
+              readme = readme.replace(marker, marker + paragraph, 1)
+          readme_path.write_text(readme)
+
+          reproduce_path = root / 'elliptic-curves/REPRODUCE.md'
+          reproduce = reproduce_path.read_text()
+          section = '''## R20 cubic-field and Brumer--Kramer audit
+
+Replay the exact rank-20 finite-reduction matrix, cubic 2-division field,
+maximal order, bad-prime correction and forced class-group 2-rank lower bound:
+
+```sh
+PYTHONPATH=elliptic-curves/cas \\
+  .venv/bin/python elliptic-curves/cas/verify_fermigier_rank20_brumer_kramer.py
+
+PYTHONPATH=elliptic-curves/cas \\
+  .venv/bin/python elliptic-curves/cas/verify_fermigier_rank20_brumer_kramer.py --check
+
+PYTHONPATH=elliptic-curves/cas \\
+  .venv/bin/python -m unittest \\
+  elliptic-curves/tests/test_fermigier_rank20_brumer_kramer.py
+```
+
+The pinned artifact is
+[`elliptic_fermigier_rank20_brumer_kramer.json`](../artifacts/generated-results/elliptic_fermigier_rank20_brumer_kramer.json).
+It proves the associated cubic class group has 2-rank at least 13. Unless the
+artifact also contains a quotient-certified matching upper computation, it
+does not prove an upper bound for the elliptic-curve rank.
+
+'''
+          marker = '## Pinned verified computations\n'
+          if '## R20 cubic-field and Brumer--Kramer audit\n' not in reproduce:
+              if marker not in reproduce:
+                  raise SystemExit('REPRODUCE insertion marker changed')
+              reproduce = reproduce.replace(marker, section + marker, 1)
+          reproduce_path.write_text(reproduce)
+
+          agents_path = root / 'elliptic-curves/AGENTS.md'
+          agents = agents_path.read_text()
+          agents_marker = '- Every external CAS task must pin exact inputs, required outputs, resource\n  limits and the interpretation of timeout/failure.\n'
+          agents_addition = (
+              '- A `bnfinit` class group is GRH-conditional by default. A successful '
+              '`bnfcertify(bnf,1)` only proves that the true class group is a quotient; '
+              'combine it with an independent lower bound before making an unconditional '
+              '2-rank or elliptic-rank claim.\n'
+          )
+          if agents_addition not in agents:
+              if agents_marker not in agents:
+                  raise SystemExit('AGENTS structural marker changed')
+              agents = agents.replace(agents_marker, agents_marker + agents_addition, 1)
+          agents_path.write_text(agents)
+
+          sources_path = root / 'elliptic-curves/SOURCES.md'
+          sources = sources_path.read_text()
+          ksw_old = (
+              '  rank-at-least-29 curve; it is about the earlier rank-28 curve, not a proof about the new curve.\n'
+          )
+          ksw_new = (
+              '  rank-at-least-29 curve; it is about the earlier rank-28 curve, not a proof about the new curve. '
+              'The R20 audit specifically imports its statement of the Brumer--Kramer '
+              'bound `rank E(Q) <= dim_F2 Cl(K)[2] + u(E) + n(E)` and independently '
+              'recomputes every curve-specific term.\n'
+          )
+          if 'The R20 audit specifically imports' not in sources:
+              if ksw_old not in sources:
+                  raise SystemExit('SOURCES KSW marker changed')
+              sources = sources.replace(ksw_old, ksw_new, 1)
+          pari_bullet = (
+              '- PARI/GP, [`bnfinit`](https://pari.math.u-bordeaux.fr/dochtml/html-stable/'
+              'General_number_fields.html#bnfinit) and '
+              '[`bnfcertify`](https://pari.math.u-bordeaux.fr/dochtml/html-stable/'
+              'General_number_fields.html#bnfcertify). The former is conditional on GRH '
+              'by default; quotient-only certification from `bnfcertify(bnf,1)` is '
+              'interpreted exactly as documented.\n'
+          )
+          rank_marker = '## Rank records and calibration data\n'
+          if pari_bullet not in sources:
+              if rank_marker not in sources:
+                  raise SystemExit('SOURCES rank marker changed')
+              sources = sources.replace(rank_marker, pari_bullet + '\n' + rank_marker, 1)
+          sources_path.write_text(sources)
+          PY
+      - name: Replay and validate
+        shell: bash
+        run: |
+          set -euo pipefail
+          PYTHONPATH=elliptic-curves/cas python \
+            elliptic-curves/cas/verify_fermigier_rank20_brumer_kramer.py --check
+          PYTHONPATH=elliptic-curves/cas python -m unittest \
+            elliptic-curves/tests/test_fermigier_rank20_brumer_kramer.py \
+            elliptic-curves/tests/test_finite_quotient_escape.py \
+            elliptic-curves/tests/test_fermigier_rank20_candidate_record.py \
+            elliptic-curves/tests/test_fermigier_generic_rank_exact.py
+          python -m json.tool MATH_STATUS.json >/dev/null
+          python - <<'PY'
+          import hashlib, json, sys
+          from pathlib import Path
+          sys.path.insert(0, 'scripts')
+          import render_status
+          root=Path('.')
+          index=json.loads((root/'MATH_STATUS.json').read_text())
+          entries={entry['id']:entry for entry in index['entries']}
+          assert 'EC-R20BK' in entries
+          assert 'EC-R20BK' in entries['OP-EC-RANK-CONDUCTOR']['dependencies']
+          checker=root/entries['EC-R20BK']['checker']
+          assert entries['EC-R20BK']['artifact_hash']=='sha256:'+hashlib.sha256(checker.read_bytes()).hexdigest()
+          assert (root/'STATUS.md').read_text()==render_status.render(index)
+          artifact=json.loads((root/'artifacts/generated-results/elliptic_fermigier_rank20_brumer_kramer.json').read_text())
+          assert artifact['brumer_kramer']['forced_class_group_2rank_lower_bound']==13
+          assert artifact['brumer_kramer']['n']==5
+          print('R20_BRUMER_KRAMER_REGISTRY_PASS')
+          PY
+          python scripts/check_markdown_links.py
+      - name: Publish validated audit branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git rm \
+            .github/r20-brumer-kramer.patch.gz.b64 \
+            .github/workflows/r20-brumer-kramer-audit.yml
+          git add \
+            MATH_STATUS.json STATUS.md \
+            artifacts/generated-results/elliptic_fermigier_rank20_brumer_kramer.json \
+            elliptic-curves/AGENTS.md \
+            elliptic-curves/README.md \
+            elliptic-curves/REPRODUCE.md \
+            elliptic-curves/SOURCES.md \
+            elliptic-curves/cas/verify_fermigier_rank20_brumer_kramer.py \
+            elliptic-curves/notes/FERMIGIER_RANK20_BRUMER_KRAMER.md \
+            elliptic-curves/tests/test_fermigier_rank20_brumer_kramer.py
+          git diff --cached --check
+          cat > /tmp/expected-paths <<'EOF'
+          .github/r20-brumer-kramer.patch.gz.b64
+          .github/workflows/r20-brumer-kramer-audit.yml
+          MATH_STATUS.json
+          STATUS.md
+          artifacts/generated-results/elliptic_fermigier_rank20_brumer_kramer.json
+          elliptic-curves/AGENTS.md
+          elliptic-curves/README.md
+          elliptic-curves/REPRODUCE.md
+          elliptic-curves/SOURCES.md
+          elliptic-curves/cas/verify_fermigier_rank20_brumer_kramer.py
+          elliptic-curves/notes/FERMIGIER_RANK20_BRUMER_KRAMER.md
+          elliptic-curves/tests/test_fermigier_rank20_brumer_kramer.py
+          EOF
+          sed -i 's/^          //' /tmp/expected-paths
+          git diff --cached --name-only | sort > /tmp/actual-paths
+          sort -o /tmp/expected-paths /tmp/expected-paths
+          diff --unified /tmp/expected-paths /tmp/actual-paths
+          git config user.name 'OpenAI research audit'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Prove R20 cubic 2-class-rank lower bound'
+          git push origin HEAD:agent/r20-brumer-kramer-audit
