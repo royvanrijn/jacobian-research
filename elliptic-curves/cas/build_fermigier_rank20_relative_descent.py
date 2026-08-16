@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Build a pinned Magma relative 2-descent job for the Fermigier rank-20 curve.
 
-This script performs no descent itself.  It reconstructs the exact 20-point
+This script performs no descent itself. It reconstructs the exact 20-point
 subgroup from the pinned near-miss manifest and emits a self-contained Magma
-program.  The Magma output is deliberately machine-readable so a completed run
+program. The Magma output is deliberately machine-readable so a completed run
 can be classified without interpreting partial console prose.
 """
 
@@ -19,9 +19,11 @@ import sys
 PROGRAM_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROGRAM_ROOT))
 
-from ecsearch.fermigier_near_miss import FERMIGIER_RANK20_PARAMETER  # noqa: E402
-from ecsearch.fermigier_rank import (  # noqa: E402
+from ecsearch.fermigier_near_miss import (  # noqa: E402
+    FERMIGIER_RANK20_PARAMETER,
     canonical_ratpoints_output,
+)
+from ecsearch.fermigier_rank import (  # noqa: E402
     parse_ratpoints_output,
     section_and_point_cloud_differences,
     specialize_fermigier_rank_sections,
@@ -52,7 +54,7 @@ def load_selected_points(manifest_path: Path):
     indices = tuple(manifest["point_cloud"]["selected_indices"])
     if len(indices) != 20 or len(set(indices)) != 20:
         raise ValueError("selected indices are not 20 distinct entries")
-    if max(indices) >= len(cloud):
+    if min(indices) < 0 or max(indices) >= len(cloud):
         raise ValueError("selected point index exceeds reconstructed cloud")
     return specialization.canonical_model, tuple(cloud[i] for i in indices)
 
@@ -75,10 +77,10 @@ printf "R20DESCENT|stage=input|magma=%o|known=%o\\n", GetVersion(), #known;
 assert #known eq 20;
 assert &and[P in E : P in known];
 
-// Quotient the 2-descent by the already certified subgroup.  A failure here is
+// Quotient the 2-descent by the already certified subgroup. A failure here is
 // classification R4 and must not be interpreted mathematically.
 covers, maps, aux := TwoDescent(
-    E : RemoveGens := SequenceToSet(known), RemoveTorsion := true
+    E : RemoveGens := SequenceToSet(known), RemoveTorsion
 );
 printf "R20DESCENT|stage=two_descent|residual_covers=%o\\n", #covers;
 
@@ -96,13 +98,20 @@ for i in [1..#covers] do
 end for;
 printf "R20DESCENT|stage=cassels_tate|matrix=%o\\n", Eltseq(M);
 
-nonzero := exists{{ M[i,j] : i,j in [1..#covers] | M[i,j] ne 0 }};
+nonzero := false;
+for i in [1..#covers] do
+    for j in [1..#covers] do
+        if M[i,j] ne 0 then
+            nonzero := true;
+        end if;
+    end for;
+end for;
 if nonzero then
     printf "R20DESCENT|classification=R1|reason=nonzero_cassels_tate_pairing\\n";
 end if;
 
 // Continue every residual class whose row pairs trivially with all residual
-// classes.  FourDescent returning [] is recorded, not silently treated as a
+// classes. FourDescent returning [] is recorded, not silently treated as a
 // proof of Sha.
 radical := [ i : i in [1..#covers] |
     &and[M[i,j] eq 0 : j in [1..#covers]]
@@ -111,7 +120,7 @@ printf "R20DESCENT|stage=radical|indices=%o\\n", radical;
 
 found_candidate := false;
 for i in radical do
-    fours := FourDescent(covers[i] : RemoveTorsion := true);
+    fours := FourDescent(covers[i] : RemoveTorsion);
     printf "R20DESCENT|stage=four_descent|cover=%o|four_covers=%o\\n", i, #fours;
     for k in [1..#fours] do
         pts := PointsQI(fours[k], {point_bound});
@@ -139,7 +148,10 @@ def main() -> None:
     parser.add_argument(
         "--manifest",
         type=Path,
-        default=Path("artifacts/generated-results/elliptic-curves/fermigier_rank20_near_miss_v1.json"),
+        default=Path(
+            "artifacts/generated-results/elliptic-curves/"
+            "fermigier_rank20_near_miss_v1.json"
+        ),
     )
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument(
