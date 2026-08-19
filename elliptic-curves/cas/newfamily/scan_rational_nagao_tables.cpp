@@ -5,10 +5,11 @@
 // The hot loop therefore does no point counting and no large-integer arithmetic.
 //
 // Usage:
-//   scan_rational_nagao_tables TABLE NUM DEN KEEP
+//   scan_rational_nagao_tables TABLE NUM DEN KEEP [SHARD_ID SHARDS]
 //
 // The scan visits positive reduced fractions a/b with
 //   1 <= a <= NUM, 1 <= b <= DEN, gcd(a,b)=1.
+// Optional sharding assigns denominator b to shard (b-1) mod SHARDS.
 // Discovery scores choose the heap; held scores are evaluated only for survivors.
 
 #include <algorithm>
@@ -173,8 +174,8 @@ static void add_band_score(
 }
 
 int main(int argc, char** argv) {
-  if (argc != 5) {
-    std::cerr << "usage: scan_rational_nagao_tables TABLE NUM DEN KEEP\n";
+  if (argc != 5 && argc != 7) {
+    std::cerr << "usage: scan_rational_nagao_tables TABLE NUM DEN KEEP [SHARD_ID SHARDS]\n";
     return 2;
   }
 
@@ -183,8 +184,14 @@ int main(int argc, char** argv) {
     const int numerator_bound = std::atoi(argv[2]);
     const int denominator_bound = std::atoi(argv[3]);
     const int keep = std::atoi(argv[4]);
+    const int shard_id = argc == 7 ? std::atoi(argv[5]) : 0;
+    const int shards = argc == 7 ? std::atoi(argv[6]) : 1;
     if (numerator_bound < 1 || denominator_bound < 1 || keep < 1) {
       std::cerr << "NUM, DEN and KEEP must be positive\n";
+      return 2;
+    }
+    if (shards < 1 || shard_id < 0 || shard_id >= shards) {
+      std::cerr << "require SHARDS>=1 and 0<=SHARD_ID<SHARDS\n";
       return 2;
     }
 
@@ -194,8 +201,11 @@ int main(int argc, char** argv) {
     std::uint64_t evaluated_population = 0;
 
     // Denominator-major order lets us update a/b mod p by repeated addition of
-    // b^{-1}.  If p|b every candidate on that denominator maps to infinity.
+    // b^{-1}. If p|b every candidate on that denominator maps to infinity.
+    // Sharding by denominator keeps shards disjoint and deterministic.
     for (int denominator = 1; denominator <= denominator_bound; ++denominator) {
+      if ((denominator - 1) % shards != shard_id) continue;
+
       const std::size_t nprimes = tables.discovery.size();
       std::vector<int> step(nprimes, -1);
       std::vector<int> residue(nprimes, 0);
@@ -256,7 +266,7 @@ int main(int argc, char** argv) {
     for (const auto& table : tables.discovery) std::cout << ' ' << table.prime;
     std::cout << "\nH";
     for (const auto& table : tables.held) std::cout << ' ' << table.prime;
-    std::cout << '\n';
+    std::cout << "\nR " << shard_id << ' ' << shards << '\n';
     for (const Candidate& candidate : retained) {
       std::cout << "C " << candidate.numerator << ' ' << candidate.denominator << ' '
                 << score_text(candidate.discovery_score) << ' '
