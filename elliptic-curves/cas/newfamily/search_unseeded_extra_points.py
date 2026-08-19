@@ -18,6 +18,10 @@ fast, while eclib initialization can be extremely slow on the large nonminimal
 homogeneous integral model. Search therefore happens on a global minimal model
 without ever processing the known rank-11 subgroup through eclib.
 
+Discovery uses pp=0 intentionally: eclib retains raw points found by the sieve
+instead of processing/saturating them into a Mordell-Weil subgroup.  Exact
+processing is deferred until a numerical new-direction hit exists.
+
 A numerical height-rank jump to 12 is only a TRIAGE HIT. It is not promoted as
 an exact rank statement. Exact eclib verification is intentionally deferred
 until such a hit exists.
@@ -121,7 +125,6 @@ def run_single(args):
     Emin = E.global_minimal_model()
     minimal_seconds = time.monotonic() - minimal_started
     iso_to_min = E.isomorphism_to(Emin)
-    # Sage Weierstrass isomorphisms invert via ~iso (equivalently dual()).
     iso_from_min = ~iso_to_min
     print(
         f"PHASE minimal_done seconds={minimal_seconds:.6f} "
@@ -132,9 +135,9 @@ def run_single(args):
     print("PHASE eclib_init_start", flush=True)
     init_started = time.monotonic()
     mwcurve = mwrank_EllipticCurve([ZZ(v) for v in Emin.ainvs()])
-    mw = mwrank_MordellWeil(mwcurve, verbose=False, pp=1, maxr=args.maxr)
+    mw = mwrank_MordellWeil(mwcurve, verbose=False, pp=0, maxr=args.maxr)
     init_seconds = time.monotonic() - init_started
-    print(f"PHASE eclib_init_done seconds={init_seconds:.6f}", flush=True)
+    print(f"PHASE eclib_init_done seconds={init_seconds:.6f} pp=0", flush=True)
 
     print(
         f"PHASE search_start height={args.height} baseline_hrank=11 "
