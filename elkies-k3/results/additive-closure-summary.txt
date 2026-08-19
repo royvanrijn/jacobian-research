@@ -1,0 +1,30 @@
+Elkies rank-17 minimal-vector additive closure
+================================================
+
+Signed minimal vectors:
+  2622
+
+Unsigned +/- pairs:
+  1311
+
+Additive equations a + b = c with all three vectors minimal:
+  184242
+
+Optimized seed:
+  [2312, 2524, 2063, 1268, 2504, 987, 1362, 2028, 2519, 2440,
+   832, 828, 910, 768, 802, 772, 0]
+
+Closure growth for final extensions:
+  10 -> 112
+  11 -> 256
+  12 -> 424
+  13 -> 608
+  16 -> 1856
+  17 -> 2622
+
+Conclusion:
+  The complete signed norm-4 shell is generated under minimal-vector
+  additive relations by a 17-vector seed.
+
+The independently chosen unimodular norm-4 Mordell-Weil basis also
+has full closure 2622/2622.
