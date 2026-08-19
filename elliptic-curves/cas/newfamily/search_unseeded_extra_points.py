@@ -4,18 +4,23 @@
 This stage deliberately does NOT seed eclib with the known rank-11 subgroup.
 For each healthy specialization from the height-rank screen it:
 
-1. builds the homogeneous integral short model;
-2. evaluates the 11 hidden generic sections;
-3. runs an empty mwrank_MordellWeil.search(height);
-4. converts the points found by eclib back to Sage points;
-5. rejects exact duplicates of the known sections;
-6. tests each remaining point by augmenting the 11x11 canonical-height Gram
+1. builds the homogeneous integral short model and the 11 hidden sections;
+2. checks the known section lattice numerically by canonical heights;
+3. converts only the SEARCH curve to a global minimal model;
+4. runs an empty mwrank_MordellWeil.search(height) on that minimal model;
+5. maps points found by eclib back to the fixed homogeneous model;
+6. rejects exact duplicates of the known sections;
+7. tests each remaining point by augmenting the 11x11 canonical-height Gram
    matrix to 12x12.
+
+The hybrid model choice matters: height arithmetic on the fixed short model is
+fast, while eclib initialization can be extremely slow on the large nonminimal
+homogeneous integral model.  Search therefore happens on a global minimal model
+without ever processing the known rank-11 subgroup through eclib.
 
 A numerical height-rank jump to 12 is only a TRIAGE HIT.  It is not promoted as
 an exact rank statement.  Exact eclib verification is intentionally deferred
-until such a hit exists, avoiding expensive processing of the known subgroup on
-thousands of candidates.
+until such a hit exists.
 """
 
 from __future__ import annotations
@@ -27,7 +32,7 @@ import subprocess
 import sys
 import time
 
-from sage.all import EllipticCurve, QQ, RR, RealField, ZZ, load, matrix
+from sage.all import EllipticCurve, QQ, RR, RealField, ZZ, matrix
 from sage.libs.eclib.interface import mwrank_EllipticCurve, mwrank_MordellWeil
 
 from screen_seeded_rational_candidates_fast import (
@@ -90,20 +95,48 @@ def build_integral_specialization(numerator: int, denominator: int, sections_sob
 
 def run_single(args):
     started = time.monotonic()
+    print("PHASE build_start", flush=True)
     E, known, scale = build_integral_specialization(
         args.numerator, args.denominator, args.sections_sobj
     )
+    print("PHASE build_done", flush=True)
 
+    height_started = time.monotonic()
     baseline_rank, baseline_pd, tolerance, _, _ = numerical_height_rank(
         E, known, args.precision, args.rank_bits
+    )
+    baseline_height_seconds = time.monotonic() - height_started
+    print(
+        f"PHASE baseline_height_done seconds={baseline_height_seconds:.6f} "
+        f"rank={baseline_rank} pd={baseline_pd}",
+        flush=True,
     )
     if baseline_rank != 11 or not baseline_pd:
         raise RuntimeError(
             f"unhealthy baseline height lattice rank={baseline_rank} pd={baseline_pd}"
         )
 
-    mwcurve = mwrank_EllipticCurve([ZZ(v) for v in E.ainvs()])
+    # eclib can spend a very long time merely initializing on the large
+    # homogeneous model.  Minimalize only the search model; keep E/known for
+    # all height-lattice tests.
+    print("PHASE minimal_start", flush=True)
+    minimal_started = time.monotonic()
+    Emin = E.global_minimal_model()
+    minimal_seconds = time.monotonic() - minimal_started
+    iso_to_min = E.isomorphism_to(Emin)
+    iso_from_min = iso_to_min.inverse()
+    print(
+        f"PHASE minimal_done seconds={minimal_seconds:.6f} "
+        f"disc_bits={ZZ(abs(Emin.discriminant())).nbits()}",
+        flush=True,
+    )
+
+    print("PHASE eclib_init_start", flush=True)
+    init_started = time.monotonic()
+    mwcurve = mwrank_EllipticCurve([ZZ(v) for v in Emin.ainvs()])
     mw = mwrank_MordellWeil(mwcurve, verbose=False, pp=1, maxr=args.maxr)
+    init_seconds = time.monotonic() - init_started
+    print(f"PHASE eclib_init_done seconds={init_seconds:.6f}", flush=True)
 
     print(
         f"PHASE search_start height={args.height} baseline_hrank=11 "
@@ -127,8 +160,11 @@ def run_single(args):
     candidates = []
     seen = set()
     for triple in raw:
-        Q = mw_point_to_sage(E, triple)
-        if Q.is_zero() or Q in known_signless or -Q in known_signless:
+        Qmin = mw_point_to_sage(Emin, triple)
+        if Qmin.is_zero():
+            continue
+        Q = iso_from_min(Qmin)
+        if Q in known_signless or -Q in known_signless:
             continue
         key = min(str(Q), str(-Q))
         if key in seen:
@@ -139,7 +175,9 @@ def run_single(args):
         )
         candidates.append({
             "point": [str(Q[0]), str(Q[1])],
+            "point_minimal": [str(Qmin[0]), str(Qmin[1])],
             "point_bits": max(qbits(Q[0]), qbits(Q[1])),
+            "point_minimal_bits": max(qbits(Qmin[0]), qbits(Qmin[1])),
             "augmented_height_rank": hrank,
             "augmented_positive_definite": pd,
             "tolerance": tol12,
@@ -161,10 +199,13 @@ def run_single(args):
         "baseline_positive_definite": baseline_pd,
         "baseline_tolerance": tolerance,
         "extra_scale": str(scale),
+        "minimal_seconds": minimal_seconds,
+        "eclib_init_seconds": init_seconds,
         "mwrank_points_found": len(raw),
         "nonknown_candidates": len(candidates),
         "numerical_new_direction_hits": len(hits),
         "candidate_points": candidates,
+        "baseline_height_seconds": baseline_height_seconds,
         "search_seconds": search_seconds,
         "wall_seconds": time.monotonic() - started,
     }
@@ -235,11 +276,13 @@ def run_parent(args):
                 "status": "timeout", "parameter": f"{a}/{b}",
                 "numerator": a, "denominator": b,
                 "timeout_seconds": args.timeout,
-                "output_tail": "\n".join(partial.splitlines()[-20:]),
+                "output_tail": "\n".join(partial.splitlines()[-30:]),
             }
             records.append(record)
             output.write_text(json.dumps(records, indent=2, sort_keys=True) + "\n")
             print("  TIMEOUT", flush=True)
+            for line in partial.splitlines()[-8:]:
+                print("   ", line, flush=True)
             continue
 
         lines = [line for line in completed.stdout.splitlines() if line.strip()]
@@ -254,10 +297,12 @@ def run_parent(args):
         records.append(record)
         output.write_text(json.dumps(records, indent=2, sort_keys=True) + "\n")
         print(
-            "  status=%s found=%s candidates=%s newdir=%s search_s=%s wall=%s" % (
+            "  status=%s found=%s candidates=%s newdir=%s min_s=%s init_s=%s "
+            "search_s=%s wall=%s" % (
                 record.get("status"), record.get("mwrank_points_found"),
                 record.get("nonknown_candidates"),
                 record.get("numerical_new_direction_hits"),
+                record.get("minimal_seconds"), record.get("eclib_init_seconds"),
                 record.get("search_seconds"), record.get("wall_seconds"),
             ), flush=True
         )
