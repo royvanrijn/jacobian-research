@@ -15,11 +15,11 @@ For each healthy specialization from the height-rank screen it:
 
 The hybrid model choice matters: height arithmetic on the fixed short model is
 fast, while eclib initialization can be extremely slow on the large nonminimal
-homogeneous integral model.  Search therefore happens on a global minimal model
+homogeneous integral model. Search therefore happens on a global minimal model
 without ever processing the known rank-11 subgroup through eclib.
 
-A numerical height-rank jump to 12 is only a TRIAGE HIT.  It is not promoted as
-an exact rank statement.  Exact eclib verification is intentionally deferred
+A numerical height-rank jump to 12 is only a TRIAGE HIT. It is not promoted as
+an exact rank statement. Exact eclib verification is intentionally deferred
 until such a hit exists.
 """
 
@@ -116,15 +116,13 @@ def run_single(args):
             f"unhealthy baseline height lattice rank={baseline_rank} pd={baseline_pd}"
         )
 
-    # eclib can spend a very long time merely initializing on the large
-    # homogeneous model.  Minimalize only the search model; keep E/known for
-    # all height-lattice tests.
     print("PHASE minimal_start", flush=True)
     minimal_started = time.monotonic()
     Emin = E.global_minimal_model()
     minimal_seconds = time.monotonic() - minimal_started
     iso_to_min = E.isomorphism_to(Emin)
-    iso_from_min = iso_to_min.inverse()
+    # Sage Weierstrass isomorphisms invert via ~iso (equivalently dual()).
+    iso_from_min = ~iso_to_min
     print(
         f"PHASE minimal_done seconds={minimal_seconds:.6f} "
         f"disc_bits={ZZ(abs(Emin.discriminant())).nbits()}",
