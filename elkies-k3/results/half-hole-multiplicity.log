@@ -1,0 +1,88 @@
+PARI stack size set to 4294967296 bytes, maximum size set to 4294967296
+holes = 39120
+enumerating norm-10 vectors ...
+norm-10 +/- pairs = 1236314
+
+MINIMAL-REPRESENTATIVE MULTIPLICITY
+   7 norm10-pairs :      1 cosets
+  10 norm10-pairs :      1 cosets
+  12 norm10-pairs :      9 cosets
+  13 norm10-pairs :     18 cosets
+  14 norm10-pairs :     51 cosets
+  15 norm10-pairs :    128 cosets
+  16 norm10-pairs :    326 cosets
+  17 norm10-pairs :   1004 cosets
+  18 norm10-pairs :   2766 cosets
+  19 norm10-pairs :   5915 cosets
+  20 norm10-pairs :   8880 cosets
+  21 norm10-pairs :   8868 cosets
+  22 norm10-pairs :   5894 cosets
+  23 norm10-pairs :   2908 cosets
+  24 norm10-pairs :   1270 cosets
+  25 norm10-pairs :    589 cosets
+  26 norm10-pairs :    280 cosets
+  27 norm10-pairs :    126 cosets
+  28 norm10-pairs :     32 cosets
+  29 norm10-pairs :     21 cosets
+  30 norm10-pairs :     14 cosets
+  31 norm10-pairs :     15 cosets
+  32 norm10-pairs :      1 cosets
+  33 norm10-pairs :      3 cosets
+
+total cosets = 39120
+total norm10 pairs in qualifying cosets = 806238
+
+TOP 50 BY MULTIPLICITY
+  1 mask=0x086dd multiplicity=  33 witness=(1, 0, 1, 1, 1, -2, -3, 1, 0, 1, -1, -2, -2, 2, -2, -1, -2)
+  2 mask=0x0e023 multiplicity=  33 witness=(1, -1, 0, 0, 2, -1, -2, 0, 0, 0, 0, -2, 0, 1, -1, -1, -2)
+  3 mask=0x0eec2 multiplicity=  33 witness=(0, 1, 2, 2, 2, -4, -7, 3, 0, 3, -1, -5, -2, 5, -3, -1, -4)
+  4 mask=0x03005 multiplicity=  32 witness=(1, 0, 1, 2, 2, -2, -4, 0, -2, 0, 0, -2, -1, 1, -2, 0, -2)
+  5 mask=0x01609 multiplicity=  31 witness=(1, 0, 0, 1, 2, 0, -2, 0, 0, 1, 1, -2, -1, 0, -2, 0, -2)
+  6 mask=0x01a60 multiplicity=  31 witness=(0, 0, 0, 0, 2, -1, -3, 0, 0, 1, 0, -1, -1, 2, -2, 0, -2)
+  7 mask=0x02012 multiplicity=  31 witness=(2, -1, 0, 0, 3, 0, -2, 0, -2, 0, 2, -2, 0, -1, -2, 0, -2)
+  8 mask=0x0372b multiplicity=  31 witness=(1, 1, 0, 1, 2, -1, -4, 0, -1, 1, 1, -2, -1, 1, -2, 0, -2)
+  9 mask=0x0480d multiplicity=  31 witness=(1, 0, -1, -1, 2, -2, -2, 0, 0, 0, 0, -1, 0, 2, -1, -2, -2)
+ 10 mask=0x048a3 multiplicity=  31 witness=(1, 1, 2, 2, 2, -3, -6, 1, -2, 2, 0, -3, -2, 2, -3, 0, -2)
+ 11 mask=0x073c8 multiplicity=  31 witness=(0, 0, 0, 1, 0, 0, -1, -1, 1, 1, 0, 0, -1, 1, -1, 0, 0)
+ 12 mask=0x07721 multiplicity=  31 witness=(1, 0, 0, 0, 0, -3, -2, 2, 1, 1, -1, -2, -1, 3, -1, -2, -2)
+ 13 mask=0x07e16 multiplicity=  31 witness=(0, 1, 1, 2, 3, -2, -6, 0, -2, 1, 1, -3, -1, 1, -3, 0, -2)
+ 14 mask=0x0c194 multiplicity=  31 witness=(0, 2, 1, 2, 3, -2, -6, 1, -1, 2, 0, -4, -2, 2, -3, 1, -2)
+ 15 mask=0x0cea8 multiplicity=  31 witness=(0, 0, 0, 1, 0, 1, 0, -1, 0, 1, 1, 1, -2, 0, -1, 1, 0)
+ 16 mask=0x0f1fc multiplicity=  31 witness=(2, 0, 1, 1, 3, -3, -5, 1, -3, 0, 0, -4, -1, 1, -3, -1, -2)
+ 17 mask=0x0feac multiplicity=  31 witness=(0, 0, 1, -1, 0, -1, 0, 1, 0, -1, -1, -1, 1, 1, 1, -1, 0)
+ 18 mask=0x18a50 multiplicity=  31 witness=(0, 0, 0, 0, 1, 0, -1, 0, 0, 1, 2, -1, -2, 0, -2, 1, -1)
+ 19 mask=0x1e1b0 multiplicity=  31 witness=(0, 0, 0, 0, 1, 1, 0, -1, 1, 0, 0, 0, 0, 1, -1, -1, -1)
+ 20 mask=0x00627 multiplicity=  30 witness=(1, -1, -1, 0, 0, 1, 2, -2, 0, -1, 1, 2, 0, -2, 0, 0, 0)
+ 21 mask=0x00f3f multiplicity=  30 witness=(1, -1, -1, -1, 1, 1, 2, -2, 1, -1, 1, 1, 0, -2, 0, 0, 0)
+ 22 mask=0x01bd7 multiplicity=  30 witness=(1, -1, 1, 0, 1, 0, -1, 1, -3, -1, 0, -1, 1, 0, 0, 0, 0)
+ 23 mask=0x01d1e multiplicity=  30 witness=(2, -1, 1, 1, 3, -2, -4, 0, -3, 0, 1, -3, -1, 0, -2, 0, -2)
+ 24 mask=0x073fb multiplicity=  30 witness=(1, -1, 0, -1, 1, 1, 1, -1, -1, -1, 2, 0, -1, -1, -1, 0, 0)
+ 25 mask=0x088ad multiplicity=  30 witness=(1, 0, -1, -1, 0, -1, 0, -1, 0, 0, 0, 1, 0, 0, 0, -1, 0)
+ 26 mask=0x090cb multiplicity=  30 witness=(1, 1, 2, 1, 2, -2, -5, 1, -2, 0, 0, -4, -1, 2, -2, -1, -2)
+ 27 mask=0x099e3 multiplicity=  30 witness=(1, 1, 0, 0, 2, -3, -5, 1, -1, 0, 0, -3, -1, 2, -2, -1, -2)
+ 28 mask=0x0a5db multiplicity=  30 witness=(1, 1, 2, 3, 5, -6, -11, 3, -3, 2, -1, -8, -2, 5, -4, -1, -4)
+ 29 mask=0x0cdc4 multiplicity=  30 witness=(0, 0, 1, 2, 2, -2, -5, 1, -1, 2, 1, -3, -2, 2, -3, 1, -2)
+ 30 mask=0x0ceab multiplicity=  30 witness=(1, -1, 0, -1, 0, -1, 0, 1, -2, -1, -1, 1, 2, 0, 1, -1, 0)
+ 31 mask=0x0e0b2 multiplicity=  30 witness=(0, 1, 0, 0, 1, -1, -2, -1, 0, 0, 0, -2, 0, 1, -1, -1, 0)
+ 32 mask=0x0f78f multiplicity=  30 witness=(1, 1, 1, 1, 2, -4, -6, 1, -1, 1, -1, -4, -1, 3, -3, -1, -2)
+ 33 mask=0x1a913 multiplicity=  30 witness=(1, 1, 2, 2, 3, -4, -8, 2, -3, 2, 0, -5, -2, 3, -4, -1, -3)
+ 34 mask=0x01be4 multiplicity=  29 witness=(0, 0, 1, 0, 0, -1, -1, 1, -1, -1, -2, -1, 1, 0, 0, 0, 0)
+ 35 mask=0x02069 multiplicity=  29 witness=(1, 0, 0, 1, 2, -1, -3, 0, -2, 0, 0, -2, 0, 1, -2, 0, -2)
+ 36 mask=0x030d2 multiplicity=  29 witness=(2, -1, 0, 0, 1, 0, -1, -1, -2, 0, 2, 0, -1, -1, -2, 0, 0)
+ 37 mask=0x03bde multiplicity=  29 witness=(2, -1, 1, 1, 3, -2, -5, 1, -3, 1, 2, -3, -1, 1, -2, 0, -2)
+ 38 mask=0x03bfe multiplicity=  29 witness=(0, 1, 1, 1, 1, -1, -3, -1, -1, 1, 0, -1, -1, 1, -2, 0, 0)
+ 39 mask=0x0544a multiplicity=  29 witness=(2, -1, 2, 1, 2, 0, -3, 0, -2, 0, 1, -2, -1, 0, -3, 0, -2)
+ 40 mask=0x058cd multiplicity=  29 witness=(1, 0, -1, -1, 2, 0, -1, -1, 0, 0, 2, -1, -1, 0, -1, 0, 0)
+ 41 mask=0x06720 multiplicity=  29 witness=(0, 0, 0, 0, 0, 1, 0, -2, 1, -1, 1, 0, 0, -1, -1, 0, 0)
+ 42 mask=0x06e38 multiplicity=  29 witness=(0, 0, 0, 1, 1, 1, 0, -2, 0, -1, 1, -1, 0, -1, -1, 0, 0)
+ 43 mask=0x0808d multiplicity=  29 witness=(1, -2, -1, -3, -2, 2, 6, -1, 0, -2, 0, 4, 2, -2, 2, -1, 2)
+ 44 mask=0x089c5 multiplicity=  29 witness=(1, 0, 1, 2, 2, -2, -5, 1, -1, 2, 0, -3, -2, 2, -2, 1, -2)
+ 45 mask=0x08fc5 multiplicity=  29 witness=(1, 0, 1, 2, 2, 0, -3, 1, -1, 1, 1, -3, -2, 0, -2, 1, -2)
+ 46 mask=0x0a98b multiplicity=  29 witness=(1, 1, 2, 3, 4, -6, -10, 3, -3, 2, -2, -7, -2, 5, -4, -1, -4)
+ 47 mask=0x0b7a3 multiplicity=  29 witness=(1, 1, 0, 0, 2, -3, -4, 1, -1, 1, -1, -2, -1, 3, -2, -1, -2)
+ 48 mask=0x0c7d1 multiplicity=  29 witness=(1, 0, 2, 2, 3, -2, -5, 1, -3, 1, 1, -4, -2, 0, -3, 1, -2)
+ 49 mask=0x0cea9 multiplicity=  29 witness=(1, 0, 2, 1, 2, -1, -4, 1, -2, 1, 1, -3, -2, 0, -3, 1, -2)
+ 50 mask=0x0df25 multiplicity=  29 witness=(1, 0, 1, 2, 4, -5, -8, 2, -3, 1, -1, -5, -1, 4, -3, -1, -4)
+
+saved /Users/royvanrijn/Documents/jacobian-research/elkies-k3/data/holes/half_hole_multiplicity.tsv
+saved /Users/royvanrijn/Documents/jacobian-research/elkies-k3/data/holes/half_hole_witnesses.tsv

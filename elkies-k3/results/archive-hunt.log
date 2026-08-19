@@ -1,0 +1,20 @@
+CDX math.harvard.edu/~elkies/*
+FAILED math.harvard.edu/~elkies/* URLError(ConnectionRefusedError(61, 'Connection refused'))
+CDX www.math.harvard.edu/~elkies/*
+FAILED www.math.harvard.edu/~elkies/* URLError(ConnectionRefusedError(61, 'Connection refused'))
+CDX people.math.harvard.edu/~elkies/*
+FAILED people.math.harvard.edu/~elkies/* URLError(ConnectionRefusedError(61, 'Connectiscanned 200
+HIT ['k3'] http://www.math.harvard.edu:80/~elkies/Misc/sol4.html
+HIT ['shimura'] http://www.math.harvard.edu:80/~elkies/papers/shimcorr1.html
+HIT ['474', '1311'] http://math.harvard.edu:80/~elkies/rqfu/1M_irr-j.txt
+HIT ['474'] http://www.math.harvard.edu:80/~elkies/sel_p2.html
+HIT ['474', '1311'] http://www.math.harvard.edu:80/~elkies/sel_p8.html
+HIT ['k3'] http://people.math.harvard.edu/~elkies/ams12.gp
+scanned 400
+HIT ['k3'] http://people.math.harvard.edu:80/~elkies/Misc/sol4.html
+HIT ['shimura', 'k3'] http://people.math.harvard.edu:80/~elkies/nature.html
+HIT ['shimura'] https://people.math.harvard.edu/~elkies/papers/shimcorr1.html
+HIT ['474'] https://people.math.harvard.edu/~elkies/rk24_1.html
+HIT ['474', '1311'] http://people.math.harvard.edu:80/~elkies/sel_p.html
+HIT ['474'] http://people.math.harvard.edu:80/~elkies/sel_p2.html
+TOTAL HITS = 15

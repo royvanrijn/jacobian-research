@@ -1,0 +1,52 @@
+PARI stack size set to 4294967296 bytes, maximum size set to 4294967296
+enumerating exact norm 10 unresolved_before=39120
+norm=10 pairs= 1236314 new_holes= 39120 resolved= 39120 unresolved=     0
+
+RESOLVED MINIMUM-NORM HISTOGRAM
+minnorm=10 halfnorm=5/2 cosets=39120
+
+unresolved (> 14) = 0
+
+TOP 40 DEEPEST
+1 0x1ffff min 10 half-hole 5/2
+2 0x1fffd min 10 half-hole 5/2
+3 0x1fffb min 10 half-hole 5/2
+4 0x1fffa min 10 half-hole 5/2
+5 0x1fff2 min 10 half-hole 5/2
+6 0x1ffef min 10 half-hole 5/2
+7 0x1ffeb min 10 half-hole 5/2
+8 0x1ffe9 min 10 half-hole 5/2
+9 0x1ffe3 min 10 half-hole 5/2
+10 0x1ffe0 min 10 half-hole 5/2
+11 0x1ffdd min 10 half-hole 5/2
+12 0x1ffdc min 10 half-hole 5/2
+13 0x1ffda min 10 half-hole 5/2
+14 0x1ffd7 min 10 half-hole 5/2
+15 0x1ffd6 min 10 half-hole 5/2
+16 0x1ffd5 min 10 half-hole 5/2
+17 0x1ffd4 min 10 half-hole 5/2
+18 0x1ffd2 min 10 half-hole 5/2
+19 0x1ffce min 10 half-hole 5/2
+20 0x1ffcc min 10 half-hole 5/2
+21 0x1ffc9 min 10 half-hole 5/2
+22 0x1ffc8 min 10 half-hole 5/2
+23 0x1ffc7 min 10 half-hole 5/2
+24 0x1ffc4 min 10 half-hole 5/2
+25 0x1ffbf min 10 half-hole 5/2
+26 0x1ffba min 10 half-hole 5/2
+27 0x1ffb5 min 10 half-hole 5/2
+28 0x1ffb4 min 10 half-hole 5/2
+29 0x1ffb2 min 10 half-hole 5/2
+30 0x1ffaf min 10 half-hole 5/2
+31 0x1ffa6 min 10 half-hole 5/2
+32 0x1ffa1 min 10 half-hole 5/2
+33 0x1ffa0 min 10 half-hole 5/2
+34 0x1ff9e min 10 half-hole 5/2
+35 0x1ff9b min 10 half-hole 5/2
+36 0x1ff9a min 10 half-hole 5/2
+37 0x1ff97 min 10 half-hole 5/2
+38 0x1ff95 min 10 half-hole 5/2
+39 0x1ff92 min 10 half-hole 5/2
+40 0x1ff8b min 10 half-hole 5/2
+
+saved /Users/royvanrijn/Documents/jacobian-research/elkies-k3/data/holes/ranked_half_lattice_holes.tsv

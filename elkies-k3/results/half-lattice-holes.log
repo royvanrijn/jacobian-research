@@ -1,0 +1,79 @@
+total M/2M cosets = 131072
+norm 2 mod 4 cosets = 65792
+norm-2 pairs = 0
+norm-6 pairs = 26672
+bad residue cosets = 26672
+
+QUALIFYING QUADRATIC-SECTION COSETS = 39120
+
+0/1 REPRESENTATIVE NORM HISTOGRAM
+10 141
+14 409
+18 666
+22 1000
+26 1332
+30 1424
+34 1574
+38 1607
+42 1578
+46 1595
+50 1847
+54 2156
+58 1905
+62 1569
+66 1541
+70 1669
+74 1600
+78 1214
+82 1005
+86 1199
+90 1376
+94 1497
+98 1171
+102 812
+106 613
+110 693
+114 776
+118 721
+122 552
+126 394
+130 219
+134 299
+138 380
+142 458
+146 394
+150 305
+154 188
+158 112
+162 101
+166 141
+170 143
+174 174
+178 133
+182 64
+186 48
+190 20
+194 19
+198 31
+202 62
+206 43
+210 41
+214 28
+218 13
+222 8
+226 3
+230 3
+234 14
+238 7
+242 8
+246 10
+250 6
+258 1
+270 1
+274 2
+278 1
+282 2
+286 2
+
+saved /Users/royvanrijn/Documents/jacobian-research/elkies-k3/data/holes/half_lattice_hole_masks.txt
+saved /Users/royvanrijn/Documents/jacobian-research/elkies-k3/data/holes/half_lattice_holes.tsv

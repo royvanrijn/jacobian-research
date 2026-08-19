@@ -1,0 +1,30 @@
+rank = 9
+det = 1280
+
+THETA SHELLS
+norm 2 signed 0
+norm 4 signed 160
+norm 6 signed 224
+norm 8 signed 1792
+norm 10 signed 1344
+norm 12 signed 7456
+norm 14 signed 4288
+norm 16 signed 20128
+norm 18 signed 10112
+norm 20 signed 45474
+
+dual clearing denominator = 20
+dual scaled minimum = 9
+dual minimum = 9/20
+Hermite invariant ~ 1.8064
+
+AUT
+order = 161280
+gens = 4
+structure = C2 x C2 x S8
+
+PERFECTION
+minimal pairs = 80
+span rank of vv^T = 45
+Sym^2 dimension = 45
+perfect = True

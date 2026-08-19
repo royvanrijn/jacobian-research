@@ -1,0 +1,7 @@
+unknowns=226
+equations=221
+A_degree=8
+B_degree=12
+sections=17
+x_degree=4
+y_degree=6

@@ -1,0 +1,5 @@
+hub=5
+neighbors=2,3,4,6,8,10,11,15
+unknowns=98
+equations=117
+naive_dimension=-19
