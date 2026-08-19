@@ -54,6 +54,18 @@ verify_hidden_sections.py
 
 The recovered hidden basis is the preferred generic rank-11 basis. The remaining cleanup task is to remove the last default dependency on `/tmp/newfamily_hidden_sections_complete.sobj` by committing the generated exact section data in a stable source representation.
 
+Generate the deterministic source representation once with:
+
+```bash
+sage -python elliptic-curves/cas/newfamily/export_hidden_sections.py \
+  --input /tmp/newfamily_hidden_sections_complete.sobj \
+  --out elliptic-curves/cas/newfamily/hidden_sections_data.py
+
+sage -python elliptic-curves/cas/newfamily/verify_hidden_sections.py
+```
+
+After successful replay, `hidden_sections_data.py` should be committed and the search tools should use it as the canonical source instead of the `.sobj` fallback.
+
 ### Rational Nagao search
 
 ```text
@@ -97,6 +109,23 @@ The batch verifier is baseline-first:
 4. record each exact rank increase.
 
 A final processed subgroup rank `r` proves `rank(E(Q)) >= r`. It does not prove equality and does not imply full saturation.
+
+### Pinning a verified result
+
+```text
+pin_batch_rank_result.py
+```
+
+Once a baseline-first batch result is complete, promote a compact record into the versioned generated-results directory, for example:
+
+```bash
+python3 elliptic-curves/cas/newfamily/pin_batch_rank_result.py \
+  --input-json artifacts/local/elliptic-curves/newfamily/batch_exact_rank_gain_hits_recovered_v2.json \
+  --parameter 83/6 \
+  --output artifacts/generated-results/elliptic-curves/newfamily_rank14_t83_6_from_batch.json
+```
+
+The pinning step copies only exact verification fields. Raw search populations, payload directories, logs, and restart state remain local.
 
 ## Evidence discipline
 
