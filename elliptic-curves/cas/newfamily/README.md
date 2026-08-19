@@ -1,42 +1,116 @@
-# Newfamily CAS recovery area
+# Newfamily CAS and replay workflow
 
-This directory is reserved for deterministic replay code for the six-root quartic construction documented in:
+This directory contains the canonical Sage/C++ workflow for the six-root quartic family documented in:
 
 - `../../notes/NEWFAMILY_QUARTIC_ROOTS_AND_CONSTANT_SECTIONS.md`
+- `../../notes/NEWFAMILY_RANK14_T83_6.md`
 - `../../notes/NEWFAMILY_REPLAY_CHECKLIST.md`
 - `../../families/newfamily_symmetric_quartic_roots.json`
 
-## Immediate recovery step
-
-The exploratory work was performed largely in `/tmp` on macOS.  Preserve the surviving scripts verbatim before refactoring them:
-
-```bash
-mkdir -p elliptic-curves/cas/newfamily/archive
-
-for f in /tmp/newfamily_*.py /tmp/newfamily_*.cpp /tmp/degree10_*.py; do
-  [[ -e "$f" ]] && cp -v "$f" elliptic-curves/cas/newfamily/archive/
-done
-```
-
-The archive is evidence/provenance, not the final replay interface.
-
-## Intended canonical replay files
-
-The archival scripts should eventually be reduced to these deterministic entry points:
+The primary root set used by the current high-rank specialization search is
 
 ```text
-verify_newfamily_construction.py
-verify_rich_seed_rank9.py
-verify_high_automatic_rank_families.py
-verify_constant_section_quadratic_orbit.py
-verify_constant_section_degree6_orbit.py
-verify_constant_section_degree10_orbit.py
+(-47,-43,-31,30,45,46)
 ```
 
-Each canonical replay should be self-contained enough to run from the repository root with Sage, print explicit PASS/FAIL markers for its theorem-strength identities, and avoid relying on `/tmp` files.
+## Repository policy
+
+Exploratory calculations may use `/tmp` and ignored local artifacts, but reusable logic must move into this directory promptly. A result is not considered part of the research record merely because it exists in a terminal log.
+
+Use these locations consistently:
+
+```text
+elliptic-curves/cas/newfamily/                  canonical replay/search code
+elliptic-curves/notes/                          mathematical interpretation and status
+artifacts/local/elliptic-curves/newfamily/     raw scans, logs, large tables, restart data (ignored)
+artifacts/generated-results/elliptic-curves/   compact pinned certificates/results (versioned)
+```
+
+The current exact high-rank certificate is:
+
+```text
+artifacts/generated-results/elliptic-curves/newfamily_rank14_t83_6_v1.json
+```
+
+It records a baseline-first exact eclib verification at `T=83/6`:
+
+```text
+known hidden sections : rank 11
++ Q2                  : 11 -> 12
++ Q3                  : 12 -> 13
++ Q4                  : 13 -> 14
+```
+
+Hence the pinned claim is `rank >= 14`; no rank upper bound is claimed.
+
+## Current canonical pipeline
+
+### Hidden generic sections
+
+```text
+export_hidden_sections.py
+verify_hidden_sections.py
+```
+
+The recovered hidden basis is the preferred generic rank-11 basis. The remaining cleanup task is to remove the last default dependency on `/tmp/newfamily_hidden_sections_complete.sobj` by committing the generated exact section data in a stable source representation.
+
+### Rational Nagao search
+
+```text
+make_rational_nagao_tables.py
+scan_rational_nagao_tables.cpp
+```
+
+The table builder creates projective local-symbol tables once. The C++ scanner then explores reduced rational `T=a/b` values without point counting in the hot loop.
+
+### Fast specialization triage
+
+```text
+screen_height_rank_rational_candidates.py
+measure_specialized_section_heights.py
+```
+
+The height-rank screen is numerical triage only. It is used to reject pathological specializations cheaply and to estimate whether ordinary point search heights are meaningful. It is not an independence proof by itself.
+
+### Extra-point discovery
+
+```text
+search_unseeded_extra_points_v2.py
+```
+
+This runs unseeded eclib search on a global minimal model with `pp=0`, then tests discovered points against the known rank-11 height lattice using a two-precision Schur-complement residual. Stable Schur hits are only candidates; they are never promoted as rank gains without exact verification.
+
+The `T=11` exact-rank-11 specialization is the numerical control: dependent points there give relative Schur residuals around `4e-76`, while the three exact new directions at `T=83/6` had residuals around `0.23--0.44`.
+
+### Exact rank-gain verification
+
+```text
+batch_verify_v2_rank_gain_hits.py
+verify_v2_rank_gain_hit.py
+```
+
+The batch verifier is baseline-first:
+
+1. process all eleven known specialized sections;
+2. record their exact processed subgroup rank;
+3. process every distinct Schur-hit point;
+4. record each exact rank increase.
+
+A final processed subgroup rank `r` proves `rank(E(Q)) >= r`. It does not prove equality and does not imply full saturation.
 
 ## Evidence discipline
 
-Keep raw scan logs and large tables under ignored `artifacts/local/elliptic-curves/newfamily/`.  Promote only compact deterministic manifests/certificates into `artifacts/generated-results/elliptic-curves/`.
+Raw search logs and large intermediate tables belong under ignored `artifacts/local/elliptic-curves/newfamily/`. Once a computation gives a stable theorem-strength result, promote a compact JSON certificate into `artifacts/generated-results/elliptic-curves/` and add or update a note under `elliptic-curves/notes/`.
 
-Do not infer a full Mordell--Weil rank from the rank of the displayed section subgroup.  Do not promote the final degree-ten constant-section classification until its rational-point closure is replayed by a canonical script.
+For new high-rank specializations, a promoted certificate should include at minimum:
+
+- root set and rational parameter;
+- exact specialized known-subgroup rank;
+- exact rank gain over that subgroup;
+- final processed subgroup rank/lower bound;
+- exact coordinates of rank-increasing points;
+- root number and minimal-discriminant size when available;
+- the replay script used;
+- a clear statement that no upper bound is claimed unless separately proved.
+
+Do not infer a full Mordell--Weil rank from numerical height rank, Schur residuals, root number, or the rank of a displayed subgroup alone.
