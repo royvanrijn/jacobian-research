@@ -4,9 +4,16 @@
 This reuses the calibrated v2 search logic but replaces the old ``.sobj``
 section source with the committed ``hidden_sections_data.py`` representation.
 It therefore requires no ``/tmp/newfamily_hidden_sections_complete.sobj``.
+
+The v2 parent launches isolated child processes via ``Path(__file__)``.  Since
+that lookup happens in the imported v2 module's globals, this shim also points
+``v2.__file__`` at itself so child processes re-enter v3 and retain the git-only
+section loader.
 """
 
 from __future__ import annotations
+
+from pathlib import Path
 
 from sage.all import EllipticCurve, QQ, ZZ
 
@@ -49,6 +56,10 @@ def build_integral_specialization_git(numerator: int, denominator: int, _legacy_
 
 # v2 resolves this symbol dynamically from its module globals inside run_single.
 v2.build_integral_specialization = build_integral_specialization_git
+
+# v2.run_parent launches isolated children using Path(__file__).  Point that
+# module-global name at this shim so the child also uses the git-only loader.
+v2.__file__ = str(Path(__file__).resolve())
 
 
 if __name__ == "__main__":
