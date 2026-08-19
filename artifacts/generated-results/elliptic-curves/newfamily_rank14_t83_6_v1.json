@@ -1,0 +1,81 @@
+{
+  "schema": "newfamily_rank_lower_bound_v1",
+  "status": "verified_exact_subgroup_lower_bound",
+  "family": "newfamily six-root quartic",
+  "roots": [-47, -43, -31, 30, 45, 46],
+  "parameter": "83/6",
+  "numerator": 83,
+  "denominator": 6,
+  "known_subgroup_rank": 11,
+  "exact_rank_gain_over_known": 3,
+  "processed_subgroup_rank": 14,
+  "proved_rank_at_least": 14,
+  "full_rank_upper_bound": null,
+  "root_number": 1,
+  "minimal_discriminant_bits": 169,
+  "point_bits": {
+    "min": 39,
+    "median": 41,
+    "max": 216
+  },
+  "discovery": {
+    "input_hit_count": 13,
+    "unique_hit_count": 13,
+    "independent_hit_count_observed": 3,
+    "nagao_discovery_score": 5.132090535805,
+    "nagao_held_score": 3.650137875399,
+    "method": "unseeded eclib search followed by two-precision Schur-complement triage"
+  },
+  "exact_rank_increases": [
+    {
+      "label": "Q2",
+      "rank_before": 11,
+      "rank_after": 12,
+      "high_relative_schur_residual": "0.43971405055972258352122260698393346329390369183185059328334661131566632769104",
+      "point_minimal": ["-16951807", "1852437557223"],
+      "point_fixed": ["-2722114156253184", "3769442154946420392591360"]
+    },
+    {
+      "label": "Q3",
+      "rank_before": 12,
+      "rank_after": 13,
+      "high_relative_schur_residual": "0.23146760463960278701489208193324956149153735649361218215235686518202869862647",
+      "point_minimal": ["-13752559", "1821538211319"],
+      "point_fixed": ["-2208380243300352", "3706569428268172097617920"]
+    },
+    {
+      "label": "Q4",
+      "rank_before": 13,
+      "rank_after": 14,
+      "high_relative_schur_residual": "0.23425871898606799249222389173475637721114784494127811300346597655145935482502",
+      "point_minimal": ["-4217857", "1724943248823"],
+      "point_fixed": ["-677301762576384", "3510021470235349179432960"]
+    }
+  ],
+  "known_section_processing": [
+    ["U1", 0, 1, 39],
+    ["U2", 1, 2, 39],
+    ["U5", 2, 3, 39],
+    ["U7", 3, 4, 39],
+    ["U3", 4, 5, 40],
+    ["U4", 5, 6, 40],
+    ["U6", 6, 7, 46],
+    ["U9", 7, 8, 47],
+    ["U10", 8, 9, 48],
+    ["U8", 9, 10, 88],
+    ["U0", 10, 11, 216]
+  ],
+  "verification": {
+    "engine": "SageMath 10.9 eclib/mwrank",
+    "mwrank_pp": 1,
+    "saturation_bound_per_process": 0,
+    "ordering": "known sections first, each phase sorted by coordinate bit size",
+    "wall_seconds": 3.102131791994907,
+    "minimal_model_seconds": 0.01358191599138081,
+    "claim": "The submitted exact rational points generate a subgroup of rank 14. This proves rank >= 14 and does not prove rank = 14."
+  },
+  "replay": {
+    "batch_verifier": "elliptic-curves/cas/newfamily/batch_verify_v2_rank_gain_hits.py",
+    "note": "elliptic-curves/notes/NEWFAMILY_RANK14_T83_6.md"
+  }
+}
