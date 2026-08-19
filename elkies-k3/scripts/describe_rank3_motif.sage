@@ -70,7 +70,7 @@ for idx in motif:
     v = V[idx]
 
     sol = B.T.solve_right(v.column())
-    c = vector(QQ, sol)
+    c = vector(QQ, [sol[i,0] for i in range(sol.nrows())])
 
     coords[idx] = c
 
