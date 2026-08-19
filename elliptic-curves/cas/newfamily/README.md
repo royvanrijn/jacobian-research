@@ -43,28 +43,39 @@ known hidden sections : rank 11
 
 Hence the pinned claim is `rank >= 14`; no rank upper bound is claimed.
 
+## Git-only replay status
+
+The active discovery and exact-verification paths have been replayed successfully with the old `/tmp/newfamily_hidden_sections_complete.sobj` and `/tmp/newfamily_rank11_minimal_common.py` unavailable. The mathematical inputs needed for the rank-14 replay now live in git:
+
+```text
+newfamily_rank11_common.py
+newfamily_rank11_minimal_common.py
+hidden_sections_data.py
+hidden_sections.py
+search_unseeded_extra_points_v3.py
+batch_verify_v3_rank_gain_hits.py
+```
+
+The legacy v2 scripts and `.sobj` options remain useful for historical replay, but they are no longer the canonical path.
+
 ## Current canonical pipeline
 
 ### Hidden generic sections
 
 ```text
-export_hidden_sections.py
+hidden_sections_data.py
+hidden_sections.py
 verify_hidden_sections.py
 ```
 
-The recovered hidden basis is the preferred generic rank-11 basis. The remaining cleanup task is to remove the last default dependency on `/tmp/newfamily_hidden_sections_complete.sobj` by committing the generated exact section data in a stable source representation.
+`hidden_sections_data.py` is the committed exact source representation of all eleven hidden generic sections. `verify_hidden_sections.py` checks every section identity on the finite-minimal family and should finish with:
 
-Generate the deterministic source representation once with:
-
-```bash
-sage -python elliptic-curves/cas/newfamily/export_hidden_sections.py \
-  --input /tmp/newfamily_hidden_sections_complete.sobj \
-  --out elliptic-curves/cas/newfamily/hidden_sections_data.py
-
-sage -python elliptic-curves/cas/newfamily/verify_hidden_sections.py
+```text
+VERIFIED_GENERIC_SECTIONS=11/11
+DONE
 ```
 
-After successful replay, `hidden_sections_data.py` should be committed and the search tools should use it as the canonical source instead of the `.sobj` fallback.
+`export_hidden_sections.py` is retained only as provenance for regenerating the portable source from the original Sage serialization.
 
 ### Rational Nagao search
 
@@ -86,22 +97,29 @@ The height-rank screen is numerical triage only. It is used to reject pathologic
 
 ### Extra-point discovery
 
+Canonical entry point:
+
 ```text
-search_unseeded_extra_points_v2.py
+search_unseeded_extra_points_v3.py
 ```
 
-This runs unseeded eclib search on a global minimal model with `pp=0`, then tests discovered points against the known rank-11 height lattice using a two-precision Schur-complement residual. Stable Schur hits are only candidates; they are never promoted as rank gains without exact verification.
+This reuses the calibrated v2 search/Schur logic but loads the committed hidden sections and recursively launches git-only child processes. The `T=11` control was replayed successfully without the old `.sobj` dependency.
+
+The search runs unseeded eclib point discovery on a global minimal model with `pp=0`, then tests discovered points against the known rank-11 height lattice using a two-precision Schur-complement residual. Stable Schur hits are only candidates; they are never promoted as rank gains without exact verification.
 
 The `T=11` exact-rank-11 specialization is the numerical control: dependent points there give relative Schur residuals around `4e-76`, while the three exact new directions at `T=83/6` had residuals around `0.23--0.44`.
 
 ### Exact rank-gain verification
 
+Canonical entry point:
+
 ```text
-batch_verify_v2_rank_gain_hits.py
-verify_v2_rank_gain_hit.py
+batch_verify_v3_rank_gain_hits.py
 ```
 
-The batch verifier is baseline-first:
+The git-only v3 verifier reuses the baseline-first exact eclib logic while constructing the family and known sections entirely from committed source. The `T=83/6` payload has been replayed successfully through this entry point with the old `/tmp` mathematical inputs disabled.
+
+The verification order is:
 
 1. process all eleven known specialized sections;
 2. record their exact processed subgroup rank;
@@ -109,6 +127,8 @@ The batch verifier is baseline-first:
 4. record each exact rank increase.
 
 A final processed subgroup rank `r` proves `rank(E(Q)) >= r`. It does not prove equality and does not imply full saturation.
+
+The older `search_unseeded_extra_points_v2.py` and `batch_verify_v2_rank_gain_hits.py` remain historical compatibility entry points, not the preferred workflow.
 
 ### Pinning a verified result
 
