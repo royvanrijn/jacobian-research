@@ -1,0 +1,36 @@
+{
+  "schema": "newfamily_exact_rank_v1",
+  "family": "newfamily six-root quartic",
+  "roots": [-47, -43, -31, 30, 45, 46],
+  "parameter": "83/6",
+  "numerator": 83,
+  "denominator": 6,
+  "engine": "SageMath 10.9 / eclib / PARI ellrank",
+  "known_generic_specialized_rank": 11,
+  "exact_rank_gain_over_known": 3,
+  "certified_lower_bound": 14,
+  "pari_rank_interval": [14, 14],
+  "exact_rank": 14,
+  "pari_effort": 0,
+  "pari_sha_pairing_rank": 0,
+  "pari_returned_points": 14,
+  "root_number": 1,
+  "rank_increasing_points_minimal": [
+    [-16951807, 1852437557223],
+    [-13752559, 1821538211319],
+    [-4217857, 1724943248823]
+  ],
+  "rank_growth": [
+    {"stage": "known_sections", "rank_after": 11},
+    {"point": "Q2", "rank_before": 11, "rank_after": 12},
+    {"point": "Q3", "rank_before": 12, "rank_after": 13},
+    {"point": "Q4", "rank_before": 13, "rank_after": 14}
+  ],
+  "timing_seconds": {
+    "ellrankinit": 3.797025,
+    "ellrank_effort_0": 1.274649
+  },
+  "replay_script": "elliptic-curves/cas/newfamily/certify_rank_t83_6.py",
+  "mathematical_status": "exact Mordell-Weil rank over Q",
+  "claim": "rank E_(83/6)(Q) = 14"
+}
