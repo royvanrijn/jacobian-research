@@ -28,8 +28,6 @@ from search_unseeded_extra_points import build_integral_specialization
 def naive_log_x(P):
     if P.is_zero():
         return 0.0
-    # Coerce explicitly: coordinates returned after a Weierstrass isomorphism
-    # need not expose the same numerator()/denominator() methods directly.
     x = QQ(P[0])
     n = ZZ(abs(x.numerator()))
     d = ZZ(x.denominator())
@@ -200,7 +198,7 @@ def run_parent(args):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--input-json", required=True)
+    p.add_argument("--input-json")
     p.add_argument("--sections-sobj", default="/tmp/newfamily_hidden_sections_complete.sobj")
     p.add_argument("--timeout", type=int, default=20)
     p.add_argument("--limit", type=int)
@@ -219,6 +217,8 @@ def main():
         if args.numerator is None or args.denominator is None:
             p.error("single mode requires numerator and denominator")
         return run_single(args)
+    if not args.input_json:
+        p.error("parent mode requires --input-json")
     return run_parent(args)
 
 
