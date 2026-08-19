@@ -1,0 +1,59 @@
+{
+  "schema": "newfamily_recovered_pari_generators_v1",
+  "family": "newfamily six-root quartic",
+  "roots": [-47, -43, -31, 30, 45, 46],
+  "engine": "Sage/eclib + PARI ellrank",
+  "records": [
+    {
+      "parameter": "17/7",
+      "pinned_explicit_rank_before_recovery": 12,
+      "exact_rank": 14,
+      "pari_rank_interval": [14, 14],
+      "method": "ellrankinit",
+      "recovered_generators_minimal": [
+        ["1766457566", "135255768178440"],
+        ["3313104458", "6139820480640"]
+      ],
+      "exact_rank_growth": [[12, 13], [13, 14]]
+    },
+    {
+      "parameter": "64/7",
+      "pinned_explicit_rank_before_recovery": 12,
+      "exact_rank": 13,
+      "pari_rank_interval": [13, 13],
+      "method": "ellrankinit",
+      "recovered_generators_minimal": [
+        ["458657463", "1473213176803"]
+      ],
+      "exact_rank_growth": [[12, 13]]
+    },
+    {
+      "parameter": "17/8",
+      "pinned_explicit_rank_before_recovery": 12,
+      "exact_rank": 13,
+      "pari_rank_interval": [13, 13],
+      "method": "ellrankinit",
+      "recovered_generators_minimal": [
+        ["339487679", "321588222720"]
+      ],
+      "exact_rank_growth": [[12, 13]]
+    },
+    {
+      "parameter": "40/7",
+      "status": "pari_error",
+      "known_explicit_rank_lower_bound": 12,
+      "ellrankinit_error": "PariError(17)",
+      "direct_ellrank_error": "PariError(17)",
+      "exact_rank": null
+    },
+    {
+      "parameter": "88/3",
+      "status": "pari_error",
+      "known_explicit_rank_lower_bound": 12,
+      "ellrankinit_error": "PariError(17)",
+      "direct_ellrank_error": "PariError(17)",
+      "exact_rank": null
+    }
+  ],
+  "claim_boundary": "Recovered points are exact rational generators that increase the known subgroup rank. Exact-rank claims are made only where PARI returned a closed interval. The two PariError(17) fibers retain only their explicit lower bounds."
+}
