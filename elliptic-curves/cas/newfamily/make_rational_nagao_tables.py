@@ -21,7 +21,7 @@ from math import log
 from pathlib import Path
 import sys
 
-from sage.all import GF, ZZ
+from sage.all import QQ
 
 ROOTS = (-47, -43, -31, 30, 45, 46)
 
@@ -53,6 +53,15 @@ def load_builder():
     )
 
 
+def coefficient_mod(coefficient, p: int) -> int:
+    q = QQ(coefficient)
+    numerator = int(q.numerator()) % p
+    denominator = int(q.denominator()) % p
+    if denominator == 0:
+        raise ZeroDivisionError(f"coefficient denominator divisible by p={p}")
+    return numerator * pow(denominator, p - 2, p) % p
+
+
 def trace_of_frobenius(a: int, b: int, p: int) -> int:
     total = 0
     for x in range(p):
@@ -66,14 +75,14 @@ def trace_of_frobenius(a: int, b: int, p: int) -> int:
 def polynomial_mod_value(poly, residue: int, p: int) -> int:
     answer = 0
     for coefficient in reversed(poly.list()):
-        answer = (answer * residue + int(ZZ(coefficient) % p)) % p
+        answer = (answer * residue + coefficient_mod(coefficient, p)) % p
     return answer
 
 
 def local_symbol(A, B, residue: int | None, p: int) -> tuple[int, int, int]:
     if residue is None:
-        a = int(ZZ(A[A.degree()]) % p) if A.degree() == 8 else 0
-        b = int(ZZ(B[B.degree()]) % p) if B.degree() == 12 else 0
+        a = coefficient_mod(A[8], p) if A.degree() == 8 else 0
+        b = coefficient_mod(B[12], p) if B.degree() == 12 else 0
     else:
         a = polynomial_mod_value(A, residue, p)
         b = polynomial_mod_value(B, residue, p)
