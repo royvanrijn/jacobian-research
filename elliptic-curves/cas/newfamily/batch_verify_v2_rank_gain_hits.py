@@ -2,16 +2,18 @@
 """Batch exact verification of v2 Schur-complement rank-gain hits.
 
 Consumes one or more JSON outputs from search_unseeded_extra_points_v2.py.
-All stable Schur hits are grouped by rational specialization.  Each
-specialization is rebuilt/minimalized once, its eleven known hidden sections
-are processed once through eclib, and then every distinct flagged candidate
-point is processed into the same Mordell--Weil object.
+All stable Schur hits are grouped by rational specialization. Each
+specialization is rebuilt/minimalized once.
 
-This makes the exact stage efficient and, importantly, can expose more than one
-new independent direction at a specialization: 11 -> 12 -> 13 -> ... .
+Crucially, verification is BASELINE-FIRST:
 
-A reported processed subgroup rank r proves rank(E(Q)) >= r.  This script does
-not prove an upper bound or exact full Mordell--Weil rank.
+1. process all eleven known hidden sections (smallest first among themselves);
+2. record their exact processed subgroup rank;
+3. process all distinct Schur-hit points (smallest first among themselves);
+4. record every exact rank increase.
+
+This makes the decomposition unambiguous.  A final processed subgroup rank r
+proves rank(E(Q)) >= r; it does not prove an upper bound or exact full rank.
 """
 
 from __future__ import annotations
@@ -39,13 +41,9 @@ def parse_parameter(text: str):
 
 
 def candidate_key(hit):
-    # Minimal-model x/y are exact rational strings and stable within a source
-    # specialization.  Normalize sign so Q and -Q are one discovery direction.
     x = QQ(hit["point_minimal"][0])
     y = QQ(hit["point_minimal"][1])
-    yp = str(y)
-    yn = str(-y)
-    return (str(x), min(yp, yn))
+    return (str(x), min(str(y), str(-y)))
 
 
 def collect_hits(paths):
@@ -76,8 +74,6 @@ def collect_hits(paths):
                 if old is None:
                     grouped[parameter][key] = hit
                 else:
-                    # Keep the numerically stronger representative if duplicated
-                    # across H levels / scans.
                     try:
                         old_rel = abs(QQ(old.get("high_relative_residual", "0")))
                         new_rel = abs(QQ(hit.get("high_relative_residual", "0")))
@@ -112,40 +108,33 @@ def verify_specialization(args):
     iso = E.isomorphism_to(Emin)
     known_min = [iso(P) for P in known]
 
-    hit_points = []
+    # Reconstruct and exactly deduplicate flagged points up to sign.
+    unique_hits = []
+    unique_hit_points = []
+    seen = set()
     for h in hits:
         x = QQ(h["point_minimal"][0])
         y = QQ(h["point_minimal"][1])
         Q = Emin([x, y])
         if Q.is_zero():
             raise RuntimeError("flagged candidate is zero")
-        hit_points.append(Q)
-
-    # Exact point de-duplication up to sign after reconstruction.
-    unique_hit_points = []
-    unique_hits = []
-    seen = set()
-    for h, Q in zip(hits, hit_points):
-        x = QQ(Q[0])
-        y = QQ(Q[1])
-        key = (str(x), min(str(y), str(-y)))
+        key = (str(Q[0]), min(str(Q[1]), str(-Q[1])))
         if key in seen:
             continue
         seen.add(key)
         unique_hits.append(h)
         unique_hit_points.append(Q)
 
-    labels = [f"U{i}" for i in range(11)] + [f"Q{i}" for i in range(len(unique_hit_points))]
-    points = known_min + unique_hit_points
-    bits = [max(qbits(P[0]), qbits(P[1])) for P in points]
+    known_bits = [max(qbits(P[0]), qbits(P[1])) for P in known_min]
+    hit_bits = [max(qbits(P[0]), qbits(P[1])) for P in unique_hit_points]
+    known_order = sorted(range(11), key=lambda i: known_bits[i])
+    hit_order = sorted(range(len(unique_hit_points)), key=lambda i: hit_bits[i])
 
-    # Small points first dramatically helps eclib processing on these curves.
-    order = sorted(range(len(points)), key=lambda i: bits[i])
-
+    all_bits = known_bits + hit_bits
     print(
         f"STAGE minimal seconds={minimal_seconds:.6f} "
         f"disc_bits={ZZ(abs(Emin.discriminant())).nbits()} "
-        f"points={len(points)} max_bits={max(bits)}",
+        f"known=11 hits={len(unique_hit_points)} max_bits={max(all_bits)}",
         flush=True,
     )
 
@@ -158,57 +147,86 @@ def verify_specialization(args):
         root_seconds = None
 
     mwcurve = mwrank_EllipticCurve([ZZ(v) for v in Emin.ainvs()])
-    mw = mwrank_MordellWeil(mwcurve, verbose=False, pp=1, maxr=max(32, len(points) + 8))
+    mw = mwrank_MordellWeil(
+        mwcurve, verbose=False, pp=1,
+        maxr=max(32, 11 + len(unique_hit_points) + 8),
+    )
 
     steps = []
-    rank_after_known = None
-    hit_rank_increases = []
-    known_processed = set()
 
-    for position, index in enumerate(order, 1):
+    # Phase 1: exact specialized baseline from the known generic sections.
+    print("STAGE baseline_start", flush=True)
+    for position, index in enumerate(known_order, 1):
         before = len(mw.points())
         ss = time.monotonic()
-        label = labels[index]
+        label = f"U{index}"
         print(
-            f"STAGE process {position}/{len(points)} label={label} "
-            f"bits={bits[index]} rank_before={before}",
-            flush=True,
+            f"STAGE process_known {position}/11 label={label} "
+            f"bits={known_bits[index]} rank_before={before}", flush=True,
         )
-        mw.process([to_mwrank_triple(points[index])], saturation_bound=0)
+        mw.process([to_mwrank_triple(known_min[index])], saturation_bound=0)
         after = len(mw.points())
         seconds = time.monotonic() - ss
-        is_known = index < 11
-        if is_known:
-            known_processed.add(index)
-        elif after > before:
-            hit_index = index - 11
-            hit_rank_increases.append({
-                "hit_index": hit_index,
-                "label": label,
-                "rank_before": before,
-                "rank_after": after,
-                "point_minimal": unique_hits[hit_index].get("point_minimal"),
-                "high_relative_residual": unique_hits[hit_index].get("high_relative_residual"),
-            })
         print(
-            f"STAGE processed label={label} rank={before}->{after} seconds={seconds:.6f}",
-            flush=True,
+            f"STAGE processed_known label={label} rank={before}->{after} "
+            f"seconds={seconds:.6f}", flush=True,
         )
         steps.append({
+            "phase": "known",
             "label": label,
-            "is_known_section": is_known,
-            "bits": bits[index],
+            "bits": known_bits[index],
             "rank_before": before,
             "rank_after": after,
             "seconds": seconds,
         })
 
-        # Because ordering interleaves hits and known sections, record the rank
-        # at the first moment all 11 known sections have been processed.
-        if rank_after_known is None and len(known_processed) == 11:
-            rank_after_known = after
+    baseline_rank = len(mw.points())
+    print(f"STAGE baseline_done rank={baseline_rank}", flush=True)
+
+    # Phase 2: exact candidate gains above that specialized baseline.
+    hit_rank_increases = []
+    print(f"STAGE hits_start count={len(hit_order)}", flush=True)
+    for position, hit_index in enumerate(hit_order, 1):
+        Q = unique_hit_points[hit_index]
+        h = unique_hits[hit_index]
+        before = len(mw.points())
+        ss = time.monotonic()
+        label = f"Q{hit_index}"
+        print(
+            f"STAGE process_hit {position}/{len(hit_order)} label={label} "
+            f"bits={hit_bits[hit_index]} rank_before={before}", flush=True,
+        )
+        mw.process([to_mwrank_triple(Q)], saturation_bound=0)
+        after = len(mw.points())
+        seconds = time.monotonic() - ss
+        gained = after > before
+        if gained:
+            hit_rank_increases.append({
+                "hit_index": hit_index,
+                "label": label,
+                "rank_before": before,
+                "rank_after": after,
+                "point_minimal": h.get("point_minimal"),
+                "point_fixed": h.get("point"),
+                "high_relative_residual": h.get("high_relative_residual"),
+            })
+        print(
+            f"STAGE processed_hit label={label} rank={before}->{after} "
+            f"gain={int(gained)} seconds={seconds:.6f}", flush=True,
+        )
+        steps.append({
+            "phase": "hit",
+            "label": label,
+            "hit_index": hit_index,
+            "bits": hit_bits[hit_index],
+            "rank_before": before,
+            "rank_after": after,
+            "rank_gain": after - before,
+            "seconds": seconds,
+        })
 
     final_rank = len(mw.points())
+    exact_extra_directions = final_rank - baseline_rank
     result = {
         "status": "completed",
         "parameter": parameter,
@@ -216,20 +234,22 @@ def verify_specialization(args):
         "denominator": b,
         "input_hit_count": len(hits),
         "unique_hit_count": len(unique_hit_points),
-        "known_subgroup_rank_when_all_known_processed": rank_after_known,
+        "known_subgroup_rank": baseline_rank,
         "processed_subgroup_rank": final_rank,
+        "exact_rank_gain_over_known": exact_extra_directions,
         "proved_rank_at_least": final_rank,
         "proved_rank_at_least_12": bool(final_rank >= 12),
         "proved_rank_at_least_13": bool(final_rank >= 13),
+        "proved_rank_at_least_14": bool(final_rank >= 14),
         "independent_hit_count_observed": len(hit_rank_increases),
         "hit_rank_increases": hit_rank_increases,
         "root_number": root_number,
         "root_number_seconds": root_seconds,
         "minimal_seconds": minimal_seconds,
         "minimal_discriminant_bits": ZZ(abs(Emin.discriminant())).nbits(),
-        "point_bits_min": min(bits),
-        "point_bits_median": sorted(bits)[len(bits)//2],
-        "point_bits_max": max(bits),
+        "point_bits_min": min(all_bits),
+        "point_bits_median": sorted(all_bits)[len(all_bits)//2],
+        "point_bits_max": max(all_bits),
         "steps": steps,
         "wall_seconds": time.monotonic() - started,
     }
@@ -260,8 +280,7 @@ def run_parent(args):
     total_hits = sum(len(grouped[p]) for p in parameters)
     print(
         f"specializations={len(parameters)} unique_hits={total_hits} "
-        f"timeout={args.timeout}",
-        flush=True,
+        f"timeout={args.timeout}", flush=True,
     )
 
     out = Path(args.output)
@@ -275,8 +294,7 @@ def run_parent(args):
         print(
             f"[{pos}/{len(parameters)}] T={parameter} hits={len(hits)} "
             f"D={metadata.get(parameter,{}).get('discovery')} "
-            f"H={metadata.get(parameter,{}).get('held')}",
-            flush=True,
+            f"H={metadata.get(parameter,{}).get('held')}", flush=True,
         )
 
         safe = parameter.replace("/", "_")
@@ -300,12 +318,8 @@ def run_parent(args):
         ]
         try:
             cp = subprocess.run(
-                cmd,
-                text=True,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                timeout=args.timeout,
-                check=False,
+                cmd, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                timeout=args.timeout, check=False,
             )
         except subprocess.TimeoutExpired as exc:
             partial = exc.stdout or ""
@@ -347,15 +361,11 @@ def run_parent(args):
         out.write_text(json.dumps(records, indent=2, sort_keys=True) + "\n")
 
         print(
-            "  status=%s hits=%s independent_hits=%s rank=%s root=%s wall=%s" % (
-                rec.get("status"),
-                rec.get("unique_hit_count"),
-                rec.get("independent_hit_count_observed"),
-                rec.get("processed_subgroup_rank"),
-                rec.get("root_number"),
-                rec.get("wall_seconds"),
-            ),
-            flush=True,
+            "  status=%s hits=%s baseline=%s exact_gain=%s rank=%s root=%s wall=%s" % (
+                rec.get("status"), rec.get("unique_hit_count"),
+                rec.get("known_subgroup_rank"), rec.get("exact_rank_gain_over_known"),
+                rec.get("processed_subgroup_rank"), rec.get("root_number"),
+                rec.get("wall_seconds")), flush=True,
         )
         if (rec.get("processed_subgroup_rank") or 0) >= 12:
             print(
@@ -366,6 +376,7 @@ def run_parent(args):
     done = [r for r in records if r.get("status") == "completed"]
     verified12 = [r for r in done if (r.get("processed_subgroup_rank") or 0) >= 12]
     verified13 = [r for r in done if (r.get("processed_subgroup_rank") or 0) >= 13]
+    verified14 = [r for r in done if (r.get("processed_subgroup_rank") or 0) >= 14]
     maximum = max((r.get("processed_subgroup_rank", -1) for r in done), default=-1)
     print(json.dumps({
         "output": str(out),
@@ -375,6 +386,7 @@ def run_parent(args):
         "timeouts": sum(r.get("status") == "timeout" for r in records),
         "verified_rank_at_least_12_specializations": len(verified12),
         "verified_rank_at_least_13_specializations": len(verified13),
+        "verified_rank_at_least_14_specializations": len(verified14),
         "maximum_processed_subgroup_rank": maximum,
     }, sort_keys=True), flush=True)
     return 0
