@@ -1,0 +1,77 @@
+vectors = 2622
+triples = 184242
+pairing matrix seconds = 0.048
+
++2 degree:
+ min = 130
+ max = 176
+ mean = 140.53546910755148
+CLIQUE|new_best|restart=0|size=8|vertices=[2312, 1142, 1756, 1445, 2154, 2072, 2435, 306]
+CLIQUE|new_best|restart=1|size=9|vertices=[2313, 2525, 307, 1303, 1859, 1441, 683, 2351, 2143]
+
+BEST +2 CLIQUE SIZE = 9
+indices = [2313, 2525, 307, 1303, 1859, 1441, 683, 2351, 2143]
+clique Gram:
+[[4 2 2 2 2 2 2 2 2]
+ [2 4 2 2 2 2 2 2 2]
+ [2 2 4 2 2 2 2 2 2]
+ [2 2 2 4 2 2 2 2 2]
+ [2 2 2 2 4 2 2 2 2]
+ [2 2 2 2 2 4 2 2 2]
+ [2 2 2 2 2 2 4 2 2]
+ [2 2 2 2 2 2 2 4 2]
+ [2 2 2 2 2 2 2 2 4]]
+
+MOTIF|start size 10 score (0, 80) vertices [2313, 2525, 307, 1303, 1859, 1441, 683, 2351, 2143, 2312]
+MOTIF|new_best|step=27|internal=1|almost=64|vertices=[2313, 2525, 307, 1303, 1859, 1441, 683, 2351, 632, 692]
+MOTIF|new_best|step=40|internal=2|almost=48|vertices=[1002, 2525, 307, 1303, 1859, 1441, 683, 2351, 632, 692]
+MOTIF|new_best|step=1830|internal=3|almost=27|vertices=[1337, 1522, 506, 2135, 437, 737, 1367, 447, 741, 436]
+MOTIF|new_best|step=1832|internal=3|almost=30|vertices=[1337, 1522, 440, 307, 437, 737, 1367, 447, 741, 436]
+MOTIF|new_best|step=1833|internal=3|almost=31|vertices=[1337, 1522, 440, 1410, 437, 737, 1367, 447, 741, 436]
+MOTIF|new_best|step=1845|internal=4|almost=27|vertices=[1337, 1522, 465, 1410, 437, 737, 1367, 447, 741, 436]
+MOTIF|new_best|step=1856|internal=4|almost=32|vertices=[1337, 1522, 465, 1426, 437, 737, 1367, 447, 741, 436]
+MOTIF|new_best|step=2143|internal=6|almost=28|vertices=[1337, 1842, 465, 430, 2475, 737, 1367, 447, 741, 436]
+MOTIF|new_best|step=2628|internal=8|almost=24|vertices=[1337, 1842, 1336, 430, 2475, 737, 1367, 447, 741, 436]
+MOTIF|new_best|step=2645|internal=8|almost=26|vertices=[1337, 514, 1336, 430, 2475, 737, 1367, 447, 741, 436]
+MOTIF|new_best|step=2667|internal=8|almost=28|vertices=[1337, 1675, 1336, 430, 2475, 737, 1367, 447, 741, 436]
+MOTIF|new_best|step=2669|internal=8|almost=32|vertices=[1337, 440, 1336, 430, 2475, 737, 1367, 447, 741, 436]
+MOTIF|new_best|step=7424|internal=9|almost=19|vertices=[1337, 736, 2474, 430, 2475, 737, 1367, 447, 1637, 431]
+MOTIF|new_best|step=7464|internal=9|almost=20|vertices=[1337, 736, 2474, 430, 2475, 737, 1367, 447, 54, 431]
+MOTIF|new_best|step=7510|internal=9|almost=23|vertices=[1337, 736, 2474, 430, 2475, 737, 1367, 447, 2071, 431]
+MOTIF|new_best|step=8172|internal=14|almost=8|vertices=[1337, 736, 2474, 430, 2475, 737, 1367, 447, 1336, 431]
+
+BEST MOTIF
+size = 10
+internal = 14
+two-known = 8
+indices = [1337, 736, 2474, 430, 2475, 737, 1367, 447, 1336, 431]
+
+motif Gram:
+[[ 4 -2 -2 -2  2  2 -2  0 -4  2]
+ [-2  4  0 -2  0 -4  2 -2  2  2]
+ [-2  0  4  2 -4  0 -2 -2  2 -2]
+ [-2 -2  2  4 -2  2  0  2  2 -4]
+ [ 2  0 -4 -2  4  0  2  2 -2  2]
+ [ 2 -4  0  2  0  4 -2  2 -2 -2]
+ [-2  2 -2  0  2 -2  4  2  2  0]
+ [ 0 -2 -2  2  2  2  2  4  0 -2]
+ [-4  2  2  2 -2 -2  2  0  4 -2]
+ [ 2  2 -2 -4  2 -2  0 -2 -2  4]]
+
+internal additive equations:
+(430, 736, 1336)
+(431, 447, 2475)
+(431, 737, 1337)
+(737, 1367, 447)
+(1337, 1367, 2475)
+(430, 1337, 737)
+(430, 2475, 447)
+(736, 1337, 431)
+(1336, 2475, 1367)
+(431, 1336, 736)
+(447, 736, 1367)
+(447, 2474, 430)
+(737, 1336, 430)
+(1367, 2474, 1336)
+
+done

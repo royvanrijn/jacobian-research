@@ -1,0 +1,49 @@
+vectors = 2622
+triples = 184242
+pairing matrix seconds = 0.048
+
++2 degree:
+ min = 130
+ max = 176
+ mean = 140.53546910755148
+CLIQUE|new_best|restart=0|size=7|vertices=[2312, 2092, 2019, 2375, 1689, 47, 1727]
+CLIQUE|new_best|restart=2|size=8|vertices=[1786, 1435, 2051, 894, 2547, 2340, 314, 1109]
+CLIQUE|new_best|restart=15|size=9|vertices=[2330, 1978, 2182, 2198, 1336, 2028, 1996, 1987, 1941]
+
+BEST +2 CLIQUE SIZE = 9
+indices = [2330, 1978, 2182, 2198, 1336, 2028, 1996, 1987, 1941]
+clique Gram:
+[[4 2 2 2 2 2 2 2 2]
+ [2 4 2 2 2 2 2 2 2]
+ [2 2 4 2 2 2 2 2 2]
+ [2 2 2 4 2 2 2 2 2]
+ [2 2 2 2 4 2 2 2 2]
+ [2 2 2 2 2 4 2 2 2]
+ [2 2 2 2 2 2 4 2 2]
+ [2 2 2 2 2 2 2 4 2]
+ [2 2 2 2 2 2 2 2 4]]
+
+MOTIF|start size 8 score (0, 56) vertices [2330, 1978, 2182, 2198, 1336, 2028, 1996, 1987]
+MOTIF|new_best|step=808|internal=1|almost=3|vertices=[1144, 911, 1443, 2094, 817, 888, 1561, 1694]
+MOTIF|new_best|step=810|internal=1|almost=8|vertices=[1144, 2396, 1443, 2094, 817, 888, 1561, 1694]
+MOTIF|new_best|step=812|internal=1|almost=9|vertices=[1144, 2396, 1443, 2094, 817, 1022, 64, 1694]
+MOTIF|new_best|step=824|internal=1|almost=11|vertices=[1144, 2164, 1443, 1217, 817, 549, 1979, 776]
+MOTIF|new_best|step=826|internal=1|almost=12|vertices=[1144, 2164, 1443, 546, 817, 549, 1979, 776]
+MOTIF|new_best|step=827|internal=1|almost=15|vertices=[1144, 2164, 1443, 546, 817, 549, 1979, 945]
+MOTIF|new_best|step=832|internal=1|almost=17|vertices=[1144, 2164, 1443, 546, 817, 549, 2037, 945]
+MOTIF|new_best|step=833|internal=1|almost=21|vertices=[1144, 2164, 1443, 1143, 817, 549, 2037, 945]
+MOTIF|new_best|step=1579|internal=2|almost=9|vertices=[1144, 1310, 1443, 2415, 817, 1262, 2227, 1774]
+MOTIF|new_best|step=1581|internal=2|almost=11|vertices=[1144, 1310, 1443, 2415, 817, 1728, 2227, 1774]
+MOTIF|new_best|step=1634|internal=2|almost=14|vertices=[1144, 1310, 1443, 1814, 817, 92, 1800, 1774]
+MOTIF|new_best|step=1706|internal=3|almost=10|vertices=[1144, 1310, 1443, 1145, 817, 2472, 1943, 1774]
+MOTIF|new_best|step=1715|internal=3|almost=11|vertices=[1144, 1310, 1443, 1145, 817, 2485, 2257, 1774]
+MOTIF|new_best|step=1771|internal=3|almost=14|vertices=[1144, 1310, 1443, 1145, 817, 23, 823, 1774]
+MOTIF|new_best|step=1816|internal=4|almost=11|vertices=[1144, 1310, 1443, 1145, 817, 590, 1442, 1774]
+MOTIF|new_best|step=1952|internal=4|almost=12|vertices=[1144, 1310, 1443, 1145, 817, 1121, 1442, 1774]
+MOTIF|new_best|step=1974|internal=6|almost=3|vertices=[1144, 816, 1443, 1145, 817, 788, 1442, 1774]
+MOTIF|new_best|step=1988|internal=6|almost=9|vertices=[1144, 816, 1443, 1145, 817, 980, 1442, 1774]
+MOTIF|new_best|step=1997|internal=6|almost=12|vertices=[1144, 816, 1443, 1145, 817, 980, 1442, 1908]
+MOTIF|new_best|step=3739|internal=6|almost=14|vertices=[1144, 816, 1443, 1145, 817, 1447, 1442, 1450]
+MOTIF|new_best|step=21014|internal=7|almost=10|vertices=[1144, 816, 1443, 1145, 817, 1666, 1442, 1045]
+MOTIF|new_best|step=28903|internal=8|almost=8|vertices=[1144, 816, 1443, 1145, 817, 1666, 1442, 1698]
+MOTIF|new_best|step=33567|internal=8|almost=9|vertices=[1044, 816, 1443, 1145, 817, 1666, 1442, 1698]

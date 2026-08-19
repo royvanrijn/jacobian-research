@@ -1,0 +1,13 @@
+seed = [1337, 736, 2474]
+rank = 3
+
+SEED GRAM
+[ 4 -2 -2]
+[-2  4  0]
+[-2  0  4]
+det = 32
+
+coordinate Smith invariants = [1, 1, 1]
+primitive row lattice = True
+
+MOTIF IN P,Q,R COORDINATES

@@ -1,0 +1,34 @@
+vectors = 2622
+triples = 184242
+pairing matrix seconds = 0.048
+
++2 degree:
+ min = 130
+ max = 176
+ mean = 140.53546910755148
+CLIQUE|new_best|restart=0|size=7|vertices=[2312, 2167, 2440, 1981, 2430, 2435, 720]
+CLIQUE|new_best|restart=1|size=8|vertices=[2313, 2525, 2084, 476, 587, 2518, 1303, 1187]
+CLIQUE|new_best|restart=31|size=9|vertices=[2127, 2585, 2431, 2375, 2051, 1987, 2115, 1705, 1483]
+
+BEST +2 CLIQUE SIZE = 9
+indices = [2127, 2585, 2431, 2375, 2051, 1987, 2115, 1705, 1483]
+clique Gram:
+[[4 2 2 2 2 2 2 2 2]
+ [2 4 2 2 2 2 2 2 2]
+ [2 2 4 2 2 2 2 2 2]
+ [2 2 2 4 2 2 2 2 2]
+ [2 2 2 2 4 2 2 2 2]
+ [2 2 2 2 2 4 2 2 2]
+ [2 2 2 2 2 2 4 2 2]
+ [2 2 2 2 2 2 2 4 2]
+ [2 2 2 2 2 2 2 2 4]]
+
+MOTIF|start size 6 score (0, 30) vertices [2127, 2585, 2431, 2375, 2051, 1987]
+MOTIF|new_best|step=4667|internal=1|almost=8|vertices=[758, 1552, 1750, 667, 573, 588]
+MOTIF|new_best|step=4699|internal=1|almost=10|vertices=[758, 1552, 1718, 352, 66, 588]
+MOTIF|new_best|step=4733|internal=1|almost=13|vertices=[758, 1552, 373, 307, 2454, 588]
+MOTIF|new_best|step=6552|internal=2|almost=8|vertices=[758, 1552, 132, 1094, 841, 588]
+MOTIF|new_best|step=6650|internal=2|almost=9|vertices=[758, 1552, 321, 1094, 841, 588]
+MOTIF|new_best|step=7324|internal=2|almost=10|vertices=[758, 1552, 2234, 1553, 1378, 588]
+MOTIF|new_best|step=7460|internal=2|almost=12|vertices=[758, 1552, 1570, 1553, 2454, 588]
+MOTIF|new_best|step=7474|internal=4|almost=8|vertices=[758, 1552, 1568, 1553, 2454, 588]
