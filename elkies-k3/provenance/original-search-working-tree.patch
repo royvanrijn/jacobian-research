@@ -1,0 +1,74 @@
+diff --git a/antipode/cli/BUILD b/antipode/cli/BUILD
+index 79c12f9..1c4bc19 100644
+--- a/antipode/cli/BUILD
++++ b/antipode/cli/BUILD
+@@ -132,3 +132,69 @@ cc_binary(
+         "@gflags",
+     ],
+ )
++
++cc_binary(
++    name = "elkies_1311_search_main",
++    srcs = ["elkies_1311_search_main.cc"],
++    malloc = "@mimalloc",
++    deps = [
++        ":logging",
++        "//antipode/base:exact",
++        "//antipode/core:certificate",
++        "//antipode/core:constructions",
++        "//antipode/lattices:ambients",
++        "//antipode/lattices:leech",
++        "//antipode/linalg",
++        "//antipode/search:cluster_engine",
++        "//antipode/search:sa_search",
++        "@abseil-cpp//absl/log",
++        "@abseil-cpp//absl/log:check",
++        "@gflags",
++    ],
++)
++
++cc_binary(
++    name = "elkies_local_repair_main",
++    srcs = ["elkies_local_repair_main.cc"],
++    malloc = "@mimalloc",
++    deps = [
++        ":logging",
++        "//antipode/base:exact",
++        "//antipode/lattices:ambients",
++        "//antipode/lattices:leech",
++        "//antipode/linalg",
++        "//antipode/search:cluster_engine",
++        "//antipode/search:sa_search",
++        "@abseil-cpp//absl/log",
++        "@abseil-cpp//absl/log:check",
++        "@gflags",
++    ],
++)
++
++cc_binary(
++    name = "elkies_niemeier_search_main",
++    srcs = ["elkies_niemeier_search_main.cc"],
++    malloc = "@mimalloc",
++    deps = [
++        ":logging",
++        "//antipode/base:exact",
++        "//antipode/linalg",
++        "@abseil-cpp//absl/log",
++        "@abseil-cpp//absl/log:check",
++        "@gflags",
++    ],
++)
++
++cc_binary(
++    name = "elkies_niemeier_repair_main",
++    srcs = ["elkies_niemeier_repair_main.cc"],
++    malloc = "@mimalloc",
++    deps = [
++        ":logging",
++        "//antipode/base:exact",
++        "//antipode/linalg",
++        "@abseil-cpp//absl/log",
++        "@abseil-cpp//absl/log:check",
++        "@gflags",
++    ],
++)

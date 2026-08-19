@@ -1,0 +1,58 @@
+IDENTIFICATION OF ELKIES RANK-17 ESSENTIAL LATTICE
+==================================================
+
+Candidate:
+  rank17_gram.txt
+
+Properties independently verified:
+  rank                  17
+  positive definite     yes
+  determinant           948 = 2 * 474 = 2 * 6 * 79
+  discriminant SNF      [1^16,948]
+  norm-2 vectors        0
+  norm-4 vectors        2622 signed = 1311 +/- pairs
+  source                 primitive rank-7 slice of 24A1 Niemeier
+
+Positive essential lattice genus:
+  p=2:   1^-16:[4^1]_1
+  p=3:   1^-16 3^-1
+  p=79:  1^16 79^-1
+
+Associated NS lattice:
+  L = U (+) (-Ness)
+
+Hasse invariants of L:
+  p=2     +1
+  p=3     +1
+  p=79    -1
+  infinity -1
+
+Split reference:
+  p=2     -1
+  p=3     -1
+  p=79    -1
+  infinity -1
+
+Thus L differs from the split rational quadratic space at finite
+places {2,3}.
+
+This is the quaternion algebra of discriminant 6.
+
+Elkies, arXiv:0802.1301, explicitly states that the rank-17 K3
+surface used in the high-rank construction corresponds to a rational
+non-CM point on
+
+    X(6,79) / <w_{6*79}>.
+
+Therefore this lattice has the correct quaternion obstruction /
+Shimura component for Elkies's N=6*79 construction.
+
+Elkies, arXiv:0709.2908:
+  - defines Ness as the positive-definite negative of U^\perp in NS;
+  - says suitable Ness are obtained as Niemeier slices;
+  - says the rank-17 surface has 1311 +/- pairs of height-4 sections.
+
+Conclusion:
+  rank17_gram.txt is identified, with very high confidence, as
+  the essential / Mordell-Weil height lattice of Elkies's rank-17
+  elliptic K3 surface.

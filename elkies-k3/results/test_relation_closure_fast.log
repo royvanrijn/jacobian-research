@@ -1,0 +1,53 @@
+basis + indices: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 24, 26, 32, 34, 36, 106]
+basis - indices: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 25, 27, 33, 35, 37, 107]
+
+17-BASIS CLOSURE: 2622 of 2622
+17-BASIS +/- CLOSURE: 2622 of 2622
+
+PREFIX CLOSURES
+k= 2 closure=   6
+k= 3 closure=   7
+k= 4 closure=  11
+k= 5 closure=  18
+k= 6 closure=  26
+k= 7 closure=  38
+k= 8 closure=  44
+k= 9 closure=  90
+k=10 closure= 108
+k=11 closure= 134
+k=12 closure= 246
+k=13 closure= 268
+k=14 closure= 550
+k=15 closure= 710
+k=16 closure=1026
+k=17 closure=2622
+
+GREEDY BASIS ORDER
+k= 1 add=   0 closure=   1
+k= 2 add=  32 closure=   6
+k= 3 add=  36 closure=  12
+k= 4 add=  26 closure=  20
+k= 5 add=   6 closure=  28
+k= 6 add=  10 closure=  40
+k= 7 add=  20 closure=  56
+k= 8 add=  16 closure=  78
+k= 9 add=  12 closure= 108
+k=10 add=   2 closure= 140
+k=11 add=  24 closure= 208
+k=12 add=   8 closure= 316
+k=13 add=  18 closure= 446
+k=14 add=  14 closure= 648
+k=15 add= 106 closure=1032
+k=16 add=  34 closure=1554
+k=17 add=   4 closure=2622
+
+OLD 10-SEED: [2312, 2524, 2063, 1268, 2504, 987, 1362, 2028, 2519, 2440]
+closure: 112
+
+EXTENDING OLD SEED BY ACTUAL CLOSURE
+k=11 add= 832 closure= 256
+k=12 add= 828 closure= 424
+k=13 add= 910 closure= 608
+k=14 add= 768 closure= 880
+k=15 add= 802 closure=1264
+k=16 add= 772 closure=1856

@@ -47,3 +47,31 @@ artifacts/verification/
 .julia/
 
 tmp/
+
+# ----------------------------------------------------------------------
+# Elkies K3 research - transient / reproducible search material
+# ----------------------------------------------------------------------
+
+/elkies-k3/runs/
+/elkies-k3/logs/
+/elkies-k3/snapshots/
+/elkies-k3/checkpoints/
+/elkies-k3/archive-hunt/
+/elkies-k3/niemeier-all/
+
+# Separate sphere-packing working checkout.
+# Relevant modifications are preserved under elkies-k3/provenance/.
+/elkies-k3/sphere-packing/
+
+# Sage generated Python
+**/*.sage.py
+
+# Python cache
+**/__pycache__/
+**/*.py[cod]
+
+# Bazel generated trees/symlinks
+**/bazel-bin/
+**/bazel-out/
+**/bazel-testlogs/
+**/bazel-*/

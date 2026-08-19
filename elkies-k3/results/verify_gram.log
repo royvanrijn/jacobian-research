@@ -1,0 +1,10 @@
+shape: 7 x 7
+symmetric: True
+det: 948
+positive definite: True
+even diagonal: True
+
+Smith invariants:
+[1, 1, 1, 1, 1, 1, 948]
+
+factor(det): 2^2 * 3 * 79

@@ -165,7 +165,15 @@ def parse_ratpoints_output(
             if line.strip():
                 raise RuntimeError(f"unexpected ratpoints output: {line!r}")
             continue
-        x_coordinate = Fraction(int(match[1]), int(match[2]))
+        numerator = int(match[1])
+        denominator = int(match[2])
+
+        # ratpoints represents a rational point at infinity as (1 : 0).
+        # This helper returns affine points only, so skip projective infinity.
+        if denominator == 0:
+            continue
+
+        x_coordinate = Fraction(numerator, denominator)
         y_coordinate = _rational_square_root(
             evaluate_polynomial(model.quartic, x_coordinate)
         )

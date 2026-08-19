@@ -1,0 +1,56 @@
+=== AMBIENT ===
+rank: 24
+det: 1
+symmetric: True
+positive definite: True
+
+=== RANK-7 SECTION ===
+rank: 7
+Gram:
+[18 -5  0  1  0  3 -1]
+[-5  6  1 -1 -1 -1 -1]
+[ 0  1  2  0  0  1  0]
+[ 1 -1  0  2  0  1  0]
+[ 0 -1  0  0  2 -2  0]
+[ 3 -1  1  1 -2 10  3]
+[-1 -1  0  0  0  3  2]
+det: 948
+coordinate Smith invariants: [1, 1, 1, 1, 1, 1, 1]
+primitive: True
+
+=== ORTHOGONAL COMPLEMENT ===
+basis shape: 17 x 24
+rank: 17
+B G C^T zero: True
+symmetric: True
+positive definite: True
+even: True
+det: 948
+factor(det): 2^2 * 3 * 79
+Smith invariants:
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 948]
+
+=== AMBIENT SHELL SANITY ===
+root representatives: 24
+norm4 representatives: 97704
+bad root norms: 0
+bad norm4 norms: 0
+
+=== INDEPENDENT FINGERPRINT ===
+norm-2 +/- pairs: 0
+norm-4 +/- pairs: 1311
+signed norm-4 vectors: 2622
+
+=== SAVED ===
+rank17_basis_coords.txt
+rank17_gram.txt
+rank17_summary.json
+Gram SHA256: ea1330ce903c55624de1705ebedf36f6f5964cdd6ce911927001db82626ff237
+Basis SHA256: 75fb428d54079caae3addc0235e175c83487cc05b4b38c7f0bff079aa9bcfc1b
+
+=== SUCCESS ===
+rank 17
+det 948
+roots 0
+norm4 +/- pairs 1311
+signed norm4 vectors 2622
