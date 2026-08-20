@@ -36,6 +36,16 @@ point-finding formula.  It consumes height-Gram records produced by the
 specialization/point-search stage.  Once the model and sections are recovered,
 that stage can feed this stable interface directly.
 
+### Active reconstruction status
+
+The model-recovery work is now active rather than purely archival.  See
+[`RECONSTRUCTION_PROGRESS.md`](RECONSTRUCTION_PROGRESS.md) for the current
+checkpoint.  As of 2026-08-20 the repository has an exact Coxeter-9 reduction
+of the recovered rank-17 lattice, an optimal determinant-2 extension chain back
+to the full rank-17 saturation, and a strong **numerical** fixed-surface rank-10
+hit on `root-000029`.  The rank-10 hit is not yet an exact rank certificate and
+the canonical rank-17 Weierstrass model is still pending.
+
 ## Candidate TSV contract
 
 Both search drivers consume a tab-separated file with at least:
