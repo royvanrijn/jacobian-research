@@ -64,16 +64,13 @@ def unpack(z,fixed):
     f=np.empty(108); p=freepos(fixed); f[p]=z
     for i,v in fixed.items(): f[i]=v
     return f.reshape(36,3)
-
 def base_raw(z,fixed):
     *_,blocks=reconstruct(unpack(z,fixed))
     return np.concatenate([blocks[0].ravel(),blocks[1].ravel(),.5*blocks[2].ravel(),.25*blocks[3].ravel()])
-
 def branch_norms(A,B):
     disc=padd(p3(A),pmul(B,B),4.,27.)
     jv=padd(pmul(pder(A),B),pmul(A,pder(B)),3.,-2.)
     return float(np.linalg.norm(disc)),float(np.linalg.norm(jv))
-
 def derived45(s):
     x,y,A,B,blocks=reconstruct(s)
     xs=[x[i].copy() for i in range(9)]; ys=[y[i].copy() for i in range(9)]
@@ -83,51 +80,35 @@ def derived45(s):
         yd=-y[i]-pmul(m,xd-x[i])
         xs.append(xd); ys.append(yd); labels.append(f'D{i}{j}')
     return np.asarray(xs),np.asarray(ys),labels,A,B,blocks
-
 def lattice45(chain_vectors):
-    V=chain_vectors[:9]
-    nodes=[V[i].copy() for i in range(9)]
+    V=chain_vectors[:9]; nodes=[V[i].copy() for i in range(9)]
     for i,j in PAIRS: nodes.append(V[i]-V[j])
     return np.asarray(nodes,dtype=np.int64)
-
-def convmat(dx):
-    M=np.zeros((7,3))
-    for j in range(3): M[j:j+5,j]=dx
-    return M
-
 def tangent_basis(rootfree,fixed,step=2e-6,nullity=9):
-    f0=rootfree.copy(); m=len(base_raw(f0,fixed)); J=np.empty((m,len(f0)))
-    for c in range(len(f0)):
-        h=step*max(1.,abs(f0[c])); a=f0.copy(); b=f0.copy(); a[c]+=h; b[c]-=h
+    m=len(base_raw(rootfree,fixed)); J=np.empty((m,len(rootfree)))
+    for c in range(len(rootfree)):
+        h=step*max(1.,abs(rootfree[c])); a=rootfree.copy(); b=rootfree.copy(); a[c]+=h; b[c]-=h
         J[:,c]=(base_raw(a,fixed)-base_raw(b,fixed))/(2*h)
     _,sv,Vt=np.linalg.svd(J,full_matrices=False)
     return Vt[-nullity:],sv
-
 def decode(z,fixed,nanchors):
     s=unpack(z[:104],fixed); xs,ys,labels,A,B,blocks=derived45(s)
     xq=z[104:109]; slopes=z[109:].reshape(nanchors,3)
     return s,xs,ys,labels,A,B,blocks,xq,slopes
-
 def make_residual(z,fixed,anchors,root_disc,root_jv,args,limit=None,proximity=None):
     n=len(anchors); s,xs,ys,labels,A,B,blocks,xq,ms=decode(z,fixed,n)
     use=n if limit is None else min(n,limit)
     ai,pairing,_=anchors[0]; yq=pmul(ms[0],xq-xs[ai])-(pairing/2.)*ys[ai]
     pieces=[blocks[0].ravel(),blocks[1].ravel(),.5*blocks[2].ravel(),.25*blocks[3].ravel()]
-    curve=pmul(yq,yq)-p3(xq)-pmul(A,xq)-B; pieces.append(args.curve_weight*curve)
+    pieces.append(args.curve_weight*(pmul(yq,yq)-p3(xq)-pmul(A,xq)-B))
     for k in range(1,use):
         ai,pairing,_=anchors[k]
         pieces.append(yq+(pairing/2.)*ys[ai]-pmul(ms[k],xq-xs[ai]))
-    dn,jn=branch_norms(A,B)
-    dr=dn/max(root_disc,1e-300); jr=jn/max(root_jv,1e-300)
-    pieces.append(np.asarray([
-        args.branch_weight*max(0.,args.min_branch_ratio-dr),
-        args.branch_weight*max(0.,args.min_branch_ratio-jr),
-    ]))
-    if proximity is not None and args.proximity_weight>0:
-        pieces.append(args.proximity_weight*(z[:104]-proximity))
+    dn,jn=branch_norms(A,B); dr=dn/max(root_disc,1e-300); jr=jn/max(root_jv,1e-300)
+    pieces.append(np.asarray([args.branch_weight*max(0.,args.min_branch_ratio-dr),args.branch_weight*max(0.,args.min_branch_ratio-jr)]))
+    if proximity is not None and args.proximity_weight>0: pieces.append(args.proximity_weight*(z[:104]-proximity))
     return np.concatenate(pieces)
-
-def diagnostics(z,fixed,anchors,H,qvec,root_disc,root_jv):
+def diagnostics(z,fixed,anchors,root_disc,root_jv):
     n=len(anchors); s,xs,ys,labels,A,B,blocks,xq,ms=decode(z,fixed,n)
     ai,pairing,_=anchors[0]; yq=pmul(ms[0],xq-xs[ai])-(pairing/2.)*ys[ai]
     base=max(float(np.max(np.abs(b))) for b in blocks)
@@ -153,8 +134,7 @@ ap.add_argument('--out',type=Path,default=BASE/'results/rank10-full-coxeter-v2')
 args=ap.parse_args()
 root=args.root.resolve(); chain=args.chain.resolve(); out=args.out.resolve(); out.mkdir(parents=True,exist_ok=True)
 meta=json.loads((root/'candidate.json').read_text()); roots=np.loadtxt(root/'slopes.txt').reshape(36,3)
-fixed=fixed_from_meta(meta); rootfree=pack(roots,fixed); rx,ry,rA,rB=reconstruct(roots); root_disc,root_jv=branch_norms(rA,rB)
-# previous line intentionally overwritten below with actual A/B
+fixed=fixed_from_meta(meta); rootfree=pack(roots,fixed)
 _,_,A0,B0,_=reconstruct(roots); root_disc,root_jv=branch_norms(A0,B0)
 H=np.loadtxt(BASE/'data/lattice/short_vector_basis_gram.txt',dtype=np.int64)
 Bsel=np.loadtxt(chain/'selected-vectors.txt',dtype=np.int64); qvec=Bsel[9]
@@ -172,12 +152,9 @@ print('jacobian singular tail =',' '.join(f'{x:.3e}' for x in sv[-12:]))
 print('root branch norms: delta=%.6e jvar=%.6e'%(root_disc,root_jv)); print()
 rng=np.random.default_rng(args.seed); best=None; n=len(anchors)
 for restart in range(args.restarts):
-    if restart==0: b0=rootfree.copy()
-    else: b0=rootfree+rng.normal(0,args.tangent_scale,size=len(N))@N
-    # project tangent start back onto the Coxeter locus before adding Q
+    b0=rootfree.copy() if restart==0 else rootfree+rng.normal(0,args.tangent_scale,size=len(N))@N
     proj=least_squares(lambda z:base_raw(z,fixed),b0,method='trf',jac='2-point',max_nfev=500,ftol=1e-12,xtol=1e-12,gtol=1e-12,x_scale='jac')
-    b0=proj.x
-    s0=unpack(b0,fixed); xs0,ys0,_,_,_,_=derived45(s0)
+    b0=proj.x; s0=unpack(b0,fixed); xs0,ys0,_,_,_,_=derived45(s0)
     z=np.zeros(104+5+3*n); z[:104]=b0
     coeff=rng.normal(size=9); coeff/=max(np.linalg.norm(coeff),1e-12); z[104:109]=coeff@xs0[:9]+rng.normal(0,.2,size=5)
     slope_scale=max(.25,float(np.median(np.abs(s0)))); z[109:]=rng.normal(0,slope_scale,size=3*n)
@@ -186,7 +163,7 @@ for restart in range(args.restarts):
         fun=lambda zz,L=lim:make_residual(zz,fixed,anchors,root_disc,root_jv,args,L,rootfree)
         res=least_squares(fun,z,method='trf',jac='2-point',max_nfev=args.max_nfev,ftol=1e-12,xtol=1e-12,gtol=1e-12,x_scale='jac')
         z=res.x; stages.append((lim,int(res.nfev),float(np.linalg.norm(res.fun))))
-    base,curve,line,dr,jr,data=diagnostics(z,fixed,anchors,H,qvec,root_disc,root_jv)
+    base,curve,line,dr,jr,data=diagnostics(z,fixed,anchors,root_disc,root_jv)
     score=max(base,curve,line); usable=dr>=args.min_branch_ratio and jr>=args.min_branch_ratio
     isbest=usable and (best is None or score<best[0])
     print(f'FULL45|restart={restart}|score={score:.3e}|base={base:.3e}|curve={curve:.3e}|line={line:.3e}|delta_ratio={dr:.3e}|jvar_ratio={jr:.3e}|usable={int(usable)}'+('|BEST' if isbest else ''),flush=True)
