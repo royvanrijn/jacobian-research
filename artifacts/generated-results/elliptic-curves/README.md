@@ -8,6 +8,14 @@ and restart checkpoints belong under the ignored
 The JSON manifests are generated and replayed by commands in the programme's
 [reproduction catalogue](../../../elliptic-curves/REPRODUCE.md).
 
+`icarm_curve273_rank30_v1.json` pins the 2026 public rank-record curve and all
+30 displayed rational points. Exact finite good-reduction quotients give a
+full-column-rank binary matrix, while a separate modulo-23 2-division witness
+excludes rational 2-torsion. It proves `rank >= 30` unconditionally. The
+numerical height determinant is diagnostic only; no unconditional exact-rank
+or rank-31 claim is made. A second Sage implementation independently replays
+the finite groups and discrete logarithms.
+
 `newfamily_rank14_t83_6_v1.json` records the six-root quartic specialization
 `T=83/6` for roots `(-47,-43,-31,30,45,46)`. Exact baseline-first eclib
 processing gives the eleven known hidden sections rank 11 and three further

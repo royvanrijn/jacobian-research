@@ -165,7 +165,7 @@ check:
 	$(PYTHON) scripts/audit_repository_hygiene.py
 
 verify-elliptic-curves:
-	$(PYTHON) -m unittest discover -s elliptic-curves/tests -v
+	PYTHONPATH=elliptic-curves:elliptic-curves/cas $(PYTHON) -m unittest discover -s elliptic-curves/tests -v
 	$(PYTHON) elliptic-curves/scripts/verify_family_data.py
 	$(PYTHON) elliptic-curves/scripts/verify_benchmarks.py
 	$(PYTHON) elliptic-curves/scripts/verify_fermigier_rank_certificates.py
@@ -174,6 +174,7 @@ verify-elliptic-curves:
 	$(PYTHON) elliptic-curves/scripts/verify_fermigier_crt_seed.py
 	$(PYTHON) elliptic-curves/scripts/verify_kihara_rank14.py
 	$(PYTHON) elliptic-curves/scripts/verify_e29_independence.py
+	$(PYTHON) elliptic-curves/cas/verify_icarm_curve273_rank30.py --check
 
 verify-global-low-degree-census:
 	$(PYTHON) scripts/verify_global_low_degree_census.py

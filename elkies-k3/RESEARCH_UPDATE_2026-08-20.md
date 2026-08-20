@@ -2,6 +2,13 @@
 
 This note records the current state of the `elkies-k3` branch of the project after the recent reconstruction work. It is intentionally split into exact/computationally verified results, failed approaches, and the current frontier.
 
+**Later-day consolidation.** The arithmetic identification and lattice results
+below remain current, but the explicit-construction frontier has moved to the
+E6/MW3 neighbor described in
+[`E6_P2_REDUCTION_2026-08-20.md`](E6_P2_REDUCTION_2026-08-20.md) and the
+consolidated [`RECONSTRUCTION_PROGRESS.md`](RECONSTRUCTION_PROGRESS.md). The
+older `E8+A2^3` rank-jump system is now a fallback branch.
+
 ## Executive summary
 
 The project has moved from a broad “recover Elkies's missing rank-17 K3 model from its Mordell–Weil lattice” search into a much more constrained reconstruction problem.
@@ -487,24 +494,18 @@ The current experiment is to eliminate `s1` and `mu` analytically and solve the 
 
 The immediate goal is now:
 
-1. Solve/parameterize the rank-jump locus in `(lambda,mu)` for the `E8+A2^3` family.
-2. Recover an algebraic relation
-
-   `F(lambda,mu)=0`.
-
-3. Determine the three explicit generic sections and verify their height lattice is
-
-   ```text
-   (1/3) * [ 8 -1  0]
-           [-1 10  0]
-           [ 0  0 12].
-   ```
-
-4. Identify the resulting genus/parameter curve with Elkies's Shimura curve `X(6,79)`.
-5. Locate the non-CM point corresponding to Elkies's `t=14/13` orbit.
-6. Use neighbor transformations between elliptic fibrations to move from this rank-3 intermediate model to the rootless rank-17 fibration.
-7. Reproduce the known E29 specialization as a calibration target.
-8. Only after reproducing E29, launch a rank-30 specialization search.
+1. Complete the seven-core `GF(31)` E6/P1 reconstruction tranche.
+2. Exhaust the reduced 837-case canonical `P2` search on every reconstructed
+   surface and both I2-fiber labelings.
+3. Retain only a section independent from `P1` and `P3` under the exact
+   function-field group law.
+4. Lift a successful modular seed at several primes and recognize its
+   characteristic-zero coefficients.
+5. Verify the rank-3 height lattice and identify its parameter curve with the
+   intended `X(6,79)` component.
+6. Use neighbor transformations to move to the rootless rank-17 fibration.
+7. Reproduce E29 as a mechanism calibration, then search for specializations
+   beyond the now-public rank-at-least-30 record.
 
 This is now a concrete algebraic reconstruction programme rather than an unconstrained search.
 

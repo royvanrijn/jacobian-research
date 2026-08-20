@@ -20782,7 +20782,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:57b6cb95310985e30b48afacefc0e803253f37b2aa5d441d208930484c91f38a",
+      "artifact_hash": "sha256:583c8c7c8956486ccdd2acca7fbea3ddf667567958b957aed9e926987cced5a8",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -20817,7 +20817,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:57b6cb95310985e30b48afacefc0e803253f37b2aa5d441d208930484c91f38a",
+      "artifact_hash": "sha256:583c8c7c8956486ccdd2acca7fbea3ddf667567958b957aed9e926987cced5a8",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -20849,7 +20849,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:57b6cb95310985e30b48afacefc0e803253f37b2aa5d441d208930484c91f38a",
+      "artifact_hash": "sha256:583c8c7c8956486ccdd2acca7fbea3ddf667567958b957aed9e926987cced5a8",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -20940,7 +20940,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:57b6cb95310985e30b48afacefc0e803253f37b2aa5d441d208930484c91f38a",
+      "artifact_hash": "sha256:583c8c7c8956486ccdd2acca7fbea3ddf667567958b957aed9e926987cced5a8",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -22833,7 +22833,7 @@
       "kind": "open_problem",
       "state": "parked",
       "title": "Plane-Jacobian universal boundary and degree frontier",
-      "scope": "UCBS1 proves degree-independent purity and H_Z^0 vanishing for the logarithmic cotangent cokernel, while LCDS1 places conductor mismatches in H_Z^1. PF2LNP1, PF2CLP1, PF2UCE1, LCBBC1, LCCT1, LKGD1, LTKT1, and PF2OTT1 classify the known F2 logarithmic packets and give exact cyclic root contribution 27 with zero outgoing-tail correction. PF2APF1 proves that purity requires at least one additional affine-branch boundary component, raising the squarefree/double source floors to 28/49. It bounds the geometric degrees by 6<=d<=9375 and 12<=d<=9375 and every ramified row by 2<=e<=d-1 and f<=floor((d-1)/e), but a coarse purity signature exists at every remaining d. PF2ATC1 reduces the unknown target curve to 24 normalization charts (deg p,deg q)=(3k,5k), 1<=k<=24, with projective degree 5k<=120, top implicit form P^(5k), an affine singularity, and a nonunit divided-difference collision/critical ideal. PF2K1C1 solves the first chart's collision geometry by one explicit quartic and proves that its generic target is a rational quintic with four ordinary affine nodes and a delta-2 (2,5) infinity cusp. PF2K1I1 gives its exact twelve-support implicit quintic and factors the pulled-back target gradient as the degree-eight nodal conductor times (q',-p'). PF2K1PB1 restores that quintic to fixed target coordinates, computes its carrier residue and finite eight-jet contact interface, and proves that every Keller pullback is reduced with affine singular/conductor scheme equal to the etale base change of the target singularities. PF2K1JF1 proves the target quintic is irreducible in every k=1 specialization, replaces seven normalized carrier conditions by four parameter-recovery equations plus three exact weighted compatibility equations, and separates the false C^3/s^2 origin factors from the invariant terminal leading fiber. PCJDP1 proves that the primitive (3,5) seven-jet packet ends exactly at raw-jet saturation and gives an explicit cusp-plus-three-node nonimmersion chart, but does not identify its jet ramification with a logarithmic point defect. PF2K1CC1 proves that every k=1 degeneration still has affine delta 4 and the same exact degree-eight conductor divisor, with affine Keller-pullback normalization defect at most 4*(d-1); only the finite singular-fiber counts and boundary distribution remain. PF2K1TN1 proves that every fs tame Kummer toroidal packet over a resolved target node, including the split smooth model and the collided cyclic z^e=x*y model with its full exceptional chain, is log-etale and has zero logarithmic cokernel and localized ch2. Hence target conductor length cannot be charged automatically. Its general SNC formula also proves that full-rank exponent data force zero cokernel and that a rank-one packet can have singular determinant support only after two explicit logarithmic-unit first jets vanish; failure of a toroidal chart is necessary but not sufficient for a point defect. PAER1 proves that every affine reduced-curve singularity, including the cusp-plus-three-node stratum, pulls through a Keller map by strict etale base change on embedded resolutions. Its ordinary conductor and carrier-parameter rank drop are not finite pieces of the relative logarithmic module; only compactification-boundary attachments remain. Under LUAF1's minimal transverse unibranch SNC hypotheses such a boundary point has local correction q_p*m_C and a complete residue-degree-f fiber has total correction m_C*f; q_p is distinct from the transverse divisorial index e, and those hypotheses still have to be extracted from the source. LCAD1 gives the general isolated-Fitting lower ledger m_C*f-h+c; for an ordinary cusp it ranges from f on smooth folds to 2*f on node-saturated packets. PF2PPA1 places every target puncture on the extracted (5,2) divisor with contact k. Although a formal direct terminal comparison would force lambda=125/729 and e=3, the terminal neighborhood is already resolved and every divisor extracted above it maps to one point; it supplies no affine-row slot. LCHB1 proves the degree-independent global logarithmic ch2 and boundary-blowup identities and computes provisional F2 budgets (7*d-8)/2 and (7*d-13)/2 on the current common partial model. After the exact root class 27 the degree-floor virtual residuals are -10 and 17/2. PF2K1L1 computes the generic k=1 affine divisorial contribution as e*f*(b-7)-e^2*n/2 and gives the all-signature conditional squarefree/double point formulas (e^2*n-2*e*f*(b-7)-20-s_X)/2 and (e^2*n-2*e*f*(b-7)+17-s_X)/2 with exact parity gates. On the generic cusp face, the incidence-sensitive cusp ledger tightens these effectivity bounds without changing parity. PF2K1M1 proves complement group Z on every immersed distinct-image k=1 collision partition and on the generic A_2+3*A_1 and 2*A_2+2*A_1 cusp strata. Their positive affine-sheet remainder prevents one component meridian from acting transitively, so each of these seven strata requires a second ramified affine target component and has conditional source floors 29/50; its Chern compiler must contain two affine divisorial packets. The first topological escape is E_6+A_1, whose noncyclic group has an exact transitive degree-six fixed-sheet action, so its multiplicity-three boundary packet must be combined with the global Chern budget. The primary global target is therefore to supply the complete fixed-coordinate F2 Laurent pair and factor its explicit quintic only at the unresolved source boundary in order to locate the required affine divisors, determine their (e,f,E^2) data, and extract the local exponent matrices and logarithmic unit derivatives. Finite affine fiber counts remain useful boundary-escape data but are not logarithmic point corrections. Only rank-one packets satisfying both first-jet equations require higher expansion; the complement/conductor calculation must still cover severe k=1 image mergers, the E_8 endpoint, and k=2..24 if k=1 is not forced. Independently, PJ43A1, PJ72Q1, RSE3, and PJ72108D1 close the audited (72,108)/(108,72) row and leave the conditional larger-coordinate frontier at 125. PF2KO1, PF2TR1, PF2GC1, PF2GA1, PF2CW1, PCW1, PF2CS1, and PF2NF1 classify substantial necessary data on the first F2 row but do not supply that global branch-curve factorization, global degree, meridian completion, complete Chern filtration, or lower-Laurent realization. Degree-specific calculations remain regression fixtures for the universal compiler; they do not exclude (75,125), improve the coordinate-degree frontier 125, or prove JC(2).",
+      "scope": "UCBS1 proves degree-independent purity and H_Z^0 vanishing for the logarithmic cotangent cokernel, while LCDS1 places conductor mismatches in H_Z^1. PF2LNP1, PF2CLP1, PF2UCE1, LCBBC1, LCCT1, LKGD1, LTKT1, and PF2OTT1 classify the known F2 logarithmic packets and give exact cyclic root contribution 27 with zero outgoing-tail correction. PF2APF1 proves that purity requires at least one additional affine-branch boundary component, raising the squarefree/double source floors to 28/49. It bounds the geometric degrees by 6<=d<=9375 and 12<=d<=9375 and every ramified row by 2<=e<=d-1 and f<=floor((d-1)/e), but a coarse purity signature exists at every remaining d. PF2ATC1 reduces the unknown target curve to 24 normalization charts (deg p,deg q)=(3k,5k), 1<=k<=24, with projective degree 5k<=120, top implicit form P^(5k), an affine singularity, and a nonunit divided-difference collision/critical ideal. PF2K1C1 solves the first chart's collision geometry by one explicit quartic and proves that its generic target is a rational quintic with four ordinary affine nodes and a delta-2 (2,5) infinity cusp. PF2K1I1 gives its exact twelve-support implicit quintic and factors the pulled-back target gradient as the degree-eight nodal conductor times (q',-p'). PF2K1PB1 restores that quintic to fixed target coordinates, computes its carrier residue and finite eight-jet contact interface, and proves that every Keller pullback is reduced with affine singular/conductor scheme equal to the etale base change of the target singularities. PF2K1JF1 proves the target quintic is irreducible in every k=1 specialization, replaces seven normalized carrier conditions by four parameter-recovery equations plus three exact weighted compatibility equations, and separates the false C^3/s^2 origin factors from the invariant terminal leading fiber. PCJDP1 proves that the primitive (3,5) seven-jet packet ends exactly at raw-jet saturation and gives an explicit cusp-plus-three-node nonimmersion chart, but does not identify its jet ramification with a logarithmic point defect. PF2K1CC1 proves that every k=1 degeneration still has affine delta 4 and the same exact degree-eight conductor divisor, with affine Keller-pullback normalization defect at most 4*(d-1); only the finite singular-fiber counts and boundary distribution remain. PF2K1TN1 proves that every fs tame Kummer toroidal packet over a resolved target node, including the split smooth model and the collided cyclic z^e=x*y model with its full exceptional chain, is log-etale and has zero logarithmic cokernel and localized ch2. Hence target conductor length cannot be charged automatically. Its general SNC formula also proves that full-rank exponent data force zero cokernel and that a rank-one packet can have singular determinant support only after two explicit logarithmic-unit first jets vanish; failure of a toroidal chart is necessary but not sufficient for a point defect. PAER1 proves that every affine reduced-curve singularity, including the cusp-plus-three-node stratum, pulls through a Keller map by strict etale base change on embedded resolutions. Its ordinary conductor and carrier-parameter rank drop are not finite pieces of the relative logarithmic module; only compactification-boundary attachments remain. Under LUAF1's minimal transverse unibranch SNC hypotheses such a boundary point has local correction q_p*m_C and a complete residue-degree-f fiber has total correction m_C*f; q_p is distinct from the transverse divisorial index e, and those hypotheses still have to be extracted from the source. LCAD1 gives the general isolated-Fitting lower ledger m_C*f-h+c; for an ordinary cusp it ranges from f on smooth folds to 2*f on node-saturated packets. PF2PPA1 places every target puncture on the extracted (5,2) divisor with contact k. Although a formal direct terminal comparison would force lambda=125/729 and e=3, the terminal neighborhood is already resolved and every divisor extracted above it maps to one point; it supplies no affine-row slot. LCHB1 proves the degree-independent global logarithmic ch2 and boundary-blowup identities and computes provisional F2 budgets (7*d-8)/2 and (7*d-13)/2 on the current common partial model. After the exact root class 27 the degree-floor virtual residuals are -10 and 17/2. PF2K1L1 computes the generic k=1 affine divisorial contribution as e*f*(b-7)-e^2*n/2 and gives the all-signature conditional squarefree/double point formulas (e^2*n-2*e*f*(b-7)-20-s_X)/2 and (e^2*n-2*e*f*(b-7)+17-s_X)/2 with exact parity gates. On the generic cusp face, the incidence-sensitive cusp ledger tightens these effectivity bounds without changing parity. PF2K1M1 proves complement group Z on every immersed distinct-image k=1 collision partition and on the generic A_2+3*A_1 and 2*A_2+2*A_1 cusp strata. Their positive affine-sheet remainder prevents one component meridian from acting transitively, so each of these seven strata requires a second ramified affine target component and has conditional source floors 29/50; its Chern compiler must contain two affine divisorial packets. The first topological escape is E_6+A_1, whose noncyclic group has an exact transitive degree-six fixed-sheet action, so its multiplicity-three boundary packet must be combined with the global Chern budget. PF2D6E1 excludes the normal even terminal exponents r=6,8,10; the normal odd rows and nonnormal conductor slices remain. The primary global target is therefore to supply the complete fixed-coordinate F2 Laurent pair and factor its explicit quintic only at the unresolved source boundary in order to locate the required affine divisors, determine their (e,f,E^2) data, and extract the local exponent matrices and logarithmic unit derivatives. Finite affine fiber counts remain useful boundary-escape data but are not logarithmic point corrections. Only rank-one packets satisfying both first-jet equations require higher expansion; the complement/conductor calculation must still cover severe k=1 image mergers, the E_8 endpoint, and k=2..24 if k=1 is not forced. Independently, PJ43A1, PJ72Q1, RSE3, and PJ72108D1 close the audited (72,108)/(108,72) row and leave the conditional larger-coordinate frontier at 125. PF2KO1, PF2TR1, PF2GC1, PF2GA1, PF2CW1, PCW1, PF2CS1, and PF2NF1 classify substantial necessary data on the first F2 row but do not supply that global branch-curve factorization, global degree, meridian completion, complete Chern filtration, or lower-Laurent realization. Degree-specific calculations remain regression fixtures for the universal compiler; they do not exclude (75,125), improve the coordinate-degree frontier 125, or prove JC(2).",
       "canonical_source": "plane-jc/NEXT_DEGREE_FRONTIER.md",
       "dependencies": [
         "PJ1",
@@ -22879,7 +22879,8 @@
         "PF2PPA1",
         "LCHB1",
         "PF2K1L1",
-        "PF2K1M1"
+        "PF2K1M1",
+        "PF2D6E1"
       ],
       "checker": null,
       "proof_type": "not-applicable",
@@ -30646,6 +30647,37 @@
       "priority": "primary"
     },
     {
+      "id": "ECR30",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Unconditional independent replay of the public rank-at-least-30 curve",
+      "scope": "For the 2026 public ICARM curve 273, all thirty displayed rational points satisfy the integral equation exactly. The Q-isomorphism X=36*x+3, Y=108*(2*y+x) transports them to an integral short model. Their images in exact exhaustive finite good-reduction quotients at 25 explicit primes give a stacked 31-by-30 binary matrix of column rank thirty, while the short 2-division cubic has no root modulo 23 and hence the curve has no rational 2-torsion. Infinite descent proves the thirty points Z-independent, so rank E(Q)>=30 unconditionally. PARI/GP verifies that the displayed model is global minimal, with exact conductor 2381958488309327728488641214562148525681586925734398576894288277390640894675828305511266759053188773997283310012808983216600083938367948090232306090, root number +1, and trivial torsion. A separate Sage implementation reconstructs the finite groups through invariant factors and discrete logarithms and independently obtains binary rank thirty. The pinned artifact is artifacts/generated-results/elliptic-curves/icarm_curve273_rank30_v1.json with SHA-256 e2a7a322fbd4703af4239f497749a69a68f9d5149aa8a1f696b39ab3941a3284. This closes the operational rank-at-least-30 target but proves neither exact rank 30 nor rank at least 31.",
+      "canonical_source": "elliptic-curves/notes/ICARM_CURVE273_RANK30.md",
+      "dependencies": [
+        "ECR17",
+        "external: 2026 public ICARM curve 273 equation and thirty rational points"
+      ],
+      "checker": "elliptic-curves/cas/verify_icarm_curve273_rank30.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:8076eb41d755472f623df920c80c3ab94e4599305cfeab38e2337050ba9a0c70",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes": [],
+      "closes_problems": [
+        "OP-EC-RANK-CONDUCTOR"
+      ],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-CRT1",
       "kind": "example",
       "state": "proved",
@@ -31053,7 +31085,7 @@
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [
-        "OP-EC-RANK-CONDUCTOR"
+        "OP-EC-NEXT"
       ],
       "consumers": [],
       "invalidates_assumptions": [],
@@ -31086,7 +31118,7 @@
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [
-        "OP-EC-RANK-CONDUCTOR"
+        "OP-EC-NEXT"
       ],
       "consumers": [],
       "invalidates_assumptions": [],
@@ -31155,27 +31187,42 @@
     {
       "id": "OP-EC-RANK-CONDUCTOR",
       "kind": "open_problem",
-      "state": "open",
-      "title": "Exceptional elliptic rank with record conductor",
-      "scope": "Find either an elliptic curve over Q with at least 21 rigorously independent rational points and natural-log conductor below the literal cutoff 182.72, or a curve with at least 30 rigorously independent rational points. EC-CRT1 establishes the exact one-parameter Hensel--CRT--Gauss mechanism; EC-FERM1 and EC-FRANK1 supply the canonical Fermigier adapter, all thirteen quartic points, and E22 lower-bound replay while retaining the unresolved source normalization. EC-FG12 proves that this adapter has arithmetic generic rank exactly twelve; EC-FXPT1 closes the declared affine, quadratic, Mobius, and direct pair-product transports between its rank-22 and rank-20 anchors; EC-FXPT2 closes every affine transport between signed support-at-most-two quotient representatives; EC-FXPT4 closes every rational discriminant component across all 80 bidegree-(2,1) pencils; EC-FXPT5 finds no third simultaneous-square parameter on any genuine pair cover through projective height 200000; and EC-FXPT6 finds no point through projective height 1024 on the pilot nonlinear discriminant component. EC-R20 remains the strongest new conductor-qualified survivor: rank at least 20 with log conductor 159.9348252255..., explicitly one point short. EC-MR13 supplies a new generic-rank-at-least-13 Mestre family with degree-40 discriminant geometry, and EC-MD17 supplies a distinct generic-rank-at-least-13 family together with a conductor-qualified rank-at-least-17 specialization at u=197. EC-E29 locally replays the public lower bound 29 but supplies no thirtieth point, while EC-KIH14 remains the strongest fully public higher-generic-rank fallback reproduced here. No target curve has been found. Immediate gates are rational points beyond the completed boxes on the nonlinear discriminant or genus-nine Fermigier cover curves, higher-support exceptional transport, four further independent directions on EC-MD17 or comparable low-frontier Mestre fibers, two further dimensions on the odd-root-number rank-19 survivors, and access to or reconstruction of the unpublished rank-17 fibration behind E29. Exact rank 21 would additionally require a rigorous upper bound; the operational lower-bound targets do not.",
+      "state": "parked",
+      "title": "Exceptional elliptic rank with record conductor (closed disjunction)",
+      "scope": "The original operational target was the disjunction: find either an elliptic curve over Q with at least 21 rigorously independent rational points and natural-log conductor below 182.72, or a curve with at least 30 rigorously independent rational points. ECR30 proves the second branch by an exact local replay of the public 2026 rank-at-least-30 record. The low-conductor branch remains open and has been split into OP-EC-NEXT. No exact-rank-30 statement is included in this closure.",
       "canonical_source": "elliptic-curves/README.md",
       "dependencies": [
-        "EC-CRT1",
-        "EC-FERM1",
-        "EC-FRANK1",
+        "ECR30"
+      ],
+      "checker": null,
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [
+        "ECR30",
+        "OP-EC-NEXT"
+      ],
+      "priority": "reference"
+    },
+    {
+      "id": "OP-EC-NEXT",
+      "kind": "open_problem",
+      "state": "open",
+      "title": "Elliptic rank-31, exact-rank, and low-conductor continuation",
+      "scope": "ECR30 closes the original rank-at-least-30 branch. Continue in three exact directions: prove that the public 2026 curve has rank exactly 30 or exhibit rank at least 31; find a curve with rank at least 21 and natural-log conductor below 182.72, with EC-R20 currently one certified point short; and reconstruct the rank-17 K3 mechanism strongly enough to reproduce the historical rank-29 specialization and search beyond rank 30. EC-MR13 and EC-MD17 narrow the family and low-conductor routes without meeting the remaining target. The present gates are a certified residual 2-Selmer computation for the rank-30 curve, a new independent direction in K(S,2) for EC-R20, and an independent P2 lift from one of the seven surviving GF(31) E6 cores in the 17-by-17 reconstruction. Bounded searches and failed lifts are experiments, not upper bounds.",
+      "canonical_source": "elliptic-curves/README.md",
+      "dependencies": [
+        "ECR30",
         "EC-R20",
-        "EC-KIH14",
-        "EC-E29",
-        "EC-FSEED1",
-        "external: Fermigier's rank-at-least-22 curve and independence certificate",
-        "external: Elkies--Klagsbrun public rank-at-least-29 record",
-        "EC-FG12",
-        "EC-FXPT1",
-        "EC-FXPT2",
-        "EC-FXPT3",
-        "EC-FXPT4",
-        "EC-FXPT5",
-        "EC-FXPT6",
         "EC-MR13",
         "EC-MD17"
       ],
@@ -31187,7 +31234,9 @@
       "artifact_hash": null,
       "software_lock": [],
       "supersedes_notes": [],
-      "supersedes": [],
+      "supersedes": [
+        "OP-EC-RANK-CONDUCTOR"
+      ],
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [],

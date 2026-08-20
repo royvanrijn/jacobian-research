@@ -1,6 +1,6 @@
 # Baselines and literature
 
-Checked on 2026-08-14.  Current-record statements are external and should be
+Checked on 2026-08-20. Current-record statements are external and should be
 rechecked before publication.
 
 ## Numerical baselines
@@ -23,13 +23,24 @@ E20--E24 and E28 curves [subject to GRH for associated number-field zeta
 functions](https://arxiv.org/abs/1606.07178).  Independence alone supplies the
 unconditional lower bounds.
 
-The current public general-rank record found in 2024 is rank at least 29.  The
-[maintained equation and 29 points](https://web.math.pmf.unizg.hr/~duje/tors/rk29.html)
-give an unconditional lower bound; exact rank 29 is conditional on GRH in the
-public announcement.  Therefore the second operational target is 30
-independent rational points, not merely an analytic-rank prediction above 29.
+The current public general-rank record found in 2026 is rank at least 30. The
+[maintained equation and 30 points](https://web.math.pmf.unizg.hr/~duje/tors/rk30.html)
+give the public data. The repository checks those data exactly and proves the
+points independent without an analytic-rank assumption. The previous 2024
+[rank-at-least-29 record](https://web.math.pmf.unizg.hr/~duje/tors/rk29.html)
+remains a historical calibration; its public exact-rank statement is
+conditional on GRH.
 
 ## Local exact baseline replays
+
+For the 2026 record, all 30 public points satisfy the curve equation exactly.
+After transport to an integral short model, their images in products of
+`E(F_p)/2E(F_p)` form a binary matrix of rank 30, and the modulo-23
+2-division polynomial has no root. Infinite descent proves the points
+independent. The
+[pinned certificate](../../artifacts/generated-results/elliptic-curves/icarm_curve273_rank30_v1.json)
+is independently replayed using Sage invariant factors and discrete
+logarithms. It proves `rank >= 30` unconditionally, not `rank = 30`.
 
 The repository now checks the public rank-at-least-29 curve without relying on
 a floating-point height determinant.  At 29 cyclic good reductions, the

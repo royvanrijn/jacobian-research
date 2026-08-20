@@ -13,8 +13,11 @@ either target.
 
 ## Current status
 
-**Open problem.**  No curve meeting either target has been found in this
-repository.
+**Second target met.**  The 2026 public ICARM curve 273 has 30 displayed
+rational points whose exact finite-reduction images have full binary rank 30.
+The repository's primary checker and an independent Sage implementation prove
+`rank(E(Q)) >= 30` unconditionally.  No unconditional exact-rank-30 statement
+is claimed.  The first, low-conductor rank-at-least-21 target remains open.
 
 The research program now has exact-arithmetic implementations of the proposed
 pipeline
@@ -67,12 +70,15 @@ Evidence is classified as follows throughout this directory:
   and `ln N = 182.724910950637...`.  It therefore misses the strict
   `182.72` threshold by about `0.00491`; it is a calibration benchmark, not a
   hit.
-- **Published record data and exact replay:** the 2024 Elkies--Klagsbrun curve
-  has 29 independent rational points.  This repository now checks all 29
-  coordinates and gives a portable exact finite-reduction independence
-  certificate.  Its exact rank 29 is conditional on GRH; the unconditional
-  lower bound 29 does not use GRH.  The second target therefore requires one
-  additional independent point beyond the public record.
+- **Published record data and independent exact replay:** the 2026 ICARM curve
+  273 has 30 independent rational points.  The primary checker exhaustively
+  constructs the finite quotients `E(F_p)/2E(F_p)`; a separate Sage replay uses
+  invariant factors and discrete logarithms.  Both obtain binary rank 30, and
+  a modulo-23 witness excludes rational 2-torsion.  This proves the second
+  target unconditionally as a rank lower bound.
+- **Historical record replay:** the 2024 Elkies--Klagsbrun curve has 29
+  independent rational points.  Its exact rank 29 is conditional on GRH; the
+  unconditional lower bound 29 does not use GRH.
 - **Theorem (published) and verified replay:** Nagao's 1994 curve has 21
   independent rational points.  The repository checks the printed model and
   all 21 points exactly, and PARI gives `ln N=196.679545735892...`; it is a
@@ -96,9 +102,11 @@ again finding no nonpublic image.  These are bounded negative searches, not a
 rank upper bound.  A disjoint higher-weight pass then scored 2,000 signed
 representatives across five weight bands, searched 50 charts on ten retained
 covers, and found 57 exact images, all public points or exact companions in the
-rank-29 subgroup.  Rank 30 remains open; access to the unpublished rank-17 K3
-fibration or a tractable Selmer-cover computation is still the principal
-structural blocker.
+rank-29 subgroup.  Those negative searches remain useful historical
+calibration, but curve 273 now supplies the thirtieth independent point on a
+different curve.  Reconstruction of the unpublished rank-17 K3 fibration
+remains relevant for understanding the record-search mechanism and for
+producing new high-rank families.
 
 Two denominator-normalized modular sieves subsequently searched disjoint
 neighborhoods of the 29 public abscissas and 32 exact nonpublic subgroup
@@ -107,11 +115,12 @@ abscissas.  Modular quadratic-residue filtering left 217,309 candidates for
 exact integer-square tests, and none was a point.  This is a very large bounded
 negative result, not a rank upper bound.  A pinned public-source audit through
 2026-08-14 likewise found no reproducible public rank-30 curve or release of
-the missing K3 construction data.
+the missing K3 construction data; the audit predates the 2026 curve and is now
+retained only as a time-bounded historical snapshot.
 
 ### Current certified and bounded-search frontier
 
-No row below is a target hit.  Every row labelled “exact” has an unconditional,
+The first row is the rank-at-least-30 target hit. Every row labelled “exact” has an unconditional,
 portable rank lower bound: exact reduction maps into products of
 `E(F_p)/2E(F_p)` give full-column-rank binary matrices, and a separate good
 prime proves that the curve has no rational 2-torsion.  “Numerical rank” in
@@ -120,6 +129,7 @@ canonical-height matrix.
 
 | Family/search | Parameter | `ln N` | Current rank evidence |
 | --- | ---: | ---: | --- |
+| ICARM public record | curve 273 | `339.347931713664...` | **exact unconditional rank at least 30**; second operational target met, independently replayed; no unconditional exact-rank claim |
 | Fermigier benchmark | normalized `T=39508/39` | `182.724910950637...` | **exact unconditional rank at least 22**; misses the strict conductor bound by `0.004910950637...` |
 | Fermigier--Mestre adapter | `u=28917/20` | `159.934825225525...` | **exact unconditional rank at least 20**; imported 58-abscissa search and finite-reduction certificate, one point short of the target |
 | Nagao section-7 family | constructor `T=5081/47` | `174.249816228548...` | **exact unconditional rank at least 20**; full mod-2-cover and skew searches found no 21st direction |
@@ -962,8 +972,11 @@ specialization is always minimized before its conductor is accepted.
 - [Mathematical pipeline](notes/CRT_LATTICE_PIPELINE.md) gives the exact
   congruence, lattice, primitive-pair, and conductor checks.
 - [Baselines and literature](notes/BASELINES_AND_LITERATURE.md) records what is
-  external, conditional, and current as of 2026-08-14, together with the exact
-  Kihara rank-14 and public record rank-29 replays.
+  external and conditional, together with the exact Kihara rank-14 and public
+  record replays.
+- [ICARM curve 273 rank-30 certificate](notes/ICARM_CURVE273_RANK30.md)
+  records the exact lower-bound proof, independent Sage replay, and claim
+  boundary for the 2026 public record.
 - [Fermigier reproduction](notes/FERMIGIER_REPRODUCTION.md) records the exact
   canonical-family bridge and unresolved factor-two source discrepancy.
 - [`families/`](families/) contains the rank-at-least-two calibration family
@@ -972,7 +985,9 @@ specialization is always minimized before its conductor is accepted.
 - [`scripts/`](scripts/) contains generation and replay commands.
 - [Reproduction commands](REPRODUCE.md) are the public entry points.
 
-No target curve has been found in this repository yet.  The immediate search
-priority is a twenty-first point on the rank-20 near miss or on a
-conductor-qualified odd-root-number survivor, followed by broader rational
-parameter sweeps and cofactor-aware constraint selection.
+The rank-at-least-30 target is complete. The immediate arithmetic priorities
+are a certified residual 2-Selmer calculation for curve 273, which may prove
+exact rank 30 or expose a 31st direction, and a twenty-first point on the
+rank-20 low-conductor near miss. In parallel, the 17-by-17 lattice programme
+is reconstructing a lower-rank neighbor fibration from which the missing
+rank-17 K3 model may be recovered.

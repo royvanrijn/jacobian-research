@@ -2,7 +2,10 @@
 
 A separate [elliptic-curve rank/conductor research programme](elliptic-curves/README.md)
 develops a reproducible Hensel--CRT--rational-lattice search without changing
-the mathematical scope of the Keller-map results below.
+the mathematical scope of the Keller-map results below. It now independently
+replays the 2026 public curve with 30 rationally independent points, proving
+the programme's rank-at-least-30 target while leaving its separate
+low-conductor rank-at-least-21 target open.
 
 This repository verifies a three-dimensional polynomial Keller map with a
 three-point collision, explains it through a tangent-map normal form, and

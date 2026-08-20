@@ -40,11 +40,14 @@ that stage can feed this stable interface directly.
 
 The model-recovery work is now active rather than purely archival.  See
 [`RECONSTRUCTION_PROGRESS.md`](RECONSTRUCTION_PROGRESS.md) for the current
-checkpoint.  As of 2026-08-20 the repository has an exact Coxeter-9 reduction
-of the recovered rank-17 lattice, an optimal determinant-2 extension chain back
-to the full rank-17 saturation, and a strong **numerical** fixed-surface rank-10
-hit on `root-000029`.  The rank-10 hit is not yet an exact rank certificate and
-the canonical rank-17 Weierstrass model is still pending.
+checkpoint. As of the consolidated 2026-08-20 checkpoint, the repository has
+an exact Coxeter-9 reduction of the recovered rank-17 lattice and an optimal
+determinant-2 extension chain back to the full saturation. The old numerical
+rank-10 hit on `root-000029` has been downgraded to a near-collision. The
+primary route now passes through an E6/MW3 neighbor: one smooth `GF(31)`
+one-section seed is exact, and seven complete split-root cores remain for the
+reduced canonical `P2` search. The characteristic-zero rank-17 model is still
+pending.
 
 ## Candidate TSV contract
 

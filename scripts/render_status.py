@@ -59,7 +59,7 @@ ACTIVE_OPEN = {
     "OP-RITT",
     "OP-SIC2-B33",
     "OP-SUSP",
-    "OP-EC-RANK-CONDUCTOR",
+    "OP-EC-NEXT",
 }
 GMC2_RETAINED_IDS = {
     "G2F",

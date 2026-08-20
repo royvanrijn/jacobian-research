@@ -1,6 +1,7 @@
 # Elkies rank-17 K3 reconstruction progress
 
-Status checkpoint: 2026-08-20
+Status checkpoint: 2026-08-20, consolidated after the E6/MW3 finite-field
+breakthrough later the same day.
 
 ## Goal
 
@@ -50,6 +51,38 @@ y^2 = x^3 + A(T) x + B(T)
 with `deg A <= 8`, `deg B <= 12`; minimal height-4 sections have quartic
 `x(T)` and sextic `y(T)`.  The canonical final representation is still to be
 stored under `data/k3-model/` once exact coefficients are recovered.
+
+## Consolidated primary route: 17-by-17 frame to E6/MW3
+
+The direct Coxeter continuation described below remains a useful diagnostic,
+but it is no longer the primary reconstruction route. Exact neighbor searches
+from the 17-by-17 positive frame have produced lower-Mordell--Weil-rank
+fibrations with larger reducible root systems. The most promising node has
+
+```text
+ADE = E6 + A3^2 + A1^2
+MW rank = 3
+reduced MW determinant = 79/16
+fibers = IV* + I4 + I4 + I2 + I2 + 4 I1.
+```
+
+Putting `IV*` at infinity reduces the short Weierstrass degrees to
+`deg A <= 5`, `deg B <= 8`. Exact triangular elimination and a rational
+parametrization reduce the one-section locus to eight fiber equations in
+eleven variables, of expected dimension three.
+
+The first complete point on this locus has been reconstructed exactly over
+`GF(31)`. Its full section identity and local fiber conditions vanish, and the
+reduced `8 x 8` Jacobian is nonsingular. Thus it is a smooth modular seed with
+a convergent local Hensel chart. It is not yet the target rank-3 seed: the
+first polynomial companion satisfies `P1=-2*P3`, and the canonical
+one-denominator `P2` is absent on that first surface.
+
+The exhaustive reduced-core scan is nevertheless finite and concrete. It
+tested all 893,730 points on the declared branch and left seven split-root
+cores. A degree-parity argument forces the remaining `P2` numerator to have
+the form `X2=C+q0*F`; hence each fixed surface needs only 837 `(r,q0)` tests.
+See [`E6_P2_REDUCTION_2026-08-20.md`](E6_P2_REDUCTION_2026-08-20.md).
 
 ## Why direct reconstruction was reduced
 
@@ -334,25 +367,31 @@ residual as rank growth.
 
 ## Next steps
 
-1. Run the nondegenerate rank-10 refinement on `root-000029`.
-2. If it succeeds robustly, retain the 288 compatible labelings and use section
-   `2402` to attack rank 11.
-3. If it fails, redo the Coxeter `S9` fingerprint scan with collision guards and
-   edge-gap scoring; consider additional healthy Coxeter roots as needed.
-4. Once a genuinely separated rank-10 section is obtained, continue through
+Primary E6/MW3 route:
 
-   ```text
-   961 -> 2402 -> 1642 -> 1300 -> 1023 -> 2216 -> 2392 -> 2610;
-   ```
+1. Reconstruct every admissible `P1` chart over the seven complete split-root
+   `GF(31)` cores and both `lambda/mu` labelings.
+2. Exhaust the reduced 837-case `P2` search on each reconstructed surface.
+3. Reject all group-law dependencies against `P1` and `P3`; retain only a
+   genuinely independent second section.
+4. Lift a successful modular seed at several good primes and perform rational
+   or p-adic coefficient recognition.
+5. Verify the characteristic-zero Weierstrass identities and Kodaira fibers
+   exactly, then use neighbor transformations toward the rootless rank-17
+   fibration.
 
-5. Use the index-2 saturation bridge as a gluing/certification constraint.
-6. Once rank 17 is reconstructed numerically, exactify with rational/p-adic
-   recognition and verify the Weierstrass identities exactly.
-7. Reconstruct/check the complete 1311 unsigned height-4 section shell as a
-   large independent certificate.
-8. Write the exact model and generic sections under `data/k3-model/`.
-9. Only then resume specialization search and feed actual height-Gram records
-   into the ignition/cascade pipeline.
+Fallback direct-Coxeter route:
+
+6. If the seven-core E6 tranche is empty, rescan the 2520 Coxeter fingerprints
+   with collision guards and edge-gap scoring rather than reviving the old
+   near-collision.
+7. Use the index-2 saturation bridge as a gluing constraint for any genuine
+   continuation through sections
+   `961,2402,1642,1300,1023,2216,2392,2610`.
+
+Final certification remains unchanged: exactify all coefficients, reconstruct
+the complete 1311-pair shell, store the canonical model under `data/k3-model/`,
+and only then resume specialization searches.
 
 ## Current claim boundary
 
@@ -371,6 +410,14 @@ What is numerical today:
 - the non-isotrivial `root-000029` scaffold;
 - a very small-residual **near-collision** candidate for the first extension,
   now explicitly downgraded pending nondegenerate validation.
+
+What is exact over a finite field today:
+
+- a complete E6/P1 surface and section over `GF(31)`;
+- nonsingularity of its reduced `8 x 8` Jacobian;
+- dependency `P1=-2*P3` on that residue branch;
+- completeness of the seven split-root reduced cores and the degree reduction
+  `X2=C+q0*F` for the canonical `P2` search.
 
 What remains unproved:
 

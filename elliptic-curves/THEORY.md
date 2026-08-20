@@ -504,6 +504,31 @@ strictly capped 120-second PARI effort-zero 2-descent
 accepted all 29 points but returned no rank interval.  None of these negative
 computations is a rank upper bound, and no 30th point was certified.
 
+**Exact rank-at-least-30 public-record replay.** The later 2026 public ICARM
+curve 273 is a different curve. All 30 displayed rational points are checked
+exactly and transported by
+
+```text
+X=36*x+3,  Y=108*(2*y+x)
+```
+
+to an integral short model. Exact exhaustive reductions at 25 good primes
+give a stacked `31 x 30` matrix in products of `E(F_p)/2E(F_p)` with binary
+rank 30. The short 2-division cubic has no root modulo 23, hence the curve has
+no rational 2-torsion. The same infinite-descent lemma therefore proves the
+30 points independent and
+
+```text
+rank E(Q) >= 30
+```
+
+unconditionally. A second Sage implementation reconstructs the finite groups
+through invariant factors and discrete logarithms and obtains the same rank.
+PARI separately checks the global minimal model, exact conductor, trivial
+torsion, and root number `+1`. The complete proof record and claim boundary are
+in [`notes/ICARM_CURVE273_RANK30.md`](notes/ICARM_CURVE273_RANK30.md). No
+unconditional upper bound or rank-at-least-31 claim follows.
+
 The source-recovery audit also prevents a misleading generic-rank shortcut.
 Kuwata's explicit rank-18 K3 examples have geometric Mordell--Weil rank over
 an algebraic closure, not eighteen sections over `Q(t)`.  For the exact

@@ -26,7 +26,7 @@ Compile the modules:
 Run the exact regression tests:
 
 ```sh
-PYTHONPATH=elliptic-curves/cas \
+PYTHONPATH=elliptic-curves:elliptic-curves/cas \
   .venv/bin/python -m unittest discover -s elliptic-curves/tests -v
 ```
 
@@ -180,7 +180,43 @@ target_hit=false
 The JSON separates exact rational checks from the PARI/GP minimal-model,
 local-reduction, conductor, and 2-descent computations.
 
-### Rank-29 record replay and bounded rank-30 searches
+### Rank-30 public record replay and historical rank-29 searches
+
+Generate the compact exact certificate for the 2026 public ICARM curve 273:
+
+```sh
+.venv/bin/python elliptic-curves/cas/verify_icarm_curve273_rank30.py
+
+.venv/bin/python elliptic-curves/cas/verify_icarm_curve273_rank30.py --check
+```
+
+This writes
+[`icarm_curve273_rank30_v1.json`](../artifacts/generated-results/elliptic-curves/icarm_curve273_rank30_v1.json).
+It checks all 30 rational points, the global minimal model, exact conductor,
+root number and torsion; its finite good-reduction matrix has binary rank 30.
+The first command regenerates the pinned manifest; the second performs the
+same arithmetic and fails if the manifest is stale. The PARI height matrix is
+diagnostic only and is written under the ignored local-artifact tree.
+
+Replay the same lower bound through Sage's independent finite-group and
+discrete-logarithm implementation:
+
+```sh
+sage -python elliptic-curves/scripts/verify_icarm_curve273_rank30_sage.py
+```
+
+Expected summary:
+
+```text
+PASS independent Sage replay: 30 exact points, global minimal model, trivial torsion, and full-rank mod-2 reduction matrix
+```
+
+Both commands prove `rank >= 30` unconditionally. Neither proves exact rank
+30 or rank at least 31. See
+[`notes/ICARM_CURVE273_RANK30.md`](notes/ICARM_CURVE273_RANK30.md).
+
+The remaining commands in this section replay the previous 2024 record and
+its bounded, historically negative searches.
 
 Check the 2024 Elkies--Klagsbrun model and all 29 public points, transport them
 to an integral short model, and build the exact finite-reduction certificate:
