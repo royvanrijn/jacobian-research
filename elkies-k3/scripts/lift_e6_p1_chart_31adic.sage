@@ -26,26 +26,27 @@ FU=FractionField(U)
 Ut=PolynomialRing(FU,'t'); t=Ut.gen()
 
 def L(z): return FU(U(RF(z)))
+def LU(z): return FU(U(z))
 a0=-3*s0**2
 b0=2*s0**3
 b1=-s0*a1
 b2=a1**2/(12*s0)-s0*a2
-b3=(a1**3+36*a1*a2*s0**2-216*RF(a3)*s0**4)/(216*s0**3)
-a5=-3*s1**2-(a0+a1+RF(a3)+a2+a4)
+b3=(L(a1**3+36*a1*a2*s0**2)-216*FU(a3)*s0**4)/(216*s0**3)
+a5=L(-3*s1**2-(a0+a1+a2+a4))-FU(a3)
 
 # Solve b6,b7 from t=1 singular-root conditions.
 V=PolynomialRing(FU,['B6']); B6=V.gen()
 Vt=PolynomialRing(V,'t'); tt=Vt.gen()
-AA=sum(V(L(c))*tt**i for i,c in enumerate([a0,a1,a2,a3,a4,a5]))
-B7=2*V(L(s1))**3-(V(L(b0))+V(L(b1))+V(L(b2))+V(L(b3))+V(b4)+V(b5)+B6)-1
-BB=V(L(b0))+V(L(b1))*tt+V(L(b2))*tt**2+V(L(b3))*tt**3+V(b4)*tt**4+V(b5)*tt**5+B6*tt**6+B7*tt**7+tt**8
+AA=sum(V(LU(c))*tt**i for i,c in enumerate([a0,a1,a2,a3,a4,a5]))
+B7=2*V(L(s1))**3-(V(L(b0))+V(L(b1))+V(L(b2))+V(LU(b3))+V(b4)+V(b5)+B6)-1
+BB=V(L(b0))+V(L(b1))*tt+V(L(b2))*tt**2+V(LU(b3))*tt**3+V(b4)*tt**4+V(b5)*tt**5+B6*tt**6+B7*tt**7+tt**8
 EE=BB.derivative(tt)(1)+V(L(s1))*AA.derivative(tt)(1)
 c6=EE.derivative(B6)
 b6=FU(-EE.subs({B6:0})/c6)
 b7=FU(B7.subs({B6:V(b6)}))
 
-A=L(a0)+L(a1)*t+L(a2)*t**2+FU(a3)*t**3+L(a4)*t**4+L(a5)*t**5
-B=L(b0)+L(b1)*t+L(b2)*t**2+L(b3)*t**3+FU(b4)*t**4+FU(b5)*t**5+b6*t**6+b7*t**7+t**8
+A=L(a0)+L(a1)*t+L(a2)*t**2+FU(a3)*t**3+L(a4)*t**4+FU(a5)*t**5
+B=L(b0)+L(b1)*t+L(b2)*t**2+FU(b3)*t**3+FU(b4)*t**4+FU(b5)*t**5+b6*t**6+b7*t**7+t**8
 X=L(x0)+L(x1)*t+L(s1-x0-x1)*t**2
 Y=L(y0)+L(y1)*t+FU(y2)*t**2+(L(-1-y0-y1)-FU(y2))*t**3+t**4
 Sec=Y**2-X**3-A*X-B
