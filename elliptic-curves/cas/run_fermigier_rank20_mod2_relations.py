@@ -75,6 +75,14 @@ def main():
 
     print(f"{PROTOCOL}|stage=factor_base|columns={len(fb)}|S_columns={len(s_cols)}", flush=True)
 
+    # Rational-prime factor-base map.  Relation collection should NEVER fully
+    # factor a huge norm: trial-divide only by this known factor base.
+    fb_by_p = {}
+    for idx, P in enumerate(fb):
+        q = int(P.smallest_integer())
+        fb_by_p.setdefault(q, []).append((idx, P))
+    fb_rational_primes = sorted(fb_by_p)
+
     pivots = {}
     s_pivots = {}
     sampled = smooth = accepted = 0
@@ -85,23 +93,35 @@ def main():
         sampled += 1
         if alpha == 0:
             return
-        # Avoid Sage order-ideal factorization: it is unavailable/inconsistent
-        # in Sage 10.9.  For integral alpha, first factor the rational norm,
-        # then compute exact valuations at primes above each rational divisor.
+        # Fast factor-base smoothness test.  Do NOT call factor(N): these norms
+        # can be enormous.  Divide only by rational primes represented in the
+        # factor base.  If anything remains, reject this sample immediately.
         N = abs(ZZ(alpha.norm()))
         if N == 0:
             return
 
+        cofactor = N
+        used_q = []
+        for q in fb_rational_primes:
+            if cofactor % q != 0:
+                continue
+            used_q.append(q)
+            while cofactor % q == 0:
+                cofactor //= q
+            if cofactor == 1:
+                break
+
+        if cofactor != 1:
+            return
+
+        # The norm is rational-factor-base smooth.  Now compute the exact
+        # prime-ideal valuation parity only above rational primes that occurred.
         row = 0
-        for p, _ in factor(N):
-            for P in K.primes_above(p):
+        for q in used_q:
+            for i, P in fb_by_p[q]:
                 e = int(alpha.valuation(P))
-                if e % 2 == 0:
-                    continue
-                i = idx_of(P)
-                if i is None:
-                    return
-                row ^= 1 << i
+                if e & 1:
+                    row ^= 1 << i
         smooth += 1
         if row == 0:
             return

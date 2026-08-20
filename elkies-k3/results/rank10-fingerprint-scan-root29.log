@@ -1,0 +1,87 @@
+original V-pairing signature = -1 +0 -1 +0 -1 -2 -2 -2 -1
+distinct S9/Q-sign fingerprints = 2520
+
+ROOT root-000029 fingerprints= 2520
+SCAN|root=root-000029|done=50/2520|best=4.199e-11
+SCAN|root=root-000029|done=100/2520|best=3.528e-11
+SCAN|root=root-000029|done=150/2520|best=3.528e-11
+SCAN|root=root-000029|done=200/2520|best=3.528e-11
+SCAN|root=root-000029|done=250/2520|best=3.528e-11
+SCAN|root=root-000029|done=300/2520|best=3.528e-11
+SCAN|root=root-000029|done=350/2520|best=3.528e-11
+SCAN|root=root-000029|done=400/2520|best=2.712e-11
+SCAN|root=root-000029|done=450/2520|best=2.712e-11
+SCAN|root=root-000029|done=500/2520|best=2.712e-11
+SCAN|root=root-000029|done=550/2520|best=2.712e-11
+SCAN|root=root-000029|done=600/2520|best=2.712e-11
+SCAN|root=root-000029|done=650/2520|best=2.712e-11
+SCAN|root=root-000029|done=700/2520|best=2.712e-11
+SCAN|root=root-000029|done=750/2520|best=2.712e-11
+SCAN|root=root-000029|done=800/2520|best=2.712e-11
+SCAN|root=root-000029|done=850/2520|best=6.964e-12
+SCAN|root=root-000029|done=900/2520|best=6.964e-12
+SCAN|root=root-000029|done=950/2520|best=6.964e-12
+SCAN|root=root-000029|done=1000/2520|best=6.964e-12
+SCAN|root=root-000029|done=1050/2520|best=6.964e-12
+SCAN|root=root-000029|done=1100/2520|best=6.964e-12
+SCAN|root=root-000029|done=1150/2520|best=6.964e-12
+SCAN|root=root-000029|done=1200/2520|best=6.964e-12
+SCAN|root=root-000029|done=1250/2520|best=6.964e-12
+SCAN|root=root-000029|done=1300/2520|best=6.964e-12
+SCAN|root=root-000029|done=1350/2520|best=6.964e-12
+SCAN|root=root-000029|done=1400/2520|best=6.964e-12
+SCAN|root=root-000029|done=1450/2520|best=6.964e-12
+SCAN|root=root-000029|done=1500/2520|best=6.964e-12
+SCAN|root=root-000029|done=1550/2520|best=6.964e-12
+SCAN|root=root-000029|done=1600/2520|best=6.964e-12
+SCAN|root=root-000029|done=1650/2520|best=6.964e-12
+SCAN|root=root-000029|done=1700/2520|best=6.964e-12
+SCAN|root=root-000029|done=1750/2520|best=6.964e-12
+SCAN|root=root-000029|done=1800/2520|best=6.964e-12
+SCAN|root=root-000029|done=1850/2520|best=6.964e-12
+SCAN|root=root-000029|done=1900/2520|best=6.964e-12
+SCAN|root=root-000029|done=1950/2520|best=6.964e-12
+SCAN|root=root-000029|done=2000/2520|best=6.964e-12
+SCAN|root=root-000029|done=2050/2520|best=6.964e-12
+SCAN|root=root-000029|done=2100/2520|best=6.964e-12
+SCAN|root=root-000029|done=2150/2520|best=6.964e-12
+SCAN|root=root-000029|done=2200/2520|best=6.964e-12
+SCAN|root=root-000029|done=2250/2520|best=6.964e-12
+SCAN|root=root-000029|done=2300/2520|best=6.964e-12
+SCAN|root=root-000029|done=2350/2520|best=6.964e-12
+SCAN|root=root-000029|done=2400/2520|best=6.964e-12
+SCAN|root=root-000029|done=2450/2520|best=6.964e-12
+SCAN|root=root-000029|done=2500/2520|best=5.850e-13
+
+TOP FINGERPRINTS
+FP|root=root-000029|idx=2452|identity=0|score=5.850e-13|curve=5.220e-14|line=5.850e-13|anchors=9|V=0 0 2 2 2 1 1 1 1
+FP|root=root-000029|idx=2455|identity=0|score=2.196e-12|curve=7.833e-16|line=2.196e-12|anchors=9|V=0 0 -2 -2 -1 -1 -2 -1 -1
+FP|root=root-000029|idx=2473|identity=0|score=2.407e-12|curve=6.077e-14|line=2.407e-12|anchors=9|V=0 0 -2 -1 -1 -2 -1 -1 -2
+FP|root=root-000029|idx=2467|identity=0|score=4.406e-12|curve=3.629e-16|line=4.406e-12|anchors=9|V=0 0 -2 -1 -2 -1 -1 -1 -2
+FP|root=root-000029|idx=831|identity=0|score=6.964e-12|curve=5.707e-15|line=6.964e-12|anchors=9|V=-2 0 0 -1 -1 -2 -1 -2 -1
+FP|root=root-000029|idx=837|identity=0|score=9.485e-12|curve=3.129e-16|line=9.485e-12|anchors=9|V=-2 0 0 -1 -1 -1 -2 -1 -2
+FP|root=root-000029|idx=817|identity=0|score=1.064e-11|curve=2.997e-16|line=1.064e-11|anchors=9|V=-2 0 0 -2 -1 -1 -1 -2 -1
+FP|root=root-000029|idx=1536|identity=0|score=1.945e-11|curve=2.986e-16|line=1.945e-11|anchors=9|V=1 1 1 0 2 1 2 0 2
+FP|root=root-000029|idx=828|identity=0|score=2.195e-11|curve=2.049e-12|line=2.195e-11|anchors=9|V=2 0 0 1 2 1 1 1 2
+FP|root=root-000029|idx=397|identity=0|score=2.712e-11|curve=3.013e-16|line=2.712e-11|anchors=9|V=-2 -1 -1 -1 -2 -1 -2 0 0
+FP|root=root-000029|idx=2463|identity=0|score=2.791e-11|curve=2.902e-16|line=2.791e-11|anchors=9|V=0 0 -2 -1 -2 -1 -2 -1 -1
+FP|root=root-000029|idx=814|identity=0|score=2.799e-11|curve=1.470e-11|line=2.799e-11|anchors=9|V=2 0 0 2 1 2 1 1 1
+FP|root=root-000029|idx=505|identity=0|score=2.975e-11|curve=3.013e-16|line=2.975e-11|anchors=9|V=-2 -1 -1 0 0 -1 -2 -2 -1
+FP|root=root-000029|idx=1437|identity=0|score=3.126e-11|curve=3.013e-16|line=3.126e-11|anchors=9|V=-1 -1 -2 0 0 -1 -2 -1 -2
+FP|root=root-000029|idx=714|identity=0|score=3.154e-11|curve=3.014e-16|line=3.154e-11|anchors=9|V=2 0 1 2 1 1 0 2 1
+FP|root=root-000029|idx=2476|identity=0|score=3.195e-11|curve=2.797e-16|line=3.195e-11|anchors=9|V=0 0 2 1 1 1 2 2 1
+FP|root=root-000029|idx=1012|identity=0|score=3.255e-11|curve=2.417e-16|line=3.255e-11|anchors=9|V=1 2 1 2 0 1 0 2 1
+FP|root=root-000029|idx=834|identity=0|score=3.337e-11|curve=6.766e-14|line=3.337e-11|anchors=9|V=2 0 0 1 1 2 1 1 2
+FP|root=root-000029|idx=1310|identity=0|score=3.382e-11|curve=3.013e-16|line=3.382e-11|anchors=9|V=1 1 2 2 0 1 1 0 2
+FP|root=root-000029|idx=54|identity=0|score=3.528e-11|curve=3.013e-16|line=3.528e-11|anchors=9|V=2 2 1 1 2 1 0 1 0
+FP|root=root-000029|idx=912|identity=0|score=3.728e-11|curve=3.052e-16|line=3.728e-11|anchors=9|V=1 2 2 1 0 1 0 2 1
+FP|root=root-000029|idx=2268|identity=0|score=3.823e-11|curve=3.013e-16|line=3.823e-11|anchors=9|V=0 1 2 1 0 1 2 1 2
+FP|root=root-000029|idx=1810|identity=0|score=3.919e-11|curve=3.477e-14|line=3.919e-11|anchors=9|V=1 0 1 2 2 1 2 0 1
+FP|root=root-000029|idx=2474|identity=0|score=4.018e-11|curve=6.459e-14|line=4.018e-11|anchors=9|V=0 0 2 1 1 2 1 1 2
+FP|root=root-000029|idx=2178|identity=0|score=4.027e-11|curve=3.014e-16|line=4.027e-11|anchors=9|V=0 1 2 2 2 0 1 1 1
+FP|root=root-000029|idx=1735|identity=0|score=4.162e-11|curve=3.013e-16|line=4.162e-11|anchors=9|V=-1 0 -2 -1 -2 -1 0 -2 -1
+FP|root=root-000029|idx=691|identity=0|score=4.192e-11|curve=3.009e-16|line=4.192e-11|anchors=9|V=-2 0 -1 -2 -2 -1 -1 -1 0
+FP|root=root-000029|idx=48|identity=0|score=4.199e-11|curve=3.210e-16|line=4.199e-11|anchors=9|V=2 2 1 2 0 1 0 1 1
+FP|root=root-000029|idx=461|identity=0|score=4.352e-11|curve=3.013e-16|line=4.352e-11|anchors=9|V=-2 -1 -1 0 -2 -1 -1 -2 0
+FP|root=root-000029|idx=282|identity=0|score=4.494e-11|curve=3.011e-16|line=4.494e-11|anchors=9|V=2 1 2 1 0 1 0 2 1
+saved = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank10-fingerprint-scan-v1/fingerprints.tsv

@@ -6,3 +6,11 @@ jacobian singular tail = 3.912e-02 2.157e-02 9.011e-03 1.006e-09 7.527e-10 5.258
 root branch norms: delta=2.474016e-08 jvar=1.109812e-08
 
 FULL45|restart=0|score=1.413e-10|base=1.413e-10|curve=1.557e-13|line=1.501e-11|delta_ratio=7.138e-09|jvar_ratio=2.055e-07|usable=0
+FULL45|restart=1|score=1.451e-10|base=1.079e-10|curve=3.942e-13|line=1.451e-10|delta_ratio=1.886e-06|jvar_ratio=4.031e-06|usable=0
+FULL45|restart=2|score=3.310e-10|base=3.310e-10|curve=6.057e-12|line=3.634e-11|delta_ratio=5.387e-05|jvar_ratio=1.751e-04|usable=0
+FULL45|restart=3|score=3.610e-11|base=3.610e-11|curve=2.264e-13|line=2.433e-12|delta_ratio=1.760e-07|jvar_ratio=1.895e-06|usable=0
+FULL45|restart=4|score=1.511e-11|base=1.511e-11|curve=2.525e-14|line=6.232e-13|delta_ratio=5.890e-08|jvar_ratio=2.087e-07|usable=0
+FULL45|restart=5|score=1.386e-11|base=3.513e-12|curve=1.358e-14|line=1.386e-11|delta_ratio=2.383e-08|jvar_ratio=2.100e-07|usable=0
+FULL45|restart=6|score=2.774e-05|base=2.774e-05|curve=1.903e-07|line=9.724e-07|delta_ratio=2.385e-01|jvar_ratio=1.567e+00|usable=1|BEST
+FULL45|restart=7|score=1.466e-09|base=1.466e-09|curve=2.407e-12|line=4.692e-11|delta_ratio=1.504e-05|jvar_ratio=5.748e-05|usable=0
+FULL45|restart=8|score=1.067e-09|base=1.067e-09|curve=1.130e-12|line=1.255e-10|delta_ratio=1.807e-06|jvar_ratio=1.099e-05|usable=0

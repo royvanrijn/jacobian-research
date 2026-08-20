@@ -1,0 +1,9 @@
+root = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/coxeter9-slope-numeric-v1/root-000029
+V fingerprint = +0 +0 +2 +2 +2 +1 +1 +1 +1
+anchors = V2:+2 V3:+2 V4:+2 D02:-2 D03:-2 D04:-2 D12:-2 D13:-2 D14:-2
+anchor count = 9
+root raw = 8.138574449784164e-13
+root branch norms: delta=7.465707e-26 jvar=2.938357e-23
+compatible full-lattice Coxeter mappings = 288
+fixed-surface recovered score = 1.540992e-13
+REFINE|restart=0|score=5.260e-13|base=5.260e-13|curve=6.213e-16|line=1.173e-13|delta_ratio=1.299e+00|jvar_ratio=8.690e-01|healthy=1
