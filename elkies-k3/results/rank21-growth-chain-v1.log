@@ -1,0 +1,16 @@
+PROGRESS|trial=20/200|rows=80|seconds=2.42
+PROGRESS|trial=40/200|rows=160|seconds=5.03
+PROGRESS|trial=60/200|rows=240|seconds=7.01
+PROGRESS|trial=80/200|rows=320|seconds=9.02
+PROGRESS|trial=100/200|rows=400|seconds=11.15
+PROGRESS|trial=120/200|rows=480|seconds=13.62
+PROGRESS|trial=140/200|rows=560|seconds=16.37
+PROGRESS|trial=160/200|rows=640|seconds=18.84
+PROGRESS|trial=180/200|rows=720|seconds=21.08
+PROGRESS|trial=200/200|rows=800|seconds=23.93
+
+========================================================================
+DONE
+rows = 800
+saved = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank21-growth-chain-v1/growth_chain.tsv
+seconds = 23.973843707994092

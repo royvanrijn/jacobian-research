@@ -1,0 +1,7 @@
+depth 3
+h 22.824795992072204
+shell 28
+nodes 164
+target 0 candidate 152 vector 1 -3 1 -2 1 3 1 2 -2 -2 2 0 1 -1 -1 5 -1 -1 1 1 -3 -1 -2 -2 2 3 -3 0 0
+target 3 candidate 92 vector -1 0 0 0 0 0 0 0 0 0 0 -1 0 0 0 -1 0 0 0 1 0 0 0 0 0 0 0 0 0
+target 14 candidate 0 vector 2 -1 0 1 -1 0 0 0 -1 -1 1 2 -1 -1 -1 3 2 -2 1 -3 0 1 -2 -2 1 0 1 0 1

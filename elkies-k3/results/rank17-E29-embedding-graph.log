@@ -1,0 +1,14 @@
+target offdiag values = [-2, -1, 0, 1, 2]
+ambient_rank=29
+LLL start
+LLL done
+candidate vectors = 10000
+norm range = 46.3601302162979 180.67941938523848
+target search order = [5, 9, 7, 10, 4, 15, 12, 13, 3, 0, 14, 11, 2, 16, 6, 8, 1]
+shells = 50
+SHELL|i=0|norm=165.814442234|h=41.4536105586|size=3159
+DEPTH|shell=0|depth=1|h=41.4536105586|nodes=2|assignment={5: 284}
+DEPTH|shell=0|depth=2|h=41.4536105586|nodes=3|assignment={5: 284, 9: 3038}
+DEPTH|shell=0|depth=3|h=41.4536105586|nodes=4|assignment={5: 284, 9: 3038, 7: 2066}
+DEPTH|shell=0|depth=4|h=41.4536105586|nodes=6|assignment={5: 284, 9: 3038, 7: 2550, 10: 922}
+DEPTH|shell=0|depth=5|h=41.4536105586|nodes=54|assignment={5: 284, 9: 1835, 7: 2271, 10: 252, 4: 863}

@@ -1,0 +1,31 @@
+precomputing CAND @ H ...
+ready
+replay cores = 200
+PROGRESS|trial=1/200|source_trial=0|chosen=[32086, 33916, 86258, 35225]|trial_s=0.540|total_s=0.5
+PROGRESS|trial=11/200|source_trial=10|chosen=[78908, 15421, 81712, 93049]|trial_s=0.593|total_s=4.9
+PROGRESS|trial=21/200|source_trial=20|chosen=[45662, 99222, 59710, 49643]|trial_s=0.640|total_s=8.8
+PROGRESS|trial=31/200|source_trial=30|chosen=[16904, 88686, 72223, 76247]|trial_s=0.591|total_s=12.9
+PROGRESS|trial=41/200|source_trial=40|chosen=[55585, 42832, 92541, 69414]|trial_s=0.675|total_s=16.9
+PROGRESS|trial=51/200|source_trial=50|chosen=[52301, 76601, 70053, 50447]|trial_s=0.566|total_s=21.5
+PROGRESS|trial=61/200|source_trial=60|chosen=[19047, 31325, 71622, 96974]|trial_s=0.228|total_s=25.0
+PROGRESS|trial=71/200|source_trial=70|chosen=[46990, 72104, 89117, 90144]|trial_s=0.376|total_s=28.4
+PROGRESS|trial=81/200|source_trial=80|chosen=[55219, 50929, 75755, 51378]|trial_s=0.418|total_s=33.1
+PROGRESS|trial=91/200|source_trial=90|chosen=[14134, 83625, 57157, 94840]|trial_s=0.204|total_s=37.9
+PROGRESS|trial=101/200|source_trial=100|chosen=[96785, 86550, 27416, 83004]|trial_s=0.232|total_s=42.0
+PROGRESS|trial=111/200|source_trial=110|chosen=[18443, 77431, 32717, 81131]|trial_s=0.330|total_s=45.4
+PROGRESS|trial=121/200|source_trial=120|chosen=[46064, 72716, 37614, 42741]|trial_s=0.288|total_s=48.5
+PROGRESS|trial=131/200|source_trial=130|chosen=[10174, 99343, 38202, 69810]|trial_s=0.321|total_s=51.4
+PROGRESS|trial=141/200|source_trial=140|chosen=[49651, 97763, 63691, 61160]|trial_s=0.227|total_s=54.5
+PROGRESS|trial=151/200|source_trial=150|chosen=[59160, 54239, 15040, 94199]|trial_s=0.317|total_s=57.6
+PROGRESS|trial=161/200|source_trial=160|chosen=[40590, 99847, 78957, 92217]|trial_s=0.535|total_s=60.7
+PROGRESS|trial=171/200|source_trial=170|chosen=[93856, 75456, 92376, 85736]|trial_s=0.372|total_s=63.9
+PROGRESS|trial=181/200|source_trial=180|chosen=[11799, 24559, 93420, 71995]|trial_s=0.349|total_s=67.2
+PROGRESS|trial=191/200|source_trial=190|chosen=[84984, 60742, 38463, 88667]|trial_s=0.204|total_s=70.2
+PROGRESS|trial=200/200|source_trial=199|chosen=[33670, 92570, 91071, 73283]|trial_s=0.284|total_s=73.0
+
+========================================================================
+DONE
+motifs = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank21-growth-motifs-v2-invariant/growth_motifs.tsv
+cores  = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank21-growth-motifs-v2-invariant/core_vectors.tsv
+rows   = 80000
+seconds= 73.01792862504954

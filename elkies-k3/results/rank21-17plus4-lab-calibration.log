@@ -1,0 +1,70 @@
+RANK21 17+4 LAB
+full pool       = 3000000
+core pool       = 20000
+hidden pool     = 50000
+core norm range = 25.480712631162213 .. 57.439497126394656
+hidden range    = 25.480712631162213 .. 62.67867119434587
+
+BEST|trial=0|sat=-1|orth_sum=13.2247664692|orth_max=11.2128101311|half_mean=3.70999279798
+  HIDDEN|slot=1|norm=62.30893690|orth=0.05191442|ratio=0.00083318|half=3.85804855|third=3.13666865|quarter=2.37911259|support=12|maxc=2
+  HIDDEN|slot=2|norm=60.45917808|orth=0.49466786|ratio=0.00818185|half=4.70803765|third=1.98784983|quarter=1.42746061|support=17|maxc=2
+  HIDDEN|slot=3|norm=61.67761480|orth=1.46537406|ratio=0.02375860|half=3.18525952|third=2.63961551|quarter=1.77971666|support=13|maxc=2
+  HIDDEN|slot=4|norm=53.31030588|orth=11.21281013|ratio=0.21033100|half=3.08862547|third=2.75273048|quarter=1.89022302|support=10|maxc=1
+PROGRESS|trial=1/25|valid=1|seconds=38.29
+BEST|trial=1|sat=-1|orth_sum=5.43961843284|orth_max=3.84519806148|half_mean=4.18206621288
+  HIDDEN|slot=1|norm=58.93322402|orth=0.41760878|ratio=0.00708614|half=3.37998503|third=2.74180637|quarter=1.91917477|support=16|maxc=3
+  HIDDEN|slot=2|norm=61.83096351|orth=0.44833650|ratio=0.00725100|half=5.22089433|third=2.49155146|quarter=2.24622249|support=12|maxc=2
+  HIDDEN|slot=3|norm=45.57785541|orth=0.72847509|ratio=0.01598309|half=4.13485140|third=2.69684626|quarter=2.29427951|support=15|maxc=2
+  HIDDEN|slot=4|norm=59.48160836|orth=3.84519806|ratio=0.06464516|half=3.99253409|third=2.62316139|quarter=2.06386375|support=15|maxc=2
+BEST|trial=4|sat=-1|orth_sum=3.82972662885|orth_max=1.12340304581|half_mean=4.07552468643
+  HIDDEN|slot=1|norm=60.46487324|orth=0.60034543|ratio=0.00992883|half=4.09767964|third=1.99995471|quarter=2.34621090|support=14|maxc=2
+  HIDDEN|slot=2|norm=52.81418199|orth=1.00838020|ratio=0.01909298|half=3.68310372|third=2.25261746|quarter=2.13168877|support=14|maxc=2
+  HIDDEN|slot=3|norm=51.32263232|orth=1.09759795|ratio=0.02138624|half=4.54776727|third=2.36208432|quarter=2.00509766|support=16|maxc=3
+  HIDDEN|slot=4|norm=61.81027222|orth=1.12340305|ratio=0.01817502|half=3.97354811|third=4.06868311|quarter=1.79460888|support=15|maxc=2
+BEST|trial=9|sat=-1|orth_sum=3.82040819286|orth_max=1.23630963466|half_mean=3.94518022756
+  HIDDEN|slot=1|norm=59.28785813|orth=0.51379025|ratio=0.00866603|half=4.25706159|third=2.43664478|quarter=2.27688338|support=18|maxc=3
+  HIDDEN|slot=2|norm=61.34996117|orth=0.95848009|ratio=0.01562316|half=5.29363104|third=3.25734930|quarter=2.25985386|support=11|maxc=2
+  HIDDEN|slot=3|norm=58.61826933|orth=1.11182822|ratio=0.01896726|half=3.38253244|third=3.59077821|quarter=2.31787007|support=17|maxc=2
+  HIDDEN|slot=4|norm=53.94339326|orth=1.23630963|ratio=0.02291865|half=2.84749584|third=2.59239634|quarter=1.78862538|support=14|maxc=2
+PROGRESS|trial=11/25|valid=11|seconds=151.19
+BEST|trial=11|sat=-1|orth_sum=2.99788920997|orth_max=0.92804650919|half_mean=3.61143716338
+  HIDDEN|slot=1|norm=53.16263695|orth=0.54933033|ratio=0.01033302|half=3.50807621|third=2.17384187|quarter=1.85249431|support=16|maxc=2
+  HIDDEN|slot=2|norm=61.78454414|orth=0.61881957|ratio=0.01001577|half=4.27161390|third=2.25470511|quarter=2.06287683|support=16|maxc=3
+  HIDDEN|slot=3|norm=61.52251554|orth=0.90169281|ratio=0.01465631|half=3.08492996|third=3.17317501|quarter=2.06141305|support=17|maxc=3
+  HIDDEN|slot=4|norm=49.95189358|orth=0.92804651|ratio=0.01857881|half=3.58112858|third=2.67804719|quarter=2.65345289|support=11|maxc=1
+BEST|trial=18|sat=-1|orth_sum=2.87711141824|orth_max=1.60563961474|half_mean=4.54673008742
+  HIDDEN|slot=1|norm=57.43285149|orth=0.23036690|ratio=0.00401107|half=5.32738079|third=1.88059289|quarter=2.16533640|support=13|maxc=2
+  HIDDEN|slot=2|norm=61.97337348|orth=0.47631327|ratio=0.00768577|half=4.37599847|third=3.18665772|quarter=1.74287702|support=13|maxc=1
+  HIDDEN|slot=3|norm=60.27802089|orth=0.56479163|ratio=0.00936978|half=3.91503305|third=2.48543833|quarter=1.83602387|support=17|maxc=3
+  HIDDEN|slot=4|norm=60.43619194|orth=1.60563961|ratio=0.02656752|half=4.56850804|third=2.97678736|quarter=2.85079416|support=17|maxc=3
+PROGRESS|trial=21/25|valid=21|seconds=162.67
+BEST|trial=24|sat=-1|orth_sum=2.50363204183|orth_max=0.81705232288|half_mean=4.50884993438
+  HIDDEN|slot=1|norm=55.41956489|orth=0.29059410|ratio=0.00524353|half=4.94190279|third=2.29033567|quarter=1.93290981|support=15|maxc=2
+  HIDDEN|slot=2|norm=59.52310335|orth=0.66795873|ratio=0.01122184|half=4.05505174|third=2.63142284|quarter=1.94807869|support=15|maxc=2
+  HIDDEN|slot=3|norm=58.29584462|orth=0.72802690|ratio=0.01248849|half=4.87850936|third=3.14283968|quarter=1.81308661|support=15|maxc=2
+  HIDDEN|slot=4|norm=61.42732790|orth=0.81705232|ratio=0.01330112|half=4.15993586|third=3.49184501|quarter=2.08658203|support=15|maxc=3
+PROGRESS|trial=25/25|valid=25|seconds=165.76
+
+========================================================================
+FINAL
+valid cores = 25
+hidden rows = 100
+seconds = 165.7610609580297
+
+saved:
+/Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank21-17plus4-lab/core_summary.tsv
+/Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank21-17plus4-lab/hidden_directions.tsv
+/Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank21-17plus4-lab/best_hidden_directions.tsv
+
+BEST CORE
+core_id = 24
+saturation_index = -1
+hidden orthogonal sum = 2.5036320418325104
+hidden orthogonal max = 0.8170523228799311
+half-grid mean = 4.508849934384561
+
+FOUR MISSING DIRECTIONS
+slot=1 pool=13773 norm=55.4195648909 orth=0.290594095322 ratio=0.00524352899367 integer=6.93145596845 half=4.94190278742 third=2.29033567485 quarter=1.93290981181
+slot=2 pool=29053 norm=59.5231033519 orth=0.667958727487 ratio=0.0112218397542 integer=8.52748045847 half=4.05505173537 third=2.63142284379 quarter=1.94807868684
+slot=3 pool=23281 norm=58.2958446172 orth=0.728026896143 ratio=0.012488486974 integer=7.92564027684 half=4.87850935651 third=3.14283967865 quarter=1.81308661441
+slot=4 pool=40498 norm=61.4273278961 orth=0.81705232288 ratio=0.0133011210297 integer=8.28955811062 half=4.15993585823 third=3.4918450146 quarter=2.08658202789

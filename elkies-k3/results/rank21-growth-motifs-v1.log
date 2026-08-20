@@ -1,0 +1,30 @@
+precomputing CAND @ H ...
+ready
+PROGRESS|trial=1/200|chosen=[32086, 33916, 86258, 35225]|trial_s=0.358|total_s=0.4
+PROGRESS|trial=11/200|chosen=[78908, 15421, 81712, 93049]|trial_s=0.302|total_s=3.3
+PROGRESS|trial=21/200|chosen=[45662, 99222, 59710, 49643]|trial_s=0.243|total_s=6.3
+PROGRESS|trial=31/200|chosen=[16904, 88686, 72223, 76247]|trial_s=0.237|total_s=8.9
+PROGRESS|trial=41/200|chosen=[55585, 42832, 92541, 69414]|trial_s=0.365|total_s=11.9
+PROGRESS|trial=51/200|chosen=[52301, 76601, 70053, 50447]|trial_s=0.461|total_s=15.3
+PROGRESS|trial=61/200|chosen=[19047, 31325, 71622, 96974]|trial_s=0.193|total_s=18.2
+PROGRESS|trial=71/200|chosen=[46990, 72104, 89117, 90144]|trial_s=0.301|total_s=21.5
+PROGRESS|trial=81/200|chosen=[55219, 50929, 75755, 51378]|trial_s=0.354|total_s=24.8
+PROGRESS|trial=91/200|chosen=[14134, 83625, 57157, 94840]|trial_s=0.617|total_s=28.3
+PROGRESS|trial=101/200|chosen=[96785, 86550, 27416, 83004]|trial_s=0.435|total_s=31.4
+PROGRESS|trial=111/200|chosen=[18443, 77431, 32717, 81131]|trial_s=0.401|total_s=34.9
+PROGRESS|trial=121/200|chosen=[46064, 72716, 37614, 42741]|trial_s=0.272|total_s=38.1
+PROGRESS|trial=131/200|chosen=[10174, 99343, 38202, 69810]|trial_s=0.241|total_s=40.9
+PROGRESS|trial=141/200|chosen=[49651, 97763, 63691, 61160]|trial_s=0.189|total_s=43.9
+PROGRESS|trial=151/200|chosen=[59160, 54239, 15040, 94199]|trial_s=0.317|total_s=46.5
+PROGRESS|trial=161/200|chosen=[40590, 99847, 78957, 92217]|trial_s=0.215|total_s=49.3
+PROGRESS|trial=171/200|chosen=[93856, 75456, 92376, 85736]|trial_s=0.382|total_s=52.4
+PROGRESS|trial=181/200|chosen=[11799, 24559, 93420, 71995]|trial_s=0.218|total_s=55.3
+PROGRESS|trial=191/200|chosen=[84984, 60742, 38463, 88667]|trial_s=0.311|total_s=58.1
+PROGRESS|trial=200/200|chosen=[33670, 92570, 91071, 73283]|trial_s=0.283|total_s=60.9
+
+========================================================================
+DONE
+motifs = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank21-growth-motifs-v1/growth_motifs.tsv
+cores  = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank21-growth-motifs-v1/core_vectors.tsv
+rows   = 80000
+seconds= 60.88680641603423

@@ -1,0 +1,15 @@
+ambient_dim = 29
+pool = 3000000
+norm min = 46.3601302162979
+norm max = 106.74598765337504
+target order = [3, 0, 12, 13, 16, 14, 7, 8, 9, 10, 15, 5, 11, 4, 2, 6, 1]
+BEST|trial=0|depth=2|h=18.761890312|shell=4000|score=0.0025892201
+BEST|trial=0|depth=3|h=18.761890312|shell=4000|score=0.044078194
+BEST|trial=55|depth=4|h=26.0525385959|shell=4000|score=0.15556639
+
+FINAL
+best_depth = 4
+best_trial = 55
+best_h = 26.05253859587473
+seconds = 1.7730600833892822
+best_assignment = {3: (0, 1), 0: (1678, -1), 12: (3461, -1), 13: (3917, 1)}

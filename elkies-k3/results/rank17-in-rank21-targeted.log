@@ -1,0 +1,48 @@
+TARGET
+h = 22.94
+target_norm = 91.76
+norm_tol = 0.015
+pair_tol = 0.06
+
+ambient dimension = 21
+full pool = 3000000
+shell = 657884
+WH ready
+target order = [3, 0, 12, 13, 16, 14, 7, 8, 9, 10, 15, 5, 11, 4, 2, 6, 1]
+anchors = 4000
+BEST|depth=1|score=6.6586607e-09
+
+LEVEL|depth=2|target=0|states=64|cache=0
+BEST|depth=2|score=7.2829524e-05|states=64|seconds=0.702
+ assignment= {3: 400690, 0: 401011}
+
+LEVEL|depth=3|target=12|states=64|cache=64
+BEST|depth=3|score=0.00027827151|states=64|seconds=1.415
+ assignment= {3: 400690, 0: 401011, 12: 401853}
+
+LEVEL|depth=4|target=13|states=64|cache=128
+BEST|depth=4|score=0.042336211|states=64|seconds=2.063
+ assignment= {3: 400722, 0: 400605, 12: 295738, 13: 229387}
+
+LEVEL|depth=5|target=16|states=64|cache=170
+BEST|depth=5|score=0.16040744|states=16|seconds=2.930
+ assignment= {3: 400730, 0: 395082, 12: 446124, 13: 211005, 16: 631806}
+
+LEVEL|depth=6|target=14|states=16|cache=234
+DEAD END
+
+FINAL
+best_depth = 5
+h = 22.94
+seconds = 3.1449530124664307
+score = 0.16040744434173534
+assignment = {3: 400730, 0: 395082, 12: 446124, 13: 211005, 16: 631806}
+signs = {3: 1, 0: 1, 12: 1, 13: 1, 16: -1}
+relative residual = 0.008579342929591687
+
+selected global pool IDs:
+target=0 shell=395082 global=2737198 sign=1 norm=91.7419668374
+target=3 shell=400730 global=2742846 sign=1 norm=91.7600867113
+target=12 shell=446124 global=2788240 sign=1 norm=91.9039948566
+target=13 shell=211005 global=2553121 sign=1 norm=91.1332469074
+target=16 shell=631806 global=2973922 sign=-1 norm=92.4757915855

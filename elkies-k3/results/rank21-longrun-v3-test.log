@@ -1,0 +1,27 @@
+precomputing candidate * H ...
+ready
+
+RANK21 17+4 LONG RUN
+run              = rank21-longrun-v3-test
+database         = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank21-longrun-v3-test/experiment.sqlite
+full pool        = 3000000
+core pool        = 50000
+candidate pool   = 100000
+controls/slot    = 500
+selection metric = height
+requested trials = 25
+already complete = 0
+config hash      = 79d245bec0637087
+
+PROGRESS|trial=0|sat=1|s1:orth=0.50839,ratio=0.8054%,hPct=0.001001%,rPct=0.04503% | s2:orth=0.45612,ratio=0.776%,hPct=0.001004%,rPct=0.7497% | s3:orth=0.45905,ratio=0.7009%,hPct=0.001024%,rPct=0.8671% | s4:orth=0.46171,ratio=0.7253%,hPct=0.001179%,rPct=13.4%|trial_s=0.697|total_s=0.7
+PROGRESS|trial=10|sat=1|s1:orth=0.51463,ratio=0.7847%,hPct=0.001001%,rPct=0.03805% | s2:orth=0.67658,ratio=1.014%,hPct=0.001007%,rPct=0.04328% | s3:orth=0.56145,ratio=0.9473%,hPct=0.00104%,rPct=4.984% | s4:orth=1.0381,ratio=1.575%,hPct=0.001295%,rPct=7.417%|trial_s=0.597|total_s=4.3
+PROGRESS|trial=20|sat=1|s1:orth=0.84063,ratio=1.388%,hPct=0.001004%,rPct=0.2589% | s2:orth=0.90409,ratio=1.617%,hPct=0.001017%,rPct=2.312% | s3:orth=1.3631,ratio=2.271%,hPct=0.001085%,rPct=9.043% | s4:orth=1.7936,ratio=2.77%,hPct=0.001434%,rPct=19.07%|trial_s=0.350|total_s=8.0
+PROGRESS|trial=24|sat=1|s1:orth=0.19196,ratio=0.2936%,hPct=0.001001%,rPct=0.01602% | s2:orth=0.1944,ratio=0.3123%,hPct=0.001009%,rPct=0.7806% | s3:orth=1.4328,ratio=2.259%,hPct=0.002192%,rPct=6.507% | s4:orth=2.1967,ratio=3.648%,hPct=0.0015%,rPct=48.17%|trial_s=0.278|total_s=9.2
+
+============================================================================
+DONE
+cores    = 25
+samples  = 50100
+positive = 100
+controls = 50000
+database = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank21-longrun-v3-test/experiment.sqlite

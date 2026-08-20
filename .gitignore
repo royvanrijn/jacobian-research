@@ -75,3 +75,7 @@ tmp/
 **/bazel-out/
 **/bazel-testlogs/
 **/bazel-*/
+
+# Large generated Elkies-K3 numerical artifacts
+elkies-k3/results/**/*.npy
+elkies-k3/results/**/*.sqlite

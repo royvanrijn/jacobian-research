@@ -1,0 +1,11 @@
+{
+  "candidate_pool": 100000,
+  "core_pool": 50000,
+  "gram": "/Users/royvanrijn/Documents/jacobian-research/elkies-k3/data/rank21-nagao-published/height-gram.txt",
+  "norms": "/Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/pools/rank21/norms.npy",
+  "seed": 212121,
+  "top": 100,
+  "trials": 200,
+  "vectors": "/Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/pools/rank21/vectors.npy",
+  "version": 1
+}

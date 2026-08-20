@@ -1,0 +1,18 @@
+LLL start
+LLL done
+STEP|n=100000|unique=52209|current_norm=265.04
+STEP|n=200000|unique=100692|current_norm=190.914
+STEP|n=300000|unique=148447|current_norm=188.486
+STEP|n=400000|unique=196283|current_norm=183.615
+STEP|n=500000|unique=243461|current_norm=128.183
+STEP|n=600000|unique=289870|current_norm=247.504
+STEP|n=700000|unique=337539|current_norm=249.501
+STEP|n=800000|unique=385024|current_norm=222.56
+STEP|n=900000|unique=431343|current_norm=191.065
+STEP|n=1000000|unique=478099|current_norm=161.999
+STEP|n=1100000|unique=525058|current_norm=270.457
+STEP|n=1200000|unique=572054|current_norm=246.875
+STEP|n=1300000|unique=619487|current_norm=233.853
+STEP|n=1400000|unique=666148|current_norm=129.294
+STEP|n=1500000|unique=712663|current_norm=175.704
+STEP|n=1600000|unique=758963|current_norm=247.407

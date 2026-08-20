@@ -1,0 +1,213 @@
+ambient_dim = 21
+full_pool = 3000000
+norms_sorted = True
+
+============================================================================
+H_START|h=22.84000000|target_norm=91.36000000|shell=762497
+SHELL_READY|m=762497
+BEST|h=22.84000000|depth=1|score=1.309787279e-08
+BEST|h=22.84000000|depth=2|score=2.461565835e-05|states=256|zero_domain_states=0|mrv={0: 256}|order=[3, 0]|seconds=27.446
+BEST|h=22.84000000|depth=3|score=0.001888318164|states=256|zero_domain_states=0|mrv={8: 256}|order=[3, 0, 8]|seconds=71.924
+BEST|h=22.84000000|depth=4|score=0.02533655434|states=256|zero_domain_states=1|mrv={12: 121, 13: 26, 15: 27, 6: 17, 1: 43, 4: 21}|order=[3, 0, 8, 12]|seconds=133.259
+DEAD_END|h=22.84000000|attempt_depth=5|states=256|zero_domain_states=256
+
+H_FINAL|h=22.84000000|depth=4|score=0.02533655434|rel=0.0024622966701|order=[3, 0, 8, 12]|seconds=154.303
+assignment = {3: 382528, 0: 384627, 8: 319942, 12: 289089}
+signs = {3: 1, 0: 1, 8: 1, 12: -1}
+selected:
+ target=0 shell=384627 global=2622130 sign=1 norm=91.3668701405
+ target=3 shell=382528 global=2620031 sign=1 norm=91.3597865498
+ target=8 shell=319942 global=2557445 sign=1 norm=91.1484566423
+ target=12 shell=289089 global=2526592 sign=-1 norm=91.0420892092
+============================================================================
+H_START|h=22.86000000|target_norm=91.44000000|shell=741984
+SHELL_READY|m=741984
+BEST|h=22.86000000|depth=1|score=4.076742244e-08
+BEST|h=22.86000000|depth=2|score=2.691388855e-05|states=256|zero_domain_states=0|mrv={0: 256}|order=[3, 0]|seconds=27.757
+BEST|h=22.86000000|depth=3|score=0.00317109017|states=256|zero_domain_states=0|mrv={8: 256}|order=[3, 0, 8]|seconds=66.647
+BEST|h=22.86000000|depth=4|score=0.02486616612|states=256|zero_domain_states=0|mrv={1: 38, 12: 123, 6: 25, 4: 33, 15: 13, 13: 24}|order=[3, 0, 8, 6]|seconds=118.478
+DEAD_END|h=22.86000000|attempt_depth=5|states=256|zero_domain_states=256
+
+H_FINAL|h=22.86000000|depth=4|score=0.02486616612|rel=0.00300600537209|order=[3, 0, 8, 6]|seconds=135.529
+assignment = {3: 385935, 0: 390325, 8: 344557, 6: 571049}
+signs = {3: 1, 0: 1, 8: 1, 6: 1}
+selected:
+ target=0 shell=390325 global=2648341 sign=1 norm=91.45451816
+ target=3 shell=385935 global=2643951 sign=1 norm=91.4397827962
+ target=6 shell=571049 global=2829065 sign=1 norm=92.0329097007
+ target=8 shell=344557 global=2602573 sign=1 norm=91.3014206432
+============================================================================
+H_START|h=22.88000000|target_norm=91.52000000|shell=721146
+SHELL_READY|m=721146
+BEST|h=22.88000000|depth=1|score=2.979819425e-08
+BEST|h=22.88000000|depth=2|score=3.243704524e-05|states=256|zero_domain_states=0|mrv={0: 256}|order=[3, 0]|seconds=25.355
+BEST|h=22.88000000|depth=3|score=0.00280597873|states=256|zero_domain_states=0|mrv={8: 256}|order=[3, 0, 8]|seconds=64.124
+BEST|h=22.88000000|depth=4|score=0.02581163349|states=256|zero_domain_states=1|mrv={4: 37, 13: 24, 12: 129, 1: 28, 15: 14, 6: 23}|order=[3, 0, 8, 4]|seconds=120.579
+DEAD_END|h=22.88000000|attempt_depth=5|states=256|zero_domain_states=256
+
+H_FINAL|h=22.88000000|depth=4|score=0.02581163349|rel=0.00225139314624|order=[3, 0, 8, 4]|seconds=138.272
+assignment = {3: 389497, 0: 385511, 8: 406582, 4: 285933}
+signs = {3: 1, 0: -1, 8: -1, 4: -1}
+selected:
+ target=0 shell=385511 global=2664365 sign=-1 norm=91.5066031335
+ target=3 shell=389497 global=2668351 sign=1 norm=91.5195898847
+ target=4 shell=285933 global=2564787 sign=-1 norm=91.1738790432
+ target=8 shell=406582 global=2685436 sign=-1 norm=91.5758232294
+============================================================================
+H_START|h=22.90000000|target_norm=91.60000000|shell=700271
+SHELL_READY|m=700271
+BEST|h=22.90000000|depth=1|score=4.807097498e-09
+BEST|h=22.90000000|depth=2|score=2.616628679e-05|states=256|zero_domain_states=0|mrv={0: 256}|order=[3, 0]|seconds=25.185
+BEST|h=22.90000000|depth=3|score=0.002755461064|states=256|zero_domain_states=0|mrv={8: 256}|order=[3, 0, 8]|seconds=64.404
+BEST|h=22.90000000|depth=4|score=0.02302691813|states=256|zero_domain_states=0|mrv={12: 113, 4: 35, 1: 39, 15: 27, 13: 26, 6: 16}|order=[3, 0, 8, 13]|seconds=115.205
+DEAD_END|h=22.90000000|attempt_depth=5|states=256|zero_domain_states=256
+
+H_FINAL|h=22.90000000|depth=4|score=0.02302691813|rel=0.00195475840785|order=[3, 0, 8, 13]|seconds=131.753
+assignment = {3: 393091, 0: 385323, 8: 311691, 13: 465397}
+signs = {3: 1, 0: 1, 8: 1, 13: 1}
+selected:
+ target=0 shell=385323 global=2685052 sign=1 norm=91.5746336733
+ target=3 shell=393091 global=2692820 sign=1 norm=91.5996790891
+ target=8 shell=311691 global=2611420 sign=1 norm=91.3309676799
+ target=13 shell=465397 global=2765126 sign=1 norm=91.8308187309
+============================================================================
+H_START|h=22.92000000|target_norm=91.68000000|shell=679210
+SHELL_READY|m=679210
+BEST|h=22.92000000|depth=1|score=7.957349135e-08
+BEST|h=22.92000000|depth=2|score=2.944733029e-05|states=256|zero_domain_states=0|mrv={0: 256}|order=[3, 0]|seconds=25.019
+BEST|h=22.92000000|depth=3|score=0.003045995896|states=256|zero_domain_states=0|mrv={8: 256}|order=[3, 0, 8]|seconds=60.708
+BEST|h=22.92000000|depth=4|score=0.02853418923|states=256|zero_domain_states=0|mrv={4: 32, 12: 129, 15: 16, 13: 23, 1: 34, 6: 22}|order=[3, 0, 8, 6]|seconds=109.657
+BEST|h=22.92000000|depth=5|score=0.2105525398|states=1|zero_domain_states=255|mrv={1: 1}|order=[3, 0, 8, 12, 1]|seconds=127.227
+DEAD_END|h=22.92000000|attempt_depth=6|states=1|zero_domain_states=1
+
+H_FINAL|h=22.92000000|depth=5|score=0.2105525398|rel=0.0111554211449|order=[3, 0, 8, 12, 1]|seconds=127.289
+assignment = {3: 396937, 0: 397646, 8: 409525, 12: 10334, 1: 529089}
+signs = {3: 1, 0: -1, 8: -1, 12: 1, 1: -1}
+selected:
+ target=0 shell=397646 global=2718436 sign=-1 norm=91.6823091067
+ target=1 shell=529089 global=2849879 sign=-1 norm=92.0983663688
+ target=3 shell=396937 global=2717727 sign=1 norm=91.6797883767
+ target=8 shell=409525 global=2730315 sign=-1 norm=91.7199410594
+ target=12 shell=10334 global=2331124 sign=1 norm=90.3429479459
+============================================================================
+H_START|h=22.94000000|target_norm=91.76000000|shell=657884
+SHELL_READY|m=657884
+BEST|h=22.94000000|depth=1|score=6.658660734e-09
+BEST|h=22.94000000|depth=2|score=3.212608082e-05|states=256|zero_domain_states=0|mrv={0: 256}|order=[3, 0]|seconds=23.601
+BEST|h=22.94000000|depth=3|score=0.002293187745|states=256|zero_domain_states=0|mrv={8: 256}|order=[3, 0, 8]|seconds=61.588
+BEST|h=22.94000000|depth=4|score=0.02908486166|states=256|zero_domain_states=2|mrv={13: 21, 15: 20, 12: 110, 1: 39, 6: 32, 4: 32}|order=[3, 0, 8, 12]|seconds=110.968
+DEAD_END|h=22.94000000|attempt_depth=5|states=256|zero_domain_states=256
+
+H_FINAL|h=22.94000000|depth=4|score=0.02908486166|rel=0.00188250764996|order=[3, 0, 8, 12]|seconds=126.267
+assignment = {3: 400662, 0: 400456, 8: 365467, 12: 330595}
+signs = {3: 1, 0: 1, 8: 1, 12: 1}
+selected:
+ target=0 shell=400456 global=2742572 sign=1 norm=91.7591531698
+ target=3 shell=400662 global=2742778 sign=1 norm=91.7598634432
+ target=8 shell=365467 global=2707583 sign=1 norm=91.6479806357
+ target=12 shell=330595 global=2672711 sign=1 norm=91.5340761985
+============================================================================
+H_START|h=22.96000000|target_norm=91.84000000|shell=636518
+SHELL_READY|m=636518
+BEST|h=22.96000000|depth=1|score=3.249681635e-09
+BEST|h=22.96000000|depth=2|score=4.257200359e-05|states=256|zero_domain_states=0|mrv={0: 256}|order=[3, 0]|seconds=23.418
+BEST|h=22.96000000|depth=3|score=0.001162146366|states=256|zero_domain_states=0|mrv={8: 256}|order=[3, 0, 8]|seconds=58.873
+BEST|h=22.96000000|depth=4|score=0.0221004439|states=256|zero_domain_states=1|mrv={12: 124, 13: 35, 6: 20, 1: 27, 15: 19, 4: 30}|order=[3, 0, 8, 4]|seconds=101.413
+DEAD_END|h=22.96000000|attempt_depth=5|states=256|zero_domain_states=256
+
+H_FINAL|h=22.96000000|depth=4|score=0.0221004439|rel=0.00207144868085|order=[3, 0, 8, 4]|seconds=115.954
+assignment = {3: 404439, 0: 400347, 8: 357750, 4: 516268}
+signs = {3: 1, 0: 1, 8: 1, 4: 1}
+selected:
+ target=0 shell=400347 global=2763829 sign=1 norm=91.8267640892
+ target=3 shell=404439 global=2767921 sign=1 norm=91.8397738201
+ target=4 shell=516268 global=2879750 sign=1 norm=92.1909584503
+ target=8 shell=357750 global=2721232 sign=1 norm=91.6910768372
+============================================================================
+H_START|h=22.98000000|target_norm=91.92000000|shell=614710
+SHELL_READY|m=614710
+BEST|h=22.98000000|depth=1|score=2.595501591e-10
+BEST|h=22.98000000|depth=2|score=3.440535203e-05|states=256|zero_domain_states=0|mrv={0: 256}|order=[3, 0]|seconds=21.416
+BEST|h=22.98000000|depth=3|score=0.002770620334|states=256|zero_domain_states=0|mrv={8: 256}|order=[3, 0, 8]|seconds=57.572
+BEST|h=22.98000000|depth=4|score=0.02004433633|states=256|zero_domain_states=0|mrv={12: 106, 6: 32, 1: 44, 15: 17, 13: 22, 4: 34, 14: 1}|order=[3, 0, 8, 4]|seconds=102.727
+DEAD_END|h=22.98000000|attempt_depth=5|states=256|zero_domain_states=256
+
+H_FINAL|h=22.98000000|depth=4|score=0.02004433633|rel=0.00162775505351|order=[3, 0, 8, 4]|seconds=116.364
+assignment = {3: 408027, 0: 408128, 8: 389374, 4: 332780}
+signs = {3: 1, 0: -1, 8: 1, 4: 1}
+selected:
+ target=0 shell=408128 global=2793418 sign=-1 norm=91.9204803985
+ target=3 shell=408027 global=2793317 sign=1 norm=91.9200472647
+ target=4 shell=332780 global=2718070 sign=1 norm=91.6810825002
+ target=8 shell=389374 global=2774664 sign=1 norm=91.8611988313
+============================================================================
+H_START|h=23.00000000|target_norm=92.00000000|shell=592827
+SHELL_READY|m=592827
+BEST|h=23.00000000|depth=1|score=1.808863859e-08
+BEST|h=23.00000000|depth=2|score=5.762559499e-05|states=256|zero_domain_states=0|mrv={0: 256}|order=[3, 0]|seconds=21.457
+BEST|h=23.00000000|depth=3|score=0.002520096437|states=256|zero_domain_states=0|mrv={8: 256}|order=[3, 0, 8]|seconds=50.578
+BEST|h=23.00000000|depth=4|score=0.0169169587|states=256|zero_domain_states=7|mrv={1: 36, 12: 116, 4: 25, 13: 22, 15: 23, 6: 27}|order=[3, 0, 8, 1]|seconds=88.587
+DEAD_END|h=23.00000000|attempt_depth=5|states=256|zero_domain_states=256
+
+H_FINAL|h=23.00000000|depth=4|score=0.0169169587|rel=0.00163353900479|order=[3, 0, 8, 1]|seconds=100.008
+assignment = {3: 411197, 0: 407727, 8: 399510, 1: 329713}
+signs = {3: 1, 0: 1, 8: 1, 1: 1}
+selected:
+ target=0 shell=407727 global=2814900 sign=1 norm=91.9885992243
+ target=1 shell=329713 global=2736886 sign=1 norm=91.7410252166
+ target=3 shell=411197 global=2818370 sign=1 norm=91.9996624891
+ target=8 shell=399510 global=2806683 sign=1 norm=91.9626376954
+============================================================================
+H_START|h=23.02000000|target_norm=92.08000000|shell=570902
+SHELL_READY|m=570902
+BEST|h=23.02000000|depth=1|score=3.170349605e-08
+BEST|h=23.02000000|depth=2|score=6.549781169e-05|states=256|zero_domain_states=0|mrv={0: 256}|order=[3, 0]|seconds=19.270
+BEST|h=23.02000000|depth=3|score=0.00287993902|states=256|zero_domain_states=0|mrv={8: 256}|order=[3, 0, 8]|seconds=47.654
+BEST|h=23.02000000|depth=4|score=0.02685318145|states=256|zero_domain_states=2|mrv={4: 28, 6: 27, 12: 114, 13: 28, 15: 21, 1: 36}|order=[3, 0, 8, 12]|seconds=88.042
+DEAD_END|h=23.02000000|attempt_depth=5|states=256|zero_domain_states=256
+
+H_FINAL|h=23.02000000|depth=4|score=0.02685318145|rel=0.0019429884076|order=[3, 0, 8, 12]|seconds=99.397
+assignment = {3: 414838, 0: 414508, 8: 321206, 12: 426097}
+signs = {3: 1, 0: 1, 8: -1, 12: 1}
+selected:
+ target=0 shell=414508 global=2843606 sign=1 norm=92.0785623664
+ target=3 shell=414838 global=2843936 sign=1 norm=92.0796988861
+ target=8 shell=321206 global=2750304 sign=-1 norm=91.7836817293
+ target=12 shell=426097 global=2855195 sign=1 norm=92.1149022095
+============================================================================
+H_START|h=23.04000000|target_norm=92.16000000|shell=548592
+SHELL_READY|m=548592
+BEST|h=23.04000000|depth=1|score=1.851804909e-08
+BEST|h=23.04000000|depth=2|score=2.255379338e-05|states=256|zero_domain_states=0|mrv={0: 256}|order=[3, 0]|seconds=21.968
+BEST|h=23.04000000|depth=3|score=0.00251493148|states=256|zero_domain_states=0|mrv={8: 256}|order=[3, 0, 8]|seconds=54.417
+BEST|h=23.04000000|depth=4|score=0.02724580714|states=256|zero_domain_states=1|mrv={6: 23, 12: 119, 15: 21, 1: 46, 13: 17, 4: 29}|order=[3, 0, 8, 12]|seconds=94.543
+DEAD_END|h=23.04000000|attempt_depth=5|states=256|zero_domain_states=256
+
+H_FINAL|h=23.04000000|depth=4|score=0.02724580714|rel=0.00215282032585|order=[3, 0, 8, 12]|seconds=106.511
+assignment = {3: 418103, 0: 413821, 8: 410077, 12: 373075}
+signs = {3: 1, 0: 1, 8: 1, 12: 1}
+selected:
+ target=0 shell=413821 global=2865229 sign=1 norm=92.1465863529
+ target=3 shell=418103 global=2869511 sign=1 norm=92.1599155875
+ target=8 shell=410077 global=2861485 sign=1 norm=92.1346229568
+ target=12 shell=373075 global=2824483 sign=1 norm=92.0188986386
+
+============================================================================
+SWEEP SUMMARY
+h=22.92000000 depth=5 rel=0.01115542114 score=0.2105525398 order=[3, 0, 8, 12, 1]
+h=22.98000000 depth=4 rel=0.001627755054 score=0.02004433633 order=[3, 0, 8, 4]
+h=23.00000000 depth=4 rel=0.001633539005 score=0.0169169587 order=[3, 0, 8, 1]
+h=22.94000000 depth=4 rel=0.00188250765 score=0.02908486166 order=[3, 0, 8, 12]
+h=23.02000000 depth=4 rel=0.001942988408 score=0.02685318145 order=[3, 0, 8, 12]
+h=22.90000000 depth=4 rel=0.001954758408 score=0.02302691813 order=[3, 0, 8, 13]
+h=22.96000000 depth=4 rel=0.002071448681 score=0.0221004439 order=[3, 0, 8, 4]
+h=23.04000000 depth=4 rel=0.002152820326 score=0.02724580714 order=[3, 0, 8, 12]
+h=22.88000000 depth=4 rel=0.002251393146 score=0.02581163349 order=[3, 0, 8, 4]
+h=22.84000000 depth=4 rel=0.00246229667 score=0.02533655434 order=[3, 0, 8, 12]
+h=22.86000000 depth=4 rel=0.003006005372 score=0.02486616612 order=[3, 0, 8, 6]
+
+GLOBAL BEST
+h=22.92000000
+depth=5
+rel=0.0111554211449
+order= [3, 0, 8, 12, 1]

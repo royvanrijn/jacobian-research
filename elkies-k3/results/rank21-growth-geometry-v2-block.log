@@ -1,0 +1,16 @@
+PROGRESS|trial=10/100|rows=800|seconds=145.5
+PROGRESS|trial=20/100|rows=1600|seconds=297.0
+PROGRESS|trial=30/100|rows=2400|seconds=419.1
+PROGRESS|trial=40/100|rows=3200|seconds=482.8
+PROGRESS|trial=50/100|rows=4000|seconds=546.3
+PROGRESS|trial=60/100|rows=4800|seconds=609.2
+PROGRESS|trial=70/100|rows=5600|seconds=671.9
+PROGRESS|trial=80/100|rows=6400|seconds=734.7
+PROGRESS|trial=90/100|rows=7200|seconds=797.6
+PROGRESS|trial=100/100|rows=8000|seconds=860.3
+
+========================================================================
+DONE
+rows = 8000
+saved = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank21-growth-geometry-v2-block/growth_geometry.tsv
+seconds = 860.4573563750018

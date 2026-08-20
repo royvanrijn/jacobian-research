@@ -1,0 +1,70 @@
+RANK21 17+4 LAB
+full pool       = 3000000
+core pool       = 20000
+hidden pool     = 50000
+core norm range = 25.480712631162213 .. 57.439497126394656
+hidden range    = 25.480712631162213 .. 62.67867119434587
+
+BEST|trial=0|sat=1|orth_sum=13.2247664692|orth_max=11.2128101311|half_mean=3.70999279798
+  HIDDEN|slot=1|norm=62.30893690|orth=0.05191442|ratio=0.00083318|pct=0.012024%|g1=0.277227|g2=0.274965|g3=0.315210|g4=0.259718|halfAdv=-0.002262|quarterAdv=-0.015247|support=12|maxc=2
+  HIDDEN|slot=2|norm=60.45917808|orth=0.49466786|ratio=0.00818185|pct=0.861706%|g1=0.265463|g2=0.293039|g3=0.241693|g4=0.305714|halfAdv=0.027575|quarterAdv=0.040251|support=17|maxc=2
+  HIDDEN|slot=3|norm=61.67761480|orth=1.46537406|ratio=0.02375860|pct=3.807539%|g1=0.288972|g2=0.286247|g3=0.297196|g4=0.248699|halfAdv=-0.002725|quarterAdv=-0.037548|support=13|maxc=2
+  HIDDEN|slot=4|norm=53.31030588|orth=11.21281013|ratio=0.21033100|pct=59.926655%|g1=0.301932|g2=0.245010|g3=0.295513|g4=0.262554|halfAdv=-0.056922|quarterAdv=0.017544|support=10|maxc=1
+PROGRESS|trial=1/25|valid=1|seconds=12.10
+BEST|trial=1|sat=1|orth_sum=5.43961843284|orth_max=3.84519806148|half_mean=4.18206621288
+  HIDDEN|slot=1|norm=58.93322402|orth=0.41760878|ratio=0.00708614|pct=0.098190%|g1=0.269648|g2=0.281032|g3=0.274654|g4=0.320142|halfAdv=0.011384|quarterAdv=0.050495|support=16|maxc=3
+  HIDDEN|slot=2|norm=61.83096351|orth=0.44833650|ratio=0.00725100|pct=0.160311%|g1=0.267615|g2=0.307035|g3=0.274774|g4=0.264786|halfAdv=0.039420|quarterAdv=-0.002829|support=12|maxc=2
+  HIDDEN|slot=3|norm=45.57785541|orth=0.72847509|ratio=0.01598309|pct=1.506923%|g1=0.309929|g2=0.295561|g3=0.285853|g4=0.318382|halfAdv=-0.014368|quarterAdv=0.022821|support=15|maxc=2
+  HIDDEN|slot=4|norm=59.48160836|orth=3.84519806|ratio=0.06464516|pct=10.939222%|g1=0.248143|g2=0.276461|g3=0.253510|g4=0.310055|halfAdv=0.028318|quarterAdv=0.061912|support=15|maxc=2
+BEST|trial=4|sat=1|orth_sum=3.82972662885|orth_max=1.12340304581|half_mean=4.07552468643
+  HIDDEN|slot=1|norm=60.46487324|orth=0.60034543|ratio=0.00992883|pct=0.080147%|g1=0.274045|g2=0.254483|g3=0.275422|g4=0.286639|halfAdv=-0.019562|quarterAdv=0.032156|support=14|maxc=2
+  HIDDEN|slot=2|norm=52.81418199|orth=1.00838020|ratio=0.01909298|pct=1.252304%|g1=0.308618|g2=0.289130|g3=0.286579|g4=0.274961|halfAdv=-0.019488|quarterAdv=-0.014170|support=14|maxc=2
+  HIDDEN|slot=3|norm=51.32263232|orth=1.09759795|ratio=0.02138624|pct=1.765248%|g1=0.283017|g2=0.269867|g3=0.254660|g4=0.282118|halfAdv=-0.013150|quarterAdv=0.012251|support=16|maxc=3
+  HIDDEN|slot=4|norm=61.81027222|orth=1.12340305|ratio=0.01817502|pct=0.935722%|g1=0.282104|g2=0.292043|g3=0.329857|g4=0.257038|halfAdv=0.009939|quarterAdv=-0.025066|support=15|maxc=2
+BEST|trial=9|sat=1|orth_sum=3.82040819286|orth_max=1.23630963466|half_mean=3.94518022756
+  HIDDEN|slot=1|norm=59.28785813|orth=0.51379025|ratio=0.00866603|pct=0.114210%|g1=0.207605|g2=0.290725|g3=0.337056|g4=0.287365|halfAdv=0.083120|quarterAdv=0.079760|support=18|maxc=3
+  HIDDEN|slot=2|norm=61.34996117|orth=0.95848009|ratio=0.01562316|pct=0.380700%|g1=0.298542|g2=0.295829|g3=0.302738|g4=0.332365|halfAdv=-0.002713|quarterAdv=0.036537|support=11|maxc=2
+  HIDDEN|slot=3|norm=58.61826933|orth=1.11182822|ratio=0.01896726|pct=0.837541%|g1=0.317778|g2=0.250920|g3=0.332349|g4=0.278208|halfAdv=-0.066858|quarterAdv=0.027288|support=17|maxc=2
+  HIDDEN|slot=4|norm=53.94339326|orth=1.23630963|ratio=0.02291865|pct=1.757233%|g1=0.296410|g2=0.230076|g3=0.308238|g4=0.286318|halfAdv=-0.066334|quarterAdv=0.056242|support=14|maxc=2
+PROGRESS|trial=11/25|valid=11|seconds=46.02
+BEST|trial=11|sat=1|orth_sum=2.99788920997|orth_max=0.92804650919|half_mean=3.61143716338
+  HIDDEN|slot=1|norm=53.16263695|orth=0.54933033|ratio=0.01033302|pct=0.236331%|g1=0.232067|g2=0.330655|g3=0.231442|g4=0.262708|halfAdv=0.098588|quarterAdv=0.030641|support=16|maxc=2
+  HIDDEN|slot=2|norm=61.78454414|orth=0.61881957|ratio=0.01001577|pct=0.192269%|g1=0.292552|g2=0.293905|g3=0.263110|g4=0.303563|halfAdv=0.001353|quarterAdv=0.011011|support=16|maxc=3
+  HIDDEN|slot=3|norm=61.52251554|orth=0.90169281|ratio=0.01465631|pct=0.434608%|g1=0.240181|g2=0.217086|g3=0.288429|g4=0.298838|halfAdv=-0.023095|quarterAdv=0.081752|support=17|maxc=3
+  HIDDEN|slot=4|norm=49.95189358|orth=0.92804651|ratio=0.01857881|pct=1.157621%|g1=0.284027|g2=0.302763|g3=0.271097|g4=0.334528|halfAdv=0.018735|quarterAdv=0.050500|support=11|maxc=1
+BEST|trial=18|sat=1|orth_sum=2.87711141824|orth_max=1.60563961474|half_mean=4.54673008742
+  HIDDEN|slot=1|norm=57.43285149|orth=0.23036690|ratio=0.00401107|pct=0.076090%|g1=0.257885|g2=0.318911|g3=0.225621|g4=0.303196|halfAdv=0.061027|quarterAdv=0.045311|support=13|maxc=2
+  HIDDEN|slot=2|norm=61.97337348|orth=0.47631327|ratio=0.00768577|pct=0.172203%|g1=0.254909|g2=0.254681|g3=0.306649|g4=0.255194|halfAdv=-0.000228|quarterAdv=0.000514|support=13|maxc=1
+  HIDDEN|slot=3|norm=60.27802089|orth=0.56479163|ratio=0.00936978|pct=0.378447%|g1=0.251843|g2=0.277821|g3=0.282280|g4=0.273217|halfAdv=0.025978|quarterAdv=0.021374|support=17|maxc=3
+  HIDDEN|slot=4|norm=60.43619194|orth=1.60563961|ratio=0.02656752|pct=2.110490%|g1=0.285716|g2=0.266359|g3=0.288499|g4=0.308219|halfAdv=-0.019358|quarterAdv=0.041861|support=17|maxc=3
+PROGRESS|trial=21/25|valid=21|seconds=55.26
+BEST|trial=24|sat=1|orth_sum=2.50363204183|orth_max=0.81705232288|half_mean=4.50884993438
+  HIDDEN|slot=1|norm=55.41956489|orth=0.29059410|ratio=0.00524353|pct=0.080095%|g1=0.226532|g2=0.329437|g3=0.286464|g4=0.307149|halfAdv=0.102905|quarterAdv=0.080616|support=15|maxc=2
+  HIDDEN|slot=2|norm=59.52310335|orth=0.66795873|ratio=0.01122184|pct=0.190224%|g1=0.319447|g2=0.300514|g3=0.253739|g4=0.296090|halfAdv=-0.018933|quarterAdv=-0.004425|support=15|maxc=2
+  HIDDEN|slot=3|norm=58.29584462|orth=0.72802690|ratio=0.01248849|pct=0.302357%|g1=0.302751|g2=0.316596|g3=0.306422|g4=0.286851|halfAdv=0.013846|quarterAdv=-0.015899|support=15|maxc=2
+  HIDDEN|slot=4|norm=61.42732790|orth=0.81705232|ratio=0.01330112|pct=0.418494%|g1=0.267702|g2=0.329366|g3=0.276074|g4=0.255546|halfAdv=0.061664|quarterAdv=-0.012156|support=15|maxc=3
+PROGRESS|trial=25/25|valid=25|seconds=58.52
+
+========================================================================
+FINAL
+valid cores = 25
+hidden rows = 100
+seconds = 58.52817787503591
+
+saved:
+/Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank21-17plus4-lab/core_summary.tsv
+/Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank21-17plus4-lab/hidden_directions.tsv
+/Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank21-17plus4-lab/best_hidden_directions.tsv
+
+BEST CORE
+core_id = 24
+saturation_index = 1
+hidden orthogonal sum = 2.5036320418325104
+hidden orthogonal max = 0.8170523228799311
+half-grid mean = 4.508849934384561
+
+FOUR MISSING DIRECTIONS
+slot=1 pool=13773 norm=55.4195648909 orth=0.290594095322 ratio=0.00524352899367 pct=0.080094512% g1=0.22653244 g2=0.32943737 g3=0.28646389 g4=0.30714889 halfAdv=0.10290493 thirdAdv=0.059931446 quarterAdv=0.080616453
+slot=2 pool=29053 norm=59.5231033519 orth=0.667958727487 ratio=0.0112218397542 pct=0.19022446% g1=0.31944715 g2=0.30051435 g3=0.25373908 g4=0.29608962 halfAdv=-0.0189328 thirdAdv=-0.065708066 quarterAdv=-0.0044247278
+slot=3 pool=23281 norm=58.2958446172 orth=0.728026896143 ratio=0.012488486974 pct=0.30235678% g1=0.30275061 g2=0.3165963 g3=0.30642248 g4=0.28685112 halfAdv=0.013845686 thirdAdv=0.0036718697 quarterAdv=-0.015899493
+slot=4 pool=40498 norm=61.4273278961 orth=0.81705232288 ratio=0.0133011210297 pct=0.41849382% g1=0.26770218 g2=0.32936649 g3=0.27607439 g4=0.25554609 halfAdv=0.061664311 thirdAdv=0.0083722071 quarterAdv=-0.012156094

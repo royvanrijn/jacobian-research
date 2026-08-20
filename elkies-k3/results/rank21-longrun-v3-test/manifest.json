@@ -1,0 +1,17 @@
+{
+  "candidate_pool": 100000,
+  "config_hash": "79d245bec06370874af665eaea335bf3418eeeac3ad09808de5b8f9cf011dbee",
+  "controls": 500,
+  "core_pool": 50000,
+  "database": "/Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank21-longrun-v3-test/experiment.sqlite",
+  "gram": "/Users/royvanrijn/Documents/jacobian-research/elkies-k3/data/rank21-nagao-published/height-gram.txt",
+  "norms": "/Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/pools/rank21/norms.npy",
+  "seed": 210021,
+  "selection_metric": "height",
+  "shape": [
+    3000000,
+    21
+  ],
+  "vectors": "/Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/pools/rank21/vectors.npy",
+  "version": 3
+}
