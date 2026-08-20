@@ -121,3 +121,6 @@ The principal research continuation is a certified residual 2-Selmer
 calculation in the cubic 2-division field. Exact smooth principal-ideal
 relations may either produce explicit residual 2-covers to search for a 31st
 point or give the missing upper bound needed for an exact-rank result.
+
+The separate source and family investigation is maintained in
+[`ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md`](ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md).

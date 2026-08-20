@@ -13,10 +13,18 @@ ap.add_argument("--p", type=int, default=31, help="finite-field prime; use 0 for
 ap.add_argument("--export", default=None, help="optional msolve-format output (requires --p)")
 ap.add_argument("--show", action="store_true", help="print the nine residual equations")
 ap.add_argument(
+    "--verify",
+    default=None,
+    help="comma-separated active-coordinate assignment to reconstruct and verify",
+)
+ap.add_argument(
     "--stage",
-    choices=("base", "triangular"),
-    default="triangular",
-    help="stop at the 12x9 chart or apply the sparse infinity eliminations",
+    choices=("base", "triangular", "component2"),
+    default="component2",
+    help=(
+        "stop at the 12x9 chart, apply the sparse infinity eliminations, "
+        "or also impose the target I11 component-2 first jet"
+    ),
 )
 args = ap.parse_args()
 
@@ -137,8 +145,10 @@ residuals = [("I2_1_first", B.derivative(t)(1) + s1 * A.derivative(t)(1))]
 residuals += [(f"I11_inf_D{k}", Delta[k]) for k in range(21, 13, -1)]
 
 triangular_history = []
+component_history = []
+open_factors = [rho, lam, lam - 1, s1, sl, r1**2 - 3 * s1]
 active_names = list(names)
-if args.stage == "triangular":
+if args.stage in ("triangular", "component2"):
     substitutions = {}
 
     def settle(equation):
@@ -183,10 +193,76 @@ if args.stage == "triangular":
         if tag not in used_tags
     ]
 
+if args.stage == "component2":
+    # In local split-node coordinates uv=t^11, component class 2 (up to sign)
+    # has both branches vanishing beyond first order.  After the tangent-cone
+    # parametrization above this first deeper incidence is exactly y5=0.  The
+    # D18 equation then becomes an identity.  Exact class 2 additionally needs
+    # a nonzero second-jet open condition, checked after finding a point.
+    y5_variable = d["y5"]
+    active_names.remove("y5")
+    component_residuals = []
+    for tag, equation in residuals:
+        specialized = RF(equation.subs({y5_variable: 0}))
+        if specialized == 0:
+            print(f"MW3A10P1_DEP|tag={tag}|after=y5=0", flush=True)
+            continue
+        component_residuals.append((tag, specialized))
+    residuals = component_residuals
+
+    # The next cancellation is y4*F=0.  The branch y4=0 continues to a deeper
+    # component, while exact class 2 has y4 != 0.  Divide by that open factor
+    # and use the sparse quotient to eliminate y3.
+    source = next(equation for tag, equation in residuals if tag == "I11_inf_D17")
+    source_numerator = R(source.numerator())
+    quotient, remainder = source_numerator.quo_rem(R(d["y4"]))
+    if remainder != 0:
+        raise RuntimeError("D17 lost its expected exact-class-2 y4 factor")
+    y3_variable = d["y3"]
+    if quotient.degree(y3_variable) != 1:
+        raise RuntimeError("D17/y4 is not affine-linear in y3")
+    coefficient = RF(quotient.derivative(y3_variable))
+    y3_rhs = RF(-quotient.subs({y3_variable: 0}) / coefficient)
+    open_factors.extend((RF(d["y4"]), coefficient))
+    substitutions[RF(y3_variable)] = y3_rhs
+    active_names.remove("y3")
+    component_history.append(("y3", "I11_inf_D17/y4", y3_rhs))
+    print(
+        f"MW3A10P1_ELIM|var=y3|from=I11_inf_D17/y4"
+        f"|degree={quotient.total_degree()}|terms={len(quotient.monomials())}",
+        flush=True,
+    )
+    residuals = [
+        (tag, settle(equation))
+        for tag, equation in residuals
+        if tag != "I11_inf_D17"
+    ]
+
+# Export the small open factors separately.  Multiplying them would create a
+# large polynomial for no benefit.  Delta_13 != 0 and the earlier sparse
+# triangular coefficients are checked only on the tiny reconstructed survivor
+# set; rho != 0 already covers their generic leading factors.
+open_polynomials = []
+for factor in open_factors:
+    factor = RF(factor)
+    if args.stage == "component2":
+        factor = RF(factor.subs({d["y5"]: 0}))
+    polynomial = R(factor.numerator())
+    if polynomial not in (R(0), R(1)):
+        open_polynomials.append(polynomial)
+
 reduced = []
 for tag, equation in residuals:
     equation = RF(equation)
     numerator = R(equation.numerator())
+    if tag == "I2_1_first":
+        # P1(1) is parametrized on the nodal cubic.  The derivative equation
+        # includes the node branch r1^2=3*s1, which is explicitly excluded.
+        node_factor = R(d["r1"]**2 - 3 * d["s1"])
+        quotient, remainder = numerator.quo_rem(node_factor)
+        if remainder != 0:
+            raise RuntimeError("I2_1_first lost its expected node factor")
+        numerator = quotient
     if numerator == 0:
         raise RuntimeError(f"unexpected dependent residual equation: {tag}")
     reduced.append((tag, numerator))
@@ -229,6 +305,120 @@ for i, (tag, equation) in enumerate(reduced):
     if args.show:
         print(f"MW3A10P1_EXPR|i={i}|{equation}", flush=True)
 
+if args.verify:
+    if args.p == 0:
+        raise SystemExit("--verify currently requires a finite field")
+    assignments = {}
+    for item in args.verify.split(","):
+        name, value = item.split("=", 1)
+        assignments[name.strip()] = K(int(value.strip()))
+    if set(assignments) != set(active_names):
+        raise RuntimeError(
+            f"verify assignment must give exactly {active_names}; got {sorted(assignments)}"
+        )
+    values = {d[name]: value for name, value in assignments.items()}
+    if args.stage == "component2":
+        values[d["y5"]] = K(0)
+
+    def evaluate_fraction(expression):
+        value = RF(expression).subs(values)
+        return K(value)
+
+    # The component quotient is already expressed after all triangular
+    # substitutions, while some stored triangular right sides still contain
+    # y3.  Evaluate the component coordinate first.
+    for name, _, rhs in component_history + triangular_history:
+        values[d[name]] = evaluate_fraction(rhs)
+
+    residual_values = [K(equation.subs(values)) for _, equation in reduced]
+    open_values = [K(polynomial.subs(values)) for polynomial in open_polynomials]
+    print(
+        "MW3A10VERIFY|residuals=" + ",".join(str(int(value)) for value in residual_values),
+        flush=True,
+    )
+    print(
+        "MW3A10VERIFY|opens=" + ",".join(str(int(value)) for value in open_values),
+        flush=True,
+    )
+    if any(residual_values) or any(value == 0 for value in open_values):
+        raise RuntimeError("candidate fails a reduced equation or chart open condition")
+
+    Kt = PolynomialRing(K, "t")
+
+    def specialize_polynomial(poly):
+        return Kt([evaluate_fraction(coefficient) for coefficient in poly.list()])
+
+    A_special = specialize_polynomial(A)
+    X_special = specialize_polynomial(X)
+    Y_special = specialize_polynomial(Y)
+    B_special = Y_special**2 - X_special**3 - A_special * X_special
+    Delta_special = -16 * (4 * A_special**3 + 27 * B_special**2)
+
+    if Y_special**2 != X_special**3 + A_special * X_special + B_special:
+        raise RuntimeError("reconstructed section identity failed")
+
+    def valuation_at(poly, point):
+        factor = Kt.gen() - point
+        valuation = 0
+        while poly != 0 and poly(point) == 0:
+            poly = poly // factor
+            valuation += 1
+        return valuation
+
+    lam_value = assignments["lam"]
+    valuations = {
+        "zero": valuation_at(Delta_special, K(0)),
+        "one": valuation_at(Delta_special, K(1)),
+        "lambda": valuation_at(Delta_special, lam_value),
+        "infinity": 24 - Delta_special.degree(),
+    }
+    expected = {"zero": 3, "one": 2, "lambda": 2, "infinity": 11}
+    print(
+        "MW3A10VERIFY|valuations="
+        + ",".join(f"{name}:{value}" for name, value in valuations.items()),
+        flush=True,
+    )
+    if valuations != expected:
+        raise RuntimeError(f"wrong exact reducible-fiber valuations: {valuations}")
+
+    fixed_factor = (
+        Kt.gen()**3
+        * (Kt.gen() - 1)**2
+        * (Kt.gen() - lam_value)**2
+    )
+    residual_delta = Delta_special // fixed_factor
+    residual_squarefree = gcd(residual_delta, residual_delta.derivative()).degree() == 0
+    print(
+        f"MW3A10VERIFY|residual_degree={residual_delta.degree()}"
+        f"|residual_squarefree={int(residual_squarefree)}",
+        flush=True,
+    )
+    if residual_delta.degree() != 6 or not residual_squarefree:
+        raise RuntimeError("six residual I1 fibers are not squarefree")
+
+    jacobian = matrix(
+        K,
+        [
+            [equation.derivative(d[name]).subs(values) for name in active_names]
+            for _, equation in reduced
+        ],
+    )
+    print(
+        f"MW3A10VERIFY|jacobian_rank={jacobian.rank()}"
+        f"|expected={len(reduced)}",
+        flush=True,
+    )
+    if jacobian.rank() != len(reduced):
+        raise RuntimeError("candidate is singular on the reduced chart")
+
+    def coeff_string(poly):
+        return ",".join(str(int(coefficient)) for coefficient in poly.list())
+
+    print(f"MW3A10VERIFY|A_coeffs={coeff_string(A_special)}", flush=True)
+    print(f"MW3A10VERIFY|B_coeffs={coeff_string(B_special)}", flush=True)
+    print(f"MW3A10VERIFY|X_coeffs={coeff_string(X_special)}", flush=True)
+    print(f"MW3A10VERIFY|Y_coeffs={coeff_string(Y_special)}", flush=True)
+
 if args.export:
     if args.p == 0:
         raise SystemExit("--export requires a finite field")
@@ -260,7 +450,19 @@ if args.export:
             handle.write(f"{name} <- {value}\n")
         for name, tag, value in triangular_history:
             handle.write(f"{name} <- {value}    # {tag}\n")
+        for name, tag, value in component_history:
+            handle.write(f"{name} <- {value}    # {tag}\n")
         handle.write("\nEQUATIONS\n")
         for tag, equation in reduced:
             handle.write(f"{tag}: {equation}\n")
-    print(f"MW3A10P1|export={out}|meta={meta}", flush=True)
+    open_out = out.with_suffix(".open.ms")
+    with open_out.open("w") as handle:
+        handle.write(",".join(active_names) + "\n")
+        handle.write(str(args.p) + "\n")
+        for i, polynomial in enumerate(open_polynomials):
+            handle.write(str(polynomial).replace("**", "^"))
+            handle.write(",\n" if i + 1 < len(open_polynomials) else "\n")
+    print(
+        f"MW3A10P1|export={out}|meta={meta}|open_export={open_out}",
+        flush=True,
+    )

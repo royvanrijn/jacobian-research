@@ -1,5 +1,6 @@
 from pathlib import Path
 import argparse
+import ast
 import math
 import time
 from collections import defaultdict, Counter
@@ -59,6 +60,19 @@ parser.add_argument(
     default=180.0
 )
 
+parser.add_argument(
+    "--output-dir",
+    type=Path,
+    default=None,
+    help="output directory (default: elkies-k3/results)"
+)
+
+parser.add_argument(
+    "--output-prefix",
+    default="rank17-E29",
+    help="basename prefix for partial and full-embedding files"
+)
+
 args = parser.parse_args()
 
 
@@ -66,6 +80,12 @@ BASE = Path(__file__).resolve().parents[1]
 
 J = BASE / "checkpoints/24A1-JACKPOT-948-r0-n1311"
 OUT = BASE / "results"
+
+if args.output_dir is not None:
+    OUT = args.output_dir
+
+if Path(args.output_prefix).name != args.output_prefix:
+    raise SystemExit("--output-prefix must be a basename, not a path")
 
 OUT.mkdir(parents=True, exist_ok=True)
 
@@ -160,10 +180,21 @@ print(
 # Ambient lattice
 # ============================================================
 
-HA_np = np.loadtxt(
-    args.gram,
-    dtype=float
-)
+try:
+    HA_np = np.loadtxt(
+        args.gram,
+        dtype=float
+    )
+except ValueError:
+    # Sage's ``str(list(row))`` format has brackets and commas, whereas the
+    # original E29 input is whitespace-delimited.  Accept both exact output
+    # formats before converting the numerical search matrix to float64.
+    rows = []
+    with Path(args.gram).open() as handle:
+        for line in handle:
+            if line.strip():
+                rows.append(ast.literal_eval(line))
+    HA_np = np.asarray(rows, dtype=float)
 
 r = HA_np.shape[0]
 
@@ -473,7 +504,7 @@ best_payload = None
 
 BEST_PATH = (
     OUT
-    / "rank17-E29-best-partial.txt"
+    / f"{args.output_prefix}-best-partial.txt"
 )
 
 
@@ -845,21 +876,21 @@ for shell_index, line_inds in enumerate(
 
             np.savetxt(
                 OUT
-                / "rank17-E29-embedding-A.txt",
+                / f"{args.output_prefix}-embedding-A.txt",
                 Arows,
                 fmt="%d"
             )
 
             np.savetxt(
                 OUT
-                / "rank17-E29-embedding-gram.txt",
+                / f"{args.output_prefix}-embedding-gram.txt",
                 G,
                 fmt="%.17g"
             )
 
             np.savetxt(
                 OUT
-                / "rank17-E29-embedding-residual.txt",
+                / f"{args.output_prefix}-embedding-residual.txt",
                 residual,
                 fmt="%.17g"
             )
