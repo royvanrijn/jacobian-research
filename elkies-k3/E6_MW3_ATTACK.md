@@ -68,7 +68,42 @@ Several useful negative experiments clarified the correct representation:
 - A single dense slice on the 13-variable system produced very large F4 matrices around degrees 18-19, essentially independent of using p=101 or p=31. The difficulty is structural, not a bad-prime effect.
 - Exact P1_0 parametrization exposed the dependency P1_2=P1_3=0 after P1_1 elimination.
 - Dense affine substitution of the three final slicing equations causes severe multinomial expansion in the high-degree fiber equations.
-- Coordinate slices are dramatically cheaper. Fixing three coordinates to constants keeps the substituted fiber equations compact enough for practical msolve probes.
+- Coordinate slices are dramatically cheaper. Fixing r0,s0,x1 is especially effective, reducing the final 8x8 probe to about 570 monomials with maximum degree 11, although direct F4 solving still grows rapidly around degrees 14-16.
+- The best current method is not Groebner solving but a fast finite-field GCD scan for the symmetric lambda/mu fiber conditions after saturating the normalized-fiber and collision factors.
+
+## Verified GF(31) point
+
+The first concrete point on the intended E6/P1 locus has now been verified exactly over GF(31).
+
+Coordinate slice:
+
+    r0 = 4
+    s0 = 18
+    x1 = 27
+
+Reduced core:
+
+    a1 = 4
+    a2 = 16
+    a4 = 6
+    s1 = 23
+
+The saturated common polynomial for the two I2 positions is
+
+    z^2 + 20*z + 29 = (z-24)(z-18).
+
+Thus one labeling is
+
+    lambda = 24
+    mu     = 18
+    sl     = 23
+    sm     = 4.
+
+All eight reduced fiber equations evaluate to zero. Swapping the two I2 fibers also works:
+
+    lambda = 18, mu = 24, sl = 4, sm = 23.
+
+This point is rediscovered independently by multiple scan seeds. Other split and irreducible squarefree quadratic common factors also occur, so the distinct-I2 locus is demonstrably nonempty mod 31.
 
 ## Current reproducible pipeline
 
@@ -84,14 +119,17 @@ Parametrize P1_0 exactly:
       --input artifacts/local/elkies-k3/e6-base.ms \
       --out artifacts/local/elkies-k3/e6-param0.ms
 
-Then search many correct coordinate slices in parallel:
+For bounded coordinate-slice exploration:
 
     python3 elkies-k3/scripts/run_e6_coordinate_slice_search.py \
       --input artifacts/local/elkies-k3/e6-param0.ms \
       --workers 8 --threads 2 --timeout 45 --seeds 32
 
-Each job fixes r0 nonzero plus two additional coordinates, solves P1_1 -> y1 exactly, verifies P1_2=P1_3=0, exports an 8-variable / 8-equation system, then runs msolve with a bounded timeout.
+For the now-known modular point, reconstruct the full eliminated chain and verify the original section-first model:
 
-The immediate goal is to obtain one finite-field hit, reconstruct the corresponding E6 surface and P1 section, and then impose P3 to descend from the three-dimensional P1 locus toward the desired rank-3 family.
+    sage elkies-k3/scripts/reconstruct_e6_gf31_point.sage \
+      --meta artifacts/local/elkies-k3/e6-base.meta.txt
+
+The immediate goal is now end-to-end verification of the complete A(t),B(t),P1 model at this GF(31) point, followed by lifting/multi-prime reconstruction and then imposing P3.
 
 See also `E6_MW3_PROGRESS_2026-08-20.md`.
