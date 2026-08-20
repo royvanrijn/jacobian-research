@@ -86,20 +86,38 @@ eq_fr=[D2(1),D3(1),
 
 eqs=[R(se(e).numerator()) for e in eq_fr]
 
+# Explicit coefficient conversion is required here.  There is no canonical
+# ring hom QQ -> GF(p), so R.hom(...) cannot be used for modular reduction.
+def map_poly(poly, T, coeff_map):
+    td=T.gens()
+    out=T.zero()
+    for mon,c in R(poly).dict().items():
+        term=T(coeff_map(c))
+        for i,ex in enumerate(mon):
+            if ex:
+                term *= td[i]**ex
+        out += term
+    return out
+
 K=GF(p); RK=PolynomialRing(K,sol_names); kd=RK.gens_dict()
-phi=R.hom([kd[n] for n in sol_names],RK)
+def modp_coeff(c):
+    den=ZZ(c.denominator())
+    if den % p == 0:
+        raise ZeroDivisionError(f'coefficient denominator divisible by {p}: {c}')
+    return K(ZZ(c.numerator())) / K(den)
+
+EK=[map_poly(e,RK,modp_coeff) for e in eqs]
 P0={kd[n]:K(v) for n,v in zip(sol_names,seed)}
-mods=[phi(e).subs(P0) for e in eqs]
+mods=[e.subs(P0) for e in EK]
 print('E6PADIC|mod31_zero='+str(all(v==0 for v in mods)),flush=True)
-J=Matrix(R,[[e.derivative(d[n]) for n in sol_names] for e in eqs])
-JK=Matrix(K,[[phi(x).subs(P0) for x in row] for row in J.rows()])
+JK=Matrix(K,[[e.derivative(kd[n]).subs(P0) for n in sol_names] for e in EK])
 print(f'E6PADIC|jac_rank={JK.rank()}|jac_det={int(JK.det())}',flush=True)
 if JK.rank()!=8: raise RuntimeError('singular Jacobian')
 
 Q=Qp(p,prec=args.prec+8,type='capped-rel')
 RQ=PolynomialRing(Q,sol_names); qd=RQ.gens_dict()
-phiq=R.hom([qd[n] for n in sol_names],RQ)
-Fq=[phiq(e) for e in eqs]
+def q_coeff(c): return Q(c.numerator()) / Q(c.denominator())
+Fq=[map_poly(e,RQ,q_coeff) for e in eqs]
 Jq=Matrix(RQ,[[f.derivative(qd[n]) for n in sol_names] for f in Fq])
 x=vector(Q,[Q(v) for v in seed])
 
