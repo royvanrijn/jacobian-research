@@ -97,31 +97,80 @@ The committed scripts avoid this error. The coordinate-slice builder fixes r0 to
 3. A one-slice 13x13 system over GF(101) reaches large F4 matrices around degrees 18-19. Repeating over GF(31) gives nearly the same progression, showing the complexity is structural rather than prime-specific.
 4. Dense affine elimination of the three final slice equations is computationally poor: substituting 9-term linear forms into degree-20+ fiber equations causes severe multinomial expansion.
 5. Coordinate slices are much cheaper. Replacing selected variables by constants keeps the final 8x8 systems small enough for bounded parallel msolve exploration.
+6. The especially effective slice family fixes r0 and s0; fixing x1 as the third coordinate reduces the eight equations to only about 570 monomials total, with maximum degree 11. Even then direct F4 solving grows rapidly around degrees 14-16, so structural elimination is preferable.
 
-## Current search strategy
+## GCD reduction for the two I2 fibers
+
+After fixing the cheap coordinate slice `(r0,s0,x1)` and eliminating `y1` exactly, the two I2-fiber triples are symmetric in lambda and mu. Eliminating the singular-root variables `sl,sm` produces two polynomial conditions in a generic fiber coordinate `z`.
+
+The first apparent common factor is always
+
+    z^3 (z-1),
+
+coming from the already normalized fibers at 0 and 1. Additional repeated factors such as `(z-r)^2` are collision loci `lambda=mu` and must also be saturated away.
+
+A fast finite-field line scan over GF(31), after saturating all powers of `z`, `z-1`, and rejecting repeated single-root factors, finds genuine squarefree common factors of degree at least two. This avoids symbolic subresultants and is several orders of magnitude faster than Groebner solving.
+
+## First verified GF(31) point
+
+The first fully verified distinct-root solution is obtained on the seed-1 coordinate slice
+
+    r0 = 4
+    s0 = 18
+    x1 = 27
+
+with reduced core parameters
+
+    a1 = 4
+    a2 = 16
+    a4 = 6
+    s1 = 23.
+
+The saturated common polynomial for the two I2 locations is
+
+    z^2 + 20 z + 29 = (z-24)(z-18)  mod 31.
+
+Taking
+
+    lambda = 24
+    mu     = 18
+
+reconstructs
+
+    sl = 23
+    sm = 4,
+
+and all eight reduced fiber equations vanish exactly over GF(31):
+
+    [0,0,0,0,0,0,0,0].
+
+Swapping the two I2 fibers also works exactly:
+
+    lambda = 18, mu = 24,
+    sl = 4, sm = 23.
+
+The same core point is rediscovered independently by several random line seeds, confirming that it is not an artifact of a particular scan path.
+
+Additional genuine squarefree degree-2 and degree-3 common factors were found over GF(31), including both split and irreducible quadratic cases. Thus the desired distinct-I2 locus is nonempty modulo 31 and appears repeatedly in the reduced search.
+
+This is the first concrete finite-field point on the intended E6/P1 fiber configuration found by the reconstruction attack.
+
+## Current search/reconstruction strategy
 
 1. Build the unsliced four-elimination E6/P1 system.
 2. Parametrize P1_0 exactly.
-3. For each search seed, choose a coordinate slice that includes r0 plus two other coordinates.
-4. Set r0 to a nonzero constant.
-5. Solve P1_1 -> y1 exactly after slicing.
-6. Verify P1_2 and P1_3 vanish identically.
-7. Export only the eight independent fiber equations in the eight remaining variables.
-8. Run msolve with a bounded timeout.
-9. Search many seeds/triples in parallel rather than spending unbounded time on one Groebner basis.
+3. Use cheap coordinate slices fixing `r0,s0` and one additional coordinate.
+4. Eliminate P1_1 -> y1 exactly and verify P1_2=P1_3=0.
+5. Saturate normalized-fiber factors from the symmetric lambda/mu elimination.
+6. Search for squarefree common factors of degree >=2 rather than running large Groebner bases.
+7. Reconstruct `sl,sm` and verify all eight reduced fiber equations.
+8. Reconstruct the four earlier triangular eliminations `a3,y2,b5,b4` and the complete A(t), B(t), X(t), Y(t).
+9. Verify the full Weierstrass section identity and Kodaira multiplicities.
+10. Use verified modular points as seeds for lifting / multi-prime rational reconstruction, then impose P3 to cut toward the target one-dimensional rank-3 family.
 
-Recommended first run:
+Recommended reconstruction command after generating the base metadata:
 
-    sage elkies-k3/scripts/export_e6_p1_sliced.sage \
-      --p 31 --seed 1 --slices 0 \
-      --out artifacts/local/elkies-k3/e6-base.ms
+    sage elkies-k3/scripts/reconstruct_e6_gf31_point.sage \
+      --meta artifacts/local/elkies-k3/e6-base.meta.txt
 
-    sage elkies-k3/scripts/parametrize_e6_p1_at_0.sage \
-      --input artifacts/local/elkies-k3/e6-base.ms \
-      --out artifacts/local/elkies-k3/e6-param0.ms
-
-    python3 elkies-k3/scripts/run_e6_coordinate_slice_search.py \
-      --input artifacts/local/elkies-k3/e6-param0.ms \
-      --workers 8 --threads 2 --timeout 45 --seeds 32
-
-A successful finite-field slice will give a concrete surface on the P1 locus. The next step is then to reconstruct its eliminated coefficients and impose P3, which should cut the dimension again toward the desired rank-3 K3 family.
+The immediate next milestone is a full end-to-end reconstruction of the verified GF(31) point in the original E6 section-first model.
