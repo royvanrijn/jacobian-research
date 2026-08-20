@@ -1,0 +1,197 @@
+explicit_variables = 136
+explicit_residuals = 1182
+anchors = 9
+explicit_raw_max = 3.355302e-13
+expected_generic_rank10_moduli_dimension = 8
+
+STEP 1.0e-04
+RAW|smax=6.859648e+00|smin=1.343995e-11|cond=5.103925e+11
+RAW|null1e-4=37
+RAW|null1e-5=33
+RAW|null1e-6=33
+RAW|null1e-7=32
+RAW|null1e-8=14
+RAW|null1e-9=11
+RAW|null1e-10=7
+RAW|null1e-11=5
+RAW|null1e-12=0
+RAW|tail=2.264e-07 2.251e-07 2.194e-07 2.151e-07 2.053e-07 1.656e-07 1.741e-08 1.055e-08 8.642e-09 5.120e-09 2.858e-09 2.291e-09 7.288e-10 3.009e-10 7.514e-11 4.247e-11 2.640e-11 2.111e-11 1.438e-11 1.344e-11
+RAW|largest_bottom_gaps=d14:9.506e+00 d6:4.005e+00 d8:3.144e+00 d7:2.422e+00 d10:1.792e+00 d5:1.769e+00 d11:1.688e+00 d13:1.650e+00
+EQUIL|smax=6.574616e+00|smin=6.208384e-09|cond=1.058990e+09
+EQUIL|null1e-4=15
+EQUIL|null1e-5=13
+EQUIL|null1e-6=11
+EQUIL|null1e-7=9
+EQUIL|null1e-8=5
+EQUIL|null1e-9=1
+EQUIL|null1e-10=0
+EQUIL|null1e-11=0
+EQUIL|null1e-12=0
+EQUIL|tail=5.178e-02 3.459e-02 3.065e-02 9.974e-03 5.131e-03 8.830e-05 7.270e-05 2.028e-05 1.482e-05 4.449e-06 9.740e-07 5.239e-07 2.550e-07 1.193e-07 8.519e-08 6.397e-08 1.548e-08 9.745e-09 7.630e-09 6.208e-09
+EQUIL|largest_bottom_gaps=d15:5.811e+01 d10:4.568e+00 d4:4.132e+00 d13:3.586e+00 d11:3.331e+00 d17:3.074e+00 d7:2.138e+00 d8:2.054e+00
+
+STEP 3.0e-05
+RAW|smax=6.859648e+00|smin=3.608988e-11|cond=1.900712e+11
+RAW|null1e-4=37
+RAW|null1e-5=33
+RAW|null1e-6=33
+RAW|null1e-7=32
+RAW|null1e-8=14
+RAW|null1e-9=11
+RAW|null1e-10=11
+RAW|null1e-11=3
+RAW|null1e-12=0
+RAW|tail=2.264e-07 2.251e-07 2.194e-07 2.151e-07 2.053e-07 1.656e-07 1.706e-08 1.038e-08 8.704e-09 6.383e-10 4.654e-10 2.793e-10 2.380e-10 1.698e-10 1.297e-10 8.140e-11 6.932e-11 4.913e-11 3.941e-11 3.609e-11
+RAW|largest_bottom_gaps=d11:1.364e+01 d14:9.705e+00 d9:1.666e+00 d13:1.643e+00 d5:1.594e+00 d3:1.411e+00 d7:1.402e+00 d10:1.372e+00
+EQUIL|smax=6.574616e+00|smin=1.658792e-09|cond=3.963496e+09
+EQUIL|null1e-4=15
+EQUIL|null1e-5=15
+EQUIL|null1e-6=12
+EQUIL|null1e-7=7
+EQUIL|null1e-8=4
+EQUIL|null1e-9=1
+EQUIL|null1e-10=0
+EQUIL|null1e-11=0
+EQUIL|null1e-12=0
+EQUIL|tail=5.178e-02 3.459e-02 3.065e-02 9.973e-03 5.131e-03 2.030e-05 8.777e-06 7.266e-06 5.092e-06 4.454e-06 2.219e-06 1.592e-06 7.058e-07 5.994e-07 3.675e-07 1.363e-07 3.131e-08 1.327e-08 8.692e-09 1.659e-09
+EQUIL|largest_bottom_gaps=d15:2.528e+02 d1:5.240e+00 d4:4.352e+00 d17:3.074e+00 d5:2.697e+00 d3:2.360e+00 d14:2.313e+00 d8:2.255e+00
+
+STEP 1.0e-05
+RAW|smax=6.859648e+00|smin=7.009240e-11|cond=9.786579e+10
+RAW|null1e-4=37
+RAW|null1e-5=33
+RAW|null1e-6=33
+RAW|null1e-7=32
+RAW|null1e-8=14
+RAW|null1e-9=11
+RAW|null1e-10=11
+RAW|null1e-11=0
+RAW|null1e-12=0
+RAW|tail=2.264e-07 2.251e-07 2.194e-07 2.151e-07 2.053e-07 1.656e-07 1.702e-08 1.038e-08 8.717e-09 6.664e-10 5.575e-10 3.183e-10 2.281e-10 1.492e-10 1.279e-10 1.167e-10 1.052e-10 8.546e-11 7.954e-11 7.009e-11
+RAW|largest_bottom_gaps=d11:1.308e+01 d14:9.726e+00 d9:1.752e+00 d13:1.640e+00 d7:1.529e+00 d8:1.396e+00 d15:1.240e+00 d3:1.232e+00
+EQUIL|smax=6.574616e+00|smin=7.677170e-09|cond=8.563854e+08
+EQUIL|null1e-4=15
+EQUIL|null1e-5=15
+EQUIL|null1e-6=13
+EQUIL|null1e-7=7
+EQUIL|null1e-8=3
+EQUIL|null1e-9=0
+EQUIL|null1e-10=0
+EQUIL|null1e-11=0
+EQUIL|null1e-12=0
+EQUIL|tail=5.178e-02 3.459e-02 3.065e-02 9.973e-03 5.131e-03 2.117e-05 9.200e-06 6.452e-06 4.913e-06 4.100e-06 3.583e-06 3.336e-06 1.507e-06 6.226e-07 5.507e-07 4.230e-07 9.356e-08 4.982e-08 1.952e-08 7.677e-09
+EQUIL|largest_bottom_gaps=d15:2.424e+02 d4:4.521e+00 d17:3.074e+00 d2:2.553e+00 d1:2.542e+00 d7:2.421e+00 d14:2.301e+00 d8:2.214e+00
+
+STEP 3.0e-06
+RAW|smax=6.859648e+00|smin=2.046759e-10|cond=3.351468e+10
+RAW|null1e-4=37
+RAW|null1e-5=33
+RAW|null1e-6=33
+RAW|null1e-7=32
+RAW|null1e-8=14
+RAW|null1e-9=11
+RAW|null1e-10=9
+RAW|null1e-11=0
+RAW|null1e-12=0
+RAW|tail=2.264e-07 2.251e-07 2.194e-07 2.151e-07 2.053e-07 1.655e-07 1.702e-08 1.037e-08 8.713e-09 1.291e-09 6.949e-10 6.335e-10 5.031e-10 4.637e-10 3.874e-10 3.176e-10 3.033e-10 2.922e-10 2.285e-10 2.047e-10
+RAW|largest_bottom_gaps=d14:9.726e+00 d11:6.751e+00 d10:1.857e+00 d13:1.641e+00 d2:1.279e+00 d8:1.259e+00 d15:1.240e+00 d5:1.220e+00
+EQUIL|smax=6.574615e+00|smin=8.905321e-09|cond=7.382794e+08
+EQUIL|null1e-4=15
+EQUIL|null1e-5=15
+EQUIL|null1e-6=12
+EQUIL|null1e-7=5
+EQUIL|null1e-8=1
+EQUIL|null1e-9=0
+EQUIL|null1e-10=0
+EQUIL|null1e-11=0
+EQUIL|null1e-12=0
+EQUIL|tail=5.178e-02 3.459e-02 3.065e-02 9.973e-03 5.131e-03 4.313e-05 2.035e-05 7.331e-06 4.820e-06 4.743e-06 4.007e-06 3.293e-06 2.615e-06 1.217e-06 9.953e-07 4.276e-07 2.707e-07 1.691e-07 8.156e-08 8.905e-09
+EQUIL|largest_bottom_gaps=d15:1.190e+02 d1:9.158e+00 d17:3.074e+00 d13:2.777e+00 d5:2.328e+00 d7:2.148e+00 d14:2.119e+00 d2:2.073e+00
+
+STEP 1.0e-06
+RAW|smax=6.859648e+00|smin=5.253551e-10|cond=1.305717e+10
+RAW|null1e-4=37
+RAW|null1e-5=33
+RAW|null1e-6=33
+RAW|null1e-7=32
+RAW|null1e-8=14
+RAW|null1e-9=11
+RAW|null1e-10=3
+RAW|null1e-11=0
+RAW|null1e-12=0
+RAW|tail=2.264e-07 2.251e-07 2.194e-07 2.151e-07 2.053e-07 1.656e-07 1.710e-08 1.038e-08 8.717e-09 5.300e-09 2.280e-09 1.982e-09 1.386e-09 1.130e-09 1.062e-09 9.600e-10 8.510e-10 6.642e-10 6.033e-10 5.254e-10
+RAW|largest_bottom_gaps=d14:9.687e+00 d10:2.325e+00 d13:1.647e+00 d11:1.645e+00 d8:1.430e+00 d3:1.281e+00 d15:1.239e+00 d7:1.226e+00
+EQUIL|smax=6.574622e+00|smin=3.038608e-08|cond=2.163695e+08
+EQUIL|null1e-4=15
+EQUIL|null1e-5=14
+EQUIL|null1e-6=9
+EQUIL|null1e-7=4
+EQUIL|null1e-8=1
+EQUIL|null1e-9=0
+EQUIL|null1e-10=0
+EQUIL|null1e-11=0
+EQUIL|null1e-12=0
+EQUIL|tail=5.178e-02 3.459e-02 3.065e-02 9.973e-03 5.131e-03 1.009e-04 5.691e-05 2.949e-05 1.616e-05 1.300e-05 7.493e-06 6.172e-06 4.452e-06 3.998e-06 3.288e-06 7.130e-07 4.209e-07 3.535e-07 1.958e-07 3.039e-08
+EQUIL|largest_bottom_gaps=d15:5.084e+01 d1:6.445e+00 d5:4.611e+00 d17:3.074e+00 d16:1.944e+00 d13:1.930e+00 d12:1.825e+00 d2:1.805e+00
+
+STEP 3.0e-07
+RAW|smax=6.859648e+00|smin=5.836237e-10|cond=1.175355e+10
+RAW|null1e-4=37
+RAW|null1e-5=33
+RAW|null1e-6=33
+RAW|null1e-7=32
+RAW|null1e-8=14
+RAW|null1e-9=8
+RAW|null1e-10=1
+RAW|null1e-11=0
+RAW|null1e-12=0
+RAW|tail=2.264e-07 2.251e-07 2.194e-07 2.151e-07 2.052e-07 1.657e-07 2.449e-08 1.677e-08 1.143e-08 9.528e-09 8.455e-09 7.170e-09 5.161e-09 4.002e-09 3.581e-09 3.177e-09 2.610e-09 2.410e-09 2.245e-09 5.836e-10
+RAW|largest_bottom_gaps=d14:6.766e+00 d1:3.847e+00 d12:1.467e+00 d13:1.460e+00 d8:1.389e+00 d7:1.290e+00 d15:1.239e+00 d4:1.217e+00
+EQUIL|smax=6.574616e+00|smin=3.602038e-07|cond=1.825249e+07
+EQUIL|null1e-4=15
+EQUIL|null1e-5=10
+EQUIL|null1e-6=7
+EQUIL|null1e-7=3
+EQUIL|null1e-8=0
+EQUIL|null1e-9=0
+EQUIL|null1e-10=0
+EQUIL|null1e-11=0
+EQUIL|null1e-12=0
+EQUIL|tail=5.178e-02 3.459e-02 3.065e-02 9.973e-03 5.132e-03 3.862e-04 1.383e-04 1.012e-04 8.121e-05 6.812e-05 3.265e-05 1.486e-05 6.926e-06 4.036e-06 3.300e-06 2.011e-06 1.620e-06 5.659e-07 4.154e-07 3.602e-07
+EQUIL|largest_bottom_gaps=d15:1.329e+01 d17:3.074e+00 d3:2.863e+00 d14:2.792e+00 d9:2.197e+00 d8:2.146e+00 d10:2.086e+00 d16:1.943e+00
+
+STEP 1.0e-07
+RAW|smax=6.859648e+00|smin=6.193018e-10|cond=1.107642e+10
+RAW|null1e-4=37
+RAW|null1e-5=33
+RAW|null1e-6=33
+RAW|null1e-7=32
+RAW|null1e-8=14
+RAW|null1e-9=2
+RAW|null1e-10=1
+RAW|null1e-11=0
+RAW|null1e-12=0
+RAW|tail=2.264e-07 2.251e-07 2.195e-07 2.152e-07 2.053e-07 1.665e-07 4.698e-08 2.331e-08 1.855e-08 1.652e-08 1.439e-08 1.313e-08 1.094e-08 1.013e-08 9.698e-09 9.222e-09 8.136e-09 7.440e-09 6.242e-09 6.193e-10
+RAW|largest_bottom_gaps=d1:1.008e+01 d14:3.544e+00 d13:2.016e+00 d12:1.256e+00 d15:1.233e+00 d8:1.200e+00 d2:1.192e+00 d10:1.148e+00
+EQUIL|smax=6.574616e+00|smin=3.665604e-07|cond=1.793597e+07
+EQUIL|null1e-4=15
+EQUIL|null1e-5=9
+EQUIL|null1e-6=6
+EQUIL|null1e-7=2
+EQUIL|null1e-8=0
+EQUIL|null1e-9=0
+EQUIL|null1e-10=0
+EQUIL|null1e-11=0
+EQUIL|null1e-12=0
+EQUIL|tail=5.178e-02 3.459e-02 3.066e-02 9.973e-03 5.131e-03 6.259e-04 3.797e-04 2.455e-04 1.648e-04 1.549e-04 7.213e-05 1.822e-05 1.331e-05 8.608e-06 5.980e-06 3.810e-06 3.181e-06 1.492e-06 4.190e-07 3.666e-07
+EQUIL|largest_bottom_gaps=d15:8.197e+00 d9:3.959e+00 d2:3.562e+00 d17:3.074e+00 d10:2.147e+00 d3:2.132e+00 d16:1.944e+00 d14:1.648e+00
+
+CROSS-STEP EQUILIBRATED GAP SUMMARY
+GAP|step=1.0e-04|best_d=15|gap=5.810543e+01|smax=6.574616e+00|smin=6.208384e-09
+GAP|step=3.0e-05|best_d=15|gap=2.527765e+02|smax=6.574616e+00|smin=1.658792e-09
+GAP|step=1.0e-05|best_d=15|gap=2.423684e+02|smax=6.574616e+00|smin=7.677170e-09
+GAP|step=3.0e-06|best_d=15|gap=1.189752e+02|smax=6.574615e+00|smin=8.905321e-09
+GAP|step=1.0e-06|best_d=15|gap=5.084176e+01|smax=6.574622e+00|smin=3.038608e-08
+GAP|step=3.0e-07|best_d=15|gap=1.328885e+01|smax=6.574616e+00|smin=3.602038e-07
+GAP|step=1.0e-07|best_d=15|gap=8.197450e+00|smax=6.574616e+00|smin=3.665604e-07
+saved = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank10-tangent-diagnostics-v1

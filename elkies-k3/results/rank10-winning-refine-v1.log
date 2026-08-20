@@ -7,3 +7,22 @@ root branch norms: delta=7.465707e-26 jvar=2.938357e-23
 compatible full-lattice Coxeter mappings = 288
 fixed-surface recovered score = 1.540992e-13
 REFINE|restart=0|score=5.260e-13|base=5.260e-13|curve=6.213e-16|line=1.173e-13|delta_ratio=1.299e+00|jvar_ratio=8.690e-01|healthy=1
+REFINE|restart=1|score=3.355e-13|base=3.355e-13|curve=7.726e-16|line=4.111e-14|delta_ratio=9.885e-01|jvar_ratio=3.521e+00|healthy=1
+REFINE|restart=2|score=1.805e-12|base=1.805e-12|curve=3.790e-16|line=2.698e-13|delta_ratio=2.100e-01|jvar_ratio=1.946e+00|healthy=1
+REFINE|restart=3|score=5.078e-12|base=5.078e-12|curve=1.283e-15|line=3.904e-13|delta_ratio=1.649e+00|jvar_ratio=6.060e+00|healthy=1
+JACOBIAN|null6=6|null8=2|null10=0|null12=0|smax=5.322e+00|smin=2.123e-09
+
+BEST RANK10 REFINEMENT
+raw_max = 3.3553021472343403e-13
+base_max = 3.3553021472343403e-13
+curve_max = 7.726161111122973e-16
+line_max = 4.11063027220861e-14
+delta_ratio = 0.9884785963948312
+jvar_ratio = 3.520700569469097
+slope_rank = 3
+nullity_1e-6 = 6
+nullity_1e-8 = 2
+nullity_1e-10 = 0
+nullity_1e-12 = 0
+compatible_mappings = 288
+saved = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank10-winning-refine-v1

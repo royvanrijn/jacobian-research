@@ -1,0 +1,52 @@
+
+"""Anonymous high-rank elliptic-curve candidate, 2026-08-20.
+
+Equation:
+
+    y^2 + x*y = x^3 + A4*x + A6
+"""
+
+A1 = 1
+A2 = 0
+A3 = 0
+
+A4 = -201769035260418549083594900060734240952308696994802735114305555
+
+A6 = 1151107939141058565733479426024323225135665982951300586808823640527729578307228357301072889377
+
+GENERAL_WEIERSTRASS_COEFFICIENTS = [A1, A2, A3, A4, A6]
+
+
+# Factorization independently observed for the supplied integral model.
+#
+# The verification script multiplies these back together and checks that
+# they equal the exact discriminant.
+DISCRIMINANT_FACTORS = [
+    (2, 16),
+    (3, 12),
+    (5, 8),
+    (7, 5),
+    (13, 5),
+    (31, 2),
+    (41, 2),
+    (47, 4),
+    (53, 3),
+    (67, 3),
+    (379, 2),
+    (4349, 1),
+    (25721454817, 1),
+    (
+        97018222656318846556561979214040553412450110580812087282349817173780902099339117104673990259247421230916714670243202937,
+        1,
+    ),
+]
+
+
+# Public Elkies--Klagsbrun rank-29 comparison curve.
+E29_COEFFICIENTS = [
+    1,
+    0,
+    0,
+    -27006183241630922218434652145297453784768054621836357954737385,
+    55258058551342376475736699591118191821521067032535079608372404779149413277716173425636721497,
+]

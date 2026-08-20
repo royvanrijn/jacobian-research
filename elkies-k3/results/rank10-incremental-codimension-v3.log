@@ -1,0 +1,59 @@
+base_variables = 104
+q_variables_reduced = 8
+anchors = 9
+base_raw_max = 3.355302e-13
+q_raw_max = 4.110630e-14
+expected_incremental_codimension = 1
+NOTE: v1 column-normalized A*T9 and its codimension output is invalid
+
+STEP|h=1.0e-04|d9=12|gap9=2.006e+02|tangent_relmax=4.058e-06|reduced_d10=1|reduced_gap=6.760e+00
+INC|h=1.0e-04|tol=1e-04|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=1|B_relmin=6.269e-03|Crel1=9.376e-01|Crel2=5.065e-01|Crel3=3.260e-01|C_gap_rank=6|C_gap=2.146e+00
+INC|h=1.0e-04|tol=1e-05|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=1|B_relmin=6.269e-03|Crel1=9.376e-01|Crel2=5.065e-01|Crel3=3.260e-01|C_gap_rank=6|C_gap=2.146e+00
+INC|h=1.0e-04|tol=1e-06|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=1|B_relmin=6.269e-03|Crel1=9.376e-01|Crel2=5.065e-01|Crel3=3.260e-01|C_gap_rank=6|C_gap=2.146e+00
+INC|h=1.0e-04|tol=1e-07|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=1|B_relmin=6.269e-03|Crel1=9.376e-01|Crel2=5.065e-01|Crel3=3.260e-01|C_gap_rank=6|C_gap=2.146e+00
+INC|h=1.0e-04|tol=1e-08|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=1|B_relmin=6.269e-03|Crel1=9.376e-01|Crel2=5.065e-01|Crel3=3.260e-01|C_gap_rank=6|C_gap=2.146e+00
+INC|h=1.0e-04|tol=1e-09|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=1|B_relmin=6.269e-03|Crel1=9.376e-01|Crel2=5.065e-01|Crel3=3.260e-01|C_gap_rank=6|C_gap=2.146e+00
+STEP|h=3.0e-05|d9=12|gap9=2.007e+02|tangent_relmax=4.056e-06|reduced_d10=2|reduced_gap=3.172e+00
+INC|h=3.0e-05|tol=1e-04|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=2|B_relmin=5.990e-03|Crel1=9.021e-01|Crel2=5.676e-01|Crel3=1.807e-01|C_gap_rank=2|C_gap=3.141e+00
+INC|h=3.0e-05|tol=1e-05|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=2|B_relmin=5.990e-03|Crel1=9.021e-01|Crel2=5.676e-01|Crel3=1.807e-01|C_gap_rank=2|C_gap=3.141e+00
+INC|h=3.0e-05|tol=1e-06|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=2|B_relmin=5.990e-03|Crel1=9.021e-01|Crel2=5.676e-01|Crel3=1.807e-01|C_gap_rank=2|C_gap=3.141e+00
+INC|h=3.0e-05|tol=1e-07|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=2|B_relmin=5.990e-03|Crel1=9.021e-01|Crel2=5.676e-01|Crel3=1.807e-01|C_gap_rank=2|C_gap=3.141e+00
+INC|h=3.0e-05|tol=1e-08|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=2|B_relmin=5.990e-03|Crel1=9.021e-01|Crel2=5.676e-01|Crel3=1.807e-01|C_gap_rank=2|C_gap=3.141e+00
+INC|h=3.0e-05|tol=1e-09|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=2|B_relmin=5.990e-03|Crel1=9.021e-01|Crel2=5.676e-01|Crel3=1.807e-01|C_gap_rank=2|C_gap=3.141e+00
+STEP|h=1.0e-05|d9=12|gap9=1.960e+02|tangent_relmax=4.154e-06|reduced_d10=3|reduced_gap=2.515e+00
+INC|h=1.0e-05|tol=1e-04|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=3|B_relmin=4.979e-03|Crel1=9.873e-01|Crel2=4.383e-01|Crel3=1.754e-01|C_gap_rank=2|C_gap=2.498e+00
+INC|h=1.0e-05|tol=1e-05|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=3|B_relmin=4.979e-03|Crel1=9.873e-01|Crel2=4.383e-01|Crel3=1.754e-01|C_gap_rank=2|C_gap=2.498e+00
+INC|h=1.0e-05|tol=1e-06|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=3|B_relmin=4.979e-03|Crel1=9.873e-01|Crel2=4.383e-01|Crel3=1.754e-01|C_gap_rank=2|C_gap=2.498e+00
+INC|h=1.0e-05|tol=1e-07|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=3|B_relmin=4.979e-03|Crel1=9.873e-01|Crel2=4.383e-01|Crel3=1.754e-01|C_gap_rank=2|C_gap=2.498e+00
+INC|h=1.0e-05|tol=1e-08|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=3|B_relmin=4.979e-03|Crel1=9.873e-01|Crel2=4.383e-01|Crel3=1.754e-01|C_gap_rank=2|C_gap=2.498e+00
+INC|h=1.0e-05|tol=1e-09|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=3|B_relmin=4.979e-03|Crel1=9.873e-01|Crel2=4.383e-01|Crel3=1.754e-01|C_gap_rank=2|C_gap=2.498e+00
+STEP|h=3.0e-06|d9=12|gap9=1.223e+02|tangent_relmax=6.656e-06|reduced_d10=4|reduced_gap=6.301e+00
+INC|h=3.0e-06|tol=1e-04|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=4|B_relmin=4.864e-03|Crel1=9.364e-01|Crel2=3.108e-01|Crel3=1.749e-01|C_gap_rank=1|C_gap=3.013e+00
+INC|h=3.0e-06|tol=1e-05|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=4|B_relmin=4.864e-03|Crel1=9.364e-01|Crel2=3.108e-01|Crel3=1.749e-01|C_gap_rank=1|C_gap=3.013e+00
+INC|h=3.0e-06|tol=1e-06|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=4|B_relmin=4.864e-03|Crel1=9.364e-01|Crel2=3.108e-01|Crel3=1.749e-01|C_gap_rank=1|C_gap=3.013e+00
+INC|h=3.0e-06|tol=1e-07|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=4|B_relmin=4.864e-03|Crel1=9.364e-01|Crel2=3.108e-01|Crel3=1.749e-01|C_gap_rank=1|C_gap=3.013e+00
+INC|h=3.0e-06|tol=1e-08|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=4|B_relmin=4.864e-03|Crel1=9.364e-01|Crel2=3.108e-01|Crel3=1.749e-01|C_gap_rank=1|C_gap=3.013e+00
+INC|h=3.0e-06|tol=1e-09|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=4|B_relmin=4.864e-03|Crel1=9.364e-01|Crel2=3.108e-01|Crel3=1.749e-01|C_gap_rank=1|C_gap=3.013e+00
+STEP|h=1.0e-06|d9=12|gap9=4.853e+01|tangent_relmax=1.677e-05|reduced_d10=4|reduced_gap=5.807e+00
+INC|h=1.0e-06|tol=1e-04|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=4|B_relmin=8.012e-03|Crel1=9.203e-01|Crel2=3.914e-01|Crel3=2.432e-01|C_gap_rank=11|C_gap=5.599e+00
+INC|h=1.0e-06|tol=1e-05|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=4|B_relmin=8.012e-03|Crel1=9.203e-01|Crel2=3.914e-01|Crel3=2.432e-01|C_gap_rank=11|C_gap=5.599e+00
+INC|h=1.0e-06|tol=1e-06|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=4|B_relmin=8.012e-03|Crel1=9.203e-01|Crel2=3.914e-01|Crel3=2.432e-01|C_gap_rank=11|C_gap=5.599e+00
+INC|h=1.0e-06|tol=1e-07|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=4|B_relmin=8.012e-03|Crel1=9.203e-01|Crel2=3.914e-01|Crel3=2.432e-01|C_gap_rank=11|C_gap=5.599e+00
+INC|h=1.0e-06|tol=1e-08|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=4|B_relmin=8.012e-03|Crel1=9.203e-01|Crel2=3.914e-01|Crel3=2.432e-01|C_gap_rank=11|C_gap=5.599e+00
+INC|h=1.0e-06|tol=1e-09|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=4|B_relmin=8.012e-03|Crel1=9.203e-01|Crel2=3.914e-01|Crel3=2.432e-01|C_gap_rank=11|C_gap=5.599e+00
+STEP|h=3.0e-07|d9=12|gap9=1.402e+01|tangent_relmax=5.809e-05|reduced_d10=4|reduced_gap=3.267e+00
+INC|h=3.0e-07|tol=1e-04|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=4|B_relmin=2.959e-02|Crel1=9.312e-01|Crel2=6.448e-01|Crel3=4.439e-01|C_gap_rank=8|C_gap=2.420e+00
+INC|h=3.0e-07|tol=1e-05|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=4|B_relmin=2.959e-02|Crel1=9.312e-01|Crel2=6.448e-01|Crel3=4.439e-01|C_gap_rank=8|C_gap=2.420e+00
+INC|h=3.0e-07|tol=1e-06|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=4|B_relmin=2.959e-02|Crel1=9.312e-01|Crel2=6.448e-01|Crel3=4.439e-01|C_gap_rank=8|C_gap=2.420e+00
+INC|h=3.0e-07|tol=1e-07|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=4|B_relmin=2.959e-02|Crel1=9.312e-01|Crel2=6.448e-01|Crel3=4.439e-01|C_gap_rank=8|C_gap=2.420e+00
+INC|h=3.0e-07|tol=1e-08|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=4|B_relmin=2.959e-02|Crel1=9.312e-01|Crel2=6.448e-01|Crel3=4.439e-01|C_gap_rank=8|C_gap=2.420e+00
+INC|h=3.0e-07|tol=1e-09|rankB=8|qfiber=0|incremental_codim=12|predicted_reduced_d10=0|observed_reduced_d10=4|B_relmin=2.959e-02|Crel1=9.312e-01|Crel2=6.448e-01|Crel3=4.439e-01|C_gap_rank=8|C_gap=2.420e+00
+
+CROSS-STEP INCREMENTAL SUMMARY (tol=1e-7)
+CODIM|h=1.0e-04|d9=12|rankB=8|incremental_codim=12|predicted_d10=0|observed_reduced_d10=1|Crel1=9.376e-01|Crel2=5.065e-01|Crel3=3.260e-01|C_gap_rank=6|C_gap=2.146e+00|tangent_relmax=4.058e-06
+CODIM|h=3.0e-05|d9=12|rankB=8|incremental_codim=12|predicted_d10=0|observed_reduced_d10=2|Crel1=9.021e-01|Crel2=5.676e-01|Crel3=1.807e-01|C_gap_rank=2|C_gap=3.141e+00|tangent_relmax=4.056e-06
+CODIM|h=1.0e-05|d9=12|rankB=8|incremental_codim=12|predicted_d10=0|observed_reduced_d10=3|Crel1=9.873e-01|Crel2=4.383e-01|Crel3=1.754e-01|C_gap_rank=2|C_gap=2.498e+00|tangent_relmax=4.154e-06
+CODIM|h=3.0e-06|d9=12|rankB=8|incremental_codim=12|predicted_d10=0|observed_reduced_d10=4|Crel1=9.364e-01|Crel2=3.108e-01|Crel3=1.749e-01|C_gap_rank=1|C_gap=3.013e+00|tangent_relmax=6.656e-06
+CODIM|h=1.0e-06|d9=12|rankB=8|incremental_codim=12|predicted_d10=0|observed_reduced_d10=4|Crel1=9.203e-01|Crel2=3.914e-01|Crel3=2.432e-01|C_gap_rank=11|C_gap=5.599e+00|tangent_relmax=1.677e-05
+CODIM|h=3.0e-07|d9=12|rankB=8|incremental_codim=12|predicted_d10=0|observed_reduced_d10=4|Crel1=9.312e-01|Crel2=6.448e-01|Crel3=4.439e-01|C_gap_rank=8|C_gap=2.420e+00|tangent_relmax=5.809e-05
+saved = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank10-incremental-codimension-v2

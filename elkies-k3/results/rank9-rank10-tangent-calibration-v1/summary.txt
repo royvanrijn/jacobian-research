@@ -1,0 +1,5 @@
+step=1.0e-04 parameter=12->200 drop=15 surface=58->-3 surface_drop=11 gap9=1.400000e+01 gap10=-3.000000e+00
+step=3.0e-05 parameter=12->200 drop=15 surface=252->-3 surface_drop=11 gap9=1.300000e+01 gap10=-2.000000e+00
+step=1.0e-05 parameter=12->195 drop=15 surface=242->-3 surface_drop=11 gap9=1.400000e+01 gap10=-3.000000e+00
+step=3.0e-06 parameter=12->122 drop=15 surface=118->-3 surface_drop=10 gap9=1.400000e+01 gap10=-4.000000e+00
+step=1.0e-06 parameter=12->48 drop=15 surface=50->-3 surface_drop=11 gap9=1.400000e+01 gap10=-3.000000e+00

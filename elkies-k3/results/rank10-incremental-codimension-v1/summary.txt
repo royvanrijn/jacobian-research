@@ -1,0 +1,6 @@
+h=1.0e-04 d9=12 gap9=2.005711e+02 reduced_d10=1 gap10=6.760021e+00 rankB=8 incremental_codim=12 predicted_d10=0
+h=3.0e-05 d9=12 gap9=2.006656e+02 reduced_d10=2 gap10=3.171786e+00 rankB=8 incremental_codim=12 predicted_d10=0
+h=1.0e-05 d9=12 gap9=1.959721e+02 reduced_d10=3 gap10=2.514896e+00 rankB=8 incremental_codim=12 predicted_d10=0
+h=3.0e-06 d9=12 gap9=1.223005e+02 reduced_d10=4 gap10=6.301384e+00 rankB=8 incremental_codim=12 predicted_d10=0
+h=1.0e-06 d9=12 gap9=4.853300e+01 reduced_d10=4 gap10=5.806757e+00 rankB=8 incremental_codim=12 predicted_d10=0
+h=3.0e-07 d9=12 gap9=1.401521e+01 reduced_d10=4 gap10=3.267405e+00 rankB=8 incremental_codim=12 predicted_d10=0

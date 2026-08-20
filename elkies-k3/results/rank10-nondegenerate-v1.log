@@ -1,0 +1,18 @@
+PREVIOUS
+raw_max = 3.3553021472343403e-13
+distinct_ratio = 0.005732283515677685
+nearest_label = V3
+edge_gap = 0.714491302869899
+wrong_sign_gap = 1.2768881464089616
+target_line_max = 4.11063027220861e-14
+nontarget_line_min = 2.937009578806777e-14
+delta_ratio = 0.9884785963948312
+jvar_ratio = 3.520700569469097
+
+NONDEG|restart=0|raw=5.199e-13|base=5.199e-13|curve=4.986e-16|line=3.678e-13|distinct=2.197e-02|nearest=V3|edge_gap=6.846e-01|wrong_gap=1.785e+00|nontarget=2.518e-13|delta=3.650e-01|jvar=8.146e-01|usable=0
+NONDEG|restart=1|raw=5.843e-11|base=3.066e-11|curve=1.061e-14|line=5.843e-11|distinct=2.000e-02|nearest=D25|edge_gap=8.079e-02|wrong_gap=1.490e-01|nontarget=4.721e-12|delta=2.079e+01|jvar=8.481e+01|usable=0
+NONDEG|restart=2|raw=7.922e-09|base=7.922e-09|curve=8.857e-11|line=2.163e-09|distinct=9.154e-03|nearest=V3|edge_gap=2.085e-01|wrong_gap=6.949e-01|nontarget=4.511e-10|delta=2.772e+07|jvar=1.016e+05|usable=0
+NONDEG|restart=3|raw=1.254e-12|base=1.254e-12|curve=1.263e-15|line=7.619e-13|distinct=2.010e-02|nearest=D57|edge_gap=6.999e-01|wrong_gap=7.877e-01|nontarget=5.333e-13|delta=1.139e+00|jvar=2.134e+00|usable=0
+NONDEG|restart=4|raw=2.320e-12|base=2.320e-12|curve=2.246e-16|line=2.312e-13|distinct=4.290e-02|nearest=D25|edge_gap=2.276e-01|wrong_gap=1.542e+00|nontarget=5.261e-14|delta=4.148e-02|jvar=1.805e-01|usable=0
+NONDEG|restart=5|raw=5.772e-11|base=1.895e-12|curve=6.571e-15|line=5.772e-11|distinct=2.000e-02|nearest=D57|edge_gap=7.465e-02|wrong_gap=8.870e-02|nontarget=4.309e-12|delta=1.631e+01|jvar=3.774e+01|usable=0
+NONDEG|restart=6|raw=6.217e-15|base=4.332e-15|curve=1.666e-15|line=6.217e-15|distinct=2.073e-02|nearest=D35|edge_gap=2.418e-02|wrong_gap=5.304e-02|nontarget=1.503e-16|delta=7.999e-01|jvar=2.302e+00|usable=0

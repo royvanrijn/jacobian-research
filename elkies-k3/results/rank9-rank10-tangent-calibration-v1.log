@@ -1,0 +1,25 @@
+rank9_variables = 104
+rank10_explicit_variables = 136
+rank10_anchors = 9
+rank9_raw_max = 3.355302e-13
+rank10_raw_max = 3.355302e-13
+expected physical dimensions: rank9=9 rank10=8
+
+CALIBRATE|step=1.0e-04|d9=12|gap9=2.006e+02|d10=15|gap10=5.811e+01|drop=-3|surface9=11|surface10=14|surface_drop=-3
+SURFACE_GAPS|step=1.0e-04|rank9_gap=3.264e+00|rank10_gap=1.456e+01|rank9_tail=3.301e+00 1.305e+00 1.019e+00 7.873e-01 4.475e-01 3.273e-01 1.832e-01 1.635e-01 1.105e-01 6.933e-02 4.028e-02 1.234e-02|rank10_tail=1.121e+00 6.303e-01 3.848e-01 3.023e-01 1.797e-01 1.072e-01 6.657e-02 6.083e-02 3.831e-02 2.581e-02 5.354e-03 3.676e-04
+CALIBRATE|step=3.0e-05|d9=12|gap9=2.007e+02|d10=15|gap10=2.528e+02|drop=-3|surface9=11|surface10=13|surface_drop=-2
+SURFACE_GAPS|step=3.0e-05|rank9_gap=4.437e+00|rank10_gap=5.585e+00|rank9_tail=3.026e+00 1.460e+00 1.185e+00 8.562e-01 7.123e-01 5.965e-01 3.760e-01 3.545e-01 2.013e-01 1.643e-01 5.284e-02 1.191e-02|rank10_tail=9.758e-01 8.915e-01 6.540e-01 4.401e-01 3.034e-01 1.697e-01 1.386e-01 1.012e-01 3.299e-02 2.613e-02 4.678e-03 1.320e-03
+CALIBRATE|step=1.0e-05|d9=12|gap9=1.960e+02|d10=15|gap10=2.424e+02|drop=-3|surface9=11|surface10=14|surface_drop=-3
+SURFACE_GAPS|step=1.0e-05|rank9_gap=5.535e+00|rank10_gap=2.387e+01|rank9_tail=2.903e+00 1.691e+00 1.180e+00 8.471e-01 7.456e-01 5.692e-01 3.570e-01 2.969e-01 2.600e-01 1.156e-01 8.026e-02 1.450e-02|rank10_tail=9.102e-01 6.597e-01 4.726e-01 3.924e-01 2.980e-01 1.098e-01 7.545e-02 5.092e-02 8.468e-03 7.193e-03 2.482e-03 1.040e-04
+CALIBRATE|step=3.0e-06|d9=12|gap9=1.223e+02|d10=15|gap10=1.190e+02|drop=-3|surface9=10|surface10=14|surface_drop=-4
+SURFACE_GAPS|step=3.0e-06|rank9_gap=2.405e+00|rank10_gap=1.416e+02|rank9_tail=2.874e+00 1.519e+00 1.322e+00 1.078e+00 6.910e-01 5.068e-01 4.001e-01 3.405e-01 2.709e-01 1.448e-01 6.019e-02 2.674e-02|rank10_tail=1.210e+00 9.424e-01 7.128e-01 4.996e-01 3.455e-01 2.671e-01 1.362e-01 9.107e-02 3.337e-02 4.154e-03 7.816e-04 5.520e-06
+CALIBRATE|step=1.0e-06|d9=12|gap9=4.853e+01|d10=15|gap10=5.084e+01|drop=-3|surface9=11|surface10=14|surface_drop=-3
+SURFACE_GAPS|step=1.0e-06|rank9_gap=2.294e+00|rank10_gap=3.024e+02|rank9_tail=2.467e+00 1.927e+00 1.340e+00 1.136e+00 8.829e-01 6.594e-01 5.436e-01 3.634e-01 2.341e-01 1.316e-01 9.140e-02 3.984e-02|rank10_tail=1.036e+00 8.953e-01 8.002e-01 5.819e-01 4.200e-01 3.551e-01 2.211e-01 8.043e-02 8.133e-03 3.957e-04 1.980e-04 6.548e-07
+
+CROSS-STEP CALIBRATION SUMMARY
+DROP|step=1.0e-04|parameter=12->15|parameter_drop=-3|surface=11->14|surface_drop=-3|gap9=2.006e+02|gap10=5.811e+01
+DROP|step=3.0e-05|parameter=12->15|parameter_drop=-3|surface=11->13|surface_drop=-2|gap9=2.007e+02|gap10=2.528e+02
+DROP|step=1.0e-05|parameter=12->15|parameter_drop=-3|surface=11->14|surface_drop=-3|gap9=1.960e+02|gap10=2.424e+02
+DROP|step=3.0e-06|parameter=12->15|parameter_drop=-3|surface=10->14|surface_drop=-4|gap9=1.223e+02|gap10=1.190e+02
+DROP|step=1.0e-06|parameter=12->15|parameter_drop=-3|surface=11->14|surface_drop=-3|gap9=4.853e+01|gap10=5.084e+01
+saved = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank9-rank10-tangent-calibration-v1
