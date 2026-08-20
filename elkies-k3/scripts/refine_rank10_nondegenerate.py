@@ -193,6 +193,8 @@ ap.add_argument('--max-nfev',type=int,default=3500)
 ap.add_argument('--seed',type=int,default=20260820)
 ap.add_argument('--min-distinct-ratio',type=float,default=2e-2)
 ap.add_argument('--distinct-weight',type=float,default=1e-5)
+ap.add_argument('--min-edge-gap',type=float,default=1e2)
+ap.add_argument('--min-wrong-sign-gap',type=float,default=1e2)
 ap.add_argument('--min-branch-ratio',type=float,default=1e-3)
 ap.add_argument('--branch-weight',type=float,default=1e-7)
 ap.add_argument('--out',type=Path,default=BASE/'results/rank10-nondegenerate-v1')
@@ -215,7 +217,7 @@ else:
 # Report the collision in the previous solution explicitly.
 prevstats,_=diagnostics(zprev,fixed,anchors,root_disc,root_jv)
 print('PREVIOUS')
-for k in ('raw_max','distinct_ratio','nearest_label','edge_gap','target_line_max','nontarget_line_min','delta_ratio','jvar_ratio'):
+for k in ('raw_max','distinct_ratio','nearest_label','edge_gap','wrong_sign_gap','target_line_max','nontarget_line_min','delta_ratio','jvar_ratio'):
     print(f'{k} = {prevstats[k]}')
 print()
 
@@ -251,17 +253,18 @@ for restart in range(args.restarts):
     stats,data=diagnostics(res.x,fixed,anchors,root_disc,root_jv)
     distinct=stats['distinct_ratio']>=.95*args.min_distinct_ratio
     healthy=stats['delta_ratio']>=args.min_branch_ratio and stats['jvar_ratio']>=args.min_branch_ratio
-    usable=distinct and healthy
-    # Algebraic residual first; edge gap is a validation metric/tiebreaker.
-    key=(stats['raw_max'],-min(stats['edge_gap'],1e12))
+    separated=stats['edge_gap']>=args.min_edge_gap and stats['wrong_sign_gap']>=args.min_wrong_sign_gap
+    usable=distinct and healthy and separated
+    # Algebraic residual first after all structural validation gates pass.
+    key=(stats['raw_max'],-min(stats['edge_gap'],1e12),-min(stats['wrong_sign_gap'],1e12))
     isbest=usable and (best is None or key<best[0])
-    print('NONDEG|restart=%d|raw=%.3e|base=%.3e|curve=%.3e|line=%.3e|distinct=%.3e|nearest=%s|edge_gap=%.3e|nontarget=%.3e|delta=%.3e|jvar=%.3e|usable=%d%s'%(
+    print('NONDEG|restart=%d|raw=%.3e|base=%.3e|curve=%.3e|line=%.3e|distinct=%.3e|nearest=%s|edge_gap=%.3e|wrong_gap=%.3e|nontarget=%.3e|delta=%.3e|jvar=%.3e|usable=%d%s'%(
         restart,stats['raw_max'],stats['base_max'],stats['curve_max'],stats['target_line_max'],
-        stats['distinct_ratio'],stats['nearest_label'],stats['edge_gap'],stats['nontarget_line_min'],
+        stats['distinct_ratio'],stats['nearest_label'],stats['edge_gap'],stats['wrong_sign_gap'],stats['nontarget_line_min'],
         stats['delta_ratio'],stats['jvar_ratio'],int(usable),'|BEST' if isbest else ''),flush=True)
     if isbest: best=(key,res.x.copy(),stats,data)
 
-if best is None: raise SystemExit('no healthy non-colliding rank-10 candidate found')
+if best is None: raise SystemExit('no healthy, non-colliding, incidence-separated rank-10 candidate found')
 _,z,stats,data=best; s,xs,ys,A,B,xq,yq=data
 np.save(out/'state.npy',z)
 np.savetxt(out/'slopes.txt',s,fmt='%.17g')
@@ -271,7 +274,7 @@ np.savetxt(out/'x-q.txt',xq.reshape(1,-1),fmt='%.17g')
 np.savetxt(out/'y-q.txt',yq.reshape(1,-1),fmt='%.17g')
 np.savetxt(out/'A.txt',A.reshape(1,-1),fmt='%.17g')
 np.savetxt(out/'B.txt',B.reshape(1,-1),fmt='%.17g')
-(out/'candidate.json').write_text(json.dumps({'version':1,'kind':'rank10-nondegenerate-refinement','v_pairings':list(pv),**stats},indent=2,sort_keys=True)+'\n')
+(out/'candidate.json').write_text(json.dumps({'version':2,'kind':'rank10-nondegenerate-refinement','v_pairings':list(pv),**stats},indent=2,sort_keys=True)+'\n')
 print('\nBEST NONDEGENERATE RANK10')
 for k,v in stats.items(): print(k,'=',v)
 print('saved =',out)
