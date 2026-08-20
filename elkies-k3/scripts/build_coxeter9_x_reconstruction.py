@@ -128,13 +128,12 @@ if signed.ndim != 2 or signed.shape[1] != 17:
 if triples.ndim != 2 or triples.shape[1] != 3:
     raise SystemExit(f"unexpected triple shape {triples.shape}")
 
-# Exact signed-vector lookup.
 signed_lookup = {
     tuple(map(int, row)): i
     for i, row in enumerate(signed)
 }
 
-# Saved triples have left < right; preserve their oriented sum result.
+# Saved triples have left < right; the result index remains oriented.
 triple_lookup = {
     (int(a), int(b), int(c))
     for a, b, c in triples
@@ -150,23 +149,25 @@ def signed_index(v: np.ndarray) -> int:
 
 
 def verify_addition(a: np.ndarray, b: np.ndarray, c: np.ndarray) -> tuple[int, int, int]:
+    """Verify a+b=c but preserve participant orientation in the return value."""
     if not np.array_equal(a + b, c):
         raise RuntimeError("internal vector-addition identity failed")
     ia = signed_index(a)
     ib = signed_index(b)
     ic = signed_index(c)
-    if ia > ib:
-        ia, ib = ib, ia
-    if (ia, ib, ic) not in triple_lookup:
+    lookup_a, lookup_b = (ia, ib) if ia < ib else (ib, ia)
+    if (lookup_a, lookup_b, ic) not in triple_lookup:
         raise RuntimeError(
-            f"relation absent from global additive catalog: signed=({ia},{ib},{ic})"
+            "relation absent from global additive catalog: "
+            f"signed=({ia},{ib},{ic}), lookup=({lookup_a},{lookup_b},{ic})"
         )
+    # Do not sort ia,ib here: the next reconstruction stage needs signed_a to
+    # correspond to node_a (and signed_b to node_b) in order to recover y signs.
     return ia, ib, ic
 
 
 V = [signed[int(i)].copy() for i in clique_indices]
 
-# Confirm the clique directly in the known short-basis Gram when available.
 gram_path = BASE / "data" / "lattice" / "short_vector_basis_gram.txt"
 if gram_path.exists():
     H = np.loadtxt(gram_path, dtype=np.int64)
@@ -301,17 +302,12 @@ for row in relations:
 if not np.all(C.sum(axis=1) == 3):
     raise RuntimeError("incidence row does not contain exactly three nodes")
 
-# Exact modular rank certificates.  Full column rank modulo even one prime
-# certifies full column rank over Q.
 primes = (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31)
 mod_ranks = {p: rank_mod(C, p) for p in primes}
 max_mod_rank = max(mod_ranks.values())
 numeric_rank = int(np.linalg.matrix_rank(C.astype(np.float64)))
 exact_full_column_rank_certified = max_mod_rank == C.shape[1]
 
-# Orthonormal numerical left-nullspace, useful for a stable least-squares
-# implementation.  This is derived data; exact reconstruction will still be
-# verified symbolically afterward.
 U, singular_values, _ = np.linalg.svd(C.astype(np.float64), full_matrices=True)
 svd_rank = int(np.sum(singular_values > singular_values[0] * 1e-12))
 left_null = U[:, svd_rank:].T
@@ -368,11 +364,11 @@ summary = "\n".join(
         f"global_additive_triples={len(triples)}",
         f"clique_indices={' '.join(map(str, clique_indices))}",
         f"x_nodes={len(nodes)}",
-        f"vertex_nodes=9",
+        "vertex_nodes=9",
         f"difference_nodes={len(nodes)-9}",
         f"square_relations={len(relations)}",
-        f"vertex_difference_relations=36",
-        f"difference_triangle_relations=84",
+        "vertex_difference_relations=36",
+        "difference_triangle_relations=84",
         f"incidence_shape={C.shape[0]}x{C.shape[1]}",
         f"numeric_rank={numeric_rank}",
         f"mod_ranks={mod_ranks}",
