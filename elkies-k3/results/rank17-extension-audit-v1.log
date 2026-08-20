@@ -1,0 +1,63 @@
+COXETER SATURATION
+raw_clique_gram_det = 5120
+saturated_clique_gram_det = 1280
+raw_clique_saturation_index = 2
+
+FINAL CHAIN
+coordinate_determinant_abs = 2
+minimum_possible_with_fixed_raw_clique = 2
+optimal_given_fixed_clique = True
+additive_closure_without_bridge = 1396/2622
+index2_parity_vector = 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 1 0
+saturation_bridge_signed_index = 874
+saturation_bridge_negative_index = 875
+saturation_bridge_abs2_links = 11
+additive_closure_with_bridge = 2622/2622
+
+Rank-17 extension-chain saturation audit
+=========================================
+raw_clique_gram_det=5120
+saturated_clique_gram_det=1280
+raw_clique_saturation_index=2
+final_coordinate_determinant_abs=2
+minimum_possible_with_fixed_raw_clique=2
+optimal_given_fixed_clique=True
+base_additive_closure=1396/2622
+bridge_signed_index=874
+bridge_negative_index=875
+bridge_additive_closure=2622/2622
+extension_abs2_edges=41
+continuation_anchor_constraints=24
+
+Interpretation:
+  determinant 2 is optimal when the fixed raw Coxeter clique itself
+  has saturation index 2; determinant 1 is then impossible without
+  replacing at least one of those nine raw clique generators.
+  The bridge is a norm-4 vector in the missing index-2 coset and is
+  useful as a final gluing/certification constraint after rank 17.
+ANCHOR PLAN
+ANCHOR|rank=10|qpos=9|q=961|apos=5|a=1441|pairing=-2|role=primary
+ANCHOR|rank=10|qpos=9|q=961|apos=6|a=683|pairing=-2|role=secondary
+ANCHOR|rank=10|qpos=9|q=961|apos=7|a=2351|pairing=-2|role=secondary
+ANCHOR|rank=11|qpos=10|q=2402|apos=5|a=1441|pairing=-2|role=primary
+ANCHOR|rank=11|qpos=10|q=2402|apos=6|a=683|pairing=-2|role=secondary
+ANCHOR|rank=11|qpos=10|q=2402|apos=7|a=2351|pairing=-2|role=secondary
+ANCHOR|rank=12|qpos=11|q=1642|apos=1|a=2525|pairing=-2|role=primary
+ANCHOR|rank=12|qpos=11|q=1642|apos=4|a=1859|pairing=-2|role=secondary
+ANCHOR|rank=12|qpos=11|q=1642|apos=7|a=2351|pairing=-2|role=secondary
+ANCHOR|rank=13|qpos=12|q=1300|apos=3|a=1303|pairing=-2|role=primary
+ANCHOR|rank=13|qpos=12|q=1300|apos=5|a=1441|pairing=-2|role=secondary
+ANCHOR|rank=13|qpos=12|q=1300|apos=10|a=2402|pairing=+2|role=secondary
+ANCHOR|rank=14|qpos=13|q=1023|apos=3|a=1303|pairing=+2|role=primary
+ANCHOR|rank=14|qpos=13|q=1023|apos=7|a=2351|pairing=+2|role=secondary
+ANCHOR|rank=14|qpos=13|q=1023|apos=10|a=2402|pairing=-2|role=secondary
+ANCHOR|rank=15|qpos=14|q=2216|apos=0|a=2313|pairing=-2|role=primary
+ANCHOR|rank=15|qpos=14|q=2216|apos=1|a=2525|pairing=-2|role=secondary
+ANCHOR|rank=15|qpos=14|q=2216|apos=2|a=307|pairing=-2|role=secondary
+ANCHOR|rank=16|qpos=15|q=2392|apos=1|a=2525|pairing=-2|role=primary
+ANCHOR|rank=16|qpos=15|q=2392|apos=3|a=1303|pairing=-2|role=secondary
+ANCHOR|rank=16|qpos=15|q=2392|apos=5|a=1441|pairing=-2|role=secondary
+ANCHOR|rank=17|qpos=16|q=2610|apos=0|a=2313|pairing=-2|role=primary
+ANCHOR|rank=17|qpos=16|q=2610|apos=1|a=2525|pairing=-2|role=secondary
+ANCHOR|rank=17|qpos=16|q=2610|apos=5|a=1441|pairing=-2|role=secondary
+saved = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank17-extension-audit-v1

@@ -1,0 +1,21 @@
+root = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/coxeter9-slope-numeric-v1/root-000001
+root raw_max = 6.9735883734267645e-15
+target_rank = 10
+base free variables = 104
+
+CONT|rank=10|restart=0|score=6.354e-09|raw=6.354e-09|base=6.354e-09|curve=9.656e-10|line=1.732e-10|allabs2=1.358e-10|strength=3.000e+00|delta=1.875e-05|jvar=9.857e-09|usable=0
+CONT|rank=10|restart=1|score=6.416e-07|raw=6.416e-07|base=6.416e-07|curve=5.364e-08|line=5.773e-08|allabs2=5.773e-08|strength=3.000e+00|delta=2.460e-04|jvar=2.522e-07|usable=1|BEST
+CONT|rank=10|restart=2|score=6.593e-09|raw=6.593e-09|base=9.443e-10|curve=6.593e-09|line=1.887e-09|allabs2=1.887e-09|strength=2.993e+00|delta=3.761e-05|jvar=9.800e-09|usable=0
+CONT|rank=10|restart=3|score=5.918e-09|raw=5.918e-09|base=5.918e-09|curve=2.967e-10|line=5.863e-10|allabs2=5.862e-10|strength=3.000e+00|delta=2.618e-05|jvar=9.852e-09|usable=0
+CONT|rank=10|restart=4|score=3.448e-08|raw=3.448e-08|base=8.272e-09|curve=1.327e-08|line=3.448e-08|allabs2=3.448e-08|strength=3.000e+00|delta=1.617e-05|jvar=9.290e-09|usable=0
+CONT|rank=10|restart=5|score=1.940e-09|raw=1.940e-09|base=1.940e-09|curve=1.095e-09|line=1.422e-09|allabs2=1.425e-09|strength=3.000e+00|delta=1.098e-05|jvar=9.759e-09|usable=0
+CONT|rank=10|restart=6|score=5.924e-09|raw=5.924e-09|base=5.924e-09|curve=9.881e-10|line=3.199e-10|allabs2=3.199e-10|strength=3.000e+00|delta=2.791e-05|jvar=9.814e-09|usable=0
+CONT|rank=10|restart=7|score=1.568e-08|raw=1.568e-08|base=1.076e-08|curve=1.568e-08|line=1.351e-09|allabs2=1.351e-09|strength=3.000e+00|delta=1.389e-05|jvar=9.972e-09|usable=0
+CONT|rank=10|restart=8|score=2.551e-08|raw=2.551e-08|base=1.466e-09|curve=1.907e-12|line=2.551e-08|allabs2=6.908e-12|strength=3.000e+00|delta=1.423e-06|jvar=1.200e-09|usable=0
+CONT|rank=10|restart=9|score=1.005e-08|raw=1.005e-08|base=3.595e-09|curve=2.304e-09|line=1.005e-08|allabs2=1.005e-08|strength=3.000e+00|delta=1.388e-05|jvar=9.592e-09|usable=0
+CONT|rank=10|restart=10|score=3.843e-09|raw=3.843e-09|base=3.843e-09|curve=7.068e-10|line=4.465e-10|allabs2=4.465e-10|strength=3.000e+00|delta=1.735e-05|jvar=9.587e-09|usable=0
+CONT|rank=10|restart=11|score=2.634e-07|raw=2.634e-07|base=1.600e-09|curve=2.634e-07|line=5.983e-08|allabs2=5.983e-08|strength=2.994e+00|delta=2.367e-05|jvar=9.785e-09|usable=0
+ACCEPT|rank=10|score=6.416e-07|state=/Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank17-continuation-v1/rank10/state.npy
+
+DONE
+saved = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank17-continuation-v1

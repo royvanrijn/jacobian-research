@@ -1,0 +1,21 @@
+Rank-17 extension-chain saturation audit
+=========================================
+raw_clique_gram_det=5120
+saturated_clique_gram_det=1280
+raw_clique_saturation_index=2
+final_coordinate_determinant_abs=2
+minimum_possible_with_fixed_raw_clique=2
+optimal_given_fixed_clique=True
+base_additive_closure=1396/2622
+bridge_signed_index=874
+bridge_negative_index=875
+bridge_additive_closure=2622/2622
+extension_abs2_edges=41
+continuation_anchor_constraints=24
+
+Interpretation:
+  determinant 2 is optimal when the fixed raw Coxeter clique itself
+  has saturation index 2; determinant 1 is then impossible without
+  replacing at least one of those nine raw clique generators.
+  The bridge is a norm-4 vector in the missing index-2 coset and is
+  useful as a final gluing/certification constraint after rank 17.

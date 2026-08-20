@@ -1,0 +1,121 @@
+relation_id	kind	i	j	k	node_a	node_b	node_c	signed_a	signed_b	signed_c
+0	vertex_difference	0	1		0	1	9	2313	2524	2294
+1	vertex_difference	0	2		0	2	10	2313	306	282
+2	vertex_difference	0	3		0	3	11	2313	1302	1254
+3	vertex_difference	0	4		0	4	12	2313	1858	1900
+4	vertex_difference	0	5		0	5	13	2313	1440	1503
+5	vertex_difference	0	6		0	6	14	2313	682	574
+6	vertex_difference	0	7		0	7	15	2313	2350	2470
+7	vertex_difference	0	8		0	8	16	2313	2142	2078
+8	vertex_difference	1	2		1	2	17	2525	306	321
+9	vertex_difference	1	3		1	3	18	2525	1302	1319
+10	vertex_difference	1	4		1	4	19	2525	1858	1843
+11	vertex_difference	1	5		1	5	20	2525	1440	1433
+12	vertex_difference	1	6		1	6	21	2525	682	697
+13	vertex_difference	1	7		1	7	22	2525	2350	2335
+14	vertex_difference	1	8		1	8	23	2525	2142	2164
+15	vertex_difference	2	3		2	3	24	307	1302	475
+16	vertex_difference	2	4		2	4	25	307	1858	277
+17	vertex_difference	2	5		2	5	26	307	1440	45
+18	vertex_difference	2	6		2	6	27	307	682	1091
+19	vertex_difference	2	7		2	7	28	307	2350	292
+20	vertex_difference	2	8		2	8	29	307	2142	338
+21	vertex_difference	3	4		3	4	30	1303	1858	1190
+22	vertex_difference	3	5		3	5	31	1303	1440	1003
+23	vertex_difference	3	6		3	6	32	1303	682	764
+24	vertex_difference	3	7		3	7	33	1303	2350	1276
+25	vertex_difference	3	8		3	8	34	1303	2142	1324
+26	vertex_difference	4	5		4	5	35	1859	1440	1623
+27	vertex_difference	4	6		4	6	36	1859	682	509
+28	vertex_difference	4	7		4	7	37	1859	2350	1882
+29	vertex_difference	4	8		4	8	38	1859	2142	1766
+30	vertex_difference	5	6		5	6	39	1441	682	436
+31	vertex_difference	5	7		5	7	40	1441	2350	1478
+32	vertex_difference	5	8		5	8	41	1441	2142	1396
+33	vertex_difference	6	7		6	7	42	683	2350	632
+34	vertex_difference	6	8		6	8	43	683	2142	728
+35	vertex_difference	7	8		7	8	44	2351	2142	2098
+36	difference_triangle	0	1	2	9	17	10	2294	321	282
+37	difference_triangle	0	1	3	9	18	11	2294	1319	1254
+38	difference_triangle	0	1	4	9	19	12	2294	1843	1900
+39	difference_triangle	0	1	5	9	20	13	2294	1433	1503
+40	difference_triangle	0	1	6	9	21	14	2294	697	574
+41	difference_triangle	0	1	7	9	22	15	2294	2335	2470
+42	difference_triangle	0	1	8	9	23	16	2294	2164	2078
+43	difference_triangle	0	2	3	10	24	11	282	475	1254
+44	difference_triangle	0	2	4	10	25	12	282	277	1900
+45	difference_triangle	0	2	5	10	26	13	282	45	1503
+46	difference_triangle	0	2	6	10	27	14	282	1091	574
+47	difference_triangle	0	2	7	10	28	15	282	292	2470
+48	difference_triangle	0	2	8	10	29	16	282	338	2078
+49	difference_triangle	0	3	4	11	30	12	1254	1190	1900
+50	difference_triangle	0	3	5	11	31	13	1254	1003	1503
+51	difference_triangle	0	3	6	11	32	14	1254	764	574
+52	difference_triangle	0	3	7	11	33	15	1254	1276	2470
+53	difference_triangle	0	3	8	11	34	16	1254	1324	2078
+54	difference_triangle	0	4	5	12	35	13	1900	1623	1503
+55	difference_triangle	0	4	6	12	36	14	1900	509	574
+56	difference_triangle	0	4	7	12	37	15	1900	1882	2470
+57	difference_triangle	0	4	8	12	38	16	1900	1766	2078
+58	difference_triangle	0	5	6	13	39	14	1503	436	574
+59	difference_triangle	0	5	7	13	40	15	1503	1478	2470
+60	difference_triangle	0	5	8	13	41	16	1503	1396	2078
+61	difference_triangle	0	6	7	14	42	15	574	632	2470
+62	difference_triangle	0	6	8	14	43	16	574	728	2078
+63	difference_triangle	0	7	8	15	44	16	2470	2098	2078
+64	difference_triangle	1	2	3	17	24	18	321	475	1319
+65	difference_triangle	1	2	4	17	25	19	321	277	1843
+66	difference_triangle	1	2	5	17	26	20	321	45	1433
+67	difference_triangle	1	2	6	17	27	21	321	1091	697
+68	difference_triangle	1	2	7	17	28	22	321	292	2335
+69	difference_triangle	1	2	8	17	29	23	321	338	2164
+70	difference_triangle	1	3	4	18	30	19	1319	1190	1843
+71	difference_triangle	1	3	5	18	31	20	1319	1003	1433
+72	difference_triangle	1	3	6	18	32	21	1319	764	697
+73	difference_triangle	1	3	7	18	33	22	1319	1276	2335
+74	difference_triangle	1	3	8	18	34	23	1319	1324	2164
+75	difference_triangle	1	4	5	19	35	20	1843	1623	1433
+76	difference_triangle	1	4	6	19	36	21	1843	509	697
+77	difference_triangle	1	4	7	19	37	22	1843	1882	2335
+78	difference_triangle	1	4	8	19	38	23	1843	1766	2164
+79	difference_triangle	1	5	6	20	39	21	1433	436	697
+80	difference_triangle	1	5	7	20	40	22	1433	1478	2335
+81	difference_triangle	1	5	8	20	41	23	1433	1396	2164
+82	difference_triangle	1	6	7	21	42	22	697	632	2335
+83	difference_triangle	1	6	8	21	43	23	697	728	2164
+84	difference_triangle	1	7	8	22	44	23	2335	2098	2164
+85	difference_triangle	2	3	4	24	30	25	475	1190	277
+86	difference_triangle	2	3	5	24	31	26	475	1003	45
+87	difference_triangle	2	3	6	24	32	27	475	764	1091
+88	difference_triangle	2	3	7	24	33	28	475	1276	292
+89	difference_triangle	2	3	8	24	34	29	475	1324	338
+90	difference_triangle	2	4	5	25	35	26	277	1623	45
+91	difference_triangle	2	4	6	25	36	27	277	509	1091
+92	difference_triangle	2	4	7	25	37	28	277	1882	292
+93	difference_triangle	2	4	8	25	38	29	277	1766	338
+94	difference_triangle	2	5	6	26	39	27	45	436	1091
+95	difference_triangle	2	5	7	26	40	28	45	1478	292
+96	difference_triangle	2	5	8	26	41	29	45	1396	338
+97	difference_triangle	2	6	7	27	42	28	1091	632	292
+98	difference_triangle	2	6	8	27	43	29	1091	728	338
+99	difference_triangle	2	7	8	28	44	29	292	2098	338
+100	difference_triangle	3	4	5	30	35	31	1190	1623	1003
+101	difference_triangle	3	4	6	30	36	32	1190	509	764
+102	difference_triangle	3	4	7	30	37	33	1190	1882	1276
+103	difference_triangle	3	4	8	30	38	34	1190	1766	1324
+104	difference_triangle	3	5	6	31	39	32	1003	436	764
+105	difference_triangle	3	5	7	31	40	33	1003	1478	1276
+106	difference_triangle	3	5	8	31	41	34	1003	1396	1324
+107	difference_triangle	3	6	7	32	42	33	764	632	1276
+108	difference_triangle	3	6	8	32	43	34	764	728	1324
+109	difference_triangle	3	7	8	33	44	34	1276	2098	1324
+110	difference_triangle	4	5	6	35	39	36	1623	436	509
+111	difference_triangle	4	5	7	35	40	37	1623	1478	1882
+112	difference_triangle	4	5	8	35	41	38	1623	1396	1766
+113	difference_triangle	4	6	7	36	42	37	509	632	1882
+114	difference_triangle	4	6	8	36	43	38	509	728	1766
+115	difference_triangle	4	7	8	37	44	38	1882	2098	1766
+116	difference_triangle	5	6	7	39	42	40	436	632	1478
+117	difference_triangle	5	6	8	39	43	41	436	728	1396
+118	difference_triangle	5	7	8	40	44	41	1478	2098	1396
+119	difference_triangle	6	7	8	42	44	43	632	2098	728

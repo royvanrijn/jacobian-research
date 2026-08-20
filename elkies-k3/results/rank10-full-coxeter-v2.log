@@ -1,0 +1,8 @@
+target signed index = 961
+full Coxeter abs2 anchors = 9
+anchors = V5:-2 V6:-2 V7:-2 D15:+2 D16:+2 D17:+2 D35:+2 D36:+2 D37:+2
+base tangent nullity used = 9
+jacobian singular tail = 3.912e-02 2.157e-02 9.011e-03 1.006e-09 7.527e-10 5.258e-10 5.128e-10 4.544e-10 3.902e-10 3.323e-10 2.726e-10 2.417e-10
+root branch norms: delta=2.474016e-08 jvar=1.109812e-08
+
+FULL45|restart=0|score=1.413e-10|base=1.413e-10|curve=1.557e-13|line=1.501e-11|delta_ratio=7.138e-09|jvar_ratio=2.055e-07|usable=0

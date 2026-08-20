@@ -1,0 +1,14 @@
+Coxeter-9 -> rank-17 minimal-section extension chain
+====================================================
+initial_clique=2313 2525 307 1303 1859 1441 683 2351 2143
+final_indices=2313 2525 307 1303 1859 1441 683 2351 2143 961 2402 1642 1300 1023 2216 2392 2610
+final_rank=17
+coordinate_determinant_abs=2
+final_additive_closure=1396/2622
+selected_abs2_edges=77
+
+Interpretation:
+  rank 9 is the Coxeter scaffold reconstructed numerically;
+  each following row is one independent height-4 section to impose;
+  determinant 1 means the final 17 vectors are a unimodular MW basis;
+  closure 2622 means their minimal-vector additions generate the full shell.

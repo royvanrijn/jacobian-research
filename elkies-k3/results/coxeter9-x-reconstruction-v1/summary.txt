@@ -1,0 +1,36 @@
+Coxeter-9 x-coordinate reconstruction reduction
+================================================
+signed_vectors=2622
+global_additive_triples=184242
+clique_indices=2313 2525 307 1303 1859 1441 683 2351 2143
+x_nodes=45
+vertex_nodes=9
+difference_nodes=36
+square_relations=120
+vertex_difference_relations=36
+difference_triangle_relations=84
+incidence_shape=120x45
+numeric_rank=45
+mod_ranks={2: 36, 3: 44, 5: 45, 7: 45, 11: 45, 13: 45, 17: 45, 19: 45, 23: 45, 29: 45, 31: 45}
+max_mod_rank=45
+exact_full_column_rank_certified=True
+left_nullity=75
+svd_rank=45
+left_nullspace_error=1.096e-15
+
+x_quartic_variables=225
+quadratic_slope_variables=360
+full_x_plus_slope_variables=585
+raw_coefficient_equations=600
+after_linear_x_elimination_quadratic_equations=375
+
+For slope m_r = a_r U^2 + b_r U V + c_r V^2,
+each left-kernel vector lambda of C imposes the binary-quartic identity
+
+    sum_r lambda_r * m_r(U,V)^2 = 0.
+
+Once slopes are recovered, every coefficient vector of the 45 quartic
+x-polynomials is obtained by solving C X_k = q_k(m).
+
+Expected geometric freedom before gauge fixing: 5 dimensions:
+  3 from PGL_2 on the base, 1 from Weierstrass scaling, 1 true moduli.

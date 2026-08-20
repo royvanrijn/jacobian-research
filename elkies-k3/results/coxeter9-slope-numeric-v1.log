@@ -1,0 +1,56 @@
+pairs = 36
+triples = 84
+nonlinear scalar slope coefficients = 108
+gauge fixed coefficients = 4
+free variables = 104
+second gauge pair = (0, 2)
+
+RUN|n=1|sign=-1|restart=0|raw_max=6.973588e-15|x=6.974e-15|y=1.554e-15|A=2.606e-15|B=3.429e-15|slope_rank=3|j_std=2.04528e+08|BEST
+RUN|n=2|sign=-1|restart=1|raw_max=3.460149e-13|x=3.460e-13|y=3.459e-14|A=9.231e-15|B=1.636e-16|slope_rank=3|j_std=1.99026e+16
+RUN|n=3|sign=-1|restart=2|raw_max=1.207368e-15|x=1.207e-15|y=7.886e-17|A=4.424e-17|B=1.355e-20|slope_rank=3|j_std=0|BEST
+RUN|n=4|sign=-1|restart=3|raw_max=3.918888e-13|x=3.919e-13|y=7.434e-14|A=3.818e-14|B=6.327e-16|slope_rank=3|j_std=1.31063e+15
+RUN|n=5|sign=-1|restart=4|raw_max=1.726978e-11|x=1.727e-11|y=1.925e-12|A=3.163e-13|B=2.704e-14|slope_rank=3|j_std=4.18522e+13
+RUN|n=6|sign=-1|restart=5|raw_max=2.775558e-16|x=2.776e-16|y=1.586e-17|A=5.638e-18|B=4.743e-20|slope_rank=3|j_std=3.27212e+18|BEST
+RUN|n=7|sign=-1|restart=6|raw_max=7.790713e-13|x=7.791e-13|y=4.929e-14|A=1.816e-14|B=8.430e-16|slope_rank=3|j_std=1.85316e+15
+RUN|n=8|sign=-1|restart=7|raw_max=2.440617e-13|x=2.441e-13|y=6.345e-14|A=1.214e-14|B=3.779e-15|slope_rank=3|j_std=1.2088e+16
+RUN|n=9|sign=-1|restart=8|raw_max=1.058988e-13|x=1.059e-13|y=5.240e-14|A=6.150e-14|B=1.476e-15|slope_rank=3|j_std=nan
+RUN|n=10|sign=-1|restart=9|raw_max=2.164209e-13|x=2.164e-13|y=7.064e-14|A=8.172e-14|B=2.463e-15|slope_rank=3|j_std=nan
+RUN|n=11|sign=-1|restart=10|raw_max=8.187895e-16|x=8.188e-16|y=8.123e-17|A=4.684e-17|B=7.589e-19|slope_rank=3|j_std=1.9119e+18
+RUN|n=12|sign=-1|restart=11|raw_max=1.059075e-13|x=1.059e-13|y=8.181e-15|A=2.576e-15|B=2.335e-16|slope_rank=3|j_std=3.90716e+16
+RUN|n=13|sign=-1|restart=12|raw_max=5.134781e-16|x=5.135e-16|y=1.495e-17|A=9.541e-18|B=3.253e-19|slope_rank=3|j_std=2.96132e+18
+RUN|n=14|sign=-1|restart=13|raw_max=2.955552e-13|x=2.956e-13|y=9.459e-14|A=1.472e-13|B=4.062e-15|slope_rank=3|j_std=nan
+RUN|n=15|sign=-1|restart=14|raw_max=2.498002e-14|x=2.498e-14|y=1.046e-14|A=5.222e-15|B=2.294e-16|slope_rank=3|j_std=9.5073e+14
+RUN|n=16|sign=-1|restart=15|raw_max=1.440382e-11|x=1.440e-11|y=2.795e-13|A=1.257e-13|B=1.068e-15|slope_rank=3|j_std=9.38645e+14
+RUN|n=17|sign=+1|restart=0|raw_max=1.632000e-12|x=1.632e-12|y=2.171e-13|A=6.996e-14|B=5.074e-15|slope_rank=3|j_std=6.16716e+13
+RUN|n=18|sign=+1|restart=1|raw_max=2.087219e-14|x=2.087e-14|y=1.959e-14|A=1.757e-14|B=1.995e-16|slope_rank=3|j_std=1.8349e+18
+RUN|n=19|sign=+1|restart=2|raw_max=1.942890e-16|x=1.943e-16|y=3.561e-17|A=2.082e-17|B=8.132e-20|slope_rank=3|j_std=0|BEST
+RUN|n=20|sign=+1|restart=3|raw_max=1.119564e-13|x=1.120e-13|y=4.108e-14|A=4.828e-14|B=2.143e-15|slope_rank=3|j_std=nan
+RUN|n=21|sign=+1|restart=4|raw_max=9.992562e-13|x=9.993e-13|y=1.830e-13|A=1.617e-13|B=1.701e-14|slope_rank=3|j_std=3.56578e+16
+RUN|n=22|sign=+1|restart=5|raw_max=4.440892e-16|x=4.441e-16|y=3.616e-17|A=1.995e-17|B=1.897e-19|slope_rank=3|j_std=4.50496e+18
+RUN|n=23|sign=+1|restart=6|raw_max=1.887379e-15|x=1.887e-15|y=7.373e-17|A=3.209e-17|B=7.589e-19|slope_rank=3|j_std=0
+RUN|n=24|sign=+1|restart=7|raw_max=2.746956e-11|x=2.747e-11|y=9.883e-12|A=5.799e-12|B=2.561e-13|slope_rank=3|j_std=1.50745e+13
+RUN|n=25|sign=+1|restart=8|raw_max=2.088607e-15|x=7.772e-16|y=4.441e-16|A=2.089e-15|B=7.048e-16|slope_rank=3|j_std=3.51124e+16
+RUN|n=26|sign=+1|restart=9|raw_max=4.631521e-13|x=4.632e-13|y=1.036e-13|A=1.062e-13|B=1.114e-15|slope_rank=3|j_std=0
+RUN|n=27|sign=+1|restart=10|raw_max=2.164689e-11|x=2.165e-11|y=2.733e-12|A=1.262e-12|B=4.973e-14|slope_rank=3|j_std=4.04848e+12
+RUN|n=28|sign=+1|restart=11|raw_max=2.570586e-11|x=2.571e-11|y=2.727e-12|A=5.985e-13|B=8.487e-15|slope_rank=3|j_std=4.92258e+14
+RUN|n=29|sign=+1|restart=12|raw_max=8.138574e-13|x=8.139e-13|y=7.475e-14|A=1.071e-13|B=2.412e-15|slope_rank=3|j_std=0
+RUN|n=30|sign=+1|restart=13|raw_max=6.661338e-16|x=6.661e-16|y=1.249e-16|A=1.058e-16|B=3.686e-18|slope_rank=3|j_std=2.30044e+17
+RUN|n=31|sign=+1|restart=14|raw_max=5.073806e-13|x=5.074e-13|y=9.325e-14|A=2.898e-14|B=2.780e-16|slope_rank=3|j_std=2.42387e+15
+RUN|n=32|sign=+1|restart=15|raw_max=3.238379e-13|x=3.238e-13|y=9.748e-14|A=1.562e-13|B=5.438e-15|slope_rank=3|j_std=nan
+
+BEST
+raw_max = 1.942890293094024e-16
+gauge_sign = 1
+restart = 2
+slope_coefficient_rank = 3
+j_sample_std = 0.0
+A_max = 2.0816681711721685e-17
+A_rms = 2.997097036213032e-18
+B_max = 8.131516293641283e-20
+B_rms = 1.8507038561028047e-20
+raw_max = 1.942890293094024e-16
+x_max = 1.942890293094024e-16
+x_rms = 3.10410485761955e-17
+y_max = 3.5609137825505366e-17
+y_rms = 5.599637632352706e-18
+saved = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/coxeter9-slope-numeric-v1/best

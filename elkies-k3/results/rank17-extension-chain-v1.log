@@ -1,0 +1,29 @@
+START
+selected_rank = 9
+additive_closure = 90 of 2622
+
+EXT|step=1|rank=10|signed=961|neg=960|abs2=3|frontier=54|closure=132
+EXT|step=2|rank=11|signed=2402|neg=2403|abs2=4|frontier=66|closure=198
+EXT|step=3|rank=12|signed=1642|neg=1643|abs2=4|frontier=84|closure=278
+EXT|step=4|rank=13|signed=1300|neg=1301|abs2=3|frontier=114|closure=366
+EXT|step=5|rank=14|signed=1023|neg=1022|abs2=5|frontier=150|closure=516
+EXT|step=6|rank=15|signed=2216|neg=2217|abs2=9|frontier=192|closure=750
+EXT|step=7|rank=16|signed=2392|neg=2393|abs2=8|frontier=198|closure=1014
+STEP 8: no determinant-1 candidate; minimum determinant = 2
+EXT|step=8|rank=17|signed=2610|neg=2611|abs2=5|frontier=276|closure=1396|det=2
+
+Coxeter-9 -> rank-17 minimal-section extension chain
+====================================================
+initial_clique=2313 2525 307 1303 1859 1441 683 2351 2143
+final_indices=2313 2525 307 1303 1859 1441 683 2351 2143 961 2402 1642 1300 1023 2216 2392 2610
+final_rank=17
+coordinate_determinant_abs=2
+final_additive_closure=1396/2622
+selected_abs2_edges=77
+
+Interpretation:
+  rank 9 is the Coxeter scaffold reconstructed numerically;
+  each following row is one independent height-4 section to impose;
+  determinant 1 means the final 17 vectors are a unimodular MW basis;
+  closure 2622 means their minimal-vector additions generate the full shell.
+saved = /Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/rank17-extension-chain-v1

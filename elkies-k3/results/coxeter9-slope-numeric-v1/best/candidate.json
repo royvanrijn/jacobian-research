@@ -1,0 +1,55 @@
+{
+  "A_max": 2.0816681711721685e-17,
+  "A_rms": 2.997097036213032e-18,
+  "B_max": 8.131516293641283e-20,
+  "B_rms": 1.8507038561028047e-20,
+  "gauge": "m01=T^2+sign; second-pair T coefficient=1",
+  "gauge_sign": 1,
+  "j_sample_std": 0.0,
+  "j_samples": [
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    3.325883825664119e+18
+  ],
+  "kind": "coxeter9-slope-numeric",
+  "raw_max": 1.942890293094024e-16,
+  "restart": 2,
+  "run_index": 19,
+  "second_pair": [
+    0,
+    2
+  ],
+  "seed": 20260820,
+  "slope_coefficient_rank": 3,
+  "stage_results": [
+    [
+      "x",
+      19,
+      6.361521929680711e-16
+    ],
+    [
+      "xy",
+      1,
+      6.423327096643363e-16
+    ],
+    [
+      "xya",
+      1,
+      6.428988254359555e-16
+    ],
+    [
+      "full",
+      1,
+      6.428988273838576e-16
+    ]
+  ],
+  "version": 1,
+  "x_max": 1.942890293094024e-16,
+  "x_rms": 3.10410485761955e-17,
+  "y_max": 3.5609137825505366e-17,
+  "y_rms": 5.599637632352706e-18
+}

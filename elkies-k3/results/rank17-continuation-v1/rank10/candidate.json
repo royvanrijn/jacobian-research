@@ -1,0 +1,31 @@
+{
+  "all_abs2_count": 3,
+  "all_abs2_max": 5.772802103235094e-08,
+  "base_max": 6.416315105547965e-07,
+  "curve_max": 5.364306074923678e-08,
+  "delta_rel": 0.00024602132576925247,
+  "jvar_rel": 2.522286345840697e-07,
+  "kind": "rank17-coxeter-continuation",
+  "line_max": 5.77280286548377e-08,
+  "raw_max": 6.416315105547965e-07,
+  "restart": 1,
+  "seed": 20260820,
+  "slope_rank": 3,
+  "source_root": "/Users/royvanrijn/Documents/jacobian-research/elkies-k3/results/coxeter9-slope-numeric-v1/root-000001",
+  "stage_results": [
+    {
+      "cost_norm": 1.5656929014996974e-06,
+      "nfev": 49,
+      "secondary_limit": 1
+    },
+    {
+      "cost_norm": 2.399312770543604e-06,
+      "nfev": 1395,
+      "secondary_limit": null
+    }
+  ],
+  "surface_strength": 2.9999736031414477,
+  "target_rank": 10,
+  "variables": 118,
+  "version": 1
+}
