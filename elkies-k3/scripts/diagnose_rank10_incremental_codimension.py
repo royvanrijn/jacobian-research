@@ -37,6 +37,14 @@ new independent Mordell--Weil section we expect
 
     incremental_codimension = 1.
 
+IMPORTANT NUMERICAL DETAIL: columns of A*T_9 must NOT be normalized
+individually before this rank test.  A genuinely surviving tangent direction
+has only finite-difference/noise leakage into the Q constraints; normalizing
+that tiny column would amplify the noise to order one and spuriously make the
+projected matrix full rank.  B columns may be normalized because only their
+column space is used.  The projected C spectrum is therefore compared against
+the common, row-scaled A*T_9 operator scale.
+
 The script repeats the calculation across finite-difference step sizes and
 also reports the tangent dimension of the 112-variable reduced rank-10 system.
 """
@@ -246,6 +254,17 @@ def strongest_bottom_gap(sv, max_d=24):
     return max(candidates)
 
 
+def strongest_rank_gap(sv, max_rank=None):
+    """Largest descending gap; return (gap, rank_above_gap)."""
+    if len(sv) < 2:
+        return float("inf"), len(sv)
+    limit = len(sv) - 1 if max_rank is None else min(max_rank, len(sv) - 1)
+    candidates = []
+    for r in range(1, limit + 1):
+        candidates.append((float(sv[r - 1]) / max(float(sv[r]), 1e-300), r))
+    return max(candidates)
+
+
 def original_tangent_basis(J, d):
     E, _, cs = equilibrate(J)
     _, sv, Vt = np.linalg.svd(E, full_matrices=False)
@@ -261,29 +280,37 @@ def normalize_columns(M, floor=1e-300):
     return M * scale[None, :], scale
 
 
-def rank_at(sv, reltol):
-    if len(sv) == 0 or float(sv[0]) == 0.0:
+def rank_at_reference(sv, reference, reltol):
+    if len(sv) == 0 or reference <= 0.0:
         return 0
-    return int(np.count_nonzero(sv > reltol * float(sv[0])))
+    return int(np.count_nonzero(sv > reltol * reference))
 
 
 def projected_increment(A, B, reltol):
-    """Return rank(B), rank(N_B^T A), spectra, using common row scaling."""
+    """Project A off col(B), preserving A's tangent-leakage scale.
+
+    A is already A_base*T9, with orthonormal tangent coordinates.  We apply a
+    common row scaling to [A B].  B columns are normalized because only col(B)
+    matters.  A columns are deliberately *not* normalized: their smallness is
+    precisely the signal that a base tangent survives modulo numerical noise.
+    """
     M = np.hstack([A, B])
     rn = np.linalg.norm(M, axis=1)
     rs = 1.0 / np.maximum(rn, 1e-300)
     Ar = A * rs[:, None]
     Br = B * rs[:, None]
-    Ar, _ = normalize_columns(Ar)
-    Br, _ = normalize_columns(Br)
+    Brn, _ = normalize_columns(Br)
 
-    U, sb, _ = np.linalg.svd(Br, full_matrices=True)
-    rank_b = rank_at(sb, reltol)
+    U, sb, _ = np.linalg.svd(Brn, full_matrices=True)
+    rank_b = rank_at_reference(sb, float(sb[0]) if len(sb) else 0.0, reltol)
     left_null = U[:, rank_b:]
     C = left_null.T @ Ar
+    sa = np.linalg.svd(Ar, compute_uv=False)
     sc = np.linalg.svd(C, compute_uv=False)
-    inc = rank_at(sc, reltol)
-    return rank_b, inc, sb, sc
+    aref = float(sa[0]) if len(sa) else 0.0
+    inc = rank_at_reference(sc, aref, reltol)
+    cgap, crank = strongest_rank_gap(sc, max_rank=min(12, len(sc) - 1)) if len(sc) > 1 else (float("inf"), len(sc))
+    return rank_b, inc, sb, sa, sc, aref, cgap, crank
 
 
 ap = argparse.ArgumentParser()
@@ -299,12 +326,12 @@ ap.add_argument(
 )
 ap.add_argument("--v-pairings", default="0,0,2,2,2,1,1,1,1")
 ap.add_argument("--steps", default="1e-4,3e-5,1e-5,3e-6,1e-6,3e-7")
-ap.add_argument("--rank-tols", default="1e-5,1e-6,1e-7,1e-8,1e-9")
+ap.add_argument("--rank-tols", default="1e-4,1e-5,1e-6,1e-7,1e-8,1e-9")
 ap.add_argument("--max-gap-d", type=int, default=24)
 ap.add_argument(
     "--out",
     type=Path,
-    default=BASE / "results/rank10-incremental-codimension-v1",
+    default=BASE / "results/rank10-incremental-codimension-v2",
 )
 args = ap.parse_args()
 
@@ -331,6 +358,7 @@ print("anchors =", len(anchors))
 print("base_raw_max = %.6e" % float(np.max(np.abs(base_raw(base, fixed)))))
 print("q_raw_max = %.6e" % float(np.max(np.abs(q_raw(base, qstate, fixed, anchors)))))
 print("expected_incremental_codimension = 1")
+print("NOTE: v1 column-normalized A*T9 and its codimension output is invalid")
 print()
 
 steps = [float(x) for x in args.steps.split(",") if x.strip()]
@@ -342,6 +370,7 @@ for step in steps:
     _, s9, _ = np.linalg.svd(E9, full_matrices=False)
     gap9, d9, hi9, lo9 = strongest_bottom_gap(s9, args.max_gap_d)
     T9, _ = original_tangent_basis(J9, d9)
+    tangent_relmax = float(s9[-d9] / max(s9[0], 1e-300))
 
     # Derivatives of only the new-section constraints.
     A = central_jacobian(lambda b: q_raw(b, qstate, fixed, anchors), base, step)
@@ -355,18 +384,21 @@ for step in steps:
     gapr, dr, hir, lor = strongest_bottom_gap(sr, args.max_gap_d)
 
     print(
-        "STEP|h=%.1e|d9=%d|gap9=%.3e|reduced_d10=%d|reduced_gap=%.3e"
-        % (step, d9, gap9, dr, gapr),
+        "STEP|h=%.1e|d9=%d|gap9=%.3e|tangent_relmax=%.3e|reduced_d10=%d|reduced_gap=%.3e"
+        % (step, d9, gap9, tangent_relmax, dr, gapr),
         flush=True,
     )
 
     chosen = None
     for tol in tols:
-        rank_b, inc, sb, sc = projected_increment(AT, B, tol)
+        rank_b, inc, sb, sa, sc, aref, cgap, crank = projected_increment(AT, B, tol)
         qfiber = 8 - rank_b
         predicted = d9 - inc + qfiber
+        c1rel = float(sc[0] / max(aref, 1e-300)) if len(sc) else 0.0
+        c2rel = float(sc[1] / max(aref, 1e-300)) if len(sc) > 1 else 0.0
+        c3rel = float(sc[2] / max(aref, 1e-300)) if len(sc) > 2 else 0.0
         print(
-            "INC|h=%.1e|tol=%.0e|rankB=%d|qfiber=%d|incremental_codim=%d|predicted_reduced_d10=%d|observed_reduced_d10=%d|B_relmin=%.3e|C_s1=%.3e|C_s2=%.3e"
+            "INC|h=%.1e|tol=%.0e|rankB=%d|qfiber=%d|incremental_codim=%d|predicted_reduced_d10=%d|observed_reduced_d10=%d|B_relmin=%.3e|Crel1=%.3e|Crel2=%.3e|Crel3=%.3e|C_gap_rank=%d|C_gap=%.3e"
             % (
                 step,
                 tol,
@@ -376,33 +408,46 @@ for step in steps:
                 predicted,
                 dr,
                 float(sb[-1] / max(sb[0], 1e-300)) if len(sb) else 0.0,
-                float(sc[0]) if len(sc) else 0.0,
-                float(sc[1]) if len(sc) > 1 else 0.0,
+                c1rel,
+                c2rel,
+                c3rel,
+                crank,
+                cgap,
             ),
             flush=True,
         )
         if abs(tol - 1e-7) < 1e-20:
-            chosen = (rank_b, inc, predicted)
+            chosen = (rank_b, inc, predicted, c1rel, c2rel, c3rel, crank, cgap)
 
     if chosen is None:
-        rank_b, inc, _, _ = projected_increment(AT, B, 1e-7)
-        chosen = (rank_b, inc, d9 - inc + (8 - rank_b))
-    summary.append((step, d9, gap9, dr, gapr, *chosen))
+        rank_b, inc, sb, sa, sc, aref, cgap, crank = projected_increment(AT, B, 1e-7)
+        chosen = (
+            rank_b,
+            inc,
+            d9 - inc + (8 - rank_b),
+            float(sc[0] / max(aref, 1e-300)) if len(sc) else 0.0,
+            float(sc[1] / max(aref, 1e-300)) if len(sc) > 1 else 0.0,
+            float(sc[2] / max(aref, 1e-300)) if len(sc) > 2 else 0.0,
+            crank,
+            cgap,
+        )
+    summary.append((step, d9, gap9, tangent_relmax, dr, gapr, *chosen))
 
     np.savetxt(out / ("sv-rank9-%.0e.txt" % step), s9.reshape(1, -1), fmt="%.17g")
     np.savetxt(out / ("sv-rank10-reduced-%.0e.txt" % step), sr.reshape(1, -1), fmt="%.17g")
 
 print()
 print("CROSS-STEP INCREMENTAL SUMMARY (tol=1e-7)")
-for step, d9, gap9, dr, gapr, rank_b, inc, predicted in summary:
+for row in summary:
+    step, d9, gap9, tangent_relmax, dr, gapr, rank_b, inc, predicted, c1, c2, c3, crank, cgap = row
     print(
-        "CODIM|h=%.1e|d9=%d|rankB=%d|incremental_codim=%d|predicted_d10=%d|observed_reduced_d10=%d|gap9=%.3e|gap10=%.3e"
-        % (step, d9, rank_b, inc, predicted, dr, gap9, gapr)
+        "CODIM|h=%.1e|d9=%d|rankB=%d|incremental_codim=%d|predicted_d10=%d|observed_reduced_d10=%d|Crel1=%.3e|Crel2=%.3e|Crel3=%.3e|C_gap_rank=%d|C_gap=%.3e|tangent_relmax=%.3e"
+        % (step, d9, rank_b, inc, predicted, dr, c1, c2, c3, crank, cgap, tangent_relmax)
     )
 
 (out / "summary.txt").write_text(
     "\n".join(
-        "h=%.1e d9=%d gap9=%.6e reduced_d10=%d gap10=%.6e rankB=%d incremental_codim=%d predicted_d10=%d"
+        "h=%.1e d9=%d gap9=%.6e tangent_relmax=%.6e reduced_d10=%d gap10=%.6e rankB=%d incremental_codim=%d predicted_d10=%d Crel1=%.6e Crel2=%.6e Crel3=%.6e C_gap_rank=%d C_gap=%.6e"
         % row
         for row in summary
     )
