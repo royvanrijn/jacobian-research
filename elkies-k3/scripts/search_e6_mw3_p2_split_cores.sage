@@ -190,7 +190,24 @@ def search_p2(A, B, lam, mu, sl, sm):
         if A(1) == -3*node**2 and B(1) == 2*node**3
     )
     fiber_product = prod(t-point for point in points)
+    function_field = FractionField(T)
+    curve = EllipticCurve(function_field, [function_field(A), function_field(B)])
+
+    def meets_node(section, point, node):
+        if section.is_zero():
+            return False
+        x_coordinate = function_field(section[0])
+        y_coordinate = function_field(section[1])
+        if (
+            T(x_coordinate.denominator())(point) == 0
+            or T(y_coordinate.denominator())(point) == 0
+        ):
+            return False
+        return x_coordinate(point) == node and y_coordinate(point) == 0
+
     tested = 0
+    square_hits = 0
+    component_rejections = 0
     hits = []
     for pole in K:
         if pole in points:
@@ -206,8 +223,22 @@ def search_p2(A, B, lam, mu, sl, sm):
             for Y2 in square_roots_by_coefficients(H):
                 if any(Y2(point) != 0 for point in points):
                     continue
+                square_hits += 1
+                section = curve(
+                    function_field(X2)/function_field(z)**2,
+                    function_field(Y2)/function_field(z)**3,
+                )
+                twice = 2*section
+                # At I4(0), target class 1/3 doubles to the nonidentity class
+                # 2.  At I4(1), target class 2 doubles to the identity class.
+                if not meets_node(twice, K(0), nodes[0]):
+                    component_rejections += 1
+                    continue
+                if meets_node(twice, K(1), nodes[1]):
+                    component_rejections += 1
+                    continue
                 hits.append((pole, q0, X2, Y2))
-    return tested, hits
+    return tested, square_hits, component_rejections, hits
 
 
 total_surfaces = 0
@@ -248,11 +279,15 @@ for core_index, core in enumerate(cores, start=1):
             for sl in node_map.get(lam, []):
                 for sm in node_map.get(mu, []):
                     total_surfaces += 1
-                    tested, hits = search_p2(A, B, lam, mu, sl, sm)
+                    tested, square_hits, component_rejections, hits = search_p2(
+                        A, B, lam, mu, sl, sm
+                    )
                     total_hits += len(hits)
                     print(
                         f"E6P2SURFACE|core={core_index}|lambda={int(lam)}|mu={int(mu)}"
-                        f"|sl={int(sl)}|sm={int(sm)}|tested={tested}|hits={len(hits)}",
+                        f"|sl={int(sl)}|sm={int(sm)}|tested={tested}"
+                        f"|square_hits={square_hits}"
+                        f"|component_rejections={component_rejections}|hits={len(hits)}",
                         flush=True,
                     )
                     for pole, q0, X2, Y2 in hits:

@@ -2,7 +2,7 @@ from sage.all import *
 from pathlib import Path
 import argparse, random
 
-ap=argparse.ArgumentParser(description="Triangularly eliminate s1, mu, lambda from E8+A2^3 section system before msolve.")
+ap=argparse.ArgumentParser(description="Triangularly eliminate the historical parity-obstructed all-IV section system.")
 ap.add_argument("--p",type=int,default=101)
 ap.add_argument("--seed",type=int,default=1)
 ap.add_argument("--slice",action="store_true")

@@ -79,3 +79,4 @@ tmp/
 # Large generated Elkies-K3 numerical artifacts
 elkies-k3/results/**/*.npy
 elkies-k3/results/**/*.sqlite
+/artifacts/generated-results

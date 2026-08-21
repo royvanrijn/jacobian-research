@@ -2,12 +2,16 @@
 
 from pathlib import Path
 from itertools import combinations, product
+from fractions import Fraction
 from math import gcd
 import argparse
 import heapq
+import json
 import numpy as np
 
 from sage.all import ZZ, matrix
+
+from search_extra_points import gp_rational, gp_vector, run_gp
 
 
 PROTOCOL = "R31SHORT"
@@ -46,8 +50,8 @@ def parse_height_gram(path):
 
     H = np.asarray(rows, dtype=float)
 
-    if H.shape != (30, 30):
-        raise ValueError(f"expected 30x30 Gram, got {H.shape}")
+    if H.ndim != 2 or H.shape[0] != H.shape[1]:
+        raise ValueError(f"expected a square Gram matrix, got {H.shape}")
 
     H = (H + H.T) / 2.0
 
@@ -67,6 +71,63 @@ def parse_height_gram(path):
     )
 
     return H
+
+
+def generate_height_gram(curve_id, path, curve_json=None):
+    if curve_json is not None:
+        payload = json.loads(curve_json.read_text(encoding="utf-8"))
+        if int(payload["id"]) != curve_id:
+            raise ValueError("--curve-id does not match --curve-json")
+        coefficients = tuple(Fraction(value) for value in payload["ainvs"])
+        public_points = tuple(
+            tuple(Fraction(value) for value in point)
+            for point in payload["points"]
+        )
+    elif curve_id == 273:
+        import icarm_curve273 as data
+        coefficients = data.GENERAL_WEIERSTRASS_COEFFICIENTS
+        public_points = data.POINTS
+    elif curve_id == 245:
+        import icarm_curve245 as data
+        coefficients = data.GENERAL_WEIERSTRASS_COEFFICIENTS
+        public_points = data.POINTS
+    elif curve_id == 90:
+        import icarm_curve90 as data
+        coefficients = data.GENERAL_WEIERSTRASS_COEFFICIENTS
+        public_points = data.SEARCH_POINTS
+    else:
+        raise ValueError("--curve-json is required for this ICARM curve id")
+
+    curve = ",".join(
+        gp_rational(value) for value in coefficients
+    )
+    points = ",".join(gp_vector(point) for point in public_points)
+    program = "\n".join(
+        (
+            "default(realprecision,120);",
+            f"E=ellinit([{curve}]);",
+            f"P=[{points}];",
+            "H=ellheightmatrix(E,P);",
+            'print("HEIGHT_BEGIN");',
+            "for(i=1,matsize(H)[1],print(Vec(H[i,])));",
+            'print("HEIGHT_END");',
+            "quit",
+        )
+    ) + "\n"
+    output, _wall = run_gp(program, timeout=120.0, stack_bytes=1_000_000_000)
+    lines = [line.strip() for line in output.splitlines() if line.strip()]
+    start = lines.index("HEIGHT_BEGIN") + 1
+    end = lines.index("HEIGHT_END")
+    rows = lines[start:end]
+    if len(rows) != len(public_points):
+        raise AssertionError("PARI returned the wrong number of height rows")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(rows) + "\n", encoding="utf-8")
+    print(
+        f"{PROTOCOL}|stage=height_gram|curve_id={curve_id}"
+        f"|rows={len(rows)}|output={path}",
+        flush=True,
+    )
 
 
 def canonical(coeffs):
@@ -101,8 +162,11 @@ def qheight(H, c):
 def main():
     ap = argparse.ArgumentParser()
 
-    ap.add_argument("--gram", type=Path, default=DEFAULT_GRAM)
-    ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
+    ap.add_argument("--curve-id", type=int, default=273)
+    ap.add_argument("--curve-json", type=Path)
+    ap.add_argument("--gram", type=Path)
+    ap.add_argument("--out", type=Path)
+    ap.add_argument("--generate-gram", action="store_true")
 
     ap.add_argument(
         "--count",
@@ -144,6 +208,27 @@ def main():
 
     args = ap.parse_args()
 
+    if args.gram is None:
+        if args.curve_id == 273:
+            args.gram = DEFAULT_GRAM
+        elif args.curve_id == 245:
+            args.gram = ROOT / "artifacts/local/elliptic-curves/curve245-rank20/height-gram.txt"
+        else:
+            raise SystemExit("--gram is required for this ICARM curve id")
+    if args.out is None:
+        if args.curve_id == 273:
+            args.out = DEFAULT_OUT
+        elif args.curve_id == 245:
+            args.out = (
+                ROOT
+                / "artifacts/local/elliptic-curves/curve245-rank20/"
+                "short-coefficient-vectors.tsv"
+            )
+        else:
+            raise SystemExit("--out is required for this ICARM curve id")
+    if args.generate_gram:
+        generate_height_gram(args.curve_id, args.gram, args.curve_json)
+
     H = parse_height_gram(args.gram)
     n = H.shape[0]
 
@@ -156,7 +241,7 @@ def main():
     #
     # Round a large multiple of L to ZZ and use Sage LLL.
     # The returned transformation rows are coefficient vectors
-    # in the ORIGINAL 30-point basis.
+    # in the original point basis.
     # --------------------------------------------------------
 
     L = np.linalg.cholesky(H)

@@ -2,6 +2,39 @@
 
 This note records the current frontier of the alternate E6 MW-rank-3 fibration attack.
 
+## Neighbor-chain correction
+
+The E6 frame's actual lattice provenance is now exact.  It was reached by
+
+```text
+rank17 --q=90--> MW7 --q=4--> MW4 --q=4--> E6/MW3,
+```
+
+not by a direct unrecorded change of basis.  All three primitive isotropic
+vectors and the composite integral isometry are checked by
+[`scripts/verify_e6_neighbor_chain.sage`](scripts/verify_e6_neighbor_chain.sage);
+see [`E6_NEIGHBOR_CHAIN.md`](E6_NEIGHBOR_CHAIN.md).
+
+This changes the interpretation of the finite-field work below.  The searched
+split chart was inferred from the Kodaira symbols, not produced by executing
+the recovered neighbor chain on the original K3.  Its exhaustive emptiness is
+a valid bounded result about that chart, but it is not a rejection of the E6
+neighbor.  The next step is a geometric backtrack through the pinned chain,
+not another larger scan.
+
+## Exact-open correction
+
+The first reconstruction described below satisfies the displayed closed
+equations, but an exact audit gives `ord_1(Delta)=5`, not `4`.  It is therefore
+an `I5` boundary point, not a point of the intended exact-fiber open stratum.
+The subsequent seven-core audit found two genuine target-fiber P1 surfaces,
+but no canonical P2: the only numerator-square P2 has `I4` labels `(2,2)`
+rather than the target `(1,2)`.  A later compiled all-chart audit over
+`GF(5),GF(7),GF(11),GF(13),GF(17)` exposed a second missing promotion gate:
+all 69 component-valid P2 sections have the wrong P1/P2 height pairing. See
+[`E6_P2_REDUCTION_2026-08-20.md`](E6_P2_REDUCTION_2026-08-20.md) for the
+corrected promotion gates and complete bounded results.
+
 ## Lattice/fibration target
 
 The selected MW3 neighbor has
@@ -22,17 +55,43 @@ The corresponding preferred Kodaira configuration is
 
     IV* + I4 + I4 + I2 + I2 + 4 I1.
 
-We normalize IV* at infinity, I4 fibers at 0 and 1, and the two I2 fibers at lambda and mu. The IV* condition gives deg A <= 5 and deg B <= 8 in short Weierstrass form.
+The searched chart normalized IV* at infinity, I4 fibers at 0 and 1, and the
+two I2 fibers at lambda and mu.  This is a convenient split ansatz, not yet a
+transported normalization of the target K3.  The IV* condition gives
+`deg A <= 5` and `deg B <= 8` in short Weierstrass form.
 
 ## Canonical P1 component data
 
-From the component-label enumeration one canonical triple is
+Exact discriminant-glue recovery from the 17-dimensional frame selects the
+orbit represented by
 
     P1 = (1,0,1,0,0), P1.O = 0
     P2 = (1,1,2,1,1), P2.O = 1
     P3 = (2,3,0,0,0), P3.O = 0
 
 with all pairwise intersections equal to 2. P1 and P3 are polynomial sections in this normalization.
+
+This is certified by
+[`scripts/recover_e6_mw3_component_glue.sage`](scripts/recover_e6_mw3_component_glue.sage).
+The other 16-element orbit from the height-only component enumeration is
+excluded by the frame glue and is not related by a Mordell-Weil basis change.
+
+## Missing pair-intersection gate
+
+Fiber components and section self-heights do not determine the off-diagonal
+height entries.  For the certified profiles, the required equality
+
+    <P1,P2> = -5/6
+
+is equivalent to
+
+    (P1+P2).O = 1.
+
+The exact checker now computes the full Shioda height matrix before any P3
+search.  Exhaustion of the rational chart over the five small fields tested
+406,655,040 cores.  It found 69 P2 sections passing the old component gates
+and zero passing this height gate.  The field-by-field counts are recorded in
+[`E6_MW3_ATTACK.md`](E6_MW3_ATTACK.md).
 
 ## High-coefficient triangular chain
 
@@ -111,9 +170,10 @@ coming from the already normalized fibers at 0 and 1. Additional repeated factor
 
 A fast finite-field line scan over GF(31), after saturating all powers of `z`, `z-1`, and rejecting repeated single-root factors, finds genuine squarefree common factors of degree at least two. This avoids symbolic subresultants and is several orders of magnitude faster than Groebner solving.
 
-## First verified GF(31) point
+## First closed-equation GF(31) point
 
-The first fully verified distinct-root solution is obtained on the seed-1 coordinate slice
+The first fully reconstructed distinct-root solution of the closed equations
+is obtained on the seed-1 coordinate slice
 
     r0 = 4
     s0 = 18
@@ -153,7 +213,10 @@ The same core point is rediscovered independently by several random line seeds, 
 
 Additional genuine squarefree degree-2 and degree-3 common factors were found over GF(31), including both split and irreducible quadratic cases. Thus the desired distinct-I2 locus is nonempty modulo 31 and appears repeatedly in the reduced search.
 
-This is the first concrete finite-field point on the intended E6/P1 fiber configuration found by the reconstruction attack.
+It is a useful algebraic reconstruction and smooth point of the closed
+equation scheme, but the omitted exact-multiplicity open test places it on the
+`I5` boundary.  It is not a promoted point of the intended E6/P1 fiber
+configuration.
 
 ## Current search/reconstruction strategy
 
@@ -165,12 +228,19 @@ This is the first concrete finite-field point on the intended E6/P1 fiber config
 6. Search for squarefree common factors of degree >=2 rather than running large Groebner bases.
 7. Reconstruct `sl,sm` and verify all eight reduced fiber equations.
 8. Reconstruct the four earlier triangular eliminations `a3,y2,b5,b4` and the complete A(t), B(t), X(t), Y(t).
-9. Verify the full Weierstrass section identity and Kodaira multiplicities.
-10. Use verified modular points as seeds for lifting / multi-prime rational reconstruction, then impose P3 to cut toward the target one-dimensional rank-3 family.
+9. Verify the full Weierstrass section identity, **exact** Kodaira
+   multiplicities, squarefree residual discriminant, and deeper component
+   labels.
+10. Compute the full P1/P2 Shioda pairing and require `(P1+P2).O=1`.
+11. Use only promoted modular points as seeds for lifting / multi-prime
+    rational reconstruction, then impose P3 to cut toward the target
+    one-dimensional rank-3 family.
 
 Recommended reconstruction command after generating the base metadata:
 
     sage elkies-k3/scripts/reconstruct_e6_gf31_point.sage \
       --meta artifacts/local/elkies-k3/e6-base.meta.txt
 
-The immediate next milestone is a full end-to-end reconstruction of the verified GF(31) point in the original E6 section-first model.
+The immediate milestone is a corrected P1/P2 equation system with the missing
+intersection point parameterized from the start.  Enlarging the old
+finite-field scan is not justified by the exhaustive small-field results.

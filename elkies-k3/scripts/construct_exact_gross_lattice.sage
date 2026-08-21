@@ -90,12 +90,12 @@ assert M2.is_maximal()
 
 O = M.intersection(M2)
 
-idx = O.free_module().index_in(M.free_module())
-print(f"EXACTGROSS|stage=order|total_level={TOTAL}|index_in_maximal={idx}|expected_index={N}",flush=True)
+order_index = O.free_module().index_in(M.free_module())
+print(f"EXACTGROSS|stage=order|total_level={TOTAL}|index_in_maximal={order_index}|expected_index={N}",flush=True)
 print(f"EXACTGROSS|order={O}",flush=True)
 print(f"EXACTGROSS|maximal={M}",flush=True)
-if idx != N:
-    raise RuntimeError(f"Eichler index mismatch {idx} != {N}")
+if order_index != N:
+    raise RuntimeError(f"Eichler index mismatch {order_index} != {N}")
 
 ob=list(O.basis())
 print("EXACTGROSS|order_basis="+" ; ".join(map(str,ob)),flush=True)
@@ -177,26 +177,47 @@ def qval(v):
     vv=vector(ZZ,v)
     return QQ(vv*G*vv)
 
-# Enumerate primitive representations; preserve all up to cap per target plus total counts.
+# Enumerate primitive representations; preserve all up to cap per target plus
+# total counts.  Solve the norm equation as a quadratic in z.  The earlier
+# cubic box loop was needlessly slow (and made the default bound look like a
+# long arithmetic computation even though only a square-discriminant test is
+# required for each (x,y)).
 hits={n:[] for n in targets}
 counts={n:0 for n in targets}
 BND=a.bound
+if G[2,2] == 0:
+    raise RuntimeError("choose a Gross basis with nonzero z^2 coefficient")
 for x in range(-BND,BND+1):
   for y in range(-BND,BND+1):
-    for z in range(-BND,BND+1):
-      if x==y==z==0: continue
-      if gcd3((x,y,z))!=1: continue
-      q=qval((x,y,z))
-      if q in hits:
-          counts[q]+=1
-          if len(hits[q])<100:
+    for target in targets:
+      Aq=QQ(G[2,2])
+      Bq=2*(QQ(G[0,2])*x + QQ(G[1,2])*y)
+      Cq=(QQ(G[0,0])*x*x + 2*QQ(G[0,1])*x*y
+          + QQ(G[1,1])*y*y - target)
+      scale=lcm([Aq.denominator(),Bq.denominator(),Cq.denominator()])
+      Ai,Bi,Ci=(ZZ(scale*Aq),ZZ(scale*Bq),ZZ(scale*Cq))
+      discriminant=Bi*Bi-4*Ai*Ci
+      if discriminant < 0 or not discriminant.is_square():
+          continue
+      root=discriminant.sqrt()
+      z_candidates=set()
+      for numerator in (-Bi+root,-Bi-root):
+          denominator=2*Ai
+          if numerator % denominator == 0:
+              z_candidates.add(ZZ(numerator//denominator))
+      for z in z_candidates:
+          if abs(z)>BND or x==y==z==0: continue
+          if gcd3((x,y,z))!=1: continue
+          if qval((x,y,z))!=target: continue
+          counts[target]+=1
+          if len(hits[target])<100:
               beta=x*gb[0]+y*gb[1]+z*gb[2]
-              hits[q].append(((x,y,z),beta))
+              hits[target].append(((x,y,z),beta))
 
 for n in targets:
     print(f"EXACTGROSS|target={n}|primitive_count_box={counts[n]}|shown={len(hits[n])}",flush=True)
-    for idx,(v,beta) in enumerate(hits[n][:20]):
-        print(f"GROSSHIT|target={n}|id={idx}|v={v}|norm={nr(beta)}|beta={beta}",flush=True)
+    for hit_index,(v,beta) in enumerate(hits[n][:20]):
+        print(f"GROSSHIT|target={n}|id={hit_index}|v={v}|norm={nr(beta)}|beta={beta}",flush=True)
 
 # Reconstruct O from Gross lattice as a sanity check:
 # O = 1/2 { x in Z + O^T : Nr(x) in 4Z }.
@@ -212,7 +233,7 @@ lines=[
     f"D={D}",
     f"N={N}",
     f"total_level={TOTAL}",
-    f"index={idx}",
+    f"index={order_index}",
     f"ramified={ram}",
     "order_basis="+repr([str(x) for x in ob]),
     "gross_basis="+repr([str(x) for x in gb]),

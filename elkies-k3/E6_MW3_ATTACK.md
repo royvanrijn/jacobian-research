@@ -20,15 +20,58 @@ The IV* fiber is placed at infinity. In short Weierstrass form this directly for
 
 which is substantially simpler than the A10/I11 branch.
 
+## Exact Neron--Severi transport recovered
+
+The E6 frame is not merely another determinant-948 lattice.  The exact check
+
+    sage -python elkies-k3/scripts/verify_e6_frame_ns_genus.sage
+
+shows that
+
+    U + (-M17)  and  U + (-E6frame)
+
+have the same signature `(1,18)`, the same local genus, and cyclic
+discriminant group `Z/948`.  Their rank is 19 while every primary
+discriminant length is 1.  [Nikulin's Theorem
+1.14.2](https://www.mathnet.ru/eng/im1677) therefore makes this indefinite
+genus a single integral isometry class.  Thus the E6 frame belongs to the same
+abstract Neron--Severi lattice as the recovered rank-17 fibration.
+
+The previously missing integral transport has now also been recovered.  The
+actual discovery path is
+
+    rank17 --q=90--> MW7 --q=4--> MW4 --q=4--> E6/MW3.
+
+[`scripts/verify_e6_neighbor_chain.sage`](scripts/verify_e6_neighbor_chain.sage)
+reconstructs all three raw child frames from their pinned isotropic vectors and
+checks the composite determinant-one isometry stored in
+[`data/fibrations/e6_ns_transport_from_rank17.txt`](data/fibrations/e6_ns_transport_from_rank17.txt).
+See [`E6_NEIGHBOR_CHAIN.md`](E6_NEIGHBOR_CHAIN.md) for the exact witnesses and
+claim boundary.
+
+This is an explicit Neron--Severi lattice transport, but not yet a
+Weierstrass transport.  In particular it does not determine the rational
+elliptic parameter, fiber fields of definition, or section formulas after the
+three geometric neighbor operations.  The current reconstruction failure
+therefore does not invalidate the E6 neighbor.
+
 ## Component/section data
 
-The canonical component-label triple used for the first section attack is:
+The exact frame glue, not just the Shioda height equations, selects the
+component-label orbit represented by:
 
     P1 = (1,0,1,0,0), P1.O = 0
     P2 = (1,1,2,1,1), P2.O = 1
     P3 = (2,3,0,0,0), P3.O = 0
 
 with all pairwise section intersections equal to 2. Thus P1 and P3 can be represented polynomially while P2 is the one-denominator section.
+
+[`scripts/recover_e6_mw3_component_glue.sage`](scripts/recover_e6_mw3_component_glue.sage)
+recovers this map directly from the 17-dimensional frame.  The 32 triples
+returned by the earlier height-only enumeration split into two 16-element
+fiber-symmetry orbits.  Only the orbit above occurs in the frame glue.  The
+reduced height lattice has automorphism group `{+I,-I}`, so the second orbit
+is not another basis for this neighbor.
 
 ## P1 triangular reduction
 
@@ -71,9 +114,10 @@ Several useful negative experiments clarified the correct representation:
 - Coordinate slices are dramatically cheaper. Fixing r0,s0,x1 is especially effective, reducing the final 8x8 probe to about 570 monomials with maximum degree 11, although direct F4 solving still grows rapidly around degrees 14-16.
 - The best current method is not Groebner solving but a fast finite-field GCD scan for the symmetric lambda/mu fiber conditions after saturating the normalized-fiber and collision factors.
 
-## Verified GF(31) point
+## First GF(31) reconstruction and correction
 
-The first concrete point on the intended E6/P1 locus has now been verified exactly over GF(31).
+The first concrete point of the closed E6/P1 equation scheme was reconstructed
+exactly over GF(31).
 
 Coordinate slice:
 
@@ -103,7 +147,52 @@ All eight reduced fiber equations evaluate to zero. Swapping the two I2 fibers a
 
     lambda = 18, mu = 24, sl = 4, sm = 23.
 
-This point is rediscovered independently by multiple scan seeds. Other split and irreducible squarefree quadratic common factors also occur, so the distinct-I2 locus is demonstrably nonempty mod 31.
+This point is rediscovered independently by multiple scan seeds.  However, an
+exact discriminant audit gives `ord_1(Delta)=5`: it is an `I5` enhancement,
+not a point of the required exact `I4` open stratum.  This distinction was
+missed by the closed equations and is now an explicit promotion gate.
+
+The corrected seven-core audit leaves two exact target-fiber P1 surfaces.  One
+has no P2 numerator square.  The other has one signed pair of squares, but
+doubling the section shows `I4` labels `(2,2)` instead of the target `(1,2)`.
+Thus the audited slice contains no canonical P1+P2 seed.  See
+`E6_P2_REDUCTION_2026-08-20.md`.
+
+## Full-height correction and finite-field backtrack
+
+The previous search called a section a P1+P2 seed after checking its fiber
+components.  That is insufficient: the target Gram also requires
+
+    <P1,P2> = -5/6.
+
+For the selected component profiles, Shioda's formula makes this equivalent
+to the exact intersection condition
+
+    (P1+P2).O = 1.
+
+The compiled scanner and exact checker now apply this gate before attempting
+P3.  Complete scans of the declared rational chart give:
+
+| field | core tests | exact-fiber records | valid P1 | component-valid P2 | target-height P1+P2 |
+|---:|---:|---:|---:|---:|---:|
+| `GF(5)` | 40,000 | 0 | 0 | 0 | 0 |
+| `GF(7)` | 518,616 | 63 | 3 | 3 | 0 |
+| `GF(11)` | 14,641,000 | 684 | 36 | 7 | 0 |
+| `GF(13)` | 49,353,408 | 1,677 | 54 | 12 | 0 |
+| `GF(17)` | 342,102,016 | 5,659 | 319 | 47 | 0 |
+
+Thus 406,655,040 exact core tests produced 69 component-valid P2 sections
+and no target two-generator height lattice.  Of those 69, 66 have pairing
+`-11/6`, two have `1/6`, and one has `7/6`; none has `-5/6`.
+
+The characteristic-11 surface that also has an independent polynomial P3 is
+an exact diagnostic near miss, not a target seed.  Its height Gram is
+
+    (1/12) * [[23,-22,16],[-22,23,-17],[16,-17,23]],
+
+with determinant `13/48`, versus target determinant `79/16`.  This is checked
+by
+[`scripts/verify_e6_mw3_wrong_rank3_gf11.sage`](scripts/verify_e6_mw3_wrong_rank3_gf11.sage).
 
 ## Current reproducible pipeline
 
@@ -130,6 +219,13 @@ For the now-known modular point, reconstruct the full eliminated chain and verif
     sage elkies-k3/scripts/reconstruct_e6_gf31_point.sage \
       --meta artifacts/local/elkies-k3/e6-base.meta.txt
 
-The immediate goal is now end-to-end verification of the complete A(t),B(t),P1 model at this GF(31) point, followed by lifting/multi-prime reconstruction and then imposing P3.
+The next step is no longer to scan more primes in the old system.  The exact
+lattice path is now pinned, and it shows what must be backtracked: execute the
+three neighbor operations geometrically from a genuine explicit model, track
+the fiber/component fields and sections, and derive the final Weierstrass
+chart rather than assuming the split normalization.  Then rebuild the P1/P2
+construction with `(P1+P2).O=1` imposed explicitly.  If that transported chart
+is empty, reject this E6 neighbor as an explicit route and apply the same gates
+to the A10 or A6/A4 neighbor.
 
 See also `E6_MW3_PROGRESS_2026-08-20.md`.

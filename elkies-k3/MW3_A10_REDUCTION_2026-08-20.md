@@ -167,33 +167,131 @@ Verify the complete seed with
 sage elkies-k3/scripts/verify_mw3_a10_p1p2_gf31.sage
 ```
 
-## Canonical P3 boundary
+## Complete canonical P3 audit on both P1+P2 surfaces
 
-The target third profile is `(10,2,0,1)` with `P3.O=1`.  On the fixed
-two-section surface, the square-root recursion was exhausted exactly:
+The P2 scan has two exact P1+P2 surfaces (the two signs of a given P2 are one
+X-solution on each).  The target third profile is `(10,2,0,1)` with
+`P3.O=1`.  A two-sided meet-in-the-middle recursion exhausts its coefficient
+system in about ten seconds per surface, rather than scanning a large symbolic
+system.
 
 ```text
-840 admissible (pole, top-X, top-Y) slices,
-31^3 lower-X choices per slice,
-0 P3 hits.
+surface 2: 96,868,800 joins; 0 raw hits; 0 genuine hits
+surface 4: 96,868,800 joins; 58 raw hits; 58 open rejections; 0 genuine hits
 ```
 
-Run
+Every surface-4 raw hit has
+
+```text
+(t-r)^2 | X_raw,
+(t-r)^3 | Y_raw,
+```
+
+so the declared pole cancels.  All 58 reduce, up to sign, to the same genuine
+polynomial section
+
+```text
+R:
+X = 3 + 8*t + 3*t^2 + 9*t^3 + 29*t^4,
+Y = 2*t + 26*t^2 + 17*t^3 + t^4 + 16*t^5.
+```
+
+The stacked finite-quotient certificate in
+[`scripts/verify_mw3_a10_p1p2_gf31.sage`](scripts/verify_mw3_a10_p1p2_gf31.sage)
+proves that `P1,P2,R` are Z-independent.  This is an exact rank-at-least-three
+statement for the modular surface, but `R.O=0`; it is not the requested
+canonical `P3.O=1` and does not realize the target height lattice.
+
+Reproduce the exhaustive gate with
 
 ```bash
-sage elkies-k3/scripts/search_mw3_a10_p3_sliced.sage
+sage -python elkies-k3/scripts/build_mw3_a10_p3_fixed.sage \
+  --surface 2 --out artifacts/local/elkies-k3/mw3-a10-p1/p3-surface2.ms
+sage -python elkies-k3/scripts/search_mw3_a10_p3_meet.py \
+  --input artifacts/local/elkies-k3/mw3-a10-p1/p3-surface2.ms \
+  --lambda 27 --nodes 3,22,4 --sinf 17
 ```
 
-to reproduce the empty fixed-surface search.  This is a bounded finite-field
-result only.  It does not show that the P1+P2 locus lacks P3 elsewhere.
+and analogously with `--surface 4`, `--lambda 23`, `--nodes 3,21,10`,
+and `--sinf 29`.  The search kernel enforces pole noncancellation and the
+identity-component open condition at `t=1`.
+
+This is a bounded finite-field result only.  It closes the two current fixed
+surfaces, not the full P1+P2 locus.
+
+## Exact target triple over `GF(23)`
+
+The prime-31 search was extended with persistent P1 reconstruction, an exact
+oriented P2 profile gate, exhaustive P3 square-root slices, and a direct
+function-field Shioda-pairing verifier.  Across the completed ranges through
+seed 13315 it found 147 canonical P2 records and 59 P3 candidates, but no
+target Gram matrix.  This is a bounded negative result over `GF(31)`, not an
+obstruction in characteristic zero.
+
+Changing the auxiliary prime to 23 immediately found the missing branch.  In
+the first 1000 seeded slices there were 636 P1 points, 12 canonical P2 target
+records, and seven P3 candidates.  Seed 17, hit 1 gives
+
+```text
+A = 19 + 15*t + 6*t^3 + 21*t^4 + t^5 + 17*t^6 + 2*t^7 + 10*t^8,
+B = 8 + t + 12*t^2 + 3*t^3 + 4*t^4 + 22*t^5 + 20*t^6
+      + 18*t^7 + 13*t^8 + 10*t^9 + 14*t^10 + 5*t^11 + 9*t^12,
+
+P1:
+X1 = 3 + 15*t + 7*t^2 + 17*t^3 + 9*t^4,
+Y1 = 13*t + 3*t^2 + 13*t^3 + 5*t^4,
+
+P2, z2=t-11:
+X2 = 18 + t + 6*t^2 + 3*t^3 + 18*t^4 + 3*t^5 + 9*t^6,
+Y2 = 7*t + 22*t^2 + 10*t^3 + 7*t^4,
+
+P3, z3=t-8:
+X3 = 8 + 11*t + 17*t^2 + 14*t^3 + t^4 + 9*t^5 + 9*t^6,
+Y3 = 5*t + 18*t^2 + 8*t^3 + 18*t^4 + 11*t^5
+      + 5*t^6 + 21*t^7 + 4*t^8.
+```
+
+Here `Pi=(Xi/zi^2,Yi/zi^3)` for `i=2,3`.  Exact group-law component
+orientation and Shioda heights give
+
+```text
+profiles = (2,1,0,1), (6,2,1,1), (10,2,0,1),
+P1.O,P2.O,P3.O = 0,1,1,
+
+66 * height_gram =
+[ 79   17   -1 ]
+[ 17  106   19 ]
+[ -1   19  259 ],
+
+det(height_gram) = 79/11.
+```
+
+Thus the intended reduced Mordell--Weil lattice is now realized exactly on a
+finite-field K3.  This does not yet construct the family or a rank-17 curve
+over `Q`.
+
+The combined P1/P2/P3 deformation system has 32 coordinates and 44 retained
+equations.  At this point its Jacobian has rank 31, so the tangent space is
+one-dimensional and smooth.  The tangent has nonzero `rho` component; fixing
+`rho=16` gives a transverse full-rank 31-variable system.  Overdetermined
+Hensel lifting succeeds through 20 base-23 digits, but rational reconstruction
+at that fixed value does not yield a rational point.  The formal lift is a
+constructive local certificate, not yet a global `Q`-point.
+
+Reproduce the local deformation and Hensel audit with
+
+```bash
+sage elkies-k3/scripts/analyze_mw3_a10_target_lift_gf23.sage \
+  --hensel-digits=20
+```
 
 ## Next frontier
 
-1. Continue complete P1 coordinate slices over `GF(31)`.
-2. Reconstruct only exact semistable survivors and apply the four-variable P2
-   high-jet/residual-square test.
-3. Run the fast P3 square-root recursion only on P1+P2 hits.
-4. Once a P1+P2+P3 point is found, verify the full height lattice and the
-   reduced Jacobian, then lift the smooth one-dimensional chart at several
-   good primes toward characteristic zero.
-
+1. Exhaust the 10,626 normalized `(rho,r1,lambda)` slices over `GF(23)` and
+   recover all canonical target triples on this one-dimensional locus.
+2. Fit low-degree plane projections of the resulting finite-field curve and
+   determine its genus/rational parametrization before doing more p-adic work.
+3. Lift a characteristic-zero curve model (not merely a single formal point),
+   verify the generic sections, and identify rational specializations.
+4. Only then run specialization/rank-jump and conductor searches toward the
+   rank-21 low-conductor or rank-31 targets.

@@ -5,10 +5,14 @@ import argparse
 ap=argparse.ArgumentParser()
 ap.add_argument("--frame",required=True)
 ap.add_argument("--name",required=True)
+ap.add_argument("--out",type=Path)
 args=ap.parse_args()
 
-F=matrix(ZZ,[[ZZ(x) for x in ln.split()] for ln in Path(args.frame).read_text().splitlines() if ln.strip()])
-assert F.nrows()==17 and F.det()==948 and F.is_positive_definite()
+F=matrix(ZZ,[[ZZ(x) for x in ln.split()]
+             for ln in Path(args.frame).read_text().splitlines()
+             if ln.strip() and not ln.lstrip().startswith("#")])
+assert F.is_square() and F.is_positive_definite()
+frame_rank=F.nrows()
 
 def qform(H):
     co=[]
@@ -25,6 +29,34 @@ GR=RB*F*RB.transpose()
 rr=RB.rank()
 print(f"BRANCH|name={args.name}|stage=roots|rank={rr}|roots={2*len(half)}|rootdet={abs(GR.det())}",flush=True)
 
+# Orthogonal connected components of the full root system.  Two roots from
+# different ADE factors pair to zero, while the nonorthogonality graph of an
+# irreducible simply-laced root system is connected.
+parent=list(range(len(signed)))
+def find(i):
+    while parent[i]!=i:
+        parent[i]=parent[parent[i]]
+        i=parent[i]
+    return i
+def union(i,j):
+    i,j=find(i),find(j)
+    if i!=j:
+        parent[j]=i
+for i in range(len(signed)):
+    for j in range(i):
+        if signed[i]*F*signed[j] != 0:
+            union(i,j)
+components={}
+for i,r in enumerate(signed):
+    components.setdefault(find(i),[]).append(r)
+root_components=[]
+for comp in components.values():
+    CB=matrix(ZZ,[list(r) for r in comp]).row_module().basis_matrix()
+    CG=CB*F*CB.transpose()
+    root_components.append((CB.rank(),len(comp),abs(CG.det())))
+root_components.sort()
+print(f"BRANCH|name={args.name}|stage=root_components|invariants={root_components}",flush=True)
+
 # exact essential intersection
 C=(RB*F).right_kernel_matrix()
 GC=C*F*C.transpose()
@@ -33,7 +65,7 @@ print(f"BRANCH|name={args.name}|stage=intersection|rank={C.rank()}|det={GC.det()
 A=block_matrix([[RB],[C]],subdivide=False)
 idx=abs(A.det())
 D,U,V=A.smith_form()
-smith=[abs(ZZ(D[i,i])) for i in range(17)]
+smith=[abs(ZZ(D[i,i])) for i in range(frame_rank)]
 print(f"BRANCH|name={args.name}|stage=glue|index={idx}|smith={smith}",flush=True)
 
 Ainv=A.inverse()
@@ -43,12 +75,12 @@ def key(z):
     c=vector(QQ,z)*Ainv
     return tuple(mod1(x) for x in c)
 
-zero=vector(ZZ,[0]*17)
+zero=vector(ZZ,[0]*frame_rank)
 cosets={key(zero):zero}; queue=[zero]; head=0
 while head<len(queue) and len(cosets)<idx:
     z=queue[head]; head+=1
-    for i in range(17):
-        e=vector(ZZ,[0]*17); e[i]=1
+    for i in range(frame_rank):
+        e=vector(ZZ,[0]*frame_rank); e[i]=1
         for s in (1,-1):
             y=z+s*e; k=key(y)
             if k not in cosets:
@@ -77,6 +109,7 @@ print(f"BRANCH|name={args.name}|stage=MW|rank={H.rank()}|height_gram={H}|det={H.
 hden=lcm([QQ(x).denominator() for x in H.list()])
 ZH=(hden*H).change_ring(ZZ)
 print(f"BRANCH|name={args.name}|stage=scaled|den={hden}|gram={ZH}",flush=True)
+Red=None
 try:
     T=matrix(ZZ,pari(ZH).qflllgram())
     cand=[]
@@ -91,7 +124,16 @@ try:
 except Exception as e:
     print(f"BRANCH|name={args.name}|reduce_warning={e}",flush=True)
 
-out=Path(f"artifacts/local/elkies-k3/{args.name}-analysis.txt")
+out=args.out or Path(f"artifacts/local/elkies-k3/{args.name}-analysis.txt")
 out.parent.mkdir(parents=True,exist_ok=True)
-out.write_text(f"root_rank={rr}\nroot_count={2*len(half)}\nroot_det={abs(GR.det())}\nMW={H}\ndet={H.det()}\n")
+out.write_text(
+    f"frame={args.frame}\nroot_rank={rr}\nroot_count={2*len(half)}\n"
+    f"root_det={abs(GR.det())}\nroot_components={root_components}\n"
+    f"root_basis=\n{RB}\nroot_gram=\n{GR}\n"
+    f"orthogonal_intersection_basis=\n{C}\northogonal_intersection_gram=\n{GC}\n"
+    f"root_plus_intersection_index={idx}\nsmith={smith}\n"
+    f"MW_basis_in_intersection_coordinates=\n{B}\nheight_gram=\n{H}\n"
+    f"height_det={H.det()}\nscaled_denominator={hden}\nscaled_gram=\n{ZH}\n"
+    f"reduced_scaled_gram=\n{Red}\n"
+)
 print(f"BRANCH|name={args.name}|stage=done|out={out}",flush=True)

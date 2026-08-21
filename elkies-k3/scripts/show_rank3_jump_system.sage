@@ -1,6 +1,8 @@
 from sage.all import *
 from pathlib import Path
 
+print("R3SYS|status=HISTORICAL_OBSTRUCTED_ALL_IV_CHART")
+
 R=PolynomialRing(QQ,["lam","mu","q0","q1","q2","r0","r1","s0","s1"],order="degrevlex")
 d=R.gens_dict()
 Rt=PolynomialRing(R,"t"); t=Rt.gen()

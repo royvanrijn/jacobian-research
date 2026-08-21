@@ -6,6 +6,11 @@ Chain found computationally:
       -> q=90, (a,b)=(9,10): MW7
       -> q=4,  (a,b)=(2,2): MW4
 
+The exact vectors for these arrows, and the subsequent `q=4` arrow to the
+`E6/MW3` frame, are now pinned and verified in
+[`E6_NEIGHBOR_CHAIN.md`](E6_NEIGHBOR_CHAIN.md).  The executable certificate is
+[`scripts/verify_e6_neighbor_chain.sage`](scripts/verify_e6_neighbor_chain.sage).
+
 Selected MW4 frame has root invariants:
 
     rank 13

@@ -124,6 +124,16 @@ def main():
         default=160,
     )
 
+    ap.add_argument(
+        "--prime-only",
+        action="store_true",
+        help=(
+            "after factor-base stripping, retain only cofactor 1 or "
+            "a certified prime; skip composite cofactors instead of "
+            "attempting an unbounded PARI factorization"
+        ),
+    )
+
     args = ap.parse_args()
 
     from sage.all import (
@@ -133,6 +143,7 @@ def main():
         PolynomialRing,
         RealField,
         prime_range,
+        prod,
     )
 
     forced = tuple(
@@ -287,6 +298,19 @@ def main():
         for p in primes
         if p not in forced_q
     ]
+
+    # A single primorial-style product lets the exact stage strip
+    # factor-base support with a handful of GMP gcds per candidate.
+    # This replaces the former O(#candidates * #primes) Python loop.
+    # Repeated gcd/division removes repeated prime powers as well.
+    smooth_support_product = prod(
+        [ZZ(p) for p in primes]
+        + [
+            ZZ(p)
+            for p in S_RATIONAL
+            if p > args.factor_base_bound
+        ]
+    )
 
     print(
         f"{PROTOCOL}|stage=sieve"
@@ -468,30 +492,16 @@ def main():
 
         co = N // modulus
 
-        for p in primes:
+        while co != 1:
 
-            if co % p:
-                continue
+            shared = co.gcd(
+                smooth_support_product
+            )
 
-            while co % p == 0:
-                co //= p
-
-            if co == 1:
+            if shared == 1:
                 break
 
-        # S primes > ordinary FB.
-        for p0 in S_RATIONAL:
-
-            p = ZZ(p0)
-
-            if p <= args.factor_base_bound:
-                continue
-
-            if co % p:
-                continue
-
-            while co % p == 0:
-                co //= p
+            co //= shared
 
         # ----------------------------------------------------
         # Factor the remaining LP part.
@@ -499,6 +509,18 @@ def main():
 
         if co == 1:
             ff = []
+        elif args.prime_only:
+
+            if not co.is_prime(proof=True):
+                continue
+
+            ff = [
+                (
+                    int(co),
+                    1,
+                )
+            ]
+
         elif co.nbits() <= args.factor_max_bits:
 
             try:

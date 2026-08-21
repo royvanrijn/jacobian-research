@@ -1,13 +1,148 @@
 # Elkies rank-17 K3 reconstruction — research update (2026-08-20)
 
+> **Superseded source marking (2026-08-21).** The H2/`H8 cap H237` route
+> described below remains a valid downstream comparison, but it is not the
+> recovered source polarization.  The exact source is the third Kumar frame
+> `H3=[[21/2,3],[3,46]]`: its `H21 cap H92` component has been normalized over
+> `QQ` to the published level-474 genus-two curve.  The current source gate is
+> the marked H3 q6 descent; see
+> [`KUMAR_E7E8_BACKTRACK.md`](KUMAR_E7E8_BACKTRACK.md).
+
+## 2026-08-21 upstream correction: backtrack through Kumar, not a guessed CM chart
+
+The primary sources determine the order of construction more tightly than the
+earlier CM-deformation programme used.  The non-CM point on `X(6,79)` first
+gives a principally polarized QM abelian surface, whose Dolgachev--Kumar K3 has
+a canonical `E7+E8` fibration of MW rank two and regulator `474`.  Neighbor
+transformations then lead to the rootless MW-rank-17 fibration.
+
+An exact finite classification of determinant-474 binary height lattices and
+their `E7` discriminant glue leaves exactly three frames in the recovered
+determinant-948 genus:
+
+```text
+[[5/2,1],[1,190]], [[4,0],[0,237/2]], [[21/2,3],[3,46]].
+```
+
+Each has root system `E7+E8` and cyclic discriminant group `Z/948`.  The middle
+one is the unique frame with an extra height-lattice involution.  Decomposing
+the two elliptic quotients of Elkies's genus-two curve identifies that
+involution as `w2=w237`, its hyperelliptic involution, so the middle frame is
+the Kumar anchor used by the quotient construction.  See
+[`KUMAR_E7E8_BACKTRACK.md`](KUMAR_E7E8_BACKTRACK.md).
+
+Consequently, the `E8+A2^3` deformation remains a useful secondary CM chart,
+but it is no longer the primary reconstruction assumption.  The decisive
+missing datum is now the rational `t`-line to `H2` Kumar/Clebsch--Igusa map
+and the section descent over `u`.
+
+The backtrack now also fixes both CM boundary equations.  Primitive closure
+of the middle Kumar frame gives `E8+E8+A2`, MW zero, at discriminant `-3`, and
+`E8+E8`, MW lattice `diag(4,6)`, at discriminant `-24`.  Their standard Inose
+models are
+
+```text
+Y^2 = X^3 + T^5*(T-1)^2,
+Y^2 = X^3 - 51*T^4*X + T^5*(T^2-92*T+1),
+```
+
+respectively, with the second determined up to rational quadratic twist.  For
+the H2 comparison, the remaining problem is local deformation/interpolation
+from these marked boundary fibers and recovery of the twist and section
+descent selected by `u`, not another broad equation search.
+
+The H2 height decomposition identifies its ambient modular geometry even more
+precisely.  The height-4 section with the `E7` frame has determinant 8, while
+the height-`237/2` section alone has determinant 237.  This comparison locus
+is therefore `H8 cap H237`, not the corrected H3 source curve.
+Elkies--Kumar's published ancillary data supply the
+complete two-parameter `H8` Kumar equation, its Clebsch--Igusa map, and its
+oriented double cover.  The unrecovered datum has dropped to one equation: the
+discriminant-237 divisor in that explicit plane, normalized against the known
+`(t,u)` Shimura model.
+
+The first useful downstream step from this H2 anchor is also pinned.
+Constraining the high-section coordinate makes the norm-120 shell exact and
+small: 56 sign-pairs in 441 enumeration nodes.  A `q=60` neighbor with
+`(a,b)=(5,12)` gives `E8+E6/MW3`, with reduced height Gram
+`[[4,0,0],[0,20/3,1],[0,1,12]]`.  Thus the corrected geometric route begins
+
+```text
+Kumar E7+E8/MW2 --q=60--> E8+E6/MW3,
+```
+
+not with the guessed split E6 chart.  The remaining gap at this arrow is the
+birational Weierstrass transformation, not its integral lattice existence.
+
+## Decisive correction: the all-IV CM deformation is obstructed
+
+The abstract inherited root frame `E8+A2^3` remains exact, but its previous
+promotion to `II*+3 IV+II` is impossible for the target.  That Weierstrass
+family has `j=0`; its order-three CM automorphism forces the geometric
+Mordell--Weil rank to be even.  Shioda--Tate requires the target rank to be
+`19-2-14=3`.  See
+[`E8_A2_KODAIRA_CORRECTION.md`](E8_A2_KODAIRA_CORRECTION.md).
+
+An `A2` root lattice may be `I3` or `IV`.  At least one of the three target
+`A2` fibers must be `I3`, and the correct deformation must allow nonzero
+`A(t)`.  The old all-IV section systems are historical only.
+
+A viable mixed lift has since been derived directly:
+
+```text
+D=t(t-1),
+A=-3r^2D^2,
+B=D^2((t-lambda)^3-2r^3D),
+```
+
+with fibers `II*+2 IV+I3+3 I1`, nonconstant `j`, and the correct CM endpoint.
+See [`E8_A2_MIXED_FAMILY.md`](E8_A2_MIXED_FAMILY.md).  Its target
+determinant-948 sublocus is not yet identified.
+
+The exact NS glue supplies the missing section profiles in the reduced basis:
+`(1,1,0)`, `(0,2,0)`, and `(0,0,0)` across the three `A2` factors.  Their
+nonzero counts recover heights `8/3,10/3,4` and force all three generators to
+be polynomial sections (`P_i.O=0`); their pairwise section intersections are
+all `2`.
+
+## Final correction: the exact E6 neighbor path is recovered
+
+The actual frame chain is now pinned:
+
+```text
+rank17 --q=90--> MW7 --q=4--> MW4 --q=4--> E6/MW3.
+```
+
+An exact verifier reconstructs each committed child frame from its primitive
+isotropic vector and checks a determinant-one composite Neron--Severi
+transport.  See [`E6_NEIGHBOR_CHAIN.md`](E6_NEIGHBOR_CHAIN.md).  The remaining
+gap is geometric: the earlier split E6 Weierstrass chart was inferred from the
+fiber type and was not obtained by applying these neighbor operations to the
+original K3.  Further large scans of that chart are therefore stopped in
+favor of backtracking the genuine chain.
+
+## Late correction: exact frame glue and the missing height gate
+
+The E6 frame itself remains exact, but the first modular searches did not
+enforce the off-diagonal Mordell-Weil heights.  Direct recovery from the
+17-dimensional frame selects the canonical component orbit and excludes the
+other height-only orbit.  For the selected P1/P2 profiles, the missing target
+condition is `(P1+P2).O=1`, equivalently `<P1,P2>=-5/6`.
+
+Compiled exhaustive rational-chart scans over
+`GF(5),GF(7),GF(11),GF(13),GF(17)` tested 406,655,040 cores.  All 69 sections
+that passed the older P2 component tests fail the full height gate.  Thus the
+next E6 step is an algebraic backtrack to a corrected P1/P2 system, not a
+larger run of the old scan.  Exact scripts and counts are in
+[`E6_MW3_ATTACK.md`](E6_MW3_ATTACK.md).
+
 This note records the current state of the `elkies-k3` branch of the project after the recent reconstruction work. It is intentionally split into exact/computationally verified results, failed approaches, and the current frontier.
 
 **Later-day consolidation.** The arithmetic identification and lattice results
-below remain current, but the explicit-construction frontier has moved to the
-E6/MW3 neighbor described in
-[`E6_P2_REDUCTION_2026-08-20.md`](E6_P2_REDUCTION_2026-08-20.md) and the
-consolidated [`RECONSTRUCTION_PROGRESS.md`](RECONSTRUCTION_PROGRESS.md). The
-older `E8+A2^3` rank-jump system is now a fallback branch.
+below remain current.  Both equation-level shortcuts were later corrected:
+the E6 split chart was not geometrically transported, and the all-IV
+`E8+A2^3` chart has the parity obstruction above.  The consolidated frontier
+is in [`RECONSTRUCTION_PROGRESS.md`](RECONSTRUCTION_PROGRESS.md).
 
 ## Executive summary
 
@@ -36,11 +171,14 @@ The main progress is:
    ```
 
    with determinant `316/9`.
-6. This gives a very small explicit family candidate:
+6. A formerly proposed small family,
 
    `y^2 = x^3 + [t(t-1)(t-lambda)]^2 (t-mu)`
 
-   with generic fibers `II* + 3 IV + II`. At `(lambda,mu)=(0,0)` it specializes to Utsumi No.1. The current frontier is to recover the one-dimensional rank-jump locus inside this two-parameter family and identify it with `X(6,79)`.
+   does specialize to Utsumi No.1, but is now exactly rejected for the target:
+   it has constant `j=0` and hence even geometric MW rank, whereas the target
+   frame requires rank `3`.  The correct family must realize at least one
+   `A2` as `I3` and retain a nonzero `A(t)`.
 
 This is a substantial reduction from the original 17-section reconstruction problem.
 
@@ -159,7 +297,8 @@ Delta=-24:
 
 The Atkin–Lehner normalizer action provided a useful distinction: the norm-3 vector is fixed by the `w_3` representative, while the norm-24 vector is not.
 
-More importantly, the norm-3 embedding was transported through the exact inverse-Clifford correspondence into the recovered K3 transcendental lattice.
+Both embeddings have now been transported through the exact inverse-Clifford
+correspondence into the recovered K3 transcendental lattice.
 
 For `T=0`, using an explicit integral isometry from the inverse-Clifford lattice to the recovered ternary lattice, the CM functional produced the primitive K3 vector
 
@@ -205,6 +344,33 @@ namely `A2`, determinant `3`.
 
 This is now an arithmetic/computational identification, not merely a heuristic CM-label match.
 
+For the norm-24 vector the same exact transport gives
+
+```text
+v = (70,86,-3)
+v^2 = -158
+q_T(v) = -79
+div(v) = 79
+v^perp = [4 0]
+          [0 6]
+```
+
+The complement has determinant `24`, binary form `(2,0,3)`, and discriminant
+`-24`; the determinant identity is
+
+`det(v^perp) = 948 * 158 / 79^2 = 24`.
+
+The coordinate geometry identifies the two CM orbit shapes.  In the chart
+`s=1/t, v=u/t^3`, `w3` fixes `(s,v)=(0,+/-4)`, matching the `w3`-fixed
+norm-3 class.  The four points `(t,u)=(+/-2,+/-32)` have no stabilizer in the
+visible Klein four-group and match the norm-24 class.  Thus the correct Kumar
+component has exact singular-K3 anchors
+
+```text
+t=infinity : Delta=-3,  T=[[2,1],[1,2]]
+t=+/-2     : Delta=-24, T=[[4,0],[0,6]].
+```
+
 Relevant scripts/results:
 
 - `construct_exact_gross_lattice.sage`
@@ -212,6 +378,7 @@ Relevant scripts/results:
 - `map_clifford_to_k3_T.sage`
 - `transport_cm_delta3_to_k3.sage`
 - `artifacts/local/elkies-k3/cm-delta3-k3-vector.txt`
+- `artifacts/local/elkies-k3/cm-delta24-k3-vector.txt`
 
 ---
 
@@ -404,13 +571,13 @@ Verified by:
 
 ---
 
-## 8. Current explicit family candidate
+## 8. Rejected all-IV family candidate
 
-The inherited fiber configuration is
+The abstract inherited root configuration is
 
-`II* + IV + IV + IV + II`.
+`E8 + A2^3`.
 
-After normalizing three finite singular-fiber positions to `0,1,lambda`, a natural short Weierstrass family is
+It was previously promoted to the short Weierstrass family
 
 ```text
 y^2 = x^3 + [t(t-1)(t-lambda)]^2 (t-mu).
@@ -437,13 +604,19 @@ it specializes to
 y^2 = x^3 + t^5(t-1)^2,
 ```
 
-exactly Utsumi No.1.
-
-Thus the reconstruction problem has been reduced to finding the one-dimensional locus in `(lambda,mu)` for which the generic MW rank jumps from the root-trivial baseline to the desired rank-3 lattice above.
+exactly Utsumi No.1.  Nevertheless, this family cannot contain the intended
+exact `E8+A2^3`, Picard-rank-19 fibration.  Its `j`-invariant is zero and the
+order-three automorphism makes the geometric MW rank even, while the target
+rank is three.  The error was treating every `A2` root factor as an `IV`
+fiber; `I3` is the other possibility.  See
+[`E8_A2_KODAIRA_CORRECTION.md`](E8_A2_KODAIRA_CORRECTION.md).
 
 ---
 
-## 9. Current section/rank-jump equations
+## 9. Historical all-IV section equations
+
+The equations in this section are retained to document the rejected
+experiment.  They must not be used to reconstruct `X(6,79)`.
 
 A useful degree-reduction identity for polynomial sections is:
 
@@ -486,25 +659,33 @@ A triangular exporter/solver has therefore been added:
 - `export_rank3_jump_triangular.sage`
 - `run_rank3_jump_triangular.py`
 
-The current experiment is to eliminate `s1` and `mu` analytically and solve the remaining small finite-field system. If Groebner solving remains slow, the next step is direct symbolic elimination/resultants, not more brute-force compute.
+This elimination is no longer an active experiment because its ambient family
+is parity-obstructed.
 
 ---
 
-## 10. Current research frontier
+## 10. Superseded 2026-08-20 frontier
 
-The immediate goal is now:
+The exact lattice backtrack has recovered the rank17-to-E6 neighbor chain, and
+the parity audit has rejected the all-IV CM deformation.  These together
+locate the missing step: derive the non-isotrivial Kodaira lift of the exact
+`E8+A2^3` root frame.
 
-1. Complete the seven-core `GF(31)` E6/P1 reconstruction tranche.
-2. Exhaust the reduced 837-case canonical `P2` search on every reconstructed
-   surface and both I2-fiber labelings.
-3. Retain only a section independent from `P1` and `P3` under the exact
-   function-field group law.
-4. Lift a successful modular seed at several primes and recognize its
-   characteristic-zero coefficients.
-5. Verify the rank-3 height lattice and identify its parameter curve with the
-   intended `X(6,79)` component.
-6. Use neighbor transformations to move to the rootless rank-17 fibration.
-7. Reproduce E29 as a mechanism calibration, then search for specializations
+The first lift is now explicit: the two-parameter
+`II*+2 IV+I3+3 I1` family in
+[`E8_A2_MIXED_FAMILY.md`](E8_A2_MIXED_FAMILY.md).
+
+The then-current goal was:
+
+1. Impose on the mixed two-parameter family the full reduced
+   MW height/glue matrix, not merely one arbitrary section.
+2. Identify the one-dimensional component with the exact determinant-948
+   Neron--Severi lattice and `X(6,79)` period data.
+3. Use the pinned neighbor chain to produce and cross-check the E6 and
+   rootless rank-17 fibrations.
+4. Retain the other non-isotrivial `I3/IV` distributions as fallbacks if the
+   mixed family fails the exact lattice gates.
+5. Reproduce E29 as a mechanism calibration, then search for specializations
    beyond the now-public rank-at-least-30 record.
 
 This is now a concrete algebraic reconstruction programme rather than an unconstrained search.
@@ -520,9 +701,12 @@ The following approaches produced enough negative evidence that they should rema
 - direct 167-variable rank-17 section systems;
 - direct 48-variable rank-3 motif Groebner systems;
 - broader ternary-lattice genus searches;
+- any larger scan of the split E6 chart;
+- any further solve of the all-IV `j=0` rank-jump system;
 - larger Heegner vector bounds without a new arithmetic discriminator.
 
-The current bottleneck is symbolic/algebraic elimination in the explicit rank-3 family, not raw compute.
+The current bottleneck is choosing and deriving the correct non-isotrivial
+Kodaira lift, not raw compute.
 
 ---
 
@@ -556,7 +740,8 @@ The main conceptual reduction is:
     -> exact (6,79) quaternion/Eichler arithmetic
     -> CM discriminant -3 endpoint
     -> explicit discriminant-3 K3
-    -> rank-3 E8+A2^3 intermediate fibration
-    -> 2-parameter Weierstrass family
-    -> 1-dimensional rank-jump locus (current target)
+    -> rank-3 E8+A2^3 abstract intermediate frame
+    -> reject the all-IV j=0 lift by MW-rank parity
+    -> explicit II*+2IV+I3+3I1 two-parameter family
+    -> determinant-948 one-dimensional X(6,79) locus (current target)
 ```

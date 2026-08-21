@@ -2,7 +2,7 @@ from sage.all import *
 from pathlib import Path
 import argparse, random
 
-ap=argparse.ArgumentParser(description="Export the E8+A2^3 rank-jump section system to msolve.")
+ap=argparse.ArgumentParser(description="Export the historical parity-obstructed all-IV E8+A2^3 section system.")
 ap.add_argument("--p",type=int,default=101)
 ap.add_argument("--seed",type=int,default=1)
 ap.add_argument("--slices",type=int,default=1)

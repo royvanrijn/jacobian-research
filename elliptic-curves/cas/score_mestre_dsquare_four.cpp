@@ -1,6 +1,7 @@
 // Closed local-score sweep for four split-infinity six-root Mestre families.
 //
 // Usage: score_mestre_dsquare_four NUMERATOR_BOUND DENOMINATOR_BOUND KEEP
+//        [FAMILY_INDEX [NEAR_SQRT_WINDOW [U_MIN U_MAX]]]
 // The output is heuristic ordering only.  Exact conductors and point
 // independence are handled by search_mestre_dsquare_four.py.
 
@@ -158,21 +159,44 @@ static Candidate score_candidate(int family_index, int numerator,
 }
 
 int main(int argc, char **argv) {
-  if (argc != 4) {
+  if (argc < 4 || argc > 8 || argc == 7) {
     std::cerr << "usage: " << argv[0]
-              << " NUMERATOR_BOUND DENOMINATOR_BOUND KEEP\n";
+              << " NUMERATOR_BOUND DENOMINATOR_BOUND KEEP "
+                 "[FAMILY_INDEX [NEAR_SQRT_WINDOW [U_MIN U_MAX]]]\n";
     return 2;
   }
   const int numerator_bound = std::stoi(argv[1]);
   const int denominator_bound = std::stoi(argv[2]);
   const int keep = std::stoi(argv[3]);
+  const int selected_family = argc >= 5 ? std::stoi(argv[4]) : -1;
+  const int near_sqrt_window = argc == 6 ? std::stoi(argv[5]) : 0;
+  const int u_min = argc == 8 ? std::stoi(argv[6]) : 0;
+  const int u_max = argc == 8 ? std::stoi(argv[7]) : 0;
   if (numerator_bound < 1 || denominator_bound < 1 || keep < 1) return 2;
+  if (selected_family < -1 || selected_family >= 4) return 2;
+  if (near_sqrt_window < 0 || (near_sqrt_window && selected_family < 0)) return 2;
+  if (argc == 8 && (u_min < 0 || u_max < u_min)) return 2;
   const std::vector<int> prime_list = primes(11, 251);
   std::vector<std::pair<int, int>> rationals;
-  for (int denominator = 1; denominator <= denominator_bound; ++denominator)
-    for (int numerator = 1; numerator <= numerator_bound; ++numerator)
+  for (int denominator = 1; denominator <= denominator_bound; ++denominator) {
+    int numerator_begin = 1;
+    int numerator_end = numerator_bound;
+    if (argc == 8) {
+      numerator_begin = std::max(numerator_begin, u_min * denominator);
+      numerator_end = std::min(numerator_end, u_max * denominator);
+    }
+    if (near_sqrt_window) {
+      const Family &family = FAMILIES[selected_family];
+      const double center =
+          std::sqrt(static_cast<double>(family.c_num) / family.c_den) * denominator;
+      numerator_begin = std::max(1, static_cast<int>(std::floor(center)) - near_sqrt_window);
+      numerator_end = std::min(numerator_bound,
+                               static_cast<int>(std::ceil(center)) + near_sqrt_window);
+    }
+    for (int numerator = numerator_begin; numerator <= numerator_end; ++numerator)
       if (std::gcd(numerator, denominator) == 1)
         rationals.emplace_back(numerator, denominator);
+  }
 
   std::cout << "MESTRE_DSQUARE_FOUR_SCORE_V1\n";
   std::cout << "PRIMES";
@@ -180,7 +204,9 @@ int main(int argc, char **argv) {
   std::cout << "\n";
   std::cout << "DOMAIN " << numerator_bound << ' ' << denominator_bound << ' '
             << rationals.size() << "\n";
-  for (int family = 0; family < 4; ++family) {
+  const int family_begin = selected_family < 0 ? 0 : selected_family;
+  const int family_end = selected_family < 0 ? 4 : selected_family + 1;
+  for (int family = family_begin; family < family_end; ++family) {
     std::vector<Candidate> candidates(rationals.size());
 #pragma omp parallel for schedule(dynamic, 16)
     for (std::size_t index = 0; index < rationals.size(); ++index) {

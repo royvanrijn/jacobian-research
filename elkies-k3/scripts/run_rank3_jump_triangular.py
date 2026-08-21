@@ -8,7 +8,16 @@ ap.add_argument("--seed",type=int,default=1)
 ap.add_argument("--threads",type=int,default=8)
 ap.add_argument("--timeout",type=int,default=300)
 ap.add_argument("--outdir",default="artifacts/local/elkies-k3/rank3-triangular")
+ap.add_argument("--allow-obstructed-chart",action="store_true",
+                help="reproduce the historical j=0 chart despite its target-rank parity obstruction")
 a=ap.parse_args()
+
+if not a.allow_obstructed_chart:
+    raise SystemExit(
+        "refusing obsolete all-IV solve: j=0 forces even geometric MW rank, "
+        "but the target requires rank 3; see elkies-k3/E8_A2_KODAIRA_CORRECTION.md "
+        "(pass --allow-obstructed-chart only for historical reproduction)"
+    )
 
 O=Path(a.outdir); O.mkdir(parents=True,exist_ok=True)
 stem=f"p{a.p}-seed{a.seed}"

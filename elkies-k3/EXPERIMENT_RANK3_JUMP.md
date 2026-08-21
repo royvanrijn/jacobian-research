@@ -1,4 +1,12 @@
-# Explicit E8+A2^3 rank-jump system
+# Rejected all-IV `E8+A2^3` rank-jump system
+
+**Status: obstructed. Do not continue this search as a route to the target.**
+
+The equation below has `j=0`, so its geometric Mordell--Weil rank is even.
+The intended Picard-rank-19 `E8+A2^3` frame requires Mordell--Weil rank `3`.
+See [`E8_A2_KODAIRA_CORRECTION.md`](E8_A2_KODAIRA_CORRECTION.md) for the exact
+parity obstruction.  The scripts named below are retained only to reproduce
+the historical experiment.
 
 From the exact NS computation the inherited generic fibration has:
 
@@ -43,6 +51,7 @@ First inspect:
 Then finite-field sliced samples:
 
     python3 elkies-k3/scripts/run_rank3_jump_msolve.py \
+      --allow-obstructed-chart \
       --primes 101,103,107 --seeds 1,2,3 --threads 8 --timeout 600
 
 Unlike the previous 48/167-variable systems, this is only 9 variables / 9 equations

@@ -95,6 +95,7 @@ triples.sort(key=lambda z:(
     z[0][0],z[1][0],z[2][0]
 ))
 print(f"E6COMP|stage=triples|count={len(triples)}",flush=True)
+print("E6COMP|status=HEIGHT_ONLY|frame_glue_checker=scripts/recover_e6_mw3_component_glue.sage",flush=True)
 for i,T in enumerate(triples[:100],1):
     A,B,C,p12,p13,p23=T
     print(f"E6COMP_BEST|rank={i}|P1={A[0]}|P1O={A[1]}|P2={B[0]}|P2O={B[1]}|P3={C[0]}|P3O={C[1]}|P12={p12}|P13={p13}|P23={p23}",flush=True)

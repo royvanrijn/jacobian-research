@@ -6,6 +6,7 @@ import argparse
 from dataclasses import dataclass
 from fractions import Fraction
 from itertools import combinations
+import json
 from pathlib import Path
 import subprocess
 import sys
@@ -13,22 +14,27 @@ import time
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from search_icarm_curve273_rank31 import (
-    Q,
-    PUBLISHED_POINTS,
-    QuarticChart,
-    affine_substitute,
-    discover_relation,
-    exact_linear_combination,
-    point_negate,
-    poly_add,
-    poly_evaluate,
-    poly_multiply,
-    poly_scale,
-    search_chart,
-    short_weierstrass_coefficients,
-    to_short_point,
-)
+import search_icarm_curve273_rank31 as engine
+
+Q = engine.Q
+QuarticChart = engine.QuarticChart
+affine_substitute = engine.affine_substitute
+discover_relation = engine.discover_relation
+exact_linear_combination = engine.exact_linear_combination
+gp_rational = engine.gp_rational
+gp_vector = engine.gp_vector
+point_negate = engine.point_negate
+poly_add = engine.poly_add
+poly_evaluate = engine.poly_evaluate
+poly_multiply = engine.poly_multiply
+poly_scale = engine.poly_scale
+search_chart = engine.search_chart
+run_gp = engine.run_gp
+
+PUBLISHED_POINTS = ()
+short_weierstrass_coefficients = None
+to_short_point = None
+A1 = A2 = A3 = Q(0)
 
 from mod2_reduction_independence import (
     combined_mod2_rank,
@@ -49,6 +55,23 @@ DEFAULT_VECTORS = (
 
 RationalPoint = tuple[Fraction, Fraction]
 Polynomial = tuple[Fraction, ...]
+
+
+def configure_curve(curve_id, curve_json=None):
+    global PUBLISHED_POINTS, short_weierstrass_coefficients, to_short_point
+    global A1, A2, A3, SHORT_BASIS, SIGNED_SHORT_BASIS
+
+    engine.load_curve_data(curve_id, curve_json)
+    PUBLISHED_POINTS = engine.PUBLISHED_POINTS
+    short_weierstrass_coefficients = engine.short_weierstrass_coefficients
+    to_short_point = engine.to_short_point
+    A1, A2, A3 = engine.A1, engine.A2, engine.A3
+    SHORT_BASIS = tuple(to_short_point(point) for point in PUBLISHED_POINTS)
+    SIGNED_SHORT_BASIS = tuple(
+        oriented
+        for point in SHORT_BASIS
+        for oriented in (point, short_negate(point))
+    )
 
 
 @dataclass(frozen=True)
@@ -95,15 +118,16 @@ def canonical_general_point(point):
 # ------------------------------------------------------------
 # Short model helpers
 #
-# X = 36*x + 3
-# Y = 108*(2*y+x)
+# X = 36*x + 3*b2
+# Y = 108*(2*y+a1*x+a3)
 # ------------------------------------------------------------
 
 def from_short_point(point):
     X, Y = map(Q, point)
 
-    x = (X - 3) / 36
-    y = Y / 216 - (X - 3) / 72
+    b2 = A1*A1 + 4*A2
+    x = (X - 3*b2) / 36
+    y = Y / 216 - (A1*x + A3) / 2
 
     return x, y
 
@@ -124,19 +148,8 @@ def point_on_short(point):
     )
 
 
-SHORT_BASIS = tuple(
-    to_short_point(P)
-    for P in PUBLISHED_POINTS
-)
-
-SIGNED_SHORT_BASIS = tuple(
-    oriented
-    for P in SHORT_BASIS
-    for oriented in (
-        P,
-        short_negate(P),
-    )
-)
+SHORT_BASIS = ()
+SIGNED_SHORT_BASIS = ()
 
 
 # ------------------------------------------------------------
@@ -277,9 +290,9 @@ def load_vectors(path, count):
             for x in parts[1:]
         )
 
-        if len(coeffs) != 30:
+        if len(coeffs) != len(PUBLISHED_POINTS):
             raise ValueError(
-                "short-vector width != 30"
+                f"short-vector width != {len(PUBLISHED_POINTS)}"
             )
 
         rows.append(
@@ -673,7 +686,7 @@ def certificate_rank(
 
     rank = combined_mod2_rank(
         signatures,
-        31,
+        len(augmented),
     )
 
     return (
@@ -698,9 +711,9 @@ def classify(
         prime_bound,
     )
 
-    if rank == 31:
+    if rank == len(PUBLISHED_POINTS) + 1:
         return (
-            "EXACT_INDEPENDENT_31ST",
+            "EXACT_INDEPENDENT_NEXT_POINT",
             rank,
             primes,
         )
@@ -715,7 +728,7 @@ def classify(
 
     if relation is not None:
         return (
-            "rank30_subgroup",
+            "certified_subgroup",
             rank,
             primes,
         )
@@ -727,13 +740,73 @@ def classify(
     )
 
 
+def discover_relations_batch(
+    points,
+    *,
+    timeout,
+    stack_bytes,
+):
+    """Recover many subgroup relations with one height-matrix initialization."""
+
+    if not points:
+        return {}
+    curve = ",".join(gp_rational(value) for value in engine.GENERAL_WEIERSTRASS_COEFFICIENTS)
+    basis = ",".join(gp_vector(value) for value in PUBLISHED_POINTS)
+    commands = [
+        "default(realprecision,140);",
+        f"E=ellinit([{curve}]);",
+        f"B=[{basis}];",
+        "H=ellheightmatrix(E,B);",
+    ]
+    for index, point in enumerate(points):
+        commands.extend(
+            [
+                f"Q={gp_vector(point)};",
+                "V=vector(#B,j,ellheight(E,B[j],Q))~;",
+                "C=round(matsolve(H,V));",
+                "S=[0];for(j=1,#B,S=elladd(E,S,ellmul(E,B[j],C[j])));",
+                f'print("BATCHREL|{index}|",Vec(C),"|",S==Q);',
+            ]
+        )
+    commands.append("quit")
+    try:
+        output, _wall = run_gp(
+            "\n".join(commands) + "\n",
+            timeout=timeout,
+            stack_bytes=stack_bytes,
+        )
+    except (RuntimeError, subprocess.TimeoutExpired):
+        return {}
+
+    relations = {}
+    for line in output.splitlines():
+        if not line.startswith("BATCHREL|"):
+            continue
+        _tag, raw_index, raw_vector, exact = line.split("|", 3)
+        if exact != "1":
+            continue
+        coefficients = tuple(
+            int(value.strip())
+            for value in raw_vector.strip()[1:-1].split(",")
+        )
+        index = int(raw_index)
+        if exact_linear_combination(coefficients) != points[index]:
+            raise AssertionError("batched PARI relation failed exact replay")
+        relations[index] = coefficients
+    return relations
+
+
 def main():
     ap = argparse.ArgumentParser()
+
+    ap.add_argument("--curve-id", type=int, default=273)
+    ap.add_argument("--curve-json", type=Path)
+    ap.add_argument("--output", type=Path)
 
     ap.add_argument(
         "--vectors",
         type=Path,
-        default=DEFAULT_VECTORS,
+        default=None,
     )
 
     ap.add_argument(
@@ -809,6 +882,19 @@ def main():
     )
 
     args = ap.parse_args()
+
+    configure_curve(args.curve_id, args.curve_json)
+    if args.vectors is None:
+        if args.curve_id == 273:
+            args.vectors = DEFAULT_VECTORS
+        elif args.curve_id == 245:
+            args.vectors = (
+                ROOT
+                / "artifacts/local/elliptic-curves/curve245-rank20/"
+                "short-coefficient-vectors.tsv"
+            )
+        else:
+            raise SystemExit("--vectors is required for this ICARM curve id")
 
     rows = load_vectors(
         args.vectors,
@@ -962,27 +1048,64 @@ def main():
     rank31_hit = False
     subgroup_count = 0
     unresolved_count = 0
-
-    for point, sources in sorted(
+    ordered = sorted(
         discovered.items(),
         key=lambda item: (
             item[0][0],
             item[0][1],
         ),
-    ):
-
-        (
-            classification,
-            rank,
-            primes,
-        ) = classify(
-            point,
-            prime_bound=args.certificate_prime_bound,
-            relation_timeout=args.relation_timeout,
-            stack_bytes=args.stack_bytes,
+    )
+    all_points = [point for point, _sources in ordered]
+    batched = discover_relations_batch(
+        all_points,
+        timeout=max(60.0, args.relation_timeout),
+        stack_bytes=args.stack_bytes,
+    )
+    candidate_rows = []
+    for index, (point, sources) in enumerate(ordered):
+        relation = batched.get(index)
+        if relation is not None:
+            classification = "certified_subgroup"
+            rank = len(PUBLISHED_POINTS)
+            primes = ()
+        else:
+            # Only points not replayed in the known integer span pay for the
+            # exhaustive finite-reduction calculation.
+            relation = discover_relation(
+                point,
+                timeout=args.relation_timeout,
+                stack_bytes=args.stack_bytes,
+            )
+            if relation is not None:
+                classification = "certified_subgroup"
+                rank = len(PUBLISHED_POINTS)
+                primes = ()
+            else:
+                rank, primes = certificate_rank(point, args.certificate_prime_bound)
+                if rank == len(PUBLISHED_POINTS) + 1:
+                    classification = "EXACT_INDEPENDENT_NEXT_POINT"
+                    rank31_hit = True
+                else:
+                    classification = "UNRESOLVED_MOD2_DEPENDENT"
+        candidate_rows.append(
+            {
+                "point": point,
+                "sources": sources,
+                "classification": classification,
+                "rank": rank,
+                "primes": primes,
+                "relation": relation,
+            }
         )
 
-        if classification == "rank30_subgroup":
+    for row in candidate_rows:
+        point = row["point"]
+        sources = row["sources"]
+        classification = row["classification"]
+        rank = row["rank"]
+        primes = row["primes"]
+
+        if classification == "certified_subgroup":
             subgroup_count += 1
 
         if classification == "UNRESOLVED_MOD2_DEPENDENT":
@@ -999,18 +1122,14 @@ def main():
             flush=True,
         )
 
-        if classification == "EXACT_INDEPENDENT_31ST":
-            rank31_hit = True
-
+        if classification == "EXACT_INDEPENDENT_NEXT_POINT":
             print(
-                f"{PROTOCOL}|RANK31"
+                f"{PROTOCOL}|NEXT_POINT"
                 f"|status=EXACT_UNCONDITIONAL"
                 f"|x={point[0]}"
                 f"|y={point[1]}",
                 flush=True,
             )
-
-            break
 
     elapsed = time.monotonic() - started
 
@@ -1028,6 +1147,62 @@ def main():
         f"|seconds={elapsed:.3f}",
         flush=True,
     )
+
+    if args.output is not None:
+        artifact = {
+            "schema_version": 1,
+            "artifact_kind": "bounded_alternate_degree_two_cover_search",
+            "curve_id": args.curve_id,
+            "basis_rank": len(PUBLISHED_POINTS),
+            "claim_scope": (
+                "Exact curve maps, memberships, subgroup relations, and any "
+                "finite-reduction independence certificate; bounded chart boxes only."
+            ),
+            "parameters": {
+                "vector_pool": args.vector_pool,
+                "cover_count": args.cover_count,
+                "offset_count": args.offset_count,
+                "normalization_pool": args.normalization_pool,
+                "affine_count": args.affine_count,
+                "offset_height": args.offset_height,
+                "affine_height": args.affine_height,
+                "chart_timeout": args.chart_timeout,
+                "relation_timeout": args.relation_timeout,
+                "certificate_prime_bound": args.certificate_prime_bound,
+            },
+            "summary": {
+                "completed": completed,
+                "chart_count": len(plans),
+                "timeouts": timeouts,
+                "quartic_points": total_quartic_points,
+                "total_images": total_images,
+                "known_basis_images": known_basis_images,
+                "unique_nonbasis": len(discovered),
+                "certified_subgroup": subgroup_count,
+                "unresolved": unresolved_count,
+                "independent_next_point_hit": rank31_hit,
+                "wall_seconds": elapsed,
+            },
+            "candidates": [
+                {
+                    "x": str(row["point"][0]),
+                    "y": str(row["point"][1]),
+                    "sources": sorted(row["sources"]),
+                    "classification": row["classification"],
+                    "augmented_mod2_rank": row["rank"],
+                    "certificate_primes": list(row["primes"]),
+                    "basis_relation": (
+                        None
+                        if row["relation"] is None
+                        else list(row["relation"])
+                    ),
+                }
+                for row in candidate_rows
+            ],
+        }
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(json.dumps(artifact, indent=2) + "\n", encoding="utf-8")
+        print(f"{PROTOCOL}|saved={args.output}", flush=True)
 
 
 if __name__ == "__main__":

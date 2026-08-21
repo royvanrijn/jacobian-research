@@ -39,7 +39,10 @@ if args.stage in ("p13","all"):
 
 if args.stage=="all":
     # P2.O=1 -> one linear denominator.
-    names += ["r2"]+[f"x2_{i}" for i in range(7)]+[f"y2_{i}" for i in range(10)]
+    # c12 is the required simple good-fiber intersection P2=-P1, equivalently
+    # (P1+P2).O=1 and <P1,P2>=-5/6 for the certified component profiles.
+    names += ["r2", "c12"]
+    names += [f"x2_{i}" for i in range(7)]+[f"y2_{i}" for i in range(10)]
 
 R=PolynomialRing(K,names,order="degrevlex")
 d=R.gens_dict()
@@ -106,7 +109,7 @@ if args.stage in ("p13","all"):
     add("P3_I4_0_y",Y3(0))
 
 if args.stage=="all":
-    r2=d["r2"]; z2=t-r2
+    r2=d["r2"]; c12=d["c12"]; z2=t-r2
     X2=sum(d[f"x2_{i}"]*t^i for i in range(7))
     Y2=sum(d[f"y2_{i}"]*t^i for i in range(10))
     coeff_eqs(Y2^2-X2^3-A*X2*z2^4-B*z2^6,"P2")
@@ -122,6 +125,11 @@ if args.stage=="all":
     ]:
         add("P2_"+name+"_x",X2(a)-s*(a-r2)^2)
         add("P2_"+name+"_y",Y2(a))
+    # At t=c12, P2=-P1.  Because the sum has a nonidentity class at every
+    # reducible fiber, saturating c12 away from those fibers, r2, and Delta=0
+    # makes this the unique required good-fiber intersection with O.
+    add("P12_intersection_x", X2(c12)-X1(c12)*(c12-r2)^2)
+    add("P12_intersection_y", Y2(c12)+Y1(c12)*(c12-r2)^3)
 
 field="QQ" if args.p==0 else f"GF({args.p})"
 print(f"E6SECT|stage={args.stage}|field={field}|vars={R.ngens()}|eqs={len(eqs)}|naive_dim={R.ngens()-len(eqs)}",flush=True)
@@ -140,6 +148,9 @@ for i,(tag,e) in enumerate(zip(tags,eqs)):
 
 print("E6SECT|component_target=P1:(1,0,1,0,0);P2:(1,1,2,1,1);P3:(2,3,0,0,0)",flush=True)
 print("E6SECT|intersection_target=P12=2,P13=2,P23=2; P1O=0,P2O=1,P3O=0",flush=True)
+if args.stage=="all":
+    print("E6SECT|pair_gate=(P1+P2).O=1|witness=c12|encoded=1",flush=True)
+    print("E6SECT|pair_gate_open=c12*(c12-1)*(c12-lam)*(c12-mu)*(c12-r2)*Delta(c12)!=0",flush=True)
 print("E6SECT|note=IV* labels 1 vs 2 and I4 labels 1/2/3 are not yet separated beyond first singular hit.",flush=True)
 
 if args.export:

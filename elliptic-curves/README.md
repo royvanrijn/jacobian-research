@@ -44,6 +44,13 @@ strongest six-root fiber.  A second split-infinity family, with centers
 `(0,25,95,143,168,205)`, also has generic rank at least 13.  Its specialization
 `u=197`, `T=337/394` has an exact rank lower bound of 17 and exact
 `ln(N)=173.594891144976...<182.72`.
+Bounded integer specialization searches in this and a companion family found
+two stronger exact frontiers: family 2 at `u=483` has rank at least 19 and
+`ln(N)=157.759935999987...`, while family 3 with centers
+`(0,43,128,197,231,289)` at `u=660` has rank at least 19 and
+`ln(N)=164.053646218834...`.  Their conservative `Delta=11/5`
+explicit-formula values are respectively `20.3010...` and `20.4139...`;
+since both root numbers are `-1`, GRH would bound each analytic rank by 19.
 
 Evidence is classified as follows throughout this directory:
 
@@ -76,6 +83,11 @@ Evidence is classified as follows throughout this directory:
   invariant factors and discrete logarithms.  Both obtain binary rank 30, and
   a modulo-23 witness excludes rational 2-torsion.  This proves the second
   target unconditionally as a rank lower bound.
+- **Published low-conductor data and independent exact replay:** ICARM curve
+  245 has twenty rational points whose finite-reduction images have binary
+  rank 20.  Its exact conductor has `ln N=150.668907152237...<182.72`, making
+  it the smallest-conductor exact rank-at-least-20 curve currently recorded
+  here.  This improves the one-point-short frontier but is not a target hit.
 - **Historical record replay:** the 2024 Elkies--Klagsbrun curve has 29
   independent rational points.  Its exact rank 29 is conditional on GRH; the
   unconditional lower bound 29 does not use GRH.
@@ -131,8 +143,11 @@ canonical-height matrix.
 | --- | ---: | ---: | --- |
 | ICARM public record | curve 273 | `339.347931713664...` | **exact unconditional rank at least 30**; second operational target met, independently replayed; no unconditional exact-rank claim |
 | Fermigier benchmark | normalized `T=39508/39` | `182.724910950637...` | **exact unconditional rank at least 22**; misses the strict conductor bound by `0.004910950637...` |
+| ICARM low-conductor record | curve 245 | `150.668907152237...` | **exact unconditional rank at least 20**; independently replayed finite-reduction certificate; one point short of the target |
 | Fermigier--Mestre adapter | `u=28917/20` | `159.934825225525...` | **exact unconditional rank at least 20**; imported 58-abscissa search and finite-reduction certificate, one point short of the target |
 | Nagao section-7 family | constructor `T=5081/47` | `174.249816228548...` | **exact unconditional rank at least 20**; full mod-2-cover and skew searches found no 21st direction |
+| Split-infinity Mestre family 2 | `u=483`, `T=-8441/42` | `157.759935999987...` | **exact unconditional rank at least 19**; GRH-conditional analytic closure at 19 |
+| Split-infinity Mestre family 3 | `u=660`, `T=-12655/44` | `164.053646218834...` | **exact unconditional rank at least 19**; GRH-conditional analytic closure at 19 |
 | Nagao rank-21 family | constructor `T=6793/64` | `158.572648489303...` | **exact unconditional rank at least 19**; alternate-cover and skew searches remained in that subgroup |
 | Nagao rank-21 family | constructor `T=6629/174` | `154.795114152374...` | **exact unconditional rank at least 18**; historical-specialization replay |
 | Nagao rank-21 family | constructor `T=3137/72` | `149.535359251913...` | **exact unconditional rank at least 18**; exhaustive small-denominator search certificate |
@@ -170,10 +185,15 @@ rank >= 17.
 Its 17 exact points and finite-reduction matrices are stored in the section-7
 global-search artifact.
 
-The strongest conductor-qualified rank frontier now has two exact rank-at-
-least-20 fibers.  The imported Fermigier--Mestre adapter specialization
-`u=28917/20` has the smaller conductor, with `ln N=159.934825225525...`.
-Twenty exact rational points have full rank in finite-reduction quotients.
+The strongest conductor-qualified rank frontier now has three exact rank-at-
+least-20 fibers.  ICARM curve 245 has the smallest conductor, with
+`ln N=150.668907152237...`; its twenty exact rational points have full rank in
+finite-reduction quotients.  The independent certificate and bounded
+next-point search are documented in
+[`ICARM_CURVE245_RANK20.md`](notes/ICARM_CURVE245_RANK20.md).
+
+The imported Fermigier--Mestre adapter specialization `u=28917/20` remains a
+separate exact rank-at-least-20 anchor at `ln N=159.934825225525...`.
 The canonical record
 [`elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json`](../artifacts/generated-results/elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json)
 uses `fermigier-mestre-v1:u=28917/20` as the stable identity and records

@@ -31,15 +31,7 @@ import sys
 import time
 from typing import Any, Iterable, Sequence
 
-from icarm_curve273 import (
-    A as COEFFICIENT_A,
-    B as COEFFICIENT_B,
-    GENERAL_WEIERSTRASS_COEFFICIENTS,
-    POINTS as PUBLISHED_POINTS,
-    on_curve as point_on_general_curve,
-    short_coefficients as short_weierstrass_coefficients,
-    to_short as to_short_point,
-)
+import icarm_curve273
 from mod2_reduction_independence import (
     combined_mod2_rank,
     find_mod2_reduction_certificate,
@@ -59,6 +51,85 @@ REPRODUCING_COMMAND = (
     "PYTHONPATH=elliptic-curves/cas .venv/bin/python "
     "elliptic-curves/cas/search_icarm_curve273_rank31.py"
 )
+
+
+CURVE_ID = 273
+GENERAL_WEIERSTRASS_COEFFICIENTS = ()
+PUBLISHED_POINTS = ()
+point_on_general_curve = None
+short_weierstrass_coefficients = None
+to_short_point = None
+A1 = A2 = A3 = A4 = A6 = Q(0)
+
+
+def load_curve_data(curve_id: int, curve_json: Path | None = None) -> None:
+    """Select one public ICARM curve without duplicating the chart engine."""
+
+    global CURVE_ID
+    global GENERAL_WEIERSTRASS_COEFFICIENTS, PUBLISHED_POINTS
+    global point_on_general_curve, short_weierstrass_coefficients, to_short_point
+    global A1, A2, A3, A4, A6
+
+    if curve_json is not None:
+        payload = json.loads(curve_json.read_text(encoding="utf-8"))
+        if int(payload["id"]) != curve_id:
+            raise ValueError("--curve-id does not match --curve-json")
+        coefficients = tuple(Q(value) for value in payload["ainvs"])
+        points = tuple(tuple(Q(value) for value in point) for point in payload["points"])
+        if len(coefficients) != 5:
+            raise ValueError("ICARM JSON must contain five a-invariants")
+
+        def json_on_curve(point):
+            x, y = point
+            a1, a2, a3, a4, a6 = coefficients
+            return y*y + a1*x*y + a3*y == x**3 + a2*x**2 + a4*x + a6
+
+        def json_c4_c6():
+            a1, a2, a3, a4, a6 = coefficients
+            b2 = a1*a1 + 4*a2
+            b4 = 2*a4 + a1*a3
+            b6 = a3*a3 + 4*a6
+            c4 = b2*b2 - 24*b4
+            c6 = -b2**3 + 36*b2*b4 - 216*b6
+            return c4, c6
+
+        def json_short_coefficients():
+            c4, c6 = json_c4_c6()
+            return Q(0), Q(0), Q(0), -27*c4, -54*c6
+
+        def json_to_short(point):
+            x, y = point
+            a1, a2, a3, _a4, _a6 = coefficients
+            b2 = a1*a1 + 4*a2
+            return 36*x + 3*b2, 108*(2*y + a1*x + a3)
+
+        CURVE_ID = curve_id
+        GENERAL_WEIERSTRASS_COEFFICIENTS = coefficients
+        PUBLISHED_POINTS = points
+        point_on_general_curve = json_on_curve
+        short_weierstrass_coefficients = json_short_coefficients
+        to_short_point = json_to_short
+        A1, A2, A3, A4, A6 = coefficients
+        return
+
+    if curve_id == 273:
+        data = icarm_curve273
+    elif curve_id == 245:
+        import icarm_curve245 as data
+    elif curve_id == 90:
+        import icarm_curve90 as data
+    else:
+        raise ValueError(f"unsupported ICARM curve id: {curve_id}")
+    CURVE_ID = curve_id
+    GENERAL_WEIERSTRASS_COEFFICIENTS = data.GENERAL_WEIERSTRASS_COEFFICIENTS
+    PUBLISHED_POINTS = getattr(data, "SEARCH_POINTS", data.POINTS)
+    point_on_general_curve = data.on_curve
+    short_weierstrass_coefficients = data.short_coefficients
+    to_short_point = data.to_short
+    A1, A2, A3, A4, A6 = GENERAL_WEIERSTRASS_COEFFICIENTS
+
+
+load_curve_data(273)
 
 
 @dataclass(frozen=True)
@@ -128,11 +199,20 @@ def slope_discriminant(point: RationalPoint) -> Polynomial:
     x_point, y_point = point
     m: Polynomial = (Q(0), Q(1))
     n: Polynomial = (y_point, -x_point)
-    c2 = poly_add(poly_multiply(m, m), m)  # a1=1 and a2=0
+    c2 = poly_add(
+        poly_add(poly_multiply(m, m), poly_scale(m, A1)),
+        (Q(-A2),),
+    )
     alpha = poly_add((x_point,), poly_scale(c2, Q(-1)))
     c1 = poly_add(
-        poly_add(poly_scale(poly_multiply(m, n), Q(2)), n),
-        (Q(-COEFFICIENT_A),),
+        poly_add(
+            poly_add(
+                poly_scale(poly_multiply(m, n), Q(2)),
+                poly_scale(n, A1),
+            ),
+            poly_scale(m, A3),
+        ),
+        (Q(-A4),),
     )
     discriminant = poly_add(
         poly_add(
@@ -154,7 +234,7 @@ def slope_to_points(
     x_point, y_point = base_point
     slope = Q(slope)
     square_root = Q(square_root)
-    c2 = slope * slope + slope
+    c2 = slope * slope + A1 * slope - A2
     alpha = x_point - c2
     first_x = (-alpha + square_root) / 2
     second_x = (-alpha - square_root) / 2
@@ -169,20 +249,23 @@ def slope_to_points(
 
 
 def x_polynomial() -> Polynomial:
-    """Return ``(2y+x)^2=4x^3+x^2+4Ax+4B``."""
+    """Return the cubic for ``(2y+a1*x+a3)^2``."""
 
+    b2 = A1 * A1 + 4 * A2
+    b4 = 2 * A4 + A1 * A3
+    b6 = A3 * A3 + 4 * A6
     return (
-        Q(4 * COEFFICIENT_B),
-        Q(4 * COEFFICIENT_A),
-        Q(1),
+        Q(b6),
+        Q(2 * b4),
+        Q(b2),
         Q(4),
     )
 
 
 def x_chart_to_points(x_value: Fraction, square_root: Fraction) -> tuple[RationalPoint, RationalPoint]:
     points = (
-        (x_value, (-x_value + square_root) / 2),
-        (x_value, (-x_value - square_root) / 2),
+        (x_value, (-A1 * x_value - A3 + square_root) / 2),
+        (x_value, (-A1 * x_value - A3 - square_root) / 2),
     )
     if not all(point_on_general_curve(point) for point in points):
         raise AssertionError("an x-chart image missed the elliptic curve")
@@ -193,7 +276,7 @@ def point_negate(point: GroupPoint) -> GroupPoint:
     if point is None:
         return None
     x_value, y_value = point
-    return x_value, -y_value - x_value
+    return x_value, -y_value - A1 * x_value - A3
 
 
 def point_add(left: GroupPoint, right: GroupPoint) -> GroupPoint:
@@ -205,18 +288,18 @@ def point_add(left: GroupPoint, right: GroupPoint) -> GroupPoint:
         return left
     x1, y1 = left
     x2, y2 = right
-    if x1 == x2 and y1 + y2 + x1 == 0:
+    if x1 == x2 and y1 + y2 + A1 * x1 + A3 == 0:
         return None
     if left == right:
-        denominator = 2 * y1 + x1
+        denominator = 2 * y1 + A1 * x1 + A3
         if denominator == 0:
             return None
-        slope = (3 * x1 * x1 + COEFFICIENT_A - y1) / denominator
+        slope = (3 * x1 * x1 + 2 * A2 * x1 + A4 - A1 * y1) / denominator
     else:
         slope = (y2 - y1) / (x2 - x1)
     intercept = y1 - slope * x1
-    x3 = slope * slope + slope - x1 - x2
-    y3 = -(slope + 1) * x3 - intercept
+    x3 = slope * slope + A1 * slope - A2 - x1 - x2
+    y3 = -(slope + A1) * x3 - intercept - A3
     answer = (x3, y3)
     if not point_on_general_curve(answer):
         raise AssertionError("the exact group law returned an off-curve point")
@@ -238,7 +321,9 @@ def point_multiply(point: GroupPoint, scalar: int) -> GroupPoint:
 
 def exact_linear_combination(coefficients: Sequence[int]) -> GroupPoint:
     if len(coefficients) != len(PUBLISHED_POINTS):
-        raise ValueError("a relation vector must have length 29")
+        raise ValueError(
+            f"a relation vector must have length {len(PUBLISHED_POINTS)}"
+        )
     answer: GroupPoint = None
     for coefficient, point in zip(coefficients, PUBLISHED_POINTS):
         answer = point_add(answer, point_multiply(point, int(coefficient)))
@@ -470,6 +555,12 @@ def point_record(point: RationalPoint) -> dict[str, str]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--curve-id", type=int, default=273)
+    parser.add_argument(
+        "--curve-json",
+        type=Path,
+        help="ICARM single-curve JSON; required for curve ids without a local module",
+    )
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--x-pair-height", type=int, default=10_000)
     parser.add_argument("--x-offset-height", type=int, default=1_000_000)
@@ -481,6 +572,7 @@ def main() -> None:
     parser.add_argument("--stack-bytes", type=int, default=500_000_000)
     parser.add_argument("--certificate-prime-bound", type=int, default=1000)
     args = parser.parse_args()
+    load_curve_data(args.curve_id, args.curve_json)
     if min(
         args.x_pair_height,
         args.x_offset_height,
@@ -503,7 +595,8 @@ def main() -> None:
     )
     print(
         f"R31|stage=start"
-        f"|basis_rank=30"
+        f"|curve_id={CURVE_ID}"
+        f"|basis_rank={len(PUBLISHED_POINTS)}"
         f"|basis_points={len(PUBLISHED_POINTS)}"
         f"|charts={len(charts)}"
         f"|x_pair_height={args.x_pair_height}"
@@ -573,8 +666,8 @@ def main() -> None:
         if relation is not None:
             record.update(
                 {
-                    "classification": "exactly_in_certified_rank30_subgroup",
-                    "rank30_basis_relation": list(relation),
+                        "classification": "exactly_in_certified_subgroup",
+                        "basis_relation": list(relation),
                     "exact_fraction_group_law_replay": True,
                 }
             )
@@ -591,16 +684,16 @@ def main() -> None:
             record.update(
                 {
                     "classification": (
-                        "exact_independent_31st_point"
-                        if binary_rank == 31
-                        else "unresolved_after_rank30_relation_and_mod2_search"
+                        "exact_independent_next_point"
+                        if binary_rank == len(augmented)
+                        else "unresolved_after_relation_and_mod2_search"
                     ),
                     "augmented_mod2_rank": binary_rank,
                     "certificate_primes": [signature.prime for signature in signatures],
                     "certificate_prime_bound": args.certificate_prime_bound,
                 }
             )
-            target_hit |= binary_rank == 31
+            target_hit |= binary_rank == len(augmented)
         candidate_records.append(record)
 
         print(
@@ -648,8 +741,9 @@ def main() -> None:
                 "quartic chart boxes; no rank upper bound"
             ),
             "search_basis": (
-                "The search operates on the 30 independently certified rational "
-                "points of ICARM curve 273 and looks for a 31st direction."
+                f"The search operates on {len(PUBLISHED_POINTS)} independently "
+                f"certified points of ICARM curve {CURVE_ID} and looks for the "
+                "next direction."
             ),
         },
         "reproduction": {
@@ -688,7 +782,7 @@ def main() -> None:
             "unique_nonpublic_images": len(discovered),
             "candidate_records": candidate_records,
             "certified_independent_31st_point_count": sum(
-                record["classification"] == "exact_independent_31st_point"
+                record["classification"] == "exact_independent_next_point"
                 for record in candidate_records
             ),
             "rank31_target_hit": target_hit,

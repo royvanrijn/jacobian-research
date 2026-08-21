@@ -180,6 +180,178 @@ target_hit=false
 The JSON separates exact rational checks from the PARI/GP minimal-model,
 local-reduction, conductor, and 2-descent computations.
 
+### ICARM curve 245 low-conductor rank-20 replay
+
+Generate the exact certificate for public ICARM curve 245:
+
+```sh
+.venv/bin/python elliptic-curves/cas/verify_icarm_curve245_rank20.py
+
+.venv/bin/python elliptic-curves/cas/verify_icarm_curve245_rank20.py --check
+```
+
+This writes
+[`icarm_curve245_rank20_v1.json`](../artifacts/generated-results/elliptic-curves/icarm_curve245_rank20_v1.json).
+It verifies twenty exact rational points, a full-column-rank finite-reduction
+matrix, absence of rational 2-torsion, the complete discriminant
+factorization, every local conductor exponent, global minimality, and the
+exact inequality `log(N)<152.46<182.72`.  It proves `rank >= 20`
+unconditionally, but neither a twenty-first point nor a rank upper bound.  See
+[`notes/ICARM_CURVE245_RANK20.md`](notes/ICARM_CURVE245_RANK20.md).
+
+Replay the separate conditional `Delta=11/5` explicit-formula diagnostic:
+
+```sh
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/explicit_formula_icarm_curve245_delta22.py --check
+```
+
+The pinned result
+[`icarm_curve245_explicit_formula_delta22_v1.json`](../artifacts/generated-results/elliptic-curves/icarm_curve245_explicit_formula_delta22_v1.json)
+has conservative value `21.0189434907406...<22`.  Since the exact root number
+is `+1`, GRH would imply analytic rank at most 20, and GRH+BSD would imply
+algebraic rank exactly 20.  This does not change the unconditional status.
+
+Replay the exact recovery of curve 245's missing Fermigier/Mestre parent:
+
+```bash
+PYTHONPATH=elliptic-curves/cas .venv/bin/python -m unittest \
+  elliptic-curves/tests/test_icarm_curve245_mestre.py
+```
+
+The recovered parameters are `(u,v)=(3/2,2)`.  In the canonical integral-root
+chart the roots are `(0,106,344,475,594,731)` and the anchor is `T=5801/10`.
+The test checks the root formulas, family coefficients, extra generic section,
+and exact change to the public minimal model.
+
+Run the bounded conductor-first local neighborhood experiment with:
+
+```bash
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/search_icarm_curve245_mestre_neighborhood.py
+```
+
+Run the full canonical `a<=30000,b<=1000` rectangle with:
+
+```bash
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/search_icarm_curve245_mestre_neighborhood.py \
+  --parameter-min=1/1000 --parameter-max=30000 \
+  --numerator-bound=30000 --denominator-bound=1000 \
+  --output=artifacts/local/elliptic-curves/icarm245-mestre-global-a30000-b1000-v1.json
+```
+
+Promote the anchor's eight exact accidental pivot directions on the 16
+genus-one slices `x=+/-T+n` with:
+
+```bash
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/search_icarm_curve245_accidental_slices.py
+```
+
+These three searches write ignored local artifacts.  Their finite populations
+and exact conductor computations are reproducible, but their numerical height
+ranks and bounded misses are experiments, not rank upper bounds.
+
+Replay the second generalized-Fermigier rank-20 anchor, ICARM curve 275, and
+its exact `12 generic + 8 exceptional` decomposition:
+
+```bash
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/verify_icarm_curve275_mestre_rank20.py
+```
+
+Classify all 64 affine transports between the exceptional directions on
+curves 245 and 275:
+
+```bash
+sage elliptic-curves/cas/analyze_icarm245_275_cross_shape_transport.sage
+```
+
+Every residual squareclass is irreducible of degree 30 (genus 14), so this
+exact finite ansatz contains no genus-zero or genus-one transport.  It does
+not classify nonlinear paths in the full `(u,v,T,x)` space.
+
+Replay the conditional `Delta=11/5` explicit-formula diagnostics for ICARM
+curves 262 and 275:
+
+```bash
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/explicit_formula_icarm_curve262_275_delta22.py --check
+```
+
+The conservative values are respectively `21.0378455960...` and
+`21.3153055869...`, with exact root number `+1` in both cases.  The resulting
+fixed-fibre closure is conditional on GRH (and on BSD for algebraic rank).
+
+Complete the same conditional audit for the other three public
+rank-at-least-20 curves below the conductor cutoff:
+
+```bash
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/explicit_formula_icarm_curve7_226_243_delta22.py --check
+```
+
+The conservative values for curves 243, 226, and 7 are respectively
+`21.3580557352...`, `21.1934326698...`, and `21.3153720855...`; each exact
+root number is `+1`.  These are GRH-conditional analytic-rank closures, not
+unconditional algebraic-rank upper bounds.
+
+Replay the bounded accidental-slice deformation audit around curve 243 with:
+
+```bash
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/search_icarm_curve243_accidental_slices.py
+```
+
+At height 200,000 it recovers sixteen non-generic anchor abscissas and checks
+all 32 `x=+/-T+n` slices.  The two non-anchor cross-source collisions have
+parameters `27265/144` and `15580/7`; their exact log conductors are about
+`205.135` and `206.134`, so neither meets the target.  This is a bounded
+experiment and supplies no Mordell--Weil rank claim.
+
+Replay the analogous bounded audit around curve 226 with:
+
+```bash
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/search_icarm_curve226_accidental_slices.py
+```
+
+At height 200,000 it recovers nineteen non-generic anchor abscissas and all
+38 `x=+/-T+n` slices.  Two all-source collisions at `T=+/-69` are singular.
+The six regular collision fibres have stable numerical height rank 11 after
+the exact slice points are transported; four lie below the conductor cutoff.
+The JSON is written under `artifacts/local/elliptic-curves/`, and this remains
+a bounded experiment rather than a rank certificate.
+
+Run the bounded unused-slope genus-two deformation pass and its focused
+rank/conductor triage with:
+
+```bash
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/search_fermigier_rank22_multislope_collisions.py
+
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/search_fermigier_rank22_multislope_collisions.py \
+  --slopes 3 --triage \
+  --output artifacts/local/elliptic-curves/fermigier-e22-slope3-triage-v1.json
+```
+
+The first command searches the 55 declared degree-six slices at height
+200,000.  The second triages the six non-generic fibres found on the live
+slope.  Continue the only structured low-conductor lead through the two
+independent `T=2429/6` auxiliary sources with:
+
+```bash
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/search_fermigier_t2429_two_source_collisions.py \
+  --maximum-support 4 \
+  --output artifacts/local/elliptic-curves/fermigier-t2429-two-source-collisions-s4-v1.json
+```
+
+These are exact bounded searches but not rank certificates or rank upper
+bounds.  They produce ignored local artifacts.
+
 ### Rank-30 public record replay and historical rank-29 searches
 
 Generate the compact exact certificate for the 2026 public ICARM curve 273:
@@ -214,6 +386,349 @@ PASS independent Sage replay: 30 exact points, global minimal model, trivial tor
 Both commands prove `rank >= 30` unconditionally. Neither proves exact rank
 30 or rank at least 31. See
 [`notes/ICARM_CURVE273_RANK30.md`](notes/ICARM_CURVE273_RANK30.md).
+
+Exclude the tempting direct identification with a rational fiber of the
+explicit discriminant-43 K3 anchor:
+
+```sh
+sage elliptic-curves/cas/verify_curve273_not_disc43_anchor_fiber.sage
+```
+
+The cleared `j`-invariant equation is `t^6` times an irreducible degree-ten
+factor; its only rational root is the singular `I0*` fiber.  This excludes
+only direct fibers of that fixed anchor, not fibers of the still-unrecovered
+determinant-948 family through it.
+
+Replay the exact Humbert-8 construction for the parallel H2 Kumar model:
+
+```sh
+sage elkies-k3/scripts/verify_humbert8_d9e7_two_neighbor.sage
+sage elkies-k3/scripts/verify_rank17_h8_split.sage
+```
+
+This verifies the `D9+E7+4I1` pre-neighbor family, the explicit parameter
+`U=(X+s*T^3)/T^4`, the rational point on the resulting binary quartic, and
+its exact Jacobian equality with the published `E7+E8` Kumar equation.  It
+also verifies that the determinant-948 specialization has a torsion-free
+MW direction of forced height `237/2`.  This reconstructs the H2 Humbert-8
+comparison; it does not compute the Humbert-237 rank-jump divisor and is not
+the corrected H3/`H21 cap H92` source route.
+
+Replay the exact finite-field nontransversality diagnostic for the marked
+level-79 section at the rational CM-43 Humbert-8 point:
+
+```sh
+sage elkies-k3/scripts/compute_cm43_h237_tangent.sage \
+  --p 1000253 --third-order
+sage elkies-k3/scripts/verify_cm43_h237_tangent_crt.sage
+```
+
+The first-order section matrix has rank `358`, and the quadratic obstruction
+has a two-dimensional reduced radical.  A canonical choice of second
+correction produces a binary cubic; the second command reconstructs that
+slice cubic uniquely from twenty exact modular computations with a 399-bit
+CRT modulus.  Crucially, the first command also varies the second correction
+through the full first-order kernel.  The resulting gauge map and its
+augmentation both have rank one, so they absorb the entire cubic.  Therefore
+its rational factor is **not** an `H237` tangent.  This exact negative result
+explains why the pole-58 Taylor route remains nontransverse through third
+order.  The later fixed-component audit also shows that the marked CM-43 q8
+and q60 divisors collapse to the old fiber, so the live equation route is the
+noncollapsed CM-24 q80 chart.
+
+Replay the exact CM-24 q80 boundary, its characteristic-zero branch cubics,
+and the bounded modular cubic/quartic export with
+
+```sh
+sage elkies-k3/scripts/verify_q80_cm24_rational_model.sage
+sage elkies-k3/scripts/extend_q80_cm24_branches_qq.sage \
+  --slope=8/87 --order=36 --relation-degree=3 \
+  --pair-max-degree=0 --quiet-series --max-degree=0
+sage elkies-k3/scripts/extend_q80_rank19_branches_gf7.sage \
+  --order 85 --max-degree 0 --relation-degree 4 --slope 5 \
+  --relation-summary-only --minimal-quartics --centered-relations \
+  --ideal-output artifacts/generated-results/q80-cm24-slope-8-87-gf7-ideal.json
+```
+
+The exact run checks that the two centered characteristic-zero cubics reduce
+to the order-145 modular reference span.  The modular run reports quotient
+dimensions `1,5,15,33,48`, separates two cubics from twelve new quartics, and
+writes both centered affine and homogeneous `(z,D,P,Q,E)` generators.  The
+pinned artifact has SHA-256
+`d620f3443551ca11c510de3be5776ea9a2180f4a9a21b40ca7a941223eba08b8`.
+It is bounded finite-field formal evidence, not yet a normalized global curve
+or a characteristic-zero family.
+
+Replay the exact lattice continuation from the generic q80 frame to the
+rootless determinant-948 frame with
+
+```sh
+sage elkies-k3/scripts/verify_q80_to_rootless_path.sage
+sage elkies-k3/scripts/analyze_q80_rootless_first_neighbor.sage
+sage elkies-k3/scripts/derive_q80_first_q4_pencil.sage
+sage elkies-k3/scripts/analyze_q80_second_neighbor_chamber.sage
+sage elkies-k3/scripts/search_q80_second_neighbor_rr.sage
+sage elkies-k3/scripts/derive_q80_second_q4_pencil.sage
+sage elkies-k3/scripts/derive_q80_third_q12_pencil.sage
+sage elkies-k3/scripts/verify_q80_cm24_third_transport.sage
+sage elkies-k3/scripts/analyze_q80_third_q12_cm24_marking.sage
+sage elkies-k3/scripts/search_q80_third_q12_xgate_gf7.sage
+sage elkies-k3/scripts/search_q80_third_q12_local_module_gf7.sage
+sage elkies-k3/scripts/derive_q80_third_q12_local_gates.sage
+sage elkies-k3/scripts/derive_q80_third_q12_cm24_pencil.sage
+sage elkies-k3/scripts/verify_q80_third_q12_cm24_genus.sage --new-base 1
+sage elkies-k3/scripts/verify_q80_third_q12_cm24_genus.sage --new-base 7
+sage elkies-k3/scripts/analyze_q80_third_q12_cm24_weierstrass_gf73.sage
+sage elkies-k3/scripts/reconstruct_q80_third_q12_jacobian_gf73.sage
+sage elkies-k3/scripts/analyze_q80_third_q12_galois_descent_gf73.sage
+sage elkies-k3/scripts/analyze_q80_fourth_q12_chamber.sage
+sage elkies-k3/scripts/analyze_q80_fourth_q12_cm24_marking.sage
+sage elkies-k3/scripts/search_q80_third_child_polynomial_sections_gf73.sage --match-mw
+sage elkies-k3/scripts/derive_q80_fourth_q12_local_gates_gf73.sage \
+  --candidate 1 --selected-i2 5 --genus-gate --generic-only \
+  --scan-degenerations --write-artifact
+sage elkies-k3/scripts/analyze_q80_fourth_q12_moving_cubic_gf73.sage
+sage elkies-k3/scripts/analyze_q80_fourth_q12_moving_cubic_gf73.sage --sections
+sage elkies-k3/scripts/analyze_q80_fourth_q12_moving_cubic_gf73.sage \
+  --discriminant --write-artifact
+sage elkies-k3/scripts/analyze_q80_fifth_q4_chamber.sage
+sage elkies-k3/scripts/analyze_q80_fifth_q4_cm24_readiness.sage
+sage elkies-k3/scripts/build_q80_fifth_q4_local_module_ansatz_gf73.sage
+sage elkies-k3/scripts/reconstruct_q80_fifth_q4_projection_gf73.sage \
+  --minimum-withheld 8 --write-artifact
+sage elkies-k3/scripts/reconstruct_q80_fifth_q4_marked_projection_gf73.sage \
+  --mode pair14 --minimum-withheld 4 --write-artifact
+sage elkies-k3/scripts/analyze_q80_fifth_q4_marked_jacobian_gf73.sage \
+  --write-artifact
+sage elkies-k3/scripts/audit_q80_fifth_q4_pair14_twist_gf73.sage
+sage elkies-k3/scripts/analyze_q80_alternate_final_q6_chamber.sage
+sage elkies-k3/scripts/analyze_q80_alternate_final_q6_cm24_readiness.sage
+sage elkies-k3/scripts/verify_q80_alternate_fifth_q6_rootless.sage \
+  --write-artifact
+sage elkies-k3/scripts/analyze_rank17_h8_q9_fibers.sage --write-artifact
+sage elkies-k3/scripts/analyze_q80_alternate_fifth_rootless_bridge.sage
+sage elkies-k3/scripts/analyze_a13_q8_neighbors.sage
+sage elkies-k3/scripts/search_q80_first_neighbor_rr.sage \
+  --max-k 0 --discriminant-pairs-mod 101 --lift-pair-survivors
+sage elkies-k3/scripts/analyze_q80_rank19_marked_cover.sage
+sage elkies-k3/scripts/extend_q80_rank19_branches_gf7.sage \
+  --slope 5 --order 90 --max-degree 0 --relation-summary-only \
+  --validate-ideal artifacts/generated-results/q80-cm24-slope-8-87-gf7-ideal.json
+sage elkies-k3/scripts/extend_q80_rank19_branches_gf7.sage \
+  --slope 3 --order 36 --max-degree 0 --relation-degree 3 \
+  --centered-relations --relation-summary-only
+sage elkies-k3/scripts/analyze_q80_cm24_split_sextics.sage \
+  --input artifacts/generated-results/q80-cm24-slope-1-12-gf73-sextic-rref.json \
+  --plane-pair P D --plane-delta
+```
+
+The certified neighbor norms are `4,4,12,12,4,6`, the MW ranks are
+`3,4,5,6,13,16,17`, and the terminal frame is integrally isometric to
+`rank17_gram.txt`. The command also prints the complete target-to-q80
+Neron--Severi transport, whose canonical SHA-256 is
+`7116a499931bd096ba47fffc377a28690754bb451af0bdd7403f0e50438bd00d`.
+This certifies the geometric lattice path, not yet its equation-level pencils
+or the rationality of all final sections. The second command reduces the
+first q4 class to an old-degree-two, zero-MW-projection class and proves
+nonnegativity against every section by an exact rank-three height-shell
+calculation. An exact root-primitivity check and norm identity exclude the
+remaining possible degree-two multisection wall, proving the class nef.
+The third command resolves its local `D5+E6` component conditions and proves
+that the exact first pencil is `U=(x-T)/T^2`.  Its unrestricted ambient
+discriminant has `D9+A3`; the rank-19 collision upgrades this to the pinned
+`D9+A4`, and the exact CM24 boundary has `D9+A5+2A1`.  The bounded compact
+scan independently rediscovers this hit as `f=-T`; its earlier
+`D9+A4+A1` rejection criterion was incorrect because the child MW rank drops
+at CM24.
+The fourth command reconstructs the first child and reduces the second q4
+class to `4F+2O` minus explicit `A4+D9` components. Its exact saturated MW
+height shell proves nonnegativity against every section, while root
+primitivity excludes a negative bisection; the class is fully nef. The next
+two commands give the complete bounded CM24 coordinate audit and the exact
+generic second coordinate `W=(X-3v^3-x1v-x0)/v^2`. The CM24 finite special
+fiber has valuations `(3,4,8)`, hence `IV*`; the full signature is
+`D7+E6+3A1/MW2`, matching the transported pinned frame.
+The following command pins the third q12 CM boundary section. Exact I2
+profiles correct the abstract-basis identification to `Q_CM=P1+3P2`; this is
+a polynomial height-three section over `QQ(sqrt(-6))`. It verifies the
+three-dimensional generic-fiber chord space
+`<1,X,(Y+y(Q_CM))/(X-x(Q_CM))>`; the generic vertical `D7+D5` gates remain.
+The subsequent local-gate command uses the canonical D7 complete ideal
+`(Y,U^2,ZU,Z^3)` to derive the four resolved infinity rows. Together with the
+selected-I2 and E6 rows they give a rank-seven, nullity-two kernel. The plane
+model command clears the chord and removes the extraneous `X-Qx` factor.
+Direct normalization at split prime 73 gives irreducible genus-one fibers at
+new-base values 1 and 7. This certifies the resolved local filtration and
+rejects the earlier unresolved-cusp rows, which gave genera four and three.
+The following bounded Brill--Noether command uses the canonical simple
+infinity branch `xi=-6`
+at new-base value 7 to recover pole-2 and pole-3 functions. After scaling,
+their exact fiber is
+`y^2+12xy+27y=x^3+51x^2+40x+26` over `GF(73)`, with discriminant 44,
+`j=36`, 78 points, and trace -4. This is a fixed-fiber conversion certificate.
+The reconstruction command then uses 49 exact fibers plus seven withheld
+fibers to recover the bidegree-`(24,24)` `j`-map and short Weierstrass model
+over `GF(73)(V)`. Its discriminant is `2I7+3I2+4I1`, proving the full
+`2A6+3A1/MW3` CM24 marking. This remains a finite-characteristic Jacobian;
+its characteristic-zero lift is the next gate. The next command reconstructs
+the conjugate `sqrt(-3)=56` map and exhausts the pole-marked
+`PGL2(F_73)` descent candidates. None relates it to the `sqrt(-3)=17` map.
+The exact coefficient arrays, normalized `c4,c6,A,B` models, and equal-`j`
+cross-polynomial are in
+[`q80-third-q12-jacobian-gf73.json`](../artifacts/generated-results/q80-third-q12-jacobian-gf73.json).
+The smooth rational fixed-`j` residue is `V=-27`; `V=-37` is a discriminant
+artifact. These are exact characteristic-73 statements, not a
+characteristic-zero descent.
+
+The next six commands advance the fourth q12 step. The generic chamber
+certificate reduces the class to a nef old-degree-three divisor, proves
+nefness by a centered rank-six MW/root-CVP wall enumeration, and identifies
+its height-15 horizontal section. At CM24 that section has `P.O=2`; the
+node-constrained search recovers all 30 polynomial sections, matches an exact
+saturated basis, and verifies `Q=-P1-3P2-P3`. The coefficient artifact is
+[`q80-fourth-q12-cm24-gf73.json`](../artifacts/generated-results/q80-fourth-q12-cm24-gf73.json).
+Smith saturation then gives a ten-dimensional ambient module, and the exact
+resolved component matrix has rank eight/nullity two for `candidate=1`,
+selected `I2=5`. The resulting bidegree-`(2,14,3)` moving equation is
+irreducible of function-field genus one at `T=1`. Its finite reducible
+support is `14,25,47,58,67`, with factor patterns `(1,2),(1,2),(1,1,1),
+(1,1,1),(1,2)`; the infinity cubic is irreducible. Combined with the exact
+CM24 child lattice `A5+A3+4A2`, this certifies the semistable fiber multiset
+`I6+I4+4I3`. The stripped branch sextic has local discriminant orders
+`3,4,6,3,3`, assigning finite fibers `I3,I4,I6,I3,I3` in the displayed
+support order; the remaining lattice `A2` is the irreducible infinity `I3`.
+The section audit finds five nonconstant degree-one old-section maps, so the
+next step is direct algebraic lowering rather than another normalization or
+`L(3P)` run. The compact artifact SHA256 is
+`c6560b3db2d1232866e9996fc727924090aa46293c2482885cf9f9dbf4c21c89`.
+The derived branch-discriminant artifact SHA256 is
+`6caa3c9bb83a115a1e40689bf23d58dea1dd7ae1c77795f9970b6d24517a7ef0`.
+
+The final two commands perform the fifth-q4 readiness audit without first
+constructing the fourth Jacobian. Generically the reduced divisor has old
+degree two, `D.O=0`, MW norm six, and child `A1/MW16`. At CM24 its horizontal
+class has coordinates `(-1,1)`, height `5/12`, and pole count zero in the
+specialized rank-two MW lattice. The five correctly oriented degree-one
+sections span that entire lattice; the target is the inverse of the section
+with old x-coefficients `(12,26,13,39,49)`. This identifies the horizontal
+direction. The local-module command verifies its selected y-sign and exact
+base map `T=(-4V+30)/(V-34)`, records the factor met at every
+`I6/I4/I3` support, and pins
+`L(O+(-R))=Hom_A(I_O I_{-R},A)` as a two-dimensional fractional module over
+the normalized compact coordinate ring. Its artifact SHA256 is
+`7cadf12e4035dc9325f3249158f906762aba85cebdb2e92cb4de93efc2140d15`.
+The compensated generator and vertical gates are not yet constructed.
+
+The next four commands separate rejected fiberwise gauges from the viable
+marked alternate fifth presentation. The unmarked depressed coordinate
+reconstructs but has squarefree branch degree 12 and is rejected. Normalizing
+each independent fiber first by the marked section pair `(1,4)` reconstructs
+all twelve residual coefficients from fourteen fibers, passes four withheld
+fibers, and gives a degree-four squareclass, hence a genus-one gate over
+`GF(73)`. Its artifact SHA256 is
+`e46c9925c6870a6f9185f36994a5aef682382bba7a9bf8d2adc3d897420988fa`.
+Restoring the factorization unit gives the exact polynomial `(8,12)`
+Jacobian with fibers `I6+I6+I5+I2+5I1`, CM24 root rank 15, and MW rank 3.
+The local audit rejects the monic odd part: it has Euler number 48 and root
+rank 31 because the nonsquare unit divisor contributes four geometric `I0*`
+fibers.
+The twisted-Jacobian artifact SHA256 is
+`78c654d35acccb907a3b019bc309c84d7d7b705d8d6a521e17f3f169fad67ca9`.
+
+The pair-14 equation is not yet matched to the selected lattice child: its CM
+root data are `(15,82,360)`, whereas the selected witness specializes to
+`(16,66,2048)`. Thus the marked pair fixes the horizontal function but not
+the vertical completion. Separately, the bounded q2--q6 continuation from the
+selected `A1/MW16` child found a different rootless frame at q6, with
+`(a,b)=(2,3)` and witness
+`(0,-2,4,2,-1,2,1,-1,1,0,1,-1,1,0,0,0,0)`. The exact q80-to-q4-to-q6
+composite has determinant one. Its machine-readable frame/transport artifact
+SHA256 is
+`48381d91e288b2cefb85b1484d351d659748f801ea57d190453bd2db0a56eaab`.
+After two component reflections the final q6 divisor has old degree two,
+`D.O=1`, and MW norm `23/2`. At CM24 its horizontal data are `(-1,-3)`,
+height `7/2`, and `P.O=1`. The bounded next gate is to match all sixteen
+fifth-q4 vertical classes before using any pair-14 equation for this q6 suffix.
+
+The Humbert-8 checker classifies the first fibers in the distinguished
+determinant-237 complement. There is no q8 fiber; at q9 there are thirteen
+classes up to sign, none rootless. Their root ranks are 8--10, with best root
+data `(8,20,144)` and `(8,22,108)`. The artifact SHA256 is
+`8998d250ae0b92f2e7dc891e61dc94614242508f152eab07970351cffa3503de`.
+Even the closest of these q9 frames has norm `19,631,636,396` in the selected
+fifth marking, so it is not a hidden short continuation of that lattice node.
+
+The final split-prime command certifies the generic fifteen-sextic slope-3
+candidate at `p=73`: Hilbert polynomial `48*t-93`, irreducible `(P,D)` plane
+degree 32, affine/infinity delta `223+241=464`, and normalization genus one.
+It also counts 59 normalized points, trace 15, which matches neither known
+source elliptic quotient nor a quadratic twist. At `p=127` the candidate trace
+is 22 and again fails both source factors; the independent `p=79` replay gives
+the same genus invariants. Conditional on the fifteen-sextic finite-jet ideal
+being global, this rejects slope `1/12` as the source component and returns
+the live marking problem to slope `8/87` with the third pole section `P3/Q79`.
+
+The marked-cover command proves that the rational slope-5 surface family has
+distinct genus-two and genus-three marking fields, whose biquadratic
+compositum has genus six. The genus-two quotient is not the known source
+curve modulo seven; its branch set also lacks the required bielliptic
+involution over `GF(49)`, and the third quotient has the wrong elliptic
+`j`-invariant. The order-90 command validates all fourteen surface
+generators on five withheld coefficients beyond their fitting jet, while the
+last command proves that the other slope has no determined centered relation
+of degree at most three through order 36. These are finite-characteristic
+route discriminators, not characteristic-zero nonexistence results.
+
+Replay the exact cubic-ideal descent certificate and the global relation-pool
+audit with:
+
+```sh
+sage -python elliptic-curves/cas/verify_curve273_full_ideal_descent_chain.sage
+sage -python elliptic-curves/cas/analyze_curve273_relation_pool.py \
+  --include-full-ideal-chain --include-crt-cycle-logs
+```
+
+The first command certifies eleven arbitrary-ideal/CRT relations. Its main
+support-count path is `2,3,2,4,2,4,1,5,4,5`, ending at five degree-one ideals
+of sizes `23,26,27,39,40` bits; it also certifies the inferior side path
+`147 -> (49,74) -> (25,96)`. Every declared ideal has valuation exactly one,
+and every undeclared norm factor belongs to the ordinary factor base or `S`.
+The pooled audit has 354 independent rows on 676 large-prime columns and
+nullity zero, so it does not yet produce a factor-base-only relation.
+
+Include exact arbitrary-ideal rows from bounded lattice-search logs with:
+
+```sh
+sage -python elliptic-curves/cas/analyze_curve273_relation_pool.py \
+  --include-full-ideal-chain --include-crt-cycle-logs \
+  --include-ideal-lattice-logs \
+  --ideal-glob 'artifacts/local/elliptic-curves/curve273-*-20260821.log'
+```
+
+The current dated checkpoints add 90 nonduplicate exact rows.  The combined
+matrix has 444 rows, rank 444 on the large-prime columns, and nullity zero.
+This is a bounded negative relation-collection result, not a complete descent.
+
+Replay the bounded search at the current endpoint with:
+
+```sh
+sage -python elliptic-curves/cas/search_curve273_ideal_lattice_relations.sage \
+  --target 7636709:6045380 \
+  --target 56740549:8493651 \
+  --target 104379329:22584173 \
+  --target 413582930291:366762253550 \
+  --target 555442705507:488627836116 \
+  --radius 18 --shape-shifts=-48,-24,0,24,48 \
+  --preselect 3000 --factor-top 800 --factor-base-bound 1000000
+```
+
+That declared run finds no closure and no continuation below the current
+40-bit maximum (its best new maximum is 55 bits). The search ranks recursive
+continuations by maximum LP size and then total LP size; support count is only
+the third discriminator. This ordering is essential because a one-prime
+163-bit residual had previously hidden the productive multi-prime descent.
+Both this search and `probe_curve273_crt_cycle.py --prime-only` strip allowed
+support by primorial gcd rather than a Python loop over all 78,498 primes.
 
 The remaining commands in this section replay the previous 2024 record and
 its bounded, historically negative searches.
@@ -467,6 +982,22 @@ The archival discovery replay expects the locally installed `ratpoints`
 bundle at `tmp/ratpoints/root/usr/bin/ratpoints`; the tracked certificate does
 not.  Its 102 capped conductor calls and finite ratpoints box are not negative
 upper-bound evidence.
+
+Replay the two later exact rank-19 split-infinity frontiers and their
+conditional explicit-formula diagnostics:
+
+```sh
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/certify_mestre_dsquare_rank19_frontiers.py --check
+```
+
+[`elliptic_mestre_dsquare_rank19_frontiers.json`](../artifacts/generated-results/elliptic_mestre_dsquare_rank19_frontiers.json)
+contains the exact rational-point searches and mod-3 reduction matrices for
+family 2 at `u=483` and family 3 at `u=660`, together with direct minimal
+models, conductors, root numbers, and `Delta=11/5` prime sums.  It proves
+rank at least 19 and the strict conductor cutoff unconditionally for both.
+The analytic-rank-at-most-19 conclusions additionally require GRH; identifying
+algebraic rank exactly 19 additionally requires BSD.
 
 ## Nagao 1994 replay and rank-13 searches
 

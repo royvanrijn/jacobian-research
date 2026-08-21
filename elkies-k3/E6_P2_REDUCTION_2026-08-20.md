@@ -1,8 +1,8 @@
-# E6 P2 reduction and GF(31) search state — 2026-08-20
+# E6 P2 reduction and corrected GF(31) search state — 2026-08-20
 
 This note records the current transition from the first explicit E6/P1 modular reconstruction to the search for a genuinely independent second Mordell-Weil section.
 
-## Verified first E6/P1 point
+## First reconstructed E6/P1 point: boundary correction
 
 The first fully reconstructed point over `GF(31)` has
 
@@ -26,7 +26,20 @@ X1(t) = 16*t^2 + 27*t + 11
 Y1(t) = t^4 + 11*t^3 + 28*t^2 + 19*t + 3.
 ```
 
-The full section identity and all local fiber conditions verify exactly.
+The full section identity and all closed fiber equations verify exactly.
+However, a later exact discriminant audit found
+
+```text
+ord_0(Delta) = 4,
+ord_1(Delta) = 5,
+ord_24(Delta) = ord_18(Delta) = 2.
+```
+
+Thus the fiber at `t=1` is `I5`, not `I4`.  This point lies on a fiber-
+enhancement boundary and is not a point of the required open
+`IV* + I4 + I4 + I2 + I2 + 4 I1` stratum.  The reconstruction script has
+always printed `delta_mult=5`; the earlier prose failed to enforce the exact-
+multiplicity open condition.
 
 The 8x8 Jacobian of the reduced fiber system with respect to
 
@@ -34,7 +47,9 @@ The 8x8 Jacobian of the reduced fiber system with respect to
 a1,a2,a4,lambda,mu,s1,sl,sm
 ```
 
-has full rank over `GF(31)`, so this point lies on a smooth 3-dimensional local P1 chart with local parameters `(r0,s0,x1)`. Newton/Hensel lifting converges quadratically.
+has full rank over `GF(31)`, so this point is smooth on the closed equation
+scheme with local parameters `(r0,s0,x1)`.  That Jacobian statement does not
+put it in the desired exact-fiber open stratum.
 
 ## P3 is dependent on this residue branch
 
@@ -161,7 +176,9 @@ The polynomial-square test should be implemented by coefficient recursion rather
 
 ## First P2 check
 
-The first verified E6/P1 surface above was exhaustively tested with the larger pre-reduction P2 search and produced no canonical P2 section. Together with `P1=-2*P3`, this confirms that the first modular point is not yet the desired independent rank-3 seed.
+The boundary surface above was exhaustively tested with the larger
+pre-reduction P2 search and produced no canonical P2 section. Together with
+`P1=-2*P3`, this confirms that it is not the desired independent rank-3 seed.
 
 ## Exhaustive GF(31) core search
 
@@ -177,16 +194,68 @@ The reduced four-parameter core `(a1,a2,a4,s1)` has only `31^4` possibilities. E
                  (23,11, 8, 5), roots [23,10]
 ```
 
-These are now the complete split-root GF(31) core candidates, rather than random samples.
+These are the complete candidates returned by that reduced common-factor
+test, rather than random samples.  They still require reconstruction, exact
+Kodaira multiplicities, squarefree residual discriminant, and deeper component
+tests; the common-factor test alone is not a promotion certificate.
 
-## Current next step
+## Corrected seven-core audit
 
-For each of the seven split-root cores:
+[`scripts/search_e6_mw3_p2_split_cores.sage`](scripts/search_e6_mw3_p2_split_cores.sage)
+reconstructs every candidate that lies in the triangular chart and applies all
+of those gates.  The exact outcome is:
 
-1. reconstruct valid P1 chart points `(r0,s0,x1)`;
-2. reconstruct the complete E6 surface and verify P1;
-3. test both lambda/mu labelings;
-4. run the reduced 837-case P2 search using `X2=C+q0*F`;
-5. if a P2 hit is found, verify the exact group-law relation against P1/P3 and retain only genuinely independent sections.
+| core | reconstruction result | reduced P2 result |
+|---:|---|---|
+| 1 | exact target fiber stratum; double roots `7,28` | 0 square hits |
+| 2 | boundary: `ord_1(Delta)=5` | rejected before P2 |
+| 3 | denominator zero in this triangular chart | not tested |
+| 4 | only one reconstructed double root | rejected |
+| 5 | no reconstructed double root | rejected |
+| 6 | only one reconstructed double root | rejected |
+| 7 | exact target fiber stratum; double roots `10,23` | 2 signed square hits, both wrong component |
 
-A successful P2 point is the desired modular seed for moving from the 3-dimensional P1 locus toward the one-dimensional rank-3 family that can ultimately be specialized in a search for very high-rank elliptic curves.
+On core 7, the square section has finite component profile
+
+```text
+(2,2,1,1)
+```
+
+at the two `I4` and two `I2` fibers.  The target is `(1,2,1,1)`.  The exact
+test is group-theoretic: `2*P2` meets the identity component at both `I4`
+fibers, so both `I4` labels are `2`.  The two signs are therefore rejected.
+The diagnostic verifier
+[`scripts/verify_e6_mw3_p1p2_gf31.sage`](scripts/verify_e6_mw3_p1p2_gf31.sage)
+also proves that this wrong-profile section is independent of `P1`; that fact
+does not repair its height-lattice mismatch.
+
+The canonical polynomial `P3` ansatz on core 7 is even smaller: parity reduces
+it to 961 quadratic-X cases.  The complete search in
+[`scripts/search_e6_mw3_p3_fixed.sage`](scripts/search_e6_mw3_p3_fixed.sage)
+has zero hits.
+
+Therefore this coordinate slice currently has two exact target-fiber P1
+surfaces and **no canonical P1+P2 seed**.
+
+## Superseding full-height gate
+
+Subsequent all-chart scans showed that moving to more coordinate slices while
+retaining these gates was still insufficient.  Every candidate must pass, in
+this order:
+
+1. exact `I4,I4,I2,I2` multiplicities and squarefree residual discriminant;
+2. the reduced 837-case square test `X2=C+q0*F`;
+3. the deeper `I4` component test by specializing `2*P2`;
+4. the exact P1/P2 height gate `(P1+P2).O=1`;
+5. the 961-case canonical `P3` test;
+6. the full height lattice and a smooth Jacobian for the combined section
+   equations.
+
+A point passing all six gates would be the modular seed needed to cut the
+three-dimensional P1 locus toward the one-dimensional rank-3 family.
+
+Complete rational-chart scans over `GF(5),GF(7),GF(11),GF(13),GF(17)` found
+69 sections passing gate 3 and none passing gate 4.  Therefore the next search
+must encode the missing intersection condition algebraically rather than
+continue the old scan over larger primes.  See
+[`E6_MW3_ATTACK.md`](E6_MW3_ATTACK.md) for the exact counts.

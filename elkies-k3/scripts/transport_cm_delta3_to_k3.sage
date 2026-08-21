@@ -2,10 +2,11 @@ from sage.all import *
 from pathlib import Path
 import argparse
 
-ap=argparse.ArgumentParser(description="Transport the Delta=-3 Gross CM embedding into recovered K3 transcendental coordinates.")
+ap=argparse.ArgumentParser(description="Transport a Gross CM embedding into recovered K3 transcendental coordinates.")
 ap.add_argument("--Tgram",default="artifacts/local/elkies-k3/cm-t2-candidates.txt")
 ap.add_argument("--Tid",type=int,default=0)
 ap.add_argument("--Ufile",default="artifacts/local/elkies-k3/clifford-class-match.txt")
+ap.add_argument("--target",type=int,choices=(3,24,43),default=3)
 ap.add_argument("--out",default="artifacts/local/elkies-k3/cm-delta3-k3-vector.txt")
 a=ap.parse_args()
 
@@ -117,10 +118,17 @@ HC=(2*GC).change_ring(ZZ)
 assert U*HC*U.transpose()==HT
 print(f"CMK3|stage=isometry|status=OK|HCdet={HC.det()}",flush=True)
 
-# Exact norm-3 Gross vector previously found.
+# Exact primitive Gross vectors previously found.
 gens=A.gens(); ii,jj,kk=gens[0],gens[1],gens[2]
-beta=-3*ii-jj+kk
-assert nr(beta)==3
+beta_by_target = {
+    3: -3*ii-jj+kk,
+    24: -78*ii+38*jj-24*kk,
+    # Gross coordinates (-11,5,-1) in the exact basis
+    # (i+j+37*k, 2*j+112*k, 158*k).
+    43: -11*ii-jj-5*kk,
+}
+beta=beta_by_target[a.target]
+assert nr(beta)==a.target
 print(f"CMK3|stage=beta|beta={beta}|norm={nr(beta)}",flush=True)
 
 # Functional lambda(y)=Trd(beta*y) on (O^sharp)^0.
@@ -155,7 +163,7 @@ for x in vi:
 
 normH=ZZ(vi*HT*vi)
 div=gcd([abs(ZZ(x)) for x in HT*vi])
-print(f"CMK3|Delta=-3|k3_vector={tuple(vi)}|normH={normH}|qT={QQ(normH)/2}|div={div}",flush=True)
+print(f"CMK3|Delta=-{a.target}|k3_vector={tuple(vi)}|normH={normH}|qT={QQ(normH)/2}|div={div}",flush=True)
 
 # Orthogonal complement in T.
 row=matrix(ZZ,1,3,list(vi*HT))

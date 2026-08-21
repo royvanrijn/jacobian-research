@@ -14,6 +14,604 @@ dependency-light gate is:
 make verify-elliptic-curves PYTHON=python3
 ```
 
+## Level-474 branch in the Kumar H92 chart
+
+This exact Sage replay downloads the pinned Humbert-21 equation and extracts
+the pinned Elkies--Kumar H92 chart, then identifies the correct component
+modulo 11.  It normally completes in under one minute.
+
+```bash
+mkdir -p artifacts/local/humbert-inputs
+curl -L https://www.maths.usyd.edu.au/u/davidg/ThesisData/SatakeHumbert/level1_21.txt \
+  -o artifacts/local/humbert-inputs/level1_21.txt
+curl -L https://export.arxiv.org/e-print/1209.3527 \
+  -o artifacts/local/humbert-inputs/elkies-kumar-source.tar
+tar -xf artifacts/local/humbert-inputs/elkies-kumar-source.tar \
+  -C artifacts/local/humbert-inputs 21/21.txt 92/92.txt 92/igusa92.txt
+sage -python elkies-k3/scripts/verify_h21_h92_level474_branch.sage \
+  --h21 artifacts/local/humbert-inputs/level1_21.txt \
+  --h92 artifacts/local/humbert-inputs/92/igusa92.txt \
+  --output artifacts/generated-results/elkies-k3-h21-h92-level474-branch-mod11.json
+```
+
+Expected terminal status:
+
+```text
+H21H92|stage=complete|status=PASS_COMPUTATIONAL_BRANCH_IDENTIFICATION
+```
+
+The result is an exact one-prime computational identification.  The separate
+characteristic-zero reconstruction and normalization below promote this to an
+exact birational identification; see
+[`elkies-k3/KUMAR_E7E8_BACKTRACK.md`](elkies-k3/KUMAR_E7E8_BACKTRACK.md).
+
+The corresponding characteristic-zero component equation is reconstructed
+and proved with the following modular workers.  Each worker normally finishes
+in under one minute; the jobs are independent and two may be run concurrently
+on a typical workstation.
+
+```bash
+mkdir -p artifacts/local/humbert-level474-modp
+for p in 17 19 23 29 31 41 43 47; do
+  sage -python elkies-k3/scripts/factor_h21_h92_level474_modp.sage \
+    --prime "$p" \
+    --h21 artifacts/local/humbert-inputs/level1_21.txt \
+    --h92 artifacts/local/humbert-inputs/92/igusa92.txt \
+    --output "artifacts/local/humbert-level474-modp/target-p${p}.json"
+done
+```
+
+Combine those images and run the exact 961-specialization degree-bound
+certificate:
+
+```bash
+sage -python elkies-k3/scripts/reconstruct_h21_h92_level474_qq.sage \
+  --h21 artifacts/local/humbert-inputs/level1_21.txt \
+  --h92 artifacts/local/humbert-inputs/92/igusa92.txt \
+  --modular-factor artifacts/local/humbert-level474-modp/target-p17.json \
+  --modular-factor artifacts/local/humbert-level474-modp/target-p19.json \
+  --modular-factor artifacts/local/humbert-level474-modp/target-p23.json \
+  --modular-factor artifacts/local/humbert-level474-modp/target-p29.json \
+  --modular-factor artifacts/local/humbert-level474-modp/target-p31.json \
+  --modular-factor artifacts/local/humbert-level474-modp/target-p41.json \
+  --modular-factor artifacts/local/humbert-level474-modp/target-p43.json \
+  --modular-factor artifacts/local/humbert-level474-modp/target-p47.json \
+  --output artifacts/generated-results/elkies-k3-h21-h92-level474-factor-qq.json
+```
+
+Expected terminal status:
+
+```text
+H21H92QQ|stage=complete|status=PASS_CHARACTERISTIC_ZERO_FACTOR
+```
+
+This proves the characteristic-zero degree-21 component equation.  Normalize
+it and verify the exact map to the published level-474 sextic with:
+
+```bash
+sage -python elkies-k3/scripts/normalize_h21_h92_level474_qq.sage \
+  --factor artifacts/generated-results/elkies-k3-h21-h92-level474-factor-qq.json \
+  --adjoint-cache artifacts/local/humbert-level474-adjoint.json \
+  --output artifacts/generated-results/elkies-k3-h21-h92-level474-normalization.json
+```
+
+The first run computes and caches a degree-nine adjoint basis and normally
+takes under one minute.  Cached runs take a few seconds.  The script takes the
+exact involution quotient, applies a pinned Cremona reduction from degree 13
+to degree 11, saturates and LLL-reduces the adjoint lattice, recovers a
+degree-one parameter from its order-eight/order-nine osculating kernels, and
+checks the Padé inverse by exact substitution.  It then verifies an exact
+Möbius-plus-square identity with the published sextic.
+
+Expected terminal status:
+
+```text
+H21H92NORM|stage=complete|status=PASS_LEVEL474_NORMALIZATION
+```
+
+The published non-CM point is also an exact rational source anchor for the
+H3 construction.  The following checker maps `(13/7,12048/343)` to the H92
+chart, recovers a rational H21 presentation, proves that the short
+Weierstrass models are isomorphic over `QQ` (the twist parameter itself is a
+rational square), and replays the bidegree-`(3,3)` H21 entrance cubic from
+the pinned `21/21.txt` source.  The displayed rational point is a nonflex.
+It also records that the H21 and H92 oriented Hilbert-cover coordinates both
+have square class `-52203427`, so their common orientation field is quadratic
+rather than biquadratic.
+
+```bash
+sage -python elkies-k3/scripts/verify_h3_noncm_q6_source_anchor.sage \
+  --h92 artifacts/local/humbert-inputs/92/igusa92.txt \
+  --h92-entrance artifacts/local/humbert-inputs/92/92.txt \
+  --h21-entrance artifacts/local/humbert-inputs/21/21.txt \
+  --output artifacts/generated-results/elkies-k3-h3-noncm-q6-source-anchor.json
+```
+
+Expected terminal status:
+
+```text
+H3NONCMQ6|stage=complete|status=PASS_H3_NONCM_Q6_SOURCE_ANCHOR
+```
+
+The authoritative artifact SHA-256 is
+`0560b1921c87ad2d8db6c293ce070cb30aa75626315801e3e4a71cad59573ea5`.
+This certificate stops at the `A2+A6+E8 -> E7+E8` H21 entrance.  It proves
+the unmarked H21/H92 surfaces are isomorphic over `QQ`, but by itself does not
+identify the entrance cubic with the desired `E7+E8 -> E8+E6` q=6 pencil.
+The separate exact descent checker below now proves that the height-`21/2`
+section and both signed q=6 divisor classes are individually defined over
+`QQ(r,s)`.  Constructing an explicit basis of `H0(O+(-P1)-F)` is the remaining
+equation-level step.  The common nonsquare orientation field is compatibility
+data for the H21/H92 intersection, not a K3-section descent obstruction.
+
+```bash
+sage -python elkies-k3/scripts/verify_h21_q6_section_descent.sage
+```
+
+The pinned ancillary model starts with split `A2+A6+E8` fibers and a
+3-neighbor over `QQ(r,s)`.  Its trivial lattice has squarefree determinant
+`3*7=21`, so these rational curves already generate the generic H21
+Neron--Severi lattice integrally.  The transported `E7+E8` MW generator is
+therefore individually rational and has height `21/2`; `P1`, `-P1`, and
+`D=O+(-P1)-F` are all Galois fixed.  The generated artifact
+`artifacts/generated-results/elkies-k3-h21-q6-section-descent.json` has
+SHA-256
+`9ccdfc7b7a1ca79d549c161e9922051e9f90d7b89ddc81057e17188eedc2a4d2`.
+
+The complementary H92 direction in the rank-two H3 source is certified by:
+
+```bash
+sage -python elkies-k3/scripts/verify_h92_section_descent.sage
+```
+
+The pinned H92 ancillary construction begins with split `D6+A8+A1` fibers
+and an explicit section of height `4-1/2-20/9=23/18`.  Adjoining that section
+gives determinant `92` and Smith factors `(2,46)`.  The checker exhausts all
+92 discriminant classes and finds no nonzero isotropic class, proving that
+there is no proper even overlattice.  It also replays the split-square and
+section identities at the exact non-CM target.  Since the ancillary two- and
+three-neighbor parameters are rational over `QQ(r,s)`, the height-`46`
+generator on the final `E7+E8` fibration is individually rational.  Thus both
+directions in the H3 height Gram `[[21/2,3],[3,46]]` are rational, rather than
+only their span.  Expected terminal status:
+
+```text
+H92DESCENT|status=PASS_H92_SECTION_Q_DEFINED
+```
+
+The generated artifact
+`artifacts/generated-results/elkies-k3-h92-section-descent.json` has SHA-256
+`fe525f75fa87c31afb34755fe63fc778349d2843010eb5c9b17ce6d8b8712e40`.
+This is an exact lattice and field-of-definition certificate; it does not
+recover explicit height-`46` section coordinates on the final short H92
+model.  Those coordinates are not needed for the first q=6 chord, which uses
+the height-`21/2` section below, but may be needed for later equation-level
+section transport.
+
+The complete defining equation of the H3 source family is exported by:
+
+```bash
+sage -python elkies-k3/scripts/export_h3_level474_source_family.sage
+```
+
+Over the published genus-two curve
+
+```text
+Y^2=-27*X^6+198*X^4-171*X^2+576,
+```
+
+the normalization artifact gives rational functions `t(x)`, `a(x)` and a
+published-`Y` multiplier.  The checker inverts the linear-fractional
+`X`-map, sets `Y0=Y/m(x)`, and proves the exact H92 chart formulas
+
+```text
+r=(a+Y0)/2,   s=2/(Y0-a).
+```
+
+It then proves the degree-21 H21/H92 component equation after composition and
+exports the short elliptic K3 family
+
+```text
+v^2=u^3+(A1*tau^3+A*tau^4)*u+(B1*tau^5+B*tau^6+B2*tau^7),
+```
+
+where the five coefficient formulas are the pinned H92 functions evaluated
+at this `(r,s)`.  The fibers are `E7` at `tau=0` and `E8` at infinity; the
+two individually rational MW directions have height Gram
+`[[21/2,3],[3,46]]`.  Exact specialization of `(X,Y)=(13/7,12048/343)` gives
+`(r,s)=(-3621005/690947,158286/143585)` and the same five coefficients as the
+source-anchor certificate.  Expected status:
+
+```text
+H3SOURCE|status=PASS_EXACT_H3_SOURCE_FAMILY
+```
+
+The generated artifact
+`artifacts/generated-results/elkies-k3-h3-level474-source-family.json` has
+SHA-256
+`8f5afd11e1d8979d57cb1a569833309f9664c19cd47194af0581a5cbbf8f1d59`.
+This certifies the genus-two H3 `E7+E8/MW2` source family, not the downstream
+rootless MW17 equation or its specialization to curve 273.
+<!-- status-consumer: EC-K3-H3-SOURCE a4bb40c9c9d0ff09 -->
+
+A fast exact obstruction to alternative small source points uses the even
+involution on the genus-two base:
+
+```bash
+sage -python elkies-k3/scripts/sieve_h3_level474_rational_points.sage
+```
+
+Writing `xE=-27*X^2` and `yE=-27*Y` gives the elliptic quotient
+
+```text
+yE^2=xE^3+198*xE^2+4617*xE+419904.
+```
+
+The checker proves this quotient has trivial torsion and exact rank one with
+generator `G=(-27,648)`.  The record source point maps to `9G`; the CM points
+map to `G` and `6G`.  A rational lift requires `-x(nG)/27` to be a square.
+Applying that necessary condition at 35 good primes through 163 to every
+`|n|<=1,000,000` leaves only `n=0,1,6,9`; `n=0` has no rational lift at
+infinity, and the other three give exactly the known points.  Expected status:
+
+```text
+H3POINTS|status=PASS_BOUNDED_H3_SOURCE_POINT_SIEVE
+```
+
+The artifact
+`artifacts/generated-results/elkies-k3-h3-level474-point-sieve.json` has
+SHA-256
+`6966cd27db727a82b22a7a8e63ced713f5a1a74d0b85d7e2166ed2344091f451`.
+This is a bounded Mordell--Weil-coefficient obstruction, not a global
+classification of the genus-two curve's rational points.
+<!-- status-consumer: EC-K3-H3-PTS dd90353bf0820f4a -->
+
+The marked section itself is now recovered exactly on the smaller-coefficient
+H92 short model.  First generate nine disjoint modular windows.  Exceptional
+primes at which interpolation degenerates are skipped deterministically; the
+commands below retain 204 good primes in total.
+
+```bash
+sage -python elkies-k3/scripts/recover_h21_p1_from_entrance_cubic.sage \
+  --prime-start 100 --prime-count 12 --target h92 \
+  --output artifacts/generated-results/elkies-k3-h92-p1-mod-window-100.json
+for START in 199 383 557 733 887 1069 1300 1600; do
+  sage -python elkies-k3/scripts/recover_h21_p1_from_entrance_cubic.sage \
+    --prime-start "$START" --prime-count 24 --target h92 \
+    --output "artifacts/generated-results/elkies-k3-h92-p1-mod-window-${START}.json"
+done
+```
+
+CRT-lift the windows and perform the characteristic-zero check with:
+
+```bash
+sage -python elkies-k3/scripts/lift_h21_p1_modular.sage \
+  artifacts/generated-results/elkies-k3-h92-p1-mod-window-100.json \
+  artifacts/generated-results/elkies-k3-h92-p1-mod-window-199.json \
+  artifacts/generated-results/elkies-k3-h92-p1-mod-window-383.json \
+  artifacts/generated-results/elkies-k3-h92-p1-mod-window-557.json \
+  artifacts/generated-results/elkies-k3-h92-p1-mod-window-733.json \
+  artifacts/generated-results/elkies-k3-h92-p1-mod-window-887.json \
+  artifacts/generated-results/elkies-k3-h92-p1-mod-window-1069.json \
+  artifacts/generated-results/elkies-k3-h92-p1-mod-window-1300.json \
+  artifacts/generated-results/elkies-k3-h92-p1-mod-window-1600.json \
+  --output artifacts/generated-results/elkies-k3-h92-p1-lift.json
+```
+
+The structured simultaneous-LLL reconstruction uses the exact pole identity
+`D(u)=d4*u^4*Z4(u)^2`, with `Z4(0)=1`.  The 204-prime CRT modulus has 1,945
+bits.  The resulting H92 coordinates have degrees `(10,12)` for `x` and
+`(15,18)` for `y`; direct substitution proves their Weierstrass identity over
+`QQ`, and an exact marked-fiber incidence selects the square-root sign.  The
+expected terminal status is
+
+```text
+H21P1LIFT|primes=204|modulus_bits=1945|exact_square=1|status=PASS_EXACT_H92_P1
+```
+
+The pinned artifact
+`artifacts/generated-results/elkies-k3-h92-p1-lift.json` has SHA-256
+`c323bf6346bb239934a5a2d8b1a3f4067e70e993d2e4eb32aaa30f469fca6397`.
+It supersedes historical SHA-256
+`0602c3b199629c6f460c9b7c728e048822418ecf85bf54807852be3d97b66616`,
+which lacked only the exact orientation-incidence block and used the older
+H21 status label.  This certifies the exact height-`21/2` section on the
+rational H92 model.  It does not yet construct the two-dimensional
+Riemann--Roch space, chord, or q=6 pencil for `D=O+(-P1)-F`; that is the
+remaining equation-level source gate.
+
+The exact signed lattice gate is reproduced by:
+
+```bash
+sage -python elkies-k3/scripts/verify_h3_q6_signed_descent_gate.sage
+```
+
+It constructs the two inverse section classes with their correct, different
+E7 corrections.  The associated primitive isotropic degree-two divisors
+`D-` and `D+` satisfy `D-.D+=21`; their sum is primitive with square `42`,
+old-fiber degree four, `h0=23`, and arithmetic genus `22`.  Consequently, if
+equation-level Galois conjugation exchanges the two signs, the natural
+tensor/trace-norm descent has ranks four/three and gives a degree-21 surface
+map, not a rank-two elliptic pencil.  The Galois sign rule remains unproved,
+and the preceding descent certificate proves that it is not the actual H21
+marking: both signs are fixed.  The calculation remains a useful rejection of
+that hypothetical shortcut and does not exclude accidental elliptic factors
+in the genus-22 Jacobian.  The generated artifact
+`artifacts/generated-results/elkies-k3-h3-q6-signed-descent-gate.json` has
+SHA-256
+`3be2de6e2f7c722bc04dde0ad5eba81924b130b93d6850009cd266398b4b60d7`.
+
+## Preferred q=6 transport from H3
+
+The exact labeled `H3` frame has a much smaller first neighbor than the q80
+route.  This command exhausts its q=6 sign-pair shell with marked coordinate
+15 equal to one and retains four representative output frames:
+
+```bash
+mkdir -p artifacts/local/elkies-k3/h3-q6-mw3-frames
+sage -python elkies-k3/scripts/search_alternate_fibrations.sage \
+  --frame elkies-k3/data/fibrations/kumar_e7e8_mw2_frame_3.txt \
+  --min-qnorm 6 \
+  --max-qnorm 6 \
+  --proper-factors-only \
+  --one-factor-order \
+  --fixed-coordinate 15:1 \
+  --per-root-data-cap 4 \
+  --quiet-candidates \
+  --report 4 \
+  --out artifacts/local/elkies-k3/h3-q6-mw3-search.txt \
+  --frames-dir artifacts/local/elkies-k3/h3-q6-mw3-frames
+```
+
+The decisive summary is:
+
+```text
+FIBSEARCH|stage=restart_done|q=6|restart=0|new_pairs=56|union_pairs=56|nodes=441|exhaustive=true
+FIBSEARCH|stage=summary|tested=56|unique_frames=4|sampled_vectors=56
+```
+
+All 56 tested vectors have root data `(14,312,3)`, identifying `E8+E6`, and
+MW rank three.  To inspect all 56 rows rather than four retained
+representatives, omit `--per-root-data-cap 4` and use `--report 56`.  The
+four-frame count is a retention cap, not a proved count of Weyl or isometry
+orbits.  The clean first witness has `(a,b)=(2,3)` and
+
+```text
+(0,0,-1,-1,-1,-1,-1,0,0,0,0,0,0,0,0,1,0).
+```
+
+Check the degree-two chamber interpretation, saturated MW height, distinction
+from the old H2/q60 child, and the nef q=8 continuation with:
+
+```bash
+sage -python elkies-k3/scripts/analyze_h3_first_q6_chamber.sage
+```
+
+The two terminal status lines are:
+
+```text
+H3Q6|...|status=PASS
+H3Q8|...|child=D13/MW4|root_data=13,312,4|status=PASS
+```
+
+The raw q=8 shell is too large to enumerate directly.  This exact Weyl
+quotient classifies it in seconds and writes all coordinate changes, neighbor
+bases, source-H3 divisor coordinates, and both D13/MW4 child frames:
+
+```bash
+sage -python elkies-k3/scripts/classify_h3_q6_child_q8_orbits.sage \
+  --output artifacts/generated-results/elkies-k3-h3-q6-q8-orbits.json
+```
+
+Expected terminal status:
+
+```text
+H3Q6Q8|raw_norm16=219758670|horizontal_norm16=139006800|mw_projections=10|dominant_orbits=63|primitive_neighbors=61|mw4_hits=2|status=PASS_H3_Q6_CHILD_Q8_WEYL_CLASSIFICATION
+```
+
+The checker also verifies the pinned continuation frame
+`elkies-k3/data/fibrations/h3_q6_q8_d13_mw4_root_adapted_frame.txt`.  Its first
+13 coordinates are D13 simple roots and its last four quotient directions
+have reduced MW height Gram
+`[[3/4,1/4,-1/4,0],[1/4,11/4,1/4,1],[-1/4,1/4,11/4,-1],[0,1,-1,46]]`.
+
+The deterministic lateral q=4 presentation from this D13 frame is certified
+with:
+
+```bash
+sage -python elkies-k3/scripts/analyze_h3_d13_q4_chamber.sage
+```
+
+It proves, using an exact D13/MW closest-vector calculation rather than a
+bounded section scan, that the raw `(a,b)=(2,2)` class is already nef and has
+old-fiber degree two.  Its child is `A12+A1/MW4`, with root data
+`(13,158,26)`.  This is a genuine but lateral presentation, not a rank gain.
+The same checker also certifies the preferred q=24 rank-growing class below.
+
+The D13 proper-presentation no-growth barrier now extends through q=20.  The
+q=20 endpoint is reproduced in both factor orders by:
+
+```bash
+sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \
+  --frame elkies-k3/data/fibrations/h3_q6_q8_d13_mw4_root_adapted_frame.txt \
+  --root-rank 13 --q 20 --degree 2 --rank-growth-only \
+  --output artifacts/generated-results/elkies-k3-h3-q6-q8-d13-q20-degree2.json
+sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \
+  --frame elkies-k3/data/fibrations/h3_q6_q8_d13_mw4_root_adapted_frame.txt \
+  --root-rank 13 --q 20 --degree 4 --rank-growth-only \
+  --output artifacts/generated-results/elkies-k3-h3-q6-q8-d13-q20-degree4.json
+```
+
+Each run has 1,567 dominant Weyl orbits.  Degree two has 1,533 primitive
+neighbors and degree four has 1,567; neither has MW rank above four.  Together
+with the previously completed proper-presentation quotient shells through
+q=18, this closes all proper D13 presentations through q=20.  This is an
+exact bounded barrier, not a global obstruction; continuation should use a
+Weyl quotient rather than a larger blind shell.
+
+The intervening q=21 degree-three and q=22 degree-two proper presentations
+also have maximum MW rank four; q=23 has no proper factor presentation.  The
+first rank growth is q=24, already with old-fiber degree two:
+
+```bash
+sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \
+  --frame elkies-k3/data/fibrations/h3_q6_q8_d13_mw4_root_adapted_frame.txt \
+  --root-rank 13 --q 24 --degree 2 --rank-growth-only --adapt-mw-at-least 5 \
+  --frames-dir artifacts/generated-results/elkies-k3-h3-q6-q8-d13-q24-degree2-frames \
+  --output artifacts/generated-results/elkies-k3-h3-q6-q8-d13-q24-degree2.json
+```
+
+The exact quotient has 2,709 dominant orbits and 2,653 primitive neighbors.
+Exactly three have root data `(12,264,4)`, identifying `D12/MW5`.  The
+preferred orbit 85 is component-nef without reflections, and the chamber
+checker proves full nefness from an empty shifted MW ball of radius squared
+two plus the degree-two bisection parity identity.  The q=24 artifact SHA-256
+is `66d5a7ff6ec26f8aa8344cdbd779a6c96707b041ba4f89d7dbfe460c95485a93`.
+Thus the exact constructive prefix is now
+`MW2 --q6--> MW3 --q8--> MW4 --q24--> MW5`, with every geometric step of
+old-fiber degree two.
+
+The same root-adapted quotient search continues through three further
+rank-growing degree-two steps.  The selected path is reproduced by:
+
+```bash
+sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \
+  --frame artifacts/generated-results/elkies-k3-h3-q6-q8-d13-q24-degree2-frames/q24-o0085-r12-n264-d4-add367fba084.txt \
+  --root-rank 12 --q 6 --degree 2 --rank-growth-only --adapt-mw-at-least 6 \
+  --frames-dir artifacts/generated-results/elkies-k3-h3-d12-o85-q6-degree2-frames \
+  --output artifacts/generated-results/elkies-k3-h3-d12-o85-q6-degree2.json
+sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \
+  --frame artifacts/generated-results/elkies-k3-h3-d12-o85-q6-degree2-frames/q6-o0042-r11-n132-d12-e7e61e5dd4c2.txt \
+  --root-rank 11 --q 8 --degree 2 --rank-growth-only --adapt-mw-at-least 7 \
+  --frames-dir artifacts/generated-results/elkies-k3-h3-a11-middle-q8-degree2-frames \
+  --output artifacts/generated-results/elkies-k3-h3-a11-middle-q8-degree2.json
+sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \
+  --frame artifacts/generated-results/elkies-k3-h3-a11-middle-q8-degree2-frames/q8-o0922-r10-n60-d36-c9cd5a498117.txt \
+  --root-rank 10 --q 4 --degree 2 --rank-growth-only --adapt-mw-at-least 8 \
+  --frames-dir artifacts/generated-results/elkies-k3-h3-a5a5-c2-q4-degree2-frames \
+  --output artifacts/generated-results/elkies-k3-h3-a5a5-c2-q4-degree2.json
+sage -python elkies-k3/scripts/analyze_h3_rank_growing_degree2_chain.sage
+```
+
+The chamber checker proves full nefness for the selected q6, q8, and q4
+classes.  Their children are respectively `A11/MW6`, `A5+A5/MW7`, and
+`3A3/MW8`, with root data `(11,132,12)`, `(10,60,36)`, and `(9,36,64)`.
+The authoritative search-artifact hashes are, in the same order,
+`1b8d7f37794bcf49c48949cec3bffe7baba69cb55e369f7af9f5002908a75b7f`,
+`d336b0d32a07907ec61464c7d5ace4c76f257ddcf16b904a96a3d9064f408323`,
+and `98fdd553768b27d5800f247b41a6e2a28f0ee2787ad5959d96ef420a2eb09185`.
+The selected `3A3/MW8` continuation frame has SHA-256
+`e535e5abc8c70c79be9b088c1217a307c7c4940de1acd4b2cad4cb2b9fda22bb`.
+
+The exact low-degree lattice chain is therefore
+
+```text
+H3 MW2 -q6-> MW3 -q8-> MW4 -q24-> D12/MW5
+       -q6-> A11/MW6 -q8-> A5+A5/MW7 -q4-> 3A3/MW8,
+```
+
+and every arrow has old-fiber degree two.
+
+One further selected q=4 shell from the `3A3/MW8` endpoint is reproduced by:
+
+```bash
+sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \
+  --frame artifacts/generated-results/elkies-k3-h3-a5a5-c2-q4-degree2-frames/q4-o0472-r9-n36-d64-4841c34fa442.txt \
+  --root-rank 9 --q 4 --degree 2 --rank-growth-only --adapt-mw-at-least 10 \
+  --frames-dir artifacts/generated-results/elkies-k3-h3-a3x3-q4-degree2-frames \
+  --output artifacts/generated-results/elkies-k3-h3-a3x3-q4-degree2.json
+sage -python elkies-k3/scripts/analyze_h3_rank_growing_degree2_chain.sage
+```
+
+The quotient has 2,481 dominant primitive orbits.  Selected orbit 323 has
+child root data `(7,24,36)`, identifying `A3+2A2/MW10`.  The search artifact
+SHA-256 is
+`8f1d5105831cc3356bc4598932380295bcc6e91629e0d05a6a9d64c0d840d29d`.
+The final q=4 presentation is also nef of old-fiber degree two.  Its source
+component pairings are `(1,0,1,0,0,0,1,1,0)`, its affine pairings are
+`(0,1,1)`, and exact shifted root/MW CVP gives section distances
+`2,2,3` repeated sixteen times, then `4,4`.  Bisection parity closes the last
+case.  Thus the geometric chamber certificate currently reaches
+`A3+2A2/MW10` with every arrow a degree-two pencil.
+
+The exact Weyl-quotient lattice continuation reaches a rootless frame:
+
+```bash
+sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \
+  --frame artifacts/generated-results/elkies-k3-h3-a3x3-q4-degree2-frames/q4-o0323-r7-n24-d36-87b284dff2bc.txt \
+  --root-rank 7 --q 4 --degree 2 --rank-growth-only --adapt-mw-at-least 11 \
+  --frames-dir artifacts/generated-results/elkies-k3-h3-mw10-a3a2a2-q4-degree2-frames \
+  --output artifacts/generated-results/elkies-k3-h3-mw10-a3a2a2-q4-degree2.json
+sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \
+  --frame artifacts/generated-results/elkies-k3-h3-mw10-a3a2a2-q4-degree2-frames/q4-o0207-r5-n10-d32-a462a553a1e9.txt \
+  --root-rank 5 --q 4 --degree 2 --rank-growth-only --adapt-mw-at-least 13 \
+  --stop-after-first-growth \
+  --frames-dir artifacts/generated-results/elkies-k3-h3-mw12-5a1-q4-degree2-first-hit-frames \
+  --output artifacts/generated-results/elkies-k3-h3-mw12-5a1-q4-degree2-first-hit.json
+sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \
+  --frame artifacts/generated-results/elkies-k3-h3-mw12-5a1-q4-degree2-first-hit-frames/q4-o0052-r4-n8-d16-066f47d7fff3.txt \
+  --root-rank 4 --q 4 --degree 2 --rank-growth-only --adapt-mw-at-least 14 \
+  --stop-after-first-growth \
+  --frames-dir artifacts/generated-results/elkies-k3-h3-mw13-4a1-q4-degree2-first-hit-frames \
+  --output artifacts/generated-results/elkies-k3-h3-mw13-4a1-q4-degree2-first-hit.json
+sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \
+  --frame artifacts/generated-results/elkies-k3-h3-mw13-4a1-q4-degree2-first-hit-frames/q4-o0114-r3-n6-d8-018b225c409b.txt \
+  --root-rank 3 --q 4 --degree 2 --rank-growth-only --adapt-mw-at-least 15 \
+  --stop-after-first-growth \
+  --frames-dir artifacts/generated-results/elkies-k3-h3-mw14-3a1-q4-degree2-first-hit-frames \
+  --output artifacts/generated-results/elkies-k3-h3-mw14-3a1-q4-degree2-first-hit.json
+sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \
+  --frame artifacts/generated-results/elkies-k3-h3-mw14-3a1-q4-degree2-first-hit-frames/q4-o0498-r2-n4-d4-e86cf7c2d2f9.txt \
+  --root-rank 2 --q 4 --degree 2 --rank-growth-only --adapt-mw-at-least 16 \
+  --stop-after-first-growth \
+  --frames-dir artifacts/generated-results/elkies-k3-h3-mw15-2a1-q4-degree2-first-hit-frames \
+  --output artifacts/generated-results/elkies-k3-h3-mw15-2a1-q4-degree2-first-hit.json
+sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \
+  --frame artifacts/generated-results/elkies-k3-h3-mw15-2a1-q4-degree2-first-hit-frames/q4-o0981-r1-n2-d2-4f02793cfc09.txt \
+  --root-rank 1 --q 6 --degree 2 --rank-growth-only --adapt-mw-at-least 17 \
+  --stop-after-first-growth --stream-first-growth --stream-skip 1000 \
+  --stream-limit 2000 --stream-progress-every 500 --mw-vector-cap 10000 \
+  --mw-vectors-cache artifacts/generated-results/elkies-k3-h3-mw16-a1-q6-mw-vectors-cap10000.json \
+  --frames-dir artifacts/generated-results/elkies-k3-h3-mw16-a1-q6-degree2-stream-first-hit-frames \
+  --output artifacts/generated-results/elkies-k3-h3-mw16-a1-q6-degree2-cap10000-stream-chunk001.json
+sage -python elkies-k3/scripts/verify_h3_d13_to_mw17_path.sage
+sage -python elkies-k3/scripts/analyze_h3_mw10_to_rootless_chambers.sage
+```
+
+The selected suffix is
+
+```text
+A3+2A2/MW10 -q4-> 5A1/MW12 -q4-> 4A1/MW13
+             -q4-> 3A1/MW14 -q4-> 2A1/MW15
+             -q4-> A1/MW16 -q6-> rootless/MW17.
+```
+
+All six factor presentations have old-fiber degree two.  The q=6 hit is
+streamed witness 2,247 in an explicitly capped 10,000-vector MW quotient
+sample; PARI reports 7,187,438 vectors in the full shell, so the search is
+bounded but the displayed hit and child are exact.  Before that pivot, q=4
+was tested with an exact 9,000-orbit prefix plus 1,000-orbit strata starting
+at 16,000, 32,000, 48,000, 64,000, 80,000, 112,000, and 144,000; none was
+rootless.  This is a bounded obstruction for the selected MW16 marking, not
+an exhaustive q=4 theorem.
+
+The eleven-step replay has determinant-one composite transport with SHA-256
+`6542f74b2780b4143999e346d519bb72690fac2eeeb99293a97192f305d24c40`.
+Its terminal status is:
+
+```text
+H3D13MW17|steps=11|final=rootless|MW=17|...|status=PASS_H3_D13_TO_MW17_LATTICE_PATH
+```
+
+The generated replay SHA-256 is
+`f6eac2339c86de84b79a0ddfec3229df9b9c1617110bdd9c474443e7e39fd484`.
+The second checker proves that all six raw suffix divisors are already in the
+chosen chambers, require no reflections, and are nef by exact full-frame CVP
+plus bisection parity.  Its terminal status is
+`PASS_H3_MW10_TO_ROOTLESS_NEF`.  Thus the entire displayed path is an exact
+nef degree-two geometric chain.  Characteristic-zero equation execution
+remains a separate gate.
+
 ## Fast structural check
 
 ```bash

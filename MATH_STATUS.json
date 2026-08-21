@@ -31001,8 +31001,8 @@
       "replaced_by": [],
       "priority": "reference"
     },
-    {
-      "id": "EC-R20",
+  {
+    "id": "EC-R20",
       "kind": "example",
       "state": "proved",
       "title": "Low-conductor rank-at-least-20 Fermigier near miss",
@@ -31029,8 +31029,39 @@
       "consumers": [],
       "invalidates_assumptions": [],
       "replaced_by": [],
-      "priority": "reference"
-    },
+    "priority": "reference"
+  },
+  {
+    "id": "EC-R20-IC245",
+    "kind": "example",
+    "state": "proved",
+    "title": "ICARM curve 245 has rank at least 20 and log conductor below 151",
+    "scope": "For public ICARM curve 245 with global minimal model [1,-1,1,-25880411472355347134118026792,1606663697747901005185875883284420820193259], all 20 published rational points replay exactly. Reduction modulo each of 16 pinned good primes gives an exact rank-20 matrix over F_2, while good reduction at 7 rules out rational 2-torsion; hence the points are independent over Q. PARI/GP gives exact conductor 272066437942638823321634957004224153562929337633497250319389959310 and root number +1. The elementary bound N<10^66 and ln(10)<231/100 proves ln(N)<152.46<182.72 (numerically 150.668907152237...). This improves the certified low-conductor rank-at-least-20 benchmark but remains one point short. The recorded standard and alternate-cover searches are bounded experiments and do not prove rank 20 exactly or exclude a twenty-first point.",
+    "canonical_source": "elliptic-curves/notes/ICARM_CURVE245_RANK20.md",
+    "dependencies": [
+      "external: public ICARM curve 245 model and point data",
+      "external: PARI/GP exact elliptic-curve arithmetic"
+    ],
+    "checker": "elliptic-curves/cas/verify_icarm_curve245_rank20.py",
+    "proof_type": "exact_modular",
+    "independent_replay": true,
+    "formal_verification": false,
+    "external_review": false,
+    "artifact_hash": "sha256:6a08b9214e49f9a92befede2452ab3a33e3a3be9d578640dfc2ca86a2a57d579",
+    "software_lock": [
+      ".python-version"
+    ],
+    "supersedes_notes": [],
+    "supersedes": [],
+    "closes_problems": [],
+    "narrows_problems": [
+      "OP-EC-NEXT"
+    ],
+    "consumers": [],
+    "invalidates_assumptions": [],
+    "replaced_by": [],
+    "priority": "reference"
+  },
     {
       "id": "EC-KIH14",
       "kind": "reproduction",
@@ -31126,6 +31157,40 @@
       "priority": "reference"
     },
     {
+      "id": "EC-MD19",
+      "kind": "example",
+      "state": "proved",
+      "title": "Two split-infinity Mestre rank-at-least-19 frontiers below the conductor cutoff",
+      "scope": "For the split-infinity Mestre family with roots (0,25,95,143,168,205), the specialization u=483 (T=-8441/42) has nineteen exact rational points whose stacked images in good-reduction quotients E(F_p)/3E(F_p) have full column rank 19; a separate good reduction excludes rational 3-torsion. Its exact minimal model is [1,0,0,-639860186233795396843608642357,185944471483117795919620263190737781477557921], its root number is -1, and log(N)=157.759935999987...<182.72. For the companion family with roots (0,43,128,197,231,289), u=660 (T=-12655/44) similarly has an exact rank-at-least-19 certificate, minimal model [1,-1,1,-14853112884170608407469777362587,21717789706067374061109415673917936898882673611], root number -1, and log(N)=164.053646218834...<182.72. These are unconditional rank lower bounds and remain two points short of the rank-21 target. Separately, the audited Delta=11/5 explicit-formula values are 20.3010039962... and 20.4139420468...; under GRH, odd parity therefore bounds each analytic rank by 19, and BSD+GRH would identify algebraic rank exactly 19. The bounded discovery and alternate-cover misses are not rank upper bounds.",
+      "canonical_source": "elliptic-curves/notes/MESTRE_DSQUARE_RANK19_FRONTIERS.md",
+      "dependencies": [
+        "external: finite-reduction and infinite-descent independence criterion",
+        "external: PARI/GP 2.15.4 global minimization, conductor, root-number, and prime-sum routines",
+        "external: GRH only for the conditional explicit-formula analytic-rank bounds",
+        "external: BSD only for the conditional exact algebraic-rank conclusions"
+      ],
+      "checker": "elliptic-curves/cas/certify_mestre_dsquare_rank19_frontiers.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:5c9c9010a707a166e5b32ff6917f9a4106e1e095d47236a5d4a65b6d2908ac46",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-E29",
       "kind": "reproduction",
       "state": "proved",
@@ -31185,6 +31250,76 @@
       "priority": "reference"
     },
     {
+      "id": "EC-K3-H3-SOURCE",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Exact level-474 H3 E7+E8/MW2 source family",
+      "scope": "The characteristic-zero normalization of the degree-21 H21/H92 component is composed exactly with the pinned H92 short-Weierstrass formulas over the published genus-two curve Y^2=-27*X^6+198*X^4-171*X^2+576. After inverting the published linear-fractional X-map and writing Y0 for the normalized double-cover coordinate, the H92 chart is r=(a+Y0)/2, s=2/(Y0-a). Exact function-field substitution proves the degree-21 component equation and gives the elliptic K3 v^2=u^3+(A1*tau^3+A*tau^4)*u+(B1*tau^5+B*tau^6+B2*tau^7), with E7 and E8 fibers and two individually rational Mordell--Weil directions of height Gram [[21/2,3],[3,46]]. The published point (13/7,12048/343) specializes to the pinned H92 point (-3621005/690947,158286/143585) and its exact five coefficients. This proves the defining H3 source family, not the first q6 equation, the downstream rootless MW17 family, or a specialization of that descendant to curve 273.",
+      "canonical_source": "elliptic-curves/notes/ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md",
+      "dependencies": [
+        "external: Elkies--Kumar H21/H92 ancillary equations and the Padurariu--Saia level-474 genus-two model"
+      ],
+      "checker": "elkies-k3/scripts/export_h3_level474_source_family.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3304f994a410cdfd1bd8bedc414efabda9e863b02ba6e22e773f3c2503e53e03",
+      "software_lock": [
+        ".python-version"
+      ],
+      "supersedes_notes": [
+        "the level-474 H3 source was known only as a Humbert-locus identification or a single rational anchor"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/KUMAR_E7E8_BACKTRACK.md",
+        "elliptic-curves/notes/ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-PTS",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Bounded rational-point obstruction on the level-474 H3 base",
+      "scope": "The even involution on the level-474 genus-two base has elliptic quotient yE^2=xE^3+198*xE^2+4617*xE+419904 under xE=-27*X^2, yE=-27*Y. Exact Sage descent gives trivial torsion, rank one, and generator G=(-27,648); the record source orbit maps to 9G and the CM points to G and 6G. For every Mordell--Weil coefficient |n|<=1000000, necessary square conditions for -x(nG)/27 at 35 good primes through 163 leave only n=0,1,6,9. The zero multiple has no rational lift at infinity because -27 is nonsquare, and the remaining coefficients give exactly the displayed CM and record-source points. This is a bounded coefficient sieve, not a global determination of the genus-two curve's rational points.",
+      "canonical_source": "elliptic-curves/notes/ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md",
+      "dependencies": [
+        "EC-K3-H3-SOURCE"
+      ],
+      "checker": "elkies-k3/scripts/sieve_h3_level474_rational_points.sage",
+      "proof_type": "exact_modular",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:831e113eb407f00c9f0d214ec514df661889fdc4539a54f91d4913034c55c473",
+      "software_lock": [
+        ".python-version"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/KUMAR_E7E8_BACKTRACK.md",
+        "elliptic-curves/notes/ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "OP-EC-RANK-CONDUCTOR",
       "kind": "open_problem",
       "state": "parked",
@@ -31218,13 +31353,17 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Elliptic rank-31, exact-rank, and low-conductor continuation",
-      "scope": "ECR30 closes the original rank-at-least-30 branch. Continue in three exact directions: prove that the public 2026 curve has rank exactly 30 or exhibit rank at least 31; find a curve with rank at least 21 and natural-log conductor below 182.72, with EC-R20 currently one certified point short; and reconstruct the rank-17 K3 mechanism strongly enough to reproduce the historical rank-29 specialization and search beyond rank 30. EC-MR13 and EC-MD17 narrow the family and low-conductor routes without meeting the remaining target. The present gates are a certified residual 2-Selmer computation for the rank-30 curve, a new independent direction in K(S,2) for EC-R20, and an independent P2 lift from one of the seven surviving GF(31) E6 cores in the 17-by-17 reconstruction. Bounded searches and failed lifts are experiments, not upper bounds.",
+    "scope": "ECR30 closes the original rank-at-least-30 branch. Continue in three exact directions: prove that the public 2026 curve has rank exactly 30 or exhibit a higher-rank curve; find a curve with rank at least 21 and natural-log conductor below 182.72, with EC-R20-IC245 now the best certified rank-at-least-20 benchmark at ln(N)=150.668907152237...; and complete the reconstructed rank-17 K3 mechanism strongly enough to reproduce the historical rank-29 specialization and search beyond rank 30. EC-MR13, EC-MD17, and EC-MD19 narrow the family and low-conductor routes without meeting the remaining target. EC-K3-H3-SOURCE now gives the exact genus-two H3 E7+E8/MW2 source family and EC-K3-H3-PTS rules out alternative source points for every quotient coefficient |n|<=1000000, but the first q6 equation, downstream rootless MW17 family, and specialization transport remain open. The other present gates are a certified residual 2-Selmer computation for the rank-30 curve and a twenty-first independent point on a low-conductor rank-at-least-20 curve. Bounded searches and failed lifts are experiments, not upper bounds.",
       "canonical_source": "elliptic-curves/README.md",
       "dependencies": [
-        "ECR30",
-        "EC-R20",
-        "EC-MR13",
-        "EC-MD17"
+      "ECR30",
+      "EC-R20",
+      "EC-R20-IC245",
+      "EC-MR13",
+        "EC-MD17",
+        "EC-MD19",
+        "EC-K3-H3-SOURCE",
+        "EC-K3-H3-PTS"
       ],
       "checker": null,
       "proof_type": "not-applicable",

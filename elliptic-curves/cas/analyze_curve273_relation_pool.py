@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import ast
 import glob
 import re
 import sys
@@ -13,6 +14,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from icarm_curve273 import short_coefficients
+from curve273_full_ideal_chain import SUPPORTS, build_relations, prime_ideal
 
 
 PROTOCOL = "R30RELPOOL"
@@ -48,6 +50,11 @@ FACTOR_RE = re.compile(
     r"\|largest_factor_bits=(\d+)"
     r"\|factor_count=(\d+)"
     r"\|factorization=([^|]+)"
+)
+
+
+CRT_BEST_RE = re.compile(
+    r"R30CRT\|cyclebest=\d+\|(.*)"
 )
 
 
@@ -89,6 +96,16 @@ def parse_key_values(text):
         result[key] = value
 
     return result
+
+
+def parse_ideal_labels(text):
+    if not text or text == "none":
+        return ()
+
+    return tuple(
+        tuple(map(int, item.split(":", 1)))
+        for item in text.split(",")
+    )
 
 
 def ideal_key(P):
@@ -148,6 +165,48 @@ def main():
         default=[],
     )
 
+    ap.add_argument(
+        "--include-full-ideal-chain",
+        action="store_true",
+        help=(
+            "add the exact pinned arbitrary-ideal/CRT relations "
+            "to the sparse pool"
+        ),
+    )
+
+    ap.add_argument(
+        "--include-crt-cycle-logs",
+        action="store_true",
+        help=(
+            "add exact candidate relations from local R30CRT cycle logs"
+        ),
+    )
+
+    ap.add_argument(
+        "--max-crt-relations-per-log",
+        type=int,
+        default=25,
+    )
+
+    ap.add_argument(
+        "--include-ideal-lattice-logs",
+        action="store_true",
+        help="add exact R30IDEAL best rows from bounded lattice-search logs",
+    )
+
+    ap.add_argument(
+        "--ideal-glob",
+        action="append",
+        default=[],
+        help="glob for R30IDEAL logs (repeatable)",
+    )
+
+    ap.add_argument(
+        "--max-ideal-relations-per-log",
+        type=int,
+        default=20,
+    )
+
     args = ap.parse_args()
 
     from sage.all import (
@@ -171,12 +230,44 @@ def main():
         }
     )
 
-    if not files:
+    crt_files = []
+
+    if args.include_crt_cycle_logs:
+        crt_files = sorted(
+            Path(name)
+            for name in glob.glob(
+                "artifacts/local/elliptic-curves/crt-cycle-*.log"
+            )
+        )
+
+    ideal_files = []
+
+    if args.include_ideal_lattice_logs:
+        ideal_patterns = args.ideal_glob or [
+            "artifacts/local/elliptic-curves/curve273-*.log",
+            "artifacts/local/elliptic-curves/ideal-lattice-*.log",
+        ]
+        ideal_files = sorted(
+            {
+                Path(name)
+                for pattern in ideal_patterns
+                for name in glob.glob(pattern)
+            }
+        )
+
+    if (
+        not files
+        and not crt_files
+        and not ideal_files
+        and not args.include_full_ideal_chain
+    ):
         raise SystemExit("no special-q logs found")
 
     print(
         f"{PROTOCOL}|stage=input"
         f"|files={len(files)}"
+        f"|crt_files={len(crt_files)}"
+        f"|ideal_files={len(ideal_files)}"
         f"|fb_bound={args.factor_base_bound}"
         f"|max_lp_bits={args.max_largest_factor_bits}",
         flush=True,
@@ -369,6 +460,53 @@ def main():
         flush=True,
     )
 
+    crt_records = []
+
+    for path in crt_files:
+        accepted_here = 0
+
+        for line in path.read_text().splitlines():
+            match = CRT_BEST_RE.match(line)
+
+            if not match:
+                continue
+
+            kv = parse_key_values(match.group(1))
+
+            if "m" not in kv or "candidate" not in kv:
+                continue
+
+            declared = parse_ideal_labels(kv["candidate"])
+
+            if not declared:
+                continue
+
+            crt_records.append(
+                {
+                    "file": str(path),
+                    "m": int(kv["m"]),
+                    "declared": declared,
+                }
+            )
+
+            accepted_here += 1
+
+            if accepted_here >= args.max_crt_relations_per_log:
+                break
+
+        print(
+            f"{PROTOCOL}|stage=parse_crt"
+            f"|file={path.name}"
+            f"|accepted={accepted_here}",
+            flush=True,
+        )
+
+    print(
+        f"{PROTOCOL}|stage=parse_crt_summary"
+        f"|relations={len(crt_records)}",
+        flush=True,
+    )
+
     # --------------------------------------------------------
     # Sparse column registries.
     #
@@ -404,7 +542,7 @@ def main():
 
         return fb_index[key]
 
-    def get_lp_column(P, q, m):
+    def get_lp_column(P, q, witness, residue):
         key = ideal_key(P)
 
         if key not in lp_index:
@@ -414,13 +552,13 @@ def main():
             lp_meta[index] = {
                 "q": int(q),
                 "key": key,
-                "first_m": int(m),
+                "residue": int(residue),
             }
 
         index = lp_index[key]
 
         lp_occurrences[index].append(
-            int(m)
+            str(witness)
         )
 
         return index
@@ -430,6 +568,16 @@ def main():
     # --------------------------------------------------------
 
     exact_rows = []
+    alpha_fingerprints = set()
+
+    def alpha_fingerprint(alpha):
+        return tuple(
+            (
+                int(QQ(c).numerator()),
+                int(QQ(c).denominator()),
+            )
+            for c in alpha.list()
+        )
 
     t0 = time.monotonic()
 
@@ -531,6 +679,12 @@ def main():
         )
 
         alpha = K(m) - theta
+        fingerprint = alpha_fingerprint(alpha)
+
+        if fingerprint in alpha_fingerprints:
+            continue
+
+        alpha_fingerprints.add(fingerprint)
 
         fb_row = 0
         lp_row = 0
@@ -575,7 +729,8 @@ def main():
                         c = get_lp_column(
                             P,
                             q,
-                            m,
+                            int(m),
+                            int(m % q),
                         )
 
                         lp_row ^= (
@@ -634,6 +789,280 @@ def main():
                 f"|seconds={time.monotonic()-t0:.3f}",
                 flush=True,
             )
+
+    def append_declared_relation(alpha, declared, witness, source):
+        """Verify and append a relation with all non-FB ideals declared."""
+
+        fingerprint = alpha_fingerprint(alpha)
+
+        if fingerprint in alpha_fingerprints:
+            return False
+
+        if not alpha.is_integral():
+            raise RuntimeError(f"nonintegral declared relation {witness}")
+
+        norm = abs(ZZ(alpha.norm()))
+        co = norm
+        rational_support = []
+
+        for p in trial_primes:
+            if co % p:
+                continue
+
+            exponent = 0
+
+            while co % p == 0:
+                co //= p
+                exponent += 1
+
+            rational_support.append((p, exponent))
+
+            if co == 1:
+                break
+
+        for p0 in S_RATIONAL:
+            p = ZZ(p0)
+
+            if p <= args.factor_base_bound or co % p:
+                continue
+
+            exponent = 0
+
+            while co % p == 0:
+                co //= p
+                exponent += 1
+
+            rational_support.append((int(p), exponent))
+
+        expected = ZZ(1)
+
+        for q, residue in declared:
+            qz = ZZ(q)
+
+            if not qz.is_prime(proof=True):
+                raise RuntimeError(f"declared factor {q} is not prime")
+
+            if q > args.factor_base_bound and q not in S_RATIONAL:
+                expected *= qz
+
+        if co != expected:
+            raise RuntimeError(
+                "declared relation reconstruction mismatch:\n"
+                f"witness={witness}\nremaining={co}\nexpected={expected}"
+            )
+
+        rational_support.extend(
+            (int(q), 1)
+            for q, residue in declared
+            if q > args.factor_base_bound and q not in S_RATIONAL
+        )
+
+        # Several declared degree-one ideals may lie above the same rational
+        # prime (notably the conjugate-pair replacement rows).  The norm audit
+        # is rational-prime based, so aggregate those exponents before
+        # traversing every prime ideal above q.
+        aggregated_support = defaultdict(int)
+        for q, exponent in rational_support:
+            aggregated_support[int(q)] += int(exponent)
+        rational_support = sorted(aggregated_support.items())
+
+        declared_residues = {}
+
+        for label in declared:
+            P = prime_ideal(K, theta, label)
+
+            if not P.is_prime() or P.norm() != label[0]:
+                raise RuntimeError(f"bad declared prime ideal {label}")
+
+            if int(alpha.valuation(P)) != 1:
+                raise RuntimeError(
+                    f"declared valuation is not one: {witness} {label}"
+                )
+
+            declared_residues[ideal_key(P)] = int(label[1])
+
+        fb_row = 0
+        lp_row = 0
+        reconstructed = defaultdict(int)
+
+        for q, rational_exponent in rational_support:
+            for P in primes_above(q):
+                valuation = int(alpha.valuation(P))
+
+                if valuation == 0:
+                    continue
+
+                key = ideal_key(P)
+                reconstructed[q] += valuation * int(
+                    P.residue_class_degree()
+                )
+
+                if (valuation & 1) == 0:
+                    continue
+
+                if q <= args.factor_base_bound or q in S_RATIONAL:
+                    column = get_fb_column(P, q)
+                    fb_row ^= 1 << column
+                else:
+                    if key not in declared_residues:
+                        raise RuntimeError(
+                            "undeclared large-prime ideal "
+                            f"witness={witness} q={q}"
+                        )
+
+                    column = get_lp_column(
+                        P,
+                        q,
+                        witness,
+                        declared_residues[key],
+                    )
+                    lp_row ^= 1 << column
+
+        for q, exponent in rational_support:
+            if reconstructed[q] != exponent:
+                raise RuntimeError(
+                    "declared norm valuation mismatch "
+                    f"witness={witness} q={q} "
+                    f"got={reconstructed[q]} expected={exponent}"
+                )
+
+        alpha_fingerprints.add(fingerprint)
+        exact_rows.append(
+            {
+                "m": str(witness),
+                "fb": fb_row,
+                "lp": lp_row,
+                "file": str(source),
+            }
+        )
+        return True
+
+    if args.include_full_ideal_chain:
+        chain_relations = build_relations(K, theta)
+        added = 0
+
+        for relation in chain_relations:
+            added += append_declared_relation(
+                relation["alpha"],
+                relation["declared"],
+                relation["name"],
+                "full-ideal-chain",
+            )
+
+        print(
+            f"{PROTOCOL}|stage=chain_rows"
+            f"|added={added}"
+            f"|duplicates={len(chain_relations)-added}"
+            f"|fb_columns={len(fb_index)}"
+            f"|lp_columns={len(lp_index)}",
+            flush=True,
+        )
+
+    if args.include_crt_cycle_logs:
+        added = 0
+
+        for record in crt_records:
+            added += append_declared_relation(
+                K(ZZ(record["m"])) - theta,
+                record["declared"],
+                record["m"],
+                record["file"],
+            )
+
+        print(
+            f"{PROTOCOL}|stage=crt_rows"
+            f"|added={added}"
+            f"|duplicates={len(crt_records)-added}"
+            f"|fb_columns={len(fb_index)}"
+            f"|lp_columns={len(lp_index)}",
+            flush=True,
+        )
+
+    if args.include_ideal_lattice_logs:
+        added = 0
+        duplicates = 0
+
+        for path in ideal_files:
+            lines = path.read_text().splitlines()
+            input_line = next(
+                (line for line in lines if line.startswith("R30IDEAL|stage=input|")),
+                None,
+            )
+            if input_line is None:
+                print(
+                    f"{PROTOCOL}|stage=parse_ideal|file={path.name}|status=NO_INPUT",
+                    flush=True,
+                )
+                continue
+
+            input_kv = parse_key_values(input_line)
+            targets = parse_ideal_labels(input_kv.get("targets", ""))
+            if not targets:
+                raise RuntimeError(f"missing ideal targets in {path}")
+
+            accepted_here = 0
+            for line_number, line in enumerate(lines, 1):
+                if not line.startswith("R30IDEAL|best|"):
+                    continue
+
+                kv = parse_key_values(line)
+                if not {"twist", "coordinates", "labels"} <= kv.keys():
+                    continue
+
+                label_records = ast.literal_eval(kv["labels"])
+                residual = []
+                valid = True
+                for q, roots, exponent in label_records:
+                    if int(exponent) != 1 or len(roots) != 1:
+                        valid = False
+                        break
+                    residual.append((int(q), int(roots[0])))
+                if not valid:
+                    continue
+
+                twist_labels = ()
+                if kv["twist"] != "none":
+                    twist_labels = parse_ideal_labels(
+                        kv["twist"].replace("+", ",")
+                    )
+
+                source_ideal = K.ideal(1)
+                for label in targets + twist_labels:
+                    source_ideal *= prime_ideal(K, theta, label)
+                basis = tuple(source_ideal.basis())
+                coordinates = tuple(
+                    ZZ(value) for value in kv["coordinates"].split(",")
+                )
+                if len(basis) != 3 or len(coordinates) != 3:
+                    raise RuntimeError(f"bad ideal row dimensions in {path}:{line_number}")
+                alpha = sum(
+                    (coordinates[index] * basis[index] for index in range(3)),
+                    K(0),
+                )
+                witness = f"{path.name}:{line_number}:{kv['twist']}"
+                was_added = append_declared_relation(
+                    alpha,
+                    targets + tuple(residual),
+                    witness,
+                    path,
+                )
+                added += int(was_added)
+                duplicates += int(not was_added)
+                accepted_here += 1
+                if accepted_here >= args.max_ideal_relations_per_log:
+                    break
+
+            print(
+                f"{PROTOCOL}|stage=parse_ideal|file={path.name}"
+                f"|accepted={accepted_here}",
+                flush=True,
+            )
+
+        print(
+            f"{PROTOCOL}|stage=ideal_rows|added={added}|duplicates={duplicates}"
+            f"|fb_columns={len(fb_index)}|lp_columns={len(lp_index)}",
+            flush=True,
+        )
 
     # --------------------------------------------------------
     # Gaussian elimination on LARGE-PRIME columns only.
@@ -732,6 +1161,66 @@ def main():
         flush=True,
     )
 
+    # Solve the exact sparse system against the certified chain endpoint.
+    # This proves whether the logged pool genuinely connects the original
+    # special-q component to that four-ideal residual, without claiming an
+    # LP-free cycle.
+    if args.include_full_ideal_chain:
+        target_mask = 0
+        missing = []
+
+        for label in SUPPORTS[-1]:
+            P = prime_ideal(K, theta, label)
+            key = ideal_key(P)
+
+            if key not in lp_index:
+                missing.append(label)
+                continue
+
+            target_mask ^= 1 << lp_index[key]
+
+        target_lp = target_mask
+        target_fb = 0
+        target_provenance = set()
+
+        while target_lp:
+            pivot = target_lp.bit_length() - 1
+
+            if pivot not in pivots:
+                break
+
+            pivot_lp, pivot_fb, pivot_provenance = pivots[pivot]
+            target_lp ^= pivot_lp
+            target_fb ^= pivot_fb
+            target_provenance = xor_sets(
+                target_provenance,
+                pivot_provenance,
+            )
+
+        if missing:
+            target_status = "MISSING_COLUMNS"
+        elif target_lp:
+            target_status = "NOT_IN_SPAN"
+        else:
+            target_status = "IN_SPAN"
+
+        target_witnesses = ",".join(
+            str(exact_rows[index]["m"])
+            for index in sorted(target_provenance)
+        )
+
+        print(
+            f"{PROTOCOL}|stage=chain_endpoint_span"
+            f"|status={target_status}"
+            f"|interpretation=REACHABILITY_NOT_LP_CLOSURE"
+            f"|target_lp={target_mask.bit_count()}"
+            f"|unresolved_lp={target_lp.bit_count()}"
+            f"|combined_rows={len(target_provenance)}"
+            f"|fb_support={target_fb.bit_count()}"
+            f"|witnesses={target_witnesses}",
+            flush=True,
+        )
+
     # --------------------------------------------------------
     # Report exact FB-only relations.
     # --------------------------------------------------------
@@ -824,13 +1313,7 @@ def main():
                 meta = lp_meta[column]
 
                 q = int(meta["q"])
-                witness_m = int(
-                    meta["first_m"]
-                )
-
-                residue = (
-                    witness_m % q
-                )
+                residue = int(meta["residue"])
 
                 remaining_info.append(
                     (
@@ -871,21 +1354,17 @@ def main():
                 meta = lp_meta[column]
 
                 q = int(meta["q"])
-                witness_m = int(
-                    meta["first_m"]
-                )
-
                 shared_info.append(
                     (
                         q,
-                        witness_m % q,
+                        int(meta["residue"]),
                     )
                 )
 
             score = (
-                remaining_count,
                 max_bits,
                 total_bits,
+                remaining_count,
                 -shared_count,
                 left,
                 right,
@@ -1030,15 +1509,11 @@ def main():
                         meta = lp_meta[column]
 
                         q = int(meta["q"])
-                        witness_m = int(
-                            meta["first_m"]
-                        )
-
                         info.append(
                             (
                                 q.bit_length(),
                                 q,
-                                witness_m % q,
+                                int(meta["residue"]),
                                 column,
                             )
                         )
@@ -1061,13 +1536,13 @@ def main():
 
                     triple_candidates.append(
                         (
-                            (
-                                len(info),
-                                max_bits,
-                                total_bits,
-                                i,
-                                j,
-                                k,
+                        (
+                            max_bits,
+                            total_bits,
+                            len(info),
+                            i,
+                            j,
+                            k,
                             ),
                             hub,
                             i,
@@ -1176,9 +1651,10 @@ def main():
             f"{PROTOCOL}|target={rank}"
             f"|q={q}"
             f"|q_bits={qbits}"
+            f"|root={lp_meta[column]['residue']}"
             f"|incidence={-neg_count}"
             f"|pivot={int(column in pivot_columns)}"
-            f"|seed_m={occurrences[0]}"
+            f"|witness={occurrences[0]}"
             f"|ideal_key={lp_meta[column]['key'][1]}",
             flush=True,
         )
