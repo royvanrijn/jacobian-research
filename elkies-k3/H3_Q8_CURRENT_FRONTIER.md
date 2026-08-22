@@ -1,150 +1,142 @@
 # H3 q=8 current frontier
 
-Status: 2026-08-22, after the point-to-MW marking re-audit.
+Status: 2026-08-22, after the binary-quartic 2-cover and q-normalizer repairs.
 
-The active checkpoint is [`H3_Q8_REAUDIT_2026-08-22.md`](H3_Q8_REAUDIT_2026-08-22.md). It supersedes the active q8 conclusions in the earlier module-intersection notes and in the q8 sections of `BISECTION_COLLISION_SEARCH.md` wherever they conflict.
+The authoritative audit/repair note is [`H3_Q8_REAUDIT_2026-08-22.md`](H3_Q8_REAUDIT_2026-08-22.md).
 
-## Objective
-
-The lattice target is unchanged:
+## Exact route now certified
 
 ```text
 H3 E7+E8/MW2 --q6--> E8+E6/MW3 --q8--> D13/MW4.
 ```
 
-The first q6 hop is still exact. The second q8 equation-level hop is **not currently certified**.
+Both displayed hops are now exact at equation level over characteristic zero.
 
-## Re-authorized exact facts
-
-The following remain valid:
-
-- the exact first q6 neighbour and its complete resolved RR cover;
-- the globally minimal q6 child with `E8+E6/MW3`;
-- the child MW height Gram
-
-  ```text
-  [[8/3,1/3,-1],
-   [1/3,8/3,1],
-   [-1,1,46]];
-  ```
-
-- the q8 lattice orbit classification and abstract D13/MW4 target;
-- the independently chamber-certified q8 classifier-nef representative;
-- the source-side representative reconciliation:
-
-  ```text
-  dominant D13 representative --122 old-fibre root reflections--> degree-18 class
-  classifier-nef representative --120 old-fibre root reflections--> degree-16 class
-  ```
-
-- the degree-16 terminal vector
-
-  ```text
-  (22,16,-14,-20,-27,-40,-33,-26,-18,-4,-5,-7,-10,-8,-6,-4,-2,8,0),
-  ```
-
-  which is exactly the later experimental chamber-reduced class;
-- the exact rational child points and section formulas as rational points on the q6 child, without the withdrawn MW/NS identification;
-- the independent Q80 programme.
-
-Reproduce the representative reconciliation with
+The q8 certificate is
 
 ```bash
-sage -python elkies-k3/scripts/audit_h92_q8_representative_selection.sage
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_corrected2cover_qq.sage
 ```
 
-## Confirmed invalid bridge
-
-`derive_h92_q6_child_q8_marking.sage` assigns the constructed rational section `S` the MW coordinate
+with endpoint
 
 ```text
-(-2,-2,0),
+Q8QQRR|ambient=13|rows=11|rank=11|kernel=2|...
+Q8QQQUARTIC|degree=4
+Q8QQCHILD|finite=[(1,[2,3,15],'I9*'),(9,[0,0,1],'I1')]|infinity=((0,0,0),'smooth')|root_rank=13|root_euler=24|root_det=4|MW_rank=4|status=PASS_EXACT_CORRECTED_Q8_D13_CHILD
 ```
 
-which has height `24` in the certified child MW lattice.
+Thus the second child is exactly `D13/MW4`.
 
-But the exact rational functions for `S` have a square/cube denominator root `h` of degree `46`, coprime to the discriminant, and the zero-section parameter `z=-x/y` has a simple zero at every root of `h`. Hence
+## Two repaired bugs
+
+### 1. Binary-quartic covariant 2-cover
+
+The old marking treated differences of covariant images as primitive MW differences and then doubled them again. In fact the covariant map is the degree-two covering map to the Jacobian.
+
+With
 
 ```text
-S.O = 46
+Pmap = phi(E7_7)-phi(old_O),
+Qmap = phi(E7_7)-phi(affine_E7),
 ```
 
-on smooth fibres.
-
-Shioda's height formula on the elliptic K3 gives
+the actual heights are
 
 ```text
-<S,S> = 4 + 2(S.O) - sum_v contr_v(S).
+height(Pmap)=32/3,
+height(Qmap)=32/3,
+<Pmap,Qmap>=4/3.
 ```
 
-Even using the deliberately loose bound
+Therefore these are doubled primitive directions. The corrected q8 section is
 
 ```text
-sum_v contr_v(S) <= maxdiag(E8^-1)+maxdiag(E6^-1) = 30+6 = 36,
+S=Pmap+Qmap,
+MW=(-2,-2,0),
+height=24,
+S.O=10.
 ```
 
-the rational section must have height at least
+The withdrawn point was exactly `2*S`, with height `96` and collision degree `46`.
 
-```text
-4 + 2*46 - 36 = 60,
-```
-
-contradicting `24`.
-
-Reproduce this with
+Canonical marking regression:
 
 ```bash
-sage -python elkies-k3/scripts/audit_h92_q6_child_q8_marking_height.sage
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_marking.sage
 ```
 
-Expected status:
+which routes to `derive_h92_q6_child_q8_marking_2cover.sage`.
+
+### 2. Missing `Dx` in q normalization
+
+For
 
 ```text
-PASS_CONFIRMED_MARKING_BRIDGE_CONTRADICTION
+x(S)=Nx/Dx,
+y(S)=Ny/Dy,
+p=-y(S)/x(S),
+q=(m-p)/h,
 ```
 
-## Retracted / conditional q8 equation work
-
-Until the rational point-to-MW bridge is repaired, do **not** treat the following as exact q8-neighbour results:
-
-- the child q8 marking `relative_child_section_MW_coordinates=(-2,-2,0)`;
-- child-side component-nef/nef/dominant q8 chord, collision, finite, q-frame, fractional, infinity, global-intersection, or branch conclusions that depend on that marking;
-- the degree-18 `true1600` source pipeline as the RR system of the final q8 moving divisor;
-- the hand-converted degree-16 `corrected1278` q6^8 local compiler and its `1278 -> 14 -> 7` survivor sequence.
-
-The modular ranks from those experiments remain useful diagnostics for the declared inputs, but they are no longer geometry certificates for the target q8 pencil.
-
-## What the recent degree-16 work did establish
-
-The degree-18 class historically called `source-nef` was not the classifier-nef representative. A bounded effective-root audit found a degree-two `(-2)` wall with negative pairing, and complete alternating reduction reached the exact degree-16 vector above. The representative audit independently confirms that this vector is the finite-root reduction of the classifier's nef representative.
-
-So retain the **degree-16 lattice chamber result**, but discard the inference
+the correct `Nx` pole cancellation is
 
 ```text
-degree 16 => replace every q6^9 local module by a q6^8 module.
+R*h*Dy == Ny*Dx mod Nx.
 ```
 
-That local-module step was never proved and produced contradictory downstream behaviour.
+The old formula omitted `Dx`, leaving a degree-24 vertical pole. That produced generic modular branch degree about `100`; the corrected normalization gives branch degree `4` at every nonsingular level modulo both `43` and `59`.
+
+## Corrected q8 geometry
+
+```text
+collision divisor degree h = 10
+Nx degree = 24
+Ny degree = 36
+component-nef vertical fibre coefficient = -2
+II* finite ideal = (u^2,X,Y)
+IV* finite ideal = (u^2,X,Y)
+```
+
+After the corrected globally regular q frame, exact infinity orders imply
+
+```text
+deg(s) <= 6
+deg(t) <= 5
+ambient = 13.
+```
+
+Over `QQ` the complete matrix has rank `11`, hence `h0=2`.
+
+## Source representative audit remains valid
+
+The old source-side degree-18 and degree-16 classes are different Weyl representatives:
+
+```text
+dominant D13 hit --122 finite-root reflections--> degree 18
+classifier-nef   --120 finite-root reflections--> degree 16.
+```
+
+The degree-16 terminal vector remains
+
+```text
+(22,16,-14,-20,-27,-40,-33,-26,-18,-4,-5,-7,-10,-8,-6,-4,-2,8,0).
+```
+
+This lattice result is exact, but the source-side `true1600` and hand-built `corrected1278` compilers are no longer the canonical equation route.
+
+## Superseded q8 experiments
+
+Treat these as historical diagnostics only:
+
+- degree-46 marking/collision chain;
+- old q-regular normalization without `Dx`;
+- source `true1600 -> 18` pipeline as the final q8 pencil;
+- experimental `corrected1278 -> 14 -> 7` q6^8 pipeline and identity-component tests.
 
 ## Next exact gate
 
-Do not run more q8 local rank probes yet.
+Continue from the exact `D13/MW4` child toward the rootless/high-rank target. Preserve two regression rules in every later compiler:
 
-First repair the child point-to-MW bridge. On the final minimal q6 child, independently compute the heights, pairings, zero intersections, and reducible-fibre component corrections of
-
-```text
-old_zero,
-affine_E7 point,
-E7_7 point,
-E7_7-old_zero,
-E7_7-affine_E7,
-2*(E7_7-old_zero)+2*(E7_7-affine_E7).
-```
-
-Then match their actual height Gram to the pinned rank-three MW lattice. Only after that match should the q8 lattice coordinate `(0,-2,0)` be converted into an actual rational child section.
-
-If that bridge is repaired, rebuild the q8 local modules from the corrected section. If it is not, derive the degree-16 source-chamber local modules directly from the resolved divisor, with no q6-power shortcut.
-
-## Execution priority
-
-The H3 lattice route remains valid and attractive, but its q8 equation hop is paused at this marking repair. The Q80 route is therefore the live equation-construction path for now.
+1. binary-quartic covariant point differences carry the 2-cover multiplier;
+2. derive base-pole residues from the fully cleared rational expression before CRT normalization—never drop section-coordinate denominators such as `Dx`.

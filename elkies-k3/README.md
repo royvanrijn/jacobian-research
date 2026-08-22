@@ -4,9 +4,51 @@ This directory contains the K3-surface and elliptic-neighbor work used to search
 
 ## Current priority
 
-The first H3 q6 neighbour remains exact, but the **second H3 q8 equation-level hop is paused** after a point-to-Mordell--Weil marking audit found a hard height contradiction. The H3 lattice route remains valid; what is withdrawn is the bridge from one exact rational child section to its claimed q8 MW coordinate.
+The **H3 route is restored as the primary characteristic-zero equation route**. Both first neighbours are now exact:
 
-The Q80 programme is therefore the **live equation-construction route**. This is an execution-priority change, not a claim that Q80 is intrinsically superior to H3.
+```text
+H3 E7+E8/MW2
+ --q6--> E8+E6/MW3
+ --q8--> D13/MW4.
+```
+
+The q8 repair found two independent bugs in the previous child-side compiler: a binary-quartic 2-cover multiplier was applied twice, and the q-frame CRT normalizer omitted the `Dx` factor of `x(S)=Nx/Dx`. After both corrections the q8 Riemann--Roch problem collapses to an exact `13 -> 2` characteristic-zero intersection and its Jacobian has one `I9*` fibre plus nine `I1`, hence `D13/MW4` exactly.
+
+The Q80 programme remains a strong secondary/fallback route and an independent compiler scaffold. Its generic lattice corridor reaches rootless/MW17, and its complete CM24 equation corridor reaches the final q6 specialization.
+
+## H3 q8 exact certificate
+
+Reproduce the corrected marking with
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_marking.sage
+```
+
+Expected geometry:
+
+```text
+MW coordinate = (-2,-2,0)
+height = 24
+O-intersection = 10
+smooth collision degree = 10
+II*, IV* = identity component
+```
+
+Then reproduce the complete second neighbour with
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_corrected2cover_qq.sage
+```
+
+Expected endpoint:
+
+```text
+Q8QQRR|ambient=13|rows=11|rank=11|kernel=2|...
+Q8QQQUARTIC|degree=4
+Q8QQCHILD|finite=[(1,[2,3,15],'I9*'),(9,[0,0,1],'I1')]|infinity=((0,0,0),'smooth')|root_rank=13|root_euler=24|root_det=4|MW_rank=4|status=PASS_EXACT_CORRECTED_Q8_D13_CHILD
+```
+
+The detailed diagnosis and supersession boundary is in [`H3_Q8_REAUDIT_2026-08-22.md`](H3_Q8_REAUDIT_2026-08-22.md).
 
 ## Q80 status: CM24 corridor complete
 
@@ -28,7 +70,7 @@ E6+D5+A3/MW3
 
 Every retained new divisor from `D7+D5/MW5` onward has chamber-reduced old-fibre degree `2`.
 
-As of 2026-08-22 evening, the **entire CM24 equation-development corridor is also algebraized**, through the final q6. The specialized sequence is not rootless: specialization repeatedly changes the horizontal section and ADE type. The late CM24 stages are
+The entire CM24 equation-development corridor is also algebraized through the final q6. The late specialized sequence is
 
 ```text
 2A6+3A1/MW3
@@ -55,14 +97,16 @@ data/fibrations/kumar_q80_cm24_equation_progress.tsv.
 
 ## Reusable equation/compiler results
 
-The completed Q80 corridor established several reusable rules:
+The combined H3/Q80 work now gives these durable rules:
 
-1. **Specialize the actual divisor before searching equations.** Generic `P.O`, MW height, twist, and vertical support can change dramatically at CM24.
-2. **Connected ADE corrections compile as resolved quotient-line/module conditions**, not one independent row per listed exceptional component.
-3. `root_component_data()` may return arbitrary integral root-lattice bases; use discriminant groups rather than assuming Cartan coordinates.
-4. For an A3 correction `(-2,-1,-1)`, the exact local module is the middle-component double-vanishing condition.
-5. For a D4 correction `(-1,0,-1,-1)`, the ramified-chart outer-complement condition is the deterministic quotient residue `c=0`.
-6. In the final A5 correction `(-1,0,-1,-1,0)`, the exact quotient line is the `+/-4` residue pair for the two horizontal signs.
+1. **Binary-quartic covariant maps are 2-covering maps.** Differences of transported quartic points must not be interpreted as primitive MW differences without the factor-of-two check.
+2. **Clear the full rational expression before CRT normalization.** For the corrected H3 q8 frame, the `Nx` residue is `Ny*Dx/(h*Dy)`; omitting `Dx` leaves a hidden vertical pole.
+3. **Specialize the actual divisor before searching equations.** Generic `P.O`, MW height, twist, and vertical support can change dramatically at CM24.
+4. **Connected ADE corrections compile as resolved quotient-line/module conditions**, not one independent row per listed exceptional component.
+5. `root_component_data()` may return arbitrary integral root-lattice bases; use discriminant groups rather than assuming Cartan coordinates.
+6. For an A3 correction `(-2,-1,-1)`, the exact local module is the middle-component double-vanishing condition.
+7. For a D4 correction `(-1,0,-1,-1)`, the ramified-chart outer-complement condition is the deterministic quotient residue `c=0`.
+8. In the final A5 correction `(-1,0,-1,-1,0)`, the exact quotient line is the `+/-4` residue pair for the two horizontal signs.
 
 The field-generic exact module compatibility layer remains in
 
@@ -74,18 +118,14 @@ scripts/verify_elliptic_neighbor_compiler_field_generic.sage.
 ## Start here
 
 - [`RESEARCH_UPDATE_2026-08-22.md`](RESEARCH_UPDATE_2026-08-22.md) — current repository-wide K3 status.
+- [`H3_Q8_CURRENT_FRONTIER.md`](H3_Q8_CURRENT_FRONTIER.md) — concise H3 q8 exact frontier.
+- [`H3_Q8_REAUDIT_2026-08-22.md`](H3_Q8_REAUDIT_2026-08-22.md) — two-bug diagnosis and exact repair.
 - [`Q80_CM24_EQUATION_LEDGER_2026-08-22.md`](Q80_CM24_EQUATION_LEDGER_2026-08-22.md) — complete Q80 CM24 equation ledger.
 - [`data/fibrations/kumar_q80_cm24_equation_progress.tsv`](data/fibrations/kumar_q80_cm24_equation_progress.tsv) — machine-readable complete CM24 stage summary.
-- [`Q80_LOW_Q_ALTERNATE_2026-08-22.md`](Q80_LOW_Q_ALTERNATE_2026-08-22.md) — generic low-q route plus specialization/equation summary.
 - [`Q80_TO_ROOTLESS_PATH_2026-08-21.md`](Q80_TO_ROOTLESS_PATH_2026-08-21.md) — canonical Q80 rootless lattice certificate.
-- [`data/fibrations/kumar_q80_new_lowq_rootless_geometry.tsv`](data/fibrations/kumar_q80_new_lowq_rootless_geometry.tsv) — exact generic geometry of the alternate route.
-- [`scripts/verify_q80_new_lowq_rootless_geometry.py`](scripts/verify_q80_new_lowq_rootless_geometry.py) — exact replay of the generic alternate route.
-- [`H3_Q8_REAUDIT_2026-08-22.md`](H3_Q8_REAUDIT_2026-08-22.md) — current H3 q8 trust boundary.
 
 ## Next strategic gate
 
-Q80 no longer needs additional CM24 neighbour discovery or local-module search. The next Q80 problem is the **generic characteristic-zero lift** from orbit 1222 onward: recover the generic horizontal sections and resolved quotient data, lift the modular identities, control fields of definition, and verify that the final seventeen sections live over the intended characteristic-zero specialization.
+For **H3**, continue from the exact `D13/MW4` child toward the rootless/high-rank target. Do not return to the historical degree-46, `true1600`, or hand-built `corrected1278` q8 compilers except as diagnostics.
 
-Do not infer generic rootlessness from the CM24 endpoint: the special final child has root rank 16. Conversely, do not interpret that special root rank as a failure of the generic route: the generic final q6 is independently certified rootless/MW17.
-
-For H3, do not resume q8 local rank searches until the exact rational child points have been independently matched back to the pinned MW lattice by canonical heights, pairings, zero intersections, and reducible-fibre corrections.
+For **Q80**, the remaining strategic problem is the generic characteristic-zero lift from orbit 1222 onward: recover the generic horizontal sections and resolved quotient data, lift the modular identities, control fields of definition, and verify that the final seventeen sections live over the intended characteristic-zero specialization.
