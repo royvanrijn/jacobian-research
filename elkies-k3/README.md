@@ -13,17 +13,18 @@ As of 2026-08-22 evening, the Q80 fallback has:
 - exact CM24 characteristic-zero equations through the q6 escape and orbit 424;
 - an exact modular CM24 equation for orbit 1222, together with a proof that this `2A6+3A1/MW3` fibration is the same GF(73) fibration as the old pinned third-q12 CM24 child;
 - an exact modular CM24 equation for q6_7774, with special child `A5+2A4+2A1/MW3` and root data `(15,74,600)`;
-- the q4_1938 CM24 horizontal section pinned exactly, with special divisor geometry and target child `2A4+2A3+A1/MW3`, root data `(15,66,800)`;
-- the final connected-A4 quotient-line scan for q4_1938 currently in progress.
+- an exact modular CM24 equation for q4_1938, with special child `2A4+2A3+A1/MW3` and root data `(15,66,800)`;
+- the q4_1938 horizontal reconstructed as `-P1+P2+2P3`, height `12/5`, profile `(0,1,4,4,3)`, `P.O=1`;
+- the live CM24 equation frontier advanced to q4_6855.
 
-The important reusable equation lesson from q6_7774 is that a connected vertical ADE divisor must be compiled as a **single resolved quotient-line condition**. Treating each listed exceptional component as an independent evaluation row can overconstrain the Riemann--Roch pencil.
+The important reusable equation lesson from q6_7774 and q4_1938 is that a connected vertical ADE divisor must be compiled as a **single resolved quotient-line condition**. Treating each listed exceptional component as an independent evaluation row can overconstrain the Riemann--Roch pencil.
 
 ## Start here
 
 - [`RESEARCH_UPDATE_2026-08-22.md`](RESEARCH_UPDATE_2026-08-22.md) — concise current status and priorities.
 - [`Q80_CM24_EQUATION_LEDGER_2026-08-22.md`](Q80_CM24_EQUATION_LEDGER_2026-08-22.md) — detailed equation-level ledger, including passed vs pending gates.
 - [`data/fibrations/kumar_q80_cm24_equation_progress.tsv`](data/fibrations/kumar_q80_cm24_equation_progress.tsv) — machine-readable CM24 stage summary.
-- [`Q80_LOW_Q_ALTERNATE_2026-08-22.md`](Q80_LOW_Q_ALTERNATE_2026-08-22.md) — detailed discovery history for the low-q alternate corridor. Its older “what remains open / recommended live branch” paragraphs are historical; use the equation ledger above for current status.
+- [`Q80_LOW_Q_ALTERNATE_2026-08-22.md`](Q80_LOW_Q_ALTERNATE_2026-08-22.md) — current low-q route summary and discovery history.
 - [`Q80_TO_ROOTLESS_PATH_2026-08-21.md`](Q80_TO_ROOTLESS_PATH_2026-08-21.md) — canonical Q80 rootless lattice certificate.
 - [`data/fibrations/kumar_q80_new_lowq_rootless_geometry.tsv`](data/fibrations/kumar_q80_new_lowq_rootless_geometry.tsv) — exact generic geometry of the completed alternate corridor.
 - [`scripts/verify_q80_new_lowq_rootless_geometry.py`](scripts/verify_q80_new_lowq_rootless_geometry.py) — exact replay of the alternate generic route and chamber geometry.
