@@ -1,0 +1,50 @@
+# Q80 low-q q4_6855 CM24 equation certificate over GF(73)
+# Certified 2026-08-22 by exact CM24 divisor transport, MW marking,
+# deterministic polynomial-section reconstruction, and exact connected-A3 module.
+# Generic move: A3+A2/MW12 --q4(2,2)--> 4A1/MW13
+# CM24 source: A1+2A3+2A4/MW3
+# CM24 child: A1+2A3+2D4/MW3
+# root data: rank=15 roots=74 root_det=512
+#
+# Special divisor geometry:
+# D.F=2, D.O=0, P.O=0, MW height=3/5, fibre_twist=2.
+# Horizontal H=2P1 in the optimal MW basis.
+# P1 profile=(1,1,2,4,4), H profile=(0,2,0,3,3).
+# Special vertical support: one A3, coefficients (-2,-1,-1).
+# The supported I4 is S=23 in the pinned polynomial gauge.
+#
+# Polynomial parent gauge:
+# y^2=x^3+A(S)x+B(S)
+A_parent(S) = 38 + 22*S + 48*S^2 + 52*S^3 + 17*S^4 + 58*S^5 + 15*S^6 + 32*S^7 + 34*S^8
+B_parent(S) = 38 + 43*S + 27*S^2 + 37*S^3 + 32*S^4 + 42*S^5 + 23*S^6 + 53*S^7 + 64*S^8 + 3*S^9 + 5*S^10 + 6*S^11 + 11*S^12
+# Reducible fibres: I5 at S=8,72; I4 at S=23,37; I2 at S=27.
+# Nodes: (8,72), (23,46), (27,52), (37,41), (72,2).
+
+# Reconstructed optimal basis section P1:
+P1_X(S) = 54 + 6*S + 47*S^2 + 29*S^3 + 9*S^4
+P1_Y(S) = 7 + 59*S^2 + 26*S^3 + 70*S^4 + 67*S^5 + 30*S^6
+
+# Horizontal H=2P1, pinned sign:
+H_X(S) = 34 + 12*S + 62*S^2 + 23*S^3 + 14*S^4
+H_Y(S) = 51 + 13*S + 25*S^2 + 65*S^3 + 24*S^4 + 48*S^5 + 26*S^6
+# H node hits: S=8 true, S=23 false, S=27 false, S=37 true, S=72 true.
+
+# Exact connected-A3 middle-double module at I4 S=23:
+# analytic centre x=46, centre derivative=23
+# chord pure-base data m0=10, m1=9
+# local matrix=((1,23,18,10),(0,1,46,9))
+# kernel=((1,0,38,41),(0,1,45,70))
+
+quartic(S;U) = S^4 + ((16*U^3 + 19*U^2 + 46*U + 48)/(U^3 + 23*U^2 + 31*U + 62))*S^3 + ((45*U^3 + 17*U^2 + 19*U + 47)/(U^3 + 23*U^2 + 31*U + 62))*S^2 + ((4*U^3 + 62*U^2 + 50*U + 72)/(U^3 + 23*U^2 + 31*U + 62))*S + (48*U^3 + 61*U^2 + 27*U + 34)/(U^3 + 23*U^2 + 31*U + 62)
+twist(U) = 57*U^8 + 57*U^7 + 12*U^6 + 36*U^5 + 71*U^4 + 42*U^3 + 62*U^2 + 3*U + 53
+
+A(U) = 17*U^15 + 35*U^14 + 7*U^13 + 29*U^12 + 52*U^11 + 71*U^10 + 10*U^9 + 33*U^8 + 31*U^7 + 34*U^6 + 8*U^5 + 8*U^4 + 17*U^3 + 22*U^2 + 65*U + 35
+B(U) = 49*U^24 + 21*U^23 + 5*U^22 + 46*U^21 + 65*U^20 + 69*U^19 + 53*U^18 + 17*U^17 + 19*U^16 + 25*U^15 + 20*U^14 + 60*U^13 + 59*U^12 + 18*U^11 + 58*U^10 + 38*U^9 + 8*U^8 + 35*U^7 + 17*U^6 + 29*U^5 + 18*U^4 + 24*U^3 + 8*U^2 + 39*U + 3
+
+# Fibre signature of the pinned representative:
+# I0* at U+24 and U+25 -> 2D4
+# I4 at U+7 and U+71 -> 2A3
+# I2 at U+41 -> A1
+# I1 at U+29 and U+50
+# infinity smooth
+# Both horizontal signs produce the same quartic/Jacobian.
