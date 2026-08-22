@@ -1,7 +1,7 @@
 #!/usr/bin/env sage
 """Verify the two explicit CM24 binary-quartic moves in the Q80 low-q corridor.
 
-The exact field is K=QQ(sqrt(-6)).  Starting from the known CM24 second Q80
+The exact field is K=QQ(sqrt(-6)). Starting from the known CM24 second Q80
 child, this script verifies
 
   * the new q6 marked-chord coordinate and D8+D6+2A1 child;
@@ -25,12 +25,6 @@ WR = PolynomialRing(VR, "u")
 u = WR.gen()
 W = u-K(27)/2
 
-old_A = (
-    -27*W**6 + 59049*W**4 + K(13286025)/8*W**3
-    + K(129140163)/8*W**2 + K(1162261467)/8*W
-    - K(10460353203)/64
-)
-# Correct the W coefficient to the pinned CM24 model.
 old_A = (
     -27*W**6 + 59049*W**4 + K(13286025)/8*W**3
     + K(129140163)/8*W**2 + K(1162261467)/32*W
@@ -114,7 +108,6 @@ VUR = PolynomialRing(UR, "V")
 VV = VUR.gen()
 
 A6u = VUR(A6(VV))
-B6u = VUR(B6(VV))
 Tu = VUR(T(VV))
 v0 = K(13)/18*s
 zT = (VV-v0)*U
