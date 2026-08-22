@@ -87,6 +87,15 @@ theorem.
 
 ## Rank records and calibration data
 
+- The public ICARM database entries for
+  [curve 281](https://elliptic-rank.icarm.cloud/curve/281),
+  [curve 282](https://elliptic-rank.icarm.cloud/curve/282),
+  [curve 285](https://elliptic-rank.icarm.cloud/curve/285), and
+  [curve 286](https://elliptic-rank.icarm.cloud/curve/286) provide the four
+  `7fff-zip` equations, points, conductors and timestamps analyzed in the
+  pinned 2026-08-22 snapshot.  The repository independently replays point
+  membership and independence; conductor minimality is still source-reported.
+
 - Andrej Dujella's current [history of elliptic-curve rank
   records](https://web.math.pmf.unizg.hr/~duje/tors/rankhist.html) lists the
   Nagao--Kouya rank-at-least-21 curve in 1994, the Elkies--Klagsbrun

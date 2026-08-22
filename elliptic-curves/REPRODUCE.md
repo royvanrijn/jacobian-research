@@ -219,6 +219,23 @@ PYTHONPATH=elliptic-curves/cas .venv/bin/python -m unittest \
   elliptic-curves/tests/test_icarm_curve245_mestre.py
 ```
 
+### ICARM `7fff-zip` rank-19/20/21 sequence
+
+Replay all 81 points, the four exact finite-reduction independence
+certificates, discriminant-support fingerprints, trivial-torsion certificates,
+and pairwise `j` comparisons with:
+
+```bash
+python3 elliptic-curves/cas/analyze_icarm_7fff_zip_sequence.py
+```
+
+The pinned output is
+[`icarm_7fff_zip_sequence_analysis.json`](../artifacts/generated-results/elliptic-curves/icarm_7fff_zip_sequence_analysis.json).
+It proves ranks at least 19, 20, 21 and 21 for ICARM curves 281, 282, 285 and
+286.  Curve 285's source-reported conductor has
+`log(N)=173.25150319151186...<182.72`; reproducing global minimality and Tate's
+algorithm requires a PARI/Sage follow-up.
+
 The recovered parameters are `(u,v)=(3/2,2)`.  In the canonical integral-root
 chart the roots are `(0,106,344,475,594,731)` and the anchor is `T=5801/10`.
 The test checks the root formulas, family coefficients, extra generic section,

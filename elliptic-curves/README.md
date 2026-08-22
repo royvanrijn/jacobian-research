@@ -13,11 +13,16 @@ either target.
 
 ## Current status
 
-**Second target met.**  The 2026 public ICARM curve 273 has 30 displayed
+**Second target met; first target met modulo an independent conductor replay.**
+The 2026 public ICARM curve 273 has 30 displayed
 rational points whose exact finite-reduction images have full binary rank 30.
 The repository's primary checker and an independent Sage implementation prove
 `rank(E(Q)) >= 30` unconditionally.  No unconditional exact-rank-30 statement
-is claimed.  The first, low-conductor rank-at-least-21 target remains open.
+is claimed.  For ICARM curve 285, a new dependency-free replay verifies all
+21 points and certifies their independence, while ICARM reports
+`log(N)=173.25150319151186...<182.72`.  This meets the low-conductor target on
+the public conductor data; repository-local global minimality and Tate-algorithm
+replay remain to be completed.
 
 The research program now has exact-arithmetic implementations of the proposed
 pipeline
@@ -142,6 +147,7 @@ canonical-height matrix.
 | Family/search | Parameter | `ln N` | Current rank evidence |
 | --- | ---: | ---: | --- |
 | ICARM public record | curve 273 | `339.347931713664...` | **exact unconditional rank at least 30**; second operational target met, independently replayed; no unconditional exact-rank claim |
+| ICARM `7fff-zip` sequence | curve 285 | `173.251503191511...` | **exact unconditional rank at least 21** from an independent finite-reduction replay; first target met using ICARM's reported conductor, pending repository-local conductor/minimality replay |
 | Fermigier benchmark | normalized `T=39508/39` | `182.724910950637...` | **exact unconditional rank at least 22**; misses the strict conductor bound by `0.004910950637...` |
 | ICARM low-conductor record | curve 245 | `150.668907152237...` | **exact unconditional rank at least 20**; independently replayed finite-reduction certificate; one point short of the target |
 | Fermigier--Mestre adapter | `u=28917/20` | `159.934825225525...` | **exact unconditional rank at least 20**; imported 58-abscissa search and finite-reduction certificate, one point short of the target |
