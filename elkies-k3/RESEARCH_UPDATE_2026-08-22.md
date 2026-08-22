@@ -1,94 +1,63 @@
 # Research update — 2026-08-22
 
-## Q80 secondary route: low-q corridor found
+## Q80 secondary route: complete all-degree-two rootless corridor
 
-The canonical Q80 six-step rootless certificate in
-[`Q80_TO_ROOTLESS_PATH_2026-08-21.md`](Q80_TO_ROOTLESS_PATH_2026-08-21.md)
-remains unchanged and remains the only Q80 route certified to MW17/rootless.
+The Q80 secondary/fallback route is now certified all the way to a **new rootless MW17 frame**. It remains secondary to the corrected H3 source-polarization route, but it is no longer merely a partial lattice corridor.
 
-A new secondary corridor has now been found and checked exactly through MW8:
+The exact retained continuation from the common `D7+D5/MW5` source is
 
 ```text
-E6+D5+A3/MW3
- --q4--> D9+A4/MW4
- --q4--> D7+D5/MW5
- --q6--> D7+D4/MW6
- --q4--> A6+A4/MW7
- --q4--> A6+A3/MW8.
+D7+D5/MW5
+ --q6 (2,3)--> D7+D4/MW6
+ --q4 (2,2)--> A6+A4/MW7
+ --q4 (2,2)--> A6+A3/MW8
+ --q6 (2,3)--> A4+A2+A1/MW10
+ --q4 (2,2)--> A3+A2/MW12
+ --q4 (2,2)--> 4A1/MW13
+ --q4 (2,2)--> A1/MW16
+ --q6 (2,3)--> rootless/MW17.
 ```
 
-The new q6 is a non-shortest root correction in the **same MW coset** as the
-old pinned third q12 move. After chamber reduction it has old-fibre degree two
-and the same marked horizontal section, replacing the marked-trisection gate
-by a marked-chord/binary-quartic gate.
-
-At CM24 the q6 has an exact characteristic-zero equation over
-`QQ(sqrt(-6))`. The exact new base is
+The main structural result is that **all eight retained new divisors chamber-reduce to old-fibre degree two**:
 
 ```text
-V = (z_Q - 162*s + (39/4)*s*(W+27/2)) / (W+27/2)^2,
-s^2=-6,
+degree_distribution = ((2, 8),)
+P.O distribution:
+  1 : 3 moves
+  2 : 3 moves
+  3 : 1 move
+  4 : 1 move
 ```
 
-and the child fibres are
+The corrected effective-section normalization also improves the earlier generic vertical-complexity records: orbit 424 has one-fibre/three-component vertical correction with L1 `3` rather than `12`, and orbit 1222 has one-fibre/two-component correction with L1 `2` rather than `9`. The old values came from arbitrary shortest root-coset representatives rather than the unique shortest section effective in the old fibration chamber.
+
+The later retained branch is
 
 ```text
-I4* + I2* + 2 I2 + 2 I1
-ADE = D8+D6+2A1
-MW = 2.
+A6+A3/MW8
+ --q6--> A4+A2+A1/MW10       [7774]
+ --q4--> A3+A2/MW12           [1938]
+ --q4--> 4A1/MW13             [6855]
+ --q4--> A1/MW16              [candidate 1]
+ --q6--> rootless/MW17.
 ```
 
-The preferred next q4 is Weyl orbit 424. Its CM24 marked section specializes
-to the exact 2-torsion point
+The new `4A1/MW13` and `A1/MW16` frames are not isometric to their canonical-route counterparts. The final rootless q6 was found directly in the new A1 class by decomposing the rank-16 MW search by A1 root pairing and using an exact rational LDL / Fincke--Pohst shell streamer. The successful final shell has A1 pairing `p=1`.
+
+Machine-readable results and replay/search scripts are:
 
 ```text
-T = (1944*s*V^3 + 12150*V^2 - 4401*s*V - 3036, 0),
+data/fibrations/kumar_q80_new_lowq_rootless_path.tsv
+data/fibrations/kumar_q80_new_lowq_rootless_geometry.tsv
+data/fibrations/kumar_q80_new_lowq_rootless_final_q6.txt
+data/fibrations/kumar_q80_a6a3_q6_chamber_scores.tsv
+data/fibrations/kumar_q80_7774_q4_rank5_scores.tsv
+data/fibrations/kumar_q80_1938_q4_4a1_scores.tsv
+scripts/verify_q80_new_lowq_rootless_geometry.py
+scripts/search_q80_new_lowq_final_q6_rootless.py
 ```
 
-so its new base becomes
-
-```text
-U = Y / ((X-T_x)*(V-13*s/18)).
-```
-
-The resulting CM24 child is exceptionally clean:
-
-```text
-2 I8 + 8 I1
-ADE = 2A7
-MW = 4.
-```
-
-Exact Weyl-orbit scans show the same local pattern in both checked corridor
-frames:
-
-- q2: all loops;
-- q3: all loops;
-- q4 `(1,4)`: all loops;
-- q4 `(2,2)`: first productive shell, dropping root rank by one.
-
-From `A6+A4/MW7`, the retained rank-9 continuation is orbit 1222:
-
-```text
-A6+A4/MW7 --q4 (2,2)--> A6+A3/MW8.
-```
-
-At CM24 this specializes to `2A6+3A1`; its marked section remains non-torsion
-with `P.O=1`, height `25/8`, and a vertical correction supported on one A7
-fibre with only three nonzero coefficients. The same CM24 root signature also
-occurs for the old pinned q12 child, but equality of the two elliptic
-fibrations has **not** been proved.
-
-Full details, exact vectors, equations, scan counts, and open questions are in
-[`Q80_LOW_Q_ALTERNATE_2026-08-22.md`](Q80_LOW_Q_ALTERNATE_2026-08-22.md).
-Machine-readable records and replay scripts are:
-
-```text
-data/fibrations/kumar_q80_lowq_alternate_prefix.tsv
-data/fibrations/kumar_q80_lowq_weyl_summary.tsv
-scripts/verify_q80_lowq_alternate_prefix.sage
-scripts/verify_q80_lowq_cm24_equations.sage
-```
+The first q6 and orbit-424 moves still have explicit CM24 characteristic-zero binary-quartic equations as recorded in [`Q80_LOW_Q_ALTERNATE_2026-08-22.md`](Q80_LOW_Q_ALTERNATE_2026-08-22.md). The remaining degree-two hops are now exact lattice/equation-geometry targets for the generic neighbour compiler.
 
 ## Reusable compiler update
 
@@ -107,19 +76,9 @@ compositum `QQ(sqrt(-6),sqrt(-3))`.
 
 ## Current priority
 
-The live fallback branch is now
+The Q80 lattice search is closed for this fallback: it now has a complete exact all-degree-two route to rootless/MW17. Do not spend more time extending Q80 neighbour shells unless needed for a specific equation obstruction.
 
-```text
-D7+D5/MW5
- --q6 escape--> D7+D4/MW6
- --q4 orbit424--> A6+A4/MW7
- --q4 orbit1222--> A6+A3/MW8.
-```
+If Q80 is pursued further, the priority is to algebraize the retained degree-two hops after `A6+A3/MW8` with the field-generic neighbour/module machinery and determine whether they give a materially faster equation-level rootless model than the corrected H3 route.
 
-Next work should first determine whether this q4 root-peeling corridor
-continues cheaply from `A6+A3/MW8`, and whether the orbit-1222 CM24 child is
-actually the same `2A6+3A1` fibration reached by the old q12 route.
+The H3 route remains the primary source-polarization route.
 
-The H3 route remains the primary source-polarization route. Q80 remains a
-secondary route until this alternate corridor is continued to rootless and
-its generic characteristic-zero marked sections are algebraized.

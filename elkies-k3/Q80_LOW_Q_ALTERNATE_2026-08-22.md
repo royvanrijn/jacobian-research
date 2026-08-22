@@ -2,9 +2,9 @@
 
 ## Status
 
-This note records a new exact low-q continuation from the generic determinant-948 Q80 frame. It is a **secondary/fallback route** and does **not** replace the certified six-step rootless path in [`Q80_TO_ROOTLESS_PATH_2026-08-21.md`](Q80_TO_ROOTLESS_PATH_2026-08-21.md).
+This note records a complete exact low-q continuation from the generic determinant-948 Q80 frame to a **new rootless MW17 frame**. It remains a **secondary/fallback route** and does **not** replace the corrected H3 source-polarization route or the earlier canonical Q80 certificate in [`Q80_TO_ROOTLESS_PATH_2026-08-21.md`](Q80_TO_ROOTLESS_PATH_2026-08-21.md).
 
-The canonical route remains the only Q80 path currently certified all the way to the rootless MW17 frame. The new route is interesting because its first two newly discovered moves have much simpler equation geometry than the old pinned q12 move: both reduce to old-fibre degree two and have explicit CM24 binary-quartic models.
+The alternate Q80 route is now certified all the way to rootless. Its strongest structural feature is that **every retained neighbour from `D7+D5/MW5` through rootless has chamber-reduced old-fibre degree two**, even though the lattice shells alternate between q4 and q6. The first two new moves already have explicit CM24 binary-quartic models; the later degree-two hops are lattice/equation-geometry certified but have not yet all been algebraized in characteristic zero.
 
 The exact generic lattice prefix now is
 
@@ -255,7 +255,7 @@ section P.O = 1
 fiber twist = 1.
 ```
 
-Its generic vertical correction is integral and supported on both old root components, with total coefficient L1 norm 12.
+Using the unique shortest section which is effective in the old-fibration chamber, its generic vertical correction is integral and supported on **one** old fibre, on three simple components with unit coefficients, so the total coefficient L1 norm is **3**. The previously recorded L1 value 12 came from an arbitrary shortest root-coset representative rather than the effective section and is superseded by this chamber-effective normalization.
 
 ### CM24 specialization: the marked section becomes 2-torsion
 
@@ -369,8 +369,8 @@ orbit 1222:
   child A6+A3 / MW8
   MW height 122/35
   section P.O=1
-  two vertical root components
-  vertical L1 = 9
+  one old fibre / two vertical simple components
+  vertical L1 = 2
 
 orbit 720:
   child A5+A2+2A1 / MW8
@@ -439,3 +439,85 @@ D7+D5/MW5
 as the preferred low-q exploratory branch.
 
 The old q12 route remains the certified fallback to rootless.
+
+## 10. Complete all-degree-two route to rootless
+
+The low-q corridor has now been continued exactly from `A6+A3/MW8` to a new rootless frame:
+
+```text
+D7+D5/MW5
+ --q6 (2,3)--> D7+D4/MW6
+ --q4 (2,2)--> A6+A4/MW7
+ --q4 (2,2)--> A6+A3/MW8
+ --q6 (2,3)--> A4+A2+A1/MW10
+ --q4 (2,2)--> A3+A2/MW12
+ --q4 (2,2)--> 4A1/MW13
+ --q4 (2,2)--> A1/MW16
+ --q6 (2,3)--> rootless/MW17.
+```
+
+The retained later vectors are pinned in
+[`data/fibrations/kumar_q80_new_lowq_rootless_path.tsv`](data/fibrations/kumar_q80_new_lowq_rootless_path.tsv),
+with the full chamber geometry in
+[`data/fibrations/kumar_q80_new_lowq_rootless_geometry.tsv`](data/fibrations/kumar_q80_new_lowq_rootless_geometry.tsv).
+
+### Exact equation geometry along the completed route
+
+| step | move | child | D.F | P.O | twist | vertical support | L1 |
+|---:|---|---|---:|---:|---:|---|---:|
+| 1 | `escape` q6 `(2,3)` | `D7+D4/MW6` | 2 | 2 | 1 | 1 fibre / 5 components | 10 |
+| 2 | `orbit424` q4 `(2,2)` | `A6+A4/MW7` | 2 | 1 | 1 | 1 fibre / 3 components | 3 |
+| 3 | `orbit1222` q4 `(2,2)` | `A6+A3/MW8` | 2 | 1 | 1 | 1 fibre / 2 components | 2 |
+| 4 | `q6_7774` q6 `(2,3)` | `A4+A2+A1/MW10` | 2 | 3 | 0 | 1 fibre / 2 components | 2 |
+| 5 | `q4_1938` q4 `(2,2)` | `A3+A2/MW12` | 2 | 1 | 1 | 1 fibre / 2 components | 2 |
+| 6 | `q4_6855` q4 `(2,2)` | `A1+A1+A1+A1/MW13` | 2 | 2 | 0 | none | 0 |
+| 7 | `q4_a1_candidate1` q4 `(2,2)` | `A1/MW16` | 2 | 2 | 0 | none | 0 |
+| 8 | `q6_rootless` q6 `(2,3)` | `rootless/MW17` | 2 | 4 | -1 | none | 0 |
+
+Thus the entire eight-move continuation from `D7+D5/MW5` has `D.F=2`. Three moves have `P.O=1`, three have `P.O=2`, the MW8 q6 jump has `P.O=3`, and only the final q6 rootless move reaches `P.O=4`. The last three retained moves have no vertical correction at all at the `4A1`, `A1`, and rootless end of the route.
+
+The preferred later lattice branch is
+
+```text
+A6+A3/MW8
+ --q6--> A4+A2+A1/MW10       [candidate 7774]
+ --q4--> A3+A2/MW12           [shell 1938]
+ --q4--> 4A1/MW13             [shell 6855]
+ --q4--> A1/MW16              [terminal candidate 1]
+ --q6--> rootless/MW17.
+```
+
+The final q6 rootless vector is
+
+```text
+-44717,-282065,63356,564493,-98198,249323,239104,-1054,-22328,-389456,-231271,-641746,-570362,-123785,227276,-186445,89497
+```
+
+and is also recorded separately in
+[`data/fibrations/kumar_q80_new_lowq_rootless_final_q6.txt`](data/fibrations/kumar_q80_new_lowq_rootless_final_q6.txt).
+
+### The new endpoint is genuinely non-canonical
+
+The 1938 q4 shell contains 152 `4A1/MW13` children. Exact positive-definite integral-form equivalence tests found none isometric to the canonical Q80 `4A1/MW13` frame. From shell 6855, the balanced q4 shell has exactly three `A1/MW16` children; those three are pairwise non-isometric and none is isometric to the canonical Q80 `A1/MW16` frame.
+
+The final rootless q6 was therefore found directly in the new A1 class. The source has rank-16 MW quotient and a naive radius-12 PARI enumeration overflows a 1 GiB stack. Exploiting the one-dimensional A1 root part decomposes q6 candidates by dominant root pairing. The canonical successful terminal q6 has A1 pairing `p=1`; an exact rational LDL / Fincke--Pohst shell streamer, independently checked against PARI counts on the smaller `p=4` shell, found the new rootless q6 in the exact `p=1` shell.
+
+The durable search/scoring artifacts are:
+
+```text
+data/fibrations/kumar_q80_a6a3_q6_chamber_scores.tsv
+data/fibrations/kumar_q80_7774_q4_rank5_scores.tsv
+data/fibrations/kumar_q80_1938_q4_4a1_scores.tsv
+data/fibrations/kumar_q80_new_lowq_rootless_path.tsv
+data/fibrations/kumar_q80_new_lowq_rootless_geometry.tsv
+data/fibrations/kumar_q80_new_lowq_rootless_final_q6.txt
+scripts/verify_q80_new_lowq_rootless_geometry.py
+scripts/search_q80_new_lowq_final_q6_rootless.py
+```
+
+## 11. Status after completion
+
+The Q80 fallback is no longer merely a partial low-q corridor: it is an exact second Q80 route to a rootless MW17 frame, and every retained new divisor has old-fibre degree two.
+
+This materially strengthens Q80 as an equation-friendly fallback. It still does **not** replace the corrected H3 source-polarization route: the later Q80 degree-two pencils have not yet all been algebraized over the generic characteristic-zero family. Further Q80 work should therefore focus on compiling those degree-two Riemann--Roch/module intersections into explicit equations, not on more lattice shell search.
+
