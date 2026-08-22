@@ -1,0 +1,55 @@
+# Q80 low-q final q6 CM24 equation certificate over GF(73)
+# Certified 2026-08-22 by exact CM24 divisor transport, MW marking,
+# node-constrained P.O=0 horizontal reconstruction, A4 node module,
+# A5 connected quotient-line scan, and exact quartic/Jacobian classification.
+#
+# Generic move: A1/MW16 --q6(2,3)--> rootless/MW17
+# Generic endpoint regression: rootless, MW17.
+# CM24 source: A1+A2+A3+A4+A5/MW3
+# CM24 child: 4A2+A3+A5/MW2
+# root data: rank=16 roots=66 root_det=1944
+#
+# Special divisor geometry:
+# D.F=2, D.O=0, P.O=0, MW height=1, fibre_twist=2.
+# Horizontal H=P2-P3 in an optimal parent MW basis.
+# Horizontal profile=(0,2,2,0,4) on (A1,A2,A3,A4,A5).
+# Special vertical support:
+#   A4: (-1,-1,-1,-1)
+#   A5: (-1,0,-1,-1,0)
+#
+# Minimal polynomial candidate-1 parent gauge:
+A_parent(W) = 29 + 63*W + 55*W^2 + 53*W^3 + 9*W^4 + 49*W^5 + 66*W^6 + 72*W^7 + 32*W^8
+B_parent(W) = 35 + 6*W + 56*W^2 + 66*W^3 + 55*W^4 + 35*W^5 + 37*W^6 + 34*W^7 + 22*W^8 + 62*W^9 + 50*W^10 + 65*W^11 + 18*W^12
+# Reducible fibres: I2@60, I3@23, I4@24, I5@25, I6@47.
+# Nodes: (23,67), (24,6), (25,35), (47,54), (60,70).
+#
+# Six node-compatible P.O=0 horizontal candidates occur (three +/- pairs).
+# A cheap multi-specialization prefilter reduces the 6x73 A5 residue space
+# to eight symbolic survivors; the only surviving residues are +/-4.
+# Exactly two target hits remain, one +/- pair.
+#
+# Pinned representative:
+H_X(W) = 15 + 29*W + 9*W^2 + 59*W^3 + 4*W^4
+H_Y(W) = 7 + 61*W + 7*W^2 + 3*W^3 + 14*W^4 + 57*W^5 + 8*W^6
+# Whole-A4 support at I5 W=25, chord node value m=59.
+# A5 support at I6 W=47, quotient residue=69=-4.
+# kernel=((1,0,50,37),(0,1,16,33)).
+
+quartic(W;Z) = W^4 + ((58*Z^4 + 62*Z^3 + 19*Z^2 + 51*Z)/(Z^4 + 69*Z^3 + 44*Z^2 + 8*Z + 47))*W^3 + ((23*Z^4 + 61*Z^3 + 48*Z^2 + Z + 33)/(Z^4 + 69*Z^3 + 44*Z^2 + 8*Z + 47))*W^2 + ((6*Z^4 + 64*Z^3 + 42*Z^2 + 41*Z + 33)/(Z^4 + 69*Z^3 + 44*Z^2 + 8*Z + 47))*W + (58*Z^4 + 52*Z^3 + 21*Z^2 + 52*Z + 20)/(Z^4 + 69*Z^3 + 44*Z^2 + 8*Z + 47)
+twist(Z) = 44*Z^8 + 34*Z^7 + 16*Z^6 + 39*Z^5 + 53*Z^4 + 24*Z^3 + 12*Z^2 + 36*Z + 27
+
+A(Z) = 6*Z^16 + 40*Z^15 + 15*Z^14 + 15*Z^13 + 47*Z^12 + 47*Z^11 + 71*Z^10 + 54*Z^9 + 31*Z^8 + 72*Z^7 + 41*Z^6 + 32*Z^5 + 20*Z^4 + 39*Z^3 + 62*Z^2 + 57*Z + 57
+B(Z) = 35*Z^24 + 9*Z^23 + 49*Z^22 + 22*Z^21 + 28*Z^20 + 70*Z^19 + 29*Z^18 + 68*Z^17 + 29*Z^16 + 21*Z^15 + 67*Z^14 + 9*Z^13 + 13*Z^12 + 25*Z^11 + 57*Z^10 + 42*Z^9 + 56*Z^8 + 62*Z^7 + 26*Z^6 + 3*Z^5 + 29*Z^4 + 35*Z^3 + 70*Z^2 + 61*Z + 61
+
+# Pinned child fibre signature:
+# I3 at Z=62,51,39,31  (factors Z+11,Z+22,Z+34,Z+42) -> 4A2
+# I4 at Z=52              (factor Z+21)                    -> A3
+# I6 at Z=66              (factor Z+7)                     -> A5
+# I1 at Z=40,18           (factors Z+33,Z+55)
+# infinity smooth
+# Hence child = 4A2+A3+A5, root_data=(16,66,1944), MW=2.
+#
+# Symmetry mate: opposite horizontal sign uses A5 residue +4 and produces
+# the same quartic/Jacobian.
+#
+# This closes the CM24 equation corridor through the generic rootless endpoint.
