@@ -6,4 +6,4 @@ q6_7774	A4+A2+A1	A5+2A4+2A1	15	74	600	3	0	8/7	2	A1 plus connected A6 quotient li
 q4_1938	A3+A2	2A4+2A3+A1	15	66	800	3	1	12/5	1	connected A4 quotient line; special coeffs -1,-1,-1,0	exact_GF73	0
 q4_6855	4A1	A1+2A3+2D4	15	74	512	3	0	3/5	2	one A3 middle-double module; coeffs -2,-1,-1	exact_GF73	0
 q4_a1_candidate1	A1	A1+A2+A3+A4+A5	15	70	720	3	0	3/4	2	whole A3 plus D4 outer-complement c=0	exact_GF73	0
-q6_rootless	rootless	TBD					4	23/2	-1	generic vertical zero; CM24 specialization not yet transported	pending	1
+q6_rootless	rootless	4A2+A3+A5	16	66	1944	2	0	1	2	whole A4 node row plus A5 quotient residue +/-4	exact_GF73	0
