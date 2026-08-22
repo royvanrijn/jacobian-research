@@ -172,28 +172,44 @@ yet identify curve 273 as a specialization of an explicit rootless MW17
 descendant; that still requires executing the neighbor chain.
 <!-- status-consumer: EC-K3-H3-SOURCE a4bb40c9c9d0ff09 -->
 
-There is no immediate alternative source point in a very large exact group
-window.  The involution `X -> -X` gives the elliptic quotient
+The rational points of the level-474 base are now determined globally.  On
+the Q-isomorphic smaller model
 
 ```text
-yE^2=xE^3+198*xE^2+4617*xE+419904,
+y^2=-3*x^6+22*x^4-19*x^2+64,
 ```
 
-via `xE=-27*X^2`, `yE=-27*Y`.  It has trivial torsion and exact rank one with
-generator `G=(-27,648)`; the record orbit maps to `9G`.  The local-square
-sieve
+an exact two-cover descent has three locally soluble classes.  Factoring the
+sextic over `L=Q(a)`, with `-3*a^3+22*a^2-19*a+64=0`, gives two elliptic
+covers over `L`; their twisting factors are
+
+```text
+(263403*a^2-123771*a+818724)/4,
+(45*a^2-21*a+144)/16.
+```
+
+The exact Magma certificate
+[`../../elkies-k3/scripts/prove_h3_level474_rational_points.m`](../../elkies-k3/scripts/prove_h3_level474_rational_points.m)
+computes finite-odd-index pseudo-Mordell--Weil groups for both covers and
+runs elliptic Chabauty at `p=41`.  In each case the Chabauty upper bound equals
+the known number of cover points (`2` and `8`) and its residual index is `1`.
+Thus their complete rational `x`-image sets are `{0}` and
+`{-13/7,-1,1,13/7}`.  Exact substitution supplies both signs of `y`; the
+leading coefficient `-3` is nonsquare, so there are no rational points at
+infinity.  Returning to the published coordinates gives exactly
+
+```text
+(X,Y) = (0,+-24), (+-1,+-24),
+        (+-13/7,+-12048/343).
+```
+
+The pinned terminal output is
+[`../../artifacts/generated-results/elkies-k3-h3-level474-rational-points.txt`](../../artifacts/generated-results/elkies-k3-h3-level474-rational-points.txt),
+SHA-256 `7008b9536d82c03ad4b568324192b954a67bebe9120880d5a5327b36d080df02`.
+The historical
 [`../../elkies-k3/scripts/sieve_h3_level474_rational_points.sage`](../../elkies-k3/scripts/sieve_h3_level474_rational_points.sage)
-proves that for every `|n|<=1,000,000`, the only multiples `nG` that can lift
-rationally are the known CM coefficients `1,6` and record coefficient `9`
-(plus the nonlifting zero multiple).  Its artifact is
-[`../../artifacts/generated-results/elkies-k3-h3-level474-point-sieve.json`](../../artifacts/generated-results/elkies-k3-h3-level474-point-sieve.json),
-SHA-256
-`6966cd27db727a82b22a7a8e63ced713f5a1a74d0b85d7e2166ed2344091f451`.
-This bounded result argues against spending time on a larger naive rational
-height scan of the same base.  It does not classify all rational points;
-improvement searches should first finish the rootless family and study rank
-jumps at the known non-CM orbit, or move to a genuinely different component.
-<!-- status-consumer: EC-K3-H3-PTS dd90353bf0820f4a -->
+remains a separate bounded quotient-sieve cross-check.
+<!-- status-consumer: EC-K3-H3-PTS 8f0a27c947843b4a -->
 
 On the lattice and chamber side, the corrected source now has the exact path
 
@@ -1043,6 +1059,16 @@ nullity = 0
 Thus none of the 90 new nonduplicate ideal-lattice rows closes a hidden cycle
 with the previous pool.  The raw searches and combined audit are local
 checkpoints in `artifacts/local/elliptic-curves/` with date suffix `20260821`.
+Each LP-free dependency now also records the product of its actual principal
+generators in power-basis coordinates.  The portable quotient/certification
+layer is documented in
+[`BNF_FREE_RESIDUAL_2SELMER.md`](BNF_FREE_RESIDUAL_2SELMER.md); it makes no
+class-group, Selmer, or rank claim from this bounded pool.
+The 30 known Kummer generators now also have a reproducible 59-local/
+54-witness signature map from
+[`../cas/analyze_curve273_kummer_fingerprint.py`](../cas/analyze_curve273_kummer_fingerprint.py),
+so any candidate global squareclass can be reduced against the known image
+before more relation collection is attempted.
 
 ## Efficient next gates
 

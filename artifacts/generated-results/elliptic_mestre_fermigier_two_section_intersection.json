@@ -1,0 +1,55 @@
+{
+  "component_parameter": "u=-3, v=-8/3",
+  "conclusion": "the selected signed pair meets at the recorded finite fibre; this seed does not escape the visible mod-3 quotient",
+  "cubic_ordinates": [
+    [
+      "215441",
+      "7025334/121",
+      "581536/121",
+      "21504/121"
+    ],
+    [
+      "8883/2",
+      "-500414/121",
+      "-10656/121",
+      "14336/121"
+    ]
+  ],
+  "cubic_square_identity_degree": 6,
+  "finite_intersection": {
+    "T": "-479/56",
+    "x": "445/56",
+    "y": "-1141635/28"
+  },
+  "finite_reduction": {
+    "Mestre_parameter": "1",
+    "augmented_mod3_rank": 9,
+    "prime_bound": 499,
+    "visible_mod3_rank": 9
+  },
+  "normalized_roots": [
+    "0",
+    "1",
+    "29/4",
+    "77/8",
+    "85/8",
+    "51/4"
+  ],
+  "not_established": [
+    "the full pair intersection number including infinity contributions",
+    "a Shioda Gram matrix or saturation",
+    "independence from the existing generic rank-13 subgroup"
+  ],
+  "signed_affine_lines": [
+    [
+      "-58/11",
+      "-17/11"
+    ],
+    [
+      "247/44",
+      "-3/11"
+    ]
+  ],
+  "square_identity_sample_count": 7,
+  "status": "Fermigier two-section seed intersection and finite-quotient audit completed"
+}

@@ -13,12 +13,21 @@ beyond those established by :mod:`verify_icarm_curve245_rank20`.
 from __future__ import annotations
 
 from fractions import Fraction
-from typing import Sequence
+from typing import Any, Sequence
 
 from mestre_root_tuples import SixRootMestreConstruction
 
 
 Q = Fraction
+
+
+def _parameter(value: Any) -> Any:
+    """Coerce ordinary inputs to Q while preserving compatible formal values."""
+
+    try:
+        return Q(value)
+    except TypeError:
+        return value
 
 FERMIGIER_U = Q(3, 2)
 FERMIGIER_V = Q(2)
@@ -81,7 +90,7 @@ ANCHOR_SHORT_TO_PUBLIC_CHANGE = (Q(3, 25), Q(-9, 2500), Q(3, 50), Q(27, 31250))
 def fermigier_roots(u: Fraction, v: Fraction) -> tuple[Fraction, ...]:
     """Return Fermigier's six labelled roots at exact rational ``(u,v)``."""
 
-    u, v = Q(u), Q(v)
+    u, v = _parameter(u), _parameter(v)
     alpha1 = (
         -v + v**2 - v**3 + v**4 + 2*u*v + v**2*u - 2*v**3*u
         + v**4*u + u**2 + u**2*v - 2*v**2*u**2 - 2*v**3*u**2
@@ -113,6 +122,28 @@ def fermigier_roots(u: Fraction, v: Fraction) -> tuple[Fraction, ...]:
     return alpha1, alpha2, alpha3, alpha4, alpha5, alpha6
 
 
+def fermigier_extra_line(u: Fraction, v: Fraction) -> tuple[Fraction, Fraction]:
+    """Return Fermigier's extra affine abscissa ``A(u,v)+B(u,v)T``.
+
+    The formula is the same source-coordinate line used in the exact
+    Fermigier affine-section verifier.  Callers applying an affine change to
+    the roots must translate the intercept and retain the slope.
+    """
+
+    u, v = _parameter(u), _parameter(v)
+    denominator = u**2 + v**2 + 1
+    intercept = (
+        3*u**2*v + 3*u**3*v**2 + 2*u**4*v + u*v - 4*v**3*u
+        - 3*v**2*u**2 + 3*v**3*u**2 - 4*u**3*v + v**3 + 2*v**4*u
+        - 3*u**4 + u**3 - 3*v**4 + u + 3*v**2*u + v - u**4*v**3
+        - 2*u**4*v**2 - u**3*v**4 - 4*u**3*v**3 + u**2*v**5
+        - 2*u**2*v**4 + u*v**5 + u**5*v**2 + u**5*v - v**6 - u**6
+        + 2*v**5 + 2*u**5
+    ) / denominator
+    slope = (-u**2 - v**2 + 2*u + 2*v + 1) / denominator
+    return intercept, slope
+
+
 def evaluate_polynomial(coefficients: Sequence[int | Fraction], value: Fraction) -> Fraction:
     answer = Q(0)
     for coefficient in reversed(coefficients):
@@ -142,4 +173,3 @@ def extra_quartic_point(parameter: Fraction) -> tuple[Fraction, Fraction]:
 
 
 CONSTRUCTION = SixRootMestreConstruction(tuple(map(Q, CANONICAL_ROOTS)))
-

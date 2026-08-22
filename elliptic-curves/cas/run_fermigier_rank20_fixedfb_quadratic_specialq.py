@@ -81,9 +81,28 @@ def main():
     ap.add_argument("--seed", type=int, default=20260820)
     ap.add_argument("--seed-specials", default="")
     ap.add_argument("--only-seeds", action="store_true")
+    ap.add_argument(
+        "--norm-factor-mode",
+        choices=("trial", "hybrid", "exact"),
+        default="trial",
+    )
+    ap.add_argument("--trial-prime-bound", type=int)
+    ap.add_argument("--residual-factor-limit", type=int, default=1 << 40)
     ap.add_argument("--checkpoint", type=Path, default=Path(
         "artifacts/local/elliptic-curves/r20_fixedfb5000_checkpoint.json"))
+    ap.add_argument(
+        "--relation-ledger",
+        type=Path,
+        help=(
+            "write exact principal generators for every newly closed relation "
+            "and unit dependency in this run"
+        ),
+    )
     args = ap.parse_args()
+    if args.trial_prime_bound is not None and args.trial_prime_bound < 2:
+        raise ValueError("--trial-prime-bound must be at least 2")
+    if args.residual_factor_limit < 2:
+        raise ValueError("--residual-factor-limit must be at least 2")
 
     from sage.all import QQ, ZZ, NumberField, PolynomialRing, RealField, factor, prime_range
 
@@ -98,18 +117,17 @@ def main():
 
     # ---- identical fixed factor base to R20FIXEDQ2 -------------------------
     fb, s_cols = [], []
+    fb_index_by_hnf = {}
 
     def idx_of(P):
-        for i, Q in enumerate(fb):
-            if P == Q:
-                return i
-        return None
+        return fb_index_by_hnf.get(str(P.pari_hnf()))
 
     def add_fb(P, is_s=False):
         i = idx_of(P)
         if i is None:
             i = len(fb)
             fb.append(P)
+            fb_index_by_hnf[str(P.pari_hnf())] = i
         if is_s and i not in s_cols:
             s_cols.append(i)
         return i
@@ -139,14 +157,21 @@ def main():
         if arr:
             fb_by_q[q] = arr
 
-    trial_primes = sorted(q for q in fb_by_q if q <= args.factor_base_bound)
+    if args.norm_factor_mode == "trial":
+        trial_division_bound = args.factor_base_bound
+    elif args.trial_prime_bound is None:
+        trial_division_bound = min(args.factor_base_bound, 10_000)
+    else:
+        trial_division_bound = min(args.factor_base_bound, args.trial_prime_bound)
+    trial_primes = sorted(q for q in fb_by_q if q <= trial_division_bound)
 
     def fb_sig():
         return [
             {
                 "hnf": str(P.pari_hnf()),
                 "norm": int(P.norm()),
-                "f": int(P.residue_class_degree()),
+                "residue_degree": int(P.residue_class_degree()),
+                "rational_prime": int(P.smallest_integer()),
             }
             for P in fb
         ]
@@ -242,6 +267,8 @@ def main():
     # ---- shared partial relation graph -------------------------------------
     ROOT = ("ROOT",)
     graph = defaultdict(list)
+    generators = []
+    closed_relations = []
     rng = random.Random(args.seed)
     t0 = time.monotonic()
 
@@ -275,34 +302,44 @@ def main():
 
     def find_path(src, dst):
         if src == dst:
-            return 0
+            return 0, set()
         dq = deque([src])
         parent = {src: None}
         edge = {}
         while dq:
             v = dq.popleft()
-            for w, row in graph[v]:
+            for w, row, generator_index in graph[v]:
                 if w in parent:
                     continue
                 parent[w] = v
-                edge[w] = row
+                edge[w] = (row, generator_index)
                 if w == dst:
                     acc = 0
+                    provenance = set()
                     cur = dst
                     while parent[cur] is not None:
-                        acc ^= edge[cur]
+                        edge_row, edge_generator = edge[cur]
+                        acc ^= edge_row
+                        if edge_generator in provenance:
+                            provenance.remove(edge_generator)
+                        else:
+                            provenance.add(edge_generator)
                         cur = parent[cur]
-                    return acc
+                    return acc, provenance
                 dq.append(w)
-        return None
+        return None, None
 
-    def add_partial(v1, v2, row):
-        path = find_path(v1, v2)
-        graph[v1].append((v2, row))
-        graph[v2].append((v1, row))
+    def add_partial(v1, v2, row, generator_index):
+        path, provenance = find_path(v1, v2)
+        graph[v1].append((v2, row, generator_index))
+        graph[v2].append((v1, row, generator_index))
         if path is None:
-            return None
-        return path ^ row
+            return None, None
+        if generator_index in provenance:
+            provenance.remove(generator_index)
+        else:
+            provenance.add(generator_index)
+        return path ^ row, provenance
 
     for sq_index, (q, r) in enumerate(specials, 1):
         Pq = special_prime(q, r)
@@ -369,21 +406,52 @@ def main():
                 norm_bits_sum += nb
                 norm_bits_min = nb if norm_bits_min is None else min(norm_bits_min, nb)
 
-                co = N
-                while co % q == 0:
-                    co //= q
+                if args.norm_factor_mode in {"trial", "hybrid"}:
+                    co = N
+                    while co % q == 0:
+                        co //= q
+                    used = []
+                    for p in trial_primes:
+                        if co % p:
+                            continue
+                        used.append(p)
+                        while co % p == 0:
+                            co //= p
+                        if co == 1:
+                            break
+                else:
+                    co = ZZ(1)
+                    used = []
+                    for p, exponent in factor(N):
+                        p = ZZ(p)
+                        exponent = ZZ(exponent)
+                        if p == q:
+                            continue
+                        if p <= args.factor_base_bound:
+                            used.append(p)
+                        else:
+                            co *= p**exponent
 
-                used = []
-                for p in trial_primes:
-                    if co % p:
-                        continue
-                    used.append(p)
-                    while co % p == 0:
-                        co //= p
-                    if co == 1:
-                        break
+                if args.norm_factor_mode == "hybrid" and co != 1 and co <= args.residual_factor_limit:
+                    residual = ZZ(1)
+                    for p, exponent in factor(co):
+                        p = ZZ(p)
+                        exponent = ZZ(exponent)
+                        if p <= args.factor_base_bound:
+                            used.append(p)
+                        else:
+                            residual *= p**exponent
+                    co = residual
 
                 row = exact_fb_row(alpha, used)
+                generator_index = len(generators)
+                generators.append(
+                    {
+                        "power_basis": [str(a), str(b), str(c)],
+                        "source_special_q": [int(q), int(r)],
+                        "norm": str(N),
+                    }
+                )
                 vertices = []
 
                 if vq & 1:
@@ -406,19 +474,32 @@ def main():
                     vertices.append(sig)
 
                 cycle = None
+                provenance = None
                 if len(vertices) == 0:
                     cycle = row
+                    provenance = {generator_index}
                 elif len(vertices) == 1:
                     p1 += 1
-                    cycle = add_partial(ROOT, vertices[0], row)
+                    cycle, provenance = add_partial(
+                        ROOT, vertices[0], row, generator_index
+                    )
                 elif len(vertices) == 2:
                     p2 += 1
-                    cycle = add_partial(vertices[0], vertices[1], row)
+                    cycle, provenance = add_partial(
+                        vertices[0], vertices[1], row, generator_index
+                    )
                 else:
                     continue
 
-                if cycle:
+                if cycle is not None:
                     cycles += 1
+                    closed_relations.append(
+                        {
+                            "fb_parity_mask_hex": hex(cycle),
+                            "generator_indices": sorted(provenance),
+                            "kind": "unit_dependency" if cycle == 0 else "fb_relation",
+                        }
+                    )
                     old_after = afterS()
                     if insert_row(pivots, cycle):
                         indep += 1
@@ -493,6 +574,41 @@ def main():
         f"{PROTOCOL}|stage=recommended_seeds|top={ranked[:15]}",
         flush=True,
     )
+    if args.relation_ledger:
+        ledger = {
+            "schema": "elliptic-curves.bnf-free-principal-relation-ledger.v1",
+            "status": "exact_new_relations_not_class_group_completion",
+            "field_polynomial": str(f),
+            "defining_polynomial_ascending": [str(C0), str(-A), "0", "1"],
+            "field_discriminant": str(K.discriminant()),
+            "generator_coordinate_order": ["1", "theta", "theta^2"],
+            "factor_base_bound": args.factor_base_bound,
+            "norm_factor_mode": args.norm_factor_mode,
+            "trial_division_bound": trial_division_bound,
+            "residual_factor_limit": args.residual_factor_limit,
+            "factor_base_completion": {
+                "all_prime_ideals_above_rational_primes_through": (
+                    args.factor_base_bound
+                ),
+                "materialized_complete_factor_base": True,
+                "extra_declared_S_rational_primes": [int(p) for p in bad],
+            },
+            "selmer_rational_primes": [int(p) for p in bad],
+            "factor_base": fb_sig(),
+            "S_columns": s_cols,
+            "generators": generators,
+            "closed_relations": closed_relations,
+        }
+        args.relation_ledger.parent.mkdir(parents=True, exist_ok=True)
+        args.relation_ledger.write_text(
+            json.dumps(ledger, indent=2, sort_keys=True) + "\n"
+        )
+        print(
+            f"{PROTOCOL}|stage=write_relation_ledger"
+            f"|path={args.relation_ledger}|generators={len(generators)}"
+            f"|closed_relations={len(closed_relations)}",
+            flush=True,
+        )
     print(
         f"{PROTOCOL}|warning=heuristic_relation_lattice"
         f"|exact_relations=true|completeness_proved=false"

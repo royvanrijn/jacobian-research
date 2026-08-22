@@ -1,0 +1,50 @@
+{
+  "admissible_specialization_count": 1324,
+  "best_observed": {
+    "T": "5/3",
+    "augmented_pivots": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10
+    ],
+    "augmented_rank": 9,
+    "certificate_primes": [
+      13,
+      23,
+      59,
+      61,
+      67,
+      71,
+      83,
+      89,
+      97
+    ],
+    "r": "5/4",
+    "visible_pivots": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10
+    ],
+    "visible_rank": 9
+  },
+  "candidate_pair_count": 1330,
+  "mestre_parameter_height": 5,
+  "prime_bound": 101,
+  "root_height": 5,
+  "scope": "a bounded finite-reduction screen; no failure is a rank upper bound",
+  "status": "bounded exact component independence screen completed",
+  "strict_quotient_rank_gain_count": 0,
+  "strict_quotient_rank_gains": []
+}

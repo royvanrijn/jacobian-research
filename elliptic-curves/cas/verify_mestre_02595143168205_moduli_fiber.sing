@@ -237,7 +237,7 @@ if (size(reduce(actualSlopeIdeal,expectedSlopeIdeal)) != 0
 
 "MESTRE_02595143168205_MODULI_FIBER_V1";
 "normalized_moduli_point_c1_c2_c3_c4";
--636/25,152074/625,-667356/625,31978621/15625;
+-611/25,136799/625,-530557/625,18714696/15625;
 "mestre_obstruction",0;
 "D_and_square_root";
 278784/625,528/25;

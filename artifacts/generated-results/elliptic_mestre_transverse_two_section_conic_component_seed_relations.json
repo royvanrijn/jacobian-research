@@ -1,0 +1,43 @@
+{
+  "augmented_mod3_rank": 9,
+  "component_parameter": "s=-357/47",
+  "conclusion": "at the normalized seed specialization both affine points are exactly in the visible subgroup; this fibre cannot witness a new Mordell-Weil direction",
+  "exact_affine_relations": [
+    "P1=-V1-V4-V5-V7-V10",
+    "P2=-V1-V4-V5"
+  ],
+  "finite_reduction_pivots": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10
+  ],
+  "mestre_parameter": "T=1",
+  "normalized_root_seed": [
+    0,
+    7,
+    79,
+    81,
+    128,
+    137
+  ],
+  "not_established": [
+    "a generic relation on the second rational component",
+    "saturation of the visible rank-nine sublattice",
+    "pair intersection numbers, a Shioda Gram matrix, or a generic rank statement"
+  ],
+  "short_weierstrass_coefficients": [
+    "0",
+    "0",
+    "0",
+    "-25796475290575965843",
+    "7775320562002058135094691758"
+  ],
+  "status": "exact second-component seed relation and non-promotion audit completed",
+  "visible_mod3_rank": 9
+}

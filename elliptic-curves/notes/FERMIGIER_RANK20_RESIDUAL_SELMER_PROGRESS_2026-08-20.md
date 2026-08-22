@@ -230,7 +230,51 @@ All of these computations take milliseconds to low seconds and require no class 
 
 The witness primes are **coordinates only**. They must not be interpreted as additional Selmer conditions.
 
+The same run now writes a BNF-free signature-map artifact with all twenty
+actual Kummer representatives in ascending power-basis coordinates and their
+packed images in the 51 local and 24 witness coordinates.  It is directly
+consumable by
+[`residual_selmer_quotient.py`](../cas/residual_selmer_quotient.py), which
+reduces future candidate global squareclasses modulo this faithful known
+Mordell--Weil image.  This records the coordinate system; it is not a Selmer
+upper bound or a class-group computation.
+
+## Explicit BNF-free squareclass candidates from large-prime closures
+
+The retained generators now make relation combinations directly usable as
+global squareclasses. The extractor sparsely eliminates the complement of the
+declared Selmer set `S`; every retained combination has even valuation at each
+prime outside `S`. Thus it is an explicit bounded candidate in `K(S,2)`, with
+an exact ascending power-basis representative.
+
+On the one-run `5689:5096` calibration (30,000 sampled principal generators),
+the non-S projection kernel has dimension 305. Its 296-dimensional
+square-norm kernel has an explicitly verified global-square basis, so the full
+norm-compatible span is trivial. The older 15-row support gate had raw
+signature rank seven after quotienting by the known rank-20 Mordell--Weil
+Kummer image in the fixed 51-local/24-witness coordinate system; this was a
+raw diagnostic only. It is **not** a complete calculation of `K(S,2)`, a
+residual 2-Selmer basis, a Selmer upper bound, or evidence for seven
+additional rational points.
+
 ## Current direction: custom mod-2 ideal relation collection
+
+The same collector now has an explicit ERH-certified factor-base gate rather
+than relying on a stabilized relation rank.  The cubic field's Bach threshold
+is 262,523 rational-prime norm; materializing its 42,251 prime ideals uses no
+class-group or regulator routine.  A ten-special, 300,000-generator bounded
+calibration produced 483 exact closures, relation rank 27, and an
+ERH-conditional S-class quotient model of dimension 42,207 (down from
+42,226 before relations). The 23,034 canonical principal relations `(p)` of
+the materialized factor base are now stored explicitly; they lower that
+ERH-conditional model to 19,204 without any BNF or class-group computation.
+Eliminating the non-S columns supplies 464 explicit
+generator products; its 455-dimensional square-norm kernel has an explicitly
+verified global-square basis. Thus the entire norm-compatible span of the
+bounded candidates is trivial. The former individual-row target had 251
+products and raw signature rank 11 modulo the known rank-20 image, but was not
+a descent filter. This is a conditional, bounded relation collection—not a
+complete class computation, local Selmer calculation, or rank conclusion.
 
 Because every generic class-group implementation remains stuck, the current approach is to collect only the information actually needed modulo 2.
 

@@ -1,0 +1,319 @@
+{
+  "base_parameters": {
+    "u": "-3",
+    "v": "-8/3"
+  },
+  "coordinate_series": {
+    "second_intercept": [
+      "247/44",
+      "4011/7744",
+      "2174239/1362944",
+      "384646435/239878144",
+      "67634637079/42218553344",
+      "11894081356603/7430465388544",
+      "2092684758923983/1307761908383744",
+      "368276533037351443/230166095875538944",
+      "64815096649272435271/40509232874094854144",
+      "11407403031951246565291/7129624985840694329344",
+      "2007701881450985279016319/1254813997507962201964544",
+      "353355567307094865083421187/220847263561401347545759744",
+      "62190585721461375492262533751/38869118386806637168053714944",
+      "10945543534734710407563295637275/6840964836077968141577453830144",
+      "1926415688526472988432067742488367/1204009811149722392917631874105344",
+      "339049162481327487488434898711477491/211905726762351141153503209842540544",
+      "59672652649242922167481658283570872743/37295407910173800843016564932287135744",
+      "10502386867754195902043192408056098345355/6563991792190588948370915428082535890944",
+      "1848420088723915085773943557437398969092063/1155262555425543654913281115342526316806144"
+    ],
+    "second_slope": [
+      "-3/11",
+      "-7/121",
+      "-9/1331",
+      "23/14641",
+      "237/161051",
+      "1169/1771561",
+      "4407/19487171",
+      "13583/214358881",
+      "33021/2357947691",
+      "48713/25937424601",
+      "-70953/285311670611",
+      "-961561/3138428376721",
+      "-4988883/34522712143931",
+      "-19356127/379749833583241",
+      "-61259049/4177248169415651",
+      "-154636897/45949729863572161",
+      "-253971843/505447028499293771",
+      "177174809/5559917313492231481",
+      "3856739127/61159090448414546291"
+    ],
+    "u": [
+      "-3",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "v": [
+      "-8/3",
+      "7/9",
+      "-2/27",
+      "-2/81",
+      "-2/243",
+      "-2/729",
+      "-2/2187",
+      "-2/6561",
+      "-2/19683",
+      "-2/59049",
+      "-2/177147",
+      "-2/531441",
+      "-2/1594323",
+      "-2/4782969",
+      "-2/14348907",
+      "-2/43046721",
+      "-2/129140163",
+      "-2/387420489",
+      "-2/1162261467"
+    ]
+  },
+  "local_parameter": "u = -3 + t",
+  "order": 18,
+  "recognized_low_degree_rational_series": [
+    {
+      "coordinate": "u",
+      "denominator_degree": 1,
+      "numerator_degree": 1
+    },
+    {
+      "coordinate": "u",
+      "denominator_degree": 2,
+      "numerator_degree": 1
+    },
+    {
+      "coordinate": "u",
+      "denominator_degree": 3,
+      "numerator_degree": 1
+    },
+    {
+      "coordinate": "u",
+      "denominator_degree": 4,
+      "numerator_degree": 1
+    },
+    {
+      "coordinate": "u",
+      "denominator_degree": 5,
+      "numerator_degree": 1
+    },
+    {
+      "coordinate": "u",
+      "denominator_degree": 6,
+      "numerator_degree": 1
+    },
+    {
+      "coordinate": "u",
+      "denominator_degree": 7,
+      "numerator_degree": 1
+    },
+    {
+      "coordinate": "u",
+      "denominator_degree": 8,
+      "numerator_degree": 1
+    },
+    {
+      "coordinate": "v",
+      "denominator_degree": 1,
+      "numerator_degree": 2
+    },
+    {
+      "coordinate": "v",
+      "denominator_degree": 2,
+      "numerator_degree": 2
+    },
+    {
+      "coordinate": "v",
+      "denominator_degree": 3,
+      "numerator_degree": 2
+    },
+    {
+      "coordinate": "v",
+      "denominator_degree": 4,
+      "numerator_degree": 2
+    },
+    {
+      "coordinate": "v",
+      "denominator_degree": 5,
+      "numerator_degree": 2
+    },
+    {
+      "coordinate": "v",
+      "denominator_degree": 6,
+      "numerator_degree": 2
+    },
+    {
+      "coordinate": "v",
+      "denominator_degree": 7,
+      "numerator_degree": 2
+    },
+    {
+      "coordinate": "v",
+      "denominator_degree": 8,
+      "numerator_degree": 2
+    },
+    {
+      "coordinate": "v",
+      "denominator_degree": 1,
+      "numerator_degree": 3
+    },
+    {
+      "coordinate": "v",
+      "denominator_degree": 1,
+      "numerator_degree": 4
+    },
+    {
+      "coordinate": "v",
+      "denominator_degree": 1,
+      "numerator_degree": 5
+    },
+    {
+      "coordinate": "v",
+      "denominator_degree": 1,
+      "numerator_degree": 6
+    },
+    {
+      "coordinate": "v",
+      "denominator_degree": 1,
+      "numerator_degree": 7
+    },
+    {
+      "coordinate": "v",
+      "denominator_degree": 1,
+      "numerator_degree": 8
+    },
+    {
+      "coordinate": "second_intercept",
+      "denominator_degree": 5,
+      "numerator_degree": 6
+    },
+    {
+      "coordinate": "second_intercept",
+      "denominator_degree": 6,
+      "numerator_degree": 6
+    },
+    {
+      "coordinate": "second_intercept",
+      "denominator_degree": 7,
+      "numerator_degree": 6
+    },
+    {
+      "coordinate": "second_intercept",
+      "denominator_degree": 8,
+      "numerator_degree": 6
+    },
+    {
+      "coordinate": "second_intercept",
+      "denominator_degree": 5,
+      "numerator_degree": 7
+    },
+    {
+      "coordinate": "second_intercept",
+      "denominator_degree": 5,
+      "numerator_degree": 8
+    },
+    {
+      "coordinate": "second_slope",
+      "denominator_degree": 2,
+      "numerator_degree": 1
+    },
+    {
+      "coordinate": "second_slope",
+      "denominator_degree": 3,
+      "numerator_degree": 1
+    },
+    {
+      "coordinate": "second_slope",
+      "denominator_degree": 4,
+      "numerator_degree": 1
+    },
+    {
+      "coordinate": "second_slope",
+      "denominator_degree": 5,
+      "numerator_degree": 1
+    },
+    {
+      "coordinate": "second_slope",
+      "denominator_degree": 6,
+      "numerator_degree": 1
+    },
+    {
+      "coordinate": "second_slope",
+      "denominator_degree": 7,
+      "numerator_degree": 1
+    },
+    {
+      "coordinate": "second_slope",
+      "denominator_degree": 8,
+      "numerator_degree": 1
+    },
+    {
+      "coordinate": "second_slope",
+      "denominator_degree": 2,
+      "numerator_degree": 2
+    },
+    {
+      "coordinate": "second_slope",
+      "denominator_degree": 2,
+      "numerator_degree": 3
+    },
+    {
+      "coordinate": "second_slope",
+      "denominator_degree": 2,
+      "numerator_degree": 4
+    },
+    {
+      "coordinate": "second_slope",
+      "denominator_degree": 2,
+      "numerator_degree": 5
+    },
+    {
+      "coordinate": "second_slope",
+      "denominator_degree": 2,
+      "numerator_degree": 6
+    },
+    {
+      "coordinate": "second_slope",
+      "denominator_degree": 2,
+      "numerator_degree": 7
+    },
+    {
+      "coordinate": "second_slope",
+      "denominator_degree": 2,
+      "numerator_degree": 8
+    }
+  ],
+  "reconstructed_rational_model": {
+    "matches_recursive_formal_lift_through_order": 18,
+    "not_yet_a_global_section_identity_certificate": true,
+    "second_intercept": "-(2u^6-u^5+4u^4-u^3-8u^2-4u-16)/(2(u+2)(u^2+2)(u^2-u+4))",
+    "second_slope": "u/(u^2+2)",
+    "v": "(u^2 + u + 2)/u"
+  },
+  "transverse_jacobian_determinant": "4843922851459387400482970320566882853927725318558745435439050197601318359375/517577757183276821504",
+  "transverse_variables": [
+    "v",
+    "second_intercept",
+    "second_slope"
+  ]
+}

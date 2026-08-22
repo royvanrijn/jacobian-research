@@ -1,0 +1,258 @@
+{
+  "all_companion_pair_tangent_audit": {
+    "comparison_seed_jacobian_rank_histogram": {
+      "6": 15
+    },
+    "comparison_seed_pair_count": 15,
+    "comparison_seed_roots": [
+      0,
+      23,
+      93,
+      128,
+      133,
+      175
+    ],
+    "interpretation": "every pair at both displayed six-companion seeds has the same two-dimensional tangent space; neither seed can supply the naively transverse rank-seven pair",
+    "jacobian_rank_histogram": {
+      "6": 15
+    },
+    "pair_count": 15
+  },
+  "characteristic_zero_formal_bivariate_germ": {
+    "all_E0_2_coefficients_through_total_order_vanish": true,
+    "order": 5,
+    "parameters": "x02=583/115+u; x12=13/23+v"
+  },
+  "characteristic_zero_formal_transverse_line": {
+    "all_E0_2_coefficients_through_order_vanish": true,
+    "low_degree_pade_search": {
+      "maximum_numerator_and_denominator_degree": 5,
+      "recognized_models": []
+    },
+    "order": 12,
+    "parameter": "x02 = 583/115 + (1)*t; x12 = 13/23 + (0)*t"
+  },
+  "equations": "M plus (E2,E1,E0) for each section, evaluated recursively as jets",
+  "exact_jacobian_rank": 6,
+  "exact_pivot_columns": [
+    "c1",
+    "c2",
+    "c3",
+    "c4",
+    "x01",
+    "x11"
+  ],
+  "exact_second_order_obstruction": {
+    "free_tangent_coordinates": [
+      "x02",
+      "x12"
+    ],
+    "quadratic_obstruction_vanishes": true,
+    "residual_E0_2_after_solving_the_other_six_to_second_order": {
+      "u2": "0",
+      "uv": "0",
+      "v2": "0"
+    }
+  },
+  "exact_third_order_obstruction": {
+    "all_spanning_samples_vanish": true,
+    "samples": {
+      "u": "0",
+      "u_plus_2v": "0",
+      "u_plus_v": "0",
+      "v": "0"
+    }
+  },
+  "expanded_residuals_materialized": false,
+  "finite_field_tangent_checks": [
+    {
+      "jacobian_rank": 6,
+      "pivot_columns": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "x01",
+        "x11"
+      ],
+      "prime": 17
+    },
+    {
+      "jacobian_rank": 6,
+      "pivot_columns": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "x01",
+        "x02"
+      ],
+      "prime": 29
+    },
+    {
+      "jacobian_rank": 6,
+      "pivot_columns": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "x01",
+        "x02"
+      ],
+      "prime": 37
+    }
+  ],
+  "hensel_continuations": [
+    {
+      "all_seven_residuals_zero_mod_prime_power": true,
+      "chosen_nonzero_tangent_direction": [
+        0,
+        1
+      ],
+      "coordinates_mod_prime_power": {
+        "c1": 40203,
+        "c2": 56831,
+        "c3": 81771,
+        "c4": 4,
+        "x01": 55152,
+        "x02": 59758,
+        "x11": 12776,
+        "x12": 22
+      },
+      "first_order_lift_count": 289,
+      "free_coordinates": [
+        "c4",
+        "x12"
+      ],
+      "independent_equation_rows": [
+        "M",
+        "E2_1",
+        "E1_1",
+        "E0_1",
+        "E2_2",
+        "E1_2"
+      ],
+      "low_height_rational_reconstruction": {
+        "all_coordinates_reconstructed": false,
+        "exactly_satisfies_the_seven_Q_equations": false
+      },
+      "modulus": 83521,
+      "precision": 4,
+      "prime": 17,
+      "second_order_all_tangent_directions_survive": true,
+      "second_order_surviving_tangent_direction_count": 289
+    },
+    {
+      "all_seven_residuals_zero_mod_prime_power": true,
+      "chosen_nonzero_tangent_direction": [
+        0,
+        1
+      ],
+      "coordinates_mod_prime_power": {
+        "c1": 471236,
+        "c2": 104114,
+        "c3": 626273,
+        "c4": 8,
+        "x01": 143590,
+        "x02": 306324,
+        "x11": 374350,
+        "x12": 51
+      },
+      "first_order_lift_count": 841,
+      "free_coordinates": [
+        "c4",
+        "x12"
+      ],
+      "independent_equation_rows": [
+        "M",
+        "E2_1",
+        "E1_1",
+        "E0_1",
+        "E2_2",
+        "E1_2"
+      ],
+      "low_height_rational_reconstruction": {
+        "all_coordinates_reconstructed": false,
+        "exactly_satisfies_the_seven_Q_equations": false
+      },
+      "modulus": 707281,
+      "precision": 4,
+      "prime": 29,
+      "second_order_all_tangent_directions_survive": true,
+      "second_order_surviving_tangent_direction_count": 841
+    },
+    {
+      "all_seven_residuals_zero_mod_prime_power": true,
+      "chosen_nonzero_tangent_direction": [
+        0,
+        1
+      ],
+      "coordinates_mod_prime_power": {
+        "c1": 17,
+        "c2": 558235,
+        "c3": 387671,
+        "c4": 320200,
+        "x01": 682966,
+        "x02": 708076,
+        "x11": 37,
+        "x12": 588418
+      },
+      "first_order_lift_count": 1369,
+      "free_coordinates": [
+        "c1",
+        "x11"
+      ],
+      "independent_equation_rows": [
+        "M",
+        "E2_1",
+        "E0_1",
+        "E2_2",
+        "E1_2",
+        "E0_2"
+      ],
+      "low_height_rational_reconstruction": {
+        "all_coordinates_reconstructed": false,
+        "exactly_satisfies_the_seven_Q_equations": false
+      },
+      "modulus": 1874161,
+      "precision": 4,
+      "prime": 37,
+      "second_order_all_tangent_directions_survive": true,
+      "second_order_surviving_tangent_direction_count": 1369
+    }
+  ],
+  "not_established": [
+    "the actual local dimension (the tangent excess must still be resolved)",
+    "rational parameterization or a global plane model",
+    "pair intersections or a Shioda Gram matrix",
+    "saturation or independence from the generic rank-13 subgroup",
+    "generic rank at least 14"
+  ],
+  "pair_affine_intersection_audit": {
+    "finite_affine_intersection_count": 0,
+    "scope_limit": "does not include the infinity fiber, component corrections, or a Shioda pairing",
+    "unique_abscissa_collision_parameter_T": "-529/60",
+    "y1_minus_y2_at_collision": "15006477596/234375",
+    "y1_plus_y2_at_collision": "12746930768/234375"
+  },
+  "seed": {
+    "normalized_moduli": [
+      "-611/25",
+      "136799/625",
+      "-530557/625",
+      "18714696/15625"
+    ],
+    "sections": [
+      [
+        "-95/23",
+        "37/23"
+      ],
+      [
+        "583/115",
+        "13/23"
+      ]
+    ]
+  },
+  "status": "two-dimensional tangent space and bounded nontrivial p-adic continuations recorded",
+  "tangent_space_dimension": 2
+}

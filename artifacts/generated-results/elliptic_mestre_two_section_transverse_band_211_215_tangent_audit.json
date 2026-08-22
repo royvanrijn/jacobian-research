@@ -1,0 +1,153 @@
+{
+  "audits": [
+    {
+      "pairs": [
+        {
+          "matches_known_component_tangent": true,
+          "normalized_moduli_tangent": [
+            "1",
+            "-1421/27",
+            "24292/27",
+            "-10956880/2187"
+          ],
+          "sections": [
+            [
+              "211/101",
+              "-79/101"
+            ],
+            [
+              "11605/909",
+              "0"
+            ]
+          ]
+        },
+        {
+          "matches_known_component_tangent": true,
+          "normalized_moduli_tangent": [
+            "1",
+            "-1421/27",
+            "24292/27",
+            "-10956880/2187"
+          ],
+          "sections": [
+            [
+              "211/101",
+              "79/101"
+            ],
+            [
+              "11605/909",
+              "0"
+            ]
+          ]
+        }
+      ],
+      "roots": [
+        0,
+        9,
+        119,
+        121,
+        200,
+        211
+      ],
+      "z": "-112/3"
+    },
+    {
+      "pairs": [
+        {
+          "matches_known_component_tangent": true,
+          "normalized_moduli_tangent": [
+            "1",
+            "-1501/60",
+            "123971/600",
+            "-1128387/2000"
+          ],
+          "sections": [
+            [
+              "214/97",
+              "-7/97"
+            ],
+            [
+              "12519/1940",
+              "0"
+            ]
+          ]
+        },
+        {
+          "matches_known_component_tangent": true,
+          "normalized_moduli_tangent": [
+            "1",
+            "-1501/60",
+            "123971/600",
+            "-1128387/2000"
+          ],
+          "sections": [
+            [
+              "214/97",
+              "7/97"
+            ],
+            [
+              "12519/1940",
+              "0"
+            ]
+          ]
+        },
+        {
+          "matches_known_component_tangent": true,
+          "normalized_moduli_tangent": [
+            "1",
+            "-1501/60",
+            "123971/600",
+            "-1128387/2000"
+          ],
+          "sections": [
+            [
+              "12519/1940",
+              "0"
+            ],
+            [
+              "11549/970",
+              "-137/97"
+            ]
+          ]
+        },
+        {
+          "matches_known_component_tangent": true,
+          "normalized_moduli_tangent": [
+            "1",
+            "-1501/60",
+            "123971/600",
+            "-1128387/2000"
+          ],
+          "sections": [
+            [
+              "12519/1940",
+              "0"
+            ],
+            [
+              "11549/970",
+              "137/97"
+            ]
+          ]
+        }
+      ],
+      "roots": [
+        0,
+        20,
+        137,
+        162,
+        169,
+        214
+      ],
+      "z": "9/10"
+    }
+  ],
+  "conclusion": "every recovered rank-seven pair has the tangent direction of the previously verified rational two-section base curve",
+  "input": "artifacts/generated-results/elliptic_mestre_two_section_transverse_band_211_215_all_primes.json",
+  "not_established": [
+    "a generic visible-subgroup relation for every specialized extra line",
+    "pair intersections, Shioda data, saturation, or a rank claim"
+  ],
+  "rank_seven_base_point_count": 2,
+  "rank_seven_pair_count": 6,
+  "status": "exact tangent audit of diameter-211--215 rank-seven pairs completed"
+}

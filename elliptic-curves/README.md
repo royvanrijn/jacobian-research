@@ -966,11 +966,14 @@ Their equations, sources, and certificate commands are recorded in
 
 ### Search drivers
 
-`ecsearch/fermigier_score_sweep.cpp` is a deterministic staged
-Mestre--Nagao-style ranking pass.  It precomputes local trace tables through
-2000 and retains successively rarer rational parameters.  Its output is only
-a heuristic ordering: every survivor still requires a bounded point search,
-an exact independence certificate, global minimization, and an exact
+`ecsearch/fermigier_score_sweep.cpp` is a deterministic staged rank-jump
+ranking pass.  At every odd scoring prime it computes the exact mean trace on
+the good projective fibres of the Fermigier family and scores a specialization
+by $A_p-a_p(E_t)$, not by its raw trace.  It retains cumulative and disjoint
+windowed residual $S_0$ and $S_5$ features through 2000; a bad
+specialization prime is excluded from ordinary-trace scoring.  Its output is
+only a heuristic ordering: every survivor still requires a bounded point
+search, an exact independence certificate, global minimization, and an exact
 conductor.  The current bounded sweep produced the rank-20 near miss above;
 it did not produce a target curve.
 

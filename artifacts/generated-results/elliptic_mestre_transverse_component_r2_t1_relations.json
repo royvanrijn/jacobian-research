@@ -1,0 +1,81 @@
+{
+  "augmented_mod3_rank": 9,
+  "component_parameter": "r=2",
+  "conclusion": "at this specialization both affine points are exactly in the visible subgroup; it cannot witness a new Mordell-Weil direction",
+  "exact_affine_relations": [
+    "P1=V(0,-)-V(0,+)+V(1,+)",
+    "P2=-V(0,-)-V(1,+)-V((42-z)/6,-)"
+  ],
+  "finite_reduction_pivots": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10
+  ],
+  "mestre_parameter": "T=1",
+  "not_established": [
+    "a generic relation on the rational component",
+    "saturation of the visible rank-nine sublattice",
+    "a Shioda Gram matrix or generic rank statement"
+  ],
+  "pari_diagnostics": {
+    "ellrank_bounds": [
+      9,
+      9
+    ],
+    "ellrank_output": "[9, 9, 0, [[-705861, 38659205340], [21722391, 44219372904], [30643974, 128792830950], [36546039, 184516927560], [42332679, 242016306840], [-26381889/169, 77828527992600/2197], [-631989/25, 4326200785116/125], [2513335203/121, 43787242148076/1331], [26633690487/169, 4308875090456832/2197]]]",
+    "height_matrix": [
+      {
+        "decimal_precision": 64,
+        "numerical_rank": 9,
+        "subset_height_determinant": "20195588532.57095121329834078636490087205331740566654457078173310",
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10
+        ],
+        "subset_largest_eigenvalue": "44.76777557481617804879832310203345276948000064450145411967764997",
+        "subset_smallest_eigenvalue": "1.500070850978629800938280310658959913774705515150669741550099417"
+      },
+      {
+        "decimal_precision": 128,
+        "numerical_rank": 9,
+        "subset_height_determinant": "20195588532.570951213298340786364900872053317405666544570781733095546818762132709322259111825017880996713179891717149815861280247",
+        "subset_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10
+        ],
+        "subset_largest_eigenvalue": "44.767775574816178048798323102033452769480000644501454119677649971061112541659895341440958395328528271459641805440394092078396673",
+        "subset_smallest_eigenvalue": "1.5000708509786298009382803106589599137747055151506697415500994166147015047395451695160860115972036437188240517641455873921745344"
+      }
+    ],
+    "status": "PARI/GP height and ellrank diagnostics completed"
+  },
+  "short_weierstrass_coefficients": [
+    "0",
+    "0",
+    "0",
+    "-436481168886243",
+    "1186790811178179337758"
+  ],
+  "status": "exact specialization relation and non-promotion audit completed",
+  "visible_mod3_rank": 9
+}

@@ -1,0 +1,20 @@
+{
+  "candidate_root_sha256": "6e69af67fd3825e2a708e0ffaaa901f815fb02e967d36a75204fe773c982e0db",
+  "diameter_band": [
+    201,
+    205
+  ],
+  "hensel_precision": 8,
+  "hensel_primes": [
+    7,
+    11,
+    13,
+    17
+  ],
+  "nonreflection_square_leading_candidate_count": 179,
+  "obstruction_zero_record_count": 21692,
+  "rank_seven_hits": [],
+  "rank_seven_pair_count": 0,
+  "scope": "a bounded new-diameter screen; no absence claim outside this band or section chart",
+  "status": "exact post-max-200 transverse seed band screen completed"
+}

@@ -1,0 +1,38 @@
+{
+  "admissible_exact_sample_count": 1922,
+  "all_recursive_residuals_vanish": true,
+  "leading_invariant": "D=16*(7*u-432)^2/441",
+  "normalized_root_seed": [
+    0,
+    7,
+    79,
+    81,
+    128,
+    137
+  ],
+  "not_established": [
+    "pair intersections, a Shioda Gram matrix, or saturation",
+    "independence from a generic rank-13 subgroup",
+    "generic rank at least 14"
+  ],
+  "open_parameter_locus": "s != +/-7 and 65*s^2+658*s+1813 != 0",
+  "parameter": "u=-12*(47*s+357)/(s^2-49), with u=c1+425/7",
+  "residual_degree_bound_after_common_denominator": 1920,
+  "seed_finite_intersection": {
+    "base_parameter": "T=3973/329",
+    "common_affine_quartic_point": [
+      "4932/455",
+      "-107740485691272/438652175"
+    ],
+    "conclusion": "the selected signed sections meet at this finite seed fibre",
+    "not_established": "the full section intersection number, infinity contributions, or Shioda corrections",
+    "square_identities_checked_at_distinct_T_values": 7
+  },
+  "split_six_root_parameterization": {
+    "all_root_product_coefficients_match": true,
+    "cleared_coefficient_degree_bound": 12,
+    "conic": "w^2=49*u^2-4284*u+79524, with w=282+s*u",
+    "sample_count": 39
+  },
+  "status": "exact conic-rational two-section component identity verified"
+}

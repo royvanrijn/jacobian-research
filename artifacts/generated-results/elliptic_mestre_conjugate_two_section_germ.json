@@ -1,0 +1,203 @@
+{
+  "bivariate_germ": {
+    "all_E0_2_coefficients_through_total_order_vanish": true,
+    "nonzero_E0_2_coefficients": {},
+    "order": 4,
+    "parameters": "a=x02-233/113, b=x12-97/113"
+  },
+  "comparison_seed": {
+    "all_E0_2_coefficients_through_total_order_vanish": true,
+    "bivariate_order": 3,
+    "exact_tangent_rank_over_Q": 6,
+    "integer_roots": [
+      0,
+      21,
+      151,
+      169,
+      200,
+      239
+    ],
+    "modular_tangent_ranks": {
+      "11": 6,
+      "17": 6,
+      "19": 6,
+      "23": 6,
+      "29": 6
+    },
+    "seed_sections": [
+      [
+        "239/109",
+        "-31/109"
+      ],
+      [
+        "239/109",
+        "31/109"
+      ]
+    ]
+  },
+  "conclusion": "the displayed conjugate-slope seed has an unobstructed bivariate formal germ through the declared orders",
+  "conjugate_tangent_directions": [
+    [
+      "-403208521/6165600",
+      "2154029165/431592",
+      "-37317785220491/302114400",
+      "52302691403029/52870020",
+      "1",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "-53696810017/86318400",
+      "278327378837/6042288",
+      "-4665414465652307/4229601600",
+      "6341998177177933/740180280",
+      "0",
+      "-1",
+      "0",
+      "1"
+    ]
+  ],
+  "exact_tangent_rank_over_Q": 6,
+  "free_tangent_coordinates": [
+    "x02",
+    "x12"
+  ],
+  "integer_roots": [
+    0,
+    7,
+    127,
+    128,
+    225,
+    233
+  ],
+  "intercept_slice": {
+    "E0_2_coefficients": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "all_E0_2_coefficients_through_order_vanish": true,
+    "conjugate_line_slice": {
+      "x01": [
+        "233/113",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "x02": [
+        "233/113",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "x11": [
+        "-97/113",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "x12": [
+        "97/113",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "order": 12,
+    "parameter": "x02=233/113+t, x12=97/113"
+  },
+  "modular_tangent_ranks": {
+    "17": 6,
+    "23": 6,
+    "29": 6
+  },
+  "normalized_moduli": [
+    "-713/7",
+    "185471/49",
+    "-20813623/343",
+    "852220800/2401"
+  ],
+  "not_established": [
+    "a rational parametrization or global two-section component identity",
+    "a Mordell--Weil independence statement, saturation, heights, intersections, or a Shioda Gram matrix",
+    "generic rank at least 14"
+  ],
+  "root_motion_slice": {
+    "all_E0_2_coefficients_through_order_vanish": true,
+    "conjugate_slope_identity_through_order": 12,
+    "order": 12,
+    "parameters": "r3=127/7+t, r6=233/7",
+    "recognized_common_intercept": "233/(113-7t)=233/(240-7r3)",
+    "remaining_E0_2_coefficients": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "seed_sections": [
+    [
+      "233/113",
+      "-97/113"
+    ],
+    [
+      "233/113",
+      "97/113"
+    ]
+  ],
+  "status": "conjugate-slope two-section local germ replayed"
+}

@@ -188,6 +188,55 @@ model.  Those coordinates are not needed for the first q=6 chord, which uses
 the height-`21/2` section below, but may be needed for later equation-level
 section transport.
 
+Before attempting coordinate reconstruction of that second direction, replay
+the exact marked-basis pole reduction:
+
+```bash
+sage elkies-k3/scripts/analyze_h3_p2_pole_profile.sage
+```
+
+It proves that `P2+m*P1` has its unique minimal zero-section intersection at
+`m=0`: `P2.O=21`, while the nearest translate `(P2-P1).O=24`.  Hence the
+pole-reduced target is `P2` itself; no small lattice basis change lowers the
+denominator degree.
+
+The exact marked intermediate section used in the remaining degree-29 divisor
+transport is reconstructed from modular records by:
+
+```bash
+H92P2_PRIME=2305843009213693967 \
+H92P2_MODULAR_OUTPUT=artifacts/generated-results/h92-p2-modular/intermediate-2305843009213693967.json \
+sage elkies-k3/scripts/sample_h92_p2_intermediate_modp.sage
+sage elkies-k3/scripts/crt_h92_p2_intermediate.sage
+H92P2_PROBE=0 sage elkies-k3/scripts/probe_h92_p2_final_divisor.sage
+
+# Check that the residual-origin hyperplane class is not a small P1 multiple.
+sage elkies-k3/scripts/diagnose_h92_p2_normalization_modp.sage
+
+# Extract the pole-reduced modular half from the doubled canonical class.
+H92P2_CANDIDATE_INPUT=artifacts/generated-results/h92-p2-candidate-mod-100003-500.json \
+H92P2_DOUBLE_X_DEGREE=184 \
+H92P2_HALF_OUTPUT=artifacts/generated-results/h92-p2-half-mod-100003-v2.json \
+sage elkies-k3/scripts/extract_h92_p2_half_modp.sage
+
+# Hensel lift that fixed-degree half.  The first two outputs are reusable
+# p-adic checkpoints; only the final record is retained as a generated result.
+sage elkies-k3/scripts/lift_h92_p2_hensel.sage --precision 128 \
+  --output /tmp/h92-p2-hensel-p128.json
+sage elkies-k3/scripts/lift_h92_p2_hensel.sage --precision 512 \
+  --seed /tmp/h92-p2-hensel-p128.json --output /tmp/h92-p2-hensel-p512.json
+sage elkies-k3/scripts/lift_h92_p2_hensel.sage --precision 1024 \
+  --seed /tmp/h92-p2-hensel-p512.json \
+  --output artifacts/generated-results/elkies-k3-h92-p2-hensel.json
+sage elkies-k3/scripts/verify_h92_p2_hensel_lift.sage
+```
+
+The worker constrains each record to the marked degree-three divisor and the
+fixed coordinate degrees `(22,18)` and `(33,27)`.  The final probe verifies
+the exact intermediate Weierstrass identity and constructs the degree-29
+divisor.  Its canonical class `3D-29H` is the doubled `P2`; the fixed-profile
+Hensel lift and final verifier recover the exact height-46 H92 section.
+
 The complete defining equation of the H3 source family is exported by:
 
 ```bash
@@ -234,37 +283,41 @@ This certifies the genus-two H3 `E7+E8/MW2` source family, not the downstream
 rootless MW17 equation or its specialization to curve 273.
 <!-- status-consumer: EC-K3-H3-SOURCE a4bb40c9c9d0ff09 -->
 
-A fast exact obstruction to alternative small source points uses the even
-involution on the genus-two base:
+A global exact determination of the rational points uses Magma's two-cover
+descent and elliptic Chabauty implementation:
+
+```bash
+magma elkies-k3/scripts/prove_h3_level474_rational_points.m \
+  | tee artifacts/generated-results/elkies-k3-h3-level474-rational-points.txt
+```
+
+The certificate uses the Q-isomorphic model
+
+```text
+y^2=-3*x^6+22*x^4-19*x^2+64.
+```
+
+Its two-cover descent has three locally soluble classes, whose quartic-factor
+elliptic quotients reduce to two covers over a cubic field.  At the good prime
+`41`, elliptic Chabauty proves the complete rational `x`-image sets
+`{0}` and `{-13/7,-1,1,13/7}`; exact substitution then gives all affine
+fibres, and the nonsquare leading coefficient excludes rational infinity.
+This requires Magma `2.29-9` or a compatible later release, and uses no GRH or
+BSD assumption.  Expected terminal status:
+
+```text
+H3GLOBAL|status=PASS_GLOBAL_H3_LEVEL474_RATIONAL_POINTS
+```
+
+The pinned output is
+[`artifacts/generated-results/elkies-k3-h3-level474-rational-points.txt`](artifacts/generated-results/elkies-k3-h3-level474-rational-points.txt).
+The earlier quotient-sieve command remains available as a bounded independent
+cross-check:
 
 ```bash
 sage -python elkies-k3/scripts/sieve_h3_level474_rational_points.sage
 ```
-
-Writing `xE=-27*X^2` and `yE=-27*Y` gives the elliptic quotient
-
-```text
-yE^2=xE^3+198*xE^2+4617*xE+419904.
-```
-
-The checker proves this quotient has trivial torsion and exact rank one with
-generator `G=(-27,648)`.  The record source point maps to `9G`; the CM points
-map to `G` and `6G`.  A rational lift requires `-x(nG)/27` to be a square.
-Applying that necessary condition at 35 good primes through 163 to every
-`|n|<=1,000,000` leaves only `n=0,1,6,9`; `n=0` has no rational lift at
-infinity, and the other three give exactly the known points.  Expected status:
-
-```text
-H3POINTS|status=PASS_BOUNDED_H3_SOURCE_POINT_SIEVE
-```
-
-The artifact
-`artifacts/generated-results/elkies-k3-h3-level474-point-sieve.json` has
-SHA-256
-`6966cd27db727a82b22a7a8e63ced713f5a1a74d0b85d7e2166ed2344091f451`.
-This is a bounded Mordell--Weil-coefficient obstruction, not a global
-classification of the genus-two curve's rational points.
-<!-- status-consumer: EC-K3-H3-PTS dd90353bf0820f4a -->
+<!-- status-consumer: EC-K3-H3-PTS 8f0a27c947843b4a -->
 
 The marked section itself is now recovered exactly on the smaller-coefficient
 H92 short model.  First generate nine disjoint modular windows.  Exceptional
@@ -316,9 +369,204 @@ It supersedes historical SHA-256
 `0602c3b199629c6f460c9b7c728e048822418ecf85bf54807852be3d97b66616`,
 which lacked only the exact orientation-incidence block and used the older
 H21 status label.  This certifies the exact height-`21/2` section on the
-rational H92 model.  It does not yet construct the two-dimensional
-Riemann--Roch space, chord, or q=6 pencil for `D=O+(-P1)-F`; that is the
-remaining equation-level source gate.
+rational H92 model. The associated q=6 lattice divisor and chord ambient now
+have an all-edge actual E7 cover; the certified ten-dimensional matrix has a
+two-dimensional kernel and yields the first exact fibration hop below.
+
+### Resolved-chart q=6 compiler preflight
+
+The strict equation-level compiler is deliberately separate from the
+lattice-only neighbour engine.  It accepts vertical conditions only as maps
+from an explicit Riemann--Roch ambient basis to finite quotients of actual
+resolved blow-up charts; a Kodaira label or Smith saturation cannot stand in
+for such a map.  Run its core regression and the first H3 gate with:
+
+```bash
+sage -python elkies-k3/scripts/verify_elliptic_neighbor_compiler.sage
+sage -python elkies-k3/scripts/compile_h3_first_q6_preflight.sage \
+  --output artifacts/generated-results/elkies-k3-h3-q6-compiler-preflight.json
+```
+
+The H3 search's `q=6` label is not its old-fibre degree: after the recorded
+reflections, `D=O+(-P1)-F` has `D.F=2`.  The preflight therefore records a
+degree-two ambient with the marked chord
+`(y-y(P1))/(x-x(P1))`, rather than treating the five monomials of `L(5O)` as
+the relevant space.  It verifies the exact P1 input and the E7 resolved
+module, replays all 22 Weyl reflections, and checks the E7/E8 affine and
+simple fibre-wall pairings. The exact eight-step E8 chart tree itself is
+reproduced by:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_e8_resolution.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-e8-resolution.json
+sage -python elkies-k3/scripts/derive_h92_q6_e8_p1_branch_module.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-e8-p1-branch-module.json
+sage -python elkies-k3/scripts/derive_h92_q6_smooth_po_module.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-smooth-po-module.json
+```
+
+The middle command derives the complete E8 local module, including the affine
+II* component; the last certifies the four smooth P.O local changes of basis.
+The preflight is an exact local-input gate, but its former marked E7
+trivialization has been rejected by the following actual-chart audit:
+
+```bash
+sage -python elkies-k3/scripts/audit_h92_q6_actual_e7_marked_chord_order.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-actual-e7-marked-chord-order-audit.json
+```
+
+It proves `ord_Z(m/t)=-1` at the generic point of actual `E7_5`; the
+corrected all-edge cover below supplies the missing line-bundle
+trivialization rather than treating this audit as a failure of the q6 hop.
+
+The corrected marked-chart calculation is reproducible with:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_p1_actual_e7_marked_module_corrected.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-p1-actual-e7-marked-module-corrected.json
+```
+
+It proves `Z*m/t=unit/W` at `-P1`, so `<1,m>` is locally valid on that chart
+because `t/Z` is a unit. The all-edge continuation is:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_actual_e7_all_edge_module.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-actual-e7-all-edge-module.json
+```
+
+It proves `m` has exceptional orders at least `(1,1,3,2,0,2,2)` and no
+horizontal pole except the marked `-P1`, so it completes the actual E7 module
+cover without adding a q6 matrix row.
+
+The exact global assembly and child-Jacobian gates are:
+
+```bash
+sage -python elkies-k3/scripts/assemble_h92_q6_global_rr.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-global-rr.json
+sage -python elkies-k3/scripts/eliminate_h92_q6_global_pencil.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-global-pencil-elimination.json
+sage -python elkies-k3/scripts/audit_h92_q6_pencil_marked_section_degrees.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-marked-section-degrees.json
+sage -python elkies-k3/scripts/certify_h92_q6_child_jacobian.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-child-jacobian.json
+sage -python elkies-k3/scripts/derive_h92_q6_e7_resolution.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-e7-resolution.json
+sage -python elkies-k3/scripts/derive_h92_q6_e7_valuation_atlas.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-e7-valuation-atlas.json
+sage -python elkies-k3/scripts/derive_h92_q6_third_e7_local_target.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-third-e7-local-target.json
+sage -python elkies-k3/scripts/assemble_h92_q6_third_generic_rr_ambient.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-third-generic-rr-ambient.json
+sage -python elkies-k3/scripts/derive_h92_q6_third_e7_cartier_charts.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-third-e7-cartier-charts.json
+sage -python elkies-k3/scripts/derive_h92_q6_actual_e7_resolution.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-actual-e7-resolution-diagnostic.json
+sage -python elkies-k3/scripts/derive_h92_q6_actual_e7_resolution_full.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-actual-e7-resolution-full.json
+sage -python elkies-k3/scripts/derive_h92_q6_third_actual_e7_cartier_charts.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-third-actual-e7-cartier-charts.json
+sage -python elkies-k3/scripts/derive_h92_q6_actual_e7_chart_pullbacks.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-actual-e7-chart-pullbacks.json
+sage -python elkies-k3/scripts/derive_h92_q6_actual_e7_valuation_atlas.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-actual-e7-valuation-atlas.json
+sage -python elkies-k3/scripts/trace_h92_q6_p1_actual_e7.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-p1-actual-e7-trace.json
+sage -python elkies-k3/scripts/derive_h92_q6_p1_actual_e7_marked_module_corrected.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-p1-actual-e7-marked-module-corrected.json
+sage -python elkies-k3/scripts/derive_h92_q6_actual_e7_all_edge_module.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-actual-e7-all-edge-module.json
+sage -python elkies-k3/scripts/certify_h92_q6_actual_resolved_rr_cover.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-actual-resolved-rr-cover.json
+sage -python elkies-k3/scripts/reject_h92_q6_third_old_monomial_e7_ideal.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-third-rejected-old-monomial-e7-ideal.json
+sage -python elkies-k3/scripts/derive_h92_q6_third_actual_e7_quotient_block.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-third-actual-e7-quotient-block.json
+sage -python elkies-k3/scripts/evaluate_h92_q6_third_marked_chord_actual_e7_quotient.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-third-marked-chord-actual-e7-quotient.json
+sage -python elkies-k3/scripts/evaluate_h92_q6_third_generic_ambient_actual_e7_quotient.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-third-generic-ambient-actual-e7-quotient.json
+sage -python elkies-k3/scripts/evaluate_h92_q6_third_e7_point_series.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-third-e7-point-series.json
+sage -python elkies-k3/scripts/certify_h92_q6_third_e7_chord_units.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-third-e7-chord-units.json
+sage -python elkies-k3/scripts/derive_h92_q6_child_zero_section.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-child-zero-section.json \
+  --component-output artifacts/generated-results/elkies-k3-h92-q6-child-e7-infinity-sections.json
+sage -python elkies-k3/scripts/certify_h3_q6_component_section_lattice.sage \
+  --output artifacts/generated-results/elkies-k3-h3-q6-component-sections.json
+sage -python elkies-k3/scripts/certify_h3_q6_weyl_section_transport.sage \
+  --output artifacts/generated-results/elkies-k3-h3-q6-weyl-section-transport.json
+sage -python elkies-k3/scripts/certify_h3_q6_actual_neighbor_hop.sage \
+  --output artifacts/generated-results/elkies-k3-h3-q6-actual-neighbor-hop.json
+sage -python elkies-k3/scripts/lift_h92_p2_hensel.sage \
+  --precision 1024 \
+  --output artifacts/generated-results/elkies-k3-h92-p2-hensel-100003-p1024.json
+sage -python elkies-k3/scripts/verify_h92_p2_coordinates.sage \
+  --input artifacts/generated-results/elkies-k3-h92-p2-hensel-100003-p1024.json
+sage -python elkies-k3/scripts/transport_h92_q6_third_modp.sage
+```
+
+These commands certify the 10-by-8 vertical matrix, `h0(D)=2`, a degree-four
+genus-one model, and the Jacobian fibre signature `II*+IV*+6I1`, hence
+`E8+E6` and MW rank three in the rank-19 source Néron--Severi lattice. The
+final first-hop certificate replays the rank-three Néron--Severi height Gram,
+although minimized equation-level coordinates for every rank-three section
+remain a separate transport task. The zero-section command has `D.O=1`,
+`u=T` on the new base, and exact coordinates on the minimized child Jacobian.
+The component
+certificate pins the two old E7 components which form the
+`[[8/3,1/3],[1/3,8/3]]` leading block of the target height matrix. The optional
+component output transports both binary-quartic infinity points exactly. The
+preceding E7 chart replay assigns them without a fibre-type guess: affine E7
+is `plus`, and E7_7 is `minus`. The final Weyl transport identifies the
+remaining marked child direction as `4*(-P1)`, `(-P1)`, and `22*(-P1)-P2`;
+the same certificate replays the full predicted rank-three
+Gram. These projections are not old-model section coordinates. The p-adic
+lift reconstructs all 139 normalized P2 coefficients and independently
+verifies the exact H92 equation; only divisor-aware conversion of those
+classes to minimized child coordinates remains.
+The final command is a negative guard: after calibrating the reconstructed
+coordinate as `-P2` in the H3 frame, naive generic-fibre evaluation of the
+third MW projection has q=6-pencil degree 4769 modulo 100003. The Weyl
+transport certificate supplies the exact E7-plus-fibre correction which turns
+the corresponding degree-4812 horizontal divisor into the child section.
+The valuation-atlas command records the `(Z,U,Y)` orders in the *formal* E7
+normal-form resolution. The third-E7 target records the matching formal
+exceptional cycle `22*c_q6`; neither is a transported H92 chart.
+The following symbolic ambient has exact degree 44 and 44 basis elements:
+43 old Weierstrass monomials plus the chord at the exact group-law expression
+`22*(-P1)-P2`. It is evaluated inside each resolved chart, avoiding an
+irrelevant globally reduced rational-function coordinate.
+
+The child-Jacobian default pin is the SageMath 10.9 replay hash
+`c471d28304b4d45fdd3e1e03c1d202692afbe102cddacc98292690b7a26a251a`.
+It is generated through the reusable exact finite-place minimization and
+Kodaira aggregation route; the q6 invariants and transported Gram are
+unchanged.
+The corresponding regenerated final-hop artifact has SHA-256
+`3adb6f6acf9333bb43f846aab58fe95ade1e8e229f6dec0e7f985f526435984d`.
+Its certified Shioda--Tate data are root determinant `3`, height determinant
+`316`, trivial torsion/glue index, and absolute Néron--Severi discriminant
+`948`.  It additionally pins the three source curves meeting the new fibre
+once, the exact Néron--Severi old-E7 pairing rows of the third correction, and its
+horizontal-plus-vertical degree balance `4812-4811=1`. The first two
+low-height sections are also pinned as exact child-Jacobian points by the
+actual affine-E7 blow-up chart and its two binary-quartic infinity signs.
+The Cartier-chart atlas writes the six formal E7 node-chart factors. The
+following actual-H92 diagnostic proves that its second standard node is smooth
+in the H92 germ. The full actual-H92 tree then resolves the displaced
+second-U node at `Z=-A1/B1` plus three third-stage nodes; these exact charts,
+rather than the formal atlas, are the input for a finite quotient matrix. The
+following actual Cartier atlas supplies the six transported integral-vertical
+factors. The following pullback atlas then maps the old H92 coordinates into
+each edge chart, before the remaining marked-chord jet conditions are imposed.
+<!-- status-consumer: EC-K3-H3-Q6 748f736b81ec3ce2 -->
+
+In the blocked state the preflight makes no
+claim about vertical codimension, `h0(D)`, a child equation, or transported
+sections.  See [`elkies-k3/ELLIPTIC_NEIGHBOR_COMPILER.md`](elkies-k3/ELLIPTIC_NEIGHBOR_COMPILER.md).
+The commands use SageMath 10.9; the corresponding E8-resolution and H3-
+preflight artifact hashes are recorded in that compiler note.
 
 The exact signed lattice gate is reproduced by:
 
@@ -414,6 +662,1097 @@ The checker also verifies the pinned continuation frame
 13 coordinates are D13 simple roots and its last four quotient directions
 have reduced MW height Gram
 `[[3/4,1/4,-1/4,0],[1/4,11/4,1/4,1],[-1/4,1/4,11/4,-1],[0,1,-1,46]]`.
+
+Before deriving the global q=8 pencil, reconstruct its exact generic-fibre
+ambient directly on the H92 source. The selected class is first source-chamber
+reduced by 122 fixed-component reflections; its resulting source-nef class
+has generic restriction `9(O)+9(-P1)`, and the 18-element chord basis uses
+only the already explicit `P1`:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_generic_rr_ambient.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-generic-rr-ambient.json
+```
+
+It reports `H92Q8AMBIENT|degree=18|basis=18|...|status=PASS_EXACT_Q8_GENERIC_RR_AMBIENT`.
+This is the generic-fibre ambient, not an equation-level q=8 pencil: the
+finite vertical and resolved E7/E8 conditions for the source-nef vertical
+divisor remain to be derived.
+<!-- status-consumer: EC-K3-H3-Q8-AMBIENT c92bbb44fa7b01fb -->
+
+The actual all-edge q6 E7 module also yields the first reusable source-q8
+generic-component condition layer. It evaluates the cleared ninth-power
+comparison on all seven actual E7 components. On the corrected 54-term seed,
+139 negative-order groups occur; 41 singleton groups give a rank-22 exact
+coordinate block, while the non-singletons are retained for later
+chart-function-field residue calculations.
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_all_component_generic_conditions.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-all-component-generic-conditions.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-ALL-COMPONENT-GENERIC 6f60b40f3b99f693 -->
+
+The non-singleton groups now have pinned actual generic-component chart
+frames: each of the seven components is assigned a blow-up chart, reduced
+component equation, and normal `(Z,U,Y)` weight that reproduces its certified
+orders of `t,x,y`. In particular, the three `Y=0` components retain the
+actual quadratic normal branch rather than a Kodaira-label proxy.
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_generic_component_chart_frames.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-generic-component-chart-frames.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-GENERIC-COMPONENT-CHART-FRAMES 48fc1dbd9486f9a2 -->
+
+The selected q=8 class also has an exact degree-two generic marking directly
+on the q=6 child.  Its lattice orbit has coordinate `(0,-2,0)` at the
+canonical q6 zero; translating to the explicit transported old zero makes it
+`O+2*(E7_7-old_zero)+2*(E7_7-affine_E7)`, with generic basis `(1,m)`:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_marking.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-marking.json
+```
+
+Expected terminal status:
+
+```text
+H92Q6CHILDQ8|canonical_mw=0,-2,0|relative_mw=-2,-2,0|generic_basis=2|zero_collisions=46:transverse|II*=smooth|IV*=smooth|status=PASS_EXACT_Q6_CHILD_Q8_MARKING
+```
+
+This pins the generic divisor, its additive-fibre jets, and its degree-46
+smooth zero-collision divisor only; deriving the associated local conditions
+and a global pencil remains necessary.
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-MARKING 96fe2161f692f57d -->
+
+Rewrite the same exact divisor in finite component roots relative to the
+explicit transported old zero:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_physical_root_target.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-physical-root-target.json
+```
+
+Expected terminal status:
+
+```text
+H92Q6CHILDQ8ROOTS|E6_cycle=3,5,6,4,2,3|E6_degrees=-1,-1,0,0,0,0|E8_cycle=4,5,7,10,8,6,4,2|E8_degrees=-1,0,0,0,0,0,0,0|status=PASS_EXACT_Q6_CHILD_Q8_PHYSICAL_ROOT_TARGET
+```
+
+This pins only the lattice-component target. The simple-root labels have not
+yet been mapped to resolved II*/IV* charts, and no finite quotient module or
+global q8 pencil is asserted.
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-PHYSICAL-ROOT-TARGET 064318c2afe537fd -->
+
+For the Weyl-nef q8 fibre (not the dominant D13 image), use the invariant IV*
+ideal `(u^2,X,Y)`. Its finite q-regular module is
+`<(1,lift(R/Nx)),(0,f_II^2*f_IV^2)>`; the infinity lattice remains open.
+
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-NEF-LOCAL-MODULE e2887bd2bd4f6c27 -->
+
+For the explicit q6 child, make the abstract Weyl-nef q8 class nonnegative on
+the actual `E6+E8` components, then certify all remaining fixed-component
+walls.  The component reduction takes 102 reflections.  The certificate
+enumerates every possible negative old-fibre section wall in its exact
+rank-17 short coset; a separate parity identity excludes bisection walls.
+Together with the finite and affine component degrees, this proves the
+resulting primitive isotropic class is nef and defines a genus-one pencil of
+old-fibre degree two.
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_physical_root_target.sage \
+  --representative component-nef \
+  --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-component-nef-physical-root-target.json
+sage -python elkies-k3/scripts/probe_h92_q6_child_q8_section_walls.sage \
+  --target artifacts/generated-results/elkies-k3-h92-q6-child-q8-component-nef-physical-root-target.json \
+  --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-component-nef-section-walls.json
+```
+
+Expected terminal status:
+
+```text
+H92Q6CHILDQ8SECTIONS|representative=component-nef|short=274731|coset_short=0|negative=0|vertical_nef=1|status=PASS_PRIMITIVE_NEF_DEGREE_TWO_CLASS
+```
+
+This is a lattice bisection pencil only.  Its standard-Weierstrass equation
+also needs the exact NS transport of the translation from the transported old
+zero to the Weierstrass infinity section; the existing marked chord belongs
+to the translated divisor. Its branch divisor, quadratic-extension hash,
+collision analysis, and rank remain open.
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-COMPONENT-NEF-BISECTION-PENCIL 84142196f27e5e2d -->
+
+The exact generic chord for that physical divisor is now available. Let `P0`
+be the transported old zero as a finite standard-Weierstrass point, let `S`
+be the existing marked point, and set `Q=P0+S`. The divisor is `P0+Q` and
+translation by `-P0` carries it to `O_standard+S`; pull the standard chord
+back through that translation:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_component_nef_chord.sage
+```
+
+Expected terminal status:
+
+```text
+H92Q6CHILDCOMPNEFCHORD|translation=tau_-P0|generic_basis=2|status=PASS_EXACT_COMPONENT_NEF_OLD_ZERO_CHORD
+```
+
+The translated resolved local modules and infinity module are still required
+for an equation or branch divisor.
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-COMPONENT-NEF-CHORD-TRANSPORT c3896078bcdd432d -->
+
+Construct and screen level zero of the generic chord over the old base:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_component_nef_bisection_branch.sage
+```
+
+Expected terminal status:
+
+```text
+H92Q6CHILDCOMPNEFBRANCH|level=0|quadratic=1|canonicalized=True|branch_degree=192|status=PASS_EXACT_COMPONENT_NEF_GENERIC_LEVEL_BRANCH
+```
+
+The result is a quadratic in the translated coordinate `x'`; its physical
+equation is its pullback by `tau_-P0`. Its exact squareclass has degree-192
+finite branch divisor, so this level is rejected as a rational-bisection
+collision candidate.
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-COMPONENT-NEF-GENERIC-BISECTION-BRANCH 6d0dbb4b90b14710 -->
+
+The exact additive specializations of the translation centre are smooth at
+both II* and IV*, so translation by `-P0` extends on their Néron smooth loci:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_component_nef_translation_additive_jets.sage
+```
+
+Expected terminal status:
+
+```text
+H92Q6CHILDCOMPNEFJETS|II*=P0_smooth|IV*=P0_smooth|status=PASS_EXACT_COMPONENT_NEF_TRANSLATION_ADDITIVE_JETS
+```
+
+This is a smooth-centre prerequisite only; the resolved-chart pullbacks,
+infinity module, pencil equation, and branch divisor remain open.
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-COMPONENT-NEF-TRANSLATION-ADDITIVE-JETS d8e4411b856a6051 -->
+
+The II* part of that target has a unit-normalized complete ideal:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_iistar_vertical_ideal.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-iistar-vertical-ideal.json
+```
+
+It reports `H92Q6CHILDQ8II|ideal=(u2,X,Y)|colength=2|...`. This fixes only
+the vertical II* ideal; the generic-chord trivialization and IV* module still
+have to be derived before forming a q8 global condition matrix.
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-IISTAR-VERTICAL-IDEAL ea029da7275e86da -->
+
+The IV* vertical condition is determined up to the unresolved E6 arm
+orientation.  Its two conjugate colength-four ideals are
+`(Y-c*u^2,u*X,X^2,u^3)` and `(Y+c*u^2,u*X,X^2,u^3)`, where `c^2=b(0)` in the
+unit-normalized IV* germ.  Do not select either one as the q8 module until the
+physical E6-root-to-chart attachment is derived.
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_ivstar_vertical_ideal.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-ivstar-vertical-ideal.json
+```
+
+It reports `H92Q6CHILDQ8IV|ideals=2|colength=4|orientation=unresolved_E6_arm|...`.
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-IVSTAR-VERTICAL-IDEAL-PAIR e2cdaa42791c3120 -->
+
+The transported old `E7_7` section orients this pair: it meets physical E6
+root five and the IV* `Y/u^2=c` branch.  The selected vertical condition is
+`(Y+c*u^2,u*X,X^2,u^3)`, with colength four.
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_ivstar_orientation.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-ivstar-orientation.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-IVSTAR-ORIENTATION 13eae37cfe412e2b -->
+
+The actual generic chord `m=(y+y(S))/(x-x(S))` now has exact finite
+coefficient blocks in both selected additive quotients.  They have ranks two
+at II* and four at IV*; at IV*, reducing `Y=-c*u^2` contributes the essential
+`u^2` correction to the residue of `m`.  This is local jet data, not a global
+base-function bound or a q8 pencil.
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_additive_chord_blocks.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-additive-chord-blocks.json
+```
+
+Expected terminal status:
+
+```text
+H92Q6CHILDQ8ADDITIVE|II_rows=2|IV_rows=4|II_rank=2|IV_rank=4|status=PASS_EXACT_Q6_CHILD_Q8_ADDITIVE_CHORD_BLOCKS
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-ADDITIVE-CHORD-BLOCKS dba8bb4cf313f9fd -->
+
+As bounded modular reconnaissance only, the first saturated coefficient window
+already has the expected dimension: at each of `p=43,53,59`, take
+`B in <1,T,...,T^7>` and no `h^2*C` correction.  The smooth congruence plus
+the six additive rows has rank six in dimension eight, hence kernel dimension
+two.  The neighbouring `B` degrees six and eight give dimensions one and
+three.  These degree bounds have not been derived in characteristic zero, so
+this does not certify a q8 pencil.
+
+```bash
+sage -python elkies-k3/scripts/probe_h92_q6_child_q8_saturated_ansatz.sage \
+  --prime 43 --max-b-degree 7 --max-c-degree -1 \
+  --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-saturated-ansatz-probe.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-SATURATED-ANSATZ-PROBE 17dbbe0e9c60e4fe -->
+
+Screen every finite level of the resulting deterministic two-dimensional
+ratio for the degree-four branch divisor required of a genus-one double
+cover.  This is a three-prime bounded modular obstruction, not a global q8
+pencil result:
+
+```bash
+sage -python elkies-k3/scripts/probe_h92_q6_child_q8_saturated_pencil_modp.sage --prime 43
+sage -python elkies-k3/scripts/probe_h92_q6_child_q8_saturated_pencil_modp.sage --prime 53
+sage -python elkies-k3/scripts/probe_h92_q6_child_q8_saturated_pencil_modp.sage --prime 59
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-SATURATED-PENCIL-OBSTRUCTION a0130a38d4d50617 -->
+
+Compute the entire finite coefficient module, rather than a bounded
+polynomial window.  The expected profile at each listed good prime is six
+independent finite rows and Smith degrees `(1,5)`:
+
+```bash
+sage -python elkies-k3/scripts/probe_h92_q6_child_q8_finite_module_modp.sage --prime 43
+sage -python elkies-k3/scripts/probe_h92_q6_child_q8_finite_module_modp.sage --prime 53
+sage -python elkies-k3/scripts/probe_h92_q6_child_q8_finite_module_modp.sage --prime 59
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-FINITE-MODULE-MODULAR b385dff76d3de7f3 -->
+
+Derive the complete smooth O.S collision module for that marking:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_smooth_collision_module.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-smooth-collision-module.json
+```
+
+Expected terminal status:
+
+```text
+H92Q6CHILDQ8SMOOTH|degree_h=46|squarefree=1|base_regular=h_divides_b|saturated_quotient=92|status=PASS_EXACT_Q6_CHILD_Q8_SMOOTH_COLLISION_MODULE
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-SMOOTH-MODULE 7bdad5b12acfce5c -->
+
+The former depth-two IV* entrance and branch-orientation scripts are
+historical only: the corrected marking is smooth at IV*, so neither is a
+valid q8 local-module input.
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-IVSTAR-ENTRANCE 86bf6cc2487fd0b4 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-IVSTAR-COMPONENT ee2d661e3dc73ef0 -->
+
+The first resolved q=8 local target is also exact.  It identifies the source
+and chart-resolved E7 component orders and proves that the q=8 E7 class is the
+ninth tensor power of `Z*J_-P1^dual` followed by the integral exceptional
+twist `(2,5,6,4,6,3,5)`.  The correction has exceptional intersection degrees
+`(0,1,0,0,-7,0,1)`, so it is not anti-nef: a later quotient compiler must use
+resolved-chart gluing rather than substitute one complete ideal downstairs:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_e7_local_target.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-e7-local-target.json
+```
+
+Expected terminal status:
+
+```text
+H92Q8E7TARGET|degrees=0,1,0,0,2,0,1|twist=2,5,6,4,6,3,5|status=PASS_EXACT_Q8_E7_LOCAL_TARGET
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-E7-TARGET f0b749cd9ef3e0e0 -->
+
+That non-anti-nef correction is now attached to the six actual H92 E7 edge
+charts.  The generated factors are line-bundle transitions, not a substitute
+complete ideal: if `g` is the displayed factor then the q8 chart
+representative `f` must satisfy `g*f` in the ninth q6 marked module.
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_actual_e7_gluing.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-actual-e7-gluing.json
+```
+
+Expected terminal status:
+
+```text
+H92Q8ACTUALE7GLUING|charts=6|twist=2,5,6,4,6,3,5|status=PASS_EXACT_Q8_ACTUAL_E7_GLUING
+```
+
+For example, on the actual `E7_2--E7_5` chart the factor is `Z^6*Y^5`.
+This fixes the resolved-chart orientation required before a finite q8 E7
+condition matrix can be formed.
+
+The fractional ninth power can now be supplied to that compiler without
+collapsing its marked branch. With `J_P1=(x-xP1,y-yP1)`, clear the q6
+denominator chartwise by testing `(x-xP1)^9*g*f` against the ten generators
+of `t^9*J_P1^9`. The following compact manifest records those generators,
+all six actual pullbacks, and the cleared template for every generic q8 frame
+term; it is not yet a membership matrix.
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_actual_e7_power_module.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-actual-e7-power-module.json
+```
+
+Expected terminal status:
+
+```text
+H92Q8E7POWERMODULE|charts=6|power_generators=10|generic_terms=18|status=PASS_EXACT_Q8_E7_CLEARED_POWER_MODULE
+```
+
+It preserves the non-anti-nef gluing problem for the five non-marked edges;
+in particular it does not replace the target by a scalar complete ideal.
+
+With the current 54-term source envelope and the deeper `h^-15` smooth
+frame, the declared `r=7` enlargement has a 558-column smooth block with a
+two-dimensional kernel modulo each of `43,53,59,89`. The generic `E7_3`
+condition of the actual
+`E7_4--E7_3` chart eliminates both directions at all four primes. This is a
+one-chart modular obstruction, not a characteristic-zero pencil result.
+
+```bash
+sage -python elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage \
+  --prime 43 --extra-h-power 7 --include-kernel \
+  --output artifacts/generated-results/elkies-k3-h92-q8-smooth-principal-parts-mod-43-extra7.json
+sage -python elkies-k3/scripts/probe_h92_q8_e3_generic_module_modp.sage \
+  --kernel artifacts/generated-results/elkies-k3-h92-q8-smooth-principal-parts-mod-43-extra7.json \
+  --output artifacts/generated-results/elkies-k3-h92-q8-e3-generic-module-mod-43-extra7.json
+```
+
+Expected terminal status from the second command:
+
+```text
+H92Q8E3GENERIC|prime=43|smooth_kernel=2|constraints=2|survivor=0|status=EXPERIMENTAL_MODULAR_E3_GENERIC_MODULE_OBSTRUCTION
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-EXTRA7-E3-GENERIC-OBSTRUCTION 41e4df0f0b84986e -->
+
+The all-component singleton layer independently gives a mod-43 obstruction
+to this corrected `r=7` smooth kernel: its six exact singleton coordinate
+rows restrict with rank two to the two-dimensional smooth kernel. Thus no
+direction remains even before resolving non-singleton residues or edge nodes.
+
+```bash
+sage -python elkies-k3/scripts/assemble_h92_q8_endpoint_rr_ambient.sage \
+  --extra-h-power 7 \
+  --output artifacts/generated-results/elkies-k3-h92-q8-extra7-endpoint-rr-ambient.json
+sage -python elkies-k3/scripts/derive_h92_q8_all_component_generic_conditions.sage \
+  --ambient artifacts/generated-results/elkies-k3-h92-q8-extra7-endpoint-rr-ambient.json \
+  --output artifacts/generated-results/elkies-k3-h92-q8-all-component-generic-conditions-extra7.json
+sage -python elkies-k3/scripts/probe_h92_q8_all_component_singleton_modp.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-all-component-singleton-mod-43-extra7.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-EXTRA7-ALL-COMPONENT-SINGLETON-OBSTRUCTION 2b07df0cd2f4e19f -->
+
+The broader declared `r=10` envelope has 774 columns and a 16-dimensional
+smooth kernel modulo each of `43,53,59,89`. Necessary generic conditions on
+all six unmarked E7 components leave four directions, but the actual
+`E7_4--E7_3` node has four successive unique Pareto-leading negative terms
+and eliminates all four. This is again a bounded modular leading-term
+obstruction, not a complete resolved-chart or characteristic-zero result.
+
+```bash
+sage -python elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage \
+  --prime 43 --extra-h-power 10 --include-kernel \
+  --output artifacts/generated-results/elkies-k3-h92-q8-smooth-principal-parts-mod-43-extra10.json
+sage -python elkies-k3/scripts/probe_h92_q8_unmarked_e7_generic_module_modp.sage \
+  --kernel artifacts/generated-results/elkies-k3-h92-q8-smooth-principal-parts-mod-43-extra10.json \
+  --output artifacts/generated-results/elkies-k3-h92-q8-unmarked-e7-generic-module-mod-43-extra10.json
+sage -python elkies-k3/scripts/probe_h92_q8_e7_4_3_node_module_modp.sage \
+  --kernel artifacts/generated-results/elkies-k3-h92-q8-smooth-principal-parts-mod-43-extra10.json \
+  --generic artifacts/generated-results/elkies-k3-h92-q8-unmarked-e7-generic-module-mod-43-extra10.json \
+  --output artifacts/generated-results/elkies-k3-h92-q8-e7-4-3-node-module-mod-43-extra10.json
+```
+
+Expected terminal status from the final command:
+
+```text
+H92Q8E743NODE|prime=43|generic_candidate=4|constraints=4|survivor=0|status=EXPERIMENTAL_MODULAR_E7_4_3_NODE_MODULE_OBSTRUCTION
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-EXTRA10-NODE-OBSTRUCTION 3152bae4a804d3d8 -->
+
+The declared `r=13,16,19` envelopes are also excluded modulo `43`. Their
+smooth-kernel/generic-survivor dimensions are respectively `38/26`, `50/38`,
+and `50/38`; the `E7_4--E7_3` node eliminates every survivor.
+
+```bash
+for r in 13 16 19; do
+  sage -python elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage \
+    --prime 43 --extra-h-power "$r" --include-kernel \
+    --output "artifacts/generated-results/elkies-k3-h92-q8-smooth-principal-parts-mod-43-extra$r.json"
+  sage -python elkies-k3/scripts/probe_h92_q8_unmarked_e7_generic_module_modp.sage \
+    --kernel "artifacts/generated-results/elkies-k3-h92-q8-smooth-principal-parts-mod-43-extra$r.json" \
+    --output "artifacts/generated-results/elkies-k3-h92-q8-unmarked-e7-generic-module-mod-43-extra$r.json"
+  sage -python elkies-k3/scripts/probe_h92_q8_e7_4_3_node_module_modp.sage \
+    --kernel "artifacts/generated-results/elkies-k3-h92-q8-smooth-principal-parts-mod-43-extra$r.json" \
+    --generic "artifacts/generated-results/elkies-k3-h92-q8-unmarked-e7-generic-module-mod-43-extra$r.json" \
+    --output "artifacts/generated-results/elkies-k3-h92-q8-e7-4-3-node-module-mod-43-extra$r.json"
+done
+```
+
+Expected final status:
+
+```text
+H92Q8E743NODE|prime=43|generic_candidate=26|constraints=26|survivor=0|status=EXPERIMENTAL_MODULAR_E7_4_3_NODE_MODULE_OBSTRUCTION
+```
+
+This is bounded and modular only.
+<!-- status-consumer: EC-K3-H3-Q8-EXTRA13-NODE-OBSTRUCTION 0cd4414b09443b94 -->
+
+Allowing one individual E7-pole slack unit does not open the initial windows:
+`r=4` has zero smooth kernel, `r=7` has `9 -> 0` after unmarked generic E7
+rows, and `r=10` has `25 -> 13 -> 0` after generic then node rows.
+
+```bash
+for r in 4 7 10; do
+  sage -python elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage \
+    --prime 43 --extra-h-power "$r" --extra-e7-pole 1 --include-kernel \
+    --output "artifacts/generated-results/elkies-k3-h92-q8-smooth-principal-parts-mod-43-extra$r-e7slack1.json"
+  sage -python elkies-k3/scripts/probe_h92_q8_unmarked_e7_generic_module_modp.sage \
+    --kernel "artifacts/generated-results/elkies-k3-h92-q8-smooth-principal-parts-mod-43-extra$r-e7slack1.json" \
+    --output "artifacts/generated-results/elkies-k3-h92-q8-unmarked-e7-generic-module-mod-43-extra$r-e7slack1.json"
+  sage -python elkies-k3/scripts/probe_h92_q8_e7_4_3_node_module_modp.sage \
+    --kernel "artifacts/generated-results/elkies-k3-h92-q8-smooth-principal-parts-mod-43-extra$r-e7slack1.json" \
+    --generic "artifacts/generated-results/elkies-k3-h92-q8-unmarked-e7-generic-module-mod-43-extra$r-e7slack1.json" \
+    --output "artifacts/generated-results/elkies-k3-h92-q8-e7-4-3-node-module-mod-43-extra$r-e7slack1.json"
+done
+```
+
+These are bounded one-prime necessary-condition screens only.
+<!-- status-consumer: EC-K3-H3-Q8-E7-SLACK1-OBSTRUCTION 419a01f2b59d42ea -->
+
+Before using that node screen as anything more than a leading-term
+obstruction, the local module itself is now transported from the actual H92
+chart.  On `E7_4--E7_3`, the surface equation is `Y^2-U*H(Z,U)=0` with
+`H(0)=1`; the exact P1 entrance orders show
+`x-x(P1)=x*unit` and `y-y(P1)=y*unit`.  Thus the q6 module is `t*R`, and the
+q8 node condition has the actual frame `(Z^4*Y^6)*f/t^9 in R`.
+
+```bash
+sage -python elkies-k3/scripts/certify_h92_q8_e7_4_3_node_frame.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-e7-4-3-node-frame.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-E7-4-3-NODE-FRAME c3d6b194bb72dd59 -->
+
+The same chart-level calculation now covers all five unmarked E7 edge nodes.
+Their q6 module is uniformly `t*R`; the actual q8 Cartier factors are
+`U^4Y^2`, `Z^4Y^6`, `U^5Y^6`, `Z^5Y^5`, and `Z^3Y^6` in edge-chart order.
+The sole exception remains the marked `E7_2--E7_5` node, whose leading P1
+cancellation is deliberately not forced into this principal frame.
+
+```bash
+sage -python elkies-k3/scripts/certify_h92_q8_unmarked_e7_node_frames.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-unmarked-e7-node-frames.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-UNMARKED-E7-NODE-FRAMES 59977f99242c92c6 -->
+
+The remaining `E7_2--E7_5` node has the required leading cancellation, so it
+is checked separately rather than treated by strict orders.  The actual
+second-U chart gives `x-x(P1)=Z^3U^2*unit` and
+`y-y(P1)=Z^3U^2Y*unit`; consequently its node module is also `t*R` and its
+q8 condition is `Z^6Y^5*f/t^9 in R`.  This is distinct from the marked
+smooth point `-P1` on E7₅, whose frame remains separate.
+
+```bash
+sage -python elkies-k3/scripts/certify_h92_q8_e7_2_5_node_frame.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-e7-2-5-node-frame.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-E7-2-5-NODE-FRAME eaff4f299d528774 -->
+
+All six frames now feed one exact two-parameter node template.  For each
+term `u^i*x^a*m^b/h^k`, it records the actual leading bidegree
+`ord(g)+(4k-i-9)ord(t)+a ord(x)+b ord(m)`.  The seed has 260 negative groups
+(196 initially singleton), but Pareto-minimality leaves one independent exact
+initial coordinate row: five charts see the same coefficient. Equal or
+non-minimal groups are not promoted to rows until the finite local quotient is
+evaluated.
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_all_e7_node_principal_bidegrees.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-all-e7-node-principal-bidegrees.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-ALL-E7-NODE-PRINCIPAL-BIDEGREE-TEMPLATE f9faa97d398f8f02 -->
+
+That safe Pareto row is now materialized through the shared resolved-condition
+compiler.  Its normalized `1 x 54` matrix has rank one and kernel dimension
+53.  It is intentionally only the initial node block, not the full node
+quotient.
+
+```bash
+sage -python elkies-k3/scripts/compile_h92_q8_initial_node_conditions.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-initial-node-conditions.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-INITIAL-NODE-CONDITION-BLOCK a2294ddca25d7344 -->
+
+For the remaining `E7_4--E7_3` node quotient, the actual principal frame now
+clears every unit denominator before any ideal computation.  On the 54-column
+seed, `g*f/t^9` is regular exactly when the common-cleared numerator lies in
+`t^17 R`; this is a single actual-chart divisibility problem, not the raw
+ten-generator singular-model power ideal.
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_e7_4_3_principal_node_clearing.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-e7-4-3-principal-node-clearing.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-E7-4-3-PRINCIPAL-NODE-CLEARING dc4e3312a8eb2cef -->
+
+This does not make `R/(t^17)` finite.  In the actual completed chart,
+`t^17=Z^51Y^68*unit`, so that quotient has Krull dimension one.  The finite
+corner jet `(Z^51,Y^68)` has length 3468 but is not product divisibility;
+the following guard records that distinction before a residual quotient is
+introduced.
+
+```bash
+sage -python elkies-k3/scripts/certify_h92_q8_e7_4_3_node_divisibility_geometry.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-e7-4-3-node-divisibility-geometry.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-E7-4-3-NODE-DIVISIBILITY-GEOMETRY e287ab81214ee330 -->
+
+There is now a chart-faithful modular prototype for this principal condition.
+It clears the certified units, discards only terms already in the actual
+ideal `(t^17)`, and reduces each ambient numerator by a local (`ds` order)
+standard basis of `(surface,t^17)`.  Its finite coordinate space is the
+image of the supplied ambient—not a finite quotient of `R/(t^17)` and not
+the rectangular corner jet.  On the 54-column seed modulo `43`, the image
+has 17,612 displayed normal monomials and rank 54 (zero kernel); this is
+consistent with, but weaker in scope than, the existing generic-E7 rejection.
+
+```bash
+sage -python elkies-k3/scripts/probe_h92_q8_e7_4_3_principal_node_local_normal_form_modp.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-e7-4-3-principal-node-local-normal-form-mod-43.json
+```
+
+The script accepts an enlarged endpoint ambient as well.  It remains a
+single-prime local regression until the corresponding characteristic-zero
+and all-chart overlap maps are supplied.
+
+For the pinned 54-column seed, the full-rank local image now has the standard
+good-reduction consequence: after primitive normalization, any nonzero
+characteristic-zero kernel vector would reduce to a nonzero vector in the
+mod-43 local kernel.  The source denominators and every common-clearing
+factor are units at the node modulo `43`, so this yields an exact bounded
+injectivity certificate for the actual principal node condition:
+
+```bash
+sage -python elkies-k3/scripts/certify_h92_q8_e7_4_3_principal_node_good_reduction.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-e7-4-3-principal-node-good-reduction.json
+```
+
+```text
+H92Q8E743LOCALGOODREDUCTION|prime=43|ambient=54|rank=54|kernel=0|status=PASS_EXACT_Q8_E7_4_3_PRINCIPAL_NODE_INJECTIVITY
+```
+
+This rejects that seed at this one genuine resolved node even without its
+already-known smooth and generic-E7 obstructions. It does not give a
+characteristic-zero coordinate matrix, an enlarged-ambient result, or the
+remaining node/overlap maps.
+
+The same normalized chord calculation is now replayed on all six actual E7
+edge charts, including the cancellation-sensitive `E7_2--E7_5` node.  It
+records the local formula for `m`, the unit multiplier, and the common
+principal target `(t^17)` for each chart; it does not replace the remaining
+local images or their overlap compatibility with component data.
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_e7_node_principal_clearings.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-e7-node-principal-clearings.json
+```
+
+```text
+H92Q8E7NODECLEARINGS|nodes=6|ambient=54|T=17|K=6|status=PASS_EXACT_Q8_E7_NODE_PRINCIPAL_CLEARINGS
+```
+
+The shared modular evaluator consumes this atlas directly.  These two runs
+check the ordinary and cancellation-sensitive node charts without replacing
+their actual local quotients by finite jets.  Both have full 54-column rank
+modulo `43` (the normal-form coordinate counts are chart-dependent).
+
+```bash
+sage -python elkies-k3/scripts/probe_h92_q8_e7_node_principal_local_normal_form_modp.sage \
+  --chart E7_4--E7_3 \
+  --output artifacts/local/elkies-k3-h92-q8-e7-4-3-generic-node-local-mod-43.json
+sage -python elkies-k3/scripts/probe_h92_q8_e7_node_principal_local_normal_form_modp.sage \
+  --chart E7_2--E7_5 \
+  --output artifacts/local/elkies-k3-h92-q8-e7-2-5-generic-node-local-mod-43.json
+```
+
+```text
+H92Q8E7NODELOCALNF|chart=E7_4--E7_3|prime=43|ambient=54|rows=15636|rank=54|kernel=0|status=EXPERIMENTAL_MODULAR_Q8_E7_NODE_LOCAL_NORMAL_FORM_BLOCK
+H92Q8E7NODELOCALNF|chart=E7_2--E7_5|prime=43|ambient=54|rows=23553|rank=54|kernel=0|status=EXPERIMENTAL_MODULAR_Q8_E7_NODE_LOCAL_NORMAL_FORM_BLOCK
+```
+
+These are finite-ambient modular regressions only. The remaining four nodes,
+the characteristic-zero residual matrices, and the overlap-compatible common
+kernel still need to be compiled.
+
+Two actual sibling-chart overlap maps are now pinned as well.  The U- and
+Z-chart pairs `E7_1--E7_4`/`E7_4--E7_3` and
+`E7_3--E7_7`/`E7_7--E7_2` are related on `Z != 0` by
+`(Z,U,Y) -> (U*Z,1/Z,Y/Z)`.  The checker verifies the old H92 `(t,x,y)`
+pullbacks identically across each overlap and records the q8 Cartier-frame
+ratios `Y^4/Z^2` and `1/Y`.
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_e7_sibling_chart_transitions.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-e7-sibling-chart-transitions.json
+```
+
+These are transition functions, not units or an already-complete Čech
+matrix. The other component overlaps and finite residual maps remain needed.
+
+At the recorded prime `43`, the actual all-component generic screen is
+stronger still: it includes marked `E7_5` with its audited exact order
+`ord(m)=0`.  The successive unique-live leading-coefficient cuts have rank
+16 on the 16-dimensional smooth kernel, so the `r=10` envelope has no
+survivor before a node condition is used. This remains a one-prime bounded
+generic-point obstruction, not a characteristic-zero or complete-chart
+result.
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_all_component_generic_conditions.sage \
+  --ambient artifacts/generated-results/elkies-k3-h92-q8-extra10-endpoint-rr-ambient.json \
+  --output artifacts/generated-results/elkies-k3-h92-q8-all-component-generic-conditions-extra10.json
+sage -python elkies-k3/scripts/probe_h92_q8_all_component_generic_module_modp.sage \
+  --kernel artifacts/generated-results/elkies-k3-h92-q8-smooth-principal-parts-mod-43-extra10.json \
+  --conditions artifacts/generated-results/elkies-k3-h92-q8-all-component-generic-conditions-extra10.json \
+  --output artifacts/generated-results/elkies-k3-h92-q8-all-component-generic-module-mod-43-extra10.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-EXTRA10-ALL-COMPONENT-GENERIC-OBSTRUCTION 8fa617eca25dc71e -->
+
+The first non-singleton residue compiler goes beyond those valuation rows on
+the actual `E7_4--E7_3` and `E7_3--E7_7` charts. It normalizes the components
+using their resolved surface equations, substitutes the audited chord, and
+splits each normal-order group by its component-parameter power.  On the
+`r=10` ambient this yields 124 exact rows on `E7_4` and 131 on `E7_7`; after
+reduction mod `43`, their restriction to the 16-dimensional smooth kernel
+has rank 16 and no survivor, without using a node condition.
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_e7_4_7_generic_residue_rows.sage \
+  --conditions artifacts/generated-results/elkies-k3-h92-q8-all-component-generic-conditions-extra10.json \
+  --output artifacts/generated-results/elkies-k3-h92-q8-e7-4-7-generic-residue-rows-extra10.json
+sage -python elkies-k3/scripts/probe_h92_q8_e7_4_7_generic_residues_modp.sage \
+  --residues artifacts/generated-results/elkies-k3-h92-q8-e7-4-7-generic-residue-rows-extra10.json \
+  --output artifacts/generated-results/elkies-k3-h92-q8-e7-4-7-generic-residues-mod-43-extra10.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-E7-4-7-GENERIC-RESIDUES f4ea27a1597d3df7 -->
+<!-- status-consumer: EC-K3-H3-Q8-EXTRA10-E7-4-7-GENERIC-RESIDUE-OBSTRUCTION 146750c0a39e15f4 -->
+
+The conic components are also now evaluated in their actual coordinate rings,
+not through an inferred component parameter. Setting `Z=0` on the
+`E7_2--E7_5` and `E7_3--E7_6` charts gives exact rings
+`QQ(U,Y)/(F(0,U,Y))`; the compiler clears a stated common denominator and
+reduces there. The 54-column seed gives 228 E7₅ rows and 57 E7₆ rows. At E7₅
+the calculation retains the audited `x-x(P1)` and `y-y(P1)` cancellation.
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_e7_5_6_generic_residue_rows.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-e7-5-6-generic-residue-rows.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-E7-5-6-GENERIC-RESIDUES de263de56ed5c2dc -->
+
+The complete generic-component residue cover now uses actual chart equations
+on all seven E7 components of the base 54-column seed.  The Y-branch solver
+covers E7₁--E7₃ (including the E7₂ entrance cancellation), the conic rings
+cover E7₅--E7₆, and the existing normalized charts cover E7₄ and E7₇.  Their
+exact residue rows total 983, distributed as
+`(42,189,391,42,228,57,34)` in component order.  This certifies generic
+component conditions only; boundary nodes, the marked branch, overlaps, and
+global kernel computation remain outstanding.
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_e7_1_3_generic_residue_rows.sage
+sage -python elkies-k3/scripts/derive_h92_q8_e7_5_6_generic_residue_rows.sage
+sage -python elkies-k3/scripts/derive_h92_q8_e7_4_7_generic_residue_rows.sage
+sage -python elkies-k3/scripts/certify_h92_q8_all_generic_e7_residue_cover.sage
+```
+
+Expected terminal status from the final command:
+
+```text
+H92Q8ALLGENERICRESIDUES|components=7|rows=983|status=PASS_EXACT_Q8_ALL_GENERIC_E7_RESIDUE_COVER
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-ALL-GENERIC-E7-RESIDUE-COVER e3ea804e3f4dd675 -->
+
+The compiler now stacks those 983 resolved-chart residue rows with the 22
+singleton generic-component rows. On the least 54-column endpoint ambient,
+the resulting 1005-by-54 characteristic-zero matrix has rank 54 and zero
+kernel. Thus this bounded ambient cannot contain the q8 pencil even before
+node, marked-branch, overlap, E8, or smooth conditions are imposed; this does
+not rule out the required enlarged ambient.
+
+```bash
+sage -python elkies-k3/scripts/compile_h92_q8_generic_component_conditions.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-generic-component-condition-block.json
+```
+
+```text
+H92Q8GENERICCOMPONENTBLOCK|ambient=54|singleton_rows=22|residue_rows=983|rank=54|kernel=0|status=PASS_EXACT_Q8_GENERIC_COMPONENT_CONDITION_BLOCK
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-GENERIC-COMPONENT-CONDITION-BLOCK 33693f196eb13091 -->
+
+The first enlargement with a nonzero smooth modular kernel is also rejected
+exactly. At `extra_h_power=7`, the 558-column smooth block has rank 556 mod
+43; all 2,487 generic E7 rows restrict with rank two to that kernel. The
+stacked good reduction is therefore full column rank, proving that the
+characteristic-zero smooth-plus-generic block has zero kernel for this
+particular enlargement.
+
+```bash
+mkdir -p artifacts/local/elkies-k3/q8-extra7
+sage -python elkies-k3/scripts/assemble_h92_q8_endpoint_rr_ambient.sage --extra-h-power 7 --output artifacts/local/elkies-k3/q8-extra7/endpoint.json
+sage -python elkies-k3/scripts/derive_h92_q8_all_component_generic_conditions.sage --ambient artifacts/local/elkies-k3/q8-extra7/endpoint.json --output artifacts/local/elkies-k3/q8-extra7/generic-template.json
+sage -python elkies-k3/scripts/derive_h92_q8_e7_1_3_generic_residue_rows.sage --conditions artifacts/local/elkies-k3/q8-extra7/generic-template.json --output artifacts/local/elkies-k3/q8-extra7/e7-1-3-rows.json
+sage -python elkies-k3/scripts/derive_h92_q8_e7_4_7_generic_residue_rows.sage --conditions artifacts/local/elkies-k3/q8-extra7/generic-template.json --output artifacts/local/elkies-k3/q8-extra7/e7-4-7-rows.json
+sage -python elkies-k3/scripts/derive_h92_q8_e7_5_6_generic_residue_rows.sage --conditions artifacts/local/elkies-k3/q8-extra7/generic-template.json --output artifacts/local/elkies-k3/q8-extra7/e7-5-6-rows.json
+sage -python elkies-k3/scripts/certify_h92_q8_all_generic_e7_residue_cover.sage --y-branch artifacts/local/elkies-k3/q8-extra7/e7-1-3-rows.json --simple artifacts/local/elkies-k3/q8-extra7/e7-4-7-rows.json --conics artifacts/local/elkies-k3/q8-extra7/e7-5-6-rows.json --allow-enlarged --output artifacts/local/elkies-k3/q8-extra7/generic-cover.json
+sage -python elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage --extra-h-power 7 --include-kernel --output artifacts/local/elkies-k3/q8-extra7/smooth-mod43.json
+sage -python elkies-k3/scripts/certify_h92_q8_smooth_generic_good_reduction.sage --ambient artifacts/local/elkies-k3/q8-extra7/endpoint.json --template artifacts/local/elkies-k3/q8-extra7/generic-template.json --cover artifacts/local/elkies-k3/q8-extra7/generic-cover.json --smooth-probe artifacts/local/elkies-k3/q8-extra7/smooth-mod43.json --output artifacts/generated-results/elkies-k3-h92-q8-extra7-smooth-generic-good-reduction.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-EXTRA7-SMOOTH-GENERIC-REJECTION e0e67861f23d4f24 -->
+
+The next endpoint-compatible enlargement is rejected by the same exact
+good-reduction calculation. At `extra_h_power=8`, the 630-column smooth block
+has rank 624 mod 43, and the complete generic E7 cover has rank six on its
+six-dimensional kernel. Consequently the stacked smooth-plus-generic block is
+full rank modulo 43 and therefore over QQ. This rejects this bounded ambient
+only; node, marked-branch, overlap, and E8 conditions are still not a full q8
+compiler.
+
+```bash
+mkdir -p artifacts/local/elkies-k3/q8-extra8
+sage -python elkies-k3/scripts/assemble_h92_q8_endpoint_rr_ambient.sage --extra-h-power 8 --output artifacts/local/elkies-k3/q8-extra8/endpoint.json
+sage -python elkies-k3/scripts/derive_h92_q8_all_component_generic_conditions.sage --ambient artifacts/local/elkies-k3/q8-extra8/endpoint.json --output artifacts/local/elkies-k3/q8-extra8/generic-template.json
+sage -python elkies-k3/scripts/derive_h92_q8_e7_1_3_generic_residue_rows.sage --conditions artifacts/local/elkies-k3/q8-extra8/generic-template.json --output artifacts/local/elkies-k3/q8-extra8/e7-1-3-rows.json
+sage -python elkies-k3/scripts/derive_h92_q8_e7_4_7_generic_residue_rows.sage --conditions artifacts/local/elkies-k3/q8-extra8/generic-template.json --output artifacts/local/elkies-k3/q8-extra8/e7-4-7-rows.json
+sage -python elkies-k3/scripts/derive_h92_q8_e7_5_6_generic_residue_rows.sage --conditions artifacts/local/elkies-k3/q8-extra8/generic-template.json --output artifacts/local/elkies-k3/q8-extra8/e7-5-6-rows.json
+sage -python elkies-k3/scripts/certify_h92_q8_all_generic_e7_residue_cover.sage --y-branch artifacts/local/elkies-k3/q8-extra8/e7-1-3-rows.json --simple artifacts/local/elkies-k3/q8-extra8/e7-4-7-rows.json --conics artifacts/local/elkies-k3/q8-extra8/e7-5-6-rows.json --allow-enlarged --output artifacts/local/elkies-k3/q8-extra8/generic-cover.json
+sage -python elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage --extra-h-power 8 --include-kernel --output artifacts/local/elkies-k3/q8-extra8/smooth-mod43.json
+sage -python elkies-k3/scripts/certify_h92_q8_smooth_generic_good_reduction.sage --ambient artifacts/local/elkies-k3/q8-extra8/endpoint.json --template artifacts/local/elkies-k3/q8-extra8/generic-template.json --cover artifacts/local/elkies-k3/q8-extra8/generic-cover.json --smooth-probe artifacts/local/elkies-k3/q8-extra8/smooth-mod43.json --output artifacts/generated-results/elkies-k3-h92-q8-extra8-smooth-generic-good-reduction.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-EXTRA8-SMOOTH-GENERIC-REJECTION 0d66d55dd153a589 -->
+
+Applying the same eight-command sequence with every `q8-extra8` path and
+`extra_h_power 8` replaced by `q8-extra9` and `extra_h_power 9` produces the
+702-column endpoint certificate
+`artifacts/generated-results/elkies-k3-h92-q8-extra9-smooth-generic-good-reduction.json`.
+Here the smooth rank is 690 mod 43 and the generic restriction has rank 12 on
+the 12-dimensional smooth kernel, again giving full column rank. This is a
+separate bounded-ambient rejection, not a q8 pencil or a replacement for
+node/overlap conditions.
+
+<!-- status-consumer: EC-K3-H3-Q8-EXTRA9-SMOOTH-GENERIC-REJECTION 8035f0b465038995 -->
+
+The same full resolved E7 cover rejects the next `r=11` envelope: its
+846-column smooth block has rank 822 modulo `43`, and the generic restriction
+has rank 24 on the 24-dimensional smooth kernel.  Thus the stacked matrix is
+full rank modulo `43` and over `QQ`.  Use the preceding eight-command sequence
+with every `q8-extra9` path and `extra_h_power 9` replaced by `q8-extra11` and
+`extra_h_power 11`; the final certificate is
+`artifacts/generated-results/elkies-k3-h92-q8-extra11-smooth-generic-good-reduction.json`.
+This remains a bounded ambient rejection before the node, marked-branch,
+overlap, and E8 layers.
+
+<!-- status-consumer: EC-K3-H3-Q8-EXTRA11-SMOOTH-GENERIC-REJECTION c755bb2f34d68f41 -->
+
+At the marked smooth point `-P1` on that same chart, the q8 generic basis is
+normalized using the corrected q6 generator `Z*m/t=unit/W`.  The `m^b`
+generators have local forms `m^b/t^6`, and the `x*m^b` generators have forms
+`x*m^b/t^8`.  After multiplying by `Z^6*Y^5`, each is a unit times
+`(Z*m/t)^b` in the ninth q6 marked module:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_actual_e7_marked_frame.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-actual-e7-marked-frame.json
+```
+
+Expected terminal status:
+
+```text
+H92Q8ACTUALE7MARKED|basis=18|m_denominator=6|xm_denominator=8|status=PASS_EXACT_Q8_ACTUAL_E7_MARKED_FRAME
+```
+
+This is an actual marked-chart frame and records pole orders through nine;
+the other E7 edges and global compatibility are still required.
+
+Combining those marked-E7 bounds with the actual E8 floors gives the first
+finite source-q8 coefficient envelope.  For each generic `x^a*m^b`, it uses
+all `u^i/h(u)^k` with the least `k` satisfying
+`e8_floor <= i <= 4*k + e7_pole`; the resulting endpoint-compatible ambient
+has dimension 54:
+
+```bash
+sage -python elkies-k3/scripts/assemble_h92_q8_endpoint_rr_ambient.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-endpoint-rr-ambient.json
+```
+
+Expected terminal status:
+
+```text
+H92Q8ENDPOINTAMBIENT|families=18|basis=54|h_degree=4|status=PASS_EXACT_Q8_ENDPOINT_RR_AMBIENT
+```
+
+This is a bounded seed for resolved-condition compilation, not a completed
+global Riemann--Roch space: it still needs the smooth P1.O collision block
+and the remaining actual E7 gluing conditions.
+
+The actual smooth block rules out this endpoint seed by itself.  Its
+1080-by-54 principal-part map has full column rank modulo `43` (which already
+certifies characteristic-zero injectivity), so no nonzero element of the
+54-term seed is smooth at all four collisions.  This is a bounded obstruction
+to the seed, not to the q8 pencil: the endpoint construction may require a
+larger global envelope.
+
+```bash
+sage -python elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage \
+  --prime 43 --output artifacts/generated-results/elkies-k3-h92-q8-smooth-principal-parts-mod-43.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-ENDPOINT-SMOOTH-OBSTRUCTION d629df5d215d009c -->
+
+For the same nested enlargement, replace every family denominator power `k`
+by `k+r` and include all `e8_floor <= i <= 4*(k+r)+e7_pole`.  With the
+corrected marked frame, `r=4` has 342 columns and smooth rank 342 modulo
+`43`, hence no modular kernel.  The earlier 335-column, three-dimensional
+kernel used the invalid `m/t` normalization and is withdrawn.  This is a
+bounded modular obstruction, not a characteristic-zero pencil.
+
+```bash
+sage -python elkies-k3/scripts/assemble_h92_q8_endpoint_rr_ambient.sage \
+  --extra-h-power 4 \
+  --output artifacts/generated-results/elkies-k3-h92-q8-extra4-endpoint-rr-ambient.json
+sage -python elkies-k3/scripts/probe_h92_q8_smooth_principal_parts_modp.sage \
+  --prime 43 --extra-h-power 4 --include-kernel \
+  --output artifacts/generated-results/elkies-k3-h92-q8-smooth-principal-parts-mod-43-extra4.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-ENLARGED-ENDPOINT-SMOOTH-KERNEL 3a89050b29ce8eac -->
+
+For this corrected `r=4`, zero-E7-slack ambient, every one of the 342
+generators satisfies the exact actual marked-E7 inequality.  Hence the
+marked chart adds no row; only the other five E7 edges remain to be compiled.
+
+```bash
+sage -python elkies-k3/scripts/certify_h92_q8_enlarged_endpoint_marked_e7.sage \
+  --extra-h-power 4 --extra-e7-pole 0 \
+  --output artifacts/generated-results/elkies-k3-h92-q8-extra4-marked-e7-cover.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-EXTRA4-MARKED-E7-COVER 5deb19aa922fd23b -->
+
+The same enlargement automatically retains the E8 cover: `h(0)=1` and the
+certified lower `u`-floor for every generic monomial is unchanged.
+
+```bash
+sage -python elkies-k3/scripts/certify_h92_q8_enlarged_endpoint_e8_cover.sage \
+  --extra-h-power 4 --output artifacts/generated-results/elkies-k3-h92-q8-extra4-e8-cover.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-EXTRA4-E8-COVER 135e8e4da32d56b6 -->
+
+The smooth collision contribution is now bounded exactly in the q6 saturated
+coordinate `q=(m-y(P1)/x(P1))/h`.  Substituting `m=r/h+h*q` into all 54 seed
+generators produces no principal part beyond `h^-15`, so this records the
+finite jet range for the future smooth condition matrix:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_smooth_collision_principal_parts.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-smooth-collision-principal-parts.json
+```
+
+Expected terminal status:
+
+```text
+H92Q8SMOOTHPROFILE|ambient=54|max_h_pole=15|q_frame=actual_q6_saturated|status=PASS_EXACT_Q8_SMOOTH_COLLISION_PRINCIPAL_PARTS
+```
+
+The resulting smooth condition block is now compiled exactly, rather than
+only screened modulo a prime.  It imposes every negative `h`-principal-part
+coefficient in the actual `(q,X)` frame.  The `1080 x 54` template has full
+column rank modulo `43`; because reduction cannot increase rank, this proves
+that its characteristic-zero rank is 54 and that the least endpoint seed has
+no smooth-compatible direction.  This obstructs this seed locally only; a
+larger endpoint ambient and the remaining resolved E7 conditions are still
+needed for the q8 hop.
+
+```bash
+sage -python elkies-k3/scripts/compile_h92_q8_smooth_principal_parts_exact.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-smooth-principal-parts-exact.json
+```
+
+Expected terminal status:
+
+```text
+H92Q8SMOOTHEXACT|extra_h=0|rows=1080|columns=54|rank=54|kernel=0|status=PASS_EXACT_Q8_SMOOTH_PRINCIPAL_PART_CONDITION_BLOCK
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-SMOOTH-PRINCIPAL-PART-CONDITION-BLOCK 61134238f1d0a1e9 -->
+
+On its own this profile does not prescribe the allowed q8 submodule or assert
+a condition rank; the following line-bundle calculation supplies that local
+identification. No q8 pencil is asserted.
+
+The exact collision algebra itself can now be regularized before specifying
+that submodule.  With `h=Z4`, set `q=(m-y(P1)/x(P1))/h` and `X=h^2*x`.
+Clearing the chord equation and removing its marked `x=x(P1)` factor gives a
+monic quadratic in `X` whose coefficients are regular at every smooth
+`h=0` collision:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_smooth_collision_frame.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-smooth-collision-frame.json
+```
+
+Expected terminal status:
+
+```text
+H92Q8SMOOTHFRAME|quadratic_in_X=1|frame=18|h_regular=1|status=PASS_EXACT_Q8_SMOOTH_COLLISION_FRAME
+```
+
+The source-nef divisor has no vertical modification at these smooth fibres:
+its E7/E8 vertical terms are supported at the additive fibres, while its
+`-11F` term can be represented away from a chosen collision.  Thus the
+regular `q,X` frame is the actual q8 line-bundle lattice, and all negative
+`h` principal parts in it must vanish.
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_smooth_line_bundle_lattice.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-smooth-line-bundle-lattice.json
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-SMOOTH-LINE-BUNDLE-LATTICE ff9a1b9fc931b46e -->
+
+The matching source-E8 target is:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_e8_local_target.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-e8-local-target.json
+```
+
+Expected terminal status:
+
+```text
+H92Q8E8TARGET|degrees=1,0,0,0,0,0,0,0|twist=-4,-5,-7,-10,-8,-6,-4,-2|status=PASS_EXACT_Q8_E8_SOURCE_TARGET
+```
+
+It identifies the cycle in both source and actual blow-up-chart component
+orders; its finite chart-level quotient map remains to be derived.
+<!-- status-consumer: EC-K3-H3-Q8-E8-TARGET c363f6cb827b36d8 -->
+
+The complete E8 local module is then derived by:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_e8_complete_module.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-e8-complete-module.json
+```
+
+Expected terminal status:
+
+```text
+H92Q8E8MODULE|ideal=(u2,X,Y)|colength=2|status=PASS_EXACT_Q8_E8_COMPLETE_MODULE
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-E8-MODULE 74327bc7489c8ca6 -->
+
+The generic q8 basis now has exact, per-generator E8 coefficient floors in
+the same resolved chart.  For `m^b` the floor is `u^(11+2b)`; for `x*m^b` it
+is `u^(13+2b)`.  These follow from `m=u^-2*Q` with `Q` a unit and the actual
+module `u^9*(u^2,X,Y)`:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q8_e8_ambient_weights.sage \
+  --output artifacts/generated-results/elkies-k3-h92-q8-e8-ambient-weights.json
+```
+
+Expected terminal status:
+
+```text
+H92Q8E8WEIGHTS|basis=18|m_floors=11..29|xm_floors=13..27|status=PASS_EXACT_Q8_E8_AMBIENT_WEIGHTS
+```
+
+These are only the E8 end of a q8 coefficient ambient; the non-anti-nef E7
+gluing and the remaining finite conditions still have to be imposed before a
+global kernel or a child equation is claimed.
+
+For a bounded modular reconnaissance on the exact `E8+E6` q6 child, the
+following first checks that the selected prime retains the additive-fibre
+valuations, then exhausts the polynomial `x` ansatz on an explicitly chosen
+`IV*` branch:
+
+```bash
+sage -python elkies-k3/scripts/search_h92_q6_child_polynomial_sections_modp.sage \
+  --prime 43 --max-x-degree 4 --require-iv-star-singular \
+  --output artifacts/generated-results/elkies-k3-h92-q6-child-polynomial-sections-mod-43-iv-singular.json
+```
+
+Expected terminal status:
+
+```text
+H92Q6CHILDPOLYMOD|prime=43|x_degree=4|iv_singular=1|x_space=79507|sections=6|status=EXPERIMENTAL_EXHAUSTIVE_MODULAR_ANSATZ
+```
+
+This is a finite-field, bounded-ansatz experiment; it does not prove a
+characteristic-zero nonexistence statement or produce the q8 pencil.
+
+The six mod-43 residues have coefficient-Jacobian rank 11, so they must not
+be treated as unique p-adic lifts.  The diagnostic is:
+
+```bash
+sage -python elkies-k3/scripts/lift_h92_q6_child_polynomial_sections.sage \
+  --input artifacts/generated-results/elkies-k3-h92-q6-child-polynomial-sections-mod-43-iv-singular.json \
+  --precision 64 \
+  --output artifacts/generated-results/elkies-k3-h92-q6-child-polynomial-sections-hensel-43.json
+```
+
+It reports `records=6|isolated=0` and is experimental p-adic evidence only.
+
+The reusable exact neighbor engine packages the supplied-wall reduction,
+primitive `U`-split, root/MW minimization, transported component classes, and
+versioned certificate separately from the global chamber proof.  Rebuild its
+pinned q80 and H3 certificates, then replay the engine regressions with:
+
+```bash
+sage elkies-k3/scripts/build_exact_neighbor_engine_certificates.sage
+sage elkies-k3/scripts/verify_exact_neighbor_engine.sage
+```
+
+The certificate builder refuses to replace changed output.  Its q80 and H3
+artifacts have payload hashes
+`b6ea4c8b421cf782bf57416935b20bb3424118c0531a236c4e66548bc07895c3` and
+`093a0e1b7fe8a1ef93cfffaa758762ae7e7ff83278ee74d439e1ff4ea052c01c`.
+The full `D13/MW4` to rootless/MW17 replay below uses this same engine for its
+eleven primitive splits while retaining the pinned root-adapted chain bases.
 
 The deterministic lateral q=4 presentation from this D13 frame is certified
 with:
@@ -611,6 +1950,210 @@ plus bisection parity.  Its terminal status is
 `PASS_H3_MW10_TO_ROOTLESS_NEF`.  Thus the entire displayed path is an exact
 nef degree-two geometric chain.  Characteristic-zero equation execution
 remains a separate gate.
+
+The H3 q8-child finite additive gate also has a characteristic-zero q-frame
+calculation; it proves the six finite rows have rank six, leaving only the
+global infinity condition:
+
+```bash
+sage elkies-k3/scripts/derive_h92_q6_child_q8_finite_q_module_qq.sage
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-FINITE-Q-MODULE-QQ 0f92a696bd388284 -->
+
+The same q frame has a degree-96 generic vertical pole divisor. A global
+coefficient pair must either make `B` vanish there or use matching base
+principal parts in `C`; this is an exact global gluing condition, not part of
+the finite II*/IV* module.
+
+```bash
+sage elkies-k3/scripts/derive_h92_q6_child_q8_q_pole_profile.sage
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-FRAME-POLE-PROFILE 630fc1a6919245a6 -->
+
+The modular principal-part normalization has degree `95` at primes `43` and
+`59` (normalized infinity order one); prime `53` has a leading-coefficient
+drop and is excluded for that reconstruction step.
+
+```bash
+sage elkies-k3/scripts/probe_h92_q6_child_q8_q_pole_normalization_modp.sage --prime 43
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-FRAME-NORMALIZATION-MODULAR 014b3fa1ce2ee000 -->
+
+The exact degree-95 correction can be reconstructed without a raw rational
+extended Euclidean computation by deterministic modular CRT.  The following
+is a resumable *work checkpoint*, not a certificate: it saves the 96 CRT
+residues locally and deliberately suppresses expensive interim rational
+reconstruction.  A later run may add `--resume-from` with a larger total
+`--maximum-primes`; only a run ending `PASS_EXACT_CRT_PRINCIPAL_PART_NORMALIZATION`
+has performed the withheld-prime and exact `QQ[T]` checks.
+
+```bash
+sage elkies-k3/scripts/reconstruct_h92_q6_child_q8_q_pole_normalization_crt.sage \
+  --prime-bits 31 --maximum-primes 4000 --minimum-primes 5000 \
+  --reconstruct-every 5000 \
+  --checkpoint artifacts/local/h92-q8-q-normalizer-4000.crt.json \
+  --output artifacts/local/h92-q8-q-normalizer-4000.json
+```
+
+The exact continuation is pinned at 4,600 good 31-bit primes: it reconstructs
+the degree-95 correction, passes five incorporated and three withheld modular
+checks, then proves its `QQ[T]` congruence exactly.  Replay the certificate:
+
+```bash
+sage -python elkies-k3/scripts/reconstruct_h92_q6_child_q8_q_pole_normalization_crt.sage \
+  --prime-bits 31 --maximum-primes 4600 --minimum-primes 4001 \
+  --reconstruct-every 100 --accepted-validation-primes 5
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-FRAME-NORMALIZATION-CRT 6897f3bf4c77916b -->
+
+The resulting `q_regular=q-R/Nx` has no generic base vertical pole and has
+infinity order one.  This is a coordinate-frame certificate, not yet the
+transformed q8 local-module assembly:
+
+```bash
+sage -python elkies-k3/scripts/certify_h92_q6_child_q8_q_regular_frame.sage
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-FRAME a5653fc9b19d383d -->
+
+Transport the complete finite II*/IV* q8 module to this normalized frame:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_q_regular_finite_module_qq.sage
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-FINITE-MODULE c3cf25526f88a738 -->
+
+The same `q_regular` coordinate also trivializes the complete smooth
+degree-46 collision module: the transition identities between
+`a=A/h^2,b=B/h` and `C+B*q_regular` are exact in `QQ[T]_(h)`, so there is no
+additional `h`-supported quotient row in this frame.
+
+```bash
+sage -python elkies-k3/scripts/certify_h92_q6_child_q8_q_regular_smooth_frame.sage
+```
+
+Expected terminal status:
+
+```text
+H92Q6CHILDQREGSMOOTH|h_degree=46|smooth_quotient=0|status=PASS_EXACT_Q_REGULAR_SMOOTH_FRAME
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-SMOOTH-FRAME 347facd34f447b47 -->
+
+The canonical normalized finite-generator ratio, and the bounded monomial
+family with `0 <= d,e <= 4`, fail the necessary genus-one branch-degree
+screen at every constant level in `GF(43)` and `GF(59)`:
+
+```bash
+sage -python elkies-k3/scripts/probe_h92_q6_child_q8_q_regular_generator_modp.sage \
+  --prime 43 --max-a-monomial-degree 4 --max-b-monomial-degree 4
+sage -python elkies-k3/scripts/probe_h92_q6_child_q8_q_regular_generator_modp.sage \
+  --prime 59 --max-a-monomial-degree 4 --max-b-monomial-degree 4
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-GENERATOR-OBSTRUCTION 1ff6ca93c1f415bc -->
+
+The unnormalized diagonal finite-module ratio is ruled out by its modular
+branch degree (484 rather than 4):
+
+```bash
+sage elkies-k3/scripts/probe_h92_q6_child_q8_diagonal_candidate_modp.sage --prime 43 --v 1
+```
+
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-DIAGONAL-PENCIL-OBSTRUCTION 95d5cca4502539a6 -->
+
+The independent rational Q80 route now has an exact unmarked first `q=4`
+equation step. It proves that the reconstructed coefficient curve lies on the
+first-child collision divisor, yielding `I5*+I5+8I1` over `QQ(u)`:
+
+```bash
+sage elkies-k3/scripts/verify_q80_unmarked_first_q4_collision_qq.sage
+```
+
+This does not provide its later pencils, a rootless equation, or bisections.
+
+<!-- status-consumer: EC-K3-Q80-UNMARKED-FIRST-Q4-COLLISION d18185784da1e93d -->
+
+## Rootless MW17 bisection-orbit enumeration
+
+The rootless `U + (-M)` lattice has a finite degree-two quotient under section
+translation. The following exact lattice calculation enumerates its
+section-nonnegative `(-2)` bisection-class orbits and writes their canonical
+norm-10 representatives in the pinned `rank17_gram` coordinates:
+
+```bash
+sage -python elkies-k3/scripts/enumerate_rootless_bisection_orbits.sage \
+  --output artifacts/generated-results/elkies-k3-rootless-bisection-orbits.json \
+  --orbits-output artifacts/generated-results/elkies-k3-rootless-bisection-orbits.tsv
+```
+
+It is a completed lattice quotient, not a bounded height search. In any
+rootless K3 realization, the section-nonnegative classes are consequently
+irreducible smooth rational bisections; their equations are still absent. It
+does not yet construct branch divisors, quadratic extensions, collision
+hashes, or a rank-19 family; see
+[`elkies-k3/BISECTION_COLLISION_SEARCH.md`](elkies-k3/BISECTION_COLLISION_SEARCH.md).
+<!-- status-consumer: EC-K3-BISECT-ORBIT 81da2fd80c3623b6 -->
+
+Compute the exact low-intersection priority frontier among the exported
+rootless bisection orbits:
+
+```bash
+sage -python elkies-k3/scripts/analyze_rootless_bisection_disjoint_frontier.sage \
+  --output artifacts/generated-results/elkies-k3-rootless-bisection-disjoint-frontier.json
+```
+
+Expected terminal status:
+
+```text
+R17BISECTDISJOINT|orbits=39120|norm4_masks=1311|active_masks=1311|pairs=8895801|status=PASS_EXACT_ROOTLESS_BISECTION_DISJOINT_FRONTIER
+```
+
+The count ranks later equation-level work only; equal quadratic extensions and
+their anti-invariant heights remain unknown.
+<!-- status-consumer: EC-K3-BISECT-DISJOINT-FRONTIER c7ad7497253ac0b3 -->
+
+The equation-friendlier alternate q80 q6 endpoint has a distinct rootless
+rank-17 lattice.  Its short shell is too large for PARI's materialized vector
+list, so the same enumerator uses an LLL-reduced streaming traversal with
+exact leaf norms and a PARI count-only cross-check.  It finds 39,147
+section-nonnegative bisection orbits and 805,466 unoriented minimal
+representatives.  This second quotient remains lattice-only: its available
+equation is finite-field and no characteristic-zero branch cover is claimed.
+
+```bash
+sage -python elkies-k3/scripts/enumerate_rootless_bisection_orbits.sage \
+  --frame-artifact artifacts/generated-results/q80-alternate-fifth-q6-rootless-transport.json
+```
+
+<!-- status-consumer: EC-K3-ALT-BISECT-ORBIT eca5fc0bfee5038d -->
+
+The exact squareclass and collision-height gate has a synthetic regression:
+
+```bash
+.venv/bin/python elkies-k3/scripts/hash_bisection_extensions.py --self-test \
+  --require-collision-heights --require-rank-at-least 19
+```
+
+It rejects split or non-rational-bisection covers, incomplete orbit tables,
+duplicate declared translation-orbit records even with inconsistent branch
+data, missing anti-invariant height data, and indefinite declared height
+lattices.
+Its optional complete-coverage mode also accepts the alternate q80 table when
+the input declares its rootless-frame artifact and uses
+`alternate_rank17_w`; both coverage modes are part of the regression.
+For a collision with smooth branch fibres and rootless double pullback, it can
+instead compute the anti-invariant height form from exact lifted-section
+intersections using `2*(P_i.tau(P_j)-P_i.P_j)`, checking the diagonal values
+`P_i^2=-4` and `P_i.tau(P_i)=2`. No actual rootless cover is supplied by this
+test.
+
+<!-- status-consumer: EC-K3-BISECT-EXTENSION-PROTOCOL 64e387993e523b0b -->
 
 ## Fast structural check
 

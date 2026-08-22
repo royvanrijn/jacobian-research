@@ -1,0 +1,13 @@
+{
+  "base_field": "Q(s,T)",
+  "conclusion": "both selected affine sections lie in the generic visible subgroup on this component",
+  "method": "recursive Mestre square root, triangular selected ordinates, covariant map, and exact short-Weierstrass addition",
+  "not_established": [
+    "relations for every other two-section component",
+    "the visible subgroup's generic rank or saturation",
+    "pair intersections or a Shioda Gram matrix"
+  ],
+  "relation": "P1=V(0,-)+V(1,+)+V(r3,-)+V(r4,-)+V(r5,+)",
+  "second_relation": "P2=-V(0,-)-V(1,+)-V(r3,-)",
+  "status": "exact generic visible-subgroup relations verified"
+}

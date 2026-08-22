@@ -1,0 +1,135 @@
+{
+  "Fermigier_normalization": {
+    "exact_root_set_match": true,
+    "parameters": [
+      "-3",
+      "-8/3"
+    ],
+    "source_affine_normalization": "alpha_1 -> 0, alpha_2 -> 1",
+    "target_roots": [
+      0,
+      8,
+      58,
+      77,
+      85,
+      102
+    ]
+  },
+  "classifications": [
+    {
+      "base_classification": "Fermigier two-parameter base family at u=-3, v=-8/3",
+      "rank_seven_pair_count": 12,
+      "reconstructed_section_count": 8,
+      "roots": [
+        0,
+        8,
+        58,
+        77,
+        85,
+        102
+      ]
+    },
+    {
+      "base_classification": "previous rational two-section component base curve",
+      "rank_seven_pair_count": 4,
+      "reconstructed_section_count": 5,
+      "roots": [
+        0,
+        10,
+        73,
+        81,
+        98,
+        116
+      ]
+    },
+    {
+      "base_classification": "previous rational two-section component base curve",
+      "rank_seven_pair_count": 4,
+      "reconstructed_section_count": 5,
+      "roots": [
+        0,
+        5,
+        71,
+        72,
+        121,
+        127
+      ]
+    },
+    {
+      "base_classification": "previous rational two-section component base curve",
+      "rank_seven_pair_count": 4,
+      "reconstructed_section_count": 5,
+      "roots": [
+        0,
+        7,
+        79,
+        81,
+        128,
+        137
+      ]
+    },
+    {
+      "base_classification": "previous rational two-section component base curve",
+      "rank_seven_pair_count": 4,
+      "reconstructed_section_count": 5,
+      "roots": [
+        0,
+        12,
+        89,
+        98,
+        121,
+        142
+      ]
+    },
+    {
+      "base_classification": "previous rational two-section component base curve",
+      "rank_seven_pair_count": 4,
+      "reconstructed_section_count": 5,
+      "roots": [
+        0,
+        15,
+        103,
+        121,
+        128,
+        161
+      ]
+    },
+    {
+      "base_classification": "previous rational two-section component base curve",
+      "rank_seven_pair_count": 4,
+      "reconstructed_section_count": 5,
+      "roots": [
+        0,
+        6,
+        97,
+        98,
+        169,
+        176
+      ]
+    },
+    {
+      "base_classification": "previous rational two-section component base curve",
+      "rank_seven_pair_count": 2,
+      "reconstructed_section_count": 3,
+      "roots": [
+        0,
+        15,
+        119,
+        128,
+        169,
+        193
+      ]
+    }
+  ],
+  "conclusion": "every rank-seven base point recovered in this bounded multi-prime replay lies on a previously known rank-13 base family",
+  "input": "artifacts/generated-results/elliptic_mestre_two_section_seed_screen_max200_all_primes.json",
+  "input_scope": "only nonsingular projected sections recovered from the union over the listed small primes are covered; no absence statement is made",
+  "not_established": [
+    "that every recovered labelled pair has a generic visible-subgroup relation",
+    "pair intersections, Shioda data, saturation, or independence at the Fermigier point",
+    "any absence statement outside the bounded reconstruction screen"
+  ],
+  "rank_seven_base_point_count": 8,
+  "rank_seven_pair_count": 38,
+  "status": "exact base-point classification of multi-prime rank-seven seeds completed"
+}

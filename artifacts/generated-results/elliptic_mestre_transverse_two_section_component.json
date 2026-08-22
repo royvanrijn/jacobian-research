@@ -1,0 +1,44 @@
+{
+  "admissible_exact_sample_count": 301,
+  "all_recursive_residuals_vanish": true,
+  "leading_invariant": "D=16*(z-36)^2/9",
+  "normalized_root_seed": [
+    0,
+    1,
+    7,
+    8,
+    9,
+    11
+  ],
+  "not_established": [
+    "section intersections at infinity or a Shioda Gram matrix",
+    "saturation or independence from the existing generic rank-13 subgroup",
+    "generic rank at least 14"
+  ],
+  "open_parameter_locus": "z != 30,36",
+  "parameter": "z=c1+35",
+  "residual_degree_bounds_after_substitution": {
+    "E0": 300,
+    "E1": 250,
+    "E2": 200,
+    "M": 20
+  },
+  "seed_finite_intersection": {
+    "base_parameter": "T=-4",
+    "common_affine_quartic_point": [
+      "33/5",
+      "936/25"
+    ],
+    "conclusion": "the selected signed sections meet at this finite seed fibre",
+    "not_established": "the full section intersection number, infinity contributions, or Shioda corrections",
+    "square_identities_checked_at_distinct_T_values": 7
+  },
+  "split_six_root_parameterization": {
+    "all_root_product_coefficients_match": true,
+    "cleared_coefficient_degree_bound": 12,
+    "conic": "w^2=z^2-36*z+36, with z=12*(r+3)/(1-r^2), w=6+r*z",
+    "sample_count": 38
+  },
+  "status": "exact rational two-section component identity verified",
+  "triangular_ordinate_conclusion": "both cubic ordinates are rational on z != 30,36"
+}

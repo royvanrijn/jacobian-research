@@ -177,7 +177,7 @@ output = {
         "r": str(r),
         "b_coefficients": [str(value) for value in b_coefficients],
         "discriminant": "4*A^3+27*B^2=T^7*(T-1)^4*R5(T)",
-        "residual_degree": 5,
+        "residual_degree": int(5),
         "generic_fibers": ["I1* at T=0", "I4 at T=1", "IV* at T=infinity"],
         "generic_root_lattice": "D5+A3+E6",
     },
@@ -194,7 +194,7 @@ output = {
     },
     "checks": {
         "universal_discriminant_remainder": "0",
-        "universal_residual_degree": 5,
+        "universal_residual_degree": int(5),
         "specialized_open_coefficients_nonzero": {
             place: True for place in specialized_open
         },

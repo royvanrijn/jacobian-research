@@ -1,0 +1,65 @@
+{
+  "Mestre_parameter": "1",
+  "conclusion": "both affine points lie in the visible subgroup at each of the two audited conjugate-slope seeds",
+  "not_established": [
+    "a generic relation on the local conjugate-slope germ",
+    "a global component identity, saturation, heights, intersections, or a Shioda Gram matrix",
+    "generic rank at least 14"
+  ],
+  "prime_bound": 251,
+  "records": [
+    {
+      "augmented_mod3_rank": 9,
+      "exact_affine_relations": [
+        "P1=-V7+V8-V12",
+        "P2=-V7+V8+V11"
+      ],
+      "integer_roots": [
+        0,
+        7,
+        127,
+        128,
+        225,
+        233
+      ],
+      "lines": [
+        [
+          "233/113",
+          "-97/113"
+        ],
+        [
+          "233/113",
+          "97/113"
+        ]
+      ],
+      "visible_mod3_rank": 9
+    },
+    {
+      "augmented_mod3_rank": 9,
+      "exact_affine_relations": [
+        "P1=-V7+V8-V12",
+        "P2=V7-V8-V11"
+      ],
+      "integer_roots": [
+        0,
+        21,
+        151,
+        169,
+        200,
+        239
+      ],
+      "lines": [
+        [
+          "239/109",
+          "-31/109"
+        ],
+        [
+          "239/109",
+          "31/109"
+        ]
+      ],
+      "visible_mod3_rank": 9
+    }
+  ],
+  "status": "conjugate-slope seed visible-subgroup audit completed"
+}

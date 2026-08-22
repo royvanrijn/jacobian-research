@@ -1,0 +1,140 @@
+{
+  "all_reconstructed_section_count": 8,
+  "conclusion": "the seed has a smooth rank-seven local two-section branch; at T=2 and T=3 every reconstructed companion separately raises the exact mod-3 quotient rank above the visible subgroup",
+  "exact_jacobian_rank": 7,
+  "exact_pivot_columns": [
+    "c1",
+    "c2",
+    "c3",
+    "c4",
+    "x01",
+    "x11",
+    "x02"
+  ],
+  "expanded_two_section_residual_materialized": false,
+  "finite_field_tangent_checks": [
+    {
+      "jacobian_rank": 7,
+      "prime": 29
+    },
+    {
+      "jacobian_rank": 7,
+      "prime": 41
+    }
+  ],
+  "finite_reduction_quotient_ranks": [
+    {
+      "T": "1",
+      "visible_mod3_rank": 10,
+      "visible_plus_eight_companions_mod3_rank": 10,
+      "visible_plus_individual_companion_mod3_ranks": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "T": "2",
+      "visible_mod3_rank": 10,
+      "visible_plus_eight_companions_mod3_rank": 11,
+      "visible_plus_individual_companion_mod3_ranks": [
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11
+      ]
+    },
+    {
+      "T": "3",
+      "visible_mod3_rank": 10,
+      "visible_plus_eight_companions_mod3_rank": 11,
+      "visible_plus_individual_companion_mod3_ranks": [
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11
+      ]
+    },
+    {
+      "T": "-1",
+      "visible_mod3_rank": 10,
+      "visible_plus_eight_companions_mod3_rank": 10,
+      "visible_plus_individual_companion_mod3_ranks": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    }
+  ],
+  "formal_c1_slice": {
+    "all_seven_residuals_vanish_through_order": true,
+    "order": 12,
+    "parameter": "c1=-739/17+t",
+    "recognized_c2_jet": "c2=201815/289-(1621/51)*t+(13/36)*t^2"
+  },
+  "hensel_continuations": [
+    {
+      "all_seven_residuals_zero_mod_prime_power": true,
+      "free_coordinate": "c1",
+      "modulus": 707281,
+      "precision": 4,
+      "prime": 29
+    },
+    {
+      "all_seven_residuals_zero_mod_prime_power": true,
+      "free_coordinate": "c1",
+      "modulus": 2825761,
+      "precision": 4,
+      "prime": 41
+    }
+  ],
+  "not_established": [
+    "a rational parameterization or a global component identity",
+    "generic independence, saturation, a Shioda Gram matrix, or a generic rank-14 claim"
+  ],
+  "roots": [
+    0,
+    17,
+    136,
+    161,
+    207,
+    235
+  ],
+  "selected_pair_finite_intersection": {
+    "T": "-4223/544",
+    "primitive_quartic_point": [
+      "4417/544",
+      "63251685/544"
+    ],
+    "scope_limit": "this is not a full section-intersection or Shioda calculation"
+  },
+  "selected_sections": [
+    [
+      "-68/27",
+      "-37/27"
+    ],
+    [
+      "3067/459",
+      "-5/27"
+    ]
+  ],
+  "status": "diameter-235 eight-companion local continuation recorded"
+}

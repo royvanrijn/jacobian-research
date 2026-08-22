@@ -1,0 +1,339 @@
+{
+  "base_field": "Q(u)(T), on v=(u^2+u+2)/u",
+  "basis": [
+    "the first eleven primitive visible sections",
+    "the Fermigier affine section",
+    "the reconstructed second affine section"
+  ],
+  "combined_exact_rank_over_F3": 13,
+  "conclusion": "the two affine sections, together with eleven visible sections, are independent over Q(u)(T); the Fermigier two-section component has generic Mordell-Weil rank at least 13",
+  "descent_modulus": 3,
+  "not_established": [
+    "generic rank at least 14 or independence from any separate rank-13 family",
+    "saturation, pair intersections beyond the recorded finite meeting, or a Shioda Gram matrix",
+    "a generic rank upper bound"
+  ],
+  "quotient_probes": [
+    {
+      "T": "1",
+      "combined_rank_after_probe": 1,
+      "finite_group_order": 30,
+      "quotient_rows": [
+        [
+          0,
+          0,
+          1,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          0
+        ]
+      ],
+      "reduction_prime": 23,
+      "u": "-5"
+    },
+    {
+      "T": "1",
+      "combined_rank_after_probe": 2,
+      "finite_group_order": 54,
+      "quotient_rows": [
+        [
+          0,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          0,
+          2,
+          0,
+          2,
+          2,
+          1
+        ]
+      ],
+      "reduction_prime": 41,
+      "u": "-5"
+    },
+    {
+      "T": "1",
+      "combined_rank_after_probe": 3,
+      "finite_group_order": 72,
+      "quotient_rows": [
+        [
+          2,
+          0,
+          1,
+          2,
+          2,
+          1,
+          2,
+          2,
+          2,
+          2,
+          0,
+          2,
+          1
+        ]
+      ],
+      "reduction_prime": 59,
+      "u": "-5"
+    },
+    {
+      "T": "1",
+      "combined_rank_after_probe": 4,
+      "finite_group_order": 78,
+      "quotient_rows": [
+        [
+          2,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          2,
+          1
+        ]
+      ],
+      "reduction_prime": 67,
+      "u": "-5"
+    },
+    {
+      "T": "1",
+      "combined_rank_after_probe": 5,
+      "finite_group_order": 84,
+      "quotient_rows": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          2,
+          2,
+          2,
+          1,
+          2,
+          2,
+          1,
+          0
+        ]
+      ],
+      "reduction_prime": 71,
+      "u": "-5"
+    },
+    {
+      "T": "1",
+      "combined_rank_after_probe": 6,
+      "finite_group_order": 87,
+      "quotient_rows": [
+        [
+          1,
+          2,
+          2,
+          1,
+          2,
+          2,
+          2,
+          1,
+          2,
+          0,
+          2,
+          2,
+          0
+        ]
+      ],
+      "reduction_prime": 73,
+      "u": "-5"
+    },
+    {
+      "T": "1",
+      "combined_rank_after_probe": 7,
+      "finite_group_order": 81,
+      "quotient_rows": [
+        [
+          1,
+          0,
+          0,
+          2,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          2
+        ]
+      ],
+      "reduction_prime": 79,
+      "u": "-5"
+    },
+    {
+      "T": "1",
+      "combined_rank_after_probe": 8,
+      "finite_group_order": 99,
+      "quotient_rows": [
+        [
+          2,
+          2,
+          0,
+          0,
+          2,
+          1,
+          2,
+          1,
+          1,
+          0,
+          2,
+          2,
+          1
+        ]
+      ],
+      "reduction_prime": 83,
+      "u": "-5"
+    },
+    {
+      "T": "1",
+      "combined_rank_after_probe": 9,
+      "finite_group_order": 117,
+      "quotient_rows": [
+        [
+          0,
+          2,
+          0,
+          2,
+          1,
+          2,
+          2,
+          0,
+          2,
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "reduction_prime": 103,
+      "u": "-5"
+    },
+    {
+      "T": "1",
+      "combined_rank_after_probe": 10,
+      "finite_group_order": 120,
+      "quotient_rows": [
+        [
+          2,
+          2,
+          1,
+          2,
+          1,
+          2,
+          2,
+          1,
+          0,
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "reduction_prime": 109,
+      "u": "-5"
+    },
+    {
+      "T": "2",
+      "combined_rank_after_probe": 11,
+      "finite_group_order": 48,
+      "quotient_rows": [
+        [
+          1,
+          2,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          2,
+          0,
+          1,
+          2,
+          2
+        ]
+      ],
+      "reduction_prime": 37,
+      "u": "-5"
+    },
+    {
+      "T": "1",
+      "combined_rank_after_probe": 12,
+      "finite_group_order": 54,
+      "quotient_rows": [
+        [
+          2,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          2
+        ]
+      ],
+      "reduction_prime": 41,
+      "u": "-3"
+    },
+    {
+      "T": "1",
+      "combined_rank_after_probe": 13,
+      "finite_group_order": 12,
+      "quotient_rows": [
+        [
+          2,
+          1,
+          1,
+          2,
+          1,
+          0,
+          2,
+          1,
+          2,
+          0,
+          1,
+          2,
+          2
+        ]
+      ],
+      "reduction_prime": 7,
+      "u": "-1/2"
+    }
+  ],
+  "section_count": 13,
+  "status": "generic rank-at-least-13 finite-reduction certificate verified",
+  "torsion_exclusion": {
+    "T": "1",
+    "conclusion": "the specialization has no rational 3-torsion; smooth specialization excludes generic rational 3-torsion",
+    "finite_group_order": 28,
+    "reduction_prime": 19,
+    "u": "-5"
+  }
+}

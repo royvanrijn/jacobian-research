@@ -1,0 +1,25 @@
+{
+  "candidate_root_sha256": "491b40510be505206dddf53568683f484fcb042c9c8cec27066c82834b06befc",
+  "diameter_band": [
+    216,
+    220
+  ],
+  "hensel_precision": 8,
+  "hensel_primes": [
+    7,
+    11,
+    13,
+    17
+  ],
+  "multi_companion_records": [],
+  "nonreflection_square_leading_candidate_count": 222,
+  "obstruction_zero_record_count": 23648,
+  "prime_strategy": "union of exact reconstructed sections over every declared prime",
+  "rank_seven_hits": [],
+  "rank_seven_pair_count": 0,
+  "reconstructed_section_count_histogram": {
+    "0": 222
+  },
+  "scope": "a bounded new-diameter screen; no absence claim outside this band or section chart",
+  "status": "exact post-max-200 transverse seed band screen completed"
+}

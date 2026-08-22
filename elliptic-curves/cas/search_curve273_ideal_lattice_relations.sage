@@ -15,6 +15,7 @@ factorization.
 from __future__ import annotations
 
 import argparse
+import json
 from heapq import heappush, heapreplace
 from itertools import combinations, product
 from math import gcd, lcm
@@ -252,8 +253,20 @@ def main():
     parser.add_argument(
         "--target",
         action="append",
-        required=True,
         help="degree-one target ideal q:theta_residue (repeatable)",
+    )
+    parser.add_argument(
+        "--target-plan",
+        type=Path,
+        help=(
+            "JSON plan from analyze_curve273_relation_pool.py; select one "
+            "ranked ideal with --target-plan-rank"
+        ),
+    )
+    parser.add_argument(
+        "--target-plan-rank",
+        type=int,
+        help="one-based target rank to select from --target-plan",
     )
     parser.add_argument("--factor-base-bound", type=int, default=1_000_000)
     parser.add_argument("--radius", type=int, default=18)
@@ -300,7 +313,36 @@ def main():
     )
     args = parser.parse_args()
 
-    targets = tuple(parse_ideal(text) for text in args.target)
+    if args.target_plan:
+        if args.target:
+            parser.error("--target and --target-plan are mutually exclusive")
+        if args.target_plan_rank is None or args.target_plan_rank < 1:
+            parser.error("--target-plan requires a positive --target-plan-rank")
+        try:
+            plan = json.loads(args.target_plan.read_text())
+        except (OSError, json.JSONDecodeError) as error:
+            parser.error(f"cannot read --target-plan: {error}")
+        if plan.get("schema") != "elliptic-curves.bnf-free-large-prime-target-plan.v1":
+            parser.error("--target-plan has an unsupported schema")
+        selected = [
+            item
+            for item in plan.get("targets", [])
+            if item.get("rank") == args.target_plan_rank
+        ]
+        if len(selected) != 1:
+            parser.error(
+                f"--target-plan contains no unique rank {args.target_plan_rank}"
+            )
+        target = selected[0]
+        raw_targets = [
+            f"{target['rational_prime']}:{target['residue']}"
+        ]
+    else:
+        if args.target_plan_rank is not None:
+            parser.error("--target-plan-rank requires --target-plan")
+        raw_targets = args.target or []
+
+    targets = tuple(parse_ideal(text) for text in raw_targets)
     if len(targets) < 1 or len(set(targets)) != len(targets):
         raise SystemExit("target prime-ideal labels must be nonempty and distinct")
 

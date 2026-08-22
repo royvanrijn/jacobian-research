@@ -1,0 +1,3273 @@
+{
+  "candidate_batch_count": 167,
+  "candidate_count": 167,
+  "candidate_offset": 0,
+  "exact_transverse_pair_count": 38,
+  "hensel_precision": 8,
+  "input": "artifacts/generated-results/elliptic_mestre_root_tuple_scale_max200.json",
+  "prime_order": [
+    7,
+    11,
+    13,
+    17
+  ],
+  "records": [
+    {
+      "leading_invariant": "9216",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        5,
+        70,
+        76,
+        90,
+        101
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "700569/256",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        8,
+        59,
+        62,
+        90,
+        101
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "1192464/625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        10,
+        64,
+        77,
+        78,
+        101
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "27225/16",
+      "reconstructed_sections": [
+        [
+          "-58/11",
+          "-17/11"
+        ],
+        [
+          "-58/11",
+          "17/11"
+        ],
+        [
+          "247/44",
+          "-3/11"
+        ],
+        [
+          "247/44",
+          "3/11"
+        ],
+        [
+          "373/44",
+          "-7/11"
+        ],
+        [
+          "373/44",
+          "7/11"
+        ],
+        [
+          "867/88",
+          "-5/11"
+        ],
+        [
+          "867/88",
+          "5/11"
+        ]
+      ],
+      "roots": [
+        0,
+        8,
+        58,
+        77,
+        85,
+        102
+      ],
+      "transverse_rank_seven_pairs": [
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "-58/11",
+              "-17/11"
+            ],
+            [
+              "247/44",
+              "-3/11"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "-58/11",
+              "-17/11"
+            ],
+            [
+              "247/44",
+              "3/11"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "-58/11",
+              "17/11"
+            ],
+            [
+              "247/44",
+              "-3/11"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "-58/11",
+              "17/11"
+            ],
+            [
+              "247/44",
+              "3/11"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "247/44",
+              "-3/11"
+            ],
+            [
+              "373/44",
+              "-7/11"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "247/44",
+              "-3/11"
+            ],
+            [
+              "373/44",
+              "7/11"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "247/44",
+              "-3/11"
+            ],
+            [
+              "867/88",
+              "-5/11"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "247/44",
+              "-3/11"
+            ],
+            [
+              "867/88",
+              "5/11"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "247/44",
+              "3/11"
+            ],
+            [
+              "373/44",
+              "-7/11"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "247/44",
+              "3/11"
+            ],
+            [
+              "373/44",
+              "7/11"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "247/44",
+              "3/11"
+            ],
+            [
+              "867/88",
+              "-5/11"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "247/44",
+              "3/11"
+            ],
+            [
+              "867/88",
+              "5/11"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "leading_invariant": "17424/25",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        15,
+        59,
+        69,
+        77,
+        102
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "22014864/14641",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        11,
+        62,
+        69,
+        85,
+        103
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "176400/169",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        13,
+        62,
+        75,
+        77,
+        103
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "82301184/923521",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        31,
+        52,
+        54,
+        70,
+        103
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "345744",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        1,
+        92,
+        98,
+        99,
+        106
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "11209104/2401",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        7,
+        69,
+        75,
+        93,
+        106
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "59049/16",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        8,
+        71,
+        81,
+        89,
+        107
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "20358144/14641",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        11,
+        58,
+        60,
+        94,
+        107
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "4161600/14641",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        22,
+        58,
+        68,
+        75,
+        107
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "4210704/60025",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        35,
+        54,
+        57,
+        69,
+        107
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "49280400/83521",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        17,
+        62,
+        75,
+        78,
+        108
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "379456/729",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        18,
+        62,
+        76,
+        77,
+        109
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "3888784/14641",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        22,
+        56,
+        58,
+        85,
+        109
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "144",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        28,
+        56,
+        60,
+        77,
+        109
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "55353600/130321",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        19,
+        59,
+        62,
+        90,
+        112
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "1183744/6561",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        27,
+        59,
+        68,
+        76,
+        112
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "7683984/625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        5,
+        82,
+        91,
+        99,
+        113
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "63504/25",
+      "reconstructed_sections": [
+        [
+          "116/53",
+          "-17/53"
+        ],
+        [
+          "116/53",
+          "17/53"
+        ],
+        [
+          "1827/265",
+          "0"
+        ],
+        [
+          "3389/265",
+          "-73/53"
+        ],
+        [
+          "3389/265",
+          "73/53"
+        ]
+      ],
+      "roots": [
+        0,
+        10,
+        73,
+        81,
+        98,
+        116
+      ],
+      "transverse_rank_seven_pairs": [
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "116/53",
+              "-17/53"
+            ],
+            [
+              "1827/265",
+              "0"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "116/53",
+              "17/53"
+            ],
+            [
+              "1827/265",
+              "0"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "1827/265",
+              "0"
+            ],
+            [
+              "3389/265",
+              "-73/53"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "1827/265",
+              "0"
+            ],
+            [
+              "3389/265",
+              "73/53"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "leading_invariant": "2601/49",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        42,
+        59,
+        66,
+        68,
+        117
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "12616704/2401",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        7,
+        71,
+        74,
+        108,
+        118
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "144288144/923521",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        31,
+        64,
+        77,
+        78,
+        122
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "186624/361",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        19,
+        64,
+        66,
+        102,
+        123
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "9809424/83521",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        34,
+        63,
+        66,
+        87,
+        124
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "115600",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        2,
+        104,
+        110,
+        119,
+        127
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "278784/25",
+      "reconstructed_sections": [
+        [
+          "127/61",
+          "-49/61"
+        ],
+        [
+          "127/61",
+          "49/61"
+        ],
+        [
+          "4191/305",
+          "0"
+        ],
+        [
+          "8077/305",
+          "-71/61"
+        ],
+        [
+          "8077/305",
+          "71/61"
+        ]
+      ],
+      "roots": [
+        0,
+        5,
+        71,
+        72,
+        121,
+        127
+      ],
+      "transverse_rank_seven_pairs": [
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "127/61",
+              "-49/61"
+            ],
+            [
+              "4191/305",
+              "0"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "127/61",
+              "49/61"
+            ],
+            [
+              "4191/305",
+              "0"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "4191/305",
+              "0"
+            ],
+            [
+              "8077/305",
+              "-71/61"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "4191/305",
+              "0"
+            ],
+            [
+              "8077/305",
+              "71/61"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "leading_invariant": "186624/625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        25,
+        67,
+        72,
+        97,
+        127
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "9809424/625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        5,
+        92,
+        99,
+        116,
+        128
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "38416/9",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        9,
+        86,
+        98,
+        107,
+        128
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "1073296/5625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        30,
+        67,
+        74,
+        91,
+        128
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "9801/16",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        20,
+        74,
+        85,
+        99,
+        130
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "230400/529",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        23,
+        73,
+        85,
+        96,
+        131
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "35721/400",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        40,
+        67,
+        77,
+        81,
+        131
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "125888400/279841",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        23,
+        74,
+        85,
+        99,
+        133
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "451584",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        1,
+        97,
+        98,
+        132,
+        134
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "131769",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        2,
+        112,
+        121,
+        123,
+        134
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "144",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        35,
+        70,
+        84,
+        85,
+        134
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "4528384/81",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        3,
+        107,
+        114,
+        126,
+        136
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "6739216/5625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        15,
+        74,
+        77,
+        118,
+        136
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "43264/625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        45,
+        69,
+        78,
+        82,
+        136
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "589824",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        1,
+        121,
+        128,
+        129,
+        137
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "480249/16",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        4,
+        103,
+        110,
+        126,
+        137
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "331776/49",
+      "reconstructed_sections": [
+        [
+          "137/65",
+          "-47/65"
+        ],
+        [
+          "137/65",
+          "47/65"
+        ],
+        [
+          "4932/455",
+          "0"
+        ],
+        [
+          "9409/455",
+          "-79/65"
+        ],
+        [
+          "9409/455",
+          "79/65"
+        ]
+      ],
+      "roots": [
+        0,
+        7,
+        79,
+        81,
+        128,
+        137
+      ],
+      "transverse_rank_seven_pairs": [
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "137/65",
+              "-47/65"
+            ],
+            [
+              "4932/455",
+              "0"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "137/65",
+              "47/65"
+            ],
+            [
+              "4932/455",
+              "0"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "4932/455",
+              "0"
+            ],
+            [
+              "9409/455",
+              "-79/65"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "4932/455",
+              "0"
+            ],
+            [
+              "9409/455",
+              "79/65"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "leading_invariant": "409600/81",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        9,
+        94,
+        110,
+        112,
+        137
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "8982009/28561",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        26,
+        71,
+        74,
+        108,
+        137
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "57600",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        3,
+        108,
+        114,
+        130,
+        139
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "3312400/729",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        9,
+        86,
+        91,
+        125,
+        139
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "47775744/14641",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        11,
+        92,
+        108,
+        112,
+        139
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "1046529/10000",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        40,
+        71,
+        77,
+        93,
+        139
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "156816/625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        30,
+        75,
+        86,
+        99,
+        140
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "291600/121",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        11,
+        74,
+        75,
+        129,
+        141
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "6718464/15625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        25,
+        79,
+        96,
+        99,
+        141
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "23716/9",
+      "reconstructed_sections": [
+        [
+          "142/65",
+          "-23/65"
+        ],
+        [
+          "142/65",
+          "23/65"
+        ],
+        [
+          "5467/780",
+          "0"
+        ],
+        [
+          "5077/390",
+          "-89/65"
+        ],
+        [
+          "5077/390",
+          "89/65"
+        ]
+      ],
+      "roots": [
+        0,
+        12,
+        89,
+        98,
+        121,
+        142
+      ],
+      "transverse_rank_seven_pairs": [
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "142/65",
+              "-23/65"
+            ],
+            [
+              "5467/780",
+              "0"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "142/65",
+              "23/65"
+            ],
+            [
+              "5467/780",
+              "0"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "5467/780",
+              "0"
+            ],
+            [
+              "5077/390",
+              "-89/65"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "5467/780",
+              "0"
+            ],
+            [
+              "5077/390",
+              "89/65"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "leading_invariant": "291600/361",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        19,
+        79,
+        85,
+        117,
+        142
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "2732409/625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        10,
+        97,
+        114,
+        116,
+        143
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "127449/256",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        24,
+        81,
+        98,
+        102,
+        143
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "177635584/390625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        25,
+        81,
+        98,
+        102,
+        144
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "608400",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        1,
+        118,
+        120,
+        143,
+        146
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "4276624/81",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        3,
+        97,
+        99,
+        141,
+        146
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "12702096/625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        5,
+        104,
+        110,
+        135,
+        146
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "63680400/28561",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        13,
+        88,
+        95,
+        126,
+        146
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "16000000/21609",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        21,
+        85,
+        100,
+        110,
+        146
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "14400",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        6,
+        106,
+        115,
+        132,
+        147
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "4875264/83521",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        51,
+        74,
+        78,
+        92,
+        147
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "1016064/625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        15,
+        87,
+        94,
+        126,
+        148
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "56070144/390625",
+      "reconstructed_sections": [
+        [
+          "703/375",
+          "-1/15"
+        ],
+        [
+          "703/375",
+          "1/15"
+        ],
+        [
+          "928/375",
+          "-7/15"
+        ],
+        [
+          "928/375",
+          "7/15"
+        ],
+        [
+          "3628/375",
+          "-5/3"
+        ],
+        [
+          "3628/375",
+          "5/3"
+        ]
+      ],
+      "roots": [
+        0,
+        25,
+        57,
+        104,
+        116,
+        148
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "4161600/2401",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        14,
+        82,
+        85,
+        132,
+        149
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "2025",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        14,
+        91,
+        100,
+        126,
+        149
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "15241216/21609",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        21,
+        82,
+        88,
+        122,
+        149
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "156950784/279841",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        23,
+        81,
+        87,
+        120,
+        149
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "59049/256",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        32,
+        77,
+        81,
+        113,
+        149
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "36864/49",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        21,
+        85,
+        94,
+        120,
+        150
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "131769/16",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        8,
+        107,
+        121,
+        129,
+        151
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "3625216/2025",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        15,
+        92,
+        102,
+        126,
+        151
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "7907344/6561",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        18,
+        92,
+        111,
+        114,
+        151
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "1218816/625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        15,
+        97,
+        115,
+        120,
+        153
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "143712144/130321",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        19,
+        93,
+        111,
+        117,
+        154
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "73984/729",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        45,
+        79,
+        85,
+        104,
+        155
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "1210000/81",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        6,
+        105,
+        110,
+        145,
+        156
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "176400",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        2,
+        128,
+        133,
+        150,
+        157
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "2350089/625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        10,
+        83,
+        84,
+        146,
+        157
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "47089/81",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        24,
+        86,
+        93,
+        126,
+        157
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "7750656/15625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        25,
+        83,
+        87,
+        128,
+        157
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "267289/1296",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        36,
+        83,
+        94,
+        110,
+        157
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "65025/361",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        38,
+        83,
+        100,
+        102,
+        157
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "166464",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        2,
+        121,
+        124,
+        153,
+        158
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "63680400/14641",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        11,
+        106,
+        120,
+        133,
+        158
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "345744/625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        25,
+        88,
+        98,
+        123,
+        158
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "46240000/6561",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        9,
+        111,
+        125,
+        136,
+        159
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "1327104/625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        15,
+        101,
+        117,
+        128,
+        159
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "7144929/4096",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        16,
+        97,
+        108,
+        132,
+        159
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "65536/9",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        9,
+        113,
+        128,
+        137,
+        161
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "495616/225",
+      "reconstructed_sections": [
+        [
+          "161/73",
+          "-7/73"
+        ],
+        [
+          "161/73",
+          "7/73"
+        ],
+        [
+          "7084/1095",
+          "0"
+        ],
+        [
+          "13073/1095",
+          "-103/73"
+        ],
+        [
+          "13073/1095",
+          "103/73"
+        ]
+      ],
+      "roots": [
+        0,
+        15,
+        103,
+        121,
+        128,
+        161
+      ],
+      "transverse_rank_seven_pairs": [
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "161/73",
+              "-7/73"
+            ],
+            [
+              "7084/1095",
+              "0"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "161/73",
+              "7/73"
+            ],
+            [
+              "7084/1095",
+              "0"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "7084/1095",
+              "0"
+            ],
+            [
+              "13073/1095",
+              "-103/73"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "7084/1095",
+              "0"
+            ],
+            [
+              "13073/1095",
+              "103/73"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "leading_invariant": "2458624/9801",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        33,
+        82,
+        84,
+        126,
+        161
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "18421264/164025",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        45,
+        82,
+        87,
+        111,
+        161
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "1860496/23409",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        51,
+        82,
+        93,
+        99,
+        161
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "627264/625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        20,
+        92,
+        99,
+        136,
+        163
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "144",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        42,
+        84,
+        91,
+        114,
+        163
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "17424",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        4,
+        122,
+        143,
+        147,
+        166
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "91929744/28561",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        13,
+        107,
+        119,
+        141,
+        166
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "435600/529",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        23,
+        98,
+        120,
+        121,
+        166
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "9048064/15625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        25,
+        89,
+        94,
+        136,
+        166
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "385641/784",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        28,
+        94,
+        115,
+        117,
+        166
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "210681/625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        30,
+        84,
+        85,
+        135,
+        166
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "23425600/83521",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        34,
+        89,
+        100,
+        121,
+        166
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "2640625/11664",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        36,
+        86,
+        91,
+        125,
+        166
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "27878400/2401",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        7,
+        106,
+        110,
+        156,
+        167
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "435600/289",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        17,
+        94,
+        99,
+        145,
+        167
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "385641/400",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        20,
+        89,
+        92,
+        144,
+        167
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "321843600/707281",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        29,
+        94,
+        115,
+        117,
+        167
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "22924944/83521",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        34,
+        88,
+        95,
+        126,
+        167
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "43191184/6561",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        9,
+        102,
+        106,
+        155,
+        168
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "327184/81",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        12,
+        111,
+        124,
+        143,
+        168
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "5290000/729",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        9,
+        109,
+        115,
+        155,
+        170
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "5760000/28561",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        39,
+        89,
+        96,
+        125,
+        171
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "944784",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        1,
+        154,
+        162,
+        163,
+        172
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "87011584/28561",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        13,
+        101,
+        106,
+        154,
+        172
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "14641/9",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        18,
+        106,
+        121,
+        139,
+        172
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "256000000/279841",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        23,
+        103,
+        125,
+        128,
+        173
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "331776/1369",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        37,
+        91,
+        99,
+        128,
+        173
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "812934144/17850625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        65,
+        87,
+        96,
+        99,
+        173
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "180633600/83521",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        17,
+        117,
+        131,
+        136,
+        175
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "207360000/279841",
+      "reconstructed_sections": [
+        [
+          "5/3",
+          "-1/21"
+        ],
+        [
+          "5/3",
+          "1/21"
+        ],
+        [
+          "304/69",
+          "-19/21"
+        ],
+        [
+          "304/69",
+          "19/21"
+        ],
+        [
+          "619/69",
+          "-31/21"
+        ],
+        [
+          "619/69",
+          "31/21"
+        ]
+      ],
+      "roots": [
+        0,
+        23,
+        93,
+        128,
+        133,
+        175
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "132496/9",
+      "reconstructed_sections": [
+        [
+          "176/85",
+          "-71/85"
+        ],
+        [
+          "176/85",
+          "71/85"
+        ],
+        [
+          "4004/255",
+          "0"
+        ],
+        [
+          "7753/255",
+          "-97/85"
+        ],
+        [
+          "7753/255",
+          "97/85"
+        ]
+      ],
+      "roots": [
+        0,
+        6,
+        97,
+        98,
+        169,
+        176
+      ],
+      "transverse_rank_seven_pairs": [
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "176/85",
+              "-71/85"
+            ],
+            [
+              "4004/255",
+              "0"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "176/85",
+              "71/85"
+            ],
+            [
+              "4004/255",
+              "0"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "4004/255",
+              "0"
+            ],
+            [
+              "7753/255",
+              "-97/85"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "4004/255",
+              "0"
+            ],
+            [
+              "7753/255",
+              "97/85"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "leading_invariant": "18147600/28561",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        26,
+        97,
+        105,
+        142,
+        176
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "144",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        45,
+        90,
+        95,
+        126,
+        176
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "441",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        30,
+        95,
+        102,
+        140,
+        177
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "5475600/14641",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        33,
+        98,
+        117,
+        125,
+        177
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "8179600/81",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        3,
+        146,
+        156,
+        165,
+        178
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "135424/81",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        18,
+        106,
+        115,
+        152,
+        179
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "193766400/130321",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        19,
+        106,
+        116,
+        150,
+        179
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "321489/1936",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        44,
+        93,
+        102,
+        126,
+        179
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "16384/49",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        35,
+        99,
+        120,
+        124,
+        180
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "331776/529",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        23,
+        89,
+        124,
+        147,
+        181
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "16744464/28561",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        26,
+        92,
+        93,
+        154,
+        181
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "97344/361",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        38,
+        98,
+        117,
+        124,
+        181
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "202500/2401",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        56,
+        92,
+        100,
+        117,
+        181
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "1936",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        18,
+        116,
+        138,
+        143,
+        183
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "257049",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        2,
+        158,
+        169,
+        171,
+        184
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "156816/49",
+      "reconstructed_sections": [
+        [
+          "184/85",
+          "-41/85"
+        ],
+        [
+          "184/85",
+          "41/85"
+        ],
+        [
+          "8513/595",
+          "-113/85"
+        ],
+        [
+          "8513/595",
+          "113/85"
+        ]
+      ],
+      "roots": [
+        0,
+        14,
+        113,
+        121,
+        162,
+        184
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "761760000/4879681",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        47,
+        97,
+        115,
+        120,
+        185
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "186624",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        2,
+        119,
+        120,
+        183,
+        186
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "1164241/729",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        18,
+        101,
+        104,
+        166,
+        187
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "1640961/6400",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        40,
+        101,
+        122,
+        126,
+        187
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "23619600/28561",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        26,
+        111,
+        135,
+        138,
+        188
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "409600/1089",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        33,
+        97,
+        100,
+        152,
+        188
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "189337600/83521",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        17,
+        117,
+        129,
+        160,
+        189
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "105625/289",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        34,
+        99,
+        104,
+        150,
+        189
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "74529/841",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        58,
+        97,
+        104,
+        126,
+        191
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "63504",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        4,
+        152,
+        161,
+        180,
+        193
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "692224/225",
+      "reconstructed_sections": [
+        [
+          "193/89",
+          "-41/89"
+        ],
+        [
+          "193/89",
+          "41/89"
+        ],
+        [
+          "10036/1335",
+          "0"
+        ]
+      ],
+      "roots": [
+        0,
+        15,
+        119,
+        128,
+        169,
+        193
+      ],
+      "transverse_rank_seven_pairs": [
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "193/89",
+              "-41/89"
+            ],
+            [
+              "10036/1335",
+              "0"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "rank": 7,
+          "sections": [
+            [
+              "193/89",
+              "41/89"
+            ],
+            [
+              "10036/1335",
+              "0"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "leading_invariant": "589824/625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        25,
+        113,
+        128,
+        153,
+        193
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "897122304/5764801",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        49,
+        101,
+        117,
+        128,
+        193
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "45319824/2401",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        7,
+        142,
+        153,
+        176,
+        194
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "180956304/83521",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        17,
+        112,
+        118,
+        171,
+        194
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "3132900/14641",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        44,
+        103,
+        118,
+        135,
+        194
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "7929856/729",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        9,
+        137,
+        148,
+        176,
+        196
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "24920064/625",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        5,
+        148,
+        156,
+        184,
+        197
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "223729/25",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        10,
+        139,
+        154,
+        172,
+        197
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "131769/256",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        32,
+        109,
+        121,
+        153,
+        197
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "874225/144",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        12,
+        137,
+        154,
+        170,
+        199
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "1871424/2401",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        28,
+        116,
+        135,
+        152,
+        199
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "308025/4096",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        64,
+        101,
+        111,
+        125,
+        199
+      ],
+      "transverse_rank_seven_pairs": []
+    },
+    {
+      "leading_invariant": "43264",
+      "reconstructed_sections": [],
+      "roots": [
+        0,
+        5,
+        157,
+        170,
+        182,
+        200
+      ],
+      "transverse_rank_seven_pairs": []
+    }
+  ],
+  "records_with_reconstructed_sections": 11,
+  "scope": "only nonsingular projected sections recovered from the union over the listed small primes are covered; no absence statement is made",
+  "status": "bounded square-leading two-section seed screen completed"
+}

@@ -1,0 +1,14 @@
+{
+  "base_field": "Q(r,T)",
+  "conclusion": "both selected affine sections lie in the generic visible subgroup on this component",
+  "not_established": [
+    "relations for other components",
+    "the visible subgroup's rank or saturation",
+    "pair intersections or a Shioda Gram matrix"
+  ],
+  "relations": [
+    "P1=-V(0,-)+V(0,+)-V(1,+)",
+    "P2=V(0,-)+V(1,+)+V(r3,-)"
+  ],
+  "status": "exact generic visible-subgroup relations verified"
+}

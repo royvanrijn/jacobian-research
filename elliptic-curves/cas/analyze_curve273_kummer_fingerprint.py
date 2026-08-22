@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 from pathlib import Path
 import sys
 import time
@@ -56,6 +57,10 @@ def f2_rank(rows):
     return len(pivots)
 
 
+def f2_mask(row):
+    return sum(int(bit) << index for index, bit in enumerate(row))
+
+
 def qpari(pari_obj, q):
     q = sage_q(q)
     return pari_obj(int(q.numerator())) / pari_obj(int(q.denominator()))
@@ -88,9 +93,10 @@ def two_adic_coords(pari_obj, nf, two_primes, alphas):
     """
 
     basis = []
+    basis_origins = []
     coords = []
 
-    for alpha in alphas:
+    for index, alpha in enumerate(alphas):
         r = len(basis)
         found = None
 
@@ -114,6 +120,7 @@ def two_adic_coords(pari_obj, nf, two_primes, alphas):
 
         if found is None:
             basis.append(alpha)
+            basis_origins.append(index)
 
             for row in coords:
                 row.append(0)
@@ -124,7 +131,7 @@ def two_adic_coords(pari_obj, nf, two_primes, alphas):
         else:
             coords.append(found)
 
-    return coords
+    return basis, basis_origins, coords
 
 
 def prime_local_rows(pari_obj, nf, alphas, q):
@@ -185,7 +192,7 @@ def prime_local_rows(pari_obj, nf, alphas, q):
 
         rows.append(row)
 
-    return rows, len(places)
+    return rows, tuple(str(pr) for pr, _, _ in places)
 
 
 def main():
@@ -195,6 +202,17 @@ def main():
         "--prime-bound",
         type=int,
         default=5000,
+    )
+    ap.add_argument(
+        "--output",
+        type=Path,
+        default=Path(
+            "artifacts/local/elliptic-curves/curve273_signature_map.json"
+        ),
+        help=(
+            "write known Kummer images in the BNF-free local/fingerprint "
+            "quotient format"
+        ),
     )
 
     args = ap.parse_args()
@@ -323,6 +341,7 @@ def main():
     ]
 
     odd_places = 0
+    local_coordinates = []
 
     for p in sorted(bad):
         if p == 2:
@@ -330,7 +349,7 @@ def main():
 
         start = time.monotonic()
 
-        extra, nplaces = prime_local_rows(
+        extra, places = prime_local_rows(
             pari,
             nf,
             alphas,
@@ -342,12 +361,29 @@ def main():
             extra,
         )
 
-        odd_places += nplaces
+        odd_places += len(places)
+        for place_index, prime_ideal in enumerate(places):
+            local_coordinates.extend(
+                [
+                    {
+                        "kind": "odd_valuation_parity",
+                        "rational_prime": p,
+                        "prime_ideal": prime_ideal,
+                        "place_index": place_index,
+                    },
+                    {
+                        "kind": "odd_unit_squareclass",
+                        "rational_prime": p,
+                        "prime_ideal": prime_ideal,
+                        "place_index": place_index,
+                    },
+                ]
+            )
 
         print(
             f"{PROTOCOL}|stage=bad_prime"
             f"|p={p}"
-            f"|places={nplaces}"
+            f"|places={len(places)}"
             f"|rank={f2_rank(rows)}"
             f"|seconds={time.monotonic()-start:.6f}",
             flush=True,
@@ -368,7 +404,7 @@ def main():
 
     start = time.monotonic()
 
-    tw = two_adic_coords(
+    two_basis, two_basis_origins, tw = two_adic_coords(
         pari,
         nf,
         two_primes,
@@ -378,6 +414,15 @@ def main():
     rows = append_columns(
         rows,
         tw,
+    )
+    local_coordinates.extend(
+        {
+            "kind": "two_adic_product_basis",
+            "basis_index": index,
+            "generator_power_basis": f"({xqs[two_basis_origins[index]]},-1,0)",
+            "two_adic_primes": [str(pr) for pr in two_primes],
+        }
+        for index in range(len(two_basis))
     )
 
     rank_odd2 = f2_rank(rows)
@@ -418,8 +463,16 @@ def main():
         rows,
         real_rows,
     )
+    local_coordinates.extend(
+        {
+            "kind": "real_sign",
+            "embedding_index": index,
+        }
+        for index in range(len(roots))
+    )
 
     baseline_rank = f2_rank(rows)
+    local_rows = [list(row) for row in rows]
 
     print(
         f"{PROTOCOL}|stage=baseline"
@@ -441,6 +494,7 @@ def main():
     # --------------------------------------------------------
 
     selected = []
+    fingerprint_coordinates = []
     current = rows
 
     for q in prime_range(
@@ -462,7 +516,7 @@ def main():
         start = time.monotonic()
 
         try:
-            extra, nplaces = prime_local_rows(
+            extra, places = prime_local_rows(
                 pari,
                 nf,
                 alphas,
@@ -493,18 +547,35 @@ def main():
             selected.append(
                 (
                     q,
-                    nplaces,
+                    len(places),
                     gain,
                 )
             )
 
             current = trial
+            for place_index, prime_ideal in enumerate(places):
+                fingerprint_coordinates.extend(
+                    [
+                        {
+                            "kind": "auxiliary_valuation_parity",
+                            "rational_prime": q,
+                            "prime_ideal": prime_ideal,
+                            "place_index": place_index,
+                        },
+                        {
+                            "kind": "auxiliary_unit_squareclass",
+                            "rational_prime": q,
+                            "prime_ideal": prime_ideal,
+                            "place_index": place_index,
+                        },
+                    ]
+                )
 
             print(
                 f"{PROTOCOL}|stage=aux"
                 f"|q={q}"
                 f"|status=SELECTED"
-                f"|places={nplaces}"
+                f"|places={len(places)}"
                 f"|gain={gain}"
                 f"|rank={new_rank}"
                 f"|seconds={time.monotonic()-start:.6f}",
@@ -542,6 +613,46 @@ def main():
             f"|action=raise_prime_bound",
             flush=True,
         )
+
+    fingerprint_width = len(fingerprint_coordinates)
+    if any(len(row) != len(local_coordinates) + fingerprint_width for row in current):
+        raise ArithmeticError("signature-coordinate bookkeeping lost alignment")
+    signature_map = {
+        "schema": "elliptic-curves.bnf-free-signature-map.v1",
+        "status": "known_kummer_image_only_not_a_selmer_bound",
+        "field_generator": "theta",
+        "generator_coordinate_order": ["1", "theta", "theta^2"],
+        "defining_polynomial_ascending": [str(B), str(A), "0", "1"],
+        "local_dimension": len(local_coordinates),
+        "fingerprint_dimension": fingerprint_width,
+        "local_coordinates": local_coordinates,
+        "fingerprint_coordinates": fingerprint_coordinates,
+        "known_mw_images": [
+            {
+                "label": f"P{index + 1}",
+                "generator": f"({xqs[index]},-1,0)",
+                "generator_coefficients": [str(xqs[index]), "-1", "0"],
+                "local": f"0x{f2_mask(local_rows[index]):x}",
+                "fingerprint": f"0x{f2_mask(current[index][len(local_coordinates):]):x}",
+            }
+            for index in range(KNOWN_RANK)
+        ],
+        "selected_auxiliary_primes": [q for q, _, _ in selected],
+        "known_mw_target_rank": final_rank,
+        "class_quotient_certification": {
+            "method": "none",
+            "remaining_dimension_upper_bound": None,
+        },
+    }
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    args.output.write_text(json.dumps(signature_map, indent=2, sort_keys=True) + "\n")
+    print(
+        f"{PROTOCOL}|stage=write_signature_map|path={args.output}"
+        f"|local_dimensions={len(local_coordinates)}"
+        f"|fingerprint_dimensions={fingerprint_width}"
+        f"|known_mw_target_rank={final_rank}",
+        flush=True,
+    )
 
 
 if __name__ == "__main__":

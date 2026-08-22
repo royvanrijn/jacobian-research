@@ -1,9 +1,14 @@
-// Deterministic staged Mestre--Nagao sweep for the Fermigier adapter family.
+// Deterministic staged rank-jump sweep for the Fermigier adapter family.
 //
 // Build with:
 //   g++ -O3 -march=native -fopenmp -std=c++20 \
 //     -o /tmp/fermigier-score-sweep \
 //     elliptic-curves/ecsearch/fermigier_score_sweep.cpp
+//
+// At every scoring prime this computes the exact mean trace on the good
+// projective fibres of the family, and scores a specialization by its trace
+// residual from that mean.  Thus the cheap signal is aimed at the exceptional
+// quotient over the generic rank-12 subgroup, rather than at total rank.
 //
 // The output is a heuristic ranking, never a rank or conductor certificate.
 
@@ -24,14 +29,24 @@ namespace {
 struct TraceTable {
   int prime;
   std::vector<std::int16_t> trace;
+  std::vector<std::uint8_t> good;
   std::vector<std::uint16_t> inverse;
   double logarithm;
+  int good_trace_sum;
+  int good_fibre_count;
 };
 
 struct Candidate {
   int numerator;
   int denominator;
   float score;
+};
+
+struct ScoreFeatures {
+  double s0 = 0;
+  double s5 = 0;
+  int primes_used = 0;
+  int bad_specialization_primes = 0;
 };
 
 long long power_mod(long long base, long long exponent, int modulus) {
@@ -110,8 +125,11 @@ std::vector<TraceTable> build_trace_tables() {
 
     TraceTable table{prime,
                      std::vector<std::int16_t>(prime + 1),
+                     std::vector<std::uint8_t>(prime + 1),
                      std::vector<std::uint16_t>(prime),
-                     std::log(static_cast<double>(prime))};
+                     std::log(static_cast<double>(prime)),
+                     0,
+                     0};
     for (int value = 1; value < prime; ++value) {
       table.inverse[value] =
           static_cast<std::uint16_t>(power_mod(value, prime - 2, prime));
@@ -173,6 +191,39 @@ std::vector<TraceTable> build_trace_tables() {
         character_sum += character[(linear_y * linear_y + 4 * rhs) % prime];
       }
       table.trace[parameter] = static_cast<std::int16_t>(-character_sum);
+
+      // A specialization can be scored by an ordinary a_p only at good
+      // reduction.  The family baseline U(F_p) is exactly this good-fibre
+      // locus, including the projective infinity fibre when it is smooth.
+      const long long b2 =
+          (a1_coefficient * a1_coefficient + 4 * a2_coefficient) % prime;
+      const long long b4 =
+          (a1_coefficient * a3_coefficient + 2 * a4_coefficient) % prime;
+      const long long b6 =
+          (a3_coefficient * a3_coefficient + 4 * a6_coefficient) % prime;
+      const long long b8 =
+          (a1_coefficient * a1_coefficient * a6_coefficient +
+           4 * a2_coefficient * a6_coefficient -
+           a1_coefficient * a3_coefficient * a4_coefficient +
+           a2_coefficient * a3_coefficient * a3_coefficient -
+           a4_coefficient * a4_coefficient) %
+          prime;
+      const long long discriminant =
+          (-b2 * b2 * b8 - 8 * b4 * b4 * b4 - 27 * b6 * b6 +
+           9 * b2 * b4 * b6) %
+          prime;
+      table.good[parameter] = discriminant != 0;
+    }
+    for (int parameter = 0; parameter <= prime; ++parameter) {
+      if (table.good[parameter] == 0) {
+        continue;
+      }
+      table.good_trace_sum += table.trace[parameter];
+      ++table.good_fibre_count;
+    }
+    if (table.good_fibre_count == 0) {
+      std::cerr << "family has no good fibre modulo " << prime << '\n';
+      std::abort();
     }
     tables.push_back(std::move(table));
   }
@@ -188,12 +239,13 @@ int table_count_through(const std::vector<TraceTable>& tables, int bound) {
   return count;
 }
 
-double score(const std::vector<TraceTable>& tables,
-             int table_count,
-             int numerator,
-             int denominator) {
-  double result = 0;
-  for (int index = 0; index < table_count; ++index) {
+ScoreFeatures score_features(const std::vector<TraceTable>& tables,
+                             int begin,
+                             int end,
+                             int numerator,
+                             int denominator) {
+  ScoreFeatures result;
+  for (int index = begin; index < end; ++index) {
     const auto& table = tables[index];
     const int denominator_residue = denominator % table.prime;
     const int parameter = denominator_residue == 0
@@ -201,10 +253,39 @@ double score(const std::vector<TraceTable>& tables,
                               : static_cast<int>(
                                     static_cast<long long>(numerator % table.prime) *
                                     table.inverse[denominator_residue] % table.prime);
+    if (table.good[parameter] == 0) {
+      ++result.bad_specialization_primes;
+      continue;
+    }
     const int trace = table.trace[parameter];
-    result += (2.0 - trace) / (table.prime + 1.0 - trace) * table.logarithm;
+    const double family_mean = static_cast<double>(table.good_trace_sum) /
+                               static_cast<double>(table.good_fibre_count);
+    // S0 is the linear trace residual used in Mestre--Nagao scoring.  S5 is
+    // the corresponding local Euler-factor residual.  Both vanish after
+    // averaging their first-order trace signal over the family.
+    result.s0 += (family_mean - trace) * table.logarithm / table.prime;
+    result.s5 += std::log((table.prime + 1.0 - trace) /
+                          (table.prime + 1.0 - family_mean));
+    ++result.primes_used;
   }
   return result;
+}
+
+double rank_jump_score(const ScoreFeatures& cumulative,
+                       const ScoreFeatures& window,
+                       int bound,
+                       int previous_bound) {
+  // This fixed, declared combination is only a staging rule.  It deliberately
+  // keeps a disjoint window term: residual signals need not improve
+  // monotonically with a larger prime cutoff.
+  const double cumulative_s0 = cumulative.s0 / std::log(bound);
+  if (previous_bound == 0) {
+    return cumulative_s0 + cumulative.s5;
+  }
+  const double window_scale =
+      std::log(static_cast<double>(bound) / previous_bound);
+  const double window_s0 = window.s0 / window_scale;
+  return cumulative_s0 + cumulative.s5 + 0.5 * (window_s0 + window.s5);
 }
 
 void retain_top(std::vector<Candidate>& candidates, std::size_t count) {
@@ -243,10 +324,20 @@ int main(int argc, char** argv) {
   const std::vector<int> bounds = {100, 200, 400, 1000, 2000};
   std::vector<int> table_counts;
   std::vector<double> e22_scores;
-  for (int bound : bounds) {
+  for (std::size_t stage = 0; stage < bounds.size(); ++stage) {
+    const int bound = bounds[stage];
     const int count = table_count_through(tables, bound);
     table_counts.push_back(count);
-    e22_scores.push_back(score(tables, count, 19754, 39));
+    const int previous_count = stage == 0 ? 0 : table_counts[stage - 1];
+    const ScoreFeatures cumulative =
+        score_features(tables, 0, count, 19754, 39);
+    const ScoreFeatures window = stage == 0
+                                     ? cumulative
+                                     : score_features(tables, previous_count,
+                                                      count, 19754, 39);
+    e22_scores.push_back(
+        rank_jump_score(cumulative, window, bound,
+                        stage == 0 ? 0 : bounds[stage - 1]));
   }
 
   const int thread_count = omp_get_max_threads();
@@ -264,11 +355,11 @@ int main(int argc, char** argv) {
         if (std::gcd(numerator, denominator) != 1) {
           continue;
         }
-        local.push_back(Candidate{
-            numerator,
-            denominator,
-            static_cast<float>(
-                score(tables, table_counts[0], numerator, denominator))});
+        const ScoreFeatures initial = score_features(
+            tables, 0, table_counts[0], numerator, denominator);
+        local.push_back(Candidate{numerator, denominator,
+                                  static_cast<float>(rank_jump_score(
+                                      initial, initial, bounds[0], 0))});
       }
     }
   }
@@ -298,9 +389,14 @@ int main(int argc, char** argv) {
     if (stage != 0) {
 #pragma omp parallel for schedule(static)
       for (std::size_t index = 0; index < candidates.size(); ++index) {
-        candidates[index].score = static_cast<float>(score(
-            tables, table_counts[stage], candidates[index].numerator,
-            candidates[index].denominator));
+        const ScoreFeatures cumulative = score_features(
+            tables, 0, table_counts[stage], candidates[index].numerator,
+            candidates[index].denominator);
+        const ScoreFeatures window = score_features(
+            tables, table_counts[stage - 1], table_counts[stage],
+            candidates[index].numerator, candidates[index].denominator);
+        candidates[index].score = static_cast<float>(rank_jump_score(
+            cumulative, window, bounds[stage], bounds[stage - 1]));
       }
     }
     const std::size_t above_e22 = static_cast<std::size_t>(std::count_if(
@@ -309,7 +405,7 @@ int main(int argc, char** argv) {
         }));
     std::cerr << "stage=" << bounds[stage]
               << " candidates=" << candidates.size()
-              << " e22_score=" << e22_scores[stage]
+              << " e22_rank_jump_score=" << e22_scores[stage]
               << " at_or_above_e22=" << above_e22 << '\n';
     retain_top(candidates, caps[stage]);
   }
@@ -325,11 +421,25 @@ int main(int argc, char** argv) {
   if (candidates.size() > static_cast<std::size_t>(output_count)) {
     candidates.resize(output_count);
   }
+  const int final_count = table_counts.back();
+  const int final_window_begin = table_counts[table_counts.size() - 2];
+  std::cout << "# rank\tnumerator\tdenominator\trank_jump_score"
+               "\tcumulative_S0\tcumulative_S5\twindow_S0\twindow_S5"
+               "\tgood_primes\tbad_specialization_primes\n";
   std::cout.precision(10);
   for (std::size_t index = 0; index < candidates.size(); ++index) {
     const auto& candidate = candidates[index];
+    const ScoreFeatures cumulative = score_features(
+        tables, 0, final_count, candidate.numerator, candidate.denominator);
+    const ScoreFeatures window = score_features(
+        tables, final_window_begin, final_count, candidate.numerator,
+        candidate.denominator);
     std::cout << index + 1 << '\t' << candidate.numerator << '\t'
-              << candidate.denominator << '\t' << candidate.score << '\n';
+              << candidate.denominator << '\t' << candidate.score << '\t'
+              << cumulative.s0 << '\t' << cumulative.s5 << '\t'
+              << window.s0 << '\t' << window.s5 << '\t'
+              << cumulative.primes_used << '\t'
+              << cumulative.bad_specialization_primes << '\n';
   }
   const double seconds = std::chrono::duration<double>(
                              std::chrono::steady_clock::now() - start)

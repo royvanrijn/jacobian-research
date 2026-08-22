@@ -122,6 +122,22 @@ Dolgachev--Kumar K3 surface, and uses the canonical fibration
 E7+E8, MW rank 2, MW regulator 474.
 ```
 
+## Reusable exact degree-two neighbor engine
+
+The repeated lattice operations for a degree-two neighbor are now centralized
+in [`scripts/exact_neighbor_engine.sage`](scripts/exact_neighbor_engine.sage).
+Given an isotropic divisor, old fiber, and explicitly supplied section/
+component walls, it performs deterministic fixed-component reduction, exact
+primitive `U`-splitting, and root/MW minimization of the child.  Its q80 first
+`q=4` regression checker is
+[`scripts/verify_exact_neighbor_engine.sage`](scripts/verify_exact_neighbor_engine.sage);
+it reproduces the known `D9+A4/MW4` child.  See
+[`EXACT_NEIGHBOR_ENGINE.md`](EXACT_NEIGHBOR_ENGINE.md) for the explicit
+interface and the deliberate boundary between supplied-wall nonnegativity and
+a full global-nef proof.  This is the reusable lattice layer for executing
+the certified H3 degree-two chain; it does not itself produce a
+characteristic-zero pencil.
+
 An exact finite binary-form/glue classification now finds precisely three
 Kumar frames in the recovered determinant-948 genus.  Their height Grams are
 

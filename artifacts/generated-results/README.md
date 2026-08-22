@@ -19,6 +19,345 @@ This directory contains reproducible outputs from retained research
 computations.  Only outputs with a named generator and verification path below
 are treated as reference artifacts.
 
+- `elliptic_mestre_two_section_local_continuation.json` records a bounded
+  recursive-jet continuation at the normalized six-root Mestre seed
+  `(0,25,95,143,168,205)`, with two labelled nonvisible affine sections.  It
+  keeps the residuals recursive, finds exact Jacobian rank six in eight
+  coordinates, records zero quadratic obstruction, characteristic-zero
+  transverse formal line and bivariate-germ checks through orders 12 and 5,
+  respectively, and nonzero all-seven-equation lifts through fourth powers of
+  17, 29, and 37.  This is local evidence, not a rational component or a rank
+  claim.  Regenerate it using
+  `elliptic-curves/cas/probe_mestre_two_section_local_continuation.py` as
+  documented in `elliptic-curves/REPRODUCE.md`; its whole-file SHA-256 is
+  `52f3b2bdd12b6a7581903fffd44dbcb79ed6356acdb46b7d48a4e220bcec5bd8`.
+
+- `elliptic_mestre_dsquare_all_companion_generic_relations.json` proves over
+  `Q(u)`, after `T=(39146-u^2)/(2u)`, that the other five displayed affine
+  companions for roots `(0,25,95,143,168,205)` are exact combinations of
+  visible sections and the already-certified first companion.  Therefore this
+  six-companion D-square branch supplies only its known one nonvisible
+  direction; it does not settle the surrounding rank-six moduli germ,
+  saturation, heights, intersections, Shioda data, or a rank upper bound.
+  Generate it with
+  `PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/audit_mestre_dsquare_all_companion_relations.py --output artifacts/generated-results/elliptic_mestre_dsquare_all_companion_generic_relations.json`;
+  its SHA-256 is `45801765d20111d9ae4e10441e3e3a7bef18852d0d327b8895b3703975f55675`.
+
+- `elliptic_mestre_diameter235_eight_companion_local.json` records a local
+  continuation at the newly reconstructed eight-companion seed
+  `(0,17,136,161,207,235)`.  The selected pair has exact incidence-Jacobian
+  rank seven, all-seven-row lifts modulo `29^4` and `41^4`, and a formal
+  `c1` slice through order 12; it also records one finite meeting.  At the
+  exact fibres `T=2,3`, each companion separately raises the computed mod-3
+  finite-reduction rank from 10 to 11.  This is a target-selection escape
+  signal, not generic independence, saturation, a Shioda calculation, a
+  global component, or a rank-14 assertion.  Generate it with
+  `PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/probe_mestre_diameter235_eight_companion.py --output artifacts/generated-results/elliptic_mestre_diameter235_eight_companion_local.json`;
+  its SHA-256 is `566f07cb100670ec1cf6a31a3c5177cafff04883e952de27761b275e3813957f`.
+
+- `elliptic_mestre_diameter235_eight_companion_low_bidegree_c3_c4_order32.json`
+  is the follow-up formal model search at that seed.  The recursive `c1`
+  slice reaches order 32 and tests all 40 `F(c3,c4)` bidegrees with degrees at
+  most 8 and no more than 33 coefficients; none has a formal relation at the
+  available order.  It is a bounded rejection of low-complexity plane models,
+  not a proof that a plane model or global component does not exist.  Generate
+  it with
+  `PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/probe_mestre_diameter235_eight_companion.py --order 32 --precision 2 --plane-relation-search --output artifacts/generated-results/elliptic_mestre_diameter235_eight_companion_low_bidegree_c3_c4_order32.json`;
+  its SHA-256 is `2f2557d4efdaaccbd64900fa992864d29b74be2616f97bf7075346dac8c70040`.
+
+- `elliptic_mestre_diameter235_eight_companion_component.json` upgrades the
+  diameter-235 local branch to an exact rational split-six-root two-section
+  component.  Its nodal-quartic normalization has parameter `p=-294` at the
+  seed; all roots and both selected affine sections are rational over
+  `Q(p)`, and the leading invariant is a square.  Each coordinate denominator
+  divides a degree-18 common denominator.  The recursive residual degree
+  bound 60 and 1,099 admissible exact evaluations therefore prove the seven
+  rational-function identities after clearing numerators of degree at most
+  1,080.  The same certificate retains the mod-3 visible-subgroup escape at
+  `T=2,3`; it makes no saturation, Shioda, pair-independence, or rank-14
+  claim.  Generate it with
+  `PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/verify_mestre_diameter235_eight_companion_component.py --output artifacts/generated-results/elliptic_mestre_diameter235_eight_companion_component.json`;
+  its SHA-256 is `24cd571528070c32b26536a46f6b3d8845cf1db3eda11bc5a30868b8da021372`.
+
+- `elliptic_mestre_transverse_two_section_component.json` records an exact
+  rational one-parameter two-section identity through the normalized roots
+  `(0,1,7,8,9,11)`.  It certifies the seven recursive residual identities by
+  degree-bounded rational specialization, the square leading invariant, and
+  a split-six-root parametrization after an elementary conic parameter.  It
+  does not claim a height pairing, saturation, independence, or a rank gain.
+  Regenerate it with
+  `PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/verify_mestre_transverse_two_section_component.py --output artifacts/generated-results/elliptic_mestre_transverse_two_section_component.json`;
+  its whole-file SHA-256 is
+  `87737b0f8639b8f34c55ccfb83dcffdc651b07bf35442bf67c38007458371753`.
+
+- `elliptic_mestre_transverse_two_section_conic_component.json` records the
+  second exact rational two-section component through normalized roots
+  `(0,7,79,81,128,137)`.  It rationalizes the residual split-root conic,
+  proves all seven recursive residual identities by a degree-bounded 1,922
+  sample certificate, and audits one finite pair intersection.  It makes no
+  height, saturation, Shioda, or rank-gain claim.  Regenerate it with
+  `PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/verify_mestre_transverse_two_section_conic_component.py --output artifacts/generated-results/elliptic_mestre_transverse_two_section_conic_component.json`;
+  its whole-file SHA-256 is
+  `aeb6f1c0d724e5f730ebaa5b6d5de08e533653535164b645d8fbf20e288e23f3`.
+
+- `elliptic_mestre_transverse_two_section_conic_component_seed_relations.json`
+  records exact group-law relations for both selected affine points at the
+  normalized seed `s=-357/47,T=1`, together with a rank-nine mod-3
+  finite-reduction non-promotion certificate.  This is a single-fibre audit,
+  not a generic relation or saturation result.  Generate it with
+  `PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/audit_mestre_transverse_conic_component_relations.py --output artifacts/generated-results/elliptic_mestre_transverse_two_section_conic_component_seed_relations.json`;
+  its SHA-256 is `f197f8c35189334d6432f9675a7e97bcdcfa10a8e9777d32fe9f96ee25c1b735`.
+
+- `elliptic_mestre_transverse_two_section_conic_component_independence_h5.json`
+  is the exact height-five finite-reduction quotient screen on the second
+  conic-rational component.  All 1,482 candidate pairs are admissible and
+  have visible and augmented rank nine; its zero gains are bounded-search
+  evidence only.  Generate it with
+  `PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/screen_mestre_transverse_conic_component_independence.py --root-height 5 --parameter-height 5 --prime-bound 101 --output artifacts/generated-results/elliptic_mestre_transverse_two_section_conic_component_independence_h5.json`;
+  its SHA-256 is `d9de87e7e23bf9046664a618d709a4ce6f330fef88cf0153f8630b5187578fb1`.
+
+- `elliptic_mestre_transverse_two_section_conic_component_generic_first_relation.json`
+  certifies over `Q(s,T)` that the first selected affine section on the second
+  component is the five-term visible combination
+  `V(0,-)+V(1,+)+V(r3,-)+V(r4,-)+V(r5,+)`.  It retains the recursive Mestre
+  square root and triangular cubic ordinate; it does not expand a universal
+  two-section residual.  The second selected section remains unresolved.
+  Generate it with
+  `PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/verify_mestre_transverse_conic_component_generic_relations.py --output artifacts/generated-results/elliptic_mestre_transverse_two_section_conic_component_generic_first_relation.json`;
+  its SHA-256 is `99360cfe129491e45691fae61cfe6bf0e24886ae3ec603b53f237ba21562294c`.
+
+- `elliptic_mestre_transverse_two_section_conic_component_generic_relations.json`
+  extends the preceding exact `Q(s,T)` calculation to the second selected
+  affine section, proving `P2=-V(0,-)-V(1,+)-V(r3,-)`.  Thus both selected
+  sections on this positive-dimensional component are generically visible;
+  it is not a generic rank-jump component.  Generate it with
+  `PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/verify_mestre_transverse_conic_component_generic_relations.py --include-second --output artifacts/generated-results/elliptic_mestre_transverse_two_section_conic_component_generic_relations.json`;
+  its SHA-256 is `9a420a06a8b8563d5561038c961bc491e16e88bd52be2e14919105286a26321c`.
+
+- `elliptic_mestre_two_section_seed_screen_max200.json` is a bounded exact
+  local screen of all 167 square-leading affine-normalized root tuples in the
+  frozen new max-200 panel.  It uses small-prime projected-section residues,
+  nonsingular Hensel lifts, exact rational reconstruction, and exact pair
+  Jacobian ranks without expanded residuals.  It finds one recovered
+  five-section seed, `(0,7,79,81,128,137)`, with four rank-seven pairs.  No
+  negative statement is made about the other seeds.  Regenerate it using
+  `PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/screen_mestre_two_section_transverse_seeds.py --output artifacts/generated-results/elliptic_mestre_two_section_seed_screen_max200.json`;
+  its whole-file SHA-256 is
+  `c2b665990f309675741d41d7d8686509b10516ac9ff981eee26a7624311d7968`.
+
+- `elliptic_mestre_two_section_seed_screen_max200_all_primes.json` is the
+  separate all-listed-primes replay of that frozen panel.  It unions exact
+  reconstructions over `7,11,13,17`, recovering 38 rank-seven pairs at eight
+  base points (rather than treating singular projected reductions at an early
+  prime as negative evidence).  Its companion
+  `elliptic_mestre_two_section_seed_screen_max200_all_primes_classification.json`
+  exactly places seven base points on the previously audited rational
+  two-section base curve and the remaining eight-companion point
+  `(0,8,58,77,85,102)` on Fermigier's family at `(u,v)=(-3,-8/3)`.  This is
+  base-point classification only; it does not establish a generic relation,
+  height, saturation, or independence for every recovered pair.  Generate
+  them with
+  `PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/screen_mestre_two_section_transverse_seeds.py --all-primes --output artifacts/generated-results/elliptic_mestre_two_section_seed_screen_max200_all_primes.json`
+  and
+  `PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/audit_mestre_multprime_seed_classification.py --output artifacts/generated-results/elliptic_mestre_two_section_seed_screen_max200_all_primes_classification.json`;
+  their SHA-256 hashes are
+  `2df716c6f86f39abaa8a61fcdfb0be20b5791cbb8c24724f2bce8b1aed22c761`
+  and `e26aab52f6db523763de3f3976af14bd63edc64edce4dd26bf8739306468f28d`.
+
+- `elliptic_mestre_fermigier_two_section_escape_h40.json` audits the only
+  non-rational-component rank-seven base recovered by the all-prime frozen
+  replay.  It identifies the first line with Fermigier's extra section at
+  `(u,v)=(-3,-8/3)` and checks the second line at `T=1,...,40` by exact mod-2
+  and mod-3 finite quotients through prime 151.  There is no positive
+  marginal quotient rank in this bounded audit.  This is non-escape evidence,
+  not a relation, saturation, or rank-upper-bound proof.  Generate it with
+  `PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/screen_mestre_fermigier_two_section_escape.py --output artifacts/generated-results/elliptic_mestre_fermigier_two_section_escape_h40.json`;
+  its SHA-256 is `18f8888c0a32182883c7b238cb6ec36a745d677488d3463f0f976331eb55dd66`.
+
+- `elliptic_mestre_fermigier_two_section_local_branch.json` is the compact
+  order-18 recursive formal continuation at that Fermigier point.  Its
+  rank-three transverse Jacobian permits `u=-3+t`; Padé reconstruction gives
+  a rational candidate for `v`, the second intercept, and its slope.  The
+  artifact explicitly does not promote those jets to a global section
+  identity or a rank claim.  Generate it with
+  `PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/probe_mestre_fermigier_two_section_local_continuation.py --order 18 --pade-degree 8 --output artifacts/generated-results/elliptic_mestre_fermigier_two_section_local_branch.json`;
+  its SHA-256 is `a0fe08f2780a8bafe497591274f7cb15e06624eefbf031e4bb26f1db653e564c`.
+
+- `elliptic_mestre_fermigier_two_section_component.json` upgrades that
+  reconstruction to an exact identity certificate.  The component has
+  `v=(u^2+u+2)/u`, with the displayed second-line formulas in the artifact.
+  Its eight coordinate denominators divide the fourth power of a degree-five
+  polynomial; the compact residuals have total degree at most 60, so 1,141
+  exact admissible evaluations prove the cleared degree-1,140 identities.
+  This proves a two-section component but deliberately makes no saturation,
+  intersection, Shioda, independence, or rank-14 assertion.  Generate it
+  with
+  `PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/verify_mestre_fermigier_two_section_component.py --output artifacts/generated-results/elliptic_mestre_fermigier_two_section_component.json`;
+  its SHA-256 is `fbb83b6a7913f42ce9cbedcbe272dc5a210c21b2966913b78f36880cc0e0b740`.
+
+- `elliptic_mestre_fermigier_two_section_intersection.json` fixes the signed
+  finite intersection at the continuation seed: `T=-479/56` and
+  `(x,y)=(445/56,-1141635/28)`.  It also records the rank-nine mod-3 quotient
+  before and after adjoining the pair at `T=1`, through prime 499.  This is
+  an intersection/non-escape audit, not a full Shioda or saturation result.
+  Generate it with
+  `PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/audit_mestre_fermigier_two_section_intersection.py --output artifacts/generated-results/elliptic_mestre_fermigier_two_section_intersection.json`;
+  its SHA-256 is `44547e408ea7e3a01ce1bdfa04feaa52bbf3de9adc4db2c4ff40990707aa0be6`.
+
+- `elliptic_mestre_fermigier_two_section_component_escape_h5_t4.json` is the
+  136-fibre mod-2/mod-3 quotient audit of this component (`H(u)<=5`,
+  `T=1,...,4`, primes through 151).  The first section gains mod-3 quotient
+  rank on 57 fibres; the second has no marginal escape for either modulus
+  after that baseline.  This is a bounded non-escape result only; the later
+  stacked multi-specialization certificate proves that it does not rule out
+  generic independence.  Generate it with
+  `PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/screen_mestre_fermigier_two_section_component_escape.py --output artifacts/generated-results/elliptic_mestre_fermigier_two_section_component_escape_h5_t4.json`;
+  its SHA-256 is `4d302a3cc1ce8bbe6333ca4f0e052ac5ae7722934d699f8cda1ab12d65216a2f`.
+
+- `elliptic_mestre_fermigier_two_section_height_triage_h10_t123.json` records
+  numerical canonical-height-matrix ranks for the fourteen supplied sections
+  on all 366 smooth fibres with `H(u)<=10` and `T=1,2,3`.  The maximum is 13,
+  attained at five fibres; no declared fibre reaches numerical rank 14.  This
+  is target-selection triage only, not an algebraic rank statement,
+  independence certificate, or generic relation.  Generate it with
+  `PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/screen_mestre_fermigier_two_section_height_triage.py --height 10 --t-values 1,2,3 --output artifacts/generated-results/elliptic_mestre_fermigier_two_section_height_triage_h10_t123.json`;
+  its SHA-256 is `726f48507f4d82a299e4eac4f3a9727c5da3a894fb46f9af6c370dfb893c7e76`.
+
+- `elliptic_mestre_fermigier_two_section_generic_rank13.json` proves that
+  eleven primitive visible sections and both affine sections are independent
+  over `Q(u)(T)` on the exact Fermigier two-section curve.  Thirteen fixed
+  exact `E(F_p)/3E(F_p)` rows have full rank 13; a group of order 28 at the
+  good specialization `u=-5,T=1` modulo 19 excludes generic rational
+  3-torsion, completing the infinite-descent argument.  This gives generic
+  rank at least 13 only: it does not prove rank 14, saturation, a Shioda Gram
+  matrix, or a rank upper bound.  Generate it with
+  `PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/verify_mestre_fermigier_two_section_generic_rank13.py --output artifacts/generated-results/elliptic_mestre_fermigier_two_section_generic_rank13.json`;
+  its SHA-256 is `2ad520be360e1aaffcff1184837229013c355f1624b241aa57cec918399a4272`.
+
+- `elliptic_mestre_conjugate_two_section_germ.json` records the non-transverse
+  conjugate-slope seed with roots `(0,7,127,128,225,233)`.  Its labelled
+  recursive Jacobian has rank six over `Q` and at 17, 23, and 29; the seventh
+  recursive row vanishes through bivariate total order four and through order
+  twelve on a common-intercept slice.  In the root-motion chart
+  `r3=127/7+t`, `r6=233/7`, both affine intercepts recognize as
+  `233/(113-7t)` and the slopes remain conjugate through order twelve.  This
+  is corroborated at the distant roots `(0,21,151,169,200,239)`, where the
+  analogous pair has rank-six tangents at five small primes and an
+  unobstructed bivariate lift through order three.  It remains a local
+  formal-germ result, not a global component identity, parametrization,
+  independence certificate, height/intersection calculation, or rank claim.
+  Generate it with
+  `PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/probe_mestre_conjugate_two_section_germ.py --output artifacts/generated-results/elliptic_mestre_conjugate_two_section_germ.json`;
+  its SHA-256 is `ea96bb365ac182dc8cdacc005d0c2c51bcd88d9896c9bcea46ed59aed282a06f`.
+
+- `elliptic_mestre_conjugate_two_section_seed_relations.json` audits the two
+  known conjugate-slope seeds at `T=1`.  At each, both affine points are exact
+  three-term combinations of primitive visible sections, and the exact
+  `E(F_p)/3E(F_p)` rank is nine before and after adjoining them through prime
+  251.  This is specialization-level rank-neutrality evidence only: it does
+  not prove a generic relation on the formal germ or settle saturation,
+  heights, intersections, Shioda data, or generic rank.  Generate it with
+  `PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/audit_mestre_conjugate_two_section_seed_relations.py --output artifacts/generated-results/elliptic_mestre_conjugate_two_section_seed_relations.json`;
+  its SHA-256 is `809ac5bf80c4424a80182da101e8d19f5eaa00d6068d67f7aee32e32b1260ab9`.
+
+- `elliptic_mestre_two_section_transverse_band_201_205.json` is a separate
+  exact new-diameter screen, deliberately not a modification of the frozen
+  max-200 census.  Its 21,692 obstruction-zero tuples yield 179
+  nonreflection square-leading candidates; the same projected-section Hensel
+  lift and exact Jacobian audit finds no rank-seven pair.  This is bounded to
+  the stated diameter band and affine chart.  Generate it with
+  `PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/screen_mestre_two_section_transverse_band.py --first 201 --last 205 --precision 8 --output artifacts/generated-results/elliptic_mestre_two_section_transverse_band_201_205.json`;
+  its SHA-256 is `94a75ea313614400787ceed9bd825088af48d357b60391bf27c278b2fb22d49c`.
+
+- `elliptic_mestre_two_section_transverse_band_201_205_all_primes.json`
+  repeats that bounded band while taking the union of exact projected-section
+  reconstructions at each of `7,11,13,17`, rather than stopping at the first
+  good prime.  It has no rank-seven pair.  It does recover the already-known
+  six-companion D-square germ at roots `(0,25,95,143,168,205)`; all 15 pairs
+  there have Jacobian rank six, so this is not evidence for an expected
+  transverse one-dimensional component.  Generate it with
+  `PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/screen_mestre_two_section_transverse_band.py --first 201 --last 205 --precision 8 --all-primes --output artifacts/generated-results/elliptic_mestre_two_section_transverse_band_201_205_all_primes.json`;
+  its SHA-256 is `72f12930de7b388f65a89baaaec9441b172d445a61cd84db0885de02fc451943`.
+
+- `elliptic_mestre_two_section_transverse_band_206_210_all_primes.json`
+  is the next disjoint all-listed-primes diameter band.  Its 21,510
+  obstruction-zero tuples yield 224 nonreflection square-leading candidates;
+  none has a reconstructed projected affine section at precision eight over
+  the union of `7,11,13,17`, hence no rank-seven pair in this bounded method.
+  This does not exclude sections outside the stated primes, precision, or
+  affine chart.  Generate it with
+  `PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/screen_mestre_two_section_transverse_band.py --first 206 --last 210 --precision 8 --all-primes --output artifacts/generated-results/elliptic_mestre_two_section_transverse_band_206_210_all_primes.json`;
+  its SHA-256 is `f810d6f513df53012060157fe15fff1996c31f3c5314b0499a2855453fc86b15`.
+
+- `elliptic_mestre_two_section_transverse_band_211_215_all_primes.json`
+  recovers six rank-seven pairs at two multi-companion bases in the next
+  all-prime band.  The companion
+  `elliptic_mestre_two_section_transverse_band_211_215_tangent_audit.json`
+  verifies that every incidence tangent equals the derivative of the already
+  verified rational two-section base curve.  This identifies no new tangent
+  direction, but does not prove a generic relation for every specialized
+  affine line.  Generate them with
+  `PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/screen_mestre_two_section_transverse_band.py --first 211 --last 215 --precision 8 --all-primes --output artifacts/generated-results/elliptic_mestre_two_section_transverse_band_211_215_all_primes.json`
+  and
+  `PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/audit_mestre_transverse_band_211_215.py --output artifacts/generated-results/elliptic_mestre_two_section_transverse_band_211_215_tangent_audit.json`;
+  their SHA-256 hashes are
+  `9b16b84c7cc63b40b90199ab9b9e68db8216cac3f93049bb0d66fc2d6ef1ff29`
+  and `1c196a7990ef85241fa5644daa83403779528e45210f04d350fe8fe6ee77bea3`.
+
+- `elliptic_mestre_two_section_transverse_band_216_220_all_primes.json`
+  is the next all-prime band.  Its 23,648 obstruction-zero tuples yield 222
+  nonreflection square-leading candidates, none with a reconstructed affine
+  section at the declared primes and precision.  Thus it has no rank-seven
+  pair in this bounded method, not an absence theorem outside that scope.
+  Generate it with
+  `PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/screen_mestre_two_section_transverse_band.py --first 216 --last 220 --precision 8 --all-primes --output artifacts/generated-results/elliptic_mestre_two_section_transverse_band_216_220_all_primes.json`;
+  its SHA-256 is `fe5f98249e5d4dab4c2506d02806c95f9db2247e83f1be5e6628f1dbc70ac0c7`.
+
+- `elliptic_mestre_two_section_transverse_band_221_225_all_primes.json`
+  continues the same exact screen.  Its 26,238 obstruction-zero tuples yield
+  236 nonreflection square-leading candidates, none with a reconstructed
+  affine section at the stated primes and precision.  It therefore has no
+  rank-seven pair in this bounded method.  Generate it with
+  `PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/screen_mestre_two_section_transverse_band.py --first 221 --last 225 --precision 8 --all-primes --output artifacts/generated-results/elliptic_mestre_two_section_transverse_band_221_225_all_primes.json`;
+  its SHA-256 is `a84f45d4f6186a144516e72091468ba57a6dd8add22e83ed3353fb0dfcb83232`.
+
+- `elliptic_mestre_two_section_transverse_band_226_230_all_primes.json`
+  continues the exact all-prime screen.  Its 26,556 obstruction-zero tuples
+  yield 126 nonreflection square-leading candidates, none with a reconstructed
+  affine section at the stated primes and precision.  Thus it has no
+  rank-seven pair in this bounded method.  Generate it with
+  `PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/screen_mestre_two_section_transverse_band.py --first 226 --last 230 --precision 8 --all-primes --output artifacts/generated-results/elliptic_mestre_two_section_transverse_band_226_230_all_primes.json`;
+  its SHA-256 is `b7678f8fa8987396fb0df27ad6947dedea66501d1188d3099af553835459c836`.
+
+- `elliptic_mestre_transverse_component_independence_h5.json` is the exact
+  mod-3 quotient comparison over the height-five rational `r,T` grid of the
+  rational transverse component.  Of 1,330 pairs, 1,324 have a torsion-safe
+  certificate through prime 101; none gains a quotient direction on adjoining
+  the two affine points, and the maximum recorded rank is 9.  This is a
+  bounded non-promotion screen, not a generic dependence or rank upper bound.
+  Regenerate it with
+  `PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/screen_mestre_transverse_component_independence.py --root-height 5 --parameter-height 5 --prime-bound 101 --output artifacts/generated-results/elliptic_mestre_transverse_component_independence_h5.json`;
+  its whole-file SHA-256 is
+  `a74caa056d2aef67a10985f02f202a2c12ea36362b2a882101d161a754964ad3`.
+
+- `elliptic_mestre_transverse_component_r2_t1_relations.json` records two
+  exact rational group-law relations placing both affine component points in
+  the visible subgroup at `r=2,T=1`.  Exact mod-3 reduction has rank 9 both
+  before and after adjoining them; PARI/GP's height diagnostics and `ellrank`
+  bounds `[9,9]` are included as computational support for this fibre.  It
+  does not prove generic dependence or saturation.  Regenerate it with
+  `PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/audit_mestre_transverse_component_relations.py --output artifacts/generated-results/elliptic_mestre_transverse_component_r2_t1_relations.json`;
+  its whole-file SHA-256 is
+  `a1e6d1a89eb0e0e57314b07c0eb06a37a7dba40da7509221b2dc404a33c3d2ef`.
+
+- `elliptic_mestre_transverse_component_generic_relations.json` proves over
+  `Q(r,T)` that both selected affine sections on the component through
+  `(0,1,7,8,9,11)` are visible combinations.  Therefore this component does
+  not yield a generic rank jump.  It uses recursive square-root and
+  triangular-ordinate arithmetic, not expanded residuals.  Generate it with
+  `PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/verify_mestre_transverse_component_generic_relations.py --output artifacts/generated-results/elliptic_mestre_transverse_component_generic_relations.json`;
+  its SHA-256 is `401e10fbbed16270706993a117a889d78936f4c2650b0fb719a88f1acea1d274`.
+
 - `elliptic-curves/crt_lattice_calibration_v1.json` is the first exact
   mechanism calibration for the separate elliptic-curve programme.  It lifts
   the factor `27-4*t^2` at `23^3,47^2,73^2`, tests all eight root choices,

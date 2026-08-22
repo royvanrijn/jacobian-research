@@ -24,6 +24,7 @@ from __future__ import annotations
 
 import argparse
 from fractions import Fraction
+import json
 from pathlib import Path
 import sys
 import time
@@ -59,6 +60,12 @@ def f2_rank(rows):
     return rank
 
 
+def f2_mask(row):
+    """Pack an explicitly ordered GF(2) row for the residual quotient ledger."""
+
+    return sum(int(bit) << index for index, bit in enumerate(row))
+
+
 def qpari(pari, q):
     try:
         n = q.numerator()
@@ -75,8 +82,9 @@ def local_square_everywhere_2(pari, nf, two_primes, a):
 
 def two_adic_coords(pari, nf, two_primes, alphas):
     basis = []
+    basis_origins = []
     coords = []
-    for alpha in alphas:
+    for i, alpha in enumerate(alphas):
         r = len(basis)
         found = None
         for mask in range(1 << r):
@@ -91,6 +99,7 @@ def two_adic_coords(pari, nf, two_primes, alphas):
                 break
         if found is None:
             basis.append(alpha)
+            basis_origins.append(i)
             for row in coords:
                 row.append(0)
             row = [0] * len(basis)
@@ -98,7 +107,7 @@ def two_adic_coords(pari, nf, two_primes, alphas):
             coords.append(row)
         else:
             coords.append(found)
-    return coords
+    return basis, basis_origins, coords
 
 
 def prime_local_rows(pari, nf, alphas, q):
@@ -121,7 +130,7 @@ def prime_local_rows(pari, nf, alphas, q):
             residue = pari.nfmodpr(nf, unit, modpr)
             row.extend((v & 1, 0 if bool(pari.issquare(residue)) else 1))
         rows.append(row)
-    return rows, len(places)
+    return rows, tuple(str(pr) for pr, _, _ in places)
 
 
 def append_columns(rows, extra):
@@ -136,9 +145,21 @@ def main():
         "artifacts/generated-results/elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json"))
     ap.add_argument("--prime-bound", type=int, default=5000)
     ap.add_argument("--target-rank", type=int, default=20)
+    ap.add_argument(
+        "--output",
+        type=Path,
+        default=Path(
+            "artifacts/local/elliptic-curves/"
+            "fermigier_rank20_signature_map.json"
+        ),
+        help=(
+            "write the known Kummer image in the BNF-free local/fingerprint "
+            "quotient format"
+        ),
+    )
     args = ap.parse_args()
 
-    from sage.all import EllipticCurve, QQ, ZZ, pari, prime_range
+    from sage.all import AA, EllipticCurve, PolynomialRing, QQ, ZZ, pari, prime_range
 
     data = load_descent_basis(args.manifest, args.candidate_record)
     E = EllipticCurve(QQ, [sage_q(v) for v in data.model])
@@ -171,28 +192,69 @@ def main():
 
     # Baseline: odd bad-prime local square classes.
     rows = [[] for _ in alphas]
+    local_coordinates = []
     for p in sorted(bad):
         if p == 2:
             continue
-        extra, _ = prime_local_rows(pari, nf, alphas, p)
+        extra, places = prime_local_rows(pari, nf, alphas, p)
         rows = append_columns(rows, extra)
+        for place_index, prime_ideal in enumerate(places):
+            local_coordinates.extend(
+                [
+                    {
+                        "kind": "odd_valuation_parity",
+                        "rational_prime": p,
+                        "prime_ideal": prime_ideal,
+                        "place_index": place_index,
+                    },
+                    {
+                        "kind": "odd_unit_squareclass",
+                        "rational_prime": p,
+                        "prime_ideal": prime_ideal,
+                        "place_index": place_index,
+                    },
+                ]
+            )
 
     rank_odd = f2_rank(rows)
 
     # Add exact 2-adic coordinates.
     two_primes = list(pari.idealprimedec(nf, 2))
-    tw = two_adic_coords(pari, nf, two_primes, alphas)
+    two_basis, two_basis_origins, tw = two_adic_coords(
+        pari, nf, two_primes, alphas
+    )
     rows = append_columns(rows, tw)
+    local_coordinates.extend(
+        {
+            "kind": "two_adic_product_basis",
+            "basis_index": index,
+            "generator_power_basis": f"({xqs[two_basis_origins[index]]},-1,0)",
+            "two_adic_primes": [str(pr) for pr in two_primes],
+        }
+        for index in range(len(two_basis))
+    )
     rank_odd2 = f2_rank(rows)
 
     # Add real signs.
-    roots = list(pari.polrootsreal(f))
+    polynomial_ring = PolynomialRing(QQ, "z")
+    z = polynomial_ring.gen()
+    exact_roots = list((z**3 + QQ(A) * z**2 + QQ(B) * z + QQ(C)).roots(
+        AA, multiplicities=False
+    ))
     real_rows = []
     for xq in xqs:
-        xx = qpari(pari, xq)
-        real_rows.append([1 if xx - r < 0 else 0 for r in roots])
+        real_rows.append([1 if QQ(xq) - root < 0 else 0 for root in exact_roots])
     rows = append_columns(rows, real_rows)
+    local_coordinates.extend(
+        {
+            "kind": "real_sign",
+            "embedding_index": index,
+            "root_order": "increasing_real_root",
+        }
+        for index in range(len(exact_roots))
+    )
     baseline_rank = f2_rank(rows)
+    local_rows = [list(row) for row in rows]
 
     print(
         f"{PROTOCOL}|stage=baseline|odd_rank={rank_odd}|odd_plus_2={rank_odd2}"
@@ -201,6 +263,7 @@ def main():
     )
 
     selected = []
+    fingerprint_coordinates = []
     current = rows
 
     for q in prime_range(3, args.prime_bound + 1):
@@ -210,7 +273,7 @@ def main():
 
         t0 = time.monotonic()
         try:
-            extra, nplaces = prime_local_rows(pari, nf, alphas, q)
+            extra, places = prime_local_rows(pari, nf, alphas, q)
         except Exception as exc:
             print(
                 f"{PROTOCOL}|stage=prime|q={q}|status=error|error={exc}",
@@ -224,18 +287,35 @@ def main():
         elapsed = time.monotonic() - t0
 
         if new_rank > old_rank:
-            selected.append((q, nplaces, new_rank - old_rank))
+            selected.append((q, len(places), new_rank - old_rank))
             current = trial
+            for place_index, prime_ideal in enumerate(places):
+                fingerprint_coordinates.extend(
+                    [
+                        {
+                            "kind": "auxiliary_valuation_parity",
+                            "rational_prime": q,
+                            "prime_ideal": prime_ideal,
+                            "place_index": place_index,
+                        },
+                        {
+                            "kind": "auxiliary_unit_squareclass",
+                            "rational_prime": q,
+                            "prime_ideal": prime_ideal,
+                            "place_index": place_index,
+                        },
+                    ]
+                )
             print(
                 f"{PROTOCOL}|stage=prime|q={q}|status=selected"
-                f"|places={nplaces}|gain={new_rank-old_rank}|rank={new_rank}"
+                f"|places={len(places)}|gain={new_rank-old_rank}|rank={new_rank}"
                 f"|seconds={elapsed:.6f}",
                 flush=True,
             )
         elif elapsed >= 0.1:
             print(
                 f"{PROTOCOL}|stage=prime|q={q}|status=no_gain"
-                f"|places={nplaces}|rank={old_rank}|seconds={elapsed:.6f}",
+                f"|places={len(places)}|rank={old_rank}|seconds={elapsed:.6f}",
                 flush=True,
             )
 
@@ -261,6 +341,50 @@ def main():
             f"|missing={KNOWN_RANK-final_rank}|action=raise_prime_bound",
             flush=True,
         )
+
+    # This is a faithful coordinate representation of the *known* Kummer
+    # image, not a Selmer computation.  A relation collector can append an
+    # unexplained global squareclass in these exact coordinates and immediately
+    # reduce it modulo the displayed known-MW target image.
+    fingerprint_width = len(fingerprint_coordinates)
+    if any(len(row) != len(local_coordinates) + fingerprint_width for row in current):
+        raise ArithmeticError("signature-coordinate bookkeeping lost alignment")
+    signature_map = {
+        "schema": "elliptic-curves.bnf-free-signature-map.v1",
+        "status": "known_kummer_image_only_not_a_selmer_bound",
+        "field_generator": "theta",
+        "generator_coordinate_order": ["1", "theta", "theta^2"],
+        "defining_polynomial_ascending": [str(C), str(B), str(A), "1"],
+        "local_dimension": len(local_coordinates),
+        "fingerprint_dimension": fingerprint_width,
+        "local_coordinates": local_coordinates,
+        "fingerprint_coordinates": fingerprint_coordinates,
+        "known_mw_images": [
+            {
+                "label": f"P{index + 1}",
+                "generator": f"({xqs[index]},-1,0)",
+                "generator_coefficients": [str(xqs[index]), "-1", "0"],
+                "local": f"0x{f2_mask(local_rows[index]):x}",
+                "fingerprint": f"0x{f2_mask(current[index][len(local_coordinates):]):x}",
+            }
+            for index in range(KNOWN_RANK)
+        ],
+        "selected_auxiliary_primes": [q for q, _, _ in selected],
+        "known_mw_target_rank": final_rank,
+        "class_quotient_certification": {
+            "method": "none",
+            "remaining_dimension_upper_bound": None,
+        },
+    }
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    args.output.write_text(json.dumps(signature_map, indent=2, sort_keys=True) + "\n")
+    print(
+        f"{PROTOCOL}|stage=write_signature_map|path={args.output}"
+        f"|local_dimensions={len(local_coordinates)}"
+        f"|fingerprint_dimensions={fingerprint_width}"
+        f"|known_mw_target_rank={final_rank}",
+        flush=True,
+    )
 
 
 if __name__ == "__main__":

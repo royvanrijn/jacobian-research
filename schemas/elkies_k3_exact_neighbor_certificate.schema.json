@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "elkies-k3.exact-neighbor-certificate.v1",
+  "title": "Exact elliptic-neighbor lattice certificate",
+  "type": "object",
+  "required": [
+    "schema", "status", "proof_boundary", "software", "source", "divisor",
+    "supplied_curves", "child", "proof_metadata", "certificate_sha256"
+  ],
+  "properties": {
+    "schema": {"const": "elkies-k3.exact-neighbor-certificate.v1"},
+    "status": {"const": "PASS_EXACT_NEIGHBOR"},
+    "proof_boundary": {"type": "string"},
+    "software": {
+      "type": "object",
+      "required": ["sage_version"],
+      "properties": {"sage_version": {"type": "string"}}
+    },
+    "source": {
+      "type": "object",
+      "required": ["ns_gram", "ns_gram_sha256", "old_fiber"]
+    },
+    "divisor": {
+      "type": "object",
+      "required": [
+        "raw", "reduced", "old_fiber_degree", "nonnegative_on_supplied_curves",
+        "supplied_curve_count", "fixed_component_sequence"
+      ]
+    },
+    "supplied_curves": {"type": "array"},
+    "child": {
+      "type": "object",
+      "required": [
+        "frame", "frame_sha256", "transport", "transport_sha256",
+        "minimized_frame", "minimized_frame_sha256", "minimized_basis",
+        "root_data", "root_smith_invariants", "root_lattice_primitive",
+        "minimization_status", "mw_height", "lifted_simple_components"
+      ]
+    },
+    "proof_metadata": {"type": "object"},
+    "certificate_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": false
+}

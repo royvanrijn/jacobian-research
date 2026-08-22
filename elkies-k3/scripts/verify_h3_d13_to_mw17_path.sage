@@ -27,6 +27,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
+ENGINE = ROOT / "elkies-k3/scripts/exact_neighbor_engine.sage"
+load(str(ENGINE))
 U = matrix(ZZ, ((0, 1), (1, 0)))
 SOURCE = ROOT / "elkies-k3/data/fibrations/h3_q6_q8_d13_mw4_root_adapted_frame.txt"
 DEFAULT_OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-h3-d13-to-mw17-path.json"
@@ -173,52 +175,14 @@ def matrix_digest(value):
     return hashlib.sha256(payload.encode()).hexdigest()
 
 
-def bezout_vector_for_pairing(ns, fiber):
-    pairings = list(ns * fiber)
-    current = ZZ(0)
-    result = [ZZ(0)] * ns.nrows()
-    for index, value in enumerate(pairings):
-        if value == 0:
-            continue
-        divisor, left, right = xgcd(current, ZZ(value))
-        result = [left * entry for entry in result]
-        result[index] += right
-        current = divisor
-    assert abs(current) == 1
-    if current == -1:
-        result = [-entry for entry in result]
-    return vector(ZZ, result)
-
-
 def child_frame(ns, fiber):
-    assert fiber * ns * fiber == 0
-    mate = bezout_vector_for_pairing(ns, fiber)
-    mate_square = ZZ(mate * ns * mate)
-    assert mate_square % 2 == 0
-    mate -= (mate_square // 2) * fiber
-    assert mate * ns * mate == 0 and fiber * ns * mate == 1
-    kernel = matrix(
-        ZZ, [list(fiber * ns), list(mate * ns)]
-    ).right_kernel_matrix()
-    child = -(kernel * ns * kernel.transpose())
-    basis = matrix(
-        ZZ,
-        [list(fiber), list(mate)] + [list(row) for row in kernel.rows()],
-    )
-    assert abs(basis.det()) == 1
-    assert basis * ns * basis.transpose() == block_diagonal_matrix(U, -child)
-    return child, basis
+    old_fiber = vector(ZZ, [1, 0] + [0] * (ns.nrows() - 2))
+    result = degree_two_neighbor(ns, fiber, old_fiber, curves=())
+    return result["child_frame"], result["transport"]
 
 
 def root_data(frame):
-    short = pari(frame).qfminim(2)
-    count = ZZ(short[0])
-    if count == 0:
-        return 0, 0, 1
-    roots = matrix(ZZ, short[2]).transpose()
-    basis = roots.row_module().basis_matrix()
-    gram = basis * frame * basis.transpose()
-    return basis.rank(), count, abs(ZZ(gram.det()))
+    return tuple(int(value) for value in roots_and_data(frame)[2])
 
 
 def main():
@@ -361,7 +325,9 @@ def main():
         "composite_transport_sha256": matrix_digest(composite),
     }
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
-    arguments.output.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
+    arguments.output.write_text(
+        json.dumps(payload, indent=2, sort_keys=True, default=int) + "\n"
+    )
     print(
         "H3D13MW17|steps=11|final=rootless|MW=17|transport_det={}|"
         "transport_sha256={}|artifact={}|status={}".format(

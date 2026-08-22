@@ -5,6 +5,8 @@ from __future__ import annotations
 import argparse
 import ast
 import glob
+import json
+from math import factorial
 import re
 import sys
 import time
@@ -207,10 +209,46 @@ def main():
         default=20,
     )
 
+    ap.add_argument(
+        "--write-principal-relations",
+        type=Path,
+        help=(
+            "write the exact principal generators and packed prime-ideal "
+            "parity rows as a local BNF-free relation ledger"
+        ),
+    )
+
+    ap.add_argument(
+        "--complete-factor-base",
+        action="store_true",
+        help=(
+            "materialize every prime ideal above rational primes through the "
+            "factor-base bound, enabling a conditional Minkowski generation "
+            "certificate when that bound is large enough"
+        ),
+    )
+    ap.add_argument(
+        "--write-large-prime-target-plan",
+        type=Path,
+        help=(
+            "write a machine-readable next-target plan from the exact sparse "
+            "large-prime incidence matrix"
+        ),
+    )
+    ap.add_argument(
+        "--target-plan-count",
+        type=int,
+        default=20,
+        help="number of ranked unresolved large-prime ideals in a target plan",
+    )
+
     args = ap.parse_args()
+    if args.target_plan_count < 1:
+        raise SystemExit("--target-plan-count must be positive")
 
     from sage.all import (
         QQ,
+        RealField,
         ZZ,
         NumberField,
         PolynomialRing,
@@ -523,6 +561,7 @@ def main():
     lp_index = {}
 
     fb_meta = {}
+    fb_primes = {}
     lp_meta = {}
 
     lp_occurrences = defaultdict(list)
@@ -539,6 +578,7 @@ def main():
                 "key": key,
                 "S": int(q) in S_RATIONAL,
             }
+            fb_primes[index] = P
 
         return fb_index[key]
 
@@ -563,6 +603,44 @@ def main():
 
         return index
 
+    # A factor base that contains every prime ideal of norm at most the
+    # Minkowski bound generates the ordinary ideal class group.  The existing
+    # relation rows then give a one-sided (and therefore safe) mod-2 upper
+    # bound after S-primes are killed: missing principal relations can only
+    # make the reported quotient larger.  This is intentionally opt-in since
+    # the relevant bound can be much larger than an efficient experimental
+    # factor base.
+    real_field = RealField(256)
+    degree = K.degree()
+    _, complex_places = K.signature()
+    minkowski_raw = (
+        (real_field(4) / real_field.pi()) ** complex_places
+        * real_field(factorial(degree))
+        / real_field(degree) ** degree
+        * real_field(abs(K.discriminant())).sqrt()
+    )
+    minkowski_bound = ZZ(minkowski_raw.ceil())
+
+    if args.complete_factor_base:
+        for q in trial_primes:
+            for P in primes_above(q):
+                get_fb_column(P, q)
+        for p in S_RATIONAL:
+            for P in primes_above(p):
+                get_fb_column(P, p)
+
+    factor_base_generates = (
+        args.complete_factor_base and args.factor_base_bound >= minkowski_bound
+    )
+    print(
+        f"{PROTOCOL}|stage=minkowski_factor_base"
+        f"|field_degree={degree}|complex_places={complex_places}"
+        f"|bound={minkowski_bound}|fb_bound={args.factor_base_bound}"
+        f"|materialized={args.complete_factor_base}"
+        f"|generates_class_group={factor_base_generates}",
+        flush=True,
+    )
+
     # --------------------------------------------------------
     # Exact ideal rows.
     # --------------------------------------------------------
@@ -578,6 +656,17 @@ def main():
             )
             for c in alpha.list()
         )
+
+    def principal_generator(alpha):
+        """Stable power-basis display for an exact principal generator.
+
+        The sparse LP matrix is only an incidence device.  Keeping this
+        expression with the row means an LP dependency can be replayed as a
+        product of actual principal generators, rather than remaining an
+        anonymous valuation-vector dependency.
+        """
+
+        return "(" + ",".join(str(QQ(c)) for c in alpha.list()) + ")"
 
     t0 = time.monotonic()
 
@@ -774,6 +863,7 @@ def main():
                 "fb": fb_row,
                 "lp": lp_row,
                 "file": record["file"],
+                "generator": principal_generator(alpha),
             }
         )
 
@@ -933,6 +1023,7 @@ def main():
                 "fb": fb_row,
                 "lp": lp_row,
                 "file": str(source),
+                "generator": principal_generator(alpha),
             }
         )
         return True
@@ -1064,6 +1155,55 @@ def main():
             flush=True,
         )
 
+    if args.write_principal_relations:
+        # This is an exact, local checkpoint for the subsequent quotient and
+        # certification lane.  It deliberately stores generators and prime
+        # ideals, rather than only a rank summary, so every later dependency
+        # can be replayed in the cubic field.
+        ledger = {
+            "schema": "elliptic-curves.bnf-free-principal-relation-ledger.v1",
+            "status": "exact_relation_rows_not_class_group_completion",
+            "factor_base_bound": args.factor_base_bound,
+            "fb_columns": [
+                {
+                    "index": index,
+                    "q": meta["q"],
+                    "S": meta["S"],
+                    "prime_ideal_key": list(meta["key"]),
+                }
+                for index, meta in sorted(fb_meta.items())
+            ],
+            "lp_columns": [
+                {
+                    "index": index,
+                    "q": meta["q"],
+                    "residue": meta["residue"],
+                    "prime_ideal_key": list(meta["key"]),
+                }
+                for index, meta in sorted(lp_meta.items())
+            ],
+            "relations": [
+                {
+                    "label": relation["m"],
+                    "generator_power_basis": relation["generator"],
+                    "fb_parity_mask_hex": hex(relation["fb"]),
+                    "lp_parity_mask_hex": hex(relation["lp"]),
+                    "source": relation["file"],
+                }
+                for relation in exact_rows
+            ],
+        }
+        args.write_principal_relations.parent.mkdir(parents=True, exist_ok=True)
+        args.write_principal_relations.write_text(
+            json.dumps(ledger, indent=2, sort_keys=True) + "\n"
+        )
+        print(
+            f"{PROTOCOL}|stage=write_principal_relations"
+            f"|path={args.write_principal_relations}|relations={len(exact_rows)}"
+            f"|status=EXACT_ROWS_NOT_COMPLETENESS_CERTIFICATE",
+            flush=True,
+        )
+
     # --------------------------------------------------------
     # Gaussian elimination on LARGE-PRIME columns only.
     #
@@ -1149,6 +1289,20 @@ def main():
         - lp_rank
     )
 
+    # Quotient the exact pure-FB relations by all Selmer-support prime ideals.
+    # When ``factor_base_generates`` holds this is an unconditional upper bound
+    # on Cl(O_K[S^{-1}])[2], not a rank-stabilization heuristic.
+    s_class_pivots = dict(fb_pivots)
+    for index, meta in fb_meta.items():
+        if meta["S"]:
+            insert_packed(s_class_pivots, 1 << index)
+    s_class_dimension_upper_bound = len(fb_index) - len(s_class_pivots)
+    class_bound_status = (
+        "CERTIFIED_MINKOWSKI_FACTOR_BASE"
+        if factor_base_generates
+        else "UNCERTIFIED_FACTOR_BASE_DOES_NOT_REACH_MINKOWSKI_BOUND"
+    )
+
     print(
         f"{PROTOCOL}|stage=elimination"
         f"|relations={len(exact_rows)}"
@@ -1160,6 +1314,87 @@ def main():
         f"|trivial_cycles={trivial_cycles}",
         flush=True,
     )
+    dimension_field = (
+        f"dimension_upper_bound={s_class_dimension_upper_bound}"
+        if factor_base_generates
+        else f"dimension_factor_base_model={s_class_dimension_upper_bound}"
+    )
+    print(
+        f"{PROTOCOL}|stage=s_class_mod2_upper_bound"
+        f"|status={class_bound_status}"
+        f"|{dimension_field}"
+        f"|relation_rank={len(fb_pivots)}"
+        f"|S_columns={sum(meta['S'] for meta in fb_meta.values())}"
+        f"|interpretation=IDEAL_CLASS_QUOTIENT_ONLY_NOT_SELMER",
+        flush=True,
+    )
+
+    if args.write_principal_relations:
+        # Extend the early exact-row checkpoint with the LP-eliminated rows
+        # that the generic BNF-free S-class audit consumes.  The old fields
+        # remain for backwards-compatible chain diagnostics; these standard
+        # fields make each closed row replayable as a product of its stored
+        # principal generators.
+        ledger = json.loads(args.write_principal_relations.read_text())
+        ledger.update(
+            {
+                "field_polynomial": str(f),
+                "defining_polynomial_ascending": [str(B), str(A), "0", "1"],
+                "field_discriminant": str(K.discriminant()),
+                "generator_coordinate_order": ["1", "theta", "theta^2"],
+                "factor_base_completion": {
+                    "all_prime_ideals_above_rational_primes_through": (
+                        args.factor_base_bound
+                    ),
+                    "materialized_complete_factor_base": bool(
+                        args.complete_factor_base
+                    ),
+                    "extra_declared_S_rational_primes": sorted(S_RATIONAL),
+                },
+                "selmer_rational_primes": sorted(S_RATIONAL),
+                "factor_base": [
+                    {
+                        "hnf": str(fb_primes[index].pari_hnf()),
+                        "norm": int(fb_primes[index].norm()),
+                        "residue_degree": int(
+                            fb_primes[index].residue_class_degree()
+                        ),
+                        "rational_prime": int(fb_primes[index].smallest_integer()),
+                    }
+                    for index in sorted(fb_meta)
+                ],
+                "S_columns": [
+                    index for index, meta in sorted(fb_meta.items()) if meta["S"]
+                ],
+                "generators": [
+                    {
+                        "power_basis": relation["generator"].strip("()").split(
+                            ","
+                        ),
+                        "source": relation["file"],
+                        "label": str(relation["m"]),
+                    }
+                    for relation in exact_rows
+                ],
+                "closed_relations": [
+                    {
+                        "fb_parity_mask_hex": hex(fb),
+                        "generator_indices": sorted(provenance),
+                        "kind": "lp_eliminated_relation",
+                    }
+                    for fb, provenance in pure_fb_rows
+                ],
+            }
+        )
+        args.write_principal_relations.write_text(
+            json.dumps(ledger, indent=2, sort_keys=True) + "\n"
+        )
+        print(
+            f"{PROTOCOL}|stage=write_bnf_free_closures"
+            f"|path={args.write_principal_relations}"
+            f"|generators={len(exact_rows)}|closed_relations={len(pure_fb_rows)}",
+            flush=True,
+        )
 
     # Solve the exact sparse system against the certified chain endpoint.
     # This proves whether the logged pool genuinely connects the original
@@ -1249,6 +1484,10 @@ def main():
             exact_rows[i]["m"]
             for i in sorted(provenance)
         ]
+        generators = [
+            exact_rows[i]["generator"]
+            for i in sorted(provenance)
+        ]
 
         print(
             f"{PROTOCOL}|pure={index}"
@@ -1256,7 +1495,9 @@ def main():
             f"|fb_support={len(support)}"
             f"|S_support={sum(flag for q,flag in support)}"
             f"|m={','.join(map(str,ms))}"
-            f"|rational_support="
+            + "|generator_product="
+            + "*".join(generators)
+            + f"|rational_support="
             + ",".join(
                 (
                     f"{q}{'S' if is_s else ''}"
@@ -1634,8 +1875,9 @@ def main():
 
     candidates.sort()
 
+    target_plan = []
     for rank, item in enumerate(
-        candidates[:20],
+        candidates[: args.target_plan_count],
         1,
     ):
         (
@@ -1656,6 +1898,51 @@ def main():
             f"|pivot={int(column in pivot_columns)}"
             f"|witness={occurrences[0]}"
             f"|ideal_key={lp_meta[column]['key'][1]}",
+            flush=True,
+        )
+        target_plan.append(
+            {
+                "rank": rank,
+                "rational_prime": int(q),
+                "residue": int(lp_meta[column]["residue"]),
+                "prime_ideal_hnf": lp_meta[column]["key"][1],
+                "occurrence_count": -neg_count,
+                "is_elimination_pivot": bool(column in pivot_columns),
+                # Some exact relation sources use numeric rows while the
+                # ideal-lattice source uses stable symbolic labels (for
+                # example ``I9``).  A target plan is an audit trail, not a
+                # row-number API, so preserve the source identifier exactly.
+                "first_witness_relation_id": str(occurrences[0]),
+            }
+        )
+
+    if args.write_large_prime_target_plan:
+        plan = {
+            "schema": "elliptic-curves.bnf-free-large-prime-target-plan.v1",
+            "status": "EXACT_SPARSE_INCIDENT_TARGETS_NOT_A_SELMER_CERTIFICATE",
+            "factor_base_bound": args.factor_base_bound,
+            "exact_row_count": len(exact_rows),
+            "large_prime_column_count": len(lp_index),
+            "large_prime_rank": lp_rank,
+            "large_prime_nullity": lp_nullity,
+            "targets": target_plan,
+            "reproduction": {
+                "search_script": "elliptic-curves/cas/search_curve273_ideal_lattice_relations.sage",
+                "target_syntax": "rational_prime:residue",
+                "selection": (
+                    "elimination pivots first, then higher incidence, then "
+                    "smaller rational prime"
+                ),
+            },
+        }
+        args.write_large_prime_target_plan.parent.mkdir(parents=True, exist_ok=True)
+        args.write_large_prime_target_plan.write_text(
+            json.dumps(plan, indent=2, sort_keys=True) + "\n"
+        )
+        print(
+            f"{PROTOCOL}|stage=write_target_plan"
+            f"|path={args.write_large_prime_target_plan}|targets={len(target_plan)}"
+            "|status=EXACT_SPARSE_INCIDENT_TARGETS",
             flush=True,
         )
 

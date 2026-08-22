@@ -1,0 +1,209 @@
+{
+  "candidate_root_sha256": "daf321179f286100fe33fce2afcf03b74529f913e143d9105e324a1fea585fdb",
+  "diameter_band": [
+    211,
+    215
+  ],
+  "hensel_precision": 8,
+  "hensel_primes": [
+    7,
+    11,
+    13,
+    17
+  ],
+  "multi_companion_records": [
+    {
+      "pair_jacobian_rank_histogram": {
+        "6": 6,
+        "7": 4
+      },
+      "roots": [
+        0,
+        20,
+        137,
+        162,
+        169,
+        214
+      ],
+      "section_count": 5
+    },
+    {
+      "pair_jacobian_rank_histogram": {
+        "6": 1,
+        "7": 2
+      },
+      "roots": [
+        0,
+        9,
+        119,
+        121,
+        200,
+        211
+      ],
+      "section_count": 3
+    }
+  ],
+  "nonreflection_square_leading_candidate_count": 118,
+  "obstruction_zero_record_count": 24381,
+  "prime_strategy": "union of exact reconstructed sections over every declared prime",
+  "rank_seven_hits": [
+    {
+      "roots": [
+        0,
+        9,
+        119,
+        121,
+        200,
+        211
+      ],
+      "transverse_pairs": [
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "sections": [
+            [
+              "211/101",
+              "-79/101"
+            ],
+            [
+              "11605/909",
+              "0"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "sections": [
+            [
+              "211/101",
+              "79/101"
+            ],
+            [
+              "11605/909",
+              "0"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "roots": [
+        0,
+        20,
+        137,
+        162,
+        169,
+        214
+      ],
+      "transverse_pairs": [
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "sections": [
+            [
+              "214/97",
+              "-7/97"
+            ],
+            [
+              "12519/1940",
+              "0"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "sections": [
+            [
+              "214/97",
+              "7/97"
+            ],
+            [
+              "12519/1940",
+              "0"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "sections": [
+            [
+              "12519/1940",
+              "0"
+            ],
+            [
+              "11549/970",
+              "-137/97"
+            ]
+          ]
+        },
+        {
+          "pivot_columns": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "sections": [
+            [
+              "12519/1940",
+              "0"
+            ],
+            [
+              "11549/970",
+              "137/97"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "rank_seven_pair_count": 6,
+  "reconstructed_section_count_histogram": {
+    "0": 116,
+    "3": 1,
+    "5": 1
+  },
+  "scope": "a bounded new-diameter screen; no absence claim outside this band or section chart",
+  "status": "exact post-max-200 transverse seed band screen completed"
+}

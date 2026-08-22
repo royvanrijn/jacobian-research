@@ -1,0 +1,32 @@
+{
+  "base_point": {
+    "u": "-3",
+    "v": "-8/3"
+  },
+  "leading_invariant": "[8u(u-2)(u-1)(u+1)(u^2+2)/((u+2)(u^2-u+4)^2)]^2",
+  "not_established": [
+    "section intersections or a Shioda Gram matrix",
+    "saturation or independence from the existing generic rank-13 subgroup",
+    "generic rank at least 14"
+  ],
+  "open_parameter_locus": "u != 0,-2 and the six-root discriminant nonzero",
+  "parameter": "u, with v=(u^2+u+2)/u",
+  "residual_identity_certificate": {
+    "admissible_exact_sample_count": 1143,
+    "all_recursive_residuals_vanish": true,
+    "cleared_numerator_degree_bound": 1200,
+    "common_coordinate_denominator": "((u+2)(u^2+2)(u^2-u+4))^4",
+    "residual_total_degree_bound": 60
+  },
+  "second_section": {
+    "intercept": "-(2u^6-u^5+4u^4-u^3-8u^2-4u-16)/(2(u+2)(u^2+2)(u^2-u+4))",
+    "slope": "u/(u^2+2)"
+  },
+  "source_chart_comparison": {
+    "all_normalized_root_moduli_and_first_line_match": true,
+    "cleared_degree_bound": 56,
+    "sample_count": 59
+  },
+  "status": "exact rational Fermigier two-section component identity verified",
+  "triangular_ordinate_conclusion": "both affine sections have rational cubic ordinates on the stated open locus"
+}

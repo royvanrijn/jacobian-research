@@ -963,6 +963,163 @@ PYTHONPATH=elliptic-curves/cas python3 \
   elliptic-curves/cas/verify_mestre_02595143168205_discriminants.py
 PYTHONPATH=elliptic-curves/cas python3 \
   elliptic-curves/cas/verify_mestre_dsquare_four_u197.py
+python3 elliptic-curves/cas/probe_mestre_two_section_local_continuation.py \
+  --precision 4 --bivariate-order 5 --output \
+  artifacts/generated-results/elliptic_mestre_two_section_local_continuation.json
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/audit_mestre_dsquare_all_companion_relations.py --output \
+  artifacts/generated-results/elliptic_mestre_dsquare_all_companion_generic_relations.json
+PYTHONPATH=elliptic-curves/cas .venv/bin/python -m unittest \
+  elliptic-curves/tests/test_mestre_dsquare_all_companion_relations.py
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/probe_mestre_transverse_two_section.py --precision 4
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/probe_mestre_diameter235_eight_companion.py --output \
+  artifacts/generated-results/elliptic_mestre_diameter235_eight_companion_local.json
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/verify_mestre_diameter235_eight_companion_component.py --output \
+  artifacts/generated-results/elliptic_mestre_diameter235_eight_companion_component.json
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/probe_mestre_diameter235_eight_companion.py \
+  --order 32 --precision 2 --plane-relation-search --output \
+  artifacts/generated-results/elliptic_mestre_diameter235_eight_companion_low_bidegree_c3_c4_order32.json
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/verify_mestre_transverse_two_section_component.py --output \
+  artifacts/generated-results/elliptic_mestre_transverse_two_section_component.json
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/audit_mestre_transverse_two_section_specialization.py
+PYTHONPATH=elliptic-curves/cas python3 -m unittest \
+  elliptic-curves/tests/test_mestre_transverse_two_section.py
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/screen_mestre_two_section_transverse_seeds.py --output \
+  artifacts/generated-results/elliptic_mestre_two_section_seed_screen_max200.json
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/screen_mestre_two_section_transverse_seeds.py --all-primes --output \
+  artifacts/generated-results/elliptic_mestre_two_section_seed_screen_max200_all_primes.json
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/audit_mestre_multprime_seed_classification.py --output \
+  artifacts/generated-results/elliptic_mestre_two_section_seed_screen_max200_all_primes_classification.json
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/screen_mestre_fermigier_two_section_escape.py --output \
+  artifacts/generated-results/elliptic_mestre_fermigier_two_section_escape_h40.json
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/probe_mestre_fermigier_two_section_local_continuation.py \
+  --order 18 --pade-degree 8 --output \
+  artifacts/generated-results/elliptic_mestre_fermigier_two_section_local_branch.json
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/verify_mestre_fermigier_two_section_component.py --output \
+  artifacts/generated-results/elliptic_mestre_fermigier_two_section_component.json
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/audit_mestre_fermigier_two_section_intersection.py --output \
+  artifacts/generated-results/elliptic_mestre_fermigier_two_section_intersection.json
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/screen_mestre_fermigier_two_section_component_escape.py --output \
+  artifacts/generated-results/elliptic_mestre_fermigier_two_section_component_escape_h5_t4.json
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/screen_mestre_fermigier_two_section_height_triage.py \
+  --height 10 --t-values 1,2,3 --output \
+  artifacts/generated-results/elliptic_mestre_fermigier_two_section_height_triage_h10_t123.json
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/verify_mestre_fermigier_two_section_generic_rank13.py --output \
+  artifacts/generated-results/elliptic_mestre_fermigier_two_section_generic_rank13.json
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/probe_mestre_conjugate_two_section_germ.py --output \
+  artifacts/generated-results/elliptic_mestre_conjugate_two_section_germ.json
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/audit_mestre_conjugate_two_section_seed_relations.py --output \
+  artifacts/generated-results/elliptic_mestre_conjugate_two_section_seed_relations.json
+PYTHONPATH=elliptic-curves/cas python3 -m unittest \
+  elliptic-curves/tests/test_mestre_two_section_seed_screen.py
+PYTHONPATH=elliptic-curves/cas python3 -m unittest \
+  elliptic-curves/tests/test_mestre_multprime_seed_classification.py
+PYTHONPATH=elliptic-curves/cas python3 -m unittest \
+  elliptic-curves/tests/test_mestre_fermigier_two_section_escape.py
+PYTHONPATH=elliptic-curves/cas .venv/bin/python -m unittest \
+  elliptic-curves/tests/test_mestre_fermigier_two_section_local_continuation.py
+PYTHONPATH=elliptic-curves/cas .venv/bin/python -m unittest \
+  elliptic-curves/tests/test_mestre_fermigier_two_section_component.py
+PYTHONPATH=elliptic-curves/cas .venv/bin/python -m unittest \
+  elliptic-curves/tests/test_mestre_fermigier_two_section_intersection.py
+PYTHONPATH=elliptic-curves/cas .venv/bin/python -m unittest \
+  elliptic-curves/tests/test_mestre_fermigier_two_section_component_escape.py
+PYTHONPATH=elliptic-curves/cas .venv/bin/python -m unittest \
+  elliptic-curves/tests/test_mestre_fermigier_two_section_height_triage.py
+PYTHONPATH=elliptic-curves/cas .venv/bin/python -m unittest \
+  elliptic-curves/tests/test_mestre_fermigier_two_section_generic_rank13.py
+PYTHONPATH=elliptic-curves/cas .venv/bin/python -m unittest \
+  elliptic-curves/tests/test_mestre_conjugate_two_section_germ.py
+PYTHONPATH=elliptic-curves/cas .venv/bin/python -m unittest \
+  elliptic-curves/tests/test_mestre_conjugate_two_section_seed_relations.py
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/screen_mestre_transverse_component_independence.py \
+  --root-height 5 --parameter-height 5 --prime-bound 101 --output \
+  artifacts/generated-results/elliptic_mestre_transverse_component_independence_h5.json
+PYTHONPATH=elliptic-curves/cas python3 -m unittest \
+  elliptic-curves/tests/test_mestre_transverse_component_independence.py
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/audit_mestre_transverse_component_relations.py --output \
+  artifacts/generated-results/elliptic_mestre_transverse_component_r2_t1_relations.json
+PYTHONPATH=elliptic-curves/cas python3 -m unittest \
+  elliptic-curves/tests/test_mestre_transverse_component_relations.py
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/verify_mestre_transverse_two_section_conic_component.py --output \
+  artifacts/generated-results/elliptic_mestre_transverse_two_section_conic_component.json
+PYTHONPATH=elliptic-curves/cas python3 -m unittest \
+  elliptic-curves/tests/test_mestre_transverse_two_section_conic_component.py
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/audit_mestre_transverse_conic_component_relations.py --output \
+  artifacts/generated-results/elliptic_mestre_transverse_two_section_conic_component_seed_relations.json
+PYTHONPATH=elliptic-curves/cas python3 -m unittest \
+  elliptic-curves/tests/test_mestre_transverse_two_section_conic_component_relations.py
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/screen_mestre_transverse_conic_component_independence.py \
+  --root-height 5 --parameter-height 5 --prime-bound 101 --output \
+  artifacts/generated-results/elliptic_mestre_transverse_two_section_conic_component_independence_h5.json
+PYTHONPATH=elliptic-curves/cas python3 -m unittest \
+  elliptic-curves/tests/test_mestre_transverse_two_section_conic_component_independence.py
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/verify_mestre_transverse_conic_component_generic_relations.py --output \
+  artifacts/generated-results/elliptic_mestre_transverse_two_section_conic_component_generic_first_relation.json
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/verify_mestre_transverse_conic_component_generic_relations.py --include-second --output \
+  artifacts/generated-results/elliptic_mestre_transverse_two_section_conic_component_generic_relations.json
+PYTHONPATH=elliptic-curves/cas .venv/bin/python -m unittest \
+  elliptic-curves/tests/test_mestre_transverse_two_section_conic_component_generic_relations.py
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/screen_mestre_two_section_transverse_band.py \
+  --first 201 --last 205 --precision 8 --output \
+  artifacts/generated-results/elliptic_mestre_two_section_transverse_band_201_205.json
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/screen_mestre_two_section_transverse_band.py \
+  --first 201 --last 205 --precision 8 --all-primes --output \
+  artifacts/generated-results/elliptic_mestre_two_section_transverse_band_201_205_all_primes.json
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/screen_mestre_two_section_transverse_band.py \
+  --first 206 --last 210 --precision 8 --all-primes --output \
+  artifacts/generated-results/elliptic_mestre_two_section_transverse_band_206_210_all_primes.json
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/screen_mestre_two_section_transverse_band.py \
+  --first 211 --last 215 --precision 8 --all-primes --output \
+  artifacts/generated-results/elliptic_mestre_two_section_transverse_band_211_215_all_primes.json
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/audit_mestre_transverse_band_211_215.py --output \
+  artifacts/generated-results/elliptic_mestre_two_section_transverse_band_211_215_tangent_audit.json
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/screen_mestre_two_section_transverse_band.py \
+  --first 216 --last 220 --precision 8 --all-primes --output \
+  artifacts/generated-results/elliptic_mestre_two_section_transverse_band_216_220_all_primes.json
+PYTHONPATH=elliptic-curves/cas python3 \
+  elliptic-curves/cas/screen_mestre_two_section_transverse_band.py \
+  --first 221 --last 225 --precision 8 --all-primes --output \
+  artifacts/generated-results/elliptic_mestre_two_section_transverse_band_221_225_all_primes.json
+PYTHONPATH=elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/screen_mestre_two_section_transverse_band.py \
+  --first 226 --last 230 --precision 8 --all-primes --output \
+  artifacts/generated-results/elliptic_mestre_two_section_transverse_band_226_230_all_primes.json
+PYTHONPATH=elliptic-curves/cas python3 -m unittest \
+  elliptic-curves/tests/test_mestre_two_section_transverse_band.py
+PYTHONPATH=elliptic-curves/cas python3 -m unittest \
+  elliptic-curves/tests/test_mestre_transverse_band_211_215.py
 ```
 
 For centers `(0,25,95,143,168,205)`, the first two commands prove generic
@@ -982,6 +1139,24 @@ The archival discovery replay expects the locally installed `ratpoints`
 bundle at `tmp/ratpoints/root/usr/bin/ratpoints`; the tracked certificate does
 not.  Its 102 capped conductor calls and finite ratpoints box are not negative
 upper-bound evidence.
+
+The final nineteen commands separately record the rank-seven local branch
+through `(0,1,7,8,9,11)`, prove its exact rational two-section and split-six-root
+identities without expanded residuals, replay a finite-reduction
+non-promotion audit at `r=8,T=3`, and run its focused regression test.  They
+then run the bounded max-200 square-leading seed census and its focused
+replay; this finds one additional five-section/rank-seven local seed. Neither
+track establishes a height pairing, saturation, or a rank gain. Finally, the
+height-five two-parameter quotient screen checks the rational component
+directly and records no finite-reduction rank gain in its declared grid. The
+last pair records an exact `r=2,T=1` group-law non-promotion relation and its
+focused replay. The final pair proves the conic-rational component through
+`(0,7,79,81,128,137)` and its focused replay.  The final two pairs record its
+exact rank-neutral seed relations and a height-five bounded quotient screen;
+neither is a generic relation or rank upper bound.  The final pair proves an
+exact `Q(s,T)` visible-subgroup relation for the first section on that
+component.  The final command extends it to the second section, proving that
+both are generically visible; all height/saturation questions remain open.
 
 Replay the two later exact rank-19 split-infinity frontiers and their
 conditional explicit-formula diagnostics:
@@ -1978,6 +2153,150 @@ Its `Delta=11/5` conservative value is `21.033532822984...<22`; the GRH and
 BSD+GRH interpretations are conditional and do not weaken the unconditional
 rank-at-least-20 certificate.
 
+### BNF-free residual 2-Selmer relation pipeline
+
+The experimental BNF-free path retains principal generators, closes
+single-/double-large-prime relations, and audits only the mod-2 S-class
+quotient.  Start by producing a known-Mordell--Weil local/fingerprint target:
+
+```bash
+sage -python elliptic-curves/cas/run_fermigier_rank20_auxiliary_fingerprints.py \
+  --output artifacts/local/elliptic-curves/fermigier_rank20_signature_map.json
+```
+
+For a relation ledger, first augment the raw relation ledger with the free principal
+relations `(p)` for every rational prime represented in its factor base. Each
+row retains its exact rational generator and does not use BNF:
+
+```bash
+sage -python elliptic-curves/cas/augment_bnf_free_canonical_principal_relations.py \
+  --relation-ledger artifacts/local/elliptic-curves/r20_relations.json \
+  --output artifacts/local/elliptic-curves/r20_relations_canonical.json
+
+sage -python elliptic-curves/cas/audit_bnf_free_s_class_quotient.py \
+  --relation-ledger artifacts/local/elliptic-curves/r20_relations_canonical.json \
+  --assume-erh \
+  --output artifacts/local/elliptic-curves/r20_class_quotient_audit.json
+```
+
+Extract a GF(2) basis of relation combinations supported outside no S-prime,
+then apply the exact rational-square-norm and global-square gates before any
+signature calculation or cover construction:
+
+```bash
+sage -python elliptic-curves/cas/extract_bnf_free_squareclasses.py \
+  --relation-ledger artifacts/local/elliptic-curves/r20_relations_canonical.json \
+  --output artifacts/local/elliptic-curves/r20_ks2_candidates.json
+
+sage -python elliptic-curves/cas/filter_bnf_free_norm_condition.py \
+  --candidates artifacts/local/elliptic-curves/r20_ks2_candidates.json \
+  --generate-norm-kernel \
+  --relation-ledger artifacts/local/elliptic-curves/r20_relations_canonical.json \
+  --output artifacts/local/elliptic-curves/r20_nontrivial_norm_candidates.json
+
+sage -python elliptic-curves/cas/build_bnf_free_two_covers.py \
+  --candidates artifacts/local/elliptic-curves/r20_nontrivial_norm_candidates.json \
+  --output artifacts/local/elliptic-curves/r20_two_covers.json
+
+sage -python elliptic-curves/cas/audit_bnf_free_two_cover_reduction.py \
+  --covers artifacts/local/elliptic-curves/r20_two_covers.json \
+  --primes 2,3,5,7,13 \
+  --output artifacts/local/elliptic-curves/r20_cover_local_reduction.json
+```
+
+The extractor eliminates non-S factor-base columns across all closed rows, so
+it includes combinations that the older individual-row gate would miss (pass
+`--individual-s-supported-only` only for that legacy diagnostic). The norm
+stage takes the GF(2) kernel of rational norm parity over the declared Selmer
+primes, so it tests all norm-compatible products in the
+candidate span rather than only isolated relation rows. The final command
+certifies only smooth finite-field lifts and empty finite
+reductions at the listed manageable primes. It also applies valuation-Hensel
+lifting and bounded exhaustive lifting at singular reductions; a lift-state
+cap, larger primes, and the real place stay explicitly inconclusive. Feed only
+proved finite local outcomes into the early quotient with:
+
+```bash
+python3 elliptic-curves/cas/filter_bnf_free_local_selmer.py \
+  --images artifacts/local/elliptic-curves/r20_candidate_images.json \
+  --cover-local-audit artifacts/local/elliptic-curves/r20_cover_local_reduction.json \
+  --output artifacts/local/elliptic-curves/r20_finite_locally_filtered.json
+```
+
+These commands produce global candidates and selected finite-place tests
+only. Full local solubility, a complete S-class quotient certificate, and a
+Cassels--Tate pairing remain separate required steps for a residual Selmer or
+rank claim.
+
+Audit the odd local Kummer-image coverage supplied by the known rank-20
+subgroup, without pretending it resolves the two-adic place:
+
+```bash
+sage -python elliptic-curves/cas/audit_bnf_free_local_kummer_coverage.py \
+  --signature-map artifacts/local/elliptic-curves/fermigier_rank20_signature_map.json \
+  --output artifacts/local/elliptic-curves/r20_local_coverage.json
+```
+
+An equality between the known-image rank and the Tamagawa/special-fibre upper
+bound certifies that odd local factor only. Unequal ranks and the two-adic
+factor remain unresolved.
+
+Filter a candidate-image manifest at only the certified odd/real factors with:
+
+```bash
+python3 elliptic-curves/cas/filter_bnf_free_local_selmer.py \
+  --images artifacts/local/elliptic-curves/r20_candidate_images.json \
+  --local-coverage-audit artifacts/local/elliptic-curves/r20_local_coverage.json \
+  --output artifacts/local/elliptic-curves/r20_covered_places_filtered.json
+```
+
+Survival records no conclusion at the remaining places.
+
+The same full-ideal Minkowski collector also has a curve-273 preset for its
+signature `(1,1)` cubic field and declared Selmer prime set:
+
+```bash
+sage -python elliptic-curves/cas/run_fermigier_rank20_minkowski_specialq.py \
+  --curve273 --factor-base-bound 5000 \
+  --special-q-min 5003 --special-q-max 15000 --max-special-q 20 \
+  --lattice-combination-bound 2 \
+  --shape-twists=-30:0,-20:0,-10:0,-5:0,0:0,5:0,10:0,20:0,30:0 \
+  --trial-prime-bound 5000 \
+  --relation-ledger artifacts/local/elliptic-curves/curve273_minkowski_relations.json
+
+sage -python elliptic-curves/cas/augment_bnf_free_canonical_principal_relations.py \
+  --relation-ledger artifacts/local/elliptic-curves/curve273_minkowski_relations.json \
+  --output artifacts/local/elliptic-curves/curve273_minkowski_relations_canonical.json
+```
+
+This is a bounded exact relation collection, not a complete S-class or Selmer
+calculation.
+
+Derive the next arbitrary-ideal targets from the exact sparse large-prime
+incidence pool:
+
+```bash
+sage -python elliptic-curves/cas/analyze_curve273_relation_pool.py \
+  --include-full-ideal-chain --include-crt-cycle-logs \
+  --include-ideal-lattice-logs \
+  --write-large-prime-target-plan \
+  artifacts/generated-results/elliptic-curves/curve273_large_prime_target_plan_20260822.json \
+  --target-plan-count 12
+```
+
+The plan records exact sparse-elimination targets, not a completed relation
+lattice. Its pinned 2026-08-22 run has 444 independent rows on 962
+large-prime columns, hence nullity zero; it is solely a reproducible guide for
+the next three-dimensional ideal-lattice searches. Run a selected entry as an
+independent ideal-lattice search, for example:
+
+```bash
+sage -python elliptic-curves/cas/search_curve273_ideal_lattice_relations.sage \
+  --target-plan artifacts/generated-results/elliptic-curves/curve273_large_prime_target_plan_20260822.json \
+  --target-plan-rank 4 --radius 24 --shape-shifts=-48,-24,0,24,48 \
+  --preselect 3000 --factor-top 600 --factor-base-bound 1000000
+```
+
 Prove the exact arithmetic generic rank of the canonical Fermigier adapter:
 
 ```bash
@@ -2002,6 +2321,26 @@ classifies all 88 affine, quadratic, and projective Möbius transport pencils
 and all 3,160 genuine pair fiber products.  It finds no genus-zero or
 genus-one transport and no new specialization.  The result is exhaustive only
 for those declared ansatzes.
+
+Replay the exact branch-incidence code of the individual exceptional square
+conditions:
+
+```bash
+PYTHONPATH=elliptic-curves:elliptic-curves/cas .venv/bin/python \
+  elliptic-curves/cas/analyze_exceptional_branch_code.py
+```
+
+[`elliptic_exceptional_branch_code.json`](../artifacts/generated-results/elliptic_exceptional_branch_code.json)
+enumerates every elementary quadratic quotient of the ten E22 directions, the
+eight Fermigier rank-20 directions, their combined 18-direction code on the
+common `T`-line, and the eight directions at each of the ICARM 245 and 275
+anchors. All codes have disjoint irreducible sextic rows, so their smallest
+nontrivial quotient has genus two and there is no higher-support branch
+cancellation. It also exactly factors the explicitly bounded observed
+preimage pools for ICARM 243 (16) and 226 (19), while keeping those finite
+search inputs distinct from the pinned certified direction codes. The precise
+scope and pending inputs are recorded in
+[`notes/EXCEPTIONAL_BRANCH_CODE.md`](notes/EXCEPTIONAL_BRANCH_CODE.md).
 
 Replay the complete signed support-at-most-two exceptional-quotient ball:
 
@@ -2084,9 +2423,39 @@ OMP_NUM_THREADS=32 /tmp/fermigier-score-sweep 100000 500 20000 \
 ```
 
 The three integer arguments are the maximum numerator, maximum denominator,
-and retained output count.  The score is a search heuristic, not a rank or
-conductor computation, and the command intentionally writes only to the
-ignored local cache.
+and retained output count.  The output columns are the fixed staged
+rank-jump score, cumulative residual `S0`/`S5`, and the final disjoint-window
+residual `S0`/`S5`.  For a scoring prime $p$, the baseline is the exact mean
+
+$$
+  A_p=\frac{1}{\#U(\mathbf F_p)}\sum_{t\in U(\mathbf F_p)}a_p(E_t).
+$$
+
+where `U` is the good projective fibre locus; bad specializations are not
+given an ordinary $a_p$ contribution.  The score is a search heuristic, not
+a rank or conductor computation, and the command intentionally writes only to
+the ignored local cache.
+
+### Leakage-resistant rank-jump benchmark
+
+To evaluate an externally assembled, certificate-backed labelled manifest,
+run:
+
+```bash
+.venv/bin/python elliptic-curves/ecsearch/rank_jump_benchmark.py \
+  --input artifacts/local/elliptic-curves/rank_jump_labels.json \
+  --output artifacts/local/elliptic-curves/rank_jump_benchmark.json \
+  --top-k 1,5,10
+```
+
+The manifest must supply matched discovery and held-forward feature vectors,
+the candidate's certified exceptional quotient-rank lower bound, and family,
+root-shape, parametrization-component, and quadratic-twist-class identities.
+The evaluator fits only discovery-band data, leaves each entire structural
+group out in turn, and reports top-k enrichment at quotient jumps `+6`, `+8`,
+and `+10`; it intentionally reports no classification accuracy.  No labelled
+research corpus is shipped, so this command does not create a mathematical
+claim until its input labels and feature provenance are pinned separately.
 
 ### Kihara rank-14 baseline
 
