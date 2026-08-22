@@ -23,6 +23,7 @@ blocks is the remaining equation-level q=8 task.
 """
 
 import argparse
+import hashlib
 import json
 from importlib.machinery import SourceFileLoader
 from pathlib import Path
@@ -36,11 +37,16 @@ H92 = ROOT / "artifacts/local/humbert-inputs/92/igusa92.txt"
 P1 = ROOT / "artifacts/generated-results/elkies-k3-h92-p1-lift.json"
 Q8_ORBITS = ROOT / "artifacts/generated-results/elkies-k3-h3-q6-q8-orbits.json"
 FRAME = ROOT / "elkies-k3/data/fibrations/kumar_e7e8_mw2_frame_3.txt"
+CORE = ROOT / "elkies-k3/scripts/elliptic_neighbor_compiler.sage"
 DEFAULT_OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-h92-q8-generic-rr-ambient.json"
 
 
 def polynomial(ring, coefficients):
     return ring([QQ(value) for value in coefficients])
+
+
+def digest(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def load_frame(path):
@@ -54,6 +60,7 @@ def load_frame(path):
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
 args = parser.parse_args()
+exec(compile(CORE.read_text(), str(CORE), "exec"))
 
 q8 = json.loads(Q8_ORBITS.read_text())["q8"]
 hits = q8["d13_mw4_hits"]
@@ -124,6 +131,27 @@ assert tuple(vertical_difference) == (
     -11, 0, 2, 3, 4, 6, 5, 5, 6,
     -4, -5, -7, -10, -8, -6, -4, -2, 0, 0,
 )
+# Retain the natural repeated-section representative exactly.  It is linearly
+# equivalent on the generic fibre to a one-marked-point divisor, but that
+# conversion would conceal the q8 chord-power basis and must not replace this
+# literal divisor before the resolved vertical conditions are imposed.
+generic_support = certify_generic_fibre_horizontal_support(
+    source_ns,
+    divisor,
+    fiber,
+    (("O", 9, zero), ("-P1", 9, minus_p1)),
+    tuple(
+        ("source_simple_{}".format(index + 1), int(vertical_difference[index + 2]), simple[index])
+        for index in range(len(simple))
+        if vertical_difference[index + 2]
+    ),
+    fiber_twist=int(vertical_difference[0]),
+    expected_old_fiber_degree=18,
+)
+assert generic_support["reconstructed_divisor"] == tuple(divisor)
+assert [(item["name"], item["multiplicity"]) for item in generic_support["horizontal_support"]] == [
+    ("O", 9), ("-P1", 9),
+]
 
 section = json.loads(P1.read_text())
 assert section["status"] == "PASS_EXACT_H92_P1"
@@ -171,13 +199,16 @@ assert quadratic.leading_coefficient() == 1
 # while x is regular.  The following list is therefore contained in
 # L(9O+9(-P1)); it has the required degree 18 and is independent because
 # {1,x} is a QQ(t)(m)-basis by the monic quadratic above.
-basis = []
-for power in range(10):
-    basis.append({"kind": "m_power", "m_power": power, "x_power": 0,
-                  "pole_order_at_O": power, "pole_order_at_minus_P1": power})
-for power in range(8):
-    basis.append({"kind": "x_m_power", "m_power": power, "x_power": 1,
-                  "pole_order_at_O": power + 2, "pole_order_at_minus_P1": power})
+basis = [
+    {
+        "kind": entry["kind"],
+        "m_power": entry["m_power"],
+        "x_power": entry["x_power"],
+        "pole_order_at_O": entry["pole_order_at_O"],
+        "pole_order_at_minus_P1": entry["pole_order_at_marked_section"],
+    }
+    for entry in balanced_marked_chord_power_basis(9, "m", "x")
+]
 assert len(basis) == 18
 assert max(row["pole_order_at_O"] for row in basis) == 9
 assert max(row["pole_order_at_minus_P1"] for row in basis) == 9
@@ -206,6 +237,7 @@ payload = {
         ],
         "vertical_difference_D_minus_9O_minus_9minusP1": list(map(int, vertical_difference)),
     },
+    "generic_fibre_support_certificate": generic_support,
     "generic_fibre_divisor": "9*O + 9*(-P1)",
     "generic_fibre_degree": 18,
     "chord": "m=(y-y(P1))/(x-x(P1))",
@@ -218,6 +250,9 @@ payload = {
         "Derive finite vertical and resolved E7/E8 quotient conditions for "
         "this fixed basis; certify that their exact common kernel has dimension 2."
     ),
+    "inputs": {
+        "compiler_core": {"path": str(CORE.relative_to(ROOT)), "sha256": digest(CORE)},
+    },
 }
 args.output.parent.mkdir(parents=True, exist_ok=True)
 args.output.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")

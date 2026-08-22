@@ -156,9 +156,12 @@ assert generic_fibre_decomposition["fiber_twist"] == -1
 # The q=6 search shell is a lattice label.  The geometric RR degree is two,
 # so a generic-fibre basis additionally needs the marked chord with pole
 # O+(-P1); it is not the five monomials of L(5O).
-rr_monomials = bounded_weierstrass_monomials(2, (0,))
-assert len(rr_monomials) == 1
 chord = "(y-y(P1))/(x-x(P1))"
+generic_fibre_basis = marked_section_generic_fibre_basis(2, chord)
+assert generic_fibre_basis == (
+    {"kind": "weierstrass_monomial", "x_power": 0, "y_power": 0},
+    {"kind": "marked_chord", "symbol": chord},
+)
 
 payload = {
     "schema": "elkies-k3.elliptic-neighbor-preflight.v1",
@@ -179,8 +182,7 @@ payload = {
     },
     "rr_ambient": {
         "generic_degree": 2,
-        "ordinary_monomials_before_marked_section": list(rr_monomials),
-        "marked_chord_generator": chord,
+        "marked_generic_fibre_basis": list(generic_fibre_basis),
         "warning": "The q6 shell label is not the old-fibre degree; using L(5O) here would be a wrong ambient space.",
     },
     "resolved_conditions": {

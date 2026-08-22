@@ -192,7 +192,7 @@ sage -python elkies-k3/scripts/audit_h92_q6_pencil_marked_section_degrees.sage \
 
 It excludes only those three sections, not arbitrary q6 multisections or any
 rootless bisection class.
-<!-- status-consumer: EC-K3-H3-Q6 748f736b81ec3ce2 -->
+<!-- status-consumer: EC-K3-H3-Q6 177cd6e614c8b8e0 -->
 
 The E8 module is independently replayed with:
 
@@ -227,7 +227,9 @@ divisor
 ```
 
 in the pinned `[U,E7,E8,P1,P2]` basis. In particular, its old generic-fibre
-restriction is exactly `9(O)+9(-P1)`. Put
+restriction is exactly `9(O)+9(-P1)`. The compiler records that literal
+repeated-section support, its simple-component vertical correction, and the
+`-11F` twist before using any generic-fibre equivalence. Put
 
 ```text
 m = (y-y(P1))/(x-x(P1)).
@@ -256,7 +258,7 @@ gate is to derive the finite vertical and resolved E7/E8 quotient conditions
 using this source-nef vertical divisor, and prove that their common kernel
 has dimension two.  Applying q=6 local conditions to the pre-reflection class
 or simply taking a ninth power is not a valid substitute.
-<!-- status-consumer: EC-K3-H3-Q8-AMBIENT c92bbb44fa7b01fb -->
+<!-- status-consumer: EC-K3-H3-Q8-AMBIENT 2e14dd27b9a3dd79 -->
 
 The actual q6 all-edge cover now also gives an exact generic-component layer
 for the source q8 E7 condition.  For each endpoint term
@@ -301,7 +303,7 @@ sage -python elkies-k3/scripts/derive_h92_q8_smooth_line_bundle_lattice.sage \
   --output artifacts/generated-results/elkies-k3-h92-q8-smooth-line-bundle-lattice.json
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-SMOOTH-LINE-BUNDLE-LATTICE ff9a1b9fc931b46e -->
+<!-- status-consumer: EC-K3-H3-Q8-SMOOTH-LINE-BUNDLE-LATTICE 340ac8bee0e38750 -->
 
 The corrected marked-E7 normalization gives a 54-term endpoint seed.  Its
 1080-by-54 smooth principal-part map has column rank 54 modulo `43`; the
@@ -487,17 +489,20 @@ sage -python elkies-k3/scripts/derive_h92_q6_child_component_nef_bisection_branc
 
 <!-- status-consumer: EC-K3-H3-Q8-CHILD-COMPONENT-NEF-GENERIC-BISECTION-BRANCH 6d0dbb4b90b14710 -->
 
-The translation centre itself presents no additive-fibre obstruction: the
-exact finite point `P0` specializes regularly with nonzero Weierstrass
-gradient at both the II* and IV* fibres. Hence translation by `-P0` extends
-on both Néron smooth loci. This is only the prerequisite for a resolved-chart
-pullback; it does not itself identify the transported local quotient modules.
+The translation centre itself presents no additive-fibre obstruction: at both
+cusps the exact chord denominator is a unit, its translated cusp image has
+the prescribed additive orders, and its tangent action is unipotent with
+determinant one.  The exact finite point `P0` therefore specializes regularly
+with nonzero Weierstrass gradient at both the II* and IV* fibres, so
+translation by `-P0` extends on both Néron smooth loci. This is a
+singular-germ and tangent prerequisite only; it is not a resolved blow-up-chart
+pullback and does not identify transported local quotient modules.
 
 ```bash
 sage -python elkies-k3/scripts/derive_h92_q6_child_component_nef_translation_additive_jets.sage
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-COMPONENT-NEF-TRANSLATION-ADDITIVE-JETS d8e4411b856a6051 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-COMPONENT-NEF-TRANSLATION-ADDITIVE-JETS f76374817b493c9a -->
 
 The II* vertical part now has an exact local ideal.  In the unit-normalized
 germ `Y^2=X^3+u^4*a(u)*X+u^5*b(u)`, the physical E8 cycle maps to the
@@ -568,15 +573,17 @@ ideals can now be turned into coefficient conditions directly.  Reducing in
 `(u^2,X,Y)` yields a rank-two block on the II* two-jets of `a+b*m`.  Reducing
 in `(Y+c*u^2,u*X,X^2,u^3)` yields a rank-four IV* block on the three-jets and
 the `X` coefficient.  The IV* residue includes the nonzero `u^2` correction
-arising from `Y=-c*u^2`.  These are local blocks only: their common global
-ambient and compatibility with the degree-46 smooth module remain unknown.
+arising from `Y=-c*u^2`. Both blocks now use the compiler's resolved
+marked-chord quotient adapter with their explicit quotient ideals and
+normal-form bases. These are local blocks only: their common global ambient
+and compatibility with the degree-46 smooth module remain unknown.
 
 ```bash
 sage -python elkies-k3/scripts/derive_h92_q6_child_q8_additive_chord_blocks.sage \
   --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-additive-chord-blocks.json
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-ADDITIVE-CHORD-BLOCKS dba8bb4cf313f9fd -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-ADDITIVE-CHORD-BLOCKS 2b6ca15eef42c3b8 -->
 
 ### Saturated global-ansatz reconnaissance
 
@@ -880,7 +887,7 @@ sage -python elkies-k3/scripts/derive_h92_q8_e7_local_target.sage \
 
 The finite quotient map for this module, the E8 target, and the global
 two-dimensional q=8 kernel remain separate gates.
-<!-- status-consumer: EC-K3-H3-Q8-E7-TARGET f0b749cd9ef3e0e0 -->
+<!-- status-consumer: EC-K3-H3-Q8-E7-TARGET a6dd94428dfa14e4 -->
 
 The exact cleared ninth-power interface is also materialized. Set
 `J_P1=(x-xP1,y-yP1)`; on every actual edge, multiply a q8 representative by
@@ -1222,7 +1229,8 @@ before node, marked-branch, overlap, and E8 conditions.
 The four smooth P1.O collision fibres now contribute an exact q8 condition
 block for the least endpoint seed.  In the transported frame
 `q=(m-y(P1)/x(P1))/h`, `X=h^2*x`, all negative `h`-principal parts give a
-1080-row condition template on 54 coefficients.  Its mod-43 reduction has
+1080-row condition template on 54 coefficients. Its finite ambient image is
+compiled through the shared condition interface, and its mod-43 reduction has
 full column rank, which proves characteristic-zero rank 54; hence this seed
 has no smooth-compatible direction.  This is only a local obstruction for
 the least ambient, not a completed q8 cover or a nonexistence theorem for
@@ -1233,7 +1241,7 @@ sage -python elkies-k3/scripts/compile_h92_q8_smooth_principal_parts_exact.sage 
   --output artifacts/generated-results/elkies-k3-h92-q8-smooth-principal-parts-exact.json
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-SMOOTH-PRINCIPAL-PART-CONDITION-BLOCK 61134238f1d0a1e9 -->
+<!-- status-consumer: EC-K3-H3-Q8-SMOOTH-PRINCIPAL-PART-CONDITION-BLOCK 6888f78205d642be -->
 
 ### Source q=8 E8 target
 
@@ -1259,7 +1267,7 @@ in chart order `(B1,B2,B3,B4,N3,N40,N4B,N4inf)` it is
 `(-2,-4,-6,-10,-4,-7,-5,-8)`, with degree vector
 `(0,1,0,0,0,0,0,0)`.  It still does not supply the finite local quotient
 condition.
-<!-- status-consumer: EC-K3-H3-Q8-E8-TARGET c363f6cb827b36d8 -->
+<!-- status-consumer: EC-K3-H3-Q8-E8-TARGET 7f4bac8ed72db930 -->
 
 ### Complete q=8 E8 module
 

@@ -389,7 +389,7 @@ sage -python elkies-k3/scripts/compile_h3_first_q6_preflight.sage \
 
 The H3 search's `q=6` label is not its old-fibre degree: after the recorded
 reflections, `D=O+(-P1)-F` has `D.F=2`.  The preflight therefore records a
-degree-two ambient with the marked chord
+degree-two generic-fibre basis `(1,m)` with marked chord
 `(y-y(P1))/(x-x(P1))`, rather than treating the five monomials of `L(5O)` as
 the relevant space.  It verifies the exact P1 input and the E7 resolved
 module, replays all 22 Weyl reflections, and checks the E7/E8 affine and
@@ -539,12 +539,13 @@ The following symbolic ambient has exact degree 44 and 44 basis elements:
 irrelevant globally reduced rational-function coordinate.
 
 The child-Jacobian default pin is the SageMath 10.9 replay hash
-`dbe7df273e815e739188b0f1a198386b0e011d5879cf9f8d698ecc991cbf6d44`.
+`5eb43d9a0d04195e7a6e38ebd337b0e10a3b1a2eb9246a3b02cce4331bcd36ac`.
 It is generated through the reusable exact finite-place minimization and
-Kodaira aggregation route; the q6 invariants and transported Gram are
-unchanged.
+Kodaira aggregation route, bound directly to the same certified q6 resolved
+RR kernel that produces the pencil; the q6 invariants and transported Gram
+are unchanged.
 The corresponding regenerated final-hop artifact has SHA-256
-`f6b9835e5b2ba083a0151ac0410638c1e90edfa0c29994de6d1e8e2eb0f43e60`.
+`744d194f7a2799bed4e65aa0369e3a36ad99a9374518531a5aff1f8b9adbcc5b`.
 Its certified Shioda--Tate data are root determinant `3`, height determinant
 `316`, trivial torsion/glue index, and absolute Néron--Severi discriminant
 `948`.  It additionally pins the three source curves meeting the new fibre
@@ -560,7 +561,7 @@ rather than the formal atlas, are the input for a finite quotient matrix. The
 following actual Cartier atlas supplies the six transported integral-vertical
 factors. The following pullback atlas then maps the old H92 coordinates into
 each edge chart, before the remaining marked-chord jet conditions are imposed.
-<!-- status-consumer: EC-K3-H3-Q6 748f736b81ec3ce2 -->
+<!-- status-consumer: EC-K3-H3-Q6 177cd6e614c8b8e0 -->
 
 In the blocked state the preflight makes no
 claim about vertical codimension, `h0(D)`, a child equation, or transported
@@ -667,7 +668,9 @@ Before deriving the global q=8 pencil, reconstruct its exact generic-fibre
 ambient directly on the H92 source. The selected class is first source-chamber
 reduced by 122 fixed-component reflections; its resulting source-nef class
 has generic restriction `9(O)+9(-P1)`, and the 18-element chord basis uses
-only the already explicit `P1`:
+only the already explicit `P1`.  The artifact first reconstructs the literal
+source class as `9O+9(-P1)+V-11F`, with every nonzero simple-component
+coefficient of `V` recorded and checked before choosing this basis:
 
 ```bash
 sage -python elkies-k3/scripts/derive_h92_q8_generic_rr_ambient.sage \
@@ -678,7 +681,7 @@ It reports `H92Q8AMBIENT|degree=18|basis=18|...|status=PASS_EXACT_Q8_GENERIC_RR_
 This is the generic-fibre ambient, not an equation-level q=8 pencil: the
 finite vertical and resolved E7/E8 conditions for the source-nef vertical
 divisor remain to be derived.
-<!-- status-consumer: EC-K3-H3-Q8-AMBIENT c92bbb44fa7b01fb -->
+<!-- status-consumer: EC-K3-H3-Q8-AMBIENT 2e14dd27b9a3dd79 -->
 
 The actual all-edge q6 E7 module also yields the first reusable source-q8
 generic-component condition layer. It evaluates the cleared ninth-power
@@ -822,8 +825,11 @@ finite branch divisor, so this level is rejected as a rational-bisection
 collision candidate.
 <!-- status-consumer: EC-K3-H3-Q8-CHILD-COMPONENT-NEF-GENERIC-BISECTION-BRANCH 6d0dbb4b90b14710 -->
 
-The exact additive specializations of the translation centre are smooth at
-both II* and IV*, so translation by `-P0` extends on their Néron smooth loci:
+At both additive cusps, the exact chord denominator is a unit; translation by
+`-P0` has the prescribed additive-order cusp image and a unipotent
+determinant-one tangent action.  In particular the translation centre is
+smooth at both II* and IV*, so translation by `-P0` extends on their Néron
+smooth loci:
 
 ```bash
 sage -python elkies-k3/scripts/derive_h92_q6_child_component_nef_translation_additive_jets.sage
@@ -835,9 +841,10 @@ Expected terminal status:
 H92Q6CHILDCOMPNEFJETS|II*=P0_smooth|IV*=P0_smooth|status=PASS_EXACT_COMPONENT_NEF_TRANSLATION_ADDITIVE_JETS
 ```
 
-This is a smooth-centre prerequisite only; the resolved-chart pullbacks,
-infinity module, pencil equation, and branch divisor remain open.
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-COMPONENT-NEF-TRANSLATION-ADDITIVE-JETS d8e4411b856a6051 -->
+This is a singular-germ and tangent prerequisite only; resolved blow-up-chart
+pullbacks, the infinity module, pencil equation, and branch divisor remain
+open.
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-COMPONENT-NEF-TRANSLATION-ADDITIVE-JETS f76374817b493c9a -->
 
 The II* part of that target has a unit-normalized complete ideal:
 
@@ -879,8 +886,10 @@ sage -python elkies-k3/scripts/derive_h92_q6_child_q8_ivstar_orientation.sage \
 The actual generic chord `m=(y+y(S))/(x-x(S))` now has exact finite
 coefficient blocks in both selected additive quotients.  They have ranks two
 at II* and four at IV*; at IV*, reducing `Y=-c*u^2` contributes the essential
-`u^2` correction to the residue of `m`.  This is local jet data, not a global
-base-function bound or a q8 pencil.
+`u^2` correction to the residue of `m`.  Both blocks are compiled through the
+resolved marked-chord quotient interface with their actual ideals and
+normal-form bases. This is local jet data, not a global base-function bound or
+a q8 pencil.
 
 ```bash
 sage -python elkies-k3/scripts/derive_h92_q6_child_q8_additive_chord_blocks.sage \
@@ -893,7 +902,7 @@ Expected terminal status:
 H92Q6CHILDQ8ADDITIVE|II_rows=2|IV_rows=4|II_rank=2|IV_rank=4|status=PASS_EXACT_Q6_CHILD_Q8_ADDITIVE_CHORD_BLOCKS
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-ADDITIVE-CHORD-BLOCKS dba8bb4cf313f9fd -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-ADDITIVE-CHORD-BLOCKS 2b6ca15eef42c3b8 -->
 
 As bounded modular reconnaissance only, the first saturated coefficient window
 already has the expected dimension: at each of `p=43,53,59`, take
@@ -975,7 +984,7 @@ Expected terminal status:
 H92Q8E7TARGET|degrees=0,1,0,0,2,0,1|twist=2,5,6,4,6,3,5|status=PASS_EXACT_Q8_E7_LOCAL_TARGET
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-E7-TARGET f0b749cd9ef3e0e0 -->
+<!-- status-consumer: EC-K3-H3-Q8-E7-TARGET a6dd94428dfa14e4 -->
 
 That non-anti-nef correction is now attached to the six actual H92 E7 edge
 charts.  The generated factors are line-bundle transitions, not a substitute
@@ -1651,8 +1660,9 @@ Expected terminal status:
 H92Q8SMOOTHPROFILE|ambient=54|max_h_pole=15|q_frame=actual_q6_saturated|status=PASS_EXACT_Q8_SMOOTH_COLLISION_PRINCIPAL_PARTS
 ```
 
-The resulting smooth condition block is now compiled exactly, rather than
-only screened modulo a prime.  It imposes every negative `h`-principal-part
+The resulting smooth condition block is now compiled exactly through the
+shared finite-ambient-image interface, rather than only screened modulo a
+prime. It imposes every negative `h`-principal-part
 coefficient in the actual `(q,X)` frame.  The `1080 x 54` template has full
 column rank modulo `43`; because reduction cannot increase rank, this proves
 that its characteristic-zero rank is 54 and that the least endpoint seed has
@@ -1671,7 +1681,7 @@ Expected terminal status:
 H92Q8SMOOTHEXACT|extra_h=0|rows=1080|columns=54|rank=54|kernel=0|status=PASS_EXACT_Q8_SMOOTH_PRINCIPAL_PART_CONDITION_BLOCK
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-SMOOTH-PRINCIPAL-PART-CONDITION-BLOCK 61134238f1d0a1e9 -->
+<!-- status-consumer: EC-K3-H3-Q8-SMOOTH-PRINCIPAL-PART-CONDITION-BLOCK 6888f78205d642be -->
 
 On its own this profile does not prescribe the allowed q8 submodule or assert
 a condition rank; the following line-bundle calculation supplies that local
@@ -1705,7 +1715,7 @@ sage -python elkies-k3/scripts/derive_h92_q8_smooth_line_bundle_lattice.sage \
   --output artifacts/generated-results/elkies-k3-h92-q8-smooth-line-bundle-lattice.json
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-SMOOTH-LINE-BUNDLE-LATTICE ff9a1b9fc931b46e -->
+<!-- status-consumer: EC-K3-H3-Q8-SMOOTH-LINE-BUNDLE-LATTICE 340ac8bee0e38750 -->
 
 The matching source-E8 target is:
 
@@ -1722,7 +1732,7 @@ H92Q8E8TARGET|degrees=1,0,0,0,0,0,0,0|twist=-4,-5,-7,-10,-8,-6,-4,-2|status=PASS
 
 It identifies the cycle in both source and actual blow-up-chart component
 orders; its finite chart-level quotient map remains to be derived.
-<!-- status-consumer: EC-K3-H3-Q8-E8-TARGET c363f6cb827b36d8 -->
+<!-- status-consumer: EC-K3-H3-Q8-E8-TARGET 7f4bac8ed72db930 -->
 
 The complete E8 local module is then derived by:
 

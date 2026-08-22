@@ -151,6 +151,80 @@ assert chart_block["matrix"] == matrix(QQ, [
     [0, 0, 1, 0],
 ])
 
+# A marked degree-two ambient uses caller-derived coefficients and the chord
+# residue in the same resolved quotient machinery.  The result is not a
+# valuation table: both the ideal and its normal-form basis are explicit.
+chord_block = resolved_marked_chord_condition(
+    "synthetic-marked-chord-chart",
+    ("a0", "a1", "b0", "b1"),
+    lambda label: {
+        "a0": (1, 0), "a1": (u, 0),
+        "b0": (0, 1), "b1": (0, u),
+    }[label],
+    local_ring,
+    local_ring.ideal((u**2, z)),
+    (1, u),
+    1+u,
+    "synthetic resolved marked chord",
+)
+assert chord_block["matrix"] == matrix(QQ, [
+    [1, 0, 1, 0],
+    [0, 1, 1, 1],
+])
+
+# A complete cover is declared as an ordered collection of actual quotient
+# charts (and, when needed, caller-derived overlap rows).  It does not infer
+# completeness from the resulting nullity.
+cover = compile_resolved_chart_cover(
+    ambient,
+    ({
+        "name": "synthetic-cover-chart",
+        "local_ring": local_ring,
+        "trivialized_pullback": lambda value: local_ring(value == "1")
+        + local_ring(value == "z") * z,
+        "quotient_ideal": local_ring.ideal((z**2, u)),
+        "quotient_basis": (1, z),
+        "provenance": "synthetic resolved-chart cover",
+    },),
+    complete=True,
+)
+assert len(cover["chart_blocks"]) == 1 and not cover["overlap_blocks"]
+assert cover["compilation"]["condition_matrix"] == matrix(QQ, [
+    [1, 0, 0, 0], [0, 1, 0, 0],
+])
+assert cover["compilation"]["h0_certified"]
+try:
+    compile_resolved_chart_cover(
+        ambient,
+        ({
+            "name": "missing-provenance",
+            "local_ring": local_ring,
+            "trivialized_pullback": lambda unused: 0,
+            "quotient_ideal": local_ring.ideal((z, u)),
+            "quotient_basis": (1,),
+        },),
+    )
+except ValueError as error:
+    assert "provenance" in str(error)
+else:
+    raise AssertionError("incomplete chart record was accepted")
+
+# One-variable jet quotients are finite too, although Sage does not expose
+# vector_space_dimension or multivariate ``reduce`` on their ideals.
+jet_ring = PolynomialRing(QQ, "v")
+v = jet_ring.gen()
+jet_block = resolved_marked_chord_condition(
+    "synthetic-univariate-jet",
+    ("a0", "b0"),
+    lambda label: (1, 0) if label == "a0" else (0, 1),
+    jet_ring,
+    jet_ring.ideal(v**2),
+    (1, v),
+    1+v,
+    "synthetic finite jet quotient",
+)
+assert jet_block["matrix"] == matrix(QQ, [[1, 1], [0, 1]])
+
 incomplete = compile_resolved_conditions(ambient, (first,), complete=False)
 assert not incomplete["h0_certified"]
 try:
@@ -170,6 +244,26 @@ assert bounded_weierstrass_monomials(6, (0,)) == (
 assert bounded_weierstrass_monomials(2, (0,)) == (
     {"t_power": 0, "x_power": 0, "y_power": 0},
 )
+assert marked_section_generic_fibre_basis(2, "m_-P1") == (
+    {"kind": "weierstrass_monomial", "x_power": 0, "y_power": 0},
+    {"kind": "marked_chord", "symbol": "m_-P1"},
+)
+assert marked_section_generic_fibre_basis(1, "unused") == (
+    {"kind": "weierstrass_monomial", "x_power": 0, "y_power": 0},
+)
+assert balanced_marked_chord_power_basis(1) == (
+    {"kind": "m_power", "m_power": 0, "x_power": 0, "chord_symbol": "m",
+     "pole_order_at_O": 0, "pole_order_at_marked_section": 0},
+    {"kind": "m_power", "m_power": 1, "x_power": 0, "chord_symbol": "m",
+     "pole_order_at_O": 1, "pole_order_at_marked_section": 1},
+)
+balanced_q8_basis = balanced_marked_chord_power_basis(9, "m_-P1", "x")
+assert len(balanced_q8_basis) == 18
+assert balanced_q8_basis[-1] == {
+    "kind": "x_m_power", "m_power": 7, "x_power": 1,
+    "chord_symbol": "m_-P1", "x_symbol": "x",
+    "pole_order_at_O": 9, "pole_order_at_marked_section": 7,
+}
 # Before any monomial space is constructed, the generic-fibre marked point
 # and vertical correction must reconstruct the actual Neron--Severi class.
 # This tiny hyperbolic test also rejects a purported vertical curve of degree
@@ -197,6 +291,25 @@ except ValueError as error:
     assert "vertical" in str(error)
 else:
     raise AssertionError("positive-degree vertical support was accepted")
+# Higher degree inputs retain a literal repeated-section representative until
+# the caller has separately certified its group-law/chord conversion.
+supported_divisor = 3*decomposition_zero-2*decomposition_fibre
+support_certificate = certify_generic_fibre_horizontal_support(
+    decomposition_gram, supported_divisor, decomposition_fibre,
+    (("O", 2, decomposition_zero), ("Q", 1, decomposition_zero)),
+    (), fiber_twist=-2, expected_old_fiber_degree=3,
+)
+assert support_certificate["old_fiber_degree"] == 3
+assert [row["multiplicity"] for row in support_certificate["horizontal_support"]] == [2, 1]
+try:
+    certify_generic_fibre_horizontal_support(
+        decomposition_gram, supported_divisor, decomposition_fibre,
+        (("not_a_section", 1, decomposition_fibre),), (), fiber_twist=-2,
+    )
+except ValueError as error:
+    assert "section" in str(error)
+else:
+    raise AssertionError("degree-zero horizontal curve was accepted")
 assert endpoint_coefficient_interval(11, 6, 4) == {
     "denominator_power": 2, "u_power_lower": 11, "u_power_upper": 14,
 }
@@ -397,6 +510,33 @@ except ValueError as error:
     assert "violates" in str(error)
 else:
     raise AssertionError("non-kernel pencil was accepted for degree-two conversion")
+
+# The child Jacobian is compiled directly from that same resolved pencil.
+# Its finite-fibre data may be used for root bookkeeping, but its infinity
+# record is deliberately not promoted to a resolved additive-fibre chart.
+resolved_child = compile_resolved_degree_two_child_jacobian(
+    rr_compilation,
+    matrix(QQ, [[0, 0, 1, 0], [0, 0, 0, 1]]),
+    ((0, 0), (0, 0), (1, 1), (0, 1)),
+    base_ring, base_ring, parameter, x_point, y_point, old_a, old_b,
+    marked_chords=(("P", QQ(1) / 2),),
+)
+assert resolved_child["resolved_hop"]["conversion"]["binary_quartic"] == quartic
+assert resolved_child["jacobian_a"] == coefficient_a
+assert resolved_child["jacobian_b"] == coefficient_b
+assert "infinity_boundary" in resolved_child["finite_classification"]
+try:
+    compile_resolved_degree_two_child_jacobian(
+        rr_compilation,
+        matrix(QQ, [[0, 0, 1, 0], [0, 0, 0, 1]]),
+        ((0, 0), (0, 0), (1, 1), (0, 1)),
+        base_ring, PolynomialRing(QQ, names=("s", "t")), parameter,
+        x_point, y_point, old_a, old_b,
+    )
+except ValueError as error:
+    assert "new base ring" in str(error)
+else:
+    raise AssertionError("multivariate new base was accepted for a curve fibration")
 
 # A higher-degree compiler can retain an exact raw genus-one relation by
 # eliminating only the selected old Weierstrass variable.  This is not yet a

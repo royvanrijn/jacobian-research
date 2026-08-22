@@ -21,11 +21,14 @@ from sage.all import PolynomialRing, QQ, matrix, vector
 
 
 ROOT = Path(__file__).resolve().parents[2]
+CORE = ROOT / "elkies-k3/scripts/elliptic_neighbor_compiler.sage"
 CHILD = ROOT / "artifacts/generated-results/elkies-k3-h92-q6-child-jacobian.json"
 MARKING = ROOT / "artifacts/generated-results/elkies-k3-h92-q6-child-q8-marking.json"
 IISTAR = ROOT / "artifacts/generated-results/elkies-k3-h92-q6-child-q8-iistar-vertical-ideal.json"
 IVSTAR = ROOT / "artifacts/generated-results/elkies-k3-h92-q6-child-q8-ivstar-orientation.json"
 DEFAULT_OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-h92-q6-child-q8-additive-chord-blocks.json"
+
+exec(compile(CORE.read_text(), str(CORE), "exec"))
 
 
 def digest(path):
@@ -52,29 +55,33 @@ def reduce_rational(value, modulus):
     return (numerator * denominator.inverse_mod(modulus)).mod(modulus)
 
 
-def coefficient_vector(value, degree):
-    return vector(QQ, [value[index] for index in range(degree)])
-
-
 def local_block(residue, dimension, name):
-    """Matrix for a_0+...+a_{d-1}u^(d-1)+b(u)*residue in QQ[u]/u^d."""
+    """Compile ``a(u)+b(u)m`` in the stated resolved additive quotient."""
 
     ring = residue.parent()
     u = ring.gen()
-    modulus = u**dimension
     labels = tuple(
         [("a", index) for index in range(dimension)]
         + [("b", index) for index in range(dimension)]
     )
-    columns = []
-    for kind, exponent in labels:
-        value = u**exponent if kind == "a" else u**exponent * residue
-        columns.append(coefficient_vector(value.mod(modulus), dimension))
+    block = resolved_marked_chord_condition(
+        name,
+        labels,
+        lambda label: (
+            u**label[1] if label[0] == "a" else ring(0),
+            u**label[1] if label[0] == "b" else ring(0),
+        ),
+        ring,
+        ring.ideal(u**dimension),
+        tuple(u**index for index in range(dimension)),
+        residue,
+        "actual resolved additive chart; caller-derived marked-chord residue",
+    )
     return {
-        "name": name,
-        "basis": ["u^{}".format(index) for index in range(dimension)],
+        "name": block["name"],
+        "basis": list(block["quotient_basis"]),
         "ambient": [[kind, exponent] for kind, exponent in labels],
-        "matrix": matrix(QQ, dimension, len(columns), lambda row, column: columns[column][row]),
+        "matrix": block["matrix"],
     }
 
 
@@ -183,19 +190,34 @@ else:
     iv_u_residue = iv_ring(ratio + u2_correction*iv_u**2).mod(iv_modulus)
     assert iv_x(0) and iv_y(0)
     assert x_coefficient
-    iv_u_block = local_block(iv_u_residue, 3, "IV* u-part quotient")
-    iv_labels = iv_u_block["ambient"]
-    iv_matrix = matrix(QQ, 4, len(iv_labels), 0)
-    iv_matrix[:3, :] = iv_u_block["matrix"]
-    for column, (kind, exponent) in enumerate(iv_labels):
-        if kind == "b" and exponent == 0:
-            iv_matrix[3, column] = x_coefficient
+    iv_quotient_ring = PolynomialRing(QQ, names=("u", "X"))
+    iv_q_u, iv_q_x = iv_quotient_ring.gens()
+    iv_labels = tuple(
+        [("a", index) for index in range(3)]
+        + [("b", index) for index in range(3)]
+    )
+    iv_block = resolved_marked_chord_condition(
+        "IV* arm quotient R/(u^3,uX,X^2,Y+c*u^2)",
+        iv_labels,
+        lambda label: (
+            iv_q_u**label[1] if label[0] == "a" else iv_quotient_ring(0),
+            iv_q_u**label[1] if label[0] == "b" else iv_quotient_ring(0),
+        ),
+        iv_quotient_ring,
+        iv_quotient_ring.ideal((iv_q_u**3, iv_q_u*iv_q_x, iv_q_x**2)),
+        (1, iv_q_u, iv_q_u**2, iv_q_x),
+        iv_quotient_ring(iv_u_residue) + x_coefficient*iv_q_x,
+        "actual resolved IV* arm quotient; Y=-c*u^2 is already eliminated",
+    )
+    iv_labels = [[kind, exponent] for kind, exponent in iv_labels]
+    iv_matrix = iv_block["matrix"]
     assert iv_matrix.rank() == 4
 
 payload = {
     "schema": "elkies-k3.h92-q6-child-q8-additive-chord-blocks.v1",
     "status": "PASS_EXACT_Q6_CHILD_Q8_ADDITIVE_CHORD_BLOCKS",
     "inputs": {
+        "compiler_core": {"path": str(CORE.relative_to(ROOT)), "sha256": digest(CORE)},
         "child_jacobian": {"path": str(args.child.relative_to(ROOT)), "sha256": digest(args.child)},
         "q8_marking": {"path": str(args.marking.relative_to(ROOT)), "sha256": digest(args.marking)},
         "iistar_ideal": {"path": str(args.iistar.relative_to(ROOT)), "sha256": digest(args.iistar)},

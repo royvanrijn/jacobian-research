@@ -19,6 +19,7 @@ not construct its finite quotient matrix or a q=8 pencil.
 """
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 
@@ -39,6 +40,10 @@ def load_frame(path):
     ])
 
 
+def digest(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
 def rows(value):
     return [[str(entry) for entry in row] for row in value.rows()]
 
@@ -52,6 +57,15 @@ ambient = json.loads(args.ambient.read_text())
 assert ambient["status"] == "PASS_EXACT_Q8_GENERIC_RR_AMBIENT"
 q8 = vector(ZZ, ambient["source_q8_lattice_class"])
 assert len(q8) == 19
+support = ambient["generic_fibre_support_certificate"]
+assert support["old_fiber_degree"] == 18
+assert support["fiber_twist"] == -11
+assert [(entry["name"], entry["multiplicity"]) for entry in support["horizontal_support"]] == [
+    ("O", 9), ("-P1", 9),
+]
+assert [entry["coefficient"] for entry in support["vertical_support"][:7]] == [
+    2, 3, 4, 6, 5, 5, 6,
+]
 
 source_ns = block_diagonal_matrix(
     matrix(ZZ, ((0, 1), (1, 0))), -load_frame(FRAME)
@@ -149,7 +163,7 @@ payload = {
     "schema": "elkies-k3.h92-q8-e7-local-target.v1",
     "status": "PASS_EXACT_Q8_E7_LOCAL_TARGET",
     "inputs": {
-        "q8_ambient": str(args.ambient.relative_to(ROOT)),
+        "q8_ambient": {"path": str(args.ambient.relative_to(ROOT)), "sha256": digest(args.ambient)},
         "source_frame": str(FRAME.relative_to(ROOT)),
         "q6_marked_module": "Z*J_-P1^dual",
         "q6_marked_module_source": "elkies-k3/scripts/derive_h92_q6_e7_p1_branch_module.sage",
@@ -163,6 +177,9 @@ payload = {
         "source_component_degrees": list(map(int, q8_source_degrees)),
         "resolved_component_degrees": list(map(int, q8_resolved_degrees)),
         "exceptional_cycle": [str(value) for value in q8_cycle],
+        "support_certificate_E7_vertical_coefficients": [
+            entry["coefficient"] for entry in support["vertical_support"][:7]
+        ],
     },
     "q6": {
         "source_component_degrees": list(map(int, q6_source_degrees)),

@@ -15,6 +15,7 @@ quotient map remains a later gate.
 """
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 
@@ -35,6 +36,10 @@ def load_frame(path):
     ])
 
 
+def digest(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--ambient", type=Path, default=Q8_AMBIENT)
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
@@ -43,6 +48,15 @@ args = parser.parse_args()
 ambient = json.loads(args.ambient.read_text())
 assert ambient["status"] == "PASS_EXACT_Q8_GENERIC_RR_AMBIENT"
 q8 = vector(ZZ, ambient["source_q8_lattice_class"])
+support = ambient["generic_fibre_support_certificate"]
+assert support["old_fiber_degree"] == 18
+assert support["fiber_twist"] == -11
+assert [(entry["name"], entry["multiplicity"]) for entry in support["horizontal_support"]] == [
+    ("O", 9), ("-P1", 9),
+]
+assert [entry["coefficient"] for entry in support["vertical_support"][7:]] == [
+    -4, -5, -7, -10, -8, -6, -4, -2,
+]
 
 source_ns = block_diagonal_matrix(
     matrix(ZZ, ((0, 1), (1, 0))), -load_frame(FRAME)
@@ -119,7 +133,7 @@ payload = {
     "schema": "elkies-k3.h92-q8-e8-local-target.v1",
     "status": "PASS_EXACT_Q8_E8_SOURCE_TARGET",
     "inputs": {
-        "q8_ambient": str(args.ambient.relative_to(ROOT)),
+        "q8_ambient": {"path": str(args.ambient.relative_to(ROOT)), "sha256": digest(args.ambient)},
         "source_frame": str(FRAME.relative_to(ROOT)),
         "q6_marked_module": "u*<1,Q>",
         "q6_marked_module_source": "elkies-k3/scripts/derive_h92_q6_e8_p1_branch_module.sage",
@@ -139,6 +153,9 @@ payload = {
         "source_nef_E8_coordinates": [int(value) for value in q8[9:17]],
         "chart_component_degrees": list(map(int, q8_chart_degrees)),
         "chart_exceptional_cycle": [str(value) for value in q8_chart_cycle],
+        "support_certificate_E8_vertical_coefficients": [
+            entry["coefficient"] for entry in support["vertical_support"][7:]
+        ],
     },
     "q6": {"component_degrees": list(map(int, q6_degrees))},
     "tensor_comparison": {

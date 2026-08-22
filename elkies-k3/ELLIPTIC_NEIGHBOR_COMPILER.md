@@ -12,7 +12,14 @@ huge rational nullspace before a later simplification has chosen a pencil.
 The same core now supplies the marked-chord discriminant, exact squarefree
 binary-quartic extraction (including the scalar-square check that rejects an
 accidental quadratic twist), classical Jacobian invariants, and marked-section
-pencil evaluation for degree-two hops.
+pencil evaluation for degree-two hops.  Its resolved marked-chord adapter
+also compiles a caller-supplied local expression `a+b*m` in an explicit
+finite quotient ideal; this is used by the q6-child II*/IV* jet blocks and
+works for both multivariate chart quotients and univariate jet rings.
+`compile_resolved_chart_cover` collects a declared set of those quotient
+charts and explicitly derived overlap rows into the one matrix from which an
+`h0(D)=2` conclusion may be made; declaring a complete cover remains a
+separate geometric certificate.
 
 The first H3 lattice search calls its shortest orbit a `q6` shell. After the
 recorded Weyl reduction, however, the divisor is `D=O+(-P1)-F` and `D.F=2`.
@@ -137,6 +144,21 @@ component has old-fibre degree zero and refuses a reconstruction mismatch.
 For the first q6 hop this records the exact identity
 `D=O+(-P1)-F`; it makes the marked chord input explicit, but does not claim
 to discover `P` or the vertical correction from a lattice vector alone.
+Given that certified input, `marked_section_generic_fibre_basis` records
+`L((q-1)O+P)` as the ordinary basis of `L((q-1)O)` plus a separately labelled
+marked chord.  Thus q6 has the generic-fibre basis `(1,m)` rather than a
+monomial surrogate; the routine deliberately leaves all base powers and
+resolved vertical conditions to the surface-specific chart calculation.
+
+For a natural representative with repeated marked sections,
+`certify_generic_fibre_horizontal_support` instead records the literal
+effective horizontal support before any group-law rewrite.  The first q8
+source uses this to certify `9O+9(-P1)+V-11F` in the Néron--Severi frame;
+this preserves the required 18-element chord-power basis and prevents an
+unrecorded replacement by a one-point divisor from changing the ambient.
+For a certified quadratic marked-chord extension,
+`balanced_marked_chord_power_basis(n)` supplies the checked `2n` functions
+for `L(nO+nP)`; the q8 source uses its `n=9` specialization.
 
 `exact_neighbor_certificate_handoff` also accepts the versioned output of
 the repository's degree-independent Néron--Severi engine. It retains the
@@ -164,6 +186,13 @@ marked chords on the new parameter.  The H3 elimination script calls this
 operation, while the pinned child-Jacobian calculation is its regression
 model; minimization and local Kodaira classification remain surface-specific
 certificate stages.
+
+`compile_resolved_degree_two_child_jacobian` is the stricter equation hand-off:
+it first binds the chord conversion to the exact two-row resolved RR kernel,
+then performs finite-place minimization and Kodaira aggregation over the new
+base.  Its infinity data remain a boundary diagnostic until a caller supplies
+the corresponding line-bundle trivialization and resolved additive-fibre
+charts.  The q6 child-Jacobian replay uses this route directly.
 
 More specifically, `compile_resolved_degree_two_chord_hop` accepts the
 complete resolved condition matrix, its independently displayed two-row
@@ -438,7 +467,7 @@ artifacts have SHA-256
 (actual-H92 E7 old-coordinate valuation atlas),
 `3796ee20121a94ce6d3a707c0cd119983b64fce79336fa99a5a894729174900c`
 (first q=6 actual-H92 E7 quotient block),
-`2715a4f069ff4fecac4b0a40dcbbe49921938c81febfe1ca1afc9292cb3214a0`
+`928955731227eead4006392cbe13fc5b95a1e2e951acbc2834eea6bdc1bbaacc`
 (first q=6 complete actual resolved RR cover),
 `7848c3a506b2255fc1e42cab9ced9b72f8852e26aa703f9b23e2b2417474d2ed`
 (third marked divisor's actual-H92 E7 quotient block),
@@ -446,7 +475,7 @@ artifacts have SHA-256
 (third marked chord evaluated in that actual-H92 quotient),
 `c1cb5457c781af53d08522144b15d95ec2452a90ec0c6ee65377c3f51f835a10`
 (third degree-44 generic ambient evaluated in that quotient),
-`f6b9835e5b2ba083a0151ac0410638c1e90edfa0c29994de6d1e8e2eb0f43e60`
+`744d194f7a2799bed4e65aa0369e3a36ad99a9374518531a5aff1f8b9adbcc5b`
 (first H3 q=6 actual neighbour-hop certificate),
 `e27f10c238d0700e3fa236dbe616aeec2575e4f17dd19bd2f934404ece6188d2`
 (rejection of the insufficient old-monomial E7 complete ideal),
@@ -466,11 +495,11 @@ artifacts have SHA-256
 (global Riemann--Roch kernel),
 `9217d0492046954d8522680f9ddf2a0f5c0177921db761b584c281527b41145d`
 (pencil elimination),
-`dbe7df273e815e739188b0f1a198386b0e011d5879cf9f8d698ecc991cbf6d44`
+`5eb43d9a0d04195e7a6e38ebd337b0e10a3b1a2eb9246a3b02cce4331bcd36ac`
 (child Jacobian), and
-`00e7c5186a3517bccf269b853c9e86c89bfb728dc2801ed1dd26dd6db925f714`
+`3d8d79c24bccf74ce0f2878ac4e02c3edbaa05bcd1537bf9c99608b5b95f8221`
 (transported child zero section), and
-`0592edd1096bd24c8651139515ce0d976ae7e800c0c5eab0459f5ad729713acd`
+`156821384b45fd5e731dce130686b549030d64d450ece78bfb9f9083bbaf3005`
 (the two transported E7-infinity sections), and
 `335a9cb6c1060ac170c063f99bb02d4c4357fa2426d37b4dc3efd447ac2b62ad`
 (component-section lattice identities), and
@@ -556,4 +585,4 @@ H92 `(t,x,y)` maps exactly, and records the q8 Cartier-factor ratios
 `Y^4/Z^2` and `1/Y`.  These are the required transition functions for future
 overlap evaluators; they are not assertions that the ratios are units, nor a
 complete E7 Čech cover.
-<!-- status-consumer: EC-K3-H3-Q6 748f736b81ec3ce2 -->
+<!-- status-consumer: EC-K3-H3-Q6 177cd6e614c8b8e0 -->

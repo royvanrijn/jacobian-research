@@ -168,7 +168,7 @@ def pair_from_row(row):
 
     s = sum(row[index] * T**exponent for index, (kind, exponent) in enumerate(labels) if kind == "s")
     t = sum(row[index] * T**exponent for index, (kind, exponent) in enumerate(labels) if kind == "t")
-    B = iv*s
+    B = first_b*s
     C = C_iv*s + M*t
     a = field(C) - field(B)*p/field(h) - field(B*normalizer_R)/field(nx)
     b = field(B)/field(h)

@@ -1,0 +1,71 @@
+{
+  "basis": {
+    "description": "first ten visible points followed by the first selected affine point",
+    "exact_independence_source": "EC-MD235 finite-reduction certificate",
+    "point_count": 11
+  },
+  "bounded_pari_saturation": {
+    "exact_returned_points_on_curve": 11,
+    "height_determinant_ratio": "1048576.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "input_point_count": 11,
+    "original_height_determinant": "482962349864906.5457785829698389323909960895693525588234979405124534127514217531753886490152087143231",
+    "prime_bound_strict_upper_limit": 20,
+    "returned_point_count": 11,
+    "saturated_basis_sha256": "d1729c64ff7c5d6c4c99807d5fffabac3913a25ca65b930da4f73f2179b34811",
+    "saturated_height_determinant": "460588788.8573708970819310854329418096505065625691974863986401676687362207620174173246851112448828917",
+    "scope_warning": "PARI documents ellsaturation under a finite-index hypothesis; the full rank was unknown when this search was run"
+  },
+  "height_matrix_replay": [
+    {
+      "decimal_precision": 72,
+      "numerical_rank": 11,
+      "subset_height_determinant": "482962349864906.545778582969838932390996089569352558823497940512453412751",
+      "subset_indices_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "subset_largest_eigenvalue": "88.4586205211218221723942876672812608148444330570214561497798281837669857",
+      "subset_smallest_eigenvalue": "2.04498233634291376582708349578471723046730676826179287203904905189135807"
+    },
+    {
+      "decimal_precision": 120,
+      "numerical_rank": 11,
+      "subset_height_determinant": "482962349864906.545778582969838932390996089569352558823497940512453412751421753175388649015208714323080842680844879293864",
+      "subset_indices_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "subset_largest_eigenvalue": "88.4586205211218221723942876672812608148444330570214561497798281837669857190448863527122803668134188898189280305962407094",
+      "subset_smallest_eigenvalue": "2.04498233634291376582708349578471723046730676826179287203904905189135807497616149688224713311665003095056884270307793526"
+    }
+  ],
+  "not_established": [
+    "a saturated Mordell-Weil basis at this fibre or generically",
+    "a full Shioda Gram matrix or the affine-pair intersection number",
+    "generic rank at least 12 or 14, or an upper bound for the full Mordell-Weil group"
+  ],
+  "reproducing_command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/audit_mestre_diameter235_displayed_lattice.py",
+  "specialization": {
+    "T": "2",
+    "p": "-294"
+  },
+  "status": "completed seed-fibre numerical lattice audit"
+}

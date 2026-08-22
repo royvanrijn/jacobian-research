@@ -137,36 +137,7 @@ assert quartic.degree() == 4
 quartic_at_zero = T_field(quartic(u_zero))
 assert quartic_at_zero.is_square()
 w_zero = quartic_at_zero.sqrt()
-
-# Classical binary-quartic covariants, with coefficients in QQ(T).
-binary_ring = PolynomialRing(T_field, names=("x", "z"))
-x, z = binary_ring.gens()
-binary_quartic = sum(
-    binary_ring(quartic[index]) * x**index * z**(4 - index)
-    for index in range(5)
-)
-H = (
-    binary_quartic.derivative(x, 2) * binary_quartic.derivative(z, 2)
-    - binary_quartic.derivative(x).derivative(z)**2
-) / 3
-G = (
-    binary_quartic.derivative(x) * H.derivative(z)
-    - binary_quartic.derivative(z) * H.derivative(x)
-)
-I = 12 * quartic[4] * quartic[0] - 3 * quartic[3] * quartic[1] + quartic[2]**2
-J = (
-    72 * quartic[4] * quartic[2] * quartic[0]
-    + 9 * quartic[3] * quartic[2] * quartic[1]
-    - 27 * quartic[4] * quartic[1]**2
-    - 27 * quartic[3]**2 * quartic[0]
-    - 2 * quartic[2]**3
-)
-assert G**2 == -QQ(16) / 3 * H**3 + 256 * I * H * binary_quartic**2 - QQ(1024) / 3 * J * binary_quartic**3
-H_zero = T_field(H(x=u_zero, z=1))
-G_zero = T_field(G(x=u_zero, z=1))
-raw_x = -QQ(3) / 4 * H_zero / quartic_at_zero
-raw_y = QQ(9) / 32 * G_zero * w_zero / quartic_at_zero**2
-assert raw_y**2 == raw_x**3 - 27 * I * raw_x - 27 * J
+I, J = binary_quartic_invariants(quartic)
 
 minimal_A = T_field([
     QQ(value) for value in child["minimal_short_weierstrass"]["A_coefficients_low_to_high"]
@@ -183,9 +154,15 @@ for factor, exponent in fourth_power_ratio.factor():
     remaining_constant /= factor**exponent
 assert remaining_constant in QQ and QQ(remaining_constant).nth_root(4)**4 == remaining_constant
 minimalizing_unit *= QQ(remaining_constant).nth_root(4)
-child_x = minimalizing_unit**2 * raw_x
-child_y = minimalizing_unit**3 * raw_y
-assert child_y**2 == child_x**3 + minimal_A * child_x + minimal_B
+zero_transport = transport_binary_quartic_point_to_jacobian(
+    quartic, u_zero, 1, w_zero, minimalizing_unit
+)
+assert zero_transport["standard_a"] == -27 * I
+assert zero_transport["standard_b"] == -27 * J
+assert zero_transport["child_a"] == minimal_A
+assert zero_transport["child_b"] == minimal_B
+child_x = zero_transport["child_x"]
+child_y = zero_transport["child_y"]
 
 child_x_numerator = T_ring(child_x.numerator())
 child_x_denominator = T_ring(child_x.denominator())
@@ -237,22 +214,15 @@ else:
     raise ArithmeticError("affine E7 chart did not select a quartic-infinity sign")
 
 
-def transport_binary_quartic_point(x_value, z_value, w_value):
-    value = T_field(binary_quartic(x=x_value, z=z_value))
-    assert w_value**2 == value
-    h_value = T_field(H(x=x_value, z=z_value))
-    g_value = T_field(G(x=x_value, z=z_value))
-    raw_x_value = -QQ(3) / 4 * h_value / value
-    raw_y_value = QQ(9) / 32 * g_value * w_value / value**2
-    result_x = minimalizing_unit**2 * raw_x_value
-    result_y = minimalizing_unit**3 * raw_y_value
-    assert result_y**2 == result_x**3 + minimal_A * result_x + minimal_B
-    return result_x, result_y
-
-
 infinity_sections = []
 for sign, w_value in (("plus", infinity_root), ("minus", -infinity_root)):
-    infinity_x, infinity_y = transport_binary_quartic_point(T_field(1), T_field(0), w_value)
+    infinity_transport = transport_binary_quartic_point_to_jacobian(
+        quartic, T_field(1), T_field(0), w_value, minimalizing_unit
+    )
+    assert infinity_transport["child_a"] == minimal_A
+    assert infinity_transport["child_b"] == minimal_B
+    infinity_x = infinity_transport["child_x"]
+    infinity_y = infinity_transport["child_y"]
     infinity_sections.append({
         "binary_quartic_point": "[1:0:{}*sqrt(leading_coefficient)]".format(
             "+" if sign == "plus" else "-"

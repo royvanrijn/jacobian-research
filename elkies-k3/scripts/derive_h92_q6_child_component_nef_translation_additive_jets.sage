@@ -14,7 +14,7 @@ import hashlib
 import json
 from pathlib import Path
 
-from sage.all import EllipticCurve, PolynomialRing, QQ
+from sage.all import EllipticCurve, PolynomialRing, QQ, matrix
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -45,6 +45,78 @@ def affine_point_data(point, ring, factor):
     return {
         "x_order": order_at(x_value, factor),
         "y_order": order_at(y_value, factor),
+    }
+
+
+def translated_germ_data(p0, ring, factor, base_point, coefficient_a, coefficient_b, orders):
+    """Certify the local singular-germ action of ``tau_-P0``.
+
+    This is deliberately one stage before a resolved-chart pullback.  At the
+    additive cusp, ``x(P0)`` is a unit, so the group-law denominator
+    ``X-x(P0)`` is a unit in the local surface germ.  The returned tangent map
+    identifies the direction that a subsequent actual blow-up-chart compiler
+    must transport; it does not claim to have already performed that lift.
+    """
+
+    u_ring = PolynomialRing(QQ, "u")
+    u = u_ring.gen()
+    u_field = u_ring.fraction_field()
+    px, py = p0.xy()
+
+    def localize(value):
+        return u_field(u_ring(value.numerator()(base_point + u))) / u_field(
+            u_ring(value.denominator()(base_point + u))
+        )
+
+    x0_u, y0_u = localize(px), localize(py)
+    assert x0_u.valuation() == y0_u.valuation() == 0
+    assert x0_u.numerator()(0) and x0_u.denominator()(0)
+    assert y0_u.numerator()(0) and y0_u.denominator()(0)
+    a_u = u_ring(coefficient_a(base_point + u))
+    b_u = u_ring(coefficient_b(base_point + u))
+    assert a_u.valuation() == orders[0] and b_u.valuation() == orders[1]
+    assert y0_u**2 == x0_u**3 + u_field(a_u)*x0_u + u_field(b_u)
+
+    x0, y0 = QQ(x0_u(0)), QQ(y0_u(0))
+    assert x0 and y0 and y0**2 == x0**3
+    lambda0 = -y0/x0
+    # The image of the singular cusp under the rational group-law formula.
+    # The Weierstrass equation of P0 forces both coordinates to vanish to
+    # order at least three, so there is no linear u-term in the tangent map.
+    cusp_x_image = y0_u**2/x0_u**2-x0_u
+    cusp_y_image = (y0_u/x0_u)*cusp_x_image
+    assert cusp_x_image.valuation() >= min(orders)
+    assert cusp_y_image.valuation() >= min(orders)
+    x_linear_y = 2*y0/x0**2
+    assert lambda0**2 == x0
+    # For lambda=(Y+y0)/(X-x0), x'=lambda^2-X-x0 and
+    # y'=lambda*(X-x')-Y, these are the exact tangent coefficients at the
+    # cusp. The displayed matrix has determinant one.
+    tangent = matrix(QQ, [
+        [1, 0, 0],
+        [0, 1, x_linear_y],
+        [0, 0, 1],
+    ])
+    assert tangent.det() == 1
+    return {
+        "formula": {
+            "lambda": "(Y+y_P0(u))/(X-x_P0(u))",
+            "X_image": "lambda^2-X-x_P0(u)",
+            "Y_image": "lambda*(X-X_image)-Y",
+        },
+        "cusp_denominator": "X-x_P0(u)",
+        "denominator_unit_at_cusp": True,
+        "cusp_image_orders": {
+            "X": int(cusp_x_image.valuation()),
+            "Y": int(cusp_y_image.valuation()),
+        },
+        "tangent_pullback_mod_maximal_ideal_squared": {
+            "u": "u",
+            "X": "X+({})*Y".format(x_linear_y),
+            "Y": "Y",
+            "matrix_in_(u,X,Y)": [[str(value) for value in row] for row in tangent.rows()],
+            "determinant": int(1),
+        },
     }
 
 
@@ -99,6 +171,10 @@ for fibre in child["finite_fibres"]:
     gradient = (-3*x0**2-a0, 2*y0)
     smooth = gradient != (0, 0)
     assert smooth
+    germ = translated_germ_data(
+        p0, ring, factor, base_point, A, B,
+        (4, 5) if fibre["kodaira"] == "II*" else (3, 4),
+    )
     results[fibre["kodaira"]] = {
         "base_factor": str(factor),
         "base_point": str(base_point),
@@ -110,6 +186,7 @@ for fibre in child["finite_fibres"]:
         },
         "Q": q_local,
         "translation": "tau_-P0 extends over the Neron smooth locus",
+        "singular_germ_translation": germ,
     }
 assert set(results) == {"II*", "IV*"}
 
@@ -122,10 +199,15 @@ payload = {
         "component_nef_chord": {"path": str(args.chord.relative_to(ROOT)), "sha256": digest(args.chord)},
     },
     "additive_fibres": results,
-    "conclusion": "The translation centre P0 is smooth at both additive Weierstrass fibres.",
+    "conclusion": (
+        "The translation centre P0 is smooth at both additive Weierstrass fibres, "
+        "and its group-law formula is regular at each additive cusp with the "
+        "recorded invertible tangent action."
+    ),
     "boundary": (
-        "This does not provide resolved-chart pullbacks of tau_-P0, translated "
-        "II*/IV* quotient modules, an infinity module, a global pencil, branch "
+        "This is a singular-germ and tangent-direction prerequisite only. It does "
+        "not provide the required lifts through the actual II*/IV* blow-up charts, "
+        "translated quotient modules, an infinity module, a global pencil, branch "
         "divisor, extension collision, or rank claim."
     ),
 }

@@ -101,6 +101,77 @@ def bounded_weierstrass_monomials(old_fiber_degree, base_powers):
     return tuple(answer)
 
 
+def marked_section_generic_fibre_basis(old_fiber_degree, chord_symbol="m"):
+    """Return the generic-fibre basis for ``L((q-1)O+P)``.
+
+    Once a caller has certified that the marked chord ``m`` has poles only at
+    ``O`` and the displayed marked point ``P``, the usual Weierstrass
+    monomials span ``L((q-1)O)`` and adjoining ``m`` gives the degree-``q``
+    space ``L((q-1)O+P)``.  This is a generic-fibre statement only: base
+    coefficient intervals and the vertical correction must still be imposed
+    by actual resolved-chart conditions.
+
+    The returned labels deliberately distinguish the chord from ordinary
+    ``x,y`` monomials, so a caller cannot silently replace a marked ambient by
+    ``L(qO)``.  For the first H3 q6 hop (whose actual old-fibre degree is two)
+    the result is exactly ``(1,m)``.
+    """
+    degree = ZZ(old_fiber_degree)
+    if degree < 1:
+        raise ValueError("old-fibre degree must be positive")
+    ordinary = bounded_weierstrass_monomials(degree, (0,))
+    basis = tuple({
+        "kind": "weierstrass_monomial",
+        "x_power": entry["x_power"],
+        "y_power": entry["y_power"],
+    } for entry in ordinary)
+    if degree == 1:
+        return basis
+    return basis + ({"kind": "marked_chord", "symbol": str(chord_symbol)},)
+
+
+def balanced_marked_chord_power_basis(multiplicity, chord_symbol="m", x_symbol="x"):
+    """Return the standard basis of ``L(nO+nP)`` in a chord quadratic extension.
+
+    Suppose a caller has certified a marked chord ``m`` with simple poles at
+    ``O,P``, a function ``x`` with pole divisor ``2O``, and a monic quadratic
+    relation for ``x`` over the old base field extended by ``m``.  Then
+
+    ``1,m,...,m^n, x,x*m,...,x*m^(n-2)``
+
+    is the natural ``2n``-element basis of ``L(nO+nP)``.  This routine records
+    those pole bounds as data, but deliberately does not manufacture the
+    quadratic relation or infer the marked-point pole statement from a fibre
+    label.  For ``n=9`` it is the 18-dimensional H3 q8 source ambient.
+    """
+    multiplicity = ZZ(multiplicity)
+    if multiplicity <= 0:
+        raise ValueError("balanced marked-divisor multiplicity must be positive")
+    basis = []
+    for power in range(multiplicity + 1):
+        basis.append({
+            "kind": "m_power",
+            "m_power": int(power),
+            "x_power": 0,
+            "chord_symbol": str(chord_symbol),
+            "pole_order_at_O": int(power),
+            "pole_order_at_marked_section": int(power),
+        })
+    for power in range(max(ZZ(0), multiplicity - 1)):
+        basis.append({
+            "kind": "x_m_power",
+            "m_power": int(power),
+            "x_power": 1,
+            "chord_symbol": str(chord_symbol),
+            "x_symbol": str(x_symbol),
+            "pole_order_at_O": int(power + 2),
+            "pole_order_at_marked_section": int(power),
+        })
+    if len(basis) != 2*multiplicity:
+        raise ArithmeticError("balanced marked-chord basis has the wrong Riemann--Roch dimension")
+    return tuple(basis)
+
+
 def certify_generic_fibre_divisor_decomposition(
     gram,
     divisor,
@@ -178,6 +249,105 @@ def certify_generic_fibre_divisor_decomposition(
             "marked_section_coefficient": 1,
         },
         "vertical_support": tuple(records),
+        "fiber_twist": int(fiber_twist),
+        "reconstructed_divisor": tuple(int(value) for value in reconstructed),
+    }
+
+
+def certify_generic_fibre_horizontal_support(
+    gram,
+    divisor,
+    old_fiber,
+    horizontal_support,
+    vertical_support=(),
+    fiber_twist=0,
+    expected_old_fiber_degree=None,
+):
+    """Certify an explicit effective horizontal representative of ``D``.
+
+    A target may have a natural generic-fibre representative with repeated
+    marked sections, such as ``9O+9(-P1)`` in the H3 q8 source.  Replacing it
+    prematurely by a linearly equivalent ``(q-1)O+P`` can lose the chord
+    basis and the exact vertical bookkeeping needed by the resolved charts.
+    This routine therefore certifies the *literal* horizontal support first.
+
+    Every support record is ``(name, multiplicity, section)``.  It must be a
+    positive multiple of a section of the declared old fibration.  Together
+    with explicitly supplied vertical components and a fibre twist, these
+    records must reconstruct ``divisor`` in the supplied Neron--Severi frame.
+    It makes no attempt to discover the Mordell--Weil sum giving an alternative
+    one-point representative; callers who use one must certify that separate
+    group-law conversion and its chosen function basis.
+    """
+    gram = matrix(ZZ, gram)
+    divisor = vector(ZZ, divisor)
+    old_fiber = vector(ZZ, old_fiber)
+    dimension = len(divisor)
+    if gram.nrows() != gram.ncols() or gram.nrows() != dimension:
+        raise ValueError("Neron--Severi Gram matrix and divisor have incompatible sizes")
+    if len(old_fiber) != dimension:
+        raise ValueError("old fibre has incompatible Neron--Severi size")
+    q = intersection(divisor, old_fiber, gram)
+    if q <= 0:
+        raise ValueError("target divisor has nonpositive old-fibre degree")
+    if expected_old_fiber_degree is not None and q != ZZ(expected_old_fiber_degree):
+        raise ValueError("target divisor has the wrong old-fibre degree")
+    horizontal = vector(ZZ, [0]*dimension)
+    horizontal_records = []
+    seen_names = set()
+    for item in horizontal_support:
+        if len(item) != 3:
+            raise ValueError("horizontal support record must be (name, multiplicity, section)")
+        name, multiplicity, section = item
+        name = str(name)
+        multiplicity = ZZ(multiplicity)
+        section = vector(ZZ, section)
+        if name in seen_names:
+            raise ValueError("duplicate horizontal support name {}".format(name))
+        seen_names.add(name)
+        if multiplicity <= 0:
+            raise ValueError("horizontal support multiplicity must be positive")
+        if len(section) != dimension:
+            raise ValueError("horizontal section has incompatible Neron--Severi size")
+        degree = intersection(section, old_fiber, gram)
+        if degree != 1:
+            raise ValueError("declared horizontal section {} has old-fibre degree {}".format(name, degree))
+        horizontal += multiplicity*section
+        horizontal_records.append({
+            "name": name,
+            "multiplicity": int(multiplicity),
+            "old_fiber_degree": int(degree),
+        })
+    if not horizontal_records:
+        raise ValueError("generic-fibre horizontal support is empty")
+    vertical = vector(ZZ, [0]*dimension)
+    vertical_records = []
+    for item in vertical_support:
+        if len(item) != 3:
+            raise ValueError("vertical support record must be (name, coefficient, component)")
+        name, coefficient, component = item
+        coefficient = ZZ(coefficient)
+        component = vector(ZZ, component)
+        if len(component) != dimension:
+            raise ValueError("vertical component has incompatible Neron--Severi size")
+        degree = intersection(component, old_fiber, gram)
+        if degree != 0:
+            raise ValueError("declared vertical component {} has old-fibre degree {}".format(name, degree))
+        vertical += coefficient*component
+        vertical_records.append({
+            "name": str(name), "coefficient": int(coefficient),
+            "old_fiber_degree": int(degree),
+        })
+    fiber_twist = ZZ(fiber_twist)
+    if intersection(horizontal, old_fiber, gram) != q:
+        raise ValueError("horizontal support degree does not equal target old-fibre degree")
+    reconstructed = horizontal+vertical+fiber_twist*old_fiber
+    if reconstructed != divisor:
+        raise ValueError("declared horizontal support does not reconstruct target divisor")
+    return {
+        "old_fiber_degree": int(q),
+        "horizontal_support": tuple(horizontal_records),
+        "vertical_support": tuple(vertical_records),
         "fiber_twist": int(fiber_twist),
         "reconstructed_divisor": tuple(int(value) for value in reconstructed),
     }
@@ -418,23 +588,42 @@ def resolved_chart_quotient_condition(
     groebner_basis = quotient_ideal.groebner_basis()
     if not quotient_basis:
         raise ValueError("{} has an empty quotient basis".format(name))
-    quotient_dimension = quotient_ideal.vector_space_dimension()
+    # Sage exposes vector_space_dimension for multivariate zero-dimensional
+    # ideals, but not for a principal univariate ideal.  The latter is a
+    # common resolved-jet quotient: its dimension is the degree of its
+    # nonzero Gröbner generator over the coefficient field.
+    try:
+        quotient_dimension = quotient_ideal.vector_space_dimension()
+    except AttributeError:
+        if local_ring.ngens() != 1 or len(groebner_basis) != 1:
+            raise ValueError(
+                "{} needs a finite-colength quotient with computable dimension".format(name)
+            )
+        quotient_dimension = local_ring(groebner_basis[0]).degree()
+        if quotient_dimension <= 0:
+            raise ValueError("{} quotient is not finite-dimensional".format(name))
     if quotient_dimension != len(quotient_basis):
         raise ValueError(
             "{} quotient basis has length {}, but quotient dimension is {}".format(
                 name, len(quotient_basis), quotient_dimension
             )
         )
+    def normal_form(value):
+        value = local_ring(value)
+        try:
+            return value.reduce(groebner_basis)
+        except AttributeError:
+            if local_ring.ngens() != 1 or len(groebner_basis) != 1:
+                raise
+            return value.mod(local_ring(groebner_basis[0]))
     if any(
-        local_ring(value).reduce(groebner_basis) != local_ring(value)
+        normal_form(value) != local_ring(value)
         for value in quotient_basis
     ):
         raise ValueError("{} quotient basis is not reduced".format(name))
 
     def evaluator(basis_element):
-        remainder = local_ring(trivialized_pullback(basis_element)).reduce(
-            groebner_basis
-        )
+        remainder = normal_form(trivialized_pullback(basis_element))
         coordinates = vector(
             QQ,
             tuple(
@@ -456,6 +645,50 @@ def resolved_chart_quotient_condition(
         name,
         ambient_basis,
         evaluator,
+        quotient_basis,
+        provenance,
+    )
+
+
+def resolved_marked_chord_condition(
+    name,
+    ambient_basis,
+    coefficient_pair,
+    local_ring,
+    quotient_ideal,
+    quotient_basis,
+    chord_residue,
+    provenance,
+):
+    """Compile a marked-chord condition in an actual resolved quotient.
+
+    An element of a marked degree-two Riemann--Roch space is often represented
+    locally as ``a+b*m``.  Here ``coefficient_pair`` returns its two
+    coefficients in the caller's resolved-chart coordinate ring and
+    ``chord_residue`` is the reduction of the certified chord function ``m``
+    in the stated finite quotient.  The condition is then compiled by the
+    same normal-form mechanism as an ordinary resolved-chart pullback.
+
+    This deliberately takes a *resolved* quotient ideal and a caller-derived
+    chord residue.  It does not infer either one from a Kodaira type, a
+    component label, or a formal slope expression on the singular model.
+    """
+    local_ring = local_ring
+    chord_residue = local_ring(chord_residue)
+
+    def trivialized_pullback(basis_element):
+        pair = tuple(coefficient_pair(basis_element))
+        if len(pair) != 2:
+            raise ValueError("{} coefficient map must return (a, b)".format(name))
+        a, b = (local_ring(value) for value in pair)
+        return a+b*chord_residue
+
+    return resolved_chart_quotient_condition(
+        name,
+        ambient_basis,
+        local_ring,
+        trivialized_pullback,
+        quotient_ideal,
         quotient_basis,
         provenance,
     )
@@ -507,6 +740,79 @@ def resolved_chart_overlap_condition(
         overlap_basis,
         provenance,
     )
+
+
+def compile_resolved_chart_cover(
+    ambient_basis, chart_records=(), overlap_records=(), complete=False,
+    compute_kernel=True,
+):
+    """Compile a declared resolved-chart cover into one RR condition matrix.
+
+    A neighbouring divisor is only an equation-level object after its local
+    line-bundle trivializations have been specified on the resolved surface.
+    This orchestration helper collects those chart quotients and their Čech
+    overlap equalities, then feeds the resulting blocks to
+    :func:`compile_resolved_conditions`.
+
+    Each chart record must contain ``name``, ``local_ring``,
+    ``trivialized_pullback``, ``quotient_ideal``, ``quotient_basis``, and
+    ``provenance``.  Each overlap record must contain ``name``,
+    ``left_evaluator``, ``right_evaluator``, ``left_to_overlap``,
+    ``right_to_overlap``, ``overlap_basis``, and ``provenance``.  These are
+    caller-supplied actual blow-up-chart data; neither fibre types nor
+    component labels are accepted as substitutes.
+
+    ``complete`` is deliberately a caller assertion about the *whole*
+    resolved cover.  The helper never infers completeness merely because the
+    displayed blocks have a two-dimensional kernel.
+    """
+    ambient_basis = tuple(ambient_basis)
+    chart_required = {
+        "name", "local_ring", "trivialized_pullback", "quotient_ideal",
+        "quotient_basis", "provenance",
+    }
+    overlap_required = {
+        "name", "left_evaluator", "right_evaluator", "left_to_overlap",
+        "right_to_overlap", "overlap_basis", "provenance",
+    }
+    chart_blocks = []
+    for record in chart_records:
+        if not isinstance(record, dict):
+            raise TypeError("resolved chart record must be a dictionary")
+        missing = chart_required.difference(record)
+        if missing:
+            raise ValueError("resolved chart record is missing {}".format(sorted(missing)))
+        chart_blocks.append(resolved_chart_quotient_condition(
+            record["name"], ambient_basis, record["local_ring"],
+            record["trivialized_pullback"], record["quotient_ideal"],
+            record["quotient_basis"], record["provenance"],
+        ))
+    overlap_blocks = []
+    for record in overlap_records:
+        if not isinstance(record, dict):
+            raise TypeError("resolved overlap record must be a dictionary")
+        missing = overlap_required.difference(record)
+        if missing:
+            raise ValueError("resolved overlap record is missing {}".format(sorted(missing)))
+        overlap_blocks.append(resolved_chart_overlap_condition(
+            record["name"], ambient_basis, record["left_evaluator"],
+            record["right_evaluator"], record["left_to_overlap"],
+            record["right_to_overlap"], record["overlap_basis"],
+            record["provenance"],
+        ))
+    blocks = tuple(chart_blocks + overlap_blocks)
+    names = tuple(block["name"] for block in blocks)
+    if len(set(names)) != len(names):
+        raise ValueError("resolved chart cover has duplicate condition-block names")
+    compilation = compile_resolved_conditions(
+        ambient_basis, blocks, complete=complete, compute_kernel=compute_kernel,
+    )
+    return {
+        "ambient_basis": ambient_basis,
+        "chart_blocks": tuple(chart_blocks),
+        "overlap_blocks": tuple(overlap_blocks),
+        "compilation": compilation,
+    }
 
 
 def compile_resolved_conditions(
@@ -1350,6 +1656,68 @@ def compile_resolved_degree_two_chord_hop(
         "pencil_basis": certified_basis,
         "chord_coefficients": ((a0, b0), (a1, b1)),
         "conversion": conversion,
+    }
+
+
+def compile_resolved_degree_two_child_jacobian(
+    compilation,
+    pencil_basis,
+    chord_expansions,
+    old_base_ring,
+    new_base_ring,
+    parameter,
+    x_marked,
+    y_marked,
+    old_a,
+    old_b=None,
+    marked_chords=(),
+):
+    """Compile a certified degree-two pencil through its Jacobian fibre data.
+
+    This is the strict model hand-off for a degree-two elliptic neighbour.
+    It first invokes :func:`compile_resolved_degree_two_chord_hop`, so the
+    binary quartic is obtained from the same two rows that passed every
+    declared resolved-chart condition.  It then places the resulting short
+    Jacobian coefficients in the supplied new-base function field and runs
+    exact finite-place minimization/Kodaira classification there.
+
+    The returned ``infinity_boundary`` is intentionally only a valuation
+    diagnostic.  A global minimal model, additive component labels, and
+    transported section intersections still require the caller's explicit
+    line-bundle and resolved-chart certificates.  Thus this routine builds a
+    child *equation* without manufacturing any of that missing geometry.
+    """
+    if new_base_ring.ngens() != 1:
+        raise ValueError("new base ring must have exactly one coordinate")
+    resolved_hop = compile_resolved_degree_two_chord_hop(
+        compilation,
+        pencil_basis,
+        chord_expansions,
+        old_base_ring,
+        parameter,
+        x_marked,
+        y_marked,
+        old_a,
+        old_b=old_b,
+        marked_chords=marked_chords,
+    )
+    conversion = resolved_hop["conversion"]
+    new_base_field = new_base_ring.fraction_field()
+    try:
+        coefficient_a = new_base_field(conversion["jacobian_a"])
+        coefficient_b = new_base_field(conversion["jacobian_b"])
+    except (TypeError, ValueError) as error:
+        raise ValueError(
+            "degree-two Jacobian coefficients do not lie in the declared new-base field"
+        ) from error
+    classification = classify_finite_short_weierstrass_fibres(
+        new_base_ring, coefficient_a, coefficient_b
+    )
+    return {
+        "resolved_hop": resolved_hop,
+        "jacobian_a": coefficient_a,
+        "jacobian_b": coefficient_b,
+        "finite_classification": classification,
     }
 
 

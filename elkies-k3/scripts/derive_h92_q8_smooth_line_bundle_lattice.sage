@@ -43,8 +43,15 @@ frame = json.loads(args.frame.read_text())
 assert generic["status"] == "PASS_EXACT_Q8_GENERIC_RR_AMBIENT"
 assert frame["status"] == "PASS_EXACT_Q8_SMOOTH_COLLISION_FRAME"
 assert generic["generic_fibre_divisor"] == "9*O + 9*(-P1)"
+support = generic["generic_fibre_support_certificate"]
+assert support["old_fiber_degree"] == 18
+assert [(entry["name"], entry["multiplicity"]) for entry in support["horizontal_support"]] == [
+    ("O", 9), ("-P1", 9),
+]
+assert support["fiber_twist"] == -11
 vertical = generic["source_q8_lattice_selection"]["vertical_difference_D_minus_9O_minus_9minusP1"]
 assert vertical == [-11, 0, 2, 3, 4, 6, 5, 5, 6, -4, -5, -7, -10, -8, -6, -4, -2, 0, 0]
+assert [entry["coefficient"] for entry in support["vertical_support"]] == vertical[2:17]
 assert len(frame["regular_degree_18_frame"]) == 18
 assert frame["coordinates"]["q"] == "(m-y(P1)/x(P1))/h"
 assert frame["coordinates"]["X"] == "h^2*x"

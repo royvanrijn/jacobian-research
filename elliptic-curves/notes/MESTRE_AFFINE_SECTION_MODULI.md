@@ -1055,10 +1055,11 @@ The two selected affine **abscissae** collide at
 `T=-4223/544`, `x=4417/544`.  The compact triangular calculation is more
 informative than the earlier square-only check: with the common leading
 ordinate normalization, the two points have opposite raw-quartic ordinates.
-Thus this is a hyperelliptic-conjugate collision, not a same-point section
-intersection in that normalization.  It neither supplies the full pair
-intersection number nor rules out contributions at infinity or reducible
-fibres.
+The generic \(\mathbb Q(p)\) recursive calculation now verifies the same
+opposite-ordinate identity at the unique affine-line crossing.  Thus this is
+a hyperelliptic-conjugate collision, not a same-point affine intersection,
+on the displayed component.  It neither supplies the full pair intersection
+number nor rules out contributions at infinity or reducible fibres.
 
 The finite-reduction audit is materially different from the previously known
 multi-companion seeds: at `T=1,-1` the visible and every one-companion mod-3
@@ -1106,6 +1107,27 @@ generic certificate is
 `elliptic_mestre_diameter235_eight_companion_generic_relation.json`; the
 seed-only checkpoint remains
 `elliptic_mestre_diameter235_eight_companion_seed_pair_relation.json`.
+
+The first ten visible sections plus (P_1) have also been audited at the
+regular seed fibre `p=-294,T=2`.  The real height matrix has numerical rank
+11 at both 72 and 120 decimal digits (smallest eigenvalue about `2.045`).  A
+single PARI `ellsaturation` call through primes below 20 returns eleven exact
+points and reports a height-determinant ratio
+
+\[
+1048576=2^{20}.
+\]
+
+Thus the displayed independent seed basis is visibly not a saturated basis
+in this bounded computational audit (the corresponding determinant heuristic
+is index (2^{10})).  This is precisely the kind of warning that prevents a
+rank statement from being mistaken for a Mordell--Weil lattice statement.  It
+does **not** establish a saturated basis—at the seed or generically—because
+the PARI routine is documented under a finite-index hypothesis and this audit
+does not determine the full fibre rank.  Nor does it supply the missing full
+intersection calculation, reducible-fibre contributions, or Shioda Gram
+matrix.  The replayable record is
+`elliptic_mestre_diameter235_displayed_lattice_seed_audit.json`.
 
 At the seed specialization `s=-357/47,T=1`, exact group law puts both affine
 points in the visible subgroup:

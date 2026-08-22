@@ -64,15 +64,6 @@ y_p = u_field(polynomial(
     u_ring, section["y_entrance_base"]["denominator_coefficients"]
 ))
 
-def coefficient_pair(entry):
-    A = polynomial(u_ring, entry["A_coefficients_low_to_high"])
-    B = polynomial(u_ring, entry["B_coefficients_low_to_high"])
-    return u_field(A) / u_field(h**2), u_field(B) / u_field(h)
-
-(a0, b0), (a1, b1) = tuple(
-    coefficient_pair(entry) for entry in rr["kernel"]["sections"]
-)
-
 ANCHOR = ROOT / "elkies-k3/scripts/verify_h3_noncm_q6_source_anchor.sage"
 H92 = ROOT / "artifacts/local/humbert-inputs/92/igusa92.txt"
 anchor = SourceFileLoader("h92_q6_child_anchor", str(ANCHOR)).load_module()
@@ -80,6 +71,7 @@ h92_ring, h92_formulas = anchor.parse_h92(H92)
 r92, s92 = anchor.EXPECTED_H92
 A1, A, B1, B, B2 = tuple(QQ(value(r92, s92)) for value in h92_formulas)
 old_a = A1 / u**3 + A / u**4
+old_b = B1 / u**5 + B / u**6 + B2 / u**7
 
 T_ring = PolynomialRing(QQ, "T")
 T = T_ring.gen()
@@ -93,21 +85,55 @@ def transport(value):
         u_over_T([T_field(entry) for entry in value.denominator().list()])
     )
 
-a0_t, b0_t, a1_t, b1_t, x_t, y_t, old_a_t = tuple(
-    transport(value) for value in (a0, b0, a1, b1, x_p, y_p, old_a)
+# Reconstruct the same complete q6 RR matrix used by the exact resolved-cover
+# certificate.  The child equation is compiled from its certified kernel, not
+# from an independently substituted pair of global sections.
+ambient_basis = tuple(tuple(entry) for entry in rr["ambient"]["basis"])
+collision_matrix = matrix(
+    QQ, [[QQ(value) for value in row] for row in rr["collision_condition"]["matrix"]]
 )
-m = pencil_chord_solution(a0_t, b0_t, a1_t, b1_t, T)
-radicand = chord_discriminant(x_t, y_t, old_a_t, m)
-numerator = u_over_T(radicand.numerator())
-denominator = u_over_T(radicand.denominator())
-quartic, square_factor = squarefree_binary_quartic(radicand, u_over_T)
+collision_block = quotient_condition(
+    "smooth_P1_O_collision",
+    ambient_basis,
+    lambda column: tuple(
+        collision_matrix[row, ambient_basis.index(column)]
+        for row in range(collision_matrix.nrows())
+    ),
+    tuple("collision_{}".format(row) for row in range(collision_matrix.nrows())),
+    "pinned q6 smooth collision quotient",
+)
+rr_compilation = compile_resolved_conditions(
+    ambient_basis, (collision_block,), complete=True, compute_kernel=False
+)
+assert rr_compilation["condition_matrix"] == collision_matrix
+assert rr_compilation["h0_certified"]
+kernel_basis = matrix(QQ, [
+    [QQ(value) for value in row] for row in rr["kernel"]["basis_matrix"]
+])
+chord_expansions = tuple(
+    (u_field(u**power) / u_field(h**2), u_field(0))
+    if kind == "A" else
+    (u_field(0), u_field(u**power) / u_field(h))
+    for kind, power in ambient_basis
+)
+child_compilation = compile_resolved_degree_two_child_jacobian(
+    rr_compilation,
+    kernel_basis,
+    tuple((transport(a), transport(b)) for a, b in chord_expansions),
+    u_over_T,
+    T_ring,
+    T,
+    transport(x_p),
+    transport(y_p),
+    transport(old_a),
+    old_b=transport(old_b),
+)
+conversion = child_compilation["resolved_hop"]["conversion"]
+quartic = conversion["binary_quartic"]
 assert quartic.degree() == 4
-jacobian_A, jacobian_B, delta = binary_quartic_jacobian_coefficients(quartic)
-assert delta
-
-classification = classify_finite_short_weierstrass_fibres(
-    T_ring, jacobian_A, jacobian_B
-)
+jacobian_A = child_compilation["jacobian_a"]
+jacobian_B = child_compilation["jacobian_b"]
+classification = child_compilation["finite_classification"]
 finite_data = [{
     "factor": str(item["factor"]), "degree": item["degree"],
     "raw_orders": list(item["raw_orders"]), "scaling": item["scaling"],

@@ -22,10 +22,13 @@ from sage.all import GF, PolynomialRing, QQ, ZZ, binomial, gcd, matrix
 
 
 ROOT = Path(__file__).resolve().parents[2]
+CORE = ROOT / "elkies-k3/scripts/elliptic_neighbor_compiler.sage"
 P1 = ROOT / "artifacts/generated-results/elkies-k3-h92-p1-lift.json"
 AMBIENT = ROOT / "artifacts/generated-results/elkies-k3-h92-q8-endpoint-rr-ambient.json"
 FRAME = ROOT / "artifacts/generated-results/elkies-k3-h92-q8-smooth-collision-frame.json"
 DEFAULT_OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-h92-q8-smooth-principal-parts-exact.json"
+
+exec(compile(CORE.read_text(), str(CORE), "exec"))
 
 
 def digest(path):
@@ -142,10 +145,31 @@ def finite_principal_part_coordinates(entry):
     return result
 
 
-reduced_columns = [
-    finite_principal_part_coordinates(entry) for entry in ambient_basis
-]
-reduced_matrix = matrix(finite, reduced_columns).transpose()
+def finite_principal_part_image(entry):
+    """Sparse coordinates of the actual finite smooth quotient image."""
+
+    values = finite_principal_part_coordinates(entry)
+    return {
+        (coordinates[index // residue_dimension][0],
+         coordinates[index // residue_dimension][1],
+         index % residue_dimension): value
+        for index, value in enumerate(values)
+        if value
+    }
+
+
+# The declared h-adic quotient has 18*degree(h^pole_bound) coordinates, but
+# a finite ambient sees only a finite subset.  Compile that exact image rather
+# than pretending that the quotient needs a hand-written dense matrix.
+smooth_block = finite_ambient_image_condition(
+    "q8 smooth collision principal parts modulo 43",
+    tuple(range(len(ambient_basis))),
+    lambda index: finite_principal_part_image(ambient_basis[index]),
+    lambda coordinate: coordinate,
+    finite,
+    "actual q/X smooth-collision frame reduced at the rank-certifying prime",
+)
+reduced_matrix = smooth_block["matrix"]
 reduced_rank = reduced_matrix.rank()
 assert reduced_rank == len(ambient_basis)
 condition_rows = len(coordinates)*residue_dimension
@@ -158,10 +182,11 @@ payload = {
     "status": "PASS_EXACT_Q8_SMOOTH_PRINCIPAL_PART_CONDITION_BLOCK",
     "inputs": {
         "p1": {"path": str(P1.relative_to(ROOT)), "sha256": digest(P1)},
+        "compiler_core": {"path": str(CORE.relative_to(ROOT)), "sha256": digest(CORE)},
         "endpoint_ambient": {"path": str(AMBIENT.relative_to(ROOT)), "sha256": digest(AMBIENT)},
         "smooth_frame": {"path": str(FRAME.relative_to(ROOT)), "sha256": digest(FRAME)},
     },
-    "parameters": {"extra_h_power": args.extra_h_power, "pole_bound": pole_bound},
+    "parameters": {"extra_h_power": int(args.extra_h_power), "pole_bound": int(pole_bound)},
     "ambient_basis": ambient_basis,
     "condition": {
         "frame": "q=(m-y(P1)/x(P1))/h, X=h^2*x",
@@ -169,17 +194,23 @@ payload = {
         "coordinate_count": int(len(coordinates)),
         "h_adic_residue_dimension": int(residue_dimension),
         "rows": int(condition_rows),
+        "finite_ambient_image_rows": int(reduced_matrix.nrows()),
         "columns": int(condition_columns),
         "rank": int(exact_rank),
         "kernel_dimension": int(exact_kernel_dimension),
         "rank_certificate": {
-            "prime": rank_prime,
+            "prime": int(rank_prime),
             "reduced_rank": int(reduced_rank),
             "argument": (
                 "The exact QQ matrix has at most its column count as rank; "
                 "its reduction mod 43 has that full column rank, so its QQ "
                 "rank is exactly the same."
             ),
+            "compiler_block": {
+                "name": smooth_block["name"],
+                "provenance": smooth_block["provenance"],
+                "finite_image_coordinate_count": int(reduced_matrix.nrows()),
+            },
         },
     },
     "boundary": (

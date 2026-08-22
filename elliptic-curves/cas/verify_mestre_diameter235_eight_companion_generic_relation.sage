@@ -143,9 +143,18 @@ def replay():
             x_value = root + sign * T
             visible.append(covariant_point(quartic, x_value, approximant(x_value) / T))
     affine = []
+    affine_ordinates = []
     for intercept, slope in lines:
         ordinate = triangular_ordinate(remainder, intercept, slope, root_d)
+        affine_ordinates.append(ordinate)
         affine.append(covariant_point(quartic, intercept + slope * T, ordinate))
+    first_intercept, first_slope = lines[0]
+    second_intercept, second_slope = lines[1]
+    if first_slope == second_slope:
+        raise AssertionError("the selected affine lines became parallel")
+    affine_crossing_t = (second_intercept - first_intercept) / (first_slope - second_slope)
+    if affine_ordinates[0](affine_crossing_t) != -affine_ordinates[1](affine_crossing_t):
+        raise AssertionError("the affine crossing is not generically hyperelliptic-conjugate")
     invariant_i = 12 * quartic[4] * quartic[0] - 3 * quartic[3] * quartic[1] + quartic[2]^2
     coefficient_a = -27 * invariant_i
     visible_relations = (
@@ -169,6 +178,10 @@ def replay():
         "relation": "P1+P2=sum relation_vector[i]*V_i in the component root order",
         "relation_vector": [int(value) for value in relation],
         "visible_relations": [[int(value) for value in item] for item in visible_relations],
+        "affine_line_crossing": {
+            "common_triangular_orientation_gives_hyperelliptic_conjugates": True,
+            "scope_limit": "this rules out a same-point affine crossing for the displayed pair, not intersections at infinity or reducible-fibre contributions",
+        },
     }
     if specialized_p is not None:
         result["p_specialization"] = str(specialized_p)
