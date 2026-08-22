@@ -1,0 +1,38 @@
+# Q80 low-q q4 candidate-1 CM24 equation certificate over GF(73)
+# Certified 2026-08-22 by exact CM24 divisor transport, MW marking,
+# node-constrained P.O=0 horizontal reconstruction, and exact A3+D4 module.
+# Generic move: 4A1/MW13 --q4(2,2)--> A1/MW16
+# CM24 source: A1+2A3+2D4/MW3
+# CM24 child: A1+A2+A3+A4+A5/MW3
+# root data: rank=15 roots=70 root_det=720
+#
+# Special divisor geometry:
+# D.F=2, D.O=0, P.O=0, MW height=3/4, fibre_twist=2.
+# Horizontal H=-P3 in an optimal MW basis.
+# Special vertical support:
+#   one A3 with coefficients (-1,-1,-1),
+#   one D4 with coefficients (-1,0,-1,-1).
+#
+# Minimal polynomial q4_6855 parent gauge:
+# reducible fibres: I0* at U=48,49; I4 at U=2,66; I2 at U=32.
+# nodes: (2,65), (32,16), (48,0), (49,0), (66,71).
+#
+# Eight node-compatible P.O=0 horizontal candidates occur. The D4 outer-complement
+# ramified-chart rule predicts quotient residue c=0. All eight exact target cases use
+# c=0; no fallback nonzero residue is needed.
+#
+# Pinned representative:
+# horizontal_X=(48,21,46,56)
+# horizontal_Y=(5,12,53,39,68,10,7)
+# hit_I4=2, supported_A3=66, supported_D4=48, D4_residue=0
+# A3+D4 kernel=((1,0,16,62),(0,1,38,67))
+
+quartic(U;W) = U^4 + ((43*W^4 + 65*W^3 + 38*W^2 + 4*W + 26)/(W^4 + 69*W^3 + 7*W^2 + 65*W + 10))*U^3 + ((40*W^4 + 23*W^3 + 14*W^2 + 15*W + 62)/(W^4 + 69*W^3 + 7*W^2 + 65*W + 10))*U^2 + ((65*W^4 + 40*W^3 + 23*W^2 + 2*W + 33)/(W^4 + 69*W^3 + 7*W^2 + 65*W + 10))*U + (18*W^3 + 35*W^2 + 44*W + 10)/(W^3 + 44*W^2 + 2*W + 15)
+twist(W) = 34*W^8 + 42*W^7 + 44*W^6 + 21*W^5 + 47*W^4 + 27*W^3 + 21*W^2 + 14*W + 27
+
+A(W) = 32*W^16 + 12*W^15 + 19*W^14 + 9*W^13 + 2*W^12 + 44*W^11 + 11*W^10 + 43*W^9 + 28*W^8 + 30*W^7 + 49*W^6 + 3*W^5 + 16*W^4 + 25*W^3 + 12*W^2 + 67*W + 26
+B(W) = 18*W^24 + 60*W^23 + 51*W^22 + 68*W^21 + 61*W^20 + 70*W^19 + 19*W^18 + 59*W^17 + 10*W^16 + 12*W^15 + 31*W^14 + 21*W^13 + 45*W^12 + 31*W^11 + 58*W^10 + 66*W^9 + 34*W^8 + 28*W^7 + 40*W^6 + 47*W^5 + 57*W^4 + 58*W^3 + 26*W^2 + 59*W + 23
+
+# The stored A,B are the raw Jacobian coefficients from the pinned quartic.
+# As with earlier stages, a later equation-side script may remove exact square
+# twist factors before reconstructing the next horizontal.
