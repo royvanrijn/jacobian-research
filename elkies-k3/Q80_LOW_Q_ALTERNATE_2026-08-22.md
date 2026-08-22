@@ -2,28 +2,27 @@
 
 ## Status
 
-This note records the current state of the **secondary/fallback Q80 low-q route**. The route is complete at the generic lattice level and reaches a new rootless `MW17` frame. It remains secondary to the corrected H3 source-polarization route.
+The Q80 low-q alternate route is complete at the generic lattice level and reaches a new rootless `MW17` frame. Every retained new neighbour from `D7+D5/MW5` through rootless has chamber-reduced old-fibre degree two.
 
-The main structural result is that **every retained new neighbour from `D7+D5/MW5` through rootless has chamber-reduced old-fibre degree two**, even though the lattice shells alternate between q4 and q6.
+The **CM24 equation corridor is also now complete through the final q6**. There is no remaining CM24 neighbour/module search. The remaining Q80 problem is the generic characteristic-zero lift.
 
-The live Q80 task is no longer lattice discovery. It is equation-level algebraization of the certified route. At CM24, explicit equations are now pinned through **q4_1938**; the next live gate is **q4_6855**.
+The generic and CM24 final endpoints differ:
 
-For the detailed current equation ledger, use [`Q80_CM24_EQUATION_LEDGER_2026-08-22.md`](Q80_CM24_EQUATION_LEDGER_2026-08-22.md). Machine-readable CM24 stage status is in [`data/fibrations/kumar_q80_cm24_equation_progress.tsv`](data/fibrations/kumar_q80_cm24_equation_progress.tsv).
+```text
+generic final q6: rootless/MW17
+CM24 final q6:    4A2+A3+A5/MW2.
+```
+
+This is expected specialization behaviour in the rank-18 CM24 Neron--Severi lattice and does not weaken the generic rootless certificate.
+
+For the detailed equation ledger use [`Q80_CM24_EQUATION_LEDGER_2026-08-22.md`](Q80_CM24_EQUATION_LEDGER_2026-08-22.md). Machine-readable status is in [`data/fibrations/kumar_q80_cm24_equation_progress.tsv`](data/fibrations/kumar_q80_cm24_equation_progress.tsv).
 
 ## 1. Complete generic low-q route
-
-The common Q80 prefix is
 
 ```text
 E6+D5+A3/MW3
  --q4 (2,2)--> D9+A4/MW4
- --q4 (2,2)--> D7+D5/MW5.
-```
-
-The alternate continuation is
-
-```text
-D7+D5/MW5
+ --q4 (2,2)--> D7+D5/MW5
  --q6 (2,3)--> D7+D4/MW6                 [escape]
  --q4 (2,2)--> A6+A4/MW7                 [orbit 424]
  --q4 (2,2)--> A6+A3/MW8                 [orbit 1222]
@@ -34,27 +33,26 @@ D7+D5/MW5
  --q6 (2,3)--> rootless/MW17.
 ```
 
-The exact vectors are pinned in
+Exact vectors and generic chamber geometry are pinned in
 
 ```text
 data/fibrations/kumar_q80_lowq_alternate_prefix.tsv
 data/fibrations/kumar_q80_new_lowq_rootless_path.tsv
+data/fibrations/kumar_q80_new_lowq_rootless_geometry.tsv
 data/fibrations/kumar_q80_new_lowq_rootless_final_q6.txt
 ```
 
-and the full chamber geometry is in
+with replay in
 
 ```text
-data/fibrations/kumar_q80_new_lowq_rootless_geometry.tsv.
+scripts/verify_q80_new_lowq_rootless_geometry.py.
 ```
 
-The new endpoint is genuinely non-canonical: the retained `4A1/MW13` and `A1/MW16` frames are not integrally isometric to their canonical-route counterparts.
+The alternate `4A1/MW13` and `A1/MW16` frames are not integrally isometric to the canonical-route frames.
 
 ## 2. Generic equation geometry
 
-The retained new moves have:
-
-| step | move | child | D.F | P.O | MW height | twist | vertical support |
+| step | move | child | D.F | P.O | MW height | twist | generic vertical |
 |---:|---|---|---:|---:|---:|---:|---|
 | 1 | escape q6 | `D7+D4/MW6` | 2 | 2 | `8` | 1 | 1 fibre / 5 components |
 | 2 | orbit424 q4 | `A6+A4/MW7` | 2 | 1 | `13/4` | 1 | 1 fibre / 3 components |
@@ -65,195 +63,151 @@ The retained new moves have:
 | 7 | q4 candidate 1 | `A1/MW16` | 2 | 2 | `6` | 0 | none |
 | 8 | final q6 | rootless/MW17 | 2 | 4 | `23/2` | -1 | none |
 
-The effective-section convention is essential: chamber-reduce first, enumerate exact shortest lifts in the root coset, choose the unique section nonnegative on the old chamber, and only then compute the vertical decomposition. Arbitrary shortest root-coset representatives gave incorrect earlier L1 values.
+The effective-section rule is: chamber-reduce first, enumerate exact shortest lifts in the root coset, choose the unique lift nonnegative on the old chamber, then compute the vertical decomposition.
 
-## 3. Reusable compiler results
+## 3. Complete CM24 equation corridor
 
-Q80 work exposed two reusable implementation requirements.
-
-First, exact resolved quotient/module intersections must be coefficient-field generic. The compatibility layer
+The late specialized chain is
 
 ```text
-scripts/elliptic_neighbor_compiler_field_generic.sage
-scripts/verify_elliptic_neighbor_compiler_field_generic.sage
+2A6+3A1/MW3
+ --q6_7774--> A5+2A4+2A1/MW3
+ --q4_1938--> 2A4+2A3+A1/MW3
+ --q4_6855--> A1+2A3+2D4/MW3
+ --q4 candidate1--> A1+A2+A3+A4+A5/MW3
+ --final q6--> 4A2+A3+A5/MW2.
 ```
 
-removes the earlier hard `QQ` assumption while preserving historical behavior.
-
-Second, a connected vertical ADE divisor should be compiled as a **single resolved quotient-line condition**, not as independent evaluation rows for every listed exceptional component. q6_7774 supplied the decisive counterexample: componentwise A6 evaluation overconstrained a four-dimensional ambient to dimension one, while the connected quotient-line scan recovered the correct two-dimensional pencil and exact lattice target.
-
-A related component-group lesson from q4_1938 is that `root_component_data()` can return arbitrary integral bases of root sublattices. Component labels must therefore be derived from the Smith discriminant group and a minimal endpoint-weight class, not by assuming a Cartan/simple-root basis.
-
-## 4. q6 escape and orbit 424
-
-The q6 escape is the first productive low-q representative in the old q12 MW coset:
+The corresponding specialized horizontals are
 
 ```text
-q=6, (a,b)=(2,3)
-v=(-5,-3,6,6,-8,-4,2,4,-1,8,-16,-1,0,3,5,-2,-2)
-child=D7+D4/MW6.
+q6_7774:       P3,              P.O=0, height=8/7
+q4_1938:      -P1+P2+2P3,      P.O=1, height=12/5
+q4_6855:       2P1,             P.O=0, height=3/5
+q4 candidate1: -P3,             P.O=0, height=3/4
+final q6:      P2-P3,           P.O=0, height=1.
 ```
 
-At CM24 it has an exact characteristic-zero binary-quartic model over `QQ(sqrt(-6))`, specializing to `D8+D6+2A1/MW2`.
+This repeated collapse is why generic `P.O` and vertical data must never be assumed to survive specialization.
 
-Orbit 424 is
+## 4. Equation/compiler lessons
+
+### Connected ADE quotient rule
+
+A connected vertical ADE divisor is one resolved quotient/module condition, not one independent condition per exceptional component. q6_7774 was the decisive counterexample: componentwise A6 evaluation overconstrained the pencil, while a single connected quotient-line scan recovered the exact child.
+
+### q4_6855 A3 middle-double rule
+
+At CM24 q4_6855 has
 
 ```text
-q=4, (a,b)=(2,2)
-v=(32,48,-21,28,8,-52,-34,0,18,5,-23,43,9,-18,16,-6,-6)
-child=A6+A4/MW7.
+H=2P1
+vertical A3=(-2,-1,-1).
 ```
 
-At CM24 its marked section becomes rational 2-torsion and the child is exactly `2A7/MW4`, with fibres `I8+I8+8I1`. The characteristic-zero equations for both stages are consolidated in [`scripts/verify_q80_lowq_cm24_equations.sage`](scripts/verify_q80_lowq_cm24_equations.sage).
-
-## 5. Orbit 1222: exact CM24 module and splice
-
-Orbit 1222 is
+The A3 multiplicity pattern compiles deterministically as a node-value plus pure-base first-order condition. The resulting child is
 
 ```text
-q=4, (a,b)=(2,2)
-v=(10,53,-192,-114,29,-256,-170,-12,-14,74,-32,-14,-6,-26,-58,84,-28)
-child=A6+A3/MW8.
+A1+2A3+2D4/MW3
+root_data=(15,74,512).
 ```
 
-At CM24 the child is `2A6+3A1/MW3`.
-
-The successful Riemann--Roch construction uses the canonical seven-dimensional raw marked-chord ambient for `O+P+2F`. The smooth `P.O=1` collision contributes rank 2, the infinity I8 restriction rank 2, and the finite A7 vertical gate rank 1, giving the required `7 -> 2` pencil.
-
-This child is **exactly the same GF(73) elliptic fibration as the old pinned third-q12 CM24 child**, not merely the same root signature. A simple pinned base transport is
+Certificate:
 
 ```text
-V = 1/(52T+62),
-T = (V+20)/(18V),
+data/fibrations/kumar_q80_q4_6855_cm24_equation_gf73.txt
 ```
 
-and the two exact splice maps differ by the involution
+### q4 candidate-1 D4 outer-complement rule
+
+Candidate 1 specializes to
 
 ```text
-V -> (V+28)/(23V+72).
+H=-P3
+vertical A3=(-1,-1,-1)
+vertical D4=(-1,0,-1,-1).
 ```
 
-## 6. q6_7774: specialization-first correction
-
-Generic q6_7774 has `P.O=3`, height `219/28`, and a two-component vertical correction. Its actual CM24 specialization changes sharply:
+The ramified I0* chart predicts D4 quotient residue `c=0`. All eight target-compatible horizontal cases use `c=0`, independently validating the rule. The child is
 
 ```text
-P.O = 0
-height = 8/7
-horizontal = old pinned P3
-fiber twist = 2
-vertical = one A1 plus one connected A6.
+A1+A2+A3+A4+A5/MW3
+root_data=(15,70,720).
 ```
 
-Exact rank-18 lattice transport forces
+Certificate:
 
 ```text
-special child = A5+2A4+2A1/MW3
-root data = (15,74,600).
+data/fibrations/kumar_q80_q4_a1_candidate1_cm24_equation_gf73.txt
 ```
 
-The connected-A6 quotient-line scan checks `876` exact cases and finds exactly four symmetry-related target hits. A pinned representative is
+### final q6 A5 quotient
+
+The final specialized divisor is
 
 ```text
-sign=+1
-I7=6
-I2=5
-c7=58
-c2=62
-m=T(V-6)(V-5)-(4V+64).
+H=P2-P3
+profile=(0,2,2,0,4)
+vertical A4=(-1,-1,-1,-1)
+vertical A5=(-1,0,-1,-1,0).
 ```
 
-The pinned Weierstrass model is recorded in [`data/fibrations/kumar_q80_q6_7774_cm24_weierstrass_gf73.txt`](data/fibrations/kumar_q80_q6_7774_cm24_weierstrass_gf73.txt). Its reducible fibres are `2I2+2I5+I6`.
-
-## 7. q4_1938: exact CM24 equation
-
-The actual q4_1938 specialization is
+The minimal parent has fibres
 
 ```text
-D.F = 2
-D.O = 0
-P.O = 1
-height = 12/5
-fiber twist = 1
-vertical = one A4 with coefficients (-1,-1,-1,0).
+I2@60, I3@23, I4@24, I5@25, I6@47.
 ```
 
-The specialized child is forced to be
+Six polynomial horizontals occur. The A5 quotient search reduces to eight symbolic survivors and exactly two symmetry-related target hits. The pinned one has residue `-4`; the opposite horizontal sign has `+4` and gives the same quartic/Jacobian.
+
+The child fibres are
 
 ```text
-2A4+2A3+A1/MW3
-root data = (15,66,800).
+4 I3 + I4 + I6 + 2 I1,
 ```
 
-The parent MW basis has profiles
+hence
 
 ```text
-P1=(0,0,3,2,4)
-P2=(0,1,1,1,3)
-P3=(1,1,3,0,2),
+4A2+A3+A5/MW2
+root_data=(16,66,1944).
 ```
 
-and the q4 horizontal is
+Certificate:
 
 ```text
-H=-P1+P2+2P3
-coordinates=(-1,1,2)
-profile=(0,1,4,4,3)
-height=12/5
-P.O=1.
+data/fibrations/kumar_q80_final_q6_cm24_equation_gf73.txt
 ```
 
-Node-constrained equation-side reconstruction yields one `+/-` pair. A pinned sign has
+## 5. Earlier CM24 stages
+
+The q6 escape and orbit 424 have exact characteristic-zero equations over `QQ(sqrt(-6))`. Orbit 1222 has an exact GF(73) equation and is proved to be the same fibration as the old pinned third-q12 CM24 child. q6_7774 and q4_1938 have their own pinned GF(73) certificates:
 
 ```text
-X_H=(60+40T+34T^2+58T^3+48T^4+30T^5+3T^6)/(19+52T+T^2),
-Y_H=(24+15T+57T^3+28T^4+65T^5+15T^6)/(56+57T+5T^2+T^3).
+data/fibrations/kumar_q80_q6_7774_cm24_weierstrass_gf73.txt
+data/fibrations/kumar_q80_q4_1938_cm24_equation_gf73.txt
 ```
 
-The connected-A4 scan checks
+## 6. Reusable implementation results
 
-```text
-2 signs x 2 I5 fibres x 73 residues = 292 cases.
-```
+The corridor also established:
 
-Exactly four cases reduce to quartics, and all four hit `(15,66,800)/MW3`. The pinned representative is
+- field-generic exact quotient/module intersections via `elliptic_neighbor_compiler_field_generic.sage`;
+- discriminant-group component labeling when root-component bases are arbitrary;
+- specialization-first section recovery;
+- exact node-constrained polynomial-section reconstruction;
+- cheap finite-specialization prefilters before expensive symbolic quartic classification.
 
-```text
-sign=+1
-I5=14
-residue=34
-eval_row=(1,14,50,43,46)
-kernel=((1,0,51,40,23),(0,1,36,27,48)).
-```
+## 7. Next strategic problem
 
-The equation certificate is pinned in [`data/fibrations/kumar_q80_q4_1938_cm24_equation_gf73.txt`](data/fibrations/kumar_q80_q4_1938_cm24_equation_gf73.txt).
+The Q80 CM24 corridor is closed. Do not resume broad Q80 shell or modular local-module search without a specific obstruction.
 
-## 8. Current live frontier: q4_6855
+The next Q80 task is the **generic characteristic-zero lift from orbit 1222 onward**:
 
-The generic q4_6855 move is
+1. recover the generic horizontal sections and fields of definition;
+2. lift the CM24 resolved quotient conditions to characteristic zero;
+3. construct and minimize each generic neighbour equation;
+4. track fibre components, sections, and Galois fields through the chain;
+5. verify the final seventeen independent sections on the intended characteristic-zero specialization before any rank claim.
 
-```text
-A3+A2/MW12 --q4--> 4A1/MW13
-D.F=2
-P.O=2
-height=19/3
-fiber twist=0
-vertical correction=0.
-```
-
-Do **not** assume those generic data survive CM24. The next exact task is:
-
-1. transport the actual q4_6855 divisor into the full rank-18 CM24 q4_1938 child;
-2. chamber-reduce it and determine the true specialized horizontal/vertical decomposition;
-3. predict the special child root data;
-4. reconstruct the horizontal on the pinned q4_1938 equation;
-5. compile any connected vertical ADE correction using quotient-line/module conditions;
-6. continue to q4 candidate 1 and final q6 rootless.
-
-## 9. Scope and priority
-
-The Q80 fallback now has both a complete generic all-degree-two rootless lattice route and a CM24 equation corridor through q4_1938. This is a meaningful equation-development path, but it is **not yet a generic characteristic-zero rootless construction**.
-
-The generic characteristic-zero lift from orbit 1222 onward remains open, including field-of-definition and specialization control for the eventual rational sections. Q80 should only replace the corrected H3 route if that lift becomes materially simpler or faster.
-
-Further Q80 work should therefore stay focused on the existing equation corridor. Do not resume broad lattice shell search unless a specific later equation obstruction requires a new neighbor.
+The completed CM24 corridor is now the regression scaffold for that lift.
