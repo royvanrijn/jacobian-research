@@ -1,509 +1,150 @@
 # H3 q=8 current frontier
 
-Status: 2026-08-22, after the corrected marked-E7 normalization, exact E8 closure,
-and the first true 1600-column global intersection.
+Status: 2026-08-22, after the point-to-MW marking re-audit.
 
-Historical ledger: [`H3_Q8_MODULE_INTERSECTION_2026-08-22.md`](H3_Q8_MODULE_INTERSECTION_2026-08-22.md).
-
-Continuation / superseding checkpoint: [`H3_Q8_MODULE_INTERSECTION_CONTINUATION_2026-08-22.md`](H3_Q8_MODULE_INTERSECTION_CONTINUATION_2026-08-22.md).
+The active checkpoint is [`H3_Q8_REAUDIT_2026-08-22.md`](H3_Q8_REAUDIT_2026-08-22.md). It supersedes the active q8 conclusions in the earlier module-intersection notes and in the q8 sections of `BISECTION_COLLISION_SEARCH.md` wherever they conflict.
 
 ## Objective
 
-Execute the exact second H3 neighbor
+The lattice target is unchanged:
 
 ```text
-H3 E7+E8/MW2 --q6--> E8+E6/MW3 --q8--> D13/MW4
+H3 E7+E8/MW2 --q6--> E8+E6/MW3 --q8--> D13/MW4.
 ```
 
-at equation level over characteristic zero.
+The first q6 hop is still exact. The second q8 equation-level hop is **not currently certified**.
 
-The pinned H3 source has height Gram
+## Re-authorized exact facts
+
+The following remain valid:
+
+- the exact first q6 neighbour and its complete resolved RR cover;
+- the globally minimal q6 child with `E8+E6/MW3`;
+- the child MW height Gram
+
+  ```text
+  [[8/3,1/3,-1],
+   [1/3,8/3,1],
+   [-1,1,46]];
+  ```
+
+- the q8 lattice orbit classification and abstract D13/MW4 target;
+- the independently chamber-certified q8 classifier-nef representative;
+- the source-side representative reconciliation:
+
+  ```text
+  dominant D13 representative --122 old-fibre root reflections--> degree-18 class
+  classifier-nef representative --120 old-fibre root reflections--> degree-16 class
+  ```
+
+- the degree-16 terminal vector
+
+  ```text
+  (22,16,-14,-20,-27,-40,-33,-26,-18,-4,-5,-7,-10,-8,-6,-4,-2,8,0),
+  ```
+
+  which is exactly the later experimental chamber-reduced class;
+- the exact rational child points and section formulas as rational points on the q6 child, without the withdrawn MW/NS identification;
+- the independent Q80 programme.
+
+Reproduce the representative reconciliation with
+
+```bash
+sage -python elkies-k3/scripts/audit_h92_q8_representative_selection.sage
+```
+
+## Confirmed invalid bridge
+
+`derive_h92_q6_child_q8_marking.sage` assigns the constructed rational section `S` the MW coordinate
 
 ```text
-[[21/2,3],[3,46]], det=474
+(-2,-2,0),
 ```
 
-and lies on `H21 ∩ H92`.  The first q6 neighbor is already exact.  The q8
-source-nef class has old generic-fibre degree 18 with complete basis
+which has height `24` in the certified child MW lattice.
+
+But the exact rational functions for `S` have a square/cube denominator root `h` of degree `46`, coprime to the discriminant, and the zero-section parameter `z=-x/y` has a simple zero at every root of `h`. Hence
 
 ```text
-B = 1,m,...,m^9, x,x*m,...,x*m^7,
-m=(y-y(P1))/(x-x(P1)).
+S.O = 46
 ```
 
-Relative to `9*O+9*(-P1)` its literal vertical difference is
+on smooth fibres.
+
+Shioda's height formula on the elliptic K3 gives
 
 ```text
-(-11,0,2,3,4,6,5,5,6,-4,-5,-7,-10,-8,-6,-4,-2,0,0).
+<S,S> = 4 + 2(S.O) - sum_v contr_v(S).
 ```
 
-The global `-11F` coefficient must be applied exactly once.  The q6 marked
-module contains its own `-F`; taking its ninth power introduces a helper
-`t^9`/`u^9` normalization that must be stripped before the literal q8
-`-11F` is applied.
-
-## Exact local data
-
-### Smooth `h=0` collisions
-
-At the four transverse `O.(-P1)` collisions,
+Even using the deliberately loose bound
 
 ```text
-p=y(P1)/x(P1),
-q=(m-p)/h,
-X=h^2*x,
+sum_v contr_v(S) <= maxdiag(E8^-1)+maxdiag(E6^-1) = 30+6 = 36,
 ```
 
-and the exact local line-bundle lattice is
+the rational section must have height at least
 
 ```text
-<1,q,...,q^9, X,Xq,...,Xq^7>.
+4 + 2*46 - 36 = 60,
 ```
 
-`q` is local, not global.  The reduced denominator of `p` is
+contradicting `24`.
+
+Reproduce this with
+
+```bash
+sage -python elkies-k3/scripts/audit_h92_q6_child_q8_marking_height.sage
+```
+
+Expected status:
 
 ```text
-den(p)=h*u^2*d0,  deg(d0)=10,  gcd(d0,u*h)=1.
+PASS_CONFIRMED_MARKING_BRIDGE_CONTRADICTION
 ```
 
-The degree-10 `d0` transition kills the fake eleven-dimensional global
-q-frame: the 450-row transition has rank 11 at both `43` and `59`.
+## Retracted / conditional q8 equation work
 
-The smooth transition determinant has `v_h(det)=-57`; across the degree-four
-collision divisor this is the `+228` contribution in the vector-bundle degree
-checksum used below.
+Until the rational point-to-MW bridge is repaired, do **not** treat the following as exact q8-neighbour results:
 
-### E8 is closed exactly
+- the child q8 marking `relative_child_section_MW_coordinates=(-2,-2,0)`;
+- child-side component-nef/nef/dominant q8 chord, collision, finite, q-frame, fractional, infinity, global-intersection, or branch conclusions that depend on that marking;
+- the degree-18 `true1600` source pipeline as the RR system of the final q8 moving divisor;
+- the hand-converted degree-16 `corrected1278` q6^8 local compiler and its `1278 -> 14 -> 7` survivor sequence.
 
-Use integral II* coordinates
+The modular ranks from those experiments remain useful diagnostics for the declared inputs, but they are no longer geometry certificates for the target q8 pencil.
+
+## What the recent degree-16 work did establish
+
+The degree-18 class historically called `source-nef` was not the classifier-nef representative. A bounded effective-root audit found a degree-two `(-2)` wall with negative pairing, and complete alternating reduction reached the exact degree-16 vector above. The representative audit independently confirms that this vector is the finite-root reduction of the classifier's nef representative.
+
+So retain the **degree-16 lattice chamber result**, but discard the inference
 
 ```text
-u=1/t,
-X=u^4*x,
-Y=u^6*y,
-Q=u^2*m=(Y-Y(P1))/(X-X(P1)).
+degree 16 => replace every q6^9 local module by a q6^8 module.
 ```
 
-The horizontal integral frame is
-
-```text
-C = 1,Q,...,Q^9, X,XQ,...,XQ^7.
-```
-
-On the affine II* component `u=0`, write `X=r^2`, `Y=r^3` and
-`s0=Y(P1)(0)/X(P1)(0)`.  Then
-
-```text
-Q0=(r^3-s0^3)/(r^2-s0^2)
-  =(r^2+s0*r+s0^2)/(r+s0).
-```
-
-The 18 specializations
-
-```text
-Q0^0,...,Q0^9, r^2*Q0^0,...,r^2*Q0^7
-```
-
-have rank 18 over `QQ`, so `C` is already saturated on the affine component.
-
-The complete exceptional ideal is
-
-```text
-I=(u^2,X,Y),   R/I=<1,u>,
-```
-
-and its full preimage in `C` is generated by
-
-```text
-u^2,
-Q^b-s^b      (1<=b<=9),
-X*Q^b        (0<=b<=7),
-s=Y(P1)/X(P1).
-```
-
-The exact resolved checker gave
-
-```text
-Q8E8RESOLVED|
-affine_rank=18|
-exceptional_colength=2|
-C_over_B_det=178|
-reduced_E8_det=180|
-saturated=1|
-status=PASS_EXACT_Q8_E8_RESOLVED_REDUCED_LATTICE
-```
-
-Therefore the **reduced resolved E8 lattice is complete** and has determinant
-valuation `180` relative to `B`.  The old helper-normalized value `342` is
-superseded.
-
-### E7 target and non-Cartier warning
-
-The resolved q8 E7 degrees are
-
-```text
-(0,1,0,0,2,0,1)
-```
-
-and
-
-```text
-c8 = 9*c6 + (2,5,6,4,6,3,5).
-```
-
-This is an exceptional-cycle identity only.  The actual q8 E7 module is the
-ninth tensor power of the non-Cartier q6 marked module, followed by the
-integral twist above.  Do **not** replace it by one scalar complete ideal or
-by generic component valuations alone.
-
-The exact q6 marked module is
-
-```text
-t*J_P1/(x-xP1),  J_P1=(x-xP1,y-yP1),
-```
-
-so after clearing,
-
-```text
-(x-xP1)^9 * g * f  in  t^9 * J_P1^9
-```
-
-must hold on the actual resolved charts, with the six chart-dependent Cartier
-factors `g`.
-
-## E7 diagnostic saturation: useful structure, not the complete module
-
-A reduced affine/generic-component reverse-saturation experiment exposed a
-stable adapted coordinate tower.  Let
-
-```text
-z = x-m^2
-```
-
-and let
-
-```text
-z = k2*t^2 + k3*t^3 + k4*t^4 + k5*t^5 + ...
-```
-
-be the exact small branch determined recursively by the chord quadratic.
-Define
-
-```text
-z1 = z - k2*t^2,
-z2 = m^2*(z1-k3*t^3),
-z3 = z2 - m^2*k4*t^4,
-z4 = m^2*(z3-m^2*k5*t^5).
-```
-
-Here `k2=-2*c2`.  With the actual marked-section jets,
-
-```text
-z2 = m^2*z1 + t^3*(A1-2*d3*m+2*c3_P1*m^2),
-
-z3 = z2 + t^4*(2*c4_P1*m^2-2*d4_P1*m+A+3*c2^2).
-```
-
-The successive one-`t` kernels at both `43` and `59` were
-
-```text
-8, 8, 8, 6, 4, 2, 0.
-```
-
-A convenient final rank-18 basis for this **affine + generic-component
-approximation** is
-
-```text
-m^0,...,m^9,
-t^-3*z1, t^-3*z1*m,
-t^-4*z2, t^-4*z2*m,
-t^-5*z3*m^2, t^-5*z3*m^3,
-t^-6*z4*m^2, t^-6*z4*m^3.
-```
-
-The step-7 obstruction had rank 18 / kernel 0 at both primes.
-
-Important correction: this does **not** prove the complete resolved q8 E7
-module is saturated.  These tests omit the finite ninth-power
-`J_P1^9` chart quotient, marked branch, and overlap gluing.  Consequently the
-previous phrases “reduced E7 is saturated exactly”, “E7 index 36”, and the
-pole cap `(3,3,4,4,5,5,6,6)` are retracted as statements about the true q8
-line bundle.  They remain useful diagnostics for the affine/generic layer.
-
-### E7 coefficient provenance
-
-Never use `translated_coordinates["c3"]` from the q6 quotient artifact as the
-marked-section coefficient.  It is the `c3` of the formal `y=0` branch.
-`c2` happens to coincide, but `c3_P1`, `c4_P1`, `d3_P1`, and `d4_P1` must be
-expanded directly from the exact rational functions of `P1`.
-
-## Correct marked-E7 normalization
-
-The repository's exact marked-chart q8 frame is
-
-```text
-m^b/t^6       (0<=b<=9),
-x*m^b/t^8     (0<=b<=7)
-```
-
-in the q6^9 helper normalization.  Since the helper module includes `t^9`,
-stripping that common fibre factor gives the **reduced q8 marked bounds**
-
-```text
-m^b/t^15,
-x*m^b/t^17.
-```
-
-Equivalently, when the existing generic-component compiler uses
-
-```text
-w + (4*k-i-9)*ord(t) + a*ord(x) + b*ord(m),
-```
-
-an actual global coefficient `u^d/h^18` is fed to that helper compiler with
-
-```text
-i = d-9,
-```
-
-so its residual order becomes the correct reduced expression with
-`4*18-d = 72-d`.
-
-## Current true global envelope
-
-The worst smooth-collision denominator in the `B` frame is `h^18`.
-Combining `deg(h^18)=72` with the reduced marked E7 pole bounds gives
-
-```text
-m^b families:    deg numerator <= 72+15 = 87,
-x*m^b families:  deg numerator <= 72+17 = 89.
-```
-
-Hence the current global ambient has exactly
-
-```text
-10*(87+1) + 8*(89+1) = 1600
-```
-
-columns.
-
-The literal global `-11F` twist is represented once at E8.
-
-### Exact mod-43 block ranks
-
-On this 1600-column ambient:
-
-```text
-H smooth block:
-  rows=1944, rank=1068, kernel=532
-
-E8 block:
-  rows=378, rank=378, kernel=1222
-
-all seven generic E7 component residue rows:
-  rows=2487, rank=218, kernel=1382
-
-E8 + H:
-  rank=1446, kernel=154
-
-E8 + H + generic E7:
-  rank=1582, kernel=18
-```
-
-The generic E7 construction used the actual chart/function-field residue
-evaluators on all seven components:
-
-```text
-negative groups = 230
-singleton coordinate rank = 6
-non-singleton residue rows = 1435 + 791 + 255 = 2481
-```
-
-Thus the current strongest true global result is
-
-```text
-1600 --(E8+h)--> 154 --(7 generic E7 components)--> 18.
-```
-
-This has only been run on the full true 1600-column envelope at `p=43`;
-repeat the final pipeline at `59` after the finite E7 gate is implemented.
-
-### All six leading node screens are vacuous
-
-The exact two-parameter leading bidegree frames were applied to the 18 global
-survivors at all six resolved E7 nodes:
-
-```text
-E7_1--E7_4
-E7_4--E7_3
-E7_3--E7_7
-E7_7--E7_2
-E7_3--E7_6
-E7_2--E7_5
-```
-
-The closure calculation found
-
-```text
-generic_survivor=18
-constraints=0
-node_survivor=18.
-```
-
-So the missing conditions are **not** visible as singleton Pareto-minimal
-negative leading monomials.  Equal/incomparable leading terms and finite
-chart relations matter.
-
-## Determinant checksum and the expected final cut
-
-This is a checksum, not a derivation.
-
-For the true q8 pushforward,
-
-```text
-rank=18,
-deg(pi_*O(D))=-16.
-```
-
-Known contributions relative to the generic `B` frame are
-
-```text
-E8 reduced resolved:      -180
-smooth h-collisions:      +228
-global -11F twist:        -198
-```
-
-so the complete E7 contribution must be
-
-```text
-+134
-```
-
-to reach `-16`.
-
-The reduced marked E7 frame allows
-
-```text
-10*15 + 8*17 = 286
-```
-
-units before finite resolved-chart conditions.  Therefore the full finite E7
-correction should have codimension
-
-```text
-286 - 134 = 152.
-```
-
-In the true global computation the generic E7 gate already cuts
-
-```text
-154 -> 18,
-```
-
-i.e. contributes 136 independent conditions on the `E8+h` survivor.
-The checksum therefore predicts exactly
-
-```text
-152 - 136 = 16
-```
-
-additional finite E7 conditions, hence
-
-```text
-18 -> 2.
-```
-
-This `16` is a consistency target only; it must emerge from the exact local
-quotient / marked / overlap calculation.
-
-## Retracted / superseded global experiments
-
-### False 1422-column envelope
-
-A previous global assembly used the diagnostic affine/generic E7 pole cap
-`6`, hence
-
-```text
-h^-18 * P_i(u),  deg(P_i)<=78,
-ambient=18*79=1422.
-```
-
-At both `43` and `59` it had full rank and kernel zero.
-
-The p43 block diagnostic was
-
-```text
-H        rank=1068, kernel=354
-E8       rank=378,  kernel=1044
-E7diag   rank=72,   kernel=1350
-E8+H     rank=1374, kernel=48
-E7+H     rank=1140, kernel=282
-E8+E7    rank=450,  kernel=972
-ALL      rank=1422, kernel=0
-```
-
-Its vector-bundle degree was `-114`, not `-16`.  This correctly diagnosed
-that the E7 normalization was too restrictive.  The entire 1422-column
-envelope and its `kernel=0` are superseded.
+That local-module step was never proved and produced contradictory downstream behaviour.
 
 ## Next exact gate
 
-Do **not** do more leading-order E7 tests.  They are exhausted.
+Do not run more q8 local rank probes yet.
 
-The repository already contains the exact finite node machinery:
-
-```text
-scripts/derive_h92_q8_e7_node_principal_clearings.sage
-scripts/probe_h92_q8_e7_node_principal_local_normal_form_modp.sage
-```
-
-For the true 1600-column ambient the exact clearing parameters are expected to
-be
+First repair the child point-to-MW bridge. On the final minimal q6 child, independently compute the heights, pairings, zero intersections, and reducible-fibre component corrections of
 
 ```text
-K=18,
-T=17.
+old_zero,
+affine_E7 point,
+E7_7 point,
+E7_7-old_zero,
+E7_7-affine_E7,
+2*(E7_7-old_zero)+2*(E7_7-affine_E7).
 ```
 
-The clearing script rewrites the actual local condition
+Then match their actual height Gram to the pinned rank-three MW lattice. Only after that match should the q8 lattice coordinate `(0,-2,0)` be converted into an actual rational child section.
 
-```text
-g*f/t^9 in R
-```
+If that bridge is repaired, rebuild the q8 local modules from the corrected section. If it is not, derive the degree-16 source-chamber local modules directly from the resolved divisor, with no q6-power shortcut.
 
-on each resolved node as an exact common-unit-cleared membership condition.
-The probe then uses a Singular local `ds` standard basis to compute the sparse
-column image in the genuine local quotient
+## Execution priority
 
-```text
-R/(t^T).
-```
-
-Next:
-
-1. build the six exact principal-clearing records for the true 1600-column
-   ambient;
-2. compute each node's local-normal-form image modulo `43`;
-3. restrict those sparse matrices immediately to the current 18-dimensional
-   `E8+h+generic-E7` survivor instead of recomputing ranks on 1600 variables;
-4. add the marked smooth-branch condition and sibling/overlap gluing;
-5. target 16 new independent conditions and a 2-dimensional kernel;
-6. repeat the complete true pipeline at `59`;
-7. lift the two sections to `QQ`, form the q8 base coordinate, eliminate to a
-   genus-one quartic/Jacobian, and verify the expected `D13/MW4` child.
-
-## Do-not-repeat list
-
-- Do not globalize `q=(m-p)/h`; the degree-10 `d0` factor is the regression
-  guard.
-- Do not apply the q6 `-F` nine times and then apply q8 `-11F` again.
-- Do not use the formal `y=0` branch `c3` as `c3_P1`.
-- Do not call the affine/generic E7 step-7 kernel-zero result the complete E7
-  saturation.
-- Do not use E7 index `36` or poles `(3,3,4,4,5,5,6,6)` as true E7
-  elementary divisors.
-- Do not revive the 1422-column global envelope.
-- Do not use helper-normalized E8 determinant `342`; the resolved reduced E8
-  value is `180`.
-- Do not promote a local frame to a global basis without accounting for all
-  transition denominators.
+The H3 lattice route remains valid and attractive, but its q8 equation hop is paused at this marking repair. The Q80 route is therefore the live equation-construction path for now.
