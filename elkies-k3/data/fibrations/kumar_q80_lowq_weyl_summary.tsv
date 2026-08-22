@@ -1,0 +1,7 @@
+source_ADE	source_root_rank	source_MW	q	raw_vectors_up_to_sign	weyl_orbits	productive_orbits	best_child_root_rank	best_child_MW	note
+D7+D4	11	6	2	2952	37	0	11	6	all-loop
+D7+D4	11	6	3	45996	156	0	11	6	all-loop
+D7+D4	11	6	4	344363	453	12	10	7	productive-only-for-(2,2);-(1,4)-all-loop
+A6+A4	10	7	2	2812	78	0	10	7	all-loop
+A6+A4	10	7	3	46610	466	0	10	7	all-loop
+A6+A4	10	7	4	345555	1668	6	9	8	productive-only-for-(2,2);-(1,4)-all-loop
