@@ -32597,7 +32597,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:6a78009412444e2d5f72efb73125b6c4604aa4e2eb560986f0aa11ce5afa2c99",
+      "artifact_hash": "sha256:fe1cf5d14bc91c93d7c4d9fbb1c3126869abdb01e4aeab7b1f938df04ef7d174",
       "software_lock": [
         "elkies-k3/scripts/derive_h92_q6_child_zero_section.sage",
         "elkies-k3/scripts/certify_h3_q6_component_section_lattice.sage",
@@ -33132,8 +33132,8 @@
       "artifact_hash": "sha256:e69eba234988272db4f230aeb592ab33e695dc1177b2c852ff0e039a30422b05",
       "software_lock": [
         "elkies-k3/scripts/reconstruct_h92_q6_child_q8_q_pole_normalization_crt.sage",
-        "artifacts/generated-results/elkies-k3-h92-q6-child-jacobian.json",
-        "artifacts/generated-results/elkies-k3-h92-q6-child-q8-marking.json"
+        "elkies-k3/scripts/certify_h92_q6_child_jacobian.sage",
+        "elkies-k3/scripts/derive_h92_q6_child_q8_marking.sage"
       ],
       "supersedes": [],
       "closes_problems": [],
@@ -33351,7 +33351,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:6a78009412444e2d5f72efb73125b6c4604aa4e2eb560986f0aa11ce5afa2c99",
+      "artifact_hash": "sha256:fe1cf5d14bc91c93d7c4d9fbb1c3126869abdb01e4aeab7b1f938df04ef7d174",
       "software_lock": [
         "elkies-k3/scripts/derive_h92_q6_child_q8_marking.sage",
         "elkies-k3/scripts/derive_h92_q6_child_q8_marking.sage"
@@ -33382,7 +33382,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:6a78009412444e2d5f72efb73125b6c4604aa4e2eb560986f0aa11ce5afa2c99",
+      "artifact_hash": "sha256:fe1cf5d14bc91c93d7c4d9fbb1c3126869abdb01e4aeab7b1f938df04ef7d174",
       "software_lock": [
         "elkies-k3/scripts/derive_h92_q6_child_q8_marking.sage"
       ],
@@ -33572,7 +33572,7 @@
       "artifact_hash": "sha256:811c2b3966db3d8f41185b864dc5f99a9ab6f412b91df90c31bec046345e6209",
       "software_lock": [
         "elkies-k3/scripts/enumerate_rootless_bisection_orbits.sage",
-        "artifacts/generated-results/q80-alternate-fifth-q6-rootless-transport.json"
+        "elkies-k3/scripts/verify_q80_alternate_fifth_q6_rootless.sage"
       ],
       "supersedes": [],
       "closes_problems": [],
@@ -33645,6 +33645,69 @@
       "priority": "derived"
     },
     {
+      "id": "EC-ICARM-CONSTRUCTION-FINGERPRINTS",
+      "kind": "example",
+      "state": "proved",
+      "title": "Bounded exact construction recognition for ICARM curves 273 and 281--286",
+      "scope": "For ICARM curves 273, 281, 282, 285 and 286, exact Weierstrass invariants, point-denominator fingerprints and repository-wide exact-j comparisons are pinned. The exact degree-twelve equation in z=T^2 is solved for every member of the complete 2329-family normalized nonsingular six-root Mestre census of diameter at most 300 and for the larger normalized Fermigier control tuple. The only exact match is curve 282 at roots (0,29,658,722,981,1036) and T=11671/21; curves 273, 281, 285 and 286 have no match in this bounded census. All five curves have independently certified trivial rational torsion, excluding direct specialization of the implemented Elkies--Klagsbrun model with its forced point (0,0) of order two. These conclusions do not exclude larger or generalized Mestre tuples, Kihara/Nagao families, K3 descendants, isogenous images or private families; denominator patterns are diagnostics rather than construction certificates.",
+      "canonical_source": "elliptic-curves/notes/ICARM_7FFF_ZIP_SEQUENCE.md",
+      "dependencies": [
+        "ECR30"
+      ],
+      "checker": "elliptic-curves/cas/analyze_icarm_construction_fingerprints.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:154895accc1faa4a77d25f2c5856285aef972de66c92178f673febdd004053e2",
+      "software_lock": [
+        "requirements.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-K3-H3-Q8-QQ-D13",
+      "kind": "example",
+      "state": "proved",
+      "title": "Exact corrected H3 q8 neighbour over QQ with D13/MW4 child",
+      "scope": "On the exact H3 q6 E8+E6/MW3 child, the binary-quartic covariant is treated as a degree-two covering map, giving the primitive q8 marked section S=Pmap+Qmap with Mordell--Weil coordinate (-2,-2,0), height 24, zero intersection 10 and smooth collision divisor of degree ten. Clearing the full rational q-frame, including the Dx factor of x(S)=Nx/Dx, gives a 13-dimensional characteristic-zero Riemann--Roch ambient with eleven independent conditions and a two-dimensional pencil. Exact elimination produces a degree-four quartic whose Jacobian has one I9* fibre, nine I1 fibres and smooth infinity; hence its root lattice is D13 and its Mordell--Weil rank is four in Picard rank nineteen. This proves the second equation-level H3 neighbour E8+E6/MW3 -> D13/MW4. It does not construct the eleven later equation-level neighbours to the rootless MW17 frame or identify curve 273 as a specialization.",
+      "canonical_source": "elkies-k3/H3_Q8_REAUDIT_2026-08-22.md",
+      "dependencies": [
+        "EC-K3-H3-Q6",
+        "EC-K3-H3-Q8-CHILD-MARKING"
+      ],
+      "checker": "elkies-k3/scripts/derive_h92_q6_child_q8_corrected2cover_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e806c7f088996a149d871c2b7858b684afedc69df8fe6f4132b943d5c0bf3a4f",
+      "software_lock": [
+        "elkies-k3/scripts/derive_h92_q6_child_q8_corrected2cover_qq.sage"
+      ],
+      "supersedes_notes": [
+        "the withdrawn degree-46 q8 marking and pre-repair endpoint-envelope obstruction did not represent the primitive geometric q8 section"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "OP-EC-RANK-CONDUCTOR",
       "kind": "open_problem",
       "state": "parked",
@@ -33678,7 +33741,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Elliptic rank-31, exact-rank, and low-conductor continuation",
-      "scope": "ECR30 closes the original rank-at-least-30 branch. Continue in three exact directions: prove that the public 2026 curve has rank exactly 30 or exhibit a higher-rank curve; find a curve with rank at least 21 and natural-log conductor below 182.72, with EC-R20-IC245 now the best certified rank-at-least-20 benchmark at ln(N)=150.668907152237...; and complete the reconstructed rank-17 K3 mechanism strongly enough to reproduce the historical rank-29 specialization and search beyond rank 30. EC-MR13, EC-MD17, and EC-MD19 narrow the family and low-conductor routes without meeting the remaining target. EC-K3-H3-SOURCE gives the exact genus-two H3 E7+E8/MW2 source family and EC-K3-H3-PTS determines its ten rational points globally, but the first q6 equation, downstream rootless MW17 family, and specialization transport remain open. The other present gates are a certified residual 2-Selmer computation for the rank-30 curve and a twenty-first independent point on a low-conductor rank-at-least-20 curve. Bounded searches and failed lifts are experiments, not upper bounds.",
+      "scope": "ECR30 closes the original rank-at-least-30 branch. Continue in three exact directions: prove that the public 2026 curve has rank exactly 30 or exhibit a higher-rank curve; find a curve with rank at least 21 and natural-log conductor below 182.72, with EC-R20-IC245 as the smallest-conductor independently replayed rank-at-least-20 benchmark; and complete the reconstructed rank-17 K3 mechanism strongly enough to reproduce the historical rank-29 specialization and search beyond rank 30. EC-R20, EC-MR13, EC-MD17 and EC-MD19 remain exact lower-rank family/conductor frontiers. EC-K3-H3-SOURCE and EC-K3-H3-PTS give the exact H3 E7+E8/MW2 source and its rational base points. EC-K3-H3-Q8-QQ-D13 now completes the first two equation-level neighbours through D13/MW4; the next construction gate is the D13/MW4 -> D12/MW5 q24 equation, followed by ten further equation-level hops to rootless MW17 and specialization transport. EC-ICARM-CONSTRUCTION-FINGERPRINTS excludes curve 273 from the complete diameter-at-most-300 fixed-six-root Mestre census and from the direct forced-2-torsion Elkies--Klagsbrun model, without excluding the proposed rootless K3 descendant. The other present gates are a certified residual 2-Selmer computation for curve 273 and a twenty-first independent point on a low-conductor rank-at-least-20 family. Bounded searches and failed lifts are experiments, not upper bounds.",
       "canonical_source": "elliptic-curves/README.md",
       "dependencies": [
       "ECR30",
@@ -33688,7 +33751,9 @@
         "EC-MD17",
         "EC-MD19",
         "EC-K3-H3-SOURCE",
-        "EC-K3-H3-PTS"
+        "EC-K3-H3-PTS",
+        "EC-K3-H3-Q8-QQ-D13",
+        "EC-ICARM-CONSTRUCTION-FINGERPRINTS"
       ],
       "checker": null,
       "proof_type": "not-applicable",

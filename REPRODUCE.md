@@ -711,24 +711,44 @@ sage -python elkies-k3/scripts/derive_h92_q8_generic_component_chart_frames.sage
 <!-- status-consumer: EC-K3-H3-Q8-GENERIC-COMPONENT-CHART-FRAMES 48fc1dbd9486f9a2 -->
 
 The selected q=8 class also has an exact degree-two generic marking directly
-on the q=6 child.  Its lattice orbit has coordinate `(0,-2,0)` at the
-canonical q6 zero; translating to the explicit transported old zero makes it
-`O+2*(E7_7-old_zero)+2*(E7_7-affine_E7)`, with generic basis `(1,m)`:
+on the q=6 child.  The binary-quartic covariant is a 2-covering map, so the
+primitive geometric section is `S=Pmap+Qmap`, not the previously used
+`2Pmap+2Qmap`.  Its relative Mordell--Weil coordinate is `(-2,-2,0)`, its
+height is 24, and it meets the zero section at the degree-ten divisor `h`:
 
 ```bash
 sage -python elkies-k3/scripts/derive_h92_q6_child_q8_marking.sage \
   --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-marking.json
 ```
 
-Expected terminal status:
+Expected geometry:
 
 ```text
-H92Q6CHILDQ8|canonical_mw=0,-2,0|relative_mw=-2,-2,0|generic_basis=2|zero_collisions=46:transverse|II*=smooth|IV*=smooth|status=PASS_EXACT_Q6_CHILD_Q8_MARKING
+MW coordinate = (-2,-2,0)
+height = 24
+O-intersection = 10
+smooth collision degree = 10
+II*, IV* = identity component
 ```
 
-This pins the generic divisor, its additive-fibre jets, and its degree-46
-smooth zero-collision divisor only; deriving the associated local conditions
-and a global pencil remains necessary.
+Compile the corrected characteristic-zero pencil and exact child with:
+
+```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_corrected2cover_qq.sage
+```
+
+Expected terminal records:
+
+```text
+Q8QQRR|ambient=13|rows=11|rank=11|kernel=2|...
+Q8QQQUARTIC|degree=4
+Q8QQCHILD|finite=[(1,[2,3,15],'I9*'),(9,[0,0,1],'I1')]|infinity=((0,0,0),'smooth')|root_rank=13|root_euler=24|root_det=4|MW_rank=4|status=PASS_EXACT_CORRECTED_Q8_D13_CHILD
+```
+
+This proves the exact second H3 neighbour `E8+E6/MW3 -> D13/MW4` over
+`QQ`.  The older degree-46 marking and the endpoint-envelope obstruction
+experiments below remain historical diagnostics only; they do not describe
+the repaired pencil.
 <!-- status-consumer: EC-K3-H3-Q8-CHILD-MARKING 96fe2161f692f57d -->
 
 Rewrite the same exact divisor in finite component roots relative to the

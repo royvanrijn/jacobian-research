@@ -770,6 +770,20 @@ simple twist explanation.
 Interpretation: the shared discriminant support is consistent with a common
 CRT-shaped search lineage, but it does not establish membership in `X(6,79)`.
 
+An independent exact fixed-root recognition screen now closes one simpler
+alternative.  The exact `j`-equation for curve 273 has no rational-square
+parameter in any of the 2,329 normalized nonsingular six-root Mestre families
+of diameter at most 300, nor in the larger Fermigier control tuple.  A scan of
+the generated artifact tree likewise finds no previously unrecognized model
+with the same exact `j`.  Since curve 273 has trivial rational torsion, it is
+also not a direct specialization of the implemented Elkies--Klagsbrun model,
+which has the rational 2-torsion point `(0,0)`.  These are bounded/direct-model
+exclusions only: larger or generalized Mestre tuples, isogenous K3 models and
+the proposed rootless rank-17 descendant remain open.  The replay is
+[`../cas/analyze_icarm_construction_fingerprints.py`](../cas/analyze_icarm_construction_fingerprints.py),
+with pinned output
+[`../../artifacts/generated-results/elliptic-curves/icarm_construction_fingerprints_v1.json`](../../artifacts/generated-results/elliptic-curves/icarm_construction_fingerprints_v1.json).
+
 A calibrated bounded run of
 [`../../elkies-k3/scripts/search_rank17_embedding_graph_v2.py`](../../elkies-k3/scripts/search_rank17_embedding_graph_v2.py)
 used 12,000 ambient short-vector lines and the first eight eligible norm shells.

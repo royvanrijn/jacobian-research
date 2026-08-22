@@ -25,6 +25,16 @@ from multiple_root_lifting import (  # noqa: E402
     scaled_variable_coefficients,
     verify_prime_power_roots,
 )
+from search_fermigier_mixed_small_prime_crt_gauss import (  # noqa: E402
+    CALIBRATION_PROFILE,
+    ICARM_282_U,
+    discover_groups,
+)
+from search_mestre_02557104116148_power_root_crt import (  # noqa: E402
+    combine_rows,
+    kernel_basis,
+    matching_ball,
+)
 
 
 class GenericMultipleRootLiftingTests(unittest.TestCase):
@@ -103,6 +113,29 @@ class GenericMultipleRootLiftingTests(unittest.TestCase):
 class FermigierMultipleRootTests(unittest.TestCase):
     H = DISCRIMINANT_FACTOR_COEFFICIENTS
     FAMILY = FermigierMestreFamily
+
+    def test_mixed_small_prime_projective_ball_counts(self) -> None:
+        groups, _ = discover_groups()
+        self.assertEqual(
+            {prime: len(balls) for prime, balls in groups.items()},
+            {5: 2, 7: 1, 11: 3, 13: 4, 17: 3, 19: 8, 23: 6, 29: 6, 31: 6},
+        )
+
+    def test_icarm_282_is_radius_52_in_effective_profile(self) -> None:
+        groups, _ = discover_groups()
+        numerator, denominator = ICARM_282_U.numerator, ICARM_282_U.denominator
+        choices = tuple(
+            matching_ball(numerator, denominator, groups[prime])
+            for prime in CALIBRATION_PROFILE
+        )
+        coefficient_a, coefficient_b, modulus = combine_rows(choices)
+        first, second = kernel_basis(coefficient_a, coefficient_b, modulus)
+        determinant = first[0] * second[1] - first[1] * second[0]
+        left = (numerator * second[1] - denominator * second[0]) // determinant
+        right = (first[0] * denominator - first[1] * numerator) // determinant
+        self.assertEqual(modulus, 101_959)
+        self.assertEqual((first, second), ((-220, -27), (77, -454)))
+        self.assertEqual((left, right), (-52, 3))
 
     def test_small_prime_lift_profiles(self) -> None:
         expected = {

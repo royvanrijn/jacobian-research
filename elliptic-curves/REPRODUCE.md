@@ -236,6 +236,33 @@ It proves ranks at least 19, 20, 21 and 21 for ICARM curves 281, 282, 285 and
 `log(N)=173.25150319151186...<182.72`; reproducing global minimality and Tate's
 algorithm requires a PARI/Sage follow-up.
 
+Recognize curve 282 and certify its exact generic-plus-exceptional
+decomposition with:
+
+```bash
+python3 elliptic-curves/cas/analyze_icarm_curve282_fermigier.py
+```
+
+This proves the Fermigier parameter `u=11671/42`, the exact model change, and
+a finite-reduction decomposition `12 generic + 8 exceptional = 20` modulo 5.
+
+Replay the bounded construction-recognition screen for curves 273, 281, 282,
+285 and 286 with:
+
+```bash
+python3 elliptic-curves/cas/analyze_icarm_construction_fingerprints.py
+python3 elliptic-curves/cas/analyze_icarm_construction_fingerprints.py --check
+```
+
+The screen tests every exact `j`-equation in the complete 2,329-family
+diameter-at-most-300 normalized six-root Mestre census plus the larger
+Fermigier control tuple.  Only curve 282 matches, at `T=11671/21`.  It also
+records repository-wide exact-`j` matches, point-denominator fingerprints and
+the direct Elkies--Klagsbrun forced-2-torsion exclusion.  These are bounded
+family/direct-model exclusions, not universal construction classifications.
+The pinned output is
+[`icarm_construction_fingerprints_v1.json`](../artifacts/generated-results/elliptic-curves/icarm_construction_fingerprints_v1.json).
+
 The recovered parameters are `(u,v)=(3/2,2)`.  In the canonical integral-root
 chart the roots are `(0,106,344,475,594,731)` and the anchor is `T=5801/10`.
 The test checks the root formulas, family coefficients, extra generic section,
@@ -2128,6 +2155,35 @@ python3 elliptic-curves/scripts/evaluate_fermigier_specialization.py 3251/16 \
 An existing quiet abscissa-only output can be replayed without rerunning the
 search by replacing the search options with
 `--ratpoints-output artifacts/local/elliptic-curves/POINTS.out`.
+
+### Fermigier mixed-small-prime CRT--Gauss search
+
+Replay the closed two-chart search over all four-prime subsets of the declared
+small-prime targets, including the radius-64 ICARM-282 calibration lane:
+
+```bash
+PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 \
+  elliptic-curves/cas/search_fermigier_mixed_small_prime_crt_gauss.py --check
+```
+
+The pinned artifact is
+[`fermigier_mixed_small_prime_crt_gauss_v1.json`](../artifacts/generated-results/elliptic-curves/fermigier_mixed_small_prime_crt_gauss_v1.json).
+It records a bounded population and exact finite-reduction rank lower bounds;
+its integer-offset quartic slice is not a complete point search.
+
+Run the exact denominator-aware follow-up over all twelve rank-13 survivors,
+including the deeper pass on first-stage rank-14 fibers:
+
+```bash
+PYTHONPATH=elliptic-curves python3 \
+  elliptic-curves/scripts/search_fermigier_denominator_offsets.py --check
+```
+
+The artifact
+[`fermigier_denominator_offsets_v1.json`](../artifacts/generated-results/elliptic-curves/fermigier_denominator_offsets_v1.json)
+contains 135 new quartic points and exact rank-at-least-14 certificates for
+`u=1785/4` and `u=539`.  Both denominator boxes are bounded searches, not
+rank upper bounds.
 
 ### Rank-20 low-conductor near miss
 

@@ -83,8 +83,90 @@ not identify its family.
   denominator fingerprints have only sporadic pairwise overlap and no common
   four-curve core.  The submitted bases therefore do not expose a transported
   section basis in these coordinates.
-- The public records contain no construction commentary.  Membership in a
-  Mestre, Nagao, or K3 family is not established by this audit.
+- The public records contain no construction commentary.  A subsequent exact
+  recognition identifies curve 282 with the Fermigier family at
+  `u=11671/42` (`s=11671/21`).  Its invariant ratios are exactly `882^4`,
+  `882^6`, and `882^12`, and the admissible change is
+  `[1/882,-24880960328501059/194481,-1/2,12440480164153289/194481]`.
+  The twelve generic directions plus submitted points
+  `12,13,14,15,17,18,19,20` have an exact rank-20 certificate modulo 5.
+  Hence this specialization has at least eight exceptional directions over
+  the exact generic rank 12.  Their quartic preimages are large, consistent
+  with the submitted list being a reduced basis rather than raw slice points.
+
+## Exact bounded construction-recognition screen
+
+The deterministic checker
+[`analyze_icarm_construction_fingerprints.py`](../cas/analyze_icarm_construction_fingerprints.py)
+compares curves 281, 282, 285 and 286, together with rank-30 curve 273, against
+the complete 2,329-family normalized nonsingular six-root Mestre census of
+diameter at most 300.  It also includes the larger normalized Fermigier
+control tuple
+
+```text
+(0,29,658,722,981,1036).
+```
+
+For each target and root tuple it interpolates the exact degree-twelve
+equation in `z=T^2` obtained from equality of `j`-invariants.  Modular
+no-projective-root witnesses reject most pairs; every survivor is factored
+over `QQ`, rational-square `z` values are recovered, and each reported
+parameter is substituted back exactly.  The sole match is
+
+```text
+curve 282: roots (0,29,658,722,981,1036), T=11671/21.
+```
+
+There is no match for curves 273, 281, 285 or 286.  This is complete only for
+the stated fixed-root census.  It does not exclude a larger root tuple, a
+generalized Mestre construction, a Kihara/Nagao family, a K3 descendant, an
+isogenous image, or a private family.
+
+The same checker scans every nonsingular numeric five-vector in the generated
+artifact tree by exact `j`.  It finds only already identified records of the
+five targets, not an unrecognized stored model.  Its point-denominator audit
+records respectively 13, 19, 20 and 17 distinct square-root denominators for
+the submitted bases of curves 281, 282, 285 and 286, with gcd one in every
+case.  These sparse patterns support the interpretation that the displayed
+points are reduced Mordell--Weil bases rather than raw transported sections;
+they are not family certificates.
+
+Finally, all five target curves have certified trivial rational torsion.  They
+therefore cannot be direct specializations of the implemented
+Elkies--Klagsbrun model `y^2=x(x^2+2A*x+B)`, which always contains `(0,0)` as
+rational 2-torsion.  This leaves isogenous quotients and other K3 fibrations
+open.
+
+## Backward reconstruction of curve 282
+
+The Fermigier discriminant factor at `u=11671/42` has exact homogeneous
+valuations
+
+```text
+v_5=2, v_11=4, v_13=3, v_23=2, v_31=2.
+```
+
+Equivalently, the parameter is a discriminant root in the five local classes
+
+```text
+u = 13 (mod 5^2), 6204 (mod 11^4), 1481 (mod 13^3),
+    492 (mod 23^2), 255 (mod 31^2).
+```
+
+CRT gives `R=282272502437288` modulo `M=408808451805325`.  Exact Gauss
+reduction of the lattice `a = R*b (mod M)` returns
+
+```text
+(11671,42), (126054478,-35027260519).
+```
+
+Thus the shortest reduced vector recovers `u=11671/42` exactly.  This is the
+same Hensel-root/CRT/two-dimensional Gauss mechanism implemented by the
+repository.  It is not, however, a member of the frozen search population:
+that search used primes `89,131,137`, not `5,11,13,23,31`.  The reconstruction
+is strong evidence for deliberate small-prime conductor engineering, but by
+itself it does not prove which algorithm the submitter ran; sufficiently large
+local modulus permits rational reconstruction from an already known parameter.
 
 The next structural test should be family recognition, not coefficient
 regression: compare the exact `j`-values against the repository's corrected
@@ -95,13 +177,17 @@ sections and measure the exceptional quotient directions.
 
 ```bash
 python3 elliptic-curves/cas/analyze_icarm_7fff_zip_sequence.py
+python3 elliptic-curves/cas/analyze_icarm_curve282_fermigier.py
+python3 elliptic-curves/cas/analyze_icarm_construction_fingerprints.py
 ```
 
 Pinned input and output:
 
 - `artifacts/generated-results/elliptic-curves/icarm_7fff_zip_281_282_285_286.json`
 - `artifacts/generated-results/elliptic-curves/icarm_7fff_zip_sequence_analysis.json`
+- `artifacts/generated-results/elliptic-curves/icarm_construction_fingerprints_v1.json`
 
-This proves the rank lower bounds from the displayed points.  It does not
-prove exact ranks, reveal the submitter's construction, or independently
-recompute the four conductors.
+This proves the rank lower bounds from the displayed points and exactly
+reconstructs curve 282's Fermigier parameter from its high-power local roots.
+It does not prove exact ranks, identify the submitter's implementation, or
+independently recompute the four conductors.

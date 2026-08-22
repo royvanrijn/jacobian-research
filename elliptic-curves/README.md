@@ -1006,6 +1006,9 @@ specialization is always minimized before its conductor is accepted.
 - [ICARM curve 273 rank-30 certificate](notes/ICARM_CURVE273_RANK30.md)
   records the exact lower-bound proof, independent Sage replay, and claim
   boundary for the 2026 public record.
+- [ICARM construction fingerprints](notes/ICARM_7FFF_ZIP_SEQUENCE.md)
+  records the exact curve-282 Fermigier recognition and the bounded 2,330-family
+  screen for curves 273, 281, 282, 285 and 286.
 - [Fermigier reproduction](notes/FERMIGIER_REPRODUCTION.md) records the exact
   canonical-family bridge and unresolved factor-two source discrepancy.
 - [`families/`](families/) contains the rank-at-least-two calibration family
@@ -1018,5 +1021,8 @@ The rank-at-least-30 target is complete. The immediate arithmetic priorities
 are a certified residual 2-Selmer calculation for curve 273, which may prove
 exact rank 30 or expose a 31st direction, and a twenty-first point on the
 rank-20 low-conductor near miss. In parallel, the 17-by-17 lattice programme
-is reconstructing a lower-rank neighbor fibration from which the missing
-rank-17 K3 model may be recovered.
+has constructed the first two H3 neighbours exactly over `QQ`, reaching
+`D13/MW4`.  The next equation-level gate is its q24 neighbour `D12/MW5`;
+the full lattice/chamber path from there to rootless `MW17` is already
+certified, but the remaining eleven equations and transported sections are
+not yet constructed.
