@@ -3,7 +3,7 @@ escape	D7+D4	D8+D6+2A1	16	176	64	2	0	3	2	E6 exact jet	exact_QQ_sqrt_minus6	0
 orbit424	A6+A4	2A7	14	112	64	4	0	0	0	rational 2-torsion chord	exact_QQ_sqrt_minus6	0
 orbit1222	A6+A3	2A6+3A1	15	90	392	3	1	25/8	0	A7 resolved raw-saturated module	exact_GF73_splice_old_q12	0
 q6_7774	A4+A2+A1	A5+2A4+2A1	15	74	600	3	0	8/7	2	A1 plus connected A6 quotient line	exact_GF73	0
-q4_1938	A3+A2	2A4+2A3+A1	15	66	800	3	1	12/5	1	connected A4 quotient line; generic special coeffs -1,-1,-1,0	exact_GF73	0
-q4_6855	4A1	TBD					2	19/3	0	generic vertical zero; CM24 specialization not yet transported	pending	1
-q4_a1_candidate1	A1	TBD					2	6	0	generic vertical zero	pending	0
+q4_1938	A3+A2	2A4+2A3+A1	15	66	800	3	1	12/5	1	connected A4 quotient line; special coeffs -1,-1,-1,0	exact_GF73	0
+q4_6855	4A1	A1+2A3+2D4	15	74	512	3	0	3/5	2	one A3 middle-double module; coeffs -2,-1,-1	exact_GF73	0
+q4_a1_candidate1	A1	TBD					2	6	0	generic vertical zero; CM24 specialization not yet transported	pending	1
 q6_rootless	rootless	TBD					4	23/2	-1	generic vertical zero	pending	0
