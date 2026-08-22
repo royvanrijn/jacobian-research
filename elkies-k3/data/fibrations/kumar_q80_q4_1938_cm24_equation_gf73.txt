@@ -1,0 +1,43 @@
+# Q80 low-q q4_1938 CM24 equation certificate over GF(73)
+# Certified 2026-08-22 by exact CM24 divisor transport, MW reconstruction,
+# node-constrained horizontal reconstruction, and connected-A4 quotient-line scan.
+# Generic move: A4+A2+A1/MW10 --q4(2,2)--> A3+A2/MW12
+# CM24 source: A5+2A4+2A1/MW3
+# CM24 child: 2A4+2A3+A1/MW3
+# root data: rank=15 roots=66 root_det=800
+#
+# Special horizontal H=-P1+P2+2P3
+# MW coordinates=(-1,1,2), profile=(0,1,4,4,3), height=12/5, P.O=1.
+# D.F=2, D.O=0, fibre_twist=1.
+# Special vertical support: one A4 with coefficients (-1,-1,-1,0).
+#
+# Horizontal section:
+X_H_num(T) = 60 + 40*T + 34*T^2 + 58*T^3 + 48*T^4 + 30*T^5 + 3*T^6
+X_H_den(T) = 19 + 52*T + T^2
+Y_H_num(T) = 24 + 15*T + 57*T^3 + 28*T^4 + 65*T^5 + 15*T^6
+Y_H_den(T) = 56 + 57*T + 5*T^2 + T^3
+
+# Connected-A4 quotient-line scan:
+# 2 signs x 2 I5 fibres x 73 residues = 292 exact cases.
+# Exactly four quartics, all exact target hits:
+# (+1,14,34), (+1,42,59), (-1,14,39), (-1,42,14).
+# Pinned representative:
+# sign=+1, I5=14, residue=34
+# eval_row=(1,14,50,43,46)
+# kernel=((1,0,51,40,23),(0,1,36,27,48))
+
+quartic(T;S) = T^4 + ((20*S^2 + 22*S + 50)/(S^2 + 51*S + 50))*T^3 + ((53*S^4 + 63*S^3 + 65*S^2 + 45*S + 55)/(S^4 + 29*S^3 + 63*S + 18))*T^2 + ((19*S^4 + 8*S^3 + 49*S^2 + 12*S + 47)/(S^4 + 29*S^3 + 63*S + 18))*T + (6*S^4 + 27*S^3 + 44*S^2 + 48*S + 19)/(S^4 + 29*S^3 + 63*S + 18)
+twist(S) = (6*S^4 + 28*S^3 + 13*S + 35)/(S^4 + 71*S^3 + 38*S^2 + 36*S + 32)
+
+A(S) = (34*S^8 + 32*S^7 + 15*S^6 + 58*S^5 + 17*S^4 + 52*S^3 + 48*S^2 + 22*S + 38)/(S^8 + 69*S^7 + 7*S^6 + 66*S^5 + 50*S^4 + 53*S^3 + 5*S^2 + 41*S + 2)
+B(S) = (11*S^12 + 6*S^11 + 5*S^10 + 3*S^9 + 64*S^8 + 53*S^7 + 23*S^6 + 42*S^5 + 32*S^4 + 37*S^3 + 27*S^2 + 43*S + 38)/(S^12 + 67*S^11 + 53*S^10 + 9*S^9 + 72*S^8 + 30*S^7 + 19*S^6 + 44*S^5 + 41*S^4 + 72*S^3 + 33*S^2 + 70*S + 64)
+
+# Pinned representative fibre signature:
+# I5 at S+1
+# I4 at S+36
+# I2 at S+46
+# I4 at S+50
+# I5 at S+65
+# I1 at S+72
+# cubic S^3+2*S^2+31*S+25 gives 3 I1
+# infinity smooth
