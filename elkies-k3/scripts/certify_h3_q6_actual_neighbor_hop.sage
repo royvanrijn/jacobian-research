@@ -25,14 +25,14 @@ COMPONENT_POINTS = ROOT / "artifacts/generated-results/elkies-k3-h92-q6-child-e7
 TRANSPORT = ROOT / "artifacts/generated-results/elkies-k3-h3-q6-weyl-section-transport.json"
 CORE = ROOT / "elkies-k3/scripts/elliptic_neighbor_compiler.sage"
 DEFAULT_OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-h3-q6-actual-neighbor-hop.json"
-PREFLIGHT_SHA256 = "fba6ed2455b5419efac7d16789356b1a9fbcedc51eed26a357657011d7830d8f"
-RR_COVER_SHA256 = "477b811fff3c14151b84905ab7dbfb60ca1b26b83484604b92e264e0b580857a"
+PREFLIGHT_SHA256 = "016984fd94f8c19237d42ee17e1e2fca9c46e6f08d4799a67571547cbb50ca14"
+RR_COVER_SHA256 = "2715a4f069ff4fecac4b0a40dcbbe49921938c81febfe1ca1afc9292cb3214a0"
 # Replayed with SageMath 10.9 from certify_h92_q6_child_jacobian.sage; the
 # preceding c57... pin was stale, while the semantic q6 hop replay against
 # this artifact passes every exact child and transport assertion below.
-CHILD_SHA256 = "c471d28304b4d45fdd3e1e03c1d202692afbe102cddacc98292690b7a26a251a"
+CHILD_SHA256 = "dbe7df273e815e739188b0f1a198386b0e011d5879cf9f8d698ecc991cbf6d44"
 COMPONENTS_SHA256 = "335a9cb6c1060ac170c063f99bb02d4c4357fa2426d37b4dc3efd447ac2b62ad"
-COMPONENT_POINTS_SHA256 = "754381de56098027447bf25b6f5e07546967f0a11871c40588b18ee34359b937"
+COMPONENT_POINTS_SHA256 = "0592edd1096bd24c8651139515ce0d976ae7e800c0c5eab0459f5ad729713acd"
 TRANSPORT_SHA256 = "c4b7e38f0ea9fc3f748200ca9923ea3ffe5c0028c979e5f81be6507954d7c822"
 
 

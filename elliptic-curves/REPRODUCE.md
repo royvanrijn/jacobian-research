@@ -979,6 +979,11 @@ PYTHONPATH=elliptic-curves/cas .venv/bin/python \
 PYTHONPATH=elliptic-curves/cas .venv/bin/python \
   elliptic-curves/cas/verify_mestre_diameter235_eight_companion_component.py --output \
   artifacts/generated-results/elliptic_mestre_diameter235_eight_companion_component.json
+sage elliptic-curves/cas/verify_mestre_diameter235_eight_companion_generic_relation.sage \
+  --specialize-p -294 --output \
+  artifacts/generated-results/elliptic_mestre_diameter235_eight_companion_seed_pair_relation.json
+sage elliptic-curves/cas/verify_mestre_diameter235_eight_companion_generic_relation.sage \
+  --output artifacts/generated-results/elliptic_mestre_diameter235_eight_companion_generic_relation.json
 PYTHONPATH=elliptic-curves/cas .venv/bin/python \
   elliptic-curves/cas/probe_mestre_diameter235_eight_companion.py \
   --order 32 --precision 2 --plane-relation-search --output \

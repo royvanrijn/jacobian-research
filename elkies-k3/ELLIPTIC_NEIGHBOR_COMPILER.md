@@ -130,6 +130,14 @@ vertical correction, chart trivialization, or a child equation.  The H3 q6
 preflight now replays its 22 reflections through this interface before the
 surface-specific chord conversion.
 
+Before choosing that ambient, `certify_generic_fibre_divisor_decomposition`
+now binds the caller-supplied marked section and vertical correction to the
+actual class identity `D=(q-1)O+P+V+kF`.  It checks every declared vertical
+component has old-fibre degree zero and refuses a reconstruction mismatch.
+For the first q6 hop this records the exact identity
+`D=O+(-P1)-F`; it makes the marked chord input explicit, but does not claim
+to discover `P` or the vertical correction from a lattice vector alone.
+
 `exact_neighbor_certificate_handoff` also accepts the versioned output of
 the repository's degree-independent Néron--Severi engine. It retains the
 engine's precise supplied-wall boundary, fixed-component record, old-fibre
@@ -430,7 +438,7 @@ artifacts have SHA-256
 (actual-H92 E7 old-coordinate valuation atlas),
 `3796ee20121a94ce6d3a707c0cd119983b64fce79336fa99a5a894729174900c`
 (first q=6 actual-H92 E7 quotient block),
-`477b811fff3c14151b84905ab7dbfb60ca1b26b83484604b92e264e0b580857a`
+`2715a4f069ff4fecac4b0a40dcbbe49921938c81febfe1ca1afc9292cb3214a0`
 (first q=6 complete actual resolved RR cover),
 `7848c3a506b2255fc1e42cab9ced9b72f8852e26aa703f9b23e2b2417474d2ed`
 (third marked divisor's actual-H92 E7 quotient block),
@@ -438,7 +446,7 @@ artifacts have SHA-256
 (third marked chord evaluated in that actual-H92 quotient),
 `c1cb5457c781af53d08522144b15d95ec2452a90ec0c6ee65377c3f51f835a10`
 (third degree-44 generic ambient evaluated in that quotient),
-`3adb6f6acf9333bb43f846aab58fe95ade1e8e229f6dec0e7f985f526435984d`
+`f6b9835e5b2ba083a0151ac0410638c1e90edfa0c29994de6d1e8e2eb0f43e60`
 (first H3 q=6 actual neighbour-hop certificate),
 `e27f10c238d0700e3fa236dbe616aeec2575e4f17dd19bd2f934404ece6188d2`
 (rejection of the insufficient old-monomial E7 complete ideal),
@@ -458,11 +466,11 @@ artifacts have SHA-256
 (global Riemann--Roch kernel),
 `9217d0492046954d8522680f9ddf2a0f5c0177921db761b584c281527b41145d`
 (pencil elimination),
-`c471d28304b4d45fdd3e1e03c1d202692afbe102cddacc98292690b7a26a251a`
+`dbe7df273e815e739188b0f1a198386b0e011d5879cf9f8d698ecc991cbf6d44`
 (child Jacobian), and
-`38f3a22fe8be1b1ddec60a4daed4632a154a8564279f1cd8a80a089504796f9a`
+`00e7c5186a3517bccf269b853c9e86c89bfb728dc2801ed1dd26dd6db925f714`
 (transported child zero section), and
-`754381de56098027447bf25b6f5e07546967f0a11871c40588b18ee34359b937`
+`0592edd1096bd24c8651139515ce0d976ae7e800c0c5eab0459f5ad729713acd`
 (the two transported E7-infinity sections), and
 `335a9cb6c1060ac170c063f99bb02d4c4357fa2426d37b4dc3efd447ac2b62ad`
 (component-section lattice identities), and
@@ -525,9 +533,19 @@ or their common kernel.
 
 [`scripts/probe_h92_q8_e7_node_principal_local_normal_form_modp.sage`](scripts/probe_h92_q8_e7_node_principal_local_normal_form_modp.sage)
 now consumes that atlas one chart at a time.  It agrees with the specialized
-E7_4--E7_3 test (rank 54 modulo 43) and also evaluates the cancellation-
-sensitive E7_2--E7_5 chart (rank 54 on the same 54-column seed).  Those are
-two modular finite-ambient regressions; they are not an all-chart
+E7_4--E7_3 test (rank 54 modulo 43) and has full rank on the same 54-column
+seed at `E7_1--E7_4`, `E7_2--E7_5`, `E7_3--E7_7`, and `E7_7--E7_2` as well.
+For the expensive `E7_3--E7_6` local-degree standard basis, the compiler also
+has a rigorously one-way Artinian-corner obstruction: the actual local ideal
+maps to `(surface,Z^34,U^34)`, whose finite image likewise has rank 54.  It
+is used only in the forward direction—an actual local solution vanishes in
+that quotient—and never as a replacement for the principal node condition.
+The associated good-reduction checker proves the resulting fixed-ambient
+characteristic-zero injectivity statement, while retaining that one-way
+boundary.
+[`scripts/certify_h92_q8_all_e7_node_modular_regression.sage`](scripts/certify_h92_q8_all_e7_node_modular_regression.sage)
+aggregates the five actual local images and this one-way sixth-chart witness.
+These are modular finite-ambient obstructions; they are not an all-chart
 characteristic-zero matrix or a completed Čech calculation.
 
 The first actual overlap maps are now available in

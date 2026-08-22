@@ -101,6 +101,88 @@ def bounded_weierstrass_monomials(old_fiber_degree, base_powers):
     return tuple(answer)
 
 
+def certify_generic_fibre_divisor_decomposition(
+    gram,
+    divisor,
+    old_fiber,
+    zero_section,
+    marked_section,
+    vertical_support=(),
+    fiber_twist=0,
+    expected_old_fiber_degree=None,
+):
+    """Certify ``D=(q-1)O+P+V+kF`` before building an RR ambient.
+
+    A lattice neighbour vector alone does not say which marked point occurs
+    on the old generic fibre.  This adapter makes that indispensable choice
+    explicit: the caller supplies the zero section ``O``, a marked section
+    ``P``, the resolved vertical support of ``V``, and the integer fibre
+    twist ``k``.  It then checks the equality in the declared Neron--Severi
+    frame and the fibre degrees of every displayed term.
+
+    ``vertical_support`` is an ordered sequence of ``(name, coefficient,
+    component)`` records.  Each component must have degree zero against the
+    old fibre; this verifies it is vertical *relative to the supplied old
+    fibration*, but does not claim that the caller's list is the full set of
+    fibre components.  The returned generic restriction is therefore a
+    certificate of the form ``(q-1)O+P``, not a procedure that discovers P.
+    """
+    gram = matrix(ZZ, gram)
+    divisor = vector(ZZ, divisor)
+    old_fiber = vector(ZZ, old_fiber)
+    zero_section = vector(ZZ, zero_section)
+    marked_section = vector(ZZ, marked_section)
+    dimension = len(divisor)
+    if gram.nrows() != gram.ncols() or gram.nrows() != dimension:
+        raise ValueError("Neron--Severi Gram matrix and divisor have incompatible sizes")
+    if any(len(value) != dimension for value in (old_fiber, zero_section, marked_section)):
+        raise ValueError("generic-fibre decomposition has incompatible Neron--Severi sizes")
+    q = intersection(divisor, old_fiber, gram)
+    if q <= 0:
+        raise ValueError("target divisor has nonpositive old-fibre degree")
+    if expected_old_fiber_degree is not None and q != ZZ(expected_old_fiber_degree):
+        raise ValueError("target divisor has the wrong old-fibre degree")
+    if intersection(zero_section, old_fiber, gram) != 1:
+        raise ValueError("declared zero section does not have old-fibre degree one")
+    if intersection(marked_section, old_fiber, gram) != 1:
+        raise ValueError("declared marked section does not have old-fibre degree one")
+    vertical = vector(ZZ, [0]*dimension)
+    records = []
+    for item in vertical_support:
+        if len(item) != 3:
+            raise ValueError("vertical support record must be (name, coefficient, component)")
+        name, coefficient, component = item
+        coefficient = ZZ(coefficient)
+        component = vector(ZZ, component)
+        if len(component) != dimension:
+            raise ValueError("vertical component has incompatible Neron--Severi size")
+        degree = intersection(component, old_fiber, gram)
+        if degree != 0:
+            raise ValueError("declared vertical component {} has old-fibre degree {}".format(name, degree))
+        vertical += coefficient*component
+        records.append({
+            "name": str(name), "coefficient": int(coefficient),
+            "old_fiber_degree": int(degree),
+        })
+    fiber_twist = ZZ(fiber_twist)
+    generic_restriction = (q-1)*zero_section+marked_section
+    reconstructed = generic_restriction+vertical+fiber_twist*old_fiber
+    if reconstructed != divisor:
+        raise ValueError("declared generic-fibre decomposition does not reconstruct target divisor")
+    return {
+        "old_fiber_degree": int(q),
+        "zero_section_degree": int(intersection(zero_section, old_fiber, gram)),
+        "marked_section_degree": int(intersection(marked_section, old_fiber, gram)),
+        "generic_restriction": {
+            "zero_section_coefficient": int(q-1),
+            "marked_section_coefficient": 1,
+        },
+        "vertical_support": tuple(records),
+        "fiber_twist": int(fiber_twist),
+        "reconstructed_divisor": tuple(int(value) for value in reconstructed),
+    }
+
+
 def endpoint_coefficient_interval(e8_floor, e7_pole, denominator_degree):
     """Return the least base-coefficient interval satisfying two endpoint bounds.
 

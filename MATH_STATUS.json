@@ -30801,7 +30801,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "A rational split-six-root Mestre two-section component at diameter 235",
-      "scope": "For the affine-normalized six-root Mestre seed (0,17,136,161,207,235), the two affine abscissae x1=-68/27-37*T/27 and x2=3067/459-5*T/27 extend to an explicit rational one-parameter component over Q(p), with p=-294 at the seed. A split-root local continuation identifies a sparse nodal plane quartic in U=r6-235/17 and V=r3-8; its three rational ordinary nodes yield the rational parameter p. All six normalized roots, the four moduli, and both affine lines are rational in p, and the leading invariant is an explicit square. Every coordinate denominator divides a degree-18 common denominator. The established recursive residual degree bound 60 implies that the cleared residual numerators have degree at most 1080; exact vanishing at 1099 admissible rational p-values therefore proves M and both triples (E2,E1,E0) identically, without expanding residuals. At the seed specialization p=-294, T=2 and T=3, each selected companion separately raises the exact mod-3 finite-reduction rank from 10 to 11 above the visible subgroup. This establishes a specialization-level visible-subgroup escape, but does not prove pair independence, generic rank at least 14, saturation, intersections away from the seed, or a Shioda Gram matrix.",
+      "scope": "For the affine-normalized six-root Mestre seed (0,17,136,161,207,235), the two affine abscissae x1=-68/27-37*T/27 and x2=3067/459-5*T/27 extend to an explicit rational one-parameter component over Q(p), with p=-294 at the seed. A split-root local continuation identifies a sparse nodal plane quartic in U=r6-235/17 and V=r3-8; its three rational ordinary nodes yield the rational parameter p. All six normalized roots, the four moduli, and both affine lines are rational in p, and the leading invariant is an explicit square. Every coordinate denominator divides a degree-18 common denominator. The established recursive residual degree bound 60 implies that the cleared residual numerators have degree at most 1080; exact vanishing at 1099 admissible rational p-values therefore proves M and both triples (E2,E1,E0) identically, without expanding residuals. At the regular smooth seed fibre p=-294,T=2, exact finite reductions modulo 3 make the first ten visible sections together with either selected affine section independent. The affine abscissae collide at T=-4223/544 but, in the common triangular-ordinate normalization, the points are hyperelliptic conjugates rather than a same-point section intersection. Together with EC-MD235-GENERIC-RELATION, this proves that the displayed visible-plus-affine subgroup has exact rank 11 over Q(p,T), but not that the full Mordell--Weil group has rank 11. This does not prove generic rank at least 12 or 14, saturation, the full pair intersection number, or a Shioda Gram matrix.",
       "canonical_source": "elliptic-curves/notes/MESTRE_AFFINE_SECTION_MODULI.md",
       "dependencies": [],
       "checker": "elliptic-curves/cas/verify_mestre_diameter235_eight_companion_component.py",
@@ -30809,13 +30809,75 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:5d74010f20f6be301bbd861bfe577ee9f780170a8927e1c41df945b0d5ec2632",
+      "artifact_hash": "sha256:74dc084298f50326652a522c29f63bafb802aa06dd38febc9f3a9d6228cf3c60",
       "software_lock": [
         ".python-version",
         "requirements.txt"
       ],
       "supersedes_notes": [],
       "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-MD235-SEED-RELATION",
+      "kind": "example",
+      "state": "proved",
+      "title": "Visible pair relation on the diameter-235 seed surface",
+      "scope": "On the p=-294 specialization of the rational split-six-root diameter-235 two-section component, exact recursive Mestre arithmetic and covariant short-Weierstrass addition over Q(T) prove P1+P2=V(0,-)+V(1,-)+V(1,+)+V(r3,-)+V(r3,+)+V(r4,-)+V(r5,+)+V(r6,-), in the component root order (0,1,r3,r4,r5,r6) with (-,+) visible ordering. This is a reproducible seed checkpoint for the generic relation proved separately by EC-MD235-GENERIC-RELATION.",
+      "canonical_source": "elliptic-curves/notes/MESTRE_AFFINE_SECTION_MODULI.md",
+      "dependencies": [
+        "EC-MD235"
+      ],
+      "checker": "elliptic-curves/cas/verify_mestre_diameter235_eight_companion_generic_relation.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:63cb70dc80514d7e0901ea545428868b38ea7134132f38b664fb104c1f85e156",
+      "software_lock": [
+        ".python-version",
+        "elliptic-curves/cas/verify_mestre_diameter235_eight_companion_generic_relation.sage"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [
+        "EC-MD235-GENERIC-RELATION"
+      ],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-MD235-GENERIC-RELATION",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "The diameter-235 displayed subgroup has exact rank eleven",
+      "scope": "Over Q(p,T), on the rational split-six-root diameter-235 two-section component, exact recursive Mestre arithmetic, triangular ordinates, the binary-quartic covariant map, and short-Weierstrass addition prove P1+P2=V(0,-)+V(1,-)+V(1,+)+V(r3,-)+V(r3,+)+V(r4,-)+V(r5,+)+V(r6,-), in the component root order (0,1,r3,r4,r5,r6) with (-,+) visible ordering. They also prove V(1,-)+V(1,+)+V(r3,+)+V(r4,+)+V(r5,+)+V(r6,-)=0 and V(0,-)+V(0,+)+V(r3,-)+V(r4,-)+V(r5,-)+V(r6,+)=0. The visible subgroup therefore has rank at most 10 and P2 lies in the subgroup generated by P1 and the visible sections. EC-MD235 supplies an independent specialization certificate for ten visible sections plus P1, hence the subgroup generated by all twelve visible sections and P1,P2 has exact rank 11. This is not an upper bound for the full Mordell--Weil group and does not prove generic rank 12 or 14, saturation, intersections, or a Shioda Gram matrix.",
+      "canonical_source": "elliptic-curves/notes/MESTRE_AFFINE_SECTION_MODULI.md",
+      "dependencies": [
+        "EC-MD235"
+      ],
+      "checker": "elliptic-curves/cas/verify_mestre_diameter235_eight_companion_generic_relation.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:63cb70dc80514d7e0901ea545428868b38ea7134132f38b664fb104c1f85e156",
+      "software_lock": [
+        ".python-version",
+        "elliptic-curves/cas/verify_mestre_diameter235_eight_companion_generic_relation.sage"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [
+        "EC-MD235-SEED-RELATION"
+      ],
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [],
@@ -31441,7 +31503,7 @@
       "kind": "example",
       "state": "proved",
       "title": "Exact first degree-two H3 q6 neighbour with an all-edge E7 cover",
-      "scope": "For the H92 q6 divisor D=O+(-P1)-F, the recorded 22 Weyl reflections give D^2=0, D.F=2, primitivity, and nefness on the declared walls. The actual E7_2--E7_5 chart audit proves ord_Z(m/t)=-1, and the corrected marked frame is Z*m/t=unit/W. The all-edge resolved H92 certificate proves that the raw chord m has exceptional orders at least (1,1,3,2,0,2,2) on (E7_1,...,E7_7), has no horizontal pole except -P1, and is a local frame there; hence the q6 E7 module adds no unrecorded row to the ten-dimensional ambient. Together with the exact E8 and four smooth collision modules, the complete vertical-condition matrix has rank and codimension eight, so h0(D)=2. Exact pencil elimination and Jacobian minimization give II*+IV*+6I1, hence E8+E6 and Mordell--Weil rank three in rho=19. The first two low-height sections are carried to exact child-Jacobian points by the explicit affine-E7 blow-up chart and the two binary-quartic infinity signs. The transported sections 4*(-P1), (-P1), and 22*(-P1)-P2 have exact height Gram ((8/3,1/3,-1),(1/3,8/3,1),(-1,1,46)); their three source curves meet the new fibre once, and the third correction has exact Neron--Severi old-E7 pairing rows together with degree balance 4812-4811=1, but those rows are not asserted to be a resolved-chart trace. Its determinant is 316, so the torsion-free Shioda--Tate calculation with root determinant 3 has absolute Neron--Severi discriminant 948. This certifies the first equation-level fibration hop; it does not yet provide a general all-divisor compiler or the later q8/q24 hops.",
+      "scope": "For the H92 q6 divisor D=O+(-P1)-F, the compiler first certifies the supplied generic-fibre decomposition D=(2-1)O+(-P1)+0-F in the declared Neron--Severi frame. The recorded 22 Weyl reflections give D^2=0, D.F=2, primitivity, and nefness on the declared walls. The actual E7_2--E7_5 chart audit proves ord_Z(m/t)=-1, and the corrected marked frame is Z*m/t=unit/W. The all-edge resolved H92 certificate proves that the raw chord m has exceptional orders at least (1,1,3,2,0,2,2) on (E7_1,...,E7_7), has no horizontal pole except -P1, and is a local frame there; hence the q6 E7 module adds no unrecorded row to the ten-dimensional ambient. Together with the exact E8 and four smooth collision modules, the complete vertical-condition matrix has rank and codimension eight, so h0(D)=2. Exact pencil elimination and Jacobian minimization give II*+IV*+6I1, hence E8+E6 and Mordell--Weil rank three in rho=19. The first two low-height sections are carried to exact child-Jacobian points by the explicit affine-E7 blow-up chart and the two binary-quartic infinity signs. The transported sections 4*(-P1), (-P1), and 22*(-P1)-P2 have exact height Gram ((8/3,1/3,-1),(1/3,8/3,1),(-1,1,46)); their three source curves meet the new fibre once, and the third correction has exact Neron--Severi old-E7 pairing rows together with degree balance 4812-4811=1, but those rows are not asserted to be a resolved-chart trace. Its determinant is 316, so the torsion-free Shioda--Tate calculation with root determinant 3 has absolute Neron--Severi discriminant 948. This certifies the first equation-level fibration hop; it does not yet provide a general all-divisor compiler or the later q8/q24 hops.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
         "EC-K3-H3-SOURCE"
@@ -31451,7 +31513,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:9c95aa119ef64d9991e260accf92137edd768c7cc74a08890ef3ada62fd95f40",
+      "artifact_hash": "sha256:a971590dc781ddf50c467459780633ac2d48dbdbd12ae6849d4ce8a6335510a5",
       "software_lock": [
     "elkies-k3/scripts/assemble_h92_q6_global_rr.sage",
     "elkies-k3/scripts/compile_h3_first_q6_preflight.sage",

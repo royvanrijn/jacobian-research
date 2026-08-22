@@ -78,6 +78,8 @@ parser.add_argument("--marked-frame", type=Path, default=MARKED_FRAME)
 parser.add_argument("--ambient", type=Path, default=AMBIENT)
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
 args = parser.parse_args()
+for attribute in ("p1", "pullbacks", "gluing", "frames", "marked_frame", "ambient", "output"):
+    setattr(args, attribute, getattr(args, attribute).resolve())
 
 p1 = json.loads(args.p1.read_text())
 pullbacks = json.loads(args.pullbacks.read_text())

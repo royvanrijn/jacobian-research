@@ -1,0 +1,51 @@
+{
+  "base_field": "Q(T)",
+  "p_specialization": "-294",
+  "relation": "P1+P2=sum relation_vector[i]*V_i in the component root order",
+  "relation_vector": [
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0
+  ],
+  "scope_limit": "this proves pair dependence on one p-fibre, not a generic relation over Q(p,T)",
+  "status": "exact p-specialized relation verified",
+  "visible_relations": [
+    [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1
+    ]
+  ]
+}

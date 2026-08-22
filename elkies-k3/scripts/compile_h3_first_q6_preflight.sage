@@ -123,6 +123,16 @@ lattice_pipeline = compile_elliptic_neighbor_rr_pencil(
     expected_nef_divisor=divisor,
 )
 reduced_divisor = lattice_pipeline["nef_divisor"]
+generic_fibre_decomposition = certify_generic_fibre_divisor_decomposition(
+    ns,
+    reduced_divisor,
+    fiber,
+    zero,
+    minus_p1,
+    (),
+    fiber_twist=-1,
+    expected_old_fiber_degree=2,
+)
 recorded_reflections = [
     {
         "simple_root": int(item["root"].split("_")[1]),
@@ -137,6 +147,11 @@ assert preflight["square"] == 0
 assert preflight["primitive"]
 assert preflight["old_fiber_degree"] == 2
 assert preflight["nonnegative_on_declared_walls"]
+assert generic_fibre_decomposition["generic_restriction"] == {
+    "zero_section_coefficient": 1,
+    "marked_section_coefficient": 1,
+}
+assert generic_fibre_decomposition["fiber_twist"] == -1
 
 # The q=6 search shell is a lattice label.  The geometric RR degree is two,
 # so a generic-fibre basis additionally needs the marked chord with pole
@@ -157,6 +172,7 @@ payload = {
         "old_fiber_degree": preflight["old_fiber_degree"],
         "divisor_squared": preflight["square"],
         "primitive": preflight["primitive"],
+        "generic_fibre_decomposition": generic_fibre_decomposition,
         "declared_wall_pairings": preflight["declared_wall_pairings"],
         "raw_q6_shell_witness": [int(value) for value in raw_divisor],
         "recorded_weyl_reflections": recorded_reflections,

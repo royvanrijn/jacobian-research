@@ -22,8 +22,16 @@ from fractions import Fraction
 import json
 from pathlib import Path
 
+from mestre_root_tuples import SixRootMestreConstruction
 from probe_mestre_diameter235_eight_companion import ROOT_PLANE_QUARTIC, quotient_ranks
-from probe_mestre_two_section_local_continuation import Field, residuals
+from probe_mestre_two_section_local_continuation import Field, residuals, solve_square_over_q
+from screen_mestre_fermigier_two_section_escape import square_root
+from search_mestre_root_tuple_scale import (
+    primitive_visible_points,
+    quartic_point_to_jacobian,
+    quartic_value,
+)
+from search_mestre_root_tuple_scale_max200 import mod3_independence_certificate
 
 
 Q = Fraction
@@ -156,6 +164,150 @@ def root_plane_quartic(u: Q, v: Q) -> Q:
     return sum(Q(coefficient) * u**u_degree * v**v_degree for u_degree, v_degree, coefficient in ROOT_PLANE_QUARTIC)
 
 
+def triangular_ordinate_at_seed(intercept: Q, slope: Q) -> tuple[Q, Q, Q, Q]:
+    """Recover the chosen cubic ordinate from the compact seed recursion."""
+
+    construction = SixRootMestreConstruction(ROOTS_AT_SEED)
+    samples = tuple(Q(value) for value in range(1, 8))
+    values = []
+    for parameter in samples:
+        remainder = construction.remainder_coefficients(parameter)
+        abscissa = intercept + slope * parameter
+        values.append(
+            sum(coefficient * abscissa**degree for degree, coefficient in enumerate(remainder))
+            / parameter**2
+        )
+    vandermonde = [
+        [parameter**degree for degree in range(7)] for parameter in samples
+    ]
+    f = solve_square_over_q(vandermonde, values)
+    parameter = Q(-4223, 544)
+    remainder = construction.remainder_coefficients(parameter)
+    abscissa = intercept + slope * parameter
+    check = sum(coefficient * abscissa**degree for degree, coefficient in enumerate(remainder)) / parameter**2
+    if check != sum(coefficient * parameter**degree for degree, coefficient in enumerate(f)):
+        raise AssertionError("the compact line residual interpolation failed")
+    root_d = leading_square_root(SEED_PARAMETER)
+    y3 = (1 - slope**2) * root_d / 2
+    y2 = f[5] / (2 * y3)
+    y1 = (f[4] - y2**2) / (2 * y3)
+    y0 = (f[3] - 2 * y1 * y2) / (2 * y3)
+    ordinate = (y0, y1, y2, y3)
+    if any(
+        f[degree]
+        != sum(
+            ordinate[left] * ordinate[degree - left]
+            for left in range(max(0, degree - 3), min(3, degree) + 1)
+        )
+        for degree in range(7)
+    ):
+        raise AssertionError("the triangular seed ordinate failed")
+    return ordinate
+
+
+def pair_abscissa_collision_at_seed() -> dict[str, object]:
+    """Audit the finite abscissa collision with a common ordinate orientation."""
+
+    parameter = (SEED_SECTIONS[1][0] - SEED_SECTIONS[0][0]) / (
+        SEED_SECTIONS[0][1] - SEED_SECTIONS[1][1]
+    )
+    ordinates = [triangular_ordinate_at_seed(*line) for line in SEED_SECTIONS]
+    values = [sum(value * parameter**degree for degree, value in enumerate(ordinate)) for ordinate in ordinates]
+    abscissa = SEED_SECTIONS[0][0] + SEED_SECTIONS[0][1] * parameter
+    if abscissa != SEED_SECTIONS[1][0] + SEED_SECTIONS[1][1] * parameter:
+        raise AssertionError("the selected abscissae no longer meet")
+    if values[0] != -values[1]:
+        raise AssertionError("the selected triangular ordinates lost their conjugate collision")
+    construction = SixRootMestreConstruction(ROOTS_AT_SEED)
+    quartic = construction.quartic_coefficients(parameter)
+    if values[0] ** 2 != sum(coefficient * abscissa**degree for degree, coefficient in enumerate(quartic)):
+        raise AssertionError("the selected intersection left the raw quartic")
+    return {
+        "T": str(parameter),
+        "common_orientation_raw_quartic_points": [
+            [str(abscissa), str(values[0])],
+            [str(abscissa), str(values[1])],
+        ],
+        "common_triangular_orientation_gives_hyperelliptic_conjugates": True,
+        "scope_limit": "the affine lines collide in x here, but this is not a same-point section intersection under the common triangular orientation; infinity and reducible-fibre contributions remain unaudited",
+    }
+
+
+def generic_visible_escape_witness(quotient: list[dict[str, object]]) -> dict[str, object]:
+    """Certify that either selected section is not generically visible.
+
+    A generic visible-subgroup identity would specialize at the regular
+    ``p=-294, T=2`` fibre.  The exact finite-reduction quotient rows there
+    give rank 10 for the twelve visible points and rank 11 after adjoining
+    any one of the eight displayed affine points, so no such identity can
+    exist.  This is nonmembership, not pair independence or saturation.
+    """
+
+    if not denominator_b(SEED_PARAMETER) or not denominator_k(SEED_PARAMETER):
+        raise AssertionError("the escape specialization is outside the parameter chart")
+    record = next(item for item in quotient if item["T"] == "2")
+    baseline = record["visible_mod3_rank"]
+    individual = record["visible_plus_individual_companion_mod3_ranks"]
+    if baseline != 10 or individual != [11] * 8:
+        raise AssertionError("the exact mod-3 escape witness changed")
+    construction = SixRootMestreConstruction(ROOTS_AT_SEED)
+    parameter = Q(2)
+    quartic = construction.primitive_quartic_coefficients(parameter)
+    coefficients = construction.primitive_jacobian_coefficients(Q(2))
+    discriminant = -16 * (4 * coefficients[3] ** 3 + 27 * coefficients[4] ** 2)
+    if not discriminant:
+        raise AssertionError("the escape specialization is singular")
+    visible = tuple(
+        quartic_point_to_jacobian(construction, parameter, point)
+        for point in primitive_visible_points(construction, parameter)
+    )
+    selected = []
+    for intercept, slope in SEED_SECTIONS:
+        x_value = intercept + slope * parameter
+        y_value = square_root(quartic_value(quartic, x_value))
+        if y_value is None:
+            raise AssertionError("a selected section lost its exact ordinate")
+        selected.append(
+            quartic_point_to_jacobian(construction, parameter, (x_value, y_value))
+        )
+    certificates = [
+        mod3_independence_certificate(
+            coefficients, (*visible, point), prime_bound=251
+        )
+        for point in selected
+    ]
+    expected_pivots = list(range(1, 11)) + [13]
+    if any(
+        certificate["combined_exact_rank_over_F3"] != 11
+        or certificate["independent_subset_indices_one_based"] != expected_pivots
+        for certificate in certificates
+    ):
+        raise AssertionError("the selected generic-rank witness changed")
+    return {
+        "p": str(SEED_PARAMETER),
+        "T": "2",
+        "characteristic_zero_fibre_is_smooth": True,
+        "visible_mod3_rank": baseline,
+        "visible_plus_each_selected_companion_mod3_rank": individual[:2],
+        "individual_exact_rank_certificates": [
+            {
+                "certificate_primes": certificate["certificate_primes"],
+                "independent_subset_indices_one_based": certificate[
+                    "independent_subset_indices_one_based"
+                ],
+                "rational_3_torsion_exclusion": certificate[
+                    "rational_3_torsion_exclusion"
+                ],
+            }
+            for certificate in certificates
+        ],
+        "conclusion": "each selected affine section is outside the generic subgroup generated by the twelve visible sections",
+        "specialization_principle": "a generic visible-subgroup equality extends to this regular smooth specialization and would force no mod-3 rank gain",
+        "generic_rank_lower_bound": 11,
+        "scope_limit": "this does not prove P1 and P2 are independent of one another, a rank-12 or rank-14 bound, saturation, or a Shioda Gram matrix",
+    }
+
+
 def verify_component() -> dict[str, object]:
     if len(SAMPLE_VALUES) <= CLEARED_RESIDUAL_DEGREE_BOUND:
         raise AssertionError("too few exact samples for the degree certificate")
@@ -187,6 +339,8 @@ def verify_component() -> dict[str, object]:
         for record in quotient
     ] != [("1", 10, 10), ("2", 10, 11), ("3", 10, 11), ("-1", 10, 10)]:
         raise AssertionError("the seed finite-reduction escape profile changed")
+    generic_escape = generic_visible_escape_witness(quotient)
+    pair_collision = pair_abscissa_collision_at_seed()
     return {
         "status": "exact rational diameter-235 two-section component verified",
         "parameter": "p, with local seed p=-294",
@@ -214,11 +368,13 @@ def verify_component() -> dict[str, object]:
             "p": "-294",
             "records": quotient,
             "conclusion": "at T=2 and T=3, each selected affine companion separately raises the exact mod-3 finite-reduction rank above the visible subgroup",
-            "scope_limit": "this proves a specialization-level visible-subgroup escape, not generic independence, saturation, or a rank-14 assertion",
+            "scope_limit": "this alone is a specialization calculation; the following regular-specialization witness promotes only visible-subgroup nonmembership generically",
         },
+        "generic_visible_subgroup_escape": generic_escape,
+        "pair_abscissa_collision_at_seed": pair_collision,
         "not_established": [
-            "generic Mordell-Weil independence or rank at least 14",
-            "pair intersections away from the seed, a Shioda Gram matrix, or saturation",
+            "generic Mordell-Weil independence of P1 and P2 or rank at least 14",
+            "the full pair intersection number including infinity and reducible-fibre contributions, a Shioda Gram matrix, or saturation",
         ],
     }
 

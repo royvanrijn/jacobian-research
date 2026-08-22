@@ -539,12 +539,12 @@ The following symbolic ambient has exact degree 44 and 44 basis elements:
 irrelevant globally reduced rational-function coordinate.
 
 The child-Jacobian default pin is the SageMath 10.9 replay hash
-`c471d28304b4d45fdd3e1e03c1d202692afbe102cddacc98292690b7a26a251a`.
+`dbe7df273e815e739188b0f1a198386b0e011d5879cf9f8d698ecc991cbf6d44`.
 It is generated through the reusable exact finite-place minimization and
 Kodaira aggregation route; the q6 invariants and transported Gram are
 unchanged.
 The corresponding regenerated final-hop artifact has SHA-256
-`3adb6f6acf9333bb43f846aab58fe95ade1e8e229f6dec0e7f985f526435984d`.
+`f6b9835e5b2ba083a0151ac0410638c1e90edfa0c29994de6d1e8e2eb0f43e60`.
 Its certified Shioda--Tate data are root determinant `3`, height determinant
 `316`, trivial torsion/glue index, and absolute Néron--Severi discriminant
 `948`.  It additionally pins the three source curves meeting the new fibre
@@ -1305,9 +1305,63 @@ H92Q8E7NODELOCALNF|chart=E7_4--E7_3|prime=43|ambient=54|rows=15636|rank=54|kerne
 H92Q8E7NODELOCALNF|chart=E7_2--E7_5|prime=43|ambient=54|rows=23553|rank=54|kernel=0|status=EXPERIMENTAL_MODULAR_Q8_E7_NODE_LOCAL_NORMAL_FORM_BLOCK
 ```
 
-These are finite-ambient modular regressions only. The remaining four nodes,
-the characteristic-zero residual matrices, and the overlap-compatible common
-kernel still need to be compiled.
+The same default local-degree computation has full rank for
+`E7_1--E7_4`, `E7_3--E7_7`, and `E7_7--E7_2`; their normal-form coordinate
+counts are respectively `11841`, `19669`, and `16757`.  The remaining
+`E7_3--E7_6` local standard basis is deliberately expensive.  The command
+therefore provides a distinct, one-way Artinian-corner obstruction mode:
+the finite quotient `(surface,Z^34,U^34)` contains the actual `(t^17)`
+ideal and is supported at the chart origin.  Thus every true local solution
+maps to zero, while the converse is intentionally not used.
+
+```bash
+sage -python elkies-k3/scripts/probe_h92_q8_e7_node_principal_local_normal_form_modp.sage \
+  --chart E7_3--E7_6 --mode finite-corner-obstruction \
+  --output artifacts/local/elkies-k3-h92-q8-e7-3-6-corner-obstruction-mod-43.json
+```
+
+```text
+H92Q8E7NODECORNER|chart=E7_3--E7_6|prime=43|ambient=54|rows=1806|rank=54|kernel=0|status=EXPERIMENTAL_MODULAR_Q8_E7_NODE_FINITE_CORNER_OBSTRUCTION
+```
+
+The good-reduction checker verifies the corner containment and support from
+the actual resolved chart, then promotes this full-rank finite image to a
+characteristic-zero injectivity statement for true local relations in the
+fixed 54-column ambient.  Its conclusion remains one-way and does not call
+the corner the q8 node quotient.
+
+```bash
+sage -python elkies-k3/scripts/certify_h92_q8_e7_3_6_corner_obstruction_good_reduction.sage \
+  --corner artifacts/local/elkies-k3-h92-q8-e7-3-6-corner-obstruction-mod-43.json \
+  --output artifacts/generated-results/elkies-k3-h92-q8-e7-3-6-corner-obstruction-good-reduction.json
+```
+
+```text
+H92Q8E736CORNERGOODREDUCTION|prime=43|ambient=54|rank=54|kernel=0|status=PASS_EXACT_Q8_E7_3_6_CORNER_OBSTRUCTION_INJECTIVITY
+```
+
+The all-node regression combines the five actual local normal-form images
+with that sixth-chart one-way obstruction.  It records the distinction rather
+than calling the finite corner a node quotient.
+
+```bash
+sage -python elkies-k3/scripts/certify_h92_q8_all_e7_node_modular_regression.sage \
+  --node-image artifacts/local/elkies-k3-h92-q8-e7-1-4-generic-node-local-mod-43.json \
+  --node-image artifacts/local/elkies-k3-h92-q8-e7-2-5-generic-node-local-mod-43.json \
+  --node-image artifacts/local/elkies-k3-h92-q8-e7-3-6-corner-obstruction-mod-43.json \
+  --node-image artifacts/local/elkies-k3-h92-q8-e7-3-7-generic-node-local-mod-43.json \
+  --node-image artifacts/local/elkies-k3-h92-q8-e7-4-3-generic-node-local-mod-43.json \
+  --node-image artifacts/local/elkies-k3-h92-q8-e7-7-2-generic-node-local-mod-43.json \
+  --output artifacts/local/elkies-k3-h92-q8-all-e7-node-resolved-obstruction-mod-43.json
+```
+
+```text
+H92Q8ALLE7NODERESOLVED|prime=43|nodes=6|ambient=54|status=EXPERIMENTAL_MODULAR_Q8_ALL_E7_NODE_RESOLVED_OBSTRUCTION
+```
+
+These are finite-ambient modular regressions only. The characteristic-zero
+residual matrices and the overlap-compatible common kernel still need to be
+compiled.
 
 Two actual sibling-chart overlap maps are now pinned as well.  The U- and
 Z-chart pairs `E7_1--E7_4`/`E7_4--E7_3` and

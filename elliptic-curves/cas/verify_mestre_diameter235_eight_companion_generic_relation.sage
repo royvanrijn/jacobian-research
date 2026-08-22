@@ -8,10 +8,35 @@ affine sections and the relevant visible points to the covariant short
 Jacobian, and checks the relation found at the p=-294,T=2 specialization.
 """
 
-R = PolynomialRing(QQ, names=("p", "T"))
-p, T = R.gens()
-K = R.fraction_field()
-p, T = K(p), K(T)
+import json
+import sys
+
+arguments = list(sys.argv[1:])
+output = None
+if "--output" in arguments:
+    index = arguments.index("--output")
+    if index + 1 >= len(arguments):
+        raise ValueError("--output requires a path")
+    output = arguments[index + 1]
+    del arguments[index:index + 2]
+
+if len(arguments) == 2 and arguments[0] == "--specialize-p":
+    R = PolynomialRing(QQ, "T")
+    T = R.gen()
+    K = R.fraction_field()
+    p, T = K(QQ(arguments[1])), K(T)
+    specialized_p = QQ(arguments[1])
+elif not arguments:
+    RP = PolynomialRing(QQ, "p")
+    p0 = RP.gen()
+    KP = RP.fraction_field()
+    R = PolynomialRing(KP, "T")
+    T0 = R.gen()
+    K = R.fraction_field()
+    p, T = K(KP(p0)), K(T0)
+    specialized_p = None
+else:
+    raise ValueError("usage: sage $0 [--specialize-p rational-value] [--output path]")
 SX = PolynomialRing(K, "X")
 X = SX.gen()
 
@@ -33,7 +58,7 @@ def setup():
         191800563007140864, -2244816893422080, 657002839322880,
         128514275004672, -3626525084544, 276573028032, -9211864320,
         -761052280, 16418244, -1903778, 59329)) / (16 * b^3)
-    c4 = 25 * (p - 26) * (p - 6) * (p + 6) * (p + 14) * (p^2 - 12 * p + 276) * k * (7 * p^2 - 204 * p - 2628) * (29 * p^3 + 378 * p^2 + 3132 * p + 177336) * (37 * p^3 - 126 * p + 8316 * p - 269352) / (64 * b^4)
+    c4 = 25 * (p - 26) * (p - 6) * (p + 6) * (p + 14) * (p^2 - 12 * p + 276) * k * (7 * p^2 - 204 * p - 2628) * (29 * p^3 + 378 * p^2 + 3132 * p + 177336) * (37 * p^3 - 126 * p^2 + 8316 * p - 269352) / (64 * b^4)
     roots = [K.zero(), K.one(),
         8 - (p + 294) * (3 * p^3 - 314 * p^2 - 7356 * p - 161208) / (4 * b),
         k * (7 * p^2 - 204 * p - 2628) / (2 * b),
@@ -58,7 +83,11 @@ def setup():
 
 def triangular_ordinate(remainder, intercept, slope, root_d):
     substituted = remainder(intercept + slope * T) / T^2
-    f = [substituted[degree] for degree in range(7)]
+    denominator = substituted.denominator()
+    if denominator.degree() != 0:
+        raise AssertionError("the line residual is not polynomial in T")
+    polynomial = substituted.numerator() / denominator[0]
+    f = [polynomial[degree] for degree in range(7)]
     y3 = (1 - slope^2) * root_d / 2
     y2 = f[5] / (2 * y3)
     y1 = (f[4] - y2^2) / (2 * y3)
@@ -119,15 +148,38 @@ def replay():
         affine.append(covariant_point(quartic, intercept + slope * T, ordinate))
     invariant_i = 12 * quartic[4] * quartic[0] - 3 * quartic[3] * quartic[1] + quartic[2]^2
     coefficient_a = -27 * invariant_i
-    # Orientations at p=-294,T=2 turn the discovered specialization vector
-    # into this raw-covariant relation.
-    relation = (-1, 0, 1, -1, -1, 1, 0, 1, 1, 0, 1, 0)
+    visible_relations = (
+        (0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0),
+        (1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1),
+    )
+    for relation in visible_relations:
+        if signed_sum(coefficient_a, [(point, sign) for point, sign in zip(visible, relation) if sign]) is not None:
+            raise AssertionError("a generic visible relation failed")
+    # This is the direct covariant orientation at p=-294,T=2.  It is the
+    # negative of the earlier positive-ordinate vector after swapping the
+    # r4,r5 pairs into this component's split-root ordering.
+    relation = (1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0)
     left = add(coefficient_a, affine[0], affine[1])
     right = signed_sum(coefficient_a, [(point, sign) for point, sign in zip(visible, relation) if sign])
     if left != right:
         raise AssertionError("the generic diameter-235 relation failed")
-    return {"status": "exact generic relation verified", "relation_vector": list(relation)}
+    result = {
+        "status": "exact generic relation verified" if specialized_p is None else "exact p-specialized relation verified",
+        "base_field": "Q(p,T)" if specialized_p is None else "Q(T)",
+        "relation": "P1+P2=sum relation_vector[i]*V_i in the component root order",
+        "relation_vector": [int(value) for value in relation],
+        "visible_relations": [[int(value) for value in item] for item in visible_relations],
+    }
+    if specialized_p is not None:
+        result["p_specialization"] = str(specialized_p)
+        result["scope_limit"] = "this proves pair dependence on one p-fibre, not a generic relation over Q(p,T)"
+    return result
 
 
 if __name__ == "__main__":
-    print(replay())
+    rendered = json.dumps(replay(), indent=2, sort_keys=True) + "\n"
+    if output is None:
+        print(rendered, end="")
+    else:
+        with open(output, "w") as handle:
+            handle.write(rendered)

@@ -170,6 +170,33 @@ assert bounded_weierstrass_monomials(6, (0,)) == (
 assert bounded_weierstrass_monomials(2, (0,)) == (
     {"t_power": 0, "x_power": 0, "y_power": 0},
 )
+# Before any monomial space is constructed, the generic-fibre marked point
+# and vertical correction must reconstruct the actual Neron--Severi class.
+# This tiny hyperbolic test also rejects a purported vertical curve of degree
+# one against the old fibre.
+decomposition_gram = matrix(ZZ, ((0, 1), (1, 0)))
+decomposition_fibre = vector(ZZ, (1, 0))
+decomposition_zero = vector(ZZ, (-1, 1))
+decomposition_divisor = 2*decomposition_zero-decomposition_fibre
+decomposition = certify_generic_fibre_divisor_decomposition(
+    decomposition_gram, decomposition_divisor, decomposition_fibre,
+    decomposition_zero, decomposition_zero, (), fiber_twist=-1,
+    expected_old_fiber_degree=2,
+)
+assert decomposition["generic_restriction"] == {
+    "zero_section_coefficient": 1, "marked_section_coefficient": 1,
+}
+assert decomposition["reconstructed_divisor"] == tuple(decomposition_divisor)
+try:
+    certify_generic_fibre_divisor_decomposition(
+        decomposition_gram, decomposition_divisor, decomposition_fibre,
+        decomposition_zero, decomposition_zero,
+        (("not_vertical", 1, decomposition_zero),), fiber_twist=-1,
+    )
+except ValueError as error:
+    assert "vertical" in str(error)
+else:
+    raise AssertionError("positive-degree vertical support was accepted")
 assert endpoint_coefficient_interval(11, 6, 4) == {
     "denominator_power": 2, "u_power_lower": 11, "u_power_upper": 14,
 }

@@ -68,14 +68,22 @@ parser.add_argument("--clearings", type=Path, default=CLEARINGS)
 parser.add_argument("--ambient", type=Path, default=AMBIENT)
 parser.add_argument("--chart", default="E7_4--E7_3")
 parser.add_argument("--prime", type=int, default=43)
+parser.add_argument("--local-standard-basis", choices=("std", "lazard"), default="std",
+                    help="fixed ds local basis, optionally Singular's documented Lazard implementation")
+parser.add_argument("--mode", choices=("local-normal-form", "finite-corner-obstruction"),
+                    default="local-normal-form",
+                    help="exact local image, or a one-way finite Artinian obstruction")
 parser.add_argument("--output", type=Path)
 args = parser.parse_args()
 if args.prime <= 1:
     raise ValueError("prime must be greater than one")
 if args.output is None:
-    args.output = ROOT / "artifacts/generated-results/elkies-k3-h92-q8-{}-principal-node-local-normal-form-mod-{}.json".format(
-        args.chart.replace("--", "-"), args.prime
+    suffix = "local-normal-form" if args.mode == "local-normal-form" else "finite-corner-obstruction"
+    args.output = ROOT / "artifacts/generated-results/elkies-k3-h92-q8-e7-{}-principal-node-{}-mod-{}.json".format(
+        args.chart.replace("--", "-"), suffix, args.prime
     )
+for attribute in ("p1", "pullbacks", "gluing", "clearings", "ambient", "output"):
+    setattr(args, attribute, getattr(args, attribute).resolve())
 
 p1 = json.loads(args.p1.read_text())
 pullbacks = json.loads(args.pullbacks.read_text())
@@ -207,10 +215,29 @@ def common_cleared_numerator(entry):
     return answer
 
 
-singular.eval("ring q8node={},(Z,U,Y),ds;".format(args.prime))
+if args.mode == "local-normal-form":
+    singular.eval("ring q8node={},(Z,U,Y),ds;".format(args.prime))
+else:
+    # This quotient is Artinian and supported at the chart origin, so every
+    # local unit is invertible in it.  A global degree order is therefore a
+    # correct finite representation of this *one-way* local obstruction.
+    singular.eval("ring q8node={},(Z,U,Y),dp;".format(args.prime))
 singular.eval("poly surface={};".format(surface))
-singular.eval("ideal principal=surface,({})^{};".format(t_monomial, T))
-singular.eval("ideal standard_principal=std(principal);")
+if args.mode == "local-normal-form":
+    singular.eval("ideal principal=surface,({})^{};".format(t_monomial, T))
+    if args.local_standard_basis == "std":
+        singular.eval("ideal standard_principal=std(principal);")
+    else:
+        singular.eval('LIB "teachstd.lib";')
+        singular.eval("ideal standard_principal=localstd(principal);")
+else:
+    assert surface(0, 0, Y) == Y**2
+    corner_generators = [
+        "Z^{}".format(T*t_exponents[0]),
+        "U^{}".format(T*t_exponents[1]),
+    ]
+    singular.eval("ideal principal=surface,{};".format(",".join(corner_generators)))
+    singular.eval("ideal standard_principal=std(principal);")
 
 remainders = []
 for entry in ambient["ambient_basis"]:
@@ -221,8 +248,12 @@ for entry in ambient["ambient_basis"]:
     assert ring(singular("reduce(remainder,standard_principal)").sage()) == remainder
     remainders.append(remainder)
 
+condition_kind = (
+    "principal local-normal-form image" if args.mode == "local-normal-form"
+    else "principal finite-corner obstruction image"
+)
 image = finite_ambient_image_condition(
-    "actual {} principal local-normal-form image".format(args.chart),
+    "actual {} {}".format(args.chart, condition_kind),
     tuple(range(len(remainders))),
     lambda index: {tuple(monomial): coefficient for monomial, coefficient in remainders[index].dict().items()},
     lambda monomial: monomial,
@@ -232,9 +263,18 @@ image = finite_ambient_image_condition(
 matrix = image["matrix"]
 monomials = image["coordinate_keys"]
 monomial_index = {monomial: index for index, monomial in enumerate(monomials)}
+status = (
+    "EXPERIMENTAL_MODULAR_Q8_E7_NODE_LOCAL_NORMAL_FORM_BLOCK"
+    if args.mode == "local-normal-form"
+    else "EXPERIMENTAL_MODULAR_Q8_E7_NODE_FINITE_CORNER_OBSTRUCTION"
+)
 payload = {
-    "schema": "elkies-k3.h92-q8-e7-node-principal-local-normal-form-modp.v1",
-    "status": "EXPERIMENTAL_MODULAR_Q8_E7_NODE_LOCAL_NORMAL_FORM_BLOCK",
+    "schema": (
+        "elkies-k3.h92-q8-e7-node-principal-local-normal-form-modp.v1"
+        if args.mode == "local-normal-form"
+        else "elkies-k3.h92-q8-e7-node-principal-finite-corner-obstruction-modp.v1"
+    ),
+    "status": status,
     "prime": args.prime,
     "inputs": {
         "checker_source": {"path": str(Path(__file__).relative_to(ROOT)), "sha256": digest(Path(__file__))},
@@ -247,10 +287,38 @@ payload = {
     },
     "local_ring": {
         "chart": args.chart,
-        "order": "Singular ds local degree order at (Z,U,Y)",
+        "order": (
+            "Singular ds local degree order at (Z,U,Y)"
+            if args.mode == "local-normal-form"
+            else "Singular dp degree order for the Artinian corner quotient"
+        ),
+        "standard_basis": args.local_standard_basis if args.mode == "local-normal-form" else "std",
         "surface_equation": str(surface),
-        "principal_ideal": "(surface,({})^{})".format(t_monomial, T),
+        "principal_ideal": (
+            "(surface,({})^{})".format(t_monomial, T)
+            if args.mode == "local-normal-form"
+            else "(surface,Z^{},U^{})".format(T*t_exponents[0], T*t_exponents[1])
+        ),
         "t_is_monomial_times_unit": True,
+    },
+    "good_reduction": {
+        "all_input_coefficient_denominators_nonzero": True,
+        "common_clearing_unit_residues": {
+            "A": int(A(0, 0, 0)),
+            "r_den": int(R_den(0, 0, 0)),
+            "s_den": int(S_den(0, 0, 0)),
+            "h_reverse": int(H_reverse(0, 0, 0)),
+        },
+        "argument": (
+            "The displayed common-clearing factors are chart units after "
+            "reduction, so a primitive characteristic-zero local relation "
+            "reduces to this finite ambient image."
+            if args.mode == "local-normal-form" else
+            "The displayed common-clearing factors are chart units after "
+            "reduction. The Artinian corner contains (t^T) and is supported "
+            "at the chart origin, so a primitive characteristic-zero local "
+            "relation reduces to this one-way obstruction image."
+        ),
     },
     "finite_ambient_image": {
         "ambient_dimension": len(remainders), "rows": len(monomials),
@@ -265,15 +333,22 @@ payload = {
         "This is one modular chart image in the infinite local quotient. It "
         "does not certify a characteristic-zero q8 matrix, overlap gluing, "
         "a common q8 kernel, h0(D), a pencil, or a child equation."
+        if args.mode == "local-normal-form" else
+        "This is a one-way finite obstruction only. Since t^T belongs to the "
+        "displayed Artinian corner ideal and that quotient is supported at the "
+        "chart origin, every actual local solution maps to zero here. The "
+        "converse is not claimed; this is not a finite presentation of the "
+        "node condition or a characteristic-zero q8 matrix."
     ),
 }
 args.output.parent.mkdir(parents=True, exist_ok=True)
 args.output.write_text(json.dumps(payload, indent=2, sort_keys=True)+"\n")
+label = "H92Q8E7NODELOCALNF" if args.mode == "local-normal-form" else "H92Q8E7NODECORNER"
 print(
-    "H92Q8E7NODELOCALNF|chart={}|prime={}|ambient={}|rows={}|rank={}|kernel={}|"
-    "status=EXPERIMENTAL_MODULAR_Q8_E7_NODE_LOCAL_NORMAL_FORM_BLOCK".format(
+    "{}|chart={}|prime={}|ambient={}|rows={}|rank={}|kernel={}|status={}".format(
+        label,
         args.chart, args.prime, len(remainders), len(monomials), matrix.rank(),
-        matrix.right_kernel().dimension(),
+        matrix.right_kernel().dimension(), status,
     ),
     flush=True,
 )
