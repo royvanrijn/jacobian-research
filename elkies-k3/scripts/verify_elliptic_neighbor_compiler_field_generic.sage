@@ -3,13 +3,12 @@
 
 from pathlib import Path
 
-from sage.all import PolynomialRing, QQ, QuadraticField, matrix, vector
+from sage.all import PolynomialRing, QQ, QuadraticField, matrix
 
 HERE = Path(__file__).resolve().parent
 load(str(HERE / "elliptic_neighbor_compiler_field_generic.sage"))
 
 K = QuadraticField(-3, "j")
-j = K.gen()
 ambient = ("a", "b", "c", "d")
 
 images = {
@@ -26,9 +25,9 @@ block = quotient_condition(
     "number-field regression",
     coefficient_field=K,
 )
-assert block["matrix"].base_ring() is K
+assert block["matrix"].base_ring() == K
 compiled = compile_resolved_conditions(ambient, (block,), complete=True)
-assert compiled["condition_matrix"].base_ring() is K
+assert compiled["condition_matrix"].base_ring() == K
 assert compiled["rank"] == 2
 assert compiled["kernel_dimension"] == 2
 assert compiled["h0_certified"]
@@ -41,7 +40,7 @@ qq_block = {
     "provenance": "QQ compatibility regression",
 }
 mixed = compile_resolved_conditions(ambient, (qq_block, block), complete=True)
-assert mixed["condition_matrix"].base_ring() is K
+assert mixed["condition_matrix"].base_ring() == K
 assert mixed["rank"] == 2
 assert mixed["kernel_dimension"] == 2
 
@@ -57,12 +56,12 @@ resolved = resolved_chart_quotient_condition(
     (R(1), t),
     "univariate K[t]/(t^2) regression",
 )
-assert resolved["matrix"].base_ring() is K
+assert resolved["matrix"].base_ring() == K
 assert resolved["matrix"].rank() == 2
 resolved_compiled = compile_resolved_conditions(
     (R(1), t, t**2), (resolved,), complete=False
 )
-assert resolved_compiled["condition_matrix"].base_ring() is K
+assert resolved_compiled["condition_matrix"].base_ring() == K
 assert resolved_compiled["rank"] == 2
 assert resolved_compiled["kernel_dimension"] == 1
 
@@ -74,9 +73,9 @@ qq_default = quotient_condition(
     ("r",),
     "default-field regression",
 )
-assert qq_default["matrix"].base_ring() is QQ
+assert qq_default["matrix"].base_ring() == QQ
 qq_compiled = compile_resolved_conditions(("x", "y"), (qq_default,))
-assert qq_compiled["condition_matrix"].base_ring() is QQ
+assert qq_compiled["condition_matrix"].base_ring() == QQ
 
 print(
     "ELLIPTICNEIGHBORFIELD|K_rank=2|K_nullity=2|mixed_field=K|"
