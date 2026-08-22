@@ -1,0 +1,25 @@
+# Q80 low-q q6_7774 CM24 equation certificate over GF(73)
+# Certified 2026-08-22 by exact rank-18 CM24 lattice prediction and connected-A6 quotient-line scan.
+# Generic move: A6+A3/MW8 --q6(2,3)--> A4+A2+A1/MW10
+# CM24 special child: A5+2A4+2A1/MW3
+# root data: rank=15 roots=74 root_det=600
+#
+# Special horizontal: old pinned P3, P.O=0, height=8/7.
+# Special divisor: D.F=2, D.O=0, fibre_twist=2.
+# Vertical support: one A1 coefficient -1 and one A6 coefficients (-1,0,0,-1,-1,-1).
+# Connected-A6 quotient-line representative:
+# sign=+1, I7=6, I2=5, c7=58, c2=62, a(V)=4V+64.
+# m = T*(V-6)*(V-5) - (4V+64).
+# Four symmetry-related target hits were found:
+# (+1,6,5,58), (+1,53,56,14), (-1,6,5,15), (-1,53,56,59).
+
+A(T) = 46*T^8 + 5*T^7 + 16*T^6 + 44*T^5 + 6*T^4 + 13*T^3 + T^2 + T
+B(T) = 54*T^12 + 58*T^11 + 48*T^10 + 16*T^9 + 42*T^8 + 67*T^7 + 25*T^6 + 19*T^5 + 27*T^4 + 45*T^3 + 61*T^2 + 44*T + 49
+
+# Reducible fibres:
+# I2 at T=46
+# I2 at T=47
+# I5 at T=14
+# I5 at T=42
+# I6 at infinity
+# remaining discriminant factors simple
