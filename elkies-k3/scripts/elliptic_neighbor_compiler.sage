@@ -424,7 +424,10 @@ def evaluate_marked_point_dag(expression, named_points, add, negate, scalar):
     raise ValueError("unsupported marked-point operation {}".format(operation))
 
 
-def quotient_condition(name, ambient_basis, evaluator, quotient_basis, provenance):
+def quotient_condition(
+    name, ambient_basis, evaluator, quotient_basis, provenance,
+    coefficient_field=QQ,
+):
     """Build one exact chart-condition block.
 
     ``evaluator`` maps one ambient element to coordinates in the specified
@@ -434,13 +437,14 @@ def quotient_condition(name, ambient_basis, evaluator, quotient_basis, provenanc
     quotient_basis = tuple(quotient_basis)
     columns = []
     for basis_element in ambient_basis:
-        residue = vector(QQ, evaluator(basis_element))
+        residue = vector(coefficient_field, evaluator(basis_element))
         if len(residue) != len(quotient_basis):
             raise ValueError("{} returned a residue of the wrong length".format(name))
         columns.append(residue)
     return {
         "name": str(name),
-        "matrix": matrix(QQ, columns).transpose(),
+        "matrix": matrix(coefficient_field, columns).transpose(),
+        "coefficient_field": coefficient_field,
         "quotient_basis": tuple(map(str, quotient_basis)),
         "provenance": str(provenance),
     }
@@ -625,7 +629,7 @@ def resolved_chart_quotient_condition(
     def evaluator(basis_element):
         remainder = normal_form(trivialized_pullback(basis_element))
         coordinates = vector(
-            QQ,
+            local_ring.base_ring(),
             tuple(
                 remainder.monomial_coefficient(monomial)
                 for monomial in quotient_basis
@@ -647,6 +651,7 @@ def resolved_chart_quotient_condition(
         evaluator,
         quotient_basis,
         provenance,
+        coefficient_field=local_ring.base_ring(),
     )
 
 
@@ -816,7 +821,8 @@ def compile_resolved_chart_cover(
 
 
 def compile_resolved_conditions(
-    ambient_basis, condition_blocks, complete=False, compute_kernel=True
+    ambient_basis, condition_blocks, complete=False, compute_kernel=True,
+    coefficient_field=None,
 ):
     """Stack exact local conditions and return rank/codimension/kernel data.
 
@@ -836,9 +842,29 @@ def compile_resolved_conditions(
     for block in blocks:
         if block["matrix"].ncols() != width:
             raise ValueError("condition block {} has incompatible width".format(block["name"]))
-    condition_matrix = matrix(QQ, 0, width)
+
+    # Preserve the historical QQ behavior while allowing exact number-field
+    # and finite-field condition modules.
+    if coefficient_field is None:
+        coefficient_field = QQ
+        for block in blocks:
+            block_field = block["matrix"].base_ring()
+            if coefficient_field.has_coerce_map_from(block_field):
+                continue
+            if block_field.has_coerce_map_from(coefficient_field):
+                coefficient_field = block_field
+                continue
+            raise ValueError(
+                "condition blocks have incompatible coefficient fields {} and {}".format(
+                    coefficient_field, block_field
+                )
+            )
+
+    condition_matrix = matrix(coefficient_field, 0, width)
     for block in blocks:
-        condition_matrix = condition_matrix.stack(block["matrix"])
+        condition_matrix = condition_matrix.stack(
+            matrix(coefficient_field, block["matrix"])
+        )
     rank = condition_matrix.rank()
     nullity = width-rank
     kernel_basis = None
@@ -853,8 +879,11 @@ def compile_resolved_conditions(
             column for column in range(width) if column not in zero_columns
         )
         coordinate_kernel = matrix(
-            QQ, len(zero_columns), width,
-            lambda row, column: QQ(1) if column == zero_columns[row] else QQ(0),
+            coefficient_field, len(zero_columns), width,
+            lambda row, column: (
+                coefficient_field(1)
+                if column == zero_columns[row] else coefficient_field(0)
+            ),
         )
         active_nullity = len(active_columns)-rank
         if active_nullity < 0:
@@ -868,15 +897,19 @@ def compile_resolved_conditions(
             if active_kernel.dimension() != active_nullity:
                 raise ArithmeticError("active rank and right-kernel dimensions disagree")
             lifted_kernel = matrix(
-                QQ, active_kernel.dimension(), width,
+                coefficient_field, active_kernel.dimension(), width,
                 lambda row, column: (
                     active_kernel.basis_matrix()[row, active_columns.index(column)]
-                    if column in active_columns else QQ(0)
+                    if column in active_columns else coefficient_field(0)
                 ),
             )
             kernel_basis = coordinate_kernel.stack(lifted_kernel)
             kernel_materialization = "zero_columns_plus_reduced_right_kernel"
-        if kernel_basis.nrows() != nullity or condition_matrix*kernel_basis.transpose() != matrix(QQ, condition_matrix.nrows(), nullity):
+        if (
+            kernel_basis.nrows() != nullity
+            or condition_matrix*kernel_basis.transpose()
+            != matrix(coefficient_field, condition_matrix.nrows(), nullity)
+        ):
             raise ArithmeticError("materialized kernel does not match the exact condition matrix")
     return {
         "ambient_dimension": width,
@@ -886,6 +919,7 @@ def compile_resolved_conditions(
         "kernel_dimension": nullity,
         "kernel_basis": kernel_basis,
         "kernel_materialization": kernel_materialization,
+        "coefficient_field": coefficient_field,
         "complete_resolved_chart_cover": bool(complete),
         "h0_certified": bool(complete and nullity == 2),
         "condition_matrix": condition_matrix,
