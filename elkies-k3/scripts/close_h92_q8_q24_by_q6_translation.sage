@@ -85,8 +85,9 @@ finally:
 
 need = (
     "ns", "F6", "Oold", "Ostd", "Smarked", "S3std",
-    "F8eq", "physical", "selected", "isotropic_mate", "roots_and_data",
-    "section_from_old_mw",
+    "F8eq", "physical", "physical_raw", "selected",
+    "isotropic_mate", "roots_and_data",
+    "section_from_old_mw", "weyl_transport",
 )
 missing = [name for name in need if name not in scope]
 if missing:
@@ -99,24 +100,40 @@ Ostd = vector(ZZ, scope["Ostd"])
 Smarked = vector(ZZ, scope["Smarked"])
 S3std = vector(ZZ, scope["S3std"])
 F8eq = vector(ZZ, scope["F8eq"])
+# The q8 certifier distinguishes the tracked raw component-nef target from
+# the same fibre after the 22 q6 Weyl reflections.
+F8physical_raw = vector(ZZ, scope["physical_raw"])
 F8physical = vector(ZZ, scope["physical"])
 selected = scope["selected"]
 isotropic_mate = scope["isotropic_mate"]
 roots_and_data = scope["roots_and_data"]
 section_from_old_mw = scope["section_from_old_mw"]
+weyl_transport = scope["weyl_transport"]
 
 old24 = json.loads(OLDQ24.read_text())
 assert old24["status"] == "PASS_EXACT_Q24_EFFECTIVE_ZERO_CHOICES"
 assert old24["transport"]["target_endpoint_match"] is True
-D24physical = vector(ZZ, old24["transport"]["q24_divisor_source_h3_ns"])
+# The effective-zero producer stores D_actual in the RAW component-nef
+# q6/H3 frame, paired with target["selected_q8"]["source_h3_ns_vector"].
+# The equation certifier's `physical` fibre has ALREADY passed through the
+# 22 q6 Weyl reflections. Transport the q24 divisor through the identical
+# Weyl isometry before comparing it to F8physical.
+D24raw = vector(ZZ, old24["transport"]["q24_divisor_source_h3_ns"])
 
-physical_degree = ZZ(D24physical * ns * F8physical)
+raw_square = ZZ(D24raw * ns * D24raw)
+raw_degree = ZZ(D24raw * ns * F8physical_raw)
+assert raw_square == 0
+assert raw_degree == 2
+
+D24physical = vector(ZZ, weyl_transport(D24raw))
 physical_square = ZZ(D24physical * ns * D24physical)
+physical_degree = ZZ(D24physical * ns * F8physical)
+
 print(
     "Q8Q24TRANS_INPUT|"
-    f"D_square={physical_square}|"
-    f"D_degree_on_current_physical_F8={physical_degree}|"
-    f"same_target_artifact=1|"
+    f"raw_square={raw_square}|raw_degree={raw_degree}|"
+    f"weyl_square={physical_square}|weyl_degree={physical_degree}|"
+    "path=q6_weyl_then_translation|same_target_artifact=1|"
     f"status={'PASS' if physical_square==0 and physical_degree==2 else 'MISMATCH'}",
     flush=True,
 )
@@ -525,6 +542,8 @@ payload = {
         "translation_match":True,
     },
     "q24_equation":{
+        "raw_component_nef_divisor_source_h3_ns":list(map(int,D24raw)),
+        "physical_weyl_divisor_source_h3_ns":list(map(int,D24physical)),
         "physical_divisor_source_h3_ns":list(map(int,D24physical)),
         "equation_divisor_source_h3_ns":list(map(int,D24eq)),
         "child_root_data":list(map(int,root24)),
