@@ -15,3 +15,14 @@ Status: **PASS_EXACT_Q80_FINAL_Q6_CHILD**
 - Euler number: `24`.
 
 This is the characteristic-zero CM24 specialization of the separately certified generic final neighbour `A1/MW16 -> rootless/MW17`.
+
+Reproduce the terminal chain from the repository root with
+
+```bash
+sage elkies-k3/scripts/trace_q80_candidate1_marked_transport.sage
+sage elkies-k3/scripts/recover_q80_final_q6_via_basis_sections.sage
+sage elkies-k3/scripts/certify_q80_final_q6_char0_rr_from_basis.sage
+sage elkies-k3/scripts/compile_q80_final_q6_char0_child.sage
+```
+
+The final child model is `q80_char0_final_q6_child.sage` in this directory. For the reconstruction history, modular-regression boundary, and superseded direct-Hensel approaches, see [`../../../Q80_FINAL_Q6_CLOSEOUT_2026-08-23.md`](../../../Q80_FINAL_Q6_CLOSEOUT_2026-08-23.md).
