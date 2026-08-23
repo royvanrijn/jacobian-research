@@ -4,6 +4,16 @@ This note defines the exact lattice gate for the proposed generic-rank-19
 search. It does **not** claim a new elliptic surface, a quadratic base change,
 or generic rank 19.
 
+> **Current-chain warning (2026-08-23).** The canonical H3 entrance is
+> `E7+E8/MW2 --q6--> E8+E6/MW3 --q8--> D13/MW4`; the q8 section has height
+> `24`, collision degree `10`, and uses the full normalization
+> `R*h*Dy == Ny*Dx mod Nx`. The later lattice/chamber chain reaches
+> rootless/MW17 through eleven further nef degree-two neighbours, but those
+> eleven equations have not been executed over characteristic zero. The
+> degree-46 child-section and no-`Dx` q-normalizer calculations later in this
+> note are historical diagnostics only. The authoritative repair ledger is
+> [`H3_Q8_REAUDIT_2026-08-22.md`](H3_Q8_REAUDIT_2026-08-22.md).
+
 ## Lattice reduction
 
 Let the exact rootless Mordell--Weil frame be `M`, stored in
@@ -359,40 +369,32 @@ sage -python elkies-k3/scripts/certify_h92_q8_enlarged_endpoint_e8_cover.sage \
 
 ### Exact degree-two marking on the q=6 child
 
-The same selected `q=8` lattice class has a much smaller generic marking on
-the exact `E8+E6/MW3` q=6-child Jacobian.  With the transported old-zero as
-origin, the transported old `E7_7` and affine-`E7` components have relative
-MW coordinates `(-1,0,0)` and `(0,-1,0)`, respectively.  The selected q8
-class projects to `(0,-2,0)` at the canonical q6 zero, while the transported
-old zero has relative coordinate `(1,0,0)` there.  Because this is a
-degree-two divisor, the zero translation is doubled.  Its generic divisor at
-the explicit child zero is therefore
+The binary-quartic covariant used here is already the degree-two covering map
+to the child Jacobian.  If `Pmap` and `Qmap` are the transported covariant
+differences of the old `E7_7` and affine-`E7` components, the primitive marked
+section is therefore
 
 ```text
-O + 2*(E7_7-old_zero) + 2*(E7_7-affine_E7).
+S = Pmap + Qmap,
+MW(S) = (-2,-2,0).
 ```
 
-After translating to the standard child-Jacobian origin and writing
-`S = 2*(E7_7-old_zero)+2*(E7_7-affine_E7)`, the generic Riemann--Roch space is exactly
-`<1,m>`, where `m=(y+y(S))/(x-x(S))`; the checker records the monic quadratic
-relation for `x` over `QQ(T)(m)`.  This is a marking only.  It does not yet
-identify which resolved II*/IV* components the divisor meets, so it does not
-supply their finite local modules or a q=8 pencil.  Its first exact local
-jet is now known: `S` is smooth at II*, while at IV* it has Weierstrass
-orders `(0,0)`.  Thus it is already smooth at both II* and IV*; the former
-depth-two IV* branch belonged to the incorrectly normalized section.
-There is an additional smooth-fibre gate: the `x` and `y` denominators are
-the square and cube of one degree-46 divisor (irreducible degrees `1,9,36`),
-coprime to the Weierstrass discriminant.  Thus `S` collides with the standard
-zero at 46 smooth closed base points; their finite jets must be included in a
-global q=8 pencil and cannot be ignored by using the generic chord alone.
+It has height `24`, meets the standard zero in degree `10`, and has `x` and
+`y` denominators equal to the square and cube of the same reduced degree-ten
+smooth collision divisor.  The formerly used section is exactly `2*S`; its
+height `96` and degree-46 collision divisor explain the obsolete downstream
+modules archived below.  The primitive divisor is `O+S`, with exact generic
+Riemann--Roch basis `<1,m>`, `m=(y+y(S))/(x-x(S))`, and the checker records the
+monic quadratic relation for `x` over `QQ(T)(m)`.  The complete corrected
+pencil and its `D13/MW4` child are certified by the later characteristic-zero
+checker; this subsection records only the marking identity.
 
 ```bash
 sage -python elkies-k3/scripts/derive_h92_q6_child_q8_marking.sage \
   --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-marking.json
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-MARKING 96fe2161f692f57d -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-MARKING 745bf011cb47e7f3 -->
 
 ### Physical E8+E6 component target
 
@@ -544,7 +546,7 @@ sage -python elkies-k3/scripts/derive_h92_q6_child_q8_ivstar_vertical_ideal.sage
   --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-ivstar-vertical-ideal.json
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-IVSTAR-VERTICAL-IDEAL-PAIR e2cdaa42791c3120 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-IVSTAR-VERTICAL-IDEAL-PAIR 4300b94b65dabc64 -->
 
 The arm is now oriented by the transported old `E7_7` section.  Its source NS
 class meets physical E6 root five, and its exact IV* jet has
@@ -564,7 +566,7 @@ sage -python elkies-k3/scripts/derive_h92_q6_child_q8_ivstar_orientation.sage \
   --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-ivstar-orientation.json
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-IVSTAR-ORIENTATION 13eae37cfe412e2b -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-IVSTAR-ORIENTATION 4e931cdcb76201c3 -->
 
 ### Additive chord blocks
 
@@ -583,7 +585,7 @@ sage -python elkies-k3/scripts/derive_h92_q6_child_q8_additive_chord_blocks.sage
   --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-additive-chord-blocks.json
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-ADDITIVE-CHORD-BLOCKS 2b6ca15eef42c3b8 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-ADDITIVE-CHORD-BLOCKS bf6fc5b74f51fc0f -->
 
 ### Saturated global-ansatz reconnaissance
 
@@ -602,7 +604,7 @@ sage -python elkies-k3/scripts/probe_h92_q6_child_q8_saturated_ansatz.sage \
   --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-saturated-ansatz-probe.json
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-SATURATED-ANSATZ-PROBE 17dbbe0e9c60e4fe -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-SATURATED-ANSATZ-PROBE cdcfe4ca7989839d -->
 
 ### Branch screen of the saturated candidate pencil
 
@@ -622,7 +624,7 @@ sage -python elkies-k3/scripts/probe_h92_q6_child_q8_saturated_pencil_modp.sage 
 sage -python elkies-k3/scripts/probe_h92_q6_child_q8_saturated_pencil_modp.sage --prime 59
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-SATURATED-PENCIL-OBSTRUCTION a0130a38d4d50617 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-SATURATED-PENCIL-OBSTRUCTION 5a4beade3e2caff1 -->
 
 ### Complete finite coefficient module (modular)
 
@@ -640,7 +642,7 @@ sage -python elkies-k3/scripts/probe_h92_q6_child_q8_finite_module_modp.sage --p
 sage -python elkies-k3/scripts/probe_h92_q6_child_q8_finite_module_modp.sage --prime 59
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-FINITE-MODULE-MODULAR b385dff76d3de7f3 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-FINITE-MODULE-MODULAR 78fc7f298da9eaf6 -->
 
 ### Complete finite coefficient module (exact q frame)
 
@@ -669,7 +671,7 @@ condition.
 sage elkies-k3/scripts/derive_h92_q6_child_q8_finite_q_module_qq.sage
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-FINITE-Q-MODULE-QQ 0f92a696bd388284 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-FINITE-Q-MODULE-QQ 83452e0f702d6d9a -->
 
 The q-frame has a separate exact global pole profile.  Writing
 `x(S)=Nx/Dx` and `y(S)=Ny/Dy`, clearing the chord shows that its generic
@@ -684,7 +686,7 @@ valid.
 sage elkies-k3/scripts/derive_h92_q6_child_q8_q_pole_profile.sage
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-FRAME-POLE-PROFILE 630fc1a6919245a6 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-FRAME-POLE-PROFILE 3685b882ed19702a -->
 
 Modulo `43` and `59`, the unique base principal-part correction
 `R=Ny*(h*Dy)^(-1) mod Nx` has degree `95`; it cancels the degree-96 pole
@@ -697,7 +699,7 @@ sage elkies-k3/scripts/probe_h92_q6_child_q8_q_pole_normalization_modp.sage --pr
 sage elkies-k3/scripts/probe_h92_q6_child_q8_q_pole_normalization_modp.sage --prime 59
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-FRAME-NORMALIZATION-MODULAR 014b3fa1ce2ee000 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-FRAME-NORMALIZATION-MODULAR 6bd8f54f7e8887a9 -->
 
 The remaining exact normalization may be computed by deterministic CRT rather
 than raw rational extended Euclid.  It uses 31-bit good primes and can save a
@@ -730,7 +732,7 @@ sage -python elkies-k3/scripts/reconstruct_h92_q6_child_q8_q_pole_normalization_
 The resulting artifact is
 [`../artifacts/generated-results/elkies-k3-h92-q6-child-q8-q-pole-normalization-crt.json`](../artifacts/generated-results/elkies-k3-h92-q6-child-q8-q-pole-normalization-crt.json).
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-FRAME-NORMALIZATION-CRT 6897f3bf4c77916b -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-FRAME-NORMALIZATION-CRT 6f6a4e097d4bddd5 -->
 
 Subtracting this correction produces the globally base-regular frame
 `q_regular=q-R/Nx`.  The checker expands it with the `Nx` factor cancelled,
@@ -742,7 +744,7 @@ smooth q8 modules must still be transformed and assembled separately.
 sage -python elkies-k3/scripts/certify_h92_q6_child_q8_q_regular_frame.sage
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-FRAME a5653fc9b19d383d -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-FRAME 1cead360048f47f6 -->
 
 The complete finite II*/IV* condition transports exactly to this frame.  In
 `(B,C)` coordinates for `C+B*q_regular`, it is generated by
@@ -760,7 +762,7 @@ impose the smooth/resolved q8 conditions needed for a pencil.
 sage -python elkies-k3/scripts/derive_h92_q6_child_q8_q_regular_finite_module_qq.sage
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-FINITE-MODULE c3cf25526f88a738 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-FINITE-MODULE 794f629d93420ed4 -->
 
 The degree-46 smooth collision module imposes no further row in the same
 frame.  Locally at `h`, write `p=N/(h*D)`.  The exact transition from
@@ -774,7 +776,7 @@ only the finite additive and infinity modules remain to be assembled.
 sage -python elkies-k3/scripts/certify_h92_q6_child_q8_q_regular_smooth_frame.sage
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-SMOOTH-FRAME 347facd34f447b47 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-SMOOTH-FRAME b394a23706a914ce -->
 
 The ratio of these two canonical normalized generators is also not the
 pencil.  At every constant level over both `GF(43)` and `GF(59)`, its
@@ -792,7 +794,7 @@ sage -python elkies-k3/scripts/probe_h92_q6_child_q8_q_regular_generator_modp.sa
   --prime 59 --max-a-monomial-degree 4 --max-b-monomial-degree 4
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-GENERATOR-OBSTRUCTION 1ff6ca93c1f415bc -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-GENERATOR-OBSTRUCTION 487f98d8a254b683 -->
 
 The diagonal finite basis alone does not solve the infinity problem. Its
 most direct ratio would be
@@ -810,7 +812,7 @@ rejected; an actual pencil must use a nontrivial infinity normalization.
 sage elkies-k3/scripts/probe_h92_q6_child_q8_diagonal_candidate_modp.sage --prime 43 --v 1
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-DIAGONAL-PENCIL-OBSTRUCTION 95d5cca4502539a6 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-DIAGONAL-PENCIL-OBSTRUCTION ec76cc0097b76a4c -->
 
 ### Smooth zero-collision module
 
@@ -839,7 +841,7 @@ sage -python elkies-k3/scripts/derive_h92_q6_child_q8_smooth_collision_module.sa
   --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-smooth-collision-module.json
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-SMOOTH-MODULE 7bdad5b12acfce5c -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-SMOOTH-MODULE 559fade7fa0cb618 -->
 
 ### Superseded IV* branch calculations
 

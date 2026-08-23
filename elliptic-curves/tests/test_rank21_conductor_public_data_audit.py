@@ -3,7 +3,6 @@ from __future__ import annotations
 from hashlib import sha256
 import json
 from pathlib import Path
-import platform
 import sys
 import unittest
 
@@ -51,7 +50,10 @@ class Rank21ConductorPublicDataAuditTests(unittest.TestCase):
         self.assertTrue(
             report["reproduction"]["all_source_hashes_verified_before_write"]
         )
-        self.assertEqual(report["software"]["python"], platform.python_version())
+        # This is a pinned 2026-08-14 source snapshot, not a rolling artifact.
+        # Requiring the recorded interpreter to equal the current environment
+        # makes an unchanged historical audit fail after every Python update.
+        self.assertEqual(report["software"]["python"], "3.14.6")
         self.assertEqual(report["software"]["pypdf"], pypdf.__version__)
         self.assertRegex(report["software"]["pari_gp"], r"^\[\d+, \d+, \d+\]$")
 

@@ -172,16 +172,20 @@ section.  The exact normalization and non-CM anchor are replayed by
 and
 [`scripts/verify_h3_noncm_q6_source_anchor.sage`](scripts/verify_h3_noncm_q6_source_anchor.sage).
 
-The lattice/chamber continuation from H3 is already exact through MW rank ten:
+The lattice/chamber continuation from H3 is exact through rootless MW rank
+seventeen:
 
 ```text
 H3 E8+E7/MW2 --q6--> E8+E6/MW3 --q8--> D13/MW4
  --q24--> D12/MW5 --q6--> A11/MW6 --q8--> 2A5/MW7
- --q4--> 3A3/MW8 --q4--> A3+2A2/MW10.
+ --q4--> 3A3/MW8 --q4--> A3+2A2/MW10
+ --q4--> 5A1/MW12 --q4--> 4A1/MW13 --q4--> 3A1/MW14
+ --q4--> 2A1/MW15 --q4--> A1/MW16 --q6--> rootless/MW17.
 ```
 
-Every selected arrow is a nef degree-two pencil.  Equation-level execution in
-characteristic zero and a suffix from MW10 to rootless MW17 remain open.
+Every selected arrow is a certified nef degree-two pencil. Equation-level
+execution in characteristic zero beyond the exact D13/MW4 child remains open;
+the MW10-to-rootless suffix is no longer an open lattice or chamber gate.
 
 For the parallel H2 comparison, there are three exact CM interpolation
 anchors.  The

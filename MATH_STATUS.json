@@ -32586,7 +32586,7 @@
       "kind": "example",
       "state": "partial",
       "title": "Exact degree-two q8 marking on the H3 q6 child",
-      "scope": "On the exact H92 E8+E6/MW3 q6-child Jacobian, the transported old E7_7 and affine-E7 components are exact points with relative Shioda coordinates (-1,0,0) and (0,-1,0). The selected q8-to-D13/MW4 lattice orbit has coordinate (0,-2,0) at the canonical q6 zero. Since it is a degree-two divisor, translating to the transported old zero doubles that zero shift: direct projection of the exact q8 NS fibre gives the actual marked-section coordinate (-2,-2,0), namely 2*(E7_7-old_zero)+2*(E7_7-affine_E7). Its generic divisor is O+S with basis (1,m), m=(y+y(S))/(x-x(S)), and a monic quadratic relation for x over QQ(T)(m). The x and y denominators are square and cube powers of the same reduced degree-46 divisor, with irreducible degrees 1,9,36, coprime to the Weierstrass discriminant; z=-x/y is reduced there, so S meets the standard zero transversely at 46 smooth closed points. The exact section is smooth at both II* and IV*. Its exact NS class and the vertical decomposition q8_fibre=old_zero+S+V are exported in a pinned fibre-plus-root basis. This pins the corrected generic marking and global vertical target only; it does not derive finite additive modules, a global pencil or D13 equation, a rootless bisection, an extension collision, or generic rank 18 or 19.",
+      "scope": "On the exact H92 E8+E6/MW3 q6-child Jacobian, the transported old E7_7 and affine-E7 components give covariant differences Pmap and Qmap. The binary-quartic covariant is already the degree-two covering map to the Jacobian, so the primitive q8 section is S=Pmap+Qmap, not the withdrawn 2Pmap+2Qmap. The corrected section has Mordell--Weil coordinate (-2,-2,0), height 24, zero intersection ten, and a reduced degree-ten smooth collision divisor. Its x and y denominators are square and cube powers of that same divisor, it specializes smoothly to the identity component at both II* and IV*, and the withdrawn section is exactly 2S with height 96 and collision degree 46. Its generic divisor O+S has the exact chord basis (1,m). This pins the corrected generic marking; the complete pencil and D13/MW4 child are certified separately by EC-K3-H3-Q8-QQ-D13.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
         "EC-K3-H3-Q6",
@@ -32680,8 +32680,8 @@
     {
       "id": "EC-K3-H3-Q8-CHILD-IVSTAR-VERTICAL-IDEAL-PAIR",
       "kind": "example",
-      "state": "partial",
-      "title": "Exact conjugate pair of IV* vertical ideals for the corrected child q8 divisor",
+      "state": "archived",
+      "title": "Withdrawn degree-46 q8 diagnostic: conjugate IV* vertical ideals",
       "scope": "At the IV* fibre of the explicit H92 q6 child, the unit-normalized germ is Y^2=X^3+u^3 a(u)X+u^4 b(u), with b(0)=c^2 in QQ. The pinned physical E6 target has cycle (3,5,6,4,2,3), degrees (-1,-1,0,0,0,0), and colength four. The two E6 diagram identifications with the actual ordinary-blow-up chart yield exactly the conjugate colength-four complete ideals (Y-c u^2,uX,X^2,u^3) and (Y+c u^2,uX,X^2,u^3), each with quotient basis 1,u,u^2,X. The unresolved E6 arm orientation prevents selecting one as the physical q8 coefficient module. This does not trivialize the chord basis, combine the additive and smooth conditions, construct a q8 pencil or rootless equation, realize bisections, find an extension collision, or prove generic rank 18 or 19.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
@@ -32711,8 +32711,8 @@
     {
       "id": "EC-K3-H3-Q8-CHILD-IVSTAR-ORIENTATION",
       "kind": "example",
-      "state": "partial",
-      "title": "Exact physical-chart orientation and IV* vertical ideal for the corrected child q8 divisor",
+      "state": "archived",
+      "title": "Withdrawn degree-46 q8 diagnostic: IV* chart orientation",
       "scope": "The transported old E7_7 section has physical E6 component intersections (0,0,0,0,1,0). At IV* its exact standard-Jacobian entrance has orders (2,2) and Y/u^2=c, where c^2=b(0), so it meets the plus outer resolved branch. This identifies physical E6 root five with that branch and selects the q8 IV* chart cycle (3,2,3,4,5,6), degrees (0,0,-1,0,-1,0), and complete ideal (Y+c u^2,uX,X^2,u^3), of colength four with quotient basis 1,u,u^2,X. This is only the IV* vertical module: the generic-chord trivialization, global q8 pencil, rootless equation, bisection covers, extension collisions, and generic rank 18 or 19 remain unproved.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
@@ -32742,8 +32742,8 @@
     {
       "id": "EC-K3-H3-Q8-CHILD-ADDITIVE-CHORD-BLOCKS",
       "kind": "example",
-      "state": "partial",
-      "title": "Exact II*/IV* chord quotient blocks for the corrected child q8 section",
+      "state": "archived",
+      "title": "Withdrawn degree-46 q8 diagnostic: II*/IV* chord blocks",
       "scope": "For the corrected q8 marking on the explicit H92 q6 child, take m=(y+y(S))/(x-x(S)). In the exact II* quotient (u^2,X,Y), the class of m at X=Y=0 gives a rank-two coefficient block on the two-jets of a+b*m. In the selected IV* quotient (Y+c*u^2,uX,X^2,u^3), c^2=b(0), the class is r(u)+r_X X; its u^2 term includes the essential c/x(S)(0) correction from Y=-c*u^2. The resulting block on three-jets of a and b has rank four. Both are compiled through the resolved marked-chord quotient interface, with explicit quotient ideals and normal-form bases. These are finite local chord constraints only. No bounded global base-function envelope, common kernel with the degree-46 smooth collision module, q8 pencil, rootless equation, bisection cover, extension collision, or generic-rank statement is established.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
@@ -32777,8 +32777,8 @@
     {
       "id": "EC-K3-H3-Q8-CHILD-SATURATED-ANSATZ-PROBE",
       "kind": "example",
-      "state": "partial",
-      "title": "Stable modular two-dimensional saturated q8-child ansatz window",
+      "state": "archived",
+      "title": "Withdrawn degree-46 q8 diagnostic: saturated ansatz window",
       "scope": "After reducing the exact q6-child q8 chord data at good primes, impose the complete smooth congruence A*D+B*N=0 modulo h^2 for a=A/h^2 and b=B/h, then impose the exact reduced II* and selected IV* quotient blocks. In the declared eight-dimensional window B in <1,T,...,T^7> with no h^2*C correction, the six additive rows have rank six and hence a two-dimensional common kernel at p=43,53,59. The adjacent B-degree windows have dimensions one (degree at most six) and three (degree at most eight) at these primes. This is a stable bounded modular reconnaissance result only: the degree bounds are not derived from the q8 divisor, no characteristic-zero kernel has been reconstructed, and no q8 pencil, D13/rootless equation, bisection cover, extension collision, or generic-rank claim follows.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
@@ -32808,8 +32808,8 @@
     {
       "id": "EC-K3-H3-Q8-CHILD-SATURATED-PENCIL-OBSTRUCTION",
       "kind": "example",
-      "state": "partial",
-      "title": "Three-prime branch obstruction in the saturated q8-child pencil slice",
+      "state": "archived",
+      "title": "Withdrawn degree-46 q8 diagnostic: saturated-pencil obstruction",
       "scope": "In the bounded eight-dimensional q6-child q8 slice B in <1,T,...,T^7> with no h^2*C correction, impose the complete smooth congruence and the exact II*/IV* additive rows.  At each of p=43,53,59 the resulting rank-six system has a two-dimensional kernel.  For its deterministic basis (f0,f1), enumerate every finite constant level f0/f1=v, substitute its chord function in the reduced Weierstrass model, and take the discriminant in x of the residual quadratic.  The branch-degree histograms are 72:1,74:2,76:40 at p=43; 72:1,74:4,76:48 at p=53; and 72:1,74:6,76:52 at p=59.  No finite level has the degree-four branch divisor required for a genus-one double cover.  This is an exact, bounded modular rejection of these finite levels only: it neither derives the degree window or an infinity condition, nor excludes another q8 pencil, constructs D13/rootless equations, realizes bisections, finds extension collisions, or establishes generic rank 18 or 19.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
@@ -32838,8 +32838,8 @@
     {
       "id": "EC-K3-H3-Q8-CHILD-FINITE-MODULE-MODULAR",
       "kind": "example",
-      "state": "partial",
-      "title": "Stable modular finite-saturation profile for the q8-child coefficient module",
+      "state": "archived",
+      "title": "Withdrawn degree-46 q8 diagnostic: modular finite module",
       "scope": "For the corrected q8 chord on the explicit H92 q6 child, use the complete smooth parametrization a=A/h^2, b=B/h, A=A0*B+h^2*C, with A0=-N*D^(-1) modulo h^2. At each good prime 43, 53, and 59, the two II* and four selected IV* rows give a rank-six map on the ten-dimensional CRT residue space for (B,C) modulo the degree-five modulus. Its kernel has dimension four; adjoining the two modulus multiples gives the full rank-two F_p[T]-submodule of finite-compatible coefficient pairs. Its Smith invariant degrees are (1,5), hence its determinant degree is six, at all three primes. This is a complete finite-base modular module calculation, not an infinity trivialization or a characteristic-zero global pencil; it does not construct D13/rootless equations, bisections, extension collisions, or establish generic rank 18 or 19.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
@@ -32869,8 +32869,8 @@
     {
       "id": "EC-K3-H3-Q8-CHILD-FINITE-Q-MODULE-QQ",
       "kind": "example",
-      "state": "partial",
-      "title": "Exact finite q-frame coefficient module for the q8 child",
+      "state": "archived",
+      "title": "Withdrawn degree-46 q8 diagnostic: finite q-frame module",
       "scope": "For the corrected q8 chord on the explicit H92 q6 child, use the exact smooth frame q=(m-p)/h and write a finite coefficient pair as C+B*q. At II*, q has zero image in QQ[u]/(u^2,X,Y). At the oriented IV* quotient it has image c*u^2/(x(S)(0)h)+(-y(S)(0)/(x(S)(0)^2h))*X. On the degree-five II*^2 IV*^3 CRT residue space, the six exact QQ rows have a nonzero 6-by-6 minor in columns B0,C0,C1,C2,C3,C4. The IV* X row forces f_IV to divide B; then B*q has zero IV* u-jet and the remaining rows force f_II^2*f_IV^3 to divide C. Thus the finite kernel is exactly <(f_IV,0),(0,f_II^2*f_IV^3)>, with Smith degrees (1,5), rank two, and determinant degree six. This is a characteristic-zero finite-base certificate in the q frame; it does not impose infinity, construct a q8 pencil or D13/rootless equation, realize bisections, find extension collisions, or establish generic rank 18 or 19.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
@@ -33052,8 +33052,8 @@
     {
       "id": "EC-K3-H3-Q8-CHILD-Q-FRAME-POLE-PROFILE",
       "kind": "example",
-      "state": "partial",
-      "title": "Exact generic vertical-pole profile of the q8-child q frame",
+      "state": "archived",
+      "title": "Withdrawn degree-46 q8 diagnostic: q-frame pole profile",
       "scope": "For the exact q8-child frame q=(m-p)/h, write x(S)=Nx/Dx and y(S)=Ny/Dy. Clearing the chord gives q=(Nx*Dy*y+Ny*Dx*x)/(h*Nx*Dy*(Dx*x-Nx)). Therefore at every generic base prime its valuation is min(ord(Nx),ord(Ny))-ord(Nx), and the exact vertical pole divisor is Nx/gcd(Nx,Ny). It has degree 96 and is coprime to h, the IV* factor, and the Weierstrass discriminant. In the minimal smooth infinity scaling x=s^-4 X, y=s^-6 Y, s=1/T, the frame q has order 44. Thus q is not a globally base-regular coefficient generator: a global coefficient pair C+Bq must either make B vanish against this pole divisor (and, in the finite module, against f_IV) or cancel its base Laurent principal parts through C. This identifies a necessary global gluing layer beyond the finite module; it does not derive that saturated gluing, a q8 pencil or D13/rootless equation, bisections, extension collisions, or generic rank 18 or 19.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
@@ -33085,8 +33085,8 @@
     {
       "id": "EC-K3-H3-Q8-CHILD-Q-FRAME-NORMALIZATION-MODULAR",
       "kind": "example",
-      "state": "partial",
-      "title": "Modular shape of the q8-child q-frame principal-part normalization",
+      "state": "archived",
+      "title": "Withdrawn degree-46 q8 diagnostic: modular q-frame normalization",
       "scope": "At primes 43, 53, and 59, the exact q-frame pole profile reduces with gcd(Nx,Ny)=gcd(Nx,h)=gcd(Nx,Delta)=1. The unique residue correction R=Ny*(h*Dy)^(-1) modulo Nx cancels the q-frame principal part at Nx=0. It has degree 95 at 43 and 59, giving normalized-frame infinity order one, while at 53 its leading coefficient cancels and degree drops to 94, giving order two. This is a modular normalization-shape check: it identifies 43 and 59 as good reconstruction primes and 53 as unsuitable for the leading infinity coefficient. It does not reconstruct R over QQ, derive the transformed additive module or saturated global gluing, construct a q8 pencil/D13/rootless equation, bisections, extension collisions, or generic rank 18 or 19.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
@@ -33116,8 +33116,8 @@
     {
       "id": "EC-K3-H3-Q8-CHILD-Q-FRAME-NORMALIZATION-CRT",
       "kind": "example",
-      "state": "partial",
-      "title": "Exact CRT principal-part normalization of the q8-child q frame",
+      "state": "archived",
+      "title": "Withdrawn degree-46 q8 diagnostic: CRT q-frame normalization",
       "scope": "For the exact q8-child frame q=(m-p)/h with x(S)=Nx/Dx and y(S)=Ny/Dy, the unique degree-less-than-96 residue correction R=Ny*(h*Dy)^(-1) modulo Nx has been recovered over QQ[T]. A deterministic CRT lift from 4,600 good 31-bit primes (138,048 modulus bits; no rejected primes) reconstructs all 96 coefficients, whose largest numerator/denominator has 67,725 bits. Five incorporated primes and three withheld primes agree with the reconstruction, and the exact QQ[T] congruence R*h*Dy=Ny modulo Nx holds. Thus the q-frame generic pole principal part is cleared exactly, with the degree-95 normalization predicted by the good-prime probes. This proves only the global base principal-part correction; it does not derive the transformed additive and smooth gluing module, construct a q8 pencil or D13/rootless equation, realize bisections, find extension collisions, or establish generic rank 18 or 19.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
@@ -33149,8 +33149,8 @@
     {
       "id": "EC-K3-H3-Q8-CHILD-Q-REGULAR-FRAME",
       "kind": "example",
-      "state": "partial",
-      "title": "Exact globally base-regular q frame for the q8 child",
+      "state": "archived",
+      "title": "Withdrawn degree-46 q8 diagnostic: base-regular q frame",
       "scope": "Let q=(m-p)/h on the exact H92 q8 child, with x(S)=Nx/Dx and y(S)=Ny/Dy. The exact CRT correction R of EC-K3-H3-Q8-CHILD-Q-FRAME-NORMALIZATION-CRT satisfies R*h*Dy=Ny modulo Nx. Consequently q_regular=q-R/Nx has the exact cleared expression (Dy*(y+R*h)+Dx*x*((Ny-R*h*Dy)/Nx))/(h*Dy*(Dx*x-Nx)); the Nx denominator cancels in QQ[T]. Since Nx is coprime to h and Dy, q_regular is regular at every generic base point, including the old h collision divisor. Its infinity order is one because deg(Nx)-deg(R)=1, replacing q's order 44. This proves the global base-regular coordinate frame only; it does not derive transformed additive or smooth local modules, form a q8 pencil or D13/rootless equation, construct bisections, find collisions, or establish generic rank 18 or 19.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
@@ -33180,8 +33180,8 @@
     {
       "id": "EC-K3-H3-Q8-CHILD-Q-REGULAR-FINITE-MODULE",
       "kind": "example",
-      "state": "partial",
-      "title": "Exact finite q8 module in the globally base-regular q frame",
+      "state": "archived",
+      "title": "Withdrawn degree-46 q8 diagnostic: regular-frame finite module",
       "scope": "The exact finite q-frame module at II* and IV* is B in (f_IV) and C_old in (f_II^2*f_IV^3) for C_old+Bq. For q_regular=q-R/Nx, the exact relation C_old=C-BR/Nx applies. At the additive CRT modulus f_II^2*f_IV^3, Nx is a unit, so the finite q_regular module in (B,C) coordinates is generated by (f_IV, lift(f_IV*R/Nx)) and (0,f_II^2*f_IV^3). Its determinant has degree six and its Smith degrees remain (1,5). Thus the completed generic-base q normalization is compatible with the complete exact finite additive condition. This does not impose the remaining smooth or infinity conditions, assemble a q8 pencil/D13/rootless equation, construct bisections, find extension collisions, or establish generic rank 18 or 19.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
@@ -33213,8 +33213,8 @@
     {
       "id": "EC-K3-H3-Q8-CHILD-Q-REGULAR-SMOOTH-FRAME",
       "kind": "example",
-      "state": "partial",
-      "title": "Exact smooth-collision trivialization in the q-regular frame",
+      "state": "archived",
+      "title": "Withdrawn degree-46 q8 diagnostic: smooth regular-frame trivialization",
       "scope": "At the reduced degree-46 smooth O.S collision divisor h, write p=N/(hD) with D a unit at h. The exact saturated old chord module is a=A/h^2, b=B/h with A*D+B*N divisible by h^2. For q_regular=(m-p)/h-R/Nx, D and Nx are units in QQ[T]_(h), and the exact transition is A=h^2*(C-BR/Nx)-BN/D for a section C+B*q_regular. It gives A*D+B*N=h^2*D*(C-BR/Nx). Conversely C=BR/Nx+(A*D+B*N)/(h^2*D), so every old smooth-compatible pair gives regular C. Thus the smooth module is exactly QQ[T]_(h)<1,q_regular>, with no residual h-supported quotient condition. The remaining global conditions are the finite II*/IV* module and the unresolved infinity module; no q8 pencil, bisection equation, extension collision, or rank claim follows.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
@@ -33246,8 +33246,8 @@
     {
       "id": "EC-K3-H3-Q8-CHILD-Q-REGULAR-GENERATOR-OBSTRUCTION",
       "kind": "example",
-      "state": "partial",
-      "title": "Modular obstruction to the canonical normalized finite-generator ratio",
+      "state": "archived",
+      "title": "Withdrawn degree-46 q8 diagnostic: generator-ratio obstruction",
       "scope": "In the globally base-regular q frame, the first finite II*/IV* module generator gives the canonical ratio V=(f_IV*q_regular+lift(f_IV*R/Nx))/(f_II^2*f_IV^3). For every constant level V in F_43 and F_59, eliminate the old Weierstrass x and compute the exact quadratic discriminant branch degree over the old base. The histograms are 488:1, 490:1, 492:41 at 43 and 488:1, 490:4, 492:54 at 59; no level has the necessary genus-one branch degree four. More generally, for the 25 low-degree ratios V=(T^d*g1+T^e*M)/M with 0<=d,e<=4 and every constant level at each prime, no branch degree is below 488. Thus neither the canonical ratio nor this bounded monomial-generator/infinity window can be the q8 pencil at either tested prime. This is a modular rejection of one finite-generator family and constant levels only; it does not rule out general generator combinations, a nonconstant construction, the q8 pencil, a rootless equation, bisections, extension collisions, or generic rank 18 or 19.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
@@ -33277,8 +33277,8 @@
     {
       "id": "EC-K3-H3-Q8-CHILD-DIAGONAL-PENCIL-OBSTRUCTION",
       "kind": "example",
-      "state": "partial",
-      "title": "Modular obstruction to the diagonal finite-q-module pencil candidate",
+      "state": "archived",
+      "title": "Withdrawn degree-46 q8 diagnostic: diagonal-pencil obstruction",
       "scope": "The exact finite q-frame module has the diagonal basis (f_IV,0),(0,f_II^2*f_IV^3). Its most direct ratio would define V=f_IV*(m-p)/(h*f_II^2*f_IV^3). Reducing the eliminated quadratic-in-x discriminant at the good primes 43, 53, and 59 gives squareclass branch degree 484 for V=1; at 43 the same degree occurs for V=2. Thus this diagonal ratio fails the necessary genus-one branch-degree-four screen in each tested reduction. This is a modular obstruction to this particular unnormalized candidate, not a no-go theorem for another infinity normalization, the q8 pencil, a rootless equation, bisections, extension collisions, or generic rank 18 or 19.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
@@ -33308,8 +33308,8 @@
     {
       "id": "EC-K3-H3-Q8-CHILD-SMOOTH-MODULE",
       "kind": "example",
-      "state": "partial",
-      "title": "Exact smooth zero-collision module for the q8 marked child section",
+      "state": "archived",
+      "title": "Withdrawn degree-46 q8 diagnostic: smooth zero-collision module",
       "scope": "For the corrected degree-46 reduced smooth-fibre divisor h where the q8 marked section S meets the standard zero, write P=-S and m=(y-y(P))/(x-x(P)). The formal parameter z(S)=-x(S)/y(S) is h times a unit, and p=y(P)/x(P) has one unpaired h-pole. The complete smooth local frame is <1,(m-p)/h>. Thus for base-regular coefficients a+b*m, regularity is exactly h divides b; with a=A/h^2 and b=B/h, saturated membership is A*(den(p)/h)+B*num(p)=0 modulo h^2. The quotient dimensions are 46 and 92, respectively, with the latter surjective because den(p)/h is a unit modulo h^2. This derives the full smooth-collision module only; it does not derive additive modules, a bounded global ambient or pencil, a D13 equation, a rootless bisection, an extension collision, or generic rank 18 or 19.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
@@ -33690,8 +33690,9 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:e806c7f088996a149d871c2b7858b684afedc69df8fe6f4132b943d5c0bf3a4f",
+      "artifact_hash": "sha256:01da6b84ee1fa1e51aab4b194d2fb9224aaf733e0f054841392256bb6f73a2b6",
       "software_lock": [
+        "elkies-k3/data/fibrations/h3_q8_component_nef_physical_root_target.json",
         "elkies-k3/scripts/derive_h92_q6_child_q8_corrected2cover_qq.sage"
       ],
       "supersedes_notes": [
@@ -33703,6 +33704,45 @@
         "OP-EC-NEXT"
       ],
       "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-D13-MW17-LATTICE-CHAIN",
+      "kind": "example",
+      "state": "proved",
+      "title": "Exact eleven-step nef degree-two H3 lattice chain from D13/MW4 to rootless/MW17",
+      "scope": "Starting from the exact D13/MW4 frame of EC-K3-H3-Q8-QQ-D13, eleven stored primitive integral U-neighbours with q-sequence (24,6,8,4,4,4,4,4,4,4,6) give D12/MW5, A11/MW6, 2A5/MW7, 3A3/MW8, A3+2A2/MW10, 5A1/MW12, 4A1/MW13, 3A1/MW14, 2A1/MW15, A1/MW16, and finally a rootless MW17 frame. Every factor presentation has old-fibre degree two. Independent reconstruction from the pinned witnesses checks every child Gram matrix and a determinant-one composite transport. Exact chamber checkers prove all eleven selected classes nef using finite-component degrees, full-frame closest-vector calculations, and the degree-two bisection parity identity. The final q6 witness comes from a bounded search, but the displayed witness, child, and nefness are exact; no exhaustive q4 or global minimal-q claim is made. This certifies the complete lattice/chamber chain only. The eleven equation-level characteristic-zero pencils after D13/MW4, transported sections, and specialization to curve 273 remain open.",
+      "canonical_source": "elliptic-curves/notes/ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md",
+      "dependencies": [
+        "EC-K3-H3-Q8-QQ-D13"
+      ],
+      "checker": "elkies-k3/scripts/verify_h3_d13_to_mw17_path.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3a3a1b51553c23373e6889af9e129f5d3667663e127ef03c9cedb026f7ee1bdb",
+      "software_lock": [
+        "elkies-k3/scripts/exact_neighbor_engine.sage",
+        "elkies-k3/scripts/analyze_h3_d13_q4_chamber.sage",
+        "elkies-k3/scripts/analyze_h3_rank_growing_degree2_chain.sage",
+        "elkies-k3/scripts/analyze_h3_mw10_to_rootless_chambers.sage",
+        "elkies-k3/scripts/verify_h3_d13_to_mw17_path.sage",
+        "artifacts/generated-results/elkies-k3-h3-d13-to-mw17-path.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/KUMAR_E7E8_BACKTRACK.md",
+        "elliptic-curves/notes/ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md"
+      ],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
@@ -33741,7 +33781,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Elliptic rank-31, exact-rank, and low-conductor continuation",
-      "scope": "ECR30 closes the original rank-at-least-30 branch. Continue in three exact directions: prove that the public 2026 curve has rank exactly 30 or exhibit a higher-rank curve; find a curve with rank at least 21 and natural-log conductor below 182.72, with EC-R20-IC245 as the smallest-conductor independently replayed rank-at-least-20 benchmark; and complete the reconstructed rank-17 K3 mechanism strongly enough to reproduce the historical rank-29 specialization and search beyond rank 30. EC-R20, EC-MR13, EC-MD17 and EC-MD19 remain exact lower-rank family/conductor frontiers. EC-K3-H3-SOURCE and EC-K3-H3-PTS give the exact H3 E7+E8/MW2 source and its rational base points. EC-K3-H3-Q8-QQ-D13 now completes the first two equation-level neighbours through D13/MW4; the next construction gate is the D13/MW4 -> D12/MW5 q24 equation, followed by ten further equation-level hops to rootless MW17 and specialization transport. EC-ICARM-CONSTRUCTION-FINGERPRINTS excludes curve 273 from the complete diameter-at-most-300 fixed-six-root Mestre census and from the direct forced-2-torsion Elkies--Klagsbrun model, without excluding the proposed rootless K3 descendant. The other present gates are a certified residual 2-Selmer computation for curve 273 and a twenty-first independent point on a low-conductor rank-at-least-20 family. Bounded searches and failed lifts are experiments, not upper bounds.",
+      "scope": "ECR30 closes the original rank-at-least-30 branch. Continue in three exact directions: prove that the public 2026 curve has rank exactly 30 or exhibit a higher-rank curve; find a curve with rank at least 21 and natural-log conductor below 182.72, with EC-R20-IC245 as the smallest-conductor independently replayed rank-at-least-20 benchmark; and complete the reconstructed rank-17 K3 mechanism strongly enough to reproduce the historical rank-29 specialization and search beyond rank 30. EC-R20, EC-MR13, EC-MD17 and EC-MD19 remain exact lower-rank family/conductor frontiers. EC-K3-H3-SOURCE and EC-K3-H3-PTS give the exact H3 E7+E8/MW2 source and its rational base points. EC-K3-H3-Q8-QQ-D13 completes the first two equation-level neighbours through D13/MW4, while EC-K3-H3-D13-MW17-LATTICE-CHAIN certifies the eleven later nef degree-two lattice/chamber neighbours through rootless MW17. The next construction gate is the D13/MW4 -> D12/MW5 q24 equation, followed by ten further equation-level hops and specialization transport. EC-ICARM-CONSTRUCTION-FINGERPRINTS excludes curve 273 from the complete diameter-at-most-300 fixed-six-root Mestre census and from the direct forced-2-torsion Elkies--Klagsbrun model, without excluding the proposed rootless K3 descendant. The other present gates are a certified residual 2-Selmer computation for curve 273 and a twenty-first independent point on a low-conductor rank-at-least-20 family. Bounded searches and failed lifts are experiments, not upper bounds.",
       "canonical_source": "elliptic-curves/README.md",
       "dependencies": [
       "ECR30",
@@ -33753,6 +33793,7 @@
         "EC-K3-H3-SOURCE",
         "EC-K3-H3-PTS",
         "EC-K3-H3-Q8-QQ-D13",
+        "EC-K3-H3-D13-MW17-LATTICE-CHAIN",
         "EC-ICARM-CONSTRUCTION-FINGERPRINTS"
       ],
       "checker": null,

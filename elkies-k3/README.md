@@ -37,6 +37,11 @@ II*, IV* = identity component
 Then reproduce the complete second neighbour with
 
 ```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_physical_root_target.sage \
+  --representative component-nef \
+  --output artifacts/local/elkies-k3/q8-target-component-nef-audit.json
+cmp artifacts/local/elkies-k3/q8-target-component-nef-audit.json \
+  elkies-k3/data/fibrations/h3_q8_component_nef_physical_root_target.json
 sage -python elkies-k3/scripts/derive_h92_q6_child_q8_corrected2cover_qq.sage
 ```
 

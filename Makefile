@@ -174,6 +174,7 @@ verify-elliptic-curves:
 	$(PYTHON) elliptic-curves/scripts/verify_fermigier_crt_seed.py
 	$(PYTHON) elliptic-curves/scripts/verify_kihara_rank14.py
 	$(PYTHON) elliptic-curves/scripts/verify_e29_independence.py
+	$(SYSTEM_PYTHON) elliptic-curves/scripts/verify_k3_chain_ledger.py
 	$(PYTHON) elliptic-curves/cas/verify_icarm_curve273_rank30.py --check
 
 verify-global-low-degree-census:

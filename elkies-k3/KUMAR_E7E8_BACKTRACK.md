@@ -985,6 +985,7 @@ and bisection parity prove nefness in
 [`scripts/analyze_h3_mw10_to_rootless_chambers.sage`](scripts/analyze_h3_mw10_to_rootless_chambers.sage),
 whose terminal status is `PASS_H3_MW10_TO_ROOTLESS_NEF`.  Equation-level
 divisor functions remain to be constructed.
+<!-- status-consumer: EC-K3-H3-D13-MW17-LATTICE-CHAIN 30c9f060a5da7ed5 -->
 
 At the final `A1/MW16` marking, q=4 was tested only as a bounded obstruction:
 the exact 9,000-orbit prefix and seven 1,000-orbit strata across the 160,308

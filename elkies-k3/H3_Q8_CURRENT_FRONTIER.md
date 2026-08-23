@@ -15,8 +15,17 @@ Both displayed hops are now exact at equation level over characteristic zero.
 The q8 certificate is
 
 ```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_physical_root_target.sage \
+  --representative component-nef \
+  --output artifacts/local/elkies-k3/q8-target-component-nef-audit.json
+cmp artifacts/local/elkies-k3/q8-target-component-nef-audit.json \
+  elkies-k3/data/fibrations/h3_q8_component_nef_physical_root_target.json
 sage -python elkies-k3/scripts/derive_h92_q6_child_q8_corrected2cover_qq.sage
 ```
+
+The first command rebuilds the pinned 17 KB component-nef target and `cmp`
+checks it byte-for-byte. The q8 checker consumes the tracked fibration-data
+copy rather than an ignored `artifacts/local/` prerequisite.
 
 with endpoint
 

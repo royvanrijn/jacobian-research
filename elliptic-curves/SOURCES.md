@@ -99,16 +99,17 @@ theorem.
 - Andrej Dujella's current [history of elliptic-curve rank
   records](https://web.math.pmf.unizg.hr/~duje/tors/rankhist.html) lists the
   Nagao--Kouya rank-at-least-21 curve in 1994, the Elkies--Klagsbrun
-  rank-at-least-29 curve in 2024, and the pseudonymous rank-at-least-30 curve
-  in 2026. His [rank-at-least-21
+  rank-at-least-29 curve in 2024, and the Alpöge--Howell rank-at-least-30
+  curve in 2026. His [rank-at-least-21
   page](https://web.math.pmf.unizg.hr/~duje/tors/rk21.html) provides a public
   transcription of the former model and its independent points.  The primary
   independence source used here remains Nagao's paper above.
 - Dujella's [rank-at-least-30 record
   page](https://web.math.pmf.unizg.hr/~duje/tors/rk30.html) gives the 2026
-  curve under the pseudonym `ranksunbounded` and lists 30 rational points.
-  The repository imports only those public data and independently proves the
-  points independent. No exact-rank or authorship claim is imported.
+  Alpöge--Howell curve and lists 30 rational points.  This is the same model
+  and point set previously published on the ICARM leaderboard by the submitter
+  `ranksunbounded`.  The repository independently proves the points
+  independent; no exact-rank statement is imported.
 - Andrej Dujella's [rank-at-least-29 record
   page](https://web.math.pmf.unizg.hr/~duje/tors/rk29.html) gives the 2024
   Elkies--Klagsbrun model and 29 independent points.  This supports an

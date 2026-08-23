@@ -734,6 +734,11 @@ II*, IV* = identity component
 Compile the corrected characteristic-zero pencil and exact child with:
 
 ```bash
+sage -python elkies-k3/scripts/derive_h92_q6_child_q8_physical_root_target.sage \
+  --representative component-nef \
+  --output artifacts/local/elkies-k3/q8-target-component-nef-audit.json
+cmp artifacts/local/elkies-k3/q8-target-component-nef-audit.json \
+  elkies-k3/data/fibrations/h3_q8_component_nef_physical_root_target.json
 sage -python elkies-k3/scripts/derive_h92_q6_child_q8_corrected2cover_qq.sage
 ```
 
@@ -749,7 +754,7 @@ This proves the exact second H3 neighbour `E8+E6/MW3 -> D13/MW4` over
 `QQ`.  The older degree-46 marking and the endpoint-envelope obstruction
 experiments below remain historical diagnostics only; they do not describe
 the repaired pencil.
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-MARKING 96fe2161f692f57d -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-MARKING 745bf011cb47e7f3 -->
 
 Rewrite the same exact divisor in finite component roots relative to the
 explicit transported old zero:
@@ -890,7 +895,7 @@ sage -python elkies-k3/scripts/derive_h92_q6_child_q8_ivstar_vertical_ideal.sage
 ```
 
 It reports `H92Q6CHILDQ8IV|ideals=2|colength=4|orientation=unresolved_E6_arm|...`.
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-IVSTAR-VERTICAL-IDEAL-PAIR e2cdaa42791c3120 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-IVSTAR-VERTICAL-IDEAL-PAIR 4300b94b65dabc64 -->
 
 The transported old `E7_7` section orients this pair: it meets physical E6
 root five and the IV* `Y/u^2=c` branch.  The selected vertical condition is
@@ -901,7 +906,7 @@ sage -python elkies-k3/scripts/derive_h92_q6_child_q8_ivstar_orientation.sage \
   --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-ivstar-orientation.json
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-IVSTAR-ORIENTATION 13eae37cfe412e2b -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-IVSTAR-ORIENTATION 4e931cdcb76201c3 -->
 
 The actual generic chord `m=(y+y(S))/(x-x(S))` now has exact finite
 coefficient blocks in both selected additive quotients.  They have ranks two
@@ -922,7 +927,7 @@ Expected terminal status:
 H92Q6CHILDQ8ADDITIVE|II_rows=2|IV_rows=4|II_rank=2|IV_rank=4|status=PASS_EXACT_Q6_CHILD_Q8_ADDITIVE_CHORD_BLOCKS
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-ADDITIVE-CHORD-BLOCKS 2b6ca15eef42c3b8 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-ADDITIVE-CHORD-BLOCKS bf6fc5b74f51fc0f -->
 
 As bounded modular reconnaissance only, the first saturated coefficient window
 already has the expected dimension: at each of `p=43,53,59`, take
@@ -938,7 +943,7 @@ sage -python elkies-k3/scripts/probe_h92_q6_child_q8_saturated_ansatz.sage \
   --output artifacts/generated-results/elkies-k3-h92-q6-child-q8-saturated-ansatz-probe.json
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-SATURATED-ANSATZ-PROBE 17dbbe0e9c60e4fe -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-SATURATED-ANSATZ-PROBE cdcfe4ca7989839d -->
 
 Screen every finite level of the resulting deterministic two-dimensional
 ratio for the degree-four branch divisor required of a genus-one double
@@ -951,7 +956,7 @@ sage -python elkies-k3/scripts/probe_h92_q6_child_q8_saturated_pencil_modp.sage 
 sage -python elkies-k3/scripts/probe_h92_q6_child_q8_saturated_pencil_modp.sage --prime 59
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-SATURATED-PENCIL-OBSTRUCTION a0130a38d4d50617 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-SATURATED-PENCIL-OBSTRUCTION 5a4beade3e2caff1 -->
 
 Compute the entire finite coefficient module, rather than a bounded
 polynomial window.  The expected profile at each listed good prime is six
@@ -963,7 +968,7 @@ sage -python elkies-k3/scripts/probe_h92_q6_child_q8_finite_module_modp.sage --p
 sage -python elkies-k3/scripts/probe_h92_q6_child_q8_finite_module_modp.sage --prime 59
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-FINITE-MODULE-MODULAR b385dff76d3de7f3 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-FINITE-MODULE-MODULAR 78fc7f298da9eaf6 -->
 
 Derive the complete smooth O.S collision module for that marking:
 
@@ -978,7 +983,7 @@ Expected terminal status:
 H92Q6CHILDQ8SMOOTH|degree_h=46|squarefree=1|base_regular=h_divides_b|saturated_quotient=92|status=PASS_EXACT_Q6_CHILD_Q8_SMOOTH_COLLISION_MODULE
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-SMOOTH-MODULE 7bdad5b12acfce5c -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-SMOOTH-MODULE 559fade7fa0cb618 -->
 
 The former depth-two IV* entrance and branch-orientation scripts are
 historical only: the corrected marking is smooth at IV*, so neither is a
@@ -2034,6 +2039,7 @@ plus bisection parity.  Its terminal status is
 `PASS_H3_MW10_TO_ROOTLESS_NEF`.  Thus the entire displayed path is an exact
 nef degree-two geometric chain.  Characteristic-zero equation execution
 remains a separate gate.
+<!-- status-consumer: EC-K3-H3-D13-MW17-LATTICE-CHAIN 30c9f060a5da7ed5 -->
 
 The H3 q8-child finite additive gate also has a characteristic-zero q-frame
 calculation; it proves the six finite rows have rank six, leaving only the
@@ -2043,7 +2049,7 @@ global infinity condition:
 sage elkies-k3/scripts/derive_h92_q6_child_q8_finite_q_module_qq.sage
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-FINITE-Q-MODULE-QQ 0f92a696bd388284 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-FINITE-Q-MODULE-QQ 83452e0f702d6d9a -->
 
 The same q frame has a degree-96 generic vertical pole divisor. A global
 coefficient pair must either make `B` vanish there or use matching base
@@ -2054,7 +2060,7 @@ the finite II*/IV* module.
 sage elkies-k3/scripts/derive_h92_q6_child_q8_q_pole_profile.sage
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-FRAME-POLE-PROFILE 630fc1a6919245a6 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-FRAME-POLE-PROFILE 3685b882ed19702a -->
 
 The modular principal-part normalization has degree `95` at primes `43` and
 `59` (normalized infinity order one); prime `53` has a leading-coefficient
@@ -2064,7 +2070,7 @@ drop and is excluded for that reconstruction step.
 sage elkies-k3/scripts/probe_h92_q6_child_q8_q_pole_normalization_modp.sage --prime 43
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-FRAME-NORMALIZATION-MODULAR 014b3fa1ce2ee000 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-FRAME-NORMALIZATION-MODULAR 6bd8f54f7e8887a9 -->
 
 The exact degree-95 correction can be reconstructed without a raw rational
 extended Euclidean computation by deterministic modular CRT.  The following
@@ -2092,7 +2098,13 @@ sage -python elkies-k3/scripts/reconstruct_h92_q6_child_q8_q_pole_normalization_
   --reconstruct-every 100 --accepted-validation-primes 5
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-FRAME-NORMALIZATION-CRT 6897f3bf4c77916b -->
+This degree-95 normalizer belongs to the withdrawn degree-46 section and is
+retained only as a historical diagnostic. It omits the `Dx` factor required
+for the primitive degree-ten q8 section and must not be used in the canonical
+q8 construction; the corrected exact checker above proves
+`R*h*Dy == Ny*Dx mod Nx` directly.
+
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-FRAME-NORMALIZATION-CRT 6f6a4e097d4bddd5 -->
 
 The resulting `q_regular=q-R/Nx` has no generic base vertical pole and has
 infinity order one.  This is a coordinate-frame certificate, not yet the
@@ -2102,7 +2114,7 @@ transformed q8 local-module assembly:
 sage -python elkies-k3/scripts/certify_h92_q6_child_q8_q_regular_frame.sage
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-FRAME a5653fc9b19d383d -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-FRAME 1cead360048f47f6 -->
 
 Transport the complete finite II*/IV* q8 module to this normalized frame:
 
@@ -2110,7 +2122,7 @@ Transport the complete finite II*/IV* q8 module to this normalized frame:
 sage -python elkies-k3/scripts/derive_h92_q6_child_q8_q_regular_finite_module_qq.sage
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-FINITE-MODULE c3cf25526f88a738 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-FINITE-MODULE 794f629d93420ed4 -->
 
 The same `q_regular` coordinate also trivializes the complete smooth
 degree-46 collision module: the transition identities between
@@ -2127,7 +2139,7 @@ Expected terminal status:
 H92Q6CHILDQREGSMOOTH|h_degree=46|smooth_quotient=0|status=PASS_EXACT_Q_REGULAR_SMOOTH_FRAME
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-SMOOTH-FRAME 347facd34f447b47 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-SMOOTH-FRAME b394a23706a914ce -->
 
 The canonical normalized finite-generator ratio, and the bounded monomial
 family with `0 <= d,e <= 4`, fail the necessary genus-one branch-degree
@@ -2140,7 +2152,7 @@ sage -python elkies-k3/scripts/probe_h92_q6_child_q8_q_regular_generator_modp.sa
   --prime 59 --max-a-monomial-degree 4 --max-b-monomial-degree 4
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-GENERATOR-OBSTRUCTION 1ff6ca93c1f415bc -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-Q-REGULAR-GENERATOR-OBSTRUCTION 487f98d8a254b683 -->
 
 The unnormalized diagonal finite-module ratio is ruled out by its modular
 branch degree (484 rather than 4):
@@ -2149,7 +2161,7 @@ branch degree (484 rather than 4):
 sage elkies-k3/scripts/probe_h92_q6_child_q8_diagonal_candidate_modp.sage --prime 43 --v 1
 ```
 
-<!-- status-consumer: EC-K3-H3-Q8-CHILD-DIAGONAL-PENCIL-OBSTRUCTION 95d5cca4502539a6 -->
+<!-- status-consumer: EC-K3-H3-Q8-CHILD-DIAGONAL-PENCIL-OBSTRUCTION ec76cc0097b76a4c -->
 
 The independent rational Q80 route now has an exact unmarked first `q=4`
 equation step. It proves that the reconstructed coefficient curve lies on the

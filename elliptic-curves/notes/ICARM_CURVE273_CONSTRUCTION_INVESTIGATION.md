@@ -34,7 +34,10 @@ one of the following:
   the thirtieth submitted point was restored.  It also records the conditional
   analytic-rank discussion, but no construction recipe.
 - Dujella's maintained [rank-30 page](https://web.math.pmf.unizg.hr/~duje/tors/rk30.html)
-  reproduces the curve and its 30 points.
+  reproduces the curve and its 30 points.  As rechecked on 2026-08-23, that
+  page and Dujella's rank-history page now attribute the record to Levent
+  Alpöge and Ava Howell; this updates the public attribution but supplies no
+  construction data.
 
 The earlier pinned source audit
 [`elliptic_rank30_public_source_audit.json`](../../artifacts/generated-results/elliptic_rank30_public_source_audit.json)
@@ -233,6 +236,7 @@ and
 [`../../elkies-k3/scripts/verify_h3_d13_to_mw17_path.sage`](../../elkies-k3/scripts/verify_h3_d13_to_mw17_path.sage).
 This supersedes the H2/q80 deformation as the preferred source transport;
 the latter remains a valuable independent downstream comparison.
+<!-- status-consumer: EC-K3-H3-D13-MW17-LATTICE-CHAIN 30c9f060a5da7ed5 -->
 
 The older H2 route remains a separate downstream comparison.  Its height-4
 and height-`237/2` directions define the Humbert intersection
@@ -1086,14 +1090,14 @@ before more relation collection is attempted.
 
 ## Efficient next gates
 
-1. **Construct the first q=6 chord.**  Starting from the exact rational H92
-   height-`21/2` section, construct a basis of `H0(O+(-P1)-F)` and the explicit
-   `E7+E8 -> E8+E6` degree-two pencil.  Both H3 source directions are now
-   individually rational and saturated; the chord/Riemann--Roch calculation
-   is the remaining source gate.
-2. **Execute the certified degree-two chain.**  Realize the full q6, q8,
-   q24, q6, q8, q4-series, final-q6 chain in characteristic zero.  The
-   lattice search and chamber/nef certification are no longer missing.
+1. **Execute the next equation-level neighbour.** The first q6 and corrected
+   q8 pencils are exact over `QQ`, reaching `D13/MW4`. Construct its q24
+   neighbour `D12/MW5` with the same binary-quartic multiplier and fully
+   cleared-residue regressions.
+2. **Execute the remaining certified degree-two chain.** Realize the ten
+   later q6/q8/q4-series/final-q6 neighbours in characteristic zero. The
+   complete D13-to-rootless lattice transport and chamber/nef certification
+   are already exact; only the equation-level execution remains.
 3. **Certify the specialization.**  Once the rootless family is explicit,
    solve for a rational parameter and a `Q`-isomorphism to curve 273 and
    literally transport the generic sections.  Height or discriminant

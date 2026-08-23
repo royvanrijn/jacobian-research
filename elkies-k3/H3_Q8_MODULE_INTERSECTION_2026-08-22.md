@@ -2,6 +2,14 @@
 
 ## Purpose and status
 
+> **Historical ledger (superseded 2026-08-23).** The q8 equation is now
+> certified over `QQ` and gives the `D13/MW4` child.  The canonical primitive
+> child section is `S=Pmap+Qmap`, of height `24` and collision degree `10`.
+> The degree-46 child route discussed below used `2*S` (and later an omitted
+> `Dx` factor) and is retained only to explain discarded experiments.  See
+> [`H3_Q8_CURRENT_FRONTIER.md`](H3_Q8_CURRENT_FRONTIER.md) for the active
+> equation frontier.
+
 This note consolidates the source-side H3 `q=8` equation work performed after
 commit `8512558cdc1aac3d2dfe313c8cd61b005232dc10`.
 

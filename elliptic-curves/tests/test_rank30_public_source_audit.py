@@ -3,7 +3,6 @@ from __future__ import annotations
 from hashlib import sha256
 import json
 from pathlib import Path
-import platform
 import sys
 import unittest
 
@@ -40,7 +39,9 @@ class Rank30PublicSourceAuditTests(unittest.TestCase):
         self.assertEqual(
             report["script_sha256"], sha256(SCRIPT.read_bytes()).hexdigest()
         )
-        self.assertEqual(report["software"], {"python": platform.python_version()})
+        # The artifact deliberately preserves the environment of its dated
+        # 2026-08-14 source snapshot; it is not regenerated on Python upgrades.
+        self.assertEqual(report["software"], {"python": "3.14.6"})
         self.assertTrue(
             report["assessment"]["all_pinned_source_hashes_verified_before_write"]
         )

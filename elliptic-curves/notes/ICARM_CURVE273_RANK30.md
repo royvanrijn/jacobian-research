@@ -5,8 +5,9 @@ No unconditional exact-rank statement is claimed.
 
 ## Public record
 
-The 2026 public record page lists the curve under the pseudonym
-`ranksunbounded`:
+The current 2026 public record page attributes the curve to Levent Alpöge and
+Ava Howell.  It is the same curve that first appeared on the ICARM leaderboard
+under the submitter name `ranksunbounded`:
 
 ```text
 y^2 + x*y = x^3 + A*x + B
@@ -19,6 +20,13 @@ The source is
 [Dujella's maintained rank-30 record page](https://web.math.pmf.unizg.hr/~duje/tors/rk30.html).
 The thirty displayed points there agree exactly with
 [`icarm_curve273.py`](../cas/icarm_curve273.py).
+
+This attribution was rechecked on 2026-08-23.  At that time the rank-history
+page and rank-30 page had SHA-256 hashes
+`239ed273283ac47b6cc3dcbd08120fdb2c01bcb8494d14d2447862244e841fcc`
+and `0828a3f55f3469119797b923a90d15bf6a47367769b6111ff79c3051ef1b28e6`,
+respectively.  These source hashes certify the inspected snapshots, not the
+independence claim; the exact local certificate below supplies that proof.
 
 ## Exact lower-bound certificate
 

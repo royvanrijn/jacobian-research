@@ -28,12 +28,11 @@ from sage.all import EllipticCurve, PolynomialRing, QQ, ZZ, gcd, lcm, matrix, ve
 
 ROOT = Path(__file__).resolve().parents[2]
 GEN = ROOT / "artifacts/generated-results"
-LOCAL = ROOT / "artifacts/local/elkies-k3"
 CORE = ROOT / "elkies-k3/scripts/elliptic_neighbor_compiler.sage"
 CHILD = GEN / "elkies-k3-h92-q6-child-jacobian.json"
 ZERO = GEN / "elkies-k3-h92-q6-child-zero-section.json"
 COMPONENTS = GEN / "elkies-k3-h92-q6-child-e7-infinity-sections.json"
-DEFAULT_TARGET = LOCAL / "q8-target-component-nef.json"
+DEFAULT_TARGET = ROOT / "elkies-k3/data/fibrations/h3_q8_component_nef_physical_root_target.json"
 DEFAULT_OUTPUT = GEN / "elkies-k3-h92-q6-child-q8-corrected2cover-qq-child.json"
 
 exec(compile(CORE.read_text(), str(CORE), "exec"))
