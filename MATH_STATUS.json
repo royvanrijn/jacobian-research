@@ -33712,25 +33712,31 @@
       "id": "EC-K3-H3-D13-MW17-LATTICE-CHAIN",
       "kind": "example",
       "state": "proved",
-      "title": "Exact eleven-step nef degree-two H3 lattice chain from D13/MW4 to rootless/MW17",
-      "scope": "Starting from the exact D13/MW4 frame of EC-K3-H3-Q8-QQ-D13, eleven stored primitive integral U-neighbours with q-sequence (24,6,8,4,4,4,4,4,4,4,6) give D12/MW5, A11/MW6, 2A5/MW7, 3A3/MW8, A3+2A2/MW10, 5A1/MW12, 4A1/MW13, 3A1/MW14, 2A1/MW15, A1/MW16, and finally a rootless MW17 frame. Every factor presentation has old-fibre degree two. Independent reconstruction from the pinned witnesses checks every child Gram matrix and a determinant-one composite transport. Exact chamber checkers prove all eleven selected classes nef using finite-component degrees, full-frame closest-vector calculations, and the degree-two bisection parity identity. The final q6 witness comes from a bounded search, but the displayed witness, child, and nefness are exact; no exhaustive q4 or global minimal-q claim is made. This certifies the complete lattice/chamber chain only. The eleven equation-level characteristic-zero pencils after D13/MW4, transported sections, and specialization to curve 273 remain open.",
-      "canonical_source": "elliptic-curves/notes/ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md",
+      "title": "Exact lossless reverse Neron--Severi transport from pinned R17 to H3",
+      "scope": "The H3 q6/q8 entrance followed by eleven stored primitive integral U-neighbours with q-sequence (24,6,8,4,4,4,4,4,4,4,6) gives the selected nef degree-two lattice corridor from H3 E7+E8/MW2 through D13/MW4 to a rootless MW17 frame. Every suffix factor presentation has old-fibre degree two, and exact chamber checkers prove nefness. A pinned determinant-one positive-frame isometry C now identifies the formerly unnamed rootless endpoint F with the recovered rank17 Gram P by C^t*P*C=F. Inverting the complete determinant-one 19-dimensional composite gives an explicit integral R with R*(U+(-P))*R^t=U+(-H3), and a generated fourteen-stage ledger retains every full frame, incoming transition and inverse, and every stage basis in both H3 and pinned-R17 coordinates. The ledger separately retains an exact full-NS bridge between the first dominant D13 representative used by the lattice corridor and the unequal component-nef D13 representative used by the q8 equation route; that bridge changes the embedded U, so these marked elliptic fibrations are not interchangeable by their common D13/MW4 label. The final q6 witness comes from a bounded search, but the displayed witness, child, nefness, endpoint isometry, and reverse transport are exact; no exhaustive q4, global minimal-q, or optimal-route claim is made. This is a lattice/marking certificate only. The eleven equation-level characteristic-zero pencils after D13/MW4, explicit transported section functions, and specialization to curve 273 remain open.",
+      "canonical_source": "elkies-k3/RANK17_TO_H3_REVERSE_TRANSPORT_2026-08-23.md",
       "dependencies": [
         "EC-K3-H3-Q8-QQ-D13"
       ],
-      "checker": "elkies-k3/scripts/verify_h3_d13_to_mw17_path.sage",
+      "checker": "elkies-k3/scripts/verify_rank17_to_h3_reverse_transport.sage",
       "proof_type": "exact_symbolic",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:3a3a1b51553c23373e6889af9e129f5d3667663e127ef03c9cedb026f7ee1bdb",
+      "artifact_hash": "sha256:78c22521c0103166080aba72839afa0bd40a3a129081eeef5291196878465a30",
       "software_lock": [
         "elkies-k3/scripts/exact_neighbor_engine.sage",
+        "elkies-k3/scripts/analyze_h3_first_q6_chamber.sage",
+        "elkies-k3/scripts/classify_h3_q6_child_q8_orbits.sage",
         "elkies-k3/scripts/analyze_h3_d13_q4_chamber.sage",
         "elkies-k3/scripts/analyze_h3_rank_growing_degree2_chain.sage",
         "elkies-k3/scripts/analyze_h3_mw10_to_rootless_chambers.sage",
         "elkies-k3/scripts/verify_h3_d13_to_mw17_path.sage",
-        "artifacts/generated-results/elkies-k3-h3-d13-to-mw17-path.json"
+        "elkies-k3/scripts/verify_rank17_to_h3_reverse_transport.sage",
+        "elkies-k3/data/fibrations/h3_rootless_mw17_to_pinned_rank17_isometry.txt",
+        "artifacts/generated-results/elkies-k3-h3-q6-q8-orbits.json",
+        "artifacts/generated-results/elkies-k3-h3-d13-to-mw17-path.json",
+        "artifacts/generated-results/elkies-k3-rank17-to-h3-reverse-transport.json"
       ],
       "supersedes_notes": [],
       "supersedes": [],
@@ -33741,6 +33747,8 @@
       "consumers": [
         "REPRODUCE.md",
         "elkies-k3/KUMAR_E7E8_BACKTRACK.md",
+        "elkies-k3/CONSTRUCTION_ROUTES.md",
+        "elkies-k3/RANK17_TO_H3_REVERSE_TRANSPORT_2026-08-23.md",
         "elliptic-curves/notes/ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md"
       ],
       "invalidates_assumptions": [],

@@ -125,14 +125,8 @@ q8=json.loads(Q8.read_text())
 assert preflight["status"]=="PASS_H3_Q24_D12_MODP_RR_PREFLIGHT"
 assert resolution["status"]=="PASS_EXPLICIT_MODP_I9STAR_D13_COMPONENT_RESOLUTION"
 assert graph["status"]=="PASS_H3_Q24_AFFINE_D13_COMPONENT_GRAPH"
-assert cluster["status"] in (
-    "PASS_H3_Q24_EFFECTIVE_I9STAR_CLUSTER",
-    "CANDIDATE_H3_Q24_EFFECTIVE_I9STAR_CLUSTER",
-)
+assert cluster["status"]=="PASS_H3_Q24_EFFECTIVE_I9STAR_CLUSTER"
 assert cluster["effective_root_sign"]==-1
-cluster_sign_certified=(
-    cluster["status"]=="PASS_H3_Q24_EFFECTIVE_I9STAR_CLUSTER"
-)
 assert mod["status"]=="PASS_MODULAR_Q24_FROM_DIRECT_DEGREE46_BRIDGE"
 assert trans["status"]=="PASS_EXACT_Q24_PHYSICAL_TO_EQUATION_TRANSLATION"
 assert q8["status"]=="PASS_EXACT_CORRECTED_Q8_D13_CHILD"
@@ -541,9 +535,7 @@ if final_dimension==2:
         }
         is_d12=(root_rank,root_det,euler)==(12,4,24)
         terminal_status=(
-            ("PASS_H3_Q24_RESOLVED_CLUSTER_D12_MODP"
-             if cluster_sign_certified else
-             "CANDIDATE_H3_Q24_RESOLVED_CLUSTER_D12_MODP")
+            "PASS_H3_Q24_RESOLVED_CLUSTER_D12_MODP"
             if is_d12 else "GENUS_ONE_CHILD_NOT_D12"
         )
         print(
@@ -586,14 +578,13 @@ payload={
     "quartic_degree":quartic_degree,
     "child":child_summary,
     "proof_boundary":(
-        "The local conditions use the sign=-1 D13 cluster candidate, actual "
-        "blow-up chronology and local strict-transform surface rings. If the "
-        "cluster sign is not independently transport-certified, even a D12 "
-        "result is diagnostic only. After sign transport is closed, the next "
-        "promotion gate is an independent valuation replay on all redundant "
-        "D13 components and then characteristic-zero reconstruction."
+        "The local conditions come from the effective D13 sign, actual blow-up "
+        "chronology and local strict-transform surface rings.  If this status "
+        "is PASS_H3_Q24_RESOLVED_CLUSTER_D12_MODP, the remaining promotion gate "
+        "is an independent replay/valuation check on all redundant D13 "
+        "components and then characteristic-zero reconstruction.  Any other "
+        "status is diagnostic and must not be promoted to an RR certificate."
     ),
-    "effective_sign_transport_certified":bool(cluster_sign_certified),
 }
 OUT=(args.output.resolve() if args.output else
      LOCAL/f"q24-d12-resolved-cluster-rr-mod-{p}.json")

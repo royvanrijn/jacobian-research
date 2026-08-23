@@ -76,12 +76,8 @@ parser.add_argument("--samples",type=int,default=108)
 parser.add_argument("--scan-limit",type=int,default=300)
 parser.add_argument("--sample-output",type=Path)
 parser.add_argument("--output",type=Path)
-parser.add_argument("--collect-only",action="store_true")
-parser.add_argument("--stride",type=int,default=1)
 args=parser.parse_args()
-if args.stride <= 0:
-    raise ValueError("stride must be positive")
-if args.samples < 102 and not args.collect_only:
+if args.samples < 102:
     raise ValueError("need at least 102 exact samples; 108 is recommended")
 
 ROOT=locate_repo(args.repo)
@@ -515,7 +511,7 @@ if SAMPLE_OUTPUT.exists():
 used={int(u0) for u0,unused_x,unused_y in samples}
 candidate=args.start
 if used:
-    candidate=max(used)+args.stride
+    candidate=max(used)+1
 
 def save_samples():
     SAMPLE_OUTPUT.parent.mkdir(parents=True,exist_ok=True)
@@ -534,7 +530,7 @@ def save_samples():
 
 while len(samples)<args.samples and attempted<args.scan_limit:
     tau=ZZ(candidate)
-    candidate+=args.stride
+    candidate+=1
     attempted+=1
     if int(tau) in used:
         continue
@@ -572,15 +568,6 @@ print(
     "stage=collection|status=PASS",
     flush=True,
 )
-
-if args.collect_only:
-    save_samples()
-    print(
-        f"Q24QQ_COLLECT_ONLY|good={len(samples)}|start={args.start}|"
-        f"stride={args.stride}|status=PASS",
-        flush=True,
-    )
-    raise SystemExit(0)
 
 # ===========================================================================
 # Exact rational interpolation x=N/D, degrees 52/48.

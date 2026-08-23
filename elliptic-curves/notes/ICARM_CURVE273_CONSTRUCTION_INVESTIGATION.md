@@ -236,11 +236,17 @@ unimodular.  The authoritative source, chamber, and transport replays are
 [`../../elkies-k3/scripts/lift_h21_p1_modular.sage`](../../elkies-k3/scripts/lift_h21_p1_modular.sage),
 [`../../elkies-k3/scripts/analyze_h3_rank_growing_degree2_chain.sage`](../../elkies-k3/scripts/analyze_h3_rank_growing_degree2_chain.sage),
 [`../../elkies-k3/scripts/analyze_h3_mw10_to_rootless_chambers.sage`](../../elkies-k3/scripts/analyze_h3_mw10_to_rootless_chambers.sage),
+[`../../elkies-k3/scripts/verify_h3_d13_to_mw17_path.sage`](../../elkies-k3/scripts/verify_h3_d13_to_mw17_path.sage),
 and
-[`../../elkies-k3/scripts/verify_h3_d13_to_mw17_path.sage`](../../elkies-k3/scripts/verify_h3_d13_to_mw17_path.sage).
+[`../../elkies-k3/scripts/verify_rank17_to_h3_reverse_transport.sage`](../../elkies-k3/scripts/verify_rank17_to_h3_reverse_transport.sage).
+The last checker supplies the previously missing determinant-one isometry to
+the pinned recovered rank-17 Gram and a lossless inverse NS transport to H3.
+It also proves that the dominant D13 lattice record and component-nef D13
+equation record require a non-`U`-preserving marking bridge rather than an
+unqualified identification.
 This supersedes the H2/q80 deformation as the preferred source transport;
 the latter remains a valuable independent downstream comparison.
-<!-- status-consumer: EC-K3-H3-D13-MW17-LATTICE-CHAIN 30c9f060a5da7ed5 -->
+<!-- status-consumer: EC-K3-H3-D13-MW17-LATTICE-CHAIN 2c6a2a36699933ab -->
 
 The older H2 route remains a separate downstream comparison.  Its height-4
 and height-`237/2` directions define the Humbert intersection

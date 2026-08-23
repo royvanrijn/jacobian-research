@@ -1,6 +1,6 @@
 #!/usr/bin/env sage -python
 """
-H3-03 D13/MW4 --q24--> D12/MW5 resolved-cluster RR probe over GF(p).
+H3-03 D13/MW4 --q24--> D12/MW5 effective-D13 RR probe over GF(p).
 
 Status: ACTIVE_SEARCH.  Promote only if the resolved cluster gives h0=2 and
 the resulting degree-two chord pencil has a degree-3/4 squarefree radicand
@@ -11,7 +11,7 @@ derived from the effective D13 component orientation and the actual blow-up
 chronology:
 
   effective local component cycle -> divisorial valuation thresholds
-  -> infinitely-near point cluster C01:2,C02:2,C04:2,C06:3.
+  -> infinitely-near point cluster C01:3,C02:2,C04:2,C06:2,C08:2.
 
 The global setup is the already-passing q24 preflight:
 
@@ -48,7 +48,7 @@ import itertools
 import json
 from pathlib import Path
 
-from sage.all import GF, PolynomialRing, QQ, ZZ, identity_matrix, matrix
+from sage.all import GF, PolynomialRing, QQ, ZZ, identity_matrix, matrix, vector
 
 
 def locate_repo(explicit=None):
@@ -95,7 +95,7 @@ exec(compile(CORE.read_text(),str(CORE),"exec"))
 PREFLIGHT=LOCAL/f"q24-d12-rr-preflight-mod-{args.prime}.json"
 RESOLUTION=LOCAL/f"q24-i9star-resolution-mod-{args.prime}.json"
 GRAPH=LOCAL/f"q24-i9star-component-graph-mod-{args.prime}.json"
-CLUSTER=LOCAL/f"q24-i9star-effective-cluster-mod-{args.prime}.json"
+EFFECTIVE=LOCAL/f"q24-effective-d13-transport-mod-{args.prime}.json"
 MOD=LOCAL/f"q24-degree46-direct-global-mod-{args.prime}.json"
 TRANS=LOCAL/"q8-q24-physical-to-equation-translation.json"
 q8_candidates=[
@@ -110,14 +110,14 @@ Q8=next((
 if Q8 is None:
     raise SystemExit("No passing exact D13 q8 child artifact")
 
-for path in (PREFLIGHT,RESOLUTION,GRAPH,CLUSTER,MOD,TRANS,Q8,CORE):
+for path in (PREFLIGHT,RESOLUTION,GRAPH,EFFECTIVE,MOD,TRANS,Q8,CORE):
     if not path.exists():
         raise SystemExit(f"Missing prerequisite: {path}")
 
 preflight=json.loads(PREFLIGHT.read_text())
 resolution=json.loads(RESOLUTION.read_text())
 graph=json.loads(GRAPH.read_text())
-cluster=json.loads(CLUSTER.read_text())
+effective=json.loads(EFFECTIVE.read_text())
 mod=json.loads(MOD.read_text())
 trans=json.loads(TRANS.read_text())
 q8=json.loads(Q8.read_text())
@@ -125,24 +125,186 @@ q8=json.loads(Q8.read_text())
 assert preflight["status"]=="PASS_H3_Q24_D12_MODP_RR_PREFLIGHT"
 assert resolution["status"]=="PASS_EXPLICIT_MODP_I9STAR_D13_COMPONENT_RESOLUTION"
 assert graph["status"]=="PASS_H3_Q24_AFFINE_D13_COMPONENT_GRAPH"
-assert cluster["status"] in (
-    "PASS_H3_Q24_EFFECTIVE_I9STAR_CLUSTER",
-    "CANDIDATE_H3_Q24_EFFECTIVE_I9STAR_CLUSTER",
-)
-assert cluster["effective_root_sign"]==-1
-cluster_sign_certified=(
-    cluster["status"]=="PASS_H3_Q24_EFFECTIVE_I9STAR_CLUSTER"
-)
+assert effective["status"]=="PASS_EXACT_H3_Q24_EFFECTIVE_D13_TRANSPORT"
 assert mod["status"]=="PASS_MODULAR_Q24_FROM_DIRECT_DEGREE46_BRIDGE"
 assert trans["status"]=="PASS_EXACT_Q24_PHYSICAL_TO_EQUATION_TRANSLATION"
 assert q8["status"]=="PASS_EXACT_CORRECTED_Q8_D13_CHILD"
 
-expected_plan=[("C01",2),("C02",2),("C04",2),("C06",3)]
-plan=[
-    (str(row["center"]),int(row["additional_point_order"]))
-    for row in cluster["common_nonzero_centre_plan"]
+# Derive the local component profile directly from the certified affine
+# I9* graph, D.F=2, nefness, and the D12 child.  This avoids choosing an
+# abstract D13 Weyl chamber.
+
+vertices=list(map(str,graph["geometric_graph"]["affine_vertices"]))
+index={name:i for i,name in enumerate(vertices)}
+edges=[
+    (str(a),str(b))
+    for a,b in graph["geometric_graph"]["affine_edges"]
+]
+n=len(vertices)
+assert n==14 and "F0" in index
+
+I=matrix(ZZ,n,n)
+for i in range(n):
+    I[i,i]=-2
+for a,b in edges:
+    I[index[a],index[b]]=1
+    I[index[b],index[a]]=1
+
+multiplicity={
+    str(k):int(v)
+    for k,v in graph["fibre_multiplicities"].items()
+}
+m=vector(ZZ,[multiplicity[name] for name in vertices])
+assert I*m==vector(ZZ,[0]*n)
+
+# Horizontal O+P both meet the identity component F0.
+horizontal=vector(ZZ,[2 if name=="F0" else 0 for name in vertices])
+
+# Since sum m_i (D.C_i)=D.F=2 and all intersections are nonnegative
+# integers, there are only these possibilities.
+patterns=[]
+
+mult1=[name for name in vertices if multiplicity[name]==1]
+mult2=[name for name in vertices if multiplicity[name]==2]
+
+for name in mult1:
+    d={v:0 for v in vertices}
+    d[name]=2
+    patterns.append(d)
+
+for i,a in enumerate(mult1):
+    for b in mult1[i+1:]:
+        d={v:0 for v in vertices}
+        d[a]=d[b]=1
+        patterns.append(d)
+
+for name in mult2:
+    d={v:0 for v in vertices}
+    d[name]=1
+    patterns.append(d)
+
+candidates=[]
+f0=index["F0"]
+unknown=[i for i in range(n) if i!=f0]
+B=I.change_ring(QQ)[:,unknown]
+
+for dct in patterns:
+    d=vector(ZZ,[dct[name] for name in vertices])
+    assert sum(m[i]*d[i] for i in range(n))==2
+
+    zero=[i for i in range(n) if d[i]==0]
+
+    # The old fibre components killed by the new fibre must give D12:
+    # rank 12 and determinant 4.
+    if len(zero)!=12:
+        continue
+    G=(-I.matrix_from_rows_and_columns(zero,zero))
+    if G.rank()!=12 or abs(G.det())!=4:
+        continue
+
+    rhs=vector(QQ,d-horizontal)
+    try:
+        sol=B.solve_right(rhs)
+    except ValueError:
+        continue
+    if not all(value in ZZ for value in sol):
+        continue
+
+    coeff=[ZZ(0)]*n
+    for j,i in enumerate(unknown):
+        coeff[i]=ZZ(sol[j])
+
+    assert I*vector(ZZ,coeff)==d-horizontal
+
+    candidates.append((dct,coeff))
+
+assert len(candidates)==1, [
+    [name for name,value in d.items() if value]
+    for d,c in candidates
+]
+
+intersection,coeff=candidates[0]
+positive=[
+    (name,int(intersection[name]))
+    for name in vertices if intersection[name]
+]
+assert positive==[("C10a",1),("C10b",1)] or \
+       positive==[("C10b",1),("C10a",1)]
+
+component_coefficients={
+    name:int(coeff[index[name]]) for name in vertices
+}
+
+expected_coefficients={
+    "F0":0,
+    "C01":-2,
+    "C02":-4,
+    "C03":-3,
+    "C04":-6,
+    "C05":-5,
+    "C06":-8,
+    "C07":-7,
+    "C08":-10,
+    "C09":-9,
+    "C10a":-6,
+    "C10b":-6,
+    "C11":-11,
+    "C12":-1,
+}
+assert component_coefficients==expected_coefficients
+
+print(
+    "Q24AFFINED12_PROFILE|"
+    "positive=C10a:1,C10b:1|"
+    + "|".join(
+        f"{name}={component_coefficients[name]}"
+        for name in sorted(component_coefficients)
+    )
+    + "|status=PASS_UNIQUE_AFFINE_D12_PROFILE",
+    flush=True,
+)
+
+thresholds={
+    name:max(0,-component_coefficients[name])
+    for name in vertices
+}
+
+chronology=graph["geometric_graph"]["chronology"]
+plan=[]
+
+for step in chronology:
+    center=str(step["center"])
+    active=list(map(str,step["active_geometric_components"]))
+    created=list(map(str,step["new_geometric_components"]))
+
+    baseline=sum(thresholds[name] for name in active)
+    residual=[
+        max(0,thresholds[name]-baseline)
+        for name in created
+    ]
+
+    if len(residual)==2:
+        assert residual[0]==residual[1] or max(residual)==0
+
+    extra=max(residual) if residual else 0
+    if extra:
+        plan.append((center,int(extra)))
+
+expected_plan=[
+    ("C01",2),
+    ("C02",2),
+    ("C04",2),
+    ("C06",2),
+    ("C08",2),
 ]
 assert plan==expected_plan
+
+print(
+    "Q24AFFINED12_CLUSTER|"
+    + "|".join(f"{name}={order}" for name,order in plan)
+    + "|status=PASS_DERIVED_2_2_2_2_2",
+    flush=True,
+)
 
 p=ZZ(args.prime)
 F=GF(p)
@@ -257,7 +419,7 @@ assert len(local_numerators)==10
 
 print(
     "Q24RESCLUSTER_INPUT|ambient=58|collision_rank=48|post_collision=10|"
-    f"I9base={int(alpha)}|common_den_unit=1|cluster=2,2,2,3|status=PASS",
+    f"I9base={int(alpha)}|common_den_unit=1|cluster={','.join(str(q) for _,q in plan)}|status=PASS",
     flush=True,
 )
 
@@ -315,18 +477,56 @@ def local_order_matrix(basis,surface_eq,point,required_order):
 
 
 def canonical_after_condition(poly,surface_eq,point,required_order):
-    """Choose an equivalent numerator whose ambient order is visibly enough."""
+    """
+    Choose an ambient representative with visible order >= required_order.
+
+    Membership was already proved in (surface) + m^required_order.  Reducing
+    modulo the surface alone is not order-preserving when the surface itself
+    has multiplicity below required_order.  Instead explicitly subtract the
+    low-order multiple of the surface whose existence the membership test
+    guarantees.
+    """
     a,b,c=map(F,point)
     sp=shifted(poly,point)
     ss=shifted(surface_eq,point)
-    rem=sp.reduce(S.ideal([ss]).groebner_basis())
-    if order_at_origin(rem)<required_order:
-        raise ArithmeticError(
-            f"surface-normal representative has order {order_at_origin(rem)}, "
-            f"expected >= {required_order}"
+
+    surface_order=order_at_origin(ss)
+
+    if surface_order >= required_order:
+        h=sp
+    else:
+        q_bound=required_order-surface_order
+        qmons=monomials_below(q_bound)
+        mons=monomials_below(required_order)
+
+        M=matrix(
+            F,len(mons),len(qmons),
+            lambda i,j:(qmons[j]*ss).monomial_coefficient(mons[i]),
         )
-    # Undo the translation.  This remains equivalent modulo the surface.
-    return S(rem(u-a,x-b,y-c))
+        rhs=vector(
+            F,[sp.monomial_coefficient(mon) for mon in mons]
+        )
+
+        try:
+            coeff=M.solve_right(rhs)
+        except ValueError as exc:
+            raise ArithmeticError(
+                "surface-local membership passed but explicit low-order "
+                "surface multiple could not be reconstructed"
+            ) from exc
+
+        h=S(sp)
+        for j in range(len(qmons)):
+            h -= coeff[j]*qmons[j]*ss
+
+    if order_at_origin(h) < required_order:
+        raise ArithmeticError(
+            f"explicit surface-adjusted representative has order "
+            f"{order_at_origin(h)}, expected >= {required_order}"
+        )
+
+    # Undo the translation back to the current blow-up chart.
+    return S(h(u-a,x-b,y-c))
 
 
 def chart_substitutions(point,kind):
@@ -541,9 +741,9 @@ if final_dimension==2:
         }
         is_d12=(root_rank,root_det,euler)==(12,4,24)
         terminal_status=(
-            ("PASS_H3_Q24_RESOLVED_CLUSTER_D12_MODP"
+            ("CANDIDATE_H3_Q24_EFFECTIVE_D13_D12_MODP"
              if cluster_sign_certified else
-             "CANDIDATE_H3_Q24_RESOLVED_CLUSTER_D12_MODP")
+             "CANDIDATE_H3_Q24_EFFECTIVE_D13_D12_MODP")
             if is_d12 else "GENUS_ONE_CHILD_NOT_D12"
         )
         print(
@@ -557,14 +757,14 @@ if final_dimension==2:
         terminal_status="RESOLVED_CLUSTER_NOT_GENUS_ONE"
 
 payload={
-    "schema":"elkies-k3.h3-q24-d12-resolved-cluster-rr-modp.v1",
+    "schema":"elkies-k3.h3-q24-d12-effective-d13-rr-modp.v1",
     "status":terminal_status,
     "prime":int(p),
     "inputs":{
         "preflight":str(PREFLIGHT.relative_to(ROOT)),
         "resolution":str(RESOLUTION.relative_to(ROOT)),
         "component_graph":str(GRAPH.relative_to(ROOT)),
-        "effective_cluster":str(CLUSTER.relative_to(ROOT)),
+        "effective_d13_transport":str(EFFECTIVE.relative_to(ROOT)),
     },
     "global_rr":{
         "ambient_dimension":58,
@@ -586,17 +786,18 @@ payload={
     "quartic_degree":quartic_degree,
     "child":child_summary,
     "proof_boundary":(
-        "The local conditions use the sign=-1 D13 cluster candidate, actual "
-        "blow-up chronology and local strict-transform surface rings. If the "
-        "cluster sign is not independently transport-certified, even a D12 "
-        "result is diagnostic only. After sign transport is closed, the next "
-        "promotion gate is an independent valuation replay on all redundant "
-        "D13 components and then characteristic-zero reconstruction."
+        "The local point conditions are derived from the exact O8-normalized "
+        "D13 transport and are orientation-independent. The remaining open "
+        "promotion gate is to identify that transported simple-root chamber "
+        "with the explicit resolved geometric component charts, not merely "
+        "with their abstract D13 graph. Therefore even h0=2 + quartic degree "
+        "4 + D12 is reported as a candidate until that marking is replayed."
     ),
-    "effective_sign_transport_certified":bool(cluster_sign_certified),
+    "affine_D12_component_profile_certified":True,
+    "geometric_Weyl_chamber_assumption_used":False,
 }
 OUT=(args.output.resolve() if args.output else
-     LOCAL/f"q24-d12-resolved-cluster-rr-mod-{p}.json")
+     LOCAL/f"q24-d12-effective-d13-rr-mod-{p}.json")
 OUT.write_text(json.dumps(payload,indent=2,sort_keys=True,default=int)+"\n")
 print(f"OUTPUT|{OUT}",flush=True)
 print(

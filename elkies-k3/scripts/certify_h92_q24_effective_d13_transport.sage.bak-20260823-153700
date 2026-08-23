@@ -1,0 +1,414 @@
+#!/usr/bin/env sage -python
+"""
+Exact transport of the pinned effective D13 simple components into the current
+q8 equation frame for the H3 q24 -> D12 hop.
+
+This fixes the previous conceptual error: a deterministic simple-root basis of
+the abstract D13 lattice is NOT automatically the geometric effective chamber.
+
+The script replays:
+  pinned D13 effective roots
+    -> inverse classifier bridge
+    -> 102 physical q8 component reflections
+    -> q6 Weyl transport
+    -> exact Eichler translation
+    -> current equation q8 frame.
+
+It then expresses the true effective component basis in the deterministic
+equation D13 basis, converts the exact vertical correction to that effective
+basis, and maps the resulting coefficients onto the resolved geometric D13
+dual graph (two spinor-arm orientations).
+
+No Riemann--Roch point-cluster condition is asserted here.
+"""
+
+import argparse
+import json
+import sys
+from pathlib import Path
+
+from sage.all import QQ, ZZ, matrix, vector
+
+
+def locate_repo(explicit=None):
+    candidates=[]
+    if explicit:
+        candidates.append(Path(explicit).expanduser())
+    cwd=Path.cwd().resolve()
+    candidates += [cwd,*cwd.parents]
+    home=Path.home()
+    candidates += [
+        home/"Documents"/"jacobian-research",
+        home/"jacobian-research",
+        home/"src"/"jacobian-research",
+        home/"git"/"jacobian-research",
+        home/"projects"/"jacobian-research",
+    ]
+    seen=set()
+    for candidate in candidates:
+        try:
+            candidate=candidate.resolve()
+        except Exception:
+            continue
+        if candidate in seen:
+            continue
+        seen.add(candidate)
+        if ((candidate/"elkies-k3/scripts").is_dir()
+                and (candidate/"artifacts/generated-results").is_dir()):
+            return candidate
+    raise SystemExit("Could not locate jacobian-research")
+
+
+def edge(a,b):
+    return tuple(sorted((str(a),str(b))))
+
+
+def adjacency(vertices, edges):
+    ans={str(v):set() for v in vertices}
+    for a,b in edges:
+        ans[str(a)].add(str(b))
+        ans[str(b)].add(str(a))
+    return ans
+
+
+def arm_data(adj):
+    forks=[v for v,n in adj.items() if len(n)==3]
+    if len(forks)!=1:
+        raise ArithmeticError(f"expected one D13 fork, got {forks}")
+    fork=forks[0]
+    arms=[]
+    for first in sorted(adj[fork]):
+        prev=fork
+        cur=first
+        path=[cur]
+        while len(adj[cur])==2:
+            nxt=next(v for v in adj[cur] if v!=prev)
+            prev,cur=cur,nxt
+            path.append(cur)
+        if len(adj[cur])!=1:
+            raise ArithmeticError("arm did not end in a leaf")
+        arms.append(path)
+    arms.sort(key=lambda p:(len(p),tuple(map(str,p))))
+    return fork,arms
+
+
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--repo",type=Path)
+parser.add_argument("--prime",type=int,default=100003)
+parser.add_argument("--output",type=Path)
+args=parser.parse_args()
+
+ROOT=locate_repo(args.repo)
+LOCAL=ROOT/"artifacts/local/elkies-k3"
+ZERO_ANCHOR=ROOT/"elkies-k3/scripts/audit_h92_q8_d13_zero_anchor_v2.sage"
+CLOSE=ROOT/"elkies-k3/scripts/close_h92_q8_q24_by_q6_translation.sage"
+GRAPH=LOCAL/f"q24-i9star-component-graph-mod-{args.prime}.json"
+
+for path in (ZERO_ANCHOR,CLOSE,GRAPH):
+    if not path.exists():
+        raise SystemExit(f"Missing prerequisite: {path}")
+
+graph=json.loads(GRAPH.read_text())
+assert graph["status"]=="PASS_H3_Q24_AFFINE_D13_COMPONENT_GRAPH"
+
+# ---------------------------------------------------------------------------
+# 1. Replay the pinned -> physical q8 chamber path.
+# ---------------------------------------------------------------------------
+zero_scope={"__name__":"__embedded_q8_zero_anchor_for_root_transport__"}
+saved_argv=list(sys.argv)
+try:
+    zero_tmp=LOCAL/"q24-effective-d13-zero-anchor-replay.json"
+    sys.argv=[
+        str(ZERO_ANCHOR),
+        "--repo",str(ROOT),
+        "--output",str(zero_tmp),
+    ]
+    exec(compile(ZERO_ANCHOR.read_text(),str(ZERO_ANCHOR),"exec"),zero_scope)
+finally:
+    sys.argv=saved_argv
+
+need_zero=(
+    "source_ns","Bpinned_to_simple","Bsimple","bridge",
+    "simple_root_source","physical_reflections","actual_roots",
+    "F_actual","reflect",
+)
+missing=[name for name in need_zero if name not in zero_scope]
+if missing:
+    raise SystemExit("zero-anchor replay missing: "+",".join(missing))
+
+source_ns=matrix(ZZ,zero_scope["source_ns"])
+Bpinned_to_simple=matrix(ZZ,zero_scope["Bpinned_to_simple"])
+Bsimple=matrix(ZZ,zero_scope["Bsimple"])
+bridge=list(zero_scope["bridge"])
+simple_root_source=tuple(vector(ZZ,r) for r in zero_scope["simple_root_source"])
+physical_reflections=list(zero_scope["physical_reflections"])
+actual_roots=tuple(vector(ZZ,r) for r in zero_scope["actual_roots"])
+F_actual=vector(ZZ,zero_scope["F_actual"])
+reflect=zero_scope["reflect"]
+
+Bpinned_source=Bpinned_to_simple*Bsimple
+assert Bpinned_source.nrows()==Bpinned_source.ncols()==19
+assert abs(Bpinned_source.det())==1
+
+# The independent q24 chamber certificate fixes the effective simple roots in
+# the pinned root-adapted frame as NEGATIVES of the first 13 root coordinates.
+effective_raw=[]
+for i in range(13):
+    coords=vector(ZZ,[0,0]+[-ZZ(j==i) for j in range(17)])
+    root=vector(ZZ,coords*Bpinned_source)
+
+    # dominant -> nef: invert the classifier bridge
+    for idx,unused_pairing in reversed(bridge):
+        root=reflect(root,source_ns,simple_root_source[idx])
+
+    # nef -> actual component-nef q8 target
+    for idx,unused_pairing in physical_reflections:
+        root=reflect(root,source_ns,actual_roots[idx])
+
+    effective_raw.append(root)
+
+Reff_raw=matrix(ZZ,[list(r) for r in effective_raw])
+Cartan_raw=-(Reff_raw*source_ns*Reff_raw.transpose())
+assert Cartan_raw.det()==4
+assert all(Cartan_raw[i,i]==2 for i in range(13))
+assert all(
+    Cartan_raw[i,j] in (0,-1)
+    for i in range(13) for j in range(13) if i!=j
+)
+assert all(r*source_ns*F_actual==0 for r in effective_raw)
+
+print(
+    "Q24EFFD13_PINNED_TO_RAW|"
+    f"bridge={len(bridge)}|physical_reflections={len(physical_reflections)}|"
+    "roots=13|cartan_det=4|status=PASS",
+    flush=True,
+)
+
+# ---------------------------------------------------------------------------
+# 2. Replay raw physical q8 -> current equation q8.
+# ---------------------------------------------------------------------------
+close_scope={"__name__":"__embedded_q24_close_for_effective_roots__"}
+saved_argv=list(sys.argv)
+try:
+    sys.argv=[str(CLOSE)]
+    exec(compile(CLOSE.read_text(),str(CLOSE),"exec"),close_scope)
+finally:
+    sys.argv=saved_argv
+
+need_close=(
+    "ns","F8eq","D24eq","O8","P24","root_source","vr","vf",
+    "vertical","weyl_transport","tau",
+)
+missing=[name for name in need_close if name not in close_scope]
+if missing:
+    raise SystemExit("q24 close replay missing: "+",".join(missing))
+
+ns=matrix(ZZ,close_scope["ns"])
+assert ns==source_ns
+F8eq=vector(ZZ,close_scope["F8eq"])
+D24eq=vector(ZZ,close_scope["D24eq"])
+O8=vector(ZZ,close_scope["O8"])
+P24=vector(ZZ,close_scope["P24"])
+Rdet=matrix(ZZ,[list(vector(ZZ,r)) for r in close_scope["root_source"]])
+vr=vector(ZZ,close_scope["vr"])
+vf=ZZ(close_scope["vf"])
+vertical=vector(ZZ,close_scope["vertical"])
+weyl_transport=close_scope["weyl_transport"]
+tau=close_scope["tau"]
+
+effective_eq=[]
+for root in effective_raw:
+    effective_eq.append(vector(ZZ,tau(weyl_transport(root))))
+Reff=matrix(ZZ,[list(r) for r in effective_eq])
+
+Cartan_eff=-(Reff*ns*Reff.transpose())
+assert Cartan_eff==Cartan_raw
+assert all(r*ns*F8eq==0 for r in effective_eq)
+assert all(r*ns*O8==0 for r in effective_eq)
+# q24 correction is exactly zero, so its horizontal section meets identity.
+assert all(r*ns*P24==0 for r in effective_eq)
+
+q24_pairings=vector(ZZ,[D24eq*ns*r for r in effective_eq])
+assert all(value>=0 for value in q24_pairings)
+
+print(
+    "Q24EFFD13_EQUATION|"
+    f"pairings={','.join(map(str,q24_pairings))}|"
+    f"pairing_sum={sum(q24_pairings)}|nonnegative=1|"
+    "O8_root=0|P24_root=0|status=PASS_EFFECTIVE_CHAMBER",
+    flush=True,
+)
+
+# ---------------------------------------------------------------------------
+# 3. Exact Weyl basis change from deterministic roots to effective roots.
+# ---------------------------------------------------------------------------
+RdetQ=Rdet.change_ring(QQ)
+W_rows=[]
+for root in effective_eq:
+    coeff=RdetQ.solve_left(vector(QQ,root))
+    if not all(value in ZZ for value in coeff):
+        raise ArithmeticError("effective root is not integral in deterministic D13 basis")
+    W_rows.append([ZZ(value) for value in coeff])
+W=matrix(ZZ,W_rows)
+assert abs(W.det())==1
+assert W*Rdet==Reff
+
+det_root_gram=-(Rdet*ns*Rdet.transpose())
+assert W*det_root_gram*W.transpose()==Cartan_eff
+
+vertical_root_class=vector(ZZ,vr)*Rdet
+cQ=Reff.change_ring(QQ).solve_left(vector(QQ,vertical_root_class))
+if not all(value in ZZ for value in cQ):
+    raise ArithmeticError("vertical correction is not integral in effective D13 basis")
+ceff=vector(ZZ,[ZZ(value) for value in cQ])
+assert ceff*Reff==vertical_root_class
+assert vf*F8eq + ceff*Reff == vertical
+
+# Independent intersection replay:
+assert vector(ZZ,[-value for value in ceff*Cartan_eff])==q24_pairings
+
+print(
+    "Q24EFFD13_VERTICAL|"
+    f"fibre={vf}|effective_roots={','.join(map(str,ceff))}|"
+    f"neg_support={sum(value<0 for value in ceff)}|"
+    f"pos_support={sum(value>0 for value in ceff)}|"
+    f"L1={sum(abs(int(value)) for value in ceff)}|status=PASS",
+    flush=True,
+)
+
+# ---------------------------------------------------------------------------
+# 4. Map the TRUE effective D13 graph to the resolved geometric graph.
+# ---------------------------------------------------------------------------
+lat_vertices={str(i) for i in range(13)}
+lat_edges={
+    edge(str(i),str(j))
+    for i in range(13) for j in range(i+1,13)
+    if Cartan_eff[i,j]==-1
+}
+lat_adj=adjacency(lat_vertices,lat_edges)
+lat_fork,lat_arms=arm_data(lat_adj)
+assert sorted(len(p) for p in lat_arms)==[1,1,10]
+
+geo_vertices=set(map(str,graph["geometric_graph"]["root_vertices"]))
+geo_edges={edge(a,b) for a,b in graph["geometric_graph"]["root_edges"]}
+geo_adj=adjacency(geo_vertices,geo_edges)
+geo_fork,geo_arms=arm_data(geo_adj)
+assert sorted(len(p) for p in geo_arms)==[1,1,10]
+
+lat_short=[p for p in lat_arms if len(p)==1]
+lat_long=next(p for p in lat_arms if len(p)==10)
+geo_short=[p for p in geo_arms if len(p)==1]
+geo_long=next(p for p in geo_arms if len(p)==10)
+
+profiles=[]
+for swap in (0,1):
+    mapping={lat_fork:geo_fork}
+    for a,b in zip(lat_long,geo_long):
+        mapping[a]=b
+    mapping[lat_short[0][0]]=geo_short[swap][0]
+    mapping[lat_short[1][0]]=geo_short[1-swap][0]
+
+    image_edges={edge(mapping[a],mapping[b]) for a,b in lat_edges}
+    assert image_edges==geo_edges
+
+    geometric_coefficients={
+        mapping[str(i)]:int(ceff[i]) for i in range(13)
+    }
+    required_vanishing={
+        name:max(0,-int(coeff))
+        for name,coeff in geometric_coefficients.items()
+    }
+
+    profiles.append({
+        "orientation":swap,
+        "effective_root_to_geometric":mapping,
+        "geometric_vertical_root_coefficients":geometric_coefficients,
+        "required_component_vanishing":required_vanishing,
+    })
+
+    print(
+        "Q24EFFD13_GEOMETRIC|"
+        f"orientation={swap}|"
+        + "|".join(
+            f"{name}={geometric_coefficients[name]}"
+            for name in sorted(geometric_coefficients)
+        )
+        + "|status=PASS",
+        flush=True,
+    )
+
+# Diagnostic residual centre orders. These are NOT promoted to RR conditions
+# until the actual component valuations are inspected.
+chronology=graph["geometric_graph"]["chronology"]
+for profile in profiles:
+    t={"F0":0}
+    t.update(profile["required_component_vanishing"])
+    residual=[]
+    for step in chronology:
+        center=str(step["center"])
+        active=list(map(str,step["active_geometric_components"]))
+        new=list(map(str,step["new_geometric_components"]))
+        baseline=sum(t[name] for name in active)
+        needs=[max(0,t[name]-baseline) for name in new]
+        residual.append({
+            "center":center,
+            "active":active,
+            "new":new,
+            "baseline":baseline,
+            "new_thresholds":[t[name] for name in new],
+            "residual_orders":needs,
+        })
+    profile["diagnostic_residual_centre_orders"]=residual
+
+    nonzero=[
+        f"{row['center']}:{','.join(map(str,row['residual_orders']))}"
+        for row in residual if any(row["residual_orders"])
+    ]
+    print(
+        "Q24EFFD13_CLUSTER_DIAG|"
+        f"orientation={profile['orientation']}|"
+        f"nonzero={';'.join(nonzero) if nonzero else 'none'}|"
+        "scope=DIAGNOSTIC_FROM_COMPONENT_THRESHOLDS|status=PASS",
+        flush=True,
+    )
+
+payload={
+    "schema":"elkies-k3.h3-q24-effective-d13-transport.v1",
+    "status":"PASS_EXACT_H3_Q24_EFFECTIVE_D13_TRANSPORT",
+    "prime":int(args.prime),
+    "proof":{
+        "pinned_effective_sign":-1,
+        "classifier_bridge_reflections":len(bridge),
+        "physical_q8_reflections":len(physical_reflections),
+        "q6_weyl_transport":"replayed by close_h92_q8_q24_by_q6_translation.sage",
+        "eichler_translation":"replayed by close_h92_q8_q24_by_q6_translation.sage",
+    },
+    "effective_cartan":[[int(v) for v in row] for row in Cartan_eff.rows()],
+    "q24_pairings_on_effective_simple_roots":[int(v) for v in q24_pairings],
+    "deterministic_to_effective_root_change":[
+        [int(v) for v in row] for row in W.rows()
+    ],
+    "vertical":{
+        "fibre_coefficient":int(vf),
+        "deterministic_root_coefficients":[int(v) for v in vr],
+        "effective_root_coefficients":[int(v) for v in ceff],
+    },
+    "geometric_profiles":profiles,
+    "boundary":(
+        "This certifies the true effective D13 simple-root chamber in the "
+        "current equation NS frame and the exact vertical coefficients in that "
+        "basis. The residual centre-order table is diagnostic only; the next "
+        "RR script must derive local conditions from these certified component "
+        "valuations in the actual resolution charts."
+    ),
+}
+OUT=(args.output.resolve() if args.output else
+     LOCAL/f"q24-effective-d13-transport-mod-{args.prime}.json")
+OUT.write_text(json.dumps(payload,indent=2,sort_keys=True,default=int)+"\n")
+print(f"OUTPUT|{OUT}",flush=True)
+print(
+    "Q24EFFD13_RESULT|"
+    f"pairing_nonnegative=1|Wdet={W.det()}|orientations=2|"
+    "status=PASS_EXACT_H3_Q24_EFFECTIVE_D13_TRANSPORT",
+    flush=True,
+)

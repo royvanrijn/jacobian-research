@@ -85,6 +85,7 @@ rootless rank-17 frame:
 - `analyze_h3_rank_growing_degree2_chain.sage`
 - `analyze_h3_mw10_to_rootless_chambers.sage`
 - `verify_h3_d13_to_mw17_path.sage`
+- `verify_rank17_to_h3_reverse_transport.sage`
 
 The corridor is
 
@@ -111,6 +112,13 @@ and the first rank growth occurs at `q=24`; three q24 orbits lead to `D12/MW5`, 
 orbit 85 was selected. The later continuation follows deterministic first hits from
 that one root-adapted frame. Lateral moves, larger-q exits, the other q24 children, and
 alternative multi-step corridors can still be easier at equation level.
+
+The last checker supplies the previously missing positive-frame isometry from
+the corridor's rootless endpoint to pinned `rank17_gram.txt`, inverts the full
+H3-to-R17 transport, and exports every stage basis in both H3 and pinned-R17
+coordinates. It also retains the exact bridge between the dominant D13
+lattice marking and the distinct component-nef D13 equation marking; that
+bridge changes the embedded `U`.
 
 ### Current H3 q24 equation frontier
 

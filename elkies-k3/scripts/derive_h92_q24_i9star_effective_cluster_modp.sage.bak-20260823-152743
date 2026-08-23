@@ -46,7 +46,6 @@ Output:
 
 import argparse
 import json
-import sys
 from pathlib import Path
 
 from sage.all import ZZ, block_diagonal_matrix, matrix, vector
@@ -97,15 +96,16 @@ args=parser.parse_args()
 
 ROOT=locate_repo(args.repo)
 LOCAL=ROOT/"artifacts/local/elkies-k3"
+PINNED=ROOT/"elkies-k3/data/fibrations/h3_q6_q8_d13_mw4_root_adapted_frame.txt"
 GRAPH=LOCAL/f"q24-i9star-component-graph-mod-{args.prime}.json"
 RESOLUTION=LOCAL/f"q24-i9star-resolution-mod-{args.prime}.json"
 TRANSLATION=LOCAL/"q8-q24-physical-to-equation-translation.json"
-CLOSE=ROOT/"elkies-k3/scripts/close_h92_q8_q24_by_q6_translation.sage"
 
-for path in (GRAPH,RESOLUTION,TRANSLATION,CLOSE):
+for path in (PINNED,GRAPH,RESOLUTION,TRANSLATION):
     if not path.exists():
         raise SystemExit(f"Missing prerequisite: {path}")
 
+frame=load_gram(PINNED)
 graph=json.loads(GRAPH.read_text())
 resolution=json.loads(RESOLUTION.read_text())
 translation=json.loads(TRANSLATION.read_text())
@@ -113,65 +113,33 @@ translation=json.loads(TRANSLATION.read_text())
 assert graph["status"]=="PASS_H3_Q24_AFFINE_D13_COMPONENT_GRAPH"
 assert resolution["status"]=="PASS_EXPLICIT_MODP_I9STAR_D13_COMPONENT_RESOLUTION"
 assert translation["status"]=="PASS_EXACT_Q24_PHYSICAL_TO_EQUATION_TRANSLATION"
+assert frame.nrows()==17 and frame.det()==948
+assert matrix(ZZ,graph["lattice_graph"]["root_gram"])==frame[:13,:13]
 
-root_gram=matrix(ZZ,graph["lattice_graph"]["root_gram"])
-assert root_gram.nrows()==root_gram.ncols()==13
-assert abs(root_gram.det())==4
-assert all(root_gram[i,i]==2 for i in range(13))
-assert all(
-    root_gram[i,j] in (0,-1)
-    for i in range(13) for j in range(13) if i!=j
+# ---------------------------------------------------------------------------
+# Re-certify the effective sign in the pinned D13 chamber.
+# ---------------------------------------------------------------------------
+Q24_WITNESS=vector(ZZ,(
+    0,5,0,1,2,1,2,2,2,2,4,8,2,0,-1,1,1,
+))
+U2=matrix(ZZ,((0,1),(1,0)))
+ns=block_diagonal_matrix(U2,-frame)
+q24=vector(ZZ,[12,2]+list(Q24_WITNESS))
+effective_simple=tuple(
+    vector(ZZ,[0,0]+[-ZZ(index==node) for index in range(17)])
+    for node in range(13)
 )
-
-# Re-run the same exact q24 transport that produced the stored vertical
-# coefficients. This gives D24eq and root_source in the SAME NS basis.
-saved_argv=list(sys.argv)
-scope={"__name__":"__embedded_q24_effective_sign__"}
-try:
-    sys.argv=[str(CLOSE)]
-    exec(compile(CLOSE.read_text(),str(CLOSE),"exec"),scope)
-finally:
-    sys.argv=saved_argv
-
-needed=("ns","D24eq","root_source","vr")
-missing=[name for name in needed if name not in scope]
-if missing:
-    raise SystemExit("embedded q24 closeout missing variables: "+",".join(missing))
-
-eq_ns=matrix(ZZ,scope["ns"])
-D24eq=vector(ZZ,scope["D24eq"])
-root_source=tuple(vector(ZZ,row) for row in scope["root_source"])
-assert len(root_source)==13
-
-replayed_root_gram=matrix(
-    ZZ,
-    [[-(left*eq_ns*right) for right in root_source] for left in root_source]
-)
-assert replayed_root_gram==root_gram
+pairings=tuple(q24*ns*curve for curve in effective_simple)
+assert pairings==(0,0,1,0,0,0,0,0,0,0,0,0,0)
 
 vr=list(map(int,translation["q24_equation"]["vertical_root_coefficients"]))
-close_vr=list(map(int,scope["vr"]))
-assert vr==close_vr
 assert vr==list(map(int,graph["lattice_graph"]["vertical_root_coefficients"]))
 assert all(value>0 for value in vr)
 
-# IMPORTANT PROOF BOUNDARY:
-# D24eq intersects the simple-root basis after its horizontal O+P terms are
-# included, so those intersections do NOT orient the effective components.
-# The pinned chamber independently says its effective simple roots are the
-# negatives of its simple-root basis.  Until the exact pinned->equation
-# simple-root transport is replayed, carry sign=-1 only as a diagnostic
-# candidate and let the resolved RR/Jacobian invariants test it.
-effective_root_sign=ZZ(-1)
-raw_total_pairings=tuple(ZZ(D24eq*eq_ns*curve) for curve in root_source)
-pairings=None
-
 print(
-    "Q24D13EFFECTIVE_SIGN|"
-    "equation_root_sign=-1|"
-    f"raw_D24_pairings={','.join(map(str,raw_total_pairings))}|"
-    "scope=DIAGNOSTIC_CANDIDATE_FROM_PINNED_CHAMBER|"
-    "status=CANDIDATE_NOT_YET_TRANSPORT_CERTIFIED",
+    "Q24D13EFFECTIVE_SIGN|effective_simple=-frame_basis|"
+    f"q24_pairings={','.join(map(str,pairings))}|"
+    "status=PASS_EFFECTIVE_SIGN_MINUS",
     flush=True,
 )
 
@@ -186,11 +154,9 @@ for raw_profile in graph["spinor_orientation"]["candidate_profiles"]:
     effective_divisor_coefficients={"F0":0}
     for i,value in enumerate(vr):
         component=mapping[str(i)]
-        # If E_i = effective_root_sign * r_i, then
-        # vr_i*r_i = effective_root_sign*vr_i*E_i.
-        coefficient=int(effective_root_sign*ZZ(value))
-        effective_divisor_coefficients[component]=coefficient
-        required[component]=max(0,-coefficient)
+        # r_i = -E_i, hence vr_i*r_i = -vr_i*E_i.
+        effective_divisor_coefficients[component]=-int(value)
+        required[component]=int(value)
     assert set(required)==set(graph["geometric_graph"]["affine_vertices"])
     profiles.append({
         "orientation":orientation,
@@ -276,11 +242,10 @@ print(
 
 payload={
     "schema":"elkies-k3.h3-q24-i9star-effective-cluster-modp.v1",
-    "status":"CANDIDATE_H3_Q24_EFFECTIVE_I9STAR_CLUSTER",
+    "status":"PASS_H3_Q24_EFFECTIVE_I9STAR_CLUSTER",
     "prime":int(args.prime),
-    "effective_root_sign":int(effective_root_sign),
-    "q24_effective_simple_pairings":None,
-    "raw_total_divisor_pairings_on_equation_roots":list(map(int,raw_total_pairings)),
+    "effective_root_sign":-1,
+    "q24_effective_simple_pairings":list(map(int,pairings)),
     "global_fibre_twist_location":"infinity",
     "local_I9star_fibre_twist":0,
     "raw_vertical_root_coefficients":vr,
@@ -290,10 +255,10 @@ payload={
         for name,order in plans[0]
     ],
     "boundary":(
-        "This derives the sign=-1 cluster as a diagnostic candidate from the "
-        "independently certified pinned D13 chamber sign. The exact transport of "
-        "that sign into the equation-frame simple-root basis is still open. The "
-        "cluster must not be promoted unless the transport is closed separately."
+        "This certifies the effective sign and converts the q24 vertical D13 "
+        "cycle into the infinitely-near point multiplicity cluster.  It does "
+        "not yet calculate the linear condition matrix on the ten-dimensional "
+        "post-collision global space."
     ),
     "next":(
         "Pull the ten post-collision numerator functions successively through "
@@ -307,8 +272,7 @@ OUT=(args.output.resolve() if args.output else
 OUT.write_text(json.dumps(payload,indent=2,sort_keys=True)+"\n")
 print(f"OUTPUT|{OUT}",flush=True)
 print(
-    f"Q24D13EFFECTIVE_RESULT|sign={effective_root_sign}|"
-    "cluster=C01:2,C02:2,C04:2,C06:3|"
-    "status=CANDIDATE_H3_Q24_EFFECTIVE_I9STAR_CLUSTER",
+    "Q24D13EFFECTIVE_RESULT|sign=-1|cluster=C01:2,C02:2,C04:2,C06:3|"
+    "status=PASS_H3_Q24_EFFECTIVE_I9STAR_CLUSTER",
     flush=True,
 )

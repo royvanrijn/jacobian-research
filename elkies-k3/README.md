@@ -2,7 +2,7 @@
 
 This directory contains the K3-surface and elliptic-neighbor work used to search for high-rank elliptic fibrations and explicit equation routes.
 
-For the human-readable map of how the reverse searches, H3 source construction, H2 comparison, Q80 route, and CM24 scaffold fit together, start with [`CONSTRUCTION_ROUTES.md`](CONSTRUCTION_ROUTES.md). For executable entry points and the research history behind failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and [`SCRIPT_ROUTE_AND_FAILURE_LEDGER.md`](SCRIPT_ROUTE_AND_FAILURE_LEDGER.md).
+For the human-readable map of how the reverse searches, H3 source construction, H2 comparison, Q80 route, and CM24 scaffold fit together, start with [`CONSTRUCTION_ROUTES.md`](CONSTRUCTION_ROUTES.md). The exact lossless reverse transport from the pinned recovered 17-by-17 lattice to H3, including the q8 marking distinction, is documented in [`RANK17_TO_H3_REVERSE_TRANSPORT_2026-08-23.md`](RANK17_TO_H3_REVERSE_TRANSPORT_2026-08-23.md). For executable entry points and the research history behind failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and [`SCRIPT_ROUTE_AND_FAILURE_LEDGER.md`](SCRIPT_ROUTE_AND_FAILURE_LEDGER.md).
 
 Route discipline: use `R17` for the recovered rootless lattice endpoint,
 `H3 source` for the level-474 Kumar polarization, and `next equation child` for the
@@ -15,7 +15,7 @@ decision ledger in [`CONSTRUCTION_ROUTES.md`](CONSTRUCTION_ROUTES.md).
 
 ## Current priority
 
-The **H3 source family** is the primary characteristic-zero starting point. The currently selected **H3 degree-two corridor** is one certified route from that source to rootless/MW17; it is not proved shortest, globally optimal, or cheapest to compile. Its first two neighbours are exact at equation level:
+The **H3 source family** is the primary characteristic-zero starting point. The currently selected **H3 degree-two corridor** is one certified route from that source to the pinned recovered rootless/MW17 frame; the endpoint identification and complete inverse NS transport are now exact. The route is not proved shortest, globally optimal, or cheapest to compile. Its first two neighbours are exact at equation level:
 
 ```text
 H3 E7+E8/MW2
@@ -26,6 +26,8 @@ H3 E7+E8/MW2
 The q8 repair found two independent bugs in the previous child-side compiler: a binary-quartic 2-cover multiplier was applied twice, and the q-frame CRT normalizer omitted the `Dx` factor of `x(S)=Nx/Dx`. After both corrections the q8 Riemann--Roch problem collapses to an exact `13 -> 2` characteristic-zero intersection and its Jacobian has one `I9*` fibre plus nine `I1`, hence `D13/MW4` exactly.
 
 The active continuation is the selected `D13/MW4 --q24--> D12/MW5` equation arrow. Its lattice/chamber divisor and marking bridge are exact, while the final characteristic-zero RR pencil, Jacobian and fibre classification remain to be pinned. In parallel, the other two q24 D12 children, lateral D13 presentations, and larger-q exits should be compared by equation cost rather than immediate rank growth alone.
+
+Marking warning: the pinned dominant D13 representative used by the lattice corridor and the component-nef D13 representative used by the q8 equation compiler are not the same stored 17-by-17 frame. Their exact full-NS bridge changes the embedded `U`; use the reverse-transport ledger rather than substituting one frame for the other by ADE/MW label.
 
 The **Q80 Low-q Compiler Route** is now a completed secondary compiler route through its terminal characteristic-zero specialization shadow. Its generic lattice corridor reaches rootless/MW17, while the exact CM24 characteristic-zero terminal equation is `4A2+A3+A5/MW2`. The former final-q6 MW-marking problem is closed; see [`Q80_FINAL_Q6_CLOSEOUT_2026-08-23.md`](Q80_FINAL_Q6_CLOSEOUT_2026-08-23.md).
 

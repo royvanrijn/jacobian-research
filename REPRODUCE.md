@@ -2004,6 +2004,7 @@ sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \
   --output artifacts/generated-results/elkies-k3-h3-mw16-a1-q6-degree2-cap10000-stream-chunk001.json
 sage -python elkies-k3/scripts/verify_h3_d13_to_mw17_path.sage
 sage -python elkies-k3/scripts/analyze_h3_mw10_to_rootless_chambers.sage
+sage -python elkies-k3/scripts/verify_rank17_to_h3_reverse_transport.sage
 ```
 
 The selected suffix is
@@ -2039,7 +2040,23 @@ plus bisection parity.  Its terminal status is
 `PASS_H3_MW10_TO_ROOTLESS_NEF`.  Thus the entire displayed path is an exact
 nef degree-two geometric chain.  Characteristic-zero equation execution
 remains a separate gate.
-<!-- status-consumer: EC-K3-H3-D13-MW17-LATTICE-CHAIN 30c9f060a5da7ed5 -->
+
+The third checker identifies the unnamed rootless endpoint with the pinned
+recovered `rank17_gram.txt` by a determinant-one positive-frame isometry and
+then inverts all thirteen H3 corridor transports.  It exports a lossless
+fourteen-stage ledger in both H3 and pinned-R17 coordinates, including the
+exact NS bridge between the distinct dominant and component-nef q8/D13
+markings.  Expected status and pinned artifact hash are
+
+```text
+PASS_EXACT_PINNED_R17_TO_H3_REVERSE_TRANSPORT
+db9518ee9ba5ffb520898242cbff06894900ea1fea2908476e40433a212af4d2
+```
+
+See
+[`elkies-k3/RANK17_TO_H3_REVERSE_TRANSPORT_2026-08-23.md`](elkies-k3/RANK17_TO_H3_REVERSE_TRANSPORT_2026-08-23.md)
+for the exact proof boundary and retained fields.
+<!-- status-consumer: EC-K3-H3-D13-MW17-LATTICE-CHAIN 2c6a2a36699933ab -->
 
 The H3 q8-child finite additive gate also has a characteristic-zero q-frame
 calculation; it proves the six finite rows have rank six, leaving only the

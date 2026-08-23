@@ -80,3 +80,6 @@ tmp/
 elkies-k3/results/**/*.npy
 elkies-k3/results/**/*.sqlite
 /artifacts/generated-results
+!/artifacts/generated-results/
+/artifacts/generated-results/*
+!/artifacts/generated-results/elkies-k3-rank17-to-h3-reverse-transport.json

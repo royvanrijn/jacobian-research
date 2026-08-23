@@ -59,7 +59,8 @@ the source audit.
 The crucial distinctions are:
 
 - the **17x17 lattice is the endpoint constraint** from which the reverse searches
-  started;
+  started; its identification with the rootless endpoint of the selected H3
+  corridor is now an explicit determinant-one isometry;
 - the **H3 Kumar fibration is the actual source polarization** recovered from the
   source geometry;
 - the displayed **H3 degree-two corridor is one exact source-to-target path**, not a
@@ -96,6 +97,14 @@ In particular, `D12` is not an alternative global endpoint, and R17 is not
 the local object that the q24 Riemann--Roch compiler must construct.  The q24
 compiler needs the selected divisor and resolved component/module data on the
 exact D13 parent; its immediate output is the D12 child equation.
+
+The reverse endpoint identification and all inverse stage transports are
+certified in
+[`RANK17_TO_H3_REVERSE_TRANSPORT_2026-08-23.md`](RANK17_TO_H3_REVERSE_TRANSPORT_2026-08-23.md).
+That audit also separates the pinned dominant D13 lattice representative from
+the component-nef D13 equation representative. They have an exact NS bridge,
+but the bridge changes the embedded `U`, so their marked fibers and zeros must
+be transported rather than identified by the common `D13/MW4` label.
 
 ## Two directions, two questions
 
@@ -285,7 +294,8 @@ H3 E7+E8/MW2
  --q6 --> rootless/MW17.
 ```
 
-At the lattice/chamber level this corridor is exact and every selected arrow is a nef
+At the lattice/chamber level this corridor is exact, its rootless endpoint is
+explicitly isometric to pinned R17, and every selected arrow is a nef
 degree-two pencil. At the characteristic-zero equation level the source family is
 explicit and the first two neighbors are exact through `H3-02-D13`. The active selected
 equation frontier is `D13/MW4 --q24--> D12/MW5`.
@@ -495,12 +505,13 @@ this the **Q60 Compact Comparison**, not the source route.
 | route/family | lattice / chamber | characteristic-zero equations | intended use |
 |---|---|---|---|
 | H3 Source Family | source polarization and marked family exact | exact `E7+E8/MW2` source | canonical beginning |
-| H3 Selected Degree-Two Corridor | complete to rootless/MW17 | exact through D13/MW4; q24 is active | primary selected continuation, not optimality claim |
+| H3 Selected Degree-Two Corridor | complete to pinned R17, with lossless inverse NS transport back to H3 | exact through D13/MW4; q24 is active | primary selected continuation, not optimality claim |
 | Q80 Low-q Compiler Route | complete to rootless/MW17 | terminal CM24 shadow exact; generic rootless endpoint remains a lattice certificate | secondary construction/compiler |
 | Q80 CM24 Regression Route | specialization lattice/equation corridor complete | complete through `4A2+A3+A5/MW2` | regression and module discovery |
 | Low-q MW2 Backtrack | exact transport from MW17 to MW2 | endpoint rational model exists, but this is not the source route | reverse provenance / alternate reconstruction |
 | E6 Backtrack | exact transport from MW17 to MW3 | old guessed split chart not a transported construction | historical reverse provenance |
 | H2 Minimal-MW Comparison | exact H2->MW1 neighbor | not a target construction | structural comparison |
+<!-- status-consumer: EC-K3-H3-D13-MW17-LATTICE-CHAIN 2c6a2a36699933ab -->
 
 ## 9. Recommended language in future notes
 

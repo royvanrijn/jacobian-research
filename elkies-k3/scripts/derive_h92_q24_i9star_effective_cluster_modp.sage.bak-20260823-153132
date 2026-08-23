@@ -155,23 +155,32 @@ assert vr==close_vr
 assert vr==list(map(int,graph["lattice_graph"]["vertical_root_coefficients"]))
 assert all(value>0 for value in vr)
 
-# IMPORTANT PROOF BOUNDARY:
-# D24eq intersects the simple-root basis after its horizontal O+P terms are
-# included, so those intersections do NOT orient the effective components.
-# The pinned chamber independently says its effective simple roots are the
-# negatives of its simple-root basis.  Until the exact pinned->equation
-# simple-root transport is replayed, carry sign=-1 only as a diagnostic
-# candidate and let the resolved RR/Jacobian invariants test it.
-effective_root_sign=ZZ(-1)
-raw_total_pairings=tuple(ZZ(D24eq*eq_ns*curve) for curve in root_source)
-pairings=None
+plus_pairings=tuple(ZZ(D24eq*eq_ns*curve) for curve in root_source)
+minus_pairings=tuple(-value for value in plus_pairings)
+
+def valid_effective_pattern(values):
+    return (
+        all(value>=0 for value in values)
+        and sum(values)==1
+        and sorted(values)==[ZZ(0)]*12+[ZZ(1)]
+    )
+
+plus_ok=valid_effective_pattern(plus_pairings)
+minus_ok=valid_effective_pattern(minus_pairings)
+if plus_ok==minus_ok:
+    raise ArithmeticError(
+        "could not uniquely orient equation-frame D13 roots: "
+        f"plus={plus_pairings}, minus={minus_pairings}"
+    )
+
+effective_root_sign=ZZ(1 if plus_ok else -1)
+pairings=plus_pairings if plus_ok else minus_pairings
 
 print(
     "Q24D13EFFECTIVE_SIGN|"
-    "equation_root_sign=-1|"
-    f"raw_D24_pairings={','.join(map(str,raw_total_pairings))}|"
-    "scope=DIAGNOSTIC_CANDIDATE_FROM_PINNED_CHAMBER|"
-    "status=CANDIDATE_NOT_YET_TRANSPORT_CERTIFIED",
+    f"equation_root_sign={effective_root_sign}|"
+    f"q24_pairings={','.join(map(str,pairings))}|"
+    "basis=equation_deterministic_D13|status=PASS_EFFECTIVE_SIGN",
     flush=True,
 )
 
@@ -276,11 +285,10 @@ print(
 
 payload={
     "schema":"elkies-k3.h3-q24-i9star-effective-cluster-modp.v1",
-    "status":"CANDIDATE_H3_Q24_EFFECTIVE_I9STAR_CLUSTER",
+    "status":"PASS_H3_Q24_EFFECTIVE_I9STAR_CLUSTER",
     "prime":int(args.prime),
     "effective_root_sign":int(effective_root_sign),
-    "q24_effective_simple_pairings":None,
-    "raw_total_divisor_pairings_on_equation_roots":list(map(int,raw_total_pairings)),
+    "q24_effective_simple_pairings":list(map(int,pairings)),
     "global_fibre_twist_location":"infinity",
     "local_I9star_fibre_twist":0,
     "raw_vertical_root_coefficients":vr,
@@ -290,10 +298,10 @@ payload={
         for name,order in plans[0]
     ],
     "boundary":(
-        "This derives the sign=-1 cluster as a diagnostic candidate from the "
-        "independently certified pinned D13 chamber sign. The exact transport of "
-        "that sign into the equation-frame simple-root basis is still open. The "
-        "cluster must not be promoted unless the transport is closed separately."
+        "This certifies the effective sign and converts the q24 vertical D13 "
+        "cycle into the infinitely-near point multiplicity cluster.  It does "
+        "not yet calculate the linear condition matrix on the ten-dimensional "
+        "post-collision global space."
     ),
     "next":(
         "Pull the ten post-collision numerator functions successively through "
@@ -309,6 +317,6 @@ print(f"OUTPUT|{OUT}",flush=True)
 print(
     f"Q24D13EFFECTIVE_RESULT|sign={effective_root_sign}|"
     "cluster=C01:2,C02:2,C04:2,C06:3|"
-    "status=CANDIDATE_H3_Q24_EFFECTIVE_I9STAR_CLUSTER",
+    "status=PASS_H3_Q24_EFFECTIVE_I9STAR_CLUSTER",
     flush=True,
 )

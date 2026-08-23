@@ -1,0 +1,342 @@
+#!/usr/bin/env sage -python
+"""
+Direct equation-Hensel lift of the q32 horizontal D13 section.
+
+This is NOT the historical q24 trace/Hensel attempt.  We start from the
+already certified full modular section (X,Y,Z) and lift it as an isolated
+solution of
+
+    Y^2 = X^3 + A13*X*Z^4 + B13*Z^6
+
+with Z monic and fixed degree bounds:
+    deg Z=24, deg X=52, deg Y=78.
+
+Unknowns: 24 + 53 + 79 = 156.
+Coefficient equations: degree 0..156 = 157.
+
+If the coefficient Jacobian has full column rank 156 mod p, ordinary Hensel
+lifting is unique.  Rational reconstruction is attempted after each p-adic
+digit and accepted only after:
+  (1) the exact QQ Weierstrass identity holds, and
+  (2) the reconstructed section reduces coefficient-for-coefficient to at
+      least one independent modular prime.
+"""
+
+import argparse, json, math
+from pathlib import Path
+from sage.all import GF, Integers, PolynomialRing, QQ, ZZ, matrix, vector
+
+def locate_repo(explicit=None):
+    candidates=[]
+    if explicit:
+        candidates.append(Path(explicit).expanduser())
+    cwd=Path.cwd().resolve()
+    candidates += [cwd,*cwd.parents]
+    h=Path.home()
+    candidates += [
+        h/"Documents"/"jacobian-research",
+        h/"jacobian-research",
+        h/"src"/"jacobian-research",
+        h/"git"/"jacobian-research",
+        h/"projects"/"jacobian-research",
+    ]
+    seen=set()
+    for c in candidates:
+        try:
+            c=c.resolve()
+        except Exception:
+            continue
+        if c in seen:
+            continue
+        seen.add(c)
+        if (c/"elkies-k3/scripts").is_dir() and (c/"artifacts/generated-results").is_dir():
+            return c
+    raise SystemExit("Could not locate jacobian-research")
+
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--repo",type=Path)
+parser.add_argument("--prime",type=int,default=100003)
+parser.add_argument("--digits",type=int,default=40)
+parser.add_argument("--output",type=Path)
+args=parser.parse_args()
+
+ROOT=locate_repo(args.repo)
+LOCAL=ROOT/"artifacts/local/elkies-k3"
+GEN=ROOT/"artifacts/generated-results"
+p=ZZ(args.prime)
+if not p.is_prime() or p in (2,3):
+    raise ValueError("prime must be good odd prime !=3")
+
+MODART=LOCAL/f"q24-degree46-direct-global-mod-{p}.json"
+if not MODART.exists():
+    raise SystemExit(f"missing certified modular section {MODART}")
+modart=json.loads(MODART.read_text())
+assert modart["status"]=="PASS_MODULAR_Q24_FROM_DIRECT_DEGREE46_BRIDGE"
+sec=modart["section_mod_p"]
+
+q8_candidates=[
+    LOCAL/"q8-corrected2cover-qq-child.json",
+    GEN/"elkies-k3-h92-q6-child-q8-corrected2cover-qq-child.json",
+]
+Q8=next((
+    q for q in q8_candidates
+    if q.exists()
+    and json.loads(q.read_text()).get("status")=="PASS_EXACT_CORRECTED_Q8_D13_CHILD"
+),None)
+if Q8 is None:
+    raise SystemExit("missing exact q8/D13 parent")
+q8=json.loads(Q8.read_text())
+
+RQ=PolynomialRing(QQ,"U")
+Uq=RQ.gen()
+Aq=RQ([QQ(v) for v in q8["child"]["minimal_A_coefficients_low_to_high"]])
+Bq=RQ([QQ(v) for v in q8["child"]["minimal_B_coefficients_low_to_high"]])
+
+F=GF(p)
+RF=PolynomialRing(F,"U")
+U=RF.gen()
+
+def qmod(q,m):
+    q=QQ(q)
+    den=ZZ(q.denominator())
+    if math.gcd(int(den),int(m))!=1:
+        raise ZeroDivisionError(f"denominator {den} not invertible mod {m}")
+    return ZZ(q.numerator()) * den.inverse_mod(m) % m
+
+def red_qpoly(poly):
+    return RF([F(qmod(v,p)) for v in RQ(poly).list()])
+
+A=red_qpoly(Aq)
+B=red_qpoly(Bq)
+
+def fpoly(vals):
+    return RF([F(ZZ(v)%p) for v in vals])
+
+Zvals=[ZZ(v) for v in sec["Z_coefficients_low_to_high"]]
+Xvals=[ZZ(v) for v in sec["X_coefficients_low_to_high"]]
+Yvals=[ZZ(v) for v in sec["Y_coefficients_low_to_high"]]
+assert len(Zvals)==25 and len(Xvals)==53 and len(Yvals)==79
+Zp=fpoly(Zvals)
+Xp=fpoly(Xvals)
+Yp=fpoly(Yvals)
+assert (Zp.degree(),Xp.degree(),Yp.degree())==(24,52,78)
+assert Zp[24]==1
+assert Yp**2-Xp**3-A*Xp*Zp**4-B*Zp**6==0
+
+# ---------------------------------------------------------------------------
+# Jacobian of coefficient equations.
+# ---------------------------------------------------------------------------
+Dz=-(4*A*Xp*Zp**3 + 6*B*Zp**5)
+Dx=-(3*Xp**2 + A*Zp**4)
+Dy=2*Yp
+
+cols=[]
+for base,count in ((Dz,24),(Dx,53),(Dy,79)):
+    for i in range(count):
+        q=base*U**i
+        cols.append(vector(F,[q[j] for j in range(157)]))
+assert len(cols)==156
+
+J=matrix(F,157,156,lambda r,c:cols[c][r])
+rank=J.rank()
+print(
+    "Q32PHENSEL_JACOBIAN|"
+    f"prime={p}|equations=157|unknowns=156|rank={rank}|"
+    f"status={'PASS_FULL_RANK' if rank==156 else 'FAIL_RANK'}",
+    flush=True,
+)
+if rank!=156:
+    raise SystemExit("coefficient system is not isolated/smooth at this prime")
+
+rows=list(J.transpose().pivots())
+assert len(rows)==156
+Js=J.matrix_from_rows(rows)
+assert Js.dimensions()==(156,156)
+Jinv=Js.inverse()
+print(
+    "Q32PHENSEL_LINEAR|selected_rows=156|inverse=PASS|status=PASS",
+    flush=True,
+)
+
+# Unknown integer residues. Z leading coefficient stays fixed at 1.
+z=[ZZ(v)%p for v in Zvals[:24]]
+x=[ZZ(v)%p for v in Xvals]
+y=[ZZ(v)%p for v in Yvals]
+
+def eval_residual(modulus):
+    Rm=Integers(modulus)
+    PR=PolynomialRing(Rm,"U")
+    uu=PR.gen()
+
+    Am=PR([Rm(qmod(v,modulus)) for v in Aq.list()])
+    Bm=PR([Rm(qmod(v,modulus)) for v in Bq.list()])
+    Zm=PR([Rm(v%modulus) for v in z]+[Rm(1)])
+    Xm=PR([Rm(v%modulus) for v in x])
+    Ym=PR([Rm(v%modulus) for v in y])
+
+    ff=Ym**2-Xm**3-Am*Xm*Zm**4-Bm*Zm**6
+    return [ZZ(ff[i]) for i in range(157)]
+
+def try_rr(modulus):
+    Rm=Integers(modulus)
+
+    def rr(v):
+        try:
+            return QQ(Rm(ZZ(v)%modulus).rational_reconstruction())
+        except Exception:
+            return None
+
+    zz=[rr(v) for v in z]
+    xx=[rr(v) for v in x]
+    yy=[rr(v) for v in y]
+    if any(v is None for v in zz+xx+yy):
+        return None
+
+    Z=RQ(zz+[QQ(1)])
+    X=RQ(xx)
+    Y=RQ(yy)
+    if (Z.degree(),X.degree(),Y.degree())!=(24,52,78):
+        return None
+    if Y**2 != X**3 + Aq*X*Z**4 + Bq*Z**6:
+        return None
+    return Z,X,Y
+
+def reduce_poly(poly,prime):
+    prime=ZZ(prime)
+    return [
+        int(qmod(v,prime))
+        for v in RQ(poly).list()
+    ]
+
+def independent_modular_matches(Z,X,Y):
+    matches=[]
+    for path in sorted(LOCAL.glob("q24-degree46-direct-global-mod-*.json")):
+        try:
+            d=json.loads(path.read_text())
+            q=ZZ(d["prime"])
+        except Exception:
+            continue
+        if q==p or d.get("status")!="PASS_MODULAR_Q24_FROM_DIRECT_DEGREE46_BRIDGE":
+            continue
+        s=d["section_mod_p"]
+        try:
+            rz=reduce_poly(Z,q)
+            rx=reduce_poly(X,q)
+            ry=reduce_poly(Y,q)
+        except ZeroDivisionError:
+            continue
+        tz=[int(v)%int(q) for v in s["Z_coefficients_low_to_high"]]
+        tx=[int(v)%int(q) for v in s["X_coefficients_low_to_high"]]
+        ty=[int(v)%int(q) for v in s["Y_coefficients_low_to_high"]]
+        if rz==tz and rx==tx and ry==ty:
+            matches.append(int(q))
+    return matches
+
+m=p
+solution=None
+for digit in range(1,args.digits+1):
+    if digit>1:
+        mp=m*p
+        res=eval_residual(mp)
+
+        # Current point solves modulo m; divide the residual by m and solve the
+        # fixed Jacobian system mod p for the next p-adic digit.
+        if any(v % m for v in res):
+            raise ArithmeticError(f"Hensel invariant failed before digit {digit}")
+        rhs_full=vector(F,[-F((v//m)%p) for v in res])
+        rhs=vector(F,[rhs_full[r] for r in rows])
+        delta=Jinv*rhs
+        assert J*delta==rhs_full
+
+        vals=[int(a) for a in delta]
+        dz=vals[:24]
+        dx=vals[24:24+53]
+        dy=vals[24+53:]
+        assert len(dy)==79
+
+        z=[(v+m*d)%mp for v,d in zip(z,dz)]
+        x=[(v+m*d)%mp for v,d in zip(x,dx)]
+        y=[(v+m*d)%mp for v,d in zip(y,dy)]
+
+        post=eval_residual(mp)
+        if any(v%mp for v in post):
+            raise ArithmeticError(f"Hensel correction failed at digit {digit}")
+        m=mp
+
+    # Attempt reconstruction early and then after every digit. One p-adic digit
+    # is ~16.6 bits here, so 40 digits already gives ~664-bit precision.
+    cand=try_rr(m)
+    if digit<=3 or digit%2==0 or cand is not None:
+        print(
+            "Q32PHENSEL_LIFT|"
+            f"digit={digit}|precision_bits={m.nbits()}|"
+            f"qq_candidate={int(cand is not None)}|status=PASS",
+            flush=True,
+        )
+
+    if cand is None:
+        continue
+
+    Z,X,Y=cand
+    matches=independent_modular_matches(Z,X,Y)
+    maxnb=max(
+        abs(ZZ(q.numerator())).nbits()
+        for q in list(Z)+list(X)+list(Y)
+    )
+    maxdb=max(
+        abs(ZZ(q.denominator())).nbits()
+        for q in list(Z)+list(X)+list(Y)
+    )
+    print(
+        "Q32PHENSEL_CANDIDATE|"
+        f"digit={digit}|precision_bits={m.nbits()}|"
+        f"max_num_bits={maxnb}|max_den_bits={maxdb}|"
+        f"independent_matches={','.join(map(str,matches)) or 'none'}|"
+        f"status={'PASS_EXACT_AND_INDEPENDENT' if matches else 'PASS_EXACT_IDENTITY_ONLY'}",
+        flush=True,
+    )
+    if matches:
+        solution=(Z,X,Y,digit,m,maxnb,maxdb,matches)
+        break
+
+if solution is None:
+    raise RuntimeError(
+        f"no exact independently validated QQ section after {args.digits} base-p digits"
+    )
+
+Z,X,Y,digit,m,maxnb,maxdb,matches=solution
+OUT=args.output.resolve() if args.output else LOCAL/"q32-horizontal-section-direct-hensel-qq.json"
+payload={
+    "schema":"elkies-k3.h3-q32-horizontal-section-direct-hensel-qq.v1",
+    "status":"PASS_EXACT_Q32_HORIZONTAL_SECTION_DIRECT_EQUATION_HENSEL",
+    "method":"direct coefficient-equation Hensel lift; no exact degree-46 trace",
+    "base_prime":int(p),
+    "hensel_digits":int(digit),
+    "precision_bits":int(m.nbits()),
+    "jacobian_rank":int(rank),
+    "selected_equations":rows,
+    "profile":{"Z_degree":24,"X_degree":52,"Y_degree":78},
+    "section":{
+        "Z_coefficients_low_to_high":[str(v) for v in Z.list()],
+        "X_coefficients_low_to_high":[str(v) for v in X.list()],
+        "Y_coefficients_low_to_high":[str(v) for v in Y.list()],
+    },
+    "verification":{
+        "exact_weierstrass_identity":True,
+        "independent_modular_matches":matches,
+    },
+    "height":{
+        "max_numerator_bits":int(maxnb),
+        "max_denominator_bits":int(maxdb),
+    },
+}
+OUT.write_text(json.dumps(payload,indent=2,sort_keys=True)+"\n")
+print(f"OUTPUT|{OUT}",flush=True)
+print(
+    "Q32PHENSEL_RESULT|"
+    f"digit={digit}|precision_bits={m.nbits()}|"
+    f"max_num_bits={maxnb}|max_den_bits={maxdb}|"
+    f"independent_matches={len(matches)}|"
+    "status=PASS_EXACT_Q32_HORIZONTAL_SECTION_DIRECT_EQUATION_HENSEL",
+    flush=True,
+)

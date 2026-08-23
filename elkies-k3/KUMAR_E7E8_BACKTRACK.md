@@ -985,7 +985,18 @@ and bisection parity prove nefness in
 [`scripts/analyze_h3_mw10_to_rootless_chambers.sage`](scripts/analyze_h3_mw10_to_rootless_chambers.sage),
 whose terminal status is `PASS_H3_MW10_TO_ROOTLESS_NEF`.  Equation-level
 divisor functions remain to be constructed.
-<!-- status-consumer: EC-K3-H3-D13-MW17-LATTICE-CHAIN 30c9f060a5da7ed5 -->
+
+The suffix replay originally stopped at an unnamed rootless determinant-948
+frame.  The reverse checker
+[`scripts/verify_rank17_to_h3_reverse_transport.sage`](scripts/verify_rank17_to_h3_reverse_transport.sage)
+now gives a determinant-one positive-frame isometry from that endpoint to the
+pinned recovered `rank17_gram.txt` and an explicit integral inverse NS
+transport through all thirteen H3 neighbors.  Its fourteen-stage ledger also
+keeps the dominant D13 lattice marking separate from the unequal
+component-nef D13 equation marking; their exact bridge moves the embedded
+`U`.  See
+[`RANK17_TO_H3_REVERSE_TRANSPORT_2026-08-23.md`](RANK17_TO_H3_REVERSE_TRANSPORT_2026-08-23.md).
+<!-- status-consumer: EC-K3-H3-D13-MW17-LATTICE-CHAIN 2c6a2a36699933ab -->
 
 At the final `A1/MW16` marking, q=4 was tested only as a bounded obstruction:
 the exact 9,000-orbit prefix and seven 1,000-orbit strata across the 160,308
