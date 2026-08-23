@@ -1,0 +1,548 @@
+#!/usr/bin/env sage -python
+"""
+Recover the orbit-23 A11 marked section from easy P.O=0 sections on the
+correctly pointed q24 D12 model.
+
+This is the Q80 lesson applied correctly:
+  1. enumerate all polynomial zero-pole sections on the pointed D12 model;
+  2. match them intrinsically to the exact R3-zero D12 MW lattice;
+  3. express the native orbit-23 MW target as an integral combination;
+  4. form that combination by elliptic-curve group law;
+  5. verify the result has P.O=2.
+
+No historical q24 marking is imported.
+"""
+import argparse
+import itertools
+import json
+from pathlib import Path
+
+from sage.all import (
+    EllipticCurve, GF, PolynomialRing, QQ, ZZ, lcm, matrix, pari, vector
+)
+
+ROOT=Path(__file__).resolve().parents[2]
+LOCAL=ROOT/"artifacts/local/elkies-k3"
+OUTDIR=LOCAL/"q24-downstream-lift"
+
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--prime",type=int,default=100003)
+parser.add_argument("--output",type=Path)
+args=parser.parse_args()
+p=ZZ(args.prime)
+F=GF(p)
+
+EASY=OUTDIR/f"a11-easy-spinor-shift-p{p}.json"
+PROF=OUTDIR/f"pointed-d12-a11-profile-p{p}.json"
+SCAN=OUTDIR/f"d12-to-a11-equation-friendly-p{p}.json"
+for path in (EASY,PROF,SCAN):
+    if not path.exists():
+        raise SystemExit(f"missing prerequisite: {path}")
+
+easy=json.loads(EASY.read_text())
+prof=json.loads(PROF.read_text())
+scan=json.loads(SCAN.read_text())
+
+# -------------------------------------------------------------------------
+# 1. Pointed D12 polynomial model, I8* at infinity.
+# -------------------------------------------------------------------------
+model=easy["I8star_infinity"]
+R=PolynomialRing(F,"u")
+u=R.gen()
+K=R.fraction_field()
+
+def poly(rec):
+    return R([F(v) for v in rec["coefficients_low_to_high"]])
+
+A=poly(model["A"])
+B=poly(model["B"])
+Qx=poly(model["known_Q_x"])
+Qy=poly(model["known_Q_y"])
+
+assert A.degree()==6 and B.degree()==9
+assert Qx.degree()<=4 and Qy.degree()<=6
+assert Qy**2==Qx**3+A*Qx+B
+
+E=EllipticCurve(K,[0,0,0,K(A),K(B)])
+Qpt=E(K(Qx),K(Qy))
+
+print(
+    "Q24ZP_MODEL|"
+    f"prime={p}|Adeg={A.degree()}|Bdeg={B.degree()}|"
+    f"Qxdeg={Qx.degree()}|Qydeg={Qy.degree()}|status=PASS",
+    flush=True,
+)
+
+# -------------------------------------------------------------------------
+# 2. Exact D12 MW lattice and discriminant correction classes.
+# -------------------------------------------------------------------------
+frame_path=ROOT/scan["frame"]
+G=matrix(ZZ,[
+    [ZZ(v) for v in line.split()]
+    for line in frame_path.read_text().splitlines()
+    if line.strip() and not line.lstrip().startswith("#")
+])
+assert G.dimensions()==(17,17) and G.det()==948
+
+root=G[:12,:12]
+coupling=G[:12,12:]
+tail=G[12:,12:]
+H=tail-coupling.transpose()*root.inverse()*coupling
+root_inv=root.inverse()
+
+def frac_key(v):
+    return tuple(QQ(x)-QQ(x).floor() for x in vector(QQ,v))
+
+correction_by_class={frac_key(vector(QQ,[0]*12)):QQ(0)}
+for i in range(12):
+    w=vector(QQ,root_inv.row(i))
+    key=frac_key(w)
+    norm=QQ(w*root*w)
+    if key not in correction_by_class or norm<correction_by_class[key]:
+        correction_by_class[key]=norm
+assert sorted(correction_by_class.values())==[QQ(0),QQ(1),QQ(3),QQ(3)]
+
+def correction(z):
+    z=vector(ZZ,z)
+    base=vector(ZZ,[0]*12+list(z))
+    dual=vector(QQ,base*G[:,:12])*root_inv
+    return correction_by_class[frac_key(dual)]
+
+def profile(z):
+    z=vector(ZZ,z)
+    if not any(z):
+        return QQ(0),QQ(0),ZZ(-1)
+    h=QQ(z*H*z)
+    c=correction(z)
+    po=(h+c-4)/2
+    if po not in ZZ or po<0:
+        raise ArithmeticError((tuple(z),h,c,po))
+    return h,c,ZZ(po)
+
+q_recorded=vector(ZZ,prof["R3_zero_lattice_marking"]["explicit_A0_minus_R3_mw"])
+target=vector(
+    ZZ,
+    next(row for row in prof["A11_targets"] if int(row["orbit_index"])==23)["mw_projection"]
+)
+assert tuple(target)==(-1,-1,0,-1,0)
+assert profile(target)==(QQ(7),QQ(1),ZZ(2))
+
+# Abstract zero-pole MW vectors.
+scale=ZZ(1)
+for value in H.list():
+    scale=lcm(scale,ZZ(QQ(value).denominator()))
+IH=(scale*H).change_ring(ZZ)
+qf=pari(IH).qfminim(ZZ(scale*4))
+
+abstract=[]
+seen=set()
+for col in matrix(ZZ,qf[2]).columns():
+    for sign in (1,-1):
+        z=sign*vector(ZZ,col)
+        key=tuple(map(int,z))
+        if key in seen:
+            continue
+        seen.add(key)
+        h,c,po=profile(z)
+        if po==0:
+            abstract.append(z)
+
+abstract.sort(key=lambda z:(QQ(z*H*z),sum(abs(int(v)) for v in z),tuple(z)))
+Mabs=matrix(ZZ,[list(z) for z in abstract])
+Lzero=Mabs.row_module()
+
+print(
+    "Q24ZP_ABSTRACT|"
+    f"count={len(abstract)}|rank={Lzero.rank()}|"
+    f"target_in_span={int(target in Lzero)}|status=PASS",
+    flush=True,
+)
+
+if target not in Lzero:
+    payload={
+        "schema":"elkies-k3.h3-q24-pointed-zero-pole-sections.v1",
+        "status":"Q24_A11_TARGET_NOT_IN_POINTED_ZERO_POLE_SPAN",
+        "prime":int(p),
+        "abstract_zero_pole_count":len(abstract),
+        "zero_pole_rank":int(Lzero.rank()),
+        "target_mw":list(map(int,target)),
+    }
+    OUT=args.output.resolve() if args.output else OUTDIR/f"pointed-zero-pole-sections-p{p}.json"
+    OUT.write_text(json.dumps(payload,indent=2,sort_keys=True)+"\n")
+    print(f"OUTPUT|{OUT}",flush=True)
+    print("Q24ZP_RESULT|target_in_span=0|status="+payload["status"],flush=True)
+    raise SystemExit(0)
+
+# -------------------------------------------------------------------------
+# 3. Enumerate polynomial P.O=0 sections.
+# -------------------------------------------------------------------------
+def solve_dx3(clead):
+    names=("ell","x2","x1","x0","inv")
+    S=PolynomialRing(F,names=names,order="degrevlex")
+    ell,x2,x1,x0,inv=S.gens()
+    KF=S.fraction_field()
+    U=PolynomialRing(KF,"z")
+    z=U.gen()
+    AA=U([KF(v) for v in A.list()])
+    BB=U([KF(v) for v in B.list()])
+    x=KF(clead)*z**3+KF(x2)*z**2+KF(x1)*z+KF(x0)
+    rhs=x**3+AA*x+BB
+    assert rhs[9]==0 and rhs.degree()<=8
+
+    ys={4:KF(ell)}
+    equations=[S((KF(ell)**2-KF(rhs[8])).numerator())]
+    for degree in range(7,3,-1):
+        j=degree-4
+        known=sum(
+            ys[i]*ys[degree-i]
+            for i in ys
+            if (degree-i) in ys and i!=4 and (degree-i)!=4
+        )
+        ys[j]=(KF(rhs[degree])-known)/(KF(2)*ys[4])
+
+    y=sum(ys[i]*z**i for i in range(5))
+    residual=y**2-rhs
+    equations.extend(S(KF(residual[k]).numerator()) for k in range(4))
+    equations.append(inv*ell-1)
+
+    I=S.ideal(equations)
+    print(
+        "Q24ZP_BRANCH|"
+        f"profile=dx3|lead={int(clead)}|status=GROEBNER_START",
+        flush=True,
+    )
+    sols=I.variety()
+    print(
+        "Q24ZP_BRANCH|"
+        f"profile=dx3|lead={int(clead)}|solutions={len(sols)}|status=GROEBNER_PASS",
+        flush=True,
+    )
+
+    out=[]
+    for sol in sols:
+        vals={g:F(sol[g]) for g in S.gens()}
+        if not vals[ell]:
+            continue
+        xx=R([vals[x0],vals[x1],vals[x2],F(clead)])
+        rr=xx**3+A*xx+B
+        yy=[F(0)]*5
+        yy[4]=vals[ell]
+        for degree in range(7,3,-1):
+            j=degree-4
+            known=sum(
+                yy[i]*yy[degree-i]
+                for i in range(5)
+                if 0<=degree-i<5 and i!=4 and (degree-i)!=4
+            )
+            yy[j]=(rr[degree]-known)/(F(2)*yy[4])
+        yy=R(yy)
+        assert yy**2==rr
+        out.append((xx,yy,"dx3"))
+    return out
+
+def solve_dx4():
+    names=("s","x3","x2","x1","x0","inv")
+    S=PolynomialRing(F,names=names,order="degrevlex")
+    ss,x3,x2,x1,x0,inv=S.gens()
+    KF=S.fraction_field()
+    U=PolynomialRing(KF,"z")
+    z=U.gen()
+    AA=U([KF(v) for v in A.list()])
+    BB=U([KF(v) for v in B.list()])
+    x=KF(ss)**2*z**4+KF(x3)*z**3+KF(x2)*z**2+KF(x1)*z+KF(x0)
+    rhs=x**3+AA*x+BB
+    assert rhs.degree()<=12
+
+    ys={6:KF(ss)**3}
+    for degree in range(11,5,-1):
+        j=degree-6
+        known=sum(
+            ys[i]*ys[degree-i]
+            for i in ys
+            if (degree-i) in ys and i!=6 and (degree-i)!=6
+        )
+        ys[j]=(KF(rhs[degree])-known)/(KF(2)*ys[6])
+
+    y=sum(ys[i]*z**i for i in range(7))
+    residual=y**2-rhs
+    equations=[S(KF(residual[k]).numerator()) for k in range(6)]
+    equations.append(inv*ss-1)
+
+    I=S.ideal(equations)
+    print("Q24ZP_BRANCH|profile=dx4|status=GROEBNER_START",flush=True)
+    sols=I.variety()
+    print(
+        f"Q24ZP_BRANCH|profile=dx4|solutions={len(sols)}|status=GROEBNER_PASS",
+        flush=True,
+    )
+
+    out=[]
+    for sol in sols:
+        vals={g:F(sol[g]) for g in S.gens()}
+        if not vals[ss]:
+            continue
+        xx=R([vals[x0],vals[x1],vals[x2],vals[x3],vals[ss]**2])
+        rr=xx**3+A*xx+B
+        yy=[F(0)]*7
+        yy[6]=vals[ss]**3
+        for degree in range(11,5,-1):
+            j=degree-6
+            known=sum(
+                yy[i]*yy[degree-i]
+                for i in range(7)
+                if 0<=degree-i<7 and i!=6 and (degree-i)!=6
+            )
+            yy[j]=(rr[degree]-known)/(F(2)*yy[6])
+        yy=R(yy)
+        assert yy**2==rr
+        out.append((xx,yy,"dx4"))
+    return out
+
+lead_ring=PolynomialRing(F,"c")
+cvar=lead_ring.gen()
+lead_eq=cvar**3+F(A[6])*cvar+F(B[9])
+leads=[]
+for fac,e in lead_eq.factor():
+    if fac.degree()==1:
+        leads.append(F(-fac[0]/fac[1]))
+leads=sorted(set(leads),key=int)
+
+sections=[]
+for lead in leads:
+    sections.extend(solve_dx3(lead))
+sections.extend(solve_dx4())
+
+unique={}
+for x,y,kind in sections:
+    unique[(tuple(map(int,x.list())),tuple(map(int,y.list())))]=(x,y,kind)
+sections=list(unique.values())
+
+print(
+    "Q24ZP_COUNT|"
+    f"equation={len(sections)}|abstract={len(abstract)}|"
+    f"status={'PASS_COUNT' if len(sections)==len(abstract) else 'PARTIAL'}",
+    flush=True,
+)
+
+# -------------------------------------------------------------------------
+# 4. Match equation sections to abstract MW vectors by group-law signatures.
+# -------------------------------------------------------------------------
+def common_den_degree(P):
+    if P.is_zero():
+        return -1
+    x,y=P.xy()
+    dx=R(x.denominator())
+    dy=R(y.denominator())
+
+    def proot(P,e):
+        P=R(P)
+        if not P:
+            return R.zero()
+        lc=P.leading_coefficient()
+        P=P/lc
+        out=R.one()
+        for fac,m in P.factor():
+            if int(m)%e:
+                return None
+            out*=fac.monic()**(int(m)//e)
+        return out.monic()
+
+    zx=proot(dx,2)
+    zy=proot(dy,3)
+    if zx is None or zy is None or zx!=zy:
+        raise ArithmeticError("non-section denominator profile")
+    return int(zx.degree())
+
+def lattice_sig(z,q):
+    z=vector(ZZ,z); q=vector(ZZ,q)
+    vals=[]
+    for k in (1,2,3):
+        for n in range(-3,4):
+            w=k*z+n*q
+            if not any(w):
+                vals.append(-1)
+            else:
+                vals.append(int(profile(w)[2]))
+    return tuple(vals)
+
+def point_sig(P,Q):
+    vals=[]
+    for k in (1,2,3):
+        for n in range(-3,4):
+            vals.append(common_den_degree(k*P+n*Q))
+    return tuple(vals)
+
+# Determine whether the explicit equation Q is +q_recorded or -q_recorded.
+psigQ=point_sig(Qpt,Qpt)
+orientations=[]
+for sign in (1,-1):
+    q=sign*q_recorded
+    if lattice_sig(q,q)==psigQ:
+        orientations.append(q)
+if len(orientations)!=1:
+    raise ArithmeticError(
+        f"could not orient Q uniquely; compatible={len(orientations)}"
+    )
+q=orientations[0]
+
+print(
+    "Q24ZP_ORIENTATION|"
+    f"Q_mw={','.join(map(str,q))}|status=PASS",
+    flush=True,
+)
+
+by_sig={}
+for z in abstract:
+    by_sig.setdefault(lattice_sig(z,q),[]).append(z)
+
+matched=[]
+ambiguous=[]
+for x,y,kind in sections:
+    P=E(K(x),K(y))
+    sig=point_sig(P,Qpt)
+    candidates=by_sig.get(sig,[])
+    if len(candidates)==1:
+        matched.append((candidates[0],P,x,y,kind))
+    else:
+        ambiguous.append({
+            "x":[int(v) for v in x.list()],
+            "y":[int(v) for v in y.list()],
+            "kind":kind,
+            "candidate_mw":[list(map(int,z)) for z in candidates],
+        })
+
+print(
+    "Q24ZP_MATCH|"
+    f"matched={len(matched)}|ambiguous={len(ambiguous)}|"
+    f"abstract={len(abstract)}|status=PASS_SIGNATURE_AUDIT",
+    flush=True,
+)
+
+# -------------------------------------------------------------------------
+# 5. Find an integral combination of matched easy sections giving orbit 23.
+# -------------------------------------------------------------------------
+# Deduplicate MW vectors; keep one explicit point for each.
+by_mw={}
+for z,P,x,y,kind in matched:
+    by_mw.setdefault(tuple(map(int,z)),(z,P,x,y,kind))
+matched=list(by_mw.values())
+
+combo=None
+rank=Lzero.rank()
+
+# First search rank-sized subsets: cheapest explicit combination.
+for r in range(1,min(rank+1,5)+1):
+    for inds in itertools.combinations(range(len(matched)),r):
+        Zmat=matrix(ZZ,[list(matched[i][0]) for i in inds])
+        if Zmat.rank()!=r:
+            continue
+        if target not in Zmat.row_space():
+            continue
+        coeff=Zmat.solve_left(target)
+        if all(c in ZZ for c in coeff):
+            coeff=vector(ZZ,[ZZ(c) for c in coeff])
+            combo=(inds,coeff)
+            break
+    if combo is not None:
+        break
+
+if combo is None:
+    payload={
+        "schema":"elkies-k3.h3-q24-pointed-zero-pole-sections.v1",
+        "status":"Q24_A11_TARGET_IN_ABSTRACT_ZERO_SPAN_BUT_NO_MATCHED_COMBINATION",
+        "prime":int(p),
+        "abstract_zero_pole_count":len(abstract),
+        "equation_zero_pole_count":len(sections),
+        "matched_count":len(matched),
+        "target_mw":list(map(int,target)),
+        "ambiguous":ambiguous,
+    }
+    OUT=args.output.resolve() if args.output else OUTDIR/f"pointed-zero-pole-sections-p{p}.json"
+    OUT.write_text(json.dumps(payload,indent=2,sort_keys=True)+"\n")
+    print(f"OUTPUT|{OUT}",flush=True)
+    print(
+        "Q24ZP_RESULT|target_in_span=1|combination=0|status="+payload["status"],
+        flush=True,
+    )
+    raise SystemExit(0)
+
+inds,coeff=combo
+P23=E(0)
+terms=[]
+check=vector(ZZ,[0]*5)
+for idx,c in zip(inds,coeff):
+    z,P,x,y,kind=matched[idx]
+    P23 += int(c)*P
+    check += int(c)*z
+    terms.append({
+        "coefficient":int(c),
+        "mw":list(map(int,z)),
+        "kind":kind,
+        "x":[int(v) for v in x.list()],
+        "y":[int(v) for v in y.list()],
+    })
+assert check==target
+assert not P23.is_zero()
+assert common_den_degree(P23)==2
+x23,y23=P23.xy()
+assert y23**2==x23**3+K(A)*x23+K(B)
+
+def rfrec(v):
+    v=K(v)
+    n=R(v.numerator()); d=R(v.denominator())
+    lc=d.leading_coefficient()
+    n=n/lc; d=d/lc
+    return {
+        "num_degree":int(n.degree()),
+        "den_degree":int(d.degree()),
+        "num":[int(x) for x in n.list()],
+        "den":[int(x) for x in d.list()],
+    }
+
+payload={
+    "schema":"elkies-k3.h3-q24-pointed-zero-pole-sections.v1",
+    "status":"PASS_Q24_A11_ORBIT23_FROM_ZERO_POLE_SECTIONS",
+    "prime":int(p),
+    "route_end":"R17",
+    "Q_orientation_mw":list(map(int,q)),
+    "abstract_zero_pole_count":len(abstract),
+    "equation_zero_pole_count":len(sections),
+    "matched_count":len(matched),
+    "zero_pole_rank":int(Lzero.rank()),
+    "target":{
+        "orbit_index":23,
+        "mw":list(map(int,target)),
+        "height":"7",
+        "local_correction":"1",
+        "P_dot_O":2,
+        "combination":terms,
+        "x":rfrec(x23),
+        "y":rfrec(y23),
+        "expected_child":"A11/MW6",
+        "expected_root_data":[11,132,12],
+    },
+    "ambiguous_zero_pole_sections":ambiguous,
+    "proof_boundary":(
+        "The orbit-23 marked section is recovered modulo p as an explicit "
+        "integral group-law combination of pointed-model P.O=0 sections and "
+        "has the exact lattice MW target and P.O=2 profile. The q6 resolved "
+        "RR pencil and A11 child equation remain to be compiled."
+    ),
+}
+OUT=args.output.resolve() if args.output else OUTDIR/f"pointed-zero-pole-sections-p{p}.json"
+OUT.write_text(json.dumps(payload,indent=2,sort_keys=True)+"\n")
+
+print(
+    "Q24ZP_TARGET|"
+    f"orbit=23|terms={len(terms)}|"
+    f"coeffs={','.join(str(t['coefficient']) for t in terms)}|"
+    f"xden={x23.denominator().degree()}|status=PASS",
+    flush=True,
+)
+print(f"OUTPUT|{OUT}",flush=True)
+print(
+    "Q24ZP_RESULT|"
+    f"target_in_span=1|combination=1|matched={len(matched)}|"
+    "status=PASS_Q24_A11_ORBIT23_FROM_ZERO_POLE_SECTIONS",
+    flush=True,
+)
