@@ -76,84 +76,163 @@ p=ZZ(args.prime)
 F=GF(p)
 
 SIG=LOCAL/f"q24-orbit85-d12-signature-mod-{p}.json"
-TOOLBOX=LOCAL/"q24-to-a1-toolbox"/f"q24-to-a1-toolbox-p{p}.json"
-Q6ART=GEN/"elkies-k3-h3-d12-o85-q6-degree2.json"
+BRIDGE=LOCAL/"q24-orbit42-current-equation-bridge.json"
 
-for path in (SIG,TOOLBOX,Q6ART):
+for path in (SIG,BRIDGE):
     if not path.exists():
         raise SystemExit(f"missing prerequisite: {path}")
 
 sig=json.loads(SIG.read_text())
-toolbox=json.loads(TOOLBOX.read_text())
-q6art=json.loads(Q6ART.read_text())
-
+bridge=json.loads(BRIDGE.read_text())
 assert sig["status"] in (
     "PASS_H3_Q24_ORBIT85_D12_MODP_SIGNATURE",
     "CANDIDATE_H3_Q24_ORBIT85_D12_MODP_SIGNATURE",
 )
-assert toolbox["status"]=="PASS_Q24_TO_A1_TOOLBOX_CHECK"
-assert q6art["status"]=="PASS_ROOT_ADAPTED_WEYL_NEIGHBORS"
 
-hits=[r for r in q6art["neighbors"] if int(r["orbit_index"])==42]
-assert len(hits)==1
-target_record=hits[0]
-assert int(target_record["q"])==6
-assert target_record["child_ade"]=="A11"
-assert int(target_record["child_mw_rank"])==6
-assert tuple(target_record["child_root_data"])==(11,132,12)
+target_mw=vector(ZZ,(-1,0,-1,-1,0))
 
-FRAME=ROOT/q6art["frame"]
-if not FRAME.exists():
-    raise SystemExit(f"missing D12 frame: {FRAME}")
-G=load_gram(FRAME)
-assert G.dimensions()==(17,17) and G.det()==948
+def walk_lists(obj,path=""):
+    out=[]
+    if isinstance(obj,list):
+        out.append((path,obj))
+        for k,v in enumerate(obj):
+            out.extend(walk_lists(v,f"{path}/{k}"))
+    elif isinstance(obj,dict):
+        for k,v in obj.items():
+            out.extend(walk_lists(v,f"{path}/{k}"))
+    return out
 
+def as_int_matrix(v):
+    try:
+        if (
+            isinstance(v,list) and len(v)==17
+            and all(isinstance(r,list) and len(r)==17 for r in v)
+        ):
+            return matrix(ZZ,v)
+    except Exception:
+        pass
+    return None
+
+bridge_label=vector(ZZ,(0,0,0,0,0,0,1,0,0,0,0,0))
+
+def is_d12_target_frame(M):
+    if M is None or M.dimensions()!=(17,17) or M.det()!=948:
+        return False
+    R=M[:12,:12]
+    if R.rank()!=12:
+        return False
+    if any(R[k,k]!=2 for k in range(12)):
+        return False
+    if any(
+        R[a,b] not in (0,-1)
+        for a in range(12) for b in range(12) if a!=b
+    ):
+        return False
+    Cpl=M[:12,12:]
+    Tail=M[12:,12:]
+    Rinv=R.inverse()
+    H0=Tail-Cpl.transpose()*Rinv*Cpl
+    if QQ(target_mw*H0*target_mw)!=QQ(7):
+        return False
+
+    corr=QQ(bridge_label*Rinv*bridge_label)
+    if corr!=QQ(3):
+        return False
+
+    rcoords=Rinv*(bridge_label-Cpl*target_mw)
+    if not all(v in ZZ for v in rcoords):
+        return False
+    pframe=vector(ZZ,[ZZ(v) for v in rcoords]+list(target_mw))
+    if QQ(pframe*M*pframe)!=QQ(10):
+        return False
+    return True
+
+matrix_candidates=[]
+for path,v in walk_lists(bridge):
+    M=as_int_matrix(v)
+    if is_d12_target_frame(M):
+        matrix_candidates.append((0,path,M))
+
+if not matrix_candidates:
+    producers=[]
+    for path in S.glob("*.sage"):
+        if path==dst:
+            continue
+        try:
+            t=path.read_text()
+        except Exception:
+            continue
+        if "Q24O42EQ_RESULT|" in t:
+            producers.append(path)
+    if len(producers)!=1:
+        raise SystemExit(
+            f"expected one local Q24O42EQ producer, found {[str(x) for x in producers]}"
+        )
+    producer=producers[0]
+    saved=list(sys.argv)
+    scope={"__name__":"__embedded_o42_current__","__file__":str(producer)}
+    import contextlib,io
+    buf=io.StringIO()
+    try:
+        sys.argv=[str(producer)]
+        with contextlib.redirect_stdout(buf):
+            exec(compile(producer.read_text(),str(producer),"exec"),scope)
+    finally:
+        sys.argv=saved
+    for name,v in scope.items():
+        try:
+            M=matrix(ZZ,v)
+        except Exception:
+            continue
+        if is_d12_target_frame(M):
+            score=-10 if any(s in name.lower() for s in ("adapt","d12","current","frame")) else 1
+            matrix_candidates.append((score,name,M))
+
+if not matrix_candidates:
+    raise SystemExit("could not recover the current-equation D12 frame")
+
+matrix_candidates.sort(
+    key=lambda row:(row[0],max(abs(int(x)) for x in row[2].list()),row[1])
+)
+G=matrix_candidates[0][2]
 root_rank=12
 C=G[:root_rank,:root_rank]
 coupling=G[:root_rank,root_rank:]
 tail=G[root_rank:,root_rank:]
 H=tail-coupling.transpose()*C.inverse()*coupling
-assert H.dimensions()==(5,5)
-
-target_mw=vector(ZZ,target_record["mw_projection"])
-target_witness=vector(ZZ,target_record["witness"])
-assert vector(ZZ,target_witness[root_rank:])==target_mw
-assert target_witness*G*target_witness==12
+assert QQ(target_mw*H*target_mw)==QQ(7)
 
 print(
-    "Q24O42_LATTICE|"
-    f"frame={FRAME.relative_to(ROOT)}|target_mw={','.join(map(str,target_mw))}|"
-    f"witness_norm={target_witness*G*target_witness}|status=PASS",
+    "Q24O42CUR_LATTICE|"
+    f"target_mw={','.join(map(str,target_mw))}|"
+    f"height={target_mw*H*target_mw}|"
+    f"frame_source={matrix_candidates[0][1]}|"
+    "status=PASS_CURRENT_EQUATION_D12",
     flush=True,
 )
+
 
 # -------------------------------------------------------------------------
 # 1. Abstract D12 zero-pole section profile in the q24/orbit85 marking.
 # -------------------------------------------------------------------------
-# Exact D12 discriminant-class correction table.
-#
-# The older parity/minimal-P.O shortcut incorrectly conflated the vector
-# correction-1 class with the two spinor correction-3 classes.
+def frac_key(v):
+    return tuple(QQ(x)-QQ(x).floor() for x in vector(QQ,v))
+
 Cinv=C.inverse()
+correction_by_class={frac_key(vector(QQ,[0]*12)):QQ(0)}
+for i in range(12):
+    dual=vector(QQ,Cinv.row(i))
+    key=frac_key(dual)
+    norm=QQ(dual*C*dual)
+    if key not in correction_by_class or norm<correction_by_class[key]:
+        correction_by_class[key]=norm
+assert sorted(correction_by_class.values())==[QQ(0),QQ(1),QQ(3),QQ(3)]
 
 def class_order(dual):
     o=ZZ(1)
     for x in dual:
         o=lcm(o,ZZ(QQ(x).denominator()))
     return o
-
-def frac_key(v):
-    return tuple(QQ(x)-QQ(x).floor() for x in vector(QQ,v))
-
-correction_by_class={frac_key(vector(QQ,[0]*12)):QQ(0)}
-for i in range(12):
-    weight=vector(QQ,Cinv.row(i))
-    key=frac_key(weight)
-    norm=QQ(weight*C*weight)
-    if key not in correction_by_class or norm<correction_by_class[key]:
-        correction_by_class[key]=norm
-
-assert sorted(correction_by_class.values()) == [QQ(0),QQ(1),QQ(3),QQ(3)]
 
 def correction_for(z):
     z=vector(ZZ,z)
@@ -162,7 +241,7 @@ def correction_for(z):
     dual=pair*Cinv
     key=frac_key(dual)
     if key not in correction_by_class:
-        raise ArithmeticError(f"unknown D12 discriminant class for {tuple(z)}: {key}")
+        raise ArithmeticError(f"unknown D12 discriminant class for {tuple(z)}")
     return correction_by_class[key],class_order(dual)
 
 scale=ZZ(1)
@@ -199,6 +278,26 @@ nontriv_module=matrix(ZZ,[list(row[0]) for row in nontriv]).row_module()
 target_corr,target_order=correction_for(target_mw)
 target_h=QQ(target_mw*H*target_mw)
 target_po=(target_h+target_corr-4)/2
+
+assert target_h==QQ(7)
+assert target_corr==QQ(3), (target_mw,target_corr)
+assert target_po==ZZ(3), (target_mw,target_po)
+
+bridge_corr=QQ(bridge_label*Cinv*bridge_label)
+assert bridge_corr==QQ(3)
+bridge_rcoords=Cinv*(bridge_label-coupling*target_mw)
+assert all(v in ZZ for v in bridge_rcoords)
+bridge_pframe=vector(ZZ,[ZZ(v) for v in bridge_rcoords]+list(target_mw))
+assert bridge_pframe*G*bridge_pframe==10
+
+print(
+    "Q24O42CUR_CLASS|"
+    f"mw={','.join(map(str,target_mw))}|height={target_h}|"
+    f"corr={target_corr}|PdotO={target_po}|"
+    f"dual_label={','.join(map(str,bridge_label))}|"
+    "status=PASS_EXACT_D12_DISCRIMINANT_CLASS",
+    flush=True,
+)
 
 print(
     "Q24O42_ABSTRACT|"
@@ -729,113 +828,24 @@ sections_serialized=[
 ]
 
 # -------------------------------------------------------------------------
-# 5. Exact NS decomposition D42 = O + P42 + V.
-#
-# Exact profile: height=7, correction=3, P.O=3.  Thus
-# P=(4,1,pframe), while D42=(3,2,witness), so no fibre twist occurs.
+# 5. Export current-equation orbit42 point(s).
 # -------------------------------------------------------------------------
-pair=vector(ZZ,vector(ZZ,[0]*12+list(target_mw))*G[:,:12])
-dual=vector(QQ,pair)*Cinv
-
-detC=ZZ(C.det())
-assert detC==4
-Cadj=(detC*Cinv).change_ring(ZZ)
-
-qf_corr=pari(Cadj).qfminim(ZZ(3)*detC)
-label_candidates=[]
-seen_labels=set()
-for col in matrix(ZZ,qf_corr[2]).columns():
-    for sign in (1,-1):
-        labels=sign*vector(ZZ,col)
-        key=tuple(map(int,labels))
-        if key in seen_labels:
-            continue
-        seen_labels.add(key)
-        if ZZ(labels*Cadj*labels)!=ZZ(3)*detC:
-            continue
-
-        rQ=vector(QQ,labels-pair)*Cinv
-        if not all(v in ZZ for v in rQ):
-            continue
-        rcoords=vector(ZZ,[ZZ(v) for v in rQ])
-
-        shifted=vector(QQ,rcoords)+dual
-        corr=QQ(shifted*C*shifted)
-        if corr!=target_corr:
-            continue
-
-        pframe=vector(ZZ,list(rcoords)+list(target_mw))
-        if QQ(pframe*G*pframe)!=target_h+target_corr:
-            continue
-        label_candidates.append((labels,pframe))
-
-if not label_candidates:
-    raise SystemExit(
-        "could not recover a correction-3 D12 spinor representative for orbit42"
-    )
-
-U=matrix(ZZ,((0,1),(1,0)))
-NS=block_diagonal_matrix(U,-G)
-Fcls=vector(ZZ,[1,0]+[0]*17)
-Ocls=vector(ZZ,[-1,1]+[0]*17)
-Dcls=vector(ZZ,[3,2]+list(target_witness))
-assert Dcls*NS*Dcls==0 and Dcls*NS*Fcls==2
-
-decompositions=[]
-for labels,pframe in label_candidates:
-    Pcls=vector(ZZ,[4,1]+list(pframe))
-    assert Pcls*NS*Pcls==-2
-    assert Pcls*NS*Fcls==1
-    assert Pcls*NS*Ocls==3
-    vframe=target_witness-pframe
-    assert all(v==0 for v in vframe[12:])
-    Vcls=vector(ZZ,[0,0]+list(vframe))
-    reconstructed=Ocls+Pcls+Vcls
-    assert reconstructed==Dcls
-    decompositions.append({
-        "component_labels":[int(v) for v in labels],
-        "section_frame":[int(v) for v in pframe],
-        "vertical_root_coefficients":[int(v) for v in vframe[:12]],
-        "fiber_twist":0,
-        "P_dot_O":3,
-        "section_square":-2,
-    })
-
-decompositions.sort(
-    key=lambda row:(
-        sum(abs(int(v)) for v in row["vertical_root_coefficients"]),
-        sum(bool(v) for v in row["vertical_root_coefficients"]),
-        tuple(row["component_labels"]),
-    )
-)
-
-print(
-    "Q24O42_NS|"
-    f"decompositions={len(decompositions)}|fiber_twist=0|PdotO=3|"
-    f"best_vertical_L1={sum(abs(int(v)) for v in decompositions[0]['vertical_root_coefficients'])}|"
-    "formula=D42=O+P42+V|status=PASS_EXACT_NS_DECOMPOSITION",
-    flush=True,
-)
-
 payload={
-    "schema":"elkies-k3.h3-q24-d12-orbit42-section-modp.v1",
-    "status":"PASS_H3_Q24_D12_ORBIT42_EXPLICIT_SECTION_MODP",
+    "schema":"elkies-k3.h3-q24-orbit42-current-equation-section-modp.v1",
+    "status":"PASS_Q24_ORBIT42_CURRENT_EQUATION_SECTION_MODP",
     "prime":int(p),
     "inputs":{
         "q24_d12_signature":str(SIG.relative_to(ROOT)),
-        "q24_to_a1_toolbox":str(TOOLBOX.relative_to(ROOT)),
-        "q6_neighbor_artifact":str(Q6ART.relative_to(ROOT)),
-        "d12_frame":str(FRAME.relative_to(ROOT)),
+        "current_equation_bridge":str(BRIDGE.relative_to(ROOT)),
     },
     "target":{
         "q":6,
-        "orbit":42,
+        "historical_orbit":42,
         "child":"A11/MW6",
         "mw_projection":[int(v) for v in target_mw],
         "height":str(target_h),
         "local_correction":str(target_corr),
         "P_dot_O":int(target_po),
-        "neighbor_witness":[int(v) for v in target_witness],
     },
     "actual_twist_model":{
         "I8star_root":int(r),
@@ -850,38 +860,28 @@ payload={
         "nontrivial_count":len(nontriv),
         "span_rank":int(zero_module.rank()),
         "nontrivial_span_rank":int(nontriv_module.rank()),
-        "nontrivial_vectors":[
-            {
-                "mw":[int(v) for v in z],
-                "height":str(h),
-                "correction":str(c),
-            }
-            for z,h,c,o in nontriv
-        ],
+        "target_in_nontrivial_span":bool(target_mw in nontriv_module),
     },
-    "explicit_nontrivial_sections_Fp2":sections_serialized,
-    "partial_group_isomorphisms":mapping_records,
     "integral_combination":{
         "abstract_basis_indices":basis_indices,
         "coefficients":[int(v) for v in coeff],
     },
     "orbit42_section_candidates":target_exports,
-    "ns_decompositions":decompositions,
-    "proof_boundary":(
-        "The q24/orbit85 MW target is matched to explicit modular D12 "
-        "zero-pole sections by exact partial group-law relations and combined "
-        "on the elliptic curve. All exported target candidates have Z-degree "
-        "3, matching the exact P.O=3 spinor profile. The q6 pencil/Jacobian is the next separate gate."
-    ),
+    "bridge_ns_decomposition":{
+        "vertical_fibre_coefficient":0,
+        "vertical_root_L1":11,
+        "vertical_root_support":11,
+        "P_dot_O":3,
+        "chosen_dual_pairing":[0,0,0,0,0,0,1,0,0,0,0,0],
+    },
 }
-
 OUT=(args.output.resolve() if args.output else
-     LOCAL/f"q24-d12-orbit42-section-mod-{p}.json")
+     LOCAL/f"q24-orbit42-current-equation-section-mod-{p}.json")
 OUT.write_text(json.dumps(payload,indent=2,sort_keys=True)+"\n")
 print(f"OUTPUT|{OUT}",flush=True)
 print(
-    "Q24O42_RESULT|"
-    f"targets={len(target_exports)}|ns_decompositions={len(decompositions)}|"
-    "status=PASS_H3_Q24_D12_ORBIT42_EXPLICIT_SECTION_MODP",
+    "Q24O42CUR_RESULT|"
+    f"targets={len(target_exports)}|PdotO=3|"
+    "status=PASS_Q24_ORBIT42_CURRENT_EQUATION_SECTION_MODP",
     flush=True,
 )

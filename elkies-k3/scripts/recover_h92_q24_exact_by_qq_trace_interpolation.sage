@@ -34,10 +34,11 @@ This is a direct exactification of the geometric construction.
 import argparse
 import hashlib
 import json
+import time
 from pathlib import Path
 
 from sage.all import (
-    EllipticCurve, PolynomialRing, QQ, ZZ, matrix, sage_eval
+    EllipticCurve, PolynomialRing, QQ, ZZ, matrix, vector, sage_eval
 )
 
 
@@ -389,8 +390,47 @@ def newton_power_sums(poly):
         sums.append(-total)
     return sums
 
+def inverse_mod_univariate(value, modulus):
+    """Invert a QQ[T] polynomial modulo a coprime QQ[T] polynomial.
+
+    Sage's generic ``inverse_mod`` can route through ideal lifting here, which
+    is much slower than the needed univariate extended-gcd calculation during
+    q24 trace sampling.
+    """
+    value=RT(value)
+    modulus=RT(modulus)
+    value=value%modulus
+    g,s,unused_t=value.xgcd(modulus)
+    if g.degree()!=0:
+        raise ZeroDivisionError("noninvertible mod H")
+    return (s/QQ(g[0]))%modulus
+
+def spec_KTU_modH(v,tau,H):
+    """Specialize a QQ(U)(T) rational function directly in QQ[T]/(H).
+
+    This deliberately avoids constructing a normalized QQ(T) fraction after
+    specialization: numerator and denominator are reduced modulo H first.
+    """
+    v=KTU(v)
+    n=spec_TU(v.numerator(),tau)%H
+    d0=spec_TU(v.denominator(),tau)%H
+    if not d0:
+        raise ZeroDivisionError("KTU denominator vanished mod H")
+    return (n*inverse_mod_univariate(d0,H))%H
+
+
 def exact_sample(tau):
     tau=QQ(tau)
+    started=time.perf_counter()
+
+    def progress(stage,status="PASS"):
+        print(
+            f"Q24QQ_SAMPLE_STAGE|U={tau}|stage={stage}|"
+            f"elapsed={time.perf_counter()-started:.3f}|status={status}",
+            flush=True,
+        )
+
+    progress("begin","BEGIN")
     a13=QQ(A13(tau))
     b13=QQ(B13(tau))
     E13=EllipticCurve(QQ,[0,0,0,a13,b13])
@@ -403,9 +443,9 @@ def exact_sample(tau):
     H=H.monic()
     if H.gcd(H.derivative()).degree()!=0:
         raise ArithmeticError("non-etale")
+    progress("fibre")
 
     quartic=spec_TU(quartic_generic,tau)
-    sqfactor=spec_KTU(square_factor_generic,tau)
     scaleroot=spec_KU(scale_root,tau)
     d=spec_KU(dd,tau)
     uu=spec_KU(u_iso,tau)
@@ -414,67 +454,283 @@ def exact_sample(tau):
     tt=spec_KU(tt_iso,tau)
     gx=spec_KU(G1x,tau)
     gy=spec_KU(G1y,tau)
+    if not scaleroot or not uu:
+        raise ZeroDivisionError("specialized canonical map degenerates")
 
-    q8m=-(A1-tau*A0)/(B1-tau*B0)
-
-    def modH(v):
+    def rat_parts_modH(v):
+        # Numerator/denominator of an existing QQ(T) value, reduced mod H.
         v=KT(v)
-        n=RT(v.numerator())
-        d0=RT(v.denominator())
-        if d0.gcd(H).degree()!=0:
-            raise ZeroDivisionError("noninvertible mod H")
-        return (n*d0.inverse_mod(H))%H
+        return RT(v.numerator())%H, RT(v.denominator())%H
 
-    msec=(wy+sy)/(wx-sx)
-    if modH(q8m-msec):
-        raise ArithmeticError("chord mismatch")
+    # Do not invert any degree-46 polynomial here.
+    # Keep w as a rational pair wN/wD in A_tau = QQ[T]/(H).
+    mN,mD=rat_parts_modH(mW)
+    wxN,wxD=rat_parts_modH(wx)
+    sxN,sxD=rat_parts_modH(sx)
 
-    wsec=(2*wx+sx-q8m**2)/sqfactor
-    wA=modH(wsec)
-    if (wA*wA-quartic)%H:
+    sqv=KTU(square_factor_generic)
+    sqN=spec_TU(sqv.numerator(),tau)%H
+    sqD=spec_TU(sqv.denominator(),tau)%H
+    progress("quotient_prepare")
+
+    mD2=(mD*mD)%H
+    wxDsxD=(wxD*sxD)%H
+
+    # E = 2*wx + sx - m^2 = eN/eD.
+    eD=(wxDsxD*mD2)%H
+    eN=(
+        2*wxN*sxD*mD2
+        + sxN*wxD*mD2
+        - mN*mN*wxDsxD
+    )%H
+
+    # w = E / (sqN/sqD).
+    wN=(eN*sqD)%H
+    wD=(eD*sqN)%H
+    progress("quotient_crossmul")
+
+    if not wD:
+        raise ZeroDivisionError("cross-multiplied w denominator vanished mod H")
+    if wD.gcd(H).degree()!=0:
+        raise ZeroDivisionError("cross-multiplied w denominator is not a unit mod H")
+
+    if (wN*wN-quartic*wD*wD)%H:
         raise ArithmeticError("quartic sqrt mismatch")
+    progress("quotient_map")
 
-    wb=wA/scaleroot
     rA=(T-tii)%H
-    if rA.gcd(H).degree()!=0:
+    # H(T)=H(tii)+(T-tii)Q(T), hence modulo H:
+    # (T-tii)^(-1)=-Q(T)/H(tii). No polynomial XGCD needed.
+    h_at_tii=QQ(H(tii))
+    if not h_at_tii:
         raise ArithmeticError("meets branch zero")
-    rinv=rA.inverse_mod(H)
+    Qr,rem=(H-RT(h_at_tii)).quo_rem(rA)
+    if rem:
+        raise ArithmeticError("branch inverse division failed")
+    rinv=(-Qr/h_at_tii)%H
 
     Xa=(d*rinv)%H
-    Ya=(d*wb*rinv**2)%H
-    xA=((Xa-rr)/(uu**2))%H
-    yA=((Ya-ss*(Xa-rr)-tt)/(uu**3))%H
+    xdelta=(Xa-rr)%H
+    xA=(xdelta*(QQ.one()/(uu**2)))%H
 
-    if (yA*yA-xA*xA*xA-a13*xA-b13)%H:
+    # Keep canonical y as yN/yD:
+    #   Ya = d*(w/scaleroot)*rinv^2
+    #   y  = (Ya - ss*(Xa-rr) - tt)/uu^3
+    yaN=((d/scaleroot)*wN*rinv*rinv)%H
+    yaD=wD
+    yN=((yaN-(ss*xdelta+tt)*yaD)*(QQ.one()/(uu**3)))%H
+    yD=yaD
+
+    curve_rhs=(xA*xA*xA+a13*xA+b13)%H
+    if (yN*yN-curve_rhs*yD*yD)%H:
         raise ArithmeticError("canonical D13 miss")
+    progress("canonical_D13")
 
-    xp=[RT.one()]
-    for unused in range(23):
-        xp.append((xp[-1]*xA)%H)
-    cols=list(xp)+[(yA*xp[e])%H for e in range(23)]
-    assert len(cols)==47
+    # Multimodular recovery of the residual D13 point.
+    #
+    # We only need xQ, not the full 47-term L(47O) relation. Normalize b22=1:
+    #     root_sum = a23^2 - 2*b21
+    #     xQ       = root_sum - Tr(xA)
+    #
+    # Compute a23,b21 modulo machine-word primes, CRT only xQ, rational
+    # reconstruct xQ, then accept ONLY after exact QQ verification.
+    progress("multimodular_start")
 
-    Eval=matrix(QQ,46,47,lambda row,col: cols[col][row])
-    ker=Eval.right_kernel().basis_matrix()
-    if ker.nrows()!=1:
-        raise ArithmeticError(f"L47 kernel {ker.nrows()}")
-    rel=ker[0]
+    def qq_mod(q,F,p0):
+        q=QQ(q)
+        den=ZZ(q.denominator())
+        if den%p0==0:
+            raise ZeroDivisionError("coefficient denominator hits prime")
+        return F(ZZ(q.numerator()))/F(den)
 
-    XR=PolynomialRing(QQ,"X")
-    Xv=XR.gen()
-    Afun=sum(rel[i]*Xv**i for i in range(24))
-    Bfun=sum(rel[24+i]*Xv**i for i in range(23))
-    Rint=Afun**2-(Xv**3+a13*Xv+b13)*Bfun**2
-    if Rint.degree()!=47:
-        raise ArithmeticError(f"residual degree {Rint.degree()}")
+    def poly_mod_p(poly,F,RF,p0):
+        return RF([qq_mod(c,F,p0) for c in RT(poly).list()])
 
-    root_sum=-Rint[46]/Rint[47]
-    ps=newton_power_sums(H)
-    trace_x=sum(xA[i]*ps[i] for i in range(46))
-    xQ=root_sum-trace_x
-    if not Bfun(xQ):
-        raise ArithmeticError("trace B zero")
-    yQ=-Afun(xQ)/Bfun(xQ)
+    def power_sums_field(poly):
+        n=poly.degree()
+        if poly[n] != 1:
+            raise ArithmeticError("nonmonic modular H")
+        sums=[poly.base_ring()(n)]
+        for k in range(1,n):
+            total=poly.base_ring()(k)*poly[n-k]
+            for j in range(1,k):
+                total += poly[n-j]*sums[k-j]
+            sums.append(-total)
+        return sums
+
+    def crt_pair(r,M,rp,p0):
+        F0=__import__("sage.all",fromlist=["GF"]).GF(p0)
+        t=ZZ((F0(rp)-F0(r%p0))/F0(M%p0))
+        return ZZ((r + M*t) % (M*p0)), ZZ(M*p0)
+
+    def rational_reconstruct_symmetric(a,m):
+        a=ZZ(a%m)
+        m=ZZ(m)
+        if not a:
+            return QQ.zero()
+        B=ZZ((m//2).isqrt())
+        r0,r1=m,a
+        t0,t1=ZZ.zero(),ZZ.one()
+        while abs(r1)>B and r1:
+            q=r0//r1
+            r0,r1=r1,r0-q*r1
+            t0,t1=t1,t0-q*t1
+        if not r1 or not t1 or abs(t1)>B:
+            return None
+        n,d=ZZ(r1),ZZ(t1)
+        if d<0:
+            n,d=-n,-d
+        g=n.gcd(d)
+        if g!=1:
+            n//=g
+            d//=g
+        if d<=0 or (a*d-n)%m:
+            return None
+        return QQ(n)/QQ(d)
+
+    # Independently certified target residual point modulo 100003.
+    pcheck=ZZ(modart["prime"])
+    Fcheck=__import__("sage.all",fromlist=["GF"]).GF(pcheck)
+    RFcheck=PolynomialRing(Fcheck,"Uc")
+    uc=Fcheck(ZZ(tau.numerator()))/Fcheck(ZZ(tau.denominator()))
+
+    secmod=modart["section_mod_p"]
+    Zc=RFcheck([Fcheck(int(v)) for v in secmod["Z_coefficients_low_to_high"]])
+    Xc=RFcheck([Fcheck(int(v)) for v in secmod["X_coefficients_low_to_high"]])
+    Yc=RFcheck([Fcheck(int(v)) for v in secmod["Y_coefficients_low_to_high"]])
+    zc=Zc(uc)
+    if not zc:
+        raise ArithmeticError("certified q24 target has pole at sample")
+
+    Echeck=EllipticCurve(
+        Fcheck,
+        [0,0,0,qq_mod(a13,Fcheck,pcheck),qq_mod(b13,Fcheck,pcheck)]
+    )
+    q24check=Echeck(Xc(uc)/(zc**2),Yc(uc)/(zc**3))
+    g1check=Echeck(qq_mod(gx,Fcheck,pcheck),qq_mod(gy,Fcheck,pcheck))
+    qrescheck=-(q24check-2*g1check)
+    xcheck,ycheck=qrescheck.xy()
+
+    crt_r=ZZ(xcheck)
+    crt_M=ZZ(pcheck)
+
+    prime=ZZ(1000000007)
+    good_primes=0
+    max_primes=256
+    xQ=None
+    yQ=None
+
+    for attempt in range(max_primes):
+        prime=prime.next_prime()
+        if prime==pcheck:
+            prime=prime.next_prime()
+
+        try:
+            Fp=__import__("sage.all",fromlist=["GF"]).GF(prime)
+            RFp=PolynomialRing(Fp,"t")
+
+            Hp=poly_mod_p(H,Fp,RFp,prime)
+            if Hp.degree()!=46 or Hp.gcd(Hp.derivative()).degree()!=0:
+                continue
+
+            xpA=poly_mod_p(xA,Fp,RFp,prime)%Hp
+            ypN=poly_mod_p(yN,Fp,RFp,prime)%Hp
+            ypD=poly_mod_p(yD,Fp,RFp,prime)%Hp
+
+            powers=[RFp.one()]
+            for unused in range(23):
+                powers.append((powers[-1]*xpA)%Hp)
+            cols_p=[(ypD*powers[e])%Hp for e in range(24)]
+            cols_p += [(ypN*powers[e])%Hp for e in range(23)]
+
+            Mp=matrix(Fp,46,46,lambda row,col: cols_p[col][row])
+            rhsp=vector(Fp,[-cols_p[46][row] for row in range(46)])
+            coeffp=Mp.solve_right(rhsp)
+
+            a23p=coeffp[23]
+            b21p=coeffp[45]
+            root_sum_p=a23p*a23p-2*b21p
+
+            ps_p=power_sums_field(Hp)
+            trace_x_p=sum(xpA[i]*ps_p[i] for i in range(46))
+            xqp=root_sum_p-trace_x_p
+
+            crt_r,crt_M=crt_pair(crt_r,crt_M,ZZ(xqp),prime)
+            good_primes+=1
+
+        except Exception:
+            continue
+
+        if good_primes<=3 or good_primes%4==0:
+            print(
+                "Q24QQ_SAMPLE_STAGE|"
+                f"U={tau}|stage=multimodular_qx|"
+                f"primes={good_primes}|modulus_bits={crt_M.nbits()}|"
+                f"elapsed={__import__('time').perf_counter()-started:.3f}|status=PASS",
+                flush=True,
+            )
+
+        if good_primes<4 or good_primes%2:
+            continue
+
+        cand=rational_reconstruct_symmetric(crt_r,crt_M)
+        if cand is None:
+            continue
+
+        try:
+            if qq_mod(cand,Fcheck,pcheck)!=xcheck:
+                continue
+        except ZeroDivisionError:
+            continue
+
+        rhsQQ=QQ(cand**3+a13*cand+b13)
+        ycand=qq_sqrt(rhsQQ)
+        if ycand is None:
+            continue
+
+        try:
+            yplus=qq_mod(ycand,Fcheck,pcheck)
+        except ZeroDivisionError:
+            continue
+
+        if yplus==ycheck:
+            chosen_y=ycand
+        elif -yplus==ycheck:
+            chosen_y=-ycand
+        else:
+            continue
+
+        Qcand=E13(QQ(cand),QQ(chosen_y))
+        q24cand=(-Qcand)+2*E13(gx,gy)
+        q24cx,q24cy=q24cand.xy()
+        try:
+            q24red=Echeck(
+                qq_mod(q24cx,Fcheck,pcheck),
+                qq_mod(q24cy,Fcheck,pcheck),
+            )
+        except ZeroDivisionError:
+            continue
+        if q24red!=q24check:
+            continue
+
+        xQ=QQ(cand)
+        yQ=QQ(chosen_y)
+        print(
+            "Q24QQ_SAMPLE_STAGE|"
+            f"U={tau}|stage=multimodular_reconstruct|"
+            f"primes={good_primes}|modulus_bits={crt_M.nbits()}|"
+            f"x_bits={max(abs(ZZ(xQ.numerator())).nbits(),abs(ZZ(xQ.denominator())).nbits())}|"
+            f"elapsed={__import__('time').perf_counter()-started:.3f}|"
+            "status=PASS_EXACT",
+            flush=True,
+        )
+        break
+
+    if xQ is None or yQ is None:
+        raise ArithmeticError(
+            f"multimodular xQ reconstruction failed after {good_primes} good primes "
+            f"({crt_M.nbits()} CRT bits)"
+        )
 
     AJ=-E13(xQ,yQ)
     G1=E13(gx,gy)
@@ -482,6 +738,7 @@ def exact_sample(tau):
     if Q24.is_zero():
         raise ArithmeticError("q24 zero")
     qx,qy=Q24.xy()
+    progress("done")
     return QQ(qx),QQ(qy)
 
 # ===========================================================================
@@ -544,6 +801,10 @@ while len(samples)<args.samples and attempted<args.scan_limit:
     except Exception as exc:
         reason=type(exc).__name__+":"+str(exc)
         skips[reason]=skips.get(reason,0)+1
+        print(
+            f"Q24QQ_SAMPLE_SKIP|U={tau}|reason={reason}|status=SKIP",
+            flush=True,
+        )
         continue
 
     samples.append((QQ(tau),x0,y0))
@@ -588,35 +849,108 @@ if args.collect_only:
 
 NUM=52
 DEN=48
-IM=matrix(
-    QQ,
-    len(samples),
-    (NUM+1)+(DEN+1),
-    lambda row,col: (
-        samples[row][0]**col
-        if col<=NUM
-        else -samples[row][1]*samples[row][0]**(col-(NUM+1))
-    ),
-)
-IK=IM.right_kernel().basis_matrix()
-if IK.nrows()!=1:
-    raise ArithmeticError(f"exact 52/48 interpolation kernel {IK.nrows()}")
 
-rv=IK[0]
-X=RU(list(rv[:NUM+1]))
-D=RU(list(rv[NUM+1:]))
+# A rational function N/D with deg(N)<=52 and deg(D)<=48 has
+# 53+49-1 = 101 projective coefficients.  Use exactly 101 samples to
+# reconstruct it and reserve every additional sample for independent replay.
+#
+# Instead of a dense 108x102 QQ kernel, construct the interpolation polynomial
+# R modulo M=prod(U-u_i), then perform polynomial rational reconstruction:
+#
+#       X == R*D (mod M),  deg X <= 52, deg D <= 48.
+#
+# The first extended-Euclid remainder of degree <=52 gives the unique Padé
+# solution because 52+48 < 101.
+RECON=NUM+DEN+1
+if len(samples)<RECON:
+    raise ArithmeticError(f"need {RECON} samples for 52/48 reconstruction")
+
+recon_samples=samples[:RECON]
+check_samples=samples[RECON:]
+
+# Incremental Newton/CRT interpolation.  After k iterations:
+#   R(u_i)=x_i for all retained i, and M=prod_i(U-u_i).
+R=RU.zero()
+Minterp=RU.one()
+for idx,(u0,x0,unused_y) in enumerate(recon_samples,1):
+    mu=QQ(Minterp(u0))
+    if not mu:
+        raise ArithmeticError("duplicate interpolation abscissa")
+    delta=(QQ(x0)-QQ(R(u0)))/mu
+    R += RU(delta)*Minterp
+    Minterp *= (U-QQ(u0))
+    if idx in (1,20,40,60,80,101):
+        print(
+            f"Q24QQ_PADE|stage=interpolate|samples={idx}|"
+            f"degR={R.degree()}|degM={Minterp.degree()}|status=PASS",
+            flush=True,
+        )
+
+R=R%Minterp
+for u0,x0,unused_y in recon_samples:
+    if R(u0)!=x0:
+        raise ArithmeticError("Newton interpolation replay failed")
+
+# Extended Euclid while tracking only the coefficient of R:
+#     r_i = s_i*Minterp + t_i*R.
+# Thus r_i == t_i*R (mod Minterp).
+r0,r1=Minterp,R
+t0,t1=RU.zero(),RU.one()
+steps=0
+
+while r1 and r1.degree()>NUM:
+    q,r2=r0.quo_rem(r1)
+    t2=t0-q*t1
+    r0,r1=r1,r2
+    t0,t1=t1,t2
+    steps+=1
+    if steps<=3 or steps%10==0:
+        print(
+            f"Q24QQ_PADE|stage=eea|step={steps}|"
+            f"deg_r={r1.degree() if r1 else -1}|"
+            f"deg_d={t1.degree() if t1 else -1}|status=PASS",
+            flush=True,
+        )
+
+if not r1 or not t1:
+    raise ArithmeticError("Padé reconstruction terminated trivially")
+if r1.degree()>NUM or t1.degree()>DEN:
+    raise ArithmeticError(
+        f"Padé degree miss: numerator={r1.degree()} denominator={t1.degree()}"
+    )
+
+X=RU(r1)
+D=RU(t1)
 if not D:
-    raise ArithmeticError("x denominator vanished")
+    raise ArithmeticError("Padé denominator vanished")
+
+# Normalize denominator to monic, exactly as in the previous kernel method.
 scale=D.leading_coefficient()
 X/=scale
 D/=scale
+
 if X.gcd(D).degree()!=0:
-    raise ArithmeticError("x interpolation not reduced")
+    raise ArithmeticError("x Padé reconstruction not reduced")
+if X.degree()!=NUM or D.degree()!=DEN or not D.is_monic():
+    raise ArithmeticError(
+        f"x Padé profile miss: {X.degree()}/{D.degree()}, monic={D.is_monic()}"
+    )
 
-assert X.degree()==52 and D.degree()==48 and D.is_monic()
+# Replay reconstruction samples and, importantly, all samples that did not
+# participate in reconstruction.
+for u0,x0,unused_y in recon_samples:
+    if not D(u0) or X(u0)/D(u0)!=x0:
+        raise ArithmeticError("Padé reconstruction sample miss")
+for u0,x0,unused_y in check_samples:
+    if not D(u0) or X(u0)/D(u0)!=x0:
+        raise ArithmeticError("Padé independent replay miss")
 
-for u0,x0,unused_y in samples:
-    assert D(u0) and X(u0)/D(u0)==x0
+print(
+    f"Q24QQ_PADE|x=52/48|reconstruction_samples={RECON}|"
+    f"independent_samples={len(check_samples)}|eea_steps={steps}|"
+    "status=PASS_EXACT_RATIONAL_RECONSTRUCTION",
+    flush=True,
+)
 
 Z=polynomial_sqrt(D)
 if Z is None:

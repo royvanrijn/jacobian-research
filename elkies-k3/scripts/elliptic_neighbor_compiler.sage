@@ -102,12 +102,13 @@ def bounded_weierstrass_monomials(old_fiber_degree, base_powers):
 
 
 def marked_section_generic_fibre_basis(old_fiber_degree, chord_symbol="m"):
-    """Return the generic-fibre basis for ``L((q-1)O+P)``.
+    """Return the generic-fibre basis for ``L((q-1)O+P_pole)``.
 
     Once a caller has certified that the marked chord ``m`` has poles only at
-    ``O`` and the displayed marked point ``P``, the usual Weierstrass
+    ``O`` and the caller-designated finite pole section ``P_pole``, the usual Weierstrass
     monomials span ``L((q-1)O)`` and adjoining ``m`` gives the degree-``q``
-    space ``L((q-1)O+P)``.  This is a generic-fibre statement only: base
+    space ``L((q-1)O+P_pole)``.  For the convention
+    ``m=(y-y(P))/(x-x(P))``, the finite pole is ``-P``.  This is a generic-fibre statement only: base
     coefficient intervals and the vertical correction must still be imposed
     by actual resolved-chart conditions.
 
@@ -131,11 +132,12 @@ def marked_section_generic_fibre_basis(old_fiber_degree, chord_symbol="m"):
 
 
 def balanced_marked_chord_power_basis(multiplicity, chord_symbol="m", x_symbol="x"):
-    """Return the standard basis of ``L(nO+nP)`` in a chord quadratic extension.
+    """Return the standard basis of ``L(nO+nP_pole)`` in a chord quadratic extension.
 
     Suppose a caller has certified a marked chord ``m`` with simple poles at
-    ``O,P``, a function ``x`` with pole divisor ``2O``, and a monic quadratic
-    relation for ``x`` over the old base field extended by ``m``.  Then
+    ``O,P_pole`` (with ``P_pole=-P`` for ``m=(y-y(P))/(x-x(P))``), a function
+    ``x`` with pole divisor ``2O``, and a monic quadratic relation for ``x``
+    over the old base field extended by ``m``.  Then
 
     ``1,m,...,m^n, x,x*m,...,x*m^(n-2)``
 
@@ -962,8 +964,9 @@ def certify_explicit_pencil_basis(compilation, pencil_basis):
                 compilation["kernel_dimension"]
             )
         )
-    condition_matrix = matrix(QQ, compilation["condition_matrix"])
-    pencil_basis = matrix(QQ, pencil_basis)
+    coefficient_field = compilation.get("coefficient_field", QQ)
+    condition_matrix = matrix(coefficient_field, compilation["condition_matrix"])
+    pencil_basis = matrix(coefficient_field, pencil_basis)
     if pencil_basis.ncols() != condition_matrix.ncols():
         raise ValueError("pencil basis has incompatible ambient dimension")
     if pencil_basis.nrows() != compilation["kernel_dimension"]:
@@ -971,7 +974,7 @@ def certify_explicit_pencil_basis(compilation, pencil_basis):
     if pencil_basis.rank() != pencil_basis.nrows():
         raise ValueError("pencil basis is linearly dependent")
     if condition_matrix * pencil_basis.transpose() != matrix(
-        QQ, condition_matrix.nrows(), pencil_basis.nrows()
+        coefficient_field, condition_matrix.nrows(), pencil_basis.nrows()
     ):
         raise ValueError("pencil basis violates a resolved-chart condition")
     return pencil_basis
@@ -1453,6 +1456,12 @@ def squarefree_binary_quartic(radicand, old_base_ring):
     ) * old_base_ring(prod(odd_factors))
     if not quartic:
         raise ValueError("chord discriminant is a square, not a genus-one model")
+    if quartic.degree() > 4:
+        raise ValueError(
+            "squarefree radicand has degree {}, not a binary quartic".format(
+                quartic.degree()
+            )
+        )
     quotient = radicand / old_base_ring.fraction_field()(quartic)
     if not quotient.is_square():
         raise ValueError("odd-factor quartic lost a non-square scalar (quadratic twist)")
@@ -1464,6 +1473,12 @@ def squarefree_binary_quartic(radicand, old_base_ring):
 
 def binary_quartic_invariants(quartic):
     """Return classical ``I,J`` for ``a*x^4+b*x^3*z+c*x^2*z^2+d*x*z^3+e*z^4``."""
+    if quartic.degree() > 4:
+        raise ValueError(
+            "binary quartic invariant requested for degree {}".format(
+                quartic.degree()
+            )
+        )
     coefficients = list(quartic.list()) + [quartic.base_ring()(0)] * 5
     e, d, c, b, a = coefficients[:5]
     invariant_i = 12 * a * e - 3 * b * d + c**2
@@ -1494,6 +1509,12 @@ def binary_quartic_covariants(quartic):
     by the Jacobian map.  Keeping this in the core lets section transport use
     an actual resolved divisor point, rather than search the child equation.
     """
+    if quartic.degree() > 4:
+        raise ValueError(
+            "binary quartic covariant requested for degree {}".format(
+                quartic.degree()
+            )
+        )
     base_ring = quartic.base_ring()
     binary_ring = PolynomialRing(base_ring, names=("x", "z"))
     x, z = binary_ring.gens()

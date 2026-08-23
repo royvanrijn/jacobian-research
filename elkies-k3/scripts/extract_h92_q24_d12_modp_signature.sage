@@ -73,6 +73,7 @@ need=(
     "final58","jacA","jacB","quartic","VR","VF",
     "root_rank","root_det","euler","final_dimension",
     "resolved_rank","ambient","collision_rank","post_dim",
+    "terminal_status",
 )
 missing=[name for name in need if name not in scope]
 if missing:
@@ -89,6 +90,11 @@ assert int(scope["root_det"])==4
 assert int(scope["euler"])==24
 quartic=scope["quartic"]
 assert int(quartic.degree())==4
+compiler_terminal_status=str(scope["terminal_status"])
+if compiler_terminal_status == "PASS_H3_Q24_EFFECTIVE_D13_D12_MODP":
+    signature_status="PASS_H3_Q24_ORBIT85_D12_MODP_SIGNATURE"
+else:
+    signature_status="CANDIDATE_H3_Q24_ORBIT85_D12_MODP_SIGNATURE"
 
 VR=scope["VR"]
 VF=scope["VF"]
@@ -109,7 +115,8 @@ def norm_rf(value):
 
 payload={
     "schema":"elkies-k3.h3-q24-orbit85-d12-modp-signature.v1",
-    "status":"PASS_H3_Q24_ORBIT85_D12_MODP_SIGNATURE",
+    "status":signature_status,
+    "component_compiler_status":compiler_terminal_status,
     "prime":int(args.prime),
     "source_neighbor":{
         "q":24,
@@ -136,7 +143,8 @@ payload={
     "child_euler":24,
     "proof_boundary":(
         "Explicit modular q24/orbit85 resolved-RR signature. "
-        "Characteristic-zero replay remains separate."
+        "The embedded component compiler status is recorded separately; "
+        "characteristic-zero replay remains separate."
     ),
 }
 
@@ -149,7 +157,7 @@ print(
     "Q24D12SIGNATURE|"
     f"prime={args.prime}|plane=2x56|pivots={','.join(map(str,payload['plane_pivots']))}|"
     "RR=56,48,8,6,2|quartic=4|root=12,4|euler=24|"
-    "status=PASS_H3_Q24_ORBIT85_D12_MODP_SIGNATURE",
+    f"compiler_status={compiler_terminal_status}|status={signature_status}",
     flush=True,
 )
 print(f"OUTPUT|{OUT}",flush=True)

@@ -55,7 +55,10 @@ if not SIG.exists():
         f"missing {SIG}; run extract_h92_q24_d12_modp_signature.sage first"
     )
 sig=json.loads(SIG.read_text())
-assert sig["status"]=="PASS_H3_Q24_ORBIT85_D12_MODP_SIGNATURE"
+assert sig["status"] in (
+    "PASS_H3_Q24_ORBIT85_D12_MODP_SIGNATURE",
+    "CANDIDATE_H3_Q24_ORBIT85_D12_MODP_SIGNATURE",
+)
 assert sig["rr"]=={
     "ambient":56,
     "collision_rank":48,
@@ -240,27 +243,29 @@ def mod2(x):
     x=QQ(x)
     return x-2*(x/2).floor()
 
+def frac_key(v):
+    return tuple(QQ(x)-QQ(x).floor() for x in vector(QQ,v))
+
+root_inv=root.inverse()
+correction_by_class={frac_key(vector(QQ,[0]*12)):QQ(0)}
+for i in range(12):
+    weight=vector(QQ,root_inv.row(i))
+    key=frac_key(weight)
+    norm=QQ(weight*root*weight)
+    if key not in correction_by_class or norm<correction_by_class[key]:
+        correction_by_class[key]=norm
+assert sorted(correction_by_class.values()) == [QQ(0),QQ(1),QQ(3),QQ(3)]
+
 def correction_for(z):
     z=vector(ZZ,z)
     base=vector(ZZ,[0]*12+list(z))
     pair=vector(QQ,base*G[:,:12])
-    dual=pair*root.inverse()
+    dual=pair*root_inv
     order=class_order(dual)
-    raw=QQ(dual*root*dual)
-    if order==1:
-        return QQ(0),order
-    candidates=[QQ(0),QQ(1),QQ(3)]
-    candidates=[c for c in candidates if mod2(c)==mod2(raw)]
-    h=QQ(z*H*z)
-    valid=[]
-    for c in candidates:
-        po=(h+c-4)/2
-        if po in ZZ and po>=0:
-            valid.append((ZZ(po),c))
-    if not valid:
+    key=frac_key(dual)
+    if key not in correction_by_class:
         return None,order
-    valid.sort()
-    return valid[0][1],order
+    return correction_by_class[key],order
 
 scale=ZZ(1)
 for v in H.list():

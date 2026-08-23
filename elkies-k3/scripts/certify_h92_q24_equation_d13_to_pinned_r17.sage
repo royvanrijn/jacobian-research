@@ -34,6 +34,10 @@ followed by the pinned endpoint isometry.
 
 This is an exact integral lattice/NS/marking certificate.  It does not execute
 the downstream characteristic-zero Weierstrass pencils.
+
+The companion backward exact-lift manifest is also loaded as a structural
+equation-lift contract: every stored forward transition, horizontal profile,
+and suggested reconstruction method must agree with the fixed corridor replay.
 """
 
 import contextlib
@@ -43,7 +47,7 @@ import sys
 from pathlib import Path
 
 from sage.all import (
-    ZZ, block_diagonal_matrix, identity_matrix, matrix, vector
+    QQ, ZZ, block_diagonal_matrix, identity_matrix, matrix, vector
 )
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -53,6 +57,7 @@ GEN = ROOT / "artifacts" / "generated-results"
 
 PROFILE = SCRIPTS / "compare_h92_three_q24_d12_current_equation_profiles.sage"
 Q24_ART = GEN / "elkies-k3-h3-q6-q8-d13-q24-degree2.json"
+MANIFEST = LOCAL / "h3-r17-backward-exact-lift-manifest.json"
 PINNED = ROOT / "elkies-k3" / "data" / "lattice" / "rank17_gram.txt"
 ENDPOINT_ISO = (
     ROOT / "elkies-k3" / "data" / "fibrations"
@@ -76,6 +81,119 @@ SUFFIX = [
     ("elkies-k3-h3-mw16-a1-q6-degree2-cap10000-stream-chunk001.json",2247,6,(0,0,1),"rootless",17),
 ]
 
+MANIFEST_EXPECTATIONS = [
+    {
+        "artifact":"artifacts/generated-results/elkies-k3-h3-q6-q8-d13-q24-degree2.json",
+        "parent":"D13/MW4",
+        "child":"D12/MW5",
+        "q":24,
+        "orbit":85,
+        "child_root_data":(12,264,4),
+        "child_mw_rank":5,
+        "equation_lift_hint":"RESOLVED_RR_PREFERRED",
+    },
+    {
+        "artifact":"artifacts/generated-results/elkies-k3-h3-d12-o85-q6-degree2.json",
+        "parent":"D12/MW5",
+        "child":"A11/MW6",
+        "q":6,
+        "orbit":42,
+        "child_root_data":(11,132,12),
+        "child_mw_rank":6,
+        "equation_lift_hint":"RESOLVED_RR_OR_SMALL_DENOMINATOR",
+    },
+    {
+        "artifact":"artifacts/generated-results/elkies-k3-h3-a11-middle-q8-degree2.json",
+        "parent":"A11/MW6",
+        "child":"2A5/MW7",
+        "q":8,
+        "orbit":922,
+        "child_root_data":(10,60,36),
+        "child_mw_rank":7,
+        "equation_lift_hint":"RESOLVED_RR_PREFERRED",
+    },
+    {
+        "artifact":"artifacts/generated-results/elkies-k3-h3-a5a5-c2-q4-degree2.json",
+        "parent":"2A5/MW7",
+        "child":"3A3/MW8",
+        "q":4,
+        "orbit":472,
+        "child_root_data":(9,36,64),
+        "child_mw_rank":8,
+        "equation_lift_hint":"NODE_INTERPOLATION_OR_POLYNOMIAL_SECTION",
+    },
+    {
+        "artifact":"artifacts/generated-results/elkies-k3-h3-a3x3-q4-degree2.json",
+        "parent":"3A3/MW8",
+        "child":"A3+2A2/MW10",
+        "q":4,
+        "orbit":323,
+        "child_root_data":(7,24,36),
+        "child_mw_rank":10,
+        "equation_lift_hint":"LOW_DENOMINATOR_SECTION",
+    },
+    {
+        "artifact":"artifacts/generated-results/elkies-k3-h3-mw10-a3a2a2-q4-degree2.json",
+        "parent":"A3+2A2/MW10",
+        "child":"5A1/MW12",
+        "q":4,
+        "orbit":207,
+        "child_root_data":(5,10,32),
+        "child_mw_rank":12,
+        "equation_lift_hint":"RESOLVED_RR_OR_SMALL_DENOMINATOR",
+    },
+    {
+        "artifact":"artifacts/generated-results/elkies-k3-h3-mw12-5a1-q4-degree2-first-hit.json",
+        "parent":"5A1/MW12",
+        "child":"4A1/MW13",
+        "q":4,
+        "orbit":52,
+        "child_root_data":(4,8,16),
+        "child_mw_rank":13,
+        "equation_lift_hint":"RESOLVED_RR_OR_SMALL_DENOMINATOR",
+    },
+    {
+        "artifact":"artifacts/generated-results/elkies-k3-h3-mw13-4a1-q4-degree2-first-hit.json",
+        "parent":"4A1/MW13",
+        "child":"3A1/MW14",
+        "q":4,
+        "orbit":114,
+        "child_root_data":(3,6,8),
+        "child_mw_rank":14,
+        "equation_lift_hint":"RESOLVED_RR_OR_SMALL_DENOMINATOR",
+    },
+    {
+        "artifact":"artifacts/generated-results/elkies-k3-h3-mw14-3a1-q4-degree2-first-hit.json",
+        "parent":"3A1/MW14",
+        "child":"2A1/MW15",
+        "q":4,
+        "orbit":498,
+        "child_root_data":(2,4,4),
+        "child_mw_rank":15,
+        "equation_lift_hint":"RESOLVED_RR_OR_SMALL_DENOMINATOR",
+    },
+    {
+        "artifact":"artifacts/generated-results/elkies-k3-h3-mw15-2a1-q4-degree2-first-hit.json",
+        "parent":"2A1/MW15",
+        "child":"A1/MW16",
+        "q":4,
+        "orbit":981,
+        "child_root_data":(1,2,2),
+        "child_mw_rank":16,
+        "equation_lift_hint":"RESOLVED_RR_OR_SMALL_DENOMINATOR",
+    },
+    {
+        "artifact":"artifacts/generated-results/elkies-k3-h3-mw16-a1-q6-degree2-cap10000-stream-chunk001.json",
+        "parent":"A1/MW16",
+        "child":"rootless/MW17",
+        "q":6,
+        "orbit":2247,
+        "child_root_data":(0,0,1),
+        "child_mw_rank":17,
+        "equation_lift_hint":"RESOLVED_RR_PREFERRED",
+    },
+]
+
 
 def load_gram(path):
     return matrix(ZZ, [
@@ -91,6 +209,60 @@ def ns(frame):
 
 def rows(M):
     return [[int(x) for x in row] for row in M.rows()]
+
+
+def load_equation_lift_manifest():
+    data = json.loads(MANIFEST.read_text())
+    assert data["status"] == "PASS_H3_R17_BACKWARD_EXACT_LIFT_MANIFEST"
+    steps = data["forward_steps"]
+    assert len(steps) == len(MANIFEST_EXPECTATIONS)
+    for index, (rec, exp) in enumerate(zip(steps, MANIFEST_EXPECTATIONS)):
+        assert rec["artifact"] == exp["artifact"], index
+        assert rec["parent"] == exp["parent"], index
+        assert rec["child"] == exp["child"], index
+        assert int(rec["q"]) == exp["q"], index
+        assert int(rec["orbit"]) == exp["orbit"], index
+        assert tuple(rec["child_root_data"]) == exp["child_root_data"], index
+        assert int(rec["child_mw_rank"]) == exp["child_mw_rank"], index
+        assert rec["equation_lift_hint"] == exp["equation_lift_hint"], index
+        assert matrix(ZZ, rec["transition"]).dimensions() == (19,19), index
+    return data
+
+
+def assert_horizontal_profile(step, expected):
+    h = step["horizontal"]
+    for key, value in expected.items():
+        if key in ("height", "local_correction"):
+            assert QQ(str(h[key])) == QQ(value), key
+        else:
+            assert h[key] == value, key
+
+
+def manifest_step_payload(step):
+    h = step["horizontal"]
+    return {
+        "artifact":step["artifact"],
+        "parent":step["parent"],
+        "child":step["child"],
+        "q":int(step["q"]),
+        "orbit":int(step["orbit"]),
+        "child_root_data":step["child_root_data"],
+        "child_mw_rank":int(step["child_mw_rank"]),
+        "equation_lift_hint":step["equation_lift_hint"],
+        "horizontal":{
+            "height":h["height"],
+            "local_correction":h["local_correction"],
+            "P_dot_O":h["P_dot_O"],
+            "fibre_twist":h["fibre_twist"],
+            "mw_projection":h["mw_projection"],
+            "vertical_root_L1":h["vertical_root_L1"],
+            "vertical_root_support":h["vertical_root_support"],
+            "vertical_root_coefficients":h["vertical_root_coefficients"],
+            "section_class":h["section_class"],
+            "section_frame":h["section_frame"],
+        },
+        "transition_matches_replay":True,
+    }
 
 
 def run_scope(path, argv=()):
@@ -114,9 +286,33 @@ def run_scope(path, argv=()):
     return scope
 
 
-for p in [PROFILE,Q24_ART,PINNED,ENDPOINT_ISO] + [GEN/x[0] for x in SUFFIX]:
+for p in [PROFILE,Q24_ART,MANIFEST,PINNED,ENDPOINT_ISO] + [GEN/x[0] for x in SUFFIX]:
     if not p.exists():
         raise SystemExit(f"missing prerequisite: {p}")
+
+manifest = load_equation_lift_manifest()
+manifest_steps = manifest["forward_steps"]
+
+assert_horizontal_profile(manifest_steps[1], {
+    "mw_projection":[-1,0,-1,-1,0],
+    "height":7,
+    "local_correction":3,
+    "P_dot_O":3,
+    "fibre_twist":0,
+})
+assert_horizontal_profile(manifest_steps[2], {
+    "P_dot_O":6,
+    "fibre_twist":-2,
+})
+assert_horizontal_profile(manifest_steps[3], {
+    "P_dot_O":0,
+    "fibre_twist":2,
+})
+assert_horizontal_profile(manifest_steps[-1], {
+    "P_dot_O":4,
+    "fibre_twist":-1,
+    "vertical_root_L1":0,
+})
 
 # -------------------------------------------------------------------------
 # 1. Current exact equation-D13 marking and historical->equation map.
@@ -216,6 +412,8 @@ H24 = (
     )
     * matrix(ZZ,r24["neighbor_basis"])
 )
+m24 = manifest_steps[0]
+assert matrix(ZZ,m24["transition"]) == H24
 D12 = matrix(ZZ,r24["child_root_adapted_frame"])
 assert H24 * Ghist * H24.transpose() == ns(D12)
 assert abs(ZZ(H24.det())) == 1
@@ -257,6 +455,7 @@ steps = [{
     "orbit":85,
     "root_data":[12,264,4],
     "mw_rank":5,
+    "manifest":manifest_step_payload(m24),
     "transition":rows(E24),
 }]
 
@@ -265,6 +464,8 @@ a1_to_rootless = None
 
 for index,(name,orbit,q,rdata,ade,mw) in enumerate(SUFFIX, start=1):
     path = GEN / name
+    mstep = manifest_steps[index]
+    assert ROOT / mstep["artifact"] == path
     data = json.loads(path.read_text())
     assert data["status"] == "PASS_ROOT_ADAPTED_WEYL_NEIGHBORS"
     assert load_gram(ROOT/data["frame"]) == current
@@ -288,6 +489,7 @@ for index,(name,orbit,q,rdata,ade,mw) in enumerate(SUFFIX, start=1):
     )
     assert abs(ZZ(stepT.det())) == 1
     assert stepT * ns(current) * stepT.transpose() == ns(child)
+    assert matrix(ZZ,mstep["transition"]) == stepT
 
     if ade == "A1":
         a1_frame = child
@@ -308,12 +510,15 @@ for index,(name,orbit,q,rdata,ade,mw) in enumerate(SUFFIX, start=1):
         "root_data":list(rdata),
         "mw_rank":mw,
         "witness":rec["witness"],
+        "manifest":manifest_step_payload(mstep),
         "transition":rows(stepT),
     })
 
     print(
         "Q24R17MAP_SUFFIX|"
-        f"step={index}|q={q}|orbit={orbit}|ADE={ade}|MW={mw}|status=PASS",
+        f"step={index}|q={q}|orbit={orbit}|ADE={ade}|MW={mw}|"
+        f"lift_hint={mstep['equation_lift_hint']}|"
+        "manifest_transition=1|status=PASS",
         flush=True,
     )
 
@@ -372,9 +577,18 @@ payload = {
         "into equation-D13 coordinates and its child basis is deliberately "
         "chosen as the certified R17-directed D12 basis. The stored suffix "
         "then replays literally through the final q6 orbit2247 and the exact "
-        "rootless-to-pinned-R17 isometry. This does not execute the downstream "
-        "characteristic-zero Weierstrass pencils."
+        "rootless-to-pinned-R17 isometry. The backward exact-lift manifest is "
+        "used here as a structural equation-lift contract: all fixed forward "
+        "transition matrices, corrected horizontal profiles, and reconstruction "
+        "hints are checked against the replay. This still does not execute the "
+        "downstream characteristic-zero Weierstrass pencils."
     ),
+    "equation_lift_manifest":{
+        "source":str(MANIFEST.relative_to(ROOT)),
+        "status":manifest["status"],
+        "all_manifest_transitions_match_replay":True,
+        "fixed_corridor":[manifest_step_payload(step) for step in manifest_steps],
+    },
     "equation_d13_frame":rows(Geq_frame),
     "historical_d13_basis_in_equation_d13":rows(A),
     "q24":{
@@ -400,6 +614,7 @@ print(
     "Q24R17MAP_RESULT|"
     "q24_orbit85=1|D12_R17_directed=1|"
     "A1_q6_orbit2247=1|pinned_R17=1|"
+    "manifest_locked=1|"
     "status=PASS_Q24_EQUATION_D13_TO_PINNED_R17_LATTICE_PATH",
     flush=True,
 )

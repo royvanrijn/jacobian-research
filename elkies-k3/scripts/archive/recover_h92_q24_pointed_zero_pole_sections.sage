@@ -1,5 +1,9 @@
 #!/usr/bin/env sage -python
 """
+status: HISTORICAL_DIAGNOSTIC
+claim: pointed q24 zero-pole section recovery is not the selected R17 path.
+superseded-by: fixed q24 D42 resolved-RR construction route.
+
 Recover the orbit-23 A11 marked section from easy P.O=0 sections on the
 correctly pointed q24 D12 model.
 

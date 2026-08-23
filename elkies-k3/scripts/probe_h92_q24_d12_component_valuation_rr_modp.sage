@@ -122,8 +122,65 @@ mod=json.loads(MOD.read_text())
 trans=json.loads(TRANS.read_text())
 q8=json.loads(Q8.read_text())
 
+
+def canonicalize_resolution_schema(resolution):
+    centers=resolution.get("centers",[])
+    labels=[str(record["label"]) for record in centers]
+    old_e_labels=labels and all(
+        label.startswith("E") and label[1:].isdigit()
+        for label in labels
+    )
+    label_map=(
+        {label:"C"+label[1:] for label in labels}
+        if old_e_labels
+        else {}
+    )
+
+    def relabel(value):
+        value=str(value)
+        for old,new in sorted(
+            label_map.items(),
+            key=lambda item:len(item[0]),
+            reverse=True,
+        ):
+            value=value.replace(old,new)
+        return value
+
+    for record in centers:
+        old_label=str(record["label"])
+        record["label"]=label_map.get(old_label,old_label)
+        record["active_components"]=[
+            label_map.get(str(component),str(component))
+            for component in record.get("active_components",[])
+        ]
+        if "path" in record:
+            record["path"]=relabel(record["path"])
+
+    split_centers=resolution.get(
+        "split_tangent_cone_centers",
+        resolution.get("split_center_labels",[]),
+    )
+    resolution["split_tangent_cone_centers"]=[
+        label_map.get(str(label),str(label))
+        for label in split_centers
+    ]
+
+    if "actual_geometric_exceptional_components" not in resolution:
+        resolution["actual_geometric_exceptional_components"]=resolution.get(
+            "actual_exceptional_irreducible_components"
+        )
+
+    return resolution
+
+
+resolution=canonicalize_resolution_schema(resolution)
+
 assert preflight["status"]=="PASS_H3_Q24_D12_MODP_RR_PREFLIGHT"
-assert resolution["status"]=="PASS_EXPLICIT_MODP_I9STAR_D13_COMPONENT_RESOLUTION"
+resolution_pass_statuses={
+    "PASS_EXPLICIT_MODP_I9STAR_D13_COMPONENT_RESOLUTION",
+    "PASS_EXPLICIT_MODP_I9STAR_D13_EXCEPTIONAL_COMPONENTS",
+}
+assert resolution["status"] in resolution_pass_statuses
 assert graph["status"]=="PASS_H3_Q24_AFFINE_D13_COMPONENT_GRAPH"
 assert effective["status"]=="PASS_EXACT_H3_Q24_EFFECTIVE_D13_TRANSPORT"
 assert mod["status"]=="PASS_MODULAR_Q24_FROM_DIRECT_DEGREE46_BRIDGE"
@@ -879,6 +936,8 @@ payload={
         "post_collision_dimension":int(post_dim),
     },
     "resolved_cluster":{
+        "affine_component_coefficients":component_coefficients,
+        "centre_thresholds":centre_thresholds,
         "plan":[{"center":name,"additional_order":order} for name,order in plan],
         "condition_ledger":condition_ledger,
         "method":"direct_membership_in_(surface,e^threshold)_on_full_chart_cover",

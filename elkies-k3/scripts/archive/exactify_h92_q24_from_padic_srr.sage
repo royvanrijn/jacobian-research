@@ -1,5 +1,9 @@
 #!/usr/bin/env sage -python
 """
+status: HISTORICAL_DIAGNOSTIC
+claim: q24 p-adic SRR exactification was attempted and did not verify.
+superseded-by: fixed q24 Theta/resolved-RR construction route.
+
 Exactify the H92 q24 section from an EXISTING high-precision p-adic checkpoint
 using simultaneous rational reconstruction (SRR), not more Hensel lifting.
 

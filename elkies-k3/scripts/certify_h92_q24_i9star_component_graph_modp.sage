@@ -100,9 +100,86 @@ for path in (RESOLUTION, TRANSLATION, CLOSE):
     if not path.exists():
         raise SystemExit(f"Missing prerequisite: {path}")
 
+
+def canonicalize_resolution_schema(resolution):
+    centers = resolution.get("centers", [])
+    labels = [str(record["label"]) for record in centers]
+    old_e_labels = labels and all(
+        label.startswith("E") and label[1:].isdigit()
+        for label in labels
+    )
+    label_map = (
+        {label: "C" + label[1:] for label in labels}
+        if old_e_labels
+        else {}
+    )
+
+    def relabel(value):
+        value = str(value)
+        for old, new in sorted(
+            label_map.items(),
+            key=lambda item: len(item[0]),
+            reverse=True,
+        ):
+            value = value.replace(old, new)
+        return value
+
+    for record in centers:
+        old_label = str(record["label"])
+        record["label"] = label_map.get(old_label, old_label)
+        record["active_components"] = [
+            label_map.get(str(component), str(component))
+            for component in record.get("active_components", [])
+        ]
+        if "path" in record:
+            record["path"] = relabel(record["path"])
+
+    split_centers = resolution.get(
+        "split_tangent_cone_centers",
+        resolution.get("split_center_labels", []),
+    )
+    split_centers = [label_map.get(str(label), str(label)) for label in split_centers]
+    resolution["split_tangent_cone_centers"] = split_centers
+
+    if "actual_geometric_exceptional_components" not in resolution:
+        resolution["actual_geometric_exceptional_components"] = resolution.get(
+            "actual_exceptional_irreducible_components"
+        )
+
+    for record in centers:
+        tangent_cone = record.get("tangent_cone")
+        if isinstance(tangent_cone, dict):
+            continue
+        factors = [
+            {
+                "factor": str(item.get("factor")),
+                "multiplicity": int(item.get("multiplicity", 1)),
+            }
+            for item in record.get("tangent_factors", [])
+        ]
+        component_count = int(
+            record.get(
+                "new_exceptional_irreducible_components",
+                2 if record["label"] in split_centers else 1,
+            )
+        )
+        record["tangent_cone"] = {
+            "polynomial": str(tangent_cone),
+            "factorization_over_base_field": factors,
+            "geometric_exceptional_components": component_count,
+        }
+
+    return resolution
+
+
 resolution = json.loads(RESOLUTION.read_text())
+resolution = canonicalize_resolution_schema(resolution)
 translation = json.loads(TRANSLATION.read_text())
-assert resolution["status"] == "PASS_EXPLICIT_MODP_I9STAR_D13_COMPONENT_RESOLUTION"
+resolution_pass_statuses = {
+    "PASS_EXPLICIT_MODP_I9STAR_D13_COMPONENT_RESOLUTION",
+    "PASS_EXPLICIT_MODP_I9STAR_D13_EXCEPTIONAL_COMPONENTS",
+}
+assert resolution["status"] in resolution_pass_statuses
 assert int(resolution["actual_blowup_centers"]) == 12
 assert int(resolution["actual_geometric_exceptional_components"]) == 13
 assert resolution["expected_root_lattice"] == "D13"

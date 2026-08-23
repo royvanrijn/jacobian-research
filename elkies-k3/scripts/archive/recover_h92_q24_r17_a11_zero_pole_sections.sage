@@ -1,6 +1,11 @@
 #!/usr/bin/env sage -python
 """
-Recover the orbit-23 A11 marked section from easy P.O=0 sections on the
+status: HISTORICAL_DIAGNOSTIC
+claim: R17-directed q24 zero-pole section recovery was rejected; the selected
+       orbit42 target has corrected profile P.O=3 and needs direct D42 RR.
+superseded-by: fixed q24 D42 resolved-RR construction route.
+
+Recover the R17-directed A11 marked section from easy P.O=0 sections on the
 correctly pointed q24 D12 model.
 
 This is the Q80 lesson applied correctly:
@@ -28,6 +33,7 @@ OUTDIR=LOCAL/"q24-downstream-lift"
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--prime",type=int,default=100003)
 parser.add_argument("--output",type=Path)
+parser.add_argument("--target-json",type=Path)
 args=parser.parse_args()
 p=ZZ(args.prime)
 F=GF(p)
@@ -120,12 +126,47 @@ def profile(z):
     return h,c,ZZ(po)
 
 q_recorded=vector(ZZ,prof["R3_zero_lattice_marking"]["explicit_A0_minus_R3_mw"])
-target=vector(
-    ZZ,
-    next(row for row in prof["A11_targets"] if int(row["orbit_index"])==23)["mw_projection"]
+
+# Re-profile ALL four A11 exits with the exact D12 discriminant-class table.
+# The earlier pointed profiler used the now-superseded parity/minimal-correction
+# shortcut, so its stored correction/P.O fields are not used for selection.
+exact_targets=[]
+for row in prof["A11_targets"]:
+    z=vector(ZZ,row["mw_projection"])
+    h,c,po=profile(z)
+    exact_targets.append((ZZ(po),QQ(h),QQ(c),int(row["orbit_index"]),z,row))
+    print(
+        "Q24ZP_A11_EXACT_PROFILE|"
+        f"orbit={row['orbit_index']}|mw={','.join(map(str,z))}|"
+        f"height={h}|corr={c}|PdotO={po}|status=PASS_EXACT_D12_CLASS",
+        flush=True,
+    )
+
+target_json=(
+    args.target_json.resolve()
+    if args.target_json
+    else OUTDIR/f"r17-a11-pointed-target-p{p}.json"
 )
-assert tuple(target)==(-1,-1,0,-1,0)
-assert profile(target)==(QQ(7),QQ(1),ZZ(2))
+if not target_json.exists():
+    raise SystemExit(f"missing R17 A11 target gate: {target_json}")
+gate=json.loads(target_json.read_text())
+assert gate["status"]=="PASS_Q24_R17_A11_POINTED_TARGET"
+target=vector(ZZ,gate["target"]["mw_projection"])
+selected_orbit=gate["target"].get("pointed_search_orbit")
+selected_h,selected_corr,selected_po=profile(target)
+assert str(selected_h)==gate["target"]["height"]
+assert str(selected_corr)==gate["target"]["local_correction"]
+assert int(selected_po)==int(gate["target"]["P_dot_O"])
+selected_row=None
+
+print(
+    "Q24ZP_A11_SELECTED|"
+    f"historical_orbit=42|local_orbit={selected_orbit}|"
+    f"mw={','.join(map(str,target))}|"
+    f"height={selected_h}|corr={selected_corr}|PdotO={selected_po}|"
+    "status=SELECTED_R17_TARGET",
+    flush=True,
+)
 
 # Abstract zero-pole MW vectors.
 scale=ZZ(1)
@@ -160,14 +201,14 @@ print(
 
 if target not in Lzero:
     payload={
-        "schema":"elkies-k3.h3-q24-pointed-zero-pole-sections.v1",
+        "schema":"elkies-k3.h3-q24-r17-a11-zero-pole-sections.v1",
         "status":"Q24_A11_TARGET_NOT_IN_POINTED_ZERO_POLE_SPAN",
         "prime":int(p),
         "abstract_zero_pole_count":len(abstract),
         "zero_pole_rank":int(Lzero.rank()),
         "target_mw":list(map(int,target)),
     }
-    OUT=args.output.resolve() if args.output else OUTDIR/f"pointed-zero-pole-sections-p{p}.json"
+    OUT=args.output.resolve() if args.output else OUTDIR/f"r17-pointed-zero-pole-sections-p{p}.json"
     OUT.write_text(json.dumps(payload,indent=2,sort_keys=True)+"\n")
     print(f"OUTPUT|{OUT}",flush=True)
     print("Q24ZP_RESULT|target_in_span=0|status="+payload["status"],flush=True)
@@ -448,7 +489,7 @@ for r in range(1,min(rank+1,5)+1):
 
 if combo is None:
     payload={
-        "schema":"elkies-k3.h3-q24-pointed-zero-pole-sections.v1",
+        "schema":"elkies-k3.h3-q24-r17-a11-zero-pole-sections.v1",
         "status":"Q24_A11_TARGET_IN_ABSTRACT_ZERO_SPAN_BUT_NO_MATCHED_COMBINATION",
         "prime":int(p),
         "abstract_zero_pole_count":len(abstract),
@@ -457,7 +498,7 @@ if combo is None:
         "target_mw":list(map(int,target)),
         "ambiguous":ambiguous,
     }
-    OUT=args.output.resolve() if args.output else OUTDIR/f"pointed-zero-pole-sections-p{p}.json"
+    OUT=args.output.resolve() if args.output else OUTDIR/f"r17-pointed-zero-pole-sections-p{p}.json"
     OUT.write_text(json.dumps(payload,indent=2,sort_keys=True)+"\n")
     print(f"OUTPUT|{OUT}",flush=True)
     print(
@@ -500,8 +541,8 @@ def rfrec(v):
     }
 
 payload={
-    "schema":"elkies-k3.h3-q24-pointed-zero-pole-sections.v1",
-    "status":"PASS_Q24_A11_ORBIT23_FROM_ZERO_POLE_SECTIONS",
+    "schema":"elkies-k3.h3-q24-r17-a11-zero-pole-sections.v1",
+    "status":"PASS_Q24_R17_A11_FROM_ZERO_POLE_SECTIONS",
     "prime":int(p),
     "route_end":"R17",
     "Q_orientation_mw":list(map(int,q)),
@@ -510,7 +551,7 @@ payload={
     "matched_count":len(matched),
     "zero_pole_rank":int(Lzero.rank()),
     "target":{
-        "orbit_index":23,
+        "orbit_index":int(selected_orbit),
         "mw":list(map(int,target)),
         "height":"7",
         "local_correction":"1",
@@ -529,7 +570,7 @@ payload={
         "RR pencil and A11 child equation remain to be compiled."
     ),
 }
-OUT=args.output.resolve() if args.output else OUTDIR/f"pointed-zero-pole-sections-p{p}.json"
+OUT=args.output.resolve() if args.output else OUTDIR/f"r17-pointed-zero-pole-sections-p{p}.json"
 OUT.write_text(json.dumps(payload,indent=2,sort_keys=True)+"\n")
 
 print(
@@ -543,6 +584,6 @@ print(f"OUTPUT|{OUT}",flush=True)
 print(
     "Q24ZP_RESULT|"
     f"target_in_span=1|combination=1|matched={len(matched)}|"
-    "status=PASS_Q24_A11_ORBIT23_FROM_ZERO_POLE_SECTIONS",
+    "status=PASS_Q24_R17_A11_FROM_ZERO_POLE_SECTIONS",
     flush=True,
 )

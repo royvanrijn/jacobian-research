@@ -122,13 +122,91 @@ bridge changes the embedded `U`.
 
 ### Current H3 q24 equation frontier
 
-- `close_h92_q8_q24_by_q6_translation.sage` — exact marking/NS bridge.
-- `recover_h92_q24_exact_by_qq_trace_interpolation.sage` — exact interpolation
-  machinery for the transported q24 horizontal.
+The selected route is fixed. Do not reopen q32, native q24 suffixes, generic q24
+section Hensel lifting, or easy orbit42 zero-pole searches as the active path.
 
-These are **ACTIVE_SEARCH** until an exact q24 Riemann--Roch pencil, quartic/Jacobian,
-and `D12/MW5` fibre classification are pinned. They should not yet be cited as a
-completed characteristic-zero D12 child.
+Active q24 corridor scripts:
+
+- `certify_h92_q24_equation_d13_to_pinned_r17.sage` — **ACTIVE_PROOF** for the
+  current-equation D13 marking, q24/orbit85 D12 marking, pinned-R17 suffix, and
+  exact backward-manifest transition/profile lock. This is still a lattice/NS
+  boundary, not an equation-level child.
+- `replay_h92_q24_d12_discovery_and_theta.sage` — **ACTIVE_PROOF** for the exact
+  D12 fibre structure `D24 = Theta + sum m_i C_i`; use this Theta/component
+  construction to build the q24 RR pencil.
+- `probe_h92_q24_d12_component_valuation_rr_modp.sage` — **REGRESSION** for the
+  modular q24/orbit85 component-valuation RR replay. It records the 56-dimensional
+  geometric ambient, smooth-collision rank 48, component-cover resolved rank 6,
+  `h0=2`, quartic degree 4, and D12 fibre data.
+- `extract_h92_q24_d12_modp_signature.sage` — **REGRESSION** for the modular
+  q24/orbit85 resolved-RR signature: ambient 56, collision rank 48, resolved rank
+  6, kernel 2, quartic degree 4, D12 fibre data. New outputs retain the embedded
+  component compiler status and remain `CANDIDATE_*` unless an actual
+  equation-level terminal PASS exists; do not treat the modular signature alone
+  as a D12 equation certificate.
+- `run_h92_q24_orbit85_modp_stack.py` — **ACTIVE_PROOF_AID** to replay the
+  fixed q24/orbit85 modular construction stack for canonical split-centre
+  `C10` primes. It runs the preflight, affine component graph, effective D13
+  transport, component-valuation RR compiler, and compact D12 signature
+  extractor in order; it is for CRT/rational-reconstruction data collection,
+  not Hensel lifting or neighbor search.
+- `reconstruct_h92_q24_orbit85_rr_kernel_crt.sage` — **ACTIVE_PROOF_AID** to
+  CRT/rational-reconstruct the canonical q24/orbit85 `2 x 56` resolved-RR
+  kernel, binary quartic, and Jacobian data from modular signatures with a
+  held-out prime check. A passing output is a QQ kernel candidate, not yet the
+  full exact D12 equation certificate.
+- `reconstruct_h92_q24_orbit85_compact_rows_lll.sage` — **ACTIVE_PROOF_AID** to
+  recover the same q24/orbit85 kernel projectively in compact intrinsic
+  `(A, BZ, C)` coordinates using CRT plus LLL and a held-out prime. This is the
+  fallback when scalar RREF rational reconstruction is denominator-heavy.
+- `extend_h92_q24_orbit85_crt_precision.py` — **ACTIVE_PROOF_AID** to add fresh
+  q24/orbit85 modular signatures beyond the archived small-prime pool. It
+  builds the q24 direct bridge, I9* resolution, canonical `C10` stack, and then
+  retries scalar CRT plus compact-row LLL after each accepted prime.
+- `build_h92_q24_orbit85_exact_construction_manifest.sage` — **ACTIVE_PROOF** for
+  the q24/orbit85 exact-construction contract. It binds the exact Theta divisor,
+  component thresholds, modular 2D RR kernel, quartic/Jacobian regression, and
+  D12 gates into
+  `artifacts/local/elkies-k3/q24-orbit85-exact-construction-manifest.json`.
+
+Orbit42/D12 profile rule:
+
+- Do not use parity/minimum-`P.O` shortcuts for D12 correction classes. The
+  R17-directed orbit42 class is the spinor class with correction `3`,
+  `P.O=3`, denominator degree `3`, and no extra fibre twist. Live q24/D12
+  profile helpers should use the exact D12 discriminant-class lookup table.
+- `extract_h92_q24_orbit42_current_equation_bridge.sage` — **ACTIVE_PROOF** for
+  the corrected orbit42 divisor in the current-equation D12 frame:
+  `mw=(-1,0,-1,-1,0)`, height 7, correction 3, `P.O=3`, fibre twist 0.
+- `recover_h92_q24_orbit42_current_equation_section_modp.sage`,
+  `recover_h92_q24_d12_orbit42_section_modp.sage`,
+  `archive/recover_h92_q24_pointed_zero_pole_sections.sage`, and
+  `archive/recover_h92_q24_r17_a11_zero_pole_sections.sage` —
+  **HISTORICAL_DIAGNOSTIC**.
+  They prove the old easy zero-pole route does not generate the selected
+  orbit42 target.
+- `audit_h92_q24_orbit42_explicit_multisections.sage` — **REGRESSION** for the
+  NS/Picard-level multisection span audit. The target is in the span, but the
+  artifact does not compute the fibrewise Abel-Jacobi functions or the A11
+  equation.
+- `compile_h92_q24_orbit42_a11_chord_modp.sage` — **REGRESSION** only when fed an
+  actual P42 section artifact. The preferred exact route is now the direct
+  resolved-RR compiler for the degree-two divisor `D42`, not a zero-pole P42
+  search.
+- `recover_h92_q24_exact_by_qq_trace_interpolation.sage` — **HISTORICAL_DIAGNOSTIC**
+  unless it is refactored to serve the Theta/component construction directly.
+
+Archived q24 dead ends:
+
+- `archive/lift_h92_q24_direct_hensel.sage`
+- `archive/exactify_h92_q24_from_padic_srr.sage`
+
+These record why p-adic direct lifting/SRR was abandoned. Do not increase Hensel
+precision or reconstruct the generic q24 section as the next step. The remaining
+frontier is the exact characteristic-zero resolved-RR compiler from the explicit
+Theta/component construction to the q24/orbit85 `D12/MW5` child, followed by the
+direct exact resolved-RR compiler for the current-equation orbit42 divisor
+`D42 = O + P + V`.
 
 ### Q80 compiler and regression route
 

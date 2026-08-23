@@ -57,14 +57,7 @@ transport_stopped_at_identity=False
 try:
     sys.argv=[str(EFF),"--prime",str(p)]
     with contextlib.redirect_stdout(buf):
-        try:
-            exec(compile(EFF.read_text(),str(EFF),"exec"),scope)
-        except AssertionError:
-            # The current transport already built the exact effective affine-D13
-            # component classes and q24 incidence before its obsolete O8 identity
-            # assertion.  Accept only that pre-identity state, and reverify it
-            # structurally below.
-            transport_stopped_at_identity=True
+        exec(compile(EFF.read_text(),str(EFF),"exec"),scope)
 finally:
     sys.argv=saved
 
@@ -236,25 +229,33 @@ def class_order(dual):
         o=lcm(o,ZZ(QQ(x).denominator()))
     return o
 
+def frac_key(v):
+    return tuple(QQ(x)-QQ(x).floor() for x in vector(QQ,v))
+
+Rinv=R.inverse()
+correction_by_class={frac_key(vector(QQ,[0]*12)):QQ(0)}
+for i in range(12):
+    weight=vector(QQ,Rinv.row(i))
+    key=frac_key(weight)
+    norm=QQ(weight*R*weight)
+    if key not in correction_by_class or norm<correction_by_class[key]:
+        correction_by_class[key]=norm
+assert sorted(correction_by_class.values()) == [QQ(0),QQ(1),QQ(3),QQ(3)]
+
 def correction_for(z):
     z=vector(ZZ,z)
     base=vector(ZZ,[0]*12+list(z))
-    dual=vector(QQ,base*G[:,:12])*R.inverse()
+    dual=vector(QQ,base*G[:,:12])*Rinv
     order=class_order(dual)
-    raw=QQ(dual*R*dual)
-    mod2=lambda x: QQ(x)-2*(QQ(x)/2).floor()
-    candidates=[QQ(0),QQ(1),QQ(3)]
-    valid=[c for c in candidates if mod2(c)==mod2(raw)]
-    h=QQ(z*H*z)
-    ans=[]
-    for corr in valid:
-        po=(h+corr-4)/2
-        if po in ZZ and po>=0:
-            ans.append((ZZ(po),corr,order))
-    if not ans:
+    key=frac_key(dual)
+    if key not in correction_by_class:
         return None
-    ans.sort()
-    return ans[0]
+    corr=correction_by_class[key]
+    h=QQ(z*H*z)
+    po=(h+corr-4)/2
+    if po not in ZZ or po<0:
+        return None
+    return (ZZ(po),corr,order)
 
 def section_frame_for(z,corr,po):
     z=vector(ZZ,z)
@@ -267,9 +268,9 @@ def section_frame_for(z,corr,po):
         for inds in itertools.combinations(range(12),weight):
             labels.append(vector(ZZ,[ZZ(i in inds) for i in range(12)]))
     for lab in labels:
-        if QQ(lab*R.inverse()*lab)-corr not in 2*ZZ:
+        if QQ(lab*Rinv*lab)-corr not in 2*ZZ:
             continue
-        rr=R.inverse()*(lab-Cpl*z)
+        rr=Rinv*(lab-Cpl*z)
         if not all(v in ZZ for v in rr):
             continue
         pf=vector(ZZ,[ZZ(v) for v in rr]+list(z))

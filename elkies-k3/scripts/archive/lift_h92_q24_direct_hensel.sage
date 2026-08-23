@@ -1,5 +1,10 @@
 #!/usr/bin/env sage -python
 """
+status: HISTORICAL_DIAGNOSTIC
+claim: q24 direct Hensel lifting reached high p-adic precision but did not
+       produce a verified characteristic-zero equation lift.
+superseded-by: fixed q24 Theta/resolved-RR construction route.
+
 Direct Hensel lift of the H92 q24 horizontal section.
 
 Input is the doubly certified modular section produced by the degree-46 route:

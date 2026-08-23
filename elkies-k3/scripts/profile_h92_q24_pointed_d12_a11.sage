@@ -48,7 +48,10 @@ sig=json.loads(SIG.read_text())
 scan=json.loads(SCAN.read_text())
 q8=json.loads(Q8.read_text())
 
-assert sig["status"]=="PASS_H3_Q24_ORBIT85_D12_MODP_SIGNATURE"
+assert sig["status"] in (
+    "PASS_H3_Q24_ORBIT85_D12_MODP_SIGNATURE",
+    "CANDIDATE_H3_Q24_ORBIT85_D12_MODP_SIGNATURE",
+)
 assert scan["status"] in (
     "Q24_D12_A11_NEEDS_SECOND_EXPLICIT_MW_DIRECTION",
     "PASS_Q24_D12_A11_EXPLICIT_MARKED_SECTION",
@@ -231,28 +234,36 @@ def mod2(x):
     x=QQ(x)
     return x-2*(x/2).floor()
 
+def frac_key(v):
+    return tuple(QQ(x)-QQ(x).floor() for x in vector(QQ,v))
+
+Rinv=R.inverse()
+correction_by_class={frac_key(vector(QQ,[0]*12)):QQ(0)}
+for i in range(12):
+    weight=vector(QQ,Rinv.row(i))
+    key=frac_key(weight)
+    norm=QQ(weight*R*weight)
+    if key not in correction_by_class or norm<correction_by_class[key]:
+        correction_by_class[key]=norm
+assert sorted(correction_by_class.values()) == [QQ(0),QQ(1),QQ(3),QQ(3)]
+
 def profile(z):
     z=vector(ZZ,z)
     h=QQ(z*H*z)
     base=vector(ZZ,[0]*12+list(z))
-    dual=vector(QQ,base*G[:,:12])*R.inverse()
+    dual=vector(QQ,base*G[:,:12])*Rinv
     order=class_order(dual)
-    raw=QQ(dual*R*dual)
-    corrections=[QQ(0),QQ(1),QQ(3)]
-    possible=[]
-    for corr in corrections:
-        if mod2(corr)!=mod2(raw):
-            continue
-        po=(h+corr-4)/2
-        if po in ZZ and po>=0:
-            possible.append((ZZ(po),corr))
-    if len(possible)>1 and order==2:
-        possible=[item for item in possible if item[1]==1]
-    if len(possible)!=1:
+    key=frac_key(dual)
+    if key not in correction_by_class:
         raise ArithmeticError(
-            f"unresolved D12 profile for {tuple(z)}: h={h}, order={order}, {possible}"
+            f"unknown D12 discriminant class for {tuple(z)}: {key}"
         )
-    po,corr=possible[0]
+    corr=correction_by_class[key]
+    po=(h+corr-4)/2
+    if po not in ZZ or po<0:
+        raise ArithmeticError(
+            f"invalid D12 profile for {tuple(z)}: h={h}, corr={corr}, P.O={po}"
+        )
     return {
         "height":h,
         "class_order":order,

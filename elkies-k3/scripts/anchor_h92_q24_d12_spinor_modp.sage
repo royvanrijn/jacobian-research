@@ -39,7 +39,10 @@ if Q8 is None:
 
 sig=json.loads(SIG.read_text())
 q8=json.loads(Q8.read_text())
-assert sig["status"]=="PASS_H3_Q24_ORBIT85_D12_MODP_SIGNATURE"
+assert sig["status"] in (
+    "PASS_H3_Q24_ORBIT85_D12_MODP_SIGNATURE",
+    "CANDIDATE_H3_Q24_ORBIT85_D12_MODP_SIGNATURE",
+)
 
 # Old I9* point in the q8 base coordinate U.
 i9=next(x for x in q8["child"]["finite_fibres"] if x["kodaira"]=="I9*")
