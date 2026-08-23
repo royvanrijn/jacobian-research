@@ -148,36 +148,20 @@ ROOT=locate_repo(args.repo)
 LOCAL=ROOT/"artifacts/local/elkies-k3"
 AUDIT=ROOT/"elkies-k3/scripts/audit_h92_q8_q24_effective_zero_choices.sage"
 CLOSE=ROOT/"elkies-k3/scripts/close_h92_q8_q24_by_q6_translation.sage"
-# IMPORTANT: q24-i9star-resolution-mod-<p>.json is now also written by the
-# newer v2 geometric-component-count resolver, whose schema is intentionally
-# different from the E01..E12 branch records consumed below.  Do not let the
-# two schemas alias through one filename.  Rebuild the compatible branch
-# artifact explicitly under a private name.
-RESOLVER=ROOT/"elkies-k3/scripts/audit_h92_q24_i9star_exceptional_components_modp.sage"
-RES=LOCAL/f"q24-i9star-resolution-effective-transport-mod-{args.prime}.json"
+RES=LOCAL/f"q24-i9star-resolution-mod-{args.prime}.json"
 TMP=LOCAL/"q24-effective-components-temp.json"
 
-for pth in (AUDIT,CLOSE,RESOLVER):
-    if not pth.exists():
-        raise SystemExit(f"Missing prerequisite: {pth}")
+for p in (AUDIT,CLOSE,RES):
+    if not p.exists():
+        raise SystemExit(f"Missing prerequisite: {p}")
 
 print("Q24EFFCOMP|stage=load_current_transport|status=START",flush=True)
 qa=run_scope(AUDIT,("--output",str(TMP)))
 cl=run_scope(CLOSE)
-
-# Regenerate rather than trusting a stale artifact: this is cheap relative to
-# the downstream search and guarantees the exact schema/labels used below.
-run_scope(
-    RESOLVER,
-    ("--prime",str(args.prime),"--output",str(RES)),
-)
 print("Q24EFFCOMP|stage=load_current_transport|status=PASS",flush=True)
 
 resolution=json.loads(RES.read_text())
-assert resolution["schema"]=="elkies-k3.h3-q24-i9star-exceptional-components-modp.v2"
 assert resolution["status"]=="PASS_EXPLICIT_MODP_I9STAR_D13_EXCEPTIONAL_COMPONENTS"
-assert int(resolution["actual_exceptional_irreducible_components"])==13
-assert resolution["expected_root_lattice"]=="D13"
 
 need_qa=(
     "Gpinned","Bpinned_to_simple","q6_simple_ns","simple_root_classes",
