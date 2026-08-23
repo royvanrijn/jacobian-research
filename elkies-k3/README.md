@@ -2,9 +2,11 @@
 
 This directory contains the K3-surface and elliptic-neighbor work used to search for high-rank elliptic fibrations and explicit equation routes.
 
+For the human-readable map of how the reverse searches, H3 source construction, H2 comparison, Q80 route, and CM24 scaffold fit together, start with [`CONSTRUCTION_ROUTES.md`](CONSTRUCTION_ROUTES.md).
+
 ## Current priority
 
-The **H3 route is restored as the primary characteristic-zero equation route**. Both first neighbours are now exact:
+The **H3 Source Route** is the primary characteristic-zero equation route. Both first neighbours are now exact:
 
 ```text
 H3 E7+E8/MW2
@@ -14,7 +16,7 @@ H3 E7+E8/MW2
 
 The q8 repair found two independent bugs in the previous child-side compiler: a binary-quartic 2-cover multiplier was applied twice, and the q-frame CRT normalizer omitted the `Dx` factor of `x(S)=Nx/Dx`. After both corrections the q8 Riemann--Roch problem collapses to an exact `13 -> 2` characteristic-zero intersection and its Jacobian has one `I9*` fibre plus nine `I1`, hence `D13/MW4` exactly.
 
-The Q80 programme remains a strong secondary/fallback route and an independent compiler scaffold. Its generic lattice corridor reaches rootless/MW17, and its complete CM24 equation corridor reaches the final q6 specialization.
+The **Q80 Low-q Compiler Route** remains a strong secondary route and an independent compiler scaffold. Its generic lattice corridor reaches rootless/MW17. The characteristic-zero equation pipeline has now progressed through the penultimate `A1/MW16` child; the final q6 problem is preserving/recovering the intended MW marking after the preceding quartic-to-Jacobian conversions. The complete CM24 equation corridor remains the regression scaffold for that final lift.
 
 ## H3 q8 exact certificate
 
@@ -55,7 +57,7 @@ Q8QQCHILD|finite=[(1,[2,3,15],'I9*'),(9,[0,0,1],'I1')]|infinity=((0,0,0),'smooth
 
 The detailed diagnosis and supersession boundary is in [`H3_Q8_REAUDIT_2026-08-22.md`](H3_Q8_REAUDIT_2026-08-22.md).
 
-## Q80 status: CM24 corridor complete
+## Q80 status: generic route and CM24 scaffold
 
 The generic Q80 alternate route is certified to a new rootless `MW17` frame:
 
@@ -75,15 +77,19 @@ E6+D5+A3/MW3
 
 Every retained new divisor from `D7+D5/MW5` onward has chamber-reduced old-fibre degree `2`.
 
-The entire CM24 equation-development corridor is also algebraized through the final q6. The late specialized sequence is
+The old suffix labels `7774`, `1938`, `6855`, and `candidate1` are search-result identifiers rather than intrinsic names. New notes should use the canonical stage names in [`CONSTRUCTION_ROUTES.md`](CONSTRUCTION_ROUTES.md), while [`Q80_LOWQ_SUFFIX_PROVENANCE_2026-08-23.md`](Q80_LOWQ_SUFFIX_PROVENANCE_2026-08-23.md) records the exact historical search lineage.
+
+The characteristic-zero pipeline now reaches the `A1/MW16` parent of the final q6. The current obstruction is that the preceding equation compiler did not persist enough of the child MW marking through the binary-quartic/Jacobian conversions. The preferred repair is therefore to backtrack the exact selected neighbor transports and preserve the required rational points, not to rediscover the final section from its singular CM24 specialization.
+
+The entire CM24 equation-development corridor is algebraized through the final q6. The late specialized sequence is
 
 ```text
 2A6+3A1/MW3
- --q6_7774--> A5+2A4+2A1/MW3
- --q4_1938--> 2A4+2A3+A1/MW3
- --q4_6855--> A1+2A3+2D4/MW3
- --q4 candidate1--> A1+A2+A3+A4+A5/MW3
- --final q6--> 4A2+A3+A5/MW2.
+ --q6--> A5+2A4+2A1/MW3
+ --q4--> 2A4+2A3+A1/MW3
+ --q4--> A1+2A3+2D4/MW3
+ --q4--> A1+A2+A3+A4+A5/MW3
+ --q6--> 4A2+A3+A5/MW2.
 ```
 
 The final q6 simultaneously passes an independent regression that its **generic** child is rootless/MW17. Thus the CM24 corridor is a complete equation/compiler scaffold for the generic rootless route, not the generic rootless equation itself.
@@ -122,15 +128,18 @@ scripts/verify_elliptic_neighbor_compiler_field_generic.sage.
 
 ## Start here
 
-- [`RESEARCH_UPDATE_2026-08-22.md`](RESEARCH_UPDATE_2026-08-22.md) — current repository-wide K3 status.
+- [`CONSTRUCTION_ROUTES.md`](CONSTRUCTION_ROUTES.md) — canonical human-readable route map and naming scheme.
+- [`RESEARCH_UPDATE_2026-08-22.md`](RESEARCH_UPDATE_2026-08-22.md) — current repository-wide K3 status checkpoint.
+- [`KUMAR_E7E8_BACKTRACK.md`](KUMAR_E7E8_BACKTRACK.md) — source recovery, H2/H3 distinction, and exact H3 lattice route.
 - [`H3_Q8_CURRENT_FRONTIER.md`](H3_Q8_CURRENT_FRONTIER.md) — concise H3 q8 exact frontier.
 - [`H3_Q8_REAUDIT_2026-08-22.md`](H3_Q8_REAUDIT_2026-08-22.md) — two-bug diagnosis and exact repair.
+- [`Q80_LOWQ_SUFFIX_PROVENANCE_2026-08-23.md`](Q80_LOWQ_SUFFIX_PROVENANCE_2026-08-23.md) — exact Q80 suffix search lineage and final-marking backtrack plan.
 - [`Q80_CM24_EQUATION_LEDGER_2026-08-22.md`](Q80_CM24_EQUATION_LEDGER_2026-08-22.md) — complete Q80 CM24 equation ledger.
 - [`data/fibrations/kumar_q80_cm24_equation_progress.tsv`](data/fibrations/kumar_q80_cm24_equation_progress.tsv) — machine-readable complete CM24 stage summary.
-- [`Q80_TO_ROOTLESS_PATH_2026-08-21.md`](Q80_TO_ROOTLESS_PATH_2026-08-21.md) — canonical Q80 rootless lattice certificate.
+- [`Q80_TO_ROOTLESS_PATH_2026-08-21.md`](Q80_TO_ROOTLESS_PATH_2026-08-21.md) — Q80 rootless lattice certificate and historical detailed ledger.
 
 ## Next strategic gate
 
-For **H3**, continue from the exact `D13/MW4` child toward the rootless/high-rank target. Do not return to the historical degree-46, `true1600`, or hand-built `corrected1278` q8 compilers except as diagnostics.
+For **H3**, continue from the exact `D13/MW4` child along the certified H3 Source Route toward the rootless/high-rank target. Do not return to the historical degree-46, `true1600`, or hand-built `corrected1278` q8 compilers except as diagnostics.
 
-For **Q80**, the remaining strategic problem is the generic characteristic-zero lift from orbit 1222 onward: recover the generic horizontal sections and resolved quotient data, lift the modular identities, control fields of definition, and verify that the final seventeen sections live over the intended characteristic-zero specialization.
+For **Q80**, preserve/recover the exact MW marking on the characteristic-zero `A1/MW16` parent, then execute the selected terminal `q6` divisor. Use the CM24 `P2-P3` section and quotient residues as regression checks only; they are specialization data, not the generic definition of the final horizontal.
