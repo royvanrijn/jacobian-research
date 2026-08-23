@@ -1,131 +1,187 @@
-# H3 q24-native D12 -> A1 suffix ledger
+# H3 q24 D12 suffix ledger
 
 Date: 2026-08-23
 
-Status: **exact lattice/root-Weyl replay from the q24 equation-side D12 frame**.
+Status: **q24 equation-side marking is pinned to the R17-directed lattice corridor; the
+fresh first-hit D12 -> A1 replay is retained as an alternate branch.**
 
-This note records the result introduced by commit
-`bfb96bf526b0b289e12d531e7aff697cae5f39c6` (`lifting q24 path`) and keeps its proof
-boundary separate from characteristic-zero equation execution.
+## 1. What was originally found
 
-## Source frame
-
-The suffix starts from `D24eq`, exported by
+Commit `bfb96bf526b0b289e12d531e7aff697cae5f39c6` added a fresh replay starting from a
+D12 frame exported from the equation-side q24 divisor `D24eq`:
 
 ```text
 scripts/export_h92_q24_native_d12_frame.sage
-```
-
-from the selected q24/D13 equation-side geometry. The exporter deliberately does not
-identify this frame with q32 or with a later historical D12 frame solely from common
-`D12/MW5` root data.
-
-This distinction matters: an ADE/MW label does not determine the embedded elliptic `U`,
-zero section, or the next neighbour marking.
-
-## Replay
-
-Primary driver:
-
-```text
 scripts/run_h92_q24_native_suffix_to_a1.py
 ```
 
-Supporting search/replay scripts added in the same commit include
+That replay found the valid degree-two sequence
 
 ```text
-scripts/search_h92_q24_native_q4_candidates.py
-scripts/search_h92_q24_native_selected_q.sage
-scripts/search_h92_q24_native_historical_weyl.sage
-scripts/search_h92_q24_native_historical_weyl_exact.py
-scripts/test_h92_q24_native_candidate.sage
+D12
+ --q6 orbit 55--> A11
+ --q8 orbit 1960--> 2A5
+ --q4 orbit 261--> 3A3
+ --q4 orbit 567--> A3+2A2
+ --q4 orbit 3822--> 5A1
+ --q4 orbit 8598--> 4A1
+ --q4 orbit 13487--> 3A1
+ --q4 orbit 18368--> 2A1
+ --q4 orbit 17593--> A1.
 ```
 
-The selected q-sequence downstream of D12 is
-
-```text
-6, 8, 4, 4, 4, 4, 4, 4, 4
-```
-
-and the replayed children are
-
-| step | q | child | root rank | MW rank |
-|---:|---:|---|---:|---:|
-| 1 | 6 | `A11` | 11 | 6 |
-| 2 | 8 | `2A5` | 10 | 7 |
-| 3 | 4 | `3A3` | 9 | 8 |
-| 4 | 4 | `A3+2A2` | 7 | 10 |
-| 5 | 4 | `5A1` | 5 | 12 |
-| 6 | 4 | `4A1` | 4 | 13 |
-| 7 | 4 | `3A1` | 3 | 14 |
-| 8 | 4 | `2A1` | 2 | 15 |
-| 9 | 4 | `A1` | 1 | 16 |
-
-The reported final step is
-
-```text
-ROOTWEYL_HIST|q=4|root_data=1,2,2|MW=16|orbits=1
-Q24NATIVE_SUFFIX|step=9|q=4|orbit=17593|ADE=A1|root_data=1,2,2|MW=16|status=PASS
-Q24NATIVE_SUFFIX_RESULT|steps=9|final=A1/MW16|status=PASS_Q24_NATIVE_D12_TO_A1
-```
-
-Local output artifact:
-
-```text
-artifacts/local/elkies-k3/q24-native-suffix/q24-native-d12-to-a1.json
-```
-
-## What this certifies
-
-The result certifies that the selected q24 equation-side D12 marking has a concrete
-native lattice/root-Weyl continuation through the same desired ADE/MW corridor to
-`A1/MW16`.
-
-It therefore removes the need to use either
-
-- a q32-derived D12 model, or
-- a historical D12 frame matched only by lattice invariants
-
-as the preferred bridge from the q24 front end to the known high-rank suffix.
-
-The already-certified final q6 neighbour from `A1/MW16` to the rootless `MW17` frame can
-then be appended at lattice level.
-
-## What this does not certify
-
-This replay is downstream lattice/root-Weyl work. It does **not** by itself provide
-characteristic-zero Weierstrass equations, transported zero sections, or RR pencils for
-the nine arrows from D12 to A1.
-
-The immediate equation boundary remains:
-
-```text
-exact D13/MW4 equation
-  -- selected q24 orbit 85 -->
-native D12/MW5 equation + marking
-```
-
-Once that native D12 equation certificate is complete, the correct equation programme is
-to execute the stored q24-native suffix in order while preserving the marking at every
-stage.
-
-## Preferred-route consequence
-
-The preferred H3 path is therefore the q24-native path documented in
-[`H3_PREFERRED_PATH.md`](H3_PREFERRED_PATH.md). q32 remains useful as a compiler and
-marking-recovery experiment, but is no longer the preferred continuation while the native
-q24 route remains viable.
-
-## Reproduction
-
-From a checkout containing the prerequisites, the intended top-level replay is
-
-```bash
-python3 elkies-k3/scripts/run_h92_q24_native_suffix_to_a1.py
-```
-
-Expected terminal status:
+Its terminal status remains a correct statement:
 
 ```text
 PASS_Q24_NATIVE_D12_TO_A1
 ```
+
+It proves that this D12 coordinate frame has a native degree-two path to an A1/MW16
+fibration.  It does **not** prove that this is the A1 lying on the selected route to the
+recovered R17 endpoint.
+
+## 2. Why that branch is not the preferred R17 suffix
+
+Two exact diagnostics exposed the distinction.
+
+First, the fresh A1 admits a q6 rootless child (orbit 504), but that rootless
+determinant-948 frame is not integrally isometric to pinned R17.  Exhausting the initial
+10,000-vector capped q6 sample found no pinned-R17 child.
+
+Second, pulling the pinned R17 fibration itself into that fresh A1 coordinates gives an
+enormous old-fibre degree rather than degree two.  Therefore that A1 is a genuinely
+different elliptic fibration on the same K3 surface.
+
+This is a useful warning: equal `ADE/MW` labels do not determine the embedded elliptic
+`U`, and repeated deterministic first-hit searches can leave a previously selected
+marked corridor while preserving the same sequence of root ranks.
+
+## 3. The marking issue at D13
+
+A temporary diagnostic compared the raw H3-coordinate q24 fibre rays and appeared to
+show divergence already at D12.  That interpretation was too strong.
+
+The selected historical/pinned D13 search frame and the current equation D13 frame are
+related by a nontrivial exact NS marking change.  That change does not preserve the
+literal embedded standard `U`.
+
+The current equation-frame transport stack is authoritative:
+
+```text
+pinned/dominant D13
+  -> nef/component marking
+  -> source-H3 ambient
+  -> physical component reflections
+  -> q6 Weyl transport
+  -> q6 Eichler translation
+  -> current equation D13.
+```
+
+`compare_h92_three_q24_d12_current_equation_profiles.sage` independently transports all
+three q24 D12 candidates through this stack.  Orbit 85 reproduces the pinned equation
+profile
+
+```text
+MW=(-2,1,-1,1)
+height=52
+correction=0
+P.O=24
+vertical_F=-7
+root_L1=69
+support=13
+```
+
+so orbit 85 remains the selected q24 child in the current equation marking.
+
+## 4. Exact R17-directed closeout
+
+The authoritative closeout is now
+
+```text
+scripts/certify_h92_q24_equation_d13_to_pinned_r17.sage
+```
+
+with terminal status
+
+```text
+PASS_Q24_EQUATION_D13_TO_PINNED_R17_LATTICE_PATH
+```
+
+It reconstructs the exact 19x19 coordinate map from the current equation D13 marking to
+the historical selected D13 marking, transports q24 orbit 85 into current equation
+coordinates, and deliberately chooses the resulting D12 basis as the already-certified
+R17-directed D12 frame.
+
+From there the exact suffix is:
+
+| step | q | orbit | child | MW |
+|---:|---:|---:|---|---:|
+| 1 | 6 | 42 | `A11` | 6 |
+| 2 | 8 | 922 | `2A5` | 7 |
+| 3 | 4 | 472 | `3A3` | 8 |
+| 4 | 4 | 323 | `A3+2A2` | 10 |
+| 5 | 4 | 207 | `5A1` | 12 |
+| 6 | 4 | 52 | `4A1` | 13 |
+| 7 | 4 | 114 | `3A1` | 14 |
+| 8 | 4 | 498 | `2A1` | 15 |
+| 9 | 4 | 981 | `A1` | 16 |
+| 10 | 6 | 2247 | rootless | 17 |
+
+The final q6 is therefore explicitly
+
+```text
+A1/MW16 --q6 orbit 2247, old-fibre degree 2--> rootless/MW17.
+```
+
+The resulting rootless frame is then identified with
+`data/lattice/rank17_gram.txt` by the stored determinant-one endpoint isometry.
+
+Successful terminal lines include:
+
+```text
+Q24R17MAP_FINAL_Q6|parent=A1/MW16|q=6|orbit=2247|degree=2|child=rootless/MW17|status=PASS
+Q24R17MAP_PINNED|...|pinned_R17=1|status=PASS
+Q24R17MAP_RESULT|...|status=PASS_Q24_EQUATION_D13_TO_PINNED_R17_LATTICE_PATH
+```
+
+## 5. Proof boundary
+
+This closes the route at the **integral lattice / Neron--Severi / marking** level from
+the current equation D13 frame all the way to pinned R17.
+
+It does not execute the downstream characteristic-zero genus-one pencils and
+Weierstrass/Jacobian transformations.
+
+The current equation programme is therefore:
+
+```text
+exact D13 equation
+  -- q24 orbit85 -->
+D12 equation
+  -- q6 -->
+A11
+  -- q8 -->
+2A5
+  -- q4 ... -->
+A1
+  -- q6 orbit2247 -->
+rootless R17 equation.
+```
+
+The pointed q24 D12 work already recovers useful modular data for the next q6 step:
+`recover_h92_q24_pointed_zero_pole_sections.sage` reconstructs an explicit A11 target
+section modulo a good prime as a group-law combination of easy `P.O=0` sections.
+Its own proof boundary states that the resolved q6 RR pencil and A11 child equation
+remain to be compiled.
+
+## 6. Preferred-route consequence
+
+The preferred route is the transported R17-directed suffix described in
+`H3_PREFERRED_PATH.md`.
+
+The fresh first-hit branch
+`55,1960,261,567,3822,8598,13487,18368,17593` remains valuable as an alternate
+fibration/compiler experiment, but it must not be called the canonical R17 suffix.
+
+q32 is likewise retained as alternate/regression work and as a source of reusable
+pointed-quartic/spinor-marking techniques.
