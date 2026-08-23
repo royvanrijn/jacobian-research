@@ -143,7 +143,7 @@ for p,sig,path in records:
         flush=True,
     )
     if square:
-        good.append((int(p),zero,rn,rd))
+        good.append((int(p),bool(zero),int(rn),int(rd)))
 
 status=(
     "PASS_SPINOR_SECTION_ANCHOR"
