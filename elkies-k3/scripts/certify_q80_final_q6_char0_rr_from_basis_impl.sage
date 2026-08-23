@@ -298,18 +298,27 @@ assert Hx(r6) == x06 and Hy(r6) == 0
 
 Kr = FunctionField(K,"r")
 rr = Kr.gen()
-LS = LaurentSeriesRing(Kr,"s",default_prec=14)
+
+# Only a leading local jet is needed for the connected-A5 quotient residue.
+# Precision 9 is enough: the I6 smoothing term starts at s^6, while every
+# supported component has local order <= 5. Newton doubles the s-adic
+# accuracy, so three iterations from the correct constant root give >=8
+# correct orders.
+LS = LaurentSeriesRing(Kr,"s",default_prec=9)
 ss = LS.gen()
 
 def shifted(poly,root):
     ans = LS(0)
-    for degree,coefficient in enumerate(R(poly).list()):
-        ans += Kr(coefficient)*(Kr(root)+ss)^degree
+    power = LS(1)
+    base = LS(Kr(root)) + ss
+    for coefficient in R(poly).list():
+        ans += Kr(coefficient)*power
+        power *= base
     return ans
 
 def newton_sqrt(value,root0):
     root = LS(Kr(root0))
-    for unused in range(5):
+    for unused in range(3):
         root = (root+value/root)/2
     return root
 
@@ -330,112 +339,153 @@ rho0 = K(rho_sq.sqrt())
 Hxloc = shifted(Hx,r6)
 Hyloc = shifted(Hy,r6)
 
-def toric_point(component,rho_start):
+def toric_leading_residue(component,rho_start):
+    """
+    Return (valuation(m), residue(m)) for m=(y+H_y)/(x-H_x) on one
+    resolved I6 component.
+
+    Crucially, never divide Laurent series: when val(num)=val(den), the
+    residue is just num[v]/den[v].  This avoids the symbolic K(r)[[s]]
+    quotient that dominated the previous runtime.
+    """
     aa = LS(rr)*ss^component
     bb = unit*ss^(6-component)/LS(rr)
     yy = (aa+bb)/2
     ww = (bb-aa)/2
-    rho = LS(Kr(rho_start))
-    for unused in range(5):
-        rho -= (rho^3-3*center*rho-ww)/(3*rho^2-3*center)
-    xx = center+ww/rho
-    return xx,yy
 
-def functional_rows(values):
-    nonzero = [v for v in values if v]
-    if not nonzero:
-        return ()
-    common = nonzero[0].denominator().parent().one()
-    for v in nonzero:
-        common = common.lcm(v.denominator())
-    nums = [(v*common).numerator() for v in values]
-    degree = max([f.degree() for f in nums if f]+[-1])
-    rows = []
-    for deg in range(degree+1):
-        row = tuple(
-            K(f[deg]) if f and deg <= f.degree() else K(0)
-            for f in nums
-        )
-        if any(row):
-            rows.append(row)
-    return tuple(rows)
+    rho_series = LS(Kr(rho_start))
+    for unused in range(3):
+        rho_series -= (
+            rho_series^3-3*center*rho_series-ww
+        )/(3*rho_series^2-3*center)
 
-def canonical(row):
-    row = tuple(K(v) for v in row)
-    pivot = next(v for v in row if v)
-    return tuple(v/pivot for v in row)
+    xx = center+ww/rho_series
+    numerator = yy+Hyloc
+    denominator = xx-Hxloc
 
-def dedup(rows):
-    out = []
-    for row in rows:
-        row = canonical(row)
-        if row not in out:
-            out.append(row)
-    return tuple(out)
+    vn = int(numerator.valuation())
+    vd = int(denominator.valuation())
+    valuation = vn-vd
 
-def reduce_row(row):
-    row = canonical(row)
+    if valuation < 0:
+        return valuation,None
+    if valuation > 0:
+        return valuation,Kr(0)
+
+    # Exact residue in K(r); no Laurent-series division.
+    residue = Kr(numerator[vn])/Kr(denominator[vd])
+    return 0,residue
+
+def reduce_a5_row(row):
     vals = tuple(red_k(v) for v in row)
     pivot = next(v for v in vals if v)
     return tuple(v/pivot for v in vals)
 
 e6 = exact_mod_root["I6"]
-target_A5_residue = total_s(e6)*Fp(69)  # pinned -4
+target_A5_residue = total_s(e6)*Fp(69)  # historical -4, transported gauge
 target_A5 = (Fp(1),e6,e6^2,target_A5_residue)
+
+def matching_rows_from_residue(mres):
+    """
+    If mres=N(r)/D(r), clearing denominators in
+        a0+a1*r6+a2*r6^2+a3*mres
+    gives coefficient rows
+        (D_k, r6*D_k, r6^2*D_k, N_k).
+    We need only rows whose canonical reduction is the pinned target, so
+    inspect N_k/D_k directly instead of constructing/lcm'ing every row.
+    """
+    mres = Kr(mres)
+    if not mres:
+        return ()
+
+    num = mres.numerator()
+    den = mres.denominator()
+    answer = []
+
+    for degree in range(int(den.degree())+1):
+        dk = K(den[degree])
+        if not dk:
+            continue
+        nk = K(num[degree]) if degree <= num.degree() else K(0)
+        c_exact = K(nk/dk)
+        if red_k(c_exact) != target_A5_residue:
+            continue
+
+        row = (K(1),K(r6),K(r6^2),c_exact)
+        assert reduce_a5_row(row) == target_A5
+        answer.append((degree,row))
+
+    return tuple(answer)
 
 supports = {
     "direct":(1,3,4),
     "reversed":(2,3,5),
 }
-matches = []
-for rho in (rho0,-rho0):
-    for orientation,support in supports.items():
-        rows = []
-        for component in support:
-            xx,yy = toric_point(component,rho)
-            mloc = (yy+Hyloc)/(xx-Hxloc)  # chord through -H
-            valuation = int(mloc.valuation())
+
+selected_A5 = None
+
+# Stop as soon as the exact coefficient row reducing to the pinned quotient
+# is found.  The old code evaluated all 12 component/sign/orientation cases,
+# expanded all K(r) numerator/denominator coefficients, and deduplicated them.
+for rho_candidate in (rho0,-rho0):
+    if selected_A5 is not None:
+        break
+    for orientation,support_candidate in supports.items():
+        if selected_A5 is not None:
+            break
+
+        for component in support_candidate:
+            valuation,mres = toric_leading_residue(component,rho_candidate)
+
             if valuation < 0:
+                print(
+                    "Q80FINALA5FAST|rho_mod73={}|orientation={}|component={}|"
+                    "mvaluation={}|status=SKIP_POLE".format(
+                        int(red_k(rho_candidate)),orientation,component,valuation
+                    ),
+                    flush=True,
+                )
                 continue
-            mres = Kr(mloc[0]) if valuation == 0 else Kr(0)
-            rows.extend(functional_rows((Kr(1),Kr(r6),Kr(r6^2),Kr(mres))))
-        rows = dedup(rows)
-        redrows = tuple(reduce_row(row) for row in rows)
 
-        print(
-            "Q80FINALA5LOCAL|rho_mod73={}|orientation={}|support={}|rank={}|"
-            "rows_mod73={}|status=PASS_EXACT_I6_TRACE".format(
-                int(red_k(rho)),orientation,support,
-                matrix(K,rows).rank() if rows else 0,
-                tuple(tuple(int(v) for v in row) for row in redrows),
-            ),
-            flush=True,
-        )
+            matches_here = matching_rows_from_residue(mres)
+            print(
+                "Q80FINALA5FAST|rho_mod73={}|orientation={}|component={}|"
+                "mvaluation={}|mres_num_degree={}|mres_den_degree={}|"
+                "matching_coefficients={}|status=PASS_FAST_I6_COMPONENT".format(
+                    int(red_k(rho_candidate)),orientation,component,valuation,
+                    -1 if mres is None or not mres else int(mres.numerator().degree()),
+                    -1 if mres is None or not mres else int(mres.denominator().degree()),
+                    tuple(degree for degree,unused in matches_here),
+                ),
+                flush=True,
+            )
 
-        for row in rows:
-            if reduce_row(row) == target_A5:
-                matches.append((rho,orientation,support,canonical(row)))
+            if matches_here:
+                coefficient_degree,a5_row = matches_here[0]
+                selected_A5 = (
+                    rho_candidate,orientation,support_candidate,
+                    component,coefficient_degree,a5_row
+                )
+                break
 
-if not matches:
+if selected_A5 is None:
     raise ArithmeticError(
-        "exact I6 traces did not contain transported pinned A5 quotient line"
+        "fast exact I6 leading-jet traces did not contain the transported "
+        "pinned A5 quotient line"
     )
 
-unique = {}
-for item in matches:
-    unique.setdefault(tuple(item[3]),item)
-matches = list(unique.values())
-matches.sort(key=lambda item:(item[1]!="direct",int(red_k(item[0]))))
-rho,orientation,support,a5_row = matches[0]
+rho,orientation,support,matched_component,coefficient_degree,a5_row = selected_A5
 
 print(
     "Q80FINALA5|root={}|root_mod73={}|orientation={}|support={}|"
-    "row_mod73={}|status=PASS_EXACT_CONNECTED_A5_QUOTIENT".format(
-        r6,int(e6),orientation,support,
-        tuple(int(v) for v in reduce_row(a5_row)),
+    "matched_component={}|coefficient_degree={}|row_mod73={}|"
+    "status=PASS_EXACT_CONNECTED_A5_QUOTIENT".format(
+        r6,int(e6),orientation,support,matched_component,coefficient_degree,
+        tuple(int(v) for v in reduce_a5_row(a5_row)),
     ),
     flush=True,
 )
+
 
 # ---------------------------------------------------------------------------
 # 5. Complete exact RR kernel.
