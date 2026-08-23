@@ -86,8 +86,9 @@ checked by
 See [`../../elkies-k3/E6_NEIGHBOR_CHAIN.md`](../../elkies-k3/E6_NEIGHBOR_CHAIN.md).
 
 What remains missing is no longer an abstract or integral-lattice
-identification.  Primary-source backtracking now identifies the correct
-upstream class of genuine models: the Dolgachev--Kumar `E7+E8` fibration of
+identification.  The source audit, distinct from the reverse MW17 backtracks,
+now identifies the correct upstream class of genuine models: the
+Dolgachev--Kumar `E7+E8` fibration of
 MW rank two and regulator `474`.  Exact binary-form/glue classification leaves
 three compatible determinant-948 Kumar frames, with height Grams
 `[[5/2,1],[1,190]]`, `[[4,0],[0,237/2]]`, and
@@ -97,6 +98,9 @@ involution as `w2=w237`, the hyperelliptic involution of Elkies's genus-two
 curve, so the middle frame is the canonical involutive H2 anchor.  The
 corrected H3 source marking is described next.  See
 [`../../elkies-k3/KUMAR_E7E8_BACKTRACK.md`](../../elkies-k3/KUMAR_E7E8_BACKTRACK.md).
+The route directions and the qualified meanings of endpoint, source, lattice
+child, equation child, and specialization endpoint are fixed in
+[`../../elkies-k3/CONSTRUCTION_ROUTES.md`](../../elkies-k3/CONSTRUCTION_ROUTES.md).
 
 ### Corrected H3 source and low-degree route
 
@@ -1091,9 +1095,11 @@ before more relation collection is attempted.
 ## Efficient next gates
 
 1. **Execute the next equation-level neighbour.** The first q6 and corrected
-   q8 pencils are exact over `QQ`, reaching `D13/MW4`. Construct its q24
-   neighbour `D12/MW5` with the same binary-quartic multiplier and fully
-   cleared-residue regressions.
+   q8 pencils are exact over `QQ`, reaching the parent `D13/MW4` equation.
+   Execute the selected orbit-85 q24 divisor on that parent to construct the
+   immediate equation child `D12/MW5`, with the same binary-quartic multiplier
+   and fully cleared-residue regressions.  This local D12 child is not the
+   recovered R17 route endpoint.
 2. **Execute the remaining certified degree-two chain.** Realize the ten
    later q6/q8/q4-series/final-q6 neighbours in characteristic zero. The
    complete D13-to-rootless lattice transport and chamber/nef certification

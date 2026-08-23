@@ -4,6 +4,15 @@ This directory contains the K3-surface and elliptic-neighbor work used to search
 
 For the human-readable map of how the reverse searches, H3 source construction, H2 comparison, Q80 route, and CM24 scaffold fit together, start with [`CONSTRUCTION_ROUTES.md`](CONSTRUCTION_ROUTES.md). For executable entry points and the research history behind failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and [`SCRIPT_ROUTE_AND_FAILURE_LEDGER.md`](SCRIPT_ROUTE_AND_FAILURE_LEDGER.md).
 
+Route discipline: use `R17` for the recovered rootless lattice endpoint,
+`H3 source` for the level-474 Kumar polarization, and `next equation child` for the
+model produced by the active neighbor compiler.  The current compiler input is
+the exact `D13/MW4` parent, its operation is the selected q24 pencil, and its
+immediate output is the `D12/MW5` child.  The reverse Low-q MW2/E6 backtracks
+and the Q80 CM24 regression endpoint are different routes and must not be used
+as substitutes for that parent or child.  See the target vocabulary and
+decision ledger in [`CONSTRUCTION_ROUTES.md`](CONSTRUCTION_ROUTES.md).
+
 ## Current priority
 
 The **H3 source family** is the primary characteristic-zero starting point. The currently selected **H3 degree-two corridor** is one certified route from that source to rootless/MW17; it is not proved shortest, globally optimal, or cheapest to compile. Its first two neighbours are exact at equation level:
@@ -187,6 +196,6 @@ scripts/verify_elliptic_neighbor_compiler_field_generic.sage.
 
 ## Next strategic gate
 
-For **H3**, continue the selected `D13/MW4 --q24--> D12/MW5` equation reconstruction as the nearest certified continuation, but do not call the full suffix optimal. In parallel, score the other q24 children, lateral D13 neighbours, and higher-q exits by actual equation cost. Do not return to the historical degree-46, `true1600`, or hand-built `corrected1278` q8 compilers except as diagnostics.
+For **H3**, continue the selected `D13/MW4 --q24--> D12/MW5` equation reconstruction toward R17 as the nearest certified continuation, but do not call the full suffix optimal. In parallel, score the other q24 children, lateral D13 neighbours, and higher-q exits by actual equation cost. Do not return to the historical degree-46, `true1600`, or hand-built `corrected1278` q8 compilers except as diagnostics.
 
 For **Q80**, the terminal marking/RR/equation gate is closed. Treat the direct two-parameter final-section resultants, digit-by-digit `73`-adic lift, and local-73 singularity probes as diagnostics only. Any new Q80 work should start from the exact certificates above rather than reopening the final q6 reconstruction.

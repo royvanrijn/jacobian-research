@@ -51,6 +51,11 @@ Q80: E6+D5+A3 / MW3
         ... -> rootless/MW17
 ```
 
+The lines meeting `rootless/MW17` in this picture are not one concatenated
+historical path.  The lower arrows out of R17 are reverse-discovery searches;
+the upper H3 arrows are the forward source construction selected only after
+the source audit.
+
 The crucial distinctions are:
 
 - the **17x17 lattice is the endpoint constraint** from which the reverse searches
@@ -62,6 +67,51 @@ The crucial distinctions are:
 - **Q80 is a secondary fibration on the same determinant-948 K3 family**, found through
   the H2 comparison polarization. It is extremely useful as an equation/compiler route,
   but it is not the historical/source entrance.
+
+## Target vocabulary: do not use `target` by itself
+
+Several different objects were historically called the target.  They answer
+different questions and are not interchangeable.  New notes, scripts, and
+artifact fields should use one of the qualified names below.
+
+| qualified name | precise meaning | role in the present programme |
+|---|---|---|
+| **recovered endpoint** or **R17** | the pinned rootless rank-17 positive frame `data/lattice/rank17_gram.txt` | input constraint for reverse searches; final lattice endpoint of the H3 and generic Q80 routes |
+| **H3 source** | the level-474 Kumar `E7+E8/MW2` polarization with height Gram `[[21/2,3],[3,46]]` | geometric starting point selected by the source audit |
+| **selected next lattice child** | the already-certified child frame of the retained neighbor | currently `H3-03-D12`, namely `D12/MW5` |
+| **selected next equation child** | the characteristic-zero Weierstrass model still to be constructed for that retained child frame | currently the `D12/MW5` model produced by executing the orbit-85 q24 pencil on the exact `D13/MW4` parent |
+| **specialization endpoint** | the rational member eventually identified with curve 273 | sought only after the generic rootless H3 family and its sections are explicit |
+| **CM24 regression endpoint** | the specialized Q80 terminal model `4A2+A3+A5/MW2` | a compiler regression on a Picard-rank-jumping specialization, not R17 |
+
+For the active H3 equation step, the parent/operation/child triple is therefore
+
+```text
+parent equation       = exact H3-02 D13/MW4 model
+selected operation    = q24 degree-two pencil, orbit 85
+selected equation child = H3-03 D12/MW5 model
+route endpoint        = R17, still ten later equation-level neighbors away
+```
+
+In particular, `D12` is not an alternative global endpoint, and R17 is not
+the local object that the q24 Riemann--Roch compiler must construct.  The q24
+compiler needs the selected divisor and resolved component/module data on the
+exact D13 parent; its immediate output is the D12 child equation.
+
+## Two directions, two questions
+
+The reverse and forward calculations live in the same determinant-948
+Neron--Severi isometry class, but they were chosen for different purposes.
+
+| direction | question being answered | selection rule | what it does not identify |
+|---|---|---|---|
+| **reverse-discovery backtracks from R17** | Can the 17-section frame be replaced by a fibration with fewer sections and more reducible fibres? | prefer exact primitive neighbors with low q, lower MW rank, useful root systems, and transportable divisor classes | the level-474 source polarization |
+| **forward H3 Selected Degree-Two Corridor** | Starting from the H3 source selected by the Shimura/Humbert geometry, which certified neighbor chain returns to R17? | keep the pinned H3 marking; among nef degree-two presentations, retain rank-growing children that remain explicitly transportable | a proof that a reverse low-MW endpoint was the source, or that this corridor is optimal or cheapest to compile |
+
+Thus the Low-q MW2 and E6 paths are discovery backtracks.  They helped reveal
+the geometry but are not prefixes of the H3 Selected Degree-Two Corridor.
+Conversely, the H3 q6/q8/q24 chain is the retained forward corridor even
+though R17 was known before H3 was recovered; alternative q24 children,
+lateral moves, and higher-q exits may still be cheaper equation routes.
 
 ## Canonical names
 
@@ -246,6 +296,39 @@ shell, but three q24 orbits give `D12/MW5`; orbit 85 was selected. The later suf
 deterministic first hits from that one frame. Therefore alternative q24 children,
 lateral moves and larger-q exits remain legitimate candidates for an easier equation
 route.
+
+### Why these H3 arrows were retained
+
+The sequence was not selected merely because its ADE labels looked attractive.
+The stored search and chamber certificates give the following decision
+ledger:
+
+1. The source audit selects H3 from the level-474 `H21 intersect H92`
+   geometry.  It is not selected by reversing either low-MW backtrack.
+2. From H3, the q6 class gives a nef old-fibre-degree-two
+   `E8+E6/MW3` child.  Its q8 continuation is again degree two and gives the
+   pinned `D13/MW4` frame.  These are the two equation-level neighbors already
+   executed over `QQ`.
+3. From D13, every proper presentation through q=20 has MW rank at most four;
+   q=21 and q=22 also do not grow, and q=23 has no proper factor presentation.
+   The first rank growth is the q24 factorization `(12,2)`.  Exactly three
+   primitive orbits give `D12/MW5`; orbit 85 is the retained nef degree-two
+   representative.
+4. The next retained rank-growing degree-two choices are D12 orbit 42 at q6,
+   A11 orbit 922 at q8, and `2A5` orbit 472 at q4.  The compact `3A3` orbit 323
+   then jumps to `A3+2A2/MW10` at q4.
+5. From MW10, the stored q4 first hits successively remove the remaining root
+   rank: orbits 207, 52, 114, 498, and 981 reach `A1/MW16` while preserving
+   nefness and old-fibre degree two.
+6. At `A1/MW16`, a bounded q4 search found no rootless child.  The streamed q6
+   search found exact orbit 2247, whose certified child is R17.  This proves
+   the selected final arrow, not an exhaustive minimal-q theorem for the full
+   q6 shell.
+
+The detailed counts, witnesses, and chamber arguments remain canonical in
+[`KUMAR_E7E8_BACKTRACK.md`](KUMAR_E7E8_BACKTRACK.md), and the eleven-step
+integral replay remains
+[`scripts/verify_h3_d13_to_mw17_path.sage`](scripts/verify_h3_d13_to_mw17_path.sage).
 
 The detailed source and lattice certificates are in
 [`KUMAR_E7E8_BACKTRACK.md`](KUMAR_E7E8_BACKTRACK.md); the corrected q8 equation
@@ -438,6 +521,8 @@ For individual Q80 suffix stages, prefer `Q80-LQ*-<child>` identifiers and put `
 
 The conceptual rule is:
 
-> **Backtracking discovered the geometry; source recovery selected H3; the current H3
-> degree-two corridor proves one route but not the best route; Q80 supplies an independent
-> compiler/regression laboratory through its terminal CM24 specialization shadow.**
+> **Reverse search found useful alternative fibrations on the R17 surface;
+> the independent source audit selected the H3 Source Family; the H3 Selected
+> Degree-Two Corridor proves one forward route, not the shortest or cheapest
+> one. Q80 is a separate compiler route, and its CM24 endpoint is a
+> specialization regression rather than R17.**
