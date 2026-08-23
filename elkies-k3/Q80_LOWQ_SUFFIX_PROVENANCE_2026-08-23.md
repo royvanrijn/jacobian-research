@@ -8,7 +8,7 @@ The generic lattice search selected a sequence of child frames first. The CM24 h
 
 This distinction matters for characteristic-zero reconstruction. We should backtrack the selected search objects and their transports rather than repeatedly rediscover the final horizontal from node incidence.
 
-For the repository-wide human-readable route map, including the H3 source route, H2 comparison route, reverse MW17 backtracks, and the role of Q80, see [`CONSTRUCTION_ROUTES.md`](CONSTRUCTION_ROUTES.md).
+For the repository-wide human-readable route map, including the H3 source route, H2 comparison route, reverse MW17 backtracks, and the role of Q80, see [`CONSTRUCTION_ROUTES.md`](CONSTRUCTION_ROUTES.md). For the completed final-q6 reconstruction, see [`Q80_FINAL_Q6_CLOSEOUT_2026-08-23.md`](Q80_FINAL_Q6_CLOSEOUT_2026-08-23.md).
 
 ## Canonical names for the Q80 suffix
 
@@ -263,58 +263,116 @@ Q80-LQ8-ROOTLESS generic divisor: P2-P3 at CM24
 
 with large changes in `P.O`, height, fibre twist, and vertical support under specialization.
 
-Therefore `P2-P3` is a **CM24 marking of the already-selected final generic divisor**. It should be used as a regression certificate, not assumed to be a generic characteristic-zero definition of that section.
+Therefore `P2-P3` is a **CM24 marking of the already-selected final generic divisor**. It is a regression/identification certificate, not the generic characteristic-zero definition of that section.
 
 This explains why trying to lift the final GF(73) polynomial section directly can become singular or non-transverse without contradicting the generic rootless lattice certificate.
 
-## 5. What was lost in the current characteristic-zero equation pipeline
+## 5. What the characteristic-zero compiler had lost
 
-The exact characteristic-zero lift through `Q80-LQ7-A1` currently compiles the q4 pencil, computes its binary-quartic Jacobian, classifies the child, and persists the selected minimal Weierstrass coefficients `A,B`.
+The exact characteristic-zero lift through `Q80-LQ7-A1` compiled the q4 pencil, computed its binary-quartic Jacobian, classified the child, and persisted the selected minimal Weierstrass coefficients `A,B`.
 
-However, the compiler does **not** persist a marked MW basis or transport a sufficient set of rational points through the quartic-to-Jacobian conversion. In particular, `compile_q80_q4_candidate1_char0_family.sage` writes the selected parent model but not the new child MW marking.
+What it did **not** persist was a marked MW basis or enough rational-point transport through the quartic-to-Jacobian conversion. That turned the terminal q6 into an apparent fresh section-reconstruction problem even though the generic lattice search had already selected the divisor.
 
-That is the likely reason the final step has turned into a fresh section-reconstruction problem. The search/lattice chain itself already knows which divisor is intended; the equation conversion discarded the marking needed to identify it cheaply.
+The late repair did not require retraining/reselecting the lattice route. It required reconstructing the lost marking information cheaply enough to identify the already-selected section.
 
-## 6. Backtracking plan
+## 6. Exact transport audit
 
-The preferred next approach is to recover the marking from the search lineage rather than continue resolving the singular GF(73) section scheme.
+`scripts/trace_q80_candidate1_marked_transport.sage` replays the retained suffix while keeping every unimodular neighbour transport instead of discarding it.
 
-1. Reconstruct every retained child frame together with the exact unimodular neighbor transport for
-
-   ```text
-   Q80-LQ4-A4A2A1
-     -> Q80-LQ5-A3A2
-     -> Q80-LQ6-4A1
-     -> Q80-LQ7-A1
-     -> Q80-LQ8-ROOTLESS.
-   ```
-
-2. Compose those transports backward until reaching the earliest equation frame for which explicit marked sections are still available.
-
-3. Express the final q6 horizontal/section class in that earlier marked frame.
-
-4. At equation level, transport enough rational points through each binary-quartic/Jacobian conversion to preserve the required MW direction. If direct point transport is awkward, reconstruct a low-height basis on the child while the parent marking is still available and record the basis change.
-
-5. Form the final horizontal by exact group law on the marked `Q80-LQ7-A1` parent.
-
-6. Use the historical GF(73) `P2-P3`, profile `(0,2,2,0,4)`, A4 row, and A5 residue `+/-4` only as regression checks.
-
-## 7. Current diagnostic status
-
-The direct final-section reconstruction over the selected exact `Q80-LQ7-A1` parent found:
+On the selected generic candidate1 frame the terminal divisor chamber-reduces as
 
 ```text
-historical GF(73) seed: (c0,c1)=(67,8)
-reduced two-parameter Jacobian rank at 73: 1
-q6 leading square coefficient: 1 (nonzero)
-tangent direction: (17,1)
-local transverse elimination obstruction order: 2
+D_reduced = O + P - F
 ```
 
-So the historical point is genuinely non-transverse in the special fibre; this is not merely a denominator-clearing artifact. Digit-by-digit 73-adic lifting is correspondingly expensive and is not the preferred construction route.
+with exact section class
+
+```text
+P = (5,1,-44718,-282065,63356,564493,-98198,249323,239104,-1054,
+     -22328,-389456,-231271,-641746,-570362,-123785,227276,-186445,89497)
+```
+
+and checks
+
+```text
+P^2 = -2
+P.F = 1
+P.O = 4.
+```
+
+The composed candidate1-to-`A6+A3` and candidate1-to-source transforms have determinants `-1` and `+1`, respectively. The same curve becomes a very large multisection in the earlier fibrations. This is the decisive reason not to expect the final section to become a small earlier MW basis vector by raw backward transport.
+
+The transport audit therefore confirms both the search provenance and the coordinate convention while also showing that specialization, not generic back-transport, is where the small `P1,P2,P3` labels arise.
+
+## 7. Successful final-horizontal reconstruction
+
+The direct final section has only three node hits (`I3,I4,I6`). In `P.O=0` degree bounds this leaves a two-parameter x-coordinate and, at the historical prime `73`, the pinned point is singular/non-transverse in those coordinates. The old two-parameter resultant and digit-by-digit `73`-adic routes were therefore computationally poor construction methods.
+
+The successful route is `scripts/recover_q80_final_q6_via_basis_sections.sage`:
+
+1. reconstruct exact `P.O=0` sections that meet four or five reducible nodes, where interpolation is zero- or one-parameter;
+2. reduce those exact sections modulo `73` in the transported candidate1 gauge;
+3. test their exact elliptic-curve differences against the historical `P2-P3` modular point;
+4. compute the matching difference over `QQ(sqrt(-3))(W)` exactly.
+
+This gives the terminal horizontal exactly as an MW-basis difference. The GF73 point is used only to identify the correct pair/sign.
+
+The resulting exact horizontal satisfies
+
+```text
+H = P2-P3  (historical CM24 marking)
+P.O = 0
+height = 1
+hits = I3,I4,I6.
+```
+
+## 8. Exact RR and child closure
+
+`scripts/certify_q80_final_q6_char0_rr_from_basis.sage` loads that exact horizontal and certifies the resolved terminal pencil over `QQ(sqrt(-3))`:
+
+```text
+ambient = 4
+whole A4 quotient rank = 1
+connected A5 quotient rank = 1
+condition rank = 2
+kernel dimension = 2
+h0(D) = 2.
+```
+
+The exact A4 row reduces to the transported historical whole-A4 condition. The A5 row is recovered by a leading-jet toric calculation at the exact `I6` fibre and reduces to the transported `+/-4` quotient line.
+
+`scripts/compile_q80_final_q6_char0_child.sage` then compiles the exact degree-four binary quartic and classifies the characteristic-zero CM24 child as
+
+```text
+finite fibres = 4 I3 + I4 + I6 + 2 I1
+infinity = smooth
+root lattice = 4A2+A3+A5
+root rank = 16
+root determinant = 1944
+Euler number = 24
+MW rank = 2.
+```
+
+The pinned repository certificate/model are
+
+```text
+data/fibrations/q80-final-q6-char0/Q80_CHAR0_FINAL_Q6_CERTIFICATE.md
+data/fibrations/q80-final-q6-char0/q80_char0_final_q6_child.sage
+```
+
+This closes the characteristic-zero specialization shadow of the generic terminal neighbour. The generic child remains the independently certified rootless `MW17` frame with determinant `948`.
+
+## 9. Superseded diagnostics
+
+The following are retained only as diagnostics/history and should not be described as the active terminal construction:
+
+- the direct two-parameter final-horizontal resultant/Groebner elimination;
+- digit-by-digit `73`-adic lifting in the singular residue disk;
+- local-73 singularity/tangent probes;
+- forcing `P2-P3` as a generic section definition rather than using it as specialization regression data.
 
 ## Working rule
 
-**Search provenance first, equation reconstruction second.**
+**Search provenance first, easy markings second, specialization regression last.**
 
-For this suffix, the generic selected divisor is defined by the exact neighbor-search lineage. CM24 supplies a powerful marking/regression scaffold, but it should not be forced to carry the entire characteristic-zero reconstruction when the selected lattice transports can recover the intended object directly.
+For this suffix, the generic selected divisor is defined by the exact neighbor-search lineage. The terminal characteristic-zero equation is now reconstructed exactly, and the final-q6 marking gate should be treated as closed.
