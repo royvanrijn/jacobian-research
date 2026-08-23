@@ -11,11 +11,16 @@ D13 Weierstrass equation at its rational I9* place, it recursively:
   * blows them up in all three affine charts;
   * deduplicates overlap charts by projective tangent direction;
   * tracks the map back to the original local (u,x,y) coordinates;
-  * verifies that terminal charts are smooth above every center.
+  * verifies that terminal charts are smooth above every center;
+  * distinguishes blow-up centres from irreducible exceptional components by
+    recording the tangent cone at every centre.
 
-The expected minimal resolution has 13 exceptional curves (D13).  This first
-artifact is only the geometric chart tree.  Marked-chord quotient conditions
-are deliberately deferred until the actual resolution is pinned.
+A point blow-up need not create only one geometric exceptional component:
+a multiplicity-two tangent cone of rank two is a pair of lines over the
+algebraic closure.  Therefore the number of blow-up centres is not itself the
+D13 component count.  The expected minimal resolution has 13 geometric
+exceptional curves.  This artifact is still only the geometric chart tree;
+marked-chord quotient conditions are deliberately deferred.
 """
 
 import argparse
@@ -52,6 +57,7 @@ def locate_repo(explicit=None):
             return c
     raise SystemExit("Could not locate jacobian-research")
 
+
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--repo",type=Path)
 parser.add_argument("--prime",type=int,default=100003)
@@ -77,10 +83,13 @@ child=q8["child"]
 
 p=ZZ(args.prime)
 F=GF(p)
+if F.characteristic() == 2:
+    raise ValueError("tangent-cone component accounting requires odd characteristic")
 Q=PolynomialRing(QQ,"U")
 UQ=Q.gen()
 B=PolynomialRing(F,"U")
 UB=B.gen()
+
 
 def red_q(q):
     q=QQ(q)
@@ -89,8 +98,10 @@ def red_q(q):
         raise ZeroDivisionError(f"denominator divisible by {p}")
     return F(ZZ(q.numerator()))/F(d)
 
+
 def red_poly(vals):
     return B([red_q(QQ(v)) for v in vals])
+
 
 A=red_poly(child["minimal_A_coefficients_low_to_high"])
 Bc=red_poly(child["minimal_B_coefficients_low_to_high"])
@@ -106,7 +117,6 @@ u,x,y=S.gens()
 
 Al=S(A(alpha+u))
 Bl=S(Bc(alpha+u))
-Dl=B(Delta)(alpha+B.gen()) if False else None
 
 # Check local minimal orders in one-variable ring separately.
 T=PolynomialRing(F,"t")
@@ -118,16 +128,72 @@ surface=y**2-x**3-Al*x-Bl
 assert surface(0,0,0)==0
 
 
+def hessian_matrix(poly, point):
+    return matrix(
+        F,
+        [[poly.derivative(a,b)(*point) for b in (u,x,y)] for a in (u,x,y)],
+    )
+
+
 def hessian_det(poly, point):
-    return matrix(F,[[poly.derivative(a,b)(*point) for b in (u,x,y)] for a in (u,x,y)]).det()
+    return hessian_matrix(poly, point).det()
+
+
+def shifted_polynomial(poly, point):
+    a,b,c=point
+    return S(poly(a+u,b+x,c+y))
 
 
 def order_at_point(poly, point):
-    a,b,c=point
-    shifted=S(poly(a+u,b+x,c+y))
+    shifted=shifted_polynomial(poly,point)
     if not shifted:
         return 10**9
     return min(sum(exp) for exp,coef in shifted.dict().items() if coef)
+
+
+def tangent_cone_record(poly, point, multiplicity):
+    """Record the homogeneous tangent cone and geometric component count.
+
+    Every centre encountered here has multiplicity two.  In odd
+    characteristic a quadratic tangent cone has:
+
+      rank 1: one doubled line;
+      rank 2: two geometric lines (possibly conjugate over F);
+      rank 3: one smooth conic.
+
+    Hence only rank two contributes two irreducible geometric components.
+    We retain the factorization over F as a separate rationality diagnostic.
+    """
+    shifted=shifted_polynomial(poly,point)
+    cone=S(sum(
+        coefficient * u**exponent[0] * x**exponent[1] * y**exponent[2]
+        for exponent,coefficient in shifted.dict().items()
+        if sum(exponent)==multiplicity
+    ))
+    if not cone:
+        raise ArithmeticError("empty tangent cone")
+    factorization=cone.factor()
+    factors=[
+        {"factor":str(factor),"multiplicity":int(exponent)}
+        for factor,exponent in factorization
+    ]
+
+    quadratic_rank=None
+    geometric_components=None
+    if multiplicity==2:
+        quadratic_rank=int(hessian_matrix(poly,point).rank())
+        if quadratic_rank not in (1,2,3):
+            raise ArithmeticError(
+                f"unexpected quadratic tangent-cone rank {quadratic_rank}"
+            )
+        geometric_components=2 if quadratic_rank==2 else 1
+
+    return {
+        "polynomial":str(cone),
+        "factorization_over_base_field":factors,
+        "quadratic_rank":quadratic_rank,
+        "geometric_exceptional_components":geometric_components,
+    }
 
 
 def divide_power(poly, exceptional, power):
@@ -160,7 +226,10 @@ def singular_points_on_exceptional(poly, exceptional):
         return []
     dim=ideal.dimension()
     if dim != 0:
-        raise ArithmeticError(f"exceptional singular locus not zero-dimensional: dim={dim}; gb={ideal.groebner_basis()}")
+        raise ArithmeticError(
+            f"exceptional singular locus not zero-dimensional: dim={dim}; "
+            f"gb={ideal.groebner_basis()}"
+        )
     try:
         variety=ideal.variety(ring=F)
     except TypeError:
@@ -200,24 +269,28 @@ def direction_from_chart(kind, point):
     assert kind=="y" and py==0
     return canonical_projective((pu,px,1))
 
+
 center_records=[]
 leaf_records=[]
-next_component=0
+next_center=0
 
 
 def blow_center(poly, origin_map, component_eqs, point, path, depth):
-    global next_component
+    global next_center
     if len(center_records)>=args.max_centers:
         raise RuntimeError("resolution exceeded max centers")
 
     multiplicity=order_at_point(poly,point)
     if multiplicity < 2:
-        raise ArithmeticError(("attempted blow-up of smooth point",path,point,multiplicity))
+        raise ArithmeticError(
+            ("attempted blow-up of smooth point",path,point,multiplicity)
+        )
+    tangent=tangent_cone_record(poly,point,multiplicity)
     ordinary=bool(hessian_det(poly,point))
     active=[name for name,g in component_eqs.items() if g(*point)==0]
 
-    label=f"E{next_component+1:02d}"
-    next_component += 1
+    label=f"C{next_center+1:02d}"
+    next_center += 1
     record={
         "label":label,
         "path":path,
@@ -226,11 +299,16 @@ def blow_center(poly, origin_map, component_eqs, point, path, depth):
         "multiplicity":int(multiplicity),
         "ordinary_double_point":ordinary,
         "active_components":active,
+        "tangent_cone":tangent,
         "children":[],
     }
     center_records.append(record)
 
-    # Blow up in all affine charts and gather singular points on the NEW exceptional.
+    # Blow up in all affine charts and gather singular points on the NEW
+    # exceptional divisor.  The chart equation `exceptional=0` can represent
+    # more than one geometric component when the tangent cone has rank two;
+    # that split is recorded above and must be separated by the later
+    # resolved-component quotient compiler.
     candidates={}
     chart_diagnostics=[]
     for kind in ("u","x","y"):
@@ -251,26 +329,33 @@ def blow_center(poly, origin_map, component_eqs, point, path, depth):
         singular=singular_points_on_exceptional(strict,e)
         chart_diagnostics.append({
             "chart":kind,
+            "exceptional_coordinate":str(e),
             "strict_transform":str(strict),
+            "exceptional_restriction":str(strict.subs({e:0})),
             "origin_map":[str(v) for v in new_map],
             "singular_points":[[int(v) for v in q] for q in singular],
         })
         for q in singular:
             d=direction_from_chart(kind,q)
-            candidates.setdefault(d,[]).append((kind,q,strict,new_map,new_components))
+            candidates.setdefault(d,[]).append(
+                (kind,q,strict,new_map,new_components)
+            )
 
     record["charts"]=chart_diagnostics
 
     # Deduplicate overlaps by projective tangent direction and recurse using a
     # deterministic preferred chart u,x,y.
     preference={"u":0,"x":1,"y":2}
-    for direction, reps in sorted(candidates.items()):
+    for direction,reps in sorted(candidates.items()):
         reps.sort(key=lambda item:preference[item[0]])
         kind,q,strict,new_map,new_components=reps[0]
         child_path=f"{path}/{label}:{kind}:{','.join(map(str,direction))}"
         child={
             "direction":list(direction),
-            "representatives":[{"chart":r[0],"point":[int(v) for v in r[1]]} for r in reps],
+            "representatives":[
+                {"chart":r[0],"point":[int(v) for v in r[1]]}
+                for r in reps
+            ],
             "selected_chart":kind,
         }
         record["children"].append(child)
@@ -290,33 +375,61 @@ def blow_center(poly, origin_map, component_eqs, point, path, depth):
 initial_components={"F0":u}
 blow_center(surface,(u,x,y),initial_components,(F(0),F(0),F(0)),"root",0)
 
-all_resolved=all(rec.get("status")=="SMOOTH_ABOVE_EXCEPTIONAL" for rec in leaf_records)
-count=len(center_records)
-ordinary_count=sum(int(r["ordinary_double_point"]) for r in center_records)
-nonordinary=count-ordinary_count
+all_resolved=all(
+    rec.get("status")=="SMOOTH_ABOVE_EXCEPTIONAL" for rec in leaf_records
+)
+center_count=len(center_records)
+ordinary_count=sum(
+    int(r["ordinary_double_point"]) for r in center_records
+)
+nonordinary_count=center_count-ordinary_count
+if any(
+    r["tangent_cone"]["geometric_exceptional_components"] is None
+    for r in center_records
+):
+    geometric_component_count=None
+else:
+    geometric_component_count=sum(
+        int(r["tangent_cone"]["geometric_exceptional_components"])
+        for r in center_records
+    )
+split_centers=[
+    r["label"] for r in center_records
+    if r["tangent_cone"]["geometric_exceptional_components"]==2
+]
+passes_d13=bool(
+    all_resolved
+    and geometric_component_count==13
+)
 
 print(
     "Q24I9RESOLVE|"
     f"prime={p}|base={int(alpha)}|orders=2,3,15|"
-    f"centers={count}|ordinary={ordinary_count}|nonordinary={nonordinary}|"
-    f"leaves={len(leaf_records)}|expected_exceptional=13|"
-    f"status={'PASS_D13_BLOWUP_COUNT' if count==13 and all_resolved else 'DIAGNOSTIC'}",
+    f"centers={center_count}|components={geometric_component_count}|"
+    f"split_centers={','.join(split_centers)}|"
+    f"ordinary={ordinary_count}|nonordinary={nonordinary_count}|"
+    f"leaves={len(leaf_records)}|expected_components=13|"
+    f"status={'PASS_D13_COMPONENT_COUNT' if passes_d13 else 'DIAGNOSTIC'}",
     flush=True,
 )
 for rec in center_records:
+    tangent=rec["tangent_cone"]
     print(
         "Q24I9CENTER|"
         f"label={rec['label']}|depth={rec['depth']}|point={rec['point']}|"
         f"mult={rec['multiplicity']}|ordinary={int(rec['ordinary_double_point'])}|"
-        f"active={','.join(rec['active_components'])}|children={len(rec['children'])}",
+        f"tangent_rank={tangent['quadratic_rank']}|"
+        f"new_components={tangent['geometric_exceptional_components']}|"
+        f"active={','.join(rec['active_components'])}|"
+        f"children={len(rec['children'])}",
         flush=True,
     )
 
 payload={
-    "schema":"elkies-k3.h3-q24-i9star-blowup-resolution-modp.v1",
+    "schema":"elkies-k3.h3-q24-i9star-blowup-resolution-modp.v2",
     "status":(
-        "PASS_EXPLICIT_MODP_I9STAR_D13_BLOWUP_CHARTS"
-        if count==13 and all_resolved else
+        "PASS_EXPLICIT_MODP_I9STAR_D13_COMPONENT_RESOLUTION"
+        if passes_d13 else
         "DIAGNOSTIC_I9STAR_BLOWUP_TREE"
     ),
     "prime":int(p),
@@ -324,29 +437,43 @@ payload={
     "local_orders":[2,3,15],
     "expected_root_lattice":"D13",
     "expected_exceptional_curves":13,
-    "actual_blowup_centers":count,
-    "ordinary_centers":ordinary_count,
-    "nonordinary_centers":nonordinary,
+    "actual_blowup_centers":int(center_count),
+    "actual_geometric_exceptional_components":(
+        int(geometric_component_count)
+        if geometric_component_count is not None else None
+    ),
+    "split_tangent_cone_centers":split_centers,
+    "ordinary_centers":int(ordinary_count),
+    "nonordinary_centers":int(nonordinary_count),
     "centers":center_records,
     "leaves":leaf_records,
     "boundary":(
-        "This artifact resolves the actual I9* surface germ by ordinary blow-up "
-        "charts and tracks maps to the original local Weierstrass coordinates. "
-        "It does not yet identify the q24 vertical class with these geometric "
-        "components or impose marked-chord RR quotient conditions."
+        "This artifact resolves the actual I9* surface germ by ordinary "
+        "blow-up charts and distinguishes blow-up centres from irreducible "
+        "geometric exceptional components using the tangent cone.  A rank-two "
+        "quadratic tangent cone contributes two geometric lines.  The current "
+        "chart records do not yet assign separate component names/trivializations "
+        "to those two branches, identify the q24 vertical class with the full "
+        "geometric D13 basis, or impose marked-chord RR quotient conditions."
     ),
     "next":(
-        "Pull the modular q24 chord and the 10-dimensional post-collision RR "
-        "space through these charts; derive the connected resolved quotient "
-        "and compare its row space with the required codimension 8."
+        "Split every rank-two tangent-cone exceptional into its two geometric "
+        "branches, build the full D13 intersection graph, match it to the "
+        "deterministic lattice root basis, then pull the modular q24 chord and "
+        "10-dimensional post-collision RR space through the resulting charts "
+        "to derive the connected codimension-eight quotient."
     ),
 }
-OUT=args.output.resolve() if args.output else LOCAL/f"q24-i9star-resolution-mod-{p}.json"
+OUT=(
+    args.output.resolve()
+    if args.output else
+    LOCAL/f"q24-i9star-resolution-mod-{p}.json"
+)
 OUT.write_text(json.dumps(payload,indent=2,sort_keys=True)+"\n")
 print(f"OUTPUT|{OUT}",flush=True)
 print(
     "Q24I9RESOLVE_RESULT|"
-    f"centers={count}|expected=13|"
-    f"status={payload['status']}",
+    f"centers={center_count}|components={geometric_component_count}|"
+    f"expected_components=13|status={payload['status']}",
     flush=True,
 )
