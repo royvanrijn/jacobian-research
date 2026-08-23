@@ -67,7 +67,7 @@ def locate_repo():
 ROOT = locate_repo()
 LOCAL = ROOT / "artifacts/local/elkies-k3"
 CERT = ROOT / "elkies-k3/scripts/certify_h92_q8_equation_ns_divisor.sage"
-OLDQ24 = LOCAL / "q8-q24-effective-zero-choices.json"
+OLDQ24 = LOCAL / "q8-q24-effective-zero-choices-current.json"
 OUTPUT = LOCAL / "q8-q24-physical-to-equation-translation.json"
 
 for path in (CERT, OLDQ24):
@@ -107,7 +107,21 @@ section_from_old_mw = scope["section_from_old_mw"]
 
 old24 = json.loads(OLDQ24.read_text())
 assert old24["status"] == "PASS_EXACT_Q24_EFFECTIVE_ZERO_CHOICES"
+assert old24["transport"]["target_endpoint_match"] is True
 D24physical = vector(ZZ, old24["transport"]["q24_divisor_source_h3_ns"])
+
+physical_degree = ZZ(D24physical * ns * F8physical)
+physical_square = ZZ(D24physical * ns * D24physical)
+print(
+    "Q8Q24TRANS_INPUT|"
+    f"D_square={physical_square}|"
+    f"D_degree_on_current_physical_F8={physical_degree}|"
+    f"same_target_artifact=1|"
+    f"status={'PASS' if physical_square==0 and physical_degree==2 else 'MISMATCH'}",
+    flush=True,
+)
+assert physical_square == 0
+assert physical_degree == 2
 
 # ---------------------------------------------------------------------------
 # 1. Exact q6 Eichler transvection.

@@ -361,20 +361,40 @@ B_child_pin = FUring([
 
 A73 = red_u(A_child)
 B73 = red_u(B_child)
-child_scale = None
-for h in Fp:
-    if not h:
-        continue
-    if A73 == FU(h^4*A_child_pin) and B73 == FU(h^6*B_child_pin):
-        child_scale = int(h)
-        break
-if child_scale is None:
-    raise ArithmeticError("exact q4_6855 child misses pinned GF73 equation")
+
+# The historical q4_6855 certificate stores a monic quartic together with a
+# nontrivial twist(U).  squarefree_binary_quartic deliberately preserves the
+# full scalar squareclass of the chord discriminant, so the RAW Jacobian is
+# related to the pinned polynomial model by a rational, not constant,
+# Weierstrass scaling.
+#
+# In the pinned parameter:
+#
+#   qlead/twist = g73^4/(U+25)^8
+#               = (g73^2/(U+25)^4)^2.
+#
+# Thus X_raw=u_raw^2 X_pin, Y_raw=u_raw^3 Y_pin with
+# u_raw=g73^2/(U+25)^4.
+child_scale_unit = FU(g73^2) / FU((up+25)^4)
+
+if (
+    A73 != child_scale_unit^4 * FU(A_child_pin)
+    or B73 != child_scale_unit^6 * FU(B_child_pin)
+):
+    raise ArithmeticError(
+        "raw exact q4_6855 child misses pinned GF73 equation after "
+        "nonconstant Weierstrass normalization"
+    )
+
+# Bind the same normalization to the twist polynomial recorded in the
+# historical certificate.
+twist_pin = FUring([53,3,62,42,71,36,12,57,57])
+qlead73 = red_u(KU(quartic[4]))
+assert qlead73 / FU(twist_pin) == child_scale_unit^2
 
 print(
-    "Q806855REDUCTION|scale_marker={}|status=PASS_GF73_Q4_6855".format(
-        child_scale
-    ),
+    "Q806855REDUCTION|raw_scale_unit={}|twist_bound=1|"
+    "status=PASS_GF73_Q4_6855_RAW_NORMALIZATION".format(child_scale_unit),
     flush=True,
 )
 
@@ -403,9 +423,52 @@ infty = classification["infinity_boundary"]
 infty_orders = tuple(int(x) for x in infty["normalized_orders"])
 assert infty_orders[2] == 0
 
+# The exact finite minimizer must remove the same fourth/sixth-power
+# denominator.  After that, reduction is the pinned polynomial child up to
+# only the constant old-parent gauge g73^2.
+minim = classification["finite_minimization"]
+A_min = UR(minim["minimal_a"])
+B_min = UR(minim["minimal_b"])
+min_scale_unit = KU(minim["scaling_unit"])
+
+A_min73 = red_u(KU(A_min))
+B_min73 = red_u(KU(B_min))
+
+# Do NOT require the finite-minimal model to differ from the pinned GF73
+# polynomial model by a constant.  Finite minimization over K and reduction
+# mod 73 need not commute: distinct characteristic-zero factors may collide
+# or acquire extra valuation after reduction.
+#
+# What is invariant and sufficient is the complete rational Weierstrass
+# scaling.  The already-certified raw relation is
+#
+#   A_raw,73 = u_raw^4 A_pin
+#   B_raw,73 = u_raw^6 B_pin.
+#
+# Exact minimization gives
+#
+#   A_min = s_min^4 A_raw
+#   B_min = s_min^6 B_raw,
+#
+# hence after reduction the combined scale must identify the two models.
+assert KU(A_min) == KU(A_child) * min_scale_unit^4
+assert KU(B_min) == KU(B_child) * min_scale_unit^6
+
+min_scale73 = red_u(min_scale_unit)
+combined_scale = FU(child_scale_unit * min_scale73)
+
+assert A_min73 == combined_scale^4 * FU(A_child_pin)
+assert B_min73 == combined_scale^6 * FU(B_child_pin)
+
 print(
-    "Q806855FIBRES|finite={}|infinity=smooth|"
-    "status=PASS_EXACT_Q4_6855_FIBRES".format(finite_totals),
+    "Q806855FIBRES|finite={}|infinity=smooth|min_scale_unit={}|"
+    "gf73_combined_scale={}|constant_after_min={}|"
+    "status=PASS_EXACT_Q4_6855_FIBRES".format(
+        finite_totals,
+        min_scale_unit,
+        combined_scale,
+        int(combined_scale.numerator().degree() == 0 and combined_scale.denominator().degree() == 0),
+    ),
     flush=True,
 )
 
@@ -467,10 +530,15 @@ payload = {
         "quartic":str(quartic),
         "jacobian_A":str(A_child),
         "jacobian_B":str(B_child),
+        "minimal_A":str(A_min),
+        "minimal_B":str(B_min),
+        "finite_scaling_unit":str(min_scale_unit),
+        "gf73_raw_scale_unit":str(child_scale_unit),
         "finite_fibres":finite_dump,
         "infinity_orders":[int(x) for x in infty_orders],
         "global_pattern":"2 I0* + 2 I4 + I2 + 2 I1",
-        "gf73_scale_marker":int(child_scale),
+        "gf73_raw_scale_unit":str(child_scale_unit),
+        "gf73_minimal_scale_unit":str(combined_scale),
     },
     "next":"q4_candidate1 characteristic-zero propagation",
 }
@@ -489,7 +557,8 @@ note_path.write_text(
     "- RR ambient dimension 4, condition rank 2, exact `h0=2`;\n"
     "- binary quartic/Jacobian compiled from that same exact kernel;\n"
     "- fibres `2 I0* + 2 I4 + I2 + 2 I1`, infinity smooth;\n"
-    f"- pinned GF(73) regression, constant scale marker `{child_scale}`.\n\n"
+    f"- pinned GF(73) raw regression via `{child_scale_unit}`;\n"
+    f"- finite-minimal GF(73) identification via rational scale `{combined_scale}`.\n\n"
     "Next: q4 candidate1 characteristic-zero propagation.\n"
 )
 
