@@ -319,16 +319,13 @@ Q80 E6+D5+A3/MW3
  --q6--> rootless/MW17.
 ```
 
-At the generic lattice level the full route is certified.  The
-characteristic-zero equation pipeline has progressed through the
-`Q80-LQ7-A1` child: it can compile the penultimate q4 pencil, form and classify
-its binary-quartic Jacobian, and persist the A1/MW16 parent for the final
-neighbor.  The current final-q6 obstruction is **marking loss**, not discovery
-of the lattice path: the equation conversion did not persist enough MW point
-transport to identify the required final horizontal cheaply.
+At the generic lattice level the full route is certified. The terminal generic divisor is also pinned as an exact section class on the selected candidate1 frame by replaying the retained neighbour transports.
 
-The exact search provenance and current backtracking repair plan are in
-[`Q80_LOWQ_SUFFIX_PROVENANCE_2026-08-23.md`](Q80_LOWQ_SUFFIX_PROVENANCE_2026-08-23.md).
+The characteristic-zero CM24 equation shadow is now exact through the terminal q6. The former marking-loss obstruction was resolved by reconstructing easier high-incidence `P.O=0` sections on the exact candidate1 parent and identifying the required exact group-law difference by reduction to the historical `P2-P3` modular point. This avoids the singular direct three-node Hensel/resultant problem.
+
+The exact terminal resolved RR pencil has ambient dimension `4`, condition rank `2`, kernel dimension `2`, and `h0(D)=2`. Its exact degree-four binary quartic compiles to the specialized child `4A2+A3+A5/MW2` with smooth infinity, root rank `16`, root determinant `1944`, and Euler number `24`.
+
+The search provenance and successful marking reconstruction are in [`Q80_LOWQ_SUFFIX_PROVENANCE_2026-08-23.md`](Q80_LOWQ_SUFFIX_PROVENANCE_2026-08-23.md). The final proof summary and reproduction commands are in [`Q80_FINAL_Q6_CLOSEOUT_2026-08-23.md`](Q80_FINAL_Q6_CLOSEOUT_2026-08-23.md).
 
 ## 6. Q80 CM24 Regression Route
 
@@ -360,9 +357,7 @@ Those identities are specialization data.  In particular `P2-P3` must not be
 mistaken for a generic characteristic-zero definition of the final q6
 horizontal.
 
-The CM24 equation corridor is exact through the final q6 over `GF(73)`.  Its
-terminal frame is not rootless because the specialization has extra algebraic
-classes.  See [`Q80_CM24_EQUATION_LEDGER_2026-08-22.md`](Q80_CM24_EQUATION_LEDGER_2026-08-22.md).
+The CM24 equation corridor was first closed over `GF(73)` and is now exact in characteristic zero over `QQ(sqrt(-3))` through the terminal q6. Its terminal frame is not rootless because the specialization has extra algebraic classes. See [`Q80_CM24_EQUATION_LEDGER_2026-08-22.md`](Q80_CM24_EQUATION_LEDGER_2026-08-22.md) and [`Q80_FINAL_Q6_CLOSEOUT_2026-08-23.md`](Q80_FINAL_Q6_CLOSEOUT_2026-08-23.md).
 
 ## 7. Other useful comparison paths
 
@@ -394,8 +389,8 @@ source route.
 | route | lattice / chamber | characteristic-zero equations | intended use |
 |---|---|---|---|
 | H3 Source Route | complete to rootless/MW17 | exact through D13/MW4 | primary construction |
-| Q80 Low-q Compiler Route | complete to rootless/MW17 | exact pipeline through A1/MW16 parent; final q6 marking still to preserve/recover | secondary construction/compiler |
-| Q80 CM24 Regression Route | specialization lattice/equation corridor complete | complete over `GF(73)` | regression and module discovery |
+| Q80 Low-q Compiler Route | complete to rootless/MW17 | terminal CM24 characteristic-zero shadow exact through final q6; generic rootless endpoint remains a lattice certificate | secondary construction/compiler |
+| Q80 CM24 Regression Route | specialization lattice/equation corridor complete | complete in characteristic zero through `4A2+A3+A5/MW2` | regression and module discovery |
 | Low-q MW2 Backtrack | exact transport from MW17 to MW2 | endpoint rational model exists, but this is not the source route | reverse provenance / alternate reconstruction |
 | E6 Backtrack | exact transport from MW17 to MW3 | old guessed split chart not a transported construction | historical reverse provenance |
 | H2 Minimal-MW Comparison | exact H2->MW1 neighbor | not a target construction | structural comparison |
@@ -419,5 +414,6 @@ aliases only.
 The conceptual rule is simple:
 
 > **Backtracking discovered the geometry; source recovery selected H3; forward
-> equation reconstruction is now replaying the H3 route, with Q80 as an
-> independent compiler path to the same rootless target.**
+> equation reconstruction is replaying the H3 route, while Q80 now supplies a
+> completed independent characteristic-zero compiler/regression path through
+> its terminal CM24 specialization shadow.**
