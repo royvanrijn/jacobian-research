@@ -1,0 +1,56 @@
+{
+  "critical_factor_degrees": [
+    {
+      "degree": 1,
+      "multiplicity": 1
+    },
+    {
+      "degree": 1,
+      "multiplicity": 1
+    },
+    {
+      "degree": 1,
+      "multiplicity": 1
+    },
+    {
+      "degree": 1,
+      "multiplicity": 1
+    },
+    {
+      "degree": 1,
+      "multiplicity": 6
+    },
+    {
+      "degree": 1,
+      "multiplicity": 6
+    },
+    {
+      "degree": 2,
+      "multiplicity": 1
+    }
+  ],
+  "discriminant_gcd_chain": [
+    15,
+    10,
+    8,
+    6,
+    4,
+    2,
+    0
+  ],
+  "fast_mu_files_checked": 15,
+  "field": "QQ(sqrt(-3))",
+  "method": "factor critical polynomial and group constant critical values",
+  "mu": "-1819882875199284444414367883989957652967685350329368102462110827442379200/4050219912054933335224325523699656920691677744588383034611377129736759073*j - 149731003248864669247582057848879535227436542879247192062262117827338975/4050219912054933335224325523699656920691677744588383034611377129736759073",
+  "mu_degree_sum": 15,
+  "mu_factor_indices": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "p73_minus": 12,
+  "p73_plus": 23,
+  "version": 1
+}
