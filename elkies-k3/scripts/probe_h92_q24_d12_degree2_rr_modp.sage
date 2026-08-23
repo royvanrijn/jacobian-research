@@ -307,6 +307,9 @@ print(
     flush=True,
 )
 
+# Sage Integer instances are not JSON serializable under Python 3.14.  Keep
+# the exact Sage arithmetic above, but normalize every derived scalar at the
+# artifact boundary.
 payload={
     "schema":"elkies-k3.h3-q24-d12-modp-rr-preflight.v1",
     "status":"PASS_H3_Q24_D12_MODP_RR_PREFLIGHT",
@@ -320,15 +323,15 @@ payload={
         "vertical_root_coefficients":qe["vertical_root_coefficients"],
     },
     "infinity":{
-        "required_order":required,
-        "marked_chord_order":m_inf,
-        "A_max_degree":Amax,
-        "B_max_degree":Bmax,
-        "ambient_dimension":58,
+        "required_order":int(required),
+        "marked_chord_order":int(m_inf),
+        "A_max_degree":int(Amax),
+        "B_max_degree":int(Bmax),
+        "ambient_dimension":int(len(ambient)),
     },
     "smooth_collision":{
         "modulus":"Z^2",
-        "degree":48,
+        "degree":int(modulus.degree()),
         "rank":int(rank),
         "nullity_after_collision":int(nullity),
     },
@@ -339,7 +342,7 @@ payload={
         "P_reduction":[int(x0),int(y0)],
         "marked_chord_node_residue":int(F(node_m(0))),
         "ordinary_jet_ranks_diagnostic":jet_ranks,
-        "required_resolved_codimension":8,
+        "required_resolved_codimension":int(needed),
     },
     "next":(
         "Resolve the actual I9* fibre of the canonical D13 equation, identify "
