@@ -15,12 +15,19 @@ separates four questions that were repeatedly conflated during the reconstructio
 The answers are not the same:
 
 - **H3 is the recovered source family.**
-- **The current H3-to-MW17 chain is one selected certified corridor.**
-- **It has not been proved shortest, globally optimal, or cheapest to compile.**
+- **The preferred H3 continuation is now the q24-native corridor pinned to the
+  equation-side `D24eq` D12 frame.**
+- **The native D12 -> A1 suffix is exact at lattice/root-Weyl level, but its downstream
+  characteristic-zero equations have not thereby been constructed.**
+- **The selected H3-to-MW17 chain has not been proved shortest, globally optimal, or
+  cheapest to compile.**
 - **Q80 is an independent comparison/compiler route, not the source family.**
+- **q32 is retained as an alternate/regression route; it is no longer preferred over
+  the viable q24-native H3 path.**
 
 The executable index is [`scripts/README.md`](scripts/README.md); archived experiments
-are classified in [`scripts/archive/README.md`](scripts/archive/README.md).
+are classified in [`scripts/archive/README.md`](scripts/archive/README.md). The current
+route priority is stated explicitly in [`H3_PREFERRED_PATH.md`](H3_PREFERRED_PATH.md).
 
 ## 1. What we started with
 
@@ -115,7 +122,7 @@ route from that source to the rootless fibration.
 
 ## 3. The selected H3 degree-two corridor
 
-The currently certified lattice/chamber chain is
+The selected lattice/chamber chain is
 
 ```text
 H3 E7+E8/MW2
@@ -162,21 +169,66 @@ dominate.
   presentation. The first rank growth is q24.
 - The q24 shell has **three** primitive orbits with `D12/MW5` root data. Orbit 85 was
   preferred because of its root/MW projection and chamber behaviour; that does not prove
-  it is the easiest equation child.
-- The later chain uses deterministic degree-two first hits from **that one selected
-  root-adapted frame**.
+  it is the easiest possible equation child.
+- The downstream preferred suffix is no longer justified merely by matching ADE labels
+  to an older/historical frame. Commit `bfb96bf526b0b289e12d531e7aff697cae5f39c6`
+  exports the equation-side q24 D12 frame as `D24eq` and replays the suffix directly from
+  that frame.
 
 Consequently the chain proves existence, integral transport, and nef degree-two pencils.
-It does not rule out:
+It does not rule out another route that is symbolically cheaper, but route selection is
+no longer blocked by uncertainty over which D12 marking to continue from.
 
-- another q24 D12 orbit with much smaller equation data;
-- a lateral `MW4 -> MW4` move followed by an easier rank-growing exit;
-- a larger-q direct jump with lower section pole order;
-- a non-monotone route with fewer total symbolic transformations;
-- a route found by optimizing equation cost rather than immediate rank growth.
+### q24-native D12 -> A1 replay
 
-The canonical stage IDs in `CONSTRUCTION_ROUTES.md` name this selected corridor. They do
-not assert global optimality.
+The latest native replay uses
+
+```text
+scripts/export_h92_q24_native_d12_frame.sage
+scripts/run_h92_q24_native_suffix_to_a1.py
+```
+
+and starts from `D24eq`, explicitly described by the exporter as the `D12/MW5` frame
+obtained directly from q24/D13 equation-side geometry, **not** from q32 and **not** from a
+later historical D13/D12 frame.
+
+The replay uses the suffix q-sequence
+
+```text
+6, 8, 4, 4, 4, 4, 4, 4, 4
+```
+
+and reaches
+
+```text
+A11/MW6
+2A5/MW7
+3A3/MW8
+A3+2A2/MW10
+5A1/MW12
+4A1/MW13
+3A1/MW14
+2A1/MW15
+A1/MW16.
+```
+
+The terminal q4 step reports root data `(1,2,2)`, MW rank 16, and selected orbit `17593`.
+The runner's terminal status is
+
+```text
+PASS_Q24_NATIVE_D12_TO_A1
+```
+
+with local artifact
+
+```text
+artifacts/local/elkies-k3/q24-native-suffix/q24-native-d12-to-a1.json
+```
+
+**Claim boundary:** this is a pure lattice/root-Weyl replay downstream of D12. It pins
+the preferred sequence and the native marking from which equation compilation should
+continue; it does not claim that the nine downstream characteristic-zero equation
+neighbors have already been executed.
 
 ## 4. Equation progress on H3
 
@@ -218,9 +270,10 @@ derive_h92_q6_child_q8_corrected2cover_qq.sage
 certify_h92_q6_child_jacobian.sage
 ```
 
-### H3 q24: `D13/MW4` to `D12/MW5`
+### H3 q24: `D13/MW4` to native `D12/MW5`
 
-The lattice/chamber arrow is exact; the equation arrow is the current frontier.
+The lattice/chamber arrow is exact and the preferred child is orbit 85. The equation
+arrow remains the nearest characteristic-zero frontier.
 
 `scripts/close_h92_q8_q24_by_q6_translation.sage` closes the exact marking/NS bridge.
 `scripts/recover_h92_q24_exact_by_qq_trace_interpolation.sage` transports the selected
@@ -235,9 +288,14 @@ with the high pole profile handled through trace interpolation rather than a dir
 symbolic group-law expression. The script enforces denominator-square and RHS-square
 structure and an independent finite-field check.
 
-Claim boundary: this is not yet a completed characteristic-zero `D12/MW5` equation.
-Still required are a pinned exact RR pencil, quartic/Jacobian compilation, minimal model,
-fibre classification, and marked transport certificate.
+The new native suffix result changes the **route decision**, not this proof boundary:
+once the q24 D12 equation is fully certified, continue from its `D24eq` marking along the
+native q6/q8/q4 suffix rather than switching to q32 or identifying with a historical D12
+frame.
+
+Still required for the q24 equation arrow are a pinned exact RR pencil,
+quartic/Jacobian compilation, minimal model, fibre classification, and marked transport
+certificate unless separately supplied by a later exact certificate.
 
 ## 5. Q80: why it exists and what it proves
 
@@ -297,7 +355,9 @@ section directly.
 | CRT normalize modulo `Nx` without `Dx` | Left a hidden vertical pole and fake degree growth. | old q-frame probes. | Clear the whole rational expression before normalization. |
 | Direct singular Hensel lift of the hard q6/q8/Q80 section | Non-transverse coordinates caused unstable or very slow lifting. | q6 third-section and Q80 local-73 diagnostics. | Exact section descent, trace interpolation, or differences of easier exact sections. |
 | CM24 endpoint can stand in for the generic Q80 endpoint | Extra CM algebraic classes change the fibre/root data. | exact CM24 equation ledger. | Keep generic rootless lattice certificate and CM24 equation shadow as separate claims. |
-| First rank-growing neighbour is automatically best | Lattice search optimized immediate rank growth and degree, not equation complexity. | D13 q24 and later first-hit scripts. | Preserve selected corridor as fallback; separately search an equation-cost neighbour graph. |
+| First rank-growing neighbour is automatically best | Lattice search optimized immediate rank growth and degree, not equation complexity. | D13 q24 and later first-hit scripts. | Keep alternative searches available, but use the now-native q24 suffix as the default H3 route while it remains viable. |
+| q32 D12 should become the preferred H3 continuation because its modular compiler is convenient | q32 gave useful modular quartic/spinor-marking diagnostics, but it introduces a different D12 route and does not improve the source provenance. The q24-native `D24eq` frame now replays exactly to A1. | q32 signature, spinor-quartic and pointed-section experiments. | Demote q32 to alternate/regression work; compile the native q24 `D24eq` suffix. |
+| A historical D12 frame with the same ADE/MW label can stand in for the q24 equation-side D12 | Equal root data does not identify the marked elliptic fibration. | historical suffix searches and frame comparisons. | `export_h92_q24_native_d12_frame.sage` + `run_h92_q24_native_suffix_to_a1.py`. |
 
 ## 7. What was deliberately kept
 
@@ -312,17 +372,35 @@ Only five byte-identical ` (1)` archive copies were removed. No unique historica
 was deleted, and no broad root-to-archive move was made because existing notes and shell
 commands still refer to several historical root scripts.
 
+The q32 experiments should likewise remain available: the spinor-point/pointed-quartic
+work is a useful general marking-recovery technique even though q32 is no longer the
+preferred H3 continuation.
+
 ## 8. What should be done next
 
 ### Primary equation work
 
-Complete the selected H3 q24 arrow to an exact `D12/MW5` equation certificate. It is the
-nearest continuation of the already exact H3 q6/q8 source route.
+Complete the selected H3 q24 arrow to an exact native `D12/MW5` equation certificate.
+Then continue **from that same `D24eq` marking** along the now-pinned native suffix:
+
+```text
+D12 --q6--> A11 --q8--> 2A5
+    --q4--> 3A3 --q4--> A3+2A2
+    --q4--> 5A1 --q4--> 4A1 --q4--> 3A1
+    --q4--> 2A1 --q4--> A1 --q6--> R17.
+```
+
+At each equation step retain the zero section, the horizontal marked section/divisor,
+resolved-component data, and the base-coordinate normalization needed by the next
+neighbor. Do not canonicalize away markings merely because the Jacobian is isomorphic.
 
 ### Parallel route optimization
 
-Do not assume orbit 85 and the monotone rank-growing suffix are optimal. Search a marked
-neighbour graph from exact `D13/MW4` with a cost model that includes:
+Alternative routes remain scientifically useful, but they are now secondary to executing
+the native q24 path. Search/compare them when the native equation compiler hits a
+specific obstruction or when they provide a reusable compiler technique.
+
+A route-cost model should still include:
 
 ```text
 old-fibre degree
@@ -334,15 +412,6 @@ marking transport size
 availability of easy exact sections
 expected quartic/Jacobian complexity.
 ```
-
-At minimum compare:
-
-- all three q24 `D12/MW5` children;
-- the known lateral q4 `A12+A1/MW4` presentation and its exits;
-- higher-q D13 neighbours beyond the first rank-growing shell;
-- multi-step paths that temporarily keep MW rank constant.
-
-A longer lattice path can be much shorter symbolically.
 
 ### Documentation discipline
 
