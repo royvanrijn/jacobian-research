@@ -33709,6 +33709,32 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-H3-Q24-EXACT-SECTION",
+      "kind": "example",
+      "state": "proved",
+      "title": "Exact H3 D13 q24 horizontal section over QQ",
+      "scope": "For the selected H3 D13/MW4 orbit85 q24 continuation, the modular degree-46 section at p=100003 is lifted by a structured 24-by-24 p-adic Newton system from precision 2048 to precision 8192. Rational reconstruction resolves all 156 live section coefficients with 136067 modulus bits, and the resulting characteristic-zero section satisfies the exact Weierstrass identity and the modular regression. The exported section has deg(Z,X,Y)=(24,52,78) and affine denominator degrees (48,72). This proves the exact horizontal q24 section only; it does not yet construct the D12/MW5 child equation, resolved-RR pencil, binary-quartic Jacobian, fibre certificate, or later corridor hops.",
+      "canonical_source": "REPRODUCE.md",
+      "dependencies": [
+        "EC-K3-H3-Q8-QQ-D13",
+        "EC-K3-H3-D13-MW17-LATTICE-CHAIN"
+      ],
+      "checker": "elkies-k3/scripts/lift_q24_structured_newton.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3d3d425b933a3125b39123dc28a3a40c3e35fd195e4bc3a27237da80da92360c",
+      "software_lock": ["elkies-k3/scripts/lift_q24_structured_newton.sage", "artifacts/local/elkies-k3/q8-q24-horizontal-section-qq.json"],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-H3-D13-MW17-LATTICE-CHAIN",
       "kind": "example",
       "state": "proved",

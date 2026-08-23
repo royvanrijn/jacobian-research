@@ -1895,9 +1895,34 @@ preferred orbit 85 is component-nef without reflections, and the chamber
 checker proves full nefness from an empty shifted MW ball of radius squared
 two plus the degree-two bisection parity identity.  The q=24 artifact SHA-256
 is `66d5a7ff6ec26f8aa8344cdbd779a6c96707b041ba4f89d7dbfe460c95485a93`.
-Thus the exact constructive prefix is now
+Thus the exact lattice/chamber prefix is now
 `MW2 --q6--> MW3 --q8--> MW4 --q24--> MW5`, with every geometric step of
 old-fiber degree two.
+
+The equation-side q24 horizontal section is also now exact.  It is recovered
+from the modular degree-46 q24 section by the structured 24-by-24 Newton lift,
+not by the failed rational trace interpolation path:
+
+```bash
+sage -python elkies-k3/scripts/lift_q24_structured_newton.sage --precision 8192
+```
+
+Expected terminal lines include:
+
+```text
+Q24STRUCT_RECON|resolved=156/156|complete=1|modulus_bits=136067|status=PASS
+Q24STRUCT_RESULT|identity=PASS|modp=PASS|...|status=PASS_EXACT_Q24
+```
+
+The p-adic checkpoint is
+`artifacts/local/elkies-k3/q24-structured-hensel-p8192.json`, with status
+`PASS_Q24_STRUCTURED_HENSEL`.  The exact characteristic-zero section is
+`artifacts/local/elkies-k3/q8-q24-horizontal-section-qq.json`, with status
+`PASS_EXACT_Q24_HORIZONTAL_SECTION`; it has `deg(Z,X,Y)=(24,52,78)` and
+rational affine denominators of degrees `(48,72)`.  This proves the exact q24
+horizontal section only.  The D12 equation-level child still requires the
+resolved-RR QQ compiler, binary-quartic Jacobian, and D12/MW5 fibre
+certificate.
 
 The same root-adapted quotient search continues through three further
 rank-growing degree-two steps.  The selected path is reproduced by:
