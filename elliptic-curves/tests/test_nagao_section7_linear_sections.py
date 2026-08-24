@@ -10,7 +10,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
 CAS = ROOT / "elliptic-curves/cas"
-GENERATED = ROOT / "artifacts/generated-results"
+GENERATED = ROOT / "artifacts/generated-results/elliptic-curves"
 sys.path.insert(0, str(CAS))
 
 from nagao_1994 import (  # noqa: E402

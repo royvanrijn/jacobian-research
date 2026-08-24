@@ -29,8 +29,8 @@ eigenspace has rank 3. No specialization search was run.
 
 The two official arXiv inventories and their semantic markers are independently
 replayed by
-`elliptic-curves/cas/audit_elkies_rank18_sources.py`; its pinned artifact is
-`artifacts/generated-results/elliptic_elkies_rank18_source_audit.json`.
+`archive/elliptic-curves/cas/audit_elkies_rank18_sources.py`; its pinned artifact is
+`archive/elliptic-curves/artifacts/generated-results/elliptic_elkies_rank18_source_audit.json`.
 
 ## Keio lecture archive
 
@@ -113,7 +113,7 @@ Y^2 = X^3 - 33*X + t^6 + 8/t^6,
 ```
 
 over `Q(i,sqrt(2),3^(1/4))`. The exact finite-fibre Galois/lattice audit in
-`elliptic-curves/cas/audit_kumar_kuwata_f6_galois.py` finds:
+`archive/elliptic-curves/cas/audit_kumar_kuwata_f6_galois.py` finds:
 
 - fixed rank 5 for the original curve over `Q(t)`;
 - quadratic-character ranks `3,2,2,1,1,0,0`, specifically
@@ -140,8 +140,8 @@ It likewise supplies no rank-15 guarantee over `Q(t)`.
 ## Replay
 
 ```sh
-.venv/bin/python elliptic-curves/cas/audit_kumar_kuwata_f6_galois.py \
-  --output artifacts/generated-results/elliptic_kumar_kuwata_f6_galois.json
+.venv/bin/python archive/elliptic-curves/cas/audit_kumar_kuwata_f6_galois.py \
+  --output archive/elliptic-curves/artifacts/generated-results/elliptic_kumar_kuwata_f6_galois.json
 .venv/bin/python -m unittest \
   elliptic-curves/tests/test_kumar_kuwata_f6_galois_audit.py
 ```

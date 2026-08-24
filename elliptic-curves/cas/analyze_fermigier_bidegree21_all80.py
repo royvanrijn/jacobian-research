@@ -50,7 +50,7 @@ from analyze_fermigier_exceptional_transport import (
 
 Q = Fraction
 OUTPUT_RELATIVE = Path(
-    "artifacts/generated-results/elliptic_fermigier_bidegree21_all80.json"
+    "artifacts/generated-results/elliptic-curves/elliptic_fermigier_bidegree21_all80.json"
 )
 MODULAR_PRIMES = (101, 103, 107, 109, 113, 127, 131)
 FAMILY_COEFFICIENTS = (

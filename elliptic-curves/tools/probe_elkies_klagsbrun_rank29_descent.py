@@ -34,7 +34,7 @@ from elkies_klagsbrun_rank29 import (  # noqa: E402
 )
 
 
-DEFAULT_OUTPUT = REPOSITORY / "artifacts/generated-results/elliptic_elkies_klagsbrun_rank29_descent_probe.json"
+DEFAULT_OUTPUT = REPOSITORY / "archive/elliptic-curves/artifacts/generated-results/elliptic_elkies_klagsbrun_rank29_descent_probe.json"
 REPRODUCING_COMMAND = (
     "PYTHONPATH=elliptic-curves/cas .venv/bin/python "
     "elliptic-curves/tools/probe_elkies_klagsbrun_rank29_descent.py"

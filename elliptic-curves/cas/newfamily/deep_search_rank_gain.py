@@ -76,7 +76,7 @@ def main() -> int:
     ap.add_argument(
         "--batch",
         type=Path,
-        default=Path("artifacts/generated-results/elliptic-curves/newfamily_rank_gain_batch_v1.json"),
+        default=Path("artifacts/generated-results/elliptic-curves/newfamily_exact_subgroup_rank_gain_batch_v1.json"),
     )
     ap.add_argument("--parameter", action="append", help="specific T=a/b; repeatable")
     ap.add_argument("--min-rank", type=int, default=13)

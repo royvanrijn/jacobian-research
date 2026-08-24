@@ -82,7 +82,7 @@ POINT_STAGES = (
     ("H1000000", 1_000_000, 2),
 )
 DEFAULT_OUTPUT = Path(
-    "artifacts/generated-results/elliptic_mestre_02557104116148_power_root_crt.json"
+    "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_02557104116148_power_root_crt.json"
 )
 
 EXPECTED_DIRECT_SCRIPT_SHA256 = (

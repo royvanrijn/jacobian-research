@@ -98,7 +98,7 @@ PLAN_SCHEMA = "elliptic-curves.fermigier-rank20-direction-plan.v1"
 RESULT_SCHEMA = "elliptic-curves.fermigier-rank20-direction-search.v1"
 DEFAULT_CANDIDATE_INPUT = (
     ROOT
-    / "artifacts/generated-results/"
+    / "artifacts/generated-results/elliptic-curves/"
     "elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json"
 )
 DEFAULT_PLAN = (

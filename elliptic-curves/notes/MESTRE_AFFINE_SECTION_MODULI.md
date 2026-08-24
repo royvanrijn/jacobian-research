@@ -1176,41 +1176,41 @@ the earlier first-section-only artifact remains a smaller replay checkpoint.
 From the repository root:
 
 ```bash
-Singular -q elliptic-curves/cas/mestre_affine_section_elimination.sing
-Singular -q elliptic-curves/cas/verify_fermigier_affine_section_component.sing
-Singular -q elliptic-curves/cas/verify_fermigier_affine_section_jacobian.sing
-Singular -q elliptic-curves/cas/verify_mestre_02393128133175_moduli_fiber.sing
-Singular -q elliptic-curves/cas/audit_fermigier_component_mestre_02393128133175.sing
-Singular -q elliptic-curves/cas/verify_mestre_02595143168205_moduli_fiber.sing
+Singular -q archive/elliptic-curves/cas/mestre_affine_section_elimination.sing
+Singular -q archive/elliptic-curves/cas/verify_fermigier_affine_section_component.sing
+Singular -q archive/elliptic-curves/cas/verify_fermigier_affine_section_jacobian.sing
+Singular -q archive/elliptic-curves/cas/verify_mestre_02393128133175_moduli_fiber.sing
+Singular -q archive/elliptic-curves/cas/audit_fermigier_component_mestre_02393128133175.sing
+Singular -q archive/elliptic-curves/cas/verify_mestre_02595143168205_moduli_fiber.sing
 PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/verify_mestre_02595143168205_rank13_section.py
 PYTHONPATH=elliptic-curves/cas python3 elliptic-curves/cas/verify_mestre_02595143168205_discriminants.py
 python3 elliptic-curves/cas/probe_mestre_two_section_local_continuation.py \
   --precision 4 --bivariate-order 5 \
-  --output artifacts/generated-results/elliptic_mestre_two_section_local_continuation.json
-python3 elliptic-curves/cas/probe_mestre_transverse_two_section.py --precision 4
+  --output archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_two_section_local_continuation.json
+python3 archive/elliptic-curves/cas/probe_mestre_transverse_two_section.py --precision 4
 PYTHONPATH=elliptic-curves/cas python3 \
-  elliptic-curves/cas/verify_mestre_transverse_two_section_component.py
+  archive/elliptic-curves/cas/verify_mestre_transverse_two_section_component.py
 PYTHONPATH=elliptic-curves/cas python3 \
-  elliptic-curves/cas/audit_mestre_transverse_two_section_specialization.py
+  archive/elliptic-curves/cas/audit_mestre_transverse_two_section_specialization.py
 PYTHONPATH=elliptic-curves/cas python3 \
-  elliptic-curves/cas/verify_mestre_transverse_two_section_conic_component.py
+  archive/elliptic-curves/cas/verify_mestre_transverse_two_section_conic_component.py
 PYTHONPATH=elliptic-curves/cas python3 \
-  elliptic-curves/cas/audit_mestre_transverse_conic_component_relations.py
+  archive/elliptic-curves/cas/audit_mestre_transverse_conic_component_relations.py
 PYTHONPATH=elliptic-curves/cas .venv/bin/python \
-  elliptic-curves/cas/verify_mestre_transverse_conic_component_generic_relations.py \
+  archive/elliptic-curves/cas/verify_mestre_transverse_conic_component_generic_relations.py \
   --include-second
 PYTHONPATH=elliptic-curves/cas python3 \
-  elliptic-curves/cas/screen_mestre_transverse_conic_component_independence.py \
+  archive/elliptic-curves/cas/screen_mestre_transverse_conic_component_independence.py \
   --root-height 5 --parameter-height 5 --prime-bound 101
 PYTHONPATH=elliptic-curves/cas python3 \
   elliptic-curves/cas/screen_mestre_two_section_transverse_seeds.py --output \
-  artifacts/generated-results/elliptic_mestre_two_section_seed_screen_max200.json
+  archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_two_section_seed_screen_max200.json
 PYTHONPATH=elliptic-curves/cas python3 \
   elliptic-curves/cas/screen_mestre_two_section_transverse_seeds.py --all-primes --output \
-  artifacts/generated-results/elliptic_mestre_two_section_seed_screen_max200_all_primes.json
+  archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_two_section_seed_screen_max200_all_primes.json
 PYTHONPATH=elliptic-curves/cas python3 \
-  elliptic-curves/cas/audit_mestre_multprime_seed_classification.py --output \
-  artifacts/generated-results/elliptic_mestre_two_section_seed_screen_max200_all_primes_classification.json
+  archive/elliptic-curves/cas/audit_mestre_multprime_seed_classification.py --output \
+  archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_two_section_seed_screen_max200_all_primes_classification.json
 python3 -m unittest elliptic-curves/tests/test_mestre_02595143168205_rank13.py
 ```
 

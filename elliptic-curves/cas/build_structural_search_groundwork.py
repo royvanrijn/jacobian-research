@@ -29,20 +29,20 @@ from structural_search import (
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_OUTPUT = (
     ROOT
-    / "artifacts/generated-results/elliptic_structural_search_groundwork.json"
+    / "artifacts/generated-results/elliptic-curves/elliptic_structural_search_groundwork.json"
 )
 R20_ARTIFACT = (
     ROOT
-    / "artifacts/generated-results/"
+    / "artifacts/generated-results/elliptic-curves/"
     "elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json"
 )
 FERMIGIER_GENERIC_ARTIFACT = (
     ROOT
-    / "artifacts/generated-results/elliptic_fermigier_generic_rank_exact.json"
+    / "artifacts/generated-results/elliptic-curves/elliptic_fermigier_generic_rank_exact.json"
 )
 FERMIGIER_TRANSPORT_ARTIFACT = (
     ROOT
-    / "artifacts/generated-results/elliptic_fermigier_exceptional_transport.json"
+    / "artifacts/generated-results/elliptic-curves/elliptic_fermigier_exceptional_transport.json"
 )
 
 

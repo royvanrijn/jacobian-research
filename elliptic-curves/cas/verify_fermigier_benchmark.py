@@ -106,6 +106,7 @@ def build_parser() -> argparse.ArgumentParser:
         default=root
         / "artifacts"
         / "generated-results"
+        / "elliptic-curves"
         / "elliptic_fermigier_benchmark.json",
     )
     parser.add_argument("--timeout", type=float, default=60.0)

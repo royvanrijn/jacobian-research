@@ -40,7 +40,7 @@ one of the following:
   construction data.
 
 The earlier pinned source audit
-[`elliptic_rank30_public_source_audit.json`](../../artifacts/generated-results/elliptic_rank30_public_source_audit.json)
+[`elliptic_rank30_public_source_audit.json`](../../archive/elliptic-curves/artifacts/generated-results/elliptic_rank30_public_source_audit.json)
 predates curve 273.  It remains useful for the rank-29 construction history,
 but its conclusion that no public rank-30 curve was available has been
 superseded by the 2026-08-20 record.
@@ -685,7 +685,7 @@ Curve 273 is not a direct rational fiber of this particular discriminant-43
 anchor.  Clearing denominators in `j_anchor(t)=j_273` gives `t^6` times an
 irreducible polynomial of degree ten; `t=0` is the singular `I0*` fiber, so
 there are no smooth rational solutions.  This exact exclusion is checked by
-[`../cas/verify_curve273_not_disc43_anchor_fiber.sage`](../cas/verify_curve273_not_disc43_anchor_fiber.sage).
+[`verify_curve273_not_disc43_anchor_fiber.sage`](../../archive/elliptic-curves/cas/verify_curve273_not_disc43_anchor_fiber.sage).
 It does **not** exclude curve 273 from the determinant-948 family containing
 the anchor as a special K3: that question has an additional family parameter
 which has not yet been reconstructed.

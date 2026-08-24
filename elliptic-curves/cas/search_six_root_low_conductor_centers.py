@@ -80,7 +80,7 @@ SEEDS = (
         (0, 25, 57, 104, 116, 148),
         Q(62, 35),
         1_000_000,
-        "artifacts/generated-results/"
+        "archive/elliptic-curves/artifacts/generated-results/"
         "elliptic_mestre_02557104116148_t62_35_rank16_certificate.json",
         16,
         12,
@@ -90,7 +90,7 @@ SEEDS = (
         (0, 2, 136, 217, 261, 290),
         Q(2),
         5_000,
-        "artifacts/generated-results/"
+        "archive/elliptic-curves/artifacts/generated-results/"
         "elliptic_mestre_02136217261290_t2_rank15_certificate.json",
         15,
         11,
@@ -657,8 +657,8 @@ def build_slice_records(seed: Seed, analysis: dict[str, Any], *, height_bound: i
 
 
 def load_census_roots() -> tuple[tuple[int, ...], ...]:
-    max200_path = ROOT / "artifacts/generated-results/elliptic_mestre_root_tuple_scale_max200_census.json"
-    max300_path = ROOT / "artifacts/generated-results/elliptic_mestre_root_tuple_scale_max300_census.json"
+    max200_path = ROOT / "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_root_tuple_scale_max200_census.json"
+    max300_path = ROOT / "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_root_tuple_scale_max300_census.json"
     max200 = json.loads(max200_path.read_text())
     max300 = json.loads(max300_path.read_text())
     roots = [
@@ -1097,10 +1097,10 @@ def main() -> None:
             "script_sha256": sha256_file(Path(__file__).resolve()),
             "reproducing_command": "PYTHONPATH=elliptic-curves/cas python3 " + " ".join(sys.argv),
             "max200_census_sha256": sha256_file(
-                ROOT / "artifacts/generated-results/elliptic_mestre_root_tuple_scale_max200_census.json"
+                ROOT / "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_root_tuple_scale_max200_census.json"
             ),
             "max300_census_sha256": sha256_file(
-                ROOT / "artifacts/generated-results/elliptic_mestre_root_tuple_scale_max300_census.json"
+                ROOT / "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_root_tuple_scale_max300_census.json"
             ),
         },
         "software": {"python": platform.python_version(), "platform": platform.platform()},

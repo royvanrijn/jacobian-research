@@ -33,7 +33,7 @@ import search_mestre_dsquare_four as search
 Q = Fraction
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_OUTPUT = (
-    ROOT / "artifacts/generated-results/elliptic_mestre_dsquare_rank19_frontiers.json"
+    ROOT / "artifacts/generated-results/elliptic-curves/elliptic_mestre_dsquare_rank19_frontiers.json"
 )
 FRONTIERS = (
     {

@@ -1,40 +1,42 @@
-# Elliptic-curve reference artifacts
+# Active elliptic-curve artifacts
 
-This subdirectory contains compact pinned outputs for the separate
-[elliptic-curve programme](../../../elliptic-curves/README.md). Raw searches
-and restart checkpoints belong under the ignored
-`artifacts/local/elliptic-curves/` directory.
+This directory is the complete active artifact surface for
+[`elliptic-curves/`](../../../elliptic-curves/README.md). It contains 52 pinned
+JSON artifacts. Exploratory outputs and superseded results live in the
+[`archive`](../../../archive/elliptic-curves/README.md); large or resumable
+runs belong under the ignored `artifacts/local/elliptic-curves/` directory.
 
-The JSON manifests are generated and replayed by commands in the programme's
-[reproduction catalogue](../../../elliptic-curves/REPRODUCE.md).
+[`CATALOG.tsv`](CATALOG.tsv) is the index. Every row gives the exact SHA-256,
+an evidence label, the governing `MATH_STATUS.json` identifier when one
+exists, and a one-line scope statement. The evidence labels are deliberately
+strict:
 
-`icarm_curve273_rank30_v1.json` pins the 2026 public rank-record curve and all
-30 displayed rational points. Exact finite good-reduction quotients give a
-full-column-rank binary matrix, while a separate modulo-23 2-division witness
-excludes rational 2-torsion. It proves `rank >= 30` unconditionally. The
-numerical height determinant is diagnostic only; no unconditional exact-rank
-or rank-31 claim is made. A second Sage implementation independently replays
-the finite groups and discrete logarithms.
+- `theorem-certificate`, `exact-rank-certificate`, and
+  `exact-lower-bound-certificate` are proof-bearing;
+- `conditional-bound` states its hypothesis;
+- `exact-computation` proves only the calculation described;
+- `bounded-experiment` never promotes a negative search to a theorem;
+- `partial-reproduction` records precisely what remains dependent on a public
+  source or missing local replay;
+- `source-transcription`, `reproducibility-fixture`, and `search-plan` carry no
+  mathematical conclusion by themselves.
 
-`newfamily_rank14_t83_6_v1.json` records the six-root quartic specialization
-`T=83/6` for roots `(-47,-43,-31,30,45,46)`. Exact baseline-first eclib
-processing gives the eleven known hidden sections rank 11 and three further
-independent rational points raising the processed subgroup rank to 14. It
-therefore proves `rank >= 14`; it does **not** prove `rank = 14` or full
-saturation. The interpretation and exact point coordinates are documented in
-[`NEWFAMILY_RANK14_T83_6.md`](../../../elliptic-curves/notes/NEWFAMILY_RANK14_T83_6.md).
+Important distinctions made explicit by the catalogue:
 
-`crt_lattice_calibration_v1.json` is an exact low-rank mechanism calibration.
-`fermigier_crt_seed_v1.json` is an exact local seed in a high-generic-rank
-family, but deliberately has neither a global-conductor result nor a rank
-certificate. Neither of those two artifacts is evidence that a target has
-been reached.
+- `icarm_curve302_rank31_v1.json.gz` proves rank at least 31, not exact rank 31.
+- The ICARM 285/286 analysis exactly proves independence of 21 displayed
+  points, but their conductor values still come from the public source.
+- `newfamily_rank14_t83_6_v1.json` proves only rank at least 14; the separate
+  `newfamily_rank14_t83_6_pari_exact_rank_v1.json` supplies the PARI interval
+  `[14,14]` used for the exact-rank statement.
+- Bounded Fermigier searches are indexed as experiments even when every
+  calculation inside the declared box is exact.
 
-`fermigier_rank_certificates_v1.json` exactly certifies twelve generic section
-differences and the 22 published E22 points; it proves rank lower bounds but no
-upper bound or saturation statement.
+Run the catalogue/archive integrity check with:
 
-`fermigier_rank20_near_miss_v1.json` pins a bounded point search at
-`u=28917/20`, an exact 20-point independence certificate, and an exact
-conductor below the programme cutoff. It remains one point short of the
-rank-at-least-21 target.
+```sh
+python3 elliptic-curves/scripts/audit_artifact_catalog.py
+```
+
+The pre-cleanup bytes and every provenance-only refresh are recorded under
+[`archive/elliptic-curves/`](../../../archive/elliptic-curves/README.md).

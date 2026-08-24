@@ -13,8 +13,8 @@
   },
   "inputs": {
     "census_sources": [
-      "artifacts/generated-results/elliptic_mestre_root_tuple_scale_max200_census.json",
-      "artifacts/generated-results/elliptic_mestre_root_tuple_scale_max300_census.json"
+      "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_root_tuple_scale_max200_census.json",
+      "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_root_tuple_scale_max300_census.json"
     ],
     "fermigier_control_roots": [
       0,
@@ -24,12 +24,12 @@
       981,
       1036
     ],
-    "target_source": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_281_282_285_286.json",
+    "target_source": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json",
     "target_source_sha256": "b722a795491fa96755506b53c8261194ad1bcff28d253f5638a643dc11c12ac4"
   },
   "repository_model_scan": {
     "interpretation": "Equal j is necessary but not sufficient for Q-isomorphism. Absence of an equal-j vector excludes a repository-stored Q-isomorphic copy; listed equal-j records still require twist/isomorphism checking.",
-    "json_files_with_nonsingular_five_vectors": 352,
+    "json_files_with_nonsingular_five_vectors": 337,
     "matches_by_exact_j": {
       "273": [
         {
@@ -47,12 +47,12 @@
       ],
       "281": [
         {
-          "json_pointer": "/curves/3/ainvs",
-          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_281_282_285_286.json"
+          "json_pointer": "/curves/0/independence_certificate/short_model",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_independence_analysis_v1.json"
         },
         {
-          "json_pointer": "/curves/0/independence_certificate/short_model",
-          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_sequence_analysis.json"
+          "json_pointer": "/curves/3/ainvs",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json"
         },
         {
           "json_pointer": "/targets/281/ainvs",
@@ -61,12 +61,12 @@
       ],
       "282": [
         {
-          "json_pointer": "/curves/2/ainvs",
-          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_281_282_285_286.json"
+          "json_pointer": "/curves/1/independence_certificate/short_model",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_independence_analysis_v1.json"
         },
         {
-          "json_pointer": "/curves/1/independence_certificate/short_model",
-          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_sequence_analysis.json"
+          "json_pointer": "/curves/2/ainvs",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json"
         },
         {
           "json_pointer": "/targets/282/ainvs",
@@ -75,12 +75,12 @@
       ],
       "285": [
         {
-          "json_pointer": "/curves/0/ainvs",
-          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_281_282_285_286.json"
+          "json_pointer": "/curves/2/independence_certificate/short_model",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_independence_analysis_v1.json"
         },
         {
-          "json_pointer": "/curves/2/independence_certificate/short_model",
-          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_sequence_analysis.json"
+          "json_pointer": "/curves/0/ainvs",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json"
         },
         {
           "json_pointer": "/targets/285/ainvs",
@@ -89,12 +89,12 @@
       ],
       "286": [
         {
-          "json_pointer": "/curves/1/ainvs",
-          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_281_282_285_286.json"
+          "json_pointer": "/curves/3/independence_certificate/short_model",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_independence_analysis_v1.json"
         },
         {
-          "json_pointer": "/curves/3/independence_certificate/short_model",
-          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_sequence_analysis.json"
+          "json_pointer": "/curves/1/ainvs",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json"
         },
         {
           "json_pointer": "/targets/286/ainvs",
@@ -102,7 +102,7 @@
         }
       ]
     },
-    "nonsingular_five_vectors_tested": 18930
+    "nonsingular_five_vectors_tested": 15548
   },
   "reproducing_command": "python3 elliptic-curves/cas/analyze_icarm_construction_fingerprints.py",
   "schema": "elliptic-curves.icarm-construction-fingerprints.v1",

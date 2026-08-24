@@ -126,7 +126,7 @@ it does not decide whether the geometric rank is twelve or thirteen.
 The complete replay is
 [`verify_fermigier_generic_rank_exact.py`](../cas/verify_fermigier_generic_rank_exact.py),
 with its pinned output in
-[`elliptic_fermigier_generic_rank_exact.json`](../../artifacts/generated-results/elliptic_fermigier_generic_rank_exact.json).
+[`elliptic_fermigier_generic_rank_exact.json`](../../artifacts/generated-results/elliptic-curves/elliptic_fermigier_generic_rank_exact.json).
 
 ## Exceptional quotients and two-anchor transport
 
@@ -194,7 +194,7 @@ or rational points on the resulting higher-genus curves.  The replay and its
 machine-readable manifest are
 [`analyze_fermigier_exceptional_transport.py`](../cas/analyze_fermigier_exceptional_transport.py)
 and
-[`elliptic_fermigier_exceptional_transport.json`](../../artifacts/generated-results/elliptic_fermigier_exceptional_transport.json).
+[`elliptic_fermigier_exceptional_transport.json`](../../artifacts/generated-results/elliptic-curves/elliptic_fermigier_exceptional_transport.json).
 
 The representative choice has also been enlarged exactly.  In the E22
 exceptional quotient, all 200 signed vectors of support at most two in the ten
@@ -208,7 +208,7 @@ the original representative choice throughout this complete signed
 support-at-most-two ball.  The exact replay is
 [`classify_fermigier_exceptional_quotient_ball.py`](../cas/classify_fermigier_exceptional_quotient_ball.py),
 with artifact
-[`elliptic_fermigier_exceptional_quotient_ball.json`](../../artifacts/generated-results/elliptic_fermigier_exceptional_quotient_ball.json).
+[`elliptic_fermigier_exceptional_quotient_ball.json`](../../artifacts/generated-results/elliptic-curves/elliptic_fermigier_exceptional_quotient_ball.json).
 
 A first genuinely nonlinear interpolation was classified for the independent
 pair \(P_{13}\times R20E1\).  In the finite denominator chart the complete
@@ -231,7 +231,7 @@ pairs are handled by the complete replay below.
 The bounded exact pilot is
 [`analyze_fermigier_bidegree21_pilot.py`](../cas/analyze_fermigier_bidegree21_pilot.py),
 with artifact
-[`elliptic_fermigier_bidegree21_p13_r20e1_pilot.json`](../../artifacts/generated-results/elliptic_fermigier_bidegree21_p13_r20e1_pilot.json).
+[`elliptic_fermigier_bidegree21_p13_r20e1_pilot.json`](../../artifacts/generated-results/elliptic-curves/elliptic_fermigier_bidegree21_p13_r20e1_pilot.json).
 
 The same classification has now been completed for all
 \(10\cdot8=80\) independent cross-anchor pairs.  Across their 400 rational
@@ -245,7 +245,7 @@ classify rational points on the irreducible degree-32 curves or their
 intersections.  The complete replay is
 [`analyze_fermigier_bidegree21_all80.py`](../cas/analyze_fermigier_bidegree21_all80.py),
 with artifact
-[`elliptic_fermigier_bidegree21_all80.json`](../../artifacts/generated-results/elliptic_fermigier_bidegree21_all80.json).
+[`elliptic_fermigier_bidegree21_all80.json`](../../artifacts/generated-results/elliptic-curves/elliptic_fermigier_bidegree21_all80.json).
 
 For the pilot pair's irreducible degree-32 component, a separate exact
 projective sieve covers every primitive \((C:K:D)\) with \(D\ge0\) and
@@ -258,7 +258,7 @@ one nonlinear component, not a rational-point theorem for that curve or the
 other 79 components.  The replay is
 [`search_fermigier_bidegree21_nonlinear_points.py`](../cas/search_fermigier_bidegree21_nonlinear_points.py),
 with artifact
-[`elliptic_fermigier_bidegree21_p13_r20e1_nonlinear_points_h1024.json`](../../artifacts/generated-results/elliptic_fermigier_bidegree21_p13_r20e1_nonlinear_points_h1024.json).
+[`elliptic_fermigier_bidegree21_p13_r20e1_nonlinear_points_h1024.json`](../../artifacts/generated-results/elliptic-curves/elliptic_fermigier_bidegree21_p13_r20e1_nonlinear_points_h1024.json).
 
 The 3,160 genuine pair covers were also searched directly, testing the two
 square conditions separately rather than using their product.  In the exact
@@ -270,7 +270,7 @@ for that box, not a global rational-point theorem on the genus-nine covers.
 The replay and manifest are
 [`search_fermigier_exceptional_pair_simultaneous_h200000.py`](../cas/search_fermigier_exceptional_pair_simultaneous_h200000.py)
 and
-[`elliptic_fermigier_exceptional_pair_simultaneous_h200000.json`](../../artifacts/generated-results/elliptic_fermigier_exceptional_pair_simultaneous_h200000.json).
+[`elliptic_fermigier_exceptional_pair_simultaneous_h200000.json`](../../artifacts/generated-results/elliptic-curves/elliptic_fermigier_exceptional_pair_simultaneous_h200000.json).
 
 ## Exact independence certificates
 
@@ -393,7 +393,7 @@ model and conductor, and the twenty finite-reduction rows.  It proves rank at
 least 20, not rank 21; it supplies no upper bound or saturation theorem.
 
 The specialization now also has a canonical candidate record at
-[`elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json`](../../artifacts/generated-results/elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json).
+[`elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json`](../../artifacts/generated-results/elliptic-curves/elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json).
 Its stable identity is `fermigier-mestre-v1:u=28917/20`; the literal shift
 `T=28917/10` and their negatives are aliases, not separate candidates.  The
 record joins the generalized, quartic-Jacobian, short, and global-minimal

@@ -25,7 +25,7 @@ Q = Fraction
 
 class NagaoRank17FrontierCertificateTests(unittest.TestCase):
     def setUp(self) -> None:
-        generated = ROOT / "artifacts/generated-results"
+        generated = ROOT / "archive/elliptic-curves/artifacts/generated-results"
         self.input_paths = (
             generated / "elliptic_nagao_rank13_rank_gain_search.json",
             generated / "elliptic_nagao_rank13_rank_gain_mutations.json",
@@ -53,7 +53,7 @@ class NagaoRank17FrontierCertificateTests(unittest.TestCase):
             exact_log_conductor_certificate(10**80)
 
     def test_generated_artifact_contains_exact_certificates_when_present(self) -> None:
-        path = ROOT / "artifacts/generated-results/elliptic_nagao_rank17_frontier_certificate.json"
+        path = ROOT / "artifacts/generated-results/elliptic-curves/elliptic_nagao_rank17_frontier_certificate.json"
         if not path.exists():
             self.skipTest("generated certificate has not been reproduced")
         data = json.loads(path.read_text())

@@ -336,13 +336,13 @@ def run(root: Path, *, extra_condition_files: Sequence[Path] = ()) -> dict[str, 
                 root / "elliptic-curves/cas/verify_icarm_curve275_mestre_rank20.py"
             ),
             "icarm245_275_cross_shape_source_sha256": sha256_file(
-                root / "elliptic-curves/cas/analyze_icarm245_275_cross_shape_transport.sage"
+                root / "archive/elliptic-curves/cas/analyze_icarm245_275_cross_shape_transport.sage"
             ),
             "icarm243_accidental_slice_source_sha256": sha256_file(
-                root / "elliptic-curves/cas/search_icarm_curve243_accidental_slices.py"
+                root / "archive/elliptic-curves/cas/search_icarm_curve243_accidental_slices.py"
             ),
             "icarm226_accidental_slice_source_sha256": sha256_file(
-                root / "elliptic-curves/cas/search_icarm_curve226_accidental_slices.py"
+                root / "archive/elliptic-curves/cas/search_icarm_curve226_accidental_slices.py"
             ),
             "script_sha256": sha256_file(Path(__file__)),
         },
@@ -362,7 +362,7 @@ def main() -> None:
     parser.add_argument(
         "--output",
         type=Path,
-        default=root / "artifacts/generated-results/elliptic_exceptional_branch_code.json",
+        default=root / "artifacts/generated-results/elliptic-curves/elliptic_exceptional_branch_code.json",
     )
     parser.add_argument(
         "--conditions-file",

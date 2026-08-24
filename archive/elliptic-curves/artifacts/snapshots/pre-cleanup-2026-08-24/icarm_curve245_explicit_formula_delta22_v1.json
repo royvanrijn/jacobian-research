@@ -1,0 +1,70 @@
+{
+  "artifact_kind": "conditional_explicit_formula_rank_diagnostic",
+  "conclusion": {
+    "search_consequence": "redirect next-point work from this fixed fiber to nearby specializations or a different construction",
+    "unconditional": "rank(E(Q)) >= 20 only; no rank upper bound",
+    "under_grh": "analytic rank <= 20: the explicit-formula upper is below 22 and root number +1 forces even analytic rank",
+    "under_grh_and_bsd": "algebraic rank = 20"
+  },
+  "curve": {
+    "ainvs": [
+      "1",
+      "-1",
+      "1",
+      "-25880411472355347134118026792",
+      "1606663697747901005185875883284420820193259"
+    ],
+    "conductor": "272066437942638823321634957004224153562929337633497250319389959310",
+    "exact_root_number": 1,
+    "rank_lower_bound": 20,
+    "source": "ICARM curve 245"
+  },
+  "explicit_formula": {
+    "archimedean_cross_check": {
+      "analytic_absolute_tail_bound": "0.009768042335133851598918012013480056867",
+      "closed_form_contribution_to_explicit_formula": "-0.066297585261396751831176694018569436575",
+      "closed_form_distance_from_truncated_integral": "0.002924493153658850455752967685352695921",
+      "closed_form_full_integral": "-0.2082800068079469875844614040873528181",
+      "closed_form_inside_tail_enclosure": true,
+      "delta": "11/5",
+      "finite_interval": "[-32,32]",
+      "gauss_legendre_value": "-0.21120449996160583804021437177270551402",
+      "quadrature_disagreement": "0.0",
+      "tanh_sinh_value": "-0.21120449996160583804021437177270551402"
+    },
+    "conservative_upper": "21.0189434907406437415004983204915407668442852161550853397543",
+    "delta": "11/5",
+    "prime_sum": {
+      "bad_reduction_prime_sum": "1.1941567728938456123036013189009267399511107315140476444696524492713472145819616",
+      "conductor": "272066437942638823321634957004224153562929337633497250319389959310",
+      "good_reduction_prime_sum": "-73.421393379129854927632318606660884817747172068674712008077313286874741022507940",
+      "log_conductor": "150.66890715223701088322325397998522482857738558336396594706898102012739243591187",
+      "maximum_prime": 1007519,
+      "prime_count": 79057,
+      "prime_limit": 1007525,
+      "prime_power_term_count": 79293,
+      "prime_sum": "-72.227236606236009315328717287759958077796061337160664363607660837603393807925978"
+    },
+    "strictly_below_22": true,
+    "test_function": "Bober sinc-squared"
+  },
+  "reproduction": {
+    "command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/explicit_formula_icarm_curve245_delta22.py --check",
+    "helper_sha256": "c33da285159adb34bd14dcd2caf5ebdd77bddf5454d0eb226ca44da8543a80b7",
+    "pari_gp": [
+      "[",
+      "2",
+      ",",
+      " ",
+      "1",
+      "7",
+      ",",
+      " ",
+      "4",
+      "]"
+    ],
+    "script_sha256": "ff5c4847cc35c35a87807d3d2549064530ced81f15e2c2e105f68fccab1dce47"
+  },
+  "schema_version": 1,
+  "status": "conditional_fixed_fiber_closure"
+}

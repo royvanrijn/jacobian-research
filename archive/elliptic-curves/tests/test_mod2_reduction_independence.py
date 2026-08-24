@@ -38,7 +38,7 @@ class Mod2ReductionIndependenceTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.coefficients = rank13_base_changed_short_jacobian_coefficients(Q(42))
         cls.points = load_basis(
-            ROOT / "artifacts/generated-results/elliptic_nagao_u42_height_10000000.json"
+            ROOT / "archive/elliptic-curves/artifacts/generated-results/elliptic_nagao_u42_height_10000000.json"
         )
 
     def test_finite_group_enumeration_and_doubling(self) -> None:

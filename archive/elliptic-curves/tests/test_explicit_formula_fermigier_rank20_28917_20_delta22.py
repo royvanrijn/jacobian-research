@@ -15,7 +15,7 @@ CAS = ROOT / "elliptic-curves" / "cas"
 SCRIPT = CAS / "explicit_formula_fermigier_rank20_28917_20_delta22.py"
 ARTIFACT = (
     ROOT
-    / "artifacts/generated-results/elliptic_fermigier_rank20_28917_20_explicit_formula_delta22.json"
+    / "archive/elliptic-curves/artifacts/generated-results/elliptic_fermigier_rank20_28917_20_explicit_formula_delta22.json"
 )
 sys.path.insert(0, str(CAS))
 SPEC = importlib.util.spec_from_file_location(

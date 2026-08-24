@@ -194,6 +194,7 @@ def build_parser() -> argparse.ArgumentParser:
         default=root
         / "artifacts"
         / "generated-results"
+        / "elliptic-curves"
         / "elliptic_nagao_1994.json",
     )
     parser.add_argument("--timeout", type=float, default=120.0)
@@ -362,4 +363,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

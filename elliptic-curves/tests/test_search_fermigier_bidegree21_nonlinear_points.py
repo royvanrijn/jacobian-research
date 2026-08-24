@@ -15,11 +15,11 @@ ROOT = Path(__file__).resolve().parents[2]
 SCRIPT = ROOT / "elliptic-curves/cas/search_fermigier_bidegree21_nonlinear_points.py"
 ARTIFACT = (
     ROOT
-    / "artifacts/generated-results/"
+    / "artifacts/generated-results/elliptic-curves/"
     "elliptic_fermigier_bidegree21_p13_r20e1_nonlinear_points_h1024.json"
 )
 EXPECTED_SCRIPT_SHA256 = (
-    "1dbe3cb7b95991d671f4df64109012afe36ac568556224298e8d8892941b3044"
+    "2e1c3617e01e9e8e02ed8a54fa4c33dc07e4e4a1352176ae74bb9a490997a7b6"
 )
 EXPECTED_ARTIFACT_SHA256 = (
     "dd281569a1da8eb1c07a635faecb8b9f27269751c2639fb6b94f3a1bada46310"

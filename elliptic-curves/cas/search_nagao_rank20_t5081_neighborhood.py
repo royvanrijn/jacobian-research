@@ -1586,7 +1586,7 @@ def build_parser() -> argparse.ArgumentParser:
         type=Path,
         default=(
             root
-            / "artifacts/generated-results/elliptic_nagao_rank20_t5081_neighborhood.json"
+            / "archive/elliptic-curves/artifacts/generated-results/elliptic_nagao_rank20_t5081_neighborhood.json"
         ),
     )
     return parser

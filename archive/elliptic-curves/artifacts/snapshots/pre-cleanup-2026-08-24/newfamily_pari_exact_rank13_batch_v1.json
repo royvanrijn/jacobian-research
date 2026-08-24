@@ -1,0 +1,596 @@
+[
+  {
+    "classification": "exact_rank_13",
+    "eclib_growth": [
+      {
+        "after": 1,
+        "before": 0,
+        "label": "U9"
+      },
+      {
+        "after": 2,
+        "before": 1,
+        "label": "U2"
+      },
+      {
+        "after": 3,
+        "before": 2,
+        "label": "U3"
+      },
+      {
+        "after": 4,
+        "before": 3,
+        "label": "U5"
+      },
+      {
+        "after": 5,
+        "before": 4,
+        "label": "U7"
+      },
+      {
+        "after": 6,
+        "before": 5,
+        "label": "U1"
+      },
+      {
+        "after": 7,
+        "before": 6,
+        "label": "U4"
+      },
+      {
+        "after": 8,
+        "before": 7,
+        "label": "U6"
+      },
+      {
+        "after": 9,
+        "before": 8,
+        "label": "U10"
+      },
+      {
+        "after": 10,
+        "before": 9,
+        "label": "U8"
+      },
+      {
+        "after": 11,
+        "before": 10,
+        "label": "U0"
+      },
+      {
+        "after": 12,
+        "before": 11,
+        "label": "Q0"
+      },
+      {
+        "after": 13,
+        "before": 12,
+        "label": "Q1"
+      }
+    ],
+    "ellrankinit_seconds": 26.683433083002456,
+    "known_point_count": 13,
+    "minimal_discriminant_bits": 160,
+    "minimal_model": [
+      "1",
+      "-1",
+      "1",
+      "313861799739307",
+      "42672494894974657489581"
+    ],
+    "parameter": "44/3",
+    "passes": [
+      {
+        "effective_lower": 13,
+        "effort": 0,
+        "pari_lower": 13,
+        "pari_upper": 13,
+        "returned_points": 13,
+        "seconds": 3.6090470000053756,
+        "sha_pairing_rank": 0
+      }
+    ],
+    "pinned_lower_bound": 13,
+    "rank_interval": [
+      13,
+      13
+    ],
+    "root_number": -1,
+    "status": "completed"
+  },
+  {
+    "classification": "exact_rank_13",
+    "eclib_growth": [
+      {
+        "after": 1,
+        "before": 0,
+        "label": "U3"
+      },
+      {
+        "after": 2,
+        "before": 1,
+        "label": "U5"
+      },
+      {
+        "after": 3,
+        "before": 2,
+        "label": "U7"
+      },
+      {
+        "after": 4,
+        "before": 3,
+        "label": "U9"
+      },
+      {
+        "after": 5,
+        "before": 4,
+        "label": "U1"
+      },
+      {
+        "after": 6,
+        "before": 5,
+        "label": "U6"
+      },
+      {
+        "after": 7,
+        "before": 6,
+        "label": "U2"
+      },
+      {
+        "after": 8,
+        "before": 7,
+        "label": "U4"
+      },
+      {
+        "after": 9,
+        "before": 8,
+        "label": "U10"
+      },
+      {
+        "after": 10,
+        "before": 9,
+        "label": "U8"
+      },
+      {
+        "after": 11,
+        "before": 10,
+        "label": "U0"
+      },
+      {
+        "after": 12,
+        "before": 11,
+        "label": "Q0"
+      },
+      {
+        "after": 13,
+        "before": 12,
+        "label": "Q1"
+      }
+    ],
+    "ellrankinit_seconds": 21.665234624990262,
+    "known_point_count": 13,
+    "minimal_discriminant_bits": 168,
+    "minimal_model": [
+      "1",
+      "-1",
+      "1",
+      "-4364609946144212",
+      "738003241750052674653111"
+    ],
+    "parameter": "100/7",
+    "passes": [
+      {
+        "effective_lower": 13,
+        "effort": 0,
+        "pari_lower": 13,
+        "pari_upper": 13,
+        "returned_points": 13,
+        "seconds": 5.407334917021217,
+        "sha_pairing_rank": 0
+      }
+    ],
+    "pinned_lower_bound": 13,
+    "rank_interval": [
+      13,
+      13
+    ],
+    "root_number": -1,
+    "status": "completed"
+  },
+  {
+    "classification": "exact_rank_13",
+    "eclib_growth": [
+      {
+        "after": 1,
+        "before": 0,
+        "label": "U5"
+      },
+      {
+        "after": 2,
+        "before": 1,
+        "label": "U7"
+      },
+      {
+        "after": 3,
+        "before": 2,
+        "label": "U1"
+      },
+      {
+        "after": 4,
+        "before": 3,
+        "label": "U3"
+      },
+      {
+        "after": 5,
+        "before": 4,
+        "label": "U6"
+      },
+      {
+        "after": 6,
+        "before": 5,
+        "label": "U2"
+      },
+      {
+        "after": 7,
+        "before": 6,
+        "label": "U4"
+      },
+      {
+        "after": 8,
+        "before": 7,
+        "label": "U9"
+      },
+      {
+        "after": 9,
+        "before": 8,
+        "label": "U10"
+      },
+      {
+        "after": 10,
+        "before": 9,
+        "label": "U8"
+      },
+      {
+        "after": 11,
+        "before": 10,
+        "label": "U0"
+      },
+      {
+        "after": 12,
+        "before": 11,
+        "label": "Q0"
+      },
+      {
+        "after": 13,
+        "before": 12,
+        "label": "Q1"
+      }
+    ],
+    "ellrankinit_seconds": 30.953174124995712,
+    "known_point_count": 13,
+    "minimal_discriminant_bits": 168,
+    "minimal_model": [
+      "1",
+      "1",
+      "0",
+      "-52100222692879083",
+      "4497548462000733525088473"
+    ],
+    "parameter": "94/7",
+    "passes": [
+      {
+        "effective_lower": 13,
+        "effort": 0,
+        "pari_lower": 13,
+        "pari_upper": 13,
+        "returned_points": 13,
+        "seconds": 8.290061791980406,
+        "sha_pairing_rank": 0
+      }
+    ],
+    "pinned_lower_bound": 13,
+    "rank_interval": [
+      13,
+      13
+    ],
+    "root_number": -1,
+    "status": "completed"
+  },
+  {
+    "classification": "exact_rank_13",
+    "eclib_growth": [
+      {
+        "after": 1,
+        "before": 0,
+        "label": "U9"
+      },
+      {
+        "after": 2,
+        "before": 1,
+        "label": "U1"
+      },
+      {
+        "after": 3,
+        "before": 2,
+        "label": "U2"
+      },
+      {
+        "after": 4,
+        "before": 3,
+        "label": "U3"
+      },
+      {
+        "after": 5,
+        "before": 4,
+        "label": "U5"
+      },
+      {
+        "after": 6,
+        "before": 5,
+        "label": "U7"
+      },
+      {
+        "after": 7,
+        "before": 6,
+        "label": "U6"
+      },
+      {
+        "after": 8,
+        "before": 7,
+        "label": "U4"
+      },
+      {
+        "after": 9,
+        "before": 8,
+        "label": "U10"
+      },
+      {
+        "after": 10,
+        "before": 9,
+        "label": "U8"
+      },
+      {
+        "after": 11,
+        "before": 10,
+        "label": "U0"
+      },
+      {
+        "after": 12,
+        "before": 11,
+        "label": "Q0"
+      },
+      {
+        "after": 13,
+        "before": 12,
+        "label": "Q1"
+      }
+    ],
+    "ellrankinit_seconds": 25.326265790994512,
+    "known_point_count": 13,
+    "minimal_discriminant_bits": 183,
+    "minimal_model": [
+      "1",
+      "-1",
+      "1",
+      "58056007200876697",
+      "167626857894365704328339231"
+    ],
+    "parameter": "209/14",
+    "passes": [
+      {
+        "effective_lower": 13,
+        "effort": 0,
+        "pari_lower": 13,
+        "pari_upper": 13,
+        "returned_points": 13,
+        "seconds": 8.105504167004256,
+        "sha_pairing_rank": 0
+      }
+    ],
+    "pinned_lower_bound": 13,
+    "rank_interval": [
+      13,
+      13
+    ],
+    "root_number": -1,
+    "status": "completed"
+  },
+  {
+    "classification": "exact_rank_13",
+    "eclib_growth": [
+      {
+        "after": 1,
+        "before": 0,
+        "label": "U4"
+      },
+      {
+        "after": 2,
+        "before": 1,
+        "label": "U3"
+      },
+      {
+        "after": 3,
+        "before": 2,
+        "label": "U1"
+      },
+      {
+        "after": 4,
+        "before": 3,
+        "label": "U9"
+      },
+      {
+        "after": 5,
+        "before": 4,
+        "label": "U5"
+      },
+      {
+        "after": 6,
+        "before": 5,
+        "label": "U7"
+      },
+      {
+        "after": 7,
+        "before": 6,
+        "label": "U6"
+      },
+      {
+        "after": 8,
+        "before": 7,
+        "label": "U2"
+      },
+      {
+        "after": 9,
+        "before": 8,
+        "label": "U10"
+      },
+      {
+        "after": 10,
+        "before": 9,
+        "label": "U8"
+      },
+      {
+        "after": 11,
+        "before": 10,
+        "label": "U0"
+      },
+      {
+        "after": 12,
+        "before": 11,
+        "label": "Q0"
+      },
+      {
+        "after": 13,
+        "before": 12,
+        "label": "Q1"
+      }
+    ],
+    "ellrankinit_seconds": 58.9063943749934,
+    "known_point_count": 13,
+    "minimal_discriminant_bits": 189,
+    "minimal_model": [
+      "1",
+      "1",
+      "1",
+      "-2466364139599253050",
+      "880202989011586725090112967"
+    ],
+    "parameter": "227/10",
+    "passes": [
+      {
+        "effective_lower": 13,
+        "effort": 0,
+        "pari_lower": 13,
+        "pari_upper": 13,
+        "returned_points": 13,
+        "seconds": 13.133252958010416,
+        "sha_pairing_rank": 0
+      }
+    ],
+    "pinned_lower_bound": 13,
+    "rank_interval": [
+      13,
+      13
+    ],
+    "root_number": -1,
+    "status": "completed"
+  },
+  {
+    "classification": "exact_rank_13",
+    "eclib_growth": [
+      {
+        "after": 1,
+        "before": 0,
+        "label": "U3"
+      },
+      {
+        "after": 2,
+        "before": 1,
+        "label": "U4"
+      },
+      {
+        "after": 3,
+        "before": 2,
+        "label": "U1"
+      },
+      {
+        "after": 4,
+        "before": 3,
+        "label": "U5"
+      },
+      {
+        "after": 5,
+        "before": 4,
+        "label": "U7"
+      },
+      {
+        "after": 6,
+        "before": 5,
+        "label": "U2"
+      },
+      {
+        "after": 7,
+        "before": 6,
+        "label": "U6"
+      },
+      {
+        "after": 8,
+        "before": 7,
+        "label": "U9"
+      },
+      {
+        "after": 9,
+        "before": 8,
+        "label": "U10"
+      },
+      {
+        "after": 10,
+        "before": 9,
+        "label": "U8"
+      },
+      {
+        "after": 11,
+        "before": 10,
+        "label": "U0"
+      },
+      {
+        "after": 12,
+        "before": 11,
+        "label": "Q0"
+      },
+      {
+        "after": 13,
+        "before": 12,
+        "label": "Q1"
+      }
+    ],
+    "ellrankinit_seconds": 1.174922999984119,
+    "known_point_count": 13,
+    "minimal_discriminant_bits": 168,
+    "minimal_model": [
+      "0",
+      "-1",
+      "0",
+      "-195528575302791841",
+      "33271547637596558879911105"
+    ],
+    "parameter": "61/8",
+    "passes": [
+      {
+        "effective_lower": 13,
+        "effort": 0,
+        "pari_lower": 13,
+        "pari_upper": 13,
+        "returned_points": 13,
+        "seconds": 1.3867496669990942,
+        "sha_pairing_rank": 0
+      }
+    ],
+    "pinned_lower_bound": 13,
+    "rank_interval": [
+      13,
+      13
+    ],
+    "root_number": -1,
+    "status": "completed"
+  }
+]

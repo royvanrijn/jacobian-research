@@ -466,6 +466,7 @@ def build_parser() -> argparse.ArgumentParser:
         default=root
         / "artifacts"
         / "generated-results"
+        / "elliptic-curves"
         / "elliptic_fermigier_rank22_points.json",
     )
     return parser

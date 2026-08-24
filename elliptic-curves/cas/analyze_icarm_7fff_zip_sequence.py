@@ -26,8 +26,8 @@ from mod2_reduction_independence import (  # noqa: E402
 
 
 ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_INPUT = ROOT / "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_281_282_285_286.json"
-DEFAULT_OUTPUT = ROOT / "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_sequence_analysis.json"
+DEFAULT_INPUT = ROOT / "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json"
+DEFAULT_OUTPUT = ROOT / "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_independence_analysis_v1.json"
 EXPECTED_IDS = (281, 282, 285, 286)
 
 
@@ -144,6 +144,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
 
     raw = args.input.read_bytes()
@@ -217,9 +218,15 @@ def main() -> None:
             ],
         },
     }
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(output, indent=2, sort_keys=True) + "\n")
-    print(f"wrote {args.output}")
+    rendered = json.dumps(output, indent=2, sort_keys=True) + "\n"
+    if args.check:
+        if not args.output.exists() or args.output.read_text() != rendered:
+            raise SystemExit(f"stale or missing artifact: {args.output}")
+        print(f"PASS {args.output}")
+    else:
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(rendered)
+        print(f"wrote {args.output}")
     print("verified 4 curves, 81 points, 4 trivial-torsion certificates, 6 unequal j-pairs")
 
 

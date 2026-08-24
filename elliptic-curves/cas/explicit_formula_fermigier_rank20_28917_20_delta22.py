@@ -229,7 +229,7 @@ def main() -> None:
         type=Path,
         default=(
             REPOSITORY
-            / "artifacts/generated-results/elliptic_fermigier_rank20_28917_20_explicit_formula_delta22.json"
+            / "archive/elliptic-curves/artifacts/generated-results/elliptic_fermigier_rank20_28917_20_explicit_formula_delta22.json"
         ),
     )
     args = parser.parse_args()

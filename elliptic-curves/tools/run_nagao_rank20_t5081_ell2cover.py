@@ -27,7 +27,7 @@ from typing import Any
 REPOSITORY = Path(__file__).resolve().parents[2]
 CERTIFICATE = (
     REPOSITORY
-    / "artifacts/generated-results/elliptic_nagao_rank20_t5081_rank20_certificate.json"
+    / "artifacts/generated-results/elliptic-curves/elliptic_nagao_rank20_t5081_rank20_certificate.json"
 )
 CERTIFICATE_SHA256 = (
     "466946076dc0c3fa02d0c5edd90b947d5ee3d10a4fb8cb16567049ab4380f88d"
@@ -194,7 +194,7 @@ def main() -> None:
         type=Path,
         default=(
             REPOSITORY
-            / "artifacts/generated-results/elliptic_nagao_rank20_t5081_ell2cover.json"
+            / "archive/elliptic-curves/artifacts/generated-results/elliptic_nagao_rank20_t5081_ell2cover.json"
         ),
     )
     args = parser.parse_args()

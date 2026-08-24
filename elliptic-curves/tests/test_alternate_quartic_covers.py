@@ -67,7 +67,7 @@ class AlternateQuarticCoverTests(unittest.TestCase):
         artifact = json.loads(
             (
                 ROOT
-                / "artifacts/generated-results/elliptic_nagao_rank17_frontier_certificate.json"
+                / "artifacts/generated-results/elliptic-curves/elliptic_nagao_rank17_frontier_certificate.json"
             ).read_text()
         )
         record = next(

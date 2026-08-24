@@ -159,7 +159,7 @@ EXPECTED_EXCLUSION_SHA256 = (
     "4d8356b8c9031093fd0cb2a3c3f8eef83ecb3b7ae770b855c13a53926bcf4dc8"
 )
 DEFAULT_OUTPUT = Path(
-    "artifacts/generated-results/elliptic_mestre_02557104116148_direct_rational.json"
+    "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_02557104116148_direct_rational.json"
 )
 
 

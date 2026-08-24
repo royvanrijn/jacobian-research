@@ -1,0 +1,721 @@
+{
+  "classification": {
+    "classification_scope": "all Q-rational polynomial sections with x=m*T+n and degree(y)<=3, up to negating y; not arbitrary rational sections",
+    "nonsingular_slope_resultant_gcd": "(27*m - 43)*(27*m - 17)*(27*m - 7)*(27*m + 7)*(27*m + 17)*(27*m + 43)/387420489",
+    "recovered_companion_sections": [
+      {
+        "intercept": "6920/27",
+        "label": "plus-7/27",
+        "slope": "7/27"
+      },
+      {
+        "intercept": "6920/27",
+        "label": "minus-7/27",
+        "slope": "-7/27"
+      },
+      {
+        "intercept": "5462/27",
+        "label": "plus-17/27",
+        "slope": "17/27"
+      },
+      {
+        "intercept": "5462/27",
+        "label": "minus-17/27",
+        "slope": "-17/27"
+      },
+      {
+        "intercept": "-4015/27",
+        "label": "plus-43/27",
+        "slope": "43/27"
+      },
+      {
+        "intercept": "-4015/27",
+        "label": "minus-43/27",
+        "slope": "-43/27"
+      }
+    ],
+    "slope_plus_or_minus_one_intercept_eliminants": {
+      "-1": "n*(n - 346)*(n - 260)*(n - 255)*(n - 146)*(n - 55)",
+      "1": "n*(n - 346)*(n - 260)*(n - 255)*(n - 146)*(n - 55)"
+    }
+  },
+  "companion_sections": [
+    {
+      "intercept": "6920/27",
+      "label": "plus-7/27",
+      "ordinate_coefficients_ascending": [
+        "84770",
+        "-18554923/243",
+        "-29974/243",
+        "680/243"
+      ],
+      "slope": "7/27"
+    },
+    {
+      "intercept": "6920/27",
+      "label": "minus-7/27",
+      "ordinate_coefficients_ascending": [
+        "-84770",
+        "-18554923/243",
+        "29974/243",
+        "680/243"
+      ],
+      "slope": "-7/27"
+    },
+    {
+      "intercept": "5462/27",
+      "label": "plus-17/27",
+      "ordinate_coefficients_ascending": [
+        "5138284",
+        "-6202747/243",
+        "-23222/243",
+        "440/243"
+      ],
+      "slope": "17/27"
+    },
+    {
+      "intercept": "5462/27",
+      "label": "minus-17/27",
+      "ordinate_coefficients_ascending": [
+        "-5138284",
+        "-6202747/243",
+        "23222/243",
+        "440/243"
+      ],
+      "slope": "-17/27"
+    },
+    {
+      "intercept": "-4015/27",
+      "label": "plus-43/27",
+      "ordinate_coefficients_ascending": [
+        "94091525",
+        "-236806588/243",
+        "756284/243",
+        "-1120/243"
+      ],
+      "slope": "43/27"
+    },
+    {
+      "intercept": "-4015/27",
+      "label": "minus-43/27",
+      "ordinate_coefficients_ascending": [
+        "-94091525",
+        "-236806588/243",
+        "-756284/243",
+        "-1120/243"
+      ],
+      "slope": "-43/27"
+    }
+  ],
+  "cubic_classification": {
+    "classification_scope": "the genuine degree-three branch x=a*T^3+b*T^2+c*T+d with a nonzero and degree(y)<=7; a=0 is the separately proved degree-at-most-two classification",
+    "leading_cubic_coefficient_forced_zero": true,
+    "new_cubic_sections": 0,
+    "residual_equation_count": 7,
+    "residual_ideal_sha256": "8ed52e9fb84cd515a46dda187f771ee838a4a0757d04c9841fcc48ea0ad673a9",
+    "singular_reduced_groebner_basis": [
+      "G[1]=a",
+      "G[2]=c",
+      "G[3]=5373d-1389190",
+      "G[4]=155113830117b3-12830724b-41888"
+    ],
+    "singular_version": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34"
+  },
+  "data_sha256": "0fd1e3d1a6824d1749b85fe6b71a2f87576f20e55fedad5df3e207c082d0b846",
+  "exact_jacobian_relations": [
+    {
+      "basis_coefficients": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        0
+      ],
+      "exact_identity_in_Q_of_T": true,
+      "section": "visible-11"
+    },
+    {
+      "basis_coefficients": [
+        0,
+        0,
+        -1,
+        1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "exact_identity_in_Q_of_T": true,
+      "section": "minus-7/27"
+    },
+    {
+      "basis_coefficients": [
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "exact_identity_in_Q_of_T": true,
+      "section": "plus-17/27"
+    },
+    {
+      "basis_coefficients": [
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "exact_identity_in_Q_of_T": true,
+      "section": "minus-17/27"
+    },
+    {
+      "basis_coefficients": [
+        -1,
+        -1,
+        -1,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "exact_identity_in_Q_of_T": true,
+      "section": "plus-43/27"
+    },
+    {
+      "basis_coefficients": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "exact_identity_in_Q_of_T": true,
+      "section": "minus-43/27"
+    },
+    {
+      "basis_coefficients": [
+        0,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "exact_identity_in_Q_of_T": true,
+      "section": "quadratic-plus-56/5373"
+    },
+    {
+      "basis_coefficients": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "exact_identity_in_Q_of_T": true,
+      "section": "quadratic-minus-22/5373"
+    },
+    {
+      "basis_coefficients": [
+        -1,
+        -1,
+        -1,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "exact_identity_in_Q_of_T": true,
+      "section": "quadratic-minus-34/5373"
+    }
+  ],
+  "exact_specialization_independence": {
+    "basis": "visible indices 0,...,10 followed by plus-7/27",
+    "basis_size": 12,
+    "combined_column_rank": 12,
+    "generic_rank_lower_bound": 12,
+    "inference": "full rank modulo products of E(F_p)/3E(F_p), together with E(Q)[3]=0, proves the specialized points independent by infinite descent; any generic relation would specialize at T=1, so the twelve sections are independent over Q(T)",
+    "modulus": 3,
+    "no_rational_3_torsion_certificate_prime": 7,
+    "parameter_T": "1",
+    "reduction_signatures": [
+      {
+        "group_order": 9,
+        "prime": 5,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            1,
+            1,
+            2,
+            0,
+            2,
+            1,
+            2,
+            2,
+            1,
+            0,
+            2
+          ]
+        ],
+        "triple_subgroup_order": 3
+      },
+      {
+        "group_order": 24,
+        "prime": 17,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            2,
+            2,
+            1,
+            0,
+            0,
+            2,
+            2,
+            0,
+            1,
+            1,
+            0
+          ]
+        ],
+        "triple_subgroup_order": 8
+      },
+      {
+        "group_order": 48,
+        "prime": 37,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            0,
+            2,
+            2,
+            0,
+            2,
+            2,
+            1,
+            0,
+            1,
+            1
+          ]
+        ],
+        "triple_subgroup_order": 16
+      },
+      {
+        "group_order": 54,
+        "prime": 41,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            1,
+            0,
+            1,
+            2,
+            2,
+            2,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        ],
+        "triple_subgroup_order": 18
+      },
+      {
+        "group_order": 60,
+        "prime": 47,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            2,
+            2,
+            0,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            0,
+            2
+          ]
+        ],
+        "triple_subgroup_order": 20
+      },
+      {
+        "group_order": 75,
+        "prime": 67,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            1,
+            0,
+            2,
+            2,
+            1,
+            1,
+            2,
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "triple_subgroup_order": 25
+      },
+      {
+        "group_order": 102,
+        "prime": 83,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            0,
+            2,
+            1,
+            1,
+            1,
+            1,
+            0,
+            2,
+            1,
+            2,
+            2
+          ]
+        ],
+        "triple_subgroup_order": 34
+      },
+      {
+        "group_order": 96,
+        "prime": 89,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            0,
+            2,
+            1,
+            1,
+            1,
+            0,
+            1,
+            2,
+            2,
+            1,
+            1
+          ]
+        ],
+        "triple_subgroup_order": 32
+      },
+      {
+        "group_order": 114,
+        "prime": 97,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            2,
+            0,
+            1,
+            2,
+            0,
+            1,
+            0,
+            2,
+            0,
+            0,
+            1
+          ]
+        ],
+        "triple_subgroup_order": 38
+      },
+      {
+        "group_order": 108,
+        "prime": 101,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            0,
+            1,
+            1,
+            1,
+            2,
+            1,
+            2,
+            1,
+            1,
+            1,
+            2,
+            2
+          ]
+        ],
+        "triple_subgroup_order": 36
+      },
+      {
+        "group_order": 120,
+        "prime": 107,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            2,
+            1,
+            0,
+            2,
+            2,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            0
+          ]
+        ],
+        "triple_subgroup_order": 40
+      },
+      {
+        "group_order": 150,
+        "prime": 127,
+        "quotient_dimension": 1,
+        "rows": [
+          [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            2,
+            0,
+            1,
+            1
+          ]
+        ],
+        "triple_subgroup_order": 50
+      }
+    ]
+  },
+  "k3_fiber_geometry": {
+    "complex_picard_upper_bound": 20,
+    "discriminant_degree_on_affine_line": 20,
+    "finite_discriminant_squarefree": true,
+    "finite_singular_fibers": {
+      "count": 20,
+      "type": "I1"
+    },
+    "geometric_generic_rank_upper_bound": 15,
+    "infinity_fiber": {
+      "minimal_discriminant_valuation": 4,
+      "special_cubic": "(X-108)^2*(X+216)",
+      "split": true,
+      "tangent_square": "324=18^2",
+      "type": "I4"
+    },
+    "shioda_tate_component_rank": 3,
+    "short_coefficient_degrees": [
+      8,
+      12
+    ],
+    "surface_type": "elliptic K3",
+    "total_euler_number": 24
+  },
+  "mod_l_engine_sha256": "93cdef9eb9053987d0aa85abff2d6e1d487caa827b43a7c00d0b8a43395063f0",
+  "primary_source": "https://da.lib.kobe-u.ac.jp/da/kernel/E0003610/E0003610.pdf",
+  "proved_consequences": {
+    "generic_companions_dependent_on_rank12_basis": 8,
+    "generic_rank_at_least": 12,
+    "geometric_generic_rank_at_most": 15,
+    "linear_abscissa_sections_classified": 18,
+    "polynomial_abscissa_degree_at_most_five_sections_classified": 21,
+    "polynomial_abscissa_degree_at_most_four_sections_classified": 21,
+    "polynomial_abscissa_degree_at_most_three_sections_classified": 21,
+    "polynomial_abscissa_degree_at_most_two_sections_classified": 21
+  },
+  "quadratic_classification": {
+    "classification_scope": "all Q-rational polynomial sections with degree(x)<=2 and degree(y)<=5, up to negating y; m=0 reduces to the separately proved linear classification",
+    "genuine_quadratic_n_nonzero_groebner_basis": [
+      "1"
+    ],
+    "genuine_quadratic_n_zero_groebner_basis": [
+      "5373*k - 1389190",
+      "(5373*m - 56)*(5373*m + 22)*(5373*m + 34)"
+    ],
+    "recovered_quadratic_sections": [
+      {
+        "constant_coefficient": "1389190/5373",
+        "label": "quadratic-plus-56/5373",
+        "linear_coefficient": "0",
+        "quadratic_coefficient": "56/5373"
+      },
+      {
+        "constant_coefficient": "1389190/5373",
+        "label": "quadratic-minus-22/5373",
+        "linear_coefficient": "0",
+        "quadratic_coefficient": "-22/5373"
+      },
+      {
+        "constant_coefficient": "1389190/5373",
+        "label": "quadratic-minus-34/5373",
+        "linear_coefficient": "0",
+        "quadratic_coefficient": "-34/5373"
+      }
+    ]
+  },
+  "quadratic_companion_sections": [
+    {
+      "constant_coefficient": "1389190/5373",
+      "label": "quadratic-plus-56/5373",
+      "linear_coefficient": "0",
+      "ordinate_coefficients_ascending": [
+        "0",
+        "684218797630/9623043",
+        "0",
+        "171853351/9623043",
+        "0",
+        "3136/9623043"
+      ],
+      "quadratic_coefficient": "56/5373"
+    },
+    {
+      "constant_coefficient": "1389190/5373",
+      "label": "quadratic-minus-22/5373",
+      "linear_coefficient": "0",
+      "ordinate_coefficients_ascending": [
+        "0",
+        "638541742570/9623043",
+        "0",
+        "-24743777/9623043",
+        "0",
+        "484/9623043"
+      ],
+      "quadratic_coefficient": "-22/5373"
+    },
+    {
+      "constant_coefficient": "1389190/5373",
+      "label": "quadratic-minus-34/5373",
+      "linear_coefficient": "0",
+      "ordinate_coefficients_ascending": [
+        "0",
+        "-631221199130/9623043",
+        "0",
+        "-2763929/9623043",
+        "0",
+        "1156/9623043"
+      ],
+      "quadratic_coefficient": "-34/5373"
+    }
+  ],
+  "quartic_abscissa_classification": {
+    "classification_scope": "the genuine degree-four branch x=a*T^4+b*T^3+c*T^2+d*T+e with a nonzero and degree(y)<=9; a=0 reduces to the separately proved degree-at-most-three classification",
+    "leading_quartic_coefficient_forced_zero": true,
+    "new_quartic_sections": 0,
+    "residual_equation_count": 9,
+    "residual_ideal_sha256": "fdedefc59c7057b2d1884187ff3ce6785c537bf6eecae47dda8dc17118ef23b1",
+    "singular_algorithm": "slimgb over QQ with degree ordering",
+    "singular_reduced_groebner_basis": [
+      "G[1]=a",
+      "G[2]=b",
+      "G[3]=d",
+      "G[4]=5373e-1389190",
+      "G[5]=155113830117c3-12830724c-41888"
+    ]
+  },
+  "quintic_abscissa_classification": {
+    "classification_scope": "the genuine degree-five branch x=sum(a_i*T^i,i=0..5) with a5 nonzero and degree(y)<=11; a5=0 reduces to the separately proved degree-at-most-four classification",
+    "leading_quintic_coefficient_forced_zero": true,
+    "new_quintic_sections": 0,
+    "residual_equation_count": 11,
+    "residual_ideal_sha256": "6fb691a058b32e57ca16c3cc19d65dcf3c9c30414af16f6fbeb041b1084f9d74",
+    "singular_algorithm": "slimgb over QQ with degree ordering",
+    "singular_reduced_groebner_basis": [
+      "G[1]=a5",
+      "G[2]=a4",
+      "G[3]=a3",
+      "G[4]=a1",
+      "G[5]=5373*a0-1389190",
+      "G[6]=155113830117*a2^3-12830724*a2-41888"
+    ]
+  },
+  "reproducing_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/verify_nagao_section7_linear_sections.py",
+  "schema_version": 1,
+  "scope_limits": [
+    "not a classification of abscissae of degree six or higher or arbitrary rational sections",
+    "not a proof that the generic Mordell--Weil rank equals 12",
+    "not a rank-21 or rank-30 target hit"
+  ],
+  "script_sha256": "ee10dd889c805b063fb94b585313da1737203f14b9509c92d37abb3923374121",
+  "software": {
+    "python": "3.14.6",
+    "sympy": "1.14.0"
+  },
+  "status": "exact symbolic theorem and finite-reduction certificate",
+  "symbolic_helper_sha256": "fd1864b11938517fd3e8edc9cb231edcf1b1c6762574551b4ced3f4bba746698",
+  "target_hit": false
+}

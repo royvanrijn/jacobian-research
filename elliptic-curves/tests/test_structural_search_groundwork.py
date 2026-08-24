@@ -139,7 +139,7 @@ class StructuralSearchGroundworkTests(unittest.TestCase):
 
         pinned_path = (
             ROOT
-            / "artifacts/generated-results/elliptic_structural_search_groundwork.json"
+            / "artifacts/generated-results/elliptic-curves/elliptic_structural_search_groundwork.json"
         )
         if pinned_path.exists():
             self.assertEqual(json.loads(pinned_path.read_text()), manifest)

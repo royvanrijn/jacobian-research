@@ -48,14 +48,14 @@ NUMERICAL_ALLOWANCE = mpmath.mpf("0.001")
 PUBLISHED_E20_UPPER = mpmath.mpf("21.70")
 RANK20_CERTIFICATE = (
     REPOSITORY
-    / "artifacts/generated-results/elliptic_nagao_rank20_t5081_rank20_certificate.json"
+    / "artifacts/generated-results/elliptic-curves/elliptic_nagao_rank20_t5081_rank20_certificate.json"
 )
 RANK20_CERTIFICATE_SHA256 = (
     "466946076dc0c3fa02d0c5edd90b947d5ee3d10a4fb8cb16567049ab4380f88d"
 )
 DELTA2_DIAGNOSTIC = (
     REPOSITORY
-    / "artifacts/generated-results/elliptic_nagao_rank20_t5081_explicit_formula.json"
+    / "archive/elliptic-curves/artifacts/generated-results/elliptic_nagao_rank20_t5081_explicit_formula.json"
 )
 DELTA2_DIAGNOSTIC_SHA256 = (
     "2f799421101235c2092956a045c3b0e2cca0afccef26112297406d26e6432485"
@@ -416,7 +416,7 @@ def main() -> None:
         type=Path,
         default=(
             REPOSITORY
-            / "artifacts/generated-results/elliptic_nagao_rank20_t5081_explicit_formula_delta22.json"
+            / "archive/elliptic-curves/artifacts/generated-results/elliptic_nagao_rank20_t5081_explicit_formula_delta22.json"
         ),
     )
     args = parser.parse_args()

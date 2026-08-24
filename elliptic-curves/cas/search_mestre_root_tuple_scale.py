@@ -59,7 +59,7 @@ Q = Fraction
 TARGET_LOG_CONDUCTOR = Decimal("182.72")
 NAGAO_NORMALIZED_ROOTS = (0, 1, 27, 28, 31, 34)
 DEFAULT_OUTPUT = Path(
-    "artifacts/generated-results/elliptic_mestre_root_tuple_scale.json"
+    "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_root_tuple_scale.json"
 )
 REPRODUCING_COMMAND = (
     "PYTHONPATH=elliptic-curves/cas .venv/bin/python "

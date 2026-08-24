@@ -25,7 +25,7 @@ import time
 REPOSITORY = Path(__file__).resolve().parents[2]
 SOURCE = (
     REPOSITORY
-    / "artifacts/generated-results/elliptic_nagao_u42_height_10000000.json"
+    / "archive/elliptic-curves/artifacts/generated-results/elliptic_nagao_u42_height_10000000.json"
 )
 SOURCE_SHA256 = "4fea0207fd637988bcc1147143657cbec5c2404cb81b4c4a487e2dde20cc43b8"
 A = Fraction(-74879150695093957092648257365083, 92236816)

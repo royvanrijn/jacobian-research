@@ -1942,6 +1942,57 @@ closes the selected `D13/MW4 --q24 orbit85--> D12/MW5` equation hop.  The next
 equation gate is the fixed `D12/MW5 --q6 orbit42--> A11/MW6` hop, with
 correction `3`, `P.O=3`, fibre twist `0`, and no zero-pole/dx4 search.
 
+The exact orbit42 prerequisites are reproduced by:
+
+```bash
+sage -python elkies-k3/scripts/preflight_h92_q24_orbit42_component_valuation_qq.sage
+sage -python elkies-k3/scripts/map_h92_q24_orbit42_i8star_physical_components_qq.sage
+```
+
+Expected terminal statuses are `PASS_Q42_DIVVAL_PREFLIGHT` and
+`PASS_Q42_EXACT_I8STAR_PHYSICAL_MARKING`.  The physical marking has twelve
+components and exactly two surviving spinor-arm orientations; the marked
+section meets `C11` in one and `C10` in the other.  This is an exact resolved
+fibre marking only.  The two-dimensional RR kernel and A11 child equation are
+still the next gate.
+
+The retained zero-pole boundary audit is reproduced by:
+
+```bash
+sage -python elkies-k3/scripts/recover_h92_q24_orbit42_zero_pole_smallprime.sage --prime 43
+sage -python elkies-k3/scripts/scan_h92_q24_orbit42_zero_pole_model_modp.sage --prime 53
+sage -python elkies-k3/scripts/lift_h92_q24_orbit42_zero_pole_sections_qq.sage --precision 65536
+```
+
+The final terminal status is
+`PASS_EXACT_Q42_RATIONAL_ZERO_POLE_SECTIONS_QQ`, with nine signed pairs and
+eighteen exact characteristic-zero sections.  This proves their Weierstrass
+identities, not a non-existence theorem: the selected nontrivial spinor class,
+its RR pencil, and the A11 child remain open.  The two additional shortcut
+audits are reproduced by:
+
+```bash
+python3 elkies-k3/scripts/run_h92_q24_orbit42_fast_parallel.py
+sage -python elkies-k3/scripts/analyze_h92_q24_orbit42_identity_halving.sage
+sage -python elkies-k3/scripts/recover_h92_q24_orbit42_by_identity_halving_qq.sage
+```
+
+The first command terminates with `STOPPED_INVALID_FAST_Q6_ROUTE` after an
+exact passing audit: the converted q6 degrees are `435` and `703`, so no q6
+rational-point transport is run.  The identity-halving lattice gate is exact;
+the following equation-shell matching and chord census is modulo `100003`.
+Its terminal status `Q42_IDENTITY_HALVING_HAS_NO_A11_CHORD` records four
+rational degree-three candidates whose branch polynomials remain squarefree
+of degree `18`.  That modular result rejects this shortcut only and is not a
+characteristic-zero non-existence theorem.
+
+The working route and exact artifact hashes can be checked without rerunning
+the long Sage calculations via:
+
+```bash
+python3 elkies-k3/scripts/success-path/verify_ledger.py
+```
+
 The same root-adapted quotient search continues through three further
 rank-growing degree-two steps.  The selected path is reproduced by:
 

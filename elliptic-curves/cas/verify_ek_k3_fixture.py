@@ -23,7 +23,7 @@ from pari_bridge import minimal_curve_data, pari_version
 
 Q = Fraction
 DEFAULT_OUTPUT = Path(
-    "artifacts/generated-results/elliptic_ek_k3_crt_fixture.json"
+    "artifacts/generated-results/elliptic-curves/elliptic_ek_k3_crt_fixture.json"
 )
 CONDUCTOR_TARGET_LOG = "182.72"
 

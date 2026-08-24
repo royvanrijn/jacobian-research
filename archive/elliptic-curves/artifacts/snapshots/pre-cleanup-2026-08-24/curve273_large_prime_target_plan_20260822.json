@@ -1,0 +1,124 @@
+{
+  "exact_row_count": 444,
+  "factor_base_bound": 1000000,
+  "large_prime_column_count": 962,
+  "large_prime_nullity": 0,
+  "large_prime_rank": 444,
+  "reproduction": {
+    "search_script": "elliptic-curves/cas/search_curve273_ideal_lattice_relations.sage",
+    "selection": "elimination pivots first, then higher incidence, then smaller rational prime",
+    "target_syntax": "rational_prime:residue"
+  },
+  "schema": "elliptic-curves.bnf-free-large-prime-target-plan.v1",
+  "status": "EXACT_SPARSE_INCIDENT_TARGETS_NOT_A_SELMER_CERTIFICATE",
+  "targets": [
+    {
+      "first_witness_relation_id": "-593306534716681716845589350027126",
+      "is_elimination_pivot": true,
+      "occurrence_count": 51,
+      "prime_ideal_hnf": "[541738517197, 211692896808, 387500018801; 0, 1, 0; 0, 0, 1]",
+      "rank": 1,
+      "rational_prime": 541738517197,
+      "residue": 261717997519
+    },
+    {
+      "first_witness_relation_id": "I9",
+      "is_elimination_pivot": true,
+      "occurrence_count": 28,
+      "prime_ideal_hnf": "[555442705507, 130855586712, 55016482458; 0, 1, 0; 0, 0, 1]",
+      "rank": 2,
+      "rational_prime": 555442705507,
+      "residue": 488627836116
+    },
+    {
+      "first_witness_relation_id": "I1",
+      "is_elimination_pivot": true,
+      "occurrence_count": 27,
+      "prime_ideal_hnf": "[28691731813798755604363789, 26696487237142814956994105, 20702700704091522997676192; 0, 1, 0; 0, 0, 1]",
+      "rank": 3,
+      "rational_prime": 28691731813798755604363789,
+      "residue": 17957201189903465826327159
+    },
+    {
+      "first_witness_relation_id": "-593306534277332999663772159331636",
+      "is_elimination_pivot": true,
+      "occurrence_count": 25,
+      "prime_ideal_hnf": "[1858485403, 753840311, 1506487813; 0, 1, 0; 0, 0, 1]",
+      "rank": 4,
+      "rational_prime": 1858485403,
+      "residue": 649378816
+    },
+    {
+      "first_witness_relation_id": "curve273-t9-child3-r18-20260821.log:11:none",
+      "is_elimination_pivot": true,
+      "occurrence_count": 21,
+      "prime_ideal_hnf": "[219442555432819, 135427819930909, 67748195617631; 0, 1, 0; 0, 0, 1]",
+      "rank": 5,
+      "rational_prime": 219442555432819,
+      "residue": 97804953218736
+    },
+    {
+      "first_witness_relation_id": "curve273-t9-child4-r18-20260821.log:11:none",
+      "is_elimination_pivot": true,
+      "occurrence_count": 20,
+      "prime_ideal_hnf": "[43227222059503, 28516775358510, 3781721179938; 0, 1, 0; 0, 0, 1]",
+      "rank": 6,
+      "rational_prime": 43227222059503,
+      "residue": 2712354130431
+    },
+    {
+      "first_witness_relation_id": "I1",
+      "is_elimination_pivot": true,
+      "occurrence_count": 7,
+      "prime_ideal_hnf": "[7159638381133483906634203654283170391, 5567187587405890454823063838320148809, 4298031361504812024910394914143008433; 0, 1, 0; 0, 0, 1]",
+      "rank": 7,
+      "rational_prime": 7159638381133483906634203654283170391,
+      "residue": 12780381281373253031851035100853459
+    },
+    {
+      "first_witness_relation_id": "I6",
+      "is_elimination_pivot": true,
+      "occurrence_count": 3,
+      "prime_ideal_hnf": "[110082763798456567967312309869978698968187793, 10858349998268285574697746074342061825055881, 59853805955702031706290671052277355633432785; 0, 1, 0; 0, 0, 1]",
+      "rank": 8,
+      "rational_prime": 110082763798456567967312309869978698968187793,
+      "residue": 12357613814041997795032595200900142542684867
+    },
+    {
+      "first_witness_relation_id": "I7",
+      "is_elimination_pivot": true,
+      "occurrence_count": 2,
+      "prime_ideal_hnf": "[38169724803043, 5558013610659, 30578120344080; 0, 1, 0; 0, 0, 1]",
+      "rank": 9,
+      "rational_prime": 38169724803043,
+      "residue": 26317327110158
+    },
+    {
+      "first_witness_relation_id": "I3",
+      "is_elimination_pivot": true,
+      "occurrence_count": 2,
+      "prime_ideal_hnf": "[50777509904197, 49840644375340, 44316483353197; 0, 1, 0; 0, 0, 1]",
+      "rank": 10,
+      "rational_prime": 50777509904197,
+      "residue": 8431789759716
+    },
+    {
+      "first_witness_relation_id": "I5",
+      "is_elimination_pivot": true,
+      "occurrence_count": 2,
+      "prime_ideal_hnf": "[241667315076287, 179520357775721, 227695552977298; 0, 1, 0; 0, 0, 1]",
+      "rank": 11,
+      "rational_prime": 241667315076287,
+      "residue": 75987985552523
+    },
+    {
+      "first_witness_relation_id": "I8",
+      "is_elimination_pivot": true,
+      "occurrence_count": 2,
+      "prime_ideal_hnf": "[231573912732876911, 164914748075590755, 133927763422931749; 0, 1, 0; 0, 0, 1]",
+      "rank": 12,
+      "rational_prime": 231573912732876911,
+      "residue": 136784656449821585
+    }
+  ]
+}

@@ -127,9 +127,9 @@ theorem.
   later applied conditionally to the rank-29 curve; it is about the earlier
   rank-28 curve, not a proof about the new curve.
 - The generated [rank-21/conductor public-data
-  audit](../artifacts/generated-results/elliptic_rank21_conductor_public_data_audit.json)
+  audit](../archive/elliptic-curves/artifacts/generated-results/elliptic_rank21_conductor_public_data_audit.json)
   and [rank-30 public-source
-  audit](../artifacts/generated-results/elliptic_rank30_public_source_audit.json)
+  audit](../archive/elliptic-curves/artifacts/generated-results/elliptic_rank30_public_source_audit.json)
   pin and hash the exact source snapshots inspected through 2026-08-14.  They
   replay all 225 printed points on Dujella's rank-21 through rank-29 pages and
   find no public curve meeting either target in their declared scope. This

@@ -1,0 +1,53 @@
+{
+  "affine_line_crossing": {
+    "common_triangular_orientation_gives_hyperelliptic_conjugates": true,
+    "scope_limit": "this rules out a same-point affine crossing for the displayed pair, not intersections at infinity or reducible-fibre contributions"
+  },
+  "base_field": "Q(p,T)",
+  "relation": "P1+P2=sum relation_vector[i]*V_i in the component root order",
+  "relation_vector": [
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0
+  ],
+  "status": "exact generic relation verified",
+  "visible_relations": [
+    [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1
+    ]
+  ]
+}

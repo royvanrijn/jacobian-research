@@ -132,7 +132,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--batch", type=Path,
-        default=Path("artifacts/generated-results/elliptic-curves/newfamily_rank_gain_batch_v1.json"),
+        default=Path("artifacts/generated-results/elliptic-curves/newfamily_exact_subgroup_rank_gain_batch_v1.json"),
     )
     ap.add_argument("--parameter", action="append", required=True)
     ap.add_argument("--effort", type=int, default=0)

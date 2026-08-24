@@ -35,7 +35,7 @@ from probe_mestre_two_section_local_continuation import (
 
 Q = Fraction
 DEFAULT_INPUT = Path(
-    "artifacts/generated-results/elliptic_mestre_root_tuple_scale_max200.json"
+    "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_root_tuple_scale_max200.json"
 )
 DEFAULT_PRIMES = (7, 11, 13, 17)
 

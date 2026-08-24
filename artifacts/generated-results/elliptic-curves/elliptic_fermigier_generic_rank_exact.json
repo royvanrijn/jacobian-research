@@ -1,0 +1,531 @@
+{
+  "H2_frobenius": {
+    "Newton_trace_replay": {
+      "degree_1": 562,
+      "degree_2": 30238
+    },
+    "Weil_absolute_values_and_reciprocity_checked_exactly": true,
+    "cyclotomic_gcd_checks": [
+      {
+        "gcd_degree": 0,
+        "order": 1
+      },
+      {
+        "gcd_degree": 0,
+        "order": 2
+      },
+      {
+        "gcd_degree": 0,
+        "order": 3
+      },
+      {
+        "gcd_degree": 0,
+        "order": 4
+      },
+      {
+        "gcd_degree": 0,
+        "order": 5
+      },
+      {
+        "gcd_degree": 0,
+        "order": 6
+      },
+      {
+        "gcd_degree": 0,
+        "order": 8
+      },
+      {
+        "gcd_degree": 0,
+        "order": 10
+      },
+      {
+        "gcd_degree": 0,
+        "order": 12
+      }
+    ],
+    "full_H2_characteristic_polynomial": "X**22 - 562*X**21 + 142803*X**20 - 21436112*X**19 + 2064390713*X**18 - 125887652550*X**17 + 3834724396899*X**16 + 85273871334432*X**15 - 16626951378316494*X**14 + 948577177518658316*X**13 - 27927643295411237066*X**12 + 46946368379586289507946*X**10 - 2680452393722301441678476*X**9 + 78979752257041973589651054*X**8 - 680905486603124111616394272*X**7 - 51472199127904913312501804499*X**6 + 2840464827247793571133574156550*X**5 - 78300744372450720410386572730793*X**4 + 1366745727697965314112216892931792*X**3 - 15305472878956441401440315947407363*X**2 + 101254294021508562380702773488418162*X - 302862043149743582494593171234930481",
+    "full_H2_coefficients_descending": [
+      "1",
+      "-562",
+      "142803",
+      "-21436112",
+      "2064390713",
+      "-125887652550",
+      "3834724396899",
+      "85273871334432",
+      "-16626951378316494",
+      "948577177518658316",
+      "-27927643295411237066",
+      "0",
+      "46946368379586289507946",
+      "-2680452393722301441678476",
+      "78979752257041973589651054",
+      "-680905486603124111616394272",
+      "-51472199127904913312501804499",
+      "2840464827247793571133574156550",
+      "-78300744372450720410386572730793",
+      "1366745727697965314112216892931792",
+      "-15305472878956441401440315947407363",
+      "101254294021508562380702773488418162",
+      "-302862043149743582494593171234930481"
+    ],
+    "full_H2_coefficients_sha256": "7a9cad9d71041b9bdbc21d7412a58da2a05df1d8a75f1745032a45607a9f6f68",
+    "full_positive_p_eigenvalue_multiplicity": 17,
+    "known_Q_defined_divisor_eigenvalues_removed": 17,
+    "known_factor": "(X-41)^17",
+    "normalized_residual_quartic": "Z**4 + 94*Z**3/41 + 108*Z**2/41 + 94*Z/41 + 1",
+    "pair_sums_U_V": [
+      "-47+3*sqrt(127)",
+      "-47-3*sqrt(127)"
+    ],
+    "reciprocal_Weil_reconstruction": [
+      {
+        "pair_product_U_times_V": 1066,
+        "pair_square_sum_U2_plus_V2": 6704,
+        "pair_sum_U_plus_V": -94,
+        "pair_sum_discriminant": 4572,
+        "real_eigenvalue_sign": -1,
+        "satisfies_exact_Weil_interval": true
+      },
+      {
+        "pair_product_U_times_V": 12136,
+        "pair_square_sum_U2_plus_V2": 6704,
+        "pair_sum_U_plus_V": -176,
+        "pair_sum_discriminant": -17568,
+        "real_eigenvalue_sign": 1,
+        "satisfies_exact_Weil_interval": false
+      }
+    ],
+    "residual_characteristic_polynomial": "X**5 + 135*X**4 + 8282*X**3 + 339562*X**2 + 9304335*X + 115856201",
+    "residual_characteristic_polynomial_at_positive_p": 2136275316,
+    "residual_p_times_root_of_unity_multiplicity_upper_bound": 1,
+    "residual_positive_p_eigenvalue_multiplicity": 0,
+    "residual_quartic": "X**4 + 94*X**3 + 4428*X**2 + 158014*X + 2825761",
+    "residual_traces": {
+      "degree_1": -135,
+      "degree_2": 1661
+    },
+    "unique_real_residual_eigenvalue": "-41"
+  },
+  "conditional_inferences": [],
+  "exact_generic_sections": {
+    "adapter_parameter_used_only_for_specialization": "19754/39",
+    "certificate": {
+      "relation_prime": 5,
+      "rows": [
+        {
+          "generator": [
+            0,
+            38
+          ],
+          "group_order": 75,
+          "logs": [
+            56,
+            70,
+            27,
+            49,
+            3,
+            64,
+            65,
+            59,
+            70,
+            54,
+            29,
+            53
+          ],
+          "prime": 61
+        },
+        {
+          "generator": [
+            1,
+            4
+          ],
+          "group_order": 80,
+          "logs": [
+            34,
+            68,
+            54,
+            72,
+            46,
+            50,
+            56,
+            18,
+            32,
+            76,
+            42,
+            24
+          ],
+          "prime": 67
+        },
+        {
+          "generator": [
+            0,
+            12
+          ],
+          "group_order": 90,
+          "logs": [
+            16,
+            84,
+            18,
+            74,
+            26,
+            10,
+            34,
+            66,
+            50,
+            76,
+            14,
+            52
+          ],
+          "prime": 73
+        },
+        {
+          "generator": [
+            1,
+            21
+          ],
+          "group_order": 115,
+          "logs": [
+            61,
+            106,
+            91,
+            89,
+            86,
+            99,
+            71,
+            66,
+            76,
+            20,
+            21,
+            95
+          ],
+          "prime": 97
+        },
+        {
+          "generator": [
+            2,
+            69
+          ],
+          "group_order": 150,
+          "logs": [
+            22,
+            10,
+            108,
+            116,
+            94,
+            20,
+            80,
+            138,
+            62,
+            48,
+            148,
+            4
+          ],
+          "prime": 131
+        },
+        {
+          "generator": [
+            7,
+            125
+          ],
+          "group_order": 220,
+          "logs": [
+            36,
+            110,
+            96,
+            162,
+            60,
+            44,
+            152,
+            214,
+            98,
+            210,
+            2,
+            168
+          ],
+          "prime": 193
+        },
+        {
+          "generator": [
+            1,
+            39
+          ],
+          "group_order": 225,
+          "logs": [
+            210,
+            32,
+            71,
+            54,
+            130,
+            197,
+            151,
+            95,
+            33,
+            14,
+            123,
+            68
+          ],
+          "prime": 199
+        },
+        {
+          "generator": [
+            12,
+            218
+          ],
+          "group_order": 230,
+          "logs": [
+            132,
+            8,
+            6,
+            120,
+            152,
+            218,
+            124,
+            186,
+            48,
+            160,
+            168,
+            214
+          ],
+          "prime": 223
+        },
+        {
+          "generator": [
+            0,
+            6
+          ],
+          "group_order": 230,
+          "logs": [
+            112,
+            74,
+            18,
+            52,
+            142,
+            104,
+            116,
+            142,
+            124,
+            4,
+            164,
+            218
+          ],
+          "prime": 227
+        },
+        {
+          "generator": [
+            1,
+            139
+          ],
+          "group_order": 265,
+          "logs": [
+            242,
+            20,
+            170,
+            46,
+            29,
+            8,
+            57,
+            152,
+            97,
+            107,
+            254,
+            262
+          ],
+          "prime": 241
+        },
+        {
+          "generator": [
+            3,
+            134
+          ],
+          "group_order": 290,
+          "logs": [
+            10,
+            202,
+            170,
+            228,
+            192,
+            16,
+            132,
+            138,
+            208,
+            254,
+            152,
+            22
+          ],
+          "prime": 263
+        },
+        {
+          "generator": [
+            7,
+            143
+          ],
+          "group_order": 300,
+          "logs": [
+            100,
+            32,
+            216,
+            172,
+            214,
+            50,
+            282,
+            102,
+            152,
+            146,
+            106,
+            94
+          ],
+          "prime": 281
+        }
+      ],
+      "torsion_witness": {
+        "group_order": 18,
+        "prime": 11
+      }
+    },
+    "certificate_primes": [
+      61,
+      67,
+      73,
+      97,
+      131,
+      193,
+      199,
+      223,
+      227,
+      241,
+      263,
+      281
+    ],
+    "certified_generic_Mordell_Weil_rank_lower_bound": 12,
+    "combined_exact_matrix_rank": 12,
+    "generic_inference": "the twelve points are specializations of rational sections; any generic integral relation would specialize, so exact specialized independence proves rank at least twelve over Q(u)",
+    "literal_shift": "39508/39",
+    "quartic_section_count": 13,
+    "relation_prime": 5,
+    "section_difference_count": 12,
+    "section_difference_sha256": "958a353754ad69c1023dbbe2c729918ed6e2d204f0dc502664316ae157c9e66e",
+    "status": "exact finite-reduction independence certificate replayed",
+    "torsion_witness": {
+      "group_order": 18,
+      "prime": 11
+    }
+  },
+  "fiber_inventory": {
+    "Euler_number": 24,
+    "finite_discriminant": {
+      "coprime_to_c4_over_Q": true,
+      "degree": 20,
+      "geometric_fibers": "20 fibers of Kodaira type I1",
+      "squarefree_over_Q": true
+    },
+    "fundamental_line_bundle_degree": 2,
+    "infinity_fiber": {
+      "Kodaira_type": "I4",
+      "factorization": "(X-8)^2*(X+8)",
+      "scaled_c4_at_infinity": 4096,
+      "scaled_discriminant_order": 4,
+      "scaled_special_cubic": "X**3 - 8*X**2 - 64*X + 512",
+      "split_over_Q": true,
+      "tangent_slopes_at_node": [
+        -4,
+        4
+      ]
+    },
+    "surface_type": "elliptic K3 over P1_u",
+    "trivial_lattice": {
+      "I4_component_rank": 3,
+      "I4_root_lattice": "A3",
+      "all_generators_defined_over_Q": true,
+      "rank": 5,
+      "zero_section_and_fiber_rank": 2
+    },
+    "weierstrass_coefficient_degrees": {
+      "a1": 0,
+      "a2": 4,
+      "a3": 0,
+      "a4": 8,
+      "a6": 12
+    }
+  },
+  "good_reduction": {
+    "finite_discriminant_coprime_to_c4": true,
+    "finite_discriminant_degree": 20,
+    "finite_discriminant_squarefree": true,
+    "finite_fibers": "20 geometrically simple I1 fibers",
+    "good_reduction_of_resolved_K3": true,
+    "infinity_fiber": "split I4 with distinct roots 8,-8 and slopes +/-4",
+    "infinity_scaled_c4_mod_p": 37,
+    "infinity_scaled_discriminant_leading_coefficient_mod_p": 25,
+    "prime": 41
+  },
+  "model_bridge": {
+    "all_identities_checked_coefficientwise": true,
+    "canonical_model": "[1,a2(u),1,a4(u),a6(u)]",
+    "canonical_parameter": "u",
+    "factor_two_source_discrepancy_resolved_here": false,
+    "literal_symmetric_shift": "s=2*u",
+    "normalized_quartic_invariants": {
+      "I": "c4(C_u)",
+      "J": "2*c6(C_u)"
+    },
+    "primitive_discriminant_identity": "Psi(2*u)=16*Phi(u)",
+    "raw_invariant_identities": {
+      "I_raw": "101232^4*u^4*c4(C_u)",
+      "J_raw": "2*101232^6*u^6*c6(C_u)"
+    },
+    "raw_quartic_scale": "(50616*s)^2=(101232*u)^2"
+  },
+  "point_counts": {
+    "1": {
+      "field_size": 41,
+      "finite_affine_character_sum": 358,
+      "h2_frobenius_trace": 562,
+      "split_I4_infinity_points": 164,
+      "surface_point_count": 2244
+    },
+    "2": {
+      "field_size": 1681,
+      "finite_affine_character_sum": 21834,
+      "h2_frobenius_trace": 30238,
+      "split_I4_infinity_points": 6724,
+      "surface_point_count": 2856000
+    }
+  },
+  "provenance": {
+    "canonical_adapter_source_sha256": "960678a1991f424694b99fcc8eff6100fdc93200c64588328d55ae95186529c8",
+    "finite_certificate_verifier_sha256": "ace707dd17de4244f3fa9ba53af1c4999f7c4a9edbc2c79724b58c373781b5ef",
+    "frozen_section_certificate": "artifacts/generated-results/elliptic-curves/fermigier_rank_certificates_v1.json",
+    "frozen_section_certificate_sha256": "94fc64d7f1744f6a20a0396d32914cd36330107db2538e03ee95cc3e32927051",
+    "reproducing_command": "PYTHONPATH=elliptic-curves/cas:elliptic-curves .venv/bin/python elliptic-curves/cas/verify_fermigier_generic_rank_exact.py",
+    "script_path": "elliptic-curves/cas/verify_fermigier_generic_rank_exact.py",
+    "script_sha256": "84fd1b08f742cb338e391b826b6f76f238ae377ad77e1b8d3bff85485e5ddb14",
+    "section_source_sha256": "59742cd9c98f61e318ccb6f95e632ec4f84660e87222f4ed8f912bc5394f9596"
+  },
+  "result_sha256": "0f9b048f7d56a68b7f3343d2bb49153bd5989da903040a7c75118e55c15d3a61",
+  "schema_version": 1,
+  "scope_limits": [
+    "does not decide whether the geometric generic rank is 12 or 13",
+    "does not determine the rank of every specialization",
+    "does not itself produce a rank-21 or rank-30 curve",
+    "does not resolve Fermigier's printed factor-two parameter discrepancy"
+  ],
+  "software": {
+    "python": "3.14.6",
+    "sympy": "1.14.0"
+  },
+  "status": "exact arithmetic generic-rank theorem",
+  "theorem": {
+    "Q_defined_Neron_Severi_plus_p_eigenspace_dimension": 17,
+    "Tate_conjecture_assumed": false,
+    "argument": "the zero section, fiber, three split-I4 components, and twelve exact sections give 17 Q-defined classes. Any further Q(u)-section would, by Shioda--Tate and smooth proper specialization, add a +41 eigenvector in H2. The reconstructed polynomial has +41 multiplicity exactly 17. A geometric divisor can only contribute 41 times a root of unity; the residual factor permits only the single eigenvalue -41.",
+    "arithmetic_generic_Mordell_Weil_rank_over_Q_of_u": 12,
+    "arithmetic_rank_status": "proved unconditionally",
+    "geometric_Picard_rank_upper_bound": 18,
+    "geometric_generic_Mordell_Weil_rank_interval_over_Qbar_of_u": [
+      12,
+      13
+    ],
+    "geometric_rank_status": "proved unconditional interval; this computation does not decide 12 versus 13"
+  }
+}

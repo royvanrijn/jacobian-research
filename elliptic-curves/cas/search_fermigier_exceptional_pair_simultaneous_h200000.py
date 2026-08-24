@@ -72,11 +72,11 @@ EXPECTED_PAIR_COUNT = 3_160
 E22_T = Q(39_508, 39)
 RANK20_T = Q(28_917, 10)
 TRANSPORT_RELATIVE = Path(
-    "artifacts/generated-results/elliptic_fermigier_exceptional_transport.json"
+    "artifacts/generated-results/elliptic-curves/elliptic_fermigier_exceptional_transport.json"
 )
-TRANSPORT_SHA256 = "a767e849119d4eb974eb8e85536031413c6d52a59151933239fa141235de5777"
+TRANSPORT_SHA256 = "879ff779a6799f3c463b530a5a8a63286ce192fcd57fdd12a4b1178414e36961"
 TRANSPORT_RESULT_SHA256 = (
-    "db07f28e39c73c4e66fdf29bf11d652bb8714525e93f05f819ec1477107a4d0c"
+    "50b52cc7c0701579df3eb69cd4ee3602bb4793afcc40e0d40feb8ec98d35dc06"
 )
 
 T_SCALAR_KEYS = {
@@ -233,11 +233,14 @@ def extract_literal_parameters(value: Any, *, key: str | None = None) -> set[Fra
 def prior_parameter_snapshot(
     root: Path, output_path: Path
 ) -> tuple[set[Fraction], dict[str, Any]]:
-    artifact_dir = root / "artifacts/generated-results"
+    artifact_dir = root / "artifacts/generated-results/elliptic-curves"
     paths = {
         *artifact_dir.glob("elliptic_fermigier*.json"),
         *artifact_dir.glob("elliptic_curve_candidate_fermigier*.json"),
-        *(artifact_dir / "elliptic-curves").glob("fermigier*.json"),
+        *artifact_dir.glob("fermigier*.json"),
+        *(root / "archive/elliptic-curves/artifacts/generated-results").glob(
+            "elliptic_fermigier*.json"
+        ),
     }
     output_resolved = output_path.resolve()
     parameters = {abs(E22_T), abs(RANK20_T)}
@@ -885,7 +888,7 @@ def main() -> None:
         "--output",
         type=Path,
         default=root
-        / "artifacts/generated-results/elliptic_fermigier_exceptional_pair_simultaneous_h200000.json",
+        / "artifacts/generated-results/elliptic-curves/elliptic_fermigier_exceptional_pair_simultaneous_h200000.json",
     )
     args = parser.parse_args()
     artifact = run(root, args.output, workers=args.workers)

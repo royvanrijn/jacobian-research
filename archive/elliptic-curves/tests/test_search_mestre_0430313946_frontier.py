@@ -40,11 +40,11 @@ from search_mestre_root_tuple_scale import capped_minimal_curve_data  # noqa: E4
 
 ARTIFACT = (
     REPO_ROOT
-    / "artifacts/generated-results/elliptic_mestre_0430313946_frontier.json"
+    / "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_0430313946_frontier.json"
 )
 SCALE_ARTIFACT = (
     REPO_ROOT
-    / "artifacts/generated-results/elliptic_mestre_root_tuple_scale.json"
+    / "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_root_tuple_scale.json"
 )
 SCRIPT = CAS_DIRECTORY / "search_mestre_0430313946_frontier.py"
 SCANNER = CAS_DIRECTORY / "scan_mestre_0430313946.cpp"

@@ -10,7 +10,7 @@ independent specialization certificate described in
 [`families/kihara_rank14.json`](../families/kihara_rank14.json).
 
 The formulas are checked by
-[`cas/derive_kihara_rank14_identities.py`](../cas/derive_kihara_rank14_identities.py)
+[`derive_kihara_rank14_identities.py`](../../archive/elliptic-curves/cas/derive_kihara_rank14_identities.py)
 over exact rational-function fields.
 
 ## The intrinsic six-center condition
@@ -239,8 +239,8 @@ does not claim it is the unique or necessary parametrization.
 With SymPy 1.14 installed:
 
 ```bash
-python3 elliptic-curves/cas/derive_kihara_rank14_identities.py
-python3 elliptic-curves/cas/derive_kihara_rank14_identities.py --full-polynomials
+python3 archive/elliptic-curves/cas/derive_kihara_rank14_identities.py
+python3 archive/elliptic-curves/cas/derive_kihara_rank14_identities.py --full-polynomials
 ```
 
 The first command is compact; the second also emits the full degree-58 and

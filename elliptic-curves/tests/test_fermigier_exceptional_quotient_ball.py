@@ -29,13 +29,13 @@ from classify_fermigier_exceptional_quotient_ball import (  # noqa: E402
 SCRIPT = CAS / "classify_fermigier_exceptional_quotient_ball.py"
 ARTIFACT = (
     ROOT
-    / "artifacts/generated-results/elliptic_fermigier_exceptional_quotient_ball.json"
+    / "artifacts/generated-results/elliptic-curves/elliptic_fermigier_exceptional_quotient_ball.json"
 )
 EXPECTED_ARTIFACT_SHA256 = (
-    "4e1f49f57fa9448b1172a3be4f16501138b21a3a7444ec39b27292f7430b1362"
+    "fd70a03a49c27322d6b74fcc2dad30576e761b8fbe46f911fa302a5c004192b2"
 )
 EXPECTED_RESULT_SHA256 = (
-    "a64a37d53284052c26140c2fcad123dd67eeac95b478df8934c484ffe533fd00"
+    "0d731a8aac70e7238dc20f4e392d0c0d7ee59cea4b5de3588d506110ce05af01"
 )
 
 

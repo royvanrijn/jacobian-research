@@ -14,7 +14,7 @@ from ecsearch.rank_certification import add_rational_points, select_independent_
 from elliptic_candidate_record import WeierstrassChange, change_weierstrass_model, source_point_to_target, target_point_to_source, weierstrass_invariants
 from fermigier_mestre import FermigierMestreFamily
 
-DEFAULT_INPUT = ROOT / "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_281_282_285_286.json"
+DEFAULT_INPUT = ROOT / "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json"
 DEFAULT_OUTPUT = ROOT / "artifacts/generated-results/elliptic-curves/icarm_curve282_fermigier_v1.json"
 ADAPTER_PARAMETER = Q(11671, 42)
 LITERAL_SHIFT = 2 * ADAPTER_PARAMETER

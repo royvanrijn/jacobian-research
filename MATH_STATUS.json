@@ -30508,7 +30508,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Finite-reduction independence and certified Nagao rank-17 frontier",
-      "scope": "For an elliptic curve E/Q with E(Q)[2]=0, rational points whose images have full F_2 column rank in a finite product of good-reduction quotients E(F_p)/2E(F_p) are Z-independent: reduction forces every relation coefficient to be even, division produces rational 2-torsion, and iteration forces all coefficients to vanish. Exact rational point checks, exhaustive finite-group calculations, trivial-2-torsion certificates, and direct conductor replays apply this criterion to the Nagao base-change specializations (u,T)=(135/2,5065/36),(471/11,5579/22),(42,3631/14),(74,9037/74), certifying rank E_u(Q)>=17. Their respective recorded log-conductors are 144.927455914576..., 146.678928806750..., 148.621053634068..., and 151.423206831026...; more fundamentally, all four exact conductors satisfy N<10^66, and an exact exponential-series bound gives ln(10)<231/100, hence ln(N)<152.46<182.72. The generated certificate is artifacts/generated-results/elliptic_nagao_rank17_frontier_certificate.json (SHA-256 7378ce59c72974fe39e0e2a40c740f6a96e8dc555a1361b5aaeef67f4d9e0213). Neither requested target is certified: no rank-at-least-21 curve below the threshold and no rank-at-least-30 curve is established; each displayed rank certificate is four independent points short of the first target.",
+      "scope": "For an elliptic curve E/Q with E(Q)[2]=0, rational points whose images have full F_2 column rank in a finite product of good-reduction quotients E(F_p)/2E(F_p) are Z-independent: reduction forces every relation coefficient to be even, division produces rational 2-torsion, and iteration forces all coefficients to vanish. Exact rational point checks, exhaustive finite-group calculations, trivial-2-torsion certificates, and direct conductor replays apply this criterion to the Nagao base-change specializations (u,T)=(135/2,5065/36),(471/11,5579/22),(42,3631/14),(74,9037/74), certifying rank E_u(Q)>=17. Their respective recorded log-conductors are 144.927455914576..., 146.678928806750..., 148.621053634068..., and 151.423206831026...; more fundamentally, all four exact conductors satisfy N<10^66, and an exact exponential-series bound gives ln(10)<231/100, hence ln(N)<152.46<182.72. The generated certificate is artifacts/generated-results/elliptic-curves/elliptic_nagao_rank17_frontier_certificate.json (SHA-256 2960c83f3a6319714f027f32c6dac77eb2c56a0bc173fefdaba0e45a341e1079). These four curves remain four independent points short of the low-conductor rank-at-least-21 target; the separate later records ECR30 and ECR31 establish the former high-rank branch.",
       "canonical_source": "elliptic-curves/THEORY.md",
       "dependencies": [
         "external: good-reduction specialization homomorphism for elliptic curves"
@@ -30518,7 +30518,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:ef0bad77064cb2f3fa96bf2fa09687a8c7ba840a3b8ef04a205e6d8134c9176d",
+      "artifact_hash": "sha256:01aeea239fc6527e2027458448e4951fa9663744b3f6934ce6315db0171c0b68",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -30536,7 +30536,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Certified Nagao section-7 rank-20 specialization below the conductor target",
-      "scope": "For Nagao's section-7 six-root construction (346,260,255,146,55,0), with paper parameter t=5081/94 and repository constructor parameter T=5081/47, exact quartic-to-Jacobian maps, exact saturation, a trivial-rational-2-torsion certificate, and finite good-reduction quotients give twenty Z-independent rational points. Hence the specialized elliptic curve has Mordell--Weil rank at least 20 over Q. Its exact conductor is 4739512365768104141634183882739432010081578062727282562384233196211945306960; an exact logarithm bound proves ln(N)<182.72 (PARI's recorded value is 174.2498162285480383539...), and the root number is +1. This moves the certified low-conductor frontier from rank 17 to rank 20, but it is not a target hit: a twenty-first independent point is not certified, and no rank-at-least-30 curve is obtained.",
+      "scope": "For Nagao's section-7 six-root construction (346,260,255,146,55,0), with paper parameter t=5081/94 and repository constructor parameter T=5081/47, exact quartic-to-Jacobian maps, exact saturation, a trivial-rational-2-torsion certificate, and finite good-reduction quotients give twenty Z-independent rational points. Hence the specialized elliptic curve has Mordell--Weil rank at least 20 over Q. Its exact conductor is 4739512365768104141634183882739432010081578062727282562384233196211945306960; an exact logarithm bound proves ln(N)<182.72 (PARI's recorded value is 174.2498162285480383539...), and the root number is +1. This moves the certified low-conductor frontier from rank 17 to rank 20, but it is not a low-conductor target hit because a twenty-first independent point is not certified.",
       "canonical_source": "elliptic-curves/THEORY.md",
       "dependencies": [
         "ECR17"
@@ -30546,7 +30546,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:8e05a04a9eac70ed998b430b49f78237a4d9ca9ef9ceb263895dfa0eba0f8dfd",
+      "artifact_hash": "sha256:6bd05ac5c7d46155d44a6a93974a9e4f43c07beb2edb39455e0357c2374f941e",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -30574,7 +30574,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:46a277e65ac9bb428c417f21dc435de3a281bbcee000e32d141ea1c6713c827a",
+      "artifact_hash": "sha256:36cff3512a4e65d4e3c3e43e47d680e46c46cad4c53feaf70a95081598b9aa34",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -30605,7 +30605,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:678b4860791d945516873dafcc5cecf14b8b0feb452ddfe33776dcf47ea6fdc3",
+      "artifact_hash": "sha256:de607b1b902a3ed235ca4e553c86a240d5a1c34e0e164972b024473fb6b7601a",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -30633,7 +30633,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:bd0183444fac10ee23ba2fd6e6a636827bde05cd24ad39b50239b8f5ccd9afd6",
+      "artifact_hash": "sha256:59b1f5dcd84479559635b53f50adc785dc1890cda94f70dfde1001bf62d63535",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -30676,6 +30676,97 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
+    },
+    {
+      "id": "ECR31",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Unconditional independent replay of the public rank-at-least-31 curve",
+      "scope": "For the 2026 public ICARM curve 302, all thirty-one displayed rational points satisfy the integral Weierstrass equation exactly. The rational change X=36*x+15, Y=108*(2*y+x+1) transports the curve and every point to the pinned integral short model. Exact exhaustive finite good-reduction quotients give a 32-by-31 binary matrix of column rank thirty-one, while the short 2-division cubic has no root modulo 31; independently, the coprime exact orders #E(F_17)=26 and #E(F_31)=43 prove that the full rational torsion subgroup is trivial. Infinite descent therefore proves rank E(Q)>=31 unconditionally. A separate Brumer--Cremona quadratic-character implementation independently reaches binary rank thirty-one. Exact invariant, primality, global-minimality, local-fibre, discriminant and conductor checks replay the public arithmetic data. The deterministic gzip artifact artifacts/generated-results/elliptic-curves/icarm_curve302_rank31_v1.json.gz has compressed SHA-256 fc50b4b9ec5fe1dd1fe31aa299f13d8bc3476d43f3ed98e2ade5a4fc8972aa04 and decompressed JSON SHA-256 3be0d6fe82c58e0f9284df5d9340332944a1d906508ea986d4abe00357036991. This proves neither an unconditional upper bound nor membership in the reconstructed H3/rootless-MW17 family.",
+      "canonical_source": "elliptic-curves/notes/ICARM_CURVE302_RANK31.md",
+      "dependencies": [
+        "ECR30",
+        "external: 2026 public ICARM curve 302 equation and thirty-one rational points"
+      ],
+      "checker": "elliptic-curves/cas/check_icarm_curve302_rank31_pinned.py",
+      "proof_type": "exact_modular",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:056dbc90c1490d6457c6573f0367e0fd573da6a2fbafc95e9017f85a7f587e5a",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt",
+        "elliptic-curves/cas/icarm_curve302.py",
+        "elliptic-curves/cas/verify_icarm_curve302_rank31.py"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-R21-ICARM",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Exact point-independence replay for two public low-conductor rank-21 candidates",
+      "scope": "For public ICARM curves 285 and 286, all twenty-one displayed points on each curve satisfy the stated equation and exact finite-reduction matrices have binary column rank twenty-one. Independent good-reduction witnesses prove trivial rational torsion. The imported public source gives conductors whose natural logarithms are respectively 173.25150319151186... and 177.88055301928193..., both below 182.72. Thus the point-independence half of the low-conductor target is replayed exactly for both curves, but repository-local global minimization and Tate-algorithm conductor reconstruction have not yet been completed. The programme therefore labels these as public target candidates with an exact local rank replay, not as a fully independent local target certificate.",
+      "canonical_source": "elliptic-curves/notes/ICARM_7FFF_ZIP_SEQUENCE.md",
+      "dependencies": [
+        "external: public ICARM 7fff-zip curve equations, points, and conductor data",
+        "external: finite-reduction and infinite-descent independence criterion"
+      ],
+      "checker": "elliptic-curves/cas/analyze_icarm_7fff_zip_sequence.py",
+      "proof_type": "reproduction",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:88d08059735f3cf33c773397503bcdd1608e258675a9c4244f1097b315f11e70",
+      "software_lock": [
+        ".python-version"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-NF-R14",
+      "kind": "example",
+      "state": "proved",
+      "title": "Exact rank-14 specialization in the new six-root quartic family",
+      "scope": "For the six-root quartic family with roots (-47,-43,-31,30,45,46) at T=83/6, exact eclib processing proves that the eleven committed hidden-section specializations have rank eleven and that three pinned additional rational points increase the subgroup rank successively to fourteen. PARI ellrank, supplied with those fourteen independent points, returns the unconditional interval [14,14] at effort zero. The matching lower and upper bounds prove rank E(Q)=14. The earlier subgroup certificate proves only rank at least fourteen and remains separately labelled; numerical Schur residuals were discovery triage and are not used in this conclusion.",
+      "canonical_source": "elliptic-curves/notes/NEWFAMILY_RANK14_T83_6.md",
+      "dependencies": [
+        "external: SageMath 10.9 eclib exact point processing",
+        "external: PARI/GP ellrank 2-descent and Cassels-pairing bounds"
+      ],
+      "checker": "elliptic-curves/cas/newfamily/certify_rank_t83_6.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:0c291ec82683dc327a4a670aba097b5403e19372369f2320f505efc76997b734",
+      "software_lock": [
+        "elliptic-curves/cas/newfamily/newfamily_rank11_common.py",
+        "elliptic-curves/cas/newfamily/hidden_sections_data.py",
+        "elliptic-curves/cas/newfamily/search_unseeded_extra_points_v3.py"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
     },
     {
       "id": "EC-CRT1",
@@ -30934,7 +31025,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:74de70ce1c362a8e73bafbded149abad576e363fcbc97b086213bc6d5af719d5",
+      "artifact_hash": "sha256:84fd1b08f742cb338e391b826b6f76f238ae377ad77e1b8d3bff85485e5ddb14",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -30966,7 +31057,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:1b952dc40e085967309e123b2083d77703830cf0e0979d37ca06209781631a48",
+      "artifact_hash": "sha256:18e210c8f0a83f4c76609d777f261bc2acc2b2049e29ece592a15ddcf7277b22",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -30997,7 +31088,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:4d476ce3f153b9aaff5c1e44c1e13fca2147905dfd65a79d8d9f259b970f7d34",
+      "artifact_hash": "sha256:dbae97c8954d698b1434af20f414cbc8b41729f9e040596e3bf80dc370c65de7",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -31030,7 +31121,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:b5ed9a18d832289f06cf67c12329e64f82c8618ccdbd220fb10dd48e1d514f9c",
+      "artifact_hash": "sha256:0c3df7c25765c02eec77e3bdbae7e8c848b3ca4bbff01edc6d911b0b2b57a026",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -31063,7 +31154,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:e35f3a78097a2ea9dbc43048d122b306cfcb261c716fed83ad60d734c44a9089",
+      "artifact_hash": "sha256:44a3f90c416c6d0cba5e63cc7dab9ca13fb4300b9570a162b47b6e27a6c339bf",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -31100,7 +31191,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:403238fc23d3a793906b37d75ce4d7eace5026e5ab41a632aa06e4e358ce859a",
+      "artifact_hash": "sha256:d34caeb6b34bbad14c7c7cdf29436c455e25c957080c967d7f17ba0759d28fa2",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -31135,7 +31226,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:cf1b6740e6127e7cbf92cf49dccd30c71c8ca6113c2d00fa1ec535a4fc0e0f01",
+      "artifact_hash": "sha256:563583f301f75106c64b71de6f57c9963d19cf79826041a8137dcd52589049fd",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -31165,7 +31256,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:1dbe3cb7b95991d671f4df64109012afe36ac568556224298e8d8892941b3044",
+      "artifact_hash": "sha256:2e1c3617e01e9e8e02ed8a54fa4c33dc07e4e4a1352176ae74bb9a490997a7b6",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -31316,7 +31407,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:68bb4137f8fdd642df33833f790947560ed23c035d6e024c99ffa0266166e188",
+      "artifact_hash": "sha256:9fdcfe1a122c59263d5b36c00aeed8e12aa63bc073575d5b691c61a52b9d5159",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -31350,7 +31441,7 @@
       "independent_replay": true,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:5c9c9010a707a166e5b32ff6917f9a4106e1e095d47236a5d4a65b6d2908ac46",
+      "artifact_hash": "sha256:65ae1e320fa670d05eaec54ac542cd8a2042d21c61c1102212a6179654a6903d",
       "software_lock": [
         ".python-version",
         "requirements.txt"
@@ -33673,7 +33764,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:154895accc1faa4a77d25f2c5856285aef972de66c92178f673febdd004053e2",
+      "artifact_hash": "sha256:4da9e79e4142d1daf56554df982fde59a23ba8a96f74505261cc5f19abca393d",
       "software_lock": [
         "requirements.txt"
       ],
@@ -33779,11 +33870,110 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "OP-EC-NEXT"
+        "OP-EC-NEXT",
+        "EC-K3-H3-Q24-O42-I8STAR-MARKING",
+        "EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT",
+        "EC-K3-H3-Q24-O42-FAST-Q6-AUDIT"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-Q24-O42-I8STAR-MARKING",
+      "kind": "example",
+      "state": "proved",
+      "title": "Exact physical I8* marking for the H3 q24 orbit42 continuation",
+      "scope": "On the exact D12/MW5 parent certified by EC-K3-H3-Q24-QQ-D12, the corrected q6/orbit42 profile has MW coordinates (-1,0,-1,-1,0), height 7, local correction 3, P.O=3, fibre twist zero, and divisor D42=O+P+V. Exact ordinary blow-ups over QQ resolve the I8* germ through eleven centres into twelve physical components. Their incidence graph and fibre multiplicities match the abstract D12 frame, and exactly two spinor-arm orientations survive: the marked section meets C11 in one and C10 in the other. This proves the local physical component marking only; it does not construct the resolved Riemann--Roch kernel, the orbit42 pencil, or the A11/MW6 child equation.",
+      "canonical_source": "elkies-k3/ORBIT42_EQUATION_LIFT.md",
+      "dependencies": [
+        "EC-K3-H3-Q24-QQ-D12"
+      ],
+      "checker": "elkies-k3/scripts/map_h92_q24_orbit42_i8star_physical_components_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:0bf6ae093975cbc161a5c9db0e69ef665fd2983abe28baa6b4af84bba5797746",
+      "software_lock": [
+        "elkies-k3/scripts/preflight_h92_q24_orbit42_component_valuation_qq.sage",
+        "elkies-k3/scripts/map_h92_q24_orbit42_i8star_physical_components_qq.sage",
+        "elkies-k3/scripts/success-path/ledger.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT",
+      "kind": "example",
+      "state": "proved",
+      "title": "Exact rational zero-pole boundary audit on the H3 q24 D12 parent",
+      "scope": "On the exact D12/MW5 parent certified by EC-K3-H3-Q24-QQ-D12, a pinned mod-53 scan supplies eighteen depth-four seeds arranged in nine signed x-coordinate pairs. Degree-adapted nonsingular p-adic Newton lifting to precision 65536, rational reconstruction, and exact substitution produce eighteen characteristic-zero rational zero-pole sections, each with an exact Weierstrass identity and modular regression. These are the identity-class sections. This exact audit shows why that easy shortcut does not supply the selected nontrivial spinor class; it is not a global non-existence result and does not prove MW matching, the orbit42 RR pencil, or the A11/MW6 child equation.",
+      "canonical_source": "elkies-k3/ORBIT42_EQUATION_LIFT.md",
+      "dependencies": [
+        "EC-K3-H3-Q24-QQ-D12"
+      ],
+      "checker": "elkies-k3/scripts/lift_h92_q24_orbit42_zero_pole_sections_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d3ab8419621307760b072f2ecab9173bd44882d9fd9e20b70e92900670ef0b52",
+      "software_lock": [
+        "elkies-k3/scripts/recover_h92_q24_orbit42_zero_pole_smallprime.sage",
+        "elkies-k3/scripts/scan_h92_q24_orbit42_zero_pole_model_modp.sage",
+        "elkies-k3/scripts/lift_h92_q24_orbit42_zero_pole_sections_qq.sage",
+        "elkies-k3/scripts/success-path/ledger.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-K3-H3-Q24-O42-FAST-Q6-AUDIT",
+      "kind": "example",
+      "state": "proved",
+      "title": "Exact rejection of the fast q6 point-transport shortcut for orbit42",
+      "scope": "For the exact H3 q24 D12/MW5 parent and the orbit42 divisor classes, the named equation-D13-to-ambient change of basis is integral unimodular with determinant -1, preserves the Neron--Severi Gram matrix, and passes the q24 fibre roundtrip. Exact intersections then give O12 square -2 with q6 degree 435 and q8 degree 30, and P42 square -2 with q6 degree 703 and q8 degree 48. Thus neither class is a rational section of the q6 fibration, so the proposed fast q6 rational-point transport is invalid and is not run. This audit does not construct the orbit42 resolved Riemann--Roch pencil or the A11/MW6 child equation.",
+      "canonical_source": "elkies-k3/ORBIT42_EQUATION_LIFT.md",
+      "dependencies": [
+        "EC-K3-H3-Q24-QQ-D12"
+      ],
+      "checker": "elkies-k3/scripts/preflight_h92_q24_o12_p42_exact_q6_points.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c86f54a10c83d39f506349866ba2e841c20cf824b4196f74be1ddc7b882c654d",
+      "software_lock": [
+        "elkies-k3/scripts/search_h92_q24_bridge_equation_frame.sage",
+        "elkies-k3/scripts/preflight_h92_q24_o12_p42_exact_q6_points.sage",
+        "elkies-k3/scripts/run_h92_q24_orbit42_fast_parallel.py",
+        "artifacts/local/elkies-k3/q24-o12-p42-q6-preflight.json",
+        "elkies-k3/scripts/success-path/ledger.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
     },
     {
       "id": "EC-K3-H3-D13-MW17-LATTICE-CHAIN",
@@ -33865,11 +34055,12 @@
       "id": "OP-EC-NEXT",
       "kind": "open_problem",
       "state": "open",
-      "title": "Elliptic rank-31, exact-rank, and low-conductor continuation",
-      "scope": "ECR30 closes the original rank-at-least-30 branch. Continue in three exact directions: prove that the public 2026 curve has rank exactly 30 or exhibit a higher-rank curve; find a curve with rank at least 21 and natural-log conductor below 182.72, with EC-R20-IC245 as the smallest-conductor independently replayed rank-at-least-20 benchmark; and complete the reconstructed rank-17 K3 mechanism strongly enough to reproduce the historical rank-29 specialization and search beyond rank 30. EC-R20, EC-MR13, EC-MD17 and EC-MD19 remain exact lower-rank family/conductor frontiers. EC-K3-H3-SOURCE and EC-K3-H3-PTS give the exact H3 E7+E8/MW2 source and its rational base points. EC-K3-H3-Q8-QQ-D13 completes the first two equation-level neighbours through D13/MW4, while EC-K3-H3-D13-MW17-LATTICE-CHAIN certifies the eleven later nef degree-two lattice/chamber neighbours through rootless MW17. The next construction gate is the D12/MW5 -> A11/MW6 q6/orbit42 equation, followed by nine further equation-level hops and specialization transport. EC-ICARM-CONSTRUCTION-FINGERPRINTS excludes curve 273 from the complete diameter-at-most-300 fixed-six-root Mestre census and from the direct forced-2-torsion Elkies--Klagsbrun model, without excluding the proposed rootless K3 descendant. The other present gates are a certified residual 2-Selmer computation for curve 273 and a twenty-first independent point on a low-conductor rank-at-least-20 family. Bounded searches and failed lifts are experiments, not upper bounds. The exact q24 equation checkpoint is EC-K3-H3-Q24-QQ-D12.",
+      "title": "Elliptic rank-32, exact-rank, and low-conductor certification",
+      "scope": "ECR31 gives an unconditional rank-at-least-31 curve and supersedes rank 31 as a search target. Continue in three exact directions: prove the public curve 302 has rank exactly 31 or exhibit a rank-at-least-32 curve; complete repository-local global-minimality and Tate-algorithm conductor replays for the rank-at-least-21 ICARM curves 285 and 286 recorded in EC-R21-ICARM, or find another independently certified low-conductor rank-at-least-21 curve; and complete the reconstructed rank-17 K3 mechanism strongly enough to reproduce a public exceptional-rank specialization and search beyond rank 31. EC-R20, EC-R20-IC245, EC-MR13, EC-MD17 and EC-MD19 remain exact lower-rank family/conductor frontiers. EC-K3-H3-SOURCE and EC-K3-H3-PTS give the exact H3 E7+E8/MW2 source and its rational base points. EC-K3-H3-Q8-QQ-D13 completes the first two equation-level neighbours through D13/MW4, while EC-K3-H3-D13-MW17-LATTICE-CHAIN certifies the eleven later nef degree-two lattice/chamber neighbours through rootless MW17. EC-K3-H3-Q24-O42-I8STAR-MARKING certifies the exact physical I8* marking for the D12/MW5 -> A11/MW6 q6/orbit42 gate, EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT reconstructs the eighteen identity-class zero-pole sections and closes that shortcut, and EC-K3-H3-Q24-O42-FAST-Q6-AUDIT proves that the proposed q6 point-transport shortcut has the wrong fibre degrees. The modular identity-halving census is only a shortcut rejection, not a characteristic-zero non-existence theorem. The next construction gate is the resolved-surface Riemann--Roch trivialization and A11/MW6 child equation, followed by nine further equation-level hops and specialization transport. EC-ICARM-CONSTRUCTION-FINGERPRINTS excludes curve 273 from the complete diameter-at-most-300 fixed-six-root Mestre census and from the direct forced-2-torsion Elkies--Klagsbrun model, without excluding the proposed rootless K3 descendant. A certified residual 2-Selmer computation for curve 273 also remains open. Bounded searches and failed lifts are experiments, not upper bounds.",
       "canonical_source": "elliptic-curves/README.md",
       "dependencies": [
-        "ECR30",
+        "ECR31",
+        "EC-R21-ICARM",
         "EC-R20",
         "EC-R20-IC245",
         "EC-MR13",
@@ -33880,7 +34071,10 @@
         "EC-K3-H3-Q8-QQ-D13",
         "EC-K3-H3-D13-MW17-LATTICE-CHAIN",
         "EC-ICARM-CONSTRUCTION-FINGERPRINTS",
-        "EC-K3-H3-Q24-QQ-D12"
+        "EC-K3-H3-Q24-QQ-D12",
+        "EC-K3-H3-Q24-O42-I8STAR-MARKING",
+        "EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT",
+        "EC-K3-H3-Q24-O42-FAST-Q6-AUDIT"
       ],
       "checker": null,
       "proof_type": "not-applicable",

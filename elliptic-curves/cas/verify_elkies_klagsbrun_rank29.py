@@ -35,7 +35,7 @@ from mod2_reduction_independence import (
 
 
 DEFAULT_OUTPUT = Path(
-    "artifacts/generated-results/elliptic_elkies_klagsbrun_rank29_certificate.json"
+    "artifacts/generated-results/elliptic-curves/elliptic_elkies_klagsbrun_rank29_certificate.json"
 )
 SOURCE_URLS = (
     "https://web.math.pmf.unizg.hr/~duje/tors/rk29.html",

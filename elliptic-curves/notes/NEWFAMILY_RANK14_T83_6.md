@@ -25,7 +25,7 @@ Therefore
 The exact-rank certificate is
 
 ```text
-artifacts/generated-results/elliptic-curves/newfamily_rank14_t83_6_exact_v1.json
+artifacts/generated-results/elliptic-curves/newfamily_rank14_t83_6_pari_exact_rank_v1.json
 ```
 
 The earlier lower-bound certificate remains
@@ -107,4 +107,4 @@ The global minimal model has root number `+1` and a 169-bit absolute discriminan
 
 A deeper H16/H18/H20 search is being used as a control and neighborhood probe. Since the exact rank is now proved to be 14, no further rational point on this same curve can raise its rank: any new points found at larger search height must lie in the established rank-14 Mordell-Weil group.
 
-The more promising next rank-search targets are the six specializations in `newfamily_rank_gain_batch_v1.json` with certified subgroup rank at least 13, especially those with small point sizes and many unused Schur hits.
+The more promising next rank-search targets are the six specializations in `newfamily_exact_subgroup_rank_gain_batch_v1.json` with certified subgroup rank at least 13, especially those with small point sizes and many unused Schur hits.

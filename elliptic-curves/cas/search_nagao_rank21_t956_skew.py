@@ -75,7 +75,7 @@ CHART_HEIGHT = 50_000
 REPRODUCING_COMMAND = (
     "PYTHONPATH=elliptic-curves/cas .venv/bin/python "
     "elliptic-curves/cas/search_nagao_rank21_t956_skew.py "
-    "--output artifacts/generated-results/elliptic_nagao_rank21_t956_skew.json"
+    "--output archive/elliptic-curves/artifacts/generated-results/elliptic_nagao_rank21_t956_skew.json"
 )
 
 
@@ -631,7 +631,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--certificate-input",
         type=Path,
         default=root
-        / "artifacts/generated-results/elliptic_nagao_rank21_t956_rank17_certificate.json",
+        / "archive/elliptic-curves/artifacts/generated-results/elliptic_nagao_rank21_t956_rank17_certificate.json",
     )
     parser.add_argument("--box-timeout", type=float, default=25.0)
     parser.add_argument("--chart-timeout", type=float, default=8.0)
@@ -642,7 +642,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--output",
         type=Path,
-        default=root / "artifacts/generated-results/elliptic_nagao_rank21_t956_skew.json",
+        default=root / "archive/elliptic-curves/artifacts/generated-results/elliptic_nagao_rank21_t956_skew.json",
     )
     return parser
 

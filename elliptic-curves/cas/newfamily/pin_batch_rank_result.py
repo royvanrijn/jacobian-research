@@ -17,7 +17,7 @@ Examples::
     python3 elliptic-curves/cas/newfamily/pin_batch_rank_result.py \
       --input-json artifacts/local/elliptic-curves/newfamily/batch_exact_rank_gain_hits_v3.json \
       --all \
-      --output artifacts/generated-results/elliptic-curves/newfamily_rank_gain_batch_v1.json
+      --output artifacts/generated-results/elliptic-curves/newfamily_exact_subgroup_rank_gain_batch_v1.json
 """
 
 from __future__ import annotations

@@ -66,7 +66,7 @@ class FiniteQuotientEscapeTests(unittest.TestCase):
         artifact = json.loads(
             (
                 ROOT
-                / "artifacts/generated-results/"
+                / "artifacts/generated-results/elliptic-curves/"
                 "elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json"
             ).read_text()
         )

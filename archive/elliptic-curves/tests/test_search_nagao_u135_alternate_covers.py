@@ -29,7 +29,7 @@ class AlternateCoverSearchTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.target = load_rank17_target(
             ROOT
-            / "artifacts/generated-results/elliptic_nagao_rank17_frontier_certificate.json",
+            / "artifacts/generated-results/elliptic-curves/elliptic_nagao_rank17_frontier_certificate.json",
             Q(135, 2),
         )
 

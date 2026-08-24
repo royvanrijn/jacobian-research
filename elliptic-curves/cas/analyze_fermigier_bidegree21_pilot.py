@@ -52,7 +52,7 @@ LEFT_LABEL = "P13"
 RIGHT_LABEL = "R20E1"
 AFFINE_CANCELLATION_SLOPE = Q(-5899690, 732683)
 OUTPUT_RELATIVE = Path(
-    "artifacts/generated-results/"
+    "artifacts/generated-results/elliptic-curves/"
     "elliptic_fermigier_bidegree21_p13_r20e1_pilot.json"
 )
 

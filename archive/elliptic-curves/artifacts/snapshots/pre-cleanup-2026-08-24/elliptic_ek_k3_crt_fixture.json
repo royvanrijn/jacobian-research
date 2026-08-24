@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "artifact_kind": "elliptic_curve_computational_regression_fixture",
+  "status": "verified_regression_fixture_not_target_hit",
+  "claim_scope": {
+    "exact": "CRT, rational reconstruction, rational curve equations, and p-adic valuations were checked with exact integer/rational arithmetic",
+    "computer_algebra": "minimal model, conductor, local reduction, and ellrank bounds are reported by PARI/GP and are not an independent proof certificate"
+  },
+  "reproduction": {
+    "command": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/verify_ek_k3_fixture.py",
+    "python": "3.14.6",
+    "pari_gp": "[2, 17, 4]"
+  },
+  "family": {
+    "name": "Elkies--Klagsbrun rank-nine K3 family",
+    "u": "2/5",
+    "m": "2",
+    "parameter_t": "-1468/21"
+  },
+  "local_constraints": [
+    {
+      "prime": 11,
+      "exponent": 2,
+      "modulus": 121,
+      "residue": 5,
+      "B_factor_index": 5,
+      "predicted_reduction": "nonsplit multiplicative"
+    },
+    {
+      "prime": 17,
+      "exponent": 2,
+      "modulus": 289,
+      "residue": 109,
+      "B_factor_index": 8,
+      "predicted_reduction": "nonsplit multiplicative"
+    },
+    {
+      "prime": 19,
+      "exponent": 2,
+      "modulus": 361,
+      "residue": 102,
+      "B_factor_index": 7,
+      "predicted_reduction": "nonsplit multiplicative"
+    }
+  ],
+  "crt": {
+    "residue": 7814669,
+    "modulus": 12623809,
+    "congruence": "a - residue*b == 0 (mod modulus)",
+    "gauss_reduced_basis": [
+      [
+        -1468,
+        21
+      ],
+      [
+        -187,
+        8602
+      ]
+    ],
+    "selected_vector": [
+      -1468,
+      21
+    ],
+    "projective_height": 1468
+  },
+  "exact_local_checks": {
+    "11": {
+      "B_factor_index": 5,
+      "B_factor_valuation": 2,
+      "c4_valuation": 0,
+      "discriminant_valuation": 4,
+      "split_multiplicative": false
+    },
+    "17": {
+      "B_factor_index": 8,
+      "B_factor_valuation": 2,
+      "c4_valuation": 0,
+      "discriminant_valuation": 4,
+      "split_multiplicative": false
+    },
+    "19": {
+      "B_factor_index": 7,
+      "B_factor_valuation": 2,
+      "c4_valuation": 0,
+      "discriminant_valuation": 4,
+      "split_multiplicative": false
+    }
+  },
+  "curve": {
+    "input_coefficients_a1_a2_a3_a4_a6": [
+      "0",
+      "21002932681574924992/112546875",
+      "0",
+      "1267027392875991178533333022580175536128/161566314697265625",
+      "0"
+    ],
+    "known_sections": [
+      {
+        "x": "366183044603071731712/2813671875",
+        "y": "6885802270997962737328740548608/86168701171875"
+      },
+      {
+        "x": "55437209873510547456/937890625",
+        "y": "1044363181255830501745628151808/28722900390625"
+      },
+      {
+        "x": "962870887531517476864/2813671875",
+        "y": "21903443805167126524746245865472/86168701171875"
+      },
+      {
+        "x": "-112850545258550218752/937890625",
+        "y": "115444246919083459236533272576/28722900390625"
+      },
+      {
+        "x": "103923045226681823232/937890625",
+        "y": "1931196741563409881439235244032/28722900390625"
+      },
+      {
+        "x": "-1294879552928464896/19140625",
+        "y": "2187606865647671240420098048/586181640625"
+      },
+      {
+        "x": "237763384812471721984/2813671875",
+        "y": "4392631360252761190764984598528/86168701171875"
+      },
+      {
+        "x": "296639102144166977536/2813671875",
+        "y": "5499182609790398207713472610304/86168701171875"
+      },
+      {
+        "x": "4201689375972990976/57421875",
+        "y": "77948906309724620226201321472/1758544921875"
+      }
+    ]
+  },
+  "pari": {
+    "minimal_model": [
+      1,
+      -1,
+      1,
+      -4094648506803558665585275810420100612,
+      -230191273091834803285366923779757258590787567068064345
+    ],
+    "conductor": 35290917445780946083484251246019551569185126876962439304281102406,
+    "log_conductor": "148.626486493304280717896617613283184039414608500135976862498",
+    "minimal_discriminant": 4370803657487377667867313909542454929001474967232928803604818774612890021178028273232605316452635065080863588352,
+    "root_number": 1,
+    "local_reduction": {
+      "11": {
+        "conductor_exponent": 1,
+        "kodaira_code": 8,
+        "tamagawa_number": 2,
+        "minimal_c4_valuation": 0,
+        "minimal_discriminant_valuation": 4,
+        "ellap": -1,
+        "kodaira_symbol": "I_4",
+        "multiplicative_splitness_from_ellap": "nonsplit"
+      },
+      "17": {
+        "conductor_exponent": 1,
+        "kodaira_code": 8,
+        "tamagawa_number": 2,
+        "minimal_c4_valuation": 0,
+        "minimal_discriminant_valuation": 4,
+        "ellap": -1,
+        "kodaira_symbol": "I_4",
+        "multiplicative_splitness_from_ellap": "nonsplit"
+      },
+      "19": {
+        "conductor_exponent": 1,
+        "kodaira_code": 8,
+        "tamagawa_number": 2,
+        "minimal_c4_valuation": 0,
+        "minimal_discriminant_valuation": 4,
+        "ellap": -1,
+        "kodaira_symbol": "I_4",
+        "multiplicative_splitness_from_ellap": "nonsplit"
+      }
+    },
+    "supplied_points": {
+      "count": 9,
+      "on_curve_count": 9,
+      "all_on_curve": true,
+      "height_pairing_determinant_approx": "12013456984.9071781451979792178190197257318208081310078838775"
+    },
+    "pari_ellrank": {
+      "lower_bound": 10,
+      "upper_bound": 10,
+      "returned_independent_points": 9,
+      "effort": 0
+    }
+  },
+  "target_evaluation": {
+    "criterion": "rank >= 21 and log(N) < 182.72, or rank >= 30",
+    "log_conductor_below_182_72": true,
+    "certified_rank_lower_bound_at_least_21": false,
+    "certified_rank_lower_bound_at_least_30": false,
+    "target_hit": false,
+    "note": "The conductor is below the requested threshold, but PARI reports rank bounds [10,10], far below either rank target."
+  }
+}

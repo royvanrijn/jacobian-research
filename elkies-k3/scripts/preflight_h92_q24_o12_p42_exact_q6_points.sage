@@ -1,17 +1,11 @@
 #!/usr/bin/env sage -python
-"""
-Extract the current-equation q24 D12 zero O12 and marked orbit42 section P42
-from the local bridge producer, identify their exact q6 MW words, materialize
-them on the exact q6 Weierstrass model when possible, and independently replay
-the q8 RR parameter on each curve.
+"""Exact rejection audit for the proposed orbit42 fast-q6 transport.
 
-This deliberately avoids the pointed-q24 zero-pole group law.  O12 and P42
-are q6 sections / q8 multisections in the common H3 NS, and the bridge already
-certifies q8 degrees 30 and 48 respectively.
-
-PASS here gives explicit rational q6 points and exact U(T) maps for both
-curves.  That is the correct input for mapping the curves through the q8
-2-cover/covariant and then evaluating the q24 RR pencil.
+The bridge stores O12/P42 in the current equation-D13 basis.  Convert them
+with the named unimodular equation-D13 -> ambient H3-NS matrix and certify
+their actual q6/q8 degrees.  They have q6 degrees 435 and 703, not degree one,
+so neither is a q6 rational section and the proposed point-transport route is
+invalid.  A passing result here is a negative audit, not an equation lift.
 """
 
 import contextlib
@@ -20,7 +14,10 @@ import json
 import sys
 from pathlib import Path
 
-from sage.all import EllipticCurve, PolynomialRing, QQ, ZZ, vector
+from sage.all import (
+    EllipticCurve, PolynomialRing, QQ, ZZ, vector, matrix,
+    block_diagonal_matrix,
+)
 
 ROOT = Path(__file__).resolve().parents[2]
 SCRIPTS = ROOT / "elkies-k3" / "scripts"
@@ -30,6 +27,7 @@ GEN = ROOT / "artifacts" / "generated-results"
 BRIDGE_JSON = LOCAL / "q24-orbit42-current-equation-bridge.json"
 Q6_WORDS = SCRIPTS / "search_h92_q24_bridge_equation_frame.sage"
 Q8_CERT = SCRIPTS / "certify_h92_q8_equation_ns_divisor.sage"
+Q24_TRANSLATION = LOCAL / "q8-q24-physical-to-equation-translation.json"
 Q8_CHILD_CANDS = [
     LOCAL / "q8-corrected2cover-qq-child.json",
     GEN / "elkies-k3-h92-q6-child-q8-corrected2cover-qq-child.json",
@@ -41,7 +39,10 @@ S3BRIDGE = LOCAL / "q6-third-to-q8-bridge.json"
 TRANSLATION = LOCAL / "q6-standard-zero-translation.json"
 OUT = LOCAL / "q24-o12-p42-q6-preflight.json"
 
-for path in (BRIDGE_JSON, Q6_WORDS, Q8_CERT, CHILD, ZERO, COMP, S3BRIDGE, TRANSLATION):
+for path in (
+    BRIDGE_JSON, Q6_WORDS, Q8_CERT, Q24_TRANSLATION,
+    CHILD, ZERO, COMP, S3BRIDGE, TRANSLATION,
+):
     if not path.exists():
         raise SystemExit(f"missing prerequisite: {path}")
 
@@ -59,7 +60,7 @@ if Q8_CHILD is None:
 bridge = json.loads(BRIDGE_JSON.read_text())
 
 
-def run_scope(path, argv=(), allow_assert=False):
+def run_scope(path, argv=(), allow_assert=False, allow_clean_exit=False):
     saved = list(sys.argv)
     scope = {"__name__":"__embedded__", "__file__":str(path)}
     buf = io.StringIO()
@@ -71,6 +72,9 @@ def run_scope(path, argv=(), allow_assert=False):
             except AssertionError:
                 if not allow_assert:
                     raise
+            except SystemExit as exc:
+                if not allow_clean_exit or exc.code not in (None, 0):
+                    raise
     finally:
         sys.argv = saved
     return scope, buf.getvalue()
@@ -79,8 +83,15 @@ def run_scope(path, argv=(), allow_assert=False):
 # -------------------------------------------------------------------------
 # 1. Authoritative q6 MW-word machinery in common H3 NS.
 # -------------------------------------------------------------------------
-words, words_log = run_scope(Q6_WORDS)
-for key in ("ns", "F6", "F8", "O6", "word_of", "section_from_word"):
+words, words_log = run_scope(
+    Q6_WORDS,
+    ("--setup-only",),
+    allow_clean_exit=True,
+)
+for key in (
+    "ns", "F6", "F8", "O6", "word_of", "section_from_word",
+    "Badapt", "G13",
+):
     if key not in words:
         raise SystemExit(f"q6 word scope missing {key}")
 
@@ -92,129 +103,218 @@ word_of = words["word_of"]
 section_from_word = words["section_from_word"]
 
 # -------------------------------------------------------------------------
-# 2. Find the local producer that generated the passing current O42 bridge.
+# 2. Exact NAMED current equation-D13 -> ambient H3-NS coordinate bridge.
+#
+# q24-orbit42-current-equation-bridge.json stores O12/P42 in the CURRENT
+# equation-D13 basis. q6 word_of() uses the common ambient H3 NS.
+#
+# Exact conversion:
+#
+#     C_ambient = C_equation_D13 * Badapt
+#
+# A Gram-compatible D13 basis is not sufficient here: D13 has nontrivial
+# marking automorphisms.  Use the exact Badapt constructed in Q6_WORDS, which
+# is the named equation frame used by the bridge producer, and pin it by the
+# q24-fibre round-trip to the independent physical->equation certificate.
 # -------------------------------------------------------------------------
-producers = []
-for path in SCRIPTS.glob("*.sage"):
-    try:
-        txt = path.read_text()
-    except Exception:
-        continue
-    if "Q24O42EQ_RESULT|" in txt:
-        producers.append(path)
+BADAPT_CACHE = LOCAL / "q24-equation-d13-badapt-cache.json"
+Gambient = matrix(ZZ, ns)
+Badapt = matrix(ZZ, words["Badapt"])
+Geq_frame = matrix(ZZ, words["G13"])
 
-if not producers:
+if Badapt.dimensions() != (19,19) or abs(ZZ(Badapt.det())) != 1:
+    raise ArithmeticError(
+        f"Badapt dimensions/determinant invalid: "
+        f"{Badapt.dimensions()}, det={Badapt.det()}"
+    )
+
+U2c = matrix(ZZ, ((0,1),(1,0)))
+Geq = block_diagonal_matrix(U2c, -Geq_frame)
+if Badapt * Gambient * Badapt.transpose() != Geq:
+    raise ArithmeticError(
+        "Badapt * Gambient * Badapt^t != named equation-D13 Gram"
+    )
+
+if vector(ZZ, Badapt.row(0)) != F8:
+    raise ArithmeticError("named equation-D13 fibre row does not equal F8")
+
+q24_translation = json.loads(Q24_TRANSLATION.read_text())
+if q24_translation.get("status") != "PASS_EXACT_Q24_PHYSICAL_TO_EQUATION_TRANSLATION":
     raise SystemExit(
-        "Could not locate the local producer containing Q24O42EQ_RESULT|. "
-        "Keep the script that generated q24-orbit42-current-equation-bridge.json "
-        "in elkies-k3/scripts/ and rerun."
+        "q24 physical->equation translation is not passing: "
+        + str(q24_translation.get("status"))
     )
 
-# Prefer a producer mentioning the exact bridge filename/current-equation wording.
-producers.sort(
-    key=lambda p: (
-        0 if "q24-orbit42-current-equation-bridge" in p.read_text() else 1,
-        0 if "current" in p.name.lower() else 1,
-        p.name,
-    )
+bridge_q24 = vector(ZZ, bridge["current_equation_D13"]["q24_fibre"])
+expected_q24_ambient = vector(
+    ZZ,
+    q24_translation["q24_equation"]["equation_divisor_source_h3_ns"],
 )
-producer = producers[0]
-ps, producer_log = run_scope(producer, allow_assert=True)
+mapped_q24_ambient = vector(ZZ, bridge_q24 * Badapt)
+if mapped_q24_ambient != expected_q24_ambient:
+    raise ArithmeticError(
+        "named equation-D13 Badapt fails the exact q24-fibre round-trip"
+    )
+
+BADAPT_CACHE.write_text(json.dumps({
+    "schema": "elkies-k3.q24-equation-d13-badapt-cache.v2",
+    "status": "PASS_Q24_NAMED_EQUATION_D13_BADAPT_CACHE",
+    "source": str(Q6_WORDS.relative_to(ROOT)),
+    "anchor": str(Q24_TRANSLATION.relative_to(ROOT)),
+    "ambient_ns": [[int(x) for x in row] for row in Gambient.rows()],
+    "Badapt": [[int(x) for x in row] for row in Badapt.rows()],
+    "equation_d13_frame": [
+        [int(x) for x in row] for row in Geq_frame.rows()
+    ],
+    "q24_fibre_equation_d13": list(map(int, bridge_q24)),
+    "q24_fibre_ambient": list(map(int, mapped_q24_ambient)),
+}, indent=2, sort_keys=True) + "\n")
 
 print(
-    "Q24O42MAP_PRODUCER|"
-    f"script={producer.relative_to(ROOT)}|candidates={len(producers)}|status=PASS",
+    "Q24O42MAP_COORDS|"
+    "method=NAMED_Q6_EQUATION_FRAME|"
+    f"det={Badapt.det()}|gram=PASS|q8_fibre=PASS|"
+    "q24_fibre_roundtrip=PASS|cache=v2|status=PASS",
     flush=True,
 )
 
 
-def iter_objects(obj, path="", seen=None, depth=0):
-    if seen is None:
-        seen = set()
-    if depth > 8:
-        return
-    oid = id(obj)
-    if oid in seen:
-        return
-    seen.add(oid)
+if bridge.get("status") != "PASS_Q24_ORBIT42_CURRENT_EQUATION_LATTICE_BRIDGE":
+    raise SystemExit(
+        "q24 orbit42 current-equation bridge is not passing: "
+        + str(bridge.get("status"))
+    )
 
-    # Sage/integer row vector candidate.
-    try:
-        v = vector(ZZ, obj)
-        if len(v) == 19:
-            yield path, v
-            return
-    except Exception:
-        pass
+eq = bridge.get("current_equation_D13", {})
+field_for = {
+    "O12": "historical_D12_zero",
+    "P42": "orbit42_marked_section",
+}
+missing = [field for field in field_for.values() if field not in eq]
+if missing:
+    raise SystemExit(
+        "current-equation bridge missing direct class fields: "
+        + ",".join(missing)
+    )
 
-    if isinstance(obj, dict):
-        for k, v in obj.items():
-            yield from iter_objects(v, f"{path}/{k}", seen, depth+1)
-    elif isinstance(obj, (list, tuple)):
-        for i, v in enumerate(obj):
-            yield from iter_objects(v, f"{path}/{i}", seen, depth+1)
+direct_eq = {
+    label: vector(ZZ, eq[field])
+    for label, field in field_for.items()
+}
 
+direct = {
+    label: vector(ZZ, row * Badapt)
+    for label, row in direct_eq.items()
+}
 
-candidates = {}
-for name, obj in ps.items():
-    if name.startswith("__"):
-        continue
-    for subpath, v in iter_objects(obj, name):
-        key = tuple(map(int, v))
-        candidates.setdefault(key, {"vector":v, "paths":[]})["paths"].append(subpath)
+targets = {}
+expected_q6_degree = {"O12": 435, "P42": 703}
+expected_degree = {"O12": 30, "P42": 48}
 
-# Also inspect serialized bridge content.
-for subpath, v in iter_objects(bridge, "bridge"):
-    key = tuple(map(int, v))
-    candidates.setdefault(key, {"vector":v, "paths":[]})["paths"].append(subpath)
+for label, C in direct.items():
+    if len(C) != 19:
+        raise ArithmeticError(
+            f"{label} converted class dimension={len(C)}, expected 19"
+        )
 
-sections = []
-for entry in candidates.values():
-    C = entry["vector"]
-    try:
-        square = ZZ(C * ns * C)
-        d6 = ZZ(C * ns * F6)
-        d8 = ZZ(C * ns * F8)
-    except Exception:
-        continue
-    if square == -2 and d6 == 1 and d8 in (30, 48):
-        sections.append({
-            "class":C,
-            "q8_degree":int(d8),
-            "paths":sorted(set(entry["paths"])),
-        })
+    square = ZZ(C * ns * C)
+    d6 = ZZ(C * ns * F6)
+    d8 = ZZ(C * ns * F8)
 
-# Deduplicate by class.
-uniq = {}
-for rec in sections:
-    uniq[tuple(map(int,rec["class"]))] = rec
-sections = list(uniq.values())
+    if square != -2:
+        raise ArithmeticError(
+            f"{label} converted class square={square}, expected -2"
+        )
+    if d6 != expected_q6_degree[label]:
+        raise ArithmeticError(
+            f"{label} converted q6 degree={d6}, "
+            f"expected {expected_q6_degree[label]}"
+        )
+    if d8 != expected_degree[label]:
+        raise ArithmeticError(
+            f"{label} converted q8 degree={d8}, "
+            f"expected {expected_degree[label]}"
+        )
 
-for rec in sections:
+    U2c = matrix(ZZ, ((0,1),(1,0)))
+    Geq = block_diagonal_matrix(U2c, -Geq_frame)
+    eq_square = ZZ(direct_eq[label] * Geq * direct_eq[label])
+    if eq_square != -2:
+        raise ArithmeticError(
+            f"{label} equation-D13 square={eq_square}, expected -2"
+        )
+
+    targets[label] = {
+        "class": C,
+        "q6_degree": int(d6),
+        "q8_degree": int(d8),
+        "paths": [
+            "bridge/current_equation_D13/"
+            + field_for[label]
+            + " -> Badapt -> ambient"
+        ],
+    }
+
     print(
         "Q24O42MAP_CLASS|"
-        f"q8_degree={rec['q8_degree']}|"
-        f"paths={';'.join(rec['paths'][:8])}|status=CANDIDATE",
+        f"curve={label}|square={square}|q6_degree={d6}|q8_degree={d8}|"
+        "source=DIRECT_BRIDGE_VIA_BADAPT|status=PASS",
         flush=True,
     )
 
-by_degree = {30:[],48:[]}
-for rec in sections:
-    by_degree[rec["q8_degree"]].append(rec)
+print(
+    "Q24O42MAP_PRODUCER|"
+    "script=SKIPPED|"
+    "method=DIRECT_BRIDGE_VIA_BADAPT|"
+    "status=PASS",
+    flush=True,
+)
 
-if len(by_degree[30]) != 1 or len(by_degree[48]) != 1:
-    # Names/paths may allow an unambiguous choice if duplicate classes appeared
-    # through different coordinate containers, but class dedup has already run.
-    raise SystemExit(
-        "Could not uniquely identify O12/P42 from the producer scope: "
-        f"degree30={len(by_degree[30])}, degree48={len(by_degree[48])}. "
-        "Paste the Q24O42EQ producer filename/output and we can pin its exact variables."
-    )
-
-targets = {
-    "O12": by_degree[30][0],
-    "P42": by_degree[48][0],
+# Terminal negative gate.  Everything below is retained only as the historical
+# implementation of the disproved degree-one premise and is deliberately
+# unreachable.
+payload = {
+    "schema": "elkies-k3.h3-q24-orbit42-fast-q6-premise-audit.v1",
+    "status": "PASS_Q42_FAST_Q6_PREMISE_REJECTION",
+    "bridge": str(BRIDGE_JSON.relative_to(ROOT)),
+    "coordinate_conversion": {
+        "method": "NAMED_EQUATION_D13_BADAPT",
+        "determinant": int(Badapt.det()),
+        "gram_verified": True,
+        "q24_fibre_roundtrip_verified": True,
+        "cache": str(BADAPT_CACHE.relative_to(ROOT)),
+    },
+    "targets": {
+        label: {
+            "square": -2,
+            "q6_degree": rec["q6_degree"],
+            "q8_degree": rec["q8_degree"],
+            "equation_D13_class": list(map(int, direct_eq[label])),
+            "ambient_H3_NS_class": list(map(int, rec["class"])),
+        }
+        for label, rec in targets.items()
+    },
+    "conclusion": (
+        "O12 and P42 are high-degree q6 multisections, not q6 rational "
+        "sections. Exact q6 MW-word extraction and rational-point transport "
+        "are therefore inapplicable."
+    ),
+    "next": "Q42_RESOLVED_RR_TRIVIALIZATION",
+    "proof_boundary": (
+        "Exact coordinate and intersection-degree audit only. It disproves "
+        "the fast q6-point premise and does not construct the orbit42 pencil."
+    ),
 }
+OUT.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
+print(f"OUTPUT|{OUT}", flush=True)
+print(
+    "Q24O42MAP_RESULT|"
+    "O12_q6_degree=435|P42_q6_degree=703|"
+    "next=Q42_RESOLVED_RR_TRIVIALIZATION|"
+    "status=PASS_Q42_FAST_Q6_PREMISE_REJECTION",
+    flush=True,
+)
+raise SystemExit(0)
 
 # Exact q6 words relative to O6 (= old zero), then standard-Weierstrass words.
 z_old_std = vector(
@@ -448,7 +548,7 @@ payload = {
         else "Q24_O12_P42_NEEDS_PRIMITIVE_Q6_SECTION_RECOVERY"
     ),
     "bridge":str(BRIDGE_JSON.relative_to(ROOT)),
-    "bridge_producer":str(producer.relative_to(ROOT)),
+    "bridge_producer":"SKIPPED_DIRECT_BRIDGE_VIA_BADAPT",
     "targets":{
         label:{
             "q8_degree":rec["q8_degree"],

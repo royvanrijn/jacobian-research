@@ -12,7 +12,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
 SCRIPT = ROOT / "elliptic-curves/cas/search_mestre_rank14_pair_rational_frontier.py"
-SCANNER = ROOT / "elliptic-curves/cas/scan_mestre_rank14_pair.cpp"
+SCANNER = ROOT / "archive/elliptic-curves/cas/scan_mestre_rank14_pair.cpp"
 ARTIFACT = (
     ROOT
     / "artifacts/generated-results"

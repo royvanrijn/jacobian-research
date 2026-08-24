@@ -1,0 +1,111 @@
+{
+  "artifact_kind": "conditional_explicit_formula_rank_diagnostics",
+  "conclusion": {
+    "search_consequence": "all seven public sub-cutoff rank-20 fibres now have even root number; prioritize deformation rather than fixed-fibre point search",
+    "unconditional": "each displayed curve has rank at least 20 only",
+    "under_grh": "each analytic rank is 20",
+    "under_grh_and_bsd": "each algebraic rank is 20"
+  },
+  "curves": [
+    {
+      "ainvs": [
+        "1",
+        "0",
+        "1",
+        "-791198747812844165197303241658",
+        "291678735985274857428612896086571996361540568"
+      ],
+      "conditional_explicit_formula_upper": "21.3580557352708097572321413297355430232134977555932154329219",
+      "conductor": "123989445321322909065995690886185865732040186216447789402341303782551770",
+      "exact_root_number": 1,
+      "icarm_id": 243,
+      "prime_sum": {
+        "bad_reduction_prime_sum": "0.51240498131154972307635816401584234157178548251146767283889652992832314118498496",
+        "conductor": "123989445321322909065995690886185865732040186216447789402341303782551770",
+        "good_reduction_prime_sum": "-68.568586813116864537513948904017071181130327825040420847165473185528799025575991",
+        "log_conductor": "163.69856786019498632851052303687987881816622497214899378988307106279595929469263",
+        "maximum_prime": 1007519,
+        "prime_count": 79057,
+        "prime_limit": 1007525,
+        "prime_power_term_count": 79293,
+        "prime_sum": "-68.056181831805314814437590740001228839558542342528953174326576655600475884391006"
+      },
+      "rank_lower_bound": 20,
+      "source": "https://elliptic-rank.icarm.cloud/curve/243",
+      "strictly_below_22": true
+    },
+    {
+      "ainvs": [
+        "1",
+        "0",
+        "0",
+        "-53324817965388276805370879748910",
+        "152600569230942786227963554343099291511940660100"
+      ],
+      "conditional_explicit_formula_upper": "21.1934326698192049111537092185678636995788434158052947981795",
+      "conductor": "282182911611488014589765703157855796043317619561544915217487973922307930",
+      "exact_root_number": 1,
+      "icarm_id": 226,
+      "prime_sum": {
+        "bad_reduction_prime_sum": "1.6563431779529693210986364067410633550446819427805569656437619174749367656190051",
+        "conductor": "282182911611488014589765703157855796043317619561544915217487973922307930",
+        "good_reduction_prime_sum": "-68.163552541181437146817154932982508942853456795046282578783486520870973848280448",
+        "log_conductor": "164.52092689999822898339945666640489883564909460613060020072804187674942300563496",
+        "maximum_prime": 1007519,
+        "prime_count": 79057,
+        "prime_limit": 1007525,
+        "prime_power_term_count": 79293,
+        "prime_sum": "-66.507209363228467825718518526241445587808774852265725613139724603396037082661443"
+      },
+      "rank_lower_bound": 20,
+      "source": "https://elliptic-rank.icarm.cloud/curve/226",
+      "strictly_below_22": true
+    },
+    {
+      "ainvs": [
+        "1",
+        "0",
+        "0",
+        "-431092980766333677958362095891166",
+        "5156283555366643659035652799871176909391533088196"
+      ],
+      "conditional_explicit_formula_upper": "21.3153720855424697102270624343132367372957252802197992627407",
+      "conductor": "73813242020125452593092920037241715783942979322145629022774016712292126930",
+      "exact_root_number": 1,
+      "icarm_id": 7,
+      "prime_sum": {
+        "bad_reduction_prime_sum": "1.2982958518762607602625790194823760990598330599571559062437590196194789553401965",
+        "conductor": "73813242020125452593092920037241715783942979322145629022774016712292126930",
+        "good_reduction_prime_sum": "-65.864920983741731427008763176411091696247572715004771097445733957917656146736064",
+        "log_conductor": "170.08766484224888113543147761107035486432595000236933336900322799816664271645869",
+        "maximum_prime": 1007519,
+        "prime_count": 79057,
+        "prime_limit": 1007525,
+        "prime_power_term_count": 79293,
+        "prime_sum": "-64.566625131865470666746184156928715597187739655047615191201974938298177191395868"
+      },
+      "rank_lower_bound": 20,
+      "source": "https://elliptic-rank.icarm.cloud/curve/7",
+      "strictly_below_22": true
+    }
+  ],
+  "delta": "11/5",
+  "reproduction": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/explicit_formula_icarm_curve7_226_243_delta22.py --check",
+  "schema_version": 1,
+  "software": {
+    "pari_gp": [
+      "[",
+      "2",
+      ",",
+      " ",
+      "1",
+      "7",
+      ",",
+      " ",
+      "4",
+      "]"
+    ]
+  },
+  "status": "conditional_fixed_fibre_closure_for_three_rank20_curves",
+  "test_function": "Bober sinc-squared"
+}

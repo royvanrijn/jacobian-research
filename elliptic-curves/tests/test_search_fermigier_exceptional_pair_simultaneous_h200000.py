@@ -19,14 +19,14 @@ sys.path.insert(0, str(CAS))
 sys.path.insert(0, str(PROGRAM))
 SCRIPT = CAS / "search_fermigier_exceptional_pair_simultaneous_h200000.py"
 ARTIFACT = ROOT / (
-    "artifacts/generated-results/"
+    "artifacts/generated-results/elliptic-curves/"
     "elliptic_fermigier_exceptional_pair_simultaneous_h200000.json"
 )
 EXPECTED_SCRIPT_SHA256 = (
-    "cf1b6740e6127e7cbf92cf49dccd30c71c8ca6113c2d00fa1ec535a4fc0e0f01"
+    "563583f301f75106c64b71de6f57c9963d19cf79826041a8137dcd52589049fd"
 )
 EXPECTED_ARTIFACT_SHA256 = (
-    "0a1a1ac50ac35689b4134106e4dd1469553363e15dd9c46a8c6f19358ec69394"
+    "66f23d9ab4a931ef9e3123c021f56a184505f26c1fad6b647301e7f0d1d52fbe"
 )
 
 SPEC = importlib.util.spec_from_file_location("fermigier_pair_h200000", SCRIPT)
@@ -50,7 +50,7 @@ class FermigierPairSimultaneousH200000Tests(unittest.TestCase):
         self.assertEqual(sha256(ARTIFACT), EXPECTED_ARTIFACT_SHA256)
         self.assertEqual(
             self.data["result_sha256"],
-            "f73a24e94ae69cb9944070fc37c4497d4afa292944bc3b853f8154015666f46a",
+            "6076c5c3d5ac3db63e341ec5ca7533e50a8e995561fffa3261c8978d7a8bbe24",
         )
         self.assertEqual(
             self.data["result_sha256"], MODULE.stable_result_digest(self.data)

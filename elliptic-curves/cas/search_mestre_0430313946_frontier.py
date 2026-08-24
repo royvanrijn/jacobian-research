@@ -86,7 +86,7 @@ FROZEN_SCALE_SCRIPT_SHA256 = (
     "5e7228b95ae995019fbc50b9f7667de41e06a86b4490f0feacff5702bb5cc174"
 )
 DEFAULT_OUTPUT = Path(
-    "artifacts/generated-results/elliptic_mestre_0430313946_frontier.json"
+    "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_0430313946_frontier.json"
 )
 REPRODUCING_COMMAND = (
     "PYTHONPATH=elliptic-curves/cas .venv/bin/python "
@@ -728,7 +728,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--scale-artifact",
         type=Path,
         default=root
-        / "artifacts/generated-results/elliptic_mestre_root_tuple_scale.json",
+        / "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_root_tuple_scale.json",
     )
     parser.add_argument("--numerator-bound", type=int, default=30_000)
     parser.add_argument("--denominator-bound", type=int, default=1_000)

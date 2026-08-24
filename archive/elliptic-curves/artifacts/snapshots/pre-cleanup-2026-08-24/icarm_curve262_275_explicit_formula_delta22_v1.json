@@ -1,0 +1,84 @@
+{
+  "artifact_kind": "conditional_explicit_formula_rank_diagnostics",
+  "conclusion": {
+    "search_consequence": "move next-point work from these fixed fibres to deformations",
+    "unconditional": "each displayed curve has rank at least 20 only",
+    "under_grh": "each analytic rank is 20",
+    "under_grh_and_bsd": "each algebraic rank is 20"
+  },
+  "curves": [
+    {
+      "ainvs": [
+        "1",
+        "-1",
+        "1",
+        "-21065871080015087031831279377",
+        "1192838816489664881520195774886398643920001"
+      ],
+      "conditional_explicit_formula_upper": "21.0378455960178433187028971023226005278030717935786113657145",
+      "conductor": "13935395240740481313503432825112888552210319085746508942961924055710",
+      "exact_root_number": 1,
+      "icarm_id": 262,
+      "prime_sum": {
+        "bad_reduction_prime_sum": "1.0967414108924040702597262597430614099022629227642225878614107459341300579315767",
+        "conductor": "13935395240740481313503432825112888552210319085746508942961924055710",
+        "good_reduction_prime_sum": "-71.486549485761478209898144337825579177824081975550375973038245431068987995390965",
+        "log_conductor": "154.60504816130629787237529253468390122498591691559698518124188915762866917906208",
+        "maximum_prime": 1007519,
+        "prime_count": 79057,
+        "prime_limit": 1007525,
+        "prime_power_term_count": 79293,
+        "prime_sum": "-70.389808074869074139638418078082517767921819052786153385176834685134857937459389"
+      },
+      "rank_lower_bound": 20,
+      "source": "https://elliptic-rank.icarm.cloud/curve/262",
+      "strictly_below_22": true
+    },
+    {
+      "ainvs": [
+        "1",
+        "0",
+        "1",
+        "-2034488389107661074627844285",
+        "35847670110541831966937994064437784692732"
+      ],
+      "conditional_explicit_formula_upper": "21.3153055869002603980901987375330605212117428876440444170027",
+      "conductor": "42943483208607336815574462222443765285847682460232958112909965535488718",
+      "exact_root_number": 1,
+      "icarm_id": 275,
+      "prime_sum": {
+        "bad_reduction_prime_sum": "0.20876139338328671384399175179187038624431521404354625849635450176419886534368443",
+        "conductor": "42943483208607336815574462222443765285847682460232958112909965535488718",
+        "good_reduction_prime_sum": "-68.499631178857757236269734451939976934658558209585849102893035419251462535779550",
+        "log_conductor": "162.63825632378919215102601496057929650116300528907277271919088459687807481889125",
+        "maximum_prime": 1007519,
+        "prime_count": 79057,
+        "prime_limit": 1007525,
+        "prime_power_term_count": 79293,
+        "prime_sum": "-68.290869785474470522425742700148106548414242995542302844396680917487263670435865"
+      },
+      "rank_lower_bound": 20,
+      "source": "https://elliptic-rank.icarm.cloud/curve/275",
+      "strictly_below_22": true
+    }
+  ],
+  "delta": "11/5",
+  "reproduction": "PYTHONPATH=elliptic-curves/cas .venv/bin/python elliptic-curves/cas/explicit_formula_icarm_curve262_275_delta22.py --check",
+  "schema_version": 1,
+  "software": {
+    "pari_gp": [
+      "[",
+      "2",
+      ",",
+      " ",
+      "1",
+      "7",
+      ",",
+      " ",
+      "4",
+      "]"
+    ]
+  },
+  "status": "conditional_fixed_fibre_closure_for_two_rank20_curves",
+  "test_function": "Bober sinc-squared"
+}

@@ -96,7 +96,7 @@ DEEP_CHART_COUNT = 4
 REPRODUCING_COMMAND = (
     "PYTHONPATH=elliptic-curves/cas .venv/bin/python "
     "elliptic-curves/cas/search_nagao_rank21_t6793_skew.py "
-    "--output artifacts/generated-results/elliptic_nagao_rank21_t6793_skew.json"
+    "--output archive/elliptic-curves/artifacts/generated-results/elliptic_nagao_rank21_t6793_skew.json"
 )
 
 

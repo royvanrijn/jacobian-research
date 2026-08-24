@@ -311,7 +311,8 @@ def build_parser() -> argparse.ArgumentParser:
         type=Path,
         default=root
         / "artifacts"
-        / "generated-results"
+        / "local"
+        / "elliptic-curves"
         / "elliptic_fermigier_extra_points.json",
     )
     return parser

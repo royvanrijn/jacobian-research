@@ -93,7 +93,7 @@ PRIOR_PANEL_PARAMETERS = tuple(Q(value) for value in range(1, 9))
 STACK_BYTES = 512_000_000
 FINITE_REDUCTION_TRIGGER = 18
 DEFAULT_OUTPUT = Path(
-    "artifacts/generated-results/elliptic_mestre_rank14_pair_rational_frontier.json"
+    "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_rank14_pair_rational_frontier.json"
 )
 
 

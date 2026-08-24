@@ -48,7 +48,7 @@ PYTHONPATH=elliptic-curves:elliptic-curves/cas .venv/bin/python \
 ```
 
 The generated artifact is
-[`elliptic_exceptional_branch_code.json`](../../artifacts/generated-results/elliptic_exceptional_branch_code.json).
+[`elliptic_exceptional_branch_code.json`](../../artifacts/generated-results/elliptic-curves/elliptic_exceptional_branch_code.json).
 It uses only exact factorization over \(\mathbf Q\) and no rational-point
 search.
 

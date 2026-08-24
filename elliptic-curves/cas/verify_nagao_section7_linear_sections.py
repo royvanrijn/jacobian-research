@@ -957,7 +957,7 @@ def build_parser() -> argparse.ArgumentParser:
         type=Path,
         default=(
             root
-            / "artifacts/generated-results/elliptic_nagao_section7_linear_sections.json"
+            / "artifacts/generated-results/elliptic-curves/elliptic_nagao_section7_linear_sections.json"
         ),
     )
     return parser

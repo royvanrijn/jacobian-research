@@ -94,7 +94,7 @@ def main() -> int:
     ap.add_argument(
         "--batch",
         type=Path,
-        default=Path("artifacts/generated-results/elliptic-curves/newfamily_rank_gain_batch_v1.json"),
+        default=Path("artifacts/generated-results/elliptic-curves/newfamily_exact_subgroup_rank_gain_batch_v1.json"),
     )
     ap.add_argument("--efforts", default="0,1,2")
     ap.add_argument(

@@ -183,8 +183,8 @@ python3 elliptic-curves/cas/analyze_icarm_construction_fingerprints.py
 
 Pinned input and output:
 
-- `artifacts/generated-results/elliptic-curves/icarm_7fff_zip_281_282_285_286.json`
-- `artifacts/generated-results/elliptic-curves/icarm_7fff_zip_sequence_analysis.json`
+- `artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json`
+- `artifacts/generated-results/elliptic-curves/icarm_7fff_zip_independence_analysis_v1.json`
 - `artifacts/generated-results/elliptic-curves/icarm_construction_fingerprints_v1.json`
 
 This proves the rank lower bounds from the displayed points and exactly

@@ -1,0 +1,207 @@
+{
+  "classification": {
+    "classification_scope": "all Q-rational polynomial sections with x=m*T+n and degree(y)<=3, up to negating y; this is not a classification of arbitrary rational sections",
+    "nonsingular_slope_resultant_gcd": "(3*m - 5)*(3*m + 5)*(15*m - 7)*(15*m - 1)*(15*m + 1)*(15*m + 7)/455625",
+    "recovered_companion_slope_intercept_pairs": [
+      {
+        "intercept": "703/15",
+        "slope": "1/15"
+      },
+      {
+        "intercept": "703/15",
+        "slope": "-1/15"
+      },
+      {
+        "intercept": "928/15",
+        "slope": "7/15"
+      },
+      {
+        "intercept": "928/15",
+        "slope": "-7/15"
+      },
+      {
+        "intercept": "3628/15",
+        "slope": "5/3"
+      },
+      {
+        "intercept": "3628/15",
+        "slope": "-5/3"
+      }
+    ],
+    "slope_plus_or_minus_one_intercept_eliminants": {
+      "-1": "n*(n - 148)*(n - 116)*(n - 104)*(n - 57)*(n - 25)",
+      "1": "n*(n - 148)*(n - 116)*(n - 104)*(n - 57)*(n - 25)"
+    }
+  },
+  "companion_sections": [
+    {
+      "intercept": "703/15",
+      "label": "plus-1/15",
+      "ordinate_coefficients_ascending": [
+        "28823",
+        "900484/75",
+        "-844/75",
+        "-224/75"
+      ],
+      "slope": "1/15"
+    },
+    {
+      "intercept": "703/15",
+      "label": "minus-1/15",
+      "ordinate_coefficients_ascending": [
+        "28823",
+        "-900484/75",
+        "-844/75",
+        "224/75"
+      ],
+      "slope": "-1/15"
+    },
+    {
+      "intercept": "928/15",
+      "label": "plus-7/15",
+      "ordinate_coefficients_ascending": [
+        "-449036",
+        "-482659/75",
+        "2758/75",
+        "176/75"
+      ],
+      "slope": "7/15"
+    },
+    {
+      "intercept": "928/15",
+      "label": "minus-7/15",
+      "ordinate_coefficients_ascending": [
+        "449036",
+        "-482659/75",
+        "-2758/75",
+        "176/75"
+      ],
+      "slope": "-7/15"
+    },
+    {
+      "intercept": "3628/15",
+      "label": "plus-5/3",
+      "ordinate_coefficients_ascending": [
+        "-12201200",
+        "-19161259/75",
+        "-5006/3",
+        "-16/3"
+      ],
+      "slope": "5/3"
+    },
+    {
+      "intercept": "3628/15",
+      "label": "minus-5/3",
+      "ordinate_coefficients_ascending": [
+        "12201200",
+        "-19161259/75",
+        "5006/3",
+        "-16/3"
+      ],
+      "slope": "-5/3"
+    }
+  ],
+  "exact_jacobian_relations": [
+    {
+      "basis_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        -1,
+        1,
+        0,
+        -1
+      ],
+      "exact_identity_in_Q_of_T": true,
+      "section": "minus-1/15"
+    },
+    {
+      "basis_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        -1,
+        0,
+        -1,
+        -1
+      ],
+      "exact_identity_in_Q_of_T": true,
+      "section": "plus-7/15"
+    },
+    {
+      "basis_coefficients": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        -1
+      ],
+      "exact_identity_in_Q_of_T": true,
+      "section": "minus-7/15"
+    },
+    {
+      "basis_coefficients": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "exact_identity_in_Q_of_T": true,
+      "section": "plus-5/3"
+    },
+    {
+      "basis_coefficients": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "exact_identity_in_Q_of_T": true,
+      "section": "minus-5/3"
+    }
+  ],
+  "formulas_sha256": "545e398930e6cf490cde60fdb3830685531c12f17f275aa1ffabd62cf87c111c",
+  "frontier_consequence": "five points previously labelled nonvisible by bounded searches are generic dependent companions; point-yield objectives must exclude them, while prior numerical height-rank values remain unchanged",
+  "reproducing_command": "/Users/royvanrijn/Documents/jacobian-research/.venv/bin/python elliptic-curves/cas/verify_nagao_linear_sections.py",
+  "schema_version": 1,
+  "script_sha256": "fd1864b11938517fd3e8edc9cb231edcf1b1c6762574551b4ced3f4bba746698",
+  "software": {
+    "python": "3.14.6",
+    "sympy": "1.14.0"
+  },
+  "status": "exact symbolic classification and dependency certificate",
+  "target_hit": false
+}

@@ -45,7 +45,7 @@ PYTHONPATH=elliptic-curves/cas .venv/bin/python \
 ```
 
 The pinned artifact is
-[`elliptic_mestre_dsquare_rank19_frontiers.json`](../../artifacts/generated-results/elliptic_mestre_dsquare_rank19_frontiers.json),
+[`elliptic_mestre_dsquare_rank19_frontiers.json`](../../artifacts/generated-results/elliptic-curves/elliptic_mestre_dsquare_rank19_frontiers.json),
 with file SHA-256
 `e78613cc35ad523242a6d3af529a4b59bece136a8f2b7880bead3ef7094144be`.
 The script stores the exact points, finite-reduction matrices, direct global

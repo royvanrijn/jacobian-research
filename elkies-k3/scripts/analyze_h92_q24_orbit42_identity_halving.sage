@@ -1,0 +1,259 @@
+#!/usr/bin/env sage -python
+"""Audit the identity-class doubling shortcut for q24/orbit42.
+
+The selected orbit42 section is in a nontrivial D12 discriminant class, but
+twice its MW vector is in the identity class.  Enumerate the exact abstract
+identity-class zero-pole shell and find the cheapest integral expression of
+twice the target in that shell.  This is a lattice gate only; it does not
+identify the eighteen equation points with the abstract MW vectors.
+"""
+
+import argparse
+import json
+from pathlib import Path
+
+from sage.all import MixedIntegerLinearProgram, QQ, ZZ, lcm, matrix, pari, vector
+
+
+ROOT = Path(__file__).resolve().parents[2]
+LOCAL = ROOT / "artifacts/local/elkies-k3"
+BRIDGE = LOCAL / "q24-orbit42-current-equation-bridge.json"
+SPINOR = LOCAL / "q24-orbit42-spinor-zero-profiles.json"
+
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--output", type=Path)
+args = parser.parse_args()
+
+bridge = json.loads(BRIDGE.read_text())
+if bridge.get("status") != "PASS_Q24_ORBIT42_CURRENT_EQUATION_LATTICE_BRIDGE":
+    raise SystemExit("current-equation orbit42 bridge is not passing")
+
+G = matrix(ZZ, bridge["D12"]["frame"])
+root = G[:12, :12]
+coupling = G[:12, 12:]
+tail = G[12:, 12:]
+root_inv = root.inverse()
+H = tail - coupling.transpose() * root_inv * coupling
+
+target = vector(ZZ, bridge["D12"]["orbit42_mw_projection"])
+assert tuple(target) == (-1, 0, -1, -1, 0)
+assert QQ(target * H * target) == 7
+
+
+def frac_key(values):
+    return tuple(QQ(x) - QQ(x).floor() for x in vector(QQ, values))
+
+
+zero_key = frac_key(vector(QQ, [0] * 12))
+
+
+def correction_key(z):
+    base = vector(ZZ, [0] * 12 + list(vector(ZZ, z)))
+    return frac_key(vector(QQ, base * G[:, :12]) * root_inv)
+
+
+scale = ZZ.one()
+for value in H.list():
+    scale = lcm(scale, ZZ(QQ(value).denominator()))
+IH = (scale * H).change_ring(ZZ)
+short = pari(IH).qfminim(ZZ(scale * 4))
+
+identity = []
+seen = set()
+for column in matrix(ZZ, short[2]).columns():
+    for sign in (1, -1):
+        z = sign * vector(ZZ, column)
+        key = tuple(map(int, z))
+        if key in seen:
+            continue
+        seen.add(key)
+        height = QQ(z * H * z)
+        if height == 4 and correction_key(z) == zero_key:
+            identity.append(z)
+
+identity.sort(key=lambda z: (sum(abs(int(x)) for x in z), tuple(z)))
+if len(identity) != 18:
+    raise ArithmeticError(f"expected 18 identity zero-pole vectors, got {len(identity)}")
+
+M = matrix(ZZ, [list(z) for z in identity])
+double_target = 2 * target
+module = M.row_module()
+if double_target not in module:
+    raise ArithmeticError("twice orbit42 target is not in the identity shell span")
+
+n = len(identity)
+program = MixedIntegerLinearProgram(maximization=False, solver="GLPK")
+c = program.new_variable(integer=True, nonnegative=False)
+a = program.new_variable(integer=True, nonnegative=True)
+for j in range(5):
+    program.add_constraint(
+        sum(identity[i][j] * c[i] for i in range(n)) == double_target[j]
+    )
+for i in range(n):
+    program.add_constraint(a[i] - c[i], min=0)
+    program.add_constraint(a[i] + c[i], min=0)
+program.set_objective(sum(a[i] for i in range(n)))
+optimum = ZZ(round(program.solve()))
+values = program.get_values(c)
+coefficients = [ZZ(round(values[i])) for i in range(n)]
+
+check = sum(
+    (coefficients[i] * identity[i] for i in range(n)),
+    vector(ZZ, [0] * 5),
+)
+assert check == double_target
+assert sum(abs(v) for v in coefficients) == optimum
+
+terms = [
+    {
+        "coefficient": int(coefficients[i]),
+        "mw": list(map(int, identity[i])),
+    }
+    for i in range(n)
+    if coefficients[i]
+]
+
+print(
+    "Q42HALF_ABSTRACT|"
+    f"identity=18|rank={module.rank()}|target2={','.join(map(str, double_target))}|"
+    f"L1={optimum}|terms={len(terms)}|status=PASS_IDENTITY_DOUBLING_GATE",
+    flush=True,
+)
+for index, term in enumerate(terms):
+    print(
+        "Q42HALF_TERM|"
+        f"index={index}|coefficient={term['coefficient']}|"
+        f"mw={','.join(map(str, term['mw']))}|status=PASS",
+        flush=True,
+    )
+
+payload = {
+    "schema": "elkies-k3.h3-q24-orbit42-identity-halving-audit.v1",
+    "status": "PASS_Q42_ORBIT42_IDENTITY_HALVING_LATTICE_GATE",
+    "target_mw": list(map(int, target)),
+    "double_target_mw": list(map(int, double_target)),
+    "identity_zero_pole_count": len(identity),
+    "identity_span_rank": int(module.rank()),
+    "minimum_coefficient_L1": int(optimum),
+    "terms": terms,
+    "identity_vectors": [list(map(int, z)) for z in identity],
+    "next": (
+        "Identify the eighteen exact equation points with these abstract MW "
+        "vectors, form the certified combination for twice P42, and factor "
+        "the exact duplication quartic to recover P42."
+    ),
+    "proof_boundary": (
+        "Exact D12/MW lattice computation only. It proves that twice the "
+        "orbit42 target is generated by the identity-class zero-pole shell; "
+        "it does not yet match shell vectors to equation points or halve the "
+        "resulting point."
+    ),
+}
+
+# The exact polynomial D12 model uses the R3 zero.  Audit that convention
+# separately so the equation-level halving route cannot silently use the
+# cheaper A0/historical-zero group law.
+spinor = json.loads(SPINOR.read_text())
+if spinor.get("status") != "PASS_Q24_ORBIT42_EXACT_SPINOR_ZERO_PROFILES":
+    raise SystemExit("spinor-zero profile artifact is not passing")
+r3_rows = [row for row in spinor["profiles"] if row["zero"] == "R3"]
+if len(r3_rows) != 1:
+    raise ArithmeticError(f"expected one R3 profile, got {len(r3_rows)}")
+r3 = r3_rows[0]
+G3 = matrix(ZZ, r3["frame"])
+R3 = G3[:12, :12]
+C3 = G3[:12, 12:]
+T3 = G3[12:, 12:]
+H3 = T3 - C3.transpose() * R3.inverse() * C3
+t3 = vector(ZZ, r3["target_mw"])
+assert QQ(t3 * H3 * t3) == QQ(r3["height"]) == 19
+
+scale3 = ZZ.one()
+for value in H3.list():
+    scale3 = lcm(scale3, ZZ(QQ(value).denominator()))
+short3 = pari((scale3 * H3).change_ring(ZZ)).qfminim(ZZ(scale3 * 4))
+identity3 = []
+seen3 = set()
+R3inv = R3.inverse()
+zero3 = frac_key(vector(QQ, [0] * 12))
+for column in matrix(ZZ, short3[2]).columns():
+    for sign in (1, -1):
+        z = sign * vector(ZZ, column)
+        key = tuple(map(int, z))
+        if key in seen3:
+            continue
+        seen3.add(key)
+        base = vector(ZZ, [0] * 12 + list(z))
+        dkey = frac_key(vector(QQ, base * G3[:, :12]) * R3inv)
+        if QQ(z * H3 * z) == 4 and dkey == zero3:
+            identity3.append(z)
+identity3.sort(key=lambda z: (sum(abs(int(x)) for x in z), tuple(z)))
+if len(identity3) != 18:
+    raise ArithmeticError(f"expected 18 R3 identity vectors, got {len(identity3)}")
+M3 = matrix(ZZ, [list(z) for z in identity3])
+double3 = 2 * t3
+module3 = M3.row_module()
+r3_in_span = bool(double3 in module3)
+
+r3_terms = []
+r3_optimum = None
+if r3_in_span:
+    n3 = len(identity3)
+    p3 = MixedIntegerLinearProgram(maximization=False, solver="GLPK")
+    c3 = p3.new_variable(integer=True, nonnegative=False)
+    a3 = p3.new_variable(integer=True, nonnegative=True)
+    for j in range(5):
+        p3.add_constraint(
+            sum(identity3[i][j] * c3[i] for i in range(n3)) == double3[j]
+        )
+    for i in range(n3):
+        p3.add_constraint(a3[i] - c3[i], min=0)
+        p3.add_constraint(a3[i] + c3[i], min=0)
+    p3.set_objective(sum(a3[i] for i in range(n3)))
+    r3_optimum = ZZ(round(p3.solve()))
+    vals3 = p3.get_values(c3)
+    coeff3 = [ZZ(round(vals3[i])) for i in range(n3)]
+    assert sum(
+        (coeff3[i] * identity3[i] for i in range(n3)),
+        vector(ZZ, [0] * 5),
+    ) == double3
+    r3_terms = [
+        {"coefficient": int(coeff3[i]), "mw": list(map(int, identity3[i]))}
+        for i in range(n3)
+        if coeff3[i]
+    ]
+
+print(
+    "Q42HALF_R3|"
+    f"target={','.join(map(str, t3))}|height=19|identity=18|"
+    f"rank={module3.rank()}|double_in_span={int(r3_in_span)}|"
+    f"L1={r3_optimum if r3_optimum is not None else 'NA'}|"
+    f"terms={len(r3_terms)}|status=PASS_EXACT_MODEL_ZERO_AUDIT",
+    flush=True,
+)
+payload["exact_model_R3_zero"] = {
+    "target_mw": list(map(int, t3)),
+    "target_height": "19",
+    "double_target_mw": list(map(int, double3)),
+    "identity_zero_pole_count": len(identity3),
+    "identity_span_rank": int(module3.rank()),
+    "double_target_in_span": r3_in_span,
+    "minimum_coefficient_L1": (
+        None if r3_optimum is None else int(r3_optimum)
+    ),
+    "terms": r3_terms,
+    "identity_vectors": [list(map(int, z)) for z in identity3],
+}
+
+output = (
+    args.output.resolve()
+    if args.output
+    else LOCAL / "q24-orbit42-identity-halving-audit.json"
+)
+output.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
+print(f"OUTPUT|{output}", flush=True)
+print(
+    "Q42HALF_RESULT|"
+    f"L1={optimum}|status=PASS_Q42_ORBIT42_IDENTITY_HALVING_LATTICE_GATE",
+    flush=True,
+)

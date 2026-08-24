@@ -1,0 +1,254 @@
+{
+  "schema": "elkies-k3.h3-equation-success-path.v1",
+  "authority": "MATH_STATUS.json",
+  "canonical_note": "elkies-k3/ORBIT42_EQUATION_LIFT.md",
+  "route_status": "ACTIVE_AT_Q42_RESOLVED_RR_TRIVIALIZATION",
+  "route": [
+    {
+      "id": "q24_o85_d12_equation",
+      "arrow": "D13/MW4 --q24 orbit85--> D12/MW5",
+      "status": "COMPLETE_EXACT_EQUATION",
+      "command": [
+        "sage",
+        "-python",
+        "elkies-k3/scripts/lift_q24_d13_to_d12_resolved_rr_qq.sage"
+      ],
+      "script": {
+        "path": "elkies-k3/scripts/lift_q24_d13_to_d12_resolved_rr_qq.sage",
+        "sha256": "c863c522c4d6899f67dc5357bb7928fdde686391d3922a7f308af597bca309ab"
+      },
+      "artifact": {
+        "path": "artifacts/local/elkies-k3/q24-d13-to-d12-component-valuation-qq.json",
+        "sha256": "2aefbac82ed4dfc8f78bc14265fb33698b5f821bdaf9afd55ad45b1bfc5da907",
+        "schema": "elkies-k3.h92-q24-d13-to-d12-component-valuation-qq.v1",
+        "status": "PASS_EXACT_Q24_D13_TO_D12_COMPONENT_VALUATION_RR"
+      }
+    },
+    {
+      "id": "q42_divval_preflight",
+      "arrow": "D12/MW5 --q6 orbit42--> A11/MW6",
+      "status": "COMPLETE_EXACT_PREREQUISITE",
+      "command": [
+        "sage",
+        "-python",
+        "elkies-k3/scripts/preflight_h92_q24_orbit42_component_valuation_qq.sage"
+      ],
+      "script": {
+        "path": "elkies-k3/scripts/preflight_h92_q24_orbit42_component_valuation_qq.sage",
+        "sha256": "8d79b8b90ff5e54952ae3f6db6cf589d148a815c7f31ca90931465d6c5c2bd70"
+      },
+      "artifact": {
+        "path": "artifacts/local/elkies-k3/q24-d12-to-a11-orbit42-divval-preflight.json",
+        "sha256": "a297e137abd9568f8f9b3d9fde27394d14d04d777d107f9a444a5f8192c5e4e5",
+        "schema": "elkies-k3.h3-q24-d12-orbit42-divval-preflight.v1",
+        "status": "PASS_Q42_DIVVAL_PREFLIGHT"
+      }
+    },
+    {
+      "id": "q42_i8star_physical_marking",
+      "arrow": "D12/MW5 --q6 orbit42--> A11/MW6",
+      "status": "COMPLETE_EXACT_PREREQUISITE",
+      "command": [
+        "sage",
+        "-python",
+        "elkies-k3/scripts/map_h92_q24_orbit42_i8star_physical_components_qq.sage"
+      ],
+      "script": {
+        "path": "elkies-k3/scripts/map_h92_q24_orbit42_i8star_physical_components_qq.sage",
+        "sha256": "0bf6ae093975cbc161a5c9db0e69ef665fd2983abe28baa6b4af84bba5797746"
+      },
+      "artifact": {
+        "path": "artifacts/local/elkies-k3/q24-d12-orbit42-i8star-physical-marking-qq.json",
+        "sha256": "75c10a06faa5936a24c4ed6e691725ca66391360f4a729c2bedcbce28d6e0dd3",
+        "schema": "elkies-k3.h3-q24-d12-orbit42-i8star-physical-marking-qq.v1",
+        "status": "PASS_Q42_EXACT_I8STAR_PHYSICAL_MARKING"
+      }
+    },
+    {
+      "id": "q42_resolved_rr_trivialization",
+      "arrow": "D12/MW5 --q6 orbit42--> A11/MW6",
+      "status": "NEXT_EXACT_GATE",
+      "proof_boundary": "Construct the two-dimensional resolved-surface RR kernel for D42 in both surviving physical orientations."
+    },
+    {
+      "id": "q42_a11_equation",
+      "arrow": "D12/MW5 --q6 orbit42--> A11/MW6",
+      "status": "PENDING_EQUATION"
+    },
+    {
+      "id": "q922_2a5_equation",
+      "arrow": "A11/MW6 --q8 orbit922--> 2A5/MW7",
+      "status": "PENDING_EQUATION"
+    },
+    {
+      "id": "q472_3a3_equation",
+      "arrow": "2A5/MW7 --q4 orbit472--> 3A3/MW8",
+      "status": "PENDING_EQUATION"
+    },
+    {
+      "id": "q323_a3_2a2_equation",
+      "arrow": "3A3/MW8 --q4 orbit323--> A3+2A2/MW10",
+      "status": "PENDING_EQUATION"
+    },
+    {
+      "id": "q207_5a1_equation",
+      "arrow": "A3+2A2/MW10 --q4 orbit207--> 5A1/MW12",
+      "status": "PENDING_EQUATION"
+    },
+    {
+      "id": "q52_4a1_equation",
+      "arrow": "5A1/MW12 --q4 orbit52--> 4A1/MW13",
+      "status": "PENDING_EQUATION"
+    },
+    {
+      "id": "q114_3a1_equation",
+      "arrow": "4A1/MW13 --q4 orbit114--> 3A1/MW14",
+      "status": "PENDING_EQUATION"
+    },
+    {
+      "id": "q498_2a1_equation",
+      "arrow": "3A1/MW14 --q4 orbit498--> 2A1/MW15",
+      "status": "PENDING_EQUATION"
+    },
+    {
+      "id": "q981_a1_equation",
+      "arrow": "2A1/MW15 --q4 orbit981--> A1/MW16",
+      "status": "PENDING_EQUATION"
+    },
+    {
+      "id": "q2247_rootless_equation",
+      "arrow": "A1/MW16 --q6 orbit2247--> rootless/MW17",
+      "status": "PENDING_EQUATION"
+    },
+    {
+      "id": "pinned_r17_equation_transport",
+      "arrow": "rootless/MW17 -> pinned R17",
+      "status": "EXACT_LATTICE_PINNING_EQUATION_TRANSPORT_PENDING"
+    }
+  ],
+  "shortcut_audits": [
+    {
+      "id": "q42_zero_pole_model_cache_p43",
+      "status": "COMPLETE_MODULAR_SEED_AID",
+      "command": [
+        "sage",
+        "-python",
+        "elkies-k3/scripts/recover_h92_q24_orbit42_zero_pole_smallprime.sage",
+        "--prime",
+        "43"
+      ],
+      "script": {
+        "path": "elkies-k3/scripts/recover_h92_q24_orbit42_zero_pole_smallprime.sage",
+        "sha256": "54e5838886bf37594924af509a1f918adeebfc0cce1707b95ac6d5bc169b5e30"
+      },
+      "artifact": {
+        "path": "artifacts/local/elkies-k3/q24-orbit42-zero-pole-seeds-mod-43.json",
+        "sha256": "71891619e4b8506c7c0fc2ccd9ea30b1567e56d32852ac6686a4cba1090b6b5e",
+        "schema": "elkies-k3.h3-q24-orbit42-zero-pole-smallprime.v1",
+        "status": "PASS_Q42_ZERO_POLE_SMALLPRIME_SEEDS"
+      }
+    },
+    {
+      "id": "q42_zero_pole_scan_p53",
+      "status": "COMPLETE_BOUNDED_MODULAR_AID",
+      "command": [
+        "sage",
+        "-python",
+        "elkies-k3/scripts/scan_h92_q24_orbit42_zero_pole_model_modp.sage",
+        "--prime",
+        "53"
+      ],
+      "script": {
+        "path": "elkies-k3/scripts/scan_h92_q24_orbit42_zero_pole_model_modp.sage",
+        "sha256": "f6a927269f06084edc43766602527d64e7827d8a2c88e8832207d2b5184be324"
+      },
+      "artifact": {
+        "path": "artifacts/local/elkies-k3/q24-orbit42-zero-pole-model-mod-53.json",
+        "sha256": "db37167d062fbee9630b644b7859efb371d412f48746e6dd762c3d5b639e13aa",
+        "schema": "elkies-k3.h3-q24-orbit42-zero-pole-model-modp.v1",
+        "status": "PASS_Q42_ZERO_POLE_MODEL_MODP_SCAN"
+      }
+    },
+    {
+      "id": "q42_zero_pole_exact_qq_audit",
+      "status": "COMPLETE_EXACT_BOUNDARY_AUDIT",
+      "command": [
+        "sage",
+        "-python",
+        "elkies-k3/scripts/lift_h92_q24_orbit42_zero_pole_sections_qq.sage",
+        "--precision",
+        "65536"
+      ],
+      "script": {
+        "path": "elkies-k3/scripts/lift_h92_q24_orbit42_zero_pole_sections_qq.sage",
+        "sha256": "d3ab8419621307760b072f2ecab9173bd44882d9fd9e20b70e92900670ef0b52"
+      },
+      "artifact": {
+        "path": "artifacts/local/elkies-k3/q24-orbit42-rational-zero-pole-sections-qq.json",
+        "sha256": "7fca737007de75f5b6c340b4e8e21d5f6cf8a6dfebd6cd9ca59c0d96b73340fb",
+        "schema": "elkies-k3.h3-q24-orbit42-rational-zero-pole-sections-qq.v1",
+        "status": "PASS_EXACT_Q42_RATIONAL_ZERO_POLE_SECTIONS_QQ"
+      },
+      "proof_boundary": "Exactly 18 rational identity-class zero-pole sections; the nontrivial spinor class, orbit42 RR pencil, and A11 child remain open."
+    },
+    {
+      "id": "q42_fast_q6_premise_rejection",
+      "status": "COMPLETE_EXACT_NEGATIVE_AUDIT",
+      "command": [
+        "python3",
+        "elkies-k3/scripts/run_h92_q24_orbit42_fast_parallel.py"
+      ],
+      "script": {
+        "path": "elkies-k3/scripts/preflight_h92_q24_o12_p42_exact_q6_points.sage",
+        "sha256": "c86f54a10c83d39f506349866ba2e841c20cf824b4196f74be1ddc7b882c654d"
+      },
+      "artifact": {
+        "path": "artifacts/local/elkies-k3/q24-o12-p42-q6-preflight.json",
+        "sha256": "e4d489930f4adeabc479cca7a88f12e8db326bd835b008db171627e0831722c8",
+        "schema": "elkies-k3.h3-q24-orbit42-fast-q6-premise-audit.v1",
+        "status": "PASS_Q42_FAST_Q6_PREMISE_REJECTION"
+      },
+      "proof_boundary": "The named equation-D13 to ambient matrix gives q6 degrees 435 for O12 and 703 for P42. They are not q6 rational sections, so the fast q6-point transport and its parallel orientation jobs are inapplicable."
+    },
+    {
+      "id": "q42_identity_halving_lattice_gate",
+      "status": "COMPLETE_EXACT_SHORTCUT_GATE",
+      "command": [
+        "sage",
+        "-python",
+        "elkies-k3/scripts/analyze_h92_q24_orbit42_identity_halving.sage"
+      ],
+      "script": {
+        "path": "elkies-k3/scripts/analyze_h92_q24_orbit42_identity_halving.sage",
+        "sha256": "66ebba3fc946a2ca7ba6f7e1d31e9d28d8a89745e7d131b6babf9a56fa1bb02d"
+      },
+      "artifact": {
+        "path": "artifacts/local/elkies-k3/q24-orbit42-identity-halving-audit.json",
+        "sha256": "c15730cb2968dfea990c5b35d4942b34d0e9ee7abf9cba59f355fad959b52662",
+        "schema": "elkies-k3.h3-q24-orbit42-identity-halving-audit.v1",
+        "status": "PASS_Q42_ORBIT42_IDENTITY_HALVING_LATTICE_GATE"
+      },
+      "proof_boundary": "Exact MW-lattice gate only: twice the R3-zero target is a coefficient-L1-six combination of the eighteen identity-shell vectors. Equation-point matching and halving are separate."
+    },
+    {
+      "id": "q42_identity_halving_modular_boundary",
+      "status": "COMPLETE_MODULAR_NEGATIVE_AUDIT",
+      "command": [
+        "sage",
+        "-python",
+        "elkies-k3/scripts/recover_h92_q24_orbit42_by_identity_halving_qq.sage"
+      ],
+      "script": {
+        "path": "elkies-k3/scripts/recover_h92_q24_orbit42_by_identity_halving_qq.sage",
+        "sha256": "20d3ec4a5c23403263e7f50381cce9d8ba1ec5296c9853f51794501bfafe1ff9"
+      },
+      "artifact": {
+        "path": "artifacts/local/elkies-k3/q24-orbit42-identity-halving-qq.json",
+        "sha256": "bb0c0da20ecb56301d22b37f6593c77e084ff95e3f5a37d4a43d6b3cf02d8cab",
+        "schema": "elkies-k3.h3-q24-orbit42-identity-halving-qq.v1",
+        "status": "Q42_IDENTITY_HALVING_HAS_NO_A11_CHORD"
+      },
+      "proof_boundary": "Modulo 100003, the exact 18-point shell has eight pointed-anchor-compatible markings. Four rational degree-three relative halves survive, but all four chord branch polynomials remain squarefree of degree 18 and none has an A11 fibre. This is a modular shortcut rejection, not a characteristic-zero non-existence theorem."
+    }
+  ]
+}

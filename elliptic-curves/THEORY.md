@@ -207,7 +207,7 @@ though they had one likelihood would double-count deliberately imposed data.
 ## 6. The current score is only a ranking statistic
 
 The `fermigier-good` option in
-[`cas/search_crt_lattice.py`](cas/search_crt_lattice.py) adds, over good primes
+[`search_crt_lattice.py`](../archive/elliptic-curves/cas/search_crt_lattice.py) adds, over good primes
 in the requested numerical range,
 
 ```text

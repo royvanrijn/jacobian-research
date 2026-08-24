@@ -211,6 +211,7 @@ class FermigierRank22AccidentalSliceTests(unittest.TestCase):
             ROOT
             / "artifacts"
             / "generated-results"
+            / "elliptic-curves"
             / "elliptic_fermigier_rank22_accidental_slices.json"
         )
         artifact = json.loads(artifact_path.read_text())
@@ -301,6 +302,8 @@ class FermigierRank22AccidentalSliceTests(unittest.TestCase):
         self.assertEqual(escalation["stable_numerical_rank"], 15)
         checkpoint_path = (
             ROOT
+            / "archive"
+            / "elliptic-curves"
             / "artifacts"
             / "generated-results"
             / "elliptic_fermigier_3115_3_h1000000_checkpoint.json"

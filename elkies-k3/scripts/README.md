@@ -171,6 +171,11 @@ Active q24 corridor scripts:
 
 Orbit42/D12 profile rule:
 
+- `success-path/` — **ACTIVE_ROUTE_LEDGER** containing the version-locked
+  launcher/index for every successful equation-lift stage, the exact artifact
+  statuses and hashes, the complete pending route to pinned R17, and the
+  separately labelled shortcut audits.  Canonical implementations stay in
+  this directory and are not copied into the ledger directory.
 - Do not use parity/minimum-`P.O` shortcuts for D12 correction classes. The
   R17-directed orbit42 class is the spinor class with correction `3`,
   `P.O=3`, denominator degree `3`, and no extra fibre twist. Live q24/D12
@@ -193,6 +198,29 @@ Orbit42/D12 profile rule:
   actual P42 section artifact. The preferred exact route is now the direct
   resolved-RR compiler for the degree-two divisor `D42`, not a zero-pole P42
   search.
+- `preflight_h92_q24_orbit42_component_valuation_qq.sage` and
+  `map_h92_q24_orbit42_i8star_physical_components_qq.sage` —
+  **ACTIVE_EXACT_PREREQUISITES** for the resolved-RR compiler.  They pin the
+  corrected divisor profile and the two exact physical spinor orientations.
+- `recover_h92_q24_orbit42_zero_pole_smallprime.sage`,
+  `scan_h92_q24_orbit42_zero_pole_model_modp.sage`, and
+  `lift_h92_q24_orbit42_zero_pole_sections_qq.sage` — **EXACT_BOUNDARY_AUDIT**.
+  Together they reconstruct eighteen exact rational identity-class zero-pole
+  sections.  The modular scan is only a seed-selection aid; the final QQ
+  identities are exact.  This does not produce the nontrivial orbit42 class or
+  the A11 child.
+- `preflight_h92_q24_o12_p42_exact_q6_points.sage` and
+  `run_h92_q24_orbit42_fast_parallel.py` — **EXACT_NEGATIVE_AUDIT** for the
+  rejected q6-point transport.  The named equation-D13 coordinate conversion
+  is exact, but `O12` and `P42` have q6 degrees `435` and `703`; the runner
+  stops cleanly before the archived transport/orientation experiments.
+- `analyze_h92_q24_orbit42_identity_halving.sage` and
+  `recover_h92_q24_orbit42_by_identity_halving_qq.sage` —
+  **SHORTCUT_BOUNDARY_AUDIT**.  The first proves the exact identity-shell
+  doubling relation.  The second uses the exact QQ points but only a modular
+  shell marking/halving census; its four rational degree-three candidates
+  have degree-18 squarefree chord branches and no A11 fibre.  This is not a
+  characteristic-zero non-existence theorem.
 - `recover_h92_q24_exact_by_qq_trace_interpolation.sage` — **HISTORICAL_DIAGNOSTIC**
   unless it is refactored to serve the Theta/component construction directly.
 

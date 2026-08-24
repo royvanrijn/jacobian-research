@@ -81,52 +81,59 @@ IMPORTED_RANK_CERTIFICATES = Path(
     "artifacts/generated-results/elliptic-curves/fermigier_rank_certificates_v1.json"
 )
 GENERIC_RANK_THEOREM = Path(
-    "artifacts/generated-results/elliptic_fermigier_generic_rank_exact.json"
+    "artifacts/generated-results/elliptic-curves/elliptic_fermigier_generic_rank_exact.json"
 )
 EXCEPTIONAL_TRANSPORT = Path(
-    "artifacts/generated-results/elliptic_fermigier_exceptional_transport.json"
+    "artifacts/generated-results/elliptic-curves/elliptic_fermigier_exceptional_transport.json"
 )
 EXCEPTIONAL_QUOTIENT_BALL = Path(
-    "artifacts/generated-results/elliptic_fermigier_exceptional_quotient_ball.json"
+    "artifacts/generated-results/elliptic-curves/elliptic_fermigier_exceptional_quotient_ball.json"
 )
 BIDEGREE21_P13_R20E1_PILOT = Path(
-    "artifacts/generated-results/"
+    "artifacts/generated-results/elliptic-curves/"
     "elliptic_fermigier_bidegree21_p13_r20e1_pilot.json"
 )
 BIDEGREE21_ALL80 = Path(
-    "artifacts/generated-results/elliptic_fermigier_bidegree21_all80.json"
+    "artifacts/generated-results/elliptic-curves/elliptic_fermigier_bidegree21_all80.json"
 )
 EXCEPTIONAL_PAIR_SIMULTANEOUS_H200000 = Path(
-    "artifacts/generated-results/"
+    "artifacts/generated-results/elliptic-curves/"
     "elliptic_fermigier_exceptional_pair_simultaneous_h200000.json"
 )
 BIDEGREE21_P13_R20E1_NONLINEAR_POINTS_H1024 = Path(
-    "artifacts/generated-results/"
+    "artifacts/generated-results/elliptic-curves/"
     "elliptic_fermigier_bidegree21_p13_r20e1_nonlinear_points_h1024.json"
 )
 LEGACY_EXPLICIT_FORMULA = Path(
-    "artifacts/generated-results/elliptic_fermigier_rank20_28917_20_explicit_formula_delta22.json"
+    "archive/elliptic-curves/artifacts/generated-results/elliptic_fermigier_rank20_28917_20_explicit_formula_delta22.json"
 )
 LEGACY_NEIGHBORHOOD_AUDIT = Path(
-    "artifacts/generated-results/elliptic_fermigier_rank20_adapter_neighborhood_audit.json"
+    "archive/elliptic-curves/artifacts/generated-results/elliptic_fermigier_rank20_adapter_neighborhood_audit.json"
 )
 LEGACY_HIGH_POWER_CRT = Path(
-    "artifacts/generated-results/elliptic_fermigier_high_power_crt_gauss.json"
+    "archive/elliptic-curves/artifacts/generated-results/elliptic_fermigier_high_power_crt_gauss.json"
 )
 DEFAULT_OUTPUT = Path(
-    "artifacts/generated-results/"
+    "artifacts/generated-results/elliptic-curves/"
     "elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json"
+)
+ACTIVE_ARTIFACT_ROOT = Path("artifacts/generated-results/elliptic-curves")
+ARCHIVED_ARTIFACT_ROOT = Path(
+    "archive/elliptic-curves/artifacts/generated-results"
+)
+PRE_CLEANUP_SNAPSHOT_ROOT = Path(
+    "archive/elliptic-curves/artifacts/snapshots/pre-cleanup-2026-08-24"
 )
 
 EXPECTED_HASHES = {
     IMPORTED_NEAR_MISS: "8416e835887236e9e4eafcb01384a710ce4f1be0628701a97f4a7d7a07fe63b1",
     IMPORTED_RANK_CERTIFICATES: "94fc64d7f1744f6a20a0396d32914cd36330107db2538e03ee95cc3e32927051",
-    GENERIC_RANK_THEOREM: "61bf11ae14db1aedcf7809697c96e78f2c2978c22f4e7b8fd894de74628b3de7",
-    EXCEPTIONAL_TRANSPORT: "a767e849119d4eb974eb8e85536031413c6d52a59151933239fa141235de5777",
-    EXCEPTIONAL_QUOTIENT_BALL: "4e1f49f57fa9448b1172a3be4f16501138b21a3a7444ec39b27292f7430b1362",
+    GENERIC_RANK_THEOREM: "234522ec0af3ba6481425aa8c257c14fa7e5605051a10f9db94ea34827aab520",
+    EXCEPTIONAL_TRANSPORT: "879ff779a6799f3c463b530a5a8a63286ce192fcd57fdd12a4b1178414e36961",
+    EXCEPTIONAL_QUOTIENT_BALL: "fd70a03a49c27322d6b74fcc2dad30576e761b8fbe46f911fa302a5c004192b2",
     BIDEGREE21_P13_R20E1_PILOT: "423bec6bd9545783da0a550c1abb44bb6ac096c361011976ab3b209028341bae",
     BIDEGREE21_ALL80: "2c3aa7a8fc57ad7160397506e8db47bb07ea8c988bab87c9e51b1529000301f5",
-    EXCEPTIONAL_PAIR_SIMULTANEOUS_H200000: "0a1a1ac50ac35689b4134106e4dd1469553363e15dd9c46a8c6f19358ec69394",
+    EXCEPTIONAL_PAIR_SIMULTANEOUS_H200000: "66f23d9ab4a931ef9e3123c021f56a184505f26c1fad6b647301e7f0d1d52fbe",
     BIDEGREE21_P13_R20E1_NONLINEAR_POINTS_H1024: "dd281569a1da8eb1c07a635faecb8b9f27269751c2639fb6b94f3a1bada46310",
     LEGACY_EXPLICIT_FORMULA: "9e8262d81026557999409860850cef55540a89a384d10723c4270e57261ebce5",
     LEGACY_NEIGHBORHOOD_AUDIT: "0eef1ad22211d9b8f6b8cdcec3e1c8829322f2889195a2f1527b03465e799615",
@@ -135,15 +142,15 @@ EXPECTED_HASHES = {
 
 EXPECTED_STRUCTURAL_SCRIPT_HASHES = {
     Path("elliptic-curves/cas/classify_fermigier_exceptional_quotient_ball.py"):
-        "b5ed9a18d832289f06cf67c12329e64f82c8618ccdbd220fb10dd48e1d514f9c",
+        "0c3df7c25765c02eec77e3bdbae7e8c848b3ca4bbff01edc6d911b0b2b57a026",
     Path("elliptic-curves/cas/analyze_fermigier_bidegree21_pilot.py"):
-        "e35f3a78097a2ea9dbc43048d122b306cfcb261c716fed83ad60d734c44a9089",
+        "44a3f90c416c6d0cba5e63cc7dab9ca13fb4300b9570a162b47b6e27a6c339bf",
     Path("elliptic-curves/cas/analyze_fermigier_bidegree21_all80.py"):
-        "403238fc23d3a793906b37d75ce4d7eace5026e5ab41a632aa06e4e358ce859a",
+        "d34caeb6b34bbad14c7c7cdf29436c455e25c957080c967d7f17ba0759d28fa2",
     Path("elliptic-curves/cas/search_fermigier_exceptional_pair_simultaneous_h200000.py"):
-        "cf1b6740e6127e7cbf92cf49dccd30c71c8ca6113c2d00fa1ec535a4fc0e0f01",
+        "563583f301f75106c64b71de6f57c9963d19cf79826041a8137dcd52589049fd",
     Path("elliptic-curves/cas/search_fermigier_bidegree21_nonlinear_points.py"):
-        "1dbe3cb7b95991d671f4df64109012afe36ac568556224298e8d8892941b3044",
+        "2e1c3617e01e9e8e02ed8a54fa4c33dc07e4e4a1352176ae74bb9a490997a7b6",
 }
 
 EXPECTED_MINIMAL_CHANGE = WeierstrassChange.from_values(
@@ -158,6 +165,27 @@ EXPECTED_MINIMAL_CHANGE = WeierstrassChange.from_values(
 
 def repository_path(relative: Path | str) -> Path:
     return REPOSITORY_ROOT / Path(relative)
+
+
+def resolve_historical_artifact_reference(
+    relative: Path | str, expected_sha256: str
+) -> Path:
+    """Resolve an inventory row without pretending a historical hash is live."""
+
+    original = Path(relative)
+    candidates = (
+        original,
+        PRE_CLEANUP_SNAPSHOT_ROOT / original.name,
+        ARCHIVED_ARTIFACT_ROOT / original.name,
+        ACTIVE_ARTIFACT_ROOT / original.name,
+    )
+    for candidate in candidates:
+        full_path = repository_path(candidate)
+        if full_path.is_file() and sha256_file(full_path) == expected_sha256:
+            return candidate
+    raise FileNotFoundError(
+        f"no archived or current artifact matches {original} at {expected_sha256}"
+    )
 
 
 def checked_json(relative: Path) -> dict[str, Any]:
@@ -336,7 +364,14 @@ def experiment_ledger(
     """Classify every audited Fermigier artifact without inferring absence."""
 
     paths = [
-        item
+        {
+            **item,
+            "path": str(
+                resolve_historical_artifact_reference(
+                    item["path"], item["sha256"]
+                )
+            ),
+        }
         for item in audit["input_inventory"]["files"]
         if item["path"].startswith("artifacts/generated-results/")
         and "fermigier" in item["path"].lower()
@@ -1424,7 +1459,7 @@ def build_record() -> dict[str, Any]:
             "canonical_command": (
                 "PYTHONPATH=elliptic-curves/cas python3 "
                 "elliptic-curves/cas/build_fermigier_rank20_candidate_record.py "
-                "--output artifacts/generated-results/"
+                "--output artifacts/generated-results/elliptic-curves/"
                 "elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json"
             ),
             "pari_cross_check": {

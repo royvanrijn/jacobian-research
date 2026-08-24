@@ -314,7 +314,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--output",
         type=Path,
-        default=root / "artifacts/generated-results/elliptic_nagao_linear_sections.json",
+        default=root / "artifacts/generated-results/elliptic-curves/elliptic_nagao_linear_sections.json",
     )
     return parser
 

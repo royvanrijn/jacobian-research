@@ -64,7 +64,7 @@ UPSTREAM_FACTOR_SHA256 = (
     "8c8c84159171629f514bd52f00091b61c0e8a3b806273765c35fc35b032d8799"
 )
 OUTPUT_RELATIVE = Path(
-    "artifacts/generated-results/"
+    "artifacts/generated-results/elliptic-curves/"
     "elliptic_fermigier_bidegree21_p13_r20e1_nonlinear_points_h1024.json"
 )
 

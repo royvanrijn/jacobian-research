@@ -83,7 +83,7 @@ EXPECTED_SECTION_CERTIFICATE_SHA256 = (
 )
 DEFAULT_OUTPUT = (
     REPOSITORY_ROOT
-    / "artifacts/generated-results/elliptic_fermigier_generic_rank_exact.json"
+    / "artifacts/generated-results/elliptic-curves/elliptic_fermigier_generic_rank_exact.json"
 )
 REPRODUCING_COMMAND = (
     "PYTHONPATH=elliptic-curves/cas:elliptic-curves .venv/bin/python "

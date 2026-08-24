@@ -15,14 +15,15 @@ import sympy as sp
 
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path[:0] = [str(ROOT / "elliptic-curves"), str(ROOT / "elliptic-curves/cas")]
 SCRIPT = ROOT / "elliptic-curves/cas/analyze_fermigier_bidegree21_pilot.py"
 ARTIFACT = (
     ROOT
-    / "artifacts/generated-results/"
+    / "artifacts/generated-results/elliptic-curves/"
     "elliptic_fermigier_bidegree21_p13_r20e1_pilot.json"
 )
 EXPECTED_SCRIPT_SHA256 = (
-    "e35f3a78097a2ea9dbc43048d122b306cfcb261c716fed83ad60d734c44a9089"
+    "44a3f90c416c6d0cba5e63cc7dab9ca13fb4300b9570a162b47b6e27a6c339bf"
 )
 EXPECTED_ARTIFACT_SHA256 = (
     "423bec6bd9545783da0a550c1abb44bb6ac096c361011976ab3b209028341bae"

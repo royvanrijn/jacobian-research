@@ -101,10 +101,10 @@ MODEL_CHANGE_SHORT_TO_MINIMAL = (
     Q(1372, 130323843),
 )
 DEFAULT_OUTPUT = Path(
-    "artifacts/generated-results/elliptic_fermigier_rank22_accidental_slices.json"
+    "artifacts/generated-results/elliptic-curves/elliptic_fermigier_rank22_accidental_slices.json"
 )
 DEFAULT_ESCALATION_CHECKPOINT = Path(
-    "artifacts/generated-results/"
+    "archive/elliptic-curves/artifacts/generated-results/"
     "elliptic_fermigier_3115_3_h1000000_checkpoint.json"
 )
 ESCALATION_CHECKPOINT_SHA256 = (

@@ -28,7 +28,7 @@ Q = Fraction
 REPOSITORY = Path(__file__).resolve().parents[2]
 CERTIFICATE = (
     REPOSITORY
-    / "artifacts/generated-results/elliptic_nagao_rank17_frontier_certificate.json"
+    / "artifacts/generated-results/elliptic-curves/elliptic_nagao_rank17_frontier_certificate.json"
 )
 CERTIFICATE_SHA256 = "7378ce59c72974fe39e0e2a40c740f6a96e8dc555a1361b5aaeef67f4d9e0213"
 SHORT_A = Q(-564322920496764715904305097281, 80621568)
@@ -174,7 +174,7 @@ def main() -> None:
         type=Path,
         default=(
             REPOSITORY
-            / "artifacts/generated-results/elliptic_nagao_u135_ell2cover.json"
+            / "archive/elliptic-curves/artifacts/generated-results/elliptic_nagao_u135_ell2cover.json"
         ),
     )
     args = parser.parse_args()

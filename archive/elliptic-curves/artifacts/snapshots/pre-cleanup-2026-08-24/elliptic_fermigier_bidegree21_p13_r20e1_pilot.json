@@ -1,0 +1,202 @@
+{
+  "anchors": {
+    "E22": {
+      "alias": "literal_shift_T=39508/39",
+      "canonical_parameter": "u=19754/39",
+      "certified_rank_lower_bound": 22,
+      "exceptional_quotient_rank_lower_bound": 10
+    },
+    "rank20": {
+      "alias": "literal_shift_T=28917/10",
+      "canonical_parameter": "u=28917/20",
+      "certified_rank_lower_bound": 20,
+      "exceptional_quotient_rank_lower_bound": 8
+    }
+  },
+  "claim_level": "exact computation; no new section or specialization found",
+  "discriminant_factorization_over_QQ_c_k": {
+    "discriminant_term_count": 2265,
+    "discriminant_total_degree": 72,
+    "factors": [
+      {
+        "exponent": 1,
+        "factor": "irreducible nonlinear factor",
+        "total_degree": 32
+      },
+      {
+        "exponent": 2,
+        "factor": "k-c",
+        "total_degree": 1
+      },
+      {
+        "exponent": 2,
+        "factor": "k+c",
+        "total_degree": 1
+      },
+      {
+        "exponent": 12,
+        "factor": "28917*c+10",
+        "total_degree": 1
+      },
+      {
+        "exponent": 12,
+        "factor": "39508*c+39",
+        "total_degree": 1
+      },
+      {
+        "exponent": 12,
+        "factor": "5899690*c+732683*k",
+        "total_degree": 1
+      }
+    ],
+    "nonlinear_degree_in_c": 32,
+    "nonlinear_degree_in_k": 32,
+    "nonlinear_exponent": 1,
+    "nonlinear_nonconstant_factor_count": 1,
+    "nonlinear_primitive_factor_sha256": "8c8c84159171629f514bd52f00091b61c0e8a3b806273765c35fc35b032d8799",
+    "nonlinear_term_count": 561,
+    "nonlinear_total_degree": 32,
+    "normalization": "up to a nonzero rational scalar",
+    "resultant_term_count": 2493,
+    "resultant_total_degree": 76
+  },
+  "family_id": "fermigier-mestre-v1",
+  "generated_at_utc": "2026-08-14T20:45:48.227882+00:00",
+  "nonlinear_component": {
+    "discriminant_multiplicity": 1,
+    "generic_behavior": "one simple finite double root, hence squareclass kernel degree 8 and genus 3 at its generic point",
+    "generic_genus_at_most_one": false,
+    "irreducible_over_QQ": true,
+    "rational_special_points_and_component_intersections_classified": false
+  },
+  "outcome": {
+    "genus_at_most_one_components": 0,
+    "new_sections": 0,
+    "new_specializations": 0,
+    "rational_linear_components": 5,
+    "target_met": false,
+    "valid_new_rational_components": 2
+  },
+  "pencil": {
+    "chart": "finite denominator chart d=1",
+    "definition": "x(T)=(a(c)*T+b(c)+k*(T-39508/39)*(T-28917/10))/(c*T+1), with a(c),b(c) fixed by x(39508/39)=256714/39 and x(28917/10)=-8545",
+    "generic_cleared_T_degree": 10,
+    "generic_squareclass_genus": 4,
+    "leading_coefficient_factorization": "6666883836179368888567109693610000*(c-k)^2*(c+k)^2"
+  },
+  "rational_linear_components": [
+    {
+      "T_degree_after_specialization": 8,
+      "component": "k-c=0",
+      "factor_signature_over_parameter_function_field": [
+        [
+          8,
+          1
+        ]
+      ],
+      "genus_at_most_one": false,
+      "interpretation": "The leading T^10 and T^9 terms vanish because x(T)~T at infinity; the remaining octic is squarefree over QQ(c).",
+      "squareclass_genus": 3,
+      "squareclass_kernel_degree": 8,
+      "validity": "valid degree-drop locus"
+    },
+    {
+      "T_degree_after_specialization": 8,
+      "component": "k+c=0",
+      "factor_signature_over_parameter_function_field": [
+        [
+          8,
+          1
+        ]
+      ],
+      "genus_at_most_one": false,
+      "interpretation": "The leading T^10 and T^9 terms vanish because x(T)~-T at infinity; the remaining octic is squarefree over QQ(c).",
+      "squareclass_genus": 3,
+      "squareclass_kernel_degree": 8,
+      "validity": "valid degree-drop locus"
+    },
+    {
+      "T_degree_after_specialization": 10,
+      "component": "5899690*c+732683*k=0",
+      "factor_signature_over_parameter_function_field": [
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "genus_at_most_one": false,
+      "interpretation": "The numerator is divisible by c*T+1.  After cancellation this is the unique already-classified affine P13-to-R20E1 transport.",
+      "squareclass_genus": 2,
+      "squareclass_kernel_degree": 6,
+      "validity": "valid but representation is non-reduced"
+    },
+    {
+      "T_degree_after_specialization": 10,
+      "component": "28917*c+10=0",
+      "factor_signature_over_parameter_function_field": [
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "genus_at_most_one": false,
+      "interpretation": "Numerator and denominator both vanish at T=28917/10, so the uncancelled expression does not retain the declared endpoint value.",
+      "squareclass_genus": 2,
+      "squareclass_kernel_degree": 6,
+      "validity": "invalid at rank20 anchor"
+    },
+    {
+      "T_degree_after_specialization": 10,
+      "component": "39508*c+39=0",
+      "factor_signature_over_parameter_function_field": [
+        [
+          1,
+          4
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "genus_at_most_one": false,
+      "interpretation": "Numerator and denominator both vanish at T=39508/39, so the uncancelled expression does not retain the declared endpoint value.",
+      "squareclass_genus": 2,
+      "squareclass_kernel_degree": 6,
+      "validity": "invalid at E22 anchor"
+    }
+  ],
+  "representative_pair": {
+    "both_independent_modulo_generic_sections": true,
+    "left_label": "P13",
+    "left_x": "256714/39",
+    "right_label": "R20E1",
+    "right_x": "-8545"
+  },
+  "reproducing_command": "PYTHONPATH=elliptic-curves:elliptic-curves/cas .venv/bin/python elliptic-curves/cas/analyze_fermigier_bidegree21_pilot.py",
+  "result_sha256": "98a925d52f7bdb8eca571cb7c922db36439cf3525006713b1bce75563112f2dd",
+  "schema_version": "elliptic-curves.fermigier-bidegree21-pilot.v1",
+  "scope": {
+    "all_pairs_classified": false,
+    "completed_pair_count": 1,
+    "completed_pairs": [
+      "P13xR20E1"
+    ],
+    "infinity_denominator_chart": "already included in the complete Mobius classification at k=0; not separately extended to nonzero curvature in this pilot",
+    "not_claimed": "No claim is made about rational special points on the irreducible degree-32 component, its intersections, or the other 79 pairs.",
+    "possible_independent_pair_count": 80
+  },
+  "software": {
+    "python": "3.14.6",
+    "singular": "Singular for arm64-Darwin version 4.4.1 (44105, 64 bit) Nov 11 2025 16:12:34",
+    "sympy": "1.14.0"
+  },
+  "status": "complete exact bounded structural pilot"
+}

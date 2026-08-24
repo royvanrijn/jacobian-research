@@ -209,17 +209,18 @@ def certify_candidate(
 
 def build_parser() -> argparse.ArgumentParser:
     root = Path(__file__).resolve().parents[2]
-    generated = root / "artifacts/generated-results"
+    generated = root / "artifacts/generated-results/elliptic-curves"
+    archived = root / "archive/elliptic-curves/artifacts/generated-results"
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--input",
         type=Path,
-        default=generated / "elliptic_nagao_rank13_rank_gain_search.json",
+        default=archived / "elliptic_nagao_rank13_rank_gain_search.json",
     )
     parser.add_argument(
         "--mutation-input",
         type=Path,
-        default=generated / "elliptic_nagao_rank13_rank_gain_mutations.json",
+        default=archived / "elliptic_nagao_rank13_rank_gain_mutations.json",
     )
     parser.add_argument("--saturation-bound", type=int, default=20)
     parser.add_argument("--saturation-timeout", type=float, default=20.0)

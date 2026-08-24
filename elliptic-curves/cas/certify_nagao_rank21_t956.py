@@ -76,7 +76,7 @@ TARGET_LOG_CONDUCTOR = "182.72"
 REPRODUCING_COMMAND = (
     "PYTHONPATH=elliptic-curves/cas .venv/bin/python "
     "elliptic-curves/cas/certify_nagao_rank21_t956.py "
-    "--output artifacts/generated-results/elliptic_nagao_rank21_t956_rank17_certificate.json"
+    "--output archive/elliptic-curves/artifacts/generated-results/elliptic_nagao_rank21_t956_rank17_certificate.json"
 )
 
 
@@ -526,7 +526,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--output",
         type=Path,
         default=root
-        / "artifacts/generated-results/elliptic_nagao_rank21_t956_rank17_certificate.json",
+        / "archive/elliptic-curves/artifacts/generated-results/elliptic_nagao_rank21_t956_rank17_certificate.json",
     )
     return parser
 

@@ -13,13 +13,14 @@ import unittest
 
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path[:0] = [str(ROOT / "elliptic-curves"), str(ROOT / "elliptic-curves/cas")]
 SCRIPT = ROOT / "elliptic-curves/cas/analyze_fermigier_bidegree21_all80.py"
 ARTIFACT = (
     ROOT
-    / "artifacts/generated-results/elliptic_fermigier_bidegree21_all80.json"
+    / "artifacts/generated-results/elliptic-curves/elliptic_fermigier_bidegree21_all80.json"
 )
 EXPECTED_SCRIPT_SHA256 = (
-    "403238fc23d3a793906b37d75ce4d7eace5026e5ab41a632aa06e4e358ce859a"
+    "d34caeb6b34bbad14c7c7cdf29436c455e25c957080c967d7f17ba0759d28fa2"
 )
 EXPECTED_ARTIFACT_SHA256 = (
     "2c3aa7a8fc57ad7160397506e8db47bb07ea8c988bab87c9e51b1529000301f5"

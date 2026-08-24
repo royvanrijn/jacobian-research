@@ -142,7 +142,7 @@ def main():
     ap.add_argument("--manifest", type=Path, default=Path(
         "artifacts/generated-results/elliptic-curves/fermigier_rank20_near_miss_v1.json"))
     ap.add_argument("--candidate-record", type=Path, default=Path(
-        "artifacts/generated-results/elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json"))
+        "artifacts/generated-results/elliptic-curves/elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json"))
     ap.add_argument("--prime-bound", type=int, default=5000)
     ap.add_argument("--target-rank", type=int, default=20)
     ap.add_argument(

@@ -60,7 +60,7 @@ CONDUCTOR_KEEP = 8
 TARGET_LOG_CONDUCTOR = Decimal("182.72")
 IMPORTED_SEED = Q(673709, 29965)
 AUDIT_RELATIVE = Path(
-    "artifacts/generated-results/elliptic_fermigier_rank20_adapter_neighborhood_audit.json"
+    "archive/elliptic-curves/artifacts/generated-results/elliptic_fermigier_rank20_adapter_neighborhood_audit.json"
 )
 AUDIT_SHA256 = "0eef1ad22211d9b8f6b8cdcec3e1c8829322f2889195a2f1527b03465e799615"
 EXPECTED_PRIOR_COUNT = 1_798
@@ -423,7 +423,7 @@ def main() -> None:
     parser.add_argument(
         "--output",
         type=Path,
-        default=root / "artifacts/generated-results/elliptic_fermigier_high_power_crt_gauss.json",
+        default=root / "archive/elliptic-curves/artifacts/generated-results/elliptic_fermigier_high_power_crt_gauss.json",
     )
     args = parser.parse_args()
     if not 1 <= args.conductor_timeout <= 60 or not 1 <= args.workers <= 4:

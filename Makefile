@@ -159,12 +159,13 @@ ALL_PAPERS := $(VERIFIED_PAPERS) $(PARKED_PAPERS) $(COMPANION_PAPERS)
 .PHONY: verify-hc4-smooth-quartic-final-line-orbits
 
 check:
-	$(PYTHON) -m compileall -q jcsearch scripts elliptic-curves/ecsearch elliptic-curves/scripts elliptic-curves/tests
+	$(PYTHON) -m compileall -q jcsearch scripts elliptic-curves/cas elliptic-curves/ecsearch elliptic-curves/scripts elliptic-curves/tests
 	$(PYTHON) scripts/check_markdown_links.py
 	$(PYTHON) scripts/audit_status.py
 	$(PYTHON) scripts/audit_repository_hygiene.py
 
 verify-elliptic-curves:
+	$(PYTHON) elliptic-curves/scripts/audit_artifact_catalog.py
 	PYTHONPATH=elliptic-curves:elliptic-curves/cas $(PYTHON) -m unittest discover -s elliptic-curves/tests -v
 	$(PYTHON) elliptic-curves/scripts/verify_family_data.py
 	$(PYTHON) elliptic-curves/scripts/verify_benchmarks.py
@@ -175,7 +176,10 @@ verify-elliptic-curves:
 	$(PYTHON) elliptic-curves/scripts/verify_kihara_rank14.py
 	$(PYTHON) elliptic-curves/scripts/verify_e29_independence.py
 	$(SYSTEM_PYTHON) elliptic-curves/scripts/verify_k3_chain_ledger.py
+	PYTHONPATH=elliptic-curves/cas $(PYTHON) elliptic-curves/cas/build_structural_search_groundwork.py --check
 	$(PYTHON) elliptic-curves/cas/verify_icarm_curve273_rank30.py --check
+	PYTHONPATH=elliptic-curves/cas $(PYTHON) elliptic-curves/cas/check_icarm_curve302_rank31_pinned.py
+	$(PYTHON) elliptic-curves/cas/analyze_icarm_7fff_zip_sequence.py --check
 
 verify-global-low-degree-census:
 	$(PYTHON) scripts/verify_global_low_degree_census.py

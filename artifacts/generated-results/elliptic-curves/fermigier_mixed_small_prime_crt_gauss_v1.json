@@ -1176,13 +1176,13 @@
     "unique_parameters": 963684
   },
   "prior_exclusion": {
-    "audit_path": "artifacts/generated-results/elliptic_fermigier_rank20_adapter_neighborhood_audit.json",
+    "audit_path": "archive/elliptic-curves/artifacts/generated-results/elliptic_fermigier_rank20_adapter_neighborhood_audit.json",
     "audit_sha256": "0eef1ad22211d9b8f6b8cdcec3e1c8829322f2889195a2f1527b03465e799615",
     "canonical_adapter_parameter_count": 1798,
     "canonical_adapter_parameter_sha256": "7c6884a10a434b4d0b3c463ccab97f1d24cf4dbeebfc33e4e250d1ced158bf91"
   },
   "reproducing_command": "PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 elliptic-curves/cas/search_fermigier_mixed_small_prime_crt_gauss.py",
-  "result_sha256": "2eb737b7d3c026aa124957fe586e75dae256b404e8ba593283619a7413e4798a",
+  "result_sha256": "345a516a225267671715c85f41b003293697008b378482e0a5935fabdc2e2da5",
   "schema": "elliptic-curves.fermigier-mixed-small-prime-crt-gauss.v1",
   "selected": [
     {

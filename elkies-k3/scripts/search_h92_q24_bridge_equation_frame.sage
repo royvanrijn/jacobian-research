@@ -217,6 +217,14 @@ parser.add_argument("--repo",type=Path)
 parser.add_argument("--threshold",type=int,default=52)
 parser.add_argument("--top",type=int,default=20)
 parser.add_argument("--output",type=Path)
+parser.add_argument(
+    "--setup-only",
+    action="store_true",
+    help=(
+        "construct the exact q6 word machinery and named equation-D13 "
+        "frame, then stop before the bounded bridge enumeration"
+    ),
+)
 args=parser.parse_args()
 
 ROOT=locate_repo(args.repo)
@@ -514,6 +522,15 @@ print(
     "status=PASS_GEOMETRIC_Q24_TRANSPORT",
     flush=True,
 )
+
+if args.setup_only:
+    print(
+        "Q24EQSEARCH_SETUP_RESULT|"
+        "q6_words=PASS|equation_D13_marking=PASS|"
+        "search=SKIPPED|status=PASS_EXACT_SETUP_ONLY",
+        flush=True,
+    )
+    raise SystemExit(0)
 
 # ---------------------------------------------------------------------------
 # 3. Rigorous q8-degree bound in each IV* component class.

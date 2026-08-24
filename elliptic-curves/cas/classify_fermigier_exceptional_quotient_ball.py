@@ -98,7 +98,7 @@ RANK20_ARTIFACT_SHA256 = (
     "8416e835887236e9e4eafcb01384a710ce4f1be0628701a97f4a7d7a07fe63b1"
 )
 RANK22_ARTIFACT_RELATIVE = Path(
-    "artifacts/generated-results/elliptic_fermigier_rank22_accidental_slices.json"
+    "artifacts/generated-results/elliptic-curves/elliptic_fermigier_rank22_accidental_slices.json"
 )
 RANK22_ARTIFACT_SHA256 = (
     "3794f23d37685edcc1ad5c8279d48fcd247b1d31b7c88aa4939ca5efd40f79a7"
@@ -948,7 +948,7 @@ def main() -> None:
         "--output",
         type=Path,
         default=root
-        / "artifacts/generated-results/elliptic_fermigier_exceptional_quotient_ball.json",
+        / "artifacts/generated-results/elliptic-curves/elliptic_fermigier_exceptional_quotient_ball.json",
     )
     args = parser.parse_args()
     artifact = run(root, workers=args.workers)

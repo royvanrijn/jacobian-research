@@ -58,7 +58,7 @@ class ExplicitFormulaDiagnosticTests(unittest.TestCase):
         script = root / "elliptic-curves/cas/explicit_formula_rank_diagnostic.py"
         artifact_path = (
             root
-            / "artifacts/generated-results/elliptic_nagao_rank21_t6793_explicit_formula.json"
+            / "archive/elliptic-curves/artifacts/generated-results/elliptic_nagao_rank21_t6793_explicit_formula.json"
         )
         artifact = json.loads(artifact_path.read_text(encoding="utf-8"))
         self.assertEqual(

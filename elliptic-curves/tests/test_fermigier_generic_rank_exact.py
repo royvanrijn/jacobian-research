@@ -21,10 +21,10 @@ import verify_fermigier_generic_rank_exact as verifier  # noqa: E402
 
 ARTIFACT = (
     ROOT
-    / "artifacts/generated-results/elliptic_fermigier_generic_rank_exact.json"
+    / "artifacts/generated-results/elliptic-curves/elliptic_fermigier_generic_rank_exact.json"
 )
 EXPECTED_ARTIFACT_SHA256 = (
-    "61bf11ae14db1aedcf7809697c96e78f2c2978c22f4e7b8fd894de74628b3de7"
+    "234522ec0af3ba6481425aa8c257c14fa7e5605051a10f9db94ea34827aab520"
 )
 
 
@@ -42,7 +42,7 @@ class FermigierGenericRankExactTests(unittest.TestCase):
         )
         self.assertEqual(
             data["provenance"]["script_sha256"],
-            "74de70ce1c362a8e73bafbded149abad576e363fcbc97b086213bc6d5af719d5",
+            "84fd1b08f742cb338e391b826b6f76f238ae377ad77e1b8d3bff85485e5ddb14",
         )
         theorem = data["theorem"]
         self.assertEqual(

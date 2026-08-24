@@ -179,7 +179,7 @@ saturation or rank upper bound is claimed.
 ## Reproduction
 
 The self-contained certificate is
-[the generated rank-17 artifact](../../artifacts/generated-results/elliptic_mestre_dsquare_four_u197_rank17.json).
+[the generated rank-17 artifact](../../artifacts/generated-results/elliptic-curves/elliptic_mestre_dsquare_four_u197_rank17.json).
 It contains the specialized coefficients, minimal model and conductor, all 17
 point representatives, every finite-reduction row, exact cutoff proof, and
 the hashes of the untracked discovery outputs.

@@ -12,7 +12,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
 SCRIPT = ROOT / "elliptic-curves/cas/search_fermigier_high_power_crt_gauss.py"
-ARTIFACT = ROOT / "artifacts/generated-results/elliptic_fermigier_high_power_crt_gauss.json"
+ARTIFACT = ROOT / "archive/elliptic-curves/artifacts/generated-results/elliptic_fermigier_high_power_crt_gauss.json"
 SPEC = importlib.util.spec_from_file_location("fermigier_high_power", SCRIPT)
 MODULE = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None

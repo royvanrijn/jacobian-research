@@ -1,0 +1,3140 @@
+{
+  "claim_level": "exact divisor computation; no rational-point search used",
+  "external_condition_inputs": {},
+  "families": {
+    "fermigier_E22": {
+      "all_quadratic_quotients": [],
+      "all_quadratic_quotients_recorded": false,
+      "branch_places": [
+        {
+          "geometric_degree": 6,
+          "label": "B1",
+          "polynomial_sha256": "4619df1ace8190961e5c6d2ecb4c85afe586e6a95cc07317dac6a6b3813d29b8"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B2",
+          "polynomial_sha256": "c27cc861fe712285077e077c324278765ce1ba77ba75c1d72b0d54f9370d728c"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B3",
+          "polynomial_sha256": "2abd0cf2a80a0b297ac81d1f55a8dbcde4cabe759aa85c7c18bb48e9bd2887bf"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B4",
+          "polynomial_sha256": "b05645ec603cc33cc49107d3da23c68b3e854577f66f1b097da0cbc6e4fd2153"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B5",
+          "polynomial_sha256": "c8d5e879c84a6ae6518e9b1a8f0ad14c6d6515b41b8921738171a189fd1cad1d"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B6",
+          "polynomial_sha256": "dec92ac74e8ad39726a893688e226b494ce5e45328995958e37ec30511d4d2af"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B7",
+          "polynomial_sha256": "cf5c2e10347991fec426574b4bc90c51ec1681efa141e2d049a8cba55d6ca020"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B8",
+          "polynomial_sha256": "5f8d9f1224e1c5a925b35f2f5ce939f1efe9b767f10e0b07ea9af18a34c72420"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B9",
+          "polynomial_sha256": "41018923eaa33d39e3e7b23fa4816c8b696c36dbf2543147b06c29eb2dc1e538"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B10",
+          "polynomial_sha256": "65ce923094db5b00a41dfa2e08dd8804bc0b868539f52352b042c88a407fbc0c"
+        }
+      ],
+      "closed_branch_place_count": 10,
+      "code_dimension": 10,
+      "codeword_manifest_sha256": "979fee97367591f862e44342b38c88a1606d073ac95f2ac0b34bf1afa1085bcb",
+      "complete_branch_cancellations": [],
+      "conditions": [
+        {
+          "branch_support": [
+            "B5"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P13",
+          "numerator_sha256": "ab35769722b3da6941b5d004f11981bf58a8b2f42205754971cc3728ade8adbc",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B8"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P14",
+          "numerator_sha256": "f0440cf3266d62409f4d0f663c4f5e7ccc4c5549643c974c1fa1561455a8980d",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B10"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P15",
+          "numerator_sha256": "01c8bf3351edd69ad86209f3e148301772e2a3baf5fbcc6f2310c1a01e205868",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B2"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P16",
+          "numerator_sha256": "9389250b680a484aec0b55a73c22177affacb464054cc87e798e2e489fcc3099",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B9"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P17",
+          "numerator_sha256": "00cef9fa693967b728c2c242e9284896be74e9a05ef3c059716b01242a49f45a",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B6"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P18",
+          "numerator_sha256": "898f97adfc88aada624517a6c4d5f4b36d9f1001014f103a1ecbcc160cc4f10b",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B3"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P19",
+          "numerator_sha256": "39ead8e33fed6ad972081c435d498fefb05cbdbb139626d03550f4d8871c3925",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B7"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P20",
+          "numerator_sha256": "c85e168f4c2775e5a502139c9fabd48d7bec431208a1cb1df37ab9170a37d3d3",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B1"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P21",
+          "numerator_sha256": "962fff02458a4ee90e946477b6f6462317cf5664a4dc0d05bdae962878cbbb37",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B4"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P22",
+          "numerator_sha256": "8dbbb06a6d73cfc277cc49d09dcb528c58a41c5e5424df8d3571e01e5c485f11",
+          "quadratic_quotient_genus": 2
+        }
+      ],
+      "definition": "Rows encode div(g_i) modulo 2.  Irreducible QQ factors are closed branch places of geometric weight equal to their degree; infinity is included when it has odd valuation.",
+      "direction_count": 10,
+      "geometric_branch_place_count": 60,
+      "geometric_incidence_code_automorphisms": {
+        "coordinate_permutation_group_order": 37439062426244874240000000000,
+        "meaning": "Product of symmetric groups on geometric branch places with the same binary incidence column.  This is a code automorphism count only; it does not assert that these permutations are induced by PGL_2 or by automorphisms of the cover."
+      },
+      "geometric_incidence_indistinguishable_branch_places": [
+        {
+          "closed_branch_places": [
+            "B5"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000001"
+        },
+        {
+          "closed_branch_places": [
+            "B8"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000010"
+        },
+        {
+          "closed_branch_places": [
+            "B10"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000100"
+        },
+        {
+          "closed_branch_places": [
+            "B2"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000001000"
+        },
+        {
+          "closed_branch_places": [
+            "B9"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000010000"
+        },
+        {
+          "closed_branch_places": [
+            "B6"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000100000"
+        },
+        {
+          "closed_branch_places": [
+            "B3"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0001000000"
+        },
+        {
+          "closed_branch_places": [
+            "B7"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0010000000"
+        },
+        {
+          "closed_branch_places": [
+            "B1"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0100000000"
+        },
+        {
+          "closed_branch_places": [
+            "B4"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "1000000000"
+        }
+      ],
+      "incidence_indistinguishable_closed_branch_places": [],
+      "low_genus_quadratic_quotients": [],
+      "minimum_quadratic_quotient": {
+        "combinations": [
+          [
+            "P13"
+          ],
+          [
+            "P14"
+          ],
+          [
+            "P15"
+          ],
+          [
+            "P16"
+          ],
+          [
+            "P17"
+          ],
+          [
+            "P18"
+          ],
+          [
+            "P19"
+          ],
+          [
+            "P20"
+          ],
+          [
+            "P21"
+          ],
+          [
+            "P22"
+          ]
+        ],
+        "genus": 2,
+        "geometric_branch_count": 6
+      },
+      "multiquadratic_cover": {
+        "connected_degree": 1024,
+        "genus": 14337,
+        "genus_formula": "1 + 2^(r-2)*(B-4) for a connected (Z/2)^r cover of P1, where r is code dimension and B is the branch-union size",
+        "geometric_branch_count": 60
+      },
+      "parameter": "T",
+      "quadratic_quotient_histogram": [
+        {
+          "count": 10,
+          "genus": 2,
+          "geometric_branch_count": 6
+        },
+        {
+          "count": 45,
+          "genus": 5,
+          "geometric_branch_count": 12
+        },
+        {
+          "count": 120,
+          "genus": 8,
+          "geometric_branch_count": 18
+        },
+        {
+          "count": 210,
+          "genus": 11,
+          "geometric_branch_count": 24
+        },
+        {
+          "count": 252,
+          "genus": 14,
+          "geometric_branch_count": 30
+        },
+        {
+          "count": 210,
+          "genus": 17,
+          "geometric_branch_count": 36
+        },
+        {
+          "count": 120,
+          "genus": 20,
+          "geometric_branch_count": 42
+        },
+        {
+          "count": 45,
+          "genus": 23,
+          "geometric_branch_count": 48
+        },
+        {
+          "count": 10,
+          "genus": 26,
+          "geometric_branch_count": 54
+        },
+        {
+          "count": 1,
+          "genus": 29,
+          "geometric_branch_count": 60
+        }
+      ],
+      "shared_branch_pairs": []
+    },
+    "fermigier_E22_rank20_combined": {
+      "all_quadratic_quotients": [],
+      "all_quadratic_quotients_recorded": false,
+      "branch_places": [
+        {
+          "geometric_degree": 6,
+          "label": "B1",
+          "polynomial_sha256": "4619df1ace8190961e5c6d2ecb4c85afe586e6a95cc07317dac6a6b3813d29b8"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B2",
+          "polynomial_sha256": "ecaf6277386b26544a6f2e8c86935528beb850d9a69841b2fea9406fe0ed1711"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B3",
+          "polynomial_sha256": "c27cc861fe712285077e077c324278765ce1ba77ba75c1d72b0d54f9370d728c"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B4",
+          "polynomial_sha256": "2abd0cf2a80a0b297ac81d1f55a8dbcde4cabe759aa85c7c18bb48e9bd2887bf"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B5",
+          "polynomial_sha256": "31785f2f2058a2cce7bc8ce6335bdd0007f1aa7ee29a0aa59e5c1c0759ce4ff2"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B6",
+          "polynomial_sha256": "b05645ec603cc33cc49107d3da23c68b3e854577f66f1b097da0cbc6e4fd2153"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B7",
+          "polynomial_sha256": "c8d5e879c84a6ae6518e9b1a8f0ad14c6d6515b41b8921738171a189fd1cad1d"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B8",
+          "polynomial_sha256": "dec92ac74e8ad39726a893688e226b494ce5e45328995958e37ec30511d4d2af"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B9",
+          "polynomial_sha256": "cebb2e9cb6bfd4aec9ee8e20dd2f1099cfee3125f6cbc9648c536d10e374c6e8"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B10",
+          "polynomial_sha256": "cf5c2e10347991fec426574b4bc90c51ec1681efa141e2d049a8cba55d6ca020"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B11",
+          "polynomial_sha256": "5f8d9f1224e1c5a925b35f2f5ce939f1efe9b767f10e0b07ea9af18a34c72420"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B12",
+          "polynomial_sha256": "19b775d2afd278c8e6ac2cd61bb6155382b321ec38a9839dc868aa6d985f9b17"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B13",
+          "polynomial_sha256": "01dfadfed2af624e326f62fed0be8668caca8d85802807a9b269771b74e85faa"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B14",
+          "polynomial_sha256": "fdf527a6d703423ca3e0e1bac654a3812df67695dc5871349c44a49340277f68"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B15",
+          "polynomial_sha256": "c7eae06141b004cb7577832f9d78e3bde35f466994dc8463fc664f4973e6456d"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B16",
+          "polynomial_sha256": "41018923eaa33d39e3e7b23fa4816c8b696c36dbf2543147b06c29eb2dc1e538"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B17",
+          "polynomial_sha256": "4986428b3294259f98ffb334c5943acc787b2666e4ffc17a963c27db703f8d5a"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B18",
+          "polynomial_sha256": "65ce923094db5b00a41dfa2e08dd8804bc0b868539f52352b042c88a407fbc0c"
+        }
+      ],
+      "closed_branch_place_count": 18,
+      "code_dimension": 18,
+      "codeword_manifest_sha256": "b8afff91d31e213f42b3ba4ff911995244fbbad0305de37bfd070847f3f8e9f1",
+      "complete_branch_cancellations": [],
+      "conditions": [
+        {
+          "branch_support": [
+            "B7"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P13",
+          "numerator_sha256": "ab35769722b3da6941b5d004f11981bf58a8b2f42205754971cc3728ade8adbc",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B11"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P14",
+          "numerator_sha256": "f0440cf3266d62409f4d0f663c4f5e7ccc4c5549643c974c1fa1561455a8980d",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B18"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P15",
+          "numerator_sha256": "01c8bf3351edd69ad86209f3e148301772e2a3baf5fbcc6f2310c1a01e205868",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B3"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P16",
+          "numerator_sha256": "9389250b680a484aec0b55a73c22177affacb464054cc87e798e2e489fcc3099",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B16"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P17",
+          "numerator_sha256": "00cef9fa693967b728c2c242e9284896be74e9a05ef3c059716b01242a49f45a",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B8"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P18",
+          "numerator_sha256": "898f97adfc88aada624517a6c4d5f4b36d9f1001014f103a1ecbcc160cc4f10b",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B4"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P19",
+          "numerator_sha256": "39ead8e33fed6ad972081c435d498fefb05cbdbb139626d03550f4d8871c3925",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B10"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P20",
+          "numerator_sha256": "c85e168f4c2775e5a502139c9fabd48d7bec431208a1cb1df37ab9170a37d3d3",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B1"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P21",
+          "numerator_sha256": "962fff02458a4ee90e946477b6f6462317cf5664a4dc0d05bdae962878cbbb37",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B6"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "P22",
+          "numerator_sha256": "8dbbb06a6d73cfc277cc49d09dcb528c58a41c5e5424df8d3571e01e5c485f11",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B15"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "R20E1",
+          "numerator_sha256": "c7eae06141b004cb7577832f9d78e3bde35f466994dc8463fc664f4973e6456d",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B17"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "R20E2",
+          "numerator_sha256": "7bfcce851aa6b8aeb0c083cc7e8fa0f47a5cb80340eed2c5de35590a29bf5de0",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B14"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "R20E3",
+          "numerator_sha256": "c2351fd8e749c1ff6145f35b30b84051ab269c2928df899203d4ca7e67626448",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B2"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "R20E4",
+          "numerator_sha256": "d48871897be02b740ea1a3777cd7a63e49f76e3b8f819f9e994e463348fd7299",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B13"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "R20E5",
+          "numerator_sha256": "432793503cb04dfcbb0e0976346544945d534b6ae9ae9a03b2244b91b3597d7c",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B5"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "R20E6",
+          "numerator_sha256": "784b0ab29be0e15fbd34bee97fa8c3445874b2a1a6eb2eed2be1cb3cb9efec55",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B12"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "R20E7",
+          "numerator_sha256": "2627222f2f902b2c1114920a3d1aae8b980724c87a939dcf049b23ef8ab1d9db",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B9"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "R20E8",
+          "numerator_sha256": "41035933302488f206fc9ed0f7e3bd0c8f24b28531495328f7ca1588505db291",
+          "quadratic_quotient_genus": 2
+        }
+      ],
+      "definition": "Rows encode div(g_i) modulo 2.  Irreducible QQ factors are closed branch places of geometric weight equal to their degree; infinity is included when it has odd valuation.",
+      "direction_count": 18,
+      "geometric_branch_place_count": 108,
+      "geometric_incidence_code_automorphisms": {
+        "coordinate_permutation_group_order": 2703864574375502950215699413336064000000000000000000,
+        "meaning": "Product of symmetric groups on geometric branch places with the same binary incidence column.  This is a code automorphism count only; it does not assert that these permutations are induced by PGL_2 or by automorphisms of the cover."
+      },
+      "geometric_incidence_indistinguishable_branch_places": [
+        {
+          "closed_branch_places": [
+            "B7"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "000000000000000001"
+        },
+        {
+          "closed_branch_places": [
+            "B11"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "000000000000000010"
+        },
+        {
+          "closed_branch_places": [
+            "B18"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "000000000000000100"
+        },
+        {
+          "closed_branch_places": [
+            "B3"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "000000000000001000"
+        },
+        {
+          "closed_branch_places": [
+            "B16"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "000000000000010000"
+        },
+        {
+          "closed_branch_places": [
+            "B8"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "000000000000100000"
+        },
+        {
+          "closed_branch_places": [
+            "B4"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "000000000001000000"
+        },
+        {
+          "closed_branch_places": [
+            "B10"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "000000000010000000"
+        },
+        {
+          "closed_branch_places": [
+            "B1"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "000000000100000000"
+        },
+        {
+          "closed_branch_places": [
+            "B6"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "000000001000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B15"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "000000010000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B17"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "000000100000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B14"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "000001000000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B2"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "000010000000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B13"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "000100000000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B5"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "001000000000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B12"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "010000000000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B9"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "100000000000000000"
+        }
+      ],
+      "incidence_indistinguishable_closed_branch_places": [],
+      "low_genus_quadratic_quotients": [],
+      "minimum_quadratic_quotient": {
+        "combinations": [
+          [
+            "P13"
+          ],
+          [
+            "P14"
+          ],
+          [
+            "P15"
+          ],
+          [
+            "P16"
+          ],
+          [
+            "P17"
+          ],
+          [
+            "P18"
+          ],
+          [
+            "P19"
+          ],
+          [
+            "P20"
+          ],
+          [
+            "P21"
+          ],
+          [
+            "P22"
+          ],
+          [
+            "R20E1"
+          ],
+          [
+            "R20E2"
+          ],
+          [
+            "R20E3"
+          ],
+          [
+            "R20E4"
+          ],
+          [
+            "R20E5"
+          ],
+          [
+            "R20E6"
+          ],
+          [
+            "R20E7"
+          ],
+          [
+            "R20E8"
+          ]
+        ],
+        "genus": 2,
+        "geometric_branch_count": 6
+      },
+      "multiquadratic_cover": {
+        "connected_degree": 262144,
+        "genus": 6815745,
+        "genus_formula": "1 + 2^(r-2)*(B-4) for a connected (Z/2)^r cover of P1, where r is code dimension and B is the branch-union size",
+        "geometric_branch_count": 108
+      },
+      "parameter": "T",
+      "quadratic_quotient_histogram": [
+        {
+          "count": 18,
+          "genus": 2,
+          "geometric_branch_count": 6
+        },
+        {
+          "count": 153,
+          "genus": 5,
+          "geometric_branch_count": 12
+        },
+        {
+          "count": 816,
+          "genus": 8,
+          "geometric_branch_count": 18
+        },
+        {
+          "count": 3060,
+          "genus": 11,
+          "geometric_branch_count": 24
+        },
+        {
+          "count": 8568,
+          "genus": 14,
+          "geometric_branch_count": 30
+        },
+        {
+          "count": 18564,
+          "genus": 17,
+          "geometric_branch_count": 36
+        },
+        {
+          "count": 31824,
+          "genus": 20,
+          "geometric_branch_count": 42
+        },
+        {
+          "count": 43758,
+          "genus": 23,
+          "geometric_branch_count": 48
+        },
+        {
+          "count": 48620,
+          "genus": 26,
+          "geometric_branch_count": 54
+        },
+        {
+          "count": 43758,
+          "genus": 29,
+          "geometric_branch_count": 60
+        },
+        {
+          "count": 31824,
+          "genus": 32,
+          "geometric_branch_count": 66
+        },
+        {
+          "count": 18564,
+          "genus": 35,
+          "geometric_branch_count": 72
+        },
+        {
+          "count": 8568,
+          "genus": 38,
+          "geometric_branch_count": 78
+        },
+        {
+          "count": 3060,
+          "genus": 41,
+          "geometric_branch_count": 84
+        },
+        {
+          "count": 816,
+          "genus": 44,
+          "geometric_branch_count": 90
+        },
+        {
+          "count": 153,
+          "genus": 47,
+          "geometric_branch_count": 96
+        },
+        {
+          "count": 18,
+          "genus": 50,
+          "geometric_branch_count": 102
+        },
+        {
+          "count": 1,
+          "genus": 53,
+          "geometric_branch_count": 108
+        }
+      ],
+      "shared_branch_pairs": []
+    },
+    "fermigier_rank20_anchor": {
+      "all_quadratic_quotients": [],
+      "all_quadratic_quotients_recorded": false,
+      "branch_places": [
+        {
+          "geometric_degree": 6,
+          "label": "B1",
+          "polynomial_sha256": "ecaf6277386b26544a6f2e8c86935528beb850d9a69841b2fea9406fe0ed1711"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B2",
+          "polynomial_sha256": "31785f2f2058a2cce7bc8ce6335bdd0007f1aa7ee29a0aa59e5c1c0759ce4ff2"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B3",
+          "polynomial_sha256": "cebb2e9cb6bfd4aec9ee8e20dd2f1099cfee3125f6cbc9648c536d10e374c6e8"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B4",
+          "polynomial_sha256": "19b775d2afd278c8e6ac2cd61bb6155382b321ec38a9839dc868aa6d985f9b17"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B5",
+          "polynomial_sha256": "01dfadfed2af624e326f62fed0be8668caca8d85802807a9b269771b74e85faa"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B6",
+          "polynomial_sha256": "fdf527a6d703423ca3e0e1bac654a3812df67695dc5871349c44a49340277f68"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B7",
+          "polynomial_sha256": "c7eae06141b004cb7577832f9d78e3bde35f466994dc8463fc664f4973e6456d"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B8",
+          "polynomial_sha256": "4986428b3294259f98ffb334c5943acc787b2666e4ffc17a963c27db703f8d5a"
+        }
+      ],
+      "closed_branch_place_count": 8,
+      "code_dimension": 8,
+      "codeword_manifest_sha256": "1ebdbb88ce413c9f805b4e7d329383f8657571af4ada964a891b79a7ba2d9763",
+      "complete_branch_cancellations": [],
+      "conditions": [
+        {
+          "branch_support": [
+            "B7"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "R20E1",
+          "numerator_sha256": "c7eae06141b004cb7577832f9d78e3bde35f466994dc8463fc664f4973e6456d",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B8"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "R20E2",
+          "numerator_sha256": "7bfcce851aa6b8aeb0c083cc7e8fa0f47a5cb80340eed2c5de35590a29bf5de0",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B6"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "R20E3",
+          "numerator_sha256": "c2351fd8e749c1ff6145f35b30b84051ab269c2928df899203d4ca7e67626448",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B1"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "R20E4",
+          "numerator_sha256": "d48871897be02b740ea1a3777cd7a63e49f76e3b8f819f9e994e463348fd7299",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B5"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "R20E5",
+          "numerator_sha256": "432793503cb04dfcbb0e0976346544945d534b6ae9ae9a03b2244b91b3597d7c",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B2"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "R20E6",
+          "numerator_sha256": "784b0ab29be0e15fbd34bee97fa8c3445874b2a1a6eb2eed2be1cb3cb9efec55",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B4"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "R20E7",
+          "numerator_sha256": "2627222f2f902b2c1114920a3d1aae8b980724c87a939dcf049b23ef8ab1d9db",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B3"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "R20E8",
+          "numerator_sha256": "41035933302488f206fc9ed0f7e3bd0c8f24b28531495328f7ca1588505db291",
+          "quadratic_quotient_genus": 2
+        }
+      ],
+      "definition": "Rows encode div(g_i) modulo 2.  Irreducible QQ factors are closed branch places of geometric weight equal to their degree; infinity is included when it has odd valuation.",
+      "direction_count": 8,
+      "geometric_branch_place_count": 48,
+      "geometric_incidence_code_automorphisms": {
+        "coordinate_permutation_group_order": 72220413630873600000000,
+        "meaning": "Product of symmetric groups on geometric branch places with the same binary incidence column.  This is a code automorphism count only; it does not assert that these permutations are induced by PGL_2 or by automorphisms of the cover."
+      },
+      "geometric_incidence_indistinguishable_branch_places": [
+        {
+          "closed_branch_places": [
+            "B7"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "00000001"
+        },
+        {
+          "closed_branch_places": [
+            "B8"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "00000010"
+        },
+        {
+          "closed_branch_places": [
+            "B6"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "00000100"
+        },
+        {
+          "closed_branch_places": [
+            "B1"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "00001000"
+        },
+        {
+          "closed_branch_places": [
+            "B5"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "00010000"
+        },
+        {
+          "closed_branch_places": [
+            "B2"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "00100000"
+        },
+        {
+          "closed_branch_places": [
+            "B4"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "01000000"
+        },
+        {
+          "closed_branch_places": [
+            "B3"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "10000000"
+        }
+      ],
+      "incidence_indistinguishable_closed_branch_places": [],
+      "low_genus_quadratic_quotients": [],
+      "minimum_quadratic_quotient": {
+        "combinations": [
+          [
+            "R20E1"
+          ],
+          [
+            "R20E2"
+          ],
+          [
+            "R20E3"
+          ],
+          [
+            "R20E4"
+          ],
+          [
+            "R20E5"
+          ],
+          [
+            "R20E6"
+          ],
+          [
+            "R20E7"
+          ],
+          [
+            "R20E8"
+          ]
+        ],
+        "genus": 2,
+        "geometric_branch_count": 6
+      },
+      "multiquadratic_cover": {
+        "connected_degree": 256,
+        "genus": 2817,
+        "genus_formula": "1 + 2^(r-2)*(B-4) for a connected (Z/2)^r cover of P1, where r is code dimension and B is the branch-union size",
+        "geometric_branch_count": 48
+      },
+      "parameter": "T",
+      "quadratic_quotient_histogram": [
+        {
+          "count": 8,
+          "genus": 2,
+          "geometric_branch_count": 6
+        },
+        {
+          "count": 28,
+          "genus": 5,
+          "geometric_branch_count": 12
+        },
+        {
+          "count": 56,
+          "genus": 8,
+          "geometric_branch_count": 18
+        },
+        {
+          "count": 70,
+          "genus": 11,
+          "geometric_branch_count": 24
+        },
+        {
+          "count": 56,
+          "genus": 14,
+          "geometric_branch_count": 30
+        },
+        {
+          "count": 28,
+          "genus": 17,
+          "geometric_branch_count": 36
+        },
+        {
+          "count": 8,
+          "genus": 20,
+          "geometric_branch_count": 42
+        },
+        {
+          "count": 1,
+          "genus": 23,
+          "geometric_branch_count": 48
+        }
+      ],
+      "shared_branch_pairs": []
+    },
+    "icarm_245": {
+      "all_quadratic_quotients": [],
+      "all_quadratic_quotients_recorded": false,
+      "branch_places": [
+        {
+          "geometric_degree": 6,
+          "label": "B1",
+          "polynomial_sha256": "efe5688855028dcd5657c0d459bf60cc14ddd903045e372b7b97c547e008e9b3"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B2",
+          "polynomial_sha256": "971af5d4764dbd81eda666d87291d5728b27148127be3af7b9f63df0b6053ce6"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B3",
+          "polynomial_sha256": "b13d681a1ef1e46c718a2ecb5c5481563f5981da721bdb9fe5c52c012f0ac2ba"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B4",
+          "polynomial_sha256": "65146234050bdea63e8d18360b4eba36099995e54c1cc81dbe1974f87d700e0a"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B5",
+          "polynomial_sha256": "e26f1612b432643498cf6bc27e67be7490672d414982442caaf170febdebfe46"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B6",
+          "polynomial_sha256": "62a8e89cea46e8779de8e3b5873a675038da281c28af1018edc613bafb499469"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B7",
+          "polynomial_sha256": "79b7473fb274bb445c3f91c7e4f6a681dbb5db1dbeea79f0cc885543d193d838"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B8",
+          "polynomial_sha256": "685ae9939151203e01f31beca19d22f32a0eb6f67514cd9ffcd25c56ee0ff414"
+        }
+      ],
+      "closed_branch_place_count": 8,
+      "code_dimension": 8,
+      "codeword_manifest_sha256": "8f41a7dec9af1f7de791761e06b85ebb8e1756a1d79b57edaf8b12ade98ef82f",
+      "complete_branch_cancellations": [],
+      "conditions": [
+        {
+          "branch_support": [
+            "B2"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC245E1",
+          "numerator_sha256": "04646213162eaffd3a2197089bf02a248b4a0334b9db0e8d91fa560a9537c3ed",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B1"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC245E2",
+          "numerator_sha256": "0b2e77fdf51fde61d4ee0ec71e541c236a8c15a17c30736755902a69f9dde3ed",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B8"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC245E3",
+          "numerator_sha256": "d35dbc5589048573cd634fe747948c009ca43138f2be9d58203daf0d07a4cb6b",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B4"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC245E4",
+          "numerator_sha256": "f76e9296740f56c72d5318cbebc0919a44fc6017aa5b5fd21dbad7138976e432",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B6"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC245E5",
+          "numerator_sha256": "9bf59f243e5e661b3a3d67804e166da1b2b6eb4f68681af3af513a53c89b42cb",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B5"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC245E6",
+          "numerator_sha256": "76956ea5e75934a47d8faf530cca353ba0b8d263ba64a25f48363cdcd86db233",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B7"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC245E7",
+          "numerator_sha256": "7a8a26bb61fe22ca4700dfbea808dc87f1a38f309ba9305da683460d5ef6270c",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B3"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC245E8",
+          "numerator_sha256": "b5cc3772b82747e83995634801bcb2659ad2dc487816b2994c778990c673164d",
+          "quadratic_quotient_genus": 2
+        }
+      ],
+      "definition": "Rows encode div(g_i) modulo 2.  Irreducible QQ factors are closed branch places of geometric weight equal to their degree; infinity is included when it has odd valuation.",
+      "direction_count": 8,
+      "geometric_branch_place_count": 48,
+      "geometric_incidence_code_automorphisms": {
+        "coordinate_permutation_group_order": 72220413630873600000000,
+        "meaning": "Product of symmetric groups on geometric branch places with the same binary incidence column.  This is a code automorphism count only; it does not assert that these permutations are induced by PGL_2 or by automorphisms of the cover."
+      },
+      "geometric_incidence_indistinguishable_branch_places": [
+        {
+          "closed_branch_places": [
+            "B2"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "00000001"
+        },
+        {
+          "closed_branch_places": [
+            "B1"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "00000010"
+        },
+        {
+          "closed_branch_places": [
+            "B8"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "00000100"
+        },
+        {
+          "closed_branch_places": [
+            "B4"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "00001000"
+        },
+        {
+          "closed_branch_places": [
+            "B6"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "00010000"
+        },
+        {
+          "closed_branch_places": [
+            "B5"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "00100000"
+        },
+        {
+          "closed_branch_places": [
+            "B7"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "01000000"
+        },
+        {
+          "closed_branch_places": [
+            "B3"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "10000000"
+        }
+      ],
+      "incidence_indistinguishable_closed_branch_places": [],
+      "low_genus_quadratic_quotients": [],
+      "minimum_quadratic_quotient": {
+        "combinations": [
+          [
+            "IC245E1"
+          ],
+          [
+            "IC245E2"
+          ],
+          [
+            "IC245E3"
+          ],
+          [
+            "IC245E4"
+          ],
+          [
+            "IC245E5"
+          ],
+          [
+            "IC245E6"
+          ],
+          [
+            "IC245E7"
+          ],
+          [
+            "IC245E8"
+          ]
+        ],
+        "genus": 2,
+        "geometric_branch_count": 6
+      },
+      "multiquadratic_cover": {
+        "connected_degree": 256,
+        "genus": 2817,
+        "genus_formula": "1 + 2^(r-2)*(B-4) for a connected (Z/2)^r cover of P1, where r is code dimension and B is the branch-union size",
+        "geometric_branch_count": 48
+      },
+      "parameter": "T",
+      "quadratic_quotient_histogram": [
+        {
+          "count": 8,
+          "genus": 2,
+          "geometric_branch_count": 6
+        },
+        {
+          "count": 28,
+          "genus": 5,
+          "geometric_branch_count": 12
+        },
+        {
+          "count": 56,
+          "genus": 8,
+          "geometric_branch_count": 18
+        },
+        {
+          "count": 70,
+          "genus": 11,
+          "geometric_branch_count": 24
+        },
+        {
+          "count": 56,
+          "genus": 14,
+          "geometric_branch_count": 30
+        },
+        {
+          "count": 28,
+          "genus": 17,
+          "geometric_branch_count": 36
+        },
+        {
+          "count": 8,
+          "genus": 20,
+          "geometric_branch_count": 42
+        },
+        {
+          "count": 1,
+          "genus": 23,
+          "geometric_branch_count": 48
+        }
+      ],
+      "shared_branch_pairs": []
+    },
+    "icarm_275": {
+      "all_quadratic_quotients": [],
+      "all_quadratic_quotients_recorded": false,
+      "branch_places": [
+        {
+          "geometric_degree": 6,
+          "label": "B1",
+          "polynomial_sha256": "5d72e58752a1a09fa5abcad15bb87d0aefbdd7d04b05074b42e4c1efc06d6917"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B2",
+          "polynomial_sha256": "009b907d73d95689c198486ec3f347151704aca9e37ba43886449fcfddfcb38b"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B3",
+          "polynomial_sha256": "777237040ceeffcaa06dd0b106650a63fd167765ba6f1904a83e3cb5d18d3140"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B4",
+          "polynomial_sha256": "50dec1cd245fd59527222214bd7376d2797843167493359dda2e49ee08288947"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B5",
+          "polynomial_sha256": "decb63906a3e39f1c76eedd2cf80ee1d757d7191e789a370cfbd140a7e05d01a"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B6",
+          "polynomial_sha256": "147e390b5ad3d9183bbccc9f376704be91b846199d88ebbd6921d25a4c8ad23a"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B7",
+          "polynomial_sha256": "49bc26c450b43b1428297f5da7b1d1d01c9f998ac25791055c1b4ef2edb9f9de"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B8",
+          "polynomial_sha256": "252014c02dff72edf23364f1ef1bea9ede0eab73eb9c98722e19b5946ea82053"
+        }
+      ],
+      "closed_branch_place_count": 8,
+      "code_dimension": 8,
+      "codeword_manifest_sha256": "2876951c6fb5570c8442ec7b91ac6b69730663b4b1011dbc9b5a36427ccfb326",
+      "complete_branch_cancellations": [],
+      "conditions": [
+        {
+          "branch_support": [
+            "B6"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC275E1",
+          "numerator_sha256": "8a2717fd7d5a8538d6a403956bc7416497eab57d27de8be994e2b631b5129bbc",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B7"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC275E2",
+          "numerator_sha256": "59edf1971102d170b7133010ed78db454946a5d91a96edabf4ce52b6a0b5175a",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B2"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC275E3",
+          "numerator_sha256": "17b011ffe28c16855ed3570b16a43926839bddd964b6ee01de5c98ce33319da7",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B8"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC275E4",
+          "numerator_sha256": "96bfc9b54d77d85acd767b529d7fda4137af0f5ec8eff8718ce31d823bfec3f1",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B1"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC275E5",
+          "numerator_sha256": "67c0b21b854ad0d913f7f255852fe9dbff8c33ef02f00678a1dd44747bce7b24",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B5"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC275E6",
+          "numerator_sha256": "950db5650e48c502ee978fd2be5d9cc17b04eff0f5f3049e26ba8bbc720a8900",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B4"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC275E7",
+          "numerator_sha256": "a82da0dd4b120c5637a63dcafd951040fc129491b643f0b26e46b9ee169978d1",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B3"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC275E8",
+          "numerator_sha256": "6ee84b73a243555ed8e341f9d0dfa820c4cd61ec59ed4a1c87e50708a7343106",
+          "quadratic_quotient_genus": 2
+        }
+      ],
+      "definition": "Rows encode div(g_i) modulo 2.  Irreducible QQ factors are closed branch places of geometric weight equal to their degree; infinity is included when it has odd valuation.",
+      "direction_count": 8,
+      "geometric_branch_place_count": 48,
+      "geometric_incidence_code_automorphisms": {
+        "coordinate_permutation_group_order": 72220413630873600000000,
+        "meaning": "Product of symmetric groups on geometric branch places with the same binary incidence column.  This is a code automorphism count only; it does not assert that these permutations are induced by PGL_2 or by automorphisms of the cover."
+      },
+      "geometric_incidence_indistinguishable_branch_places": [
+        {
+          "closed_branch_places": [
+            "B6"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "00000001"
+        },
+        {
+          "closed_branch_places": [
+            "B7"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "00000010"
+        },
+        {
+          "closed_branch_places": [
+            "B2"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "00000100"
+        },
+        {
+          "closed_branch_places": [
+            "B8"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "00001000"
+        },
+        {
+          "closed_branch_places": [
+            "B1"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "00010000"
+        },
+        {
+          "closed_branch_places": [
+            "B5"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "00100000"
+        },
+        {
+          "closed_branch_places": [
+            "B4"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "01000000"
+        },
+        {
+          "closed_branch_places": [
+            "B3"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "10000000"
+        }
+      ],
+      "incidence_indistinguishable_closed_branch_places": [],
+      "low_genus_quadratic_quotients": [],
+      "minimum_quadratic_quotient": {
+        "combinations": [
+          [
+            "IC275E1"
+          ],
+          [
+            "IC275E2"
+          ],
+          [
+            "IC275E3"
+          ],
+          [
+            "IC275E4"
+          ],
+          [
+            "IC275E5"
+          ],
+          [
+            "IC275E6"
+          ],
+          [
+            "IC275E7"
+          ],
+          [
+            "IC275E8"
+          ]
+        ],
+        "genus": 2,
+        "geometric_branch_count": 6
+      },
+      "multiquadratic_cover": {
+        "connected_degree": 256,
+        "genus": 2817,
+        "genus_formula": "1 + 2^(r-2)*(B-4) for a connected (Z/2)^r cover of P1, where r is code dimension and B is the branch-union size",
+        "geometric_branch_count": 48
+      },
+      "parameter": "T",
+      "quadratic_quotient_histogram": [
+        {
+          "count": 8,
+          "genus": 2,
+          "geometric_branch_count": 6
+        },
+        {
+          "count": 28,
+          "genus": 5,
+          "geometric_branch_count": 12
+        },
+        {
+          "count": 56,
+          "genus": 8,
+          "geometric_branch_count": 18
+        },
+        {
+          "count": 70,
+          "genus": 11,
+          "geometric_branch_count": 24
+        },
+        {
+          "count": 56,
+          "genus": 14,
+          "geometric_branch_count": 30
+        },
+        {
+          "count": 28,
+          "genus": 17,
+          "geometric_branch_count": 36
+        },
+        {
+          "count": 8,
+          "genus": 20,
+          "geometric_branch_count": 42
+        },
+        {
+          "count": 1,
+          "genus": 23,
+          "geometric_branch_count": 48
+        }
+      ],
+      "shared_branch_pairs": []
+    }
+  },
+  "generated_at_utc": "2026-08-21T22:54:39.181513+00:00",
+  "outcome": {
+    "fermigier_E22": {
+      "code_dimension": 10,
+      "complete_cancellation_count": 0,
+      "low_genus_quotient_count": 0,
+      "minimum_quadratic_quotient_genus": 2,
+      "shared_branch_pair_count": 0
+    },
+    "fermigier_E22_rank20_combined": {
+      "code_dimension": 18,
+      "complete_cancellation_count": 0,
+      "low_genus_quotient_count": 0,
+      "minimum_quadratic_quotient_genus": 2,
+      "shared_branch_pair_count": 0
+    },
+    "fermigier_rank20_anchor": {
+      "code_dimension": 8,
+      "complete_cancellation_count": 0,
+      "low_genus_quotient_count": 0,
+      "minimum_quadratic_quotient_genus": 2,
+      "shared_branch_pair_count": 0
+    },
+    "icarm_245": {
+      "code_dimension": 8,
+      "complete_cancellation_count": 0,
+      "low_genus_quotient_count": 0,
+      "minimum_quadratic_quotient_genus": 2,
+      "shared_branch_pair_count": 0
+    },
+    "icarm_275": {
+      "code_dimension": 8,
+      "complete_cancellation_count": 0,
+      "low_genus_quotient_count": 0,
+      "minimum_quadratic_quotient_genus": 2,
+      "shared_branch_pair_count": 0
+    }
+  },
+  "pending_inputs": {
+    "eventual_rootless_K3_bisections": "pending: lattice bisection exclusion data is present, but no explicit bisection double-cover equations z^2=g(u) are recorded yet",
+    "icarm_262_and_other_subcutoff_rank20_fibres": "pending: this checkout has no pinned Mestre/root data and independently certified exceptional direction list from which z^2=g(T) can be formed"
+  },
+  "reproducing_command": "PYTHONPATH=elliptic-curves:elliptic-curves/cas .venv/bin/python elliptic-curves/cas/analyze_exceptional_branch_code.py",
+  "result_sha256": "dc243eff5b38c12130d9a32d7d0e168522164dab677be60eac76f5ba5a4629ef",
+  "schema_version": "elliptic-curves.exceptional-branch-code.v1",
+  "software": {
+    "python": "3.14.7",
+    "sympy": "1.14.0"
+  },
+  "sources": {
+    "branch_code_engine_sha256": "f26caffcdf14840efb964e6bbb3b5c7c1f40b0d8326eb9818cd99ff72d1318e7",
+    "fermigier_transport_script_sha256": "18e210c8f0a83f4c76609d777f261bc2acc2b2049e29ece592a15ddcf7277b22",
+    "icarm226_accidental_slice_source_sha256": "94d7dc674597029a52057859ddbc31222c65b5e675c68381363843434a6e3563",
+    "icarm243_accidental_slice_source_sha256": "7877f2e13080b20a6819893be9194b2778d136eeb0583e661ca849db04f8750e",
+    "icarm245_275_cross_shape_source_sha256": "47bec0e93c071349cfc0b732d3d642a72a206b4f6cade8ba7b2638638d23433c",
+    "icarm275_rank20_verifier_sha256": "5d0d28c5a6d3b562a0e2e51b990effe3ce705292060a4eea4df390cad0e1ff8b",
+    "script_sha256": "dbae97c8954d698b1434af20f414cbc8b41729f9e040596e3bf80dc370c65de7"
+  },
+  "status": "complete exact computation for five pinned codes plus two exact, bounded-source supplementary preimage lists; extensible inputs pending",
+  "supplemental_bounded_input_families": {
+    "icarm_226_observed_preimages_h200000": {
+      "all_quadratic_quotients": [],
+      "all_quadratic_quotients_recorded": false,
+      "branch_places": [
+        {
+          "geometric_degree": 6,
+          "label": "B1",
+          "polynomial_sha256": "3e1a10381c6a845be9f51089cc99e165dc0fdfae2b751dfa2ef8356102856467"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B2",
+          "polynomial_sha256": "8cb5c171a521d5f77bfb423c6bdaa9748e31593b35b8c650fb9d95081980cc5e"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B3",
+          "polynomial_sha256": "6715b2b4d32c99c0d3734026efd7472e7f790f66904597576c53bf56b3b7db7d"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B4",
+          "polynomial_sha256": "bbccc54fd59fd6a127ccff8a612afe166c2e56c939c10af6879ff45f93a149c9"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B5",
+          "polynomial_sha256": "a6d41e25829a6c449e5fdbb14444996ae61114fdbbab6ec9147f9eaa93ef116c"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B6",
+          "polynomial_sha256": "8d45c6e217a7b1f971f9f0fe85efebfce0f5092e88442dd3675025754e5364e9"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B7",
+          "polynomial_sha256": "1e6a17d74c7e363705d093e417eb214238babe8ab093e80f70fd40554d331858"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B8",
+          "polynomial_sha256": "f4c0b8e64ab63ccf238ccbb62448494f91d285c380ea3290205f6f5b40bd4432"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B9",
+          "polynomial_sha256": "14e6d9f914287970df7a07362b4e4dbee6ced91081f341df79c93ba29d276429"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B10",
+          "polynomial_sha256": "49bdf2d277505fd978d081d40233c9b321057f7597310862c1af9fbca6da69ef"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B11",
+          "polynomial_sha256": "9c098edec61e20d9a1ac287655a10bd68dc4488e772bdcbd5615ed798c6bb574"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B12",
+          "polynomial_sha256": "7c48660c7995eac0c6036fe18cf5cd1d681e80824304fd62310d52f4207a2408"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B13",
+          "polynomial_sha256": "ecbde5cce616db47abe88f92b3d8a406ccf3c231f612dedf11e76f942875d28f"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B14",
+          "polynomial_sha256": "bcf7d48bb06850bb5353a1da9df669326318f49af1a1c8b1bf4507cf08fa6add"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B15",
+          "polynomial_sha256": "d57fad177e353dff074762d38271b88d1ff7648a219677d85ae7fcb878dfa2ca"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B16",
+          "polynomial_sha256": "3d6f87d7e45c29bb279a96007f8cc2b01ef5eb4652f48756e118b96ecd39a697"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B17",
+          "polynomial_sha256": "18c23c83c432d71b1f07259299951cf3ddc92eb469f0ed80f9a3dac99494a0a5"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B18",
+          "polynomial_sha256": "fa3309d9c19956416f89e8e9144a4095161d27953f075b2fe389f15665fc6500"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B19",
+          "polynomial_sha256": "3681530fea58e1239b8814cba89c92af5ff5c4b4e01a7512e7a13cc2eb0f4e96"
+        }
+      ],
+      "closed_branch_place_count": 19,
+      "code_dimension": 19,
+      "codeword_manifest_sha256": "75676bc709d472e1192ea84d5301f0628ee116dae46cc015938692d758c5eeda",
+      "complete_branch_cancellations": [],
+      "conditions": [
+        {
+          "branch_support": [
+            "B15"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O1",
+          "numerator_sha256": "95a56ed3d001ce707e783c755877a74bf1cafb7be30ad729a4a1de11014c4fdd",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B17"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O2",
+          "numerator_sha256": "a441f8272a8d6d8ef4ac30d869836206689794fa868a495f47ac77a99466f293",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B12"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O3",
+          "numerator_sha256": "1a1cae1bb6b30971b5a6b0251555a66bd824e367fe444c8527436a6fee8099c4",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B18"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O4",
+          "numerator_sha256": "269ccabfe35b933f11f51c9607d1b5363f66740eff890ba7c31c57d6c17a4ddf",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B9"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O5",
+          "numerator_sha256": "f6feb1057059979fc9d8eb66207c71846139dc361863ca1d69d33922bc85dcd2",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B4"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O6",
+          "numerator_sha256": "c27f97217e134f344259608edf8101b31179db2f55c925b3d8453ed41b7af7a4",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B11"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O7",
+          "numerator_sha256": "ee1dec5c41b203c3744312868d4707e12d1f0b88630df8449e0005bee5963ca7",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B14"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O8",
+          "numerator_sha256": "9a168294d620abd93eafd117e97975991002a76d2a483043795e9b08ecc89dbc",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B16"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O9",
+          "numerator_sha256": "13edcd9b67998374dcf1e3bac085719e1fd7e992514b5122ef1ed2bd1b8d8802",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B10"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O10",
+          "numerator_sha256": "67546a314afed7fb87b8b79e418b14f96063d337969609a6d2ca383de2b73a01",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B8"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O11",
+          "numerator_sha256": "4cb0d16ebc224867b7ad3572259c1335e47075b4ac1489176009f4ab0c1b86e6",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B7"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O12",
+          "numerator_sha256": "a975d5747b20a1fe770dd1b6cbaf4016b1e72ca0a37b13de6df563c82221387d",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B6"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O13",
+          "numerator_sha256": "eada749b1c15e9fa9cd3259f5550df6e7020efbb3c69fd8577d2bd2763c6a8b8",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B13"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O14",
+          "numerator_sha256": "1ee6e9331876cc197f11793031008a1e085a6b6b7b5ac9a513918205deea81f2",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B3"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O15",
+          "numerator_sha256": "98c70914bdf19501093144d2454071595b0fef44e94c59607902750c89884979",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B2"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O16",
+          "numerator_sha256": "4f6bbdc9bdaba97e46af66bde6eb0ced6d63527769ab927b9390526f073f546a",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B1"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O17",
+          "numerator_sha256": "2f2269675eceb8c884a92dc167ea7319caeac80022c3064d8e4f3792204b8bf6",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B19"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O18",
+          "numerator_sha256": "db7ec9e17e8ddbb65f8e32681d28f918415ffebc121dd07f36ac4557309e5be6",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B5"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC226O19",
+          "numerator_sha256": "7f490931b5980e7e0052138424b795fdd4d178df54af3c2593473c8799db5e20",
+          "quadratic_quotient_genus": 2
+        }
+      ],
+      "definition": "Rows encode div(g_i) modulo 2.  Irreducible QQ factors are closed branch places of geometric weight equal to their degree; infinity is included when it has odd valuation.",
+      "direction_count": 19,
+      "geometric_branch_place_count": 114,
+      "geometric_incidence_code_automorphisms": {
+        "coordinate_permutation_group_order": 1946782493550362124155303577601966080000000000000000000,
+        "meaning": "Product of symmetric groups on geometric branch places with the same binary incidence column.  This is a code automorphism count only; it does not assert that these permutations are induced by PGL_2 or by automorphisms of the cover."
+      },
+      "geometric_incidence_indistinguishable_branch_places": [
+        {
+          "closed_branch_places": [
+            "B15"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000000000000001"
+        },
+        {
+          "closed_branch_places": [
+            "B17"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000000000000010"
+        },
+        {
+          "closed_branch_places": [
+            "B12"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000000000000100"
+        },
+        {
+          "closed_branch_places": [
+            "B18"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000000000001000"
+        },
+        {
+          "closed_branch_places": [
+            "B9"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000000000010000"
+        },
+        {
+          "closed_branch_places": [
+            "B4"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000000000100000"
+        },
+        {
+          "closed_branch_places": [
+            "B11"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000000001000000"
+        },
+        {
+          "closed_branch_places": [
+            "B14"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000000010000000"
+        },
+        {
+          "closed_branch_places": [
+            "B16"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000000100000000"
+        },
+        {
+          "closed_branch_places": [
+            "B10"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000001000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B8"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000010000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B7"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000100000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B6"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000001000000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B13"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000010000000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B3"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000100000000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B2"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0001000000000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B1"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0010000000000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B19"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0100000000000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B5"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "1000000000000000000"
+        }
+      ],
+      "incidence_indistinguishable_closed_branch_places": [],
+      "low_genus_quadratic_quotients": [],
+      "minimum_quadratic_quotient": {
+        "combinations": [
+          [
+            "IC226O1"
+          ],
+          [
+            "IC226O2"
+          ],
+          [
+            "IC226O3"
+          ],
+          [
+            "IC226O4"
+          ],
+          [
+            "IC226O5"
+          ],
+          [
+            "IC226O6"
+          ],
+          [
+            "IC226O7"
+          ],
+          [
+            "IC226O8"
+          ],
+          [
+            "IC226O9"
+          ],
+          [
+            "IC226O10"
+          ],
+          [
+            "IC226O11"
+          ],
+          [
+            "IC226O12"
+          ],
+          [
+            "IC226O13"
+          ],
+          [
+            "IC226O14"
+          ],
+          [
+            "IC226O15"
+          ],
+          [
+            "IC226O16"
+          ],
+          [
+            "IC226O17"
+          ],
+          [
+            "IC226O18"
+          ],
+          [
+            "IC226O19"
+          ]
+        ],
+        "genus": 2,
+        "geometric_branch_count": 6
+      },
+      "multiquadratic_cover": {
+        "connected_degree": 524288,
+        "genus": 14417921,
+        "genus_formula": "1 + 2^(r-2)*(B-4) for a connected (Z/2)^r cover of P1, where r is code dimension and B is the branch-union size",
+        "geometric_branch_count": 114
+      },
+      "parameter": "T",
+      "quadratic_quotient_histogram": [
+        {
+          "count": 19,
+          "genus": 2,
+          "geometric_branch_count": 6
+        },
+        {
+          "count": 171,
+          "genus": 5,
+          "geometric_branch_count": 12
+        },
+        {
+          "count": 969,
+          "genus": 8,
+          "geometric_branch_count": 18
+        },
+        {
+          "count": 3876,
+          "genus": 11,
+          "geometric_branch_count": 24
+        },
+        {
+          "count": 11628,
+          "genus": 14,
+          "geometric_branch_count": 30
+        },
+        {
+          "count": 27132,
+          "genus": 17,
+          "geometric_branch_count": 36
+        },
+        {
+          "count": 50388,
+          "genus": 20,
+          "geometric_branch_count": 42
+        },
+        {
+          "count": 75582,
+          "genus": 23,
+          "geometric_branch_count": 48
+        },
+        {
+          "count": 92378,
+          "genus": 26,
+          "geometric_branch_count": 54
+        },
+        {
+          "count": 92378,
+          "genus": 29,
+          "geometric_branch_count": 60
+        },
+        {
+          "count": 75582,
+          "genus": 32,
+          "geometric_branch_count": 66
+        },
+        {
+          "count": 50388,
+          "genus": 35,
+          "geometric_branch_count": 72
+        },
+        {
+          "count": 27132,
+          "genus": 38,
+          "geometric_branch_count": 78
+        },
+        {
+          "count": 11628,
+          "genus": 41,
+          "geometric_branch_count": 84
+        },
+        {
+          "count": 3876,
+          "genus": 44,
+          "geometric_branch_count": 90
+        },
+        {
+          "count": 969,
+          "genus": 47,
+          "geometric_branch_count": 96
+        },
+        {
+          "count": 171,
+          "genus": 50,
+          "geometric_branch_count": 102
+        },
+        {
+          "count": 19,
+          "genus": 53,
+          "geometric_branch_count": 108
+        },
+        {
+          "count": 1,
+          "genus": 56,
+          "geometric_branch_count": 114
+        }
+      ],
+      "shared_branch_pairs": []
+    },
+    "icarm_243_observed_preimages_h200000": {
+      "all_quadratic_quotients": [],
+      "all_quadratic_quotients_recorded": false,
+      "branch_places": [
+        {
+          "geometric_degree": 6,
+          "label": "B1",
+          "polynomial_sha256": "d94dbbb25f89421c334d340b4269630870be139257647eaeec21161e6100469c"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B2",
+          "polynomial_sha256": "76abb89c6fd6bb131e5eb352b60b4d857843b0bdd77c16935356266cefc8629e"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B3",
+          "polynomial_sha256": "9a9905b7df32d3917a80730a0c9d98377cf60b76a1bbc0549fce3c7f74167f14"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B4",
+          "polynomial_sha256": "f0173ac6b2363019887e72f803968b76b21de9608b575baf1f9be7f26b9466c1"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B5",
+          "polynomial_sha256": "d319ecad2b1878611f64dd9ba8fb1903beb550605886d8495acd6f91cc424133"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B6",
+          "polynomial_sha256": "b117c3c8868c98ccfde990fc4dd63a9a83e4ec790230ea9feda5df846d7d2231"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B7",
+          "polynomial_sha256": "d089bd75fb9645e7d84e26b6c4e6925b81b402f318d0bbee2a8c4fb817ac3444"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B8",
+          "polynomial_sha256": "634b663dcb6a297e434cbac31383b37bd56d2d1353d45478562eac88a2d19afe"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B9",
+          "polynomial_sha256": "0ae34a088638e7594404e4564c948d8c7e0ac80c6f709380bad10ce46af5c2c4"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B10",
+          "polynomial_sha256": "144ed4d16b9dc94194a1cdef5e57e0f4db4ef06a56f26e0a505e843ffcb4ee98"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B11",
+          "polynomial_sha256": "6b9de967086fae4bf6aa8725473943938fd09b85c01848b22c0790ef4bf08504"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B12",
+          "polynomial_sha256": "2c66b1e49edb16ff099dc05768c2e1e2afb6e9209dcf06bdc1eed5d76681b913"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B13",
+          "polynomial_sha256": "96c0f64d02d2c30a1d0b25cbbcce18eee7f080c12c4f565efb31eb739e19fed2"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B14",
+          "polynomial_sha256": "f632aa699e5aa7c2bb4453e581476dd62b9d28520c39eb274cdbce36d68142bd"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B15",
+          "polynomial_sha256": "ed0aed3c163a1ef49ffba04a32690d1dd668cc5f225e29b17601b540d6717994"
+        },
+        {
+          "geometric_degree": 6,
+          "label": "B16",
+          "polynomial_sha256": "16905538a7b823391d3de39cdcaaf82f4310f73c6de2c1555d3f935f5cc9f951"
+        }
+      ],
+      "closed_branch_place_count": 16,
+      "code_dimension": 16,
+      "codeword_manifest_sha256": "3348e29a9cb61e2c1ae5ed8350da2d63f3982f9de284289c6df92fd74cc38e9c",
+      "complete_branch_cancellations": [],
+      "conditions": [
+        {
+          "branch_support": [
+            "B14"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC243O1",
+          "numerator_sha256": "f317132a05a55ce192543650064f8362716a99095fefb52fb028cbb6f63921c8",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B16"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC243O2",
+          "numerator_sha256": "e9466177ef49ad19be36353be2d23cb2df858530eee7ac2411aa78b70dad609c",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B5"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC243O3",
+          "numerator_sha256": "687bfbca3faf3ce4c46dd80030765719b1563809c0fd7310481846f7502f5bab",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B8"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC243O4",
+          "numerator_sha256": "9a1d0dd441670ce60763f05cd336919a2ce1a0539cf09bd021df9d873cc6157d",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B9"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC243O5",
+          "numerator_sha256": "c71d80ab87573356d7d5ce64f1bd4b0b739786eca0aec411b13a227ddb9f9d4d",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B3"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC243O6",
+          "numerator_sha256": "fd012b10062fe0dd622a9c83601dce8e7b2a391ea4874cc6f5e5f7b131542cb2",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B7"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC243O7",
+          "numerator_sha256": "b017d7c517f76d2ca94c6cca8c9c3a0b8b94144e9f53ab6c7344d777d111412a",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B2"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC243O8",
+          "numerator_sha256": "5b4f3a0c40d107c6742e6fa29ac934e5ccf3f7e7cc5357a467158560ef81a781",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B4"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC243O9",
+          "numerator_sha256": "0fd88c68b4bfd41b11341b4c404250ceb6286871fcbf51295f36a51a4995cab2",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B1"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC243O10",
+          "numerator_sha256": "6b816737b871ac31b0b69bacd7b4e6d2d43b74594bab862e0f1d8c75823eb6fb",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B6"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC243O11",
+          "numerator_sha256": "3568cf239e5507b9d8e629acdc371d3de97cea21f2a78bc1cdde31411d7de1ec",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B10"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC243O12",
+          "numerator_sha256": "b4153f92b741c97eb372758d6a5e1552bd7895fb2ad05d30da6b5688066217fa",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B11"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC243O13",
+          "numerator_sha256": "66415647324884e97d173dc83de97a591750bb362efbd703f5f80f3390001ce8",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B13"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC243O14",
+          "numerator_sha256": "6ac02aece860eddccf03566661969ff3ea41b035e833b2990de703bd41d2480c",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B15"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC243O15",
+          "numerator_sha256": "ac0fe264f579b7cc2dfade9763ac2daed1c0b60e43151dff1d364721d0218067",
+          "quadratic_quotient_genus": 2
+        },
+        {
+          "branch_support": [
+            "B12"
+          ],
+          "denominator_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "finite_odd_factor_count": 1,
+          "geometric_branch_count": 6,
+          "infinity_branched": false,
+          "label": "IC243O16",
+          "numerator_sha256": "5c8a38e944ab0e5b12f6e4fc7967ec179fb028f2f50e72eff013ba1d3afe543c",
+          "quadratic_quotient_genus": 2
+        }
+      ],
+      "definition": "Rows encode div(g_i) modulo 2.  Irreducible QQ factors are closed branch places of geometric weight equal to their degree; infinity is included when it has odd valuation.",
+      "direction_count": 16,
+      "geometric_branch_place_count": 96,
+      "geometric_incidence_code_automorphisms": {
+        "coordinate_permutation_group_order": 5215788145014473283595099176960000000000000000,
+        "meaning": "Product of symmetric groups on geometric branch places with the same binary incidence column.  This is a code automorphism count only; it does not assert that these permutations are induced by PGL_2 or by automorphisms of the cover."
+      },
+      "geometric_incidence_indistinguishable_branch_places": [
+        {
+          "closed_branch_places": [
+            "B14"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000000000001"
+        },
+        {
+          "closed_branch_places": [
+            "B16"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000000000010"
+        },
+        {
+          "closed_branch_places": [
+            "B5"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000000000100"
+        },
+        {
+          "closed_branch_places": [
+            "B8"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000000001000"
+        },
+        {
+          "closed_branch_places": [
+            "B9"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000000010000"
+        },
+        {
+          "closed_branch_places": [
+            "B3"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000000100000"
+        },
+        {
+          "closed_branch_places": [
+            "B7"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000001000000"
+        },
+        {
+          "closed_branch_places": [
+            "B2"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000010000000"
+        },
+        {
+          "closed_branch_places": [
+            "B4"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000000100000000"
+        },
+        {
+          "closed_branch_places": [
+            "B1"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000001000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B6"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000010000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B10"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0000100000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B11"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0001000000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B13"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0010000000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B15"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "0100000000000000"
+        },
+        {
+          "closed_branch_places": [
+            "B12"
+          ],
+          "geometric_branch_place_count": 6,
+          "incidence_pattern_binary": "1000000000000000"
+        }
+      ],
+      "incidence_indistinguishable_closed_branch_places": [],
+      "low_genus_quadratic_quotients": [],
+      "minimum_quadratic_quotient": {
+        "combinations": [
+          [
+            "IC243O1"
+          ],
+          [
+            "IC243O2"
+          ],
+          [
+            "IC243O3"
+          ],
+          [
+            "IC243O4"
+          ],
+          [
+            "IC243O5"
+          ],
+          [
+            "IC243O6"
+          ],
+          [
+            "IC243O7"
+          ],
+          [
+            "IC243O8"
+          ],
+          [
+            "IC243O9"
+          ],
+          [
+            "IC243O10"
+          ],
+          [
+            "IC243O11"
+          ],
+          [
+            "IC243O12"
+          ],
+          [
+            "IC243O13"
+          ],
+          [
+            "IC243O14"
+          ],
+          [
+            "IC243O15"
+          ],
+          [
+            "IC243O16"
+          ]
+        ],
+        "genus": 2,
+        "geometric_branch_count": 6
+      },
+      "multiquadratic_cover": {
+        "connected_degree": 65536,
+        "genus": 1507329,
+        "genus_formula": "1 + 2^(r-2)*(B-4) for a connected (Z/2)^r cover of P1, where r is code dimension and B is the branch-union size",
+        "geometric_branch_count": 96
+      },
+      "parameter": "T",
+      "quadratic_quotient_histogram": [
+        {
+          "count": 16,
+          "genus": 2,
+          "geometric_branch_count": 6
+        },
+        {
+          "count": 120,
+          "genus": 5,
+          "geometric_branch_count": 12
+        },
+        {
+          "count": 560,
+          "genus": 8,
+          "geometric_branch_count": 18
+        },
+        {
+          "count": 1820,
+          "genus": 11,
+          "geometric_branch_count": 24
+        },
+        {
+          "count": 4368,
+          "genus": 14,
+          "geometric_branch_count": 30
+        },
+        {
+          "count": 8008,
+          "genus": 17,
+          "geometric_branch_count": 36
+        },
+        {
+          "count": 11440,
+          "genus": 20,
+          "geometric_branch_count": 42
+        },
+        {
+          "count": 12870,
+          "genus": 23,
+          "geometric_branch_count": 48
+        },
+        {
+          "count": 11440,
+          "genus": 26,
+          "geometric_branch_count": 54
+        },
+        {
+          "count": 8008,
+          "genus": 29,
+          "geometric_branch_count": 60
+        },
+        {
+          "count": 4368,
+          "genus": 32,
+          "geometric_branch_count": 66
+        },
+        {
+          "count": 1820,
+          "genus": 35,
+          "geometric_branch_count": 72
+        },
+        {
+          "count": 560,
+          "genus": 38,
+          "geometric_branch_count": 78
+        },
+        {
+          "count": 120,
+          "genus": 41,
+          "geometric_branch_count": 84
+        },
+        {
+          "count": 16,
+          "genus": 44,
+          "geometric_branch_count": 90
+        },
+        {
+          "count": 1,
+          "genus": 47,
+          "geometric_branch_count": 96
+        }
+      ],
+      "shared_branch_pairs": []
+    }
+  },
+  "supplemental_bounded_input_outcome": {
+    "icarm_226_observed_preimages_h200000": {
+      "code_dimension": 19,
+      "complete_cancellation_count": 0,
+      "low_genus_quotient_count": 0,
+      "minimum_quadratic_quotient_genus": 2,
+      "shared_branch_pair_count": 0
+    },
+    "icarm_243_observed_preimages_h200000": {
+      "code_dimension": 16,
+      "complete_cancellation_count": 0,
+      "low_genus_quotient_count": 0,
+      "minimum_quadratic_quotient_genus": 2,
+      "shared_branch_pair_count": 0
+    }
+  }
+}

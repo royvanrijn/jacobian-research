@@ -11,8 +11,9 @@ import unittest
 
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path[:0] = [str(ROOT / "elliptic-curves"), str(ROOT / "elliptic-curves/cas")]
 SCRIPT = ROOT / "elliptic-curves/cas/analyze_fermigier_exceptional_transport.py"
-ARTIFACT = ROOT / "artifacts/generated-results/elliptic_fermigier_exceptional_transport.json"
+ARTIFACT = ROOT / "artifacts/generated-results/elliptic-curves/elliptic_fermigier_exceptional_transport.json"
 SPEC = importlib.util.spec_from_file_location("fermigier_exceptional_transport", SCRIPT)
 MODULE = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None

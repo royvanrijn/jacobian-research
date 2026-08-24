@@ -766,7 +766,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--output",
         type=Path,
-        default=root / "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json",
+        default=root / "archive/elliptic-curves/artifacts/generated-results/elliptic_nagao_rank21_unbiased.json",
     )
     return parser
 

@@ -1,0 +1,383 @@
+{
+  "arithmetic_sha256": {
+    "quartic_coefficients": "ca43d3f00e82f9c7e8b3efe923870284bf6fdb9f67a128395ac0c9bdf0d604e7",
+    "weierstrass_coefficients": "1bb9dfc4fd0f23be7fc8cedae98dc68b4d65fcf71ac2b5fd773d75d222f2d3db",
+    "weierstrass_points": "1c97d98dd907d0d5982edfafa62bd79477a38666b4819731b404c4e5d6e6e682"
+  },
+  "claim": "the Kihara t=2 specialization has fourteen independent rational points; this replays the rank-at-least-14 family baseline",
+  "generation": {
+    "arithmetic": "Python Fraction and exact finite-field group operations",
+    "command": "python3 elliptic-curves/scripts/run_kihara_rank14.py --output artifacts/generated-results/elliptic-curves/kihara_rank14_t2_v1.json",
+    "external_software": "none",
+    "maximum_reduction_prime": 700
+  },
+  "independence_certificate": {
+    "relation_prime": 5,
+    "rows": [
+      {
+        "generator": [
+          1,
+          3
+        ],
+        "group_order": 25,
+        "logs": [
+          15,
+          12,
+          21,
+          7,
+          16,
+          23,
+          23,
+          19,
+          14,
+          21,
+          7,
+          22,
+          11,
+          8
+        ],
+        "prime": 17
+      },
+      {
+        "generator": [
+          2,
+          21
+        ],
+        "group_order": 125,
+        "logs": [
+          66,
+          27,
+          5,
+          50,
+          58,
+          45,
+          29,
+          112,
+          110,
+          49,
+          35,
+          69,
+          26,
+          97
+        ],
+        "prime": 109
+      },
+      {
+        "generator": [
+          1,
+          159
+        ],
+        "group_order": 230,
+        "logs": [
+          155,
+          212,
+          147,
+          185,
+          82,
+          34,
+          225,
+          81,
+          207,
+          117,
+          173,
+          90,
+          115,
+          80
+        ],
+        "prime": 227
+      },
+      {
+        "generator": [
+          0,
+          53
+        ],
+        "group_order": 265,
+        "logs": [
+          230,
+          213,
+          243,
+          159,
+          117,
+          66,
+          95,
+          246,
+          204,
+          83,
+          227,
+          37,
+          184,
+          194
+        ],
+        "prime": 239
+      },
+      {
+        "generator": [
+          8,
+          32
+        ],
+        "group_order": 290,
+        "logs": [
+          266,
+          286,
+          282,
+          197,
+          195,
+          272,
+          11,
+          21,
+          146,
+          147,
+          155,
+          152,
+          26,
+          187
+        ],
+        "prime": 263
+      },
+      {
+        "generator": [
+          0,
+          144
+        ],
+        "group_order": 265,
+        "logs": [
+          64,
+          145,
+          99,
+          242,
+          146,
+          251,
+          84,
+          261,
+          32,
+          49,
+          175,
+          53,
+          193,
+          198
+        ],
+        "prime": 281
+      },
+      {
+        "generator": [
+          4,
+          209
+        ],
+        "group_order": 315,
+        "logs": [
+          123,
+          112,
+          205,
+          205,
+          290,
+          66,
+          277,
+          140,
+          124,
+          124,
+          155,
+          267,
+          108,
+          268
+        ],
+        "prime": 317
+      },
+      {
+        "generator": [
+          3,
+          279
+        ],
+        "group_order": 480,
+        "logs": [
+          334,
+          394,
+          385,
+          461,
+          157,
+          463,
+          122,
+          163,
+          344,
+          216,
+          357,
+          396,
+          57,
+          456
+        ],
+        "prime": 443
+      },
+      {
+        "generator": [
+          5,
+          18
+        ],
+        "group_order": 480,
+        "logs": [
+          294,
+          425,
+          330,
+          188,
+          6,
+          455,
+          67,
+          247,
+          318,
+          28,
+          345,
+          453,
+          76,
+          187
+        ],
+        "prime": 463
+      },
+      {
+        "generator": [
+          22,
+          337
+        ],
+        "group_order": 540,
+        "logs": [
+          42,
+          184,
+          270,
+          170,
+          491,
+          264,
+          127,
+          229,
+          243,
+          65,
+          221,
+          118,
+          487,
+          449
+        ],
+        "prime": 499
+      },
+      {
+        "generator": [
+          0,
+          298
+        ],
+        "group_order": 560,
+        "logs": [
+          462,
+          23,
+          347,
+          522,
+          545,
+          517,
+          461,
+          410,
+          466,
+          107,
+          310,
+          264,
+          106,
+          216
+        ],
+        "prime": 521
+      },
+      {
+        "generator": [
+          1,
+          124
+        ],
+        "group_order": 615,
+        "logs": [
+          138,
+          457,
+          134,
+          453,
+          341,
+          50,
+          60,
+          221,
+          310,
+          229,
+          194,
+          320,
+          580,
+          238
+        ],
+        "prime": 577
+      },
+      {
+        "generator": [
+          33,
+          23
+        ],
+        "group_order": 630,
+        "logs": [
+          128,
+          263,
+          64,
+          233,
+          142,
+          53,
+          586,
+          271,
+          275,
+          27,
+          515,
+          11,
+          550,
+          584
+        ],
+        "prime": 599
+      },
+      {
+        "generator": [
+          5,
+          3
+        ],
+        "group_order": 630,
+        "logs": [
+          154,
+          260,
+          317,
+          92,
+          317,
+          424,
+          435,
+          490,
+          136,
+          523,
+          136,
+          82,
+          612,
+          252
+        ],
+        "prime": 607
+      }
+    ],
+    "torsion_witness": {
+      "group_order": 18,
+      "prime": 11
+    }
+  },
+  "schema": "elliptic-curves.kihara-rank14-certificate.v1",
+  "scope": {
+    "generic_family": "the paper supplies these as rational-function points; independence at one defined specialization rules out a generic relation",
+    "not_computed": [
+      "the exact rank of the t=2 specialization",
+      "a conductor-optimized specialization",
+      "any fifteenth point independent of P1,...,P14",
+      "any rank-30 curve"
+    ],
+    "specialization": "unconditional rank lower bound 14 from exact rational points and a finite-reduction infinite-descent certificate"
+  },
+  "source": {
+    "doi": "10.3792/pjaa.77.50",
+    "paper_height_determinant": "221792776617402574.10",
+    "url": "https://projecteuclid.org/journals/proceedings-of-the-japan-academy-series-a-mathematical-sciences/volume-77/issue-4/On-an-elliptic-curve-over-mathbf-Qt-of-rank-geq/10.3792/pjaa.77.50.pdf"
+  },
+  "specialization": {
+    "p": "80",
+    "parameter_t": "2",
+    "point_order": "P1,...,P14 with P15 as the quartic origin",
+    "q": "-288",
+    "u": "18050187264"
+  },
+  "target_status": "baseline only: this is neither a rank-30 candidate nor progress toward thirty independent points"
+}

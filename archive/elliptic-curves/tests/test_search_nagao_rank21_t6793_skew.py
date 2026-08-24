@@ -34,8 +34,8 @@ from search_nagao_u42_skew_height import (  # noqa: E402
 )
 
 
-INPUT = ROOT / "artifacts/generated-results/elliptic_nagao_rank21_unbiased.json"
-ARTIFACT = ROOT / "artifacts/generated-results/elliptic_nagao_rank21_t6793_skew.json"
+INPUT = ROOT / "archive/elliptic-curves/artifacts/generated-results/elliptic_nagao_rank21_unbiased.json"
+ARTIFACT = ROOT / "archive/elliptic-curves/artifacts/generated-results/elliptic_nagao_rank21_t6793_skew.json"
 
 
 class NagaoRank21T6793SkewTests(unittest.TestCase):

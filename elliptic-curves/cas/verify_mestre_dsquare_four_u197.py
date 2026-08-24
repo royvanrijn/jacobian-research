@@ -53,7 +53,7 @@ PARAMETER_U = Q(197)
 PARAMETER_T = Q(337, 394)
 PINNED_ARTIFACT = (
     ROOT
-    / "artifacts/generated-results/elliptic_mestre_dsquare_four_u197_rank17.json"
+    / "artifacts/generated-results/elliptic-curves/elliptic_mestre_dsquare_four_u197_rank17.json"
 )
 EXPECTED_PINNED_ARTIFACT_SHA256 = (
     "f1235d845653219c53d906a06042d4904686feeb42c379ed7f3d83e01d7f0563"

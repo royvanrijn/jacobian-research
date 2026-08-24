@@ -270,7 +270,7 @@ def main() -> None:
         "--candidate-record",
         type=Path,
         default=Path(
-            "artifacts/generated-results/elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json"
+            "artifacts/generated-results/elliptic-curves/elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json"
         ),
     )
     parser.add_argument(

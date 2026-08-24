@@ -136,7 +136,7 @@ def main():
     )
     ap.add_argument(
         "--candidate-record", type=Path,
-        default=Path("artifacts/generated-results/elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json")
+        default=Path("artifacts/generated-results/elliptic-curves/elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json")
     )
     ap.add_argument(
         "--output", type=Path,

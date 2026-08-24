@@ -22,7 +22,7 @@ from branch_divisor_code import (  # noqa: E402
 )
 
 SCRIPT = CAS / "analyze_exceptional_branch_code.py"
-ARTIFACT = ROOT / "artifacts/generated-results/elliptic_exceptional_branch_code.json"
+ARTIFACT = ROOT / "artifacts/generated-results/elliptic-curves/elliptic_exceptional_branch_code.json"
 SPEC = importlib.util.spec_from_file_location("exceptional_branch_code", SCRIPT)
 MODULE = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None

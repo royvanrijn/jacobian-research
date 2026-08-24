@@ -36,10 +36,10 @@ from icarm_curve273 import GENERAL_WEIERSTRASS_COEFFICIENTS, POINTS  # noqa: E40
 from mestre_root_tuples import SixRootMestreConstruction  # noqa: E402
 
 
-TARGET_SOURCE = EC_GENERATED / "icarm_7fff_zip_281_282_285_286.json"
+TARGET_SOURCE = EC_GENERATED / "icarm_7fff_zip_public_source_281_282_285_286.json"
 CENSUS_SOURCES = (
-    GENERATED / "elliptic_mestre_root_tuple_scale_max200_census.json",
-    GENERATED / "elliptic_mestre_root_tuple_scale_max300_census.json",
+    ROOT / "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_root_tuple_scale_max200_census.json",
+    ROOT / "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_root_tuple_scale_max300_census.json",
 )
 FERMIGIER_NORMALIZED_ROOTS = (0, 29, 658, 722, 981, 1036)
 MODULAR_PRIMES = (101, 103, 107, 109, 127, 131, 137, 139)

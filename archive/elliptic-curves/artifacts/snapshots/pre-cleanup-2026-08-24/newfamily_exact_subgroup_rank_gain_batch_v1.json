@@ -1,0 +1,876 @@
+{
+  "claim_boundary": "each completed record is an exact processed-subgroup rank lower bound; no full-rank upper bound or saturation claim is implied",
+  "completed_specializations": 21,
+  "exact_gain_distribution": {
+    "0": 1,
+    "1": 13,
+    "2": 6,
+    "3": 1
+  },
+  "family": "newfamily six-root quartic",
+  "known_baseline_rank_distribution": {
+    "10": 1,
+    "11": 20
+  },
+  "maximum_processed_subgroup_rank": 14,
+  "processed_rank_distribution": {
+    "10": 1,
+    "12": 13,
+    "13": 6,
+    "14": 1
+  },
+  "records": [
+    {
+      "denominator": 6,
+      "exact_rank_gain_over_known": 3,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.43971405055972258352122260698393346329390369183185059328334661131566632769104",
+          "hit_index": 2,
+          "label": "Q2",
+          "point_fixed": [
+            "-2722114156253184",
+            "3769442154946420392591360"
+          ],
+          "point_minimal": [
+            "-16951807",
+            "1852437557223"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        },
+        {
+          "high_relative_residual": "0.23146760463960278701489208193324956149153735649361218215235686518202869862647",
+          "hit_index": 3,
+          "label": "Q3",
+          "point_fixed": [
+            "-2208380243300352",
+            "3706569428268172097617920"
+          ],
+          "point_minimal": [
+            "-13752559",
+            "1821538211319"
+          ],
+          "rank_after": 13,
+          "rank_before": 12
+        },
+        {
+          "high_relative_residual": "0.23425871898606799249222389173475637721114784494127811300346597655145935482502",
+          "hit_index": 4,
+          "label": "Q4",
+          "point_fixed": [
+            "-677301762576384",
+            "3510021470235349179432960"
+          ],
+          "point_minimal": [
+            "-4217857",
+            "1724943248823"
+          ],
+          "rank_after": 14,
+          "rank_before": 13
+        }
+      ],
+      "independent_hit_count_observed": 3,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 169,
+      "numerator": 83,
+      "parameter": "83/6",
+      "point_bits_max": 216,
+      "point_bits_median": 41,
+      "point_bits_min": 39,
+      "processed_subgroup_rank": 14,
+      "proved_rank_at_least": 14,
+      "root_number": 1,
+      "unique_hit_count": 13
+    },
+    {
+      "denominator": 7,
+      "exact_rank_gain_over_known": 2,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.32361333403063146440872991099800122972481676433387526234575237807188908966957",
+          "hit_index": 0,
+          "label": "Q0",
+          "point_fixed": [
+            "-6212318168871936",
+            "6173134621532952566169600"
+          ],
+          "point_minimal": [
+            "-17194155",
+            "898877752877"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        },
+        {
+          "high_relative_residual": "0.24485058430005230682053224884215856284506155038072190186030543394535812481174",
+          "hit_index": 1,
+          "label": "Q1",
+          "point_fixed": [
+            "-3674368120845312",
+            "6070561354967307685724160"
+          ],
+          "point_minimal": [
+            "-10169739",
+            "883938563549"
+          ],
+          "rank_after": 13,
+          "rank_before": 12
+        }
+      ],
+      "independent_hit_count_observed": 2,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 168,
+      "numerator": 100,
+      "parameter": "100/7",
+      "point_bits_max": 248,
+      "point_bits_median": 40,
+      "point_bits_min": 40,
+      "processed_subgroup_rank": 13,
+      "proved_rank_at_least": 13,
+      "root_number": -1,
+      "unique_hit_count": 8
+    },
+    {
+      "denominator": 14,
+      "exact_rank_gain_over_known": 2,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.50566064031601436853910238530091734750262526118899035973025635128398464251091",
+          "hit_index": 0,
+          "label": "Q0",
+          "point_fixed": [
+            "8097885946884096",
+            "712020143529567428605378560"
+          ],
+          "point_minimal": [
+            "5603235",
+            "12959639757742"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        },
+        {
+          "high_relative_residual": "0.19078307416492849845456842788765106021012167876357576046848892067958375106950",
+          "hit_index": 1,
+          "label": "Q1",
+          "point_fixed": [
+            "2034203392336896",
+            "711503259329071083728240640"
+          ],
+          "point_minimal": [
+            "22520685/16",
+            "828814971344233/64"
+          ],
+          "rank_after": 13,
+          "rank_before": 12
+        }
+      ],
+      "independent_hit_count_observed": 2,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 183,
+      "numerator": 209,
+      "parameter": "209/14",
+      "point_bits_max": 233,
+      "point_bits_median": 44,
+      "point_bits_min": 40,
+      "processed_subgroup_rank": 13,
+      "proved_rank_at_least": 13,
+      "root_number": -1,
+      "unique_hit_count": 2
+    },
+    {
+      "denominator": 10,
+      "exact_rank_gain_over_known": 2,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.31787698397275943436860705234208465929237783183020170438462613742968943219899",
+          "hit_index": 0,
+          "label": "Q0",
+          "point_fixed": [
+            "-4672474602098688",
+            "1637378130228939970943385600"
+          ],
+          "point_minimal": [
+            "-3233063",
+            "29802297935131"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        },
+        {
+          "high_relative_residual": "0.31613531574645979405301987811297698662875835782911140332066593994928858325318",
+          "hit_index": 1,
+          "label": "Q1",
+          "point_fixed": [
+            "21767467758170112",
+            "1595247814937390568859238400"
+          ],
+          "point_minimal": [
+            "15061737",
+            "29035465219531"
+          ],
+          "rank_after": 13,
+          "rank_before": 12
+        }
+      ],
+      "independent_hit_count_observed": 2,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 189,
+      "numerator": 227,
+      "parameter": "227/10",
+      "point_bits_max": 238,
+      "point_bits_median": 49,
+      "point_bits_min": 44,
+      "processed_subgroup_rank": 13,
+      "proved_rank_at_least": 13,
+      "root_number": -1,
+      "unique_hit_count": 2
+    },
+    {
+      "denominator": 3,
+      "exact_rank_gain_over_known": 2,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.21899543530837262075667970208620518463548877882680741628609923525253935801149",
+          "hit_index": 0,
+          "label": "Q0",
+          "point_fixed": [
+            "66542764502016",
+            "52865675276960633978880"
+          ],
+          "point_minimal": [
+            "1657565",
+            "207838761822"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        },
+        {
+          "high_relative_residual": "0.30228834535195490701759613453783363380713670110435694113126777699227023594784",
+          "hit_index": 4,
+          "label": "Q4",
+          "point_fixed": [
+            "-437577569915904",
+            "49555062313157736529920"
+          ],
+          "point_minimal": [
+            "-10899955",
+            "194829479172"
+          ],
+          "rank_after": 13,
+          "rank_before": 12
+        }
+      ],
+      "independent_hit_count_observed": 2,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 160,
+      "numerator": 44,
+      "parameter": "44/3",
+      "point_bits_max": 242,
+      "point_bits_median": 38,
+      "point_bits_min": 36,
+      "processed_subgroup_rank": 13,
+      "proved_rank_at_least": 13,
+      "root_number": -1,
+      "unique_hit_count": 23
+    },
+    {
+      "denominator": 8,
+      "exact_rank_gain_over_known": 2,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.26385828819777716303783289664276800204430466161262787980975719945910753256026",
+          "hit_index": 0,
+          "label": "Q0",
+          "point_fixed": [
+            "-8130146907193344",
+            "322104954571637557076951040"
+          ],
+          "point_minimal": [
+            "-5625557",
+            "5862706435740"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        },
+        {
+          "high_relative_residual": "0.26476056391012787856911783060405995675967011522166943070990774188337096023766",
+          "hit_index": 1,
+          "label": "Q1",
+          "point_fixed": [
+            "4681482755457024",
+            "313879101775016075074732032"
+          ],
+          "point_minimal": [
+            "3239296",
+            "5712985795167"
+          ],
+          "rank_after": 13,
+          "rank_before": 12
+        }
+      ],
+      "independent_hit_count_observed": 2,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 168,
+      "numerator": 61,
+      "parameter": "61/8",
+      "point_bits_max": 239,
+      "point_bits_median": 43,
+      "point_bits_min": 36,
+      "processed_subgroup_rank": 13,
+      "proved_rank_at_least": 13,
+      "root_number": -1,
+      "unique_hit_count": 2
+    },
+    {
+      "denominator": 7,
+      "exact_rank_gain_over_known": 2,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.30012651503311931096967339933930946667019973544678924719682296516094374721307",
+          "hit_index": 0,
+          "label": "Q0",
+          "point_fixed": [
+            "-253933016933376",
+            "14623722902892763450441728"
+          ],
+          "point_minimal": [
+            "-702824",
+            "2129358330181"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        },
+        {
+          "high_relative_residual": "0.31180675499666549254204041327464486043142778698658215792114161725569876417343",
+          "hit_index": 1,
+          "label": "Q1",
+          "point_fixed": [
+            "751180565228544",
+            "14388110980678362903478272"
+          ],
+          "point_minimal": [
+            "2079081",
+            "2095049524503"
+          ],
+          "rank_after": 13,
+          "rank_before": 12
+        }
+      ],
+      "independent_hit_count_observed": 2,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 168,
+      "numerator": 94,
+      "parameter": "94/7",
+      "point_bits_max": 247,
+      "point_bits_median": 41,
+      "point_bits_min": 36,
+      "processed_subgroup_rank": 13,
+      "proved_rank_at_least": 13,
+      "root_number": -1,
+      "unique_hit_count": 4
+    },
+    {
+      "denominator": 8,
+      "exact_rank_gain_over_known": 1,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.22877873467843343381045387893982000463051981505556169258401386603426619328099",
+          "hit_index": 0,
+          "label": "Q0",
+          "point_fixed": [
+            "-10052014753972224",
+            "37421586389910420958740480"
+          ],
+          "point_minimal": [
+            "-6955371",
+            "681118909380"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        }
+      ],
+      "independent_hit_count_observed": 1,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 161,
+      "numerator": 107,
+      "parameter": "107/8",
+      "point_bits_max": 209,
+      "point_bits_median": 40,
+      "point_bits_min": 35,
+      "processed_subgroup_rank": 12,
+      "proved_rank_at_least": 12,
+      "root_number": 1,
+      "unique_hit_count": 5
+    },
+    {
+      "denominator": 7,
+      "exact_rank_gain_over_known": 1,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.22936641342864876717282752281912267536691523589238979840019930690473292235188",
+          "hit_index": 0,
+          "label": "Q0",
+          "point_fixed": [
+            "-4011418681344",
+            "225293425079362873939722240"
+          ],
+          "point_minimal": [
+            "-5373664/121",
+            "349307001011445960/1331"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        }
+      ],
+      "independent_hit_count_observed": 1,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 187,
+      "numerator": 17,
+      "parameter": "17/7",
+      "point_bits_max": 251,
+      "point_bits_median": 49,
+      "point_bits_min": 41,
+      "processed_subgroup_rank": 12,
+      "proved_rank_at_least": 12,
+      "root_number": 1,
+      "unique_hit_count": 1
+    },
+    {
+      "denominator": 8,
+      "exact_rank_gain_over_known": 1,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.46010324431695410134738692801258556865473114243553912836212467092295764986240",
+          "hit_index": 0,
+          "label": "Q0",
+          "point_fixed": [
+            "-3758835019382784",
+            "510207038323750630148014080"
+          ],
+          "point_minimal": [
+            "-2600881",
+            "9286395768480"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        }
+      ],
+      "independent_hit_count_observed": 1,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 167,
+      "numerator": 17,
+      "parameter": "17/8",
+      "point_bits_max": 256,
+      "point_bits_median": 44,
+      "point_bits_min": 38,
+      "processed_subgroup_rank": 12,
+      "proved_rank_at_least": 12,
+      "root_number": -1,
+      "unique_hit_count": 1
+    },
+    {
+      "denominator": 10,
+      "exact_rank_gain_over_known": 1,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.22275602879763404760431737279668394761762749727137596788887187765530799769854",
+          "hit_index": 0,
+          "label": "Q0",
+          "point_fixed": [
+            "-25233300717723648",
+            "757484167379818207562956800"
+          ],
+          "point_minimal": [
+            "-69839517/4",
+            "110297219635913/8"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        }
+      ],
+      "independent_hit_count_observed": 1,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 187,
+      "numerator": 209,
+      "parameter": "209/10",
+      "point_bits_max": 221,
+      "point_bits_median": 47,
+      "point_bits_min": 41,
+      "processed_subgroup_rank": 12,
+      "proved_rank_at_least": 12,
+      "root_number": 1,
+      "unique_hit_count": 1
+    },
+    {
+      "denominator": 2,
+      "exact_rank_gain_over_known": 1,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.28774499550477737970077896484412143421959308451660946236481654158020096259190",
+          "hit_index": 8,
+          "label": "Q8",
+          "point_fixed": [
+            "87306597937152",
+            "4133530801781266710528"
+          ],
+          "point_minimal": [
+            "543697",
+            "2031082487"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        }
+      ],
+      "independent_hit_count_observed": 1,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 148,
+      "numerator": 39,
+      "parameter": "39/2",
+      "point_bits_max": 154,
+      "point_bits_median": 35,
+      "point_bits_min": 31,
+      "processed_subgroup_rank": 12,
+      "proved_rank_at_least": 12,
+      "root_number": 1,
+      "unique_hit_count": 61
+    },
+    {
+      "denominator": 7,
+      "exact_rank_gain_over_known": 1,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.27188613913439097527554688871480046944909301422416825423146101469845749061358",
+          "hit_index": 0,
+          "label": "Q0",
+          "point_fixed": [
+            "-5977856159142912",
+            "183864979395454923732418560"
+          ],
+          "point_minimal": [
+            "-16545223",
+            "26772558839366"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        }
+      ],
+      "independent_hit_count_observed": 1,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 172,
+      "numerator": 40,
+      "parameter": "40/7",
+      "point_bits_max": 243,
+      "point_bits_median": 45,
+      "point_bits_min": 37,
+      "processed_subgroup_rank": 12,
+      "proved_rank_at_least": 12,
+      "root_number": -1,
+      "unique_hit_count": 2
+    },
+    {
+      "denominator": 1,
+      "exact_rank_gain_over_known": 1,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.32158448387108384539674622439210976153033609704172595465028991636496327438902",
+          "hit_index": 0,
+          "label": "Q0",
+          "point_fixed": [
+            "96168493403136",
+            "133088185326720626196480"
+          ],
+          "point_minimal": [
+            "2395535",
+            "523230441812"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        }
+      ],
+      "independent_hit_count_observed": 1,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 165,
+      "numerator": 48,
+      "parameter": "48/1",
+      "point_bits_max": 220,
+      "point_bits_median": 39,
+      "point_bits_min": 37,
+      "processed_subgroup_rank": 12,
+      "proved_rank_at_least": 12,
+      "root_number": 1,
+      "unique_hit_count": 4
+    },
+    {
+      "denominator": 1,
+      "exact_rank_gain_over_known": 1,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.35225952611348094962593709571935134854300043322762576949413482538781820603556",
+          "hit_index": 1,
+          "label": "Q1",
+          "point_fixed": [
+            "-5348930441462784",
+            "57768221121784688148480"
+          ],
+          "point_minimal": [
+            "-14804512",
+            "8419023796"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        }
+      ],
+      "independent_hit_count_observed": 1,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 150,
+      "numerator": 58,
+      "parameter": "58/1",
+      "point_bits_max": 193,
+      "point_bits_median": 36,
+      "point_bits_min": 33,
+      "processed_subgroup_rank": 12,
+      "proved_rank_at_least": 12,
+      "root_number": 1,
+      "unique_hit_count": 15
+    },
+    {
+      "denominator": 3,
+      "exact_rank_gain_over_known": 1,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.21992795678631362632662020704490965650818181904336933150289634911805100228599",
+          "hit_index": 0,
+          "label": "Q0",
+          "point_fixed": [
+            "51295371697152",
+            "441931047894113743798272"
+          ],
+          "point_minimal": [
+            "1277756",
+            "1737436130609"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        }
+      ],
+      "independent_hit_count_observed": 1,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 176,
+      "numerator": 62,
+      "parameter": "62/3",
+      "point_bits_max": 139,
+      "point_bits_median": 44,
+      "point_bits_min": 41,
+      "processed_subgroup_rank": 12,
+      "proved_rank_at_least": 12,
+      "root_number": 1,
+      "unique_hit_count": 6
+    },
+    {
+      "denominator": 7,
+      "exact_rank_gain_over_known": 1,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.25159900079930683964268307652709603989481968459231710879583525197167758180461",
+          "hit_index": 0,
+          "label": "Q0",
+          "point_fixed": [
+            "-4566744357221376",
+            "109808215290257642332618752"
+          ],
+          "point_minimal": [
+            "-12639615",
+            "15989163179203"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        }
+      ],
+      "independent_hit_count_observed": 1,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 172,
+      "numerator": 64,
+      "parameter": "64/7",
+      "point_bits_max": 214,
+      "point_bits_median": 44,
+      "point_bits_min": 34,
+      "processed_subgroup_rank": 12,
+      "proved_rank_at_least": 12,
+      "root_number": -1,
+      "unique_hit_count": 3
+    },
+    {
+      "denominator": 1,
+      "exact_rank_gain_over_known": 1,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.29663806539693843892924937053637693840510394846405756895173798246405544991229",
+          "hit_index": 0,
+          "label": "Q0",
+          "point_fixed": [
+            "-794733511993344",
+            "566927081342131953991680"
+          ],
+          "point_minimal": [
+            "-8798501",
+            "660401301120"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        }
+      ],
+      "independent_hit_count_observed": 1,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 166,
+      "numerator": 71,
+      "parameter": "71/1",
+      "point_bits_max": 228,
+      "point_bits_median": 40,
+      "point_bits_min": 37,
+      "processed_subgroup_rank": 12,
+      "proved_rank_at_least": 12,
+      "root_number": 1,
+      "unique_hit_count": 5
+    },
+    {
+      "denominator": 3,
+      "exact_rank_gain_over_known": 1,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.25465552957157032029748196829031255663538894013727779623121110139423251644285",
+          "hit_index": 0,
+          "label": "Q0",
+          "point_fixed": [
+            "-522913334473728",
+            "7697826587021960286830592"
+          ],
+          "point_minimal": [
+            "-13025649",
+            "30263747929406"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        }
+      ],
+      "independent_hit_count_observed": 1,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 188,
+      "numerator": 88,
+      "parameter": "88/3",
+      "point_bits_max": 250,
+      "point_bits_median": 46,
+      "point_bits_min": 44,
+      "processed_subgroup_rank": 12,
+      "proved_rank_at_least": 12,
+      "root_number": -1,
+      "unique_hit_count": 2
+    },
+    {
+      "denominator": 3,
+      "exact_rank_gain_over_known": 1,
+      "hit_rank_increases": [
+        {
+          "high_relative_residual": "0.26043056700904863793766284702202879201968390379830454049170036960753524795730",
+          "hit_index": 0,
+          "label": "Q0",
+          "point_fixed": [
+            "581950478748672",
+            "9950559540863787817500672"
+          ],
+          "point_minimal": [
+            "14496251",
+            "39120276573636"
+          ],
+          "rank_after": 12,
+          "rank_before": 11
+        }
+      ],
+      "independent_hit_count_observed": 1,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 11,
+      "minimal_discriminant_bits": 190,
+      "numerator": 92,
+      "parameter": "92/3",
+      "point_bits_max": 240,
+      "point_bits_median": 50,
+      "point_bits_min": 44,
+      "processed_subgroup_rank": 12,
+      "proved_rank_at_least": 12,
+      "root_number": 1,
+      "unique_hit_count": 1
+    },
+    {
+      "denominator": 2,
+      "exact_rank_gain_over_known": 0,
+      "hit_rank_increases": [],
+      "independent_hit_count_observed": 0,
+      "known_specialization_rank_drop": null,
+      "known_specialization_rank_drop_by": null,
+      "known_subgroup_rank": 10,
+      "minimal_discriminant_bits": 156,
+      "numerator": 89,
+      "parameter": "89/2",
+      "point_bits_max": 139,
+      "point_bits_median": 37,
+      "point_bits_min": 35,
+      "processed_subgroup_rank": 10,
+      "proved_rank_at_least": 10,
+      "root_number": 1,
+      "unique_hit_count": 7
+    }
+  ],
+  "roots": [
+    -47,
+    -43,
+    -31,
+    30,
+    45,
+    46
+  ],
+  "schema": "newfamily_rank_gain_batch_v1",
+  "source_batch": "artifacts/local/elliptic-curves/newfamily/batch_exact_rank_gain_hits_v3.json",
+  "strongest_parameters": [
+    "83/6"
+  ]
+}
