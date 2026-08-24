@@ -1895,16 +1895,216 @@ a1, b1 = lift_rf(final_pairs[1][2]), lift_rf(final_pairs[1][3])
 xPV, yPV = lift_rf(K(X)/K(Z**2)), lift_rf(K(Y)/K(Z**3))
 AV = lift_poly(A)
 
-log("QUARTIC", status="BEGIN")
-mval = pencil_chord_solution(a0, b0, a1, b1, VF(V))
-disc = chord_discriminant(xPV, -yPV, AV, mval)
-quartic, square_factor = squarefree_binary_quartic(disc, UR)
+# -----------------------------------------------------------------------
+# Fast exact chord discriminant.
+#
+# m = N/(Z*D), where
+#   N = A1 - V*A0
+#   D = V*B0 - B1.
+#
+# For marked point (-P)=(X/Z^2,-Y/Z^3),
+#
+# disc =
+# [N^4 - 6 X N^2 D^2 - 8 Y N D^3
+#  - 3 X^2 D^4 - 4 A Z^4 D^4] / (Z^4 D^4).
+#
+# The denominator is (Z*D)^4, hence already a square.  Extract the odd
+# multiplicity part of the numerator with Yun's gcd-only squarefree
+# decomposition rather than irreducibly factoring numerator+denominator.
+# -----------------------------------------------------------------------
+QUARTIC_CHECKPOINT = CHECKPOINT_ROOT / "quartic_exact_yun.json.gz"
+
+def exact_poly_quo(left, right, label):
+    q, r = UR(left).quo_rem(UR(right))
+    if r:
+        raise ArithmeticError(
+            f"{label}: polynomial quotient has nonzero remainder"
+        )
+    return UR(q)
+
+
+def load_quartic_checkpoint():
+    if not QUARTIC_CHECKPOINT.exists():
+        return None
+    try:
+        with gzip.open(QUARTIC_CHECKPOINT, "rt", encoding="utf-8") as fh:
+            data = json.load(fh)
+        if data.get("status") != "PASS_EXACT_YUN_QUARTIC":
+            return None
+        if data.get("plane_fingerprint") != FINAL_PLANE_FINGERPRINT:
+            return None
+        q = UR([VF(v) for v in data["quartic_coefficients"]])
+        if int(q.degree()) != 4:
+            return None
+        print(
+            "Q24DIVVALQQ_QUARTIC_CHECKPOINT|"
+            f"file={QUARTIC_CHECKPOINT.name}|degree=4|status=HIT",
+            flush=True,
+        )
+        return q
+    except Exception as exc:
+        print(
+            "Q24DIVVALQQ_QUARTIC_CHECKPOINT|"
+            f"status=INVALID|reason={type(exc).__name__}:{exc}",
+            flush=True,
+        )
+        return None
+
+
+def save_quartic_checkpoint(quartic, multiplicities):
+    payload = {
+        "schema": "elkies-k3.q24-divval-qq-quartic-yun.v1",
+        "status": "PASS_EXACT_YUN_QUARTIC",
+        "plane_fingerprint": FINAL_PLANE_FINGERPRINT,
+        "degree": int(quartic.degree()),
+        "quartic_coefficients": [str(v) for v in quartic.list()],
+        "yun_multiplicities": list(map(int, multiplicities)),
+    }
+    tmp = QUARTIC_CHECKPOINT.with_name(
+        QUARTIC_CHECKPOINT.name + f".tmp-{os.getpid()}"
+    )
+    with gzip.open(tmp, "wt", encoding="utf-8") as fh:
+        json.dump(payload, fh, sort_keys=True)
+    tmp.replace(QUARTIC_CHECKPOINT)
+    print(
+        "Q24DIVVALQQ_QUARTIC_CHECKPOINT|"
+        f"file={QUARTIC_CHECKPOINT.name}|degree={quartic.degree()}|status=SAVED",
+        flush=True,
+    )
+
+
+log("QUARTIC", method="DIRECT_NUMERATOR_YUN", status="BEGIN")
+
+quartic = load_quartic_checkpoint()
+square_factor = None
+
+if quartic is None:
+    AA0, BB0 = final_pairs[0][0], final_pairs[0][1]
+    AA1, BB1 = final_pairs[1][0], final_pairs[1][1]
+
+    A0U = lift_poly(AA0)
+    A1U = lift_poly(AA1)
+    B0U = lift_poly(BB0)
+    B1U = lift_poly(BB1)
+    ZU = lift_poly(Z)
+    XU = lift_poly(X)
+    YU = lift_poly(Y)
+    AU = lift_poly(A)
+
+    N = UR(A1U - VF(V) * A0U)
+    D = UR(VF(V) * B0U - B1U)
+
+    if not N or not D:
+        raise ArithmeticError("degenerate exact chord pencil")
+
+    log(
+        "QUARTIC_INPUT",
+        degN=N.degree(),
+        degD=D.degree(),
+        degZ=ZU.degree(),
+        method="CLEARED_DIRECT_FORMULA",
+        status="PASS",
+    )
+
+    log("QUARTIC_NUMERATOR", status="BEGIN")
+    N2 = N * N
+    D2 = D * D
+    N4 = N2 * N2
+    D3 = D2 * D
+    D4 = D2 * D2
+    Z2 = ZU * ZU
+    Z4 = Z2 * Z2
+
+    Qdisc = UR(
+        N4
+        - 6 * XU * N2 * D2
+        - 8 * YU * N * D3
+        - 3 * (XU * XU) * D4
+        - 4 * AU * Z4 * D4
+    )
+    if not Qdisc:
+        raise ArithmeticError("cleared chord discriminant vanished")
+
+    log(
+        "QUARTIC_NUMERATOR",
+        degree=Qdisc.degree(),
+        status="PASS",
+    )
+
+    # denominator = (Z*D)^4; retain its factorization unit so our quartic
+    # normalization exactly matches squarefree_binary_quartic().
+    denom_base = UR(ZU * D)
+    denom_lc = VF(denom_base.leading_coefficient())
+    denom_unit = denom_lc**4
+    denom_monic = UR(denom_base / denom_lc)
+
+    numerator_lc = VF(Qdisc.leading_coefficient())
+    f = UR(Qdisc / numerator_lc)
+
+    log(
+        "QUARTIC_GCD",
+        degree=f.degree(),
+        status="BEGIN",
+    )
+    g = f.gcd(f.derivative())
+    w = exact_poly_quo(f, g, "yun-initial")
+    log(
+        "QUARTIC_GCD",
+        gcd_degree=g.degree(),
+        squarefree_head_degree=w.degree(),
+        status="PASS",
+    )
+
+    odd_part = UR.one()
+    square_poly = UR.one()
+    multiplicities = []
+    i = 1
+
+    while w.degree() > 0:
+        y_gcd = w.gcd(g)
+        z_i = exact_poly_quo(w, y_gcd, f"yun-z-{i}")
+
+        if z_i.degree() > 0:
+            multiplicities.append(i)
+            if i % 2:
+                odd_part *= z_i
+            half = i // 2
+            if half:
+                square_poly *= z_i**half
+
+        w = y_gcd
+        g = exact_poly_quo(g, y_gcd, f"yun-g-{i}")
+        i += 1
+
+    if g.degree() > 0:
+        raise ArithmeticError(
+            f"Yun decomposition ended with residual gcd degree {g.degree()}"
+        )
+
+    quartic = UR((numerator_lc / denom_unit) * odd_part)
+
+    if Qdisc != UR(numerator_lc * odd_part * square_poly**2):
+        raise ArithmeticError("Yun numerator reconstruction failed")
+
+    square_factor = UK(square_poly) / UK(denom_monic**2)
+
+    log(
+        "QUARTIC_YUN",
+        pieces=len(multiplicities),
+        multiplicities=",".join(map(str, multiplicities)),
+        square_degree=square_poly.degree(),
+        quartic_degree=quartic.degree(),
+        status="PASS",
+    )
+
+    save_quartic_checkpoint(quartic, multiplicities)
+
 quartic_degree = int(quartic.degree())
 if quartic_degree != 4:
     raise ArithmeticError(
         f"exact q24 quartic degree {quartic_degree}, expected modular degree 4"
     )
-log("QUARTIC", degree=quartic_degree, status="PASS")
+log("QUARTIC", method="DIRECT_NUMERATOR_YUN", degree=quartic_degree, status="PASS")
 
 I, J = binary_quartic_invariants(quartic)
 jacA = VF(-27) * VF(I)
