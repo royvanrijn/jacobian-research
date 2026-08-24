@@ -2002,31 +2002,115 @@ if quartic is None:
         degN=N.degree(),
         degD=D.degree(),
         degZ=ZU.degree(),
-        method="CLEARED_DIRECT_FORMULA",
+        method="CLEARED_DIRECT_FORMULA_NESTED_QQU_V",
         status="PASS",
     )
 
-    log("QUARTIC_NUMERATOR", status="BEGIN")
-    N2 = N * N
-    D2 = D * D
-    N4 = N2 * N2
-    D3 = D2 * D
-    D4 = D2 * D2
-    Z2 = ZU * ZU
-    Z4 = Z2 * Z2
-
-    Qdisc = UR(
-        N4
-        - 6 * XU * N2 * D2
-        - 8 * YU * N * D3
-        - 3 * (XU * XU) * D4
-        - 4 * AU * Z4 * D4
+    # Build the cleared numerator in (QQ[U])[V], NOT QQ(V)[U].
+    #
+    # N and D are linear in V, hence Qdisc has V-degree <= 4.  Doing the
+    # degree-160 U arithmetic over the polynomial coefficient ring QQ[U]
+    # avoids fraction-field normalization after every multiplication.
+    log(
+        "QUARTIC_NUMERATOR",
+        method="NESTED_QQU_V",
+        status="BEGIN",
     )
+
+    RV = PolynomialRing(R, "W")
+    W = RV.gen()
+
+    Nv = RV(AA1) - W * RV(AA0)
+    Dv = W * RV(BB0) - RV(BB1)
+
+    if Nv.degree() != 1 or Dv.degree() != 1:
+        raise ArithmeticError(
+            f"unexpected V-degrees N/D={Nv.degree()}/{Dv.degree()}"
+        )
+
+    Nv2 = Nv * Nv
+    Dv2 = Dv * Dv
+    Nv4 = Nv2 * Nv2
+    Dv3 = Dv2 * Dv
+    Dv4 = Dv2 * Dv2
+
+    ZR2 = Z * Z
+    ZR4 = ZR2 * ZR2
+    X2R = X * X
+
+    log(
+        "QUARTIC_NUMERATOR_PRODUCTS",
+        degN4=Nv4.degree(),
+        degD4=Dv4.degree(),
+        status="PASS",
+    )
+
+    Qdisc_v = RV(
+        Nv4
+        - 6 * RV(X) * Nv2 * Dv2
+        - 8 * RV(Y) * Nv * Dv3
+        - 3 * RV(X2R) * Dv4
+        - 4 * RV(A * ZR4) * Dv4
+    )
+
+    if not Qdisc_v:
+        raise ArithmeticError("nested cleared chord discriminant vanished")
+    if Qdisc_v.degree() > 4:
+        raise ArithmeticError(
+            f"cleared discriminant V-degree={Qdisc_v.degree()}, expected <=4"
+        )
+
+    log(
+        "QUARTIC_NUMERATOR_NESTED",
+        V_degree=Qdisc_v.degree(),
+        U_degrees=",".join(
+            str(R(c).degree()) if c else "-1"
+            for c in Qdisc_v.list()
+        ),
+        status="PASS",
+    )
+
+    # Transpose (QQ[U])[V] -> QQ(V)[U] once.
+    #
+    # Only five V coefficient polynomials exist, so this performs a handful
+    # of coefficient-field coercions instead of thousands during products.
+    log(
+        "QUARTIC_TRANSPOSE",
+        source="QQ[U][V]",
+        target="QQ(V)[U]",
+        status="BEGIN",
+    )
+
+    Qdisc = UR.zero()
+    for j, coeff_u in enumerate(Qdisc_v.list()):
+        coeff_u = R(coeff_u)
+        if coeff_u:
+            Qdisc += lift_poly(coeff_u) * VF(V)**j
+    Qdisc = UR(Qdisc)
+
     if not Qdisc:
-        raise ArithmeticError("cleared chord discriminant vanished")
+        raise ArithmeticError("transposed chord discriminant vanished")
+
+    expected_u_degree = max(
+        (R(c).degree() for c in Qdisc_v.list() if c),
+        default=-1,
+    )
+    if int(Qdisc.degree()) != int(expected_u_degree):
+        raise ArithmeticError(
+            f"transpose changed U degree "
+            f"{expected_u_degree}->{Qdisc.degree()}"
+        )
+
+    log(
+        "QUARTIC_TRANSPOSE",
+        U_degree=Qdisc.degree(),
+        V_degree=Qdisc_v.degree(),
+        status="PASS",
+    )
 
     log(
         "QUARTIC_NUMERATOR",
+        method="NESTED_QQU_V",
         degree=Qdisc.degree(),
         status="PASS",
     )
@@ -2039,60 +2123,206 @@ if quartic is None:
     denom_monic = UR(denom_base / denom_lc)
 
     numerator_lc = VF(Qdisc.leading_coefficient())
-    f = UR(Qdisc / numerator_lc)
 
     log(
         "QUARTIC_GCD",
-        degree=f.degree(),
+        degree=Qdisc.degree(),
+        method="BIVARIATE_SINGULAR_YUN",
         status="BEGIN",
     )
-    g = f.gcd(f.derivative())
-    w = exact_poly_quo(f, g, "yun-initial")
+
+    # Primitive/content split with respect to U, but entirely over QQ[V].
+    PVFF = PolynomialRing(QQ, "Vff")
+    Vff = PVFF.gen()
+
+    qv_coeffs = [R(c) for c in Qdisc_v.list()]
+    max_u_degree = max((c.degree() for c in qv_coeffs if c), default=-1)
+
+    u_coeffs = []
+    for i_u in range(max_u_degree + 1):
+        u_coeffs.append(
+            PVFF([
+                QQ(c[i_u]) if i_u <= c.degree() else QQ(0)
+                for c in qv_coeffs
+            ])
+        )
+
+    nonzero_u_coeffs = [c for c in u_coeffs if c]
+    if not nonzero_u_coeffs:
+        raise ArithmeticError("cleared discriminant has no U coefficients")
+
+    u_content = nonzero_u_coeffs[0]
+    for c in nonzero_u_coeffs[1:]:
+        u_content = u_content.gcd(c)
+        if u_content.degree() == 0:
+            break
+    if u_content:
+        u_content = u_content / u_content.leading_coefficient()
+
+    primitive_u_coeffs = []
+    for c in u_coeffs:
+        if not c:
+            primitive_u_coeffs.append(PVFF.zero())
+            continue
+        q, r = c.quo_rem(u_content)
+        if r:
+            raise ArithmeticError("U-content did not divide a coefficient")
+        primitive_u_coeffs.append(PVFF(q))
+
+    # Singular-backed bivariate gcd over QQ[U,V].
+    BUV = PolynomialRing(QQ, names=("Uff", "Vff2"), order="degrevlex")
+    Uff, Vff2 = BUV.gens()
+
+    Fbi = BUV.zero()
+    for i_u, coeff_v in enumerate(primitive_u_coeffs):
+        for j_v, coeff in enumerate(coeff_v.list()):
+            if coeff:
+                Fbi += QQ(coeff) * Uff**i_u * Vff2**j_v
+
+    if Fbi.degree(Uff) != max_u_degree:
+        raise ArithmeticError(
+            f"bivariate transpose changed U degree "
+            f"{max_u_degree}->{Fbi.degree(Uff)}"
+        )
+
+    dFbi = Fbi.derivative(Uff)
+    Gbi = Fbi.gcd(dFbi)
+
+    def bivar_quo(left, right, label):
+        q, r = BUV(left).quo_rem(BUV(right))
+        if r:
+            raise ArithmeticError(
+                f"{label}: bivariate quotient has nonzero remainder"
+            )
+        return BUV(q)
+
+    Wbi = bivar_quo(Fbi, Gbi, "yun-initial-bivariate")
+
     log(
         "QUARTIC_GCD",
-        gcd_degree=g.degree(),
-        squarefree_head_degree=w.degree(),
+        gcd_U_degree=Gbi.degree(Uff),
+        gcd_V_degree=Gbi.degree(Vff2),
+        squarefree_head_U_degree=Wbi.degree(Uff),
+        method="BIVARIATE_SINGULAR_YUN",
         status="PASS",
     )
 
-    odd_part = UR.one()
-    square_poly = UR.one()
+    odd_bi = BUV.one()
+    square_bi = BUV.one()
     multiplicities = []
-    i = 1
+    i_mult = 1
 
-    while w.degree() > 0:
-        y_gcd = w.gcd(g)
-        z_i = exact_poly_quo(w, y_gcd, f"yun-z-{i}")
+    while Wbi.degree(Uff) > 0:
+        Ybi = Wbi.gcd(Gbi)
+        Zbi = bivar_quo(Wbi, Ybi, f"yun-z-bivariate-{i_mult}")
 
-        if z_i.degree() > 0:
-            multiplicities.append(i)
-            if i % 2:
-                odd_part *= z_i
-            half = i // 2
+        if Zbi.degree(Uff) > 0:
+            multiplicities.append(i_mult)
+            if i_mult % 2:
+                odd_bi *= Zbi
+            half = i_mult // 2
             if half:
-                square_poly *= z_i**half
+                square_bi *= Zbi**half
 
-        w = y_gcd
-        g = exact_poly_quo(g, y_gcd, f"yun-g-{i}")
-        i += 1
+        Wbi = Ybi
+        Gbi = bivar_quo(Gbi, Ybi, f"yun-g-bivariate-{i_mult}")
+        i_mult += 1
 
-    if g.degree() > 0:
+    if Gbi.degree(Uff) > 0:
         raise ArithmeticError(
-            f"Yun decomposition ended with residual gcd degree {g.degree()}"
+            f"bivariate Yun ended with residual U-degree {Gbi.degree(Uff)}"
         )
 
-    quartic = UR((numerator_lc / denom_unit) * odd_part)
+    recon_bi = odd_bi * square_bi**2
+    recon_unit, recon_rem = Fbi.quo_rem(recon_bi)
+    if recon_rem:
+        raise ArithmeticError("bivariate Yun reconstruction has remainder")
+    if recon_unit.degree(Uff) > 0 or recon_unit.degree(Vff2) > 0:
+        raise ArithmeticError(
+            "bivariate Yun reconstruction left a nonconstant unit"
+        )
 
-    if Qdisc != UR(numerator_lc * odd_part * square_poly**2):
-        raise ArithmeticError("Yun numerator reconstruction failed")
+    def bivar_to_ur(poly):
+        by_u = {}
+        for exponent, coeff in poly.dict().items():
+            i_u, j_v = exponent
+            by_u.setdefault(i_u, {})[j_v] = QQ(coeff)
+        if not by_u:
+            return UR.zero()
+        max_i = max(by_u)
+        coeffs = []
+        for i_u in range(max_i + 1):
+            terms = by_u.get(i_u, {})
+            coeffs.append(
+                VF(sum(
+                    coeff * V**j_v
+                    for j_v, coeff in terms.items()
+                ))
+            )
+        return UR(coeffs)
 
-    square_factor = UK(square_poly) / UK(denom_monic**2)
+    odd_ur = bivar_to_ur(odd_bi)
+    square_ur = bivar_to_ur(square_bi)
+    if not odd_ur or not square_ur:
+        raise ArithmeticError("empty Yun odd/square factor")
+
+    odd_monic = UR(odd_ur / odd_ur.leading_coefficient())
+    square_monic = UR(square_ur / square_ur.leading_coefficient())
+
+    # Exact QQ[U,V] reconstruction above already proves the square-class.
+    # Avoid re-expanding a degree-78 square in QQ(V)[U].
+    log(
+        "QUARTIC_VERIFY_SQUARE",
+        odd_degree=odd_monic.degree(),
+        square_degree=square_monic.degree(),
+        method="LEADING_COEFFICIENT_CERTIFICATE",
+        status="BEGIN",
+    )
+
+    content_vf = VF(sum(
+        QQ(c) * V**j
+        for j, c in enumerate(u_content.list())
+        if c
+    ))
+    recon_scalar = QQ(recon_unit.constant_coefficient())
+
+    expected_numerator_lc = VF(
+        content_vf
+        * recon_scalar
+        * odd_ur.leading_coefficient()
+        * square_ur.leading_coefficient()**2
+    )
+
+    if expected_numerator_lc != numerator_lc:
+        raise ArithmeticError(
+            "fraction-free Yun leading-coefficient certificate failed"
+        )
+
+    if (
+        int(odd_monic.degree()) + 2 * int(square_monic.degree())
+        != int(Qdisc.degree())
+    ):
+        raise ArithmeticError(
+            "fraction-free Yun degree reconstruction failed"
+        )
+
+    log(
+        "QUARTIC_VERIFY_SQUARE",
+        odd_degree=odd_monic.degree(),
+        square_degree=square_monic.degree(),
+        method="LEADING_COEFFICIENT_CERTIFICATE",
+        status="PASS",
+    )
+
+    quartic = UR((numerator_lc / denom_unit) * odd_monic)
+    square_factor = UK(square_monic) / UK(denom_monic**2)
 
     log(
         "QUARTIC_YUN",
+        method="BIVARIATE_SINGULAR_YUN",
         pieces=len(multiplicities),
         multiplicities=",".join(map(str, multiplicities)),
-        square_degree=square_poly.degree(),
+        square_degree=square_monic.degree(),
         quartic_degree=quartic.degree(),
         status="PASS",
     )
@@ -2104,13 +2334,208 @@ if quartic_degree != 4:
     raise ArithmeticError(
         f"exact q24 quartic degree {quartic_degree}, expected modular degree 4"
     )
-log("QUARTIC", method="DIRECT_NUMERATOR_YUN", degree=quartic_degree, status="PASS")
+log("QUARTIC", method="BIVARIATE_SINGULAR_YUN", degree=quartic_degree, status="PASS")
 
+log("INVARIANTS", status="BEGIN")
 I, J = binary_quartic_invariants(quartic)
 jacA = VF(-27) * VF(I)
 jacB = VF(-27) * VF(J)
+log("INVARIANTS", status="PASS")
 
-classification = classify_finite_short_weierstrass_fibres(VR, jacA, jacB)
+def fast_classify_finite_short_weierstrass(base_ring, coefficient_a, coefficient_b):
+    base_field = base_ring.fraction_field()
+    coefficient_a = base_field(coefficient_a)
+    coefficient_b = base_field(coefficient_b)
+    discriminant = -16 * (
+        4 * coefficient_a**3 + 27 * coefficient_b**2
+    )
+    if not discriminant:
+        raise ValueError("short Weierstrass model is singular")
+
+    # One support polynomial is enough:
+    # poles of A/B plus zero/pole support of Delta.
+    support_inputs = (
+        base_ring(coefficient_a.denominator()),
+        base_ring(coefficient_b.denominator()),
+        base_ring(discriminant.numerator()),
+        base_ring(discriminant.denominator()),
+    )
+
+    support = base_ring.one()
+    for poly in support_inputs:
+        if poly.degree() <= 0:
+            continue
+        deriv = poly.derivative()
+        sf = poly
+        if deriv:
+            repeated = poly.gcd(deriv)
+            q, r = poly.quo_rem(repeated)
+            if r:
+                raise ArithmeticError("squarefree support quotient failed")
+            sf = base_ring(q)
+        common = support.gcd(sf)
+        q, r = sf.quo_rem(common)
+        if r:
+            raise ArithmeticError("support lcm quotient failed")
+        support *= q
+
+    if support.degree() > 0:
+        support /= support.leading_coefficient()
+
+    log(
+        "CHILD_SUPPORT",
+        degree=support.degree(),
+        method="SINGLE_SQUAREFREE_SUPPORT_FACTOR",
+        status="BEGIN",
+    )
+    factorization = support.factor() if support.degree() > 0 else ()
+    factors = tuple(f for f, unused_e in factorization)
+    log(
+        "CHILD_SUPPORT",
+        degree=support.degree(),
+        factors=len(factors),
+        method="SINGLE_SQUAREFREE_SUPPORT_FACTOR",
+        status="PASS",
+    )
+
+    def poly_order(poly, factor):
+        poly = base_ring(poly)
+        if not poly:
+            raise ArithmeticError("valuation requested on zero polynomial")
+        n = 0
+        while poly.degree() >= factor.degree():
+            q, r = poly.quo_rem(factor)
+            if r:
+                break
+            n += 1
+            poly = base_ring(q)
+        return n
+
+    def rf_order(value, factor):
+        value = base_field(value)
+        return (
+            poly_order(value.numerator(), factor)
+            - poly_order(value.denominator(), factor)
+        )
+
+    scaling_unit = base_field.one()
+    finite_data = []
+    for factor in sorted(factors, key=str):
+        raw_a = rf_order(coefficient_a, factor)
+        raw_b = rf_order(coefficient_b, factor)
+        raw_delta = rf_order(discriminant, factor)
+        scaling = min(raw_a // 4, raw_b // 6)
+        scaling_unit *= base_field(factor)**(-scaling)
+        finite_data.append({
+            "factor": factor,
+            "raw_orders": (raw_a, raw_b, raw_delta),
+            "scaling": scaling,
+        })
+
+    minimal_a_rf = coefficient_a * scaling_unit**4
+    minimal_b_rf = coefficient_b * scaling_unit**6
+    minimal_delta_rf = discriminant * scaling_unit**12
+
+    if any(
+        value.denominator() != 1
+        for value in (minimal_a_rf, minimal_b_rf, minimal_delta_rf)
+    ):
+        raise ArithmeticError(
+            "fast finite minimization did not clear all base denominators"
+        )
+
+    minimal_a = base_ring(minimal_a_rf.numerator())
+    minimal_b = base_ring(minimal_b_rf.numerator())
+    minimal_delta = base_ring(minimal_delta_rf.numerator())
+
+    finite_fibres = []
+    root_rank = ZZ(0)
+    euler_number = ZZ(0)
+    root_determinant = ZZ(1)
+
+    for item in finite_data:
+        factor = item["factor"]
+        orders = (
+            poly_order(minimal_a, factor),
+            poly_order(minimal_b, factor),
+            poly_order(minimal_delta, factor),
+        )
+        item["minimal_orders"] = orders
+
+        if min(orders[0] // 4, orders[1] // 6) != 0:
+            raise ArithmeticError(
+                "fast finite minimization left a fourth/sixth-power factor"
+            )
+        if orders[2] == 0:
+            continue
+
+        rank, euler, determinant, symbol = kodaira_data_from_short_orders(
+            *orders
+        )
+        degree = ZZ(factor.degree())
+        finite_fibres.append({
+            "factor": factor,
+            "degree": int(degree),
+            "raw_orders": tuple(map(int, item["raw_orders"])),
+            "scaling": int(item["scaling"]),
+            "minimal_orders": tuple(map(int, orders)),
+            "kodaira": symbol,
+            "root_rank": int(rank),
+            "euler_number": int(euler),
+            "root_determinant": int(determinant),
+        })
+        root_rank += degree * rank
+        euler_number += degree * euler
+        root_determinant *= ZZ(determinant)**degree
+
+    infinity_raw = tuple(
+        -value.degree()
+        for value in (minimal_a, minimal_b, minimal_delta)
+    )
+    infinity_scaling = min(
+        infinity_raw[0] // 4,
+        infinity_raw[1] // 6,
+    )
+    infinity_normalized = tuple(
+        infinity_raw[i] - (4, 6, 12)[i] * infinity_scaling
+        for i in range(3)
+    )
+
+    return {
+        "finite_minimization": {
+            "minimal_a": minimal_a,
+            "minimal_b": minimal_b,
+            "minimal_discriminant": minimal_delta,
+            "scaling_unit": scaling_unit,
+            "finite_places": tuple(finite_data),
+            "infinity": {
+                "raw_orders": infinity_raw,
+                "scaling": infinity_scaling,
+                "normalized_orders": infinity_normalized,
+            },
+        },
+        "finite_fibres": tuple(finite_fibres),
+        "finite_root_rank": int(root_rank),
+        "finite_euler_number": int(euler_number),
+        "finite_root_determinant": int(root_determinant),
+        "infinity_boundary": {
+            "raw_orders": infinity_raw,
+            "scaling": infinity_scaling,
+            "normalized_orders": infinity_normalized,
+        },
+    }
+
+log(
+    "CHILD_CLASSIFICATION",
+    method="SINGLE_SQUAREFREE_SUPPORT_FACTOR",
+    status="BEGIN",
+)
+classification = fast_classify_finite_short_weierstrass(VR, jacA, jacB)
+log(
+    "CHILD_CLASSIFICATION",
+    method="SINGLE_SQUAREFREE_SUPPORT_FACTOR",
+    status="PASS",
+)
 root_rank = int(classification["finite_root_rank"])
 root_euler = int(classification["finite_euler_number"])
 root_det = int(classification["finite_root_determinant"])
@@ -2214,7 +2639,10 @@ payload = {
         "kernel_dimension": 2,
         "geometric_fibre_twist": -8,
         "component_ledger": component_ledger,
-        "redundant_exact_condition_rows": int(all_exact.nrows()),
+        "redundant_exact_condition_rows": int(verified_rows),
+        "generic_audit_components": int(verified_components),
+        "generic_audit_charts": int(verified_charts),
+        "generic_audit_fallbacks": int(audit_fallbacks),
         "plane_2x56": [
             [str(v) for v in row] for row in final56.rows()
         ],

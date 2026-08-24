@@ -31179,8 +31179,8 @@
       "replaced_by": [],
       "priority": "reference"
     },
-  {
-    "id": "EC-R20",
+    {
+      "id": "EC-R20",
       "kind": "example",
       "state": "proved",
       "title": "Low-conductor rank-at-least-20 Fermigier near miss",
@@ -31207,39 +31207,39 @@
       "consumers": [],
       "invalidates_assumptions": [],
       "replaced_by": [],
-    "priority": "reference"
-  },
-  {
-    "id": "EC-R20-IC245",
-    "kind": "example",
-    "state": "proved",
-    "title": "ICARM curve 245 has rank at least 20 and log conductor below 151",
-    "scope": "For public ICARM curve 245 with global minimal model [1,-1,1,-25880411472355347134118026792,1606663697747901005185875883284420820193259], all 20 published rational points replay exactly. Reduction modulo each of 16 pinned good primes gives an exact rank-20 matrix over F_2, while good reduction at 7 rules out rational 2-torsion; hence the points are independent over Q. PARI/GP gives exact conductor 272066437942638823321634957004224153562929337633497250319389959310 and root number +1. The elementary bound N<10^66 and ln(10)<231/100 proves ln(N)<152.46<182.72 (numerically 150.668907152237...). This improves the certified low-conductor rank-at-least-20 benchmark but remains one point short. The recorded standard and alternate-cover searches are bounded experiments and do not prove rank 20 exactly or exclude a twenty-first point.",
-    "canonical_source": "elliptic-curves/notes/ICARM_CURVE245_RANK20.md",
-    "dependencies": [
-      "external: public ICARM curve 245 model and point data",
-      "external: PARI/GP exact elliptic-curve arithmetic"
-    ],
-    "checker": "elliptic-curves/cas/verify_icarm_curve245_rank20.py",
-    "proof_type": "exact_modular",
-    "independent_replay": true,
-    "formal_verification": false,
-    "external_review": false,
-    "artifact_hash": "sha256:6a08b9214e49f9a92befede2452ab3a33e3a3be9d578640dfc2ca86a2a57d579",
-    "software_lock": [
-      ".python-version"
-    ],
-    "supersedes_notes": [],
-    "supersedes": [],
-    "closes_problems": [],
-    "narrows_problems": [
-      "OP-EC-NEXT"
-    ],
-    "consumers": [],
-    "invalidates_assumptions": [],
-    "replaced_by": [],
-    "priority": "reference"
-  },
+      "priority": "reference"
+    },
+    {
+      "id": "EC-R20-IC245",
+      "kind": "example",
+      "state": "proved",
+      "title": "ICARM curve 245 has rank at least 20 and log conductor below 151",
+      "scope": "For public ICARM curve 245 with global minimal model [1,-1,1,-25880411472355347134118026792,1606663697747901005185875883284420820193259], all 20 published rational points replay exactly. Reduction modulo each of 16 pinned good primes gives an exact rank-20 matrix over F_2, while good reduction at 7 rules out rational 2-torsion; hence the points are independent over Q. PARI/GP gives exact conductor 272066437942638823321634957004224153562929337633497250319389959310 and root number +1. The elementary bound N<10^66 and ln(10)<231/100 proves ln(N)<152.46<182.72 (numerically 150.668907152237...). This improves the certified low-conductor rank-at-least-20 benchmark but remains one point short. The recorded standard and alternate-cover searches are bounded experiments and do not prove rank 20 exactly or exclude a twenty-first point.",
+      "canonical_source": "elliptic-curves/notes/ICARM_CURVE245_RANK20.md",
+      "dependencies": [
+        "external: public ICARM curve 245 model and point data",
+        "external: PARI/GP exact elliptic-curve arithmetic"
+      ],
+      "checker": "elliptic-curves/cas/verify_icarm_curve245_rank20.py",
+      "proof_type": "exact_modular",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:6a08b9214e49f9a92befede2452ab3a33e3a3be9d578640dfc2ca86a2a57d579",
+      "software_lock": [
+        ".python-version"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
     {
       "id": "EC-KIH14",
       "kind": "reproduction",
@@ -31515,14 +31515,14 @@
       "external_review": false,
       "artifact_hash": "sha256:0bb27f766dc0dcc35f73c7bed2cdfb887b4fe8c58b0c5258b64c1fd0229e37e2",
       "software_lock": [
-    "elkies-k3/scripts/assemble_h92_q6_global_rr.sage",
-    "elkies-k3/scripts/compile_h3_first_q6_preflight.sage",
+        "elkies-k3/scripts/assemble_h92_q6_global_rr.sage",
+        "elkies-k3/scripts/compile_h3_first_q6_preflight.sage",
         "elkies-k3/scripts/derive_h92_q6_actual_e7_all_edge_module.sage",
         "elkies-k3/scripts/certify_h92_q6_actual_resolved_rr_cover.sage",
         "elkies-k3/scripts/eliminate_h92_q6_global_pencil.sage",
         "elkies-k3/scripts/audit_h92_q6_pencil_marked_section_degrees.sage",
-    "elkies-k3/scripts/certify_h92_q6_child_jacobian.sage",
-    "elkies-k3/scripts/derive_h92_q6_child_zero_section.sage",
+        "elkies-k3/scripts/certify_h92_q6_child_jacobian.sage",
+        "elkies-k3/scripts/derive_h92_q6_child_zero_section.sage",
         "elkies-k3/scripts/elliptic_neighbor_compiler.sage",
         "elkies-k3/scripts/certify_h3_q6_actual_neighbor_hop.sage"
       ],
@@ -32404,7 +32404,10 @@
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
-      "consumers": ["REPRODUCE.md", "elkies-k3/BISECTION_COLLISION_SEARCH.md"],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+      ],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
@@ -32906,18 +32909,29 @@
       "title": "Corrected finite q8 module for the Weyl-nef child fibre",
       "scope": "The q8 orbit certificate distinguishes the dominant D13 representative from the Weyl-nef q8 fibre by four root reflections, although their Mordell--Weil projection is the same. For the nef representative, the E6 vertical cycle is (2,3,4,3,2,2) with degrees (-1,0,0,0,-1,0). Both chart identifications give the same IV* cycle (2,2,2,3,3,4) and complete ideal (u^2,X,Y), of colength two; thus the II*/IV* chord blocks have ranks two and two. In q=(m-p)/h, q vanishes in both cusp quotients, so the exact finite module is <(1,0),(0,f_II*^2*f_IV*^2)>, with CRT degree four. In q_regular=q-R/Nx this transports to <(1,lift(R/Nx)),(0,f_II*^2*f_IV*^2)>. These are finite local data for the nef class only; they do not derive its infinity lattice, a global q8/D13/rootless pencil, bisection cover, extension collision, or rank 18/19 family.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
-      "dependencies": ["EC-K3-H3-Q8-CHILD-MARKING"],
+      "dependencies": [
+        "EC-K3-H3-Q8-CHILD-MARKING"
+      ],
       "checker": "elkies-k3/scripts/derive_h92_q6_child_q8_finite_q_module_qq.sage",
       "proof_type": "exact_symbolic",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
       "artifact_hash": "sha256:db48c3351faa020783bd91e88e1bea047f94b786dc89055ea1d02cb3d85b2400",
-      "software_lock": ["elkies-k3/scripts/derive_h92_q6_child_q8_physical_root_target.sage", "elkies-k3/scripts/derive_h92_q6_child_q8_ivstar_vertical_ideal.sage", "elkies-k3/scripts/derive_h92_q6_child_q8_additive_chord_blocks.sage", "elkies-k3/scripts/derive_h92_q6_child_q8_finite_q_module_qq.sage", "elkies-k3/scripts/derive_h92_q6_child_q8_q_regular_finite_module_qq.sage"],
+      "software_lock": [
+        "elkies-k3/scripts/derive_h92_q6_child_q8_physical_root_target.sage",
+        "elkies-k3/scripts/derive_h92_q6_child_q8_ivstar_vertical_ideal.sage",
+        "elkies-k3/scripts/derive_h92_q6_child_q8_additive_chord_blocks.sage",
+        "elkies-k3/scripts/derive_h92_q6_child_q8_finite_q_module_qq.sage",
+        "elkies-k3/scripts/derive_h92_q6_child_q8_q_regular_finite_module_qq.sage"
+      ],
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
-      "consumers": ["REPRODUCE.md", "elkies-k3/BISECTION_COLLISION_SEARCH.md"],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/BISECTION_COLLISION_SEARCH.md"
+      ],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
@@ -33725,11 +33739,48 @@
       "formal_verification": false,
       "external_review": false,
       "artifact_hash": "sha256:3d3d425b933a3125b39123dc28a3a40c3e35fd195e4bc3a27237da80da92360c",
-      "software_lock": ["elkies-k3/scripts/lift_q24_structured_newton.sage", "artifacts/local/elkies-k3/q8-q24-horizontal-section-qq.json"],
+      "software_lock": [
+        "elkies-k3/scripts/lift_q24_structured_newton.sage",
+        "artifacts/local/elkies-k3/q8-q24-horizontal-section-qq.json"
+      ],
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
-      "consumers": [],
+      "consumers": [
+        "EC-K3-H3-Q24-QQ-D12"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-Q24-QQ-D12",
+      "kind": "example",
+      "state": "proved",
+      "title": "Exact H3 q24 orbit85 neighbour over QQ with D12/MW5 child",
+      "scope": "On the exact H3 D13/MW4 parent and selected orbit85 q24 horizontal section, the resolved component-valuation Riemann--Roch compiler gives ambient dimension 56, smooth collision rank 48, post-collision dimension 8, six resolved component conditions, and a two-dimensional kernel. Exact compilation gives a degree-four quartic, and the child classification has root rank 12, root determinant 4, Euler number 24, and Mordell--Weil rank 5; the modular plane/quartic/Jacobian signature also passes. This proves the selected equation-level D13/MW4 -> D12/MW5 q24 hop. It does not construct the later D12/MW5 -> A11/MW6 q6/orbit42 equation, the remaining corridor hops, or the final specialization transport. This consumes EC-K3-H3-Q24-EXACT-SECTION.",
+      "canonical_source": "REPRODUCE.md",
+      "dependencies": [
+        "EC-K3-H3-Q24-EXACT-SECTION",
+        "EC-K3-H3-D13-MW17-LATTICE-CHAIN"
+      ],
+      "checker": "elkies-k3/scripts/lift_q24_d13_to_d12_resolved_rr_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c863c522c4d6899f67dc5357bb7928fdde686391d3922a7f308af597bca309ab",
+      "software_lock": [
+        "elkies-k3/scripts/lift_q24_d13_to_d12_resolved_rr_qq.sage",
+        "artifacts/local/elkies-k3/q24-d13-to-d12-component-valuation-qq.json",
+        "artifacts/local/elkies-k3/q8-q24-horizontal-section-qq.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "OP-EC-NEXT"
+      ],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
@@ -33815,20 +33866,21 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Elliptic rank-31, exact-rank, and low-conductor continuation",
-      "scope": "ECR30 closes the original rank-at-least-30 branch. Continue in three exact directions: prove that the public 2026 curve has rank exactly 30 or exhibit a higher-rank curve; find a curve with rank at least 21 and natural-log conductor below 182.72, with EC-R20-IC245 as the smallest-conductor independently replayed rank-at-least-20 benchmark; and complete the reconstructed rank-17 K3 mechanism strongly enough to reproduce the historical rank-29 specialization and search beyond rank 30. EC-R20, EC-MR13, EC-MD17 and EC-MD19 remain exact lower-rank family/conductor frontiers. EC-K3-H3-SOURCE and EC-K3-H3-PTS give the exact H3 E7+E8/MW2 source and its rational base points. EC-K3-H3-Q8-QQ-D13 completes the first two equation-level neighbours through D13/MW4, while EC-K3-H3-D13-MW17-LATTICE-CHAIN certifies the eleven later nef degree-two lattice/chamber neighbours through rootless MW17. The next construction gate is the D13/MW4 -> D12/MW5 q24 equation, followed by ten further equation-level hops and specialization transport. EC-ICARM-CONSTRUCTION-FINGERPRINTS excludes curve 273 from the complete diameter-at-most-300 fixed-six-root Mestre census and from the direct forced-2-torsion Elkies--Klagsbrun model, without excluding the proposed rootless K3 descendant. The other present gates are a certified residual 2-Selmer computation for curve 273 and a twenty-first independent point on a low-conductor rank-at-least-20 family. Bounded searches and failed lifts are experiments, not upper bounds.",
+      "scope": "ECR30 closes the original rank-at-least-30 branch. Continue in three exact directions: prove that the public 2026 curve has rank exactly 30 or exhibit a higher-rank curve; find a curve with rank at least 21 and natural-log conductor below 182.72, with EC-R20-IC245 as the smallest-conductor independently replayed rank-at-least-20 benchmark; and complete the reconstructed rank-17 K3 mechanism strongly enough to reproduce the historical rank-29 specialization and search beyond rank 30. EC-R20, EC-MR13, EC-MD17 and EC-MD19 remain exact lower-rank family/conductor frontiers. EC-K3-H3-SOURCE and EC-K3-H3-PTS give the exact H3 E7+E8/MW2 source and its rational base points. EC-K3-H3-Q8-QQ-D13 completes the first two equation-level neighbours through D13/MW4, while EC-K3-H3-D13-MW17-LATTICE-CHAIN certifies the eleven later nef degree-two lattice/chamber neighbours through rootless MW17. The next construction gate is the D12/MW5 -> A11/MW6 q6/orbit42 equation, followed by nine further equation-level hops and specialization transport. EC-ICARM-CONSTRUCTION-FINGERPRINTS excludes curve 273 from the complete diameter-at-most-300 fixed-six-root Mestre census and from the direct forced-2-torsion Elkies--Klagsbrun model, without excluding the proposed rootless K3 descendant. The other present gates are a certified residual 2-Selmer computation for curve 273 and a twenty-first independent point on a low-conductor rank-at-least-20 family. Bounded searches and failed lifts are experiments, not upper bounds. The exact q24 equation checkpoint is EC-K3-H3-Q24-QQ-D12.",
       "canonical_source": "elliptic-curves/README.md",
       "dependencies": [
-      "ECR30",
-      "EC-R20",
-      "EC-R20-IC245",
-      "EC-MR13",
+        "ECR30",
+        "EC-R20",
+        "EC-R20-IC245",
+        "EC-MR13",
         "EC-MD17",
         "EC-MD19",
         "EC-K3-H3-SOURCE",
         "EC-K3-H3-PTS",
         "EC-K3-H3-Q8-QQ-D13",
         "EC-K3-H3-D13-MW17-LATTICE-CHAIN",
-        "EC-ICARM-CONSTRUCTION-FINGERPRINTS"
+        "EC-ICARM-CONSTRUCTION-FINGERPRINTS",
+        "EC-K3-H3-Q24-QQ-D12"
       ],
       "checker": null,
       "proof_type": "not-applicable",

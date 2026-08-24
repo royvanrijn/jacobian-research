@@ -15,17 +15,20 @@ decision ledger in [`CONSTRUCTION_ROUTES.md`](CONSTRUCTION_ROUTES.md).
 
 ## Current priority
 
-The **H3 source family** is the primary characteristic-zero starting point. The currently selected **H3 degree-two corridor** is one certified route from that source to the pinned recovered rootless/MW17 frame; the endpoint identification and complete inverse NS transport are now exact. The route is not proved shortest, globally optimal, or cheapest to compile. Its first two neighbours are exact at equation level:
+The **H3 source family** is the primary characteristic-zero starting point. The currently selected **H3 degree-two corridor** is one certified route from that source to the pinned recovered rootless/MW17 frame; the endpoint identification and complete inverse NS transport are now exact. The route is not proved shortest, globally optimal, or cheapest to compile. Its first three neighbours are exact at equation level:
 
 ```text
 H3 E7+E8/MW2
  --q6--> E8+E6/MW3
- --q8--> D13/MW4.
+ --q8--> D13/MW4
+ --q24 orbit85--> D12/MW5.
 ```
 
 The q8 repair found two independent bugs in the previous child-side compiler: a binary-quartic 2-cover multiplier was applied twice, and the q-frame CRT normalizer omitted the `Dx` factor of `x(S)=Nx/Dx`. After both corrections the q8 Riemann--Roch problem collapses to an exact `13 -> 2` characteristic-zero intersection and its Jacobian has one `I9*` fibre plus nine `I1`, hence `D13/MW4` exactly.
 
-The active continuation is the selected `D13/MW4 --q24--> D12/MW5` equation arrow. Its lattice/chamber divisor, marking bridge, and exact q24 horizontal section are now pinned; the section is exported as `artifacts/local/elkies-k3/q8-q24-horizontal-section-qq.json` with status `PASS_EXACT_Q24_HORIZONTAL_SECTION`. This is not yet the D12 child equation: the characteristic-zero resolved-RR pencil, binary-quartic Jacobian, and fibre classification remain to be pinned. In parallel, the other two q24 D12 children, lateral D13 presentations, and larger-q exits should be compared by equation cost rather than immediate rank growth alone.
+The selected `D13/MW4 --q24 orbit85--> D12/MW5` equation arrow is now closed. Its exact q24 horizontal section is exported as `artifacts/local/elkies-k3/q8-q24-horizontal-section-qq.json` with status `PASS_EXACT_Q24_HORIZONTAL_SECTION`, and the resolved component-valuation RR lift is exported as `artifacts/local/elkies-k3/q24-d13-to-d12-component-valuation-qq.json` with status `PASS_EXACT_Q24_D13_TO_D12_COMPONENT_VALUATION_RR`. The RR profile is `ambient=56`, `collision=48`, `post=8`, `resolved=6`, `kernel=2`; the compiled quartic has degree four and its Jacobian has root rank `12`, root determinant `4`, Euler number `24`, and MW rank `5`.
+
+The active continuation is now the selected `D12/MW5 --q6 orbit42--> A11/MW6` equation arrow. Use the exact orbit42 profile from the backward manifest: `mw=(-1,0,-1,-1,0)`, height `7`, correction `3`, `P.O=3`, fibre twist `0`, and divisor `D42=O+P+V`. Do not reuse the old correction-one, `P.O=2`, or zero-pole search assumptions.
 
 Marking warning: the pinned dominant D13 representative used by the lattice corridor and the component-nef D13 representative used by the q8 equation compiler are not the same stored 17-by-17 frame. Their exact full-NS bridge changes the embedded `U`; use the reverse-transport ledger rather than substituting one frame for the other by ADE/MW label.
 
@@ -198,6 +201,6 @@ scripts/verify_elliptic_neighbor_compiler_field_generic.sage.
 
 ## Next strategic gate
 
-For **H3**, continue the selected `D13/MW4 --q24--> D12/MW5` equation reconstruction toward R17 as the nearest certified continuation, starting from the exact q24 section rather than reopening q24 search. The next gate is the resolved-RR QQ compiler that consumes this section and produces/certifies the D12/MW5 child equation. Do not call the full suffix optimal. In parallel, score the other q24 children, lateral D13 neighbours, and higher-q exits by actual equation cost. Do not return to the historical degree-46, `true1600`, hand-built `corrected1278` q8 compilers, or failed q24 trace-interpolation path except as diagnostics.
+For **H3**, continue the selected `D12/MW5 --q6 orbit42--> A11/MW6` equation reconstruction toward R17 as the nearest certified continuation. The completed q24 D12 equation lift should be treated as the parent for this gate; do not reopen q24 search, the historical degree-46 trace interpolation path, `true1600`, or hand-built `corrected1278` q8 compilers except as diagnostics. Do not call the full suffix optimal.
 
 For **Q80**, the terminal marking/RR/equation gate is closed. Treat the direct two-parameter final-section resultants, digit-by-digit `73`-adic lift, and local-73 singularity probes as diagnostics only. Any new Q80 work should start from the exact certificates above rather than reopening the final q6 reconstruction.

@@ -1919,10 +1919,28 @@ The p-adic checkpoint is
 `PASS_Q24_STRUCTURED_HENSEL`.  The exact characteristic-zero section is
 `artifacts/local/elkies-k3/q8-q24-horizontal-section-qq.json`, with status
 `PASS_EXACT_Q24_HORIZONTAL_SECTION`; it has `deg(Z,X,Y)=(24,52,78)` and
-rational affine denominators of degrees `(48,72)`.  This proves the exact q24
-horizontal section only.  The D12 equation-level child still requires the
-resolved-RR QQ compiler, binary-quartic Jacobian, and D12/MW5 fibre
-certificate.
+rational affine denominators of degrees `(48,72)`.
+
+The D12 equation-level child is recovered from that exact section by the
+resolved component-valuation RR compiler:
+
+```bash
+sage -python elkies-k3/scripts/lift_q24_d13_to_d12_resolved_rr_qq.sage
+```
+
+Expected terminal lines include:
+
+```text
+Q24DIVVALQQ|stage=CHILD|...|root_rank=12|root_det=4|euler=24|MW=5|status=PASS_D12
+Q24DIVVALQQ|stage=MODULAR_SIGNATURE|...|plane=1|quartic=1|jacobian=1|status=PASS
+Q24DIVVALQQ_RESULT|ambient=56|collision=48|post=8|resolved=6|kernel=2|quartic=4|root_rank=12|root_det=4|euler=24|MW=5|status=PASS_EXACT_Q24_D13_TO_D12_COMPONENT_VALUATION_RR
+```
+
+The output is
+`artifacts/local/elkies-k3/q24-d13-to-d12-component-valuation-qq.json`.  This
+closes the selected `D13/MW4 --q24 orbit85--> D12/MW5` equation hop.  The next
+equation gate is the fixed `D12/MW5 --q6 orbit42--> A11/MW6` hop, with
+correction `3`, `P.O=3`, fibre twist `0`, and no zero-pole/dx4 search.
 
 The same root-adapted quotient search continues through three further
 rank-growing degree-two steps.  The selected path is reproduced by:
