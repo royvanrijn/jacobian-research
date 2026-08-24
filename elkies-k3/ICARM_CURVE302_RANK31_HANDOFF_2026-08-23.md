@@ -15,8 +15,9 @@ unconditionally. The certificate, exact point data, and arithmetic audit are:
 ```text
 elliptic-curves/cas/icarm_curve302.py
 elliptic-curves/cas/verify_icarm_curve302_rank31.py
+elliptic-curves/cas/check_icarm_curve302_rank31_pinned.py
 elliptic-curves/notes/ICARM_CURVE302_RANK31.md
-artifacts/generated-results/elliptic-curves/icarm_curve302_rank31_v1.json
+artifacts/generated-results/elliptic-curves/icarm_curve302_rank31_v1.json.gz
 ```
 
 The 31 public points have full rank in an exact product of finite quotients

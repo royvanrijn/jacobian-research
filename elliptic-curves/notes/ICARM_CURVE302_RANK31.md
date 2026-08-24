@@ -130,20 +130,26 @@ From the repository root:
 
 ```bash
 PYTHONPATH=elliptic-curves/cas \
-  .venv/bin/python elliptic-curves/cas/verify_icarm_curve302_rank31.py \
-  --verify-primality
+  .venv/bin/python elliptic-curves/cas/check_icarm_curve302_rank31_pinned.py
 
 PYTHONPATH=elliptic-curves/cas \
   .venv/bin/python elliptic-curves/cas/verify_icarm_curve302_rank31.py \
-  --check --verify-primality
+  --output artifacts/local/elliptic-curves/icarm_curve302_rank31_v1.json \
+  --verify-primality
 ```
 
-The pinned artifact is
-[`icarm_curve302_rank31_v1.json`](../../artifacts/generated-results/elliptic-curves/icarm_curve302_rank31_v1.json).
-Its SHA-256 is
+The pinned artifact is the deterministic gzip stream
+[`icarm_curve302_rank31_v1.json.gz`](../../artifacts/generated-results/elliptic-curves/icarm_curve302_rank31_v1.json.gz).
+Its compressed SHA-256 is
 
 ```text
-3be0d6fe82c58e0f9284df5d9340332944a1d906508ea986d4abe00357036991.
+fc50b4b9ec5fe1dd1fe31aa299f13d8bc3476d43f3ed98e2ade5a4fc8972aa04
+```
+
+and its decompressed JSON SHA-256 is
+
+```text
+3be0d6fe82c58e0f9284df5d9340332944a1d906508ea986d4abe00357036991
 ```
 
 ## Claim boundary
