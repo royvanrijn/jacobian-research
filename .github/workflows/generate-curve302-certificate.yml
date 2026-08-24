@@ -1,0 +1,36 @@
+name: Generate curve 302 certificate
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - elliptic-curves/cas/icarm_curve302.py
+      - elliptic-curves/cas/verify_icarm_curve302_rank31.py
+      - .github/workflows/generate-curve302-certificate.yml
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.5'
+      - name: Generate and verify exact certificate
+        run: |
+          PYTHONPATH=elliptic-curves/cas python elliptic-curves/cas/verify_icarm_curve302_rank31.py
+          PYTHONPATH=elliptic-curves/cas python elliptic-curves/cas/verify_icarm_curve302_rank31.py --check
+          echo '3be0d6fe82c58e0f9284df5d9340332944a1d906508ea986d4abe00357036991  artifacts/generated-results/elliptic-curves/icarm_curve302_rank31_v1.json' | sha256sum -c -
+      - name: Commit pinned certificate
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- artifacts/generated-results/elliptic-curves/icarm_curve302_rank31_v1.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Pin ICARM curve 302 rank-31 certificate'
+          git push
