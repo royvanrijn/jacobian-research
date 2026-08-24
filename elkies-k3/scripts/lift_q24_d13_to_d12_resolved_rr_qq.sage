@@ -44,10 +44,11 @@ Terminal success
 import argparse
 import json
 import time
+from math import factorial
 from pathlib import Path
 
 from sage.all import (
-    QQ, ZZ, PolynomialRing, gcd, identity_matrix, lcm, matrix
+    GF, QQ, ZZ, PolynomialRing, gcd, identity_matrix, lcm, matrix
 )
 
 
@@ -142,6 +143,8 @@ classify_finite_short_weierstrass_fibres = core[
     "classify_finite_short_weierstrass_fibres"
 ]
 kodaira_data_from_short_orders = core["kodaira_data_from_short_orders"]
+pencil_chord_solution = core["pencil_chord_solution"]
+chord_discriminant = core["chord_discriminant"]
 
 started = time.monotonic()
 
@@ -439,73 +442,154 @@ if center_count != 12 or geometric_components != 13:
         f"{center_count}/{geometric_components}, expected 12/13"
     )
 
+
 records = {r["label"]: r for r in center_records}
 
-# C01,C02,C04,C06 are labels in the modular DFS chronology, not intrinsic
-# geometric names. Over QQ sibling branches can be enumerated differently.
-# Intrinsically these are the first four centres on the long D13 arm.
-parent_of = {}
-for parent in center_records:
-    for child_info in parent["children"]:
-        target_path = str(child_info["path"])
-        matches = [
-            rec["label"] for rec in center_records
-            if str(rec["path"]) == target_path
-        ]
-        if len(matches) != 1:
+# Exact QQ DFS labels are not intrinsic.  Match the exact resolution tree
+# to the certified GF(100003) tree by reducing every projective tangent
+# direction.  GF(100003) is used ONLY for geometric identification.
+GEOM_PRIME = ZZ(100003)
+MOD_RESOLUTION_PATH = LOCAL / "q24-i9star-resolution-mod-100003.json"
+MOD_CLUSTER_PATH = LOCAL / "q24-i9star-effective-cluster-mod-100003.json"
+MOD_RR_PATH = LOCAL / "q24-d12-resolved-cluster-rr-mod-100003.json"
+
+for geom_path in (MOD_RESOLUTION_PATH, MOD_CLUSTER_PATH):
+    if not geom_path.exists():
+        raise SystemExit(
+            f"Missing geometric prerequisite {geom_path}; "
+            "cannot identify exact infinitely-near centres safely"
+        )
+
+mod_resolution = json.loads(MOD_RESOLUTION_PATH.read_text())
+mod_cluster = json.loads(MOD_CLUSTER_PATH.read_text())
+
+assert mod_resolution["status"] == "PASS_EXPLICIT_MODP_I9STAR_D13_COMPONENT_RESOLUTION"
+assert mod_cluster["status"] in (
+    "PASS_H3_Q24_EFFECTIVE_I9STAR_CLUSTER",
+    "CANDIDATE_H3_Q24_EFFECTIVE_I9STAR_CLUSTER",
+)
+
+Fp_geom = GF(GEOM_PRIME)
+
+def _red_geom(q):
+    q = QQ(q)
+    d = ZZ(q.denominator())
+    if d % GEOM_PRIME == 0:
+        raise ZeroDivisionError(
+            f"geometry denominator divisible by {GEOM_PRIME}: {q}"
+        )
+    return Fp_geom(ZZ(q.numerator())) / Fp_geom(d)
+
+def _canon_mod_direction(direction):
+    vals = [_red_geom(v) for v in direction]
+    pivot = next((i for i,v in enumerate(vals) if v), None)
+    if pivot is None:
+        raise ArithmeticError("zero projective direction")
+    scale = vals[pivot]**-1
+    return tuple(int(v*scale) for v in vals)
+
+exact_by_path = {str(r["path"]): r for r in center_records}
+mod_centers = list(mod_resolution["centers"])
+mod_by_path = {str(r["path"]): r for r in mod_centers}
+
+exact_root = exact_by_path["root"]
+mod_root = mod_by_path["root"]
+
+exact_to_mod = {str(exact_root["label"]): str(mod_root["label"])}
+queue = [(exact_root, mod_root)]
+
+while queue:
+    ep, mp = queue.pop(0)
+
+    mod_edges = {}
+    for edge in mp.get("children", []):
+        kind = str(edge["selected_chart"])
+        direction = tuple(map(int, edge["direction"]))
+        child_path = (
+            f"{mp['path']}/{mp['label']}:{kind}:"
+            + ",".join(map(str, direction))
+        )
+        if child_path not in mod_by_path:
+            raise ArithmeticError(f"missing modular child path {child_path}")
+        mod_edges[(kind, direction)] = mod_by_path[child_path]
+
+    for edge in ep.get("children", []):
+        kind = str(edge["selected_chart"])
+        direction = _canon_mod_direction(edge["direction"])
+        key = (kind, direction)
+        if key not in mod_edges:
             raise ArithmeticError(
-                f"could not identify unique child for {parent['label']} path={target_path}: {matches}"
+                f"no modular counterpart for exact edge "
+                f"{ep['label']}:{kind}:{direction}; available={sorted(mod_edges)}"
             )
-        child_label = matches[0]
-        if child_label in parent_of and parent_of[child_label] != parent["label"]:
-            raise ArithmeticError(f"centre {child_label} has multiple parents")
-        parent_of[child_label] = parent["label"]
+        exact_child_path = str(edge["path"])
+        if exact_child_path not in exact_by_path:
+            raise ArithmeticError(f"missing exact child path {exact_child_path}")
+        ec = exact_by_path[exact_child_path]
+        mc = mod_edges[key]
+        exact_to_mod[str(ec["label"])] = str(mc["label"])
+        queue.append((ec, mc))
 
-max_depth = max(int(r["depth"]) for r in center_records)
-deepest = [r for r in center_records if int(r["depth"]) == max_depth]
-if not deepest:
-    raise ArithmeticError("exact I9* resolution has no deepest centre")
-
-def ancestor_chain(label):
-    chain = []
-    cur = str(label)
-    while True:
-        chain.append(cur)
-        if cur not in parent_of:
-            break
-        cur = parent_of[cur]
-    chain.reverse()
-    return chain
-
-deep_chains = [ancestor_chain(r["label"]) for r in deepest]
-if any(len(chain) < 4 for chain in deep_chains):
-    raise ArithmeticError(f"D13 long arm is unexpectedly short: {deep_chains}")
-
-prefix4 = tuple(deep_chains[0][:4])
-if any(tuple(chain[:4]) != prefix4 for chain in deep_chains[1:]):
+if len(exact_to_mod) != len(center_records):
     raise ArithmeticError(
-        f"deep D13 branches disagree before selected q24 cluster: {deep_chains}"
+        f"incomplete exact/modular centre map "
+        f"{len(exact_to_mod)}/{len(center_records)}"
     )
 
-SELECTED_CLUSTER = tuple(zip(prefix4, (2, 2, 2, 3)))
-MODULAR_CLUSTER_LABELS = ("C01", "C02", "C04", "C06")
+mod_to_exact = {}
+for exact_label, mod_label in exact_to_mod.items():
+    if mod_label in mod_to_exact and mod_to_exact[mod_label] != exact_label:
+        raise ArithmeticError(f"noninjective modular centre map at {mod_label}")
+    mod_to_exact[mod_label] = exact_label
 
-selected_depths = tuple(int(records[name]["depth"]) for name, _ in SELECTED_CLUSTER)
-if selected_depths != (0, 1, 2, 3):
-    raise ArithmeticError(
-        f"selected long-arm depths are {selected_depths}, expected (0,1,2,3)"
-    )
+mod_plan = [
+    (str(row["center"]), int(row["additional_point_order"]))
+    for row in mod_cluster["common_nonzero_centre_plan"]
+]
+assert mod_plan == [("C01",2),("C02",2),("C04",2),("C06",3)]
+
+SELECTED_CLUSTER = tuple(
+    (mod_to_exact[mod_label], order)
+    for mod_label, order in mod_plan
+)
 
 print(
     "Q24D12QQ_CLUSTER_MAP|"
     + "|".join(
         f"{mod}->{exact}:{order}"
-        for mod, (exact, order)
-        in zip(MODULAR_CLUSTER_LABELS, SELECTED_CLUSTER)
+        for (mod,order),(exact,unused)
+        in zip(mod_plan, SELECTED_CLUSTER)
     )
-    + "|status=PASS_INTRINSIC_LONG_ARM",
+    + "|method=REDUCE_PROJECTIVE_DIRECTIONS_MOD_100003"
+    + "|status=PASS_CERTIFIED_GEOMETRY_MAP",
     flush=True,
 )
+
+# Optional modular resolved-RR ledger.  If present, every exact local rank
+# must replay the modular one.
+expected_mod_ledger = {}
+if MOD_RR_PATH.exists():
+    try:
+        mod_rr = json.loads(MOD_RR_PATH.read_text())
+        expected_mod_ledger = {
+            str(row["center"]): row
+            for row in mod_rr.get("resolved_cluster", {}).get(
+                "condition_ledger", []
+            )
+        }
+        print(
+            "Q24D12QQ_MODULAR_SHADOW|"
+            f"centers={len(expected_mod_ledger)}|"
+            f"artifact={MOD_RR_PATH.relative_to(ROOT)}|status=LOADED",
+            flush=True,
+        )
+    except Exception as exc:
+        print(
+            "Q24D12QQ_MODULAR_SHADOW|"
+            f"status=IGNORED|reason={type(exc).__name__}:{exc}",
+            flush=True,
+        )
+        expected_mod_ledger = {}
 
 stamp(
     "I9_RESOLUTION",
@@ -514,9 +598,30 @@ stamp(
     centers=center_count,
     components=geometric_components,
     split=",".join(split_centers),
-    cluster=",".join(f"{name}:{order}" for name, order in SELECTED_CLUSTER),
+    cluster=",".join(
+        f"{exact_to_mod[name]}->{name}:{order}"
+        for name,order in SELECTED_CLUSTER
+    ),
     status="PASS",
 )
+
+def primitive_integer_basis(M):
+    rows = []
+    for row in M.rows():
+        den = ZZ.one()
+        for value in row:
+            den = lcm(den, ZZ(QQ(value).denominator()))
+        ints = [ZZ(QQ(value) * den) for value in row]
+        content = ZZ.zero()
+        for value in ints:
+            content = gcd(content, abs(value))
+        if content > 1:
+            ints = [value // content for value in ints]
+        pivot = next((value for value in ints if value), ZZ.zero())
+        if pivot < 0:
+            ints = [-value for value in ints]
+        rows.append([QQ(value) for value in ints])
+    return matrix(QQ, rows)
 
 
 # ---------------------------------------------------------------------------
@@ -528,28 +633,183 @@ stamp(
 # ---------------------------------------------------------------------------
 modulus = Z**2
 stamp("COLLISION_INVERSE", status="BEGIN")
-Xinv = X.inverse_mod(modulus)
-stamp("COLLISION_INVERSE", status="PASS")
+INV_CACHE = LOCAL / "q24-xinv-mod-z2-qq.json"
+Xinv = None
 
-A_columns = [((U**i) * Y * Xinv) % modulus for i in range(16)]
+if INV_CACHE.exists():
+    try:
+        cached = json.loads(INV_CACHE.read_text())
+        candidate = R([QQ(v) for v in cached["coefficients_low_to_high"]])
+        if (X * candidate) % modulus == R.one():
+            Xinv = candidate
+            stamp(
+                "COLLISION_INVERSE",
+                method="CACHE",
+                degree=Xinv.degree(),
+                status="PASS",
+            )
+    except Exception:
+        Xinv = None
+
+if Xinv is None:
+    # modulus = Z^2.  First invert modulo degree-24 Z, then Newton-lift:
+    #
+    #   q2 = q * (2-X*q)
+    #
+    # Since 1-X*q = 0 mod Z, its new error is its square, hence 0 mod Z^2.
+    stamp("COLLISION_INVERSE_MOD_Z", degree=Z.degree(), status="BEGIN")
+    invZ = X.inverse_mod(Z)
+    stamp("COLLISION_INVERSE_MOD_Z", degree=Z.degree(), status="PASS")
+
+    stamp("COLLISION_INVERSE_LIFT_Z2", status="BEGIN")
+    Xinv = (invZ * (2 - X * invZ)) % modulus
+    if (X * Xinv) % modulus != R.one():
+        raise ArithmeticError("Newton lift did not produce X^-1 mod Z^2")
+    stamp(
+        "COLLISION_INVERSE_LIFT_Z2",
+        degree=Xinv.degree(),
+        status="PASS",
+    )
+
+    INV_CACHE.write_text(json.dumps({
+        "schema": "elkies-k3.q24-xinv-mod-z2-qq.v1",
+        "status": "PASS_EXACT_XINV_MOD_Z2",
+        "modulus": "Z^2",
+        "Z_degree": int(Z.degree()),
+        "X_degree": int(X.degree()),
+        "inverse_degree": int(Xinv.degree()),
+        "coefficients_low_to_high": [str(v) for v in Xinv.list()],
+    }, indent=2, sort_keys=True) + "\n")
+
+    stamp(
+        "COLLISION_INVERSE",
+        method="MOD_Z_NEWTON_LIFT",
+        cache=INV_CACHE.relative_to(ROOT),
+        status="PASS",
+    )
+
+# Compute Y/X modulo Z^2 ONCE.  The previous implementation repeated the
+# huge exact Y*Xinv product sixteen times.
+stamp("COLLISION_COLUMNS", method="ONE_PRODUCT_PLUS_SHIFTS", status="BEGIN")
+YXinv = (Y * Xinv) % modulus
+
+def multiply_by_U_mod_monic(poly, monic_modulus):
+    """Fast U*poly mod a monic modulus; input already has degree < deg(modulus)."""
+    q = U * poly
+    d = monic_modulus.degree()
+    if q.degree() >= d:
+        # U*poly has degree at most d, hence exactly one reduction is enough.
+        q -= q[d] * monic_modulus
+    assert q.degree() < d
+    return R(q)
+
+A_columns = [YXinv]
+for _ in range(1, 16):
+    A_columns.append(multiply_by_U_mod_monic(A_columns[-1], modulus))
+
+stamp("COLLISION_COLUMNS", columns=16, status="PASS")
+
 H = matrix(
     QQ,
     6,
     16,
     lambda row, col: A_columns[col][42 + row],
 )
-if H.rank() != 6:
-    raise ArithmeticError(f"exact reduced collision rank {H.rank()}, expected 6")
-K10 = H.right_kernel().basis_matrix()
-if K10.dimensions() != (10, 16):
+# Do NOT ask Sage for a generic QQ right-kernel here: the 6x16 entries
+# contain enormous rationals and generic elimination creates massive
+# intermediate coefficients.
+#
+# Use a good finite prime only to locate an invertible 6-column minor.
+# The actual solve and kernel are then constructed and verified over QQ.
+stamp("COLLISION_KERNEL", method="MODULAR_PIVOTS_EXACT_6X6", status="BEGIN")
+
+pivot_prime = ZZ(100003)
+Fp = GF(pivot_prime)
+
+def reduce_q_mod_p(value):
+    value = QQ(value)
+    den = ZZ(value.denominator())
+    if den % pivot_prime == 0:
+        raise ZeroDivisionError(
+            f"collision pivot denominator divisible by {pivot_prime}"
+        )
+    return Fp(ZZ(value.numerator())) / Fp(den)
+
+Hmod = matrix(
+    Fp, H.nrows(), H.ncols(),
+    [reduce_q_mod_p(v) for v in H.list()]
+)
+
+if Hmod.rank() != 6:
     raise ArithmeticError(
-        f"exact reduced collision kernel {K10.dimensions()}, expected (10,16)"
+        f"collision matrix rank mod {pivot_prime} is {Hmod.rank()}, expected 6"
     )
+
+pivots = tuple(int(i) for i in Hmod.pivots())
+if len(pivots) != 6:
+    raise ArithmeticError(f"expected 6 collision pivots, got {pivots}")
+
+free = tuple(i for i in range(16) if i not in pivots)
+if len(free) != 10:
+    raise ArithmeticError(f"expected 10 collision free columns, got {free}")
+
+stamp(
+    "COLLISION_KERNEL_PIVOTS",
+    prime=pivot_prime,
+    pivots=",".join(map(str, pivots)),
+    free=",".join(map(str, free)),
+    status="PASS",
+)
+
+P = H.matrix_from_columns(pivots)
+Ffree = H.matrix_from_columns(free)
+
+stamp("COLLISION_KERNEL_SOLVE", size="6x6_by_10", status="BEGIN")
+pivot_values = P.solve_right(-Ffree)   # 6 x 10, exact QQ
+stamp("COLLISION_KERNEL_SOLVE", size="6x6_by_10", status="PASS")
+
+rows = []
+for j in range(10):
+    row = [QQ.zero()] * 16
+    row[free[j]] = QQ.one()
+    for i, col in enumerate(pivots):
+        row[col] = pivot_values[i, j]
+    rows.append(row)
+
+K10 = matrix(QQ, rows)
+stamp("COLLISION_KERNEL_NORMALIZE", status="BEGIN")
+K10 = primitive_integer_basis(K10)
+stamp("COLLISION_KERNEL_NORMALIZE", status="PASS")
+
+if K10.dimensions() != (10, 16) or K10.rank() != 10:
+    raise ArithmeticError(
+        f"constructed collision kernel has {K10.dimensions()}/rank={K10.rank()}"
+    )
+
+# Full exact certificate: modular arithmetic only selected the pivot minor.
+if H * K10.transpose() != matrix(QQ, 6, 10):
+    raise ArithmeticError("constructed collision kernel fails exact QQ replay")
+
+stamp(
+    "COLLISION_KERNEL",
+    rank=6,
+    kernel=10,
+    exact_replay=1,
+    status="PASS",
+)
 
 
 def AB_from_Brow(row):
     Bcoef = R(list(row))
-    Acoef = (Bcoef * Y * Xinv) % modulus
+
+    # By linearity:
+    #   B*Y/X = sum_i b_i * (U^i*Y/X)
+    # and A_columns already contains those sixteen reduced polynomials.
+    Acoef = R.zero()
+    for i, coefficient in enumerate(row):
+        if coefficient:
+            Acoef += coefficient * A_columns[i]
+
     assert Acoef.degree() <= 41
     assert (Acoef * X - Bcoef * Y) % modulus == 0
     return Acoef, Bcoef
@@ -569,32 +829,239 @@ stamp(
 # ---------------------------------------------------------------------------
 # 4. Build exact common-unit local numerators at I9*.
 # ---------------------------------------------------------------------------
-Zl = S(Z(alpha + u))
-Xl = S(X(alpha + u))
-Yl = S(Y(alpha + u))
+# IMPORTANT: do not truncate at the original I9* point.
+#
+# Later infinitely-near centres can have nonzero affine coordinates.  After
+# blow-up and translation, terms of high degree in the original chart can
+# contribute to low local order.  Therefore root-level total-degree
+# truncation is not compatible with this resolved RR calculation.
+#
+# Keep the functions exact, while retaining the safe optimization that
+# shifts only the elementary 16-column basis and applies K10 afterwards.
+
+stamp(
+    "LOCAL_EXACT",
+    method="EXACT_SHIFTED_FUNCTIONS_WITH_RECURRENCE",
+    status="BEGIN",
+)
+
+def shift_u_exact(poly):
+    # Exact Horner evaluation f(alpha+u), avoiding generic substitution.
+    result = S.zero()
+    au = S(alpha + u)
+    for coefficient in reversed(R(poly).list()):
+        result = result * au + QQ(coefficient)
+    return S(result)
+
+
+Zl = shift_u_exact(Z)
+Xl = shift_u_exact(X)
+Yl = shift_u_exact(Y)
+
 if Zl(0, 0, 0) == 0 or Xl(0, 0, 0) == 0:
-    raise ArithmeticError("q24 section is not a unit in the selected I9* chart")
+    raise ArithmeticError(
+        "q24 section is not a unit in the selected I9* chart"
+    )
+
+Z2l = S(Zl * Zl)
+Z3l = S(Z2l * Zl)
 
 # m=(y+yP)/(x-xP)
-#   m_num = y Z^3 + Y
-#   m_den = Z (x Z^2 - X)
-m_num = S(y * Zl**3 + Yl)
-m_den = S(Zl * (x * Zl**2 - Xl))
-common_den = S(Zl**2 * m_den)
-if common_den(0, 0, 0) == 0:
-    raise ArithmeticError("marked-chord common denominator is not a local unit")
+m_num = S(y * Z3l + Yl)
+m_den = S(Zl * (x * Z2l - Xl))
 
+if m_den(0, 0, 0) == 0:
+    raise ArithmeticError(
+        "marked-chord denominator is not a local unit"
+    )
+
+stamp(
+    "LOCAL_EXACT_BASIS",
+    method="ONE_A_SHIFT_PLUS_EXACT_RECURRENCE",
+    columns=16,
+    status="BEGIN",
+)
+
+# A_columns[i+1] = U*A_columns[i] - A_columns[i][47]*Z^2
+# exactly, because Z^2 is monic of degree 48.
+A_local_columns = [shift_u_exact(A_columns[0])]
+B_local_columns = [S.one()]
+alpha_plus_u = S(alpha + u)
+
+for i in range(15):
+    A_local_columns.append(
+        S(
+            alpha_plus_u * A_local_columns[-1]
+            - QQ(A_columns[i][47]) * Z2l
+        )
+    )
+    B_local_columns.append(
+        S(alpha_plus_u * B_local_columns[-1])
+    )
+
+assert len(A_local_columns) == 16
+assert len(B_local_columns) == 16
+
+stamp(
+    "LOCAL_EXACT_BASIS",
+    columns=16,
+    status="PASS",
+)
+
+# Apply the 10x16 exact collision kernel only after constructing the
+# elementary local columns.  This avoids ten independent huge Taylor shifts.
+stamp(
+    "LOCAL_NUMERATOR_BASIS",
+    method="UNIVARIATE_TRIPLE_RECURRENCE",
+    columns=16,
+    status="BEGIN",
+)
+
+# Every local numerator is linear in x,y:
+#
+#     N_i = C_i(u) + D_i(u)*x + E_i(u)*y.
+#
+# Do all heavy arithmetic in a dedicated univariate QQ[u] ring and only
+# convert the final ten functions to S=QQ[u,x,y].
+
+LU = PolynomialRing(QQ, "w")
+w = LU.gen()
+
+def S_u_to_LU(poly):
+    poly = S(poly)
+    terms = {}
+    for exponent, coefficient in poly.dict().items():
+        if exponent[1] != 0 or exponent[2] != 0:
+            raise ArithmeticError(
+                "expected polynomial involving only local base coordinate u"
+            )
+        terms[int(exponent[0])] = QQ(coefficient)
+    return LU(terms)
+
+def LU_to_S(poly):
+    poly = LU(poly)
+    return S(sum(
+        QQ(coefficient) * u**i
+        for i, coefficient in enumerate(poly.list())
+        if coefficient
+    ))
+
+z  = S_u_to_LU(Zl)
+xs = S_u_to_LU(Xl)
+ys = S_u_to_LU(Yl)
+a0 = S_u_to_LU(A_local_columns[0])
+
+stamp(
+    "LOCAL_NUMERATOR_COMMON",
+    method="UNIVARIATE_PRODUCTS",
+    status="BEGIN",
+)
+
+# Common univariate products.
+z2 = z*z
+z3 = z2*z
+z4 = z3*z
+z5 = z4*z
+
+xz = xs*z
+yz = ys*z
+
+stamp(
+    "LOCAL_NUMERATOR_COMMON",
+    status="PASS",
+)
+
+# N0 = A0*m_den + Z*m_num
+#
+# m_den = x Z^3 - X Z
+# Z*m_num = y Z^4 + Y Z
+#
+# hence
+#   constant = YZ - A0*XZ
+#   x coeff  = A0*Z^3
+#   y coeff  = Z^4
+N_columns = [
+    (
+        yz - a0*xz,
+        a0*z3,
+        z4,
+    )
+]
+
+# Z^2*m_den = x Z^5 - X Z^3.
+correction = (
+    -xs*z3,   # constant
+    z5,       # x
+    LU.zero() # y
+)
+
+aw = LU(alpha) + w
+
+for i in range(15):
+    c = QQ(A_columns[i][47])
+    C, D, E = N_columns[-1]
+
+    N_columns.append(
+        (
+            aw*C - c*correction[0],
+            aw*D - c*correction[1],
+            aw*E,  # correction has no y term
+        )
+    )
+
+if len(N_columns) != 16:
+    raise AssertionError("elementary numerator recurrence has wrong size")
+
+stamp(
+    "LOCAL_NUMERATOR_RECURRENCE",
+    columns=16,
+    status="PASS",
+)
+
+# Apply K10 while STILL univariate.
 local_numerators = []
-for AA, BB in post_pairs:
-    AAl = S(AA(alpha + u))
-    BBl = S(BB(alpha + u))
-    numerator = S(AAl * m_den + BBl * Zl * m_num)
-    local_numerators.append(primitive_poly(numerator))
+
+for row in K10.rows():
+    C = LU.zero()
+    D = LU.zero()
+    E = LU.zero()
+
+    for i, coefficient in enumerate(row):
+        if coefficient:
+            q = QQ(coefficient)
+            Ci, Di, Ei = N_columns[i]
+            C += q*Ci
+            D += q*Di
+            E += q*Ei
+
+    # Only now enter the trivariate ring.
+    numerator = (
+        LU_to_S(C)
+        + x*LU_to_S(D)
+        + y*LU_to_S(E)
+    )
+
+    local_numerators.append(S(numerator))
 
 if len(local_numerators) != 10:
-    raise AssertionError("post-collision local basis is not 10-dimensional")
+    raise AssertionError(
+        "post-collision local basis is not 10-dimensional"
+    )
 
-stamp("LOCAL_NUMERATORS", basis=10, common_den_unit=1, status="PASS")
+stamp(
+    "LOCAL_NUMERATOR_BASIS",
+    method="UNIVARIATE_TRIPLE_RECURRENCE",
+    columns=16,
+    basis=10,
+    status="PASS",
+)
+
+stamp(
+    "LOCAL_EXACT",
+    basis=10,
+    common_den_unit=1,
+    status="PASS",
+)
 
 
 # ---------------------------------------------------------------------------
@@ -629,41 +1096,110 @@ def monomials_below(total):
     ]
 
 
+
+def _monomial_exponent(mon):
+    data = S(mon).dict()
+    if len(data) != 1:
+        raise ArithmeticError(f"expected monomial, got {mon}")
+    return next(iter(data.keys()))
+
+def _taylor_coefficient(poly, point, exponent):
+    derivative = S(poly)
+    denominator = 1
+    for variable, degree in zip((u,x,y), exponent):
+        for unused in range(int(degree)):
+            derivative = derivative.derivative(variable)
+        denominator *= factorial(int(degree))
+    return QQ(derivative(*point)) / QQ(denominator)
+
+def _low_vector_at(poly, point, mons):
+    return [
+        _taylor_coefficient(
+            poly, point, _monomial_exponent(mon)
+        )
+        for mon in mons
+    ]
+
 def local_order_matrix(basis, surface_eq, point, required_order):
     required_order = int(required_order)
-    ss = shifted(surface_eq, point)
-    ideal = S.ideal([ss] + monomials_exact(required_order))
-    gb = ideal.groebner_basis()
+    if required_order not in (2,3):
+        raise ArithmeticError(
+            f"local quotient supports only orders 2/3, got {required_order}"
+        )
+
     mons = monomials_below(required_order)
-    remainders = []
-    for poly in basis:
-        rem = shifted(poly, point).reduce(gb)
-        if rem and max(sum(exp) for exp in rem.dict()) >= required_order:
-            raise ArithmeticError(
-                "truncated local remainder escaped maximal-ideal quotient"
-            )
-        remainders.append(rem)
-    M = matrix(
+
+    # Certify surface multiplicity two using only its 2-jet.
+    surf_mons = monomials_below(3)
+    surf = _low_vector_at(surface_eq, point, surf_mons)
+    surf_degrees = [sum(_monomial_exponent(mon)) for mon in surf_mons]
+    if any(surf[i] for i,d in enumerate(surf_degrees) if d < 2):
+        raise ArithmeticError("surface order dropped below two")
+    if not any(surf[i] for i,d in enumerate(surf_degrees) if d == 2):
+        raise ArithmeticError("surface quadratic tangent cone vanished")
+
+    raw = matrix(
         QQ,
         len(mons),
         len(basis),
-        lambda row, col: remainders[col].monomial_coefficient(mons[row]),
+        lambda row,col:
+            _taylor_coefficient(
+                basis[col], point, _monomial_exponent(mons[row])
+            ),
     )
-    return M, mons
 
+    if required_order == 2:
+        return raw, mons
+
+    # Mod m^3 the only relation is the quadratic tangent cone.
+    q = _low_vector_at(surface_eq, point, mons)
+    pivot = next((i for i,value in enumerate(q) if value), None)
+    if pivot is None:
+        raise ArithmeticError("surface relation vanished mod m^3")
+
+    L = matrix(QQ, len(mons)-1, len(mons))
+    outrow = 0
+    for i in range(len(mons)):
+        if i == pivot:
+            continue
+        L[outrow,i] = q[pivot]
+        L[outrow,pivot] = -q[i]
+        outrow += 1
+    return L*raw, mons
 
 def canonical_after_condition(poly, surface_eq, point, required_order):
-    a, b, c = map(QQ, point)
-    sp = shifted(poly, point)
-    ss = shifted(surface_eq, point)
-    rem = sp.reduce(S.ideal([ss]).groebner_basis())
-    if order_at_origin(rem) < required_order:
-        raise ArithmeticError(
-            f"surface-normal representative has order {order_at_origin(rem)}, "
-            f"expected >= {required_order}"
-        )
-    unshifted = S(rem(u - a, x - b, y - c))
-    return primitive_poly(unshifted)
+    required_order = int(required_order)
+
+    if required_order == 2:
+        mons = monomials_below(2)
+        if any(_low_vector_at(poly, point, mons)):
+            raise ArithmeticError(
+                "order-2 kernel vector has nonzero low Taylor coefficient"
+            )
+        return S(poly)
+
+    if required_order == 3:
+        mons = monomials_below(3)
+        v = _low_vector_at(poly, point, mons)
+        q = _low_vector_at(surface_eq, point, mons)
+        pivot = next((i for i,value in enumerate(q) if value), None)
+        if pivot is None:
+            raise ArithmeticError("missing quadratic surface relation")
+        scalar = QQ(v[pivot]) / QQ(q[pivot])
+        if any(v[i] != scalar*q[i] for i in range(len(mons))):
+            raise ArithmeticError(
+                "order-3 kernel vector not proportional to surface 2-jet"
+            )
+        result = S(poly - scalar*surface_eq)
+        if any(_low_vector_at(result, point, mons)):
+            raise ArithmeticError(
+                "surface subtraction failed to produce order >=3"
+            )
+        return result
+
+    raise ArithmeticError(
+        f"canonical representative supports only 2/3, got {required_order}"
+    )
 
 
 def child_chart(parent, child):
@@ -681,7 +1217,105 @@ def child_chart(parent, child):
     return matches[0]
 
 
+def fast_right_kernel_QQ(M, label, pivot_prime=100003):
+    # Right kernel of a small huge-coefficient QQ matrix.
+    # GF(p) selects independent rows/columns only; the actual solve and
+    # verification are exact over QQ.
+    Fp_local = GF(ZZ(pivot_prime))
+
+    def red(v):
+        v = QQ(v)
+        d = ZZ(v.denominator())
+        if d % pivot_prime == 0:
+            raise ZeroDivisionError(
+                f"{label}: denominator divisible by pivot prime {pivot_prime}"
+            )
+        return Fp_local(ZZ(v.numerator())) / Fp_local(d)
+
+    Mmod = matrix(
+        Fp_local, M.nrows(), M.ncols(),
+        [red(v) for v in M.list()]
+    )
+    rank = int(Mmod.rank())
+
+    if rank == 0:
+        return 0, identity_matrix(QQ, M.ncols())
+
+    pivot_cols = tuple(int(i) for i in Mmod.pivots())
+    if len(pivot_cols) != rank:
+        raise ArithmeticError(
+            f"{label}: modular pivot-column count {len(pivot_cols)} != rank {rank}"
+        )
+
+    Pmod = Mmod.matrix_from_columns(pivot_cols)
+    pivot_rows = tuple(int(i) for i in Pmod.transpose().pivots())
+    if len(pivot_rows) != rank:
+        raise ArithmeticError(
+            f"{label}: modular pivot-row count {len(pivot_rows)} != rank {rank}"
+        )
+
+    free_cols = tuple(i for i in range(M.ncols()) if i not in pivot_cols)
+
+    print(
+        "Q24D12QQ_LOCAL_PIVOTS|"
+        f"center={label}|rank={rank}|"
+        f"rows={','.join(map(str,pivot_rows))}|"
+        f"cols={','.join(map(str,pivot_cols))}|"
+        f"free={','.join(map(str,free_cols))}|status=PASS",
+        flush=True,
+    )
+
+    P = M.matrix_from_rows_and_columns(pivot_rows, pivot_cols)
+
+    if not free_cols:
+        K = matrix(QQ, 0, M.ncols())
+        return rank, K
+
+    Ffree = M.matrix_from_rows_and_columns(pivot_rows, free_cols)
+
+    print(
+        "Q24D12QQ_LOCAL_SOLVE|"
+        f"center={label}|size={rank}x{rank}_by_{len(free_cols)}|status=BEGIN",
+        flush=True,
+    )
+    pivot_values = P.solve_right(-Ffree)
+    print(
+        "Q24D12QQ_LOCAL_SOLVE|"
+        f"center={label}|size={rank}x{rank}_by_{len(free_cols)}|status=PASS",
+        flush=True,
+    )
+
+    rows = []
+    for j, free_col in enumerate(free_cols):
+        row = [QQ.zero()] * M.ncols()
+        row[free_col] = QQ.one()
+        for i, pivot_col in enumerate(pivot_cols):
+            row[pivot_col] = pivot_values[i, j]
+        rows.append(row)
+
+    K = primitive_integer_basis(matrix(QQ, rows))
+    if K.dimensions() != (len(free_cols), M.ncols()):
+        raise ArithmeticError(f"{label}: constructed kernel has wrong dimensions")
+    if M * K.transpose() != matrix(QQ, M.nrows(), K.nrows()):
+        raise ArithmeticError(f"{label}: exact local kernel replay failed")
+
+    return rank, K
+
+
+def divide_power_rr(poly, exceptional, power):
+    q = S(poly)
+    for unused in range(int(power)):
+        q, rem = q.quo_rem(exceptional)
+        if rem:
+            raise ArithmeticError("RR exceptional power does not divide")
+    return S(q)
+
+
 current_basis = list(local_numerators)
+
+# The full exact surface already certified the blow-up tree.  For the RR
+# quotient along the selected four centres, work in the exact truncated
+# local ring S / m^9.
 current_surface = surface0
 transform = identity_matrix(QQ, 10)
 condition_ledger = []
@@ -690,13 +1324,46 @@ for step_index, (center_name, required_order) in enumerate(SELECTED_CLUSTER):
     record = records[center_name]
     point = record["point"]
 
+    print(
+        "Q24D12QQ_CENTER_BEGIN|"
+        f"center={center_name}|order={required_order}|"
+        f"basis={len(current_basis)}|status=BEGIN",
+        flush=True,
+    )
     M, quotient_monomials = local_order_matrix(
         current_basis, current_surface, point, required_order
     )
-    local_rank = int(M.rank())
-    kernel = M.right_kernel().basis_matrix()
+    print(
+        "Q24D12QQ_LOCAL_MATRIX|"
+        f"center={center_name}|rows={M.nrows()}|cols={M.ncols()}|status=PASS",
+        flush=True,
+    )
+    local_rank, kernel = fast_right_kernel_QQ(M, center_name)
     before = len(current_basis)
     after = int(kernel.nrows())
+
+    mod_label = exact_to_mod[center_name]
+    expected = expected_mod_ledger.get(mod_label)
+    if expected is not None:
+        exp = (
+            int(expected["dimension_before"]),
+            int(expected["local_rank"]),
+            int(expected["dimension_after"]),
+        )
+        got = (before, local_rank, after)
+        print(
+            "Q24D12QQ_MODULAR_REPLAY|"
+            f"mod_center={mod_label}|qq_center={center_name}|"
+            f"qq={got[0]},{got[1]},{got[2]}|"
+            f"mod={exp[0]},{exp[1]},{exp[2]}|"
+            f"status={'PASS' if got==exp else 'MISMATCH'}",
+            flush=True,
+        )
+        if got != exp:
+            raise ArithmeticError(
+                f"exact/modular RR mismatch at {mod_label}->{center_name}: "
+                f"QQ={got}, MOD={exp}"
+            )
 
     if before - local_rank != after:
         raise ArithmeticError("local rank/nullity mismatch")
@@ -742,14 +1409,20 @@ for step_index, (center_name, required_order) in enumerate(SELECTED_CLUSTER):
         kind = child_chart(record, next_record)
         subs, exceptional = chart_substitutions(point, kind)
 
-        current_surface = divide_power(
+        print(
+            "Q24D12QQ_BLOWUP_BEGIN|"
+            f"from={center_name}|to={next_name}|chart={kind}|"
+            f"basis={len(current_basis)}|status=BEGIN",
+            flush=True,
+        )
+        current_surface = divide_power_rr(
             S(current_surface(*subs)),
             exceptional,
             int(record["multiplicity"]),
         )
 
         current_basis = [
-            divide_power(S(poly(*subs)), exceptional, required_order)
+            divide_power_rr(S(poly(*subs)), exceptional, required_order)
             for poly in current_basis
         ]
 
@@ -769,7 +1442,7 @@ if final_dimension != 2 or resolved_codim != 8:
         f"h0={final_dimension}; expected 8/2"
     )
 
-B2 = transform * K10
+B2 = primitive_integer_basis(transform * K10)
 if B2.dimensions() != (2, 16) or B2.rank() != 2:
     raise ArithmeticError(
         f"final exact B-space has dimensions/rank "
@@ -822,23 +1495,24 @@ a1, b1 = lift_rf(a1_raw), lift_rf(b1_raw)
 xPV, yPV = lift_rf(xP), lift_rf(yP)
 AV, BV = lift_poly(A), lift_poly(B)
 
-den = b1 - VF(V) * b0
-if not den:
-    raise ArithmeticError("exact resolved q24 pencil has degenerate chord direction")
+stamp(
+    "PENCIL_ELIMINATION",
+    method="DIRECT_CHORD_DISCRIMINANT",
+    status="BEGIN",
+)
 
-# New base V = f1/f0, so f1 - V*f0 = 0.
-mval = -(a1 - VF(V) * a0) / den
+mval = pencil_chord_solution(a0, b0, a1, b1, VF(V))
+disc = chord_discriminant(xPV, -yPV, AV, mval)
 
-XR = PolynomialRing(UK, "x")
-xx = XR.gen()
-yline = XR(mval) * (xx - XR(xPV)) - XR(yPV)
-relation = yline**2 - xx**3 - XR(AV) * xx - XR(BV)
-quadratic, remainder = relation.quo_rem(xx - XR(xPV))
-if remainder or quadratic.degree() != 2:
-    raise ArithmeticError("exact q24 chord elimination did not leave a quadratic")
+stamp(
+    "PENCIL_ELIMINATION",
+    method="DIRECT_CHORD_DISCRIMINANT",
+    status="PASS",
+)
 
-disc = UK(quadratic[1] ** 2 - 4 * quadratic[2] * quadratic[0])
+stamp("QUARTIC_SQUAREFREE", status="BEGIN")
 quartic, square_factor = squarefree_binary_quartic(disc, UR)
+stamp("QUARTIC_SQUAREFREE", status="PASS")
 quartic_degree = int(quartic.degree())
 if quartic_degree not in (3, 4):
     raise ArithmeticError(
@@ -856,7 +1530,9 @@ I, J = binary_quartic_invariants(quartic)
 jacA = VF(-27) * VF(I)
 jacB = VF(-27) * VF(J)
 
+stamp("CHILD_CLASSIFY", status="BEGIN")
 classification = classify_finite_short_weierstrass_fibres(VR, jacA, jacB)
+stamp("CHILD_CLASSIFY", status="PASS")
 
 finite_data = [
     {
