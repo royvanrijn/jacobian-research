@@ -33,6 +33,7 @@ import sys
 sys.path.insert(0, str(ROOT / "elliptic-curves/cas"))
 
 from icarm_curve273 import GENERAL_WEIERSTRASS_COEFFICIENTS, POINTS  # noqa: E402
+import icarm_curve302  # noqa: E402
 from mestre_root_tuples import SixRootMestreConstruction  # noqa: E402
 
 
@@ -66,7 +67,7 @@ def weierstrass_invariants(
     return c4, c6, discriminant, c4**3 / discriminant
 
 
-def load_targets() -> dict[int, dict[str, Any]]:
+def load_targets(*, include_curve302: bool = False) -> dict[int, dict[str, Any]]:
     source = json.loads(TARGET_SOURCE.read_text())
     targets: dict[int, dict[str, Any]] = {}
     for record in source["curves"]:
@@ -82,6 +83,11 @@ def load_targets() -> dict[int, dict[str, Any]]:
         "ainvs": tuple(GENERAL_WEIERSTRASS_COEFFICIENTS),
         "points": tuple(POINTS),
     }
+    if include_curve302:
+        targets[302] = {
+            "ainvs": tuple(icarm_curve302.GENERAL_WEIERSTRASS_COEFFICIENTS),
+            "points": tuple(icarm_curve302.POINTS),
+        }
     for target in targets.values():
         c4, c6, discriminant, j_value = weierstrass_invariants(target["ainvs"])
         target.update(c4=c4, c6=c6, discriminant=discriminant, j=j_value)
@@ -413,11 +419,15 @@ def vectors_in_json(value: Any, pointer: str = "") -> Iterable[tuple[str, tuple[
             yield from vectors_in_json(child, f"{pointer}/{key}")
 
 
-def repository_j_scan(targets: dict[int, dict[str, Any]]) -> dict[str, Any]:
+def repository_j_scan(
+    targets: dict[int, dict[str, Any]], *, excluded_paths: Sequence[Path] = ()
+) -> dict[str, Any]:
     candidate_count = 0
     files_with_candidates = 0
     matches: dict[int, list[dict[str, str]]] = {curve_id: [] for curve_id in targets}
     for path in sorted(GENERATED.rglob("*.json")):
+        if path in excluded_paths:
+            continue
         try:
             payload = json.loads(path.read_text())
         except (OSError, json.JSONDecodeError):
@@ -482,8 +492,8 @@ def denominator_fingerprint(points: Sequence[tuple[Fraction, Fraction]]) -> dict
     }
 
 
-def build_result() -> dict[str, Any]:
-    targets = load_targets()
+def build_result(*, include_curve302: bool = False) -> dict[str, Any]:
+    targets = load_targets(include_curve302=include_curve302)
     roots_census = load_census_roots()
     target_records = {
         str(curve_id): {
@@ -495,7 +505,11 @@ def build_result() -> dict[str, Any]:
         for curve_id, target in targets.items()
     }
     result = {
-        "schema": "elliptic-curves.icarm-construction-fingerprints.v1",
+        "schema": (
+            "elliptic-curves.icarm-construction-fingerprints.v2"
+            if include_curve302
+            else "elliptic-curves.icarm-construction-fingerprints.v1"
+        ),
         "status": "complete bounded exact construction-recognition screen",
         "inputs": {
             "target_source": str(TARGET_SOURCE.relative_to(ROOT)),
@@ -504,34 +518,53 @@ def build_result() -> dict[str, Any]:
             "fermigier_control_roots": list(FERMIGIER_NORMALIZED_ROOTS),
         },
         "targets": target_records,
-        "repository_model_scan": repository_j_scan(targets),
+        "repository_model_scan": repository_j_scan(
+            targets,
+            excluded_paths=(
+                (EC_GENERATED / "icarm_construction_fingerprints_v2.json",)
+                if include_curve302
+                else ()
+            ),
+        ),
         "six_root_mestre_recognition": recognize_families(targets, roots_census),
         "forced_torsion_exclusion": {
-            "curves": [273, 281, 282, 285, 286],
+            "curves": sorted(targets),
             "result": "none is a direct specialization of the implemented Elkies--Klagsbrun K3 model y^2=x*(x^2+2A*x+B)",
             "reason": "that family has the rational 2-torsion point (0,0), while every target has certified trivial rational torsion",
             "boundary": "This does not exclude an isogenous quotient, a different K3 fibration, or another family on the same surface.",
         },
-        "reproducing_command": "python3 elliptic-curves/cas/analyze_icarm_construction_fingerprints.py",
+        "reproducing_command": (
+            "python3 elliptic-curves/cas/analyze_icarm_construction_fingerprints.py --include-curve302"
+            if include_curve302
+            else "python3 elliptic-curves/cas/analyze_icarm_construction_fingerprints.py"
+        ),
     }
     return result
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--output", type=Path)
+    parser.add_argument("--include-curve302", action="store_true")
     parser.add_argument("--check", action="store_true")
     arguments = parser.parse_args()
-    result = build_result()
+    output = arguments.output
+    if output is None:
+        output = (
+            EC_GENERATED / "icarm_construction_fingerprints_v2.json"
+            if arguments.include_curve302
+            else DEFAULT_OUTPUT
+        )
+    result = build_result(include_curve302=arguments.include_curve302)
     rendered = json.dumps(result, indent=2, sort_keys=True) + "\n"
     if arguments.check:
-        if not arguments.output.exists() or arguments.output.read_text() != rendered:
-            raise SystemExit(f"stale or missing artifact: {arguments.output}")
-        print(f"PASS {arguments.output}")
+        if not output.exists() or output.read_text() != rendered:
+            raise SystemExit(f"stale or missing artifact: {output}")
+        print(f"PASS {output}")
         return
-    arguments.output.parent.mkdir(parents=True, exist_ok=True)
-    arguments.output.write_text(rendered)
-    print(arguments.output)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(rendered)
+    print(output)
 
 
 if __name__ == "__main__":

@@ -11,6 +11,24 @@ This audit was made against repository commit
 against their code headers, outputs, certificates, and the notes that consume them;
 the archive is classified by historical programme rather than promoted file-by-file.
 
+## Local Sage 10.9 installation
+
+On this machine the pinned SageMath 10.9 build is installed from conda-forge at
+
+```text
+/home/royvanrijn/.local/share/jacobian-sage-10.9
+```
+
+It is isolated from the repository and system packages.  The launcher in this
+conda build does not accept the historical `sage -python` spelling; invoke Sage
+Python scripts with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python script.sage
+```
+
+or prepend its `bin` directory to `PATH` and use that environment's `python`.
+
 ## Status vocabulary
 
 | status | meaning |
@@ -18,6 +36,7 @@ the archive is classified by historical programme rather than promoted file-by-f
 | **ACTIVE_PROOF** | Replays a claim used by a current note or pinned certificate. |
 | **ACTIVE_COMPILER** | Reusable exact equation/Riemann--Roch/Jacobian infrastructure. |
 | **ACTIVE_SEARCH** | Current bounded exploration. Its output is not a theorem until separately certified. |
+| **UNPROMOTED_RESULT** | An exact-looking output exists, but the canonical note, locks, or `MATH_STATUS.json` have not admitted it yet. |
 | **REGRESSION** | Reproduces a specialization or previously solved compiler case. |
 | **HISTORICAL_DIAGNOSTIC** | Preserves a failed or superseded route and the evidence that rejected it. |
 | **ARCHIVED_SNAPSHOT** | Historical source copy. Never use it as the current proof entry point. |
@@ -25,6 +44,24 @@ the archive is classified by historical programme rather than promoted file-by-f
 Location alone is not authority. A root-level script is authoritative only when a current
 note or pinned certificate names it. Conversely, a failed script is worth retaining when
 it records a bounded negative result, a normalization bug, or a useful local model.
+
+## Quick decision guide
+
+- For the story and lessons, read `../ELKIES_K3_PROCESS_ATLAS.md`.
+- For pinned commands and hashes, use `success-path/ledger.json`.
+- Equation proofs currently stop at the marked `A11/MW6` child; the lattice
+  route reaches R17.
+- `lift_h92_q24_orbit42_resolved_rr_qq.sage` and
+  `certify_h92_q24_orbit42_a11_equation_marking.sage` are the exact equation
+  and marking proofs for that child.
+- Work next on equation-side q8 orbit12 from the orbit64 A11 frame.  The
+  construction certificate transports historical orbit922 through the full
+  root/MW/glue marking and retains the literal `O+P-2F` formula with zero
+  vertical-root correction.  The target-coset certificate then proves that
+  the exact shell has index five and selects the minimum-pole bridge
+  `M=(1,0,0,0,0,1)`, with `P12=M+S6-2*S2-2*S8`.  Continue from the
+  free-infinity pole-order-five/component-depth-three chart; do not restart
+  q8, q24, zero-pole, point-transport or halving searches.
 
 ## Current proof and compiler entry points
 
@@ -120,12 +157,13 @@ coordinates. It also retains the exact bridge between the dominant D13
 lattice marking and the distinct component-nef D13 equation marking; that
 bridge changes the embedded `U`.
 
-### Current H3 q24 equation frontier
+### H3 q24 closeout and orbit42 frontier
 
-The selected route is fixed. Do not reopen q32, native q24 suffixes, generic q24
-section Hensel lifting, or easy orbit42 zero-pole searches as the active path.
+The q24 equation edge is closed and the selected route is fixed. Do not reopen
+q32, native q24 suffixes, generic q24 section Hensel lifting, or easy orbit42
+zero-pole searches as the active path.
 
-Active q24 corridor scripts:
+Pinned q24 closeout scripts:
 
 - `certify_h92_q24_equation_d13_to_pinned_r17.sage` — **ACTIVE_PROOF** for the
   current-equation D13 marking, q24/orbit85 D12 marking, pinned-R17 suffix, and
@@ -207,8 +245,26 @@ Orbit42/D12 profile rule:
   `lift_h92_q24_orbit42_zero_pole_sections_qq.sage` — **EXACT_BOUNDARY_AUDIT**.
   Together they reconstruct eighteen exact rational identity-class zero-pole
   sections.  The modular scan is only a seed-selection aid; the final QQ
-  identities are exact.  This does not produce the nontrivial orbit42 class or
-  the A11 child.
+  identities are exact.
+- `lift_h92_q24_orbit42_spinor_zero_pole_sections_qq.sage` —
+  **EXACT_CONSTRUCTION_AID** for the remaining opposite spinor-class pair.
+  It solves the cubic-`x`, constant-`y` cancellation branch directly over QQ
+  and pins its mod-100003 residue.  Together with the preceding audit this
+  represents the full twenty-point zero-pole shell exactly, but does not
+  construct the resolved RR kernel or the A11 child.
+- `construct_h92_q24_orbit42_exact_section_candidates_qq.sage` —
+  **EXACT_POINT_AID_WITH_MODULAR_MARKING_BOUNDARY**.  Exact QQ(u) group law
+  combines the 18+2 shell into four projective `(9,9,3)` points with exact
+  Weierstrass identities.  Their four-way orbit42 identification uses the
+  pinned mod-100003 shell isometry; resolved RR must still select the physical
+  orientation.
+- `lift_h92_q24_orbit42_resolved_rr_qq.sage` — **ACTIVE_PROOF**. It certifies
+  the exact weighted resolved-RR two-plane, quartic, minimized Jacobian and
+  A11 fibre classification.
+- `certify_h92_q24_orbit42_a11_equation_marking.sage` —
+  **ACTIVE_PROOF_WITH_GOOD_REDUCTION_MARKING_BOUNDARY**. The exact
+  identity-shell degree fingerprint at p=100003 selects orbit64/mapping7 in
+  the C10 orientation, with orbit65/mapping6 as spinor conjugate.
 - `preflight_h92_q24_o12_p42_exact_q6_points.sage` and
   `run_h92_q24_orbit42_fast_parallel.py` — **EXACT_NEGATIVE_AUDIT** for the
   rejected q6-point transport.  The named equation-D13 coordinate conversion
@@ -230,11 +286,9 @@ Archived q24 dead ends:
 - `archive/exactify_h92_q24_from_padic_srr.sage`
 
 These record why p-adic direct lifting/SRR was abandoned. Do not increase Hensel
-precision or reconstruct the generic q24 section as the next step. The remaining
-frontier is the exact characteristic-zero resolved-RR compiler from the explicit
-Theta/component construction to the q24/orbit85 `D12/MW5` child, followed by the
-direct exact resolved-RR compiler for the current-equation orbit42 divisor
-`D42 = O + P + V`.
+precision or reconstruct the generic q24 section as the next step. The q24
+`D12/MW5` child and orbit42 A11 child are closed. Continue from the equation-
+side orbit64 A11 frame to the q8 `2A5/MW7` edge.
 
 ### Q80 compiler and regression route
 
@@ -243,6 +297,10 @@ separate claims. Current entry points include:
 
 - `verify_q80_to_rootless_path.sage`
 - `trace_q80_candidate1_marked_transport.sage`
+- `score_h3_d12_q80_crossovers.sage` — exact transport of all eleven retained
+  Q80 fibre classes into the current equation-side H3 D12 frame, with the
+  negative crossover-cost audit documented in
+  [`../H3_D12_Q80_CROSSOVER_AUDIT_2026-08-24.md`](../H3_D12_Q80_CROSSOVER_AUDIT_2026-08-24.md)
 - `recover_q80_final_q6_via_basis_sections.sage`
 - `certify_q80_final_q6_char0_rr_from_basis.sage`
 - `compile_q80_final_q6_char0_child.sage`

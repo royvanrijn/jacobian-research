@@ -8,7 +8,8 @@ D12/MW5 --q6 orbit42--> A11/MW6
 
 continuation.  It is the canonical note for the orbit42 milestones below.
 The complete lattice/chamber corridor to the pinned rootless/MW17 frame is
-already exact; the equation pencils after D12 are not.
+already exact.  The orbit42 equation edge is now exact; the later equation
+pencils after A11 remain open.
 
 ## Exact parent and orbit42 profile
 
@@ -45,9 +46,107 @@ The separate zero-pole audit reconstructs nine signed pairs, hence eighteen
 explicit rational zero-pole sections on the exact D12 model.  Each section
 satisfies the characteristic-zero Weierstrass identity and its pinned mod-53
 regression.  These are the identity-class sections.  The selected orbit42
-class is the missing nontrivial discriminant class, so this exact computation
-closes the easy zero-pole shortcut without proving that no other construction
-of the target section exists.
+class is in the nontrivial discriminant class, so these eighteen sections alone
+do not generate it.
+
+The two missing spinor-class zero-pole sections are now also exact.  On the
+same R3-zero D12 model they have `deg(x)=3`, constant `y`, and are negatives
+of one another.  The characteristic-zero solve has a unique cubic `x`, its
+Weierstrass right-hand side is a rational constant square, and the two signs
+reduce to the pinned residues
+
+```text
+x = 49445 u^3 + 5652 u^2 + 88005 u + 74701,
+y = 45430 or 54573                         (mod 100003).
+```
+
+Thus the full twenty-point abstract zero-pole shell is represented exactly.
+This supplies a construction aid and repairs the earlier incomplete spinor
+enumeration; it does not replace the resolved line-bundle trivialization.
+The reproducing command is
+
+```bash
+sage -python elkies-k3/scripts/lift_h92_q24_orbit42_spinor_zero_pole_sections_qq.sage
+```
+
+and its exact output is
+`artifacts/local/elkies-k3/q24-orbit42-spinor-zero-pole-sections-qq.json`.
+
+Combining this pair with the eighteen exact identity sections gives four
+exact marking-compatible orbit42 candidates on the R3-zero model.  After the
+degree-two zero change each has `P.O=3`, projective degrees `(9,9,3)`, and an
+exact characteristic-zero Weierstrass identity.  Their reductions equal the
+complete four-point mod-100003 census.  The coefficient height is substantial
+(about 78,700 bits), so the equations live only in the generated artifact.
+The command is
+
+```bash
+sage -python elkies-k3/scripts/construct_h92_q24_orbit42_exact_section_candidates_qq.sage
+```
+
+and the output is
+`artifacts/local/elkies-k3/q24-orbit42-exact-section-candidates-qq.json`.
+The points are exact; their four-way orbit42 marking is still pinned through
+the modular shell isometry.  The resolved RR calculation must select the
+physical orientation and provide the exact line-bundle kernel.
+
+## Exact resolved-RR lift and A11 child
+
+`lift_h92_q24_orbit42_resolved_rr_qq.sage` transports the selected exact
+section to the minimal D12 equation and compiles the C10 physical orientation.
+The smooth collision conditions give `9 -> 3`, and the weighted C01 valuation
+with weights `(2,2,3)` gives `3 -> 2`.  Thus the exact resolved line-bundle
+calculation has
+
+```text
+ambient = 9
+smooth collision rank = 6
+post-collision dimension = 3
+resolved rank = 1
+kernel = h0(D42) = 2.
+```
+
+The resulting binary quartic has degree four.  Its exact minimized Jacobian
+has `deg(A,B,Delta)=(8,12,24)`, one `I12` fibre and twelve geometrically nodal
+`I1` fibres.  Hence its root lattice is A11, its Euler number is 24, and its
+MW rank is 6 under the repository's rank-19 marking.  The opposite C11
+orientation has one additional independent C10-arm condition modulo the
+pinned good prime and is rejected.
+
+Reproduce the exact equation edge with
+
+```bash
+sage -python elkies-k3/scripts/lift_h92_q24_orbit42_resolved_rr_qq.sage
+```
+
+The output is
+`artifacts/local/elkies-k3/q24-d12-to-a11-orbit42-resolved-rr-qq.json`, with
+status `PASS_EXACT_Q24_D12_Q6_A11_COMPONENT_VALUATION_RR`.
+
+The equation-side child marking is certified separately by restricting the
+exact pencil to all eighteen exact identity-shell curves at the pinned good
+prime `100003`.  Their ordered new-fibre degrees are
+
+```text
+6,4,2,8,7,3,9,1,2,8,6,4,7,3,3,7,9,1.
+```
+
+Comparison with every A11 neighbor and all eight pointed shell isometries has
+exactly two matches: orbit64/mapping7 in the selected C10 orientation and
+orbit65/mapping6 in the spinor-conjugate C11 orientation.  Thus the concrete
+child frame for the next edge is
+`artifacts/local/elkies-k3/q24-downstream-lift/d12-c10a-zero-q6-frames/q6-o0064-r11-n132-d12-ad4a027cb197.txt`.
+Reproduce this marking with
+
+```bash
+sage -python elkies-k3/scripts/certify_h92_q24_orbit42_a11_equation_marking.sage
+```
+
+Its output is
+`artifacts/local/elkies-k3/q24-a11-equation-marking-orbit64-mod100003.json`.
+The equation, quartic, Jacobian, and fibre classification are exact over QQ;
+the shell-to-lattice orientation identification retains the stated pinned
+good-reduction boundary.
 
 The proposed fast-q6 transport has also been closed exactly.  The named
 unimodular equation-D13 to ambient H3-NS matrix passes its Gram and q24-fibre
@@ -66,15 +165,69 @@ shortcut, not a characteristic-zero non-existence theorem.
 
 ## Active gate
 
-The next gate is the resolved-surface Riemann--Roch trivialization for
-`D42=O+P+V`, carried out for both surviving physical orientations.  Success
-requires a two-dimensional exact kernel, a compiled degree-two pencil, and an
-exact child classification `A11/MW6`.  Only after that certificate exists does
-the equation route advance to
+The orbit42 gate is closed.  The next gate is the exact equation lift from the
+selected orbit64 A11 frame through the q8 neighbor whose child is `2A5/MW7`.
+The historical orbit number must not be copied into this frame.  The exact
+construction transport
+
+```bash
+sage -python elkies-k3/scripts/certify_h92_q24_a11_q8_construction_fingerprint.sage
+```
+
+uses the stronger historical fingerprint
+
+```text
+new fibre = O + P - 2F,   vertical-root correction = 0
+```
+
+and splits the frame isometry into the `A11` root chain, the rank-six MW
+quotient, and the integral glue condition.  Of the 32 root/MW combinations,
+eight respect the glue and four land in the nef q8 search; the latter give
+exactly equation-side orbits `12` and `2162`, both with `2A5/MW7` children.
+The working target is equation orbit `12`, selected by the explicit minimum
+MW-coordinate L1 convention (`2` rather than `3`).  This fixes a construction-
+compatible divisor but does not yet construct its section function or pencil.
+
+For the orbit-12 common local profile, the component-six section builder now
+supports recursive infinity elimination.  At the preferred discovery prime
+`p=43`, eliminating eight of the 18 `R` coefficients gives a 26-variable,
+28-equation, 834 KB sparse system with 16 infinity branches.  A bounded msolve
+benchmark completed its degree-10 matrix and reached degree 11 before being
+stopped; this is a search-performance observation, not a section or
+non-existence result.
+
+<!-- status-consumer: EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET -->
+
+The construction audit one level deeper changes the preferred section target.
+Under the pinned equation marking, the eighteen exact identity-shell points
+span rank five but index five in the saturated hyperplane with sixth MW
+coordinate zero.  The earlier pole-order-four vector is in the wrong coset.
+An exhaustive exact height/correction enumeration proves that the selected
+orbit-12 coset has no section with `P.O <= 4` and exactly two with `P.O=5`.
+The preferred one is
+
+```text
+M = (1,0,0,0,0,1),  height = 47/4,  correction = 9/4,
+P12 = M + S6 - 2*S2 - 2*S8.
+```
+
+Here `S_i` denotes the exact identity-shell point in zero-based equation
+order.  The equality is literal in the pinned A11 MW marking.  A new
+free-infinity chart covers every leading smooth-fibre value at once; over
+`GF(100003)` it has 36 variables, 37 equations and maximum degree six.  A
+bounded four-thread msolve mode-42 run completed two degree-eight reductions,
+entered a third `257692 x 2857438` matrix and stopped at 600 seconds (about
+13 GB resident).  It found no section, and this bounded run is not a
+non-existence result.  The exact next gate is characteristic-zero coordinates
+for `M`, followed by the displayed group-law reconstruction of `P12`.
+
+<!-- status-consumer: EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE -->
+
+The fixed remaining route is
 
 ```text
 A11/MW6
- --q8 orbit922--> 2A5/MW7
+ --q8 historical orbit922 / equation orbit12--> 2A5/MW7
  --q4 orbit472--> 3A3/MW8
  --q4 orbit323--> A3+2A2/MW10
  --q4 orbit207--> 5A1/MW12

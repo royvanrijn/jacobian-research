@@ -33750,6 +33750,37 @@
       "priority": "derived"
     },
     {
+      "id": "EC-K3-H3-D12-Q80-CROSSOVER-AUDIT",
+      "kind": "example",
+      "state": "proved",
+      "title": "Exact H3 D12 to retained-Q80 crossover cost audit",
+      "scope": "Using the pinned initial-Q80-to-R17 marking and the current exact equation-side H3 D12-to-R17 certificate, all eleven retained generic Q80 fibre classes are transported integrally into the current D12/MW5 frame. The smallest exact intersection F_D12.F_candidate is 16328023738263177 at the common-prefix D7+D5/MW5 stage; the first retained low-q suffix stage has degree 34707400601887865. The proposed candidate1 A1/MW16 crossover has degree 370213639961146392704841338, P.O=108545315264050223557720445635678277043049764366553849, MW height 217090630528100447115440891271356554086099528733107699, and support on all twelve simple D12 components. Thus no retained Q80 stage is a viable direct equation-level replacement for the H3 D12 suffix. The CM24 small-section profiles are specialization regressions only. The connected-layer RR ambient values are explicitly planning estimates, not executed resolved-RR dimensions, and no global non-existence statement about unsearched fibrations is claimed.",
+      "canonical_source": "elkies-k3/H3_D12_Q80_CROSSOVER_AUDIT_2026-08-24.md",
+      "dependencies": [
+        "EC-K3-H3-D13-MW17-LATTICE-CHAIN",
+        "EC-K3-H3-Q24-QQ-D12"
+      ],
+      "checker": "elkies-k3/scripts/score_h3_d12_q80_crossovers.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:902061b8cebf8ee10ce2990a04c3213d722890fbd5cc899b6db2aff1077d4faf",
+      "software_lock": [
+        "elkies-k3/scripts/score_h3_d12_q80_crossovers.sage"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/H3_D12_Q80_CROSSOVER_AUDIT_2026-08-24.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-ICARM-CONSTRUCTION-FINGERPRINTS",
       "kind": "example",
       "state": "proved",
@@ -33873,6 +33904,8 @@
         "OP-EC-NEXT",
         "EC-K3-H3-Q24-O42-I8STAR-MARKING",
         "EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT",
+        "EC-K3-H3-Q24-O42-SPINOR-ZERO-POLE",
+        "EC-K3-H3-Q24-O42-QQ-A11",
         "EC-K3-H3-Q24-O42-FAST-Q6-AUDIT"
       ],
       "invalidates_assumptions": [],
@@ -33941,6 +33974,187 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
+    },
+    {
+      "id": "EC-K3-H3-Q24-O42-SPINOR-ZERO-POLE",
+      "kind": "example",
+      "state": "proved",
+      "title": "Exact spinor-class zero-pole sections on the H3 q24 D12 parent",
+      "scope": "On the exact R3-zero D12 model used by EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT, the pinned mod-100003 cancellation branch has deg(x)=3 and constant y. Direct characteristic-zero elimination has a unique rational cubic x: the leading coefficient is the pinned rational double root, the remaining eight coefficient equations have a zero-dimensional three-element Groebner basis and one QQ solution, and the resulting Weierstrass right-hand side is a rational constant square. Its two y-signs give opposite exact rational sections and reduce to x=(49445,5652,88005,74701) in high-to-low notation and y=45430,54573 modulo 100003. Together with the eighteen identity-class sections, this represents the complete twenty-point zero-pole shell exactly. It is a construction aid: it does not select the surviving equation marking, construct the resolved Riemann--Roch kernel, compile the orbit42 pencil, or prove the A11/MW6 child equation.",
+      "canonical_source": "elkies-k3/ORBIT42_EQUATION_LIFT.md",
+      "dependencies": [
+        "EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT"
+      ],
+      "checker": "elkies-k3/scripts/lift_h92_q24_orbit42_spinor_zero_pole_sections_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f31ddb5eaab70fbd7373458d6a40d70f796381d5f540d1c03d4225863cdbf196",
+      "software_lock": [
+        "elkies-k3/scripts/lift_h92_q24_orbit42_spinor_zero_pole_sections_qq.sage",
+        "elkies-k3/scripts/success-path/ledger.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "EC-K3-H3-Q24-O42-SECTION-CANDIDATES",
+        "EC-K3-H3-Q24-O42-QQ-A11"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-K3-H3-Q24-O42-SECTION-CANDIDATES",
+      "kind": "example",
+      "state": "proved",
+      "title": "Four exact orbit42 section candidates with pinned modular marking",
+      "scope": "On the exact R3-zero D12 model, exact QQ(u) group law combines the eighteen identity-class zero-pole sections and the opposite spinor pair using the four spinor-to-identity height-compatible extensions of the pinned mod-100003 shell marking. After the degree-two zero change, all four outputs have monic denominator Z of degree three, projective degrees (deg X,deg Y,deg Z)=(9,9,3), and exact characteristic-zero Weierstrass identities. Their reductions reproduce the complete four-point modular census. The displayed QQ(u) points are exact, but their four-way identification as the surviving orbit42 representatives uses the modular shell isometry. This does not select the physical I8* orientation, construct the resolved Riemann--Roch kernel, compile a quartic, or certify the A11/MW6 child.",
+      "canonical_source": "elkies-k3/ORBIT42_EQUATION_LIFT.md",
+      "dependencies": [
+        "EC-K3-H3-Q24-O42-SPINOR-ZERO-POLE"
+      ],
+      "checker": "elkies-k3/scripts/construct_h92_q24_orbit42_exact_section_candidates_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:341fbc5f9cfee25ddbfcd6e441a5ae2c36fefa2aef895a85beb460f2723b31e1",
+      "software_lock": [
+        "elkies-k3/scripts/construct_h92_q24_orbit42_exact_section_candidates_qq.sage",
+        "elkies-k3/scripts/success-path/ledger.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "EC-K3-H3-Q24-O42-QQ-A11"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-K3-H3-Q24-O42-QQ-A11",
+      "kind": "example",
+      "state": "proved",
+      "title": "Exact H3 q24 orbit42 neighbour over QQ with marked A11/MW6 child",
+      "scope": "On the exact D12/MW5 parent and the selected orbit42 P.O=3 section, the resolved Riemann--Roch compiler gives ambient dimension 9, smooth collision rank 6, post-collision dimension 3, one weighted C01 condition with weights (2,2,3), and a two-dimensional kernel. Exact compilation gives a degree-four quartic and a globally minimal child with degrees (A,B,Delta)=(8,12,24), one I12 fibre, twelve geometrically nodal I1 fibres, root lattice A11, and Euler number 24. The MW rank is 6 under the repository's rank-19 marking. Restricting the exact pencil to the eighteen exact identity-shell curves at the pinned good prime 100003 gives the ordered new-fibre degree fingerprint (6,4,2,8,7,3,9,1,2,8,6,4,7,3,3,7,9,1), which selects equation-side orbit64/mapping7 in the chosen C10 orientation; orbit65/mapping6 is the spinor conjugate. The section, RR plane, quartic, Jacobian, and fibre classification are exact over QQ; the shell-to-lattice orientation identification retains this explicit good-reduction marking boundary. This proves the selected equation-level D12/MW5 -> A11/MW6 edge and fixes the child frame for the next q8 search. It does not construct the A11/MW6 -> 2A5/MW7 equation or any later corridor edge.",
+      "canonical_source": "elkies-k3/ORBIT42_EQUATION_LIFT.md",
+      "dependencies": [
+        "EC-K3-H3-Q24-QQ-D12",
+        "EC-K3-H3-Q24-O42-I8STAR-MARKING",
+        "EC-K3-H3-Q24-O42-SECTION-CANDIDATES",
+        "EC-K3-H3-D13-MW17-LATTICE-CHAIN"
+      ],
+      "checker": "elkies-k3/scripts/lift_h92_q24_orbit42_resolved_rr_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:984ee07991035c08a225eec42bc5472cc3aeea4e365c24294af159e472e28e81",
+      "software_lock": [
+        "elkies-k3/scripts/lift_h92_q24_orbit42_resolved_rr_qq.sage",
+        "elkies-k3/scripts/certify_h92_q24_orbit42_a11_equation_marking.sage",
+        "artifacts/local/elkies-k3/q24-d12-to-a11-orbit42-resolved-rr-qq.json",
+        "artifacts/local/elkies-k3/q24-a11-equation-marking-orbit64-mod100003.json",
+        "elkies-k3/scripts/success-path/ledger.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "OP-EC-NEXT",
+        "REPRODUCE.md",
+        "elkies-k3/ORBIT42_EQUATION_LIFT.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Exact construction-compatible equation-side target for the H3 A11-to-2A5 q8 lift",
+      "scope": "The historical A11/MW6 -> 2A5/MW7 q8/orbit922 neighbour has the stronger divisor fingerprint new_fibre=O+P-2F with no vertical-root correction. Between the historical and equation-side orbit64 A11 frames, splitting the positive frame isometry into the A11 root chain and rank-six Mordell--Weil quotient gives two root orientations and an MW automorphism group of order 16. Exactly eight combinations satisfy the integral glue condition. Four transported rays occur in the exhaustive equation-side nef q8 search, yielding exactly orbits 12 and 2162, both with root data (10,60,36), type A5+A5 and MW rank 7. Orbit12, with MW projection (0,0,-1,0,0,1), is selected by the explicit minimum MW-coordinate L1 convention; this is a complexity convention, not a proof that orbit2162 is geometrically impossible. The transported orbit12 divisor still has formula O+P-2F and P.O=6. A finite-field central-I12-component chart at the preferred discovery prime p=43 can eliminate eight leading R coefficients to a 26-variable, 28-equation sparse system with 16 infinity branches; a bounded msolve benchmark completed degree 10, reached degree 11, and was stopped. This record fixes a construction-compatible target and improves the discovery system, but it does not construct the section function, resolved RR plane, quartic, characteristic-zero Weierstrass child, or any later equation edge.",
+      "canonical_source": "elkies-k3/ORBIT42_EQUATION_LIFT.md",
+      "dependencies": [
+        "EC-K3-H3-Q24-O42-QQ-A11",
+        "EC-K3-H3-D13-MW17-LATTICE-CHAIN"
+      ],
+      "checker": "elkies-k3/scripts/certify_h92_q24_a11_q8_construction_fingerprint.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f8bb3fabf1a2fc6828774fe9705a38dd1127e76486e1de0867f00708d9d151d1",
+      "software_lock": [
+        "elkies-k3/scripts/certify_h92_q24_a11_q8_construction_fingerprint.sage",
+        "elkies-k3/scripts/build_h92_q24_a11_q8_component6_section_modp.sage",
+        "artifacts/local/elkies-k3/q24-a11-q8-construction-fingerprint.json",
+        "artifacts/local/elkies-k3/q24-a11-q8-component6-modp/p43-branch00-c0-l1-elimR08.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "OP-EC-NEXT",
+        "REPRODUCE.md",
+        "elkies-k3/ORBIT42_EQUATION_LIFT.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Exact minimum-pole target-coset bridge for the H3 A11-to-2A5 q8 lift",
+      "scope": "In the pinned equation-side orbit64 A11/MW6 marking, the eighteen already exact identity-shell sections span rank five but have index five in the saturated hyperplane with sixth MW coordinate zero. Therefore an arbitrary missing-rank section does not necessarily generate the selected q8/orbit12 target with those exact points; in particular the previously proposed pole-order-four vector (0,0,0,1,0,1) lies in the wrong coset. Exhaustive exact MW enumeration through P.O <= 5 proves there is no target-coset section with P.O <= 4 and exactly two with P.O=5. The selected bridge is M=(1,0,0,0,0,1), of height 47/4, I12 correction 9/4 and component 3 or 9 up to negation. The literal equation-marked group-law identity P12=M+S6-2*S2-2*S8 gives the orbit12 vector (0,0,-1,0,0,1), where shell indices are zero-based equation order. A free-infinity finite-field chart covers every smooth-fibre leading value simultaneously; at p=100003 it has 36 variables, 37 equations and maximum degree six. A bounded four-thread msolve run with linear algebra mode 42 completed two degree-eight reductions, entered a third 257692-by-2857438 matrix, and stopped at the fixed 600-second timeout using about 13 GB resident memory. It produced no modular section and proves no non-existence statement. Characteristic-zero coordinates for M, the orbit12 section, resolved RR pencil, quartic and 2A5 child remain open.",
+      "canonical_source": "elkies-k3/ORBIT42_EQUATION_LIFT.md",
+      "dependencies": [
+        "EC-K3-H3-Q24-O42-QQ-A11",
+        "EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET"
+      ],
+      "checker": "elkies-k3/scripts/certify_h92_q24_a11_target_coset_bridge.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:0f1f9eeda95f32e06ce0d7d508e1da375c0246c3905c2a914a58e9695b33b260",
+      "software_lock": [
+        "elkies-k3/scripts/certify_h92_q24_a11_target_coset_bridge.sage",
+        "elkies-k3/scripts/build_h92_q24_a11_q8_component6_section_modp.sage",
+        "artifacts/local/elkies-k3/q24-a11-target-coset-bridge.json",
+        "artifacts/local/elkies-k3/q24-a11-q8-component6-modp/p100003-freeInfinity-elimR00-pO5-cpt3.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "OP-EC-NEXT",
+        "REPRODUCE.md",
+        "elkies-k3/ORBIT42_EQUATION_LIFT.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
     },
     {
       "id": "EC-K3-H3-Q24-O42-FAST-Q6-AUDIT",
@@ -34056,7 +34270,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Elliptic rank-32, exact-rank, and low-conductor certification",
-      "scope": "ECR31 gives an unconditional rank-at-least-31 curve and supersedes rank 31 as a search target. Continue in three exact directions: prove the public curve 302 has rank exactly 31 or exhibit a rank-at-least-32 curve; complete repository-local global-minimality and Tate-algorithm conductor replays for the rank-at-least-21 ICARM curves 285 and 286 recorded in EC-R21-ICARM, or find another independently certified low-conductor rank-at-least-21 curve; and complete the reconstructed rank-17 K3 mechanism strongly enough to reproduce a public exceptional-rank specialization and search beyond rank 31. EC-R20, EC-R20-IC245, EC-MR13, EC-MD17 and EC-MD19 remain exact lower-rank family/conductor frontiers. EC-K3-H3-SOURCE and EC-K3-H3-PTS give the exact H3 E7+E8/MW2 source and its rational base points. EC-K3-H3-Q8-QQ-D13 completes the first two equation-level neighbours through D13/MW4, while EC-K3-H3-D13-MW17-LATTICE-CHAIN certifies the eleven later nef degree-two lattice/chamber neighbours through rootless MW17. EC-K3-H3-Q24-QQ-D12 supplies the exact D12/MW5 equation-level hop. EC-K3-H3-Q24-O42-I8STAR-MARKING certifies the exact physical I8* marking for the D12/MW5 -> A11/MW6 q6/orbit42 gate, EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT reconstructs the eighteen identity-class zero-pole sections and closes that shortcut, and EC-K3-H3-Q24-O42-FAST-Q6-AUDIT proves that the proposed q6 point-transport shortcut has the wrong fibre degrees. The modular identity-halving census is only a shortcut rejection, not a characteristic-zero non-existence theorem. The next construction gate is the resolved-surface Riemann--Roch trivialization and A11/MW6 child equation, followed by nine further equation-level hops and specialization transport. EC-ICARM-CONSTRUCTION-FINGERPRINTS excludes curve 273 from the complete diameter-at-most-300 fixed-six-root Mestre census and from the direct forced-2-torsion Elkies--Klagsbrun model, without excluding the proposed rootless K3 descendant. A certified residual 2-Selmer computation for curve 273 also remains open. Bounded searches and failed lifts are experiments, not upper bounds.",
+      "scope": "ECR31 gives an unconditional rank-at-least-31 curve and supersedes rank 31 as a search target. Continue in three exact directions: prove the public curve 302 has rank exactly 31 or exhibit a rank-at-least-32 curve; complete repository-local global-minimality and Tate-algorithm conductor replays for the rank-at-least-21 ICARM curves 285 and 286 recorded in EC-R21-ICARM, or find another independently certified low-conductor rank-at-least-21 curve; and complete the reconstructed rank-17 K3 mechanism strongly enough to reproduce a public exceptional-rank specialization and search beyond rank 31. EC-R20, EC-R20-IC245, EC-MR13, EC-MD17 and EC-MD19 remain exact lower-rank family/conductor frontiers. EC-K3-H3-SOURCE and EC-K3-H3-PTS give the exact H3 E7+E8/MW2 source and its rational base points. EC-K3-H3-Q8-QQ-D13 completes the first two equation-level neighbours through D13/MW4, while EC-K3-H3-D13-MW17-LATTICE-CHAIN certifies the eleven later nef degree-two lattice/chamber neighbours through rootless MW17. EC-K3-H3-Q24-QQ-D12 supplies the exact D12/MW5 equation-level hop. EC-K3-H3-Q24-O42-I8STAR-MARKING, EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT, EC-K3-H3-Q24-O42-SPINOR-ZERO-POLE, and EC-K3-H3-Q24-O42-SECTION-CANDIDATES supply the resolved marking and exact section prerequisites. EC-K3-H3-Q24-O42-QQ-A11 then proves the exact weighted resolved-RR pencil, quartic, marked A11/MW6 child equation, and equation-side orbit64 frame, with an explicit pinned-good-reduction marking boundary. EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET transports the stronger historical O+P-2F construction through the root/MW/glue marking, narrows the equation-side q8 targets to orbits 12 and 2162, and selects orbit12 by an explicit complexity convention without claiming the q8 equation. EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE proves that the exact identity-shell points form an index-five sublattice, replaces the wrong-coset pole-order-four generator by the minimum-pole bridge M=(1,0,0,0,0,1), and reduces the orbit12 point to the exact word M+S6-2*S2-2*S8; coordinates for M remain open. EC-K3-H3-Q24-O42-FAST-Q6-AUDIT and the modular identity-halving census remain shortcut rejections rather than global non-existence theorems. The next construction gate is the A11/MW6 -> 2A5/MW7 q8 equation lift, followed by eight further equation-level hops and specialization transport. EC-ICARM-CONSTRUCTION-FINGERPRINTS excludes curve 273 from the complete diameter-at-most-300 fixed-six-root Mestre census and from the direct forced-2-torsion Elkies--Klagsbrun model, without excluding the proposed rootless K3 descendant. A certified residual 2-Selmer computation for curve 273 also remains open. Bounded searches and failed lifts are experiments, not upper bounds.",
       "canonical_source": "elliptic-curves/README.md",
       "dependencies": [
         "ECR31",
@@ -34074,6 +34288,11 @@
         "EC-K3-H3-Q24-QQ-D12",
         "EC-K3-H3-Q24-O42-I8STAR-MARKING",
         "EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT",
+        "EC-K3-H3-Q24-O42-SPINOR-ZERO-POLE",
+        "EC-K3-H3-Q24-O42-SECTION-CANDIDATES",
+        "EC-K3-H3-Q24-O42-QQ-A11",
+        "EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET",
+        "EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE",
         "EC-K3-H3-Q24-O42-FAST-Q6-AUDIT"
       ],
       "checker": null,

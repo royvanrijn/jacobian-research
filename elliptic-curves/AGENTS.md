@@ -55,6 +55,18 @@ This directory is a separate research programme on elliptic curves over
 - Every external CAS task must pin exact inputs, required outputs, resource
   limits and the interpretation of timeout/failure.
 
+## Elkies--K3 bridge
+
+- Start from `../elkies-k3/ELKIES_K3_PROCESS_ATLAS.md` and the nested
+  `../elkies-k3/AGENTS.md`; do not infer the construction from a single local
+  artifact.
+- The K3 equation route is certified through `D12/MW5`, while its marked
+  lattice route reaches rootless `MW17`. The orbit42 A11 output is provisional
+  until `MATH_STATUS.json` admits it.
+- A K3 MW rank does not by itself certify the rank of a rational
+  specialization. Specialize, minimize, verify every point, and prove
+  independence again.
+
 ## Candidate promotion gate
 
 A target candidate is not promoted until a replay checks nonsingularity, a

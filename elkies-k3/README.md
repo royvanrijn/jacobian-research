@@ -2,35 +2,66 @@
 
 This directory contains the K3-surface and elliptic-neighbor work used to search for high-rank elliptic fibrations and explicit equation routes.
 
-For the human-readable map of how the reverse searches, H3 source construction, H2 comparison, Q80 route, and CM24 scaffold fit together, start with [`CONSTRUCTION_ROUTES.md`](CONSTRUCTION_ROUTES.md). The exact lossless reverse transport from the pinned recovered 17-by-17 lattice to H3, including the q8 marking distinction, is documented in [`RANK17_TO_H3_REVERSE_TRANSPORT_2026-08-23.md`](RANK17_TO_H3_REVERSE_TRANSPORT_2026-08-23.md). For executable entry points and the research history behind failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and [`SCRIPT_ROUTE_AND_FAILURE_LEDGER.md`](SCRIPT_ROUTE_AND_FAILURE_LEDGER.md).
+For the chronological account of rank exchange, cancellations, corrections,
+equation lifts, and reusable methods, start with
+[`ELKIES_K3_PROCESS_ATLAS.md`](ELKIES_K3_PROCESS_ATLAS.md). For the
+general rank, determinant, fibration, specialization, and lift statements,
+see [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md).
+For the
+human-readable map of how the reverse searches, H3 source construction, H2
+comparison, Q80 route, and CM24 scaffold fit together, see
+[`CONSTRUCTION_ROUTES.md`](CONSTRUCTION_ROUTES.md). The exact lossless reverse
+transport from the pinned recovered 17-by-17 lattice to H3, including the q8
+marking distinction, is documented in
+[`RANK17_TO_H3_REVERSE_TRANSPORT_2026-08-23.md`](RANK17_TO_H3_REVERSE_TRANSPORT_2026-08-23.md).
+For executable entry points and the research history behind
+failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and
+[`SCRIPT_ROUTE_AND_FAILURE_LEDGER.md`](SCRIPT_ROUTE_AND_FAILURE_LEDGER.md).
 
-Route discipline: use `R17` for the recovered rootless lattice endpoint,
-`H3 source` for the level-474 Kumar polarization, and `next equation child` for the
-model produced by the active neighbor compiler.  The current compiler input is
-the exact `D13/MW4` parent, its operation is the selected q24 pencil, and its
-immediate output is the `D12/MW5` child.  The reverse Low-q MW2/E6 backtracks
-and the Q80 CM24 regression endpoint are different routes and must not be used
-as substitutes for that parent or child.  See the target vocabulary and
-decision ledger in [`CONSTRUCTION_ROUTES.md`](CONSTRUCTION_ROUTES.md).
+## One-minute status
+
+- Think of one K3 surface with several coordinate systems. A neighbour changes
+  the elliptic fibration, moving rank between fibre roots and sections.
+- The generic budget is always `root rank + MW rank = 17`.
+- Equations are certified through the marked `A11/MW6` child; the marked
+  lattice route continues exactly to the pinned rootless `MW17` endpoint.
+- The active edge is `A11/MW6 --q8--> 2A5/MW7` in the equation-side orbit64
+  frame. Historical orbit922 names the conjugate corridor marking, not a
+  substitute for the selected equation zero.
+
+Use `R17` for the recovered rootless endpoint and `H3 source` for the level-474
+Kumar polarization. Low-q, E6, H2 and Q80/CM24 are comparison or regression
+routes, not substitutes for the selected H3 marking. See
+[`CONSTRUCTION_ROUTES.md`](CONSTRUCTION_ROUTES.md).
 
 ## Current priority
 
-The **H3 source family** is the primary characteristic-zero starting point. The currently selected **H3 degree-two corridor** is one certified route from that source to the pinned recovered rootless/MW17 frame; the endpoint identification and complete inverse NS transport are now exact. The route is not proved shortest, globally optimal, or cheapest to compile. Its first three neighbours are exact at equation level:
+The **H3 source family** is the primary characteristic-zero starting point. The currently selected **H3 degree-two corridor** is one certified route from that source to the pinned recovered rootless/MW17 frame; the endpoint identification and complete inverse NS transport are now exact. The route is not proved shortest, globally optimal, or cheapest to compile. Its first four neighbours are exact at equation level:
 
 ```text
 H3 E7+E8/MW2
  --q6--> E8+E6/MW3
  --q8--> D13/MW4
- --q24 orbit85--> D12/MW5.
+ --q24 orbit85--> D12/MW5
+ --q6 orbit42--> A11/MW6.
 ```
 
 The q8 repair found two independent bugs in the previous child-side compiler: a binary-quartic 2-cover multiplier was applied twice, and the q-frame CRT normalizer omitted the `Dx` factor of `x(S)=Nx/Dx`. After both corrections the q8 Riemann--Roch problem collapses to an exact `13 -> 2` characteristic-zero intersection and its Jacobian has one `I9*` fibre plus nine `I1`, hence `D13/MW4` exactly.
 
 The selected `D13/MW4 --q24 orbit85--> D12/MW5` equation arrow is now closed. Its exact q24 horizontal section is exported as `artifacts/local/elkies-k3/q8-q24-horizontal-section-qq.json` with status `PASS_EXACT_Q24_HORIZONTAL_SECTION`, and the resolved component-valuation RR lift is exported as `artifacts/local/elkies-k3/q24-d13-to-d12-component-valuation-qq.json` with status `PASS_EXACT_Q24_D13_TO_D12_COMPONENT_VALUATION_RR`. The RR profile is `ambient=56`, `collision=48`, `post=8`, `resolved=6`, `kernel=2`; the compiled quartic has degree four and its Jacobian has root rank `12`, root determinant `4`, Euler number `24`, and MW rank `5`.
 
-The active continuation is now the selected `D12/MW5 --q6 orbit42--> A11/MW6` equation arrow. Use the exact orbit42 profile from the backward manifest: `mw=(-1,0,-1,-1,0)`, height `7`, correction `3`, `P.O=3`, fibre twist `0`, and divisor `D42=O+P+V`. Do not reuse the old correction-one, `P.O=2`, or zero-pole search assumptions.
+For orbit42, use `mw=(-1,0,-1,-1,0)`, height `7`, correction `3`,
+`P.O=3`, fibre twist `0`, and `D42=O+P+V`. The physical I8* marking and
+complete twenty-point zero-pole shell are exact. Four exact section candidates
+are also known. The resolved-RR artifact certifies the A11 child, and the
+shell-degree marking binds it to equation-side orbit64/mapping7 in the chosen
+C10 orientation. See [`ORBIT42_EQUATION_LIFT.md`](ORBIT42_EQUATION_LIFT.md)
+and the version-locked [`scripts/success-path/`](scripts/success-path/) ledger.
 
-The orbit42 preflight and exact physical I8* marking are complete.  The latter resolves eleven blow-up centres and twelve physical components and leaves exactly two spinor-arm orientations, with the marked section meeting `C11` or `C10`.  Separate audits reconstruct eighteen exact rational identity-class zero-pole sections, prove that the proposed q6-point transport actually has degrees `435/703`, and find no A11 chord among the modular rational-halving candidates.  The next construction gate is therefore the resolved-surface RR trivialization for `D42`, not another point-transport or zero-pole search.  See [`ORBIT42_EQUATION_LIFT.md`](ORBIT42_EQUATION_LIFT.md) and the version-locked [`scripts/success-path/`](scripts/success-path/) ledger.
+Useful negative lessons: the fast q6 transport has degrees `435/703`; the
+rational-halving candidates have no A11 chord; and the old correction-one,
+`P.O=2`, easy zero-pole and archived Hensel paths are not the selected lift.
+These close shortcuts, not every possible construction.
 
 Marking warning: the pinned dominant D13 representative used by the lattice corridor and the component-nef D13 representative used by the q8 equation compiler are not the same stored 17-by-17 frame. Their exact full-NS bridge changes the embedded `U`; use the reverse-transport ledger rather than substituting one frame for the other by ADE/MW label.
 
@@ -188,6 +219,9 @@ scripts/verify_elliptic_neighbor_compiler_field_generic.sage.
 
 ## Start here
 
+- [`ELKIES_K3_PROCESS_ATLAS.md`](ELKIES_K3_PROCESS_ATLAS.md) — short chronology, rank flow, cancellations, and reusable lessons.
+- [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md) — proved deductions, conditional lift theorem, and open navigation conjectures.
+- [`AGENTS.md`](AGENTS.md) — compact handoff rules, hints, and known dead ends.
 - [`CONSTRUCTION_ROUTES.md`](CONSTRUCTION_ROUTES.md) — human-readable geometric route map and naming scheme.
 - [`scripts/README.md`](scripts/README.md) — current proof/compiler/search entry points and archive policy.
 - [`SCRIPT_ROUTE_AND_FAILURE_LEDGER.md`](SCRIPT_ROUTE_AND_FAILURE_LEDGER.md) — exact path-selection reasons, failed lanes, supersessions, and remaining gaps.
@@ -203,6 +237,9 @@ scripts/verify_elliptic_neighbor_compiler_field_generic.sage.
 
 ## Next strategic gate
 
-For **H3**, continue the selected `D12/MW5 --q6 orbit42--> A11/MW6` equation reconstruction toward R17 as the nearest certified continuation. The completed q24 D12 equation lift should be treated as the parent for this gate; do not reopen q24 search, the historical degree-46 trace interpolation path, `true1600`, or hand-built `corrected1278` q8 compilers except as diagnostics. Do not call the full suffix optimal.
+For **H3**, continue with the equation-side orbit64
+`A11/MW6 --q8--> 2A5/MW7` edge. Do not reopen q24, the historical
+degree-46 interpolation, `true1600`, or `corrected1278` except as diagnostics.
+The full suffix is selected and exact at lattice level, but not proved optimal.
 
 For **Q80**, the terminal marking/RR/equation gate is closed. Treat the direct two-parameter final-section resultants, digit-by-digit `73`-adic lift, and local-73 singularity probes as diagnostics only. Any new Q80 work should start from the exact certificates above rather than reopening the final q6 reconstruction.

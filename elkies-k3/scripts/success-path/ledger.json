@@ -2,7 +2,7 @@
   "schema": "elkies-k3.h3-equation-success-path.v1",
   "authority": "MATH_STATUS.json",
   "canonical_note": "elkies-k3/ORBIT42_EQUATION_LIFT.md",
-  "route_status": "ACTIVE_AT_Q42_RESOLVED_RR_TRIVIALIZATION",
+  "route_status": "ACTIVE_AT_Q922_A11_TO_2A5_EQUATION_LIFT",
   "route": [
     {
       "id": "q24_o85_d12_equation",
@@ -67,18 +67,65 @@
     {
       "id": "q42_resolved_rr_trivialization",
       "arrow": "D12/MW5 --q6 orbit42--> A11/MW6",
-      "status": "NEXT_EXACT_GATE",
-      "proof_boundary": "Construct the two-dimensional resolved-surface RR kernel for D42 in both surviving physical orientations."
+      "status": "COMPLETE_EXACT_EQUATION",
+      "command": [
+        "sage",
+        "-python",
+        "elkies-k3/scripts/lift_h92_q24_orbit42_resolved_rr_qq.sage"
+      ],
+      "script": {
+        "path": "elkies-k3/scripts/lift_h92_q24_orbit42_resolved_rr_qq.sage",
+        "sha256": "984ee07991035c08a225eec42bc5472cc3aeea4e365c24294af159e472e28e81"
+      },
+      "artifact": {
+        "path": "artifacts/local/elkies-k3/q24-d12-to-a11-orbit42-resolved-rr-qq.json",
+        "sha256": "f5a1b59371ca7f36c1e3ba739acb22ded374b87510a471d87ee73c584d6ddb3c",
+        "schema": "elkies-k3.h3-q24-d12-to-a11-orbit42-resolved-rr-qq.v1",
+        "status": "PASS_EXACT_Q24_D12_Q6_A11_COMPONENT_VALUATION_RR"
+      },
+      "proof_boundary": "Exact QQ section, weighted resolved-RR 9-to-3-to-2 calculation, degree-four quartic, minimized I12+12I1 Jacobian, A11 root and Euler-24 classification. The physical-orientation selection retains a pinned mod-100003 marking boundary."
     },
     {
       "id": "q42_a11_equation",
       "arrow": "D12/MW5 --q6 orbit42--> A11/MW6",
-      "status": "PENDING_EQUATION"
+      "status": "COMPLETE_EQUATION_MARKING_WITH_GOOD_REDUCTION_BOUNDARY",
+      "command": [
+        "sage",
+        "-python",
+        "elkies-k3/scripts/certify_h92_q24_orbit42_a11_equation_marking.sage"
+      ],
+      "script": {
+        "path": "elkies-k3/scripts/certify_h92_q24_orbit42_a11_equation_marking.sage",
+        "sha256": "f6e7700b2038369920d71445133e48c42686000333102349cdb790dff01bef56"
+      },
+      "artifact": {
+        "path": "artifacts/local/elkies-k3/q24-a11-equation-marking-orbit64-mod100003.json",
+        "sha256": "6b43e0c6747058eeea97d2b1b842d6b6d75513253abecd9d626817d2ecf8109f",
+        "schema": "elkies-k3.h3-q24-a11-equation-marking-orbit64.v1",
+        "status": "PASS_Q42_A11_EQUATION_MARKING_ORBIT64_MOD100003"
+      },
+      "proof_boundary": "The exact pencil restricted to the exact identity shell gives a good-reduction degree fingerprint selecting orbit64/mapping7 in the C10 orientation; orbit65/mapping6 is the spinor conjugate. This binds the exact A11 equation to the frame used by the next q8 search."
     },
     {
       "id": "q922_2a5_equation",
-      "arrow": "A11/MW6 --q8 orbit922--> 2A5/MW7",
-      "status": "PENDING_EQUATION"
+      "arrow": "A11/MW6 --q8 historical orbit922 / equation orbit12--> 2A5/MW7",
+      "status": "TARGET_COSET_FIXED_EQUATION_PENDING",
+      "command": [
+        "sage",
+        "-python",
+        "elkies-k3/scripts/certify_h92_q24_a11_target_coset_bridge.sage"
+      ],
+      "script": {
+        "path": "elkies-k3/scripts/certify_h92_q24_a11_target_coset_bridge.sage",
+        "sha256": "0f1f9eeda95f32e06ce0d7d508e1da375c0246c3905c2a914a58e9695b33b260"
+      },
+      "artifact": {
+        "path": "artifacts/local/elkies-k3/q24-a11-target-coset-bridge.json",
+        "sha256": "4d5dc4f1f80740e300fd4a66ca07b9ea97d03d60c8f8cb06afefb231ee1016e8",
+        "schema": "elkies-k3.h3-q24-a11-target-coset-bridge.v1",
+        "status": "PASS_EXACT_A11_TARGET_COSET_BRIDGE"
+      },
+      "proof_boundary": "After the construction fingerprint selects equation orbit12, the exact equation shell is proved to have index five. The complete target coset through pole order five selects M=(1,0,0,0,0,1) and verifies P12=M+S6-2*S2-2*S8. No coordinates for M, section function or characteristic-zero q8 pencil are claimed."
     },
     {
       "id": "q472_3a3_equation",
@@ -189,7 +236,47 @@
         "schema": "elkies-k3.h3-q24-orbit42-rational-zero-pole-sections-qq.v1",
         "status": "PASS_EXACT_Q42_RATIONAL_ZERO_POLE_SECTIONS_QQ"
       },
-      "proof_boundary": "Exactly 18 rational identity-class zero-pole sections; the nontrivial spinor class, orbit42 RR pencil, and A11 child remain open."
+      "proof_boundary": "This artifact certifies exactly 18 rational identity-class zero-pole sections. The two spinor-class sections are certified separately; the orbit42 RR pencil and A11 child remain open."
+    },
+    {
+      "id": "q42_spinor_zero_pole_exact_qq",
+      "status": "COMPLETE_EXACT_CONSTRUCTION_AID",
+      "command": [
+        "sage",
+        "-python",
+        "elkies-k3/scripts/lift_h92_q24_orbit42_spinor_zero_pole_sections_qq.sage"
+      ],
+      "script": {
+        "path": "elkies-k3/scripts/lift_h92_q24_orbit42_spinor_zero_pole_sections_qq.sage",
+        "sha256": "f31ddb5eaab70fbd7373458d6a40d70f796381d5f540d1c03d4225863cdbf196"
+      },
+      "artifact": {
+        "path": "artifacts/local/elkies-k3/q24-orbit42-spinor-zero-pole-sections-qq.json",
+        "sha256": "262c9d6a25695252b3659fb3f28610704c4ccb52bf80b81964bc244d7bbb43bc",
+        "schema": "elkies-k3.h3-q24-orbit42-spinor-zero-pole-sections-qq.v1",
+        "status": "PASS_EXACT_Q42_SPINOR_ZERO_POLE_SECTIONS_QQ"
+      },
+      "proof_boundary": "Exactly two opposite rational spinor-class zero-pole sections on the R3-zero D12 model, with exact Weierstrass replay and pinned mod-100003 regression. This does not construct the resolved RR pencil or A11 child."
+    },
+    {
+      "id": "q42_exact_section_candidates_qq",
+      "status": "COMPLETE_EXACT_POINT_AID_WITH_MODULAR_MARKING_BOUNDARY",
+      "command": [
+        "sage",
+        "-python",
+        "elkies-k3/scripts/construct_h92_q24_orbit42_exact_section_candidates_qq.sage"
+      ],
+      "script": {
+        "path": "elkies-k3/scripts/construct_h92_q24_orbit42_exact_section_candidates_qq.sage",
+        "sha256": "341fbc5f9cfee25ddbfcd6e441a5ae2c36fefa2aef895a85beb460f2723b31e1"
+      },
+      "artifact": {
+        "path": "artifacts/local/elkies-k3/q24-orbit42-exact-section-candidates-qq.json",
+        "sha256": "8e3c7c6006a8675bb0515bc55cbf3538211dfd9eacf38bc92fb9a1ecc4c7c3ff",
+        "schema": "elkies-k3.h3-q24-orbit42-exact-section-candidates-qq.v1",
+        "status": "PASS_EXACT_Q42_ORBIT42_SECTION_CANDIDATES_QQ"
+      },
+      "proof_boundary": "Four exact QQ(u) projective section points with P.O=3 and exact Weierstrass replay. Their orbit42 identification uses the pinned mod-100003 shell marking; resolved RR must select the physical orientation and certify the A11 child."
     },
     {
       "id": "q42_fast_q6_premise_rejection",

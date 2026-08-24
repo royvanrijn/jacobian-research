@@ -1952,9 +1952,70 @@ sage -python elkies-k3/scripts/map_h92_q24_orbit42_i8star_physical_components_qq
 Expected terminal statuses are `PASS_Q42_DIVVAL_PREFLIGHT` and
 `PASS_Q42_EXACT_I8STAR_PHYSICAL_MARKING`.  The physical marking has twelve
 components and exactly two surviving spinor-arm orientations; the marked
-section meets `C11` in one and `C10` in the other.  This is an exact resolved
-fibre marking only.  The two-dimensional RR kernel and A11 child equation are
-still the next gate.
+section meets `C11` in one and `C10` in the other.
+
+The exact resolved-RR equation edge and its equation-side child marking are
+reproduced by:
+
+```bash
+sage -python elkies-k3/scripts/lift_h92_q24_orbit42_resolved_rr_qq.sage
+sage -python elkies-k3/scripts/certify_h92_q24_orbit42_a11_equation_marking.sage
+```
+
+Expected terminal statuses are
+`PASS_EXACT_Q24_D12_Q6_A11_COMPONENT_VALUATION_RR` and
+`PASS_Q42_A11_EQUATION_MARKING_ORBIT64_MOD100003`.  The exact RR dimension
+chain is `9 -> 3 -> 2`, using the weighted C01 valuation `(2,2,3)`.  The
+degree-four quartic has a minimized Jacobian with `I12 + 12 I1`, root lattice
+A11, Euler number 24, and MW rank 6 under the rank-19 marking.  The ordered
+identity-shell new-fibre degrees select orbit64/mapping7 in the chosen C10
+orientation; orbit65/mapping6 is its spinor conjugate.  This closes the
+selected `D12/MW5 --q6 orbit42--> A11/MW6` equation edge.  The next equation
+gate is `A11/MW6 --q8--> 2A5/MW7` in the orbit64 child frame.
+
+<!-- status-consumer: EC-K3-H3-Q24-O42-QQ-A11 -->
+
+The construction-compatible equation-side q8 target and the reduced modular
+section chart are reproduced by:
+
+```bash
+sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \
+  --frame artifacts/local/elkies-k3/q24-downstream-lift/d12-c10a-zero-q6-frames/q6-o0064-r11-n132-d12-ad4a027cb197.txt \
+  --root-rank 11 --q 8 --degree 2 --rank-growth-only --adapt-mw-at-least 7 \
+  --frames-dir artifacts/local/elkies-k3/q24-a11-orbit64-q8-frames \
+  --output artifacts/local/elkies-k3/q24-a11-orbit64-q8-all.json
+sage -python elkies-k3/scripts/certify_h92_q24_a11_q8_construction_fingerprint.sage
+sage -python elkies-k3/scripts/build_h92_q24_a11_q8_component6_section_modp.sage \
+  --prime 43 --branch 0 --eliminate-r-count 8
+sage -python elkies-k3/scripts/certify_h92_q24_a11_target_coset_bridge.sage
+sage -python elkies-k3/scripts/build_h92_q24_a11_q8_component6_section_modp.sage \
+  --prime 100003 --free-infinity --pole-order 5 --component-depth 3 \
+  --eliminate-r-count 0
+```
+
+The exact construction certificate reports two root-chain orientations, an
+MW automorphism group of order 16, eight integral-glue isometries, and four
+nef transports in exactly equation-side orbits `12` and `2162`.  Orbit `12`
+is the declared minimum-MW-L1 target and retains the historical formula
+`O+P-2F` with zero vertical-root correction.  The modular builder reports a
+26-variable, 28-equation chart with 16 infinity branches.  These are a partial
+target/marking result and a discovery system; they do not prove the section or
+q8 equation edge.
+
+<!-- status-consumer: EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET -->
+
+The target-coset certificate additionally proves that the eighteen exact
+identity-shell points generate an index-five sublattice, that the old
+pole-order-four missing-direction vector is in the wrong coset, and that the
+minimum-pole bridge is `M=(1,0,0,0,0,1)` with `P.O=5`, height `47/4` and
+correction `9/4`.  It verifies the exact equation-marked word
+`P12=M+S6-2*S2-2*S8`.  The free-infinity command emits a 36-variable,
+37-equation system covering all leading smooth-fibre points at once.  The
+recorded 600-second msolve benchmark used `-t 4 -l 42 -v 2`, completed two
+degree-eight reductions and stopped in a third `257692 x 2857438` matrix; no
+output section or non-existence conclusion was obtained.
+
+<!-- status-consumer: EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE -->
 
 The retained zero-pole boundary audit is reproduced by:
 
@@ -1962,14 +2023,17 @@ The retained zero-pole boundary audit is reproduced by:
 sage -python elkies-k3/scripts/recover_h92_q24_orbit42_zero_pole_smallprime.sage --prime 43
 sage -python elkies-k3/scripts/scan_h92_q24_orbit42_zero_pole_model_modp.sage --prime 53
 sage -python elkies-k3/scripts/lift_h92_q24_orbit42_zero_pole_sections_qq.sage --precision 65536
+sage -python elkies-k3/scripts/lift_h92_q24_orbit42_spinor_zero_pole_sections_qq.sage
+sage -python elkies-k3/scripts/construct_h92_q24_orbit42_exact_section_candidates_qq.sage
 ```
 
-The final terminal status is
-`PASS_EXACT_Q42_RATIONAL_ZERO_POLE_SECTIONS_QQ`, with nine signed pairs and
-eighteen exact characteristic-zero sections.  This proves their Weierstrass
-identities, not a non-existence theorem: the selected nontrivial spinor class,
-its RR pencil, and the A11 child remain open.  The two additional shortcut
-audits are reproduced by:
+The two final terminal statuses are
+`PASS_EXACT_Q42_RATIONAL_ZERO_POLE_SECTIONS_QQ`, with nine signed
+identity-class pairs, and `PASS_EXACT_Q42_SPINOR_ZERO_POLE_SECTIONS_QQ`, with
+the remaining opposite spinor-class pair.  All twenty zero-pole sections now
+have exact characteristic-zero Weierstrass identities.  This supplies a
+construction aid; the resolved RR pencil and A11 child remain open.  The two
+additional shortcut audits are reproduced by:
 
 ```bash
 python3 elkies-k3/scripts/run_h92_q24_orbit42_fast_parallel.py
@@ -2285,6 +2349,31 @@ sage elkies-k3/scripts/verify_q80_unmarked_first_q4_collision_qq.sage
 This does not provide its later pencils, a rootless equation, or bisections.
 
 <!-- status-consumer: EC-K3-Q80-UNMARKED-FIRST-Q4-COLLISION d18185784da1e93d -->
+
+## H3 D12 to retained-Q80 crossover audit
+
+The exact marked transport through the initial Q80 frame and pinned R17 frame
+scores all eleven retained Q80 fibre classes in the current equation-side H3
+`D12/MW5` coordinates.  It computes exact old-fibre intersections, shortest
+D12 section profiles, vertical support, pole bounds, and a connected-layer RR
+ambient estimate.  The best degree is still
+`16328023738263177`; candidate1 has degree
+`370213639961146392704841338`, so the audit rejects the proposed direct
+crossover as an equation route.
+
+This machine has the conda-forge SageMath 10.9 environment at the path used
+below.  The environment is outside the repository and does not change system
+packages:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/score_h3_d12_q80_crossovers.sage
+```
+
+The full exact table, CM24 comparison, and claim boundary are in
+[`elkies-k3/H3_D12_Q80_CROSSOVER_AUDIT_2026-08-24.md`](elkies-k3/H3_D12_Q80_CROSSOVER_AUDIT_2026-08-24.md).
+
+<!-- status-consumer: EC-K3-H3-D12-Q80-CROSSOVER-AUDIT 34f8f8038e591f00 -->
 
 ## Rootless MW17 bisection-orbit enumeration
 

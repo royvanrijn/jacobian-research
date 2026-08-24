@@ -83,3 +83,9 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/
 /artifacts/generated-results/*
 !/artifacts/generated-results/elkies-k3-rank17-to-h3-reverse-transport.json
+!/artifacts/generated-results/elliptic-curves/
+!/artifacts/generated-results/elliptic-curves/record_height_lattices_28_29_273_302_v1.json
+!/artifacts/generated-results/elliptic-curves/record_rank17_core_candidates_v1.json
+!/artifacts/generated-results/elliptic-curves/record_rank17_fingerprint_calibration_v1.json
+!/artifacts/generated-results/elliptic-curves/record_rank17_shell_embedding_search_v1.json
+!/artifacts/generated-results/elliptic-curves/icarm_construction_fingerprints_v2.json

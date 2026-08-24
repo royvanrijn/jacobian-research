@@ -73,6 +73,87 @@ sage -python elliptic-curves/scripts/verify_icarm_curve273_rank30_sage.py
 
 See [`ICARM_CURVE273_RANK30.md`](notes/ICARM_CURVE273_RANK30.md).
 
+### Comparative height lattices: ranks 28--31
+
+PARI/GP is required.  Compute the 100-digit canonical height matrices, LLL
+transforms and reduced Grams for the public rank-28, rank-29, curve-273 and
+curve-302 point lists:
+
+```sh
+PYTHONPATH=elliptic-curves/cas \
+  python3 elliptic-curves/cas/compare_record_height_lattices.py --digits 100
+```
+
+The bounded additive short-vector search is run separately for each declared
+height cutoff.  For example, the rank-29 control is:
+
+```sh
+PYTHONPATH=elliptic-curves/cas \
+  python3 elliptic-curves/cas/search_record_rank17_core.py \
+  rank29 --bound 60 --additive-pair-limit 1507 \
+  --pool 300 --trials 2000 --seed 29017 \
+  --output artifacts/local/elliptic-curves/rank29-r17-additive-ransac.txt
+```
+
+The matching commands for `rank28`, `curve273`, and `curve302` use respectively
+`(--bound, --additive-pair-limit, --trials, --seed)=(60,2423,800,28017)`,
+`(65,2500,800,27317)`, and `(70,3000,800,30217)`.  With those four local
+search files present, exactly saturate the candidate spaces and generate their
+100-digit core Grams and approximate 1,311-vector profiles:
+
+```sh
+PYTHONPATH=elliptic-curves/cas \
+  python3 elliptic-curves/cas/analyze_record_rank17_candidates.py --digits 100
+```
+
+Calibrate the forced rank-17 fingerprint against ICARM curve 245, whose exact
+Fermigier--Mestre rank-12 parent is already reconstructed.  This also fits
+exact unimodular R17 shell bases and evaluates the out-of-sample integral-point
+enrichment of each selected core.  It exactly transports the thirteen known
+generic curve-245 points into the public basis, verifies their rank-12 span and
+relation, measures its intersection with the forced rank-17 control, and
+replays all 1,311 R17 minimal lines through every fitted basis:
+
+```sh
+PYTHONPATH=elliptic-curves/cas \
+  python3 elliptic-curves/cas/calibrate_record_rank17_fingerprint.py \
+  --digits 100 --restarts 64
+```
+
+The negative control fails for both the optimized R17 basis-entry score and
+direct pairwise GL(17,Z)-plus-scale fitting.  The fitted full shells are also
+highly dispersed.  Integrality enrichment survives as evidence for structured
+cores, but the exact curve-245 replay shows that it need not recover the true
+generic subgroup.  None of these calculations is a specialization
+certificate.
+
+Run the stronger full-shell coordinate descent on all four records and the
+known negative control:
+
+```sh
+PYTHONPATH=elliptic-curves/cas \
+  python3 elliptic-curves/cas/search_record_rank17_shell_embedding.py \
+  rank28 rank29 curve273 curve302 curve245-negative-control \
+  --restarts 16 --random-steps 80 --maximum-sweeps 25
+```
+
+This minimizes the variation of all 1,311 mapped R17 minimal-vector heights.
+It also fails calibration: the curve-245 negative control scores better than
+the known R17-positive rank-29 specialization, so the values for curves 273
+and 302 are diagnostic only.
+
+Extend the exact bounded Mestre fingerprint census to curve 302:
+
+```sh
+PYTHONPATH=elliptic-curves/cas \
+  .venv/bin/python elliptic-curves/cas/analyze_icarm_construction_fingerprints.py \
+  --include-curve302
+```
+
+These are numerical/bounded provenance calculations, not a K3 specialization
+certificate.  See
+[`RECORD_CURVES_28_29_273_302_HEIGHT_LATTICES.md`](notes/RECORD_CURVES_28_29_273_302_HEIGHT_LATTICES.md).
+
 ### ICARM curves 285 and 286: low-conductor candidates
 
 ```sh

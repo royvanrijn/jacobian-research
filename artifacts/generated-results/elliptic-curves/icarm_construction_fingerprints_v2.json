@@ -1,0 +1,616 @@
+{
+  "forced_torsion_exclusion": {
+    "boundary": "This does not exclude an isogenous quotient, a different K3 fibration, or another family on the same surface.",
+    "curves": [
+      273,
+      281,
+      282,
+      285,
+      286,
+      302
+    ],
+    "reason": "that family has the rational 2-torsion point (0,0), while every target has certified trivial rational torsion",
+    "result": "none is a direct specialization of the implemented Elkies--Klagsbrun K3 model y^2=x*(x^2+2A*x+B)"
+  },
+  "inputs": {
+    "census_sources": [
+      "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_root_tuple_scale_max200_census.json",
+      "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_root_tuple_scale_max300_census.json"
+    ],
+    "fermigier_control_roots": [
+      0,
+      29,
+      658,
+      722,
+      981,
+      1036
+    ],
+    "target_source": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json",
+    "target_source_sha256": "b722a795491fa96755506b53c8261194ad1bcff28d253f5638a643dc11c12ac4"
+  },
+  "repository_model_scan": {
+    "interpretation": "Equal j is necessary but not sufficient for Q-isomorphism. Absence of an equal-j vector excludes a repository-stored Q-isomorphic copy; listed equal-j records still require twist/isomorphism checking.",
+    "json_files_with_nonsingular_five_vectors": 255,
+    "matches_by_exact_j": {
+      "273": [
+        {
+          "json_pointer": "/targets/273/ainvs",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_construction_fingerprints_v1.json"
+        },
+        {
+          "json_pointer": "/curve/ainvs",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_curve273_rank30_v1.json"
+        },
+        {
+          "json_pointer": "/curve/global_minimal_model",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_curve273_rank30_v1.json"
+        },
+        {
+          "json_pointer": "/curves/2/weierstrass_coefficients",
+          "path": "artifacts/generated-results/elliptic-curves/record_height_lattices_28_29_273_302_v1.json"
+        }
+      ],
+      "281": [
+        {
+          "json_pointer": "/curves/0/independence_certificate/short_model",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_independence_analysis_v1.json"
+        },
+        {
+          "json_pointer": "/curves/3/ainvs",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json"
+        },
+        {
+          "json_pointer": "/targets/281/ainvs",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_construction_fingerprints_v1.json"
+        }
+      ],
+      "282": [
+        {
+          "json_pointer": "/curves/1/independence_certificate/short_model",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_independence_analysis_v1.json"
+        },
+        {
+          "json_pointer": "/curves/2/ainvs",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json"
+        },
+        {
+          "json_pointer": "/targets/282/ainvs",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_construction_fingerprints_v1.json"
+        }
+      ],
+      "285": [
+        {
+          "json_pointer": "/curves/2/independence_certificate/short_model",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_independence_analysis_v1.json"
+        },
+        {
+          "json_pointer": "/curves/0/ainvs",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json"
+        },
+        {
+          "json_pointer": "/targets/285/ainvs",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_construction_fingerprints_v1.json"
+        }
+      ],
+      "286": [
+        {
+          "json_pointer": "/curves/3/independence_certificate/short_model",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_independence_analysis_v1.json"
+        },
+        {
+          "json_pointer": "/curves/1/ainvs",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json"
+        },
+        {
+          "json_pointer": "/targets/286/ainvs",
+          "path": "artifacts/generated-results/elliptic-curves/icarm_construction_fingerprints_v1.json"
+        }
+      ],
+      "302": [
+        {
+          "json_pointer": "/curves/3/weierstrass_coefficients",
+          "path": "artifacts/generated-results/elliptic-curves/record_height_lattices_28_29_273_302_v1.json"
+        }
+      ]
+    },
+    "nonsingular_five_vectors_tested": 13283
+  },
+  "reproducing_command": "python3 elliptic-curves/cas/analyze_icarm_construction_fingerprints.py --include-curve302",
+  "schema": "elliptic-curves.icarm-construction-fingerprints.v2",
+  "six_root_mestre_recognition": {
+    "boundary": "No-match results exclude only this fixed-root Mestre census. They do not exclude larger root tuples, generalized Mestre constructions, Kihara/Nagao families, K3 descendants, isogenous images, or private families.",
+    "census_family_count": 2330,
+    "diameter_at_most_300_family_count": 2329,
+    "modular_primes": [
+      101,
+      103,
+      107,
+      109,
+      127,
+      131,
+      137,
+      139
+    ],
+    "scope": "complete normalized nonsingular six-root census through diameter 300 plus the larger Fermigier control tuple",
+    "targets": [
+      {
+        "curve_id": 273,
+        "exact_factorization_survivor_count": 113,
+        "exact_j_matches": [],
+        "families_tested": 2330,
+        "modular_no_root_witness_histogram": {
+          "101": 576,
+          "103": 715,
+          "107": 314,
+          "109": 174,
+          "127": 168,
+          "131": 125,
+          "137": 92,
+          "139": 53
+        },
+        "survivors_with_rational_square_parameter": []
+      },
+      {
+        "curve_id": 281,
+        "exact_factorization_survivor_count": 150,
+        "exact_j_matches": [],
+        "families_tested": 2330,
+        "modular_no_root_witness_histogram": {
+          "101": 583,
+          "103": 498,
+          "107": 358,
+          "109": 191,
+          "127": 221,
+          "131": 133,
+          "137": 143,
+          "139": 53
+        },
+        "survivors_with_rational_square_parameter": []
+      },
+      {
+        "curve_id": 282,
+        "exact_factorization_survivor_count": 113,
+        "exact_j_matches": [
+          {
+            "parameter_T": "11671/21",
+            "roots": [
+              0,
+              29,
+              658,
+              722,
+              981,
+              1036
+            ]
+          }
+        ],
+        "families_tested": 2330,
+        "modular_no_root_witness_histogram": {
+          "101": 532,
+          "103": 769,
+          "107": 244,
+          "109": 319,
+          "127": 136,
+          "131": 93,
+          "137": 80,
+          "139": 44
+        },
+        "survivors_with_rational_square_parameter": [
+          {
+            "modular_root_counts": [
+              [
+                101,
+                3
+              ],
+              [
+                103,
+                2
+              ],
+              [
+                107,
+                4
+              ],
+              [
+                109,
+                3
+              ],
+              [
+                127,
+                4
+              ],
+              [
+                131,
+                3
+              ],
+              [
+                137,
+                1
+              ],
+              [
+                139,
+                2
+              ]
+            ],
+            "rational_square_parameters": [
+              "11671/21"
+            ],
+            "roots": [
+              0,
+              29,
+              658,
+              722,
+              981,
+              1036
+            ]
+          }
+        ]
+      },
+      {
+        "curve_id": 285,
+        "exact_factorization_survivor_count": 79,
+        "exact_j_matches": [],
+        "families_tested": 2330,
+        "modular_no_root_witness_histogram": {
+          "101": 995,
+          "103": 616,
+          "107": 237,
+          "109": 159,
+          "127": 78,
+          "131": 87,
+          "137": 53,
+          "139": 26
+        },
+        "survivors_with_rational_square_parameter": []
+      },
+      {
+        "curve_id": 286,
+        "exact_factorization_survivor_count": 140,
+        "exact_j_matches": [],
+        "families_tested": 2330,
+        "modular_no_root_witness_histogram": {
+          "101": 532,
+          "103": 531,
+          "107": 360,
+          "109": 310,
+          "127": 186,
+          "131": 113,
+          "137": 88,
+          "139": 70
+        },
+        "survivors_with_rational_square_parameter": []
+      },
+      {
+        "curve_id": 302,
+        "exact_factorization_survivor_count": 146,
+        "exact_j_matches": [],
+        "families_tested": 2330,
+        "modular_no_root_witness_histogram": {
+          "101": 646,
+          "103": 392,
+          "107": 337,
+          "109": 269,
+          "127": 209,
+          "137": 211,
+          "139": 120
+        },
+        "survivors_with_rational_square_parameter": []
+      }
+    ]
+  },
+  "status": "complete bounded exact construction-recognition screen",
+  "targets": {
+    "273": {
+      "ainvs": [
+        "1",
+        "0",
+        "0",
+        "-201769035260418549083594900060734240952308696994802735114305555",
+        "1151107939141058565733479426024323225135665982951300586808823640527729578307228357301072889377"
+      ],
+      "j": "-908421207611619966397301371501291919756761922734684482806268125472094471799504840865963593736467876552674219212405145331405042867323019584013417593982615086603074757004166961559271290889612721/46714661255308767314567688733841531918983356002159772613256840842851650254036518701100578342601553513579222272710220496887616034526983492843954090554197033638137245037791044053017600000000",
+      "point_denominators": {
+        "distinct_sqrt_x_denominator_count": 10,
+        "gcd_sqrt_x_denominators": 1,
+        "integral_x_count": 19,
+        "interpretation_boundary": "A reduced Mordell--Weil basis can obscure the raw construction sections; this fingerprint is diagnostic, not a family certificate.",
+        "point_count": 30,
+        "prime_support": [
+          2,
+          3,
+          5,
+          13,
+          23,
+          37,
+          97,
+          1327,
+          19963
+        ],
+        "sqrt_x_denominators": [
+          1,
+          2,
+          3,
+          5,
+          13,
+          23,
+          37,
+          97,
+          1327,
+          19963
+        ]
+      },
+      "rational_torsion": "trivial, by the separately pinned exact curve certificate"
+    },
+    "281": {
+      "ainvs": [
+        "1",
+        "0",
+        "0",
+        "-26209631133105489807468060702",
+        "1629345706371694346940183718532493403517124"
+      ],
+      "j": "1991161281218193546356044300569933537573823853021873343638659072525730123754723003730459873/5432877975727185226735785866014954478423233775179229622774668572659776350389518843904",
+      "point_denominators": {
+        "distinct_sqrt_x_denominator_count": 13,
+        "gcd_sqrt_x_denominators": 1,
+        "integral_x_count": 7,
+        "interpretation_boundary": "A reduced Mordell--Weil basis can obscure the raw construction sections; this fingerprint is diagnostic, not a family certificate.",
+        "point_count": 19,
+        "prime_support": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          17,
+          19,
+          29,
+          79,
+          97,
+          163,
+          191,
+          743,
+          4451,
+          7159,
+          20051
+        ],
+        "sqrt_x_denominators": [
+          1,
+          11,
+          19,
+          22,
+          25,
+          191,
+          1358,
+          1682,
+          7159,
+          12631,
+          12877,
+          66765,
+          1944947
+        ]
+      },
+      "rational_torsion": "trivial, by the separately pinned exact curve certificate"
+    },
+    "282": {
+      "ainvs": [
+        "0",
+        "1",
+        "0",
+        "-724392592785859978141334075420616",
+        "7118072780333921924205799244128960519106245831620"
+      ],
+      "j": "41053081173544969584269465886105222910276518783704173948262625831542588253092643454631167373056572196/2382446328805378714772428079500289409508353983274485333109053242725752120165935552776762492503925",
+      "point_denominators": {
+        "distinct_sqrt_x_denominator_count": 19,
+        "gcd_sqrt_x_denominators": 1,
+        "integral_x_count": 1,
+        "interpretation_boundary": "A reduced Mordell--Weil basis can obscure the raw construction sections; this fingerprint is diagnostic, not a family certificate.",
+        "point_count": 20,
+        "prime_support": [
+          2,
+          5,
+          7,
+          17,
+          43,
+          47,
+          53,
+          61,
+          79,
+          137,
+          157,
+          439,
+          1061,
+          1201,
+          2017,
+          3851,
+          5737,
+          10903,
+          74027
+        ],
+        "sqrt_x_denominators": [
+          1,
+          2,
+          5,
+          7,
+          17,
+          53,
+          61,
+          137,
+          157,
+          799,
+          1061,
+          1201,
+          2017,
+          2195,
+          7702,
+          8374,
+          10903,
+          74027,
+          246691
+        ]
+      },
+      "rational_torsion": "trivial, by the separately pinned exact curve certificate"
+    },
+    "285": {
+      "ainvs": [
+        "0",
+        "-1",
+        "0",
+        "-108391804584990603814796450120",
+        "13755098120758219348428060610562384253731136"
+      ],
+      "j": "-137534956958959875658649865753985413726619184818863411281142671036870152384737443964383524/227910338112679744969436886726814874185266384845663734114678771476940316478016394667",
+      "point_denominators": {
+        "distinct_sqrt_x_denominator_count": 20,
+        "gcd_sqrt_x_denominators": 1,
+        "integral_x_count": 2,
+        "interpretation_boundary": "A reduced Mordell--Weil basis can obscure the raw construction sections; this fingerprint is diagnostic, not a family certificate.",
+        "point_count": 21,
+        "prime_support": [
+          2,
+          5,
+          11,
+          19,
+          31,
+          37,
+          43,
+          61,
+          67,
+          73,
+          83,
+          149,
+          157,
+          193,
+          331,
+          1721,
+          1364963
+        ],
+        "sqrt_x_denominators": [
+          1,
+          2,
+          8,
+          11,
+          25,
+          61,
+          67,
+          74,
+          128,
+          157,
+          215,
+          298,
+          341,
+          475,
+          1577,
+          1721,
+          2701,
+          6289,
+          16019,
+          1364963
+        ]
+      },
+      "rational_torsion": "trivial, by the separately pinned exact curve certificate"
+    },
+    "286": {
+      "ainvs": [
+        "1",
+        "-1",
+        "1",
+        "-11525691028496208487693310738282",
+        "18833323594165105316445398903949581636278347689"
+      ],
+      "j": "-232272130428973862327781554052424230174468214598189351411062430190918055281921982903633639358809/75772340877328085674921853422124938783046156016372736772652112104648411927352528137600000000",
+      "point_denominators": {
+        "distinct_sqrt_x_denominator_count": 17,
+        "gcd_sqrt_x_denominators": 1,
+        "integral_x_count": 5,
+        "interpretation_boundary": "A reduced Mordell--Weil basis can obscure the raw construction sections; this fingerprint is diagnostic, not a family certificate.",
+        "point_count": 21,
+        "prime_support": [
+          2,
+          3,
+          13,
+          17,
+          23,
+          29,
+          31,
+          43,
+          71,
+          73,
+          83,
+          103,
+          263,
+          1907,
+          2713,
+          3413,
+          4051,
+          7919,
+          10861
+        ],
+        "sqrt_x_denominators": [
+          1,
+          23,
+          39,
+          43,
+          73,
+          83,
+          103,
+          391,
+          899,
+          2059,
+          2713,
+          3413,
+          5721,
+          7919,
+          10861,
+          18673,
+          32408
+        ]
+      },
+      "rational_torsion": "trivial, by the separately pinned exact curve certificate"
+    },
+    "302": {
+      "ainvs": [
+        "1",
+        "1",
+        "1",
+        "-1284727764113567728281797636015784768866707681415849262157224232063",
+        "560368321454261339256859338901915312332769858684945406858043869199456710681989058863306170127006181"
+      ],
+      "j": "375212263011874190418465904591842149883143397000379116040077721209939307800933802063374036449207052554068812677819360841029222896769044613030052189320099029335648176287279769780720048237450063678337025/91178667460631761509802129711614912708907877152843688131591561513957139867216918982080782638846592571825918112525868294328087917747020295905203091292094298537560118649108877196489360560362979328",
+      "point_denominators": {
+        "distinct_sqrt_x_denominator_count": 12,
+        "gcd_sqrt_x_denominators": 1,
+        "integral_x_count": 18,
+        "interpretation_boundary": "A reduced Mordell--Weil basis can obscure the raw construction sections; this fingerprint is diagnostic, not a family certificate.",
+        "point_count": 31,
+        "prime_support": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          29,
+          31,
+          43,
+          103,
+          229,
+          60257
+        ],
+        "sqrt_x_denominators": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          22,
+          29,
+          31,
+          43,
+          229,
+          2987,
+          60257
+        ]
+      },
+      "rational_torsion": "trivial, by the separately pinned exact curve certificate"
+    }
+  }
+}

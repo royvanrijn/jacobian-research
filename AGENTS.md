@@ -10,6 +10,11 @@ changes narrow, reproducible, and explicit about what has actually been proved.
   catalogue.
 - `verified/`, `cancellation/`, `extended-geometry/`, and `plane-jc/` contain
   active mathematical notes. `formal/` contains Lean developments.
+- `elkies-k3/` has its own `AGENTS.md`. Start its work from
+  `elkies-k3/ELKIES_K3_PROCESS_ATLAS.md` and read
+  `elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md` before generalizing a new
+  behavior. Do not infer the mechanism from an isolated artifact or old search
+  script.
 - `scripts/` contains checkers and experiments. Prefer extending a nearby
   script over introducing a second implementation of the same calculation.
 - `papers/` contains manuscripts; `archive/` is historical and should not be
