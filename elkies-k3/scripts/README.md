@@ -49,19 +49,16 @@ it records a bounded negative result, a normalization bug, or a useful local mod
 
 - For the story and lessons, read `../ELKIES_K3_PROCESS_ATLAS.md`.
 - For pinned commands and hashes, use `success-path/ledger.json`.
-- Equation proofs currently stop at the marked `A11/MW6` child; the lattice
+- Equation proofs currently stop at the component-9-zero `2A5/MW7` child; the lattice
   route reaches R17.
 - `lift_h92_q24_orbit42_resolved_rr_qq.sage` and
   `certify_h92_q24_orbit42_a11_equation_marking.sage` are the exact equation
   and marking proofs for that child.
-- Work next on equation-side q8 orbit12 from the orbit64 A11 frame.  The
-  construction certificate transports historical orbit922 through the full
-  root/MW/glue marking and retains the literal `O+P-2F` formula with zero
-  vertical-root correction.  The target-coset certificate then proves that
-  the exact shell has index five and selects the minimum-pole bridge
-  `M=(1,0,0,0,0,1)`, with `P12=M+S6-2*S2-2*S8`.  Continue from the
-  free-infinity pole-order-five/component-depth-three chart; do not restart
-  q8, q24, zero-pole, point-transport or halving searches.
+- Work next on the promoted q6/orbit1307 lift from the exact component-9-zero
+  `2A5/MW7` child.  The preceding A11 q8/orbit12 horizontal, resolved RR
+  plane, quartic/Jacobian, physical roots, zero, and bidirectional NS marking
+  are closed.  Do not restart q8, q24, zero-pole, point-transport or halving
+  searches.
 
 ## Current proof and compiler entry points
 
@@ -157,9 +154,79 @@ coordinates. It also retains the exact bridge between the dominant D13
 lattice marking and the distinct component-nef D13 equation marking; that
 bridge changes the embedded `U`.
 
+The former q4/orbit230--q6/orbit1315 and q6/orbit1307 promotions are withdrawn
+as equation-cost targets.  Exact physical-chamber audits show respectively a
+pseudo-zero after the q4 return and a non-section component-10 zero after the
+q6 Weyl repair.  The relevant route and correction scripts are:
+
+- `search_h92_a5a5_zero_changing_loops.sage` — **ACTIVE_SEARCH** for the
+  exhaustive 283-first-edge/558-zero q4/q6 loop ranking;
+- `certify_h92_a5a5_q6o1307_promoted_route.sage` — **ACTIVE_PROOF** for the
+  earlier abstract q6/orbit1307 splice, retained as an exact historical
+  comparator only;
+- `audit_h92_a5a5_q6o1307_physical_nef.sage` — exact physical-I6 Weyl repair;
+  it preserves P1307, rejects component 10 as a zero, and exposes physical
+  degree-one components 3, 5, and 9 with estimated RR profile `9 -> 3 -> 2`;
+- `export_h92_a5a5_physical_source_marking.sage` — exports the exact
+  component-9-zero `2A5` equation frame with all suffix/reverse target fibres;
+- `export_h92_a5a5_zero_loop_returned_marking.sage` — exports any exact
+  changed-zero `2A5/MW7` marking with its equation-A11 transport;
+- `search_h92_d13_zero_changing_d12_presentations.sage --mode a5` — evaluates
+  second zero changes using inherited-explicit curve degrees and per-edge
+  horizontal-cost floors;
+- `certify_h92_a5a5_q6o3372_q6o2052_promoted_route.sage --variant q230` —
+  **ACTIVE_PROOF** for q4/orbit230, q4 return, q6/orbit1315, q4 return, q4
+  exit, the exact current-`3A3` landing, and pinned R17 endpoint;
+- `build_h92_a11_route_optimization_handoff.py` — the compact machine handoff
+  generator consumed by
+  [`../A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md`](../A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md).
+
+The historical 4,199 and 10,334 totals are not equation-realizable as stated,
+and the old q104/13,518 comparator is also non-nef in the physical I6 chamber.
+`certify_h92_a5a5_direct_physical_q10.sage` reduces it exactly to q10 and
+certifies the canonical current-3A3 landing.
+`certify_h92_a5a5_direct_physical_q10_promoted_route.sage` composes that landing
+to pinned R17 and promotes the 4,471 operational target (5,071 with the older
+affine-omitting curve convention).  This is the current lifting target while
+lower-score lateral searches continue.
+
+The promoted replay target now begins one stage earlier:
+
+- `search_h92_d13_zero_changing_d12_presentations.sage --mode d13` — exact
+  search over the compact q4/q6/q8 equation-D13 frontier, all degree-one old
+  D13 component zeros, exact return fibres, and the fixed current-D12 exit;
+- `certify_h92_d13_q4o11_promoted_route.sage` — **ACTIVE_PROOF** for the
+  q4/orbit11, q4-return, q24-exit splice, exact current-D12 landing, and full
+  pinned-R17 endpoint;
+- `search_h92_d13_zero_changing_d12_presentations.sage --mode a11` — the
+  companion first-q8 audit.  It scans all 1,119 declared-nef candidates and
+  ranks inherited-explicit costs; no presentation beats orbit12. Twenty-four
+  nonprimitive-root re-zeroings are handled by saturated unimodular frames
+  retaining the embedded simple-root lattice.
+- `export_h92_first_q8_source_marking.sage` and
+  `export_h92_first_q8_zero_loop_returned_marking.sage` — export the exact
+  equation-explicit E8+E6 source and its q4/orbit11 changed-zero return state;
+- `certify_h92_first_q8_q4o11_promoted_route.sage` — **ACTIVE_PROOF** for the
+  q4/orbit11, q4-return, q4-exit replacement of the first q8, its exact
+  equation-D13 landing, and the full pinned-R17 endpoint.
+
+The D13 splice scores 25,323 against the measured-RR-calibrated direct q24
+score 27,885. It rejoins the exact current D12 basis, keeps A11 q8/orbit12,
+then uses the promoted q4/orbit230 and q6/orbit1315 double-zero suffix.
+
+The earlier first q8 now has a cheaper exact replay: q4/orbit11, q4 return,
+q4 exit scores 3,961 against 5,802 for direct q8. A complete second q4/q6/q8
+zero-loop layer from the returned E8+E6 marking has 38 exact presentations and
+no winner. Widened q10 degree-two, q6/q9/q12 degree-three, and
+q8/q12/q16 degree-four searches likewise have no winner. The promoted full H3 route is recorded in
+`elkies-k3-h3-first-q8-q4o11-promoted-route-certificate.json`.
+The exact changed-zero D13 landing is exported separately and its 73-presentation
+D12 crossover scan rejects carrying that zero into the canonical D13 splice.
+
 ### H3 q24 closeout and orbit42 frontier
 
-The q24 equation edge is closed and the selected route is fixed. Do not reopen
+The direct q24 equation edge is closed.  For a new replay, prefer the promoted
+D13 q4/orbit11 zero-changing presentation above. Do not reopen
 q32, native q24 suffixes, generic q24 section Hensel lifting, or easy orbit42
 zero-pole searches as the active path.
 
@@ -265,6 +332,53 @@ Orbit42/D12 profile rule:
   **ACTIVE_PROOF_WITH_GOOD_REDUCTION_MARKING_BOUNDARY**. The exact
   identity-shell degree fingerprint at p=100003 selects orbit64/mapping7 in
   the C10 orientation, with orbit65/mapping6 as spinor conjugate.
+- `lift_h92_q24_a11_q8_residual_resolved_hensel.sage` and
+  `derive_h92_q24_a11_q8_difference_qq.sage` — **EXACT_CONSTRUCTION**.  The
+  first lifts the regular six-variable component-3 residual chart; the second
+  uses fraction-free group law to derive the selected `(16,24,6)` q8
+  horizontal without the former 36-variable lift.
+- `lift_h92_q24_a11_q8_resolved_rr_qq.sage` — **ACTIVE_PROOF**.  It certifies
+  the exact 14-to-2 recurrence RR plane, quartic, globally minimal
+  `2I6+12I1` Jacobian, Euler number 24, and `2A5/MW7` classification without
+  a Groebner basis.
+- `certify_h92_q24_a11_q8_equation_marking_qq.sage` — **ACTIVE_PROOF**.  The
+  nodal-cubic sign identity selects `old_A11_component_9` as the exact child
+  zero, transports the affine component as a `(4,6,0)` section, attaches the
+  two physical A5 chains, and verifies determinant-`-1` NS transports in both
+  directions.
+- `transport_h92_q24_a11_degree_one_shell_qq.sage` —
+  **EXACT_CONSTRUCTION_AID**.  It transports the two degree-one identity
+  curves and the degree-one spinor curve by Möbius inversion and exact binary
+  quartic covariants, and verifies the pointed opposite relation over QQ.
+- `audit_h92_q24_a11_missing_direction_alternatives.sage` —
+  **EXACT_NEGATIVE_CONSTRUCTION_AUDIT**.  It proves that all three exact
+  degree-one transports remain in the known fifth-coordinate-zero parent
+  hyperplane, that q8 orbit2162 only reverses the required child coordinate,
+  and that the smallest parent carrier is the D12 `P.O=4` vector
+  `(0,0,0,0,1)`.
+- `audit_h92_a11_quintic_bridge_zero_mismatch.sage` —
+  **EXACT_REJECTION_CERTIFICATE**.  It replays the selected `R3`-zero frame
+  and rejects the former quintic shortcut, which had mixed it with `A0`-zero
+  coordinates.  The compatible degrees are 46 and 4, and the claimed word
+  does not equal `M`.
+- `audit_h92_a11_explicit_aj_carriers.sage` —
+  **EXACT_ALTERNATIVE-CONSTRUCTION_AUDIT**.  It scans all stored explicit
+  (-2)-classes in the selected marking.  No positive single carrier works;
+  the first positive subset uses degree-40 and degree-44 traces, so it is a
+  fallback rather than the active route.
+- `score_h92_a11_equation_cost_neighbors.sage` and
+  `certify_h92_a11_equation_cost_orbit849.sage` —
+  **EXACT_ROUTE-PLANNING/AUDIT**.  The first scores all declared neighbours;
+  the second applies the stronger nefness and marked-U gates.  Low-score
+  orbits 849 and 591 fail nefness; passing lateral candidates do not yet have
+  the required 2A5-to-pinned-R17 continuation.
+- `probe_h92_q24_a11_close_p24_quintic_modp.sage` —
+  **MODULAR_RESOLUTION_GATE**.  It composes both pointed quartics using only
+  univariate arithmetic and rejects the naive unresolved restriction:
+  q24 degree 14 and A11 degrees 39/41 replace the compatible
+  strict-transform degree 46.  Both tangent signs vanish in the raw chord
+  discriminant but are cancelled from the normalized quartic, locating the
+  issue at the resolved base locus.
 - `preflight_h92_q24_o12_p42_exact_q6_points.sage` and
   `run_h92_q24_orbit42_fast_parallel.py` — **EXACT_NEGATIVE_AUDIT** for the
   rejected q6-point transport.  The named equation-D13 coordinate conversion
@@ -287,8 +401,8 @@ Archived q24 dead ends:
 
 These record why p-adic direct lifting/SRR was abandoned. Do not increase Hensel
 precision or reconstruct the generic q24 section as the next step. The q24
-`D12/MW5` child and orbit42 A11 child are closed. Continue from the equation-
-side orbit64 A11 frame to the q8 `2A5/MW7` edge.
+`D12/MW5`, orbit42 `A11/MW6`, and q8 orbit12 `2A5/MW7` children are closed.
+Continue from the component-9-zero child to q6/orbit1307.
 
 ### Q80 compiler and regression route
 

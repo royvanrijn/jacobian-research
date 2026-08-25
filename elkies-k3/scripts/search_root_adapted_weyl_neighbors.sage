@@ -54,6 +54,28 @@ parser.add_argument(
 parser.add_argument("--output", type=Path)
 parser.add_argument("--frames-dir", type=Path)
 parser.add_argument(
+    "--pari-gb",
+    type=int,
+    default=1,
+    help="PARI stack size in GiB for large Mordell--Weil shells (default: 1)",
+)
+parser.add_argument(
+    "--filter-marking",
+    type=Path,
+    help="optional exact source marking used to filter by one marked target degree",
+)
+parser.add_argument("--filter-target", help="target key in --filter-marking")
+parser.add_argument(
+    "--filter-max-degree",
+    type=int,
+    help="retain only fibres meeting --filter-target in at most this degree",
+)
+parser.add_argument(
+    "--filter-linear-vector",
+    help="optional comma-separated source coordinates for a second linear pairing filter",
+)
+parser.add_argument("--filter-linear-max", type=int)
+parser.add_argument(
     "--adapt-mw-at-least",
     type=int,
     help=(
@@ -120,7 +142,21 @@ parser.add_argument(
     default=500,
     help="emit streamed-test progress every N witnesses (default: 500)",
 )
+parser.add_argument(
+    "--select-orbit-index",
+    type=int,
+    action="append",
+    help=(
+        "process only these deterministic dominant-orbit indices; repeat for "
+        "several indices. This is an exact selected-candidate reconstruction, "
+        "not an exhaustive shell classification"
+    ),
+)
 args = parser.parse_args()
+if args.pari_gb < 1:
+    parser.error("--pari-gb must be positive")
+if args.pari_gb != 1:
+    pari.allocatemem(args.pari_gb * 1024**3)
 if args.stream_first_growth and not args.stop_after_first_growth:
     parser.error("--stream-first-growth requires --stop-after-first-growth")
 if args.mw_vectors_cache is not None and len(set(args.q)) != 1:
@@ -131,6 +167,15 @@ if args.stream_progress_every <= 0:
     parser.error("--stream-progress-every must be positive")
 if args.mw_vector_cap is not None and args.mw_vector_cap <= 0:
     parser.error("--mw-vector-cap must be positive")
+if any(value is not None for value in
+       (args.filter_marking, args.filter_target, args.filter_max_degree)):
+    if any(value is None for value in
+           (args.filter_marking, args.filter_target, args.filter_max_degree)):
+        parser.error("the three --filter-* arguments must be supplied together")
+    if args.filter_max_degree < 0:
+        parser.error("--filter-max-degree must be nonnegative")
+if (args.filter_linear_vector is None) != (args.filter_linear_max is None):
+    parser.error("--filter-linear-vector and --filter-linear-max must be supplied together")
 
 
 def load_gram(path):
@@ -380,19 +425,21 @@ assert frame.nrows() == frame.ncols() == 17
 assert frame.is_positive_definite()
 determinant = abs(ZZ(frame.det()))
 root_rank = args.root_rank
-assert 0 < root_rank < 17
+assert 0 <= root_rank < 17
 cartan = frame[:root_rank, :root_rank]
-assert set(cartan.diagonal()) == {2}
-assert all(
-    cartan[row, column] in (0, -1)
-    for row in range(root_rank)
-    for column in range(root_rank)
-    if row != column
-)
-assert cartan.rank() == root_rank
+if root_rank:
+    assert set(cartan.diagonal()) == {2}
+    assert all(
+        cartan[row, column] in (0, -1)
+        for row in range(root_rank)
+        for column in range(root_rank)
+        if row != column
+    )
+    assert cartan.rank() == root_rank
 input_roots, input_root_basis, input_root_data = roots_and_data(frame)
 assert input_root_data[0] == root_rank
-assert matrix(ZZ, [list(row) for row in input_roots]).row_module() == input_root_basis.row_module()
+if root_rank:
+    assert matrix(ZZ, [list(row) for row in input_roots]).row_module() == input_root_basis.row_module()
 components = connected_components(cartan)
 input_ade = ade_name(cartan)
 adapt_mw_at_least = (
@@ -402,12 +449,26 @@ adapt_mw_at_least = (
 )
 coupling = frame[:root_rank, root_rank:]
 tail = frame[root_rank:, root_rank:]
-height = tail - coupling.transpose() * cartan.inverse() * coupling
+height = tail if root_rank == 0 else tail - coupling.transpose() * cartan.inverse() * coupling
 assert height.is_positive_definite()
 
 all_records = []
 summaries = []
 ns = block_diagonal_matrix(U, -frame)
+marked_filter = None
+linear_filter = None
+if args.filter_marking is not None:
+    filter_payload = json.loads(args.filter_marking.resolve().read_text())
+    target_container = filter_payload.get(
+        "target_fibres_in_root_adapted_hub",
+        filter_payload.get("target_fibres_in_child"),
+    )
+    assert target_container is not None and args.filter_target in target_container
+    marked_filter = vector(ZZ, target_container[args.filter_target])
+    assert marked_filter * ns * marked_filter == 0
+if args.filter_linear_vector is not None:
+    linear_filter = vector(ZZ, [ZZ(value) for value in args.filter_linear_vector.split(",")])
+    assert len(linear_filter) == 19
 for q in sorted(set(args.q)):
     assert q > 0 and q % args.degree == 0
     target = ZZ(2 * q)
@@ -508,7 +569,7 @@ for q in sorted(set(args.q)):
                 )
 
     combine_component_weights(0, [], QQ(0))
-    cartan_inverse = cartan.inverse()
+    cartan_inverse = cartan.inverse() if root_rank else matrix(QQ, 0, 0)
     dominant_orbits = {}
     stream_seen = set()
     stream_hit = None
@@ -522,12 +583,17 @@ for q in sorted(set(args.q)):
             for component, (values, _) in zip(components, choices):
                 for index, value in zip(component, values):
                     labels[index] = value
-            root_coordinates = cartan_inverse * (labels - coupling * mw)
+            root_coordinates = (
+                vector(ZZ, [])
+                if root_rank == 0
+                else cartan_inverse * (labels - coupling * mw)
+            )
             if not all(value in ZZ for value in root_coordinates):
                 continue
             witness = vector(ZZ, list(root_coordinates) + list(mw))
             assert witness * frame * witness == target
-            assert cartan * root_coordinates + coupling * mw == labels
+            if root_rank:
+                assert cartan * root_coordinates + coupling * mw == labels
             witness_key = tuple(witness)
             orbit_data = (tuple(mw), tuple(labels))
             if not args.stream_first_growth:
@@ -601,9 +667,23 @@ for q in sorted(set(args.q)):
         orbit_entries = enumerate(sorted(dominant_orbits.items()), start=1)
     for orbit_index, (witness_tuple, orbit_data) in orbit_entries:
         screened_orbits = orbit_index
+        if (args.select_orbit_index is not None
+                and orbit_index not in set(args.select_orbit_index)):
+            continue
         mw_tuple, labels_tuple = orbit_data
         witness = vector(ZZ, witness_tuple)
         fiber = vector(ZZ, [factor_a, factor_b] + list(witness))
+        marked_filter_degree = None
+        if marked_filter is not None:
+            marked_filter_degree = ZZ(fiber * ns * marked_filter)
+            assert marked_filter_degree >= 0
+            if marked_filter_degree > args.filter_max_degree:
+                continue
+        linear_filter_value = None
+        if linear_filter is not None:
+            linear_filter_value = ZZ(fiber * ns * linear_filter)
+            if linear_filter_value < 0 or linear_filter_value > args.filter_linear_max:
+                continue
         result = child_frame(ns, fiber, determinant)
         if result is None:
             nonprimitive += 1
@@ -652,6 +732,18 @@ for q in sorted(set(args.q)):
             "child_mw_rank": child_mw_rank,
             "child_ade": child_ade,
         }
+        if marked_filter_degree is not None:
+            record["marked_filter"] = {
+                "target": args.filter_target,
+                "degree": int(marked_filter_degree),
+                "maximum": args.filter_max_degree,
+            }
+        if linear_filter_value is not None:
+            record["marked_linear_filter"] = {
+                "value": int(linear_filter_value),
+                "maximum": args.filter_linear_max,
+                "vector": list(map(int, linear_filter)),
+            }
         if adapted_data is not None:
             record.update(
                 {
@@ -764,7 +856,12 @@ if args.frames_dir is not None:
         path.write_text("\n".join(lines) + "\n")
 
 payload = {
-    "status": "PASS_ROOT_ADAPTED_WEYL_NEIGHBORS",
+    "status": (
+        "PASS_ROOT_ADAPTED_WEYL_SELECTED_NEIGHBORS"
+        if args.select_orbit_index is not None
+        else "PASS_ROOT_ADAPTED_WEYL_NEIGHBORS_TARGET_FILTERED"
+        if marked_filter is not None else "PASS_ROOT_ADAPTED_WEYL_NEIGHBORS"
+    ),
     "frame": frame_display_path,
     "determinant": int(determinant),
     "input_root_data": list(map(int, input_root_data)),
@@ -774,6 +871,25 @@ payload = {
     "summaries": summaries,
     "neighbors": all_records,
 }
+if args.select_orbit_index is not None:
+    payload["selected_orbit_indices"] = sorted(set(args.select_orbit_index))
+    payload["selection_scope"] = (
+        "Exact reconstruction and root adaptation of the listed deterministic "
+        "dominant-orbit indices; no completeness claim for the surrounding shell."
+    )
+if marked_filter is not None:
+    payload["marked_target_filter"] = {
+        "marking": display_path(args.filter_marking),
+        "target": args.filter_target,
+        "maximum_degree": args.filter_max_degree,
+        "scope": "complete dominant-orbit enumeration at the listed q values",
+    }
+if linear_filter is not None:
+    payload["marked_linear_filter"] = {
+        "vector": list(map(int, linear_filter)),
+        "maximum": args.filter_linear_max,
+        "scope": "complete dominant-orbit enumeration at the listed q values",
+    }
 if args.output is not None:
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(

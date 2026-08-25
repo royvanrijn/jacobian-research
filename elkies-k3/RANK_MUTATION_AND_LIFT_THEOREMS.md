@@ -165,6 +165,114 @@ supplied finite list proves only `nef_on_declared_walls`. Global nefness needs
 either all effective `(-2)` walls or an independent effective-cone theorem.
 This is precisely the boundary already recorded by the exact-neighbour engine.
 
+### Proposition C2: finite horizontal-wall test at fixed old-fibre degree
+
+Write a marked Neron--Severi lattice as `U + L(-1)`, with positive-definite
+Gram matrix `M` on `L`, and let
+
+```text
+D=(a,b,w),  D^2=0,  b>0.
+```
+
+For an old-horizontal `(-2)` class `C=(k,m,x)`, set `y=b*x-m*w`.  Then
+
+```text
+y.M.y = 2*b*m*(D.C) + 2*b^2.
+```
+
+Consequently, after vertical walls have been checked, every horizontal wall
+with `D.C<0` occurs for some `1<=m<=b` among the finite vectors
+
+```text
+y == -m*w (mod b*L),   y.M.y < 2*b^2,
+```
+
+subject to `x=(y+m*w)/b` being integral and
+`k=(x.M.x-2)/(2*m)` being integral.  Thus nefness at any fixed horizontal
+degree `b` has an exact finite lattice test; it is not restricted to the
+section-only closest-vector gate.
+
+#### Proof
+
+The root equation gives `x.M.x=2*k*m+2`, while isotropy gives
+`w.M.w=2*a*b`. Expanding `(b*x-m*w).M.(b*x-m*w)` yields the displayed
+identity. If an effective irreducible curve has negative intersection with
+the effective class `D`, it is a fixed component, so `D-C` is effective and
+`0<=F.(D-C)=b-m`; hence `0<=m<=b`. The case `m=0` is vertical. For `m>0`,
+negative intersection forces the stated strict norm bound, and the congruence
+and divisibility conditions reconstruct exactly the possible root classes.
+Finiteness follows from positive-definiteness of `M`. QED.
+
+#### Corollary C2.1: equation cost is scored after physical Weyl reduction
+
+If the walls used in Proposition C1 are components of the old reducible
+fibres, each reflection preserves the old-fibre degree `b` and the horizontal
+class modulo the trivial lattice, while preserving isotropy and primitivity.
+It need not preserve the first `U` coordinate `a`, the presentation value
+`q=a*b`, the vertical layering, or a resolved-RR cost estimate.  Therefore a
+root-dominant class in an abstract adapted basis is not a compiler-cost object
+until it has been reduced against the physical affine cycles and has passed
+the finite horizontal-wall test of Proposition C2.
+
+This is an exact consequence of the reflection formula and the fixed-component
+argument in C1--C2, not a claim that the cost always decreases.  In the H3
+component-9-zero `2A5` marking, the stored q104 representative has negative
+physical degrees.  Sixty-one recorded reflections produce a q10 degree-two
+representative with the same horizontal quotient, `P.O=5`, three vertical
+layers, and expected RR ambient 15.  Its complete physical, all-section, and
+finite-horizontal-wall audit is
+[`../artifacts/local/elkies-k3/q24-2a5-direct-physical-q10-certificate.json`](../artifacts/local/elkies-k3/q24-2a5-direct-physical-q10-certificate.json).
+
+For reproducible enumeration one may use the positive-definite augmented
+form
+
+```text
+Q_m(x,z)=(b*x-m*w*z).M.(b*x-m*w*z)+z^2
+```
+
+through norm `2*b^2-1` and retain `z=+/-1`. This is the gate used by
+`probe_h92_pinned_r17_targeted_shell_cvp.sage` for the degree-three and
+degree-four reverse searches. It certifies each retained candidate; the
+target-directed ray/scale sampling that proposes candidates remains bounded.
+
+### Proposition C3: certified neighbour loops can change the zero cheaply
+
+Let `pi_0` and `pi_1` be marked Jacobian fibrations on the same K3 surface.
+Suppose exact neighbour transports give
+
+```text
+pi_0 --D--> pi_1 --F_0--> pi_0',
+```
+
+where the second fibre class is the original fibre ray `F_0`, but the marked
+section of `pi_0'` differs from that of `pi_0`.  If a curve already explicit
+on `pi_0` has degree one over `D`, it may be used as the zero of `pi_1` by the
+unimodular basis
+
+```text
+D, S+D, orthogonal complement of <D,S+D>.
+```
+
+If both neighbour classes pass Proposition C2 and the component walls, this
+is an exact zero-changing loop, not merely an ADE recurrence.  A following
+fibre can therefore have much smaller horizontal degree, pole order, or RR
+dimension even though the loop temporarily revisits the same fibre ray.
+
+#### Proof
+
+The displayed classes have Gram `U` because `D^2=0`, `S^2=-2`, and `S.D=1`.
+Primitivity of `D` and the section pairing make this `U` primitive, so its
+orthogonal complement and any determinant-one completion give the full NS
+transport in both directions.  The return identifies the same primitive ray
+`F_0`; a different second row changes only its Jacobian marking.  Proposition
+C2 plus the vertical/component audit proves that the two fibre classes define
+the asserted pencils. QED.
+
+The equation-cost consequence is route-specific: a loop is useful only when
+the explicit section and the composed cost are checked.  The q6/orbit1307
+H3 loop is one certified instance; it does not imply that every lattice
+neighbour recurrence is compiler-cheap.
+
 ## 5. Integral marking transport
 
 ### Proposition D: lossless neighbour transport

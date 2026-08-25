@@ -1,9 +1,10 @@
 #!/usr/bin/env sage -python
-"""Transport the two degree-one old sections to the exact A11 Jacobian.
+"""Transport the degree-one old curves to the exact A11 Jacobian.
 
 The resolved orbit42 pencil has two exact identity-shell curves whose degree
-over the new base is one (equation-shell indices 7 and 17).  Restricting the
-exact pencil to either curve gives a Mobius function T(V), hence an exact
+over the new base is one (equation-shell indices 7 and 17), and one exact
+spinor-shell curve of degree one (spinor index 0).  Restricting the exact
+pencil to any of these curves gives a Mobius function T(V), hence an exact
 rational point (V(T), W(T)) on the binary quartic.  The classical quartic
 covariants then give an exact point on
 
@@ -39,8 +40,9 @@ RR_PATH = LOCAL / "q24-d12-to-a11-orbit42-resolved-rr-qq.json"
 PARENT_PATH = LOCAL / "q24-d13-to-d12-component-valuation-qq.json"
 CANDIDATES_PATH = LOCAL / "q24-orbit42-exact-section-candidates-qq.json"
 ZERO_PATH = LOCAL / "q24-orbit42-rational-zero-pole-sections-qq.json"
+SPINOR_PATH = LOCAL / "q24-orbit42-spinor-zero-pole-sections-qq.json"
 MODEL_PATH = LOCAL / "q24-orbit42-zero-pole-seeds-mod-43.json"
-INPUTS = (RR_PATH, PARENT_PATH, CANDIDATES_PATH, ZERO_PATH, MODEL_PATH)
+INPUTS = (RR_PATH, PARENT_PATH, CANDIDATES_PATH, ZERO_PATH, SPINOR_PATH, MODEL_PATH)
 for path in INPUTS:
     if not path.exists():
         raise SystemExit(f"missing prerequisite: {path}")
@@ -49,12 +51,14 @@ rr = json.loads(RR_PATH.read_text())
 parent = json.loads(PARENT_PATH.read_text())
 candidates = json.loads(CANDIDATES_PATH.read_text())
 zero = json.loads(ZERO_PATH.read_text())
+spinor = json.loads(SPINOR_PATH.read_text())
 model = json.loads(MODEL_PATH.read_text())["exact_model"]
 
 assert rr["status"] == "PASS_EXACT_Q24_D12_Q6_A11_COMPONENT_VALUATION_RR"
 assert parent["status"] == "PASS_EXACT_Q24_D13_TO_D12_COMPONENT_VALUATION_RR"
 assert candidates["status"] == "PASS_EXACT_Q42_ORBIT42_SECTION_CANDIDATES_QQ"
 assert zero["status"] == "PASS_EXACT_Q42_RATIONAL_ZERO_POLE_SECTIONS_QQ"
+assert spinor["status"] == "PASS_EXACT_Q42_SPINOR_ZERO_POLE_SECTIONS_QQ"
 
 UQ = PolynomialRing(QQ, "u")
 u = UQ.gen()
@@ -189,9 +193,13 @@ def covariants_at(x_value):
     return g, h
 
 
+targets = (
+    ("identity", 7, zero["sections"][7]),
+    ("identity", 17, zero["sections"][17]),
+    ("spinor", 0, spinor["sections"][0]),
+)
 rows = []
-for section_index in (7, 17):
-    section = zero["sections"][section_index]
+for shell_kind, section_index, section in targets:
     x_shell_curve = UQ([QQ(value) for value in section["x_coefficients_low_to_high"]])
     y_shell_curve = UQ([QQ(value) for value in section["y_coefficients_low_to_high"]])
     x_curve = x_scale * evaluate_u(KU(x_shell_curve), u_of_V)
@@ -223,10 +231,52 @@ for section_index in (7, 17):
     point = E_child(x_jacobian, y_jacobian)
     assert point[1] ** 2 == point[0] ** 3 + A_child * point[0] + B_child
 
+    # Point the quartic at (V_of_T,+ordinate).  The opposite ordinate at the
+    # same V is the residual chord curve.  Unlike the covariant image, its
+    # image below is obtained through a degree-one pointed isomorphism.
+    shifted = WV(quartic(W + V_of_T))
+    shifted_e, shifted_d, shifted_c, shifted_b, shifted_a = shifted.list()
+    if shifted_e != ordinate**2:
+        raise ArithmeticError("pointed quartic constant term is not the chosen square")
+    a1_pointed = shifted_d / ordinate
+    a2_pointed = shifted_c - shifted_d**2 / (4 * ordinate**2)
+    a3_pointed = 2 * ordinate * shifted_b
+    a4_pointed = -4 * ordinate**2 * shifted_a
+    a6_pointed = a2_pointed * a4_pointed
+    b2_pointed = a1_pointed**2 + 4 * a2_pointed
+    b4_pointed = 2 * a4_pointed + a1_pointed * a3_pointed
+    b6_pointed = a3_pointed**2 + 4 * a6_pointed
+    c4_pointed = b2_pointed**2 - 24 * b4_pointed
+    c6_pointed = -b2_pointed**3 + 36 * b2_pointed * b4_pointed - 216 * b6_pointed
+    short_A = -c4_pointed / 48
+    short_B = -c6_pointed / 864
+    if A_child != 81 * short_A or B_child != 729 * short_B:
+        raise ArithmeticError("pointed quartic and invariant Jacobian normalizations disagree")
+
+    x_general = -a2_pointed
+    y_general = a1_pointed * a2_pointed - a3_pointed
+    if (
+        y_general**2 + a1_pointed * x_general * y_general + a3_pointed * y_general
+        != x_general**3
+        + a2_pointed * x_general**2
+        + a4_pointed * x_general
+        + a6_pointed
+    ):
+        raise ArithmeticError("opposite point missed the pointed generalized model")
+    x_short = x_general + b2_pointed / 12
+    y_short = y_general + (a1_pointed * x_general + a3_pointed) / 2
+    x_opposite = KT(9 * x_short)
+    y_opposite = KT(27 * y_short)
+    opposite_point = E_child(x_opposite, y_opposite)
+    assert opposite_point[1] ** 2 == opposite_point[0] ** 3 + A_child * opposite_point[0] + B_child
+
     rows.append(
         {
+            "shell_kind": shell_kind,
             "equation_shell_index": section_index,
-            "old_section_pair_index": int(section["pair_index"]),
+            "old_section_pair_index": (
+                int(section["pair_index"]) if "pair_index" in section else None
+            ),
             "old_section_sign": int(section["sign"]),
             "new_base_degree": 1,
             "T_of_V": normalized_rational_record(new_base, VQ),
@@ -236,14 +286,23 @@ for section_index in (7, 17):
                 "x": normalized_rational_record(x_jacobian, TQ),
                 "y": normalized_rational_record(y_jacobian, TQ),
             },
+            "pointed_opposite_section": {
+                "chosen_quartic_zero_ordinate_sign": 1,
+                "opposite_ordinate_sign": -1,
+                "map_degree": 1,
+                "equals_negative_covariant_point": bool(
+                    x_opposite == x_jacobian and y_opposite == -y_jacobian
+                ),
+            },
             "exact_quartic_identity": True,
             "exact_child_identity": True,
+            "exact_pointed_opposite_identity": True,
         }
     )
 
 payload = {
-    "schema": "elkies-k3.h3-q24-a11-degree-one-shell-covariants-qq.v1",
-    "status": "PASS_EXACT_A11_DEGREE_ONE_SHELL_COVARIANTS_QQ",
+    "schema": "elkies-k3.h3-q24-a11-degree-one-curve-covariants-qq.v2",
+    "status": "PASS_EXACT_A11_DEGREE_ONE_CURVE_COVARIANTS_QQ",
     "inputs": {
         "paths": [str(path.relative_to(ROOT)) for path in INPUTS],
         "sha256": {
@@ -252,23 +311,28 @@ payload = {
         },
     },
     "degree_one_shell_indices": [7, 17],
+    "degree_one_spinor_indices": [0],
     "points": rows,
     "method": (
         "exact restriction of the resolved RR pencil, Mobius inversion, exact quartic "
-        "square root, and classical degree-two binary-quartic covariant"
+        "square root, classical degree-two covariant, and degree-one pointed-quartic "
+        "transport of the opposite residual chord curve"
     ),
     "proof_boundary": (
-        "Both displayed rational functions are exact characteristic-zero points on the "
-        "certified A11 Jacobian. The binary-quartic covariant has degree two; identifying "
-        "these outputs with pinned MW vectors, or using a pointed quartic isomorphism to "
-        "construct the missing generator M, is the next marking step."
+        "All three covariant images and their pointed opposite sections are exact "
+        "characteristic-zero points on the certified A11 Jacobian. The covariant has "
+        "degree two, while each opposite section uses a degree-one pointed quartic "
+        "isomorphism with its corresponding shell curve as zero. Identifying the "
+        "resulting zero translations with the pinned A11 MW marking is the next step."
     ),
 }
 
 args.output.parent.mkdir(parents=True, exist_ok=True)
 args.output.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
 print(
-    "A11SHELLQQ|indices=7,17|points=2|method=mobius+quartic_covariant|"
+    "A11SHELLQQ|identity_indices=7,17|spinor_indices=0|covariant_points=3|"
+    "pointed_opposites=3|"
+    "method=mobius+quartic_covariant+pointed_opposite|"
     f"status={payload['status']}",
     flush=True,
 )

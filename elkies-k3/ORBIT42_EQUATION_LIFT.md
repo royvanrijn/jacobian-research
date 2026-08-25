@@ -221,14 +221,105 @@ entered a third `257692 x 2857438` matrix and stopped at 600 seconds (about
 non-existence result.  The exact next gate is characteristic-zero coordinates
 for `M`, followed by the displayed group-law reconstruction of `P12`.
 
+The degree-one alternative has now been exhausted exactly, without a section
+ansatz.  Möbius inversion of the resolved pencil and binary-quartic
+covariants transport identity-shell indices 7 and 17 and spinor index 0 to
+three exact characteristic-zero A11 points.  The pointed-quartic replay gives
+the opposite point as the negative covariant point in all three cases.  The
+selected unimodular D12-to-A11 transition then proves that the sixth child MW
+coordinate is exactly the fifth parent MW coordinate.  All eighteen identity
+vectors and both spinor vectors have that parent coordinate zero, so none of
+these exact degree-one transports supplies the missing direction.  Switching
+to the other construction-compatible q8 orbit 2162 only changes the required
+sixth coordinate from `+1` to `-1`.
+
+The smallest primitive parent carrier is the D12 vector
+`(0,0,0,0,1)`, with height 12, correction 0 and `P.O=4`; it is not in the
+exact zero-pole shell.  A proposed quintic shortcut was rejected by exact
+marking replay: it applied the orbit64 transition for the selected `R3`-zero
+D12 frame to coordinates taken in the distinct `A0`-zero frame.  In the
+compatible selected marking, `close_P24` has A11 degree 46 and MW vector
+`(33,-77,31,-38,7,1)`, while `oldI9_A0` has degree 4 and vector
+`(2,-6,3,-3,1,0)`; the claimed group word does not equal `M` and the
+index-five shell is not saturated.
+
+An exact audit of all forty stored explicit (-2)-classes finds no positive
+single-carrier replacement.  The first positive subset is
+`AJ(H3_simple_2)-2*AJ(H3_simple_8)` plus shell points, requiring degree-40
+and degree-44 traces, so it is a correctness fallback rather than the active
+construction.  An exhaustive equation-cost scan also tested lateral A11
+neighbours: the apparent best candidates 849 and 591 fail the full nefness
+gate, while the first passing candidates lead to different ADE types or lack
+a certified continuation to pinned R17.
+
+The active no-large-elimination direction therefore keeps equation orbit12
+and exploits its split `I12` fibre directly.  With the formal nodal centre
+`c(s)`, the identity
+
+```text
+y^2 = (x-c)^2*(x+2*c) + g(s),   ord_s(g)=12
+```
+
+and the component-3 substitution `x-c=s^3*Q/Z^2`, `y=s^3*R/Z^3`
+turn the local section condition into a norm/Pell-style coefficient
+recurrence.  Fixed-infinity generation reduces the benchmark to 16 variables
+and 18 equations, but naive full substitution raises total degree to 36;
+that is evidence to use bidirectional coefficient recurrences or resolved
+linear Riemann--Roch, not a large Gröbner calculation.  Modular systems remain
+bounded discovery aids only.
+
 <!-- status-consumer: EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE -->
+
+That resolved route has now closed the q8 edge exactly.  The component-3
+chart first reconstructs the small residual `R=P12-M` over `QQ`; exact
+fraction-free group law then gives `P12` and `D=P12-O_pinned` without lifting
+the former 36-variable difference chart.  The final horizontal has projective
+degrees `(16,24,6)`, `P.O=6`, and central `I12` depth 6.
+
+For `O+D-2F`, use
+
+```text
+a=AA/Z^2, deg(AA)<=10;  b=BB/Z, deg(BB)<=2.
+```
+
+This is a complete 14-dimensional ambient.  The congruence
+`AA*X=BB*Y mod Z^2` has rank 12.  Inverting `X mod Z^2` reduces its exact
+solution to `AA=BB*Y/X mod Z^2` and the single condition that the degree-11
+coefficient vanish, leaving `h0=2`.  No Groebner basis is used.
+Fraction-free chord elimination gives `Z^6` times a quartic.  Its globally
+minimal Jacobian has degrees `(8,12,24)`, fibres `2I6+12I1`, root lattice
+`2A5`, Euler number 24, and MW rank 7 in the fixed rank-19 marking.
+
+The equation marking is exact as well.  At the old `I12` value the horizontal
+specializes to the node.  If `N=AA1-T*AA0` and `Db=T*BB0-BB1`, the affine
+component has normalized quartic ordinate
+
+```text
+w_affine=(N^2-3*X*Db^2)/Z^3.
+```
+
+The opposite sign is the only other degree-one old-fibre curve,
+`old_A11_component_9`, and the pointed-quartic map sends it to infinity as
+the selected child zero.  The ten degree-zero curves form the two physical
+chains `(0,3,4,5,10)` and `(1,2,6,7,8)`.  The full equation-A11 to
+component-9-zero child transport and its inverse both have determinant `-1`
+and preserve the NS Gram form exactly.
+
+The primary outputs are
+`artifacts/local/elkies-k3/q24-a11-to-2a5-q8-resolved-rr-qq.json` and
+`artifacts/local/elkies-k3/q24-a11-to-2a5-q8-equation-marking-qq.json`, with
+statuses `PASS_EXACT_Q24_A11_Q8_2A5_RESOLVED_RR` and
+`PASS_EXACT_Q24_A11_Q8_2A5_EQUATION_MARKING`.
+
+<!-- status-consumer: EC-K3-H3-A11-Q8-QQ-2A5 -->
 
 The fixed remaining route is
 
 ```text
-A11/MW6
- --q8 historical orbit922 / equation orbit12--> 2A5/MW7
- --q4 orbit472--> 3A3/MW8
+2A5/MW7
+ --q6 orbit1307--> A1+A3+A5/MW8
+ --q4 zero return--> 2A5/MW7
+ --q6 current exit--> 3A3/MW8
  --q4 orbit323--> A3+2A2/MW10
  --q4 orbit207--> 5A1/MW12
  --q4 orbit52 --> 4A1/MW13
