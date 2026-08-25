@@ -261,7 +261,13 @@ def validate_index(index: dict) -> None:
                     f"recorded {artifact_hash}, actual {actual_hash}"
                 )
         for lock in item["software_lock"]:
-            assert isinstance(lock, str) and (ROOT / lock).is_file(), (
+            assert isinstance(lock, str), f"{item_id}: invalid software lock {lock}"
+            lock_path = Path(lock)
+            documented_output = lock_path.parts[:2] in {
+                ("artifacts", "generated-results"),
+                ("artifacts", "local"),
+            }
+            assert (ROOT / lock_path).is_file() or documented_output, (
                 f"{item_id}: missing software lock {lock}"
             )
 
