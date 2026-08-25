@@ -19,6 +19,7 @@ page is a map of that record, not a second status database.
 | Curve or family | What is proved here | Boundary |
 | --- | --- | --- |
 | ICARM curve 302 | `rank E(Q) >= 31`, trivial torsion, global minimality, exact discriminant/conductor and local fibre data; two exact independence implementations | No unconditional rank upper bound; no K3-family identification |
+| ICARM curve 356 | `rank E(Q) >= 29`, trivial torsion, global minimality, exact conductor and local fibre data; current size record at the rank-at-least-29 threshold | No unconditional rank upper bound; strong common-17-section fingerprint with curve 351, but no family or K3 identification |
 | ICARM curve 273 | `rank E(Q) >= 30`, independently replayed | No unconditional exact-rank statement |
 | ICARM curves 285 and 286 | Twenty-one displayed points on each curve are independent; trivial torsion | Their sub-threshold conductors are imported public data, not yet a repository-local Tate-algorithm replay |
 | Fermigier `E22` | `rank E(Q) >= 22` | `log N=182.724910...`, so it misses the strict cutoff |
@@ -30,6 +31,7 @@ page is a map of that record, not a second status database.
 The canonical statements are:
 
 - `ECR31`: [curve 302 rank-at-least-31 certificate](notes/ICARM_CURVE302_RANK31.md);
+- `ECR29-IC356`: [curve 356 rank-at-least-29 size record and construction fingerprint](notes/ICARM_CURVE356_RANK29_AND_CONSTRUCTION.md);
 - `ECR30`: [curve 273 rank-at-least-30 certificate](notes/ICARM_CURVE273_RANK30.md);
 - `EC-R21-ICARM`: [curves 285/286 point-independence replay](notes/ICARM_7FFF_ZIP_SEQUENCE.md);
 - `EC-R20-IC245`: [curve 245 low-conductor rank-20 replay](notes/ICARM_CURVE245_RANK20.md);
@@ -68,6 +70,9 @@ There are four live arithmetic gates.
    global argument.
 4. Continue the H3/rootless-MW17 equation transport documented in
    [the curve-273 construction investigation](notes/ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md).
+   The characteristic-zero route now reaches the physical q4/orbit164
+   `2A3+2A1/MW9` child; q8/orbit376, q12/orbit4484, and the direct rootless
+   endpoint certificate remain open.
 
 The low-conductor Fermigier/Mestre search remains useful, but its accumulated
 negative scans are historical calibration. They are indexed in the archive
@@ -103,6 +108,9 @@ make verify-elliptic-curves
 
 PYTHONPATH=elliptic-curves/cas \
   .venv/bin/python elliptic-curves/cas/check_icarm_curve302_rank31_pinned.py
+
+PYTHONPATH=elliptic-curves/cas \
+  .venv/bin/python elliptic-curves/cas/verify_icarm_curve356_rank29.py
 
 .venv/bin/python elliptic-curves/cas/verify_icarm_curve273_rank30.py --check
 

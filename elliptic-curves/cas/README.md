@@ -10,6 +10,11 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
 
 - `check_icarm_curve302_rank31_pinned.py`: deterministic rank-at-least-31
   replay and compressed-artifact hash check.
+- `verify_icarm_curve356_rank29.py`: independent rank-at-least-29, minimal
+  model, conductor, and local-reduction replay for the new rank-29 size record.
+- `analyze_icarm_curve356_lineage.py`: hash-pinned curve-351/356 ordered
+  denominator and numerical height-Gram comparison; this does not identify a
+  family.
 - `verify_icarm_curve273_rank30.py`: independent rank-at-least-30 replay.
 - `analyze_icarm_7fff_zip_sequence.py`: exact independence replay for the
   public curves 281, 282, 285, and 286; the conductor field is still imported

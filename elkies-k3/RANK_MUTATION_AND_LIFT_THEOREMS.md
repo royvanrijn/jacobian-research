@@ -325,6 +325,17 @@ Consequences:
 - generic MW coordinates, pole orders, and component labels need not remain
   valid after specialization.
 
+A related equation-level warning is essential.  Specializing a section to the
+singular point of a Weierstrass `I_n` fibre does not by itself determine which
+resolved component it meets: distinct tangent branches can have the same raw
+node fingerprint.  Consequently, a component profile inferred only from
+singular-node incidence can corrupt a Shioda height.  One exact audit is to
+multiply by the exponent of the component groups and recover the canonical
+height from compact pole-degree growth; a resolved local chart is still needed
+when the oriented component label itself matters.  On q4/orbit164 this
+fourfold audit corrects one coarse `I4` label and changes the affected height
+from `3` to `13/4`.
+
 This is why the Q80 CM24 child is a typed specialization node rather than the
 generic rootless endpoint.
 

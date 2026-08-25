@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Audit active-note identities and repository-only generated debris."""
+"""Audit active-note identities and repository-only generated debris.
+
+Already-tracked files in ``artifacts/generated-results`` are deliberate pinned
+certificates.  The directory remains ignored so a local replay cannot add a
+large output set accidentally; tracked pinned files are therefore the one
+allowed tracked/ignored class.
+"""
 
 from __future__ import annotations
 
@@ -65,12 +71,18 @@ if (ROOT / ".git").exists():
         text=True,
     )
     tracked_ignored = result.stdout.splitlines()
-if tracked_ignored:
+unexpected_tracked_ignored = [
+    path for path in tracked_ignored
+    if not path.startswith("artifacts/generated-results/")
+]
+if unexpected_tracked_ignored:
     raise SystemExit(
-        "ignored generated files are still tracked:\n" + "\n".join(tracked_ignored)
+        "ignored files outside the pinned generated-results tree are still tracked:\n"
+        + "\n".join(unexpected_tracked_ignored)
     )
 
 print(
     f"PASS repository hygiene: {len(definitions)} active headline identifiers are "
-    "file-unique and no ignored generated files are tracked"
+    f"file-unique; {len(tracked_ignored)} pinned generated artifacts are tracked "
+    "under the ignore guard; no other ignored files are tracked"
 )

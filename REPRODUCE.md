@@ -1973,7 +1973,7 @@ orientation; orbit65/mapping6 is its spinor conjugate.  This closes the
 selected `D12/MW5 --q6 orbit42--> A11/MW6` equation edge.  The next equation
 gate is `A11/MW6 --q8--> 2A5/MW7` in the orbit64 child frame.
 
-<!-- status-consumer: EC-K3-H3-Q24-O42-QQ-A11 -->
+<!-- status-consumer: EC-K3-H3-Q24-O42-QQ-A11 ffa4308117c55056 -->
 
 The construction-compatible equation-side q8 target and the reduced modular
 section chart are reproduced by:
@@ -2002,7 +2002,7 @@ is the declared minimum-MW-L1 target and retains the historical formula
 target/marking result and a discovery system; they do not prove the section or
 q8 equation edge.
 
-<!-- status-consumer: EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET -->
+<!-- status-consumer: EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET c892eec88af45f08 -->
 
 The target-coset certificate additionally proves that the eighteen exact
 identity-shell points generate an index-five sublattice, that the old
@@ -2015,7 +2015,78 @@ recorded 600-second msolve benchmark used `-t 4 -l 42 -v 2`, completed two
 degree-eight reductions and stopped in a third `257692 x 2857438` matrix; no
 output section or non-existence conclusion was obtained.
 
-<!-- status-consumer: EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE -->
+<!-- status-consumer: EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE 8d17ab150a7e3567 -->
+
+The later exact A11 q8 closeout and the first three physical-suffix equations
+are replayed in construction order by:
+
+```bash
+sage -python elkies-k3/scripts/lift_h92_q24_a11_q8_residual_resolved_hensel.sage
+sage -python elkies-k3/scripts/derive_h92_q24_a11_q8_difference_qq.sage
+sage -python elkies-k3/scripts/lift_h92_q24_a11_q8_resolved_rr_qq.sage
+sage -python elkies-k3/scripts/certify_h92_q24_a11_q8_equation_marking_qq.sage
+
+sage -python elkies-k3/scripts/certify_h92_a5a5_physical_q4o208_rr_qq.sage
+sage -python elkies-k3/scripts/certify_h92_a5a5_physical_q4o208_equation_marking_qq.sage
+
+sage -python elkies-k3/scripts/certify_h92_q4o208_physical_q4o1584_rr_qq.sage
+sage -python elkies-k3/scripts/certify_h92_q4o1584_equation_marking_qq.sage
+sage -python elkies-k3/scripts/certify_h92_q4o1584_physical_q4o164_rr_qq.sage
+sage -python elkies-k3/scripts/certify_h92_q4o164_c8_equation_marking_qq.sage
+```
+
+The exact q8/orbit376 horizontal is reconstructed without a large Groebner
+calculation.  The following good-prime set gives the pinned 566-bit CRT
+certificate; every trace uses 91 training fibres and nine holdouts:
+
+```bash
+for p in 131 137 151 157 167 173 181 \
+  1000003 1000033 1000037 \
+  1000000007 1000000009 1000000021 \
+  2000000011 2000000033 2000000063 \
+  2000000087 2000000089 2000000099 \
+  1000000000000000003 1000000000000000009 1000000000000000031; do
+  sage -python elkies-k3/scripts/probe_h92_q4o164_inherited_p1_abel_trace_modp.sage \
+    --prime "$p" --interpolate --good-fibre-limit 100
+  sage -python elkies-k3/scripts/identify_h92_q4o164_q8_horizontal_mod131.sage \
+    --prime "$p"
+done
+sage -python elkies-k3/scripts/reconstruct_h92_q4o164_q8_horizontal_crt_qq.sage
+```
+
+The final command reports
+`PASS_EXACT_QQ_Q4O164_Q8O376_HORIZONTAL_CRT`, exact compact degrees
+`(12,8)/(18,12)`, literal `QQ(t)` substitution, and replay at all 22 primes.
+
+The first four commands close `A11/MW6 --q8/orbit12--> 2A5/MW7` with an
+exact `14 -> 2` resolved plane and a `2I6+12I1` Jacobian.  The q4/orbit208
+pair closes the physical `3A3/MW8` equation and its effective `C5` marking.
+The q4/orbit1584 pair gives `D4+A3+3A1/MW7`, with finite
+`I4+3I2+8I1`, `I0*` at infinity, and an exact second-I6-affine zero.  The
+q4/orbit164 pair gives `2A3+2A1/MW9`, with finite `I4+2I2+12I1`, `I4` at
+infinity, and exact `C8` pointing.  Each fibre list has Euler number 24.
+
+The resulting exact marked lattice suffix continues as
+
+```text
+3A3/MW8 --q4/orbit1584--> D4+A3+3A1/MW7
+          --q4/orbit164--> 2A3+2A1/MW9
+          --q8/orbit376--> 4A1/MW13
+          --q12/orbit5867--> rootless/MW17.
+```
+
+Only the first two arrows in this displayed suffix have characteristic-zero
+equations, and the exact q8 horizontal is now available over `QQ(t)`.  The
+last two arrows and the endpoint isometry are exact marked lattice
+certificates; the q8 resolved RR/child equation, q12 equation, and direct
+17-section R17 certificate remain open.  q12/orbit4484 remains the certified
+fallback.  The full proof boundary and endpoint requirements are in
+[`elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md`](elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md).
+
+<!-- status-consumer: EC-K3-H3-Q4O208-Q4O1584-QQ 8463d62d0e9f2b83 -->
+<!-- status-consumer: EC-K3-H3-Q4O1584-Q4O164-QQ 87579ce827f9ff4e -->
+<!-- status-consumer: EC-K3-H3-Q4O164-Q8O376-QQ-HORIZONTAL cd7f46981d77f99b -->
+<!-- status-consumer: EC-K3-H3-Q4O208-R17-CURRENT-MARKED-ROUTE 1d6ad898c3cbe18b -->
 
 The retained zero-pole boundary audit is reproduced by:
 
@@ -2031,9 +2102,9 @@ The two final terminal statuses are
 `PASS_EXACT_Q42_RATIONAL_ZERO_POLE_SECTIONS_QQ`, with nine signed
 identity-class pairs, and `PASS_EXACT_Q42_SPINOR_ZERO_POLE_SECTIONS_QQ`, with
 the remaining opposite spinor-class pair.  All twenty zero-pole sections now
-have exact characteristic-zero Weierstrass identities.  This supplies a
-construction aid; the resolved RR pencil and A11 child remain open.  The two
-additional shortcut audits are reproduced by:
+have exact characteristic-zero Weierstrass identities.  This supplied a
+construction aid for the subsequently completed A11 child; it was not itself
+the resolved-RR proof.  The two additional shortcut audits are reproduced by:
 
 ```bash
 python3 elkies-k3/scripts/run_h92_q24_orbit42_fast_parallel.py

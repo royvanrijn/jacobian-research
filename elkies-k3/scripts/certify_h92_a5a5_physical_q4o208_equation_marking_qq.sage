@@ -30,7 +30,7 @@ import time
 from pathlib import Path
 
 from sage.all import (
-    GF, LaurentSeriesRing, PolynomialRing, QQ, ZZ, block_diagonal_matrix,
+    EllipticCurve, GF, LaurentSeriesRing, PolynomialRing, QQ, ZZ, block_diagonal_matrix,
     identity_matrix, matrix, vector,
 )
 
@@ -223,6 +223,35 @@ log(
               f"{r_ring(W_c5_of_r.denominator()).degree()}",
 )
 
+# Component one at gamma is old_A11_component_7 in the pinned oriented I6
+# chain (component two below is old_A11_component_6).  Its resolved slice
+# labels the two exact signs over T=gamma: the opposite sign is the second
+# I6 affine component.
+c7_functions, c7_branch = component_values(gamma, rho_gamma, 1)
+U_c7_of_r, c7_order = first_ratio(c7_functions)
+if c7_order != 1 or int(c7_branch.valuation()) != 1:
+    raise ArithmeticError("C7 does not have the expected simple resolved q4 slice")
+W_c7_of_r = Kr(c7_branch[1] / (gamma - beta))
+c7_u_num = r_ring(U_c7_of_r.numerator())
+c7_u_den = r_ring(U_c7_of_r.denominator())
+if (c7_u_num.degree(), c7_u_den.degree()) != (1, 1):
+    raise ArithmeticError("C7 new-base map is not Mobius")
+c7_n0, c7_n1 = QQ(c7_u_num[0]), QQ(c7_u_num[1])
+c7_d0, c7_d1 = QQ(c7_u_den[0]), QQ(c7_u_den[1])
+r_c7_of_U = KU(
+    (KU(c7_n0) - KU(U) * KU(c7_d0))
+    / (KU(U) * KU(c7_d1) - KU(c7_n1))
+)
+c7_w_num = r_ring(W_c7_of_r.numerator())
+c7_w_den = r_ring(W_c7_of_r.denominator())
+W_c7 = KU(c7_w_num(r_c7_of_U) / c7_w_den(r_c7_of_U))
+if KU(U_c7_of_r.numerator()(r_c7_of_U) / U_c7_of_r.denominator()(r_c7_of_U)) != KU(U):
+    raise ArithmeticError("Mobius inversion on C7 failed")
+log(
+    "C7_SLICE", U_degrees=f"{c7_u_num.degree()}/{c7_u_den.degree()}",
+    W_degrees=f"{c7_w_num.degree()}/{c7_w_den.degree()}",
+)
+
 # Components two at beta and gamma are C4 and C6.  Their ratios are constant
 # and attach the two non-special I4 supports without solving a global system.
 first_functions, unused = component_values(beta, rho_beta, 2)
@@ -314,7 +343,38 @@ x_affine = KU(denominator**4 * x_affine_raw)
 y_affine = KU(denominator**6 * y_affine_raw)
 if y_affine**2 != x_affine**3 + A_child * x_affine + B_child:
     raise ArithmeticError("opposite old-I6 affine component misses the q4 child")
-log("POINT", quartic_identity=True, global_jacobian=True, opposite_section=True)
+
+# Evaluate the same pointed quartic map at the resolved C7 slice.  This
+# labels, over QQ(U), both constant-old-base sections above T=gamma.
+z_gamma = KU(gamma - beta)
+if W_c7**2 != sum((q[index] * z_gamma**index for index in range(5)), KU.zero()):
+    raise ArithmeticError("C7 resolved ordinate misses the exact q4 quartic")
+
+
+def pointed_coordinates(z_value, ordinate):
+    x_value = (2 * w0 * (ordinate + w0) + d * z_value) / z_value**2
+    y_value = (
+        4 * w0**2 * (ordinate + w0) + 2 * w0 * d * z_value
+        + (2 * w0 * c - d**2 / (2 * w0)) * z_value**2
+    ) / z_value**3
+    return (
+        KU(denominator**4 * 9 * (x_value + b_2 / 12)),
+        KU(denominator**6 * 27 * (y_value + (a_1 * x_value + a_3) / 2)),
+    )
+
+
+x_c7, y_c7 = pointed_coordinates(z_gamma, W_c7)
+x_second_affine, y_second_affine = pointed_coordinates(z_gamma, -W_c7)
+E_child = EllipticCurve(KU, [0, 0, 0, A_child, B_child])
+C7_point = E_child(x_c7, y_c7)
+second_affine_point = E_child(x_second_affine, y_second_affine)
+first_affine_point = E_child(x_affine, y_affine)
+if C7_point + second_affine_point != first_affine_point:
+    raise ArithmeticError("C7 plus second affine misses the first affine section")
+log(
+    "POINT", quartic_identity=True, global_jacobian=True,
+    opposite_section=True, gamma_pair_labeled=True,
+)
 
 
 # -------------------------------------------------------------------------
@@ -472,6 +532,28 @@ payload = {
         "y": rational_record(y_affine),
         "exact_child_identity": True,
         "NS_coordinates": [int(item) for item in child(curves["first_I6_affine_component"])],
+    },
+    "resolved_C7_slice": {
+        "parent_I6_base_value": str(gamma),
+        "base_value_mod_103": 68,
+        "oriented_component": 1,
+        "oriented_rho": str(rho_gamma),
+        "new_base_map_degrees_in_component_parameter": [1, 1],
+        "quartic_ordinate_on_C7": rational_record(W_c7),
+        "exact_quartic_square_identity": True,
+    },
+    "old_A11_component_7_on_C5_pointed_child": {
+        "x": rational_record(x_c7),
+        "y": rational_record(y_c7),
+        "exact_child_identity": True,
+        "NS_coordinates": [int(item) for item in child(curves["old_A11_component_7"])],
+    },
+    "second_I6_affine_component_on_C5_pointed_child": {
+        "x": rational_record(x_second_affine),
+        "y": rational_record(y_second_affine),
+        "exact_child_identity": True,
+        "NS_coordinates": [int(item) for item in child(curves["second_I6_affine_component"])],
+        "exact_group_relation": "C7 + second_I6_affine = first_I6_affine",
     },
     "physical_fibres": {
         name: {

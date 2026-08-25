@@ -9,20 +9,46 @@ the only authority for what is proved.
   moves rank between fibre roots and Mordell--Weil sections; it does not create
   new Neron--Severi classes.
 - The generic rank budget is `root rank + MW rank = 17`.
-- Equations are certified through `D12/MW5`. The marked lattice route from H3
-  to the pinned rootless `MW17` endpoint is exact.
-- The next edge is `D12/MW5 --q6 orbit42--> A11/MW6`. A local exact-RR artifact
-  currently reports `PASS`, but do not call the edge proved until its canonical
-  note, software lock, and `MATH_STATUS.json` entry agree.
+- Equations are certified through the physical `q4/orbit164`
+  `2A3+2A1/MW9` child.  The marked lattice route from that equation through
+  `q8/orbit376` and the preferred optional final edge `q12/orbit5867` to the
+  pinned rootless `MW17` endpoint is exact; the last two equation lifts are
+  not.  `q12/orbit4484` remains the certified fallback.
+- The next equation edge is `2A3+2A1/MW9 --q8 orbit376--> 4A1/MW13`.
+  Do not call it proved until its canonical note, software lock, and
+  `MATH_STATUS.json` entry agree.
 
 ## Start here
 
 1. Read `ELKIES_K3_PROCESS_ATLAS.md` for the chronology and reusable lessons.
 2. Read all of `RANK_MUTATION_AND_LIFT_THEOREMS.md` before starting a new
    search, lift, route change, or generalization.
-3. Read `README.md` for the current frontier.
-4. Use `scripts/success-path/ledger.json` for pinned commands and hashes.
-5. Check `MATH_STATUS.json` before repeating any claim.
+3. Read `PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md` before
+   adding an intermediate certificate, route optimization, or section
+   transport.  It defines the minimum construction record and the direct R17
+   endpoint gate.
+4. Read `README.md` for the current frontier.
+5. Use `scripts/success-path/ledger.json` for pinned commands and hashes.
+6. Check `MATH_STATUS.json` before repeating any claim.
+
+## Active construction directive
+
+- Treat the remaining neighbour chain as a construction scaffold.  Carry the
+  exact equation, pencil, origin, and only the markings needed by the next
+  selected divisor or final source-identity proof.
+- Preserve the exact q4/orbit1584 and q4/orbit164 certificates.  Prioritize
+  the q8/orbit376 and q12/orbit5867 equation lifts, then switch to direct R17
+  endpoint certification.  Retain q12/orbit4484 only as the equation-level
+  fallback.
+- Do not start alternate suffix, q323, changed-zero, or global route-score work
+  unless an exact failure shows that it is needed to unblock those two lifts.
+- Do not transport a full MW basis through every remaining child by default.
+  Once the rootless equation exists, prefer direct finite-field/Hensel recovery
+  of a 17-section basis and certify its height Gram against
+  `data/lattice/rank17_gram.txt`.
+- Intermediate completeness is not endpoint correctness.  Never omit data
+  required to define the next divisor exactly, and never promote R17 until the
+  endpoint gate in the shortcut directive and `MATH_STATUS.json` both pass.
 
 ## Maintain the theorem package
 

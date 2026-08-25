@@ -26,9 +26,19 @@ parser.add_argument("--marking", type=Path, required=True)
 parser.add_argument("--nef-frontier", type=Path)
 parser.add_argument("--output", type=Path, required=True)
 parser.add_argument("--retain", type=int, default=300)
+parser.add_argument(
+    "--min-child-mw-rank", type=int,
+    help="score only candidates whose exact child MW rank is at least this value",
+)
+parser.add_argument(
+    "--require-known-horizontal", action="store_true",
+    help="score only candidates whose horizontal MW projection lies in the explicit-section subgroup",
+)
 args = parser.parse_args()
 if args.retain <= 0:
     parser.error("--retain must be positive")
+if args.min_child_mw_rank is not None and not 0 <= args.min_child_mw_rank <= 17:
+    parser.error("--min-child-mw-rank must lie between 0 and 17")
 
 NEIGHBORS = args.neighbors.resolve()
 MARKING = args.marking.resolve()
@@ -216,8 +226,16 @@ for raw in neighbors["neighbors"]:
     key = candidate_key(raw)
     if allowed is not None and key not in allowed:
         continue
+    if (
+        args.min_child_mw_rank is not None
+        and int(raw["child_mw_rank"]) < args.min_child_mw_rank
+    ):
+        continue
     fibre = vector(ZZ, raw["fiber"])
     z = vector(ZZ, raw["mw_projection"])
+    in_known = bool(known_section_lattice.rank() and z in known_section_lattice)
+    if args.require_known_horizontal and not in_known:
+        continue
     degree = int(raw["old_fiber_degree"])
     profiles = []
     for lifted, horizontal_height, correction, pole in section_profiles(z):
@@ -251,7 +269,6 @@ for raw in neighbors["neighbors"]:
     negative_affine = [index for index, value in enumerate(affine_pairings) if value < 0]
     declared_nef = not negative_curves and not negative_affine
 
-    in_known = bool(known_section_lattice.rank() and z in known_section_lattice)
     rank_gap = 0 if in_known else mw_rank - int(known_section_lattice.rank())
     rr = 2 + 2 * horizontal["P_dot_O"] + horizontal["vertical_layers"]
     child_root_count = int(raw["child_root_data"][1])

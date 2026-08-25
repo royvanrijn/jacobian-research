@@ -79,24 +79,27 @@ artifact fields should use one of the qualified names below.
 |---|---|---|
 | **recovered endpoint** or **R17** | the pinned rootless rank-17 positive frame `data/lattice/rank17_gram.txt` | input constraint for reverse searches; final lattice endpoint of the H3 and generic Q80 routes |
 | **H3 source** | the level-474 Kumar `E7+E8/MW2` polarization with height Gram `[[21/2,3],[3,46]]` | geometric starting point selected by the source audit |
-| **selected next lattice child** | the already-certified child frame of the retained neighbor | currently `H3-03-D12`, namely `D12/MW5` |
-| **selected next equation child** | the characteristic-zero Weierstrass model still to be constructed for that retained child frame | currently the `D12/MW5` model produced by executing the orbit-85 q24 pencil on the exact `D13/MW4` parent |
+| **selected next lattice child** | the already-certified child frame of the retained neighbor | q8/orbit376 `4A1/MW13` on the physical suffix |
+| **selected next equation child** | the characteristic-zero Weierstrass model still to be constructed for that retained child frame | the q8/orbit376 `4A1/MW13` model from the exact C8-pointed `2A3+2A1/MW9` parent |
 | **specialization endpoint** | the rational member eventually identified with curve 273 | sought only after the generic rootless H3 family and its sections are explicit |
 | **CM24 regression endpoint** | the specialized Q80 terminal model `4A2+A3+A5/MW2` | a compiler regression on a Picard-rank-jumping specialization, not R17 |
 
 For the active H3 equation step, the parent/operation/child triple is therefore
 
 ```text
-parent equation       = exact H3-02 D13/MW4 model
-selected operation    = q24 degree-two pencil, orbit 85
-selected equation child = H3-03 D12/MW5 model
-route endpoint        = R17, still ten later equation-level neighbors away
+parent equation         = exact C8-pointed 2A3+2A1/MW9 model
+selected operation      = q8 degree-two pencil, orbit 376
+selected equation child = 4A1/MW13 model
+route endpoint          = R17, preferably via q12/orbit5867 after q8/orbit376
+fallback endpoint edge  = q12/orbit4484 (also lattice-certified)
 ```
 
-In particular, `D12` is not an alternative global endpoint, and R17 is not
-the local object that the q24 Riemann--Roch compiler must construct.  The q24
-compiler needs the selected divisor and resolved component/module data on the
-exact D13 parent; its immediate output is the D12 child equation.
+In particular, R17 is not the local object that the q8 Riemann--Roch compiler
+must construct. The compiler needs the selected divisor and resolved
+component/module data on the exact q4/orbit164 parent; its immediate output is
+the `4A1/MW13` child equation. The direct endpoint certificate begins only
+after either the preferred q12/orbit5867 or fallback q12/orbit4484 rootless
+equation exists.
 
 The reverse endpoint identification and all inverse stage transports are
 certified in
@@ -131,7 +134,7 @@ provenance but should not be promoted to object names.
 |---|---|---|---|
 | **H3 Source Family** | recovered source polarization and equation family | level-474 `H21 cap H92` curve | H3 `E7+E8/MW2` |
 | **H3 Selected Degree-Two Corridor** | one certified lattice/chamber source-to-target path | H3 `E7+E8/MW2` | rootless `MW17` |
-| **H3 Equation Route** | characteristic-zero realization of the selected corridor | H3 source equation | currently exact through `D13/MW4` |
+| **H3 Equation Route** | characteristic-zero realization of the selected corridor and its physical suffix | H3 source equation | currently exact through q4/orbit164 `2A3+2A1/MW9` |
 | **Q80 Low-q Compiler Route** | secondary independent lattice/compiler route | Q80 `E6+D5+A3/MW3` | rootless `MW17` at generic lattice level |
 | **Q80 CM24 Regression Route** | specialization scaffold for Q80 | CM24 specialization of Q80 | CM24 terminal `4A2+A3+A5/MW2` |
 | **Low-q MW2 Backtrack** | reverse lattice ancestry discovered from the 17x17 target | rootless `MW17` | `E6+D4+2A2+A1/MW2` |
@@ -505,7 +508,7 @@ this the **Q60 Compact Comparison**, not the source route.
 | route/family | lattice / chamber | characteristic-zero equations | intended use |
 |---|---|---|---|
 | H3 Source Family | source polarization and marked family exact | exact `E7+E8/MW2` source | canonical beginning |
-| H3 Selected Degree-Two Corridor | complete to pinned R17, with lossless inverse NS transport back to H3 | exact through D13/MW4; q24 is active | primary selected continuation, not optimality claim |
+| H3 Selected Degree-Two Corridor | complete to pinned R17, with lossless inverse NS transport back to H3 | exact through q4/orbit164 `2A3+2A1/MW9`; q8/orbit376 is active | primary selected continuation, not optimality claim |
 | Q80 Low-q Compiler Route | complete to rootless/MW17 | terminal CM24 shadow exact; generic rootless endpoint remains a lattice certificate | secondary construction/compiler |
 | Q80 CM24 Regression Route | specialization lattice/equation corridor complete | complete through `4A2+A3+A5/MW2` | regression and module discovery |
 | Low-q MW2 Backtrack | exact transport from MW17 to MW2 | endpoint rational model exists, but this is not the source route | reverse provenance / alternate reconstruction |
@@ -521,7 +524,7 @@ Use:
 - **H3 Source Family** for the true Kumar-source polarization/equation family;
 - **H3 Selected Degree-Two Corridor** for the currently certified lattice path;
 - **H3 Equation Route** for the characteristic-zero realization, currently exact
-  through D13;
+  through the C8-pointed q4/orbit164 child;
 - **H2 Symmetry Comparison** for the `diag(4,237/2)` polarization;
 - **Q80 Low-q Compiler Route** for the secondary rootless lattice path;
 - **Q80 CM24 Regression Route** for its specialized equation scaffold;

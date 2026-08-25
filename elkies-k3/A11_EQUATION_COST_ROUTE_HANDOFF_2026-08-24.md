@@ -39,7 +39,7 @@ An exact direct-landing closure over all 181 `3A3/MW8` candidates at
 q=4,6,8,10 leaves 56 fully nef candidates and confirms q4/orbit208 as the
 unique equation-cost leader.
 
-The lifting agent should switch from q10 to q4/orbit208.  Canonical artifacts
+The q4/orbit208 lift and its equation marking are now complete. Canonical artifacts
 are
 [`../artifacts/generated-results/elkies-k3-h3-a5a5-physical-q4o208-to-pinned-r17-certificate.json`](../artifacts/generated-results/elkies-k3-h3-a5a5-physical-q4o208-to-pinned-r17-certificate.json)
 and
@@ -47,10 +47,15 @@ and
 The exact equation artifact is
 [`../artifacts/local/elkies-k3/q24-2a5-physical-q4o208-rr-qq.json`](../artifacts/local/elkies-k3/q24-2a5-physical-q4o208-rr-qq.json),
 with status `PASS_EXACT_QQ_PHYSICAL_Q4O208_3A3_RR_AND_JACOBIAN`.
-Only the equation-effective C5 point/sign and full old-curve equation marking
-remain to be attached.
+The equation-effective C5 point/sign and full old-curve equation marking have
+also been attached exactly. The old automatic suffix nevertheless fails the
+physical zero gate; the active continuation is now q4/orbit1584 followed by
+q4/orbit164, q8/orbit376, and q12/orbit4484, as recorded in
+[`PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md`](PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md).
 The q10 certificates remain exact and reusable, but q10 is no longer the
 active lifting target.
+
+<!-- status-consumer: EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE c43cea6673a4b39c -->
 
 **Equation-effective-zero correction (2026-08-25 10:38 CEST).** The former
 4,199-point q4/orbit230--q6/orbit1315 suffix is still an exact marked-lattice
@@ -68,8 +73,9 @@ yet its intersections with the effective P230 section and the original zero
 are respectively 54 and 58. Therefore the low-pole term used in the 4,199
 score came from a Weyl/chamber pseudo-zero. The exact q4 equation return and
 its effective changed zero (the nonidentity component of the forward I2 at
-infinity) remain valid; the returned frontier is being reranked using only
-equation-effective curves. Do not use q6/orbit1315 as a lifting target on the
+infinity) remain valid; the returned frontier could be reranked using only
+equation-effective curves, but that work is parked while the selected
+physical suffix is open. Do not use q6/orbit1315 as a lifting target on the
 strength of the old score.
 
 The earlier q6/orbit1307 score 10,334 is also withdrawn as an equation target.
@@ -80,20 +86,30 @@ isotropic, physical-nef fibre, but its degrees are `C3=C5=C9=1` and `C10=0`.
 Thus component 10 is not a section of the corrected pencil, invalidating the
 certified component-10-zero return and landing.  The q6 horizontal itself
 survives, with an improved expected RR profile `9 -> 3 -> 2`; reranking from
-physical zeros C3, C5, and C9 remains useful as a lateral search.  The former
+physical zeros C3, C5, and C9 is retained only as a parked lateral search. The former
 q104/13,518 comparator is also withdrawn: it has negative degree on physical
-components C0 and C6.  Exact reduction against both I6 cycles takes 61
-reflections and produces the promoted q10 target described below.
+components C0 and C6. Exact reduction against both I6 cycles takes 61
+reflections and produced the formerly promoted, now superseded q10 target
+described below.
 The durable replay is
 [`../artifacts/local/elkies-k3/q24-2a5-q6o1307-physical-nef-audit.json`](../artifacts/local/elkies-k3/q24-2a5-q6o1307-physical-nef-audit.json),
 with status `PASS_EXACT_Q6O1307_PHYSICAL_WEYL_REPAIR_REJECT_C10_ZERO`.
 
+<!-- status-consumer: EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE 9ee5630063324558 -->
+<!-- status-consumer: EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE a8889fef54ee3b47 -->
+
 The first-q8 and D13 lattice improvements remain separately certified, but
-their combined cost totals that included 4,199 are withdrawn.  The physical
-q4/orbit208 target above is now the safe lifting suffix from the exact orbit12
-equation; q10 below is retained as the superseded physical repair.
+their combined cost totals that included 4,199 are withdrawn. The physical
+q4/orbit208 edge above is the proved entrance to the current q4/orbit1584,
+q4/orbit164, q8/orbit376, q12/orbit4484 suffix; q10 below is retained as the
+superseded physical repair.
+
+<!-- status-consumer: EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE ba6ee6488fce2411 -->
+<!-- status-consumer: EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE b648ea30fd562496 -->
 
 ## Superseded physical q10 target
+
+<!-- status-consumer: EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE e8dbe599e076f13d -->
 
 The canonical historical q104 class is not nef in the equation chamber.  Its
 complete physical Weyl reduction yields

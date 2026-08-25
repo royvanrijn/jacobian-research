@@ -5,14 +5,17 @@ from pathlib import Path
 from sage.all import ZZ, block_diagonal_matrix, matrix, pari, vector
 
 ROOT=Path(__file__).resolve().parents[2]; U2=matrix(ZZ,((0,1),(1,0)))
-ap=argparse.ArgumentParser(); ap.add_argument('--source-marking',type=Path,required=True); ap.add_argument('--certificate',type=Path,required=True); ap.add_argument('--root-rank',type=int,required=True); ap.add_argument('--output-prefix',type=Path,required=True); ap.add_argument('--summary-output',type=Path,required=True); args=ap.parse_args()
+ap=argparse.ArgumentParser(); ap.add_argument('--source-marking',type=Path,required=True); ap.add_argument('--certificate',type=Path,required=True); ap.add_argument('--root-rank',type=int,required=True); ap.add_argument('--output-prefix',type=Path,required=True); ap.add_argument('--summary-output',type=Path,required=True); ap.add_argument('--extra-source-curve',action='append',default=[],help='NAME:x0,...,x18 for an additional exact effective curve in source-frame coordinates'); args=ap.parse_args()
 SOURCE=args.source_marking.resolve(); CERT=args.certificate.resolve(); PREFIX=args.output_prefix.resolve(); OUTPUT=args.summary_output.resolve(); rr=args.root_rank
 def load(p): return matrix(ZZ,[[ZZ(x) for x in l.split()] for l in p.read_text().splitlines() if l.strip() and not l.startswith('#')])
 def ent(v): return [int(x) for x in vector(ZZ,v)]
 def rows(m): return [[int(x) for x in r] for r in m.rows()]
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 s=json.loads(SOURCE.read_text()); c=json.loads(CERT.read_text()); assert c['status']=='PASS_EXACT_MARKED_DEGREE_TWO_CANDIDATE_CERTIFICATE'
-frame=load(ROOT/s['frame_output']); gram=block_diagonal_matrix(U2,-frame); fibre=vector(ZZ,c['source_to_child_basis'][0]); explicit={n:vector(ZZ,v) for n,v in s['equation_explicit_curves_in_child'].items()}; zeros=sorted(n for n,v in explicit.items() if v*gram*fibre==1); assert zeros
+frame=load(ROOT/s['frame_output']); gram=block_diagonal_matrix(U2,-frame); fibre=vector(ZZ,c['source_to_child_basis'][0]); explicit={n:vector(ZZ,v) for n,v in s['equation_explicit_curves_in_child'].items()}
+for item in args.extra_source_curve:
+ name,raw=item.split(':',1); value=vector(ZZ,[ZZ(x) for x in raw.split(',')]); assert name and name not in explicit and len(value)==19 and value*gram*value==-2; explicit[name]=value
+zeros=sorted(n for n,v in explicit.items() if v*gram*fibre==1); assert zeros
 outputs={}
 for zn in zeros:
  z=explicit[zn]; u=matrix(ZZ,[list(fibre),list(z+fibre)]); ker=matrix(ZZ,[list(fibre*gram),list((z+fibre)*gram)]).right_kernel_matrix(); pre=u.stack(ker); assert abs(pre.det())==1; pinv=pre.inverse().change_ring(ZZ); comp=-(pre*gram*pre.transpose())[2:,2:]

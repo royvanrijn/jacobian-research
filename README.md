@@ -1,5 +1,11 @@
 # From one collision to marked-root Keller maps
 
+For a repository-wide synthesis of successful and failed methods, see the
+[`research knowledge base`](KNOWLEDGE_BASE.md).  The
+[`research timeline`](RESEARCH_TIMELINE.md) records the chronological sequence
+of results and corrections; theorem status remains solely in
+[`MATH_STATUS.json`](MATH_STATUS.json).
+
 A separate [elliptic-curve rank/conductor research programme](elliptic-curves/README.md)
 develops a reproducible Hensel--CRT--rational-lattice search without changing
 the mathematical scope of the Keller-map results below. It now independently
@@ -8,10 +14,11 @@ the programme's rank-at-least-30 target while leaving its separate
 low-conductor rank-at-least-21 target open.
 
 The related [Elkies--K3 process atlas](elkies-k3/ELKIES_K3_PROCESS_ATLAS.md)
-explains the rank-17 mechanism in plain chronological order. In one sentence:
-the equation route is certified through the marked orbit42 `A11/MW6` child,
-the marked lattice route reaches rootless `MW17`, and the active equation gate
-is `A11/MW6 --q8--> 2A5/MW7`.
+explains the rank-17 mechanism in plain chronological order.  The equation
+route is now certified through the physical `q4/orbit164`
+`2A3+2A1/MW9` child.  The marked lattice route continues through
+`q8/orbit376` and `q12/orbit4484` to rootless `MW17`; those last two equation
+lifts and the direct endpoint certificate remain open.
 
 This repository verifies a three-dimensional polynomial Keller map with a
 three-point collision, explains it through a tangent-map normal form, and

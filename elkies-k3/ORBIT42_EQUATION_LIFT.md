@@ -268,7 +268,7 @@ that is evidence to use bidirectional coefficient recurrences or resolved
 linear Riemann--Roch, not a large Gröbner calculation.  Modular systems remain
 bounded discovery aids only.
 
-<!-- status-consumer: EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE -->
+<!-- status-consumer: EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE 8d17ab150a7e3567 -->
 
 That resolved route has now closed the q8 edge exactly.  The component-3
 chart first reconstructs the small residual `R=P12-M` over `QQ`; exact
@@ -311,24 +311,33 @@ The primary outputs are
 statuses `PASS_EXACT_Q24_A11_Q8_2A5_RESOLVED_RR` and
 `PASS_EXACT_Q24_A11_Q8_2A5_EQUATION_MARKING`.
 
-<!-- status-consumer: EC-K3-H3-A11-Q8-QQ-2A5 -->
+<!-- status-consumer: EC-K3-H3-A11-Q8-QQ-2A5 b7aaf4bf483eac68 -->
 
-The fixed remaining route is
+The equation route was subsequently re-audited in the physical component
+chamber. The q6/orbit1307 and changed-zero alternatives below retain exact
+lattice information but are no longer the active equation continuation. The
+current physical route is
 
 ```text
 2A5/MW7
- --q6 orbit1307--> A1+A3+A5/MW8
- --q4 zero return--> 2A5/MW7
- --q6 current exit--> 3A3/MW8
- --q4 orbit323--> A3+2A2/MW10
- --q4 orbit207--> 5A1/MW12
- --q4 orbit52 --> 4A1/MW13
- --q4 orbit114--> 3A1/MW14
- --q4 orbit498--> 2A1/MW15
- --q4 orbit981--> A1/MW16
- --q6 orbit2247--> rootless/MW17
+ --q4 orbit208--> 3A3/MW8
+ --q4 orbit1584--> D4+A3+3A1/MW7
+ --q4 orbit164--> 2A3+2A1/MW9
+ --q8 orbit376--> 4A1/MW13
+ --q12 orbit4484--> rootless/MW17
  -> pinned R17.
 ```
+
+The first three arrows have exact characteristic-zero equations and effective
+zeros. The q8/orbit376 and q12/orbit4484 arrows are exact marked-lattice
+edges but remain equation-open. See
+[`PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md`](PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md).
+
+<!-- status-consumer: EC-K3-H3-Q24-O42-QQ-A11 ffa4308117c55056 -->
+<!-- status-consumer: EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET c892eec88af45f08 -->
+<!-- status-consumer: EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE 9ee5630063324558 -->
+<!-- status-consumer: EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE a8889fef54ee3b47 -->
+<!-- status-consumer: EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE ba6ee6488fce2411 -->
 
 The operational stage ledger and version-locked launch commands live in
 [`scripts/success-path/`](scripts/success-path/).  That ledger is a workflow

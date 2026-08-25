@@ -1,6 +1,13 @@
 # H3 q=8 current frontier
 
-Status: 2026-08-22, after the binary-quartic 2-cover and q-normalizer repairs.
+> **Historical snapshot (2026-08-22).** This note records the q8 repair and is
+> still authoritative for that edge, but it is not the current programme
+> frontier. The equation route now reaches q4/orbit164 `2A3+2A1/MW9`; start
+> from [`README.md`](README.md) and
+> [`ELKIES_K3_PROCESS_ATLAS.md`](ELKIES_K3_PROCESS_ATLAS.md).
+
+Status at snapshot: 2026-08-22, after the binary-quartic 2-cover and
+q-normalizer repairs.
 
 The authoritative audit/repair note is [`H3_Q8_REAUDIT_2026-08-22.md`](H3_Q8_REAUDIT_2026-08-22.md).
 

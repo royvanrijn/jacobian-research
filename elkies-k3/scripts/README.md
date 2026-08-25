@@ -11,6 +11,9 @@ This audit was made against repository commit
 against their code headers, outputs, certificates, and the notes that consume them;
 the archive is classified by historical programme rather than promoted file-by-file.
 
+<!-- status-consumer: EC-K3-H3-Q4O164-Q8O376-MOD131-HORIZONTAL 2249c509c1217d7c -->
+<!-- status-consumer: EC-K3-H3-Q4O164-Q8O376-QQ-HORIZONTAL cd7f46981d77f99b -->
+
 ## Local Sage 10.9 installation
 
 On this machine the pinned SageMath 10.9 build is installed from conda-forge at
@@ -49,16 +52,17 @@ it records a bounded negative result, a normalization bug, or a useful local mod
 
 - For the story and lessons, read `../ELKIES_K3_PROCESS_ATLAS.md`.
 - For pinned commands and hashes, use `success-path/ledger.json`.
-- Equation proofs currently stop at the component-9-zero `2A5/MW7` child; the lattice
-  route reaches R17.
+- Equation proofs currently stop at the C8-pointed `2A3+2A1/MW9` child; the
+  marked lattice route reaches R17.
 - `lift_h92_q24_orbit42_resolved_rr_qq.sage` and
   `certify_h92_q24_orbit42_a11_equation_marking.sage` are the exact equation
   and marking proofs for that child.
-- Work next on the promoted q6/orbit1307 lift from the exact component-9-zero
-  `2A5/MW7` child.  The preceding A11 q8/orbit12 horizontal, resolved RR
-  plane, quartic/Jacobian, physical roots, zero, and bidirectional NS marking
-  are closed.  Do not restart q8, q24, zero-pole, point-transport or halving
-  searches.
+- Work next on q8/orbit376 from the exact C8-pointed `2A3+2A1/MW9` child,
+  followed preferably by q12/orbit5867, with q12/orbit4484 retained as the
+  certified fallback. The A11 q8/orbit12, physical q4/orbit208,
+  q4/orbit1584, and q4/orbit164 equation edges are closed. Do not restart the
+  withdrawn q6/orbit1307, q323, changed-zero, zero-pole, point-transport, or
+  halving searches unless an exact gate on the selected suffix requires it.
 
 ## Current proof and compiler entry points
 
@@ -346,6 +350,132 @@ Orbit42/D12 profile rule:
   zero, transports the affine component as a `(4,6,0)` section, attaches the
   two physical A5 chains, and verifies determinant-`-1` NS transports in both
   directions.
+- `certify_h92_q4o208_physical_q4o1584_rr_qq.sage` and
+  `certify_h92_q4o1584_equation_marking_qq.sage` — **ACTIVE_PROOF**. They
+  certify the exact q4/orbit1584 RR plane and `D4+A3+3A1/MW7` Jacobian, then
+  point the second-I6-affine zero and the old-`C0` branch required next.
+- `certify_h92_q4o1584_physical_q4o164_rr_qq.sage` and
+  `certify_h92_q4o164_c8_equation_marking_qq.sage` — **ACTIVE_PROOF**. They
+  recover the q4/orbit164 pencil by rational branch-value interpolation,
+  certify the `2A3+2A1/MW9` Jacobian, and identify old `C8` as its exact zero.
+- `recover_h92_q4o164_odd_i4_sections_modp.sage` and
+  `lift_h92_q4o164_odd_i4_sections_qq.sage` — **EXACT/MODULAR FRONTIER
+  DIAGNOSTIC**. They enumerate odd finite-`I4` polynomial sections without a
+  Groebner basis, Newton-lift the regular branches, and verify every retained
+  `QQ(t)` section by literal substitution. The optional bounded signed-sum
+  audit replays with
+  `--precision 180 --rational-sum-scan --output artifacts/generated-results/elkies-k3-h3-q4o164-odd-i4-rational-sum-scan-p41.json`;
+  it filters 364 words at three fibres, interpolates 22 survivors in the
+  marked q8 degree window, and finds no exact rational sum. This is a bounded
+  construction audit, not a non-existence theorem for the missing ninth
+  direction.
+- `recover_h92_q4o164_zero_node_sections_modp.sage` and
+  `lift_h92_q4o164_zero_node_sections_qq.sage` — **EXACT/MODULAR FRONTIER
+  DIAGNOSTIC**. The exhaustive degree-four zero-node scan at `p=23` has one
+  inverse pair; both lift over `QQ`, but specialization quotient tests keep
+  them in the known rank-eight shell.
+- `probe_h92_q4o164_inherited_p1_abel_trace_modp.sage` — **MODULAR q8
+  CONSTRUCTION FRONTIER**. It transports the exact inherited `P1` curve
+  through the three certified q4 models using their degree-one pointed
+  quartic maps, obtaining degrees `3 -> 6 -> 7`. Fibrewise Abel reduction uses
+  only the unique `7 x 8` kernel in `L(8O)`. At `p=131`, `--interpolate`
+  reconstructs the full trace section with degrees `x=(32,28)` and
+  `y=(48,42)` from 122 good fibres, with 61/31 holdout fibres and an exact
+  modular Weierstrass identity. Replay with:
+
+  ```bash
+  ~/.local/share/jacobian-sage-10.9/bin/python \
+    elkies-k3/scripts/probe_h92_q4o164_inherited_p1_abel_trace_modp.sage \
+    --interpolate \
+    --output artifacts/local/elkies-k3/q4o164-inherited-p1-abel-trace-section-mod131.json
+  ```
+
+  The trace is not the q8/orbit376 horizontal modulo the already named
+  degree-one sections: their marked tails leave the exact correction
+  `(0,0,0,0,-1,-1,2,0,0)`. This remains a modular construction, not an
+  equation certificate.
+- `audit_h92_q4o164_integral_basis_height_gram.sage` — **EXACT HEIGHT/MARKING
+  AUDIT**. Raw node incidence had mislabeled the infinity-`I4` component of
+  `B7`. Multiplying every basis section and pair sum by four clears all
+  component groups; compact pole growth then gives the corrected height Gram
+  with determinant `459/8`, rather than relying on unresolved node labels.
+  A finite positive-definite enumeration finds 16 integral embeddings in the
+  C8-pointed marked MW9 lattice, eight compatible with the valid
+  `B0,...,B6` profiles. All eight contain the q8 residual but with different
+  basis words. Replay with:
+
+  ```bash
+  ~/.local/share/jacobian-sage-10.9/bin/python \
+    elkies-k3/scripts/audit_h92_q4o164_integral_basis_height_gram.sage
+  ```
+
+  The old coarse profile `[1,0,0,2]` for `B7` and the resulting height `3`
+  for `N=2*B0+B5+B7` are withdrawn; exact pole growth gives `h(N)=13/4` and
+  an odd infinity-`I4` label.
+- `identify_h92_q4o164_q8_horizontal_mod131.sage` — **EXACT MODULAR q8
+  HORIZONTAL**. It combines each of those eight embeddings with the complete
+  inherited-`P1` Abel trace and the exact saturated relation
+  `3*C8opp=-2*B0-3*B1-4*B2+3*B3-2*B4+2*B5-B6-2*B7`. Exactly one candidate
+  has the certified q8 pole profile `x=(12,8)`, `y=(18,12)`, `P.O=4`, giving
+
+  ```text
+  H=T-C8opp-B0+2*B1+B2-3*B3-B4-2*B5+B7.
+  ```
+
+  Replay with:
+
+  ```bash
+  ~/.local/share/jacobian-sage-10.9/bin/python \
+    elkies-k3/scripts/identify_h92_q4o164_q8_horizontal_mod131.sage
+  ```
+
+  Pass `--prime p` to replay any exact good-prime Abel-trace artifact.  For
+  larger CRT primes, the trace probe accepts `--good-fibre-limit 100`; this
+  retains 91 interpolation fibres and nine independent holdouts without
+  scanning all of `GF(p)`.
+- `reconstruct_h92_q4o164_q8_horizontal_crt_qq.sage` — **EXACT QQ q8
+  HORIZONTAL**. It combines the monic-normalized compact coordinates of `H`
+  over 22 good primes. Independent coefficient reconstruction exposes the
+  large common scales; simultaneous projective LLL on the 22- and 32-entry
+  coordinate vectors recovers primitive vectors of at most 363 and 526 bits
+  from the 566-bit CRT modulus. It accepts the result only after exact
+  substitution in the compact Weierstrass equation and reduction back to
+  every input prime. This targets the much smaller `(12,8)/(18,12)` q8
+  section directly rather than first reconstructing the `(32,28)/(47,42)`
+  Abel trace. Replay with:
+
+  ```bash
+  ~/.local/share/jacobian-sage-10.9/bin/python \
+    elkies-k3/scripts/reconstruct_h92_q4o164_q8_horizontal_crt_qq.sage
+  ```
+
+  Terminal status is `PASS_EXACT_QQ_Q4O164_Q8O376_HORIZONTAL_CRT`. The exact
+  fourfold pole degree is 172, giving canonical height 11.  The horizontal is
+  not yet the q8 child equation; the remaining gate is the resolved q8 RR
+  calculation.
+- `build_h92_q4o164_all_zero_q8_known_horizontal_audit.py` — **BOUNDED
+  NEGATIVE ROUTING AUDIT**. For each of the eight certified effective q4/o164
+  origins, a q8/degree-two shell was generated with
+  `search_root_adapted_weyl_neighbors.sage --q 8 --degree 2
+  --mw-vector-cap 10000` and filtered with
+  `score_h92_marked_frontier_equation_cost.sage
+  --require-known-horizontal`. The aggregate covers 119,220 primitive
+  candidates and finds zero horizontals in the corresponding explicit-section
+  subgroup. Replay the compact aggregate after the individual shell/score
+  files are present with:
+
+  ```bash
+  python3 elkies-k3/scripts/build_h92_q4o164_all_zero_q8_known_horizontal_audit.py
+  ```
+
+  This is exact for the stored capped shells, not a global non-existence
+  theorem. Together with the 364-word odd-I4 rational-sum scan, it supports
+  the inherited-`P1` Abel-reduction construction target above.
+- `certify_h92_marked_route_to_pinned_r17.sage` — **ACTIVE_ROUTE_PROOF**. It
+  certifies the q323-free marked q4/q4/q8/q12 suffix and terminal integral
+  isometry to pinned R17. It is not an equation certificate for q8/orbit376 or
+  q12/orbit5867 (or fallback q12/orbit4484) and does not supply the endpoint
+  section/rank package.
 - `transport_h92_q24_a11_degree_one_shell_qq.sage` —
   **EXACT_CONSTRUCTION_AID**.  It transports the two degree-one identity
   curves and the degree-one spinor curve by Möbius inversion and exact binary
@@ -401,8 +531,10 @@ Archived q24 dead ends:
 
 These record why p-adic direct lifting/SRR was abandoned. Do not increase Hensel
 precision or reconstruct the generic q24 section as the next step. The q24
-`D12/MW5`, orbit42 `A11/MW6`, and q8 orbit12 `2A5/MW7` children are closed.
-Continue from the component-9-zero child to q6/orbit1307.
+`D12/MW5`, orbit42 `A11/MW6`, q8 orbit12 `2A5/MW7`, physical q4/orbit208
+`3A3/MW8`, q4/orbit1584 `D4+A3+3A1/MW7`, and q4/orbit164
+`2A3+2A1/MW9` children are closed. Continue from the C8-pointed child to
+q8/orbit376.
 
 ### Q80 compiler and regression route
 
@@ -478,6 +610,75 @@ less reproducible, not cleaner.
   diagnosis and repair.
 - [`../Q80_FINAL_Q6_CLOSEOUT_2026-08-23.md`](../Q80_FINAL_Q6_CLOSEOUT_2026-08-23.md)
   — Q80 terminal marking/RR closeout.
+
+### q12/o4484 low-pole section compiler
+
+The direct final q12 edge remains the certified lattice route, but its horizontal
+section has an exact cheaper group-law compilation plan:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/analyze_h92_q12o4484_p0_section_word.sage \
+  --marking artifacts/generated-results/elkies-k3-h3-q4o164-c8-q8o376-4a1-p1229-marking.json \
+  --q12-cost artifacts/generated-results/elkies-k3-h3-q4o164-q8o376-4a1-p1229-q12d2-cap10000-rootless-equation-cost.json \
+  --output artifacts/generated-results/elkies-k3-h3-q4o164-q8o376-q12o4484-four-p0-section-word.json
+```
+
+This exhausts the marked norm-at-most-four shell, imposes the physical simple
+and affine component gate, rules out words of length at most three modulo the
+explicit subgroup, and selects four genuine `P.O=0` chamber sections with
+q4/o164 parent degrees `3,2,3,2`. It is an exact MW/group-law compiler target;
+the four characteristic-zero section equations are still to be constructed.
+
+### Rootless-exit low-pole compiler frontier
+
+The same construction is compared across both retained q12 rootless exits and
+all four retained q20 exits by:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/analyze_h92_rootless_p0_section_word_frontier.sage \
+  --marking artifacts/generated-results/elkies-k3-h3-q4o164-c8-q8o376-4a1-p1229-marking.json \
+  --cost artifacts/generated-results/elkies-k3-h3-q4o164-q8o376-4a1-p1229-q12d2-cap10000-rootless-equation-cost.json \
+  --cost artifacts/generated-results/elkies-k3-h3-q4o164-q8o376-4a1-p1229-q20d2-cap10000-rootless-equation-cost.json \
+  --output artifacts/generated-results/elkies-k3-h3-q4o164-q8o376-rootless-p0-section-word-frontier.json
+```
+
+The exact marked quotient search promotes q12/orbit5867 as an optional final
+compiler target: its four `P.O=0` branches have q4/o164 parent degrees
+`3,2,1,2`, versus total parent degree 10 for orbit4484. Optimizing the same
+word by parent `a-b` gives values `2,2,1,1` (sum 6, maximum 2), versus minimum
+sum 8 for orbit4484. A separate exact marked-route certificate pins the
+orbit5867 rootless child to R17. Exact meet-in-the-middle searches also rule
+out five- and six-section physical polynomial words with parent `a-b` total
+at most 5, so the four-section total 6 is stable against those short detours.
+The same artifact records a three-section
+`P.O=(0,0,1)` fallback and the negative length-at-most-four results for all four
+q20 exits. These remain compiler plans until the new sections are constructed
+over characteristic zero.
+
+The optional orbit5867 endpoint and its pinned-route composition replay with:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_h92_marked_degree2_candidate.sage \
+  --source-marking artifacts/generated-results/elkies-k3-h3-q4o164-c8-q8o376-4a1-p1229-marking.json \
+  --source-frame artifacts/generated-results/elkies-k3-h3-q4o164-c8-q8o376-4a1-p1229-frame.txt \
+  --fibre 6,2,-16,18,2,5,-11,2,13,11,-6,-41,6,5,-14,0,-3,-1,-2 \
+  --candidate-label q12o5867_after_q8o376 --target pinned_R17 \
+  --frame-output artifacts/generated-results/elkies-k3-h3-q4o164-q8o376-q12o5867-rootless-frame.txt \
+  --output artifacts/generated-results/elkies-k3-h3-q4o164-q8o376-q12o5867-rootless-certificate.json
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_h92_marked_route_to_pinned_r17.sage \
+  --edge artifacts/generated-results/elkies-k3-h3-q4o208-physical-q4o1584-lateral-certificate.json \
+  --edge artifacts/generated-results/elkies-k3-h3-q4o208-q4o1584-q4o164-a1a1a3a3-certificate.json \
+  --edge artifacts/generated-results/elkies-k3-h3-q4o164-c8-q8o376-4a1-certificate.json \
+  --edge artifacts/generated-results/elkies-k3-h3-q4o164-q8o376-q12o5867-rootless-certificate.json \
+  --source q4o208_equation_physical_3A3_C5_zero \
+  --status PASS_EXACT_Q323_FREE_Q4O1584_Q4O164_Q8O376_Q12O5867_PINNED_R17_ROUTE \
+  --output artifacts/generated-results/elkies-k3-h3-q4o208-q323-free-q4o1584-q4o164-q8o376-q12o5867-pinned-r17-route-certificate.json
+```
 
 ## Rule for future additions
 

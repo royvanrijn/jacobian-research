@@ -233,6 +233,7 @@ def render_routes(ledger: dict[str, Any]) -> str:
     route_labels = {
         "low-q-backtrack": "Low-q reverse backtrack",
         "h3-selected": "H3 selected corridor",
+        "h3-physical-suffix": "H3 physical equation suffix",
         "q80-generic": "Q80 generic corridor",
         "q80-cm24": "Q80 CM24 specialization shadow",
     }

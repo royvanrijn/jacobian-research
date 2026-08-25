@@ -20,8 +20,8 @@ EDGES = (
     GEN / "elkies-k3-h3-q4o208-corrected-a3-2a2-to-5a1-physical-q8-c10-certificate.json",
     GEN / "elkies-k3-h3-physical-5a1-to-4a1-q12-certificate.json",
     GEN / "elkies-k3-h3-physical-4a1-q4o21633-a2-certificate.json",
-    GEN / "elkies-k3-h3-physical-a2-q8o440-a1-certificate.json",
-    GEN / "elkies-k3-h3-physical-a2-q8o440-a1-q8o1081-rootless-certificate.json",
+    GEN / "elkies-k3-h3-physical-a2-q8o2102-a1-certificate.json",
+    GEN / "elkies-k3-h3-physical-a2-q8o2102-a1-q8o5165-rootless-certificate.json",
 )
 
 def load(path):

@@ -37,6 +37,32 @@ the compact current artifact directory:
 
 ## Primary record certificates
 
+### ICARM curve 356: rank at least 29 and the new rank-29 size record
+
+Replay point membership, trivial torsion, the exact finite-quotient
+independence certificate, global minimality, every local reduction, conductor,
+root number, and the complete reported prime factorizations:
+
+```sh
+PYTHONPATH=elliptic-curves/cas \
+  .venv/bin/python elliptic-curves/cas/verify_icarm_curve356_rank29.py \
+  --verify-primality
+```
+
+Replay the hash-pinned public-source comparison with curve 351 and the
+80-digit PARI height-Gram fingerprint of the first seventeen displayed
+points:
+
+```sh
+PYTHONPATH=elliptic-curves/cas \
+  .venv/bin/python elliptic-curves/cas/analyze_icarm_curve356_lineage.py
+```
+
+The first command proves `rank E(Q) >= 29`. The second is numerical evidence
+for a common ordered 17-section template, not a family-recognition theorem.
+See
+[`ICARM_CURVE356_RANK29_AND_CONSTRUCTION.md`](notes/ICARM_CURVE356_RANK29_AND_CONSTRUCTION.md).
+
 ### ICARM curve 302: rank at least 31
 
 The fast checker verifies both pinned hashes and recomputes the complete exact
