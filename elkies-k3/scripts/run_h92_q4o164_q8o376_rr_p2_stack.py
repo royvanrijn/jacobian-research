@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Run modular q8/orbit376 P2 scans and the exact QQ reconstruction.
+"""Run modular q8/orbit376 scans, exact QQ reconstruction and pointing.
 
 Invoke this with the repository's Sage Python. Independent prime scans are
 run in parallel, complete v2 outputs are reused unless ``--force`` is set,
-and the final prime is held out by default.
+and the final prime is held out by default. After exact reconstruction the
+known-section pointing probe runs unless explicitly disabled.
 """
 
 import argparse
@@ -18,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[2]
 LOCAL = ROOT / "artifacts/local/elkies-k3"
 PROBE = ROOT / "elkies-k3/scripts/probe_h92_q4o164_q8o376_rr_p2_modp.sage"
 RECONSTRUCT = ROOT / "elkies-k3/scripts/reconstruct_h92_q4o164_q8o376_rr_p2_qq.sage"
+POINT = ROOT / "elkies-k3/scripts/point_h92_q4o164_q8o376_from_known_sections_qq.sage"
 EXPECTED_SCHEMA = "elkies-k3.q4o164-q8o376-rr-p2-scan-modp.v2"
 
 parser = argparse.ArgumentParser(description=__doc__)
@@ -39,6 +41,12 @@ parser.add_argument(
     type=Path,
     default=LOCAL / "q4o164-q8o376-rr-p2-qq.json",
 )
+parser.add_argument(
+    "--pointing-output",
+    type=Path,
+    default=LOCAL / "q4o164-q8o376-known-section-pointing-qq.json",
+)
+parser.add_argument("--skip-pointing", action="store_true")
 parser.add_argument("--force", action="store_true")
 args = parser.parse_args()
 
@@ -57,6 +65,11 @@ reconstruction_output = (
     args.reconstruction_output
     if args.reconstruction_output.is_absolute()
     else ROOT / args.reconstruction_output
+)
+pointing_output = (
+    args.pointing_output
+    if args.pointing_output.is_absolute()
+    else ROOT / args.pointing_output
 )
 output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -117,8 +130,34 @@ command.extend(["--held-out", str(results[held_out])])
 command.extend(["--output", str(reconstruction_output)])
 subprocess.run(command, cwd=ROOT, check=True)
 print(
-    "Q8O376STACK|construction={}|held_out={}|status=PASS|output={}".format(
+    "Q8O376STACK|construction={}|held_out={}|reconstruction=PASS|output={}".format(
         ",".join(map(str, construction)), held_out, reconstruction_output
     ),
     flush=True,
 )
+
+if not args.skip_pointing:
+    # The pointing script consumes the reconstruction at its canonical local
+    # path. A non-default reconstruction output is useful for experiments but
+    # cannot be pointed implicitly without changing the proof input.
+    canonical_reconstruction = LOCAL / "q4o164-q8o376-rr-p2-qq.json"
+    if reconstruction_output.resolve() != canonical_reconstruction.resolve():
+        raise RuntimeError(
+            "known-section pointing requires the canonical reconstruction output; "
+            "use --skip-pointing with a non-default --reconstruction-output"
+        )
+    subprocess.run([str(python), str(POINT)], cwd=ROOT, check=True)
+    if pointing_output.resolve() != (
+        LOCAL / "q4o164-q8o376-known-section-pointing-qq.json"
+    ).resolve():
+        pointing_output.parent.mkdir(parents=True, exist_ok=True)
+        pointing_output.write_bytes(
+            (LOCAL / "q4o164-q8o376-known-section-pointing-qq.json").read_bytes()
+        )
+    pointing = json.loads(pointing_output.read_text())
+    print(
+        "Q8O376STACK|pointing_status={}|degree1={}|output={}".format(
+            pointing["status"], pointing["degree_one_count"], pointing_output
+        ),
+        flush=True,
+    )
