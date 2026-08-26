@@ -2,8 +2,8 @@
 """Run modular q8/orbit376 P2 scans and the exact QQ reconstruction.
 
 Invoke this with the repository's Sage Python. Independent prime scans are
-run in parallel, complete existing outputs are reused unless ``--force`` is
-set, and the final prime is held out by default.
+run in parallel, complete v2 outputs are reused unless ``--force`` is set,
+and the final prime is held out by default.
 """
 
 import argparse
@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[2]
 LOCAL = ROOT / "artifacts/local/elkies-k3"
 PROBE = ROOT / "elkies-k3/scripts/probe_h92_q4o164_q8o376_rr_p2_modp.sage"
 RECONSTRUCT = ROOT / "elkies-k3/scripts/reconstruct_h92_q4o164_q8o376_rr_p2_qq.sage"
+EXPECTED_SCHEMA = "elkies-k3.q4o164-q8o376-rr-p2-scan-modp.v2"
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument(
@@ -71,14 +72,14 @@ def reusable(path, prime):
         data = json.loads(path.read_text())
     except (OSError, json.JSONDecodeError):
         return False
+    if data.get("schema") != EXPECTED_SCHEMA:
+        return False
     search = data.get("search_space", {})
-    processed = int(search.get("processed", search.get("scanned", 0)))
+    processed = int(search.get("processed", 0))
     complete = bool(
         search.get("complete", False)
-        or (
-            search.get("stop_after") is None
-            and processed == int(search.get("expected_size", -1))
-        )
+        and search.get("stop_after") is None
+        and processed == int(search.get("expected_size", -1))
     )
     return bool(data.get("prime") == prime and complete)
 
@@ -97,7 +98,7 @@ def run_scan(prime):
     ]
     subprocess.run(command, cwd=ROOT, check=True)
     if not reusable(output, prime):
-        raise RuntimeError(f"prime {prime} scan did not produce a complete reusable artifact")
+        raise RuntimeError(f"prime {prime} scan did not produce a complete reusable v2 artifact")
     return prime, output, "COMPUTED"
 
 
