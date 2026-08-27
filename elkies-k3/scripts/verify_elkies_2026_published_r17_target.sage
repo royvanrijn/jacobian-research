@@ -110,7 +110,7 @@ assert Delta.gcd(Delta.derivative()).degree() == 0
 assert A.gcd(Delta).degree() == 0
 assert B.gcd(Delta).degree() == 0
 
-# Published height Gram, Theorem 4.  Every diagonal entry is 4 because the
+# Published height Gram, Theorem 4. Every diagonal entry is 4 because the
 # displayed basis consists of integral sections.
 Gpub = matrix(
     ZZ,
@@ -151,13 +151,18 @@ assert Gpinned.det() == 948 and Gpinned.is_positive_definite()
 Qpinned = quadratic_form_from_height_gram(Gpinned)
 
 # Sage delegates this positive-definite integral isometry test to PARI qfisom.
-# M satisfies Qpub(M) == Qpinned, equivalently M*Gpub*M^T == Gpinned in the
-# row-vector convention used by the repository.
 M = Qpub.is_globally_equivalent_to(Qpinned, return_matrix=True)
 assert M is not False
 M = matrix(ZZ, M)
 assert abs(M.det()) == 1
-assert M * Gpub * M.transpose() == Gpinned
+# QuadraticForm's basis-change convention has changed in presentation across
+# Sage interfaces; accept only a literal Gram identity and record its orientation.
+if M.transpose() * Gpub * M == Gpinned:
+    orientation = "M^T*Gpub*M=Gpinned"
+elif M * Gpub * M.transpose() == Gpinned:
+    orientation = "M*Gpub*M^T=Gpinned"
+else:
+    raise ArithmeticError("qfisom matrix returned without a matching Gram identity")
 
 payload = {
     "schema": "elkies-k3.elkies-2026-published-r17-target.v1",
@@ -181,8 +186,9 @@ payload = {
     },
     "pinned_identification": {
         "integrally_isometric": True,
-        "basis_change_published_to_pinned_rows": [list(map(int, row)) for row in M.rows()],
+        "basis_change_matrix": [list(map(int, row)) for row in M.rows()],
         "basis_change_determinant": int(M.det()),
+        "gram_identity_orientation": orientation,
     },
     "published_high_rank_fibre_parameters": {
         "rank_at_least_25": "-2/377",
