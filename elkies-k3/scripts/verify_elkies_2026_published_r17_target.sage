@@ -141,7 +141,7 @@ assert Gpub.is_positive_definite()
 
 Qpub = quadratic_form_from_height_gram(Gpub)
 # Existing scripts use Q(v)=height(v)/2, so height 4 occurs at Q=2.
-short_pub = Qpub.short_vector_list_up_to_length(3, up_to_sign_flag=True)
+short_pub = Qpub.short_vector_list_up_to_length(3, True)
 assert len(short_pub[1]) == 0  # no height-2 roots
 assert len(short_pub[2]) == 1311
 
