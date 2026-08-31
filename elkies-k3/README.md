@@ -7,13 +7,12 @@ equation lifts, and reusable methods, start with
 [`ELKIES_K3_PROCESS_ATLAS.md`](ELKIES_K3_PROCESS_ATLAS.md). For the
 general rank, determinant, fibration, specialization, and lift statements,
 see [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md).
-Before extending the remaining equation route, read
+Before extending the certified equation route or using its endpoint, read
 [`PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md`](PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md).
-It records what the historical construction already supplies, what concrete
-data remain unavailable, the minimum intermediate construction record, and
-the direct final R17 certification gate.  In particular, the remaining chain
-is a construction scaffold: optional intermediate completeness must not delay
-the two selected lifts or the final endpoint certificate.
+It records what the historical construction supplies, the minimum
+intermediate construction record, and the now-completed direct R17 endpoint
+gate. Optional intermediate completeness must not delay arithmetic use of the
+certified endpoint.
 For the
 human-readable map of how the reverse searches, H3 source construction, H2
 comparison, Q80 route, and CM24 scaffold fit together, see
@@ -30,10 +29,9 @@ failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and
 - Think of one K3 surface with several coordinate systems. A neighbour changes
   the elliptic fibration, moving rank between fibre roots and sections.
 - The generic budget is always `root rank + MW rank = 17`.
-- Equations are certified through the physical q4/orbit1584 and q4/orbit164
-  children, ending at `2A3+2A1/MW9`; the marked lattice route continues by
-  q8/orbit376 and the preferred optional q12/orbit5867 edge to the pinned
-  rootless `MW17` endpoint; q12/orbit4484 is the certified fallback.
+- The physical equation route continues through q8/orbit376 and the preferred
+  q12/orbit5867 edge to the pinned rootless `MW17` endpoint; q12/orbit4484 is
+  a certified but unnecessary fallback.
 - The q4/orbit230 equation and q4 return are exact, but the formerly promoted
   q6/orbit1315 continuation is withdrawn as an equation-cost target: its cheap
   score used a chamber pseudo-zero rather than the effective P230 section.
@@ -48,22 +46,32 @@ failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and
   q4/orbit1584 edge then gives `D4+A3+3A1/MW7`, and q4/orbit164 gives
   `2A3+2A1/MW9`, both with exact characteristic-zero equations and the
   effective markings needed by the next edge.  The exact q8/orbit376
-  horizontal is reconstructed over `QQ(t)`; the active equation gate is its
-  resolved Riemann--Roch compiler.
+  horizontal and resolved Riemann--Roch compiler are complete.  The preferred
+  q12/orbit5867 edge now gives an exact rootless Jacobian with `24I1` and
+  seventeen exact independent sections whose determinant-948 height Gram is
+  integrally pinned to R17. An exact point at the old `v=0` I2 support proves
+  source identity; good-reduction counts at 131 and 137 prove geometric
+  Picard rank 19; and the unique index-two candidate has odd norm 73, proving
+  that the full geometric MW lattice is saturated R17 of exact rank 17.
 - The separately certified first-q8 and D13 lattice detours remain available,
   but combined totals using the withdrawn 4,199 suffix are not valid compiler
   comparisons.  See
   [`A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md`](A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md).
 
 <!-- status-consumer: EC-K3-H3-A11-Q8-QQ-2A5 b7aaf4bf483eac68 -->
-<!-- status-consumer: EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE c43cea6673a4b39c -->
+<!-- status-consumer: EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE 86e7a3affbf35a9e -->
 <!-- status-consumer: EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE e8dbe599e076f13d -->
 <!-- status-consumer: EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE b648ea30fd562496 -->
 <!-- status-consumer: EC-K3-H3-Q4O208-Q4O1584-QQ 8463d62d0e9f2b83 -->
-<!-- status-consumer: EC-K3-H3-Q4O1584-Q4O164-QQ 87579ce827f9ff4e -->
+<!-- status-consumer: EC-K3-H3-Q4O1584-Q4O164-QQ bafe854a24d6762b -->
 <!-- status-consumer: EC-K3-H3-Q4O164-Q8O376-MOD131-HORIZONTAL 2249c509c1217d7c -->
-<!-- status-consumer: EC-K3-H3-Q4O164-Q8O376-QQ-HORIZONTAL cd7f46981d77f99b -->
-<!-- status-consumer: EC-K3-H3-Q4O208-R17-CURRENT-MARKED-ROUTE 1d6ad898c3cbe18b -->
+<!-- status-consumer: EC-K3-H3-Q4O164-Q8O376-QQ-HORIZONTAL 688f0a5f6d989e9c -->
+<!-- status-consumer: EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR c0bc752848961743 -->
+<!-- status-consumer: EC-K3-H3-Q12O5867-DEGREE1-SECTION-QQ 28056772646e9fc7 -->
+<!-- status-consumer: EC-K3-H3-Q12O5867-QQ-ROOTLESS 6a3dbee5942ddd0a -->
+<!-- status-consumer: EC-K3-H3-Q12O5867-QQ-R17-BASIS a2097150acf00645 -->
+<!-- status-consumer: EC-K3-H3-Q12O5867-ENDPOINT-QQ a83b08acd921c32b -->
+<!-- status-consumer: EC-K3-H3-Q4O208-R17-CURRENT-MARKED-ROUTE 432b34c44c78bcb9 -->
 
 Use `R17` for the recovered rootless endpoint and `H3 source` for the level-474
 Kumar polarization. Low-q, E6, H2 and Q80/CM24 are comparison or regression
@@ -77,7 +85,7 @@ The currently selected **H3 degree-two corridor** is one certified route from
 that source to the pinned recovered rootless/MW17 frame; the endpoint
 identification and complete inverse NS transport are exact.  The route is not
 proved shortest, globally optimal, or cheapest to compile.  The equation
-route now reaches the first two edges of the physical suffix:
+route now reaches the rootless endpoint:
 
 ```text
 H3 E7+E8/MW2
@@ -88,7 +96,9 @@ H3 E7+E8/MW2
  --q8 orbit12--> 2A5/MW7
  --q4 orbit208--> 3A3/MW8
  --q4 orbit1584--> D4+A3+3A1/MW7
- --q4 orbit164--> 2A3+2A1/MW9.
+ --q4 orbit164--> 2A3+2A1/MW9
+ --q8 orbit376--> 4A1/MW13
+ --q12 orbit5867--> rootless/MW17.
 ```
 
 The q8 repair found two independent bugs in the previous child-side compiler: a binary-quartic 2-cover multiplier was applied twice, and the q-frame CRT normalizer omitted the `Dx` factor of `x(S)=Nx/Dx`. After both corrections the q8 Riemann--Roch problem collapses to an exact `13 -> 2` characteristic-zero intersection and its Jacobian has one `I9*` fibre plus nine `I1`, hence `D13/MW4` exactly.
@@ -359,13 +369,32 @@ recovers exact `QQ(t)` coordinates with primitive-vector maxima 363 and 526
 bits.  Exact substitution and reduction to every input prime pass.  Thus the
 horizontal is proved in characteristic zero without lifting the larger Abel
 trace; exact fourfold pole growth also gives its marked canonical height 11.
-The resolved q8 RR pencil and child equation remain open.
+The resolved q8 calculation is now exact: the chord ambient has dimension 12,
+smooth saturation leaves dimension 4, and the two connected old-`I4` quotient
+rows leave `h0=2`. The resulting quartic has a minimal Jacobian with
+`4I2+16I1`, Euler number 24, and `4A1/MW13`. The selected marked embedding and
+an exact `B0` tangent orient the finite `T=0` I4 chain, identifying the first
+pointed origin as old component 6. Directly pointing instead at `P1229`, the
+nonidentity component of the finite I2 at `T=25281/168246841`, selects quartic
+sign `-1` and reproduces the same child invariants exactly. Thus the q8 edge is
+equation-marked with the preferred `P1229` zero.
 The marked q8/orbit376 and q12/orbit5867 lattice edges are primitive, nef,
 old-fibre-degree two, unimodular in both directions, and end at pinned R17.
-The q12/orbit5867 four-section compiler has parent degrees `(3,2,1,2)` and
-parent `a-b=(2,2,1,1)`, improving on the q12/orbit4484 fallback; both q12
-characteristic-zero equations remain open.  After q8 and one final q12 lift,
-switch directly to the endpoint certificate in
+The q12/orbit5867 nominal four-section lattice word has four physical
+`P.O=0` branches, parent degrees `(3,2,1,2)`, and parent
+`a-b=(2,2,1,1)`, improving on the q12/orbit4484 fallback as a planning proxy.
+It is the preferred optional final edge. The stable certificate label is
+`q12o5867_after_q8o376` with exact fibre fingerprint `d676cab5...`; the
+expanded-frontier index 30357 is sample-local. Complete polynomial shells at
+four good primes contain no realization of its nominal Q1 branch, so the
+equation compiler instead uses classes `499+500+69+511` with correction
+`-489+933-913`; its actual parent degrees are `(4,2,1,5)` and `a-b` values
+`(4,2,1,4)`. All sections, the q12 horizontal, the exact `22 -> 2` resolved
+plane, quartic, and rootless `24I1` Jacobian are complete over QQ. A complete
+mod-131 polynomial shell then selects a regular 17-section basis; all seventeen
+lift exactly over QQ, and exact intersections reproduce the pinned
+determinant-948 height Gram. Thus rank at least 17 and trivial torsion are
+unconditional. Switch to the Picard/discriminant and source-identity gates in
 [`PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md`](PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md).
 
 The former 4,199, 10,334, and 13,518 targets remain withdrawn: respectively

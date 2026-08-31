@@ -2033,7 +2033,42 @@ sage -python elkies-k3/scripts/certify_h92_q4o208_physical_q4o1584_rr_qq.sage
 sage -python elkies-k3/scripts/certify_h92_q4o1584_equation_marking_qq.sage
 sage -python elkies-k3/scripts/certify_h92_q4o1584_physical_q4o164_rr_qq.sage
 sage -python elkies-k3/scripts/certify_h92_q4o164_c8_equation_marking_qq.sage
+
+# Fixed-ADE replacement audit for the invalid q4/orbit323 identification:
+sage -python elkies-k3/scripts/certify_h92_q4o323_horizontal_marking_qq.sage
+sage -python elkies-k3/scripts/lift_h92_q4o323_horizontal_via_summands_qq.sage --precision 120
+sage -python elkies-k3/scripts/compile_h92_q4o208_q4o1599_a3_2a2_qq.sage
+
+# Corrected fixed-corridor q4/orbit323 recovery and exact equation compiler:
+sage elkies-k3/scripts/construct_h92_q4o323_horizontal_by_halving_qq.sage
+sage elkies-k3/scripts/compile_h92_q4o208_q4o323_a3_2a2_qq.sage
+
+# Carry the physical q323 wall through the fixed suffix and certify the
+# wall-corrected q207 continuation (q12, old degree two, child 5A1/MW12):
+sage elkies-k3/scripts/build_h92_q4o323_reflected_fixed_suffix_marking.sage
+sage -python elkies-k3/scripts/certify_h92_q4o323_component2_pointing_qq.sage
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_h92_marked_degree2_candidate.sage \
+  --source-marking artifacts/local/elkies-k3/q4o323-reflected-fixed-suffix-component2-marking.json \
+  --source-frame artifacts/generated-results/elkies-k3-h3-q4o208-corrected-a3-2a2-old_a11_component_2-frame.txt \
+  --fibre 6,2,-2,3,3,4,3,9,0,3,0,4,2,-4,2,-1,1,1,-1 \
+  --candidate-label physical_q12_reflected_q4o207_after_q4o323 \
+  --target current_4A1 \
+  --frame-output artifacts/local/elkies-k3/q4o323-physical-q12-reflected-q4o207-5a1-frame.txt \
+  --output artifacts/local/elkies-k3/q4o323-physical-q12-reflected-q4o207-5a1-certificate.json
+
+# Complete polynomial P.O=0 shell on the component-2-pointed q323 child.
+# The script rejects p=31 because both I3 fibres specialize to I4; p=61
+# preserves the marked fibre multiplicities.
+sage -python elkies-k3/scripts/construct_h92_q4o323_p0_shell_modp.sage --prime 61
 ```
+
+The component-2 pointing replay selects `W=+L0(u)` in the stored positive
+square-root normalization, verifies `81*A_pointed=A_child` and
+`729*B_pointed=B_child`, and constructs the opposite branch exactly over
+`QQ(u)`.  The good-prime shell has 602 signed polynomial sections; 120 have
+ordinary coefficient-Jacobian rank 12.  This is a modular construction
+frontier, not yet the q12 horizontal or a characteristic-zero lift.
 
 The exact q8/orbit376 horizontal is reconstructed without a large Groebner
 calculation.  The following good-prime set gives the pinned 566-bit CRT
@@ -2065,6 +2100,25 @@ The q4/orbit1584 pair gives `D4+A3+3A1/MW7`, with finite
 `I4+3I2+8I1`, `I0*` at infinity, and an exact second-I6-affine zero.  The
 q4/orbit164 pair gives `2A3+2A1/MW9`, with finite `I4+2I2+12I1`, `I4` at
 infinity, and exact `C8` pointing.  Each fibre list has Euler number 24.
+The replacement audit proves that branch 33 inverse is not q4/orbit323, then
+uses lifted branch 16 instead.  Its q4/orbit1599 `5 -> 3 -> 2` RR plane has
+`I4+2I3+14I1`, hence `A3+2A2/MW10`.  Both complete signed graph solutions
+give branch 16 the same sign and NS class.  The raw-to-physical transport then
+checks `D=O+P+V` with zero MW tail in `V`, so this equation edge is aligned
+unambiguously with its own marked q4/orbit1599 lattice edge; only an unused
+shell branch remains twofold.  That marked child is not the stored canonical
+q4/orbit323 frame which feeds q4/orbit207.
+
+The corrected fixed-corridor replay uses a different construction.  In the
+marked Mordell--Weil quotient it verifies
+`2*T=P8+2*P18+P33-2*C7`; the two inherited global orientations give rational
+halves with `P.O=3` and `P.O=1`, so the latter is selected exactly.  The
+duplication quartic factors as degrees `1+3`, and the marked half has compact
+degrees `x=(6,2)`, `y=(8,3)`.  The second command verifies
+`D=O+T+C2+C3` on the second old `I4`, computes the resolved `5 -> 3 -> 2`
+plane, and returns a minimal `I4+2I3+14I1` Jacobian.  Both commands avoid a
+Groebner basis; the first also avoids a new finite-field shell search.
+<!-- status-consumer: EC-K3-H3-Q4O208-Q4O323-QQ-A3-2A2 a903147a9023d49f -->
 
 The resulting exact marked lattice suffix continues as
 
@@ -2075,18 +2129,83 @@ The resulting exact marked lattice suffix continues as
           --q12/orbit5867--> rootless/MW17.
 ```
 
-Only the first two arrows in this displayed suffix have characteristic-zero
-equations, and the exact q8 horizontal is now available over `QQ(t)`.  The
-last two arrows and the endpoint isometry are exact marked lattice
-certificates; the q8 resolved RR/child equation, q12 equation, and direct
-17-section R17 certificate remain open.  q12/orbit4484 remains the certified
-fallback.  The full proof boundary and endpoint requirements are in
+The first three arrows have complete characteristic-zero equations. For q8,
+the inherited-`P1` unsplit degree-seven Abel strategy gives the exact
+horizontal, the resolved `12 -> 4 -> 2` pencil, quartic, and `4A1/MW13`
+Jacobian. The finite `T=0` I4 chain is oriented exactly, and a rational arc on
+the first finite-I2 exceptional conic points the child directly at `P1229`,
+with quartic sign `-1` and exact `81/729` invariant identities. The
+q12/orbit5867 edge, endpoint isometry, and characteristic-zero rootless
+equation are exact. q12/orbit5867 is the preferred optional final edge. Its
+nominal lattice compiler word has four physical `P.O=0` parent branches of
+degrees `(3,2,1,2)` and parent `a-b` values `(2,2,1,1)`, but complete shells
+at four good primes did not realize its Q1 branch. The executed exact word has
+degrees `(4,2,1,5)` and `a-b=(4,2,1,4)`; q12/orbit4484 remains the certified
+fallback. The direct 17-section R17 and endpoint certificates are now exact.
+The full proof and endpoint requirements are in
 [`elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md`](elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md).
 
+The historical parent-degree-one q12/orbit5867 compiler branch is exact over QQ. Its
+marked word is `2*C8opp+B1+2*B2-2*B3+B4-2*B5+B6+B7`; resolved-q8 restriction
+and P1229-pointed quartic transport give the mod-131 `(4,6)` section, and a
+regular rank-12 Hensel lift reconstructs 800-bit exact coefficients:
+
+```bash
+sage -python elkies-k3/scripts/construct_h92_q12o5867_degree1_branch_mod131.sage
+sage -python elkies-k3/scripts/lift_h92_q12o5867_degree1_branch_qq.sage
+```
+
+The equation-effective word and terminal rootless equation replay with:
+
+```bash
+sage -python elkies-k3/scripts/classify_h92_q12o5867_p0_shell_against_lattice_mod89.sage
+sage -python elkies-k3/scripts/lift_h92_q12o5867_replacement_word_seeds_qq.sage
+sage -python elkies-k3/scripts/construct_h92_q12o5867_target_horizontal_qq.sage
+sage -python elkies-k3/scripts/compile_h92_q12o5867_smooth_rr_qq.sage
+```
+
+The last command proves the exact `22 -> 2` RR plane and a minimal
+degree-`(8,12,24)` Jacobian with geometrically `24I1`. No new parent RR
+calculation, elimination, or Groebner basis is used.
+
+The direct rank-17 endpoint basis replays with:
+
+```bash
+sage -python elkies-k3/scripts/construct_h92_q12o5867_rootless_p0_shell_mod131.sage
+python3 elkies-k3/scripts/select_h92_q12o5867_rootless_mod131_basis.py
+sage -python elkies-k3/scripts/lift_h92_q12o5867_rootless_selected_basis_qq.sage
+sage -python elkies-k3/scripts/certify_h92_q12o5867_rootless_height_basis_qq.sage
+```
+
+This enumerates 2,622 signed regular modular sections, lifts only a selected
+17-section basis, and proves its exact determinant-948 QQ height Gram and
+determinant-minus-one isometry to pinned R17. Thus rank at least 17 and trivial
+torsion are unconditional. The final endpoint replay is:
+
+```bash
+sage -python elkies-k3/scripts/certify_h92_q12o5867_endpoint_qq.sage
+```
+
+It verifies an exact rational point on the q12 binary quartic and the
+`81/729` pointed-invariant identities, counts the K3 over `F_p` and
+`F_{p^2}` for `p=131,137`, applies the two-prime discriminant-square-class
+test to prove geometric Picard rank 19, and excludes the unique possible
+index-two even overlattice. Its terminal status is
+`PASS_EXACT_Q12O5867_SOURCE_IDENTITY_RHO19_FULL_MW_R17`; hence the full
+geometric Mordell--Weil group is saturated R17 of exact rank 17, trivial
+torsion, and determinant 948. No Groebner basis or surface elimination is
+used.
+
 <!-- status-consumer: EC-K3-H3-Q4O208-Q4O1584-QQ 8463d62d0e9f2b83 -->
-<!-- status-consumer: EC-K3-H3-Q4O1584-Q4O164-QQ 87579ce827f9ff4e -->
-<!-- status-consumer: EC-K3-H3-Q4O164-Q8O376-QQ-HORIZONTAL cd7f46981d77f99b -->
-<!-- status-consumer: EC-K3-H3-Q4O208-R17-CURRENT-MARKED-ROUTE 1d6ad898c3cbe18b -->
+<!-- status-consumer: EC-K3-H3-Q4O208-Q4O1599-QQ-A3-2A2 2018f08fd6b8e2a9 -->
+<!-- status-consumer: EC-K3-H3-Q4O1584-Q4O164-QQ bafe854a24d6762b -->
+<!-- status-consumer: EC-K3-H3-Q4O164-Q8O376-QQ-HORIZONTAL 688f0a5f6d989e9c -->
+<!-- status-consumer: EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR c0bc752848961743 -->
+<!-- status-consumer: EC-K3-H3-Q12O5867-DEGREE1-SECTION-QQ 28056772646e9fc7 -->
+<!-- status-consumer: EC-K3-H3-Q12O5867-QQ-ROOTLESS 6a3dbee5942ddd0a -->
+<!-- status-consumer: EC-K3-H3-Q12O5867-QQ-R17-BASIS a2097150acf00645 -->
+<!-- status-consumer: EC-K3-H3-Q12O5867-ENDPOINT-QQ a83b08acd921c32b -->
+<!-- status-consumer: EC-K3-H3-Q4O208-R17-CURRENT-MARKED-ROUTE 432b34c44c78bcb9 -->
 
 The retained zero-pole boundary audit is reproduced by:
 

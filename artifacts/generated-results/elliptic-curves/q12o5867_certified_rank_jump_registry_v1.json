@@ -1,0 +1,16 @@
+{
+  "admission_rule": {
+    "deduplication_key": "global-minimal exact (c4,c6) Q-isomorphism key",
+    "minimum_exact_certified_rank_lower_bound": 18,
+    "minimum_exact_quotient_gain_beyond_generic_rank17": 1,
+    "repository_exclusion": "reject a key already present in repository status/generated manifests"
+  },
+  "claim_boundary": [
+    "Scores, numerical points, and uncertified point searches are never entries.",
+    "An entry is a certified lower bound, not an exact-rank claim."
+  ],
+  "entries": [],
+  "entry_count": 0,
+  "schema": "elliptic-curves.q12o5867-certified-rank-jump-registry.v1",
+  "status": "EMPTY_NO_CERTIFIED_Q12O5867_RANK_JUMP"
+}

@@ -79,27 +79,36 @@ artifact fields should use one of the qualified names below.
 |---|---|---|
 | **recovered endpoint** or **R17** | the pinned rootless rank-17 positive frame `data/lattice/rank17_gram.txt` | input constraint for reverse searches; final lattice endpoint of the H3 and generic Q80 routes |
 | **H3 source** | the level-474 Kumar `E7+E8/MW2` polarization with height Gram `[[21/2,3],[3,46]]` | geometric starting point selected by the source audit |
-| **selected next lattice child** | the already-certified child frame of the retained neighbor | q8/orbit376 `4A1/MW13` on the physical suffix |
-| **selected next equation child** | the characteristic-zero Weierstrass model still to be constructed for that retained child frame | the q8/orbit376 `4A1/MW13` model from the exact C8-pointed `2A3+2A1/MW9` parent |
+| **selected next lattice child** | the already-certified child frame of the retained neighbor | q12/orbit5867 rootless/MW17, integrally marked to pinned R17 |
+| **selected next equation child** | the characteristic-zero Weierstrass model constructed for the retained child frame | the exact q12/orbit5867 rootless model, source-identified with geometric Picard rank 19 and full saturated MW lattice R17 |
 | **specialization endpoint** | the rational member eventually identified with curve 273 | sought only after the generic rootless H3 family and its sections are explicit |
 | **CM24 regression endpoint** | the specialized Q80 terminal model `4A2+A3+A5/MW2` | a compiler regression on a Picard-rank-jumping specialization, not R17 |
 
 For the active H3 equation step, the parent/operation/child triple is therefore
 
 ```text
-parent equation         = exact C8-pointed 2A3+2A1/MW9 model
-selected operation      = q8 degree-two pencil, orbit 376
-selected equation child = 4A1/MW13 model
-route endpoint          = R17, preferably via q12/orbit5867 after q8/orbit376
+parent equation         = exact P1229-pointed 4A1/MW13 model
+selected operation      = q12 degree-two pencil, orbit 5867
+selected equation child = rootless/MW17 model marked to pinned R17
+route endpoint          = pinned R17
 fallback endpoint edge  = q12/orbit4484 (also lattice-certified)
 ```
 
-In particular, R17 is not the local object that the q8 Riemann--Roch compiler
-must construct. The compiler needs the selected divisor and resolved
-component/module data on the exact q4/orbit164 parent; its immediate output is
-the `4A1/MW13` child equation. The direct endpoint certificate begins only
-after either the preferred q12/orbit5867 or fallback q12/orbit4484 rootless
-equation exists.
+The q8 Riemann--Roch compiler has constructed and marked its `4A1/MW13`
+child. A complete good-prime polynomial shell showed that the nominal
+four-branch cost word is not equation-effective. The corrected exact word
+`499+500+69+511-489+933-913` constructs the q12 horizontal, and the direct
+`22 -> 2` smooth Riemann--Roch calculation gives the rootless model over QQ.
+An exhaustive p=131 polynomial shell and regular Hensel lifts then give
+seventeen exact QQ sections whose determinant-948 height Gram is integrally
+pinned to R17. An exact point at the old `v=0` I2 support identifies the
+quartic with its Jacobian and hence with the pointed H3 forward chain. Exact
+counts at good primes 131 and 137 give incompatible rank-20 reduction
+discriminant square classes, proving geometric Picard rank 19. The unique
+possible index-two enlargement has odd norm 73, so the full geometric MW
+lattice is saturated R17 of exact rank 17 and trivial torsion.
+
+<!-- status-consumer: EC-K3-H3-Q12O5867-ENDPOINT-QQ a83b08acd921c32b -->
 
 The reverse endpoint identification and all inverse stage transports are
 certified in

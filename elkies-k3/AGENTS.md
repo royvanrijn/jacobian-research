@@ -9,14 +9,14 @@ the only authority for what is proved.
   moves rank between fibre roots and Mordell--Weil sections; it does not create
   new Neron--Severi classes.
 - The generic rank budget is `root rank + MW rank = 17`.
-- Equations are certified through the physical `q4/orbit164`
-  `2A3+2A1/MW9` child.  The marked lattice route from that equation through
-  `q8/orbit376` and the preferred optional final edge `q12/orbit5867` to the
-  pinned rootless `MW17` endpoint is exact; the last two equation lifts are
-  not.  `q12/orbit4484` remains the certified fallback.
-- The next equation edge is `2A3+2A1/MW9 --q8 orbit376--> 4A1/MW13`.
-  Do not call it proved until its canonical note, software lock, and
-  `MATH_STATUS.json` entry agree.
+- The physical equation route through `q8/orbit376` and the preferred final
+  edge `q12/orbit5867` is complete. Its rootless `24I1` endpoint is exactly
+  the certified H3 source, has geometric Picard rank `19`, and has full
+  saturated Mordell--Weil lattice pinned R17 of rank `17` and determinant
+  `948`. `q12/orbit4484` remains a certified but unnecessary fallback.
+- The next primary objective is arithmetic specialization from this certified
+  endpoint. Fixed-corridor reverse lifts, q323, alternate routes, and further
+  compiler optimization are parked unless they directly support that goal.
 
 ## Start here
 
@@ -33,22 +33,15 @@ the only authority for what is proved.
 
 ## Active construction directive
 
-- Treat the remaining neighbour chain as a construction scaffold.  Carry the
-  exact equation, pencil, origin, and only the markings needed by the next
-  selected divisor or final source-identity proof.
-- Preserve the exact q4/orbit1584 and q4/orbit164 certificates.  Prioritize
-  the q8/orbit376 and q12/orbit5867 equation lifts, then switch to direct R17
-  endpoint certification.  Retain q12/orbit4484 only as the equation-level
-  fallback.
-- Do not start alternate suffix, q323, changed-zero, or global route-score work
-  unless an exact failure shows that it is needed to unblock those two lifts.
-- Do not transport a full MW basis through every remaining child by default.
-  Once the rootless equation exists, prefer direct finite-field/Hensel recovery
-  of a 17-section basis and certify its height Gram against
-  `data/lattice/rank17_gram.txt`.
-- Intermediate completeness is not endpoint correctness.  Never omit data
-  required to define the next divisor exactly, and never promote R17 until the
-  endpoint gate in the shortcut directive and `MATH_STATUS.json` both pass.
+- Preserve the exact q8/orbit376 and q12/orbit5867 equations, forward
+  pointings, two-prime Picard certificate, and saturated determinant-948 R17
+  basis as the endpoint theorem package.
+- Work next on arithmetic specialization from the certified rootless family.
+  Do not resume alternate suffixes, q323, changed-zero searches, compiler
+  optimization, or fixed-corridor reverse lifting unless they directly
+  produce a needed source-identity or specialization certificate.
+- Treat optional intermediate route completeness as secondary to the endpoint
+  theorem and its arithmetic applications.
 
 ## Maintain the theorem package
 

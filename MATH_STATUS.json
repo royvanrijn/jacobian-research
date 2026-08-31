@@ -1349,7 +1349,7 @@
     {
       "id": "EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE",
       "kind": "reproduction",
-      "state": "partial",
+      "state": "proved",
       "title": "Exact promoted physical q4/orbit208 route from the orbit12 equation to pinned R17",
       "scope": "In the actual physical-component chamber of the equation-explicit component-9-zero 2A5/MW7 surface, exhaustive q4 degree-two Weyl enumeration finds orbit208 with primitive nef isotropic fibre [2,2,1,1,1,1,1,1,1,1,1,1,0,0,-1,0,0,0,1]. Complete component, affine, all-section, and finite horizontal-wall gates pass. The divisor has the literal already-explicit I4 decomposition F_q4=old_zero+P1229+old_A11_component_10+old_A11_component_8; P1229 is an exact QQ polynomial section of degrees (4,6,0), so P.O=0. The exact characteristic-zero resolved-RR computation has dimensions 4 ambient to rank 2 local conditions to h0 2 and maximum kernel rational height 420710 bits. Exact removal of the two old I6 squared factors gives a degree-four quartic. Its globally minimal Jacobian has degrees (8,12,24), three finite I4 fibres, twelve finite I1 fibres, smooth infinity and Euler number 24, hence ADE 3A3 and MW rank 8 conditional on rho 19. The equation marking resolves old_A11_component_5 exactly: its new-base map is Mobius of degree (1,1) in the I6 component parameter, its quartic ordinate has degree (1,0), and the pointed quartic gives the stored global Jacobian. The opposite sign is the exact first-I6 affine section. The three exact I4 supports reduce to 93,26,38 modulo 103; their complete physical cycles have identity indices 1,2,3, root Cartan 3A3 of determinant 64, and bidirectional determinant-one NS transport. This computation uses no Groebner basis, large polynomial factorization, or global-quartic reparse; it took 497.22 seconds and 770096 KB peak RSS. The operational equation-cost score is -1412, with gross positive burden 1388 before explicit-curve credits, improving the superseded physical q10 score 4471 by 5883. The q4/orbit208 equation edge is complete. However, pulling the raw canonical 3A3-to-A3+2A2 suffix fibre into this physical C5 chamber gives intersection -1 with effective old_zero=old_A11_component_9, so the automatic resume-suffix assumption is withdrawn. One exact reflection in that wall gives a primitive isotropic class nonnegative on every inherited explicit curve, but all-section nefness, an equation-effective next zero, and the later characteristic-zero suffix equations remain separate gates. The pinned-R17 identification recorded here is an exact abstract lattice transport, not yet a complete equation corridor.",
       "canonical_source": "elkies-k3/A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md",
@@ -1438,11 +1438,79 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-H3-Q4O208-Q4O1599-QQ-A3-2A2",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Exact QQ q4/orbit1599 replacement equation for A3+2A2",
+      "scope": "The earlier branch-33 q4/orbit323 identification is false: a local profile/intersection candidate was not checked against either complete signed eleven-section graph solution, and the corrected graph has zero target hits. An exact summand-first replay independently reconstructs branch 33 inverse but confirms it is not q4/orbit323. Exhaustive q=4 root-adapted enumeration instead finds ten A3+2A2/MW10 orbits, and already-lifted exact branch 16 supplies orbit1599. Its saturated P.O=1 chord ambient has dimensions 5 to 3 to 2. At the compact t=0 I4, factoring the constant resolved chord trace selects the unique linear quotient whose radicand is two squared linear factors times a quartic. Binary-quartic invariants give an exact QQ Jacobian with fibres I4+2I3+14I1, Euler number 24, root data (7,24,36), and MW rank 10 in the pinned rank-19 NS lattice. No Groebner basis is used. The q4/orbit1599 edge is primitive nef and has bidirectional unimodular NS transport. Although the complete lifted-section graph has two global labelings, branch 16 has sign +1 and exactly the same raw NS class in both. After the certified raw-to-physical basis change, the lattice fibre decomposes as D=O+P+V with V supported in the old fibre root lattice and zero MW tail. Hence the residual ambiguity affects only an unused branch and the equation edge composes unambiguously with the pinned-R17 suffix.",
+      "canonical_source": "elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md",
+      "dependencies": [
+        "EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE"
+      ],
+      "checker": "elkies-k3/scripts/compile_h92_q4o208_q4o1599_a3_2a2_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:670e66acffd3b7613c63387dc41e97615ca066af357fe1fcd68d7f3608416a4b",
+      "software_lock": [
+        "elkies-k3/scripts/compile_h92_q4o208_q4o1599_a3_2a2_qq.sage",
+        "elkies-k3/scripts/certify_h92_q4o323_horizontal_marking_qq.sage",
+        "elkies-k3/scripts/lift_h92_q4o323_horizontal_via_summands_qq.sage",
+        "elkies-k3/scripts/certify_h92_marked_degree2_candidate.sage"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-Q4O208-Q4O323-QQ-A3-2A2",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Exact corrected q4/orbit323 horizontal, RR pencil, and A3+2A2 Jacobian",
+      "scope": "The corrected fixed-corridor q4/orbit323 horizontal is recovered without a new shell search or a Groebner basis. In the marked q4/orbit208 Mordell-Weil quotient, doubling the target gives P8+2P18+P33-2C7 after resolving the inherited global-inversion ambiguity by the certified invariant P.O=1; the opposite orientation has P.O=3 and is excluded. The duplication quartic factors exactly as linear times cubic, and its unique marked rational half has compact degrees x=(6,2), y=(8,3), with maximum coefficient sizes 94 and 135 bits. The exact marked NS doubling relation is verified modulo the primitive trivial lattice, whose Smith invariants are all one, so no torsion ambiguity remains. The prescribed vertical residual is exactly components 2 and 3 of the second old I4. Its t=0 connected-component trace gives a resolved Riemann--Roch calculation 5 to 3 to 2. The chord radicand is two squared linear factors times a quartic; binary-quartic invariants give a minimal exact QQ Jacobian with fibres I4+2I3+14I1, Euler number 24, root data (7,24,36), and MW rank 10 under the pinned rank-19 NS identity. The remaining gate is to attach an equation-effective child zero/component marking that selects the stored q4/orbit207 suffix frame.",
+      "canonical_source": "elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md",
+      "dependencies": [
+        "EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE"
+      ],
+      "checker": "elkies-k3/scripts/compile_h92_q4o208_q4o323_a3_2a2_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9773ae1a1a9b51c9675de53e3082bd7eed2451ed8d2e0c6ef608f2605cf26cf1",
+      "software_lock": [
+        "elkies-k3/scripts/construct_h92_q4o323_horizontal_by_halving_qq.sage",
+        "elkies-k3/scripts/compile_h92_q4o208_q4o323_a3_2a2_qq.sage",
+        "elkies-k3/scripts/recover_h92_q4o323_horizontal_mod131.sage",
+        "elkies-k3/scripts/certify_h92_marked_degree2_candidate.sage"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-H3-Q4O1584-Q4O164-QQ",
       "kind": "reproduction",
       "state": "proved",
       "title": "Exact physical q4/orbit164 equation and C8 marking",
-      "scope": "On the exact second-I6-affine-pointed q4/orbit1584 child, the selected horizontal has two rational double-branch values at the finite I2 fibres where it meets the identity component. Linear interpolation through those values gives an exact 4-to-2-to-2 Riemann--Roch plane without a Groebner basis. The resulting degree-four quartic has a minimal Jacobian with finite fibres I4+2I2+12I1, an I4 fibre at infinity, Euler number 24, root lattice 2A3+2A1, and MW rank 9 under the certified Picard-rank-19 source identity. The unique finite-I4 identity branch is exactly old C8, the opposite sign reconstructs the contracted node, and pointing at C8 reproduces the stored short Jacobian. The separate marked-edge certificate supplies mutually inverse unimodular Neron--Severi transports. This proves the q4/orbit164 equation edge and attaches the source zero required by q8/orbit376; that q8 equation remains open.",
+      "scope": "On the exact second-I6-affine-pointed q4/orbit1584 child, the selected horizontal has two rational double-branch values at the finite I2 fibres where it meets the identity component. Linear interpolation through those values gives an exact 4-to-2-to-2 Riemann--Roch plane without a Groebner basis. The resulting degree-four quartic has a minimal Jacobian with finite fibres I4+2I2+12I1, an I4 fibre at infinity, Euler number 24, root lattice 2A3+2A1, and MW rank 9 under the certified Picard-rank-19 source identity. The unique finite-I4 identity branch is exactly old C8, the opposite sign reconstructs the contracted node, and pointing at C8 reproduces the stored short Jacobian. The separate marked-edge certificate supplies mutually inverse unimodular Neron--Severi transports. This proves the q4/orbit164 equation edge and attaches the source zero required by q8/orbit376; the downstream q8 equation and P1229 zero marking are now proved by EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR.",
       "canonical_source": "elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md",
       "dependencies": [
         "EC-K3-H3-Q4O208-Q4O1584-QQ"
@@ -1499,11 +1567,8 @@
       "supersedes_notes": [],
       "supersedes": [],
       "closes_problems": [],
-      "narrows_problems": [
-        "OP-EC-NEXT"
-      ],
+      "narrows_problems": [],
       "consumers": [
-        "OP-EC-NEXT",
         "elkies-k3/README.md",
         "elkies-k3/scripts/README.md"
       ],
@@ -1516,7 +1581,7 @@
       "kind": "reproduction",
       "state": "proved",
       "title": "Exact characteristic-zero q8/orbit376 horizontal",
-      "scope": "On the exact C8-pointed q4/orbit164 compact Weierstrass model, the inherited-P1 degree-seven Abel strategy constructs the same marked q8/orbit376 horizontal at 22 good primes. The selected identity is H=T-C8opp-B0+2B1+B2-3B3-B4-2B5+B7, uniquely characterized at each prime by compact degrees x=12/8, y=18/12 and P.O=4. A 566-bit CRT followed by simultaneous projective LLL reconstruction of the 22- and 32-entry coordinate vectors gives an exact section over QQ(t); its primitive-vector maxima are 363 and 526 bits. Literal substitution verifies the compact Weierstrass equation, fourfold pole growth gives canonical height 11 exactly, and reduction reproduces all 22 modular artifacts. The calculation uses only fibrewise 7-by-8 kernels, univariate interpolation, explicit affine elliptic group law, CRT, and small LLL, with no Groebner basis. This proves the q8 horizontal over QQ(t), but not yet its resolved Riemann--Roch pencil or the 4A1/MW13 child equation.",
+      "scope": "On the exact C8-pointed q4/orbit164 compact Weierstrass model, the inherited-P1 degree-seven Abel strategy constructs the same marked q8/orbit376 horizontal at 22 good primes. The selected identity is H=T-C8opp-B0+2B1+B2-3B3-B4-2B5+B7, uniquely characterized at each prime by compact degrees x=12/8, y=18/12 and P.O=4. A 566-bit CRT followed by simultaneous projective LLL reconstruction of the 22- and 32-entry coordinate vectors gives an exact section over QQ(t); its primitive-vector maxima are 363 and 526 bits. Literal substitution verifies the compact Weierstrass equation, fourfold pole growth gives canonical height 11 exactly, and reduction reproduces all 22 modular artifacts. The calculation uses only fibrewise 7-by-8 kernels, univariate interpolation, explicit affine elliptic group law, CRT, and small LLL, with no Groebner basis. This entry proves the q8 horizontal over QQ(t); the resolved Riemann--Roch pencil and 4A1/MW13 Jacobian are proved separately by EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR.",
       "canonical_source": "elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md",
       "dependencies": [
         "EC-K3-H3-Q4O164-Q8O376-MOD131-HORIZONTAL"
@@ -1535,6 +1600,38 @@
       "supersedes_notes": [],
       "supersedes": [],
       "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact characteristic-zero q8/orbit376 resolved RR pencil, 4A1 Jacobian, and P1229 pointing",
+      "scope": "On the exact compact q4/orbit164 model, the inherited-P1 q8/orbit376 horizontal has projective degrees (X,Y,Z)=(12,18,4). The saturated marked-chord ambient a=AA/Z^2, deg(AA)<=8, b=BB/Z, deg(BB)<=2 has dimension 12. Exact smooth regularity AA*X=BB*Y modulo Z^2 has rank 8 and leaves a four-plane. The vertical divisor is the union of the complete nonidentity A3 chains in the two old I4 fibres; direct split-toric resolution gives two independent, orientation-invariant quotient rows and hence h0=2. Exact division by Z^4 leaves a binary quartic whose invariants produce a minimal Jacobian of degrees (8,12,22), fibres 4I2+16I1, Euler number 24, root data (4,8,16), and MW rank 13 in the pinned rank-19 NS lattice. The selected marked embedding and the exact B0 tangent orient the finite T=0 I4 chain as old components 6, missing, 5 and select old component 6 as the initial pointed origin. The preferred lattice zero P1229 is the nonidentity component of the finite I2 at T=25281/168246841. An exact rational exceptional-conic arc selects quartic sign -1, and direct P1229 pointing verifies 81*A_pointed=A_child and 729*B_pointed=B_child. The calculation uses direct congruences, toric series, a rational conic point, and univariate factorization; no Groebner basis, full conic parametrization, or nonlinear characteristic-zero solve is used. The downstream preferred q12/orbit5867 equation is now proved by EC-K3-H3-Q12O5867-QQ-ROOTLESS.",
+      "canonical_source": "elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md",
+      "dependencies": [
+        "EC-K3-H3-Q4O164-Q8O376-QQ-HORIZONTAL"
+      ],
+      "checker": "elkies-k3/scripts/compile_h92_q4o164_q8o376_smooth_rr_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1a5c2d98d5c1275976ef2eb82e8c91a15be589e373e367016cdfcc102485232a",
+      "software_lock": [
+        "elkies-k3/scripts/compile_h92_q4o164_q8o376_smooth_rr_qq.sage"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
       "narrows_problems": [
         "OP-EC-NEXT"
       ],
@@ -1549,17 +1646,291 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-H3-Q12O5867-DEGREE1-SECTION-QQ",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "First exact characteristic-zero q12/orbit5867 compiler section",
+      "scope": "In the promoted four-P.O=0 q12/orbit5867 compiler, the unique q4/orbit164 parent-degree-one branch has marked identity 2*C8opp+B1+2*B2-2*B3+B4-2*B5+B6+B7 in selected embedding 15. Exact elliptic group law modulo 131, restriction through the resolved q8/orbit376 pencil, and the P1229-pointed quartic map give a polynomial section of the q8 child with degrees (4,6), P.O=0, and I2 component profile (0,0,0,0). Its thirteen coefficient equations in twelve variables have Jacobian rank 12 modulo 131 with selected minor determinant 50. Ordinary p-adic Newton lifting to 900 digits and rational reconstruction recover exact QQ coefficients of maximum rational height 800 bits. Literal substitution in the P1229-pointed 4A1/MW13 Weierstrass equation and exact reduction to the marked modular seed both pass. No Groebner basis or elimination is used. This was the first exact q12 compiler section; EC-K3-H3-Q12O5867-QQ-ROOTLESS subsequently replaces the nominal four-branch construction by an equation-effective word and completes the q12 equation.",
+      "canonical_source": "elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md",
+      "dependencies": [
+        "EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR"
+      ],
+      "checker": "elkies-k3/scripts/lift_h92_q12o5867_degree1_branch_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1b34abd2002b312dd2a26d4c441d804159df583394a71c06605730b09fb5b61a",
+      "software_lock": [
+        "elkies-k3/scripts/construct_h92_q12o5867_degree1_branch_mod131.sage",
+        "elkies-k3/scripts/lift_h92_q12o5867_degree1_branch_qq.sage"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-Q12O5867-QQ-ROOTLESS",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact characteristic-zero q12/orbit5867 rootless Jacobian",
+      "scope": "Starting from the exact P1229-pointed q8/orbit376 4A1/MW13 equation, a complete polynomial P.O=0 shell and exact Abel/component/intersection gates replace the nominal low-cost branch word by the equation-effective classes 499+500+69+511 with named correction -first_old_I6_I4_missing_component-old_A11_component_5+old_A11_component_9. The four required polynomial sections are exact over QQ; the full equation-coordinate correction cosets are 489, 933, and 913, so the literal group-law word is 499+500+69+511-489+933-913. It yields the certified q12 horizontal with x numerator/denominator degrees 24/20, y degrees 35/30, P.O=10, I2 profile (1,1,1,1), height 22, and the exact marked MW tail of q12o5867_after_q8o376. For D=O+P-4F, the direct smooth chord ambient deg(AA)<=16, deg(BB)<=4 has dimension 22; the coefficient congruence modulo Z^2 has rank 20 and h0=2, with no vertical rows. Division by Z^4 gives a binary quartic times a squared degree-10 factor. Its minimal Jacobian has degrees (8,12,24), squarefree degree-24 discriminant, smooth infinity, geometrically 24 I1 fibres, Euler number 24, and root rank zero. Thus this exact equation realizes the preferred optional final edge to the rootless frame integrally marked to pinned R17. EC-K3-H3-Q12O5867-QQ-R17-BASIS subsequently proves seventeen exact independent endpoint sections and their pinned determinant-948 height Gram. The Picard upper bound, full-MW saturation promotion, and final source-identity certificate remain separate endpoint gates. The construction uses bounded shell enumeration, exact group law, linear congruences, and univariate factorization; no Groebner basis or surface elimination is used.",
+      "canonical_source": "elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md",
+      "dependencies": [
+        "EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR",
+        "EC-K3-H3-Q12O5867-DEGREE1-SECTION-QQ",
+        "EC-K3-H3-Q4O208-R17-CURRENT-MARKED-ROUTE"
+      ],
+      "checker": "elkies-k3/scripts/compile_h92_q12o5867_smooth_rr_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:625a285b766133de3c956a44f07534b1a52a354f0bd8dea62ca0a328a779072c",
+      "software_lock": [
+        "elkies-k3/scripts/classify_h92_q12o5867_p0_shell_against_lattice_mod89.sage",
+        "elkies-k3/scripts/lift_h92_q12o5867_replacement_word_seeds_qq.sage",
+        "elkies-k3/scripts/derive_h92_q8o376_old_a11_component9_section_qq.sage",
+        "elkies-k3/scripts/construct_h92_q12o5867_target_horizontal_qq.sage",
+        "elkies-k3/scripts/compile_h92_q12o5867_smooth_rr_qq.sage"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "OP-EC-NEXT",
+        "REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-Q12O5867-QQ-R17-BASIS",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact q12/orbit5867 rank-17 section basis pinned to R17",
+      "scope": "On the exact q12/orbit5867 rootless Jacobian, an exhaustive generated-C polynomial P.O=0 shell at the smallest good prime 131 has 2622 signed sections, or 1311 unoriented pairs, and every 13-by-12 coefficient Jacobian has rank 12. Exact finite-field section intersections select seventeen sections with height determinant 948 and a determinant-minus-one integral isometry to the pinned rank17 Gram matrix. Independent ordinary Newton--Hensel lifts reconstruct all seventeen over QQ at 4096 p-adic digits; their maximum rational coefficient sizes range from 7895 to 7933 bits. Every section passes literal QQ Weierstrass substitution and exact seed reduction. Exact characteristic-zero finite and infinity intersection calculations reproduce the selected height Gram, determinant 948, and the pinned integral isometry. Since all fibres are I1 or smooth, every nonzero section has height 4+2(P.O)>0, so torsion is trivial. Therefore the Mordell--Weil rank over QQ(u) is unconditionally at least 17. The displayed section lattice is integrally isometric to pinned R17, but promotion to the full geometric Mordell--Weil group and an unconditional saturation statement still require the separate Picard-rank/discriminant upper bound and final source-identity gate. The calculation uses exhaustive finite evaluation, exact gcd/intersection arithmetic, and regular Hensel lifting; no Groebner basis or elimination is used.",
+      "canonical_source": "elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md",
+      "dependencies": [
+        "EC-K3-H3-Q12O5867-QQ-ROOTLESS"
+      ],
+      "checker": "elkies-k3/scripts/certify_h92_q12o5867_rootless_height_basis_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:2e99b83d359c82de020ca881549a32f669ef4216dce5dc4b5a9b7b2a414ae8ac",
+      "software_lock": [
+        "elkies-k3/scripts/construct_h92_q12o5867_rootless_p0_shell_mod131.sage",
+        "elkies-k3/scripts/select_h92_q12o5867_rootless_mod131_basis.py",
+        "elkies-k3/scripts/lift_h92_q12o5867_rootless_selected_basis_qq.sage",
+        "elkies-k3/scripts/certify_h92_q12o5867_rootless_height_basis_qq.sage",
+        "elkies-k3/data/lattice/rank17_gram.txt",
+        "elkies-k3/data/lattice/short_vector_basis_gram.txt",
+        "elkies-k3/data/lattice/short_vector_basis_coords.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "OP-EC-NEXT",
+        "REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md",
+        "elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-Q12O5867-ENDPOINT-QQ",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact q12/orbit5867 source identity, Picard rank 19, and full saturated MW lattice R17",
+      "scope": "On the exact q12/orbit5867 binary quartic w^2=q_u(v), the old finite I2 support v=0 gives an exact QQ(u)-point because q_u(0) is the square of a quadratic polynomial. The standard pointed-quartic generalized Weierstrass invariants satisfy 81*A_pointed=A_endpoint and 729*B_pointed=B_endpoint, so the final Jacobian is the same K3 as the q12 pencil; composition with the already-pointed forward chain proves exact identity with the certified H3 source. Exact point counts are #X(F_131)=19308, #X(F_131^2)=294853764, #X(F_137)=21036, and #X(F_137^2)=352653204. After removing the nineteen explicit algebraic classes, the residual Frobenius cubics have eigenvalue -p and reciprocal-pair traces -212 and -200. The remaining pairs are not p times roots of unity, so the Tate theorem gives geometric reduction Picard rank 20. Artin--Tate gives NS discriminant square-class representatives -23700=-948*25 and -35076=-948*37; their ratio 37/25 is not a square, forcing characteristic-zero geometric Picard rank at most 19. The nineteen explicit classes therefore give rho=19. Shioda--Tate gives MW rank 17 and rootlessness gives trivial torsion. Any proper integral enlargement of the determinant-948 displayed section lattice would have index two. Its unique mod-2 coset has norm 73, hence is odd, while the full rootless K3 MW height lattice is even integral. Thus the seventeen exact sections are saturated and the full geometric Mordell--Weil lattice is pinned R17, of exact rank 17 and determinant 948. The replay uses exact quartic arithmetic, vectorized F_p and norm-character F_(p^2) point counts, and finite integral lattice arithmetic; no Groebner basis or surface elimination is used.",
+      "canonical_source": "elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md",
+      "dependencies": [
+        "EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR",
+        "EC-K3-H3-Q12O5867-QQ-ROOTLESS",
+        "EC-K3-H3-Q12O5867-QQ-R17-BASIS"
+      ],
+      "checker": "elkies-k3/scripts/certify_h92_q12o5867_endpoint_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:2f11e0eda9e7a4ad4f1b898f6cf9e3fb69d2fb7e198564f8ba7bdb614eafe73f",
+      "software_lock": [
+        "elkies-k3/scripts/certify_h92_q12o5867_endpoint_qq.sage",
+        "elkies-k3/scripts/compile_h92_q12o5867_smooth_rr_qq.sage",
+        "elkies-k3/scripts/certify_h92_q12o5867_rootless_height_basis_qq.sage",
+        "elkies-k3/data/lattice/rank17_gram.txt"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "OP-EC-NEXT",
+        "REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md",
+        "elkies-k3/CONSTRUCTION_ROUTES.md",
+        "elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-FIXED-REVERSE-A1-2A1-QQ",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact reverse equation lift of the final A1 and 2A1 fixed-corridor stages",
+      "scope": "Starting from the exact q12/orbit5867 rootless Jacobian and its determinant-one 17-section identification with pinned R17, invert the certified historical fixed-corridor transitions q6/orbit2247 and q4/orbit981. The reverse A1 fibre is O+P-2F with P.O=6; its target point is the endpoint-basis word (0,-1,-2,-1,1,0,1,-1,-2,-2,1,-2,1,0,-1,1,1), with projective degrees (16,24,6). Its smooth chord module has ambient 14, rank 12 and h0=2; the exact quartic gives a minimal (8,12,24) Jacobian with I2+22I1, smooth infinity, Euler number 24 and ADE A1. A second exact endpoint word points the prescribed A1 zero, and the transported effective root contracts to the unique I2 support. For the reverse 2A1 fibre, exactly 21 of the 2622 signed pinned norm-four sections meet the A1 fibre once; their A1 MW tails have rank 15, and an integral Smith solve expresses the orbit981 horizontal as a seven-image word with coefficients (1,-1,1,-1,1,1,-2). Exact pointed transport and group law again give degrees (16,24,6), while the same 14-to-12-to-2 smooth compiler gives a minimal (8,12,24) Jacobian with 2I2+20I1 and ADE 2A1. The prescribed 2A1 zero is the old nonidentity A1 component: an exhaustive exceptional-conic sign gate modulo 131 selects its exact quartic ordinate, the characteristic-zero pointed invariants satisfy 81*A_pointed=A_child and 729*B_pointed=B_child, and two exact transported root curves contract to the two distinct rational I2 supports. This proves only the final two fixed-corridor equation arrows and their markings; 3A1/MW14 to 2A1/MW15 and every earlier still-open arrow remain separate gates. The construction uses exact group law, integral linear algebra, bivariate gcd square stripping, univariate squarefree gates and one finite-field local sign test, with no Groebner basis, surface elimination or nonlinear characteristic-zero section solve.",
+      "canonical_source": "elkies-k3/FIXED_CORRIDOR_REVERSE_LIFT_2026-08-26.md",
+      "dependencies": [
+        "EC-K3-H3-Q12O5867-QQ-ROOTLESS",
+        "EC-K3-H3-Q12O5867-QQ-R17-BASIS",
+        "EC-K3-H3-D13-MW17-LATTICE-CHAIN"
+      ],
+      "checker": "elkies-k3/scripts/certify_h92_fixed_reverse_2a1_pointing_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:edd101ab770fc098e616a1cf85610149fcaeb23750c76790be9c67f08a2cf40e",
+      "software_lock": [
+        "elkies-k3/scripts/construct_h92_fixed_final_a1_horizontal_from_q12_endpoint_qq.sage",
+        "elkies-k3/scripts/compile_h92_fixed_final_a1_reverse_rr_qq.sage",
+        "elkies-k3/scripts/certify_h92_fixed_final_a1_reverse_pointing_qq.sage",
+        "elkies-k3/scripts/construct_h92_fixed_reverse_2a1_horizontal_from_a1_qq.sage",
+        "elkies-k3/scripts/certify_h92_fixed_reverse_2a1_pointing_qq.sage"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/FIXED_CORRIDOR_REVERSE_LIFT_2026-08-26.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-FIXED-REVERSE-3A1-QQ",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact reverse equation lift of the fixed 3A1 stage",
+      "scope": "Continue the exact reverse lift from the marked 2A1/MW15 equation through the certified q4/orbit498 transition. Exact short-vector enumeration in the A1 height lattice finds 78 degree-one sections whose 2A1 Mordell--Weil tails have rank 15; integral Smith words and two pointed-quartic transports construct the prescribed horizontal with P.O=6 and projective degrees (16,24,6), two effective horizontal root curves, and unimodular 2A1 and 3A1 section bases. The smooth chord module has dimensions 14 to rank 12 to h0=2, and its degree-four binary quartic gives a minimal semistable Jacobian with degrees (8,12,24), fibres 3I2+18I1, smooth infinity, Euler number 24, root lattice 3A1, and Mordell--Weil rank 14 because the endpoint certificate proves geometric Picard rank 19. The old nonidentity A1 component selects the prescribed zero by an exhaustive exceptional-conic sign gate modulo 131; exact characteristic-zero pointed invariants satisfy 81*A_pointed=A_child and 729*B_pointed=B_child. The two horizontal roots contract to distinct equation I2 supports and the third marked root remains vertical, completing the component marking. This proves the fixed 3A1/MW14 to 2A1/MW15 equation arrow and its marking; the 4A1/MW13 to 3A1/MW14 arrow and every earlier open arrow remain separate gates. The construction uses exact elliptic group law, integral linear algebra, bivariate gcd square stripping and univariate squarefree gates, with no Groebner basis, surface elimination or nonlinear characteristic-zero section solve.",
+      "canonical_source": "elkies-k3/FIXED_CORRIDOR_REVERSE_LIFT_2026-08-26.md",
+      "dependencies": [
+        "EC-K3-H3-FIXED-REVERSE-A1-2A1-QQ",
+        "EC-K3-H3-Q12O5867-ENDPOINT-QQ",
+        "EC-K3-H3-D13-MW17-LATTICE-CHAIN"
+      ],
+      "checker": "elkies-k3/scripts/certify_h92_fixed_reverse_2a1_pointing_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:edd101ab770fc098e616a1cf85610149fcaeb23750c76790be9c67f08a2cf40e",
+      "software_lock": [
+        "elkies-k3/scripts/construct_h92_fixed_reverse_3a1_horizontal_from_2a1_qq.sage",
+        "elkies-k3/scripts/compile_h92_fixed_final_a1_reverse_rr_qq.sage",
+        "elkies-k3/scripts/certify_h92_fixed_reverse_2a1_pointing_qq.sage",
+        "artifacts/local/elkies-k3/fixed-reverse-3a1-horizontal-from-2a1-qq.json",
+        "artifacts/local/elkies-k3/fixed-reverse-3a1-rr-qq.json",
+        "artifacts/local/elkies-k3/fixed-reverse-3a1-pointing-qq.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-FIXED-REVERSE-4A1-QQ",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact physical reverse equation lift of the fixed 4A1 stage",
+      "scope": "Continue the exact reverse lift from the marked 3A1/MW14 equation through the certified q4/orbit114 transition. The stored abstract fibre is isotropic but not in the physical old-I2 chamber: its six nonidentity/affine component degrees include -1, -4 and -2. Four exact affine-Weyl reflections give the primitive q24 representative (12,2,12,-5,0,-1,2,2,-2,-3,3,-3,-2,3,-3,-3,3,-3,0). All 77 already-constructed degree-one sections are nonnegative, the exact all-section closest-vector minimum is zero, and the complete Proposition-C2 finite horizontal-wall enumeration is empty. The reflected full 4A1 basis has determinant -1, mutually inverse integral NS transports, and sends the prescribed zero exactly to the effective third old nonidentity I2 component -e4. Relative to the exact P.O=21 horizontal, the physical divisor is O+P-C1-9F. Its compact chord ambient has dimension 45; the smooth Z^2 collision congruence has rank 42 and the exact opposite-point restriction on C1 has rank one, leaving h0=2. An exhaustive census of all 17,293 planes modulo 131 independently selects this rational restriction. Exact square stripping leaves a binary quartic, whose minimal Jacobian has degrees (8,12,24), fibres 4I2+16I1, smooth infinity, Euler number 24, root lattice 4A1, and Mordell--Weil rank 13 because the endpoint theorem proves geometric Picard rank 19. A split-node exceptional-conic sign gate modulo 131 points the prescribed zero and gives exact 81/729 invariant identities; two constructed horizontal roots contract to distinct child I2 supports and two marked roots remain vertical. The earlier 57-to-15-to-2 bidegree-(4,6) module remains a certified negative calculation for the unreduced divisor. This proves the fixed 4A1/MW13 to 3A1/MW14 equation arrow and full marking; q4/orbit52 from 5A1/MW12 is the next reverse gate. No Groebner basis or surface elimination is used.",
+      "canonical_source": "elkies-k3/FIXED_CORRIDOR_REVERSE_LIFT_2026-08-26.md",
+      "dependencies": [
+        "EC-K3-H3-FIXED-REVERSE-3A1-QQ",
+        "EC-K3-H3-Q12O5867-ENDPOINT-QQ",
+        "EC-K3-H3-D13-MW17-LATTICE-CHAIN"
+      ],
+      "checker": "elkies-k3/scripts/compile_h92_fixed_reverse_4a1_physical_rr_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4aacf3ccc01ef94b382cf52e5774a7752d730c80f17f3e9b94fda6728158befd",
+      "software_lock": [
+        "elkies-k3/scripts/audit_h92_fixed_reverse_4a1_physical_nef.sage",
+        "elkies-k3/scripts/construct_h92_fixed_reverse_4a1_horizontal_from_3a1_qq.sage",
+        "elkies-k3/scripts/compile_h92_fixed_reverse_4a1_physical_rr_qq.sage",
+        "elkies-k3/scripts/certify_h92_fixed_reverse_2a1_pointing_qq.sage",
+        "artifacts/local/elkies-k3/fixed-reverse-4a1-physical-nef-audit.json",
+        "artifacts/local/elkies-k3/fixed-reverse-4a1-rr-qq.json",
+        "artifacts/local/elkies-k3/fixed-reverse-4a1-pointing-qq.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/FIXED_CORRIDOR_REVERSE_LIFT_2026-08-26.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-H3-Q4O208-R17-CURRENT-MARKED-ROUTE",
       "kind": "reproduction",
-      "state": "partial",
+      "state": "proved",
       "title": "Exact q323-free marked suffix from physical q4/orbit208 to pinned R17",
-      "scope": "From the equation-explicit physical q4/orbit208 3A3/MW8 frame, the selected q4/orbit1584, q4/orbit164, q8/orbit376, and preferred optional q12/orbit5867 edges have q-sequence (4,4,8,12) and old-fibre degree two throughout; q12/orbit4484 remains a certified fallback. Every edge certificate supplies a primitive nef isotropic fibre, complete finite horizontal-wall audit, full root data, and mutually inverse unimodular Neron--Severi transports. The stages are D4+A3+3A1/MW7, 2A3+2A1/MW9, 4A1/MW13, and rootless/MW17. The q12/orbit5867 four-P.O=0 compiler word has q4/orbit164 parent degrees (3,2,1,2) and parent a-b values (2,2,1,1), improving on orbit4484's parent-pole proxy. The terminal positive frame has determinant 948 and is integrally isometric to the pinned rank17 Gram matrix. EC-K3-H3-Q4O208-Q4O1584-QQ and EC-K3-H3-Q4O1584-Q4O164-QQ provide equations for the first two edges, and EC-K3-H3-Q4O164-Q8O376-QQ-HORIZONTAL supplies the exact q8 horizontal. This entry is partial because the resolved q8/orbit376 child equation and final q12 characteristic-zero equation, seventeen endpoint sections, height/saturation certificate, Picard upper bound, and final source-identity certificate remain open.",
+      "scope": "From the equation-explicit physical q4/orbit208 3A3/MW8 frame, the selected q4/orbit1584, q4/orbit164, q8/orbit376, and preferred q12/orbit5867 edges have q-sequence (4,4,8,12) and old-fibre degree two throughout; q12/orbit4484 remains a certified fallback. Every edge certificate supplies a primitive nef isotropic fibre, complete finite horizontal-wall audit, full root data, and mutually inverse unimodular Neron--Severi transports. The stages are D4+A3+3A1/MW7, 2A3+2A1/MW9, 4A1/MW13, and rootless/MW17. The executed q12 equation word uses parent degrees (4,2,1,5) and parent a-b values (4,2,1,4), preserving stable identity q12o5867_after_q8o376 with fibre fingerprint d676cab5918a08add2f743081cf76932d02adc9e18ab9c808dc05760fe0157dd. The inherited-P1 q8 horizontal, resolved 12-to-4-to-2 RR pencil, P1229 pointing, and direct q12 22-to-2 smooth RR compiler are exact over QQ. The terminal rootless equation has seventeen exact sections with determinant-948 height Gram pinned to R17. EC-K3-H3-Q12O5867-ENDPOINT-QQ proves the final quartic has an exact rational point, composes the forward source identity, establishes geometric Picard rank 19 by incompatible rank-20 good-reduction discriminant square classes, and excludes the unique possible index-two even overlattice. Hence the complete equation corridor ends on the certified H3 source K3 with full saturated geometric MW lattice R17 of exact rank 17, trivial torsion, and determinant 948.",
       "canonical_source": "elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md",
       "dependencies": [
         "EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE",
         "EC-K3-H3-Q4O208-Q4O1584-QQ",
         "EC-K3-H3-Q4O1584-Q4O164-QQ",
         "EC-K3-H3-Q4O164-Q8O376-QQ-HORIZONTAL",
+        "EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR",
+        "EC-K3-H3-Q12O5867-DEGREE1-SECTION-QQ",
+        "EC-K3-H3-Q12O5867-QQ-ROOTLESS",
+        "EC-K3-H3-Q12O5867-QQ-R17-BASIS",
+        "EC-K3-H3-Q12O5867-ENDPOINT-QQ",
         "EC-K3-H3-D13-MW17-LATTICE-CHAIN"
       ],
       "checker": "elkies-k3/scripts/certify_h92_marked_route_to_pinned_r17.sage",
@@ -1578,7 +1949,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "OP-EC-NEXT",
         "REPRODUCE.md",
         "elkies-k3/README.md"
       ],
@@ -34785,7 +35155,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Elliptic rank-32, exact-rank, and low-conductor certification",
-      "scope": "ECR31 gives an unconditional rank-at-least-31 curve and supersedes rank 31 as a search target. Continue in three exact directions: prove the public curve 302 has rank exactly 31 or exhibit a rank-at-least-32 curve; complete repository-local global-minimality and Tate-algorithm conductor replays for the rank-at-least-21 ICARM curves 285 and 286 recorded in EC-R21-ICARM, or find another independently certified low-conductor rank-at-least-21 curve; and complete the reconstructed rank-17 K3 mechanism strongly enough to reproduce a public exceptional-rank specialization and search beyond rank 31. EC-R20, EC-R20-IC245, EC-MR13, EC-MD17 and EC-MD19 remain exact lower-rank family/conductor frontiers. EC-K3-H3-SOURCE and EC-K3-H3-PTS give the exact H3 E7+E8/MW2 source and its rational base points. EC-K3-H3-Q8-QQ-D13 and EC-K3-H3-Q24-QQ-D12 complete the equation route through D12/MW5, while EC-K3-H3-D13-MW17-LATTICE-CHAIN certifies the older eleven-edge nef lattice corridor through rootless MW17. EC-K3-H3-Q24-O42-I8STAR-MARKING, EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT, EC-K3-H3-Q24-O42-SPINOR-ZERO-POLE, and EC-K3-H3-Q24-O42-SECTION-CANDIDATES supply the exact orbit42 prerequisites; EC-K3-H3-Q24-O42-QQ-A11 proves the A11/MW6 equation. EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET and EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE identify the exact q8 target and missing shell coset, and EC-K3-H3-A11-Q8-QQ-2A5 proves the component-9-pointed 2A5/MW7 equation. EC-K3-H3-Q24-O42-FAST-Q6-AUDIT remains a shortcut rejection rather than a non-existence theorem. EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE, EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE, EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE, and EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE retain exact lattice information, but the 10334, 4471, 4199, and related changed-zero planning routes are not the active equation corridor. EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE proves the q4/orbit208 equation to 3A3/MW8 and records why its automatic old suffix failed the physical zero gate. EC-K3-H3-Q4O208-Q4O1584-QQ and EC-K3-H3-Q4O1584-Q4O164-QQ now prove the q4/orbit1584 and q4/orbit164 equations, ending at the exact C8-pointed 2A3+2A1/MW9 model. EC-K3-H3-Q4O208-R17-CURRENT-MARKED-ROUTE certifies the q323-free marked continuation by q8/orbit376 and preferred q12/orbit5867, with q12/orbit4484 as fallback, to pinned rootless MW17. EC-K3-H3-Q4O164-Q8O376-MOD131-HORIZONTAL gives the exact q8 horizontal at the pinned good prime, and EC-K3-H3-Q4O164-Q8O376-QQ-HORIZONTAL reconstructs and verifies that horizontal over QQ(t); the resolved q8 child equation, final q12 equation, and direct endpoint package remain open. EC-ICARM-CONSTRUCTION-FINGERPRINTS excludes curve 273 from the complete diameter-at-most-300 fixed-six-root Mestre census and from the direct forced-2-torsion Elkies--Klagsbrun model, without excluding the proposed rootless K3 descendant. A certified residual 2-Selmer computation for curve 273 also remains open. Bounded searches and failed lifts are experiments, not upper bounds.",
+      "scope": "ECR31 gives an unconditional rank-at-least-31 curve and supersedes rank 31 as a search target. Continue in three exact directions: prove the public curve 302 has rank exactly 31 or exhibit a rank-at-least-32 curve; complete repository-local global-minimality and Tate-algorithm conductor replays for the rank-at-least-21 ICARM curves 285 and 286 recorded in EC-R21-ICARM, or find another independently certified low-conductor rank-at-least-21 curve; and use the now-complete reconstructed rank-17 H3 K3 mechanism to reproduce a public exceptional-rank specialization and search beyond rank 31. EC-R20, EC-R20-IC245, EC-MR13, EC-MD17 and EC-MD19 remain exact lower-rank family/conductor frontiers. EC-K3-H3-SOURCE and EC-K3-H3-PTS give the exact H3 E7+E8/MW2 source and its rational base points. EC-K3-H3-Q8-QQ-D13 and EC-K3-H3-Q24-QQ-D12 complete the equation route through D12/MW5, while EC-K3-H3-D13-MW17-LATTICE-CHAIN certifies the older eleven-edge nef lattice corridor through rootless MW17. EC-K3-H3-Q24-O42-I8STAR-MARKING, EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT, EC-K3-H3-Q24-O42-SPINOR-ZERO-POLE, and EC-K3-H3-Q24-O42-SECTION-CANDIDATES supply the exact orbit42 prerequisites; EC-K3-H3-Q24-O42-QQ-A11 proves the A11/MW6 equation. EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET and EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE identify the exact q8 target and missing shell coset, and EC-K3-H3-A11-Q8-QQ-2A5 proves the component-9-pointed 2A5/MW7 equation. EC-K3-H3-Q24-O42-FAST-Q6-AUDIT remains a shortcut rejection rather than a non-existence theorem. EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE, EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE, EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE, and EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE retain exact lattice information, but the 10334, 4471, 4199, and related changed-zero planning routes are not the active equation corridor. EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE proves the q4/orbit208 equation to 3A3/MW8 and records why its automatic old suffix failed the physical zero gate. EC-K3-H3-Q4O208-Q4O1584-QQ and EC-K3-H3-Q4O1584-Q4O164-QQ prove the q4/orbit1584 and q4/orbit164 equations, ending at the exact C8-pointed 2A3+2A1/MW9 model. EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR proves the q8/orbit376 4A1/MW13 equation and direct P1229 pointing. EC-K3-H3-Q12O5867-QQ-ROOTLESS proves the exact terminal 24I1 equation, and EC-K3-H3-Q12O5867-QQ-R17-BASIS supplies seventeen exact sections with determinant-948 height Gram. EC-K3-H3-Q12O5867-ENDPOINT-QQ closes the source-identity, Picard-rank, and saturation gates: the endpoint is exactly the certified H3 source K3, has geometric Picard rank 19, and has full saturated geometric Mordell--Weil lattice R17 of exact rank 17, trivial torsion, and determinant 948. The remaining K3 objective is arithmetic specialization: reproduce a public exceptional-rank specialization and search beyond rank 31. EC-ICARM-CONSTRUCTION-FINGERPRINTS excludes curve 273 from the complete diameter-at-most-300 fixed-six-root Mestre census and from the direct forced-2-torsion Elkies--Klagsbrun model, without excluding the rootless K3 descendant. A certified residual 2-Selmer computation for curve 273 also remains open. Bounded searches and failed lifts are experiments, not upper bounds.",
       "canonical_source": "elliptic-curves/README.md",
       "dependencies": [
         "ECR31",
@@ -34820,6 +35190,11 @@
         "EC-K3-H3-Q4O1584-Q4O164-QQ",
         "EC-K3-H3-Q4O164-Q8O376-MOD131-HORIZONTAL",
         "EC-K3-H3-Q4O164-Q8O376-QQ-HORIZONTAL",
+        "EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR",
+        "EC-K3-H3-Q12O5867-DEGREE1-SECTION-QQ",
+        "EC-K3-H3-Q12O5867-QQ-ROOTLESS",
+        "EC-K3-H3-Q12O5867-QQ-R17-BASIS",
+        "EC-K3-H3-Q12O5867-ENDPOINT-QQ",
         "EC-K3-H3-Q4O208-R17-CURRENT-MARKED-ROUTE"
       ],
       "checker": null,

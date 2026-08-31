@@ -32,6 +32,8 @@ from sage.all import (
 
 
 ROOT = Path(__file__).resolve().parents[2]
+if not (ROOT / "MATH_STATUS.json").exists():
+    ROOT = Path.cwd()
 LOCAL = ROOT / "artifacts/local/elkies-k3"
 GENERATED = ROOT / "artifacts/generated-results"
 RR_PATH = LOCAL / "q24-2a5-physical-q4o208-rr-qq.json"
@@ -42,10 +44,11 @@ ROUTE_PATH = GENERATED / "elkies-k3-h3-a5a5-physical-q4o208-to-pinned-r17-certif
 SUFFIX_AUDIT_PATH = GENERATED / "elkies-k3-h3-q4o208-canonical-suffix-physical-nef-audit.json"
 COMPACT_PATH = LOCAL / "q4o208-compact-weierstrass-qq.json"
 EXACT_LIFTS_PATH = LOCAL / "q4o208-q4o323-horizontal-resolved-qq.json"
+SUMMANDS_PATH = LOCAL / "q4o208-q4o323-horizontal-via-summands-qq.json"
 OUTPUT = LOCAL / "q4o208-physical-q4o323-horizontal-mod131.json"
 INPUTS = (
     RR_PATH, PARENT_PATH, EQUATION_MARKING_PATH, SOURCE_MARKING_PATH,
-    ROUTE_PATH, SUFFIX_AUDIT_PATH, COMPACT_PATH, EXACT_LIFTS_PATH,
+    ROUTE_PATH, SUFFIX_AUDIT_PATH, COMPACT_PATH, EXACT_LIFTS_PATH, SUMMANDS_PATH,
 )
 
 started = time.monotonic()
@@ -72,6 +75,7 @@ route = json.loads(ROUTE_PATH.read_text())
 suffix_audit = json.loads(SUFFIX_AUDIT_PATH.read_text())
 compact = json.loads(COMPACT_PATH.read_text())
 exact_lifts = json.loads(EXACT_LIFTS_PATH.read_text())
+summands = json.loads(SUMMANDS_PATH.read_text())
 assert rr["status"] == "PASS_EXACT_QQ_PHYSICAL_Q4O208_3A3_RR_AND_JACOBIAN"
 assert parent["status"] == "PASS_EXACT_Q24_A11_Q8_2A5_RESOLVED_RR"
 assert equation_marking["status"] == "PASS_EXACT_QQ_PHYSICAL_Q4O208_C5_EQUATION_MARKING"
@@ -80,6 +84,7 @@ assert route["status"] == "PASS_EXACT_PHYSICAL_Q4O208_3A3_TO_PINNED_R17"
 assert suffix_audit["status"] == "PASS_EXACT_Q4O208_CANONICAL_SUFFIX_PHYSICAL_WALL_CORRECTION"
 assert compact["status"] == "PASS_EXACT_QQ_Q4O208_COMPACT_WEIERSTRASS_NORMALIZATION"
 assert exact_lifts["status"] == "PASS_EXACT_QQ_Q4O323_RESOLVED_SIMPLE_POLE_HORIZONTAL"
+assert summands["status"] == "PASS_EXACT_QQ_Q4O323_SUM_REPRODUCES_BRANCH33_INVERSE_TARGET_EXCLUDED"
 
 
 # Exact constant-old-base points over the second old I6 support.
@@ -433,6 +438,18 @@ def reduced_exact_branch(record, sign):
     return point
 
 
+exact_polynomial_points = []
+for node_type, records in summands["exact_QQ_polynomial_sections"].items():
+    for record in records:
+        Xc = evaluate_compact_polynomial(record["X_coefficients_low_to_high"])
+        Yc = evaluate_compact_polynomial(record["Y_coefficients_low_to_high"])
+        point = E(
+            KU(change_m**2*Xc/compact_denominator**4),
+            KU(change_m**3*Yc/compact_denominator**6),
+        )
+        exact_polynomial_points.append((node_type, int(record["signed_index"]), point))
+
+
 norm_six_raw = matrix(ZZ, pari(child_frame).qfminim(6)[2]).transpose().rows()
 lattice_norm_six = []
 seen_norm_six = set()
@@ -532,6 +549,25 @@ def recover_target(solution):
     mapped = map_shell(shell_01, (0, 1), orientation, anchor_map)
     mapped.update(map_shell(shell_02, (0, 2), orientation, anchor_map))
     mapped.update(map_shell(shell_12, (1, 2), orientation, anchor_map))
+    exact_polynomial_maps = []
+    for node_type, signed_index, point in exact_polynomial_points:
+        profile = component_profile(point, orientation)
+        matches = [
+            section for section, candidate_profile in lattice_sections
+            if candidate_profile == profile
+            and all(
+                section_intersection(point, anchor)
+                == int(section*gram*anchor_class)
+                for anchor, anchor_class in anchor_map.items()
+            )
+        ]
+        assert len(matches) == 1
+        exact_polynomial_maps.append({
+            "node_type": node_type,
+            "signed_index": signed_index,
+            "component_profile": list(profile),
+            "NS_coordinates": [int(value) for value in matches[0]],
+        })
     points = list(mapped)
     span_matrix = matrix(
         ZZ, trivial_rows + [mapped[point] for point in points]
@@ -543,6 +579,11 @@ def recover_target(solution):
     assert span_rank == 18 and augmented_rank == 19
     return {
         "orientation": orientation, "mapped_count": len(mapped),
+        "mapped_union_NS_coordinates": sorted({
+            tuple(int(value) for value in section)
+            for section in mapped.values()
+        }),
+        "exact_QQ_polynomial_section_maps": exact_polynomial_maps,
         "span_rank_with_trivial_lattice": span_rank,
         "augmented_rank_with_target": augmented_rank,
     }
@@ -631,6 +672,16 @@ payload = {
             "reported without assuming that the target is represented by one of them."
         ),
     },
+    "mapped_polynomial_section_subgroup": [
+        {
+            "global_component_orientation": list(recovery["orientation"]),
+            "union_NS_coordinates": recovery["mapped_union_NS_coordinates"],
+            "exact_QQ_polynomial_section_maps": recovery[
+                "exact_QQ_polynomial_section_maps"
+            ],
+        }
+        for recovery in target_recoveries
+    ],
     "proof_boundary": (
         "The unordered pair of inherited constant-old-base sections is exact over QQ; labeling "
         "the pair as C7 versus second affine remains a resolved-component gate. The complete "

@@ -1,5 +1,5 @@
 #!/usr/bin/env sage -python
-"""Identify the exact q4/orbit323 horizontal in the marked 3A3 model.
+"""Test the lifted simple-pole shell against q4/orbit323 in the marked model.
 
 The compact q4/orbit208 model has its three split I4 fibres at 0, 1 and
 infinity.  For every recovered simple-pole section, resolve those fibres in
@@ -13,8 +13,10 @@ pin the component orientations.  Exact intersections with those sections
 and the complete eleven-section intersection graph then give a unique match
 to the norm-six section shell of the marked NS lattice.
 
-The selected q4/orbit323 class is the inverse of recovered branch 33, i.e.
-the same X,Z coordinates with Y negated.
+The complete signed eleven-section graph is essential here: a branch can
+have the target's profile and three inherited intersections without being
+compatible with the pairwise graph.  The exact graph excludes q4/orbit323
+from this lifted shell.
 """
 
 import hashlib
@@ -436,28 +438,21 @@ target_candidates = [
 assert len(solutions) == 2
 assert len(target_candidates) == 1
 solution = solutions[0]
-selected_candidate = target_candidates[0]
-selected_class = lattice_sections[selected_candidate["lattice_index"]]
+global_target_hits = [
+    solution_index for solution_index, graph_solution in enumerate(solutions)
+    if graph_solution[selected_index]["sign"] == -1
+    and lattice_sections[graph_solution[selected_index]["lattice_index"]] == target_class
+]
+assert global_target_hits == []
+diagnostic_candidate = solution[selected_index]
+diagnostic_class = lattice_sections[diagnostic_candidate["lattice_index"]]
 print(
-    "Q4O323MARKQQ|stage=MATCH|candidate_counts={}|selected_class={}".format(
+    "Q4O323MARKQQ|stage=MATCH|candidate_counts={}|branch33_graph_class={}|target_hits={}".format(
         ",".join(str(len(value)) for value in signed_candidates),
-        ",".join(str(value) for value in selected_class),
+        ",".join(str(value) for value in diagnostic_class), len(global_target_hits),
     ),
     flush=True,
 )
-assert selected_class == target_class
-assert selected_candidate["sign"] == -1
-assert selected_candidate["profile"] == (1, 2, 0)
-assert selected_candidate["inherited_intersections"] == (3, 2, 2)
-
-selected_record = branch_records[selected_index]
-selected_point, selected_Z, selected_X, selected_Y = exact_point(selected_record, -1)
-assert selected_point == selected_candidate["point"]
-assert selected_Y**2 == selected_X**3 + A*selected_X*selected_Z**4 + B*selected_Z**6
-x_selected = K(selected_X/selected_Z**2)
-y_selected = K(selected_Y/selected_Z**3)
-assert x_selected.denominator().degree() == 2
-assert y_selected.denominator().degree() == 3
 
 
 def rows(value):
@@ -486,20 +481,34 @@ for index, branch_id in enumerate(branch_ids):
         "matched_NS_coordinates": [int(value) for value in matched],
     })
 
+# Retain the complete ambiguity rather than only the arbitrary first graph
+# solution.  Downstream replacement edges can then state exactly which
+# section class still needs one more equation-level anchor.
+all_graph_solution_branch_matches = []
+for solution_index, graph_solution in enumerate(solutions):
+    solution_matches = []
+    for index, branch_id in enumerate(branch_ids):
+        candidate = graph_solution[index]
+        matched = lattice_sections[candidate["lattice_index"]]
+        solution_matches.append({
+            "stored_branch_index": branch_id,
+            "equation_Y_sign_relative_to_stored": int(candidate["sign"]),
+            "matched_NS_coordinates": [int(value) for value in matched],
+        })
+    all_graph_solution_branch_matches.append({
+        "solution_index": solution_index,
+        "branch_matches": solution_matches,
+    })
+
 payload = {
     "schema": "elkies-k3.h3-q4o208-q4o323-horizontal-marking-qq.v1",
-    "status": "PASS_EXACT_QQ_Q4O323_TARGET_COMPATIBLE_HORIZONTAL",
-    "selected": {
+    "status": "PASS_EXACT_QQ_Q4O323_LIFTED_SHELL_EXCLUDES_TARGET",
+    "diagnostic_branch33_graph_solution_0": {
         "stored_branch_index": 33,
-        "equation_sign": "negative_of_stored_Y",
-        "Z_coefficients_low_to_high": [str(value) for value in selected_Z.list()],
-        "X_coefficients_low_to_high": [str(value) for value in selected_X.list()],
-        "Y_coefficients_low_to_high": [str(value) for value in selected_Y.list()],
-        "exact_compact_Weierstrass_identity": True,
-        "P_dot_O": 1,
-        "NS_coordinates": [int(value) for value in selected_class],
-        "component_profile_first_second_special_I4": [int(value) for value in selected_candidate["profile"]],
-        "inherited_intersections": [int(value) for value in selected_candidate["inherited_intersections"]],
+        "equation_Y_sign_relative_to_stored": int(diagnostic_candidate["sign"]),
+        "NS_coordinates": [int(value) for value in diagnostic_class],
+        "component_profile_first_second_special_I4": [int(value) for value in diagnostic_candidate["profile"]],
+        "inherited_intersections": [int(value) for value in diagnostic_candidate["inherited_intersections"]],
     },
     "resolved_component_marking": {
         "compact_support_order": ["0", "1", "infinity"],
@@ -516,7 +525,9 @@ payload = {
         "exact_x_branches_with_both_Y_signs": len(stored_points),
         "signed_candidate_counts_before_pairwise_graph": [len(value) for value in signed_candidates],
         "complete_graph_solutions_before_target_pin": len(solutions),
-        "branch33_negative_candidates_equal_to_exact_q4o323_target": len(target_candidates),
+        "all_graph_solution_branch_matches": all_graph_solution_branch_matches,
+        "branch33_negative_local_candidates_equal_to_exact_q4o323_target": len(target_candidates),
+        "branch33_target_hits_in_complete_graph_solutions": len(global_target_hits),
         "branch_matches": branch_matches,
         "selected_signed_equation_intersection_matrix": rows(selected_point_intersections),
     },
@@ -526,11 +537,11 @@ payload = {
         "runtime_seconds": time.monotonic()-started,
     },
     "proof_boundary": (
-        "This certificate gives an exact horizontal equation representative with the "
-        "q4/orbit323 target profile and inherited intersection fingerprint. The signed "
-        "eleven-branch graph retains an inherited-anchor ambiguity, so the forthcoming "
-        "resolved H0 calculation must close the divisor-class marking. It does not yet "
-        "construct the genus-one quartic or minimized A3+2A2 child Jacobian."
+        "A branch-33 inverse has the q4/orbit323 profile and three inherited-section "
+        "intersections in isolation, but it occurs in neither complete signed eleven-section "
+        "graph solution. Thus the lifted simple-pole shell does not contain the target. "
+        "A direct lift of the missing Mordell--Weil direction or a different presentation "
+        "is still required; no q4/orbit323 pencil or child Jacobian is certified here."
     ),
     "inputs": {
         "paths": [str(path.relative_to(ROOT)) for path in INPUTS],

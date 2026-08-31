@@ -458,6 +458,10 @@ for cost_path in cost_paths:
         # These cost files are already filtered to rootless candidates.  Retain
         # the endpoint field when present, but do not infer rootlessness from ADE.
         section = vector(ZZ, item["horizontal"]["section"])
+        fibre = vector(ZZ, item["fibre"])
+        fibre_fingerprint = hashlib.sha256(
+            json.dumps(entries(fibre), separators=(",", ":")).encode()
+        ).hexdigest()
         target_mw = vector(ZZ, section[-13:])
         target_key = quotient_key(target_mw)
         words = {}
@@ -467,6 +471,12 @@ for cost_path in cost_paths:
         first_length = next((length for length in range(1, 5) if words[str(length)]), None)
         targets.append({
             "candidate_id": candidate_id,
+            "candidate_identity_note": (
+                "Orbit indices are local to the bounded MW-vector sample; the exact "
+                "fibre vector and its SHA-256 fingerprint are the stable identity."
+            ),
+            "fibre": entries(fibre),
+            "fibre_fingerprint_sha256": fibre_fingerprint,
             "source_cost_artifact": str(cost_path.relative_to(ROOT)),
             "horizontal_section": entries(section),
             "direct_P_dot_O": int(item["horizontal"]["P_dot_O"]),

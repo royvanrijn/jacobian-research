@@ -55,7 +55,7 @@ q4/orbit164, q8/orbit376, and q12/orbit4484, as recorded in
 The q10 certificates remain exact and reusable, but q10 is no longer the
 active lifting target.
 
-<!-- status-consumer: EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE c43cea6673a4b39c -->
+<!-- status-consumer: EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE 86e7a3affbf35a9e -->
 
 **Equation-effective-zero correction (2026-08-25 10:38 CEST).** The former
 4,199-point q4/orbit230--q6/orbit1315 suffix is still an exact marked-lattice
