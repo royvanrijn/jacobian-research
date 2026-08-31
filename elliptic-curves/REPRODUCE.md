@@ -463,6 +463,25 @@ unchanged. Exact relation blocks prove that the displayed generated subgroup
 ranks remain `25,26,27,28,21`; they do not bound the full curve ranks. See
 [`ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md`](notes/ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md).
 
+Resolve the visible and invisible quotient spaces and test the rank-30/31
+records against the published family:
+
+<!-- status-consumer: EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES c3c7fbac71f4624f -->
+
+```sh
+.venv/bin/python \
+  elliptic-curves/scripts/analyze_elkies_bisection_visibility_and_record_curves.py \
+  --check
+```
+
+The rank-28 visible span has dimension one and its canonical complement has
+dimension ten.  Since the 39,120 atlas records already exhaust bisections
+modulo section translation and sign, a higher translated trace shell cannot
+enlarge this span.  Exact irreducible degree-24 recognition equations exclude
+ICARM curves 273 and 302 from being direct rational fibres of this published
+chart; the result does not exclude other families or isogenies.  See
+[`ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md`](notes/ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md).
+
 ## Low-conductor exact baselines
 
 ### Conductor-first descent targets

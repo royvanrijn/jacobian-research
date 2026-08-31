@@ -526,6 +526,44 @@ height matrix.  QED.
 
 <!-- status-consumer: EC-K3-BISECT-EQUATION-BATCH a0570a5a4ea8e02b -->
 
+### Corollary F2.1: translated trace shells cannot enlarge specialization visibility
+
+<!-- status-consumer: EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES c3c7fbac71f4624f -->
+
+Let `B` be one of the complete degree-two bisection classes of Theorem F2 and
+let `S` be a section of the generic `R17` subgroup.  Translating `B` fibrewise
+by `S` preserves its quadratic branch extension.  If `t_0` is a rational good
+fibre at which the extension splits and one branch gives `P` in `E_{t_0}(QQ)`,
+then the translated branch gives
+
+```text
+P + S(t_0).
+```
+
+Consequently `P` and its translate define the same class modulo the specialized
+generic subgroup.  Inversion changes the class to its negative, which is the
+same class in every quotient modulo two.  Therefore any higher-height trace
+shell consisting only of translations or inversions of the complete 39,120
+classes has exactly the same split-extension set and the same finite-quotient
+visibility span at every rational good fibre.
+
+#### Proof
+
+Fibrewise translation by a section is an automorphism of the smooth locus over
+the base and does not change the degree-two map from the normalization of `B`
+to the parameter line.  It therefore does not change the corresponding
+quadratic function field.  On a split fibre it sends each rational branch
+point to its elliptic sum with `S(t_0)`.  Passing to the quotient by the
+specialized generic subgroup removes this summand.  Finally `-P` and `P` have
+the same image after tensoring the quotient with `F_2`.  Theorem F2 says that
+the 39,120 stored classes already exhaust the relevant translation classes,
+so no translated trace shell can add a new one. QED.
+
+This corollary is a mechanism boundary, not a point-search obstruction.  A
+higher-degree multisection, a different covering construction, or a direct
+specialization point can still occupy a quotient direction invisible to the
+bisection atlas.
+
 ### Theorem F3: distinct bisection extensions give genus-one rank-19 bases
 
 For any two distinct classes `B_1,B_2` in the complete published-R17 survivor
@@ -575,6 +613,8 @@ zero, not an exact-rank statement.  QED.
 <!-- status-consumer: EC-K3-BISECT-BIQUADRATIC-R19 707bffd8b85f8f3e -->
 
 ### Theorem F4: multiquadratic character decomposition and base genus
+
+<!-- status-consumer: EC-K3-BISECT-MULTIQUADRATIC-CHARACTERS d08a3d546eac82cb -->
 
 Let `K` be a field of characteristic different from two, let `E/K` be an
 elliptic curve, and let `q_1,...,q_k` be independent elements of

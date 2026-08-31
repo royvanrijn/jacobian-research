@@ -1,0 +1,101 @@
+{
+  "schema": "elliptic-curves.elkies-2026-r17-j-recognition-targets.v1",
+  "retrieved_at": "2026-08-31",
+  "claim_boundary": "These records pin public generalized Weierstrass equations and rank lower bounds for exact j-recognition. They do not independently replay the displayed-point certificates.",
+  "positive_control": {
+    "label": "published_rank28_control",
+    "parameter": "-9529/5471",
+    "certified_rank_lower_bound": 28,
+    "source": "https://arxiv.org/abs/2608.25406"
+  },
+  "targets": [
+    {
+      "label": "rank29",
+      "icarm_id": 12,
+      "certified_rank_lower_bound": 29,
+      "ainvs": [
+        "1",
+        "0",
+        "0",
+        "-27006183241630922218434652145297453784768054621836357954737385",
+        "55258058551342376475736699591118191821521067032535079608372404779149413277716173425636721497"
+      ],
+      "source": "https://elliptic-rank.icarm.cloud/curve/12.json",
+      "source_sha256": "206ef6992f433155d349618d55c289a00cf9014eb222da059c57e0db76131c0e",
+      "provenance": "Elkies--Klagsbrun 2024; publicly described as a specialization search on a rank-17 fibration of the same K3 surface used for the historical rank-28 curve."
+    },
+    {
+      "label": "curve273",
+      "icarm_id": 273,
+      "certified_rank_lower_bound": 30,
+      "ainvs": [
+        "1",
+        "0",
+        "0",
+        "-201769035260418549083594900060734240952308696994802735114305555",
+        "1151107939141058565733479426024323225135665982951300586808823640527729578307228357301072889377"
+      ],
+      "source": "https://elliptic-rank.icarm.cloud/curve/273.json",
+      "source_sha256": "146c841bcbee3edb123cc71837cb8b7bcc33400bc013880603af0cc0940df86b"
+    },
+    {
+      "label": "curve302",
+      "icarm_id": 302,
+      "certified_rank_lower_bound": 31,
+      "ainvs": [
+        "1",
+        "1",
+        "1",
+        "-1284727764113567728281797636015784768866707681415849262157224232063",
+        "560368321454261339256859338901915312332769858684945406858043869199456710681989058863306170127006181"
+      ],
+      "source": "https://elliptic-rank.icarm.cloud/curve/302.json",
+      "source_sha256": "2bd422f34d0566f79c53f6bc94c6ec5f9ff048cd88fcc300f53e0b397af2e67b"
+    },
+    {
+      "label": "curve398",
+      "icarm_id": 398,
+      "certified_rank_lower_bound": 30,
+      "ainvs": [
+        "1",
+        "0",
+        "0",
+        "-12892599774455576272301592959047823530919513428112484011550",
+        "560755046348395412977088824999503890617558856687636981223935662848386484980312656296132"
+      ],
+      "source": "https://elliptic-rank.icarm.cloud/curve/398.json",
+      "source_sha256": "5e09b5ed49cde24d20fcf300794e58a47f7f75ac7bba98c92b68ff3654df49f4",
+      "provenance": "Noam D. Elkies and Zev Klagsbrun, September 2025; submitted to ICARM on 2026-08-28."
+    },
+    {
+      "label": "curve399",
+      "icarm_id": 399,
+      "certified_rank_lower_bound": 29,
+      "ainvs": [
+        "1",
+        "0",
+        "0",
+        "-11226388884183735861962205254536431339112877364056989183905",
+        "450194265482766125175008332772346224614695308482085725750790650500195411870167825256777"
+      ],
+      "source": "https://elliptic-rank.icarm.cloud/curve/399.json",
+      "source_sha256": "92125a3aafd44ff45028ade826ef62338667164a402b3264507816e3c2009ead",
+      "provenance": "Noam D. Elkies and Zev Klagsbrun, January 2026; submitted to ICARM on 2026-08-28."
+    },
+    {
+      "label": "curve400",
+      "icarm_id": 400,
+      "certified_rank_lower_bound": 28,
+      "ainvs": [
+        "1",
+        "0",
+        "0",
+        "-2847874483810983397135985687546115504035875512904930",
+        "58635720945607333252276967459894829928661530156981574300268557162161405688900"
+      ],
+      "source": "https://elliptic-rank.icarm.cloud/curve/400.json",
+      "source_sha256": "704f2292b4395923e2887a4ddd7a35f03d46baed42f5c75aac2dfe8519dd4275",
+      "provenance": "Noam D. Elkies and Zev Klagsbrun, January 2026; submitted to ICARM on 2026-08-28."
+    }
+  ]
+}

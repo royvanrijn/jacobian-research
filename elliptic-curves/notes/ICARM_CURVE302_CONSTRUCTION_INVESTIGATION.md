@@ -1,6 +1,7 @@
 # ICARM curve 302: construction and H3/R17 provenance investigation
 
-Status: **public provenance incomplete; no K3 specialization claim**.
+Status: **exactly excluded from the published R17 chart; broader public
+provenance incomplete**.
 
 ## Bottom line
 
@@ -10,10 +11,14 @@ currently inspected gives attribution and a conditional exact-rank statement,
 but no family equation, search parameter, specialization map, or decomposition
 of the 31 points into generic and exceptional sections.
 
-It is therefore not justified to identify curve 302 with the Elkies--Klagsbrun
-rank-17 K3 family reconstructed under [`../../elkies-k3/`](../../elkies-k3/).
-That family remains an obvious object to test because it produced the preceding
-rank-record programme, but this is a research hypothesis, not provenance.
+The published Elkies--Klagsbrun rank-17 equation is now available locally and
+has been tested exactly.  The primitive degree-24 equation
+`j_R17(t)=j_302` has an irreducible degree-24 reduction modulo `397`, hence is
+irreducible over `QQ` and has no rational root.  Curve 302 is therefore not a
+direct rational specialization of that published chart.  This does not rule
+out another K3 fibration, an isogenous construction, or a different family.
+See
+[`ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md`](ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md).
 
 ## Exact recognition fingerprint
 
@@ -32,9 +37,10 @@ with SHA-256
 5939208330113d89ae063d62053f0c8383e18b3a564919b86f86a02a4d13a550.
 ```
 
-This is the first cheap exact equality test against any proposed one-parameter
-specialization. A positive match still needs a Q-isomorphism and section
-transport; equality of `j` alone is insufficient because of twists.
+This exact equality test has now been performed against the published `R17`
+`j`-map.  There is no rational match.  For any other proposed family, a
+positive match would still need a Q-isomorphism and section transport;
+equality of `j` alone is insufficient because of twists.
 
 The bad-reduction fingerprint is
 
@@ -53,57 +59,49 @@ invariants cannot have the same local valuations.
 
 ## Relation to the reconstructed H3 route
 
-The current H3 programme starts from the level-474 `E7+E8/MW2` Kumar source
-and has an exact degree-two neighbour corridor to the recovered rootless
-`MW17` lattice. At repository head
-`2ebb1f612bb04f74d25786e35c8a30eab5a7bedf`, the selected q24 horizontal
-section over `QQ` is exact, but its resolved Riemann--Roch pencil, binary-quartic
-Jacobian, and `D12/MW5` child fibre certificate are still open. Equation-level
-reconstruction is therefore not complete through the full generic rootless
-family. Consequently there is currently no exact function `j_R17(t)` or full
-list of 17 generic section coordinates to evaluate at curve 302.
+The reconstructed H3 programme starts from the level-474 `E7+E8/MW2` Kumar
+source and reaches the recovered rootless `MW17` lattice.  Independently, the
+published compact rootless equation and all seventeen generic sections are now
+available locally.  Its exact `j`-map supplies the exclusion above: curve 302
+does not occur at a rational parameter in this published chart.
 
-If curve 302 is a nonsingular specialization of that generic rank-17 family,
-then its 31-point subgroup must contain fourteen directions beyond the generic
-rank. This count is only conditional on the family identification:
+Had curve 302 been a nonsingular specialization of that generic rank-17
+family, its 31-point subgroup would have contained fourteen directions beyond
+the generic rank:
 
 ```text
 31 - 17 = 14 exceptional specialization directions.
 ```
 
-No such `17+14` decomposition has been produced.
+The exact `j`-exclusion shows that no such `17+14` decomposition exists through
+the published rational parameter chart.
 
-## Required exact specialization certificate
+## Exact specialization exclusion
 
-A genuine H3/R17 identification should contain all of the following.
+The replay constructs
 
-1. An explicit rational point on the H3 base and every neighbour parameter
-   needed to reach the rootless fibration.
-2. A specialization of the generic rootless Weierstrass equation whose
-   `c4,c6` are related to curve 302 by one rational scaling/twist-compatible
-   change of variables.
-3. An exact Q-isomorphism to the public global minimal model.
-4. Exact transport of the seventeen generic sections.
-5. A finite-reduction rank check separating the transported rank-17 subgroup
-   from fourteen additional directions.
+```text
+c4_R17(t)^3*Delta_302-c4_302^3*Delta_R17(t).
+```
 
-Until this exists, notes should say "candidate specialization" at most.
+After primitive normalization it has degree 24, retains degree 24 modulo 397,
+and is irreducible over that finite field.  Gauss's lemma proves irreducibility
+over `QQ`; the nonzero leading coefficient also excludes the point at
+infinity.  Thus there is no rational specialization parameter to which an
+isomorphism or section transport could be attached.
 
 ## Best next calculations
 
 The current high-leverage route is not a blind 32nd-point search on curve 302:
 the public BSD+GRH calculation already predicts exact rank 31. Instead:
 
-- finish the selected H3 equation route far enough to expose the generic
-  rootless `MW17` model and its `j`-map;
-- solve the exact equation `j_R17(t)=j_302`, including points at infinity and
-  every rational chart;
-- for any rational solution, test the Q-isomorphism and all seventeen section
-  transports before running exceptional-point searches;
-- use the recovered parameter, if any, to search nearby rational
-  specializations for rank 32 or a substantially smaller rank-31 model;
-- obtain the discoverers' construction record, which could immediately rule
-  the H3 hypothesis in or out.
+- obtain the discoverers' construction record and test any different proposed
+  family by the same exact invariant gate;
+- keep curve 302 as an external regression for finite-quotient independence,
+  height-lattice diagnostics and residual descent;
+- pursue rank 32 in the published `R17` family through its certified rational
+  parameters and quotient-targeted specialization pipeline, not through a
+  nonexistent curve-302 parameter.
 
 The existing bounded six-root Mestre census has not been rerun for curve 302 in
 this update. No negative Mestre-family conclusion is claimed.

@@ -2,6 +2,14 @@
 
 Date: 2026-08-23
 
+Update, 2026-08-31: the published compact rootless `R17` equation and its
+seventeen sections are now available.  The exact degree-24 equation
+`j_R17(t)=j_302` has an irreducible degree-24 reduction modulo `397`, so curve
+302 is not a direct rational specialization of that chart.  The historical
+handoff below explains the earlier programme decision; the current exact
+boundary is in
+[`../elliptic-curves/notes/ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md`](../elliptic-curves/notes/ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md).
+
 ## New benchmark
 
 ICARM curve 302 is now independently certified in this repository to satisfy
@@ -32,10 +40,9 @@ For the reconstructed generic rootless `MW17` programme, a rank-31
 specialization would require fourteen additional directions beyond the generic
 sections, one more than the rank-30 benchmark required.
 
-This does **not** change the selected H3 lattice/equation route. It strengthens
-the reason to complete it: without an explicit generic rootless equation and
-section map, curve 302 cannot be tested as a specialization and its search
-neighbourhood cannot be reproduced.
+This did **not** change the selected H3 lattice/equation route.  The later
+published rootless equation has now supplied the exact test and excludes a
+direct rational specialization of curve 302.
 
 ## What is not known
 
@@ -67,18 +74,17 @@ I15@2 + I4@3 + IV@5 + I6@7 + I4@11 + I5@13
 + I2@131 + I2@167 + 6 I1.
 ```
 
-These are cheap rejection filters once a generic candidate family is explicit.
-A positive `j` match still requires the exact Q-isomorphism and all seventeen
-generic section transports.
+These remain cheap rejection filters for any different candidate family.  A
+positive `j` match would still require the exact Q-isomorphism and all
+seventeen generic section transports.
 
 ## Programme priority
 
-The strategic order remains:
+The current strategic order is:
 
-1. turn the now-exact q24 horizontal section into the resolved-RR `D12/MW5`
-   child equation, binary-quartic Jacobian, and fibre certificate, then continue
-   the exact neighbour compilation to the generic rootless `MW17` equation;
-2. derive its exact `j`-map and solve against curve 302;
-3. if a specialization exists, recover the `17+14` section decomposition;
-4. search the nearby parameter geometry for rank 32 rather than spending the
-   main effort on a conjecturally absent 32nd point on curve 302 itself.
+1. keep curve 302 as an external rank-31 and finite-quotient regression;
+2. do not search for a nonexistent rational parameter in the published chart;
+3. test a different construction only when it supplies an explicit invariant
+   map or isogeny certificate;
+4. search the published `R17` parameter geometry for rank 32 rather than
+   spending the main effort on a conjecturally absent 32nd point on curve 302.

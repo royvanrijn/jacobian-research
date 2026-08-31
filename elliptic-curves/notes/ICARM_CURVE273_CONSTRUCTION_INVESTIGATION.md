@@ -1,8 +1,7 @@
 # ICARM curve 273: construction and family investigation
 
-Status: **ongoing source audit and bounded computation**.  This note does not
-identify a specialization parameter for curve 273 and does not prove that it
-belongs to the Elkies--Klagsbrun rank-17 K3 family.
+Status: **exactly excluded from the published R17 chart; broader source audit
+ongoing**.  This note does not identify a construction for curve 273.
 
 ## Bottom line
 
@@ -13,16 +12,20 @@ Claude, with Levent Alpöge and Ava Howell, but neither that entry nor the publi
 leaderboard discussion gives a family equation, search parameter, or
 specialization certificate.
 
-The strongest working hypothesis is that curve 273 came from the same broad
-rank-17 K3 specialization programme as the public rank-28 and rank-29 records.
-This is plausible and useful, but it remains a hypothesis.  A proof requires
-one of the following:
+The hypothesis that curve 273 is a direct rational specialization of the
+published rank-17 chart is now exactly false: the primitive degree-24 equation
+`j_R17(t)=j_273` has an irreducible degree-24 reduction modulo `367`, and hence
+no rational root.  A broader common construction lineage remains possible.
+Establishing it requires one of the following:
 
 1. a discoverer-supplied construction record;
-2. an explicit rank-17 family and a rational parameter whose specialization is
-   isomorphic over `Q` to curve 273; or
+2. a different explicit family and a rational parameter whose specialization
+   is isomorphic over `Q` to curve 273; or
 3. an equivalent exact specialization certificate, including the transport of
    the generic sections.
+
+The exact published-chart exclusion is replayed in
+[`ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md`](ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md).
 
 ## Public provenance recovered on 2026-08-20
 
@@ -174,9 +177,11 @@ model.  Its artifact is
 [`../../artifacts/generated-results/elkies-k3-h3-level474-source-family.json`](../../artifacts/generated-results/elkies-k3-h3-level474-source-family.json),
 SHA-256
 `8f5afd11e1d8979d57cb1a569833309f9664c19cd47194af0581a5cbbf8f1d59`.
-This identifies the source family of the proposed construction.  It does not
-yet identify curve 273 as a specialization of an explicit rootless MW17
-descendant; that still requires executing the neighbor chain.
+This identifies the source family of the proposed construction.  The later
+published rootless `MW17` chart can now be tested directly, and its exact
+degree-24 `j`-recognition equation excludes curve 273 at every rational
+parameter.  Identifying a broader shared construction would therefore require
+a genuinely different family or an isogeny-level explanation.
 <!-- status-consumer: EC-K3-H3-SOURCE a4bb40c9c9d0ff09 -->
 
 The rational points of the level-474 base are now determined globally.  On
@@ -1110,10 +1115,11 @@ before more relation collection is attempted.
    later q6/q8/q4-series/final-q6 neighbours in characteristic zero. The
    complete D13-to-rootless lattice transport and chamber/nef certification
    are already exact; only the equation-level execution remains.
-3. **Certify the specialization.**  Once the rootless family is explicit,
-   solve for a rational parameter and a `Q`-isomorphism to curve 273 and
-   literally transport the generic sections.  Height or discriminant
-   fingerprints cannot replace this certificate.
+3. **Retain the exact specialization exclusion.**  The published rootless
+   family is explicit, and its degree-24 `j`-recognition equation for curve 273
+   is irreducible over `QQ`.  Do not spend further work looking for a rational
+   parameter in this chart.  Test only genuinely different proposed families
+   or isogeny constructions.
 4. **Keep exact-rank descent independent.**  Closing the remaining
    `23,26,27,39,40`-bit ideal support can prove an upper bound or expose a
    new point, but it does not reconstruct the family.

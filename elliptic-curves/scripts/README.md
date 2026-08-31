@@ -24,6 +24,11 @@ Current high-rank and conductor replays are catalogued in
 the full curve-285/286 local conductor replays, the Elkies rank-25--28
 positive controls, and the fail-closed residual-descent entry points.
 
+`analyze_elkies_bisection_visibility_and_record_curves.py` converts the split
+bisection classes into canonical visible/complementary quotient bases and
+performs the exact `j`-recognition exclusions for ICARM curves 273 and 302.
+Its `--check` mode replays the pinned artifact.
+
 ## Active searches
 
 The compact published Elkies `t` chart is the active high-rank search surface.

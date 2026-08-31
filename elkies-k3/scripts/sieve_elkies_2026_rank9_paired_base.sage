@@ -176,9 +176,21 @@ def main() -> None:
     parser.add_argument("--output", type=Path, default=OUTPUT)
     parser.add_argument("--height-bound", type=int, default=60)
     parser.add_argument("--height-floor", type=int, default=0)
+    parser.add_argument(
+        "--gram-scale",
+        type=int,
+        default=100000000,
+        help="integer scale for qfminim; lower values can be needed for large shells",
+    )
     parser.add_argument("--primes", default=",".join(map(str, DEFAULT_PRIMES)))
     parser.add_argument("--certificate-prime-bound", type=int, default=300)
     parser.add_argument("--certify", choices=("all", "split"), default="all")
+    parser.add_argument(
+        "--store",
+        choices=("all", "hits"),
+        default=None,
+        help="store every fibre, or only split/collision hits plus a digest of the full shell",
+    )
     parser.add_argument("--checkpoint-every", type=int, default=100)
     args = parser.parse_args()
     if not 0 <= args.height_floor < args.height_bound:
@@ -186,6 +198,9 @@ def main() -> None:
     primes = tuple(int(value) for value in args.primes.split(",") if value)
     if any(value < 3 or not ZZ(value).is_prime() for value in primes):
         parser.error("all sieve moduli must be odd primes")
+    store_policy = args.store or ("all" if args.certify == "all" else "hits")
+    if args.certify == "all" and store_policy != "all":
+        parser.error("--certify all requires --store all so every certificate is retained")
 
     started = perf_counter()
     search = load_module("elkies_rank9_search_helpers", SEARCH_SCRIPT)
@@ -197,7 +212,9 @@ def main() -> None:
     lattice = lattice_document["base_lattice"]
     field = RealField(420)
     lll_gram = matrix(field, [[field(value) for value in row] for row in lattice["lll_reduced_canonical_height_gram"]])
-    scale = ZZ(10) ** 8
+    if args.gram_scale < 1000000:
+        parser.error("gram-scale below 1e6 is not supported by the rounding guard")
+    scale = ZZ(args.gram_scale)
     integral_gram = matrix(ZZ, [[ZZ((scale * value).round()) for value in row] for row in lll_gram.rows()])
     third_curve = EllipticCurve(QQ, lattice["third_quotient_model_a1_a2_a3_a4_a6"])
     paired_curve = EllipticCurve(QQ, list(search.PAIRED_MODEL))
@@ -230,9 +247,12 @@ def main() -> None:
     a_coefficients = tuple(QQ(value) for value in model_document["A_coefficients_low_to_high"])
     b_coefficients = tuple(QQ(value) for value in model_document["B_coefficients_low_to_high"])
     results = []
+    shell_hasher = sha256()
     modular_survivor_tests = 0
     exact_square_tests = 0
     zero_count = 0
+    split_fibre_count = 0
+    total_extra_splits = 0
     for ordinal, candidate in enumerate(shell, start=1):
         t_value = QQ(candidate["t"])
         numerator = ZZ(t_value.numerator())
@@ -261,9 +281,6 @@ def main() -> None:
             else:
                 split.append((entry, record, square_root))
 
-        coefficient_a = search.evaluate(a_coefficients, t_value)
-        coefficient_b = search.evaluate(b_coefficients, t_value)
-        model = tuple(search.to_fraction(value) for value in (0, 0, 0, coefficient_a, coefficient_b))
         should_materialize = args.certify == "all" or bool(split)
         row = {
             **candidate,
@@ -273,12 +290,30 @@ def main() -> None:
             "other_split_bisection_count": len(split),
             "branch_collision_count": len(zeros),
             "branch_collisions": zeros,
-            "specialized_model_a1_a2_a3_a4_a6": [
-                search.rational_text(value) for value in (0, 0, 0, coefficient_a, coefficient_b)
-            ],
             "certification_policy": args.certify,
         }
+        split_fibre_count += bool(split)
+        total_extra_splits += len(split)
+        shell_hasher.update(
+            (json.dumps(
+                {
+                    "t": candidate["t"],
+                    "lll_coefficients": candidate["lll_coefficients"],
+                    "canonical_height": candidate["canonical_height"],
+                    "split_masks": [entry[0]["lattice_orbit_mask"] for entry in split],
+                    "collision_masks": [entry["lattice_orbit_mask"] for entry in zeros],
+                },
+                sort_keys=True,
+                separators=(",", ":"),
+            ) + "\n").encode()
+        )
         if should_materialize:
+            coefficient_a = search.evaluate(a_coefficients, t_value)
+            coefficient_b = search.evaluate(b_coefficients, t_value)
+            model = tuple(search.to_fraction(value) for value in (0, 0, 0, coefficient_a, coefficient_b))
+            row["specialized_model_a1_a2_a3_a4_a6"] = [
+                search.rational_text(value) for value in (0, 0, 0, coefficient_a, coefficient_b)
+            ]
             curve = EllipticCurve(QQ, [coefficient_a, coefficient_b])
             generic_points = search.reconstruct_sections(section_document, t_value, curve)
             selected_points = []
@@ -322,6 +357,7 @@ def main() -> None:
         else:
             row.update(
                 {
+                    "specialized_model_a1_a2_a3_a4_a6": None,
                     "known_point_count": 19,
                     "known_rank_certificate": None,
                     "split_bisections": [entry for entry, _record, _root in split],
@@ -331,11 +367,12 @@ def main() -> None:
                     "total_rank_certificate": None,
                 }
             )
-        results.append(row)
+        if store_policy == "all" or split or zeros:
+            results.append(row)
         if ordinal % args.checkpoint_every == 0:
             print(
                 "ELKIES2026R9PAIRSIEVE|"
-                f"progress={ordinal}/{len(shell)}|split_hits={sum(bool(item['other_split_bisection_count']) for item in results)}|"
+                f"progress={ordinal}/{len(shell)}|split_hits={split_fibre_count}|"
                 f"exact_tests={exact_square_tests}",
                 flush=True,
             )
@@ -361,7 +398,9 @@ def main() -> None:
         "bounds": {
             "canonical_height_floor_exclusive": args.height_floor,
             "canonical_height_bound_inclusive": args.height_bound,
+            "integral_gram_scale": int(scale),
             "certification_policy": args.certify,
+            "storage_policy": store_policy,
             "certificate_prime_bound": args.certificate_prime_bound,
             "sieve_primes": list(primes),
         },
@@ -376,8 +415,10 @@ def main() -> None:
             "modular_survivor_exact_test_count": modular_survivor_tests,
             "exact_square_test_count": exact_square_tests,
             "branch_collision_count": zero_count,
-            "fibres_with_extra_splits": sum(bool(row["other_split_bisection_count"]) for row in results),
-            "total_extra_split_bisections": sum(row["other_split_bisection_count"] for row in results),
+            "fibres_with_extra_splits": split_fibre_count,
+            "total_extra_split_bisections": total_extra_splits,
+            "full_shell_ledger_sha256": shell_hasher.hexdigest(),
+            "stored_fibre_count": len(results),
             "no_false_negative_argument": (
                 "For q(t)=M/(D*b^2), rational squareness is equivalent to D*M being an integer "
                 "square. Its homogeneous reduction is therefore a square or zero at every sieve prime."

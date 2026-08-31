@@ -38,9 +38,11 @@ prime through 1,000 and computes the direct sum of
 Thus the rank-28 fibre realizes the third proposed outcome: the sole split
 bisection sees a one-dimensional subspace of the eleven known exceptional
 directions.  The complementary ten-dimensional space is invisible to this
-height-ten trace atlas at that fibre.  This does not support another shell
-merely by itself, but it gives the exact visibility deficit the next shell
-would have to address.
+atlas at that fibre.  The complete translation-orbit theorem shows that a
+higher trace shell would repeat the same bisection classes and cannot repair
+this deficit.  The canonical missing-class packet and the resulting change of
+search mechanism are recorded in
+[`ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md`](ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md).
 
 At `t=3/8`, the 25 split bisections span all four known directions beyond
 (R17).  This directly validates the bisection atlas as a practical detector

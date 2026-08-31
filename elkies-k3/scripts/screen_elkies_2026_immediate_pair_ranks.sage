@@ -1,10 +1,11 @@
 #!/usr/bin/env sage-python
-"""Resumably search and certify ranks of immediate-point pair Jacobians.
+"""Resumably search and certify ranks of pointed pair-base Jacobians.
 
-The input catalogue contains exact global minimal models for 5,566 genus-one
-paired bases.  Sage/mwrank supplies candidate generators.  This script then
-certifies their independence by exact finite quotients; an uncertified search
-result is retained as such and never promoted to a rank lower bound.
+The input may be the 5,566-row zero/infinity immediate-point catalogue or the
+300-row t=3/8 control-selected catalogue. Sage/mwrank supplies candidate
+generators. This script then certifies their independence by exact finite
+quotients; an uncertified search result is retained as such and never promoted
+to a rank lower bound.
 
 Repeated runs append new arithmetic-complexity ranks to the same output.  Use
 ``--start`` and ``--limit`` to split a long scan into reproducible intervals.
@@ -30,6 +31,8 @@ DEFAULT_INPUT = ROOT / "artifacts/generated-results/elkies-2026-immediate-point-
 DEFAULT_OUTPUT = ROOT / "artifacts/generated-results/elkies-2026-immediate-point-pair-rank-ledger.json"
 INPUT_SCHEMA = "elkies-k3.elkies-2026-immediate-point-pair-catalogue.v1"
 OUTPUT_SCHEMA = "elkies-k3.elkies-2026-immediate-point-pair-rank-ledger.v1"
+CONTROL_INPUT_SCHEMA = "elkies-k3.elkies-2026-control-pair-base-catalogue.v1"
+CONTROL_OUTPUT_SCHEMA = "elkies-k3.elkies-2026-control-pair-base-rank-ledger.v1"
 FINITE_QUOTIENT_HELPER = ROOT / "elliptic-curves/cas/elliptic_candidate_record.py"
 SHORT_MODEL_HELPER = ROOT / "elliptic-curves/ecsearch/q12o5867_specialization.py"
 
@@ -133,8 +136,9 @@ if (
 
 catalogue_sha = digest(args.input)
 catalogue = json.loads(args.input.read_text())
-if catalogue.get("schema") != INPUT_SCHEMA:
+if catalogue.get("schema") not in (INPUT_SCHEMA, CONTROL_INPUT_SCHEMA):
     raise ValueError(f"unexpected catalogue schema: {catalogue.get('schema')!r}")
+output_schema = CONTROL_OUTPUT_SCHEMA if catalogue["schema"] == CONTROL_INPUT_SCHEMA else OUTPUT_SCHEMA
 
 input_fingerprints = {
     display_path(args.input): catalogue_sha,
@@ -143,7 +147,7 @@ input_fingerprints = {
 }
 if args.output.exists():
     ledger = json.loads(args.output.read_text())
-    if ledger.get("schema") != OUTPUT_SCHEMA:
+    if ledger.get("schema") != output_schema:
         raise ValueError("existing ledger has an incompatible schema")
     if ledger.get("inputs") != input_fingerprints:
         if not args.rebind_compatible_input:
@@ -183,7 +187,7 @@ if args.output.exists():
         )
 else:
     ledger = {
-        "schema": OUTPUT_SCHEMA,
+        "schema": output_schema,
         "status": "PARTIAL_EXACT_RANK_LOWER_BOUND_LEDGER",
         "inputs": input_fingerprints,
         "method": {

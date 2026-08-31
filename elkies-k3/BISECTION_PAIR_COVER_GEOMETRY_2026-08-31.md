@@ -414,4 +414,114 @@ with SHA-256
 85ad8b521ab0ea65404500fad728372287b2c331b6afbb14a5e728826439e091
 ```
 
+## Exhaustive promoted-base shells
+
+The height-60 promoted-base shell is now exhausted rather than sampled.  A
+denominator-aware modular sieve evaluates the homogeneous integer square test
+for every one of the 39,118 nondefining quadratics without false negatives.
+The twelve primes
+
+```text
+131,137,151,157,163,167,181,191,197,199,211,227
+```
+
+avoid every coefficient denominator in the batch.  Across all 1,640 finite
+parameters of canonical height at most 60, they reduce 64,153,520 potential
+rational square tests to 21,488 exact integer square tests.  There are no
+extra splits or branch collisions.  All nineteen visible specialized points
+are materialized, and an exact finite-quotient certificate proves rank at
+least 19 at every one of the 1,640 fibres.
+
+The next shell uses the same exact-real-Gram cutoff with integral Gram scale
+`10^7`.  Independent scale-`10^7` and scale-`10^6` height-60 replays have the
+same 1,640 parameters and identical full-shell ledger hash.  In the shell
+
+```text
+60 < canonical height <= 150
+```
+
+there are 99,200 further finite parameters.  The sieve reduces the
+3,880,505,600 potential tests to 1,292,039 exact tests and again finds no
+extra split or branch collision.  This compact discovery shell makes no rank
+claim at its no-hit fibres; it records the complete shell digest and exact
+negative split result.
+
+Replay the two shells with:
+
+```bash
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/sieve_elkies_2026_rank9_paired_base.sage \
+  --height-bound 60 --certify all
+
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/sieve_elkies_2026_rank9_paired_base.sage \
+  --height-floor 60 --height-bound 150 --gram-scale 10000000 \
+  --certify split \
+  --output artifacts/generated-results/elkies-2026-rank9-paired-base-sieve-height150.json
+```
+
+These are bounded exhaustive shells, not a rank upper bound and not an
+exhaustion of the infinite base.
+
+## The 300 pair bases selected by the 25-split control
+
+The exact `t=3/8` control has 25 split masks, so it supplies all 300 bases in
+`binom(S(3/8),2)`.  Their exact pointed quartics and minimal Jacobians have now
+been catalogued.  None of the 300 pairs has a second point source among the
+other four controls or at zero or infinity, so a point-difference proof is not
+available directly from the incidence table.
+
+A bounded PARI search followed by exact finite-quotient certification is
+complete for all 300 Jacobians.  The certified rank-lower-bound distribution
+is
+
+```text
+rank >= 0:  49    rank >= 1: 101    rank >= 2: 85
+rank >= 3:  40    rank >= 4:  14    rank >= 5:  9
+rank >= 6:   2
+```
+
+Here `rank >= 0` means only that this bounded search found no point; it is not
+a rank-zero assertion.  The two rank-at-least-six leaders have masks
+`64360:75494` and `22912:102357`.
+
+For every one of the 251 positive-rank bases, the certified basis is
+canonical-height LLL-reduced.  Enumerating the full radius-one box
+`[-1,1]^r-{0}` produces 6,676 exact pair-base points, with no exceptional map
+values and 6,676 distinct rational parameters.  At each parameter, all 39,120
+quadratics are sieved and exactly tested.  Every fibre has exactly its two
+defining splits and no third split.  Both signs of both split-cover points are
+materialized, and a finite-quotient certificate proves rank at least 19 for
+all 6,676 fibres.  The smallest parameter found has 81 projective bits:
+
+```text
+t = -1470104594184504584780092 / 417615996452096683283343.
+```
+
+Nagao scores are attached only after the exact split counts and rank
+certificates, so they act solely as a tie-break within the explicit arithmetic
+ordering.
+
+Replay with:
+
+```bash
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/catalogue_elkies_2026_control_pair_bases.sage
+
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/screen_elkies_2026_immediate_pair_ranks.sage \
+  --input artifacts/generated-results/elkies-2026-control-pair-base-catalogue.json \
+  --output artifacts/generated-results/elkies-2026-control-pair-base-rank-ledger.json \
+  --start 1 --limit 300 --backend pari-only --pari-effort 2 \
+  --search-timeout 30 --checkpoint-every 10
+
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/search_elkies_2026_control_pair_base_points.sage \
+  --certify all
+```
+
+The rank-six base results prove positive generic base rank and generate the
+displayed bounded point sets.  They do not imply specialized rank 25, and the
+absence of a third split in these boxes is not a rank upper bound.
+
 <!-- status-consumer: EC-K3-BISECT-BIQUADRATIC-R19 707bffd8b85f8f3e -->

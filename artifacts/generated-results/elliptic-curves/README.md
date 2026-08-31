@@ -49,6 +49,14 @@ Important distinctions made explicit by the catalogue:
   no finite-quotient escape. Full-rank relation blocks verified by exact group
   addition prove generated-subgroup ranks `25,26,27,28,21`; these do not give
   upper bounds for the full curves.
+- `elkies_2026_bisection_visibility_record_curves_v1.json` row-reduces those
+  classes into deterministic visible and complementary quotient bases.  It
+  records the ten-dimensional rank-28 target packet and the exact mechanism
+  boundary that translated trace shells repeat existing bisection classes.
+  It also proves, through degree-24 polynomials irreducible modulo 367 and 397,
+  that ICARM curves 273 and 302 are not direct rational specializations of the
+  published `R17` chart.  Other families and isogeny constructions remain
+  open.
 - `elkies_2026_rank28_bad_place_kummer_ledger_v1.json` proves the complete
   factorization of the rank-28 2-division cubic discriminant and contains all
   thirteen finite/2-adic/real local blocks for the generic seventeen points.

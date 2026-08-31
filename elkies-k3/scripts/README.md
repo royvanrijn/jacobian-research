@@ -84,8 +84,9 @@ it records a bounded negative result, a normalization bug, or a useful local mod
   Jacobians, conductors, and global root numbers for all 5,566 pair bases with
   a visible rational point at zero or infinity.
 - `screen_elkies_2026_immediate_pair_ranks.sage` maintains a resumable bounded
-  point ledger. Only exact finite-quotient-certified independent points count
-  toward its lower bounds; an empty bounded search is not a rank-zero result.
+  point ledger for either the immediate-point or control-selected catalogue.
+  Only exact finite-quotient-certified independent points count toward its
+  lower bounds; an empty bounded search is not a rank-zero result.
 - `verify_elkies_2026_rank19_rank9_base.sage` is the short promoted replay for
   masks `42110:43109`: nine independent base-Jacobian points, the exact
   degree-two isogeny to the paired base, a birational pointed-quartic map to
@@ -101,6 +102,19 @@ it records a bounded negative result, a normalization bug, or a useful local mod
   pair in the four exact sets `S(t0)`. It materializes the pair points and
   computes their mod-2 finite-quotient incidence with the public exceptional
   complements, preventing an invalid automatic `published rank + 2` claim.
+- `sieve_elkies_2026_rank9_paired_base.sage` exhausts complete canonical-height
+  shells on the promoted base. A denominator-aware modular bitset sieve has no
+  false negatives, and exact finite quotients certify every retained rank
+  lower bound. The height-60 validation certifies all 1,640 fibres; the
+  discovery shell `60 < h <= 150` tests another 99,200 parameters compactly.
+- `catalogue_elkies_2026_control_pair_bases.sage` builds the 300 pair bases in
+  `binom(S(3/8),2)`, including their pointed quartics, minimal Jacobians,
+  conductors, root numbers, and all additional exact control incidences.
+- `search_elkies_2026_control_pair_base_points.sage` LLL-reduces every
+  certified positive-rank control pair, maps its bounded coefficient box
+  through the exact degree-two isogeny and pointed-quartic inverse, performs
+  the complete split sieve, materializes both signs, certifies the specialized
+  ranks, and only then attaches Nagao tie-break scores.
 
 The canonical theorem and full proof boundary are in
 [`../BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md`](../BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md).

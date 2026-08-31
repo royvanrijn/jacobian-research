@@ -2706,6 +2706,26 @@ that adjoining all split points leaves the displayed subgroup ranks at
 `25,26,27,28,21`. These are not upper bounds for the full curves. See
 [`elliptic-curves/notes/ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md`](elliptic-curves/notes/ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md).
 
+Resolve the rank-28 visibility quotient, prove that translated trace shells
+cannot enlarge it, and test the rank-30/31 record curves against the exact
+published `R17` `j`-map:
+
+<!-- status-consumer: EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES c3c7fbac71f4624f -->
+
+```bash
+.venv/bin/python \
+  elliptic-curves/scripts/analyze_elkies_bisection_visibility_and_record_curves.py \
+  --check
+```
+
+The exact row reduction gives a ten-dimensional canonical complement to the
+sole visible rank-28 class.  The recognition equations for ICARM curves 273
+and 302 are primitive irreducible degree-24 polynomials, witnessed modulo 367
+and 397 respectively, so neither record curve is a direct rational
+specialization of the published chart.  This does not exclude other families
+or isogeny constructions.  See
+[`elliptic-curves/notes/ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md`](elliptic-curves/notes/ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md).
+
 Classify all distinct biquadratic pair bases, build the complete exact
 5,566-row immediate-point arithmetic catalogue, replay the completed bounded
 rank-lower-bound ledger, and verify the simplest rank-at-least-nine base:
@@ -2730,6 +2750,30 @@ rank-lower-bound ledger, and verify the simplest rank-at-least-nine base:
 
 /tmp/jacobian-sage-bin/sage -python \
   elkies-k3/scripts/analyze_elkies_2026_high_rank_control_pair_bases.sage
+
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/sieve_elkies_2026_rank9_paired_base.sage \
+  --height-bound 60 --certify all
+
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/sieve_elkies_2026_rank9_paired_base.sage \
+  --height-floor 60 --height-bound 150 --gram-scale 10000000 \
+  --certify split \
+  --output artifacts/generated-results/elkies-2026-rank9-paired-base-sieve-height150.json
+
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/catalogue_elkies_2026_control_pair_bases.sage
+
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/screen_elkies_2026_immediate_pair_ranks.sage \
+  --input artifacts/generated-results/elkies-2026-control-pair-base-catalogue.json \
+  --output artifacts/generated-results/elkies-2026-control-pair-base-rank-ledger.json \
+  --start 1 --limit 300 --backend pari-only --pari-effort 2 \
+  --search-timeout 30 --checkpoint-every 10
+
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/search_elkies_2026_control_pair_base_points.sage \
+  --certify all
 ```
 
 The complete geometry proves all 765,167,640 distinct pair bases genus one
@@ -2744,8 +2788,51 @@ tests the remaining 39,118 covers at each of 100 retained parameters, and
 applies Nagao only after the explicit split count. The control-pair replay
 constructs all 19 pairs selected by the four high-rank fibres and computes
 their finite-quotient incidence with the public exceptional complements.
+The modular promoted-base sieve exhausts all 1,640 height-at-most-60
+parameters with a rank-at-least-19 certificate at every fibre, then tests the
+99,200 new parameters in the shell `60 < h <= 150`; neither shell contains an
+extra split.  The `t=3/8` catalogue contains all 300 control-selected pairs.
+Its complete bounded rank ledger certifies positive rank for 251 bases and
+rank at least 6 for two.  Exact degree-two isogeny and pointed-quartic inverses
+map the radius-one LLL boxes to 6,676 distinct parameters.  Every one has
+exactly two split bisections and a certified surface rank lower bound 19.
+Nagao scoring is performed only after those exact split counts and
+certificates.
 
 <!-- status-consumer: EC-K3-BISECT-BIQUADRATIC-R19 707bffd8b85f8f3e -->
+
+Run the quadratic-character Frobenius census, descend the known singleton
+twist section for mask 18075, and solve its complete reduced `P.O=0`
+polynomial-section scheme over `F_37`:
+
+<!-- status-consumer: EC-K3-BISECT-MULTIQUADRATIC-CHARACTERS d08a3d546eac82cb -->
+
+```bash
+.venv/bin/python \
+  elkies-k3/scripts/screen_elkies_2026_quadratic_twist_ranks.py
+
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/derive_elkies_2026_singleton_twist_section.sage \
+  --mask 18075 --prime 37
+
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/export_elkies_2026_twist_polynomial_sections_modp.sage \
+  --singleton-mask 18075 --prime 37
+
+.venv/bin/python \
+  elkies-k3/scripts/run_elkies_2026_twist_polynomial_sections_msolve.py \
+  --export artifacts/local/elkies-k3/twist-polynomial-sections/\
+singleton-18075/p37/export.json \
+  --threads 4 --jobs 2 --timeout 180
+```
+
+The default census is heuristic.  Its two fresh-prime validation commands are
+stored verbatim in the `reproducing_command` fields of the `p499-821` and
+`p823-1151` artifacts.  The modular solve is exact in the displayed finite
+field and polynomial degree box: 23 distinct systems are empty and the sole
+degree-one system is the known `Q/-Q` pair.  It is not a characteristic-zero
+rank upper bound.  See
+[`elkies-k3/QUADRATIC_TWIST_RANK_CENSUS_2026-08-31.md`](elkies-k3/QUADRATIC_TWIST_RANK_CENSUS_2026-08-31.md).
 
 The equation-friendlier alternate q80 q6 endpoint has a distinct rootless
 rank-17 lattice.  Its short shell is too large for PARI's materialized vector
