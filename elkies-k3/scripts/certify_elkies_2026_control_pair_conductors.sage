@@ -51,6 +51,12 @@ FINITE_HELPER = ROOT / "elliptic-curves/cas/elliptic_candidate_record.py"
 OUTPUT = ROOT / "artifacts/generated-results/elkies-2026-control-pair-conductor-gate.json"
 ICARM394_LOG_CONDUCTOR = "166.2520985277272016652232895273070674463"
 ICARM245_LOG_CONDUCTOR = "150.668907"
+ICARM394_CONDUCTOR = int(
+    "1593562111507190066539814084004447718921281851572777685020200143306222910"
+)
+ICARM245_CONDUCTOR = int(
+    "272066437942638823321634957004224153562929337633497250319389959310"
+)
 LOCAL_PATTERN = re.compile(
     r"^LOCAL\\|([0-9]+)\\|(-?[0-9]+)\\|(-?[0-9]+)\\|(-?[0-9]+)\\|(-?[0-9]+)$",
     re.MULTILINE,
@@ -327,9 +333,9 @@ def main() -> None:
             )
         else:
             complete += 1
-            log_conductor = QQ(tate["log_conductor"])
-            beats_394 = log_conductor < QQ(ICARM394_LOG_CONDUCTOR)
-            beats_245 = log_conductor < QQ(ICARM245_LOG_CONDUCTOR)
+            conductor = int(tate["conductor"])
+            beats_394 = conductor < ICARM394_CONDUCTOR
+            beats_245 = conductor < ICARM245_CONDUCTOR
             row.update(
                 {
                     "status": "PASS_EXACT_RANK19_AND_TATE_GATE",
@@ -375,7 +381,9 @@ def main() -> None:
         },
         "targets": {
             "icarm394_log_conductor": ICARM394_LOG_CONDUCTOR,
+            "icarm394_exact_conductor": str(ICARM394_CONDUCTOR),
             "icarm245_log_conductor": ICARM245_LOG_CONDUCTOR,
+            "icarm245_exact_conductor": str(ICARM245_CONDUCTOR),
         },
         "summary": {
             "candidate_count": len(candidates),
