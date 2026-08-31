@@ -1,0 +1,177 @@
+{
+  "classification": "EXACT_PLANNING_COMPUTATION_WITH_ERH_CONDITIONAL_BOUND",
+  "collector_priority": [
+    "icarm-245",
+    "family2-u483",
+    "fermigier-u28917-20",
+    "family3-u660"
+  ],
+  "generation_method": {
+    "conditional": "Bach 12*(log |Delta_K|)^2 under ERH/GRH",
+    "factor_base": "all prime ideals over rational primes through the Bach bound, union all prime ideals over 2*Delta(E)",
+    "unconditional": "Minkowski prime-ideal generation bound"
+  },
+  "interpretation": "This orders the BNF-free relation collectors by an exact materialized factor-base size. It is not a class-group, Selmer, or rank bound.",
+  "reproduce": "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python elliptic-curves/cas/build_conductor_first_s_class_envelopes.py --check",
+  "result_sha256": "ebd30799df4bb54ea7d8763ef74d1141da6905e89e233652516e43c13b06012e",
+  "schema": "elliptic-curves.conductor-first-s-class-envelopes.v1",
+  "source_manifest": "artifacts/generated-results/elliptic-curves/conductor_first_near_miss_descent_targets_v1.json",
+  "source_manifest_sha256": "cfd2ac0d0ec995c102df534fc216fbb849a21970ed68ce6785ce000f12cba0ff",
+  "targets": [
+    {
+      "bach_erh_generation_bound": 245977,
+      "bach_plus_selmer_prime_ideal_count": 39904,
+      "bach_prime_ideal_count": 39898,
+      "bach_rational_prime_count": 21710,
+      "certified_known_rank": 20,
+      "field_discriminant": "-150833784029182992832507252670394541129829154613165488742558536",
+      "field_discriminant_bits": 207,
+      "field_signature": [
+        1,
+        1
+      ],
+      "id": "icarm-245",
+      "large_selmer_prime_ideals_added_to_bach_base": 6,
+      "rank21_directions_needed": 1,
+      "scope": "exact factor-base envelope; Bach generation is conditional on ERH/GRH and no principal-relation completeness is asserted",
+      "selmer_prime_ideal_count": 19,
+      "selmer_rational_prime_count": 9,
+      "selmer_rational_primes": [
+        "2",
+        "3",
+        "5",
+        "13",
+        "19",
+        "37",
+        "7770053",
+        "763973980372286963203",
+        "55722582408764114465841769948159"
+      ],
+      "two_division_cubic_coefficients_ascending": [
+        "102826476655865664331896056530202932492368592",
+        "-414086583557685554145888428664",
+        "-3",
+        "1"
+      ],
+      "unconditional_minkowski_generation_bound": "3474936862362264559789899956358"
+    },
+    {
+      "bach_erh_generation_bound": 262523,
+      "bach_plus_selmer_prime_ideal_count": 42251,
+      "bach_prime_ideal_count": 42245,
+      "bach_rational_prime_count": 23031,
+      "certified_known_rank": 20,
+      "field_discriminant": "17207612547621358265560224336784329653572551167050221201938192360",
+      "field_discriminant_bits": 214,
+      "field_signature": [
+        3,
+        0
+      ],
+      "id": "fermigier-u28917-20",
+      "large_selmer_prime_ideals_added_to_bach_base": 6,
+      "rank21_directions_needed": 1,
+      "scope": "exact factor-base envelope; Bach generation is conditional on ERH/GRH and no principal-relation completeness is asserted",
+      "selmer_prime_ideal_count": 25,
+      "selmer_rational_prime_count": 12,
+      "selmer_rational_primes": [
+        "2",
+        "3",
+        "5",
+        "7",
+        "13",
+        "17",
+        "31",
+        "79",
+        "1049",
+        "71889448247",
+        "40200713707633",
+        "491007790268548705232623905732119"
+      ],
+      "two_division_cubic_coefficients_ascending": [
+        "229557901876618599227536954246340915301586440144",
+        "-70998592961771898264403921828872",
+        "5",
+        "1"
+      ],
+      "unconditional_minkowski_generation_bound": "29150619964710538812622985780641"
+    },
+    {
+      "bach_erh_generation_bound": 252689,
+      "bach_plus_selmer_prime_ideal_count": 40754,
+      "bach_prime_ideal_count": 40748,
+      "bach_rational_prime_count": 22254,
+      "certified_known_rank": 19,
+      "field_discriminant": "1049918952284205407647285695523745648824206153049270116261219144",
+      "field_discriminant_bits": 210,
+      "field_signature": [
+        3,
+        0
+      ],
+      "id": "family2-u483",
+      "large_selmer_prime_ideals_added_to_bach_base": 6,
+      "rank21_directions_needed": 2,
+      "scope": "exact factor-base envelope; Bach generation is conditional on ERH/GRH and no principal-relation completeness is asserted",
+      "selmer_prime_ideal_count": 25,
+      "selmer_rational_prime_count": 11,
+      "selmer_rational_primes": [
+        "2",
+        "3",
+        "7",
+        "11",
+        "19",
+        "23",
+        "37",
+        "80747",
+        "196475897",
+        "3530977935827",
+        "780933141067175503519949616514105067"
+      ],
+      "two_division_cubic_coefficients_ascending": [
+        "11900446174919538938855696844207218014563706944",
+        "-10237762979740726349497738277712",
+        "1",
+        "1"
+      ],
+      "unconditional_minkowski_generation_bound": "7200545083222263696781374137883"
+    },
+    {
+      "bach_erh_generation_bound": 271542,
+      "bach_plus_selmer_prime_ideal_count": 43512,
+      "bach_prime_ideal_count": 43506,
+      "bach_rational_prime_count": 23768,
+      "certified_known_rank": 19,
+      "field_discriminant": "213755035115175360072743299823526478903520221500764949628962697740",
+      "field_discriminant_bits": 218,
+      "field_signature": [
+        3,
+        0
+      ],
+      "id": "family3-u660",
+      "large_selmer_prime_ideals_added_to_bach_base": 6,
+      "rank21_directions_needed": 2,
+      "scope": "exact factor-base envelope; Bach generation is conditional on ERH/GRH and no principal-relation completeness is asserted",
+      "selmer_prime_ideal_count": 25,
+      "selmer_rational_prime_count": 11,
+      "selmer_rational_primes": [
+        "2",
+        "3",
+        "5",
+        "7",
+        "11",
+        "13",
+        "19",
+        "29",
+        "236013842611621",
+        "24980531877952601029",
+        "604262921861486684227619368181"
+      ],
+      "two_division_cubic_coefficients_ascending": [
+        "1389938541188311939911002603130747961528491111120",
+        "-237649806146729734519516437801384",
+        "-3",
+        "1"
+      ],
+      "unconditional_minkowski_generation_bound": "102741443455007659824558759199807"
+    }
+  ]
+}

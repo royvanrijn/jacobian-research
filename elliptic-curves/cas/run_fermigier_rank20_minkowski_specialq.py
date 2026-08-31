@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import argparse
 from collections import defaultdict, deque
+from hashlib import sha256
 import json
 from itertools import product
 from pathlib import Path
@@ -24,6 +25,12 @@ import time
 
 
 PROTOCOL = "R20MINKQ"
+REPO_ROOT = Path(__file__).resolve().parents[2]
+ELKIES_RANK28_LEDGER = (
+    REPO_ROOT
+    / "artifacts/generated-results/elliptic-curves"
+    / "elkies_2026_rank28_bad_place_kummer_ledger_v1.json"
+)
 
 
 def insert_row(pivots, row):
@@ -58,6 +65,14 @@ def main() -> None:
         "--curve273",
         action="store_true",
         help="use the pinned ICARM curve-273 short cubic and its declared Selmer primes",
+    )
+    parser.add_argument(
+        "--elkies-rank28",
+        action="store_true",
+        help=(
+            "use the published Elkies t=-9529/5471 cubic, all twelve exact "
+            "bad rational primes, and their proved factor hints"
+        ),
     )
     parser.add_argument("--special-q-min", type=int, default=262524)
     parser.add_argument("--special-q-max", type=int, default=320000)
@@ -137,11 +152,13 @@ def main() -> None:
         raise ValueError("--pair-cycle-length must be at least three in cycle-pairs mode")
     if args.special_residue_degree == 2 and args.seed_specials:
         raise ValueError("--seed-specials is only defined for degree-one special ideals")
-    if args.curve273 and (
+    if args.curve273 and args.elkies_rank28:
+        raise ValueError("--curve273 and --elkies-rank28 are mutually exclusive")
+    if (args.curve273 or args.elkies_rank28) and (
         args.field_polynomial_ascending or args.selmer_rational_primes
     ):
         raise ValueError(
-            "--curve273 cannot be combined with explicit field or Selmer-prime inputs"
+            "curve presets cannot be combined with explicit field or Selmer-prime inputs"
         )
 
     def parse_integer_csv(text, description):
@@ -162,6 +179,7 @@ def main() -> None:
         ZZ,
         factor,
         matrix,
+        pari,
         prime_range,
         vector,
     )
@@ -176,6 +194,8 @@ def main() -> None:
     ring = PolynomialRing(QQ, "x")
     x = ring.gen()
     preset_selmer_primes = None
+    factor_hint_primes = []
+    factor_hint_certificate = None
     if args.curve273:
         from analyze_curve273_relation_pool import S_RATIONAL
         from icarm_curve273 import short_coefficients
@@ -183,6 +203,46 @@ def main() -> None:
         short = [ZZ(QQ(value)) for value in short_coefficients()]
         coefficients = [short[4], short[3], short[1], ZZ(1)]
         preset_selmer_primes = sorted(ZZ(value) for value in S_RATIONAL)
+    elif args.elkies_rank28:
+        certificate = json.loads(ELKIES_RANK28_LEDGER.read_text())
+        factors = certificate.get("factorization", [])
+        factor_hint_primes = [ZZ(record["prime"]) for record in factors]
+        factor_product = ZZ(1)
+        for record in factors:
+            factor_product *= ZZ(record["prime"]) ** ZZ(record["exponent"])
+        if not (
+            certificate.get("status")
+            == "COMPLETE_ALL_BAD_PLACE_KUMMER_IMAGES_NOT_A_SELMER_BOUND"
+            and certificate.get("parameter") == "-9529/5471"
+            and certificate.get("factorization_product_verified") is True
+            and certificate.get("factor_primality_proof_completed") is True
+            and certificate.get("all_bad_place_blocks_completed") is True
+            and len(factor_hint_primes) == 12
+            and len(set(factor_hint_primes)) == 12
+            and factor_product == ZZ(certificate["descent_cubic_discriminant"])
+        ):
+            raise ValueError("the exact Elkies rank-28 bad-place ledger is stale")
+        coefficients = [
+            ZZ(value)
+            for value in certificate["descent_cubic_coefficients_ascending"]
+        ]
+        if len(coefficients) != 4 or coefficients[-1] != 1:
+            raise ValueError("the Elkies rank-28 ledger does not define a monic cubic")
+        preset_selmer_primes = sorted(factor_hint_primes)
+        # NumberField construction asks PARI for a maximal order.  Supplying
+        # the already proved polynomial-discriminant support prevents it from
+        # refactoring the 168-digit discriminant before relation collection.
+        pari.addprimes(factor_hint_primes)
+        factor_hint_certificate = {
+            "path": str(ELKIES_RANK28_LEDGER.resolve()),
+            "sha256": sha256(ELKIES_RANK28_LEDGER.read_bytes()).hexdigest(),
+            "all_factors_proved_prime": True,
+            "factor_count": len(factor_hint_primes),
+            "claim_boundary": (
+                "The hints accelerate maximal-order and ideal arithmetic; "
+                "they do not certify class-group completeness."
+            ),
+        }
     elif args.field_polynomial_ascending:
         coefficients = [ZZ(value) for value in parse_integer_csv(
             args.field_polynomial_ascending, "field-polynomial-ascending"
@@ -643,7 +703,12 @@ def main() -> None:
         "special_primes_in_factor_base": args.special_primes_in_factor_base,
         "allow_rational_special_multiples": args.allow_rational_special_multiples,
         "large_prime_merge_mode": args.large_prime_merge_mode,
-        "curve_preset": "icarm-273" if args.curve273 else None,
+        "curve_preset": (
+            "icarm-273"
+            if args.curve273
+            else "elkies-2026-rank28" if args.elkies_rank28 else None
+        ),
+        "factor_hint_certificate": factor_hint_certificate,
         "field_polynomial": str(polynomial),
         "defining_polynomial_ascending": [str(value) for value in coefficients],
         "field_discriminant": str(field.discriminant()),

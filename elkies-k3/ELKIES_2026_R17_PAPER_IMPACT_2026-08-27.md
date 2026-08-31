@@ -116,10 +116,108 @@ local classes do not pass this gate.
 The first exact-backend attempt used PARI `ellrank` through Sage on the public
 rank-28 fibre, with all 28 certified points supplied. It reached the strict
 300-second limit at 230,338,560 bytes peak observed RSS without returning a
-Selmer dimension. The pinned result is therefore
+Selmer dimension. An independent eclib invariant-quartic descent, with
+`selmer_only=True` and both point-search bounds zero, also reached 300 seconds
+without a result at 232,099,840 bytes peak observed RSS. Both pinned results are
+therefore
 `INCOMPLETE_NO_SELMER_BOUND_SEARCH_FORBIDDEN`: it is not an upper bound and it
 does not authorize a point search. The rank-28 control already supplies eleven
 quotient directions and would need four more for rank 32.
+
+The hidden first cost in PARI was factorization of the monic 2-division cubic
+discriminant. That discriminant is now completely factored as
+
+```text
+2^23 3^6 5^6 7^4 11^2 13^4 17^5 19^3
+* 48463 * 20650099
+* 315574902691581877528345013999136728634663121
+* 376018840263193489397987439236873583997122096511452343225772113000611087671413.
+```
+
+Every factor is independently proved prime and the product is checked against
+the closed cubic-discriminant formula. A factor-supplied, certified number
+field then computes the generic-seventeen Kummer rows at every bad odd prime,
+at 2, and at the real places. All thirteen local blocks complete; their
+concatenated coordinate matrix has rank 15. This closes the factorization and
+known-image layer only: it does not enumerate ambient `K(S,2)`, compute the
+`S`-class quotient, classify all locally soluble ambient classes, or give a
+Selmer upper bound.
+
+Supplying that proved factor table to PARI removes the repeated factorization.
+The first 8 GB-stack run entered the descent immediately and reached a strict
+600-second wall limit at 5,698,514,944 bytes peak observed RSS, without a
+Selmer dimension. Its status therefore remains
+`INCOMPLETE_NO_SELMER_BOUND_SEARCH_FORBIDDEN`. A second run with the same
+8 GB PARI stack reached its strict 1,800-second limit at 6,040,723,456 bytes
+peak observed RSS and likewise returned no dimension. This demonstrates that
+factorization is no longer the active delay, but does not complete the
+class-group/local-solubility layer or authorize search.
+
+The class-group layer is now independently isolated. A stage-aware PARI
+worker supplies the same proved factor support to `nfinit`, completes
+unconditional maximal-order `nfcertify`, and then runs `bnfinit(...,0)` before
+the one-sided `bnfcertify(...,1)` class-quotient certificate. With
+`c1=0.01,c2=4,nrpid=20`, the pinned 120-second run stops inside `bnfinit` at
+265,261,056 bytes peak observed RSS; PARI's diagnostic stream shows a
+243-ideal factor base followed by a random-relation plateau at 153 requested
+relations. Since `bnfcertify` is never reached, this is implementation
+evidence only.
+
+The BNF-free collector now also has an exact rank-28 preset and reuses the
+proved factor hints in collection, canonical-row augmentation, and audit. A
+factor-base-1000 paired-special-ideal pilot retains 10,288 sampled algebraic
+integers; its augmented ledger adds and verifies 172 rational principal rows.
+No noncanonical relation closes. The bounded model has 327 ideal columns, 26
+`S` columns, exact relation rank 172, and displayed quotient dimension 141,
+but its factor base is below the Bach/ERH generation bound 1,202,640. The
+pinned classification is therefore `UNCERTIFIED_FACTOR_BASE`. This makes the
+short-vector relation route reproducible and gives it a scale-specific stop
+result; it does not compute an `S`-class quotient, ambient `K(S,2)`, local
+solubility, Selmer dimension, or rank bound.
+
+The local layer now has an exact rank-28 positive control. A fresh fixture
+recomputes all 53 bad-place coordinates for both the generic seventeen and
+the certified public complement of eleven. The generic local-signature rank
+is 15; after adjoining all eleven globally independent directions it remains
+15, and the incremental rank is zero in every local block. This is direct
+calibration evidence that known Kummer signatures do not measure the
+Mordell--Weil quotient and cannot replace the ambient Selmer calculation.
+
+An independent coverage audit proves that the generic images span the full
+local Kummer image at four of the eleven odd bad primes (`3`, `19`,
+`20650099`, and
+`315574902691581877528345013999136728634663121`) and at infinity. Seven odd
+places and the two-adic place remain unresolved. A bounded exact norm-one
+generator then produces 49 candidate cubic classes and their two-cover
+quadrics. The resumable local supervisor tests the first twelve covers at
+seven odd primes in 84 owned cover/place workers: 60 return smooth-reduction
+local points, 19 singular lift trees hit the state cap, and five workers time
+out. No local obstruction is found. This pilot validates the one-sided local
+witness path while leaving 24 cases inconclusive; it proves neither
+everywhere-local solubility nor Selmer membership and authorizes no search.
+
+The public complement now supplies the matching genuine positive control for
+this layer. For each of its eleven points `Q`, an exact builder forms
+`alpha=X(Q)-theta`, verifies `Norm(alpha)=Z(Q)^2`, and materializes the two-cover
+with rational point `[1:0:0:1]`. The generic cover builder and local checker
+replay all eleven witnesses. Combined with the finite-reduction certificate
+that makes these point classes independent modulo the generic seventeen, this
+proves a residual 2-Selmer lower bound of 11 at the rank-28 fibre. The result
+shows that the explicit-cover path sees every known exceptional direction even
+though the 53-coordinate signature span sees none of their quotient gain. It
+is still a lower bound: the four additional directions needed for rank 32 and
+the complete ambient Selmer upper bound remain open.
+
+The external complete path is
+`build_elkies_2026_rank28_relative_descent_magma.py`. Before emitting code it
+replays the exact generic-17 and generic-plus-public-11 finite-reduction
+certificates. The generated job calls unconditional
+`TwoSelmerGroup(E : Bound := -1)` at basis level, computes
+`dim Sel_2(E)-17`, and exits if that value is below 15. Only the passing branch
+may call relative `TwoDescent(... RemoveGens := generic, WithMaps := false)`;
+there is no point-search primitive in the job. Its parser rejects partial logs
+and emits the same model-bound gate schema. Magma is unavailable on the
+current host, so no external transcript or Selmer dimension is claimed.
 
 ## First rank-18 cover
 
@@ -222,7 +320,11 @@ The following are provenance or regression paths, not current priorities:
 - fixed-corridor reverse lifts, q323, changed-zero reranking, and compiler
   optimization without a direct specialization use;
 - ICARM fingerprint fitting as a way to infer the now-published family;
-- ungated raw `ratpoints`, slope-box, and two-cover point searches;
+- ungated raw `ratpoints`, slope-box, and two-cover point searches; the direct
+  q12 ratpoints, affine-chart, eclib-search, and slope-slice commands now refuse
+  to start without a same-parameter, same-minimal-model passing gate;
+- the old low-complexity x-ansatz parameter/point search, now hard parked in
+  favor of compact-`t` calibrated scoring followed by descent;
 - further searching of the rank-28 calibration fibre merely to rediscover its
   known 28 independent points.
 
@@ -237,6 +339,80 @@ python3 elliptic-curves/scripts/verify_elkies_2026_high_rank_calibrations.py
 python3 elkies-k3/scripts/calibrate_elkies_2026_positive_controls_nagao.py
 python3 elliptic-curves/cas/run_elkies_2026_rank28_residual_selmer.py \
   --timeout 300 --overwrite
+python3 elliptic-curves/cas/run_elkies_2026_rank28_residual_selmer.py \
+  --backend eclib --timeout 300 \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_residual_2selmer_eclib_v1.json \
+  --overwrite
+python3 elliptic-curves/scripts/specialize_q12o5867_candidate.py \
+  --a -9529 --b 5471 --overwrite
+python3 elliptic-curves/cas/build_elkies_2026_rank28_bad_place_ledger.py \
+  --overwrite
+python3 elliptic-curves/cas/run_elkies_2026_rank28_residual_selmer.py \
+  --backend pari-factored --timeout 600 \
+  --pari-stack-bytes 8000000000 --rss-limit-bytes 12000000000 \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_residual_2selmer_pari_factored_8g_v1.json \
+  --overwrite
+python3 elliptic-curves/cas/run_elkies_2026_rank28_residual_selmer.py \
+  --backend pari-factored --timeout 1800 \
+  --pari-stack-bytes 8000000000 --rss-limit-bytes 12000000000 \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_residual_2selmer_pari_factored_8g_30min_v1.json \
+  --overwrite
+python3 elliptic-curves/cas/run_elkies_2026_rank28_s_class_pari.py \
+  --timeout 120 --c1 0.01 --c2 4 --nrpid 20 \
+  --pari-stack-bytes 2000000000 --rss-limit-bytes 3000000000 \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_s_class_pari_v1.json \
+  --overwrite
+mkdir -p artifacts/local/elliptic-curves/elkies-rank28-bnf-free
+$SAGE elliptic-curves/cas/run_fermigier_rank20_minkowski_specialq.py \
+  --elkies-rank28 --factor-base-bound 1000 \
+  --special-q-min 1009 --special-q-max 5000 --max-special-q 20 \
+  --special-ideal-mode cycle-pairs --pair-cycle-length 20 \
+  --trial-prime-bound 1000 --lattice-combination-bound 2 \
+  --relation-ledger artifacts/local/elliptic-curves/elkies-rank28-bnf-free/minkowski_fb1000_paircycle20_v1.json
+$SAGE elliptic-curves/cas/augment_bnf_free_canonical_principal_relations.py \
+  --relation-ledger artifacts/local/elliptic-curves/elkies-rank28-bnf-free/minkowski_fb1000_paircycle20_v1.json \
+  --output artifacts/local/elliptic-curves/elkies-rank28-bnf-free/minkowski_fb1000_paircycle20_canonical_v1.json
+$SAGE elliptic-curves/cas/audit_bnf_free_s_class_quotient.py \
+  --relation-ledger artifacts/local/elliptic-curves/elkies-rank28-bnf-free/minkowski_fb1000_paircycle20_canonical_v1.json \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_bnf_free_s_class_pilot_v1.json
+$SAGE elliptic-curves/cas/build_elkies_2026_rank28_local_coverage.py \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_generic17_local_signature_v1.json \
+  --overwrite
+$SAGE elliptic-curves/cas/audit_bnf_free_local_kummer_coverage.py \
+  --signature-map artifacts/generated-results/elliptic-curves/elkies_2026_rank28_generic17_local_signature_v1.json \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_generic17_local_coverage_v1.json
+$SAGE elliptic-curves/cas/generate_q12o5867_norm_one_cover_candidates.py \
+  --signature-map artifacts/generated-results/elliptic-curves/elkies_2026_rank28_generic17_local_signature_v1.json \
+  --coefficient-bound 2 \
+  --output artifacts/local/elliptic-curves/elkies-rank28-bnf-free/norm_one_b2_v1.json
+$SAGE elliptic-curves/cas/build_bnf_free_two_covers.py \
+  --candidates artifacts/local/elliptic-curves/elkies-rank28-bnf-free/norm_one_b2_v1.json \
+  --output artifacts/local/elliptic-curves/elkies-rank28-bnf-free/norm_one_b2_covers_v1.json
+python3 elliptic-curves/cas/run_bnf_free_two_cover_local_supervisor.py \
+  --covers artifacts/local/elliptic-curves/elkies-rank28-bnf-free/norm_one_b2_covers_v1.json \
+  --primes 3,5,7,11,13,17,19 --max-covers 12 \
+  --max-enumeration-prime 19 --max-lift-precision 6 --max-lift-states 5000 \
+  --timeout-per-place 2 \
+  --cache-dir artifacts/local/elliptic-curves/elkies-rank28-bnf-free/norm_one_b2_local_pilot_blocks_v1 \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_norm_one_local_pilot12_v1.json
+python3 elliptic-curves/cas/build_elkies_2026_rank28_public_selmer_controls.py \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_selmer_candidates_v1.json \
+  --overwrite
+$SAGE elliptic-curves/cas/build_bnf_free_two_covers.py \
+  --candidates artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_selmer_candidates_v1.json \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_two_cover_controls_v1.json
+$SAGE elliptic-curves/cas/audit_bnf_free_two_cover_reduction.py \
+  --covers artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_two_cover_controls_v1.json \
+  --primes 2,3,5,7,11,13,17,19,48463,20650099,315574902691581877528345013999136728634663121,376018840263193489397987439236873583997122096511452343225772113000611087671413 \
+  --max-enumeration-prime 2 \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_global_cover_witness_audit_v1.json
+python3 elliptic-curves/cas/build_elkies_2026_rank28_relative_descent_magma.py \
+  --output artifacts/local/elliptic-curves/elkies_2026_rank28_relative_2selmer.m
+# Run the generated program with an unconditional Magma installation, then:
+python3 elliptic-curves/cas/parse_elkies_2026_rank28_relative_descent.py \
+  --program artifacts/local/elliptic-curves/elkies_2026_rank28_relative_2selmer.m \
+  --log artifacts/local/elliptic-curves/elkies_2026_rank28_relative_2selmer.log \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_residual_2selmer_magma_v1.json
 $SAGE elkies-k3/scripts/verify_elkies_2026_rank18_first_cover.sage
 $SAGE elkies-k3/scripts/verify_elkies_2026_rank19_paired_cover.sage
 
@@ -250,14 +426,16 @@ python3 elkies-k3/scripts/search_elkies_2026_E0_mw_nagao.py \
 ```
 
 The model, coordinate, control, and cover verifiers are exact replays. The
-Nagao command is a complete bounded heuristic ranking. The residual-descent
-command is an exact backend attempt, but its pinned timeout is incomplete and
-authorizes no search. The last two commands are bounded supporting heuristic
-searches.
+Nagao command is a complete bounded heuristic ranking. The two local
+residual-descent commands are exact backend attempts, but their pinned timeouts
+are incomplete and authorize no search. The Magma builder/parser is an exact,
+fail-closed external path, not a completed computation on this host. The last
+two commands are bounded supporting heuristic searches.
 
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS 345b9fb977057133 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL f99c98cdb6b8cd7d -->
-<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE f5600026fe1e9656 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R28-S-CLASS-PILOT a791713dc40f7caf -->
+<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE 56298144d268ab70 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R18-COVER 6b4ee5bbc1afc01e -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R19-PAIRED f1e135d2ba803e80 -->

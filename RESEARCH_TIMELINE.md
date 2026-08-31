@@ -179,13 +179,13 @@ horizontal curves are actual effective curves on the equation model.
     --q12/orbit5867--> rootless/MW17.
   ```
 
-- The first two edges of that suffix now have exact characteristic-zero
+- By the end of the day, the first two edges of that suffix had exact characteristic-zero
   Riemann--Roch planes, quartics, minimal Jacobians, effective zeros, and
-  equation markings.  The `q8/orbit376` horizontal is also exact over
-  `QQ(t)`; its resolved pencil and child equation remain open.  The preferred
-  final `q12/orbit5867` equation remains open, with `q12/orbit4484` retained
-  as a certified fallback.  Both marked lattice transports and the endpoint
-  isometry are exact.
+  equation markings. The `q8/orbit376` horizontal was also exact over
+  `QQ(t)`; its resolved pencil and the preferred final `q12/orbit5867`
+  equation were the remaining equation gates. `q12/orbit4484` was retained as
+  a certified fallback, and both marked lattice transports and the endpoint
+  isometry were already exact.
 - Historical sources were re-audited.  They confirm the existence and broad
   modular/Hensel construction strategy for the rank-17 surface but do not
   provide the missing final equation, section basis, or neighbour maps.
@@ -197,12 +197,64 @@ horizontal curves are actual effective curves on the equation model.
   mathematical claim was promoted. See
   [`STATUS_HASH_REFRESH_2026-08-25.md`](STATUS_HASH_REFRESH_2026-08-25.md).
 
+## 2026-08-26: rootless endpoint theorem and reverse-route audit
+
+- Exact chord saturation closed the `q8/orbit376` equation and pointed its
+  `4A1/MW13` child at P1229.
+- A complete polynomial section-shell audit replaced the nominal q12 word by
+  an equation-effective word. The resulting `q12/orbit5867` Jacobian has
+  `24I1`, and seventeen exact sections reproduce the determinant-948 R17
+  height lattice.
+- A rational point on the stored quartic proved source identity. Counts at
+  two good primes proved geometric Picard rank 19, and the unique possible
+  index-two even enlargement was excluded. Thus the full geometric
+  Mordell--Weil group is saturated R17 of exact rank 17.
+- Reverse fixed-corridor work made the final historical arrows
+  equation-explicit, then parked the route after preserving a corrected
+  physical `4A1` lift. Arithmetic use of the endpoint became the priority.
+
+Durable lesson: route, equation, section basis, Picard upper bound, saturation,
+and source identity are separate proof layers; a direct endpoint package can
+close them without completing every historical intermediate presentation.
+
+## 2026-08-27 to 2026-08-31: published chart, calibrated arithmetic, and bisections
+
+- The compact model and seventeen sections from Elkies's 2026 paper were
+  replayed exactly and identified with the reconstructed q12 endpoint by a
+  rational base change and Weierstrass scaling.
+- The four published rank-25--28 fibres were locked as exact positive controls,
+  with quotient gains `8,9,10,11` over the generic rank 17. A complete
+  height-10000 scan showed that weakest-block scoring across three disjoint
+  prime ensembles ranks all four inside the declared top one percent.
+- A fail-closed residual 2-Selmer policy was implemented: rank 32 requires
+  residual dimension at least 15 on the same minimal curve before covers or
+  expensive point searches. Resource-bounded PARI and eclib attempts on the
+  rank-28 control timed out without a Selmer result; an unconditional Magma
+  path is generated but not completed on the current host.
+- The first conic cover acquired an explicit eighteenth section and rational
+  parameter. The paired cover acquired two explicit sections, exact maps from
+  a rank-at-least-four elliptic curve, and a bounded heuristic sieve.
+- Curves 285 and 286 received repository-local global-minimality and complete
+  Tate-algorithm conductor replays, closing the low-conductor branch of the
+  original operational target as well as the already-closed rank branch.
+- Exact lattice enumeration found 39,120 rational-bisection translation
+  orbits and 8,895,801 disjoint-priority pairs. All 39,120 classes were then
+  constructed at equation level and gave distinct quadratic squareclasses.
+  This proves injectivity on the complete survivor set, produces 39,120
+  generic-rank-at-least-18 covers, and excludes this mechanism as a source of
+  a rank-two collision or generic-rank-19 family.
+
+Durable lesson: calibrate heuristics on exact controls, make descent gates
+fail closed, and quotient bisections by section translation before spending
+equation-level work on extension collisions.
+
 ## Current handoff
 
 The repository-wide continuation queue is
-[`STATUS.md`](STATUS.md#active-open-problems).  The nearest concrete K3 task is
-the resolved `q8/orbit376` equation lift, followed by preferred
-`q12/orbit5867` (or fallback `q12/orbit4484`) and direct R17 endpoint
-certification.  The nearest elliptic arithmetic tasks are an unconditional
-upper bound for curve 302 or a rank-at-least-32 example, exact repository-local
-conductors for curves 285/286, and the residual 2-Selmer closure for curve 273.
+[`STATUS.md`](STATUS.md#active-open-problems). The principal arithmetic gate is
+a completed residual 2-Selmer quotient in the compact Elkies chart, followed
+only on a passing fibre by cover or point search toward rank 32. Parallel exact
+questions are an unconditional upper bound for curve 302, residual descent for
+curve 273 and the four low-conductor rank-19/20 near misses. The complete
+rootless-bisection survivor mechanism is now closed for rank-two collisions;
+the alternate rootless frame remains equation-open.

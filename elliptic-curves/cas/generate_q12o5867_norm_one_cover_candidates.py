@@ -19,6 +19,7 @@ from __future__ import annotations
 import argparse
 from fractions import Fraction
 from itertools import product
+from hashlib import sha256
 import json
 from math import gcd
 from pathlib import Path
@@ -51,7 +52,7 @@ def main() -> None:
     if args.coefficient_bound < 1 or args.max_candidates < 1:
         parser.error("coefficient and candidate bounds must be positive")
 
-    from sage.all import NumberField, PolynomialRing, QQ
+    from sage.all import NumberField, PolynomialRing, QQ, pari
 
     signature = json.loads(args.signature_map.read_text())
     if signature.get("schema") != SIGNATURE_SCHEMA:
@@ -61,6 +62,21 @@ def main() -> None:
         raise ValueError("signature map must define a monic cubic")
     ring = PolynomialRing(QQ, "x")
     x = ring.gen()
+    factor_hint_certificate = None
+    if signature.get("source", {}).get("kind") == "elkies_2026_rank28_positive_control":
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from run_elkies_2026_rank28_s_class_pari import validate_inputs
+
+        _, _, certified_coefficients, factor_hint_primes = validate_inputs()
+        if coefficients != [QQ(value) for value in certified_coefficients]:
+            raise ValueError("rank-28 signature map has the wrong defining cubic")
+        pari.addprimes(factor_hint_primes)
+        bad_ledger = signature["source"]["bad_place_ledger"]
+        factor_hint_certificate = {
+            "bad_place_ledger": bad_ledger,
+            "factor_count": len(factor_hint_primes),
+            "all_factors_proved_prime": True,
+        }
     field = NumberField(
         sum(coefficient * x**index for index, coefficient in enumerate(coefficients)),
         "theta",
@@ -107,6 +123,8 @@ def main() -> None:
         "status": "exact_norm_one_candidates_not_local_selmer_certificate",
         "field_polynomial_ascending": [str(value) for value in coefficients],
         "source_signature_map": str(args.signature_map.resolve()),
+        "source_signature_map_sha256": sha256(args.signature_map.read_bytes()).hexdigest(),
+        "factor_hint_certificate": factor_hint_certificate,
         "coefficient_bound": args.coefficient_bound,
         "primitive_projective_direction_count": len(directions),
         "candidate_truncated": len(candidates) < len(directions),

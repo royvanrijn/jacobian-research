@@ -218,18 +218,26 @@ and establish at least fifteen independent quotient directions.
 
 ## Exact point-search backends
 
-The promoted specialization adapter and CPU search entry points are:
+This section records historical bounded searches. Under the Elkies 2026
+descent-first policy these backends are no longer pre-descent discovery tools.
+Every live point-search command requires a completed unconditional gate for
+the same parameter and global minimal model. The specialization adapter itself
+remains ungated because it performs no point search.
+
+The specialization adapter and gate-protected CPU entry points are:
 
 ```bash
 .venv/bin/python elliptic-curves/scripts/specialize_q12o5867_candidate.py \
   --a NUMERATOR --b DENOMINATOR --output SPECIALIZATION.json
 
 .venv/bin/python elliptic-curves/scripts/probe_q12o5867_ratpoints.py \
-  --input SPECIALIZATION.json --height 1000000000 \
+  --input SPECIALIZATION.json --residual-selmer-gate GATE.json \
+  --height 1000000000 \
   --denominator-bound 100000 --timeout 120 --output PROBE.json
 
 .venv/bin/python elliptic-curves/scripts/probe_q12o5867_section_charts.py \
-  --input SPECIALIZATION.json --pair-mode all --include-multiplicative \
+  --input SPECIALIZATION.json --residual-selmer-gate GATE.json \
+  --pair-mode all --include-multiplicative \
   --height 100000 --denominator-bound 100000 \
   --per-chart-timeout 20 --output CHARTS.json
 ```
@@ -259,6 +267,7 @@ searched through `H=D=500000`:
 ```bash
 .venv/bin/python elliptic-curves/scripts/probe_q12o5867_section_charts.py \
   --input artifacts/local/elliptic-curves/q12o5867-specializations/q12o5867-specialization-crt3-v1.json \
+  --residual-selmer-gate PASSING_GATE_FOR_THE_SAME_FIBRE.json \
   --pair-mode all --include-multiplicative \
   --height 500000 --denominator-bound 500000 \
   --per-chart-timeout 30 \
@@ -453,7 +462,8 @@ screens, not rank upper bounds.
 ## Exact PARI two-cover backend
 
 `../elliptic-curves/scripts/probe_q12o5867_pari_two_cover.py` is a bounded,
-owned-process descent backend. It validates the exact specialization, runs
+owned-process descent backend. It now refuses to start without a passing
+same-parameter, same-minimal-model residual-Selmer gate. It validates the exact specialization, runs
 PARI `ell2cover` under wall-time, RSS, and stack caps, searches any returned
 quartics with `hyperellratpoints`, replays the covering maps exactly, and sends
 every mapped point directly to the finite-quotient gain gate.

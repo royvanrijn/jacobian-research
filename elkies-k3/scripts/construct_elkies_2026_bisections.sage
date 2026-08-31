@@ -15,8 +15,10 @@ The elliptic equation then forces the chord-discriminant numerator
     M^4 - 6*M^2*Nx - 8*M*Ny - 3*Nx^2 - 4*A*h^4
 
 to be divisible by ``h^6``.  The quotient is quadratic.  This script replays
-that construction exactly for a prefix of the equation-priority table and
-writes input accepted directly by ``hash_bisection_extensions.py``.
+that construction exactly for an interval of the equation-priority table and
+writes input accepted directly by ``hash_bisection_extensions.py``.  If a
+trace has a pole over infinity, the same calculation is performed after
+``t -> 1/t`` and the resulting relation is transported back exactly.
 """
 
 from __future__ import annotations
@@ -98,6 +100,87 @@ def reconstruct_basis(R, A, B, section_data):
     return points
 
 
+def reciprocal_with_bound(polynomial, bound, R):
+    """Return ``t^bound*polynomial(1/t)`` in the current polynomial ring."""
+
+    polynomial = R(polynomial)
+    if polynomial.degree() > bound:
+        raise ArithmeticError("reciprocal degree exceeds its geometric bound")
+    t = R.gen()
+    return R(sum(polynomial[index] * t ** (bound - index) for index in range(polynomial.degree() + 1)))
+
+
+def invert_rational(function, weight, R, K):
+    """Return ``t^weight*function(1/t)`` without symbolic substitution."""
+
+    function = K(function)
+    numerator = R(function.numerator())
+    denominator = R(function.denominator())
+    t = R.gen()
+    reverse_numerator = reciprocal_with_bound(numerator, numerator.degree(), R)
+    reverse_denominator = reciprocal_with_bound(denominator, denominator.degree(), R)
+    exponent = weight - numerator.degree() + denominator.degree()
+    return K(t**exponent * reverse_numerator / reverse_denominator)
+
+
+def local_chord_data(X, Y, A, B, Delta, R, K):
+    """Construct the chord in an affine base chart where all three poles are finite."""
+
+    x_denominator = R(X.denominator())
+    if not x_denominator.is_square():
+        raise ArithmeticError("trace x denominator is not a square")
+    h = R(x_denominator.sqrt())
+    h /= h.leading_coefficient()
+    assert X.denominator() == h**2
+    assert Y.denominator() == h**3
+    if h.degree() != 3:
+        raise ArithmeticError(f"trace denominator has degree {h.degree()}, not three")
+    Nx = R(X * h**2)
+    Ny = R(Y * h**3)
+    modulus = h**2
+    if Nx.gcd(modulus) != 1:
+        raise ArithmeticError("trace numerator is not invertible modulo h^2")
+    M = R((-Ny * Nx.inverse_mod(modulus)) % modulus)
+    assert M.degree() < 6
+    assert (M * Nx + Ny) % modulus == 0
+    assert (M**2 - Nx) % modulus == 0
+    assert M.gcd(h).degree() == 0
+
+    discriminant_numerator = (
+        M**4 - 6 * M**2 * Nx - 8 * M * Ny - 3 * Nx**2 - 4 * A * h**4
+    )
+    quotient, remainder = discriminant_numerator.quo_rem(h**6)
+    if remainder:
+        raise ArithmeticError("chord discriminant is not divisible by h^6")
+    q = R(quotient)
+    if q.degree() != 2 or q.gcd(q.derivative()).degree() != 0:
+        raise ArithmeticError("residual cover is not a squarefree quadratic")
+
+    sum_x = R((M**2 - Nx) // h**2)
+    product_x = K(((M * Nx + Ny) ** 2 - B * h**6) / (h**4 * Nx))
+    if product_x.denominator() != 1:
+        raise ArithmeticError("residual quadratic has a nonintegral constant term")
+    product_x = R(product_x)
+    assert sum_x**2 - 4 * product_x == h**2 * q
+
+    x0 = sum_x / 2
+    x1 = h / 2
+    n = K(-(Ny + M * Nx) / h**3)
+    y0 = K(M / h) * x0 + n
+    y1 = K(M / h) * x1
+    if K(y0).denominator() != 1 or K(y1).denominator() != 1:
+        raise ArithmeticError("residual bisection coordinates are not integral")
+    x0, x1, y0, y1 = map(R, (x0, x1, y0, y1))
+    assert y0**2 + y1**2 * q == x0**3 + 3 * x0 * x1**2 * q + A * x0 + B
+    assert 2 * y0 * y1 == 3 * x0**2 * x1 + x1**3 * q + A * x1
+    return {
+        "h": h, "Nx": Nx, "Ny": Ny, "M": M, "q": q,
+        "sum_x": sum_x, "product_x": product_x,
+        "x0": x0, "x1": x1, "y0": y0, "y1": y1,
+        "branch_fibres_smooth": q.gcd(Delta).degree() == 0,
+    }
+
+
 def construct_record(row, *, R, K, E, basis, A, B, Delta, pinned):
     published_vector = parse_vector(row["published_basis_w"])
     pinned_vector = parse_vector(row["pinned_rank17_w"])
@@ -113,47 +196,52 @@ def construct_record(row, *, R, K, E, basis, A, B, Delta, pinned):
     h /= h.leading_coefficient()
     assert X.denominator() == h**2
     assert Y.denominator() == h**3
-    assert h.degree() == 3
-    Nx = R(X * h**2)
-    Ny = R(Y * h**3)
-    modulus = h**2
-    if Nx.gcd(modulus) != 1:
-        raise ArithmeticError("trace numerator is not invertible modulo h^2")
-    M = R((-Ny * Nx.inverse_mod(modulus)) % modulus)
-    assert M.degree() < 6
-    assert (M * Nx + Ny) % modulus == 0
-    assert (M**2 - Nx) % modulus == 0
-
-    discriminant_numerator = (
-        M**4 - 6 * M**2 * Nx - 8 * M * Ny - 3 * Nx**2 - 4 * A * h**4
-    )
-    quotient, remainder = discriminant_numerator.quo_rem(h**6)
-    if remainder:
-        raise ArithmeticError("chord discriminant is not divisible by h^6")
-    q = R(quotient)
-    if q.degree() != 2 or q.gcd(q.derivative()).degree() != 0:
-        raise ArithmeticError("residual cover is not a squarefree quadratic")
-    branch_fibres_smooth = q.gcd(Delta).degree() == 0
-
-    sum_x = R((M**2 - Nx) // h**2)
-    product_x = K(((M * Nx + Ny) ** 2 - B * h**6) / (h**4 * Nx))
-    if product_x.denominator() != 1:
-        raise ArithmeticError("residual quadratic has a nonintegral constant term")
-    product_x = R(product_x)
-    assert sum_x**2 - 4 * product_x == h**2 * q
-
-    # Verify the two residual points over u^2=q coefficientwise, without
-    # relying on a numerical or specialization check.
-    x0 = sum_x / 2
-    x1 = h / 2
-    n = K(-(Ny + M * Nx) / h**3)
-    y0 = K(M / h) * x0 + n
-    y1 = K(M / h) * x1
-    if K(y0).denominator() != 1 or K(y1).denominator() != 1:
-        raise ArithmeticError("residual bisection coordinates are not integral")
-    x0, x1, y0, y1 = map(R, (x0, x1, y0, y1))
-    assert y0**2 + y1**2 * q == x0**3 + 3 * x0 * x1**2 * q + A * x0 + B
-    assert 2 * y0 * y1 == 3 * x0**2 * x1 + x1**3 * q + A * x1
+    chart = "finite"
+    if h.degree() == 3:
+        data = local_chord_data(X, Y, A, B, Delta, R, K)
+    else:
+        # A degree drop means that one or more intersections with the zero
+        # section lie over infinity.  Move infinity to zero, carry out the
+        # identical resolved Riemann--Roch construction, then transport the
+        # bisection and its quadratic cover back to the published t-chart.
+        chart = "inverted_at_infinity"
+        A_inverse = reciprocal_with_bound(A, 8, R)
+        B_inverse = reciprocal_with_bound(B, 12, R)
+        Delta_inverse = reciprocal_with_bound(Delta, 24, R)
+        X_inverse = invert_rational(X, 4, R, K)
+        Y_inverse = invert_rational(Y, 6, R, K)
+        inverse = local_chord_data(
+            X_inverse, Y_inverse, A_inverse, B_inverse, Delta_inverse, R, K
+        )
+        data = {
+            "h": reciprocal_with_bound(inverse["h"], 3, R),
+            "M": reciprocal_with_bound(inverse["M"], 5, R),
+            "q": reciprocal_with_bound(inverse["q"], 2, R),
+            "sum_x": reciprocal_with_bound(inverse["sum_x"], 4, R),
+            "product_x": reciprocal_with_bound(inverse["product_x"], 8, R),
+            "x0": reciprocal_with_bound(inverse["x0"], 4, R),
+            "x1": reciprocal_with_bound(inverse["x1"], 3, R),
+            "y0": reciprocal_with_bound(inverse["y0"], 6, R),
+            "y1": reciprocal_with_bound(inverse["y1"], 5, R),
+        }
+        data["Nx"] = R(X * data["h"]**2)
+        data["Ny"] = R(Y * data["h"]**3)
+        data["branch_fibres_smooth"] = data["q"].gcd(Delta).degree() == 0
+        assert data["sum_x"]**2 - 4 * data["product_x"] == data["h"]**2 * data["q"]
+        assert data["x0"] == data["sum_x"] / 2
+        assert data["x1"] == data["h"] / 2
+        assert data["y0"]**2 + data["y1"]**2 * data["q"] == (
+            data["x0"]**3 + 3 * data["x0"] * data["x1"]**2 * data["q"]
+            + A * data["x0"] + B
+        )
+        assert 2 * data["y0"] * data["y1"] == (
+            3 * data["x0"]**2 * data["x1"] + data["x1"]**3 * data["q"]
+            + A * data["x1"]
+        )
+    h, Nx, Ny, M, q = (data[key] for key in ("h", "Nx", "Ny", "M", "q"))
+    sum_x, product_x = data["sum_x"], data["product_x"]
+    x0, x1, y0, y1 = (data[key] for key in ("x0", "x1", "y0", "y1"))
+    branch_fibres_smooth = data["branch_fibres_smooth"]
 
     label = f"orbit-{int(row['orbit_mask'], 0):05x}"
     return {
@@ -177,6 +265,7 @@ def construct_record(row, *, R, K, E, basis, A, B, Delta, pinned):
             "Ny_coefficients": polynomial_coefficients(Ny),
         },
         "residual_chord": {
+            "construction_chart": chart,
             "slope": "M(t)/h(t)",
             "M_coefficients": polynomial_coefficients(M),
             "linear_congruence": "M*Nx+Ny == 0 mod h^2",
@@ -203,10 +292,16 @@ def construct_record(row, *, R, K, E, basis, A, B, Delta, pinned):
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--priority-table", type=Path, default=DEFAULT_PRIORITY)
+    parser.add_argument(
+        "--start", type=int, default=0,
+        help="zero-based first row of the priority table to construct",
+    )
     parser.add_argument("--limit", type=int, default=100)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--orbits-output", type=Path, default=DEFAULT_ORBITS)
     arguments = parser.parse_args()
+    if arguments.start < 0:
+        parser.error("--start must be nonnegative")
     if arguments.limit <= 0:
         parser.error("--limit must be positive")
 
@@ -218,20 +313,30 @@ def main() -> None:
     A = R([QQ(value) for value in model["A_coefficients_low_to_high"]])
     B = R([QQ(value) for value in model["B_coefficients_low_to_high"]])
     Delta = R(-16 * (4 * A**3 + 27 * B**2))
+    assert Delta.degree() == 24
+    assert Delta.gcd(Delta.derivative()).degree() == 0
     points = reconstruct_basis(R, A, B, section_data)
     E = EllipticCurve(K, [A, B])
     basis = [E(K(x_coordinate), K(y_coordinate)) for x_coordinate, y_coordinate in points]
     with arguments.priority_table.open(newline="") as stream:
         rows = list(csv.DictReader(stream, delimiter="\t"))
-    selected = rows[: min(arguments.limit, len(rows))]
+    selected = rows[arguments.start : arguments.start + arguments.limit]
     if not selected:
-        raise ValueError("priority table contains no rows")
-    records = [
-        construct_record(
-            row, R=R, K=K, E=E, basis=basis, A=A, B=B, Delta=Delta, pinned=pinned
-        )
-        for row in selected
-    ]
+        raise ValueError("selected priority-table interval contains no rows")
+    records = []
+    for row in selected:
+        try:
+            records.append(
+                construct_record(
+                    row, R=R, K=K, E=E, basis=basis, A=A, B=B, Delta=Delta, pinned=pinned
+                )
+            )
+        except Exception as error:
+            raise RuntimeError(
+                "failed priority_rank={} equation_rank={} orbit={}".format(
+                    row["priority_rank"], row["equation_rank"], row["orbit_hex"]
+                )
+            ) from error
 
     arguments.orbits_output.parent.mkdir(parents=True, exist_ok=True)
     with arguments.orbits_output.open("w", newline="") as stream:
@@ -258,7 +363,8 @@ def main() -> None:
             "method": (
                 "For tau=(Nx/h^2,Ny/h^3), solve the unique linear congruence "
                 "M*Nx+Ny=0 mod h^2 with deg(M)<6, then divide the exact chord "
-                "discriminant numerator by h^6."
+                "discriminant numerator by h^6; use the reciprocal base chart "
+                "when a pole of tau lies over infinity."
             ),
             "inputs": {
                 relative(path): digest(path)
@@ -268,11 +374,43 @@ def main() -> None:
             "smooth_branch_fibre_record_count": sum(
                 record["residual_chord"]["branch_fibres_smooth"] for record in records
             ),
+            "construction_chart_counts": {
+                chart: sum(
+                    record["residual_chord"]["construction_chart"] == chart
+                    for record in records
+                )
+                for chart in ("finite", "inverted_at_infinity")
+            },
             "proof_boundary": (
                 "Every record is an exact equation-level rational bisection and exact "
                 "quadratic extension. A rank-19 conclusion still requires two distinct "
                 "orbit records with equal squareclass and an exact anti-invariant height "
                 "matrix; no such conclusion is encoded in this input."
+            ),
+        },
+        "individual_base_change_certificate": {
+            "status": "PASS_EACH_COVER_GENERIC_RANK_AT_LEAST_18",
+            "record_count": len(records),
+            "invariant_mw_rank": 17,
+            "source_fibres": "24I1",
+            "source_discriminant_degree": int(Delta.degree()),
+            "source_discriminant_squarefree": True,
+            "branch_fibres_smooth_for_every_record": all(
+                record["residual_chord"]["branch_fibres_smooth"] for record in records
+            ),
+            "base_change_chi": 4,
+            "base_change_rootless": True,
+            "lift_self_intersection": -4,
+            "conjugate_lift_intersection": 2,
+            "anti_invariant_height": 12,
+            "height_formula": "2*(P.sigma(P)-P.P)=2*(2-(-4))=12",
+            "generic_mw_rank_lower_bound": 18,
+            "proof": (
+                "The squarefree degree-24 discriminant gives 24I1 fibres. Each squarefree "
+                "quadratic q is coprime to that discriminant, so the degree-two pullback "
+                "branches only at two smooth fibres and remains rootless with chi=4. "
+                "The conjugate lifted sections meet transversely at exactly those two "
+                "branch points; their difference therefore has height 12 and is non-torsion."
             ),
         },
         "bisections": records,

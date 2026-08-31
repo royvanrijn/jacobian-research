@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import argparse
 from fractions import Fraction
+from hashlib import sha256
 import json
 from pathlib import Path
 
@@ -158,6 +159,11 @@ def main() -> None:
     output = {
         "protocol": "BNFFREELOCALCOVERAGE-v1",
         "status": "ODD_AND_REAL_LOCAL_COVERAGE_AUDIT_ONLY",
+        "signature_map": {
+            "path": str(args.signature_map.resolve()),
+            "sha256": sha256(args.signature_map.read_bytes()).hexdigest(),
+            "source": record.get("source"),
+        },
         "signature_local_dimension": local_dimension,
         "known_mw_local_images": known_records,
         "known_mw_image_count": len(known_masks),

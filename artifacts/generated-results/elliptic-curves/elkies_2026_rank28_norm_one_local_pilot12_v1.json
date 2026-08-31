@@ -1,0 +1,1092 @@
+{
+  "certified_local_obstruction_count": 0,
+  "certified_local_point_count": 60,
+  "claim_boundary": [
+    "A PROVED_QP_POINT classification is a local witness at that one finite place.",
+    "A PROVED_NO_QP_POINT classification is a certified local obstruction.",
+    "Timeouts, backend failures, untested places, the real place, and global class-group completeness remain unresolved.",
+    "This artifact is not a Selmer upper bound and never authorizes point search."
+  ],
+  "completed_worker_place_count": 79,
+  "covers": [
+    {
+      "alpha_coefficients": [
+        "2206823154881955613890111082258500912095529886833239555024524426873382014749683755301/2206823154881955613890111084185006103990780438996427543121024530962684124718863579472",
+        "-3615183899213217797895807818280543648173481555398373689721535686315021898479632674239171190646660894826550776605860165415145647332591271025/12423643971742724122050530635957428784208248011510381865577947191591112680021104915088626792518654881546930246717071619253100077435777582288666794376985334049225662752",
+        "103095062622204337604929706306259069287183663517013482520411236225741011289849442105434295184957037272097982324473/4870068436923147855843808009295312083409633220512069691306555299103716170568273126714741702667312713566396656713092074747215230354824812257157383395778250947296459798784"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 3,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 2,
+          "rational_prime": 5,
+          "smooth_projective_fp_witness": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 2,
+          "projective_fp_point_count": 57,
+          "rational_prime": 7,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 11,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            10,
+            3
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 13,
+          "smooth_projective_fp_witness": [
+            1,
+            3,
+            0,
+            4
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 17,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            2,
+            0
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 19,
+          "smooth_projective_fp_witness": [
+            1,
+            3,
+            10,
+            0
+          ],
+          "supervisor_outcome": "completed"
+        }
+      ],
+      "label": "norm-one-gamma-0_0_1"
+    },
+    {
+      "alpha_coefficients": [
+        "17654585239055644911120888661921017680554740198992292416389195623165660337935829690787/17654585239055644911120888672195712037329409810529295019570529511641938257771455419675",
+        "-28921471193705742383166462549400320490149209716807286649832988051620292784744067658469217670048897747405874227826168275220270489629007995733/99389151773941792976404245080429062475239548496291439284906518931620581055751794809109536341028788767090466563714461539034892333578937801921569419945121439782256313550",
+        "824760500977634700839437650476554432156052775502789193152318405942969699512957599491865154706226184463749243483591/38960547495385182846750464071528192490293903010546244199683355421195267773854703565170938245683285196699462892976068923301677794762943618353255212618487604394644474911600"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 3,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "INCONCLUSIVE_SUPERVISED_STRICT_WALL_TIMEOUT",
+          "rational_prime": 5,
+          "supervisor": {
+            "outcome": "strict_wall_timeout",
+            "peak_observed_rss_bytes": 226467840,
+            "returncode": -15,
+            "stderr_tail": "",
+            "stdout_tail": "",
+            "wall_seconds": 2.02964359699763
+          }
+        },
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 2,
+          "projective_fp_point_count": 57,
+          "rational_prime": 7,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 11,
+          "smooth_projective_fp_witness": [
+            1,
+            3,
+            1,
+            0
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "INCONCLUSIVE_SUPERVISED_STRICT_WALL_TIMEOUT",
+          "rational_prime": 13,
+          "supervisor": {
+            "outcome": "strict_wall_timeout",
+            "peak_observed_rss_bytes": 225673216,
+            "returncode": -15,
+            "stderr_tail": "",
+            "stdout_tail": "",
+            "wall_seconds": 2.0290176779999456
+          }
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 17,
+          "smooth_projective_fp_witness": [
+            1,
+            1,
+            2,
+            1
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 19,
+          "smooth_projective_fp_witness": [
+            1,
+            2,
+            11,
+            0
+          ],
+          "supervisor_outcome": "completed"
+        }
+      ],
+      "label": "norm-one-gamma-0_1_-2"
+    },
+    {
+      "alpha_coefficients": [
+        "122601286382330867438339504623430750446841953495268530504043026606557392763015203744/122601286382330867438339504659106772518976222979772011765089324830433357762444459747",
+        "-200843549956289877660878212170529804131323381877969331819175322386000998033126103862429374765072639957080558208558465187108507170863741967/690202442874595784558362813008324268588979950697915441980482363406335143550935765954696391919975498710041309979845011550483437217497700067150744240450912281437855902",
+        "477291956584279340763563455152220086814025603512425073000694405360996417714957197984056104248249233200609368067/22546613133903462295573185224938592773906678389465237771362423871273614689330568354520082136052532957861349459341603710649125615771591535526924311854729801193636626132"
+      ],
+      "finite_places": [
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 4,
+          "projective_fp_point_count": 13,
+          "rational_prime": 3,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 2,
+          "rational_prime": 5,
+          "smooth_projective_fp_witness": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 2,
+          "projective_fp_point_count": 57,
+          "rational_prime": 7,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 11,
+          "smooth_projective_fp_witness": [
+            1,
+            2,
+            0,
+            1
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 13,
+          "smooth_projective_fp_witness": [
+            1,
+            1,
+            11,
+            1
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 17,
+          "smooth_projective_fp_witness": [
+            1,
+            3,
+            8,
+            0
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 19,
+          "smooth_projective_fp_witness": [
+            1,
+            1,
+            9,
+            0
+          ],
+          "supervisor_outcome": "completed"
+        }
+      ],
+      "label": "norm-one-gamma-0_1_-1"
+    },
+    {
+      "alpha_coefficients": [
+        "1",
+        "-819092343492878636123804416707695622486948176007304347/5629650905311111259923752765778076795894848058664355977349552374904806440609345866",
+        "-3/2206823154881955613890111084185006103990780438996427543121024530962684124718863579472"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 3,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 2,
+          "rational_prime": 5,
+          "smooth_projective_fp_witness": [
+            1,
+            2,
+            4,
+            0
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 2,
+          "projective_fp_point_count": 57,
+          "rational_prime": 7,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 11,
+          "smooth_projective_fp_witness": [
+            1,
+            3,
+            0,
+            5
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 13,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            2,
+            2
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 17,
+          "smooth_projective_fp_witness": [
+            1,
+            3,
+            7,
+            7
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 19,
+          "smooth_projective_fp_witness": [
+            1,
+            1,
+            16,
+            0
+          ],
+          "supervisor_outcome": "completed"
+        }
+      ],
+      "label": "norm-one-gamma-0_1_0"
+    },
+    {
+      "alpha_coefficients": [
+        "551705788720488903472527770323812079036976152687911390244068593707182739941273460798/551705788720488903472527771126522575659997216089239718617610303744391952428431720873",
+        "-1807591949606608898947903908745775410991571118496649703365846737556946249961268997767269217057255771663704580910513375253500968532579891797/6211821985871362061025265318882510366907428455229142887753605920934096388062683021479470312522942059376787198601132284911064598302305213752261439088212704194456922036",
+        "6443441413887771100308106643727412488908612292208946829662436630337627931589457339650560747273846392677095060667/304379277307696740990238000625243007978463994306228001499926690125770723015071468052494045313624160909462572731455481960642165316812955473860810515322422505528389179764"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 3,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 2,
+          "rational_prime": 5,
+          "smooth_projective_fp_witness": [
+            1,
+            2,
+            3,
+            2
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 2,
+          "projective_fp_point_count": 57,
+          "rational_prime": 7,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 11,
+          "smooth_projective_fp_witness": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 13,
+          "smooth_projective_fp_witness": [
+            1,
+            4,
+            4,
+            1
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 17,
+          "smooth_projective_fp_witness": [
+            1,
+            1,
+            10,
+            8
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 19,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            8,
+            8
+          ],
+          "supervisor_outcome": "completed"
+        }
+      ],
+      "label": "norm-one-gamma-0_1_1"
+    },
+    {
+      "alpha_coefficients": [
+        "280231511731041982716204581812936458936091079211738737523860241377911934889827149111/280231511731041982716204582139117232167032971641484851910569253710492186313180346855",
+        "-21860522444222027500503750977391064157691984255152450782901843341106417933521647893059237322360295627832542336050122416864238405626229429/75124075414921990156012278983287829230606515259164528015374630486649449602861590198216883241425514741149911073748561940637921941564271536635604430527427231835254830",
+        "267172173948051409407009280992416804806895316089869299377426104325454156860693181137439769504782966021949087579/12620844669706894346210062869192355310741894563539640706582937921757107533280747153300436384559486476513185060389758406027170886182797618154781544328607774948322811440"
+      ],
+      "finite_places": [
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 5,
+          "projective_fp_point_count": 13,
+          "rational_prime": 3,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        },
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 3,
+          "projective_fp_point_count": 31,
+          "rational_prime": 5,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        },
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 4,
+          "projective_fp_point_count": 8,
+          "rational_prime": 7,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 11,
+          "smooth_projective_fp_witness": [
+            1,
+            1,
+            4,
+            4
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 13,
+          "smooth_projective_fp_witness": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 17,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            2,
+            1
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 2,
+          "projective_fp_point_count": 381,
+          "rational_prime": 19,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        }
+      ],
+      "label": "norm-one-gamma-0_1_2"
+    },
+    {
+      "alpha_coefficients": [
+        "2206823154881955613890111084185006103990780438996427543121024530962684124718863579471/2206823154881955613890111083542837706692363588275364880422191162932916754729136971420",
+        "-3615183899213217797895807819858529300554160192208522255802553825012880698272449581393125653549408688346849801765849548100346071350071862819/12423643971742724122050530632342244884995030213614574045719417891036952487812582659280443316600463072014556912557348796564303662394139620128759998279247508082537149720",
+        "103095062622204337604929706319500008216475397200354149017815252082104691715175255411774441954375933580534444504651/4870068436923147855843808007878159994918051843736913025922011813286485375222532402437933780107381524229706309722480728253207035658502731090473919325465023168354562690240"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 3,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 3,
+          "projective_fp_point_count": 31,
+          "rational_prime": 5,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        },
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 2,
+          "projective_fp_point_count": 57,
+          "rational_prime": 7,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 11,
+          "smooth_projective_fp_witness": [
+            1,
+            1,
+            2,
+            3
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 13,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            11,
+            2
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 17,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            5,
+            4
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 19,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            11,
+            5
+          ],
+          "supervisor_outcome": "completed"
+        }
+      ],
+      "label": "norm-one-gamma-0_2_-1"
+    },
+    {
+      "alpha_coefficients": [
+        "81734190921553911625559669641925767414825160543335243219556456399410366843722367817/81734190921553911625559669808413870418118418137684822437772514777498203507725562500",
+        "-401687099912579755321756424078061999532533657620913902641736574371625529880553981489435102457100243657031375211033994989844478801912118559/1380404885749191569116725626619179187046829534378465520604052943571696985803291907862410960745486668982348168277568955426713348785496777888020481497445311715698875000",
+        "11455006958022704178325522921446458928654658870408090670079249015217592563686264527942238759099483267059804382343/541118715213683095093756445634718241322357177476358484076788753880105218434890427882065096612230774241080481964807030527271632723914736932104028746998562192553959000000"
+      ],
+      "finite_places": [
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 5,
+          "projective_fp_point_count": 13,
+          "rational_prime": 3,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        },
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 3,
+          "projective_fp_point_count": 31,
+          "rational_prime": 5,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        },
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 2,
+          "projective_fp_point_count": 57,
+          "rational_prime": 7,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        },
+        {
+          "classification": "INCONCLUSIVE_SUPERVISED_STRICT_WALL_TIMEOUT",
+          "rational_prime": 11,
+          "supervisor": {
+            "outcome": "strict_wall_timeout",
+            "peak_observed_rss_bytes": 225218560,
+            "returncode": -15,
+            "stderr_tail": "",
+            "stdout_tail": "",
+            "wall_seconds": 2.02829058199859
+          }
+        },
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 2,
+          "projective_fp_point_count": 183,
+          "rational_prime": 13,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 17,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            7,
+            3
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 19,
+          "smooth_projective_fp_witness": [
+            1,
+            1,
+            11,
+            5
+          ],
+          "supervisor_outcome": "completed"
+        }
+      ],
+      "label": "norm-one-gamma-0_2_1"
+    },
+    {
+      "alpha_coefficients": [
+        "1442983240569821586916683852716482277095560600007071021355884329755904471559241442187894328795456909753043205485694305339417276242966810843532548336979373967520496296493/1442983240569821586916683854815966852638644121155451266354749484652216118352201077235621930877860763167027730167950191009143887685148995928070756626577259104276021254037",
+        "-419896915108616704229676048727907532508856816859666182943855883707354941199644363740939166964969308893645551142009355417011069860718759875502/1442983240569821586916683854815966852638644121155451266354749484652216118352201077235621930877860763167027730167950191009143887685148995928070756626577259104276021254037",
+        "30546685221393877808868061125818844391863050866768340525664402899978736079226820870336250942328656816397400300626/1442983240569821586916683854815966852638644121155451266354749484652216118352201077235621930877860763167027730167950191009143887685148995928070756626577259104276021254037"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 2,
+          "rational_prime": 3,
+          "smooth_projective_fp_witness": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 2,
+          "rational_prime": 5,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            4,
+            2
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 7,
+          "smooth_projective_fp_witness": [
+            1,
+            4,
+            4,
+            1
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 2,
+          "projective_fp_point_count": 133,
+          "rational_prime": 11,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 13,
+          "smooth_projective_fp_witness": [
+            1,
+            1,
+            4,
+            6
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 17,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            1,
+            2
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 19,
+          "smooth_projective_fp_witness": [
+            1,
+            4,
+            10,
+            7
+          ],
+          "supervisor_outcome": "completed"
+        }
+      ],
+      "label": "norm-one-gamma-1_-2_-2"
+    },
+    {
+      "alpha_coefficients": [
+        "4870068436923147855843808000792399552460144959861129698999294384200331398493828780877348314917169128435045688034623507463903627057178121807374636496884154296135990789759/4870068436923147855843808010712464171901214597287226356588003722298742628309084144592603983435018103602688855660044212395188763912508216429950772657282171930747773102062",
+        "-708576044245790688387578332073701367175389372043292124256713082459224501288462056724457395664155347618794283536751305547797913111940746461117/2435034218461573927921904005356232085950607298643613178294001861149371314154542072296301991717509051801344427830022106197594381956254108214975386328641085965373886551031",
+        "103095062622204337604929706293018130357891929833672816029749988541010707797094786757431898779850698348553649528943/4870068436923147855843808010712464171901214597287226356588003722298742628309084144592603983435018103602688855660044212395188763912508216429950772657282171930747773102062"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 3,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 2,
+          "rational_prime": 5,
+          "smooth_projective_fp_witness": [
+            1,
+            4,
+            2,
+            2
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 3,
+          "projective_fp_point_count": 57,
+          "rational_prime": 7,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 11,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            2,
+            5
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 13,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            7,
+            5
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 17,
+          "smooth_projective_fp_witness": [
+            1,
+            3,
+            5,
+            1
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 19,
+          "smooth_projective_fp_witness": [
+            1,
+            2,
+            14,
+            6
+          ],
+          "supervisor_outcome": "completed"
+        }
+      ],
+      "label": "norm-one-gamma-1_-2_-1"
+    },
+    {
+      "alpha_coefficients": [
+        "17654585239055644911120888673480048831926243511971420344968196247701472997750908635777/17654585239055644911120888672195712037329409810529295019570529511641938257771455419675",
+        "-2568673589193667402884250650795333472119069479958906432198/17654585239055644911120888672195712037329409810529295019570529511641938257771455419675",
+        "-12/17654585239055644911120888672195712037329409810529295019570529511641938257771455419675"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 3,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "INCONCLUSIVE_SUPERVISED_STRICT_WALL_TIMEOUT",
+          "rational_prime": 5,
+          "supervisor": {
+            "outcome": "strict_wall_timeout",
+            "peak_observed_rss_bytes": 226295808,
+            "returncode": -15,
+            "stderr_tail": "",
+            "stdout_tail": "",
+            "wall_seconds": 2.029220731998066
+          }
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 7,
+          "smooth_projective_fp_witness": [
+            1,
+            2,
+            2,
+            1
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 11,
+          "smooth_projective_fp_witness": [
+            1,
+            3,
+            1,
+            5
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "INCONCLUSIVE_SUPERVISED_STRICT_WALL_TIMEOUT",
+          "rational_prime": 13,
+          "supervisor": {
+            "outcome": "strict_wall_timeout",
+            "peak_observed_rss_bytes": 226136064,
+            "returncode": -15,
+            "stderr_tail": "",
+            "stdout_tail": "",
+            "wall_seconds": 2.029218708001281
+          }
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 17,
+          "smooth_projective_fp_witness": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 19,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "supervisor_outcome": "completed"
+        }
+      ],
+      "label": "norm-one-gamma-1_-2_0"
+    },
+    {
+      "alpha_coefficients": [
+        "60124301690409232788195160608584099795180657043358885077858707396342174945287322552088337641692304009804652825697062801916009768306390954856783116761773076502891197009/60124301690409232788195160591088394998988294367122383037346998468008514973178544552560910966961196560864943935069346475727912787642450837451824419306862227578813216036",
+        "-8747852398096181338118251020892243739612535773739140273340873881911698151632534377528540290736346743364419746392742879631286193817094758491/30062150845204616394097580295544197499494147183561191518673499234004257486589272276280455483480598280432471967534673237863956393821225418725912209653431113789406608018",
+        "1272778550891411575369502547154321089092288854325359864429364255284596506064899375380527061807661538710111536009/60124301690409232788195160591088394998988294367122383037346998468008514973178544552560910966961196560864943935069346475727912787642450837451824419306862227578813216036"
+      ],
+      "finite_places": [
+        {
+          "classification": "INCONCLUSIVE_SINGULAR_LIFT_STATE_CAP",
+          "lift_precision": 4,
+          "projective_fp_point_count": 13,
+          "rational_prime": 3,
+          "supervisor_outcome": "completed",
+          "surviving_projective_lifts_lower_bound": 5001
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 2,
+          "rational_prime": 5,
+          "smooth_projective_fp_witness": [
+            1,
+            1,
+            3,
+            1
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 7,
+          "smooth_projective_fp_witness": [
+            1,
+            2,
+            2,
+            2
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 11,
+          "smooth_projective_fp_witness": [
+            1,
+            0,
+            7,
+            3
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 13,
+          "smooth_projective_fp_witness": [
+            1,
+            1,
+            11,
+            4
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 17,
+          "smooth_projective_fp_witness": [
+            1,
+            2,
+            13,
+            0
+          ],
+          "supervisor_outcome": "completed"
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_SMOOTH_FP_LIFT",
+          "projective_fp_point_count_lower_bound": 1,
+          "rational_prime": 19,
+          "smooth_projective_fp_witness": [
+            1,
+            1,
+            11,
+            3
+          ],
+          "supervisor_outcome": "completed"
+        }
+      ],
+      "label": "norm-one-gamma-1_-2_1"
+    }
+  ],
+  "covers_input": {
+    "path": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/elkies-rank28-bnf-free/norm_one_b2_covers_v1.json",
+    "selected_cover_count": 12,
+    "selection_truncated": true,
+    "sha256": "62200a0e46ac9e890a202f7d96bf3adc8dbdc0380c3b124760642d8fb82162c2",
+    "total_cover_count": 49
+  },
+  "execution": "OWNED_PER_COVER_PER_PLACE_WORKERS",
+  "expected_place_count": 84,
+  "incomplete_worker_place_count": 5,
+  "mathematically_inconclusive_place_count": 24,
+  "max_enumeration_prime": 19,
+  "max_lift_precision": 6,
+  "max_lift_states": 5000,
+  "protocol": "BNFFREECOVERLOCAL-v1",
+  "rss_limit_bytes": 1000000000,
+  "status": "SELECTED_FINITE_LOCAL_REDUCTION_AUDIT_ONLY",
+  "tested_rational_primes": [
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19
+  ],
+  "timeout_per_place_seconds": 2.0
+}

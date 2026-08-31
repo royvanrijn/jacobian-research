@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Externally capped direct ratpoints search on one q12o5867 specialization."""
+# <!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE bb81d843718bdd31 -->
+"""Gate-protected direct ratpoints search on one q12o5867 specialization.
+
+The command refuses to start unless a completed unconditional residual
+2-Selmer artifact for the identical parameter and minimal curve has passed the
+rank-32 dimension gate.
+"""
 
 from __future__ import annotations
 
@@ -30,6 +36,7 @@ from ecsearch.q12o5867_point_search import (  # noqa: E402
 )
 from ecsearch.q12o5867_rank_jump_registry import sha256_file  # noqa: E402
 from elliptic_candidate_record import is_on_weierstrass_curve  # noqa: E402
+from elkies_residual_selmer_gate import require_gate_for_specialization  # noqa: E402
 
 
 Q = Fraction
@@ -50,6 +57,7 @@ def parse_relation_primes(text: str) -> tuple[int, ...]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", type=Path, required=True)
+    parser.add_argument("--residual-selmer-gate", type=Path, required=True)
     parser.add_argument("--height", type=int, required=True)
     parser.add_argument("--denominator-bound", type=int, required=True)
     parser.add_argument("--timeout", type=float, default=120.0)
@@ -77,6 +85,9 @@ def main() -> None:
         not is_on_weierstrass_curve(model, point) for point in baseline
     ):
         raise AssertionError("the serialized exact baseline is invalid")
+    gate = require_gate_for_specialization(
+        args.residual_selmer_gate, specialization
+    )
     coefficients = completed_square_coefficients(model)
     command = [
         str(args.ratpoints.resolve()),
@@ -131,6 +142,11 @@ def main() -> None:
         "schema": "elliptic-curves.q12o5867-bounded-ratpoints-probe.v1",
         "input_specialization_artifact": str(args.input.resolve()),
         "input_specialization_sha256": sha256_file(args.input),
+        "residual_selmer_gate": {
+            "path": str(args.residual_selmer_gate.resolve()),
+            "sha256": sha256_file(args.residual_selmer_gate),
+            "status": gate["status"],
+        },
         "parameter": specialization["parameter"],
         "global_minimal_model": [str(value) for value in model],
         "completed_square": {
@@ -215,4 +231,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

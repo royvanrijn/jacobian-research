@@ -7,8 +7,10 @@ Run this file with Sage, not CPython::
 
 The exact rank-20 basis and its mod-2 certificate are loaded by the corrected
 relative-descent builder.  PARI's ellrank is then called with those 20 known
-points.  ellrank performs a 2-descent and Cassels-pairing restrictions and
-returns an unconditional interval [r1,r2] for the Mordell--Weil rank.
+points.  ellrank performs a 2-descent and Cassels-pairing restrictions, but
+its cubic-field class-group data are GRH-conditional unless separately
+certified with ``bnfcertify``.  Consequently this runner never promotes a
+returned upper endpoint to an unconditional rank theorem.
 """
 
 from __future__ import annotations
@@ -177,10 +179,10 @@ def classify_bounds(pari_lower: int, pari_upper: int, known_rank: int = KNOWN_RA
     if lower > pari_upper:
         raise ArithmeticError("combined rank interval is empty")
     if lower == pari_upper == known_rank:
-        return lower, "P0_exact_rank20"
+        return lower, "P0_grh_conditional_rank20"
     if lower >= known_rank + 1:
-        return lower, "P3_rank_at_least21"
-    return lower, "P2_residual_rank_interval"
+        return lower, "P3_rank_at_least21_signal"
+    return lower, "P2_grh_conditional_residual_rank_interval"
 
 
 def parse_efforts(text: str) -> tuple[int, ...]:
@@ -334,9 +336,9 @@ def main() -> None:
             f"|classification={current.classification}",
             flush=True,
         )
-        if current.classification == "P0_exact_rank20":
+        if current.classification == "P0_grh_conditional_rank20":
             break
-        if current.classification == "P3_rank_at_least21" and not args.continue_after_new_rank:
+        if current.classification == "P3_rank_at_least21_signal" and not args.continue_after_new_rank:
             break
 
     best_lower = max(item.effective_lower for item in passes)
@@ -344,16 +346,17 @@ def main() -> None:
     if best_lower > best_upper:
         raise ArithmeticError("independent PARI passes produced contradictory rank intervals")
     if best_lower == best_upper == 20:
-        final = "P0_exact_rank20"
+        final = "P0_grh_conditional_rank20"
     elif best_lower >= 21:
-        final = "P3_rank_at_least21"
+        final = "P3_rank_at_least21_signal"
     else:
-        final = "P2_residual_rank_interval"
+        final = "P2_grh_conditional_residual_rank_interval"
 
     payload = {
         "schema": "elliptic-curves.fermigier-rank20-pari-descent.v1",
         "engine": "SageMath/PARI ellrank",
-        "mathematical_status": "external_cas_rank_interval",
+        "mathematical_status": "grh_conditional_external_cas_rank_interval",
+        "upper_bound_hypothesis": "GRH unless the cubic-field BNF is separately certified",
         "basis": {
             "id": basis.basis_id,
             "count": 20,
@@ -368,8 +371,9 @@ def main() -> None:
         "passes": [asdict(item) for item in passes],
         "notes": [
             "The lower endpoint is combined with the repository's exact rank>=20 certificate.",
-            "PARI ellrank's upper endpoint is an unconditional 2-descent/Cassels-pairing rank bound.",
+            "PARI ellrank's upper endpoint uses provisional cubic-field BNF data and is not unconditional without bnfcertify.",
             "A nonzero sha_pairing_rank records the obstruction rank detected by PARI; it is not a Mordell-Weil rank contribution.",
+            "Returned rational points may still be checked independently to obtain unconditional lower bounds.",
         ],
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)

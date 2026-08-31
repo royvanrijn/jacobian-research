@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# <!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE bb81d843718bdd31 -->
 """Search q12o5867 specializations through section-normalized slope quartics.
 
 For a short Weierstrass curve ``y^2 = x^3 + A*x + B`` and a rational point
@@ -15,8 +16,10 @@ projective-height box in ``z``. Every hit is mapped back and checked by exact
 rational substitution. The common finite-reduction machinery measures its
 image modulo the specialized generic subgroup.
 
-This is a bounded point search, not a rank upper bound.  A positive quotient
-escape is exact; failure to find or detect an escape proves nothing.
+This is a bounded point search, not a rank upper bound.  Every input must have
+a completed unconditional residual-Selmer gate for its identical parameter
+and minimal model.  A positive quotient escape is exact; failure to find or
+detect an escape proves nothing.
 """
 
 from __future__ import annotations
@@ -52,6 +55,7 @@ from elliptic_candidate_record import (  # noqa: E402
 )
 from finite_quotient_escape import QuotientBlock, analyze_escape  # noqa: E402
 from pari_bridge import pari_version  # noqa: E402
+from elkies_residual_selmer_gate import require_gate_for_specialization  # noqa: E402
 from ecsearch.rank_certification import add_rational_points  # noqa: E402
 from ecsearch.q12o5867_point_search import (  # noqa: E402
     integral_square_scaled_coefficients,
@@ -835,6 +839,13 @@ def default_inputs() -> tuple[Path, ...]:
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("inputs", nargs="*", type=Path)
+    parser.add_argument(
+        "--residual-selmer-gate",
+        action="append",
+        type=Path,
+        required=True,
+        help="repeat once per input, in input order",
+    )
     parser.add_argument("--charts-per-candidate", type=int, default=2)
     parser.add_argument(
         "--charts-per-base",
@@ -890,6 +901,10 @@ def main() -> None:
     inputs = tuple(path.resolve() for path in (args.inputs or default_inputs()))
     if not inputs:
         raise SystemExit("no q12o5867 specialization artifacts were found")
+    if len(args.residual_selmer_gate) != len(inputs):
+        raise SystemExit("repeat --residual-selmer-gate exactly once per input")
+    for path, gate_path in zip(inputs, args.residual_selmer_gate, strict=True):
+        require_gate_for_specialization(gate_path, json.loads(path.read_text()))
     started = time.monotonic()
     results = [search_specialization(path, args) for path in inputs]
     command = " ".join(
@@ -897,6 +912,14 @@ def main() -> None:
             ".venv/bin/python",
             "elliptic-curves/scripts/search_q12o5867_section_slope_slices.py",
             *(shlex.quote(str(path.relative_to(REPOSITORY))) for path in inputs),
+            *(
+                item
+                for gate_path in args.residual_selmer_gate
+                for item in (
+                    "--residual-selmer-gate",
+                    shlex.quote(str(gate_path)),
+                )
+            ),
             "--charts-per-candidate",
             str(args.charts_per_candidate),
             "--charts-per-base",
@@ -971,6 +994,13 @@ def main() -> None:
             "stack_bytes": args.stack_bytes,
             "relation_primes": list(args.relation_primes),
             "reduction_prime_bound": args.reduction_prime_bound,
+            "residual_selmer_gates": [
+                {
+                    "path": str(path.resolve()),
+                    "sha256": sha256_file(path),
+                }
+                for path in args.residual_selmer_gate
+            ],
         },
         "results": results,
         "maximum_exact_quotient_gain": max(

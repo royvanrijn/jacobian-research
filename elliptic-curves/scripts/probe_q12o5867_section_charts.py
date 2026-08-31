@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Search q12o5867 in exact affine charts normalized by baseline sections."""
+# <!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE bb81d843718bdd31 -->
+"""Gate-protected affine-chart search normalized by baseline sections."""
 
 from __future__ import annotations
 
@@ -34,6 +35,7 @@ from ecsearch.q12o5867_point_search import (  # noqa: E402
 )
 from ecsearch.q12o5867_rank_jump_registry import sha256_file  # noqa: E402
 from elliptic_candidate_record import is_on_weierstrass_curve  # noqa: E402
+from elkies_residual_selmer_gate import require_gate_for_specialization  # noqa: E402
 
 
 Q = Fraction
@@ -183,6 +185,7 @@ def run_chart(
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", type=Path, required=True)
+    parser.add_argument("--residual-selmer-gate", type=Path, required=True)
     parser.add_argument("--pair-mode", choices=("all", "star", "adjacent"), default="all")
     parser.add_argument("--include-multiplicative", action="store_true")
     parser.add_argument("--chart-limit", type=int)
@@ -215,6 +218,9 @@ def main() -> None:
         not is_on_weierstrass_curve(model, point) for point in baseline
     ):
         raise AssertionError("the serialized exact baseline is invalid")
+    gate = require_gate_for_specialization(
+        args.residual_selmer_gate, specialization
+    )
     baseline_x = tuple(point[0] for point in baseline)
     charts = chart_inventory(
         baseline_x, args.pair_mode, args.include_multiplicative
@@ -278,6 +284,11 @@ def main() -> None:
         ),
         "input_specialization_artifact": str(args.input.resolve()),
         "input_specialization_sha256": sha256_file(args.input),
+        "residual_selmer_gate": {
+            "path": str(args.residual_selmer_gate.resolve()),
+            "sha256": sha256_file(args.residual_selmer_gate),
+            "status": gate["status"],
+        },
         "parameter": specialization["parameter"],
         "global_minimal_model": [str(value) for value in model],
         "completed_square_coefficients_low_to_high": [

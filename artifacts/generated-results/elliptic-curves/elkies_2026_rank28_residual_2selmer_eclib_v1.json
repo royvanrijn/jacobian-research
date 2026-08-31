@@ -1,0 +1,49 @@
+{
+  "backend_result": null,
+  "descent_backend": {
+    "algorithm": "complete invariant-quartic 2-descent in Selmer-only mode",
+    "all_local_solubility_conditions_completed": false,
+    "class_group_completeness_completed": false,
+    "known_points_supplied": 0,
+    "name": "eclib/mwrank through Sage",
+    "point_search_enabled": false,
+    "proof_boundary": "These completeness flags are true only after the selected backend returns its full Selmer result. For eclib the complete invariant-quartic calculation replaces a separate cubic class-group input. A timeout is not converted into a Selmer or rank bound.",
+    "unconditional": false
+  },
+  "directions_still_needed_for_rank_32": 4,
+  "gate": {
+    "decision": "no completed Selmer upper bound; expensive search remains forbidden",
+    "expensive_search_authorized": false,
+    "known_generic_rank": 17,
+    "required_residual_dimension": 15,
+    "residual_two_selmer_quotient_dimension": null,
+    "target_rank": 32
+  },
+  "global_minimal_model": [
+    "1",
+    "-1",
+    "1",
+    "-20067762415575526585033208209338542750930230312178956502",
+    "34481611795030556467032985690390720374855944359319180361266008296291939448732243429"
+  ],
+  "known_additional_directions_beyond_generic_17": 11,
+  "known_rank_lower_bound": 28,
+  "parameter": "-9529/5471",
+  "positive_control_certificate": {
+    "path": "/home/royvanrijn/src/jacobian-research/artifacts/generated-results/elliptic-curves/elkies_2026_high_rank_positive_controls_v2.json",
+    "sha256": "0b77be4658ca5438a28991a7c66f6580b3a9c8b74e664653d13bb255895f37bc"
+  },
+  "schema": "elliptic-curves.elkies-2026-residual-2-selmer-gate.v1",
+  "status": "INCOMPLETE_NO_SELMER_BOUND_SEARCH_FORBIDDEN",
+  "stop_rule": "No two-cover solving, ratpoints, slope-box, or other expensive point search is authorized unless status is PASS_RANK32_RESIDUAL_2_SELMER_GATE.",
+  "supervisor": {
+    "backend": "eclib",
+    "outcome": "strict_wall_timeout",
+    "peak_observed_rss_bytes": 232099840,
+    "returncode": -15,
+    "rss_limit_bytes": 8000000000,
+    "stderr": "",
+    "timeout_seconds": 300.0,
+    "wall_seconds": 300.12642096499985
+  }
+}

@@ -103,8 +103,8 @@ by `2M`, the minimum intersection of two translation orbits is zero precisely
 when their orbit-mask XOR has a norm-four representative. The exact norm-four
 shell has 1,311 masks, and all are active on the survivor set. It gives
 8,895,801 unordered pairs of distinct bisection orbits that can be made
-disjoint. This is a finite prioritization for later equation matching, not an
-assertion that any covers collide.
+disjoint. This graph was the finite prioritization for equation matching; the
+complete equation replay below now proves that none of its pairs collide.
 
 ```bash
 sage -python elkies-k3/scripts/analyze_rootless_bisection_disjoint_frontier.sage \
@@ -1416,16 +1416,21 @@ wall-clock time is monotone in the ordering.
 
 ```bash
 sage -python elkies-k3/scripts/rank_elkies_2026_bisection_orbits.sage \
-  --pool-size 1000
+  --pool-size 39120 \
+  --output artifacts/generated-results/elkies-2026-bisection-equation-priority-full.json \
+  --table-output artifacts/generated-results/elkies-2026-bisection-equation-priority-full.tsv \
+  --pairs-output artifacts/generated-results/elkies-2026-bisection-equation-priority-disjoint-pairs-full.tsv
 ```
 
 The complete ranking has 77 orbits of group-addition cost two, followed by
 547 of cost three.  The first 1,000 equation-cheapest orbits contain 11,823
 exact disjoint-priority pairs.  The two previously published trace vectors
 occur much later in this score, so they are validation anchors rather than
-appropriate starting points for the batch search.
+appropriate starting points for the batch search.  The full priority table
+contains all 39,120 classes and its full graph table contains all 8,895,801
+disjoint pairs.
 
-### First 1,000 exact bisections
+### Complete 39,120-orbit equation batch and injectivity certificate
 
 The batch compiler forms each trace by exact group law, solves the linear
 double-pole congruence, verifies the quadratic relation and both Weierstrass
@@ -1434,30 +1439,57 @@ vector together with the exact relation accepted by the squareclass checker.
 
 ```bash
 sage -python elkies-k3/scripts/construct_elkies_2026_bisections.sage \
-  --limit 1000
+  --priority-table artifacts/generated-results/elkies-2026-bisection-equation-priority-full.tsv \
+  --limit 39120 \
+  --output artifacts/generated-results/elkies-2026-equation-bisections-full.json \
+  --orbits-output artifacts/generated-results/elkies-2026-equation-bisections-orbits-full.tsv
 
 .venv/bin/python elkies-k3/scripts/hash_bisection_extensions.py \
-  --input artifacts/generated-results/elkies-2026-equation-bisections.json \
-  --output artifacts/generated-results/elkies-2026-equation-bisection-collisions.json
+  --compact \
+  --input artifacts/generated-results/elkies-2026-equation-bisections-full.json \
+  --output artifacts/generated-results/elkies-2026-equation-bisection-collisions-full-compact.json
 ```
 
-This is the first real equation-level batch for the pinned rootless R17
-classes.  All 1,000 records pass the exact two-branch and orbit-attachment
-gates, and all 1,000 quadratic branch polynomials are coprime to the degree-24
-surface discriminant, so every cover branches at two smooth fibres.  They
-produce 1,000 distinct squareclasses, hence no collision in this initial pool.
-This is a bounded negative computation, not evidence that the full map is
-injective.
+All 39,120 records pass the exact quadratic relation, lifted-section,
+two-branch, and orbit-attachment gates.  Exactly one trace, orbit `0x0c54f`,
+has a finite denominator of degree below three because a pole lies at infinity;
+the compiler performs the same construction after `t -> 1/t` and transports
+the certified relation back.  The other 39,119 records use the published
+affine chart.  Every branch quadratic is coprime to the degree-24 surface
+discriminant, so every cover branches at two smooth fibres.
 
-<!-- status-consumer: EC-K3-BISECT-EQUATION-BATCH a993e11257ca08a8 -->
+Exact normalization gives 39,120 distinct elements of
+`QQ(t)^*/QQ(t)^{*2}` and no collision.  Since the input coverage gate proves
+that there is exactly one equation record for every surviving `R17/2R17`
+translation orbit, this is a complete finite injectivity certificate for the
+rootless bisection-to-quadratic-extension map on this surface.  In particular,
+none of the 8,895,801 disjoint pairs has a common quadratic cover, and this
+entire norm-ten rootless-bisection mechanism cannot produce the desired
+rank-two anti-invariant collision or a new generic rank-19 family.  It does
+produce 39,120 explicit smooth quadratic covers, each with its exact split
+bisection section, for generic-rank-at-least-18 base changes.
+
+The pinned replay hashes are:
+
+```text
+full priority summary       c1ce639e21f773148b800c3b905cb87d118d31881c159380bdb5c60f4e58d480
+full priority table         1296c8a81c8df49757a4308f7abb087035507e16c5f41cbd2a257343fa3eb166
+full disjoint-pair table    15c00a0374c683def5c88a77f130ad651db0f48467535c08cfb54bb5ecc5a3e2
+full equation batch         78e037dc4170955b8f79ddce4d1d3e0c0d3e9bb8f9614644c59ccc7d605226c4
+full orbit attachment table 6edfb82b8dad06b5e3a0c26a0045b999efaf4d34698387224d1d44800c18a85b
+compact collision report    8e81214901bb75760f662fc87d6d30c1d1941c41ff1de8954ad1113449ee3d19
+extension manifest          e2419266fc527090a23a6ab4d7bee8f3ca37a0f6364cb482b3192f883d88ca73
+```
+
+<!-- status-consumer: EC-K3-BISECT-EQUATION-BATCH a0570a5a4ea8e02b -->
 
 ## Collision and height gate
 
 The quotient enumeration supplies a finite input set, not a squareclass hash.
 Mapping a lattice class to a quadratic extension requires the explicit
 rootless characteristic-zero fibration and an equation for the corresponding
-bisection. Those inputs now exist for the first 1,000 priority classes.  For a
-larger batch or a collision, the checker must:
+bisection. Those inputs now exist for every one of the 39,120 priority classes.
+The checker:
 
 1. derive and squarefree-normalize the branch divisor for every realized
    orbit representative;
@@ -1476,7 +1508,11 @@ has exactly two geometric branch points (including infinity when appropriate),
 as required for a connected smooth rational bisection; split and higher-genus
 quadratic covers are rejected. It also accepts a bisection already eliminated
 to an exact quadratic relation `a(t)z^2+b(t)z+c(t)=0` and derives its branch
-squareclass from `b^2-4ac`. When a collision is supplied with coordinates in
+squareclass from `b^2-4ac`.  When the resolved record also supplies `h` and
+`q`, it verifies `b^2-4ac=h^2*q` exactly before normalizing the smaller
+quadratic.  Compact mode retains the complete label/orbit/extension-digest
+manifest and all collision provenance, pins the input SHA-256, and omits only
+bulky singleton provenance. When a collision is supplied with coordinates in
 a declared twist-height lattice, it also returns the exact height matrix and
 its rational rank. It does not manufacture those coordinates from a collision.
 Whenever lattice masks are supplied, each mask must be globally unique across
@@ -1484,13 +1520,13 @@ the full input: section translates induce the same quadratic cover and the
 same anti-invariant direction even if inconsistent branch data would hash
 them differently.
 
-For a complete rootless run, set `required_lattice_orbits.table` to the TSV
-above (and pin its SHA-256) and give every record its `lattice_orbit_mask`.
+For a complete rootless run, `required_lattice_orbits.table` is set to the TSV
+above (with its SHA-256 pinned) and every record has its `lattice_orbit_mask`.
 Also give each record the 17 integral `pinned_rank17_w` coordinates of the
 realized bisection class.  The checker verifies its norm is at least 10 and
 is `2 mod 4`, then verifies that it is congruent modulo `2M` to the
 representative of the claimed orbit.  It rejects omitted, duplicate,
-extraneous, or mis-attached orbit records. This binds the future
+extraneous, or mis-attached orbit records. This binds the complete
 equation-level table to all 39,120 translation orbits while still allowing
 any section-translate as the equation's representative.
 
@@ -1524,7 +1560,7 @@ Thus the equation-level intersection calculation can supply the exact height
 matrix directly; if it is supplied alongside twist coordinates, both matrices
 must agree.
 
-<!-- status-consumer: EC-K3-BISECT-EXTENSION-PROTOCOL f0dca8afe83627cd -->
+<!-- status-consumer: EC-K3-BISECT-EXTENSION-PROTOCOL 90dc72ea57ae22dc -->
 
 For a production collision run, add `--require-collision-heights`.  It rejects
 any collision bucket lacking either declared twist-height coordinates or the
@@ -1546,12 +1582,23 @@ orbit even with inconsistent branch data, is rejected before hash grouping.
 This rules out a duplicate geometric bisection masquerading as a rank-two
 collision.
 
-The first 1,000 pinned classes now have exact equation-level records; the
-remaining 38,120 pinned classes and all 39,147 alternate classes are still only
-exact lattice candidates.  No squareclass collision occurs in the initial
-1,000-record batch.  In particular, this bounded calculation neither proves
-injectivity of the full map nor supplies a common quadratic cover with a
-rank-two anti-invariant height matrix.
+All 39,120 pinned classes now have exact equation-level records and pairwise
+distinct squareclasses.  Thus the pinned map is injective on its complete
+survivor set and supplies no common quadratic cover with a rank-two
+anti-invariant height matrix.  The 39,147 alternate classes are still only
+exact lattice candidates because that alternate finite-field endpoint has not
+been lifted to a characteristic-zero rootless surface.
+
+Injectivity does not end the paired-cover programme.  Taking two distinct
+quadratic extensions gives a biquadratic base whose two new sections have
+different Galois characters.  The complete follow-up classification in
+[`BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md`](BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md)
+proves that all 39,120 conics are rational, every distinct pair has a genus-one
+base and exact height matrix `diag(24,24)`, and the first new low-complexity
+pair has base Jacobian rank at least 3.  Neither that pair nor the published
+rank-19 pair lies in the norm-four disjointness graph, so that graph is a
+priority heuristic rather than a valid hard filter for character independence.
+<!-- status-consumer: EC-K3-BISECT-BIQUADRATIC-R19 707bffd8b85f8f3e -->
 <!-- status-consumer: EC-K3-BISECT-ORBIT 81da2fd80c3623b6 -->
 
 The alternate q80 q6 endpoint supplies a second, nonisometric rootless

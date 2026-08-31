@@ -2,6 +2,15 @@
 
 Status: **preferred route and proof-boundary note**.
 
+Current-status note: this file preserves the 2026-08-23 lattice-route decision.
+Its equation-frontier and priority sections are historical. The subsequently
+selected physical suffix
+`q4/orbit208 -> q4/orbit1584 -> q4/orbit164 -> q8/orbit376 -> q12/orbit5867`
+is now equation-complete, source-identified, and certified with full saturated
+R17. Use
+[`PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md`](PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md)
+and [`README.md`](README.md) for the current construction and arithmetic handoff.
+
 This file records the route that should be treated as the default H3 construction path
 after the exact equation-D13-to-pinned-R17 lattice/marking closeout on 2026-08-23.
 

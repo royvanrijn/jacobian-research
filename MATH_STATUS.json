@@ -1390,7 +1390,9 @@
         "EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE"
       ],
       "closes_problems": [],
-      "narrows_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
       "consumers": [
         "OP-EC-NEXT",
         "elkies-k3/README.md",
@@ -1425,9 +1427,7 @@
       "supersedes_notes": [],
       "supersedes": [],
       "closes_problems": [],
-      "narrows_problems": [
-        "OP-EC-NEXT"
-      ],
+      "narrows_problems": [],
       "consumers": [
         "OP-EC-NEXT",
         "REPRODUCE.md",
@@ -1920,27 +1920,225 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-ELKIES-2026-R28-BAD-PLACE-KUMMER",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact rank-28 discriminant factorization and bad-place known Kummer images",
+      "scope": "At the published rank-28 fibre t=-9529/5471, the compact model and seventeen generic sections are specialized and transported to the exact public global minimal model. The monic 2-division cubic discriminant is checked by its closed formula and completely factored into twelve rational primes with exponents 23,6,6,4,2,4,5,3,1,1,1,1; every factor is independently proved prime. Supplying the complete ramified-prime table to PARI nfinit avoids refactoring, and nfcertify proves the resulting maximal order. Fresh owned workers compute the Kummer images of the generic seventeen points at all eleven odd bad primes, at 2, and at the real places. All thirteen local blocks complete, and the concatenated binary coordinate matrix has rank 15. This is an exact factorization and known-image certificate only: it does not enumerate ambient K(S,2), compute an S-class quotient, test all ambient classes for local solubility, or give a Selmer or rank upper bound.",
+      "canonical_source": "elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md",
+      "dependencies": [
+        "EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS"
+      ],
+      "checker": "elliptic-curves/cas/build_elkies_2026_rank28_bad_place_ledger.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:71f86609ad0782d096ad81deed4dd268173078388791df191bd6dc12e4b31cdf",
+      "software_lock": [
+        "elliptic-curves/scripts/specialize_q12o5867_candidate.py",
+        "elliptic-curves/ecsearch/q12o5867_specialization.py",
+        "elliptic-curves/cas/build_q12o5867_bnf_free_signature.py",
+        "elliptic-curves/cas/run_fermigier_rank20_auxiliary_fingerprints.py",
+        "elliptic-curves/cas/build_elkies_2026_rank28_bad_place_ledger.py",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_bad_place_kummer_ledger_v1.json",
+        "elliptic-curves/tests/test_elkies_rank28_relative_descent.py"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE",
+        "REPRODUCE.md",
+        "elkies-k3/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-ELKIES-2026-R28-S-CLASS-PILOT",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Factor-supplied S-class diagnostics for the published Elkies rank-28 fibre",
+      "scope": "The published rank-28 2-division cubic is now wired into two independently auditable class-group routes. A stage-aware PARI worker consumes the proved twelve-prime discriminant support, completes nfinit and unconditional maximal-order nfcertify, and then isolates bnfinit from all later local-solubility work. With technical parameters c1=0.01, c2=4, nrpid=20, the pinned 120-second class-quotient run reaches bnfinit, reports a 243-ideal factor base and a random-relation plateau at 153 requested relations, and times out at 265261056 bytes peak observed RSS before bnfcertify; it therefore supplies no S-class bound. Separately, the BNF-free full-ideal collector has an exact Elkies-rank28 preset with the same proved factor hints. Its paired-special-ideal factor-base-1000 pilot retains 10288 sampled algebraic-integer generators plus 172 exact canonical rational-prime generators, verifies all 172 principal rows, and finds no noncanonical relation. The audited bounded quotient model has 327 ideal columns, 26 S columns, relation rank 172 and displayed quotient dimension 141. Its factor base is far below the Bach ERH generation bound 1202640, so the result is explicitly UNCERTIFIED_FACTOR_BASE: neither relation stabilization nor this displayed dimension is a class-group, K(S,2), local-solubility, Selmer, or rank bound. Both artifacts forbid expensive point search.",
+      "canonical_source": "elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md",
+      "dependencies": [
+        "EC-K3-ELKIES-2026-R28-BAD-PLACE-KUMMER"
+      ],
+      "checker": "elliptic-curves/cas/run_elkies_2026_rank28_s_class_pari.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b7ce09f27f40f97bd06f27ee6ef7cbf81d4fffa2670c36a61eb0249258786ac9",
+      "software_lock": [
+        "elliptic-curves/cas/run_elkies_2026_rank28_s_class_pari.py",
+        "elliptic-curves/cas/run_fermigier_rank20_minkowski_specialq.py",
+        "elliptic-curves/cas/augment_bnf_free_canonical_principal_relations.py",
+        "elliptic-curves/cas/audit_bnf_free_s_class_quotient.py",
+        "elliptic-curves/tests/test_elkies_rank28_s_class_pari.py",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_s_class_pari_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_bnf_free_s_class_pilot_v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE",
+        "REPRODUCE.md",
+        "elkies-k3/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-ELKIES-2026-R28-LOCAL-COVERAGE",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Exact bad-place calibration and bounded local-cover audit at the Elkies rank-28 fibre",
+      "scope": "At the published rank-28 fibre t=-9529/5471, a fresh exact fixture reconstructs the generic seventeen and certified public complement eleven, transports all 28 points to the monic cubic, and recomputes their 53 bad-place Kummer coordinates. The generic rows agree exactly with EC-K3-ELKIES-2026-R28-BAD-PLACE-KUMMER. The generic local-signature span has rank 15, the full 28-point span also has rank 15, and the eleven globally independent exceptional directions add zero rank in every local block. This is a positive control proving that the stored signatures do not measure the Mordell--Weil quotient and cannot supply a Selmer bound. Exact odd-prime dimension bounds certify full known-point local-image coverage at p=3, 19, 20650099 and 315574902691581877528345013999136728634663121, and at the real place; seven odd places and p=2 remain unresolved. A bounded norm-one generator produces 49 exact candidate cubic classes and their two-cover quadrics. A resumable owned-worker pilot tests the first twelve covers at p=3,5,7,11,13,17,19: among 84 cover/place tasks, 60 have smooth-reduction Q_p witnesses, 19 singular lift trees hit the state cap, five workers time out, and no local obstruction is proved. Untested places, the real place, the 24 inconclusive tests, global S-class completeness, everywhere local solubility, Selmer membership and the residual dimension all remain open; the artifact never authorizes point search.",
+      "canonical_source": "elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md",
+      "dependencies": [
+        "EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS",
+        "EC-K3-ELKIES-2026-R28-BAD-PLACE-KUMMER"
+      ],
+      "checker": "elliptic-curves/cas/build_elkies_2026_rank28_local_coverage.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b9e127fe362e0753e6bc32d0fcf0c00b46150f798a9dc90b0b65e6bd22bcc782",
+      "software_lock": [
+        "elliptic-curves/cas/build_elkies_2026_rank28_local_coverage.py",
+        "elliptic-curves/cas/audit_bnf_free_local_kummer_coverage.py",
+        "elliptic-curves/cas/generate_q12o5867_norm_one_cover_candidates.py",
+        "elliptic-curves/cas/build_bnf_free_two_covers.py",
+        "elliptic-curves/cas/run_bnf_free_two_cover_local_supervisor.py",
+        "elliptic-curves/tests/test_elkies_rank28_local_coverage.py",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_generic17_local_signature_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_generic17_local_coverage_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_norm_one_local_pilot12_v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE",
+        "REPRODUCE.md",
+        "elkies-k3/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-ELKIES-2026-R28-PUBLIC-SELMER-CONTROLS",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Eleven explicit residual-Selmer cover controls at the Elkies rank-28 fibre",
+      "scope": "At the published rank-28 fibre t=-9529/5471, each of the eleven certified public complement points Q is transported to the monic cubic point (X(Q),Z(Q)) and its exact Kummer element alpha=X(Q)-theta is materialized. For every class, Norm(alpha)=Z(Q)^2 is checked exactly. The generic two-cover builder constructs the corresponding intersection of quadrics and verifies the rational cover point [1:0:0:1], whose x-map is X(Q); the local audit independently rechecks all eleven global witnesses and therefore certifies local solubility at every place. The pre-existing finite-reduction certificate is replayed and proves these eleven point classes independent modulo the generic seventeen, so dim Sel_2(E_t)/<P1,...,P17> is at least 11 on this positive-control fibre. This validates the explicit-class and cover layers even though the 53-coordinate bad-place signature has zero incremental rank on the same directions. It is a lower bound only: ambient K(S,2) completeness, a Selmer upper bound, the four further directions needed for rank 32, and the rank-32 independence matrix remain open. No point search is authorized.",
+      "canonical_source": "elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md",
+      "dependencies": [
+        "EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS",
+        "EC-K3-ELKIES-2026-R28-LOCAL-COVERAGE"
+      ],
+      "checker": "elliptic-curves/cas/build_elkies_2026_rank28_public_selmer_controls.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:93252728c2242e2db62e1b6c081f93996743918420dd17516c64672ff1e0b98d",
+      "software_lock": [
+        "elliptic-curves/cas/build_elkies_2026_rank28_public_selmer_controls.py",
+        "elliptic-curves/cas/build_elkies_2026_rank28_relative_descent_magma.py",
+        "elliptic-curves/cas/build_q12o5867_bnf_free_signature.py",
+        "elliptic-curves/cas/build_bnf_free_two_covers.py",
+        "elliptic-curves/cas/audit_bnf_free_two_cover_reduction.py",
+        "elliptic-curves/tests/test_elkies_rank28_local_coverage.py",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_selmer_candidates_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_two_cover_controls_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_global_cover_witness_audit_v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE",
+        "REPRODUCE.md",
+        "elkies-k3/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE",
       "kind": "reproduction",
       "state": "partial",
       "title": "Fail-closed residual 2-Selmer gate for Elkies rank-32 searches",
-      "scope": "The search policy now distinguishes the actual residual object Sel_2(E_t)/<P1,...,P17> from BNF-free Kummer signatures, norm-one elements, S-class envelopes and incomplete local tests. A completed unconditional backend must attest class-group completeness and every local-solubility condition. Its total 2-Selmer dimension is quotiented by the certified generic rank 17; residual dimension below 15 is an exact rank-32 rejection, and only dimension at least 15 authorizes two-cover solving or expensive point search on the same minimal curve. The existing PARI two-cover point-search entry point enforces this gate. A resource-bounded PARI ellrank/Sage implementation was started on the public rank-28 fibre with all 28 known points supplied; the pinned 300-second run timed out at 230338560 peak observed RSS and therefore records no Selmer dimension and authorizes no search. This timeout is an implementation boundary, not a rank upper bound. Rank 32 and the requested rank-32 finite-reduction independence matrix remain open.",
+      "scope": "The search policy now distinguishes the actual residual object Sel_2(E_t)/<P1,...,P17> from BNF-free Kummer signatures, norm-one elements, S-class envelopes and incomplete local tests. A completed unconditional backend must attest class-group completeness and every local-solubility condition. Its total 2-Selmer dimension is quotiented by the independently certified 17-dimensional generic Kummer image; residual dimension below 15 is an exact rank-32 rejection, and only dimension at least 15 authorizes residual-cover solving or expensive point search on the same parameter and minimal curve. Direct q12 ratpoints, affine-chart, eclib-search, PARI-cover and normalized slope-slice entry points enforce this gate, while the obsolete pre-descent x-ansatz search is parked. EC-K3-ELKIES-2026-R28-BAD-PLACE-KUMMER proves the complete 2-division-discriminant factorization and every bad-place image of the known generic points, but explicitly supplies no ambient Selmer upper bound. EC-K3-ELKIES-2026-R28-S-CLASS-PILOT isolates the next obstruction: factor-supplied maximal-order setup is immediate, but PARI class-group relation generation does not complete, and a factor-base-1000 exact principal-relation pilot remains far below a valid generation bound with no noncanonical quotient gain. EC-K3-ELKIES-2026-R28-LOCAL-COVERAGE adds an exact calibration: the eleven globally independent public directions add zero rank to the 53-coordinate bad-place signature, only four odd places and infinity have certified full known-point coverage, and a bounded 12-cover norm-one pilot yields 60 selected local witnesses but 24 inconclusive place tests and no everywhere-local or Selmer class. EC-K3-ELKIES-2026-R28-PUBLIC-SELMER-CONTROLS materializes those eleven genuine point classes as exact X(Q)-theta elements and two-covers with rational witnesses, proving the expected residual Selmer lower bound 11 while supplying no upper bound. The original PARI ellrank and independent Selmer-only eclib runs both reached strict 300-second limits at peak observed RSS 230338560 and 232099840. A factor-supplied PARI backend then removed the hidden discriminant-factorization cost and entered the complete descent immediately with all 28 certified public points, effort zero, and no point search; strict 600-second and 1800-second runs with an 8 GB PARI stack still returned no Selmer dimension, at peak observed RSS 5698514944 and 6040723456. A source-pinned Magma job replays the generic-17 and generic-plus-public-11 finite-reduction certificates, computes unconditional TwoSelmerGroup(E : Bound := -1) before any covers, exits below residual dimension 15, and only then may materialize the relative quotient with TwoDescent; it contains no point search. Magma is absent on the current host, so this is an implemented external path, not a completed Selmer result. These timeouts and backend unavailability are implementation boundaries, not rank upper bounds, and none authorizes search. Rank 32 and the requested rank-32 finite-reduction independence matrix remain open.",
       "canonical_source": "elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md",
       "dependencies": [
-        "EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS"
+        "EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS",
+        "EC-K3-ELKIES-2026-R28-BAD-PLACE-KUMMER",
+        "EC-K3-ELKIES-2026-R28-S-CLASS-PILOT",
+        "EC-K3-ELKIES-2026-R28-LOCAL-COVERAGE",
+        "EC-K3-ELKIES-2026-R28-PUBLIC-SELMER-CONTROLS"
       ],
       "checker": "elliptic-curves/cas/run_elkies_2026_rank28_residual_selmer.py",
       "proof_type": "hybrid",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:a4d3f1aae5120e4d3df6c4cccc4600c0e2f88d5c3bde2c7c1c40b1b81c62eb09",
+      "artifact_hash": "sha256:25742a2410822b0f3a78c650b317c390385a4713779656c5601eb8cf64310c7a",
       "software_lock": [
         "elliptic-curves/cas/elkies_residual_selmer_gate.py",
         "elliptic-curves/cas/run_elkies_2026_rank28_residual_selmer.py",
+        "elliptic-curves/cas/build_elkies_2026_rank28_bad_place_ledger.py",
+        "elliptic-curves/cas/build_elkies_2026_rank28_relative_descent_magma.py",
+        "elliptic-curves/cas/parse_elkies_2026_rank28_relative_descent.py",
+        "elliptic-curves/cas/run_elkies_2026_rank28_s_class_pari.py",
+        "elliptic-curves/cas/run_fermigier_rank20_minkowski_specialq.py",
+        "elliptic-curves/cas/augment_bnf_free_canonical_principal_relations.py",
+        "elliptic-curves/cas/audit_bnf_free_s_class_quotient.py",
+        "elliptic-curves/cas/build_elkies_2026_rank28_local_coverage.py",
+        "elliptic-curves/cas/audit_bnf_free_local_kummer_coverage.py",
+        "elliptic-curves/cas/generate_q12o5867_norm_one_cover_candidates.py",
+        "elliptic-curves/cas/build_bnf_free_two_covers.py",
+        "elliptic-curves/cas/run_bnf_free_two_cover_local_supervisor.py",
+        "elliptic-curves/cas/build_elkies_2026_rank28_public_selmer_controls.py",
         "elliptic-curves/scripts/probe_q12o5867_pari_two_cover.py",
+        "elliptic-curves/scripts/probe_q12o5867_ratpoints.py",
+        "elliptic-curves/scripts/probe_q12o5867_section_charts.py",
+        "elliptic-curves/scripts/probe_q12o5867_mwrank.py",
+        "elliptic-curves/scripts/search_q12o5867_section_slope_slices.py",
+        "elliptic-curves/scripts/search_q12o5867_low_complexity_x_ansatz.py",
         "elliptic-curves/tests/test_elkies_residual_selmer_gate.py",
-        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_residual_2selmer_gate_v1.json"
+        "elliptic-curves/tests/test_elkies_rank28_relative_descent.py",
+        "elliptic-curves/tests/test_elkies_rank28_s_class_pari.py",
+        "elliptic-curves/tests/test_elkies_rank28_local_coverage.py",
+        "elliptic-curves/tests/test_q12o5867_descent_first_entrypoints.py",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_residual_2selmer_gate_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_residual_2selmer_eclib_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_bad_place_kummer_ledger_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_residual_2selmer_pari_factored_8g_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_residual_2selmer_pari_factored_8g_30min_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_s_class_pari_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_bnf_free_s_class_pilot_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_generic17_local_signature_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_generic17_local_coverage_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_norm_one_local_pilot12_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_selmer_candidates_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_two_cover_controls_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_global_cover_witness_audit_v1.json"
       ],
       "supersedes_notes": [],
       "supersedes": [],
@@ -1950,7 +2148,11 @@
         "OP-EC-NEXT",
         "REPRODUCE.md",
         "elkies-k3/README.md",
-        "elliptic-curves/scripts/probe_q12o5867_pari_two_cover.py"
+        "elliptic-curves/scripts/probe_q12o5867_pari_two_cover.py",
+        "elliptic-curves/scripts/probe_q12o5867_ratpoints.py",
+        "elliptic-curves/scripts/probe_q12o5867_section_charts.py",
+        "elliptic-curves/scripts/probe_q12o5867_mwrank.py",
+        "elliptic-curves/scripts/search_q12o5867_section_slope_slices.py"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -31599,10 +31801,43 @@
         ".python-version"
       ],
       "supersedes": [],
-      "closes_problems": [],
+      "closes_problems": [
+        "OP-EC-RANK-CONDUCTOR"
+      ],
       "narrows_problems": [
         "OP-EC-NEXT"
       ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-R21-ICARM394",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Exact compact-family rank-at-least-21 and conductor replay for ICARM curve 394",
+      "scope": "For public ICARM curve 394, the pinned compact Elkies rank-17 K3 model and all seventeen exact sections specialize at t=3/8 and globally minimize coefficient-for-coefficient to the public model [1,0,0,-354803089674674467206754048738095,2558194545892203175112161719607326368645810580537]. All twenty-one public points satisfy that equation. The seventeen specialized generic sections together with public points 1,2,3,4 have a single exact finite-reduction certificate of binary rank twenty-one at the good primes 11,17,31,37,41,43,53,61,67,73,83,97,101,107,109,131,137,149,157; good reduction of order 25 at 19 excludes rational 2-torsion, so infinite descent proves rank E(Q)>=21 unconditionally. PARI proves every displayed bad factor prime, returns the identity global/local minimal change, and reconstructs twelve multiplicative fibres I9,I8,I6,I4,I5,I3,I4,I2,I1,I1,I1,I1 with conductor exponent one. Their exact product is N=1593562111507190066539814084004447718921281851572777685020200143306222910, log(N)=166.252098527727201665... and root number -1. Thus curve 394 improves the repository-local rank-at-least-21 conductor anchor from curve 285's 173.2515..., while remaining above ICARM 245's rank-at-least-20 conductor 150.6689.... No rank upper bound or exact-rank claim is made.",
+      "canonical_source": "elliptic-curves/notes/ICARM_CURVE394_RANK21.md",
+      "dependencies": [
+        "EC-K3-ELKIES-2026-R17",
+        "external: public ICARM curve 394 equation, points, conductor, and bad-prime support",
+        "external: finite-reduction and infinite-descent independence criterion"
+      ],
+      "checker": "elliptic-curves/cas/verify_icarm_curve394_rank21.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3868a6e6b5fa6134949d92a4f1aaa526cd42f50335109f02aefab58bb52968b0",
+      "software_lock": [
+        ".python-version",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
       "consumers": [],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -34600,7 +34835,7 @@
       "kind": "example",
       "state": "partial",
       "title": "Exact squareclass and height gate for rootless bisection collisions",
-      "scope": "Given equation-level records for smooth rational rootless bisections, the checker exactly reduces the branch rational function, retains its rational constant squareclass and odd monic factors, and hashes equality in QQ(t)^*/QQ(t)^{*2}. It rejects split covers and covers with any branch degree other than two. It also accepts a quadratic bisection relation and derives the same class from its discriminant. Across the entire supplied record set, every declared lattice translation-orbit mask must be unique: section translates define the same base cover and can contribute only one anti-invariant direction, even if inconsistent input equations would otherwise put them in different squareclass buckets. A collision bucket cannot mix masked with unmasked records. When a collision bucket supplies exact anti-invariant coordinates in a declared positive-definite rational twist-height lattice, it computes the exact height matrix and its rank. Alternatively, after an equation-level certificate establishes that the common double base change has chi=4, branches only at smooth fibres, and remains rootless, declared lift intersections P_i.P_j and P_i.tau(P_j) give the exact formula <P_i-tau(P_i),P_j-tau(P_j)>=2*(P_i.tau(P_j)-P_i.P_j), with checked diagonal values P_i^2=-4 and P_i.tau(P_i)=2. If both routes are supplied they must agree. An optional complete-coverage gate validates one record for every canonical M/2M orbit against either the pinned rank17 Gram or a declared exported alternate rootless frame, including the corresponding integral bisection vector modulo 2M. For declared invariant rank 17, a collision matrix of rank two certifies base-changed rank at least 19. The included synthetic regression exercises this implication, cover normalization, both lattice-record attachment modes, duplicate-orbit rejection including inconsistent branch data, missing-height rejection, indefinite-height rejection, and the geometric lift formula. The first production input now supplies 1,000 actual rootless bisection equations; it has no extension collision, twist-height matrix, or generic-rank-19 consequence.",
+      "scope": "Given equation-level records for smooth rational rootless bisections, the checker exactly reduces the branch rational function, retains its rational constant squareclass and odd monic factors, and hashes equality in QQ(t)^*/QQ(t)^{*2}. It rejects split covers and covers with any branch degree other than two. It also accepts a quadratic bisection relation and derives its class from the discriminant; when the resolved chord supplies h and q it first verifies the exact identity discriminant=h^2*q and then normalizes q. Across the entire supplied record set, every declared lattice translation-orbit mask must be unique: section translates define the same base cover and can contribute only one anti-invariant direction, even if inconsistent input equations would otherwise put them in different squareclass buckets. A collision bucket cannot mix masked with unmasked records. When a collision bucket supplies exact anti-invariant coordinates in a declared positive-definite rational twist-height lattice, it computes the exact height matrix and its rank. Alternatively, after an equation-level certificate establishes that the common double base change has chi=4, branches only at smooth fibres, and remains rootless, declared lift intersections P_i.P_j and P_i.tau(P_j) give the exact formula <P_i-tau(P_i),P_j-tau(P_j)>=2*(P_i.tau(P_j)-P_i.P_j), with checked diagonal values P_i^2=-4 and P_i.tau(P_i)=2. If both routes are supplied they must agree. An optional complete-coverage gate validates one record for every canonical M/2M orbit against either the pinned rank17 Gram or a declared exported alternate rootless frame, including the corresponding integral bisection vector modulo 2M. Compact output retains a complete label/orbit/extension-digest manifest and every collision bucket while omitting bulky singleton provenance, and pins the equation input by SHA-256. For declared invariant rank 17, a collision matrix of rank two certifies base-changed rank at least 19. The included synthetic regression exercises this implication, cover normalization, both lattice-record attachment modes, duplicate-orbit rejection including inconsistent branch data, missing-height rejection, indefinite-height rejection, and the geometric lift formula. The complete production input supplies all 39,120 actual pinned rootless bisection equations; it has 39,120 distinct extensions and therefore no collision, twist-height matrix, or generic-rank-19 consequence.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
         "EC-K3-BISECT-ORBIT"
@@ -34610,7 +34845,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:bb21885b477c07b3b22920664a2c5eb9ab326fb1b4013d9708881e5dc4df6340",
+      "artifact_hash": "sha256:caae324023836a3084c2589a1a8269cb12304164a0f2e4de9d952fd4c0e790e4",
       "software_lock": [
         "elkies-k3/scripts/hash_bisection_extensions.py"
       ],
@@ -34627,10 +34862,10 @@
     },
     {
       "id": "EC-K3-BISECT-EQUATION-BATCH",
-      "kind": "example",
-      "state": "partial",
-      "title": "First 1,000 exact equation-level bisections on the published rootless R17 model",
-      "scope": "The complete 39,120-orbit survivor set is ranked in the exact published R17 basis by a deterministic tuple measuring binary group-addition work, basis support, recursive section/chord dependencies, exact serialized coordinate bits, and coefficient size. The first 1,000 equation-cheapest orbits contain 11,823 exact disjoint-priority pairs. For each retained height-ten trace tau=(Nx/h^2,Ny/h^3), the unique degree-below-six polynomial M satisfying M*Nx+Ny=0 modulo h^2 constructs the residual chord bisection. Exact identities prove h^6 divides M^4-6*M^2*Nx-8*M*Ny-3*Nx^2-4*A*h^4, give a quadratic relation x^2-s*x+p=0 with discriminant h^2*q for squarefree quadratic q, and verify the lifted point over u^2=q coefficientwise on the Weierstrass equation. Every record is attached to its pinned R17/2R17 orbit, and all 1,000 branch quadratics are coprime to the degree-24 surface discriminant. Exact squareclass normalization finds 1,000 distinct quadratic extensions and no collision. This is the first actual equation-level rootless bisection batch and a bounded negative collision search; it does not prove injectivity beyond the batch, construct an anti-invariant rank-two height matrix, or prove a new generic-rank-19 quadratic base change.",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete equation-level injectivity of the published rootless R17 bisection map",
+      "scope": "The complete 39,120-orbit survivor set is ranked in the exact published R17 basis by a deterministic tuple measuring binary group-addition work, basis support, recursive section/chord dependencies, exact serialized coordinate bits, and coefficient size. The full priority graph contains all 8,895,801 disjoint pairs. For each height-ten trace tau=(Nx/h^2,Ny/h^3), the unique degree-below-six polynomial M satisfying M*Nx+Ny=0 modulo h^2 constructs the residual chord bisection. Exact identities prove h^6 divides M^4-6*M^2*Nx-8*M*Ny-3*Nx^2-4*A*h^4, give a quadratic relation x^2-s*x+p=0 with discriminant h^2*q for squarefree quadratic q, and verify the lifted point over u^2=q coefficientwise on the Weierstrass equation. Exactly one orbit, 0x0c54f, has a pole over infinity and is constructed in the reciprocal base chart before exact transport back; the other 39,119 use the published affine chart. Every record is attached to its pinned R17/2R17 orbit, and all 39,120 branch quadratics are coprime to the degree-24 surface discriminant. Exact squareclass normalization finds 39,120 distinct quadratic extensions and no collision. Thus the map from the complete surviving bisection translation classes to QQ(t)^*/QQ(t)^{*2} is injective, and none of the complete disjoint-pair frontier produces a common quadratic base change. Each individual cover remains rootless and has a height-12 anti-invariant section, giving 39,120 explicit generic-rank-at-least-18 base changes. This rules out rank two on one common quadratic cover; it does not rule out the distinct-extension biquadratic construction proved separately in EC-K3-BISECT-BIQUADRATIC-R19.",
       "canonical_source": "elkies-k3/BISECTION_COLLISION_SEARCH.md",
       "dependencies": [
         "EC-K3-ELKIES-2026-R17",
@@ -34643,7 +34878,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:417a88a191a30245e48ebb1c608f4a25ae26de286416e39bc7112b69522a0a69",
+      "artifact_hash": "sha256:92ebfc3777c74b765e91e072026821b72efc413b5dfcc187b7e389c3e7abde31",
       "software_lock": [
         "elkies-k3/scripts/rank_elkies_2026_bisection_orbits.sage",
         "elkies-k3/scripts/construct_elkies_2026_bisections.sage",
@@ -34656,6 +34891,49 @@
         "REPRODUCE.md",
         "elkies-k3/BISECTION_COLLISION_SEARCH.md",
         "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-BISECT-BIQUADRATIC-R19",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete biquadratic rank-19 bisection-cover geometry and a rank-at-least-nine base",
+      "scope": "For all 39,120 exact equation-level rootless R17 bisections, exact Hasse--Minkowski computation proves that the quadratic base conic is Q-rational. Their primitive branch quadratics are all irreducible and pairwise nonproportional. Hence every two distinct squareclasses give a connected V4 cover with four distinct branch points and genus one; the two pulled anti-invariant sections occupy different Galois characters, have exact height matrix diag(24,24), and together with the invariant rank-17 lattice prove generic Mordell--Weil rank at least 19 for all binomial(39120,2)=765,167,640 paired bases. Exactly 5,566 pairs have an immediate rational point at t=0 or infinity. Their complete exact catalogue has 2,823 global root number +1 and 2,743 root number -1. A complete bounded PARI-effort-one point ledger records exact finite-quotient-certified lower bounds 0:1786, 1:1869, 2:1197, 3:454, 4:182, 5:56, 6:20, 9:2; zero means no point found and is not a rank-zero claim. The arithmetic-complexity-rank-114 pair with masks 42110 and 43109 has a rational point at infinity, lies outside the norm-four disjoint graph, and has nine displayed Jacobian points certified independent by mod-3 finite-quotient infinite descent. Its paired base has rank at least 9 and global minimal model [1,0,0,-60729194722297004073216,5758259762216167074332597509226496]. An exact degree-two isogeny and pointed-quartic birational map transport the nine independent points to nine explicit rational (t,u,v) points, making the infinitude of rational t-values effective. No base-rank upper bound or exceptional-specialization rank is asserted.",
+      "canonical_source": "elkies-k3/BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md",
+      "dependencies": [
+        "EC-K3-BISECT-EQUATION-BATCH"
+      ],
+      "checker": "elkies-k3/scripts/verify_elkies_2026_rank19_rank9_base.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4829c3ea9a04cc6c85149172c3d6d3ad75d6a3908ebdbfadc6f2821dd34a8522",
+      "software_lock": [
+        "elkies-k3/scripts/analyze_elkies_2026_bisection_pair_covers.sage",
+        "elkies-k3/scripts/catalogue_elkies_2026_immediate_point_pairs.sage",
+        "elkies-k3/scripts/screen_elkies_2026_immediate_pair_ranks.sage",
+        "elkies-k3/scripts/verify_elkies_2026_rank19_rank9_base.sage",
+        "artifacts/generated-results/elkies-2026-bisection-pair-cover-geometry-full.json",
+        "artifacts/generated-results/elkies-2026-immediate-point-pair-catalogue-full.json",
+        "artifacts/generated-results/elkies-2026-immediate-point-pair-rank-ledger.json",
+        "artifacts/generated-results/elkies-2026-rank19-rank9-paired-base.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md",
+        "elkies-k3/BISECTION_COLLISION_SEARCH.md",
+        "elkies-k3/BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/ELKIES_K3_PROCESS_ATLAS.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -35426,10 +35704,11 @@
       "kind": "open_problem",
       "state": "parked",
       "title": "Exceptional elliptic rank with record conductor (closed disjunction)",
-      "scope": "The original operational target was the disjunction: find either an elliptic curve over Q with at least 21 rigorously independent rational points and natural-log conductor below 182.72, or a curve with at least 30 rigorously independent rational points. ECR30 proves the second branch by an exact local replay of the public 2026 rank-at-least-30 record. The low-conductor branch remains open and has been split into OP-EC-NEXT. No exact-rank-30 statement is included in this closure.",
+      "scope": "The original operational target was the disjunction: find either an elliptic curve over Q with at least 21 rigorously independent rational points and natural-log conductor below 182.72, or a curve with at least 30 rigorously independent rational points. ECR30 proves the second branch by an exact local replay of the public 2026 rank-at-least-30 record. EC-R21-ICARM independently replays the first branch for public curves 285 and 286, including point independence, global minimality, and every local conductor exponent. Thus both branches are now closed. No exact-rank statement is included for these curves.",
       "canonical_source": "elliptic-curves/README.md",
       "dependencies": [
-        "ECR30"
+        "ECR30",
+        "EC-R21-ICARM"
       ],
       "checker": null,
       "proof_type": "not-applicable",
@@ -35446,6 +35725,7 @@
       "invalidates_assumptions": [],
       "replaced_by": [
         "ECR30",
+        "EC-R21-ICARM",
         "OP-EC-NEXT"
       ],
       "priority": "reference"
@@ -35454,12 +35734,13 @@
       "id": "OP-EC-NEXT",
       "kind": "open_problem",
       "state": "open",
-      "title": "Elliptic rank-32, exact-rank, and low-conductor certification",
-      "scope": "ECR31 gives an unconditional rank-at-least-31 curve and supersedes rank 31 as a search target. Continue in three exact directions: prove the public curve 302 has rank exactly 31 or exhibit a rank-at-least-32 curve; complete repository-local global-minimality and Tate-algorithm conductor replays for the rank-at-least-21 ICARM curves 285 and 286 recorded in EC-R21-ICARM, or find another independently certified low-conductor rank-at-least-21 curve; and use the now-complete reconstructed rank-17 H3 K3 mechanism to search beyond rank 31. EC-R20, EC-R20-IC245, EC-MR13, EC-MD17 and EC-MD19 remain exact lower-rank family/conductor frontiers. EC-K3-H3-SOURCE through EC-K3-H3-Q12O5867-ENDPOINT-QQ provide the exact H3 source, equation route, rootless 24I1 model, source identity, Picard-rank proof, and saturated determinant-948 rank-17 Mordell--Weil lattice; alternate lattice corridors and changed-zero compiler routes remain reference material rather than active search paths. EC-K3-ELKIES-2026-R17 identifies the compact published endpoint and all seventeen sections. EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS imports the public rank-25--28 point lists and certifies quotient gains 8, 9, 10 and 11 over the generic rank 17. EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL proves that the three-ensemble weakest-block scoring rule strongly ranks all four controls in the complete compact-t height-10000 population. EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE now makes the actual quotient Sel_2(E_t)/<P1,...,P17> mandatory before expensive search: residual dimension below 15 exactly rejects rank 32, while signatures, norm-one elements, incomplete class data and local candidates authorize nothing. The first 300-second unconditional PARI descent attempt on the rank-28 control timed out without a Selmer result, so no two-cover, ratpoints or slope-box search is authorized there yet. EC-K3-ELKIES-2026-R18-COVER and EC-K3-ELKIES-2026-R19-PAIRED remain exact supporting base-change constructions, not the current search priority. The retained route consumers are EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE, EC-K3-H3-Q4O208-Q4O1584-QQ, EC-K3-H3-Q4O1584-Q4O164-QQ, EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR, EC-K3-H3-Q12O5867-QQ-ROOTLESS, EC-K3-H3-Q12O5867-QQ-R17-BASIS, EC-K3-H3-Q24-QQ-D12, EC-K3-H3-Q24-O42-QQ-A11, EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET, EC-K3-H3-A11-Q8-QQ-2A5, EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE, EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE, EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE, and EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE. The open success target is fifteen certified quotient directions and a finite-reduction independence matrix of rank 32. EC-ICARM-CONSTRUCTION-FINGERPRINTS excludes curve 273 from the complete diameter-at-most-300 fixed-six-root Mestre census and from the direct forced-2-torsion Elkies--Klagsbrun model, without excluding the rootless K3 descendant. A certified residual 2-Selmer computation for curve 273 also remains open. The retained exact H3 corridor also includes EC-K3-H3-PTS, EC-K3-H3-Q8-QQ-D13, EC-K3-H3-Q24-O42-I8STAR-MARKING, EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT, EC-K3-H3-Q24-O42-SPINOR-ZERO-POLE, EC-K3-H3-Q24-O42-SECTION-CANDIDATES, EC-K3-H3-Q24-O42-FAST-Q6-AUDIT, and EC-K3-H3-D13-MW17-LATTICE-CHAIN. Bounded searches, timed-out descents and failed lifts are not upper bounds.",
+      "title": "Elliptic rank-32, exact-rank, and improved-conductor certification",
+      "scope": "ECR31 gives an unconditional rank-at-least-31 curve and supersedes rank 31 as a search target. EC-R21-ICARM closes the original low-conductor rank-at-least-21 replay for curves 285 and 286, so the remaining exact directions are: prove the public curve 302 has rank exactly 31 or exhibit a rank-at-least-32 curve; sharpen exact rank/conductor records using the four pinned rank-19/20 near-miss descent inputs or another independently certified curve; and use the complete reconstructed H3 K3 mechanism to search beyond rank 31. EC-K3-H3-SOURCE through EC-K3-H3-Q12O5867-ENDPOINT-QQ provide the exact H3 source, complete equation route, rootless 24I1 model, source identity, Picard-rank proof, and saturated determinant-948 rank-17 Mordell--Weil lattice. EC-K3-ELKIES-2026-R17 identifies the compact published endpoint and all seventeen sections. EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS and EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL certify the rank-25--28 quotient gains and the three-ensemble height-10000 calibration. EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE makes the actual quotient Sel_2(E_t)/<P1,...,P17> mandatory before expensive search: residual dimension below 15 rejects rank 32, while signatures, norm-one elements, incomplete class data, local candidates, and backend timeouts authorize nothing. Resource-bounded PARI and eclib attempts on the rank-28 control timed out without a Selmer result; a source-pinned unconditional Magma path is implemented but not completed on the current host. EC-K3-ELKIES-2026-R18-COVER and EC-K3-ELKIES-2026-R19-PAIRED are exact supporting routes. The retained equation and route consumers are EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE, EC-K3-H3-Q4O208-Q4O1584-QQ, EC-K3-H3-Q4O1584-Q4O164-QQ, EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR, EC-K3-H3-Q12O5867-QQ-ROOTLESS, EC-K3-H3-Q12O5867-QQ-R17-BASIS, EC-K3-H3-Q12O5867-ENDPOINT-QQ, EC-K3-H3-Q24-QQ-D12, EC-K3-H3-Q24-O42-QQ-A11, EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET, EC-K3-H3-A11-Q8-QQ-2A5, EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE, EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE, EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE, and EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE. The open rank-32 success target is fifteen certified quotient directions and a finite-reduction independence matrix of rank 32. Residual descent for curve 273 and the four low-conductor near misses also remains open. Alternate lattice corridors, changed-zero compilers, and bounded point-search misses remain reference or experimental data, not upper bounds. The retained exact and supporting route records explicitly include EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE, EC-K3-H3-Q4O208-Q4O1584-QQ, EC-K3-H3-Q4O1584-Q4O164-QQ, EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR, EC-K3-H3-Q12O5867-QQ-ROOTLESS, EC-K3-H3-Q12O5867-QQ-R17-BASIS, EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS, EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL, EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE, EC-K3-ELKIES-2026-R18-COVER, EC-K3-ELKIES-2026-R19-PAIRED, EC-R20-IC245, EC-MD17, EC-MD19, EC-K3-H3-PTS, EC-ICARM-CONSTRUCTION-FINGERPRINTS, EC-K3-H3-Q8-QQ-D13, EC-K3-H3-Q24-QQ-D12, EC-K3-H3-Q24-O42-I8STAR-MARKING, EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT, EC-K3-H3-Q24-O42-SPINOR-ZERO-POLE, EC-K3-H3-Q24-O42-SECTION-CANDIDATES, EC-K3-H3-Q24-O42-QQ-A11, EC-K3-H3-Q24-O42-FAST-Q6-AUDIT, EC-K3-H3-D13-MW17-LATTICE-CHAIN, EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET, EC-K3-H3-A11-Q8-QQ-2A5, EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE, EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE, EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE.",
       "canonical_source": "elliptic-curves/README.md",
       "dependencies": [
         "ECR31",
         "EC-R21-ICARM",
+        "EC-R21-ICARM394",
         "EC-CF-NEARMISS-DESCENT-INPUTS",
         "EC-R20",
         "EC-R20-IC245",
@@ -35497,9 +35778,9 @@
         "EC-K3-H3-Q12O5867-QQ-R17-BASIS",
         "EC-K3-H3-Q12O5867-ENDPOINT-QQ",
         "EC-K3-ELKIES-2026-R17",
-    "EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS",
-    "EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL",
-    "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE",
+        "EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS",
+        "EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL",
+        "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE",
         "EC-K3-ELKIES-2026-R18-COVER",
         "EC-K3-ELKIES-2026-R19-PAIRED",
         "EC-K3-H3-Q4O208-R17-CURRENT-MARKED-ROUTE"

@@ -19,7 +19,7 @@ from fractions import Fraction
 import json
 from pathlib import Path
 
-from sage.all import NumberField, PolynomialRing, QQ, ZZ
+from sage.all import NumberField, PolynomialRing, QQ, ZZ, pari
 
 
 PROTOCOL = "BNFFREECANON"
@@ -36,6 +36,13 @@ def coefficient_field(ledger: dict):
     coefficients = [rational(value) for value in ledger["defining_polynomial_ascending"]]
     if len(coefficients) != 4 or coefficients[-1] != 1:
         raise ValueError("ledger must define a monic cubic polynomial")
+    if ledger.get("curve_preset") == "elkies-2026-rank28":
+        from run_elkies_2026_rank28_s_class_pari import validate_inputs
+
+        _, _, certified_coefficients, factor_hint_primes = validate_inputs()
+        if coefficients != [QQ(value) for value in certified_coefficients]:
+            raise ValueError("Elkies rank-28 ledger has the wrong defining cubic")
+        pari.addprimes(factor_hint_primes)
     ring = PolynomialRing(QQ, "x")
     x = ring.gen()
     return NumberField(sum(value * x**index for index, value in enumerate(coefficients)), "theta")

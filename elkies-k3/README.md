@@ -63,14 +63,58 @@ failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and
   quotient gains `8,9,10,11`, and the complete compact-`t` height-10000 scan
   strongly ranks all four using three disjoint prime ensembles and the weakest
   block as primary score. A fail-closed residual 2-Selmer gate now precedes
-  every expensive search. The initial 300-second rank-28 PARI descent timed
-  out without an upper bound, so it authorizes no cover or point search.
+  every expensive search. Independent 300-second rank-28 PARI and Selmer-only
+  eclib descents both timed out without an upper bound, so neither authorizes
+  a cover or point search. The rank-28 2-division cubic discriminant is now
+  completely factored with all factors proved prime, and the generic-seventeen
+  Kummer images are computed at every bad finite place, at 2, and at infinity.
+  Those coordinates have combined rank 15 but are not an ambient Selmer bound.
+  Supplying the factors removes PARI's hidden factorization bottleneck; the
+  strict 600-second and 1,800-second 8 GB-stack attempts still returned no
+  Selmer dimension and remain search-forbidden. A stage-aware class-quotient
+  worker now shows that the remaining local PARI stall is relation generation
+  inside `bnfinit`, before `bnfcertify`. An exact factor-base-1000 BNF-free
+  paired-special-ideal pilot verifies 172 canonical principal rows but no
+  noncanonical gain; its displayed quotient dimension is uncertified because
+  the valid generation threshold is 1,202,640. An exact local positive control
+  now recomputes 53 bad-place coordinates for the
+  generic 17 and public complement 11. Both spans have rank 15, with zero
+  exceptional increment in every block, so those signatures demonstrably do
+  not measure the eleven certified global quotient directions. Four odd
+  places and infinity have full known-point local coverage; seven odd places
+  and the two-adic place remain unresolved. A resumable 12-cover pilot records
+  60 selected local witnesses and 24 inconclusive place tests, with no Selmer
+  or search authorization. Separately, the eleven certified public complement
+  directions now give exact `X(Q)-theta` classes and rational points on their
+  explicit two-covers. Their quotient independence proves residual Selmer
+  dimension at least 11, calibrating the genuine-class path without supplying
+  the missing upper bound or search authorization. A source-pinned
+  unconditional Magma job now computes
+  `TwoSelmerGroup(Bound := -1)` first, subtracts the certified 17-dimensional
+  Kummer image, exits below residual dimension 15, and can materialize
+  residual covers only after a pass; Magma is not installed on this host.
   The first conic cover has an explicit eighteenth section and rational
   parameter; the paired cover has both new sections, exact maps from the
   rank-at-least-four curve `E0`, and a Mordell--Weil-lattice Nagao sieve; these
   are supporting base-change routes rather than the current priority.
   See
   [`ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md`](ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md).
+- The rootless-bisection programme has an exact finite lattice frontier of
+  39,120 translation orbits and 8,895,801 disjoint-priority pairs. All 39,120
+  classes now have explicit verified quadratic covers with distinct
+  squareclasses, and every individual conic is rational over `QQ`. Thus the
+  complete survivor map is injective and produces no common-quadratic-cover
+  collision, while giving 39,120 parameterized generic-rank-at-least-18
+  families. Distinct extensions behave differently: all 765,167,640 pairs
+  have a genus-one `V4` base and exact new-section height matrix `diag(24,24)`,
+  hence generic rank at least 19. Among the 5,566 bases with an immediate
+  rational point, a complete exact catalogue and bounded certified point
+  ledger finds two base Jacobians of rank at least 9. See
+  [`BISECTION_COLLISION_SEARCH.md`](BISECTION_COLLISION_SEARCH.md) and
+  [`BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md`](BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md).
+  For the simpler rank-at-least-nine base, the latter note and its promoted
+  verifier now give the exact paired-base elliptic model and a birational map
+  producing nine explicit rational specialization parameters.
 
 <!-- status-consumer: EC-K3-H3-A11-Q8-QQ-2A5 b7aaf4bf483eac68 -->
 <!-- status-consumer: EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE 86e7a3affbf35a9e -->
@@ -89,11 +133,16 @@ failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS 345b9fb977057133 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL f99c98cdb6b8cd7d -->
-<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE f5600026fe1e9656 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R28-BAD-PLACE-KUMMER 611e63935d2340bc -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R28-S-CLASS-PILOT a791713dc40f7caf -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R28-LOCAL-COVERAGE c078c1aa8e97df47 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R28-PUBLIC-SELMER-CONTROLS 56509673b9eb1940 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE bb81d843718bdd31 -->
+<!-- status-consumer: EC-K3-BISECT-BIQUADRATIC-R19 707bffd8b85f8f3e -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R18-COVER 6b4ee5bbc1afc01e -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R19-PAIRED f1e135d2ba803e80 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL f99c98cdb6b8cd7d -->
-<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE f5600026fe1e9656 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE bb81d843718bdd31 -->
 
 Use `R17` for the recovered rootless endpoint and `H3 source` for the level-474
 Kumar polarization. Low-q, E6, H2 and Q80/CM24 are comparison or regression

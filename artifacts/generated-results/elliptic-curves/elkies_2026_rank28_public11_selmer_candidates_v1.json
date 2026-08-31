@@ -1,0 +1,314 @@
+{
+  "candidate_count": 11,
+  "candidates": [
+    {
+      "generator_coefficients": [
+        "-8496600365017524293168549852",
+        "-1",
+        "0"
+      ],
+      "label": "public-complement-Q1",
+      "monic_cubic_point": [
+        "-8496600365017524293168549852",
+        "2078835936415188295643759071041951862742400"
+      ],
+      "norm": "4321558850531212794554058542855542479309890738049778985789293831408357169248757760000",
+      "norm_square_root": "2078835936415188295643759071041951862742400",
+      "normalization": "alpha=X(Q)-theta",
+      "rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "source_elliptic_point": [
+        "-2124150091254381073292137463",
+        "259854492051899599030515511070780628911531"
+      ]
+    },
+    {
+      "generator_coefficients": [
+        "9338039464138807027539018148",
+        "-1",
+        "0"
+      ],
+      "label": "public-complement-Q2",
+      "monic_cubic_point": [
+        "9338039464138807027539018148",
+        "150976033563965091486410671229456562470400"
+      ],
+      "norm": "22793762710707513844257337517456727258373789200623123698611677337532577750876160000",
+      "norm_square_root": "150976033563965091486410671229456562470400",
+      "normalization": "alpha=X(Q)-theta",
+      "rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "source_elliptic_point": [
+        "2334509866034701756884754537",
+        "18872004195494469180868316552803627931531"
+      ]
+    },
+    {
+      "generator_coefficients": [
+        "-6686944216249476255516154652",
+        "-1",
+        "0"
+      ],
+      "label": "public-complement-Q3",
+      "monic_cubic_point": [
+        "-6686944216249476255516154652",
+        "2013675018089147615523839328454297492238400"
+      ],
+      "norm": "4054887078476328976597195775662217108545242118484918113130883555044499108242434560000",
+      "norm_square_root": "2013675018089147615523839328454297492238400",
+      "normalization": "alpha=X(Q)-theta",
+      "rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "source_elliptic_point": [
+        "-1671736054062369063879038663",
+        "251709377261144287808506947241319126049131"
+      ]
+    },
+    {
+      "generator_coefficients": [
+        "8556521040556626665971928548",
+        "-1",
+        "0"
+      ],
+      "label": "public-complement-Q4",
+      "monic_cubic_point": [
+        "8556521040556626665971928548",
+        "293116073371526390140412234170196352148800"
+      ],
+      "norm": "85917032468742042125678963933014537727453723439490869740694215123158338377341440000",
+      "norm_square_root": "293116073371526390140412234170196352148800",
+      "normalization": "alpha=X(Q)-theta",
+      "rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "source_elliptic_point": [
+        "2139130260139156666492982137",
+        "36639509171439729202421459692941297527531"
+      ]
+    },
+    {
+      "generator_coefficients": [
+        "11102905067378286598821834148",
+        "-1",
+        "0"
+      ],
+      "label": "public-complement-Q5",
+      "monic_cubic_point": [
+        "11102905067378286598821834148",
+        "102766043792123584896023279879259944793600"
+      ],
+      "norm": "10560859756684662400937531566673525003320115010283743952538950947244519746600960000",
+      "norm_square_root": "102766043792123584896023279879259944793600",
+      "normalization": "alpha=X(Q)-theta",
+      "rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "source_elliptic_point": [
+        "2775726266844571649705458537",
+        "12845755474014060248869487699082640369931"
+      ]
+    },
+    {
+      "generator_coefficients": [
+        "5977542917308755830167335268",
+        "-1",
+        "0"
+      ],
+      "label": "public-complement-Q6",
+      "monic_cubic_point": [
+        "5977542917308755830167335268",
+        "707892844221873225431849264868224034626880"
+      ],
+      "norm": "501112278900533273166037536737284997609231044831020592011270259536417721260818534400",
+      "norm_square_root": "707892844221873225431849264868224034626880",
+      "normalization": "alpha=X(Q)-theta",
+      "rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "source_elliptic_point": [
+        "1494385729327188957541833817",
+        "88486605527733405986116494514049233411451"
+      ]
+    },
+    {
+      "generator_coefficients": [
+        "7473752914483549434036261028",
+        "-1",
+        "0"
+      ],
+      "label": "public-complement-Q7",
+      "monic_cubic_point": [
+        "7473752914483549434036261028",
+        "473899225715509143454715606693908904974080"
+      ],
+      "norm": "224580476133759082639160431582597281890964244983154488976559971387286787365471846400",
+      "norm_square_root": "473899225715509143454715606693908904974080",
+      "normalization": "alpha=X(Q)-theta",
+      "rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "source_elliptic_point": [
+        "1868438228620887358509065257",
+        "59237403214437708712725140393059358589131"
+      ]
+    },
+    {
+      "generator_coefficients": [
+        "9393442163672100678606531748",
+        "-1",
+        "0"
+      ],
+      "label": "public-complement-Q8",
+      "monic_cubic_point": [
+        "9393442163672100678606531748",
+        "139943440049613856300886331912269041440000"
+      ],
+      "norm": "19584166412919867447284951410614414107491933642144516639771917249856437273600000000",
+      "norm_square_root": "139943440049613856300886331912269041440000",
+      "normalization": "alpha=X(Q)-theta",
+      "rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "source_elliptic_point": [
+        "2348360540918025169651632937",
+        "17492930006200557857340332476448804363531"
+      ]
+    },
+    {
+      "generator_coefficients": [
+        "6838763072933418093336034228",
+        "-1",
+        "0"
+      ],
+      "label": "public-complement-Q9",
+      "monic_cubic_point": [
+        "6838763072933418093336034228",
+        "575190679797495554492350537651821183407280"
+      ],
+      "norm": "330844318125905060611872371550993829957316872952926131248210450557186951990356998400",
+      "norm_square_root": "575190679797495554492350537651821183407280",
+      "normalization": "alpha=X(Q)-theta",
+      "rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "source_elliptic_point": [
+        "1709690768233354523334008557",
+        "71898834974686089466159700529215980921631"
+      ]
+    },
+    {
+      "generator_coefficients": [
+        "80314344311987418115113315748",
+        "-1",
+        "0"
+      ],
+      "label": "public-complement-Q10",
+      "monic_cubic_point": [
+        "80314344311987418115113315748",
+        "22236868329102533151592725792415107354048000"
+      ],
+      "norm": "494478313085843284623660193207449395172431831870605745025054564527416731621986304000000",
+      "norm_square_root": "22236868329102533151592725792415107354048000",
+      "normalization": "alpha=X(Q)-theta",
+      "rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "source_elliptic_point": [
+        "20078586077996854528778328937",
+        "2779608541137806604656051725624624030091531"
+      ]
+    },
+    {
+      "generator_coefficients": [
+        "11902997803791985059788365348",
+        "-1",
+        "0"
+      ],
+      "label": "public-complement-Q11",
+      "monic_cubic_point": [
+        "11902997803791985059788365348",
+        "267191918608614481559475267265898651318400"
+      ],
+      "norm": "71391521369752465671315242632585013430508017406144690454105576798544062058178560000",
+      "norm_square_root": "267191918608614481559475267265898651318400",
+      "normalization": "alpha=X(Q)-theta",
+      "rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "source_elliptic_point": [
+        "2975749450947996264947091337",
+        "33398989826075322320208934410104857869131"
+      ]
+    }
+  ],
+  "claim_boundary": [
+    "Every candidate is the exact Kummer image X(Q)-theta of a certified rational point.",
+    "Every norm is the displayed exact square Z(Q)^2 and every cover has the rational witness [1:0:0:1].",
+    "The eleven classes are independent modulo the generic seventeen by the replayed finite-reduction certificate.",
+    "This proves only a residual 2-Selmer lower bound of eleven at the positive-control fibre, not an upper bound or rank 32.",
+    "No point search is authorized."
+  ],
+  "expensive_search_authorized": false,
+  "field_polynomial_ascending": [
+    "2206823154881955613890111084185006103990780438996427543121024530962684124718863579472",
+    "-321084198649208425360531331349416684014883684994863304024",
+    "-3",
+    "1"
+  ],
+  "independence_certificate": {
+    "combined_point_sequence_sha256": "12994a97e149b9547b8d4fab585ac15660adf6483551d46d60ec94c3200b70e8",
+    "combined_rank": 28,
+    "controls_sha256": "0b77be4658ca5438a28991a7c66f6580b3a9c8b74e664653d13bb255895f37bc",
+    "generic_point_sequence_sha256": "a96c549432125ad716831d9dc50a520d56456abf90c2de652e51d64abd0cda61",
+    "generic_rank": 17,
+    "method": "replayed finite-reduction independence modulo the generic seventeen",
+    "public_complement_quotient_gain": 11
+  },
+  "minimal_model": [
+    "1",
+    "-1",
+    "1",
+    "-20067762415575526585033208209338542750930230312178956502",
+    "34481611795030556467032985690390720374855944359319180361266008296291939448732243429"
+  ],
+  "parameter": "-9529/5471",
+  "residual_two_selmer_dimension_lower_bound": 11,
+  "schema": "elliptic-curves.bnf-free-norm-filtered-squareclass-candidates.v1",
+  "status": "EXACT_MW_KUMMER_POSITIVE_CONTROLS"
+}

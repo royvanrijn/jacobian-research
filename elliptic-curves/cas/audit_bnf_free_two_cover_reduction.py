@@ -25,7 +25,11 @@ from pathlib import Path
 
 from sage.all import GF, PolynomialRing, QQ, ZZ, lcm
 
-from build_bnf_free_two_covers import multiply_mod_cubic, rational
+from build_bnf_free_two_covers import (
+    multiply_mod_cubic,
+    rational,
+    verify_rational_cover_witness,
+)
 
 
 PROTOCOL = "BNFFREECOVERLOCAL"
@@ -222,11 +226,33 @@ def audit_cover(
     max_enumeration_prime,
     max_lift_precision,
     max_lift_states,
+    rational_cover_witness=None,
 ):
     ring = PolynomialRing(QQ, names=("u", "v", "w", "z"))
     first, second = cover_quadrics(alpha, coefficients, ring)
     first = primitive_integral(first)
     second = primitive_integral(second)
+    if rational_cover_witness is not None:
+        affine_x = verify_rational_cover_witness(
+            alpha, coefficients, rational_cover_witness, ring
+        )
+        return {
+            "primitive_integral_quadrics": [str(first), str(second)],
+            "global_rational_cover_witness": [
+                str(value) for value in rational_cover_witness
+            ],
+            "global_rational_cover_witness_verified": True,
+            "rational_witness_affine_x": (
+                None if affine_x is None else str(affine_x)
+            ),
+            "finite_places": [
+                {
+                    "rational_prime": prime,
+                    "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+                }
+                for prime in primes
+            ],
+        }
     records = []
     for prime in primes:
         if prime > max_enumeration_prime:
@@ -311,6 +337,11 @@ def main() -> None:
             args.max_enumeration_prime,
             args.max_lift_precision,
             args.max_lift_states,
+            (
+                [rational(value) for value in cover["rational_cover_witness"]]
+                if cover.get("rational_cover_witness") is not None
+                else None
+            ),
         )
         result.update(
             {
@@ -320,14 +351,28 @@ def main() -> None:
         )
         covers.append(result)
 
+    rational_witness_count = sum(
+        cover.get("global_rational_cover_witness_verified") is True
+        for cover in covers
+    )
     output = {
         "protocol": "BNFFREECOVERLOCAL-v1",
-        "status": "SELECTED_FINITE_LOCAL_REDUCTION_AUDIT_ONLY",
+        "status": (
+            "GLOBAL_RATIONAL_POINT_POSITIVE_CONTROL_AUDIT"
+            if covers and rational_witness_count == len(covers)
+            else "SELECTED_FINITE_LOCAL_REDUCTION_AUDIT_ONLY"
+        ),
         "tested_rational_primes": primes,
         "max_enumeration_prime": args.max_enumeration_prime,
         "max_lift_precision": args.max_lift_precision,
         "max_lift_states": args.max_lift_states,
+        "global_rational_witness_cover_count": rational_witness_count,
         "covers": covers,
+        "claim_boundary": [
+            "A verified global rational cover witness proves local solubility at every place for that cover.",
+            "Finite-reduction witnesses and obstructions retain their one-place meanings.",
+            "This audit gives no ambient class-group completeness or Selmer upper bound.",
+        ],
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(output, indent=2, sort_keys=True) + "\n")
@@ -339,7 +384,7 @@ def main() -> None:
     print(
         f"{PROTOCOL}|stage=complete|covers={len(covers)}|primes={len(primes)}"
         f"|classifications={','.join(sorted(classifications)) or 'none'}"
-        "|status=SELECTED_FINITE_PLACES_ONLY",
+        f"|status={output['status']}",
         flush=True,
     )
 

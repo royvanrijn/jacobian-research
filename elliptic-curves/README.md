@@ -7,9 +7,9 @@ small conductor. The original target was to find either
 - `rank E(Q) >= 30`.
 
 The second branch is proved and has since been improved to rank at least 31.
-The first branch is now completely replayed for two public candidates: point
-independence, global minimality, and every local conductor exponent are all
-checked repository-locally.
+The first branch is now completely replayed, and the current repository-local
+rank-at-least-21 conductor anchor is ICARM curve 394 at
+`log(N)=166.252098...`.
 
 [`MATH_STATUS.json`](../MATH_STATUS.json) is the sole status authority. This
 page is a map of that record, not a second status database.
@@ -22,6 +22,7 @@ page is a map of that record, not a second status database.
 | ICARM curve 356 | `rank E(Q) >= 29`, trivial torsion, global minimality, exact conductor and local fibre data; current size record at the rank-at-least-29 threshold | No unconditional rank upper bound; strong common-17-section fingerprint with curve 351, but no family or K3 identification |
 | ICARM curve 273 | `rank E(Q) >= 30`, independently replayed | No unconditional exact-rank statement |
 | ICARM curves 285 and 286 | Twenty-one displayed points on each curve are independent; trivial torsion; global minimality and exact conductor reconstructed from local Tate data | Rank lower bounds only; no unconditional upper bounds |
+| ICARM curve 394 | Compact Elkies `t=3/8` fibre; generic seventeen plus four public directions certify `rank E(Q) >= 21`; exact local conductor replay gives `log N=166.252098...` | Rank lower bound only; still above curve 245's `150.668907...` conductor line |
 | Fermigier `E22` | `rank E(Q) >= 22` | `log N=182.724910...`, so it misses the strict cutoff |
 | ICARM curve 245 | `rank E(Q) >= 20` and exact `log N=150.668907...` | One point short; no rank upper bound |
 | Fermigier--Mestre `u=28917/20` | `rank E(Q) >= 20` and exact `log N=159.934825...` | One point short; no rank upper bound |
@@ -34,6 +35,7 @@ The canonical statements are:
 - `ECR29-IC356`: [curve 356 rank-at-least-29 size record and construction fingerprint](notes/ICARM_CURVE356_RANK29_AND_CONSTRUCTION.md);
 - `ECR30`: [curve 273 rank-at-least-30 certificate](notes/ICARM_CURVE273_RANK30.md);
 - `EC-R21-ICARM`: [curves 285/286 point-independence replay](notes/ICARM_7FFF_ZIP_SEQUENCE.md);
+- `EC-R21-ICARM394`: [curve 394 compact specialization and conductor replay](notes/ICARM_CURVE394_RANK21.md);
 - `EC-R20-IC245`: [curve 245 low-conductor rank-20 replay](notes/ICARM_CURVE245_RANK20.md);
 - [conductor-first descent inputs for the four rank-19/20 near misses](notes/CONDUCTOR_FIRST_NEAR_MISS_DESCENT.md);
 <!-- status-consumer: EC-CF-NEARMISS-DESCENT-INPUTS 25c9f212e5162216 -->
@@ -60,21 +62,38 @@ arithmetic used by the active certificates.
 
 ## Active work
 
-There are four live arithmetic gates.
+There are five live arithmetic gates.
 
-1. Prove an unconditional upper bound for curve 302 or find a rank-at-least-32
+1. In the compact published Elkies `t` coordinate, retain the exact rank-25--28
+   positive controls, rank by weakest performance across at least three
+   disjoint prime ensembles, and compute the actual residual 2-Selmer quotient
+   before any expensive point search. The complete rank-28 discriminant
+   factorization and all bad-place known Kummer images are now pinned; the
+   original PARI, factored-PARI, and eclib attempts still have no completed
+   Selmer bound. The factor-supplied class-group worker now isolates its stall
+   in relation generation, while the exact factor-base-1000 BNF-free pilot is
+   far below a valid generation bound and has no noncanonical quotient gain.
+   The exact rank-28 local positive control further shows that all eleven
+   exceptional directions add zero bad-place signature rank. Full local-image
+   coverage is certified at only four odd places and infinity; a bounded
+   resumable norm-one-cover pilot certifies 60 selected local witnesses but no
+   everywhere-local class or obstruction. The eleven public complement points
+   are now also materialized as exact Kummer classes and two-covers with
+   rational witnesses, certifying the expected residual Selmer lower bound 11
+   while leaving the ambient upper bound open. None authorizes search. The
+   unconditional Magma job is generated but not run locally.
+2. Prove an unconditional upper bound for curve 302 or find a rank-at-least-32
    curve.
-2. Compute residual descent quotients for the four low-conductor rank-19/20
+3. Compute residual descent quotients for the four low-conductor rank-19/20
    near misses, construct any surviving covers, and search their surrounding
    families in conductor-first order.
-3. Complete the residual 2-Selmer calculation for curve 273; Selmer classes
+4. Complete the residual 2-Selmer calculation for curve 273; Selmer classes
    must not be promoted to Mordell--Weil directions without the remaining
    global argument.
-4. Continue the H3/rootless-MW17 equation transport documented in
-   [the curve-273 construction investigation](notes/ICARM_CURVE273_CONSTRUCTION_INVESTIGATION.md).
-   The characteristic-zero route now reaches the physical q4/orbit164
-   `2A3+2A1/MW9` child; q8/orbit376, q12/orbit4484, and the direct rootless
-   endpoint certificate remain open.
+5. Preserve the now-complete H3/rootless-MW17 equation transport as the exact
+   construction source for the compact arithmetic programme. Alternate suffix,
+   reverse-lift, and family-inference routes are parked unless they directly
+   support specialization.
 
 The low-conductor Fermigier/Mestre search remains useful, but its accumulated
 negative scans are historical calibration. They are indexed in the archive
@@ -84,7 +103,7 @@ and are not part of the active command surface.
 
 - [`scripts/`](scripts/) contains stable generation and replay entry points.
 - [`cas/`](cas/) contains the exact arithmetic modules, specialized CAS
-  checkers, and the few active search drivers used by the four gates above.
+  checkers, and the few active search drivers used by the five gates above.
 - [`ecsearch/`](ecsearch/) is the dependency-free exact arithmetic layer.
 - [`tests/`](tests/) contains current regression tests.
 - [`families/`](families/) contains normalized family equations and provenance.

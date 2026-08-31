@@ -26,9 +26,65 @@ Important distinctions made explicit by the catalogue:
 - The ICARM 285/286 analysis exactly proves independence of 21 displayed
   points and now independently replays global minimality and every local
   conductor exponent.
+- `icarm_curve394_rank21_v1.json` specializes the compact Elkies R17 family at
+  `t=3/8`, proves a generic-17 plus public-4 basis independent, and replays the
+  exact conductor locally.  It proves rank at least 21 at
+  `log(N)=166.252098...`, not exact rank 21.
 - `conductor_first_near_miss_descent_targets_v1.json` pins exact known-subgroup
   Kummer inputs for four fixed fibres; it does not claim a complete Selmer
   group or rank upper bound.
+- `conductor_first_family_anchor_pilot_v1.json` is the closed 27-fibre
+  Fermigier/Mestre anchor-neighborhood ledger. Nine sieve survivors have
+  exact global/local Tate data and full-dimensional known mod-2 Kummer
+  subgroups. The `u=481` fibre has an exact rank-at-least-14 point certificate;
+  no complete Selmer or residual-cover classification is claimed.
+- The Elkies compact-`t` artifacts certify the rank-25--28 positive controls
+  and the complete height-10000 three-block calibration. The PARI and eclib
+  rank-28 residual-descent artifacts are strict timeouts with no Selmer bound;
+  both explicitly forbid point search.
+- `elkies_2026_rank28_bad_place_kummer_ledger_v1.json` proves the complete
+  factorization of the rank-28 2-division cubic discriminant and contains all
+  thirteen finite/2-adic/real local blocks for the generic seventeen points.
+  Their combined coordinate rank is 15; this is a known-image calculation,
+  not an ambient `K(S,2)`, local-solubility, or Selmer certificate.
+- `elkies_2026_rank28_residual_2selmer_pari_factored_8g_v1.json` is the first
+  PARI descent supplied with that factor certificate. Its strict 600-second
+  run reached 5,698,514,944 bytes peak observed RSS but returned no Selmer
+  dimension, so it remains search-forbidden. The longer supervised artifact
+  has suffix `_8g_30min_v1`; its strict 1,800-second run reached
+  6,040,723,456 bytes peak observed RSS and likewise returned no dimension.
+- `elkies_2026_rank28_s_class_pari_v1.json` isolates the next PARI stage. The
+  exact factor-supplied maximal-order setup completes, but the strict
+  120-second run stops inside class-group relation generation before
+  `bnfcertify`; it is not an `S`-class or Selmer bound.
+- `elkies_2026_rank28_bnf_free_s_class_pilot_v1.json` audits 172 exact
+  canonical principal rows after a paired-special-ideal pilot. Its displayed
+  factor-base quotient dimension 141 is explicitly uncertified because bound
+  1,000 is below the 1,202,640 Bach/ERH generation threshold; the pilot found
+  no noncanonical relation and forbids point search.
+- `elkies_2026_rank28_generic17_local_signature_v1.json` recomputes all 53
+  bad-place coordinates for the generic 17 and public complement 11. The
+  generic and full rank-28 local-signature ranks are both 15, with zero
+  incremental rank from every exceptional direction; this is exact evidence
+  that known Kummer signatures are not a Mordell--Weil quotient or Selmer
+  bound.
+- `elkies_2026_rank28_generic17_local_coverage_v1.json` certifies full known-
+  point coverage at four of eleven odd bad primes and at the real place. The
+  other seven odd places and the two-adic place remain unresolved.
+- `elkies_2026_rank28_norm_one_local_pilot12_v1.json` is a bounded selected-
+  place audit of 12 of 49 norm-one cover candidates. Of 84 cover/place tasks,
+  60 have certified local points and 24 remain inconclusive; none has a
+  certified local obstruction. This is not class-group completion, everywhere
+  local solubility, Selmer membership, or search authorization.
+- `elkies_2026_rank28_public11_selmer_candidates_v1.json` records the exact
+  cubic Kummer classes `X(Q)-theta` of the eleven certified public complement
+  points. Their norms are displayed squares and their quotient independence
+  proves a residual 2-Selmer lower bound of 11.
+- `elkies_2026_rank28_public11_two_cover_controls_v1.json` materializes those
+  eleven intersections of quadrics and verifies `[1:0:0:1]` on each one.
+  `elkies_2026_rank28_public11_global_cover_witness_audit_v1.json` rechecks the
+  witnesses and records local solubility at every place. These are positive
+  controls, not an ambient Selmer enumeration or upper bound.
 - `newfamily_rank14_t83_6_v1.json` proves only rank at least 14; the separate
   `newfamily_rank14_t83_6_pari_exact_rank_v1.json` supplies the PARI interval
   `[14,14]` used for the exact-rank statement.

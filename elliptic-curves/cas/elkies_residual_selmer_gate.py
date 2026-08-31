@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import Mapping, Sequence
+from typing import Any, Mapping, Sequence
 
 
 SCHEMA = "elliptic-curves.elkies-2026-residual-2-selmer-gate.v1"
@@ -114,6 +114,26 @@ def require_expensive_search_gate(
     return document
 
 
+def require_gate_for_specialization(
+    path: Path, specialization: Mapping[str, Any]
+) -> Mapping[str, object]:
+    """Bind a passing gate to an exact q12o5867 specialization artifact."""
+
+    parameter = specialization.get("parameter")
+    minimal = specialization.get("global_minimal_specialization")
+    if not isinstance(parameter, dict) or not isinstance(minimal, dict):
+        raise ResidualSelmerGateError("specialization lacks exact parameter/model data")
+    affine_value = parameter.get("affine_value")
+    model = minimal.get("model")
+    if not isinstance(affine_value, str) or not isinstance(model, list):
+        raise ResidualSelmerGateError("specialization has malformed parameter/model data")
+    return require_expensive_search_gate(
+        path,
+        expected_parameter=affine_value,
+        expected_model=model,
+    )
+
+
 __all__ = [
     "INCOMPLETE_STATUS",
     "PASS_STATUS",
@@ -121,5 +141,6 @@ __all__ = [
     "ResidualSelmerGateError",
     "SCHEMA",
     "gate_record",
+    "require_gate_for_specialization",
     "require_expensive_search_gate",
 ]

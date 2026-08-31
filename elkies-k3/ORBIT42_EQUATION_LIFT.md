@@ -8,8 +8,12 @@ D12/MW5 --q6 orbit42--> A11/MW6
 
 continuation.  It is the canonical note for the orbit42 milestones below.
 The complete lattice/chamber corridor to the pinned rootless/MW17 frame is
-already exact.  The orbit42 equation edge is now exact; the later equation
-pencils after A11 remain open.
+already exact. The orbit42 equation edge is exact. The later physical equation
+route is now also complete through q8/orbit376 and q12/orbit5867 to the
+source-identified, saturated R17 endpoint; see
+[`PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md`](PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md).
+The detailed milestones below retain the proof boundary as it stood while the
+orbit42 edge itself was being closed.
 
 ## Exact parent and orbit42 profile
 

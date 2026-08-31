@@ -77,6 +77,18 @@ sage -python elliptic-curves/cas/run_fermigier_rank20_minkowski_specialq.py \
   --relation-ledger artifacts/local/elliptic-curves/curve273_minkowski_relations.json
 ```
 
+The `--elkies-rank28` preset loads the published `t=-9529/5471` cubic and all
+twelve rational bad primes from the proved bad-place ledger. The same factor
+hints are consumed by `NumberField` construction, canonical-row augmentation,
+and the final audit, avoiding a repeated factorization of the 168-digit
+polynomial discriminant. The pinned factor-base-1000 paired-special-ideal
+pilot samples 10,288 algebraic integers and closes no noncanonical relation.
+After adding 172 exact canonical `(p)` generators, its 327-column model has 26
+`S` columns, relation rank 172, and displayed quotient dimension 141. This is
+`UNCERTIFIED_FACTOR_BASE`: 1,000 is below its Bach/ERH generation bound
+1,202,640, so the displayed dimension is not an `S`-class or Selmer upper
+bound. The exact command chain is in [`../REPRODUCE.md`](../REPRODUCE.md).
+
 This bounded full-S tranche has 1,225 factor-base ideals, 30 S-columns, and
 21,916 exact sampled generators. It closes 60 cycles of relation rank one.
 Augmenting its ledger with all 671 free canonical `(p)` rows raises the exact
@@ -311,6 +323,45 @@ For Fermigier this certifies full known-point coverage at five of eleven odd
 bad primes and at the real place; primes `3,5,7,31,79,1049` and the two-adic
 place remain unresolved. Thus it narrows the local-descent work without
 silently replacing it by the known Mordell--Weil image.
+
+The published Elkies rank-28 fibre is now a stronger positive control for
+this distinction. The exact builder
+[`build_elkies_2026_rank28_local_coverage.py`](../cas/build_elkies_2026_rank28_local_coverage.py)
+recomputes 53 bad-place coordinates for both the generic seventeen and the
+certified eleven-point public complement. The generic local-signature rank is
+15, and the rank after adjoining all eleven globally independent exceptional
+directions is still 15. Every individual bad-place block has incremental rank
+zero. Thus a signature map can completely miss genuine Mordell--Weil quotient
+gain; it cannot be used as either a lower or an upper bound for that quotient.
+
+The corresponding coverage audit proves equality with the full local Kummer
+image at odd primes `3`, `19`, `20650099`, and
+`315574902691581877528345013999136728634663121`, and at the real place. It
+leaves seven odd primes and the two-adic place unresolved. These exact local
+equalities reduce later membership tests, but do not address the global
+`S`-class quotient.
+
+For explicit norm-one candidates, use
+[`run_bnf_free_two_cover_local_supervisor.py`](../cas/run_bnf_free_two_cover_local_supervisor.py)
+instead of a single monolithic cover audit. It gives each `(cover,p)` pair its
+own process group, wall/RSS limits, and metadata-bound cache block, so a hard
+singular Hensel tree cannot erase completed local certificates. Its pinned
+rank-28 pilot tests 12 of 49 bounded norm-one covers at seven odd primes. It
+certifies 60 local points; 19 singular lift trees hit the state cap and five
+workers time out. No local obstruction is found. All 24 incomplete
+mathematical cases remain inconclusive, and untested finite places, the real
+place, and global completeness remain open.
+
+There is now a genuine positive-control suite alongside that synthetic pilot.
+[`build_elkies_2026_rank28_public_selmer_controls.py`](../cas/build_elkies_2026_rank28_public_selmer_controls.py)
+takes the eleven public complement points already certified independent modulo
+the generic seventeen. For each point `Q`, it records the exact Kummer class
+`alpha=X(Q)-theta`, verifies `Norm(alpha)=Z(Q)^2`, and supplies the associated
+cover point `[1:0:0:1]`. The generic cover builder and local audit independently
+recheck all eleven rational witnesses. Consequently these are genuine Selmer
+classes and prove residual 2-Selmer dimension at least 11 on the published
+rank-28 fibre. This is the expected positive-control floor, not the missing
+ambient upper bound: rank 32 still requires residual dimension at least 15.
 
 Those certified place factors can already eliminate a candidate before the
 unresolved local work. The coverage mode uses only these exact local spans and

@@ -69,6 +69,25 @@ def cover_for(alpha, coefficients, ring):
     }
 
 
+def verify_rational_cover_witness(alpha, coefficients, witness, ring):
+    """Verify a projective rational point on the two-cover, exactly."""
+
+    if len(witness) != 4 or all(value == 0 for value in witness):
+        raise ValueError("a rational cover witness must be a nonzero projective 4-tuple")
+    u, v, w, z = ring.gens()
+    beta = [u, v, w]
+    constant, theta_coefficient, theta_squared_coefficient = multiply_mod_cubic(
+        alpha,
+        multiply_mod_cubic(beta, beta, coefficients),
+        coefficients,
+    )
+    first = theta_coefficient + z**2
+    if first(*witness) != 0 or theta_squared_coefficient(*witness) != 0:
+        raise ArithmeticError("the declared rational witness misses the two-cover")
+    affine_x = None if witness[3] == 0 else constant(*witness) / witness[3] ** 2
+    return affine_x
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--candidates", type=Path, required=True)
@@ -88,14 +107,30 @@ def main() -> None:
         alpha = [rational(value) for value in candidate["generator_coefficients"]]
         if len(alpha) != 3:
             raise ValueError("a cubic candidate needs three power-basis coordinates")
-        covers.append(
-            {
-                "label": str(candidate["label"]),
-                "alpha_coefficients": [str(value) for value in alpha],
-                "norm": str(candidate["norm"]),
-                "quadrics": cover_for(alpha, coefficients, ring),
-            }
-        )
+        cover = {
+            "label": str(candidate["label"]),
+            "alpha_coefficients": [str(value) for value in alpha],
+            "norm": str(candidate["norm"]),
+            "quadrics": cover_for(alpha, coefficients, ring),
+        }
+        declared_witness = candidate.get("rational_cover_witness")
+        if declared_witness is not None:
+            witness = [rational(value) for value in declared_witness]
+            affine_x = verify_rational_cover_witness(
+                alpha, coefficients, witness, ring
+            )
+            cover.update(
+                {
+                    "rational_cover_witness": [str(value) for value in witness],
+                    "rational_cover_witness_verified": True,
+                    "rational_witness_affine_x": (
+                        None if affine_x is None else str(affine_x)
+                    ),
+                }
+            )
+        if "source_elliptic_point" in candidate:
+            cover["source_elliptic_point"] = candidate["source_elliptic_point"]
+        covers.append(cover)
 
     output = {
         "schema": OUTPUT_SCHEMA,

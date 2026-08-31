@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 from fractions import Fraction
+from hashlib import sha256
 import json
 from pathlib import Path
 
@@ -30,6 +31,7 @@ from sage.all import (
     RealIntervalField,
     ZZ,
     factorial,
+    pari,
     prime_range,
 )
 
@@ -74,6 +76,13 @@ def coefficient_field(ledger: dict):
     ]
     if len(coefficients) != 4 or coefficients[-1] != 1:
         raise ValueError("ledger must define a monic cubic polynomial")
+    if ledger.get("curve_preset") == "elkies-2026-rank28":
+        from run_elkies_2026_rank28_s_class_pari import validate_inputs
+
+        _, _, certified_coefficients, factor_hint_primes = validate_inputs()
+        if coefficients != [QQ(value) for value in certified_coefficients]:
+            raise ValueError("Elkies rank-28 ledger has the wrong defining cubic")
+        pari.addprimes(factor_hint_primes)
     ring = PolynomialRing(QQ, "x")
     x = ring.gen()
     return NumberField(sum(value * x**index for index, value in enumerate(coefficients)), "theta")
@@ -395,6 +404,22 @@ def audit(ledger: dict, *, assume_erh: bool, verify_relations: bool) -> dict:
     output = {
         "protocol": "BNFFREECLASS-v1",
         "classification": classification,
+        "collector": {
+            "status": ledger.get("status"),
+            "curve_preset": ledger.get("curve_preset"),
+            "special_ideal_mode": ledger.get("special_ideal_mode"),
+            "special_residue_degree": ledger.get("special_residue_degree"),
+            "special_primes_in_factor_base": ledger.get(
+                "special_primes_in_factor_base"
+            ),
+            "sampled_generator_count": len(ledger.get("generators", ())),
+            "noncanonical_closed_relation_count": sum(
+                relation.get("source") != CANONICAL_SOURCE
+                for relation in ledger.get("closed_relations", ())
+            ),
+            "factor_hint_certificate": ledger.get("factor_hint_certificate"),
+            "early_quotient": ledger.get("collection_early_quotient"),
+        },
         "defining_polynomial_ascending": ledger["defining_polynomial_ascending"],
         "field_discriminant": str(field.discriminant()),
         "field_degree": int(field.degree()),
@@ -437,6 +462,12 @@ def audit(ledger: dict, *, assume_erh: bool, verify_relations: bool) -> dict:
             "the resulting K(S,2) envelope. It does not impose the norm or "
             "local conditions of elliptic 2-descent."
         ),
+        "selmer_claim": {
+            "completed": False,
+            "residual_two_selmer_quotient_dimension": None,
+            "all_local_solubility_conditions_completed": False,
+            "expensive_search_authorized": False,
+        },
     }
     return output
 
@@ -464,6 +495,10 @@ def main() -> None:
     if not isinstance(ledger, dict):
         raise ValueError("relation ledger must be a JSON object")
     output = audit(ledger, assume_erh=args.assume_erh, verify_relations=True)
+    output["relation_ledger"] = {
+        "path": str(args.relation_ledger.resolve()),
+        "sha256": sha256(args.relation_ledger.read_bytes()).hexdigest(),
+    }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(output, indent=2, sort_keys=True) + "\n")
     print(

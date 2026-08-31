@@ -48,21 +48,28 @@ def validate_candidate(record: Mapping[str, Any]) -> str:
         raise ValueError("candidate id is required")
     sieve = record.get("cheap_sieve")
     tate = record.get("tate")
+    subgroup = record.get("known_subgroup")
     selmer = record.get("residual_selmer")
     covers = record.get("residual_covers")
     recovery = record.get("point_recovery")
     if sieve is None:
-        if any(value is not None for value in (tate, selmer, covers, recovery)):
+        if any(
+            value is not None
+            for value in (tate, subgroup, selmer, covers, recovery)
+        ):
             raise ValueError("later stages require the cheap sieve")
         return "cheap_sieve"
     if sieve.get("status") == "reject":
-        if any(value is not None for value in (tate, selmer, covers, recovery)):
+        if any(
+            value is not None
+            for value in (tate, subgroup, selmer, covers, recovery)
+        ):
             raise ValueError("a sieve rejection cannot have later stages")
         return "rejected"
     if sieve.get("status") != "pass":
         raise ValueError("cheap_sieve status must be pass or reject")
     if tate is None:
-        if any(value is not None for value in (selmer, covers, recovery)):
+        if any(value is not None for value in (subgroup, selmer, covers, recovery)):
             raise ValueError("Selmer/cover/point stages require exact Tate data")
         return "tate"
     if tate.get("status") != "complete" or not tate.get("global_minimal"):
@@ -71,6 +78,30 @@ def validate_candidate(record: Mapping[str, Any]) -> str:
         return "tate"
     if not tate.get("conductor") or not tate.get("local_reductions"):
         raise ValueError("completed Tate data require conductor and local reductions")
+    if subgroup is None:
+        if any(value is not None for value in (selmer, covers, recovery)):
+            raise ValueError(
+                "Selmer/cover/point stages require a certified known subgroup"
+            )
+        return "known_subgroup"
+    if subgroup.get("status") != "complete":
+        if any(value is not None for value in (selmer, covers, recovery)):
+            raise ValueError(
+                "later stages require a completed known-subgroup certificate"
+            )
+        return "known_subgroup"
+    known_rank = int(subgroup["certified_rank_lower_bound"])
+    known_kummer_dimension = int(subgroup["kummer_image_dimension"])
+    if known_rank < 0 or known_kummer_dimension < 0:
+        raise ValueError("known rank and Kummer dimension cannot be negative")
+    if known_kummer_dimension != known_rank:
+        if any(value is not None for value in (selmer, covers, recovery)):
+            raise ValueError(
+                "relative Selmer requires a full-dimensional known Kummer image"
+            )
+        return "known_subgroup"
+    if not subgroup.get("exact_point_membership_checked"):
+        raise ValueError("known-subgroup points require exact curve membership checks")
     if selmer is None:
         if any(value is not None for value in (covers, recovery)):
             raise ValueError("cover/point stages require a residual Selmer result")
@@ -79,6 +110,8 @@ def validate_candidate(record: Mapping[str, Any]) -> str:
         if any(value is not None for value in (covers, recovery)):
             raise ValueError("later stages require a complete residual Selmer result")
         return "residual_selmer"
+    if int(selmer.get("known_kummer_dimension", -1)) != known_kummer_dimension:
+        raise ValueError("residual Selmer quotient used the wrong known Kummer dimension")
     residual_dimension = int(selmer["residual_dimension"])
     if residual_dimension < 0:
         raise ValueError("residual dimension cannot be negative")

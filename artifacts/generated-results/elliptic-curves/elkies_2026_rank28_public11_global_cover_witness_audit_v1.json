@@ -1,0 +1,799 @@
+{
+  "claim_boundary": [
+    "A verified global rational cover witness proves local solubility at every place for that cover.",
+    "Finite-reduction witnesses and obstructions retain their one-place meanings.",
+    "This audit gives no ambient class-group completeness or Selmer upper bound."
+  ],
+  "covers": [
+    {
+      "alpha_coefficients": [
+        "-8496600365017524293168549852",
+        "-1",
+        "0"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 2
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 3
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 5
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 7
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 11
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 13
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 17
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 19
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 48463
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 20650099
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 315574902691581877528345013999136728634663121
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 376018840263193489397987439236873583997122096511452343225772113000611087671413
+        }
+      ],
+      "global_rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "global_rational_cover_witness_verified": true,
+      "label": "public-complement-Q1",
+      "primitive_integral_quadrics": [
+        "-u^2 - 16993200730035048586337099704*u*v - 321084198649208425360531331349416684014883684994863304024*v^2 - 642168397298416850721062662698833368029767369989726608048*u*w - 1042601929124535947236344620283170987185426172670278806912917977559460831902405074096*v*w - 84344568198905188988099893926550710646833355005920694225540221023407444103370527864918415426652663662179266365576*w^2 + z^2",
+        "-2*u*v - 8496600365017524293168549855*v^2 - 16993200730035048586337099710*u*w - 642168397298416850721062662749812970219872515748737907178*v*w - 521300964562267973618172311104838089540338362416733397581178444109539189574309397815*w^2"
+      ],
+      "rational_witness_affine_x": "-8496600365017524293168549852"
+    },
+    {
+      "alpha_coefficients": [
+        "9338039464138807027539018148",
+        "-1",
+        "0"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 2
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 3
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 5
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 7
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 11
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 13
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 17
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 19
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 48463
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 20650099
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 315574902691581877528345013999136728634663121
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 376018840263193489397987439236873583997122096511452343225772113000611087671413
+        }
+      ],
+      "global_rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "global_rational_cover_witness_verified": true,
+      "label": "public-complement-Q2",
+      "primitive_integral_quadrics": [
+        "-u^2 + 18676078928277614055078036296*u*v - 321084198649208425360531331349416684014883684994863304024*v^2 - 642168397298416850721062662698833368029767369989726608048*u*w + 10410240146359296250944590661813348122205902470757706138594523551756696508060902189904*v*w - 123702464332867345951365352691966096370995966622828635124501320953273872070194432634010640176004287180474149565576*w^2 + z^2",
+        "-2*u*v + 9338039464138807027539018145*v^2 + 18676078928277614055078036290*u*w - 642168397298416850721062662642805131244934527824492499178*v*w + 5205120073179648125472295329943421465155325959297259075333054079010946462293712346185*w^2"
+      ],
+      "rational_witness_affine_x": "9338039464138807027539018148"
+    },
+    {
+      "alpha_coefficients": [
+        "-6686944216249476255516154652",
+        "-1",
+        "0"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 2
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 3
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 5
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 7
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 11
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 13
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 17
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 19
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 48463
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 20650099
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 315574902691581877528345013999136728634663121
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 376018840263193489397987439236873583997122096511452343225772113000611087671413
+        }
+      ],
+      "global_rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "global_rational_cover_witness_verified": true,
+      "label": "public-complement-Q3",
+      "primitive_integral_quadrics": [
+        "-u^2 - 13373888432498952511032309304*u*v - 321084198649208425360531331349416684014883684994863304024*v^2 - 642168397298416850721062662698833368029767369989726608048*u*w + 119502059591066874725257405756237423346558905990719967170047422320395658276391495504*v*w - 88338159290381022372592201454169170690299591411518545916410095985286902060973204637282451571855929972077422845576*w^2 + z^2",
+        "-2*u*v - 6686944216249476255516154655*v^2 - 13373888432498952511032309310*u*w - 642168397298416850721062662738955033327264227522823535978*v*w + 59751029795533437362628701914866115725654176913765989476591161169301487853960443785*w^2"
+      ],
+      "rational_witness_affine_x": "-6686944216249476255516154652"
+    },
+    {
+      "alpha_coefficients": [
+        "8556521040556626665971928548",
+        "-1",
+        "0"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 2
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 3
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 5
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 7
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 11
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 13
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 17
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 19
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 48463
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 20650099
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 315574902691581877528345013999136728634663121
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 376018840263193489397987439236873583997122096511452343225772113000611087671413
+        }
+      ],
+      "global_rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "global_rational_cover_witness_verified": true,
+      "label": "public-complement-Q4",
+      "primitive_integral_quadrics": [
+        "-u^2 + 17113042081113253331943857096*u*v - 321084198649208425360531331349416684014883684994863304024*v^2 - 642168397298416850721062662698833368029767369989726608048*u*w + 9908373712828342223646288590338903280701204877263245312322418314547480296465605089104*v*w - 121977791379739346146618153891058542069036523145457754941422911878345797266455506616326092241742179888737750525576*w^2 + z^2",
+        "-2*u*v + 8556521040556626665971928545*v^2 + 17113042081113253331943857090*u*w - 642168397298416850721062662647494241786427609993895036778*v*w + 4954186856414171111823144294206199044402977162550028662189967794594098733241959989385*w^2"
+      ],
+      "rational_witness_affine_x": "8556521040556626665971928548"
+    },
+    {
+      "alpha_coefficients": [
+        "11102905067378286598821834148",
+        "-1",
+        "0"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 2
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 3
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 5
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 7
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 11
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 13
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 17
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 19
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 48463
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 20650099
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 315574902691581877528345013999136728634663121
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 376018840263193489397987439236873583997122096511452343225772113000611087671413
+        }
+      ],
+      "global_rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "global_rational_cover_witness_verified": true,
+      "label": "public-complement-Q5",
+      "primitive_integral_quadrics": [
+        "-u^2 + 22205810134756573197643668296*u*v - 321084198649208425360531331349416684014883684994863304024*v^2 - 642168397298416850721062662698833368029767369989726608048*u*w + 11543581062238696489614177826658310468851041157334436155319946415714331215850605357904*v*w - 127597210611350940002720880948019780160936151493535249361762285593315834336390557470527022000719804207393547965576*w^2 + z^2",
+        "-2*u*v + 11102905067378286598821834145*v^2 + 22205810134756573197643668290*u*w - 642168397298416850721062662632215937625497650396795603178*v*w + 5771790531119348244807088912365902638477895302585624083711649301418919132330109274185*w^2"
+      ],
+      "rational_witness_affine_x": "11102905067378286598821834148"
+    },
+    {
+      "alpha_coefficients": [
+        "5977542917308755830167335268",
+        "-1",
+        "0"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 2
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 3
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 5
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 7
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 11
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 13
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 17
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 19
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 48463
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 20650099
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 315574902691581877528345013999136728634663121
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 376018840263193489397987439236873583997122096511452343225772113000611087671413
+        }
+      ],
+      "global_rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "global_rational_cover_witness_verified": true,
+      "label": "public-complement-Q6",
+      "primitive_integral_quadrics": [
+        "-u^2 + 11955085834617511660334670536*u*v - 321084198649208425360531331349416684014883684994863304024*v^2 - 642168397298416850721062662698833368029767369989726608048*u*w + 8252235464754578045736456501865507379910613863954704920804005439027897118512990371664*v*w - 116286442741421934871065002736375507301459532872189318597523570142530202897661674074560915230759261631266755453576*w^2 + z^2",
+        "-2*u*v + 5977542917308755830167335265*v^2 + 11955085834617511660334670530*u*w - 642168397298416850721062662662968110525914835008722596458*v*w + 4126117732377289022868228249969501094007681655895758466407550553725076306743411291145*w^2"
+      ],
+      "rational_witness_affine_x": "5977542917308755830167335268"
+    },
+    {
+      "alpha_coefficients": [
+        "7473752914483549434036261028",
+        "-1",
+        "0"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 2
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 3
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 5
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 7
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 11
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 13
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 17
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 19
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 48463
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 20650099
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 315574902691581877528345013999136728634663121
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 376018840263193489397987439236873583997122096511452343225772113000611087671413
+        }
+      ],
+      "global_rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "global_rational_cover_witness_verified": true,
+      "label": "public-complement-Q7",
+      "primitive_integral_quadrics": [
+        "-u^2 + 14947505828967098868072522056*u*v - 321084198649208425360531331349416684014883684994863304024*v^2 - 642168397298416850721062662698833368029767369989726608048*u*w + 9213054240662184058513089526462897365005440707005487144343287396281100220547320888144*v*w - 119588313607753134787820868547011724222455816007486294199160245849335232837452780870593108038296118017960287677576*w^2 + z^2",
+        "-2*u*v + 7473752914483549434036261025*v^2 + 14947505828967098868072522050*u*w - 642168397298416850721062662653990850542866073385509041898*v*w + 4606527120331092029256544762268196086555095077421149578190657422326251000195396881225*w^2"
+      ],
+      "rational_witness_affine_x": "7473752914483549434036261028"
+    },
+    {
+      "alpha_coefficients": [
+        "9393442163672100678606531748",
+        "-1",
+        "0"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 2
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 3
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 5
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 7
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 11
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 13
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 17
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 19
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 48463
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 20650099
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 315574902691581877528345013999136728634663121
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 376018840263193489397987439236873583997122096511452343225772113000611087671413
+        }
+      ],
+      "global_rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "global_rational_cover_witness_verified": true,
+      "label": "public-complement-Q8",
+      "primitive_integral_quadrics": [
+        "-u^2 + 18786884327344201357213063496*u*v - 321084198649208425360531331349416684014883684994863304024*v^2 - 642168397298416850721062662698833368029767369989726608048*u*w + 10445818009124597182097063988623794000829295791858873868850801510916998817634011642704*v*w - 123824728293040386096300393894487237181755100801884493870286675352673524174889466660546437409982004716545526205576*w^2 + z^2",
+        "-2*u*v + 9393442163672100678606531745*v^2 + 18786884327344201357213063490*u*w - 642168397298416850721062662642472715047734765918087417578*v*w + 5222909004562298591048531993348644404467022619847842940461691682886897259939874694985*w^2"
+      ],
+      "rational_witness_affine_x": "9393442163672100678606531748"
+    },
+    {
+      "alpha_coefficients": [
+        "6838763072933418093336034228",
+        "-1",
+        "0"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 2
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 3
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 5
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 7
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 11
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 13
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 17
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 19
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 48463
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 20650099
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 315574902691581877528345013999136728634663121
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 376018840263193489397987439236873583997122096511452343225772113000611087671413
+        }
+      ],
+      "global_rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "global_rational_cover_witness_verified": true,
+      "label": "public-complement-Q9",
+      "primitive_integral_quadrics": [
+        "-u^2 + 13677526145866836186672068456*u*v - 321084198649208425360531331349416684014883684994863304024*v^2 - 642168397298416850721062662698833368029767369989726608048*u*w + 8805283831813160551560907247057571288453759623376709937695988160561676900599015601744*v*w - 118187003322305480837904215019205619614424357879470291070364970597678519416264621398968623979608434401512521357576*w^2 + z^2",
+        "-2*u*v + 6838763072933418093336034225*v^2 + 13677526145866836186672068450*u*w - 642168397298416850721062662657800789592166861429710402698*v*w + 4402641915906580275780453622565533048279254535606760974861292895892588158154942196825*w^2"
+      ],
+      "rational_witness_affine_x": "6838763072933418093336034228"
+    },
+    {
+      "alpha_coefficients": [
+        "80314344311987418115113315748",
+        "-1",
+        "0"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 2
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 3
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 5
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 7
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 11
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 13
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 17
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 19
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 48463
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 20650099
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 315574902691581877528345013999136728634663121
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 376018840263193489397987439236873583997122096511452343225772113000611087671413
+        }
+      ],
+      "global_rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "global_rational_cover_witness_verified": true,
+      "label": "public-complement-Q10",
+      "primitive_integral_quadrics": [
+        "-u^2 + 160628688623974836230226631496*u*v - 321084198649208425360531331349416684014883684994863304024*v^2 - 642168397298416850721062662698833368029767369989726608048*u*w + 55988980076666093100241679129749126003899050988355142591860180365244544751895009274704*v*w - 280334617319060058499901423445068835117005791062928028654925080250034074857573916971310751830521103649205167805576*w^2 + z^2",
+        "-2*u*v + 80314344311987418115113315745*v^2 + 160628688623974836230226631490*u*w - 642168397298416850721062662216947302157842861299046713578*v*w + 27994490038333046550120839563911310406001900218095977302604669229385508083998934566985*w^2"
+      ],
+      "rational_witness_affine_x": "80314344311987418115113315748"
+    },
+    {
+      "alpha_coefficients": [
+        "11902997803791985059788365348",
+        "-1",
+        "0"
+      ],
+      "finite_places": [
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 2
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 3
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 5
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 7
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 11
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 13
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 17
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 19
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 48463
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 20650099
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 315574902691581877528345013999136728634663121
+        },
+        {
+          "classification": "PROVED_QP_POINT_BY_GLOBAL_Q_WITNESS",
+          "rational_prime": 376018840263193489397987439236873583997122096511452343225772113000611087671413
+        }
+      ],
+      "global_rational_cover_witness": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "global_rational_cover_witness_verified": true,
+      "label": "public-complement-Q11",
+      "primitive_integral_quadrics": [
+        "-u^2 + 23805995607583970119576730696*u*v - 321084198649208425360531331349416684014883684994863304024*v^2 - 642168397298416850721062662698833368029767369989726608048*u*w + 12057375332471585913819795428508734312235729030637067457969923160449826868079168455504*v*w - 129362873788121554969668749479269132602101714512080976459696588151070348532733991633666004837071687620274070845576*w^2 + z^2",
+        "-2*u*v + 11902997803791985059788365345*v^2 + 23805995607583970119576730690*u*w - 642168397298416850721062662627415381207015459630996415978*v*w + 6028687666235792956909897713291114560170239239236939735043838508414390244593089603785*w^2"
+      ],
+      "rational_witness_affine_x": "11902997803791985059788365348"
+    }
+  ],
+  "global_rational_witness_cover_count": 11,
+  "max_enumeration_prime": 2,
+  "max_lift_precision": 12,
+  "max_lift_states": 10000,
+  "protocol": "BNFFREECOVERLOCAL-v1",
+  "status": "GLOBAL_RATIONAL_POINT_POSITIVE_CONTROL_AUDIT",
+  "tested_rational_primes": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    48463,
+    20650099,
+    315574902691581877528345013999136728634663121,
+    376018840263193489397987439236873583997122096511452343225772113000611087671413
+  ]
+}

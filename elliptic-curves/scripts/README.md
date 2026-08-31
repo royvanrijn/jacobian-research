@@ -19,12 +19,20 @@ metadata. `verify_k3_chain_ledger.py` checks the cross-programme K3 ledger.
 `verify_icarm_curve273_rank30_sage.py` is the independent Sage implementation
 for the curve-273 certificate.
 
+Current high-rank and conductor replays are catalogued in
+[`../REPRODUCE.md`](../REPRODUCE.md), including curve 302 at rank at least 31,
+the full curve-285/286 local conductor replays, the Elkies rank-25--28
+positive controls, and the fail-closed residual-descent entry points.
+
 ## Active searches
 
-`search_fermigier_denominator_offsets.py` is the stable denominator-aware
-low-conductor search. `evaluate_fermigier_specialization.py` is the common
-specialization evaluator. Raw output belongs in
-`artifacts/local/elliptic-curves/`.
+The compact published Elkies `t` chart is the active high-rank search surface.
+Its exact positive controls and residual 2-Selmer gate must be applied before
+any expensive point search. The retained conductor-first work starts from the
+four exact rank-19/20 near-miss descent inputs. The older
+`search_fermigier_denominator_offsets.py` and
+`evaluate_fermigier_specialization.py` remain stable calibration tools. Raw
+output belongs in `artifacts/local/elliptic-curves/`.
 
 The much larger set of completed search entry points is preserved under
 [`archive/elliptic-curves/cas/`](../../archive/elliptic-curves/cas/) and indexed

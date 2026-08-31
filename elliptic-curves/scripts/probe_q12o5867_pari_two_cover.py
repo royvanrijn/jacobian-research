@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# <!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE f5600026fe1e9656 -->
+# <!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE bb81d843718bdd31 -->
 """Run a strictly bounded PARI 2-cover search on one q12o5867 fibre.
 
 The input is an exact q12o5867 specialization artifact containing the global
@@ -43,7 +43,7 @@ sys.path.insert(0, str(CAS))
 sys.path.insert(0, str(SCRIPTS))
 
 from elliptic_candidate_record import is_on_weierstrass_curve  # noqa: E402
-from elkies_residual_selmer_gate import require_expensive_search_gate  # noqa: E402
+from elkies_residual_selmer_gate import require_gate_for_specialization  # noqa: E402
 from probe_q12o5867_mwrank import (  # noqa: E402
     exact_escape_records,
     parse_point,
@@ -246,8 +246,8 @@ def exact_candidate_records(
 
 def run(args: argparse.Namespace) -> int:
     artifact, model = load_specialization(args.input)
-    descent_gate = require_expensive_search_gate(
-        args.residual_selmer_gate, expected_model=model
+    descent_gate = require_gate_for_specialization(
+        args.residual_selmer_gate, artifact
     )
     executable = shutil.which("gp")
     if executable is None:

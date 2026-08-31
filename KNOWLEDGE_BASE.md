@@ -7,7 +7,7 @@ registry.  For the current state of every named result, use
 [`STATUS.md`](STATUS.md).  For the order in which the programmes developed,
 use [`RESEARCH_TIMELINE.md`](RESEARCH_TIMELINE.md).
 
-Snapshot date: **2026-08-25**.
+Snapshot date: **2026-08-31**.
 
 ## Evidence ladder
 
@@ -39,6 +39,7 @@ dependencies, checker, and software lock.
 | Exact modular discovery followed by characteristic-zero certification | Keller searches, GVC/SIC calculations, elliptic curves, and Elkies--K3 neighbours | Use finite fields to discover sparse structure, then lift or reconstruct and verify literal identities over the intended field.  A good-prime result is evidence until that final step. |
 | Independent low-dependency replay | Foundational map, proof-carrying arithmetic compiler, elliptic-curve independence, and several certificates | Freeze a compact certificate and rederive its decisive identities with a genuinely separate arithmetic path where risk warrants it. |
 | Finite-quotient independence | High-rank elliptic-curve specializations | Verify points exactly, prove trivial relevant torsion, and obtain full column rank in products of good-reduction quotients.  This proves a lower bound, not an upper bound. |
+| Positive-control calibration plus fail-closed descent gates | Elkies rank-25--28 fibres and the rank-32 search | Require a heuristic to rank every exact positive control across disjoint prime blocks, then require the actual residual Selmer quotient on the same minimal curve before any expensive point search.  A timeout, signature, or incomplete local-class list authorizes nothing. |
 | Neron--Severi lattice navigation plus marked equation lifts | Elkies--K3 programme | Search primitive embedded hyperbolic planes cheaply in the lattice, but carry the full marking and then realize a selected divisor by an exact Riemann--Roch/quartic/Jacobian calculation.  ADE/MW labels alone do not identify a state. |
 | Exact group-law decomposition of difficult sections | Q80 terminal closeout and H3 A11-to-2A5 lift | Recover a hard target from a small exact section shell and modular marking rather than solving one large nonlinear system from scratch. |
 | Recurrence and branch-value interpolation | H3 A11-to-2A5 and q4/orbit164 equation lifts | Look for forced boundary coefficients, rational branch values, and denominator-square cancellation before nonlinear elimination; these reduced large-looking RR problems to exact linear calculations. |
@@ -81,8 +82,8 @@ diagnostics are archived because they used the wrong q8 normalization.
 | Cancellation and stable boundary | Controlled suspensions, cubic normalization packages, and many intrinsic boundary invariants are exact | Extract a canonical minimal-boundary package or prove the remaining point-flatness/curvilinearity statements. |
 | Plane Jacobian programme | The audited `(72,108)` row is closed and large parts of the logarithmic/conductor compiler are exact | The active geometric frontier is parked pending actual global branch-carrier and compactification data; no proof of `JC(2)` is claimed. |
 | HC4/DC2/Hessian programme | Large scalar, rank-two, repeated-factor, Schur, Wronskian, and polar packets are closed | Mixed/coisotropic Schur descent and the direct degree-five residual packets remain open; none of this is an unrestricted `HC(4)` proof. |
-| Elliptic curves over `Q` | Curve 302 has unconditional rank at least 31 with exact local arithmetic; curves 285/286 have 21 independent points | Exact rank 31 or rank at least 32; repository-local low-conductor replay for 285/286; residual 2-Selmer closure for curve 273. |
-| Elkies--K3 reconstruction | Source equations are exact through the physical `q4/orbit164` child `2A3+2A1/MW9`; the `q8/orbit376` horizontal is exact over `QQ(t)`, and a full marked lattice route continues through preferred `q12/orbit5867` (with `q12/orbit4484` as fallback) to pinned rootless `MW17` | Compile the resolved q8 pencil and the final q12 characteristic-zero equation, then certify the rootless endpoint directly with 17 sections, height Gram, Picard upper bound, saturation, and source identity. |
+| Elliptic curves over `Q` | Curve 302 has unconditional rank at least 31 with exact local arithmetic; curves 285/286 have fully replayed rank-at-least-21 and sub-cutoff conductor certificates | Exact rank 31 or rank at least 32; residual descent for the four rank-19/20 conductor near misses and curve 273; sharper exact conductor/rank records. |
+| Elkies--K3 reconstruction | The complete physical H3 equation route reaches the rootless `24I1/MW17` endpoint, which has exact source identity, geometric Picard rank 19, and full saturated determinant-948 lattice R17; the compact published chart and all seventeen sections are identified exactly | Compute genuine residual 2-Selmer quotients before rank-32 point search. The complete 39,120-class rootless-bisection map is injective on quadratic squareclasses and gives that many generic-rank-at-least-18 covers, so this mechanism cannot produce a rank-two collision or generic rank 19. |
 
 ## Working rules distilled from the repository
 

@@ -143,7 +143,7 @@ provenance but should not be promoted to object names.
 |---|---|---|---|
 | **H3 Source Family** | recovered source polarization and equation family | level-474 `H21 cap H92` curve | H3 `E7+E8/MW2` |
 | **H3 Selected Degree-Two Corridor** | one certified lattice/chamber source-to-target path | H3 `E7+E8/MW2` | rootless `MW17` |
-| **H3 Equation Route** | characteristic-zero realization of the selected corridor and its physical suffix | H3 source equation | currently exact through q4/orbit164 `2A3+2A1/MW9` |
+| **H3 Equation Route** | characteristic-zero realization of the selected corridor and its physical suffix | H3 source equation | complete through q8/orbit376 and q12/orbit5867 to the source-identified rootless `24I1/MW17` endpoint |
 | **Q80 Low-q Compiler Route** | secondary independent lattice/compiler route | Q80 `E6+D5+A3/MW3` | rootless `MW17` at generic lattice level |
 | **Q80 CM24 Regression Route** | specialization scaffold for Q80 | CM24 specialization of Q80 | CM24 terminal `4A2+A3+A5/MW2` |
 | **Low-q MW2 Backtrack** | reverse lattice ancestry discovered from the 17x17 target | rootless `MW17` | `E6+D4+2A2+A1/MW2` |
@@ -532,8 +532,8 @@ Use:
 - **rootless MW17 target** or `R17` for the recovered 17x17 endpoint;
 - **H3 Source Family** for the true Kumar-source polarization/equation family;
 - **H3 Selected Degree-Two Corridor** for the currently certified lattice path;
-- **H3 Equation Route** for the characteristic-zero realization, currently exact
-  through the C8-pointed q4/orbit164 child;
+- **H3 Equation Route** for the complete characteristic-zero realization through
+  the P1229-pointed q8/orbit376 child and q12/orbit5867 rootless endpoint;
 - **H2 Symmetry Comparison** for the `diag(4,237/2)` polarization;
 - **Q80 Low-q Compiler Route** for the secondary rootless lattice path;
 - **Q80 CM24 Regression Route** for its specialized equation scaffold;

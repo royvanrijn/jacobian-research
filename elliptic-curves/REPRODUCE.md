@@ -218,18 +218,210 @@ heuristic. Attempt the actual rank-28 residual 2-Selmer computation with:
 ```sh
 python3 elliptic-curves/cas/run_elkies_2026_rank28_residual_selmer.py \
   --timeout 300 --overwrite
+python3 elliptic-curves/cas/run_elkies_2026_rank28_residual_selmer.py \
+  --backend eclib --timeout 300 \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_residual_2selmer_eclib_v1.json \
+  --overwrite
 ```
 
-The pinned run is an exact-backend timeout, not a Selmer bound. It emits a
+Both pinned runs are exact-backend timeouts, not Selmer bounds. Each emits a
 fail-closed artifact: residual dimension below 15 would exactly reject rank
 32, while only a completed unconditional dimension at least 15 authorizes
 two-cover solving or expensive point search. The authorization is bound to the
-same global minimal model. See
+same global minimal model.
+
+The rank-28 2-division cubic discriminant has a complete, proved
+factorization. Rebuild its factor proof and the Kummer images of the generic
+seventeen points at all bad finite places, at 2, and at infinity with:
+
+```sh
+python3 elliptic-curves/scripts/specialize_q12o5867_candidate.py \
+  --a -9529 --b 5471 --overwrite
+python3 elliptic-curves/cas/build_elkies_2026_rank28_bad_place_ledger.py \
+  --overwrite
+```
+
+All thirteen local blocks complete, and their combined known-image coordinate
+matrix has rank 15. This exact ledger is not an ambient `K(S,2)`, class-group,
+local-solubility, or Selmer upper-bound certificate. Use its factor table to
+avoid repeating the hard discriminant factorization inside PARI:
+
+```sh
+python3 elliptic-curves/cas/run_elkies_2026_rank28_residual_selmer.py \
+  --backend pari-factored --timeout 600 \
+  --pari-stack-bytes 8000000000 --rss-limit-bytes 12000000000 \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_residual_2selmer_pari_factored_8g_v1.json \
+  --overwrite
+```
+
+The pinned 600-second run enters the descent immediately and reaches
+5,698,514,944 bytes peak observed RSS, but still returns no Selmer dimension.
+The pinned 1,800-second run with the same 8 GB stack reaches 6,040,723,456
+bytes and likewise returns no dimension. Both remain fail-closed. Reproduce
+the longer resource envelope by changing `--timeout` to `1800` and the output
+suffix to `_8g_30min_v1`; never overwrite a completed Selmer result with a
+timeout.
+
+Isolate the preceding cubic `S`-class computation with a stage-aware,
+resource-bounded worker:
+
+```sh
+python3 elliptic-curves/cas/run_elkies_2026_rank28_s_class_pari.py \
+  --timeout 120 --c1 0.01 --c2 4 --nrpid 20 \
+  --pari-stack-bytes 2000000000 --rss-limit-bytes 3000000000 \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_s_class_pari_v1.json \
+  --overwrite
+```
+
+The pinned run completes factor-supplied `nfinit` and `nfcertify`, then
+reaches the strict limit inside `bnfinit` at 265,261,056 bytes peak observed
+RSS. It never reaches `bnfcertify`, so it supplies no class-group or Selmer
+bound. Its debug tail identifies the random-relation plateau without treating
+PARI progress messages as a certificate.
+
+Replay the complementary BNF-free paired-special-ideal pilot and its exact
+principal-row audit with:
+
+```sh
+mkdir -p artifacts/local/elliptic-curves/elkies-rank28-bnf-free
+$SAGE elliptic-curves/cas/run_fermigier_rank20_minkowski_specialq.py \
+  --elkies-rank28 --factor-base-bound 1000 \
+  --special-q-min 1009 --special-q-max 5000 --max-special-q 20 \
+  --special-ideal-mode cycle-pairs --pair-cycle-length 20 \
+  --trial-prime-bound 1000 --lattice-combination-bound 2 \
+  --relation-ledger artifacts/local/elliptic-curves/elkies-rank28-bnf-free/minkowski_fb1000_paircycle20_v1.json
+$SAGE elliptic-curves/cas/augment_bnf_free_canonical_principal_relations.py \
+  --relation-ledger artifacts/local/elliptic-curves/elkies-rank28-bnf-free/minkowski_fb1000_paircycle20_v1.json \
+  --output artifacts/local/elliptic-curves/elkies-rank28-bnf-free/minkowski_fb1000_paircycle20_canonical_v1.json
+$SAGE elliptic-curves/cas/audit_bnf_free_s_class_quotient.py \
+  --relation-ledger artifacts/local/elliptic-curves/elkies-rank28-bnf-free/minkowski_fb1000_paircycle20_canonical_v1.json \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_bnf_free_s_class_pilot_v1.json
+```
+
+The collector retains 10,288 sampled generators; augmentation adds 172 exact
+canonical generators and principal rows. No noncanonical relation closes.
+The resulting 327-column, 26-`S`-column quotient model has relation rank 172
+and displayed dimension 141, but factor-base bound 1,000 is below the
+1,202,640 Bach/ERH generation bound. The audit therefore reports
+`UNCERTIFIED_FACTOR_BASE`, not an `S`-class or Selmer upper bound, and forbids
+point search.
+
+Rebuild the exact rank-28 local-signature positive control and audit where
+the generic seventeen already span the full local Kummer image:
+
+```sh
+$SAGE elliptic-curves/cas/build_elkies_2026_rank28_local_coverage.py \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_generic17_local_signature_v1.json \
+  --overwrite
+$SAGE elliptic-curves/cas/audit_bnf_free_local_kummer_coverage.py \
+  --signature-map artifacts/generated-results/elliptic-curves/elkies_2026_rank28_generic17_local_signature_v1.json \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_generic17_local_coverage_v1.json
+```
+
+The first command independently recomputes the local rows of the generic 17
+and public complement 11 and checks the generic rows against the bad-place
+ledger. The full 28-point local-signature rank is still 15: all eleven
+globally independent exceptional directions add zero rank in every bad-place
+block. This is a positive control proving that the signature cannot stand in
+for the Mordell--Weil quotient. The coverage audit certifies the full local
+Kummer image only at odd primes `3`, `19`, `20650099`, and
+`315574902691581877528345013999136728634663121`, plus the real place. Seven
+odd places and the two-adic place remain unresolved.
+
+Generate a bounded exact norm-one tranche, materialize its intersections of
+quadrics, and audit selected finite places with resumable per-cover/per-place
+workers:
+
+```sh
+$SAGE elliptic-curves/cas/generate_q12o5867_norm_one_cover_candidates.py \
+  --signature-map artifacts/generated-results/elliptic-curves/elkies_2026_rank28_generic17_local_signature_v1.json \
+  --coefficient-bound 2 \
+  --output artifacts/local/elliptic-curves/elkies-rank28-bnf-free/norm_one_b2_v1.json
+$SAGE elliptic-curves/cas/build_bnf_free_two_covers.py \
+  --candidates artifacts/local/elliptic-curves/elkies-rank28-bnf-free/norm_one_b2_v1.json \
+  --output artifacts/local/elliptic-curves/elkies-rank28-bnf-free/norm_one_b2_covers_v1.json
+python3 elliptic-curves/cas/run_bnf_free_two_cover_local_supervisor.py \
+  --covers artifacts/local/elliptic-curves/elkies-rank28-bnf-free/norm_one_b2_covers_v1.json \
+  --primes 3,5,7,11,13,17,19 --max-covers 12 \
+  --max-enumeration-prime 19 --max-lift-precision 6 --max-lift-states 5000 \
+  --timeout-per-place 2 \
+  --cache-dir artifacts/local/elliptic-curves/elkies-rank28-bnf-free/norm_one_b2_local_pilot_blocks_v1 \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_norm_one_local_pilot12_v1.json
+```
+
+The pinned pilot has 84 cover/place tasks: 60 smooth-mod-`p` local witnesses,
+19 state-capped singular lift trees, five supervised timeouts, and no proved
+local obstruction. It is deliberately truncated to 12 of 49 norm-one
+candidates and seven finite primes. Use `--retry-incomplete` to revisit only
+timed-out cache blocks. No survivor is a locally soluble global class, no
+Selmer dimension is obtained, and no point search is authorized.
+
+Calibrate the same cover layer on the eleven *genuine* residual classes from
+the public rank-28 complement:
+
+```sh
+python3 elliptic-curves/cas/build_elkies_2026_rank28_public_selmer_controls.py \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_selmer_candidates_v1.json \
+  --overwrite
+$SAGE elliptic-curves/cas/build_bnf_free_two_covers.py \
+  --candidates artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_selmer_candidates_v1.json \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_two_cover_controls_v1.json
+$SAGE elliptic-curves/cas/audit_bnf_free_two_cover_reduction.py \
+  --covers artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_two_cover_controls_v1.json \
+  --primes 2,3,5,7,11,13,17,19,48463,20650099,315574902691581877528345013999136728634663121,376018840263193489397987439236873583997122096511452343225772113000611087671413 \
+  --max-enumeration-prime 2 \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_global_cover_witness_audit_v1.json
+```
+
+For every public complement point `Q`, the first command constructs
+`alpha=X(Q)-theta`, checks `Norm(alpha)=Z(Q)^2`, and records the cover point
+`[1:0:0:1]`. The cover builder and local audit recheck that witness exactly;
+it proves a rational point, hence local solubility at every place, on all
+eleven covers. The existing finite-reduction certificate proves these classes
+independent modulo the generic seventeen. Thus the residual 2-Selmer quotient
+has certified dimension at least 11 on this positive-control fibre. This is a
+lower bound only: it still lacks the complete ambient class computation and
+does not pass the rank-32 threshold 15.
+
+For an unconditional basis-level external computation, generate the exact
+rank-28 Magma job with:
+
+```sh
+python3 elliptic-curves/cas/build_elkies_2026_rank28_relative_descent_magma.py \
+  --output artifacts/local/elliptic-curves/elkies_2026_rank28_relative_2selmer.m
+```
+
+It computes `TwoSelmerGroup(E : Bound := -1)` before any cover construction,
+subtracts the independently certified generic Kummer dimension 17, and exits
+below residual dimension 15. Only its passing branch constructs relative
+covers, and it contains no point search. After an external Magma run, parse the
+complete transcript with:
+
+```sh
+python3 elliptic-curves/cas/parse_elkies_2026_rank28_relative_descent.py \
+  --program artifacts/local/elliptic-curves/elkies_2026_rank28_relative_2selmer.m \
+  --log artifacts/local/elliptic-curves/elkies_2026_rank28_relative_2selmer.log \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_residual_2selmer_magma_v1.json
+```
+
+The parser rejects partial or source-mismatched logs. Magma is not available
+on the current host. See
 [`ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md`](../elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md).
 
 ## Low-conductor exact baselines
 
 ### Conductor-first descent targets
+
+Replay the current rank-at-least-21 conductor anchor first:
+
+```sh
+.venv/bin/python elliptic-curves/cas/verify_icarm_curve394_rank21.py --check
+```
+
+This specializes the compact Elkies R17 family at `t=3/8`, independently
+certifies the generic seventeen plus four public directions, and reconstructs
+all local conductor exponents.  It proves rank at least 21 at
+`log(N)=166.252098...`; no exact-rank statement is made.
 
 ```sh
 .venv/bin/python elliptic-curves/cas/build_conductor_first_near_miss_targets.py --check
@@ -240,14 +432,86 @@ same global minimal model. See
 
 This pins exact full-dimensional mod-2 known subgroups for ICARM 245, the
 Fermigier rank-20 near miss, and both split-infinity rank-19 fibres.  It is a
-descent-input certificate, not a complete Selmer result.  Generate an
-unconditional relative Magma job with
+descent-input certificate, not a complete Selmer result.  Compare the exact
+BNF-free factor-base envelopes with
+
+```sh
+PYTHONPATH=elliptic-curves/cas \
+  /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elliptic-curves/cas/build_conductor_first_s_class_envelopes.py --check
+```
+
+This replay orders the custom collectors by materialized Bach/ERH factor-base
+size: ICARM 245, family 2, Fermigier, then family 3.  Bach generation is
+explicitly ERH-conditional, and the artifact supplies no class-group, Selmer,
+or rank bound.  Generate the cheap unconditional dimension-only Magma job
+with
 
 ```sh
 .venv/bin/python elliptic-curves/cas/build_conductor_first_near_miss_magma.py \
   --target icarm-245 \
+  --mode selmer-dimension \
+  --output artifacts/local/elliptic-curves/icarm245-2selmer-dimension.m
+```
+
+If the residual dimension is positive, construct only the quotient covers:
+
+```sh
+.venv/bin/python elliptic-curves/cas/build_conductor_first_near_miss_magma.py \
+  --target icarm-245 \
+  --mode relative-covers \
   --output artifacts/local/elliptic-curves/icarm245-relative-2selmer.m
 ```
+
+An independent unconditional 3-Selmer rank-bound job is generated by replacing
+the mode with `three-selmer-dimension`.  None of these modes enables GRH class
+group bounds.
+
+For a resource-bounded local PARI diagnostic, with fail-closed model/point
+checks and no unconditional use of its provisional upper endpoint, run:
+
+```sh
+.venv/bin/python elliptic-curves/cas/run_conductor_first_pari_diagnostic.py \
+  --target icarm-245 \
+  --output artifacts/local/elliptic-curves/icarm245-pari-diagnostic.json
+```
+
+The JSON records wall/RSS limits and raw protocol output.  PARI's cubic-field
+BNF is GRH-conditional unless separately certified; only returned rational
+points that pass a fresh full mod-2 certificate raise the unconditional lower
+bound.
+
+The independent eclib route can be replayed directly on any integral global
+minimal model, for example ICARM 245:
+
+```sh
+printf '%s\n' \
+  '[1,-1,1,-25880411472355347134118026792,1606663697747901005185875883284420820193259]' \
+  | mwrank -q -v 1 -s -x 22
+```
+
+On eclib 20231211/20231212 this exits without a bound at the native-integer
+conversion in quartic enumeration (`lower bound on c too large`).  The same
+failure has been replayed on all four fixed targets; it is a backend resource
+failure, not Selmer evidence.
+
+Apply the same gates to the closed 27-fibre anchor-neighborhood pilot:
+
+```sh
+.venv/bin/python elliptic-curves/cas/build_conductor_first_family_pilot.py --check
+
+.venv/bin/python elliptic-curves/cas/build_conductor_first_near_miss_magma.py \
+  --manifest artifacts/generated-results/elliptic-curves/conductor_first_family_anchor_pilot_v1.json \
+  --target family2-u481 \
+  --mode selmer-dimension \
+  --output artifacts/local/elliptic-curves/family2-u481-2selmer-dimension.m
+```
+
+The pilot runs no standalone point search.  Its `family2-u481` certificate
+pins two exact points returned incidentally by the provisional descent run;
+these raise the unconditional lower bound from 12 to 14 without importing the
+uncertified Selmer upper bound.  It leaves nine fibres in the residual-Selmer
+queue and the other eighteen at the exact-Tate gate.
 
 See
 [`CONDUCTOR_FIRST_NEAR_MISS_DESCENT.md`](notes/CONDUCTOR_FIRST_NEAR_MISS_DESCENT.md)

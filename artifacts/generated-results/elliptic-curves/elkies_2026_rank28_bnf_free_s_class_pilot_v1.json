@@ -1,0 +1,98 @@
+{
+  "bach_erh_generation_bound": 1202640,
+  "canonical_rational_principal_relation_audit": {
+    "factor_base_rational_prime_count": 172,
+    "interpretation": "The canonical (p) rows are exact free principal relations. Their absence does not invalidate the class-quotient upper bound, but it can make that bound much weaker.",
+    "metadata_present": true,
+    "missing_rational_primes": [],
+    "status": "COMPLETE_AND_VERIFIED",
+    "verified_row_count": 172
+  },
+  "class_quotient_certification": {
+    "hypothesis": null,
+    "method": "none",
+    "reason": "FACTOR_BASE_BELOW_BACH_BOUND",
+    "remaining_dimension_upper_bound": null,
+    "status": "UNCERTIFIED_RELATION_STABILIZATION"
+  },
+  "classification": "UNCERTIFIED_FACTOR_BASE",
+  "collector": {
+    "curve_preset": "elkies-2026-rank28",
+    "early_quotient": {
+      "baseline": "exact rational principal rows (p) plus S columns",
+      "canonical_rational_row_rank": 172,
+      "dimension_after_canonical_rows_and_S": 141,
+      "interpretation": "Collector progress beyond this baseline is measured exactly over GF(2), but canonical rows must be materialized with augment_bnf_free_canonical_principal_relations.py before the ledger itself carries their generators."
+    },
+    "factor_hint_certificate": {
+      "all_factors_proved_prime": true,
+      "claim_boundary": "The hints accelerate maximal-order and ideal arithmetic; they do not certify class-group completeness.",
+      "factor_count": 12,
+      "path": "/home/royvanrijn/src/jacobian-research/artifacts/generated-results/elliptic-curves/elkies_2026_rank28_bad_place_kummer_ledger_v1.json",
+      "sha256": "5e487e7ca962ddba2e67d439ca815185be745d938f5a87e204a66f2b2bdaa3ca"
+    },
+    "noncanonical_closed_relation_count": 0,
+    "sampled_generator_count": 10460,
+    "special_ideal_mode": "cycle-pairs",
+    "special_primes_in_factor_base": false,
+    "special_residue_degree": 1,
+    "status": "exact_minkowski_ideal_relations_not_class_group_completion"
+  },
+  "declared_S_prime_ideal_columns_complete": true,
+  "declared_S_prime_ideal_count": 26,
+  "declared_S_rational_primes": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    48463,
+    20650099,
+    315574902691581877528345013999136728634663121,
+    376018840263193489397987439236873583997122096511452343225772113000611087671413
+  ],
+  "defining_polynomial_ascending": [
+    "2206823154881955613890111084185006103990780438996427543121024530962684124718863579472",
+    "-321084198649208425360531331349416684014883684994863304024",
+    "-3",
+    "1"
+  ],
+  "factor_base_bound": 1000,
+  "factor_base_dimension": 327,
+  "factor_base_materialized_complete": true,
+  "factor_base_quotient_dimension": 141,
+  "field_degree": 3,
+  "field_discriminant": "306857685279835483763547906751169295699723521438004940739313592138718590279183628405386093894635252000652937961768347407095588228329388184",
+  "interpretation": "The stated bound concerns Cl(O_K[S^-1])/2 and, when certified, the resulting K(S,2) envelope. It does not impose the norm or local conditions of elliptic 2-descent.",
+  "k_s_2_dimension_upper_bound": null,
+  "minkowski_generation_bound": 123099414863536058000521172771670824641530852200608979682161792470583,
+  "principal_relations_verified": true,
+  "protocol": "BNFFREECLASS-v1",
+  "relation_count": 172,
+  "relation_ledger": {
+    "path": "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/elkies-rank28-bnf-free/minkowski_fb1000_paircycle20_canonical_v1.json",
+    "sha256": "3e59f26de487c2edaef3de45cb8f54463c51804480cb62d09fb063bec0e8b1fb"
+  },
+  "relation_rank": 172,
+  "relation_source_rank_analysis": {
+    "canonical_rational_principal_relation_count": 172,
+    "canonical_rational_principal_relation_rank": 172,
+    "factor_base_quotient_dimension_after_canonical_rows_and_S": 141,
+    "interpretation": "This isolates the reduction supplied by collected noncanonical relations after the free exact (p) rows and S-columns have already been inserted.",
+    "quotient_dimension_improvement_from_noncanonical_rows": 0
+  },
+  "s_unit_squareclass_dimension": 29,
+  "selmer_claim": {
+    "all_local_solubility_conditions_completed": false,
+    "completed": false,
+    "expensive_search_authorized": false,
+    "residual_two_selmer_quotient_dimension": null
+  },
+  "signature": [
+    3,
+    0
+  ]
+}

@@ -431,6 +431,14 @@ are treated as reference artifacts.
   supplies no upper bound.  Its whole-file SHA-256 is
   `8416e835887236e9e4eafcb01384a710ce4f1be0628701a97f4a7d7a07fe63b1`.
 
+- `elliptic-curves/conductor_first_s_class_envelopes_v1.json` compares the
+  exact cubic-field discriminants, signatures, Minkowski bounds, and
+  materialized Bach/ERH factor-base envelopes for the four fixed
+  conductor-first near misses.  It orders the BNF-free collectors as ICARM
+  245, family 2, Fermigier, then family 3.  It is explicitly not a class-group,
+  Selmer, or rank calculation.  Its whole-file SHA-256 is
+  `e61d3fc534891b0af2caec19a9c99970de2cfd16623df59a6bd173975e491884`.
+
 - `elliptic-curves/kihara_rank14_t2_v1.json` reconstructs Kihara's public
   rank-at-least-14 family at `t=2` and proves the fourteen displayed
   differences independent with an exact finite-reduction certificate modulo

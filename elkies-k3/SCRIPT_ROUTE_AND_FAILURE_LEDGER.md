@@ -15,10 +15,12 @@ separates four questions that were repeatedly conflated during the reconstructio
 The answers are not the same:
 
 - **H3 is the recovered source family.**
-- **The preferred H3 continuation is now the q24-native corridor pinned to the
-  equation-side `D24eq` D12 frame.**
-- **The native D12 -> A1 suffix is exact at lattice/root-Weyl level, but its downstream
-  characteristic-zero equations have not thereby been constructed.**
+- **The preferred physical H3 equation route is complete through q8/orbit376
+  and q12/orbit5867 to the rootless `24I1/MW17` endpoint.**
+- **The endpoint is source-identified, has geometric Picard rank 19, and has
+  full saturated determinant-948 Mordell--Weil lattice R17.**
+- **The older native D12 -> A1 suffix remains a lattice/root-Weyl and reverse-lift
+  reference route; it is not the current arithmetic path.**
 - **The selected H3-to-MW17 chain has not been proved shortest, globally optimal, or
   cheapest to compile.**
 - **Q80 is an independent comparison/compiler route, not the source family.**
@@ -27,7 +29,9 @@ The answers are not the same:
 
 The executable index is [`scripts/README.md`](scripts/README.md); archived experiments
 are classified in [`scripts/archive/README.md`](scripts/archive/README.md). The current
-route priority is stated explicitly in [`H3_PREFERRED_PATH.md`](H3_PREFERRED_PATH.md).
+route priority and arithmetic handoff are in [`README.md`](README.md); the older
+[`H3_PREFERRED_PATH.md`](H3_PREFERRED_PATH.md) is retained as a dated lattice-route
+decision.
 
 ## 1. What we started with
 
@@ -378,27 +382,29 @@ preferred H3 continuation.
 
 ## 8. What should be done next
 
-### Primary equation work
+### Primary arithmetic work
 
-Complete the selected H3 q24 arrow to an exact native `D12/MW5` equation certificate.
-Then continue **from that same `D24eq` marking** along the now-pinned native suffix:
+The selected physical equation route and direct endpoint package are complete.
+Use the compact published `t` chart for specialization. Retain the exact
+rank-25--28 positive controls, rank candidates by weakest performance across
+three or more disjoint prime ensembles, and compute the actual quotient
+`Sel_2(E_t)/<P1,...,P17>` before any cover or expensive point search. Residual
+dimension below 15 rejects a rank-32 candidate; a timeout, incomplete class
+ledger, or norm-one signature is not a pass.
 
-```text
-D12 --q6--> A11 --q8--> 2A5
-    --q4--> 3A3 --q4--> A3+2A2
-    --q4--> 5A1 --q4--> 4A1 --q4--> 3A1
-    --q4--> 2A1 --q4--> A1 --q6--> R17.
-```
-
-At each equation step retain the zero section, the horizontal marked section/divisor,
-resolved-component data, and the base-coordinate normalization needed by the next
-neighbor. Do not canonicalize away markings merely because the Jacobian is isomorphic.
+The rootless-bisection collision search is a separate exact route. All 39,120
+surviving translation classes have explicit equation records and distinct
+quadratic squareclasses, proving injectivity on that complete finite set. This
+produces 39,120 generic-rank-at-least-18 covers but closes the mechanism for a
+rank-two collision or generic rank 19. The alternate rootless frame remains a
+lattice-only comparison until it has a characteristic-zero equation.
 
 ### Parallel route optimization
 
-Alternative routes remain scientifically useful, but they are now secondary to executing
-the native q24 path. Search/compare them when the native equation compiler hits a
-specific obstruction or when they provide a reusable compiler technique.
+Alternative routes remain scientifically useful, but they are secondary to
+arithmetic specialization and certified bisection-extension work. Reopen them
+only when they supply a needed source identity, specialization certificate, or
+reusable compiler technique.
 
 A route-cost model should still include:
 

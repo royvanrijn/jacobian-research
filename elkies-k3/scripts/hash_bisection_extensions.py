@@ -263,7 +263,39 @@ def branch_from_record(record: dict[str, Any], variable: sp.Symbol) -> tuple[dic
         return branch, {"kind": "declared_branch_rational_function"}
     if not isinstance(record["quadratic_cover"], dict):
         raise ValueError(f"{record['label']}: quadratic_cover must be an object")
-    return branch_from_quadratic_cover(record["quadratic_cover"], variable)
+    branch, provenance = branch_from_quadratic_cover(record["quadratic_cover"], variable)
+    # The production equation compiler supplies the resolved chord denominator
+    # h and the reduced quadratic q together with the displayed bisection.
+    # Verify discriminant=h^2*q exactly, then factor only q.  Factoring the
+    # unreduced degree-eight discriminant with enormous rational coefficients
+    # is needlessly expensive on the complete 39,120-orbit batch.
+    chord = record.get("residual_chord")
+    trace = record.get("trace_section")
+    if isinstance(chord, dict) and isinstance(trace, dict) and (
+        "q_coefficients" in chord and "h_coefficients" in trace
+    ):
+        discriminant = polynomial_from_ascending(
+            branch["numerator_coefficients"], variable
+        )
+        h = polynomial_from_ascending(trace["h_coefficients"], variable)
+        q = polynomial_from_ascending(chord["q_coefficients"], variable)
+        if discriminant != h * h * q:
+            raise ValueError(
+                f"{record['label']}: declared chord reduction does not satisfy "
+                "quadratic discriminant=h^2*q"
+            )
+        provenance = {
+            **provenance,
+            "kind": "quadratic_cover_discriminant_with_exact_square_reduction",
+            "square_multiplier_ascending_coefficients": polynomial_coefficients_ascending(h),
+            "reduced_squareclass_ascending_coefficients": polynomial_coefficients_ascending(q),
+            "square_reduction_identity": "discriminant=h^2*q",
+        }
+        return {
+            "numerator_coefficients": polynomial_coefficients_ascending(q),
+            "denominator_coefficients": ["1"],
+        }, provenance
+    return branch, provenance
 
 
 def is_trivial_squareclass(key: dict[str, Any]) -> bool:
@@ -549,7 +581,7 @@ def verify_lattice_orbit_coverage(
 
 def analyze(
     payload: dict[str, Any], *, require_collision_heights: bool = False,
-    require_rank_at_least: int | None = None,
+    require_rank_at_least: int | None = None, compact: bool = False,
 ) -> dict[str, Any]:
     if payload.get("schema") != SCHEMA:
         raise ValueError(f"expected schema {SCHEMA}")
@@ -591,6 +623,7 @@ def analyze(
     buckets: dict[str, list[dict[str, Any]]] = defaultdict(list)
     keys: dict[str, dict[str, Any]] = {}
     normalized_records: dict[str, dict[str, Any]] = {}
+    record_extension_digests: dict[str, str] = {}
     for record in records:
         branch, provenance = branch_from_record(record, variable)
         key = extension_key(branch, variable)
@@ -607,6 +640,7 @@ def analyze(
         digest = key_digest(key)
         keys[digest] = key
         buckets[digest].append(record)
+        record_extension_digests[str(record["label"])] = digest
         normalized_records[str(record["label"])] = {
             **provenance,
             "geometric_branch_divisor": branch_divisor,
@@ -685,6 +719,17 @@ def analyze(
                 "no collision has the declared invariant rank plus certified "
                 f"anti-invariant height rank required to reach {require_rank_at_least}"
             )
+    extension_manifest = [
+        {
+            "label": str(record["label"]),
+            "lattice_orbit_mask": record.get("lattice_orbit_mask"),
+            "extension_sha256": record_extension_digests[str(record["label"])],
+        }
+        for record in records
+    ]
+    manifest_digest = hashlib.sha256(
+        json.dumps(extension_manifest, sort_keys=True, separators=(",", ":")).encode()
+    ).hexdigest()
     return {
         "schema": OUTPUT_SCHEMA,
         "status": "PASS_EXTENSION_CANONICALIZATION",
@@ -697,7 +742,10 @@ def analyze(
         "required_base_changed_rank_lower_bound": require_rank_at_least,
         "lattice_orbit_coverage": orbit_coverage,
         "collisions": collisions,
-        "all_extension_groups": groups,
+        "all_extension_groups": collisions if compact else groups,
+        "compact_output": compact,
+        "extension_manifest": extension_manifest if compact else None,
+        "extension_manifest_sha256": manifest_digest,
         "proof_boundary": (
             "An equal squareclass is an exact equality of quadratic extensions of QQ(t). "
             "Every accepted record has exactly two geometric branch points, as required "
@@ -747,6 +795,13 @@ def main() -> None:
     parser.add_argument("--output", type=Path)
     parser.add_argument("--self-test", action="store_true")
     parser.add_argument(
+        "--compact", action="store_true",
+        help=(
+            "emit the complete label/orbit/digest manifest but omit singleton "
+            "extension-group provenance; collision groups remain complete"
+        ),
+    )
+    parser.add_argument(
         "--require-collision-heights",
         action="store_true",
         help="reject every hash collision without declared anti-invariant height data",
@@ -767,7 +822,13 @@ def main() -> None:
         payload,
         require_collision_heights=arguments.require_collision_heights,
         require_rank_at_least=arguments.require_rank_at_least,
+        compact=arguments.compact,
     )
+    if arguments.input is not None:
+        result["input"] = {
+            "path": str(arguments.input),
+            "sha256": hashlib.sha256(arguments.input.read_bytes()).hexdigest(),
+        }
     if arguments.self_test:
         assert result["collision_count"] == 1
         collision = result["collisions"][0]
@@ -807,6 +868,31 @@ def main() -> None:
             assert "split over QQ(t)" in str(error)
         else:
             raise AssertionError("split quadratic cover was accepted")
+        reduced_chord_payload = {
+            "schema": SCHEMA,
+            "bisections": [{
+                "label": "resolved-chord",
+                "quadratic_cover": {
+                    "leading_coefficients": ["1"],
+                    "linear_coefficients": ["0"],
+                    "constant_coefficients": ["-1/4", "-1/2", "-1/2", "-1/2", "-1/4"],
+                },
+                "trace_section": {"h_coefficients": ["1", "1"]},
+                "residual_chord": {"q_coefficients": ["1", "0", "1"]},
+            }],
+        }
+        reduced_chord = analyze(reduced_chord_payload, compact=True)
+        assert reduced_chord["distinct_quadratic_extensions"] == 1
+        assert reduced_chord["compact_output"] is True
+        assert len(reduced_chord["extension_manifest"]) == 1
+        bad_reduction = json.loads(json.dumps(reduced_chord_payload))
+        bad_reduction["bisections"][0]["residual_chord"]["q_coefficients"][0] = "2"
+        try:
+            analyze(bad_reduction)
+        except ValueError as error:
+            assert "discriminant=h^2*q" in str(error)
+        else:
+            raise AssertionError("an incorrect resolved-chord square reduction was accepted")
         genus_one_payload = {
             "schema": SCHEMA,
             "bisections": [{

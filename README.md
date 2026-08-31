@@ -7,18 +7,20 @@ of results and corrections; theorem status remains solely in
 [`MATH_STATUS.json`](MATH_STATUS.json).
 
 A separate [elliptic-curve rank/conductor research programme](elliptic-curves/README.md)
-develops a reproducible Hensel--CRT--rational-lattice search without changing
-the mathematical scope of the Keller-map results below. It now independently
-replays the 2026 public curve with 30 rationally independent points, proving
-the programme's rank-at-least-30 target while leaving its separate
-low-conductor rank-at-least-21 target open.
+develops reproducible finite-reduction, descent, and conductor certificates
+without changing the mathematical scope of the Keller-map results below. It
+now independently replays a public curve of rank at least 31 and two public
+rank-at-least-21 curves below the original conductor cutoff, so both branches
+of the original operational target are closed. Exact rank 31, rank at least
+32, and sharper conductor records remain open.
 
 The related [Elkies--K3 process atlas](elkies-k3/ELKIES_K3_PROCESS_ATLAS.md)
-explains the rank-17 mechanism in plain chronological order.  The equation
-route is now certified through the physical `q4/orbit164`
-`2A3+2A1/MW9` child.  The marked lattice route continues through
-`q8/orbit376` and `q12/orbit4484` to rootless `MW17`; those last two equation
-lifts and the direct endpoint certificate remain open.
+explains the rank-17 mechanism in plain chronological order. The complete
+physical equation route now continues through `q8/orbit376` and preferred
+`q12/orbit5867` to the rootless `24I1` endpoint. Exact source identification,
+two-prime Picard rank 19, and the saturated determinant-948 Mordell--Weil
+lattice prove that endpoint is the published rank-17 family; arithmetic
+specialization and residual descent are now the primary frontier.
 
 This repository verifies a three-dimensional polynomial Keller map with a
 three-point collision, explains it through a tangent-map normal form, and

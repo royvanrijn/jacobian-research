@@ -538,6 +538,11 @@ def build_parser() -> argparse.ArgumentParser:
 def main() -> None:
     sys.set_int_max_str_digits(0)
     args = build_parser().parse_args()
+    raise SystemExit(
+        "PARKED_BY_ELKIES_2026_DESCENT_FIRST_POLICY: this pre-descent raw "
+        "parameter/point search is no longer an active discovery path; run the "
+        "calibrated compact-t Nagao sieve and a complete residual 2-Selmer gate"
+    )
     if args.directions < 1:
         raise SystemExit("--directions must be positive")
     if args.numerator_bound < 1 or args.denominator_bound < 1:

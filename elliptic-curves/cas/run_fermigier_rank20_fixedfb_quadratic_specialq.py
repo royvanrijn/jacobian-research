@@ -13,8 +13,10 @@ a in that congruence class which makes
 as small as possible.
 
 This is deliberately a different norm geometry from the saturated a+b*theta
-family.  It reuses the SAME fixed factor base and SAME checkpointed GF(2)
-relation basis from R20FIXEDQ2.
+family.  By default it reuses the SAME Fermigier factor base and checkpointed
+GF(2) relation basis from R20FIXEDQ2.  Explicit cubic/S-prime arguments make
+the exact collector reusable for another fixed no-rational-2-torsion curve;
+use a target-specific checkpoint in that mode.
 
 No bnfinit/class_group/regulator computation is used.
 
@@ -68,14 +70,96 @@ def rows_from_pivots(pivots):
     return [pivots[k] for k in sorted(pivots, reverse=True)]
 
 
+class SparseLargePrimeEliminator:
+    """Eliminate arbitrary large-prime hyperedges with exact witnesses.
+
+    Each input carries a factor-base row and a set of large-prime ideal
+    vertices.  A dependency in the large-prime columns returns the resulting
+    factor-base relation and the symmetric-difference set of principal
+    generators which proves it.
+    """
+
+    def __init__(self):
+        self.vertex_columns = {}
+        self.pivots = {}
+        self.edge_count = 0
+        self.dependency_count = 0
+
+    def _mask(self, vertices):
+        mask = 0
+        parity = set()
+        for vertex in vertices:
+            if vertex in parity:
+                parity.remove(vertex)
+            else:
+                parity.add(vertex)
+        for vertex in sorted(parity, key=repr):
+            column = self.vertex_columns.setdefault(vertex, len(self.vertex_columns))
+            mask ^= 1 << column
+        return mask
+
+    def add(self, vertices, row, generator_index):
+        self.edge_count += 1
+        mask = self._mask(vertices)
+        provenance = {generator_index}
+        while mask:
+            pivot = mask.bit_length() - 1
+            previous = self.pivots.get(pivot)
+            if previous is None:
+                self.pivots[pivot] = (mask, row, provenance)
+                return None, None
+            previous_mask, previous_row, previous_provenance = previous
+            mask ^= previous_mask
+            row ^= previous_row
+            provenance.symmetric_difference_update(previous_provenance)
+        self.dependency_count += 1
+        return row, provenance
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--factor-base-bound", type=int, default=5000)
+    ap.add_argument(
+        "--field-polynomial-ascending",
+        help="comma-separated integral coefficients c0,c1,c2,1 for a monic cubic",
+    )
+    ap.add_argument(
+        "--selmer-rational-primes",
+        help="comma-separated rational primes whose ideals form S",
+    )
     ap.add_argument("--special-q-min", type=int, default=50000)
     ap.add_argument("--special-q-max", type=int, default=500000)
     ap.add_argument("--coeff-bound", type=int, default=5000)
     ap.add_argument("--pairs-per-q", type=int, default=20000)
     ap.add_argument("--large-prime-bound", type=int, default=1 << 70)
+    ap.add_argument(
+        "--large-prime-merge-engine",
+        choices=("graph", "sparse-hypergraph"),
+        default="graph",
+    )
+    ap.add_argument(
+        "--max-residual-primes",
+        type=int,
+        default=1,
+        help="maximum odd outside-factor primes retained in exact-factor mode",
+    )
+    ap.add_argument(
+        "--adaptive-residual-specials",
+        type=int,
+        default=0,
+        help="maximum degree-one residual ideals appended as new special ideals",
+    )
+    ap.add_argument(
+        "--adaptive-residual-prime-bound",
+        type=int,
+        default=1 << 40,
+    )
+    ap.add_argument(
+        "--adaptive-residual-depth",
+        type=int,
+        default=1,
+        help="maximum number of residual-special generations after the initial list",
+    )
     ap.add_argument("--max-special-q", type=int, default=100)
     ap.add_argument("--progress-every-q", type=int, default=5)
     ap.add_argument("--seed", type=int, default=20260820)
@@ -103,17 +187,57 @@ def main():
         raise ValueError("--trial-prime-bound must be at least 2")
     if args.residual_factor_limit < 2:
         raise ValueError("--residual-factor-limit must be at least 2")
+    if args.max_residual_primes < 1:
+        raise ValueError("--max-residual-primes must be positive")
+    if args.adaptive_residual_specials < 0 or args.adaptive_residual_depth < 0:
+        raise ValueError("adaptive residual caps must be nonnegative")
+    if args.adaptive_residual_prime_bound < 2:
+        raise ValueError("--adaptive-residual-prime-bound must be at least 2")
 
     from sage.all import QQ, ZZ, NumberField, PolynomialRing, RealField, factor, prime_range
 
+    def integer_csv(text, description):
+        try:
+            values = [ZZ(item.strip()) for item in text.split(",") if item.strip()]
+        except ValueError as exc:
+            raise ValueError(f"{description} must be comma-separated integers") from exc
+        if not values:
+            raise ValueError(f"{description} must not be empty")
+        return values
+
     x = PolynomialRing(QQ, "x").gen()
-    A = ZZ(5750886029903523759416717668139307)
-    C0 = ZZ(167347710468055045100164888198438918505621536951206)
-    f = x**3 - A*x + C0
+    if args.field_polynomial_ascending:
+        field_coefficients = integer_csv(
+            args.field_polynomial_ascending, "field-polynomial-ascending"
+        )
+        if len(field_coefficients) != 4 or field_coefficients[-1] != 1:
+            raise ValueError("field-polynomial-ascending must define a monic cubic")
+    else:
+        field_coefficients = [
+            ZZ(167347710468055045100164888198438918505621536951206),
+            ZZ(-5750886029903523759416717668139307),
+            ZZ(0),
+            ZZ(1),
+        ]
+    f = sum(
+        coefficient * x**index
+        for index, coefficient in enumerate(field_coefficients)
+    )
+    if not f.is_irreducible():
+        raise ValueError("the defining cubic must be irreducible over QQ")
     K = NumberField(f, "a")
     th = K.gen()
 
-    bad = sorted(set([ZZ(2)] + [ZZ(p) for p, _ in factor(abs(ZZ(f.discriminant())))]))
+    if args.selmer_rational_primes:
+        bad = sorted(set(integer_csv(
+            args.selmer_rational_primes, "selmer-rational-primes"
+        )))
+        if any(prime < 2 or not prime.is_prime(proof=False) for prime in bad):
+            raise ValueError("selmer-rational-primes must all be primes")
+    else:
+        bad = sorted(
+            set([ZZ(2)] + [ZZ(p) for p, _ in factor(abs(ZZ(f.discriminant())))])
+        )
 
     # ---- identical fixed factor base to R20FIXEDQ2 -------------------------
     fb, s_cols = [], []
@@ -256,6 +380,8 @@ def main():
             if len(specials) >= args.max_special_q:
                 break
 
+    special_depth = {pair: 0 for pair in specials}
+
     print(
         f"{PROTOCOL}|stage=input|fb_columns={len(fb)}|S_columns={len(s_cols)}"
         f"|start_rank={len(pivots)}|start_afterS={afterS()}"
@@ -267,8 +393,10 @@ def main():
     # ---- shared partial relation graph -------------------------------------
     ROOT = ("ROOT",)
     graph = defaultdict(list)
+    sparse_large_primes = SparseLargePrimeEliminator()
     generators = []
     closed_relations = []
+    accepted_generator_coordinates = set()
     rng = random.Random(args.seed)
     t0 = time.monotonic()
 
@@ -298,6 +426,27 @@ def main():
                 and int((th - K(r)).valuation(P)) > 0
             ):
                 return P
+        return None
+
+    residual_root_cache = {}
+
+    def residual_degree_one_special(signature):
+        """Recover ``(ell,r)`` for a degree-one residual prime-ideal vertex."""
+
+        ell, (degree, hnf) = signature
+        if degree != 1 or ell > args.adaptive_residual_prime_bound:
+            return None
+        key = (ell, hnf)
+        if key in residual_root_cache:
+            return residual_root_cache[key]
+        quotient = ZZ.quotient(ZZ(ell))
+        for residue in f.change_ring(quotient).roots(multiplicities=False):
+            pair = (ZZ(ell), ZZ(int(residue)))
+            prime = special_prime(*pair)
+            if prime is not None and str(prime.pari_hnf()) == hnf:
+                residual_root_cache[key] = pair
+                return pair
+        residual_root_cache[key] = None
         return None
 
     def find_path(src, dst):
@@ -341,7 +490,9 @@ def main():
             provenance.add(generator_index)
         return path ^ row, provenance
 
+    adaptive_added = 0
     for sq_index, (q, r) in enumerate(specials, 1):
+        current_depth = special_depth[(q, r)]
         Pq = special_prime(q, r)
         if Pq is None:
             continue
@@ -349,7 +500,7 @@ def main():
         before_rank = len(pivots)
         before_after = afterS()
 
-        candidates = p1 = p2 = cycles = indep = after_gain = 0
+        candidates = p1 = p2 = phyper = cycles = indep = after_gain = 0
         accepted_residual_prime = 0
         norm_bits_min = None
         norm_bits_sum = 0
@@ -388,7 +539,7 @@ def main():
                 a = residue + k*q
 
                 key = (int(a), int(b), int(c))
-                if key in seen_abc:
+                if key in seen_abc or key in accepted_generator_coordinates:
                     continue
                 seen_abc.add(key)
 
@@ -406,6 +557,7 @@ def main():
                 norm_bits_sum += nb
                 norm_bits_min = nb if norm_bits_min is None else min(norm_bits_min, nb)
 
+                residual_primes = None
                 if args.norm_factor_mode in {"trial", "hybrid"}:
                     co = N
                     while co % q == 0:
@@ -422,6 +574,7 @@ def main():
                 else:
                     co = ZZ(1)
                     used = []
+                    residual_primes = []
                     for p, exponent in factor(N):
                         p = ZZ(p)
                         exponent = ZZ(exponent)
@@ -429,8 +582,8 @@ def main():
                             continue
                         if p <= args.factor_base_bound:
                             used.append(p)
-                        else:
-                            co *= p**exponent
+                        elif int(exponent) & 1:
+                            residual_primes.append(p)
 
                 if args.norm_factor_mode == "hybrid" and co != 1 and co <= args.residual_factor_limit:
                     residual = ZZ(1)
@@ -459,13 +612,42 @@ def main():
                         (int(q), (1, str(Pq.pari_hnf())))
                     )
 
-                # Same fast mode as successful linear-family checkpoint:
-                # one prime residual cofactor at most.
-                if co != 1:
+                if residual_primes is not None:
+                    if len(residual_primes) > args.max_residual_primes:
+                        continue
+                    residual_signatures = []
+                    for residual_prime in residual_primes:
+                        if residual_prime > args.large_prime_bound:
+                            residual_signatures = []
+                            break
+                        signature = prime_sig(alpha, residual_prime)
+                        if signature is None:
+                            residual_signatures = []
+                            break
+                        residual_signatures.append(signature)
+                    if len(residual_signatures) != len(residual_primes):
+                        continue
+                    accepted_residual_prime += len(residual_signatures)
+                    vertices.extend(residual_signatures)
                     if (
-                        co > args.large_prime_bound
-                        or not co.is_prime(proof=False)
+                        args.adaptive_residual_specials
+                        and current_depth < args.adaptive_residual_depth
                     ):
+                        for signature in residual_signatures:
+                            if adaptive_added >= args.adaptive_residual_specials:
+                                break
+                            pair = residual_degree_one_special(signature)
+                            if pair is None or pair in seen:
+                                continue
+                            specials.append(pair)
+                            seen.add(pair)
+                            special_depth[pair] = current_depth + 1
+                            adaptive_added += 1
+                elif co != 1:
+                    # Trial/hybrid mode retains the historical one-large-prime
+                    # behavior because the unfactored cofactor has no exact
+                    # multi-prime support yet.
+                    if co > args.large_prime_bound or not co.is_prime(proof=False):
                         continue
                     accepted_residual_prime += 1
                     sig = prime_sig(alpha, co)
@@ -475,16 +657,25 @@ def main():
 
                 cycle = None
                 provenance = None
-                if len(vertices) == 0:
+                if len(vertices) == 1:
+                    p1 += 1
+                elif len(vertices) == 2:
+                    p2 += 1
+                elif len(vertices) > 2:
+                    phyper += 1
+                accepted_generator_coordinates.add(key)
+                if args.large_prime_merge_engine == "sparse-hypergraph":
+                    cycle, provenance = sparse_large_primes.add(
+                        vertices, row, generator_index
+                    )
+                elif len(vertices) == 0:
                     cycle = row
                     provenance = {generator_index}
                 elif len(vertices) == 1:
-                    p1 += 1
                     cycle, provenance = add_partial(
                         ROOT, vertices[0], row, generator_index
                     )
                 elif len(vertices) == 2:
-                    p2 += 1
                     cycle, provenance = add_partial(
                         vertices[0], vertices[1], row, generator_index
                     )
@@ -518,6 +709,7 @@ def main():
             "candidates": candidates,
             "partial1": p1,
             "partial2": p2,
+            "partial_hyperedges": phyper,
             "cycles": cycles,
             "rank_gain": len(pivots) - before_rank,
             "afterS_gain": before_after - afterS(),
@@ -527,6 +719,7 @@ def main():
             "avg_norm_bits": (
                 norm_bits_sum / candidates if candidates else None
             ),
+            "special_depth": current_depth,
         }
         history.append(stat)
         save_checkpoint()
@@ -534,9 +727,11 @@ def main():
         print(
             f"{PROTOCOL}|stage=special_q_done|index={sq_index}/{len(specials)}"
             f"|q={q}|r={r}|rank_gain={stat['rank_gain']}"
+            f"|depth={current_depth}|adaptive_added={adaptive_added}"
             f"|afterS_gain={stat['afterS_gain']}"
             f"|rank={len(pivots)}|afterS={afterS()}"
             f"|candidates={candidates}|p1={p1}|p2={p2}|cycles={cycles}"
+            f"|phyper={phyper}"
             f"|min_norm_bits={norm_bits_min}"
             f"|avg_norm_bits={stat['avg_norm_bits']}",
             flush=True,
@@ -567,7 +762,11 @@ def main():
 
     print(
         f"{PROTOCOL}|stage=summary|final_rank={len(pivots)}"
-        f"|afterS={afterS()}|checkpoint={args.checkpoint}",
+        f"|afterS={afterS()}|checkpoint={args.checkpoint}"
+        f"|lp_vertices={len(sparse_large_primes.vertex_columns)}"
+        f"|lp_edges={sparse_large_primes.edge_count}"
+        f"|lp_rank={len(sparse_large_primes.pivots)}"
+        f"|lp_nullity={sparse_large_primes.edge_count-len(sparse_large_primes.pivots)}",
         flush=True,
     )
     print(
@@ -579,11 +778,27 @@ def main():
             "schema": "elliptic-curves.bnf-free-principal-relation-ledger.v1",
             "status": "exact_new_relations_not_class_group_completion",
             "field_polynomial": str(f),
-            "defining_polynomial_ascending": [str(C0), str(-A), "0", "1"],
+            "defining_polynomial_ascending": [
+                str(value) for value in field_coefficients
+            ],
             "field_discriminant": str(K.discriminant()),
             "generator_coordinate_order": ["1", "theta", "theta^2"],
             "factor_base_bound": args.factor_base_bound,
             "norm_factor_mode": args.norm_factor_mode,
+            "large_prime_merge_engine": args.large_prime_merge_engine,
+            "max_residual_primes": args.max_residual_primes,
+            "adaptive_residual_specials": args.adaptive_residual_specials,
+            "adaptive_residual_prime_bound": args.adaptive_residual_prime_bound,
+            "adaptive_residual_depth": args.adaptive_residual_depth,
+            "large_prime_elimination": {
+                "vertex_count": len(sparse_large_primes.vertex_columns),
+                "edge_count": sparse_large_primes.edge_count,
+                "rank": len(sparse_large_primes.pivots),
+                "dependency_count": sparse_large_primes.dependency_count,
+                "nullity": (
+                    sparse_large_primes.edge_count - len(sparse_large_primes.pivots)
+                ),
+            },
             "trial_division_bound": trial_division_bound,
             "residual_factor_limit": args.residual_factor_limit,
             "factor_base_completion": {

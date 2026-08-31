@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# <!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE bb81d843718bdd31 -->
 """Run one subprocess-capped eclib search on a q12o5867 specialization.
 
 The parent mode is ordinary Python and enforces a wall-clock timeout around a
@@ -8,13 +9,16 @@ the separately certified ordered seventeen-point subgroup.  Avoiding eclib
 subgroup processing keeps the bounded discovery probe focused on point search.
 
 Timeout, including timeout during eclib curve initialization, is an expected
-bounded experimental result and is preserved in the output artifact.
+bounded experimental result and is preserved in the output artifact.  Parent
+and worker modes both require a passing residual-Selmer gate bound to the same
+parameter and minimal curve.
 """
 
 from __future__ import annotations
 
 import argparse
 from fractions import Fraction
+from hashlib import sha256
 import json
 from math import gcd, lcm
 from pathlib import Path
@@ -39,6 +43,7 @@ from elliptic_candidate_record import (  # noqa: E402
     verify_finite_quotient_certificate,
 )
 from finite_quotient_escape import QuotientBlock, analyze_escape  # noqa: E402
+from elkies_residual_selmer_gate import require_gate_for_specialization  # noqa: E402
 
 
 Q = Fraction
@@ -203,6 +208,7 @@ def run_worker(args: argparse.Namespace) -> int:
         raise ValueError("the input does not have 17 transported generic points")
     if any(not is_on_weierstrass_curve(model, point) for point in baseline_points):
         raise AssertionError("a serialized baseline point missed the minimal model")
+    require_gate_for_specialization(args.residual_selmer_gate, artifact)
 
     print("Q12MW|stage=curve_init|status=start", flush=True)
     stage_started = time.monotonic()
@@ -291,6 +297,8 @@ def infer_last_stage(stdout: str) -> str | None:
 
 
 def run_parent(args: argparse.Namespace) -> int:
+    artifact = json.loads(args.input.read_text())
+    require_gate_for_specialization(args.residual_selmer_gate, artifact)
     sage = args.sage or shutil.which("sage")
     if sage is None:
         raise FileNotFoundError("Sage executable not found; pass --sage")
@@ -301,6 +309,8 @@ def run_parent(args: argparse.Namespace) -> int:
         "--worker",
         "--input",
         str(args.input.resolve()),
+        "--residual-selmer-gate",
+        str(args.residual_selmer_gate.resolve()),
         "--height",
         str(args.height),
         "--max-rank",
@@ -344,6 +354,10 @@ def run_parent(args: argparse.Namespace) -> int:
         "schema": "elliptic-curves.q12o5867-bounded-mwrank-probe.v1",
         "status": status,
         "input_specialization_artifact": str(args.input.resolve()),
+        "residual_selmer_gate": {
+            "path": str(args.residual_selmer_gate.resolve()),
+            "sha256": sha256(args.residual_selmer_gate.read_bytes()).hexdigest(),
+        },
         "bounds": {
             "mwrank_logarithmic_height_limit": args.height,
             "worker_wall_timeout_seconds": args.timeout,
@@ -391,6 +405,7 @@ def run_parent(args: argparse.Namespace) -> int:
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", type=Path, required=True)
+    parser.add_argument("--residual-selmer-gate", type=Path, required=True)
     parser.add_argument("--height", type=float, default=10.0)
     parser.add_argument("--max-rank", type=int, default=64)
     parser.add_argument("--relation-primes", type=parse_relation_primes, default=(2, 3, 5))

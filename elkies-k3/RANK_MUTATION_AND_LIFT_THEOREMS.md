@@ -468,7 +468,111 @@ rootless endpoint by one exact elliptic group-law computation and one linear
 polynomial inversion modulo `h^2`.  It does not predict collisions between the
 resulting quadratic squareclasses.
 
-<!-- status-consumer: EC-K3-BISECT-EQUATION-BATCH a993e11257ca08a8 -->
+If a pole of `tau` lies over infinity, apply the proposition after the base
+chart change `s=1/t`, with `x_s=s^4*x` and `y_s=s^6*y`, and transport the
+result back.  The cover coordinate transforms by
+`q_t=t^2*q_s(1/t)`.  This is again multiplication by the required square under
+`u_t=t*u_s`, so it preserves the quadratic squareclass and all displayed
+coefficient identities.  In the complete published-R17 batch this chart is
+needed only for orbit `0x0c54f`.
+
+### Theorem F2: complete injectivity on the published rootless R17 survivor set
+
+For the published rootless R17 elliptic K3, let `C` be the 39,120
+section-translation classes of section-nonnegative degree-two `(-2)`-curves
+enumerated in [`BISECTION_COLLISION_SEARCH.md`](BISECTION_COLLISION_SEARCH.md).
+The map
+
+```text
+C -> QQ(t)^*/QQ(t)^{*2},       [B] -> [q_B]
+```
+
+which sends a bisection to its quadratic branch extension is injective.
+Every `q_B` is a squarefree quadratic coprime to the surface discriminant.
+Consequently every class gives an explicit smooth quadratic base change of
+generic Mordell--Weil rank at least 18, while no two distinct classes give a
+common quadratic base change.  In particular this complete bisection set
+cannot yield a rank-two anti-invariant collision on one quadratic cover.  This
+does not exclude the distinct-extension composita in Theorem F3 below.
+
+#### Proof
+
+The complete norm-ten shell contains 806,238 unoriented representatives and
+maps onto exactly the 39,120 surviving classes.  The exact priority replay
+tests every representative and retains one published-basis trace per class.
+Proposition F1 constructs its quadratic relation; coefficientwise identities
+verify both lifted points on the Weierstrass equation.  The single trace with
+a pole at infinity is handled by the reciprocal chart above.  The complete
+coverage gate checks the pinned integral vector and its class modulo `2R17`
+for every record.
+
+For all 39,120 records the computed `q_B` has degree two, is squarefree, and
+is coprime to the degree-24 surface discriminant.  Independent exact
+normalization of the displayed quadratic discriminants gives 39,120 distinct
+keys in `QQ(t)^*/QQ(t)^{*2}`.  This proves injectivity.
+
+On each double cover the two lifted sections meet transversely at the two
+simple branch points.  The pullback fibration remains rootless, has `chi=4`,
+and for one lift `P` and the deck involution `sigma` one has
+`P^2=-4` and `P.sigma(P)=2`.  Hence the anti-invariant section has height
+
+```text
+<P-sigma(P),P-sigma(P)> = 2*(2-(-4)) = 12.
+```
+
+It is non-torsion and adds one direction to the invariant rank-17 lattice.
+The absence of equal squareclasses excludes a two-bisection common-cover
+height matrix.  QED.
+
+<!-- status-consumer: EC-K3-BISECT-EQUATION-BATCH a0570a5a4ea8e02b -->
+
+### Theorem F3: distinct bisection extensions give genus-one rank-19 bases
+
+For any two distinct classes `B_1,B_2` in the complete published-R17 survivor
+set, let
+
+```text
+C_12: u^2=q_1(t),  v^2=q_2(t).
+```
+
+Then `C_12` is a geometrically connected genus-one `V4` cover of `P1`.  Over
+its function field the two pulled anti-invariant sections have exact height
+matrix
+
+```text
+[24  0]
+[ 0 24],
+```
+
+and the pulled elliptic surface has generic Mordell--Weil rank at least 19.
+All 39,120 individual conics are rational over `QQ`, and the complete set
+therefore gives exactly `binomial(39120,2)=765167640` such paired bases.
+
+#### Proof
+
+Exact factorization shows every primitive `q_i` is an irreducible quadratic
+and no two are proportional.  Hence distinct `q_i,q_j` are independent in
+`QQ(t)^*/QQ(t)^{*2}`, their geometric branch sets are disjoint, and the
+compositum has Galois group `V4`.  It has four branch points with inertia order
+two, so Riemann--Hurwitz gives
+
+```text
+2g(C_12)-2 = 4*(-2)+4*(4-2)=0.
+```
+
+The height-12 direction from each double cover doubles to height 24 after the
+other degree-two pullback.  The two directions occupy distinct nontrivial
+`V4` characters; Galois invariance makes their cross-height zero.  They are
+also orthogonal to the invariant rank-17 space, proving the rank bound.
+
+Exact Hasse--Minkowski computation supplies a rational point on every
+individual conic.  It is not claimed that every paired genus-one curve has a
+rational point.  Exactly 5,566 pairs have an immediate common point at zero or
+infinity.  A complete bounded point ledger for those curves has two certified
+rank-at-least-nine bases; an empty bounded search remains only lower bound
+zero, not an exact-rank statement.  QED.
+
+<!-- status-consumer: EC-K3-BISECT-BIQUADRATIC-R19 707bffd8b85f8f3e -->
 
 ## 8. What a bounded neighbour search really proves
 

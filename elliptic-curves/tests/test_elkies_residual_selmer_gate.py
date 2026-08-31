@@ -86,6 +86,41 @@ class ElkiesResidualSelmerGateTests(unittest.TestCase):
                     path, expected_model=(1, -1, 1, -2, 4)
                 )
 
+    def test_specialization_adapter_binds_parameter_and_model(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "gate.json"
+            path.write_text(
+                json.dumps(
+                    {
+                        "schema": GATE.SCHEMA,
+                        "status": GATE.PASS_STATUS,
+                        "parameter": "-9529/5471",
+                        "global_minimal_model": ["1", "-1", "1", "-2", "3"],
+                        "descent_backend": {
+                            "unconditional": True,
+                            "class_group_completeness_completed": True,
+                            "all_local_solubility_conditions_completed": True,
+                        },
+                        "gate": {
+                            "residual_two_selmer_quotient_dimension": 15,
+                            "required_residual_dimension": 15,
+                            "expensive_search_authorized": True,
+                        },
+                    }
+                )
+            )
+            specialization = {
+                "parameter": {"affine_value": "-9529/5471"},
+                "global_minimal_specialization": {
+                    "model": ["1", "-1", "1", "-2", "3"]
+                },
+            }
+            document = GATE.require_gate_for_specialization(path, specialization)
+            self.assertEqual(document["status"], GATE.PASS_STATUS)
+            specialization["parameter"]["affine_value"] = "-2/377"
+            with self.assertRaisesRegex(GATE.ResidualSelmerGateError, "different fibre"):
+                GATE.require_gate_for_specialization(path, specialization)
+
 
 if __name__ == "__main__":
     unittest.main()

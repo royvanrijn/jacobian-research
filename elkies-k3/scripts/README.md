@@ -5,17 +5,20 @@ It contains current proof replays, reusable compiler code, active searches, regr
 fixtures, and some historical attacks that remain in the root because other notes or
 launchers still refer to them.
 
-This audit was made against repository commit
-`4eac04a442a132b696a85384f08b81569870a940`. Every file in `scripts/` and
-`scripts/archive/` was enumerated. Current and ambiguous entry points were inspected
-against their code headers, outputs, certificates, and the notes that consume them;
-the archive is classified by historical programme rather than promoted file-by-file.
+The base inventory audit was made against repository commit
+`4eac04a442a132b696a85384f08b81569870a940`; later proof and search entry points
+are documented in the topical sections below. Every file present at that audit
+in `scripts/` and `scripts/archive/` was enumerated. Current and ambiguous entry
+points were inspected against their code headers, outputs, certificates, and
+the notes that consume them; the archive is classified by historical programme
+rather than promoted file-by-file.
 
 <!-- status-consumer: EC-K3-H3-Q4O164-Q8O376-MOD131-HORIZONTAL 2249c509c1217d7c -->
 <!-- status-consumer: EC-K3-H3-Q4O164-Q8O376-QQ-HORIZONTAL 688f0a5f6d989e9c -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R18-COVER 6b4ee5bbc1afc01e -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R19-PAIRED f1e135d2ba803e80 -->
+<!-- status-consumer: EC-K3-BISECT-BIQUADRATIC-R19 707bffd8b85f8f3e -->
 
 ## Local Sage 10.9 installation
 
@@ -55,19 +58,42 @@ it records a bounded negative result, a normalization bug, or a useful local mod
 
 - For the story and lessons, read `../ELKIES_K3_PROCESS_ATLAS.md`.
 - For pinned commands and hashes, use `success-path/ledger.json`.
-- Equation proofs currently stop at the P1229-pointed `4A1/MW13` q8/orbit376
-  child; the marked lattice route reaches R17.
+- The physical equation proof continues from the P1229-pointed
+  `4A1/MW13` q8/orbit376 child through q12/orbit5867 to the rootless `24I1`
+  endpoint. Source identity, Picard rank 19, and full saturated R17 are exact.
 - `lift_h92_q24_orbit42_resolved_rr_qq.sage` and
   `certify_h92_q24_orbit42_a11_equation_marking.sage` are the exact equation
   and marking proofs for that child.
-- Work next on q12/orbit5867 from the exact P1229-pointed `4A1/MW13`
-  q8/orbit376 child, with q12/orbit4484 retained as the certified fallback.
-  The A11 q8/orbit12, physical q4/orbit208, q4/orbit1584, q4/orbit164, and
-  q8/orbit376 equation edges are closed. Do not restart the
-  withdrawn q6/orbit1307, q323, changed-zero, zero-pole, point-transport, or
-  halving searches unless an exact gate on the selected suffix requires it.
+- Work next in the compact published `t` chart on residual 2-descent and
+  arithmetic specialization. The exact rank-25--28 positive controls and
+  same-curve fail-closed Selmer gate precede every expensive point search.
+  q12/orbit4484 remains a certified fallback, not an open requirement. Do not
+  restart the withdrawn q6/orbit1307, q323, changed-zero, zero-pole,
+  point-transport, or halving searches unless a specialization certificate
+  requires one.
 
 ## Current proof and compiler entry points
+
+### Complete bisection pair-cover arithmetic
+
+- `analyze_elkies_2026_bisection_pair_covers.sage` proves all 39,120
+  individual conics rational, all branch quadratics irreducible and distinct,
+  and all 765,167,640 distinct `V4` pair bases genus one with exact surface
+  height matrix `diag(24,24)`.
+- `catalogue_elkies_2026_immediate_point_pairs.sage` computes exact minimal
+  Jacobians, conductors, and global root numbers for all 5,566 pair bases with
+  a visible rational point at zero or infinity.
+- `screen_elkies_2026_immediate_pair_ranks.sage` maintains a resumable bounded
+  point ledger. Only exact finite-quotient-certified independent points count
+  toward its lower bounds; an empty bounded search is not a rank-zero result.
+- `verify_elkies_2026_rank19_rank9_base.sage` is the short promoted replay for
+  masks `42110:43109`: nine independent base-Jacobian points, the exact
+  degree-two isogeny to the paired base, a birational pointed-quartic map to
+  the `t`-line with nine explicit rational `(t,u,v)` points, and generic
+  surface rank at least 19.
+
+The canonical theorem and full proof boundary are in
+[`../BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md`](../BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md).
 
 ### Generic neighbour and compiler infrastructure
 
@@ -981,15 +1007,25 @@ The next arithmetic gate is the actual residual 2-Selmer quotient:
 ```bash
 python3 elliptic-curves/cas/run_elkies_2026_rank28_residual_selmer.py \
   --timeout 300 --overwrite
+python3 elliptic-curves/cas/run_elkies_2026_rank28_residual_selmer.py \
+  --backend eclib --timeout 300 \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_residual_2selmer_eclib_v1.json \
+  --overwrite
 ```
 
-The pinned attempt times out without a Selmer dimension and therefore forbids
-search. `probe_q12o5867_pari_two_cover.py` now requires a passing
-`--residual-selmer-gate` for the identical minimal curve. BNF-free signatures,
+Both pinned attempts time out without a Selmer dimension and therefore forbid
+search. Generate the unconditional basis-level Magma path with
+`build_elkies_2026_rank28_relative_descent_magma.py`; it applies the dimension
+gate before relative cover construction and contains no point search. Magma is
+not installed on this host.
+
+`probe_q12o5867_pari_two_cover.py`, `probe_q12o5867_ratpoints.py`,
+`probe_q12o5867_section_charts.py`, `probe_q12o5867_mwrank.py`, and
+`search_q12o5867_section_slope_slices.py` now require a passing
+`--residual-selmer-gate` for the identical parameter and minimal curve. The
+old low-complexity x-ansatz raw search is hard parked. BNF-free signatures,
 norm-one candidates, incomplete class ledgers, and local candidates cannot
-satisfy it. Do not run raw `ratpoints`, slope-box, two-cover point search, or
-equivalent expensive paths before the residual dimension is certified at
-least 15.
+satisfy the gate.
 
 ### Fixed-corridor reverse lift from the q12/o5867 endpoint
 

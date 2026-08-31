@@ -17,7 +17,22 @@ make verify-elliptic-curves PYTHON=python3
 The active Elkies rank-32 programme is the compact-`t` positive-control and
 residual 2-Selmer section of that catalogue. It requires an actual completed
 global/local descent before any expensive point search; a score or timeout is
-never an authorization.
+never an authorization. The direct q12 point-search entry points enforce this
+same-parameter, same-minimal-model gate; the obsolete pre-descent x-ansatz
+search is parked. The rank-28 bad-place ledger and factor-supplied PARI backend
+are reproducible exact descent inputs, but remain fail-closed until a complete
+Selmer dimension is returned. The same catalogue now includes a stage-aware
+factor-supplied `S`-class worker and an exact BNF-free rank-28 pilot. The first
+stops in class-group relation generation before certification; the second is
+far below a valid factor-base generation bound. Neither is a Selmer bound or
+permission to search. The exact rank-28 local calibration additionally shows
+that eleven certified global quotient directions add zero bad-place signature
+rank. Four odd places and infinity have certified full known-point coverage;
+a bounded resumable norm-one-cover pilot records 60 selected local witnesses
+and 24 inconclusive place tests, but no everywhere-local or Selmer class. The
+eleven public complement directions now provide genuine cover controls with
+exact rational witnesses and certify residual Selmer dimension at least 11;
+the complete upper bound and threshold 15 remain open.
 
 ## Level-474 branch in the Kumar H92 chart
 
@@ -2577,7 +2592,11 @@ The full exact table, CM24 comparison, and claim boundary are in
 <!-- status-consumer: EC-K3-ELKIES-2026-R18-COVER 6b4ee5bbc1afc01e -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R19-PAIRED f1e135d2ba803e80 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL f99c98cdb6b8cd7d -->
-<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE f5600026fe1e9656 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R28-BAD-PLACE-KUMMER 611e63935d2340bc -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R28-S-CLASS-PILOT a791713dc40f7caf -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R28-LOCAL-COVERAGE c078c1aa8e97df47 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R28-PUBLIC-SELMER-CONTROLS 56509673b9eb1940 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE bb81d843718bdd31 -->
 
 The rootless `U + (-M)` lattice has a finite degree-two quotient under section
 translation. The following exact lattice calculation enumerates its
@@ -2592,8 +2611,8 @@ sage -python elkies-k3/scripts/enumerate_rootless_bisection_orbits.sage \
 
 It is a completed lattice quotient, not a bounded height search. In any
 rootless K3 realization, the section-nonnegative classes are consequently
-irreducible smooth rational bisections.  The equation stage for the first
-1,000 priority classes is replayed below; this lattice command itself does not
+irreducible smooth rational bisections.  The equation stage for the complete
+39,120-class quotient is replayed below; this lattice command itself does not
 construct branch divisors, quadratic extensions, collision hashes, or a
 rank-19 family.  See
 [`elkies-k3/BISECTION_COLLISION_SEARCH.md`](elkies-k3/BISECTION_COLLISION_SEARCH.md).
@@ -2613,44 +2632,85 @@ Expected terminal status:
 R17BISECTDISJOINT|orbits=39120|norm4_masks=1311|active_masks=1311|pairs=8895801|status=PASS_EXACT_ROOTLESS_BISECTION_DISJOINT_FRONTIER
 ```
 
-The count ranks later equation-level work only; equal quadratic extensions and
-their anti-invariant heights remain unknown.
+The graph itself ranks equation-level work only.  The complete equation and
+squareclass replay below now proves that none of these pairs has an equal
+quadratic extension.
 <!-- status-consumer: EC-K3-BISECT-DISJOINT-FRONTIER c7ad7497253ac0b3 -->
 
 Rank every surviving pinned orbit by the exact published-section group-law
-and chord-input score, retain the first 1,000, and compute their induced
-disjoint-pair graph:
+and chord-input score and compute the complete disjoint-pair graph:
 
 ```bash
 sage -python elkies-k3/scripts/rank_elkies_2026_bisection_orbits.sage \
-  --pool-size 1000
+  --pool-size 39120 \
+  --output artifacts/generated-results/elkies-2026-bisection-equation-priority-full.json \
+  --table-output artifacts/generated-results/elkies-2026-bisection-equation-priority-full.tsv \
+  --pairs-output artifacts/generated-results/elkies-2026-bisection-equation-priority-disjoint-pairs-full.tsv
 ```
 
 Expected terminal status:
 
 ```text
-ELKIES2026BISECTIONPRIORITY|orbits=39120|pool=1000|disjoint_pairs=11823|status=PASS_EXACT_R17_BISECTION_EQUATION_PRIORITY
+ELKIES2026BISECTIONPRIORITY|orbits=39120|pool=39120|disjoint_pairs=8895801|status=PASS_EXACT_R17_BISECTION_EQUATION_PRIORITY
 ```
 
-Construct all 1,000 exact residual-chord bisections and normalize their
+Construct all 39,120 exact residual-chord bisections and normalize their
 quadratic extensions:
 
 ```bash
 sage -python elkies-k3/scripts/construct_elkies_2026_bisections.sage \
-  --limit 1000
+  --priority-table artifacts/generated-results/elkies-2026-bisection-equation-priority-full.tsv \
+  --limit 39120 \
+  --output artifacts/generated-results/elkies-2026-equation-bisections-full.json \
+  --orbits-output artifacts/generated-results/elkies-2026-equation-bisections-orbits-full.tsv
 
 .venv/bin/python elkies-k3/scripts/hash_bisection_extensions.py \
-  --input artifacts/generated-results/elkies-2026-equation-bisections.json \
-  --output artifacts/generated-results/elkies-2026-equation-bisection-collisions.json
+  --compact \
+  --input artifacts/generated-results/elkies-2026-equation-bisections-full.json \
+  --output artifacts/generated-results/elkies-2026-equation-bisection-collisions-full-compact.json
 ```
 
 The direct compiler solves `M*Nx+Ny=0 mod h^2` for each height-ten trace,
 then verifies the exact quadratic relation and the lifted section over its
-double cover.  All 1,000 records pass and all branch at smooth fibres; their
-squareclasses are pairwise distinct, so this first bounded batch contains no
-collision.
+double cover.  It uses the reciprocal base chart for the unique trace whose
+finite denominator loses a pole at infinity.  All 39,120 records pass and all
+branch at smooth fibres.  Exact normalization finds 39,120 distinct
+squareclasses and no collision.  This exhausts the complete pinned survivor
+set, proving injectivity of its bisection-to-extension map and excluding every
+one of the 8,895,801 disjoint pairs as a common-cover rank-19 route.  Each
+individual smooth cover has one height-12 anti-invariant direction, so the
+batch gives 39,120 explicit generic-rank-at-least-18 base changes.
 
-<!-- status-consumer: EC-K3-BISECT-EQUATION-BATCH a993e11257ca08a8 -->
+<!-- status-consumer: EC-K3-BISECT-EQUATION-BATCH a0570a5a4ea8e02b -->
+
+Classify all distinct biquadratic pair bases, build the complete exact
+5,566-row immediate-point arithmetic catalogue, replay the completed bounded
+rank-lower-bound ledger, and verify the simplest rank-at-least-nine base:
+
+```bash
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/analyze_elkies_2026_bisection_pair_covers.sage
+
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/catalogue_elkies_2026_immediate_point_pairs.sage
+
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/screen_elkies_2026_immediate_pair_ranks.sage \
+  --start 1 --limit 5566 --backend pari-only --pari-effort 1 \
+  --prime-bound 200 --checkpoint-every 100
+
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/verify_elkies_2026_rank19_rank9_base.sage
+```
+
+The complete geometry proves all 765,167,640 distinct pair bases genus one
+with generic surface rank at least 19. The bounded point ledger is complete
+but does not turn empty searches into rank-zero claims. Its record lower bound
+is 9, attained by two bases. The standalone verifier replays the simpler one,
+constructs the paired base's 2-isogenous minimal model, and certifies an exact
+birational map from nine independent points to nine rational `(t,u,v)` values.
+
+<!-- status-consumer: EC-K3-BISECT-BIQUADRATIC-R19 707bffd8b85f8f3e -->
 
 The equation-friendlier alternate q80 q6 endpoint has a distinct rootless
 rank-17 lattice.  Its short shell is too large for PARI's materialized vector
@@ -2687,9 +2747,9 @@ For a collision with smooth branch fibres and rootless double pullback, it can
 instead compute the anti-invariant height form from exact lifted-section
 intersections using `2*(P_i.tau(P_j)-P_i.P_j)`, checking the diagonal values
 `P_i^2=-4` and `P_i.tau(P_i)=2`.  The synthetic test itself supplies no new
-rootless cover; the production 1,000-cover input is the batch above.
+rootless cover; the production 39,120-cover input is the batch above.
 
-<!-- status-consumer: EC-K3-BISECT-EXTENSION-PROTOCOL f0dca8afe83627cd -->
+<!-- status-consumer: EC-K3-BISECT-EXTENSION-PROTOCOL 90dc72ea57ae22dc -->
 
 ## Fast structural check
 
