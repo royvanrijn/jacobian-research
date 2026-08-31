@@ -27,6 +27,15 @@ from .conductor_engineering import (
     small_prime_valuations,
     weierstrass_invariant_polynomials,
 )
+from .family_discovery import (
+    DiscoveryTarget,
+    PolynomialWeierstrassFamily,
+    SixRootMestreFamily,
+    discover_target_families,
+    q_isomorphism_scale,
+    rational_weierstrass_c_data,
+    rational_weierstrass_invariants,
+)
 from .local_data import (
     LocalData,
     calibration_family_local_data,
@@ -106,6 +115,13 @@ __all__ = [
     "select_projective_ball",
     "small_prime_valuations",
     "weierstrass_invariant_polynomials",
+    "DiscoveryTarget",
+    "PolynomialWeierstrassFamily",
+    "SixRootMestreFamily",
+    "discover_target_families",
+    "q_isomorphism_scale",
+    "rational_weierstrass_c_data",
+    "rational_weierstrass_invariants",
     "LocalData",
     "calibration_family_local_data",
     "legendre_symbol",

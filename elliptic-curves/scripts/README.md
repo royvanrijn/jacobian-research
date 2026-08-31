@@ -7,6 +7,7 @@ and claim boundaries are in [`../REPRODUCE.md`](../REPRODUCE.md).
 
 | Generate | Verify | Result |
 | --- | --- | --- |
+| `discover_record_families.py SPEC --output RESULT` | same command with `--check` | generated construction-space search with modular rejection, exact factorization, and rational-isomorphism verification |
 | `recover_conductor_parameter.py SPEC --output RESULT` | same command with `--check` | two-chart local fingerprint and bounded CRT/Gauss family recognition |
 | `run_crt_lattice_calibration.py` | `verify_crt_lattice_calibration.py` | exact low-rank CRT calibration |
 | `run_fermigier_crt_seed.py` | `verify_fermigier_crt_seed.py` | exact local seed, not a target |
@@ -28,6 +29,9 @@ positive controls, and the fail-closed residual-descent entry points.
 The generic input format and the curve-282 Fermigier replay for
 `recover_conductor_parameter.py` are documented in
 [`../notes/CONDUCTOR_PARAMETER_RECOVERY.md`](../notes/CONDUCTOR_PARAMETER_RECOVERY.md).
+The bounded multi-family census and its exact ICARM 273/282/302 controls are
+documented in
+[`../notes/GENERATED_FAMILY_DISCOVERY.md`](../notes/GENERATED_FAMILY_DISCOVERY.md).
 
 `analyze_elkies_bisection_visibility_and_record_curves.py` converts the split
 bisection classes into canonical visible/complementary quotient bases and

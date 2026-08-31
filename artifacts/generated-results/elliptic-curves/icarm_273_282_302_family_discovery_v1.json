@@ -1,0 +1,413 @@
+{
+  "claim_level": "complete bounded exact computation",
+  "construction_space": {
+    "family_identifier_sha256": "df72faad350d54ee88d27e1506d73c945baa9e7f931466cd79466a47205bb26b",
+    "polynomial_weierstrass_family_count": 1,
+    "six_root_generation_summary": {
+      "duplicate_family_emission_count": 6,
+      "emitted_family_count_before_deduplication": 2339,
+      "generator_degenerate_parameter_pairs": 15,
+      "generator_parameter_pairs_tested": 25
+    },
+    "six_root_mestre_family_count": 2333,
+    "total_family_count": 2334
+  },
+  "interpretation": {
+    "boundary": "A no-match result excludes only the declared bounded generators. It does not exclude a larger root census, another construction template, a different fibration, an isogeny, or a private family.",
+    "proved": "Every family in the declared generated construction space was screened. Modular no-root witnesses are exact exclusions; every survivor was factored over QQ and re-specialized exactly."
+  },
+  "schema": "elliptic-curves.generated-family-discovery.v1",
+  "specification_sha256": "ecf80809eb27c386ac92341c5e0d97b9a95d20a69bfe6fb0e82372a9385cca6b",
+  "targets": [
+    {
+      "exact_factorization_survivor_count": 113,
+      "exact_j_matches": [],
+      "families_tested": 2334,
+      "modular_no_root_witness_histogram": {
+        "101": 577,
+        "103": 715,
+        "107": 317,
+        "109": 174,
+        "127": 168,
+        "131": 125,
+        "137": 92,
+        "139": 53
+      },
+      "modular_primes": [
+        101,
+        103,
+        107,
+        109,
+        127,
+        131,
+        137,
+        139
+      ],
+      "q_isomorphism_matches": [],
+      "rational_parameter_survivors": [],
+      "target": "ICARM curve 273",
+      "target_j": "-908421207611619966397301371501291919756761922734684482806268125472094471799504840865963593736467876552674219212405145331405042867323019584013417593982615086603074757004166961559271290889612721/46714661255308767314567688733841531918983356002159772613256840842851650254036518701100578342601553513579222272710220496887616034526983492843954090554197033638137245037791044053017600000000"
+    },
+    {
+      "exact_factorization_survivor_count": 114,
+      "exact_j_matches": [
+        {
+          "family_id": "fermigier-mestre-rank12",
+          "family_kind": "polynomial-weierstrass",
+          "metadata": {
+            "source": "elliptic-curves/families/fermigier_mestre_rank12.json"
+          },
+          "parameter": "11671/42",
+          "parameter_name": "u",
+          "q_isomorphic": true,
+          "q_isomorphism_invariant_scale": "882",
+          "source_discriminant": "622378604241927950890958041595747942298430358551860741423424661556729985534405612553975/56539842391292292564588",
+          "source_discriminant_valuations_at_target_repeated_primes": {
+            "11": 4,
+            "13": 3,
+            "2": -2,
+            "23": 2,
+            "3": -11,
+            "31": 2,
+            "5": 2,
+            "7": -20
+          },
+          "source_model": [
+            "1",
+            "74642880985454557/194481",
+            "1",
+            "3623824047112428682330610330943007/75645718722",
+            "230201722229300120021424325811203488991562756338985/117693240182186256"
+          ],
+          "target_repeated_prime_valuations": {
+            "11": 4,
+            "13": 3,
+            "2": 10,
+            "23": 2,
+            "3": 13,
+            "31": 2,
+            "5": 2,
+            "7": 4
+          }
+        },
+        {
+          "family_id": "six-root-mestre:0,29,658,722,981,1036",
+          "family_kind": "six-root-mestre",
+          "metadata": {
+            "origins": [
+              {
+                "construction": "fermigier_roots",
+                "generator_kind": "fermigier-six-root",
+                "generator_parameters": {
+                  "u": "3",
+                  "v": "5"
+                },
+                "source": "elliptic-curves/cas/icarm_curve245_mestre.py"
+              },
+              {
+                "construction": "fermigier_roots",
+                "generator_kind": "fermigier-six-root",
+                "generator_parameters": {
+                  "u": "5",
+                  "v": "3"
+                },
+                "source": "elliptic-curves/cas/icarm_curve245_mestre.py"
+              }
+            ]
+          },
+          "parameter": "11671/21",
+          "parameter_name": "T",
+          "q_isomorphic": true,
+          "q_isomorphism_invariant_scale": "147",
+          "source_discriminant": "1911947072231202665137023103782137678740778061471316197652760560302274515561694041765811200/79792266297612001",
+          "source_discriminant_valuations_at_target_repeated_primes": {
+            "11": 4,
+            "13": 3,
+            "2": 10,
+            "23": 2,
+            "3": 1,
+            "31": 2,
+            "5": 2,
+            "7": -20
+          },
+          "source_model": [
+            "0",
+            "0",
+            "0",
+            "-2173177778357579934424002226261849/1400846643",
+            "192187965069015898473089914664221737287875316239286/272438055977283"
+          ],
+          "target_repeated_prime_valuations": {
+            "11": 4,
+            "13": 3,
+            "2": 10,
+            "23": 2,
+            "3": 13,
+            "31": 2,
+            "5": 2,
+            "7": 4
+          }
+        }
+      ],
+      "families_tested": 2334,
+      "modular_no_root_witness_histogram": {
+        "101": 533,
+        "103": 769,
+        "107": 244,
+        "109": 321,
+        "127": 136,
+        "131": 93,
+        "137": 80,
+        "139": 44
+      },
+      "modular_primes": [
+        101,
+        103,
+        107,
+        109,
+        127,
+        131,
+        137,
+        139
+      ],
+      "q_isomorphism_matches": [
+        {
+          "family_id": "fermigier-mestre-rank12",
+          "family_kind": "polynomial-weierstrass",
+          "metadata": {
+            "source": "elliptic-curves/families/fermigier_mestre_rank12.json"
+          },
+          "parameter": "11671/42",
+          "parameter_name": "u",
+          "q_isomorphic": true,
+          "q_isomorphism_invariant_scale": "882",
+          "source_discriminant": "622378604241927950890958041595747942298430358551860741423424661556729985534405612553975/56539842391292292564588",
+          "source_discriminant_valuations_at_target_repeated_primes": {
+            "11": 4,
+            "13": 3,
+            "2": -2,
+            "23": 2,
+            "3": -11,
+            "31": 2,
+            "5": 2,
+            "7": -20
+          },
+          "source_model": [
+            "1",
+            "74642880985454557/194481",
+            "1",
+            "3623824047112428682330610330943007/75645718722",
+            "230201722229300120021424325811203488991562756338985/117693240182186256"
+          ],
+          "target_repeated_prime_valuations": {
+            "11": 4,
+            "13": 3,
+            "2": 10,
+            "23": 2,
+            "3": 13,
+            "31": 2,
+            "5": 2,
+            "7": 4
+          }
+        },
+        {
+          "family_id": "six-root-mestre:0,29,658,722,981,1036",
+          "family_kind": "six-root-mestre",
+          "metadata": {
+            "origins": [
+              {
+                "construction": "fermigier_roots",
+                "generator_kind": "fermigier-six-root",
+                "generator_parameters": {
+                  "u": "3",
+                  "v": "5"
+                },
+                "source": "elliptic-curves/cas/icarm_curve245_mestre.py"
+              },
+              {
+                "construction": "fermigier_roots",
+                "generator_kind": "fermigier-six-root",
+                "generator_parameters": {
+                  "u": "5",
+                  "v": "3"
+                },
+                "source": "elliptic-curves/cas/icarm_curve245_mestre.py"
+              }
+            ]
+          },
+          "parameter": "11671/21",
+          "parameter_name": "T",
+          "q_isomorphic": true,
+          "q_isomorphism_invariant_scale": "147",
+          "source_discriminant": "1911947072231202665137023103782137678740778061471316197652760560302274515561694041765811200/79792266297612001",
+          "source_discriminant_valuations_at_target_repeated_primes": {
+            "11": 4,
+            "13": 3,
+            "2": 10,
+            "23": 2,
+            "3": 1,
+            "31": 2,
+            "5": 2,
+            "7": -20
+          },
+          "source_model": [
+            "0",
+            "0",
+            "0",
+            "-2173177778357579934424002226261849/1400846643",
+            "192187965069015898473089914664221737287875316239286/272438055977283"
+          ],
+          "target_repeated_prime_valuations": {
+            "11": 4,
+            "13": 3,
+            "2": 10,
+            "23": 2,
+            "3": 13,
+            "31": 2,
+            "5": 2,
+            "7": 4
+          }
+        }
+      ],
+      "rational_parameter_survivors": [
+        {
+          "family_id": "fermigier-mestre-rank12",
+          "family_kind": "polynomial-weierstrass",
+          "metadata": {
+            "source": "elliptic-curves/families/fermigier_mestre_rank12.json"
+          },
+          "modular_root_counts": [
+            [
+              101,
+              6
+            ],
+            [
+              103,
+              4
+            ],
+            [
+              107,
+              8
+            ],
+            [
+              109,
+              6
+            ],
+            [
+              127,
+              8
+            ],
+            [
+              131,
+              4
+            ],
+            [
+              137,
+              2
+            ],
+            [
+              139,
+              2
+            ]
+          ],
+          "parameters": [
+            "11671/42"
+          ]
+        },
+        {
+          "family_id": "six-root-mestre:0,29,658,722,981,1036",
+          "family_kind": "six-root-mestre",
+          "metadata": {
+            "origins": [
+              {
+                "construction": "fermigier_roots",
+                "generator_kind": "fermigier-six-root",
+                "generator_parameters": {
+                  "u": "3",
+                  "v": "5"
+                },
+                "source": "elliptic-curves/cas/icarm_curve245_mestre.py"
+              },
+              {
+                "construction": "fermigier_roots",
+                "generator_kind": "fermigier-six-root",
+                "generator_parameters": {
+                  "u": "5",
+                  "v": "3"
+                },
+                "source": "elliptic-curves/cas/icarm_curve245_mestre.py"
+              }
+            ]
+          },
+          "modular_root_counts": [
+            [
+              101,
+              3
+            ],
+            [
+              103,
+              2
+            ],
+            [
+              107,
+              4
+            ],
+            [
+              109,
+              3
+            ],
+            [
+              127,
+              4
+            ],
+            [
+              131,
+              3
+            ],
+            [
+              137,
+              1
+            ],
+            [
+              139,
+              2
+            ]
+          ],
+          "parameters": [
+            "11671/21"
+          ]
+        }
+      ],
+      "target": "ICARM curve 282",
+      "target_j": "41053081173544969584269465886105222910276518783704173948262625831542588253092643454631167373056572196/2382446328805378714772428079500289409508353983274485333109053242725752120165935552776762492503925"
+    },
+    {
+      "exact_factorization_survivor_count": 146,
+      "exact_j_matches": [],
+      "families_tested": 2334,
+      "modular_no_root_witness_histogram": {
+        "101": 648,
+        "103": 394,
+        "107": 337,
+        "109": 269,
+        "127": 209,
+        "137": 211,
+        "139": 120
+      },
+      "modular_primes": [
+        101,
+        103,
+        107,
+        109,
+        127,
+        131,
+        137,
+        139
+      ],
+      "q_isomorphism_matches": [],
+      "rational_parameter_survivors": [],
+      "target": "ICARM curve 302",
+      "target_j": "375212263011874190418465904591842149883143397000379116040077721209939307800933802063374036449207052554068812677819360841029222896769044613030052189320099029335648176287279769780720048237450063678337025/91178667460631761509802129711614912708907877152843688131591561513957139867216918982080782638846592571825918112525868294328087917747020295905203091292094298537560118649108877196489360560362979328"
+    }
+  ]
+}

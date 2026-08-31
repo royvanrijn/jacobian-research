@@ -31851,6 +31851,40 @@
       "priority": "primary"
     },
     {
+      "id": "EC-ICARM-WGXLI-R17-FIRST-JET",
+      "kind": "example",
+      "state": "proved",
+      "title": "Complete mod-17 first-jet obstruction for literal five-fibre wgxli interpolation",
+      "scope": "For the five canonical short fibres 351, 356, 376, 377 and 385 with their ordered first seventeen displayed points, five-point interpolation and differentiated section identities eliminate all 34 free sextic-ordinate coefficients and all twelve free surface coefficients from the literal rootless-K3 ansatz. After the gauges t_351=0, t_356=1, t_385=-1 and inverse Weierstrass scale w_351=1, the remaining intrinsic variables are t_376,t_377 and four nonzero fibre scalings; ten fibre-derivative values A'(t_k),B'(t_k) are linear auxiliaries. Over GF(17), all 182 ordered choices of distinct t_376,t_377 outside {0,1,-1} give a 52-equation saturated ideal with Groebner basis [1] over the algebraic closure, with no solver timeout. The differentiated identities replay on all seventeen sections of the exact published-R17 positive control. Hence no literal model exists in this complete distinct normalized mod-17 chart. This does not exclude a QQ model whose parameters or scalings have bad or colliding reduction at 17, a relabelled or integrally changed Mordell--Weil basis, or a family outside the rootless-K3 degree bounds.",
+      "canonical_source": "elliptic-curves/notes/ICARM_WGXLI_RANK17_FIRST_JET_ELIMINATION.md",
+      "dependencies": [
+        "EC-ICARM-WGXLI-R17-LINEAGE",
+        "EC-K3-ELKIES-2026-R17"
+      ],
+      "checker": "elliptic-curves/cas/eliminate_icarm_wgxli_rank17_first_jet.sage",
+      "proof_type": "exact_modular",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4313c3d04f1133b109cf76ba7c5e2189c3f5765f4dfb22e54724dede079440ea",
+      "software_lock": [
+        "elliptic-curves/cas/eliminate_icarm_wgxli_rank17_first_jet.sage",
+        "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_lineage_v1.json",
+        "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_first_jet_mod17_v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/notes/ICARM_WGXLI_RANK17_LINEAGE.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-R21-ICARM",
       "kind": "theorem",
       "state": "proved",

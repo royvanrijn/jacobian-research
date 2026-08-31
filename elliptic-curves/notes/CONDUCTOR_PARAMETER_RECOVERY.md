@@ -75,3 +75,9 @@ The local profiles are still useful when no match is found: they distinguish
 genuinely expensive high-power residue conditions from cheap repeated-root
 balls and fixed divisors.  That distinction should be retained when using
 the fingerprints to design a forward search.
+
+For the complementary problem in which the family is not fixed in advance,
+see [`GENERATED_FAMILY_DISCOVERY.md`](GENERATED_FAMILY_DISCOVERY.md).  That
+pipeline enumerates a declared construction space first and applies modular,
+exact-factorization, and rational-isomorphism gates before interpreting the
+local discriminant fingerprints.

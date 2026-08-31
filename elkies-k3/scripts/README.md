@@ -115,26 +115,54 @@ affine reduction.  Replay the corrected signed shell through length ten with:
 
 This bounded search has eight unsigned polynomial section pairs and no target
 profile through length ten.  An optimized extension through length fifteen
-visits 21,871 distinct subgroup points and still finds no target profile; it
-is not a nonexistence proof.  The next modular gate is to reconstruct the
-rank-five Shioda height lattice and enumerate only its finite height-eight
-shell with trivial component class at both star fibres.  Export the
-lower-degree direct scheme, optionally with a bounded solve, using:
+visits 21,871 distinct subgroup points and still finds no target profile.  The
+exact fourth/eighth-multiple Shioda replay now supersedes that word bound: the
+eight pairs span only rank three, with saturated Gram
+`[[11/4,-1/2,-5/4],[-1/2,3,-1/2],[-5/4,-1/2,1]]`, determinant `2`, and
+trivial torsion residual.  Its complete height-eight shell is empty.  Thus the
+required horizontal uses the two missing non-polynomial MW directions.
+
+`scan_q80_po1_msolve_slices.sage` exhausts the direct `P.O=1` charts without
+random slicing.  At `u=-2, p=19`, the 342 finite-pole `(z,l)` slices contain
+exactly one sign pair, at `(15,4)` and `(15,15)`.  The decoded section is
+literally replayed on the reduced Q80 equation and has height `19/4`, but its
+coordinates in the rank-three polynomial lattice are `(1,1,0)`.  All 18
+pole-at-infinity `l != 0` slices are empty.  Therefore neither `P.O=1` chart
+supplies a missing direction; the next section search starts at `P.O=2`.
+
+Reproduce the finite `P.O=1` export, exhaustive scan, and augmented height
+replay with:
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_q80_fixed_u_marked_third_q12.sage \
-  --u=-2 --prime 19 --prime-audit-only --direct-chart auxiliary \
-  --direct-msolve-dir artifacts/local/elkies-k3/q80-third-q12-msolve \
-  --run-msolve --msolve-threads 4 --msolve-timeout 60 \
-  --output artifacts/generated-results/q80-fixed-u-minus2-p19-direct-q12-scheme.json
+  --u=-2 --prime 19 --prime-audit-only --direct-pole-order 1 \
+  --direct-pole-location finite --direct-chart auxiliary \
+  --direct-msolve-dir artifacts/generated-results/q80-fixed-u-minus2-p19-po1-msolve \
+  --output artifacts/generated-results/q80-fixed-u-minus2-p19-po1-export.json
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_q80_po1_msolve_slices.sage \
+  --input artifacts/generated-results/q80-fixed-u-minus2-p19-po1-msolve/q80-third-q12-um2d1-p19-po1-finite-auxiliary-sign+1.ms \
+  --output-dir /tmp/q80-po1-p19-finite-slices-certified \
+  --output artifacts/generated-results/q80-fixed-u-minus2-p19-po1-finite-slices.json \
+  --workers 4 --msolve-threads 1 --timeout 30
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_q80_fixed_u_marked_third_q12.sage \
+  --u=-2 --prime 19 --word-length 1 --height-shell \
+  --po1-slice-certificate artifacts/generated-results/q80-fixed-u-minus2-p19-po1-finite-slices.json \
+  --output artifacts/generated-results/q80-fixed-u-minus2-p19-height-shell-with-po1.json
 ```
 
-The auxiliary chart has 24 variables and 25 sparse equations (at most 119
-terms each at this specialization).  The recursive chart has 12 variables
-but is much denser (81,870 terms in its largest equation at `u=-2, p=19`).
-The auxiliary `u=-2, p=19` solve and an earlier recursive `u=0, p=23` solve
-both timed out at 60 seconds.
+The current direct `P.O=2` target exporter has a 24-variable, 25-equation
+sparse auxiliary chart (at most 119 terms per equation here).  It explicitly
+inverts `h` at the finite `I1*` root and excludes the nodal specialization, so
+it is only the chart regular and non-nodal there, not a complete `P.O=2`
+section scheme.  Its unsliced bounded solve timed out.  The next computation
+is deterministic `(h0,h1,l)` slicing of that chart, followed by the missing
+pole-at-star chart; only then can the full rank-five Gram `det=237/4` and the
+pinned horizontal coordinates `(-1,1,-1,1,0)` be matched.
 
 ### Rootless J2 classification controls
 

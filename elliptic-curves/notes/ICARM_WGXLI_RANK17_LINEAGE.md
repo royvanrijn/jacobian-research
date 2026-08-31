@@ -146,6 +146,15 @@ sections, or that a modular solution lifts to characteristic zero.  A modular
 solver should saturate the distinct-parameter, nonzero-scaling, and
 interpolation-denominator factors before CRT/LLL reconstruction.
 
+The first-jet elimination now removes all 34 free ordinate coefficients and
+all twelve free surface coefficients before solving.  Its complete distinct
+mod-17 chart has no solution for literal labels and signs.  See
+[`ICARM_WGXLI_RANK17_FIRST_JET_ELIMINATION.md`](ICARM_WGXLI_RANK17_FIRST_JET_ELIMINATION.md).
+This is an exact necessary-condition obstruction in that reduction chart, not
+a characteristic-zero nonexistence theorem.
+
+<!-- status-consumer: EC-ICARM-WGXLI-R17-FIRST-JET ae24ab60702262b8 -->
+
 The bounded fixed-root Mestre census is not repeated or enlarged here.  Its
 negative result for curve 356 remains exactly the previously declared census
 boundary.

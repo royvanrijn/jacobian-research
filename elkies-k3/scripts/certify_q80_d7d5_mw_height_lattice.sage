@@ -97,6 +97,82 @@ assert third_section_pole == 2
 assert all(value == 0 for _, value in third_section_component_pairings[:12])
 assert tuple(value for _, value in third_section_component_pairings[12:]) == (1, 1)
 
+# The fixed-u modular worker recovers the following rank-three polynomial
+# subgroup.  Enumerate every integral embedding into MW5.  The largest target
+# norm is twelve in the 4-scaled form, so PARI qfminim(12) is a complete finite
+# vector list for all three basis images.
+polynomial_height_gram = matrix(
+    QQ,
+    [
+        [QQ(11) / 4, QQ(-1) / 2, QQ(-5) / 4],
+        [QQ(-1) / 2, 3, QQ(-1) / 2],
+        [QQ(-5) / 4, QQ(-1) / 2, 1],
+    ],
+)
+scaled_height_gram = (4 * height_gram).change_ring(ZZ)
+scaled_polynomial_gram = (4 * polynomial_height_gram).change_ring(ZZ)
+short_half = matrix(ZZ, pari(scaled_height_gram).qfminim(12)[2]).transpose()
+short_vectors = []
+for row in short_half.rows():
+    short_vectors.extend((vector(ZZ, row), -vector(ZZ, row)))
+vectors_by_norm = {
+    norm: [row for row in short_vectors if row * scaled_height_gram * row == norm]
+    for norm in (4, 11, 12)
+}
+embeddings = []
+for first in vectors_by_norm[11]:
+    for second in vectors_by_norm[12]:
+        for third in vectors_by_norm[4]:
+            candidate = matrix(ZZ, [first, second, third])
+            if candidate * scaled_height_gram * candidate.transpose() == scaled_polynomial_gram:
+                embeddings.append(candidate)
+assert len(embeddings) == 2 and embeddings[1] == -embeddings[0]
+assert tuple(tuple(row) for row in embeddings[0].rows()) == (
+    (1, 1, 0, 0, 0),
+    (1, -1, -1, 0, 0),
+    (-1, 0, 0, 0, 0),
+)
+
+polynomial_shell_coordinates = (
+    (1, 0, 0),
+    (0, 1, 0),
+    (0, 0, 1),
+    (2, 1, 4),
+    (1, 1, 2),
+    (-1, -1, -1),
+    (-1, 0, -1),
+    (-1, 0, -2),
+)
+embedding_records = []
+for embedding in embeddings:
+    pairings = tuple(
+        target_coordinates * height_gram * vector(ZZ, row)
+        for row in embedding.rows()
+    )
+    assert pairings[:2] == (0, 0) and abs(pairings[2]) == 1
+    orientation = int(pairings[2])
+    ordered_po = [
+        4 - orientation * coordinates[2]
+        for coordinates in polynomial_shell_coordinates
+    ]
+    embedding_records.append(
+        {
+            "basis_images_in_MW5_height_coordinates": [
+                list(map(int, row)) for row in embedding.rows()
+            ],
+            "H_pairings_with_polynomial_basis": list(map(str, pairings)),
+            "ordered_P_dot_O_of_H_minus_eight_polynomial_points": ordered_po,
+            "sorted_intersection_fingerprint": sorted(ordered_po),
+        }
+    )
+assert {
+    tuple(record["sorted_intersection_fingerprint"])
+    for record in embedding_records
+} == {
+    (0, 2, 3, 4, 4, 5, 5, 6),
+    (2, 3, 3, 4, 4, 5, 6, 8),
+}
+
 payload = {
     "schema": "elkies-k3.q80-d7d5-mw5-height-lattice.v1",
     "status": "PASS_EXACT_Q80_D7D5_SATURATED_MW5_AND_Q12_TARGET",
@@ -126,6 +202,19 @@ payload = {
             [name, int(value)] for name, value in third_section_component_pairings[12:]
         ],
         "component_profile": "identity at both I3* and I1* fibres",
+    },
+    "polynomial_rank3_subgroup": {
+        "height_gram": rational_rows(polynomial_height_gram),
+        "height_determinant": str(polynomial_height_gram.det()),
+        "eight_points_in_basis_coordinates": [
+            list(row) for row in polynomial_shell_coordinates
+        ],
+        "complete_embedding_count": len(embedding_records),
+        "embeddings": embedding_records,
+        "completeness_method": (
+            "Enumerate every MW5 vector of 4-scaled norm at most 12 with "
+            "PARI qfminim, then test the full 4-scaled rank-three Gram."
+        ),
     },
     "inputs": {
         "source_verifier": {

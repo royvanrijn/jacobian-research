@@ -1,0 +1,51 @@
+{
+  "schema": "elliptic-curves.generated-family-discovery-spec.v1",
+  "targets": [
+    {
+      "label": "ICARM curve 273",
+      "record_file": "artifacts/generated-results/elliptic-curves/icarm_curve273_rank30_v1.json",
+      "ainvs_path": ["curve", "ainvs"]
+    },
+    {
+      "label": "ICARM curve 282",
+      "record_file": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json",
+      "records_path": ["curves"],
+      "match": {"field": "id", "value": 282},
+      "ainvs_path": ["ainvs"]
+    },
+    {
+      "label": "ICARM curve 302",
+      "record_file": "artifacts/generated-results/elliptic-curves/icarm_curve302_rank31_v1.json.gz",
+      "ainvs_path": ["curve", "ainvs"]
+    }
+  ],
+  "polynomial_families": [
+    {
+      "file": "elliptic-curves/families/fermigier_mestre_rank12.json",
+      "model_path": ["canonical_weierstrass_model"],
+      "parameter_name": "u"
+    }
+  ],
+  "six_root_mestre": {
+    "census_sources": [
+      {
+        "file": "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_root_tuple_scale_max200_census.json",
+        "roots_path": ["tuple_populations", "generically_nonsingular_nonreflection_roots"]
+      },
+      {
+        "file": "archive/elliptic-curves/artifacts/generated-results/elliptic_mestre_root_tuple_scale_max300_census.json",
+        "roots_path": ["tuple_populations", "genuinely_new_nonsingular_roots"]
+      }
+    ],
+    "generators": [
+      {
+        "kind": "fermigier-six-root",
+        "u_values": [1, 2, 3, 4, 5],
+        "v_values": [1, 2, 3, 4, 5]
+      }
+    ]
+  },
+  "modular_primes": [101, 103, 107, 109, 127, 131, 137, 139],
+  "fingerprint_prime_bound": 97,
+  "scope": "All 2329 normalized nonsingular six-root census families through diameter 300, all nondegenerate normalized outputs of the Fermigier two-parameter root generator on 1 <= u,v <= 5, and the canonical polynomial Fermigier adapter."
+}

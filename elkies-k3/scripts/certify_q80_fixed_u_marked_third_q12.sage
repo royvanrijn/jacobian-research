@@ -8,8 +8,9 @@ has three fail-closed layers:
    source, first-q4, and second-q4 equations over ``QQ``;
 2. test the forced first Q80 marking exactly and, independently, enumerate
    polynomial sections of the ``D7+D5`` child at several good primes;
-3. combine the modular polynomial shell and, independently, export the direct
-   denominator-two section scheme; retain shell sections only when they have
+3. combine the modular polynomial shell with decoded direct-section charts,
+   and independently export denominator-one or denominator-two schemes;
+   retain shell sections only when they have
    the equation-side fingerprint of the third-q12 horizontal:
 
        P.O=2, height 8, identity at both I*_n fibres.
@@ -70,6 +71,9 @@ GLOBAL_FIRST_MARKING_COVER = (
 SIMPLIFIED_FIRST_MARKING_COVER = (
     ROOT
     / "artifacts/generated-results/q80-first-marked-cover-simplified-qq.json"
+)
+RANK_FIVE_LATTICE_TARGET = (
+    ROOT / "artifacts/generated-results/q80-d7d5-mw5-height-lattice.json"
 )
 
 # The projective point at infinity and the first forty affine reduced
@@ -242,7 +246,7 @@ parser.add_argument(
 parser.add_argument(
     "--direct-pole-order",
     type=int,
-    choices=(1, 2),
+    choices=(0, 1, 2),
     default=2,
     help="section pole order for the exported direct scheme (default: 2)",
 )
@@ -271,6 +275,8 @@ if args.msolve_threads < 1 or args.msolve_timeout < 1:
     raise ValueError("msolve threads and timeout must be positive")
 if args.max_height_shell < 1:
     raise ValueError("max-height-shell must be positive")
+if args.direct_pole_order != 1 and args.direct_pole_location != "finite":
+    raise ValueError("--direct-pole-location applies only to P.O=1")
 if args.run_msolve and shutil.which("msolve") is None:
     raise RuntimeError("--run-msolve requested but msolve is unavailable")
 
@@ -840,6 +846,94 @@ def direct_pole_one_infinity_system(modular, relative_sign, chart):
     }
 
 
+def direct_polynomial_system(modular, relative_sign, chart):
+    """Build an affine P.O=0 section scheme over the finite field."""
+    finite = modular["field"]
+    if chart == "recursive":
+        names = ("a", "n0", "n1", "n2", "n3", "sat")
+        scheme_ring = PolynomialRing(finite, names=names, order="degrevlex")
+        variables = scheme_ring.gens_dict()
+        fraction = scheme_ring.fraction_field()
+        polynomial_ring = PolynomialRing(fraction, "W_direct")
+        W_direct = polynomial_ring.gen()
+        direct_A = polynomial_ring([fraction(value) for value in modular["A"].list()])
+        direct_B = polynomial_ring([fraction(value) for value in modular["B"].list()])
+        leading = fraction(variables["a"])
+        x_value = sum(
+            fraction(variables[f"n{degree}"]) * W_direct**degree
+            for degree in range(4)
+        ) + leading**2 * W_direct**4
+        square = x_value**3 + direct_A * x_value + direct_B
+        y_coefficients = [fraction.zero() for _ in range(7)]
+        y_coefficients[6] = fraction(relative_sign) * leading**3
+        for degree in range(11, 5, -1):
+            index = degree - 6
+            partial = sum(
+                y_coefficients[j] * W_direct**j for j in range(7)
+            )
+            y_coefficients[index] = (
+                square[degree] - (partial**2)[degree]
+            ) / (2 * y_coefficients[6])
+        y_value = sum(
+            y_coefficients[index] * W_direct**index for index in range(7)
+        )
+        identity = y_value**2 - square
+        if any(identity[index] for index in range(6, 13)):
+            raise ArithmeticError("top-down polynomial-section recursion did not close")
+        equations = tuple(
+            scheme_ring(identity[index].numerator())
+            for index in range(6)
+            if identity[index]
+        )
+        equations += (variables["sat"] * variables["a"] - 1,)
+        return {
+            "names": names,
+            "ring": scheme_ring,
+            "equations": equations,
+            "star_root": None,
+            "singular_x": None,
+            "relative_sign": int(relative_sign),
+            "chart": "identity_at_infinity_recursive",
+            "pole_order": 0,
+            "pole_location": None,
+            "star_chart": None,
+            "open_condition": "a != 0 (enforced by sat*a-1)",
+            "coefficient_term_counts": [len(equation.dict()) for equation in equations],
+        }
+
+    names = tuple(f"n{degree}" for degree in range(5)) + tuple(
+        f"m{degree}" for degree in range(7)
+    )
+    scheme_ring = PolynomialRing(finite, names=names, order="degrevlex")
+    variables = scheme_ring.gens_dict()
+    polynomial_ring = PolynomialRing(scheme_ring, "W_direct")
+    W_direct = polynomial_ring.gen()
+    direct_A = polynomial_ring(modular["A"])
+    direct_B = polynomial_ring(modular["B"])
+    x_value = sum(
+        variables[f"n{degree}"] * W_direct**degree for degree in range(5)
+    )
+    y_value = sum(
+        variables[f"m{degree}"] * W_direct**degree for degree in range(7)
+    )
+    identity = y_value**2 - x_value**3 - direct_A * x_value - direct_B
+    equations = tuple(identity[index] for index in range(13) if identity[index])
+    return {
+        "names": names,
+        "ring": scheme_ring,
+        "equations": equations,
+        "star_root": None,
+        "singular_x": None,
+        "relative_sign": None,
+        "chart": "complete_polynomial",
+        "pole_order": 0,
+        "pole_location": None,
+        "star_chart": None,
+        "open_condition": None,
+        "coefficient_term_counts": [len(equation.dict()) for equation in equations],
+    }
+
+
 def safe_parameter_tag(point):
     if point is None:
         return "uinf"
@@ -863,7 +957,9 @@ def export_direct_msolve(system, path, prime):
 
 def direct_msolve_probe(modular, point, prime, relative_sign):
     system_started = time.monotonic()
-    if args.direct_pole_order == 1 and args.direct_pole_location == "infinity":
+    if args.direct_pole_order == 0:
+        system = direct_polynomial_system(modular, relative_sign, args.direct_chart)
+    elif args.direct_pole_order == 1 and args.direct_pole_location == "infinity":
         system = direct_pole_one_infinity_system(
             modular, relative_sign, args.direct_chart
         )
@@ -876,18 +972,21 @@ def direct_msolve_probe(modular, point, prime, relative_sign):
         args.direct_msolve_dir
         / (
             f"q80-third-q12-{tag}-p{prime}-po{args.direct_pole_order}-"
-            f"{system.get('pole_location', 'finite')}-"
+            f"{system.get('pole_location') or 'polynomial'}-"
             f"{args.direct_chart}"
             f"-sign{relative_sign:+d}.ms"
         )
     )
     export_direct_msolve(system, input_path, prime)
     record = {
-        "relative_sign": int(relative_sign),
+        "relative_sign": (
+            int(relative_sign) if system["relative_sign"] is not None else None
+        ),
         "chart": system["chart"],
         "pole_order": int(system["pole_order"]),
-        "pole_location": system.get("pole_location", "finite"),
+        "pole_location": system.get("pole_location"),
         "star_chart": system["star_chart"],
+        "open_condition": system.get("open_condition"),
         "input_path": str(input_path),
         "input_sha256": sha256(input_path),
         "variables": len(system["names"]),
@@ -1681,6 +1780,18 @@ output = {
             if SIMPLIFIED_FIRST_MARKING_COVER.exists()
             else None
         ),
+        "rank_five_lattice_target": (
+            {
+                "path": str(RANK_FIVE_LATTICE_TARGET.relative_to(ROOT)),
+                "sha256": sha256(RANK_FIVE_LATTICE_TARGET),
+                "use": (
+                    "acceptance target only: saturated MW5 Gram determinant "
+                    "237/4 and pinned height-eight coordinates (-1,1,-1,1,0)"
+                ),
+            }
+            if RANK_FIVE_LATTICE_TARGET.exists()
+            else None
+        ),
     },
     "declared_search": {
         "predeclared_u": [parameter_label(point) for point in PREDECLARED_U],
@@ -1729,7 +1840,7 @@ output = {
         "required_terminal_status": "PASS_EXACT_FIXED_U_MARKED_Q12_A5_A3_3A1_MW6",
         "currently_passed": False,
         "remaining": [
-            "recover the rank-five Shioda lattice/component labels of the modular polynomial shell and enumerate its finite height-eight identity/identity norm shell",
+            "recover two non-polynomial P.O>=2 directions completing the modular rank-five Shioda lattice, then match its height-eight identity/identity shell to the pinned rank-five coordinates",
             "align one horizontal across several good primes by component/intersection fingerprints",
             "projective CRT/LLL reconstruction and literal QQ(W) section substitution",
             "complete connected D7+D5 resolved quotient and exact h0=2 calculation",
@@ -1747,8 +1858,10 @@ output = {
         ),
         "reason": (
             "The specialize-first experiment has not produced a rational forced "
-            "source marking or a modular target-profile horizontal in its declared "
-            "bounded shell. This is a routing decision, not a nonexistence claim."
+            "source marking or a modular target-profile horizontal. At u=-2,p=19 "
+            "the polynomial subgroup has rank three and empty height-eight shell; "
+            "the complete P.O=1 finite/infinity charts add no missing direction. "
+            "This is a routing decision toward P.O>=2, not a nonexistence claim."
         ),
     },
     "claim_boundary": (

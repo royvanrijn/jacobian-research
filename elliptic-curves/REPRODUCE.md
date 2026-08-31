@@ -82,6 +82,25 @@ This pins three additional candidate fibres and canonical short-model data;
 it does not prove a common family or rootless-K3 realization.  See
 [`ICARM_WGXLI_RANK17_LINEAGE.md`](notes/ICARM_WGXLI_RANK17_LINEAGE.md).
 
+Eliminate the section and surface coefficients from the literal five-fibre
+rootless-K3 ansatz, then exhaust its distinct normalized first-jet chart over
+`GF(17)`:
+
+<!-- status-consumer: EC-ICARM-WGXLI-R17-FIRST-JET ae24ab60702262b8 -->
+
+```sh
+sage -python \
+  elliptic-curves/cas/eliminate_icarm_wgxli_rank17_first_jet.sage \
+  --prime 17 --threads 4 --pair-timeout 10 --check
+```
+
+The 182 fixed-parameter ideals all have Groebner basis `[1]`, with no timeout;
+the known published-R17 differentiated identities provide a positive control.
+This is an exact necessary-condition obstruction at one prime.  It does not
+exclude bad/colliding parameter reduction, a changed Mordell--Weil basis, or a
+different family shape.  See
+[`ICARM_WGXLI_RANK17_FIRST_JET_ELIMINATION.md`](notes/ICARM_WGXLI_RANK17_FIRST_JET_ELIMINATION.md).
+
 ### ICARM curve 302: rank at least 31
 
 The fast checker verifies both pinned hashes and recomputes the complete exact
@@ -198,6 +217,26 @@ PYTHONPATH=elliptic-curves/cas \
 These are numerical/bounded provenance calculations, not a K3 specialization
 certificate.  See
 [`RECORD_CURVES_28_29_273_302_HEIGHT_LATTICES.md`](notes/RECORD_CURVES_28_29_273_302_HEIGHT_LATTICES.md).
+
+### ICARM 273/282/302: generated family discovery
+
+Screen the declared polynomial and generated six-root Mestre construction
+space, factor every modular survivor over `QQ`, and verify rational
+isomorphism for every exact parameter:
+
+```sh
+.venv/bin/python elliptic-curves/scripts/discover_record_families.py \
+  elliptic-curves/data/family-discovery/icarm_273_282_302.json \
+  --output artifacts/generated-results/elliptic-curves/icarm_273_282_302_family_discovery_v1.json \
+  --check
+```
+
+The bounded search tests 2,334 distinct families.  It rediscovers curve 282
+at Fermigier parameter `u=11671/42` and generated six-root parameter
+`T=11671/21`, with exact rational-isomorphism scales `882` and `147`.  It
+finds no match for curves 273 or 302 in this declared space; that is not a
+nonexistence theorem for other constructions.  See
+[`GENERATED_FAMILY_DISCOVERY.md`](notes/GENERATED_FAMILY_DISCOVERY.md).
 
 ### ICARM curve 282: local-conductor parameter recovery
 

@@ -1,0 +1,2070 @@
+{
+  "chart": {
+    "complete": true,
+    "ordered_pair_count": 182,
+    "required_distinct_nodes": [
+      0,
+      1,
+      -1,
+      "t_376",
+      "t_377"
+    ],
+    "solution_pair_count": 0,
+    "solution_pairs": [],
+    "timeout_pair_count": 0,
+    "timeout_pairs": []
+  },
+  "elimination": {
+    "equations_description": "three affine-jet compatibility equations for each of seventeen labelled sections, up to one nonzero deg(A)<=8 Hermite equation, and one nonzero-scaling saturation equation",
+    "free_ordinate_coefficients_eliminated": 34,
+    "original_continuous_unknown_count": 52,
+    "per_chart_nonzero_equations": 52,
+    "per_chart_variables": 15,
+    "per_chart_variables_description": "four inverse fibre scalings, five A first derivatives, five B first derivatives, and one saturation inverse",
+    "surface_A_B_coefficients_eliminated_before_first_jet": 12
+  },
+  "gauge": {
+    "enumerated_ordered_pair": [
+      "t_376",
+      "t_377"
+    ],
+    "inverse_weierstrass_scale_351": 1,
+    "t_351": 0,
+    "t_356": 1,
+    "t_385": -1
+  },
+  "input": {
+    "path": "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_lineage_v1.json",
+    "sha256": "f875f3917486c78089c6ba618daaef7dea07cb36152dd192d0f00c5d425c1c03"
+  },
+  "pair_records": [
+    {
+      "msolve_input_sha256": "1b23feaceadba6beff2a4fd4e51f97f606a73fb7eeeb063696c2725548e86966",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        2,
+        3
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.06541909600491636,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "4ab825f750e9523c8b6048867d5d2ddb47a01da15b05ade614c236ac2348e514",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        2,
+        4
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.36587902800238226,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "033507f5f5478b7a669497942beb39c50c2ec9bf79cb8c991bbbfd9257406379",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        2,
+        5
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03307985699939309,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "b598b9cdab6e6db500de9e62e76c5c19de770cb579f8cbd4ae1a12f50470b7c4",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        2,
+        6
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03336171699629631,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "152749ae62813a0c56d5ba1827a804acf94b35e9e3704a31991b3ca4de08607b",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        2,
+        7
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03322084699902916,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "ec7225eafbfb64d6d2c02024e55ce0623425d609040f359a07016f3030e35484",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        2,
+        8
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033160707003844436,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "867838ef710223c7f8b8bee9e7cadab01cbf217ee691b1cfae0bd35ae1159d20",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        2,
+        9
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03317723699728958,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "56748a87cb196c758d0451d6fb1c1381c310c06a3b000f7d111f06f46890a14c",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        2,
+        10
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03332240299641853,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "d0b8866bbbc0c76258cdced733713e58154ea06359bf876c4560d1613b0ce1d8",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        2,
+        11
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03307157199742505,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "95cf5b499c57bd81d9ab9beba255c0f24c432d0b39ff5d45de4cef89f81a4832",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        2,
+        12
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03313705199980177,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "6c5add4a2798c698ea0cce433e2408291a8c1774a4296461e4439a571bb25c43",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        2,
+        13
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03296860700356774,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "7edfa2046c97e0de99640043efc3e09931f65876652984049c1cb40c3cf17051",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        2,
+        14
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.0332333570040646,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "dab218e8e709b637cd6ef93ab12f95f97c786a8cb4eb6f829e64eeb9a7d02d15",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        2,
+        15
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.0330028729949845,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "fcf5747db63fc75e7d33f3b9640c81fe950f0360e79f499124a5b2bda79ca55a",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        3,
+        2
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.06553109200467588,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "c2c1f7a90586a4324f28eaee720178c8b5f5439021abb02bc71ec2400a4c328b",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        3,
+        4
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03321872800006531,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "49a7d8bce0439b2ddb6cef4a2566d2e277c6d577c79d17f7937300b59db00b53",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        3,
+        5
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.032911886999499984,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "930db598ae5f2127c26c818dcb134d8fe3c44cd20917a50c57e449ca526a46bf",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        3,
+        6
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03318223699898226,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "fad1d7309e35f72fb39919ab8ac9f0d4333b09ea8e33b97bfbf75a6a51a13d3e",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        3,
+        7
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03345415900548687,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "50852f3b411c76f9c16321b3c9eabbc20760fb5bcbcbb12af70999033b70feb6",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        3,
+        8
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033244031998037826,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "a6fe0f85e5655fe69e0f797210c036cd5fe2d03e90ad12d6ca51b8a145160cc5",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        3,
+        9
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.9675833520013839,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "20814fda61b29355138c766b77a042e9381f7045f7e9ff242fdbeebaa93f2e45",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        3,
+        10
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03343646400026046,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "20b874061220739a4e1e628881daba8b61d5033c4e5725bd3719741dc7c98388",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        3,
+        11
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03374466900277184,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "3912c77b17c5e2f46fa39b8d9ae3b9a7c5724aa8cd099e405e2915bae0d4a5e2",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        3,
+        12
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033304231998045,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "13a5d16e1d6462c5a452732abafe7ee06d9da9cdc1fcf429fbaa210dddd3ee32",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        3,
+        13
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03354883800056996,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "c56836d7d8153496328763048a81c6a967f98d5864053ccec1ce2d3f59cdbf8d",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        3,
+        14
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03326891300093848,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "01509f3a7e2b2c854926f5d921a07d9ed9617226762db7405ad84b5b71150ccf",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        3,
+        15
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033282911994319875,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "d1763b408df4ab878dd18a50e34a029e2f073c47dfe6d956c48279634f2ee514",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        4,
+        2
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 1.6228900930000236,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "e36a54305c42e253ac91ccb271d256aa1deea928c0e071b5aa48b6bf4dd40802",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        4,
+        3
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033228871994651854,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "ce0cee7860fd464c2de70bcc24dadce0f8eaa1a5382f2783f64d16a2f7d22f53",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        4,
+        5
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03299356599745806,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "58beb274c1dcd137766e36e9c61e79f439d63257c17afb859dd4f1e34152f76b",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        4,
+        6
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03306791200157022,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "fdf530fe381733d15c0f7b714fd80e88d611233b45ef467c404c9b8dec45dbe9",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        4,
+        7
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03331241699925158,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "866f100fbd089d37e3646f8ff943a34154e0424172d6b555060b3b7aa00626c9",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        4,
+        8
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03307207299803849,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "b4821ee47674e5469dc68acb704310828a2cb07a1ee51a5f4c9d1e44e9cab069",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        4,
+        9
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033090261997131165,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "abd0b1f91be2f768ed7c3637a579ac327defecdf61a924da32cb840ef864cb42",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        4,
+        10
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033143977998406626,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "797fce41b0da1fcd29eb8df837084796a2e0406ad56c3522e017fd1dd069c1f0",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        4,
+        11
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033225653001863975,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "c9d35485e7a0a293ea59b5d1ecf41c2086255cd4e24e1c5c5fe9307a83b13a83",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        4,
+        12
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.06533758099976694,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "9bbdfe1ee8a6b2dea01db03e46ddcb65346f680e16dfb49ad6bce4c367501cb6",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        4,
+        13
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03330786799779162,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "54f67973d9a4d200c008737cc36af68f72d599638d6dfc5986464e737cae60b7",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        4,
+        14
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03306014300324023,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "27fc441558acba23cdf1dff599f67ec30f0f6410cb13133f82cb537144797f52",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        4,
+        15
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03327105800417485,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "96065a644573d317b37a39e8fc65d8ee22147fcab811439a79c14dc6509faee1",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        5,
+        2
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03331388300284743,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "3127da7cb8dd3e6b9613eb6c15e504c48c66f4b7d6c4851a8d1d0a31d7656064",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        5,
+        3
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.06525921199499862,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "f013c53b887dd5ffbac622ff2cf322dab92ae3ba8608ed934eba890912bf4f46",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        5,
+        4
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033144187000289094,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "9e834e43b852436b61dc1bc253aa042daea4c98d1432d861a360c5acae5f4e9f",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        5,
+        6
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03318240799853811,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "812b1a70b63707589e8f69c32b3800c20a8f80aaae12b7ac86023eecff6ad0e6",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        5,
+        7
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03318325299915159,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "425a14d01103098614b1eb0451f1ae7cb5f8615575289198b6041e1d30c3e56c",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        5,
+        8
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033098997999331914,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "bb517d812be6690ecee96e8ea9a9b27292a2dd4a17e0154b7d79975c14c36d57",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        5,
+        9
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033035936001397204,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "25547ced86c249be097dff390aa0ced3105afad7c2a742752b6fefc6b8eff708",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        5,
+        10
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03315287199802697,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "b99081de9a96d07ac3caac566a7e29c1180e9ec79f5878c237e2030b3904c7db",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        5,
+        11
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03327887799969176,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "81fa9456124c2479f4cd508df9ea7bda5984dcec3b32b16ed83ad987ee409283",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        5,
+        12
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03305165299389046,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "d80598c0d9d7eca89009f36cc8df838a3aa1363ab558aec1f9363bdab3b59ca5",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        5,
+        13
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03319880300114164,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "51f8cbb8043fea65c8ebd883192bd6f6a178536f1e83f6e160e94a07d3178b41",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        5,
+        14
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033129156996437814,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "82b813af9fddeafc3d86d5459b625d0c1d4c1d072db6e57304ce7aff7c4943b4",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        5,
+        15
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 3.6737992580019636,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "35d9ed09bf13c5e2a8b0f14d8fc09805e15d9a63edc0fdd07a8fe3dc95783eb0",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        6,
+        2
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.017252042001928203,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "c855682e8dc3c7a433986c5a12fa70461101c49973f9caa7299364cb940f0de4",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        6,
+        3
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03309323700523237,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "5ff17b5253490b3c39b52f4d002b6669fc94975eb886b882067f639807a91ad0",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        6,
+        4
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03317795200564433,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "6e22c9542dd2ee8ad4a57def445d1f5fffe732758d2cd3683782ab8645163cb2",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        6,
+        5
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.06526573299925076,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "0b7c98319025b7eff90c97b7af4af1e61991341e2f3663cb632c74fc50f8653e",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        6,
+        7
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.06554675900406437,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "814d8892439d8b3d0609b766efc6fccdf97f8b9f13f17c0ca6ceeb90849e648c",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        6,
+        8
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033202293001522776,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "01b997fa3bf1244691c4d1d5d7f1ee3f2059bbf92d03c404793cca1a1000a365",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        6,
+        9
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03337850400566822,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "743bbbfff4b1d33c1e855c4021c3c66c588b58b70c646396f8de5c67dbf3c52c",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        6,
+        10
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033248897998419125,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "439127edac86fbb4800d4b7c0fc24e620fedeab2c9dd638ffb8debbecc018fcb",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        6,
+        11
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033261418000620324,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "89bce8c7354f8f3fd406604d703d0ed07113cb87990a22514c25f4b8672e0222",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        6,
+        12
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.017073770002753008,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "f90a2ad74c58e593106452bc99eb72dc23c44645b83e9d9eae4102e7e4da239d",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        6,
+        13
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03319159199600108,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "e666ac9f6a700de967db07680ea66705452f14c9ed98a432dc67ce00aac7d03b",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        6,
+        14
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03325889199913945,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "58d9a05b54205c62124c20f3ba43820b694be25fc6042653120a049ab66bdff4",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        6,
+        15
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03316237300168723,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "689eea5c99cede2dc1e6604600a1610df4d3b4588b8e87dc45181fe9c3270b8a",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        7,
+        2
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03307509699516231,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "02aee0e509a7ea258284a4d00d62d81df7328e1a873341dea4379f415737f52a",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        7,
+        3
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03352271899348125,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "7951e640c6649505b5d58e9d5c642191e4ec959db5c5a4595b5412f8a80044e5",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        7,
+        4
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.06545434900181135,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "8678936d281e022447c0972be64079c2739c385e86bc1bbdcd0596f86bda1acc",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        7,
+        5
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03330462799931411,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "cf6ecf918c351bb90e8320668c3bd0d287e5a31aaabfc1a89a006d1b13bc890b",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        7,
+        6
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03332550299819559,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "8bc3fc2f7ab19ebd92b6a0bad49353f83b0a384e1ebcc76e97abf15ee45c1667",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        7,
+        8
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.01692795499548083,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "0cd68cbb6aa9f7f921e8d52687c98be41337686c7190fbbec9e0d45ff3e63f1d",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        7,
+        9
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033037588000297546,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "4a67551248367f61c45852cabea269b389a3fffd9a8ca62674504a76004edfe8",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        7,
+        10
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03318439799477346,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "276159d6e46a13d4d98430c185382ce0591d46b5b62b65dd418e0d3e475f1deb",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        7,
+        11
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03311805799603462,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "aa201b7fc8c0091559821552d1d27123a21e11e74c174835e5a3441980a99fb3",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        7,
+        12
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03324392800277565,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "3f39d72ab2ca58ed90de05e5fd4f879b6fbf6bd8b68e5bff3db5be1b4165693b",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        7,
+        13
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.017307121997873764,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "ab7e8b4616bd2f213ac2619e6fc26128e312e4ea2b2c3677d896fa2cf85286b1",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        7,
+        14
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.7230822320052539,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "9de2460aad714ed283d8bde86c9ac0af6e543bedba4b9eee7674429bca769530",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        7,
+        15
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03315834300155984,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "1b2355a4b4f57a136d55cbeefce53673404bcb909b2c190f7e55e551f13f37fe",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        8,
+        2
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033332318998873234,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "179bf18dff6c9f3787e4dd14826afa77c49e961edd2f1c87ba2de7f4939bdf3d",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        8,
+        3
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033165228996949736,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "a8c5ef2bc5cf751429b57baa1fb5d37e07c1e7f24c44451ece03c806b3b4394e",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        8,
+        4
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.06534232400008477,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "31a66f2802da648d9bc86dfcbd223b94244e0d3b0d3536a53bef044a5fc57302",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        8,
+        5
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.032910738002101425,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "6219a195a30de83d9788279a6b2161b1220c301a22d9ae6884064d078a759de4",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        8,
+        6
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033041553004295565,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "0bb9d7550859bcc8a50430f984ae5a61e81c5999bc7d0370497aac6d55a89304",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        8,
+        7
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.016968226002063602,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "e49504a24abe1816bee1d41d0e69023d4f6d81eccf5e9613095213f96aa5254c",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        8,
+        9
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03335386399703566,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "b15d1dda4a3ac8341d0a3f2deb62a8b21c9743d988c32966359541e668ecd9b5",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        8,
+        10
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 2.9217534470008104,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "74046a3dbd81b4f21c6c61a3b65a8683a69a0c3de82cdca8ed68994654e00ed3",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        8,
+        11
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03300642700196477,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "2769bfb367a21822644e3ceac8b66003adb930e3fd47958ada05d6e318d20518",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        8,
+        12
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03298956299840938,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "11cd8ea192488bf87a8529afc3544ce98aac16257a98fb8cdfb08db3b002b5c0",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        8,
+        13
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03323239799647126,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "93d916faee44eb2bac55e9a5909f85e9ab14ce08076549c833c3260493efb7f9",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        8,
+        14
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03312823899614159,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "5d827186fabb215cef5ddb4e6fc114486a9282b3ba2ddb9cfbe7f0a1239e98cd",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        8,
+        15
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.032788677999633364,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "4e2fb9d85f49e70eb950bdfc6a3fba3690ec13c33fee162c76d627fd53585f21",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        9,
+        2
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03304017799382564,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "991e3783ad7e07f5b964aa3e36c3045cbbc9220af87093abe56134c69ce75a1f",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        9,
+        3
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 1.167762944001879,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "dd938a9008408fbb5755e05bc794fff2c49c61b290ed11cf09c42a3f83bdc55d",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        9,
+        4
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03303393999522086,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "ebb4e9cc7dfe05a0e2e633caeccaff59a5dae33888d75429f917878d6a3749d8",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        9,
+        5
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03324051900563063,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "ff84e339aae9cc64d8515687d952b48bd5a084672f581f45de20fe56bd6991af",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        9,
+        6
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03259776699997019,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "04f667e806b82d34a76c82567d3e423dfc35c3059ac84ed9906a963e9da0e439",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        9,
+        7
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03303529299591901,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "719d6c0023d73d88afd22b8959357a45c4aea2d999fcb6a837819fd09d9440c5",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        9,
+        8
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03285618399968371,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "9ab77714307d683352c476e7bc6d62ee884c2499632f4a42be761c2b117e792f",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        9,
+        10
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03302072700171266,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "ca84ba3fa3bb4a0726a67bbe3856a0e1646ad0849f717e8f431951ed5241a9cc",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        9,
+        11
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03332422399398638,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "06bdc622ba49adf046958c3c918aad3d832058b57d0caceb62c5d835575a8096",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        9,
+        12
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03254056299920194,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "f3b686c1cbf22f9271ceb5fb08d7d4b0d34e5d8215739a0487e34a3da1f92456",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        9,
+        13
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.06510711900045862,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "1cb25aa966a87f9dec55fc1454cabc14f59194119b2e230ac22ee131f0abe92e",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        9,
+        14
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.01689893600268988,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "7d0cd0f975e7f453e1500796c49c3855d5c9bf4b31d4c21f46b94e6938215964",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        9,
+        15
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.01698822100297548,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "1f602c74ed3985f145707bd8e63a562905d09d490eca6398670dde73ff045e56",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        10,
+        2
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033414318997529335,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "6b8fec9d6983acd2333395d4f2140e1b80b4b61a2adba9fdacbf013604fbdae6",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        10,
+        3
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033118619001470506,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "7991bba6d20c07272f2442cbc091062c6ea08b2cbe00a4af9c2418272c9d837c",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        10,
+        4
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033039757996448316,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "b2bedca1dec4eb384892a5e90edd96087fba61e0a7a55e4e9f6b86a63ae8a86e",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        10,
+        5
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033134278004581574,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "d248434d14e2e55eea5632e39bb53530dd7a90b6fcf0064d158b44ee01ae870a",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        10,
+        6
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03340662999835331,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "6789b9a2becaabb4fc7f48d86211b3b1a0884c6987d6c2f24e3195c669d6cb7a",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        10,
+        7
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03307530800520908,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "894ade9fd412f5f6a09fb3a4c4723a6cffb3c9fe6e356aa691bba03a412b91c6",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        10,
+        8
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 3.172262078995118,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "2ce0a37006dead9e367d06bae86501ea3f974ea155c5588cb26ce68038d36dcd",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        10,
+        9
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033076279003580566,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "860a5d2f7fc5887deb1c2a9a69677f82f7ec913252c5d7dff425d4e78ddf7523",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        10,
+        11
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.016887675003090408,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "bb2dd3ad77bc2a2839775d61f71c731b281ee7c2e2c3261cd0ccaaea1cee1667",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        10,
+        12
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03265042699786136,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "fac495f6249c8911c478816baaa9dd9768d2454d1ca1a43caa0ce2df1dc9c5a6",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        10,
+        13
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03301560399995651,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "9589f956a1e7eee721bfb59f5abfd9a1c24827cc0f77e2465e0219615e195a18",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        10,
+        14
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03319061899674125,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "9b27069a4748a724850c62a528124c75a7d90a80006fa9d10889263067e9f2b2",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        10,
+        15
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.032974049005133566,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "e7514f047273b945c2c37f663005b2c2ae1a6a85110953094e29d9acdd729ace",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        11,
+        2
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03314423400297528,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "76178acc91c2959fdacc47a5b6067ea6bc1143790d4f39e0ce32397bdc701a20",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        11,
+        3
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.017082570993807167,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "6c9109af85c24b9ade7c9dedfcf9fab6f57da8d442bcd091850b3dfaef2b2f82",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        11,
+        4
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.016682554996805266,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "85ab938784a0ae24ef0f52231203f2b7f3a76e52c84f4ddc5c6f4288df6517e3",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        11,
+        5
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03306378900015261,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "a0a8bff5676b3f9f3154841818c25dc1667e6bbc7f07c7b3f2152a0c75dde41d",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        11,
+        6
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03315957900485955,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "6806653985712160d8381e9a4ba925a2103b0d7a78ebce9130ad3d096e73d20d",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        11,
+        7
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03289597800176125,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "59faab7f468a2b0e09f9f69d51e0a9e20702ec7f638b943ad7fb66a3fcc6b757",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        11,
+        8
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.0654697549980483,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "ce495da026b74985dc98f1862c1a7bcaea9e91fc4aad343c9a28889042e2ffd5",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        11,
+        9
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.0328032940014964,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "7ee1a7b2b659f3f6f48f8a7827a344913fd9059c1a303a876fbb44064b174359",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        11,
+        10
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03270781799801625,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "9a952d7d68a1c0854bbee8442f83ed9c8d83a43f90594f392a8ac008116111ca",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        11,
+        12
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.032735378001234494,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "1a3288568138af2a1561f4d7ee94bac6766fb86971b7d02eb18c9569cb6510e5",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        11,
+        13
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.032659182004863396,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "f6f0435121ca7d7bc8b21417df6459453f82ddac449b8f53f3ae47ee735f8220",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        11,
+        14
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03316444899974158,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "d6a65bf9a1c1fc545ead7413c81fcf205b4c7be7505afcd98cd414f4d39e5363",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        11,
+        15
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.06502586999704363,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "b06c428a7fa956a1694360e617078e64ccf2b4ba847338c6d549a8ba5f30f735",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        12,
+        2
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03298002299561631,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "337f1b8d70f8958ee11634461cd9336817490ac3e7f0d13a166ad79aeee8d1c5",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        12,
+        3
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033002937998389825,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "e7f89a3ef4b25719567bbf058cd19840cfe832c7895c2f194216e8f40af334a5",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        12,
+        4
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03306271299516084,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "cad116ae2f614deebabd047b03b6137bfc36b68251ef14d91a30cd4b82d40afc",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        12,
+        5
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03295232800155645,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "f10a602fe7a4e57784e24d5f17c7d41d9a97163084e677c10373ce5b49a58091",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        12,
+        6
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.01689331499801483,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "daf6db73d79e83c58b6cba3123f9fa130718c336409c59a5a41faeaf41d6114e",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        12,
+        7
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.016787230997579172,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "00c4a77517b4f5f52165ec19df5c934d0e50bcc487ff69038cedbde32482afeb",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        12,
+        8
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.0326754669949878,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "944d6072fa71ba953c52bfc3e0ad574e0f59b5e98b39d2086f1acaa3d41909ae",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        12,
+        9
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03279427699453663,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "cd17b27926761707fd8f6f89e6db35382c3f3196f289d017f15a46e737be492b",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        12,
+        10
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.032614192001346964,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "ac0fea3e7de03eb28c695d873af979be2c8c119a8f64800df31b0d7718353168",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        12,
+        11
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.01663693400041666,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "5990dc7df15916e9d287110819c46a19e063fc8ffb5c631dcf165a2e483c6886",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        12,
+        13
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 4.5774656380017404,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "658bfe6bbc56ef8cf3107b38e3ac47c293127b3464d8357c2e544fd5ccda2c5d",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        12,
+        14
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.032964867998089176,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "5ee34e190667efeceac88b9441eeb6584e47b60cb69819d43a85e6e71a743a92",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        12,
+        15
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03303479800524656,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "6c5293ecc7634a14d1593040d08c8763bfe4a1d684fc074f2c23039cc26638d0",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        13,
+        2
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033014107997587416,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "46d7bfd2b3dc8952c0eaf638493dd99f1f14b85f39df19c1417dc8d7c1e1270f",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        13,
+        3
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03319874899898423,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "8be341b4ecfc744181bd490c34b184eecee03508c93c9b4f736d48fff03d60c4",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        13,
+        4
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.06536544099799357,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "61fc596ea136d153016c5cefdedff53d7311f5a49f1bed134d295121b2dfc8e1",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        13,
+        5
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03358625099644996,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "4ba4b2c1d293ec564abb6b3c41b7a87d6f90a95989265582152d1e40bc19bec5",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        13,
+        6
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03302041900315089,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "cd374501682de8ecb580bfbd81eceb91675aec513164b7ba2de432fb5f92340d",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        13,
+        7
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.032952118999673985,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "7c92c60373a03d501776338fec80e7409cb5eb752be20794c7862eb036c7ae8d",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        13,
+        8
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03294684900174616,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "2925f30a845ab06973170ea823649c3a8ae045291cc2cf72b30049236af55a1e",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        13,
+        9
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03296668900293298,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "81996c86afd435c1197737d311202b36f33500a54b4e4e65dd0761b9c14fdceb",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        13,
+        10
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.0332421200000681,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "03d0c3a8d31dbfdd52d28708dd5a6789f4ba9702e447702aa3d71717534b0d7a",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        13,
+        11
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03341028100112453,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "795109fcad6d62da0247f6b6f9c43f8a6acc2ae7300870b570c941c0b31c3ea7",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        13,
+        12
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.8169393009957275,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "aff08d2592445a1a32cf3f0421cfb11db2e9eaee3cb36224279fe41ce5cbbc55",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        13,
+        14
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033063117996789515,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "fc412ead17d92abd85778010b9c6dad06397709e191a3034a141f4a8102af88e",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        13,
+        15
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03304904900141992,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "b62ea5eb688cf0fc443d8cba84a50f2e6cdffa641b525646c02933c9f2e600fb",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        14,
+        2
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03309168899431825,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "b87efe9859a8321da7d4fa20767f4ca5b4230b08bfe67836a11f82758a0b23cc",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        14,
+        3
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.032925337996857706,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "757ffc90827c0ea1ce743f95b10fdab090e67a2b980cf10f2274dcd4e75d846d",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        14,
+        4
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03296618800231954,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "208bdac93721125b5828bcf75f8293cf4a5f9cd5b63ec840aaf3eef48d8e7a2c",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        14,
+        5
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03310635899833869,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "ab761753c70c026db31da9d50c6a43a42b3ce20497967cd5ffb4692fc21c2be1",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        14,
+        6
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03303236799547449,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "a4a97adb711e03738439cee536edc64c0876f8992f29ca22f08a03558b76f48c",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        14,
+        7
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 2.971898435993353,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "f71f5e205edc3fdbabf957006b625455a8d35247bd16a7743e38f7eacdef235b",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        14,
+        8
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033168679001391865,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "aafabadbe88a63f41e99e9fa349920c47c027ae5048da661244f5748beefd0a7",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        14,
+        9
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033062179005355574,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "a6c5df1d4ad58547f5db384351b3420290a5816d6790ca6e81c0a7a44d01050b",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        14,
+        10
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033124359004432335,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "1dad4e9faa5277ba49e68d18952cfe0c3dd586ca58c1b5ab22153aaad5155aa1",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        14,
+        11
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.016952830999798607,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "f8ab795760750cecc00eddd6465c6f4e63d99f65e1fb0d3ba39f13a9a832cd40",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        14,
+        12
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.032981878001010045,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "1255fe501bde7bf5aeb16309434b4c8c72f4a7a15ec3d58f287dfb57a05cfa64",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        14,
+        13
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03291350800282089,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "d94d23903de3db013b1e6494d1546f3caeb20755f921be7e74f7ebbecce365bc",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        14,
+        15
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03293666799436323,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "99cce4754d3c55fd8321dca5806314cff0687614e08e5c08fb3df5ac891f1de0",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        15,
+        2
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033000308998452965,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "11f86e7eef57848cf3e5dc9e4fa04f471285a43cfdbc6e2f8ea7b35f026836b2",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        15,
+        3
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03305146299680928,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "c84c71eef5f199482807a9aaeb184cff7ca39ac650cf14e28248f12554f91dbd",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        15,
+        4
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.033320643997285515,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "d66614588c905c321e5962d1371d6557f95f47e97ce7859edfe22799eccbca3b",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        15,
+        5
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 1.2175600589980604,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "630a859c41bb27a7679cb38820e656ece9e034e14ca621fbe95821adf3bbcf9d",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        15,
+        6
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.032909745001234114,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "ae7d1d72d863c66ed73491d738b941a3d3a0524e16811390e07f94386d7466ae",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        15,
+        7
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.0329495260011754,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "c19d53725ca284621415eba6028ea55eba837c029ed502a64f28faeb4941b1ff",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        15,
+        8
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.032993716005876195,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "8c906181c192a0c3f4ab2189b78a2e5d1dd622f21f39f320ac98849af893a92f",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        15,
+        9
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03291534500021953,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "ec36a9f81c9d7df0719001db5bb9c98490d46b81c147c960e4c348247148e110",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        15,
+        10
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.032970569998724386,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "47f685ee90eb3da73f63eb74a672b172189daf49de258e8a6a0655ad6fd93216",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        15,
+        11
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03294311500212643,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "0fcc10241a7a06c3efc76ce7adfc70f22cafee94dc1f89b0b3405769b2f4a097",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        15,
+        12
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03313300599984359,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "98c185dcd7b25ceeca1f390ad51b9d044921ae984d927d4959340f7d2edc7fd8",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        15,
+        13
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.017113064001023304,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "796d71f6d9d21ce12e394258be0526b263ceb9cf07eca7d56050d65d1f669eee",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        15,
+        14
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03300043499621097,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    }
+  ],
+  "positive_control": {
+    "available": true,
+    "model": "artifacts/local/elkies-k3/q12o5867-smooth-rr-qq.json",
+    "nodes": [
+      0,
+      1,
+      2,
+      3,
+      -1
+    ],
+    "sections": "artifacts/local/elkies-k3/q12o5867-rootless-selected-basis-qq.json",
+    "status": "PASS_EXACT_DIFFERENTIATED_IDENTITIES",
+    "verified_section_count": 17
+  },
+  "prime": 17,
+  "proof_boundary": "This is an exact necessary-condition computation in the distinct normalized mod-p chart for literal point labels and signs. It does not exclude a QQ model with bad/colliding reduction at this prime, a relabelled or integrally changed Mordell-Weil basis, or degree bounds outside the rootless-K3 ansatz.",
+  "runtime_seconds": 31.057401547994232,
+  "schema": "icarm.wgxli-rank17-first-jet-elimination.v1",
+  "solver": {
+    "banner": "",
+    "meaning_of_empty_output": "A reduced Groebner basis [1] proves no solution over the algebraic closure for that fixed parameter pair.",
+    "name": "msolve",
+    "pair_timeout_seconds": 10.0,
+    "threads": 4
+  },
+  "status": "PASS_COMPLETE_DISTINCT_CHART_EMPTY"
+}

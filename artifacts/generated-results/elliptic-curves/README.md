@@ -22,6 +22,11 @@ strict:
 
 Important distinctions made explicit by the catalogue:
 
+- `icarm_273_282_302_family_discovery_v1.json` screens 2,334 generated
+  one-parameter families exactly.  It rediscovers curve 282 in both the
+  canonical Fermigier coordinate `u=11671/42` and the generated six-root
+  Mestre coordinate `T=11671/21`, verifies `Q`-isomorphism in both models, and
+  finds no match for curves 273 or 302 in this bounded construction space.
 - `icarm_curve282_conductor_parameter_recovery_v1.json` verifies global
   minimality, selected local Tate data, two-chart discriminant-root profiles,
   bounded CRT/Gauss recovery of `u=11671/42`, and the exact Fermigier/target

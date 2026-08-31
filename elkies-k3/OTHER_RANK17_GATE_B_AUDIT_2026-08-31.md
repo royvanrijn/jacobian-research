@@ -89,6 +89,57 @@ marking alignment and rational reconstruction justified.  Until that generic
 equation is obtained, no alternate-frame `j`-map exists and no recognition
 claim for the rank-29 curve or ICARM 398--400, 273, or 302 is made.
 
+### Quadratic third-q12 marking recovered modulo 19
+
+The first equation-level generic-marking residue is now exact at the fixed
+specialization `u=-2`.  The saturated polynomial-section scheme over
+`GF(19)` has squarefree support degree twelve: six rational points and six
+quadratic points.  Exactly four oriented target hits, or two classes up to
+sign, lie on
+
+```text
+T^2 + 12*T + 3,
+```
+
+whose discriminant is `18=-1 mod 19`.  They form one Frobenius orbit up to
+sign and satisfy the literal parent equation, `P.O=2`, height eight by the
+fourth/eighth-multiple replay, and the identity-component conditions at both
+additive fibres.  The certificate
+
+```text
+artifacts/generated-results/q80-fixed-u-minus2-p19-po0-rur-third-q12-modp.json
+```
+
+is produced by
+[`scripts/certify_q80_po0_rur_third_q12_modp.sage`](scripts/certify_q80_po0_rur_third_q12_modp.sage).
+An independent replay into a temporary output was byte-identical to the
+persisted artifact.  This closes one modular horizontal search; it does not
+yet construct the connected q12 pencil or its `A5+A3+3A1/MW6` child.
+
+This quadratic residue sharpens the alignment contract.  A producer must not
+choose one root of its irreducible factor independently at each prime.  It
+must first retain the horizontal and all parent/child maps as a Frobenius
+orbit.  A generator-free encoding can select the first ordered coefficient
+`alpha` with nonzero discriminant, put
+
+```text
+z = 2*alpha - Tr(alpha),       z^2 = Delta,
+```
+
+and write every other coefficient uniquely as
+
+```text
+(trace + anti_coefficient*z)/2.
+```
+
+The trace, `Delta`, and `anti_coefficient` values are invariant under
+simultaneous Frobenius conjugation.  Section sign, base gauge, Weierstrass
+scaling, and map-chain normalization remain separate equivalences and must be
+fixed by the retained marking transport before endpoint residues are admitted
+to coefficientwise CRT.  The immediate producer gate is therefore the full
+connected third-q12 Riemann--Roch space and child over this quadratic residue;
+the next-prime solve follows only after that local positive control compiles.
+
 The downstream reconstruction gate is nevertheless executable and regression
 tested.  [`scripts/reconstruct_q80_alternate_rootless_crt_qq.sage`](scripts/reconstruct_q80_alternate_rootless_crt_qq.sage)
 accepts only endpoint records with schema
