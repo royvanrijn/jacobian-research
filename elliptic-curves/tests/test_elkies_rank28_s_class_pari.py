@@ -49,6 +49,23 @@ class ElkiesRank28SClassPariTests(unittest.TestCase):
         self.assertNotIn("ellsearch", source.lower())
         self.assertNotIn("ratpoints", source.lower())
 
+    def test_reduced_field_model_preserves_an_explicit_generator_map(self) -> None:
+        _, _, coefficients, primes = s_class.validate_inputs()
+        source = s_class.worker_source(
+            coefficients=coefficients,
+            primes=primes,
+            stack_bytes=1_000_000_000,
+            mode="class-quotient",
+            tech=[0.01, 4.0, 20],
+            debug=1,
+            field_model="polredabs",
+        )
+        self.assertIn("FIELD_MODEL = 'polredabs'", source)
+        self.assertIn("pari.polredabs(original_polynomial, 1)", source)
+        self.assertIn("original_generator_in_field_model", source)
+        self.assertIn("pari.nfinit([polynomial, BAD_PRIMES])", source)
+        self.assertIn('stage("polredabs",', source)
+
     def test_protocol_preserves_last_completed_stage(self) -> None:
         result = {"s_class_group_mod2_dimension_upper_bound": 2}
         events, parsed = s_class.parse_protocol(
@@ -111,6 +128,54 @@ class ElkiesRank28SClassPariTests(unittest.TestCase):
             artifact["class_quotient_certification"][
                 "remaining_dimension_upper_bound"
             ]
+        )
+        self.assertFalse(artifact["selmer_claim"]["expensive_search_authorized"])
+
+    def test_pinned_reduced_field_model_is_exact_but_still_incomplete(self) -> None:
+        path = (
+            ROOT
+            / "artifacts/generated-results/elliptic-curves"
+            / "elkies_2026_rank28_s_class_pari_polredabs_v1.json"
+        )
+        artifact = json.loads(path.read_text())
+        self.assertEqual(artifact["field_model"], "polredabs")
+        self.assertEqual(
+            artifact["status"], "INCOMPLETE_S_CLASS_COMPUTATION_SEARCH_FORBIDDEN"
+        )
+        events = artifact["supervisor"]["stage_events"]
+        reduced = next(
+            event
+            for event in events
+            if event.get("stage") == "polredabs" and event.get("status") == "complete"
+        )
+        nfinit = next(
+            event
+            for event in events
+            if event.get("stage") == "nfinit" and event.get("status") == "complete"
+        )
+        self.assertEqual(
+            reduced["polynomial"],
+            "x^3 - 35676022072134269484503481261046298223875964999429256003*x "
+            "- 81734190921553911625559669772737848345984148653181341176726216553622238508296306498",
+        )
+        self.assertTrue(reduced["original_generator"].startswith("Mod(-3*x + 1,"))
+        ledger = json.loads(s_class.BAD_PLACE_LEDGER.read_text())
+        self.assertEqual(
+            int(ledger["descent_cubic_discriminant"]),
+            729 * int(nfinit["polynomial_discriminant"]),
+        )
+        self.assertEqual(nfinit["defining_order_index"], "64023127168000")
+        self.assertEqual(nfinit["signature"], "3:0")
+        self.assertEqual(artifact["supervisor"]["outcome"], "strict_wall_timeout")
+        self.assertEqual(artifact["supervisor"]["last_stage_event"]["stage"], "bnfinit")
+        self.assertIsNone(artifact["backend_result"])
+        self.assertEqual(
+            artifact["supervisor"]["pari_progress"]["last_relation_request"],
+            {
+                "candidate_ideal_count": 153,
+                "method": "rnd_rel",
+                "requested_relations": 153,
+            },
         )
         self.assertFalse(artifact["selmer_claim"]["expensive_search_authorized"])
 

@@ -279,6 +279,34 @@ RSS. It never reaches `bnfcertify`, so it supplies no class-group or Selmer
 bound. Its debug tail identifies the random-relation plateau without treating
 PARI progress messages as a certificate.
 
+Replay the exact absolute polynomial reduction and matched resource envelope:
+
+```sh
+python3 elliptic-curves/cas/run_elkies_2026_rank28_s_class_pari.py \
+  --field-model polredabs --timeout 120 \
+  --c1 0.01 --c2 4 --nrpid 20 \
+  --pari-stack-bytes 2000000000 --rss-limit-bytes 3000000000 \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_s_class_pari_polredabs_v1.json \
+  --overwrite
+```
+
+`polredabs` gives the depressed cubic
+
+```text
+x^3
+- 35676022072134269484503481261046298223875964999429256003*x
+- 81734190921553911625559669772737848345984148653181341176726216553622238508296306498
+```
+
+with exact original-generator map `theta=-3*x+1`. Its polynomial
+discriminant is the original one divided by `3^6`, its defining-order index is
+smaller by 27, and factor-supplied `nfinit` plus `nfcertify` proves the same
+maximal cubic field. The matched run nevertheless reaches the same 243-ideal,
+153-request random-relation plateau and times out inside `bnfinit` at
+264,839,168 bytes peak observed RSS. Polynomial reduction is therefore kept
+as an exact input optimization but not promoted to a class-group or Selmer
+bound.
+
 Replay the complementary BNF-free paired-special-ideal pilot and its exact
 principal-row audit with:
 
@@ -392,10 +420,12 @@ python3 elliptic-curves/cas/build_elkies_2026_rank28_relative_descent_magma.py \
 ```
 
 It computes `TwoSelmerGroup(E : Bound := -1)` before any cover construction,
-subtracts the independently certified generic Kummer dimension 17, and exits
-below residual dimension 15. Only its passing branch constructs relative
-covers, and it contains no point search. After an external Magma run, parse the
-complete transcript with:
+records both the dimension modulo the generic 17 and the equivalent dimension
+beyond the full known rank-28 subgroup, and exits below residual dimension 15
+(equivalently below four unexplained directions). Only its passing branch
+calls `TwoDescent`, with all 28 certified points removed, so it materializes
+only genuinely unexplained covers. It contains no point search. After an
+external Magma run, parse the complete transcript with:
 
 ```sh
 python3 elliptic-curves/cas/parse_elkies_2026_rank28_relative_descent.py \
@@ -407,6 +437,31 @@ python3 elliptic-curves/cas/parse_elkies_2026_rank28_relative_descent.py \
 The parser rejects partial or source-mismatched logs. Magma is not available
 on the current host. See
 [`ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md`](../elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md).
+
+## Bisection specialization controls
+
+<!-- status-consumer: EC-K3-ELKIES-2026-BISECTION-SPECIALIZATION-CONTROLS 04f49e48e1c1dd88 -->
+
+Replay all 195,600 exact square tests obtained by evaluating the complete
+39,120-record rootless bisection atlas at the rank-25--28 controls and at
+ICARM curve 394:
+
+```sh
+.venv/bin/python \
+  elliptic-curves/scripts/evaluate_elkies_2026_bisections_at_controls.py \
+  --check
+```
+
+Every split point is constructed in both square-root branches, verified on
+the source and global minimal fibres, and checked against its stored trace.
+The exact split counts are `6,3,2,1,25`; their finite-quotient class spans
+inside the known public complements have dimensions `5,3,2,1,4`. No point
+escapes those spans. Thus the rank-28 fibre exposes one of eleven known
+exceptional directions, whereas the `t=3/8` splits recover all four known
+directions beyond R17. This leaves the unconditional rank lower bounds
+unchanged. Exact relation blocks prove that the displayed generated subgroup
+ranks remain `25,26,27,28,21`; they do not bound the full curve ranks. See
+[`ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md`](notes/ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md).
 
 ## Low-conductor exact baselines
 
@@ -480,6 +535,27 @@ The JSON records wall/RSS limits and raw protocol output.  PARI's cubic-field
 BNF is GRH-conditional unless separately certified; only returned rational
 points that pass a fresh full mod-2 certificate raise the unconditional lower
 bound.
+
+The two exact large-prime collection geometries are implemented in
+`run_fermigier_rank20_fixedfb_quadratic_specialq.py` and
+`run_fermigier_rank20_minkowski_specialq.py`.  For the latter, the relevant
+opt-in switches are
+
+```text
+--special-ideal-mode cycle-pairs
+--norm-factor-mode exact
+--large-prime-merge-mode sparse-hypergraph
+--max-residual-primes <cap>
+```
+
+The ledger records every retained principal generator plus the exact
+large-prime incidence rank and nullity.  This path has not completed a
+full-Bach ICARM 245 exact-factor pilot: the pre-factor-hint run reached its
+600-second wall limit before collection, and the next setup run was stopped
+by the user before the new factor-hint path was replayed.  Do not treat either
+terminal as a class-group, Selmer, or rank result.  The bounded parameters and
+outcomes are recorded in
+[`CONDUCTOR_FIRST_NEAR_MISS_DESCENT.md`](notes/CONDUCTOR_FIRST_NEAR_MISS_DESCENT.md).
 
 The independent eclib route can be replayed directly on any integral global
 minimal model, for example ICARM 245:

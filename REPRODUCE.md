@@ -24,8 +24,10 @@ are reproducible exact descent inputs, but remain fail-closed until a complete
 Selmer dimension is returned. The same catalogue now includes a stage-aware
 factor-supplied `S`-class worker and an exact BNF-free rank-28 pilot. The first
 stops in class-group relation generation before certification; the second is
-far below a valid factor-base generation bound. Neither is a Selmer bound or
-permission to search. The exact rank-28 local calibration additionally shows
+far below a valid factor-base generation bound. An exact depressed-cubic
+variant lowers the defining-order index by 27 but reaches the same PARI
+relation plateau. None is a Selmer bound or permission to search. The exact
+rank-28 local calibration additionally shows
 that eleven certified global quotient directions add zero bad-place signature
 rank. Four odd places and infinity have certified full known-point coverage;
 a bounded resumable norm-one-cover pilot records 60 selected local witnesses
@@ -2593,10 +2595,10 @@ The full exact table, CM24 comparison, and claim boundary are in
 <!-- status-consumer: EC-K3-ELKIES-2026-R19-PAIRED f1e135d2ba803e80 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL f99c98cdb6b8cd7d -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R28-BAD-PLACE-KUMMER 611e63935d2340bc -->
-<!-- status-consumer: EC-K3-ELKIES-2026-R28-S-CLASS-PILOT a791713dc40f7caf -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R28-S-CLASS-PILOT 8c88abe96881b79d -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R28-LOCAL-COVERAGE c078c1aa8e97df47 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R28-PUBLIC-SELMER-CONTROLS 56509673b9eb1940 -->
-<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE bb81d843718bdd31 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE 855128c3da8d2b41 -->
 
 The rootless `U + (-M)` lattice has a finite degree-two quotient under section
 translation. The following exact lattice calculation enumerates its
@@ -2683,6 +2685,27 @@ batch gives 39,120 explicit generic-rank-at-least-18 base changes.
 
 <!-- status-consumer: EC-K3-BISECT-EQUATION-BATCH a0570a5a4ea8e02b -->
 
+Evaluate the complete equation-level bisection atlas at the four rank-25--28
+positive controls and at ICARM curve 394 (`t=3/8`):
+
+<!-- status-consumer: EC-K3-ELKIES-2026-BISECTION-SPECIALIZATION-CONTROLS 04f49e48e1c1dd88 -->
+
+```bash
+.venv/bin/python \
+  elliptic-curves/scripts/evaluate_elkies_2026_bisections_at_controls.py \
+  --check
+```
+
+The 195,600 exact square tests find respectively `6,3,2,1,25` split
+bisections. Their finite-quotient classes span `5,3,2,1,4` known directions
+beyond the generic seventeen and produce no finite-quotient escape. In
+particular, the rank-28 control sees only one of its eleven known exceptional
+directions, while the `t=3/8` splits span all four directions certifying rank
+at least 21. Full-rank relation blocks, verified by exact group addition, show
+that adjoining all split points leaves the displayed subgroup ranks at
+`25,26,27,28,21`. These are not upper bounds for the full curves. See
+[`elliptic-curves/notes/ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md`](elliptic-curves/notes/ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md).
+
 Classify all distinct biquadratic pair bases, build the complete exact
 5,566-row immediate-point arithmetic catalogue, replay the completed bounded
 rank-lower-bound ledger, and verify the simplest rank-at-least-nine base:
@@ -2701,6 +2724,12 @@ rank-lower-bound ledger, and verify the simplest rank-at-least-nine base:
 
 /tmp/jacobian-sage-bin/sage -python \
   elkies-k3/scripts/verify_elkies_2026_rank19_rank9_base.sage
+
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/search_elkies_2026_rank9_paired_base.sage
+
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/analyze_elkies_2026_high_rank_control_pair_bases.sage
 ```
 
 The complete geometry proves all 765,167,640 distinct pair bases genus one
@@ -2709,6 +2738,12 @@ but does not turn empty searches into rank-zero claims. Its record lower bound
 is 9, attained by two bases. The standalone verifier replays the simpler one,
 constructs the paired base's 2-isogenous minimal model, and certifies an exact
 birational map from nine independent points to nine rational `(t,u,v)` values.
+The promoted-base search then performs bounded height-60 enumeration with a
+separate `t(P)`-complexity ordering, specializes all nineteen visible points,
+tests the remaining 39,118 covers at each of 100 retained parameters, and
+applies Nagao only after the explicit split count. The control-pair replay
+constructs all 19 pairs selected by the four high-rank fibres and computes
+their finite-quotient incidence with the public exceptional complements.
 
 <!-- status-consumer: EC-K3-BISECT-BIQUADRATIC-R19 707bffd8b85f8f3e -->
 

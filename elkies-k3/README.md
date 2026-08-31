@@ -73,7 +73,9 @@ failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and
   strict 600-second and 1,800-second 8 GB-stack attempts still returned no
   Selmer dimension and remain search-forbidden. A stage-aware class-quotient
   worker now shows that the remaining local PARI stall is relation generation
-  inside `bnfinit`, before `bnfcertify`. An exact factor-base-1000 BNF-free
+  inside `bnfinit`, before `bnfcertify`. An exact depressed-cubic model lowers
+  the defining-order index by 27 but reproduces the same relation plateau in a
+  matched run. An exact factor-base-1000 BNF-free
   paired-special-ideal pilot verifies 172 canonical principal rows but no
   noncanonical gain; its displayed quotient dimension is uncertified because
   the valid generation threshold is 1,202,640. An exact local positive control
@@ -90,9 +92,9 @@ failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and
   dimension at least 11, calibrating the genuine-class path without supplying
   the missing upper bound or search authorization. A source-pinned
   unconditional Magma job now computes
-  `TwoSelmerGroup(Bound := -1)` first, subtracts the certified 17-dimensional
-  Kummer image, exits below residual dimension 15, and can materialize
-  residual covers only after a pass; Magma is not installed on this host.
+  `TwoSelmerGroup(Bound := -1)` first, exits below residual dimension 15, and
+  on a pass removes all 28 certified points before materializing only the
+  unexplained cover classes; Magma is not installed on this host.
   The first conic cover has an explicit eighteenth section and rational
   parameter; the paired cover has both new sections, exact maps from the
   rank-at-least-four curve `E0`, and a Mordell--Weil-lattice Nagao sieve; these
@@ -134,15 +136,15 @@ failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and
 <!-- status-consumer: EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS 345b9fb977057133 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL f99c98cdb6b8cd7d -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R28-BAD-PLACE-KUMMER 611e63935d2340bc -->
-<!-- status-consumer: EC-K3-ELKIES-2026-R28-S-CLASS-PILOT a791713dc40f7caf -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R28-S-CLASS-PILOT 8c88abe96881b79d -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R28-LOCAL-COVERAGE c078c1aa8e97df47 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R28-PUBLIC-SELMER-CONTROLS 56509673b9eb1940 -->
-<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE bb81d843718bdd31 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE 855128c3da8d2b41 -->
 <!-- status-consumer: EC-K3-BISECT-BIQUADRATIC-R19 707bffd8b85f8f3e -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R18-COVER 6b4ee5bbc1afc01e -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R19-PAIRED f1e135d2ba803e80 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL f99c98cdb6b8cd7d -->
-<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE bb81d843718bdd31 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE 855128c3da8d2b41 -->
 
 Use `R17` for the recovered rootless endpoint and `H3 source` for the level-474
 Kumar polarization. Low-q, E6, H2 and Q80/CM24 are comparison or regression

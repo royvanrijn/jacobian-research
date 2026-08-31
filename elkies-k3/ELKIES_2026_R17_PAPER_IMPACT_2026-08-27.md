@@ -163,6 +163,15 @@ the one-sided `bnfcertify(...,1)` class-quotient certificate. With
 relations. Since `bnfcertify` is never reached, this is implementation
 evidence only.
 
+An exact `polredabs` variant replaces the large translated cubic by a
+depressed cubic and records the original-generator map `theta=-3*x+1`. The
+polynomial discriminant drops by `3^6` and the defining-order index by 27;
+factor-supplied `nfinit` and `nfcertify` still prove the same maximal field.
+In the matched 120-second envelope this cleaner model reaches the same
+243-ideal setup and 153-request random-relation plateau, timing out at
+264,839,168 bytes peak observed RSS. It is therefore an exact coordinate
+improvement but not a class-group, Selmer, or rank bound.
+
 The BNF-free collector now also has an exact rank-28 preset and reuses the
 proved factor hints in collection, canonical-row augmentation, and audit. A
 factor-base-1000 paired-special-ideal pilot retains 10,288 sampled algebraic
@@ -213,11 +222,14 @@ The external complete path is
 replays the exact generic-17 and generic-plus-public-11 finite-reduction
 certificates. The generated job calls unconditional
 `TwoSelmerGroup(E : Bound := -1)` at basis level, computes
-`dim Sel_2(E)-17`, and exits if that value is below 15. Only the passing branch
-may call relative `TwoDescent(... RemoveGens := generic, WithMaps := false)`;
-there is no point-search primitive in the job. Its parser rejects partial logs
-and emits the same model-bound gate schema. Magma is unavailable on the
-current host, so no external transcript or Selmer dimension is claimed.
+both `dim Sel_2(E)-17` and `dim Sel_2(E)-28`, and exits if the former is below
+15 (equivalently if the latter is below four). Only the passing branch may
+call relative `TwoDescent`, with `RemoveGens` equal to the generic seventeen
+plus the public complement eleven; it therefore materializes only genuinely
+unexplained covers. There is no point-search primitive in the job. Its parser
+rejects partial logs and emits the same model-bound gate schema. Magma is
+unavailable on the current host, so no external transcript or Selmer dimension
+is claimed.
 
 ## First rank-18 cover
 
@@ -361,6 +373,11 @@ python3 elliptic-curves/cas/run_elkies_2026_rank28_s_class_pari.py \
   --timeout 120 --c1 0.01 --c2 4 --nrpid 20 \
   --pari-stack-bytes 2000000000 --rss-limit-bytes 3000000000 \
   --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_s_class_pari_v1.json \
+  --overwrite
+python3 elliptic-curves/cas/run_elkies_2026_rank28_s_class_pari.py \
+  --field-model polredabs --timeout 120 --c1 0.01 --c2 4 --nrpid 20 \
+  --pari-stack-bytes 2000000000 --rss-limit-bytes 3000000000 \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_rank28_s_class_pari_polredabs_v1.json \
   --overwrite
 mkdir -p artifacts/local/elliptic-curves/elkies-rank28-bnf-free
 $SAGE elliptic-curves/cas/run_fermigier_rank20_minkowski_specialq.py \

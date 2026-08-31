@@ -39,6 +39,13 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   its optional sparse-hypergraph engine cancels multi-large-prime columns
   while retaining exact principal-generator witnesses, and its bounded
   adaptive mode can reuse residual degree-one ideals as new special ideals.
+- `run_fermigier_rank20_minkowski_specialq.py`: full-ideal Minkowski
+  special-q collector.  In addition to its historical one-large-prime graph,
+  the opt-in `--norm-factor-mode exact --large-prime-merge-mode
+  sparse-hypergraph` path retains fully factored multi-residual supports and
+  exact dependency witnesses.  It supplies declared discriminant factors to
+  PARI before maximal-order construction.  This is relation collection, not
+  class-group completion or a Selmer calculation.
 - `certify_nagao_rank20_t5081.py`: exact Nagao rank-at-least-20 certificate.
 - `newfamily/certify_rank_t83_6.py`: exact-rank-14 Sage/PARI replay.
 - `elkies_residual_selmer_gate.py`: fail-closed rank-32 residual-dimension
@@ -53,8 +60,10 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   known-image ledger is exact input to descent, not a Selmer upper bound.
 - `run_elkies_2026_rank28_s_class_pari.py`: isolates factor-supplied maximal-
   order certification, class-group relation generation, and `bnfcertify` in
-  an owned resource-bounded worker. A completed class quotient would still
-  precede the separate norm and local-solubility gates.
+  an owned resource-bounded worker. Its `--field-model polredabs` path records
+  an exact reduced polynomial and generator map before the same certified
+  maximal-order calculation. A completed class quotient would still precede
+  the separate norm and local-solubility gates.
 - `run_fermigier_rank20_minkowski_specialq.py --elkies-rank28`: feeds the same
   proved factor support into the exact BNF-free principal-relation collector.
   Its factor-base-1000 paired-cover pilot is explicitly uncertified and does

@@ -23,6 +23,10 @@ from itertools import product
 from pathlib import Path
 import time
 
+from run_fermigier_rank20_fixedfb_quadratic_specialq import (
+    SparseLargePrimeEliminator,
+)
+
 
 PROTOCOL = "R20MINKQ"
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -120,13 +124,30 @@ def main() -> None:
     )
     parser.add_argument(
         "--large-prime-merge-mode",
-        choices=("all-edges", "spanning-forest"),
+        choices=("all-edges", "spanning-forest", "sparse-hypergraph"),
         default="all-edges",
         help=(
             "all-edges retains every partial edge; spanning-forest retains "
             "only connectivity edges, so a double-special cycle closes around "
-            "its intended graph rather than through parallel-edge shortcuts"
+            "its intended graph rather than through parallel-edge shortcuts; "
+            "sparse-hypergraph exactly eliminates arbitrary residual-prime "
+            "supports"
         ),
+    )
+    parser.add_argument(
+        "--norm-factor-mode",
+        choices=("hybrid", "exact"),
+        default="hybrid",
+        help=(
+            "hybrid preserves the bounded one-large-prime path; exact factors "
+            "the full norm cofactor and can retain several residual ideals"
+        ),
+    )
+    parser.add_argument(
+        "--max-residual-primes",
+        type=int,
+        default=6,
+        help="maximum odd outside-factor primes retained in exact mode",
     )
     parser.add_argument("--trial-prime-bound", type=int, default=10000)
     parser.add_argument("--residual-factor-limit", type=int, default=1 << 40)
@@ -148,6 +169,8 @@ def main() -> None:
         raise ValueError("factor-base and trial-prime bounds must be at least 2")
     if args.lattice_combination_bound < 1:
         raise ValueError("--lattice-combination-bound must be positive")
+    if args.max_residual_primes < 1:
+        raise ValueError("--max-residual-primes must be positive")
     if args.special_ideal_mode == "cycle-pairs" and args.pair_cycle_length < 3:
         raise ValueError("--pair-cycle-length must be at least three in cycle-pairs mode")
     if args.special_residue_degree == 2 and args.seed_specials:
@@ -261,8 +284,6 @@ def main() -> None:
     )
     if not polynomial.is_irreducible():
         raise ValueError("the defining cubic must be irreducible over QQ")
-    field = NumberField(polynomial, "theta")
-    theta = field.gen()
     if args.selmer_rational_primes:
         selmer_primes = sorted({ZZ(value) for value in parse_integer_csv(
             args.selmer_rational_primes, "selmer-rational-primes"
@@ -275,6 +296,14 @@ def main() -> None:
         selmer_primes = sorted(
             {ZZ(2)} | {ZZ(p) for p, _ in factor(abs(ZZ(polynomial.discriminant())))}
         )
+    # The declared Selmer support includes the polynomial-discriminant
+    # factors for every fixed target used here.  Give those declared prime
+    # factors to PARI before maximal-order construction so it does not spend
+    # the collection budget refactoring the same large discriminant.  This is
+    # a setup hint, not a new primality or class-group certificate.
+    pari.addprimes(selmer_primes)
+    field = NumberField(polynomial, "theta")
+    theta = field.gen()
 
     factor_base = []
     factor_base_by_hnf = {}
@@ -465,6 +494,7 @@ def main() -> None:
         insert_row(canonical_s_pivots, 1 << column)
     quotient_pivots = dict(canonical_s_pivots)
     graph = defaultdict(list)
+    sparse_large_primes = SparseLargePrimeEliminator()
     ROOT = ("ROOT",)
     total_candidates = 0
     total_cycles = 0
@@ -612,23 +642,35 @@ def main() -> None:
                     while cofactor % q == 0:
                         cofactor //= q
             used = []
-            for rational_prime in trial_primes:
-                if cofactor % rational_prime:
-                    continue
-                used.append(rational_prime)
-                while cofactor % rational_prime == 0:
-                    cofactor //= rational_prime
-                if cofactor == 1:
-                    break
-            if cofactor != 1 and cofactor <= args.residual_factor_limit:
-                residual = ZZ(1)
+            residual_primes = None
+            if args.norm_factor_mode == "exact":
+                residual_primes = []
                 for rational_prime, exponent in factor(cofactor):
                     rational_prime = ZZ(rational_prime)
+                    exponent = ZZ(exponent)
                     if rational_prime <= args.factor_base_bound:
                         used.append(rational_prime)
-                    else:
-                        residual *= rational_prime**ZZ(exponent)
-                cofactor = residual
+                    elif int(exponent) & 1:
+                        residual_primes.append(rational_prime)
+                cofactor = ZZ(1)
+            else:
+                for rational_prime in trial_primes:
+                    if cofactor % rational_prime:
+                        continue
+                    used.append(rational_prime)
+                    while cofactor % rational_prime == 0:
+                        cofactor //= rational_prime
+                    if cofactor == 1:
+                        break
+                if cofactor != 1 and cofactor <= args.residual_factor_limit:
+                    residual = ZZ(1)
+                    for rational_prime, exponent in factor(cofactor):
+                        rational_prime = ZZ(rational_prime)
+                        if rational_prime <= args.factor_base_bound:
+                            used.append(rational_prime)
+                        else:
+                            residual *= rational_prime**ZZ(exponent)
+                    cofactor = residual
             row = exact_row(alpha, used)
             generator_index = len(generators)
             generators.append(
@@ -647,7 +689,23 @@ def main() -> None:
                 for (q, _, prime_q), valuation in zip(members, member_valuations):
                     if valuation & 1:
                         vertices.append((int(q), hnf_key(prime_q)))
-            if cofactor != 1:
+            if residual_primes is not None:
+                if len(residual_primes) > args.max_residual_primes:
+                    continue
+                residual_signatures = []
+                for residual_rational_prime in residual_primes:
+                    if residual_rational_prime > args.large_prime_bound:
+                        residual_signatures = []
+                        break
+                    signature = residual_prime_signature(alpha, residual_rational_prime)
+                    if signature is None:
+                        residual_signatures = []
+                        break
+                    residual_signatures.append(signature)
+                if len(residual_signatures) != len(residual_primes):
+                    continue
+                vertices.extend(residual_signatures)
+            elif cofactor != 1:
                 if cofactor > args.large_prime_bound:
                     continue
                 residual_factorization = list(factor(cofactor))
@@ -659,7 +717,17 @@ def main() -> None:
                     continue
                 vertices.append(signature)
             if len(vertices) == 0:
-                cycle, provenance = row, {generator_index}
+                if args.large_prime_merge_mode == "sparse-hypergraph":
+                    cycle, provenance = sparse_large_primes.add(
+                        vertices, row, generator_index
+                    )
+                else:
+                    cycle, provenance = row, {generator_index}
+            elif args.large_prime_merge_mode == "sparse-hypergraph":
+                total_partial += 1
+                cycle, provenance = sparse_large_primes.add(
+                    vertices, row, generator_index
+                )
             elif len(vertices) == 1:
                 total_partial += 1
                 cycle, provenance = add_partial(ROOT, vertices[0], row, generator_index)
@@ -703,6 +771,17 @@ def main() -> None:
         "special_primes_in_factor_base": args.special_primes_in_factor_base,
         "allow_rational_special_multiples": args.allow_rational_special_multiples,
         "large_prime_merge_mode": args.large_prime_merge_mode,
+        "norm_factor_mode": args.norm_factor_mode,
+        "max_residual_primes": args.max_residual_primes,
+        "large_prime_elimination": {
+            "vertex_count": len(sparse_large_primes.vertex_columns),
+            "edge_count": sparse_large_primes.edge_count,
+            "rank": len(sparse_large_primes.pivots),
+            "dependency_count": sparse_large_primes.dependency_count,
+            "nullity": (
+                sparse_large_primes.edge_count - len(sparse_large_primes.pivots)
+            ),
+        },
         "curve_preset": (
             "icarm-273"
             if args.curve273
@@ -751,6 +830,10 @@ def main() -> None:
         f"|candidates={total_candidates}|partial={total_partial}|cycles={total_cycles}"
         f"|relation_rank={len(pivots)}|afterS={after_s_dimension()}"
         f"|afterCanonicalS={after_canonical_s_dimension()}"
+        f"|lp_vertices={len(sparse_large_primes.vertex_columns)}"
+        f"|lp_edges={sparse_large_primes.edge_count}"
+        f"|lp_rank={len(sparse_large_primes.pivots)}"
+        f"|lp_nullity={sparse_large_primes.edge_count-len(sparse_large_primes.pivots)}"
         f"|ledger={args.relation_ledger}|seconds={time.monotonic()-started:.3f}",
         flush=True,
     )

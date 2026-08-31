@@ -246,9 +246,28 @@ not Selmer evidence:
   capped generations.  Its 1,345 candidates supplied 796 accepted exact
   hyperedges (`110,450,236` by depths zero, one, and two), with zero
   dependency and hence exact incidence rank 796.  Thus naive residual reuse
-  still gives a forest-like graph; a productive collector must force cycles
-  between multiple already-seen residual ideals, not simply continue this
-  one-parent adaptive walk or factor more random norms.
+  still gives a forest-like graph in this bounded sample.
+- A follow-up paired-ideal experiment deliberately arranged the ten smallest
+  reused residual ideals in a cycle and sampled 324,000 elements at
+  lattice-combination bound ten.  It returned zero closed cycles and zero
+  post-quotient gain, but the old hybrid cofactor gate retained only one
+  partial edge.  Therefore this run does **not** show that a multiple-residual
+  cycle geometry fails; it only shows that pairing the ideals without exact
+  residual factorization does not populate the intended graph.  This corrects
+  the earlier, too-strong prescription that merely forcing paired residual
+  ideals would be the next productive geometry.
+- The full-ideal Minkowski collector now reuses the same exact
+  sparse-hypergraph eliminator as the quadratic collector.  Its opt-in exact
+  mode fully factors the remaining norm, retains a bounded number of odd
+  residual prime-ideal columns, and records the exact incidence rank and
+  nullity.  A pre-optimization full-Bach pilot spent its 600-second wall limit
+  constructing the 39,904-column field/factor-base state and emitted no
+  collection record.  A smaller-factor-base setup was then interrupted on the
+  user's stop request while PARI was reconstructing the maximal order.  The
+  collector now supplies the already declared discriminant primes to PARI
+  before that construction, but no post-change exact-factor pilot has been
+  run.  Consequently there is no new principal relation, S-class bound,
+  Selmer bound, or rank conclusion from this unfinished path.
 
 No output from these bounded probes changes a mathematical status.  Complete
 jobs require a full Magma installation with substantially more memory/time,

@@ -71,8 +71,10 @@ There are five live arithmetic gates.
    factorization and all bad-place known Kummer images are now pinned; the
    original PARI, factored-PARI, and eclib attempts still have no completed
    Selmer bound. The factor-supplied class-group worker now isolates its stall
-   in relation generation, while the exact factor-base-1000 BNF-free pilot is
-   far below a valid generation bound and has no noncanonical quotient gain.
+   in relation generation. An exact reduced cubic lowers the defining-order
+   index by 27 but reaches the same class-relation plateau, while the exact
+   factor-base-1000 BNF-free pilot is far below a valid generation bound and
+   has no noncanonical quotient gain.
    The exact rank-28 local positive control further shows that all eleven
    exceptional directions add zero bad-place signature rank. Full local-image
    coverage is certified at only four odd places and infinity; a bounded

@@ -62,12 +62,26 @@ def parse_protocol(text: str) -> dict[str, Any]:
         raise ValueError("transcript uses another protocol version or target rank")
     if input_record.get("parameter") != "-9529/5471":
         raise ValueError("transcript belongs to another fibre")
-    if input_record.get("generic") != "17" or input_record.get("known_quotient_floor") != "11":
+    if (
+        input_record.get("generic") != "17"
+        or input_record.get("known_quotient_floor") != "11"
+        or input_record.get("known_rank_lower_bound") != "28"
+        or input_record.get("required_beyond_known_rank28") != "4"
+    ):
         raise ValueError("transcript used another certified subgroup")
     total = int(selmer_record["total_selmer_dim"])
     residual = int(selmer_record["residual_dim"])
     required = int(selmer_record["required_residual_dim"])
-    if total - 17 != residual or residual < 11 or required != 15:
+    unexplained = int(selmer_record["unexplained_dim"])
+    required_unexplained = int(selmer_record["required_unexplained_dim"])
+    if (
+        total - 17 != residual
+        or total - 28 != unexplained
+        or residual < 11
+        or unexplained < 0
+        or required != 15
+        or required_unexplained != 4
+    ):
         raise ValueError("transcript contains inconsistent Selmer dimensions")
     gate = gate_record(total_two_selmer_dimension=total)
     if classification.get("classification") != gate["status"]:
@@ -75,9 +89,11 @@ def parse_protocol(text: str) -> dict[str, Any]:
     expected_authorization = "true" if gate["expensive_search_authorized"] else "false"
     if classification.get("expensive_search_authorized") != expected_authorization:
         raise ValueError("classification has the wrong search authorization")
-    if int(classification["total_selmer_dim"]) != total or int(
-        classification["residual_dim"]
-    ) != residual:
+    if (
+        int(classification["total_selmer_dim"]) != total
+        or int(classification["residual_dim"]) != residual
+        or int(classification["unexplained_dim"]) != unexplained
+    ):
         raise ValueError("classification repeats different Selmer dimensions")
     return {
         "input": input_record,
@@ -115,6 +131,9 @@ def main() -> None:
         "known_rank_lower_bound": 28,
         "known_additional_directions_beyond_generic_17": 11,
         "directions_still_needed_for_rank_32": 4,
+        "unexplained_two_selmer_dimension_beyond_known_rank_28": int(
+            parsed["two_selmer"]["unexplained_dim"]
+        ),
         "positive_control_certificate": {
             "path": str(args.controls.resolve()),
             "sha256": source.controls_sha256,

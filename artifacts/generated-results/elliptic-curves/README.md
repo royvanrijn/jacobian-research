@@ -42,6 +42,13 @@ Important distinctions made explicit by the catalogue:
   and the complete height-10000 three-block calibration. The PARI and eclib
   rank-28 residual-descent artifacts are strict timeouts with no Selmer bound;
   both explicitly forbid point search.
+- `elkies_2026_bisection_specialization_controls_v1.json` is the complete
+  195,600-test evaluation of the 39,120 equation-level bisections at the four
+  rank-25--28 controls and ICARM curve 394. It finds split counts
+  `6,3,2,1,25` and known-complement class-span dimensions `5,3,2,1,4`, with
+  no finite-quotient escape. Full-rank relation blocks verified by exact group
+  addition prove generated-subgroup ranks `25,26,27,28,21`; these do not give
+  upper bounds for the full curves.
 - `elkies_2026_rank28_bad_place_kummer_ledger_v1.json` proves the complete
   factorization of the rank-28 2-division cubic discriminant and contains all
   thirteen finite/2-adic/real local blocks for the generic seventeen points.
@@ -57,6 +64,11 @@ Important distinctions made explicit by the catalogue:
   exact factor-supplied maximal-order setup completes, but the strict
   120-second run stops inside class-group relation generation before
   `bnfcertify`; it is not an `S`-class or Selmer bound.
+- `elkies_2026_rank28_s_class_pari_polredabs_v1.json` repeats that envelope on
+  PARI's exact reduced cubic with an explicit original-generator map. The
+  polynomial order index drops by 27, but the run reaches the same 153-request
+  random-relation plateau and returns no class-group bound. It remains
+  search-forbidden.
 - `elkies_2026_rank28_bnf_free_s_class_pilot_v1.json` audits 172 exact
   canonical principal rows after a paired-special-ideal pilot. Its displayed
   factor-base quotient dimension 141 is explicitly uncertified because bound

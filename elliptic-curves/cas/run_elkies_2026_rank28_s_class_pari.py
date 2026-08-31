@@ -70,6 +70,7 @@ BNF_FLAG = __BNF_FLAG__
 CERTIFY_FLAG = __CERTIFY_FLAG__
 TECH = __TECH__
 DEBUG = __DEBUG__
+FIELD_MODEL = __FIELD_MODEL__
 
 def stage(name, status, **fields):
     suffix = "".join(f"|{key}={value}" for key, value in sorted(fields.items()))
@@ -91,13 +92,38 @@ started = time.monotonic()
 pari.allocatemem(PARI_STACK_BYTES)
 pari.default("debug", DEBUG)
 pari.addprimes(BAD_PRIMES)
-polynomial = pari(
+original_polynomial = pari(
     f"x^3+({COEFFICIENTS[2]})*x^2+({COEFFICIENTS[1]})*x+({COEFFICIENTS[0]})"
 )
+polynomial = original_polynomial
+original_generator_in_field_model = "Mod(x,original_polynomial)"
+if FIELD_MODEL == "polredabs":
+    stage("polredabs", "start")
+    stage_started = time.monotonic()
+    reduced = pari.polredabs(original_polynomial, 1)
+    polynomial = reduced[0]
+    original_generator_in_field_model = str(reduced[1])
+    stage(
+        "polredabs",
+        "complete",
+        seconds=f"{time.monotonic()-stage_started:.6f}",
+        polynomial=str(polynomial),
+        original_generator=original_generator_in_field_model,
+    )
+elif FIELD_MODEL != "original":
+    raise ValueError(f"unsupported field model {FIELD_MODEL}")
 stage("nfinit", "start", factorization_supplied="true")
 stage_started = time.monotonic()
 nf = pari.nfinit([polynomial, BAD_PRIMES])
-stage("nfinit", "complete", seconds=f"{time.monotonic()-stage_started:.6f}")
+stage(
+    "nfinit",
+    "complete",
+    seconds=f"{time.monotonic()-stage_started:.6f}",
+    polynomial_discriminant=str(pari.poldisc(polynomial)),
+    field_discriminant=str(nf[2]),
+    defining_order_index=str(nf[3]),
+    signature=":".join(str(value) for value in nf.nf_get_sign()),
+)
 
 stage("nfcertify", "start")
 stage_started = time.monotonic()
@@ -149,7 +175,12 @@ s_span_dimension = packed_rank(packed_rows)
 class_mod2_dimension = len(even_indices)
 result = {
     "pari_version": ".".join(str(value) for value in pari.version()),
+    "field_model": FIELD_MODEL,
+    "original_polynomial": str(original_polynomial),
     "polynomial": str(polynomial),
+    "original_generator_in_field_model": original_generator_in_field_model,
+    "polynomial_discriminant": str(pari.poldisc(polynomial)),
+    "defining_order_index": str(nf[3]),
     "field_discriminant": str(nf[2]),
     "field_signature": [int(value) for value in nf.nf_get_sign()],
     "bnf_flag": BNF_FLAG,
@@ -371,6 +402,7 @@ def worker_source(
     mode: str,
     tech: list[float | int],
     debug: int,
+    field_model: str = "original",
 ) -> str:
     bnf_flag = 0 if mode == "class-quotient" else 1
     certify_flag = 1 if mode == "class-quotient" else 0
@@ -382,6 +414,7 @@ def worker_source(
         .replace("__CERTIFY_FLAG__", str(certify_flag))
         .replace("__TECH__", repr(tech))
         .replace("__DEBUG__", str(debug))
+        .replace("__FIELD_MODEL__", repr(field_model))
     )
 
 
@@ -399,6 +432,9 @@ def main() -> None:
     parser.add_argument("--c2", type=float, default=4.0)
     parser.add_argument("--nrpid", type=int, default=20)
     parser.add_argument("--pari-debug", type=int, choices=(0, 1, 2), default=1)
+    parser.add_argument(
+        "--field-model", choices=("original", "polredabs"), default="original"
+    )
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
     if args.timeout <= 0:
@@ -419,6 +455,7 @@ def main() -> None:
         mode=args.mode,
         tech=[args.c1, args.c2, args.nrpid],
         debug=args.pari_debug,
+        field_model=args.field_model,
     )
 
     with tempfile.NamedTemporaryFile("w", suffix=".py", delete=False) as handle:
@@ -481,6 +518,7 @@ def main() -> None:
         "parameter": "-9529/5471",
         "global_minimal_model": controls["fibres"][-1]["minimal_model"],
         "mode": args.mode,
+        "field_model": args.field_model,
         "input_certificates": {
             "positive_controls": {
                 "path": str(CONTROL_CERTIFICATE.resolve()),

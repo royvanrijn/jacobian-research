@@ -89,6 +89,15 @@ After adding 172 exact canonical `(p)` generators, its 327-column model has 26
 1,202,640, so the displayed dimension is not an `S`-class or Selmer upper
 bound. The exact command chain is in [`../REPRODUCE.md`](../REPRODUCE.md).
 
+The direct PARI class-group runner also tests an exact `polredabs` model. Its
+depressed cubic has original-generator map `theta=-3*x+1`; its polynomial
+discriminant is smaller by `3^6` and its defining-order index by 27, while
+`nfinit` and `nfcertify` recover the identical maximal field discriminant.
+This simplification does not change the active bottleneck: a matched
+120-second run still reaches the 153-request random-relation plateau inside
+`bnfinit` and yields no certified class quotient. The reduced model remains a
+useful exact coordinate for later algorithms, not a bound.
+
 This bounded full-S tranche has 1,225 factor-base ideals, 30 S-columns, and
 21,916 exact sampled generators. It closes 60 cycles of relation rank one.
 Augmenting its ledger with all 671 free canonical `(p)` rows raises the exact

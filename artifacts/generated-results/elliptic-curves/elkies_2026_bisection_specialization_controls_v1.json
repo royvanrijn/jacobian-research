@@ -1,0 +1,5457 @@
+{
+  "atlas_size": 39120,
+  "claim": "Complete exact specialization of all 39,120 stored bisections at the four rank-25--28 controls and ICARM curve 394.",
+  "claim_boundary": "The square census, point identities, finite-quotient classes, class-span dimensions, exact group relations, and ranks of the displayed generated subgroups are exact. These subgroup ranks are not upper bounds for the full Mordell--Weil groups, so no exact curve-rank claim is made.",
+  "fibres": [
+    {
+      "finite_quotient": {
+        "all_good_reduction_primes_scanned_through": 1000,
+        "certified_independent_subbasis": {
+          "certificate_primes": [
+            17,
+            19,
+            29,
+            31,
+            37,
+            43,
+            53,
+            59,
+            61,
+            67,
+            71,
+            73,
+            79,
+            83,
+            89,
+            103,
+            109,
+            113,
+            173
+          ],
+          "certified_rank_lower_bound": 25,
+          "point_count": 25,
+          "torsion_witness": {
+            "group_order": 33,
+            "prime": 23
+          }
+        },
+        "existing_public_basis_rank": 25,
+        "gain_beyond_existing_public_basis": 0,
+        "pivot_columns_zero_based": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "rank_after_adjoining_split_points": 25,
+        "rank_increasing_prime_data": [
+          {
+            "group_order": 38,
+            "prime": 29,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 50,
+            "prime": 37,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 54,
+            "prime": 43,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 64,
+            "prime": 53,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 74,
+            "prime": 59,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 76,
+            "prime": 61,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 80,
+            "prime": 67,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 88,
+            "prime": 71,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 86,
+            "prime": 73,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 88,
+            "prime": 79,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 100,
+            "prime": 83,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 104,
+            "prime": 89,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 124,
+            "prime": 103,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 124,
+            "prime": 109,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 134,
+            "prime": 113,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 152,
+            "prime": 137,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 164,
+            "prime": 149,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 198,
+            "prime": 173,
+            "quotient_dimension": 1
+          }
+        ],
+        "rank_increasing_primes": [
+          29,
+          37,
+          43,
+          53,
+          59,
+          61,
+          67,
+          71,
+          73,
+          79,
+          83,
+          89,
+          103,
+          109,
+          113,
+          137,
+          149,
+          173
+        ],
+        "relation_prime": 2,
+        "stacked_rows_sha256": "e80aa50c9f53f8caace8e8c44356f641083eba854daa0478f658fcc75ffee90c",
+        "torsion_witness": {
+          "group_order": 33,
+          "prime": 23
+        }
+      },
+      "hits": [
+        {
+          "canonical_positive_square_root": "135306236228800/29",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4",
+              "public-complement-Q5",
+              "public-complement-Q6",
+              "public-complement-Q7",
+              "public-complement-Q8"
+            ],
+            "coordinates_over_f2": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q1"
+            ]
+          },
+          "label": "orbit-1cb25",
+          "lattice_orbit_mask": 117541,
+          "negative_minimal_point": [
+            "1252246218362817974800",
+            "30930008999617958291248407089800"
+          ],
+          "positive_minimal_point": [
+            "1506168491527912775950",
+            "-45818774249705580898250151339500"
+          ],
+          "q_value": "18307777562403829645949440000/841"
+        },
+        {
+          "canonical_positive_square_root": "203824020508561440/8381",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4",
+              "public-complement-Q5",
+              "public-complement-Q6",
+              "public-complement-Q7",
+              "public-complement-Q8"
+            ],
+            "coordinates_over_f2": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            "generic_correction_over_f2": [
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q1",
+              "public-complement-Q7"
+            ]
+          },
+          "label": "orbit-0cff7",
+          "lattice_orbit_mask": 53239,
+          "negative_minimal_point": [
+            "31795763819793988843632/361",
+            "140059598924062342579372115337114168/6859"
+          ],
+          "positive_minimal_point": [
+            "10145876366114605080968227/1156",
+            "32072382050349616896143490670671455383/39304"
+          ],
+          "q_value": "41544231336274474494212338254873600/70241161"
+        },
+        {
+          "canonical_positive_square_root": "6824154940420132224/1340525",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4",
+              "public-complement-Q5",
+              "public-complement-Q6",
+              "public-complement-Q7",
+              "public-complement-Q8"
+            ],
+            "coordinates_over_f2": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            "generic_correction_over_f2": [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q6",
+              "public-complement-Q7"
+            ]
+          },
+          "label": "orbit-1ea09",
+          "lattice_orbit_mask": 125449,
+          "negative_minimal_point": [
+            "-59046767456428096219397264/46225",
+            "-11674580369772749608384010649867612904/9938375"
+          ],
+          "positive_minimal_point": [
+            "592227929897340617020",
+            "2762971086970794202936829802700"
+          ],
+          "q_value": "46569090650860498383902084205643186176/1797007275625"
+        },
+        {
+          "canonical_positive_square_root": "25231295593362573/2320",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4",
+              "public-complement-Q5",
+              "public-complement-Q6",
+              "public-complement-Q7",
+              "public-complement-Q8"
+            ],
+            "coordinates_over_f2": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q3"
+            ]
+          },
+          "label": "orbit-051a1",
+          "lattice_orbit_mask": 20897,
+          "negative_minimal_point": [
+            "32772683392194369450505/64",
+            "2904927399890656382226996743925935/512"
+          ],
+          "positive_minimal_point": [
+            "661892275327364643520",
+            "-2173719266087231828008372149800"
+          ],
+          "q_value": "636618277319637594723213037180329/5382400"
+        },
+        {
+          "canonical_positive_square_root": "577226335081851801720/2536079",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4",
+              "public-complement-Q5",
+              "public-complement-Q6",
+              "public-complement-Q7",
+              "public-complement-Q8"
+            ],
+            "coordinates_over_f2": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q6"
+            ]
+          },
+          "label": "orbit-0d4ca",
+          "lattice_orbit_mask": 54474,
+          "negative_minimal_point": [
+            "169404297502453800446800/169",
+            "-38410046513866718622203791502459000/2197"
+          ],
+          "positive_minimal_point": [
+            "1184687162457045395092480/961",
+            "-888878033073166992171184388622459800/29791"
+          ],
+          "q_value": "333190241912026256046664309844810194958400/6431696694241"
+        },
+        {
+          "canonical_positive_square_root": "18980232590972016/29",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4",
+              "public-complement-Q5",
+              "public-complement-Q6",
+              "public-complement-Q7",
+              "public-complement-Q8"
+            ],
+            "coordinates_over_f2": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q5"
+            ]
+          },
+          "label": "orbit-1d5bb",
+          "lattice_orbit_mask": 120251,
+          "negative_minimal_point": [
+            "258097564321544605000",
+            "15020476942229085735622231334800"
+          ],
+          "positive_minimal_point": [
+            "-407321095941594942156560/361",
+            "-148220889835980465202710144211205960/6859"
+          ],
+          "q_value": "360249229207396287623347695104256/841"
+        }
+      ],
+      "label": "rank_at_least_25",
+      "minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-1222583105876029916237789137035775062690200",
+        "523967447200209449943328506898413682821590945806099349816040000"
+      ],
+      "minimalization": {
+        "engine": "PARI/GP ellminimalmodel(E,&v)",
+        "exact_discriminant_scaling": true,
+        "exact_model_change_replay": true,
+        "pari_version": "[2, 15, 4]",
+        "program_sha256": "6eba7671a032c946c98c62c35c840d66d866e4ee642c5365fb5fc19deee29d0f",
+        "stack_bytes": 512000000,
+        "timeout_seconds": 300.0
+      },
+      "parameter": "-2/377",
+      "projective_parameter": [
+        -2,
+        377
+      ],
+      "public_complement": {
+        "dimension": 8,
+        "ordered_basis_labels": [
+          "public-complement-Q1",
+          "public-complement-Q2",
+          "public-complement-Q3",
+          "public-complement-Q4",
+          "public-complement-Q5",
+          "public-complement-Q6",
+          "public-complement-Q7",
+          "public-complement-Q8"
+        ],
+        "source_point_indices_one_based": [
+          1,
+          4,
+          6,
+          10,
+          11,
+          16,
+          20,
+          24
+        ]
+      },
+      "rank_result": {
+        "boundary": "The exact displayed subgroup rank is determined by independent known points and a full-rank exact relation block for all split points. This is not an upper bound for the full Mordell--Weil group.",
+        "exact_generated_subgroup_rank_after_adjoining": 25,
+        "exact_generated_subgroup_rank_determined": true,
+        "existing_unconditional_rank_lower_bound": 25,
+        "finite_quotient_signature_rank_after_adjoining": 25,
+        "relation_basis": {
+          "all_relations_verified_by_exact_group_addition": true,
+          "discovery_engine": "PARI/GP ellheightmatrix plus qflllgram",
+          "new_coefficient_block_rank_over_q": 6,
+          "numerical_height_matrix_rank": 25,
+          "ordered_points": [
+            "generic-P1",
+            "generic-P2",
+            "generic-P3",
+            "generic-P4",
+            "generic-P5",
+            "generic-P6",
+            "generic-P7",
+            "generic-P8",
+            "generic-P9",
+            "generic-P10",
+            "generic-P11",
+            "generic-P12",
+            "generic-P13",
+            "generic-P14",
+            "generic-P15",
+            "generic-P16",
+            "generic-P17",
+            "public-complement-Q1",
+            "public-complement-Q2",
+            "public-complement-Q3",
+            "public-complement-Q4",
+            "public-complement-Q5",
+            "public-complement-Q6",
+            "public-complement-Q7",
+            "public-complement-Q8",
+            "split-orbit-1cb25",
+            "split-orbit-0cff7",
+            "split-orbit-1ea09",
+            "split-orbit-051a1",
+            "split-orbit-0d4ca",
+            "split-orbit-1d5bb"
+          ],
+          "real_precision_digits": 100,
+          "relation_count": 6,
+          "relations": [
+            [
+              16,
+              5,
+              2,
+              -1,
+              4,
+              0,
+              11,
+              6,
+              -2,
+              1,
+              7,
+              8,
+              8,
+              -7,
+              -1,
+              -5,
+              -1,
+              -6,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              3,
+              0,
+              4,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0,
+              0,
+              1,
+              0,
+              2,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              -1,
+              0,
+              -1,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              1,
+              1,
+              0,
+              0,
+              1,
+              2,
+              2,
+              0,
+              0,
+              1,
+              2,
+              2,
+              -2,
+              0,
+              -1,
+              -1,
+              -2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              24,
+              8,
+              3,
+              -1,
+              6,
+              0,
+              16,
+              9,
+              -4,
+              1,
+              11,
+              12,
+              13,
+              -11,
+              -1,
+              -8,
+              -2,
+              -9,
+              0,
+              0,
+              0,
+              1,
+              -2,
+              5,
+              0,
+              6,
+              3,
+              2,
+              0,
+              0,
+              1
+            ],
+            [
+              12,
+              2,
+              3,
+              2,
+              3,
+              -2,
+              7,
+              3,
+              -4,
+              0,
+              7,
+              6,
+              10,
+              -6,
+              0,
+              -4,
+              0,
+              -6,
+              0,
+              1,
+              0,
+              1,
+              -1,
+              2,
+              0,
+              3,
+              3,
+              -1,
+              1,
+              2,
+              1
+            ],
+            [
+              52,
+              15,
+              6,
+              -11,
+              11,
+              4,
+              40,
+              23,
+              3,
+              8,
+              17,
+              28,
+              15,
+              -20,
+              -8,
+              -12,
+              -3,
+              -18,
+              0,
+              -2,
+              0,
+              -8,
+              0,
+              9,
+              0,
+              12,
+              6,
+              3,
+              -2,
+              -3,
+              -8
+            ]
+          ],
+          "zero_height_threshold": "1e-50"
+        },
+        "unconditional_rank_lower_bound_after_adjoining": 25
+      },
+      "split_bisection_count": 6,
+      "split_class_span": {
+        "dimension_in_known_public_complement": 5,
+        "dimension_modulo_generic_17": 5,
+        "distinct_known_public_classes": 6,
+        "escape_basis_labels": [],
+        "finite_quotient_escape_count": 0,
+        "known_public_complement_dimension": 8
+      },
+      "square_tests": 39120
+    },
+    {
+      "finite_quotient": {
+        "all_good_reduction_primes_scanned_through": 1000,
+        "certified_independent_subbasis": {
+          "certificate_primes": [
+            17,
+            19,
+            41,
+            47,
+            59,
+            83,
+            89,
+            97,
+            101,
+            103,
+            107,
+            113,
+            127,
+            131,
+            139,
+            149,
+            157,
+            163,
+            167,
+            179,
+            181,
+            191,
+            193
+          ],
+          "certified_rank_lower_bound": 26,
+          "point_count": 26,
+          "torsion_witness": {
+            "group_order": 33,
+            "prime": 23
+          }
+        },
+        "existing_public_basis_rank": 26,
+        "gain_beyond_existing_public_basis": 0,
+        "pivot_columns_zero_based": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "rank_after_adjoining_split_points": 26,
+        "rank_increasing_prime_data": [
+          {
+            "group_order": 28,
+            "prime": 19,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 54,
+            "prime": 41,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 60,
+            "prime": 47,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 72,
+            "prime": 59,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 98,
+            "prime": 83,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 100,
+            "prime": 89,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 110,
+            "prime": 97,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 120,
+            "prime": 101,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 118,
+            "prime": 103,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 124,
+            "prime": 107,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 128,
+            "prime": 113,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 136,
+            "prime": 127,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 150,
+            "prime": 131,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 160,
+            "prime": 139,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 170,
+            "prime": 149,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 178,
+            "prime": 157,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 188,
+            "prime": 163,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 180,
+            "prime": 167,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 200,
+            "prime": 179,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 196,
+            "prime": 181,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 216,
+            "prime": 191,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 216,
+            "prime": 193,
+            "quotient_dimension": 2
+          }
+        ],
+        "rank_increasing_primes": [
+          19,
+          41,
+          47,
+          59,
+          83,
+          89,
+          97,
+          101,
+          103,
+          107,
+          113,
+          127,
+          131,
+          139,
+          149,
+          157,
+          163,
+          167,
+          179,
+          181,
+          191,
+          193
+        ],
+        "relation_prime": 2,
+        "stacked_rows_sha256": "c5d4684423dc8c9eb9bd9c1061717c07f110875e2229f64dee1d9e048e03bd07",
+        "torsion_witness": {
+          "group_order": 33,
+          "prime": 23
+        }
+      },
+      "hits": [
+        {
+          "canonical_positive_square_root": "808742779064237882592/473167379",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4",
+              "public-complement-Q5",
+              "public-complement-Q6",
+              "public-complement-Q7",
+              "public-complement-Q8",
+              "public-complement-Q9"
+            ],
+            "coordinates_over_f2": [
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q5",
+              "public-complement-Q7"
+            ]
+          },
+          "label": "orbit-0da89",
+          "lattice_orbit_mask": 55945,
+          "negative_minimal_point": [
+            "6488088164012244085394031048/1885129",
+            "2285366922899110781474601255221326704059490/2588282117"
+          ],
+          "positive_minimal_point": [
+            "-4846831043111062066613364/289",
+            "6038893877958962442123798455372603994/4913"
+          ],
+          "q_value": "654064882688546688373186111895903576638464/223887368549729641"
+        },
+        {
+          "canonical_positive_square_root": "22084932533148301121760/46626011",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4",
+              "public-complement-Q5",
+              "public-complement-Q6",
+              "public-complement-Q7",
+              "public-complement-Q8",
+              "public-complement-Q9"
+            ],
+            "coordinates_over_f2": [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1
+            ],
+            "generic_correction_over_f2": [
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q1",
+              "public-complement-Q5",
+              "public-complement-Q7",
+              "public-complement-Q8",
+              "public-complement-Q9"
+            ]
+          },
+          "label": "orbit-12c1b",
+          "lattice_orbit_mask": 76827,
+          "negative_minimal_point": [
+            "10818738311775665391564",
+            "-42175067453410268961268401236742"
+          ],
+          "positive_minimal_point": [
+            "836930111766398052704889511606/1671849",
+            "-765246316817320529781753822024103767811493044/2161700757"
+          ],
+          "q_value": "487744244993712236626297629658875274345497600/2173984901772121"
+        },
+        {
+          "canonical_positive_square_root": "136015727403611731104/3248693",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4",
+              "public-complement-Q5",
+              "public-complement-Q6",
+              "public-complement-Q7",
+              "public-complement-Q8",
+              "public-complement-Q9"
+            ],
+            "coordinates_over_f2": [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1
+            ],
+            "generic_correction_over_f2": [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q5",
+              "public-complement-Q7",
+              "public-complement-Q8",
+              "public-complement-Q9"
+            ]
+          },
+          "label": "orbit-1ea54",
+          "lattice_orbit_mask": 125524,
+          "negative_minimal_point": [
+            "-3096832846550187681636",
+            "-1576332699861922980760900242960342"
+          ],
+          "positive_minimal_point": [
+            "21089272546487818707306408/1849",
+            "-19454749843449274033438432369217594994/79507"
+          ],
+          "q_value": "18500278101133615226580574700767601058816/10554006208249"
+        }
+      ],
+      "label": "rank_at_least_26",
+      "minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-271568164801421919805097494520335727505515190",
+        "1673523352045742769296938739782713519216640490554763586630258973092"
+      ],
+      "minimalization": {
+        "engine": "PARI/GP ellminimalmodel(E,&v)",
+        "exact_discriminant_scaling": true,
+        "exact_model_change_replay": true,
+        "pari_version": "[2, 15, 4]",
+        "program_sha256": "e07220b47c5a6f985881b7d8ad49952dfea2853fcc0946e9751bbecbc31e471e",
+        "stack_bytes": 512000000,
+        "timeout_seconds": 300.0
+      },
+      "parameter": "-308/251",
+      "projective_parameter": [
+        -308,
+        251
+      ],
+      "public_complement": {
+        "dimension": 9,
+        "ordered_basis_labels": [
+          "public-complement-Q1",
+          "public-complement-Q2",
+          "public-complement-Q3",
+          "public-complement-Q4",
+          "public-complement-Q5",
+          "public-complement-Q6",
+          "public-complement-Q7",
+          "public-complement-Q8",
+          "public-complement-Q9"
+        ],
+        "source_point_indices_one_based": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          12
+        ]
+      },
+      "rank_result": {
+        "boundary": "The exact displayed subgroup rank is determined by independent known points and a full-rank exact relation block for all split points. This is not an upper bound for the full Mordell--Weil group.",
+        "exact_generated_subgroup_rank_after_adjoining": 26,
+        "exact_generated_subgroup_rank_determined": true,
+        "existing_unconditional_rank_lower_bound": 26,
+        "finite_quotient_signature_rank_after_adjoining": 26,
+        "relation_basis": {
+          "all_relations_verified_by_exact_group_addition": true,
+          "discovery_engine": "PARI/GP ellheightmatrix plus qflllgram",
+          "new_coefficient_block_rank_over_q": 3,
+          "numerical_height_matrix_rank": 26,
+          "ordered_points": [
+            "generic-P1",
+            "generic-P2",
+            "generic-P3",
+            "generic-P4",
+            "generic-P5",
+            "generic-P6",
+            "generic-P7",
+            "generic-P8",
+            "generic-P9",
+            "generic-P10",
+            "generic-P11",
+            "generic-P12",
+            "generic-P13",
+            "generic-P14",
+            "generic-P15",
+            "generic-P16",
+            "generic-P17",
+            "public-complement-Q1",
+            "public-complement-Q2",
+            "public-complement-Q3",
+            "public-complement-Q4",
+            "public-complement-Q5",
+            "public-complement-Q6",
+            "public-complement-Q7",
+            "public-complement-Q8",
+            "public-complement-Q9",
+            "split-orbit-0da89",
+            "split-orbit-12c1b",
+            "split-orbit-1ea54"
+          ],
+          "real_precision_digits": 100,
+          "relation_count": 3,
+          "relations": [
+            [
+              -4,
+              2,
+              2,
+              -1,
+              -6,
+              8,
+              -9,
+              -1,
+              5,
+              -1,
+              -12,
+              -4,
+              -7,
+              2,
+              0,
+              6,
+              -8,
+              -1,
+              -3,
+              -2,
+              0,
+              -1,
+              -2,
+              1,
+              3,
+              -1,
+              2,
+              -2,
+              1
+            ],
+            [
+              0,
+              -1,
+              0,
+              0,
+              1,
+              -1,
+              1,
+              0,
+              -1,
+              1,
+              2,
+              0,
+              1,
+              0,
+              0,
+              -1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              1,
+              -1,
+              1,
+              0
+            ],
+            [
+              -4,
+              1,
+              3,
+              -2,
+              -4,
+              6,
+              -7,
+              -1,
+              4,
+              0,
+              -9,
+              -3,
+              -6,
+              1,
+              -1,
+              5,
+              -8,
+              -1,
+              -1,
+              -1,
+              0,
+              -1,
+              -2,
+              1,
+              2,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          "zero_height_threshold": "1e-50"
+        },
+        "unconditional_rank_lower_bound_after_adjoining": 26
+      },
+      "split_bisection_count": 3,
+      "split_class_span": {
+        "dimension_in_known_public_complement": 3,
+        "dimension_modulo_generic_17": 3,
+        "distinct_known_public_classes": 3,
+        "escape_basis_labels": [],
+        "finite_quotient_escape_count": 0,
+        "known_public_complement_dimension": 9
+      },
+      "square_tests": 39120
+    },
+    {
+      "finite_quotient": {
+        "all_good_reduction_primes_scanned_through": 1000,
+        "certified_independent_subbasis": {
+          "certificate_primes": [
+            5,
+            11,
+            17,
+            31,
+            37,
+            41,
+            59,
+            61,
+            71,
+            73,
+            79,
+            101,
+            103,
+            107,
+            109,
+            113,
+            127,
+            137,
+            139,
+            157,
+            167,
+            173,
+            179,
+            181
+          ],
+          "certified_rank_lower_bound": 27,
+          "point_count": 27,
+          "torsion_witness": {
+            "group_order": 57,
+            "prime": 47
+          }
+        },
+        "existing_public_basis_rank": 27,
+        "gain_beyond_existing_public_basis": 0,
+        "pivot_columns_zero_based": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "rank_after_adjoining_split_points": 27,
+        "rank_increasing_prime_data": [
+          {
+            "group_order": 18,
+            "prime": 11,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 24,
+            "prime": 17,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 40,
+            "prime": 31,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 50,
+            "prime": 37,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 54,
+            "prime": 41,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 74,
+            "prime": 59,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 76,
+            "prime": 61,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 78,
+            "prime": 71,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 90,
+            "prime": 73,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 88,
+            "prime": 79,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 120,
+            "prime": 101,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 112,
+            "prime": 103,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 122,
+            "prime": 107,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 130,
+            "prime": 109,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 132,
+            "prime": 113,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 140,
+            "prime": 127,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 156,
+            "prime": 137,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 160,
+            "prime": 139,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 174,
+            "prime": 157,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 192,
+            "prime": 167,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 194,
+            "prime": 173,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 196,
+            "prime": 179,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 204,
+            "prime": 181,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 210,
+            "prime": 193,
+            "quotient_dimension": 1
+          }
+        ],
+        "rank_increasing_primes": [
+          11,
+          17,
+          31,
+          37,
+          41,
+          59,
+          61,
+          71,
+          73,
+          79,
+          101,
+          103,
+          107,
+          109,
+          113,
+          127,
+          137,
+          139,
+          157,
+          167,
+          173,
+          179,
+          181,
+          193
+        ],
+        "relation_prime": 2,
+        "stacked_rows_sha256": "1bd9462999cdf941b5c7ea447d706165ec98a0e443e5d623541321c87c92f00e",
+        "torsion_witness": {
+          "group_order": 57,
+          "prime": 47
+        }
+      },
+      "hits": [
+        {
+          "canonical_positive_square_root": "11591356821612539488751/864000",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4",
+              "public-complement-Q5",
+              "public-complement-Q6",
+              "public-complement-Q7",
+              "public-complement-Q8",
+              "public-complement-Q9",
+              "public-complement-Q10"
+            ],
+            "coordinates_over_f2": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            "generic_correction_over_f2": [
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q2",
+              "public-complement-Q8",
+              "public-complement-Q9"
+            ]
+          },
+          "label": "orbit-195a4",
+          "lattice_orbit_mask": 103844,
+          "negative_minimal_point": [
+            "7851436575400738249179176",
+            "-14452877441456523436461838734725671354"
+          ],
+          "positive_minimal_point": [
+            "720986851653972230175772440451/900",
+            "612170288724556657950443045565297951675446509/27000"
+          ],
+          "q_value": "134359552965943553603506717866421336455540001/746496000000"
+        },
+        {
+          "canonical_positive_square_root": "121700375939634368448/96605",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4",
+              "public-complement-Q5",
+              "public-complement-Q6",
+              "public-complement-Q7",
+              "public-complement-Q8",
+              "public-complement-Q9",
+              "public-complement-Q10"
+            ],
+            "coordinates_over_f2": [
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q1",
+              "public-complement-Q3"
+            ]
+          },
+          "label": "orbit-00edf",
+          "lattice_orbit_mask": 3807,
+          "negative_minimal_point": [
+            "187286498737845717716773610654/19321",
+            "-62011297520241797124738953391502149260049400/2685619"
+          ],
+          "positive_minimal_point": [
+            "101842059101703412960816820",
+            "1025074775652273391087138546123592346374"
+          ],
+          "q_value": "14810981503848335888932282368671817928704/9332526025"
+        }
+      ],
+      "label": "rank_at_least_27",
+      "minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-55671146865244401916117773020296610079754015500970",
+        "161981895322788558220906653027519611838007321625214218991719656790551905956"
+      ],
+      "minimalization": {
+        "engine": "PARI/GP ellminimalmodel(E,&v)",
+        "exact_discriminant_scaling": true,
+        "exact_model_change_replay": true,
+        "pari_version": "[2, 15, 4]",
+        "program_sha256": "9b1ab996d938f751218b28dba12001e9706f1c491eb474149776a714ad4d4fc8",
+        "stack_bytes": 512000000,
+        "timeout_seconds": 300.0
+      },
+      "parameter": "2456/135",
+      "projective_parameter": [
+        2456,
+        135
+      ],
+      "public_complement": {
+        "dimension": 10,
+        "ordered_basis_labels": [
+          "public-complement-Q1",
+          "public-complement-Q2",
+          "public-complement-Q3",
+          "public-complement-Q4",
+          "public-complement-Q5",
+          "public-complement-Q6",
+          "public-complement-Q7",
+          "public-complement-Q8",
+          "public-complement-Q9",
+          "public-complement-Q10"
+        ],
+        "source_point_indices_one_based": [
+          1,
+          10,
+          11,
+          13,
+          18,
+          22,
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      "rank_result": {
+        "boundary": "The exact displayed subgroup rank is determined by independent known points and a full-rank exact relation block for all split points. This is not an upper bound for the full Mordell--Weil group.",
+        "exact_generated_subgroup_rank_after_adjoining": 27,
+        "exact_generated_subgroup_rank_determined": true,
+        "existing_unconditional_rank_lower_bound": 27,
+        "finite_quotient_signature_rank_after_adjoining": 27,
+        "relation_basis": {
+          "all_relations_verified_by_exact_group_addition": true,
+          "discovery_engine": "PARI/GP ellheightmatrix plus qflllgram",
+          "new_coefficient_block_rank_over_q": 2,
+          "numerical_height_matrix_rank": 27,
+          "ordered_points": [
+            "generic-P1",
+            "generic-P2",
+            "generic-P3",
+            "generic-P4",
+            "generic-P5",
+            "generic-P6",
+            "generic-P7",
+            "generic-P8",
+            "generic-P9",
+            "generic-P10",
+            "generic-P11",
+            "generic-P12",
+            "generic-P13",
+            "generic-P14",
+            "generic-P15",
+            "generic-P16",
+            "generic-P17",
+            "public-complement-Q1",
+            "public-complement-Q2",
+            "public-complement-Q3",
+            "public-complement-Q4",
+            "public-complement-Q5",
+            "public-complement-Q6",
+            "public-complement-Q7",
+            "public-complement-Q8",
+            "public-complement-Q9",
+            "public-complement-Q10",
+            "split-orbit-195a4",
+            "split-orbit-00edf"
+          ],
+          "real_precision_digits": 100,
+          "relation_count": 2,
+          "relations": [
+            [
+              -1,
+              0,
+              0,
+              0,
+              -1,
+              1,
+              -1,
+              1,
+              1,
+              -1,
+              -1,
+              0,
+              -1,
+              -1,
+              1,
+              0,
+              -1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              -1,
+              0,
+              1,
+              0
+            ],
+            [
+              -1,
+              0,
+              -1,
+              0,
+              0,
+              -1,
+              1,
+              1,
+              0,
+              -1,
+              1,
+              1,
+              0,
+              -1,
+              0,
+              -1,
+              0,
+              -1,
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              -1,
+              0,
+              1,
+              1
+            ]
+          ],
+          "zero_height_threshold": "1e-50"
+        },
+        "unconditional_rank_lower_bound_after_adjoining": 27
+      },
+      "split_bisection_count": 2,
+      "split_class_span": {
+        "dimension_in_known_public_complement": 2,
+        "dimension_modulo_generic_17": 2,
+        "distinct_known_public_classes": 2,
+        "escape_basis_labels": [],
+        "finite_quotient_escape_count": 0,
+        "known_public_complement_dimension": 10
+      },
+      "square_tests": 39120
+    },
+    {
+      "finite_quotient": {
+        "all_good_reduction_primes_scanned_through": 1000,
+        "certified_independent_subbasis": {
+          "certificate_primes": [
+            29,
+            31,
+            41,
+            43,
+            47,
+            59,
+            67,
+            71,
+            83,
+            89,
+            101,
+            103,
+            107,
+            109,
+            131,
+            137,
+            139,
+            157,
+            163,
+            181,
+            197,
+            211,
+            227
+          ],
+          "certified_rank_lower_bound": 28,
+          "point_count": 28,
+          "torsion_witness": {
+            "group_order": 33,
+            "prime": 23
+          }
+        },
+        "existing_public_basis_rank": 28,
+        "gain_beyond_existing_public_basis": 0,
+        "pivot_columns_zero_based": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "rank_after_adjoining_split_points": 28,
+        "rank_increasing_prime_data": [
+          {
+            "group_order": 40,
+            "prime": 29,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 40,
+            "prime": 31,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 52,
+            "prime": 41,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 56,
+            "prime": 43,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 60,
+            "prime": 47,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 72,
+            "prime": 59,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 84,
+            "prime": 67,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 88,
+            "prime": 71,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 102,
+            "prime": 83,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 106,
+            "prime": 89,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 108,
+            "prime": 101,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 124,
+            "prime": 103,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 120,
+            "prime": 107,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 130,
+            "prime": 109,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 148,
+            "prime": 131,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 148,
+            "prime": 137,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 162,
+            "prime": 139,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 182,
+            "prime": 157,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 176,
+            "prime": 163,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 192,
+            "prime": 181,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 220,
+            "prime": 197,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 232,
+            "prime": 211,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 242,
+            "prime": 227,
+            "quotient_dimension": 1
+          }
+        ],
+        "rank_increasing_primes": [
+          29,
+          31,
+          41,
+          43,
+          47,
+          59,
+          67,
+          71,
+          83,
+          89,
+          101,
+          103,
+          107,
+          109,
+          131,
+          137,
+          139,
+          157,
+          163,
+          181,
+          197,
+          211,
+          227
+        ],
+        "relation_prime": 2,
+        "stacked_rows_sha256": "fdcb34f0e6c0319f4011a0f6953e16e04f11ac341c210439933115c385ee4513",
+        "torsion_witness": {
+          "group_order": 33,
+          "prime": 23
+        }
+      },
+      "hits": [
+        {
+          "canonical_positive_square_root": "98241277646236608/5471",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4",
+              "public-complement-Q5",
+              "public-complement-Q6",
+              "public-complement-Q7",
+              "public-complement-Q8",
+              "public-complement-Q9",
+              "public-complement-Q10",
+              "public-complement-Q11"
+            ],
+            "coordinates_over_f2": [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0
+            ],
+            "generic_correction_over_f2": [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q2",
+              "public-complement-Q4",
+              "public-complement-Q5",
+              "public-complement-Q8",
+              "public-complement-Q10"
+            ]
+          },
+          "label": "orbit-15a68",
+          "lattice_orbit_mask": 88680,
+          "negative_minimal_point": [
+            "1735651373625624840279365737",
+            "-69854114553505335651560225604643142676469"
+          ],
+          "positive_minimal_point": [
+            "-623797767245338407675171953",
+            "-216233907416636772151029337377982943177269"
+          ],
+          "q_value": "9651348633564948645758585519345664/29931841"
+        }
+      ],
+      "label": "rank_at_least_28",
+      "minimal_model": [
+        "1",
+        "-1",
+        "1",
+        "-20067762415575526585033208209338542750930230312178956502",
+        "34481611795030556467032985690390720374855944359319180361266008296291939448732243429"
+      ],
+      "minimalization": {
+        "engine": "PARI/GP ellminimalmodel(E,&v)",
+        "exact_discriminant_scaling": true,
+        "exact_model_change_replay": true,
+        "pari_version": "[2, 15, 4]",
+        "program_sha256": "0303327c720b44ac21acd6af92049d2c2b134ace24eca50f4f6bfffe87269aab",
+        "stack_bytes": 512000000,
+        "timeout_seconds": 300.0
+      },
+      "parameter": "-9529/5471",
+      "projective_parameter": [
+        -9529,
+        5471
+      ],
+      "public_complement": {
+        "dimension": 11,
+        "ordered_basis_labels": [
+          "public-complement-Q1",
+          "public-complement-Q2",
+          "public-complement-Q3",
+          "public-complement-Q4",
+          "public-complement-Q5",
+          "public-complement-Q6",
+          "public-complement-Q7",
+          "public-complement-Q8",
+          "public-complement-Q9",
+          "public-complement-Q10",
+          "public-complement-Q11"
+        ],
+        "source_point_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          9,
+          11,
+          15,
+          19,
+          22
+        ]
+      },
+      "rank_result": {
+        "boundary": "The exact displayed subgroup rank is determined by independent known points and a full-rank exact relation block for all split points. This is not an upper bound for the full Mordell--Weil group.",
+        "exact_generated_subgroup_rank_after_adjoining": 28,
+        "exact_generated_subgroup_rank_determined": true,
+        "existing_unconditional_rank_lower_bound": 28,
+        "finite_quotient_signature_rank_after_adjoining": 28,
+        "relation_basis": {
+          "all_relations_verified_by_exact_group_addition": true,
+          "discovery_engine": "PARI/GP ellheightmatrix plus qflllgram",
+          "new_coefficient_block_rank_over_q": 1,
+          "numerical_height_matrix_rank": 28,
+          "ordered_points": [
+            "generic-P1",
+            "generic-P2",
+            "generic-P3",
+            "generic-P4",
+            "generic-P5",
+            "generic-P6",
+            "generic-P7",
+            "generic-P8",
+            "generic-P9",
+            "generic-P10",
+            "generic-P11",
+            "generic-P12",
+            "generic-P13",
+            "generic-P14",
+            "generic-P15",
+            "generic-P16",
+            "generic-P17",
+            "public-complement-Q1",
+            "public-complement-Q2",
+            "public-complement-Q3",
+            "public-complement-Q4",
+            "public-complement-Q5",
+            "public-complement-Q6",
+            "public-complement-Q7",
+            "public-complement-Q8",
+            "public-complement-Q9",
+            "public-complement-Q10",
+            "public-complement-Q11",
+            "split-orbit-15a68"
+          ],
+          "real_precision_digits": 100,
+          "relation_count": 1,
+          "relations": [
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              2,
+              -2,
+              0,
+              1,
+              1,
+              -4,
+              -1,
+              -3,
+              -1,
+              1,
+              2,
+              -3,
+              0,
+              -1,
+              0,
+              1,
+              -1,
+              0,
+              0,
+              1,
+              0,
+              -1,
+              0,
+              1
+            ]
+          ],
+          "zero_height_threshold": "1e-50"
+        },
+        "unconditional_rank_lower_bound_after_adjoining": 28
+      },
+      "split_bisection_count": 1,
+      "split_class_span": {
+        "dimension_in_known_public_complement": 1,
+        "dimension_modulo_generic_17": 1,
+        "distinct_known_public_classes": 1,
+        "escape_basis_labels": [],
+        "finite_quotient_escape_count": 0,
+        "known_public_complement_dimension": 11
+      },
+      "square_tests": 39120
+    },
+    {
+      "finite_quotient": {
+        "all_good_reduction_primes_scanned_through": 1000,
+        "certified_independent_subbasis": {
+          "certificate_primes": [
+            11,
+            17,
+            31,
+            37,
+            41,
+            43,
+            53,
+            61,
+            67,
+            73,
+            83,
+            97,
+            101,
+            107,
+            109,
+            131,
+            137,
+            149,
+            157
+          ],
+          "certified_rank_lower_bound": 21,
+          "point_count": 21,
+          "torsion_witness": {
+            "group_order": 25,
+            "prime": 19
+          }
+        },
+        "existing_public_basis_rank": 21,
+        "gain_beyond_existing_public_basis": 0,
+        "pivot_columns_zero_based": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "rank_after_adjoining_split_points": 21,
+        "rank_increasing_prime_data": [
+          {
+            "group_order": 26,
+            "prime": 17,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 54,
+            "prime": 41,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 50,
+            "prime": 43,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 76,
+            "prime": 61,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 82,
+            "prime": 67,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 90,
+            "prime": 73,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 96,
+            "prime": 83,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 116,
+            "prime": 97,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 118,
+            "prime": 101,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 116,
+            "prime": 107,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 144,
+            "prime": 131,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 150,
+            "prime": 137,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 168,
+            "prime": 149,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 180,
+            "prime": 157,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 192,
+            "prime": 167,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 180,
+            "prime": 179,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 200,
+            "prime": 181,
+            "quotient_dimension": 2
+          }
+        ],
+        "rank_increasing_primes": [
+          17,
+          41,
+          43,
+          61,
+          67,
+          73,
+          83,
+          97,
+          101,
+          107,
+          131,
+          137,
+          149,
+          157,
+          167,
+          179,
+          181
+        ],
+        "relation_prime": 2,
+        "stacked_rows_sha256": "9722c2f020f03a3cb60c90dd3af2c4fdb0da7f4020b9c655489ae64213ec6013",
+        "torsion_witness": {
+          "group_order": 77,
+          "prime": 71
+        }
+      },
+      "hits": [
+        {
+          "canonical_positive_square_root": "9453180823884",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q1",
+              "public-complement-Q2"
+            ]
+          },
+          "label": "orbit-05980",
+          "lattice_orbit_mask": 22912,
+          "negative_minimal_point": [
+            "9718068718628994",
+            "-167261783174765014386327"
+          ],
+          "positive_minimal_point": [
+            "107988065987544228",
+            "34979110087121028416083071"
+          ],
+          "q_value": "89362627689048181024845456"
+        },
+        {
+          "canonical_positive_square_root": "629529505674071373/29282",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q2"
+            ]
+          },
+          "label": "orbit-04d17",
+          "lattice_orbit_mask": 19735,
+          "negative_minimal_point": [
+            "149287253884140781974/14641",
+            "41919988116783821601395661573/1771561"
+          ],
+          "positive_minimal_point": [
+            "74566625607246351/4",
+            "12450900625374543348065289/8"
+          ],
+          "q_value": "396307398514240661013092945898105129/857435524"
+        },
+        {
+          "canonical_positive_square_root": "79829024694620175/59168",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "generic_correction_over_f2": [
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q2",
+              "public-complement-Q4"
+            ]
+          },
+          "label": "orbit-101f2",
+          "lattice_orbit_mask": 66034,
+          "negative_minimal_point": [
+            "442021383111151625169/118336",
+            "46145467395419458165216539813267/40707584"
+          ],
+          "positive_minimal_point": [
+            "24452713639036404",
+            "2916064891301962780698063"
+          ],
+          "q_value": "6372673183694277724415587517030625/3500852224"
+        },
+        {
+          "canonical_positive_square_root": "114908345584889805/2048",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "generic_correction_over_f2": [
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ]
+          },
+          "label": "orbit-07843",
+          "lattice_orbit_mask": 30787,
+          "negative_minimal_point": [
+            "41587522696660186329/4096",
+            "13042410486690973760916467907/262144"
+          ],
+          "positive_minimal_point": [
+            "16830568148295114",
+            "-1163709057677079510806907"
+          ],
+          "q_value": "13203927885056464341941533992938025/4194304"
+        },
+        {
+          "canonical_positive_square_root": "145673630887616/3",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q1"
+            ]
+          },
+          "label": "orbit-090a3",
+          "lattice_orbit_mask": 37027,
+          "negative_minimal_point": [
+            "-10550152626383118",
+            "2264316448584405287355573"
+          ],
+          "positive_minimal_point": [
+            "82341548997072826/9",
+            "-7536071517874951065321589/27"
+          ],
+          "q_value": "21220806735981390320022163456/9"
+        },
+        {
+          "canonical_positive_square_root": "278572681173289451676/10530025",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q1"
+            ]
+          },
+          "label": "orbit-05443",
+          "lattice_orbit_mask": 21571,
+          "negative_minimal_point": [
+            "12378726302562014",
+            "-251021723049768522934507"
+          ],
+          "positive_minimal_point": [
+            "-153450592264290536232984/10530025",
+            "73556131166295333824533307883715401/34169931125"
+          ],
+          "q_value": "77602738696075175314835760774168739208976/110881426500625"
+        },
+        {
+          "canonical_positive_square_root": "2286248020524",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q2"
+            ]
+          },
+          "label": "orbit-18fd5",
+          "lattice_orbit_mask": 102357,
+          "negative_minimal_point": [
+            "-19585647862009926",
+            "1412173994721508747979553"
+          ],
+          "positive_minimal_point": [
+            "-20375701949202396",
+            "-1152472143217196133902337"
+          ],
+          "q_value": "5226930011349908325234576"
+        },
+        {
+          "canonical_positive_square_root": "157687280281278757476/696725",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              0,
+              1,
+              1,
+              1
+            ],
+            "generic_correction_over_f2": [
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ]
+          },
+          "label": "orbit-1f786",
+          "lattice_orbit_mask": 128902,
+          "negative_minimal_point": [
+            "301708237769207409084/24025",
+            "-1073015441911853856914554714683/3723875"
+          ],
+          "positive_minimal_point": [
+            "417195631433009514",
+            "269199463467705282832487493"
+          ],
+          "q_value": "24865278362506564455457949967242425890576/485425725625"
+        },
+        {
+          "canonical_positive_square_root": "86744603428902504540/17530969",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "generic_correction_over_f2": [
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ]
+          },
+          "label": "orbit-02d31",
+          "lattice_orbit_mask": 11569,
+          "negative_minimal_point": [
+            "40697177573583923124/6241",
+            "356161529295414347998649626227/493039"
+          ],
+          "positive_minimal_point": [
+            "18902637046131650076/2809",
+            "-102643283199971451845424754389/148877"
+          ],
+          "q_value": "7524626224037564148013353640684720611600/307334874078961"
+        },
+        {
+          "canonical_positive_square_root": "2147907199593053808/121",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q1"
+            ]
+          },
+          "label": "orbit-055ad",
+          "lattice_orbit_mask": 21933,
+          "negative_minimal_point": [
+            "-967490031443221266/121",
+            "2941459620974227849413232023/1331"
+          ],
+          "positive_minimal_point": [
+            "234922389658676114",
+            "113508713898544235352844793"
+          ],
+          "q_value": "4613505338063674688546840403183300864/14641"
+        },
+        {
+          "canonical_positive_square_root": "21953902196469743253/823690",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": []
+          },
+          "label": "orbit-0be21",
+          "lattice_orbit_mask": 48673,
+          "negative_minimal_point": [
+            "6950799945285239264526/42025",
+            "-575892942595855120347187348381191/8615125"
+          ],
+          "positive_minimal_point": [
+            "2318759219408250819/196",
+            "352428059171845645372922217/2744"
+          ],
+          "q_value": "481973821652159017283406425899739022009/678465216100"
+        },
+        {
+          "canonical_positive_square_root": "329460132284883445248/499849",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q2"
+            ]
+          },
+          "label": "orbit-00ca6",
+          "lattice_orbit_mask": 3238,
+          "negative_minimal_point": [
+            "4974143459187582530586/499849",
+            "40144046651222535728057941328199/353393243"
+          ],
+          "positive_minimal_point": [
+            "-16497274295513526",
+            "-1980297769498955567783547"
+          ],
+          "q_value": "108543978765172899033200282848370213781504/249849022801"
+        },
+        {
+          "canonical_positive_square_root": "671405624988585325020/1062961",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q1"
+            ]
+          },
+          "label": "orbit-0976c",
+          "lattice_orbit_mask": 38764,
+          "negative_minimal_point": [
+            "478486791384018434865174/1062961",
+            "330697168379270903847709007211826923/1095912791"
+          ],
+          "positive_minimal_point": [
+            "73887258882057834",
+            "-19486340792268543892048047"
+          ],
+          "q_value": "450785513266312871021892769804899038000400/1129886087521"
+        },
+        {
+          "canonical_positive_square_root": "23219633109020400/121",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q1"
+            ]
+          },
+          "label": "orbit-045c2",
+          "lattice_orbit_mask": 17858,
+          "negative_minimal_point": [
+            "13369145401607754",
+            "-451997724938798412199887"
+          ],
+          "positive_minimal_point": [
+            "502314926233823814/121",
+            "-1431565800337469701017496857/1331"
+          ],
+          "q_value": "539151361717516366911847616160000/14641"
+        },
+        {
+          "canonical_positive_square_root": "4707795887795860860/1256641",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q1"
+            ]
+          },
+          "label": "orbit-0fb68",
+          "lattice_orbit_mask": 64360,
+          "negative_minimal_point": [
+            "-6616040259673086",
+            "-2148485237933946598096107"
+          ],
+          "positive_minimal_point": [
+            "19499630335763223110454/1256641",
+            "-1251245374813539110677433305808787/1408694561"
+          ],
+          "q_value": "22163342121147617736297960148479939600/1579146602881"
+        },
+        {
+          "canonical_positive_square_root": "826661580522886948788/5764801",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "generic_correction_over_f2": [
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q3"
+            ]
+          },
+          "label": "orbit-08e3a",
+          "lattice_orbit_mask": 36410,
+          "negative_minimal_point": [
+            "12361621916135514",
+            "-247444118340060049140507"
+          ],
+          "positive_minimal_point": [
+            "39685279099574063524584/5764801",
+            "-9201538943516414482727292611943387/13841287201"
+          ],
+          "q_value": "683369368712597502766345091292824534668944/33232930569601"
+        },
+        {
+          "canonical_positive_square_root": "36980422458831260604/165649",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q1"
+            ]
+          },
+          "label": "orbit-196a3",
+          "lattice_orbit_mask": 104099,
+          "negative_minimal_point": [
+            "186090937455522600318/20449",
+            "-842614344027736276406791713285/2924207"
+          ],
+          "positive_minimal_point": [
+            "219273185905635907416/1369",
+            "-3225456716463489646339873857321/50653"
+          ],
+          "q_value": "1367551645233631498381915483455762444816/27439591201"
+        },
+        {
+          "canonical_positive_square_root": "459265263266332575/49928",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q1",
+              "public-complement-Q2"
+            ]
+          },
+          "label": "orbit-01926",
+          "lattice_orbit_mask": 6438,
+          "negative_minimal_point": [
+            "4796045208486715372194/6241",
+            "-332043991800861262811196033193893/493039"
+          ],
+          "positive_minimal_point": [
+            "-13637994267885531/16",
+            "-108233828804494140394557993/64"
+          ],
+          "q_value": "210924582043093769276617490506130625/2492805184"
+        },
+        {
+          "canonical_positive_square_root": "1858716751630416480/16129",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q2"
+            ]
+          },
+          "label": "orbit-0888a",
+          "lattice_orbit_mask": 34954,
+          "negative_minimal_point": [
+            "134480990020297014",
+            "48856432556702742452762493"
+          ],
+          "positive_minimal_point": [
+            "327645142074643590606/16129",
+            "3957943542647483055799794526419/2048383"
+          ],
+          "q_value": "3454827962791527344362337898255590400/260144641"
+        },
+        {
+          "canonical_positive_square_root": "2835534775821869160/2122849",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q1"
+            ]
+          },
+          "label": "orbit-06faa",
+          "lattice_orbit_mask": 28586,
+          "negative_minimal_point": [
+            "11585674144341354",
+            "51784559208764378041413"
+          ],
+          "positive_minimal_point": [
+            "19954274802794651688036/2122849",
+            "-716419005089454329344191030078801/3092990993"
+          ],
+          "q_value": "8040257464895177793035546916159105600/4506487876801"
+        },
+        {
+          "canonical_positive_square_root": "65877859243521/242",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": []
+          },
+          "label": "orbit-10aaa",
+          "lattice_orbit_mask": 68266,
+          "negative_minimal_point": [
+            "52337851203949071/4",
+            "-3158614276572666334268151/8"
+          ],
+          "positive_minimal_point": [
+            "1592224989206980044/121",
+            "-545425230476443864054002267/1331"
+          ],
+          "q_value": "4339892338509165262380477441/58564"
+        },
+        {
+          "canonical_positive_square_root": "12439639682557495675956/796989361",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": []
+          },
+          "label": "orbit-06f04",
+          "lattice_orbit_mask": 28420,
+          "negative_minimal_point": [
+            "4531828492635054571914/67081",
+            "-294294304643688827447116986306693/17373979"
+          ],
+          "positive_minimal_point": [
+            "120980886268572531144/11881",
+            "-44064573517595217406078980663/1295029"
+          ],
+          "q_value": "154744635431859151790642143200693637356513936/635192041547188321"
+        },
+        {
+          "canonical_positive_square_root": "2402085458891202201/4480",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q2"
+            ]
+          },
+          "label": "orbit-0eba4",
+          "lattice_orbit_mask": 60324,
+          "negative_minimal_point": [
+            "37555332236427894",
+            "6496275769151200762609533"
+          ],
+          "positive_minimal_point": [
+            "43517421689917634777/256",
+            "-285381935926010287796225479045/4096"
+          ],
+          "q_value": "5770014551816557459113627479067244401/20070400"
+        },
+        {
+          "canonical_positive_square_root": "85931014866010933644/49729",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": [
+              "public-complement-Q1",
+              "public-complement-Q2"
+            ]
+          },
+          "label": "orbit-01e36",
+          "lattice_orbit_mask": 7734,
+          "negative_minimal_point": [
+            "82140055656074188328/49729",
+            "15591212333503421366312543051291/11089567"
+          ],
+          "positive_minimal_point": [
+            "2821635562771190714",
+            "-4739600408275706814559555807"
+          ],
+          "q_value": "7384139315902592076206207222952571118736/2472973441"
+        },
+        {
+          "canonical_positive_square_root": "75056185165361517/242",
+          "exact_verification": {
+            "both_points_on_global_minimal_fibre": true,
+            "both_points_on_projective_source_fibre": true,
+            "stored_trace_equals_published_basis_word": true,
+            "sum_of_branches_equals_stored_trace": true
+          },
+          "finite_quotient_class_modulo_generic_17": {
+            "basis": [
+              "public-complement-Q1",
+              "public-complement-Q2",
+              "public-complement-Q3",
+              "public-complement-Q4"
+            ],
+            "coordinates_over_f2": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "generic_correction_over_f2": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1
+            ],
+            "relation": "In the scanned direct sum of E(F_p)/2E(F_p), the point equals the displayed generic correction plus quotient class.",
+            "support": []
+          },
+          "label": "orbit-126e6",
+          "lattice_orbit_mask": 75494,
+          "negative_minimal_point": [
+            "12587152718916534",
+            "294104065164449721295053"
+          ],
+          "positive_minimal_point": [
+            "1224530569742411191759/4356",
+            "42756527675239193582391648832553/287496"
+          ],
+          "q_value": "5633430931577034251009721304541289/58564"
+        }
+      ],
+      "label": "icarm_curve394_rank_at_least_21",
+      "minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-354803089674674467206754048738095",
+        "2558194545892203175112161719607326368645810580537"
+      ],
+      "minimalization": {
+        "engine": "PARI/GP ellminimalmodel(E,&v)",
+        "exact_discriminant_scaling": true,
+        "exact_model_change_replay": true,
+        "pari_version": "[2, 15, 4]",
+        "program_sha256": "029b63f05f9c080ccdb9b1fc6985d32b2c17a401ae4c55d4914d834fb29e2202",
+        "stack_bytes": 512000000,
+        "timeout_seconds": 300.0
+      },
+      "parameter": "3/8",
+      "projective_parameter": [
+        3,
+        8
+      ],
+      "public_complement": {
+        "dimension": 4,
+        "ordered_basis_labels": [
+          "public-complement-Q1",
+          "public-complement-Q2",
+          "public-complement-Q3",
+          "public-complement-Q4"
+        ],
+        "source_point_indices_one_based": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "rank_result": {
+        "boundary": "The exact displayed subgroup rank is determined by independent known points and a full-rank exact relation block for all split points. This is not an upper bound for the full Mordell--Weil group.",
+        "exact_generated_subgroup_rank_after_adjoining": 21,
+        "exact_generated_subgroup_rank_determined": true,
+        "existing_unconditional_rank_lower_bound": 21,
+        "finite_quotient_signature_rank_after_adjoining": 21,
+        "relation_basis": {
+          "all_relations_verified_by_exact_group_addition": true,
+          "discovery_engine": "PARI/GP ellheightmatrix plus qflllgram",
+          "new_coefficient_block_rank_over_q": 25,
+          "numerical_height_matrix_rank": 21,
+          "ordered_points": [
+            "generic-P1",
+            "generic-P2",
+            "generic-P3",
+            "generic-P4",
+            "generic-P5",
+            "generic-P6",
+            "generic-P7",
+            "generic-P8",
+            "generic-P9",
+            "generic-P10",
+            "generic-P11",
+            "generic-P12",
+            "generic-P13",
+            "generic-P14",
+            "generic-P15",
+            "generic-P16",
+            "generic-P17",
+            "public-complement-Q1",
+            "public-complement-Q2",
+            "public-complement-Q3",
+            "public-complement-Q4",
+            "split-orbit-05980",
+            "split-orbit-04d17",
+            "split-orbit-101f2",
+            "split-orbit-07843",
+            "split-orbit-090a3",
+            "split-orbit-05443",
+            "split-orbit-18fd5",
+            "split-orbit-1f786",
+            "split-orbit-02d31",
+            "split-orbit-055ad",
+            "split-orbit-0be21",
+            "split-orbit-00ca6",
+            "split-orbit-0976c",
+            "split-orbit-045c2",
+            "split-orbit-0fb68",
+            "split-orbit-08e3a",
+            "split-orbit-196a3",
+            "split-orbit-01926",
+            "split-orbit-0888a",
+            "split-orbit-06faa",
+            "split-orbit-10aaa",
+            "split-orbit-06f04",
+            "split-orbit-0eba4",
+            "split-orbit-01e36",
+            "split-orbit-126e6"
+          ],
+          "real_precision_digits": 100,
+          "relation_count": 25,
+          "relations": [
+            [
+              6,
+              1,
+              0,
+              0,
+              3,
+              -2,
+              4,
+              1,
+              0,
+              1,
+              3,
+              2,
+              3,
+              -2,
+              -1,
+              -1,
+              2,
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -3,
+              14,
+              -9,
+              -42,
+              21,
+              6,
+              -25,
+              10,
+              7,
+              31,
+              -25,
+              6,
+              -15,
+              18,
+              5,
+              5,
+              16,
+              12,
+              -9,
+              9,
+              -20,
+              2,
+              -11,
+              -1,
+              36,
+              -26,
+              -8,
+              -18,
+              -19,
+              -2,
+              -16,
+              11,
+              5,
+              2,
+              -11,
+              -10,
+              10,
+              4,
+              -4,
+              1,
+              19,
+              10,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              -35,
+              -6,
+              0,
+              -28,
+              29,
+              -9,
+              -16,
+              9,
+              -3,
+              7,
+              4,
+              -5,
+              -9,
+              9,
+              7,
+              -18,
+              22,
+              7,
+              3,
+              28,
+              -15,
+              8,
+              -9,
+              13,
+              27,
+              3,
+              3,
+              -23,
+              -7,
+              -8,
+              -1,
+              -6,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              -1,
+              1,
+              0,
+              2,
+              -4,
+              1,
+              4,
+              2,
+              -5,
+              0,
+              -4,
+              -6,
+              -2,
+              5,
+              -11,
+              4,
+              -1,
+              0,
+              3,
+              2,
+              -6,
+              -2,
+              0,
+              3,
+              -2,
+              1,
+              -1,
+              4,
+              5,
+              1,
+              3,
+              2,
+              5,
+              1,
+              -5,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              1,
+              1,
+              -4,
+              1,
+              2,
+              -2,
+              -2,
+              -2,
+              1,
+              0,
+              2,
+              5,
+              1,
+              -1,
+              5,
+              -4,
+              0,
+              -3,
+              -1,
+              -3,
+              5,
+              0,
+              -2,
+              -3,
+              1,
+              1,
+              1,
+              -2,
+              -4,
+              0,
+              -2,
+              -1,
+              -4,
+              -1,
+              4,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8,
+              1,
+              0,
+              7,
+              -8,
+              3,
+              3,
+              -2,
+              1,
+              -2,
+              -2,
+              1,
+              2,
+              -2,
+              -2,
+              5,
+              -6,
+              -2,
+              -1,
+              -7,
+              4,
+              -2,
+              2,
+              -3,
+              -7,
+              -1,
+              -1,
+              6,
+              2,
+              2,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              0,
+              3,
+              -2,
+              0,
+              3,
+              -1,
+              0,
+              -1,
+              1,
+              1,
+              2,
+              -1,
+              -1,
+              1,
+              -1,
+              -1,
+              0,
+              -3,
+              2,
+              -1,
+              1,
+              -1,
+              -3,
+              0,
+              0,
+              2,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              18,
+              3,
+              0,
+              14,
+              -14,
+              3,
+              10,
+              -5,
+              0,
+              -4,
+              0,
+              3,
+              6,
+              -3,
+              -3,
+              7,
+              -8,
+              -4,
+              -1,
+              -14,
+              7,
+              -5,
+              6,
+              -6,
+              -14,
+              -2,
+              -1,
+              11,
+              4,
+              3,
+              0,
+              2,
+              -1,
+              -1,
+              -1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -2,
+              -1,
+              0,
+              1,
+              -2,
+              1,
+              -1,
+              -1,
+              0,
+              -1,
+              -1,
+              -1,
+              -1,
+              1,
+              0,
+              1,
+              -1,
+              -1,
+              -1,
+              -1,
+              1,
+              -1,
+              1,
+              0,
+              -1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              22,
+              4,
+              0,
+              18,
+              -19,
+              6,
+              10,
+              -6,
+              1,
+              -4,
+              -3,
+              3,
+              6,
+              -5,
+              -4,
+              11,
+              -13,
+              -5,
+              -2,
+              -18,
+              9,
+              -5,
+              7,
+              -8,
+              -17,
+              -2,
+              -2,
+              15,
+              4,
+              4,
+              0,
+              4,
+              -1,
+              -1,
+              -1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -13,
+              -2,
+              -1,
+              -11,
+              12,
+              -4,
+              -6,
+              4,
+              -2,
+              3,
+              2,
+              -2,
+              -2,
+              4,
+              3,
+              -8,
+              11,
+              3,
+              1,
+              11,
+              -6,
+              4,
+              -3,
+              6,
+              11,
+              1,
+              1,
+              -9,
+              -3,
+              -4,
+              -1,
+              -2,
+              0,
+              -1,
+              -1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              1,
+              5,
+              -6,
+              3,
+              1,
+              -2,
+              1,
+              -2,
+              -2,
+              0,
+              0,
+              -1,
+              -1,
+              4,
+              -5,
+              -2,
+              -1,
+              -5,
+              3,
+              -2,
+              2,
+              -2,
+              -5,
+              0,
+              0,
+              4,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              15,
+              3,
+              0,
+              14,
+              -16,
+              5,
+              6,
+              -5,
+              2,
+              -4,
+              -3,
+              2,
+              3,
+              -5,
+              -4,
+              10,
+              -14,
+              -3,
+              -2,
+              -14,
+              8,
+              -4,
+              3,
+              -7,
+              -14,
+              -1,
+              -2,
+              12,
+              4,
+              5,
+              2,
+              3,
+              0,
+              1,
+              1,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -17,
+              -3,
+              0,
+              -13,
+              12,
+              -4,
+              -7,
+              4,
+              -2,
+              2,
+              3,
+              -3,
+              -4,
+              6,
+              4,
+              -9,
+              12,
+              2,
+              1,
+              12,
+              -7,
+              3,
+              -3,
+              6,
+              12,
+              1,
+              2,
+              -11,
+              -3,
+              -4,
+              -1,
+              -3,
+              -1,
+              0,
+              -1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              11,
+              4,
+              -1,
+              5,
+              -6,
+              2,
+              4,
+              -1,
+              0,
+              0,
+              -1,
+              1,
+              3,
+              -1,
+              -1,
+              4,
+              -2,
+              -1,
+              -1,
+              -7,
+              2,
+              -1,
+              2,
+              -3,
+              -5,
+              -2,
+              -1,
+              4,
+              1,
+              1,
+              -1,
+              3,
+              -2,
+              -1,
+              -1,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -3,
+              -2,
+              1,
+              -2,
+              3,
+              -2,
+              1,
+              1,
+              -2,
+              0,
+              3,
+              0,
+              1,
+              1,
+              1,
+              -4,
+              5,
+              -1,
+              1,
+              3,
+              -2,
+              1,
+              1,
+              2,
+              2,
+              1,
+              1,
+              -2,
+              0,
+              -2,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              7,
+              4,
+              -2,
+              -1,
+              -4,
+              6,
+              -4,
+              0,
+              7,
+              3,
+              -10,
+              2,
+              -4,
+              -2,
+              -2,
+              9,
+              -10,
+              2,
+              -3,
+              -5,
+              2,
+              -1,
+              -4,
+              -4,
+              0,
+              -5,
+              -3,
+              4,
+              -2,
+              4,
+              -1,
+              4,
+              3,
+              3,
+              0,
+              -2,
+              -1,
+              1,
+              0,
+              0,
+              4,
+              2,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              3,
+              -3,
+              1,
+              1,
+              -1,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              -2,
+              -1,
+              0,
+              -2,
+              1,
+              -1,
+              1,
+              -1,
+              -2,
+              0,
+              0,
+              2,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -3,
+              4,
+              -2,
+              -18,
+              7,
+              4,
+              -10,
+              3,
+              5,
+              10,
+              -11,
+              2,
+              -7,
+              9,
+              2,
+              2,
+              7,
+              3,
+              -3,
+              3,
+              -8,
+              -1,
+              -4,
+              0,
+              14,
+              -12,
+              -2,
+              -7,
+              -7,
+              -1,
+              -8,
+              4,
+              2,
+              2,
+              -6,
+              -5,
+              5,
+              2,
+              -1,
+              0,
+              8,
+              4,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              -2,
+              -2,
+              1,
+              6,
+              1,
+              -3,
+              2,
+              0,
+              -2,
+              -4,
+              6,
+              -1,
+              2,
+              -6,
+              -1,
+              -2,
+              -4,
+              1,
+              2,
+              2,
+              3,
+              2,
+              -2,
+              1,
+              -4,
+              8,
+              1,
+              0,
+              3,
+              1,
+              6,
+              -3,
+              0,
+              0,
+              5,
+              3,
+              -4,
+              -1,
+              1,
+              0,
+              -4,
+              -2,
+              0,
+              -1,
+              0,
+              0
+            ],
+            [
+              16,
+              6,
+              -1,
+              6,
+              -8,
+              4,
+              3,
+              -2,
+              4,
+              2,
+              -5,
+              4,
+              1,
+              -5,
+              -4,
+              10,
+              -12,
+              1,
+              -2,
+              -10,
+              5,
+              -2,
+              0,
+              -7,
+              -7,
+              -3,
+              -3,
+              7,
+              0,
+              5,
+              1,
+              4,
+              2,
+              2,
+              1,
+              -1,
+              -2,
+              0,
+              -1,
+              1,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -1,
+              -1,
+              0,
+              -2,
+              5,
+              -2,
+              0,
+              1,
+              0,
+              1,
+              2,
+              1,
+              1,
+              -2,
+              -1,
+              -1,
+              1,
+              1,
+              1,
+              3,
+              0,
+              1,
+              -1,
+              1,
+              2,
+              1,
+              0,
+              -2,
+              -1,
+              0,
+              1,
+              -1,
+              2,
+              1,
+              1,
+              0,
+              -2,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8,
+              -5,
+              3,
+              27,
+              -18,
+              -3,
+              17,
+              -8,
+              -9,
+              -16,
+              14,
+              -2,
+              13,
+              -6,
+              -3,
+              -1,
+              -5,
+              -9,
+              3,
+              -12,
+              11,
+              -5,
+              13,
+              -2,
+              -24,
+              9,
+              3,
+              13,
+              11,
+              0,
+              5,
+              -3,
+              -5,
+              -4,
+              2,
+              4,
+              -1,
+              -2,
+              1,
+              0,
+              -9,
+              -4,
+              -1,
+              -2,
+              1,
+              0
+            ],
+            [
+              -6,
+              -1,
+              0,
+              -6,
+              3,
+              1,
+              -3,
+              1,
+              2,
+              0,
+              -1,
+              -1,
+              -3,
+              4,
+              2,
+              -3,
+              5,
+              0,
+              0,
+              4,
+              -4,
+              1,
+              -1,
+              2,
+              6,
+              -2,
+              1,
+              -3,
+              -2,
+              -2,
+              -3,
+              0,
+              -2,
+              1,
+              -3,
+              -1,
+              2,
+              0,
+              1,
+              -1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ]
+          ],
+          "zero_height_threshold": "1e-50"
+        },
+        "unconditional_rank_lower_bound_after_adjoining": 21
+      },
+      "split_bisection_count": 25,
+      "split_class_span": {
+        "dimension_in_known_public_complement": 4,
+        "dimension_modulo_generic_17": 4,
+        "distinct_known_public_classes": 8,
+        "escape_basis_labels": [],
+        "finite_quotient_escape_count": 0,
+        "known_public_complement_dimension": 4
+      },
+      "square_tests": 39120
+    }
+  ],
+  "generation": {
+    "checker_sha256": "344bdbf71a1bc3a081e538829dc88a2b57669e43d261d645f29a855937261f29",
+    "command": ".venv/bin/python elliptic-curves/scripts/evaluate_elkies_2026_bisections_at_controls.py",
+    "inputs": {
+      "artifacts/generated-results/elkies-2026-equation-bisections-full.json": "78e037dc4170955b8f79ddce4d1d3e0c0d3e9bb8f9614644c59ccc7d605226c4",
+      "artifacts/generated-results/elliptic-curves/elkies_2026_high_rank_positive_controls_v2.json": "0b77be4658ca5438a28991a7c66f6580b3a9c8b74e664653d13bb255895f37bc",
+      "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+      "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json": "b3dcf536b9e18d82291b2a5453a32e0419f5b17688c1d04bac3bd9fb02df09ea"
+    }
+  },
+  "schema": "elliptic-curves.elkies-2026-bisection-specialization-controls.v1",
+  "status": "PASS_EXACT_ELKIES_2026_BISECTION_SPECIALIZATION_CONTROLS",
+  "summary": {
+    "curve394_outcome": "The 25 split bisections span all four known directions beyond R17.",
+    "finite_quotient_escape_counts": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "known_complement_dimensions": [
+      8,
+      9,
+      10,
+      11,
+      4
+    ],
+    "parameters": [
+      "-2/377",
+      "-308/251",
+      "2456/135",
+      "-9529/5471",
+      "3/8"
+    ],
+    "rank28_outcome": "The sole split bisection spans one of eleven known exceptional finite-quotient directions; ten directions are invisible.",
+    "split_class_span_dimensions": [
+      5,
+      3,
+      2,
+      1,
+      4
+    ],
+    "split_counts": [
+      6,
+      3,
+      2,
+      1,
+      25
+    ]
+  },
+  "total_square_tests": 195600
+}

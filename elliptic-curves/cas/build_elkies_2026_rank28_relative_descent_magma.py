@@ -6,8 +6,10 @@ single residual two-cover.  The repository's exact finite-reduction
 certificate proves that the seventeen specialized generic sections have
 independent Kummer images, so their quotient dimension is obtained by
 subtracting 17 from the complete Selmer dimension.  A residual dimension below
-15 rejects rank 32 and exits.  Only a passing result may invoke ``TwoDescent``
-to materialize the residual quotient; this program contains no point search.
+15 rejects rank 32 and exits.  On a pass, the eleven certified public
+complement directions are removed as well, so ``TwoDescent`` materializes only
+the classes unexplained by the full known rank-28 subgroup.  This program
+contains no point search.
 
 Magma is instructed to use ``Bound := -1`` and no GRH class-group bound.
 """
@@ -41,6 +43,8 @@ GENERIC_RANK = 17
 KNOWN_QUOTIENT_GAIN = 11
 TARGET_RANK = 32
 REQUIRED_RESIDUAL_DIMENSION = TARGET_RANK - GENERIC_RANK
+KNOWN_RANK28_LOWER_BOUND = GENERIC_RANK + KNOWN_QUOTIENT_GAIN
+REQUIRED_DIRECTIONS_BEYOND_KNOWN_RANK28 = TARGET_RANK - KNOWN_RANK28_LOWER_BOUND
 
 sys.path[:0] = [str(ELLIPTIC_ROOT), str(CAS)]
 
@@ -217,7 +221,7 @@ E := EllipticCurve([{model}]);
 {generic}
 {public_complement}
 
-printf "ELKIESR28REL|version=1|stage=input|magma=%o|parameter=-9529/5471|generic=17|known_quotient_floor=11|target_rank=32|controls_sha256={source.controls_sha256}|generic_sha256={source.generic_point_sequence_sha256}|combined_sha256={source.combined_point_sequence_sha256}\\n",
+printf "ELKIESR28REL|version=1|stage=input|magma=%o|parameter=-9529/5471|generic=17|known_quotient_floor=11|known_rank_lower_bound=28|target_rank=32|required_beyond_known_rank28=4|controls_sha256={source.controls_sha256}|generic_sha256={source.generic_point_sequence_sha256}|combined_sha256={source.combined_point_sequence_sha256}\\n",
     GetVersion();
 assert #generic eq {GENERIC_RANK};
 assert #public_complement eq {KNOWN_QUOTIENT_GAIN};
@@ -238,34 +242,37 @@ selmer_invariants := Invariants(S2);
 assert &and[n eq 2 : n in selmer_invariants];
 total_selmer_dim := #selmer_invariants;
 residual_dim := total_selmer_dim - {GENERIC_RANK};
+unexplained_dim := total_selmer_dim - {KNOWN_RANK28_LOWER_BOUND};
 assert residual_dim ge {KNOWN_QUOTIENT_GAIN};
-printf "ELKIESR28REL|stage=two_selmer|status=complete|seconds=%o|invariants=%o|total_selmer_dim=%o|residual_dim=%o|required_residual_dim={REQUIRED_RESIDUAL_DIMENSION}\\n",
-    seconds, selmer_invariants, total_selmer_dim, residual_dim;
+assert unexplained_dim ge 0;
+printf "ELKIESR28REL|stage=two_selmer|status=complete|seconds=%o|invariants=%o|total_selmer_dim=%o|residual_dim=%o|required_residual_dim={REQUIRED_RESIDUAL_DIMENSION}|unexplained_dim=%o|required_unexplained_dim={REQUIRED_DIRECTIONS_BEYOND_KNOWN_RANK28}\\n",
+    seconds, selmer_invariants, total_selmer_dim, residual_dim, unexplained_dim;
 
-if residual_dim lt {REQUIRED_RESIDUAL_DIMENSION} then
-    printf "ELKIESR28REL|classification=REJECT_RANK32_BY_RESIDUAL_2_SELMER|total_selmer_dim=%o|residual_dim=%o|expensive_search_authorized=false\\n",
-        total_selmer_dim, residual_dim;
+if unexplained_dim lt {REQUIRED_DIRECTIONS_BEYOND_KNOWN_RANK28} then
+    printf "ELKIESR28REL|classification=REJECT_RANK32_BY_RESIDUAL_2_SELMER|total_selmer_dim=%o|residual_dim=%o|unexplained_dim=%o|expensive_search_authorized=false\\n",
+        total_selmer_dim, residual_dim, unexplained_dim;
     quit;
 end if;
 
-printf "ELKIESR28REL|classification=PASS_RANK32_RESIDUAL_2_SELMER_GATE|total_selmer_dim=%o|residual_dim=%o|expensive_search_authorized=true\\n",
-    total_selmer_dim, residual_dim;
+printf "ELKIESR28REL|classification=PASS_RANK32_RESIDUAL_2_SELMER_GATE|total_selmer_dim=%o|residual_dim=%o|unexplained_dim=%o|expensive_search_authorized=true\\n",
+    total_selmer_dim, residual_dim, unexplained_dim;
 
 // This stage is unreachable until the exact dimension gate passes.  It
-// materializes the nonzero classes of Sel_2(E)/<generic>; it never searches
+// quotients by all 28 certified points and materializes only the nonzero
+// classes still unexplained by the known rank-28 subgroup.  It never searches
 // any cover for rational points.
-printf "ELKIESR28REL|stage=residual_two_covers|status=start\\n";
+printf "ELKIESR28REL|stage=unexplained_two_covers|status=start|remove_known_rank=28\\n";
 cover_started := Realtime();
 covers := TwoDescent(
     E :
-    RemoveGens := SequenceToSet(generic),
+    RemoveGens := SequenceToSet(generic cat public_complement),
     RemoveTorsion := true,
     WithMaps := false
 );
 cover_seconds := Realtime(cover_started);
-assert #covers + 1 eq 2^residual_dim;
-printf "ELKIESR28REL|stage=residual_two_covers|status=complete|seconds=%o|nonzero_classes=%o|residual_dim=%o\\n",
-    cover_seconds, #covers, residual_dim;
+assert #covers + 1 eq 2^unexplained_dim;
+printf "ELKIESR28REL|stage=unexplained_two_covers|status=complete|seconds=%o|nonzero_classes=%o|unexplained_dim=%o|removed_known_rank=28\\n",
+    cover_seconds, #covers, unexplained_dim;
 '''
 
 

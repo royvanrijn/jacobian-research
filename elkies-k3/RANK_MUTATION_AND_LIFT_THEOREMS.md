@@ -574,6 +574,122 @@ zero, not an exact-rank statement.  QED.
 
 <!-- status-consumer: EC-K3-BISECT-BIQUADRATIC-R19 707bffd8b85f8f3e -->
 
+### Theorem F4: multiquadratic character decomposition and base genus
+
+Let `K` be a field of characteristic different from two, let `E/K` be an
+elliptic curve, and let `q_1,...,q_k` be independent elements of
+`K^*/K^{*2}`.  Put
+
+```text
+L=K(sqrt(q_1),...,sqrt(q_k)),
+q_S=product(q_i, i in S),
+```
+
+with `q_empty=1`.  Then there is an exact rational character decomposition
+
+```text
+E(L) tensor QQ
+  = direct_sum over S subset {1,...,k} of E^{q_S}(K) tensor QQ,
+```
+
+and in particular
+
+```text
+rank E(L) = sum over S rank E^{q_S}(K).
+```
+
+Distinct summands are orthogonal for every Galois-invariant canonical height
+pairing.  Thus ranks on product twists are genuinely new character
+contributions: they cannot be absorbed into the original curve or the
+singleton twists.
+
+Now take `K=QQ(t)` and suppose each `q_i` is a squarefree quadratic whose
+reduced geometric branch divisor on `P1` is disjoint from every other one.
+Let `C_k` be the smooth projective curve with function field `L`.  Then `C_k`
+is a geometrically connected `2^k`-sheeted cover of `P1` and
+
+```text
+g(C_k) = 1 + 2^(k-1)*(k-2).
+```
+
+If `E(QQ(t))` has rank `r`, and each singleton twist has one known non-torsion
+direction, then
+
+```text
+rank E(QQ(C_k)) >= r+k.
+```
+
+If the known direction on each individual double cover has height `h`, its
+pullback to `C_k` has height `2^(k-1)*h`.  The `k` known directions therefore
+have diagonal height block
+
+```text
+2^(k-1)*h * I_k.
+```
+
+For the published rootless R17 surface, `r=17` and `h=12`, so the base has
+genus `1+2^(k-1)*(k-2)`, rank at least `17+k`, and new height block
+`12*2^(k-1)*I_k`.  More precisely, every nonempty product twist contributes
+its full rank to the corresponding additional character.  For two covers,
+
+```text
+rank E(QQ(t)(sqrt(q_i),sqrt(q_j)))
+  = 17 + rank E^{q_i}(QQ(t)) + rank E^{q_j}(QQ(t))
+       + rank E^{q_i*q_j}(QQ(t)).
+```
+
+Consequently either of the following would improve the current constructions:
+
+- `rank E^{q_i}(QQ(t))>=2` gives a rational `P1` base of generic rank at
+  least 19;
+- `rank E^{q_i*q_j}(QQ(t))>=1` gives the associated genus-one paired base
+  generic rank at least 20.
+
+#### Proof
+
+Let `G=Gal(L/K)`.  Since `G` is an elementary abelian two-group, the rational
+group algebra has the orthogonal idempotents
+
+```text
+e_chi = 2^(-k) * sum(g in G) chi(g)*g.
+```
+
+They split `E(L) tensor QQ` into its `2^k` character eigenspaces.  Over `L`,
+the standard isomorphism from `E^{q_S}` to `E` identifies
+`E^{q_S}(K) tensor QQ` with the eigenspace for the character attached to
+`sqrt(q_S)`.  This proves the direct sum and rank formula.  If points `P,Q`
+belong to different characters, choose `g` on which the characters differ.
+Galois invariance and bilinearity give
+
+```text
+<P,Q> = <gP,gQ> = -<P,Q>,
+```
+
+so their cross-height is zero.
+
+Disjoint nonempty branch divisors make the squareclasses geometrically
+independent: every nonempty product has a branch point of odd valuation.
+Thus the cover is geometrically connected.  It has `2k` branch points.  Over
+each one there are `2^(k-1)` points of ramification index two, so
+Riemann--Hurwitz gives
+
+```text
+2g(C_k)-2 = 2^k*(-2) + 2k*2^(k-1) = 2^k*(k-2).
+```
+
+This is the displayed genus.  The rank lower bound follows by retaining the
+trivial character and the `k` singleton characters.  Canonical heights on an
+elliptic surface multiply by the degree of a finite base change.  Pulling an
+individual double-cover direction through the remaining degree `2^(k-1)`
+base change therefore multiplies its height by `2^(k-1)`; character
+orthogonality makes the resulting block diagonal. QED.
+
+The theorem is exact, but it does not determine any twist rank.  The
+Frobenius-character census in
+[`QUADRATIC_TWIST_RANK_CENSUS_2026-08-31.md`](QUADRATIC_TWIST_RANK_CENSUS_2026-08-31.md)
+is only a candidate-ranking mechanism until an additional rational section
+and its independence are certified.
+
 ## 8. What a bounded neighbour search really proves
 
 ### Theorem G: completeness inside a declared lattice box

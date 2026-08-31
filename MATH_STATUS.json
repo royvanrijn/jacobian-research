@@ -1964,7 +1964,7 @@
       "kind": "reproduction",
       "state": "partial",
       "title": "Factor-supplied S-class diagnostics for the published Elkies rank-28 fibre",
-      "scope": "The published rank-28 2-division cubic is now wired into two independently auditable class-group routes. A stage-aware PARI worker consumes the proved twelve-prime discriminant support, completes nfinit and unconditional maximal-order nfcertify, and then isolates bnfinit from all later local-solubility work. With technical parameters c1=0.01, c2=4, nrpid=20, the pinned 120-second class-quotient run reaches bnfinit, reports a 243-ideal factor base and a random-relation plateau at 153 requested relations, and times out at 265261056 bytes peak observed RSS before bnfcertify; it therefore supplies no S-class bound. Separately, the BNF-free full-ideal collector has an exact Elkies-rank28 preset with the same proved factor hints. Its paired-special-ideal factor-base-1000 pilot retains 10288 sampled algebraic-integer generators plus 172 exact canonical rational-prime generators, verifies all 172 principal rows, and finds no noncanonical relation. The audited bounded quotient model has 327 ideal columns, 26 S columns, relation rank 172 and displayed quotient dimension 141. Its factor base is far below the Bach ERH generation bound 1202640, so the result is explicitly UNCERTIFIED_FACTOR_BASE: neither relation stabilization nor this displayed dimension is a class-group, K(S,2), local-solubility, Selmer, or rank bound. Both artifacts forbid expensive point search.",
+      "scope": "The published rank-28 2-division cubic is now wired into two independently auditable class-group routes. A stage-aware PARI worker consumes the proved twelve-prime discriminant support, completes nfinit and unconditional maximal-order nfcertify, and then isolates bnfinit from all later local-solubility work. With technical parameters c1=0.01, c2=4, nrpid=20, the pinned 120-second class-quotient run reaches bnfinit, reports a 243-ideal factor base and a random-relation plateau at 153 requested relations, and times out at 265261056 bytes peak observed RSS before bnfcertify; it therefore supplies no S-class bound. An exact polredabs control records the generator map theta=-3*x+1, reduces the polynomial discriminant by 3^6 and the defining-order index by 27, and proves the same maximal field with factor-supplied nfinit and nfcertify. Under the matched 120-second envelope it reaches the same 243-ideal, 153-request random-relation plateau and times out at 264839168 bytes peak observed RSS before bnfcertify, so polynomial reduction supplies no class-group or Selmer bound. Separately, the BNF-free full-ideal collector has an exact Elkies-rank28 preset with the same proved factor hints. Its paired-special-ideal factor-base-1000 pilot retains 10288 sampled algebraic-integer generators plus 172 exact canonical rational-prime generators, verifies all 172 principal rows, and finds no noncanonical relation. The audited bounded quotient model has 327 ideal columns, 26 S columns, relation rank 172 and displayed quotient dimension 141. Its factor base is far below the Bach ERH generation bound 1202640, so the result is explicitly UNCERTIFIED_FACTOR_BASE: neither relation stabilization nor this displayed dimension is a class-group, K(S,2), local-solubility, Selmer, or rank bound. All three artifacts forbid expensive point search.",
       "canonical_source": "elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md",
       "dependencies": [
         "EC-K3-ELKIES-2026-R28-BAD-PLACE-KUMMER"
@@ -1974,7 +1974,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:b7ce09f27f40f97bd06f27ee6ef7cbf81d4fffa2670c36a61eb0249258786ac9",
+      "artifact_hash": "sha256:ba863748e8931d11004a13e23521122b619b9d07732f763869b3be5188236c7d",
       "software_lock": [
         "elliptic-curves/cas/run_elkies_2026_rank28_s_class_pari.py",
         "elliptic-curves/cas/run_fermigier_rank20_minkowski_specialq.py",
@@ -1982,6 +1982,7 @@
         "elliptic-curves/cas/audit_bnf_free_s_class_quotient.py",
         "elliptic-curves/tests/test_elkies_rank28_s_class_pari.py",
         "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_s_class_pari_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_s_class_pari_polredabs_v1.json",
         "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_bnf_free_s_class_pilot_v1.json"
       ],
       "supersedes_notes": [],
@@ -2084,7 +2085,7 @@
       "kind": "reproduction",
       "state": "partial",
       "title": "Fail-closed residual 2-Selmer gate for Elkies rank-32 searches",
-      "scope": "The search policy now distinguishes the actual residual object Sel_2(E_t)/<P1,...,P17> from BNF-free Kummer signatures, norm-one elements, S-class envelopes and incomplete local tests. A completed unconditional backend must attest class-group completeness and every local-solubility condition. Its total 2-Selmer dimension is quotiented by the independently certified 17-dimensional generic Kummer image; residual dimension below 15 is an exact rank-32 rejection, and only dimension at least 15 authorizes residual-cover solving or expensive point search on the same parameter and minimal curve. Direct q12 ratpoints, affine-chart, eclib-search, PARI-cover and normalized slope-slice entry points enforce this gate, while the obsolete pre-descent x-ansatz search is parked. EC-K3-ELKIES-2026-R28-BAD-PLACE-KUMMER proves the complete 2-division-discriminant factorization and every bad-place image of the known generic points, but explicitly supplies no ambient Selmer upper bound. EC-K3-ELKIES-2026-R28-S-CLASS-PILOT isolates the next obstruction: factor-supplied maximal-order setup is immediate, but PARI class-group relation generation does not complete, and a factor-base-1000 exact principal-relation pilot remains far below a valid generation bound with no noncanonical quotient gain. EC-K3-ELKIES-2026-R28-LOCAL-COVERAGE adds an exact calibration: the eleven globally independent public directions add zero rank to the 53-coordinate bad-place signature, only four odd places and infinity have certified full known-point coverage, and a bounded 12-cover norm-one pilot yields 60 selected local witnesses but 24 inconclusive place tests and no everywhere-local or Selmer class. EC-K3-ELKIES-2026-R28-PUBLIC-SELMER-CONTROLS materializes those eleven genuine point classes as exact X(Q)-theta elements and two-covers with rational witnesses, proving the expected residual Selmer lower bound 11 while supplying no upper bound. The original PARI ellrank and independent Selmer-only eclib runs both reached strict 300-second limits at peak observed RSS 230338560 and 232099840. A factor-supplied PARI backend then removed the hidden discriminant-factorization cost and entered the complete descent immediately with all 28 certified public points, effort zero, and no point search; strict 600-second and 1800-second runs with an 8 GB PARI stack still returned no Selmer dimension, at peak observed RSS 5698514944 and 6040723456. A source-pinned Magma job replays the generic-17 and generic-plus-public-11 finite-reduction certificates, computes unconditional TwoSelmerGroup(E : Bound := -1) before any covers, exits below residual dimension 15, and only then may materialize the relative quotient with TwoDescent; it contains no point search. Magma is absent on the current host, so this is an implemented external path, not a completed Selmer result. These timeouts and backend unavailability are implementation boundaries, not rank upper bounds, and none authorizes search. Rank 32 and the requested rank-32 finite-reduction independence matrix remain open.",
+      "scope": "The search policy now distinguishes the actual residual object Sel_2(E_t)/<P1,...,P17> from BNF-free Kummer signatures, norm-one elements, S-class envelopes and incomplete local tests. A completed unconditional backend must attest class-group completeness and every local-solubility condition. Its total 2-Selmer dimension is quotiented by the independently certified 17-dimensional generic Kummer image; residual dimension below 15 is an exact rank-32 rejection, and only dimension at least 15 authorizes residual-cover solving or expensive point search on the same parameter and minimal curve. Direct q12 ratpoints, affine-chart, eclib-search, PARI-cover and normalized slope-slice entry points enforce this gate, while the obsolete pre-descent x-ansatz search is parked. EC-K3-ELKIES-2026-R28-BAD-PLACE-KUMMER proves the complete 2-division-discriminant factorization and every bad-place image of the known generic points, but explicitly supplies no ambient Selmer upper bound. EC-K3-ELKIES-2026-R28-S-CLASS-PILOT isolates the next obstruction: factor-supplied maximal-order setup is immediate, but PARI class-group relation generation does not complete, and a factor-base-1000 exact principal-relation pilot remains far below a valid generation bound with no noncanonical quotient gain. EC-K3-ELKIES-2026-R28-LOCAL-COVERAGE adds an exact calibration: the eleven globally independent public directions add zero rank to the 53-coordinate bad-place signature, only four odd places and infinity have certified full known-point coverage, and a bounded 12-cover norm-one pilot yields 60 selected local witnesses but 24 inconclusive place tests and no everywhere-local or Selmer class. EC-K3-ELKIES-2026-R28-PUBLIC-SELMER-CONTROLS materializes those eleven genuine point classes as exact X(Q)-theta elements and two-covers with rational witnesses, proving the expected residual Selmer lower bound 11 while supplying no upper bound. The original PARI ellrank and independent Selmer-only eclib runs both reached strict 300-second limits at peak observed RSS 230338560 and 232099840. A factor-supplied PARI backend then removed the hidden discriminant-factorization cost and entered the complete descent immediately with all 28 certified public points, effort zero, and no point search; strict 600-second and 1800-second runs with an 8 GB PARI stack still returned no Selmer dimension, at peak observed RSS 5698514944 and 6040723456. A source-pinned Magma job replays the generic-17 and generic-plus-public-11 finite-reduction certificates and computes unconditional TwoSelmerGroup(E : Bound := -1) before any covers. It records both the residual dimension modulo the generic 17 and the equivalent unexplained dimension beyond the known rank 28, rejecting below 15 or equivalently below four. Only a passing job calls TwoDescent, with all 28 certified points removed, so it materializes only genuinely unexplained covers; it contains no point search. Magma is absent on the current host, so this is an implemented external path, not a completed Selmer result. These timeouts and backend unavailability are implementation boundaries, not rank upper bounds, and none authorizes search. Rank 32 and the requested rank-32 finite-reduction independence matrix remain open.",
       "canonical_source": "elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md",
       "dependencies": [
         "EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS",
@@ -35698,6 +35699,41 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
+    },
+    {
+      "id": "EC-K3-ELKIES-2026-BISECTION-SPECIALIZATION-CONTROLS",
+      "kind": "example",
+      "state": "proved",
+      "title": "Complete bisection specialization census at five certified high-rank fibres",
+      "scope": "All 39,120 equation-level rootless-R17 bisection branch quadratics are evaluated exactly at t=-2/377,-308/251,2456/135,-9529/5471,3/8, for 195,600 total nonzero-square tests. The split counts are 6,3,2,1,25. Substituting both rational square-root signs gives exact points on the projective and global-minimal fibres; each conjugate pair sums to its stored trace, and every trace equals its published-basis word. In the exact direct sums of E(F_p)/2E(F_p) over all usable good-reduction primes through 1000, the split classes span 5 of 8, 3 of 9, 2 of 10, 1 of 11, and all 4 of 4 known directions beyond the generic seventeen, with no finite-quotient escape. PARI height/LLL supplies candidate relation blocks whose new-point coefficient ranks are 6,3,2,1,25; exact rational group addition verifies every relation. Hence adjoining all split points leaves the displayed generated-subgroup ranks exactly 25,26,27,28,21. These are subgroup ranks and unconditional curve-rank lower bounds only, not upper bounds or exact ranks of the full curves.",
+      "canonical_source": "elliptic-curves/notes/ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md",
+      "dependencies": [
+        "EC-K3-BISECT-EQUATION-BATCH",
+        "EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS",
+        "EC-R21-ICARM394"
+      ],
+      "checker": "elliptic-curves/scripts/evaluate_elkies_2026_bisections_at_controls.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:344bdbf71a1bc3a081e538829dc88a2b57669e43d261d645f29a855937261f29",
+      "software_lock": [
+        "elliptic-curves/scripts/evaluate_elkies_2026_bisections_at_controls.py",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_bisection_specialization_controls_v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/notes/ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
     },
     {
       "id": "OP-EC-RANK-CONDUCTOR",

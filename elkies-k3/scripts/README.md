@@ -91,6 +91,16 @@ it records a bounded negative result, a normalization bug, or a useful local mod
   degree-two isogeny to the paired base, a birational pointed-quartic map to
   the `t`-line with nine explicit rational `(t,u,v)` points, and generic
   surface rank at least 19.
+- `search_elkies_2026_rank9_paired_base.sage` is the first actual search on
+  that promoted base. It records rank/saturation evidence, a 100-digit height
+  Gram and LLL basis, enumerates by height while selecting separately for
+  small `t(P)`, specializes all nineteen visible sections, tests the other
+  39,118 covers, certifies displayed rank incrementally, and applies Nagao
+  only after the explicit split count.
+- `analyze_elkies_2026_high_rank_control_pair_bases.sage` constructs every
+  pair in the four exact sets `S(t0)`. It materializes the pair points and
+  computes their mod-2 finite-quotient incidence with the public exceptional
+  complements, preventing an invalid automatic `published rank + 2` claim.
 
 The canonical theorem and full proof boundary are in
 [`../BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md`](../BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md).

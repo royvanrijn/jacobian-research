@@ -33,14 +33,19 @@ class ElkiesRank28RelativeDescentTests(unittest.TestCase):
 
     def test_complete_selmer_precedes_gate_and_covers(self) -> None:
         complete = self.program.index('stage=two_selmer|status=complete')
-        classification = self.program.index("if residual_dim lt 15 then")
+        classification = self.program.index("if unexplained_dim lt 4 then")
         covers = self.program.index("covers := TwoDescent(")
         self.assertLess(complete, classification)
         self.assertLess(classification, covers)
         self.assertIn("TwoSelmerGroup(E : Bound := -1)", self.program)
-        self.assertIn("RemoveGens := SequenceToSet(generic)", self.program)
+        self.assertIn(
+            "RemoveGens := SequenceToSet(generic cat public_complement)",
+            self.program,
+        )
         self.assertIn("WithMaps := false", self.program)
         self.assertIn("assert residual_dim ge 11", self.program)
+        self.assertIn("assert unexplained_dim ge 0", self.program)
+        self.assertIn("assert #covers + 1 eq 2^unexplained_dim", self.program)
 
     def test_program_has_no_point_search_or_conditional_class_group(self) -> None:
         executable = "\n".join(self.program.splitlines()[3:])
@@ -133,9 +138,9 @@ class ElkiesRank28RelativeDescentTests(unittest.TestCase):
         parsed = parser.parse_protocol(
             "\n".join(
                 (
-                    "ELKIESR28REL|version=1|stage=input|parameter=-9529/5471|generic=17|known_quotient_floor=11|target_rank=32",
-                    "ELKIESR28REL|stage=two_selmer|status=complete|total_selmer_dim=31|residual_dim=14|required_residual_dim=15",
-                    "ELKIESR28REL|classification=REJECT_RANK32_BY_RESIDUAL_2_SELMER|total_selmer_dim=31|residual_dim=14|expensive_search_authorized=false",
+                    "ELKIESR28REL|version=1|stage=input|parameter=-9529/5471|generic=17|known_quotient_floor=11|known_rank_lower_bound=28|target_rank=32|required_beyond_known_rank28=4",
+                    "ELKIESR28REL|stage=two_selmer|status=complete|total_selmer_dim=31|residual_dim=14|required_residual_dim=15|unexplained_dim=3|required_unexplained_dim=4",
+                    "ELKIESR28REL|classification=REJECT_RANK32_BY_RESIDUAL_2_SELMER|total_selmer_dim=31|residual_dim=14|unexplained_dim=3|expensive_search_authorized=false",
                 )
             )
         )
@@ -145,9 +150,9 @@ class ElkiesRank28RelativeDescentTests(unittest.TestCase):
         parsed = parser.parse_protocol(
             "\n".join(
                 (
-                    "ELKIESR28REL|version=1|stage=input|parameter=-9529/5471|generic=17|known_quotient_floor=11|target_rank=32",
-                    "ELKIESR28REL|stage=two_selmer|status=complete|total_selmer_dim=32|residual_dim=15|required_residual_dim=15",
-                    "ELKIESR28REL|classification=PASS_RANK32_RESIDUAL_2_SELMER_GATE|total_selmer_dim=32|residual_dim=15|expensive_search_authorized=true",
+                    "ELKIESR28REL|version=1|stage=input|parameter=-9529/5471|generic=17|known_quotient_floor=11|known_rank_lower_bound=28|target_rank=32|required_beyond_known_rank28=4",
+                    "ELKIESR28REL|stage=two_selmer|status=complete|total_selmer_dim=32|residual_dim=15|required_residual_dim=15|unexplained_dim=4|required_unexplained_dim=4",
+                    "ELKIESR28REL|classification=PASS_RANK32_RESIDUAL_2_SELMER_GATE|total_selmer_dim=32|residual_dim=15|unexplained_dim=4|expensive_search_authorized=true",
                 )
             )
         )

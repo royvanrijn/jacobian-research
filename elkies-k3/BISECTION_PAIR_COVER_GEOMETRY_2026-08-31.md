@@ -324,4 +324,94 @@ lies in the norm-four disjoint graph.  The census and promoted verifier are
 independent of the conductor-first and residual-2-Selmer programmes under
 `elliptic-curves/`.
 
+## First promoted-base specialization search
+
+The masks `0x0a47e` and `0x0a865` now have a dedicated staged search rather
+than only nine transported seed parameters.  PARI returns the base-Jacobian
+rank interval `[9,9]`.  Its `ellsaturation` pass through every prime below
+`1000` returns a substantially smaller basis, but an exact group-law transition
+has determinant one.  Thus the pass improves the basis without changing the
+subgroup.  The maximum displayed coordinate size drops from 114 to 90 bits.
+
+An external 100-decimal-digit `ellheightmatrix` computation gives the
+canonical-height Gram.  The script records its integral LLL transform and
+reduced Gram, enumerates every signed lattice vector through canonical height
+60, and evaluates the exact rational map to `t`.  This produces 1,640 distinct
+finite values.  The specialization order is deliberately not canonical
+height: the first 100 candidates are selected by projective bit size of `t`,
+with the height/`t` Pareto frontier forced into the retained set.
+
+The shortest retained value is
+
+```text
+t = -2969563331629803629388471 / 1150988205711904740460357,
+```
+
+with 82-bit projective height, versus the much larger nine originally
+transported generator values.  At every one of the 100 retained parameters,
+all seventeen published sections and both paired-cover sections specialize
+exactly and a finite-quotient certificate proves rank at least 19.  The other
+39,118 quadratic covers were then evaluated exactly at every parameter.  None
+split in this first bounded run.  Only after this zero split count was known
+were the candidates ordered by the weakest of three disjoint Nagao blocks.
+
+Replay with:
+
+```bash
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/search_elkies_2026_rank9_paired_base.sage
+```
+
+The output is
+[`../artifacts/generated-results/elkies-2026-rank9-paired-base-search.json`](../artifacts/generated-results/elkies-2026-rank9-paired-base-search.json),
+with SHA-256
+
+```text
+fd419a709781a689975cc1b39485af1d62ecf1285968b29012bce0c35e0912a3
+```
+
+The empty residual-split result is only for height at most 60 and the retained
+100 `t`-optimized values.  It is not a rank upper bound or a nonexistence
+theorem.
+
+## Pair bases selected by high-rank controls
+
+The complete exact control-fibre square sets have sizes
+
+```text
+|S(-2/377)|       = 6,
+|S(-308/251)|     = 3,
+|S(2456/135)|     = 2,
+|S(-9529/5471)|   = 1.
+```
+
+They give respectively 15, 3, 1, and 0 pair bases.  No bisection mask occurs
+at two of the four controls, so this batch contains no pair with two known
+control-fibre base points and supplies no immediate positive-base-rank
+difference construction.
+
+The finite-quotient incidence correction is decisive.  For all 19 pairs, the
+two materialized bisection points add two mod-2 directions beyond the generic
+seventeen, but add zero directions beyond the corresponding published
+rank-25, rank-26, or rank-27 control subgroup.  Thus none of these calculations
+supports `published rank + 2`; the two generic paired-cover directions are
+already incident with the known exceptional finite-quotient span.  Zero
+increment in this finite quotient is not, by itself, a rational dependence or
+rank upper bound.
+
+Replay with:
+
+```bash
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/analyze_elkies_2026_high_rank_control_pair_bases.sage
+```
+
+The output is
+[`../artifacts/generated-results/elkies-2026-high-rank-control-pair-bases.json`](../artifacts/generated-results/elkies-2026-high-rank-control-pair-bases.json),
+with SHA-256
+
+```text
+85ad8b521ab0ea65404500fad728372287b2c331b6afbb14a5e728826439e091
+```
+
 <!-- status-consumer: EC-K3-BISECT-BIQUADRATIC-R19 707bffd8b85f8f3e -->
