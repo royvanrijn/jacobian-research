@@ -2,7 +2,7 @@
 
 ## Status
 
-<!-- status-consumer: EC-K3-BISECT-MULTIQUADRATIC-CHARACTERS d08a3d546eac82cb -->
+<!-- status-consumer: EC-K3-BISECT-MULTIQUADRATIC-CHARACTERS dc58103d8d2494cf -->
 
 The complete bisection injectivity theorem distinguishes all 39,120 branch
 squareclasses.  It does **not** determine the Mordell--Weil rank of any
@@ -168,12 +168,34 @@ Base rank and product-twist rank are different invariants.  The rank-nine
 bases remain excellent sources of rational specialization parameters, but
 the discovery data alone do not prioritize them for a generic rank-20 proof.
 
-## Fresh-prime validation: no reproducible product signal
+## Strict targeted gate for product 27431:92937
 
-The discovery leaderboard was tested on two disjoint 48-prime windows,
-`499--821` and `823--1151`.  The first holdout included a complete rescore of
-all 5,566 products.  Its top 100 and the discovery top 100 have only one key
-in common, `36197:51178`:
+The requested theorem bet uses a target-only gate: no population ranking or
+replacement product is allowed to authorize a section solve.  The product
+`27431:92937` was scored on two fresh, mutually disjoint 48-prime windows,
+`499--821` and `823--1151`.  Together they comprise twelve disjoint eight-prime
+blocks, all above 491 and extending through 1151.  The target fails both
+holdouts:
+
+| window | weakest block | mean block score |
+|---|---:|---:|
+| `211--491` discovery | `0.287` | `0.526` |
+| `499--821` holdout | `-0.494` | `0.017` |
+| `823--1151` holdout | `-0.077` | `0.150` |
+
+This triggers the declared immediate stop.  No `chi=4` polynomial-section
+solve and no denominator layer was run for `27431:92937`.  The directly
+runnable target-only command is recorded in [`../REPRODUCE.md`](../REPRODUCE.md).
+This is a bounded negative heuristic, not a rank-zero result.
+
+### Separate exploratory context
+
+Separate local exploratory artifacts exist outside the strict target-only
+replay.  They include a complete rescore of all 5,566 products on `499--821`
+and a small multi-target replay on `823--1151`.  They are retained for
+provenance, but are not part of the theorem gate and do not authorize a
+replacement product search.  The complete rescore's top 100 and the discovery
+top 100 have only one key in common, `36197:51178`:
 
 ```text
 window 211--491   rank 17   weakest 0.108   mean 0.337
@@ -181,7 +203,8 @@ window 499--821   rank  3   weakest 0.174   mean 0.493
 window 823--1151           weakest -0.200  mean 0.062
 ```
 
-The discovery leader and the new-window leader also fail independently:
+The discovery leader and the exploratory new-window leader also fail
+independently:
 
 | product | `211--491` weakest / mean | `499--821` weakest / mean | `823--1151` weakest / mean |
 |---|---:|---:|---:|
@@ -189,10 +212,9 @@ The discovery leader and the new-window leader also fail independently:
 | `27431:49826` | not discovery top 100 | `0.291 / 0.539` | `-0.168 / 0.070` |
 | `71804:81769` | `-0.120 / 0.191` | `0.096 / 0.489` | `-0.067 / 0.174` |
 
-Thus no tested product twist has a stable positive signal across all three
-windows.  The correct research conclusion is negative and heuristic: the
-present character-trace census supplies no product candidate worth a large
-exact solve.  It does not prove that all product twists have rank zero.
+Thus the exploratory population data also have no stable positive signal
+across all three windows.  This remains only a negative heuristic and does
+not prove that any product twist has rank zero.
 
 The singleton controls behave differently.  Mask `18075` remains positive
 on both holdouts:
@@ -216,8 +238,9 @@ The holdout artifacts are:
 - [`../artifacts/generated-results/elkies-2026-quadratic-twist-targeted-holdout-p823-1151.json`](../artifacts/generated-results/elkies-2026-quadratic-twist-targeted-holdout-p823-1151.json),
   SHA-256 `43a76b955bbf8c631aaf9eda66d5729fde1119f921b70119b4360a3783ab3210`.
 
-Their exact commands are stored in `reproducing_command`.  They use the new
-repeatable `--singleton-key` and `--product-key` filters for targeted replay.
+Their argv records are stored in `reproducing_command`; prepend
+`.venv/bin/python` because the Python script is not executable.  The strict
+target-only replay does not require the complete product-census artifact.
 
 ## Exact descent of the singleton control
 
@@ -300,9 +323,11 @@ coefficient reduction at 37.  Even another characteristic-zero section in
 the same box could specialize to a boundary point of a projective
 compactification.  None of those possibilities is excluded here.
 
-## Product polynomial search boundary
+## Separate product-system complexity experiment
 
-The only top-100 overlap, `36197:51178`, was exported at `p=19` in the natural
+This separate experiment concerns the different product `36197:51178` and is
+not stage two of the `27431:92937` gate.  The only exploratory top-100
+overlap was exported at `p=19` in the natural
 `chi=4` box `deg X<=8`, `deg Y<=12`.  It gives 12 leading-point blocks and six
 distinct systems of 12 equations in eight variables.  A bounded 60-second,
 eight-thread run on the first distinct system timed out without a solution

@@ -463,10 +463,10 @@ unchanged. Exact relation blocks prove that the displayed generated subgroup
 ranks remain `25,26,27,28,21`; they do not bound the full curve ranks. See
 [`ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md`](notes/ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md).
 
-Resolve the visible and invisible quotient spaces and test the rank-30/31
-records against the published family:
+Resolve the visible and invisible quotient spaces and test the 2024 rank-29
+curve and ICARM 273, 302, and 398--400 against the published fibration:
 
-<!-- status-consumer: EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES c3c7fbac71f4624f -->
+<!-- status-consumer: EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES 1c39220ee5fedc77 -->
 
 ```sh
 .venv/bin/python \
@@ -478,8 +478,10 @@ The rank-28 visible span has dimension one and its canonical complement has
 dimension ten.  Since the 39,120 atlas records already exhaust bisections
 modulo section translation and sign, a higher translated trace shell cannot
 enlarge this span.  Exact irreducible degree-24 recognition equations exclude
-ICARM curves 273 and 302 from being direct rational fibres of this published
-chart; the result does not exclude other families or isogenies.  See
+all six targets from being rational fibres of this published fibration,
+including after quadratic twisting.  The rank-28 control recovers the exact
+linear factor `5471*t+9529`.  The result does not exclude another fibration,
+other families, or isogenies.  See
 [`ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md`](notes/ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md).
 
 ## Low-conductor exact baselines

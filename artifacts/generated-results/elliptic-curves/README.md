@@ -53,10 +53,11 @@ Important distinctions made explicit by the catalogue:
   classes into deterministic visible and complementary quotient bases.  It
   records the ten-dimensional rank-28 target packet and the exact mechanism
   boundary that translated trace shells repeat existing bisection classes.
-  It also proves, through degree-24 polynomials irreducible modulo 367 and 397,
-  that ICARM curves 273 and 302 are not direct rational specializations of the
-  published `R17` chart.  Other families and isogeny constructions remain
-  open.
+  It also proves, through degree-24 irreducibility witnesses, that the 2024
+  rank-29 curve and ICARM 273, 302, and 398--400 are not rational fibres of the
+  published `R17` fibration, including after quadratic twisting.  The rank-28
+  control recovers `5471*t+9529`; other fibrations, families, and isogeny
+  constructions remain open.
 - `elkies_2026_rank28_bad_place_kummer_ledger_v1.json` proves the complete
   factorization of the rank-28 2-division cubic discriminant and contains all
   thirteen finite/2-adic/real local blocks for the generic seventeen points.

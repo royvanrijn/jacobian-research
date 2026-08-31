@@ -69,7 +69,7 @@ def binary_rank(rows) -> int:
     for row in rows:
         value = sum((int(bit) & 1) << index for index, bit in enumerate(row))
         for pivot in pivots:
-            value = min(value, value ^^ pivot)
+            value = min(value, value ^ pivot)
         if value:
             pivots.append(value)
             pivots.sort(reverse=True)

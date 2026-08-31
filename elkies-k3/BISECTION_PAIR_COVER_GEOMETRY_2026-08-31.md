@@ -471,6 +471,13 @@ been catalogued.  None of the 300 pairs has a second point source among the
 other four controls or at zero or infinity, so a point-difference proof is not
 available directly from the incidence table.
 
+The 25 split classes span the known four-dimensional exceptional quotient.
+There are 619 four-element spanning subsets; minimizing first the maximum and
+sum of equation ranks, then the corresponding priority ranks, selects masks
+`19735,22912,30787,66034` (`0x04d17,0x05980,0x07843,0x101f2`).  This is an
+exact finite-quotient control set, not four new rank directions beyond the
+published rank-21 subgroup.
+
 A bounded PARI search followed by exact finite-quotient certification is
 complete for all 300 Jacobians.  The certified rank-lower-bound distribution
 is
@@ -502,6 +509,14 @@ Nagao scores are attached only after the exact split counts and rank
 certificates, so they act solely as a tie-break within the explicit arithmetic
 ordering.
 
+The next discovery box `[-2,2]^r-{0}` contains 75,504 exact pair-base points
+and again 75,504 distinct finite parameters, including the radius-one box.
+The complete sieve reduces 2,953,716,480 potential tests to 1,144,616 exact
+integer square tests.  It still finds exactly the two defining splits at every
+parameter, with no third split and no exceptional map value.  This radius-two
+artifact uses discovery policy: it proves the exact split counts but makes no
+new specialized-rank claim at its no-extra-split fibres.
+
 Replay with:
 
 ```bash
@@ -518,6 +533,22 @@ Replay with:
 /tmp/jacobian-sage-bin/sage -python \
   elkies-k3/scripts/search_elkies_2026_control_pair_base_points.sage \
   --certify all
+
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/search_elkies_2026_control_pair_base_points.sage \
+  --coefficient-radius 2 --certify none \
+  --output artifacts/generated-results/elkies-2026-control-pair-base-point-search-radius2.json
+```
+
+The principal generated-artifact SHA-256 values are:
+
+```text
+rank9 height-60 sieve       de7669a6a2274d283edc460da8b41b21feb2f83dc5bc8bbccd622891d25419b1
+rank9 height-(60,150] sieve 1c58c2bcd654d2ef8f8ab7ee0a1c68a7b106f4e57d2b0bececec03d0877433e8
+control pair catalogue      0441599b3b6bae933e3764b5269e71e47c69dcd93d91f143ecb448df89d84eb7
+control pair rank ledger    15d910ce432ce0d4a1bd8ae62cd1fc7c95356aee49e5ea381bfce306565fd4b5
+control radius-one search   25fb8732ac992070805b7cb7a13a539cc315c1902828244e73e32006ec1a2355
+control radius-two search   e819de89fa420cf19e099da74addc68d3c6f3ee9700c539c76e6ae9def93f5af
 ```
 
 The rank-six base results prove positive generic base rank and generate the

@@ -34944,8 +34944,8 @@
       "id": "EC-K3-BISECT-MULTIQUADRATIC-CHARACTERS",
       "kind": "theorem",
       "state": "proved",
-      "title": "Multiquadratic character-rank theorem and bounded twist-rank census",
-      "scope": "For independent squareclasses q_1,...,q_k, rational character idempotents give the exact decomposition E(QQ(t)(sqrt(q_1),...,sqrt(q_k))) tensor QQ as the direct sum of all twist groups E^{q_S}(QQ(t)) tensor QQ. Distinct characters are height-orthogonal. For pairwise disjoint quadratic branch divisors, the connected multiquadratic base has genus 1+2^(k-1)(k-2); on the published R17 surface the k known singleton directions prove rank at least 17+k and have pulled height block 12*2^(k-1)*I_k. A complete 39,120-singleton/5,566-product Nagao-style discovery census and two fresh 48-prime windows find no reproducible product-twist signal. For singleton mask 18075, exact descent constructs the known degree-(6,9) twist section. Over F_37 the complete affine P.O=0 polynomial-section scheme in that degree box has only Q and -Q: 23 of 24 distinct systems are empty over the algebraic closure and one is reduced of quotient dimension one. The finite-prime scores and modular degree-box result are not characteristic-zero rank upper bounds; no singleton rank at least two, nonzero product-twist rank, generic rank-19 rational cover, or generic rank-20 paired base is claimed.",
+      "title": "Multiquadratic character-rank theorem and bounded twist diagnostics",
+      "scope": "For independent squareclasses q_1,...,q_k, rational character idempotents give the exact decomposition E(QQ(t)(sqrt(q_1),...,sqrt(q_k))) tensor QQ as the direct sum of all twist groups E^{q_S}(QQ(t)) tensor QQ. Distinct characters are height-orthogonal. For pairwise disjoint quadratic branch divisors, the connected multiquadratic base has genus 1+2^(k-1)(k-2); on the published R17 surface the k known singleton directions prove rank at least 17+k and have pulled height block 12*2^(k-1)*I_k. A strict target-only 96-prime held-out gate for product 27431:92937 has weakest/mean scores -0.494/0.017 on primes 499--821 and -0.077/0.150 on primes 823--1151. This bounded heuristic collapse stops the target before any chi=4 polynomial-section or denominator-layer solve; it is not a rank-zero result. Separate broader census and complexity experiments are retained only as exploratory provenance and do not authorize a replacement product search. For singleton mask 18075, exact descent constructs the known degree-(6,9) twist section. Over F_37 the complete affine P.O=0 polynomial-section scheme in that degree box has only Q and -Q: 23 of 24 distinct systems are empty over the algebraic closure and one is reduced of quotient dimension one. The finite-prime scores and modular degree-box result are not characteristic-zero rank upper bounds; no singleton rank at least two, nonzero product-twist rank, generic rank-19 rational cover, or generic rank-20 paired base is claimed.",
       "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
       "dependencies": [
         "EC-K3-BISECT-EQUATION-BATCH",
@@ -35882,12 +35882,13 @@
       "id": "EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES",
       "kind": "corollary",
       "state": "proved",
-      "title": "Complete bisection visibility boundary and exact rank-30/31 record-curve exclusion",
-      "scope": "Row reduction over F_2 of every split-bisection class in the five certified public complements gives visible/invisible dimensions 5/3, 3/6, 2/8, 1/10 and 4/0. At the rank-28 fibre the sole visible class is Q2+Q4+Q5+Q8+Q10; in the stored ordered complement, Q1,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11 form a deterministic ten-dimensional complementary target packet. The complete bisection theorem already quotients all section-nonnegative degree-two (-2)-curves by generic-section translation and sign: its 806,238 unoriented norm-ten representatives map onto 39,120 classes with complete equation coverage. Fibrewise translation preserves the quadratic extension and changes a split point only by a specialized generic section, so any higher translated trace shell has the same class modulo R17 and cannot enlarge the visibility span. Independently, exact j-recognition against the published R17 model produces primitive degree-24 polynomials for ICARM curves 273 and 302. Their same-degree reductions are irreducible modulo 367 and 397 respectively, proving by Gauss's lemma that neither record curve is a direct rational specialization of the published chart. This does not exclude isogenies, different fibrations or other families, and the finite-quotient visibility spaces are not Mordell-Weil upper bounds.",
+      "title": "Complete bisection visibility boundary and exact published-R17 fibre exclusions",
+      "scope": "Row reduction over F_2 of every split-bisection class in the five certified public complements gives visible/invisible dimensions 5/3, 3/6, 2/8, 1/10 and 4/0. At the rank-28 fibre the sole visible class is Q2+Q4+Q5+Q8+Q10; in the stored ordered complement, Q1,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11 form a deterministic ten-dimensional complementary target packet. The complete bisection theorem already quotients all section-nonnegative degree-two (-2)-curves by generic-section translation and sign: its 806,238 unoriented norm-ten representatives map onto 39,120 classes with complete equation coverage. Fibrewise translation preserves the quadratic extension and changes a split point only by a specialized generic section, so any higher translated trace shell has the same class modulo R17 and cannot enlarge the visibility span. Independently, exact j-recognition against the published R17 model produces primitive degree-24 polynomials for the 2024 Elkies--Klagsbrun rank-29 curve and ICARM curves 273, 302, and 398--400. Same-degree reductions are irreducible modulo 461, 367, 397, 1009, 83, and 157 respectively. Gauss's lemma proves that none is a rational fibre of the published fibration. The rank-28 positive control factors as (5471*t+9529) times an irreducible degree-23 cofactor, recovering t=-9529/5471. Because quadratic twisting preserves j, the exclusion is twist-stable. It does not exclude isogenies, different fibrations, or other families, and the finite-quotient visibility spaces are not Mordell-Weil upper bounds.",
       "canonical_source": "elliptic-curves/notes/ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md",
       "dependencies": [
         "EC-K3-BISECT-EQUATION-BATCH",
         "EC-K3-ELKIES-2026-BISECTION-SPECIALIZATION-CONTROLS",
+        "ECR29",
         "ECR30",
         "ECR31"
       ],
@@ -35896,9 +35897,10 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:5a20b701dbd7447fe83c7ca774c52291ea73558465e53667b2266fe9b19cf33d",
+      "artifact_hash": "sha256:9809f5153a628a36c3be1c7e3dcca43a0ba2e85ed7b149ffc2fba6643c062364",
       "software_lock": [
         "requirements.txt",
+        "elliptic-curves/data/elkies_2026_r17_j_recognition_targets.json",
         "elliptic-curves/scripts/analyze_elkies_bisection_visibility_and_record_curves.py",
         "artifacts/generated-results/elliptic-curves/elkies_2026_bisection_visibility_record_curves_v1.json"
       ],
@@ -35912,11 +35914,47 @@
         "REPRODUCE.md",
         "elliptic-curves/REPRODUCE.md",
         "elliptic-curves/notes/ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md",
+        "elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md",
         "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
+    },
+    {
+      "id": "EC-K3-H3-OTHER-R17-J2-CANDIDATE",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Second rootless rank-17 J2 frame class in the pinned H3 Neron--Severi lattice",
+      "scope": "The exact alternate-q80 q4,q6 neighbor replay produces a positive-definite rank-17 frame of determinant 948 with no norm-two roots. Its full determinant-one Neron--Severi transport is composed with the exact pinned-R17-to-q80 marking, yielding an explicit primitive U embedding, fibre, isotropic mate, and zero in the pinned H3/R17 Neron--Severi coordinates. PARI qfisom proves that the alternate frame is not integrally isometric to the published determinant-948 R17 frame. Hence the pinned lattice contains at least two distinct rootless J2 frame classes, both giving Mordell--Weil rank 17 at Picard rank 19. The final alternate q6 divisor has an independently replayed complete nef audit, old-fibre degree two after Weyl reduction, D.O=1, a horizontal identity D=O+S-F with S.O=4, and a five-dimensional ambient line bundle cut by three local transforms to the expected two-plane. This is not a complete Kneser--Nishiyama or J1 classification, does not construct the generic characteristic-zero equation of the second frame, and does not identify the rank-29 curve as one of its fibres.",
+      "canonical_source": "elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md",
+      "dependencies": [
+        "EC-K3-H3-Q12O5867-ENDPOINT-QQ"
+      ],
+      "checker": "elkies-k3/scripts/canonicalize_other_rank17_candidate.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ea5aa8b40dc6b6e3c3964cb49a164053faaa4188c372ddc80465ffbd4c720fc3",
+      "software_lock": [
+        "elkies-k3/scripts/verify_q80_alternate_fifth_q6_rootless.sage",
+        "elkies-k3/scripts/verify_q80_alternate_final_q6_nef.sage",
+        "elkies-k3/scripts/canonicalize_other_rank17_candidate.sage",
+        "artifacts/generated-results/q80-alternate-fifth-q6-rootless-transport.json",
+        "artifacts/generated-results/elkies-k3-other-rank17-candidate.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
     }
   ]
 }

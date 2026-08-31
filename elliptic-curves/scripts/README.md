@@ -26,8 +26,9 @@ positive controls, and the fail-closed residual-descent entry points.
 
 `analyze_elkies_bisection_visibility_and_record_curves.py` converts the split
 bisection classes into canonical visible/complementary quotient bases and
-performs the exact `j`-recognition exclusions for ICARM curves 273 and 302.
-Its `--check` mode replays the pinned artifact.
+performs exact `j`-recognition for the 2024 rank-29 curve and ICARM 273, 302,
+and 398--400, with the published rank-28 fibre as a positive control.  Its
+`--check` mode replays the pinned artifact.
 
 ## Active searches
 

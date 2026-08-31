@@ -528,7 +528,7 @@ height matrix.  QED.
 
 ### Corollary F2.1: translated trace shells cannot enlarge specialization visibility
 
-<!-- status-consumer: EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES c3c7fbac71f4624f -->
+<!-- status-consumer: EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES 1c39220ee5fedc77 -->
 
 Let `B` be one of the complete degree-two bisection classes of Theorem F2 and
 let `S` be a section of the generic `R17` subgroup.  Translating `B` fibrewise
@@ -614,7 +614,7 @@ zero, not an exact-rank statement.  QED.
 
 ### Theorem F4: multiquadratic character decomposition and base genus
 
-<!-- status-consumer: EC-K3-BISECT-MULTIQUADRATIC-CHARACTERS d08a3d546eac82cb -->
+<!-- status-consumer: EC-K3-BISECT-MULTIQUADRATIC-CHARACTERS dc58103d8d2494cf -->
 
 Let `K` be a field of characteristic different from two, let `E/K` be an
 elliptic curve, and let `q_1,...,q_k` be independent elements of

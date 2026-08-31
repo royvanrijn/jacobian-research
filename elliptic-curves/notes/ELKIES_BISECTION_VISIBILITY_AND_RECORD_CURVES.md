@@ -1,6 +1,6 @@
-# Bisection visibility, the rank-28 target, and the rank-30/31 records
+# Bisection visibility and exact published-R17 fibre exclusions
 
-<!-- status-consumer: EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES c3c7fbac71f4624f -->
+<!-- status-consumer: EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES 1c39220ee5fedc77 -->
 
 ## Outcome
 
@@ -13,10 +13,11 @@ ways.
    norm-ten shell has 806,238 unoriented representatives.  Replacing a retained
    trace by a higher-height translate gives the same bisection orbit, the same
    quadratic extension and the same class modulo the generic seventeen.
-2. ICARM curves 273 and 302 cannot be inserted as additional fibres of this
-   atlas.  Their exact degree-24 recognition equations against the published
-   `R17` `j`-map are irreducible over `QQ`, so neither curve is a direct rational
-   specialization of the published family.
+2. The 2024 Elkies--Klagsbrun rank-29 curve and ICARM curves 273, 302, and
+   398--400 cannot be inserted as rational fibres of the published `R17`
+   fibration.  Their exact degree-24 recognition equations against its `j`-map
+   are irreducible over `QQ`.  This remains true after quadratic twisting,
+   because twisting preserves `j`.
 
 The right continuation is therefore a new geometric or arithmetic mechanism
 targeted at the missing rank-28 quotient classes, while the existing
@@ -87,7 +88,7 @@ useful choices are:
 The third route is the cheapest immediate experiment.  The first two are the
 structural routes if direct searches do not hit the target packet.
 
-## Exact record-curve provenance test
+## Exact fibre-recognition test
 
 For the published short family
 
@@ -105,26 +106,46 @@ is
 c4_R17(t)^3 Delta - c4^3 Delta_R17(t) = 0.
 ```
 
-After removing integer content, both target equations are primitive degree-24
-polynomials:
+After removing integer content, all six target equations are primitive
+degree-24 polynomials:
 
 | target | certified rank lower bound | finite-field witness | conclusion |
 | --- | ---: | --- | --- |
+| 2024 Elkies--Klagsbrun / ICARM 12 | 29 | irreducible of degree 24 modulo `461` | no rational `t` |
 | ICARM curve 273 | 30 | irreducible of degree 24 modulo `367` | no rational `t` |
 | ICARM curve 302 | 31 | irreducible of degree 24 modulo `397` | no rational `t` |
+| ICARM curve 398 | 30 | irreducible of degree 24 modulo `1009` | no rational `t` |
+| ICARM curve 399 | 29 | irreducible of degree 24 modulo `83` | no rational `t` |
+| ICARM curve 400 | 28 | irreducible of degree 24 modulo `157` | no rational `t` |
 
-The reductions retain degree 24.  Gauss's lemma therefore proves that the
-integer polynomials are irreducible over `QQ`; in particular they have no
-rational affine roots.  Their leading coefficients are nonzero, so the point
-at infinity is not a solution either.
+Each reduction retains degree 24.  Gauss's lemma therefore proves that each
+integer polynomial is irreducible over `QQ`; in particular none has a rational
+affine root.  Their leading coefficients are nonzero, so the point at infinity
+is not a solution either.
 
-This rules out a direct rational specialization in the published chart.  It
-does not rule out an isogenous family, a different K3 fibration, or an
-unrelated construction.  Curves 273 and 302 should consequently remain
-external high-rank controls.  Their exact finite-quotient certificates are
-still useful implementation regressions, but their 30 and 31 points cannot be
-labelled `R17 + 13` and `R17 + 14` without a different exact family
-identification.
+The historical rank-28 fibre is a calibration control.  At its published
+parameter the same construction factors exactly as
+
+```text
+(5471*t + 9529) * (irreducible degree-23 cofactor).
+```
+
+The cofactor is irreducible modulo `197`, and the linear factor recovers
+`t=-9529/5471`.  Thus the exclusion test detects a known rational fibre rather
+than rejecting it through a normalization error.
+
+This rules out rational fibres in the published fibration, not merely failure
+of one affine chart, and the conclusion is twist-stable.  It does not rule out
+an isogenous family, another elliptic fibration on the same K3, or an unrelated
+construction.  The rank-29 provenance makes the second possibility the main
+structural target; the exact marking of that other fibration has not been
+published.
+
+The public generalized Weierstrass equations and current metadata for ICARM
+398--400 are pinned in
+[`elkies_2026_r17_j_recognition_targets.json`](../data/elkies_2026_r17_j_recognition_targets.json).
+This snapshot is input to `j`-recognition only; it does not duplicate the
+ICARM point-independence certificates.
 
 ## Replay and claim boundary
 
@@ -139,10 +160,10 @@ The pinned certificate is
 Its SHA-256 is
 
 ```text
-112cbe9030fc8657a0622ae34e2681328f91c8cfcb390d4f1d5acdbf88099bc9
+4e7b9fcbae2eae2d950fba867b9a6a27fe7352e9af15b09eb5361d9486f8c6ca
 ```
 
 The visibility calculation concerns finite-quotient classes inside already
 known public complements.  It supplies no upper bound for any Mordell--Weil
 rank.  The provenance calculation is an exact non-membership result for the
-published `R17` family only.
+published `R17` fibration only.

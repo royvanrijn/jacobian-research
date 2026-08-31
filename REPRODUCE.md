@@ -2707,10 +2707,10 @@ that adjoining all split points leaves the displayed subgroup ranks at
 [`elliptic-curves/notes/ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md`](elliptic-curves/notes/ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md).
 
 Resolve the rank-28 visibility quotient, prove that translated trace shells
-cannot enlarge it, and test the rank-30/31 record curves against the exact
-published `R17` `j`-map:
+cannot enlarge it, and run exact `j`-recognition for the 2024 rank-29 curve
+and ICARM 273, 302, and 398--400 against the published `R17` fibration:
 
-<!-- status-consumer: EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES c3c7fbac71f4624f -->
+<!-- status-consumer: EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES 1c39220ee5fedc77 -->
 
 ```bash
 .venv/bin/python \
@@ -2719,12 +2719,31 @@ published `R17` `j`-map:
 ```
 
 The exact row reduction gives a ten-dimensional canonical complement to the
-sole visible rank-28 class.  The recognition equations for ICARM curves 273
-and 302 are primitive irreducible degree-24 polynomials, witnessed modulo 367
-and 397 respectively, so neither record curve is a direct rational
-specialization of the published chart.  This does not exclude other families
-or isogeny constructions.  See
+sole visible rank-28 class.  All six recognition equations are primitive
+irreducible degree-24 polynomials.  The rank-28 control instead has the exact
+factor `5471*t+9529`, recovering `t=-9529/5471`.  Thus none of the six target
+curves is a rational fibre of the published fibration, including after
+quadratic twisting.  This does not exclude another fibration, another family,
+or an isogeny construction.  See
 [`elliptic-curves/notes/ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md`](elliptic-curves/notes/ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md).
+
+Canonicalize the known alternate rootless rank-17 frame in pinned H3/R17 NS
+coordinates:
+
+<!-- status-consumer: EC-K3-H3-OTHER-R17-J2-CANDIDATE 5ca661346a25c1f0 -->
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python -c \
+  'import sys; from sage.all import *; sys.argv=["verify_q80_alternate_fifth_q6_rootless.sage","--write-artifact"]; globals()["__file__"]="/home/royvanrijn/src/jacobian-research/elkies-k3/scripts/verify_q80_alternate_fifth_q6_rootless.sage"; load(__file__)'
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python -c \
+  'from sage.all import *; globals()["__file__"]="/home/royvanrijn/src/jacobian-research/elkies-k3/scripts/canonicalize_other_rank17_candidate.sage"; load(__file__)'
+```
+
+This proves a second rootless `J2` frame class of rank 17 and determinant 948,
+not a complete fibration classification or a rank-29 fibre identification.
+See
+[`elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md`](elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md).
 
 Classify all distinct biquadratic pair bases, build the complete exact
 5,566-row immediate-point arithmetic catalogue, replay the completed bounded
@@ -2774,6 +2793,18 @@ rank-lower-bound ledger, and verify the simplest rank-at-least-nine base:
 /tmp/jacobian-sage-bin/sage -python \
   elkies-k3/scripts/search_elkies_2026_control_pair_base_points.sage \
   --certify all
+
+/tmp/jacobian-sage-bin/sage -python \
+  elkies-k3/scripts/search_elkies_2026_control_pair_base_points.sage \
+  --coefficient-radius 2 --certify none \
+  --output artifacts/generated-results/elkies-2026-control-pair-base-point-search-radius2.json
+
+.venv/bin/python \
+  elkies-k3/scripts/select_elkies_2026_control_spanning_bisections.py
+
+.venv/bin/python \
+  elkies-k3/scripts/certify_elkies_2026_control_pair_conductors.py \
+  --limit 1 --tate-timeout 300 --checkpoint-every 1
 ```
 
 The complete geometry proves all 765,167,640 distinct pair bases genus one
@@ -2798,14 +2829,59 @@ map the radius-one LLL boxes to 6,676 distinct parameters.  Every one has
 exactly two split bisections and a certified surface rank lower bound 19.
 Nagao scoring is performed only after those exact split counts and
 certificates.
+The radius-two discovery box expands this to 75,504 exact parameters and
+1,144,616 post-sieve integer square tests; it also contains no third split.
+Because this larger artifact uses discovery policy, it does not assert new
+specialized-rank lower bounds at the no-extra-split fibres.
+The dependency-free spanning selector exhausts the 619 minimum-cardinality
+four-cover bases of the exceptional quotient and selects masks
+`19735,22912,30787,66034` under its declared equation/priority-rank
+complexity order.  It also writes exact rational parametrizations of the four
+conics and retains their lifted-section formulas.  The conductor gate consumes
+pair-base points in increasing projective height of the resulting `t`, proves
+the generic seventeen plus the two defining cover points independent, and
+only then calls exact global minimalization and local Tate reduction.  On the
+declared one-candidate prefix the 81-bit-height parameter has certified rank
+at least 19, while PARI times out after 300 seconds before producing a complete
+conductor.  The artifact is therefore fail-closed and authorizes no wider
+point search; the timeout is not a conductor estimate.
 
 <!-- status-consumer: EC-K3-BISECT-BIQUADRATIC-R19 707bffd8b85f8f3e -->
 
-Run the quadratic-character Frobenius census, descend the known singleton
+Replay the strict target-only held-out gate for product `27431:92937`.  This
+uses twelve pairwise-disjoint eight-prime blocks above 491, extends through
+1151, and does not score any other product:
+
+<!-- status-consumer: EC-K3-BISECT-MULTIQUADRATIC-CHARACTERS dc58103d8d2494cf -->
+
+```bash
+.venv/bin/python \
+  elkies-k3/scripts/screen_elkies_2026_quadratic_twist_ranks.py \
+  --products-only --product-key 27431:92937 \
+  --prime-block 499,503,509,521,523,541,547,557 \
+  --prime-block 563,569,571,577,587,593,599,601 \
+  --prime-block 607,613,617,619,631,641,643,647 \
+  --prime-block 653,659,661,673,677,683,691,701 \
+  --prime-block 709,719,727,733,739,743,751,757 \
+  --prime-block 761,769,773,787,797,809,811,821 \
+  --prime-block 823,827,829,839,853,857,859,863 \
+  --prime-block 877,881,883,887,907,911,919,929 \
+  --prime-block 937,941,947,953,967,971,977,983 \
+  --prime-block 991,997,1009,1013,1019,1021,1031,1033 \
+  --prime-block 1039,1049,1051,1061,1063,1069,1087,1091 \
+  --prime-block 1093,1097,1103,1109,1117,1123,1129,1151 \
+  --output artifacts/generated-results/\
+elkies-2026-quadratic-twist-product-27431-92937-holdout-p499-1151.json
+```
+
+The replay gives weakest/mean scores `-0.494/0.017` on `499--821` and
+`-0.077/0.150` on `823--1151`.  This fails the first gate, so no `chi=4`
+section solve or denominator layer is authorized.  It is a bounded heuristic
+rejection, not a product-twist rank-zero theorem.
+
+Separately, replay the broader discovery census, descend the known singleton
 twist section for mask 18075, and solve its complete reduced `P.O=0`
 polynomial-section scheme over `F_37`:
-
-<!-- status-consumer: EC-K3-BISECT-MULTIQUADRATIC-CHARACTERS d08a3d546eac82cb -->
 
 ```bash
 .venv/bin/python \
@@ -2826,12 +2902,13 @@ singleton-18075/p37/export.json \
   --threads 4 --jobs 2 --timeout 180
 ```
 
-The default census is heuristic.  Its two fresh-prime validation commands are
-stored verbatim in the `reproducing_command` fields of the `p499-821` and
-`p823-1151` artifacts.  The modular solve is exact in the displayed finite
-field and polynomial degree box: 23 distinct systems are empty and the sole
-degree-one system is the known `Q/-Q` pair.  It is not a characteristic-zero
-rank upper bound.  See
+The default census and the separate broader holdout artifacts are heuristic;
+they are not part of the strict target-only gate above.  Their
+`reproducing_command` fields contain argv without the Python interpreter, so
+use `.venv/bin/python` before those stored strings.  The modular singleton
+solve is exact in the displayed finite field and polynomial degree box: 23
+distinct systems are empty and the sole degree-one system is the known
+`Q/-Q` pair.  It is not a characteristic-zero rank upper bound.  See
 [`elkies-k3/QUADRATIC_TWIST_RANK_CENSUS_2026-08-31.md`](elkies-k3/QUADRATIC_TWIST_RANK_CENSUS_2026-08-31.md).
 
 The equation-friendlier alternate q80 q6 endpoint has a distinct rootless

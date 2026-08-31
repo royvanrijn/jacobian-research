@@ -114,7 +114,9 @@ it records a bounded negative result, a normalization bug, or a useful local mod
   certified positive-rank control pair, maps its bounded coefficient box
   through the exact degree-two isogeny and pointed-quartic inverse, performs
   the complete split sieve, materializes both signs, certifies the specialized
-  ranks, and only then attaches Nagao tie-break scores.
+  ranks, and only then attaches Nagao tie-break scores. The certified
+  radius-one box has 6,676 parameters; the split-only radius-two box has
+  75,504.
 
 The canonical theorem and full proof boundary are in
 [`../BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md`](../BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md).
